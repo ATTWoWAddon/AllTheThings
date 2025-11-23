@@ -271,12 +271,12 @@ h(-45,{rwp=40003,u=15,g={
 q(8519,{coords={{28.7,89.1,1451}},lvl=60,minReputation={910,0},providers={{"o",180633}},rwp=40003,sourceQuests={8305},u=15}),
 q(8303,{coords={{49.5,36.4,1451}},lvl=60,minReputation={910,0},providers={{"i",20415}},qgs={15180},rwp=40003,sourceQuests={8301},u=15}),
 q(8575,{coords={{57,85.6,1447}},lvl=60,providers={{"i",20949}},qgs={15481},rwp=40003,sourceQuests={8555},u=15}),
-q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"o",180717},{"i",21175}},rwp=40003,sourceQuests={8742},u=1502,g={
+q(8743,{coords={{25.7,90.9,1451}},lvl=60,providers={{"i",21175},{"o",180717}},rwp=40003,sourceQuests={8742},u=1502,g={
 ach(416,{rwp=40003,sourceQuests={8743},u=1502}),
 title(33,{awp=20003,rwp=40003,u=1502}),
 mnt(26656,{b=1,itemID=21176,lvl=60,q=5,rwp=40003,u=1502})}}),
 q(8606,{coords={{65.2,18.6,1446}},lvl=60,maps={1452},qgs={11811},rwp=40003,sourceQuests={8598},u=15,g={
-qo(1,{coords={{65,72,1452}},providers={{"n",15554},{"i",21041},{"i",21039},{"i",21040}},rwp=40003,u=15}),
+qo(1,{coords={{65,72,1452}},providers={{"i",21039},{"i",21040},{"i",21041},{"n",15554}},rwp=40003,u=15}),
 i(21042,{b=1,q=1,rwp=40003,u=15,g={
 i(21037,{b=1,q=1,rwp=40003,u=15}),
 i(21041,{b=1,q=1,rwp=40003,u=15}),
@@ -296,7 +296,7 @@ s(131967,21530,{b=1,f=6,lvl=60,q=4,rwp=40003,u=15})}}),
 q(8584,{coords={{65.2,18.6,1446}},lvl=60,qgs={11811},rwp=40003,sourceQuests={8576},u=15}),
 q(8288,{coords={{49.5,36.4,1451}},lvl=60,maps={287},qgs={15180},rwp=40003,sourceQuests={8286},u=15,g={
 qo(1,{crs={12017},providers={{"i",20383}},rwp=40003,u=15})}}),
-q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652},{"i",21029}},rwp=40003,sourceQuests={8599},u=15}),
+q(8598,{coords={{59.4,96,1446}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"i",21029},{"o",180652}},rwp=40003,sourceQuests={8599},u=15}),
 q(8587,{coords={{52.6,28.1,1446}},lvl=60,providers={{"i",21028}},qgs={8125},rwp=40003,sourceQuests={8586},u=15}),
 q(8578,{coords={{46.2,86.7,1421}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},rwp=40003,sourceQuests={8577},u=15,g={
 qo(1,{providers={{"i",20951}},rwp=40003,u=15})}}),

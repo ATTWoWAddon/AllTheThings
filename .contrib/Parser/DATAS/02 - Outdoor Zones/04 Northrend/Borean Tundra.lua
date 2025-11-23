@@ -2792,7 +2792,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11714, {	-- Vermin Extermination
-						["sourceQuest"] = 11711,	--	Coward Delivery... Under 30 Minutes or it's Free
+						["sourceQuest"] = 11711,	-- Coward Delivery... Under 30 Minutes or it's Free
 						["qg"] = 25440,	-- Scout Tungok
 						["coord"] = { 52.9, 51.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,

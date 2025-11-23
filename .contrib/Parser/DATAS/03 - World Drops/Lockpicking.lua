@@ -459,7 +459,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { ADDED_6_0_2 },
 				["sym"] = { {
 					"select", "itemID",
-				--	n(WEAPONS, {
+					-- n(WEAPONS, {
 					116721,	-- Ancestral Branch
 					116619,	-- Ancestral Scepter
 					116615,	-- Ancestral Spellblade
@@ -496,10 +496,10 @@ root(ROOTS.WorldDrops, {
 					116636,	-- Oshu'gun Scepter
 					116632,	-- Oshu'gun Spellblade
 					116643,	-- Oshu'gun Wand
-				--	filter(CLOAKS, {
+					-- filter(CLOAKS, {
 					116720,	-- Ancestral Cloak
 					116723,	-- Oshu'gun Cloak
-				--	filter(CLOTH, {
+					-- filter(CLOTH, {
 					106737,	-- Dark Star Cord
 					106738,	-- Dark Star Cowl
 					106739,	-- Dark Star Handwraps
@@ -516,7 +516,7 @@ root(ROOTS.WorldDrops, {
 					106709,	-- Voidwrap Sandals
 					106710,	-- Voidwrap Shoulderpads
 					106711,	-- Voidwrap Wristwraps
-				--	filter(LEATHER, {
+					-- filter(LEATHER, {
 					106729,	-- Meadowstomper Bindings
 					106730,	-- Meadowstomper Boots
 					106731,	-- Meadowstomper Britches
@@ -533,7 +533,7 @@ root(ROOTS.WorldDrops, {
 					106701,	-- Sabermaw Jerkin
 					106702,	-- Sabermaw Shoulders
 					106703,	-- Sabermaw Waistband
-				--	filter(MAIL, {
+					-- filter(MAIL, {
 					106745,	-- Packrunner Belt
 					106746,	-- Packrunner Bracers
 					106747,	-- Packrunner Gauntlets
@@ -550,7 +550,7 @@ root(ROOTS.WorldDrops, {
 					106717,	-- Sunspring Legguards
 					106718,	-- Sunspring Spaulders
 					106719,	-- Sunspring Vest
-				--	filter(PLATE, {
+					-- filter(PLATE, {
 					106687,	-- Ironfist Breastplate
 					106688,	-- Ironfist Gauntlets
 					106689,	-- Ironfist Girdle

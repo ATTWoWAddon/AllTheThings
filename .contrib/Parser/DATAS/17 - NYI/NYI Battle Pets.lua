@@ -383,7 +383,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- #if NOT ANYCLASSIC
 			i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
 			-- #endif
-			--i(82800),	-- Pet Cage (PET!)
+			-- i(82800),	-- Pet Cage (PET!)
 		})),
 
 		-- 5.1.0
@@ -1577,15 +1577,15 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(231760, {	-- Crunchy (PET!)
 				["displayID"] = 54848,
 			}),
-			i(231762, {	-- Dosh (PET!)
-				["displayID"] = 123032,
-			}),
+			-- i(231762, {	-- Dosh (PET!) TODO: [wrong ItemID]
+			-- 	["displayID"] = 123032,
+			-- }),
 			i(231758, {	-- Finnity (PET!)
 				["displayID"] = 74800,
 			}),
-			i(231763, {	-- FO-MO Mark II (PET!)
-				["displayID"] = 111667,
-			}),
+			-- i(231763, {	-- FO-MO Mark II (PET!) TODO: [wrong ItemID]
+			-- 	["displayID"] = 111667,
+			-- }),
 			i(235909, {	-- Gleam (PET!)
 				["displayID"] = 89251,
 			}),
@@ -1595,9 +1595,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
 			-- 	["displayID"] = 120709,
 			-- }),
-			i(232856, {	-- Scruff (PET!)
-				["displayID"] = 121851,
-			}),
 			i(231613, {	-- Yellow Tropical Frog (PET!)
 				["displayID"] = 122963,
 			}),

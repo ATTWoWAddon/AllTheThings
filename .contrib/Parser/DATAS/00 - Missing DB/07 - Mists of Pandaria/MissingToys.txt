@@ -1,5 +1,52 @@
 5.5.0.60481
 i(112324),	-- tmarish Hitching Post \\ Nightmarish Hitching Post
+5.5.2.63832
+i(260221),	-- Naaru's Embrace
+i(260622),	-- Exodar Replica
+5.5.3.64141
+i(265414),	-- Platinum Amber
+i(265415),	-- Platinum Vial of Polyformic Acid
+i(265416),	-- Platinum Battle Banner
+i(265417),	-- Platinum Battle Horn
+i(265418),	-- Platinum Rod of Ambershaping
+i(265419),	-- Platinum Potion of Invisibility \\ Platinum potion of Invisibility
+i(265573),	-- Platinum Sacrificial Dagger
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(46779),	-- of Cenarius \\ Path of Cenarius
+i(265774),	-- Platinum Boots of Expeditious Retreat
+i(265780),	-- Platinum "Little Ale"
+i(265786),	-- Demon Hunter's Aspect
+i(265787),	-- Magic Rooster Egg
+i(265788),	-- Wooly White Rhino
+i(265851),	-- Platinum Drums of Speed
+5.5.3.64400
+i(266999),	-- Swift Yak Pelt
 
 
-Nothing is Missing in ToyDB.lua! Good Work!
+
+
+Missing in ToyDB.lua
+
+5.5.2.63832
+i(260221),	-- Naaru's Embrace
+i(260622),	-- Exodar Replica
+5.5.3.64141
+i(265414),	-- Platinum Amber
+i(265415),	-- Platinum Vial of Polyformic Acid
+i(265416),	-- Platinum Battle Banner
+i(265417),	-- Platinum Battle Horn
+i(265418),	-- Platinum Rod of Ambershaping
+i(265419),	-- Platinum Potion of Invisibility \\ Platinum potion of Invisibility
+i(265573),	-- Platinum Sacrificial Dagger
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(46779),	-- of Cenarius \\ Path of Cenarius
+i(265774),	-- Platinum Boots of Expeditious Retreat
+i(265780),	-- Platinum "Little Ale"
+i(265786),	-- Demon Hunter's Aspect
+i(265787),	-- Magic Rooster Egg
+i(265788),	-- Wooly White Rhino
+i(265851),	-- Platinum Drums of Speed
+5.5.3.64400
+i(266999),	-- Swift Yak Pelt

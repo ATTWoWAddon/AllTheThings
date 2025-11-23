@@ -768,7 +768,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				n(P1xx, {
 					r(6470),	-- Tiny Bronze Key
 					r(6471),	-- Tiny Iron Key
-					-- With SpellID attched
+					-- With SpellID attached
 					i(12831),	-- Plans: Blood Talon
 					i(12818),	-- Plans: Inlaid Thorium Hammer
 					i(6734),	-- Plans: Ironforge Chain
@@ -955,7 +955,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(153657),	-- Peerless Draenic Steel Warboots
 					r(153663),	-- Peerless Draenic Steel Wristwraps
 					r(171718),	-- Truesteel Ingot
-					-- With SpellID attched
+					-- With SpellID attached
 					i(108421),	-- Plans: Blackrock Crucible
 					-- Without SpellID attached
 					i(116727),	-- Plans: Smoldering Breastplate
@@ -1109,7 +1109,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr
-					-- With SpellID attched
+					-- With SpellID attached
 					i(194487),	-- Plans: Pauldrons of the Dragon
 					i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon
 					-- Without SpellID attached

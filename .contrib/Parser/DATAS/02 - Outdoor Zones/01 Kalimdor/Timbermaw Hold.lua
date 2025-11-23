@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28768, {	-- Winterspring!
 					["description"] = "Only available above level 40.",
-					--["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
+					-- ["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },

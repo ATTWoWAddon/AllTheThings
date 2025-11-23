@@ -19,6 +19,7 @@ root(ROOTS.Zones, {
 					q(48605, {	-- Commander's Downfall
 						["sourceQuests"] = { 48513 },	-- Invasion Point Offensive
 						["qgs"] = {
+							120978,	-- Illidan Stormrage
 							126408,	-- Illidan Stormrage
 							127051,	-- Illidan Stormrage
 							127057,	-- Illidan Stormrage
@@ -26,6 +27,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 31.4, 60.0, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							{ 39.1, 19.8, THE_VINDICAAR_KROKUUN_UPPER },
+							{ 47.4, 19.7, THE_VINDICAAR_EREDATH_UPPER },
 							{ 68.8, 25.9, ANTORAN_WASTES },
 						},
 					}),
@@ -35,12 +37,15 @@ root(ROOTS.Zones, {
 							48654,	-- Beneath Oronaar
 						},
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-						["coord"] = { 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
+						["coords"] = {
+							{ 39.7, 26.3, THE_VINDICAAR_KROKUUN_UPPER },
+							{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
+						},
 					}),
 					q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
 						["sourceQuests"] = { 48201 },	-- Reinforce Light's Purchase
-						["provider"] = { "n", 127051 },	-- Illidan Stormrage
-						["coord"] = { 68.8, 25.9, ANTORAN_WASTES },
+						["provider"] = { "n", 127033 },	-- Alleria Windrunner
+						["coord"] = { 72.4, 74.8, ANTORAN_WASTES },
 					}),
 					q(48929, {	-- Sizing Up The Opposition (The Veiled Den)
 						["sourceQuests"] = { 48202 },	-- Reinforce the Veiled Den
@@ -50,7 +55,10 @@ root(ROOTS.Zones, {
 					q(48600, {	-- Take the Edge Off
 						["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-						["coord"] = { 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
+						["coord"] = {
+							{ 39.7, 26.3, THE_VINDICAAR_KROKUUN_UPPER },
+							{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
+						},
 					}),
 					q(48870, {	-- The Many-Faced Devourer
 						["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",

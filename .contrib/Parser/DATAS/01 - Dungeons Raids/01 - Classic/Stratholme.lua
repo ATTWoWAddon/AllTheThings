@@ -1531,7 +1531,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["providers"] = {
 							{ "o", 176325 },	-- Blacksmithing Plans
 							-- This is what it should be, but since tooltips for objects with EXACTLY THE SAME NAME are wonky in the same instance (due to a lack of coordinates....), this is necessary to make the tooltips make more sense.
-							--{ "o", 176327 },	-- Blacksmithing Plans
+							-- { "o", 176327 },	-- Blacksmithing Plans
 						},
 						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {

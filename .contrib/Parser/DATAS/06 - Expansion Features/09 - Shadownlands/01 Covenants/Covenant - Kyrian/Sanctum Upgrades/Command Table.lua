@@ -10,9 +10,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					n(TIER_ONE, {
 						["icon"] = 3675495,
 						["groups"] = {
-							n(FOLLOWERS, bubbleDownSelf({
-								["u"] = TRAINING,	-- Temporary troops
-							}, {
+							n_TrainingFollowers({
 								follower(1241),	-- Kyrian Halberdier
 								follower(1291),	-- Kyrian Halberdier
 								follower(1292),	-- Kyrian Halberdier
@@ -21,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								follower(1289),	-- Kyrian Phalanx
 								follower(1290),	-- Kyrian Phalanx
 								follower(1320),	-- Kyrian Phalanx
-							})),
+							}),
 							n(QUESTS, {
 								q(57900, {	-- Across the Shadowlands
 									["sourceQuests"] = { 57899 },	-- More Work?
@@ -142,8 +140,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["isBreadcrumb"] = true,
-								--	TODO: is altQuests necessary or do they complete each other?
-								--	quest is unavailable until you build your command table
+									-- TODO: is altQuests necessary or do they complete each other?
+									-- quest is unavailable until you build your command table
 								}),
 							}),
 							n(REWARDS, {

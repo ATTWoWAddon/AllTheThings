@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(115286, {	-- Crysa <Flying Pet Tamer>
 					["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
-					--["description"] = "",	-- @DannyDonkey, do your thing here
+					-- ["description"] = "",	-- @DannyDonkey, do your thing here
 					["timeline"] = { ADDED_7_1_0 },
 					["petBattleLvl"] = 25,
 					["groups"] = {
@@ -4335,7 +4335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 62.8, 20.2, NORTHERN_BARRENS },
 						{ 64.1, 23.0, NORTHERN_BARRENS },
 						{ 65.0, 28.7, NORTHERN_BARRENS },
-						--{ 56.0, 49.3, NORTHERN_BARRENS },	-- Wowhead notes this as another coord, but only before cataclysm
+						-- { 56.0, 49.3, NORTHERN_BARRENS },	-- Wowhead notes this as another coord, but only before cataclysm
 						-- #else
 						{ 59.8, 8.5, THE_BARRENS },
 						{ 60.3, 10.1, THE_BARRENS },

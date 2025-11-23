@@ -19,172 +19,172 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["groups"] = {
 			n(219031, {	-- Aeonicus <Raid Finder Apparel>
 				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215320, { -- Ensemble: Plate of the Lost Catacomb (LFR)
+					iensemble(215320, {	-- Ensemble: Plate of the Lost Catacomb (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215324, { -- Ensemble: Battleplate of the All-Consuming Maw (LFR)
+					iensemble(215324, {	-- Ensemble: Battleplate of the All-Consuming Maw (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215327, { -- Ensemble: Battleplate of Cyclopean Dread (LFR)
+					iensemble(215327, {	-- Ensemble: Battleplate of Cyclopean Dread (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					iensemble(215241, { -- Ensemble: Vestments of the Eternal Blossom (LFR)
+					iensemble(215241, {	-- Ensemble: Vestments of the Eternal Blossom (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215245, { -- Ensemble: Vestments of the Haunted Forest (LFR)
+					iensemble(215245, {	-- Ensemble: Vestments of the Haunted Forest (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215247, { -- Ensemble: Vestments of the Shattered Vale (LFR)
+					iensemble(215247, {	-- Ensemble: Vestments of the Shattered Vale (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					iensemble(215289, { -- Ensemble: Yaungol Slayer Battlegear (LFR)
+					iensemble(215289, {	-- Ensemble: Yaungol Slayer Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215293, { -- Ensemble: Battlegear of the Saurok Stalker (LFR)
+					iensemble(215293, {	-- Ensemble: Battlegear of the Saurok Stalker (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215295, { -- Ensemble: Battlegear of the Unblinking Vigil (LFR)
+					iensemble(215295, {	-- Ensemble: Battlegear of the Unblinking Vigil (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					iensemble(215189, { -- Ensemble: Regalia of the Burning Scroll (LFR)
+					iensemble(215189, {	-- Ensemble: Regalia of the Burning Scroll (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215193, { -- Ensemble: Regalia of the Chromatic Hydra (LFR)
+					iensemble(215193, {	-- Ensemble: Regalia of the Chromatic Hydra (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215196, { -- Ensemble: Chronomancer Regalia (LFR)
+					iensemble(215196, {	-- Ensemble: Chronomancer Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MONK, {
-					iensemble(215252, { -- Ensemble: Vestments of the Red Crane (LFR)
+					iensemble(215252, {	-- Ensemble: Vestments of the Red Crane (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215255, { -- Ensemble: Fire-Charm Vestments (LFR)
+					iensemble(215255, {	-- Ensemble: Fire-Charm Vestments (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215256, { -- Ensemble: Vestments of the Seven Sacred Seals (LFR)
+					iensemble(215256, {	-- Ensemble: Vestments of the Seven Sacred Seals (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					iensemble(215330, { -- Ensemble: White Tiger Battlegear (LFR)
+					iensemble(215330, {	-- Ensemble: White Tiger Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215334, { -- Ensemble: Battlegear of the Lightning Emperor (LFR)
+					iensemble(215334, {	-- Ensemble: Battlegear of the Lightning Emperor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215335, { -- Ensemble: Vestments of Winged Triumph (LFR)
+					iensemble(215335, {	-- Ensemble: Vestments of Winged Triumph (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					iensemble(215199, { -- Ensemble: Guardian Serpent Regalia (LFR)
+					iensemble(215199, {	-- Ensemble: Guardian Serpent Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215201, { -- Ensemble: Regalia of the Exorcist (LFR)
+					iensemble(215201, {	-- Ensemble: Regalia of the Exorcist (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215204, { -- Ensemble: Regalia of Ternion Glory (LFR)
+					iensemble(215204, {	-- Ensemble: Regalia of Ternion Glory (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					iensemble(215261, { -- Ensemble: Battlegear of the Thousandfold Blades (LFR)
+					iensemble(215261, {	-- Ensemble: Battlegear of the Thousandfold Blades (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215264, { -- Ensemble: Nine-Tail Battlegear (LFR)
+					iensemble(215264, {	-- Ensemble: Nine-Tail Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215267, { -- Ensemble: Barbed Assassin Battlegear (LFR)
+					iensemble(215267, {	-- Ensemble: Barbed Assassin Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					iensemble(215298, { -- Ensemble: Regalia of the Firebird (LFR)
+					iensemble(215298, {	-- Ensemble: Regalia of the Firebird (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215302, { -- Ensemble: Regalia of the Witch Doctor (LFR)
+					iensemble(215302, {	-- Ensemble: Regalia of the Witch Doctor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215304, { -- Ensemble: Regalia of Celestial Harmony (LFR)
+					iensemble(215304, {	-- Ensemble: Regalia of Celestial Harmony (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					iensemble(215208, { -- Ensemble: Sha Skin Regalia (LFR)
+					iensemble(215208, {	-- Ensemble: Sha Skin Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215210, { -- Ensemble: Regalia of the Thousandfold Hells (LFR)
+					iensemble(215210, {	-- Ensemble: Regalia of the Thousandfold Hells (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215214, { -- Ensemble: Regalia of the Horned Nightmare (LFR)
+					iensemble(215214, {	-- Ensemble: Regalia of the Horned Nightmare (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					iensemble(215339, { -- Ensemble: Battleplate of Resounding Rings (LFR)
+					iensemble(215339, {	-- Ensemble: Battleplate of Resounding Rings (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215343, { -- Ensemble: Battleplate of the Last Mogu (LFR)
+					iensemble(215343, {	-- Ensemble: Battleplate of the Last Mogu (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215346, { -- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
+					iensemble(215346, {	-- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 			}),
 			n(219030, {	-- Arturos <Dungeon Apparel>
 				filter(CLOTH, {
-					iensemble(215176, { -- Ensemble: Breezebinder's Vestments (Original)
+					iensemble(215176, {	-- Ensemble: Breezebinder's Vestments (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215181, { -- Ensemble: Breezebinder's Vestments (Purple)
+					iensemble(215181, {	-- Ensemble: Breezebinder's Vestments (Purple)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215182, { -- Ensemble: Breezebinder's Vestments (Red)
+					iensemble(215182, {	-- Ensemble: Breezebinder's Vestments (Red)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
 				}),
 				filter(LEATHER, {
-					iensemble(215221, { -- Ensemble: Mogubreaker Battlegear (Black)
+					iensemble(215221, {	-- Ensemble: Mogubreaker Battlegear (Black)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215222, { -- Ensemble: Mogubreaker Battlegear (Original)
+					iensemble(215222, {	-- Ensemble: Mogubreaker Battlegear (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215223, { -- Ensemble: Mogubreaker Battlegear (Red)
+					iensemble(215223, {	-- Ensemble: Mogubreaker Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215224, { -- Ensemble: Mogubreaker Battlegear (Yellow)
+					iensemble(215224, {	-- Ensemble: Mogubreaker Battlegear (Yellow)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
 				}),
 				filter(MAIL, {
-					iensemble(215272, { -- Ensemble: Mogu Lord's Regalia (Black)
+					iensemble(215272, {	-- Ensemble: Mogu Lord's Regalia (Black)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215273, { -- Ensemble: Mogu Lord's Regalia (Gold)
+					iensemble(215273, {	-- Ensemble: Mogu Lord's Regalia (Gold)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215274, { -- Ensemble: Mogu Lord's Regalia (Jade)
+					iensemble(215274, {	-- Ensemble: Mogu Lord's Regalia (Jade)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
 				}),
 				filter(PLATE, {
-					iensemble(215310, { -- Ensemble: Swarmbreaker's Battleplate (Dark)
+					iensemble(215310, {	-- Ensemble: Swarmbreaker's Battleplate (Dark)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215311, { -- Ensemble: Swarmbreaker's Battleplate (Light)
+					iensemble(215311, {	-- Ensemble: Swarmbreaker's Battleplate (Light)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
-					iensemble(215312, { -- Ensemble: Swarmbreaker's Battleplate (Original)
+					iensemble(215312, {	-- Ensemble: Swarmbreaker's Battleplate (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
 					}),
 				}),
@@ -194,126 +194,126 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(219028, {	-- Durus <Normal Raid Apparel>
 				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215321, { -- Ensemble: Plate of the Lost Catacomb (Normal)
+					iensemble(215321, {	-- Ensemble: Plate of the Lost Catacomb (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215325, { -- Ensemble: Battleplate of the All-Consuming Maw (Normal)
+					iensemble(215325, {	-- Ensemble: Battleplate of the All-Consuming Maw (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215326, { -- Ensemble: Battleplate of Cyclopean Dread (Normal)
+					iensemble(215326, {	-- Ensemble: Battleplate of Cyclopean Dread (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					iensemble(215243, { -- Ensemble: Vestments of the Eternal Blossom (Normal)
+					iensemble(215243, {	-- Ensemble: Vestments of the Eternal Blossom (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215246, { -- Ensemble: Vestments of the Haunted Forest (Normal)
+					iensemble(215246, {	-- Ensemble: Vestments of the Haunted Forest (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215249, { -- Ensemble: Vestments of the Shattered Vale (Normal)
+					iensemble(215249, {	-- Ensemble: Vestments of the Shattered Vale (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					iensemble(215288, { -- Ensemble: Yaungol Slayer Battlegear (Normal)
+					iensemble(215288, {	-- Ensemble: Yaungol Slayer Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215292, { -- Ensemble: Battlegear of the Saurok Stalker (Normal)
+					iensemble(215292, {	-- Ensemble: Battlegear of the Saurok Stalker (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215294, { -- Ensemble: Battlegear of the Unblinking Vigil (Normal)
+					iensemble(215294, {	-- Ensemble: Battlegear of the Unblinking Vigil (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					iensemble(215191, { -- Ensemble: Regalia of the Burning Scroll (Normal)
+					iensemble(215191, {	-- Ensemble: Regalia of the Burning Scroll (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215194, { -- Ensemble: Regalia of the Chromatic Hydra (Normal)
+					iensemble(215194, {	-- Ensemble: Regalia of the Chromatic Hydra (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215197, { -- Ensemble: Chronomancer Regalia (Normal)
+					iensemble(215197, {	-- Ensemble: Chronomancer Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MONK, {
-					iensemble(215251, { -- Ensemble: Vestments of the Red Crane (Normal)
+					iensemble(215251, {	-- Ensemble: Vestments of the Red Crane (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215253, { -- Ensemble: Fire-Charm Vestments (Normal)
+					iensemble(215253, {	-- Ensemble: Fire-Charm Vestments (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215258, { -- Ensemble: Vestments of the Seven Sacred Seals (Normal)
+					iensemble(215258, {	-- Ensemble: Vestments of the Seven Sacred Seals (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					iensemble(215329, { -- Ensemble: White Tiger Battlegear (Normal)
+					iensemble(215329, {	-- Ensemble: White Tiger Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215332, { -- Ensemble: Battlegear of the Lightning Emperor (Normal)
+					iensemble(215332, {	-- Ensemble: Battlegear of the Lightning Emperor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215337, { -- Ensemble: Vestments of Winged Triumph (Normal)
+					iensemble(215337, {	-- Ensemble: Vestments of Winged Triumph (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					iensemble(215198, { -- Ensemble: Timeworn Malevolent Mooncloth Regalia (Normal)
+					iensemble(215198, {	-- Ensemble: Timeworn Malevolent Mooncloth Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215202, { -- Ensemble: Regalia of the Exorcist (Normal)
+					iensemble(215202, {	-- Ensemble: Regalia of the Exorcist (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215206, { -- Ensemble: Regalia of Ternion Glory (Normal)
+					iensemble(215206, {	-- Ensemble: Regalia of Ternion Glory (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					iensemble(215260, { -- Ensemble: Battlegear of the Thousandfold Blades (Normal)
+					iensemble(215260, {	-- Ensemble: Battlegear of the Thousandfold Blades (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215263, { -- Ensemble: Nine-Tail Battlegear (Normal)
+					iensemble(215263, {	-- Ensemble: Nine-Tail Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215266, { -- Ensemble: Barbed Assassin Battlegear (Normal)
+					iensemble(215266, {	-- Ensemble: Barbed Assassin Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					iensemble(215297, { -- Ensemble: Regalia of the Firebird (Normal)
+					iensemble(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215300, { -- Ensemble: Regalia of the Witch Doctor (Normal)
+					iensemble(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215303, { -- Ensemble: Regalia of Celestial Harmony (Normal)
+					iensemble(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					iensemble(215209, { -- Ensemble: Sha Skin Regalia (Normal)
+					iensemble(215209, {	-- Ensemble: Sha Skin Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215212, { -- Ensemble: Regalia of the Thousandfold Hells (Normal)
+					iensemble(215212, {	-- Ensemble: Regalia of the Thousandfold Hells (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215215, { -- Ensemble: Regalia of the Horned Nightmare (Normal)
+					iensemble(215215, {	-- Ensemble: Regalia of the Horned Nightmare (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					iensemble(215338, { -- Ensemble: Battleplate of Resounding Rings (Normal)
+					iensemble(215338, {	-- Ensemble: Battleplate of Resounding Rings (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215341, { -- Ensemble: Battleplate of Resounding Rings (New Appearances)
+					iensemble(215341, {	-- Ensemble: Battleplate of Resounding Rings (New Appearances)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215344, { -- Ensemble: Battleplate of the Last Mogu (Normal)
+					iensemble(215344, {	-- Ensemble: Battleplate of the Last Mogu (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215347, { -- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
+					iensemble(215347, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
@@ -335,106 +335,106 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
 				clWithoutLock(DEATHKNIGHT, {
-					iensemble(217824, { -- Arsenal: Webbed Soulforged Weaponry
+					iensemble(217824, {	-- Arsenal: Webbed Soulforged Weaponry
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217837, { -- Ensemble: Webbed Soulforged Exoskeleton
+					iensemble(217837, {	-- Ensemble: Webbed Soulforged Exoskeleton
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(DEMONHUNTER, {
-					iensemble(217828, { -- Arsenal: Aldrachi Blasphemer's Glaives
+					iensemble(217828, {	-- Arsenal: Aldrachi Blasphemer's Glaives
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217842, { -- Ensemble: Aldrachi Blasphemer's Flames
+					iensemble(217842, {	-- Ensemble: Aldrachi Blasphemer's Flames
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					iensemble(217829, { -- Arsenal: Ela'lothen's Blessings of Rebirth
+					iensemble(217829, {	-- Arsenal: Ela'lothen's Blessings of Rebirth
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217843, { -- Ensemble: Ela'lothen's Vestment of Rebirth
+					iensemble(217843, {	-- Ensemble: Ela'lothen's Vestment of Rebirth
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(EVOKER, {
-					iensemble(217821, { -- Arsenal: Treasure of the Gold Hoarder
+					iensemble(217821, {	-- Arsenal: Treasure of the Gold Hoarder
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217835, { -- Ensemble: Scales of the Gold Hoarder
+					iensemble(217835, {	-- Ensemble: Scales of the Gold Hoarder
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
+					iensemble(217820, {	-- Arsenal: Dreadsquall Hunter's Preference
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
+					iensemble(217834, {	-- Ensemble: Dreadsquall Hunter's Camouflage
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					iensemble(217823, { -- Arsenal: Sin'dorei Magister's Enchantment
+					iensemble(217823, {	-- Arsenal: Sin'dorei Magister's Enchantment
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217836, { -- Ensemble: Sin'dorei Magister's Regalia
+					iensemble(217836, {	-- Ensemble: Sin'dorei Magister's Regalia
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(MONK, {
-					iensemble(217827, { -- Arsenal: Shado-Pan Watcher Arsenal
+					iensemble(217827, {	-- Arsenal: Shado-Pan Watcher Arsenal
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217841, { -- Ensemble: Shado-Pan Watcher Guise
+					iensemble(217841, {	-- Ensemble: Shado-Pan Watcher Guise
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					iensemble(217832, { -- Arsenal: Armaments of the Holy Avenger
+					iensemble(217832, {	-- Arsenal: Armaments of the Holy Avenger
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217846, { -- Ensemble: Plate of the Holy Avenger
+					iensemble(217846, {	-- Ensemble: Plate of the Holy Avenger
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					iensemble(217831, { -- Arsenal: Secrets of the Abyssal Cult
+					iensemble(217831, {	-- Arsenal: Secrets of the Abyssal Cult
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217845, { -- Ensemble: Silks of the Abyssal Cult
+					iensemble(217845, {	-- Ensemble: Silks of the Abyssal Cult
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					iensemble(217830, { -- Arsenal: Igneous Onyx Blades
+					iensemble(217830, {	-- Arsenal: Igneous Onyx Blades
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217844, { -- Ensemble: Igneous Onyx Uniform
+					iensemble(217844, {	-- Ensemble: Igneous Onyx Uniform
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					iensemble(217819, { -- Arsenal: Tools of Krag'wa's Disciple
+					iensemble(217819, {	-- Arsenal: Tools of Krag'wa's Disciple
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217833, { -- Ensemble: Imminence of Krag'wa's Disciple
+					iensemble(217833, {	-- Ensemble: Imminence of Krag'wa's Disciple
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					iensemble(217826, { -- Arsenal: Instruments of Temptation's Call
+					iensemble(217826, {	-- Arsenal: Instruments of Temptation's Call
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217839, { -- Ensemble: Jewels of Temptation's Call
+					iensemble(217839, {	-- Ensemble: Jewels of Temptation's Call
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
+					iensemble(217825, {	-- Arsenal: Fanatical Champion's Aggression
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
+					iensemble(217838, {	-- Ensemble: Fanatical Champion's Trophies
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
@@ -655,198 +655,198 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219025, {	-- Larah Treebender <World Apparel>
-				iensemble(215219, { -- Ensemble: Guise of the Shado-Pan (Dark)
+				iensemble(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
 				}),
-				iensemble(215220, { -- Ensemble: Guise of the Shado-Pan (Original)
+				iensemble(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = {{"c", BRONZE, 2500}},
 				}),
-				iensemble(215275, { -- Ensemble: Kor'kron Shaman Vestments (Cool)
-					["cost"] = {{"c", BRONZE, 2500}},
-					["description"] = "All appearances are MoP: Remix exclusive.",
-				}),
-				iensemble(215276, { -- Ensemble: Kor'kron Shaman Vestments (Warm)
+				iensemble(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
 				}),
-				iensemble(215277, { -- Ensemble: Kor'kron Shaman Vestments (Yellow)
+				iensemble(215276, {	-- Ensemble: Kor'kron Shaman Vestments (Warm)
+					["cost"] = {{"c", BRONZE, 2500}},
+					["description"] = "All appearances are MoP: Remix exclusive.",
+				}),
+				iensemble(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = {{"c", BRONZE, 2500}},
 				}),
-				iensemble(215352, { -- Ensemble: Robes of Quiet Reflection (Brown)
+				iensemble(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215353, { -- Ensemble: Robes of Quiet Reflection (Green)
+				iensemble(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215354, { -- Ensemble: Robes of Quiet Reflection (Red)
+				iensemble(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
 				}),
-				iensemble(215355, { -- Ensemble: Robes of Quiet Reflection (Yellow)
+				iensemble(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215238, { -- Ensemble: Tian Monastery Clothing (Blue)
+				iensemble(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215239, { -- Ensemble: Tian Monastery Clothing (Red)
+				iensemble(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215240, { -- Ensemble: Tian Monastery Clothing (White)
+				iensemble(215240, {	-- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215285, { -- Ensemble: Sun Pearl Clothing (Green)
+				iensemble(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215286, { -- Ensemble: Sun Pearl Clothing (Red)
+				iensemble(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215287, { -- Ensemble: Sun Pearl Clothing (Yellow)
+				iensemble(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215356, { -- Ensemble: Vestments of Serenity (Blue)
+				iensemble(215356, {	-- Ensemble: Vestments of Serenity (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215357, { -- Ensemble: Vestments of Serenity (Green)
+				iensemble(215357, {	-- Ensemble: Vestments of Serenity (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
-				iensemble(215358, { -- Ensemble: Vestments of Serenity (White)
+				iensemble(215358, {	-- Ensemble: Vestments of Serenity (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 				}),
 				i(226127, {	-- Recruit's Shirt (White)
 					["cost"] = {{"c", BRONZE, 5}},
 				}),
 				filter(CLOTH, {
-					iensemble(215183, { -- Ensemble: Spirit-Waker's Vestments (Blue)
+					iensemble(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215184, { -- Ensemble: Spirit-Waker's Vestments (Green)
+					iensemble(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215185, { -- Ensemble: Spirit-Waker's Vestments (Red)
+					iensemble(215185, {	-- Ensemble: Spirit-Waker's Vestments (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215186, { -- Ensemble: Mistwalker's Vestments (Blue)
+					iensemble(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215187, { -- Ensemble: Mistwalker's Vestments (Original)
+					iensemble(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215188, { -- Ensemble: Mistwalker's Vestments (White)
+					iensemble(215188, {	-- Ensemble: Mistwalker's Vestments (White)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215216, { -- Ensemble: Vestments of the Eternal Dynasty (Black)
+					iensemble(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215217, { -- Ensemble: Vestments of the Eternal Dynasty (Blue)
+					iensemble(215217, {	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215218, { -- Ensemble: Vestments of the Eternal Dynasty (Yellow)
+					iensemble(215218, {	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
 				}),
 				filter(LEATHER, {
-					iensemble(215225, { -- Ensemble: Thunderpaw Battlegear (Dark)
+					iensemble(215225, {	-- Ensemble: Thunderpaw Battlegear (Dark)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215226, { -- Ensemble: Thunderpaw Battlegear (Light)
+					iensemble(215226, {	-- Ensemble: Thunderpaw Battlegear (Light)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215227, { -- Ensemble: Thunderpaw Battlegear (Original)
+					iensemble(215227, {	-- Ensemble: Thunderpaw Battlegear (Original)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215228, { -- Ensemble: Thunderpaw Battlegear (Red)
+					iensemble(215228, {	-- Ensemble: Thunderpaw Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215229, { -- Ensemble: Mistveil Leathers (Black)
+					iensemble(215229, {	-- Ensemble: Mistveil Leathers (Black)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215230, { -- Ensemble: Mistveil Leathers (Brown)
+					iensemble(215230, {	-- Ensemble: Mistveil Leathers (Brown)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215231, { -- Ensemble: Mistveil Leathers (Crimson)
+					iensemble(215231, {	-- Ensemble: Mistveil Leathers (Crimson)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215232, { -- Ensemble: Mistveil Leathers (Indigo)
+					iensemble(215232, {	-- Ensemble: Mistveil Leathers (Indigo)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215269, { -- Ensemble: Snowdrift Battlegear (Blue)
+					iensemble(215269, {	-- Ensemble: Snowdrift Battlegear (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215270, { -- Ensemble: Snowdrift Battlegear (Brown)
+					iensemble(215270, {	-- Ensemble: Snowdrift Battlegear (Brown)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215271, { -- Ensemble: Snowdrift Battlegear (Red)
+					iensemble(215271, {	-- Ensemble: Snowdrift Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
 				}),
 				filter(MAIL, {
-					iensemble(215282, { -- Ensemble: Dawnwatcher's Scale Armor (Blue)
+					iensemble(215282, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215283, { -- Ensemble: Dawnwatcher's Scale Armor (Purple)
+					iensemble(215283, {	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215284, { -- Ensemble: Dawnwatcher's Scale Armor (Red)
+					iensemble(215284, {	-- Ensemble: Dawnwatcher's Scale Armor (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215306, { -- Ensemble: Jade Guardian's Regalia (Blue)
+					iensemble(215306, {	-- Ensemble: Jade Guardian's Regalia (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215307, { -- Ensemble: Jade Guardian's Regalia (Brown)
+					iensemble(215307, {	-- Ensemble: Jade Guardian's Regalia (Brown)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215308, { -- Ensemble: Jade Guardian's Regalia (Red)
+					iensemble(215308, {	-- Ensemble: Jade Guardian's Regalia (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215309, { -- Ensemble: Jade Guardian's Regalia (Yellow)
+					iensemble(215309, {	-- Ensemble: Jade Guardian's Regalia (Yellow)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215278, { -- Ensemble: Trailseeker's Laminar Armor (Black)
+					iensemble(215278, {	-- Ensemble: Trailseeker's Laminar Armor (Black)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215279, { -- Ensemble: Trailseeker's Laminar Armor (Gold)
+					iensemble(215279, {	-- Ensemble: Trailseeker's Laminar Armor (Gold)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215280, { -- Ensemble: Trailseeker's Laminar Armor (Green)
+					iensemble(215280, {	-- Ensemble: Trailseeker's Laminar Armor (Green)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215281, { -- Ensemble: Trailseeker's Laminar Armor (White)
+					iensemble(215281, {	-- Ensemble: Trailseeker's Laminar Armor (White)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
 				}),
 				filter(PLATE, {
-					iensemble(215348, { -- Ensemble: Gatecrasher's Battleplate (Black)
+					iensemble(215348, {	-- Ensemble: Gatecrasher's Battleplate (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215349, { -- Ensemble: Gatecrasher's Battleplate (Blue)
+					iensemble(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215350, { -- Ensemble: Gatecrasher's Battleplate (Green)
+					iensemble(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215351, { -- Ensemble: Gatecrasher's Battleplate (Red)
+					iensemble(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
 					}),
-					iensemble(215316, { -- Ensemble: Shan'ze Warplate (Green)
+					iensemble(215316, {	-- Ensemble: Shan'ze Warplate (Green)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215317, { -- Ensemble: Shan'ze Warplate (Purple)
+					iensemble(215317, {	-- Ensemble: Shan'ze Warplate (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215318, { -- Ensemble: Shan'ze Warplate (Red)
+					iensemble(215318, {	-- Ensemble: Shan'ze Warplate (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215319, { -- Ensemble: Shan'ze Warplate (Yellow)
+					iensemble(215319, {	-- Ensemble: Shan'ze Warplate (Yellow)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215313, { -- Ensemble: Spiritguard's Warplate (Blue)
+					iensemble(215313, {	-- Ensemble: Spiritguard's Warplate (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215314, { -- Ensemble: Spiritguard's Warplate (Gold)
+					iensemble(215314, {	-- Ensemble: Spiritguard's Warplate (Gold)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215315, { -- Ensemble: Spiritguard's Warplate (Silver)
+					iensemble(215315, {	-- Ensemble: Spiritguard's Warplate (Silver)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
 				}),
@@ -1003,123 +1003,123 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				-- Classes
 				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215322, { -- Ensemble: Plate of the Lost Catacomb (Heroic)
+					iensemble(215322, {	-- Ensemble: Plate of the Lost Catacomb (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215323, { -- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
+					iensemble(215323, {	-- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215328, { -- Ensemble: Battleplate of Cyclopean Dread (Mythic)
+					iensemble(215328, {	-- Ensemble: Battleplate of Cyclopean Dread (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					iensemble(215242, { -- Ensemble: Vestments of the Eternal Blossom (Heroic)
+					iensemble(215242, {	-- Ensemble: Vestments of the Eternal Blossom (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215244, { -- Ensemble: Vestments of the Haunted Forest (Heroic)
+					iensemble(215244, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215248, { -- Ensemble: Vestments of the Shattered Vale (Mythic)
+					iensemble(215248, {	-- Ensemble: Vestments of the Shattered Vale (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					iensemble(215290, { -- Ensemble: Yaungol Slayer Battlegear (Heroic)
+					iensemble(215290, {	-- Ensemble: Yaungol Slayer Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215291, { -- Ensemble: Battlegear of the Saurok Stalker (Heroic)
+					iensemble(215291, {	-- Ensemble: Battlegear of the Saurok Stalker (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215296, { -- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
+					iensemble(215296, {	-- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					iensemble(215190, { -- Ensemble: Regalia of the Burning Scroll (Heroic)
+					iensemble(215190, {	-- Ensemble: Regalia of the Burning Scroll (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215192, { -- Ensemble: Regalia of the Chromatic Hydra (Heroic)
+					iensemble(215192, {	-- Ensemble: Regalia of the Chromatic Hydra (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215195, { -- Ensemble: Chronomancer Regalia (Mythic)
+					iensemble(215195, {	-- Ensemble: Chronomancer Regalia (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(MONK, {
-					iensemble(215250, { -- Ensemble: Vestments of the Red Crane (Heroic)
+					iensemble(215250, {	-- Ensemble: Vestments of the Red Crane (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215254, { -- Ensemble: Fire-Charm Vestments (Heroic)
+					iensemble(215254, {	-- Ensemble: Fire-Charm Vestments (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215259, { -- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
+					iensemble(215259, {	-- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					iensemble(215331, { -- Ensemble: White Tiger Battlegear (Heroic)
+					iensemble(215331, {	-- Ensemble: White Tiger Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215333, { -- Ensemble: Battlegear of the Lightning Emperor (Heroic)
+					iensemble(215333, {	-- Ensemble: Battlegear of the Lightning Emperor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215336, { -- Ensemble: Vestments of Winged Triumph (Mythic)
+					iensemble(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					iensemble(215200, { -- Ensemble: Timeworn Dreadful Mooncloth Regalia (Heroic)
+					iensemble(215200, {	-- Ensemble: Timeworn Dreadful Mooncloth Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215203, { -- Ensemble: Regalia of the Exorcist (Heroic)
+					iensemble(215203, {	-- Ensemble: Regalia of the Exorcist (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215205, { -- Ensemble: Regalia of Ternion Glory (Mythic)
+					iensemble(215205, {	-- Ensemble: Regalia of Ternion Glory (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					iensemble(215262, { -- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
+					iensemble(215262, {	-- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215265, { -- Ensemble: Nine-Tail Battlegear (Heroic)
+					iensemble(215265, {	-- Ensemble: Nine-Tail Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215268, { -- Ensemble: Barbed Assassin Battlegear (Mythic)
+					iensemble(215268, {	-- Ensemble: Barbed Assassin Battlegear (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					iensemble(215299, { -- Ensemble: Regalia of the Firebird (Heroic)
+					iensemble(215299, {	-- Ensemble: Regalia of the Firebird (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215301, { -- Ensemble: Regalia of the Witch Doctor (Heroic)
+					iensemble(215301, {	-- Ensemble: Regalia of the Witch Doctor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215305, { -- Ensemble: Regalia of Celestial Harmony (Mythic)
+					iensemble(215305, {	-- Ensemble: Regalia of Celestial Harmony (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					iensemble(215207, { -- Ensemble: Sha Skin Regalia (Heroic)
+					iensemble(215207, {	-- Ensemble: Sha Skin Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215211, { -- Ensemble: Regalia of the Thousandfold Hells (Heroic)
+					iensemble(215211, {	-- Ensemble: Regalia of the Thousandfold Hells (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215213, { -- Ensemble: Regalia of the Horned Nightmare (Mythic)
+					iensemble(215213, {	-- Ensemble: Regalia of the Horned Nightmare (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					iensemble(215340, { -- Ensemble: Battleplate of Resounding Rings (Heroic)
+					iensemble(215340, {	-- Ensemble: Battleplate of Resounding Rings (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215342, { -- Ensemble: Battleplate of the Last Mogu (Heroic)
+					iensemble(215342, {	-- Ensemble: Battleplate of the Last Mogu (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
-					iensemble(215345, { -- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
+					iensemble(215345, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 					}),
 				}),

@@ -37,7 +37,7 @@ EPIC_EDITION = createHeader({
 	},
 });
 -- NOTE: Released on May 18, 2021.
--- NOTE: No longer available on the store since September, 2022.
+-- NOTE: No longer available on the store since August 30, 2022.
 TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	readable = "TBC Classic Deluxe Edition",
 	icon = [[~_.asset("Expansion_TBC")]],
@@ -46,8 +46,18 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 		es = "Edición TBC Classic Deluxe",
 		fr = "Édition BC Classic Deluxe",
 		mx = "Edición TBC Classic Deluxe",
-		cn = "燃烧的远征经典怀旧服典藏包",
+		cn = "'燃烧的远征'怀旧服典藏包",
 		tw = "燃燒的遠征：經典版 - 豪華版",
+	},
+});
+-- NOTE: Released on November 18, 2025.
+TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE = createHeader({
+	readable = "TBC Classic Anniversary Edition - Outland Upgrade",
+	icon = [[~_.asset("Expansion_TBC")]],
+	text = {
+		en = "TBC Classic Anniversary Edition - Outland Upgrade",
+		cn = "'燃烧的远征'周年纪念版 - 外域升级",
+		tw = "燃燒的遠征：經典週年紀念版 - 外域升級",
 	},
 });
 -- NOTE: Released on August 30, 2022.
@@ -59,6 +69,7 @@ WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 		en = "WotLK Classic Northrend Upgrade",
 		es = "Pack Heroic Rasganorte WotLK Classic",
 		mx = "Paquete heroico Rasganorte WotLK Classic",
+		cn = "'巫妖王之怒'怀旧服 - 北裂境升级",
 		tw = "巫妖王之怒：經典版 - 北裂境升級",
 	},
 });
@@ -71,6 +82,7 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 		en = "Cata Classic Blazing Upgrade",
 		es = "Pack Heroic llameante de Cataclysm Classic",
 		mx = "Paquete heroico abrasador de Cataclysm Classic",
+		cn = "'大地的裂变'怀旧服 - 炽炎升级",
 		tw = "浩劫與重生：經典版 - 熾炎升級",
 	},
 });
@@ -82,28 +94,9 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 		en = "MoP Classic Sha-Infused Heroic Pack",
 		es = "Pack Heroic imbuido de sha",
 		mx = "Paquete heroico infundido por los sha",
+		cn = "'熊猫人之谜'怀旧服 - 宿煞英雄礼包",
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
-});
-MIDNIGHT_TEMPORARY = createHeader({
-	readable = "Midnight",
-	icon = [[~_.asset("Expansion_MN")]],
-	text = {
-		en = "Midnight",
-		-- es = "Midnight",
-		-- mx = "Midnight",
-		-- de = "Midnight",
-		-- fr = "Midnight",
-		-- it = "Midnight",
-		-- pt = "Midnight",
-		-- ru = "Midnight",
-		ko = "한밤",
-		cn = "至暗之夜",
-		-- tw = "至暗之夜",
-	},
-	description = {
-		en = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga.",
-	};
 });
 WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 	readable = "WoW 15th Anniversary Collector's Edition",
@@ -374,6 +367,29 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #endif
+	-- #if ANYCLASSIC
+	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { "added 2.5.5", "removed 3.0.0", ADDED_5_5_2 } }, {
+		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+		["groups"] = {
+			i(260438),	-- Cerulean Phase-Hunter (MOUNT!)
+			i(260622),	-- Exodar Replica (TOY!
+			i(260221),	-- Naaru's Embrace (TOY!)
+			i(260433),	-- Starshard Whelpling (PET!)
+			i(260759),	-- Reins of the Starshard Netherdrake (MOUNT!)
+		},
+	})),
+	-- #else
+	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
+		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+		["groups"] = {
+			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
+			i(254666),	-- Exodar Replica (TOY!
+			i(263489),	-- Naaru's Enfold (TOY!)
+			i(253699),	-- Starshard Whelpling (PET!)
+			i(252950),	-- Starspark Netherdrake (MOUNT!)
+		},
+	})),
+	-- #endif
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
@@ -427,7 +443,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["groups"] = {
+				-- #if AFTER 11.2.5
+				i(258475),	-- Tuskarr Shoreglider (MOUNT!)
+				-- #else
 				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
+				-- #endif
 			},
 		}),
 	})),
@@ -528,8 +548,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["groups"] = {
 				mount(473487),		-- Sha-Touched Cloud Serpent
 				mount(473478),		-- Sha-Touched Riding Tiger
-				--i(xxxxxx),	-- Joyous Pet (PET!)
-				--Ensemble: Stormstout's Sha-Touched Collection Transmog Set (Classic)
+				-- i(xxxxxx),	-- Joyous Pet (PET!)
+				-- Ensemble: Stormstout's Sha-Touched Collection Transmog Set (Classic)
 				-- Sha-Touched Tea Set Toy (Added with Mists of Pandaria)
 				i(235464, {	-- Sha-Touched Tea Set (TOY!)
 					["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 },
@@ -639,7 +659,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
 			["groups"] = {
+				-- #if AFTER 11.2.5
+				i(258432, {	-- Drakks (PET!)
+				-- #else
 				pet(3177, {	-- Drakks (PET!)
+				-- #endif
 					["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
 					["timeline"] = { REMOVED_10_0_2 },
 				}),
@@ -655,11 +679,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
 			["groups"] = {
 				i(193588),	-- Timewalker's Hearthstone (TOY!)
+				-- #if AFTER 11.2.5
+				iensemble(255827),	-- Collection: Wings of Awakening
+				-- #else
 				i(188257),	-- Azure Wings of Awakening
 				i(188258),	-- Bronze Wings of Awakening
 				i(188259),	-- Emerald Wings of Awakening
 				i(188260),	-- Ruby Wings of Awakening
 				i(188256),	-- Obsidian Wings of Awakening
+				-- #endif
 				i(193610),	-- Diadem of the Spell-Keeper
 			},
 		}),
@@ -668,7 +696,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
 			["groups"] = {
+				-- #if AFTER 11.2.5
+				i(258479),	-- Algarian Stormrider (MOUNT!)
+				-- #else
 				mount(417888),	-- Algarian Stormrider (MOUNT!)
+				-- #endif
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
 				iensemble(209336),	-- Ensemble: Stormrider's Attire
 				skyriding(n(DRAGONRIDING_RACING, {
@@ -875,7 +907,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
-	n(MIDNIGHT_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
 			["groups"] = {

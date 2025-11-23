@@ -21,10 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						i(249459),	-- Illidari Glaiverest (DECOR!)
 					}),
 				})),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(665),	-- Ashtongue Warriors
 					follower(878),	-- Ashtongue Warriors
 					follower(879),	-- Ashtongue Warriors
@@ -48,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 
 					-- TODO: itemID 143849
 					follower(991),	-- Coilskar Brute
-				})),
+				}),
 				n(QUESTS, {
 					q(39047, {	-- Call of the Illidari (Altruis)
 						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
@@ -967,13 +964,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.5, 51.6, 720 },
 						["lvl"] = 103,
-					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
+						-- didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 					}),
 					q(44213, {	-- You Will Be Prepared!
 						["provider"] = { "n", 112407 },	-- Falara Nightsong
 						["coord"] = { 57.7, 44.2, 720 },
 						["lvl"] = 110,
-					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression. i had done up through "working with the wardens."
+						-- unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression. i had done up through "working with the wardens."
 						["groups"] = {
 							i(139718),	-- Helm of the Shattered Abyss
 						},

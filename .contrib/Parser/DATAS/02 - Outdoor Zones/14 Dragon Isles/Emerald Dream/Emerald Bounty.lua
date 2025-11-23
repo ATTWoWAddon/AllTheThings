@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(QUESTS,{
 				q(78172, {	-- Mysterious Seeds
-					--["sourceQuests"] = { xx },	-- xx
+					-- ["sourceQuests"] = { xx },	-- xx
 					["provider"] = { "i", 210050 },	-- Mysterious Seeds
 				}),
 				q(77209, {	-- Seed Legacy
@@ -127,11 +127,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				--
 				q(78821, {	-- Blooming Dreamseeds
-					--["sourceQuests"] = {
-					--	78206,	-- Emerald Bounty (TODO: need to confirm)
-					--	77887,	-- 'World Quest Unlock' (spellID 421687)
-					--},
-					--["sourceQuestNumRequired"] = 1
+					-- ["sourceQuests"] = {
+					-- 	78206,	-- Emerald Bounty (TODO: need to confirm)
+					-- 	77887,	-- 'World Quest Unlock' (spellID 421687)
+					-- },
+					-- ["sourceQuestNumRequired"] = 1
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(REWARDS, {
 				["groups"] = {
 					i(210219, {	-- Gigantic Dreamy Bounty
-						["provider"] = {"i", 208047, 1},	-- Gigantic Dreamseed
+						["cost"] = {{"i", 208047, 1}},	-- Gigantic Dreamseed
 						["sym"] = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(210218, {	-- Plump Dreamy Bounty
-						["provider"] = {"i", 208067, 1},	-- Plump Dreamseed
+						["cost"] = {{"i", 208067, 1}},	-- Plump Dreamseed
 						["sym"] = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
@@ -192,12 +192,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
 							i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 							i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
-							--[Mark of the Boreal Dreamtalon] from blue bag
-							--[Mark of the Snowy Umbraclaw] from blue bag
+							-- [Mark of the Boreal Dreamtalon] from blue bag
+							-- [Mark of the Snowy Umbraclaw] from blue bag
 						},
 					}),
 					i(210217, {	-- Small Dreamy Bounty
-						["provider"] = {"i", 208066, 1},	-- Small Dreamseed
+						["cost"] = {{"i", 208066, 1}},	-- Small Dreamseed
 						-- Dont Think we should symlink this?
 					}),
 				},
@@ -302,28 +302,28 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
 			n(EMERALD_BOUNTY, {
-				--I hate it >_<
-				--...78975 is currently pop when looting cache in addition to loot hqt
+				-- I hate it >_<
+				-- ...78975 is currently pop when looting cache in addition to loot hqt
 				q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
-				--as of 18.10 contrib into other player plant fire as regular self planting.
+				-- as of 18.10 contrib into other player plant fire as regular self planting.
 				--
 				q(79306),	-- after 1st seed/plant?
 				q(79305),	-- after turn in 78821/seedbloom reward lockout?
-				--q(),
-				--q(),
-				--q(),
+				-- q(),
+				-- q(),
+				-- q(),
 				--
-				--1 - Ageless Blossom
-				--q(),	-- plant green seed
-				--q(),	-- plant blue seed
-				--q(),	-- plant purple seed
-				--q(),	-- contrib with dewdrop
-				--q(),	-- contrib with dewdrop for green seed
-				--q(),	-- contrib with dewdrop for blue seed
-				--q(),	-- bloom spot (80/100)
-				--q(),	-- bloom spot (100/100)
-				--q(),	-- loot cache
-				--2 - Belligerent Begonias (spellID 418401 as reference with qid)
+				-- 1 - Ageless Blossom
+				-- q(),	-- plant green seed
+				-- q(),	-- plant blue seed
+				-- q(),	-- plant purple seed
+				-- q(),	-- contrib with dewdrop
+				-- q(),	-- contrib with dewdrop for green seed
+				-- q(),	-- contrib with dewdrop for blue seed
+				-- q(),	-- bloom spot (80/100)
+				-- q(),	-- bloom spot (100/100)
+				-- q(),	-- loot cache
+				-- 2 - Belligerent Begonias (spellID 418401 as reference with qid)
 				q(77359),	-- plant green seed
 				q(77361),	-- plant blue seed
 				q(77269),	-- plant purple seed
@@ -334,7 +334,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77365),	-- bloom spot (80/100)
 				q(77349),	-- bloom spot (100/100)
 				q(77360),	-- loot cache
-				--3 - Chiming Foxglove (spellID 417935 as reference with qid)
+				-- 3 - Chiming Foxglove (spellID 417935 as reference with qid)
 				q(77222),	-- plant green seed
 				q(77223),	-- plant blue seed
 				q(77219),	-- plant purple seed
@@ -345,7 +345,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77226),	-- bloom spot (80/100)
 				q(77227),	-- bloom spot (100/100) (spellID 418309)
 				q(77211),	-- loot cache
-				--4 - Comfy Chamomile (spellID 423188 as reference with qid)
+				-- 4 - Comfy Chamomile (spellID 423188 as reference with qid)
 				q(77519),	-- plant green seed
 				q(77516),	-- plant blue seed
 				q(77518),	-- plant purple seed
@@ -356,7 +356,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77514),	-- bloom spot (80/100)
 				q(77512),	-- bloom spot (100/100) (spellID 423152)
 				q(77517),	-- loot cache
-				--5 - Dragon's Daffodil (spellID 417947 as reference with qid)
+				-- 5 - Dragon's Daffodil (spellID 417947 as reference with qid)
 				q(77224),	-- plant green seed
 				q(77225),	-- plant blue seed
 				q(77220),	-- plant purple seed
@@ -367,7 +367,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77228),	-- bloom spot (80/100)
 				q(77229),	-- bloom spot (100/100) (spellID 418312)
 				q(77212),	-- loot cache
-				--6 - Dreamer's Daisy (spellID 418781 as reference with qid)
+				-- 6 - Dreamer's Daisy (spellID 418781 as reference with qid)
 				q(77392),	-- plant green seed
 				q(77391),	-- plant blue seed
 				q(77274),	-- plant purple seed
@@ -378,7 +378,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77370),	-- bloom spot (80/100) / 'Chest' (spellID 418389)
 				q(77356),	-- bloom spot (100/100)
 				q(77393),	-- loot cache
-				--7 - Flourishing Scurfpea (spellID 423190 as reference with qid)
+				-- 7 - Flourishing Scurfpea (spellID 423190 as reference with qid)
 				q(77538),	-- plant green seed
 				q(77535),	-- plant blue seed
 				q(77537),	-- plant purple seed
@@ -389,7 +389,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77533),	-- bloom spot (80/100)
 				q(77532),	-- bloom spot (100/100)
 				q(77536),	-- loot cache
-				--8 - Fuzzy Licorice (spellID 418626 as reference with qid)
+				-- 8 - Fuzzy Licorice (spellID 418626 as reference with qid)
 				q(77380),	-- plant green seed
 				q(77379),	-- plant blue seed
 				q(77271),	-- plant purple seed
@@ -400,7 +400,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77367),	-- bloom spot (80/100)
 				q(77353),	-- bloom spot (100/100)
 				q(77381),	-- loot cache
-				--9 - Glade Goldenrod (spellID 421186 as reference with qid)
+				-- 9 - Glade Goldenrod (spellID 421186 as reference with qid)
 				q(77511),	-- plant green seed
 				q(77508),	-- plant blue seed
 				q(77510),	-- plant purple seed
@@ -411,7 +411,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77505),	-- bloom spot (80/100) (spellID 421191)
 				q(77504),	-- bloom spot (100/100) (spellID 421192)
 				q(77509),	-- loot cache
-				--10 - Lavatouched Lilies (spellID 420631 as reference with qid)
+				-- 10 - Lavatouched Lilies (spellID 420631 as reference with qid)
 				q(77496),	-- plant green seed
 				q(77493),	-- plant blue seed
 				q(77495),	-- plant purple seed
@@ -422,7 +422,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77491),	-- bloom spot (80/100) (spellID 420623)
 				q(77490),	-- bloom spot (100/100) (spellID 420626)
 				q(77494),	-- loot cache
-				--11 - Lofty Lupin (spellID 418724 as reference with qid)
+				-- 11 - Lofty Lupin (spellID 418724 as reference with qid)
 				q(77384),	-- plant green seed
 				q(77383),	-- plant blue seed
 				q(77272),	-- plant purple seed
@@ -433,7 +433,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77368),	-- bloom spot (80/100) (spellID 418387)
 				q(77354),	-- bloom spot (100/100) (spellID 418324)
 				q(77385),	-- loot cache
-				--12 - Lullaby Lavender (spellID 420757 as reference with qid)
+				-- 12 - Lullaby Lavender (spellID 420757 as reference with qid)
 				q(77503),	-- plant green seed
 				q(77500),	-- plant blue seed
 				q(77502),	-- plant purple seed
@@ -444,7 +444,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77498),	-- bloom spot (80/100) / 'Chest' (spellID 420760)
 				q(77497),	-- bloom spot (100/100) / 'Chest' (spellID 420761)
 				q(77501),	-- loot cache
-				--13 - Moon Tulip (spellID 423189 as reference with qid)
+				-- 13 - Moon Tulip (spellID 423189 as reference with qid)
 				q(77531),	-- plant green seed
 				q(77528),	-- plant blue seed
 				q(77530),	-- plant purple seed
@@ -455,7 +455,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77526),	-- bloom spot (80/100) / 'Chest' (spellID 423213)
 				q(77525),	-- bloom spot (100/100)
 				q(77529),	-- loot cache
-				--14 - Ringing Rose (spellID 418780 as reference with qid)
+				-- 14 - Ringing Rose (spellID 418780 as reference with qid)
 				q(77387),	-- plant green seed
 				q(77386),	-- plant blue seed
 				q(77273),	-- plant purple seed
@@ -466,7 +466,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77369),	-- bloom spot (80/100) (spellID 418388)
 				q(77355),	-- bloom spot (100/100)
 				q(77389),	-- loot cache
-				--15 - Singing Weedling (spellID 418432 as reference with qid)
+				-- 15 - Singing Weedling (spellID 418432 as reference with qid)
 				q(77375),	-- plant green seed
 				q(77374),	-- plant blue seed
 				q(77270),	-- plant purple seed
@@ -477,7 +477,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77366),	-- bloom spot (80/100) (spellID 418385)
 				q(77350),	-- bloom spot (100/100) (spellID 418321)
 				q(77373),	-- loot cache
-				--16 - Viridescent Sprout (spellID 418782 as reference with qid)
+				-- 16 - Viridescent Sprout (spellID 418782 as reference with qid)
 				q(77395),	-- plant green seed
 				q(77394),	-- plant blue seed
 				q(77275),	-- plant purple seed
@@ -488,7 +488,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77372),	-- bloom spot (80/100)
 				q(77357),	-- bloom spot (100/100) / 'Chest' (spellID 418327)
 				q(77396),	-- loot cache
-				--17 - Whisperbloom Sapling (spellID 423984 as reference with qid)
+				-- 17 - Whisperbloom Sapling (spellID 423984 as reference with qid)
 				q(77545),	-- plant green seed
 				q(77542),	-- plant blue seed
 				q(77544),	-- plant purple seed
@@ -499,7 +499,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(77540),	-- bloom spot (80/100)
 				q(77539),	-- bloom spot (100/100)
 				q(77543),	-- loot cache
-				--18 - Ysera's Clover (spellID 417874 as reference with qid)
+				-- 18 - Ysera's Clover (spellID 417874 as reference with qid)
 				q(77216),	-- plant green seed
 				q(77215),	-- plant blue seed
 				q(77214),	-- plant purple seed

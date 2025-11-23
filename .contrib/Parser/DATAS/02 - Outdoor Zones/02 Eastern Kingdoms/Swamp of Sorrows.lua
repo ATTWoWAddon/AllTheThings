@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27919, {	-- Onward to the Blasted Lands
-					--["sourceQuest"] = 24913,	-- Remember the Light
+					-- ["sourceQuest"] = 24913,	-- Remember the Light
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },

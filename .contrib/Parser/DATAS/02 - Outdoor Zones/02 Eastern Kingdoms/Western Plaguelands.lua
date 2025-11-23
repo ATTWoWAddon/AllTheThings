@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26938,	-- Combat Training (H)
 						27206,	-- Alas, Andorhal (A)
 						27144,	-- The Reckoning (H)
-						--27055,	-- Students of Krastinov (TODO: verify if needed)
+						-- 27055,	-- Students of Krastinov (TODO: verify if needed)
 						27155,	-- Turning Yourself In
 						26955,	-- Zen'Kiki and the Cultists
 					},

@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			fp(2754, {	-- Arcae Locus
 				["coord"] = { 36.6, 31.6, 2029 },	-- Gravid Repose
 				["cr"] = 184485,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2747, {	-- Camber Alcove
 				["coord"] = { 48.1, 76.7, 2029 },	-- Gravid Repose
@@ -60,27 +60,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			fp(2729, {	-- Gravid Repose Locus
 				["coord"] = { 59.4, 41.5, 2029 },	-- Gravid Repose
 				["cr"] = 184329,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2730, {	-- Interior Locus
 				["coord"] = { 40.4, 34.2, 2029 },	-- Gravid Repose
 				["cr"] = 184356,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2746, {	-- Primus Locus
 				["coord"] = { 48.4, 26.4, ZERETH_MORTIS },
 				["cr"] = 184386,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2743, {	-- Quartus Locus
 				["coord"] = { 48.5, 29.7, ZERETH_MORTIS },
 				["cr"] = 184385,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2742, {	-- Quintus Locus
 				["coord"] = { 50.7, 32.6, ZERETH_MORTIS },
 				["cr"] = 184384,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2748, {	-- Repertory Alcove
 				["coord"] = { 34.5, 67.1, 2029 },	-- Gravid Repose
@@ -95,17 +95,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			fp(2745, {	-- Secundus Locus
 				["coord"] = { 48.0, 27.9, ZERETH_MORTIS },
 				["cr"] = 184387,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2744, {	-- Tertius Locus
 				["coord"] = { 51.9, 27.1, ZERETH_MORTIS },
 				["cr"] = 184388,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 			fp(2738, {	-- Ultimus Locus
 				["coord"] = { 48.9, 31.4, ZERETH_MORTIS },
 				["cr"] = 184364,	-- Locus Shift
-				--["sourceQuests"] = { TODO },	-- 
+				-- ["sourceQuests"] = { TODO },	-- 
 			}),
 		}),
 	}),

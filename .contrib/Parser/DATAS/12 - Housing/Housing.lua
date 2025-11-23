@@ -17,7 +17,7 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2
 		title(657),	-- %s the Furnished
 	}),
 	ach(40887, {	-- Fox Friends
-		--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Coffee Press (DECOR!)
+		-- i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Coffee Press (DECOR!)
 	}),
 	ach(61211, {	-- Welcome Home
 		["description"] = "Build your own home through Housing",

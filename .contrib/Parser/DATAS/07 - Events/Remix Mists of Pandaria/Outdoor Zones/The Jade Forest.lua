@@ -130,17 +130,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				q(81976, {	-- Bazaar, Isn't It?
+					-- ["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
 					["provider"] = { "n", 222186 },	-- Nostwin
 					["coord"] = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
-					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
 					["groups"] = {
 						i(217930),	-- Nostwin's Voucher
 					},
 				}),
 				q(78894, {	-- Infinite Growth
+					-- ["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
 					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
-					--["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
 				}),
 				q(83775, {	-- Infinite Growth II
 					["sourceQuests"] = { 78894 },	-- Infinite Growth

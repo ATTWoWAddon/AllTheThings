@@ -41,7 +41,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			ach(15356, {	-- Hero of the Horde: Cosmic
 				["races"] = HORDE_ONLY,
 			}),
-			--Fashion
+			-- Fashion
 			ach(15408, {	-- Cosmic Chic
 				["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 			}),

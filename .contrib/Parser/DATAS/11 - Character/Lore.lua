@@ -8,16 +8,16 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED }
 		}, {
 			q(65652, {	-- Summons from the Matriarch (non-Paladin)
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 176789 },	-- Lady Liadrin
 				["coord"] = { 25.4, 52.1, ORIBOS },
 				["classes"] = exclude({ PALADIN, SHAMAN, DRUID, EVOKER }, ALL_CLASSES),
-				-- ["sourceQuests"] = { },
 			}),
 			q(63479, {	-- Summons from the Matriarch (Paladin)
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 176789 },	-- Lady Liadrin
 				["coord"] = { 25.4, 52.1, ORIBOS },
 				["classes"] = { PALADIN },
-				-- ["sourceQuests"] = { },
 			}),
 			q(63480, {	-- Briefing
 				["sourceQuests"] = { 65652, 63479 },	-- Summons from the Matriarch

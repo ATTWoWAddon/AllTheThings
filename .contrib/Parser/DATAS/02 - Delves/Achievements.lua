@@ -53,7 +53,7 @@ local ALL_THE_DELVES = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
---	SHADOWGUARD_POINT,	-- MAPID MISSING
+	-- SHADOWGUARD_POINT,	-- MAPID MISSING
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
@@ -86,7 +86,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_THE_DELVES,
 			["groups"] = {
 				-- #if AFTER 11.2.0
-				--title(650),	-- Delver %s // doesn't load ingame
+				-- title(650),	-- Delver %s // doesn't load ingame
 				-- #else
 				title(598),	-- Delver %s
 				-- #endif

@@ -68,6 +68,9 @@ namespace ATT
             if (!string.IsNullOrEmpty(CurrentSubFileName))
                 Trace.WriteLine(" -- SUBFILE: " + CurrentSubFileName);
 
+            if (!string.IsNullOrEmpty(CurrentImportFileName))
+                Trace.WriteLine(" -- IMPORT FILE: " + CurrentImportFileName);
+
             Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 

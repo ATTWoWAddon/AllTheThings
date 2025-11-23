@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(249),	-- Dreadmaul Rock
 				-- #if AFTER CATA
 				exploration(5653),	-- Fields of Honor
-				--exploration(251),	-- Flame Crest (Does not get detected)
+				-- exploration(251),	-- Flame Crest (Does not get detected)
 				exploration(5651),	-- Flamestar Post
 				-- #endif
 				exploration(2418),	-- Morgan's Vigil

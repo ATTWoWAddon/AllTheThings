@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				pet(3389, {	-- The Quackcestor (PET!)
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 7 },
 					["description"] = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
-					["provider"] = { "i", 201323, 1 },	-- 1xEssence of Awakening
+					["provider"] = { "i", 201323 },	-- 1xEssence of Awakening
 					["coords"] = {
 						{ 41.6, 45.2, OHNAHRAN_PLAINS },
 						{ 41.8, 44.0, OHNAHRAN_PLAINS },

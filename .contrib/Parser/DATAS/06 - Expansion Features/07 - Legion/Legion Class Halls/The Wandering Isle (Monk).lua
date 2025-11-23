@@ -55,10 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(702),	-- Echo of Chi-Ji
 					follower(701),	-- Echo of Niuzao
 					follower(703),	-- Echo of Xuen
@@ -90,7 +87,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(693),	-- Tiger Masters
 					follower(694),	-- Tiger Masters
 					follower(777),	-- Tiger Masters
-				})),
+				}),
 				n(QUESTS, {
 					-- Intro
 					q(12103, {	-- Before the Storm
@@ -471,21 +468,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43058, {	-- Spiced Rib Roast
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43060, {	-- Highmountain Salmon
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
-					--- Chap 3
+					-- Chap 3
 					q(41849, {	-- The Iron Fist
 						["sourceQuests"] = {
 							43062,	-- Further Training
@@ -523,25 +520,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 105152 },	-- Hiro
 						["maps"] = { STORMHEIM },
-						["groups"] = {
-							i(139738),	-- Grandmaster's Cuffs
-						},
+						["groups"] = { i(139738) },	-- Grandmaster's Cuffs
 					}),
 					q(41737, {	-- Champion: Hiro
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
 						["provider"] = { "n", 105058 },	-- Hiro
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(606),	-- Hiro
-						},
+						["groups"] = { follower(606) },	-- Hiro
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
 						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
-						["groups"] = {
-							follower(604),	-- Sylara Steelsong
-						},
+						["groups"] = { follower(604) },	-- Sylara Steelsong
 					}),
 					q(41736, {	-- Champion: Angus Ironfist
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
@@ -565,27 +556,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41038 },	-- The Mead Master
 						["provider"] = { "n", 102843 },	-- Aegira
 						["coord"] = { 62.1, 20.2, STORMHEIM },
-						["groups"] = {
-							i(133995),	-- Storm Brew Recipe (QI!)
-						},
+						["groups"] = { i(133995) },	-- Storm Brew Recipe (QI!)
 					}),
 					q(41910, {	-- Freya's Spring
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
+						["qgs"] = {
+							102843,	-- Aegira (Broken Temple Brewmaster)
+							102996,	-- Aegira (Broken Temple Brewmaster)
+						},
 						["maps"] = { STORMHEIM },
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
+						["qgs"] = {
+							102843,	-- Aegira (Broken Temple Brewmaster)
+							102996,	-- Aegira (Broken Temple Brewmaster)
+						},
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["maps"] = { STORMHEIM },
-						["groups"] = {
-							i(139033),	-- Amaranthine Hops (QI!)
-						},
+						["groups"] = { i(139033) },	-- Amaranthine Hops (QI!)
 					}),
 					q(41086, {	-- A Peaceful World
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
@@ -688,7 +681,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(45404, {	-- Panic at the Brewery
 						["sourceQuests"] = { 45440 },	-- A Brewing Situation
-						["provider"] = { "n", 119664 },	-- Brewmaster Almai
+						["qgs"] = {
+							119664,	-- Brewer Almai
+							116900,	-- Brewer Almai
+						},
 						["coord"] = { 51.3, 48.5, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 						["maps"] = { 872, 873, 874 },	-- Stormstout Brewery (Scenario Map)

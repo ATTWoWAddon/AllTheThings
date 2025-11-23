@@ -2874,7 +2874,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10809, {	-- Wanted: Worg Master Kruush
-						["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:: verify this. It isn't always available, but first seen while on "Spinebreaker Post")
+						["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:  verify this. It isn't always available, but first seen while on "Spinebreaker Post")
 						["provider"] = { "o", 185166 },	-- Wanted Poster
 						["coord"] = { 61.2, 80.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,

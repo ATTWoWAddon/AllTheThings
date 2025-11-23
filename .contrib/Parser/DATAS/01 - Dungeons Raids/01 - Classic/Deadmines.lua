@@ -111,7 +111,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27842, {	-- Only the Beginning
-				--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
+				-- ["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
 				["qg"] = 46889,	-- Kagtha
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -228,7 +228,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27756, {	-- The Foreman
-				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
+				-- ["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 				["providers"] = {
 					{ "n", 46612 },	-- Lieutenant Horatio Laine
 					{ "i", 62334 },	-- Stormwind Communicator Mk. II

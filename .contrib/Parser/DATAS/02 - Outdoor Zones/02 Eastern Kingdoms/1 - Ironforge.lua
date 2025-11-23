@@ -133,31 +133,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
 					}),
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
-					}),
 					i(122204, {	-- Music Roll: Cold Mountain
 						["timeline"] = { ADDED_6_1_0 },
 						["races"] = ALLIANCE_ONLY,
@@ -1404,7 +1379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					-- #if BEFORE 4.0.1
 					["groups"] = {
-						--recipe(7328),	-- Redemption [Rank 1]
+						-- recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
 				}),
@@ -1432,7 +1407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						9582,	-- Strength of One
 						-- #endif
-						--1678,	-- Vejrek
+						-- 1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
 					},
 					["qg"] = 6114,	-- Muren Stormpike
@@ -1450,7 +1425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -1817,7 +1792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 						i(1205),	-- Melon Juice
-						--i(1645),	-- Moonberry Juice
+						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
 						i(159),		-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar

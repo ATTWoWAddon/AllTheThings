@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 45.6, 33.8, BASTION },
 					{ 59.5, 66.3, BASTION },	-- triggered 60798 / 60799
 				},
-			--	TODO: updated objectIDs to match with coords when the data is available
+				-- TODO: updated objectIDs to match with coords when the data is available
 				["questID"] = 60798,	-- also triggered 60874... why two quests?
 				-- also triggered 60799 for non-kyrian
 				["isDaily"] = true,

@@ -4001,14 +4001,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	}),
 	filter(REAGENTS, {
 		-- Table of Content:
-		--	Cloth + Silk
-		--	Elemetal reagents
-		--	Clams
-		--	Cooking reagents
-		--	Sacks of Gems
-		--	Other reagents
-		--_______________________________
-		--
+		-- 	Cloth + Silk
+		-- 	Elemetal reagents
+		-- 	Clams
+		-- 	Cooking reagents
+		-- 	Sacks of Gems
+		-- 	Other reagents
+		-- _______________________________
+		-- 
 		-- Cloth:
 		i(14256, {	-- Felcloth
 			-- #if AFTER CATA
@@ -4207,7 +4207,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
-		--___________________________________
+		-- ___________________________________
 		--
 		-- Elemental reagents:
 			-- Air:
@@ -4775,7 +4775,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
-		--___________________________________
+		-- ___________________________________
 		--
 		-- Clams:
 		i(7973, {	-- Big-mouth Clam
@@ -5690,7 +5690,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		-- i(7974),	-- Zesty Clam Meat > Properly sourced under Big-mouth Clam listed above.
-		--______________________________________
+		-- ______________________________________
 		--
 		-- Sacks of Gems
 		i(17962),	-- Blue Sack of Gems
@@ -5698,7 +5698,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(17963),	-- Green Sack of Gems
 		i(17969),	-- Red Sack of Gems
 		i(17965),	-- Yellow Sack of Gems
-		--______________________________________
+		-- ______________________________________
 		--
 		-- Other reagents:
 		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond

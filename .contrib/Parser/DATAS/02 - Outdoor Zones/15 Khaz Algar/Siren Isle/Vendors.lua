@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(228099, {	-- Blinky Greasefingers
 				["description"] = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
-				--["lockCriteria"] = {1, "questID", 86485 },	-- TODO: probably a spellID will be better?
+				-- ["lockCriteria"] = {1, "questID", 86485 },	-- TODO: probably a spellID will be better?
 				["coord"] = { 69.2, 45.8, SIREN_ISLE },
 				["groups"] = {
 					i(233497),	-- Kaja'Cola-Braised Snapdragon Treat (CI!)

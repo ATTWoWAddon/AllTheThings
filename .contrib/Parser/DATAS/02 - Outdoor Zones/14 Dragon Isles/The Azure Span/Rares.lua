@@ -100,8 +100,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(203658),	-- Graniteclaw's Vest
 				},
 			})),
-		--	n(193251),	-- Gruffy // under DF/Timed Based Rare
-		--	n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
+			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
+			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
 				["questID"] = 74004,
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(203661),	-- Watercaller's Mantle
 				},
 			})),
-		--	n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
+			-- n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
 				["questID"] = 74032,

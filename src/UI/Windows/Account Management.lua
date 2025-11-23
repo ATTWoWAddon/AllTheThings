@@ -220,9 +220,9 @@ local function SendBattleNetMessage(target, detail, msg)
 	SendMessageChunks(_SendBattleNetMessage, target, detail, msg, 4086);
 end
 local function SplitString(separator, text)
-    local sep, res = separator or '%s', {}
-    text:gsub('[^'..sep..']+', function(x) res[#res+1] = x end);
-    return res;
+	local sep, res = separator or '%s', {}
+	text:gsub('[^'..sep..']+', function(x) res[#res+1] = x end);
+	return res;
 end
 local function UpdateBattleTags()
 	-- Attempt to cache each character's battleTag if it is missing.
@@ -997,6 +997,134 @@ MESSAGE_HANDLERS.uptodate = function(self, sender, content, responses)
 	end
 end
 
+
+-- Merging
+local eligibleFields = { "Buildings","GarrisonBuildings","Factions","FlightPaths","Exploration","Spells" };
+local function SortByCharacterLevel(a,b)
+  return (a.lvl or 0) > (b.lvl or 0);
+end
+local function MergeCharacterData(character, row)
+	local message = "MERGE CHARACTER DATA:" .. "\n" .. (character.text or character.name or RETRIEVING_DATA) .. ",";
+	if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
+	if character.race then message = message .. " " .. character.race; end
+	message = message .. "\n \nThe following fields will be merged:\n ";
+	local fields = {};
+	for i,field in ipairs(eligibleFields) do
+		local cv = CurrentCharacter[field] or {};
+		local values = character[field];
+		if values then
+			local subtotal = 0;
+			for key,value in pairs(values) do
+				if value and cv[key] ~= value then
+					subtotal = subtotal + 1;
+				end
+			end
+			if subtotal > 0 then
+				local t = character.TimeStamps[field];
+				message = message .. "\n " .. field .. " |cffaaaaaa(" .. (t and date("%Y-%m-%d", t) or "??" ) .. ")|r: " .. subtotal;
+				tinsert(fields, field);
+			end
+		end
+	end
+	local deaths = character.Deaths or 0;
+	if deaths > 0 then message = message .. "\n Deaths: " .. deaths; end
+	app:ShowPopupDialog(message .. "\n \nAre you sure you want to merge this?",
+	function()
+		for _,tableName in ipairs(fields) do
+			local copyTable = character[tableName];
+			if copyTable then
+				local currentTable = CurrentCharacter[tableName];
+				if not currentTable then
+					-- old/restored character missing copied data
+					currentTable = {}
+					CurrentCharacter[tableName] = currentTable
+				end
+				for ID,complete in pairs(copyTable) do
+					if complete and not currentTable[ID] then
+						currentTable[ID] = complete;
+					end
+				end
+			end
+		end
+		if deaths > 0 then
+			CurrentCharacter.Deaths = CurrentCharacter.Deaths + deaths;
+		end
+		character.ignored = true;
+		RecalculateAccountWideData();
+		row:GetParent():GetParent():Rebuild();
+		app.print("Merged " .. character.text .. " into " .. CurrentCharacter.text);
+		C_Timer.After(0.01, function()
+			app:ShowPopupDialog("Would you also like to delete the old character data?\n\nNOTE: Any cached quest IDs that you have only completed on " .. character.text .. " will be lost. You have been warned.",
+			function()
+				CharacterData[character.guid] = nil;
+				RecalculateAccountWideData();
+				row:GetParent():GetParent():Rebuild();
+				app.print(character.text .. " data deleted.");
+			end);
+		end);
+	end);
+end
+local function MergeTransferredCharacterData(row)
+	local eligibleCharacters = {};
+	for guid,character in pairs(CharacterData) do
+		if guid ~= CurrentCharacter.guid and not character.ignored then
+			if character.class == CurrentCharacter.class
+				and character.lastPlayed < CurrentCharacter.lastPlayed
+				and character.lvl and character.lvl <= CurrentCharacter.lvl then
+				if (character.Deaths or 0) > 0 then
+					-- Any deaths means they're eligible
+					tinsert(eligibleCharacters, character);
+				else
+					local anyFields = false;
+					for i,field in ipairs(eligibleFields) do
+						local cv = CurrentCharacter[field] or {};
+						local values = character[field];
+						if values then
+							for key,value in pairs(values) do
+								if value and cv[key] ~= value then
+									anyFields = true;
+									break;
+								end
+							end
+							if anyFields then
+								break;
+							end
+						end
+					end
+					if anyFields then tinsert(eligibleCharacters, character); end
+				end
+			end
+		end
+	end
+	if #eligibleCharacters < 1 then
+		app.print("Unable to find eligible character data. Only non-ignored characters with new entries for " .. CurrentCharacter.text .. " are eligible.");
+		return;
+	end
+	if #eligibleCharacters > 1 then
+		tsort(eligibleCharacters, SortByCharacterLevel);
+		local message = "Please type the index of the character data you'd like to merge into your current character:\n ";
+		for i,character in ipairs(eligibleCharacters) do
+			message = message .. "\n" .. i .. ": " .. (character.text or character.name) .. ",";
+			if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
+			if character.race then message = message .. " " .. character.race; end
+		end
+		app:ShowPopupDialogWithEditBox(message, "1", function(input)
+			local index = input and input ~= "" and tonumber(input);
+			if not index or not input or input == "" then
+				app.print("CANCELLED: Merge Transferred Character Data");
+			elseif not eligibleCharacters[index] then
+				app.print("ERROR: Invalid index. Please try again.");
+			else
+				C_Timer.After(0.01, function()
+					MergeCharacterData(eligibleCharacters[index], row);
+				end);
+			end
+		end);
+	else
+		MergeCharacterData(eligibleCharacters[1], row);
+	end
+end
+
 -- Helper Functions
 local function OnClickForCharacter(row, button)
 	local guid = row.ref.guid;
@@ -1313,6 +1441,16 @@ app:CreateWindow("Account Management", {
 							self:Rebuild();
 						end
 					end);
+					return true;
+				end,
+			},
+			{	-- Merge Transferred Character Data
+				text = "Merge Transferred Character Data",
+				icon = 132996,
+				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = function(row, button)
+					MergeTransferredCharacterData(row);
 					return true;
 				end,
 			},

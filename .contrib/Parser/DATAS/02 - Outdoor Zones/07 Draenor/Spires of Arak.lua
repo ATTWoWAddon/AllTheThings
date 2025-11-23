@@ -106,7 +106,7 @@ root(ROOTS.Zones, {
 					ach(9072, {	-- Mantle of the Talon King
 						["sourceQuest"] = 37177,	-- Call of the Talon King
 						["groups"] = {
-							--title_gendered(278, 279),	-- Talon King / Talon Queen
+							-- title_gendered(278, 279),	-- Talon King / Talon Queen
 							title_male(278),	-- Talon King <Name>
 							title_female(279),	-- Talon Queen <Name>
 							follower(224),	-- Talon Guard Kurekk
@@ -114,22 +114,6 @@ root(ROOTS.Zones, {
 					}),
 					ach(9600, {		-- Monster Mash (Lost Veil Anzu)
 						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(9564, {	-- Securing Draenor (Alliance)
-						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(26255),	-- Assault on Skettis
-							crit(26256),	-- Assault on Pillars of Fate
-						},
-					}),
-					ach(9562, {	-- Securing Draenor (Horde)
-						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(26240),	-- Assault on Pillars of Fate
-							crit(26243),	-- Assault on Skettis
-						},
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -404,8 +388,8 @@ root(ROOTS.Zones, {
 								["coord"] = { 53.5, 27.5, SPIRES_OF_ARAK },
 							}),
 							q(36047, {	-- We Have Him Now
-								["sourceQuest"] = 36028,	--	Gardul Venomshiv
-								["qg"] = 83899,	--	Dark Ranger Velonara
+								["sourceQuest"] = 36028,	-- Gardul Venomshiv
+								["qg"] = 83899,	-- Dark Ranger Velonara
 								["coord"] = { 57.1, 34.4, SPIRES_OF_ARAK },
 							}),
 						},

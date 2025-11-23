@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159624),	-- Rotcrusted Voodoo Doll
 					},
 				}),
-				e(2131, { -- Cragmaw the Infested
+				e(2131, {	-- Cragmaw the Infested
 					["crs"] = {
 						131817,	-- Cragmaw the Infested
 					},

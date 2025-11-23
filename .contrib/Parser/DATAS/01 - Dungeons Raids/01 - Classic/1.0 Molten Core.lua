@@ -1628,7 +1628,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228145),	-- Magmadar's Right Claw
 					i(228296),	-- Perdition's Blade
 					i(228299),	-- Spinal Reaper
-					--i(228294),	-- Malistar's Defender
+					-- i(228294),	-- Malistar's Defender
 					i(228291),	-- Crown of Destruction
 					i(228289),	-- Choker of the Firelord
 					i(228290),	-- Cloak of the Shrouded Mists

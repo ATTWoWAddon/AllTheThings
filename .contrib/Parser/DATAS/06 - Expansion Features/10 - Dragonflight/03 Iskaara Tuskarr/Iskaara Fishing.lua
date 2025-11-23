@@ -294,59 +294,59 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
 					-- Commented out spellID due to odd use case where players who completed the upgrades/crafting and could no longer open the crafting window can't re-cache.
 					i(199847, {	-- Braided Seavine Harpoon Rope (CI!)
-						--["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
+						-- ["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
 						["cost"] = {
 							{ "i", 200081, 6 },	-- 6x Strong Seavine
 							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
 						},
 					}),
 					i(199849, {	-- Dense Draconium Net Weight (CI!)
-						--["spellID"] = 388253,	-- Dense Draconium Net Weights
+						-- ["spellID"] = 388253,	-- Dense Draconium Net Weights
 						["cost"] = {
 							{ "i", 200080, 6 },	-- 6x Draconium Nugget
 							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
 						},
 					}),
 					i(199851, {	-- Double Imbu Knot (CI!)
-						--["spellID"] = 388255,	-- Double Imbu Knot
+						-- ["spellID"] = 388255,	-- Double Imbu Knot
 						["cost"] = {
 							{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
 							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
 						},
 					}),
 					i(199848, {	-- Draconium Net Weights (CI!)
-						--["spellID"] = 388252,	-- Draconium Net Weights
+						-- ["spellID"] = 388252,	-- Draconium Net Weights
 						["cost"] = {
 							{ "i", 200080, 3 },	-- 3x Draconium Nugget
 						},
 					}),
 					i(199694, {	-- Flying Fish Bone Charm (CI!)
-						--["spellID"] = 387827,	-- Flying Fish Bone Charm
+						-- ["spellID"] = 387827,	-- Flying Fish Bone Charm
 						["cost"] = {
 							{ "i", 200075, 1 },	-- 1x Flying Fish Bones
 						},
 					}),
 					i(199850, {	-- Imbu Knot (CI!)
-						--["spellID"] = 388254,	-- Imbu Knot
+						-- ["spellID"] = 388254,	-- Imbu Knot
 						["cost"] = {
 							{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
 						},
 					}),
 					i(199698, {	-- Irontree Harpoon Handle (CI!)
-						--["spellID"] = 387836,	-- Irontree Harpoon Handle
+						-- ["spellID"] = 387836,	-- Irontree Harpoon Handle
 						["cost"] = {
 							{ "i", 200083, 3 },	-- 3x Irontree Branch
 						},
 					}),
 					i(199695, {	-- Iskaaran Fishing Net (CI!)
-						--["spellID"] = 387828,	-- Iskaaran Fishing Net
+						-- ["spellID"] = 387828,	-- Iskaaran Fishing Net
 						["cost"] = {
 							{ "i", 199925, 2 },	-- 2x Stone With Hole
 							{ "i", 199924, 3 },	-- 3x Strong Sea Kelp
 						},
 					}),
 					i(194510, {	-- Iskaaran Harpoon (CI!)
-						--["spellID"] = 387831,	-- Iskaaran Harpoon
+						-- ["spellID"] = 387831,	-- Iskaaran Harpoon
 						["cost"] = {
 							{ "i", 200076, 1 },	-- 1x Harpoon Head
 							{ "i", 198070, 1 },	-- 1x Tattered Seavine
@@ -354,39 +354,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(199696, {	-- Iskaaran Ice Axe (CI!)
-						--["spellID"] = 387832,	-- Iskaaran Ice Axe
+						-- ["spellID"] = 387832,	-- Iskaaran Ice Axe
 						["cost"] = {
 							{ "i", 200078, 1 },	-- 1x Pickaxe Blade
 						},
 					}),
 					i(199845, {	-- Jagged Serevite Harpoon Head (CI!)
-						--["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
+						-- ["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
 						["cost"] = {
 							{ "i", 200084, 6 },	-- 6x Salinated Serevite
 							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
 						},
 					}),
 					i(199697, {	-- Polished Basalt Bracelet (CI!)
-						--["spellID"] = 387833,	-- Polished Basalt Bracelet
+						-- ["spellID"] = 387833,	-- Polished Basalt Bracelet
 						["cost"] = {
 							{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
 						},
 					}),
 					i(199641, {	-- Reinforced Irontree Harpoon Handle (CI!)
-						--["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
+						-- ["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
 						["cost"] = {
 							{ "i", 200083, 6 },	-- 6x Irontree Branch
 							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
 						},
 					}),
 					i(199846, {	-- Seavine Harpoon Rope (CI!)
-						--["spellID"] = 388250,	-- Seavine Harpoon Rope
+						-- ["spellID"] = 388250,	-- Seavine Harpoon Rope
 						["cost"] = {
 							{ "i", 200081, 3 },	-- 3x Strong Seavine
 						},
 					}),
 					i(199844, {	-- Serevite Harpoon Head (CI!)
-						--["spellID"] = 387375,	-- Serevite Harpoon Head
+						-- ["spellID"] = 387375,	-- Serevite Harpoon Head
 						["cost"] = {
 							{ "i", 200084, 3 },	-- 3x Salinated Serevite
 						},
@@ -430,8 +430,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["groups"] = {
 						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218, {	-- Charred Fishing Pole
-							--["collectible"] = true,	-- Changed flag from false to true so that it can be collected. Was able to collect with SS June 21, 2024
-							--if someone able to cache it - add description, please
+							-- ["collectible"] = true,	-- Changed flag from false to true so that it can be collected. Was able to collect with SS June 21, 2024
+							-- if someone able to cache it - add description, please
 						}),
 					},
 				}),

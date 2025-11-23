@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53295, {	-- Do Your Part
-					["provider"] = { "n", 141698 },	--  Kort Ceefer
+					["provider"] = { "n", 141698 },	-- Kort Ceefer
 					["coord"] = { 56.4, 25.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -695,7 +695,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(57324, {	-- Sail With the Tide
-				--["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
+				-- ["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
 				["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
 				["coord"] = { 69.34, 27.15, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56378, {	-- The Missing Crew
-			--	["sourceQuests"] = {  },	-- UNKNOWN
+				-- ["sourceQuests"] = {  },	-- UNKNOWN
 				["provider"] = { "n", 135681 },	-- Grand Admiral Jes-Tereth
 				["coord"] = { 67.9, 26.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -877,7 +877,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(54296),	-- Castaway Point completed
 				q(54305),	-- Mission Report: Arom's Stand
 				q(54293),	-- Mission Report: Castaway Point
-				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Boralus)
+				------ Stay awhile and listen ------ (TODO: upgrade to proper HQT in Boralus)
 				hqt(54870),	-- "Stay a while and listen" type conversation between Jaina and Katherine Proudmoore next to the flight master. Available during the war campaign after Clearing Out the Cache.
 				hqt(55464),	-- "Stay a while and listen" type conversation between Jaina and Tandred Proudmoore in Proudmoore Keep at 48, 60. Obtainable after Sail with the Tides completed.
 			}),

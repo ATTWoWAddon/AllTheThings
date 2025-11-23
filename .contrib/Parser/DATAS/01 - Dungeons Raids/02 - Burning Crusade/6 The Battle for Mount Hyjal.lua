@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							},
 							["altQuests"] = {
-								--10462,	-- Champion's Pledge
+								-- 10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
-								--10460,	-- Defender's Pledge
+								-- 10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
-								--10461,	-- Restorer's Pledge
+								-- 10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
 							["qgs"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
-								--10463,	-- Sage's Pledge
+								-- 10463,	-- Sage's Pledge
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10466, {	-- Champion's Vow
 							["sourceQuest"] = 10462,	-- Champion's Pledge
 							["altQuests"] = {
-								--10466,	-- Champion's Vow
+								-- 10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10460,	-- Defender's Pledge
 							["altQuests"] = {
 								10466,	-- Champion's Vow
-								--10467,	-- Defender's Vow
+								-- 10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
-								--10465,	-- Restorer's Vow
+								-- 10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
 							["qgs"] = {
@@ -202,7 +202,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
-								--10464,	-- Sage's Vow
+								-- 10464,	-- Sage's Vow
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10470, {	-- Champion's Oath
 							["sourceQuest"] = 10466,	-- Champion's Vow
 							["altQuests"] = {
-								--10470,	-- Champion's Oath
+								-- 10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10467,	-- Defender's Vow
 							["altQuests"] = {
 								10470,	-- Champion's Oath
-								--10471,	-- Defender's Oath
+								-- 10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
@@ -262,7 +262,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
-								--10469,	-- Restorer's Oath
+								-- 10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
 							["qgs"] = {
@@ -283,7 +283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
-								--10468,	-- Sage's Oath
+								-- 10468,	-- Sage's Oath
 							},
 							["qgs"] = {
 								19935,	-- Soridormi
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						q(10474, {	-- Champion's Covenant
 							["sourceQuest"] = 10470,	-- Champion's Oath
 							["altQuests"] = {
-								--10474,	-- Champion's Covenant
+								-- 10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
@@ -362,7 +362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["sourceQuest"] = 10471,	-- Defender's Oath
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
-								--10475,	-- Defender's Covenant
+								-- 10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
@@ -403,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
-								--10473,	-- Restorer's Covenant
+								-- 10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
 							["qgs"] = {
@@ -444,7 +444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
-								--10472,	-- Sage's Covenant
+								-- 10472,	-- Sage's Covenant
 							},
 							["qgs"] = {
 								19935,	-- Soridormi

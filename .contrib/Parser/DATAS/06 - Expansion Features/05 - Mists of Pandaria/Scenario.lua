@@ -11,8 +11,8 @@ SCENARIOS = createHeader({
 	},
 });
 -- #if ANYCLASSIC
-local REMOVED_WITH_TOT_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
+local REMOVED_WITH_LANDFALL_ONUPDATE = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
@@ -420,7 +420,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["description"] = "Rewarded for completing a random scenario.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
 						-- #if ANYCLASSIC
-						["OnUpdate"] = REMOVED_WITH_TOT_ONUPDATE,
+						["OnUpdate"] = REMOVED_WITH_LANDFALL_ONUPDATE,
 						-- #endif
 						["groups"] = {
 							n(BACK, {
@@ -523,7 +523,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 							}),
 						},
 					})),
-					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, container(92813, {	-- Greater Cache of Treasures
+					applyclassicphase(MOP_PHASE_LANDFALL, container(92813, {	-- Greater Cache of Treasures
 						["timeline"] = { ADDED_5_1_0, REMOVED_5_3_0 },
 						-- #if ANYCLASSIC
 						["OnUpdate"] = REMOVED_WITH_ESCALATION_ONUPDATE,
@@ -538,13 +538,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
 									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
-								--	["description"] = "Extremely Rare",
+									-- ["description"] = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
 									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
-								--	["description"] = "Extremely Rare",
+									-- ["description"] = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
 								i(92880),	-- Stormcrier Cloak
@@ -646,7 +646,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92848),	-- Hozen-Speed Jerkin
 								i(92847),	-- Hozen-Speed Shoulders
 								i(92846),	-- Hozen-Speed Waistband
-								------  Hozen-Stitched ------
+								------ Hozen-Stitched ------
 								i(93085),	-- Hozen-Stitched Bindings			— 2019-10-25
 								i(93079),	-- Hozen-Stitched Boots
 								i(93082),	-- Hozen-Stitched Britches
@@ -819,7 +819,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93126),	-- Scavenged Pandaren Staff
 								i(93129),	-- Scavenged Pandaren Staff
 								i(93136),	-- Scavenged Pandaren Sword
-							--	i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
+								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
 								i(93133),	-- Scavenged Pandaren Wand
 							}),
 						},
@@ -861,13 +861,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
 									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
-								--	["description"] = "Extremely Rare",
+									-- ["description"] = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
 									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
-								--	["description"] = "Extremely Rare",
+									-- ["description"] = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
 								i(92880),	-- Stormcrier Cloak
@@ -969,7 +969,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92848),	-- Hozen-Speed Jerkin
 								i(92847),	-- Hozen-Speed Shoulders
 								i(92846),	-- Hozen-Speed Waistband
-								------  Hozen-Stitched ------
+								------ Hozen-Stitched ------
 								i(93085),	-- Hozen-Stitched Bindings			— 2019-10-25
 								i(93079),	-- Hozen-Stitched Boots
 								i(93082),	-- Hozen-Stitched Britches
@@ -1142,7 +1142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93126),	-- Scavenged Pandaren Staff
 								i(93129),	-- Scavenged Pandaren Staff
 								i(93136),	-- Scavenged Pandaren Sword
-							--	i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
+								-- i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
 								i(93133),	-- Scavenged Pandaren Wand
 							}),
 						},
@@ -1307,7 +1307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				applyclassicphase(MOP_PHASE_ONE, i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
 					["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
 					-- #if ANYCLASSIC
-					["OnUpdate"] = REMOVED_WITH_TOT_ONUPDATE,
+					["OnUpdate"] = REMOVED_WITH_LANDFALL_ONUPDATE,
 					-- #endif
 				})),
 				applyclassicphase(MOP_PHASE_LANDFALL, i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)

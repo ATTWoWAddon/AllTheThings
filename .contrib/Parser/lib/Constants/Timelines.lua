@@ -561,9 +561,9 @@ CREATED_11_2_5 = "created 11.2.5.63660";				-- The War Within 11.2.5 launch on O
 ADDED_11_2_5 = "added 11.2.5.63660";					-- The War Within 11.2.5 launch on October 7th, 2025
 REMOVED_11_2_5 = "removed 11.2.5.63660";				-- The War Within 11.2.5 launch on October 7th, 2025
 
-CREATED_11_2_7 = "created 11.2.7";						-- The War Within 11.2.7 launch in autumn 2025
-ADDED_11_2_7 = "added 11.2.7";							-- The War Within 11.2.7 launch in autumn 2025
-REMOVED_11_2_7 = "removed 11.2.7";						-- The War Within 11.2.7 launch in autumn 2025
+CREATED_11_2_7 = "created 11.2.7";						-- The War Within 11.2.7 launch in December 2nd, 2025
+ADDED_11_2_7 = "added 11.2.7";							-- The War Within 11.2.7 launch in December 2nd, 2025
+REMOVED_11_2_7 = "removed 11.2.7";						-- The War Within 11.2.7 launch in December 2nd, 2025
 
 --------------
 -- MIDNIGHT --

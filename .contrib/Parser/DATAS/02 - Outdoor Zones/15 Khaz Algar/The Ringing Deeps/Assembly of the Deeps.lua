@@ -341,8 +341,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					n(TREASURES, {
 						i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
-						--Alex: was looted from mobs during WQ 82580 (Courier Mission: Ore Recovery)
-						--could be just zone drop or mob specific type? e.g. deepflayers?
+						-- Alex: was looted from mobs during WQ 82580 (Courier Mission: Ore Recovery)
+						-- could be just zone drop or mob specific type? e.g. deepflayers?
 					}),
 					n(VENDORS, {
 						n(216164, {	-- Gnawbles

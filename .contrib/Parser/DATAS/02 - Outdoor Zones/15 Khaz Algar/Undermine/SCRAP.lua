@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = {
 							ach(41594),	-- Can You Believe What People Throw Away?
 							i(235822),	-- Coin-Woven Shawl
-							--i(235909),	-- Gleam
+							-- i(235909),	-- Gleam
 							i(235854),	-- Gold-Inlaid Jetpack
 							i(235820),	-- Hole-Punched Doubloon
 							i(235819),	-- Lucky Penny Locket
@@ -196,9 +196,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(237382, {	-- Undermine Supply Crate (TOY!)
 								["cost"] = {{ "c", 3218, 999 }},	-- Empty Kaja'Cola Can
 							}),
-							--i(233557, {	-- Sifted Pile of Scrap
-							--	["cost"] = {{ "c", 3220, 1 }},	-- Vintage Kaja'Cola Can (TODO: it doesn't change with renown, leave whatever cost is better)
-							--}),
+							-- i(233557, {	-- Sifted Pile of Scrap
+							-- 	["cost"] = {{ "c", 3220, 1 }},	-- Vintage Kaja'Cola Can (TODO: it doesn't change with renown, leave whatever cost is better)
+							-- }),
 							i(232858, {	-- Cruncher (PET!)
 								["cost"] = {{ "c", 3220, 1 }},	-- Vintage Kaja'Cola Can
 							}),

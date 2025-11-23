@@ -90,30 +90,33 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemName = function(itemID, reference)
-		local name = select(2, GetItemInfo(itemID));
-		if IsRetrieving(name) then
+		local item = app.SearchForObject("itemID", itemID, "field") or app.CreateItem(itemID)
+		local link = item and item.link
+		if IsRetrieving(link) then
 			reference.working = true
-			name = "Item: " .. RETRIEVING_DATA;
+			link = "Item: " .. RETRIEVING_DATA
 		end
 		if app.Settings:GetTooltipSetting("itemID") then
-			return name .. " (" .. itemID .. ")";
+			return link .. " (" .. itemID .. ")"
 		else
-			return name;
+			return link
 		end
 	end,
 	itemNameAndIcon = function(itemID, reference)
-		local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
-		if IsRetrieving(name) then
+		local item = app.SearchForObject("itemID", itemID, "field") or app.CreateItem(itemID)
+		local link = item and item.link
+		if IsRetrieving(link) then
 			reference.working = true
-			name = "Item: " .. RETRIEVING_DATA;
+			link = "Item: " .. RETRIEVING_DATA
 		end
+		local icon = item and item.icon
 		if icon then
-			name = "|T" .. icon .. ":0|t" .. name;
+			link = "|T" .. icon .. ":0|t" .. link
 		end
 		if app.Settings:GetTooltipSetting("itemID") then
-			return name .. " (" .. itemID .. ")";
+			return link .. " (" .. itemID .. ")"
 		else
-			return name;
+			return link
 		end
 	end,
 	objectName = function(objectID, reference)
@@ -481,33 +484,33 @@ app.GetSpecsString = GetSpecsString
 
 -- Cost Helper Functions
 local function formatNumericWithCommas(amount)
-    local k
-    while true do
-        amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
-        if k == 0 then
-            break
-        end
-    end
-    return amount
+	local k
+	while true do
+		amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
+		if k == 0 then
+			break
+		end
+	end
+	return amount
 end
 app.formatNumericWithCommas = formatNumericWithCommas
 local function GetMoneyString(amount)
-    if amount > 0 then
-        local formatted
-        local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
-            math_floor(amount % 100)
-        if gold > 0 then
-            formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
-        end
-        if silver > 0 then
-            formatted = (formatted or "") .. silver .. "|T237620:0|t"
-        end
-        if copper > 0 then
-            formatted = (formatted or "") .. copper .. "|T237617:0|t"
-        end
-        return formatted
-    end
-    return amount
+	if amount > 0 then
+		local formatted
+		local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
+			math_floor(amount % 100)
+		if gold > 0 then
+			formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
+		end
+		if silver > 0 then
+			formatted = (formatted or "") .. silver .. "|T237620:0|t"
+		end
+		if copper > 0 then
+			formatted = (formatted or "") .. copper .. "|T237617:0|t"
+		end
+		return formatted
+	end
+	return amount
 end
 local CostCurrencyCache = setmetatable({}, {
 	__index = function(t, id)
@@ -763,7 +766,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
 		Process = function(t, reference, tooltipInfo)
-			local description = reference.description
+			local description = (app.ActiveRowReference or reference).description
 			local sharedDescription = GetRelativeValue(reference, "sharedDescription")
 				-- duplicated search results loose their parent references in order to prevent issues in filtering/tooltips
 				-- so also check the active row reference for accuracy if the tooltip is in context of a row
@@ -1249,7 +1252,7 @@ local InformationTypes = {
 					if itemID == 54537 or		-- Heart-Shaped Box [Love is in the Air]
 						itemID == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
 						itemID == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
-						--itemID == 209024 or		-- Loot-Filled Pumpkin [Hallow's End] (Blizz is inconsistent, big mad.)
+						-- itemID == 209024 or		-- Loot-Filled Pumpkin [Hallow's End] (Blizz is inconsistent, big mad.)
 						itemID == 216874		-- Loot-Filled Basket [Noblegarden]
 					then
 						tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
@@ -1482,6 +1485,34 @@ settings.CreateInformationType("ExclusionFilters", {
 		if #excludes > 0 then
 			tinsert(tooltipInfo, {
 				left = "Filter Checks",
+			});
+			tinsert(tooltipInfo, {
+				left = app.TableConcat(excludes, nil, nil, ", "),
+				wrap = true
+			});
+		end
+	end
+})
+settings.CreateInformationType("ExclusionFiltersRow", {
+	priority = 99999,
+	text = "DEBUG: Exclusion Filters - Row",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, reference, tooltipInfo)
+		local ref = app.ActiveRowReference
+		if not ref then return end
+
+		local excludes = {}
+		local Filter = app.Modules.Filter
+		for filterName,filterFunc in pairs(Filter.Filters) do
+			if not filterFunc(ref) then
+				excludes[#excludes + 1] = Colorize(filterName, Filter.Get[filterName]() and app.Colors.ChatLinkError or app.Colors.RemovedWithPatch)
+			else
+				excludes[#excludes + 1] = Colorize(filterName, Filter.Get[filterName]() and app.Colors.Time or app.Colors.ChatLinkHQT)
+			end
+		end
+		if #excludes > 0 then
+			tinsert(tooltipInfo, {
+				left = "Row Filter Checks",
 			});
 			tinsert(tooltipInfo, {
 				left = app.TableConcat(excludes, nil, nil, ", "),

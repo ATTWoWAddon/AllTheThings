@@ -1902,7 +1902,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 					q(31125),	-- Unlocked Chao
 					q(31126),	-- Unlocked Lao-Chen
 					q(31054),	-- Unlocked Yalia Sagewhisper
-					--q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
+					-- q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
 				}),
 			}),
 			n(QUESTS, {

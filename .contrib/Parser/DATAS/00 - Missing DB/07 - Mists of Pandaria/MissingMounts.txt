@@ -14,24 +14,17 @@ mount(473743),	-- Meeksi Rollingpaw
 mount(473744),	-- Meeksi Teatuft
 mount(473745),	-- Meeksi Brewthief
 5.5.0.61411
-mount(1247591),	-- Celestial Riding Crane
 mount(1247596),	-- Celestial Riding Serpent
 mount(1247597),	-- Celestial Riding Ox
 mount(1247598),	-- Celestial Riding Tiger
-5.5.1.62856
-mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 
 
 
 
 Missing in MountDB.lua
 
-5.5.0.61411
-mount(1247591),	-- Celestial Riding Crane
-mount(1247596),	-- Celestial Riding Serpent
-mount(1247597),	-- Celestial Riding Ox
-mount(1247598),	-- Celestial Riding Tiger
 5.5.0.62044
 mount(1238816),	-- Envoy of Sa'bak
-5.5.1.62856
-mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
+5.5.1.63449
+mount(1229670),	-- Prophet's Great Crow
+mount(1229672),	-- Archmage's Great Crow

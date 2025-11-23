@@ -992,7 +992,7 @@ s(194936,212617,{cost={{"c",2032,75}},f=2,u=2}),
 en(190576,{cost={{"c",2032,100}},questID=65678,spellID=367638,tmogSetID=2332,u=2,g={
 s(168773,190541,{f=3}),
 s(168804,190572,{f=2})}}),
-en(190577,{cost={{"c",2032,100}},providers={a[2],a[1]},questID=65677,spellID=367637,tmogSetID=2333,u=2,g={
+en(190577,{cost={{"c",2032,100}},providers={a[1],a[2]},questID=65677,spellID=367637,tmogSetID=2333,u=2,g={
 s(168774,190542,{f=2}),
 s(168805,190573,{f=3})}}),
 en(190851,{cost={{"c",2032,100}},providers={a[4]},questID=65723,spellID=368272,tmogSetID=2342,u=2,g={

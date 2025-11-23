@@ -50,8 +50,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(78668, {	-- Rally on the Dawnbreaker
 					["sourceQuests"] = {
-						78667,	--	Rekindled Memories
-						78666,	--	The Only Good Spider
+						78667,	-- Rekindled Memories
+						78666,	-- The Only Good Spider
 					},
 					["provider"] = { "n", 213116 },	-- Faerin
 					["coord"] = { 70.1, 61.0, HALLOWFALL },
@@ -79,8 +79,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(82836, {	-- Zero out Xerosh
 					["sourceQuests"] = {
-						78669,	--	For Their Eyes Only
-						78670,	--	Siege Weapon Sabotage
+						78669,	-- For Their Eyes Only
+						78670,	-- Siege Weapon Sabotage
 					},
 					["provider"] = { "n", 213120 },	-- Anduin Wrynn
 					["coord"] = { 57.5, 64.3, HALLOWFALL },
@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 225711 },	-- General Steelstrike
 					["coord"] = { 68.4, 44.6, HALLOWFALL },
 					["groups"] = {
-						--i(223638),	-- Arathi Trade Goods (QI!)
+						-- i(223638),	-- Arathi Trade Goods (QI!)
 						i(223892),	-- Assorted Spices (QI!)
 						i(223889),	-- Flame-Touched Weaponry (QI!)
 						i(223890),	-- Tough Ivy Rope (QI!)
@@ -555,10 +555,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82220, {	-- Eagle Eye, Eagle Die
+					["description"] = "Becomes available after daily reset.",
 					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
-				["description"] = "Becomes available after daily reset.",
 					["groups"] = {
 						i(222951),	-- Eagle Fillet (QI!)
 						i(222976),	-- Flame-Tempered Harpoon (QI!)
@@ -773,7 +773,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40844.08, {	-- The Weight of Duty
 				q(79159, {	-- Dereliction of Duty
-					--["sourceQuests"] = { xx },	-- ?
+					-- ["sourceQuests"] = { xx },	-- ?
 					["provider"] = { "n", 215306 },	-- Endiri Dawnsurge
 					["coord"] = { 41.5, 52.4, HALLOWFALL },
 				}),
@@ -798,7 +798,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40844.09, {	-- Apart for Purpose
 				q(82477, {	-- A Helping Farmhand
-					--["sourceQuests"] = { xx },	-- ?
+					-- ["sourceQuests"] = { xx },	-- ?
 					["provider"] = { "n", 223920 },	-- Orren Masyn
 					["coord"] = { 49.1, 62.0, HALLOWFALL },
 					["groups"] = {
@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40844.12, {	-- The Mysterious Chef
 				q(84392, {	-- Hungry in Hollow
-					--["sourceQuests"] = { xx },	-- ?
+					-- ["sourceQuests"] = { xx },	-- ?
 					["provider"] = { "n", 222683 },	-- Haelmut Aegisaxe
 					["coord"] = { 48.4, 39.4, HALLOWFALL },
 					["isBreadcrumb"] = true,	-- TODO: need to re-confirm, just in case
@@ -1265,7 +1265,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(83287),	-- should accept work
 				q(83288),	-- system become unfair
 				q(83289),	-- reject work and blame Edwyn in addition
-				--questID 82894 (The Price of Hope)
+				-- questID 82894 (The Price of Hope)
 				-- questID 82479 (The Sword is Mightier)
 				q(82728),	-- 4 page / 1 node (The work...)
 				q(82738),	-- 4 page / 1 node (The work...)
@@ -1283,7 +1283,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(83056),	-- Cooking With Style Tracker (completed with Q(82222) and was named by blizzard)
 				--
 				q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
-				--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
+				-- q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 				--
 				q(82749, {	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
 					["name"] = "Times Lost, Found and Borrowed have been reset.",

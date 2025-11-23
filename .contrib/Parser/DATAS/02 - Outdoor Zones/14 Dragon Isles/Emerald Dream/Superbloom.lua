@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(211416),	-- Dream Wardens Insignia [Epic 1k BoA]
 							i(211417),	-- Dream Wardens Insignia [Epic 1k]
 							i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
-						--	filter(CLOTH, {	-- Commented out due Tooltip Length
+							-- filter(CLOTH, {	-- Commented out due Tooltip Length
 								i(210349),	-- Frigid Conservator's Gown
 								i(210355),	-- Frigid Conservator's Mitts
 								i(210357),	-- Frigid Conservator's Hood
@@ -58,8 +58,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(210372),	-- Frigid Conservator's Bands
 								i(210382),	-- Frigid Conservator's Wrap (cloak) / will leave it here until non-cloth confirm drop
 								i(210391),	-- Frigid Conservator's Slippers
-						--	}),
-						--	filter(LEATHER, {	-- Commented out due Tooltip Length
+							-- }),
+							-- filter(LEATHER, {	-- Commented out due Tooltip Length
 								i(210352),	-- Crystalline Tender's Vest
 								i(210353),	-- Crystalline Tender's Gloves
 								i(210359),	-- Crystalline Tender's Guise
@@ -69,8 +69,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(210375),	-- Crystalline Tender's Wristbands
 								i(210381),	-- Crystalline Tender's Shroud (cloak) / will leave it here until non-leather confirm drop
 								i(210393),	-- Crystalline Tender's Boots
-						--	}),
-						--	filter(MAIL, {	-- Commented out due Tooltip Length
+							-- }),
+							-- filter(MAIL, {	-- Commented out due Tooltip Length
 								i(210351),	-- Winter Forager's Chestguard
 								i(210356),	-- Winter Forager's Handguards
 								i(210358),	-- Winter Forager's Helm
@@ -80,8 +80,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(210374),	-- Winter Forager's Cuffs
 								i(210392),	-- Winter Forager's Treads
 								i(210407),	-- Winter Forager's Cape (cloak) / will leave it here until non-mail confirm drop
-						--	}),
-						--	filter(PLATE, {	-- Commented out due Tooltip Length
+							-- }),
+							-- filter(PLATE, {	-- Commented out due Tooltip Length
 								i(210348),	-- Arctic Warden's Sabatons
 								i(210350),	-- Arctic Warden's Chestplate
 								i(210354),	-- Arctic Warden's Gauntlets
@@ -91,8 +91,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(210373),	-- Arctic Warden's Bracers
 								i(210390),	-- Arctic Warden's Warhelm
 								i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
-						--	}),
-						--	n(WEAPONS, {	-- Commented out due Tooltip Length
+							-- }),
+							-- n(WEAPONS, {	-- Commented out due Tooltip Length
 								i(210394),	-- Cold Conservator's Cane
 								i(210384),	-- Cold Conservator's Implement
 								i(210399),	-- Cold Conservator's Mallet
@@ -113,16 +113,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(210400),	-- Winter Warden's Gavel
 								i(210401),	-- Winter Warden's Greatsword
 								i(208365), 	-- Winter's Stand
-						--	}),
-						--	filter(FINGER_F, {	-- Commented out due Tooltip Length
+							-- }),
+							-- filter(FINGER_F, {	-- Commented out due Tooltip Length
 								i(210376),	-- Beautiful Blizzard Binding
 								i(210378),	-- Rime Ridden Ring
 								i(210377),	-- Snipping Sleet Circle
-						--	}),
-						--	filter(NECK_F, {	-- Commented out due Tooltip Length
+							-- }),
+							-- filter(NECK_F, {	-- Commented out due Tooltip Length
 								i(210379),	-- Cold Crisp Collar
 								i(210380),	-- Glittering Gelid Goldchain
-						--	}),
+							-- }),
 						}),
 					},
 				}),
@@ -179,7 +179,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(78203),	-- Superbloom
 				--
 				q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
-				--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
+				-- q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
 				q(79082, {["repeatable"]=true}),	-- 'The Superbloom Event'
 				q(78866),	-- 'Superbloom: Step 2 Right Path'
 				q(78867),	-- 'Superbloom: Step 3 Right Path'

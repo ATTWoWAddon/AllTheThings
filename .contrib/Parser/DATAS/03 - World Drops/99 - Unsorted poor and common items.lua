@@ -70,10 +70,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["sharedDescrip
 	n(QUALITY_COMMON, {
 		n(ARMOR, {
 			filter(CLOAKS, {
-			--	i(53048),	-- Doomsday Message	-- TODO Cataclysm
+				-- i(53048),	-- Doomsday Message	-- TODO Cataclysm
 			}),
 			filter(MISC, {
-			--	i(43486),	-- Mohawk Mask	-- something removed
+				-- i(43486),	-- Mohawk Mask	-- something removed
 			}),
 		}),
 	}),

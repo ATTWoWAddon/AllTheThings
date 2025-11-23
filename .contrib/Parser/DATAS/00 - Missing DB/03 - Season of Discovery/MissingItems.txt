@@ -1826,7 +1826,6 @@ i(233790),	-- Battle Hardened Dreadweave Belt
 i(233791),	-- Blood-Caked Copper Coin
 i(233965),	-- Flask of the Old Gods
 i(233984),	-- Arcane Megabomb
-i(233996),	-- Enchanted Repellent
 i(234124),	-- Handbook of Occult Poison II
 i(234129),	-- Onyx Embedded Leggings
 i(234130),	-- Amulet of Shadow Shielding

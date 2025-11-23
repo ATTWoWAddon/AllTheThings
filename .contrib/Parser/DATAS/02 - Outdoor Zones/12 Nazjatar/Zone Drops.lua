@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		i(170183, {	-- Reefwalker Bark
 			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
-			--	there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
+				-- there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
 				152558,	-- Barnacled Reefwalker
 				150568,	-- Deep Reefwalker
 				153025,	-- Emorneth
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152711,	-- Necrofin Reaver
 				151534,	-- Necrofin Scavenger
 			},
-		--	didn't trigger quest completion!
+			-- didn't trigger quest completion!
 		}),
 		i(170179, {	-- Snapdragon Scent Gland
 			["crs"] = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				153306,	-- Azsh'ari Leviathan
 			},
 		}),
-	--	Toys
+		-- Toys
 		i(170476, {	-- Underlight Sealamp (TOY!)
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153334,	-- Abyss Elemental
@@ -356,14 +356,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152884,	-- Zanj'ir Trapper
 			},
 		}),
-	--	Recipes
+		-- Recipes
 		i(169495),	-- Recipe: Superior Battle Potion of Agility [Rank 3] (RECIPE!)
 		i(169499),	-- Recipe: Superior Battle Potion of Strength [Rank 3] (RECIPE!)
 		i(169497),	-- Recipe: Superior Battle Potion of Intellect [Rank 3] (RECIPE!)
 		i(169498),	-- Recipe: Superior Battle Potion of Stamina [Rank 3] (RECIPE!)
 		i(169496),	-- Recipe: Superior Steelskin Potion [Rank 3] (RECIPE!)
 	}),
-	--	Gear
+	-- Gear
 	n(ZONE_DROPS, {
 		["groups"] = {
 			i(170116),	-- Darkened Slicer

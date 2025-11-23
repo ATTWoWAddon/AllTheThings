@@ -7,7 +7,7 @@ end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-		--	n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
+			-- n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
 			}),
-		--	n(193135),	-- Azra's Prized Peony // under DF/Timed Based Rare
+			-- n(193135),	-- Azra's Prized Peony // under DF/Timed Based Rare
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -82,12 +82,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200858),	-- Plume of the Forgotten
 				},
 			}),
-		--	n(193226),	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
+			-- n(193226),	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
 			n(196056, {	-- Gushgut the Beaksinker
 				["coord"] = { 52.6, 58.6, THE_WAKING_SHORES },
 				["questID"] = 73879,
 			}),
-		--	n(186200),	-- Harkyn Grymstone // under DF/Timed Based Rare
+			-- n(186200),	-- Harkyn Grymstone // under DF/Timed Based Rare
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
 				["questID"] = 73880,
@@ -105,8 +105,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					bo(69891, true),
 				},
 			}),
-		--	n(186827),	-- Magmaton // under DF/Timed Based Rare
-		--	n(193152),	-- Massive Magmashell // under DF/Timed Based Rare
+			-- n(186827),	-- Magmaton // under DF/Timed Based Rare
+			-- n(193152),	-- Massive Magmashell // under DF/Timed Based Rare
 			n(190718, {	-- Monsoo, The Boiling Rage
 				["coord"] = { 46.8, 57.3, THE_WAKING_SHORES },
 				-- ["questID"] = ,
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200236),	-- Memory of Nulltheria
 				},
 			}),
-		--	n(193118),	-- O'nank Shorescour // under DF/Timed Based Rare
+			-- n(193118),	-- O'nank Shorescour // under DF/Timed Based Rare
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200189),	-- Hydroforged Shell Helm
 				},
 			}),
-		--	n(193120),	-- Smogswog the Firebreather // under DF/Timed Based Rare
+			-- n(193120),	-- Smogswog the Firebreather // under DF/Timed Based Rare
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,

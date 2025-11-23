@@ -763,8 +763,8 @@ tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendatio
 	return item;
 end
 traderstender = function(cost, item)                	-- Assign a Traders Tender cost to an item.
-    if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
-    return item;
+	if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
+	return item;
 end
 venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.
 	-- #if BEFORE 4.0.1

@@ -1188,7 +1188,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				n(154478, {	-- Prospector Stonehewer
-				--	["coord"] = { , ALTERAC_VALLEY },
+					-- ["coord"] = { , ALTERAC_VALLEY },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

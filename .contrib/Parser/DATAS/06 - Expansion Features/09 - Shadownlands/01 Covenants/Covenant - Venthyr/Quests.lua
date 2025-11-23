@@ -47,7 +47,7 @@ local LFR_WEAPON_GROUP = {
 	i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
---	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
+-- TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 -- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 -- But it is complete for my main, as well as 62921... /shrug
 
@@ -565,9 +565,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 44.6, 20.1, SINFALL_REACHES },
 			}),
 			q(59324, {	-- Our True Purpose
+				-- ["sourceQuests"] = {  },	-- TODO: unknown. i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
 				["provider"] = { "n", 164741 },	-- Tactician Sakaa
 				["coord"] = { 57.6, 58.8, SINFALL_REACHES },
-			--	["sourceQuests"] = {  },	-- TODO: unknown. i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
 			}),
 			q(58603, {	-- Phaestus, Genesis of Aeons
 				["sourceQuests"] = {
@@ -652,10 +652,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(63340, {	-- Sinfall Veteran
 				["description"] = "Requires Renown 7.",
+				-- ["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
-			--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 			}),
 			q(64325, {	-- Sinfall Veteran #2
 				["description"] = "Requires Renown 43.",
@@ -895,34 +895,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(61334, {	-- Return Lost Souls (5)
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62867, {	-- Return Lost Souls (10)
 				["description"] = "Requires Renown 15.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62868, {	-- Return Lost Souls (15)
 				["description"] = "Requires Renown 24.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62869, {	-- Return Lost Souls (20)
 				["description"] = "Requires Renown 32.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(65105, {	-- Return More Lost Souls
 				["sourceQuests"] = { 62869 },	-- Return Lost Souls (20)

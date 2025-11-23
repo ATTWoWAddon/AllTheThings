@@ -15,7 +15,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42567,	-- Tour Argus
 							42612,	-- You Are Now Prepared!
 						}},
-						["groups"] = { i(253221) },	-- Bulwark of Mannoroth [this seems to only be an item, maybe blizz will hotfix after Argus]
+						["groups"] = {
+							i(253219),	-- Bulwark of Mannoroth (Shield)
+							i(253220),	-- Bulwark of Mannoroth (Cloak)
+						},
+					}),
+					ach(42627, {	-- Argussian Reach
+						i(250690, {	-- Eredar Lord’s Fel Torch (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}),
 					ach(42693),	-- Breaking the Legion I
 					ach(42694),	-- Breaking the Legion II
@@ -42,17 +50,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 					}),
 					ach(42612),	-- You Are Now Prepared!
-				}),
-				n(FACTIONS, {
-					faction(FACTION_ARGUSSIAN_REACH, {
-						n(ACHIEVEMENTS, {
-							ach(42627, {	-- Argussian Reach
-								i(250690, {	-- Eredar Lord’s Fel Torch (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
-					}),
 				}),
 			},
 		}),

@@ -107,10 +107,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(56365, {	-- Be Kind, Rewind
-				--["sourceQuest"] =
+				-- ["sourceQuest"] = ,
 				["provider"] = { "n", 153982 },	-- Izira Gearsworn <Battle Captain>
 				["coords"] = {
-					--{ 69.7, 33.0, MECHAGON },	-- Future
+					-- { 69.7, 33.0, MECHAGON },	-- Future
 					{ 73.6, 35.6, MECHAGON },	-- Current
 				},
 				["isDaily"] = true,
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 77.8, 40.0, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-			--	don't know if there are SQs or a reputation requirement. i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
+				-- don't know if there are SQs or a reputation requirement. i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
 			}),
 			q(56334, {	-- Bots Gone Wild
 				["provider"] = { "n", 154655 },	-- Tyler Swaptech
@@ -1352,9 +1352,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(56329),	-- Triggered when completed 'Do Not Drink' (questID 56328)
 				q(55161),	-- Triggered when completed 'Shop Project' (questID 55608)
 				q(56360),	-- Triggered when completed 'Other Interests' (questID ?)
-				--q(56742),	-- ?
+				-- q(56742),	-- ?
 				q(56743),	-- Triggered when completed 'Other Interests' (questID ?)
-				--q(56744),	-- ?
+				-- q(56744),	-- ?
 
 				-- Various
 				q(56426),	-- After killing Data Anomaly while doing 'Discs of Norgannon' (questID 56410)
@@ -1362,7 +1362,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the 'Discs of Norgannon' (questID 56410) summoning function
 				q(55453),	-- HQT for 'Battletorn Blue' rewarded by 'Available in Eight Colors' (achievementID 13513)
 				q(56238),	-- Triggered in the alternative world
-				--q(56742),	-- Blueprint: Black Market Radio?
+				-- q(56742),	-- Blueprint: Black Market Radio?
 				q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 				q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester. looted Performant Refined Logic Board and a Chain Ignitercoil
 				q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should

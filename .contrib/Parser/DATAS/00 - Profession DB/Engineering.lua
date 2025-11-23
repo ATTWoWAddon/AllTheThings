@@ -1398,3 +1398,10 @@ i(0, 447353);		-- Serrated Cogwheel
 ------------------
 --- ITEM ---
 i(234274, 1213620);	-- 22H Slicks
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+--- ITEM ---
+i(256962, 1261025);	-- Schematic: Draenei Stargazer's Telescope
+i(256964, 1261027);	-- Schematic: Frostwall Architect's Table

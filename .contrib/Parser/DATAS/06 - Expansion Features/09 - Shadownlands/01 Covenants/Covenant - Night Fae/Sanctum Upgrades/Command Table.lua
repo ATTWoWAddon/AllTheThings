@@ -11,10 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					n(TIER_ONE, {
 						["icon"] = 3675495,
 						["groups"] = {
-							n(FOLLOWERS, bubbleDownSelf({
-								["collectible"] = false,
-								["u"] = UNLEARNABLE,	-- Temporary troops
-							}, {
+							n_TrainingFollowers({
 								follower(1244),	-- Ardenweald Grovetender
 								follower(1293),	-- Ardenweald Grovetender
 								follower(1294),	-- Ardenweald Grovetender
@@ -24,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								follower(1296),	-- Ardenweald Trapper
 								follower(1317),	-- Ardenweald Trapper
 								follower(1318),	-- Ardenweald Trapper
-							})),
+							}),
 							n(QUESTS, {
 									q(64459, {	-- Adventurer: Elwyn
 									["description"] = "Requires Renown 62.",

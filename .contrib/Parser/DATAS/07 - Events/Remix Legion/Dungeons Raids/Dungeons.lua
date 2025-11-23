@@ -2,71 +2,70 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local MAPS = {
-	732,  -- Assault of Violet Hold (Legion)
+	732,	-- Assault of Violet Hold (Legion)
 
-	751,  -- Black Rook Hold
-	752,  -- Black Rook Hold
-	753,  -- Black Rook Hold
-	754,  -- Black Rook Hold
-	755,  -- Black Rook Hold
-	756,  -- Black Rook Hold
+	751,	-- Black Rook Hold
+	752,	-- Black Rook Hold
+	753,	-- Black Rook Hold
+	754,	-- Black Rook Hold
+	755,	-- Black Rook Hold
+	756,	-- Black Rook Hold
 
-	845,  -- Cathedral of Eternal Night
-	846,  -- Cathedral of Eternal Night
-	847,  -- Cathedral of Eternal Night
-	848,  -- Cathedral of Eternal Night
-	849,  -- Cathedral of Eternal Night
+	845,	-- Cathedral of Eternal Night
+	846,	-- Cathedral of Eternal Night
+	847,	-- Cathedral of Eternal Night
+	848,	-- Cathedral of Eternal Night
+	849,	-- Cathedral of Eternal Night
 
-	761,  -- Court of Stars
-	762,  -- Court of Stars
-	763,  -- Court of Stars
+	761,	-- Court of Stars
+	762,	-- Court of Stars
+	763,	-- Court of Stars
 
-	733,  -- Darkheart Thicket
+	733,	-- Darkheart Thicket
 
-	713,  -- Eye of Azshara
+	713,	-- Eye of Azshara
 
-	703,  -- Halls of Valor
-	704,  -- Halls of Valor
-	705,  -- Halls of Valor
+	703,	-- Halls of Valor
+	704,	-- Halls of Valor
+	705,	-- Halls of Valor
 
-	706,  -- Maw of Souls
-	707,  -- Maw of Souls
-	708,  -- Maw of Souls
+	706,	-- Maw of Souls
+	707,	-- Maw of Souls
+	708,	-- Maw of Souls
 
-	731,  -- Neltharion's Lair
+	731,	-- Neltharion's Lair
 
-	809,  -- Return to Karazhan
-	810,  -- Return to Karazhan
-	811,  -- Return to Karazhan
-	812,  -- Return to Karazhan
-	813,  -- Return to Karazhan
-	814,  -- Return to Karazhan
-	815,  -- Return to Karazhan
-	816,  -- Return to Karazhan
-	817,  -- Return to Karazhan
-	818,  -- Return to Karazhan
-	819,  -- Return to Karazhan
-	820,  -- Return to Karazhan
-	821,  -- Return to Karazhan
-	822,  -- Return to Karazhan
+	809,	-- Return to Karazhan
+	810,	-- Return to Karazhan
+	811,	-- Return to Karazhan
+	812,	-- Return to Karazhan
+	813,	-- Return to Karazhan
+	814,	-- Return to Karazhan
+	815,	-- Return to Karazhan
+	816,	-- Return to Karazhan
+	817,	-- Return to Karazhan
+	818,	-- Return to Karazhan
+	819,	-- Return to Karazhan
+	820,	-- Return to Karazhan
+	821,	-- Return to Karazhan
+	822,	-- Return to Karazhan
 
-	903,  -- Seat of the Triumvirate
+	903,	-- Seat of the Triumvirate
 
-	749,  -- The Arcway
+	749,	-- The Arcway
 
-	710,  -- Vault of the Wardens
-	711,  -- Vault of the Wardens
-	712,  -- Vault of the Wardens
+	710,	-- Vault of the Wardens
+	711,	-- Vault of the Wardens
+	712,	-- Vault of the Wardens
 }
-local mapped = function(id, t)
-	local o = n(id ,t)
-	o.maps = MAPS
-	return o
+local mapped = function(t)
+	t.maps = MAPS
+	return t
 end
 
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(DUNGEONS, {
-		mapped(ACHIEVEMENTS, {
+		n(ACHIEVEMENTS, {
 			ach(42692, {	-- Broken Isles Dungeoneer
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -166,22 +165,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					60824,	-- Mythic: Vault of the Wardens
 				}},
 			}),
-			ach(42615),	-- Timeworn Keystone Apprentice (L2)
-			ach(42688),	-- Timeworn Keystone Adept (L7)
-			ach(42689, {	-- Timeworn Keystone Master (L15)
+			mapped(ach(42615)),	-- Timeworn Keystone Apprentice (L2)
+			mapped(ach(42688)),	-- Timeworn Keystone Adept (L7)
+			mapped(ach(42689, {	-- Timeworn Keystone Master (L15)
 				i(251779, {	-- Fel Fountain (DECOR!)
 					["timeline"] = { ADDED_11_2_7 },
 				}),
-			}),
-			ach(42690, {	-- Timeworn Keystone Hero (L30)
+			})),
+			mapped(ach(42690, {	-- Timeworn Keystone Hero (L30)
 				iensemble(257105),	-- Ensemble: Sargerei Commander's Hellforged Regalia
-			}),
-			ach(42691, {	-- Timeworn Keystone Hero (L40)
+			})),
+			mapped(ach(42691, {	-- Timeworn Keystone Hero (L40)
 				title(658),	-- %s the Infernal (TITLE!)
-			}),
+			})),
 		}),
 		d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-			mapped(ARMOR, {
+			mapped(n(ARMOR, {
 				filter(CLOAKS, {
 					i(240270),	-- Cape of Hungering Flesh
 					i(240258),	-- Drape of Hungering Flesh
@@ -229,9 +228,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240297),	-- Honorforged Mantle
 					i(240298),	-- Honorforged Greathelm
 				}),
-			}),
+			})),
 		}),
-		mapped(REWARDS, {
+		n(REWARDS, {
 			i(239247),	-- Bonus Experience
 		}),
 		inst(777, {	-- Assault of Violet Hold (Legion)

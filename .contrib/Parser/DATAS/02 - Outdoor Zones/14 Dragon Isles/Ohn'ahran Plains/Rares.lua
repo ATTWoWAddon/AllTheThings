@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
-		--	n(193170),	-- Fulgurb // under DF/Timed Based Rare
+			-- n(193170),	-- Fulgurb // under DF/Timed Based Rare
 			n(201537,	-- Groffnar
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
@@ -117,8 +117,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
 				["questID"] = 73968,
 			}),
-		--	n(193212),	-- Malsegan // under DF/Timed Based Rare
-		--	n(193173),	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
+			-- n(193212),	-- Malsegan // under DF/Timed Based Rare
+			-- n(193173),	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
 			n(195895, {	-- Nergazurai
 				["coord"] = { 60.0, 71.3, OHNAHRAN_PLAINS },
 				["questID"] = 74093,
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- ["groups"] = {
 				-- },
 			}),
-		--	n(193235),	-- Oshigol // under DF/Timed Based Rare
+			-- n(193235),	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
 				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nRequires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
 				["coords"] = {
@@ -171,8 +171,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 194739, 1 } },	-- Trapped Duck
 				["questID"] = 73972,
 			}),
-		--	n(196010),	-- Researcher Sneakwing // under DF/Timed Based Rare
-		--	n(193227),	-- Ronsak the Decimator // under DF/Timed Based Rare
+			-- n(196010),	-- Researcher Sneakwing // under DF/Timed Based Rare
+			-- n(193227),	-- Ronsak the Decimator // under DF/Timed Based Rare
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
-		--	n(193123),	-- Steamgill // under DF/Timed Based Rare
+			-- n(193123),	-- Steamgill // under DF/Timed Based Rare
 			n(201539,	-- Stormcaller Narkena
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },

@@ -321,15 +321,15 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(61234),	-- Hunt in the Night
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 			ach(61225),	-- Investigating the Rise		-- 1x
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 			ach(61238),	-- Midnight Hunter
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 			ach(61231),	-- Midnight Loot
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 			ach(61232),	-- Midnight Treasures
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 			ach(61230),	-- Remains in the Rise
 			ach(61446, {	-- Slayer's Mastery
 				-- Meta Achievement
@@ -348,7 +348,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			ach(61464),	-- Spark in the Night			-- 5x
 			ach(61465),	-- Spark in the Night			-- 20x
 			ach(61226),	-- Uprising						-- 10x
-				--		["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
+				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },
 		}),
 		n(SLAYERS_RISE, {
 			n(ACHIEVEMENTS, {
@@ -360,16 +360,16 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				ach(61449),	-- Customary Rise			-- 25 Wins
 			}),
 			n(TREASURES, {
-			--	o(433370, {	-- Spectral Battle Chest
+				-- o(433370, {	-- Spectral Battle Chest
 					ach(61265),	-- Spectral Capture		-- 1 Chest
 					ach(61266),	-- Spectral Stocker		-- 10 Chest
-			--	}),
+				-- }),
 			}),
 		}),
 		n(TREASURES, {
-		--	o(433370,{	-- War Supply Chest
-		--		["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
-		--	}),
+			-- o(433370,{	-- War Supply Chest
+			-- 	["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
+			-- }),
 		}),
 		n(REWARDS, {
 		}),

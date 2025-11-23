@@ -5841,8 +5841,8 @@ i(95445,{awp=50004,b=1,f=55,minReputation={1272,42000},q=1,u=50}),
 i(95454,{awp=50004,b=1,f=55,minReputation={1272,42000},q=1,u=50})}})}})}}),
 cl(9,{awp=50200,description="The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",u=52,g={
 h(-45,{awp=50200,c={9},lvl=35,u=52,g={
-i(92426,{awp=50200,c={9},crs={50358,69664,69996,69997,69998,69999,70000,70001,70002,70003},lvl=35,maps={504},q=4,u=52}),
-i(92441,{awp=50200,b=1,c={9},cost={{"i",5512,1},{"i",92426,1}},lvl=35,maps={504},q=4,u=52}),
+i(92426,{awp=50200,c={9},crs={50358,69664,69996,69997,69998,69999,70000,70001,70002,70003},lvl=90,maps={504},q=4,u=52}),
+i(92441,{awp=50200,b=1,c={9},cost={{"i",5512,1},{"i",92426,1}},lvl=90,maps={504},q=4,u=52}),
 q(32295,{awp=50200,c={9},lvl=35,maps={504},providers={{"i",92441}},u=52}),
 q(32307,{awp=50200,c={9},coords={{39.8,85.4,84},{53.8,35.8,85}},isBreadcrumb=1,lvl=35,nextQuests={32309,32310},qgs={5496,88705},sourceQuests={32295},u=52}),
 q(32310,{awp=50200,c={9},coords={{39.8,85.4,84},{50.2,6.8,87}},lvl=35,qgs={5173,5496},r=2,sourceQuests={32307},u=52,g={

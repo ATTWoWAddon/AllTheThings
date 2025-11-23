@@ -5207,6 +5207,16 @@
 61460@@@Malevolent Conquest
 5.5.2.63832
 61680@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+5.5.2.64133
+61944@@@Temple of the Jade Serpent: Platinum (TRACKER)
+61945@@@Mogu'shan Palace: Platinum (TRACKER)
+61946@@@Shado-Pan Monastery: Platinum (TRACKER)
+61947@@@Gate of the Setting Sun: Platinum (TRACKER)
+61948@@@Scarlet Halls: Platinum (TRACKER)
+61949@@@Scarlet Monastery: Platinum (TRACKER)
+61950@@@Scholomance: Platinum (TRACKER)
+61951@@@Siege of Niuzao Temple: Platinum (TRACKER)
+61952@@@Stormstout Brewery: Platinum (TRACKER)
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -16837,6 +16847,9 @@
 61688@@@Master in Battle
 61862@@@<DNT> Brewgarden Tutorial Completed
 61890@@@<Hidden> Housing Early Access [DNT]
+11.2.7.64044
+61308@@@Score a Decor
+61311@@@Ready to Remodel
 12.0.0.63534
 41287@@@Windrunner Spire
 41288@@@Heroic: Windrunner Spire
@@ -17427,3 +17440,164 @@
 61913@@@A Singular Problem
 61916@@@Void Elf Demon Hunter
 61917@@@"Hold aggro, I got this"
+12.0.0.64124
+41802@@@Eversong In Reprise
+42283@@@Abundance: Azeroth Runs on Dundun
+61587@@@Keystone Victor: Magisters' Terrace (Midnight)
+61588@@@Keystone Victor: Maisara Caverns
+61589@@@Keystone Victor: Nexus-Point Xenas
+61590@@@Keystone Victor: Windrunner Spire
+61591@@@Keystone Victor: Algeth'ar Academy
+61592@@@Keystone Victor: Pit of Saron
+61593@@@Keystone Victor: Seat of the Triumvirate
+61594@@@Keystone Victor: Skyreach
+61681@@@Abundance: You Should See Him in a Crown
+61910@@@Mrglgrgl of Grglmrgl
+61922@@@Ninety Percent is Good Enough
+61936@@@Aura Farming
+61937@@@Abundance: Artisan of Mausoloa
+61938@@@Abundance: Artisan of Loaknit
+61939@@@Abundance: Artisan of Floaret
+61940@@@Abundance: Artisan of Loanite
+61941@@@Abundance: Acolyte of a Glorious Entity
+61942@@@Heritage of the Haranir
+61943@@@Abundance: Prosperous Plentitude!
+61953@@@Putting in the Practice
+61954@@@Putting in the Practice
+61955@@@Putting in the Practice
+61956@@@Putting in the Practice
+61957@@@Sojourner of Eversong Woods (Midnight)
+61958@@@Focused Target
+61959@@@Focused Target
+61960@@@Treasures of Eversong Woods (Midnight)
+61961@@@Runestone Rush
+12.0.0.64228
+42788@@@Alchemizing at Midnight
+61731@@@The Gulf of Memory Stories
+62057@@@Midnight: The Highest Peaks
+62058@@@Hungry Hungry Hatchlings
+62096@@@Insurmountable Collection
+62103@@@Insurmountable Collection
+62104@@@Midnight Lore Hunter
+62105@@@Lysikas Would Be Proud
+62106@@@The Only Winning Move Is Not To Play
+62107@@@Mandatory Training
+62108@@@Training with Patience
+62109@@@Training with Patience
+62110@@@Loremaster of Midnight
+62111@@@Boots on the Ground: Arathi Basin
+62112@@@Boots on the Ground: Battle for Gilneas
+62113@@@Boots on the Ground: Silvershard Mines
+62114@@@Learning the Landscape: Arathi Basin
+62115@@@Learning the Landscape: Battle for Gilneas
+62116@@@Learning the Landscape: Silvershard Mines
+62117@@@Abyss Anglers: Placeholder 1
+62118@@@Abyss Anglers: Placeholder 2
+62119@@@Abyss Anglers: Placeholder 3
+62120@@@Altar of Blessings: Placeholder 1
+62121@@@Altar of Blessings: Placeholder 2
+62122@@@Tallest Tree in the Forest
+62125@@@Treasures of Zul'Aman
+62126@@@Treasures of Voidstorm
+12.0.0.64339
+61724@@@The Grudge Pit Stories
+61725@@@Parhelion Plaza Stories
+61726@@@Collegiate Calamity Stories
+61727@@@The Shadow Enclave Stories
+61729@@@Atal'Aman Stories
+61730@@@Twilight Crypts Stories
+61732@@@Sunkiller Sanctum Stories
+61733@@@Shadowguard Point Stories
+61957@@@Sojourner of Eversong Woods
+61960@@@Treasures of Eversong Woods
+62117@@@Abyss Anglers: Boarhide Catch Sack
+62118@@@Abyss Anglers: Amazardhide Catch Case
+62119@@@Abyss Anglers: Loaknit-Woven Catch Satchel
+62120@@@Altar of Blessings: The Penitent Troll
+62121@@@Altar of Blessings: Sacred Buffet Devotee
+62130@@@The Ultimate Predator
+62133@@@Thrill of the Chase
+62134@@@The Deadliest of Prey
+62135@@@Now It's A Party
+62136@@@I'm Good At What I Do
+62137@@@I'm Not Trapped In Here With You
+62138@@@You're Trapped In Here With Me
+62139@@@Midnight Hunter
+62140@@@Kitchen Nightmare
+62141@@@Look, I'm Just Trying To Fish Here
+62142@@@I Didn't Hear No Bell
+62143@@@Trapped In The Middle With You
+62145@@@Dungeon Unlock: Windrunner Spire
+62146@@@Dungeon Unlock: Murder Row
+62147@@@Dungeon Unlock: Den of Nalorakk
+62148@@@Dungeon Unlock: Maisara Caverns
+62149@@@Dungeon Unlock: The Blinding Vale
+62150@@@Dungeon Unlock: Nexus-Point Xenas
+62151@@@Dungeon Unlock: Voidscar Arena
+62152@@@Dungeon Unlock: Magisters' Terrace
+62185@@@Ever Painting
+62186@@@The Party Must Go On
+62187@@@Grand Magister's Sommelier
+62188@@@More Than Just Their Roots
+62189@@@Mind-Seeker
+62190@@@Life of the Party
+62191@@@Call of the Light
+62192@@@Midnight Diplomat
+62193@@@Midnight Dungeon Damage Dealer
+62194@@@Midnight Dungeon Healer
+62195@@@Midnight Dungeon Tank
+62196@@@Midnight Dungeoneer
+62199@@@Put a Pin in It
+62200@@@Gnome Alone
+62201@@@The Frog and the Princesses
+62202@@@Spiritpaw Marathon
+62206@@@Midnight Delver III
+62207@@@Abyss Anglers: Reinforced Joints
+62208@@@Abyss Anglers: Depth Grease
+62209@@@Abyss Anglers: Pahk Trench Fins
+62210@@@Abyss Anglers: Depthdiver's Used Tank
+62211@@@Abyss Anglers: Fathom-Tested Tank
+62212@@@Abyss Anglers: Nalorakk's Breath Tank
+62213@@@Abyss Anglers: Shallows Net
+62214@@@Abyss Anglers: Triple-Thread Net
+62215@@@Abyss Anglers: Heavy Harpoon Cannon
+62216@@@Abyss Anglers: Hollowcore Harpoon Turret
+62217@@@Abyss Anglers: Idol of the Depths
+62218@@@Abyss Anglers: Even The Best
+62219@@@Abyss Anglers: No Sea Can Hold Me
+62220@@@Abyss Anglers: Proper Procedure
+62221@@@Abyss Anglers: Fresh Depth Tech
+12.0.0.64499
+61728@@@The Darkway Stories
+62144@@@Prey: Mad Magisters (Hard)
+62153@@@Prey: Insane Inventors (Hard)
+62154@@@Prey: A Different Kind of Void (Hard)
+62155@@@Prey: Ethereal Assassins (Hard)
+62156@@@Prey: Anger Management (Hard)
+62157@@@Prey: Sadistic Shamans (Hard)
+62158@@@Prey: The Fallen Farstriders (Hard)
+62159@@@Prey: Bloody Green Thumbs (Hard)
+62160@@@Prey: Blinded By The Light (Hard)
+62161@@@Prey: Outsmarting the Schemers (Hard)
+62162@@@Prey: Dominating the Void (Hard)
+62163@@@Prey: Chasing Death (Hard)
+62164@@@Prey: No Rest for the Wretched (Hard)
+62165@@@Prey: A Thorn in the Side (Hard)
+62166@@@Prey: Breaking the Blade (Hard)
+62167@@@Prey: Mad Magisters (Nightmare)
+62168@@@Prey: Insane Inventors (Nightmare)
+62169@@@Prey: A Different Kind of Void (Nightmare)
+62173@@@Prey: Ethereal Assassins (Nightmare)
+62174@@@Prey: Anger Management (Nightmare)
+62175@@@Prey: Sadistic Shamans (Nightmare)
+62176@@@Prey: The Fallen Farstriders (Nightmare)
+62177@@@Prey: Bloody Green Thumbs (Nightmare)
+62178@@@Prey: Blinded By The Light (Nightmare)
+62179@@@Prey: Outsmarting the Schemers (Nightmare)
+62180@@@Prey: Dominating the Void (Nightmare)
+62181@@@Prey: Chasing Death (Nightmare)
+62182@@@Prey: No Rest for the Wretched (Nightmare)
+62183@@@Prey: A Thorn in the Side (Nightmare)
+62184@@@Prey: Breaking the Blade Nightmare)
+62222@@@Abyss Anglers: The Amani Way
+62223@@@Alchemy-on-Demand

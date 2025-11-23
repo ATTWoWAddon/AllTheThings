@@ -1050,7 +1050,7 @@ flt(23,{
 s(2358,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=10,maps_disp={25,50,56,63,407}})}),
 flt(52,{
 i(8350,{description="Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",f=52,lvl=5})}),
-flt(1,{collectible=false,g={
+flt(1,{
 s(2334,6292,{collectible=false}),
 s(2335,6294,{collectible=false}),
 s(2336,6295,{collectible=false}),
@@ -1074,7 +1074,7 @@ s(5046,13887,{collectible=false}),
 s(5060,13914,{collectible=false}),
 s(5061,13915,{collectible=false}),
 s(5062,13916,{collectible=false}),
-s(5063,13917,{collectible=false})}}),
+s(5063,13917,{collectible=false})}),
 flt(50,{
 i(13907),
 i(13908),
@@ -1108,15 +1108,15 @@ i(6643),
 i(8366,{lvl=11}),
 i(6351),
 i(13874),
-i(21150,{maps_disp={10,14,17,21,22,23,25,26,50,51,52,56,62,63,64,65,66,69,70,71,76,78,80,199,210},providers={a[96],a[92],a[91],a[93],a[169]}}),
+i(21150,{maps_disp={10,14,17,21,22,23,25,26,50,51,52,56,62,63,64,65,66,69,70,71,76,78,80,199,210},providers={a[91],a[92],a[93],a[96],a[169]}}),
 i(6307),
-i(21228,{maps_disp=a[288],providers={a[95],a[94]}}),
+i(21228,{maps_disp=a[288],providers={a[94],a[95]}}),
 i(13918),
 i(6357),
 i(20708,{maps_disp=a[235],providers={a[88],a[89]}}),
 i(6352),
-i(21113,{maps_disp=a[328],providers={a[170],a[90]}}),
-i(21151,{f=55,providers={a[96],a[92],a[88],a[95],a[91],a[89],a[90],a[94],a[93],a[169],a[170]},spellID=25804}),
+i(21113,{maps_disp=a[328],providers={a[90],a[170]}}),
+i(21151,{f=55,providers={a[88],a[89],a[90],a[91],a[92],a[93],a[94],a[95],a[96],a[169],a[170]},spellID=25804}),
 i(20709,{f=55,maps_disp=a[235],providers={a[88]},spellID=25037})}),
 flt(57,{
 s(2362,6366,{collectible=false,description="Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",f=57,learnedAt=50,lvl=7,maps_disp={14,25,49,50,56,63},requireSkill=356,spellID=124034})}),
@@ -1174,7 +1174,7 @@ i(8839,{coords={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a
 i(108336,{awp=60002,providers={a[65]},spellID=153842,g={
 i(8839)}}),
 i(22710,{awp=20005,maps_disp=a[458],providers={{"o",181166}},races=a[239],spellID=28273}),
-i(19726,{maps_disp=a[345],providers={{"o",180168},{"o",180167},{"o",180166},{"o",180165},{"o",180164}},rwp=40003,u=2}),
+i(19726,{maps_disp=a[345],providers={{"o",180164},{"o",180165},{"o",180166},{"o",180167},{"o",180168}},rwp=40003,u=2}),
 i(2450,{maps_disp=a[237],providers={a[70],a[167]}}),
 i(108320,{awp=60002,providers={a[70],a[167]},spellID=153843,g={
 i(2450)}}),
@@ -1243,8 +1243,8 @@ i(3820)}}),
 i(8838,{maps_disp=a[284],providers={a[64]}}),
 i(108335,{awp=60002,providers={a[64]},spellID=153878,g={
 i(8838)}}),
-i(2452,{maps_disp={10,21,25,47,48,52,56,57,62,65,76},providers={a[70],a[69]}}),
-i(108321,{awp=60002,providers={a[70],a[69]},spellID=153879,g={
+i(2452,{maps_disp={10,21,25,47,48,52,56,57,62,65,76},providers={a[69],a[70]}}),
+i(108321,{awp=60002,providers={a[69],a[70]},spellID=153879,g={
 i(2452)}}),
 i(3355,{maps_disp=a[278],providers={a[72]}}),
 i(108323,{awp=60002,providers={a[72]},spellID=153885,g={
@@ -1309,17 +1309,17 @@ i(39489,{description="Can be bought from Inscription Suppliers, as well as some 
 i(64670,{awp=40001,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",spellID=210212}),
 i(39505,{collectible=false,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",f=57,requireSkill=773})}),
 ah(51005,{type="s",g={
-i(39151,{providers={{"i",2449},{"i",2447},{"i",765}}}),
-i(43104,{providers={a[26],a[23],a[24],a[22]}}),
-i(39334,{providers={a[16],a[18],a[47],a[39],a[17]}}),
-i(39339,{providers={a[38],a[37],a[40],a[25]}}),
-i(39338,{providers={a[26],a[23],a[24],a[22]}}),
-i(43105,{providers={a[38],a[37],a[40],a[25]}}),
-i(43106,{providers={a[49],a[51],a[44],a[52],a[53],a[48],a[50]}}),
-i(43107,{providers={a[2],a[3],a[6],a[4],a[5]}}),
-i(39341,{providers={a[2],a[3],a[6],a[4],a[5]}}),
-i(43103,{providers={a[16],a[18],a[47],a[39],a[17]}}),
-i(39340,{providers={a[49],a[51],a[44],a[52],a[53],a[48],a[50]}})}}),
+i(39151,{providers={{"i",765},{"i",2447},{"i",2449}}}),
+i(43104,{providers={a[22],a[23],a[24],a[26]}}),
+i(39334,{providers={a[47],a[16],a[17],a[18],a[39]}}),
+i(39339,{providers={a[25],a[37],a[38],a[40]}}),
+i(39338,{providers={a[22],a[23],a[24],a[26]}}),
+i(43105,{providers={a[25],a[37],a[38],a[40]}}),
+i(43106,{providers={a[44],a[48],a[49],a[50],a[51],a[52],a[53]}}),
+i(43107,{providers={a[2],a[3],a[4],a[5],a[6]}}),
+i(39341,{providers={a[2],a[3],a[4],a[5],a[6]}}),
+i(43103,{providers={a[47],a[16],a[17],a[18],a[39]}}),
+i(39340,{providers={a[44],a[48],a[49],a[50],a[51],a[52],a[53]}})}}),
 flt(56,{
 i(43120),
 i(43117),
@@ -1476,7 +1476,7 @@ i(3864,{providers={a[21],a[41]}}),
 i(12364,{providers={a[1]}}),
 i(1529,{providers={a[21]}}),
 i(12799,{providers={a[1]}}),
-i(1705,{providers={a[21],a[20]}}),
+i(1705,{providers={a[20],a[21]}}),
 i(774,{providers={a[19]}}),
 i(1206,{providers={a[20]}}),
 i(1210,{providers={a[20]}}),
@@ -1916,30 +1916,30 @@ i(2776)}}),
 i(2772,{maps_disp=a[272],providers={a[80]}}),
 i(108297,{awp=60002,providers={a[80]},spellID=153814,g={
 i(2772)}}),
-i(22203,{maps_disp=a[323],providers={a[98],a[97]}}),
+i(22203,{maps_disp=a[323],providers={a[97],a[98]}}),
 i(3858,{maps_disp=a[283],providers={a[159]}}),
 i(108300,{awp=60002,providers={a[159]},spellID=153817,g={
 i(3858)}}),
-i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps_disp=a[270],providers={a[217],a[78]}}),
-i(108294,{awp=60002,providers={a[217],a[78]},spellID=153811,g={
+i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps_disp=a[270],providers={a[78],a[217]}}),
+i(108294,{awp=60002,providers={a[78],a[217]},spellID=153811,g={
 i(2775)}}),
-i(22202,{maps_disp=a[323],providers={a[98],a[97]}}),
-i(10620,{maps_disp=a[291],providers={a[87],a[62],a[81],a[172]}}),
-i(108298,{awp=60002,providers={a[87],a[62],a[81],a[172]},spellID=153815,g={
+i(22202,{maps_disp=a[323],providers={a[97],a[98]}}),
+i(10620,{maps_disp=a[291],providers={a[172],a[62],a[81],a[87]}}),
+i(108298,{awp=60002,providers={a[172],a[62],a[81],a[87]},spellID=153815,g={
 i(10620)}}),
 i(2771,{maps_disp=a[327],providers={a[77]}}),
 i(108295,{awp=60002,providers={a[77]},spellID=153812,g={
 i(2771)}}),
-i(7911,{description="Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",maps_disp=a[282],providers={a[61],a[166]}}),
-i(108299,{awp=60002,providers={a[61],a[166]},spellID=153816,g={
+i(7911,{description="Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",maps_disp=a[282],providers={a[166],a[61]}}),
+i(108299,{awp=60002,providers={a[166],a[61]},spellID=153816,g={
 i(7911)}}),
 i(2836,{maps_disp=a[325],providers={a[77]}}),
-i(12365,{maps_disp=a[291],providers={a[87],a[62],a[81],a[172]}}),
+i(12365,{maps_disp=a[291],providers={a[172],a[62],a[81],a[87]}}),
 i(2838,{maps_disp=a[272],providers={a[80]}}),
 i(2835,{maps_disp=a[225],providers={a[76]}}),
 i(7912,{maps_disp=a[291],providers={a[159]}}),
-i(12363,{description="Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",maps_disp=a[291],providers={a[172],a[87],a[62],a[81]}}),
-i(9262,{description="This gem is most reliably obtained from mining veins, although the droprate is 1%.",providers={a[159],a[172]}}),
+i(12363,{description="Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",maps_disp=a[291],providers={a[172],a[62],a[81],a[87]}}),
+i(9262,{description="This gem is most reliably obtained from mining veins, although the droprate is 1%.",providers={a[172],a[159]}}),
 i(11382,{maps_disp=a[318],providers={a[75]}}),
 i(8150,{description="Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",maps_disp={230,242,280}}),
 i(19774,{providers={{"o",180215}},rwp=40003,u=2}),
@@ -2789,17 +2789,17 @@ i(34866,{awp=20005})}}),
 i(35286,{awp=20400,maps_disp=a[265]}),
 i(33823,{awp=20300,maps_disp=a[365]}),
 i(33824,{awp=20300,maps_disp=a[365]}),
-i(27513,{maps_disp=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
-i(27516,{maps_disp=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27513,{maps_disp=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
+i(27516,{maps_disp=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27435,{maps_disp=a[249],providers={a[118]}}),
 i(27439,{coords={a[370],a[404],a[418]},providers={a[117]}}),
 i(35285,{awp=20400,lvl=27,maps_disp=a[265],spellID=35270}),
-i(27438,{maps_disp=a[250],providers={a[115],a[117],a[116]}}),
-i(27442,{maps_disp=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27438,{maps_disp=a[250],providers={a[115],a[116],a[117]}}),
+i(27442,{maps_disp=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27481,{providers={a[113]}}),
-i(27515,{maps_disp=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27515,{maps_disp=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27437,{maps_disp=a[249],providers={a[119]}}),
-i(27511,{maps_disp=a[242],providers={a[119],a[115],a[117],a[118],a[112],a[116],a[114],a[113]}}),
+i(27511,{maps_disp=a[242],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(34867,{awp=20400,maps_disp={100,104}}),
 i(27388,{b=1,coords={a[370],a[404],a[418]},description="Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",f=55,lvl=23,providers={a[117]},spellID=33060,g={
 p(132,{b=1,itemID=27445,npcID=18839,spellID=33050}),
@@ -2834,7 +2834,7 @@ i(22786,{description="Found near edges and highly uneven terrain.",maps_disp=a[2
 i(108345,{awp=60002,providers={a[100]},spellID=153849,g={
 i(22786,{awp=20005})}}),
 i(22795,{f=55,lvl=10,providers={a[99]},requireSkill=182,spellID=28527}),
-i(22794,{description="Can uncommonly be looted when gathering TBC herbs.",providers={a[103],a[100],a[99],a[106],a[104],a[105],a[101],a[102]}}),
+i(22794,{description="Can uncommonly be looted when gathering TBC herbs.",providers={a[99],a[100],a[101],a[102],a[103],a[104],a[105],a[106]}}),
 i(22785,{maps_disp={100,102,104,105,107,108},providers={a[99]}}),
 i(108344,{awp=60002,providers={a[99]},spellID=153852,g={
 i(22785,{awp=20005})}}),
@@ -2842,7 +2842,7 @@ i(22788,{lvl=23,maps_disp=a[244],providers={{"o",181276}},spellID=28714}),
 i(22793,{maps_disp=a[265],providers={a[106]}}),
 i(108351,{awp=60002,providers={a[106]},spellID=153869,g={
 i(22793,{awp=20005})}}),
-i(35229,{awp=20400,providers={a[103],a[100],a[99],a[106],a[104],a[105],a[101],a[102]}}),
+i(35229,{awp=20400,providers={a[99],a[100],a[101],a[102],a[103],a[104],a[105],a[106]}}),
 i(22791,{maps_disp=a[251],providers={a[104]}}),
 i(108349,{awp=60002,providers={a[104]},spellID=153871,g={
 i(22791,{awp=20005})}}),
@@ -2869,8 +2869,8 @@ o(183385,{maps={262}}),
 o(181277,{coords={a[411],a[348],a[367],a[334]},description="Found near the base of trees.",maps=a[250]})}})}}),
 prof(773,{awp=20005,g={
 ah(51005,{type="s",g={
-i(43108,{providers={a[11],a[8],a[7],a[13],a[12],a[9],a[10]}}),
-i(39342,{providers={a[11],a[8],a[7],a[13],a[12],a[9],a[10]}})}}),
+i(43108,{providers={a[7],a[8],a[9],a[10],a[11],a[12],a[13]}}),
+i(39342,{providers={a[7],a[8],a[9],a[10],a[11],a[12],a[13]}})}}),
 flt(56,{
 i(43125),
 i(43124)}),
@@ -2926,18 +2926,18 @@ i(31896,{spellID=39481}),
 i(31893,{spellID=39481})})})}}),
 prof(755,{awp=20005,g={
 ah(31252,{type="s",g={
-i(23117,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23077,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23079,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(21929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23112,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23107,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[15],a[14]}}),
-i(23440,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23436,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23441,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23439,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23438,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}}),
-i(23437,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[15],a[14]}})}}),
+i(23117,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23077,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23079,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(21929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23112,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23107,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[14],a[15]}}),
+i(23440,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23436,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23441,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23439,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23438,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}}),
+i(23437,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",providers={a[14],a[15]}})}}),
 h(-88,{
 s(9446,24123,{f=4,lvl=27,spellID=32980}),
 s(9445,24122,{f=4,lvl=27,spellID=32981}),
@@ -3860,7 +3860,7 @@ i(41165,{f=37,lvl=28,rwp=40001,u=2}),
 i(40769,{f=55,requireSkill=202,spellID=54711}),
 i(23775,{awp=30008,f=113})}),
 flt(100,{
-ach(2097,{providers={{"i",44413},{"i",41508}}}),
+ach(2097,{providers={{"i",41508},{"i",44413}}}),
 mnt(55531,{itemID=41508,lvl=17,r=1}),
 mnt(60424,{itemID=44413,lvl=17,r=2})}),
 flt(56,{
@@ -3895,7 +3895,7 @@ i(41805,{description="Schools can be found on the seaside.",maps_disp=a[256],pro
 i(41800,{coords={a[340],a[344],a[385],a[449]},description="The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",providers={a[138]}}),
 i(41807,{coords={a[359],a[452],a[454],a[455],a[456],a[457]},providers={a[133]}}),
 s(21571,44703,{collectible=false,description="Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",f=20,lvl=29,maps_disp=a[260],providers={a[134]}}),
-s(21518,44505,{description="Can be caught in schools or open water in Northrend.",f=20,lvl=29,providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]}}),
+s(21518,44505,{description="Can be caught in schools or open water in Northrend.",f=20,lvl=29,providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
 i(41810,{description="Schools can be found in inland waters.",maps_disp=a[260],providers={a[134]}}),
 i(43646,{coords={{52.9,65.9,125}},description="Can be caught in the fountain.",lvl=27,spellID=35270}),
 i(45909,{maps_disp=a[266],spellID=64202,g={
@@ -3910,8 +3910,8 @@ i(41801,{coords={a[340],a[344],a[385],a[449]},description="The schools have shar
 i(41806,{coords={a[388]},providers={a[132]}}),
 i(41813,{maps_disp=a[263],providers={a[140]}}),
 i(45902,{description="Eat this before it despawns!",maps_disp=a[263],spellID=64366}),
-i(40199,{maps_disp={114,115,116,117,119,127},providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]}}),
-i(44475,{providers={a[136],a[138],a[133],a[134],a[135],a[141],a[137],a[139],a[132],a[140]},g={
+i(40199,{maps_disp={114,115,116,117,119,127},providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
+i(44475,{providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]},g={
 i(33567,{requireSkill=393,spellID=59926}),
 i(36909),
 i(33470)}}),
@@ -3949,13 +3949,13 @@ sp(2366,{
 i(36903,{maps_disp=a[263],providers={a[129]}}),
 i(108353,{awp=60002,providers={a[129]},spellID=153838,g={
 i(36903,{awp=30003})}}),
-i(37921,{description="Is obtained from gathering other herbs.",maps_disp={114,115,116,117,119,121},providers={a[120],a[126],a[125]}}),
+i(37921,{description="Is obtained from gathering other herbs.",maps_disp={114,115,116,117,119,121},providers={a[120],a[125],a[126]}}),
 i(108358,{awp=60002,spellID=153846,g={
 i(37921,{awp=30003})}}),
 i(39970,{coords={a[430]},providers={a[131]}}),
 i(108359,{awp=60002,providers={a[131]},spellID=153853,g={
 i(39970,{awp=30003})}}),
-i(36908,{description="Can uncommonly be looted when gathering WotLK herbs.",providers={a[129],a[131],a[120],a[128],a[127],a[126],a[125]}}),
+i(36908,{description="Can uncommonly be looted when gathering WotLK herbs.",providers={a[120],a[125],a[126],a[127],a[128],a[129],a[131]}}),
 i(36901,{coords={a[375],a[413]},description="Found on grassy terrain.",maps_disp=a[255],providers={a[120]}}),
 i(108352,{awp=60002,providers={a[120]},spellID=153856,g={
 i(36901,{awp=30003})}}),
@@ -3980,8 +3980,8 @@ o(190170,{coords={a[342]},description="Found around the lower tiers of Zul'Drak.
 o(190169,{coords={a[388]},description="Found around inland waters and waterways.",maps=a[258]})})}}),
 prof(773,{awp=30003,g={
 ah(51005,{type="s",g={
-i(39343,{providers={a[28],a[36],a[42],a[27],a[31],a[30],a[32],a[29]}}),
-i(43109,{providers={a[28],a[36],a[42],a[27],a[31],a[30],a[32],a[29]}})}}),
+i(39343,{providers={a[27],a[28],a[29],a[30],a[31],a[32],a[36],a[42]}}),
+i(43109,{providers={a[27],a[28],a[29],a[30],a[31],a[32],a[36],a[42]}})}}),
 flt(56,{
 i(43126),
 i(43127)}),
@@ -3997,7 +3997,7 @@ i(87883,{awp=50004,c=a[239],f=111,lvl=11,spellID=125739})}),
 flt(1,{
 s(21393,44210,{f=1,lvl=29}),
 s(18376,38322,{f=1,lvl=29}),
-i(45854,{awp=30100,collectible=false,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",f=1,lvl=27,spellID=64052,g={
+ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854},{"s",64051}},type="i",g={
 s(267060,45850,{awp=30003,f=1,lvl=27,spellID=64048}),
 s(267057,45851,{awp=30003,f=1,lvl=27,spellID=64047}),
 s(267058,45852,{awp=30003,f=1,lvl=27,spellID=64049}),
@@ -4053,18 +4053,18 @@ i(44293,{spellID=60276})})})}}),
 prof(755,{awp=30003,g={
 ah(31252,{type="s",g={
 i(46849,{awp=30200}),
-i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36923,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36932,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36926,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36920,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[35],a[34]}}),
-i(36921,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36933,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36930,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36918,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36924,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
-i(36927,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[43],a[35],a[34]}}),
+i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36923,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36932,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36929,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36926,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36920,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={a[33],a[34],a[35]}}),
+i(36921,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36933,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36930,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36918,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36924,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
+i(36927,{description="This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",providers={a[34],a[35],a[43]}}),
 i(36931,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
 i(36919,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
 i(36928,{awp=30200,description="This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",providers={a[34]}}),
@@ -4617,8 +4617,8 @@ o(191133,{maps=a[257]}),
 i(36909,{maps_disp=a[254],providers={a[121],a[122]}}),
 i(108305,{awp=60002,providers={a[121],a[122]},spellID=153822,g={
 i(36909,{awp=30003})}}),
-i(36912,{maps_disp=a[261],providers={a[124],a[123]}}),
-i(108306,{awp=60002,providers={a[124],a[123]},spellID=153823,g={
+i(36912,{maps_disp=a[261],providers={a[123],a[124]}}),
+i(108306,{awp=60002,providers={a[123],a[124]},spellID=153823,g={
 i(36912,{awp=30003})}}),
 i(36910,{maps_disp=a[261],providers={a[130]}}),
 i(108391,{awp=60002,providers={a[130]},spellID=153890,g={
@@ -4778,7 +4778,7 @@ i(67539,{b=1})}}),
 i(58143,{f=55,lvl=30,spellID=134873}),
 i(58091,{f=55,lvl=30,spellID=79476})}),
 flt(100,{
-ach(5749,{providers={{"i",65891},{"s",93326}}}),
+ach(5749,{providers={{"i",65891}}}),
 mnt(93326,{itemID=65891,lvl=30})}),
 flt(56,{
 i(56850,{spellID=78640}),
@@ -4942,8 +4942,8 @@ s(35722,70163,{awp=40200,f=25,lvl=32}),
 s(35724,70165,{awp=40200,f=29,lvl=32})})}}),
 prof(185,{awp=40003,g={
 h(-22,{
-i(58265,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[58],a[57],a[56]},spellID=80169}),
-i(58278,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[58],a[57],a[56]},spellID=45548})}),
+i(58265,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[56],a[57],a[58]},spellID=80169}),
+i(58278,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[56],a[57],a[58]},spellID=45548})}),
 i(62661,{f=55,lvl=30,spellID=87597}),
 i(62665,{f=55,lvl=30,spellID=87599}),
 i(62670,{f=55,lvl=30,spellID=87584}),
@@ -5107,7 +5107,7 @@ i(53065,{coords={a[330],a[424],a[427],a[431],a[439]},description="Schools can al
 i(53071,{description="Can be caught on the seaside, though might be more uncommon than other saltwater fish.",maps_disp=a[302],providers={a[46]}}),
 i(53066,{description="Schools can be found in inland waterways.",maps_disp=a[324],providers={a[157]}}),
 i(53072,{description="Schools can be found on the seaside.",maps_disp=a[302],providers={a[46],a[168]}}),
-i(53070,{description="Schools can be found on the seaside.",maps_disp=a[322],providers={a[158],a[46]}}),
+i(53070,{description="Schools can be found on the seaside.",maps_disp=a[322],providers={a[46],a[158]}}),
 i(53064,{description="Schools can be found in inland waterways.",maps_disp=a[321],providers={a[155]}}),
 i(53068,{description="Can be caught in inland waterways.",maps_disp={207,249},providers={a[46]}}),
 i(53063,{coords={a[333],a[363],a[392],a[407],a[428]},providers={a[154]}}),
@@ -5116,7 +5116,7 @@ mnt(64731,{b=1,itemID=46109}),
 i(53062,{description="Can be caught in inland waterways.",maps_disp={198,207,241,249}}),
 s(34674,68050,{collectible=false,coords={a[391],a[362]},description="Can be caught by fishing in lava using a special lure.",f=23,lvl=32,providers={{"i",68049}}}),
 i(53067,{description="Can be caught in inland waterways.",maps_disp={198,241}}),
-cs(28271,{c=a[447],itemID=22739,lvl=25,maps_disp={198,207,241,245,249},providers={a[156],a[157],a[168],a[158],a[155],a[154],{"o",207724}}}),
+cs(28271,{c=a[447],itemID=22739,lvl=25,maps_disp={198,207,241,245,249},providers={a[154],a[155],a[156],a[157],a[158],{"o",207724},a[168]}}),
 o(202778,{coords={a[330],a[424],a[427],a[431],a[439]},description="Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh."}),
 o(202781,{description="Please let us in the ATT-discord know if this school appears in any iterations of the game.",maps=a[321],rwp=40300,u=2}),
 o(202779,{description="Can be found in inland waterways.",maps=a[324]}),
@@ -5140,7 +5140,7 @@ i(52983,{awp=40003})}}),
 i(52986,{maps_disp=a[307],providers={a[151]}}),
 i(108363,{awp=60002,providers={a[151]},spellID=153861,g={
 i(52986,{awp=40003})}}),
-i(63122,{f=55,providers={a[150],a[148],a[151],a[149],a[152],a[153]},requireSkill=182,spellID=88728}),
+i(63122,{f=55,providers={a[148],a[149],a[150],a[151],a[152],a[153]},requireSkill=182,spellID=88728}),
 i(52984,{coords={a[314],a[361],a[350],a[387]},description="Can be found near the base of vegetation and structures.",maps_disp=a[297],providers={a[149]}}),
 i(108361,{awp=60002,providers={a[149]},spellID=153876,g={
 i(52984,{awp=40003})}}),
@@ -5164,8 +5164,8 @@ i(67319,{coords={a[438],a[443]},providers={a[59],a[60]}}),
 i(68047,{coords={a[438],a[443]},providers={a[59],a[60]}}),
 i(67335,{coords={a[438],a[443]},providers={a[59],a[60]}})}),
 ah(51005,{type="s",g={
-i(61979,{providers={a[150],a[148],a[151],a[149],a[152],a[153]}}),
-i(61980,{providers={a[150],a[148],a[151],a[149],a[152],a[153]}})}}),
+i(61979,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}}),
+i(61980,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}})}}),
 flt(56,{
 i(61978),
 i(61981)}),
@@ -5761,13 +5761,13 @@ o(202737,{maps={241,249}}),
 o(202741,{maps=a[320]}),
 o(202739,{maps=a[296]}),
 o(202740,{maps={244,245}}),
-i(52185,{maps_disp=a[320],providers={a[144],a[147],a[45]}}),
+i(52185,{maps_disp=a[320],providers={a[45],a[144],a[147]}}),
 i(108308,{awp=60002,providers={a[144],a[147]},spellID=153825,g={
 i(52185,{awp=40003})}}),
 i(53038,{maps_disp=a[296],providers={a[142],a[145]}}),
 i(108307,{awp=60002,providers={a[142],a[145]},spellID=153824,g={
 i(53038,{awp=40003})}}),
-i(52183,{maps_disp=a[320],providers={a[143],a[146],a[45]}}),
+i(52183,{maps_disp=a[320],providers={a[45],a[143],a[146]}}),
 i(108309,{awp=60002,providers={a[143],a[146]},spellID=153826,g={
 i(52183,{awp=40003})}})}),
 sp(2656,{
@@ -8460,7 +8460,7 @@ r(209611,{b=1,itemID=137867,learnedAt=80,lvl=10,requireSkill=755}),
 i(130904),
 i(130905),
 i(87399,{b=1}),
-ah(1174,{maps={630,634,641,680},providers={{"o",246812},{"o",268466},{"o",268451}},type="cu",g={
+ah(1174,{maps={630,634,641,680},providers={{"o",246812},{"o",268451},{"o",268466}},type="cu",g={
 i(130917,{b=1,cost={{"c",1174,50}},spellID=126935}),
 i(130920,{b=1,cost={{"c",1174,50}},spellID=196452}),
 i(130916,{b=1,cost={{"c",1174,50}},spellID=126935}),
@@ -12396,18 +12396,18 @@ crit(61418,{achID=18825,awp=100107,id=5,maps=a[303],providers={a[183],a[210]},re
 q(71977,{an="s:391516",providers={{"s",391516}},requireSkill=182,type="hqt",g={
 crit(61416,{achID=18825,awp=100107,id=3,maps=a[305],providers={a[186]},requireSkill=182})}}),
 q(72345,{an="s:391564",providers={{"s",391564}},requireSkill=182,type="hqt",g={
-crit(61425,{achID=18829,awp=100107,id=4,maps=a[306],providers={a[182],a[195],a[190],a[185]},requireSkill=182})}}),
+crit(61425,{achID=18829,awp=100107,id=4,maps=a[306],providers={a[182],a[185],a[190],a[195]},requireSkill=182})}}),
 q(72343,{an="s:391562",providers={{"s",391562}},requireSkill=182,type="hqt",g={
-crit(61423,{achID=18829,awp=100107,id=2,maps=a[304],providers={a[180],a[197],a[188],a[187]},requireSkill=182})}}),
+crit(61423,{achID=18829,awp=100107,id=2,maps=a[304],providers={a[180],a[187],a[188],a[197]},requireSkill=182})}}),
 q(72348,{an="s:391558",providers={{"s",391558}},requireSkill=182,type="hqt",g={
-crit(61426,{achID=18829,awp=100107,id=5,maps=a[303],providers={a[179],a[213],a[194],a[215],a[191],a[216],a[184],a[214]},requireSkill=182})}}),
+crit(61426,{achID=18829,awp=100107,id=5,maps=a[303],providers={a[179],a[184],a[191],a[194],a[213],a[214],a[215],a[216]},requireSkill=182})}}),
 q(75138,{an="s:405134",awp=100100,providers={{"s",405134}},requireSkill=182,type="hqt",g={
-crit(61427,{achID=18829,awp=100107,id=6,maps=a[311],providers={a[208],a[205],a[206],a[207]},requireSkill=182})}}),
+crit(61427,{achID=18829,awp=100107,id=6,maps=a[311],providers={a[205],a[206],a[207],a[208]},requireSkill=182})}}),
 q(78007,{an="s:422293",awp=100200,providers={{"s",422293}},requireSkill=182,type="hqt"}),
 q(72344,{an="s:391557",providers={{"s",391557}},requireSkill=182,type="hqt",g={
-crit(61424,{achID=18829,awp=100107,id=3,maps=a[303],providers={a[178],a[209],a[193],a[211],a[192],a[212],a[183],a[210]},requireSkill=182})}}),
+crit(61424,{achID=18829,awp=100107,id=3,maps=a[303],providers={a[178],a[183],a[192],a[193],a[209],a[210],a[211],a[212]},requireSkill=182})}}),
 q(72342,{an="s:391560",providers={{"s",391560}},requireSkill=182,type="hqt",g={
-crit(61422,{achID=18829,awp=100107,id=1,maps=a[305],providers={a[181],a[196],a[189],a[186]},requireSkill=182})}})})}}),
+crit(61422,{achID=18829,awp=100107,id=1,maps=a[305],providers={a[181],a[186],a[189],a[196]},requireSkill=182})}})})}}),
 prof(773,{awp=100002,g={
 sp(382981,{
 i(198418),
@@ -13620,7 +13620,7 @@ r(389406,{learnedAt=100,requireSkill=186}),
 r(389461,{learnedAt=60,requireSkill=186})}),
 h(-244,{
 q(71951,{an="s:384688",providers={{"s",384688}},requireSkill=186,type="hqt",g={
-crit(61370,{achID=18819,awp=100107,id=1,maps=a[303],providers={{"o",379252},{"o",379248}},requireSkill=186})}}),
+crit(61370,{achID=18819,awp=100107,id=1,maps=a[303],providers={{"o",379248},{"o",379252}},requireSkill=186})}}),
 q(72347,{an="s:389458",awp=100007,providers={{"s",389458}},requireSkill=186,type="hqt",g={
 crit(61377,{achID=18819,awp=100107,id=8,maps=a[310],providers={{"o",379272}},requireSkill=186})}}),
 q(71956,{an="s:389413",providers={{"s",389413}},requireSkill=186,type="hqt",g={
@@ -13661,7 +13661,7 @@ q(71967,{an="s:389704",providers={{"s",389704}},requireSkill=186,type="hqt",g={
 crit(61386,{achID=18821,awp=100107,id=5,maps=a[303],providers={a[177],a[202]},requireSkill=186})}}),
 q(78061,{an="s:422809",awp=100200,providers={{"s",422809}},requireSkill=186,type="hqt"}),
 q(75137,{an="s:405131",awp=100100,providers={{"s",405131}},requireSkill=186,type="hqt",g={
-crit(61387,{achID=18821,awp=100107,id=6,maps=a[311],providers={a[204],a[203]},requireSkill=186})}}),
+crit(61387,{achID=18821,awp=100107,id=6,maps=a[311],providers={a[203],a[204]},requireSkill=186})}}),
 q(71963,{an="s:389700",providers={{"s",389700}},requireSkill=186,type="hqt",g={
 crit(61382,{achID=18821,awp=100107,id=1,maps=a[303],providers={a[174],a[199]},requireSkill=186})}}),
 q(71966,{an="s:389702",providers={{"s",389702}},requireSkill=186,type="hqt",g={

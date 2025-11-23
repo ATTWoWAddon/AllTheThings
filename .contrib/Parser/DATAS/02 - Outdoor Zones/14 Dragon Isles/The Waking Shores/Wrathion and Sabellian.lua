@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(200207),	-- Petrified Fungal Spores
 					},
 				}),
-				--	n(189289),	-- Penumbrus // under DF/Timed Based Rare
+				-- n(189289),	-- Penumbrus // under DF/Timed Based Rare
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					["questID"] = 74051,

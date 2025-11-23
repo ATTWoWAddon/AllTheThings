@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "o", 381664 },	-- Archivists' Request
 						["coord"] = { 47.6, 83.0, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-						["cost"] = {{ "i", 200143, 1 }},	--1xFenistrasza's Skull
+						["cost"] = {{ "i", 200143, 1 }},	-- 1xFenistrasza's Skull
 						["isWeekly"] = true,
 						["groups"] = {
 							i(200143),	-- Fenistrasza's Skull (QI!)
@@ -449,7 +449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72038, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -784,7 +784,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72048, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
+						-- ["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},

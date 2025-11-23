@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
 							q(83276, {	-- Saving Private Spindle
-								--["sourceQuests"] = {  },
+								-- ["sourceQuests"] = {  },
 								["provider"] = { "n", 207471 },	-- Widow Arak'nai
 								["coord"] = { 55.6, 43.9, AZJ_KAHET },
 								["minReputation"] = { FACTION_THE_WEAVER, 4 },
@@ -786,15 +786,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								}),
 								i(226520, {	-- Queen's Pheromone (CI!) (8.8mil Cost)
 									["description"] = "The item costs 8.8mil Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 8888888}},
+									-- ["cost"] = {{"c", KEJ, 8888888}},
 								}),
 								i(229193, {	-- Queen's Pheromone (CI!) (888k Cost)
 									["description"] = "The item costs 888.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 888888}},
+									-- ["cost"] = {{"c", KEJ, 888888}},
 								}),
 								i(229194, {	-- Queen's Pheromone (CI!) (88k Cost)
 									["description"] = "The item costs 88.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
-								--	["cost"] = {{"c", KEJ, 88888}},
+									-- ["cost"] = {{"c", KEJ, 88888}},
 								}),
 								i(229195, {	-- Queen's Pheromone (CI!) (8.888 Cost)
 									["description"] = "This version for 8.888 Kej is only visible after you reached exalted (9/9) with all three (3) Severed Threads leaders.",
@@ -1151,13 +1151,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(226195, {	-- Resonance Crystal Cluster
 								["cost"] = {{"c", KEJ, 200}},
 								["groups"] = {
-								--	currency(RESONANCE_CRYSTALS),
+									-- currency(RESONANCE_CRYSTALS),
 								},
 							}),
 							i(226198, {	-- Resonance Crystal Agglomeration
 								["cost"] = {{"c", KEJ, 2000}},
 								["groups"] = {
-								--	currency(RESONANCE_CRYSTALS),
+									-- currency(RESONANCE_CRYSTALS),
 								},
 							}),
 							i(226196, {	-- Silk Kej Pouch

@@ -90,7 +90,7 @@ ah(71086,{awp=40200,type="i",g={
 h(-45,{awp=40200,g={
 q(29592,{awp=40200,type="hqt"})}})}})}}),
 m(12,{awp=40003,maps={1464},g={
-m(198,{awp=40003,maps={760},petBattleLvl=22,g={
+m(198,{awp=40003,petBattleLvl=22,g={
 h(-45,{awp=40003,g={
 q(25829,{awp=40003,type="hqt"}),
 q(27872,{awp=40003,type="hqt"}),

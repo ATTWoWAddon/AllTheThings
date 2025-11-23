@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "In a Cave.",
 				["coord"] = { 33.9, 76.9, THALDRASZUS },
 				["questID"] = 70607,
-				["cost"] = { { "i", 199068, 1 }, },	--1xTime-Lost Memo
+				["cost"] = { { "i", 199068, 1 }, },	-- 1xTime-Lost Memo
 			}),
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381107, {	-- Sand Pile
 				["coord"] = { 58.2, 80.1, THALDRASZUS },
 				["questID"] = 70608,
-				["cost"] = { { "i", 199069, 1 }, },	--1xYennu's Map
+				["cost"] = { { "i", 199069, 1 }, },	-- 1xYennu's Map
 			}),
 			n(198604, {	-- Strange Bear Cub
 				["coord"] = { 52.5, 83.6, THALDRASZUS },

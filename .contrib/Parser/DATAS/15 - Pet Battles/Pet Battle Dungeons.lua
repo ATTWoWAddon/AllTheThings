@@ -42,18 +42,18 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					i(174830),	-- Shadowy Disguise (TOY!)
 				}),
 				q(58455, {	-- Shadowy Showdown (A)
+					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
 					["coord"] = { 50.3, 46.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 				}),
 				q(58456, {	-- Shadowy Showdown (H)
+					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
 					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 				}),
 				q(58457, {	-- Shadows of Blackrock
 					["sourceQuests"] = {

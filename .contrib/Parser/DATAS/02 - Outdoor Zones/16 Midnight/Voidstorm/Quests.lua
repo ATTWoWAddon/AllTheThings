@@ -119,8 +119,8 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 					}),
 					q(86528, {	-- A Cracked Holokey
 						["sourceQuests"] = { 86536 },	-- Reliable Enemies
-						["coord"] = { 35.7, 79.2, VOIDSTORM },
 						--["provider"] = { "o", XXXX },	-- Cracked Holokey
+						["coord"] = { 35.7, 79.2, VOIDSTORM },
 					}),
 					q(86537, {	-- Network Insecurity
 						["sourceQuests"] = {
@@ -1144,8 +1144,8 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 			--Delve
 			q(93428, {	-- Delver's Call: Shadowguard Point
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
-				["coord"] = { 37.6, 51.9, VOIDSTORM },
 				--["provider"] = { "o", XXXXX },	-- Shadowguard Point
+				["coord"] = { 37.6, 51.9, VOIDSTORM },
 			}),
 			--Slayer's Rise
 			q(91197, {	-- Collecting Remains

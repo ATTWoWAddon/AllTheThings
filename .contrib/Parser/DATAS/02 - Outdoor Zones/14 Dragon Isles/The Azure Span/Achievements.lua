@@ -72,23 +72,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			ach(16638, {	-- Ley Line in the Span
 				crit(55972, {	-- Azure Archives
-					--["cr"] = 198260,	-- Misaligned Ley Crystal
+					-- ["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 43.8, 61.9, THE_AZURE_SPAN },
 				}),
 				crit(55973, {	-- Ancient Outlook
-					--["cr"] = 198260,	-- Misaligned Ley Crystal
+					-- ["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 26.3, 36.4, THE_AZURE_SPAN },
 				}),
 				crit(55974, {	-- Rustpine Den
-					--["cr"] = 198260,	-- Misaligned Ley Crystal
+					-- ["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 66.2, 51.3, THE_AZURE_SPAN },
 				}),
 				crit(55975, {	-- Ruins of Karnthar
-					--["cr"] = 198260,	-- Misaligned Ley Crystal
+					-- ["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 66.8, 59.6, THE_AZURE_SPAN },
 				}),
 				crit(55976, {	-- Slyvern Plunge
-					--["cr"] = 198260,	-- Misaligned Ley Crystal
+					-- ["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 65.4, 28.4, THE_AZURE_SPAN },
 				}),
 			}),

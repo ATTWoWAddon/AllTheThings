@@ -12,16 +12,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						ach(42560),	-- Explore Antoran Wastes
 						ach(42631),	-- Hidden Treasures: Antoran Wastes
 					})),
-					n(ZONE_REWARDS, {
-						filter(CLOTH, {
-						}),
-						filter(LEATHER, {
-						}),
-						filter(MAIL, {
-						}),
-						filter(PLATE, {
-						}),
-					}),
 				},
 			}),
 		}),

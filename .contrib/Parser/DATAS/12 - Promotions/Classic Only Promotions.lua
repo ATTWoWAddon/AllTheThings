@@ -351,7 +351,29 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			pet(4850, {	-- Sa'bak's Blessed
 				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
 			}),
+			n(TREASURE_OF_AZEROTH, sharedDataSelf({
+				["timeline"] = { ADDED_5_5_2 },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					-- cnONLY(i(, {	-- Titan Reforged Treasure Coin TODO: Its currency to buy all the items
+						-- TODO: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251958.jpg
+						-- cnONLY(i()),	-- Emberbringer
+						cnONLY(i(76755)),	-- Tyrael's Charger
+						cnONLY(i(246264)),	-- Inarius' Charger 
+						cnONLY(i(76889)),	-- Spectral Gryphon 
+						cnONLY(i(76902)),	-- Spectral Wind Rider 
+						cnONLY(i(71726)),	-- Murkablo
+						cnONLY(i(72134)),	-- Gregarious Grell
+						cnONLY(i(72159)),	-- Magical Ogre Idol
+						cnONLY(i(79769)),	-- Demon Hunter's Aspect
+						-- cnONLY(i()),	-- A mysterious exotic item pack for Mists of Pandaria Classic
+						-- cnONLY(i()),	-- 10 Sands of Time (Different game?)
+						-- cnONLY(i()),	-- Shard of Titan Treasure Fragment	
+					-- })),
+				},
+			}));
 		},
-	})
+	}),
 	-- #endif
 }));

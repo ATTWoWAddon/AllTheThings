@@ -7,11 +7,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			o(469858, {	-- Shiny Trash Can
 				-- entire map, basically
 				-- trash items, crystals, valorstones
-				--currency(3226), 	-- Market Research
+				-- currency(3226), 	-- Market Research
 			}),
 			o(469857, {	-- Overflowing Dumpster
 				-- entire map
-				--currency(3226), 	-- Market Research
+				-- currency(3226), 	-- Market Research
 				i(234741),	-- Miscellaneous Mechanica
 			}),
 			--

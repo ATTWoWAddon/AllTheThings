@@ -2,21 +2,6 @@
 fp(3026),	-- Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
 fp(3111),	-- Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC
 11.2.7.63642
-fp(2973),	-- Saltfang Shoals East, Razorwind Shores
-fp(2974),	-- Runetotem's Bounty North, Razorwind Shores
-fp(2975),	-- Runetotem's Bounty South, Razorwind Shores
-fp(2976),	-- The Bluffs, Razorwind Shores
-fp(2978),	-- Cragthorn Highlands, Razorwind Shores
-fp(2979),	-- The Common, Razorwind Shores
-fp(2980),	-- The Bloom, Razorwind Shores
-fp(3072),	-- Entrance Portal, Founder's Point \\ Entrance Portal, Founders Point
-fp(3073),	-- Town Center, Founder's Point \\ The Hub, Founders Point
-fp(3074),	-- Mear's Farm, Founder's Point \\ Mear's Farm, Founders Point
-fp(3075),	-- The Outer Banks, Founder's Point \\ The Outer Banks, Founders Point
-fp(3076),	-- Small Aerie, Founder's Point \\ Small Aerie, Founders Point
-fp(3077),	-- Gilded Oaks, Founder's Point \\ Gilded Oaks, Founders Point
-fp(3078),	-- Brumewood Hollow, Founder's Point \\ Brumewood Hollow, Founders Point
-fp(3079),	-- Stoneveil Ridge, Founder's Point \\ Cliffside, Founders Point
 fp(3175),	-- Quest Path 11142: 11.2.7 Catch Up - TWW - Q2 - Dornegal to Freywold (KRB)
 fp(3176),	-- Quest Path 11144: 11.2.7 Catch Up - TWW - Q2 - Meadery to Coreway (KRB)
 fp(3177),	-- Quest Path 11146: 11.2.7 Catch Up - TWW - Q2 - Coreway to Ringing Deeps (KRB)
@@ -31,10 +16,6 @@ fp(3103),	-- Thalassian University Teleport Top
 fp(3104),	-- Quest Path 10509: 12.0 Z3 - Legends - Shrine 03 - Exit Path - (LWB)
 fp(3105),	-- Quest Path 10517: 12.0 Z3 - Legends - Shrine 04 - Exit Path - (LWB)
 fp(3118),	-- Quest Path 10646: 12.0 Dungeon - Domanaar Arena - Portal 1. Cast - BDP
-fp(3119),	-- The Ingress, Voidstorm
-fp(3120),	-- Locus Point, Voidstorm
-fp(3121),	-- Howling Ridge, Voidstorm
-fp(3123),	-- Master's Perch. Voidstorm \\ Master's Terrace. Voidstorm
 fp(3130),	-- Witherbark Bluffs, Zul'Aman
 fp(3132),	-- The Royal Exchange, Silvermoon City
 fp(3135),	-- 12.0 Z1 - Isle of Quel'Danas - Flightmaster - Gloaming - SJC
@@ -51,4 +32,12 @@ fp(3186),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Base
 fp(3187),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Top
 fp(3188),	-- 12.0 Silvermoon Sunwing Rookery Teleport Main Base
 fp(3189),	-- 12.0 Silvermoon Sunwing Rookery Teleport Main Top
-fp(3190),	-- Silverglade Refuge, Eversong Woods
+12.0.0.64124
+fp(3211),	-- 12.0 Silvermoon Teleport Thalassian University Base
+fp(3212),	-- 12.0 Silvermoon Thalassian University Teleport Top
+12.0.0.64339
+fp(3213),	-- Quest Path 11346: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Up - Force Taxi - SJC
+fp(3214),	-- Quest Path 11347: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Down - Force Taxi - SJC
+12.0.0.64499
+fp(3215),	-- Quest Path 11348: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Up - SJC
+fp(3216),	-- Quest Path 11349: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Down - SJC

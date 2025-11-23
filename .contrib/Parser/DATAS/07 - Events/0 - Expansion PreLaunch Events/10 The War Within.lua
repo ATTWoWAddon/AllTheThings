@@ -179,7 +179,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(BOSSES, {
 			m(EASTERN_KINGDOMS, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -191,7 +191,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(223646),	-- Memory of the Eastern Kingdoms
 			}),
 			m(KALIMDOR, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -203,7 +203,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(223644),	-- Memory of Kalimdor
 			}),
 			m(NORTHREND, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -222,9 +222,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			q(82540, {	-- Memories of Adventures Past
 				["sourceQuests"] = { 82539 },	-- Radiant Echoes
+				-- ["sourceQuests"] = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
 				["provider"] = { "n", 213627 },	-- Archmage Khadgar
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
-				-- ["sourceQuests"] = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
 			}),
 			q(82689, {	-- Only Darkness
 				["provider"] = { "n", 224373 },	-- Echo of the Silver Hand

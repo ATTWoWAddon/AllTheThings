@@ -233,7 +233,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[381] = 118414,	-- Porcupette
 	[382] = 231215,	-- Sun Darter Hatchling
 	[384] = 118419,	-- Otter Pup
-	--[462] = 89472,	-- Jacob the Test Seagull [NYI]
+	-- [462] = 89472,	-- Jacob the Test Seagull [NYI]
 	[629] = 123212,	-- Shore Crawler
 	[630] = 123214,	-- Gilnean Raven
 	[650] = 123778,	-- Terrible Turnip
@@ -367,8 +367,8 @@ local CompanionPetSpeciesIDToSpellID = {
 	[1387] = 155838,	-- Iron Starlette
 	[1395] = 159296,	-- Lil' Leftovers
 	[1396] = 159581,	-- Crazy Carrot
-	--[1401] = 53082,	-- Tyri	[This is a Garrison Fight, not tameable]
-	--[1402] = 149810,	-- Puzzle	[This is a Garrison Fight, not tameable]
+	-- [1401] = 53082,	-- Tyri	[This is a Garrison Fight, not tameable]
+	-- [1402] = 149810,	-- Puzzle	[This is a Garrison Fight, not tameable]
 	[1403] = 160403,	-- Mechanical Axebeak
 	[1410] = 161522,	-- Mechanical Training Dummy
 	[1411] = 161643,	-- Royal Peachick
@@ -456,7 +456,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[1635] = 179841,	-- K'ute
 	[1636] = 179954,	-- Race MiniZep
 	[1639] = 181086,	-- Graves
-	--[1642] = 170272,	-- Salad	[This is a Garrison Fight, not tameable]
+	-- [1642] = 170272,	-- Salad	[This is a Garrison Fight, not tameable]
 	[1655] = 177223,	-- Slithershock Elver
 	[1656] = 177218,	-- Young Talbuk
 	[1660] = 184480,	-- Fel Pup
@@ -1048,18 +1048,30 @@ end
 -----------------
 -- CLASSIC WOW --
 -----------------
-i(198665, 4234);	-- Pebble's Pebble
 i(200060, 4235);	-- Hoplet (Classic)
-i(204982, 4236);	-- Glub
-i(187794, 4233);	-- Flurky
-i(211082, 4329);	-- Arfus (WOTLK)
-i(209877, 4273);	-- Cypress (WOTLK)
-i(209945, 4274);	-- Lil' Wrathion (WOTLK)
-i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
+
 -- #if SEASON_OF_DISCOVERY
 i(220620, 446105);	-- Skeletal Wind Serpent (SOD) [Sunken Temple]
 -- #endif
+
+-- TBC Classic --
+i(204982, 4236);	-- Glub
+i(187794, 4233);	-- Flurky
+
+-- TBC Classic 2026 --
+i(260433, 4962);	-- Starshard Whelpling Collar
+
+-- Wrath Classic --
+i(211082, 4329);	-- Arfus (WOTLK)
+i(209877, 4273);	-- Cypress (WOTLK)
+i(209945, 4274);	-- Lil' Wrathion (WOTLK)
+i(198665, 4234);	-- Pebble's Pebble
+i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
+
+-- Cata Classic --
 i(224002, 4585);	-- Swoopy (Cata)
+
+--- MOP CLASSIC ---
 i(231312, 4685);	-- Timbered Air Snakelet (MOP)
 -- #endif
 
@@ -3237,8 +3249,13 @@ i(169195, 0);		-- Golden Cricket
 -- PATCH 8.2.5 --
 -----------------
 i(172493, 2794);	-- Crimson Skipper
+-- #if AFTER 11.2.5
+i(258419, 2778);	-- Finduin
+i(258418, 2777);	-- Gillvanas
+-- #else
 i(0, 2778);			-- Finduin
 i(0, 2777);			-- Gillvanas
+-- #endif
 i(0, 2795);			-- Jenafur
 i(172016, 2621);	-- Lil' Nefarian
 i(172491, 2792);	-- Papi
@@ -3254,7 +3271,11 @@ i(174476, 2848);	-- Aqir Tunneler
 i(174474, 2846);	-- Corrupted Tentacle
 i(174481, 2850);	-- Cursed Dune Watcher
 i(174457, 2838);	-- C'Thuffer
+-- #if AFTER 11.2.5
+i(258414, 2623);	-- Dottie
+-- #else
 i(0, 2623);			-- Dottie
+-- #endif
 i(174449, 2835);	-- Ra'kim
 i(174828, 2868);	-- Experiment 13
 i(174452, 2836);	-- Eye of Corruption
@@ -3410,7 +3431,11 @@ i(181171, 2947);	-- Luminous Webspinner
 i(183191, 3029);	-- Maw Crawler
 i(183194, 3033);	-- Maw Stalker
 i(181269, 2959);	-- Micromancer
+-- #if AFTER 11.2.5
+i(258429, 3053);	-- Moon-Touched Netherwhelp
+-- #else
 i(0, 3053);			-- Moon-Touched Netherwhelp
+-- #endif
 i(181282, 2963);	-- Mu'dud
 i(181164, 2944);	-- Oonar's Arm
 i(180628, 2923);	-- Pearlwing Heron
@@ -3673,7 +3698,11 @@ n(185475, 3246);	-- Tezpet
 -----------------
 -- PATCH 9.2.5 --
 -----------------
+-- #if AFTER 11.2.5
+i(258432, 3177);	-- Drakks
+-- #else
 i(0, 3177);			-- Drakks
+-- #endif
 i(190586, 3249);	-- Lil' Ursoc
 i(0, 3175);			-- Murkastrasza
 
@@ -4008,11 +4037,19 @@ i(0, 4237);			-- Treanthony
 i(211271, 3491);	-- Arfus
 i(205024, 3523);	-- Cheddar
 i(205010, 3516);	-- Crimson Swoglet
+-- #if AFTER 11.2.5
+i(258481, 3236);	-- Gnomelia Gearheart
+-- #else
 i(0, 3236);			-- Gnomelia Gearheart
+-- #endif
 i(208543, 4265);	-- Lil' Frostwing
 i(208850, 4267);	-- Lil' Maggz
 i(208751, 4266);	-- Squally
+-- #if AFTER 11.2.5
+i(258482, 3579);	-- Ysergle The Dreamurk
+-- #else
 i(0, 3579);			-- Ysergle The Dreamurk
+-- #endif
 
 ------------------
 -- PATCH 10.2.0 --
@@ -4074,7 +4111,11 @@ i(206174, 3582);	-- Blub
 -- #if BEFORE 11.0.7
 i(0, 4426);			-- Bubbles
 -- #endif
+-- #if AFTER 11.2.5
+i(258483, 4437);	-- Fathom
+-- #else
 i(0, 4437);			-- Fathom
+-- #endif
 -- #if BEFORE 11.0.7
 i(0, 4425);			-- Glamrok
 i(0, 4435);			-- Happy
@@ -4361,9 +4402,9 @@ i(231628, 4676);	-- Bawkinator 2000
 i(231627, 4677);	-- Black Cave Crab
 i(0, 4671);	-- Cauldrone
 i(231760, 4673);	-- Crunchy
-i(231762, 4674);	-- Dosh
+i(0, 4674);	-- Dosh
 i(231758, 4672);	-- Finnity
-i(231763, 4675);	-- FO-MO Mark II
+i(0, 4675);	-- FO-MO Mark II
 i(235909, 4755);	-- Gleam
 i(232854, 4634);	-- Grinner
 i(0, 4670);	-- Hermes
@@ -4435,7 +4476,6 @@ i(244914, 4833);	-- Xanthous Siphonmite
 i(246694, 4859);	-- Zo'ya
 --- UNSORTED ---
 i(0, 4824);	-- Baby Karesh Fox - Orange
-i(257518, 4908);	-- Lil' Ashlee
 
 i(246723, 4860);	-- Unfazed Diver
 i(0, 4837);	-- Worm, Cosmic - Critter (Red)
@@ -4445,9 +4485,11 @@ i(0, 4837);	-- Worm, Cosmic - Critter (Red)
 ------------------
 i(246339, 4854);	-- Duskytooth Fel Snooter
 i(252301, 4901);	-- Fledgeling Warden's Companion
+i(257518, 4908);	-- Lil' Ashlee
 i(239705, 4802);	-- Morsel
 i(246342, 4855);	-- Mustyfur Fel Snooter
 i(129108, 1751);	-- Son of Goredome
+i(253699, 4903);	-- Starshard Whelpling
 i(239699, 4801);	-- Tidbit
 
 --- UNSORTED ---
@@ -4476,11 +4518,14 @@ i(250148, 4879);	-- Blistercreepling
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
 i(250139, 4878);	-- Ebon Snapling
+i(246628, 4508);	-- Emerald Sporbit
 i(250146, 4885);	-- Gloom Toad
 i(250137, 4876);	-- Mud Potadpole
 i(250145, 4884);	-- Pangolil
+i(244911, 4830);	-- Rhay'Dahr
 i(251005, 4892);	-- Riftblade Familiar
 i(250136, 4875);	-- Rootling Nester
+i(232856, 4633);	-- Scruff
 i(250147, 4886);	-- Silkcrawler
 i(258660, 4912);	-- Silvermoon Broom
 i(250140, 4880);	-- Swamp Biter
@@ -4504,7 +4549,6 @@ i(258189, 4910);	-- Do, child of Fi'lo
 i(259224, 4928);	-- Dragonhawk Munchkin
 i(0, 4887);	-- Dundun
 i(264654, 4977);	-- Emberwing Hatchling
-i(246628, 4508);	-- Emerald Sporbit
 i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
 i(244339, 4816);	-- Hawkstrider Hatchling
@@ -4526,12 +4570,10 @@ i(260730, 4948);	-- Perturbed Sporebat
 i(262763, 4964);	-- Plump Mandrake
 i(260922, 4950);	-- Preyseeker's Immature Behemoth
 i(265609, 4985);	-- Princess Bloodshed
-i(250141, 4881);	-- Purple Swamp Leech
+i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
-i(244911, 4830);	-- Rhay'Dahr
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
-i(232856, 4633);	-- Scruff
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(251004, 3364);	-- Striped Snakebiter

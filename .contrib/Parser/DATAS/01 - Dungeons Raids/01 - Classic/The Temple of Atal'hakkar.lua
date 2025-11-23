@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					n(QUESTS, {
 						q(82112, {	-- A Better Ingredient
-							--["sourceQuest"] = 9051,	-- Toxic Test
+							-- ["sourceQuest"] = 9051,	-- Toxic Test
 							["qg"] = 9619,	-- Torwa Pathfinder
 							["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 							["classes"] = { DRUID },
@@ -882,7 +882,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82111, {	-- Blood of Morphaz
-							--["sourceQuest"] = 8256,	-- The Ichor of Undeath
+							-- ["sourceQuest"] = 8256,	-- The Ichor of Undeath
 							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { PRIEST },
@@ -904,7 +904,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82113, {	-- Da Voodoo
-							--["sourceQuest"] = 8412,	-- Spirit Totem
+							-- ["sourceQuest"] = 8412,	-- Spirit Totem
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 							-- #if BEFORE TBC
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82114, {	-- Destroy Morphaz
-							--["sourceQuest"] = 8252,	-- The Siren's Coral
+							-- ["sourceQuest"] = 8252,	-- The Siren's Coral
 							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["classes"] = { MAGE },
@@ -969,7 +969,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82106, {	-- Forging the Mightstone
-							--["sourceQuest"] = 8416,	-- Inert Scourgestones
+							-- ["sourceQuest"] = 8416,	-- Inert Scourgestones
 							["qg"] = 10838,	-- Commander Ashlam Valorfist
 							["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 							["classes"] = { PALADIN },
@@ -1099,7 +1099,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82110, {	-- The Azure Key
-							--["sourceQuest"] = 8235,	-- Encoded Fragments
+							-- ["sourceQuest"] = 8235,	-- Encoded Fragments
 							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -1167,7 +1167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82108, {	-- The Green Drake
-							--["sourceQuest"] = 8231,	-- Wavethrashing
+							-- ["sourceQuest"] = 8231,	-- Wavethrashing
 							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { HUNTER },
@@ -1214,7 +1214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82115, {	-- Trolls of a Feather
-							--["sourceQuest"] = 8421,	-- The Wrong Stuff
+							-- ["sourceQuest"] = 8421,	-- The Wrong Stuff
 							["qg"] = 14470,	-- Impsy <Niby's Minion>
 							["coord"] = { 41.6, 45.0, FELWOOD },
 							["classes"] = { WARLOCK },
@@ -1241,7 +1241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82107, {	-- Voodoo Feathers
-							--["sourceQuest"] = 8424,	-- War on the Shadowsworn
+							-- ["sourceQuest"] = 8424,	-- War on the Shadowsworn
 							["qg"] = 7572,	-- Fallen Hero of the Horde
 							["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 							["classes"] = { WARRIOR },

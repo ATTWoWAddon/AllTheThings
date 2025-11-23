@@ -10,7 +10,7 @@ root(ROOTS.NeverImplemented, {
 	filter(COSMETIC),													-- Not Completed and Not Sorted
 	n(MOUNT_MODS, {["timeline"] = {CREATED_10_0_0}}),					-- Completed up to 10.2.5
 	explorationHeader({}),												-- Will be done when Blizzard fixes in-game exploration API
-	--n(FACTIONS),														-- Completed up to 10.2.5
+	-- n(FACTIONS),														-- Completed up to 10.2.5
 	n(FLIGHT_PATHS),													-- Completed up to 10.2.5
 	n(FOLLOWERS, {["timeline"] = {CREATED_6_0_2}}),						-- Completed up to 10.2.5
 	n(HEIRLOOMS, {["timeline"] = {CREATED_4_0_1}}),						-- Not Completed and Not Sorted
@@ -39,10 +39,10 @@ root(ROOTS.NeverImplemented, {
 		prof(PROTOFORM_SYNTHESIS, {["timeline"] = {CREATED_9_2_0}}),	-- Completed up to 10.2.5
 		prof(SKINNING),													-- Not Completed and Not Sorted
 		prof(SOUL_CYPHERING, {["timeline"] = {CREATED_9_0_1}}),			-- Completed up to 10.2.5
-		--prof(STYGIA_CRAFTING, {["timeline"] = {CREATED_9_0_5}}),		-- Completed up to 10.2.5
+		-- prof(STYGIA_CRAFTING, {["timeline"] = {CREATED_9_0_5}}),		-- Completed up to 10.2.5
 		prof(SUPPLY_SHIPMENTS, {["timeline"] = {CREATED_10_2_0}}),		-- Completed up to 10.2.5
 		prof(TAILORING),												-- Not Completed and Not Sorted
-		--prof(TUSKARR_FISHING_GEAR, {["timeline"] = {CREATED_10_0_0}}),-- Completed up to 10.2.5
+		-- prof(TUSKARR_FISHING_GEAR, {["timeline"] = {CREATED_10_0_0}}),-- Completed up to 10.2.5
 	}),
 	filter(QUEST_ITEMS),												-- Not Completed and Not Sorted
 	n(QUESTS),															-- Not Completed and Not Sorted

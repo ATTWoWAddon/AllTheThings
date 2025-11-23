@@ -185,14 +185,14 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 			["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy. Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",
 			["sourceQuests"] = { 52916 },
 			["provider"] = { "n", 138578 },	-- Grimmy
-			--["coord"] = { 85.3, 73.6, ARATHI_HIGHLANDS },	-- Grimmy Dialogue
+			-- ["coord"] = { 85.3, 73.6, ARATHI_HIGHLANDS },	-- Grimmy Dialogue
 		}),
 		o(294314, {	-- Grimmy's List of Enemies
 			["model"] = 305391,
 			["questID"] = 52918,
 			["sourceQuests"] = { 52917 },
 			["description"] = "After selecting the Grimmy dialogue, a note appears on his bedstand. Click it. Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following NPCs with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
-			--["coord"] = { 85.2, 73.7, ARATHI_HIGHLANDS },	-- Grimmy's List of Enemies
+			-- ["coord"] = { 85.2, 73.7, ARATHI_HIGHLANDS },	-- Grimmy's List of Enemies
 		}),
 		n(47121, {	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 			["questID"] = 52822,
@@ -230,7 +230,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 			["questID"] = 52920,
 			["sourceQuests"] = { 52919 },
 			["description"] = "After selecting Grimmy's dialogue, a new note appears by the fireplace. Click it. Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
-			--["coord"] = { 85.3, 74.0, ARATHI_HIGHLANDS },	-- Grimmy's Favorite Recipe
+			-- ["coord"] = { 85.3, 74.0, ARATHI_HIGHLANDS },	-- Grimmy's Favorite Recipe
 		}),
 		o(294335, {	-- Rotten Potato
 			["model"] = 2020463,

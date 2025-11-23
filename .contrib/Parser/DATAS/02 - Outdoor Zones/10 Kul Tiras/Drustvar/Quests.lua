@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50911, {	-- One Man Against the Horde
-				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+					-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				-- Not required for "Drust Do It."
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50929, {	-- Powder to the People
-				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+					-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				-- Not required for "Drust Do It."
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50912, {	-- Remix to Ignition
-			--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
+				-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				["provider"] = {"o",284426},	-- Buried Mining Machine
 				["coord"] = { 34.7, 40.0, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
@@ -1222,8 +1222,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175323),	-- Waycrest Militia Spaulders (no azerite version)
 				},
 			}),
---							51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
---							51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
+					-- 51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
+					-- 51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
 			q(50960, {	-- Sweete's Orders
 				["provider"] = { "o", 286016 },	-- Ship's Log
 				["coord"] = { 27.4, 11.6, DRUSTVAR },

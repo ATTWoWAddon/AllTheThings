@@ -204,9 +204,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
-					["coord"] = { 22.4, 38.7, 635 },
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { MAGE },
 					["lvl"] = 110,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(46730, {	-- Armies of Legionfall
 					["sourceQuests"] = { 45727 },	-- Uniting the Isles
@@ -238,8 +242,12 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
-					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { ROGUE },
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
@@ -407,6 +415,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 41, 26.2, LEGION_DALARAN },
 				}),
 				q(45125, {	-- Dabbling in the Demonic
+					["description"] = "To stabilize the portal, activate following runes: Dregla, Taam, and Talar.",
 					["sourceQuests"] = { 45916 },	-- The Acolyte Imperiled
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 					["coord"] = { 57.9, 72.6, 629 },
@@ -450,6 +459,7 @@ root(ROOTS.Zones, {
 						{ 28.5, 48.4, LEGION_DALARAN },
 					},
 					["classes"] = { WARLOCK },
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -516,8 +526,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { SHAMAN },	-- Shaman
 					["lvl"] = 110,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(43473, {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
@@ -728,7 +743,10 @@ root(ROOTS.Zones, {
 						90418,	-- Archmage Modera
 						115465,	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
+					["coords"] = {
+						{ 23.4, 39.6, LEGION_DALARAN },
+						{ 28.5, 48.9, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 				}),
 				q(46078, {	-- Holy: The Bradensbrook Investigation
@@ -976,7 +994,10 @@ root(ROOTS.Zones, {
 						90431,	-- Archmage Ansirem Runeweaver
 						115466,	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
+					["coords"] = {
+						{ 22.8, 40.2, LEGION_DALARAN },
+						{ 28.5, 49.5, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
@@ -1033,8 +1054,13 @@ root(ROOTS.Zones, {
 						90417,	-- Archmage Khadgar
 						115464,	-- Archmage Khadgar
 					},
+					["coords"] = {
+						{ 22.6, 39.2, LEGION_DALARAN },
+						{ 28.8, 48.6, LEGION_DALARAN },
+					},
 					["classes"] = { PALADIN },
 					["lvl"] = 110,
+					["groups"] = { i(144457) },	-- Scrolls of the Faldrottin (QI!)
 				}),
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
@@ -1060,47 +1086,47 @@ root(ROOTS.Zones, {
 					["isBreadcrumb"] = true,
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43895, {	-- Sealing Fate: Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
@@ -1249,7 +1275,10 @@ root(ROOTS.Zones, {
 				q(45188, {	-- The Wisdom of the Council
 					["sourceQuests"] = { 45187 },	-- Secrets in the Underbelly
 					["provider"] = { "n", 116308 },	-- Karam Magespear
-					["coord"] = { 49.6, 39.4, LEGION_DALARAN },
+					["coords"] = {
+						{ 49.6, 39.4, LEGION_DALARAN },
+						{ 60.7, 45.4, LEGION_THE_UNDERBELLY },
+					},
 					["classes"] = {
 						DRUID,		-- Balance
 						HUNTER,		-- Marksmanship
@@ -1382,7 +1411,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["maps"] = { 888 },	-- Hall of Communion
 					["lvl"] = 110,
-				--	unsure if there are prerequisites for this quest.
+					-- unsure if there are prerequisites for this quest.
 				}),
 				q(46206, {	-- Whispers of a Frightened World
 					["u"] = REMOVED_FROM_GAME,	-- version that used to be automatically given?

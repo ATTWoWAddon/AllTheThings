@@ -700,7 +700,7 @@ namespace ATT
                         }
 
                         // for undefined parser-only fields, just use the base Object merge implementation for the Item
-                        if (field.StartsWith("_"))
+                        if (field[0] == '_')
                         {
                             Objects.Merge(item, field, value);
                             return;

@@ -1945,6 +1945,7 @@ s(275572)/i(92507),	-- Art Template Plate Legs - Plate_RaidPaladin_M_01 - White
 s(275573)/i(92508),	-- Art Template Plate Shoulder - Plate_RaidPaladin_M_01 - White
 s(275574)/i(92509),	-- Art Template Plate Wrist - Plate_RaidPaladin_M_01 - White
 s(275575)/i(92518),	-- Monster - Mace2H, Blood Elf A02 Silver
+s(275596)/i(92726),	-- i's Gloves \\ Bipsi's Gloves
 s(275597)/i(92738),	-- ri Hat \\ Safari Hat
 s(275598)/i(92762),	-- Monster - Mace 1h, Icecrown Citadel
 s(275599)/i(92777),	-- Art Template Generic Head - Helm_Misc_ConePartyHat_A_01
@@ -1963,7 +1964,6 @@ s(275679)/i(92892),	-- Art Template Generic Head - Helm_Misc_FishPartyHat_A_01
 s(275680)/i(92893),	-- Art Template Generic Head - Helm_Misc_SquidPartyHat_A_01
 s(275681)/i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 s(275682)/i(92895),	-- Art Template Generic Head - Helm_Misc_VikingPartyHat_A_01
-s(275683)/i(92948),	-- ler's Razor Claws \\ Brawler's Razor Claws
 s(275684)/i(92961),	-- Monster - Staff_2H_Hozumonkeyking_01
 s(275804)/i(93150),	-- Art Template Leather Belt Leather_PVPRogue_F_01 - Alliance
 s(275805)/i(93151),	-- Art Template Leather Boot Leather_PVPRogue_F_01 - Alliance
@@ -2149,7 +2149,6 @@ s(276239)/i(93837),	-- Art Template Plate Head - Plate_PVPWarrior_F_01 - Bronze
 s(276240)/i(93838),	-- Art Template Plate Legs - Plate_PVPWarrior_F_01 - Bronze
 s(276241)/i(93839),	-- Art Template Plate Shoulder - Plate_PVPWarrior_F_01 - Bronze
 s(276242)/i(93840),	-- Art Template Plate Wrist - Plate_PVPWarrior_F_01 - Bronze
-s(276259)/i(93858),	-- ler's Bladed Claws \\ Brawler's Bladed Claws
 s(276269)/i(93868),	-- Art Template Plate Belt - Plate_PVPWarrior_F_01 - Gold
 s(276270)/i(93869),	-- Art Template Plate Boot - Plate_PVPWarrior_F_01 - Gold
 s(276271)/i(93870),	-- Art Template Plate Chest - Plate_PVPWarrior_F_01 - Gold
@@ -3672,3 +3671,185 @@ s(287331)/i(238047),	-- Stormstout's Sha-Touched Shoulders \\ Stormstout's Sha-W
 s(287332)/i(238048),	-- Stormstout's Sha-Touched Gloves \\ Stormstout's Sha-Warped Gloves
 5.5.0.62655
 s(298467)/i(110427),	-- ri Hat \\ Safari Hat
+5.5.3.64141
+s(303646)/i(265142),	-- Crimson Girdle of the Lich Lord
+s(303647)/i(265143),	-- Crimson Treads of the Lich Lord
+s(303648)/i(265144),	-- Crimson Chestguard of the Lich Lord
+s(303649)/i(265145),	-- Crimson Grasps of the Lich Lord
+s(303650)/i(265146),	-- Crimson Crown of the Lich Lord
+s(303651)/i(265147),	-- Crimson Legplates of the Lich Lord
+s(303652)/i(265148),	-- Crimson Shoulderguards of the Lich Lord
+s(303653)/i(265149),	-- Crimson Bracers of the Lich Lord
+s(303654)/i(265150),	-- Crimson Waistguard of the Cycle
+s(303655)/i(265151),	-- Crimson Sandals of the Cycle
+s(303656)/i(265152),	-- Crimson Gloves of the Cycle
+s(303657)/i(265153),	-- Crimson Hood of the Cycle
+s(303658)/i(265154),	-- Crimson Leggings of the Cycle
+s(303659)/i(265155),	-- Crimson Robes of the Cycle
+s(303660)/i(265156),	-- Crimson Branches of the Cycle
+s(303661)/i(265157),	-- Crimson Bracers of the Cycle
+s(303662)/i(265158),	-- Obsidian Cinch of the Howling Beast
+s(303663)/i(265159),	-- Obsidian Boots of the Howling Beast
+s(303664)/i(265160),	-- Obsidian Chestguard of the Howling Beast
+s(303665)/i(265161),	-- Obsidian Grips of the Howling Beast
+s(303666)/i(265162),	-- Obsidian Helm of the Howling Beast
+s(303667)/i(265163),	-- Obsidian Legguards of the Howling Beast
+s(303668)/i(265164),	-- Obsidian Shoulderguards of the Howling Beast
+s(303669)/i(265165),	-- Obsidian Wristwraps of the Howling Beast
+s(303670)/i(265166),	-- Obsidian Robes of the Light
+s(303671)/i(265167),	-- Obsidian Leggings of the Light
+s(303672)/i(265168),	-- Obsidian Cowl of the Light
+s(303673)/i(265169),	-- Obsidian Hands of the Light
+s(303674)/i(265170),	-- Obsidian Steps of the Light
+s(303675)/i(265171),	-- Obsidian Cord of the Light
+s(303676)/i(265172),	-- Obsidian Pauldrons of the Light
+s(303677)/i(265173),	-- Obsidian Bracers of the Light
+s(303678)/i(265174),	-- Obsidian Robes of the Elemental Triad
+s(303679)/i(265175),	-- Obsidian Girdle of the Elemental Triad
+s(303680)/i(265176),	-- Obsidian Boots of the Elemental Triad
+s(303681)/i(265177),	-- Obsidian Gloves of the Elemental Triad
+s(303682)/i(265178),	-- Obsidian Hood of the Elemental Triad
+s(303683)/i(265179),	-- Obsidian Leggings of the Elemental Triad
+s(303684)/i(265180),	-- Obsidian Spaulders of the Elemental Triad
+s(303685)/i(265181),	-- Obsidian Bracers of the Elemental Triad
+s(303686)/i(265182),	-- Azure Chestwrap of the Regal Lord
+s(303687)/i(265183),	-- Azure Greatbelt of the Regal Lord
+s(303688)/i(265184),	-- Azure Treads of the Regal Lord
+s(303689)/i(265185),	-- Azure Handwraps of the Regal Lord
+s(303690)/i(265186),	-- Azure Crown of the Regal Lord
+s(303691)/i(265187),	-- Azure Legwraps of the Regal Lord
+s(303692)/i(265188),	-- Azure Shoulderguards of the Regal Lord
+s(303693)/i(265189),	-- Azure Bracers of the Regal Lord
+s(303694)/i(265190),	-- Crimson Chestplate of the Holy Warrior
+s(303695)/i(265191),	-- Crimson Greatboots of the Holy Warrior
+s(303696)/i(265192),	-- Crimson Gauntlets of the Holy Warrior
+s(303697)/i(265193),	-- Crimson Greathelm of the Holy Warrior
+s(303698)/i(265194),	-- Crimson Legplates of the Holy Warrior
+s(303699)/i(265195),	-- Crimson Girdle of the Holy Warrior
+s(303700)/i(265196),	-- Crimson Shoulderplate of the Holy Warrior
+s(303701)/i(265197),	-- Crimson Wristguards of the Holy Warrior
+s(303702)/i(265198),	-- Obsidian Shadowwrap of the Silent Assassin
+s(303703)/i(265199),	-- Obsidian Girdle of the Silent Assassin
+s(303704)/i(265200),	-- Obsidian Tabi of the Silent Assassin
+s(303705)/i(265201),	-- Obsidian Gloves of the Silent Assassin
+s(303706)/i(265202),	-- Obsidian Hood of the Silent Assassin
+s(303707)/i(265203),	-- Obsidian Leggings of the Silent Assassin
+s(303708)/i(265204),	-- Obsidian Spaulders of the Silent Assassin
+s(303709)/i(265205),	-- Obsidian Bracers of the Silent Assassin
+s(303710)/i(265206),	-- Azure Windfury Harness
+s(303711)/i(265207),	-- Azure Windfury Belt
+s(303712)/i(265208),	-- Azure Windfury Sandals
+s(303713)/i(265209),	-- Azure Windfury Crushers
+s(303714)/i(265210),	-- Azure Windfury Mask
+s(303715)/i(265211),	-- Azure Windfury Legguards
+s(303716)/i(265212),	-- Azure Windfury Spirit Guides
+s(303717)/i(265213),	-- Azure Windfury Bracers
+s(303718)/i(265214),	-- Crimson Robes of the Betrayer
+s(303719)/i(265215),	-- Crimson Belt of the Betrayer
+s(303720)/i(265216),	-- Crimson Boots of the Betrayer
+s(303721)/i(265217),	-- Crimson Handguards of the Betrayer
+s(303722)/i(265218),	-- Crimson Horns of the Betrayer
+s(303723)/i(265219),	-- Crimson Leggings of the Betrayer
+s(303724)/i(265220),	-- Crimson Amice of the Betrayer
+s(303725)/i(265221),	-- Crimson Bracers of the Betrayer
+s(303726)/i(265222),	-- Crimson Girdle of the Golden King
+s(303727)/i(265223),	-- Crimson Greatboots of the Golden King
+s(303728)/i(265224),	-- Crimson Chestplate of the Golden King
+s(303729)/i(265225),	-- Crimson Reach of the Golden King
+s(303730)/i(265226),	-- Crimson Crown of the Golden King
+s(303731)/i(265227),	-- Crimson Greaves of the Golden King
+s(303732)/i(265228),	-- Crimson Mantle of the Golden King
+s(303733)/i(265229),	-- Crimson Bracers of the Golden King
+s(303734)/i(265231),	-- Emerald Girdle of the Lich Lord
+s(303735)/i(265232),	-- Emerald Treads of the Lich Lord
+s(303736)/i(265234),	-- Emerald Chestguard of the Lich Lord
+s(303737)/i(265235),	-- Emerald Grasps of the Lich Lord
+s(303738)/i(265236),	-- Emerald Crown of the Lich Lord
+s(303739)/i(265237),	-- Emerald Legplates of the Lich Lord
+s(303740)/i(265238),	-- Emerald Shoulderguards of the Lich Lord
+s(303741)/i(265239),	-- Emerald Bracers of the Lich Lord
+s(303742)/i(265240),	-- Azure Waistguard of the Cycle
+s(303743)/i(265242),	-- Azure Sandals of the Cycle
+s(303744)/i(265243),	-- Azure Gloves of the Cycle
+s(303745)/i(265244),	-- Azure Hood of the Cycle
+s(303746)/i(265245),	-- Azure Leggings of the Cycle
+s(303747)/i(265246),	-- Azure Robes of the Cycle
+s(303748)/i(265247),	-- Azure Branches of the Cycle
+s(303749)/i(265248),	-- Azure Bracers of the Cycle
+s(303750)/i(265249),	-- Ivory Cinch of the Howling Beast
+s(303751)/i(265250),	-- Ivory Boots of the Howling Beast
+s(303752)/i(265251),	-- Ivory Chestguard of the Howling Beast
+s(303753)/i(265252),	-- Ivory Grips of the Howling Beast
+s(303754)/i(265253),	-- Ivory Helm of the Howling Beast
+s(303755)/i(265254),	-- Ivory Wristwraps of the Howling Beast
+s(303756)/i(265255),	-- Ivory Legguards of the Howling Beast
+s(303757)/i(265256),	-- Ivory Shoulderguards of the Howling Beast
+s(303758)/i(265258),	-- Emerald Greatbelt of the Regal Lord
+s(303759)/i(265260),	-- Emerald Treads of the Regal Lord
+s(303760)/i(265261),	-- Emerald Chestwrap of the Regal Lord
+s(303761)/i(265262),	-- Emerald Handwraps of the Regal Lord
+s(303762)/i(265263),	-- Emerald Crown of the Regal Lord
+s(303763)/i(265264),	-- Emerald Legwraps of the Regal Lord
+s(303764)/i(265265),	-- Emerald Shoulderguards of the Regal Lord
+s(303765)/i(265266),	-- Emerald Bracers of the Regal Lord
+s(303766)/i(265267),	-- Golden Cord of the Light
+s(303767)/i(265268),	-- Golden Steps of the Light
+s(303768)/i(265269),	-- Golden Hands of the Light
+s(303769)/i(265270),	-- Golden Cowl of the Light
+s(303770)/i(265271),	-- Golden Leggings of the Light
+s(303771)/i(265272),	-- Golden Robes of the Light
+s(303772)/i(265273),	-- Golden Pauldrons of the Light
+s(303773)/i(265274),	-- Golden Bracers of the Light
+s(303774)/i(265276),	-- Platinum Girdle of the Silent Assassin
+s(303775)/i(265278),	-- Platinum Tabi of the Silent Assassin
+s(303776)/i(265279),	-- Platinum Gloves of the Silent Assassin
+s(303777)/i(265280),	-- Platinum Shadowwrap of the Silent Assassin
+s(303778)/i(265281),	-- Platinum Hood of the Silent Assassin
+s(303779)/i(265282),	-- Platinum Leggings of the Silent Assassin
+s(303780)/i(265283),	-- Platinum Spaulders of the Silent Assassin
+s(303781)/i(265284),	-- Platinum Bracers of the Silent Assassin
+s(303782)/i(265285),	-- Emerald Windfury Belt
+s(303783)/i(265287),	-- Emerald Windfury Sandals
+s(303784)/i(265288),	-- Emerald Windfury Harness
+s(303785)/i(265289),	-- Emerald Windfury Crushers
+s(303786)/i(265290),	-- Emerald Windfury Mask
+s(303787)/i(265291),	-- Emerald Windfury Legguards
+s(303788)/i(265292),	-- Emerald Windfury Spirit Guides
+s(303789)/i(265293),	-- Emerald Windfury Bracers
+s(303790)/i(265294),	-- Twilight Belt of the Betrayer
+s(303791)/i(265296),	-- Twilight Boots of the Betrayer
+s(303792)/i(265297),	-- Twilight Handguards of the Betrayer
+s(303793)/i(265298),	-- Twilight Horns of the Betrayer
+s(303794)/i(265299),	-- Twilight Leggings of the Betrayer
+s(303795)/i(265300),	-- Twilight Robes of the Betrayer
+s(303796)/i(265301),	-- Twilight Amice of the Betrayer
+s(303797)/i(265302),	-- Twilight Bracers of the Betrayer
+s(303798)/i(265303),	-- Ivory Girdle of the Elemental Triad
+s(303799)/i(265304),	-- Ivory Boots of the Elemental Triad
+s(303800)/i(265306),	-- Ivory Gloves of the Elemental Triad
+s(303801)/i(265307),	-- Ivory Hood of the Elemental Triad
+s(303802)/i(265308),	-- Ivory Bracers of the Elemental Triad
+s(303803)/i(265309),	-- Ivory Leggings of the Elemental Triad
+s(303804)/i(265310),	-- Ivory Robes of the Elemental Triad
+s(303805)/i(265311),	-- Ivory Spaulders of the Elemental Triad
+s(303806)/i(265312),	-- Golden Greatboots of the Holy Warrior
+s(303807)/i(265313),	-- Golden Chestplate of the Holy Warrior
+s(303808)/i(265314),	-- Golden Gauntlets of the Holy Warrior
+s(303809)/i(265315),	-- Golden Greathelm of the Holy Warrior
+s(303810)/i(265317),	-- Golden Legplates of the Holy Warrior
+s(303811)/i(265318),	-- Golden Girdle of the Holy Warrior
+s(303812)/i(265319),	-- Golden Wristguards of the Holy Warrior
+s(303813)/i(265320),	-- Golden Shoulderplate of the Holy Warrior
+s(303814)/i(265321),	-- Azure Chestplate of the Golden King
+s(303815)/i(265323),	-- Azure Girdle of the Golden King
+s(303816)/i(265324),	-- Azure Greatboots of the Golden King
+s(303817)/i(265325),	-- Azure Reach of the Golden King
+s(303818)/i(265326),	-- Azure Crown of the Golden King
+s(303819)/i(265327),	-- Azure Greaves of the Golden King
+s(303820)/i(265328),	-- Azure Mantle of the Golden King
+s(303821)/i(265329),	-- Azure Bracers of the Golden King
+5.5.3.64308
+s(303977)/i(265774),	-- Platinum Boots of Expeditious Retreat
+s(303980)/i(265783),	-- Tabard of Fury
+s(303981)/i(265784),	-- Tabard of Brilliance
+s(303982)/i(265785),	-- Tabard of the Void

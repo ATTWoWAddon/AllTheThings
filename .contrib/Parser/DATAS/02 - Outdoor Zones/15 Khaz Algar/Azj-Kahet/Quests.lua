@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 					["provider"] = { "n", 217386 },	-- Anduin Wrynn
 					["coord"] = { 55.3, 46.1, NERUBAR },
-					--["maps"] = { xx },	-- I expect there separate mapID for scenario but currently it is same (2213)
+					-- ["maps"] = { xx },	-- I expect there separate mapID for scenario but currently it is same (2213)
 					["groups"] = {
 						i(225561),	-- Queensfang Choker
 						i(225562),	-- Swarm-Maven's Amulet
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						81964,	-- The Blacksmith's Fate
 					},
 					["provider"] = { "n", 221980 },	-- Faerin Lothar
-					--["coord"] = { x, y, },	-- Faerin and Monte are following the player
+					-- ["coord"] = { x, y, },	-- Faerin and Monte are following the player
 				}),
 				q(82268, {	-- The Sorrowful Journey Home
 					["sourceQuests"] = { 81969 },	-- An End to the End
@@ -1090,7 +1090,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			------ Miscellaneous ------
 			q(84664, {	-- Making the Underworld Go Round
-				--["sourceQuests"] = { ? },	-- ?
+				-- ["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 223754 },	-- Linny Leadlinger
 				["coord"] = { 55.8, 43.7, AZJ_KAHET },
 				["groups"] = {
@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- Raid Campaign Intro --
 			q(83587, {	-- Our Chance to Strike
-				--["sourceQuests"] = { ? },	-- ?
+				-- ["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 227217 },	-- Webster
 				["coords"] = {
 					{ 31.6, 63.2, DORNOGAL },

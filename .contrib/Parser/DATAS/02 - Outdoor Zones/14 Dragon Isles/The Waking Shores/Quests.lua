@@ -20,8 +20,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(67700, {	-- To The Dragon Isles! [A]
 					["sourceQuests"] = {
-						66596,	--  Whispers in the Winds [A]
-						70197,	--	The Call of the Isles [A]
+						66596,	-- Whispers in the Winds [A]
+						70197,	-- The Call of the Isles [A]
 					},
 					["provider"] = { "n", 189077 },	-- Toddy Whiskers
 					["coord"] = { 22.7, 55.6, STORMWIND_CITY },
@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 				}),
 				q(66436, {	-- Unearthed Troublemakers
-					--["sourceQuests"] = {  },	-- Unknown
+					-- ["sourceQuests"] = {  },	-- Unknown
 					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 					["groups"] = {

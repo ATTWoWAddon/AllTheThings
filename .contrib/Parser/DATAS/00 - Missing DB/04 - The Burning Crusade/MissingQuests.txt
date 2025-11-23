@@ -104,3 +104,6 @@ q(65561),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame	 CATA:Tabard of Flame	 M
 2.5.4.44833
 q(66990),	--
 q(66991),	--
+2.5.5.64508
+q(93823),	--
+q(93824),	--

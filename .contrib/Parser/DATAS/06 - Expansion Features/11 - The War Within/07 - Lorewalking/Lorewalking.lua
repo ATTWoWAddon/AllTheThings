@@ -57,6 +57,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				-- Only quests that throw reports and not repeated (already sorted) quest in chain
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
+						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -64,8 +66,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
-						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["groups"] = {
 							o(247690, {	-- Xal'atath
 								["coord"] = { 58.8, 76.6, 20 },	-- Keeper's Rest
@@ -129,6 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				header(HEADERS.Achievement, 42187, {	-- Lorewalking: Ethereal Wisdom
 					q(85027, {	-- Lorewalking: The Protectorate
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -136,7 +137,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
 					}),
 					q(85029, {	-- Lorewalking: Locus-Walker
 						["sourceQuests"] = { 85027 },	-- Lorewalking: The Protectorate
@@ -172,11 +172,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 				}),
-				--header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
-				-- Not available on PTR... For now?
-				--})),
+				-- header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
+					-- Not available on PTR or Beta... I guess we'll see it when 11.2.7 goes live...
+				-- })),
 				header(HEADERS.Achievement, 42189, {	-- Lorewalking: The Lich King
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
+						-- ["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -184,7 +185,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						["isRepeatable"] = true,
-						--["sourceQuests"] = { 90705 },	-- Lorewalking
 					}),
 					q(85862, {	-- A Prince's Duty
 						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King
@@ -208,17 +208,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 					q(85875, {	-- Ascent of the Lich King
 						["sourceQuests"] = { 85885 },	-- Lorewalking: No King Rules Forever
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885
 						["coord"] = { 51.4, 79.4, ICECROWN },
 						["isRepeatable"] = true,
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885
 					}),
 					q(85878, {	-- O' Thanagor
 						["sourceQuests"] = { 85875 },	-- Ascent of the Lich King
+						-- ["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
+						-- ["coord"] = { X, Y, ICECROWN_CITADEL },
 						["isRepeatable"] = true,
-						--["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
-						--["coord"] = { X, Y, ICECROWN_CITADEL },
 					}),
 				}),
+				header(HEADERS.Quest, 93929, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The War Within Recap
+					q(93929, {	-- The War Within Recap
+						["lvl"] = 71,
+					}),
+					q(91843, {	-- Recap: The Harbinger
+						["qg"] = 248956,	-- Tome of History
+						["coord"] = { 49.5, 31.9, DORNOGAL },
+					}),
+					q(91864, {	-- Recap: Fractured Visions
+						["sourceQuest"] = 91843,	-- Recap: The Harbinger
+						["qg"] = 248948,	-- Tome of History
+						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["groups"] = {
+							i(254323, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(91868, {	-- Recap: Shadowy Pursuits
+						["sourceQuest"] = 91864,	-- Recap: Fractured Visions
+						["qg"] = 248948,	-- Tome of History
+						["coords"] = {
+							{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
+							{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
+						},
+						["groups"] = {
+							i(254324, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(91871, {	-- Recap: The Dark Heart
+						["sourceQuest"] = 91868,	-- Recap: Shadowy Pursuits
+						["qg"] = 248948,	-- Tome of History
+						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["groups"] = {
+							i(254325, {	-- Worldsoul Satchel
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+							}),
+						},
+					}),
+					q(93979, {	-- Lingering Memories
+						["description"] = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
+						["sourceQuest"] = 84967,	-- The Shadowguard Shattered
+						["qg"] = 231128,	-- Locus-Walker
+						["coord"] = { 37.7, 74.8, KARESH_TAZAVESH },
+					}),
+				})),
 			}),
 		},
 	})),

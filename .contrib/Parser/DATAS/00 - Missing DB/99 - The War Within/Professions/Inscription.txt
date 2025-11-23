@@ -636,9 +636,6 @@ r(1260711),	-- Covered Square Suramar Table
 r(1260719),	-- Nightborne Jeweler's Table
 r(1260730),	-- Suramar Storage Crate
 r(1260737),	-- Suramar Dresser
-r(1261032),	-- Frostwall Elevated Brazier
-r(1261045),	-- Wooden Shipping Crate
-r(1261066),	-- Orcish Banded Barrel
 r(1261237),	-- Hanging Paper Lanterns
 r(1261238),	-- Pandaren Wooden Table
 r(1261239),	-- Square Pandaren Table
@@ -681,10 +678,10 @@ r(1268999),	-- Teal Dye Pigment
 r(1269057),	-- Purple Dye Pigment
 11.2.7.64011
 r(1269495),	-- Thunder Bluff Totem
-r(1269500),	-- Orcish Fence
-r(1269501),	-- Orcish Fencepost
 r(1269534),	-- Gilnean Map
 r(1269540),	-- Gilnean Postbox
+11.2.7.64044
+r(1272572),	-- Valdrakken Wall Shelf
 12.0.0.63534
 r(471010),	-- Midnight Inscription
 r(471044),	-- Recraft Equipment
@@ -722,18 +719,18 @@ r(1230046),	-- Thalassian Missive of Crafting Speed
 r(1230047),	-- Thalassian Missive of Multicraft
 r(1230048),	-- Thalassian Missive of Resourcefulness
 r(1230049),	-- Thalassian Missive of Ingenuity
-r(1230050),	-- Vantus Rune
-r(1230051),	-- Contract: Blood Elf
-r(1230052),	-- Contract: Amani
-r(1230053),	-- Contract: Haranir
+r(1230050),	-- Vantus Rune: Radiant \\ Vantus Rune
+r(1230051),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
+r(1230052),	-- Contract: The Amani Tribe \\ Contract: Amani
+r(1230053),	-- Contract: The Hara'ti \\ Contract: Haranir
 r(1230054),	-- Contract: The Singularity \\ Contract: Void
 r(1230055),	-- Faunatender's Baton
 r(1230056),	-- Floratender's Crutch
-r(1230057),	-- Rootwarden's Sprig
-r(1230058),	-- Farstrider's Trust
+r(1230057),	-- Rootwarden's Lamp \\ Rootwarden's Sprig
+r(1230058),	-- Faunatender's Trust \\ Farstrider's Trust
 r(1230059),	-- Aln'hara Pikestaff
 r(1230060),	-- Aln'hara Cane
-r(1230061),	-- Aln'hara Wand
+r(1230061),	-- Aln'hara Lantern \\ Aln'hara Wand
 r(1230062),	-- Aln'hara Sprigshot
 r(1230063),	-- Pigments of the Wind
 r(1230064),	-- Thalassian Competitor's Lamp
@@ -758,12 +755,12 @@ r(1230082),	-- Transcribe: Hunt
 r(1230083),	-- Inscribe: Hunt
 r(1230084),	-- Transcribe: Blood
 r(1230085),	-- Inscribe: Blood
-r(1248619),	-- Ren'dorei Sturdy Cask
-r(1248620),	-- Sturdy Bench
+r(1248619),	-- Sturdy Ren'dorei Cask \\ Ren'dorei Sturdy Cask
+r(1248620),	-- Restful Bronze Bench \\ Sturdy Bench
 r(1248621),	-- Floating Void-Touched Tome
-r(1248622),	-- Sin'dorei Homely Shelf
+r(1248622),	-- Homely Sin'dorei Shelf \\ Sin'dorei Homely Shelf
 r(1248623),	-- Lively Songwriter's Quill
-r(1248624),	-- Sin'dorei Opened Scroll
+r(1248624),	-- Opened Sin'dorei Scroll \\ Sin'dorei Opened Scroll
 r(1248625),	-- Gilded Eversong Book
 r(1248626),	-- Sin'dorei Phoenix Quill
 r(1248627),	-- Homely Wall Shelves
@@ -816,9 +813,6 @@ r(1260711),	-- Covered Square Suramar Table
 r(1260719),	-- Nightborne Jeweler's Table
 r(1260730),	-- Suramar Storage Crate
 r(1260737),	-- Suramar Dresser
-r(1261032),	-- Frostwall Elevated Brazier
-r(1261045),	-- Wooden Shipping Crate
-r(1261066),	-- Orcish Banded Barrel
 r(1261237),	-- Hanging Paper Lanterns
 r(1261238),	-- Pandaren Wooden Table
 r(1261239),	-- Square Pandaren Table
@@ -861,10 +855,10 @@ r(1268999),	-- Teal Dye Pigment
 r(1269057),	-- Purple Dye Pigment
 11.2.7.64011
 r(1269495),	-- Thunder Bluff Totem
-r(1269500),	-- Orcish Fence
-r(1269501),	-- Orcish Fencepost
 r(1269534),	-- Gilnean Map
 r(1269540),	-- Gilnean Postbox
+11.2.7.64044
+r(1272572),	-- Valdrakken Wall Shelf
 12.0.0.63534
 r(471010),	-- Midnight Inscription
 r(471044),	-- Recraft Equipment
@@ -902,18 +896,18 @@ r(1230046),	-- Thalassian Missive of Crafting Speed
 r(1230047),	-- Thalassian Missive of Multicraft
 r(1230048),	-- Thalassian Missive of Resourcefulness
 r(1230049),	-- Thalassian Missive of Ingenuity
-r(1230050),	-- Vantus Rune
-r(1230051),	-- Contract: Blood Elf
-r(1230052),	-- Contract: Amani
-r(1230053),	-- Contract: Haranir
+r(1230050),	-- Vantus Rune: Radiant \\ Vantus Rune
+r(1230051),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
+r(1230052),	-- Contract: The Amani Tribe \\ Contract: Amani
+r(1230053),	-- Contract: The Hara'ti \\ Contract: Haranir
 r(1230054),	-- Contract: The Singularity \\ Contract: Void
 r(1230055),	-- Faunatender's Baton
 r(1230056),	-- Floratender's Crutch
-r(1230057),	-- Rootwarden's Sprig
-r(1230058),	-- Farstrider's Trust
+r(1230057),	-- Rootwarden's Lamp \\ Rootwarden's Sprig
+r(1230058),	-- Faunatender's Trust \\ Farstrider's Trust
 r(1230059),	-- Aln'hara Pikestaff
 r(1230060),	-- Aln'hara Cane
-r(1230061),	-- Aln'hara Wand
+r(1230061),	-- Aln'hara Lantern \\ Aln'hara Wand
 r(1230062),	-- Aln'hara Sprigshot
 r(1230063),	-- Pigments of the Wind
 r(1230064),	-- Thalassian Competitor's Lamp
@@ -938,12 +932,12 @@ r(1230082),	-- Transcribe: Hunt
 r(1230083),	-- Inscribe: Hunt
 r(1230084),	-- Transcribe: Blood
 r(1230085),	-- Inscribe: Blood
-r(1248619),	-- Ren'dorei Sturdy Cask
-r(1248620),	-- Sturdy Bench
+r(1248619),	-- Sturdy Ren'dorei Cask \\ Ren'dorei Sturdy Cask
+r(1248620),	-- Restful Bronze Bench \\ Sturdy Bench
 r(1248621),	-- Floating Void-Touched Tome
-r(1248622),	-- Sin'dorei Homely Shelf
+r(1248622),	-- Homely Sin'dorei Shelf \\ Sin'dorei Homely Shelf
 r(1248623),	-- Lively Songwriter's Quill
-r(1248624),	-- Sin'dorei Opened Scroll
+r(1248624),	-- Opened Sin'dorei Scroll \\ Sin'dorei Opened Scroll
 r(1248625),	-- Gilded Eversong Book
 r(1248626),	-- Sin'dorei Phoenix Quill
 r(1248627),	-- Homely Wall Shelves

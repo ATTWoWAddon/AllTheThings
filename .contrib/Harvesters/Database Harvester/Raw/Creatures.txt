@@ -1,5 +1,7 @@
 1.14.3.42926
 61544@@@Orphan Spell Visual Invisible Holder
+2.5.5.64508
+255994@@@Exodar Replica
 3.4.3.51126
 2671@@@Mechanical Squirrel
 7380@@@Siamese Cat
@@ -233,6 +235,8 @@
 56266@@@Fetish Shaman
 59020@@@Eye of the Legion
 245603@@@Sa'bak's Favored
+3.80.0.64393
+257025@@@Star Fragment
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -2039,7 +2043,12 @@
 185317@@@Incubus
 253198@@@Archincubus
 5.5.2.63832
-255994@@@Exodar Replica
+5.5.2.64481
+255820@@@Starshard Whelpling
+5.5.3.64308
+258710@@@Suen
+5.5.3.64400
+248495@@@Smoldering Valor
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -23013,6 +23022,11 @@
 254359@@@Lil' Ashlee
 11.2.5.63906
 253016@@@Exodar Miniature
+11.2.5.64154
+256938@@@Khadgar's Upgraded Servant
+11.2.5.64484
+252859@@@Starshard Whelpling
+253016@@@Exodar Replica
 11.2.7.63642
 114955@@@Dole Dastardly
 149917@@@Captain Garrick
@@ -23239,14 +23253,12 @@
 218041@@@Stormrider Adalar
 218745@@@Stormrider Kothilde
 251889@@@Fledgling Warden's Companion
-253016@@@Exodar Replica
 256656@@@Aelric Leid
 256719@@@Aelric Leid
 256721@@@Glooming Disciple
 256722@@@Glooming Disciple
 256724@@@Glooming Belligerent
 256725@@@Xal'atath
-256938@@@Khadgar's Upgraded Servant
 257173@@@Hammerfall Grunt
 257174@@@Dragonscale Researcher
 257178@@@Vulpera Mixologist
@@ -23980,3 +23992,131 @@
 257541@@@Brann Bronzebeard
 257546@@@Voldy
 257616@@@Emberwing Hatchling
+12.0.0.64124
+240545@@@Twitchy Wraith
+250411@@@Nisha
+257625@@@[DNT] Completion Bunny
+257645@@@[DNT] Reset Bunny
+257695@@@[PH] Black Baby Hawkstrider
+257802@@@[PH] Purple Siphoid
+257849@@@Entropy Wielder
+257857@@@[DNT] Baby Eversong Lynx (Black)
+257908@@@Kai
+12.0.0.64228
+239944@@@Magister Umbric
+240962@@@Orweyna
+241043@@@Grand Magister Rommath
+241044@@@Lor'themar Theron
+241046@@@High Exarch Turalyon
+248429@@@Decimus
+253162@@@Guard
+254297@@@Hara'ti Villager
+255023@@@Eye of Gul'dan
+257238@@@Hara'ti Villager
+257991@@@Stormbound Mystic
+257992@@@Ruthless Totemcaller
+258046@@@Bonded Beasttamer
+258047@@@Grizzled Warbringer
+258066@@@Loa Speaker Nanea
+258074@@@Luxmaster 5000
+258205@@@Mannoroth
+258281@@@Princess Bloodshed
+258536@@@Xal'atath
+258584@@@Imp Lord
+258587@@@Fel Ravager
+258640@@@Time Flies
+12.0.0.64339
+235787@@@Lor'themar Theron
+236100@@@Arator
+236134@@@High Exarch Turalyon
+236391@@@Arator
+236571@@@High Exarch Turalyon
+236583@@@Grand Magister Rommath
+236588@@@Zul'jan
+236755@@@[DNT] Invisible Bunny
+236778@@@High Exarch Turalyon
+237234@@@Orweyna
+237284@@@Amarakk
+237325@@@Orweyna
+237346@@@Orweyna
+237567@@@Hagar
+241176@@@Halduron Brightwing
+241629@@@Hannan
+241695@@@Lightwood Ballista
+243759@@@Aksem
+243761@@@Orweyna
+250405@@@Thisalee Crow
+250406@@@Zen'tabra
+250409@@@Gamon
+251587@@@Halduron Brightwing
+252822@@@Lady Liadrin
+256107@@@Immature Behemoth
+257695@@@Nova
+257802@@@Medusa
+258651@@@Kajai
+258688@@@Loa Speaker Nanea
+258689@@@Lilaju
+258690@@@Loa Speaker Tobui
+258691@@@Kul'amara the Fierce
+258692@@@Vun'zarah
+258693@@@Loa Speaker Brek
+258694@@@Tak'lejo
+258695@@@Jan'alai
+258696@@@Halazzi
+258698@@@Akil'zon
+258699@@@Loa Speaker Kinduru
+258700@@@Lady Liadrin
+258701@@@Spear of Torntusk
+258703@@@Zul'jarra
+258704@@@Shadowpine Troop
+258705@@@Witherbark Shadowblade
+258730@@@Lord Antenorian
+258753@@@Khadgar's Servant
+258796@@@Shadow Barrier
+258803@@@Nether Siphoner
+258806@@@Scrying Focus
+258841@@@Kal'eani
+258844@@@Mind-Seeker Apprentice
+258845@@@Shadow Missile
+258869@@@Twilight Voidchurner
+258874@@@Lord Smudgington
+258877@@@Nalorakk
+258901@@@Empowering Shadow
+258909@@@[DNT] 12.0 Dungeon - Magisters' Terrace - Sound Stalker
+258947@@@Lightwood Ballista
+258948@@@High Exarch Turalyon
+258949@@@Generic Bunny - PRK
+258952@@@High Exarch Turalyon
+12.0.0.64499
+235392@@@Decimus
+235394@@@Lothraxion
+235405@@@Magister Umbric
+235481@@@Lor'themar Theron
+235483@@@Grand Magister Rommath
+235608@@@Arator
+235609@@@Alleria Windrunner
+235664@@@Alleria Windrunner
+235724@@@Arator
+235726@@@Alleria Windrunner
+239810@@@High Exarch Turalyon
+239826@@@Alleria Windrunner
+240545@@@Restive Wraith
+240673@@@Lothraxion
+241045@@@Ku'paal
+250400@@@Tehd Shoemaker
+250401@@@Marius Felbane
+250402@@@Gidwin Goldbraids
+250403@@@Tarenar Sunstrike
+253399@@@Scruffbeak
+257857@@@Flicker
+258994@@@Shadowpine Soldier, Scout
+258995@@@Shadowpine Soldier, Fighter
+258996@@@Shadowpine Soldier, Caster
+259022@@@12.0 Z1 - Local 16 - Paladin Rescue - Sanctum of the Moon - Twilight's Blade - Mortals - T1 Caster (KRB)
+259037@@@Arator
+259041@@@High Exarch Turalyon
+259044@@@Targeting Bunny
+259068@@@Mor'duun
+259103@@@Zul'jarra
+259153@@@Soridormi
+259222@@@Zul'jarra

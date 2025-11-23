@@ -3,18 +3,18 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-        ach(11164, {	-- Legion Dungeon Hero
-            ["sym"] = {{"meta_achievement",
-                10781,	-- Heroic: Eye of Azshara
-                10784,	-- Heroic: Darkheart Thicket
-                10788,	-- Heroic: Halls of Valor
-                10796,	-- Heroic: Neltharion's Lair
-                10799,	-- Heroic: Assault on Violet Hold
-                10802,	-- Heroic: Vault of the Wardens
-                10805,	-- Heroic: Black Rook Hold
-                10808,	-- Heroic: Maw of Souls
-            }},
-        }),
+		ach(11164, {	-- Legion Dungeon Hero
+			["sym"] = {{"meta_achievement",
+				10781,	-- Heroic: Eye of Azshara
+				10784,	-- Heroic: Darkheart Thicket
+				10788,	-- Heroic: Halls of Valor
+				10796,	-- Heroic: Neltharion's Lair
+				10799,	-- Heroic: Assault on Violet Hold
+				10802,	-- Heroic: Vault of the Wardens
+				10805,	-- Heroic: Black Rook Hold
+				10808,	-- Heroic: Maw of Souls
+			}},
+		}),
 		ach(11163, {	-- Glory of the Legion Hero
 			["sym"] = {{"meta_achievement",
 				10456,	-- But You Say He's Just a Friend

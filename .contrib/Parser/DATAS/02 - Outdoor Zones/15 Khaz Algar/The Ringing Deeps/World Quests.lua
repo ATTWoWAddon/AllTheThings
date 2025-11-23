@@ -139,13 +139,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82155, {	-- Special Assignment: Shadows Below
-					--["coord"] = { x, y, THE_RINGING_DEEPS },
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },
 				}),
 				q(83229, {	-- Special Assignment: When the Deeps Stir
 					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },
 				}),
 				q(82156, {	-- Special Assignment: When the Deeps Stir
-					--["coord"] = { x, y, THE_RINGING_DEEPS },
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },
 				}),
 			}),
 		}),

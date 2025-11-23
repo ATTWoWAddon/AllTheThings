@@ -145,6 +145,11 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14027, {	-- Blizzcon 2019 - Battle for Mrrglroth
 		["timeline"] = { ADDED_8_2_5 },
 	}),
+	-- #if AFTER 11.2.5
+	iensemble(258422, {	-- Ensemble: Wooly Wendigo
+		["timeline"] = { ADDED_11_2_5 },
+	}),
+	-- #else
 	i(171341, {	-- Wooly Wendigo Pullover
 		["timeline"] = { ADDED_8_2_5 },
 	}),
@@ -160,20 +165,37 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	i(171337, {	-- Wooly Wendigo Mittens
 		["timeline"] = { ADDED_8_2_5 },
 	}),
+	-- #endif
+	-- #if AFTER 11.2.5
+	i(258418, {	-- Gillvanas (PET!)
+	-- #else
 	pet(2777, {	-- Gillvanas (PET!)
+	-- #endif
 		["timeline"] = { ADDED_8_2_5 },
 		["races"] = HORDE_ONLY,
 	}),
+	-- #if AFTER 11.2.5
+	i(258419, {	-- Finduin (PET!)
+	-- #else
 	pet(2778, {	-- Finduin (PET!)
+	-- #endif
 		["timeline"] = { ADDED_8_2_5 },
 		["races"] = ALLIANCE_ONLY,
 	}),
 
 	-- Blizzconline 2021 "Celebration Collection" (Removed from store 21 Feb 2022)
+	-- #if AFTER 11.2.5
+	i(258428, {	-- Snowstorm (MOUNT!)
+	-- #else
 	mount(341821, {	-- Snowstorm (MOUNT!)
+	-- #endif
 		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
 	}),
+	-- #if AFTER 11.2.5
+	i(258429, {	-- Moon-Touched Netherwhelp (PET!)
+	-- #else
 	pet(3053, {	-- Moon-Touched Netherwhelp (PET!)
+	-- #endif
 		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
 	}),
 	ach(14904, {	-- Netherwhelp Online
@@ -181,17 +203,25 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	-- Blizzcon 2023 Collection
+	-- #if AFTER 11.2.5
+	i(258427, {	-- Bound Blizzard (MOUNT!)
+	-- #else
 	mount(358072, {	-- Bound Blizzard (MOUNT!)
+	-- #endif
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Legendary Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,
 	}),
-	i(210042, {		-- Chilling Celebration Banner (TOY!)
+	i(210042, {	-- Chilling Celebration Banner (TOY!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,
 	}),
-	pet(3579, {		-- Ysergle The Dreamurk (PET!)
+	-- #if AFTER 11.2.5
+	i(258482, {	-- Ysergle
+	-- #else
+	pet(3579, {	-- Ysergle The Dreamurk (PET!)
+	-- #endif
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
 		["u"] = REAL_MONEY,

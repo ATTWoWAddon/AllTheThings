@@ -260,7 +260,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(875, i(230368)),	-- Astral Aspirant's Dagger
 						honor(1750, i(230372)),	-- Astral Aspirant's Greatsword
 						honor(1750, i(230378)),	-- Astral Aspirant's Halberd
-						--honor(875, i(229508)),	-- Astral Aspirant's Hammer // Bad itemid
+						-- honor(875, i(229508)),	-- Astral Aspirant's Hammer // Bad itemid
 						honor(1225, i(230380)),	-- Astral Aspirant's Knife
 						honor(875, i(230369)),	-- Astral Aspirant's Mace
 						honor(875, i(230379)),	-- Astral Aspirant's Morningstar
@@ -606,9 +606,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(230651)),	-- Astral Gladiator's Shield
 						conquest(525, i(230657)),	-- Astral Gladiator's Bulwark
 					}),
-					--i(230722, {	-- Astral Equipment Chest
-					--	["timeline"] = { ADDED_11_2_5 },
-					--}),
+					-- i(230722, {	-- Astral Equipment Chest
+					-- 	["timeline"] = { ADDED_11_2_5 },
+					-- }),
 				},
 			}),
 			o(456208, {	-- The Catalyst

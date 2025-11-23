@@ -86,6 +86,7 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 				["questID"] = 93555,
 				["groups"] = {
 					i(264603),	-- Guardian's Gemstone Loop
+					i(264584),	-- Stonecarved Smashers
 				},
 			}),
 			n(240129, {	-- Overfester Hydra (vignette - Dormant Lightbloom Hydra)
@@ -124,20 +125,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MIDNIGHT, {
 		m(EVERSONG_WOODS_MID, {
 			n(RARES, {
-				q(94694, {	-- Weekly reputation: Duskburn
-					["name"] = "Duskburn weekly reputation obtained.",
-				}),
-				q(94682, {	-- Weekly reputation: Harried Hawkstrider
-					["name"] = "Harried Hawkstrider weekly reputation obtained.",
-				}),
-				q(94681, {	-- Weekly reputation: Warden of Weeds
-					["name"] = "Warden of Weeds weekly reputation obtained.",
-				}),
 				q(94692, {	-- Weekly reputation: Banuran
 					["name"] = "Banuran weekly reputation obtained.",
 				}),
-				q(94693, {	-- Weekly reputation: Lost Guardian
-					["name"] = "Lost Guardian weekly reputation obtained.",
+				q(94685, {	-- Weekly reputation: Bloated Snapdragon
+					["name"] = "Bloated Snapdragon weekly reputation obtained.",
+				}),
+				q(94687, {	-- Weekly reputation: Coralfang
+					["name"] = "Coralfang weekly reputation obtained.",
 				}),
 				q(94686, {	-- Weekly reputation: Cre'van
 					["name"] = "Cre'van weekly reputation obtained.",
@@ -145,11 +140,20 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94696, {	-- Weekly reputation: Dame Bloodshed
 					["name"] = "Dame Bloodshed weekly reputation obtained.",
 				}),
-				q(94687, {	-- Weekly reputation: Coralfang
-					["name"] = "Coralfang weekly reputation obtained.",
+				q(94694, {	-- Weekly reputation: Duskburn
+					["name"] = "Duskburn weekly reputation obtained.",
 				}),
-				q(94685, {	-- Weekly reputation: Bloated Snapdragon
-					["name"] = "Bloated Snapdragon weekly reputation obtained.",
+				q(94682, {	-- Weekly reputation: Harried Hawkstrider
+					["name"] = "Harried Hawkstrider weekly reputation obtained.",
+				}),
+				q(94693, {	-- Weekly reputation: Lost Guardian
+					["name"] = "Lost Guardian weekly reputation obtained.",
+				}),
+				q(94695, {	-- Weekly reputation: Malfunctioning Construct
+					["name"] = "Malfunctioning Construct weekly reputation obtained.",
+				}),
+				q(94681, {	-- Weekly reputation: Warden of Weeds
+					["name"] = "Warden of Weeds weekly reputation obtained.",
 				}),
 			}),
 		}),

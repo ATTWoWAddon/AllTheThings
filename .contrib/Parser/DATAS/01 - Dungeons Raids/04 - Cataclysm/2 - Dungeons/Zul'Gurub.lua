@@ -120,11 +120,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							["description"] = "Can drop from High Priest Venoxis, Bloodlord Mandokir, High Priestess Kilnara, Zanzil, and Jin'do the Godbreaker after completing the quest 'Restored Hakkari Bijou'.",
 							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallem Empire'.
 							-- ["crs"] = {
-								--52155,	-- High Priest Venoxis
-								--52151,	-- Bloodlord Mandokir
-								--52059,	-- High Priestess Kilnara
-								--52053,	-- Zanzil
-								--52148,	-- Jin'do the Godbreaker
+								-- 52155,	-- High Priest Venoxis
+								-- 52151,	-- Bloodlord Mandokir
+								-- 52059,	-- High Priestess Kilnara
+								-- 52053,	-- Zanzil
+								-- 52148,	-- Jin'do the Godbreaker
 							-- },
 							["groups"] = sharedData({ ["modID"] = 0 }, {
 								i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
@@ -786,7 +786,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				n(52438, {	-- Mortaxx (unique mob)
-				--	i(52722),	-- Maelstrom Crystal
+					-- i(52722),	-- Maelstrom Crystal
 				}),
 				n(52392, {	-- Gurubashi Master Chef (unique mob)
 					i(69822),	-- Master Chef's Groceries

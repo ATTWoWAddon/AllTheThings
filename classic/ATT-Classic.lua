@@ -562,8 +562,8 @@ ResolveSymbolicLink = function(o)
 					end
 				end
 			elseif cmd == "meta_achievement" then
-                -- Instruction to search the full database for multiple achievementID's
-                local cache;
+				-- Instruction to search the full database for multiple achievementID's
+				local cache;
 				for i=2,#sym do
 					local cache = SearchForField("achievementID", sym[i]);
 					if #cache > 0 then
@@ -584,14 +584,14 @@ ResolveSymbolicLink = function(o)
 						print("Failed to select achievementID", sym[i]);
 					end
 				end
-                -- Remove any Criteria groups associated with those achievements
-                for k=#searchResults,1,-1 do
-                    local result = searchResults[k];
-                    if result.criteriaID then tremove(searchResults, k); end
-                end
+				-- Remove any Criteria groups associated with those achievements
+				for k=#searchResults,1,-1 do
+					local result = searchResults[k];
+					if result.criteriaID then tremove(searchResults, k); end
+				end
 			elseif cmd == "partial_achievement" then
-                -- Instruction to search the full database for an achievementID and persist the associated Criteria
-                -- Do nothing, this is done in the mini list instead. We don't want to build a useless list of criteria.
+				-- Instruction to search the full database for an achievementID and persist the associated Criteria
+				-- Do nothing, this is done in the mini list instead. We don't want to build a useless list of criteria.
 			end
 		end
 
@@ -2257,6 +2257,89 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
+		
+		-- Clean up other matching Characters with identical Name-Realm but differing GUID
+		app.CallbackHandlers.Callback(function()
+			local myGUID = app.GUID;
+			local myName, myRealm = currentCharacter.name, currentCharacter.realm;
+			local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
+			local otherName, otherRealm, otherText;
+			local toClean;
+			for guid,character in pairs(characterData) do
+				-- simple check on name/realm first
+				otherName = character.name;
+				otherRealm = character.realm;
+				otherText = character.text;
+				if guid ~= myGUID then
+					if otherName == myName and otherRealm == myRealm then
+						if toClean then tinsert(toClean, guid)
+						else toClean = { guid }; end
+					elseif otherText and otherText:match(myRegex) then
+						if toClean then tinsert(toClean, guid)
+						else toClean = { guid }; end
+					end
+				end
+			end
+			if toClean then
+				local copyTables = { "Buildings","GarrisonBuildings","Factions","FlightPaths" };
+				local cleanCharacterFunc = function(guid)
+					-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
+					local character = characterData[guid];
+					for _,tableName in ipairs(copyTables) do
+						local copyTable = character[tableName];
+						if copyTable then
+							-- app.PrintDebug("Copying Dupe",tableName)
+							local currentTable = currentCharacter[tableName];
+							if not currentTable then
+								-- old/restored character missing copied data
+								currentTable = {}
+								currentCharacter[tableName] = currentTable
+							end
+							for ID,complete in pairs(copyTable) do
+								-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
+								if complete and not currentTable[ID] then
+									-- app.PrintDebug("Copied Completed",ID)
+									currentTable[ID] = complete;
+								end
+							end
+						end
+					end
+					-- Remove the actual dupe data afterwards
+					-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
+					local backups = accountWideData._CharacterBackups;
+					if not backups then
+						backups = {};
+						accountWideData._CharacterBackups = backups;
+					end
+					backups[guid] = character;
+					characterData[guid] = nil;
+					local count = 0
+					for guid,char in pairs(backups) do
+						count = count + 1
+					end
+					app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
+					app.print("Use '/att remove-deleted-character-backups help' for more info")
+				end
+				for _,guid in ipairs(toClean) do
+					app.FunctionRunner.Run(cleanCharacterFunc, guid);
+				end
+			end
+
+			-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
+			app.ChatCommands.Add("remove-deleted-character-backups", function(args)
+				local backups = 0
+				for guid,char in pairs(accountWideData._CharacterBackups) do
+					backups = backups + 1
+				end
+				accountWideData._CharacterBackups = nil
+				app.print("Cleaned up",backups,"character backups!")
+				return true
+			end, {
+				"Usage : /att remove-deleted-character-backups",
+				"Allows permanently removing all deleted character backup data",
+				"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
+			})
+		end);
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;

@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			spell(159902),	-- Path of the Burning Mountain
 		}),
 		challengemaster(ach(9627, {		-- Challenge Master: Upper Blackrock Spire
-			--title_gendered(296, 297),	-- <Name>, Lord of Blackrock / <Name>, Lady of Blackrock
+			-- title_gendered(296, 297),	-- <Name>, Lord of Blackrock / <Name>, Lady of Blackrock
 			title_male(296),	-- <Name>, Lord of Blackrock
 			title_female(297),	-- <Name>, Lady of Blackrock
 		})),

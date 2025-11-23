@@ -21,12 +21,20 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_10_0_0 },
 		["groups"] = {
 			-- "Pre" Season
+			-- #if AFTER 11.2.5
+			i(258423, {	-- Gargantuan Grrloc (MOUNT!)
+			-- #else
 			mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
+			-- #endif
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
 				["timeline"] = { ADDED_10_0_0 },
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			-- #if AFTER 11.2.5
+			i(258477, {	-- Telix the Stormhorn (MOUNT!)
+			-- #else
 			mount(381529, {	-- Telix the Stormhorn (MOUNT!)
+			-- #endif
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
 				["timeline"] = { ADDED_10_0_0 },
 				["u"] = REMOVED_FROM_GAME,
@@ -170,7 +178,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Break the Meta: DF Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 2 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/break-the-meta-df-season-2/signups|r and complete at least 2 BTM-Eligible timed keystones at level +15 or higher during the Competition Period, and the Smoldering Banner of the Aspects will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on October 3rd for US, October 4th for EU & October 5th for KR/TW & lasts for 1 reset of your region.",
 				["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 },
 			}),
+			-- #if AFTER 11.2.5
+			i(258425, {	-- Ginormous Grrloc (MOUNT!)
+			-- #else
 			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
+			-- #endif
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
 				["timeline"] = { ADDED_10_1_7, REMOVED_11_0_2 },
 			}),
@@ -179,7 +191,11 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_10_1_7, REMOVED_11_0_2 },
 			}),
 			-- Season 3
+			-- #if AFTER 11.2.5
+			i(258414, {	-- Dottie (PET!)
+			-- #else
 			pet(2623, {	-- Dottie (PET!)
+			-- #endif
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
 			}),
@@ -207,7 +223,11 @@ root(ROOTS.Promotions, {
 				-- #ENDIF
 				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },
 			}),
+			-- #if AFTER 11.2.5
+			i(258483, {	-- Fathom (PET!)
+			-- #else
 			pet(4437, {	-- Fathom (PET!)
+			-- #endif
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 },
 			}),

@@ -196,7 +196,7 @@ for filterID,filterData in pairs({
 	[30] = {
 		readable = "Spears",	-- Unused
 		icon = 135124,
-		--constant = "SPEARS",
+		-- constant = "SPEARS",
 		text = {
 			en = WOWAPI_GetItemSubClassInfo(2,17),
 		},
@@ -325,9 +325,9 @@ for filterID,filterData in pairs({
 		constant = "CONSUMABLES",
 		text = {
 			en = [[~AUCTION_CATEGORY_CONSUMABLES]],
-			--fr = "Consommables",
-			--ru = "Расходуемые",
-			--cn = "消耗品",
+			-- fr = "Consommables",
+			-- ru = "Расходуемые",
+			-- cn = "消耗品",
 		},
 	},
 	[56] = {

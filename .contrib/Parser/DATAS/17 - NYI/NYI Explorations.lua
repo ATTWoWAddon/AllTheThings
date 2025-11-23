@@ -52,66 +52,66 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(12624),	-- Vaal Grotto
 
 			-- Zone: Maldraxxus [WIP]
-			--exploration(13326),	-- Akarek's Tears
-			--exploration(13459),	-- Alluvium Hollow
-			--exploration(13348),	-- Amputory
-			--exploration(11471),	-- Ashen Gate
-			--exploration(13179),	-- Bleak Redoubt
-			--exploration(13191),	-- Blighted Scar
-			--exploration(11468),	-- Bony Spindles
-			--exploration(13314),	-- Bony Spindles
-			--exploration(12898),	-- Butchers Block
-			--exploration(13186),	-- Challenger's Promenade
-			--exploration(13320),	-- Challenger's Promenade
-			--exploration(12901),	-- Etheric Vault
-			--exploration(12821),	-- Exoramas
-			--exploration(13505),	-- Exoramas
-			--exploration(13230),	-- Felscar Breach
-			--exploration(13443),	-- Flesh Stitchery
-			--exploration(13315),	-- Forgotten Wounds
-			--exploration(13488),	-- Hall of Tomes
-			--exploration(13489),	-- Hall of Elixirs
-			--exploration(13490),	-- Hall of Sorcery
-			--exploration(13524),	-- Hall of Blades
-			--exploration(13525),	-- Hall of Cantrips
-			--exploration(13526),	-- Hall of Ichor
-			--exploration(13321),	-- High Stand
-			--exploration(13185),	-- House of the Chosen
-			--exploration(13189),	-- House of Plagues
-			--exploration(13323),	-- House of Eyes
-			--exploration(13182),	-- Iron Trench
-			--exploration(13317),	-- Keres' Rest
-			--exploration(11462),	-- Maldraxxus
-			--exploration(13312),	-- Maldrxxus Covenant Finale Scenario
-			--exploration(13463),	-- Molten Forge
-			--exploration(12822),	-- Necropolis - Unused
-			--exploration(13184),	-- Ossein Foundry
-			--exploration(13305),	-- Plague Watch
-			--exploration(13238),	-- Prime Siegeworks
-			--exploration(13493),	-- Prime Arcanum
-			--exploration(13239),	-- Ragebringer Terrace
-			--exploration(13318),	-- Scaplian Ridge
-			--exploration(13187),	-- Seat of the Primus
-			--exploration(13417),	-- Sightless Hold
-			--exploration(13333),	-- Spider's Watch
-			--exploration(13533),	-- Spire of War
-			--exploration(13235),	-- The Blade Crypt
-			--exploration(13460),	-- The Forgotten Forge
-			--exploration(13486),	-- The Reagentry
-			--exploration(13518),	-- The Sorcerous Steps
-			--exploration(13180),	-- The Spearhead
-			--exploration(13183),	-- The Stabbing Wastes
-			--exploration(13190),	-- Theater of Pain
-			--exploration(13325),	-- Theater of Pain
-			--exploration(13374),	-- Theater of Pain
-			--exploration(13347),	-- Thread House
-			--exploration(13342),	-- Toxxulanar
-			--exploration(13181),	-- Unfallen's Sanctum
-			--exploration(13527),	-- Vault of Souls
-			--exploration(12820),	-- Vortrexxis
-			--exploration(12819),	-- Zerekriss
+			-- exploration(13326),	-- Akarek's Tears
+			-- exploration(13459),	-- Alluvium Hollow
+			-- exploration(13348),	-- Amputory
+			-- exploration(11471),	-- Ashen Gate
+			-- exploration(13179),	-- Bleak Redoubt
+			-- exploration(13191),	-- Blighted Scar
+			-- exploration(11468),	-- Bony Spindles
+			-- exploration(13314),	-- Bony Spindles
+			-- exploration(12898),	-- Butchers Block
+			-- exploration(13186),	-- Challenger's Promenade
+			-- exploration(13320),	-- Challenger's Promenade
+			-- exploration(12901),	-- Etheric Vault
+			-- exploration(12821),	-- Exoramas
+			-- exploration(13505),	-- Exoramas
+			-- exploration(13230),	-- Felscar Breach
+			-- exploration(13443),	-- Flesh Stitchery
+			-- exploration(13315),	-- Forgotten Wounds
+			-- exploration(13488),	-- Hall of Tomes
+			-- exploration(13489),	-- Hall of Elixirs
+			-- exploration(13490),	-- Hall of Sorcery
+			-- exploration(13524),	-- Hall of Blades
+			-- exploration(13525),	-- Hall of Cantrips
+			-- exploration(13526),	-- Hall of Ichor
+			-- exploration(13321),	-- High Stand
+			-- exploration(13185),	-- House of the Chosen
+			-- exploration(13189),	-- House of Plagues
+			-- exploration(13323),	-- House of Eyes
+			-- exploration(13182),	-- Iron Trench
+			-- exploration(13317),	-- Keres' Rest
+			-- exploration(11462),	-- Maldraxxus
+			-- exploration(13312),	-- Maldrxxus Covenant Finale Scenario
+			-- exploration(13463),	-- Molten Forge
+			-- exploration(12822),	-- Necropolis - Unused
+			-- exploration(13184),	-- Ossein Foundry
+			-- exploration(13305),	-- Plague Watch
+			-- exploration(13238),	-- Prime Siegeworks
+			-- exploration(13493),	-- Prime Arcanum
+			-- exploration(13239),	-- Ragebringer Terrace
+			-- exploration(13318),	-- Scaplian Ridge
+			-- exploration(13187),	-- Seat of the Primus
+			-- exploration(13417),	-- Sightless Hold
+			-- exploration(13333),	-- Spider's Watch
+			-- exploration(13533),	-- Spire of War
+			-- exploration(13235),	-- The Blade Crypt
+			-- exploration(13460),	-- The Forgotten Forge
+			-- exploration(13486),	-- The Reagentry
+			-- exploration(13518),	-- The Sorcerous Steps
+			-- exploration(13180),	-- The Spearhead
+			-- exploration(13183),	-- The Stabbing Wastes
+			-- exploration(13190),	-- Theater of Pain
+			-- exploration(13325),	-- Theater of Pain
+			-- exploration(13374),	-- Theater of Pain
+			-- exploration(13347),	-- Thread House
+			-- exploration(13342),	-- Toxxulanar
+			-- exploration(13181),	-- Unfallen's Sanctum
+			-- exploration(13527),	-- Vault of Souls
+			-- exploration(12820),	-- Vortrexxis
+			-- exploration(12819),	-- Zerekriss
 			-- Sub-zone: House of Plagues
-			--exploration(14081),	-- House of Plagues
+			-- exploration(14081),	-- House of Plagues
 
 			-- Zone: Revendreth
 			exploration(13475),	-- Bridge of Contrition
@@ -133,94 +133,94 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(13517),	-- Wanecrypt Hill
 
 			-- Zone: The Maw [WIP]
-			--[SL] [Outdoor] [Map 2222 - The Shadowlands] exploration(11400)	-- The Maw
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11524)	-- Planes of Torment
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11525)	-- The Beastwarrens
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11526)	-- Zovaal's Cauldron
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11527)	-- Desmotaeron
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11528)	-- Gorgoa: River of Souls
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11529)	-- Perdition Hold
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(11530)	-- Crucible of the Damned
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13196)	-- Calcis
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13214)	-- Maw Entrance Area
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13215)	-- Cocyrus
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13216)	-- The Tremaculum
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13217)	-- Ruin's Cradle
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13218)	-- Marrow's Coppice
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13219)	-- Prodigum
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13220)	-- Penderghast
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13221)	-- Ravener's Lament
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13222)	-- Face of Oblivion
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13223)	-- Altar of Domination
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13233)	-- Pit of Anguish
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13373)	-- Desolate Hollow
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13432)	-- Forlorn Respite
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13437)	-- Ve'nari's Refuge
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13438)	-- Chambers of Misery
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13439)	-- Coldheart Halls
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13440)	-- Pit of Anguish
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13441)	-- Stygian Abyss
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13478)	-- Death's Roar
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13491)	-- Hungering Wastes
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13492)	-- Soulstained Fields
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13528)	-- Mother's Den
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13529)	-- Echoing Caverns
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13530)	-- Death's Howl
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13531)	-- Torturer's Hovel
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13538)	-- Extractor's Sanatorium
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13542)	-- Woeful Cavern
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13560)	-- Detrithos
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13569)	-- Wrath of the Jailer
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13648)	-- Tormentors of Torghast
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13666)	-- Helgarde Keep
-			--[SL] [Outdoor] [Parent 11400 - The Maw] exploration(13674)	-- Zerekriss
+			-- [SL] [Outdoor] [Map 2222 - The Shadowlands] exploration(11400)	-- The Maw
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11524)	-- Planes of Torment
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11525)	-- The Beastwarrens
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11526)	-- Zovaal's Cauldron
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11527)	-- Desmotaeron
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11528)	-- Gorgoa: River of Souls
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11529)	-- Perdition Hold
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(11530)	-- Crucible of the Damned
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13196)	-- Calcis
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13214)	-- Maw Entrance Area
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13215)	-- Cocyrus
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13216)	-- The Tremaculum
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13217)	-- Ruin's Cradle
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13218)	-- Marrow's Coppice
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13219)	-- Prodigum
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13220)	-- Penderghast
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13221)	-- Ravener's Lament
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13222)	-- Face of Oblivion
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13223)	-- Altar of Domination
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13233)	-- Pit of Anguish
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13373)	-- Desolate Hollow
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13432)	-- Forlorn Respite
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13437)	-- Ve'nari's Refuge
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13438)	-- Chambers of Misery
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13439)	-- Coldheart Halls
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13440)	-- Pit of Anguish
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13441)	-- Stygian Abyss
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13478)	-- Death's Roar
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13491)	-- Hungering Wastes
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13492)	-- Soulstained Fields
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13528)	-- Mother's Den
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13529)	-- Echoing Caverns
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13530)	-- Death's Howl
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13531)	-- Torturer's Hovel
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13538)	-- Extractor's Sanatorium
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13542)	-- Woeful Cavern
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13560)	-- Detrithos
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13569)	-- Wrath of the Jailer
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13648)	-- Tormentors of Torghast
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13666)	-- Helgarde Keep
+			-- [SL] [Outdoor] [Parent 11400 - The Maw] exploration(13674)	-- Zerekriss
 
-			--[SL] [Outdoor] [Map 2222 - The Shadowlands] exploration(13332)	-- The Maw
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13344)	-- Forlorn Respite
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13350)	-- Crucible of the Damned
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13351)	-- Gorgoa: River of Souls
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13352)	-- Calcis
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13353)	-- Maw Entrance Area
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13354)	-- Cocyrus
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13355)	-- The Tremaculum
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13356)	-- Ruin's Cradle
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13357)	-- Planes of Torment
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13358)	-- Zovaal's Cauldron
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13405)	-- Detrithos
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13479)	-- Desolate Hollow
-			--[SL] [Outdoor] [Parent 13332 - The Maw] exploration(13552)	-- Extractor's Sanatorium
+			-- [SL] [Outdoor] [Map 2222 - The Shadowlands] exploration(13332)	-- The Maw
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13344)	-- Forlorn Respite
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13350)	-- Crucible of the Damned
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13351)	-- Gorgoa: River of Souls
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13352)	-- Calcis
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13353)	-- Maw Entrance Area
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13354)	-- Cocyrus
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13355)	-- The Tremaculum
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13356)	-- Ruin's Cradle
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13357)	-- Planes of Torment
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13358)	-- Zovaal's Cauldron
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13405)	-- Detrithos
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13479)	-- Desolate Hollow
+			-- [SL] [Outdoor] [Parent 13332 - The Maw] exploration(13552)	-- Extractor's Sanatorium
 
-			--[SL] [Outdoor] [Map 2364 - The Maw] exploration(13476)	-- The Maw
+			-- [SL] [Outdoor] [Map 2364 - The Maw] exploration(13476)	-- The Maw
 
-			--[SL] [Outdoor] [Map 2456 - The Maw] exploration(13587)	-- The Maw
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13588)	-- Planes of Torment
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13589)	-- The Beastwarrens
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13595)	-- Zovaal's Cauldron
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13596)	-- Desmotaeron
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13597)	-- Gorgoa: River of Souls
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13598)	-- Perdition Hold
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13599)	-- Crucible of the Damned
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13600)	-- Calcis
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13601)	-- Cocyrus
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13602)	-- Ruin's Cradle
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13603)	-- Marrow's Coppice
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13604)	-- Prodigum
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13605)	-- Ravener's Lament
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13606)	-- Face of Oblivion
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13607)	-- Altar of Domination
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13608)	-- Ve'nari's Refuge
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13609)	-- Hungering Wastes
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13610)	-- Soulstained Fields
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13611)	-- Detrithos
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13634)	-- The Tremaculum
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13681)	-- Extractor's Sanatorium
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13682)	-- Desolate Hollow
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13684)	-- Forlorn Respite
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13685)	-- Woeful Cavern
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13686)	-- Death's Roar
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13687)	-- Death's Howl
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13688)	-- Mother's Den
-			--[SL] [Outdoor] [Parent 13587 - The Maw] exploration(13689)	-- Torturer's Hovel
+			-- [SL] [Outdoor] [Map 2456 - The Maw] exploration(13587)	-- The Maw
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13588)	-- Planes of Torment
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13589)	-- The Beastwarrens
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13595)	-- Zovaal's Cauldron
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13596)	-- Desmotaeron
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13597)	-- Gorgoa: River of Souls
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13598)	-- Perdition Hold
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13599)	-- Crucible of the Damned
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13600)	-- Calcis
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13601)	-- Cocyrus
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13602)	-- Ruin's Cradle
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13603)	-- Marrow's Coppice
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13604)	-- Prodigum
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13605)	-- Ravener's Lament
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13606)	-- Face of Oblivion
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13607)	-- Altar of Domination
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13608)	-- Ve'nari's Refuge
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13609)	-- Hungering Wastes
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13610)	-- Soulstained Fields
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13611)	-- Detrithos
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13634)	-- The Tremaculum
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13681)	-- Extractor's Sanatorium
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13682)	-- Desolate Hollow
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13684)	-- Forlorn Respite
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13685)	-- Woeful Cavern
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13686)	-- Death's Roar
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13687)	-- Death's Howl
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13688)	-- Mother's Den
+			-- [SL] [Outdoor] [Parent 13587 - The Maw] exploration(13689)	-- Torturer's Hovel
 
 			-- NYI?
 			exploration(11436),	-- [Vignette Space 1]

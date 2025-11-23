@@ -36,35 +36,35 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				ach(12521, {	-- Halls of Containment
-                    crit(40246, {	-- Taloc
-                        ["_encounter"] = { 2168, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(40247, {	-- MOTHER
-                        ["_encounter"] = { 2167, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(40223, {	-- Zek'voz, Herald of N'zoth
-                        ["_encounter"] = { 2169, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(40246, {	-- Taloc
+						["_encounter"] = { 2168, DIFFICULTY.RAID.LFR },
+					}),
+					crit(40247, {	-- MOTHER
+						["_encounter"] = { 2167, DIFFICULTY.RAID.LFR },
+					}),
+					crit(40223, {	-- Zek'voz, Herald of N'zoth
+						["_encounter"] = { 2169, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(12522, {	-- Crimson Descent
-                    crit(40248, {	-- Vectis
-                        ["_encounter"] = { 2166, DIFFICULTY.RAID.LFR },
-                    }),
+					crit(40248, {	-- Vectis
+						["_encounter"] = { 2166, DIFFICULTY.RAID.LFR },
+					}),
 					crit(40222, {	-- Fetid Devourer
 						["_encounter"] = { 2146, DIFFICULTY.RAID.LFR },
 					}),
-                    crit(40224, {	-- Zul, Reborn
-                        ["_encounter"] = { 2195, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(40224, {	-- Zul, Reborn
+						["_encounter"] = { 2195, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(12523, {	-- Heart of Corruption
-                    crit(40220, {	-- Mythrax the Unraveler
-                        ["_encounter"] = { 2194, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(40221, {	-- G'huun
-                        ["_encounter"] = { 2147, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(40220, {	-- Mythrax the Unraveler
+						["_encounter"] = { 2194, DIFFICULTY.RAID.LFR },
+					}),
+					crit(40221, {	-- G'huun
+						["_encounter"] = { 2147, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(40960, {	-- Uldir
 					["timeline"] = { ADDED_11_0_7 },
 					-- Meta Achievement

@@ -74,8 +74,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(234281),	-- Undermine Cartel Work
 					},
 				}),
-				--Under Rares
-				--Darkfuse Precipitant
+				-- Under Rares
+				-- Darkfuse Precipitant
 				q(85524, {	-- Disarming the Darkfuse
 					["coord"] = { 43.7, 27.0, UNDERMINE },
 				}),

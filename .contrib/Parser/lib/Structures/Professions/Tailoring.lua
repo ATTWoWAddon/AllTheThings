@@ -662,7 +662,10 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 	r(330245, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
 	r(330246, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
 	n(ARMOR, {
+		-- #if NOT ANYCLASSIC
+		-- Wouter NOTE: this is not available in Classic for some reason
 		r(134585, {["timeline"] = {ADDED_5_1_0}}),	-- Bipsi's Gloves
+		-- #endif
 		r(125530),	-- Windwool Belt
 		r(125529),	-- Windwool Boots
 		r(125528),	-- Windwool Bracers

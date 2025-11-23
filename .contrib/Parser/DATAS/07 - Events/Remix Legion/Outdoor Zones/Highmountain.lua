@@ -33,6 +33,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 						["groups"] = { i(246339) },	-- Duskytooth Fel Snooter (PET!)
 					}),
+					ach(42547, {	-- Highmountain Tribe
+						i(258299, {	-- Hanging Felsteel Cage (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42533, {	-- Looking for Group: Highmountain
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -54,17 +59,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60803,	-- Explore Highmountain
 							60805,	-- Hidden Treasures: Highmountain
 						}},
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_HIGHMOUNTAIN_TRIBE, {
-						n(ACHIEVEMENTS, {
-							ach(42547, {	-- Highmountain Tribe
-								i(258299, {	-- Hanging Felsteel Cage (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {

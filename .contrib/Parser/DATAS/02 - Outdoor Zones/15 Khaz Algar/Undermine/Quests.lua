@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			header(HEADERS.Achievement, 40900, {	-- Undermined
 				header(HEADERS.AchCriteria, 40900.01, {	-- Chapter 1: Trust Issues
 					q(83137, {	-- When Opportunity Explodes
-						--["sourceQuests"] = { xx },	-- TODO: build 58626 - completing level up campaign
+						-- ["sourceQuests"] = { xx },	-- TODO: build 58626 - completing level up campaign
 						["provider"] = { "n", 225571 },	-- Renzik "The Shiv"
 						["coord"] = { 42.2, 27.0, DORNOGAL },
 					}),
@@ -874,7 +874,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40894.05, {	-- The Perfect Wedding
 				q(85438, {	-- Or Else
-					--["sourceQuests"] = { xx },	-- TODO: ??
+					-- ["sourceQuests"] = { xx },	-- TODO: ??
 					["provider"] = { "n", 233235 },	-- Gerry Clogcraw
 					["coord"] = { 44.0, 50.1, UNDERMINE },
 				}),
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40894.10, {	-- Property Devalued
 				q(84376, {	-- Property Devalued
-					--["sourceQuests"] = { xx },	-- TODO: ??, up for alts without doing anything in zone
+					-- ["sourceQuests"] = { xx },	-- TODO: ??, up for alts without doing anything in zone
 					["provider"] = { "o", 461478 },	-- For Rent Sign
 					["coord"] = { 41.8, 65.9, UNDERMINE },	-- either more spots need to add or to mobile object?
 					["isBreadcrumb"] = true,	-- TODO: remove if it is not
@@ -1461,7 +1461,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- New dungeon
 			q(86728, {	-- Operation: Floodgate: Disposing of the Garbage
-				--["sourceQuests"] = { 83151 },	-- Down Undermine
+				-- ["sourceQuests"] = { 83151 },	-- Down Undermine
 				["provider"] = { "n", 231045 },	-- Paks Topskimmer
 				["coord"] = { 43.5, 51.7, UNDERMINE },
 			}),
@@ -1471,7 +1471,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 225531 },	-- Gas Grimeshank
 				["coord"] = { 42.6, 51.1, UNDERMINE },
 				["groups"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
+					-- i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(87581, {	-- No More Walkin' Here
@@ -1479,7 +1479,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 238946 },	-- Gas Grimeshank
 				["coord"] = { 43.2, 59.4, UNDERMINE },
 				["groups"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
+					-- i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(86618, {	-- License Not Required
@@ -1509,7 +1509,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			-- TODO: need to find a better place for it?
 			-- Weekly Rep stuff
 			q(85869, {	-- Many Jobs, Handle It!
-				--["sourceQuests"] = { xx },	-- TODO: up for alts without doing any quest or intro / HQT faction unlock
+				-- ["sourceQuests"] = { xx },	-- TODO: up for alts without doing any quest or intro / HQT faction unlock
 				["provider"] = { "n", 231409 },	-- Smaks Topskimmer
 				["coord"] = { 43.8, 50.8, UNDERMINE },
 				["isWeekly"] = true,
@@ -1519,7 +1519,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			-- possible sourceQuest is some hqt for progressing campaign chapters at least once, not available immediately
 			-- Kaja'coast unlocked after questID 83130
 			q(85944, {	-- Side Gig: Blood Type
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
@@ -1529,7 +1529,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(85945, {	-- Side Gig: Blood-B-Gone
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
@@ -1538,25 +1538,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(86178, {	-- Side Gig: Cleanin' the Coast
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231065 },	-- Freddi Powergrind
 				["coord"] = { 19.7, 53.0, UNDERMINE },
 				["isWeekly"] = true,
 			}),
 			q(85913, {	-- Side Gig: Cleanup Detail
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231063 },	-- Solden Blitzfuse
 				["coord"] = { 16.7, 52.3, UNDERMINE },
 				["isWeekly"] = true,
 			}),
 			q(85914, {	-- Side Gig: Coolant Matters
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231063 },	-- Solden Blitzfuse
 				["coord"] = { 16.7, 52.3, UNDERMINE },
 				["isWeekly"] = true,
 			}),
 			q(85553, {	-- Side Gig: Feeling Crabby
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
@@ -1565,7 +1565,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(86180, {	-- Side Gig: Infested Waters
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231065 },	-- Freddi Powergrind
 				["coord"] = { 19.7, 53.0, UNDERMINE },
 				["isWeekly"] = true,
@@ -1574,7 +1574,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(85554, {	-- Side Gig: It's Always Sunny Side Up
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
@@ -1585,19 +1585,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(85960, {	-- Side Gig: Lost in the Sauce
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231063 },	-- Solden Blitzfuse
 				["coord"] = { 16.7, 52.3, UNDERMINE },
 				["isWeekly"] = true,
 			}),
 			q(86179, {	-- Side Gig: Lucky Break's Big Break
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231065 },	-- Freddi Powergrind
 				["coord"] = { 19.7, 53.0, UNDERMINE },
 				["isWeekly"] = true,
 			}),
 			q(86177, {	-- Side Gig: The Tides Provide
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
@@ -1608,7 +1608,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(85962, {	-- Side Gig: Unseemly Reagents
-				--["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
+				-- ["sourceQuests"] = { xx },	-- HQT: Undermine renown faction unlock
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
@@ -1636,8 +1636,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- pop after learning Handcrank/Steamboil or Handcrank AND Steamboil
 			q(89250, {	-- Burning Rubber
-				--["sourceQuests"] = { XXX },
-				--["provider"] = { "i", xxx },	-- TODO: ???
+				-- ["sourceQuests"] = { XXX },
+				-- ["provider"] = { "i", xxx },	-- TODO: ???
 			}),
 		}),
 	}),

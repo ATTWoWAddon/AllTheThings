@@ -11,7 +11,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      CLASSIC      --
 	-----------------------
 	expansion(EXPANSION.CLASSIC, {
-		--	QUESTING / LEVELING
+		-- QUESTING / LEVELING
 		q(6842),	-- <UNUSED> - completes with 'Umber, Archivist' (questID 6844)
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
@@ -21,10 +21,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      TBC      --
 	-------------------
 	expansion(EXPANSION.TBC, {
-		--	QUESTING / LEVELING
+		-- QUESTING / LEVELING
 		-- #if BEFORE CATA
 		-- This got repurposed into an actual quest with Cata.
-		q(8329),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
+		q(8329),	-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
 		-- #endif
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
@@ -83,7 +83,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	expansion(EXPANSION.MOP, {
 
-		--	QUESTING / LEVELING / VARIOUS
+		-- QUESTING / LEVELING / VARIOUS
 		q(29698),	-- Tracking Event: Alliance Banner Found
 		q(29699),	-- Tracking Event: Alliance Chest Found
 		q(29700),	-- Tracking Event: Bodyguard Found
@@ -105,7 +105,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(33901),	-- Tracking Quest: Activated Arkonite 4
 		q(33899),	-- Tracking Quest: Turn on the Holograms
 
-		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		-- Short-Supply Reward - UNKNOWN TRIGGERS
 		qNYI(33602),	-- Short-Supply Reward
 		qNYI(33603),	-- Short-Supply Reward
 	}),
@@ -114,13 +114,13 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      WOD      --
 	-------------------
 	expansion(EXPANSION.WOD, {
-		--	QUESTING / LEVELING / VARIOUS
+		-- QUESTING / LEVELING / VARIOUS
 		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
 		q(37187),	-- The Dark Portal
 		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
 
-		--	DUNGEONS & RAIDS
+		-- DUNGEONS & RAIDS
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
@@ -194,7 +194,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- ASSAULTS
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
-		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		-- Short-Supply Reward - UNKNOWN TRIGGERS
 		qNYI(37461),	-- Short-Supply Reward
 		qNYI(37463),	-- Short-Supply Reward
 		qNYI(37465),	-- Short-Supply Reward
@@ -242,7 +242,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		qNYI(40416),	-- Tracking Quest
 		qNYI(40853),	-- Tracking Quest
 
-		--	???
+		-- ???
 		q(33964),	-- Arak Flowerpicker
 		q(36636),	-- Blueprint Read
 		q(36849),	-- Burning Missive
@@ -353,7 +353,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      BFA      --
 	-------------------
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		--	VARIOUS
+		-- VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(53124),	-- Kings' Rest dungeon unlock trigger for alliance
@@ -409,7 +409,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
-		--	PVP / WAR MODE
+		-- PVP / WAR MODE
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde
 		q(53639),	-- Looting a bounty in Stormsong as Horde
@@ -552,7 +552,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(57065),	-- War Chest Azerite Essence Conflict and Strife (Rank 2)
 		q(53565),	-- triggered after completing my first arena win in BFA (possibly season-specific but idk)
 
-		--	TREASURES
+		-- TREASURES
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
 		q(54879),	-- Opening a Darkshore chest
@@ -563,30 +563,30 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
 
-		--	Zones
-		--	Drustvar
+		-- Zones
+		-- Drustvar
 		q(51851),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		-- q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as Alliance (first completion on character? WM off specific? it doesn't trigger later in WM)
 
-		--	Stormsong Valley
+		-- Stormsong Valley
 		-- Various
 		q(55626),	-- first kill of yellow Sabertron
 
-		--	Zuldazar
+		-- Zuldazar
 		-- Chests
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
 		-- Various
 		q(55413),	-- War Mode supply drop in Zuldazar
-		--	Nazjatar
-		--	PVP
+		-- Nazjatar
+		-- PVP
 		q(57111),	-- Nazjatar Horde supply chest (both triggered simultaneously)
 
 		-- Various
 		q(55404),	-- Triggered when interacting with the "Deepflame Campfire" in Mezzamere as alliance, but without picking a follower
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56881),	-- Triggered upon first entry into Nazjatar
-		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
+		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:  research more (possibly bodyguard dialogue quest?)
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
 		q(55604, {["isDaily"]=true}),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901, {["isDaily"]=true}),	-- Triggers after buying anything from Mrrl's secret trader stock (requires cloak with special stock trait).
@@ -594,7 +594,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(57192),	-- Glimmering Chest — Prismatic Manapearls
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 
-		--	Dungeons
+		-- Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 		q(57046),	-- Operaton: Mechagon — triggered upon killing King Mechagon for the first time (Heroic).  Could be from killing the boss or from looting the Azerite Essence
 
@@ -616,7 +616,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Azerite essences assembled with Focused Life Anima
 		q(62681),	-- Encountered after using Focused Life Anima to create Stabilizing Lens of the Focusing Iris (168622)
 
-		--	Patch 8.3
+		-- Patch 8.3
 		q(55349),	-- Triggered shortly after "Network Diagnostics"
 		q(56935),	-- Triggered shortly after "Network Diagnostics"
 		q(58000),	-- Combining Coalescing Visions 1x
@@ -625,12 +625,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58409),	-- Combining Coalescing Visions 4x
 		q(58994),	-- Triggers when you get your first corrupted item. It procs the "Curious Corruption" quest
 		q(58815),	-- Triggers when completing the blacktalon agent daily for a zone vision
-		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:: verify this. didn't pop up since latest PTR build
+		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:  verify this. didn't pop up since latest PTR build
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
 
 		-- Horrific Visions
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
-		--q(57845),	-- looted the Water Dancer's Technique (Rank 2) (Possibly only comes from valley of wisdom?)
+		-- q(57845),	-- looted the Water Dancer's Technique (Rank 2) (Possibly only comes from valley of wisdom?)
 
 		-- N'Zoth assaults
 		q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
@@ -655,7 +655,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(57957),	-- Elya Codepunch talked to
 		q(57938),	-- Assember Hung talked to
 
-		--	Warfronts
+		-- Warfronts
 		q(53206),	-- Alliance Arathi Warfront unlock
 		q(53220),	-- Horde Arathi Warfront unlock
 		q(54410),	-- Horde Darkshore Warfront unlock
@@ -979,21 +979,21 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
 		q(47495),	-- Insatiable Appetite [UNUSED]
 		q(39044),	-- Unused
-		--q(50690),	-- Unused - Alex: TWW quest in Hallowfall
+		-- q(50690),	-- Unused - Alex: TWW quest in Hallowfall
 		q(54781),	-- UNUSED - Alex: unflagged with 91938 when I fly into area with Stormmarion Assault in Midnight alpha (spellID 1248080)
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		q(38845),	-- Unused
-		--q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
-		--q(63389),	-- Person in Errors doesnt really remember
-		--q(63390),	-- Person in Errors doesnt really remember
-		--q(63391),	-- Person in Errors doesnt really remember
-		--q(54324),	-- Triggered in BfA
-		--q(54317),	-- BfA Alliance Stormsong "Invasion"
-		--q(62521),	-- unknown tracking
-		--q(62571),	-- Flying in Maldraxxus
-		--q(62397),	-- Unknown
+		-- q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
+		-- q(63389),	-- Person in Errors doesnt really remember
+		-- q(63390),	-- Person in Errors doesnt really remember
+		-- q(63391),	-- Person in Errors doesnt really remember
+		-- q(54324),	-- Triggered in BfA
+		-- q(54317),	-- BfA Alliance Stormsong "Invasion"
+		-- q(62521),	-- unknown tracking
+		-- q(62571),	-- Flying in Maldraxxus
+		-- q(62397),	-- Unknown
 
-		--	PVP quests
+		-- PVP quests
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map

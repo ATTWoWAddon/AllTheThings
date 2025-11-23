@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ Miscellaneous ------
 			q(75232, {	-- Fallen Effects
-				--["sourceQuests"] = {  },
+				-- ["sourceQuests"] = {  },
 				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
 				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
 			}),

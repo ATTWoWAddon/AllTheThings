@@ -2624,23 +2624,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- The Blood Moon
-				readable = "The Blood Moon",
+			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- Blood Moon
+				readable = "Blood Moon",
 				icon = 237513,
 				text = {
-					en = "The Blood Moon",
-					-- es = "",
-					-- de = "",
-					-- fr = "",
-					-- it = "",
-					-- pt = "",
-					-- ru = "",
-					-- ko = "",
+					en = "Blood Moon",
+					es = "Luna Sangrienta",
+					mx = "Luna de sangre",
+					de = "Blutmond",
+					fr = "Lune de sang",
+					it = "Blood Moon",
+					pt = "Lua Sangrenta",
+					ru = "Кровавая луна",
+					ko = "핏빛 달",
 					cn = "鲜血之月",
 					tw = "血月",
 				},
 				description = {
 					en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
+					es = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",	
+					mx = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",	
 				},
 			}), {
 				i(213168, {	-- Copper Blood Coin
@@ -3299,7 +3302,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
 							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-							--["sourceQuest"] = ,	--
+							-- ["sourceQuest"] = ,	--
 							["cost"] = 10000,	-- 1g
 							["classes"] = { PALADIN },
 							["groups"] = {

@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(WORLD_QUESTS, {
-				--["sourceQuests"] = {},
+				-- ["sourceQuests"] = {},
 				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 					q(86872, {	-- Phase Diving: Experimental Extermination
 						["coord"] = { 52.8, 61.7, KARESH },

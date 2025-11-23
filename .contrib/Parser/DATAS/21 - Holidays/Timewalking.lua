@@ -335,7 +335,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 		}),
 		n(VENDORS, {
-			n(234555, {	--  Bobadormu
+			n(234555, {	-- Bobadormu
 				["coords"] = {
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
@@ -917,7 +917,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					i(151460),	-- Farraki Ceremonial Robes
 					i(232903),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
-					i(232904),	-- Sul'thraze the Lashe
+					i(232904),	-- Sul'thraze the Lasher
 					i(9477),	-- The Chief's Enforcer
 					i(151461),	-- Ukorz's Chain Leggings
 				},
@@ -983,7 +983,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							i(133543),	-- Infinite Timereaver (MOUNT!)
 							-- Archimonde
 							i(171942),	-- Cowl of Absolution
-							i(171941),	-- Cowl o the Tempest
+							i(171941),	-- Cowl of the Tempest
 							i(171943),	-- Hood of Absolution
 							i(171940),	-- Hood of the Malefic
 							i(171929),	-- Lightbringer Faceguard
@@ -1196,7 +1196,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						i(232001, {	-- Blazing Skyhawk Repeater
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
-						i(232061, {	-- Cenarion Gaurdian's Stave
+						i(232061, {	-- Cenarion Guardian's Stave
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232023, {	-- Chilled Obsidian Dragon's Tooth
@@ -1260,53 +1260,37 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						}),
 					})),
 					filter(MISC, {
-						i(35348, {	-- Bag of Fishing Treasures
+						ig(35348, {	-- Bag of Fishing Treasures
 							["cost"] = {{"c", TIMEWARPED_BADGE, 150}},
 						}),
-						i(33844, {	-- Barrel of Fish
+						ig(33844, {	-- Barrel of Fish
 							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
-							["groups"] = {
-								i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
-								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-								i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-								i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
-								i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-								i(33871),	-- Recipe: Stormchops (RECIPE!)
-							},
 						}),
-						i(129948, {	-- Commendation of Honor Hold
+						ig(129948, {	-- Commendation of Honor Hold
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129951, {	-- Commendation of Lower City
+						ig(129951, {	-- Commendation of Lower City
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129949, {	-- Commendation of the Cenarion Expedition
+						ig(129949, {	-- Commendation of the Cenarion Expedition
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129945, {	-- Commendation of The Consortium
+						ig(129945, {	-- Commendation of The Consortium
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129950, {	-- Commendation of the Keepers of Time
+						ig(129950, {	-- Commendation of the Keepers of Time
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129946, {	-- Commendation of The Sha'tar
+						ig(129946, {	-- Commendation of The Sha'tar
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(129947, {	-- Commendation of Thrallmar
+						ig(129947, {	-- Commendation of Thrallmar
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(33857, {	-- Crate of Meat
+						ig(33857, {	-- Crate of Meat
 							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
-							["groups"] = {
-								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-								i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-								i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-								i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
-								i(33871),	-- Recipe: Stormchops (RECIPE!)
-								i(33855),	-- Tarnished Silver Ring
-							},
 						}),
-						i(207112, {	-- Grimoire of the Void-Touched Fel Imp (CI!)
+						ig(207112, {	-- Grimoire of the Void-Touched Fel Imp (CI!)
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1000}},
 							["timeline"] = { ADDED_10_1_5 },
 						}),
@@ -2336,7 +2320,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171551, {	-- Legguards of the Lurking Threat
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(171607, {	--  Legplates of Redeemed Blood
+							i(171607, {	-- Legplates of Redeemed Blood
 								["races"] = HORDE_ONLY,
 							}),
 							i(171596, {	-- Legplates of the Immortal Spider
@@ -2723,7 +2707,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						}),
 					})),
 					filter(MISC, {
-						i(46007, {  -- Bag of Fishing Treasure
+						i(46007, {	-- Bag of Fishing Treasure
 							["cost"] = {{"c", TIMEWARPED_BADGE, 150}},
 						}),
 						i(129955, {	-- Commendation of the Alliance Vanguard
@@ -4000,7 +3984,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_11_2_0 },
 						}),
-						i(244648, {	-- Scipture of the Scarlet High Priest
+						i(244648, {	-- Scripture of the Scarlet High Priest
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_11_2_0 },
 						}),
@@ -4030,34 +4014,25 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						}),
 					})),
 					filter(MISC, {
-						i(67414, {	-- Bag of Shiny Things
-							["modID"] = 0,
+						ig(67414, {	-- Bag of Shiny Things
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
-							["groups"] = {
-								i(44983),	-- Strand Crawler (PET!)
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-								i(67410),	-- Very Unlucky Rock
-								i(67388),	-- String of Alligator Teeth
-							},
 						}),
-						i(133150, {	-- Commendation of the Dragonmaw Clan
+						ig(133150, {	-- Commendation of the Dragonmaw Clan
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(133159, {	-- Commendation of the Earthen Ring
+						ig(133159, {	-- Commendation of the Earthen Ring
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(133152, {	-- Commendation of the Guardians of Hyjal
+						ig(133152, {	-- Commendation of the Guardians of Hyjal
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(133154, {	-- Commendation of the Ramkahen
+						ig(133154, {	-- Commendation of the Ramkahen
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(133151, {	-- Commendation of the Wildhammer Clan
+						ig(133151, {	-- Commendation of the Wildhammer Clan
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(133160, {	-- Commendation of Therazanae
+						ig(133160, {	-- Commendation of Therazanae
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 					}),
@@ -4574,8 +4549,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
 					i(133278),	-- Evelyn's Belt	-- 9.1, confirmed dropping here too on 27.09.2021
 					i(133262),	-- Greaves of Wu the Younger	-- 9.1, confirmed dropping here too on 27.09.2021
-					--	i(133267),	-- Sand Dune Belt (movd to Lockmaw))
-					--	i(133266),	-- Veneficial Band (moved to Lockmaw)
+					-- i(133267),	-- Sand Dune Belt (movd to Lockmaw))
+					-- i(133266),	-- Veneficial Band (moved to Lockmaw)
 				},
 			}),
 			e(122, {	-- Siamat
@@ -7134,7 +7109,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2102, {	-- Skycap'n Kragg
 				["crs"] = {
 					126832,	-- Skycap'n Kragg
-					--  Shark Bait
+					-- Shark Bait
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(159633,1),	-- Sharkbait's Fishhook
@@ -7152,7 +7127,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					126847,	-- Captain Raoul
 				},
 				["sym"] = {{"select", "modItemID",
-					modItemId(159132,1),	-- Jolly's Boot Daggeer
+					modItemId(159132,1),	-- Jolly's Boot Dagger
 					modItemId(159130,1),	-- Captain's Diplomacy
 					modItemId(158311,1),	-- Concealed Fencing Plates
 					modItemId(159356,1),	-- Raoul's Barrelhook Bracers
@@ -7522,10 +7497,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 		}),--]]
 		n(VENDORS, {
-			-- ToDO: Update NPCID/Coords
+			-- TODO: Update NPCID/Coords
 			n(239840, {	-- Collector Ta'steld <Timewalking Vendor>
 				["coords"] = {
-				--	{ , , Oribos },
+					-- { , , Oribos },
 				},
 				["groups"] = {
 					n(ARMOR, {
@@ -7666,7 +7641,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2410, {	-- Mueh'zala
-				["crs"] = { 166608 },	--	Mueh'zala
+				["crs"] = { 166608 },	-- Mueh'zala
 				["sym"] = {{"select", "modItemID",
 					modItemId(182178,1),	-- Raptor Soul (SS!)
 					modItemId(186998,1),	-- Pattern: Pallid Oracle Bones (RECIPE!)
@@ -7713,7 +7688,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2413, {	-- Lord Chamberlain
-				["crs"] = { 164218 },	--	Lord Chamberlain
+				["crs"] = { 164218 },	-- Lord Chamberlain
 				["sym"] = {{"select", "modItemID",
 					modItemId(178816,1),	-- Nathrian Usurper's Mask
 					modItemId(178829,1),	-- Nathrian Ferula
@@ -7864,7 +7839,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2412, {	-- Devos, Paragon of Doubt
-				["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+				["crs"] = { 162061 },	-- Devos, Paragon of Doubt
 				["sym"] = {{"select", "modItemID",
 					modItemId(180108,1),	-- Abyssal Disharmony Breeches
 					modItemId(180119,1),	-- Boon of the Archon

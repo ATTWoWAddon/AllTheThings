@@ -57,12 +57,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
-                    crit(44051, {	-- The Restless Cabal
-                        ["_encounter"] = { CABAL, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(44052, {	-- Uu'nat, Harbinger of the Void
-                        ["_encounter"] = { UUNAT, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
+					crit(44051, {	-- The Restless Cabal
+						["_encounter"] = { CABAL, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(44052, {	-- Uu'nat, Harbinger of the Void
+						["_encounter"] = { UUNAT, DIFFICULTY.RAID.MULTI.ALL },
+					}),
 				}),
 				ach(13420),	-- Crucible of Storms Guild Run
 			}),

@@ -35,15 +35,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i am sure i have not captured all of myself
 					o_repeated({	-- Riftbound Cache
 						-- Contains
-						--	Epics
+							-- Epics
 							i(187251),	-- Shaded Skull Shoulderguards
 							i(187243),	-- Shadehunter's Crescent
-						--	Blues
+							-- Blues
 							i(187421),	-- Ashen Liniment
 							i(187276),	-- Stolen Korthian Supplies
-						--	Greens
+							-- Greens
 							i(185050),	-- Spider Soul
-						--	Whites
+							-- Whites
 							i(186994),	-- Design: Shaded Stone Statue (RECIPE!)
 						-- Objects
 						o(369437, {	-- Riftbound Cache

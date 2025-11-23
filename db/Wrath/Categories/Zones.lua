@@ -4382,6 +4382,7 @@ n(14237,{coords={{36,68.4,1445},{36.6,62.6,1445},{39.8,62.6,1445}}}),
 n(14233,{coords={{37.8,50.4,1445},{42.6,55.4,1445},{43.8,50.2,1445},{47.6,54.8,1445},{50,57.6,1445}}}),
 n(14235,{coords={{51.2,50.8,1445},{52,60.4,1445},{52.2,57.4,1445},{52.6,51.6,1445},{53.6,54.2,1445}}})}),
 h(-58,{
+n(23995,{awp=20300,coords={{41.8,74,1445}}}),
 n(13476,{coords={{36.4,30.4,1445}},r=1,rwp=40003,g={
 r(7924,{itemID=16084,learnedAt=125,q=1,rank=3,requireSkill=129,rwp=30100,u=2}),
 r(7929,{itemID=16112,learnedAt=180,q=1,requireSkill=129,rwp=30100,u=2}),
@@ -11351,7 +11352,7 @@ qo(1,{providers={{"n",28608},{"n",28940},{"n",28609},{"n",28557}}}),
 qo(2,{providers={{"n",28576},{"n",28577}}}),
 i(38671,{b=1,f=52,q=3})}}),
 q(12680,{coords={{52.6,34.5,124}},qgs={28653},sourceQuests={12670},g={
-qo(1,{providers={{"n",28605},{"n",28607},{"n",28606}}})}}),
+qo(1,{providers={{"n",28607},{"n",28606},{"n",28605}}})}}),
 q(12687,{coords={{52.6,34.5,124}},qgs={28653},sourceQuests={12680},g={
 qo(1,{providers={{"n",28768}}}),
 mnt(48778,{c={6}}),
@@ -11669,7 +11670,8 @@ q(5509,{coords={{75.8,53.8,1423}},cost={{"i",12841,10}},lvl=50,qgs={11039},repea
 i(12844,{b=1,factionID=529,q=2,rwp=40003})}}),
 q(5513,{coords={{75.8,54,1423}},cost={{"i",12844,10}},lvl=55,minReputation={529,21000},qgs={11536},rwp=40003}),
 q(5206,{coords={{75.6,53.8,1423}},lvl=50,qgs={11063},rwp=40003,sourceQuests={5154,5168,5181},g={
-qo(1,{crs={8529},providers={{"i",13155},{"i",13156},{"i",13157}},rwp=40003})}}),
+qo(1,{crs={8529},providers={{"i",13155},{"i",13156},{"i",13157}},rwp=40003}),
+i(13159,{q=1,rwp=40003})}}),
 q(5510,{coords={{75.8,53.8,1423}},cost={{"i",12840,20}},lvl=50,qgs={11039},repeatable=1,rwp=40003,g={
 i(12844,{b=1,factionID=529,q=2,rwp=40003})}}),
 q(6146,{coords={{23,68.2,1423}},lvl=56,qgs={11878},r=1,rwp=40003,sourceQuests={14350},g={
@@ -21913,6 +21915,9 @@ r(33288,{awp=20001,itemID=27692,learnedAt=325,q=1,requireSkill=185,u=17})}}),
 n(19042,{awp=20001,coords={{57.6,53.4,1952}},r=2,u=17,g={
 r(28562,{awp=20001,b=1,isLimited=1,itemID=22911,learnedAt=350,q=1,requireSkill=171,u=17}),
 r(28546,{awp=20001,isLimited=1,itemID=22901,learnedAt=315,q=1,requireSkill=171,u=17})}}),
+n(19718,{awp=20001,coords={{39.7,70.1,1952}},minReputation={1011,3000},u=17,g={
+i(27857,{awp=20001,f=55,lvl=55,q=1,u=17}),
+i(29448,{awp=20001,f=55,lvl=65,q=1,u=17})}}),
 n(18960,{awp=20001,coords={{48.8,46,1952}},r=1,u=17,g={
 r(32665,{awp=20001,itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004,u=17}),
 r(33295,{awp=20001,itemID=27699,learnedAt=325,q=1,requireSkill=185,u=17}),
@@ -23673,7 +23678,15 @@ r(26760,{awp=30002,b=1,itemID=21916,learnedAt=355,q=1,requireSkill=26798,u=30}),
 r(26762,{awp=30002,b=1,itemID=21917,learnedAt=375,q=1,requireSkill=26798,u=30}),
 r(26761,{awp=30002,b=1,itemID=21918,learnedAt=365,q=1,requireSkill=26798,u=30})}}),
 n(32631,{awp=30002,coords={{26.2,39.2,125}},description="Walks around the Purple Parlour.",u=30,g={
-i(35947,{awp=30002,f=55,lvl=75,q=1,u=30})}}),
+i(33451,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(33452,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(33445,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(35953,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(35951,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(33444,{awp=30002,f=55,lvl=70,q=1,u=30}),
+i(33454,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(35947,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(35954,{awp=30002,f=55,lvl=65,q=1,u=30})}}),
 n(29628,{awp=30002,coords={{37,37.4,125}},u=30,g={
 s(175392,44694,{awp=30002,f=10,filterForRWP=2,q=1,u=30}),
 s(175390,44692,{awp=30002,f=4,q=1,u=30}),
@@ -23681,6 +23694,11 @@ s(175391,44693,{awp=30002,f=10,filterForRWP=2,q=1,u=30})}}),
 n(28990,{awp=30002,coords={{46.8,27.6,125}},u=30,g={
 s(173235,40701,{awp=30002,b=1,cost={{"c",101,35}},f=8,lvl=80,q=4,u=30}),
 s(173234,40700,{awp=30002,b=1,cost={{"c",101,35}},f=8,lvl=80,q=4,u=30})}}),
+n(29547,{awp=30002,coords={{43.1,57,125}},u=30,g={
+i(43088,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(43086,{awp=30002,f=55,lvl=70,q=1,u=30}),
+i(35948,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(35949,{awp=30002,f=55,lvl=65,q=1,u=30})}}),
 n(31579,{awp=30002,coords={{37.2,54.5,125}},r=2,u=30,g={
 s(173248,40736,{awp=30002,cost={{"c",102,60}},f=6,lvl=80,q=4,u=30}),
 i(40719,{awp=30002,b=1,cost={{"c",102,25}},f=52,lvl=80,q=4,u=30}),
@@ -24517,6 +24535,12 @@ n(29702,{awp=30002,coords={{44.8,46.6,125}},u=30,g={
 s(175366,44648,{awp=30002,f=2,q=1,u=30}),
 s(175365,44647,{awp=30002,f=2,q=1,u=30})}}),
 n(32337,{awp=30002,coords={{53.8,32.6,125}},u=30,g={
+i(44625,{awp=30002,f=55,q=2,u=30}),
+i(44623,{awp=30002,f=55,q=1,u=30}),
+i(44621,{awp=30002,f=55,q=1,u=30}),
+i(44626,{awp=30002,f=55,q=2,u=30}),
+i(44632,{awp=30002,f=55,q=1,u=30}),
+i(44622,{awp=30002,f=55,q=1,u=30}),
 s(175385,44679,{awp=30002,f=1,q=1,u=30}),
 s(175384,44678,{awp=30002,f=1,q=1,u=30})}}),
 n(29716,{awp=30002,coords={{44.8,46.3,125}},u=30,g={
@@ -24659,6 +24683,13 @@ i(44714,{awp=30003,c={8},f=200,isLimited=1,lvl=80,q=2,rwp=70003,spellID=61316,ty
 i(44602,{awp=30003,c={8},f=200,isLimited=1,lvl=80,q=2,rwp=70003,spellID=61024,type="characterUnlockSpellID",u=30}),
 i(44709,{awp=30002,c={8},f=200,isLimited=1,lvl=60,q=3,spellID=61305,type="characterUnlockSpellID",u=30})}}),
 n(28776,{awp=30002,coords={{51.8,55.8,125}},sym={{"select","itemID",31779,31804,36941,31776,19031,31404,5976,23999,31777,31774,31778,31773,15198,43300,32828,15196,31405,31780,15197,31781,19506,32445,31775,15199,19032,43349,49052,49054,35280,35279,40643,43348,24344,35221,24004,19505}},u=30}),
+n(29715,{awp=30002,coords={{53.4,34.6,125}},u=30,g={
+i(40042,{awp=30002,f=55,q=1,u=30}),
+i(44618,{awp=30002,f=55,q=2,u=30}),
+i(44617,{awp=30002,f=55,q=1,u=30}),
+i(44616,{awp=30002,f=55,q=1,u=30}),
+i(40035,{awp=30002,f=55,q=1,u=30}),
+i(40036,{awp=30002,f=55,q=1,u=30})}}),
 n(40160,{awp=30002,coords={{40,28.9,125}},u=33,g={
 i(47556,{awp=30002,cost={{"i",43102,6}},q=3,u=32}),
 i(35623,{awp=30002,cost={{"i",43102,1}},q=2,u=30}),
@@ -25049,6 +25080,14 @@ r(26757,{awp=30002,b=1,itemID=21914,learnedAt=365,q=1,requireSkill=26801,u=30}),
 r(26756,{awp=30002,b=1,itemID=21912,learnedAt=355,q=1,requireSkill=26801,u=30}),
 r(26758,{awp=30002,b=1,itemID=21913,learnedAt=375,q=1,requireSkill=26801,u=30}),
 r(36686,{awp=30002,itemID=30483,learnedAt=350,q=1,requireSkill=197,u=30})}}),
+n(29714,{awp=30002,coords={{55,31.1,125}},u=30,g={
+i(33449,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(44610,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(35950,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(44613,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(35952,{awp=30002,f=55,lvl=75,q=1,u=30}),
+i(44612,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(33443,{awp=30002,f=55,lvl=65,q=1,u=30})}}),
 n(37941,{awp=30002,coords={{65.9,22.9,125}},r=1,u=33,g={
 s(178923,50993,{awp=30002,b=1,cost={{"c",341,60}},f=6,lvl=80,q=4,u=33}),
 s(178926,50996,{awp=30002,b=1,cost={{"c",341,60}},f=4,lvl=80,q=4,u=33}),
@@ -28230,7 +28269,7 @@ i(38760,{awp=30002,b=1,f=53,q=2,u=30}),
 i(38761,{awp=30002,b=1,f=53,q=2,u=30}),
 i(38762,{awp=30002,b=1,f=53,q=2,u=30})}}),
 q(12329,{awp=30002,coords={{44,47.9,116}},qgs={27581},sourceQuests={12327},u=30}),
-q(11984,{awp=30002,coords={{16.1,47.6,116}},qgs={26424},sourceQuests={12208,12210},u=30,g={
+q(11984,{awp=30002,coords={{16.1,47.6,116}},description="This quest requires the use of a pet named Budd.\nAny pet classes must dismiss their active pets.\nSpeak with Budd in the camp to get him as a pet.\nThe ability to tag a troll can be found on the pet bar.",qgs={26424},sourceQuests={12208,12210},u=30,g={
 s(172278,39116,{awp=30002,b=1,f=24,q=2,u=30}),
 s(172303,39142,{awp=30002,b=1,f=23,q=2,races={1,2,3,4,5,6,7,8,10,11},u=30}),
 s(172291,39129,{awp=30002,b=1,f=20,q=2,u=30}),
@@ -28612,8 +28651,8 @@ crit(8113,{achID=2257,awp=30002,id=1,u=30})}}),
 n(32438,{awp=30002,coords={{61.2,35.2,116},{63.4,36.4,116},{65.2,29.4,116},{65.6,33.6,116},{66.6,41.6,116},{67.6,28,116},{68.8,26,116},{69,31.6,116},{71.6,35,116},{75.2,38.8,116}},u=30,g={
 s(175382,44676,{awp=30002,f=5,lvl=72,q=3,u=30}),
 crit(8114,{achID=2257,awp=30002,id=1,u=30})}})}}),
-h(-58,{awp=30002,description="The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.",u=30,g={
-n(27760,{awp=30002,coords={{13.8,86.4,116}},r=2,u=30,g={
+h(-58,{awp=30002,u=30,g={
+n(27760,{awp=30002,coords={{13.8,86.4,116}},description="Is only visible while your faction controls Venture Bay.",r=2,u=30,g={
 i(38358,{awp=30002,b=1,cost={{"c",201,70}},f=53,lvl=74,pvp=1,q=3,u=30}),
 i(38359,{awp=30002,b=1,cost={{"c",201,70}},f=53,lvl=74,pvp=1,q=3,u=30}),
 i(38360,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,races={1,2,3,4,5,6,7,8,10,11},rwp=50004,u=30}),
@@ -28633,10 +28672,19 @@ i(38364,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,rwp=50004,u=30}),
 i(38363,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,rwp=50004,u=30}),
 i(38362,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,rwp=50004,u=30}),
 i(38361,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,rwp=50004,u=30})}}),
+n(29275,{awp=30002,coords={{34.6,55,116}},description="This vendor is only friendly to Alliance players, and even then it only applies until you finalise your relationship with the people at Silverbrook!",r=2,u=30,g={
+i(40359,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(40356,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(40357,{awp=30002,f=55,lvl=65,q=1,u=30}),
+i(40358,{awp=30002,f=55,lvl=65,q=1,u=30})}}),
+n(26484,{awp=30002,coords={{69.1,40.1,116}},u=30,g={
+i(35794,{awp=30002,lvl=65,q=1,u=30})}}),
+n(29244,{awp=30002,coords={{31.6,59.8,116}},description="Access to this vendor requires completing 'Replenishing the Storehouse' and the following 'Take Their Rear!'.",r=2,u=30,g={
+i(40202,{awp=30002,f=55,lvl=75,q=1,u=30})}}),
 n(26868,{awp=30002,coords={{22.6,66,116}},r=1,u=30,g={
 r(25954,{awp=30002,itemID=21219,learnedAt=175,q=1,requireSkill=185,u=30}),
 r(25704,{awp=30002,itemID=21099,learnedAt=80,q=1,requireSkill=185,u=30})}}),
-n(27730,{awp=30002,coords={{13.8,86.2,116}},r=1,u=30,g={
+n(27730,{awp=30002,coords={{13.8,86.2,116}},description="Is only visible while your faction controls Venture Bay.",r=1,u=30,g={
 i(38358,{awp=30002,b=1,cost={{"c",201,70}},f=53,lvl=74,pvp=1,q=3,u=30}),
 i(38359,{awp=30002,b=1,cost={{"c",201,70}},f=53,lvl=74,pvp=1,q=3,u=30}),
 i(38360,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,races={1,2,3,4,5,6,7,8,10,11},rwp=50004,u=30}),
@@ -28659,9 +28707,12 @@ i(38361,{b=1,cost={{"c",201,30}},f=54,lvl=74,pvp=1,q=3,rwp=50004,u=30})}}),
 n(26229,{awp=30002,coords={{59.6,27.8,116}},r=2,sym={{"select","itemID",30758,30749,30750}},u=30})}}),
 h(-63,{awp=30002,u=30,g={
 i(44981,{awp=30002,coords={{60.5,51.5,116}},crs={33224},description="Kiss this frog.",providers={{"i",44986}},q=1,u=31}),
+i(36743,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30}),
+i(35799,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30}),
 r(54979,{awp=30002,b=1,coords={{68.4,16,116}},crs={26270},itemID=41123,learnedAt=375,q=2,requireSkill=164,u=30}),
-i(36758,{awp=30002,q=1,u=30}),
-r(64051,{awp=30002,b=1,crs={26679,26708,27546,27676},itemID=46108,learnedAt=350,q=2,requireSkill=773,u=30})}})}}),
+i(36758,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30}),
+r(64051,{awp=30002,b=1,crs={26679,26708,27546,27676},itemID=46108,learnedAt=350,q=2,requireSkill=773,u=30}),
+i(35836,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30})}})}}),
 m(117,{awp=30002,icon=236781,lore="Howling Fjord is the eastern-most zone in Northrend, with breathtaking mountains, cliffs, and fortresses. Like Borean Tundra, it is intended for fresh level 10-30 players and introduces them to a variety of factions and lore plots. However, it is considered more challenging to level in this zone because of the steep mountains and windy paths between quest objectives compared to the flat plains of Borean Tundra. Alliance players learn about the reawakened vrykul, the prototype for humans, while Horde players assist the Forsaken in developing a new plague (perhaps with ethical qualms) to defeat the Lich King. Both sides also assist the Tuskarr in putting the spirits of their ancestors to rest, as well as aiding a group of humorous pirates.",u=30,g={
 h(-12,{awp=30002,u=30,g={
 ach(1263,{awp=30002,u=30,g={
@@ -30108,7 +30159,8 @@ r(53936,{awp=30002,b=1,coords={{50.1,31.8,118}},crs={31702,32297},itemID=44564,l
 r(53939,{awp=30002,b=1,coords={{58.5,73.1,118}},crs={30921,30922,31320,31321},itemID=44565,learnedAt=400,q=2,requireSkill=171,u=30}),
 r(53937,{awp=30002,b=1,coords={{52.1,32,118}},crs={32289},itemID=44566,learnedAt=400,q=2,requireSkill=171,u=30}),
 r(53942,{awp=30002,b=1,coords={{50.1,31.8,118}},crs={32290},itemID=44567,learnedAt=400,q=2,requireSkill=171,u=30}),
-r(53938,{awp=30002,b=1,coords={{48,67.8,118}},crs={32349},itemID=44568,learnedAt=400,q=2,requireSkill=171,u=30})}})}}),
+r(53938,{awp=30002,b=1,coords={{48,67.8,118}},crs={32349},itemID=44568,learnedAt=400,q=2,requireSkill=171,u=30}),
+i(43089,{awp=30002,b=1,q=1,u=30})}})}}),
 m(119,{awp=30002,icon=236817,lore="Sholazar Basin is a lush tropical forest in western Northrend. It owes its warm climate to the pylons around the zone, which are maintained by the Titans and also ward off the Scourge. It is a great zone for gathering max-Northrend level items like herbs and ore. There's also some rare beasts hunters like taming for pets, like Loque'nahak. Players will revisit Hemet Nesingwary and prove their hunting prowess for him, become an unwitting ambassador in a faction war between the Oracles and the Frenzyheart tribes, and learn about the power of the pylons.",u=30,g={
 h(-12,{awp=30002,u=30,g={
 ach(1268,{awp=30002,u=30,g={
@@ -30621,7 +30673,8 @@ i(43188,{b=1,f=36,q=3,rwp=50004,u=30}),
 i(43187,{b=1,f=36,q=3,rwp=50004,u=30})}}),
 q(12818,{awp=30002,coords={{41,86.4,120}},qgs={29431},u=30}),
 q(12856,{awp=30002,coords={{53.1,65.7,120}},qgs={29592},sourceQuests={12851},u=30}),
-q(12860,{awp=30002,description="Use Brann's Communicator to pick this quest up.",qgs={29579},r=2,sourceQuests={12858},u=30}),
+q(12860,{awp=30002,description="Use Brann's Communicator to pick this quest up.",qgs={29579},r=2,sourceQuests={12858},u=30,g={
+i(41179,{awp=30002,description="Despite what the item text says, this can only be used on Databanks on Terrace of the Makers, downstairs from The Inventor's Library.",q=1,u=30})}}),
 q(12927,{awp=30002,description="Use Brann's Communicator to pick this quest up.",qgs={29579},r=1,sourceQuests={12926},u=30}),
 q(13063,{awp=30002,coords={{53.1,65.7,120}},qgs={29592},sourceQuests={12856},u=30}),
 q(13423,{awp=30002,coords={{50.8,65.6,120}},isDaily=1,qgs={29796},sourceQuests={12971},u=30,g={
@@ -30876,6 +30929,10 @@ i(44682,{awp=30002,f=51,lvl=76,q=3,u=30})}}),
 n(32630,{awp=30002,coords={{31,69,120},{35,76,120},{51,70,120},{52,34,120}},description="Flies all around the zone in large circular patterns based on the spawn point. Shares respawn with |cFFFFD700Time-Lost Proto-Drake|r.",u=30,g={
 s(175405,44732,{awp=30002,f=5,lvl=78,q=3,u=30}),
 crit(8120,{achID=2257,awp=30002,id=1,u=30})}})}}),
+h(-56,{awp=30002,u=30,g={
+o(193997,{awp=30002,coords={{58.2,62,120},{70.4,59.8,120}},description="Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",minReputation={1119,3000},u=30,g={
+i(44724,{awp=30002,b=1,q=1,u=30}),
+i(44725,{awp=30002,b=1,lvl=77,q=1,u=30})}})}}),
 h(-58,{awp=30002,u=30,g={
 n(30464,{awp=30002,coords={{40.6,84.6,120}},u=30,g={
 mnt(64749,{awp=30002,b=1,collectible=false,itemID=44221,lvl=77,q=1,r=2,u=30}),
@@ -30932,8 +30989,6 @@ h(-63,{awp=30002,u=30,g={
 r(53972,{awp=30002,b=1,crs={29370,29376,30208,30222},itemID=41820,learnedAt=390,q=3,requireSkill=755,u=30}),
 r(53950,{awp=30003,b=1,crs={29570},itemID=41817,learnedAt=390,q=3,requireSkill=755,rwp=40003,u=30}),
 r(54012,{awp=30002,b=1,crs={29792,29793},itemID=41819,learnedAt=390,q=3,requireSkill=755,u=30}),
-i(44724,{awp=30002,b=1,q=1,u=30}),
-i(44725,{awp=30002,b=1,lvl=77,q=1,u=30}),
 i(42780,{awp=30002,q=1,u=30}),
 r(68067,{awp=30002,b=1,crs={29724},itemID=49050,learnedAt=450,q=3,requireSkill=202,u=30}),
 i(43573,{awp=30002,crs={29570},f=53,lvl=80,q=4,u=30})}})}}),

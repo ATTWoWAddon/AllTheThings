@@ -4,7 +4,7 @@
 THOUSAND_BOAT_BASH_HEADER = createHeader({
 	readable = "Thousand Boat Bash",
 	constant = "THOUSAND_BOAT_BASH_HEADER",
-	--icon = ,
+	-- icon = ,
 	eventID = EVENTS.THOUSAND_BOAT_BASH,
 	text = {
 		en = "Thousand Boat Bash",

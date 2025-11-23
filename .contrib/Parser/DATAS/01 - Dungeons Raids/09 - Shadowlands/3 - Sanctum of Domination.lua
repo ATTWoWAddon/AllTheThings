@@ -850,7 +850,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
-		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
+		-- q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
 		q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
 		q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)

@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200193),	-- Manafrond Sandals
 				i(200232),	-- Raptor Talonglaive
 				i(200131),	-- Reclaimed Survivalist's Dagger
-				--i(200212),	-- Sand-Encrusted Graves // This item can drop from 70+ different rares, however there is 1 rare with a 75% chance. Listed under the specific rare with a note. --Goldenshacal October 2025
+				-- i(200212),	-- Sand-Encrusted Graves // This item can drop from 70+ different rares, however there is 1 rare with a 75% chance. Listed under the specific rare with a note. --Goldenshacal October 2025
 				i(200859),	-- Seasoned Hunter's Trophy
 				i(198409),	-- Personal Shell (TOY!)
 				i(200563),	-- Primal Ritual-shell

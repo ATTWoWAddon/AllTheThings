@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
-					["crs"] = { 164218 },	--	Lord Chamberlain
+					["crs"] = { 164218 },	-- Lord Chamberlain
 					["groups"] = {
 						ach(14370),	-- Halls of Atonement
 						-- Legendaries
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
-					["crs"] = { 164218 },	--	Lord Chamberlain
+					["crs"] = { 164218 },	-- Lord Chamberlain
 					["groups"] = {
 						i(178820),	-- Pauldrons of Unleashed Pride
 					},
@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				-- #endif
 				e(2413, {	-- Lord Chamberlain
-					["crs"] = { 164218 },	--	Lord Chamberlain
+					["crs"] = { 164218 },	-- Lord Chamberlain
 					["groups"] = {
 						ach(14410),	-- Heroic: Halls of Atonement
 						i(246286, {	-- Spaulders of Unleashed Pride
@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
-					["crs"] = { 164218 },	--	Lord Chamberlain
+					["crs"] = { 164218 },	-- Lord Chamberlain
 					["groups"] = {
 						ach(14411),	-- Mythic: Halls of Atonement
 						ach(14380),	-- Mythic: Halls of Atonement Guild Run

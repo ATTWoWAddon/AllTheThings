@@ -11,7 +11,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 26.4, 41.3, SURAMAR },
 				}),
 				o(254023, {	-- Arcane Power Unit
-					--["sourceQuest"] = TODO,
+					-- ["sourceQuest"] = TODO,
 					["coord"] = { 35.6, 12.1, SURAMAR },
 					["groups"] = { i(140329) } -- Infinite Stone (CI!)
 				}),
@@ -20,7 +20,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 52.7, 31.3, SURAMAR },
 				}),
 				o(254006, {	-- Enchanted Burial Urn
-					--["sourceQuest"] = TODO,
+					-- ["sourceQuest"] = TODO,
 					["coord"] = { 44.8, 31.0, SURAMAR },
 					["groups"] = { i(140326) } -- Enchanted Burial Urn (CI!)
 				}),
@@ -48,12 +48,12 @@ root(ROOTS.Zones, {
 					["coord"] = { 60.4, 68.5, SURAMAR },
 				}),
 				o(248407, {	-- Kel'danath's Manaflask
-					--["sourceQuest"] = TODO,
+					-- ["sourceQuest"] = TODO,
 					["coord"] = { 21.4, 54.4, SURAMAR },
 					["groups"] = { i(136269) } -- Kel'danath's Manaflask (CI!)
 				}),
 				o(254008, {	-- Kyrtos's Research Notes
-					--["sourceQuest"] = TODO,
+					-- ["sourceQuest"] = TODO,
 					["coord"] = { 26.9, 70.7, SURAMAR },
 					["groups"] = { i(140327) } -- Krytos's Research Notes (CI!)
 				}),
@@ -265,7 +265,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 58.4, 70.6, 685 },	-- Shattered Locus
 				}),
 				o(254009, {	-- Volatile Leyline Crystal
-					--["sourceQuest"] = TODO,
+					-- ["sourceQuest"] = TODO,
 					["coord"] = { 35.5, 52.7, 684 },
 					["groups"] = { i(140328) } -- Volatile Leyline Crystal (CI!)
 				}),

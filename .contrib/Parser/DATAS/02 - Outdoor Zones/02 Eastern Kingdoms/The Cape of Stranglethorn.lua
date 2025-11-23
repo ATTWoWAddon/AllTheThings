@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:: part of loremaster?
+				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:  part of loremaster?
 					["sourceQuests"] = {
 						26592,	-- Diffractory Chromascope
 						26434,	-- Primal Reagents of Power

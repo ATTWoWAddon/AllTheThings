@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { ADDED_10_1_7 },
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-							--	["cr"] = 706,	-- Frostmane Troll Whelp
+							-- ["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
 								{ 32.4, 75.8, DUN_MOROGH },
 							},
@@ -1562,7 +1562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					137,	-- Brewnall Village
 					801,	-- Chill Breeze Valley
 					135,	-- Frostmane Hold
-					--5495,	-- Gnomeregan
+					-- 5495,	-- Gnomeregan
 					211,	-- Iceflow Lake
 					5178,	-- The Toxic Airfield
 				},
@@ -2638,7 +2638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					i(2109, {	-- Frostmane Chain Vest
 						["timeline"] = { ADDED_10_1_7 },
 						["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-						--	["cr"] = 41122,	-- Frostmane Snowstrider
+						-- ["cr"] = 41122,	-- Frostmane Snowstrider
 						["coords"] = {
 							{ 49.0, 35.4, DUN_MOROGH },
 						},
@@ -4036,8 +4036,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["lvl"] = 6,
-					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
-					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
+					-- Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+					-- Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/7 Trapped Miner
@@ -4518,7 +4518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 42.2, 35.6, DUN_MOROGH },
 					["cost"] = {
 						{ "i", 208139, 1 },	-- Ominous Tome

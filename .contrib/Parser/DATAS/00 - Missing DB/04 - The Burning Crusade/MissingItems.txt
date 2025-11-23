@@ -273,7 +273,6 @@ i(23567),	-- zzOLD[PH] Silithus PvP Dust [DEP] \\ [PH] Silithus PvP Dust [DEP]
 i(23568),	-- le of Vials \\ Bundle of Vials
 i(23569),	-- er from the Mag'har \\ Letter from the Mag'har
 i(23584),	-- Modan Lager \\ Loch Modan Lager
-i(23585),	-- thammer Lite \\ Stouthammer Lite
 i(23586),	-- e Peak Pale Ale \\ Aerie Peak Pale Ale
 i(23588),	-- ri Feather \\ Kaliri Feather
 i(23589),	-- har Ancestral Beads \\ Mag'har Ancestral Beads
@@ -531,11 +530,6 @@ i(24382),	-- i's Report \\ Zurai's Report
 i(24383),	-- or Spore \\ Fulgor Spore
 i(24399),	-- awk Missive \\ Sunhawk Missive
 i(24400),	-- Mire Soil Sample \\ Dead Mire Soil Sample
-i(24403),	-- on Fern \\ Common Fern
-i(24404),	-- ed Specimen \\ Ruined Specimen
-i(24405),	-- on Azerothian Species \\ Common Azerothian Species
-i(24406),	-- on Flower \\ Common Flower
-i(24408),	-- le Stalks \\ Edible Stalks
 i(24410),	-- Needle Shrike DEPRECATED
 i(24411),	-- en's Belongings \\ Ikeyen's Belongings
 i(24415),	-- icator Idaar's Letter \\ Vindicator Idaar's Letter
@@ -596,7 +590,6 @@ i(24528),	-- 130 Epic Warrior Cloak
 i(24533),	-- 130 Epic Warrior Neck
 i(24535),	-- 130 Epic Warrior Ring
 i(24538),	-- Bomb \\ Fire Bomb
-i(24540),	-- le Fern \\ Edible Fern
 i(24541),	-- Medicinal Swamp Moss
 i(24542),	-- blood Idol \\ Murkblood Idol
 i(24543),	-- of Ortor of Murkblood \\ Head of Ortor of Murkblood
@@ -929,19 +922,12 @@ i(27634),	-- Saga of Terokk \\ The Saga of Terokk
 i(27676),	-- nge Spores \\ Strange Spores
 i(27679),	-- ic Dawnstone \\ Mystic Dawnstone \\ Sublime Mystic Dawnstone
 i(27729),	-- noid Skull \\ Humanoid Skull
-i(27774),	-- zzOLDMighty Blood Garnet
 i(27785),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
 i(27807),	-- Elemental Gas \\ Air Elemental Gas
 i(27808),	-- Jump-a-tron 4000 Key
-i(27811),	-- zzOLDMighty Blood Garnet
 i(27820),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
 i(27841),	-- red Talon of the Matriarch \\ Severed Talon of the Matriarch
-i(27854),	-- ed Talbuk Venison \\ Smoked Talbuk Venison
-i(27855),	-- har Grainbread \\ Mag'har Grainbread
-i(27856),	-- hyl Berries \\ Skethyl Berries
-i(27857),	-- dar Sharp \\ Garadar Sharp
 i(27859),	-- ar Caps \\ Zangar Caps
-i(27860),	-- fied Draenic Water \\ Purified Draenic Water
 i(27861),	-- rai's Stolen Goods \\ Lathrai's Stolen Goods
 i(27863),	-- Extended Cost Bryanite \\ Brian's Bryanite of Extended Cost
 i(27864),	-- Extended Cost Copying Bryanite \\ Brian's Bryanite of Extended Cost Copying
@@ -1024,7 +1010,6 @@ i(28369),	-- ery Recharging Blaster \\ Battery Recharging Blaster
 i(28376),	-- ar Personnel Roster \\ B'naar Personnel Roster
 i(28388),	-- TCHILTON TEST RUBY
 i(28389),	-- TCHILTON TEST DAWNSTONE
-i(28399),	-- ered Draenic Water \\ Filtered Draenic Water
 i(28408),	-- en Silver Star \\ Broken Silver Star
 i(28417),	-- er Ray Stinger \\ Nether Ray Stinger
 i(28452),	-- dgem Shard \\ Bloodgem Shard
@@ -1036,7 +1021,6 @@ i(28474),	-- us' Compendium - Chapter 3 \\ Krasus' Compendium - Chapter 3 \\ Kra
 i(28475),	-- otrope Oculus \\ Heliotrope Oculus
 i(28478),	-- rch's Primers \\ To'arch's Primers
 i(28479),	-- e of Glacius \\ Stone of Glacius
-i(28486),	-- r's Magnificent Muffin \\ Moser's Magnificent Muffin
 i(28499),	-- koa Hunter's Supplies \\ Arakkoa Hunter's Supplies
 i(28500),	-- il Oil \\ Fossil Oil
 i(28513),	-- nic Rune Stone \\ Demonic Rune Stone
@@ -1131,20 +1115,14 @@ i(29394),	-- bread \\ Lyribread
 i(29395),	-- rmead \\ Ethermead
 i(29396),	-- u Access Crystal \\ Coruu Access Crystal
 i(29397),	-- Access Crystal \\ Duro Access Crystal
-i(29401),	-- kling Southshore Cider \\ Sparkling Southshore Cider
 i(29402),	-- Jessen's Special Slop OLD
 i(29411),	-- Access Crystal \\ Ara Access Crystal
-i(29412),	-- en's Special Slop \\ Jessen's Special Slop
 i(29427),	-- Mark of the Betrayer
 i(29428),	-- y's Bell \\ Bessy's Bell
 i(29429),	-- 's Doom \\ Boom's Doom
 i(29443),	-- dmaul Brutebane Brew \\ Bloodmaul Brutebane Brew
 i(29445),	-- eying Markers \\ Surveying Markers
 i(29447),	-- Zapper \\ Fel Zapper
-i(29448),	-- har Mild Cheese \\ Mag'har Mild Cheese
-i(29449),	-- espire Bagel \\ Bladespire Bagel
-i(29450),	-- ari Grapes \\ Telaari Grapes
-i(29451),	-- thoof Ribs \\ Clefthoof Ribs
 i(29453),	-- eggar Mushroom \\ Sporeggar Mushroom
 i(29454),	-- erwine \\ Silverwine
 i(29459),	-- reum Relay Data \\ Ethereum Relay Data
@@ -1356,8 +1334,6 @@ i(30451),	-- 'goron, Bow of the Torn-Heart \\ Lohn'goron, Bow of the Torn-Heart 
 i(30453),	-- nd Fragment of the Cipher of Damnation \\ Second Fragment of the Cipher of Damnation
 i(30454),	-- or's Lockbox \\ Ar'tor's Lockbox
 i(30455),	-- Monster - 2H Typhoon
-i(30457),	-- eas Sparkling Water \\ Gilneas Sparkling Water
-i(30458),	-- mgarde Muenster \\ Stromgarde Muenster
 i(30462),	-- ok's Boar Whistle \\ Oronok's Boar Whistle
 i(30466),	-- olisk Tooth \\ Crocolisk Tooth
 i(30467),	-- ible Crocolisk Tail \\ Inedible Crocolisk Tail \\ Crocolisk Tail
@@ -1394,7 +1370,6 @@ i(30561),	-- 'nir Crystal \\ Vekh'nir Crystal
 i(30567),	-- ged Vekh'nir Crystal \\ Charged Vekh'nir Crystal
 i(30595),	-- on Codex Key \\ Legion Codex Key
 i(30596),	-- ri Tablet Fragment \\ Baa'ri Tablet Fragment
-i(30610),	-- ed Black Bear Meat \\ Smoked Black Bear Meat
 i(30613),	-- ire Diemetradon Eye \\ Felfire Diemetradon Eye
 i(30614),	-- Bomb \\ Fel Bomb
 i(30615),	-- ani Whiskey \\ Halaani Whiskey
@@ -1788,10 +1763,8 @@ i(32847),	-- r Frost Protection Potion \\ Major Frost Protection Potion
 i(32848),	-- osives Package \\ Explosives Package
 i(32853),	-- r Medals \\ Aldor Medals
 i(32888),	-- Relics of Terokk \\ The Relics of Terokk
-i(32902),	-- led Nethergon Energy \\ Bottled Nethergon Energy
 i(32903),	-- rion Mana Salve \\ Cenarion Mana Salve
 i(32904),	-- rion Healing Salve \\ Cenarion Healing Salve
-i(32905),	-- led Nethergon Vapor \\ Bottled Nethergon Vapor
 i(32906),	-- ned Wolpertinger \\ Stunned Wolpertinger
 i(32907),	-- ertinger Net \\ Wolpertinger Net
 i(32908),	-- Tempest Keep Armaments
@@ -1942,7 +1915,7 @@ i(33995),	-- Indalamar's Ring of Healer Ownage
 i(33996),	-- Indalamar's Ring of 234 Spell Damage
 i(33997),	-- Indalamar's Ring of 400 Attack Power
 i(33998),	-- Indalamar's Ring of 1400 Armor Penetration
-i(34036),	-- QA Test Ring +300 Resilience Rating
+i(34036),	-- QA Test Ring +300 Lifesteal \\ QA Test Ring +300 Resilience Rating
 i(34037),	-- QA Test Ring +100 Hit Rating
 i(34038),	-- QA Test Ring +100 Expertise Rating
 i(34039),	-- Bow of Unusual Slowness
@@ -2220,3 +2193,10 @@ i(191060),	-- Black Sack of Gems
 i(191061),	-- Brilliant Glass
 2.5.4.44833
 i(194101),	-- Netherwhelp's Collar
+2.5.5.64508
+i(265826),	-- Communal Flamewrought Key
+i(265830),	-- Communal Flamewrought Key
+i(265843),	-- Communal Reservoir Key
+i(265845),	-- Communal Auchenai Key
+i(265847),	-- Communal Warpforged Key
+i(265849),	-- Communal Key of Time

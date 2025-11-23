@@ -57,17 +57,6 @@ Missing in Cooking
 
 11.2.7.63642
 r(1245945),	-- [DNT] TWW Cooking Decor Template
-r(1245993),	-- Dornic Mine and Cheese Platter
-r(1245994),	-- Earthen Hospitality Cheese-Like Brick
-r(1245995),	-- Dornic Sliced Mineloaf
-r(1260331),	-- Valdrakken Blossomfruit Platter
-r(1260333),	-- Bruffalon Rib Platter
-r(1260334),	-- Caramel Mint Noodle Dish
-r(1260337),	-- Boralus-Style Lobster Platter
-r(1266541),	-- Kaheti Predator's Assortment
-r(1266555),	-- Drake Kebab Platter
-r(1266560),	-- Hungry Human's Platter
-r(1266563),	-- Mushan Dumpling Stack
 12.0.0.63534
 r(471005),	-- Midnight Cooking
 r(1226166),	-- Farstrider Rations

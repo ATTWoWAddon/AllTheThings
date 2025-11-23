@@ -161,6 +161,55 @@
 146@@@Dawn's Vanguard, %s
 147@@@The Overlord of Dawn, %s
 148@@@Dream Chaser, %s
+3.80.0.64393
+672@@@Dream Chaser, %s
+673@@@The Overlord of Dawn, %s
+674@@@Dawn's Vanguard, %s
+675@@@Northbound Rush, %s
+692@@@Ember Lord %s
+693@@@%s, Brand of Flame
+694@@@%s, the Phoenix Fall
+695@@@%s, Sunstrider's Setback
+696@@@%s, Depth's Demise
+697@@@%s, Coilfang Purifier
+698@@@%s, Scion of the Necropolis
+699@@@Scourgebreaker %s
+700@@@%s, Spellweaver's Ruin
+701@@@Nexus Master %s
+702@@@%s, Onyx Harbinger
+703@@@%s, Drakebane
+704@@@%s, Heart of Ruin
+705@@@%s, Soulflayer's End
+706@@@Titanic Crusader %s
+707@@@%s, Nerub's Bane
+708@@@%s, Dawnbringer
+709@@@Legionbreaker %s
+710@@@%s, Apex Predator
+711@@@%s, Hex Breaker
+712@@@Starbreaker %s
+713@@@%s, the Infinite Maw
+714@@@%s, Keeper of Secrets
+715@@@Tower Master %s
+716@@@%s, Earthsplitter
+717@@@%s, Spine of the Mountain
+718@@@%s, Lord of the Pit
+719@@@Hellfire Champion, %s
+720@@@Wyrm Slayer %s
+721@@@%s, Handler of Whelps
+722@@@%s, Lord of Ashes
+723@@@Chromatic Lord %s
+724@@@%s, the Unscarred
+725@@@Dune Reaver %s
+726@@@%s, Eye of Madness
+727@@@God Slayer %s
+728@@@%s, Usurper
+729@@@%s, Lordaeron's Shadow
+730@@@Twilight Slayer %s
+731@@@%s, Twilight's Eclipse
+732@@@%s, Shadow of the Betrayer
+733@@@%s, the Prepared
+734@@@%s, Ancient Defender
+735@@@%s, Defiler's Doom
 4.0.1.12911
 143@@@Recruit of %s
 144@@@Guardian of %s
@@ -296,13 +345,15 @@
 995@@@Malevolent Skirmisher %s
 996@@@Tyrannical Skirmisher %s
 5.5.2.63832
-672@@@Dream Chaser, %s
-673@@@The Overlord of Dawn, %s
-674@@@Dawn's Vanguard, %s
-675@@@Northbound Rush, %s
+5.5.3.64141
+255@@@Mistwalker %s
+736@@@%s, the Mistborne
+737@@@%s, Heir to the Mist
+5.5.3.64308
+738@@@%s, the Thundering Stampede
+739@@@%s, the Momentous Terror
 6.0.1.18125
 6.0.1.18156
-255@@@Mistwalker %s
 6.0.1.18379
 256@@@%s of the Black Harvest
 6.0.1.18505
@@ -923,3 +974,5 @@
 689@@@%s, Fabled Vanquisher of Nullaeus
 690@@@[PH] VoidspireRaid %s
 691@@@Treasure Seeker %s
+12.0.0.64499
+740@@@Loa-speaker %s

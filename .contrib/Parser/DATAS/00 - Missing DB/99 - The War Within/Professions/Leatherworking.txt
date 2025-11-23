@@ -5,8 +5,6 @@ r(1260328),	-- Zhevra-Stripe Rug
 r(1260485),	-- Zandalari Ritual Drum
 r(1260762),	-- Tauren Leather Fence
 r(1260765),	-- Tauren Fencepost
-r(1261081),	-- Blackrock Bunkbed
-r(1261122),	-- Orcish Sleeping Cot
 r(1261245),	-- Serenity Peak Tent
 r(1261248),	-- Wise Pandaren's Bed
 r(1261672),	-- Loch Modan Bearskin Rug
@@ -23,6 +21,9 @@ r(1269498),	-- Snowfall Tribe Scare-Totem
 r(1269499),	-- Snowfall Tribe Scare-Totem
 r(1269550),	-- Scaled Twilight Mosaic
 r(1270836),	-- Well-Lit Incontinental Couch
+11.2.7.64044
+r(1272580),	-- Gilnean Spare Saddle
+r(1272588),	-- Rolled Scarab Rug
 12.0.0.63534
 r(471012),	-- Midnight Leatherworking
 r(471046),	-- Recraft Equipment
@@ -60,7 +61,7 @@ r(1237516),	-- Axe-Flingin' Bands
 r(1237517),	-- World Tender's Trunkplate
 r(1237518),	-- World Tender's Rootslippers
 r(1237519),	-- World Tender's Barkclasp
-r(1237520),	-- Thalassian Competitor's Chain Chainvest
+r(1237520),	-- Thalassian Competitor's Chain Tunic \\ Thalassian Competitor's Chain Chainvest
 r(1237521),	-- Thalassian Competitor's Chain Stompers
 r(1237522),	-- Thalassian Competitor's Chain Grips
 r(1237523),	-- Thalassian Competitor's Chain Cowl
@@ -123,7 +124,7 @@ r(1237579),	-- Devouring Banding
 r(1246937),	-- Embossed Sin'dorei Fur Rug
 r(1246938),	-- Leather-Bound Haranir Wall Shelf
 r(1246939),	-- Haranir Canopy Bed
-r(1246940),	-- Leather Haranir Bed
+r(1246940),	-- Leather Haranir Table \\ Leather Haranir Bed
 r(1246941),	-- Stitched Haranir Rug
 r(1246942),	-- Sturdy Haranir Chair
 r(1246943),	-- Plush Haranir Leather Pillow
@@ -149,8 +150,6 @@ r(1260328),	-- Zhevra-Stripe Rug
 r(1260485),	-- Zandalari Ritual Drum
 r(1260762),	-- Tauren Leather Fence
 r(1260765),	-- Tauren Fencepost
-r(1261081),	-- Blackrock Bunkbed
-r(1261122),	-- Orcish Sleeping Cot
 r(1261245),	-- Serenity Peak Tent
 r(1261248),	-- Wise Pandaren's Bed
 r(1261672),	-- Loch Modan Bearskin Rug
@@ -167,6 +166,9 @@ r(1269498),	-- Snowfall Tribe Scare-Totem
 r(1269499),	-- Snowfall Tribe Scare-Totem
 r(1269550),	-- Scaled Twilight Mosaic
 r(1270836),	-- Well-Lit Incontinental Couch
+11.2.7.64044
+r(1272580),	-- Gilnean Spare Saddle
+r(1272588),	-- Rolled Scarab Rug
 12.0.0.63534
 r(471012),	-- Midnight Leatherworking
 r(471046),	-- Recraft Equipment
@@ -204,7 +206,7 @@ r(1237516),	-- Axe-Flingin' Bands
 r(1237517),	-- World Tender's Trunkplate
 r(1237518),	-- World Tender's Rootslippers
 r(1237519),	-- World Tender's Barkclasp
-r(1237520),	-- Thalassian Competitor's Chain Chainvest
+r(1237520),	-- Thalassian Competitor's Chain Tunic \\ Thalassian Competitor's Chain Chainvest
 r(1237521),	-- Thalassian Competitor's Chain Stompers
 r(1237522),	-- Thalassian Competitor's Chain Grips
 r(1237523),	-- Thalassian Competitor's Chain Cowl
@@ -267,7 +269,7 @@ r(1237579),	-- Devouring Banding
 r(1246937),	-- Embossed Sin'dorei Fur Rug
 r(1246938),	-- Leather-Bound Haranir Wall Shelf
 r(1246939),	-- Haranir Canopy Bed
-r(1246940),	-- Leather Haranir Bed
+r(1246940),	-- Leather Haranir Table \\ Leather Haranir Bed
 r(1246941),	-- Stitched Haranir Rug
 r(1246942),	-- Sturdy Haranir Chair
 r(1246943),	-- Plush Haranir Leather Pillow

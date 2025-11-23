@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {
 						126832,	-- Skycap'n Kragg
-						--  Shark Bait
+						-- Shark Bait
 					},
 					["groups"] = {
 						i(159633),	-- Sharkbait's Fishhook
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						126847,	-- Captain Raoul
 					},
 					["groups"] = {
-						i(159132),	-- Jolly's Boot Daggeer
+						i(159132),	-- Jolly's Boot Dagger
 						i(159130),	-- Captain's Diplomacy
 						i(158311),	-- Concealed Fencing Plates
 						i(159356),	-- Raoul's Barrelhook Bracers
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
-							--  Shark Bait
+							-- Shark Bait
 						},
 						["groups"] = {
 							i(159633),	-- Sharkbait's Fishhook
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							126847,	-- Captain Raoul
 						},
 						["groups"] = {
-							i(159132),	-- Jolly's Boot Daggeer
+							i(159132),	-- Jolly's Boot Dagger
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
 							i(159356),	-- Raoul's Barrelhook Bracers
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
-							--  Shark Bait
+							-- Shark Bait
 						},
 						["groups"] = {
 							ach(12548),	-- I'm in Charge Now!
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							126847,	-- Captain Raoul
 						},
 						["groups"] = {
-							i(159132),	-- Jolly's Boot Daggeer
+							i(159132),	-- Jolly's Boot Dagger
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
 							i(159356),	-- Raoul's Barrelhook Bracers

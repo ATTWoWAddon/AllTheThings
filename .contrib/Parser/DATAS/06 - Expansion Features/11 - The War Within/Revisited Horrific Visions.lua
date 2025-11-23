@@ -124,9 +124,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- Corruptions quest
 				q(90719, {	-- Borrowing Corruption
+					-- ["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["provider"] = { "n", 238136 },	-- Augermu
 					["coord"] = { 35.2, 68.6, DORNOGAL },
-					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["groups"] = {
 						i(238407),	-- Black Blood Residue
 						i(238678),	-- Lesser Rune of Echoing Void
@@ -152,35 +152,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- TODO: Some masks still have their old quests, and something is funky with criteria of mask of the long night, WIP on Blizzard's end maybe? v0v
 				q(86153, {	-- Faceless Mask of the Dark Imagination
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232919 },	-- Faceless Mask of the Dark Imagination (QI!/QS!)
-					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(86801, {	-- Faceless Mask of Multitudes
 					["provider"] = { "i", 235414 },	-- Faceless Mask of Multitudes (QS!/QI!)
 				}),
 				q(86152, {	-- Faceless Mask of the Daredevil
+					-- ["sourceQuests"] = { 90529 },	-- hqt?
 					["provider"] = { "i", 232918 },	-- Faceless Mask of the Daredevil (QS!/QI!)
-					--["sourceQuests"] = { 90529 },	-- hqt?
 				}),
 				q(86151, {	-- Faceless Mask of the Burned Bridge
+					-- ["sourceQuests"] = { 90530 },	-- hqt?
 					["provider"] = { "i", 232917 },	-- Faceless Mask of the Burned Bridge (QI!/QS!)
-					--["sourceQuests"] = { 90530 },	-- hqt?
 				}),
 				q(86155, {	-- Faceless Mask of the Long Night
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232921 },	-- Faceless Mask of the Long Night (QI!/QS!)
-					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(86154, {	-- Faceless Mask of the Pained
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232920 },	-- Faceless Mask of the Pained (QI!/QS!)
-					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(88652, {	-- Faceless Mask of the Nemesis
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 237434 },	-- Faceless Mask of the Nemesis (QI!/QS!)
-					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(88903, {	-- Faceless Mask of Vengeance
+					-- ["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 238260 },	-- Faceless Mask of Vengeance (QI!/QS!)
-					--["sourceQuests"] = { ?? },	-- ??
 				}),
 			}),
 			n(RARES, {
@@ -447,202 +447,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(VENDORS, {
-				n(238136, {	-- Augermu
-					["sourceQuest"] = 90719,	-- Borrowing Corruption
-					["coord"] = { 35.2, 68.6, DORNOGAL },
-					["groups"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
-						i(238678),	-- Lesser Rune of Echoing Void
-						i(239084),	-- Lesser Rune of Gushing Wound
-						i(239078),	-- Lesser Rune of Infinite Stars
-						i(239088),	-- Lesser Rune of the Twisted Appendage
-						i(239093),	-- Lesser Rune of the Void Ritual
-						i(238403),	-- Lesser Rune of Twilight Devastation
-						i(238680, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Echoing Void
-						i(239086, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Gushing Wound
-						i(239080, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Infinite Stars
-						i(239090, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of the Twisted Appendage
-						i(239095, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of the Void Ritual
-						i(238405, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Twilight Devastation
-					}),
-				}),
-				n(238544, {	-- Chreni "HEROIC/Hero Quality Vendor"
-					["sourceAchievement"] = 41874,	-- Symphony of Masks
-					["coord"] = { 33.8, 68.6, DORNOGAL },
-					["groups"] = appendAllGroups(
-						{
-							i(242623, {	-- Enchanted Warbound Purifying Kit
-								["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
-							}),
-						},
-						bubbleDown({["modID"] = 84}, {
-							i(236892, {	-- Void-Touched Battle Staff
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236896, {	-- Void-Touched Blade
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236884, {	-- Void-Touched Bludgeon
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236894, {	-- Void-Touched Bow
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236901, {	-- Void-Touched Broadsword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236900, {	-- Void-Touched Claws
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236898, {	-- Void-Touched Cleaver
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236903, {	-- Void-Touched Glaive
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236885, {	-- Void-Touched Gladius
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236902, {	-- Void-Touched Greatsword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236897, {	-- Void-Touched Hacker
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236904, {	-- Void-Touched Lantern
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236888, {	-- Void-Touched Occular
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236891, {	-- Void-Touched Polearm
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236883, {	-- Void-Touched Pummeler
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236882, {	-- Void-Touched Ritual Knife
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236887, {	-- Void-Touched Sharpshooter
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236905, {	-- Void-Touched Shield
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236881, {	-- Void-Touched Shank
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236895, {	-- Void-Touched Spellblade
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236890, {	-- Void-Touched Spear
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236886, {	-- Void-Touched Sword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236893, {	-- Void-Touched Stave
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236899, {	-- Void-Touched Wand
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236889, {	-- Void-Touched Waraxe
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-						})),
-				}),
-				n(238546, {	-- Rhythferr "NORMAL/Champion Quality Vendor"
-					["sourceAchievement"] = 41857,	-- Masked Soliloquy
-					["coord"] = { 34.1, 68.5, DORNOGAL },
-					["groups"] = appendAllGroups(
-						{
-							i(242622, {	-- Warbound Purifying Kit
-								["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
-							}),
-						},
-						bubbleDown({["modID"] = 82}, {
-							i(236892, {	-- Void-Touched Battle Staff
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236896, {	-- Void-Touched Blade
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236884, {	-- Void-Touched Bludgeon
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236894, {	-- Void-Touched Bow
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236901, {	-- Void-Touched Broadsword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236900, {	-- Void-Touched Claws
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236898, {	-- Void-Touched Cleaver
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236903, {	-- Void-Touched Glaive
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236885, {	-- Void-Touched Gladius
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236902, {	-- Void-Touched Greatsword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236897, {	-- Void-Touched Hacker
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236904, {	-- Void-Touched Lantern
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236888, {	-- Void-Touched Occular
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236891, {	-- Void-Touched Polearm
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236883, {	-- Void-Touched Pummeler
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236882, {	-- Void-Touched Ritual Knife
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236887, {	-- Void-Touched Sharpshooter
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236905, {	-- Void-Touched Shield
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236881, {	-- Void-Touched Shank
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236895, {	-- Void-Touched Spellblade
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236890, {	-- Void-Touched Spear
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236886, {	-- Void-Touched Sword
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236893, {	-- Void-Touched Stave
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236899, {	-- Void-Touched Wand
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-							i(236889, {	-- Void-Touched Waraxe
-								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-							}),
-						})),
-				}),
-				n(238545, {	-- TickTak "LFR/Veteran Quality Vendor"
-					["coord"] = { 33.9, 68.8, DORNOGAL },
-					["sourceAchievement"] = 41873,	-- Incremental Progress
-					["groups"] = bubbleDown({["modID"] = 83}, {
+				n(COMMON_VENDOR_ITEMS, {
+					["crs"] = {
+						238544,	-- Chreni "HEROIC/Hero Quality Vendor"
+						238546,	-- Rhythferr "NORMAL/Champion Quality Vendor"
+						238545,	-- TickTak "LFR/Veteran Quality Vendor"
+					},
+					["groups"] = {
 						i(236892, {	-- Void-Touched Battle Staff
 							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
 						}),
@@ -718,7 +529,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(236889, {	-- Void-Touched Waraxe
 							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
 						}),
+					},
+				}),
+				n(238136, {	-- Augermu
+					["sourceQuest"] = 90719,	-- Borrowing Corruption
+					["coord"] = { 35.2, 68.6, DORNOGAL },
+					["groups"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
+						i(238678),	-- Lesser Rune of Echoing Void
+						i(239084),	-- Lesser Rune of Gushing Wound
+						i(239078),	-- Lesser Rune of Infinite Stars
+						i(239088),	-- Lesser Rune of the Twisted Appendage
+						i(239093),	-- Lesser Rune of the Void Ritual
+						i(238403),	-- Lesser Rune of Twilight Devastation
+						i(238680, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Echoing Void
+						i(239086, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Gushing Wound
+						i(239080, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Infinite Stars
+						i(239090, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of the Twisted Appendage
+						i(239095, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of the Void Ritual
+						i(238405, {["cost"] = {{"c", 3149, 1000}} }),	-- Greater Rune of Twilight Devastation
 					}),
+				}),
+				n(238544, {	-- Chreni "HEROIC/Hero Quality Vendor"
+					["sourceAchievement"] = 41874,	-- Symphony of Masks
+					["coord"] = { 33.8, 68.6, DORNOGAL },
+					["groups"] = {
+						i(242623, {	-- Enchanted Warbound Purifying Kit
+							["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
+						}),
+					},
+				}),
+				n(238546, {	-- Rhythferr "NORMAL/Champion Quality Vendor"
+					["sourceAchievement"] = 41857,	-- Masked Soliloquy
+					["coord"] = { 34.1, 68.5, DORNOGAL },
+					["groups"] = {
+						i(242622, {	-- Warbound Purifying Kit
+							["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
+						}),
+					},
+				}),
+				n(238545, {	-- TickTak "LFR/Veteran Quality Vendor"
+					["coord"] = { 33.9, 68.8, DORNOGAL },
+					["sourceAchievement"] = 41873,	-- Incremental Progress
 				}),
 				n(238138, {	-- Torie
 					["coord"] = { 34.4, 68.4, DORNOGAL },
@@ -1170,10 +1021,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(90529, {name="Valley of Honor & Mask"}),	-- pop after clearing Valley of Honor with 1 mask (mask sourceQuest?)
 		q(90530, {name="Valley of Wisdom & Mask"}),	-- pop after clearing Valley of Wisdom with 1 mask (new masks sourceQuest?)
 		q(90531),	-- When looting Twisted Skull-Scypthe Handlebars
-		--^ one of it could be tribute upgrade?
+		-- ^ one of it could be tribute upgrade?
 		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
+		-- 87389 & 88905 also pop on 2nd run (without quests in stormwind)
 		q(87381, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
 		q(88906, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
 		q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?

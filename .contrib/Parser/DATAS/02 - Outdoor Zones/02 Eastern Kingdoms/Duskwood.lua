@@ -2291,7 +2291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
 					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
 					["providers"] = {
-						--{ "o",  },	-- TODO: Find ObjectID
+						-- { "o",  },	-- TODO: Find ObjectID
 						{ "i", 210250 },	-- Engraved Gold Ring
 						{ "i", 210251 },	-- Engraved Silver Ring
 					},

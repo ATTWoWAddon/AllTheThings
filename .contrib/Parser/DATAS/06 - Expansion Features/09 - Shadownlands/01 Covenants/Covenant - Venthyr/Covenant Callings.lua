@@ -49,8 +49,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(60463, {	-- Anima Appeal
-					--["provider"] = { "n",  },	--
-					--["coord"] = { X, Y, SINFALL_DEPTHS },
+					-- ["provider"] = { "n",  },	--
+					-- ["coord"] = { X, Y, SINFALL_DEPTHS },
 					["groups"] = {
 						i(181556),	-- Tribute of the Court
 					},

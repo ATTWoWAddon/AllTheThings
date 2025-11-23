@@ -220,6 +220,17 @@ namespace ATT
             return false;
         }
 
+        public static bool TryGetValue(this IDictionary<string, object> dict, out Providers value)
+        {
+            if (dict != null && dict.TryGetValue(Providers.Field, out object o) && o is Providers val)
+            {
+                value = val;
+                return true;
+            }
+            value = null;
+            return false;
+        }
+
         /// <summary>
         /// Get a list of objects from the dictionary.
         /// </summary>

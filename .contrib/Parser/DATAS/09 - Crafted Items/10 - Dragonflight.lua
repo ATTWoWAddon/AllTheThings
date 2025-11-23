@@ -341,8 +341,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Artisan Curios
 			FirstCraft(74308, 400270, ADDED_10_0_7);	-- Draconic Suppression Powder
 			-- Decor
-			--FirstCraft(XXXXX, 1261882, ADDED_11_2_7);	-- Dragon's Elixir Bottle
-			--FirstCraft(XXXXX, 1261885, ADDED_11_2_7);	-- Verdant Valdrakken Vase
+			-- FirstCraft(XXXXX, 1261882, ADDED_11_2_7);	-- Dragon's Elixir Bottle
+			-- FirstCraft(XXXXX, 1261885, ADDED_11_2_7);	-- Verdant Valdrakken Vase
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -595,8 +595,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Legendary
 			FirstCraft(75418, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
 			-- Decor
-			--FirstCraft(XXXXX, 1261892, ADDED_11_2_7);	-- Valdrakken Hanging Cauldron
-			--FirstCraft(XXXXX, 1261896, ADDED_11_2_7);	-- Wingrest Signal Brazier
+			-- FirstCraft(XXXXX, 1261892, ADDED_11_2_7);	-- Valdrakken Hanging Cauldron
+			-- FirstCraft(XXXXX, 1261896, ADDED_11_2_7);	-- Wingrest Signal Brazier
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
@@ -1014,8 +1014,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Legendary
 			FirstCraft(78011, 422338, ADDED_10_2_0);	-- Shalasar's Sophic Vellum
 			-- Decor
-			--FirstCraft(XXXXX, 1261933, ADDED_11_2_7);	-- Draconic Scribe's Basin
-			--FirstCraft(XXXXX, 1261919, ADDED_11_2_7);	-- Five Flights' Grimoire
+			-- FirstCraft(XXXXX, 1261933, ADDED_11_2_7);	-- Draconic Scribe's Basin
+			-- FirstCraft(XXXXX, 1261919, ADDED_11_2_7);	-- Five Flights' Grimoire
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air (ILLUSION!)

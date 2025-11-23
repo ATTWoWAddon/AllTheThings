@@ -185,10 +185,17 @@ s(125580)/i(13294),	--
 s(125656)/i(13377),	-- ature Cannon Balls \\ Miniature Cannon Balls
 s(125721)/i(13472),	--
 s(125765)/i(13516),	--
+s(125799)/i(13586),	-- Test Crit Chest
 s(125800)/i(13602),	-- Greater Spellstone (DEPRECATED) \\ Greater Spellstone
 s(125801)/i(13603),	-- Major Spellstone (DEPRECATED) \\ Major Spellstone
+s(125890)/i(13710),	-- Test Stamina Chest
+s(125891)/i(13711),	-- Test Attack Power Chest
 s(125892)/i(13712),	-- Test Sword Chest
+s(125893)/i(13713),	-- Test Dodge Chest
+s(125894)/i(13714),	-- Test Parry Chest
 s(125895)/i(13715),	-- Test Block Chest
+s(125896)/i(13716),	-- Test Haste Chest
+s(125897)/i(13717),	-- Test Hit Chance Chest
 s(126075)/i(13919),	--
 s(126692)/i(14689),	--
 s(126693)/i(14690),	--
@@ -208,6 +215,18 @@ s(126706)/i(14705),	--
 s(126795)/i(14819),	--
 s(127026)/i(15089),	--
 s(127866)/i(15997),	-- ium Shells \\ Thorium Shells
+s(127883)/i(16026),	-- PVP Plate Helm Alliance
+s(127884)/i(16027),	-- PVP Plate Breastplate Alliance
+s(127885)/i(16028),	-- PVP Plate Legplates Alliance
+s(127886)/i(16029),	-- PVP Plate Gauntlets Alliance
+s(127887)/i(16030),	-- PVP Plate Boots Alliance
+s(127888)/i(16031),	-- PVP Plate Shoulder Alliance
+s(127890)/i(16033),	-- PVP Plate Wrist Alliance
+s(127891)/i(16034),	-- PVP Plate Cloak Alliance
+s(127892)/i(16035),	-- PVP Cloth Helm Horde
+s(127893)/i(16036),	-- PVP Cloth Robe Horde
+s(127894)/i(16037),	-- PVP Cloth Legs Horde
+s(127895)/i(16038),	-- PVP Cloth Shoulder Horde
 s(127962)/i(16128),	--
 s(127964)/i(16130),	--
 s(127967)/i(16133),	--
@@ -306,6 +325,20 @@ s(131066)/i(20571),	-- en Female Mask \\ Tauren Female Mask \\ Flimsy Female Tau
 s(131067)/i(20572),	-- en Male Mask \\ Tauren Male Mask \\ Flimsy Male Tauren Mask
 s(131068)/i(20573),	-- ad Male Mask \\ Undead Male Mask \\ Flimsy Male Undead Mask
 s(131069)/i(20574),	-- ad Female Mask \\ Undead Female Mask \\ Flimsy Female Undead Mask
+s(131264)/i(20773),	-- 63 green shaman coif
+s(131265)/i(20774),	-- 63 green shaman pauldrons
+s(131266)/i(20775),	-- 63 green shaman vest
+s(131268)/i(20777),	-- 63 green shaman gauntlets
+s(131270)/i(20779),	-- 63 green shaman kilt
+s(131271)/i(20780),	-- 63 green shaman boots
+s(131273)/i(20782),	-- 63 green shaman back
+s(131276)/i(20785),	-- 90 green shaman back
+s(131278)/i(20787),	-- 90 green shaman boots
+s(131279)/i(20788),	-- 90 green shaman coif
+s(131281)/i(20790),	-- 90 green shaman gauntlets
+s(131282)/i(20791),	-- 90 green shaman kilt
+s(131284)/i(20793),	-- 90 green shaman pauldrons
+s(131286)/i(20795),	-- 90 green shaman vest
 s(131302)/i(20811),	--
 s(131393)/i(20902),	-- uit's Pants \\ Recruit's Pants
 s(131394)/i(20903),	-- uit's Boots \\ Recruit's Boots
@@ -325,8 +358,37 @@ s(131611)/i(21171),	-- ed Festive Mug \\ Filled Festive Mug
 s(131612)/i(21172),	--
 s(131613)/i(21173),	-- Empty Festive Mug
 s(131614)/i(21174),	-- y Festive Mug \\ Empty Festive Mug
+s(131858)/i(21419),	-- AHNQIRAJ TEST ITEM A CLOTH LEGS
+s(131859)/i(21420),	-- AHNQIRAJ TEST ITEM B LEATHER CHEST
+s(131860)/i(21421),	-- AHNQIRAJ TEST ITEM C MAIL CHEST
+s(131861)/i(21422),	-- AHNQIRAJ TEST ITEM D PLATE CHEST
+s(131862)/i(21423),	-- AHNQIRAJ TEST ITEM B LEATHER PANTS
+s(131863)/i(21424),	-- AHNQIRAJ TEST ITEM B LEATHER SHOULDER
+s(131864)/i(21425),	-- AHNQIRAJ TEST ITEM B LEATHER BELT
+s(131865)/i(21426),	-- AHNQIRAJ TEST ITEM B LEATHER HELM
+s(131866)/i(21427),	-- AHNQIRAJ TEST ITEM B LEATHER BOOTS
+s(131867)/i(21428),	-- AHNQIRAJ TEST ITEM B LEATHER GAUNTLETS
+s(131868)/i(21429),	-- AHNQIRAJ TEST ITEM A CLOTH BELT
+s(131869)/i(21430),	-- AHNQIRAJ TEST ITEM A CLOTH ROBE
+s(131870)/i(21431),	-- AHNQIRAJ TEST ITEM A CLOTH FEET
+s(131871)/i(21432),	-- AHNQIRAJ TEST ITEM B LEATHER BRACER
+s(131872)/i(21433),	-- AHNQIRAJ TEST ITEM A CLOTH BRACER
+s(131873)/i(21434),	-- AHNQIRAJ TEST ITEM A CLOTH HELM
+s(131874)/i(21435),	-- AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
+s(131876)/i(21437),	-- AHNQIRAJ TEST ITEM A CLOTH GLOVES
 s(131878)/i(21439),	-- AHNQIRAJ TEST ITEM D PLATE HELM
+s(131879)/i(21440),	-- AHNQIRAJ TEST ITEM D PLATE LEGS
+s(131880)/i(21441),	-- AHNQIRAJ TEST ITEM D PLATE BELT
+s(131881)/i(21442),	-- AHNQIRAJ TEST ITEM D PLATE BOOTS
+s(131882)/i(21443),	-- AHNQIRAJ TEST ITEM D PLATE SHOULDERS
+s(131883)/i(21444),	-- AHNQIRAJ TEST ITEM D PLATE GLOVES
 s(131884)/i(21445),	-- AHNQIRAJ TEST ITEM D PLATE BRACER
+s(131885)/i(21446),	-- AHNQIRAJ TEST ITEM C MAIL HELM
+s(131886)/i(21447),	-- AHNQIRAJ TEST ITEM C MAIL SHOULDERS
+s(131887)/i(21448),	-- AHNQIRAJ TEST ITEM C MAIL LEGS
+s(131888)/i(21449),	-- AHNQIRAJ TEST ITEM C MAIL BOOTS
+s(131889)/i(21450),	-- AHNQIRAJ TEST ITEM C MAIL GLOVES
+s(131890)/i(21451),	-- AHNQIRAJ TEST ITEM C MAIL BELT
 s(132205)/i(21797),	--
 s(132206)/i(21798),	--
 s(132207)/i(21799),	--
@@ -335,7 +397,34 @@ s(133045)/i(22646),	-- Master Spellstone (DEPRECATED) \\ Master Spellstone
 s(133142)/i(22743),	-- dsail Sash \\ Bloodsail Sash
 s(133150)/i(22751),	--
 s(133181)/i(22782),	-- dorei Cloak of Warding \\ Sin'dorei Cloak of Warding
+s(133398)/i(22999),	-- rd of the Argent Dawn \\ Tabard of the Argent Dawn
 s(133450)/i(23051),	-- Monster - Bow, Raid Snake ZG
+s(133477)/i(23078),	-- tlets of Undead Slaying \\ Gauntlets of Undead Slaying
+s(133480)/i(23081),	-- wraps of Undead Slaying \\ Handwraps of Undead Slaying
+s(133481)/i(23082),	-- guards of Undead Slaying \\ Handguards of Undead Slaying
+s(133483)/i(23084),	-- es of Undead Cleansing \\ Gloves of Undead Cleansing
+s(133484)/i(23085),	-- of Undead Cleansing \\ Robe of Undead Cleansing
+s(133486)/i(23087),	-- stplate of Undead Slaying \\ Breastplate of Undead Slaying
+s(133487)/i(23088),	-- tguard of Undead Slaying \\ Chestguard of Undead Slaying
+s(133488)/i(23089),	-- c of Undead Slaying \\ Tunic of Undead Slaying
+s(133489)/i(23090),	-- ers of Undead Slaying \\ Bracers of Undead Slaying
+s(133490)/i(23091),	-- ers of Undead Cleansing \\ Bracers of Undead Cleansing
+s(133491)/i(23092),	-- tguards of Undead Slaying \\ Wristguards of Undead Slaying
+s(133492)/i(23093),	-- twraps of Undead Slaying \\ Wristwraps of Undead Slaying
+s(133523)/i(23124),	-- f of Balzaphon \\ Staff of Balzaphon
+s(133525)/i(23126),	-- tband of Balzaphon \\ Waistband of Balzaphon
+s(133526)/i(23127),	-- k of Revanchion \\ Cloak of Revanchion
+s(133527)/i(23128),	-- Shadow's Grasp \\ The Shadow's Grasp
+s(133528)/i(23129),	-- ers of Mending \\ Bracers of Mending
+s(133531)/i(23132),	-- Blackwood's Blade \\ Lord Blackwood's Blade
+s(133538)/i(23139),	-- Blackwood's Buckler \\ Lord Blackwood's Buckler
+s(133555)/i(23156),	-- kwood's Thigh \\ Blackwood's Thigh
+s(133567)/i(23168),	-- n's Focal Dagger \\ Scorn's Focal Dagger
+s(133569)/i(23170),	-- Frozen Clutch \\ The Frozen Clutch
+s(133570)/i(23171),	-- Axe of Severing \\ The Axe of Severing
+s(133572)/i(23173),	-- ination Skin Leggings \\ Abomination Skin Leggings
+s(133576)/i(23177),	-- Falther'ess' Finger \\ Lady Falther'ess' Finger
+s(133577)/i(23178),	-- le of Lady Falther'ess \\ Mantle of Lady Falther'ess
 s(133611)/i(23212),	-- Scrapper's Vest
 s(133612)/i(23213),	-- Scrapper's Pants
 s(133747)/i(23349),	-- Battleworn Shoes
@@ -475,6 +564,7 @@ s(141121)/i(30775),	-- red Bone Shield \\ Layered Bone Shield
 s(141123)/i(30777),	-- r Heavy Belt \\ Aldor Heavy Belt
 s(141127)/i(30781),	-- hari Chain Vest \\ Mag'hari Chain Vest
 s(141130)/i(30784),	-- Mag'hari Gauntlets \\ Worn Mag'hari Gauntlets
+s(141193)/i(30847),	-- X-52 Rocket Helmet
 s(141266)/i(30920),	-- QR 10574 Cloth Mage Chest
 s(141267)/i(30921),	-- QR 10637 Cloth Mage Legs
 s(141280)/i(30934),	-- QR 10574 Leather Rogue Legs
@@ -582,6 +672,7 @@ s(145402)/i(37740),	-- al Gladiator's Swift Judgment \\ Brutal Gladiator's Swift
 s(145450)/i(38275),	--
 s(145454)/i(38279),	--
 s(145479)/i(38352),	--
+s(145487)/i(38506),	-- Don Carlos' Famous Hat
 s(145508)/i(171470),	--
 s(145532)/i(185985),	-- Communal Stone of Onslaught
 s(145534)/i(185987),	-- Communal Stone of Wisdom
@@ -592,15 +683,70 @@ s(146100)/i(4574),	--
 s(146101)/i(5856),	-- Monster - Throwing Axe
 s(146102)/i(6886),	-- Monster - Throwing Knife
 s(146103)/i(7248),	-- Twain TEST Cloak
+s(146106)/i(13727),	-- [PH] Brilliant Dawn Gloves
+s(146107)/i(13728),	-- [PH] Shining Dawn Gloves
 s(146108)/i(13729),	-- [PH] Brilliant Dawn Mitts
+s(146109)/i(13730),	-- [PH] Brilliant Dawn Fists
+s(146110)/i(13731),	-- [PH] Brilliant Dawn Gauntlets
 s(146111)/i(13735),	-- [PH] Shining Dawn Mitts
+s(146112)/i(13736),	-- [PH] Shining Dawn Fists
+s(146113)/i(13737),	-- [PH] Shining Dawn Gauntlets
+s(146114)/i(13738),	-- [PH] Cloth Bracers of the Brilliant Dawn
+s(146115)/i(13739),	-- [PH] Cloth Bracers of the Rising Dawn
+s(146116)/i(13740),	-- [PH] Cloth Bracers of the Shining Dawn
+s(146117)/i(13741),	-- [PH] Leather Bracers of the Brilliant Dawn
+s(146118)/i(13742),	-- [PH] Mail Bracers of the Brilliant Dawn
+s(146119)/i(13743),	-- [PH] Plate Bracers of the Brilliant Dawn
+s(146120)/i(13744),	-- [PH] Plate Bracers of the Rising Dawn
+s(146121)/i(13745),	-- [PH] Plate Bracers of the Shining Dawn
+s(146122)/i(13746),	-- [PH] Mail Bracers of the Rising Dawn
+s(146123)/i(13747),	-- [PH] Mail Bracers of the Shining Dawn
+s(146124)/i(13748),	-- [PH] Leather Bracers of the Shining Dawn
+s(146125)/i(13749),	-- [PH] Leather Bracers of the Rising Dawn
+s(146126)/i(13762),	-- [PH] Robe of the Brilliant Dawn
+s(146127)/i(13763),	-- [PH] Robe of the Rising Dawn
+s(146128)/i(13764),	-- [PH] Robe of the Shining Dawn
+s(146129)/i(13765),	-- [PH] Leather Chestguard of the Brilliant Dawn
+s(146130)/i(13766),	-- [PH] Leather Chestguard of the Shining Dawn
+s(146131)/i(13767),	-- [PH] Leather Chestguard of the Rising Dawn
+s(146132)/i(13768),	-- [PH] Mail Chestguard of the Brilliant Dawn
+s(146133)/i(13769),	-- [PH] Mail Chestguard of the Shining Dawn
+s(146134)/i(13770),	-- [PH] Mail Chestguard of the Rising Dawn
+s(146135)/i(13771),	-- [PH] Plate Chestguard of the Brilliant Dawn
+s(146136)/i(13772),	-- [PH] Plate Chestguard of the Rising Dawn
+s(146137)/i(13773),	-- [PH] Plate Chestguard of the Shining Dawn
 s(146138)/i(13774),	-- [PH] Cloth Leggings of the Brilliant Dawn
+s(146139)/i(13775),	-- [PH] Cloth Leggings of the Rising Dawn
+s(146140)/i(13776),	-- [PH] Cloth Leggings of the Shining Dawn
+s(146141)/i(13777),	-- [PH] Leather Leggings of the Brilliant Dawn
+s(146142)/i(13778),	-- [PH] Leather Leggings of the Rising Dawn
+s(146143)/i(13779),	-- [PH] Leather Leggings of the Shining Dawn
+s(146144)/i(13780),	-- [PH] Mail Leggings of the Brilliant Dawn
+s(146145)/i(13781),	-- [PH] Mail Leggings of the Rising Dawn
+s(146146)/i(13782),	-- [PH] Mail Leggings of the Shining Dawn
+s(146147)/i(13783),	-- [PH] Plate Leggings of the Brilliant Dawn
+s(146148)/i(13784),	-- [PH] Plate Leggings of the Rising Dawn
+s(146149)/i(13785),	-- [PH] Plate Leggings of the Shining Dawn
 s(146150)/i(13786),	-- [PH] Brilliant Dawn Hat
+s(146151)/i(13788),	-- [PH] Shining Dawn Hat
 s(146152)/i(13789),	-- [PH] Brilliant Dawn Cap
+s(146153)/i(13791),	-- [PH] Shining Dawn Cap
 s(146154)/i(13792),	-- [PH] Brilliant Dawn Coif
+s(146155)/i(13794),	-- [PH] Shining Dawn Coif
 s(146156)/i(13795),	-- [PH] Brilliant Dawn Helm
+s(146157)/i(13797),	-- [PH] Shining Dawn Helm
+s(146158)/i(13798),	-- [PH] Cloth Boots of the Brilliant Dawn
 s(146159)/i(13799),	-- [PH] Cloth Boots of the Rising Dawn
 s(146160)/i(13800),	-- [PH] Cloth Boots of the Shining Dawn
+s(146161)/i(13801),	-- [PH] Leather Boots of the Brilliant Dawn
+s(146162)/i(13802),	-- [PH] Leather Boots of the Rising Dawn
+s(146163)/i(13803),	-- [PH] Leather Boots of the Shining Dawn
+s(146164)/i(13804),	-- [PH] Mail Boots of the Brilliant Dawn
+s(146165)/i(13805),	-- [PH] Mail Boots of the Rising Dawn
+s(146166)/i(13806),	-- [PH] Mail Boots of the Shining Dawn
+s(146167)/i(13807),	-- [PH] Plate Boots of the Brilliant Dawn
+s(146168)/i(13808),	-- [PH] Plate Boots of the Rising Dawn
+s(146169)/i(13809),	-- [PH] Plate Boots of the Shining Dawn
 s(146174)/i(25861),	-- e Throwing Axe \\ Crude Throwing Axe
 s(146175)/i(25872),	-- nced Throwing Dagger \\ Balanced Throwing Dagger
 s(146176)/i(25873),	-- Throwing Knife \\ Keen Throwing Knife

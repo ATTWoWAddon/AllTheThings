@@ -340,3 +340,11 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		}),
 	},
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(TRADING_CARD_GAME, {
+		q(83005, name(HEADERS.Item, 79769)),	-- Redeemed Demon Hunter's Aspect
+		q(83013, name(HEADERS.Item, 69227)),	-- Redeemed Fool's Gold
+		q(83004, name(HEADERS.Item, 72161)),	-- Redeemed Spurious Sarcophagus
+		q(83012, name(HEADERS.Item, 69215)),	-- Redeemed War Party Hitching Post
+	}),
+}));

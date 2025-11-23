@@ -1495,21 +1495,20 @@ i(141605);	-- Flight Master's Whistle
 i(131717);	-- Starlight Beacon
 i(138111);	-- Stormforged Grapple Launcher
 -- #endif
-
---- UNSORTED ---
-i(254666);	-- Lil' Exodar
+i(254666);	-- Exodar Replica
+i(263489);	-- Naaru's Enfold
 
 ------------------
 -- PATCH 11.2.7 --
 ------------------
 i(242520);	-- Festival Hot Air Balloon
 i(251491);	-- Magical Pet Clicker
---- UNSORTED ---
 
 ------------------
 -- PATCH 12.0.0 --
 ------------------
 i(256881);	-- Steward's Bauble
+i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256893);	-- Wretched Dredger's Brand
 --- UNSORTED ---
 i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
@@ -1521,17 +1520,18 @@ i(251633);	-- Bursting Bounty Bundle
 i(265100);	-- Corewarden's Hearthstone
 i(264672);	-- Cosmic Ritual Stone
 i(264413);	-- Dominating Victory
+i(266370);	-- Dundun's Abundant Travel Method
 i(263244);	-- Enigmatic Fountain
 i(263975);	-- Feeling Fielder Mk. 7
 i(264517);	-- Galactic Flag of Victory
 i(259084);	-- Gift of the Cycle
 i(252265);	-- Hexed Potatoad Mucus
 i(263871);	-- Holy Pet Leash
+i(267139);	-- Hungry Black Hole
 i(264695);	-- Interdimensional Parcel Signal
 i(243304);	-- Jubilant Snowman Costume
 i(250320);	-- Lightgraft
 i(264414);	-- Midnight Delver's Flare Gun
-i(263489);	-- Naaru's Enfold
 i(253629);	-- Personal Key to the Arcantina
 i(262431);	-- Pocket Mushroom Jump Pad
 i(251903);	-- Potatoad Egg
@@ -1540,6 +1540,5 @@ i(245580);	-- Rolling Snowball
 i(250319);	-- Shadowgraft
 i(258963);	-- Shroom Jumper's Parachute
 i(259240);	-- Sin'dorei Wine
-i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(263198);	-- Valdekar's Special
 i(256552);	-- Verdant Rutaani Seed

@@ -439,12 +439,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				q(80145, {	-- The Motherlode
 					["sourceQuests"] = { 79028 },	-- We Require More Minerals
 					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
 				}),
 				q(80517, {	-- Back to Where it Began
 					["sourceQuests"] = { 80145 },	-- The Motherlode
 					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
+					-- ["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
 				}),
 				q(79029, {	-- It's Sabotage
 					["sourceQuests"] = { 80517 },	-- Back to Where it Began
@@ -630,9 +630,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["provider"] = { "n", 227436 },	-- Archmage Khadgar
 					["coord"] = { 42.5, 27.1, DORNOGAL },
-					--["groups"] = {
-					--	spell(458818),	-- Title: Witness of the Kirin Tor
-					--},
+					-- ["groups"] = {
+						-- spell(458818),	-- Title: Witness of the Kirin Tor
+					-- },
 				}),
 				q(83031, {	-- The Hardest Part
 					["sourceQuests"] = { 84223 },	-- Survivor's Guilt
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 						83555,	-- Mysterious Necklace
 					},
 					["provider"] = { "n", 227208 },	-- Kalecgos
-					--["coord"] = { ??, ??, ISLE_OF_DORN },
+					-- ["coord"] = { ??, ??, ISLE_OF_DORN },
 				}),
 				q(83643, {	-- Somehow We Survived
 					["sourceQuests"] = { 83641 },	-- Trapped Between Life and Death

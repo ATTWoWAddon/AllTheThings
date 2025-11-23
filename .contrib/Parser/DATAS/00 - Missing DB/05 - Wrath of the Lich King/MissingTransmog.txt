@@ -836,6 +836,7 @@ s(176303)/i(46332),	-- Conqueror's Kirin Tor Boots
 s(176304)/i(46333),	-- Conqueror's Deathbringer Boots
 s(176305)/i(46334),	-- Conqueror's Worldbreaker Boots
 s(176306)/i(46335),	-- Conqueror's Scourgestalker Boots
+s(176315)/i(46349),	-- Chef's Hat
 s(176318)/i(46371),	-- [PH[ Filled Green Brewfest Stein [test]
 s(176319)/i(46393),	-- Apprentice's Robe
 s(176320)/i(46394),	-- Acolyte's Robe
@@ -1430,9 +1431,22 @@ s(179864)/i(53048),	-- sday Message \\ Doomsday Message
 s(179865)/i(53055),	-- Monster - Gnomeregan Bonechopper (Red)
 s(179866)/i(53056),	-- Monster - Gnomeregan Bonechopper (Blue)
 s(179867)/i(53096),	-- Monster - Mace, Gear
+s(179868)/i(53097),	-- eregan Drape \\ Gnomeregan Drape
 s(179883)/i(53473),	--
 s(179884)/i(53474),	--
 s(179885)/i(53475),	--
+s(179890)/i(53491),	-- ight Offering Bands \\ Twilight Offering Bands
+s(179891)/i(53493),	-- ificial Mail \\ Sacrificial Mail
+s(179892)/i(53494),	-- le of Oblation \\ Girdle of Oblation
+s(179893)/i(53496),	-- ier of the Earth Princess \\ Barrier of the Earth Princess
+s(179894)/i(53497),	-- ar's Deathshroud \\ Zaetar's Deathshroud
+s(179895)/i(53498),	-- h Bride's Gown \\ Earth Bride's Gown
+s(179896)/i(53500),	-- onic Plate \\ Tectonic Plate
+s(179897)/i(53504),	-- ewaker's Treads \\ Flamewaker's Treads
+s(179898)/i(53505),	-- mander Skin \\ Salamander Skin
+s(179899)/i(53506),	-- k of Mocking Winds \\ Cloak of Mocking Winds
+s(179900)/i(53507),	-- fury Sandals \\ Sandfury Sandals
+s(179901)/i(53508),	-- onary Casing \\ Pulmonary Casing
 s(179903)/i(53835),	-- Monster - Glaive Vol'jin 02
 s(179904)/i(53889),	-- "Monster - Fist, Zul'Aman (Main)" \\ Monster - Fist, Zul'Aman (Main)
 s(179905)/i(53890),	-- "Monster - Fist, Zul'Aman (Offhand)" \\ Monster - Fist, Zul'Aman (Offhand)
@@ -1445,6 +1459,8 @@ s(179911)/i(53936),	-- Monster - Shield, Troll (Purple)
 s(179912)/i(53937),	-- Monster - Shield, Troll (Red)
 s(179913)/i(53938),	-- Monster - Shield, Troll (Yellow)
 s(179914)/i(53963),	-- Monster - Axe, 2H Troll ZG (Tooth)
+s(179934)/i(54592),	-- lithuz Scale Bracers \\ Sul'lithuz Scale Bracers \\ Sul'Iithuz Scale Bracers
+s(179936)/i(54617),	-- spear Shroud \\ Darkspear Shroud
 s(179937)/i(54647),	--
 s(179944)/i(54848),	-- Frost Witch's Shoulderpads (Test)
 3.4.0.44064
@@ -1619,3 +1635,358 @@ s(295727)/i(248950),	-- Icebound Cloak
 3.4.5.62916
 s(300719)/i(256035),	-- Direbrew's Bloody Shanker
 s(300812)/i(256396),	-- Tankard O' Terror
+3.80.0.64393
+s(299377)/i(255011),	-- Arcanist Crown
+s(299378)/i(255012),	-- Arcanist Leggings
+s(299379)/i(255013),	-- Arcanist Mantle
+s(299380)/i(255014),	-- Arcanist Robes
+s(299381)/i(255015),	-- Arcanist Bindings
+s(299382)/i(255016),	-- Arcanist Boots
+s(299383)/i(255017),	-- Arcanist Gloves
+s(299384)/i(255018),	-- Arcanist Belt
+s(299385)/i(255019),	-- Felheart Slippers
+s(299386)/i(255020),	-- Felheart Bracers
+s(299387)/i(255021),	-- Felheart Gloves
+s(299388)/i(255022),	-- Felheart Belt
+s(299389)/i(255023),	-- Felheart Shoulder Pads
+s(299390)/i(255024),	-- Felheart Horns
+s(299391)/i(255025),	-- Felheart Robes
+s(299392)/i(255026),	-- Felheart Pants
+s(299393)/i(255027),	-- Boots of Prophecy
+s(299394)/i(255028),	-- Gloves of Prophecy
+s(299395)/i(255029),	-- Circlet of Prophecy
+s(299396)/i(255030),	-- Pants of Prophecy
+s(299397)/i(255031),	-- Robes of Prophecy
+s(299398)/i(255032),	-- Mantle of Prophecy
+s(299399)/i(255033),	-- Girdle of Prophecy
+s(299400)/i(255034),	-- Vambraces of Prophecy
+s(299401)/i(255035),	-- Nightslayer Chestpiece
+s(299402)/i(255036),	-- Nightslayer Cover
+s(299403)/i(255037),	-- Nightslayer Pants
+s(299404)/i(255038),	-- Nightslayer Shoulder Pads
+s(299405)/i(255039),	--
+s(299406)/i(255040),	--
+s(299407)/i(255041),	--
+s(299408)/i(255042),	-- Nightslayer Belt
+s(299409)/i(255043),	-- Cenarion Belt
+s(299410)/i(255044),	-- Cenarion Boots
+s(299411)/i(255045),	-- Cenarion Bracers
+s(299412)/i(255046),	-- Cenarion Gloves
+s(299413)/i(255047),	-- Cenarion Vestments
+s(299414)/i(255048),	-- Cenarion Helm
+s(299415)/i(255049),	-- Cenarion Leggings
+s(299416)/i(255050),	-- Cenarion Spaulders
+s(299417)/i(255051),	-- Earthfury Boots
+s(299418)/i(255052),	-- Earthfury Belt
+s(299419)/i(255053),	-- Earthfury Gauntlets
+s(299420)/i(255054),	-- Earthfury Bracers
+s(299421)/i(255055),	-- Earthfury Vestments
+s(299422)/i(255056),	-- Earthfury Helmet
+s(299423)/i(255057),	-- Earthfury Leggings
+s(299424)/i(255058),	-- Earthfury Epaulets
+s(299425)/i(255059),	-- Giantstalker's Breastplate
+s(299426)/i(255060),	-- Giantstalker's Helmet
+s(299427)/i(255061),	-- Giantstalker's Leggings
+s(299428)/i(255062),	-- Giantstalker's Epaulets
+s(299429)/i(255063),	-- Giantstalker's Boots
+s(299430)/i(255064),	-- Giantstalker's Bracers
+s(299431)/i(255065),	-- Giantstalker's Belt
+s(299432)/i(255066),	-- Giantstalker's Gloves
+s(299433)/i(255067),	-- Lawbringer Breastplate
+s(299434)/i(255068),	-- Lawbringer Helm
+s(299435)/i(255069),	-- Lawbringer Leggings
+s(299436)/i(255070),	-- Lawbringer Spaulders
+s(299437)/i(255071),	-- Lawbringer Bracers
+s(299438)/i(255072),	-- Lawbringer Belt
+s(299439)/i(255073),	-- Lawbringer Boots
+s(299440)/i(255074),	-- Lawbringer Gloves
+s(299441)/i(255075),	--
+s(299442)/i(255076),	-- Sabatons of Might
+s(299443)/i(255077),	-- Handguards of Might
+s(299444)/i(255078),	-- Waistguard of Might
+s(299445)/i(255079),	-- Breastplate of Might
+s(299446)/i(255080),	-- Greathelm of Might
+s(299447)/i(255081),	-- Legguards of Might
+s(299448)/i(255082),	-- Pauldrons of Might
+s(299449)/i(255085),	-- Drillborer Disk
+s(299450)/i(255086),	-- Striker's Mark
+s(299451)/i(255087),	-- Gutgore Ripper
+s(299452)/i(255088),	-- Blastershot Launcher
+s(299453)/i(255089),	-- Earthshaker
+s(299454)/i(255090),	-- Shadowstrike
+s(299455)/i(255091),	-- Bonereaver's Edge
+s(299456)/i(255092),	--
+s(299457)/i(255094),	--
+s(299458)/i(255095),	-- Azuresong Mageblade
+s(299459)/i(255096),	-- Spinal Reaper
+s(299460)/i(255097),	-- Aurastone Hammer
+s(299461)/i(255098),	-- Malistar's Defender
+s(299462)/i(255099),	--
+s(299463)/i(255102),	-- Thunderstrike
+s(299464)/i(255104),	-- Eskhandar's Right Claw
+s(299465)/i(255107),	-- Benediction
+s(299466)/i(255108),	-- Anathema
+s(299467)/i(255112),	-- Rhok'delar, Longbow of the Ancient Keepers
+s(299468)/i(255113),	-- Lok'delar, Stave of the Ancient Keepers
+s(299469)/i(255114),	-- Hyperthermically Insulated Lava Dredger
+s(299470)/i(255115),	-- Core Hound Tooth
+s(299471)/i(255116),	-- Core Forged Greaves
+s(299472)/i(255117),	-- Gloves of the Hypnotic Flame
+s(299473)/i(255118),	-- Sash of Whispered Secrets
+s(299474)/i(255119),	-- Wild Growth Spaulders
+s(299475)/i(255120),	--
+s(299476)/i(255121),	-- Wristguards of True Flight
+s(299477)/i(255124),	-- Perdition's Blade
+s(299478)/i(255125),	-- Crown of Destruction
+s(299479)/i(255128),	--
+s(299480)/i(255129),	-- Aged Core Leather Gloves
+s(299481)/i(255130),	-- Magma Tempered Boots
+s(299482)/i(255131),	-- Deep Earth Spaulders
+s(299483)/i(255132),	-- Brutality Blade
+s(299484)/i(255133),	-- Staff of Dominance
+s(299485)/i(255134),	-- Flamewaker Legplates
+s(299486)/i(255135),	-- Helm of the Lifegiver
+s(299487)/i(255136),	-- Manastorm Leggings
+s(299488)/i(255137),	-- Salamander Scale Pants
+s(299489)/i(255138),	-- Sorcerous Dagger
+s(299490)/i(255140),	-- Mana Igniting Cord
+s(299491)/i(255141),	-- Onslaught Girdle
+s(299492)/i(255143),	--
+s(299493)/i(255145),	-- Fire Runed Grimoire
+s(299494)/i(255146),	-- Flameguard Gauntlets
+s(299495)/i(255147),	-- Sabatons of the Flamewalker
+s(299496)/i(255148),	-- Robe of Volatile Power
+s(299497)/i(255149),	--
+s(300600)/i(255812),	--
+s(300601)/i(255813),	--
+s(300602)/i(255814),	--
+s(300723)/i(256072),	-- Pauldrons of the North
+s(300724)/i(256073),	-- Handguards of the North
+s(300725)/i(256074),	-- Legguards of the North
+s(300726)/i(256075),	-- Sabatons of the North
+s(300727)/i(256076),	-- Wristguards of the North
+s(300728)/i(256077),	-- Chestguard of the North
+s(300729)/i(256078),	-- Girdle of the North
+s(300730)/i(256079),	-- Greathelm of the North
+s(301225)/i(257602),	-- Bracers of Might
+s(301226)/i(257609),	-- Nightslayer Bracelets
+s(301227)/i(257610),	-- Nightslayer Gloves
+s(301228)/i(257611),	-- Vambraces of Might
+s(301229)/i(257612),	-- Clutch of Might
+s(301230)/i(257613),	-- Shoulderplates of Might
+s(301231)/i(257614),	-- Legplates of Might
+s(301232)/i(257615),	-- Helm of Might
+s(301233)/i(257616),	-- Gauntlets of Might
+s(301234)/i(257617),	-- Boots of Might
+s(301235)/i(257618),	-- Battleplate of Might
+s(301236)/i(257619),	-- Sandals of Prophecy
+s(301237)/i(257620),	-- Handwraps of Prophecy
+s(301238)/i(257621),	-- Cowl of Prophecy
+s(301239)/i(257622),	-- Leggings of Prophecy
+s(301240)/i(257623),	-- Garb of Prophecy
+s(301241)/i(257624),	-- Shoulders of Prophecy
+s(301242)/i(257625),	-- Belt of Prophecy
+s(301243)/i(257626),	-- Bracers of Prophecy
+s(301244)/i(257627),	-- Vambraces of the North
+s(301245)/i(257628),	-- Belt of the North
+s(301246)/i(257629),	-- Shoulders of the North
+s(301247)/i(257630),	-- Legplates of the North
+s(301248)/i(257631),	-- Helm of the North
+s(301249)/i(257632),	-- Gloves of the North
+s(301250)/i(257633),	-- Boots of the North
+s(301251)/i(257634),	-- Battleplate of the North
+s(301252)/i(257635),	-- Lawbringer Epaulettes
+s(301253)/i(257636),	-- Lawbringer Legplates
+s(301254)/i(257637),	-- Lawbringer Greathelm
+s(301255)/i(257638),	-- Lawbringer Gauntlets
+s(301256)/i(257639),	-- Lawbringer Battleplate
+s(301257)/i(257640),	-- Lawbringer Vambraces
+s(301258)/i(257641),	-- Lawbringer Treads
+s(301259)/i(257642),	-- Lawbringer Girdle
+s(301260)/i(257643),	-- Lawbringer Wristguards
+s(301261)/i(257644),	-- Lawbringer Waistguard
+s(301262)/i(257645),	-- Lawbringer Shoulderplates
+s(301263)/i(257646),	-- Lawbringer Legguards
+s(301264)/i(257647),	-- Lawbringer Faceguard
+s(301265)/i(257648),	-- Lawbringer Handguards
+s(301266)/i(257649),	-- Lawbringer Sabatons
+s(301267)/i(257650),	-- Lawbringer Chestguard
+s(301268)/i(257651),	-- Cenarion Wristguards
+s(301269)/i(257652),	-- Cenarion Waistguard
+s(301270)/i(257653),	-- Cenarion Shoulders
+s(301271)/i(257654),	-- Cenarion Legguards
+s(301272)/i(257655),	-- Cenarion Antlers
+s(301273)/i(257656),	-- Cenarion Handguards
+s(301274)/i(257657),	-- Cenarion Treads
+s(301275)/i(257658),	-- Cenarion Armor
+s(301276)/i(257659),	-- Cenarion Leathers
+s(301277)/i(257660),	-- Cenarion Wraps
+s(301278)/i(257661),	-- Cenarion Cord
+s(301279)/i(257662),	-- Cenarion Mantle
+s(301280)/i(257663),	-- Cenarion Skirt
+s(301281)/i(257664),	-- Cenarion Crown
+s(301282)/i(257665),	-- Cenarion Mittens
+s(301283)/i(257666),	-- Cenarion Sandals
+s(301284)/i(257667),	-- Earthfury Armbands
+s(301285)/i(257668),	-- Earthfury Cord
+s(301286)/i(257669),	-- Earthfury Mantle
+s(301287)/i(257670),	-- Earthfury Kilt
+s(301288)/i(257671),	-- Earthfury Mask
+s(301289)/i(257672),	-- Earthfury Gloves
+s(301290)/i(257673),	-- Earthfury Treads
+s(301291)/i(257674),	-- Earthfury Armor
+s(301292)/i(257675),	-- Earthfury Vambraces
+s(301293)/i(257676),	-- Earthfury Girdle
+s(301294)/i(257677),	-- Earthfury Shoulders
+s(301295)/i(257678),	-- Earthfury Legguards
+s(301296)/i(257679),	-- Earthfury Greathelm
+s(301297)/i(257680),	-- Earthfury Handguards
+s(301298)/i(257681),	-- Earthfury Sabatons
+s(301299)/i(257682),	-- Earthfury Chain
+s(301300)/i(257684),	-- Nightslayer Boots
+s(301461)/i(258417),	-- Kris Test Weapon 1
+s(301462)/i(258420),	-- Kris Test Weapon 2
+s(301463)/i(258424),	-- Kris Test Armor 1
+s(302006)/i(259900),	-- Crimson Shocker
+s(302007)/i(259901),	-- Wristguards of Stability
+s(302008)/i(259902),	-- Obsidian Edged Blade
+s(302009)/i(259903),	-- Fireproof Cloak
+s(302010)/i(259904),	-- Fireguard Shoulders
+s(302011)/i(259905),	-- Cloak of the Shrouded Mists
+s(302012)/i(259906),	-- Dragon's Blood Cape
+s(302013)/i(259908),	-- Sulfuras, Hand of Ragnaros
+s(302098)/i(260222),	--
+s(302226)/i(260703),	-- Force Reactive Disk
+s(302228)/i(260712),	-- Core Marksman Rifle
+s(302560)/i(262915),	-- Interlined Flarecore Gloves
+s(302561)/i(262916),	-- Interlined Flarecore Robe
+s(302562)/i(262919),	-- Interlined Flarecore Leggings
+s(302563)/i(262920),	-- Interlined Flarecore Wraps
+s(302564)/i(262921),	-- Interlined Flarecore Mantle
+s(302565)/i(262922),	-- Stitched Flarecore Mantle
+s(302566)/i(262924),	-- Stitched Flarecore Wraps
+s(302567)/i(262925),	-- Stitched Flarecore Leggings
+s(302568)/i(262926),	-- Stitched Flarecore Robe
+s(302569)/i(262927),	-- Stitched Flarecore Gloves
+s(302570)/i(262931),	-- Interlined Wildfire Cape
+s(302571)/i(262932),	-- Stitched Wildfire Cape
+s(302572)/i(262933),	-- Hardened Lava Belt
+s(302573)/i(262934),	-- Hardened Molten Helm
+s(302574)/i(262935),	-- Hardened Volcanic Shoulders
+s(302575)/i(262937),	-- Hardened Volcanic Leggings
+s(302576)/i(262939),	-- Hardened Volcanic Breastplate
+s(302577)/i(262940),	-- Hardened Wildfire Cape
+s(302578)/i(262941),	-- Interlined Corehound Boots
+s(302579)/i(262942),	-- Interlined Corehound Belt
+s(302580)/i(262943),	-- Interlined Volcanic Shoulders
+s(302581)/i(262944),	-- Interlined Volcanic Leggings
+s(302582)/i(262945),	-- Interlined Volcanic Breastplate
+s(302583)/i(262946),	-- Stitched Volcanic Shoulders
+s(302584)/i(262947),	-- Stitched Volcanic Leggings
+s(302585)/i(262948),	-- Stitched Volcanic Breastplate
+s(302586)/i(262949),	-- Stitched Corehound Boots
+s(302587)/i(262950),	-- Stitched Corehound Belt
+s(302588)/i(262952),	-- Studded Lava Belt
+s(302589)/i(262953),	-- Studded Molten Helm
+s(302590)/i(262954),	-- Studded Volcanic Shoulders
+s(302591)/i(262955),	-- Studded Volcanic Leggings
+s(302592)/i(262956),	-- Studded Volcanic Breastplate
+s(302593)/i(262958),	-- Studded Black Dragonscale Breastplate
+s(302594)/i(262959),	-- Studded Black Dragonscale Shoulders
+s(302595)/i(262960),	-- Interwoven Black Dragonscale Leggings
+s(302596)/i(262961),	-- Studded Black Dragonscale Boots
+s(302597)/i(262968),	-- Studded Fiery Chain Girdle
+s(302598)/i(262969),	-- Studded Black Dragonscale Leggings
+s(302600)/i(262971),	-- Interwoven Black Dragonscale Boots
+s(302601)/i(262972),	-- Interwoven Black Dragonscale Shoulders
+s(302603)/i(262974),	-- Interwoven Black Dragonscale Breastplate
+s(302604)/i(262975),	-- Interwoven Fiery Chain Girdle
+s(302605)/i(262976),	-- Bound Fiery Chain Girdle
+s(302606)/i(262977),	-- Bound Black Dragonscale Breastplate
+s(302607)/i(262978),	-- Bound Black Dragonscale Shoulders
+s(302608)/i(262979),	-- Bound Black Dragonscale Boots
+s(302609)/i(262980),	-- Bound Black Dragonscale Leggings
+s(302610)/i(262981),	-- Hardened Dark Iron Helm
+s(302613)/i(262985),	-- Hardened Dark Iron Leggings
+s(302614)/i(262986),	-- Hardened Dark Iron Gauntlets
+s(302615)/i(262987),	-- Hardened Dark Iron Bracers
+s(302616)/i(262988),	-- Hardened Dark Iron Boots
+s(302621)/i(262993),	-- Tempered Dark Iron Helm
+s(302622)/i(262995),	-- Tempered Dark Iron Leggings
+s(302623)/i(262996),	-- Tempered Dark Iron Gauntlets
+s(302624)/i(262997),	-- Tempered Dark Iron Bracers
+s(302625)/i(262998),	-- Tempered Dark Iron Boots
+s(302626)/i(263000),	-- Bound Dark Iron Helm
+s(302627)/i(263001),	-- Bound Dark Iron Leggings
+s(302628)/i(263002),	-- Bound Dark Iron Gauntlets
+s(302629)/i(263003),	-- Bound Dark Iron Bracers
+s(302630)/i(263004),	-- Bound Dark Iron Boots
+s(302634)/i(263008),	-- Studded Wildfire Cape
+s(302646)/i(263204),	-- The Horseman's Baleful Blade
+s(302647)/i(263207),	-- The Horseman's Horrific Helm
+s(302650)/i(263264),	-- Sulfuron Hammer
+s(303342)/i(264437),	-- Desecrator Chestpiece
+s(303343)/i(264438),	-- Desecrator Gauntlets
+s(303344)/i(264439),	-- Desecrator Helm
+s(303345)/i(264440),	-- Desecrator Legplates
+s(303346)/i(264441),	-- Desecrator Shoulders
+s(303347)/i(264442),	-- Desecrator Mantle
+s(303348)/i(264443),	-- Desecrator Legguards
+s(303349)/i(264444),	-- Desecrator Greathelm
+s(303350)/i(264445),	-- Desecrator Handguards
+s(303351)/i(264446),	-- Desecrator Breastplate
+s(303504)/i(264731),	-- Sulfuras, Hand of Ragnaros
+s(303505)/i(264741),	-- Sulfuras, Hand of Ragnaros
+s(303506)/i(264742),	-- Sulfuras, Hand of Ragnaros
+s(303507)/i(264743),	-- Sulfuras, Hand of Ragnaros
+s(303508)/i(264744),	-- Sulfuras, Hand of Ragnaros
+s(303509)/i(264745),	-- Sulfuras, Hand of Ragnaros
+s(303510)/i(264746),	-- Sulfuras, Hand of Ragnaros
+s(303511)/i(264747),	-- Sulfuras, Hand of Ragnaros
+s(303512)/i(264748),	-- Sulfuras, Hand of Ragnaros
+s(303513)/i(264749),	-- Sulfuras, Hand of Ragnaros
+s(303623)/i(264926),	-- Sulfuras, Hand of Ragnaros
+s(303624)/i(264927),	-- Sulfuras, Hand of Ragnaros
+s(303625)/i(264928),	-- Sulfuras, Hand of Ragnaros
+s(303626)/i(264929),	-- Sulfuras, Hand of Ragnaros
+s(303627)/i(264930),	-- Sulfuras, Hand of Ragnaros
+s(303628)/i(264931),	-- Sulfuras, Hand of Ragnaros
+s(303629)/i(264932),	-- Sulfuras, Hand of Ragnaros
+s(303630)/i(264933),	-- Sulfuras, Hand of Ragnaros
+s(303631)/i(264934),	-- Sulfuras, Hand of Ragnaros
+s(303632)/i(264935),	-- Sulfuras, Hand of Ragnaros
+s(303633)/i(264936),	-- Sulfuras, Hand of Ragnaros
+s(303641)/i(265069),	-- Gravity Render
+s(303642)/i(265070),	-- Eventide Pillar
+s(303822)/i(265333),	-- Dreadboots of Desecration
+s(303825)/i(265342),	-- Studded Glacial Cloak
+s(303826)/i(265343),	-- Stitched Glacial Cloak
+s(303827)/i(265344),	-- Interlined Glacial Cloak
+s(303828)/i(265345),	-- Hardened Glacial Cloak
+s(303829)/i(265346),	-- Hydraxxian Venom Boots
+s(303830)/i(265347),	-- Hydraxxian Venom Cord
+s(303831)/i(265348),	-- Hydraxxian Venom Vest
+s(303832)/i(265349),	-- Toxic Chestguard
+s(303833)/i(265350),	-- Toxic Treads
+s(303834)/i(265351),	-- Toxic Girdle
+s(303835)/i(265352),	-- Hardened Living Cloak
+s(303836)/i(265353),	-- Interlined Living Cloak
+s(303837)/i(265354),	-- Studded Living Cloak
+s(303838)/i(265355),	-- Stitched Living Cloak
+s(303857)/i(265514),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303858)/i(265515),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303859)/i(265516),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303860)/i(265517),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303861)/i(265518),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303862)/i(265519),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303863)/i(265520),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303864)/i(265521),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303865)/i(265522),	-- Thunderfury, Blessed Blade of the Windseeker
+s(303867)/i(265563),	-- Atiesh, Greatstaff of the Guardian
+s(303868)/i(265564),	-- Atiesh, Greatstaff of the Guardian
+s(303869)/i(265565),	-- Atiesh, Greatstaff of the Guardian
+s(303870)/i(265566),	-- Atiesh, Greatstaff of the Guardian
+s(303871)/i(265567),	-- Atiesh, Greatstaff of the Guardian
+s(303872)/i(265568),	-- Atiesh, Greatstaff of the Guardian
+s(303873)/i(265569),	-- Atiesh, Greatstaff of the Guardian
+s(303874)/i(265570),	-- Atiesh, Greatstaff of the Guardian

@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 94288, 9 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["groups"] = {
-						--	i(89112),	-- Mote of Harmony	-- Doesnt need sourcing from a Quest
+							-- i(89112),	-- Mote of Harmony	-- Doesnt need sourcing from a Quest
 						},
 					}),
 					q(32615, {	-- Many More Giant Dinosaur Bones
@@ -61,7 +61,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 94288, 99 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["groups"] = {
-						--	i(76061),	-- Spirit of Harmony	-- Doesnt need sourcing from a Quest
+							-- i(76061),	-- Spirit of Harmony	-- Doesnt need sourcing from a Quest
 						},
 					}),
 					q(32616, {	-- A Large Pile of Dinosaur Bones

@@ -1176,3 +1176,6 @@
 2718@@@Shades of the Row (Paragon)
 2780@@@Shadowpine Tribe
 2781@@@Revantusk Tribe
+12.0.0.64499
+2770@@@Slayer's Duellum
+2774@@@Slayer's Duellum (Paragon)

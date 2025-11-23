@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 81971,
 				["groups"] = {
 					i(224580, {	-- Massive Sapphire Chunk
-					--	i(212508),	-- Stunning Sapphire x3
+					-- i(212508),	-- Stunning Sapphire x3
 					}),
 				},
 			}),
@@ -128,14 +128,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(454797, {	-- From the Depths They Come
 				["coord"] = { 57.8, 51.7, HALLOWFALL },
-				--["questID"] = ,
+				-- ["questID"] = ,
 				["groups"] = {
 					i(225208),	-- From the Depths They Come [book]
 				},
 			}),
 			o(455038, {	-- Light's Gambit Playbook
 				["coord"] = { 68.7, 41.5, HALLOWFALL },
-				--["questID"] = ,
+				-- ["questID"] = ,
 				["groups"] = {
 					i(225206),	-- Light's Gambit Playbook [book]
 				},
@@ -168,14 +168,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(455183, {	-- Shadow Curfew Journal
 				["coord"] = { 59.8, 22.1, HALLOWFALL },
-				--["questID"] = ,
+				-- ["questID"] = ,
 				["groups"] = {
 					i(225205),	-- Shadow Curfew Journal [book]
 				},
 			}),
 			o(453937, {	-- 500 Dishes Using Cave Fish and Mushrooms
 				["coord"] = { 43.9, 50.0, HALLOWFALL },
-				--["questID"] = ,
+				-- ["questID"] = ,
 				["groups"] = {
 					i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms [book]
 				},
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(419729, {	-- Strange Eggs
 				["coord"] = { 67.1, 21.8, HALLOWFALL },
-				--["questID"] = 83032,	-- I looted it with some characters and never got any questID - Darkal
+				-- ["questID"] = 83032,	-- I looted it with some characters and never got any questID - Darkal
 				["groups"] = {
 					i(212331),	-- The Unusual Bug
 				},

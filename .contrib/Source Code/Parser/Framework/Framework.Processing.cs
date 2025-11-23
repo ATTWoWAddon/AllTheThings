@@ -160,7 +160,6 @@ namespace ATT
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("headerID"), Validate_headerID);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("questID"), Validate_Quest);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("sym"), Validate_sym);
-            AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("providers"), Validate_providers);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("factionID"), Validate_Faction);
             AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
 
@@ -560,7 +559,7 @@ namespace ATT
         private static void AdditionalProcessing()
         {
             // Clean out any temporary containers
-            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k.StartsWith("_")).ToArray();
+            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k[0] == '_').ToArray();
             temporaryKeys.All(k => Objects.AllContainers.Remove(k));
 
             // Merge conditional data
@@ -822,24 +821,16 @@ namespace ATT
                 }
             }
 
-            if (data.TryGetValue("providers", out List<object> providers) && data.TryGetValue("headerID", out object headerID))
+            if (data.TryGetValue(out Providers providers) && providers.GetProviderType("i", true) != null && data.TryGetValue("headerID", out object headerID))
             {
-                foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
+                if (DebugDBs.TryGetValue("itemID", out var itemDebugDB))
                 {
-                    switch (provider[0])
+                    foreach (decimal id in providers.GetProviderType("i", true))
                     {
-                        case "i":
-                            if (DebugDBs.TryGetValue("itemID", out var itemDebugDB))
-                            {
-                                if (provider[1].TryConvert(out decimal id))
-                                {
-                                    if (!itemDebugDB.TryGetValue(id, out IDictionary<string, object> keyValueValues))
-                                        itemDebugDB[id] = keyValueValues = new Dictionary<string, object>();
+                        if (!itemDebugDB.TryGetValue(id, out IDictionary<string, object> keyValueValues))
+                            itemDebugDB[id] = keyValueValues = new Dictionary<string, object>();
 
-                                    CloneAndMergeForDebugData(data, keyValueValues);
-                                }
-                            }
-                            break;
+                        CloneAndMergeForDebugData(data, keyValueValues);
                     }
                 }
             }
@@ -1074,7 +1065,6 @@ namespace ATT
 
             Consolidate_General(data);
             Consolidate_c(data);
-            Consolidate_providers(data);
             Consolidate_altQuests(data);
             Consolidate_awprwp(data);
             Consolidate_Heirloom(data);
@@ -1143,7 +1133,7 @@ namespace ATT
                     removeKeys.Add("timeline");
                 }
                 // parser-only fields removed
-                else if (dataKvp.Key.StartsWith("_"))
+                else if (dataKvp.Key[0] == '_')
                 {
                     removeKeys.Add(dataKvp.Key);
                 }
@@ -1642,34 +1632,6 @@ namespace ATT
                 }
             }
 
-            // ensure providers are referenced
-            if (data.TryGetValue("providers", out List<object> providersList) && providersList.Count > 0)
-            {
-                foreach (var provider in providersList.AsTypedEnumerable<List<object>>())
-                {
-                    if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2
-                        || (!providerList[0].TryConvert(out string pType))
-                        || (!providerList[1].TryConvert(out decimal pID)))
-                    {
-                        continue;
-                    }
-
-                    // validate that the referenced ID exists in this version of the addon
-                    switch (pType)
-                    {
-                        case "i":
-                            Items.MarkItemAsReferenced(pID);
-                            break;
-                        case "n":
-                            NPCS_WITH_REFERENCES[(long)pID] = true;
-                            break;
-                        case "o":
-                            OBJECTS_WITH_REFERENCES[(long)pID] = true;
-                            break;
-                    }
-                }
-            }
-
             if (data.TryGetValue("f", out long f) && f >= 0)
             {
                 FILTERS_WITH_REFERENCES[f] = true;
@@ -1810,54 +1772,6 @@ namespace ATT
                     NPCS_WITH_REFERENCES[creatureID] = true;
                     data["npcID"] = creatureID;
                     data.Remove("creatureID");
-                }
-            }
-        }
-
-        private static void Validate_providers(IDictionary<string, object> data)
-        {
-            if (!data.TryGetValue("providers", out object providers))
-                return;
-
-            if (!providers.TryConvert(out List<object> providersList))
-            {
-                LogError("Invalid Data Format: provider(s)", data);
-                return;
-            }
-
-            for (int i = providersList.Count - 1; i >= 0; i--)
-            {
-                var provider = providersList[i];
-                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2)
-                {
-                    LogError($"Invalid Data Format: provider {ToJSON(provider)}", data);
-                    continue;
-                }
-
-                if (!providerList[0].TryConvert(out string pType))
-                {
-                    LogError($"Invalid Data Format: provider-type: {providerList[0]}", data);
-                    continue;
-                }
-
-                if (!providerList[1].TryConvert(out decimal pID))
-                {
-                    LogError($"Invalid Data Format: provider-id {providerList[1]}", data);
-                    continue;
-                }
-
-                switch (pType)
-                {
-                    case "o":
-                        // Items with coords and single Object provider should list the Object as a Source
-                        if (providersList.Count == 1
-                            && data.TryGetValue("itemID", out long itemID)
-                            && data.TryGetValue(out Coords coords) && coords.HasData
-                            && !data.ContainsKey("_allowObjectProvider"))
-                        {
-                            LogWarn($"Item {itemID} with '{Coords.Field}' and single Object Provider {pID} should not use Object providers; Source the Object with the Item nested or add '_allowObjectProvider' if an Object provider makes sense and the Object does not need to be Sourced itself", data);
-                        }
-                        break;
                 }
             }
         }
@@ -2120,29 +2034,19 @@ namespace ATT
 
             data.TryGetValue("type", out string type);
             // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
-            if (type != "hqt" && data.TryGetValue("providers", out List<object> providers)
+            if (type != "hqt" && data.TryGetValue(out Providers providers)
                 // if not an item listed first
-                && !(providers.Count > 0
-                    && providers[0] is List<object> firstProvider
-                    && firstProvider.Count > 0
-                    && firstProvider[0].ToString() == "i"))
+                && providers.FirstItemProvider == 0
+                && providers.GetProviderType("n", true) != null)
             {
-                List<object> quest_qgs = new List<object>(providers.Count);
-                for (int p = providers.Count - 1; p >= 0; p--)
+                var npcProviders = providers.GetProviderType("n").ToList();
+                List<object> quest_qgs = new List<object>(npcProviders.Count);
+                foreach (var npcID in npcProviders)
                 {
-                    object provider = providers[p];
-                    // { "n", ### }
-                    if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
-                    {
-                        quest_qgs.Add(providerItems[1]);
-                        providers.RemoveAt(p);
-                        //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
-                    }
+                    quest_qgs.Add(npcID);
+                    providers.Remove("n", npcID);
+                    //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
                 }
-
-                // remove 'providers' if it is now empty
-                if (providers.Count == 0)
-                    data.Remove("providers");
 
                 // merge the 'qgs' back into the data if anything was converted
                 if (quest_qgs.Count > 0)
@@ -3660,7 +3564,7 @@ namespace ATT
 
                     if (!sourcedQuestData.ContainsAnyKey("_unsorted", "_nyi"))
                     {
-                        Objects.MergeField_provider(sourcedQuestData, new List<object> { providerType, objKeyValue });
+                        Objects.Merge(sourcedQuestData, "provider", new List<object> { providerType, objKeyValue });
                         LogDebug($"INFO: Assigning {providerType}:{objKeyValue} as Provider of 'questID' {questID}", sourcedQuestData);
                         providerAssigned = true;
                     }
@@ -3679,7 +3583,7 @@ namespace ATT
                                 break;
                             // NPC/Object can remain providers since they do not utilize cost logic
                             default:
-                                Objects.MergeField_provider(sourcedQuestData, new List<object> { providerType, objKeyValue });
+                                Objects.Merge(sourcedQuestData, "provider", new List<object> { providerType, objKeyValue });
                                 break;
                         }
                         providerAssigned = true;
@@ -4133,107 +4037,6 @@ namespace ATT
             }
         }
 
-        private static void Consolidate_providers(IDictionary<string, object> data)
-        {
-            if (!data.TryGetValue("providers", out object providers)
-                // don't modify providers on any special 'type' of Quest
-                || data.ContainsKey("type"))
-                return;
-
-            if (!providers.TryConvert(out List<object> providersList))
-                return;
-
-            bool hasQuestGivers = data.TryGetValue("qgs", out List<object> qgs) && qgs.Count > 0;
-
-            int i = 0;
-            while (i < providersList.Count)
-            {
-                var provider = providersList[i];
-                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2
-                    || (!providerList[0].TryConvert(out string pType))
-                    || (!providerList[1].TryConvert(out decimal pID)))
-                {
-                    i++;
-                    continue;
-                }
-
-                // validate that the referenced ID exists in this version of the addon
-                switch (pType)
-                {
-                    case "i":
-                        // These Item providers are ONLY referenced as a way to hook tooltips on that Item to show the root data
-                        if (hasQuestGivers || i > 0)
-                        {
-                            // Classic likes providers to be Items still due to the logic implementation
-                            if (!PreProcessorTags.Contains("ANYCLASSIC"))
-                            {
-                                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objectData.ObjectType == "questID")
-                                {
-                                    // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                    Objects.Merge(data, "qis", pID);
-                                    providersList.RemoveAt(i);
-                                    i--;
-                                }
-                            }
-                        }
-                        // These Item providers are referenced as an actual quest starter and SHOULD be sourced elsewhere in ATT for how they are obtained
-                        else
-                        {
-                            var item = Items.GetNull(pID);
-                            // Items which are the 'first' provider indicate that their acquisition is what 'provides' the data
-                            // and thus they must be Sourced to be properly visible for being acquired
-                            if (i == 0 && (item == null || !TryGetSOURCED("itemID", pID, out _)))
-                            {
-                                // The item isn't Sourced in Retail version
-                                // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
-                                // There are currently about 1000 warnings due to unsourced Items of this nature
-                                LogDebugWarn($"Non-Sourced 'provider-item' {pID}", data);
-                            }
-                            else if (item.TryGetValue("u", out long u) && u == 1)
-                            {
-                                // The item was classified as never being implemented
-                                LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
-                                providersList.RemoveAt(i);
-                                i--;
-                            }
-                        }
-                        break;
-                    case "n":
-                        break;
-                    case "o":
-                        break;
-                    case "a":
-                        break;
-                    case "s":
-                        break;
-                    default:
-                        LogError($"Invalid Data Value: provider-type {pType}", data);
-                        break;
-                }
-                i++;
-            }
-
-            // remove 's' providers if 'n' or 'i' provider exists
-            // TODO: move to Providers.Consolidate whenever added
-            var types = new HashSet<string>(providersList.Select(p => p is List<object> pl ? pl[0].ToString() : null).Where(t => t != null));
-
-            if (types.Contains("s") &&
-                (types.Contains("n") || types.Contains("n")))
-            {
-                // if there is an NPC provider, remove any Spell providers as redundant
-                int index = providersList.Count - 1;
-                while (index >= 0)
-                {
-                    if (providersList[index] is List<object> pl && pl.Count == 2 && pl[0] is string pType && pType == "s")
-                    {
-                        LogDebug($"INFO: Removed 's' provider due to 'n'/'i' provider also present", data);
-                        providersList.RemoveAt(index);
-                    }
-                    index--;
-                }
-            }
-        }
-
         private static void Consolidate_sourceQuests(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
@@ -4324,21 +4127,19 @@ namespace ATT
             }
 
             // costs/providers
-            if (data.TryGetValue(out Cost cost) && data.TryGetValue("providers", out List<object> providers))
+            if (data.TryGetValue(out Cost cost) && data.TryGetValue(out Providers providers))
             {
-                for (int i = providers.Count - 1; i >= 0; i--)
+                var itemProviders = providers.GetProviderType("i", true);
+                if (itemProviders != null)
                 {
-                    if (!providers[i].TryConvert(out List<object> provider))
+                    // since we might remove providers, copy them first
+                    var providerList = itemProviders.ToList();
+                    foreach (var providerItem in providerList)
                     {
-                        continue;
-                    }
-
-                    if (provider.SafeIndex(0) is string pType && pType == "i" && provider.SafeIndex(1).TryConvert(out long pId))
-                    {
-                        if (cost.GetCost(pType, pId) != null)
+                        if (cost.GetCost("i", providerItem) != null)
                         {
-                            LogDebugWarn($"Item {pId} used for both Provider and Cost on same data. Removing 'provider'", data);
-                            providers.RemoveAt(i);
+                            LogDebugWarn($"Item {providerItem} used for both Provider and Cost on same data. Removing 'provider'", data);
+                            providers.Remove("i", providerItem);
                         }
                     }
                 }
@@ -4710,21 +4511,19 @@ namespace ATT
             data.TryGetValue(out Coords coords);
 
             // Convert various 'providers' data into data on the parent data
-            if (data.TryGetValue("providers", out List<object> providers))
+            if (data.TryGetValue(out Providers providers))
             {
                 List<object> parentg = new List<object>();
                 List<object> parentProviders = new List<object>();
-                List<long> parentCrs = new List<long>();
-                List<long> parentQis = new List<long>();
-                List<long> parentItems = new List<long>();
+                List<decimal> parentCrs = new List<decimal>();
+                List<decimal> parentQis = new List<decimal>();
+                List<decimal> parentItems = new List<decimal>();
 
-                foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
+                foreach (var provider in providers)
                 {
-                    if (!provider[1].TryConvert(out long pID))
-                        continue;
-
                     Dictionary<string, object> providerData = null;
-                    string pType = provider[0] as string;
+                    string pType = provider.Type;
+                    decimal pID = provider.ID;
                     switch (pType)
                     {
                         // Items can simply be referenced to the parent if they aren't sourced elsewhere, or assigned as a provider on the parent otherwise

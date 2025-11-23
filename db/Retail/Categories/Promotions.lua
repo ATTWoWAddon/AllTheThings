@@ -4,7 +4,7 @@ local ach,cl,cq,crit,cu,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.Crea
 local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
 _.Categories.Promotions={
 h(-514,{awp=90005,g={
-mnt(348162,{description="Granted to players by logging in on character of at least level 20.",u=2}),
+i(258430,{description="Granted to players by logging in on character of at least level 20.",f=100,spellID=348162,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
 toy(187957,{awp=90200,b=1,description="Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",rwp=90200,u=2}),
 s(50108,95474,{awp=90205,description="Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",f=2,rwp=90207,u=2}),
@@ -13,10 +13,10 @@ title(459,{u=2})}}),
 s(51433,97213,{awp=90205,f=2,u=2}),
 toy(187958,{awp=90207,b=1,description="Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",rwp=100000,u=2}),
 s(50109,95475,{awp=90207,description="Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",f=2,rwp=90207,u=2}),
-mnt(386452,{awp=90207,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",rwp=100002,u=2})}}),
+mnt(386452,{awp=90207,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",itemID=258476,rwp=100002,u=2})}}),
 h(-515,{awp=100000,g={
-mnt(315132,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",u=2}),
-mnt(381529,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",u=2}),
+mnt(315132,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258423,u=2}),
+mnt(381529,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258477,u=2}),
 p(169,{awp=100002,b=1,itemID=34493,npcID=25110,rwp=100002,spellID=45127,u=2}),
 mnt(113120,{awp=100002,itemID=79771,lvl=10,rwp=100002,u=2}),
 p(3248,{awp=100002,b=1,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between November 28th, 03:00 p.m. & December 12th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=190583,npcID=183638,rwp=100002,spellID=367696,u=2}),
@@ -36,14 +36,14 @@ s(169111,190904,{f=2}),
 s(169112,190905,{f=2}),
 s(169113,190906,{f=2}),
 s(169114,190907,{f=2})}}),
-mnt(419567,{awp=100107,description="Obtained if you set up a 12-Month WoW Subscription.",rwp=110002,u=2}),
+mnt(419567,{awp=100107,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=258425,rwp=110002,u=2}),
 mnt(400976,{awp=100107,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=203727,lvl=10,rwp=110002,u=2}),
-p(2623,{awp=100200,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",npcID=151788,rwp=100200,u=2}),
+p(2623,{awp=100200,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258414,npcID=151788,rwp=100200,spellID=294231,u=2}),
 mnt(102488,{awp=100200,itemID=72575,lvl=10,rwp=100200,u=2}),
 toy(211424,{awp=100206,b=1,description="Break the Meta: DF Season 3\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 3's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/break-the-meta-df-season-3/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +17|r or higher during the Competition Period, and the Dreaming Banner of the Aspects will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on April 3rd for US, April 4th for EU & April 5th for KR/TW & lasts for 2 resets of your region.",rwp=100206,u=2}),
 mnt(418286,{awp=100200,description="Obtained if you set up a 6-Month WoW Subscription.",rwp=110200,u=2}),
 toy(67097,{awp=100205,b=1,rwp=100205,u=2}),
-p(4437,{awp=100206,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",npcID=218060,rwp=100206,u=2}),
+p(4437,{awp=100206,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258483,npcID=218060,rwp=100206,spellID=439994,u=2}),
 p(348,{awp=100207,b=1,itemID=79744,npcID=59020,rwp=100207,spellID=112994,u=2}),
 toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",rwp=100207,u=2}),
 mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=45,rwp=110200,u=2})}}),
@@ -117,7 +117,8 @@ mnt(1245604,{awp=110205,description="Obtained if you set up a 12-Month WoW Subsc
 mnt(1234971,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=243194,u=3}),
 en(242480,{awp=110205,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=90654,rwp=110207,spellID=1232446,tmogSetID=4538,g={
 s(290242,242421,{f=2}),
-s(290265,242450,{f=2})}})}}),
+s(290265,242450,{f=2})}}),
+p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=3})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -171,22 +172,23 @@ toy(163987,{awp=80001,b=1,r=2,u=2}),
 s(100004,163985,{awp=80001,b=1,f=3,r=2,u=2}),
 s(100003,163984,{awp=80001,b=1,f=3,r=1,u=2}),
 ach(14027,{awp=80205,u=2}),
-s(105958,171341,{awp=80205,f=2,u=2}),
-s(105957,171340,{awp=80205,f=2,u=2}),
-s(105956,171339,{awp=80205,f=2,u=2}),
-s(105955,171338,{awp=80205,f=2,u=2}),
-s(105954,171337,{awp=80205,f=2,u=2}),
-p(2777,{awp=80205,npcID=157715,r=1,u=2,g={
+en(258422,{awp=110205,spellID=1263286,tmogSetID=1903,u=2,g={
+s(105954,171337,{f=2}),
+s(105955,171338,{f=2}),
+s(105956,171339,{f=2}),
+s(105957,171340,{f=2}),
+s(105958,171341,{f=2})}}),
+p(2777,{awp=80205,itemID=258418,npcID=157715,r=1,spellID=307654,u=2,g={
 crit(46934,{achID=14027,id=4,u=2})}}),
-p(2778,{awp=80205,npcID=157716,r=2,u=2,g={
+p(2778,{awp=80205,itemID=258419,npcID=157716,r=2,spellID=307655,u=2,g={
 crit(46933,{achID=14027,id=3,u=2})}}),
-mnt(341821,{awp=90002,rwp=90200,u=2}),
-p(3053,{awp=90002,npcID=175203,rwp=90200,u=2,g={
+mnt(341821,{awp=90002,itemID=258428,rwp=90200,u=2}),
+p(3053,{awp=90002,itemID=258429,npcID=175203,rwp=90200,spellID=344755,u=2,g={
 crit(51529,{achID=14904,id=2,u=2})}}),
 ach(14904,{awp=90002,rwp=90200,u=2}),
-mnt(358072,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",rwp=100205,u=2}),
+mnt(358072,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,rwp=100205,u=2}),
 toy(210042,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",rwp=100205,u=2}),
-p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",npcID=205467,rwp=100205,u=2}),
+p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",itemID=258482,npcID=205467,rwp=100205,spellID=411448,u=2}),
 ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
@@ -217,13 +219,19 @@ crit(34633,{achID=665,awp=30002,id=3,u=2})}}),
 p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2})}}),
 h(-524,{awp=90100,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=90207,u=2,g={
 mnt(346136,{u=2})}}),
+h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
+mnt(1256677,{itemID=253573,u=3}),
+toy(254666,{u=3}),
+toy(263489,{u=3}),
+p(4903,{itemID=253699,u=3}),
+mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,rwp=100107,u=2,g={
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",u=2,g={
-mnt(370770,{u=2})}})}}),
+mnt(370770,{itemID=258475,u=2})}})}}),
 x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{providers={{"i",62540}},rwp=40302,u=2}),
 p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
@@ -292,22 +300,23 @@ toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
-p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",npcID=181575,rwp=100002,u=2}),
+p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{npcID=181535,u=2}),
 mnt(359843,{u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
 toy(193588,{b=1,u=2}),
-s(165611,188257,{f=3,u=2}),
-s(165612,188258,{f=3,u=2}),
-s(165613,188259,{f=3,u=2}),
-s(165614,188260,{f=3,u=2}),
-s(165610,188256,{f=3,u=2}),
+en(255827,{spellID=1259474,tmogSetID=2293,u=2,g={
+s(165610,188256,{f=3}),
+s(165611,188257,{f=3}),
+s(165612,188258,{f=3}),
+s(165613,188259,{f=3}),
+s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,u=2})}})}}),
 x(11,{awp=100107,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
-mnt(417888,{u=2}),
+mnt(417888,{itemID=258479,u=2}),
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190676,209320,{f=2}),
@@ -437,38 +446,6 @@ q(82809,{awp=110000,qgs={209681},u=3,g={
 p(4590,{b=1,itemID=224259,npcID=224716,spellID=452222,u=3}),
 p(4589,{b=1,itemID=224261,npcID=224717,spellID=452221,u=3}),
 p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}})}}),
-h(-528,{awp=110200,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased Midnight Heroic Edition.",u=3,g={
-ach(61401,{providers={{"s",1234305}},u=3}),
-en(248249,{questID=91814,spellID=1246785,tmogSetID=5165,u=3,g={
-s(295500,248378,{f=3}),
-s(295501,248379,{f=2}),
-s(295502,248380,{f=2}),
-s(295503,248381,{f=2}),
-s(295504,248382,{f=2}),
-s(295505,248383,{f=2}),
-s(295506,248384,{f=2}),
-s(295507,248385,{f=2}),
-s(295508,248386,{f=2}),
-s(295509,248387,{f=2})}}),
-mnt(1234305,{itemID=243020,lvl=30,u=3})}}),
-h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
-ach(61402,{providers={{"s",1239138}},u=3}),
-p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
-p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
-mnt(1239138,{itemID=245610,lvl=30,u=3}),
-mnt(1234303,{itemID=243019,lvl=30,u=3}),
-en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={
-s(295490,248368,{f=3}),
-s(295491,248369,{f=2}),
-s(295492,248370,{f=2}),
-s(295493,248371,{f=2}),
-s(295494,248372,{f=2}),
-s(295495,248373,{f=2}),
-s(295496,248374,{f=2}),
-s(295497,248375,{f=2}),
-s(295498,248376,{f=2}),
-s(295499,248377,{f=2})}})}})}}),
 h(-529,{awp=80205,description="These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",rwp=100100,u=2,g={
 mnt(302361,{itemID=207964,lvl=10,r=2,u=2}),
 mnt(302362,{itemID=207963,lvl=10,r=1,u=2})}}),
@@ -758,11 +735,11 @@ h(-542,{awp=50300,u=3,g={
 ach(8345,{providers={{"s",142073}},u=3}),
 mnt(142073,{b=1,itemID=98618,lvl=10,u=3})}}),
 h(-543,{awp=90100,u=3,g={
-mnt(356488,{u=3}),
+mnt(356488,{itemID=258431,u=3}),
 ach(15323,{u=3})}}),
 h(-544,{awp=100205,maps={1,84,2112},g={
 h(-12,{
-ach(19866,{providers={{"i",163186},{"s",278966}},u=2}),
+ach(19866,{providers={{"i",163186}},u=2}),
 ach(20033,{sym={{"partial_achievement",19724}},g={
 toy(211946,{
 i(212924,{f=55})})}}),
@@ -1390,7 +1367,7 @@ s(82066,141002,{f=28,r=1,u=2})}})}}),
 h(-553,{awp=100107,g={
 h(-12,{
 ach(15344,{description="Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",g={
-p(3236,{npcID=184285})}}),
+p(3236,{itemID=258481,npcID=184285,spellID=364451})}}),
 ach(17344,{providers={{"i",201931},{"i",202261},{"i",202851},{"i",202856},{"i",202859},{"i",202862},{"i",202865}},g={
 crit(57995,{achID=17344,id=1,questID=73101}),
 crit(57976,{achID=17344,id=2,questID=73104}),

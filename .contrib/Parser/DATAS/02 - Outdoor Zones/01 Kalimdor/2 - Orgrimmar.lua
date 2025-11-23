@@ -559,38 +559,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
 					}),
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							26588,	-- A Furious Catch
-							26572,	-- A Golden Opportunity
-							26557,	-- A Staggering Effort
-							26543,	-- Clammy Hands
-							26556,	-- No Dumping Allowed
-						},
-						["provider"] = { "n", 43239 },	-- Razgar
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
-					}),
 					i(34486, {	-- Old Crafty
 						["description"] =
 							-- #if BEFORE WRATH
@@ -1457,12 +1425,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(53372, {	-- Battle for Azeroth: Hour of Reckoning
-				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
+					-- ["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
-				--	TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
+					-- TODO: level is obviously incorrect. whether this quest is still available is disputed. potential ways to get, per wowhead comments:
 					-- "If you are looking for how to get your Heart of Azeroth, post Shadowlands pre-patch (9.0) you can only get it once you have hit level 50, it will then be automatically pushed through as soon as you ding to go visit Magni in Silithus."
 					-- "This is incorrect. All you have to do is loot an Azerite item from a BfA Dungeon Level 45-49 and it starts the Quest when you Zone to Org/SW."
 					-- figure out which of these is correct (if either) and adjust description accordingly
@@ -2633,7 +2601,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 						i(1205),	-- Melon Juice
-						--i(1645),	-- Moonberry Juice
+						-- i(1645),	-- Moonberry Juice
 						i(8766),	-- Morning Glory Dew
 						i(159),		-- Refreshing Spring Water
 						i(1708),	-- Sweet Nectar

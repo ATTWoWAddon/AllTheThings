@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381110, {	-- Forgotten Jewel Box
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
 				["questID"] = 70603,
-				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
+				["cost"] = { { "i", 199065, 1 }, },	-- 1x Sorrowful Letter
 				["groups"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)
 				},
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381158, {	-- Gnoll Fiend Flail
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
 				["questID"] = 70604,
-				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
+				["cost"] = { { "i", 199066, 1 }, },	-- 1x Letter of Caution
 				["groups"] = {
 					i(202692),	-- Gnoll Fiend Flail
 				},
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381157, {	-- Sapphire Gem Cluster
 				["coord"] = { 49.0, 25.0, THE_AZURE_SPAN },
 				["questID"] = 70605,
-				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
+				["cost"] = { { "i", 199067, 1 }, },	-- 1x Precious Plans
 				["groups"] = {
 					i(200866),	-- Glimmering Malygite Cluster
 					i(194649),	-- Design: Jeweled Sapphire Whelpling (RECIPE!)

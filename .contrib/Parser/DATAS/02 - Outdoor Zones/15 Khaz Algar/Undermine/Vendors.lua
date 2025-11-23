@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(239150, {	-- Brix the Bloody
-				--TODO: idk rp or whatever purpose it is
+				-- TODO: idk rp or whatever purpose it is
 				["coord"] = { 28.2, 27.1, UNDERMINE },
 				["groups"] = {
 					i(237315),	-- Fighting Guide: Armed Combat

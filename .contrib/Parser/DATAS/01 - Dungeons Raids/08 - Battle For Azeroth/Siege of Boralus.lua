@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -187,12 +187,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
-							
+
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -288,7 +288,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159310),	-- Circlet of the Enveloping Leviathan
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
+						["crs"] = { 128652 },	-- Viq'Goth
 						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
@@ -330,6 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
+			-- #endif
 			-- #endif
 		},
 	}),

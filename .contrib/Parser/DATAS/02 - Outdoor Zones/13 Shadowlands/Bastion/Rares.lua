@@ -194,8 +194,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(160721, {	-- Fallen Acolyte Erisne
-			--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or later
-			--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
+			-- you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or later
+			-- cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 				["coord"] = { 60.5, 73.4, BASTION },
 				["questID"] = 58222,
 				["groups"] = {
@@ -247,8 +247,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					o(339625, {	-- Sophia's Radiance
 						["coord"] = { 61.3, 50.4, BASTION },
-						--["questID"] = ,
-						--["isDaily"] = true,
+						-- ["questID"] = ,
+						-- ["isDaily"] = true,
 						["groups"] = { i(183608) },	-- Evernote Vesper
 					}),
 				},

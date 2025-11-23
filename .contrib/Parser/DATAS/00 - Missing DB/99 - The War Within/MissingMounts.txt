@@ -1,27 +1,7 @@
 9.0.1.34490
 mount(332482),	-- Bonecleaver's Skullboar \\ PH Skullboar \\ PH Skullboar (Grey)
 11.2.5.62554
-mount(1229264),	-- Bloodguard Fel Bat
-mount(1229278),	-- Risen Fel Bat
-mount(1229286),	-- Forgotten Fel Bat
-mount(1248309),	-- Kalu'ak Crest-Horn \\ Kalu'ak Crest-horn
-mount(1250285),	-- Sharktested Crest-Horn
-mount(1250287),	-- Floestrider Crest-Horn \\ Floestrider Crest-horn
-mount(1250288),	-- Cragstepper Crest-Horn \\ Cragstepper Crest-horn
-mount(1250481),	-- Bilebound Ur'zul
-mount(1250740),	-- Thorignir Drake
-mount(1251257),	-- Leyfrost Manasaber
-mount(1251264),	-- Nightwell Manasaber
-mount(1251680),	-- Highlands Gobbler \\ [PH] Turkey Mount - Black
-mount(1251685),	-- Quirky Turkey \\ [PH] Turkey Mount - Brown
-mount(1251689),	-- Murky Turkey \\ [PH] Turkey Mount - Purple
-mount(1251690),	-- Prized Turkey \\ [PH] Turkey Mount - White
 mount(1254363),	-- (PH) Legion Remix Mount
-mount(1256677),	-- Cobalt Phase-Hunter \\ Cerulean Phase-Hunter
-11.2.7.63642
-mount(1233516),	-- K'arroc Swiftwing
-mount(1266248),	-- Savage Crimson Battle Turtle
-mount(1266579),	-- Cloudborn Razorwing
 12.0.0.63534
 mount(1238827),	-- Swift Spectral Dragonhawk
 mount(1242904),	-- Ashes of Belo'ren
@@ -37,7 +17,7 @@ mount(1261322),	-- Crimson Silvermoon Hawkstrider
 mount(1261325),	-- [DNT] 12.0 Black Hawkstrider
 mount(1261336),	-- Preyseeker's Hubris
 mount(1261337),	-- Preyseeker's Wrath
-mount(1265784),	-- [DNT] 12.0 White Hawkstrider
+mount(1265784),	-- Lucent Hawkstrider \\ [DNT] 12.0 White Hawkstrider
 12.0.0.63724
 mount(1253938),	-- Ruddy Sporeglider
 mount(1261357),	-- Amani Blessed Bear
@@ -67,6 +47,27 @@ mount(1253924),	-- Brilliant Petalwing
 mount(1260354),	-- Untained Grove Crawler
 mount(1261583),	-- Insatiable Shredclaw
 mount(1270675),	-- Vivid Chloroceros
+12.0.0.64124
+mount(1261302),	-- Cobalt Dragonhawk
+mount(1261323),	-- Cerulean Hawkstrider
+mount(1261334),	-- Contained Stormarion Defender
+12.0.0.64228
+mount(1243597),	-- Rootstalker Grimlynx
+mount(1253927),	-- Vibrant Petalwing
+mount(1261155),	-- Augmented Stormray
+mount(1261316),	-- Amani Sharptalon
+mount(1261348),	-- Blessed Amani Burrower \\ [DNT] 12.0 Amani Pangolin
+mount(1261349),	-- Giganto Manis
+mount(1261351),	-- Witherbark Pango
+mount(1261360),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
+mount(1261576),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
+mount(1266700),	-- Sanguine Harrower
+12.0.0.64339
+mount(1261391),	-- Relinquished Scarlet Charger
+mount(1261584),	-- Prowling Shredclaw
+mount(1261585),	-- Frenzied Shredclaw
+12.0.0.64499
+mount(1261338),	-- Preyseeker's Nightmare
 
 
 

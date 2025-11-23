@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						156203,	-- Stygian Incinerator
 						170302,	-- Talaporas, Herald of Pain
 						172862,	-- Yero the Skittish
-					--	Korthia
+						-- Korthia
 						179769,	-- Consumption
 						179755,	-- Consumption (Rare, non-Elite version)
 						179768,	-- Consumption (Rare Elite version)

@@ -43,13 +43,13 @@ root(ROOTS.Zones, {
 						42833,	-- How It's Made: Arcwine
 						42792,	-- Make Your Mark
 					},
-					--["providers"] = {
-					--	{ "i", 136269 },	-- Kel'danath's Manaflask (CI!)
-					--	{ "i", 140327 },	-- Krytos's Research Notes (CI!)
-					--	{ "i", 140326 },	-- Enchanted Burial Urn (CI!)
-					--	{ "i", 140329 },	-- Infinite Stone (CI!)
-					--	{ "i", 140328 },	-- Volatile Leyline Crystal (CI!)
-					--},
+					-- ["providers"] = {
+					-- 	{ "i", 136269 },	-- Kel'danath's Manaflask (CI!)
+					-- 	{ "i", 140327 },	-- Krytos's Research Notes (CI!)
+					-- 	{ "i", 140326 },	-- Enchanted Burial Urn (CI!)
+					-- 	{ "i", 140329 },	-- Infinite Stone (CI!)
+					-- 	{ "i", 140328 },	-- Volatile Leyline Crystal (CI!)
+					-- },
 				}),
 			}),
 		}),

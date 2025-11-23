@@ -11,14 +11,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["requireSkill"] = FISHING,
 				["groups"] = {
 					n(QUESTS, {
-						i(112623, {	-- Pack of Fishing Supplies
+						container(112623, {	-- Pack of Fishing Supplies
 							["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
 							["groups"] = {
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
+								-- Only excluding 'Bag of Shiny Things' content since this container also provides those drops
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-								i(44983),	-- Strand Crawler (PET!)
-								i(33820),	-- Weather-Beaten Fishing Hat
 							},
 						}),
 						q(36611, {	-- A True Draenor Angler
@@ -279,7 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 					}),
 					n(VENDORS, {
-						n(85984, {	--  Nat Pagle <Master Fisherman>
+						n(85984, {	-- Nat Pagle <Master Fisherman>
 							i(168416),	-- Angler's Water Striders
 							i(116825, {	-- Savage Fishing Pole
 								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},

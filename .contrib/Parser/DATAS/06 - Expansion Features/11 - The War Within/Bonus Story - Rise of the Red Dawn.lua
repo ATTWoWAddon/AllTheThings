@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			q(84640, {	-- Emblematic of Things to Come
 				["sourceQuests"] = { 84638 },	-- Trouble in the Highlands
 				["provider"] = { "i", 228963 },	-- Unfamiliar Emblem
-				--["coord"] = { 18.3, 40.1, 2372 },
+				-- ["coord"] = { 18.3, 40.1, 2372 },
 			}),
 			q(84641, {	-- Ill Tidings
 				["sourceQuests"] = {

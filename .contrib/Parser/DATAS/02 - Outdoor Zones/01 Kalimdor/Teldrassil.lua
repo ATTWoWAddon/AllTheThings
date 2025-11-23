@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
-									--["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
+									-- ["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
 									["description"] = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance

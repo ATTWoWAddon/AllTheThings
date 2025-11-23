@@ -12,16 +12,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						ach(42535),	-- Explore Eredath
 						ach(42626),	-- Hidden Treasures: Eredath
 					})),
-					n(ZONE_REWARDS, {
-						filter(CLOTH, {
-						}),
-						filter(LEATHER, {
-						}),
-						filter(MAIL, {
-						}),
-						filter(PLATE, {
-						}),
-					}),
 				},
 			}),
 		}),

@@ -138,22 +138,22 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		n(ACHIEVEMENTS, {
 			-- TODO: Why isn't this achievement being automated? Is it because all quests already belong to other criteria of other achievements?
 			ach(40307, {	-- Allied Races: Earthen
-				crit(66993, { -- The War Within campaign
+				crit(66993, {	-- The War Within campaign
 					["_quests"] = {
 						83503,	-- Return to Dornogal
 					},
 				}),
-				crit(68162, { -- Mourning Rise
+				crit(68162, {	-- Mourning Rise
 					["_quests"] = {
 						82895,	-- Mourning Rise
 					},
 				}),
-				crit(67728, { -- Broken Tools
+				crit(67728, {	-- Broken Tools
 					["_quests"] = {
 						78564,	-- Broken Tools
 					},
 				}),
-				crit(67055, { -- Merrix and Steelvein
+				crit(67055, {	-- Merrix and Steelvein
 					["_quests"] = {
 						79530,	-- Merrix and Steelvein
 					},
@@ -169,10 +169,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		}),
 		n(QUESTS, {
 			q(79200, {	-- Who am I?
+				-- ["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
 				["provider"] = { "n", 221839 },	-- Dawn
 				["coord"] = { 89.4, 48.0, 2322 },
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
-				--["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
 			}),
 			q(79201, {	-- The Analysis Interface (non-Hunter)
 				["sourceQuests"] = { 79200 },	-- Who am I?
@@ -234,7 +234,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					i(219420),	-- Earthen Legguards
 					i(219421),	-- Earthen Mantle
 					i(219422),	-- Earthen Girdle
-					--weapons
+					-- weapons
 					i(222998),	-- Earthen Blade
 					i(223000),	-- Earthen Blunderbuss
 					i(222995),	-- Earthen Bulwark
@@ -304,7 +304,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 53.0, 15.2, STORMWIND_CITY },
 				["races"] = { EARTHEN_ALLIANCE },
 				["groups"] = {
-					--spell(452029),	-- Ensemble: Earthen Copper Regalia
+					-- spell(452029),	-- Ensemble: Earthen Copper Regalia
 					i(224195),	-- Earthen Shoulders
 					i(224196),	-- Earthen Trousers
 					i(224197),	-- Earthen Grips
@@ -539,7 +539,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Highmountain Tauren Starter Quests
 			q(49773, {	-- For the Horde
-				["provider"] = { "n", 93826 },	--  Mayla Highmountain
+				["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				["coord"] = { 54.9, 63.2, 652 },	-- Thunder Totem
 				["races"] = { HIGHMOUNTAIN_TAUREN },
 				["lvl"] = 20,
@@ -877,7 +877,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Mag'har Orc Starter Quests
 			q(51485, {	-- For the Horde
-				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
+				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["races"] = { MAGHAR },
 				["lvl"] = 20,
@@ -1063,7 +1063,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Nightborne Starter Quests
 			q(49933, {	-- For the Horde
-				["provider"] = { "n", 143845 },	--  First Arcanist Thalyssra
+				["provider"] = { "n", 143845 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["races"] = { NIGHTBORNE },
 				["lvl"] = 20,
@@ -1484,7 +1484,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Zandalari Troll Starter Quests
 			q(55137, {	-- For the Horde
-				["provider"] = { "n", 146335 },	--  Queen Talanji
+				["provider"] = { "n", 146335 },	-- Queen Talanji
 				["coords"] = {
 					{ 42.2, 9.4, DAZARALOR },
 					{ 49.9, 46.6, DAZARALOR },

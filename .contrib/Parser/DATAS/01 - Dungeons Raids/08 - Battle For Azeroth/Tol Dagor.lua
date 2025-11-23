@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					n(135448, {	-- Gol'than the Malodorous
 						["provider"] = { "i", 158698 },	-- Discarded Cell Key
 						["groups"] = {
-							i(160704),	--  Filthy Slime (PET!)
+							i(160704),	-- Filthy Slime (PET!)
 						},
 					}),
 					e(2097, {	-- The Sand Queen

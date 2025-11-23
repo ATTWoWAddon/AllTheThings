@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
 				}),
 				q(73692, {	-- Hive Maintenance
 					["sourceQuests"] = {
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
 				}),
 				q(73704, {	-- Local Flavors
 					["sourceQuests"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
 					["groups"] = {
 						i(202268),	-- Winterpelt Totem
 					},
@@ -135,13 +135,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 73704 },	-- Local Flavors
 					["provider"] = { "n", 199266 },	-- Garz
 					["coord"] = { 66.9, 13.0, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 				}),
 				q(72552, {	-- Gathering Together
 					["sourceQuests"] = { 72551 },	-- A Living History
 					["provider"] = { "n", 199271 },	-- Elder Mhaz
 					["coord"] = { 57.4, 21.1, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["groups"] = {
 						i(202181),	-- Best-root Tuber (QI!)
 					},
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72551 },	-- A Living History
 					["provider"] = { "n", 199272 },	-- Matron Fherg
 					["coord"] = { 57.4, 20.9, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["groups"] = {
 						i(202185),	-- Chillwrought Worm Meat (QI!)
 					},
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["groups"] = {
 						i(202283),	-- Reading Glasses (TOY!)
 					},
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "i", 203651 },	-- Saza's Blade
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 				}),
 
 				-- Language Furbolg 75
@@ -182,31 +182,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72554 },	-- Break Him
 					["provider"] = { "n", 199266 },	-- Garz
 					["coord"] = { 66.9, 13.0, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 				}),
 				q(72558, {	-- Our Honored Ancestors
 					["sourceQuests"] = { 73035 },	-- Path of Trust
 					["provider"] = { "n", 199267 },	-- Radze Thunderclaw
 					["coord"] = { 66.0, 12.6, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 				}),
 				q(72941, {	-- Ancestral Advice
 					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
 					["provider"] = { "n", 199996 },	-- Ancestor Brazzok
 					["coord"] = { 66.0, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 				}),
 				q(72945, {	-- Our Path Ahead
 					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
 					["provider"] = { "n", 199300 },	-- Ancestor Molg
 					["coord"] = { 67.0, 13.1, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 				}),
 				q(72559, {	-- History Heist
 					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
 					["provider"] = { "n", 199299 },	-- Jhagaze the Wordkeeper
 					["coord"] = { 67.0, 11.9, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 					["groups"] = {
 						i(202264),	-- Defender of the Winterpelt
 						i(198834),	-- Scribbled Bark Chunks (QI!)
@@ -218,19 +218,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72559 },	-- History Heist
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 				}),
 				q(72590, {	-- Ursol's Wisdom
 					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 				}),
 				q(72597, {	-- Ursoc's Strength
 					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 				}),
 				q(73031, {	-- Champion of the Winterpelt
 					["sourceQuests"] = {
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
-					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					-- ["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 					["groups"] = {
 						i(202253),	-- Primal Stave of Claw and Fur (TOY!)
 					},

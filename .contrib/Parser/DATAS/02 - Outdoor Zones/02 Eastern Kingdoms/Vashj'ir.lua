@@ -2847,7 +2847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25359, {	-- Toshe's Vengeance
-							["sourceQuest"] = 25456,	-- Back in One Piece (TODO:: does this require any other quest from Silver Tide Hollow?)
+							["sourceQuest"] = 25456,	-- Back in One Piece (TODO:  does this require any other quest from Silver Tide Hollow?)
 							["qg"] = 39876,	-- Felora Firewreath
 							["coord"] = { 49.5, 42.3, VASHJIR_SHIMMERING_EXPANSE },
 							["isBreadcrumb"] = true,

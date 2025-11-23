@@ -43,24 +43,6 @@ root(ROOTS.Zones, {
 					}),
 					ach(9711),	-- Planned to Fail (Iron Siegeworks)
 					ach(9710),	-- Poisoning the Well (Iron Siegeworks)
-					ach(9564, {	-- Securing Draenor (A)
-						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						["groups"] = {
-							crit(26244),	-- Assault on the Iron Siegeworks
-							crit(26245),	-- Assault on Stonefury Cliffs
-							crit(26247),	-- Assault on Magnarok
-						},
-					}),
-					ach(9562, {	-- Securing Draenor (H)
-						["races"] = HORDE_ONLY,
-						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						["groups"] = {
-							crit(26225),	-- Assault on the Iron Siegeworks
-							crit(26226),	-- Assault on Stonefury Cliffs
-							crit(26228),	-- Assault on Magnarok
-						},
-					}),
 					ach(9536),	-- Slagnarok (Magnarok)
 					ach(9535),	-- That Was Entirely Unnecessary (Magnarok)
 					ach(9530, {	-- Writing in the Snow (A)

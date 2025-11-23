@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						},
 					}),
 					a(ach(13925, {	-- The Fourth War
-					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
+						-- not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 						["sourceQuests"] = { 57002 },	-- Old Soldier
 						["sym"] = {{"meta_achievement",
 							12510,	-- Ready for War
@@ -271,7 +271,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 						-- Setting "The Ongoing Campaign" because it starts the second foothold, and you have to finish 2 footholds to unlock this.
 					}),
-				--	NAZMIR FOOTHOLD STARTS HERE
+					-- NAZMIR FOOTHOLD STARTS HERE
 					q(51129, {	-- Dubious Offering
 						["sourceQuests"] = { 51088 },	-- Heart of Darkness
 						["provider"] = { "n", 136432 },	-- Brann Bronzebeard
@@ -353,7 +353,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 62.0, 41.5, NAZMIR },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	VOL'DUN FOOTHOLD STARTS HERE
+					-- VOL'DUN FOOTHOLD STARTS HERE
 					q(51170, {	-- Ooh Rah!
 						["sourceQuests"] = { 51283 },	-- Voyage to the West
 						["provider"] = { "n", 137867 },	-- Halford Wyrmbane
@@ -455,7 +455,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 						-- I did this foothold second and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 					}),
-				--	ZULDAZAR FOOTHOLD STARS HERE
+					-- ZULDAZAR FOOTHOLD STARS HERE
 					q(51201, {	-- The Troll's Tale
 						["sourceQuests"] = { 51308 },	-- Zuldazar Foothold
 						["provider"] = { "n", 136197 },	-- Brigadier Thom
@@ -557,7 +557,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 						-- I did this foothold third and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 					}),
-				--	ALL 3 FOOTHOLDS END Here
+					-- ALL 3 FOOTHOLDS END Here
 					q(53063, {	-- A Mission of Unity
 						["sourceQuests"] = {
 							51967,	-- Return to Boralus (Nazmir Foothold)
@@ -594,7 +594,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							}),
 						},
 					}),
-				--	BLOOD ON THE SAND STARTS HERE
+					-- BLOOD ON THE SAND STARTS HERE
 					q(52026, {	-- Overseas Assassination
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.2, 26.9, BORALUS },
@@ -723,7 +723,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 39.6, 83.9, VOLDUN },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BETWEEN BLOOD ON THE SAND / CHASING DARKNESS
+					-- BETWEEN BLOOD ON THE SAND / CHASING DARKNESS
 					q(53069, {	-- Operation: Blood Arrow
 						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52146 },	-- Blood on the Sand
@@ -741,7 +741,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 69.4, 27.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	CHASING DARKNESS STARTS HERE
+					-- CHASING DARKNESS STARTS HERE
 					q(52150, {	-- How to Kill a Dark Ranger
 						["sourceQuests"] = { 52147 },	-- Crippling the Horde
 						["provider"] = { "n", 140258 },	-- Shandris Feathermoon
@@ -809,7 +809,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 42.1, 39.7, NAZMIR },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
+					-- BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
 					q(53070, {	-- Operation: Cutpurse
 						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
@@ -833,7 +833,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 69.4, 26.7, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	A GOLDEN OPPORTUNITY STARTS HERE
+					-- A GOLDEN OPPORTUNITY STARTS HERE
 					q(52205, {	-- Bilgewater Bonanza Go Boom
 						["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 						["provider"] = { "n", 140477 },	-- Magister Umbric
@@ -890,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["provider"] = { "n", 140740 },	-- Magister Umbric
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
+					-- BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
 					q(53071, {	-- Operation: Gryphon's Claw
 						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
@@ -915,7 +915,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BLOOD IN THE WATER STARTS HERE
+					-- BLOOD IN THE WATER STARTS HERE
 					q(52490, {	-- Behind Enemy Boats
 						["sourceQuests"] = { 52489 },	-- Hunting Blood Prince Dreven
 						["provider"] = { "n", 141567 },	-- Shandris Feathermoon
@@ -983,7 +983,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 42.0, 47.3, 1156 },	-- The Great Sea
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BETWEEN BLOOD IN THE WATER AND THE STRIKE ON ZULDAZAR
+					-- BETWEEN BLOOD IN THE WATER AND THE STRIKE ON ZULDAZAR
 					q(53072, {	-- Operation: Heartstrike
 						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52496 },	-- A Clean Escape
@@ -1001,7 +1001,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 69.4, 27.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	THE STRIKE ON ZULDAZAR STARTS HERE
+					-- THE STRIKE ON ZULDAZAR STARTS HERE
 					q(52282, {	-- How to Sink a Zandalari Battleship
 						["sourceQuests"] = { 52473 },	-- Bringing Down the Fleet
 						["provider"] = { "n", 140257 },	-- Halford Wyrmbane
@@ -1110,14 +1110,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 				}),
 				n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
-				--	BETWEEN READY FOR WAR AND TIDES OF VENGEANCE START
+					-- BETWEEN READY FOR WAR AND TIDES OF VENGEANCE START
 					q(53986, {	-- The Calm Before
 						["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
 						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 						["coord"] = { 70.4, 27.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	WAR MARCHES ON STARTS HERE
+					-- WAR MARCHES ON STARTS HERE
 					q(53888, {	-- To Anglepoint
 						["sourceQuests"] = { 53986 },	-- The Calm Before
 						["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
@@ -1267,7 +1267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							}),
 						},
 					}),
-				--	BETWEEN WAR MARCHES ON AND THE SLEEPER AGENT
+					-- BETWEEN WAR MARCHES ON AND THE SLEEPER AGENT
 					q(54191, {	-- Changing Course
 						["sourceQuests"] = { 53887 },	-- War Marches On
 						["races"] = ALLIANCE_ONLY,
@@ -1279,7 +1279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 69.4, 27.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	THE SLEEPER AGENT STARTS HERE
+					-- THE SLEEPER AGENT STARTS HERE
 					q(54193, {	-- This is Huge!
 						["sourceQuests"] = { 54192 },	-- Sensitive Intel
 						["provider"] = { "n", 147151 },	-- Kelsey Steelspark
@@ -1375,7 +1375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 41.1, 70.6, ZULDAZAR },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	BETWEEN THE SLEEPER AGENT AND MISCHIEF MANAGED
+					-- BETWEEN THE SLEEPER AGENT AND MISCHIEF MANAGED
 					q(54171, {	-- The Abyssal Scepter
 						["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -1410,7 +1410,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							i(163418),	-- 7th Legionnaire's Chestguard (Plate)
 						},
 					}),
-				--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
+					-- BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
 					q(54302, {	-- The Fall of Zuldazar
 						["sourceQuests"] = { 54510 },	-- Mischief Managed
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
@@ -1424,7 +1424,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["coord"] = { 39.1, 77.1, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				--	HE WHO WALKS IN THE LIGHT STARTS HERE
+					-- HE WHO WALKS IN THE LIGHT STARTS HERE
 					q(54310, {	-- Repurposing Their Village
 						["sourceQuests"] = { 54303 },	-- The March to Nazmir
 						["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
@@ -1498,7 +1498,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							i(166230),	-- Re-Discombobulator (QI!)
 						},
 					}),
-				--	AFTER TIDES OF VENGEANCE
+					-- AFTER TIDES OF VENGEANCE
 					q(54485, {	-- Battle of Dazar'alor
 						["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane

@@ -1314,7 +1314,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 72.0, 94.2, KUN_LAI_SUMMIT },
 							{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
-							--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+							-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
 							{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
 							{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 41.7, 29.9, KRASARANG_WILDS },
-							--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+							-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.8, THE_JADE_FOREST },
 						},
 						["races"] = HORDE_ONLY,

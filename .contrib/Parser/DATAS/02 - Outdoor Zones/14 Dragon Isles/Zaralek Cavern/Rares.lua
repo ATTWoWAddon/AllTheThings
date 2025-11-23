@@ -242,11 +242,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			-- n(203611, {	-- Hadexia <Ember of Twilight>
-				--["coord"] = { , , ZARALEK_CAVERN },
-				--["questID"] = ,	-- Old QuestID:
-				--["groups"] = {
-				--	bo(, true),
-				--},
+				-- ["coord"] = { , , ZARALEK_CAVERN },
+				-- ["questID"] = ,	-- Old QuestID:
+				-- ["groups"] = {
+				-- 	bo(, true),
+				-- },
 			-- }),
 			n(203627, {	-- Invohq
 				["coord"] = { 46.0, 33.3, ZARALEK_CAVERN },
@@ -254,8 +254,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["groups"] = {
 					bo(75336, true),
 					i(205796, {	-- Molten Lava Pack (TOY!)
-					--	["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
-					--	Fixed 4 months into the patch (and 4 days after the note was added to ATT).
+						-- ["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
+						-- Fixed 4 months into the patch (and 4 days after the note was added to ATT).
 					}),
 					i(203328),	-- Winding Slitherdrake: White Horns (MM!)
 					i(205297),	-- Flamewielder's Trousers
@@ -307,18 +307,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			-- n(203642, {	-- Kronkapace
-				--["coord"] = { , , ZARALEK_CAVERN },
-				--["questID"] = ,	-- Old QuestID:
-				--["groups"] = {
-				--	bo(, true),
-				--},
+			-- 	["coord"] = { , , ZARALEK_CAVERN },
+			-- 	["questID"] = ,	-- Old QuestID:
+			-- 	["groups"] = {
+			-- 		bo(, true),
+			-- 	},
 			-- }),
 			-- n(203630, {	-- Lavermix
-				--["coord"] = { , , ZARALEK_CAVERN },
-				--["questID"] = ,	-- Old QuestID:
-				--["groups"] = {
-				--	bo(, true),
-				--},
+			-- 	["coord"] = { , , ZARALEK_CAVERN },
+			-- 	["questID"] = ,	-- Old QuestID:
+			-- 	["groups"] = {
+			-- 		bo(, true),
+			-- 	},
 			-- }),
 			n(200111, {	-- Magtembo
 				["coord"] = { 41.1, 37.7, ZARALEK_CAVERN },
@@ -341,11 +341,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			-- n(204096, {	-- Shadowforge Mole Machine
-				--["coord"] = { , , ZARALEK_CAVERN },
-				--["questID"] = ,	-- Old QuestID:
-				--["groups"] = {
-				--	bo(, true),
-				--},
+			-- 	["coord"] = { , , ZARALEK_CAVERN },
+			-- 	["questID"] = ,	-- Old QuestID:
+			-- 	["groups"] = {
+			-- 		bo(, true),
+			-- 	},
 			-- }),
 			n(203643, {	-- Skornak
 				["coord"] = { 36.3, 52.9, ZARALEK_CAVERN },

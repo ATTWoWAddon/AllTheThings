@@ -10703,3 +10703,23 @@
 3433@@@Ghostlands (Burning Crusade)
 3487@@@Silvermoon City (Burning Crusade)
 16365@@@Atal'Utek
+12.0.0.64124
+16825@@@Devouring Stronghold
+16826@@@Behemoth's Rsie
+16827@@@The Riftlabs
+16828@@@Crown of the Cosmos
+16829@@@[PH] Battlefield
+12.0.0.64228
+15973@@@Voidscar Arena
+16046@@@Suncrown Village
+16047@@@Thas'minellia
+16838@@@Atal'Utek (copy)
+16841@@@Tomb of Mun'jin
+16844@@@Dusk's Repose
+12.0.0.64339
+16850@@@Retribution Hold
+16851@@@Mettle's Hold
+12.0.0.64499
+16826@@@Behemoth's Rise
+16855@@@Voidscar Arena
+16860@@@The Great Sea

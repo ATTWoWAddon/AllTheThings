@@ -304,7 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
 					223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
 					226643,	-- Plans: Beledar's Bulwark (RECIPE!)
-					--223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
+					-- 223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
 				}},
 			}),
 		})),

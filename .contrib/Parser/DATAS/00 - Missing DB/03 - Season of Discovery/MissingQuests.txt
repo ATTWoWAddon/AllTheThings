@@ -569,11 +569,11 @@ q(89376),	--
 q(89224),	-- CLASSIC:Food Shortage
 q(89226),	--
 q(89229),	-- CLASSIC:The Right Path
-q(89232),	--
+q(89232),	-- CLASSIC:The First Step
 q(89234),	-- CLASSIC:A Personal Matter
 q(89235),	-- CLASSIC:The Culling
 q(89236),	-- CLASSIC:Wrangling Apples
-q(89237),	--
+q(89237),	-- CLASSIC:This Could Get Expensive...
 q(89245),	-- CLASSIC:Fish in a Barrel
 q(89253),	-- CLASSIC:Main Course
 q(89255),	-- CLASSIC:Prove Your Worth: Headgear
@@ -586,10 +586,10 @@ q(89261),	-- CLASSIC:Prove Your Worth: Legguards
 q(89262),	-- CLASSIC:Prove Your Worth: Boots
 q(89298),	--
 q(89299),	--
-q(89300),	--
-q(89301),	--
-q(89303),	--
-q(89304),	--
+q(89300),	-- CLASSIC:The Ashbringer
+q(89301),	-- CLASSIC:A Difficult Path
+q(89303),	-- CLASSIC:On Fate's Path
+q(89304),	-- CLASSIC:The Perfect Metal
 q(89310),	-- CLASSIC:Terrordale
 q(89328),	-- CLASSIC:Loss
 q(89329),	-- CLASSIC:Stomping Out The Infestation
@@ -598,25 +598,25 @@ q(89341),	-- CLASSIC:The Great Feast
 q(89342),	-- CLASSIC:VIP Haute Club Membership
 q(89381),	-- CLASSIC:Pin Cushion
 q(89421),	-- CLASSIC:Bullet Heaven
-q(89442),	--
-q(89443),	--
+q(89442),	-- CLASSIC:Emblem of Darkness
+q(89443),	-- CLASSIC:Falling Into Place
 q(89444),	-- CLASSIC:The Corrupted Emblem
 q(89445),	-- CLASSIC:Blades of Light
 q(89446),	-- CLASSIC:The Lost Craftsman
 q(89447),	-- CLASSIC:Extravagant Tastes
 q(89448),	-- CLASSIC:Gathering Light
-q(89449),	--
-q(89451),	--
-q(89462),	--
+q(89449),	-- CLASSIC:The Radiant Forge
+q(89451),	-- CLASSIC:Journey To Moonglade
+q(89462),	-- CLASSIC:The Druid of the Talon
 q(89463),	-- CLASSIC:Nondisclosure Arguement
 q(89471),	-- CLASSIC:Goblin Tinkering
-q(89473),	--
-q(89474),	--
-q(89475),	--
+q(89473),	-- CLASSIC:The Well of Eternity
+q(89474),	-- CLASSIC:Forgiveness
+q(89475),	-- CLASSIC:The Lonely Path of the Damned
 q(89485),	-- CLASSIC:Whimsical Horrors
 q(89486),	-- CLASSIC:A Pinch of Gunpowder
 q(89487),	-- CLASSIC:Much Ado About Magnets
-q(89488),	--
+q(89488),	-- CLASSIC:A Kind of Peace
 q(89489),	-- CLASSIC:Increased Drop Rate
 q(89491),	-- CLASSIC:A Complicated Escape Plan
 q(89562),	-- CLASSIC:My Old Enemy
@@ -626,9 +626,9 @@ q(89568),	-- CLASSIC:Something New
 q(89574),	-- CLASSIC:Servants of Death
 q(90106),	--
 q(90107),	-- CLASSIC:The Blade Reformed
-q(90506),	--
-q(90507),	--
-q(90508),	--
+q(90506),	-- CLASSIC:Take Their Breath Away
+q(90507),	-- CLASSIC:Logistics Challenges
+q(90508),	-- CLASSIC:As The Crow Flies
 q(90510),	-- CLASSIC:New Avalon
 q(90516),	--
 q(90518),	-- CLASSIC:An Apple a Day Keeps the Undead at Bay
@@ -636,7 +636,7 @@ q(90519),	-- CLASSIC:Fish On Demand
 q(90520),	-- CLASSIC:Food Safety
 q(90539),	--
 q(90558),	--
-q(90559),	--
+q(90559),	-- CLASSIC:The Tempering
 q(90566),	-- CLASSIC:Oh, My Bleeding Hearts!
 q(90603),	--
 q(90604),	--

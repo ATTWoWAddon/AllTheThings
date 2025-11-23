@@ -897,14 +897,14 @@ headerGeneralThings.OnRefresh = function(self)
 
 	-- Halloween Easter Egg
 	C_Calendar.OpenCalendar()
-    local date = C_DateAndTime.GetCurrentCalendarTime()
-    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
-    for i=1, numEvents do
-        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
-        if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday
-            self:SetText(L.STRANGER_THINGS_LABEL)
-        end
-    end
+	local date = C_DateAndTime.GetCurrentCalendarTime()
+	local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
+	for i=1, numEvents do
+		local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
+		if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday
+			self:SetText(L.STRANGER_THINGS_LABEL)
+		end
+	end
 end
 
 local accwideCheckboxAchievements =

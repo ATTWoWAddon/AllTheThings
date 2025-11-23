@@ -39,9 +39,9 @@ faction(2742),	-- Delves: Season 1
 faction(2744),	-- Valeera Sanguinar
 faction(2764),	-- Preyseeker's Journey \\ Prey: Season 1
 12.0.0.63724
-faction(2770),	-- Domanaar Dominance
+faction(2770),	-- Slayer's Duellum \\ Domanaar Dominance
 12.0.0.63854
-faction(2774),	-- Domanaar Dominance (Paragon)
+faction(2774),	-- Slayer's Duellum (Paragon) \\ Domanaar Dominance (Paragon)
 12.0.0.63967
 faction(2780),	-- Shadowpine Tribe
 faction(2781),	-- Revantusk Tribe

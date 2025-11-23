@@ -171,6 +171,53 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["groups"] = { iensemble(241603) },	-- Ensemble: Garb of the Chosen Dead
 					}),
 				}),
+				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+					filter(CLOAKS, {
+						i_RAID_GEAR_CONVERSION(247591),	-- Drape of the Unworthy
+						i_RAID_GEAR_CONVERSION(247592),	-- Mantle of the Victorious Dead
+						i_RAID_GEAR_CONVERSION(247568),	-- Windwhipped Sailcloth
+					}),
+					filter(CLOTH, {
+						i_RAID_GEAR_CONVERSION(247567),	-- Cinch of Light
+						i_RAID_GEAR_CONVERSION(247571),	-- Helhound Hair Bracers
+						i_RAID_GEAR_CONVERSION(249684),	-- Horns of Unwavering Faith
+						i_RAID_GEAR_CONVERSION(247569),	-- Leggings of the Lower Planes
+						i_RAID_GEAR_CONVERSION(249685),	-- Mantle of Unforgotten Souls
+						i_RAID_GEAR_CONVERSION(247584),	-- Oiled Rigger's Handwraps
+						i_RAID_GEAR_CONVERSION(247566),	-- Robes of Celestial Adornment
+						i_RAID_GEAR_CONVERSION(247570),	-- Treads of the Drowned
+					}),
+					filter(LEATHER, {
+						i_RAID_GEAR_CONVERSION(247585),	-- Gloves of Issued Challenge
+						i_RAID_GEAR_CONVERSION(247587),	-- Helbeast Skin Tunic
+						i_RAID_GEAR_CONVERSION(247573),	-- Moccasins of Silent Passage
+						i_RAID_GEAR_CONVERSION(249683),	-- Shoulderguards of Divine Arts
+						i_RAID_GEAR_CONVERSION(247575),	-- Sky-Valiant's Wristguards
+						i_RAID_GEAR_CONVERSION(247572),	-- Strand of Whelk Shells
+						i_RAID_GEAR_CONVERSION(247574),	-- Sucker-Scarred Leggings
+						i_RAID_GEAR_CONVERSION(249682),	-- Supreme Runecaster's Crown
+					}),
+					filter(MAIL, {
+						i_RAID_GEAR_CONVERSION(247576),	-- Anchor Chain Waistguard
+						i_RAID_GEAR_CONVERSION(247579),	-- Bite-Resistant Wristclamps
+						i_RAID_GEAR_CONVERSION(247588),	-- Corroded Val'kyr Chainmail
+						i_RAID_GEAR_CONVERSION(247589),	-- Kvaldir Exult's Grips
+						i_RAID_GEAR_CONVERSION(247577),	-- Leggings of the Undaunted
+						i_RAID_GEAR_CONVERSION(249680),	-- Ordained Hunter's Crown
+						i_RAID_GEAR_CONVERSION(247578),	-- Radiant Soul Sabatons
+						i_RAID_GEAR_CONVERSION(249681),	-- Shoulders of the Dragonslayer
+					}),
+					filter(PLATE, {
+						i_RAID_GEAR_CONVERSION(247583),	-- Calcareous Wristclamps
+						i_RAID_GEAR_CONVERSION(247586),	-- Gleaming Val'kyr Cuirass
+						i_RAID_GEAR_CONVERSION(247581),	-- Goldrune Legplates
+						i_RAID_GEAR_CONVERSION(249678),	-- Helheim Hound's Visor
+						i_RAID_GEAR_CONVERSION(247580),	-- Krakenbone Waistplate
+						i_RAID_GEAR_CONVERSION(247582),	-- Lead-Soled Seabed Striders
+						i_RAID_GEAR_CONVERSION(247590),	-- Reinforced Hound-Handler's Gauntlets
+						i_RAID_GEAR_CONVERSION(249679),	-- Sovereign Valarjar Mantle
+					}),
+				})),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 					header(HEADERS.Achievement, 42558, {	-- Raid Finder: Trial of Valor
 						BossOnly(ODYN),

@@ -13,11 +13,14 @@ IN_GAME_SHOP = createHeader({
 		en = "This section will show you things that you could buy in the In-Game Shop in Retail.",
 		es = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
 		mx = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
+		cn = "此部分显示能在正式服的游戏内商城购买的东西。",
+		tw = "此部分顯示能在正式服的遊戲內商城購買的東西。",
 		-- #else
 		en = "This section will show you things that you can buy in the In-Game Shop.",
 		es = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego.",
-		mx = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego.",		
-		-- #endif
+		mx = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego.",
 		cn = "此部分显示能在游戏内商城购买的东西。",
+		tw = "此部分顯示能在遊戲內商城購買的東西。",
+		-- #endif
 	},
 });

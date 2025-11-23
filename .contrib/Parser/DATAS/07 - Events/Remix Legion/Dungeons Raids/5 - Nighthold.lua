@@ -142,7 +142,7 @@ local COMMONLOOT = {
 		i(247038),	-- Leggings of Shackled Elements
 		i(247039),	-- Raiment of Shackled Elements
 		i(247041),	-- Pauldrons of Shackled Elements
-		--i(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
+		-- i(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
 	}),
 	filter(PLATE, {
 		-- Regular items
@@ -326,6 +326,145 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}),
 					}),
 				}),
+				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+					filter(CLOAKS, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247489),	-- Aristocrat's Winter Drape
+						i_RAID_GEAR_CONVERSION(247481),	-- Astromancer's Greatcloak
+						i_RAID_GEAR_CONVERSION(247482),	-- Cloak of Temporal Recalibration
+						i_RAID_GEAR_CONVERSION(247491),	-- Cloak of Multitudinous Sheaths
+						i_RAID_GEAR_CONVERSION(247436),	-- Dreadlord's Tattered Wingcover
+						i_RAID_GEAR_CONVERSION(247492),	-- Fashionable Autumn Cloak
+						i_RAID_GEAR_CONVERSION(247490),	-- Feathermane Feather Cloak
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247063),	-- Purifier's Drape
+						i_RAID_GEAR_CONVERSION(247058),	-- Cloak of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247066),	-- Cloak of Azj'Aqir
+						i_RAID_GEAR_CONVERSION(247064),	-- Doomblade Shadowwrap
+						i_RAID_GEAR_CONVERSION(247060),	-- Cloak of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247059),	-- Cloak of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247068),	-- Cape of Second Sight
+						i_RAID_GEAR_CONVERSION(247061),	-- Eagletalon Cloak
+						i_RAID_GEAR_CONVERSION(247065),	-- Cloak of Shackled Elements
+						i_RAID_GEAR_CONVERSION(247067),	-- Greatcloak of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247062),	-- Greatmantle of the Highlord
+						i_RAID_GEAR_CONVERSION(247057),	-- Dreadwyrm Greatcloak
+					}),
+					filter(CLOTH, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247430),	-- Antiquated Highborne Cinch
+						i_RAID_GEAR_CONVERSION(247431),	-- Bracers of Harnessed Flame
+						i_RAID_GEAR_CONVERSION(247493),	-- Mana-Cord of Deception
+						i_RAID_GEAR_CONVERSION(247467),	-- Man'ari Skullbuckled Cinch
+						i_RAID_GEAR_CONVERSION(247486),	-- Outcast Wanderer's Footrags
+						i_RAID_GEAR_CONVERSION(247435),	-- Perpetually Muddy Sandals
+						i_RAID_GEAR_CONVERSION(247465),	-- Treads of Galactic Odyssey
+						i_RAID_GEAR_CONVERSION(247466),	-- Woven Lasher Tendril Bracers
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247003),	-- Purifier's Gloves
+						i_RAID_GEAR_CONVERSION(247006),	-- Purifier's Gorget
+						i_RAID_GEAR_CONVERSION(247009),	-- Purifier's Leggings
+						i_RAID_GEAR_CONVERSION(247012),	-- Purifier's Cassock
+						i_RAID_GEAR_CONVERSION(247015),	-- Purifier's Mantle
+						i_RAID_GEAR_CONVERSION(247011),	-- Robe of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247002),	-- Gloves of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247005),	-- Hood of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247008),	-- Leggings of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247014),	-- Mantle of Everburning Knowledge
+						i_RAID_GEAR_CONVERSION(247004),	-- Clutch of Azj'Aqir
+						i_RAID_GEAR_CONVERSION(247007),	-- Eyes of Azj'Aqir
+						i_RAID_GEAR_CONVERSION(247013),	-- Finery of Azj'Aqir
+						i_RAID_GEAR_CONVERSION(247010),	-- Leggings of Azj'Aqir
+						i_RAID_GEAR_CONVERSION(247016),	-- Pauldrons of Azj'Aqir
+					}),
+					filter(LEATHER, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247469),	-- Bracers of Impossible Choices
+						i_RAID_GEAR_CONVERSION(247438),	-- Cake Carrier's Girdle
+						i_RAID_GEAR_CONVERSION(247439),	-- Girdle of Nefarious Strategy
+						i_RAID_GEAR_CONVERSION(247441),	-- Grove-Tender's Moccasins
+						i_RAID_GEAR_CONVERSION(247488),	-- High Shadow Councilor's Wrap
+						i_RAID_GEAR_CONVERSION(247440),	-- Stutterstep Treads
+						i_RAID_GEAR_CONVERSION(247494),	-- Waistclasp of Unethical Power
+						i_RAID_GEAR_CONVERSION(247437),	-- Well-Flattened Wristguards
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247019),	-- Doomblade Tunic
+						i_RAID_GEAR_CONVERSION(247022),	-- Doomblade Gauntlets
+						i_RAID_GEAR_CONVERSION(247025),	-- Doomblade Cowl
+						i_RAID_GEAR_CONVERSION(247028),	-- Doomblade Pants
+						i_RAID_GEAR_CONVERSION(247031),	-- Doomblade Spaulders
+						i_RAID_GEAR_CONVERSION(247018),	-- Tunic of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247021),	-- Gloves of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247024),	-- Hood of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247027),	-- Leggings of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247030),	-- Pauldrons of Enveloped Dissonance
+						i_RAID_GEAR_CONVERSION(247017),	-- Robe of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247020),	-- Gloves of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247023),	-- Hood of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247026),	-- Leggings of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247029),	-- Mantle of the Astral Warden
+						i_RAID_GEAR_CONVERSION(247069),	-- Tunic of Second Sight
+						i_RAID_GEAR_CONVERSION(247070),	-- Gloves of Second Sight
+						i_RAID_GEAR_CONVERSION(247071),	-- Mask of Second Sight
+						i_RAID_GEAR_CONVERSION(247072),	-- Legwraps of Second Sight
+						i_RAID_GEAR_CONVERSION(247073),	-- Shoulderguards of Second Sight
+					}),
+					filter(MAIL, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247470),	-- Belt of Celestial Alignment
+						i_RAID_GEAR_CONVERSION(247448),	-- Emblazoned Duskwatch Belt
+						i_RAID_GEAR_CONVERSION(247447),	-- Sabatons of Burning Steps
+						i_RAID_GEAR_CONVERSION(247453),	-- Shal'dorei Weedstompers
+						i_RAID_GEAR_CONVERSION(247456),	-- Stinger Resistant Bracers
+						i_RAID_GEAR_CONVERSION(247454),	-- Thistle-Proof Thorngrabbers
+						i_RAID_GEAR_CONVERSION(247495),	-- Vintage Duskwatch Cinch
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247032),	-- Eagletalon Tunic
+						i_RAID_GEAR_CONVERSION(247033),	-- Eagletalon Gauntlets
+						i_RAID_GEAR_CONVERSION(247035),	-- Eagletalon Cowl
+						i_RAID_GEAR_CONVERSION(247037),	-- Eagletalon Legchains
+						i_RAID_GEAR_CONVERSION(247040),	-- Eagletalon Spaulders
+						i_RAID_GEAR_CONVERSION(247034),	-- Gauntlets of Shackled Elements
+						i_RAID_GEAR_CONVERSION(247038),	-- Leggings of Shackled Elements
+						i_RAID_GEAR_CONVERSION(247039),	-- Raiment of Shackled Elements
+						i_RAID_GEAR_CONVERSION(247041),	-- Pauldrons of Shackled Elements
+						-- i_RAID_GEAR_CONVERSION(247036),	-- Helm of Shackled Elements [Drops in The Emerald Nightmare]
+					}),
+					filter(PLATE, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247458),	-- Duskwatch Plate Bracers
+						i_RAID_GEAR_CONVERSION(247473),	-- Eternally Recurring Bracers
+						i_RAID_GEAR_CONVERSION(247460),	-- Gilded Nightborne Waistplate
+						i_RAID_GEAR_CONVERSION(247496),	-- Gleaming Celestial Waistguard
+						i_RAID_GEAR_CONVERSION(247472),	-- Goresmeared Abyssal Waistplate
+						i_RAID_GEAR_CONVERSION(247477),	-- Immaculately Polished Boots
+						i_RAID_GEAR_CONVERSION(247475),	-- Jagged Carapace Wristclamps
+						i_RAID_GEAR_CONVERSION(247464),	-- Leystone-Toe Kickers
+						i_RAID_GEAR_CONVERSION(247471),	-- Sabatons of Unchanging Fate
+						i_RAID_GEAR_CONVERSION(247484),	-- Waistplate of Fractured Realities
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247044),	-- Chestplate of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247047),	-- Gauntlets of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247050),	-- Warhelm of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247053),	-- Legplates of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247056),	-- Shoulderplates of the Obsidian Aspect
+						i_RAID_GEAR_CONVERSION(247043),	-- Breastplate of the Highlord
+						i_RAID_GEAR_CONVERSION(247046),	-- Gauntlets of the Highlord
+						i_RAID_GEAR_CONVERSION(247049),	-- Helmet of the Highlord
+						i_RAID_GEAR_CONVERSION(247052),	-- Legplates of the Highlord
+						i_RAID_GEAR_CONVERSION(247055),	-- Pauldrons of the Highlord
+						i_RAID_GEAR_CONVERSION(247042),	-- Dreadwyrm Breastplate
+						i_RAID_GEAR_CONVERSION(247045),	-- Dreadwyrm Gauntlets
+						i_RAID_GEAR_CONVERSION(247048),	-- Dreadwyrm Crown
+						i_RAID_GEAR_CONVERSION(247051),	-- Dreadwyrm Legplates
+						i_RAID_GEAR_CONVERSION(247054),	-- Dreadwyrm Shoulderguards
+					}),
+				})),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 					header(HEADERS.Achievement, 60861, {	-- Arcing Aqueducts
 						BossOnly(SKORPYRON),

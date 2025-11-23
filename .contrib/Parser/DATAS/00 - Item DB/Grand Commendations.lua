@@ -225,43 +225,43 @@ i(146939, FACTION_THE_WARDENS);				-- Wardens Insignia [The Wardens]
 	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation. These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
 
 	-- 7th Legion
-	--	a(i(163617, FACTION_7TH_LEGION));	-- Rusted Alliance Insignia
+		-- a(i(163617, FACTION_7TH_LEGION));	-- Rusted Alliance Insignia
 		a(i(174507, FACTION_7TH_LEGION));	-- Fallen Soldier's Insignia (A)
 
 	-- Champions of Azeroth
-	--	i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
+		-- i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
 		i(174502, FACTION_CHAMPIONS_OF_AZEROTH);	-- Tear of Azeroth
 
 	-- Honorbound
-	--	h(i(163621, FACTION_THE_HONORBOUND));	-- Rusted Horde Insignia
+		-- h(i(163621, FACTION_THE_HONORBOUND));	-- Rusted Horde Insignia
 		h(i(174508, FACTION_THE_HONORBOUND));	-- Fallen Soldier's Insignia (H)
 
 	-- Order of Embers
-	--	i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
+		-- i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
 		i(174503, FACTION_ORDER_OF_EMBERS);	-- Exotically Spiced Carrot
 
 	-- Proudmoore Admiralty
-	--	a(i(163616, FACTION_PROUDMOORE_ADMIRALTY));	-- Dented Coin
+		-- a(i(163616, FACTION_PROUDMOORE_ADMIRALTY));	-- Dented Coin
 		a(i(174504, FACTION_PROUDMOORE_ADMIRALTY));	-- Proudmoore War Copper
 
 	-- Storm's Wake
-	--	a(i(163615, FACTION_STORMS_WAKE));	-- Lost Sea Scroll
+		-- a(i(163615, FACTION_STORMS_WAKE));	-- Lost Sea Scroll
 		a(i(174505, FACTION_STORMS_WAKE));	-- Tide-Speaker's Tome
 
 	-- Talanji's Expedition
-	--	h(i(163619, FACTION_TALANJIS_EXPEDITION));	-- Golden Beetle
+		-- h(i(163619, FACTION_TALANJIS_EXPEDITION));	-- Golden Beetle
 		h(i(174506, FACTION_TALANJIS_EXPEDITION));	-- Golden Insect Wings
 
 	-- Tortollan Seekers
-	--	i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
+		-- i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
 		i(174519, FACTION_TORTOLLAN_SEEKERS);	-- Verdant Hills of Chokingvine - Page 17
 
 	-- Voldunai
-	--	h(i(163618, FACTION_VOLDUNAI));	-- Shimmering Shell
+		-- h(i(163618, FACTION_VOLDUNAI));	-- Shimmering Shell
 		h(i(174501, FACTION_VOLDUNAI));	-- Ornate Voldunai Jewelry
 
 	-- Zandalari Empire
-	--	h(i(163620, FACTION_ZANDALARI_EMPIRE));	-- Island Flotsam
+		-- h(i(163620, FACTION_ZANDALARI_EMPIRE));	-- Island Flotsam
 		h(i(174518, FACTION_ZANDALARI_EMPIRE));	-- Jani Figurine
 
 
@@ -406,13 +406,13 @@ i(224566, FACTION_TIMBERMAW_HOLD);			-- Commendation of the Timbermaw Hold
 a(i(224565, FACTION_WINTERSABER_TRAINERS));	-- Commendation of the Wintersaber Trainers
 i(224570, FACTION_ZANDALAR_TRIBE);			-- Commendation of the Zandalar Tribe
 -- Blizz decided against adding these, boooo
---i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
---i(224563, FACTION_FROSTWOLF_CLAN);		-- Commendation of the Frostwolf Clan
---i(224568, FACTION_THE_LEAGUE_OF_ARATHOR);	-- Commendation of the League of Arathor
---i(224564, 630);							-- Commendation of the Ravasaur Trainers
---i(224559, FACTION_SILVERWING_SENTINELS);	-- Commendation of the Silverwing Sentinels
---i(224562, FACTION_STORMPIKE_GUARD);		-- Commendation of the Stormpike Guard
---i(224560, FACTION_WARSONG_OUTRIDERS);		-- Commendation of the Warsong Outriders
+-- i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
+-- i(224563, FACTION_FROSTWOLF_CLAN);		-- Commendation of the Frostwolf Clan
+-- i(224568, FACTION_THE_LEAGUE_OF_ARATHOR);	-- Commendation of the League of Arathor
+-- i(224564, 630);							-- Commendation of the Ravasaur Trainers
+-- i(224559, FACTION_SILVERWING_SENTINELS);	-- Commendation of the Silverwing Sentinels
+-- i(224562, FACTION_STORMPIKE_GUARD);		-- Commendation of the Stormpike Guard
+-- i(224560, FACTION_WARSONG_OUTRIDERS);		-- Commendation of the Warsong Outriders
 ------------------
 -- PATCH 11.1.0 --
 ------------------

@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 85837,
 				}),
 				o(500046, {	-- Gift of the Brothers
-					["description"] = "Talk to 3 NPC's after clicking on the treasure.\n\nEnable Quest tracking for detailed infos.",
+					["description"] = "Talk to 3 NPCs after clicking on the treasure.\n\nEnable Quest tracking for detailed infos.",
 					["coords"] = {
 						{ 76.1, 45.3, KARESH },	-- Treasure
 						{ 75.5, 39.8, KARESH },	-- Sahra

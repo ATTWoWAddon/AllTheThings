@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(SPECIAL, {
-			n(182194, {	--- Baroness Vashj
+			n(182194, {	-- Baroness Vashj
 				["coord"] = { 57.6, 92, MALDRAXXUS },
 				["groups"] = {
 					i(187923, {	-- Aurelid Lure (CI!)

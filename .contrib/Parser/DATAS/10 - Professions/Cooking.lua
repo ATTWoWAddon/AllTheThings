@@ -135,7 +135,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			-- #endif
 		}),
 		ach(122, {	-- Expert Cook
-			 -- #if SEASON_OF_DISCOVERY
+			-- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
 					t.u = ]] .. SOD_PHASE_TWO .. [[;

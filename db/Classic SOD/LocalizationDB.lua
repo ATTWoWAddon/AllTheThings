@@ -21,7 +21,7 @@ L.ACCOUNT_MODE_TOOLTIP = "Turn this setting on if you want to track all of the T
 L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
 L.ACCOUNT_THINGS_LABEL = "Account-Wide Things";
 L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-L.ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
+L.ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Appearances should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
 L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used Account-Wide, but if you only care about collecting them on your main character then you may prefer tracking them Account-Wide.";
 L.ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
 L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
@@ -1100,7 +1100,6 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Speak to N'ora",
 	[-626] = "Speak to Brother Romulus",
 	[-627] = "Blackrock Eruption",
-	[-628] = "The Blood Moon",
 	[-629] = "Bless the Fallen",
 	[-630] = "Burn the Fallen Knight",
 	[-631] = "Speak to Harold",
@@ -1120,6 +1119,7 @@ localize(L.HEADER_NAMES, {
 	[-645] = "Waylaid Supplies",
 	[-646] = "Crafted",
 	[-647] = "Gathering",
+	[-688] = "Blood Moon",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1151,13 +1151,13 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-615] = "1 of 3 Operas will be randomly selected every day.",
 	[-616] = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 	[-627] = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
-	[-628] = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
 	[-632] = "This Season brings an initial level cap of 25 and a new level-25 endgame, including a 10-player Blackfathom Deeps raid with new mechanics, new and reimagined bosses to challenge player tactics and strategies, and fresh rewards.",
 	[-638] = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
 	[-639] = "Rune Engraving is a new class system for Season of Discovery. It allows each class to tailor their gameplay experience by unlocking new unique abilities!",
 	[-641] = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
 	[-642] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
 	[-645] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
+	[-688] = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1285,7 +1285,6 @@ localize(L.HEADER_ICONS, {
 	[-625] = 131038,
 	[-626] = 131038,
 	[-627] = 237588,
-	[-628] = 237513,
 	[-629] = 131038,
 	[-630] = 131038,
 	[-631] = 131038,
@@ -1304,6 +1303,7 @@ localize(L.HEADER_ICONS, {
 	[-645] = 132763,
 	[-646] = 131034,
 	[-647] = 131025,
+	[-688] = 237513,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1377,7 +1377,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=20,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=27,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=17,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=24,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=1,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
@@ -1403,7 +1402,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=7,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=21,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=28,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=5,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
 });
 
 -- Filter Database Module
@@ -11347,6 +11347,8 @@ L.HEIRLOOMS_UPGRADES_CHECKBOX = "+Aufwertungen";
 L.HEIRLOOMS_UPGRADES_DESC = "Dies zeigt an, ob Ihr ein Erbstück bereits auf eine bestimmte Stufe aufgewertet habt.\n\nR.I.P. Gold.\n - Crieve";
 L.HIDDEN_QUEST_TRIGGERS = "Versteckte Quest Auslöser";
 L.HIDDEN_QUEST_TRIGGERS_DESC = "Dies sind Quests, deren Auslösung anhand bestimmter Kriterien manuell festgelegt wurde und die vor allem Intern vom Spiel zu Nachverfolgungszwecken verwendet werden.";
+L.ILLUSION_ID = "Illusion-ID";
+L.ILLUSIONS_CHECKBOX = "Illusionen";
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "Unvollständig|r";
 L.INSTANCE_DESC = "Klick diesen Knopf um eine zufällige Instanz auszuwählen, die Euch noch fehlt.";
 L.ITEM_DESC = "Klick diesen Knopf um einen zufälligen Gegenstand auszuwählen, der Euch noch fehlt.";
@@ -11614,6 +11616,7 @@ localize(L.HEADER_NAMES, {
 	[-639] = "Runenschnitzen",
 	[-640] = "Seelenvermittler",
 	[-645] = "Weggelegte Vorräte",
+	[-688] = "Blutmond",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -14065,6 +14068,7 @@ L.ICON_ONLY_CHECKBOX = "Icône seulement";
 L.ICON_ONLY_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher uniquement l’icône dans le coin supérieur droit au lieu de l’icône et du texte collecté / non collecté.\n\nCertaines personnes préfèrent des infobulles plus petites…";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez ignorer les exigences en matière d’armure, d’arme, de race, de classe ou de profession pour les objets LqE / LqR.\n\nSi vous essayez de collecter des objets pour vos personnages secondaires via l’hôtel des ventes, ce mode peut vous être utile.";
+L.ILLUSION_ID = "ID de l’Illusion";
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "Incomplet|r";
 L.INSTANCE_DESC = "Cliquez sur ce bouton pour sélectionner une instance aléatoire basé sur ce qu’il vous manque.";
 L.ITEM_DESC = "Cliquez sur ce bouton pour sélectionner un objet aléatoire basé sur ce qu’il vous manque.";
@@ -14320,6 +14324,7 @@ localize(L.HEADER_NAMES, {
 	[-639] = "Gravure",
 	[-640] = "Courtiers D'âmes",
 	[-645] = "Fournitures isolées",
+	[-688] = "Lune de sang",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-47] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -16670,6 +16675,8 @@ L.EXPANSION_FILTER_LABEL = "Filtra per Espansione";
 L.EXPANSION_FILTER_TOOLTIP = "Attiva/disattiva la visibilità del contenuto di %s";
 L.EXPANSION_FILTERS_PAGE = "Filtri Espansione";
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguaci & Avventurieri";
+L.ILLUSION_ID = "ID dell’Illusione";
+L.ILLUSIONS_CHECKBOX = "Illusioni d'Incantamento";
 L.NEW_VERSION_FLAVORS = {"perché AllTheThings ha fame."};
 L.PLAYER_RANK_AUTHOR = "|T" .. _.asset("logo_32x32") .. ":0|t |c" .. _.DefaultColors.White .. "Autore|r";
 L.PLAYER_RANK_COLLECTOR = "|T" .. _.asset("logo_32x32") .. ":0|t |c" .. _.DefaultColors.White .. "Collettore|r";
@@ -18232,6 +18239,8 @@ L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguidores & Co
 L.HEIRLOOM_TEXT = "Herança Desbloqueada";
 L.HEIRLOOM_TEXT_DESC = "Isso indica se já adquiriu ou não a Herança.";
 L.HEIRLOOMS_UPGRADES_DESC = "Isso indica se já atualizou ou não a herança para um certo nível.\n\nR.I.P. Gold.\n - Crieve";
+L.ILLUSION_ID = "ID de Ilusão";
+L.ILLUSIONS_CHECKBOX = "Ilusões";
 L.ITEM_GIVES_REP = "Concede reputação com '";
 L.KNOWN_BY = "Conhecido como %s";
 L.LORE = "História";
@@ -18333,6 +18342,7 @@ localize(L.HEADER_NAMES, {
 	[-639] = "Gravura",
 	[-640] = "Corretores de Almas",
 	[-645] = "Suprimentos emboscados",
+	[-688] = "Lua Sangrenta",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -20637,6 +20647,7 @@ L.CURSEFORGE_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать
 L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в |c" .. _.DefaultColors.Account .. "Режиме Аккаунта|r.|r";
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
+L.DEATHS_CHECKBOX = "Смерти";
 L.DEBUG_LOGIN = "Награда за вход в игру.\n\nОтличная работа! ВЫ СДЕЛАЛИ ЭТО!\n\nОтображается только в Режиме Отладки.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Режим Отладки |cffffffff(Показать Всё)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Буквально ... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
@@ -20750,6 +20761,7 @@ L.ICON_ONLY_CHECKBOX = "Только Иконка";
 L.ICON_ONLY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть только иконку в углу подсказки вместо иконки и надписи собрано/не собрано.\n\nНекоторым людям нравятся подсказки поменьше ...";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Игнорировать Фильтры БоЕ/БоА";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите игнорировать требования по типу брони, оружия, расе, классу или профессии для БоЕ/БоА предметов.\n\nЕсли Вы стремитесь собрать штучки для Ваших альтов через Аукцион, этот режим может быть полезен для Вас.";
+L.ILLUSION_ID = "ID чар оружия";
 L.ILLUSIONS_CHECKBOX = "Чары для оружия";
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "Включите для отслеживания чар для оружия.\n\nЭто круто выглядящие эффекты, которые можно применить к Вашему оружию!\n\nПримечание: Вы не иллюзия, невзирая на то, как считают все Ночнорождённые.";
 L.INCLUDE_ORIGINAL_CHECKBOX = "Оригинал";
@@ -20886,7 +20898,7 @@ L.PLAYER_TITLE_BRINGER_OF_FLAMES = "|cffa335ee%s, несущий пламя|r";
 L.PLAYER_TITLE_GOLD_TYCOON = "|c" .. _.DefaultColors.Raid .. "Золотой магнат %s|r";
 L.PLAYER_TITLE_KING_OF_THE_ASYLUM = "|cffa335ee%s, король убежища|r";
 L.PLAYER_TITLE_LORD_KING = "|cffa335eeЛорд-король %s|r";
-L.PLAYER_TITLE_LORD_QUEEN = "|cffa335eeЛорд королева %s|r";
+L.PLAYER_TITLE_LORD_QUEEN = "|cffa335eeЛорд-королева %s|r";
 L.PLAYER_TITLE_SCARAB_LORD = "|c" .. _.DefaultColors.Raid .. "Повелитель Скарабеев %s|r";
 L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s Завершающий|r";
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s Истребитель|r";
@@ -20896,6 +20908,7 @@ L.POPOUT = "Открываемый список";
 L.PRECISION_SLIDER = "Уровень точности";
 L.PRECISION_SLIDER_TOOLTIP = "Используйте для установления желаемой точности для процентных рассчётов.\n\nПо умолчанию: 2";
 L.PREREQUISITE_QUESTS = "Есть предшествующие задания, которые должны быть выполнены перед получением:";
+L.PRESET_RESTORE = "Сбросить";
 L.PRESET_UPDATE_SUCCESS = "Группа обновлена успешно.";
 L.PROFESSION_LIST = "Список Профессий";
 L.PROFESSION_LIST_DESC = "Откройте Ваши профессии для кэширования.";
@@ -21211,6 +21224,7 @@ localize(L.HEADER_NAMES, {
 	[-639] = "Гравировка",
 	[-640] = "Душевные брокеры",
 	[-645] = "Подстерегающие припасы",
+	[-688] = "Кровавая луна",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -23550,6 +23564,8 @@ L.EXPANSION_FILTER_LABEL = "확장팩별 필터";
 L.EXPANSION_FILTER_TOOLTIP = "%s 콘텐츠 표시 전환";
 L.EXPANSION_FILTERS_PAGE = "확장팩 필터";
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 추종자 및 동료";
+L.ILLUSION_ID = "환영 ID";
+L.ILLUSIONS_CHECKBOX = "환영들";
 L.NEW_VERSION_FLAVORS = {"AllTheThings가 배고프기 때문입니다."};
 L.PLAYER_RANK_AUTHOR = "|T" .. _.asset("logo_32x32") .. ":0|t |c" .. _.DefaultColors.White .. "작가|r";
 L.PLAYER_RANK_COLLECTOR = "|T" .. _.asset("logo_32x32") .. ":0|t |c" .. _.DefaultColors.White .. "수집기|r";
@@ -23627,6 +23643,7 @@ localize(L.HEADER_NAMES, {
 	[-639] = "각인술",
 	[-640] = "소울 브로커",
 	[-645] = "웨이레이드 보급품",
+	[-688] = "핏빛 달",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -26159,7 +26176,7 @@ L.ICON_ONLY_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver sólo el icon
 L.ICON_PATH = "Icono de ruta";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignora los filtros de objetos BoE/BoA";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos BoE/BoA.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.";
-L.ILLUSION_ID = "Ilusión ID";
+L.ILLUSION_ID = "ID de Ilusión";
 L.ILLUSIONS_CHECKBOX = "Ilusiones";
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear ilusiones.\n\nSon efectos muy molones que puedes aplicar a tus armas!\n\nNOTA: No eres una ilusión, aunque todos los Nocheterna piensen lo contrario.";
 L.INCLUDE_ORIGINAL_CHECKBOX = "Fuente original";
@@ -26697,9 +26714,11 @@ localize(L.HEADER_NAMES, {
 	[-639] = "Grabado",
 	[-640] = "Corredores de Almas",
 	[-645] = "Suministros asaltados",
+	[-688] = "Luna Sangrienta",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
+	[-43] = "Esta sección contiene misiones y domadores relacionados con los Duelos de Mascotas.",
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
 	[-47] = "Contiene cosas que son recompensadas o están disponibles en otro contenido dentro de la sección contenedora.\nSe consolidan aquí en un esfuerzo por reducir la duplicación de muchas fuentes posibles.",
 	[-59] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -26708,9 +26727,11 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como coleccionado.",
 	[-342] = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 	[-343] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
+	[-613] = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
 	[-632] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
 	[-639] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
 	[-645] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
+	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -29112,7 +29133,6 @@ L.ICON_LEGEND_STATUS_LABEL = "Mensaje del icono";
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. _.DefaultColors.White .. "|T" .. _.asset("status-unobtainable") .. ":0|t No obtenible\n|T" .. _.asset("status-prerequisites") .. ":0|t Obtenible sólo con prerequisitos\n|T" .. _.asset("status-seasonal-available") .. ":0|t Contenido temporal disponible\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t Contenido temporal no disponible\n|T374225:0|t No disponible en tu personaje actual\n|T" .. _.asset("status-unsorted") .. ":0|t Sin listar en ATT|r";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignora los filtros de objetos LaE/LaC";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos LaE/LaC.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.";
-L.ILLUSION_ID = "ID de ilusión";
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear ilusiones.\n\nSon efectos muy vistosos que puedes aplicar a tus armas!\n\nNOTA: No eres una ilusión, aunque todos los Natonocturnos piensen lo contrario.";
 L.INCLUDE_ORIGINAL_CHECKBOX = "origen original";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Activa esta opción si te gustaba la información de origen original en la lista de Apariencias Compartidas en la ventana emergente.";
@@ -29274,9 +29294,12 @@ localize(L.HEADER_NAMES, {
 	[-613] = "Arboleda de las Pesadillas",
 	[-615] = "Ópera de imprecación",
 	[-638] = "Incursiones de pesadilla",
+	[-688] = "Luna de sangre",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
+	[-613] = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
+	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
 });
 for key,value in pairs({
 	[2] = "Removido del juego",
@@ -30417,7 +30440,7 @@ L.ACCOUNT_MODE_TOOLTIP = "如果要追踪所有角色的所有内容，而不考
 L.ACCOUNT_SYNCHRONIZATION = "帐号同步";
 L.ACCOUNT_THINGS_LABEL = "帐号通用事物";
 L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
-L.ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "幻化应该在整个账号范围内收集。某些物品并非每个职业都能学会，因此 ATT 将尽力只向您展示你当前角色可以收集的物品。";
+L.ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "外观应该在整个账号范围内收集。某些物品并非每个职业都能学会，因此 ATT 将尽力只向您展示你当前角色可以收集的物品。";
 L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
 L.ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "伙伴宠物可在多个角色上收集，并且实际上需要你拥有大量的背包空间才能将它们全部收集在一个角色上。\n\n我们建议您保持此功能开启，但你可以自己刷。";
 L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "如果任一角色已经收集了角色解锁的物品，则将其视为已收集。";
@@ -30526,10 +30549,6 @@ L.CELEBRATIONS_LABEL = "庆祝和音效";
 L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 L.CHANGE_SEARCH_FILTER_DESC = "点击此按钮可更改搜索过滤。";
 L.CHANNEL_AMBIENCE = "环境";
-L.CHANNEL_DIALOG = "对话";
-L.CHANNEL_MASTER = "主要";
-L.CHANNEL_MUSIC = "音乐";
-L.CHANNEL_SFX = "音效";
 L.CHARACTERUNLOCKS_CHECKBOX = "角色解锁";
 L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "启用此选项可跟踪角色解锁。这些是基于角色的各种解锁，无法明确归类为其他类型（例如 妖术变体、变形术变体、猎人物种驯服解锁、波可波克自定义等）。\n\n默认情况下按角色跟踪。";
 L.CHAT_COMMANDS_LABEL = "聊天命令";
@@ -30639,9 +30658,9 @@ L.EVENT_SCHEDULE = "事件时间表";
 L.EVENT_START = "开始:";
 L.EVENT_WHERE = "地点:";
 L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
-L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "启用此选项后，在进入地下城或团队副本时，迷你列表中将仅自动展开与当前激活难度相匹配的难度标题。\n\n示例：当进入英雄难度地下城时，仅展开英雄难度标题。";
-L.EXPAND_MINILIST_CHECKBOX = "展开迷你列表";
-L.EXPAND_MINILIST_CHECKBOX_TOOLTIP = "启用此选项后，在每次游戏会话中首次查看迷你列表时，将自动展开其中包含的所有分组。";
+L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "启用此选项后，在进入地下城或团队副本时，小列表中将仅自动展开与当前激活难度相匹配的难度标题。\n\n示例：当进入英雄难度地下城时，仅展开英雄难度标题。";
+L.EXPAND_MINILIST_CHECKBOX = "展开小列表";
+L.EXPAND_MINILIST_CHECKBOX_TOOLTIP = "启用此选项后，在每次游戏会话中首次查看小列表时，将自动展开其中包含的所有分组。";
 L.EXPANSION_CURRENT_ONLY = "仅当前";
 L.EXPANSION_CURRENT_ONLY_TOOLTIP = "仅显示当前资料片的内容";
 L.EXPANSION_DISABLE_ALL = "禁用全部";
@@ -30667,20 +30686,20 @@ L.FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业
 L.FACTION_SPECIFIC_REP = "并非所有声望都可以在单个角色上查看。例：联盟玩家无法看到战歌骑手，部落玩家无法查看银翼哨兵。";
 L.FACTIONS = "阵营";
 L.FAILED_ITEM_INFO = "未能获得物品信息。该物品可能是无效的或者可能还没有被缓存在你的服务器上。";
-L.FILL_CATALYST_DATA_CHECKBOX_TOOLTIP = "将当前物品可能且通过 ATT 判定的化生 |T" .. _.asset("Interface_Catalyst") .. ":0|t 结果填入。\n\n注意：此填充器不适用于 ATT 迷你列表。";
+L.FILL_CATALYST_DATA_CHECKBOX_TOOLTIP = "将当前物品可能且通过 ATT 判定的化生 |T" .. _.asset("Interface_Catalyst") .. ":0|t 结果填入。\n\n注意：此填充器不适用于 ATT 小列表。";
 L.FILL_COST_DATA_CHECKBOX_TOOLTIP = "将可用指定消耗 |T".._.asset("Currency")..":0|t 购买的所有物品填入。\n\n注意：“购买”在此为广义概念，本质上指需要消耗/使用/扣除该“成本”才能获取的物品。";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX = "显示可回收成本组";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "如果您想让用于购买收藏品的物品/货币被视为收藏品并显示在动态填充的任务下，请启用此选项。 ";
 L.FILL_NPC_DATA_CHECKBOX = "显示嵌套 NPC 数据";
-L.FILL_NPC_DATA_CHECKBOX_TOOLTIP = "如果希望在迷你列表中显示时将所有相关数据嵌套到给定的 NPC（常见首领掉落、掉落等），请启用此选项。此选项可能会导致大量重复，但其想法是该 NPC 将在迷你列表中保持可见，就好像需要特定于该 NPC 的内容一样。\n\n默认：关闭";
+L.FILL_NPC_DATA_CHECKBOX_TOOLTIP = "如果希望在小列表中显示时将所有相关数据嵌套到给定的 NPC（常见首领掉落、掉落等），请启用此选项。此选项可能会导致大量重复，但其想法是该 NPC 将小列表中保持可见，就好像需要特定于该 NPC 的内容一样。\n\n默认：关闭";
 L.FILL_OBJECT_DATA_CHECKBOX_TOOLTIP = "填入由源对象提供的通用数据（例如采矿/采药/钓鱼点）。";
-L.FILL_SYMLINK_DATA_CHECKBOX_TOOLTIP = "填入在额外来源中具有替代性及显著获取途径的内容。\n此功能主要用于：当某项内容在主列表中可能被归类至通用“奖励”（或类似）分组下时，若在迷你列表或悬浮提示中显示，则能更清晰地展示其具体来源（多个供应商等）。\n\n注意：存在符号链接的悬浮提示将显示以下文本：\n%s";
+L.FILL_SYMLINK_DATA_CHECKBOX_TOOLTIP = "填入在额外来源中具有替代性及显著获取途径的内容。\n此功能主要用于：当某项内容在主列表中可能被归类至通用“奖励”（或类似）分组下时，若在小列表或悬浮提示中显示，则能更清晰地展示其具体来源（多个供应商等）。\n\n注意：存在符号链接的悬浮提示将显示以下文本：\n%s";
 L.FILL_UPGRADE_DATA_CHECKBOX_TOOLTIP = "填入适用于指定物品的所有升级选项 |T".._.asset("Interface_Upgrade")..":0|t。n\n在 ATT 列表中，这通常显示物品在默认来源状态下可用的升级；而在悬浮提示中，它基于显示的原始物品数据。";
 L.FILLERS_EXPLANATION = "|cffFFFFFF填充项是一种机制，通过它可以在各种界面元素中的其他 ATT 内容内或下方“填充”额外数据，以展示某个事物的进一步用途或作用。例如，显示某个物品可购买的结果就是由“填充项”提供的。\n此标签页允许你修改在 ATT 中将启用哪些填充项。|r";
 L.FILLERS_LABEL = "填充项";
 L.FILTER_ID = "滤镜 ID";
-L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "为时空漫游筛选迷你列表";
-L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "启用此选项后，可在游玩正式服或时光漫游角色时，正确过滤时光漫游相关内容（仅限迷你列表显示）。\n\n注意：该选项仅在时光漫游活动期间可用！";
+L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "为时空漫游筛选小列表";
+L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "启用此选项后，可在游玩正式服或时光漫游角色时，正确过滤时光漫游相关内容（仅限小列表显示）。\n\n注意：该选项仅在时光漫游活动期间可用！";
 L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "不限制等级";
 L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "启用此选项会忽略玩家等级限制显示内容。\n\n\n\n注意：对于新账号，禁用此项特别有用。";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "无技能等级限制";
@@ -30735,8 +30754,8 @@ L.ICON_PATH = "图标路径";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/战团绑定的筛选";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "启用此选项以忽略装备绑定/战团绑定物品的护甲、武器、种族、职业或专业技能要求。\n\n如果你正试图通过拍卖行扫描给小号收集物品，此模式可能对你有用。";
 L.ILLUSION_ID = "幻象 ID";
-L.ILLUSIONS_CHECKBOX = "附魔幻象";
-L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪附魔幻象。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。";
+L.ILLUSIONS_CHECKBOX = "幻象";
+L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻象。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。";
 L.INCLUDE_ORIGINAL_CHECKBOX = "原始来源";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "未完成|r";
@@ -30775,7 +30794,7 @@ L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见�
 L.LINKED_ACCOUNT_TOOLTIP = "此角色的帐号将在登录时自动同步。为了获得最佳游戏效果，您应该将银行角色而不是您的主要角色列入白名单，以免在同步帐户数据时影响您玩角色的功能。";
 L.LINKED_ACCOUNTS = "链接帐号";
 L.LINKED_ACCOUNTS_TOOLTIP = "这将显示迄今为止定义的所有关联帐号。";
-L.LIST = "迷你列表";
+L.LIST = "小列表";
 L.LOCATIONS_SLIDER_TOOLTIP = "使用该功能可以自定义鼠标提示中显示的来源位置数量。\n\n注意：这也会根据其他来源的多少来显示“X”个数量，如果这个总数等于显示的元素总数，那么就会简单地显示最后一个来源。\n\n默认：5";
 L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
 L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
@@ -30795,7 +30814,7 @@ L.LOOT_SPEC_DESC_2 = "在个人拾取地下城，副本和户外事件中，此�
 L.LOOT_SPEC_UNKNOWN = "拾取专精未知";
 L.LOOT_TABLE_CHANCE = "拾取列表几率";
 L.LORE = "传言";
-L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
+L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度]";
 L.MAIN_LIST_SCALE_TOOLTIP = "使用此功能可以自定义主列表的缩放。\n\n默认：1";
 L.MAIN_LIST_SLIDER_LABEL = "主列表缩放";
 L.MAIN_ONLY = "仅主要";
@@ -30870,7 +30889,7 @@ L.ONLY_RWP = "仅‘随补丁移除’";
 L.ONLY_RWP_TOOLTIP = "启用此选项仅跟踪将来会从游戏中删除的幻化。只有标记为“随补丁移除”的数据的物品才会计入此数据。如果您发现未标记但应标记的物品，请告诉我！\n\n您可以根据“过滤器”选项卡更改显示的战利品类型。";
 L.OPEN_AUTOMATICALLY = "自动开启";
 L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪开发者，最好是取消勾选此项。这样做是为了迫使暴雪修复和/或承认这些错误。";
-L.OPEN_MINILIST_FOR = "打开迷你列表：";
+L.OPEN_MINILIST_FOR = "打开小列表：";
 L.OPPOSITE_FACTION_EQ = "与对立阵营对应：";
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\n" .. SHIFT_KEY_TEXT .. "左键刷新收藏\n" .. CTRL_KEY_TEXT .. "左键展开/折叠列表\n" .. SHIFT_KEY_TEXT .. "右键单击排序组/弹出列表\n" .. ALT_KEY_TEXT .. "右键设置路径点|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n" .. SHIFT_KEY_TEXT .. "左键搜索拍卖行|r";
@@ -31194,7 +31213,7 @@ L.WITH_WRAPPING_CHECKBOX = "允许换行";
 L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "启用此选项允许来源在鼠标提示中换行。\n这将确保鼠标提示不会超过必要的宽度，但不幸的是在许多情况下来源信息会变得更加难以阅读。";
 L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物，目前可以在某个地方获得。去得到他们！";
 L.WORLDMAP_BUTTON_CHECKBOX = "显示世界地图按钮";
-L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地图上看到 ATT 按钮，请启用此选项。使用此按钮可以快速访问当前显示区域的迷你列表。通常情况下，你需要亲自前往该区域才能看到迷你列表上的内容，你可以通过在聊天框中键入'/att mini'来访问迷你列表。";
+L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地图上看到 ATT 按钮，请启用此选项。使用此按钮可以快速访问当前显示区域的小列表。通常情况下，你需要亲自前往该区域才能看到小列表上的内容，你可以通过在聊天框中键入'/att mini'来访问小列表。";
 L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。";
 L.YOU_DID_IT = "你做到了！";
 L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。";
@@ -31263,7 +31282,6 @@ localize(L.HEADER_NAMES, {
 	[-625] = "与奈奥拉谈",
 	[-626] = "与罗穆卢斯修士交谈",
 	[-627] = "黑石大爆发",
-	[-628] = "鲜血之月",
 	[-632] = "探索赛季",
 	[-633] = "理解",
 	[-634] = "等级 1",
@@ -31276,6 +31294,7 @@ localize(L.HEADER_NAMES, {
 	[-645] = "被伏击的货物",
 	[-646] = "制造",
 	[-647] = "采集",
+	[-688] = "鲜血之月",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -33433,14 +33452,14 @@ if GetLocale():sub(3,4):lower() == "tw" then
 L._BETA_LABEL = "|cff4AA7FF [測試]|r";
 L.ABOUT_BOTTOM = "活躍貢獻者：|CFFFFFFFF（排名不分先後）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先後）\n%s\n\n特別鳴謝 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。絕對應該下載他們的插件，以獲得背包中物品的收藏圖標！ %s %s %s\n\n如需線上收藏比較，請拜訪 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
 L.ABOUT_TOP = "|cFFFFFFFF 是一個收藏追蹤插件，可以向您展示在遊戲中獲得所有內容的位置和方式！我們的 Discord 上有大量用戶社群（底部連結），您可以在其中提問、提交建議以及回報錯誤或丟失的物品。如果發現一些收藏品或未記錄的任務，可以在 Discord 上告訴我們，或者對於更精通技術的人，我們有一個您可以直接貢獻的 Git。\n\n雖然我們努力爭取完成，但每次更新都會加入很多東西，所以如果我們遺漏了什麼，請理解我們是一個小團隊，試圖跟上變化並自己收藏東西。:D\n\n在我直播時隨時問我問題，我會盡力回答，即使它與 ATT（一般魔獸插件程式也是如此）沒有直接關係。\n\n- |r|cffff8000Crieve|r";
-L.ACC_WIDE_DEFAULT = "已追蹤 |c" .. _.DefaultColors.Account .. "帳號通用|r 預設。";
+L.ACC_WIDE_DEFAULT = "已追蹤 |c" .. _.DefaultColors.Account .. "帳號共通|r 預設。";
 L.ACCOUNT_MANAGEMENT = "帳號管理";
 L.ACCOUNT_MANAGEMENT_TOOLTIP = "此列表顯示了與同步帳號資料相關的所有功能。";
 L.ACCOUNT_MODE = "|c" .. _.DefaultColors.Account .. "帳號模式|r";
 L.ACCOUNT_MODE_TOOLTIP = "如果要追蹤所有角色的所有內容，而不考慮職業和種族篩選，請啟用此設定。\n\n無法獲得篩選仍然適用。";
 L.ACCOUNT_SYNCHRONIZATION = "帳號同步";
-L.ACCOUNT_THINGS_LABEL = "帳號通用事物";
-L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追蹤通常是在整個帳號通用內進行的，但有一些特定職業和種族的專屬成就，你無法在你的主要角色上獲得。";
+L.ACCOUNT_THINGS_LABEL = "帳號共通事物";
+L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追蹤通常是在整個帳號內進行的，但有一些特定職業和種族的專屬成就，你無法在你的主要角色上獲得。";
 L.ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "外觀應該在整個帳號範圍內收集。某些物品並非每個職業都能學會，因此 ATT 將盡力只向您展示你當前角色可以收集的物品。";
 L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾澤拉斯精華在技術上不能在整個戰隊內收藏和使用，但如果你只關心收藏你的主要角色那麼你可能更喜歡在整個戰隊上追蹤它們。";
 L.ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "伙伴寵物可在多個角色上收集，並且實際上需要你擁有大量的背包空間才能將它們全部收集在一個角色上。\n\n我們建議您保持此功能開啟，但你可以自己刷。";
@@ -33450,10 +33469,10 @@ L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "地圖探索追蹤僅對每個角色都非
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飛行路線追蹤對每個角色都非常有用，但是你真的想要在所有50個角色上收藏它們嗎？";
 L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每周1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任務完成通常是每個角色的，但是如果任何一個角色完成了特定的任務，這個任務就會被認為是已完成。";
-L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被帳號通用追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以賦予你的小號和他們的專業以意義。";
-L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤帳號通用，所以開啟這個功能可能是個好主意。";
+L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被整個帳號追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以賦予你的小號和他們的專業以意義。";
+L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤整個帳號，所以開啟這個功能可能是個好主意。";
 L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "啟用此功能後如果至少有一個角色學會了靈魂羈絆的導靈器，則將所有角色的靈魂羈絆的導靈器視為收藏。";
-L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數頭銜都是在帳號通用內進行追蹤，但是魔獸世界中一些著名的頭銜被鎖定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的頭銜是你的小號，請切換此選項。";
+L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數頭銜都是在整個帳號內進行追蹤，但是魔獸世界中一些著名的頭銜被綁定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的頭銜是你的分身，請切換此選項。";
 L.ACHIEVEMENT_CATEGORY_ID = "成就類別 ID";
 L.ACHIEVEMENT_DESC = "點擊此按鈕可依據缺少的內容選擇隨機成就。";
 L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤成就。";
@@ -33475,7 +33494,7 @@ L.AH_SEARCH_NO_ITEMS_FOUND = "搜尋中找不到快取的物品。展開組並�
 L.ALL_BUTTON_TOOLTIP = "點擊此按鈕一次啟用所有裝備篩選。";
 L.ALL_THE_APPEARANCES_DESC = "所有你需要的外觀都在這裡顯示。";
 L.ALL_THE_BATTLEPETS_DESC = "所有你尚未收藏的寵物都會顯示在這裡。";
-L.ALL_THE_ILLUSIONS_DESC = "這裡展示了附魔幻象、玩具等可以獲得收藏的物品。";
+L.ALL_THE_ILLUSIONS_DESC = "這裡展示了幻象、玩具等可以獲得收藏的物品。";
 L.ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC = "所有可以用來獲得成就的物品都會顯示在這裡。";
 L.ALL_THE_MOUNTS_DESC = "所有你尚未收藏的坐騎都會顯示在這裡。";
 L.ALL_THE_QUESTS_DESC = "所有有目標或起始物品可以在拍賣行出售的任務都會在這裡顯示。";
@@ -33494,6 +33513,7 @@ L.AUCTION_TAB_CHECKBOX = "顯示拍賣行模組標籤";
 L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍賣行模組請啟用此選項。\n\n一些插件很調皮會大量修改這個框架。ATT 並不總是和那些玩具玩得很好。";
 L.AUCTIONATOR_GROUPS = "基於群組的搜尋只支援使用 Auctionator。";
 L.AUDIO_CHANNEL = "聲音通道";
+L.AUDIO_PAGE = "聲音";
 L.AUTO_BOUNTY_CHECKBOX = "自動打開獎勵列表";
 L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "如果想查看具有傑出收藏獎勵的物品，請啟用此選項。如果設法抓住顯示在此列表中的物品之一，可以賺到一筆不錯的金幣。\n\n快捷命令：/attbounty";
 L.AUTO_MAIN_LIST_CHECKBOX = "自動打開主列表";
@@ -33525,12 +33545,14 @@ L.BREADCRUMB_PARTYSYNC_4 = "如果嘗試通過隊伍同步獲得此任務，請�
 L.BREADCRUMBS = "無關緊要";
 L.BREADCRUMBS_WARNING = "完成此任務後可能無法獲得無關緊要的任務：";
 L.CACHED_RECIPES_1 = "快取 ";
+L.CAMPSITES_CHECKBOX_TOOLTIP = "啟用此選項來追蹤戰隊營區的完成情況。";
 L.CATALYST = "催化器";
 L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物觸發慶祝音效";
 L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在獲得新的事物時聽到慶祝'fanfare'效果請啟用這個選項。\n\n這個功能可以極大地幫助你保持動力。";
 L.CELEBRATIONS_LABEL = "慶祝和音效";
 L.CHANGE_SEARCH_FILTER = "更改搜尋篩選";
 L.CHANGE_SEARCH_FILTER_DESC = "點擊此按鈕可更改搜尋篩選。";
+L.CHANNEL_AMBIENCE = "環境";
 L.CHARACTERUNLOCKS_CHECKBOX = "角色解鎖";
 L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤角色解鎖。這些是基於角色的各種解鎖，無法明確歸類為其他類型（例如 妖術變體、變形術變體、獵人物種馴服解鎖、波可波克自訂等）。\n\n預設情況下按角色追蹤。";
 L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打開主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打開小列表。\n\n|R/att bounty\n|cffFFFFFF打開被出錯或未確認的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打開團隊助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打開世界任務列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品連接]\n|cffFFFFFF打開一個共享外觀的視窗。也適用於其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF顯示所有未來用更新刪除的東西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打開隨機列表。\n\n|R/att unsorted\n|cffFFFFFF打開未知來源物品列表。最好在偵錯模式下打開。\n\n|R/rl\n|cffFFFFFF重載魔獸介面。|R";
@@ -33608,6 +33630,9 @@ L.EVENT_SCHEDULE = "事件時程表";
 L.EVENT_START = "開始:";
 L.EVENT_WHERE = "地點:";
 L.EXPAND_DIFFICULTY_CHECKBOX = "展開當前難度";
+L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在進入地城或團隊副本時自動最小化小列表中未啟動的難度標題，請啟用此選項。\n\n比如：在普通難度地城中最小化英雄標題。";
+L.EXPAND_MINILIST_CHECKBOX = "展開小列表";
+L.EXPAND_MINILIST_CHECKBOX_TOOLTIP = "啟用此選項用於在每次遊戲會話中首次查看小列表時自動展開其中包含的所有分組。";
 L.EXPANSION_CURRENT_ONLY = "僅當前";
 L.EXPANSION_CURRENT_ONLY_TOOLTIP = "僅顯示當前資料片的內容";
 L.EXPANSION_DISABLE_ALL = "停用全部";
@@ -33628,16 +33653,18 @@ L.EXTRA_THINGS_LABEL = "其他資源";
 L.FACTION_DESC = "點擊此按鈕將根據你未收集的內容隨機選擇一個陣營。";
 L.FACTION_ID = "陣營 ID";
 L.FACTION_MODE = "僅當前陣營";
-L.FACTION_MODE_TOOLTIP = "如果你想只看到你當前陣營的種族和職業的戰隊模式資料，請開啟此設定。";
+L.FACTION_MODE_TOOLTIP = "如果你想只看到你當前陣營的種族和職業的帳號模式資料，請開啟此設定。";
 L.FACTION_SPECIFIC_REP = "並非所有聲望都可以在單個角色上查看。例：聯盟玩家無法看到戰歌騎手，部落玩家無法查看銀翼哨兵。";
 L.FACTIONS = "陣營";
 L.FAILED_ITEM_INFO = "未能獲得物品資訊。該物品可能是無效的或者可能還沒有被快取在你的伺服器上。";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX = "顯示可回收成本組";
 L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "如果您想讓用於購買收藏品的物品/貨幣被視為收藏品並顯示在動態填充的任務下，請啟用此選項。 ";
 L.FILL_NPC_DATA_CHECKBOX = "顯示嵌套 NPC 資料";
-L.FILL_NPC_DATA_CHECKBOX_TOOLTIP = "如果希望在迷你列表中顯示時將所有相關資料嵌套到給定的 NPC（常見首領掉落、掉落等），請啟用此選項。此選項可能會導致大量重複，但其想法是該 NPC 將在迷你列表中保持可見，就好像需要特定於該 NPC 的內容一樣。\n\n預設：關閉";
+L.FILL_NPC_DATA_CHECKBOX_TOOLTIP = "如果希望在小列表中顯示時將所有相關資料嵌套到給定的 NPC（常見首領掉落、掉落等），請啟用此選項。此選項可能會導致大量重複，但其想法是該 NPC 將在小列表中保持可見，就好像需要特定於該 NPC 的內容一樣。\n\n預設：關閉";
 L.FILTER_ID = "濾鏡 ID";
-L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "等級限制";
+L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "為時光奔走篩選小列表";
+L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "啟用此選項後，可在遊玩正式服或時光奔走角色時，正確篩選時光奔走相關內容（僅限小列表顯示）。\n\n注意：該選項僅在時光奔走活動期間可用！";
+L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "無等級限制";
 L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看當前級別角色可用的事物，請啟用此設定。\n\n注意：這對新戰隊特別有用。";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "無技能等級限制";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "如果您只想查看遊戲環境中可用的最高技能級別可用的內容，請停用此設定。";
@@ -33660,7 +33687,9 @@ L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "如果你想查看尚未完全輸入資料庫
 L.FORCE_REFRESH_REQUIRED = "這可能需要強制刷新（" .. SHIFT_KEY_TEXT .. "點擊）正確已收集。";
 L.FUTURE_UNOBTAINABLE = "未來無法獲得！";
 L.FUTURE_UNOBTAINABLE_TOOLTIP = "這是已經確認或極有可能在已知的未來更新中無法獲得的內容。";
-L.GENERAL_CONTENT = "通用內容";
+L.GENERAL_CONTENT = "共通內容";
+L.GENERAL_PAGE = "共通";
+L.GENERAL_THINGS_LABEL = "共通事物";
 L.GO_GO_RANDOM = "隨機 - 去看看！";
 L.GO_GO_RANDOM_DESC = "此視窗允許隨機選擇要獲得的地點或物品。去吧！";
 L.HEADER_ID = "標頭 ID";
@@ -33670,6 +33699,8 @@ L.HEIRLOOMS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你是否已解鎖傳家
 L.HEIRLOOMS_UPGRADES_CHECKBOX = "+升級";
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "啟用此選項可專門追蹤單個傳家寶升級的收藏情況。\n\n我們都知道暴雪就是喜歡消耗你的金幣和靈魂，所以用這個切換來追蹤你的金幣。";
 L.HEIRLOOMS_UPGRADES_DESC = "這表明你是否已經將傳家寶升級到了一定的級別。\n\n安息吧…金幣。\n - Crieve";
+L.HIDDEN_ACHIEVEMENT_TRIGGERS = "隱藏成就觸發器";
+L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "這些成就是依據特定條件手動判定觸發的，主要由遊戲內部用於追蹤目的。";
 L.HIDDEN_CURRENCY_TRIGGERS = "隱藏貨幣觸發器";
 L.HIDDEN_CURRENCY_TRIGGERS_DESC = "這些貨幣是根據特定條件手動判定或觸發，主要供遊戲內部用於追蹤目的。";
 L.HIDDEN_QUEST_TRIGGERS = "隱藏任務觸發";
@@ -33680,7 +33711,7 @@ L.ICON_ONLY_CHECKBOX = "僅圖標";
 L.ICON_ONLY_CHECKBOX_TOOLTIP = "如果只想在右上角看到圖標而不是圖標和已收藏/未收藏的文字，請啟用此選項。\n\n有些人喜歡更小的指標提示…";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略裝備綁定/拾取綁定的篩選";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略裝備綁定/拾取綁定物品的裝備、武器、種族、等級或職業要求，請啟用此設定。\n\n如果你正試圖通過拍賣行掃描收藏你的物品，此模式可能對你有用。";
-L.ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤附魔幻象。\n\n這些看起來很酷的幻化效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
+L.ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤幻象。\n\n這些看起來很酷的塑形效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
 L.INCLUDE_ORIGINAL_CHECKBOX = "原始來源";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜歡在指標提示中的共享外觀列表中看到原始來源資訊，請啟用此選項。";
 L.INSTANCE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機副本。";
@@ -33700,6 +33731,7 @@ L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 L.ITEM_LEVEL = "物品等級";
 L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在指標提示中查看所有伺服器上已知此配方的完整角色列表，請啟用此選項。";
+L.LAYER = "相位";
 L.LEAVE_GROUP = "離開隊伍";
 L.LEAVE_GROUP_DESC = "點擊此處離開隊伍。在大多數情況下，這也會在60秒左右後將你送到最近的墓地。\n\n注意：只有當你在一個隊伍中或者遊戲認為你在一個隊伍中時才有效。";
 L.LEGACY_RAID_DIFF = "經典團隊難度";
@@ -33714,6 +33746,7 @@ L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（當前：%s）";
 L.LOCK_CRITERIA_FACTION_LABEL = "陣營聲望";
 L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等級";
 L.LOCK_CRITERIA_QUEST_LABEL = "已完成任務";
+L.LOCK_CRITERIA_SOURCE_LABEL = "已知外觀";
 L.LOCK_CRITERIA_SPELL_LABEL = "已學法術/坐騎/配方";
 L.LOCKED_QUESTS = "鎖定任務";
 L.LOCKOUT = "鎖定";
@@ -33725,7 +33758,7 @@ L.LOOT_SPEC_DESC_2 = "在個人拾取地城，副本和戶外事件中，此設�
 L.LOOT_SPEC_UNKNOWN = "拾取專精未知";
 L.LOOT_TABLE_CHANCE = "拾取列表機率";
 L.LORE = "傳言";
-L.MAIN_LIST_REQUIRES_REFRESH = "[打開主列表更新進度 ]";
+L.MAIN_LIST_REQUIRES_REFRESH = "[打開主列表更新進度]";
 L.MAIN_LIST_SCALE_TOOLTIP = "使用此功能可以自訂主列表的縮放。\n\n預設：1";
 L.MAIN_LIST_SLIDER_LABEL = "主列表縮放";
 L.MAIN_ONLY = "僅主要";
@@ -33756,6 +33789,8 @@ L.MORE_COLORS_CHECKBOX = "顯示顏色";
 L.MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的顏色來幫助區分列表中事物的附加條件，請啟用此選項（比如職業顏色，陣營顏色等。）";
 L.MOUNT_DESC = "點擊此按鈕可依據缺少的內容選擇隨機坐騎。";
 L.MOUNT_ID = "坐騎 ID";
+L.MOUNTMODS_CHECKBOX = "|T" .. _.asset("Expansion_DF") .. ":0|t 坐騎外形";
+L.MOUNTMODS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤坐騎外形";
 L.MOUNTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤坐騎。\n\n你可以騎著它們比跑步更快去別的地方。誰知道！";
 L.MUSIC_ROLL_ID = "樂譜 ID";
 L.MUSIC_ROLLS_DESC = "這些是按角色解鎖且目前尚未在戰隊中共享。如果暴雪有人在看，如果能把這些戰隊共享的話那就太好了。\n\n必須通過 " .. SHIFT_KEY_TEXT .. "點擊要檢測的標題手動刷新插件。";
@@ -33783,9 +33818,10 @@ L.ONLY_NOT_TRASH_TOOLTIP = "啟用此選項可忽略白色/灰色物品。暴雪
 L.ONLY_RELEVANT_CHECKBOX = "僅相關";
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解鎖的共享外觀，請啟用此選項。\n\n注意：我們建議你保持這個關閉，因為了解一個物品的解鎖要求可以幫助識別為什麼一個物品沒有被收藏。";
 L.ONLY_RWP = "僅‘隨更新移除’";
-L.ONLY_RWP_TOOLTIP = "啟用此選項僅追蹤未來會從遊戲中刪除的幻化。只有標記為“隨更新移除”的資料的物品才會計入此資料。如果您發現未標記但應標記的物品，請告訴我！\n\n您可以依據“篩選器”選項卡更改顯示的戰利品類型。";
+L.ONLY_RWP_TOOLTIP = "啟用此選項僅追蹤未來會從遊戲中刪除的塑形。只有標記為“隨更新移除”的資料的物品才會計入此資料。如果您發現未標記但應標記的物品，請告訴我！\n\n您可以依據“篩選器”選項卡更改顯示的戰利品類型。";
 L.OPEN_AUTOMATICALLY = "自動開啟";
 L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪開發者，最好是取消勾選此項。這樣做是為了迫使暴雪修復或承認這些錯誤。";
+L.OPEN_MINILIST_FOR = "打開小列表：";
 L.OPPOSITE_FACTION_EQ = "與敵對陣營對應：";
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n" .. SHIFT_KEY_TEXT .. "左鍵刷新收藏\n" .. CTRL_KEY_TEXT .. "左鍵展開/折疊列表\n" .. SHIFT_KEY_TEXT .. "點擊右鍵排序組/彈出列表\n" .. ALT_KEY_TEXT .. "右鍵設定路線點|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n" .. SHIFT_KEY_TEXT .. "左鍵搜尋拍賣行|r";
@@ -33811,6 +33847,17 @@ L.PLEASE_REPORT_MESSAGE = "請把錯誤回報給 ATT Discord 的 #classic-errors
 L.PRECISION_SLIDER = "百分比精確度";
 L.PRECISION_SLIDER_TOOLTIP = "使用此選項可自訂百分比計算中所需的精度級別。\n\n預設：2";
 L.PREREQUISITE_QUESTS = "必須先完成一些前置任務才有可能獲得：";
+L.PRESET_ACCOUNT = "|c" .. _.DefaultColors.Account .. "帳號模式|r 啟用所有帳號範圍的追蹤，並顯示來自所有角色的進度。|r";
+L.PRESET_COMP = "完美主義者模式中啟用來源，僅當您從該物品學習外觀時，才將標記為已收藏。";
+L.PRESET_CORE = "核心模式啟用遊戲內戰隊搜集日誌中可見的收藏品";
+L.PRESET_INSANE = "|c" .. _.DefaultColors.Insane .. "瘋狂模式|r 啟用所有 |c" .. _.DefaultColors.Insane .. "彩色選項|r，並給你一個真正的挑戰！";
+L.PRESET_NONE = "一無所有模式會停用所有收藏品的追蹤。這是挑戰自我的好方法。";
+L.PRESET_RANKED = "排名模式啟用被 Data For Azeroth 和 WoWthing 等網站追蹤的收藏品。";
+L.PRESET_RESTORE = "回復";
+L.PRESET_RESTORE_TOOLTIP = "將追蹤選項回復到套用任何預設之前的狀態。";
+L.PRESET_SOLO = "單人模式停用所有帳號共通的追蹤，僅顯示您目前角色的進度。";
+L.PRESET_TOOLTIP = "啟用此預設。這將僅調整當前設定檔的相關追蹤選項。";
+L.PRESET_UNIQUE = "獨特外觀模式停用來源，當你已經學習了該獨特外觀時，將相同外觀的裝備標記為已收藏。";
 L.PRESET_UPDATE_SUCCESS = "更新預設值成功。";
 L.PROFESSION_LIST = "專業技能列表";
 L.PROFESSION_LIST_DESC = "打開你的專業技能來快取它們。";
@@ -33839,8 +33886,9 @@ L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏�
 L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
 L.QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每周、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
 L.QUESTS_DESC = "按數字升序顯示遊戲中所有可能的任務 ID。";
+L.QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "啟用此選項將包含隱藏任務追蹤（HQT）的完成情況。\n\nHQT 是對玩家不可見的任務 ID，遊戲在後台用於監控角色/帳號在各種情況下的進度或狀態。\n\n你大概並不關心追蹤這些，對吧？我想你應該沒問題的。";
 L.QUESTS_LOCKED_CHECKBOX = "+已鎖定";
-L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "啟用此選項可專門包括追蹤鎖定任務的完成情況。\n\n鎖定任務是指玩家無法再通過正常遊戲完成的任務（依據已知的 ATT 資料）。\n\n獲得這些任務非常依賴於隊伍同步功能或使用帳號通用內的任務來整合其他角色的進度。";
+L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "啟用此選項可專門包括追蹤鎖定任務的完成情況。\n\n鎖定任務是指玩家無法再通過正常遊戲完成的任務（依據已知的 ATT 資料）。\n\n獲得這些任務非常依賴於隊伍同步功能或使用帳號共通的任務來整合其他角色的進度。";
 L.RACE_LOCKED = "種族限定";
 L.RAID_ASSISTANT = "團隊助手";
 L.RAID_ASSISTANT_DESC = "再也不要用錯誤的設定進入團隊了！檢查一切是否正常！";
@@ -33886,6 +33934,7 @@ L.REPUTATIONS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤聲望。\n\n一旦你
 L.REQUIRES_LEVEL = "需要等級";
 L.REQUIRES_PETBATTLES = "|cFF00FFDE需要寵物對戰|r";
 L.REQUIRES_PVP = "|cFF00FFDE需要 PvP 活動或貨幣|r";
+L.REQUIRES_SKYRIDING = "|cFF00FFDE需要天空騎術|r";
 L.REROLL_DESC = "點擊此按鈕可使用活動篩選器重新刷新。";
 L.REROLL_RANDOM = "重新生成隨機列表";
 L.RESET_INSTANCES = "重置所有副本";
@@ -33906,7 +33955,7 @@ L.SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "停用此選項可隱藏�
 L.SHOW_ALL_SEASONAL = "所有季節性事件";
 L.SHOW_ALL_SEASONAL_TOOLTIP = "啟用此設定可顯示所有季節性事件，而不是僅顯示當前活動的季節性事件。\n\n注意：季節性活動將提前7天自動顯示為活動狀態。";
 L.SHOW_BOE_CHECKBOX = "裝備綁定/拾取綁定物品";
-L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隱藏裝備綁定/拾取綁定物品，請啟用此設定。\n\n當你嘗試為角色完成經典舊世並且不想專門用於可以在小號或拍賣行上放置的物品時，此設定非常有用。\n\n即：不要因為毀滅之錘而擾亂你的思緒。";
+L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隱藏裝備綁定/拾取綁定物品，請啟用此設定。\n\n當你嘗試為角色完成經典舊世並且不想專門用於可以在分身或拍賣行上放置的物品時，停用此設定非常有用。\n\n即：不要因為毀滅之錘而擾亂你的思緒。";
 L.SHOW_COLLECTED_THINGS_CHECKBOX = "顯示已收藏事物";
 L.SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "啟用此選項可以看到已經收藏事物。\n\n建議關閉此設定因為它可以節省小列表中的空間並允許快速查看在該區域遺漏的內容。";
 L.SHOW_COLLECTION_PROGRESS_CHECKBOX = "收藏進度";
@@ -33934,11 +33983,14 @@ L.SHOW_RECIPES_CHECKBOX = "顯示配方";
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "如果您想在指標提示中看到任何角色可以用某種材料製作的所有配方列表，請啟用此選項。";
 L.SHOW_REMAINING_CHECKBOX = "顯示剩餘事物";
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩餘事物數量而不是總進度，請啟用此選項。";
+L.SHOW_SKYRIDING_CHECKBOX = "天空騎術";
+L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "如果想在遊戲中顯示需要天空騎術的內容，請啟用此選項。";
 L.SKIP_AUTO_REFRESH = "不自動刷新！";
 L.SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 " .. SHIFT_KEY_TEXT .. "點擊 ATT 視窗執行全部刷新。";
 L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想讓 ATT 代替你自動跳過所有過場動畫請啟用此選項。";
 L.SOCIAL_PROGRESS = "社交進度";
+L.SOFT_RESERVES = "軟保留";
 L.SORT_BY_PROGRESS_CHECKBOX = "按進度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 導靈器";
@@ -33957,6 +34009,7 @@ L.SPEC_CHECKBOX_TOOLTIP = "啟用該選項，可以在遊戲客戶端提供的�
 L.SPECIES_ID = "品種 ID";
 L.SPELL_ID = "法術 ID";
 L.SPLIT = "按難度";
+L.STORE_IN_PROFILE_BUTTON = "儲存在設定檔中";
 L.STORE_IN_PROFILE_BUTTON_TOOLTIP = "預設情況下，ATT 會依角色儲存這些篩選器。\n\n勾選此選項可將這些篩選器儲存在目前的設定檔，而不是依角色儲存。";
 L.SUMMARIZE_CHECKBOX = "總結事物";
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "啟用該選項可在指標提示中總結事物。例如，如果一個事物可以變成另一個事物的商人，那麼在指標提示中顯示另一個事物，以提供其多種用途的可見性。如果一個事物作為許多其他事物的容器，這個選項將顯示該容器所包含的所有其他事物。\n\n我們建議你保持此設定開啟。";
@@ -34008,7 +34061,7 @@ L.TOP_ROW_TO_LOCK = "|cff3399ff" .. ALT_KEY_TEXT .. "點擊鎖定視窗|r";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. "點擊解鎖視窗|r";
 L.TOY_DESC = "點擊此按鈕可依據缺少的內容選擇隨機玩具。";
 L.TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
-L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追蹤 帳號通用|r";
+L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追蹤 帳號共通|r";
 L.TRACKING_PROGRESS = "追蹤進度";
 L.TRADING_POST = "貿易站";
 L.TSM_WARNING_1 = "執行此命令可能會通過將物品重新分配到 ";
@@ -34027,6 +34080,7 @@ L.UPDATE_LOCATION_NOW = "立即更新位置";
 L.UPDATE_LOCATION_NOW_DESC = "如果想強制更新當前的地圖資料請點擊這個按鈕！";
 L.UPDATE_WORLD_QUESTS = "立即更新世界任務";
 L.UPDATE_WORLD_QUESTS_DESC = "有時世界任務 API 很慢或無法返回新資料。如果希望在不更改區域的情況下強制刷新資料，請立即點擊此按鈕！\n\n" .. ALT_KEY_TEXT .. "點擊以包括當前可用的事物，可能不受時間限制";
+L.UPDATES_PAUSED = "更新已暫停";
 L.UPON_COMPLETION = "前置條件";
 L.UPON_COMPLETION_DESC = "以上任務需要完成後才能夠完成以下的事情。";
 L.VISIT_FLIGHT_MASTER = "拜訪飛行管理員快取。";
@@ -34041,7 +34095,7 @@ L.WITH_WRAPPING_CHECKBOX = "允許換行";
 L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "啟用此選項允許來源在指標提示中換行。\n這將確保指標提示不會超過必要的寬度，但不幸的是在許多情況下來源資訊會變得更加難以閱讀。";
 L.WORLD_QUESTS_DESC = "這些都是世界任務和其他有時間限制的事物，目前可以在某個地方獲得。去得到他們！";
 L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕";
-L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的迷你列表。通常情況下，你需要親自前往該區域才能看到迷你列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪迷你列表。";
+L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的小列表。通常情況下，你需要親自前往該區域才能看到小列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪小列表。";
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。";
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。";
 localize(_.CategoryNames, {
@@ -34086,7 +34140,6 @@ localize(L.HEADER_NAMES, {
 	[-614] = "(初級)學徒",
 	[-615] = "詛咒歌劇",
 	[-627] = "黑石爆發",
-	[-628] = "血月",
 	[-632] = "探索賽季",
 	[-634] = "等級 1",
 	[-635] = "等級 2",
@@ -34098,6 +34151,7 @@ localize(L.HEADER_NAMES, {
 	[-645] = "遭攔截的貨物",
 	[-646] = "製作",
 	[-647] = "採集",
+	[-688] = "血月",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "術士可以教導他們的惡魔新技能，一些高等級的魔典只能從你陣營首都的惡魔訓練師那裡購買。",
@@ -34149,6 +34203,7 @@ for key,value in pairs({
 	[3] = "|cFFAAFFAA這被鎖定在付費牆後面，例如遊戲內商店、另一個暴雪產品或招兵買馬召集令。|r",
 	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 頭銜、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
 	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
+	[7] = "|cFFAAFFAA該物品可以在貿易戰購買|r",
 	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
 	[1606] = "|cFFAAFFAA該功能直到 第2階段 的 Season of Discovery 才可用。|r",
 	[1607] = "|cFFAAFFAA該功能直到 第3階段 的 Season of Discovery 才可用。|r",
@@ -34159,6 +34214,10 @@ for key,value in pairs({
 	[1612] = "|cFFAAFFAA該功能直到 第8階段 的 Season of Discovery 才可用。|r",
 })
 do phases[key].description = value; end
+for key,value in pairs({
+	[3] = "|cFFFFAAAA在遊戲的任何版本中，鼓勵使用真實貨幣的行為均不受認可。參與此類內容需自行承擔風險。|r",
+})
+do phases[key].lore = value; end
 for key,value in pairs({
 	[6] = "10級",
 	[7] = "20級",

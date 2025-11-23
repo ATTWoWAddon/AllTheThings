@@ -6,8 +6,8 @@ exploration(206),	-- Utgarde Keep \\ UNUSED Westfall \\ Westfall
 exploration(210),	-- Icecrown \\ Reuse Me 2 \\ ***On Map Dungeon***
 exploration(2037),	-- Quel'thalas \\ UNUSEDShadowfang Keep 003
 exploration(2817),	-- Crystalsong Forest \\ Reuse Me 4 \\ ***On Map Dungeon***
-exploration(3430),	-- Eversong Woods
-exploration(3433),	-- Ghostlands
+exploration(3430),	-- Eversong Woods (Burning Crusade) \\ Eversong Woods
+exploration(3433),	-- Ghostlands (Burning Crusade) \\ Ghostlands
 exploration(3434),	-- Scarab Terrace
 exploration(3435),	-- General's Terrace
 exploration(3436),	-- The Reservoir

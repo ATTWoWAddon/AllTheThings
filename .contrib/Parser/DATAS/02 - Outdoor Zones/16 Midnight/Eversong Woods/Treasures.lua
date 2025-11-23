@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 				["coord"] = { 52.3, 45.4, EVERSONG_WOODS_MID },
 				["questID"] = 93455,
 				["groups"] = {
-					--no loot table
+					i(265814),	-- Noble's Signet Ring
 				},
 			}),
 			o(555351, {	-- Burbling Paint Pot

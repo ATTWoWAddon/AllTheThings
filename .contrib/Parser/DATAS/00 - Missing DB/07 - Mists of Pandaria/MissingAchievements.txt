@@ -29,7 +29,6 @@ ach(61350),	-- Gladiator: Season 12 (2v2) \\ Skirmisher: Season 12
 ach(61351),	-- Gladiator: Season 13 (2v2) \\ Skirmisher: Season 13
 ach(61352),	-- Gladiator: Season 14 (2v2) \\ Skirmisher: Season 14
 ach(61353),	-- Gladiator: Season 15 (2v2) \\ Skirmisher: Season 15
-ach(61354),	-- Malevolent Gladiator: Season 12 (2v2) \\ Malevolent Skirmisher: Season 12
 ach(61355),	-- Tyrannical Gladiator: Season 13 (2v2) \\ Tyrannical Skirmisher: Season 13
 ach(61356),	-- Grievous Gladiator: Season 14 (2v2) \\ Grievous Skirmisher: Season 14
 ach(61357),	-- Prideful Gladiator: Season 15 (2v2) \\ Prideful Skirmisher: Season 15
@@ -37,12 +36,25 @@ ach(61358),	-- Gladiator: Season 12 (5v5) \\ Marauder: Season 12
 ach(61359),	-- Gladiator: Season 13 (5v5) \\ Marauder: Season 13
 ach(61360),	-- Gladiator: Season 14 (5v5) \\ Marauder: Season 14
 ach(61361),	-- Gladiator: Season 15 (5v5) \\ Marauder: Season 15
-ach(61362),	-- Malevolent Gladiator: Season 12 (5v5) \\ Malevolent Marauder: Season 12
 ach(61363),	-- Tyrannical Gladiator: Season 13 (5v5) \\ Tyrannical Marauder: Season 13
 ach(61364),	-- Grievous Gladiator: Season 14 (5v5) \\ Grievous Marauder: Season 14
 ach(61365),	-- Prideful Gladiator: Season 15 (5v5) \\ Prideful Marauder: Season 15
 5.5.1.63014
-ach(61415),	-- Undisputed Gladiator: Season 12
 ach(61416),	-- Undisputed Gladiator: Season 13
 ach(61417),	-- Undisputed Gladiator: Season 14
 ach(61418),	-- Undisputed Gladiator: Season 15
+5.5.1.63364
+ach(61459),	-- Malevolent Conquest
+ach(61460),	-- Malevolent Conquest
+5.5.2.63832
+ach(61680),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+5.5.2.64133
+ach(61944),	-- Temple of the Jade Serpent: Platinum (TRACKER)
+ach(61945),	-- Mogu'shan Palace: Platinum (TRACKER)
+ach(61946),	-- Shado-Pan Monastery: Platinum (TRACKER)
+ach(61947),	-- Gate of the Setting Sun: Platinum (TRACKER)
+ach(61948),	-- Scarlet Halls: Platinum (TRACKER)
+ach(61949),	-- Scarlet Monastery: Platinum (TRACKER)
+ach(61950),	-- Scholomance: Platinum (TRACKER)
+ach(61951),	-- Siege of Niuzao Temple: Platinum (TRACKER)
+ach(61952),	-- Stormstout Brewery: Platinum (TRACKER)

@@ -1671,7 +1671,7 @@ h(-12,{
 ach(11743,{awp=70200,g={
 crit(36405,{achID=11761,id=26})}}),
 ach(956,{maps=a[1214],minReputation=a[1352]}),
-ach(424,{providers={{"i",21321},{"s",26054}}})}),
+ach(424,{providers={{"i",21321}}})}),
 h(-31,{
 faction(910,{icon=134156,maps=a[1214]})}),
 h(-45,{
@@ -2030,7 +2030,7 @@ i(21579,{b=1,f=53,lvl=25,spellID=26391})}})}}),
 inst(754,{awp=11100,isLockoutShared=1,isRaid=1,mapID=162,maps=a[339],rwp=30002,savedInstanceID=533,u=2,g={
 d(9,{sourceQuests={9121},u=2,g={
 ah(22631,{c=a[925],isRaid=1,maps=a[1220],type="i",u=2,g={
-ach(425,{c=a[925],providers={{"i",22631},{"i",22589},{"i",22630},{"i",22632}},u=2}),
+ach(425,{c=a[925],providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},u=2}),
 q(9251,{c=a[925],lvl=30,maps={320},qgs=a[292],qis={22733,22734},sourceQuests={9250},u=2}),
 q(9257,{c=a[930],cost={{"i",22737,1}},lvl=30,maps=a[710],qgs=a[292],sourceQuests=a[1359],u=2,g={
 s(8899,22631,{b=1,c=a[930],f=28,spellID=28144,u=2})}}),
@@ -3145,8 +3145,8 @@ s(3955,10403,{f=5,lvl=7,modID=1,u=2})}}),
 n(639,{rwp=40003,u=2,g={
 i(3637,{u=2}),
 s(3951,10399,{b=1,f=5,lvl=7,modID=1,u=2}),
-crit(70564,{achID=40998,awp=110205,e=242,id=1}),
-crit(70564,{achID=41000,awp=110205,e=242,id=1})}}),
+crit(70564,{achID=40998,awp=110005,e=242,id=1}),
+crit(70564,{achID=41000,awp=110005,e=242,id=1})}}),
 n(645,{rwp=40003,u=2}),
 e(89,{awp=40003,npcID=47162,g={
 s(642,2169,{b=1,f=20,lvl=7,modID=1}),
@@ -3439,8 +3439,8 @@ s(7274,18327,{b=1,f=4,lvl=15}),
 s(7265,18318,{b=1,f=5,lvl=15}),
 i(18314,{b=1,f=52,lvl=15}),
 crit(545,{achID=644,id=2}),
-crit(70565,{achID=40998,awp=110205,e=242,id=2}),
-crit(70565,{achID=41000,awp=110205,e=242,id=2})}}),
+crit(70565,{achID=40998,awp=110005,e=242,id=2}),
+crit(70565,{achID=41000,awp=110005,e=242,id=2})}}),
 d(24,{sym={{"sub","tw_instance",1276}}})}}),
 h(-356,{coords={{62.48,24.48,69}},mapID=235,g={
 h(-63,{
@@ -3604,8 +3604,8 @@ s(7297,18375,{b=1,f=5,lvl=17}),
 s(7302,18380,{b=1,f=7,lvl=17}),
 s(7300,18378,{b=1,f=6,lvl=17}),
 i(18395,{b=1,f=52,lvl=17}),
-crit(70566,{achID=40998,awp=110205,e=242,id=3}),
-crit(70566,{achID=41000,awp=110205,e=242,id=3})}}),
+crit(70566,{achID=40998,awp=110005,e=242,id=3}),
+crit(70566,{achID=41000,awp=110005,e=242,id=3})}}),
 d(24,{sym={{"sub","tw_instance",230}}})}})}}),
 inst(231,{coords={{30.1,74.6,30}},description="Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northen Stranglethorn.",mapID=226,maps={227,228,229},savedInstanceID=90,g={
 h(-63,{
@@ -5124,7 +5124,7 @@ s(6847,16716,{crs={10499,10500,11257},f=5,lvl=22,modID=1,rwp=40003,u=2}),
 s(6845,16714,{crs={10495},f=5,lvl=22,modID=1,rwp=40003,u=2})}}),
 n(14861,{awp=100105,g={
 i(13523,{modID=1,rwp=50004,u=2})}}),
-n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"o",175564},{"i",206370}},g={
+n(10506,{awp=100105,description="Can only be summoned if someone in your group has the Blood of Innocents.",providers={{"i",206370},{"o",175564}},g={
 s(5092,14024,{b=1,f=20,lvl=17,modID=1}),
 s(5088,13983,{b=1,f=22,lvl=17,modID=1}),
 i(13960,{b=1,f=51,lvl=17,modID=1}),
@@ -5964,8 +5964,8 @@ s(4842,13344,{b=1,f=6,lvl=21}),
 s(8819,22410,{b=1,f=6,lvl=21}),
 i(13345,{b=1,f=52,lvl=21}),
 crit(18471,{achID=646,id=3}),
-crit(70569,{achID=40998,awp=110205,e=242,id=6}),
-crit(70569,{achID=41000,awp=110205,e=242,id=6})}}),
+crit(70569,{achID=40998,awp=110005,e=242,id=6}),
+crit(70569,{achID=41000,awp=110005,e=242,id=6})}}),
 n(10440,{rwp=40003,u=2,g={
 s(6809,16678,{b=1,f=6,lvl=23,u=2}),
 s(6825,16694,{b=1,f=4,lvl=23,u=2}),
@@ -6149,7 +6149,7 @@ i(22444,{u=2}),
 s(4096,10799,{b=1,f=29,lvl=21,u=2}),
 s(4097,10800,{b=1,f=5,lvl=21,u=2}),
 s(4095,10798,{b=1,f=7,lvl=21,u=2})}})}}),
-h(-367,{providers={{"n",5713},{"n",5715},{"n",5714},{"n",5717},{"n",5712},{"n",5716}},rwp=40003,u=2,g={
+h(-367,{providers={{"n",5712},{"n",5713},{"n",5714},{"n",5715},{"n",5716},{"n",5717}},rwp=40003,u=2,g={
 s(4087,10783,{b=1,f=5,lvl=21,u=2}),
 s(4091,10787,{b=1,f=4,lvl=21,u=2}),
 s(4088,10784,{b=1,f=6,lvl=21,u=2}),
@@ -6554,8 +6554,8 @@ s(3309,9479,{b=1,f=5,lvl=19}),
 s(3306,9476,{b=1,f=7,lvl=19}),
 s(89454,151460,{awp=70300,b=1,f=4,lvl=19}),
 s(89455,151461,{awp=70300,b=1,f=6,lvl=19}),
-crit(70567,{achID=40998,awp=110205,e=242,id=4}),
-crit(70567,{achID=41000,awp=110205,e=242,id=4})}}),
+crit(70567,{achID=40998,awp=110005,e=242,id=4}),
+crit(70567,{achID=41000,awp=110005,e=242,id=4})}}),
 n(7795,{
 i(9234),
 i(10661)}),
@@ -8563,7 +8563,7 @@ s(12086,27821,{b=1,f=4,lvl=27,modID=2}),
 s(10658,25946,{b=1,f=5,lvl=26,modID=2}),
 i(27822,{b=1,f=52,lvl=27,modID=2}),
 i(72127,{awp=40300})}}),
-e(536,{cost={{"i",32079,1}},description="Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",npcID=22927,providers={{"o",185522},{"i",32092}},g={
+e(536,{cost={{"i",32079,1}},description="Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",npcID=22927,providers={{"i",32092},{"o",185522}},g={
 s(14481,31570,{f=6,lvl=27,modID=2}),
 s(14473,31562,{f=5,lvl=27,modID=2}),
 s(14465,31554,{f=4,lvl=27,modID=2}),
@@ -8909,7 +8909,7 @@ h(-19,{
 i(28558,{description="Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",rwp=80001,u=2}),
 cu(1704,{awp=80001,description="Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde)."})}),
 h(-63,{
-i(24514,{coords={{82.6,30.8,260}},providers={{"o",182196},{"n",22890}}}),
+i(24514,{coords={{82.6,30.8,260}},providers={{"n",22890},{"o",182196}}}),
 r(29621,{b=1,crs={18830},itemID=23607,learnedAt=70,requireSkill=164})}),
 d(1,{
 e(544,{npcID=18731,g={
@@ -9040,7 +9040,7 @@ r(27977,{b=1,crs={20880},itemID=22556,learnedAt=70,requireSkill=333}),
 r(26782,{b=1,crs={20869},itemID=21905,learnedAt=60,requireSkill=197}),
 r(35521,{crs={20898},itemID=29672,learnedAt=340,requireSkill=165,rwp=50004,u=2}),
 r(29620,{b=1,crs={20900},itemID=23606,learnedAt=70,requireSkill=164}),
-i(24488,{coords={{59,24.8,270}},providers={{"o",182198},{"n",22892}}})}),
+i(24488,{coords={{59,24.8,270}},providers={{"n",22892},{"o",182198}}})}),
 d(1,{
 e(548,{npcID=20870,g={
 s(12459,28415,{b=1,f=4,lvl=27,modID=1}),
@@ -9844,7 +9844,7 @@ i(24368),
 r(31054,{b=1,crs={17722},itemID=24159,learnedAt=65,requireSkill=755}),
 r(27914,{b=1,crs={17803},itemID=22533,learnedAt=70,requireSkill=333}),
 i(24367,{rwp=40300,u=2}),
-i(24487,{coords={{59,24.8,263}},providers={{"o",182197},{"n",22891}}})}),
+i(24487,{coords={{59,24.8,263}},providers={{"n",22891},{"o",182197}}})}),
 d(1,{
 e(573,{npcID=17797,g={
 s(12065,27789,{b=1,f=3,lvl=27,modID=1,rwp=110105,u=2}),
@@ -12203,7 +12203,7 @@ ach(12310,{awp=70305,g={
 crit(39298,{achID=12311,id=4})}}),
 ach(12312,{awp=70305,crs={33236,33572},g={
 crit(39302,{achID=12312,id=1,providers={{"s",65387}}})}}),
-ach(12360,{awp=70305,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32915},{"n",32913},{"n",32914}}}),
+ach(12360,{awp=70305,description="Must be killed before killing Freya or they will despawn.",providers={{"n",32913},{"n",32914},{"n",32915}}}),
 ach(11751,{
 crit(36412,{achID=11761,awp=70200,id=33})})}),
 h(-19,{crs={32845,32857,32865,32867,32871,32906,32927,32930,33113,33118,33186,33271,33288,33293,33350,33515},g={
@@ -17643,19 +17643,19 @@ i(37195,{b=1,f=52,lvl=30,modID=2}),
 i(37264,{b=1,f=53,lvl=30,modID=2,spellID=60482}),
 crit(6860,{achID=498,id=3})}}),
 e(625,{npcID=27656,g={
-ach(2046,{providers={a[17],a[4],a[15]},g={
+ach(2046,{providers={a[4],a[15],a[17]},g={
 crit(7527,{achID=2136,id=37})}}),
-ach(2045,{providers={a[16],a[3],a[13]},g={
+ach(2045,{providers={a[3],a[13],a[16]},g={
 crit(7526,{achID=2136,id=36})}}),
 ach(1871,{
-crit(7177,{achID=1871,providers={a[17],a[4],a[15]}}),
-crit(7178,{achID=1871,providers={a[16],a[3],a[13]}}),
-crit(7179,{achID=1871,providers={a[18],a[5],a[14]}}),
+crit(7177,{achID=1871,providers={a[4],a[15],a[17]}}),
+crit(7178,{achID=1871,providers={a[3],a[13],a[16]}}),
+crit(7179,{achID=1871,providers={a[5],a[14],a[18]}}),
 crit(7523,{achID=2136,id=33})}),
 gach(5104,{awp=40003}),
 ach(1868,{
 crit(7524,{achID=2136,id=34})}),
-ach(2044,{providers={a[18],a[5],a[14]},g={
+ach(2044,{providers={a[5],a[14],a[18]},g={
 crit(7525,{achID=2136,id=35})}}),
 r(55397,{b=1,itemID=41798,learnedAt=440,requireSkill=755}),
 s(17507,36975,{b=1,f=28,lvl=29,modID=2}),
@@ -22327,7 +22327,8 @@ s(44720,86845,{f=5,lvl=35}),
 s(44724,86849,{f=7,lvl=35}),
 s(44723,86848,{f=7,lvl=35}),
 s(44716,86841,{f=4,lvl=35}),
-s(44718,86843,{f=5,lvl=35})}})}}),
+s(44718,86843,{f=5,lvl=35}),
+i(86772,{b=1,f=53,lvl=35,spellID=126599})}})}}),
 e(691,{coords={{53.53,65.26,379}},isRaid=1,isWeekly=1,maps={380,381,382,383,384,385,386,387,434},npcID=60491,questID=32099,g={
 ach(6480,{
 crit(21248,{achID=7479,id=10})}),
@@ -30376,7 +30377,7 @@ inst(302,{awp=50004,coords={{36,69,376}},maps={439,440,441,442},savedInstanceID=
 h(-12,{
 ach(6400,{providers={{"n",60276}},g={
 crit(19920,{achID=6927,id=7})}}),
-ach(6402,{providers={{"n",59824},{"i",80313}},g={
+ach(6402,{providers={{"i",80313},{"n",59824}},g={
 p(835,{b=1,itemID=86562,npcID=64632,spellID=126247}),
 crit(19921,{achID=6927,id=8})}})}),
 h(-45,{
@@ -31437,7 +31438,7 @@ crit(24676,{achID=8981,providers={{"n",76945}}}),
 crit(24677,{achID=8981,providers={{"n",76884}}}),
 crit(24671,{achID=8985,id=11})})}}),
 e(1147,{npcID=76906,g={
-ach(8982,{providers={{"n",81071},{"i",45057},{"i",44606}},g={
+ach(8982,{providers={{"i",44606},{"i",45057},{"n",81071}},g={
 crit(24672,{achID=8985,id=13})}})}}),
 e(1203,{crs=a[1239],g={
 ach(8984,{
@@ -38221,8 +38222,8 @@ ach(11987,{
 mnt(253087,{b=1,itemID=152815,lvl=45})}),
 gach(12112)}),
 h(-45,{
-q(48954,{lvl=45,providers={{"i",152900}},rwp=80001,u=2,g={
-mnt(253639,{b=1,itemID=152901,u=2})}}),
+q(48954,{awp=110205,lvl=45,providers={{"i",152900}},rwp=120000,g={
+mnt(253639,{b=1,itemID=152901})}}),
 q(49077,{lvl=45,qgs={129429},g={
 i(153555)}})}),
 d(109,{difficulties=a[377],g={
@@ -54146,7 +54147,7 @@ crit(63147,{achID=19349,id=4})}),
 crit(64989,{achID=19570,awp=100206,rwp=110002,u=2})}}),
 e(2553,{npcID=208445,g={
 ach(19089,{
-p(4291,{b=1,itemID=210556,npcID=212275,providers={{"i",210870},{"i",210691},{"i",210692}},questID=78855,spellID=426156}),
+p(4291,{b=1,itemID=210556,npcID=212275,providers={{"i",210691},{"i",210692},{"i",210870}},questID=78855,spellID=426156}),
 crit(63148,{achID=19349,id=5})}),
 crit(64990,{achID=19570,awp=100206,rwp=110002,u=2})}}),
 e(2556,{npcID=206172,g={
@@ -55616,7 +55617,7 @@ flt(4,{
 q(77629,{type="hqt"}),
 s(62987,114263,{b=1,f=4,lvl=35}),
 s(63191,114387,{b=1,f=4,lvl=40}),
-s(86455,147517,{f=4,lvl=40,modID=2}),
+s(86455,147517,{f=4,lvl=40,modID=2,rwp=110002,u=2}),
 s(68645,121507,{b=1,f=4}),
 s(78297,134787,{b=1,f=4}),
 s(7587,19105,{b=1,f=4,lvl=24}),
@@ -55626,7 +55627,7 @@ flt(5,{
 q(77628,{type="hqt"}),
 s(62990,114264,{b=1,f=5,lvl=35}),
 s(63194,114388,{b=1,f=5,lvl=40}),
-s(86453,147516,{f=5,lvl=40,modID=2}),
+s(86453,147516,{f=5,lvl=40,modID=2,rwp=110002,u=2}),
 s(68647,121509,{b=1,f=5}),
 s(77884,134621,{b=1,f=5}),
 s(78301,134794,{b=1,f=5})}),
@@ -55822,7 +55823,7 @@ q(77623,{type="hqt"}),
 s(63209,114393,{b=1,f=6,lvl=40}),
 s(168121,189943,{b=1,f=6,lvl=60}),
 s(63005,114269,{b=1,f=6,lvl=35}),
-s(86451,147515,{f=6,lvl=40,modID=2}),
+s(86451,147515,{f=6,lvl=40,modID=2,rwp=110002,u=2}),
 s(1550,4013,{f=6,lvl=24}),
 s(68650,121512,{b=1,f=6}),
 s(9368,23665,{b=1,c=a[1173],f=6,lvl=25}),
@@ -55831,7 +55832,7 @@ s(78319,134705,{b=1,f=6})}),
 flt(7,{
 q(77622,{type="hqt"}),
 s(68648,121510,{b=1,f=7}),
-s(86449,147514,{f=7,lvl=40,modID=2}),
+s(86449,147514,{f=7,lvl=40,modID=2,rwp=110002,u=2}),
 s(58426,108082,{f=7,lvl=37}),
 s(63212,114394,{b=1,f=7,lvl=40}),
 s(58510,108166,{f=7,lvl=39}),
@@ -55861,10 +55862,10 @@ s(78355,134604,{b=1,f=21})}}),
 i(208117,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=32,lvl=70,spellID=417982,g={
 q(77603,{type="hqt"}),
 s(2172,5748,{f=32,lvl=5}),
-s(185703,204674,{b=1,f=32,lvl=40}),
-s(146520,186414,{b=1,bonusID=451,c=a[689],f=32,lvl=60,spellID=353511}),
-s(146521,186414,{b=1,bonusID=1,c=a[689],f=32,lvl=60,spellID=353511}),
-s(145986,186414,{b=1,bonusID=450,c=a[689],f=32,lvl=60,spellID=353511}),
+s(185703,204674,{b=1,f=32,lvl=40,rwp=110002,u=2}),
+s(146520,186414,{b=1,bonusID=451,c=a[689],f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
+s(146521,186414,{b=1,bonusID=1,c=a[689],f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
+s(145986,186414,{b=1,bonusID=450,c=a[689],f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
 s(64176,115294,{b=1,f=32,lvl=35}),
 s(8786,22318,{b=1,f=32,lvl=22}),
 s(78360,134608,{b=1,f=32})}}),
@@ -55910,15 +55911,15 @@ q(77598,{type="hqt"}),
 s(78394,134746,{b=1,f=26}),
 s(146670,186410,{b=1,f=26,lvl=60,modID=2,spellID=358682}),
 s(145980,186410,{b=1,f=26,lvl=60,modID=6,spellID=358682}),
-s(146730,187542,{b=1,f=26,lvl=60,modID=4,spellID=357585}),
+s(146730,187542,{b=1,f=26,lvl=60,modID=4,rwp=110002,spellID=357585,u=2}),
 s(146728,187542,{b=1,f=26,lvl=60,modID=3,spellID=357585}),
-s(146731,187542,{b=1,f=26,lvl=60,modID=5,spellID=357585}),
-s(146729,187542,{b=1,f=26,lvl=60,modID=6,spellID=357585}),
+s(146731,187542,{b=1,f=26,lvl=60,modID=5,rwp=110002,spellID=357585,u=2}),
+s(146729,187542,{b=1,f=26,lvl=60,modID=6,rwp=110002,spellID=357585,u=2}),
 s(58948,108905,{b=1,f=26}),
 s(78370,134606,{b=1,f=26})}}),
 i(208120,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=20,lvl=70,spellID=417985,g={
 q(77606,{type="hqt"}),
-s(86911,147908,{b=1,f=20,lvl=40}),
+s(86911,147908,{b=1,f=20,lvl=40,rwp=110002,u=2}),
 s(58400,108054,{f=20,lvl=35}),
 s(58494,108150,{f=20,lvl=37}),
 s(58578,108234,{f=20,lvl=39}),
@@ -55952,10 +55953,10 @@ i(208110,{description="This Item turns into one (1) unlearned Item based on Item
 q(77596,{type="hqt"}),
 s(102700,166405,{b=1,f=23,lvl=40}),
 s(58404,108058,{f=23,lvl=35}),
-s(108405,174228,{f=23,lvl=50}),
+s(108405,174228,{f=23,lvl=50,rwp=110002,u=2}),
 s(58498,108154,{f=23,lvl=37}),
 s(99995,163930,{f=23,lvl=35}),
-s(97059,161118,{f=23,lvl=45}),
+s(97059,161118,{f=23,lvl=45,rwp=110002,u=2}),
 s(58076,107390,{b=1,f=23}),
 s(58582,108238,{f=23,lvl=39}),
 s(58584,108240,{f=23,lvl=39}),
@@ -56010,7 +56011,7 @@ s(78348,134582,{b=1,f=28})}}),
 i(208109,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=25,lvl=70,spellID=417968,g={
 q(77595,{type="hqt"}),
 s(78365,134613,{b=1,f=25}),
-s(102674,166364,{b=1,f=25,lvl=40}),
+s(102674,166364,{b=1,f=25,lvl=40,rwp=110002,u=2}),
 s(91973,155074,{b=1,f=25,lvl=50}),
 s(34778,68195,{b=1,f=25,lvl=6}),
 s(7591,19110,{b=1,f=25,lvl=24}),
@@ -59433,6 +59434,7 @@ crit(103298,{achID=41598}),
 crit(103298,{achID=41601})}}),
 e(2686,{npcID=233815,g={
 r(446992,{itemID=224435,learnedAt=35,requireSkill=197}),
+i(245510,{b=1}),
 crit(103299,{achID=41598}),
 crit(103299,{achID=41601})}}),
 e(2685,{npcID=233816,g={
@@ -59441,6 +59443,7 @@ crit(103300,{achID=41598}),
 crit(103300,{achID=41601})}}),
 e(2687,{crs=a[555],g={
 r(450250,{itemID=223048,learnedAt=35,requireSkill=164}),
+i(249218),
 crit(103301,{achID=41598}),
 crit(103301,{achID=41602})}}),
 e(2688,{crs=a[570],g={
@@ -59452,6 +59455,7 @@ r(435334,{itemID=223094,learnedAt=1,requireSkill=755}),
 crit(103303,{achID=41598}),
 crit(103303,{achID=41602})}}),
 e(2690,{npcID=237763,g={
+s(291869,243365,{b=1,f=24,lvl=80,spellID=1235531}),
 i(246727,{b=1,description="Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",minReputation=a[632]}),
 crit(103304,{achID=41598}),
 crit(103304,{achID=41603})}}),
@@ -59518,7 +59522,6 @@ s(285454,237552,{b=1,f=5,lvl=80,modID=4,up=3}),
 s(285426,237545,{b=1,f=7,lvl=80,modID=4,up=3}),
 s(285342,237524,{b=1,f=4,lvl=80,modID=4,up=3}),
 i(242393,{b=1,f=53,lvl=80,modID=4,spellID=1232719,up=3}),
-i(245510,{b=1,modID=4,up=3}),
 s(293185,237732,{b=1,f=32,lvl=80,modID=4,up=3}),
 s(293139,237729,{b=1,f=20,lvl=80,modID=4,up=3}),
 s(293142,237723,{b=1,f=8,lvl=80,modID=4,up=3})}}),
@@ -59583,7 +59586,6 @@ s(285362,237529,{b=1,f=6,lvl=80,modID=4,up=3}),
 s(293151,237724,{b=1,f=1,lvl=80,modID=4,up=3}),
 s(285458,237553,{b=1,f=5,lvl=80,modID=4,up=3}),
 i(237570,{b=1,f=52,lvl=80,modID=4,up=3}),
-i(249218,{up=3}),
 s(293145,237726,{b=1,f=28,lvl=80,modID=4,up=3}),
 s(293148,237737,{b=1,f=26,lvl=80,modID=4,up=3})}}),
 e(2688,{crs=a[570],g={
@@ -59657,7 +59659,6 @@ e(2690,{npcID=237763,providers={a[41]},g={
 s(285374,237532,{b=1,f=7,lvl=80,modID=4,up=3}),
 s(285502,237564,{b=1,f=7,lvl=80,modID=4,up=3}),
 s(285370,237531,{b=1,f=5,lvl=80,modID=4,up=3}),
-s(291869,243365,{b=1,f=24,lvl=80,modID=4,spellID=1235531,up=3}),
 i(242400,{b=1,f=53,lvl=80,modID=4,spellID=1232776,up=3}),
 s(293170,237734,{b=1,f=21,lvl=80,modID=4,up=3}),
 s(285466,237555,{b=1,f=6,lvl=80,modID=4,up=3}),
@@ -59764,7 +59765,6 @@ s(285453,237552,{b=1,f=5,lvl=80,modID=3,up=5}),
 s(285425,237545,{b=1,f=7,lvl=80,modID=3,up=5}),
 s(285341,237524,{b=1,f=4,lvl=80,modID=3,up=5}),
 i(242393,{b=1,f=53,lvl=80,modID=3,spellID=1232719,up=5}),
-i(245510,{b=1,modID=3,up=5}),
 s(286922,237732,{b=1,f=32,lvl=80,modID=3,up=5}),
 s(286919,237729,{b=1,f=20,lvl=80,modID=3,up=5}),
 s(286913,237723,{b=1,f=8,lvl=80,modID=3,up=5})}}),
@@ -59828,7 +59828,6 @@ s(285361,237529,{b=1,f=6,lvl=80,modID=3,up=5}),
 s(286914,237724,{b=1,f=1,lvl=80,modID=3,up=5}),
 s(285457,237553,{b=1,f=5,lvl=80,modID=3,up=5}),
 i(237570,{b=1,f=52,lvl=80,modID=3,up=5}),
-i(249218,{up=5}),
 s(286916,237726,{b=1,f=28,lvl=80,modID=3,up=5}),
 s(286927,237737,{b=1,f=26,lvl=80,modID=3,up=5})}}),
 e(2688,{crs=a[570],g={
@@ -59901,7 +59900,6 @@ e(2690,{npcID=237763,providers={a[41]},g={
 s(285373,237532,{b=1,f=7,lvl=80,modID=3,up=5}),
 s(285501,237564,{b=1,f=7,lvl=80,modID=3,up=5}),
 s(285369,237531,{b=1,f=5,lvl=80,modID=3,up=5}),
-s(291869,243365,{b=1,f=24,lvl=80,modID=3,spellID=1235531,up=5}),
 i(242400,{b=1,f=53,lvl=80,modID=3,spellID=1232776,up=5}),
 s(286924,237734,{b=1,f=21,lvl=80,modID=3,up=5}),
 s(285465,237555,{b=1,f=6,lvl=80,modID=3,up=5}),
@@ -60005,7 +60003,6 @@ s(285455,237552,{b=1,f=5,lvl=80,modID=5,up=6}),
 s(285427,237545,{b=1,f=7,lvl=80,modID=5,up=6}),
 s(285343,237524,{b=1,f=4,lvl=80,modID=5,up=6}),
 i(242393,{b=1,f=53,lvl=80,modID=5,spellID=1232719,up=6}),
-i(245510,{b=1,modID=5,up=6}),
 s(293186,237732,{b=1,f=32,lvl=80,modID=5,up=6}),
 s(293140,237729,{b=1,f=20,lvl=80,modID=5,up=6}),
 s(293143,237723,{b=1,f=8,lvl=80,modID=5,up=6})}}),
@@ -60069,7 +60066,6 @@ s(285363,237529,{b=1,f=6,lvl=80,modID=5,up=6}),
 s(293152,237724,{b=1,f=1,lvl=80,modID=5,up=6}),
 s(285459,237553,{b=1,f=5,lvl=80,modID=5,up=6}),
 i(237570,{b=1,f=52,lvl=80,modID=5,up=6}),
-i(249218,{up=6}),
 s(293146,237726,{b=1,f=28,lvl=80,modID=5,up=6}),
 s(293149,237737,{b=1,f=26,lvl=80,modID=5,up=6})}}),
 e(2688,{crs=a[570],g={
@@ -60142,7 +60138,6 @@ e(2690,{npcID=237763,providers={a[41]},g={
 s(285375,237532,{b=1,f=7,lvl=80,modID=5,up=6}),
 s(285503,237564,{b=1,f=7,lvl=80,modID=5,up=6}),
 s(285371,237531,{b=1,f=5,lvl=80,modID=5,up=6}),
-s(291869,243365,{b=1,f=24,lvl=80,modID=5,spellID=1235531,up=6}),
 i(242400,{b=1,f=53,lvl=80,modID=5,spellID=1232776,up=6}),
 s(293171,237734,{b=1,f=21,lvl=80,modID=5,up=6}),
 s(285467,237555,{b=1,f=6,lvl=80,modID=5,up=6}),
@@ -60229,7 +60224,6 @@ s(285456,237552,{b=1,f=5,lvl=80,modID=6}),
 s(285428,237545,{b=1,f=7,lvl=80,modID=6}),
 s(285344,237524,{b=1,f=4,lvl=80,modID=6}),
 i(242393,{b=1,f=53,lvl=80,modID=6,spellID=1232719}),
-i(245510,{b=1,modID=6}),
 s(293187,237732,{b=1,f=32,lvl=80,modID=6}),
 s(293141,237729,{b=1,f=20,lvl=80,modID=6}),
 s(293144,237723,{b=1,f=8,lvl=80,modID=6})}}),
@@ -60297,7 +60291,6 @@ s(285364,237529,{b=1,f=6,lvl=80,modID=6}),
 s(293153,237724,{b=1,f=1,lvl=80,modID=6}),
 s(285460,237553,{b=1,f=5,lvl=80,modID=6}),
 i(237570,{b=1,f=52,lvl=80,modID=6}),
-i(249218),
 s(293147,237726,{b=1,f=28,lvl=80,modID=6}),
 s(293150,237737,{b=1,f=26,lvl=80,modID=6})}}),
 e(2688,{crs=a[570],g={
@@ -60376,7 +60369,6 @@ crit(103287,{achID=41600,id=7})}),
 s(285376,237532,{b=1,f=7,lvl=80,modID=6}),
 s(285504,237564,{b=1,f=7,lvl=80,modID=6}),
 s(285372,237531,{b=1,f=5,lvl=80,modID=6}),
-s(291869,243365,{b=1,f=24,lvl=80,modID=6,spellID=1235531}),
 i(242400,{b=1,f=53,lvl=80,modID=6,spellID=1232776}),
 s(293172,237734,{b=1,f=21,lvl=80,modID=6}),
 s(285468,237555,{b=1,f=6,lvl=80,modID=6}),

@@ -16,7 +16,7 @@ REMIX_LEGION = createHeader({
 		cn = "军团再临：幻境新生",
 		tw = "軍臨天下：混搭再造",
 	},
-	--description = {
-	--	en = "",
-	--},
+	-- description = {
+	-- 	en = "",
+	-- },
 });

@@ -2562,7 +2562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78909, {	-- Shifting Scale Talisman
-					["sourceQuest"] = 78908,	--  Speak to N'ora
+					["sourceQuest"] = 78908,	-- Speak to N'ora
 					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -4245,7 +4245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 62.8, 20.2, NORTHERN_BARRENS },
 						{ 64.1, 23.0, NORTHERN_BARRENS },
 						{ 65.0, 28.7, NORTHERN_BARRENS },
-						--{ 56.0, 49.3, NORTHERN_BARRENS },	-- Wowhead notes this as another coord, but only before cataclysm
+						-- { 56.0, 49.3, NORTHERN_BARRENS },	-- Wowhead notes this as another coord, but only before cataclysm
 						-- #else
 						{ 59.8, 8.5, THE_BARRENS },
 						{ 60.3, 10.1, THE_BARRENS },
@@ -4362,7 +4362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
 					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
-					--["coord"] = { , THE_BARRENS },
+					-- ["coord"] = { , THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {

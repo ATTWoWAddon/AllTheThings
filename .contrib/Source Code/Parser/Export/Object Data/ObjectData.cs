@@ -255,7 +255,7 @@ namespace ATT
                 for (int i = fields.Count - 1; i >= 0; i--)
                 {
                     string field = fields[i];
-                    if (field.StartsWith("_"))
+                    if (field[0] == '_')
                     {
                         fields.RemoveAt(i);
                     }

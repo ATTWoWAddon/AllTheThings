@@ -100,6 +100,8 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	-- ATT is hooked into the QUEST_DATA_LOAD_RESULT event, and some addons LOVE to request the existing quest data a bazillion times
 	-- we can try our best to ignore IDs which we've already successfully acquired a valid server name
 	local ValidQuestDataLoads = {}
+	-- only used to prevent some weird issue where a huge number causes C_QuestLog.RequestLoadQuestByID to throw an error
+	local MAX_QUEST_ID = 9999999
 
 	-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 	-- Passing in the data(table) will cause the data to have quest rewards populated once the data is retrieved
@@ -107,8 +109,8 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	-- will be called with the QuestID and Success of the data lookup event. Additional params will be provided as a
 	-- 3rd parameter table to the callback
 	RequestLoadQuestByID = function(questID, questObjectRef, ...)
-		if type(questID) ~= "number" then
-			app.PrintDebug("RequestLoadQuestByID: NON-NUMBER QUESTID",questID, questObjectRef, ...)
+		if type(questID) ~= "number" or questID < 0 or questID > MAX_QUEST_ID then
+			app.PrintDebug("RequestLoadQuestByID: INVALID QUESTID",questID,questObjectRef,...)
 			app.PrintDebug(debugstack())
 			return
 		end
@@ -1230,23 +1232,23 @@ local LockedQuestCache, LockedBreadcrumbCache = {}, {}
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
 	-- The achievement functions would be cached more efficiently in that file and be able to version properly.
-    achID = function(achievementID)
-        return app.CurrentCharacter.Achievements[achievementID];
-    end,
+	achID = function(achievementID)
+		return app.CurrentCharacter.Achievements[achievementID];
+	end,
 	label_achID = ACHIEVEMENT_UNLOCKED or "Achievement Earned",
-    text_achID = function(achievementID)
-        return select(2, GetAchievementInfo(achievementID));
-    end,
+	text_achID = function(achievementID)
+		return select(2, GetAchievementInfo(achievementID));
+	end,
 
-    lvl = function(lvl)
-        return app.Level >= lvl;
-    end,
+	lvl = function(lvl)
+		return app.Level >= lvl;
+	end,
 	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL,
-    text_lvl = function(lvl)
-        return lvl;
-    end,
+	text_lvl = function(lvl)
+		return lvl;
+	end,
 
-    questID = function(questID)
+	questID = function(questID)
 		-- saved on this character to this quest
 		if IsQuestSaved(questID) then return true end
 		-- questID is saved in OneTimeQuests to another character
@@ -1261,69 +1263,69 @@ local criteriaFuncs = {
 		-- if q and q.locked then app.PrintDebug("locked",questID) return true end
 	end,
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
-    text_questID = function(questID)
+	text_questID = function(questID)
 		-- sometimes we can get nice names from non-server quests... so use their actual implementation
 		local questObject = app.SearchForObject("questID", questID, "field")
 		local questName
 		if questObject then questName = app.TryColorizeName(questObject) end
-        return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
-    end,
+		return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
+	end,
 
-    -- spellID = app.IsSpellKnownHelper,	-- defined in OnLoad event
+	-- spellID = app.IsSpellKnownHelper,	-- defined in OnLoad event
 	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL,
-    -- text_spellID = app.GetSpellName,	-- defined in OnLoad event
+	-- text_spellID = app.GetSpellName,	-- defined in OnLoad event
 
-    factionID = function(v)
+	factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-        local standing = app.CreateFaction(factionID).standing;
+		local standing = app.CreateFaction(factionID).standing;
 		-- app.PrintDebug(("Check Faction %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
-    end,
+	end,
 	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL,
-    text_factionID = function(v)
+	text_factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local faction = app.CreateFaction(factionID);
 		faction.rank = math_floor((v - factionID) * 10 + 0.00001);
-        return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
-    end,
+		return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
+	end,
 
-    renownID = function(v)
+	renownID = function(v)
 		-- v = factionID.levelRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 100 + 0.00001);
-        local standing = app.CreateFaction(factionID).standing;
+		local standing = app.CreateFaction(factionID).standing;
 		-- app.PrintDebug(("Check Renown %s Standing (%d) is locked @ (%d)"):format(factionID, standing, lockStanding))
 		return standing >= lockStanding;
-    end,
+	end,
 	label_renownID = L.LOCK_CRITERIA_FACTION_LABEL,
-    text_renownID = function(v)
+	text_renownID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local faction = app.CreateFaction(factionID);
 		faction.rank = math_floor((v - factionID) * 100 + 0.00001);
-        return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
-    end,
+		return L.LOCK_CRITERIA_FACTION_FORMAT:format(faction.rankText, faction.name, faction.standingText);
+	end,
 
-    sourceID = function(sourceID)
+	sourceID = function(sourceID)
 		return app.IsAccountCached("Sources", sourceID)
 	end,
 	label_sourceID = L.LOCK_CRITERIA_SOURCE_LABEL or "Known Appearance",
-    text_sourceID = function(sourceID)
+	text_sourceID = function(sourceID)
 		local group = app.SearchForObject("sourceID", sourceID, "field") or app.CreateItemSource(sourceID)
-        return group.link or group.text or RETRIEVING_DATA;
-    end,
+		return group.link or group.text or RETRIEVING_DATA;
+	end,
 
-    toyID = function(toyID)
+	toyID = function(toyID)
 		return app.IsAccountCached("Toys", toyID)
 	end,
 	label_toyID = L.LOCK_CRITERIA_TOY_LABEL or "Known Toy",
-    text_toyID = function(toyID)
+	text_toyID = function(toyID)
 		local group = app.SearchForObject("toyID", toyID, "field") or app.CreateToy(toyID)
-        return group.link or group.text or RETRIEVING_DATA;
-    end,
+		return group.link or group.text or RETRIEVING_DATA;
+	end,
 };
 app.AddEventHandler("OnLoad", function()
 	criteriaFuncs.text_spellID = app.GetSpellName
@@ -1556,6 +1558,11 @@ local FactionCache = setmetatable({}, {
 });
 local QuestWithReputationCostCollectibles = setmetatable({}, {
 	__index = function(t, quest)
+		if NotInGame(quest) then
+			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID)
+			t[quest.questID] = app.EmptyTable
+			return
+		end
 		local costCollectibles
 		-- TODO: adjust when givesReputation exists
 		local maxReputation = quest.maxReputation

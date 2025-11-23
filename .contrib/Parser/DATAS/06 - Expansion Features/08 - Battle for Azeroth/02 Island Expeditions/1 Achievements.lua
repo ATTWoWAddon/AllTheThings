@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(13142),		-- Archipelago Explorer
 			pvp(ach(13134, {	-- Expedition Leader
-				--#if BEFORE 11.0.7
+				-- #if BEFORE 11.0.7
 				["sym"] = {{"meta_achievement",
 					13122,	-- Island Conqueror
 					13125,	-- Azerite Admiral
@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					13135,	-- Team Deathmatch (H)
 					13141,	-- Island Slayer
 				}},
-				--#else
+				-- #else
 				["sym"] = {{"meta_achievement",
 					13122,	-- Island Conqueror
 					13125,	-- Azerite Admiral
@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					13135,	-- Team Deathmatch (H)
 					13141,	-- Island Slayer
 				}},
-				--#endif
+				-- #endif
 				["groups"] = {
 					title(382),	-- Expedition Leader
 				},

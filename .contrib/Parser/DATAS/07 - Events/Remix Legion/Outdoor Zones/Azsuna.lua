@@ -18,6 +18,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["groups"] = { i(252301) },	-- Warden's Companion (PET!)
 					}),
 					ach(42317),	-- Campaign: Azsuna
+					ach(42318, {	-- Court of Farondis
+						i(250307, {	-- Tome of the Corrupt (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42518),	-- Elusive Foes: Azsuna
 					ach(42516),	-- Explore Azsuna
 					ach(42517),	-- Hidden Treasures: Azsuna
@@ -36,6 +41,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}},
 					}),
 					ach(61103),	-- Sojourner of Azsuna
+					ach(61218, {	-- The Wardens
+						i(251778, {	-- Sentinel’s Moonwing Gaze (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42515, {	-- Tour Azsuna
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -43,26 +53,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42516,	-- Explore Azsuna
 							42517,	-- Hidden Treasures: Azsuna
 						}},
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_COURT_OF_FARONDIS, {
-						n(ACHIEVEMENTS, {
-							ach(42318, {	-- Court of Farondis
-								i(250307, {	-- Tome of the Corrupt (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
-					}),
-					faction(FACTION_THE_WARDENS, {
-						n(ACHIEVEMENTS, {
-							ach(61218, {	-- The Wardens
-								i(251778, {	-- Sentinel’s Moonwing Gaze (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
 					}),
 				}),
 				n(RARES, {

@@ -117,7 +117,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212956),	-- Fleeting Draught of Silent Footfalls+++
 				i(212968),	-- Fleeting Frontline Potion+++
 				i(212962),	-- Fleeting Grotesque Vial+++
-				i(244849, {["timeline"]={ADDED_11_2_0}}),-- Fleeting Invigorating Healing Potion+++
+				i(244849, {["timeline"]={ADDED_11_2_0}}),	-- Fleeting Invigorating Healing Potion+++
 				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
 				i(212965),	-- Fleeting Potion of Unwavering Focus+++
 				i(212953),	-- Fleeting Slumbering Soul Serum+++
@@ -259,8 +259,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
 			-- Decor
-			--FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
-			--FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
+			-- FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
+			-- FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
 		})),
 		filter(MISC, {
 			i(212781),	-- Formulated Courage
@@ -399,12 +399,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80652, 450274);	-- Proficient Blacksmith's Toolbox
 			FirstCraft(80659, 450281);	-- Artisan Blacksmith's Hammer
 			FirstCraft(80660, 450282);	-- Artisan Blacksmith's Toolbox
-			FirstCraft(80655, 450277);  -- Artisan Skinning Knife
-			FirstCraft(80654, 450276);  -- Artisan Pickaxe
-			FirstCraft(80653, 450275);  -- Artisan Sickle
-			FirstCraft(80657, 450279);  -- Artisan Leatherworker's Knife
-			FirstCraft(80656, 450278);  -- Artisan Needle Set
-			FirstCraft(80658, 450280);  -- Artisan Leatherworker's Toolset
+			FirstCraft(80655, 450277);	-- Artisan Skinning Knife
+			FirstCraft(80654, 450276);	-- Artisan Pickaxe
+			FirstCraft(80653, 450275);	-- Artisan Sickle
+			FirstCraft(80657, 450279);	-- Artisan Leatherworker's Knife
+			FirstCraft(80656, 450278);	-- Artisan Needle Set
+			FirstCraft(80658, 450280);	-- Artisan Leatherworker's Toolset
 			FirstCraft(80661, 450283);	-- Earthen Master's Hammer
 			-- Stonework
 			FirstCraft(80663, 450285);	-- Ironclaw Whetstone
@@ -418,8 +418,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
 			FirstCraft(83399, 450292);	-- Coreforged Skeleton Key
 			-- Decor
-			--FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
-			--FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
+			-- FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
+			-- FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
 		})),
 		filter(MISC, {
 			i(222520),	-- Coreforged Repair Hammer+
@@ -840,8 +840,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
 			FirstCraft(81028, 445355);	-- Scepter of Radiant Magics
 			-- Decor
-			--FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
-			--FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
+			-- FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
+			-- FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
 		})),
 		filter(ILLUSIONS, {
 		}),
@@ -1024,47 +1024,47 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				r(447312),	-- Invent
 				r(447339),	-- Safety Switch
 				r(447337),	-- Whimsical Wiring
-				i(227890, { -- Unrecognizable Prototype
-					i(221956, { -- Prototype: Algari Repair Bot 11O
+				i(227890, {	-- Unrecognizable Prototype
+					i(221956, {	-- Prototype: Algari Repair Bot 11O
 						r(447367),	-- Algari Repair Bot 11O
 					}),
-					i(221960, { -- Prototype: Barrel of Fireworks
+					i(221960, {	-- Prototype: Barrel of Fireworks
 						r(447369),	-- Barrel of Fireworks
 					}),
-					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
+					i(221952, {	-- Prototype: Convincingly Realistic Jumper Cables
 						r(447366),	-- Convincingly Realistic Jumper Cables
 					}),
-					i(221961, { -- Prototype: Defective Escape Pod
+					i(221961, {	-- Prototype: Defective Escape Pod
 						r(447370),	-- Defective Escape Pod
 					}),
-					i(221963, { -- Prototype: Filmless Camera
+					i(221963, {	-- Prototype: Filmless Camera
 						r(447371),	-- Filmless Camera
 					}),
-					i(221965, { -- Prototype: Wormhole Generator: Khaz Algar
+					i(221965, {	-- Prototype: Wormhole Generator: Khaz Algar
 						r(447372),	-- Wormhole Generator: Khaz Algar
 					}),
-					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
+					i(221958, {	-- Prototype: Summon Portable Profession Possibility Projector
 						r(447368),	-- Portable Profession Possibility Projector
 					}),
-					i(221875, { -- Prototype: Potion Bomb of Recovery
+					i(221875, {	-- Prototype: Potion Bomb of Recovery
 						r(447343),	-- Potion Bomb of Recovery
 					}),
-					i(221948, { -- Prototype: Pausing Pylon
+					i(221948, {	-- Prototype: Pausing Pylon
 						r(447365),	-- Pausing Pylon
 					}),
-					i(221879, { -- Prototype: Potion Bomb of Power
+					i(221879, {	-- Prototype: Potion Bomb of Power
 						r(447344),	-- Potion Bomb of Power
 					}),
-					i(221871, { -- Prototype: Potion Bomb of Speed
+					i(221871, {	-- Prototype: Potion Bomb of Speed
 						r(447342),	-- Potion Bomb of Speed
 					}),
-					i(221944, { -- Prototype: Irresistible Red Button
+					i(221944, {	-- Prototype: Irresistible Red Button
 						r(447364),	-- Irresistible Red Button
 					}),
-					i(221903, { -- Prototype: Earthen Delivery Drill
+					i(221903, {	-- Prototype: Earthen Delivery Drill
 						r(447350),	-- Tinker: Earthen Delivery Drill
 					}),
-					i(221907, { -- Prototype: Heartseeking Health Injector
+					i(221907, {	-- Prototype: Heartseeking Health Injector
 						r(447351),	-- Tinker: Heartseeking Health Injector
 					}),
 				}),
@@ -1078,7 +1078,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447327, {	-- Aqirite Fisherfriend
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
-					r(447331, { -- Aqirite Miner's Headgear
+					r(447331, {	-- Aqirite Miner's Headgear
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
@@ -1117,7 +1117,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
-					r(447314, { -- Studious Brilliance Expeditor
+					r(447314, {	-- Studious Brilliance Expeditor
 						["description"] = "Requires specialization - Goggles to discover",
 					}),
 					r(447316, {	-- Supercharged Thought Enhancer
@@ -1607,60 +1607,60 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Competitor's Crafts (PvP)
-			FirstCraft(80748, 444338); -- Algari Competitor's Emblem
-			FirstCraft(80747, 444337); -- Algari Competitor's Insignia of Alacrity
-			FirstCraft(80743, 455006); -- Algari Competitor's Lamp
-			FirstCraft(80746, 444336); -- Algari Competitor's Medallion
-			FirstCraft(80744, 455007); -- Algari Competitor's Pillar
-			FirstCraft(80745, 455008); -- Algari Competitor's Staff
+			FirstCraft(80748, 444338);	-- Algari Competitor's Emblem
+			FirstCraft(80747, 444337);	-- Algari Competitor's Insignia of Alacrity
+			FirstCraft(80743, 455006);	-- Algari Competitor's Lamp
+			FirstCraft(80746, 444336);	-- Algari Competitor's Medallion
+			FirstCraft(80744, 455007);	-- Algari Competitor's Pillar
+			FirstCraft(80745, 455008);	-- Algari Competitor's Staff
 			-- Combat Stats
-			FirstCraft(80719, 444210); -- Algari Missive of the Aurora
-			FirstCraft(80720, 444211); -- Algari Missive of the Feverflare
-			FirstCraft(80721, 444212); -- Algari Missive of the Fireflash
-			FirstCraft(80722, 444213); -- Algari Missive of the Harmonious
-			FirstCraft(80723, 444214); -- Algari Missive of the Peerless
-			FirstCraft(80724, 444215); -- Algari Missive of the Quickblade
+			FirstCraft(80719, 444210);	-- Algari Missive of the Aurora
+			FirstCraft(80720, 444211);	-- Algari Missive of the Feverflare
+			FirstCraft(80721, 444212);	-- Algari Missive of the Fireflash
+			FirstCraft(80722, 444213);	-- Algari Missive of the Harmonious
+			FirstCraft(80723, 444214);	-- Algari Missive of the Peerless
+			FirstCraft(80724, 444215);	-- Algari Missive of the Quickblade
 			-- Contracts
-			FirstCraft(80725, 444217); -- Contract: Assembly of the Deeps
+			FirstCraft(80725, 444217);	-- Contract: Assembly of the Deeps
 			FirstCraft(85796, 471132, ADDED_11_1_0);	-- Contract: The Cartels of Undermine
-			FirstCraft(80728, 444220); -- Contract: Council of Dornogal
-			FirstCraft(80726, 444218); -- Contract: Hallowfall Arathi
+			FirstCraft(80728, 444220);	-- Contract: Council of Dornogal
+			FirstCraft(80726, 444218);	-- Contract: Hallowfall Arathi
 			FirstCraft(90908, 1236170, ADDED_11_2_0);	-- Contract: The K'aresh Trust
-			FirstCraft(80727, 444219); -- Contract: The Severed Threads
+			FirstCraft(80727, 444219);	-- Contract: The Severed Threads
 
 			FirstCraft(92075, 1249466, ADDED_11_2_0);	-- Deal: Cartel Ba
 			FirstCraft(92076, 1249468, ADDED_11_2_0);	-- Deal: Cartel Om
 			FirstCraft(92074, 1249463, ADDED_11_2_0);	-- Deal: Cartel Zo
 			-- Embellishments
-			FirstCraft(80704, 444195); -- Darkmoon Sigil: Vivacity
-			FirstCraft(80701, 444192); -- Darkmoon Sigil: Ascension
-			FirstCraft(80703, 444194); -- Darkmoon Sigil: Symbiosis
-			FirstCraft(80702, 444193); -- Darkmoon Sigil: Radiance
+			FirstCraft(80704, 444195);	-- Darkmoon Sigil: Vivacity
+			FirstCraft(80701, 444192);	-- Darkmoon Sigil: Ascension
+			FirstCraft(80703, 444194);	-- Darkmoon Sigil: Symbiosis
+			FirstCraft(80702, 444193);	-- Darkmoon Sigil: Radiance
 			-- Glyphs
-			FirstCraft(86453, 1213583); -- Glyph of the Admiral's Pistol Shot
-			FirstCraft(86451, 1213561); -- Glyph of the Ashvane Pistol Shot
-			FirstCraft(86454, 1213582); -- Glyph of the Gilded Pistol Shot
+			FirstCraft(86453, 1213583);	-- Glyph of the Admiral's Pistol Shot
+			FirstCraft(86451, 1213561);	-- Glyph of the Ashvane Pistol Shot
+			FirstCraft(86454, 1213582);	-- Glyph of the Gilded Pistol Shot
 			FirstCraft(90784, 1234336, ADDED_11_1_7);	-- Glyph of the Strix
-			FirstCraft(86455, 1213581); -- Glyph of the Twilight Pistol Shot
+			FirstCraft(86455, 1213581);	-- Glyph of the Twilight Pistol Shot
 			-- Inks
 			FirstCraft(80730, 444222);	-- Apricate Ink
 			FirstCraft(80729, 444221);	-- Shadow Ink
 			-- Reagents
-			FirstCraft(80699, 444190); -- Codified Greenwood
-			FirstCraft(80700, 444191); -- Boundless Cipher
+			FirstCraft(80699, 444190);	-- Codified Greenwood
+			FirstCraft(80700, 444191);	-- Boundless Cipher
 			FirstCraft(91581, 1243994, ADDED_11_2_0);	-- Inspired Writer's Quill
 			-- Runes
-			FirstCraft(86205, 472951, ADDED_11_1_0); -- Vantus Rune: Liberation of Undermine
+			FirstCraft(86205, 472951, ADDED_11_1_0);	-- Vantus Rune: Liberation of Undermine
 			FirstCraft(90941, 1236908, ADDED_11_2_0);	-- Vantus Rune: Manaforge Omega
-			FirstCraft(80712, 444203); -- Vantus Rune: Nerub-ar Palace
+			FirstCraft(80712, 444203);	-- Vantus Rune: Nerub-ar Palace
 			-- Profession Stats
-			FirstCraft(80735, 444232); -- Algari Missive of Crafting Speed
-			FirstCraft(80738, 444235); -- Algari Missive of Deftness
-			FirstCraft(80736, 444233); -- Algari Missive of Finesse
-			FirstCraft(80732, 444229); -- Algari Missive of Ingenuity
-			FirstCraft(80734, 444231); -- Algari Missive of Multicraft
-			FirstCraft(80737, 444234); -- Algari Missive of Perception
-			FirstCraft(80733, 444230); -- Algari Missive of Resourcefulness
+			FirstCraft(80735, 444232);	-- Algari Missive of Crafting Speed
+			FirstCraft(80738, 444235);	-- Algari Missive of Deftness
+			FirstCraft(80736, 444233);	-- Algari Missive of Finesse
+			FirstCraft(80732, 444229);	-- Algari Missive of Ingenuity
+			FirstCraft(80734, 444231);	-- Algari Missive of Multicraft
+			FirstCraft(80737, 444234);	-- Algari Missive of Perception
+			FirstCraft(80733, 444230);	-- Algari Missive of Resourcefulness
 			-- Profession Treatises
 			FirstCraft(80690, 444187);	-- Algari Treatise on Alchemy
 			FirstCraft(80698, 444184);	-- Algari Treatise on Blacksmithing
@@ -1674,19 +1674,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80739, 444236);	-- Algari Treatise on Skinning
 			FirstCraft(80691, 444186);	-- Algari Treatise on Tailoring
 			-- Profession Equipment
-			FirstCraft(80718, 444209); -- Inscribed Rolling Pin
-			FirstCraft(80714, 444205); -- Silver Tongue's Quill
-			FirstCraft(80716, 444207); -- Patient Alchemist's Mixing Rod
-			FirstCraft(80715, 444206); -- Hasty Alchemist's Mixing Rod
-			FirstCraft(80713, 444204); -- Lightweight Scribe's Quill
-			FirstCraft(80717, 444208); -- Burnt Rolling Pin
+			FirstCraft(80718, 444209);	-- Inscribed Rolling Pin
+			FirstCraft(80714, 444205);	-- Silver Tongue's Quill
+			FirstCraft(80716, 444207);	-- Patient Alchemist's Mixing Rod
+			FirstCraft(80715, 444206);	-- Hasty Alchemist's Mixing Rod
+			FirstCraft(80713, 444204);	-- Lightweight Scribe's Quill
+			FirstCraft(80717, 444208);	-- Burnt Rolling Pin
 			-- Weapons
-			FirstCraft(80708, 444199); -- Vagabond's Bounding Baton
-			FirstCraft(80707, 444198); -- Vagabond's Careful Crutch
-			FirstCraft(80706, 444197); -- Vagabond's Torch
-			FirstCraft(80710, 444201); -- Inquisitor's Baton
-			FirstCraft(80709, 444200); -- Inquisitor's Crutch
-			FirstCraft(80705, 444196); -- Inquisitor's Torch
+			FirstCraft(80708, 444199);	-- Vagabond's Bounding Baton
+			FirstCraft(80707, 444198);	-- Vagabond's Careful Crutch
+			FirstCraft(80706, 444197);	-- Vagabond's Torch
+			FirstCraft(80710, 444201);	-- Inquisitor's Baton
+			FirstCraft(80709, 444200);	-- Inquisitor's Crutch
+			FirstCraft(80705, 444196);	-- Inquisitor's Torch
 		})),
 		filter(GLYPHS, {
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
@@ -2411,7 +2411,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(439716),	-- Crystallized Aqirite
 			r(439715),	-- Crystallized Bismuth
 			r(439717),	-- Crystallized Ironclaw
-			r(1250351, {["timeline"]={ADDED_11_2_0}}),-- Desolate Deposit
+			r(1250351, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Deposit
 			r(439722),	-- EZ-Mine Aqirite
 			r(439721),	-- EZ-Mine Bismuth
 			r(439723),	-- EZ-Mine Ironclaw
@@ -2437,7 +2437,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = MINING,
 		},{
 			-- Aqirite
-			--FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
+			-- FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
 			FirstCraft(80357, 439713);	-- Aqirite Seam
 			FirstCraft(80369, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite

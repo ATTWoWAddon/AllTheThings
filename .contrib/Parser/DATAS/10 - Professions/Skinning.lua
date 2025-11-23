@@ -153,7 +153,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["crs"] = { 194489 },	-- Elusive Elder Drake
 				["coord"] = { 23.2, 33.8, THE_AZURE_SPAN },
 			}),
-			crit(61474, {	--  Elusive Elder Frigidpelt
+			crit(61474, {	-- Elusive Elder Frigidpelt
 				["crs"] = { 194491 },	-- Elusive Elder Frigidpelt
 				["coord"] = { 64.7, 30.7, THE_AZURE_SPAN },
 			}),
@@ -352,7 +352,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
 		n(QUESTS, sharedData({
-			--["description"] = "Requires 50 Skill.",
+			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
@@ -490,7 +490,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 		--[[
 		n(QUESTS, sharedData({
-			--["description"] = "Requires 50 Skill.",
+			-- ["description"] = "Requires 50 Skill.",
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
@@ -901,7 +901,7 @@ profession(SKINNING, {
 		}),
 	}),
 	filter(TOYS, {
-		i(130102),	--  Mother's Skinning Knife (TOY!)
+		i(130102),	-- Mother's Skinning Knife (TOY!)
 	}),
 	filter(RECIPES, {
 		expansion(EXPANSION.LEGION, {

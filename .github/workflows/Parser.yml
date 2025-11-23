@@ -19,7 +19,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Database Parser for Retail
         id: Parse-Retail

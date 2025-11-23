@@ -991,7 +991,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.8, REVENDRETH },
 									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
-								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
+									-- TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
 									["groups"] = {
 										i(181533),	-- Stock: Anima Samples (EC!)
 										i(182360),	-- Fresh Ardenweald Anima (QI!)
@@ -1064,7 +1064,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, REVENDRETH },
-								--	also requires Absolution Crypt storyline, add that SQ upon completion
+									-- also requires Absolution Crypt storyline, add that SQ upon completion
 									["groups"] = {
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
@@ -1382,7 +1382,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
-								--	showed up after Week 1 Ember Court
+									-- showed up after Week 1 Ember Court
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -1394,7 +1394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
-								--	showed up after Week 3 Ember Court
+									-- showed up after Week 3 Ember Court
 								}),
 								q(62095, {	-- Restock: Medic's Tent
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -1438,7 +1438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 									["repeatable"] = true,
-								--	showed up after Week 4 Ember Court
+									-- showed up after Week 4 Ember Court
 								}),
 								q(62069, {	-- Restock: Sinstones
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -1449,7 +1449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										{ "c", 1816, 50 },	-- 50x Sinstone Fragment
 									},
 									["repeatable"] = true,
-								--	showed up after Week 2 Ember Court
+									-- showed up after Week 2 Ember Court
 								}),
 								q(62075, {	-- Restock: Soul Cages
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -1577,7 +1577,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 									["coord"] = { 60.4, 71.6, MALDRAXXUS },
 									["isDaily"] = true,	-- according to the API!
-								--	showed up after Week 3 Ember Court
+									-- showed up after Week 3 Ember Court
 									["groups"] = {
 										i(176124),	-- RSVP: Plague Deviser Marileth
 									},
@@ -1760,7 +1760,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["sourceQuests"] = { 61764 },	-- Dredging up a Name
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 184446, 1 } },	-- 1x Vial of Blue Muck Dye
-								--	you dye your Dredger Butler's clothes blue here, but you don't get achievement credit until you do the "Blue Muck Dye" quest. the questID for it triggers when completing this, but doesn't count for the achievement. thanks, blizz!
+									-- you dye your Dredger Butler's clothes blue here, but you don't get achievement credit until you do the "Blue Muck Dye" quest. the questID for it triggers when completing this, but doesn't count for the achievement. thanks, blizz!
 								}),
 								q(61763, {	-- Dredging Up an Assistant
 									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
@@ -1779,9 +1779,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["repeatable"] = true,
 								}),
 								q(61766, {	-- Homegrown Help
+									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.0, REVENDRETH },
-									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
 								}),
 								q(62361, {	-- Introductions are in Order
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1793,7 +1793,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
-								--	["repeatable"] = true,
+									-- ["repeatable"] = true,
 								}),
 								q(62175, {	-- Looking Fabulous
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1848,7 +1848,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
-								--	["repeatable"] = true,
+									-- ["repeatable"] = true,
 								}),
 								q(63765, {	-- Unseen Hero of the Party
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1878,9 +1878,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61943, {	-- Court Influencer
+									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, REVENDRETH },
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["groups"] = {
 										i(181537),	-- Guest List Page (EC!)
 									},
@@ -1959,40 +1959,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 61.9, 77.0, SINFALL_DEPTHS },
 									["groups"] = {
 										q(62559, {	-- Sootible Hat: Crown of the Righteous
+											-- ["sourceQuests"] = {  },	-- TODO: unknown
+											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62558, {	-- Sootible Hat: Fae Revel Masque
+											-- ["sourceQuests"] = {  },	-- TODO: unknown
+											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62556, {	-- Sootible Hat: Pink Party Hat
+											-- ["sourceQuests"] = {  },	-- TODO: unknown
+											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62554, {	-- Sootible Hat: Red Noggin Candle
+											-- ["sourceQuests"] = {  },	-- TODO: unknown
+											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
 									},
@@ -2041,9 +2041,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Mikanikos?
 								}),
 								q(61174, {	-- RSVP: Baroness Vashj
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
 									["coord"] = { 67.6, 45.9, MALDRAXXUS },
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["groups"] = {
 										i(180846),	-- Colossal Feaster's Head (QI!)
 										i(180850),	-- Morbid Boneguard's Head (QI!)
@@ -2053,9 +2053,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61354, {	-- RSVP: Lady Moonberry
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
 									["coord"] = { 48.9, 51.0, ARDENWEALD },
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["groups"] = {
 										i(181251),	-- Blooming Lasher Spur (QI!)
 										i(181250),	-- Gorm Pheromone Gland (QI!)
@@ -2076,9 +2076,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61173, {	-- RSVP: Mikanikos
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171647 },	-- Mikanikos
 									["coord"] = { 50.1, 21.0, BASTION },
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["groups"] = {
 										i(180895),	-- Potentially Perfect Part (QI!)
 										i(176113),	-- RSVP: Mikanikos
@@ -2086,9 +2086,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(60948, {	-- RSVP: The Countess
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171106 },	-- The Countess
 									["coord"] = { 58.0, 27.4, REVENDRETH },
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["groups"] = {
 										o(354185, {	-- House Iremoore Formal Wear
 											["coord"] = { 56, 35.5, REVENDRETH },
@@ -2108,14 +2108,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["icon"] = 3750310,
 							["groups"] = {
 								q(61945, {	-- The Professionals
+									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, REVENDRETH },
-									-- ["sourceQuests"] = {  },	-- TODO
 								}),
 								q(62599, {	-- Gormsmith Cavina
-									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
 									-- TODO: first time obtaining this quest item, Exalted + Rank 5 Ember Court... not sure requirements if any
 									-- ["sourceQuests"] = {  },	-- TODO
+									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
 								}),
 								q(62616, {	-- Night Fae Arsenal
 									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
@@ -2185,7 +2185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								-- CRIEVE NOTE: There was a note on the Lager in Westfall.
 								-- That source was removed, it needed the removed tag on it.
 								-- https://www.wowhead.com/npc=172788/kegs
-								--["coord"] = { ,  },
+								-- ["coord"] = { ,  },
 								["groups"] = {
 									i(1262, {	-- Keg of Thunderbrew Lager
 										["timeline"] = { ADDED_9_0_1 },
@@ -2554,7 +2554,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 					q(61936),	-- Triggered after Restock: Surveillance
 					q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
 					q(61932),	-- Triggered after Restock: Unconventional Weapons
-					--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
+					-- q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 					q(61941),	-- Flagged at start and unflagged at end of Ember Court
 					q(61926),	-- Maybe Revendreth Etiquette?
 					-- q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day

@@ -65,7 +65,11 @@ root(ROOTS.Promotions, {
 	n(HEARTHSTONE_MERCENARIES_MODE, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_9_1_0 },
 		["groups"] = {
+			-- #if AFTER 11.2.5
+			i(258431),	-- Sarge's Tale (MOUNT!)
+			-- #else
 			mount(356488),	-- Sarge's Tale (MOUNT!)
+			-- #endif
 			ach(15323),	-- Sarge's Tale
 		},
 	})),

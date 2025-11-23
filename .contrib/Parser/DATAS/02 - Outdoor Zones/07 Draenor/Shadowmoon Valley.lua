@@ -109,14 +109,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 33116 },	-- To Catch a Shadow
 						["races"] = ALLIANCE_ONLY,
 					}),
-					ach(9564, {	-- Securing Draenor (Alliance)
-						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(26253),	-- Assault on Socrethar's Rise
-							crit(26254),	-- Assault on Darktide Roost
-						},
-					}),
 					ach(9602, {	-- Shoot For the Moon
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
@@ -1477,7 +1469,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(113553),	-- Windfang Sabre
 							q(35614, {	-- Artificer Romuul
-								--["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
+								-- ["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = { follower(179) },	-- Artificer Romuul
 							}),

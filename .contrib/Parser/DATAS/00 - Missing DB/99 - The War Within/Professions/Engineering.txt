@@ -7,12 +7,8 @@ r(1259778),	-- Replica Rumbling Wastes Drill Pod
 r(1260349),	-- Deactivated Atomic Recalibrator
 r(1260352),	-- Gnomish Tesla Mega-Coil
 r(1260425),	-- Mechagon Miniature Artificial Sun
-r(1261025),	-- Draenei Stargazer's Telescope
-r(1261027),	-- Frostwall Architect's Table
 r(1261236),	-- Halfhill Cookpot
 r(1261258),	-- Gilnean Problem Solver
-r(1261504),	-- Gnomish Steam-Powered Bed
-r(1261509),	-- Dark Iron Table Saw
 r(1262340),	-- Small Gilnean Windmill
 r(1263237),	-- Titanic Tyrhold Fountain \\ Titanic Tyrhold Foundain
 r(1263239),	-- Kyrian Anima Barrel
@@ -23,6 +19,10 @@ r(1263551),	-- Reconstructed Mogu Lightning Drill
 r(1263643),	-- Tempest Keep Cryo-Pod
 r(1263654),	-- Draenei Holo-Projector Pedestal
 r(1263663),	-- Draenei Transmitter
+11.2.7.64044
+r(1272676),	-- Joybuzz's Joyful Wall of Trains
+r(1272688),	-- Home Defense Gadget
+r(1272707),	-- Resizable All-Purpose Gear
 12.0.0.63534
 r(471007),	-- Midnight Engineering
 r(471043),	-- Recraft Equipment
@@ -109,7 +109,7 @@ r(1248610),	-- Ren'dorei Void Projector
 r(1248611),	-- Ren'dorei Lightpost
 r(1248612),	-- Ambient Aethercharged Crystal
 r(1248613),	-- Ren'dorei Stargazer
-r(1248614),	-- Ren'dorei Evercore Lamp
+r(1248614),	-- Small Telogrus Lamp \\ Ren'dorei Evercore Lamp
 r(1248615),	-- Ren'dorei Crafting Framework
 r(1248616),	-- Ren'dorei Warp Orb
 r(1261490),	-- Thalassian Competitor's Cloth Tip-Toes
@@ -122,13 +122,13 @@ r(1261895),	-- Laced Zoomshots
 r(1261913),	-- Weighted Boomshots
 r(1261938),	-- M0LL1, Atomic Anomaly
 r(1261945),	-- B0P, Curator of Booms
-r(1264523),	-- Super Sin'dorei Headlamp
-r(1264524),	-- Super Sin'dorei Gilded Hardhat
-r(1264525),	-- Super Junker's Big Ol' Bag
-r(1264526),	-- Super Sin'dorei Snippers
-r(1264527),	-- Super Sin'dorei Angler's Rod
-r(1264528),	-- Super Sin'dorei Clampers
-r(1264529),	-- Super Turbo-Junker's Multitool
+r(1264523),	-- Head-Mounted Beam Bummer \\ Super Sin'dorei Headlamp
+r(1264524),	-- Rock Bonkin' Hardhat \\ Super Sin'dorei Gilded Hardhat
+r(1264525),	-- Heavy-Duty Rock Assister \\ Super Junker's Big Ol' Bag
+r(1264526),	-- Self-Sharpening Sin'dorei Snippers \\ Super Sin'dorei Snippers
+r(1264527),	-- Sin'dorei Reeler's Rod \\ Super Sin'dorei Angler's Rod
+r(1264528),	-- Giga-Gem Grippers \\ Super Sin'dorei Clampers
+r(1264529),	-- Turbo-Junker's Multitool v9 \\ Super Turbo-Junker's Multitool
 r(1265603),	-- Multicraft
 r(1265617),	-- Knowledge
 r(1265654),	-- Quality
@@ -153,8 +153,6 @@ r(1259778),	-- Replica Rumbling Wastes Drill Pod
 r(1260349),	-- Deactivated Atomic Recalibrator
 r(1260352),	-- Gnomish Tesla Mega-Coil
 r(1260425),	-- Mechagon Miniature Artificial Sun
-r(1261025),	-- Draenei Stargazer's Telescope
-r(1261027),	-- Frostwall Architect's Table
 r(1261236),	-- Halfhill Cookpot
 r(1261258),	-- Gilnean Problem Solver
 r(1261504),	-- Gnomish Steam-Powered Bed
@@ -169,6 +167,10 @@ r(1263551),	-- Reconstructed Mogu Lightning Drill
 r(1263643),	-- Tempest Keep Cryo-Pod
 r(1263654),	-- Draenei Holo-Projector Pedestal
 r(1263663),	-- Draenei Transmitter
+11.2.7.64044
+r(1272676),	-- Joybuzz's Joyful Wall of Trains
+r(1272688),	-- Home Defense Gadget
+r(1272707),	-- Resizable All-Purpose Gear
 12.0.0.63534
 r(471007),	-- Midnight Engineering
 r(471043),	-- Recraft Equipment
@@ -255,7 +257,7 @@ r(1248610),	-- Ren'dorei Void Projector
 r(1248611),	-- Ren'dorei Lightpost
 r(1248612),	-- Ambient Aethercharged Crystal
 r(1248613),	-- Ren'dorei Stargazer
-r(1248614),	-- Ren'dorei Evercore Lamp
+r(1248614),	-- Small Telogrus Lamp \\ Ren'dorei Evercore Lamp
 r(1248615),	-- Ren'dorei Crafting Framework
 r(1248616),	-- Ren'dorei Warp Orb
 r(1261490),	-- Thalassian Competitor's Cloth Tip-Toes
@@ -268,13 +270,13 @@ r(1261895),	-- Laced Zoomshots
 r(1261913),	-- Weighted Boomshots
 r(1261938),	-- M0LL1, Atomic Anomaly
 r(1261945),	-- B0P, Curator of Booms
-r(1264523),	-- Super Sin'dorei Headlamp
-r(1264524),	-- Super Sin'dorei Gilded Hardhat
-r(1264525),	-- Super Junker's Big Ol' Bag
-r(1264526),	-- Super Sin'dorei Snippers
-r(1264527),	-- Super Sin'dorei Angler's Rod
-r(1264528),	-- Super Sin'dorei Clampers
-r(1264529),	-- Super Turbo-Junker's Multitool
+r(1264523),	-- Head-Mounted Beam Bummer \\ Super Sin'dorei Headlamp
+r(1264524),	-- Rock Bonkin' Hardhat \\ Super Sin'dorei Gilded Hardhat
+r(1264525),	-- Heavy-Duty Rock Assister \\ Super Junker's Big Ol' Bag
+r(1264526),	-- Self-Sharpening Sin'dorei Snippers \\ Super Sin'dorei Snippers
+r(1264527),	-- Sin'dorei Reeler's Rod \\ Super Sin'dorei Angler's Rod
+r(1264528),	-- Giga-Gem Grippers \\ Super Sin'dorei Clampers
+r(1264529),	-- Turbo-Junker's Multitool v9 \\ Super Turbo-Junker's Multitool
 r(1265603),	-- Multicraft
 r(1265617),	-- Knowledge
 r(1265654),	-- Quality

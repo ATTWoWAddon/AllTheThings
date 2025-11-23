@@ -944,7 +944,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["groups"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	-- Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
@@ -961,7 +961,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["groups"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	-- Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
@@ -1404,7 +1404,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				currency(TWW_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
+			-- i(),	-- Leatherworking Designs
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
@@ -1525,7 +1525,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				currency(TWW_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
-			--i(),	-- Leatherworking Designs
+			-- i(),	-- Leatherworking Designs
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
 				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace

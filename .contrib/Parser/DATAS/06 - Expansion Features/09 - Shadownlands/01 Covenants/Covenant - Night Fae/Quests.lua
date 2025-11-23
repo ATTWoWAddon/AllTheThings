@@ -156,11 +156,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(61984, {	-- Replenish the Reservoir
 				["sourceQuests"] = { 62899 },	-- The Endless Forest  [after switching Covenant]
+				-- ["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+				-- TODO Verify if requirements different for first Covenant vs. Switching Covenant?
 				["provider"] = { "n", 167196 },	-- Sesselie
 				["coord"] = { 50.5, 62.9, THE_ROOTS },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-				-- TODO Verify if requirements different for first Covenant vs. Switching Covenant?
 			}),
 			q(61331, {	-- Return Lost Souls (5 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -222,9 +222,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["repeatable"] = true,
 			}),
 			q(72113, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Shapes Beyond the Veil
+				-- ["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 174209 },	-- Lady Muunn
 				["coord"] = { 38.2, 24.4, THE_TRUNK },
-				-- ["sourceQuests"] = {  },	-- Unknown
 				["groups"] = {
 					i(200960),	-- Seed of Renewed Souls (TOY!)
 				},

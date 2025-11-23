@@ -107,8 +107,8 @@ is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
 is(0, 119467);						-- Battle Pet Training
---iq(86125, 31304);					-- Kafa Press
---iq(86529, 31432);					-- Manipulator's Talisman
+-- iq(86125, 31304);					-- Kafa Press
+-- iq(86529, 31432);					-- Manipulator's Talisman
 
 -----------------
 -- PATCH 5.2.0 --
@@ -182,7 +182,7 @@ iq(128665, 39615);					-- Ball of Tangled Lights
 iq(128666, 39616);					-- Imported Trees
 iq(128667, 39767);					-- Little Helpers
 iq(128669, 39712);					-- Old Box of Decorations
---iq(128668, 39671);				-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
+-- iq(128668, 39671);				-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
 
 -----------------
 -- PATCH 7.0.3 --
@@ -936,11 +936,14 @@ ihqt(235858, 87260);				-- Ethereal Tome of Leatherworking Knowledge
 ihqt(235857, 87259);				-- Ethereal Tome of Mining Knowledge
 ihqt(235856, 87258);				-- Ethereal Tome of Skinning Knowledge
 ihqt(235855, 87257);				-- Ethereal Tome of Tailoring Knowledge
---ihqt(246737, ???);					-- K'areshi Voidstone
+-- ihqt(246737, ???);					-- K'areshi Voidstone
 is(0, 1239155);						-- Path of the All-Devouring
 is(0, 1237215);						-- Path of the Eco-Dome
 
-
+------------------
+-- PATCH 11.2.5 --
+------------------
+ihqt(249242, 91961);				-- Bronze Celebration Titles: Khaz Algar Enthusiast
 
 ------------
 -- UNUSED --

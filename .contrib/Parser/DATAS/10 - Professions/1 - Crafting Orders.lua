@@ -36,10 +36,10 @@ root(ROOTS.Professions, {
 			n(PATRON_REWARDS, {
 				i(225670),	-- Apprentice's Crafting License
 				i(227713),	-- Artisan's Consortium Payout [Common]
-			--	These 3 dont load ingame
-			--	i(228610),	-- Artisan's Consortium Payout [Uncommon]
-			--	i(228611),	-- Artisan's Consortium Payout [Rare]
-			--	i(228612),	-- Artisan's Consortium Payout [Epic]
+				-- These 3 dont load ingame
+				-- i(228610),	-- Artisan's Consortium Payout [Uncommon]
+				-- i(228611),	-- Artisan's Consortium Payout [Rare]
+				-- i(228612),	-- Artisan's Consortium Payout [Epic]
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228724),	-- Flicker of Alchemy Knowledge
 				i(228726),	-- Flicker of Blacksmithing Knowledge

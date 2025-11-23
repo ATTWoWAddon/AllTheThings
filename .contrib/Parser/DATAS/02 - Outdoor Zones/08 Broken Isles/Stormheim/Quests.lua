@@ -876,7 +876,10 @@ root(ROOTS.Zones, {
 				q(46340, {	-- The Gates Are Closed
 					["sourceQuests"] = { 45525 },	-- Unanswered Questions
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 71.9, 51.1, STORMHEIM },
+					["coords"] = {
+						{ 65.0, 68.0, STORMHEIM },
+						{ 73.0, 51.0, 640 },	-- Vault of Eyir
+					},
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
@@ -1018,7 +1021,10 @@ root(ROOTS.Zones, {
 				q(45522, {	-- To Silence the Bonespeakers
 					["sourceQuests"] = { 45486 },	-- The Reluctant Queen
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 65.0, 68.0, STORMHEIM },
+					["coords"] = {
+						{ 65.0, 68.0, STORMHEIM },
+						{ 73.0, 51.0, 640 },	-- Vault of Eyir
+					},
 					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution

@@ -513,7 +513,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(157160, {	-- Houndlord Ren
 							["questID"] = 57345,
 							["coord"] = { 13.1, 25.5, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-							-- TODO:: determine patrol path
+							-- TODO:  determine patrol path
 							["groups"] = {
 								i(174841),	-- Ren's Stalwart Hound (MOUNT!)
 							},

@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					26529,	-- Meathook
 					26530,	-- Salramm the Fleshcrafter
 					26532,	-- Chrono-Lord Epoch
-					--32273,	-- Infinite Corruptor [??]
+					-- 32273,	-- Infinite Corruptor [??]
 					26533,	-- Mal'Ganis
 					-- The Nexus
 					26796,	-- Commander Kolurg (A)

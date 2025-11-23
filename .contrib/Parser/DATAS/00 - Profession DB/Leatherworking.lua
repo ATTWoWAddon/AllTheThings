@@ -2574,3 +2574,10 @@ i(0, 444085);		-- Deepfury Hide
 ------------------
 --- ITEM ---
 i(235338, 1216520); -- Charged Armor Kit
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+--- ITEM ---
+i(257033, 1261081); -- Pattern: Blackrock Bunkbed
+i(257058, 1261122); -- Pattern: Orcish Sleeping Cot

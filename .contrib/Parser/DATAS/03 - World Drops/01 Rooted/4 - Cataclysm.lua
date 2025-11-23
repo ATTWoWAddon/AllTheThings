@@ -791,17 +791,17 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 	}),
 	filter(REAGENTS, {
 		-- Table of Content:
-		--	Cloth + Silk
-		--	Elemetal reagents
-		--	Clams
-		--	Cooking reagents
-		--	Other reagents
-		--_________________________________
-		--
-		--	Cloth + Silk:
-		--_________________________________
-		--
-		--	Elemental reagents:
+		-- 	Cloth + Silk
+		-- 	Elemetal reagents
+		-- 	Clams
+		-- 	Cooking reagents
+		-- 	Other reagents
+		-- _________________________________
+		-- 
+		-- 	Cloth + Silk:
+		-- _________________________________
+		-- 
+		-- 	Elemental reagents:
 		i(52328, {	-- Volatile Air
 			["coords"] = {
 				{ 27.9, 39.9, MOUNT_HYJAL },	-- Lightning Ledge
@@ -931,13 +931,13 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				{ "i", 67539 },	-- Tiny Treasure Chest
 			},
 		}),
-		--_________________________________
-		--
-		--	Clams:
+		-- _________________________________
+		-- 
+		-- 	Clams:
 		i(52340, {	-- Abyssal Clam
 			["description"] = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
 			["maps"] = {
-				--THRONE_OF_THE_TIDES,
+				-- THRONE_OF_THE_TIDES,
 				VASHJIR_ABYSSAL_DEPTHS,
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
@@ -950,9 +950,9 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				i(52339),	-- Flawless Pearl
 			},
 		}),
-		--_________________________________
-		--
-		--	Cooking reagents:
+		-- _________________________________
+		-- 
+		-- 	Cooking reagents:
 		i(62783, {	-- Basilisk "Liver"
 			["coords"] = {
 				{ 41.8,	20.8, DEEPHOLM },	-- The Pale Roost
@@ -1067,8 +1067,8 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			["description"] = "Can drop from all Cataclysm red meat animals.",
 			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
 		}),
-		--__________________________________
-		--
+		-- __________________________________
+		-- 
 		-- Other reagents:
 		i(52078, {	-- Chaos Orb
 			["description"] = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",

@@ -1,3 +1,6 @@
+3.3.5.12340
+ach(4786),	-- Operation: Gnomeregan
+ach(4790),	-- Zalazane's Fall
 3.4.4.59853
 ach(42115),	-- 3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
 3.4.5.62072

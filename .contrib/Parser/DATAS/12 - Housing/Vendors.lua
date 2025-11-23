@@ -69,7 +69,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(251976),	-- Wolf Pelt Rug (DECOR!)
 		},
 	}),
-	n(255230, {	-- "Len" Splinthoof <Decor Vendor>
+	n(255228, {	-- "Len" Splinthoof <Decor Vendor>
 		["coord"] = { 62.5, 80.4, FOUNDERS_POINT },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
@@ -107,12 +107,19 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 		["groups"] = {
 			i(248631),	-- Azsharan Firespear Tree
 			i(248630),	-- Barrens Hosta Bush
+			i(266238),	-- Cragthorn Highlands Large Garden Cluster
 			i(260702),	-- Dry Razorwind Grass Patch
 			i(248633),	-- Flowering Durotar Cactus
+			i(266444),	-- Granite Cobblestone Long Path (DECOR!)
+			i(266443),	-- Granite Cobblestone Path (DECOR!)
+			i(266245),	-- Granite Cobblestone Path Arc (DECOR!)
+			i(266244),	-- Granite Cobblestone Path Corner (DECOR!)
 			i(248632),	-- Hardy Razorwind Grass Patch
 			i(248629),	-- Nagrand Blueberry Bush
 			i(248638),	-- Pink Razorwind Paintbrush
 			i(248634),	-- Razorwind Acacia Tree
+			i(266236),	-- Razorwind Blooms Large Garden Cluster
+			i(266235),	-- Razorwind Cactus Large Garden Cluster
 			i(248626),	-- Razorwind Fighting Cactus
 			i(248650),	-- Razorwind Flamebrush
 			i(248636),	-- Razorwind Gobtree
@@ -120,6 +127,8 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(248625),	-- Razorwind Succulent Palm
 			i(248627),	-- Razorwind Tumbleweed
 			i(260701),	-- Red Razorwind Paintbrush
+			i(266237),	-- Runetotem's Bounty Large Garden Cluster
+			i(266234),	-- Saltfang Shoals Large Garden Cluster
 			i(257359),	-- Slate Cobblestone Pair
 			i(257388),	-- Slate Cobblestone
 			i(257390),	-- Slate Cobblestone Path
@@ -144,7 +153,7 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(247502),	-- Elven Woodvine Trellis (DECOR!)
 			i(253495),	-- Grand Elven Bench (DECOR!)
 			i(257691),	-- Open Elegant Elven Barrel (DECOR!)
-			i(241625),	-- Open Elven Wood Crate (DECOR!)
+			-- i(241625),	-- Open Elven Wood Crate (DECOR!)
 			i(244118),	-- Rectangular Elegant Table (DECOR!)
 			i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
 		},
@@ -305,6 +314,52 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(245551),	-- Worker's Wooden Desk (DECOR!)
 		},
 	}),
+	n(252917, {	-- Hesta Forlath <Endeavor Trader>
+		["coords"] = {
+			{ 53.1, 38.3,   FOUNDERS_POINT },
+			{ 54.4, 56.0, RAZORWIND_SHORES },
+		},
+		["timeline"] = { ADDED_12_0_0 },
+		["races"] = ALLIANCE_ONLY,
+		["groups"] = {
+			i(253601, {	-- 590 Quel'Lithien Red (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+			}),
+			i(253523, {	-- Astalor's Hookah (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+			}),
+			i(253600, {	-- Eversong Crystal Glass (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+			}),
+			i(253522, {	-- Thalassian Chest (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+			}),
+			-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the endeavors as these items are locked behind them
+			-- Reach the first milestone of the endeavor
+			i(253524, {	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+			}),
+			i(254235, {	-- Sin'dori Artisan's Easel (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+			}),
+			-- Reach the second milestone of the endeavor
+			i(253525, {	-- Thalassion Academy Dictation Device (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+			}),
+			-- Reach the third milestone of the endeavor
+			i(253526, {	-- Sin'dorei Wine Display (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
+			}),
+			i(253599, {	-- Artisanal Display Tent (DECOR!)
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
+			}),
+			-- Reach the fourth milestone of the endeavor
+			-- Exo Note: This will probably have some HQT hidden behind it. Used to buy paintings in Silvermoon Bazaar but tooltip states "you don't need to keep the deed on you".
+			i(253802, {	-- Deed of Patronage
+				["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }},
+			}),
+		},
+	}),
 	n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 		["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
 		["races"] = ALLIANCE_ONLY,
@@ -317,11 +372,12 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(248648),	-- Autumn Leaf Pile (DECOR!)
+			i(266241),	-- Brumewood Hollow Large Garden Cluster (DECOR!)
 			i(245371),	-- Charming Laurel Tree (DECOR!)
 			i(245327),	-- Creeping Corner Ivy (DECOR!)
 			i(248642),	-- Creeping Lattice Ivy (DECOR!)
 			i(248640),	-- Duskberry Bush (DECOR!)
-			i(248642),	-- Duskwood Shadebrush (DECOR!)
+			i(248641),	-- Duskwood Shadebrush (DECOR!)
 			i(248643),	-- Duskwood Sycamore Shrub (DECOR!)
 			i(255644),	-- Elwynn Apple Tree (DECOR!)
 			i(258658),	-- Elwynn Autumn Apple Tree (DECOR!)
@@ -336,13 +392,21 @@ root(ROOTS.Housing, n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } 
 			i(255646),	-- Founder's Point Apple Tree (DECOR!)
 			i(258659),	-- Founder's Point Autumn Apple Tree (DECOR!)
 			i(248647),	-- Founder's Point Blooming Grass Patch (DECOR!)
+			i(266240),	-- Founder's Point Large Garden Cluster (DECOR!)
 			i(245369),	-- Gift of Gilneas (DECOR!)
+			i(266242),	-- Gilded Oaks Large Garden Cluster (DECOR!)
 			i(248639),	-- Gloomrose (DECOR!)
+			i(266444),	-- Granite Cobblestone Long Path (DECOR!)
+			i(266443),	-- Granite Cobblestone Path (DECOR!)
+			i(266245),	-- Granite Cobblestone Path Arc (DECOR!)
+			i(266244),	-- Granite Cobblestone Path Corner (DECOR!)
+			i(266239),	-- Outer Banks Large Garden Cluster (DECOR!)
 			i(248645),	-- Pink Gilnean Rose (DECOR!)
 			i(248646),	-- Silvermoon Sunrise Bush (DECOR!)
 			i(245328),	-- Small Boxwood Bush (DECOR!)
 			i(245329),	-- Small Poppy Cluster (DECOR!)
 			i(248644),	-- Spiritbloom Flower (DECOR!)
+			i(266243),	-- Stoneveil Ridge Large Garden Cluster (DECOR!)
 			i(248649),	-- Young Chestnut Tree (DECOR!)
 			i(248338),	-- Flat Boulder (DECOR!)
 			i(248339),	-- Hilltop Boulder (DECOR!)

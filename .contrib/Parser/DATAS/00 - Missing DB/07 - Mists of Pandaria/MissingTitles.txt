@@ -1,5 +1,3 @@
-5.5.0.60481
-title(209),	-- Brawler %s
 5.5.1.62856
 title(250),	-- Grievous Skirmisher %s
 title(255),	-- Mistwalker %s \\ Prideful Skirmisher %s
@@ -11,3 +9,9 @@ title(260),	-- Architect %s \\ Prideful Marauder %s
 title(980),	-- Skirmisher %s
 title(995),	-- Malevolent Skirmisher %s
 title(996),	-- Tyrannical Skirmisher %s
+5.5.3.64141
+title(736),	-- %s, the Mistborne
+title(737),	-- %s, Heir to the Mist
+5.5.3.64308
+title(738),	-- %s, the Thundering Stampede
+title(739),	-- %s, the Momentous Terror

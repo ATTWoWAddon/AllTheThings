@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2405, {	-- Tred'ova
-					["crs"] = { 164517 },	--	Tred'ova
+					["crs"] = { 164517 },	-- Tred'ova
 					["groups"] = {
 						ach(14371),	-- Mists of Tirna Scithe
 						-- Legendaries
@@ -97,7 +97,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2405, {	-- Tred'ova
-					["crs"] = { 164517 },	--	Tred'ova
+					["crs"] = { 164517 },	-- Tred'ova
 					["groups"] = {
 						ach(14412),	-- Heroic: Mists of Tirna Scithe
 					},
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2405, {	-- Tred'ova
-					["crs"] = { 164517 },	--	Tred'ova
+					["crs"] = { 164517 },	-- Tred'ova
 					["groups"] = {
 						ach(14413),	-- Mythic: Mists of Tirna Scithe
 						ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run

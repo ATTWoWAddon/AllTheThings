@@ -46,10 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(671),	-- Squad of Archers
 					follower(801),	-- Squad of Archers
 					follower(802),	-- Squad of Archers
@@ -70,7 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					follower(1024),	-- Nightborne Hunters
 					follower(1025),	-- Nightborne Hunters
 					follower(1026),	-- Nightborne Hunters
-				})),
+				}),
 				n(QUESTS, {
 					q(40384, {	-- Needs of the Hunters
 						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
@@ -138,7 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									["groups"] = {
 										i(128861, {	-- Titanstrike
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = { artifact(288) },	--  Titanstrike
+											["groups"] = { artifact(288) },	-- Titanstrike
 										}),
 									},
 								}),
@@ -316,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					q(40955, {	-- Oath of Service
 						["sourceQuests"] = { 40954 },	-- The Unseen Path
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 44.4, 26.4, TRUESHOT_LODGE },
+						["coord"] = { 43.5, 24.6, TRUESHOT_LODGE },
 					}),
 					q(41053, {	-- Altar of the Eternal Hunt
 						["sourceQuests"] = { 40955 },	-- Oath of Service
@@ -340,7 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							-- #ENDIF
 						},
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.6, 26.2, TRUESHOT_LODGE },
+						["coord"] = { 43.5, 24.6, TRUESHOT_LODGE },
 					}),
 					q(40959, {	-- The Campaign Begins
 						["sourceQuests"] = { 40958 },	-- Tactical Matters
@@ -383,6 +380,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(42525, {	-- Troops in the Field
+						["sourceQuests"] = { 42524 },	-- Recruiting The Troops
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
@@ -473,7 +471,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 					}),
 					q(42395, {	-- Signaling Trouble
-						["sourceQuests"] = { 42393 },	-- Homecoming
+						["sourceQuests"] = {
+							42410,	-- Champion: Rexxar
+							42393,	-- Homecoming
+						},
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
@@ -852,6 +853,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 110424 },	-- Image of Mimiron
 						["coord"] = { 44.4, 45.0, TRUESHOT_LODGE },
 						["groups"] = {
+							i(139386),	-- Essence of Pure Spirit (QI!)
+							i(139384),	-- Pristine Harpy Feather (QI!)
+							i(139385),	-- Reflective Scale (QI!)
+							i(139349),	-- Stormy Gland (QI!)
+							--
 							i(138393),	-- Essence Swapper
 						},
 					}),
@@ -1067,7 +1073,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 						},
 					}),
-					n(100661, {	--  Pan the Kind Hand <Stable Master>
+					n(100661, {	-- Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["groups"] = {

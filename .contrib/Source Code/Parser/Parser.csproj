@@ -136,6 +136,7 @@
     <Compile Include="Export\Object Data\MountData.cs" />
     <Compile Include="Export\Object Data\ObjectData.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FieldTypes\Providers.cs" />
     <Compile Include="FieldTypes\Coords.cs" />
     <Compile Include="FieldTypes\Cost.cs" />
     <Compile Include="FieldTypes\IExportableField.cs" />

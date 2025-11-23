@@ -27,7 +27,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		["sourceQuests"] = { 91969 },	-- Time to Decorate
 		["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
 	}),
-	q(94379, {	-- Thid Old Hearth
+	q(94379, {	-- This Old Hearth
 		["sourceQuests"] = { 94210 },	-- Feathering the Nest
 		["qgs"] = {
 			233063,	-- Lyssabel Dawnpetal [A]
@@ -37,9 +37,9 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			{ 53.1, 40.1,   FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
 			{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 		},
+		["groups"] = { i(266892) },	-- Neighbourhood Campsites (Unlocks 'Founders Point' and 'Razorwind Shores' Campsites. Could not see Campsite IDs even with them enabled in ATT Settings)
 	}),
 	q(93647, {	-- Lumber For You
-		["sourceQuests"] = { 91969 },	-- Time to Decorate
 		["qgs"] = {
 			255519,	-- Lestia Goldenstrike [A]
 			255520,	-- Xiz'ro [H]
@@ -51,8 +51,12 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 	}),
 	q(89450, {	-- Create a Neighborhood
 		["qgs"] = {
-			255519,	-- Lestia Goldenstrike [A]
-			255520,	-- Xiz'ro [H]
+			233063,	-- Lyssabel Dawnpetal [A]
+			233708,	-- Tocho Couldhide [H]
+		},
+		["coords"] = {
+			{ 53.1, 40.1,   FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
+			{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 		},
 		["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
 		["groups"] = { i(239098) },	-- Neighborhood Charter
@@ -67,8 +71,23 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		},
 		["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
 	}),
+	-- Repeatables
+	q(92608, {	-- Furniture Favor
+		["qg"] = 252717,	-- Corlen Hordralin
+		["coords"] = {
+			{ 53.9, 55.7, DORNOGAL },
+			{ 53.9, 55.7, RAZORWIND_SHORES },
+		},
+		["repeatable"] = true,
+		["groups"] = {
+			i(253316),	-- Scoped Max Falcon Stealth Dragon 90 (PQI!)
+			-- currency(COMMUNITY_COUPONS),	-- 3x Coupons
+		},
+	}),
+	-- Decor Treasure Hunts
 	-- It IS possible that some of these quests are Neutral but not yet datamined properly on WoWhead. In that case, create a Neutral Header and move respective quests there.
 	header(HEADERS.Quest, 92969, sharedData({	-- Decor Treasure Hunt [Alliance]
+		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 		["qg"] = 248854,	-- The Last Architect
 		["coord"] = { 52.7, 37.5, FOUNDERS_POINT },
 		["races"] = ALLIANCE_ONLY,
@@ -85,7 +104,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(245355) },	-- Sturdy Wooden Door (DECOR!)
 		}),
 		q(92963, {	-- Decor Treasure Hunt
-			["description"] = "Treasure can be found near the entrance to the Brumewood Hollow of the Founder's Point at 63.1, 46.7",
+			["description"] = "Treasure can be found near the entrance to the Brumewood Hollow of the Founders Point at 63.1, 46.7",
 			["coord"] = { 63.1, 46.7, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(245356) },	-- Goldshire Window (DECOR!)
 		}),
@@ -141,6 +160,8 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(245548) },	-- Iron-Reinforced Cupboard (DECOR!)
 		}),
 		q(92978, {	-- Decor Treasure Hunt
+			["description"] = "Treasure can be found between the dock and the stranded boat at the Brumewood Hollow of the Founders Point at 54.2, 73.6",
+			["coord"] = { 54.2, 73.6, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(243334) },	-- Reinforced Wooden Chest (DECOR!)
 		}),
 		q(92979, {	-- Decor Treasure Hunt
@@ -148,12 +169,12 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(245334) },	-- Wicker Basket (DECOR!)
 		}),
 		q(92980, {	-- Decor Treasure Hunt
-			["description"] = "Treasure can be found at The Outer Banks of the Founder's Point at 28.6, 46.8",
+			["description"] = "Treasure can be found at The Outer Banks of the Founders Point at 28.6, 46.8",
 			["coord"] = { 28.6, 46.8, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(245556) },	-- Iron-Reinforced Standing Mirror (DECOR!)
 		}),
 		q(92981, {	-- Decor Treasure Hunt
-			["description"] = "Treasure can be found just below the Watch Tower at The Outer Banks of the Founder's Point at 29.9, 48.2",
+			["description"] = "Treasure can be found just below the Watch Tower at The Outer Banks of the Founders Point at 29.9, 48.2",
 			["coord"] = { 29.9, 48.2, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(245547) },	-- Wide Charming Couch (DECOR!)
 		}),
@@ -169,15 +190,15 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(245336) },	-- Sturdy Wooden Bed (DECOR!)
 		}),
 		q(92985, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: Founder's Point isle has 2 main rivers. Go to the west one. The river ends in a big waterfall where it meets the sea. Check the waters bellow said waterfall. /way 37.1, 45.9
+			-- WoWhead Comment: Founders Point isle has 2 main rivers. Go to the west one. The river ends in a big waterfall where it meets the sea. Check the waters bellow said waterfall. /way 37.1, 45.9
 			["groups"] = { i(246106) },	-- Wooden Chamberstick (DECOR!)
 		}),
 		q(92986, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: Between plots #13 and #14 in Founder's Point 36.6, 54.2
+			-- WoWhead Comment: Between plots #13 and #14 in Founders Point 36.6, 54.2
 			["groups"] = { i(239075) },	-- Wrought Iron Chandelier (DECOR!)
 		}),
 		q(92987, {	-- Decor Treasure Hunt
-			["description"] = "Treasure can be found below a big tree in the Gilded Oaks of the Founder's Point at 36.6, 57.9",
+			["description"] = "Treasure can be found below a big tree in the Gilded Oaks of the Founders Point at 36.6, 57.9",
 			["coord"] = { 36.6, 57.9, FOUNDERS_POINT },	-- Treasure
 			["groups"] = { i(235677) },	-- Wrought Iron Floor Lamp (DECOR!)
 		}),
@@ -258,12 +279,12 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(253181) },	-- Gemmed Elven Chest (DECOR!)
 		}),
 		q(93008, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: Gazebo set on a pond in Founder's Point. The dirt pile is on the platform, not in the pond. /way 52, 29
+			-- WoWhead Comment: Gazebo set on a pond in Founders Point. The dirt pile is on the platform, not in the pond. /way 52, 29
 			["groups"] = { i(235994) },	-- Ornate Stonework Fireplace (DECOR!)
 		}),
 		q(93009, {	-- Decor Treasure Hunt
 			-- WoWhead Comment: Behind the big circular hay bale location 57.59
-			["groups"] = { i(246023) },	-- Bel'ameth Large Platform (DECOR!)
+			["groups"] = { i(246255) },	-- Bel'ameth Large Platform (DECOR!)
 		}),
 		q(93078, {	-- Decor Treasure Hunt
 			-- Exo Note: Somewhere in the area of 53.8, 24.0
@@ -275,6 +296,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		}),
 	}));
 	header(HEADERS.Quest, 93109, sharedData({	-- Decor Treasure Hunt [Horde]
+		-- qg is added to the mobileDB because, even with sharedData, it triggers contrib reports. Temp fix until it gets sorted?
 		["qg"] = 253596,	-- The Last Architect
 		["coord"] = { 53.7, 57.4, RAZORWIND_SHORES },
 		["races"] = HORDE_ONLY,
@@ -296,7 +318,8 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 			["groups"] = { i(244534) },	-- Iron-Reinforced Door (DECOR)
 		}),
 		q(93080, {	-- Decor Treasure Hunt
-			-- WoWhead Comment: Just northwest of Cragthrown Highlands flightpath. You will see sellers outlining a circular plot. The treasure is there under a tent.
+			["description"] = "Treasure can be found under the tent in the Sellers Market at the Cragthorn Highlands of the Razorwind Shores at 62.6, 51.7",
+			["coord"] = { 62.6, 51.7, RAZORWIND_SHORES },	-- Treasure
 			["groups"] = { i(245266) },	-- Iron-Studded Wooden Window (DECOR)
 		}),
 		q(93081, {	-- Decor Treasure Hunt
@@ -409,7 +432,7 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 		}),
 		q(93138, {	-- Decor Treasure Hunt
 			-- WoWhead Comment: The chest can be found in the SouthEast, 59.9, 76.1 at Razorwind Shores.
-			["groups"] = { i(246017) },	-- Silvermoon Large Platform (DECOR!)
+			["groups"] = { i(246250) },	-- Silvermoon Large Platform (DECOR!)
 		}),
 		q(93139, {	-- Decor Treasure Hunt
 			["groups"] = { i(246253) },	-- Silvermoon Round Platform (DECOR!)
@@ -449,13 +472,20 @@ root(ROOTS.Housing, n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 		n(HOUSING, {
-			q(92734),	-- Popped when entering Razorwind and Founder's Point
-			q(92486),	-- Popped when acquired a house
-			q(92733),	-- Popped when entering house
-			q(92666),	-- Popped when talking to local Decor
-			q(92654),	-- Popped when talking to elven decor
+			q(92486),	-- Triggered after acquired a house
+			q(92654),	-- Triggered after talking to Elven Decor vendor
+			q(92666),	-- Triggered after talking to Local Decor vendor
+			q(92733),	-- Triggered after entering house
+			q(92734),	-- Triggered after entering Razorwind and Founders Point
 			q(93629),	-- Triggered after completing 'Time to Decorate'
-			q(94392),	-- Popped when talking to flora decor
+			q(94392),	-- Triggered after talking to flora decor
+			q(94701),	-- Triggered after completing 'Home at Last' (94455)
+			-- q(94703),	-- Unflagged after talking to Local Decor vendor
+			q(94706),	-- Triggered after skipping tutorial
+			q(94707),	-- Triggered after completing 'This Old Hearth' (94379)
+			q(94709),	-- Triggered after entering house (tutorial?)
+			q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
+			-- q(94750),	-- Unflagged after talking to Elven Decor vendor
 		}),
 	}));
 });

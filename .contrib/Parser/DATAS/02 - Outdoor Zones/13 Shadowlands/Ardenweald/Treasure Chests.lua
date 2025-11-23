@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(179594),	-- Witherscorn Guise
 				i(180145),	-- Witherscorn Handaxe
 				i(180165),	-- Witherscorn Reaper
-			--	Objects
+				-- Objects
 				o(353306, {	-- Decayed Husk
 					["coord"] = { 54.4, 49.7, ARDENWEALD },
 					["questID"] = 60672,
@@ -192,8 +192,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o_repeated({	-- Faerie Stash
-			--	Rewards
-			--	Objects
+				-- Rewards
+				-- Objects
 				o(353329, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at |cFFFFFFFF32.7, 29.8|r to reach the treasure.",
 					["coord"] = { 32.7, 30.0, ARDENWEALD },
@@ -257,8 +257,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o_repeated({	-- Lunarlight Pod
-			--	Rewards
-			--	Objects
+				-- Rewards
+				-- Objects
 				o(353683, {	-- Lunarlight Pod
 					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 39.2, 54.4, ARDENWEALD },
@@ -407,7 +407,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(TREASURES, {
-				--	Treasures of Ardenweald achievement
+				-- Treasures of Ardenweald achievement
 				q(61126),	-- Cache of the Moon - turning in the Twinklestar Gardening Tools
 				q(61170),	-- Harmonic Chest - unlock trigger
 				--

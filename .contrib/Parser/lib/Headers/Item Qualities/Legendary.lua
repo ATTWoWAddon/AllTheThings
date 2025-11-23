@@ -11,7 +11,7 @@ LEGENDARIES = createHeader({
 	readable = "Legendaries",
 	constant = "LEGENDARIES",
 	-- #if NOT ANYCLASSIC
-	--export = true,	-- NOTE: Currently commented out in AllTheThings.lua
+	-- export = true,	-- NOTE: Currently commented out in AllTheThings.lua
 	-- #endif
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {

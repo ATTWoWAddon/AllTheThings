@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(72048, {	-- Rattleskew
-					--	no daily questID popped. may have a one-time questID?
+						-- no daily questID popped. may have a one-time questID?
 						["provider"] = { "n", 55421 },	-- Ghost Pirate Battle Controller (note: this is more for linking it to the vignette than anything)
 						["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
 						["groups"] = {

@@ -1254,14 +1254,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 	filter(REAGENTS, {
 		["groups"] = appendAllGroups(
 			-- Table of Content:
-			--	Cloth + Silk
-			--	Elemetal reagents
-			--	Clams
-			--	Cooking reagents
-			--	Other reagents
-			--_________________________________
-			--
-			--	Cloth + Silk:
+			-- 	Cloth + Silk
+			-- 	Elemetal reagents
+			-- 	Clams
+			-- 	Cooking reagents
+			-- 	Other reagents
+			-- _________________________________
+			-- 
+			-- 	Cloth + Silk:
 			{
 				i(33470, {
 					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
@@ -1285,9 +1285,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					["maps"] = { NAXXRAMAS },
 				}),
 			},
-			--_________________________________
-			--
-			--	Elemental reagents:
+			-- _________________________________
+			-- 
+			-- 	Elemental reagents:
 			sharedData({	-- Air
 				["coords"] = {
 					{ 75.0, 54.6, GRIZZLY_HILLS },	-- Dun Argol
@@ -1454,9 +1454,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				i(35622),	-- Eternal Water
 			}),
 			{
-			--_________________________________
-			--
-			--	Clams:
+			-- _________________________________
+			-- 
+			-- 	Clams:
 				i(44700, {	-- Brooding Darkwater Clam
 					["coords"] = {
 						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
@@ -1530,9 +1530,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 				-- i(45909),	-- Giant Darkwater Clam > Properly sourced in Crafted Items/Fishing.
-			--_________________________________
-			--
-			--	Cooking reagents:
+			-- _________________________________
+			-- 
+			-- 	Cooking reagents:
 				i(43013, {	-- Chilled Meat
 					["description"] = "Can drop from any Northrend beasts.",
 				}),
@@ -1656,8 +1656,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25454,	-- Tundra Crawler
 					},
 				}),
-			--__________________________________
-			--
+			-- __________________________________
+			-- 
 			-- Other reagents:
 				i(43102, {	-- Frozen Orb
 					["description"] = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",

@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(238039),	-- Chronomatic Fiber
 					i(238041),	-- Dexterous Fiber
 					i(238037),	-- Energizing Fiber
-					--i(248955),	-- Ethereal Seam Ripper (Looks like this was deleted from the game. You can remove (un-socket) the fibers from the Reshii Wraps manually)
+					-- i(248955),	-- Ethereal Seam Ripper (Looks like this was deleted from the game. You can remove (un-socket) the fibers from the Reshii Wraps manually)
 					i(238040),	-- Precise Fiber
 				},
 			}),

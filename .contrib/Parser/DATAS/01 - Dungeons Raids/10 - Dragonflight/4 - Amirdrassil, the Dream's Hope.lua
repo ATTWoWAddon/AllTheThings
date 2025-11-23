@@ -330,25 +330,25 @@ InstanceHelper.ExtraLoots = {
 				i(217326),	-- Venerated Decelerating Chronograph
 				i(217327),	-- Zenith Decelerating Chronograph
 			},
-			[SMOLDERON] = { -- Shoulder
+			[SMOLDERON] = {	-- Shoulder
 				i(217332),	-- Dreadful Synchronous Timestrand
 				i(217333),	-- Mystic Synchronous Timestrand
 				i(217334),	-- Venerated Synchronous Timestrand
 				i(217335),	-- Zenith Synchronous Timestrand
 			},
-			[NYMUE] = { -- Chest
+			[NYMUE] = {	-- Chest
 				i(217316),	-- Dreadful Fleeting Hourglass
 				i(217317),	-- Mystic Fleeting Hourglass
 				i(217318),	-- Venerated Fleeting Hourglass
 				i(217319),	-- Zenith Fleeting Hourglass
 			},
-			[IGIRA] = { -- Hands
+			[IGIRA] = {	-- Hands
 				i(217320),	-- Dreadful Quickened Bronzestone
 				i(217321),	-- Mystic Quickened Bronzestone
 				i(217322),	-- Venerated Quickened Bronzestone
 				i(217323),	-- Zenith Quickened Bronzestone
 			},
-			[LARODAR] = { -- Legs
+			[LARODAR] = {	-- Legs
 				i(217328),	-- Dreadful Ephemeral Hypersphere
 				i(217329),	-- Mystic Ephemeral Hypersphere
 				i(217330),	-- Venerated Ephemeral Hypersphere
@@ -603,7 +603,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 77192 },	-- An Axe Tempered
 						["provider"] = { "n", 208421 },	-- Wrathion
 						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						--["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						-- ["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						-- It seems this subzone is still in The Waking Shores (mapID 2022)
 						["groups"] = {
 							i(206448),	-- Fyr'alath the Dreamrender

@@ -46,8 +46,6 @@ local COMMONLOOT = {
 		-- No cloaks were made for Remix here
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247116),	-- Shawl of Blind Absolution
 		i(247098),	-- Drape of the Arcane Tempest
 		i(247134),	-- Diabolic Shroud
@@ -73,8 +71,6 @@ local COMMONLOOT = {
 		i(247597),	-- Strife-Riddled Cinch
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247117),	-- Gloves of Blind Absolution
 		i(247118),	-- Hood of Blind Absolution
 		i(247119),	-- Leggings of Blind Absolution
@@ -104,8 +100,6 @@ local COMMONLOOT = {
 		i(247616),	-- Waistguard of Profane Duplicity
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247122),	-- Fanged Slayer's Chestguard
 		i(247124),	-- Fanged Slayer's Handguards
 		i(247125),	-- Fanged Slayer's Helm
@@ -138,8 +132,6 @@ local COMMONLOOT = {
 		i(247609),	-- Waistguard of Interminable Unity
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247092),	-- Wildstalker Chestguard
 		i(247094),	-- Wildstalker Gauntlets
 		i(247095),	-- Wildstalker Helmet
@@ -162,8 +154,6 @@ local COMMONLOOT = {
 		i(247612),	-- Steadfast Purifier's Warboots
 
 		-- Set items
-		-- These might not drop and be Ensemble only
-		-- Remove when confirmed
 		i(247140),	-- Titanic Onslaught Breastplate
 		i(247142),	-- Titanic Onslaught Handguards
 		i(247143),	-- Titanic Onslaught Greathelm
@@ -327,6 +317,137 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}),
 					}),
 				}),
+				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+					filter(CLOAKS, {
+						-- Regular items
+						-- No cloaks were made for Remix here
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247116),	-- Shawl of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247098),	-- Drape of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247134),	-- Diabolic Shroud
+						i_RAID_GEAR_CONVERSION(247123),	-- Fanged Slayer's Shroud
+						i_RAID_GEAR_CONVERSION(247105),	-- Xuen's Cloak
+						i_RAID_GEAR_CONVERSION(247087),	-- Stormheart Drape
+						i_RAID_GEAR_CONVERSION(247081),	-- Demonbane Shroud
+						i_RAID_GEAR_CONVERSION(247093),	-- Wildstalker Cape
+						i_RAID_GEAR_CONVERSION(247129),	-- Drape of the Skybreaker
+						i_RAID_GEAR_CONVERSION(247141),	-- Titanic Onslaught Cloak
+						i_RAID_GEAR_CONVERSION(247111),	-- Radiant Lightbringer Cape
+						i_RAID_GEAR_CONVERSION(247075),	-- Gravewarden Cloak
+					}),
+					filter(CLOTH, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247617),	-- Acolyte's Abandoned Footwraps
+						i_RAID_GEAR_CONVERSION(247596),	-- Braided Torture Lash
+						i_RAID_GEAR_CONVERSION(247594),	-- Emberscatter Treads
+						i_RAID_GEAR_CONVERSION(247599),	-- Oathbreaker's Cuffs
+						i_RAID_GEAR_CONVERSION(247598),	-- Ravenous Devotee's Bracelets
+						i_RAID_GEAR_CONVERSION(247618),	-- Sash of the Unredeemed
+						i_RAID_GEAR_CONVERSION(247595),	-- Slippers of Enduring Vigilance
+						i_RAID_GEAR_CONVERSION(247597),	-- Strife-Riddled Cinch
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247117),	-- Gloves of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247118),	-- Hood of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247119),	-- Leggings of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247120),	-- Robes of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247121),	-- Mantle of Blind Absolution
+						i_RAID_GEAR_CONVERSION(247099),	-- Gloves of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247100),	-- Crown of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247101),	-- Leggings of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247102),	-- Robes of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247103),	-- Mantle of the Arcane Tempest
+						i_RAID_GEAR_CONVERSION(247135),	-- Diabolic Gloves
+						i_RAID_GEAR_CONVERSION(247136),	-- Diabolic Helm
+						i_RAID_GEAR_CONVERSION(247137),	-- Diabolic Leggings
+						i_RAID_GEAR_CONVERSION(247138),	-- Diabolic Robe
+						i_RAID_GEAR_CONVERSION(247139),	-- Diabolic Mantle
+					}),
+					filter(LEATHER, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247605),	-- Bracers of Rippling Darkness
+						i_RAID_GEAR_CONVERSION(247602),	-- Cinch of Sizzling Flesh
+						i_RAID_GEAR_CONVERSION(247620),	-- Cord of Pilfered Rosaries
+						i_RAID_GEAR_CONVERSION(247603),	-- Etched Bone Waistband
+						i_RAID_GEAR_CONVERSION(247601),	-- Felscape Pathfinders
+						i_RAID_GEAR_CONVERSION(247600),	-- Glacier Walkers
+						i_RAID_GEAR_CONVERSION(247604),	-- Sinew-Stitched Wristguards
+						i_RAID_GEAR_CONVERSION(247619),	-- Treads of Violent Intrusion
+						i_RAID_GEAR_CONVERSION(247616),	-- Waistguard of Profane Duplicity
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247122),	-- Fanged Slayer's Chestguard
+						i_RAID_GEAR_CONVERSION(247124),	-- Fanged Slayer's Handguards
+						i_RAID_GEAR_CONVERSION(247125),	-- Fanged Slayer's Helm
+						i_RAID_GEAR_CONVERSION(247126),	-- Fanged Slayer's Legguards
+						i_RAID_GEAR_CONVERSION(247127),	-- Fanged Slayer's Shoulderpads
+						i_RAID_GEAR_CONVERSION(247104),	-- Xuen's Tunic
+						i_RAID_GEAR_CONVERSION(247106),	-- Xuen's Gauntlets
+						i_RAID_GEAR_CONVERSION(247107),	-- Xuen's Helm
+						i_RAID_GEAR_CONVERSION(247108),	-- Xuen's Legguards
+						i_RAID_GEAR_CONVERSION(247109),	-- Xuen's Shoulderguards
+						i_RAID_GEAR_CONVERSION(247086),	-- Stormheart Tunic
+						i_RAID_GEAR_CONVERSION(247088),	-- Stormheart Gloves
+						i_RAID_GEAR_CONVERSION(247089),	-- Stormheart Headdress
+						i_RAID_GEAR_CONVERSION(247090),	-- Stormheart Legguards
+						i_RAID_GEAR_CONVERSION(247091),	-- Stormheart Mantle
+						i_RAID_GEAR_CONVERSION(247080),	-- Demonbane Harness
+						i_RAID_GEAR_CONVERSION(247082),	-- Demonbane Gauntlets
+						i_RAID_GEAR_CONVERSION(247083),	-- Demonbane Faceguard
+						i_RAID_GEAR_CONVERSION(247084),	-- Demonbane Leggings
+						i_RAID_GEAR_CONVERSION(247085),	-- Demonbane Shoulderpads
+					}),
+					filter(MAIL, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247608),	-- Belt of Screaming Slag
+						i_RAID_GEAR_CONVERSION(247606),	-- Insulated Finpads
+						i_RAID_GEAR_CONVERSION(247610),	-- Pain-Singed Armguards
+						i_RAID_GEAR_CONVERSION(247622),	-- Pristine Moon-Wrought Clasp
+						i_RAID_GEAR_CONVERSION(247607),	-- Star-Stalker Treads
+						i_RAID_GEAR_CONVERSION(247621),	-- Treads of Panicked Escape
+						i_RAID_GEAR_CONVERSION(247609),	-- Waistguard of Interminable Unity
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247092),	-- Wildstalker Chestguard
+						i_RAID_GEAR_CONVERSION(247094),	-- Wildstalker Gauntlets
+						i_RAID_GEAR_CONVERSION(247095),	-- Wildstalker Helmet
+						i_RAID_GEAR_CONVERSION(247096),	-- Wildstalker Leggings
+						i_RAID_GEAR_CONVERSION(247097),	-- Wildstalker Spaulders
+						i_RAID_GEAR_CONVERSION(247128),	-- Harness of the Skybreaker
+						i_RAID_GEAR_CONVERSION(247130),	-- Grips of the Skybreaker
+						i_RAID_GEAR_CONVERSION(247131),	-- Helmet of the Skybreaker
+						i_RAID_GEAR_CONVERSION(247132),	-- Legguards of the Skybreaker
+						i_RAID_GEAR_CONVERSION(247133),	-- Pauldrons of the Skybreaker
+					}),
+					filter(PLATE, {
+						-- Regular items
+						i_RAID_GEAR_CONVERSION(247615),	-- Bonemeal-Crusted Armplates
+						i_RAID_GEAR_CONVERSION(247624),	-- Girdle of the Crumbling Sanctum
+						i_RAID_GEAR_CONVERSION(247611),	-- Iron Ballast Sabatons
+						i_RAID_GEAR_CONVERSION(247613),	-- Shiversleet Waistguard
+						i_RAID_GEAR_CONVERSION(247614),	-- Soul-Render's Greatbelt
+						i_RAID_GEAR_CONVERSION(247623),	-- Spiked Terrorwake Greatboots
+						i_RAID_GEAR_CONVERSION(247612),	-- Steadfast Purifier's Warboots
+
+						-- Set items
+						i_RAID_GEAR_CONVERSION(247140),	-- Titanic Onslaught Breastplate
+						i_RAID_GEAR_CONVERSION(247142),	-- Titanic Onslaught Handguards
+						i_RAID_GEAR_CONVERSION(247143),	-- Titanic Onslaught Greathelm
+						i_RAID_GEAR_CONVERSION(247144),	-- Titanic Onslaught Greaves
+						i_RAID_GEAR_CONVERSION(247145),	-- Titanic Onslaught Pauldrons
+						i_RAID_GEAR_CONVERSION(247110),	-- Radiant Lightbringer Breastplate
+						i_RAID_GEAR_CONVERSION(247112),	-- Radiant Lightbringer Gauntlets
+						i_RAID_GEAR_CONVERSION(247113),	-- Radiant Lightbringer Crown
+						i_RAID_GEAR_CONVERSION(247114),	-- Radiant Lightbringer Greaves
+						i_RAID_GEAR_CONVERSION(247115),	-- Radiant Lightbringer Shoulderguards
+						i_RAID_GEAR_CONVERSION(247074),	-- Gravewarden Chestplate
+						i_RAID_GEAR_CONVERSION(247076),	-- Gravewarden Handguards
+						i_RAID_GEAR_CONVERSION(247077),	-- Gravewarden Visage
+						i_RAID_GEAR_CONVERSION(247078),	-- Gravewarden Legplates
+						i_RAID_GEAR_CONVERSION(247079),	-- Gravewarden Pauldrons
+					}),
+				})),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 					header(HEADERS.Achievement, 60866, {	-- The Gates of Hell
 						BossOnly(GOROTH),

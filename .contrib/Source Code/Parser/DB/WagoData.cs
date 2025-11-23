@@ -19,7 +19,7 @@ namespace ATT.DB
         /// <summary>
         /// All of the data stored in the database modules by Type.
         /// </summary>
-        private static readonly Dictionary<string, Type> AllDataTypes = new Dictionary<string, Type>();
+        private static readonly ConcurrentDictionary<string, Type> AllDataTypes = new ConcurrentDictionary<string, Type>();
 
         /// <summary>
         /// All of the supported locales mapped to proper locale keys.
@@ -1078,6 +1078,7 @@ namespace ATT.DB
         /// <typeparam name="T">The subtype.</typeparam>
         private static class Cache<T> where T : IDBType
         {
+            private static readonly object _lock = new object();
             public static readonly Type ParseType = typeof(T);
             public static readonly PropertyInfo[] AllProperties = ParseType.GetProperties();
             public static readonly Dictionary<string, PropertyInfo> AllPropertiesByName = new Dictionary<string, PropertyInfo>();
@@ -1085,32 +1086,38 @@ namespace ATT.DB
             public static readonly List<PropertyInfo> LocalizedProperties;
             static Cache()
             {
-                var exportableDataProperties = new Dictionary<string, PropertyInfo>();
-                var localizedProperties = new List<PropertyInfo>();
-                foreach (var property in AllProperties)
+                lock (_lock)
                 {
-                    AllPropertiesByName[property.Name] = property;
-                    var dataAttribute = property.GetCustomAttribute<ExportableDataAttribute>();
-                    if (dataAttribute != null)
-                    {
-                        exportableDataProperties[dataAttribute.Name ?? property.Name] = property;
-                    }
-                    if (property.GetCustomAttribute<LocalizeAttribute>() != null)
-                    {
-                        localizedProperties.Add(property);
-                    }
-                }
-                if (exportableDataProperties.Count > 0)
-                {
-                    ExportableDataProperties = exportableDataProperties;
-                }
-                if (localizedProperties.Count > 0)
-                {
-                    LocalizedProperties = localizedProperties;
-                }
+                    if (AllDataTypes.ContainsKey(ParseType.Name))
+                        return;
 
-                // Expose the data module to the WagoData class.
-                AllDataTypes[ParseType.Name] = typeof(Cache<T>);
+                    var exportableDataProperties = new Dictionary<string, PropertyInfo>();
+                    var localizedProperties = new List<PropertyInfo>();
+                    foreach (var property in AllProperties)
+                    {
+                        AllPropertiesByName[property.Name] = property;
+                        var dataAttribute = property.GetCustomAttribute<ExportableDataAttribute>();
+                        if (dataAttribute != null)
+                        {
+                            exportableDataProperties[dataAttribute.Name ?? property.Name] = property;
+                        }
+                        if (property.GetCustomAttribute<LocalizeAttribute>() != null)
+                        {
+                            localizedProperties.Add(property);
+                        }
+                    }
+                    if (exportableDataProperties.Count > 0)
+                    {
+                        ExportableDataProperties = exportableDataProperties;
+                    }
+                    if (localizedProperties.Count > 0)
+                    {
+                        LocalizedProperties = localizedProperties;
+                    }
+
+                    // Expose the data module to the WagoData class.
+                    AllDataTypes[ParseType.Name] = typeof(Cache<T>);
+                }
             }
             #region Data Caching + Loading
             /// <summary>

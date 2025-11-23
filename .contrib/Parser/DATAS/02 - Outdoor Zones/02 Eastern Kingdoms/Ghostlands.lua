@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3501),	-- Bleeding Ziggurat
 				exploration(3495),	-- Dawnstar Spire
 				exploration(3500),	-- Deatholme
-				--exploration(3856),	-- Elrendar Crossing (Wrath Classic: Can't be collected)
+				-- exploration(3856),	-- Elrendar Crossing (Wrath Classic: Can't be collected)
 				exploration(3515),	-- Elrendar River
 				exploration(3496),	-- Farstrider Enclave
 				exploration(3490),	-- Goldenmist Village
@@ -683,7 +683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					-- #else
 					["qg"] = 16289,	-- Advisor Valwyn
-					--["sourceQuest"] = ,	-- TODO: Figure out if there was a source quest prior.
+					-- ["sourceQuest"] = ,	-- TODO: Figure out if there was a source quest prior.
 					["coord"] = { 44.8, 32.8, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
 					-- #else
 					["qg"] = 16251,	-- Deathstalker Maltendis
-					--["sourceQuest"] = ,	-- TODO: Not sure if there was one before, check this in TBC
+					-- ["sourceQuest"] = ,	-- TODO: Not sure if there was one before, check this in TBC
 					["coord"] = { 44.8, 32.4, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,

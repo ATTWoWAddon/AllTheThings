@@ -2287,7 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(HUNTER, {
 							i(73000),	-- Beastsoul Rifle
-							--i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
+							-- i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72913),	-- Beastsoul Helm
 							i(72915),	-- Beastsoul Spaulders
 							i(73146),	-- Beastsoul Choker
@@ -2446,7 +2446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(ROGUE, {
 							i(72995),	-- Shadowstalking Dagger
-							--i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
+							-- i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72997),	-- Shadowstalking Sword
 							i(72667),	-- Shadowstalking Hood
 							i(72669),	-- Shadowstalking Shoulders

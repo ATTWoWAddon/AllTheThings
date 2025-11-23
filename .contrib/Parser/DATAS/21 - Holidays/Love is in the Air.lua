@@ -3109,7 +3109,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 for i,o in ipairs({
 	applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
 		-- #if AFTER 4.0.3
-		--["questID"] = 25485,	-- NOTE: This is what it should be, but it's not checking off correctly.
+		-- ["questID"] = 25485,	-- NOTE: This is what it should be, but it's not checking off correctly.
 		-- #else
 		["questID"] = 14488,	-- You've Been Served
 		["isDaily"] = true,

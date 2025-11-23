@@ -4999,7 +4999,7 @@ exploration(15968),	-- Eversong Woods
 exploration(15969),	-- Silvermoon City
 exploration(15970),	-- Grief Spire
 exploration(15971),	-- Hate Spire
-exploration(15973),	-- Pit of Spite
+exploration(15973),	-- Voidscar Arena \\ Pit of Spite
 exploration(15974),	-- Path of Predation
 exploration(15975),	-- The Bloodplains
 exploration(15976),	-- Stareater Pavilion
@@ -5018,8 +5018,8 @@ exploration(16042),	-- 13doodadtest
 exploration(16043),	-- Windrunner Village
 exploration(16044),	-- Elrendar River
 exploration(16045),	-- Runestone Shan'dor
-exploration(16046),	-- Suncrown
-exploration(16047),	-- Suncrown Tree
+exploration(16046),	-- Suncrown Village \\ Suncrown
+exploration(16047),	-- Thas'minellia \\ Suncrown Tree
 exploration(16048),	-- Dawnstar Spire
 exploration(16049),	-- Lightbloom Lash'Ra
 exploration(16050),	-- Farstrider Enclave
@@ -5283,3 +5283,19 @@ exploration(16814),	-- Magister's Terrace
 exploration(16815),	-- Greengill Coast
 exploration(16816),	-- Silver Landing
 exploration(16817),	-- Western Sungrove
+12.0.0.64124
+exploration(16825),	-- Devouring Stronghold
+exploration(16826),	-- Behemoth's Rise \\ Behemoth's Rsie
+exploration(16827),	-- The Riftlabs
+exploration(16828),	-- Crown of the Cosmos
+exploration(16829),	-- [PH] Battlefield
+12.0.0.64228
+exploration(16838),	-- Atal'Utek (copy)
+exploration(16841),	-- Tomb of Mun'jin
+exploration(16844),	-- Dusk's Repose
+12.0.0.64339
+exploration(16850),	-- Retribution Hold
+exploration(16851),	-- Mettle's Hold
+12.0.0.64499
+exploration(16855),	-- Voidscar Arena
+exploration(16860),	-- The Great Sea

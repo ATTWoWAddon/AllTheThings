@@ -217,34 +217,8 @@ root(ROOTS.ExpansionFeatures,
 				ach(9098, {	-- Movin' On Up (Lvl 3)
 					ach(9099),		-- Time for an Upgrade (Lvl 2)
 				}),
-				a(ach(9564, {	-- Securing Draenor [A]
-					crit(26244),		-- Assault on the Iron Siegeworks
-					crit(26245),		-- Assault on Stonefury Cliffs
-					crit(26247),		-- Assault on Magnarok
-					crit(26248),		-- Assault on the Pit
-					crit(26249),		-- Assault on the Everbloom Wilds
-					crit(26250),		-- Assault on the Broken Precipice
-					crit(26252),		-- Assault on Mok'gol Watchpost
-					crit(26253),		-- Assault on Socrethar's Rise
-					crit(26254),		-- Assault on Darktide Roost
-					crit(26255),		-- Assault on Skettis
-					crit(26256),		-- Assault on Pillars of Fate
-					crit(26258),		-- Assault on Shattrath Harbor
-				})),
-				h(ach(9562, {	-- Securing Draenor [H]
-					crit(26225),		-- Assault on the Iron Siegeworks
-					crit(26226),		-- Assault on Stonefury Cliffs
-					crit(26228),		-- Assault on Magnarok
-					crit(26229),		-- Assault on the Pit
-					crit(26232),		-- Assault on the Everbloom Wilds
-					crit(26233),		-- Assault on the Broken Precipice
-					crit(26242),		-- Assault on Shattrath Harbor
-					crit(26237),		-- Assault on Mok'gol Watchpost
-					crit(26238),		-- Assault on Socrethar's Rise
-					crit(26239),		-- Assault on Darktide Roost
-					crit(26240),		-- Assault on Pillars of Fate
-					crit(26243),		-- Assault on Skettis
-				})),
+				a(ach(9564)),	-- Securing Draenor [A] (automated)
+				h(ach(9562)),	-- Securing Draenor [H] (automated)
 				ach(8933),		-- Staying Regular
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,

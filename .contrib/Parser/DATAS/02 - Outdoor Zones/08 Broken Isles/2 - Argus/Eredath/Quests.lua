@@ -114,9 +114,42 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 124070 },	-- Vigilant Quoram
 						["coord"] = { 59.8, 50.5, EREDATH },
 						["groups"] = {
-							i(151126),	-- Fragment of Acuity (QI!)
-							i(151128),	-- Fragment of Guile (QI!)
-							i(151127),	-- Fragment of Wit (QI!)
+							o_repeated({	-- Cache of Acuity
+								["coords"] = {
+									{ 60.9, 44.2, EREDATH },
+									{ 61.9, 42.9, EREDATH },
+									{ 63.7, 44.8, EREDATH },
+								},
+								["groups"] = {
+									i(151126),	-- Fragment of Acuity (QI!)
+									o(276395),	-- Cache of Acuity
+									o(271668),	-- Cache of Acuity
+								},
+							}),
+							o_repeated({	-- Cache of Guile
+								["coords"] = {
+									{ 60.9, 44.2, EREDATH },
+									{ 61.9, 42.9, EREDATH },
+									{ 63.7, 44.8, EREDATH },
+								},
+								["groups"] = {
+									i(151128),	-- Fragment of Guile (QI!)
+									o(276397),	-- Cache of Guile
+									o(271670),	-- Cache of Guile
+								},
+							}),
+							o_repeated({	-- Cache of Wit
+								["coords"] = {
+									{ 60.9, 44.2, EREDATH },
+									{ 61.9, 42.9, EREDATH },
+									{ 63.7, 44.8, EREDATH },
+								},
+								["groups"] = {
+									i(151127),	-- Fragment of Wit (QI!)
+									o(276396),	-- Cache of Wit
+									o(271669),	-- Cache of Wit
+								},
+							}),
 						},
 					}),
 					q(47687, {	-- Gatekeeper's Challenge: Mastery
@@ -144,6 +177,10 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(152407),	-- Argunite Keystone (QI!)
 						},
+					}),
+					q(48668, {	-- Lightforged Beacon: City Center
+						["qg"] = 127083,	-- Artificer Andaara
+						["coord"] = { 46.9, 55.5, EREDATH },
 					}),
 					q(48635, {	-- More Void Inoculation
 						["sourceQuest"] = 48911,	-- Void Inoculation
@@ -192,7 +229,10 @@ root(ROOTS.Zones, {
 							48654,	-- Beneath Oronaar
 						},
 						["provider"] = { "n", 121230 },	-- Alleria Windrunner
-						["coord"] = { 39.6, 26.1, THE_VINDICAAR_KROKUUN_UPPER },
+						["coords"] = {
+							{ 39.6, 26.1, THE_VINDICAAR_KROKUUN_UPPER },
+							{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
+						},
 					}),
 					q(47217, {	-- Sources of Darkness
 						["sourceQuests"] = { 47203 },	-- Throwing Shade
@@ -217,7 +257,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 124070 },	-- Vigilant Quoram
 						["coord"] = { 59.8, 50.5, EREDATH },
 						["groups"] = {
-							i(151476),	-- Sigil of Awakening (QI!)
+							o(271979, {	-- Sigil of Awakening
+								["coord"] = { 68.2, 33.5, EREDATH },
+								["groups"] = { i(151476) },	-- Sigil of Awakening (QI!)
+							}),
 						},
 					}),
 					q(47883, {	-- The Longest Vigil

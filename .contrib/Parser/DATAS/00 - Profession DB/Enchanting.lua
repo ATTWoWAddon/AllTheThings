@@ -1084,18 +1084,18 @@ i(177964, 0);		-- Enchant Weapon - Force Multiplier
 -- PATCH 9.0.1 --
 -----------------
 --- NYI ---
-i(0, 309628);		--	9.0 Enchanting - Modified Crafting Reagent 01
-i(0, 309629);		--	9.0 Enchanting - Modified Crafting Reagent 02
-i(0, 309630);		--	9.0 Enchanting - Modified Crafting Reagent 03
-i(0, 309631);		--	9.0 Enchanting - Modified Crafting Reagent 04
-i(0, 309632);		--	9.0 Enchanting - Modified Crafting Reagent 05
-i(0, 309633);		--	9.0 Enchanting - Modified Crafting Reagent 06
-i(0, 309634);		--	9.0 Enchanting - Modified Crafting Reagent 07
-i(0, 309635);		--	9.0 Enchanting - Modified Crafting Reagent 08
-i(0, 343682);		--	Crafter's Mark III
-i(0, 343681);		--	Crafter's Mark IV
-i(182666, 0);		--	Enchanted Elethium Bar
-i(183866, 0);		--	Crafter's Mark III
+i(0, 309628);		-- 9.0 Enchanting - Modified Crafting Reagent 01
+i(0, 309629);		-- 9.0 Enchanting - Modified Crafting Reagent 02
+i(0, 309630);		-- 9.0 Enchanting - Modified Crafting Reagent 03
+i(0, 309631);		-- 9.0 Enchanting - Modified Crafting Reagent 04
+i(0, 309632);		-- 9.0 Enchanting - Modified Crafting Reagent 05
+i(0, 309633);		-- 9.0 Enchanting - Modified Crafting Reagent 06
+i(0, 309634);		-- 9.0 Enchanting - Modified Crafting Reagent 07
+i(0, 309635);		-- 9.0 Enchanting - Modified Crafting Reagent 08
+i(0, 343682);		-- Crafter's Mark III
+i(0, 343681);		-- Crafter's Mark IV
+i(182666, 0);		-- Enchanted Elethium Bar
+i(183866, 0);		-- Crafter's Mark III
 
 -----------------
 -- PATCH 9.0.2 --

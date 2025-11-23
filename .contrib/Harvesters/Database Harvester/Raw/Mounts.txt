@@ -353,6 +353,9 @@
 1250045@@@Obsidian Worldbreaker Utility (Final Name TBD)
 3.4.5.63309
 1249659@@@Sha-scarred Drake
+3.80.0.64393
+1250045@@@Ashened Cataclysm
+1272988@@@Inarius' Charger
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -2328,6 +2331,10 @@
 1233925@@@Lana'thel's Crimson Cascade
 11.2.5.63906
 1256677@@@Cobalt Phase-Hunter
+11.2.5.64484
+1255159@@@Mechanical Prototype Panther MK-0
+1255179@@@Steel Prototype Panther MK-0
+1255246@@@Starspark Netherdrake
 11.2.7.63642
 1233516@@@K'arroc Swiftwing
 1244247@@@Thunder-Ridged Elekk
@@ -2412,3 +2419,29 @@
 1270522@@@Huffy Comfy Flying Quilt
 1270523@@@Stuffy Comfy Flying Quilt
 1270675@@@Vivid Chloroceros
+12.0.0.64124
+1261302@@@Cobalt Dragonhawk
+1261323@@@Cerulean Hawkstrider
+1261334@@@Contained Stormarion Defender
+12.0.0.64228
+1243597@@@Rootstalker Grimlynx
+1253927@@@Vibrant Petalwing
+1261155@@@Augmented Stormray
+1261316@@@Amani Sharptalon
+1261348@@@[DNT] 12.0 Amani Pangolin
+1261349@@@Giganto Manis
+1261351@@@Witherbark Pango
+1261360@@@[DNT] 12.0 Shadowpine Bear
+1261576@@@[DNT] 12.0 Hex Eagle Mount
+1266700@@@Sanguine Harrower
+1276650@@@Anu'shalla, Shadow's Guidance
+12.0.0.64339
+1261391@@@Relinquished Scarlet Charger
+1261584@@@Prowling Shredclaw
+1261585@@@Frenzied Shredclaw
+1265784@@@Lucent Hawkstrider
+12.0.0.64499
+1261338@@@Preyseeker's Nightmare
+1261348@@@Blessed Amani Burrower
+1261360@@@Ancestral War Bear
+1261576@@@Hexed Vilefeather Eagle

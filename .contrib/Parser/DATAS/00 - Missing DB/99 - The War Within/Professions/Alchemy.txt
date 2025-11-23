@@ -1,4 +1,6 @@
 11.2.7.63642
+r(1262152),	-- Starry Scrying Pool
+r(1262154),	-- Arcan'dor Cutting Fountain
 r(1269226),	-- Blue Dye Pigment
 r(1269227),	-- White Dye Pigment
 r(1269228),	-- Black Dye Pigment
@@ -9,6 +11,10 @@ r(1269232),	-- Teal Dye Pigment
 r(1269233),	-- Orange Dye Pigment
 r(1269234),	-- Yellow Dye Pigment
 r(1269235),	-- Brown Dye Pigment
+11.2.7.64044
+r(1272712),	-- Glazed Sin'dorei Vial
+r(1272715),	-- Stranglekelp Sack
+r(1272723),	-- Shadow Council Torch
 12.0.0.63534
 r(471003),	-- Midnight Alchemy
 r(471040),	-- Recraft Equipment
@@ -59,8 +65,8 @@ r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1233132),	-- Entropic Illuminant
 r(1233133),	-- Rootbound Vat
 r(1233135),	-- Sunsmoke Censer
-r(1233136),	-- Void Elf KnickKnack
-r(1233137),	-- Haranir Reagent Bowl
+r(1233136),	-- Riftstone \\ Void Elf KnickKnack
+r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
 r(1233138),	-- Silvermoon Spire Fountain
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1265599),	-- Multicraft
@@ -72,6 +78,9 @@ r(1265675),	-- Concentration
 r(1265692),	-- Resourcefulness
 r(1265701),	-- Ingenuity
 r(1265732),	-- Skill
+12.0.0.64124
+r(1273064),	-- Arakkoan Alchemist's Bottle
+r(1273070),	-- Arakkoan Alchemist's Concoction
 
 
 
@@ -79,6 +88,7 @@ r(1265732),	-- Skill
 Missing in Alchemy
 
 11.2.7.63642
+r(1263548),	-- Pandaren Alchemist's Kit
 r(1269226),	-- Blue Dye Pigment
 r(1269227),	-- White Dye Pigment
 r(1269228),	-- Black Dye Pigment
@@ -89,6 +99,10 @@ r(1269232),	-- Teal Dye Pigment
 r(1269233),	-- Orange Dye Pigment
 r(1269234),	-- Yellow Dye Pigment
 r(1269235),	-- Brown Dye Pigment
+11.2.7.64044
+r(1272712),	-- Glazed Sin'dorei Vial
+r(1272715),	-- Stranglekelp Sack
+r(1272723),	-- Shadow Council Torch
 12.0.0.63534
 r(471003),	-- Midnight Alchemy
 r(471040),	-- Recraft Equipment
@@ -139,8 +153,8 @@ r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1233132),	-- Entropic Illuminant
 r(1233133),	-- Rootbound Vat
 r(1233135),	-- Sunsmoke Censer
-r(1233136),	-- Void Elf KnickKnack
-r(1233137),	-- Haranir Reagent Bowl
+r(1233136),	-- Riftstone \\ Void Elf KnickKnack
+r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
 r(1233138),	-- Silvermoon Spire Fountain
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1265599),	-- Multicraft
@@ -152,3 +166,6 @@ r(1265675),	-- Concentration
 r(1265692),	-- Resourcefulness
 r(1265701),	-- Ingenuity
 r(1265732),	-- Skill
+12.0.0.64124
+r(1273064),	-- Arakkoan Alchemist's Bottle
+r(1273070),	-- Arakkoan Alchemist's Concoction

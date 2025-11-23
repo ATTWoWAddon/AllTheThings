@@ -1139,14 +1139,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 	filter(REAGENTS, {
 		["groups"] = appendAllGroups(
 			-- Table of Content:
-			--	Cloth + Silk
-			--	Elemetal reagents
-			--	Clams
-			--	Cooking reagents
-			--	Other reagents
-			--_______________________________
-			--
-			--	Cloth + Silk:
+			-- 	Cloth + Silk
+			-- 	Elemetal reagents
+			-- 	Clams
+			-- 	Cooking reagents
+			-- 	Other reagents
+			-- _______________________________
+			
+			-- 	Cloth + Silk:
 			{
 				i(21877, {	-- Netherweave Cloth
 					["description"] = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
@@ -1173,9 +1173,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					-- #endif
 				}),
 			},
-			--_________________________________
-			--
-			--	Elemental reagents:
+			-- _________________________________
+			-- 
+			-- 	Elemental reagents:
 			sharedData({	-- Air
 				["coords"] = {
 					{ 70.4, 21.2, NAGRAND },	-- Elemental Plateu, airy
@@ -1373,9 +1373,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				i(21885),	-- Primal Water
 			}),
 			{
-			--_________________________________
-			--
-			--	Clams:
+			-- _________________________________
+			-- 
+			-- 	Clams:
 				i(24476, {	-- Jaggal Clam
 					["coords"] = {
 						{ 46.2, 29.1, SHADOWMOON_VALLEY },	-- Coilskar Point
@@ -1389,9 +1389,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						i(24479, {["timeline"] = { ADDED_2_1_0 }}),	-- Shadow Pearl
 					},
 				}),
-			--_________________________________
-			--
-			--	Cooking reagents:
+			-- _________________________________
+			-- 
+			-- 	Cooking reagents:
 				i(27671, {	-- Buzzard Meat
 					["coords"] = {
 						{ 61.6, 67.7, HELLFIRE_PENINSULA },	-- Valley of Bones
@@ -1526,9 +1526,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						18464,	-- Warp Stalker
 					},
 				}),
-			--_________________________________
-			--
-			--	Other reagents:
+			-- _________________________________
+			-- 
+			-- 	Other reagents:
 				i(32428, {	-- Heart of Darkness
 					["description"] = "Can drop from most creatures within the given raids.",
 					["maps"] = {

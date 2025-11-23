@@ -4963,6 +4963,7 @@ s(170880,36502,{f=24,lvl=68,q=2,u=30}),
 s(170884,36506,{f=24,lvl=72,q=2,u=30})}}),
 flt(29,{u=30,g={
 s(170987,36609,{f=29,lvl=77,q=2,u=30}),
+s(170981,36603,{awp=40001,f=29,lvl=71,q=2,u=1}),
 s(171679,37813,{f=29,lvl=75,q=3,u=30}),
 s(170989,36611,{f=29,lvl=79,q=2,u=30}),
 s(170985,36607,{f=29,lvl=75,q=2,u=30}),
@@ -4979,7 +4980,6 @@ s(170983,36605,{f=29,lvl=73,q=2,u=30})}}),
 flt(28,{u=30,g={
 s(170934,36556,{f=28,lvl=80,q=2,u=30}),
 s(171075,36697,{f=28,lvl=67,q=2,u=30}),
-s(170981,36603,{awp=40001,f=29,lvl=71,q=2,u=1}),
 s(171088,36710,{f=28,lvl=80,q=2,u=30}),
 s(171670,37804,{f=28,lvl=76,q=3,u=30}),
 s(170923,36545,{f=28,lvl=69,q=2,u=30}),
@@ -5683,7 +5683,6 @@ i(36784,{q=3,u=30}),
 i(36782,{q=1,u=30})}}),
 i(43013,{description="Can drop from any Northrend beasts.",q=1,u=30}),
 i(34736,{coords={{55.6,31.9,114},{82.2,31.3,114},{65.5,38.1,115},{52,42.3,119},{34.7,84.9,120},{58,62,120},{64.5,45.25,120}},crs={24613,24614,25452,25743,26271,26272,26273,28379,28380,28381,29402,30260,30448},q=1,u=30}),
-i(47556,{awp=30200,description="Is a common drop from Trial of the Crusader bosses.",q=3,u=30}),
 i(37700,{coords={{44.9,8.6,114},{73,31.8,114},{75,54.6,116},{27.6,33.4,119},{28.5,47.3,120},{67,44.9,120},{73.9,58.6,121},{51.1,77.3,123}},crs={24601,24879,25415,26407,28784,28858,29624,30184,30848,30875},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
 i(37701,{coords={{64.2,23.3,116},{70,59.2,120},{15.5,77.6,121},{58.5,45.6,121},{56.6,41.7,123}},crs={26284,28597,29436,30160,30849,30876},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979},{"o",189981},{"o",189980}},q=1,u=30}),
 i(37702,{coords={{48.7,14.4,114},{62.5,41.5,120},{75.5,63.2,120},{84,71.5,123}},crs={25417,30387,30450,30847,30873,32522,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
@@ -5705,7 +5704,6 @@ i(43102,{description="Has a chance to drop from the last boss of any Heroic WotL
 i(42253,{coords={{40.4,78,120},{37,56.2,121},{47.6,83.1,121}},crs={15974,15975,15976,28221,28342,29411,29412,29461},maps={162},q=1,u=30}),
 i(43501,{coords={{59,26.3,114},{82.9,36.4,114},{37.9,60.6,116},{58.3,28.1,119},{17.1,58.5,121}},crs={25748,25817,26174,26369,26483,27244,28004,29044,29453},maps={115},q=1,u=30}),
 i(43012,{coords={{44.7,42.4,114},{46.2,72.7,114},{26.7,51.7,119},{43.4,58.6,120},{65,43,120}},crs={25487,25488,25489,28009,29469,30445,30447},q=1,u=30}),
-i(45087,{awp=30100,description="Is a common drop from Ulduar bosses.",q=3,u=30}),
 i(43009,{crs={23690,23691,24681,24791,29479,29486,29487},maps={117},q=1,u=30}),
 i(43011,{coords={{39.5,71.8,114},{48.7,47.8,114},{24.6,50.3,116},{28.6,6.3,116},{73.3,32.9,116},{32.9,3.55,117},{74.8,33.4,117},{47.1,54.9,120}},crs={24026,24128,24517,25675,26592,27408,30164},q=1,u=30}),
 i(43010,{coords={{82.2,31.3,114},{51.3,23.9,115},{57.3,12.3,115},{27.6,46.7,120},{47.1,54.9,120},{55.9,64.2,120}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422},q=1,u=30})}})}}),
@@ -5739,6 +5737,8 @@ x(1,{
 i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}),
 x(3,{
 i(37674,{coords={{47.8,49.4,115}},crs={27539},description="If only they would have read this."}),
+flt(55,{
+i(40202,{f=55,lvl=75,q=1})}),
 flt(102,{
 toy(36863,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1}),
 toy(36862,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1})})})}})};

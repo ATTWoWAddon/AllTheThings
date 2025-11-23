@@ -102,25 +102,42 @@ q(25055),	-- Subduing the Elements	 WOTLK:Elemental Research	 CATA:Elemental Res
 q(25092),	-- Subduing the Elements	 WOTLK:Elemental Research	 CATA:Elemental Research	 MOP:Elemental Research
 q(25180),	-- Tablets of the Earth	 WOTLK:Tablets of the Earth	 CATA:Tablets of the Earth	 MOP:Tablets of the Earth
 q(25181),	-- Tablets of Fire	 WOTLK:Tablets of Fire	 CATA:Tablets of Fire	 MOP:Tablets of Fire
+q(25199),	-- Basic Orders	 WOTLK:Basic Orders	 CATA:Basic Orders	 MOP:Basic Orders
+q(25212),	-- Vent Horizon	 WOTLK:Vent Horizon	 CATA:Vent Horizon	 MOP:Vent Horizon
 q(25228),	-- Prophecies Of Doom
+q(25229),	-- A Few Good Gnomes	 WOTLK:A Few Good Gnomes	 CATA:A Few Good Gnomes	 MOP:A Few Good Gnomes
 q(25253),	-- Prophecies Of Doom
 q(25254),	-- Signs Of The Times
 q(25282),	-- Signs Of The Times
+q(25283),	-- Prepping the Speech	 WOTLK:Prepping the Speech	 CATA:Prepping the Speech	 MOP:Prepping the Speech
+q(25285),	-- In and Out	 WOTLK:In and Out	 CATA:In and Out	 MOP:In and Out
 q(25286),	-- Words for Delivery	 WOTLK:Words for Delivery	 CATA:Words for Delivery	 MOP:Words for Delivery
+q(25287),	-- Words for Delivery	 WOTLK:Words for Delivery	 CATA:Words for Delivery	 MOP:Words for Delivery
 q(25288),	-- Infiltrating The Cult
+q(25289),	-- One Step Forward...	 WOTLK:One Step Forward...	 CATA:One Step Forward...	 MOP:One Step Forward...
 q(25290),	-- Infiltrating the Cult
 q(25293),	-- The Missing
+q(25295),	-- Press Fire	 WOTLK:Press Fire	 CATA:Press Fire	 MOP:Press Fire
 q(25343),	-- The Master's Plan
 q(25347),	-- The Doomsday Plan
 q(25348),	-- Thwarting Twilight's Hammer
 q(25351),	-- Alert Our Leaders
 q(25380),	-- Spreading The Word
+q(25393),	-- Operation: Gnomeregan	 WOTLK:Operation: Gnomeregan	 CATA:Operation: Gnomeregan	 MOP:Operation: Gnomeregan
 q(25414),	-- The Missing
 q(25415),	-- Spreading The Word
 q(25416),	-- The Master's Plan
 q(25417),	-- The Doomsday Plan
 q(25418),	-- Thwarting Twilight's Hammer
 q(25425),	-- Warn King Wrynn
+q(25444),	-- Da Perfect Spies	 WOTLK:Da Perfect Spies	 CATA:Da Perfect Spies	 MOP:Da Perfect Spies
+q(25445),	-- Zalazane's Fall	 WOTLK:Zalazane's Fall	 CATA:Zalazane's Fall	 MOP:Zalazane's Fall
+q(25446),	-- Frogs Away!	 WOTLK:Frogs Away!	 CATA:Frogs Away!	 MOP:Frogs Away!
+q(25461),	-- Trollin' For Volunteers	 WOTLK:Trollin' For Volunteers	 CATA:Trollin' For Volunteers	 MOP:Trollin' For Volunteers
+q(25470),	-- Lady Of Da Tigers	 WOTLK:Lady Of Da Tigers	 CATA:Lady Of Da Tigers	 MOP:Lady Of Da Tigers
+q(25480),	-- Dance Of De Spirits	 WOTLK:Dance Of De Spirits	 CATA:Dance Of De Spirits	 MOP:Dance Of De Spirits
+q(25495),	-- Preparin' For Battle	 WOTLK:Preparin' For Battle	 CATA:Preparin' For Battle	 MOP:Preparin' For Battle
+q(25500),	-- Words for Delivery	 WOTLK:Words for Delivery	 CATA:Words for Delivery	 MOP:Words for Delivery
 3.4.0.44729
 q(70349),	--
 3.4.0.45854
@@ -226,8 +243,6 @@ q(71134),	--
 q(72433),	--
 3.4.0.46779
 q(72522),	-- WOTLK:Festering Emerald Drake	 CATA:Festering Emerald Drake	 MOP:Festering Emerald Drake
-3.4.2.49311
-q(76175),	--
 3.4.3.51126
 q(78165),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
 3.4.3.51278
@@ -259,17 +274,25 @@ q(78223),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
 q(78224),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
 q(78225),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
 3.4.3.54948
-q(83699),	--
-q(83709),	--
-q(83713),	--
+q(83699),	-- MOP:Daily Non-Protocol Gamma Heroic Random (1st)
+q(83709),	-- MOP:Daily Non-Protocol Gamma Heroic Random (1st)
 q(83714),	--
 q(83717),	--
 3.4.3.55325
 q(84385),	--
 q(84386),	--
 3.4.3.55392
-q(84553),	--
+q(84553),	-- MOP:Daily Non-Protocol Gamma Heroic Random (1st)
 3.4.3.55417
 q(84552),	--
-3.4.3.58936
-q(87379),	--
+3.80.0.64393
+q(93802),	--
+q(93803),	--
+q(93950),	--
+q(93975),	--
+q(94376),	--
+q(94428),	--
+q(94429),	--
+q(94576),	--
+q(94577),	--
+q(94579),	--

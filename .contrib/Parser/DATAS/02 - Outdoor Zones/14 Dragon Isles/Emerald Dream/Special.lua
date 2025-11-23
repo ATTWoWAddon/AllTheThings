@@ -7,16 +7,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(209860),	-- Thorn-Laden Heart @ 34.5, 63.2, EMERALD_DREAM [hunter only] from Envoy of Winter
 			i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only] from fire kitty/Keen-eyed Cian?
 			i(209862),	-- Thorn-Laden Heart @ 40.2, 71.9, EMERALD_DREAM [hunter only] from some bear (Moragh inculded) that was on path to rare
-			--reqruied for n: 140044 (Athainne) which should spawn in Drustvar (but wasn't up for me here)
-			--need to press  "Present the thorn-laden beast heart to Athainne.", she will give instead
-			--i(209863),	-- Moontouched Thorns
-			--i(209864),	-- Moontouched Thorns
-			--i(209865),	-- Moontouched Thorns
-			--which is need to give n: 141894 (Ulfar) @ 45.2, 45.8 in Drustvar -> "I have seen some animals that look like they are part plant. Can you tell me about them?" ->
-			--"Athainne has blessed some thorns I found in a beast's heart." and he will give you knife instead
-			--i(209866),	-- Thornspeaker Ritual Knife need to be used on Argyr (crs: 210984, 210985, 210986) @ 44.0, 64.0, EMERALD_DREAM to summon tammable beast
-			--i(209867),	-- Thornspeaker Ritual Knife need to be used on Liliuna (crs: 210981, 210982, 210983) @ 57.0, 49.0, EMERALD_DREAM to summon tammable beast
-			--i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
+			-- reqruied for n: 140044 (Athainne) which should spawn in Drustvar (but wasn't up for me here)
+			-- need to press  "Present the thorn-laden beast heart to Athainne.", she will give instead
+			-- i(209863),	-- Moontouched Thorns
+			-- i(209864),	-- Moontouched Thorns
+			-- i(209865),	-- Moontouched Thorns
+			-- which is need to give n: 141894 (Ulfar) @ 45.2, 45.8 in Drustvar -> "I have seen some animals that look like they are part plant. Can you tell me about them?" ->
+			-- "Athainne has blessed some thorns I found in a beast's heart." and he will give you knife instead
+			-- i(209866),	-- Thornspeaker Ritual Knife need to be used on Argyr (crs: 210984, 210985, 210986) @ 44.0, 64.0, EMERALD_DREAM to summon tammable beast
+			-- i(209867),	-- Thornspeaker Ritual Knife need to be used on Liliuna (crs: 210981, 210982, 210983) @ 57.0, 49.0, EMERALD_DREAM to summon tammable beast
+			-- i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
 			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
 				["description"] = "Follow coords attached to steps to obtain warglaive.",

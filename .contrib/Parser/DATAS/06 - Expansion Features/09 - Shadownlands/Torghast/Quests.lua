@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 
-		--	Champion Unlocks
+			-- Champion Unlocks
 			q(61957, {	-- Champion: Ashraka [Necrolord]
 				["sourceQuests"] = { 62229 },	-- Ashraka's Intelligence
 				["provider"] = { "n", 173395 },	-- Ashraka
@@ -190,9 +190,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61958, {	-- Champion: Gorgelimb [Necrolord]
+				-- ["sourceQuests"] = { },	-- TODO
 				["provider"] = { "n", 173397 },	-- Gorgelimb
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				-- ["sourceQuests"] = { },	-- TODO
 				["groups"] = {
 					follower(1306),	-- Gorgelimb
 				},
@@ -387,15 +387,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61426, {	-- Champion: Yira'lya [Night Fae]
+				-- ["sourceQuests"] = { },	-- TODO
 				["provider"] = { "n", 172243 },	-- Yira'lya
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				-- ["sourceQuests"] = { },	-- TODO
 				["groups"] = {
 					follower(1282)	-- Yira'lya
 				},
 			}),
 		}),
-		--	Bonus Quests
+		-- Bonus Quests
 		n(QUESTS, sharedData({
 			["repeatable"] = true,
 			["lvl"] = { 48 },
@@ -461,8 +461,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				-- Fracture Chambers 4 / 2
 			}),
 			q(64187, {	-- Kiaranyka's Search
+				-- ["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 				["timeline"] = { ADDED_9_1_0 },
-				--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 			}),
 			q(64189, {	-- Kinessa's Support
 				["provider"] = { "n", 179677 },	-- Kinessa the Absorbent
@@ -547,7 +547,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-		--	Coldheart
+			-- Coldheart
 			q(58198, {	-- Coldheart Interstitia, Layer 1
 				["name"] = "Coldheart Interstitia, Layer 1",
 			}),
@@ -584,7 +584,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(63883, {	-- Coldheart Interstitia, Layer 12
 				["name"] = "Coldheart Interstitia, Layer 12",
 			}),
-		--	Fracture Chambers
+			-- Fracture Chambers
 			q(58186, {	-- Fracture Chambers, Layer 1
 				["name"] = "Fracture Chambers, Layer 1",
 			}),
@@ -621,7 +621,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(63875, {	-- Fracture Chambers, Layer 12
 				["name"] = "Fracture Chambers, Layer 12",
 			}),
-		--	Mort'regar
+			-- Mort'regar
 			q(58204, {	-- Mort'regar, Layer 1
 				["name"] = "Mort'regar, Layer 1",
 			}),
@@ -658,7 +658,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(63887, {	-- Mort'regar, Layer 12
 				["name"] = "Mort'regar, Layer 12",
 			}),
-		--	Skoldus Hall
+			-- Skoldus Hall
 			q(59328, {	-- Skoldus Hall, Layer 1
 				["name"] = "Skoldus Hall, Layer 1",
 			}),
@@ -695,7 +695,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(63871, {	-- Skoldus Hall, Layer 12
 				["name"] = "Skoldus Hall, Layer 12",
 			}),
-		--	Soulforges
+			-- Soulforges
 			q(58192, {	-- Soulforges, Layer 1
 				["name"] = "Soulforges, Layer 1",
 			}),
@@ -732,7 +732,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(63879, {	-- Soulforges, Layer 12
 				["name"] = "Soulforges, Layer 12",
 			}),
-		--	Upper Reaches
+			-- Upper Reaches
 			q(59337, {	-- Upper Reaches, Layer 1
 				["name"] = "Upper Reaches, Layer 1",
 			}),
@@ -832,13 +832,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 		q(64177, { ["timeline"] = { ADDED_9_1_0 } }),	-- Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
 
 		-- 9.1.5
-		--q(64848, { ["timeline"] = { ADDED_9_1_5 } }), Enter Torghast as lvl 56 NF Druid
+		-- q(64848, { ["timeline"] = { ADDED_9_1_5 } }), Enter Torghast as lvl 56 NF Druid
 		q(65308, { ["timeline"] = { ADDED_9_1_5 } }),	-- Leveling in Torghast / Maw Jump to Torghast (spellID 359581)
 
 		-- 9.2
 		-- Jailers Gauntlet
 		q(65275, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 2 (Weird) PET?
-		--q(64347, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 3 (Already in AV probably because it ended in AV) /Might be Death-Bound Shard
+		-- q(64347, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 3 (Already in AV probably because it ended in AV) /Might be Death-Bound Shard
 		q(65276, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 4 (Weird) Toy?
 		q(65277, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 6 (Werid) Title?
 		q(65278, { ["timeline"] = { ADDED_9_2_0 } }),	-- Layer 8 (Weird) Mount?

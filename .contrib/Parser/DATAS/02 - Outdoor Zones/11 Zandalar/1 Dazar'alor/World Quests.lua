@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 			}),
 			q(51496, {	-- Loa Your Standards
-				--["races"] = HORDE_ONLY,	-- This is likely Horde Only due to quests that need to be completed for phasing but needs verification
+				-- ["races"] = HORDE_ONLY,	-- This is likely Horde Only due to quests that need to be completed for phasing but needs verification
 				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),

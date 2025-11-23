@@ -400,7 +400,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31246,	-- Attack on Mistfall Village (Whitepetal Lake)
 					},
 					["qg"] = 59336,	-- Mayor Shiyo
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30290, {	-- Stonebound Killers
 					["sourceQuests"] = {
@@ -1087,13 +1087,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31297, {	-- Setting Sun Garrison
 					["qg"] = 59337,	-- Sun Tenderheart
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
 					["lockCriteria"] = { 1,
 						"questID", 30385,	-- Setting Sun Garrison
 						"questID", 31247,	-- Setting Sun Garrison
 						"questID", 31250,	-- Setting Sun Garrison
 					},
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30244, {	-- Along the Serpent's Spine
 					["sourceQuests"] = {
@@ -1429,16 +1429,16 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			n(QUESTS, sharedData({ ["isDaily"] = true, ["maxReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED }, }, {	-- Daily Quests (Unsorted)
 				RemovedWithSOO(q(30283, {	-- A Smashing Impression
 					["qg"] = 58469,	-- Ren Firetongue
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30281, {	-- The Silent Approach
 					["qg"] = 58470,	-- He Softfoot
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30482, {	-- The Soul-Gatherer
 					["sourceQuest"] = 30281,	-- The Silent Approach
 					["qg"] = 58470,	-- He Softfoot
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
@@ -1452,15 +1452,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30226, {	-- Blood on the Rise
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30282, {	-- Burning Away the Filth
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30481, {	-- Carved in Stone
 					["qg"] = 59333,	-- Rook Stonetoe
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30233, {	-- Cracklefang
 					["qg"] = 59343,	-- Ren Firetongue
@@ -1483,11 +1483,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30305, {	-- He Knows What He's Doing
 					["qg"] = 59333,	-- Rook Stonetoe
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30200, {	-- In Ashen Webs
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30293, {	-- In Enemy Hands
 					["qg"] = 58471,	-- Kun Autumnlight
@@ -1495,19 +1495,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(31295, {	-- Mogu within the Ruins of Guo-Lai
 					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30299, {	-- No Stone Unturned
 					["qg"] = 59334,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30301, {	-- Offering a Warm Welcome
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30298, {	-- Painting the Ruins Red
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30292, {	-- Rude Awakenings
 					["qg"] = 58471,	-- Kun Autumnlight
@@ -1527,7 +1527,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30225, {	-- The Ashweb Matriarch
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
@@ -1565,14 +1565,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				RemovedWithSOO(q(30302, {	-- The Imperion Threat
 					["qg"] = 59332,	-- Leven Dawnblade
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30300, {	-- The Key to Success
 					["qg"] = 59334,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(31248, {	-- The Ruins of Guo-Lai
 					["qg"] = 58408,	-- Leven Dawnblade
@@ -1586,11 +1586,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						30235,	-- Quid Pro Quo
 					},
 					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(31296, {	-- The Ruins of Guo-Lai
 					["qg"] = 59337,	-- Sun Tenderheart
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				q(30280, {	-- The Thunder Below
 					-- #if MOP
@@ -1603,7 +1603,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				RemovedWithSOO(q(30228, {	-- Troubling the Troublemakers
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				RemovedWithSOO(q(30234, {	-- Vicejaw
 					["qg"] = 59343,	-- Ren Firetongue
@@ -1614,7 +1614,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				RemovedWithSOO(q(30227, {	-- Wulon, the Granite Sentinel
 					["qg"] = 58503,	-- Anji Autumnlight
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					-- ["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["groups"] = {
 						i(90625),	-- Treasures of the Vale
 					},

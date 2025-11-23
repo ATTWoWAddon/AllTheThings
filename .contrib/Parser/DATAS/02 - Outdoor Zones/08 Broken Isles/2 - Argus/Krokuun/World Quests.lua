@@ -28,7 +28,31 @@ root(ROOTS.Zones, {
 					q(48510, {	-- Commander Vecaya
 						["sym"] = {{"select","npcID",122911}},	-- Select the WQ NPC
 					}),
-					q(48286),	-- Crystal Methods
+					q(48286, {	-- Crystal Methods
+						o(273839, {	-- Argunite Fragments
+							["coords"] = {
+								{ 33.1, 71.5, KROKUUN },
+								{ 34.1, 69.1, KROKUUN },
+								{ 34.2, 72.7, KROKUUN },
+								{ 34.3, 67.4, KROKUUN },
+								{ 34.3, 71.4, KROKUUN },
+								{ 35.0, 69.9, KROKUUN },
+								{ 35.3, 68.4, KROKUUN },
+								{ 35.7, 67.4, KROKUUN },
+								{ 35.7, 69.0, KROKUUN },
+								{ 35.9, 72.0, KROKUUN },
+								{ 36.0, 70.4, KROKUUN },
+								{ 36.9, 67.3, KROKUUN },
+								{ 37.1, 70.4, KROKUUN },
+								{ 38.1, 66.6, KROKUUN },
+								{ 38.3, 67.5, KROKUUN },
+								{ 38.8, 71.8, KROKUUN },
+								{ 39.3, 69.7, KROKUUN },
+								{ 40.3, 66.2, KROKUUN },
+							},
+							["groups"] = { i(129749 ) },	-- Argunite Fragments (QI!)
+						}),
+					}),
 					petbattle(q(49045)),	-- Deathscreech
 					q(47720),	-- Eternal Vengeance
 					petbattle(q(49042)),	-- Foulclaw

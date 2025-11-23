@@ -2667,11 +2667,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127106),	-- Gladiator's Chain Leggings
 				}),
 				cl(MAGE, {
-					i(127064),-- Gladiator's Silk Robe
-					i(127074),-- Gladiator's Silk Cowl
-					i(127085),-- Gladiator's Silk Handguards
-					i(127096),-- Gladiator's Silk Amice
-					i(127107),-- Gladiator's Silk Trousers
+					i(127064),	-- Gladiator's Silk Robe
+					i(127074),	-- Gladiator's Silk Cowl
+					i(127085),	-- Gladiator's Silk Handguards
+					i(127096),	-- Gladiator's Silk Amice
+					i(127107),	-- Gladiator's Silk Trousers
 				}),
 				cl(MONK, {
 					i(127051),	-- Gladiator's Ironskin Tunic
@@ -2681,11 +2681,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127108),	-- Gladiator's Ironskin Legguards
 				}),
 				cl(PRIEST, {
-					i(127065),-- Gladiator's Satin Robe
-					i(127077),-- Gladiator's Satin Hood
-					i(127088),-- Gladiator's Satin Gloves
-					i(127099),-- Gladiator's Satin Mantle
-					i(127110),-- Gladiator's Satin Leggings
+					i(127065),	-- Gladiator's Satin Robe
+					i(127077),	-- Gladiator's Satin Hood
+					i(127088),	-- Gladiator's Satin Gloves
+					i(127099),	-- Gladiator's Satin Mantle
+					i(127110),	-- Gladiator's Satin Leggings
 				}),
 				cl(PALADIN, {
 					i(127052),	-- Gladiator's Scaled Chestpiece
@@ -2709,11 +2709,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127112),	-- Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					i(127066),-- Gladiator's Felweave Raiment
-					i(127080),-- Gladiator's Felweave Cowl
-					i(127091),-- Gladiator's Felweave Handguards
-					i(127102),-- Gladiator's Felweave Amice
-					i(127113),-- Gladiator's Felweave Trousers
+					i(127066),	-- Gladiator's Felweave Raiment
+					i(127080),	-- Gladiator's Felweave Cowl
+					i(127091),	-- Gladiator's Felweave Handguards
+					i(127102),	-- Gladiator's Felweave Amice
+					i(127113),	-- Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
 					i(127055),	-- Gladiator's Plate Chestpiece
@@ -9649,15 +9649,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -9669,11 +9669,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -9683,10 +9683,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -9742,15 +9742,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -9762,11 +9762,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -9776,10 +9776,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -9835,15 +9835,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -9855,11 +9855,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -9869,10 +9869,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -9928,15 +9928,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -9948,11 +9948,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -9962,10 +9962,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -10024,15 +10024,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -10044,11 +10044,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -10058,10 +10058,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {
@@ -10117,15 +10117,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(217178),	-- Crown of the Awakened
-						--i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
-						--i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
-						--i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
+						-- i(217177),	-- Gauntlets of the Awakened [DOES NOT EXIST]
+						-- i(217176),	-- Hauberk of the Awakened [DOES NOT EXIST]
+						-- i(217179),	-- Legguards of the Awakened [DOES NOT EXIST]
 						i(217180),	-- Talons of the Awakened
 					}),
 					cl(HUNTER, {
-						--i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
-						--i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
-						--i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
+						-- i(217181),	-- Stormwing Harrier's Cuirass [DOES NOT EXIST]
+						-- i(217184),	-- Stormwing Harrier's Greaves [DOES NOT EXIST]
+						-- i(217182),	-- Stormwing Harrier's Handguards [DOES NOT EXIST]
 						i(217185),	-- Stormwing Harrier's Pinions
 						i(217183),	-- Stormwing Harrier's Skullmask
 					}),
@@ -10137,11 +10137,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217235),	-- Wayward Chronomancer's Patchwork
 					}),
 					cl(MONK, {
-						--i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
-						--i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
-						--i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
+						-- i(217186),	-- Chestwrap of the Waking Fist [DOES NOT EXIST]
+						-- i(217188),	-- Gaze of the Waking Fist [DOES NOT EXIST]
+						-- i(217189),	-- Legguards of the Waking Fist [DOES NOT EXIST]
 						i(217190),	-- Mantle of the Waking Fist
-						--i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
+						-- i(217187),	-- Palms of the Waking Fist [DOES NOT EXIST]
 					}),
 					cl(PALADIN, {
 						i(217196),	-- Heartfire Sentinel's Brigandine
@@ -10151,10 +10151,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217200),	-- Heartfire Sentinel's Steelwings
 					}),
 					cl(PRIEST, {
-						--i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
-						--i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
-						--i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
-						--i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217203),	-- Breeches of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217205),	-- Command of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217204),	-- Devotion of the Furnace Seraph [DOES NOT EXIST]
+						-- i(217201),	-- Grasp of the Furnace Seraph [DOES NOT EXIST]
 						i(217202),	-- Mask of the Furnace Seraph
 					}),
 					cl(ROGUE, {

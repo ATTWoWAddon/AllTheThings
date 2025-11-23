@@ -104,32 +104,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["skipFill"] = true,
 			}),
 			-- #endif
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							29325,	-- A Slippery Snack
-							29359,	-- An Old Favorite
-							29321,	-- Happy as a Clam Digger
-							29323,	-- Stocking Up
-							29324,	-- The Sister's Pendant
-						},
-						["provider"] = { "n", 4156 },	-- Astaia
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983),	-- Strand Crawler (PET!)
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
-							i(67388),	-- String of Alligator Teeth
-						},
-					}),
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -1093,7 +1067,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						9582,	-- Strength of One
 						-- #endif
 						1678,	-- Vejrek
-						--1683,	-- Vorlus Vilehoof
+						-- 1683,	-- Vorlus Vilehoof
 					},
 					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.3, 34.6, DARNASSUS },
@@ -1110,7 +1084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},

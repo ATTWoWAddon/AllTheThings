@@ -262,10 +262,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 			}),
 			q(63002, {	-- Dangerous to Go Alone
+				-- TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
+				-- ["sourceQuests"] = {  },	--
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
-			--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
-			--	["sourceQuests"] = {  },	--
 			}),
 			q(61772, {	-- Dark Developments
 				["sourceQuests"] = { 61769 },	-- Fight and Flight

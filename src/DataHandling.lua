@@ -323,7 +323,7 @@ local function AdjustParentVisibility(group)
 end
 
 -- For directly applying the full Update operation for the top-level data group within a window
-local function TopLevelUpdateGroup(group)
+local function TopLevelUpdateGroup(group, forceShow)
 	group.TLUG = GetTimePreciseSec()
 	group.total = nil
 	group.progress = nil
@@ -331,7 +331,8 @@ local function TopLevelUpdateGroup(group)
 	group.upgradeTotal = nil
 	-- app.PrintDebug("TLUG",group.hash)
 	-- Root data in Windows should ALWAYS be visible
-	if group.window then
+	-- Data can also be force-shown externally (i.e. when as a search result)
+	if group.window or forceShow then
 		-- app.PrintDebug("Root Group",group.text)
 		group.forceShow = true
 	end
@@ -839,6 +840,14 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateHeirloom(t.heirloomID, t);
 		elseif t.azeriteessenceID then
 			t = app.CreateAzeriteEssence(t.azeriteessenceID, t);
+		elseif t.artifactID then
+			t = app.CreateArtifact(t.artifactID, t);
+		elseif t.titleID then
+			t = app.CreateTitle(t.titleID, t);
+		elseif t.runeforgepowerID then
+			t = app.CreateRuneforgeLegendary(t.runeforgepowerID, t);
+		elseif t.conduitID then
+			t = app.CreateConduit(t.conduitID, t);
 		elseif t.itemID or t.modItemID then
 			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
 			t.itemID = itemID
@@ -846,10 +855,6 @@ local function CreateObject(t, rootOnly)
 			t.bonusID = bonusID
 			if t.toyID then
 				t = app.CreateToy(itemID, t);
-			elseif t.runeforgepowerID then
-				t = app.CreateRuneforgeLegendary(t.runeforgepowerID, t);
-			elseif t.conduitID then
-				t = app.CreateConduit(t.conduitID, t);
 			else
 				t = app.CreateItem(itemID, t);
 			end

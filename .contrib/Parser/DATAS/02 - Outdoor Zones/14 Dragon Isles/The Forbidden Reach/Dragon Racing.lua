@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				n(ACHIEVEMENTS, {
-					ach(18779, {	--  Forbidden Reach Challenge: Bronze
+					ach(18779, {	-- Forbidden Reach Challenge: Bronze
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18040,	-- Aerie Chasm Cruise Challenge: Bronze
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							18031,	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
 						}},
 					}),
-					ach(18780, {	--  Forbidden Reach Challenge: Silver
+					ach(18780, {	-- Forbidden Reach Challenge: Silver
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18041,	-- Aerie Chasm Cruise Challenge: Silver
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							18032,	-- Stormsunder Crater Circuit Reverse Challenge: Silver
 						}},
 					}),
-					ach(18781, {	--  Forbidden Reach Challenge: Gold
+					ach(18781, {	-- Forbidden Reach Challenge: Gold
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							18042,	-- Aerie Chasm Cruise Challenge: Gold

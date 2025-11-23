@@ -30,6 +30,10 @@ i(233357, 0); -- Twilight Qiraji Resonating Crystal
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 
+-- TBC Classic 2026 --
+i(260438, 1266345);	-- Cerulean Phase-Hunter
+i(260759, 1266866);	-- Reins of the Starshard Netherdrake
+
 -- Wrath Classic --
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(201699, 394209);	-- Festering Emerald Drake
@@ -1386,7 +1390,11 @@ i(183715, 332927);	-- Sinfall Gargon
 i(183937, 332400);	-- Sinful Gladiator's Soul Eater
 i(182614, 339588);	-- Sinrunner Blanchy
 i(182717, 340068);	-- Sintouched Deathwalker
+-- #if AFTER 11.2.5
+i(258428, 341821);	-- Snowstorm
+-- #else
 i(0, 341821);		-- Snowstorm
+-- #endif
 i(180725, 334364);	-- Spinemaw Gladechewer
 i(180773, 312765);	-- Sundancer
 i(180728, 312767);	-- Swift Gloomhoof
@@ -1446,7 +1454,11 @@ i(186477, 353873);	-- Pale Gravewing
 i(187183, 356501);	-- Rampaging Mauler
 i(186488, 353884);	-- Regal Corpsefly
 i(186656, 354351);	-- Sanctum Gloomcharger
+-- #if AFTER 11.2.5
+i(258431, 356488);	-- Sarge's Tale
+-- #else
 i(0, 356488);		-- Sarge's Tale
+-- #endif
 i(186476, 353872);	-- Sinfall Gravewing
 i(186648, 347251);	-- Soaring Razorwing
 i(186657, 354352);	-- Soulbound Gloomcharger
@@ -1542,14 +1554,24 @@ i(0, 367190);		-- [DND] Test Mount JZB
 -----------------
 -- PATCH 9.2.7 --
 -----------------
+-- #if AFTER 11.2.5
+i(258476, 386452);	-- Frostbrood Proto-Wyrm
+i(258475, 370770);	-- Tuskarr Shoreglider
+-- #else
 i(0, 386452);		-- Frostbrood Proto-Wyrm
 i(0, 370770);		-- Tuskarr Shoreglider
+-- #endif
 
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+-- #if AFTER 11.2.5
+i(258423, 315132);		-- Gargantuan Grrloc
+i(258477, 381529);		-- Telix the Stormhorn
+-- #else
 i(0, 315132);		-- Gargantuan Grrloc
 i(0, 381529);		-- Telix the Stormhorn
+-- #endif
 --- NYI ---
 i(0, 371571);		-- Dragon Isles Drake Model Test
 i(0, 372995);		-- Swift Spectral Drake
@@ -1691,13 +1713,25 @@ i(206673, 414316);	-- White War Wolf
 ------------------
 -- PATCH 10.1.7 --
 ------------------
+-- #if AFTER 11.2.5
+i(258479, 417888);	-- Algarian Stormrider
+-- #else
 i(0, 417888);		-- Algarian Stormrider
+-- #endif
 i(208572, 420097);	-- Azure Worldchiller
+-- #if AFTER 11.2.5
+i(258427, 358072);		-- Bound Blizzard
+-- #else
 i(0, 358072);		-- Bound Blizzard
+-- #endif
 i(137576, 171840);	-- Coldflame Infernal
 i(198824, 385262);	-- Duskwing Ohuna
 i(208598, 419345);	-- Eve's Ghastly Rider
+-- #if AFTER 11.2.5
+i(258425, 419567);	-- Ginormous Grrloc
+-- #else
 i(0, 419567);		-- Ginormous Grrloc
+-- #endif
 i(203727, 400976);	-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing
@@ -2146,6 +2180,7 @@ i(250759, 1251309);	-- Bonesteed of Plague
 i(250761, 1251305);	-- Bonesteed of Triumph
 i(251795, 1253130);	-- Brimstone Courser
 i(251796, 1253129);	-- Chestnut Courser
+i(253573, 1256677);	-- Cobalt Phase-Hunter
 i(253031, 1255478);	-- Farseer's Felscorned Tempest
 i(250745, 1251279);	-- Fel-scarred Mana Ray
 i(253024, 1255451);	-- Feldruid's Scornwing Form
@@ -2173,11 +2208,14 @@ i(250806, 1251400);	-- Longhorned Beryl Talbuk
 i(250804, 1251398);	-- Longhorned Bleakhoof Talbuk
 i(250802, 1251396);	-- Longhorned Sable Talbuk
 i(250748, 1251284);	-- Luminous Mana Ray
+i(252679, 1255159);	-- Mechanical Prototype Panther MK-0
 i(250929, 1251690);	-- Prized Turkey
 i(253030, 1255477);	-- Shadowblade's Felscorned Omen
 i(250423, 1238729);	-- Slag Basilisk
 i(253013, 1255431);	-- Slayer's Felscorned Shrieker
 i(250721, 1235513);	-- Snowy Highmountain Eagle
+i(252950, 1255246);	-- Starspark Netherdrake
+i(252681, 1255179);	-- Steel Prototype Panther MK-0
 i(247721, 1245198);	-- The Headless Horseman's Ghoulish Charger
 i(250723, 1251255);	-- Treetop Highmountain Eagle
 i(250756, 1251298);	-- Turquoise Courser
@@ -2185,12 +2223,11 @@ i(250751, 1251295);	-- Twilight Courser
 i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
 --- UNSORTED ---
-i(0, 1254363);	--(PH LEGION REMIX MOUNT)`
+i(0, 1254363);	-- (PH LEGION REMIX MOUNT)`
 i(250927, 1251685);	-- Quirky Turkey
 i(250928, 1251689);	-- Murky Turkey
 i(250191, 1250481);	-- Bilebound Ur'zul
 i(239647, 1229264);	-- Bloodguard Fel Bat
-i(253573, 1256677);	-- Cobalt Phase-Hunter
 i(250108, 1250288);	-- Cragstepper Crest-horn
 i(250106, 1250287);	-- Floestrider Crest-horn
 i(239686, 1229286);	-- Forgotten Fel Bat
@@ -2227,6 +2264,7 @@ i(262620, 1257058);	-- Calamitous Carrion
 i(262621, 1257081);	-- Convalescent Carrion
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(246594, 1243003);	-- Light-Forged Mechsuit
+i(224148, 451487);	-- Retrained Skyrazor
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
 --- UNSORTED ---
@@ -2234,10 +2272,8 @@ i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(257444, 1261576);	-- [DNT] 12.0 Hex Eagle Mount
 i(257223, 1261360);	-- [DNT] 12.0 Shadowpine Bear
-i(260231, 1265784);	-- [DNT] 12.0 White Hawkstrider
 i(0, 1252141);	-- [DNT] Jellyfish
 i(222988, 447173);	-- [PH] Firefly2Mount (Green)
-i(224148, 451487);	-- [PH] NerubianWarbeastMount (Cyan)
 i(260896, 1267004);	-- Accented Pseudoshell
 i(257219, 1261357);	-- Amani Blessed Bear
 i(257152, 1261316);	-- Amani Sharptalon
@@ -2250,7 +2286,7 @@ i(257085, 1261155);	-- Augmented Stormray
 i(262707, 1269279);	-- Blooded Snapvine
 i(0, 1253924);	-- Brilliant Petalwing
 i(260894, 1266997);	-- Cabbage Pseudoshell
-i(0, 1261323);	-- Cerulean Hawkstrider
+i(257156, 1261323);	-- Cerulean Hawkstrider
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(260580, 1266579);	-- Cloudborn Razorwing
 i(257156, 1261302);	-- Cobalt Dragonhawk
@@ -2263,16 +2299,21 @@ i(262706, 1269277);	-- Ferocious Snapvine
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
+i(257448, 1261585);	-- Frenzied Shredclaw
 i(0, 1261349);	-- Giganto Manis
 i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(263451, 1270522);	-- Huffy Comfy Flying Quilt
-i(0, 1261583);	-- Insatiable Shredclaw
+i(257446, 1261583);	-- Insatiable Shredclaw
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(260916, 3363);	-- Lost Nether Drake
+i(260231, 1265784);	-- Lucent Hawkstrider
 i(257191, 1261336);	-- Preyseeker's Hubris
+i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
+i(257447, 1261584);	-- Prowling Shredclaw
 i(0, 1261579);	-- Ravenous Shredclaw
+i(0, 1261391);	-- Relinquished Scarlet Charger
 i(246735, 1243597);	-- Rootstalker Grimlynx
 i(252017, 1253938);	-- Ruddy Sporeglider
 i(260635, 1266700);	-- Sanguine Harrower

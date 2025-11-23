@@ -2,6 +2,61 @@
 s(200903)/i(6116),	-- entice's Robe \\ Apprentice's Robe
 s(200913)/i(6243),	-- n Woolen Robe \\ Green Woolen Robe
 s(200943)/i(7248),	-- Twain TEST Cloak
+s(201014)/i(13727),	-- [PH] Brilliant Dawn Gloves
+s(201015)/i(13728),	-- [PH] Shining Dawn Gloves
+s(201016)/i(13730),	-- [PH] Brilliant Dawn Fists
+s(201017)/i(13731),	-- [PH] Brilliant Dawn Gauntlets
+s(201018)/i(13736),	-- [PH] Shining Dawn Fists
+s(201019)/i(13737),	-- [PH] Shining Dawn Gauntlets
+s(201020)/i(13738),	-- [PH] Cloth Bracers of the Brilliant Dawn
+s(201021)/i(13739),	-- [PH] Cloth Bracers of the Rising Dawn
+s(201022)/i(13740),	-- [PH] Cloth Bracers of the Shining Dawn
+s(201023)/i(13741),	-- [PH] Leather Bracers of the Brilliant Dawn
+s(201024)/i(13742),	-- [PH] Mail Bracers of the Brilliant Dawn
+s(201025)/i(13743),	-- [PH] Plate Bracers of the Brilliant Dawn
+s(201026)/i(13744),	-- [PH] Plate Bracers of the Rising Dawn
+s(201027)/i(13745),	-- [PH] Plate Bracers of the Shining Dawn
+s(201028)/i(13746),	-- [PH] Mail Bracers of the Rising Dawn
+s(201029)/i(13747),	-- [PH] Mail Bracers of the Shining Dawn
+s(201030)/i(13748),	-- [PH] Leather Bracers of the Shining Dawn
+s(201031)/i(13749),	-- [PH] Leather Bracers of the Rising Dawn
+s(201032)/i(13762),	-- [PH] Robe of the Brilliant Dawn
+s(201033)/i(13763),	-- [PH] Robe of the Rising Dawn
+s(201034)/i(13764),	-- [PH] Robe of the Shining Dawn
+s(201035)/i(13765),	-- [PH] Leather Chestguard of the Brilliant Dawn
+s(201036)/i(13766),	-- [PH] Leather Chestguard of the Shining Dawn
+s(201037)/i(13767),	-- [PH] Leather Chestguard of the Rising Dawn
+s(201038)/i(13768),	-- [PH] Mail Chestguard of the Brilliant Dawn
+s(201039)/i(13769),	-- [PH] Mail Chestguard of the Shining Dawn
+s(201040)/i(13770),	-- [PH] Mail Chestguard of the Rising Dawn
+s(201041)/i(13771),	-- [PH] Plate Chestguard of the Brilliant Dawn
+s(201042)/i(13772),	-- [PH] Plate Chestguard of the Rising Dawn
+s(201043)/i(13773),	-- [PH] Plate Chestguard of the Shining Dawn
+s(201044)/i(13775),	-- [PH] Cloth Leggings of the Rising Dawn
+s(201045)/i(13776),	-- [PH] Cloth Leggings of the Shining Dawn
+s(201046)/i(13777),	-- [PH] Leather Leggings of the Brilliant Dawn
+s(201047)/i(13778),	-- [PH] Leather Leggings of the Rising Dawn
+s(201048)/i(13779),	-- [PH] Leather Leggings of the Shining Dawn
+s(201049)/i(13780),	-- [PH] Mail Leggings of the Brilliant Dawn
+s(201050)/i(13781),	-- [PH] Mail Leggings of the Rising Dawn
+s(201051)/i(13782),	-- [PH] Mail Leggings of the Shining Dawn
+s(201052)/i(13783),	-- [PH] Plate Leggings of the Brilliant Dawn
+s(201053)/i(13784),	-- [PH] Plate Leggings of the Rising Dawn
+s(201054)/i(13785),	-- [PH] Plate Leggings of the Shining Dawn
+s(201055)/i(13788),	-- [PH] Shining Dawn Hat
+s(201056)/i(13791),	-- [PH] Shining Dawn Cap
+s(201057)/i(13794),	-- [PH] Shining Dawn Coif
+s(201058)/i(13797),	-- [PH] Shining Dawn Helm
+s(201059)/i(13798),	-- [PH] Cloth Boots of the Brilliant Dawn
+s(201060)/i(13801),	-- [PH] Leather Boots of the Brilliant Dawn
+s(201061)/i(13802),	-- [PH] Leather Boots of the Rising Dawn
+s(201062)/i(13803),	-- [PH] Leather Boots of the Shining Dawn
+s(201063)/i(13804),	-- [PH] Mail Boots of the Brilliant Dawn
+s(201064)/i(13805),	-- [PH] Mail Boots of the Rising Dawn
+s(201065)/i(13806),	-- [PH] Mail Boots of the Shining Dawn
+s(201066)/i(13807),	-- [PH] Plate Boots of the Brilliant Dawn
+s(201067)/i(13808),	-- [PH] Plate Boots of the Rising Dawn
+s(201068)/i(13809),	-- [PH] Plate Boots of the Shining Dawn
 s(201113)/i(16369),	-- ht-Lieutenant's Silk Boots \\ Knight-Lieutenant's Silk Boots
 s(201114)/i(16391),	-- ht-Lieutenant's Silk Gloves \\ Knight-Lieutenant's Silk Gloves
 s(201115)/i(16397),	-- ht-Lieutenant's Dragonhide Gloves \\ Knight-Lieutenant's Dragonhide Gloves
@@ -9,6 +64,8 @@ s(201116)/i(16413),	-- ht-Captain's Silk Raiment \\ Knight-Captain's Silk Raimen
 s(201122)/i(17562),	-- ht-Lieutenant's Dreadweave Boots \\ Knight-Lieutenant's Dreadweave Boots
 s(201123)/i(17568),	-- ht-Captain's Dreadweave Robe \\ Knight-Captain's Dreadweave Robe
 s(201127)/i(18042),	-- ium Headed Arrow \\ Thorium Headed Arrow
+s(201192)/i(21433),	-- AHNQIRAJ TEST ITEM A CLOTH BRACER
+s(201193)/i(21435),	-- AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
 s(201246)/i(23472),	-- Rugged Trapper's Boots
 s(201271)/i(24442),	-- Plate Belt of the Silverpine \\ e Belt of the Silverpine \\ Mail Belt of the Silverpine
 s(201336)/i(28543),	-- hood Throwing Axe \\ Dreghood Throwing Axe
@@ -188,6 +245,7 @@ s(202918)/i(53044),	-- Art Template Leather Head - Leather_Common_B_03 - Black
 s(202919)/i(53045),	-- Art Template Leather Legs - Leather_Common_B_03 - Black
 s(202920)/i(53046),	-- Art Template Leather Shoulder - Leather_Common_B_03 - Black
 s(202921)/i(53047),	-- Art Template Leather Wrist - Leather_Common_B_03 - Black
+s(202922)/i(53057),	-- d Wizard Hat \\ Faded Wizard Hat
 s(202928)/i(53155),	-- aggan's Thorn \\ Agamaggan's Thorn
 s(202929)/i(53157),	-- lga's Cowl \\ Charlga's Cowl
 s(202930)/i(53158),	-- lder of the Matriarch \\ Spaulder of the Matriarch
@@ -1661,6 +1719,7 @@ s(209777)/i(65449),	-- Art Template Mail Legs - Mail_Cataclysm_B_02 - Blue
 s(209778)/i(65450),	-- Art Template Mail Shoulder - Mail_Cataclysm_B_02 - Blue
 s(209779)/i(65451),	-- Art Template Mail Wrist - Mail_Cataclysm_B_02 - Blue
 s(209945)/i(65653),	-- Monster - Mace, Hammer of Twilight (2H Version)
+s(209952)/i(65665),	-- Burgy Blackheart's Handsome Hat
 s(209982)/i(65695),	-- ge-Caked Throwing Knives \\ Sludge-Caked Throwing Knives
 s(210017)/i(65745),	-- ial Sandals \\ Martial Sandals
 s(210209)/i(66010),	-- of the Fool \\ Star of the Fool
@@ -3736,6 +3795,20 @@ s(213714)/i(71963),	-- Monster - Mace, 2H Baine's (Lavaburst Enchant)
 s(213734)/i(72069),	-- Ninja Test Item
 s(213738)/i(72156),	-- Monster - Wand, PVPCataclysmS3_C_02 Red
 s(213739)/i(72158),	-- Monster - Axe, 1H PVPCataclysmS3 C 01 - Default
+s(213758)/i(72220),	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Blue
+s(213759)/i(72221),	-- Art Template Plate Hand - Plate_PVPWarrior_D_01 - Blue
+s(213760)/i(72222),	-- Art Template Plate Head - Plate_PVPWarrior_D_01 - Blue
+s(213761)/i(72223),	-- Art Template Plate Legs - Plate_PVPWarrior_D_01 - Blue
+s(213762)/i(72224),	-- Art Template Plate Shoulder - Plate_PVPWarrior_D_01 - Blue
+s(213763)/i(72225),	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Blue
+s(213764)/i(72226),	-- Art Template Plate Belt - Plate_PVPWarrior_D_01 - Orange
+s(213765)/i(72227),	-- Art Template Plate Boot - Plate_PVPWarrior_D_01 - Orange
+s(213766)/i(72228),	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Orange
+s(213767)/i(72229),	-- Art Template Plate Hand - Plate_PVPWarrior_D_01 - Orange
+s(213768)/i(72230),	-- Art Template Plate Head - Plate_PVPWarrior_D_01 - Orange
+s(213769)/i(72231),	-- Art Template Plate Legs - Plate_PVPWarrior_D_01 - Orange
+s(213770)/i(72232),	-- Art Template Plate Shoulder - Plate_PVPWarrior_D_01 - Orange
+s(213771)/i(72233),	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange
 s(213772)/i(72242),	-- Monster - Polearm, DeathwingRaidDW D 01 - Default
 s(213773)/i(72243),	-- Monster - Polearm, DeathwingRaidDW D 01 - Blue
 s(213774)/i(72244),	-- Monster - Polearm, DeathwingRaidDW D 01 - Dark
@@ -4544,6 +4617,16 @@ s(216278)/i(78337),	-- Test
 s(216279)/i(78338),	-- Test
 s(216292)/i(78369),	-- r Saronite Chip \\ Razor Saronite Chip
 s(216297)/i(78374),	-- r Saronite Chip \\ Razor Saronite Chip
+s(216302)/i(78379),	-- of Morchok \\ Hand of Morchok
+s(216305)/i(78383),	-- ries of Time \\ Vagaries of Time
+s(216316)/i(78394),	-- ifying Horn Arbalest \\ Horrifying Horn Arbalest
+s(216329)/i(78407),	-- e of Coagulated Globules \\ Spire of Coagulated Globules
+s(216331)/i(78409),	-- rimental Specimen Slicer \\ Experimental Specimen Slicer
+s(216332)/i(78410),	-- pel of Unrelenting Agony \\ Scalpel of Unrelenting Agony
+s(216345)/i(78426),	-- tning Rod \\ Lightning Rod
+s(216354)/i(78437),	-- ingstar of Heroic Will \\ Morningstar of Heroic Will
+s(216369)/i(78453),	-- axis, Cudgel of the Warmaster \\ Ataraxis, Cudgel of the Warmaster
+s(216375)/i(78459),	-- ge of the Destroyer \\ Visage of the Destroyer
 s(216406)/i(78500),	-- tplate of the Unshakable Titan \\ Chestplate of the Unshakable Titan
 s(216412)/i(78506),	-- mcrusher Drape \\ Dreamcrusher Drape
 s(216413)/i(78507),	-- fatigable Greatcloak \\ Indefatigable Greatcloak

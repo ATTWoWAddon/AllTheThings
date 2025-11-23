@@ -4123,10 +4123,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					iensemble(138430, {	-- Ensemble: Chain of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-					}),	--No questid attached to this ensemble
+					}),	-- No questid attached to this ensemble
 					iensemble(138431, {	-- Ensemble: Scale of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-					}),	--No questid attached to this ensemble
+					}),	-- No questid attached to this ensemble
 				},
 			})),
 			n(14845, {	-- Stamp Thunderhorn <Food Vendor>

@@ -35,10 +35,7 @@ root(ROOTS.ExpansionFeatures,
 								crit(28527),	-- Blast Furnace
 							}),
 						}),
-						n(FOLLOWERS, bubbleDown({	-- Followers
-							["collectible"] = false,
-							["u"] = UNLEARNABLE,	-- (Ships aren't really permanently collectible because they get destroyed and have a cap)
-						},{
+						n_TrainingFollowers({
 							-- TODO: maybe put proper faction on each ship lol
 							i(128302, {	-- Ship: Battleship
 								follower(512),	-- Algalon's Watch
@@ -151,7 +148,7 @@ root(ROOTS.ExpansionFeatures,
 								follower(527),	-- Trick of the Trade
 								follower(524),	-- Unwashed Yak
 							}),
-						})),
+						}),
 						n(QUESTS, {
 							q(39278, {	-- The Missing Manifest
 								["provider"] = { "i", 127989 },	-- Waterlogged Manifest

@@ -2435,3 +2435,10 @@ i(0, 434552);	-- Versatile Ruby
 ------------------
 --- ITEM ---
 i(238922, 1226650);	-- Void-Crystal Panther
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+--- ITEM ---
+i(257031, 1261075);	-- Design: Draenethyst Sconce
+i(257030, 1261071);	-- Design: Draenic Basin

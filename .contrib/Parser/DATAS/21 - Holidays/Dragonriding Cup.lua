@@ -19,8 +19,8 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		es = "Copa de Surcacielos",
 		mx = "Copa de Cielonáutica",
 		ru = "Кубок полётов на Высший пилотаж",
-		--cn = TODO,
-		--tw = TODO,
+		-- cn = TODO,
+		-- tw = TODO,
 
 	},
 });

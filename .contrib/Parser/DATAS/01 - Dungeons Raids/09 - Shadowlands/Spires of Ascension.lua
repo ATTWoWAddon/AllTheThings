@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
-					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	-- Devos, Paragon of Doubt
 					["groups"] = {
 						ach(14326),	-- Spires of Ascension
 						-- Legendaries
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2412, {	-- Devos, Paragon of Doubt
-					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	-- Devos, Paragon of Doubt
 					["groups"] = {
 						ach(14324),	-- Heroic: Spires of Ascension
 					},
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
-					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	-- Devos, Paragon of Doubt
 					["groups"] = {
 						ach(14325),	-- Mythic: Spires of Ascension
 						ach(14384),	-- Mythic: Spires of Ascension Guild Run

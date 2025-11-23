@@ -1134,16 +1134,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
 				q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
 				q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
-				--	more steward info: https://imgur.com/0tLgE13
-				--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
-				--	Bumos / Ilapos / Asellia / Syla / Zenza
-				--	Abalus / Thima
-				--	Bola / Pico / Ipadipos / Chaermi
-				--	Gramilos / Apa / Dafi
-				--	Haka
-				--	Mupu / Deka / Laratis
-				--	Kimos / Toulis / Korinthe
-				--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
+				-- more steward info: https://imgur.com/0tLgE13
+				-- if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
+				-- Bumos / Ilapos / Asellia / Syla / Zenza
+				-- Abalus / Thima
+				-- Bola / Pico / Ipadipos / Chaermi
+				-- Gramilos / Apa / Dafi
+				-- Haka
+				-- Mupu / Deka / Laratis
+				-- Kimos / Toulis / Korinthe
+				-- Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 			}),
 		}),
 	}),

@@ -160,7 +160,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				q(43299, { ["isRepeatable"] = true, }),	-- Demon Commander (Azshara)
 				q(43283, { ["isRepeatable"] = true, }),	-- Demon Commander (Dun Morogh)
 				q(43286, { ["isRepeatable"] = true, }),	-- Demon Commander (Hillsbrad Foothills)
-				--q(xxxxx, { ["isRepeatable"] = true, }),	Demon Commander (Northern Barrens) - try to find ID
+				-- q(xxxxx, { ["isRepeatable"] = true, }),	Demon Commander (Northern Barrens) - try to find ID
 				q(43243, { ["isRepeatable"] = true, }),	-- Demon Commander (Tanaris)
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye

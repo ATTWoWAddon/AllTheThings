@@ -90,7 +90,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { ADDED_6_2_3 },
 		}),
-		--i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
+		-- i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -122,7 +122,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
-		--i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
+		-- i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
 		-- #if ANYCLASSIC
 		i(200060, {	-- Hoplet
 			["timeline"] = { ADDED_5_5_0 },
@@ -410,6 +410,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		------ Murloc Shells Set ------
+		-- #if AFTER 11.2.5
+		iensemble(255839, {	-- Collection: Baby Murloc Satch-Shells
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(188135, {	-- Frrgl's Shaking Shell
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -419,6 +424,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(188136, {	-- Mrrgl's Shiny Shell
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		-- #endif
 
 		------ Spirit Healer Collection ------
 		iensemble(239481, { ["timeline"] = { ADDED_11_2_0 } }),	-- Arsenal: Soul-Touched Collection
@@ -474,6 +480,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		------ Single Pieces ------
+		-- #if AFTER 11.2.5
+		iensemble(255827, {	-- Collection: Wings of Awakening
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(188257, {	-- Azure Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -492,6 +503,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(188256, {	-- Obsidian Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 
 		-- #if ANYCLASSIC
 		i(23705, {	-- Tabard of Flame
@@ -717,6 +729,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_0_7, },
 		}),
+		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.99999" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
+		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
 		}),
@@ -829,9 +844,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(212228, {	-- Soaring Sky Fox (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
-		}),
-		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 6, 2025
 		}),
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_10_1_7 },	-- Removed Sep 17th, 2023

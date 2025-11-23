@@ -6,13 +6,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(QUESTS, sharedData({
 			["isWorldQuest"] = true,
 		},{
-			q(55664, {	-- A Blow to Morale
-				["races"] = HORDE_ONLY,
-			}),
 			q(56036, {	-- A Steamy Situation
-				["groups"] = {
-					i(168666),	-- Hefty Glimmershell (QI!)
-				},
+				i(168666),	-- Hefty Glimmershell (QI!)
 			}),
 			q(55970),	-- Attrition
 			q(55893),	-- Azanz, the Slitherblade
@@ -25,22 +20,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55890),	-- Champion Vyz'olgo the Mind-Taker
 			petbattle(q(56382)),	-- Chomp
 			q(57353, {	-- Deepcoil Cleansing
-				["groups"] = {
 					i(171257),	-- Voidtinged Substance (QI!)
-				},
 			}),
 			q(55973, {	-- Deepcoil Experiments
-				["groups"] = {
-					i(168634),	-- Telemancy Beacon (QI!)
-				},
+				i(168634),	-- Telemancy Beacon (QI!)
 			}),
 			q(57338),	-- Depopulation Effort
 			q(56032),	-- Dirty Dozen
 			petbattle(q(56386)),	-- Elderspawn of Nalaada
 			q(57340, {	-- Fathom Ray Feast
-				["groups"] = {
-					i(171254),	-- Fathom Ray Meat (QI!)
-				},
+				i(171254),	-- Fathom Ray Meat (QI!)
 			}),
 			petbattle(q(56391)),	-- Frenzied Knifefang
 			q(55895),	-- Frozen Winds of Zhiela
@@ -57,9 +46,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(56388),	-- Mindshackle
 			q(57335),	-- Murloc Mayhem
 			q(57354, {	-- Overdue
-				["groups"] = {
-					i(171262),	-- Shirakess Grimoire (QI!)
-				},
+				i(171262),	-- Shirakess Grimoire (QI!)
 			}),
 			q(56385),	-- Pearlhusk Crawler
 			petbattle(q(56381)),	-- Prince Wiggletail

@@ -830,7 +830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.4, 40.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-				--	possibly requires The Threat of Flame?
+					-- possibly requires The Threat of Flame?
 				}),
 				q(25926, {	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden

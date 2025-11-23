@@ -1,14 +1,14 @@
 -- Database Container! Super neat things that store persistent data so they don't get wiped out!
 do
 -- The structure of the data is like so:
---  readable = "human readable string",
---  text = {
---    en = "english text",
---    es = "spanish text",
---    de = "german text",
---    fr = "french text",
---    [[it, pt, ru, ko, cn]]
---  },
+-- 	readable = "human readable string",
+-- 	text = {
+-- 		en = "english text",
+-- 		es = "spanish text",
+-- 		de = "german text",
+-- 		fr = "french text",
+-- 		[[it, pt, ru, ko, cn]]
+-- 	},
 -- Some containers have constant, export, description, lore, model.
 -- Refer to the invidual containers for more info.
 -- Database Container injections contain a bunch of small modifications / additions, but since we're using it everywhere, it is losing the data due to what is known as "data chomping" with how we are using it. To combat this, the tables are designed to persist their structures despite the root being freed every time a new file is loaded and processed.

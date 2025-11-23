@@ -2853,3 +2853,12 @@
 12.0.0.63967
 3106@@@Camp Stonewash, Zul'Aman
 3123@@@Master's Perch. Voidstorm
+12.0.0.64124
+3211@@@12.0 Silvermoon Teleport Thalassian University Base
+3212@@@12.0 Silvermoon Thalassian University Teleport Top
+12.0.0.64339
+3213@@@Quest Path 11346: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Up - Force Taxi - SJC
+3214@@@Quest Path 11347: 12.0 Z1 - Eversong - Teleporters - Tranquil Repose - Going Down - Force Taxi - SJC
+12.0.0.64499
+3215@@@Quest Path 11348: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Up - SJC
+3216@@@Quest Path 11349: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Down - SJC

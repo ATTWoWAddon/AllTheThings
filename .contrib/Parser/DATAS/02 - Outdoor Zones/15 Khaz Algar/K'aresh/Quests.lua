@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			header(HEADERS.Achievement, 41970, {	-- The Knife's Edge
 				header(HEADERS.AchCriteria, 41970.01, {	-- Chapter 1: A Shadowy Invitation
 					q(84956, {	-- A Shadowy Invitation
-						--["sourceQuests"] = { xx },	-- TODO: does it exist?
+						-- ["sourceQuests"] = { xx },	-- TODO: does it exist?
 						["qg"] = 227758,	-- Alleria Windrunner
 						["coord"] = { 42.4, 26.9, DORNOGAL },
 					}),
@@ -22,14 +22,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 59.5, 83.2, KARESH_TAZAVESH },
 					}),
 					------ Stay awhile and listen ------
-					--hqt(???, {	-- Stay awhile and listen: Locus-Walker
-					--	["name"] = "Stay awhile and listen: Locus-Walker",
-					--	["description"] = "Dialogue becomes available after you accept 'Restoring Operational Efficiency' (85003).",
-					--	["sourceQuests"] = { 84957 },	-- Return to the Veiled Market
-					--	["qg"] = 233706,	-- Locus-Walker
-					--	["coord"] = { 59.7, 83.4, KARESH_TAZAVESH },
-					--}),
-					--
+					-- hqt(???, {	-- Stay awhile and listen: Locus-Walker
+					-- 	["name"] = "Stay awhile and listen: Locus-Walker",
+					-- 	["description"] = "Dialogue becomes available after you accept 'Restoring Operational Efficiency' (85003).",
+					-- 	["sourceQuests"] = { 84957 },	-- Return to the Veiled Market
+					-- 	["qg"] = 233706,	-- Locus-Walker
+					-- 	["coord"] = { 59.7, 83.4, KARESH_TAZAVESH },
+					-- }),
 					q(84958, {	-- Beasts Unbound
 						["sourceQuests"] = { 84957 },	-- Return to the Veiled Market TODO: 85111 if skip will be to this place?
 						["qg"] = 230954,	-- Ta'ka
@@ -73,14 +72,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					------ Stay awhile and listen ------
-					--hqt(???, {	-- Stay awhile and listen: Alleria Windrunner
-					--	["name"] = "Stay awhile and listen: Alleria Windrunner",
-					--	["description"] = "Dialogue becomes available after you accept 'The Darkness Among Us' (84960).",
-					--	["sourceQuests"] = { 84960 },	-- The Darkness Among Us
-					--	["qg"] = 230609,	-- Alleria Windrunner
-					--	["coord"] = { 54.7, 66.9, KARESH_TAZAVESH },
-					--}),
-					--
+					-- hqt(???, {	-- Stay awhile and listen: Alleria Windrunner
+					-- 	["name"] = "Stay awhile and listen: Alleria Windrunner",
+					-- 	["description"] = "Dialogue becomes available after you accept 'The Darkness Among Us' (84960).",
+					-- 	["sourceQuests"] = { 84960 },	-- The Darkness Among Us
+					-- 	["qg"] = 230609,	-- Alleria Windrunner
+					-- 	["coord"] = { 54.7, 66.9, KARESH_TAZAVESH },
+					-- }),
 					q(84963, {	-- Sealing the Shadows
 						["sourceQuests"] = { 84960 },	-- The Darkness Among Us
 						["qg"] = 234601,	-- Om'en
@@ -203,13 +201,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 48.2, 36.6, KARESH },
 					}),
 					------ Stay awhile and listen ------
-					--hqt(???, {	-- Stay awhile and listen: Alleria Windrunner
-					--	["name"] = "Stay awhile and listen: Alleria Windrunner",
-					--	["description"] = "Dialogue becomes available after you accept 'The Reshii Ribbon' (86495).",
-					--	["sourceQuests"] = { 84855 },	-- Dead Silence
-					--	["qg"] = 233945,	-- Alleria Windrunner
-					--	["coord"] = { 48.3, 36.6, KARESH },
-					--}),
+					-- hqt(???, {	-- Stay awhile and listen: Alleria Windrunner
+					-- 	["name"] = "Stay awhile and listen: Alleria Windrunner",
+					-- 	["description"] = "Dialogue becomes available after you accept 'The Reshii Ribbon' (86495).",
+					-- 	["sourceQuests"] = { 84855 },	-- Dead Silence
+					-- 	["qg"] = 233945,	-- Alleria Windrunner
+					-- 	["coord"] = { 48.3, 36.6, KARESH },
+					-- }),
 					--
 					q(84856, {	-- Where the Void Gathers
 						["sourceQuests"] = { 86495 },	-- The Reshii Ribbon
@@ -233,13 +231,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					------ Stay awhile and listen ------
-					--hqt(???, {	-- Stay awhile and listen: Xal'atath / 61476 - no questID
-					--	["name"] = "Stay awhile and listen: Xal'atath",
-					--	["description"] = "Dialogue becomes available after you accept 'System Restart' (84858).",
-					--	["sourceQuests"] = { 84857 },	-- Eco-Dome: Primus
-					--	["qg"] = 230825,	-- Xal'atath
-					--	["coord"] = { 47.1, 54.6, KARESH },
-					--}),
+					-- hqt(???, {	-- Stay awhile and listen: Xal'atath / 61476 - no questID
+					-- 	["name"] = "Stay awhile and listen: Xal'atath",
+					-- 	["description"] = "Dialogue becomes available after you accept 'System Restart' (84858).",
+					-- 	["sourceQuests"] = { 84857 },	-- Eco-Dome: Primus
+					-- 	["qg"] = 230825,	-- Xal'atath
+					-- 	["coord"] = { 47.1, 54.6, KARESH },
+					-- }),
 					--
 					q(84859, {	-- Damage Report 101
 						["sourceQuests"] = { 84858 },	-- System Restart
@@ -536,13 +534,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 60.2, 29.2, KARESH },
 					}),
 					------ Stay awhile and listen ------
-					--hqt(???, {	-- Stay awhile and listen: Alleria Windrunner - no questID
-					--	["name"] = "Stay awhile and listen: Alleria Windrunner",
-					--	["description"] = "Dialogue becomes available after you accept 'The Calm Before We Storm' (84897).",
-					--	["sourceQuests"] = { 84896 },	-- The Next Dimension
-					--	["qg"] = 230817,	-- Alleria Windrunner
-					--	["coord"] = { 60.7, 27.9, KARESH },
-					--}),
+					-- hqt(???, {	-- Stay awhile and listen: Alleria Windrunner - no questID
+					-- 	["name"] = "Stay awhile and listen: Alleria Windrunner",
+					-- 	["description"] = "Dialogue becomes available after you accept 'The Calm Before We Storm' (84897).",
+					-- 	["sourceQuests"] = { 84896 },	-- The Next Dimension
+					-- 	["qg"] = 230817,	-- Alleria Windrunner
+					-- 	["coord"] = { 60.7, 27.9, KARESH },
+					-- }),
 					--
 					q(84899, {	-- Shadowguard Diffusion
 						["sourceQuests"] = { 84897 },	-- The Calm Before We Storm
@@ -1600,7 +1598,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.03, {	-- Fox-strut
-					q(89240, {	--  Dream-Dream-Dream-Dream-Dreameringeding!
+					q(89240, {	-- Dream-Dream-Dream-Dream-Dreameringeding!
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1631,7 +1629,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.04, {	-- Lil' Lapbugs
-					q(89221, {	--  Leafing Things on the Ground
+					q(89221, {	-- Leafing Things on the Ground
 						["qg"] = 232385,	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["isWeekly"] = true,
@@ -1664,18 +1662,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.05, {	-- Rays of Sunshine
-					q(89242, {	--  I Want a Golden Ooze!
+					q(89242, {	-- I Want a Golden Ooze!
 						["qg"] = 231820,	-- Ve'nari
 						["coord"] = { 75.9, 34.2, KARESH },
 						["isWeekly"] = true,
 						["groups"] = { i(238916) },	-- Anima Vacuum (PQI!)
 					}),
-					q(89065, {	--  Ray-cing for the Future
+					q(89065, {	-- Ray-cing for the Future
 						["qg"] = 235353,	-- Hemet Nesingwary
 						["coord"] = { 75.8, 34.0, KARESH },
 						["isWeekly"] = true,
 					}),
-					q(89056, {	--  Ray-ket Ball, Redux
+					q(89056, {	-- Ray-ket Ball, Redux
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1695,7 +1693,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["isWeekly"] = true,
 						["groups"] = { i(238909) },	-- Anima Vacuum (PQI!)
 					}),
-					q(89213, {	--  Flights of Fancy
+					q(89213, {	-- Flights of Fancy
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1746,12 +1744,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["DisablePartySync"] = true,
 				}),
 				q(89380, {	-- Another World
-					--["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
+					-- ["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
 					["qg"] = 241601,	-- Shad'anis
 					["coord"] = { 74.9, 31.1, KARESH },
 				}),
 				q(89561, {	-- Wrapped Up
-					--["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
+					-- ["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
 					["qg"] = 241588,	-- Hashim
 					["coord"] = { 50.3, 36.3, KARESH },
 				}),
@@ -2096,7 +2094,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				header(HEADERS.AchCriteria, 42739.07, {	-- Priest of the Old Ways
 					q(85019, {	-- An Outcast's Request
-						--["sourceQuests"] = { ??? },	-- Vignette never appeared on the map. Don't know which quest unlocks this. It is unlocked at some point during or at the end of Chapter 4.
+						-- ["sourceQuests"] = { ??? },	-- Vignette never appeared on the map. Don't know which quest unlocks this. It is unlocked at some point during or at the end of Chapter 4.
 						["qg"] = 231422,	-- Outcast Hizfran
 						["coord"] = { 77.7, 39.8, KARESH },
 						["groups"] = {
@@ -2624,8 +2622,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["isWeekly"] = true,
 			}),
 			-- Unsorted
-			--q(86492),	-- TODO: Alex - ach(42736),	-- Ixthar's Legacy
-			--q(90954),	-- TODO: Alex - ach(42742) Power of the Reshii / Regalia of the Reshii upgrade, should probably be automated in future?
+			-- q(86492),	-- TODO: Alex - ach(42736),	-- Ixthar's Legacy
+			-- q(90954),	-- TODO: Alex - ach(42742) Power of the Reshii / Regalia of the Reshii upgrade, should probably be automated in future?
 		}),
 	}),
 }));

@@ -539,18 +539,7 @@ exploration(5730),	-- Nordrassil Inn
 exploration(5731),	-- Whelgar's Retreat
 exploration(5732),	-- Halls of Origination
 exploration(5733),	-- Molten Front
-exploration(5738),	-- Malfurion's Breach
-exploration(5739),	-- Ashen Fields
-exploration(5740),	-- Magma Springs
-exploration(5741),	-- Igneous Depths
-exploration(5742),	-- Forlorn Spire
-exploration(5743),	-- The Widow's Clutch
-exploration(5744),	-- Wildflame Point
-exploration(5745),	-- The Furnace
-exploration(5746),	-- The Molten Flow
 exploration(5747),	-- Crumbling Stones
-exploration(5748),	-- Fireplume Peak
-exploration(5749),	-- Ragnaros' Reach
 exploration(5758),	-- Dreadmist Camp
 exploration(5763),	-- Rhyolith Plateau
 exploration(5764),	-- Beth'tilac's Lair

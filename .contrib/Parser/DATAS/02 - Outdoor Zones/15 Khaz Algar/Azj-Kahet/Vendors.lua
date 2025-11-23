@@ -402,22 +402,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
-			--Seasonal gear vendor for Mark of the Spelunker Supreme (TODO: move & symlink to M+ category)
-			--raid, hero gear
+			-- Seasonal gear vendor for Mark of the Spelunker Supreme (TODO: move & symlink to M+ category)
+			-- raid, hero gear
 			n(224270, {	-- Ip'xal
 				["coord"] = { 57.0, 45.8, NERUBAR_LOWER },
 				["groups"] = {
-					--symlink?
-					--everything for 1x
+					-- symlink?
+					-- everything for 1x
 					i(226206),	-- Mark of the Spelunker Supreme
 				},
 			}),
-			--pvp
+			-- pvp
 			n(224267, {	-- Ab'xal
 				["coord"] = { 57.3, 45.9, NERUBAR_LOWER },
 				["groups"] = {
-					--symlink?
-					--everything for 1x
+					-- symlink?
+					-- everything for 1x
 					i(226206),	-- Mark of the Spelunker Supreme
 				},
 			}),

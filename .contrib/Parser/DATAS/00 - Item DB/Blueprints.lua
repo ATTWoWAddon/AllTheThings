@@ -1,5 +1,5 @@
---Note!! This is needed because Blizzard keeps removing recipeID's from the itemDB
---So this serves to preserve the ID's so they are always collectible
+-- Note!! This is needed because Blizzard keeps removing recipeID's from the itemDB
+-- So this serves to preserve the ID's so they are always collectible
 
 local Items = ItemDBConditional;
 local i = function(itemID, spellID)

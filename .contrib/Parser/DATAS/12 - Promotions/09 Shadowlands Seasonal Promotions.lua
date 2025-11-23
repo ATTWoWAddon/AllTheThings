@@ -21,7 +21,11 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_9_0_5 },
 		["groups"] = {
 			-- SEASON 1
+			-- #if AFTER 11.2.5
+			i(258430, {	-- Wandering Ancient (MOUNT!)
+			-- #else
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
+			-- #endif
 				["description"] = "Granted to players by logging in on character of at least level 20.",
 				["timeline"] = { ADDED_9_0_5 },
 				["u"] = REMOVED_FROM_GAME,	-- Not sure when it got removed. Maybe DF Prepatch?
@@ -58,7 +62,7 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			i(97213, {	-- Hood of Hungering Darkness
-				--["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
+				-- ["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
 				["timeline"] = { ADDED_9_2_5 },
 				["u"] = REMOVED_FROM_GAME,	-- Removed again on August 24th 2022
 			}),
@@ -77,7 +81,11 @@ root(ROOTS.Promotions, {
 					REMOVED_9_2_7,	-- 23 September 2022, 3 days after the event ended.
 				},
 			}),
-			mount(386452, {	-- Frostbrood Proto-Wyrm
+			-- #if AFTER 11.2.5
+			i(258476, {	-- Frostbrood Proto-Wyrm (MOUNT!)
+			-- #else
+			mount(386452, {	-- Frostbrood Proto-Wyrm (MOUNT!)
+			-- #endif
 				["description"] = "In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",
 				["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 			}),

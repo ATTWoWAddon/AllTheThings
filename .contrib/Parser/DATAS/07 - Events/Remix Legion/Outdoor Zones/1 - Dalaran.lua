@@ -10,14 +10,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				explorationHeader({
 					visit_exploration(15177,{coord={47.2,87.7,LEGION_DALARAN}}),	-- Dalaran
 				}),
-				n(ACHIEVEMENTS, {
-				}),
-				n(QUESTS, {
-				}),
-				n(VENDORS, {
-				}),
-				n(ZONE_REWARDS, {
-				}),
 			},
 		}),
 	}),

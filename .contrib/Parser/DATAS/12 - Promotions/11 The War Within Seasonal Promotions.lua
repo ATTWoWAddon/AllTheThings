@@ -40,6 +40,17 @@ RAZER = createHeader({
 		en = "Promotion for Razer Gaming Peripherals World of Warcraft Collection. Purchasing any item will award all three promotional codes.",
 	},
 });
+TREASURE_OF_AZEROTH = createHeader({
+	readable = "Treasures of Azeroth",
+	icon = 7259806,
+	text = {
+		en = "Treasures of Azeroth",
+		-- cn = "雷蛇",
+	},
+	description = {
+		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
+	},
+});
 
 root(ROOTS.Promotions, {
 	n(THE_WAR_WITHIN_SEASONAL_PROMOTIONS, {
@@ -72,6 +83,25 @@ root(ROOTS.Promotions, {
 				i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
 					["description"] = "Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Editon Collection.",
 				}),
+			}));
+			n(TREASURE_OF_AZEROTH, sharedDataSelf({
+				["timeline"] = { "added 11.2.5.64395" },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+				--	cnONLY(i(, {	-- Azerothian Treasure Coins ToDo: Its currency to buy all the items
+				--	ToDo: Add Cost: https://wow.zamimg.com/uploads/screenshots/normal/1251957.jpg
+						cnONLY(i(252679)),	-- Mechanical Prototype Panther MK-0
+						cnONLY(i(252681)),	-- Steel Prototype Panther MK-0
+						cnONLY(i(223471)),	-- Kaldorei War Wolf
+						cnONLY(i(223459)),	-- Blackrock Warsaber
+						cnONLY(i(71726)),	-- Murkablo
+						cnONLY(i(72134)),	-- Gregarious Grell
+					--	cnONLY(i()),	-- Sands of Time (Different game?)
+					--	cnONLY(i()),	-- Karesh expedition resupply
+					--	cnONLY(i()),	-- Shard of Azeroth Fragment
+				--	})),
+				},
 			}));
 			-- "Pre Season"
 			cnONLY(ach(40910, {	-- Successfully Stress Test CN Realms
@@ -293,11 +323,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Break the Meta: TWW Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 2's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-2/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on June 24th for US, June 25th for EU & June 26th for CN/KR/TW & lasts for 1 week.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.61609" },
 			}),
-			i(235987, { -- Adorned Half Shell (COSMETIC!)
+			i(235987, {	-- Adorned Half Shell (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between July 14th, 10:00 a.m. & August 11th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.2.0.62493" },	-- Removed August 11, 2025
 			}),
-			i(246451, { -- Shadefur Brewthief (PET!)
+			i(246451, {	-- Shadefur Brewthief (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63163" },	-- Removed September 16, 2025
 			}),
@@ -322,7 +352,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63305" },	-- Removed September 30, 2025
 				["u"] = REAL_MONEY,
 			}),
-			i(257515, { -- Lil' Coalee (PET!)
+			i(257515, {	-- Lil' Coalee (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.5.64154" },	-- Removed October 29th, 2025
 			}),
@@ -336,7 +366,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REAL_MONEY,
 			}),
-			iensemble(242480, { -- Ensemble: Violet Sweatsuit
+			iensemble(242480, {	-- Ensemble: Violet Sweatsuit
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
 			}),
@@ -345,11 +375,16 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 			--	["u"] = REMOVED_FROM_GAME,	-- 27th November 2025
 			}),
+			i(257518, {	-- Lil' Ashlee (PET!)
+				["description"] = "Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",
+				["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed December 8th, 2025
+				["u"] = REAL_MONEY,
+			}),
 		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,
 		--	PVE	["description"] = "Mythic Dungeon International: TWW Season 3\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive an exclusive Toy to use in-game!\nSign-ups close 30th September 2025 3PM PDT and The Time Trials are on 1st October 1PM PDT - 6th October (US) 3PM PDT. For more details & requirements check out: Raider.io/tournaments",
 		--	PVP	["description"] = "Arena World Championship: TWW Season 2\n\nSign up on Raider.io for any of the 3 Cups, available until April 11th 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",
-		--	BtM ["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",			
+		--	BtM ["description"] = "Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",
 		--		["timeline"] = { ADDED_11_0_2 },
 		--		["icon"] = 4731630,
 		--		["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"

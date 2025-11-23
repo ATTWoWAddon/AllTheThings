@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
-				e(105, {  -- Rom'ogg Bonecrusher
+				e(105, {	-- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
 						i(55278),	-- Inquisition Robes
@@ -133,7 +133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55777),	-- Torturer's Mercy
 					},
 				}),
-				e(106, {  -- Corla, Herald of Twilight
+				e(106, {	-- Corla, Herald of Twilight
 					["crs"] = { 39679 },	-- Corla, Herald of Twilight
 					["groups"] = {
 						i(55264),	-- Armbands of Change
@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55265),	-- Signet of Transformation
 					},
 				}),
-				e(107, {  -- Karsh Steelbender
+				e(107, {	-- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
 						i(55268),	-- Bracers of Cooled Anger
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55272),	-- Steelbender's Masterpiece
 					},
 				}),
-				e(108, {  -- Beauty
+				e(108, {	-- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
 						i(55273),	-- Beauty's Chew Toy
@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55276),	-- Kibble
 					},
 				}),
-				e(109, {  -- Ascendent Lord Obsidius
+				e(109, {	-- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
 						-- #if BEFORE 7.3.5
@@ -188,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			})),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(105, {  -- Rom'ogg Bonecrusher
+				e(105, {	-- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
 						ach(5281),	-- Crushing Bones and Cracking Skulls
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56312),	-- Torturer's Mercy
 					},
 				}),
-				e(106, {  -- Corla, Herald of Twilight
+				e(106, {	-- Corla, Herald of Twilight
 					["crs"] = { 39679 },	-- Corla, Herald of Twilight
 					["groups"] = {
 						ach(5282),	-- Arrested Development
@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56299),	-- Signet of Transformation
 					},
 				}),
-				e(107, {  -- Karsh Steelbender
+				e(107, {	-- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
 						ach(5283),	-- Too Hot to Handle
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56302),	-- Steelbender's Masterpiece
 					},
 				}),
-				e(108, {  -- Beauty
+				e(108, {	-- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
 						i(56305),	-- Beauty's Silken Ribbon
@@ -231,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56307),	-- Kibble
 					},
 				}),
-				e(109, {  -- Ascendent Lord Obsidius
+				e(109, {	-- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
 						ach(5284),	-- Ascendant Descending
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				e(105, {  -- Rom'ogg Bonecrusher
+				e(105, {	-- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
 						i(157608, {	-- Groundrumble Boots
@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56312),	-- Torturer's Mercy
 					},
 				}),
-				e(106, {  -- Corla, Herald of Twilight
+				e(106, {	-- Corla, Herald of Twilight
 					["crs"] = { 39679 },	-- Corla, Herald of Twilight
 					["groups"] = {
 						i(56297),	-- Armbands of Change
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56299),	-- Signet of Transformation
 					},
 				}),
-				e(107, {  -- Karsh Steelbender
+				e(107, {	-- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
 						i(56301),	-- Bracers of Cooled Anger
@@ -292,7 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56302),	-- Steelbender's Masterpiece
 					},
 				}),
-				e(108, {  -- Beauty
+				e(108, {	-- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
 						i(56305),	-- Beauty's Silken Ribbon
@@ -305,7 +305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56307),	-- Kibble
 					},
 				}),
-				e(109, {  -- Ascendent Lord Obsidius
+				e(109, {	-- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
 						ach(4833),	-- Blackrock Caverns
@@ -322,25 +322,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(105, {  -- Rom'ogg Bonecrusher
+				e(105, {	-- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
 						ach(5281),	-- Crushing Bones and Cracking Skulls
 					},
 				}),
-				e(106, {  -- Corla, Herald of Twilight
+				e(106, {	-- Corla, Herald of Twilight
 					["crs"] = { 39679 },	-- Corla, Herald of Twilight
 					["groups"] = {
 						ach(5282),	-- Arrested Development
 					},
 				}),
-				e(107, {  -- Karsh Steelbender
+				e(107, {	-- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
 						ach(5283),	-- Too Hot to Handle
 					},
 				}),
-				e(109, {  -- Ascendent Lord Obsidius
+				e(109, {	-- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
 						ach(5284),	-- Ascendant Descending
@@ -354,7 +354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
 				["groups"] = {
-					e(109, {  -- Ascendent Lord Obsidius
+					e(109, {	-- Ascendent Lord Obsidius
 						["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 						["groups"] = {
 							ach(41139),	-- Protocol Inferno: Blackrock Caverns

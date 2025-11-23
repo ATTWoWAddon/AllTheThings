@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58975),	-- Pest Removal
 			q(60337, {	-- Pupa Trooper
 				["groups"] = {
-					o(352047, {	--Ardenmoth Cocoon
+					o(352047, {	-- Ardenmoth Cocoon
 						i(178717),	-- Ardenmoth Cocoon (QI!)
 					}),
 				},

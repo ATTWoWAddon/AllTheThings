@@ -164,7 +164,7 @@ root(ROOTS.Zones, {
 					["questID"] = 39802,
 					["coord"] = { 51.0, 48.5, HIGHMOUNTAIN },
 					["groups"] = {
-					--	i(129190),	-- Rope of Friendship
+						-- i(129190),	-- Rope of Friendship
 					},
 				}),
 				n(98024, {	-- Luggut the Eggeater

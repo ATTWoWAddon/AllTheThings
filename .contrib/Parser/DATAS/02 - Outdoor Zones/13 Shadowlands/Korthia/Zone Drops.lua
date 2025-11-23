@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			i(187177),	-- Researching Korthian Relics (QI!)
 		-- Patterns
 			i(186995),	-- Pattern: Shrouded Hand Towel
-		--	Korthian Relics (putting here barring a better place for them)
+			-- Korthian Relics (putting here barring a better place for them)
 			i(187311),	-- Azgoth's Tattered Maps
 			i(187465),	-- Complicated Organism Harvester
 			i(187333),	-- Core of an Unknown Titan
@@ -140,12 +140,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			i(187458),	-- Unearthed Teleporter Sigil
 			i(187459),	-- Vial of Mysterious Liquid
 			i(187478),	-- White Razorwing Talon
-		--	Cosmetics
+			-- Cosmetics
 			i(187253),	-- Maw Guard's Spiked Spaulders
 			i(187252),	-- Ritualist's Spiked Mantle
-		--	Blues
+			-- Blues
 			i(186969),	-- Collapsing Riftstone
-		--	Greens
+			-- Greens
 			i(186153),	-- Forsworn Seal
 			i(186151),	-- Mawsworn Assasin's Twinblade
 			i(186143),	-- Mawsworn Assassin's Backstabber

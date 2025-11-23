@@ -154,10 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(769),	-- Arcane Golems
 					follower(817),	-- Arcane Golems
 					follower(818),	-- Arcane Golems
@@ -178,7 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(814),	-- Water Elemental
 					follower(815),	-- Water Elemental
 					follower(816),	-- Water Elemental
-				})),
+				}),
 				n(QUESTS, {
 					-- Intro
 					q(41035, {	-- Felstorm's Plea
@@ -672,9 +669,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 108342 },	-- Millhouse Manastorm
 						["coord"] = { 56.0, 58.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["groups"] = {
-							follower(723),	-- Millhouse Manastorm
-						},
+						["groups"] = { follower(723) },	-- Millhouse Manastorm
 					}),
 					-- Chap 3
 					q(42707, {	-- Eye of Azshara: A Magical Affliction
@@ -774,23 +769,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
 							o(268476, {	-- Cache of the Sin'dorei
-								["coord"] = { 58.6, 67.6, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								["coord"] = { 58.6, 67.6, HALL_OF_THE_GUARDIAN },
 								["groups"] = { i(146404) },	-- Coronet of the Lu'minellia (QI!)
 							}),
 							o(268477, {	-- Crystallized Sillithid Essence
-								["coord"] = { 63.1, 43.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								["coord"] = { 63.1, 43.1, HALL_OF_THE_GUARDIAN },
 								["groups"] = { i(146405) },	-- Crystallized Silithid Essence (QI!)
 							}),
 							o(268474, {	-- Erno's Enigma
-								["coord"] = { 82.6, 25.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								["coord"] = { 82.6, 25.8, HALL_OF_THE_GUARDIAN },
 								["groups"] = { i(146402) },	-- Erno's Enigma (QI!)
 							}),
 							o(268479, {	-- Nightborne Soulstone
-								["coord"] = { 72.8, 60.5, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								["coord"] = { 72.8, 60.5, HALL_OF_THE_GUARDIAN },
 								["groups"] = { i(146409) },	-- Nightborne Soulstone (QI!)
 							}),
 							o(268475, {	-- Twilight Reliquary
-								["coord"] = { 50.0, 58.5, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								["coord"] = { 50.0, 58.5, HALL_OF_THE_GUARDIAN },
 								["groups"] = { i(146403) },	-- Twilight Device (QI!)
 							}),
 						},

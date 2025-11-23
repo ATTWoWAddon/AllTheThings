@@ -1,0 +1,137 @@
+1.15.1.53009
+exploration(15159),	-- The Searing Basin
+1.15.3.55112
+exploration(15475),	-- Demon Fall Canyon
+exploration(15531),	-- The Tainted Scar
+exploration(15532),	-- Storm Cliffs
+1.15.3.55244
+exploration(15540),	-- Demon Fall Barrow
+1.15.4.56400
+exploration(15793),	-- Elsewhen
+exploration(15809),	-- Felwood
+exploration(15810),	-- Bloodvenom Post \\ Bloodvenom Post
+exploration(15811),	-- Bloodvenom Falls
+exploration(15812),	-- Bloodvenom River
+exploration(15813),	-- Jaedenar
+exploration(15814),	-- Shatter Scar Vale
+exploration(15815),	-- Ruins of Constellas
+exploration(15816),	-- Grove of the Ancients
+exploration(15817),	-- Wildbend River
+exploration(15818),	-- Twilight Shore
+exploration(15819),	-- Twilight Vale
+exploration(15820),	-- The Master's Glaive
+exploration(15821),	-- Ameth'Aran
+exploration(15822),	-- Blackwood Den
+exploration(15825),	-- The Crystal Vale
+exploration(15828),	-- The Burning of Andorhal
+exploration(15938),	-- Starfall Village
+1.15.5.57537
+exploration(16003),	-- Azshara
+exploration(16004),	-- Hyjal
+exploration(16005),	-- Darkwhisper Gorge
+exploration(16006),	-- Xavian
+exploration(16007),	-- Satyrnaar
+exploration(16008),	-- Bough Shadow
+exploration(16009),	-- Forest Song
+exploration(16010),	-- Warsong Lumber Camp
+exploration(16011),	-- Southfury River
+exploration(16012),	-- Nightsong Woods
+exploration(16013),	-- Shadowsong Shrine
+exploration(16014),	-- Southfury River
+exploration(16015),	-- Haldarr Encampment
+exploration(16016),	-- Talrendis Point
+exploration(16017),	-- Desolace
+exploration(16018),	-- Feralas
+exploration(16019),	-- The Maul
+exploration(16020),	-- Valley of Bones
+exploration(16021),	-- Gelkis Village
+exploration(16022),	-- Mannoroc Coven
+exploration(16023),	-- Dream Bough
+exploration(16024),	-- Jademir Lake
+exploration(16025),	-- Ruins of Ravenwind
+exploration(16026),	-- The Twin Colossals
+exploration(16027),	-- Oneiros
+exploration(16028),	-- Eastern Plaguelands
+exploration(16029),	-- The Hinterlands
+exploration(16030),	-- Lake Mereldar
+exploration(16031),	-- The Undercroft
+exploration(16032),	-- Scarlet Base Camp
+exploration(16033),	-- Darrowshire
+exploration(16034),	-- The Creeping Ruin
+exploration(16035),	-- The Forbidding Sea
+exploration(16036),	-- Skulk Rock
+exploration(16037),	-- Seradane
+exploration(16038),	-- The Overlook Cliffs
+exploration(16039),	-- Agol'watha
+exploration(16040),	-- Shaol'watha
+exploration(16041),	-- Valorwind Lake
+exploration(16074),	-- Karazhan Crypts
+exploration(16076),	-- Temple of Ahn'Qiraj
+exploration(16113),	-- Redridge Mountains
+exploration(16114),	-- Deadwind Pass
+exploration(16115),	-- Blasted Lands
+exploration(16116),	-- Swamp of Sorrows
+exploration(16117),	-- Stranglethorn Vale
+exploration(16118),	-- Elwynn Forest
+exploration(16119),	-- Duskwood
+exploration(16120),	-- Lakeridge Highway
+exploration(16121),	-- Three Corners
+exploration(16122),	-- Deadman's Crossing
+exploration(16123),	-- Sleeping Gorge
+exploration(16124),	-- The Vice
+exploration(16125),	-- Morgan's Plot
+exploration(16126),	-- Karazhan
+exploration(16127),	-- Ariden's Camp
+exploration(16128),	-- Deadwind Ravine
+exploration(16129),	-- Zul'Gurub
+exploration(16130),	-- Ridgepoint Tower
+exploration(16131),	-- Eastvale Logging Camp
+exploration(16132),	-- Beggar's Haunt
+exploration(16133),	-- Tranquil Gardens Cemetery
+exploration(16134),	-- Darkshire
+exploration(16135),	-- Brightwood Grove
+exploration(16136),	-- Manor Mistmantle
+exploration(16137),	-- The Darkened Bank
+exploration(16138),	-- Misty Valley
+exploration(16139),	-- Itharius's Cave
+exploration(16140),	-- Splinterspear Junction
+exploration(16141),	-- Altar of Storms
+exploration(16142),	-- The Tainted Scar
+exploration(16143),	-- Dreadmaul Hold
+exploration(16147),	-- Elwynn Forest
+exploration(16148),	-- Duskwood
+exploration(16149),	-- Westfall
+exploration(16150),	-- Jerod's Landing
+exploration(16151),	-- Forest's Edge
+exploration(16152),	-- The Stonefield Farm
+exploration(16153),	-- The Maclure Vineyards
+exploration(16154),	-- Tower of Azora
+exploration(16155),	-- Fargodeep Mine
+exploration(16156),	-- Brackwell Pumpkin Patch
+exploration(16157),	-- The Hushed Bank
+exploration(16158),	-- The Darkened Bank
+exploration(16159),	-- Addle's Stead
+exploration(16160),	-- Twilight Grove
+exploration(16161),	-- Darkshire
+exploration(16162),	-- Raven Hill Cemetery
+exploration(16163),	-- The Yorgen Farmstead
+exploration(16164),	-- Vul'Gol Ogre Mound
+exploration(16165),	-- Forlorn Rowe
+exploration(16166),	-- Brightwood Grove
+exploration(16167),	-- The Rotting Orchard
+exploration(16168),	-- Raven Hill
+exploration(16169),	-- Ashenvale
+1.15.6.58185
+exploration(16236),	-- Scarlet Enclave
+1.15.7.59706
+exploration(16295),	-- The Scarab Dais
+exploration(16335),	-- New Avalon
+exploration(16361),	-- The Forbidding Sea
+exploration(16362),	-- Shadow Hold
+exploration(16369),	-- Prison
+exploration(16370),	-- Tyr's Hand
+exploration(16371),	-- New Avalon
+exploration(16372),	-- The Forbidding Expanse
+exploration(16373),	-- Mine
+exploration(16374),	-- Arcane Sanctum
+exploration(16394),	-- Naxxramas

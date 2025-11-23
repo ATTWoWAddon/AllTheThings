@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80148, {	-- Curious Dalaran Relic [Arathi Highlands]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216947 },	-- Whirring Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { ARATHI_HIGHLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80152, {	-- Curious Dalaran Relic [Badlands]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216951 },	-- Slippery Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BADLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80098, {	-- Curious Dalaran Relic [Deadwind Pass]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216945 },	-- Curious Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80151, {	-- Curious Dalaran Relic [Desolace]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216950 },	-- Creepy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { DESOLACE },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80147, {	-- Curious Dalaran Relic [Duskwood]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216946 },	-- Glittering Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80149, {	-- Curious Dalaran Relic [Swamp of Sorrows]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216948 },	-- Odd Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { SWAMP_OF_SORROWS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80150, {	-- Curious Dalaran Relic [The Barrens]
-					--["sourceQuest"] = ,	--
+					-- ["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216949 },	-- Heavy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>

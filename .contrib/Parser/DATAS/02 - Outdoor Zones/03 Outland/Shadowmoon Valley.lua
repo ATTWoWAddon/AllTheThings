@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3753,{coord={58.1,37.4,SHADOWMOON_VALLEY}}),	-- Ruins of Baa'ri
 					exploration(3756),	-- Ruins of Karabor
 					visit_exploration(3938,{coord={55.0,59.8,SHADOWMOON_VALLEY}}),	-- Sanctum of the Stars
-					--exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
+					-- exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
 					exploration(3744),	-- Shadowmoon Village
 					visit_exploration(3926,{coord={52.2,18.2,SHADOWMOON_VALLEY}}),	-- Shattered Plains
 					exploration(3932),	-- Sketh'lon Base Camp

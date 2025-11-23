@@ -3833,6 +3833,12 @@
 3340@@@+10 Critical Strike Rating
 2.5.4.42581
 2669@@@+40 Spell Damage and Healing
+2.5.5.64508
+2760@@@+3 Spell Critical Rating and +4 Spell Damage 
+3045@@@+5 Strength and +6 Stamina 
+3050@@@+6 Spell Damage and +4 Intellect 
+3110@@@+3 Spell Hit Rating and +4 Spell Damage 
+3155@@@Chance to Increase Melee/Ranged Attack Speed 
 3.0.1.8303
 2506@@@+28 Melee Critical Strike Rating
 2523@@@+30 Ranged Hit Rating
@@ -4902,9 +4908,7 @@
 3882@@@+8 Armor Penetration Rating
 3883@@@Rune of the Nerubian Carapace
 3.4.0.45854
-3045@@@+5 Strength and +6 Stamina 
 3050@@@+6 Spell Power and +4 Intellect 
-3155@@@Chance to Increase Melee/Ranged Attack Speed 
 3430@@@+6 Defense Rating and +9 Stamina 
 3643@@@Chance to Increase Melee/Ranged Attack Speed 
 3700@@@+7 Defense Rating and +11 Stamina 
@@ -4912,6 +4916,83 @@
 2888@@@+12 Block Value
 2975@@@+10 Block Value
 3363@@@+27 Block Value
+3.80.0.64393
+2759@@@+8 Block Rating
+2788@@@+9 Block Rating
+2789@@@+15 Block Rating
+2801@@@+8 Block Rating
+2856@@@+4 Block Rating
+2859@@@+5 Stamina
+2862@@@+5 Stamina
+2867@@@+3 Stamina
+2878@@@+6 Stamina
+2891@@@+10 Block Rating
+2933@@@+15 Block Rating
+3000@@@+18 Stamina, +12 Dodge Rating, and +12 Block Rating
+3004@@@+18 Stamina and +20 Defense Rating
+3069@@@+6 Spell Power and +4 Block Rating
+3079@@@+8 Attack Power and +5 Block Rating
+3080@@@+6 Stamina and +5 Block Rating
+3084@@@+5 Dodge Rating and +4 Block Rating
+3087@@@+5 Strength and +4 Block Rating
+3090@@@+5 Parry Rating and +4 Block Rating
+3131@@@+10 Block Rating
+3215@@@+12 Block Rating
+3226@@@+4 Block Rating and +6 Stamina
+3229@@@+36 Shield Block Value
+3245@@@+20 Block Rating
+3284@@@+5 Block Rating and +7 Stamina
+3385@@@+12 Block Rating
+3408@@@+6 Strength and +6 Block Rating
+3412@@@+6 Agility and +6 Block Rating
+3416@@@+7 Spell Power and +6 Block Rating
+3424@@@+12 Attack Power and +6 Block Rating
+3431@@@+6 Block Rating and +9 Stamina
+3436@@@+6 Block Rating and +6 Spirit
+3441@@@+6 Block Rating and +3 Mana every 5 seconds
+3462@@@+16 Block Rating
+3480@@@+8 Strength and +8 Block Rating
+3484@@@+8 Agility and +8 Block Rating
+3489@@@+9 Spell Power and +8 Block Rating
+3493@@@+16 Attack Power and +8 Block Rating
+3503@@@+8 Block Rating and +12 Stamina
+3508@@@+8 Block Rating and +8 Spirit
+3513@@@+8 Block Rating and +4 Mana every 5 seconds
+3530@@@+20 Block Rating
+3552@@@+10 Strength and +10 Block Rating
+3556@@@+10 Agility and +10 Block Rating
+3561@@@+12 Spell Power and +10 Block Rating
+3566@@@+20 Attack Power and +10 Block Rating
+3576@@@+10 Block Rating and +15 Stamina
+3581@@@+10 Block Rating and +10 Spirit
+3586@@@+10 Block Rating and +5 Mana every 5 seconds
+3600@@@+9 Stamina
+3662@@@+14 Block Rating
+3680@@@+14 Attack Power and +7 Block Rating
+3684@@@+7 Strength and +7 Block Rating
+3688@@@+7 Agility and +7 Block Rating
+3692@@@+8 Spell Power and +7 Block Rating
+3707@@@+7 Block Rating and +7 Spirit
+3708@@@+7 Block Rating and +11 Stamina
+3713@@@+7 Block Rating and +4 Mana every 5 seconds
+3744@@@+34 Block Rating
+3792@@@+30 Stamina
+3793@@@+40 Attack Power and +23 Stamina
+3794@@@+23 Spell Power and +23 Stamina
+3795@@@+50 Attack Power and +30 Stamina
+3796@@@+29 Spell Power and +30 Stamina
+3797@@@+29 Spell Power and +30 Stamina
+3821@@@+8 Block Rating
+3842@@@+30 Stamina and +25 Block Rating
+3852@@@+30 Stamina and +15 Block Rating
+3853@@@+40 Block Rating and +28 Stamina
+8634@@@+12 Block Value
+8636@@@+$1266779s2 Ranged Hit Rating
+8639@@@+18 Block Value
+8640@@@+24 Critical Strike Rating
+8643@@@+10 Dodge Rating
+8645@@@+6 to All Stats
+8647@@@+12 Spell Power
 4.0.1.12911
 2@@@Frostbrand
 5@@@Flametongue
@@ -12949,3 +13030,130 @@
 12.0.0.63967
 8556@@@+$k1 Primary Stat and +0.15% critical strike effectiveness per unique Midnight gem color
 8557@@@+$k1 Primary Stat and +0.15% critical strike effectiveness per unique Midnight gem color
+12.0.0.64228
+7905@@@Sharpened: +$k1 Attack Power |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7906@@@Sharpened: +$k1 Attack Power |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7907@@@Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7908@@@Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7909@@@Razor Sharp: +$k1 Finesse |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7910@@@Razor Sharp: +$k1 Finesse |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7934@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7935@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7936@@@+$k1 Intellect & +$457615s1% Mana |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7937@@@+$k1 Intellect & +$457616s1% Mana |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7938@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7939@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7956@@@Enchant Chest - Mark of Nalorakk |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7957@@@Enchant Chest - Mark of Nalorakk |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7958@@@Enchant Helm - Hex of Leeching |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7959@@@Enchant Helm - Hex of Leeching |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7960@@@Enchant Helm - Empowered Hex of Leeching |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7961@@@Enchant Helm - Empowered Hex of Leeching |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7962@@@Enchant Boots - Lynx's Dexterity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7963@@@Enchant Boots - Lynx's Dexterity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7964@@@Enchant Ring - Amani Mastery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7965@@@Enchant Ring - Amani Mastery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7966@@@Enchant Ring - Eyes of the Eagle |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7967@@@Enchant Ring - Eyes of the Eagle |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7968@@@Enchant Ring - Zul'jins Mastery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7969@@@Enchant Ring - Zul'jins Mastery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7970@@@Enchant Shoulders - Flight of the Eagle |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7971@@@Enchant Shoulders - Flight of the Eagle |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7972@@@Enchant Shoulders - Akil'zon's Celerity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7973@@@Enchant Shoulders - Akil'zon's Celerity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7974@@@Enchant Tool - Amani Perception |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7975@@@Enchant Tool - Amani Perception |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7976@@@Enchant Tool - Amani Resourcfulness |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7977@@@Enchant Tool - Amani Resourcfulness |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7978@@@Enchant Weapon - Strength of Halazzi |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7979@@@Enchant Weapon - Strength of Halazzi |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7980@@@Enchant Weapon - Jan'alai's Precision |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7981@@@Enchant Weapon - Jan'alai's Precision |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7982@@@Enchant Weapon - Berserker's Rage |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7983@@@Enchant Weapon - Berserker's Rage |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7984@@@Enchant Chest - Mark of the Rootwarden |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7985@@@Enchant Chest - Mark of the Rootwarden |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7986@@@Enchant Chest - Mark of the Worldsoul |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7987@@@Enchant Chest - Mark of the Worldsoul |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7988@@@Enchant Helm - Blessing of Speed |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7989@@@Enchant Helm - Blessing of Speed |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7990@@@Enchant Helm - Empowered Blessing of Speed |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7991@@@Enchant Helm - Empowered Blessing of Speed |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7992@@@Enchant Boots - Shaladrassil's Roots |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7993@@@Enchant Boots - Shaladrassil's Roots |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7994@@@Enchant Ring - Nature's Wrath |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7995@@@Enchant Ring - Nature's Wrath |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7996@@@Enchant Ring - Nature's Fury |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7997@@@Enchant Ring - Nature's Fury |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+7998@@@Enchant Shoulders - Nature's Grace |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7999@@@Enchant Shoulders - Nature's Grace |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8000@@@Enchant Shoulders - Amirdrassil's Worldsoul's Grace |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8001@@@Enchant Shoulders - Amirdrassil's Grace |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8002@@@Enchant Tool - Haranir Finesse |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8003@@@Enchant Tool - Haranir Finesse |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8004@@@Enchant Tool - Haranir Multicrafting |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8005@@@Enchant Tool - Haranir Multicrafting |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8006@@@Enchant Weapon - Worldsoul Cradle |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8007@@@Enchant Weapon - Worldsoul Cradle |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8008@@@Enchant Weapon - Worldsoul Aegis |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8009@@@Enchant Weapon - Worldsoul Aegis |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8010@@@Enchant Weapon - Worldsoul Tenacity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8011@@@Enchant Weapon - Worldsoul Tenacity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8012@@@Enchant Chest - Mark of the Magister |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8013@@@Enchant Chest - Mark of the Magister |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8014@@@Enchant Helm - Rune of Avoidance |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8015@@@Enchant Helm - Rune of Avoidance |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8016@@@Enchant Helm - Empowered Rune of Avoidance |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8017@@@Enchant Helm - Empowered Rune of Avoidance |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8018@@@Enchant Boots - Farstrider's Hunt |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8019@@@Enchant Boots - Farstrider's Hunt |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8020@@@Enchant Ring - Thalassian Haste |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8021@@@Enchant Ring - Thalassian Haste |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8022@@@Enchant Ring - Thalassian Versatility |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8023@@@Enchant Ring - Thalassian Versatility |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8024@@@Enchant Ring - Silvermoon's Alacrity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8025@@@Enchant Ring - Silvermoon's Alacrity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8026@@@Enchant Ring - Silvermoon's Tenacity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8027@@@Enchant Ring - Silvermoon's Tenacity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8028@@@Enchant Shoulders - Thalassian Recovery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8029@@@Enchant Shoulders - Thalassian Recovery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8030@@@Enchant Shoulders - Silvermoon's Mending |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8031@@@Enchant Shoulders - Silvermoon's Mending |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8032@@@Enchant Tool - Sin'dorei Deftness |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8033@@@Enchant Tool - Sin'dorei Deftness |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8034@@@Enchant Tool - Ren'dorei Ingenuity |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8035@@@Enchant Tool - Ren'dorei Ingenuity |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8036@@@Enchant Weapon - Flames of the Sin'dorei |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8037@@@Enchant Weapon - Flames of the Sin'dorei |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8038@@@Enchant Weapon - Acuity of the Ren'dorei |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8039@@@Enchant Weapon - Acuity of the Ren'dorei |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8040@@@Enchant Weapon - Arcane Mastery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8041@@@Enchant Weapon - Arcane Mastery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8042@@@Illusory Adornment - Blooming Light |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8043@@@Illusory Adornment - Blooming Light |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8044@@@Illusory Adornment - Nature's Embrace |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8045@@@Illusory Adornment - Nature's Embrace |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8046@@@Illusory Adornment - Voidtouched |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8047@@@Illusory Adornment - Voidtouched |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8051@@@Thalassian Phoenix Oil |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8052@@@Thalassian Phoenix Oil |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8053@@@Oil of Dawn |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8054@@@Oil of Dawn |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8055@@@Smuggler's Enchanted Edge |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8056@@@Smuggler's Enchanted Edge |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8158@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8159@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8160@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8161@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8162@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8163@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8608@@@Laced Zoomshots |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8609@@@Laced Zoomshots |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8610@@@Weighted Boomshots|A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8611@@@Weighted Boomshots|A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8612@@@Smuggler's Lynxeye |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8613@@@Smuggler's Lynxeye |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8614@@@Farstrider's Hawkeye |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+8615@@@Farstrider's Hawkeye |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+12.0.0.64339
+8000@@@Enchant Shoulders - Amirdrassil's Grace |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a

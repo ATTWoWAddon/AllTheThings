@@ -221,6 +221,81 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}),
 					}),
 				}),
+				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+					filter(CLOAKS, {
+						i_RAID_GEAR_CONVERSION(247560),	-- Evergreen Vinewrap Drape
+						i_RAID_GEAR_CONVERSION(247512),	-- Gossamer-Spun Greatcloak
+					}),
+					filter(CLOTH, {
+						i_RAID_GEAR_CONVERSION(247517),	-- Ancient Dreamwoven Mantle
+						i_RAID_GEAR_CONVERSION(247514),	-- Celestially Aligned Hood
+						i_RAID_GEAR_CONVERSION(247513),	-- Clasp of Cosmic Insignificance
+						i_RAID_GEAR_CONVERSION(247520),	-- Cozy Dryad Hoof-Socks
+						i_RAID_GEAR_CONVERSION(247521),	-- Crimson Wool-Lined Slippers
+						i_RAID_GEAR_CONVERSION(247507),	-- Dreamscale Inlaid Vestments
+						i_RAID_GEAR_CONVERSION(247561),	-- Gloves of Murmured Promises
+						i_RAID_GEAR_CONVERSION(247505),	-- Handwraps of Delusional Power
+						i_RAID_GEAR_CONVERSION(247515),	-- Hood of Darkened Visions
+						i_RAID_GEAR_CONVERSION(247519),	-- Maddening Robe of Secrets
+						i_RAID_GEAR_CONVERSION(247518),	-- Mantle of Perpetual Bloom
+						i_RAID_GEAR_CONVERSION(247509),	-- Pliable Spider Silk Cinch
+						i_RAID_GEAR_CONVERSION(247516),	-- Ragged Horrorweave Leggings
+						i_RAID_GEAR_CONVERSION(247522),	-- Ragged Fur Wristwraps
+					}),
+					filter(LEATHER, {
+						i_RAID_GEAR_CONVERSION(247525),	-- Boots of Endless Betrayal
+						i_RAID_GEAR_CONVERSION(247531),	-- Cowl of Fright
+						i_RAID_GEAR_CONVERSION(247511),	-- Dragonspur Wristguards
+						i_RAID_GEAR_CONVERSION(247528),	-- Dreamsculptor's Gloves
+						i_RAID_GEAR_CONVERSION(247524),	-- Forest-Lord's Waistwrap
+						i_RAID_GEAR_CONVERSION(247562),	-- Grips of Silent Screams
+						i_RAID_GEAR_CONVERSION(247533),	-- Grove Keeper's Robe
+						i_RAID_GEAR_CONVERSION(247523),	-- Lifeless Buckled Girdle
+						i_RAID_GEAR_CONVERSION(247530),	-- Mask of Multitudinous Eyes
+						i_RAID_GEAR_CONVERSION(247532),	-- Otherworldly Leather Mantle
+						i_RAID_GEAR_CONVERSION(247529),	-- Repulsive Leathery Pants
+						i_RAID_GEAR_CONVERSION(247534),	-- Scarred Ragefang Chestpiece
+						i_RAID_GEAR_CONVERSION(247527),	-- Splotched Bloodfur Leggings
+						i_RAID_GEAR_CONVERSION(247526),	-- Stained Maggot Squishers
+						i_RAID_GEAR_CONVERSION(247535),	-- Wristwraps of Broken Trust
+					}),
+					filter(MAIL, {
+						i_RAID_GEAR_CONVERSION(247544),	-- Black Venom Sabatons
+						i_RAID_GEAR_CONVERSION(247537),	-- Creeping String of Larva
+						i_RAID_GEAR_CONVERSION(247541),	-- Disjointed Linkage Leggings
+						i_RAID_GEAR_CONVERSION(247564),	-- Gauntlets of Fractured Dreams
+						i_RAID_GEAR_CONVERSION(247538),	-- Gauntlets of Malevolent Intent
+						i_RAID_GEAR_CONVERSION(247506),	-- Gauntlets of the Demented Mind
+						i_RAID_GEAR_CONVERSION(247536),	-- Laughing Sister's Pouch-Chain
+						i_RAID_GEAR_CONVERSION(247504),	-- Malignant Sabatons
+						i_RAID_GEAR_CONVERSION(247547),	-- Manacles of the Nightmare Colossus
+						i_RAID_GEAR_CONVERSION(247542),	-- Matted Fur Pauldrons
+						i_RAID_GEAR_CONVERSION(247546),	-- Patient Ambusher's Hauberk
+						i_RAID_GEAR_CONVERSION(247545),	-- Scored Ironclaw Sabatons
+						i_RAID_GEAR_CONVERSION(247540),	-- Singular Chain Leggings
+						i_RAID_GEAR_CONVERSION(247543),	-- Thorny Bramblemail Pauldrons
+
+						-- Nighthold item, but drops in Emerald Nightmare
+						i_RAID_GEAR_CONVERSION(247036),	-- Helm of Shackled Elements
+					}),
+					filter(PLATE, {
+						i_RAID_GEAR_CONVERSION(247555),	-- Crown of Steely Brambles
+						i_RAID_GEAR_CONVERSION(247510),	-- Dragonbone Wristclamps
+						i_RAID_GEAR_CONVERSION(247552),	-- Eon-Tempered Waistplate
+						i_RAID_GEAR_CONVERSION(247549),	-- Fitted Ironbark Gauntlets
+						i_RAID_GEAR_CONVERSION(247508),	-- Horror Inscribed Chestguard
+						i_RAID_GEAR_CONVERSION(247548),	-- Insect-Etched Chestplate
+						i_RAID_GEAR_CONVERSION(247556),	-- Midnight Herald's Pauldrons
+						i_RAID_GEAR_CONVERSION(247557),	-- Pauldrons of Shifting Runes
+						i_RAID_GEAR_CONVERSION(247550),	-- Primal Gauntlets of Rage
+						i_RAID_GEAR_CONVERSION(247554),	-- Storm-Battered Legplates
+						i_RAID_GEAR_CONVERSION(247565),	-- Tarnished Dreamkeeper's Gauntlets
+						i_RAID_GEAR_CONVERSION(247558),	-- Trampling Warboots
+						i_RAID_GEAR_CONVERSION(247553),	-- Venom-Fanged Barbute
+						i_RAID_GEAR_CONVERSION(247551),	-- Waistplate of Nameless Horror
+						i_RAID_GEAR_CONVERSION(247559),	-- Wristclamps of Mad Dreams
+					}),
+				})),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 					header(HEADERS.Achievement, 60856, {	-- Darkbough
 						BossOnly(NYTHENDRA),

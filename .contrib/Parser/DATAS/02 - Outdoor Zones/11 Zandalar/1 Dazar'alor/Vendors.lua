@@ -918,9 +918,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.6, 57.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-				--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
-				--	i(142380),	-- Dutiful Squire (PET!)
-				--	i(139776),	-- Horde Fanatic (PET!)
+					-- i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
+					-- i(142380),	-- Dutiful Squire (PET!)
+					-- i(139776),	-- Horde Fanatic (PET!)
 				},
 			}),
 			n(122698, {	-- Xanjo <Leatherworking Trainer>

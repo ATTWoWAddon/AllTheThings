@@ -172,22 +172,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(9564, {	-- Securing Draenor (A)
-						["collectible"] = false,
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(26248),	-- Assault on the Pit
-							crit(26249),	-- Assault on the Everbloom Wilds
-						},
-					}),
-					ach(9562, {	-- Securing Draenor (H)
-						["collectible"] = false,
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(26229),	-- Assault on the Pit
-							crit(26232),	-- Assault on the Everbloom Wilds
-						},
-					}),
 					ach(9401),		-- Shredder Maniac
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -278,7 +262,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1511, {	-- Bastion Rise, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 84507,	-- Rangari Yaval
 						["coord"] = { 46.4, 92.4, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -298,7 +282,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.9, 55.0, GORGROND },
 					}),
 					fp(1523, {	-- Deeproot, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 81888,	-- Rengari Nogo
 						["coord"] = { 46.4, 76.6, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -317,7 +301,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					fp(1519, {	-- Highpass, Gorgrond
-						--["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
+						-- ["sourceQuest"] = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
 						["cr"] = 81074,	-- Rangari Rajess
 						["coord"] = { 52.8, 59.4, GORGROND },
 						["races"] = ALLIANCE_ONLY,

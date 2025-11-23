@@ -8,17 +8,6 @@ pet(4792),	-- Ada the Sweetest
 pet(4824),	-- Baby Karesh Fox - Orange
 pet(4830),	-- Rhay'Dahr \\ Observer, Baby (Green)
 pet(4837),	-- Worm, Cosmic - Critter (Red)
-11.2.5.62554
-pet(4895),	-- Lil' Chompers
-pet(4896),	-- Slippery Saul
-pet(4897),	-- Fishmonger May
-pet(4898),	-- Fishstick Keith
-pet(4899),	-- Festive Eve
-pet(4900),	-- Bundled-Up Bob \\ Bundled-up Bob
-11.2.5.63092
-pet(4908),	-- Lil' Ashlee
-11.2.7.63642
-pet(4851),	-- Tiny Snow Buddy
 12.0.0.63534
 pet(4803),	-- Niblet
 pet(4874),	-- Akil Fledgling
@@ -28,7 +17,7 @@ pet(4888),	-- Naloki
 pet(4889),	-- Nether Familiar
 pet(4891),	-- Wrathful Wyrm
 pet(4905),	-- [DNT] Baby Amazard (Red)
-pet(4906),	-- [DNT] Baby Amani Eagle (Grey)
+pet(4906),	-- Scruffbeak \\ [DNT] Baby Amani Eagle (Grey)
 pet(4910),	-- Do, child of Filo \\ Do, child of Fi'lo
 pet(4914),	-- Chillcrawler
 pet(4928),	-- Dragonhawk Munchkin
@@ -38,8 +27,7 @@ pet(4942),	-- Distorted Memory
 12.0.0.63724
 pet(4945),	-- Aud'rei III
 pet(4946),	-- Linda the Lucky
-pet(4947),	-- Assistant Botanist Leafy
-pet(4950),	-- Preyseeker's Immature Behemoth
+pet(4950),	-- Immature Behemoth \\ Preyseeker's Immature Behemoth
 pet(4951),	-- Bubbly Snapling
 pet(4952),	-- Blitzcreek
 pet(4953),	-- Sporbie
@@ -61,8 +49,14 @@ pet(4971),	-- Luma
 pet(4972),	-- Willie
 12.0.0.63967
 pet(4975),	-- Razeshi C.
-pet(4976),	-- Voldy
 pet(4977),	-- Emberwing Hatchling
+12.0.0.64124
+pet(4981),	-- Nova \\ [PH] Black Baby Hawkstrider
+pet(4982),	-- Flicker \\ [DNT] Baby Eversong Lynx (Black)
+pet(4983),	-- Kai
+pet(4984),	-- Medusa \\ [PH] Purple Siphoid
+12.0.0.64228
+pet(4985),	-- Princess Bloodshed
 
 
 

@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(185858),	-- Korthian Caretaker's Crest
 					i(186666),	-- Korthian Caretaker's Crown
 					i(185871),	-- Razorwing Scale Coif
-				--	i(186743),	-- Razorwing Scale Hood
+					-- i(186743),	-- Razorwing Scale Hood
 					i(186736),	-- Shardhide Leather Cowl
 					i(185864),	-- Shardhide Leather Hood
 					i(185876),	-- Vault Guardian's Helm

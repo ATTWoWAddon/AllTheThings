@@ -815,7 +815,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		ignoreTimeline(i(18697, {	-- Coldstone Slippers
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		})),
 		-- #if SEASON_OF_DISCOVERY
@@ -934,7 +934,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		ignoreTimeline(i(18698, {	-- Tattered Leather Hood
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		})),
 		-- #if SEASON_OF_DISCOVERY
@@ -1236,7 +1236,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(18759, {	-- Malicious Axe
 				-- #if SEASON_OF_DISCOVERY
 				-- CRIEVE NOTE: The reitemized version isn't in the game yet?
-				--["timeline"] = { REMOVED_1_15_3 },
+				-- ["timeline"] = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			i(18761),	-- Oblivion's Touch
@@ -1263,7 +1263,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14576, {	-- Ebon Hilt of Marduk
 			-- #if SEASON_OF_DISCOVERY
 			-- CRIEVE NOTE: The reitemized version isn't in the game.
-			--["timeline"] = { REMOVED_1_15_3 },
+			-- ["timeline"] = { REMOVED_1_15_3 },
 			-- #endif
 		}),
 		i(18692),	-- Death Knight Sabatons
@@ -1938,7 +1938,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13398, {	-- Boots of the Shrieker
 				-- #if SEASON_OF_DISCOVERY
 				-- CRIEVE NOTE: This item is likely still in the game, the reitemized version doesn't appear to be yet.
-				--["timeline"] = { REMOVED_1_15_3 },
+				-- ["timeline"] = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY

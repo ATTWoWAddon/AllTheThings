@@ -326,9 +326,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(250804, {	-- Longhorned Bleakhoof Talbuk (MOUNT!)
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
-					i(250192, {	-- Reins of the Ghastly Ur'zul (MOUNT!)
-						["cost"] = {{ "c", BRONZE, 10000 }},
-					}),
 					i(250747, {	-- Reins of the Albino Mana Ray (MOUNT!)
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
@@ -336,6 +333,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
 					i(250745, {	-- Reins of the Fel-scarred Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250192, {	-- Reins of the Ghastly Ur'zul (MOUNT!)
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
 					i(250805, {	-- Reins of the Longhorned Argussian Talbuk (MOUNT!)
@@ -723,13 +723,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 			}),
-			--[[
-			n(244792, {	-- Lindormi <Mythic Keystones>
-				["coord"] = { 45.5, 68.4, BROKEN_ISLES },
-				["groups"] = {
-				},
-			}),
-			--]]
 			n(241142, {	-- Momentus <Weaponmaster>
 				["coord"] = { 45.8, 68.0, BROKEN_ISLES },
 				["groups"] = sharedData({
@@ -759,6 +752,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 					}),
 					i(188152),	-- Gateway Control Shard
+					i(265922, {	-- Pet Training Manual: Fetch
+						["classes"] = { HUNTER },
+					}),
+					i(265923, {	-- Pet Training Manual: Play Dead
+						["classes"] = { HUNTER },
+					}),
 					i(226037),	-- Timeless Neural Silencer
 				}),
 			}),
@@ -1098,29 +1097,37 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					------ Trial of Valor: Ensambles of the Chosen Dead ------
 					filter(CLOTH, {
 						iensemble(241607, {	-- Ensemble: Regalia of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(LEATHER, {
 						iensemble(241604, {	-- Ensemble: Garb of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(MAIL, {
 						iensemble(241601, {	-- Ensemble: Chains of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(PLATE, {
 						iensemble(241597, {	-- Ensemble: Funerary Plate of the Chosen Dead
-							--["extraTransmogSetItems"] = {
-							--},
+							-- ["extraTransmogSetItems"] = {
+							-- },
 						}),
 					}),
 					filter(CONSUMABLES, {
+						i(254847, {	-- Minor Bronze Cache
+							["description"] = "Becomes available after purchasing 'Taeshalach'.\n\nContains 2500 Bronze.",
+							["cost"] = {{ "i", 253306, 5 }},	-- 5x Everflame of Hatred
+						}),
+						i(254848, {	-- Minor Bronze Cache
+							["description"] = "Becomes available after purchasing 'Scythe of the Unmaker'.\n\nContains 2500 Bronze.",
+							["cost"] = {{ "i", 253304, 5 }},	-- 5x Cosmic Soulsilver
+						}),
 						i(254849, {	-- Minor Bronze Cache
 							["description"] = "Becomes available after purchasing 'Hammer of Vigilance'.\n\nContains 2500 Bronze.",
 							["cost"] = {{ "i", 253305, 5 }},	-- 5x Felwarped Slab

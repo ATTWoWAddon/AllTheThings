@@ -229,51 +229,51 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(DRUID, {
 		n(ARMOR, {
 			i(187778, {	-- Druid's Footwear
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187777, {	-- Druid's Handwraps
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187776, {	-- Druid's Leggings
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187775, {	-- Druid's Tunic
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187774, {	-- Druid's Waistband
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(49565, {	-- Gilnean Novice's Gloves
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49564, {	-- Gilnean Novice's Boots
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49563, {	-- Gilnean Novice's Tunic
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49566, {	-- Gilnean Novice's Pants
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(6124, {	-- Novice's Pants
-				--["races"] = { NIGHTELF, TAUREN, TROLL },
+				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6123, {	-- Novice's Robe
-				--["races"] = { NIGHTELF },
+				-- ["races"] = { NIGHTELF },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6139, {	-- Novice's Robe
-				--["races"] = { TAUREN, TROLL },
+				-- ["races"] = { TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 		}),
@@ -309,135 +309,135 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(HUNTER, {
 		n(ARMOR, {
 			i(232279, {	-- Creche-Scout's Bracers
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232284, {	-- Creche-Scout's Chausses
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232285, {	-- Creche-Scout's Gauntlets
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232286, {	-- Creche-Scout's Greaves
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(232287, {	-- Creche-Scout's Vest
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(49569, {	-- Gilnean Trapper's Boots
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49571, {	-- Gilnean Trapper's Gloves
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49568, {	-- Gilnean Trapper's Pants
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49570, {	-- Gilnean Trapper's Tunic
-				--["races"] = { WORGEN },
+				-- ["races"] = { WORGEN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49504, {	-- Goblin Trapper's Boots
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49503, {	-- Goblin Trapper's Pants
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(49502, {	-- Goblin Trapper's Shirt
-				--["races"] = { GOBLIN },
+				-- ["races"] = { GOBLIN },
 				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(187693, {	-- Hunter's Belt
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187691, {	-- Hunter's Boots
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187694, {	-- Hunter's Bracers
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187695, {	-- Hunter's Gloves
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187690, {	-- Hunter's Pants
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187692, {	-- Hunter's Vest
-				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(129, {	-- Rugged Trapper's Boots
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(147, {	-- Rugged Trapper's Pants
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58232, {	-- Rugged Trapper's Vest
-				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
+				-- ["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(23348, {	-- Scout's Boots
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(23344, {	-- Scout's Pants
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(58240, {	-- Scout's Vest
-				--["races"] = { DRAENEI },
+				-- ["races"] = { DRAENEI },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(6126, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6137, {	-- Thug Pants
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6127, {	-- Trapper's Boots [Orc]
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
 			i(6138, {	-- Trapper's Boots
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58247, {	-- Trapper's Vest
-				--["races"] = { ORC, TAUREN, TROLL },
+				-- ["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 			i(20900, {	-- Warder's Boots
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(20899, {	-- Warder's Pants
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_1_5 },
 			}),
 			i(58235, {	-- Warder's Vest
-				--["races"] = { BLOODELF },
+				-- ["races"] = { BLOODELF },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
 			i(232277, {	-- Creche-Scout's Rifle
-				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(2508),	-- Old Blunderbuss
@@ -491,7 +491,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(157691),	-- Ascetic's Footpads
 		-- #if AFTER 11.0.0
 		i(204268, {	-- Gilnean Trainee's Cord
-			--["races"] = { WORGEN },
+			-- ["races"] = { WORGEN },
 			["timeline"] = { ADDED_10_0_7 },
 		}),
 		i(204267, {	-- Gilnean Trainee's Leggings
@@ -1417,10 +1417,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
+					-- ["coord"] = { X, Y, ORGRIMMAR },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					-- ["coord"] = { X, Y, ORGRIMMAR },
 				}),
 				q(76410, {	-- A Dark Summons (A)
 					["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)

@@ -8,6 +8,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(42617),	-- Campaign: Val'Sharah
+					ach(42619, {	-- Dreamweavers
+						i(250407, {	-- Legion’s Fel Brazier (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(60810),	-- Elusive Foes: Val'sharah
 					ach(42580, {	-- Elusive Foes: Val'sharah
 						-- Did 60810 get removed/replaced?
@@ -56,17 +61,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42594,	-- Tour Val'Sharah
 						}},
 						["groups"] = { i(253353) },	-- Illusion: Felshatter (ILLUSION!)
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_DREAMWEAVERS, {
-						n(ACHIEVEMENTS, {
-							ach(42619, {	-- Dreamweavers
-								i(250407, {	-- Legion’s Fel Brazier (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {

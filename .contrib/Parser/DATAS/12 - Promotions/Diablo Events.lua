@@ -93,7 +93,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	applyevent(EVENTS.A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0 } }, {
 		-- Event durations: May 25 - June 13, 2023. July 1 - July 29, 2025
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0, } }, {
-			ach(18258, {	--	Little Lord of Lies
+			ach(18258, {	-- Little Lord of Lies
 				["provider"] = { "i", 206018 },	-- Baa'lial Soulstone
 			}),
 		})),
@@ -173,23 +173,23 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(206020),	-- Enmity Hood
 						}),
 						i(206003),	-- Horadric Haversack (BAG)
-						--i(142548),	-- Large Charm of Dexterity
-						--i(206274),	-- Large Charm of Intelligence
-						--i(142547),	-- Large Charm of Strength
+						-- i(142548),	-- Large Charm of Dexterity
+						-- i(206274),	-- Large Charm of Intelligence
+						-- i(142547),	-- Large Charm of Strength
 						i(143327),	-- Lovestock Lochaber Axe
 						i(206008),	-- Nightmare Banner (TOY!)
-						--i(142549),	-- Serpent's Grand Charm
-						--i(142546),	-- Small Charm of Inertia
-						--i(142545),	-- Small Charm of Life
-						--i(142551),	-- Stalwart's Grand Charm
+						-- i(142549),	-- Serpent's Grand Charm
+						-- i(142546),	-- Small Charm of Inertia
+						-- i(142545),	-- Small Charm of Life
+						-- i(142551),	-- Stalwart's Grand Charm
 						i(206007),	-- Treasure Nabbin Bag
 						i(142542),	-- Tome of Town Portal (TOY!)
 						i(143543),	-- Twelve String Guitar (TOY!)
-						--i(76755),	-- Tyrael's Charger (MOUNT!)
+						-- i(76755),	-- Tyrael's Charger (MOUNT!)
 						i(206275),	-- Wirt's Haunted Leg (BOE)
 						i(206276),	-- Wirt's Last Leg (BOE)
 						i(206005),	-- Wirt's Fightin' Leg (BOE)
-						i(245589, {	--	Hellcaller Chest
+						i(245589, {	-- Hellcaller Chest
 							currency(3309),	-- Hellstone Shard
 							-- Buff Gobo Items
 							i(245639),	-- Arcane Elixir
@@ -286,9 +286,9 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		-- #endif
 		["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.57689" },
 	}),
-	--spell(921, {	-- Collector's Bounty
-	--	["description"] = "+5% Drop Rate for all Pre-Dragonflight Mounts.",
-	--}),
+	-- spell(921, {	-- Collector's Bounty
+	-- 	["description"] = "+5% Drop Rate for all Pre-Dragonflight Mounts.",
+	-- }),
 	n(DIABLO_IV, {
 		["description"] = "Granted to players who owned WoW: The War Within and Diablo IV: Vessel of Hatred before January 7th, 2025.",
 		["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58608" },

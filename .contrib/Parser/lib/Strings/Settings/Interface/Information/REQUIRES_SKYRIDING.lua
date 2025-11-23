@@ -11,6 +11,7 @@ createLocalizationString({
 		es = "Requiere Surcacielos",
 		mx = "Requiere Cielonáutica",
 		cn = "需要驭空术",
+		tw = "需要天空騎術",
 		-- #endif
 	},
 })

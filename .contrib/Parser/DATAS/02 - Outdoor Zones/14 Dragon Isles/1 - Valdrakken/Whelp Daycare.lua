@@ -71,8 +71,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					crit(60137, {	-- Fowl Runic Scribblings
 						["sourceQuests"] = { 73130 },	-- Fowl Runic Scribblings
 					}),
-					crit(60138, {	--  Dignified Disguises
-						["sourceQuests"] = { 73131 },	--  Dignified Disguises
+					crit(60138, {	-- Dignified Disguises
+						["sourceQuests"] = { 73131 },	-- Dignified Disguises
 					}),
 					crit(60139, {	-- Scanning the Stacks
 						["sourceQuests"] = { 73132 },	-- Scanning the Stacks
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["groups"] = {
 					-- Removed Frost since it duplicates into 50+ things that require Awakened Frost
-					--	i(190329),	-- Awakened Frost
+						-- i(190329),	-- Awakened Frost
 						i(202332),	-- Blue Dragon Bedtime Story (QI!)
 						i(202330),	-- Fine-Pointed Quill (QI!)
 					},
@@ -405,8 +405,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
-				q(73011, {	--  Home Sweet Dirt
-					["sourceQuests"] = { 73010 },	--  The Emerald Hatchling
+				q(73011, {	-- Home Sweet Dirt
+					["sourceQuests"] = { 73010 },	-- The Emerald Hatchling
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["groups"] = {
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(73012, {	-- Hochenblume Harvest
 					["sourceQuests"] = {
 						73010,	-- The Emerald Hatchling
-						73011,	--  Home Sweet Dirt
+						73011,	-- Home Sweet Dirt
 					},
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
@@ -488,17 +488,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
-				q(73133, {	--  Cozy Camouflage
+				q(73133, {	-- Cozy Camouflage
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
 					["provider"] = { "n", 199987 },	-- Posidriss
 					["coord"] = { 16.6, 54.8, VALDRAKKEN },
 				}),
-				q(73131, {	--  Dignified Disguises
+				q(73131, {	-- Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
 					["provider"] = { "n", 199990 },	-- Belastrasza
 					["coord"] = { 10.7, 59.0, VALDRAKKEN },
 				}),
-				q(73134, {	--  Eternal Escapades
+				q(73134, {	-- Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
 					["provider"] = { "n", 199986 },	-- Zhusadormu
 					["coord"] = { 14.0, 54.7, VALDRAKKEN },

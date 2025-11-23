@@ -8,6 +8,9 @@ local C_DateAndTime_GetCurrentCalendarTime, C_DateAndTime_AdjustTimeByDays
 local ipairs, tinsert, pairs, time
 	= ipairs, tinsert, pairs, time;
 
+-- App cache
+local GetRelativeField = app.GetRelativeField
+
 -- Event Variables
 local ActiveEvents, EventInformation, NextEventSchedule = {}, {}, {};
 local UpcomingEventLeeway = 604800;	-- 604800 is a week. 86400 is a day.
@@ -416,7 +419,7 @@ if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 	local TimerunningSeasonEventID
 	local ThingKeys
 	local function CheckNestedTimerunning(group)
-		if group.e == TimerunningSeasonEventID then
+		if GetRelativeField(group, "e", TimerunningSeasonEventID) then
 			return true
 		end
 

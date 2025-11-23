@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 38.8, 39.1, EMERALD_DREAM },
 					["groups"] = {
 						i(208544),	-- Frozenheart's Wrath (QI!)
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209903),	-- Chartreuse Champion's Girdle
 						i(209883),	-- Chartreuse Champion's Sabatons
 						i(209906),	-- Fearless Faerie's Belt
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208552 },	-- Tyrande Whisperwind
 					["coord"] = { 38.6, 39.1, EMERALD_DREAM },
 					["groups"] = {
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209885),	-- Chartreuse Champion's Chestplate
 						i(209887),	-- Fearless Faerie's Vest
 						i(209886),	-- Spirited Stag's Chestguard
@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208550 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 38.6, 39.0, EMERALD_DREAM },
 					["groups"] = {
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209895),	-- Chartreuse Champion's Legplates
 						i(209898),	-- Fearless Faerie's Trousers
 						i(209897),	-- Spirited Stag's Legguards
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 34.9, 35.3, EMERALD_DREAM },
 					["groups"] = {
 						i(208752),	-- Horn of Cenarius (QI!)
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209900),	-- Chartreuse Champion's Shoulderplates
 						i(209899),	-- Fearless Faerie's Shoulderpads
 						i(209902),	-- Spirited Stag's Epaulets
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208572 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 35.0, 33.5, EMERALD_DREAM },
 					["groups"] = {
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209923),	-- Chartreuse Champion's Blade
 						i(209919),	-- Chartreuse Champion's Bulwark
 						i(209937),	-- Chartreuse Champion's Gavel
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(209806),	-- Cataloger's Film (QI!)
 							},
 						}),
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209915),	-- Perennial Pompon Pendant
 						i(209916),	-- Sunrise Circlet
 					},
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209324),	-- Azure Leywine (QI!)
 						i(209323),	-- Emerald Dreamtime (QI!)
 						i(209326),	-- Maruukai Pale Ale (QI!)
-						--modID 27 bonusID 9546
+						-- modID 27 bonusID 9546
 						i(209914),	-- Bramble Bark Band
 						i(209912),	-- Luscious Leaf Loop
 						i(209913),	-- Summer Sky Signet
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
 			}),
 			q(76568, {	-- Pineshrew Panic
-				--["sourceQuests"] = { 76566 },	-- The Dryad Garden
+				-- ["sourceQuests"] = { 76566 },	-- The Dryad Garden
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
 			}),
@@ -988,7 +988,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			q(77788, {	-- Ashphodel Research Notes
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire / or Aviana's Assessment
 				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
-				--["coord"] = { 65.9, 37.8, EMERALD_DREAM },
+				-- ["coord"] = { 65.9, 37.8, EMERALD_DREAM },
 				["groups"] = {
 					i(211395),	-- Ashphodel Research Notes
 					i(210453),	-- Bundle of Flame Pollen (QI!)
@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
 				["groups"] = {
 					i(211369),	-- Charred Staff of the Overseer
-					--i(210663),	-- Circle of Nature's Youth (COSMETIC!)
+					-- i(210663),	-- Circle of Nature's Youth (COSMETIC!)
 				},
 			}),
 			--
@@ -1044,14 +1044,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
-			--Sprout weekly?
+			-- Sprout weekly?
 			q(77677, {	-- Some Water...
 				["description"] = "Dismount, and click through dialoge to obtain quest.",
-				--["sourceQuests"] = {
-				--	77283,	-- A Multi-Front Battle
-				--	77887,	-- 'World Quest Unlock' (spellID 421687)
-				--},
-				--["sourceQuestNumRequired"] = 1,
+				-- ["sourceQuests"] = {
+				-- 	77283,	-- A Multi-Front Battle
+				-- 	77887,	-- 'World Quest Unlock' (spellID 421687)
+				-- },
+				-- ["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 209292 },	-- Sprout
 				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
 				["groups"] = {
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				},
 			}),
-			q(77711, {	--	And a Pinch of Magic
+			q(77711, {	-- And a Pinch of Magic
 				["sourceQuests"] = { 77697 },	-- The Right Food...
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208705),	-- Druidic Totem (QI!)
 				},
 			}),
-			q(77762, {	--	A Little Hope is Never without Worth
+			q(77762, {	-- A Little Hope is Never without Worth
 				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
@@ -1126,11 +1126,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(211303),	-- Dryad's Supply Pouch
 				--
 				q(78890, {	-- Emerald Frenzy
-					--["sourceQuests"] = {  },	-- ?
+					-- ["sourceQuests"] = {  },	-- ?
 					["coord"] = { 55.5, 50.0, EMERALD_DREAM },	-- 47.1, 30.3
 					["repeatable"] = true,
 				}),
-				--probably move big rares here, since they have seems like weekly lockout?
+				-- probably move big rares here, since they have seems like weekly lockout?
 			}),
 		}),
 	}),
@@ -1139,7 +1139,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
 			n(QUESTS, {
-				--- pop during main story
+				-- pop during main story
 				q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
 				q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
 				q(77887),	-- 'World Quest Unlock' (spellID 421687)
@@ -1160,16 +1160,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(78238),	-- Quest "What Do I Call You?": Pick the title of "Archmage" (mage)
 				q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord" (warrior)
 				q(77812),	-- Quest "What Do I Call You?": Pick the title of "Deathlord"(dk)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Farseer" (shaman)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Farseer" (shaman)
 				q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster" (monk)
 				q(78246),	-- Quest "What Do I Call You?": Pick the title of "High Priest" (priest)
 				q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord" (paladin)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Huntmaster" (hunter)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Illidari" (dh, doesn't exist?)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Master Assassin" (rogue, doesn't exist?)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Huntmaster" (hunter)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Illidari" (dh, doesn't exist?)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Master Assassin" (rogue, doesn't exist?)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
 				q(78259),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue)
-				--q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
+				-- q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
 				--
 				q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward
 				-- Sprout

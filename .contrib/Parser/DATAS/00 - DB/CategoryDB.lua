@@ -582,7 +582,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Hats & Hoods",
 			es = "Sombreros y caperuzas",
-			es = "Sombreros y capuchas",
+			mx = "Sombreros y capuchas",
 			ko = "머리",
 		},
 	},
@@ -8350,7 +8350,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8359,7 +8359,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8368,7 +8368,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8377,7 +8377,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8386,7 +8386,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8395,7 +8395,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8404,7 +8404,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8413,7 +8413,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -8422,7 +8422,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Quest Recipes",
 			es = "Recetas de misión",
-			es = "Recetas de misión",
+			mx = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},

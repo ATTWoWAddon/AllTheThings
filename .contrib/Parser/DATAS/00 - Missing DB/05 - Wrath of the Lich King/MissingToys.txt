@@ -1,6 +1,8 @@
 3.4.3.51126
 i(40727),	-- ish Gravity Well \\ Gnomish Gravity Well \\ Personal Ejector Seat
 i(46709),	-- Zep Controller \\ MiniZep Controller \\ [PH] MiniZep Controller
+i(54651),	-- eregan Pride \\ Gnomeregan Pride
+i(54653),	-- spear Pride \\ Darkspear Pride
 3.4.3.57269
 i(67097),	-- Campfire \\ Grim Campfire
 i(72161),	-- ious Sarcophagus \\ Spurious Sarcophagus
@@ -10,6 +12,8 @@ i(235464),	-- Sha-Touched Tea Set
 i(72159),	-- cal Ogre Idol \\ Magical Ogre Idol
 i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
+3.80.0.64393
+i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 
 
 
@@ -19,3 +23,5 @@ Missing in ToyDB.lua
 3.4.5.61815
 i(247893),	-- Fandral's Eternal Seed
 i(248263),	-- Azure Sea Boat \\ Fishing Boat Toy
+3.80.0.64393
+i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar

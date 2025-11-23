@@ -175,7 +175,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
-				--title_gendered(105, 104),	-- Patron / Matron
+				-- title_gendered(105, 104),	-- Patron / Matron
 				title_female(104),	-- Matron <Name>
 				title_male(105),	-- Patron <Name>
 			},
@@ -639,7 +639,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Arom's Stand
-					--["provider"] = { "n",  },	-- Inquisitor Notley (not sure what the NPC ID is)
+					-- ["provider"] = { "n",  },	-- Inquisitor Notley (not sure what the NPC ID is)
 					["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
 				}),
 			},
@@ -1320,7 +1320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Ulfar's Den
-					--["provider"] = { "n", 141159 },	-- Ulfar (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 141159 },	-- Ulfar (not sure what the NPC ID is)
 					["coords"] = {
 						{ 45.94, 39.06, DRUSTVAR },	-- Path to Ulfar's Den Starts
 						{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
@@ -1570,7 +1570,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Krag'wa's Burrow
-					--["provider"] = { "n", 131093 },	-- Krag'wa (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 131093 },	-- Krag'wa (not sure what the NPC ID is)
 					["coords"] = {
 						{ 71.18, 49.19, NAZMIR },	-- Path Starts
 						{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
@@ -1691,7 +1691,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Lair of Gonk
-					--["provider"] = { "n", 139649 },	-- Gonk (not sure what the NPC ID is)
+					-- ["provider"] = { "n", 139649 },	-- Gonk (not sure what the NPC ID is)
 					["coords"] = {
 						{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
 						{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
@@ -1729,7 +1729,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(110, 110, 10),
 			["groups"] = {
 				objective(1, {	-- Visit Shrine of the Storm
-					--["provider"] = { "n",  },	-- Brother Pike (not sure what the NPC ID is)
+					-- ["provider"] = { "n",  },	-- Brother Pike (not sure what the NPC ID is)
 					["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },
 				}),
 			},

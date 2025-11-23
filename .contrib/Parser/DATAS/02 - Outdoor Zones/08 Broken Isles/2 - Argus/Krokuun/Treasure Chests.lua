@@ -107,6 +107,7 @@ root(ROOTS.Zones, {
 								["questID"] = 47999,
 								["coords"] = {
 									{ 43.3, 36.3, KROKUUN },
+									{ 47.7, 28.9, KROKUUN },
 									{ 48.6, 31.0, KROKUUN },
 									{ 49.1, 33.5, KROKUUN },
 									{ 49.8, 36.7, KROKUUN },

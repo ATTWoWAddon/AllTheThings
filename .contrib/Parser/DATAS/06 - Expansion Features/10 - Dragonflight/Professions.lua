@@ -33,9 +33,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(QUESTS, {
 			q(67564, {	-- Artisan's Courier
+				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 192498 },	-- Haephesta
 				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
-				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["groups"] = {
 					i(198790),	-- I.O.U
 					i(195357),	-- Artisan's Consortium Invoice
@@ -122,13 +122,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67295, {	-- That's My Specialty
+				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 				["qg"] = 192539,	-- Miguel Bright
 				["coords"] = {
 					{ 39.3, 70.0, VALDRAKKEN },
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 				["groups"] = {
 					i(191784),	-- Dragon Shard of Knowledge
 				},
@@ -433,10 +433,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 	n(PROFESSIONS, {
 		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
-				--["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
-				--["coord"] = { 40.8, 48.3, VALDRAKKEN },
+				-- ["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
+				-- ["coord"] = { 40.8, 48.3, VALDRAKKEN },
 				-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
-				--["isBreadcrumb"] = true,
+				-- ["isBreadcrumb"] = true,
 			}),
 			q(72340),	-- Triggered on unlocking alt spark skip
 			q(76124, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Deepflayer Dust' (questID 75363) (spellID 411875)

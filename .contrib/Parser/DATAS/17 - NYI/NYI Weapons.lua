@@ -1919,7 +1919,7 @@ root(ROOTS.NeverImplemented, {
 			i(225873),	-- Forged Gladiator's Sword
 			i(225349, {["sourceID"] = 220997}),	-- Kaheti Confiscated Borers
 
-			--- Fist
+			-- Fist
 			i(223585),	-- Algari Bladefist
 
 			-- Two hand
@@ -2211,7 +2211,7 @@ root(ROOTS.NeverImplemented, {
 				i(84893),	-- Malevolent Gladiator's Fleshslicer
 				i(94899),	-- Malevolent Gladiator's Baton of Light
 				i(94898),	-- Malevolent Gladiator's Touch of Death
-				--i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
+				-- i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
 			}),
 			--
 			i(84085),	-- Dreadwaste Meditation Staff

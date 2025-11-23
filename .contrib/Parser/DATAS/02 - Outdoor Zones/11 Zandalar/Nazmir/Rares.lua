@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50888,
 				["coord"] = { 38.1, 57.6, NAZMIR },
 				["icon"] = 134514,
-				--["crs"] = { 135565 },	-- Guardian of Agussu
+				-- ["crs"] = { 135565 },	-- Guardian of Agussu
 				["groups"] = {
 					crit(41472, {	-- Urn of Agussu
 						["achievementID"] = 12942,	-- Adventurer of Nazmir
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161092),	-- Rivermarsh Quickclaw Buckle
 				},
 			}),
-			n(128578, {	-- Zujothgul --	possibly only up when WQ is active
+			n(128578, {	-- Zujothgul -- possibly only up when WQ is active
 				["coord"] = { 39.6, 50.6, NAZMIR },
 				["groups"] = {
 					i(161101),	-- Bone Horror's Armsplints

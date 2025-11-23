@@ -17,13 +17,13 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 
 	q(8226, {	-- Rare Fish - Pale Ghoulfish
+		-- ["qg"] = 15079,	-- Fishbot 5000
+		-- ["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 		["cost"] = {
 			{ "i", 19804, 1 },	-- Pale Ghoulfish
 		},
 		["requireSkill"] = FISHING,
 		["repeatable"] = true,
-		--["qg"] = 15079,	-- Fishbot 5000
-		--["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 		["groups"] = {
 			i(7996),	-- Worn Fishing Hat
 		},

@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
-					--["coord"] = { , , ZERETH_MORTIS },
+					-- ["coord"] = { , , ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365074),	-- Unsuccessful Prototype Fleetpod
 					},

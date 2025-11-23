@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["provider"] = { "n", 58633 },	-- Instructor Chillheart
 								["coords"] = {
 									{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
-									{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
+									{ 58.8, 84.0, SCHOLOMANCE },	-- Actual volume inside the dungeon
 								},
 							}),
 							q(44342, {	-- Volume VI
@@ -127,10 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(927),	-- Band of Zealots
 					follower(928),	-- Band of Zealots
 					follower(929),	-- Band of Zealots
@@ -151,7 +148,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(924),	-- Netherlight Paragons
 					follower(925),	-- Netherlight Paragons
 					follower(926),	-- Netherlight Paragons
-				})),
+				}),
 				n(QUESTS, {
 					-- Start
 					q(40705, {	-- Priestly Matters
@@ -173,7 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 					}),
 					q(43935, {	-- A Second Legend
-						["sourceQuests"] = { 40706 },	--  A Legend You Can Hold
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.1, 48.2, NETHERLIGHT_TEMPLE },
 					}),
@@ -182,126 +179,144 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.5, 47.6, NETHERLIGHT_TEMPLE },
 					}),
-					-- Shadow
-					q(40710, {	-- Blade in Twilight
-						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-						["providers"] = {
-							{ "n", 110564 },	-- Alonsus Faol
-							{ "n", 101314 },	-- Alonsus Faol
-							-- #if AFTER 11.1.7
-							{ "n", 231472 },	-- Alonsus Faol
-							-- #endif
-						},
-						["coords"] = {
-							{ 51.5, 47.6, NETHERLIGHT_TEMPLE },
-							{ 79.0, 41.0, TIRISFAL_GLADES },
-							-- #if AFTER 11.1.7
-							{ 12.8, 59.1, TIRISFAL_GLADES },
-							-- #endif
-						},
-						["groups"] = { i(173523) },	-- Tirisfal Camp Scroll (QI!)
+					cl(PRIEST, SHADOW, {
+						q(40710, {	-- Blade in Twilight
+							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["providers"] = {
+								{ "n", 110564 },	-- Alonsus Faol
+								{ "n", 101314 },	-- Alonsus Faol
+								-- #if AFTER 11.1.7
+								{ "n", 231472 },	-- Alonsus Faol
+								-- #endif
+							},
+							["coords"] = {
+								{ 51.5, 47.6, NETHERLIGHT_TEMPLE },
+								{ 79.0, 41.0, TIRISFAL_GLADES },
+								-- #if AFTER 11.1.7
+								{ 12.8, 59.1, TIRISFAL_GLADES },
+								-- #endif
+							},
+							["groups"] = { i(173523) },	-- Tirisfal Camp Scroll (QI!)
+						}),
 					}),
-					-- Holy
-					q(41957, {	-- The Vindicator's Plea
-						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-						["qgs"] = {
-							101314,	-- Alonsus Faol
-							110564,	-- Alonsus Faol
-						},
-						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
+					cl(PRIEST, HOLY, {
+						q(41957, {	-- The Vindicator's Plea
+							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["qgs"] = {
+								101314,	-- Alonsus Faol
+								110564,	-- Alonsus Faol
+							},
+							["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
+						}),
+						q(41966, {	-- House Call
+							["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
+							["provider"] = { "n", 105602 },	-- Vindicator Boros
+							["coord"] = { 37.7, 36.7, LEGION_DALARAN },
+							["groups"] = { i(173379) },	-- Purify Stone (QI!)
+						}),
+						q(41967, {	-- Out of the Darkness
+							["sourceQuests"] = { 41966 },	-- House Call
+							["provider"] = { "n", 105603 },	-- Defender Barrem
+							["coord"] = { 37.5, 35.5, LEGION_DALARAN },
+						}),
+						q(41993, {	-- Salvation From On High
+							["sourceQuests"] = { 41967 },	-- Out of the Darkness
+							["provider"] = { "n", 105684 },	-- Alora
+							["coords"] = {
+								{ 34.0, 33.9, BROKEN_SHORE },
+								{ 50.4, 64.8, BROKEN_ISLES },
+							},
+						}),
+						q(42074, {	-- Return of the Light
+							["sourceQuests"] = { 41993 },	-- Salvation From On High
+							["provider"] = { "n", 106011 },	-- Jace  Darkweaver
+							["coord"] = { 33.5, 33.1, BROKEN_SHORE },
+							["maps"] = { 714 },	-- Niskara
+							["groups"] = {
+								o(249705, {	-- T'uure
+									["coord"] = { 65.5, 59.4, 714 },	-- Niskara
+									["groups"] = {
+										i(128825, {	-- T'uure, Beacon of the Naaru
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(118) },	-- T'uure, Beacon of the Naaru
+										}),
+									},
+								}),
+							},
+						}),
 					}),
-					q(41966, {	-- House Call
-						["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
-						["provider"] = { "n", 105602 },	-- Vindicator Boros
-						["coord"] = { 37.7, 36.7, LEGION_DALARAN },
-						["groups"] = { i(173379) },	-- Purify Stone (QI!)
-					}),
-					q(41967, {	-- Out of the Darkness
-						["sourceQuests"] = { 41966 },	-- House Call
-						["provider"] = { "n", 105603 },	-- Defender Barrem
-						["coord"] = { 37.5, 35.5, LEGION_DALARAN },
-					}),
-					q(41993, {	-- Salvation From On High
-						["sourceQuests"] = { 41967 },	-- Out of the Darkness
-						["provider"] = { "n", 105684 },	-- Alora
-						["coords"] = {
-							{ 34.0, 33.9, BROKEN_SHORE },
-							{ 50.4, 64.8, BROKEN_ISLES },
-						},
-					}),
-					q(42074, {	-- Return of the Light
-						["sourceQuests"] = { 41993 },	-- Salvation From On High
-						["provider"] = { "n", 106011 },	-- Jace  Darkweaver
-						["coord"] = { 33.5, 33.1, BROKEN_SHORE },
-						["maps"] = { 714 },	-- Niskara
-						["groups"] = {
-							o(249705, {	-- T'uure
-								["coord"] = { 65.5, 59.4, 714 },	-- Niskara
-								["groups"] = {
-									i(128825, {	-- T'uure, Beacon of the Naaru
+					cl(PRIEST, DISCIPLINE, {
+						q(41625, {	-- The Light's Wrath
+							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["qgs"] = {
+								101314,	-- Alonsus Faol
+								110564,	-- Alonsus Faol
+							},
+							["coords"] = {
+								{ 51.5, 47.9, NETHERLIGHT_TEMPLE },
+								{ 79.0, 41.0, TIRISFAL_GLADES },
+							},
+						}),
+						q(41626, {	-- A New Threat
+							["sourceQuests"] = { 41625 },	-- The Light's Wrath
+							["provider"] = { "n", 105081 },	-- Archmage Kalec
+							["coord"] = { 28.7, 49.9, LEGION_DALARAN },
+						}),
+						q(41627, {	-- A Forgotten Enemy
+							["sourceQuests"] = { 41626 },	-- A New Threat
+							["provider"] = { "o", 248398 },	-- Ethereal Communication Device
+							["coord"] = { 56.7, 69.1, DRAGONBLIGHT },
+						}),
+						q(41628, {	-- Eyes of the Dragon
+							["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
+							["provider"] = { "n", 105917 },	-- Image of Kalec
+							["groups"] = { i(173430) },	-- Nexus Teleport Scroll (QI!)
+						}),
+						q(41629, {	-- Harnessing the Holy Fire
+							["sourceQuests"] = { 41627 },	-- Eyes of the Dragon
+							["provider"] = { "n", 105917 },	-- Image of Kalec
+						}),
+						q(41630, {	-- Unleashing Judgment
+							["sourceQuests"] = { 41628 },	-- Harnessing the Holy Fire
+							["provider"] = { "n", 105917 },	-- Image of Kalec
+						}),
+						q(41631, {	-- The Nexus Vault
+							["sourceQuests"] = { 41630 },	-- Unleashing Judgment
+							["provider"] = { "n", 105917 },	-- Image of Kalec
+							["maps"] = { 736 },	-- The Nexus Vault
+							["groups"] = {
+								o(248572, {	-- Light's Wrath
+									i(128868, {	-- Light's Wrath
 										["ItemAppearanceModifierID"] = 9,
-										["groups"] = { artifact(118) },	-- T'uure, Beacon of the Naaru
+										["groups"] = { artifact(292) },	-- Light's Wrath
 									}),
-								},
-							}),
-						},
-					}),
-					-- Disc
-					q(41625, {	-- The Light's Wrath
-						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
-						["provider"] = { "n", 101314 },	-- Alonsus Faol
-						["coord"] = { 51.5, 47.9, NETHERLIGHT_TEMPLE },
-					}),
-					q(41626, {	-- A New Threat
-						["sourceQuests"] = { 41625 },	-- The Light's Wrath
-						["provider"] = { "n", 105081 },	-- Archmage Kalec
-						["coord"] = { 28.7, 49.9, LEGION_DALARAN },
-					}),
-					q(41627, {	-- A Forgotten Enemy
-						["sourceQuests"] = { 41626 },	-- A New Threat
-						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
-						["coord"] = { 56.7, 69.1, DRAGONBLIGHT },
-					}),
-					q(41628, {	-- Eyes of the Dragon
-						["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
-						["provider"] = { "n", 105917 },	-- Image of Kalec
-						["groups"] = {
-							i(173430),	-- Nexus Teleport Scroll (QI!)
-						},
-					}),
-					q(41629, {	-- Harnessing the Holy Fire
-						["sourceQuests"] = { 41627 },	-- Eyes of the Dragon
-						["provider"] = { "n", 105917 },	-- Image of Kalec
-					}),
-					q(41630, {	-- Unleashing Judgment
-						["sourceQuests"] = { 41628 },	-- Harnessing the Holy Fire
-						["provider"] = { "n", 105917 },	-- Image of Kalec
-					}),
-					q(41631, {	-- The Nexus Vault
-						["sourceQuests"] = { 41630 },	-- Unleashing Judgment
-						["provider"] = { "n", 105917 },	-- Image of Kalec
-						["maps"] = { 736 },	-- The Nexus Vault
-					}),
-					q(41632, {	-- A Gift of Time
-						["sourceQuests"] = { 41630 },	-- The Nexus Vault
-						["provider"] = { "n", 105081 },	-- Archmage Kalec
-						["coord"] = { 28.6, 49.9, LEGION_DALARAN },
+								}),
+							},
+						}),
+						q(41632, {	-- A Gift of Time
+							["sourceQuests"] = { 41630 },	-- The Nexus Vault
+							["provider"] = { "n", 105081 },	-- Archmage Kalec
+							["coord"] = { 28.6, 49.9, LEGION_DALARAN },
+						}),
 					}),
 					-- intro
 					q(40938, {	-- The Light and the Void
-						["sourceQuests"] = { 40710 },	-- Blade in Twilight
+						["sourceQuests"] = {
+							41632,	-- A Gift of Time
+							40710,	-- Blade in Twilight
+							42074,	-- Return of the Light
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 101313 },	-- Prophet Velen
 						["coord"] = { 46.6, 20.9, LEGION_DALARAN },
 					}),
-					--41015
-					--41017
+					-- 41015
+					-- 41017
 					q(44251, {	-- Power Word: Armor
 						["provider"] = { "n", 112401 },	-- Meridelle Lightspark
 						["coord"] = { 38.9, 24.4, NETHERLIGHT_TEMPLE },
 						["lvl"] = 45,
-						["groups"] = {
-							i(139757),	-- Miter of the High Priest
-						},
+						["groups"] = { i(139757) },	-- Miter of the High Priest
 					}),
 					-- Zone
 					q(41019, {	-- Actions on Azeroth
@@ -337,7 +352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43273, {	-- Spread the Word
-						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["sourceQuests"] = { 43270 },	-- Rise, Champions
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.2, 48.3, NETHERLIGHT_TEMPLE },
 					}),
@@ -360,16 +375,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43388, {	-- Apostate Liberation
 						["sourceQuests"] = { 43386 },	-- Onslaught Envoy
-						["provider"] = { "n", 110683 },	-- Mariella the Heretic
+						["qgs"] = {
+							110683,	-- Mariella the Heretic
+							111191,	-- Mariella the Heretic
+						},
 						["coord"] = { 71.4, 71.8, DRAGONBLIGHT },
 					}),
 					q(43387, {	-- Scarlet Redemption
 						["sourceQuests"] = { 43386 },	-- Onslaught Envoy
-						["provider"] = { "n", 110683 },	-- Mariella the Heretic
+						["qgs"] = {
+							110683,	-- Mariella the Heretic
+							111191,	-- Mariella the Heretic
+						},
 						["coord"] = { 71.4, 71.8, DRAGONBLIGHT },
 					}),
 					q(43389, {	-- Unexpected Guests
-						["sourceQuests"] = { 43387 },	-- Scarlet Redemption
+						["sourceQuests"] = {
+							43388,	-- Apostate Liberation
+							43387,	-- Scarlet Redemption
+						},
 						["provider"] = { "n", 111191 },	-- Mariella the Heretic
 						["maps"] = { DRAGONBLIGHT },
 					}),
@@ -408,7 +432,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43393, {	-- Rising Shadows
-						["sourceQuest"] = 43392,	-- Into the Void
+						["sourceQuest"] = 43382,	-- Champion: Natalie Seline
 						["provider"] = { "n", 110684 },	-- Natalie Seline
 						["coord"] = { 24.2, 37.8, DUSKWOOD },
 					}),
@@ -608,10 +632,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(46034, {	-- Champion: Aelthalyste
 						["sourceQuests"] = { 46145 },	-- Sterile Surroundings
 						["provider"] = { "n", 120842 },	-- Aelthalyste
-						["coord"] = { 24.8, 40.1, NETHERLIGHT_TEMPLE },
-						["groups"] = {
-							follower(1002),	-- Aelthalyste
+						["coords"] = {
+							{ 21.9, 42.9, NETHERLIGHT_TEMPLE },
+							{ 24.8, 40.1, NETHERLIGHT_TEMPLE },
 						},
+						["groups"] = { follower(1002) },	-- Aelthalyste
 					}),
 					q(45788, {	-- The Speaker Awaits
 						["sourceQuests"] = { 46034 },	-- Champion: Aelthalyste
@@ -621,11 +646,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45789, {	-- The Sunken Vault
 						["sourceQuests"] = { 45788 },	-- The Speaker Awaits
 						["provider"] = { "n", 102709 },	-- Betild Deepanvil <Master Artificer>
-						["coord"] = { 50.4, 21.8, NETHERLIGHT_TEMPLE },
-						["maps"] = { 839 },	-- THe Maelstrom
-						["groups"] = {
-							mount(229377),	-- High Priest's Lightsworn Seeker (MOUNT!)
+						["coords"] = {
+							{ 48.0, 21.9, NETHERLIGHT_TEMPLE },
+							{ 50.4, 21.8, NETHERLIGHT_TEMPLE },
 						},
+						["maps"] = { 839 },	-- THe Maelstrom
+						["groups"] = { mount(229377) },	-- High Priest's Lightsworn Seeker (MOUNT!)
 					}),
 					q(43375, {	-- An Ample Supply
 						["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
@@ -693,12 +719,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = { i(139485) },	-- Spark of Light (QI!)
 					}),
 					q(43385, {	-- Infiltrating Our Enemies
-						["sourceQuests"] = { 43380 },	-- Champion: Sol
+						["sourceQuests"] = {
+							43384,	-- Demonic Runes
+							43377,	-- Halls of Valor: The Light Within
+						},
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.5, 47.7, NETHERLIGHT_TEMPLE },
 					}),
 					q(43374, {	-- Murloc Mind Control
-						["sourceQuests"] = { 43372 },	-- The Best and Brightest
+						["sourceQuests"] = { 43373 },	-- The Best and Brightest
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 						["coord"] = { 58.5, 37.2, AZSUNA },
 					}),
@@ -746,8 +775,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(46788, {	-- Further Advancement
+						-- ["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
 						["provider"] = { "n", 109776 },	-- Moira Thaurissan <Queen of the Dark Iron>
-						--["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
 					}),
 					q(46153, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,

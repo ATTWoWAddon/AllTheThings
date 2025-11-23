@@ -116,16 +116,16 @@ CURRENT_ALL_DIFFICULTIES = DIFFICULTY.RAID.MULTI.ALL;
 CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.NORMAL_PLUS;
 CURRENT_HEROIC_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.HEROIC_PLUS;
 FLEXIBLE_BEFORE_WOD = createHeader({
-    readable = "Flexible (5.4)",
-    icon = [[~_.asset("Difficulty_Normal")]],
-    text = {
-        en = "Flexible (5.4)",
-        ru = "Гибкий (5.4)",
-        cn = "弹性 (5.4)",
-    },
-    description = {
-        en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-    },
+	readable = "Flexible (5.4)",
+	icon = [[~_.asset("Difficulty_Normal")]],
+	text = {
+		en = "Flexible (5.4)",
+		ru = "Гибкий (5.4)",
+		cn = "弹性 (5.4)",
+	},
+	description = {
+		en = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+	},
 });
 -- #endif
 
@@ -306,7 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(QUESTS, {
 				q(33147, {	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73335 },	-- Fading Breath
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 				{
 					["aqd"] = q(33134, {	-- Warforged Seals (A)
@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				q(33138, {	-- Why Do We Fight?
 					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },	-- Lorewalker Cho
-					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 			}),
 			n(VENDORS, {

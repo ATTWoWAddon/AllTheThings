@@ -113,10 +113,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 
 			-- Alpha/Beta
-			--n(220159, {	-- Brineslash
-			--	["coord"] = { X, Y, HALLOWFALL },
-			--	["questID"] = 80486,
-			--}),
+			-- n(220159, {	-- Brineslash
+			-- 	["coord"] = { X, Y, HALLOWFALL },
+			-- 	["questID"] = 80486,
+			-- }),
 		})),
 		n(RARES, {
 			n(218458, {	-- Deepfiend Azellix

@@ -29,6 +29,24 @@ q(5675),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune
 q(5677),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	 CATA:Arcane Feedback	 MOP:Arcane Feedback
 q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	 CATA:Arcane Feedback	 MOP:Arcane Feedback
 q(8237),	-- In the Blink of an Eye Tracking Quest	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE	 CATA:REUSE	 MOP:REUSE
+q(9085),	-- Shadows of Doom	 CLASSIC:Shadows of Doom	 TBC:Shadows of Doom	 WOTLK:Shadows of Doom	 CATA:Shadows of Doom	 MOP:Shadows of Doom
+q(9153),	-- Under the Shadow	 CLASSIC:Under the Shadow	 TBC:Under the Shadow	 WOTLK:Under the Shadow	 CATA:Under the Shadow	 MOP:Under the Shadow
+q(9154),	-- Light's Hope Chapel	 CLASSIC:Light's Hope Chapel	 TBC:Light's Hope Chapel	 WOTLK:Light's Hope Chapel	 CATA:Light's Hope Chapel	 MOP:Light's Hope Chapel
+q(9247),	-- The Keeper's Call	 CLASSIC:The Keeper's Call	 TBC:The Keeper's Call	 WOTLK:The Keeper's Call	 CATA:The Keeper's Call	 MOP:The Keeper's Call
+q(9260),	-- Investigate the Scourge of Stormwind	 CLASSIC:Investigate the Scourge of Stormwind	 TBC:Investigate the Scourge of Stormwind	 WOTLK:Investigate the Scourge of Stormwind	 CATA:Investigate the Scourge of Stormwind	 MOP:Investigate the Scourge of Stormwind
+q(9261),	-- Investigate the Scourge of Ironforge	 CLASSIC:Investigate the Scourge of Ironforge	 TBC:Investigate the Scourge of Ironforge	 WOTLK:Investigate the Scourge of Ironforge	 CATA:Investigate the Scourge of Ironforge	 MOP:Investigate the Scourge of Ironforge
+q(9262),	-- Investigate the Scourge of Darnassus	 CLASSIC:Investigate the Scourge of Darnassus	 TBC:Investigate the Scourge of Darnassus	 WOTLK:Investigate the Scourge of Darnassus	 CATA:Investigate the Scourge of Darnassus	 MOP:Investigate the Scourge of Darnassus
+q(9263),	-- Investigate the Scourge of Orgrimmar	 CLASSIC:Investigate the Scourge of Orgrimmar	 TBC:Investigate the Scourge of Orgrimmar	 WOTLK:Investigate the Scourge of Orgrimmar	 CATA:Investigate the Scourge of Orgrimmar	 MOP:Investigate the Scourge of Orgrimmar
+q(9264),	-- Investigate the Scourge of Thunder Bluff	 CLASSIC:Investigate the Scourge of Thunder Bluff	 TBC:Investigate the Scourge of Thunder Bluff	 WOTLK:Investigate the Scourge of Thunder Bluff	 CATA:Investigate the Scourge of Thunder Bluff	 MOP:Investigate the Scourge of Thunder Bluff
+q(9265),	-- Investigate the Scourge of the Undercity	 CLASSIC:Investigate the Scourge of the Undercity	 TBC:Investigate the Scourge of the Undercity	 WOTLK:Investigate the Scourge of the Undercity	 CATA:Investigate the Scourge of the Undercity	 MOP:Investigate the Scourge of the Undercity
+q(9292),	-- Cracked Necrotic Crystal	 CLASSIC:Cracked Necrotic Crystal	 TBC:Cracked Necrotic Crystal	 WOTLK:Cracked Necrotic Crystal	 CATA:Cracked Necrotic Crystal	 MOP:Cracked Necrotic Crystal
+q(9295),	-- Letter from the Front	 CLASSIC:Letter from the Front	 TBC:Letter from the Front	 WOTLK:Letter from the Front	 CATA:Letter from the Front	 MOP:Letter from the Front
+q(9299),	-- Note from the Front	 CLASSIC:Note from the Front	 TBC:Note from the Front	 WOTLK:Note from the Front	 CATA:Note from the Front	 MOP:Note from the Front
+q(9300),	-- Page from the Front	 CLASSIC:Page from the Front	 TBC:Page from the Front	 WOTLK:Page from the Front	 CATA:Page from the Front	 MOP:Page from the Front
+q(9301),	-- Envelope from the Front	 CLASSIC:Envelope from the Front	 TBC:Envelope from the Front	 WOTLK:Envelope from the Front	 CATA:Envelope from the Front	 MOP:Envelope from the Front
+q(9302),	-- Missive from the Front	 CLASSIC:Missive from the Front	 TBC:Missive from the Front	 WOTLK:Missive from the Front	 CATA:Missive from the Front	 MOP:Missive from the Front
+q(9304),	-- Document from the Front	 CLASSIC:Document from the Front	 TBC:Document from the Front	 WOTLK:Document from the Front	 CATA:Document from the Front	 MOP:Document from the Front
+q(9310),	-- Faint Necrotic Crystal	 CLASSIC:Faint Necrotic Crystal	 TBC:Faint Necrotic Crystal	 WOTLK:Faint Necrotic Crystal	 CATA:Faint Necrotic Crystal	 MOP:Faint Necrotic Crystal
 1.13.5.34713
 q(60860),	-- WOTLK:Your Reward has Arrived!	 CATA:Your Reward has Arrived!	 MOP:Your Reward has Arrived!
 q(60863),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]

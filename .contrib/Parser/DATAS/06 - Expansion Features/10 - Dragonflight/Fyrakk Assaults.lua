@@ -113,9 +113,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 					["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
+					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
-					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["groups"] = {
 						i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 						}),
@@ -148,9 +148,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75239, {	-- Disciple of Fyrakk: Shadeisethal
 					["provider"] = { "i", 204683 },	-- Head of Shadeisethal
+					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
-					-- ["maps"] = { THE_AZURE_SPAN },
 					["groups"] = {
 						i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
 						}),

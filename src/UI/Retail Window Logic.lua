@@ -345,13 +345,13 @@ local function GetCatalystIcon(data, iconOnly)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.isCost then
+	if data.isCost or data.isOwnedCost then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.isCost then
+	if data.isCost or data.isOwnedCost then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
@@ -695,7 +695,7 @@ local function Refresh(self)
 	end
 	-- local headerAdjust = 0;
 	-- if startIndent ~= 8 then
-	--	-- header only adjust
+	-- 	-- header only adjust
 	-- 	headerAdjust = startIndent - 8;
 	-- 	print("header adjust",headerAdjust)
 	-- 	row = rows[1];
@@ -1351,7 +1351,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 		-- app.PrintTable(group.g)
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
-		--	-- make a search for this group if it is an item/currency and not already a container for things
+		-- 	-- make a search for this group if it is an item/currency and not already a container for things
 		-- 	if not group.g and (group.itemID or group.currencyID) then
 		-- 		local cmd = group.key .. ":" .. group[group.key];
 		-- 		group = app.GetCachedSearchResults(app.SearchForLink, cmd);

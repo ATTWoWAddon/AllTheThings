@@ -366,13 +366,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		------ Stay awhile and listen ------
-		--hqt(???, {	-- Stay awhile and listen: Eternus
-		--	["name"] = "Stay awhile and listen: Eternus",
-		--	["description"] = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
-		--	["sourceQuest"] = 89415,	-- Storm the Citadel
-		--	["qg"] = 241748,	-- Eternus
-		--	["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-		--}),
+		-- hqt(???, {	-- Stay awhile and listen: Eternus
+		-- 	["name"] = "Stay awhile and listen: Eternus",
+		-- 	["description"] = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
+		-- 	["sourceQuest"] = 89415,	-- Storm the Citadel
+		-- 	["qg"] = 241748,	-- Eternus
+		-- 	["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+		-- }),
 		--
 		q(89417, {	-- Infinite Meetings
 			["sourceQuest"] = 89416,	-- Eternal Gratitude

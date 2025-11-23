@@ -190,7 +190,7 @@ root(ROOTS.Zones, {
 									{ 46.2, 45.4, THE_JADE_FOREST },	-- Chin
 									{ 53.5, 76.4, KRASARANG_WILDS },	-- Cranfur the Noodler
 								},
-							--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+								-- this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
 								["groups"] = {
 									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
 								},
@@ -408,7 +408,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30046, {	-- Chen's Resolution
 						["sourceQuests"] = {
-						--	TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
+							-- TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
 							29952,	-- Broken Dreams
 							29951,	-- Muddy Water
 						},

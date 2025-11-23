@@ -1,6 +1,6 @@
 local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[429765] = {
-		readable = "Forgotten Chest",	--This object appears to have not been released outside the PTR and has no language translation or items linked to it, please test.
+		readable = "Forgotten Chest",	-- This object appears to have not been released outside the PTR and has no language translation or items linked to it, please test.
 		model = 2123117,
 		text = {
 			en = "Forgotten Chest",

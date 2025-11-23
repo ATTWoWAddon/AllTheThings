@@ -125,7 +125,6 @@ exploration(6218),	-- The Dark Hollow
 exploration(6219),	-- Arena of Annihilation
 exploration(6220),	-- Fields of Niuzao
 exploration(6234),	-- Dread Expanse
-exploration(6292),	-- Stormwind Keep
 exploration(6295),	-- Seat of Knowledge
 exploration(6296),	-- Tol'viron Arena
 exploration(6297),	-- Heart of Fear
@@ -209,7 +208,6 @@ exploration(6458),	-- Kyparite Quarry
 exploration(6459),	-- Venomsting Pits
 exploration(6460),	-- The Briny Muck
 exploration(6461),	-- Whispering Stones
-exploration(6462),	-- Path of Conquerors
 exploration(6463),	-- Dustwallow Marsh
 exploration(6470),	-- The Gilded Foyer
 exploration(6471),	-- The Crimson Assembly Hall

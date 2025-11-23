@@ -6,7 +6,7 @@ DELVES_MID_S1 = createHeader({
 		es = "Profundidades MID T1",
 		mx = "Abismos MID T1",
 		ru = "Вылазки MID 1 сезон",
-	--	cn = "地心之战地下堡第1季",
+		-- cn = "地心之战地下堡第1季",
 	},
 });
 DELVES_MID_S2 = createHeader({
@@ -17,7 +17,7 @@ DELVES_MID_S2 = createHeader({
 		es = "Profundidades MID T2",
 		mx = "Abismos MID T2",
 		ru = "Вылазки MID 2 сезон",
-	--	cn = "地心之战地下堡第2季",
+		-- cn = "地心之战地下堡第2季",
 	},
 });
 DELVES_MID_S3 = createHeader({
@@ -28,7 +28,7 @@ DELVES_MID_S3 = createHeader({
 		es = "Profundidades MID T3",
 		mx = "Abismos MID T3",
 		ru = "Вылазки MID 3 сезон",
-	--	cn = "地心之战地下堡第3季",
+		-- cn = "地心之战地下堡第3季",
 	},
 });
 -- #if AFTER 12.0.0
@@ -36,7 +36,7 @@ local ALL_REGULAR_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
---	SHADOWGUARD_POINT,	-- MAPID MISSING
+	-- SHADOWGUARD_POINT,	-- MAPID MISSING
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
@@ -49,7 +49,7 @@ local ALL_THE_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
---	SHADOWGUARD_POINT,	-- MAPID MISSING
+	-- SHADOWGUARD_POINT,	-- MAPID MISSING
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,

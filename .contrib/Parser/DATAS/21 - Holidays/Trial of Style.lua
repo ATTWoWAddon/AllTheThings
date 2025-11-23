@@ -42,36 +42,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = CLOTH_CLASSES,
 				}),
-				iensemble(151118, { -- Ensemble: Obsidian Prowler's Garb
+				iensemble(151118, {	-- Ensemble: Obsidian Prowler's Garb
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = LEATHER_CLASSES,
 				}),
-				iensemble(151119, { -- Ensemble: Der'izu Armor
+				iensemble(151119, {	-- Ensemble: Der'izu Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = MAIL_CLASSES,
 				}),
-				iensemble(151120, { -- Ensemble: Righteous Battleplate
+				iensemble(151120, {	-- Ensemble: Righteous Battleplate
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = PLATE_CLASSES,
 				}),
 
 				-- SEASON 2 --
-				iensemble(157573, { -- Ensemble: Mindwrack Raiment
+				iensemble(157573, {	-- Ensemble: Mindwrack Raiment
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = CLOTH_CLASSES,
 					["timeline"] = { ADDED_7_3_5 },
 				}),
-				iensemble(157574, { -- Ensemble: Tundraspite Armor
+				iensemble(157574, {	-- Ensemble: Tundraspite Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = LEATHER_CLASSES,
 					["timeline"] = { ADDED_7_3_5 },
 				}),
-				iensemble(157576, { -- Ensemble: Crimson Sentinel Garb
+				iensemble(157576, {	-- Ensemble: Crimson Sentinel Garb
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = MAIL_CLASSES,
 					["timeline"] = { ADDED_7_3_5 },
 				}),
-				iensemble(157577, { -- Ensemble: Goldspine Plate
+				iensemble(157577, {	-- Ensemble: Goldspine Plate
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = PLATE_CLASSES,
 					["timeline"] = { ADDED_7_3_5 },
@@ -96,12 +96,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				}),
 
 				-- SEASON 4 --
-				iensemble(168058, { -- Ensemble: Tranquil Spiritbind Regalia
+				iensemble(168058, {	-- Ensemble: Tranquil Spiritbind Regalia
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = CLOTH_CLASSES,
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				iensemble(168059, { -- Ensemble: Restless Dreambound Battlegear
+				iensemble(168059, {	-- Ensemble: Restless Dreambound Battlegear
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = LEATHER_CLASSES,
 					["timeline"] = { ADDED_8_1_5 },
@@ -111,7 +111,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["classes"] = MAIL_CLASSES,
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				iensemble(168061, { -- Ensemble: Amaranthine Path Armor
+				iensemble(168061, {	-- Ensemble: Amaranthine Path Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = PLATE_CLASSES,
 					["timeline"] = { ADDED_8_1_5 },

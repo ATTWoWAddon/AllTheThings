@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13853,	-- Return Fire
 						13979,	-- The Goblin Braintrust
 						13987,	-- The Last Stand
-						25607,	-- Ze Gnomecorder -- TODO:: verify if actually needed
+						25607,	-- Ze Gnomecorder -- TODO:  verify if actually needed
 						26482,	-- True Power of the Rod
 						13886,	-- Vortex
 						13869,	-- Recover the Remains
@@ -881,7 +881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
 							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
 							["coord"] = { 37.6, 35.4, ASHENVALE },
-							["cr"] = 3987,	--  Dal Bloodclaw
+							["cr"] = 3987,	-- Dal Bloodclaw
 						}),
 						i(1970, {	-- Restoring Balm
 							["timeline"] = { REMOVED_4_0_3 },

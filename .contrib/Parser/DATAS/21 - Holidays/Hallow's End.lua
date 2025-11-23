@@ -4140,12 +4140,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(43162, {	-- Under the Crooked Tree
+			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["qg"] = 109734,	-- Hag of the Crooked Tree
 			["coord"] = { 34.9, 56.0, VALSHARAH },
 			["timeline"] = { ADDED_7_0_3 },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
-			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["groups"] = {
 				objective(1, {	-- Drink from the cauldron and release Aria Sorrowheart's spirit
 					["provider"] = { "n", 109825 },	-- Aria Sorrowheart

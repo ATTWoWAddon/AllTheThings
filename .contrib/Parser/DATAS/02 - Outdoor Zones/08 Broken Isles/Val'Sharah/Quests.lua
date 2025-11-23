@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			header(HEADERS.Achievement, 10698, {	-- That's Val'sharah Folks!
 				------ Prolouge ------
 				q(39731, {	-- The Tranquil Forest
-					["provider"] = { "n", 93787 },	--  Scouting Map
+					["provider"] = { "n", 93787 },	-- Scouting Map
 					["maps"] = CLASS_HALL_MAPS,
 					["isBreadcrumb"] = true,
 					["crs"] = CLASS_HALL_MISSION_TABLES,
@@ -762,9 +762,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["qg"] = 93677,	-- Shivering Ashmaw Cub
 					["coord"] = { 53.1, 87.9, VALSHARAH },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer
-					["groups"] = {
-						i(128690),	-- Ashmaw Cub (PET!)
-					},
+					["groups"] = { i(128690) },	-- Ashmaw Cub (PET!)
 				}),
 				-- APPEARANCE --
 				q(46079, {	-- Aid on the Front Lines
@@ -776,26 +774,36 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						47003,	-- Restoration: The Bradensbrook Investigation, Shaman
 					},
 					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["coord"] = { 42.3, 58.9, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46082, {	-- Shadowsong's Return
 					["sourceQuests"] = { 46079 },	-- Aid on the Front Lines
 					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["coord"] = { 42.3, 58.9, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46106, {	-- Cutting off the Heads
 					["sourceQuests"] = { 46082 },	-- Shadowsong's Return
-					["provider"] = { "n", 118947 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						118947,	-- Commander Jarod Shadowsong
+						118954,	-- Commander Jarod Shadowsong (mobileNPC)
+					},
+					["coord"] = { 39.1, 58.1, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46080, {	-- Quieting the Spirits
 					["sourceQuests"] = { 46082 },	-- Shadowsong's Return
-					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						118947,	-- Commander Jarod Shadowsong
+						118954,	-- Commander Jarod Shadowsong (mobileNPC)
+					},
+					["coord"] = { 39.1, 58.1, VALSHARAH },
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
@@ -805,14 +813,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						46106,	-- Cutting off the Heads
 						46080,	-- Quieting the Spirits
 					},
-					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong (mobileNPC)
 					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
 				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["sourceQuests"] = { 46107 },	-- Source of the Corruption
-					["provider"] = { "n", 118954 },	-- Night Elf Warrior
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong (mobileNPC)
 					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 					["_drop"] = { "classes", "c" },	-- bad API data
@@ -827,9 +835,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "i", 127860 },	-- Warden's Signet
 					["coord"] = { 38.9, 65.1, VALSHARAH },
 					["cr"] = 94366,	-- Lelyn Swiftshadow
-					["groups"] = {
-						i(127860),	-- Warden's Signet (QI!)
-					},
 				}),
 				q(39015, {	-- Grumpy
 					["qg"] = 92738,-- Grumpy

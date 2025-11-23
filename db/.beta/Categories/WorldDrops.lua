@@ -4973,6 +4973,7 @@ s(17239,36502,{f=24,lvl=27}),
 s(17243,36506,{f=24,lvl=28})}),
 flt(29,{
 s(17346,36609,{f=29,lvl=29}),
+s(17340,36603,{awp=100007,f=29,lvl=27}),
 s(18044,37813,{f=29,lvl=28}),
 s(17348,36611,{f=29,lvl=29}),
 s(17344,36607,{f=29,lvl=28}),
@@ -4989,7 +4990,6 @@ s(17342,36605,{f=29,lvl=28})}),
 flt(28,{
 s(17293,36556,{f=28,lvl=30}),
 s(17434,36697,{f=28,lvl=26}),
-s(17340,36603,{awp=100007,f=29,lvl=27}),
 s(17447,36710,{f=28,lvl=30}),
 s(18035,37804,{f=28,lvl=29}),
 s(17282,36545,{f=28,lvl=27}),
@@ -8916,6 +8916,8 @@ i(6150,{description="Can be pickpocketed from Classic humanoids."}),
 i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}),
 x(3,{
 i(37674,{coords={{47.8,49.4,115}},crs={27539},description="If only they would have read this."}),
+flt(55,{
+i(40202,{f=55,lvl=27,spellID=45548})}),
 flt(102,{awp=30002,g={
 toy(36863,{description="Can be pickpocketed from Northrend humanoids."}),
 toy(36862,{description="Can be pickpocketed from Northrend humanoids."})}})}),

@@ -1,3 +1,6 @@
+11.2.7.63642
+r(1260700),	-- Suramar Containment Cell
+r(1262238),	-- Nightspire Fountain
 12.0.0.63534
 r(471006),	-- Midnight Enchanting
 r(471042),	-- Recraft Equipment
@@ -104,31 +107,6 @@ r(1265703),	-- Ingenuity
 
 Missing in Enchanting
 
-11.2.7.63642
-r(1259690),	-- Replica Awakening Machine Stasis Pod
-r(1259715),	-- Dornogal Hanging Sconce
-r(1260700),	-- Suramar Containment Cell
-r(1260990),	-- Ancestral Signal Brazier
-r(1261008),	-- Draenethyst String Lights
-r(1261331),	-- Draenei Holo-Dais
-r(1261340),	-- Draenei Holo-Path
-r(1261501),	-- Tirisfal Hollow Campfire
-r(1261919),	-- Five Flights' Grimoire
-r(1261933),	-- Draconic Scribe's Basin
-r(1261998),	-- Venthyr Anima Bottle
-r(1262238),	-- Nightspire Fountain
-r(1262302),	-- Intense Mogu Brazier
-r(1262306),	-- Pandaren Table Lamp
-r(1262318),	-- Twilight Fire Canister
-r(1262331),	-- Pyrewood Glass Bottle
-r(1262824),	-- Mark of the Mages' Eye
-r(1262825),	-- Stampwhistle's Postal Portal
-r(1262828),	-- Aldor Stellar Console
-r(1263238),	-- Ardenweald Lamppost
-r(1263870),	-- Tidesage's Totem
-r(1263877),	-- Drust Enchanter's Rod
-11.2.7.64011
-r(1270459),	-- Darkmaster's Mystical Brazier
 12.0.0.63534
 r(471006),	-- Midnight Enchanting
 r(471042),	-- Recraft Equipment

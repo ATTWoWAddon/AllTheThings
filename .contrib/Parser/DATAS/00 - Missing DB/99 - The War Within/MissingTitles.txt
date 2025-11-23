@@ -1,17 +1,65 @@
+3.80.0.64393
+title(672),	-- Dream Chaser, %s
+title(673),	-- The Overlord of Dawn, %s
+title(674),	-- Dawn's Vanguard, %s
+title(675),	-- Northbound Rush, %s
+title(692),	-- Ember Lord %s
+title(693),	-- %s, Brand of Flame
+title(694),	-- %s, the Phoenix Fall
+title(695),	-- %s, Sunstrider's Setback
+title(696),	-- %s, Depth's Demise
+title(697),	-- %s, Coilfang Purifier
+title(698),	-- %s, Scion of the Necropolis
+title(699),	-- Scourgebreaker %s
+title(700),	-- %s, Spellweaver's Ruin
+title(701),	-- Nexus Master %s
+title(702),	-- %s, Onyx Harbinger
+title(703),	-- %s, Drakebane
+title(704),	-- %s, Heart of Ruin
+title(705),	-- %s, Soulflayer's End
+title(706),	-- Titanic Crusader %s
+title(707),	-- %s, Nerub's Bane
+title(708),	-- %s, Dawnbringer
+title(709),	-- Legionbreaker %s
+title(710),	-- %s, Apex Predator
+title(711),	-- %s, Hex Breaker
+title(712),	-- Starbreaker %s
+title(713),	-- %s, the Infinite Maw
+title(714),	-- %s, Keeper of Secrets
+title(715),	-- Tower Master %s
+title(716),	-- %s, Earthsplitter
+title(717),	-- %s, Spine of the Mountain
+title(718),	-- %s, Lord of the Pit
+title(719),	-- Hellfire Champion, %s
+title(720),	-- Wyrm Slayer %s
+title(721),	-- %s, Handler of Whelps
+title(722),	-- %s, Lord of Ashes
+title(723),	-- Chromatic Lord %s
+title(724),	-- %s, the Unscarred
+title(725),	-- Dune Reaver %s
+title(726),	-- %s, Eye of Madness
+title(727),	-- God Slayer %s
+title(728),	-- %s, Usurper
+title(729),	-- %s, Lordaeron's Shadow
+title(730),	-- Twilight Slayer %s
+title(731),	-- %s, Twilight's Eclipse
+title(732),	-- %s, Shadow of the Betrayer
+title(733),	-- %s, the Prepared
+title(734),	-- %s, Ancient Defender
+title(735),	-- %s, Defiler's Doom
 5.5.1.62856
 title(250),	-- Grievous Skirmisher %s
 title(980),	-- Skirmisher %s
 title(995),	-- Malevolent Skirmisher %s
 title(996),	-- Tyrannical Skirmisher %s
-5.5.2.63832
-title(672),	-- Dream Chaser, %s
-title(673),	-- The Overlord of Dawn, %s
-title(674),	-- Dawn's Vanguard, %s
-title(675),	-- Northbound Rush, %s
+5.5.3.64141
+title(736),	-- %s, the Mistborne
+title(737),	-- %s, Heir to the Mist
+5.5.3.64308
+title(738),	-- %s, the Thundering Stampede
+title(739),	-- %s, the Momentous Terror
 11.2.0.62049
 title(650),	-- Delver %s
-11.2.5.62554
-title(645),	-- Khaz Algar Enthusiast %s
 12.0.0.63534
 title(0),	-- Loa-speaker %s
 title(643),	-- %s, Definitely Not a Cultist
@@ -43,3 +91,5 @@ title(688),	-- %s the Ominous
 title(689),	-- %s, Fabled Vanquisher of Nullaeus
 title(690),	-- [PH] VoidspireRaid %s
 title(691),	-- Treasure Seeker %s
+12.0.0.64499
+title(740),	-- Loa-speaker %s

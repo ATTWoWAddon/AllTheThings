@@ -1544,11 +1544,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
-				i(116146, {  -- Schematic: Snake Firework (RECIPE!)
+				i(116146, {	-- Schematic: Snake Firework (RECIPE!)
 					["timeline"] = { ADDED_6_0_3_LAUNCH },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
-				i(116144, {  -- Schematic: Horde Firework (RECIPE!)
+				i(116144, {	-- Schematic: Horde Firework (RECIPE!)
 					["timeline"] = { ADDED_6_0_3_LAUNCH },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),

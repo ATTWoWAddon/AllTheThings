@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
-					--["requireSkill"] = COOKING,	-- CRIEVE NOTE: The Fish Cakes are BOE, doesn't explicitly require Cooking.
+					-- ["requireSkill"] = COOKING,	-- CRIEVE NOTE: The Fish Cakes are BOE, doesn't explicitly require Cooking.
 					["groups"] = {
 						objective(1, {	-- 0/5 Fish Cake
 							["provider"] = { "i", 74641 },	-- Fish Cake
@@ -156,9 +156,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
-					-- #if AFTER BFA
-					["requireSkill"] = TAILORING,
-					-- #else
+					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
 					-- #endif
 					["groups"] = {
@@ -792,9 +790,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ "n", 58225 },	-- Instructor Tong
 					},
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
-				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
-				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively. swapping back to blue switched the quest back to 30139.
-				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
+					-- picked the blue and got this one, but some notes indicate all colors now grant this quest.
+					-- i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively. swapping back to blue switched the quest back to 30139.
+					-- completing one version of the quest completes them all, so altQuests is unnecessary here.
 				}),
 				q(30140, {	-- The Rider's Journey (green egg)
 					["sourceQuest"] = 30138,	-- Choosing the One

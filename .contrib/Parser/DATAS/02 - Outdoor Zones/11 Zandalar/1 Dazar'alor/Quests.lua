@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
-						--	initial outpost setup
+							-- initial outpost setup
 							mi(1880, {	-- Wolf's Den
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(56249, {	-- I Am the Trashmaster
 				["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
-				--["sourceQuests"] = { },
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 				["coord"] = { 35.3, 7.70, DAZARALOR },
 				["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
@@ -724,7 +724,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49758, {	-- Send the Signal!
 				["sourceQuests"] = {
-					--,	-- Sending Out an SOS (breadcrumb)
+					-- ,	-- Sending Out an SOS (breadcrumb)
 					49310,	-- The Prophet's Ploy (last real quest required)
 				},
 				["provider"] = { "n", 140590 },	-- Captain Grez'ko
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-			--	verify SQ
+				-- verify SQ
 			}),
 			q(47257, {	-- The Bones of Xibala (H)
 				["sourceQuests"] = { 49426 },	-- The King's Gambit
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133050 },	-- Princess Talanji
 				["coord"] = { 41.1, 64.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
-			--	TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde. i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal. is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
+			-- TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde. i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal. is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
 			}),
 			q(58583, {	-- Where the Heart Is
 				["sourceQuest"] = 58582,	-- Return of the Black Prince
@@ -959,8 +959,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47514, {	-- Zuldazar
-			--	"we need each other" did not pop up at all during my playthrough on April 11, 2021 -- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
-			--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+				-- "we need each other" did not pop up at all during my playthrough on April 11, 2021 -- unsure if it has specific requirements/if it's a breadcrumb/if it was removed
+				-- ["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 				["provider"] = { "n", 135775 },	-- Scouting Map
 				["coord"] = { 40.1, 69.1, HALL_OF_CHRONICLERS },
@@ -973,8 +973,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47512, {	-- Nazmir
-			--	TODO: not a SQ during my April 2021 playthrough, unsure of requirements
-			--	["sourceQuests"] = { 52131 },	-- We Need Each Other
+				-- TODO: not a SQ during my April 2021 playthrough, unsure of requirements
+				-- ["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["provider"] = { "n", 135775 },	-- Scouting Map
 				["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,

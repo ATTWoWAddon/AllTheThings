@@ -442,26 +442,26 @@ end
 -- Reporting (all areas remembered in a single report window)
 local ExplorationReportLines = {}
 local function PrintDiscordInformationForAllExplorations(o, type)
-    if not app.Contributor then return end
+	if not app.Contributor then return end
 	if not type then return end
-    local areaID = o.explorationID
-    if not areaID or ReportedAreas[areaID] then return end
-    ReportedAreas[areaID] = o
+	local areaID = o.explorationID
+	if not areaID or ReportedAreas[areaID] then return end
+	ReportedAreas[areaID] = o
 
-    local text = o.text or "???"
-    local mapID = o.mapID
-    if mapID then
-        text = text .. " (" .. GetMapName(mapID) .. ")"
-    end
+	local text = o.text or "???"
+	local mapID = o.mapID
+	if mapID then
+		text = text .. " (" .. GetMapName(mapID) .. ")"
+	end
 
-    local position, coord = mapID and C_Map_GetPlayerMapPosition(mapID, "player"), nil
-    local x, y
-    if position then
-        x, y = position:GetXY()
-        x = math_floor(x * 1000) / 10
-        y = math_floor(y * 1000) / 10
-        coord = x .. ", " .. y
-    end
+	local position, coord = mapID and C_Map_GetPlayerMapPosition(mapID, "player"), nil
+	local x, y
+	if position then
+		x, y = position:GetXY()
+		x = math_floor(x * 1000) / 10
+		y = math_floor(y * 1000) / 10
+		coord = x .. ", " .. y
+	end
 
 	local inInstance = IsInInstance()
 	if not inInstance and (not x or not y) then
@@ -488,10 +488,10 @@ local function PrintDiscordInformationForAllExplorations(o, type)
 		end
 	end
 
-    local popupID = "exploration-report-" .. areaID
-    app:SetupReportDialog(popupID, "Exploration Reports", ExplorationReportLines)
-    app.print("Found Unmapped Area (" .. type .. "):", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID))
-    app.Audio:PlayReportSound()
+	local popupID = "exploration-report-" .. areaID
+	app:SetupReportDialog(popupID, "Exploration Reports", ExplorationReportLines)
+	app.print("Found Unmapped Area (" .. type .. "):", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID))
+	app.Audio:PlayReportSound()
 end
 local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
@@ -507,11 +507,11 @@ local function CacheAndUpdateExploration(explorationIDTable)
 	RefreshExplorationData(rawAreaIDdata)
 end
 local function GetAreaIDForName(name, zonetype)
-    local id = AreaIDNameMapper[name]
-    if not id then
-        app.PrintDebug("No AreaID found for", zonetype, name)
-    end
-    return id
+	local id = AreaIDNameMapper[name]
+	if not id then
+		app.PrintDebug("No AreaID found for", zonetype, name)
+	end
+	return id
 end
 local function GetExplorationByZoneOrSubzone(mapID)
 	local results = {}
@@ -1134,10 +1134,10 @@ app.CreateMapWithStyle = function(id)
 	for _,data in ipairs(app.SearchForField("mapID", id)) do
 		if data.mapID and data.icon then
 			mapObject.text = data.text;
-            mapObject.icon = data.icon;
-            mapObject.lvl = data.lvl;
-            mapObject.lore = data.lore;
-            mapObject.description = data.description;
+			mapObject.icon = data.icon;
+			mapObject.lvl = data.lvl;
+			mapObject.lore = data.lore;
+			mapObject.description = data.description;
 			break;
 		end
 	end

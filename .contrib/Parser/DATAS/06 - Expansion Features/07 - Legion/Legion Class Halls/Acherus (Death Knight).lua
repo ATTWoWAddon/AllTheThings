@@ -49,10 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(FLIGHT_PATHS, {
 					fp(1862),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(663),	-- Ebon Knights
 					follower(901),	-- Ebon Knights
 					follower(902),	-- Ebon Knights
@@ -78,7 +75,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(783),	-- Abomination
 					follower(941),	-- Alliance:Abomination \\ Horde:Abomination
 					follower(942),	-- Abomination
-				})),
+				}),
 				n(QUESTS, {
 					q(40714, {	-- The Call To War
 						["maps"] = { LEGION_DALARAN },
@@ -299,7 +296,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Choose Zone
 					q(39832, {	-- Plans and Preparations
-						["sourceQuest"] = 39757,	-- Keeping Your Edge
+						["sourceQuests"] = {
+							-- #IF BEFORE BFA
+							39757,	-- Keeping Your Edge
+							-- #ELSE
+							40740,	-- The Dead and the Damned
+							38990,	-- The Call of Icecrown
+							40935,	-- The Call of Vengeance (Good)
+							40987,	-- The Call of Vengeance (Bad)
+							-- #ENDIF
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
@@ -459,10 +466,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = { i(139538) },	-- Nightmare Lash (QI!)
 					}),
 					q(42818, {	-- The Scarlet Assault
-						["sourceQuest"] = 43899,	-- Steeds of the Damned
+						["sourceQuest"] = 43572,	-- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						-- ["sourceQuest"] = 43572,	-- Darkheart Thicket: The Nightmare Lash
 					}),
 					q(42821, {	-- Raising an Army
 						["sourceQuest"] = 42818,	-- The Scarlet Assault
@@ -552,7 +558,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43928,	-- Aggregates of Anguish
 						["provider"] = { "n", 93555 },	-- Amal'thazad
 						["coord"] = { 58.1, 31.1, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["maps"] = { 713 },	--  Eye of Azshara
+						["maps"] = { 713 },	-- Eye of Azshara
 						["groups"] = { i(141302) },	-- Frozen Soul Pendant (QI!)
 					}),
 					q(44247, {	-- Champion: Amal'thazad
@@ -569,8 +575,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43928,	-- Aggregates of Anguish
 							44690,	-- A Thirst For Blood
 							91615,	-- A Thirst For Blood (Remix)
+							44286,	-- Vault of the Wardens: A Masterpiece of Flesh
+							43574,	-- Maw of Souls: Maul of the Dead
+							44282,	-- Eye of Azshara: The Frozen Soul
 						},
-						["sourceQuestNumRequired"] = 3,
+						["sourceQuestNumRequired"] = 6,
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["groups"] = {
@@ -617,7 +626,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
 							-- #IF AFTER 7.2.0
-							43407, -- A Hero's Weapon
+							43407,	-- A Hero's Weapon
 							-- #ELSE
 							45998,	-- Investigate the Broken Shore
 							-- #ENDIF

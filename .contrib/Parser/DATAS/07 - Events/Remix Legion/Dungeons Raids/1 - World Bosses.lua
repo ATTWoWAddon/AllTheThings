@@ -11,23 +11,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 31.0, 65.5, SURAMAR },
 			["creatureID"] = 109943,	-- Ana-Mouz
 			["questID"] = 43512,	-- Ana-Mouz (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42559) },	-- Ana-Mouz
 		}),
 		e(1956, {	-- Apocron
 			["coord"] = { 59.2, 62.6, BROKEN_SHORE },
 			["creatureID"] = 121124,	-- Apocron
-			["questID"] = 47061,	-- Apocron (WQ)
-			["isWeekly"] = true,
+			["questID"] = 91789,	-- Apocron (WQ)
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42662) },	-- Apocron
 		}),
 		e(1883, {	-- Brutallus
 			["coord"] = { 59.2, 28.4, BROKEN_SHORE },
 			["creatureID"] = 117239,	-- Brutallus
-			["questID"] = 46947,	-- Brutallus (WQ)
-			["isWeekly"] = true,
+			["questID"] = 91790,	-- Brutallus (WQ)
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42643) },	-- Brutallus
 		}),
@@ -35,7 +35,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 37.7, 83.6, AZSUNA },
 			["creatureID"] = 109331,	-- Calamir
 			["questID"] = 43193,	-- Calamitous Intent (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42526) },	-- Calamir
 		}),
@@ -43,7 +43,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
 			["creatureID"] = 110378,	-- Drugon the Frostblood
 			["questID"] = 43448,	-- The Frozen King (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42542) },	-- Drugon the Frostblood
 		}),
@@ -51,7 +51,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
 			["creatureID"] = 99929,	-- Flotsam
 			["questID"] = 43985,	-- A Dark Tide (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42614) },	-- Flotsam
 		}),
@@ -59,7 +59,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 24.6, 69.6, VALSHARAH },
 			["creatureID"] = 108879,	-- Humongris
 			["questID"] = 42819,	-- Pocket Wizard (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42529) },	-- Humongris
 		}),
@@ -67,15 +67,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 43.0, 67.6, AZSUNA },
 			["creatureID"] = 108829,	-- Levantus
 			["questID"] = 43192,	-- Terror of the Deep (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42527) },	-- Levantus
 		}),
 		e(1884, {	-- Malificus
 			["coord"] = { 59.8, 27.8, BROKEN_SHORE },
 			["creatureID"] = 117303,	-- Malificus
-			["questID"] = 46948,	-- Malificus (WQ)
-			["isWeekly"] = true,
+			["questID"] = 91791,	-- Malificus (WQ)
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42629) },	-- Malificus
 		}),
@@ -84,7 +84,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["creatureID"] = 110321,	-- Na'zak the Fiend
 			["questID"] = 43513,	-- Na'zak the Fiend (WQ)
 			["maps"] = { SURAMAR },
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42637) },	-- Na'zak the Fiend
 		}),
@@ -92,7 +92,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 46.6, 30.0, STORMHEIM },
 			["creatureID"] = 107544,	-- Nithogg
 			["questID"] = 42270,	-- Scourge of the Skies (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42536) },	-- Nithogg
 		}),
@@ -100,15 +100,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 55.6, 43.2, VALSHARAH },
 			["creatureID"] = 108678,	-- Shar'thos
 			["questID"] = 42779,	-- The Sleeping Corruption (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42659) },	-- Shar'thos
 		}),
 		e(1885, {	-- Si'vash
 			["coord"] = { 89.6, 33.0, BROKEN_SHORE },
 			["creatureID"] = 117470,	-- Si'vash
-			["questID"] = 46945,	-- Si'vash (WQ)
-			["isWeekly"] = true,
+			["questID"] = 91792,	-- Si'vash (WQ)
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42530) },	-- Si'vash
 		}),
@@ -120,7 +120,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 			["coord"] = { 78.2, 8.60, STORMHEIM },
 			["questID"] = 42269,	-- The Soultakers (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42610) },	-- The Soultakers
 		}),
@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 52.6, 80.8, AZSUNA },
 			["creatureID"] = 112350,	-- Withered J'im
 			["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
-			["isWeekly"] = true,
+			["isDaily"] = true,
 			["isRaid"] = true,
 			["groups"] = { ach(42669) },	-- Withered J'im
 		}),
@@ -140,10 +140,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		m(BROKEN_SHORE, {
 			n(WORLD_BOSSES, {
 				q(92540, { ["isDaily"] = true } ),	-- Kill any Broken Shore world boss
-				q(91789, { ["isDaily"] = true } ),	-- Apocron
-				q(91790, { ["isDaily"] = true } ),	-- Brutallus
-				q(91791, { ["isDaily"] = true } ),	-- Malificus
-				q(91792, { ["isDaily"] = true } ),	-- Si'vash
 			}),
 		}),
 	}),

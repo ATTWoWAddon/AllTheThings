@@ -1622,36 +1622,36 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						}),
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
-						--TODO: only itemID, no bonusIDs for r4
+						-- TODO: only itemID, no bonusIDs for r4
 						i(239568, {	-- Audio Amplification Crystal [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239569, {	-- Battered Aegis [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239573, {	-- Ethereal Energy Converter [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239579, {	-- Hatarang [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239576, {	-- Mana-Tinted Glasses [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239580, {	-- Nether Overlay Matrix [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239578, {	-- Quizzical Device [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239571, {	-- Sands of K'aresh [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239567, {	-- Tailwind Conduit [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 						i(239570, {	-- Temporal Decelerator Crystal [Rank 4]
-							--["bonusID"] = xx,
+							-- ["bonusID"] = xx,
 						}),
 					})),
 				}),
@@ -1819,7 +1819,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		hqt(86990, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 77
 		hqt(86991, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 78
 		hqt(86992, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 79
-		--hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80 Attached on achievement
+		-- hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80 Attached on achievement
 		hqt(88948, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 81
 		hqt(88949, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 82
 		hqt(88950, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 83
@@ -1902,8 +1902,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(84224, {	-- To Delves!
-			--["provider"] = { "n", xxxxx },	-- Auto-accept?
-			--["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
+			-- ["provider"] = { "n", xxxxx },	-- Auto-accept?
+			-- ["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
@@ -1932,7 +1932,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_REGULAR_DELVES_TWW,	-- s2 delves or all delves?
 		}),
 		q(88947, {	-- Undermined Delves
-			--["sourceQuests"] = { xx },	-- ??
+			-- ["sourceQuests"] = { xx },	-- ??
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.6, 44.3, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
@@ -2081,7 +2081,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { ADDED_11_1_7 },
 			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
-				--i(244311),	-- Titan Memory Card
+				-- i(244311),	-- Titan Memory Card
 			},
 		}),
 		q(91033, {	-- Monitoring 'Construct'ing
@@ -2131,6 +2131,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+			["maps"] = { KARESH_TAZAVESH },
 			["groups"] = {
 				o(563555, {	-- Writ of Repossession
 					["coord"] = { 47.5, 44.4, DORNOGAL },
@@ -2149,7 +2150,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 			["groups"] = {
-				i(244470),	--  Etheric Victory (TOY!)
+				i(244470),	-- Etheric Victory (TOY!)
 			},
 		}),
 	}),
@@ -2243,7 +2244,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["cr"] = 236942,	-- The Underpin
 			["groups"] = {
 				i(235813),	-- Machine Gob's Iron Grin
-				--i(233071),	-- Delver's Bounty
+				-- i(233071),	-- Delver's Bounty
 			},
 		}),
 		o(547532, {	-- Ky'veza's Etheric Cache
@@ -3538,7 +3539,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		["icon"] = [[~_.asset("Delves_Goblin")]],
 		["coord"] = { 35.2, 52.2, UNDERMINE },
 		["maps"] = {
-			--2420,	-- The Pits (constant mapID)
+			-- 2420,	-- The Pits (constant mapID)
 			2421,	-- The Low Decks
 			2422,	-- The High Decks
 			2423,	-- Entrance
@@ -4035,7 +4036,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(91453, { ["timeline"]={ ADDED_11_2_0_SEASONSTART } }),	-- K'aresh Trust
 		})),
 		n(DELVES_TWW_S1, {
-			--Delver's Journey Rewards
+			-- Delver's Journey Rewards
 			q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
 			q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
 			q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
@@ -4060,7 +4061,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- q(86329),	-- Delver's Cosmetic Surprise Bag (itemID 233281) [linked to Item]
 				-- q(86328),	-- Delver's Starter Kit (itemID 233276) [linked to Item]
 			}),
-			--Delver's Journey Rewards
+			-- Delver's Journey Rewards
 			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)
 			q(85203),	-- Delver's Dirigible Schematic: Pipes (spellID 467082)
 			q(85202),	-- Delver's Dirigible Schematic: Harpoon (spellID 467081)
@@ -4070,11 +4071,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
 			q(85206),	-- Warbound Equipment Set (spellID 467089)
 			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-			--q(86371, { ["timeline"] = { ADDED_11_1_7 } } ),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
+			-- q(86371, { ["timeline"] = { ADDED_11_1_7 } } ),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
 			-- Underpin Invasion
 			q(87287, { ["isWeekly"] = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
-			--- Overcharged Delves
+			-- Overcharged Delves
 			-- Belt unlocks
 			q(90945, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90946, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
@@ -4088,18 +4089,18 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88826),	-- Purchaseable Restored Coffer Key (spellID 1224304)
 			q(88811),	-- Delver's Mana-Skimmer Schematic: Quad Glider (spellID 1224298)
 			q(88827),	-- Delver's Mana-Skimmer Schematic: Void Paint (spellID 1224319)
-			--q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
-			--q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
-			--q(),	-- Delver's Mana-Bound Ethergate toy missing?
+			-- q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
+			-- q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
+			-- q(),	-- Delver's Mana-Bound Ethergate toy missing?
 			-- Invasion / Map
 
 			-- First delve of day
 
 			-- Items (probably automation will do a thing, just in case)
-			--q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
-			--q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
-			--q(91783),	-- Delver's Cosmetic Surprise Bag (spellID 1246295) (itemID 248127)
-			--q(91784),	-- Delver's Starter Kit (spellID 1246296) (itemID 248126)
+			-- q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
+			-- q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
+			-- q(91783),	-- Delver's Cosmetic Surprise Bag (spellID 1246295) (itemID 248127)
+			-- q(91784),	-- Delver's Starter Kit (spellID 1246296) (itemID 248126)
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve

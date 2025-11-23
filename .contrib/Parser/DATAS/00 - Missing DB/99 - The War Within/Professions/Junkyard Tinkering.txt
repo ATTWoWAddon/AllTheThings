@@ -4,7 +4,7 @@ r(1243783),	-- Gnomish Fencepost
 r(1243788),	-- Mechanical Gnomish Lamppost
 r(1243793),	-- Perpetual Motion Crate
 r(1243801),	-- Mechagon Armory Rack
-r(1243803),	-- Mechagnome Sustenance Distribution Station
+r(1243803),	-- Mechagnome Sustenance Distributor \\ Mechagnome Sustenance Distribution Station
 
 
 
@@ -17,4 +17,4 @@ r(1243783),	-- Gnomish Fencepost
 r(1243788),	-- Mechanical Gnomish Lamppost
 r(1243793),	-- Perpetual Motion Crate
 r(1243801),	-- Mechagon Armory Rack
-r(1243803),	-- Mechagnome Sustenance Distribution Station
+r(1243803),	-- Mechagnome Sustenance Distributor \\ Mechagnome Sustenance Distribution Station

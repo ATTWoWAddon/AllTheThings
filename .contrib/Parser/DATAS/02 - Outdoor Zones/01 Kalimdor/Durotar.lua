@@ -2527,7 +2527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fizzle's Claw
-							["provider"] = { "i", 4869, 1 },	-- Fizzle's Claw
+							["provider"] = { "i", 4869 },	-- Fizzle's Claw
 							["coord"] = { 42.6, 26.4, DUROTAR },
 							["cr"] = 3203,	-- Fizzle Darkstorm
 						}),
@@ -3101,7 +3101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 7,
 							["groups"] = {
 								objective(1, {	-- 0/4 Venomtail Poison Sac
-									["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
+									["cost"] = {{ "i", 4886, 4 }},	-- Venomtail Poison Sac
 									["crs"] = {
 										3226,	-- Corrupted Scorpid
 										5823,	-- Death Flayer
@@ -3339,7 +3339,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["qg"] = 3293,	-- Rezlak
 					["coord"] = { 46.4, 23, DUROTAR },
-					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -3579,7 +3579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(40518, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Battle for Broken Shore
 					["description"] = "Legion expansion introduction quest.|r",
 					["sourceQuest"] = 44281,	-- To Be Prepared
-				--	["altQuest"] = 44543,	-- Scenario Skip (H)
+					-- ["altQuest"] = 44543,	-- Scenario Skip (H)
 					["qg"] = 113547,	-- Stone Guard Mukar
 					["coord"] = { 55.6, 11.0, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -3762,7 +3762,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(786, {	-- Thwarting Kolkar Aggression
-					--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
+					-- ["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 					["qg"] = 3140,	-- Lar Prowltusk
 					["coord"] = { 54.52, 75.20, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3891,7 +3891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
 					["coord"] = { 46.4, 23, DUROTAR },
-					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Sack of Supplies
@@ -4036,7 +4036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 67.6, 87.8, DUROTAR },
 					["cost"] = {
 						{ "i", 207731, 1 },	-- Ominous Tome
@@ -4143,7 +4143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
-					--["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
+					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					["coords"] = {
 						{ 38.01, 35.53, DUROTAR },

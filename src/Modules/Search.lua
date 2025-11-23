@@ -105,17 +105,17 @@ local function SearchByItemLink(link)
 	local modID = tonumber(linkData[13]) or 0
 	local bonusCount = tonumber(linkData[14]) or 0
 	local bonusID1 = bonusCount > 0 and linkData[15] or 0
-	-- local itemModifierIndex = 15 + bonusCount
-	-- local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
+	local itemModifierIndex = 15 + bonusCount
+	local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
 	local artifactID
-	-- if itemModifierCount > 0 then
-	-- 	for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
-	-- 		if linkData[i] == "8" then
-	-- 			artifactID = tonumber(linkData[i + 1])
-	-- 			break
-	-- 		end
-	-- 	end
-	-- end
+	if itemModifierCount > 0 then
+		for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
+			if linkData[i] == "8" then
+				artifactID = tonumber(linkData[i + 1])
+				break
+			end
+		end
+	end
 	local search
 	-- Don't use SourceID for artifact searches since they contain many SourceIDs
 	local sourceID = not artifactID and app.GetSourceID(link);

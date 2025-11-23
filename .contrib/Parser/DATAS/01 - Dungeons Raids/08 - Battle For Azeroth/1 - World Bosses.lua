@@ -300,7 +300,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		n(WORLD_BOSSES, {
 			q(58508),	-- Grand Empress Shek'zara first kill??
 			q(58512),	-- Grand Empress Shek'zara bonus roll
-			--q(58770),	-- Grand Empress Shek'zara bonus roll
+			-- q(58770),	-- Grand Empress Shek'zara bonus roll
 		}),
 	}));
 	m(ZANDALAR, {

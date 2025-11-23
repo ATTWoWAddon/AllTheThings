@@ -131,7 +131,7 @@ CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 	["timeline"] = { ADDED_4_0_3 },
 },{
 	chefsaward(2, i(65513, {	-- Crate of Tasty Meat
-	--	i(62786),	-- Cocoa Beans
+		-- i(62786),	-- Cocoa Beans
 	})),
 	chefsaward(1, i(68689, {	-- Imported Supplies
 		i(62786),	-- Cocoa Beans

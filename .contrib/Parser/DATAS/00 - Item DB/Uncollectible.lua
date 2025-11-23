@@ -129,6 +129,7 @@ i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
+i(141005);	-- Vial of Hippogryph Pheromones
 -- "Mount Equipment"
 i(141593);	-- Dro's Key
 -- Quest Items

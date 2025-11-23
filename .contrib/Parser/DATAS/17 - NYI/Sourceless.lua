@@ -303,7 +303,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 8.0.1
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- Drustvar items = Nazmir quest rewards
-				--i(161296),	-- Autumnvale Hunting Rifle
+				-- i(161296),	-- Autumnvale Hunting Rifle
 
 				-- Stormsong Valley items = Vol'dun quest rewards
 

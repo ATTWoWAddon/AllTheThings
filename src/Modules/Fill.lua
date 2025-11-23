@@ -411,6 +411,21 @@ api.GetFiller = function(name)
 	return FillFunctions[name]
 end
 
+local FillAdjusts = {}
+-- 1 : Remove 'e' from Filled content and de-link the hierarchy to prevent recursive filtering
+FillAdjusts[1] =
+	function(group)
+		group.e = nil
+		group.parent = nil
+		group.sourceParent = nil
+		local g = group.g
+		if g then
+			for i=1,#g do
+				FillAdjusts[1](g[i])
+			end
+		end
+	end
+
 local function FillGroupDirect(group, FillData, doDGU)
 	local groups, temp = {}, {}
 	-- only use Fillers from within the respective FillData.Fillers
@@ -422,6 +437,14 @@ local function FillGroupDirect(group, FillData, doDGU)
 	ArrayAppend(groups, unpack(temp))
 
 	if #groups == 0 then return end
+
+	-- Check for Fill Adjusts
+	local fillAdjuster = FillAdjusts[group.fillAdjust]
+	if fillAdjuster then
+		for i=1,#groups do
+			fillAdjuster(groups[i])
+		end
+	end
 
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);

@@ -111,13 +111,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["groups"] = {
 					o_repeated({
 						i(210167),	-- Empyrium Filament (QI!)
-						o(420019),	--	Artificing Tools
-						o(408934),	--	Artificing Tools
+						o(420019),	-- Artificing Tools
+						o(408934),	-- Artificing Tools
 					}),
 					o_repeated({
 						i(210168),	-- Hyperthermal Soldering Tool (QI!)
-						o(420039),	--	Artificing Tools
-						o(420040),	--	Artificing Tools
+						o(420039),	-- Artificing Tools
+						o(420040),	-- Artificing Tools
 					}),
 				},
 			}),
@@ -152,7 +152,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 210581 },	-- Exarch Maladaar
 				["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
 				["groups"] = {
-					o(408954, {	--	Artificer's Lockbox
+					o(408954, {	-- Artificer's Lockbox
 						i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
 					}),
 				},
@@ -575,7 +575,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 		["groups"] = {
 			q(49783, {	-- Heritage of Highmountain
-				["provider"] = { "n", 93826 },	--  Mayla Highmountain
+				["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 				["lvl"] = 50,
 				["groups"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		["groups"] = {
 			q(51484, {	-- Heritage of the Mag'har
-				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
+				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["lvl"] = 50,
 				["groups"] = {
@@ -879,13 +879,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 207353 },	-- Arko'narin Starshade
 				["coord"] = { 52.3, 4.7, STORMWIND_CITY },
 			}),
-			q(76194, {	--  A Grim Portent
+			q(76194, {	-- A Grim Portent
 				["sourceQuests"] = { 75891 },	-- Ancient Curses
 				["provider"] = { "n", 202702 },	-- Maiev Stormsong
 				["coord"] = { 54, 79.4, FELWOOD },
 			}),
 			q(76195, {	-- Countering Corruption
-				["sourceQuests"] = { 76194 },	--  A Grim Portent
+				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202700 },	-- Lysander Starshade
 				["coord"] = { 54, 79.4, FELWOOD },
 				["groups"] = {
@@ -893,7 +893,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				},
 			}),
 			q(76196, {	-- Mercy or Misery
-				["sourceQuests"] = { 76194 },	--  A Grim Portent
+				["sourceQuests"] = { 76194 },	-- A Grim Portent
 				["provider"] = { "n", 202701 },	-- Arko'narin Starshade
 				["coord"] = { 54, 79.4, FELWOOD },
 			}),
@@ -1802,7 +1802,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
 			q(53721, {	-- Heritage of the Zandalari
-				["provider"] = { "n", 146335 },	--  Queen Talanji
+				["provider"] = { "n", 146335 },	-- Queen Talanji
 				["coord"] = { 42.2, 9.4, DAZARALOR },
 				["lvl"] = 50,
 				["groups"] = {

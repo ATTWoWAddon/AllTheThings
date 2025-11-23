@@ -12,3 +12,57 @@ title(80),	-- Sinister Gladiator %s \\ %s of Khaz Modan
 title(96),	-- %s the Flawless Victor
 3.4.1.47245
 title(144),	-- Warbringer %s \\ Guardian of %s \\ %s, Survivor of the Firelord
+3.4.5.63309
+title(145),	-- Warbound %s \\ Veteran of %s \\ Northbound Rush, %s
+title(146),	-- %s, Blessed Defender of Nordrassil \\ Champion of %s \\ Dawn's Vanguard, %s
+title(147),	-- %s, Slayer of Stupid, Incompetent and Disappointing Minions \\ The Overlord of Dawn, %s
+title(148),	-- Assistant Professor %s \\ Dream Chaser, %s
+3.80.0.64393
+title(672),	-- Dream Chaser, %s
+title(673),	-- The Overlord of Dawn, %s
+title(674),	-- Dawn's Vanguard, %s
+title(675),	-- Northbound Rush, %s
+title(692),	-- Ember Lord %s
+title(693),	-- %s, Brand of Flame
+title(694),	-- %s, the Phoenix Fall
+title(695),	-- %s, Sunstrider's Setback
+title(696),	-- %s, Depth's Demise
+title(697),	-- %s, Coilfang Purifier
+title(698),	-- %s, Scion of the Necropolis
+title(699),	-- Scourgebreaker %s
+title(700),	-- %s, Spellweaver's Ruin
+title(701),	-- Nexus Master %s
+title(702),	-- %s, Onyx Harbinger
+title(703),	-- %s, Drakebane
+title(704),	-- %s, Heart of Ruin
+title(705),	-- %s, Soulflayer's End
+title(706),	-- Titanic Crusader %s
+title(707),	-- %s, Nerub's Bane
+title(708),	-- %s, Dawnbringer
+title(709),	-- Legionbreaker %s
+title(710),	-- %s, Apex Predator
+title(711),	-- %s, Hex Breaker
+title(712),	-- Starbreaker %s
+title(713),	-- %s, the Infinite Maw
+title(714),	-- %s, Keeper of Secrets
+title(715),	-- Tower Master %s
+title(716),	-- %s, Earthsplitter
+title(717),	-- %s, Spine of the Mountain
+title(718),	-- %s, Lord of the Pit
+title(719),	-- Hellfire Champion, %s
+title(720),	-- Wyrm Slayer %s
+title(721),	-- %s, Handler of Whelps
+title(722),	-- %s, Lord of Ashes
+title(723),	-- Chromatic Lord %s
+title(724),	-- %s, the Unscarred
+title(725),	-- Dune Reaver %s
+title(726),	-- %s, Eye of Madness
+title(727),	-- God Slayer %s
+title(728),	-- %s, Usurper
+title(729),	-- %s, Lordaeron's Shadow
+title(730),	-- Twilight Slayer %s
+title(731),	-- %s, Twilight's Eclipse
+title(732),	-- %s, Shadow of the Betrayer
+title(733),	-- %s, the Prepared
+title(734),	-- %s, Ancient Defender
+title(735),	-- %s, Defiler's Doom

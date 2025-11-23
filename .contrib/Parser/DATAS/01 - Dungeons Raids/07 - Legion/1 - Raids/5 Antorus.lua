@@ -348,46 +348,46 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
-                    crit(37232, {	-- Garothi Worldbreaker
-                        ["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37233, {	-- Felhounds of Sargeras
-                        ["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37234, {	-- Antoran High Command
-                        ["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(37232, {	-- Garothi Worldbreaker
+						["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37233, {	-- Felhounds of Sargeras
+						["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37234, {	-- Antoran High Command
+						["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11989, {	-- Hope's End
-                    crit(37236, {	-- Eonar the Life-Bender
-                        ["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37235, {	-- Portal Keeper Hasabel
-                        ["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37237, {	-- Imonar the Soulhunter
-                        ["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(37236, {	-- Eonar the Life-Bender
+						["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37235, {	-- Portal Keeper Hasabel
+						["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37237, {	-- Imonar the Soulhunter
+						["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11990, {	-- Forbidden Descent
-                    crit(37238, {	-- Kin'garoth
-                        ["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37239, {	-- Varimathras
-                        ["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37240, {	-- The Coven of Shivarra
-                        ["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(37238, {	-- Kin'garoth
+						["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37239, {	-- Varimathras
+						["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37240, {	-- The Coven of Shivarra
+						["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11991, {	-- Seat of the Pantheon
-                    crit(37241, {	-- Aggramar
-                        ["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(37242, {	-- Argus the Unmaker
-                        ["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(37241, {	-- Aggramar
+						["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(37242, {	-- Argus the Unmaker
+						["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -408,15 +408,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
 			n(QUESTS, {
-				q(48954, {	-- Blood of a Titan
+				q(48954, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }, {	-- Blood of a Titan
 					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
-					["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
-					["groups"] = {
-						i(152901, {	-- Violet Spellwing (MOUNT!)
-							["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
-						}),
-					},
-				}),
+					["groups"] = { i(152901) },	-- Violet Spellwing (MOUNT!)
+				})),
 				q(49077, {	-- Moments of Reflection
 					["provider"] = { "n", 129429 },	-- Alor'idal Crystal
 					["groups"] = { i(153555) },	-- Alor'idal Crystal (QI!)

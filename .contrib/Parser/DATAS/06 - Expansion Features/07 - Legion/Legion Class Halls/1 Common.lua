@@ -172,15 +172,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			ach(11609),	-- Power Unbound (automated)
 			ach(11610),	-- Power Unleashed
 		}),
-		n(FOLLOWERS, bubbleDownSelf({
-			["collectible"] = false,
-			["u"] = UNLEARNABLE,	-- Temporary troops
-		}, {
+		n_TrainingFollowers({
 			-- Dinner Guests (Moroes Mission reward)
 			follower(983),	-- Baroness Dorothea Millstipe
 			follower(984),	-- Baron Rafe Dreuger
 			follower(985),	-- Lord Crispin Ference
-		})),
+		}),
 		n(QUESTS, {
 			q(46940, {	-- Using Lost Knowledge
 				["timeline"] = { ADDED_7_2_0, REMOVED_7_3_0 },	-- estimated removal
@@ -437,9 +434,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					mission(1785, {	-- Assault on Felfire Armory
 						q(48601, {	-- Felfire Shattering
-							["groups"] = {
-								i(153130),	-- Man'ari Training Amulet
+							["qgs"] = {
+								124312,	-- High Exarch Turalyon
+								126954,	-- High Exarch Turalyon
 							},
+							["coords"] = {
+								{ 39.7, 26.3, THE_VINDICAAR_KROKUUN_UPPER },
+								{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
+							},
+							["groups"] = { i(153130) },	-- Man'ari Training Amulet
 						}),
 					}),
 					mission(1503, {	-- Council of War
@@ -496,7 +499,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
-									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
+									un(REMOVED_FROM_GAME, i(140415)),	-- Blaze of Glory
 									i(140423),	-- Exhaustive Research
 								})),
 							},
@@ -1370,7 +1373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, q(44261, {	-- Vault of the Wardens: Into the Vault of the Wardens (Mythic)
 						un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 					})),
-					q(44058, {  -- Volpin the Elusive
+					q(44058, {	-- Volpin the Elusive
 						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["qgs"] = {
 							96746,	-- Advisor Sevel <The Earthen Ring>

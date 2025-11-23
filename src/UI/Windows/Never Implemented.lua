@@ -34,8 +34,8 @@ app:CreateWindow("Never Implemented", {
 
 -- Ensure the u field is assigned
 app.AddEventHandler("OnLoad", function()
-    local category = { g = app.Categories.NeverImplemented }
-    if category then
-        app.AssignFieldValue(category, "u", 1);
-    end
+	local category = { g = app.Categories.NeverImplemented }
+	if category then
+		app.AssignFieldValue(category, "u", 1);
+	end
 end)

@@ -83,26 +83,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							29349,	-- Craving Crayfish
-							29345,	-- Pond Predators
-							29354,	-- Shiny Baubles
-							29348,	-- The Race to Restock
-							29346,	-- The Ring's the Thing
-						},
-						["provider"] = { "n", 3028 },	-- Kah Mistrunner
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983),	-- Strand Crawler (PET!)
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
-							i(67388),	-- String of Alligator Teeth
-						},
-					}),
 					i(122214, {	-- Music Roll: Mulgore Plains
 						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
 						["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
@@ -1374,7 +1354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4499),	-- Huge Brown Sack
 						i(4496),	-- Small Brown Pouch
 						-- #if AFTER CATA
-						--i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
+						-- i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
 						-- #endif
 					},
 				}),

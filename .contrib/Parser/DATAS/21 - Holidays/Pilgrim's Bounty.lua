@@ -633,6 +633,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)
 							["timeline"] = { ADDED_6_0_2 },
 						}),
+						i(248716, {	-- Green Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248717, {	-- Orange Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248718, {	-- Purple Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(248719, {	-- White Bountiful Backpack
+							["timeline"] = { ADDED_11_2_5 },
+						}),
 					},
 				}),
 			},

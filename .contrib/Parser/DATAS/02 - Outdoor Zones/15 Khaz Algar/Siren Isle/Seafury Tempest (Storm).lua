@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["groups"] = {
 								i(232466),	-- Leave the Storm (QI!)
 								i(235548),	-- Earthen Landlubber's Cache
-								--^ contain isle drop/vendor stuff
+								-- ^ contain isle drop/vendor stuff
 							},
 						}),
 					}),

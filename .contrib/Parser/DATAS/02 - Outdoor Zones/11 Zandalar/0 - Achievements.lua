@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				crit(41675, {	-- Portents and Prophecies
 					["sourceQuests"] = { 49663 },	-- False Prophecies
 				}),
-				crit(40025, {	--  Port of Zuldazar
+				crit(40025, {	-- Port of Zuldazar
 					["sourceQuests"] = { 50881 },	-- Royal Report
 				}),
 				crit(37954, {	-- The Zanchuli Council

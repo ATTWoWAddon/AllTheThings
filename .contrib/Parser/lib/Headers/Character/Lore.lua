@@ -4,13 +4,13 @@ LORE = createHeader({
 	text = {
 		en = "Lore",
 		es = "Historia",
-		--	de = "TODO",
-		--	fr = "TODO",
-		--	it = "TODO",
+		-- de = "TODO",
+		-- fr = "TODO",
+		-- it = "TODO",
 		mx = "Historia",
-		--	pt = "TODO",
+		-- pt = "TODO",
 		ru = "История",
-		--	ko = "TODO",
+		-- ko = "TODO",
 		cn = "剧情",
 	},
 });

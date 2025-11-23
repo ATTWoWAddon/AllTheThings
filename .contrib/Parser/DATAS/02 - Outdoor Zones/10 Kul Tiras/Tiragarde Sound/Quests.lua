@@ -1257,7 +1257,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 52253 },	-- The Keys to Success in Freehold
 				["provider"] = { "n", 141032 },	-- Flynn Fairwind (mobileNPC)
 				["races"] = ALLIANCE_ONLY,
-				--	Coordinates depend on where you finish the previous quest
+				-- Coordinates depend on where you finish the previous quest
 			}),
 			q(48354, {	-- Tainted Shipments
 				["sourceQuests"] = {

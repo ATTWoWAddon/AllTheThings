@@ -351,7 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 					["maps"] = { MOONGLADE },
 					["groups"] = {
-						i(69854, { -- Smoke-Stained Locket
+						i(69854, {	-- Smoke-Stained Locket
 							["description"] = "This item will be mailed to you after completing the achievement Legacy of Leyara.",
 						}),
 					},
@@ -1677,7 +1677,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["coord"] = { 54.8, 41.0, THE_MOLTEN_FRONT },
 				}),
 				o(207507, {	-- Dark Iron Treasure Chest
-					--["modelScale"] = 1.5,
+					-- ["modelScale"] = 1.5,
 					["coords"] = {
 						{ 34.3, 48.3, THE_MOLTEN_FRONT },	-- Floating rock on the way to Fireplume Peak?
 						{ 33.9, 53.8, THE_MOLTEN_FRONT },	-- Floating rock on the way to Fireplume Peak?

@@ -1619,7 +1619,7 @@ end");
                 }
 
                 // Only sort Parser metadata fields
-                if (field.StartsWith("_"))
+                if (field[0] == '_')
                     oldList.Sort();
 
                 if (oldList.Count == 0)
@@ -1688,6 +1688,7 @@ end");
             /// <param name="value">The value of the merged field.</param>
             public static void Merge(IDictionary<string, object> item, string field, object value)
             {
+                //item.DataBreakPoint("_DEBUG", true);
                 if (value is string v && v == IgnoredValue)
                     return;
 
@@ -2036,15 +2037,12 @@ end");
                             break;
                         }
                     case "provider":
-                        MergeField_provider(item, value);
-                        break;
-                    case "providers":
-                        MergeField_providers(item, value);
+                    case Providers.Field:
+                        Providers.Merge(item, value);
                         break;
                     case "lc":
                         MergeField_lockCriteria(item, value);
                         break;
-                    // Special parser for coordinate data. (list of floats)
                     case "coord":
                     case Coords.Field:
                         Coords.Merge(item, value);
@@ -2113,7 +2111,7 @@ end");
                             }
 
                             // simple assignment for other fields starting with _ since those will be used for metadata in some scenarios and cleaned up by the Parser
-                            if (field.StartsWith("_"))
+                            if (field[0] == '_')
                             {
                                 item[field] = value;
                                 break;
@@ -2129,63 +2127,6 @@ end");
                             LogWarn($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
-                }
-            }
-
-            internal static void MergeField_provider(IDictionary<string, object> item, object value)
-            {
-                const string field = "provider";
-
-                if (!(value is List<object> newList))
-                {
-                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value));
-                }
-                var newProvider = new List<object>()
-                {
-                    newList[0],
-                    Convert.ToInt64(newList[1])
-                };
-                MergeField_providers(item, new List<object>() { newProvider });
-            }
-
-            internal static void MergeField_providers(IDictionary<string, object> item, object value)
-            {
-                const string field = "providers";
-
-                var mergeProviders = ConvertToList(item, field, value);
-                if (mergeProviders == null) return;
-                foreach (var mergeProvider in mergeProviders)
-                {
-                    bool match = false;
-                    var newMergeProvider = ConvertToList(item, field, mergeProvider);
-                    try
-                    {
-                        Tuple<string, long> newProvider = new Tuple<string, long>(newMergeProvider[0]?.ToString(), Convert.ToInt64(newMergeProvider[1]));
-                        if (item.TryGetValue(field, out object providersRef) && providersRef is List<object> providers)
-                        {
-                            foreach (var providerRef in providers)
-                            {
-                                if (providerRef is List<object> oldprovider)
-                                {
-                                    Tuple<string, long> oldProvider = new Tuple<string, long>(oldprovider[0]?.ToString(), Convert.ToInt64(oldprovider[1]));
-                                    if (oldProvider.Item1 == newProvider.Item1 && oldProvider.Item2 == newProvider.Item2)
-                                    {
-                                        match = true;
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            item[field] = providers = new List<object>();
-                        }
-                        if (!match) providers.Add(newMergeProvider);
-                    }
-                    catch
-                    {
-                        throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + ToJSON(item));
-                    }
                 }
             }
 

@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		},
 	}),
 	n(ZONE_REWARDS, {
-		--DF open world supplies
+		-- DF open world supplies
 		i(200691),	-- Claw Thistle Barbs
 		i(200700),	-- Cuppressa Berries
 		o(382031, {	-- Oily Dropcap

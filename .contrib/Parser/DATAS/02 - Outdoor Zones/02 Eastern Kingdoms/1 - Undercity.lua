@@ -87,42 +87,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
-				-- #if AFTER CATA
-				prof(FISHING, {
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							29317,	-- Fish Head
-							29320,	-- Like Pike?
-							29361,	-- Moat Monster!
-							29319,	-- Tadpole Terror
-							29322,	-- Time for Slime
-						},
-						["provider"] = { "n", 4573 },	-- Armand Cromwell
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
-					}),
-				}),
-				-- #endif
 				prof(TAILORING, {
 					n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
 						["coord"] = { 87.0, 20.8, UNDERCITY },
@@ -1429,7 +1393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 24.1, 41.6, UNDERCITY },
 					["cost"] = {
 						{ "i", 207974, 1 },	-- Ominous Tome

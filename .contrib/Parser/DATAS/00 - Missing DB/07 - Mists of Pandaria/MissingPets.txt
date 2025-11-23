@@ -20,6 +20,8 @@ pet(4228),	-- Alarming Clockbot
 pet(4229),	-- XS-001 Constructor Bot
 pet(4683),	-- Reven
 pet(4734),	-- Joyous
+5.5.3.64400
+pet(4862),	-- Smoldering Valor
 
 
 
@@ -41,3 +43,5 @@ pet(4683),	-- Reven
 pet(4734),	-- Joyous
 5.5.0.62044
 pet(4850),	-- Sa'bak's Favored
+5.5.3.64400
+pet(4862),	-- Smoldering Valor

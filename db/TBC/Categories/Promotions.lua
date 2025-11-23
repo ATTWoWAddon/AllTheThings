@@ -41,7 +41,7 @@ h(-525,{awp=20504,rwp=40001,u=3,g={
 h(-522,{awp=20504,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=3,g={
 p(4234,{awp=20504,itemID=198665,petTypeID=9,rwp=40001,spellID=384796,u=3}),
 toy(198647,{awp=20504,rwp=40001,u=3}),
-ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"n",194870},{"i",199914}},rwp=40001,u=3})}}),
+ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},rwp=40001,u=3})}}),
 h(-523,{awp=20504,description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
 mnt(372677,{awp=20504,itemID=192455,rwp=40001,u=3})}})}})}}),
 h(-546,{awp=11201,u=2,g={
@@ -60,7 +60,7 @@ mnt(49322,{awp=20403,b=1,itemID=37719,lvl=60,q=4,u=2}),
 p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
 p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}),
 h(-550,{awp=20403,rwp=30002,g={
-ach(1637,{awp=20403,providers={{"i",37297},{"s",48406}},rwp=30002}),
+ach(1637,{awp=20403,providers={{"i",37297}},rwp=30002}),
 p(179,{awp=20403,b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,petTypeID=2,q=3,rwp=30002,spellID=48406}),
 ach(1636,{awp=20403,providers={{"i",36941}},rwp=30002}),
 s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002}),

@@ -98,7 +98,7 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
 					["coord"] = { 36.5, 46.7, SURAMAR },
-					-- TODO:: may also require A Dance With Dragons (44876)
+					-- TODO:  may also require A Dance With Dragons (44876)
 					["groups"] = { i(143597) },	-- Fruit of the Arcan'dor (QI!)
 				}),
 				q(40401, {	-- A Way Back In
@@ -157,7 +157,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
 					["coord"] = { 41.5, 71.2, SURAMAR },
 					-- TODO: figure out the sourceQuest. this isn't always available
-					--["sourceQuest"] =
+					-- ["sourceQuest"] =
 					["groups"] = { i(134041) },	-- Bloodspattered Signet Ring (QI!)
 				}),
 				q(40012, {	-- An Old Ally
@@ -750,7 +750,10 @@ root(ROOTS.Zones, {
 					["sourceQuest"] = 42079,	-- Masquerade
 					["provider"] = { "n", 105342 },	-- Ly'leth Lunastre
 					["coord"] = { 43.3, 78.7, SURAMAR },
-					["groups"] = { i(137010) },	-- Half-Full Bottle of Arcwine
+					["groups"] = {
+						i(137011),	-- Corked Bottle (QI!)
+						i(137010),	-- Half-Full Bottle of Arcwine
+					},
 				}),
 				q(40334, {	-- Fisherman's Tonic
 					["sourceQuests"] = {
@@ -1318,6 +1321,10 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 115517 },	-- Magus Sendath
 					["coord"] = { 46.4, 58.1, SURAMAR },
+					["groups"] = {
+						i(142245),	-- Charged Arcshaper Staff (QI!)
+						i(142244),	-- Volatile Construct Core (QI!)
+					},
 				}),
 				q(44873, {	-- Oculeth Ex Machina
 					["sourceQuest"] = 44870,	-- Mouths to Feed

@@ -61,7 +61,7 @@ root(ROOTS.Zones, {
 
 							-- Telredor (A)
 							9783,	-- An Unnatural Drought
-							-- TODO:: verify below
+							-- TODO:  verify below
 							9896,	-- Blacksting's Bane
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
@@ -70,14 +70,14 @@ root(ROOTS.Zones, {
 							-- Zabra'jin (H)
 							9816,	-- Have You Ever Seen One of These?
 							9904,	-- Pursuing Terrorclaw
-							-- TODO:: verify below
+							-- TODO:  verify below
 							9847,	-- A Spirit Ally? (probably)
 							9903,	-- The Biggest of Them All (probably)
 							9842,	-- The Sharpest Blades (probably)
 
 							-- Orebor Harborage (A)
 							9902,	-- The Terror of Marshlight Lake
-							-- TODO:: verify below
+							-- TODO:  verify below
 							10115,	-- Daggerfen Deviance
 							9905,	-- Maktu's Revenge
 							9839,	-- Overlord Gorefist
@@ -318,7 +318,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- Summon Serpent Spirit
 								["provider"] = { "i", 24498 },	-- Feralfen Totem
 								["coord"] = { 44.2, 66.6, ZANGARMARSH },
-								["cr"] = 18185,	--  Feralfen Serpent Spirit
+								["cr"] = 18185,	-- Feralfen Serpent Spirit
 							}),
 							i(25620),	-- Ancient Crystal Talisman
 							i(31770),	-- Marsh Bracers

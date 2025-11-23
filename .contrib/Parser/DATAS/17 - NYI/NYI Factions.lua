@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(43),	-- Beast, Basilisk \\ Basilisk
 		faction(44),	-- Dragonflight, Green \\ Dragonflight - Green
 		faction(45),	-- Lost Ones
-		faction(46),	--  Blacksmithing - Armorsmithing \\ Blacksmithing - Armorsmithing \\ Orc, Stonard
+		faction(46),	-- Blacksmithing - Armorsmithing \\ Blacksmithing - Armorsmithing \\ Orc, Stonard
 		faction(48),	-- Dark Iron Dwarves \\ Dwarf, Dark Iron \\ Dwarf, DarkIron
 		faction(49),	-- Human, Night Watch
 		faction(50),	-- Dragonflight, Red \\ Dragonflight - Red
@@ -76,10 +76,10 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(79),	-- HIllsbrad, Southshore Mayor
 		faction(80),	-- Dragonflight, Black \\ Dragonflight - Black
 		faction(82),	-- Troll, Witherbark
-		faction(83),	--  Leatherworking - Elemental \\ Leatherworking - Elemental \\ Monster - Non Social
+		faction(83),	-- Leatherworking - Elemental \\ Leatherworking - Elemental \\ Monster - Non Social
 		faction(84),	-- Quilboar, Razormane \\ Razormane
 		faction(85),	-- Quilboar, Bristleback
-		faction(86),	--  Leatherworking - Dragonscale \\ Leatherworking - Dragonscale \\ Monster - Social
+		faction(86),	-- Leatherworking - Dragonscale \\ Leatherworking - Dragonscale \\ Monster - Social
 		faction(88),	-- Blackfathom
 		faction(89),	-- Makrura
 		faction(90),	-- Centaur, Kolkar \\ Kolkar
@@ -99,7 +99,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(249),	-- Silithid
 		-- 0.6.0.3592
 		faction(269),	-- Silvermoon Remnant \\ Alliance Red Team
-		faction(289),	--  Blacksmithing - Weaponsmithing \\ Blacksmithing - Weaponsmithing \\ Blackwater Pirates
+		faction(289),	-- Blacksmithing - Weaponsmithing \\ Blacksmithing - Weaponsmithing \\ Blackwater Pirates
 		-- 0.7.0.3694
 		faction(309),	-- Scorpid
 		faction(310),	-- Beast - Bat \\ Beast, Bat \\ Bat
@@ -118,12 +118,12 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(511),	-- Giant
 		faction(531),	-- Dragonflight, Bronze
 		faction(532),	-- Dragonflight, Blue
-		faction(549),	--  Leatherworking - Tribal \\ Leatherworking - Tribal
-		faction(550),	--  Engineering - Goblin \\ Engineering - Goblin
-		faction(551),	--  Engineering - Gnome \\ Engineering - Gnome
-		faction(569),	--  Blacksmithing - Hammersmithing \\ Blacksmithing - Hammersmithing
-		faction(570),	--  Blacksmithing - Axesmithing \\ Blacksmithing - Axesmithing
-		faction(571),	--  Blacksmithing - Swordsmithing \\ Blacksmithing - Swordsmithing
+		faction(549),	-- Leatherworking - Tribal \\ Leatherworking - Tribal
+		faction(550),	-- Engineering - Goblin \\ Engineering - Goblin
+		faction(551),	-- Engineering - Gnome \\ Engineering - Gnome
+		faction(569),	-- Blacksmithing - Hammersmithing \\ Blacksmithing - Hammersmithing
+		faction(570),	-- Blacksmithing - Axesmithing \\ Blacksmithing - Axesmithing
+		faction(571),	-- Blacksmithing - Swordsmithing \\ Blacksmithing - Swordsmithing
 		faction(572),	-- Troll, Vilebranch
 		faction(573),	-- Southsea Freebooters
 		faction(574),	-- Caer Darrow
@@ -176,14 +176,14 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(1041),	-- Frenzy
 		-- 1.14.2.41959
 		faction(2505),	-- Dragonflight, Chromatic
-		--1.15.0.52124
-		--Uncomment if these ever make it into retail
-		--faction(2586),	-- Azeroth Commerce Authority
-		--faction(2587),	-- Durotar Supply and Logistics
-		--faction(2588),	-- S03 - Scarlet Crusade Disguise
+		-- 1.15.0.52124
+		-- Uncomment if these ever make it into retail
+		-- faction(2586),	-- Azeroth Commerce Authority
+		-- faction(2587),	-- Durotar Supply and Logistics
+		-- faction(2588),	-- S03 - Scarlet Crusade Disguise
 	}),
 	expansion(EXPANSION.TBC, {
-		--2.0.0.6080
+		-- 2.0.0.6080
 		faction(914),	-- PLAYER, Blood Elf
 		faction(923),	-- Farstriders
 		faction(924),	-- DEPRECATED
@@ -247,7 +247,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 		faction(1003),	-- Protectorate
 		faction(1004),	-- Arcane Annihilator (DNR)
 		faction(1005),	-- Friendly, Hidden \\ REUSE
-		--2.4.3.8606
+		-- 2.4.3.8606
 		faction(1006),	-- Kirin'Var - Dathric
 		faction(1007),	-- Kirin'Var - Belmara
 		faction(1008),	-- Kirin'Var - Luminrath

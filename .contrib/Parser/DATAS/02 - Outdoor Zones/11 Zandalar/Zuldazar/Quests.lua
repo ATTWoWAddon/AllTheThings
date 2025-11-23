@@ -13,15 +13,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
-				--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
-				--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
-				--	when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
-				--	when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
-				--	when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner. "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
-				-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock. the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
-				-- possible that "hunting the hunter" only requires "predatory."  check!
-				-- figure out if "prepare for a siege" is a breadcrumb for anything. there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
-				-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244. figure out if 55249 is used/unused and if/when it appears.
+			-- what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
+			-- when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
+			-- when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
+			-- when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
+			-- when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner. "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
+			-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock. the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
+			-- possible that "hunting the hunter" only requires "predatory."  check!
+			-- figure out if "prepare for a siege" is a breadcrumb for anything. there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
+			-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244. figure out if 55249 is used/unused and if/when it appears.
 			pvp(n(PVP, {
 				n(AZERITE_ESSENCES, {
 					i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53338, {	-- Prove Your Worth
-					["provider"] = { "n", 143551 },	--  Centurion Firescream
+					["provider"] = { "n", 143551 },	-- Centurion Firescream
 					["coord"] = { 51.56, 58.06, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -455,9 +455,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-			--	i never got this version of the quest, only 55244. is this version unused or is there a specific set of circumstances under which it appears?
-			--	the quest directive is slightly different -- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
-			--	according to wowhead, this one comes from the NPC listed under "provider" here, and the one i got comes from 152258. so possibly from a different place in the storyline?
+				-- i never got this version of the quest, only 55244. is this version unused or is there a specific set of circumstances under which it appears?
+				-- the quest directive is slightly different -- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
+				-- according to wowhead, this one comes from the NPC listed under "provider" here, and the one i got comes from 152258. so possibly from a different place in the storyline?
 				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)
 				},
@@ -534,8 +534,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135803 },	-- J'eebi
 				["coord"] = { 76.4, 48.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar. this + "productive pests" are not. unsure what unlocks them.
-			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
+				-- "the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar. this + "productive pests" are not. unsure what unlocks them.
+				-- could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 				["groups"] = {
 					i(159934),	-- Large Lump of Crab Meat (QI!)
 				},
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(55246, {	-- Even Greener Pastures
-				--["sourceQuests"] = { 55258 },	--
+				-- ["sourceQuests"] = { 55258 },	--
 				["provider"] = { "n", 151319 },	-- Li'zal
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
@@ -902,7 +902,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 79.2, 42.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(56205, {	--  Just Ptrust Me On This
+			q(56205, {	-- Just Ptrust Me On This
 				["sourceQuests"] = { 50944 },	-- Down, But Not Out
 				["provider"] = { "n", 127377 },	-- Pa'Ku
 				["coord"] = { 71.5, 49.4, ZULDAZAR },
@@ -928,7 +928,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132267 },	-- Bently Greaseflare
 				["coord"] = { 51.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-			--	kaja'mite ore dust was available before starting the intro to dazar'alor, but this quest wasn't. what unlocks it?
+				-- kaja'mite ore dust was available before starting the intro to dazar'alor, but this quest wasn't. what unlocks it?
 			}),
 			q(51111, {	-- King or Prey
 				["sourceQuests"] = {
@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130468 },	-- Lil' Tika
 				["coord"] = { 46.2, 23.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-			--	unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
+				-- unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
 			}),
 			q(49287, {	-- Lost Chelonians
 				["sourceQuests"] = { 49286 },	-- Caged Wisdom
@@ -1157,7 +1157,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135890 },	-- King Rastakhan
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-			--	is this a breadcrumb?
+				-- is this a breadcrumb?
 			}),
 			q(51663, {	-- Preparing for the Fall
 				["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
@@ -1169,8 +1169,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135855 },	-- Teekay Treadlebobbin
 				["coord"] = { 76.4, 48.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar. this + "crabulous" are not. unsure what unlocks them.
-			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
+				-- "the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar. this + "crabulous" are not. unsure what unlocks them.
+				-- could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 			}),
 			q(50887, {	-- Ptrust Fall
 				["sourceQuests"] = { 50886 },	-- Surrogate Wings
@@ -1544,8 +1544,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175286),	-- Jambani Shoulderpads
 					azewrongItem(175278),	-- Zanchuli Cowl
 					azewrongItem(175288),	-- Zanchuli Mantle
-				--	i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
-				--	i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
+					-- i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
+					-- i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 				},
 			}),
 			q(49814, {	-- The Scent for a Brutosaur
@@ -2016,8 +2016,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175366),	-- Zanchuli Raiment
 					azewrongItem(175293),	-- Rastari Helmet
 					azewrongItem(175280),	-- Rastari Breastplate
-				--	i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
-				--	i(175354),	-- Sea Raider's Breastplate // Alliance apperance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
+					-- i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
+					-- i(175354),	-- Sea Raider's Breastplate // Alliance apperance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
 				},
 			}),
 			q(49276, {	-- The Thrill of Exploration
@@ -2058,7 +2058,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 41.2, 71.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			--	unsorted
+			-- unsorted
 			q(50954, {	-- Zandalar Forever!
 				["sourceQuests"] = {
 					47229,	-- Bulwark of Torcali

@@ -57,6 +57,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							i(253349),	-- Kaldorei Queen's Bangles
 						},
 					}),
+					ach(42628, {	-- The Nightfallen
+						i(256677, {	-- Large Legion Candle (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(256678, {	-- Small Legion Candle (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42564, {	-- Tour Suramar
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -64,20 +72,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60812,	-- Explore Suramar
 							60814,	-- Hidden Treasures: Suramar
 						}},
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_NIGHTFALLEN, {
-						n(ACHIEVEMENTS, {
-							ach(42628, {	-- The Nightfallen
-								i(256677, {	-- Large Legion Candle (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-								i(256678, {	-- Small Legion Candle (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {

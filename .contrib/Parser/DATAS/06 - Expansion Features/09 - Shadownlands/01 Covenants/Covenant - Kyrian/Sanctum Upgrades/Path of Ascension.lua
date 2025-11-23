@@ -924,10 +924,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -949,10 +949,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(63171, {	-- Path of Ascension: Craven Corinth
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -974,10 +974,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62951, {	-- Path of Ascension: Kleia
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -1007,10 +1007,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62952, {	-- Path of Ascension: Pelagos
+										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},

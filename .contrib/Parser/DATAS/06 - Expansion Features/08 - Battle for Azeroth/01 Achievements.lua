@@ -153,6 +153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 			crit(41580, {	-- Brutosaur of Zuldazar Fed
 				["description"] = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
+				["cost"] = { { "i", 163564, 1 } },	-- Extra-dry Fruitcake
 				["coord"] = { 64.0, 39.2, ZULDAZAR },	-- Irritable Maka'fon
 				["crs"] = {
 					130922,	-- Irritable Maka'fon

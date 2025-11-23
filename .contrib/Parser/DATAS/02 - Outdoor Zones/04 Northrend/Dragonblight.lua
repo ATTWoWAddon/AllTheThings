@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 							12123,	-- Informing the Queen
 							13343,	-- Mystery of the Infinite, Redux
 							12459,	-- That Which Creates Can Also Destroy
-							-- TODO:: confirm below
+							-- TODO:  confirm below
 							12266,	-- Tales of Destruction
 							12419,	-- The Fate of the Ruby Dragonshrine
 							12456,	-- The Plume of Alystros
@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 							12124,	-- Informing the Queen
 							13343,	-- Mystery of the Infinite, Redux
 							12459,	-- That Which Creates Can Also Destroy
-							-- TODO:: confirm below
+							-- TODO:  confirm below
 							12266,	-- Tales of Destruction
 							12419,	-- The Fate of the Ruby Dragonshrine
 							12456,	-- The Plume of Alystros
@@ -634,7 +634,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12032, {	-- Conversing With the Depths
 						["sourceQuest"] = 12031,	-- Freedom for the Lingering
-						["provider"] = { "o", 188419 },	--	Elder Mana'loa
+						["provider"] = { "o", 188419 },	-- Elder Mana'loa
 						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
 						["modelScale"] = 9.8,
 						["groups"] = {
@@ -809,7 +809,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12031, {	-- Freedom for the Lingering
 						["sourceQuest"] = 12030,	-- Elder Mana'loa
-						["provider"] = { "o", 188419 },	--	Elder Mana'loa
+						["provider"] = { "o", 188419 },	-- Elder Mana'loa
 						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
 						["modelScale"] = 9.8,
 					}),
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12234, {	-- Need to Know
-						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:: verify this
+						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:  verify this
 						["qg"] = 27337,	-- Spy Mistress Repine
 						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
@@ -1815,7 +1815,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12312, {	-- Secrets of the Scourge
 						["sourceQuest"] = 12309,	-- Find Durkon!
-						["provider"] = { "o", 189311 },	--	Flesh-bound Tome
+						["provider"] = { "o", 189311 },	-- Flesh-bound Tome
 						["coord"] = { 78.6, 52.2, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2259,7 +2259,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12419, {	-- The Fate of the Ruby Dragonshrine
-						["provider"] = { "i", 37833 },	--	Ruby Brooch
+						["provider"] = { "i", 37833 },	-- Ruby Brooch
 						["coord"] = { 47.7, 49.2, DRAGONBLIGHT },
 						["crs"] = { 27680 },	-- Dahlia Suntouch
 					}),

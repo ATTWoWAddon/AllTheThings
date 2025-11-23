@@ -16,7 +16,7 @@ ZONE_REWARDS = createHeader({
 	},
 	description = {
 		en = "These items can drop from many many sources and are usually not difficult to obtain either.\n\nWhile not every source is possible in every Zone, here is a list of possible Sources:\nEmissary Quest (Legion&later)\nRare NPCs (MoP&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)\nZone Drops (MoP&later)",
-		--TODO: update other locales
+		-- TODO: update other locales
 		es = "Estos objetos pueden obtenerse de muchas fuentes y, por lo general, no son difíciles de conseguir.\n\nAunque no todas las fuentes son posibles en todas las zonas, aquí hay una lista de posibles fuentes:\nMisión de emisario (Legión y posteriores)\nPNJ raros (MoP y posteriores)\nCofres del tesoro repetibles (SL)\nMisiones de mesa (Legión y posteriores)\nGrillos de deseos (SL)\nMisiones del mundo (Legión y posteriores)\nObjetos de zona (MoP y posteriores)",
 		fr = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 		mx = "Estos objetos pueden obtenerse de muchas fuentes y, por lo general, no son difíciles de conseguir.\n\nAunque no todas las fuentes son posibles en todas las zonas, aquí hay una lista de posibles fuentes:\nMisión de emisario (Legión y posteriores)\nPNJ raros (MoP y posteriores)\nCofres del tesoro repetibles (SL)\nMisiones de mesa (Legión y posteriores)\nGrillos de deseos (SL)\nMisiones del mundo (Legión y posteriores)\nObjetos de zona (MoP y posteriores)",

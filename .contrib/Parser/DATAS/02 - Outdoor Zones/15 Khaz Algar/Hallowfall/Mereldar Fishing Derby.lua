@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(82778, {	-- Hallowfall Fishing Derby
 						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
-						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							currency(DERBY_MARK),
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					q(83529, {	-- Hallowfall Fishing Derby
 						["description"] = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
-						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							currency(DERBY_MARK),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					q(83530, {	-- Hallowfall Fishing Derby
 						["description"] = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
-						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							currency(DERBY_MARK),
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					q(83531, {	-- Hallowfall Fishing Derby
 						["description"] = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
-						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							currency(DERBY_MARK),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					q(83532, {	-- Hallowfall Fishing Derby
 						["description"] = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
-						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							currency(DERBY_MARK),

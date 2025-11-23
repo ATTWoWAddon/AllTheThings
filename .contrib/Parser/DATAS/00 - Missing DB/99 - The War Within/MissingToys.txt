@@ -1,13 +1,9 @@
-11.2.5.62687
-i(254666),	-- Exodar Replica \\ Exodar Miniature \\ Lil' Exodar
-11.2.7.63642
-i(242520),	-- Festival Hot Air Balloon
-i(243304),	-- Jubilant Snowman Costume
-i(245580),	-- Rolling Snowball
-11.2.7.64011
-i(263489),	-- Naaru's Enfold
+3.80.0.64393
+i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(46779),	-- of Cenarius \\ Path of Cenarius
 12.0.0.63534
-i(243146),	-- Ren'dorei Struggle \\ [DNT] Ren'dorei Struggle
 i(249468),	-- Twilight's Blade Top Secret Strategy Training Guide
 i(250319),	-- Shadowgraft
 i(250320),	-- Lightgraft
@@ -26,12 +22,29 @@ i(262431),	-- Bouncy Mushroom \\ Pocket Mushroom Jump Pad
 i(263198),	-- Valdekar's Special
 i(263244),	-- Enigmatic Fountain
 12.0.0.63967
-i(263871),	-- Holy Pet Leash
 i(263933),	-- Astalor's Summons
 i(263975),	-- Feeling Fielder Mk. 7
 i(264413),	-- Dominating Victory
 i(264414),	-- Midnight Delver's Flare Gun
 i(264517),	-- Galactic Flag of Victory
+12.0.0.64124
+i(264666),	-- Rod of Exanguishation
+i(264672),	-- Cosmic Ritual Stone
+i(264695),	-- Interdimensional Parcel Signal
+i(264805),	-- Brann-O-Vision 3000
+12.0.0.64228
+i(265100),	-- Corewarden's Hearthstone
+12.0.0.64499
+i(266370),	-- Dundun's Abundant Travel Method
+i(267139),	-- Hungry Black Hole
 
 
-Nothing is Missing in ToyDB.lua! Good Work!
+
+
+Missing in ToyDB.lua
+
+3.80.0.64393
+i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger
+i(46779),	-- of Cenarius \\ Path of Cenarius

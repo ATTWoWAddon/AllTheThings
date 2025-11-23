@@ -103,7 +103,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TBC, {
 				-- 2.0.5
 				expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_2_0_5 } }, {
-					-- With SpellID attched
+					-- With SpellID attached
 					i(21958),	-- Design: Arcanite Sword Pendant
 					i(21959),	-- Design: Blood Crown
 					i(21951),	-- Design: Cut Azerothian Diamond
@@ -114,13 +114,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 
 				-- 2.1.3
 				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
-					-- With SpellID attched
+					-- With SpellID attached
 					i(25888),	-- Design: Primal Stone Statue
 				})),
 
 				-- 2.4.0
 				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
-					-- Without SpellID attched
+					-- Without SpellID attached
 					i(35533),	-- Design: Amulet of Flowing Life
 					i(35534),	-- Design: Hard Khorium Band
 					i(35535),	-- Design: Hard Khorium Choker
@@ -132,7 +132,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
 				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
-					-- Without SpellID attched
+					-- Without SpellID attached
 					i(41408),	-- ZZOLD Design: Austere Earthsiege Diamond
 					i(41412),	-- ZZOLD Design: Beaming Earthsiege Diamond
 					i(41404),	-- ZZOLD Design: Bracing Earthsiege Diamond

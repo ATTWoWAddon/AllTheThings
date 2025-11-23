@@ -77,10 +77,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(729),	-- Black Harvest Acolytes
 					follower(730),	-- Black Harvest Acolytes
 					follower(740),	-- Black Harvest Acolytes
@@ -101,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(736),	-- Swarm of Wild Imps
 					follower(737),	-- Swarm of Wild Imps
 					follower(738),	-- Swarm of Wild Imps
-				})),
+				}),
 				n(QUESTS, {
 					q(40716, {	-- The Sixth
 						["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
@@ -173,7 +170,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "o", 245793 },	-- Battered Journal
 							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
 							["groups"] = {
-								i(132377),	-- Ariden's Compass (QI!)
+								o(245794, {	-- Compass
+									["coord"] = { 52.2, 34.1, DEADWIND_PASS },
+									["groups"] = { i(132377) },	-- Ariden's Compass (QI!)
+								}),
 							},
 						}),
 						q(40611, {	-- The Fate of Deadwind
@@ -188,13 +188,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
 								o(246021, {	-- Ulthalesh, the Deadwind Harvester
-									["coord"] = { 45.1, 67.8, 46 },	-- Karazhan Catacombs
+									["coord"] = { 69.5, 27.2, 46 },	-- Karazhan Catacombs
 									["groups"] = {
 										i(128942, {	-- Ulthalesh, the Deadwind Harvester
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(294),	-- Ulthalesh, the Deadwind Harvester
-											},
+											["groups"] = { artifact(294) },	-- Ulthalesh, the Deadwind Harvester
 										}),
 									},
 								}),
@@ -206,10 +204,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
-								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									["ItemAppearanceModifierID"] = 9,
+								o(246021, {	-- Ulthalesh, the Deadwind Harvester
+									["coord"] = { 69.5, 27.2, 46 },	-- Karazhan Catacombs
 									["groups"] = {
-										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+										i(128942, {	-- Ulthalesh, the Deadwind Harvester
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(294) },	-- Ulthalesh, the Deadwind Harvester
+										}),
 									},
 								}),
 							},
@@ -314,10 +315,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 109838 },	-- Calydus
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["groups"] = {
-								i(128941, {	-- Scepter of Sargeras
-									["ItemAppearanceModifierID"] = 9,
+								o(252054, {	-- Scepter of Sargeras
+									["coord"] = { 60.2, 25.4, BROKEN_SHORE },
 									["groups"] = {
-										artifact(188),	-- Scepter of Sargeras
+										i(128941, {	-- Scepter of Sargeras
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(188) },	-- Scepter of Sargeras
+										}),
 									},
 								}),
 							},
@@ -330,8 +334,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43254,	-- Ritual Ruination
 							41155,	-- The Dark Riders (Bad)
 							40623,	-- The Dark Riders (Good)
-							40712,	-- The Power Possessed (Good)
 							41156,	-- The Power Possessed (Bad)
+							40712,	-- The Power Possessed (Good)
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 101097 },	-- Calydus
@@ -353,9 +357,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(40823, {	-- Rebuilding the Council
-					-- #if BEFORE 8.0.1
-						["sourceQuests"] = { 40821 },	-- Power Overwhelming
-						-- #endif
+						["sourceQuests"] = {
+							-- #IF BEFORE BFA
+							40821,	-- Power Overwhelming
+							-- #ELSE
+							40731,	-- The Heart of the Dreadscar
+							-- #ENDIF
+						},
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
@@ -808,6 +816,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							46047,	-- Champion: Kanrethad Ebonlocke
 							46316,	-- Champion: Kanrethad Ebonlocke
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },

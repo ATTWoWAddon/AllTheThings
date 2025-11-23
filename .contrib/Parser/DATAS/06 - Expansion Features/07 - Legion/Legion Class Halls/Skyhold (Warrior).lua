@@ -214,10 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(1012),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
 					follower(1013),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
 					follower(1014),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
@@ -238,7 +235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(867),	-- Valkyra Shieldmaidens
 					follower(868),	-- Valkyra Shieldmaidens
 					follower(869),	-- Valkyra Shieldmaidens
-				})),
+				}),
 				n(QUESTS, {
 					-- Introduction
 					q(42814, {	-- An Important Mission
@@ -298,10 +295,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["groups"] = {
-								i(128910, {	-- Strom'kar, the Warbreaker
-									["ItemAppearanceModifierID"] = 0,
+								o(247877, {	-- Strom'kar
+									["coord"] = { 60.8, 73.5, 20 },	-- Keeper's Rest
 									["groups"] = {
-										artifact(295),	-- Strom'kar, the Warbreaker
+										i(128910, {	-- Strom'kar, the Warbreaker
+											["ItemAppearanceModifierID"] = 0,
+											["groups"] = { artifact(295) },	-- Strom'kar, the Warbreaker
+										}),
 									},
 								}),
 							},
@@ -558,7 +558,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43090, {	-- Ulduar's Oath
-						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
+						["sourceQuests"] = {
+							43586,	-- Maw of Souls: Message to Helya
+							43604,	-- Maw of Souls: Ymiron's Broken Blade
+							43975,	-- Recruiting Shieldmaidens
+						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 744, 746 },	-- Ulduar (Scenario Map)

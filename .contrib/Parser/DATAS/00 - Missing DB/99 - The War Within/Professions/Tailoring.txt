@@ -6,15 +6,12 @@ r(1260458),	-- Red Dazar'alor Rug
 r(1260475),	-- Zanchuli Tapestry
 r(1260769),	-- Shal'dorei Open-Air Tent
 r(1260774),	-- Circular Shal'dorei Rug
-r(1261231),	-- Argussian Circular Rug
-r(1261232),	-- Karabor Bed
 r(1261250),	-- Pandaren Meander Rug
 r(1261317),	-- Surwich Expedition Tent
 r(1261688),	-- Elder Rise Rug
 r(1261695),	-- Dwarven District Banner
 r(1261940),	-- Tapestry of the Five Flights
 r(1262370),	-- "Unity of Thorns" Tapestry
-r(1263360),	-- Beloved Elekk Plushie
 r(1263553),	-- Pandaren Fishing Net
 r(1263620),	-- Gilded Dalaran Banner
 r(1263627),	-- Kirin Tor Skyline Banner
@@ -22,6 +19,9 @@ r(1263669),	-- Grand Drape of the Exiles
 r(1263692),	-- Draenei Weaver's Loom
 r(1263853),	-- Kyrian Aspirant's Rolled Cushion
 r(1263858),	-- Beloved Raptor Plushie
+11.2.7.64044
+r(1272575),	-- Heart of the Forest Banner
+r(1272578),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 12.0.0.63534
 r(471015),	-- Midnight Tailoring
 r(471047),	-- Recraft Equipment
@@ -89,12 +89,12 @@ r(1228996),	-- Thalassian Competitor's Cloth Treads
 r(1228997),	-- Thalassian Competitor's Cloth Tunic
 r(1228998),	--
 r(1228999),	--
-r(1229000),	-- Blood Elf Drapery
-r(1229001),	-- Void Elf Rug
-r(1229002),	-- Blood Elf Beanbag
-r(1229003),	-- Tailoring Decor 4
-r(1246919),	-- Blood Elf Pillow
-r(1246929),	-- Void Elf Satchel
+r(1229000),	-- Silvermoon Curtains \\ Blood Elf Drapery
+r(1229001),	-- Lush Telogrus Carpet \\ Void Elf Rug
+r(1229002),	-- Luxurious Silvermoon Lounge Cushion \\ Blood Elf Beanbag
+r(1229003),	-- Plush Silvermoon Bed \\ Tailoring Decor 4
+r(1246919),	-- Chic Silvermoon Pillow \\ Blood Elf Pillow
+r(1246929),	-- Voidstrider Saddlebag \\ Void Elf Satchel
 r(1265608),	-- Multicraft
 r(1265621),	-- Knowledge
 r(1265658),	-- Quality
@@ -104,6 +104,13 @@ r(1265682),	-- Concentration
 r(1265683),	-- Skill
 r(1265700),	-- Resourcefulness
 r(1265708),	-- Ingenuity
+12.0.0.64499
+r(1279123),	-- Thalassian Alchemy Coveralls
+r(1279124),	-- Thalassian Chef's Chapeau
+r(1279125),	-- Thalassian Enchanter's Bonnet
+r(1279126),	-- [DNT] Thalassian Fisher's Suncover
+r(1279128),	-- Thalassian Herbalist's Cowl
+r(1279129),	-- Thalassian Tailor's Threads
 
 
 
@@ -118,15 +125,12 @@ r(1260458),	-- Red Dazar'alor Rug
 r(1260475),	-- Zanchuli Tapestry
 r(1260769),	-- Shal'dorei Open-Air Tent
 r(1260774),	-- Circular Shal'dorei Rug
-r(1261231),	-- Argussian Circular Rug
-r(1261232),	-- Karabor Bed
 r(1261250),	-- Pandaren Meander Rug
 r(1261317),	-- Surwich Expedition Tent
 r(1261688),	-- Elder Rise Rug
 r(1261695),	-- Dwarven District Banner
 r(1261940),	-- Tapestry of the Five Flights
 r(1262370),	-- "Unity of Thorns" Tapestry
-r(1263360),	-- Beloved Elekk Plushie
 r(1263553),	-- Pandaren Fishing Net
 r(1263620),	-- Gilded Dalaran Banner
 r(1263627),	-- Kirin Tor Skyline Banner
@@ -134,6 +138,9 @@ r(1263669),	-- Grand Drape of the Exiles
 r(1263692),	-- Draenei Weaver's Loom
 r(1263853),	-- Kyrian Aspirant's Rolled Cushion
 r(1263858),	-- Beloved Raptor Plushie
+11.2.7.64044
+r(1272575),	-- Heart of the Forest Banner
+r(1272578),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 12.0.0.63534
 r(471015),	-- Midnight Tailoring
 r(471047),	-- Recraft Equipment
@@ -201,12 +208,12 @@ r(1228996),	-- Thalassian Competitor's Cloth Treads
 r(1228997),	-- Thalassian Competitor's Cloth Tunic
 r(1228998),	--
 r(1228999),	--
-r(1229000),	-- Blood Elf Drapery
-r(1229001),	-- Void Elf Rug
-r(1229002),	-- Blood Elf Beanbag
-r(1229003),	-- Tailoring Decor 4
-r(1246919),	-- Blood Elf Pillow
-r(1246929),	-- Void Elf Satchel
+r(1229000),	-- Silvermoon Curtains \\ Blood Elf Drapery
+r(1229001),	-- Lush Telogrus Carpet \\ Void Elf Rug
+r(1229002),	-- Luxurious Silvermoon Lounge Cushion \\ Blood Elf Beanbag
+r(1229003),	-- Plush Silvermoon Bed \\ Tailoring Decor 4
+r(1246919),	-- Chic Silvermoon Pillow \\ Blood Elf Pillow
+r(1246929),	-- Voidstrider Saddlebag \\ Void Elf Satchel
 r(1265608),	-- Multicraft
 r(1265621),	-- Knowledge
 r(1265658),	-- Quality
@@ -216,3 +223,10 @@ r(1265682),	-- Concentration
 r(1265683),	-- Skill
 r(1265700),	-- Resourcefulness
 r(1265708),	-- Ingenuity
+12.0.0.64499
+r(1279123),	-- Thalassian Alchemy Coveralls
+r(1279124),	-- Thalassian Chef's Chapeau
+r(1279125),	-- Thalassian Enchanter's Bonnet
+r(1279126),	-- [DNT] Thalassian Fisher's Suncover
+r(1279128),	-- Thalassian Herbalist's Cowl
+r(1279129),	-- Thalassian Tailor's Threads

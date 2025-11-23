@@ -1303,7 +1303,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66218 },	-- Scampering Scamps
 					["provider"] = { "n", 187674 },	-- Neelo
 					["coord"] = { 10.6, 46.9, THE_AZURE_SPAN },
-					["cost"] = { { "i", 192153, 7 }, },	--7xFrigidfish
+					["cost"] = { { "i", 192153, 7 }, },	-- 7xFrigidfish
 					["groups"] = {
 						i(201295),	-- Neelo's Spare Blanket
 					},
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199976 },	-- Azuregos
 					["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 				}),
-					--- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
+					-- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
 				q(72940, {	-- Where in the World is a Lost Blue Dragon?
 					["sourceQuests"] = {
 						72938,	-- Archival Arrival [First questchain part]
@@ -2158,7 +2158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 185608 },	-- Khuri
 				["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
-				--["requireSkill"] = FISHING,	-- TODO: It doesn't require to pickup this quest but you cannot finish it without it
+				-- ["requireSkill"] = FISHING,	-- TODO: It doesn't require to pickup this quest but you cannot finish it without it
 				["groups"] = {
 					i(191646),	-- Blue-Tailed Minnow (QI!)
 				},

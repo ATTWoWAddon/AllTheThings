@@ -22,7 +22,11 @@ namespace ATT
 
         private static readonly NLua.Lua lua = new NLua.Lua();
 
+        private static int PreProcessorNestLevel = 0;
+
         public static string CurrentSubFilename => lua.State?.Status == KeraLua.LuaStatus.OK ? lua?.GetString("CurrentSubFileName") : null;
+
+        public static string CurrentImportFilename { get; set; }
 
         static void UnhandledExceptionHandler(object sender, UnhandledExceptionEventArgs e)
         {
@@ -778,8 +782,14 @@ namespace ATT
             switch (command[0])
             {
                 case "IF":
+                    PreProcessorNestLevel = 0;
                     // This is an IF command. It is the start of a new internal command block.
                     ProcessInternalCommandBlock(command, builder, content, ref index, length);
+
+                    // If nested pre-processor depth did not return to 0, then throw an error
+                    if (PreProcessorNestLevel != 0)
+                        Framework.LogError($"Pre-processor nesting depth @{PreProcessorNestLevel} did not equalize after processing a pre-processor command! --> {Framework.ToJSON(command)}");
+
                     break;
                 case "IMPORT:":
                     // This is an IMPORT command. It indicates that a Live DB file should be loaded.
@@ -887,12 +897,14 @@ namespace ATT
                 files.Sort(StringComparer.InvariantCulture);
                 foreach (var file in files)
                 {
+                    CurrentImportFilename = file;
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
                     builder.Append("CurrentSubFileName = \"").Append(shortname.Replace("\\", "/").Replace("..//", "")).Append(file.Replace(filename, "").Replace("\\", "/")).AppendLine("\";");
                     builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file, Encoding.UTF8))).Append("\nend)();");
                     ++fileCount;
                 }
+                CurrentImportFilename = null;
             }
             else if (File.Exists(filename))
             {
@@ -913,6 +925,7 @@ namespace ATT
 
         static bool ProcessInternalCommandBlock(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
+            PreProcessorNestLevel++;
             // Parse the next command in the block
             int previousIndex = index;
             var ConditionalSatisfied = ProcessCommand(command);
@@ -940,12 +953,13 @@ namespace ATT
                     case "ELSE":
                     case "ELIF":
                     case "ELSEIF":
-                        // This is an ELSE/IF.
+                        PreProcessorNestLevel--;
                         if (ProcessInternalCommandBlock(command, !ConditionalSatisfied ? builder : new StringBuilder(), content, ref index, length)) return true;
                         previousIndex = index;
                         break;
                     default:
                         // Break the loop.
+                        PreProcessorNestLevel--;
                         return true;
                 }
             }

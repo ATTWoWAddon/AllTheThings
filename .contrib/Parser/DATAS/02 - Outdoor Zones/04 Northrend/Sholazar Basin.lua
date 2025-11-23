@@ -884,7 +884,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
-							--[[TODO:: verify if It Could Be Anywhere! (questID 12624) is also needed
+							--[[TODO:  verify if It Could Be Anywhere! (questID 12624) is also needed
 										for this, 12549 and 12589
 							]]--
 						},

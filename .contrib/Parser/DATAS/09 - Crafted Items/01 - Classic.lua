@@ -1313,7 +1313,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(ENCHANTING, {
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
-				sharedData({ -- Enchanting supplies
+				sharedData({	-- Enchanting supplies
 					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
@@ -1370,7 +1370,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				sharedData({	-- Runed Copper Rod reagents
 					-- Danny Donkey:	This structure is used for Vanilla content as well as BFA and onwards when professions
-					--					are split on an expansion-basis, but one still need to craft and use this basic rod.
+					-- 					are split on an expansion-basis, but one still need to craft and use this basic rod.
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
 						{ 60.8, 44.2, IRONFORGE },
@@ -2310,7 +2310,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 				}),
 			}),
-			filter(HELD_IN_OFF_HAND, bubbleDownSelf({ ["collectible"] = false, }, {
+			filter(HELD_IN_OFF_HAND, sharedData({ ["collectible"] = false, }, {
 				i(6292),	-- 10 Pound Mud Snapper
 				i(6294),	-- 12 Pound Mud Snapper
 				i(6295),	-- 15 Pound Mud Snapper
@@ -2882,7 +2882,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 			}),
-			--i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+			-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 			i(13760, {	-- Raw Sunscale Salmon
 				["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
 				["coord"] = { 60.6, 71.7, SILITHUS },
@@ -2919,7 +2919,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 				["provider"] = { "o", 180712 },	-- Stonescale Eel Swarm
 			}),
-			--i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+			-- i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 			-- Fish schools:
 			o(180683, {	-- Firefin Snapper School
 				["description"] = "Can be found on the seaside.",
@@ -3949,8 +3949,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(8153, {	-- Wildvine
 					["provider"] = { "o", 142140 },	-- Purple Lotus
 				}),
-				--___________________________________________
-				--
+				-- ___________________________________________
+				-- 
 				-- Nodes:
 				o(142141, {	-- Arthas' Tears (Scourge)
 					["maps"] = {
@@ -6262,7 +6262,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Gold
 						o(1734, {	-- Gold Vein
 							["maps"] = {
@@ -6310,7 +6310,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Iron
 						o(1735, {	-- Iron Deposit
 							["maps"] = {
@@ -6331,7 +6331,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Mithril
 						o(2040, {	-- Mithril Deposit
 							["maps"] = {
@@ -6369,7 +6369,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Obsidian Chunk
 						o(181069, {	-- Large Obsidian Chunk
 							["maps"] = {
@@ -6389,7 +6389,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Silver
 						o(73940, {	-- Ooze Covered Silver Vein
 							["coord"] = { 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
@@ -6434,7 +6434,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["races"] = HORDE_ONLY,
 						}),
 						-- #endif
-						--____________________________________________
+						-- ____________________________________________
 						-- Thorium
 						o(180215, {	-- Hakkari Thorium Vein
 							["maps"] = { ZULGURUB },
@@ -6488,7 +6488,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["maps"] = { FELWOOD },
 						}),
 						-- #endif
-						--____________________________________________
+						-- ____________________________________________
 						-- Tin
 						o(1732, {	-- Tin Vein
 							["maps"] = {
@@ -6536,7 +6536,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["coord"] = { 30.0, 50.0, GHOSTLANDS },
 							["timeline"] = { ADDED_2_0_1 },
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Truesilver
 						o(123309, {	-- Ooze Covered Truesilver Deposit
 							["coords"] = {
@@ -6580,7 +6580,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["maps"] = { FELWOOD },
 						}),
 						-- #endif
-						--____________________________________________
+						-- ____________________________________________
 						-- Ores
 						i(2770, {	-- Copper Ore
 							[MAPS_FIELD] = {
@@ -6876,7 +6876,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 								i(7911),	-- Truesilver Ore
 							},
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						-- Stones:
 						i(2836, {	-- Coarse Stone
 							[MAPS_FIELD] = {
@@ -6984,7 +6984,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							},
 							["provider"] = { "o", 2040 },	-- Mithril Deposit
 						}),
-						--____________________________________________
+						-- ____________________________________________
 						--
 						-- Not Ore --
 						-- Elements with unviably low droprate:
@@ -7055,7 +7055,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { REMOVED_4_0_3 }
 						})),
 					},
-					--____________________________________________
+					-- ____________________________________________
 					-- Gems (obtainable from prospecting):
 					-- Note: The gems are linked to respective ores with provider for prospecting in JEWELCRAFTING > Prospecting.
 					sharedData({

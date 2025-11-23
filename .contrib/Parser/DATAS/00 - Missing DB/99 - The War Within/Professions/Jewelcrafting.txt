@@ -25,8 +25,6 @@ r(1260172),	-- Gundargaz Candelabra
 r(1260492),	-- Zandalari Skullfire Lamp
 r(1260501),	-- Small Mask of Bwonsamdi, Loa of Graves
 r(1260757),	-- Shaded Suramar Window
-r(1261071),	-- Draenic Basin
-r(1261075),	-- Draenethyst Sconce
 r(1261242),	-- Jade Temple Dragon Fountain
 r(1261243),	-- Pandaren Stone Wall
 r(1261244),	-- Pandaren Stone Post
@@ -170,8 +168,6 @@ r(1260172),	-- Gundargaz Candelabra
 r(1260492),	-- Zandalari Skullfire Lamp
 r(1260501),	-- Small Mask of Bwonsamdi, Loa of Graves
 r(1260757),	-- Shaded Suramar Window
-r(1261071),	-- Draenic Basin
-r(1261075),	-- Draenethyst Sconce
 r(1261242),	-- Jade Temple Dragon Fountain
 r(1261243),	-- Pandaren Stone Wall
 r(1261244),	-- Pandaren Stone Post

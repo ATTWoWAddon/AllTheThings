@@ -410,7 +410,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						
 						-- Mounts
 						-- CRIEVE NOTE: This mount doesn't appear to be on the vendor directly.
-						--frags(250, i(69224)),	-- Pureblood Fire Hawk (MOUNT!) [Smoldering Egg of Millagazor]
+						-- frags(250, i(69224)),	-- Pureblood Fire Hawk (MOUNT!) [Smoldering Egg of Millagazor]
 						
 						-- All BoP random statted items (aka Flickering gear) from Heroic Firelands.
 						-- 	This gear will be purchased via a satchel, and the item stats will be generated once the item is removed from the bag.

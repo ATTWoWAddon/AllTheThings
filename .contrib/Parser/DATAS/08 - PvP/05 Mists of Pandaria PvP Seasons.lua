@@ -369,7 +369,7 @@ root(ROOTS.PVP, {
 				})),
 			}),
 			n(PVP_GLADIATOR, {
-			--	["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
+				-- ["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
 				["groups"] = {
 					n(WEAPONS, sharedData({
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },

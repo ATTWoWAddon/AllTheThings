@@ -985,19 +985,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(62864, {	-- Return Lost Souls (10 soul version)
 				["description"] = "Requires Renown 15.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62865, {	-- Return Lost Souls (15 soul version)
 				["description"] = "Requires Renown 24.",
+				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
-				-- ["sourceQuests"] = {  },	-- TODO
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
 				["description"] = "Requires Renown 32.",
@@ -1045,8 +1045,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 			q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 			-- Unknown
-			--q(60773),	-- Renown 30/Channeling anima
-			--q(60873),	-- Flying around in necrolord base
+			-- q(60773),	-- Renown 30/Channeling anima
+			-- q(60873),	-- Flying around in necrolord base
 		}),
 	})),
 })));

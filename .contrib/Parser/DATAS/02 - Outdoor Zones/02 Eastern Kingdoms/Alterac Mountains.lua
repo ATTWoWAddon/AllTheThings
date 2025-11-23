@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
 					["providers"] = {
-						--{ "o",  },	-- Shard of Pure Light
+						-- { "o",  },	-- Shard of Pure Light
 						{ "i", 211421 },	-- The Box
 					},
 					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },

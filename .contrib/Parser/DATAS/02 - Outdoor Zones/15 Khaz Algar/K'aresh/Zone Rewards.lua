@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			n(WEAPONS, {
-				--TODO: uncomment what is confirmed
+				-- TODO: uncomment what is confirmed
 				i(243549),	-- Wastelander's Gilded Bastion*
 				i(243543),	-- Wastelander's Gilded Bident*
 				i(243547),	-- Wastelander's Gilded Blade*

@@ -64,15 +64,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60808,	-- Hidden Treasures: Stormheim
 						}},
 					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_VALAJAR, {
-						n(ACHIEVEMENTS, {
-							ach(42658, {	-- Valarjar
-								i(250402, {	-- Vrykul Lord’s Throne (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
+					ach(42658, {	-- Valarjar
+						i(250402, {	-- Vrykul Lord’s Throne (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					}),
 				}),

@@ -10029,7 +10029,8 @@ q(5509,{coords={{81.4,59.8,1423}},cost={{"i",12841,10}},lvl=50,qgs={11039},repea
 i(12844,{b=1,factionID=529,q=2,rwp=40003})}}),
 q(5513,{coords={{81.6,60,1423}},cost={{"i",12844,10}},lvl=55,minReputation={529,21000},qgs={11536},rwp=40003}),
 q(5206,{coords={{81.4,59.8,1423}},lvl=50,qgs={11063},rwp=40003,sourceQuests={5154,5168,5181},g={
-qo(1,{crs={8529},providers={{"i",13155},{"i",13156},{"i",13157}},rwp=40003})}}),
+qo(1,{crs={8529},providers={{"i",13155},{"i",13156},{"i",13157}},rwp=40003}),
+i(13159,{q=1,rwp=40003})}}),
 q(5510,{coords={{81.4,59.8,1423}},cost={{"i",12840,20}},lvl=50,qgs={11039},repeatable=1,rwp=40003,g={
 i(12844,{b=1,factionID=529,q=2,rwp=40003})}}),
 q(6146,{coords={{26.6,74.8,1423}},lvl=56,qgs={11878},r=1,rwp=40003,sourceQuests={6145},g={
@@ -12248,7 +12249,7 @@ n(1552,{coords={{44,48.2,1434}},g={
 s(156368,1604,{awp=70305,f=26,lvl=40,q=2,rwp=40003}),
 s(157791,4478,{awp=70305,f=6,lvl=40,q=2,rwp=40003})}}),
 n(14492,{coords={{36.8,56,1434}}})}),
-h(-628,{pvp=1,u=1606,g={
+h(-688,{pvp=1,u=1606,g={
 i(213168,{b=1,description="Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",pvp=1,q=2,rwp=11502,u=2}),
 i(213169,{b=1,cost={{"i",213168,100}},pvp=1,q=3,u=1606}),
 i(213170,{b=1,cost={{"i",213169,100}},pvp=1,q=4,u=1606}),

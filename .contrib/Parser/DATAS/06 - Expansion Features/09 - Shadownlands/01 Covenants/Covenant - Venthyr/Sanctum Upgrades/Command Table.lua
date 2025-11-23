@@ -11,10 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					n(TIER_ONE, {
 						["icon"] = 3675495,
 						["groups"] = {
-							n(FOLLOWERS, bubbleDownSelf({
-								["collectible"] = false,
-								["u"] = UNLEARNABLE,	-- Temporary troops
-							}, {
+							n_TrainingFollowers({
 								follower(1238),	-- Venthyr Nightblade
 								follower(1246),	-- Venthyr Nightblade
 								follower(1247),	-- Venthyr Nightblade
@@ -23,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								follower(1248),	-- Venthyr Soulcaster
 								follower(1249),	-- Venthyr Soulcaster
 								follower(1323),	-- Venthyr Soulcaster
-							})),
+							}),
 							n(QUESTS, {
 								q(59319, {	-- Advancing Our Efforts
 									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
@@ -88,7 +85,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
+									-- TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
 									["groups"] = {
 										follower(1251),	-- Stonehead
 									},

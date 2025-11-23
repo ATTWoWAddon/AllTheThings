@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Destruction
+				-- Quest Chain: Path of Destruction
 				q(24828, {	-- Path of Destruction (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -434,7 +434,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Might
+				-- Quest Chain: Path of Might
 				q(25239, {	-- Path of Might (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -468,7 +468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Vengeance
+				-- Quest Chain: Path of Vengeance
 				q(24826, {	-- Path of Vengeance [Honored]
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -502,7 +502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			--	Quest Chain: Path of Wisdom
+				-- Quest Chain: Path of Wisdom
 				q(24825, {	-- Path of Wisdom [Honored]
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
-				--  Weekly Raid Quests
+				-- Weekly Raid Quests
 				q(24874, {	-- Blood Quickening [10]
 					["qg"] = 38551,	-- Alrin the Agile
 					["timeline"] = { REMOVED_4_0_1 },

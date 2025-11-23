@@ -4,10 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(WAR_EFFORT, {
-		n(FOLLOWERS, bubbleDownSelf({
-			["collectible"] = false,
-			["u"] = UNLEARNABLE,	-- Temporary troops
-		}, {
+		n_TrainingFollowers({
 			follower(1063),	-- Alliance:Dwarven Riflemen \\ Horde:Tauren Earthshakers
 			follower(1064),	-- Alliance:Gnomeregan Mechano-Tanks \\ Horde:Forsaken Dreadguards
 			follower(1066),	-- Alliance:Darnassian Sentinels \\ Horde:Darkspear Shaman
@@ -20,6 +17,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			follower(1179),	-- Alliance:Dark Iron Shadowcasters \\ Horde:Mag'har Outriders
 			follower(1184),	-- Alliance:Kul Tiran Marines \\ Horde:Zandalari Wingriders
 			follower(1185),	-- Alliance:Mechagnome Spidercrawlers \\ Horde:Vulpera Sharpshooters
-		})),
+		}),
 	}),
 }));

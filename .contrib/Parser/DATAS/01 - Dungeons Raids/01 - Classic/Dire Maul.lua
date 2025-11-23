@@ -818,7 +818,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
-				q(27112, { -- The Cursed Remains
+				q(27112, {	-- The Cursed Remains
 					["qg"] = 44991,	-- Estulan
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -1888,7 +1888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18485, {	-- Observer's Shield
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: This doesn't appear to have been replaced yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if SEASON_OF_DISCOVERY
@@ -1900,7 +1900,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18490, {	-- Insightful Hood
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: This doesn't appear to have been replaced yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if AFTER 7.3.5
@@ -2045,7 +2045,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18538, {	-- Treant's Bane
 								-- #if SEASON_OF_DISCOVERY
 								-- CRIEVE NOTE: There's no evidence that the reitemized version has dropped yet.
-								--["timeline"] = { REMOVED_1_15_3 },
+								-- ["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
 							}),
 							-- #if SEASON_OF_DISCOVERY

@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["groups"] = {
-						i(173891),	--	Plagueborn Slime (PET!)
+						i(173891),	-- Plagueborn Slime (PET!)
 					},
 				}),
 				q(58036, {	-- Hazardous Waste Collection

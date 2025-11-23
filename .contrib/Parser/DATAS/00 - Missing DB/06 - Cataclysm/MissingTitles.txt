@@ -1,6 +1,6 @@
 4.0.1.12911
 title(144),	-- Warbringer %s \\ Guardian of %s \\ %s, Survivor of the Firelord
-title(145),	-- Warbound %s \\ Veteran of %s
+title(145),	-- Warbound %s \\ Veteran of %s \\ Northbound Rush, %s
 4.3.4.15595
 title(152),	-- %s, Veteran of the Alliance
 title(153),	-- %s, Veteran of the Horde

@@ -61,8 +61,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			ach(14339, {	-- Shard Labor
 				["description"] = "'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
 				["groups"] = {
-				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
-				--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
+					-- https://www.wowhead.com/achievement=14339/shard-labor#comments
+					-- moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
 					q(61295, {	-- Anima Crystal Shard
 						["name"] = "Anima Crystal Shard",
 						["description"] = "On a bookshelf inside the room behind Rector Kalliope.",
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["icon"] = 3528288,
 						["coord"] = { 72.4, 40.2, BASTION },
 					}),
-				--	TODO: keep these here, within the achievement, or move them to treasures or something?  you do the final 3 steps after the achievement is totally completed, it's just a prerequisite...so i'm not sure if it makes sense to have them here??
+					-- TODO: keep these here, within the achievement, or move them to treasures or something?  you do the final 3 steps after the achievement is totally completed, it's just a prerequisite...so i'm not sure if it makes sense to have them here??
 					n(171732, {	-- Forgelite Hephaesius
 						["description"] = "After you finish collecting all the shards from Bastion, Necrotic Wake, and Spires of Ascension, visit Hephaesius. Give him the shards, and he will forge them into a mallet.",
 						["questID"] = 61229,	-- receiving the mallet from Hephaesius

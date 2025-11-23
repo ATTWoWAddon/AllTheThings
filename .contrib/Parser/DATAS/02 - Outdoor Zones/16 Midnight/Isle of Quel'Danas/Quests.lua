@@ -9,13 +9,13 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 			header(HEADERS.Achievement, 62191, {	-- Call of the Light
 				q(91281, {	-- Midnight
 					["description"] = "Requires re-logging to be accepted.",
+					--["sourceQuests"] = { ?? },	-- something from pre-patch/11.2.7?
+					--["isBreadcrumb"] = true,
 					["maps"] = {
 						STORMWIND_CITY,
 						ORGRIMMAR,
 					},
 					["DisablePartySync"] = true,
-					--["sourceQuests"] = { ?? },	-- something from pre-patch/11.2.7?
-					--["isBreadcrumb"] = true,
 				}),
 				q(88719, {	-- A Voice from the Light
 					["sourceQuests"] = { 91281 },	-- Midnight

@@ -10,129 +10,115 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			ach(15067, {	-- Adamant Vaults
 				["timeline"] = { ADDED_9_1_0 },
 			}),
-			ach(14795, {	-- Clearing the Fog
-				ach(14759),	-- It's Coming Back to Me...
-				ach(14760),	-- Recollection Collection
-			}),
+			ach(14759),	-- It's Coming Back to Me...
+			ach(14760),	-- Recollection Collection
+			ach(14795),	-- Clearing the Fog
 			ach(14773),		-- Explosive Extermination
-			ach(14778, {	-- Extremely Ravenous
-				i(170540, {	-- Ravenous Anima Cell
-					crit(49974, {	-- Dark Armaments
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
-						["crs"] = {
-							156212,	-- Coldheart Agent
-							165594,	-- Coldheart Ambusher
-							170800,	-- Coldheart Ambusher
-							156157,	-- Coldheart Ascendant
-							156226,	-- Coldheart Binder
-							156213,	-- Coldheart Guardian
-							156159,	-- Coldheart Javelineer
-							156219,	-- Coldheart Scout
-						},
-					}),
-					crit(49976, {	-- Deadsoul Hound Harness
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = { 151816 },	-- Deadsoul Scavenger
-					}),
-					crit(49977, {	-- Maw Seeker Mount
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = { 152708 },	-- Mawsworn Seeker
-					}),
-					crit(49991, {	-- Mawrat Harness
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							151353,	-- Mawrat
-							154030,	-- Oddly Large Mawrat
-						},
-					}),
-					crit(49979, {	-- Warden's Authority
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							157634,	-- Flameforge Enforcer
-							150958,	-- Mawsworn Guard
-							153874,	-- Mawsworn Sentry
-							157819,	-- Mawsworn Shadestalker
-						},
-					}),
-					crit(49981, {	-- Pocketed Soulcage
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							153878,	-- Mawsworn Archer
-							150959,	-- Mawsworn Interceptor
-						},
-					}),
-					crit(49982, {	-- Shackle Keys
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							155798,	-- Mawsworn Shackler (not sure if this version exists?)
-							150965,	-- Mawsworn Shackler (this is the one i got the criteria from, in Twisting Corridors)
-						},
-					}),
-					crit(49984, {	-- Purifier's Flame
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							152644,	-- Deadsoul Drifter
-							151815,	-- Deadsoul Echo
-							151816,	-- Deadsoul Scavenger
-							151814,	-- Deadsoul Shade
-							153879,	-- Deadsoul Shadow
-							153885,	-- Deadsoul Shambler
-							153882,	-- Deadsoul Spirit
-						},
-					}),
-					crit(49985, {	-- Flamestarved Cinders
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							154128,	-- Blazing Elemental
-							154129,	-- Burning Emberguard
-							157584,	-- Flameforge Master
-							157583,	-- Forge Keeper
-							157572,	-- Mawsworn Firecaller
-							157571,	-- Mawsworn Flametender
-						},
-					}),
-					crit(49986, {	-- Glasswing Charm
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							155225,	-- Faeleaf Grovesinger
-							155215,	-- Faeleaf Lasher
-							155221,	-- Faeleaf Tender
-							155216,	-- Faeleaf Warden
-							155211,	-- Gormling Pest
-							155219,	-- Gormling Spitter
-							155226,	-- Verdant Keeper
-						},
-					}),
-					crit(49987, {	-- Marrow Scooper
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = {
-							155824,	-- Lumbering Creation
-							155790,	-- Mawsworn Acolyte
-							155830,	-- Mawsworn Disciple
-							157810,	-- Mawsworn Endbringer
-							155949,	-- Mawsworn Soulbinder
-							153552,	-- Weeping Wraith
-						},
-					}),
-					crit(49988, {	-- Skeletal Ward
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["crs"] = { 155793 },	-- Skeletal Remains
-					}),
-					crit(49989, {	-- Prisoner's Concord
-						["achievementID"] = 14778,	-- Extremely Ravenous
-						["description"] = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
-						["crs"] = {
-							154011,	-- Armed Prisoner
-							154015,	-- Escaped Ritualist
-							154014,	-- Imprisoned Cabalist
-							154020,	-- Prisonbreak Cursewalker
-							154018,	-- Prisonbreak Mauler
-							154016,	-- Prisonbreak Soulmender
-						},
-					}),
+			ach(14778, sharedData({	-- Extremely Ravenous
+				["cost"] = {{"i",170540,1}},	-- Ravenous Anima Cell
+			},{
+				crit(49974, {	-- Dark Armaments
+					["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
+					["crs"] = {
+						156212,	-- Coldheart Agent
+						165594,	-- Coldheart Ambusher
+						170800,	-- Coldheart Ambusher
+						156157,	-- Coldheart Ascendant
+						156226,	-- Coldheart Binder
+						156213,	-- Coldheart Guardian
+						156159,	-- Coldheart Javelineer
+						156219,	-- Coldheart Scout
+					},
 				}),
-			}),
+				crit(49976, {	-- Deadsoul Hound Harness
+					["crs"] = { 151816 },	-- Deadsoul Scavenger
+				}),
+				crit(49977, {	-- Maw Seeker Mount
+					["crs"] = { 152708 },	-- Mawsworn Seeker
+				}),
+				crit(49991, {	-- Mawrat Harness
+					["crs"] = {
+						151353,	-- Mawrat
+						154030,	-- Oddly Large Mawrat
+					},
+				}),
+				crit(49979, {	-- Warden's Authority
+					["crs"] = {
+						157634,	-- Flameforge Enforcer
+						150958,	-- Mawsworn Guard
+						153874,	-- Mawsworn Sentry
+						157819,	-- Mawsworn Shadestalker
+					},
+				}),
+				crit(49981, {	-- Pocketed Soulcage
+					["crs"] = {
+						153878,	-- Mawsworn Archer
+						150959,	-- Mawsworn Interceptor
+					},
+				}),
+				crit(49982, {	-- Shackle Keys
+					["crs"] = {
+						155798,	-- Mawsworn Shackler (not sure if this version exists?)
+						150965,	-- Mawsworn Shackler (this is the one i got the criteria from, in Twisting Corridors)
+					},
+				}),
+				crit(49984, {	-- Purifier's Flame
+					["crs"] = {
+						152644,	-- Deadsoul Drifter
+						151815,	-- Deadsoul Echo
+						151816,	-- Deadsoul Scavenger
+						151814,	-- Deadsoul Shade
+						153879,	-- Deadsoul Shadow
+						153885,	-- Deadsoul Shambler
+						153882,	-- Deadsoul Spirit
+					},
+				}),
+				crit(49985, {	-- Flamestarved Cinders
+					["crs"] = {
+						154128,	-- Blazing Elemental
+						154129,	-- Burning Emberguard
+						157584,	-- Flameforge Master
+						157583,	-- Forge Keeper
+						157572,	-- Mawsworn Firecaller
+						157571,	-- Mawsworn Flametender
+					},
+				}),
+				crit(49986, {	-- Glasswing Charm
+					["crs"] = {
+						155225,	-- Faeleaf Grovesinger
+						155215,	-- Faeleaf Lasher
+						155221,	-- Faeleaf Tender
+						155216,	-- Faeleaf Warden
+						155211,	-- Gormling Pest
+						155219,	-- Gormling Spitter
+						155226,	-- Verdant Keeper
+					},
+				}),
+				crit(49987, {	-- Marrow Scooper
+					["crs"] = {
+						155824,	-- Lumbering Creation
+						155790,	-- Mawsworn Acolyte
+						155830,	-- Mawsworn Disciple
+						157810,	-- Mawsworn Endbringer
+						155949,	-- Mawsworn Soulbinder
+						153552,	-- Weeping Wraith
+					},
+				}),
+				crit(49988, {	-- Skeletal Ward
+					["crs"] = { 155793 },	-- Skeletal Remains
+				}),
+				crit(49989, {	-- Prisoner's Concord
+					["description"] = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
+					["crs"] = {
+						154011,	-- Armed Prisoner
+						154015,	-- Escaped Ritualist
+						154014,	-- Imprisoned Cabalist
+						154020,	-- Prisonbreak Cursewalker
+						154018,	-- Prisonbreak Mauler
+						154016,	-- Prisonbreak Soulmender
+					},
+				}),
+			})),
 			ach(15089, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Flawless Master (Layer 12)
 				i(186655),	-- Mawsworn Charger (MOUNT!)
 				ach(15088),	-- Flawless: Upper Reaches (Layer 12)

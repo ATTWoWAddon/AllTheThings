@@ -1366,7 +1366,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			})),
 		}),
-		--	Weeklies
+		-- Weeklies
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
@@ -1391,7 +1391,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			}),
 		})),
-		--	Dailies
+		-- Dailies
 		n(QUESTS, sharedData({
 			["isDaily"] = true,
 		},{

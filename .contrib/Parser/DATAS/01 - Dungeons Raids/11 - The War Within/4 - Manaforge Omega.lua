@@ -77,7 +77,6 @@ local EncounterToLoot = {
 		i(237545),	-- Discarded Nutrient Shackles
 		i(237524),	-- Laced Lair-Steppers
 		i(242393),	-- Loom'ithar's Living Silk
-		i(245510),	-- Loombeast Silk
 		i(237732),	-- Piercing Strandbow
 		i(237729),	-- Prodigious Gene Splicer
 		i(237723),	-- Ward of the Weaving-Beast
@@ -143,7 +142,6 @@ local EncounterToLoot = {
 		i(237724),	-- Iris of the Dark Beyond
 		i(237553),	-- Laboratory Test Slippers
 		i(237570),	-- Logic Gate: Omega
-		i(249218),	-- Manaforged Instrument
 		i(237726),	-- Marvel of Technomancy
 		i(237737),	-- Photon Sabre Prime
 	};
@@ -219,7 +217,6 @@ local EncounterToLoot = {
 		i(237532),	-- Beacons of False Righteousness
 		i(237564),	-- Darkrider Sabatons
 		i(237531),	-- Elite Shadowguard Legwraps
-		i(243365),	-- Maw of the Void
 		i(242400),	-- Nexus-King's Command
 		i(237734),	-- Oath-Breaker's Recompense
 		i(237555),	-- Pactbound Vambraces
@@ -401,7 +398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103304, {	-- Nexus-King Salhadaar
 						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103305, {	-- 	Dimensius, the All-Devouring
+					crit(103305, {	-- Dimensius, the All-Devouring
 						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
@@ -412,7 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103299, {	-- Loom'ithar
 						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103300, {	-- 	Soulbinder Naazindhri
+					crit(103300, {	-- Soulbinder Naazindhri
 						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103301, {	-- Forgeweaver Araz
@@ -421,7 +418,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103302, {	-- The Soul Hunters
 						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103303, {	-- 	Fractillus
+					crit(103303, {	-- Fractillus
 						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103304, {	-- Nexus-King Salhadaar
@@ -702,12 +699,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(PLEXUS),
 				BossOnly(LOOMITHAR, {
 					i(224435),	-- Pattern: Duskthread Lining (RECIPE!)
+					i(245510),	-- Loombeast Silk
 				}),
 				BossOnly(NAAZINDHRI, {
 					i(250104),	-- Soulbinder's Nethermantle (COSMETIC!)
 				}),
 				BossOnly(ARAZ, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
+					i(249218),	-- Manaforged Instrument
 				}),
 				BossOnly(HUNTERS, {
 					i(223097),	-- Pattern: Adrenal Surge Clasp (RECIPE!)
@@ -716,6 +715,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(223094),	-- Design: Magnificent Jeweler's Setting (RECIPE!)
 				}),
 				BossOnly(SALHADAAR, {
+					i(243365),	-- Maw of the Void
 					i(246727, {	-- Ethereal Essence Sliver
 						["description"] = "Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",
 						["minReputation"] = { FACTION_MANAFORGE_VANDALS, 12 },

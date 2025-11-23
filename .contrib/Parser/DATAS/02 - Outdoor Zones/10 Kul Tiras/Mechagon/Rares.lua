@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			--[[
 				R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 			]]--
-			-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
+			-- TODO:  See Hidden Quest Triggers.lua for remaining first kill id's needed
 			n(150306, {	-- Drill Rig
 				["description"] = "These rares are only available when the Drill Rig is an active construction project. Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement. Hover over each rare in the list to see its announcement.",
 				["groups"] = {
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 56368,
 						["coords"] = {
 							{ 66.5, 58.9, MECHAGON },	-- Cave Entrance
-							--{ 51.3, 47.8, MECHAGON },
+							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
 						["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 56367,
 						["coords"] = {
 							{ 73.2, 54.2, MECHAGON },	-- Cave Entrance
-							--{ 51.3, 47.8, MECHAGON },
+							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 55858,
 						["coords"] = {
 							{ 68.0, 48.0, MECHAGON },	-- Cave Entrance
-							--{ 51.3, 47.8, MECHAGON },
+							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
@@ -303,16 +303,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(150448, {	-- Reclamaton Rig
-			--	TODO: figure out questIDs for:
-				--	hardmode rig (irradiated box of assorted parts)
-				--	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
-			--	verify that epic recycling requisition is daily. possibly repeatable?
-			--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
-			--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
+				-- TODO: figure out questIDs for:
+				-- 	hardmode rig (irradiated box of assorted parts)
+				-- 	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
+				-- verify that epic recycling requisition is daily. possibly repeatable?
+				-- if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
+				-- possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
 				["modelScale"] = 4.2,
 				["cr"] = 150451,	-- Reclamation Rig (before being built)
 				["questID"] = 57132,	-- normal
-			--	["altQuests"] = { 55848 },	-- hardmode
+				-- ["altQuests"] = { 55848 },	-- hardmode
 				["isDaily"] = true,	-- for some reason with the quests attached it won't reset after dailies
 				["coord"] = { 70.0, 61.5, MECHAGON },
 				["groups"] = {

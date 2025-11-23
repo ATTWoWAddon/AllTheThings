@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuests"] = { 78538 },	-- Group Effort
 					["provider"] = { "n", 212747 },	-- Baelgrim
 					["coord"] = { 36.0, 52.8, DORNOGAL },
-					--dungeon quest which queue you into follower dungeon
+					-- dungeon quest which queue you into follower dungeon
 				}),
 				q(78539, {	-- Lasting Repairs
 					["sourceQuests"] = { 80022 },	-- Calling the Stormriders
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.Item, 228217, {	-- Design: Solid Amber
 				q(82441, {	-- For The Love of Gems
-					--["sourceQuests"] = { x },	-- ?
+					-- ["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 223637 },	-- Natalia Pearce
 					["coord"] = { 43.0, 70.0, ISLE_OF_DORN },
 				}),

@@ -9,19 +9,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42565, {	-- Bringing Order to the Isles
 		-- Added with Phase3 Legion Remix Release -- Gold 5th Nov 2025
 			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.",
-			["sourceQuests"] = {
-				46813,	-- (Death Knight)
-				46334,	-- (Demon Hunter)
-				46319,	-- (Druid)
-				46337,	-- (Hunter)
-				45354,	-- (Mage)
-				46350,	-- (Monk)
-				45770,	-- (Paladin)
-				45789,	-- (Priest)
-				46089,	-- (Rogue)
-				46792,	-- (Shaman)
-				46243,	-- (Warlock)
-				46207,	-- (Warrior)
+			["groups"] = {
+				crit(108360, {["_quests"] = { 46207 }}),	-- (Warrior)
+				crit(108376, {["_quests"] = { 45770 }}),	-- (Paladin)
+				crit(108651, {["_quests"] = { 46337 }}),	-- (Hunter)
+				crit(108655, {["_quests"] = { 46089 }}),	-- (Rogue)
+				crit(108654, {["_quests"] = { 45789 }}),	-- (Priest)
+				crit(108648, {["_quests"] = { 46813 }}),	-- (Death Knight)
+				crit(108656, {["_quests"] = { 46792 }}),	-- (Shaman)
+				crit(108652, {["_quests"] = { 45354 }}),	-- (Mage)
+				crit(108657, {["_quests"] = { 46243 }}),	-- (Warlock)
+				crit(108653, {["_quests"] = { 46350 }}),	-- (Monk)
+				crit(108650, {["_quests"] = { 46319 }}),	-- (Druid)
+				crit(108649, {["_quests"] = { 46334 }}),	-- (Demon Hunter)
 			},
 		}),
 		ach(42624),	-- Broken Isles World Quests I

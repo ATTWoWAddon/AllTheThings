@@ -323,7 +323,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = {
 						40070,	-- Eagle Egg Recovery
 						42425,	-- Going Down, Going Up
-					--	may also require "Tamer Takedown"
+						-- may also require "Tamer Takedown"
 					},
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
@@ -369,7 +369,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40069 },	-- Fledgling Worm Guts
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
-				--	didn't require "Eagle Egg Recovery" or "Tamer Takedown."
+					-- didn't require "Eagle Egg Recovery" or "Tamer Takedown."
 					["groups"] = {
 						o(250413, {	-- Oren's Prized Possessions
 							["coord"] = { 49.4, 39.3, HIGHMOUNTAIN },

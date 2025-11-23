@@ -113,6 +113,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					i(186636),	-- Cage of Mawrats
 					i(186678),	-- Mawforged Weapons Cache
 					i(186679),	-- Scroll of Domination
+					-- Misc
+					i(170540),	-- Ravenous Anima Cell
 				},
 			})),
 		}),

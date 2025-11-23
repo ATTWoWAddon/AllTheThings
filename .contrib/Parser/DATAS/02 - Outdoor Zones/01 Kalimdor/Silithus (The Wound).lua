@@ -177,9 +177,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 51.0, 88.8, DAZARALOR },	-- Horde
 							},
 							["_drop"] = { "r" },	-- API claims this is Horde-only, but it's neutral
-							--	originally removed, then hotfixed back in for 50 characters
-							--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus. there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
-							--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore. Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
+							-- originally removed, then hotfixed back in for 50 characters
+							-- NOT Horde-only, this ID is offered in both Dazar'alor and Boralus. there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
+							-- used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore. Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 						}),
 						q(55519, {	-- A Fresh Trauma
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55737, {	-- At the Azerite Time
-							["sourceQuest"] = 55735,	--	Defending the Maelstrom
+							["sourceQuest"] = 55735,	-- Defending the Maelstrom
 							["qg"] = 152815,	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 							["timeline"] = { ADDED_8_2_0 },
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55533, {	-- MOTHER Knows Best
-							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+							-- ["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 							["qg"] = 152206,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },

@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 52.4, 26.6, TIRISFAL_GLADES },
 					},
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
-					--	["cr"] = 1658,	-- Captain Dargol
+					-- ["cr"] = 1658,	-- Captain Dargol
 				}),
 			}),
 			-- #endif

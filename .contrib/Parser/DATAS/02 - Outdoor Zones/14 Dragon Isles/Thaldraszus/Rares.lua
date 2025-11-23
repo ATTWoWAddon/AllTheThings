@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					bo(69963, true),
 				},
 			}),
-		--	n(193220),	-- Broodweaver Araznae // under DF/Timed Based Rare
+			-- n(193220),	-- Broodweaver Araznae // under DF/Timed Based Rare
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200298),	-- Stoneshaped Greatbelt
 				},
 			}),
-		--	n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
+			-- n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
 			}),
-		--	n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
+			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
 			n(201549,	-- Morlash
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
@@ -136,8 +136,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["questID"] = 73892,
 			}),
-		--	n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
-		--	n(193666),	-- Rokmur // under DF/Timed Based Rare
+			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
+			-- n(193666),	-- Rokmur // under DF/Timed Based Rare
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
 				["coords"] = {
@@ -162,8 +162,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200214),	-- Grasp of the Weeping Widow
 				},
 			}),
-		--	n(193258),	-- Tempestrian // under DF/Timed Based Rare
-		--	n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
+			-- n(193258),	-- Tempestrian // under DF/Timed Based Rare
+			-- n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
 			n(193161, {	-- Woolfang
 				["description"] = "Pet a Wooly Lamb to spawn.",
 				["coord"] = { 47.9, 49.8, THALDRASZUS },

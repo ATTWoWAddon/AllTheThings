@@ -1065,7 +1065,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186503 },	-- Gracus
 					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
 					["groups"] = {
-						--i(198856),	-- Flyspawn Mandibles (QI!) TODO: wasn't able to loot myself from quest but wowhead have looting data
+						-- i(198856),	-- Flyspawn Mandibles (QI!) TODO: wasn't able to loot myself from quest but wowhead have looting data
 						i(198847),	-- Flyspawn Chitin (QI!)
 						i(198848),	-- Flyspawn Thorax (QI!)
 						i(198460),	-- Flyspawn Beetle Parts (QI!)

@@ -85,6 +85,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				{"select","instanceID",875},{"pop"},
 				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
 				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
+				{"finalize"},
+
+				-- Antorus, the Burning Throne
+				{"select","instanceID",946},{"pop"},
+				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
+				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
 			},
 		}),
 		i(253227, {	-- Flawless Thread of Time (Phase 5)

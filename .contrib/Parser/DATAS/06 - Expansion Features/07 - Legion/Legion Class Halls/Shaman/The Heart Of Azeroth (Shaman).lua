@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
-			["maps"] = { THE_HEART_Of_AZEROTH },
+			["maps"] = { THE_HEART_OF_AZEROTH },
 			["groups"] = {
 				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 					ach(42296, {	-- Hidden Potential of the Farseer
@@ -41,10 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(752),	-- Air Ascendants
 					follower(685),	-- Circle of Earthcallers
 					follower(782),	-- Circle of Earthcallers
@@ -75,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 
 					-- TODO itemID 143850
 					follower(993),	-- Grimtotem Warrior
-				})),
+				}),
 				n(QUESTS, {
 					q(39746, {	-- A Ring Unbroken
 						["provider"] = { "n", 91731 },	-- Thrall
@@ -94,19 +91,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							106519,	-- Farseer Nobundo
 						},
 						["coords"] = {
-							{ 30.3, 51.6, THE_HEART_Of_AZEROTH },
-							{ 31.6, 76.2, THE_HEART_Of_AZEROTH },
+							{ 30.3, 51.6, THE_HEART_OF_AZEROTH },
+							{ 31.6, 76.2, THE_HEART_OF_AZEROTH },
 						},
 					}),
 					q(43945, {	-- Expanding Your Horizons
 						["sourceQuests"] = { 41335 },	-- The Elements Call...
 						["provider"] = { "n", 99531 },	-- Aggra
-						["coord"] = { 36.1, 80.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 36.1, 80.0, THE_HEART_OF_AZEROTH },
 					}),
 					q(44006, {	-- Your Fullest Potential
 						["sourceQuests"] = { 43945 },	-- Expanding Your Horizons
 						["provider"] = { "n", 99531 },	-- Aggra
-						["coord"] = { 36.1, 80.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 36.1, 80.0, THE_HEART_OF_AZEROTH },
 					}),
 					-- Artifact
 					cl(SHAMAN, ELEMENTAL, {
@@ -118,15 +115,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96541 },	-- Rehgar Earthfury
-							["coords"] = {
-								{ 34.1, 74.3, 725 },	-- The Maelstrom (Scenario Map)
-								{ 34.1, 74.3, THE_HEART_Of_AZEROTH },
-							},
+							["coord"] = { 34.2, 77.7, THE_HEART_OF_AZEROTH },
 						}),
 						q(43338, {	-- The Codex of Ra
 							["sourceQuests"] = { 43334 },	-- The Coming Storm
 							["provider"] = { "n", 60968 },	-- Xuen
 							["coord"] = { 66.9, 56.2, KUN_LAI_SUMMIT },
+							["groups"] = {
+								i(139432),	-- The Edict of Fire (QI!)
+								i(139433),	-- The Edict of Stone (QI!)
+								i(139434),	-- The Edict of the Storm (QI!)
+							},
 						}),
 						q(39771, {	-- The Voice of Thunder
 							["sourceQuests"] = { 43338 },	-- The Codex of Ra
@@ -149,7 +148,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 							["coords"] = {
 								{ 33.7, 79.2, 725 },	-- The Maelstrom (Scenario Map)
-								{ 33.7, 79.2, THE_HEART_Of_AZEROTH },
+								{ 33.7, 79.2, THE_HEART_OF_AZEROTH },
 							},
 						}),
 						q(43645, {	-- Wavespeaker's Trail
@@ -187,7 +186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96539 },	-- Stormcaller Mylra
 							["coords"] = {
 								{ 34.5, 76.1, 725 },	-- The Maelstrom (Scenario Map)
-								{ 34.5, 76.1, THE_HEART_Of_AZEROTH },
+								{ 34.5, 76.1, THE_HEART_OF_AZEROTH },
 							},
 						}),
 						q(42932, {	-- What the Stonemother Knows
@@ -246,12 +245,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 96539 },	-- Stormcaller Mylra
-						["coord"] = { 34.0, 76.6, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.0, 76.6, THE_HEART_OF_AZEROTH },
 					}),
 					q(44253, {	-- A Vision of Triumph
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
 						["provider"] = { "n", 112318 },	-- Flamesmith Lanying
-						["coord"] = { 30.3, 60.6, THE_HEART_Of_AZEROTH },
+						["coord"] = { 30.3, 60.6, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							i(139701),	-- Farseer's Mask
 						},
@@ -259,7 +258,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(40276, {	-- The Maelstrom Beckons
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
-						["coord"] = { 31.6, 76.2, THE_HEART_Of_AZEROTH },
+						["coord"] = { 31.6, 76.2, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
@@ -272,7 +271,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							-- #ENDIF
 						},
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
-						["coord"] = { 29.0, 69.1, THE_HEART_Of_AZEROTH },
+						["coord"] = { 29.0, 69.1, THE_HEART_OF_AZEROTH },
 					}),
 					-- Learn Mission Table & Research
 					q(44544, {	-- Call of the Earthen Ring
@@ -285,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42188, {	-- Nobundo Awaits
 						["sourceQuests"] = { 44544 },	-- Call of the Earthen Ring
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.4, THE_HEART_OF_AZEROTH },
 					}),
 					q(42114, {	-- The Ritual of Tides
 						["sourceQuests"] = { 42188 },	-- Nobundo Awaits
@@ -293,7 +292,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							96528,	-- Farseer Nobundo
 							106316,	-- Farseer Nobundo
 						},
-						["coord"] = { 34.1, 31.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.1, 31.4, THE_HEART_OF_AZEROTH },
 					}),
 					q(42383, {	-- Rise, Champions
 						["sourceQuests"] = { 42114 },	-- The Ritual of Tides
@@ -301,12 +300,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							96528,	-- Farseer Nobundo
 							106316,	-- Farseer Nobundo
 						},
-						["coord"] = { 34.1, 31.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.1, 31.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42198, {	-- Champion: Stormcaller Mylra
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
 						["provider"] = { "n", 106312 },	-- Stormcaller Mylra
-						["coord"] = { 34.4, 32.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.4, 32.4, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
@@ -314,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42197, {	-- Champion: Duke Hydraxis
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
 						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
-						["coord"] = { 29.6, 34.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 29.6, 34.0, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(609),	-- Duke Hydraxis
 						},
@@ -322,33 +321,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42141, {	-- Summoner Morn
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42142, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42141 },	-- Summoner Morn
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(41741, {	-- Troops in the Field
 						["sourceQuests"] = { 42142 },	-- Recruiting the Troops
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(41740, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 41741 },	-- Troops in the Field
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					-- Chap 1
 					q(42184, {	-- Mission: Elemental Diplomacy
 						["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42977, {	-- Servant of the Windseeker
 						["sourceQuests"] = { 42184 },	-- Mission: Elemental Diplomacy
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(43002, {	-- Blessed Blade of the Windseeker
 						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
@@ -364,7 +363,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41770, {	-- The Skies Above
 						["sourceQuests"] = { 43002 },	-- Blessed Blade of the Windseeker
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(41771, {	-- Recharging the Blade
 						["sourceQuests"] = { 41770 },	-- The Skies Above
@@ -397,7 +396,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41742, {	-- Champion: Celestos
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
-						["coord"] = { 28.2, 45.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 28.2, 45.0, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(610),	-- Consular Celestos
 						},
@@ -405,7 +404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41743, {	-- Champion: Nobundo
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
-						["coord"] = { 30.2, 51.6, THE_HEART_Of_AZEROTH },
+						["coord"] = { 30.2, 51.6, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(611),	-- Farseer Nobundo
 						},
@@ -414,30 +413,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(44465, {	-- Recruiting Earthcallers
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.4, THE_HEART_OF_AZEROTH },
 					}),
 					q(42986, {	-- Enemies of Air
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.4, THE_HEART_OF_AZEROTH },
 					}),
 					q(42996, {	-- The Maelstrom Pillar: Air
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.4, THE_HEART_OF_AZEROTH },
 					}),
 					q(42983, {	-- Mistral Essence
 						["sourceQuests"] = { 42996 },	-- The Maelstrom Pillar: Air
 						["provider"] = { "n", 109464 },	-- Elementalist Janai
-						["coord"] = { 29.4, 77.9, THE_HEART_Of_AZEROTH },
+						["coord"] = { 29.4, 77.9, THE_HEART_OF_AZEROTH },
 						["maps"] = { 737 },	-- The Vortex Pinnacle (Scenario Map)
 						["groups"] = { i(138994) },	-- Mistral Essence (QI!)
 					}),
 					q(42984, {	-- Eye of Azshara: The Scepter of Storms
 						["sourceQuests"] = { 42983 },	-- Mistral Essence
 						["provider"] = { "n", 109464 },	-- Elementalist Janai
-						["coord"] = { 29.4, 77.9, THE_HEART_Of_AZEROTH },
+						["coord"] = { 29.4, 77.9, THE_HEART_OF_AZEROTH },
 						["maps"] = { 713 },	-- Eye of Azshara
+						["groups"] = { i(138995) },	-- Scepter of Storms (QI!)
 					}),
 					q(42200, {	-- Mission: Investigating Deepholm
 						["sourceQuests"] = {
@@ -445,12 +445,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42984,	-- Eye of Azshara: The Scepter of Storms
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(41775, {	-- The Great Stonemother
 						["sourceQuests"] = { 42200 },	-- Mission: Investigating Deepholm
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42068, {	-- The Return of Twilight
 						["sourceQuests"] = { 41775 },	-- The Great Stonemother
@@ -466,13 +466,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42068 },	-- The Return of Twilight
 						["provider"] = { "n", 106001 },	-- Muln Earthfury
 						["coord"] = { 64.0, 70.5, DEEPHOLM },
+						["groups"] = {
+							o(249406, {	-- The Master's Journal pt. 1
+								["coord"] = { 64.0, 75.1, DEEPHOLM },
+								["groups"] = { i(136791) },	-- The Master's Journal pt. 1 (QI!)
+							}),
+							o(249407, {	-- The Master's Journal pt. 2
+								["coord"] = { 61.7, 72.0, DEEPHOLM },
+								["groups"] = { i(136792) },	-- The Master's Journal pt. 2 (QI!)
+							}),
+							o(249408, {	-- The Master's Journal pt. 3
+								["coord"] = { 62.4, 76.0, DEEPHOLM },
+								["groups"] = { i(136793) },	-- The Master's Journal pt. 3 (QI!)
+							}),
+						},
 					}),
 					q(41898, {	-- Unleashing the Elements
 						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["provider"] = { "n", 106001 },	-- Muln Earthfury (mobileNPC)
 						["maps"] = { DEEPHOLM },
 					}),
 					q(41899, {	-- Held Captive!
@@ -480,7 +494,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
-						["provider"] = { "n", 106001 },	-- Muln Earthfury
+						["provider"] = { "n", 106001 },	-- Muln Earthfury (mobileNPC)
 						["maps"] = { DEEPHOLM },
 					}),
 					q(42065, {	-- The Twilight Master
@@ -502,7 +516,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41746, {	-- Champion: Muln Earthfury
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
-						["coord"] = { 32.0, 43.8, THE_HEART_Of_AZEROTH },
+						["coord"] = { 32.0, 43.8, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(614),	-- Muln Earthfury
 						},
@@ -510,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41747, {	-- Champion: Avalanchion
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
-						["coord"] = { 34.6, 34.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.6, 34.0, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
@@ -519,22 +533,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42208, {	-- Return to the Firelands
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42988, {	-- Worldmender
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42997, {	-- The Maelstrom Pillar: Earth
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.3, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.3, THE_HEART_OF_AZEROTH },
 					}),
 					q(42989, {	-- Ma'haat the Indomitable
 						["sourceQuests"] = { 42997 },	-- The Maelstrom Pillar: Earth
 						["provider"] = { "n", 109464 },	-- Elementalist Janai
-						["coord"] = { 29.4, 77.8, DEEPHOLM },
+						["coord"] = { 29.4, 77.8, THE_HEART_OF_AZEROTH },
 					}),
 					q(42995, {	-- A Taste For Blood
 						["sourceQuests"] = { 42989 },	-- Ma'haat the Indomitable
@@ -555,12 +569,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 42470 },	-- Ma'haat the Indomitable
 						["coord"] = { 56.9, 14.2, DEEPHOLM },
+						["groups"] = { i(138997) },	-- Egg of Gaiath (QI!)
 					}),
 					q(42990, {	-- Neltharion's Lair: The Earthen Amulet
 						["sourceQuests"] = { 43003 },	-- Return to Janai
 						["provider"] = { "n", 109464 },	-- Elementalist Janai
-						["coord"] = {29.4, 77.8, DEEPHOLM },
+						["coord"] = {29.4, 77.8, THE_HEART_OF_AZEROTH },
 						["maps"] = { 731 },	-- Neltharion's Lair
+						["groups"] = { i(138999) },	-- Earthen Amulet (QI!)
 					}),
 					q(41772, {	-- Ascendant of Flames
 						["sourceQuests"] = {
@@ -568,18 +584,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42990,	-- Neltharion's Lair: The Earthen Amulet
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.0, THE_HEART_OF_AZEROTH },
 						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },
 					}),
 					q(41773, {	-- The Firelord's Command
 						["sourceQuests"] = { 41772 },	-- Ascendant of Flames
 						["provider"] = { "n", 105055 },	-- Baron Scaldius
-						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
+						["coord"] = { 27.0, 82.2, THE_HEART_OF_AZEROTH_FIRELANDS },
+						["groups"] = { i(136535) },	-- Pyroth's Molten Core (QI!)
 					}),
 					q(41934, {	-- The Brand of Damnation
 						["sourceQuests"] = { 41773 },	-- The Firelord's Command
 						["provider"] = { "n", 105120 },	-- Lord Smolderon
-						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
+						["coord"] = { 49.2, 29.7, THE_HEART_OF_AZEROTH_FIRELANDS },
 						["groups"] = {
 							o(248868, {	-- Emberscar, Brand of Damnation
 								["coord"] = { 21.5, 36.2, THE_HEART_OF_AZEROTH_FIRELANDS },
@@ -590,7 +607,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41888, {	-- Allegiance of Flame
 						["sourceQuests"] = { 41934 },	-- The Brand of Damnation
 						["provider"] = { "n", 105594 },	-- Lord Smolderon
-						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
+						["coord"] = { 49.2, 29.7, THE_HEART_OF_AZEROTH_FIRELANDS },
 						["groups"] = {
 							i(139698),	-- Farseer's Harness
 							title(336),	-- Farseer <Name>
@@ -599,7 +616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41744, {	-- Champion: Rehgar Earthfury
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 106517 },	-- Rehgar Earthfury <Hero of the Storm>
-						["coord"] = { 31.4, 57.8, THE_HEART_Of_AZEROTH },
+						["coord"] = { 31.4, 57.8, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(612),	-- Rehgar Earthfury
 						},
@@ -607,7 +624,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(41745, {	-- Champion: Scaldius
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 106649 },	-- Baron Scaldius <Emissary of the Firelord>
-						["coord"] = { 29.8, 57.6, THE_HEART_Of_AZEROTH },
+						["coord"] = { 29.8, 57.6, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(613),	-- Baron Scaldius
 						},
@@ -615,7 +632,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(43418, {	-- A Hero's Weapon
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 110495 },	-- Farseer Nobundo
-						["coord"] = { 35.0, 46.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 35.0, 46.0, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							artifact(676),	-- The Fist of Ra-den
 							-- artifact(676),	-- The Highkeeper's Ward
@@ -629,14 +646,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45995, {	-- An Urgent Warning
 						["sourceQuest"] = 43418,	-- A Hero's Weapon
 						["provider"] = { "n", 118427 },	-- Injured Earthcaller
-						["coord"] = { 31.0, 51.2, THE_HEART_Of_AZEROTH },
+						["coord"] = { 31.0, 51.2, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(45996, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45995,	-- An Urgent Warning
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.0, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					--
@@ -646,17 +663,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							-- #IF AFTER 7.2.0
 							43418,	-- A Hero's Weapon
 							-- #ELSE
-							--,	-- Investigate the Broken Shore
+							-- ,	-- Investigate the Broken Shore
 							-- #ENDIF
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.0, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45706, {	-- The Power of Thousands
 						["sourceQuests"] = { 45652 },	-- A "Humble" Request
 						["provider"] = { "n", 117482 },	-- Magatha Grimtotem
-						["coord"] = { 35.4, 76.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 35.4, 76.0, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45724, {	-- Snakes and Stones
@@ -692,8 +709,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(45763, {	-- Demonic Disruption
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
-						["provider"] = { "n", 96528 },	-- Farseer Nobundo
-						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
+						["provider"] = { "n", 106519 },	-- Farseer Nobundo
+						["coord"] = { 30.4, 51.8, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45765, {	-- Brothers and Sisters
@@ -739,13 +756,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(46258, {	-- The Calm After the Storm
 						["sourceQuests"] = { 45769 },	-- Conflagration
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo
-						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
+						["coord"] = { 30.4, 51.8, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46057, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Magatha Grimtotem
 						["sourceQuests"] = { 46258 },	-- The Calm After the Storm
 						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
-						["coord"] = { 34.2, 30.6, THE_HEART_Of_AZEROTH },
+						["coord"] = { 34.2, 30.6, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							follower(992),	-- Magatha Grimtotem
 						},
@@ -762,7 +779,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(46792, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Gathering of the Storms
 						["sourceQuests"] = { 46791 },	-- Carried On the Wind
 						["provider"] = { "n", 106521 },	-- Consular Celestos
-						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 28.4, 45.0, THE_HEART_OF_AZEROTH },
 						["maps"] = { 857 },	-- Throne of the Four Winds (Scenario Map)
 						["groups"] = {
 							mount(231442),	-- Farseer's Raging Tempest (MOUNT!)
@@ -771,24 +788,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					-- Misc
 					q(43886, {	-- Speaking to the Wind
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
-						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 32.4, 49.4, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46147, {	-- Knowledge is Power
 						["sourceQuest"] = 43886,	-- Speaking to the Wind
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
-						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 32.4, 49.4, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46158, {	-- Furthering Knowledge
 						["sourceQuest"] = 46147,	-- Knowledge is Power
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
-						["coord"] = { 32.4, 49.4, THE_HEART_Of_AZEROTH },
+						["coord"] = { 32.4, 49.4, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(44101, {	-- Supply Dropped
 						["provider"] = { "o", 254010 },	-- Earthen Ring Supplies
-						["coord"] = { 25.4, 41.7, THE_HEART_Of_AZEROTH },
+						["coord"] = { 25.4, 41.7, THE_HEART_OF_AZEROTH },
 						["repeatable"] = true,
 						["groups"] = {
 							i(139879),	-- Crate of Champion Equipment
@@ -798,13 +815,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(46781, {	-- Further Advancement
 						["sourceQuests"] = { 46057 },	-- Champion: Magatha Grimtotem
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
-						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["coord"] = { 33.0, 60.0, THE_HEART_OF_AZEROTH },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 				n(SPECIAL, {
 					n(103004, {	-- Puzzlemaster Lo <The Earthen Ring>
 						["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+						["coord"] = { 25.2, 50.2, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							q(41071, {	-- Puzzle 01 Solved
 								["name"] = "Puzzle 1 Solved",
@@ -821,7 +839,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							q(41075, {	-- Puzzle 05 Solved
 								["name"] = "Puzzle 5 Solved",
 								["groups"] = {
-									i(140632),	-- Lava Fountain (TOY!)
+									o(247043, {	-- Maelstrom Chest
+										["coord"] = { 25.2, 51.3, THE_HEART_OF_AZEROTH },
+										["questID"] = 41116,	-- 7.0 Artifacts - Shaman - Puzzle Room - Treasure - DGK
+										["groups"] = { i(140632) },	-- Lava Fountain (TOY!)
+									}),
 								},
 							}),
 						},
@@ -830,20 +852,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(44206, {	-- The Ascended
 							["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
 							["provider"] = { "n", 109829 },	-- Alexor
-							["coord"] = { 31.6, 51.6, THE_HEART_Of_AZEROTH },
+							["coord"] = { 31.6, 51.6, THE_HEART_OF_AZEROTH },
 						}),
 					}),
 					n(114064, {	-- Snowfang
 						["description"] = "Defeating this NPC in a pet battle awards the pet.",
-						["groups"] = {
-							i(141530),	-- Snowfang (PET!)
-						},
+						["groups"] = { i(141530) },	-- Snowfang (PET!)
 					}),
 					gt(49, {	-- Spirit Walk
 						q(44205, {	-- Shape Your Fate
 							["sourceQuests"] = { 41740 },	-- Tech It Up A Notch
 							["provider"] = { "n", 112299 },	-- Bath'rah the Windwatcher
-							["coord"] = { 31.1, 35.1, THE_HEART_Of_AZEROTH },
+							["coord"] = { 31.1, 35.1, THE_HEART_OF_AZEROTH },
 						}),
 					})
 				}),
@@ -937,7 +957,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
-			q(41116),	-- 7.0 Artifacts - Shaman - Puzzle Room - Treasure - DGK - looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
 			q(44653),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 			q(44654),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
 			q(38275),	-- Tracking Quest: Return to Firelands 1 Mission Completed - completed the "Return to the Firelands" mission

@@ -44,33 +44,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			--
 			m(AZJ_KAHET_LOWER, {
 				explorationHeader({
-					--visit_exploration(15153,{coord={53.8,67.1,AZJ_KAHET_LOWER}}),	-- Salien Gutters
-					--visit_exploration(14769,{coord={62.3,90.3,AZJ_KAHET_LOWER}}),	-- The Maddening Deep
-					--visit_exploration(14765,{coord={50.0,58.8,AZJ_KAHET_LOWER}}),	-- Twitching Gorge
-					--visit_exploration(14766,{coord={43.6,67.4,AZJ_KAHET_LOWER}}),	-- Wildcamp Ul'ar
+					-- visit_exploration(15153,{coord={53.8,67.1,AZJ_KAHET_LOWER}}),	-- Salien Gutters
+					-- visit_exploration(14769,{coord={62.3,90.3,AZJ_KAHET_LOWER}}),	-- The Maddening Deep
+					-- visit_exploration(14765,{coord={50.0,58.8,AZJ_KAHET_LOWER}}),	-- Twitching Gorge
+					-- visit_exploration(14766,{coord={43.6,67.4,AZJ_KAHET_LOWER}}),	-- Wildcamp Ul'ar
 				}),
 			}),
 			m(NERUBAR, {
 				explorationHeader({
-					--visit_exploration(15358,{coord={82.6,45.3,NERUBAR}}),	-- Discordant Sieve
-					--visit_exploration(14764,{coord={78.0,30.1,NERUBAR}}),	-- Eastern Span
-					--visit_exploration(15346,{coord={55.0,8.4,NERUBAR}}),	-- The Hanging Gateway
+					-- visit_exploration(15358,{coord={82.6,45.3,NERUBAR}}),	-- Discordant Sieve
+					-- visit_exploration(14764,{coord={78.0,30.1,NERUBAR}}),	-- Eastern Span
+					-- visit_exploration(15346,{coord={55.0,8.4,NERUBAR}}),	-- The Hanging Gateway
 					visit_exploration(14809,{coord={69.8,26.3,NERUBAR}}),	-- High Hollows
 					visit_exploration(15330,{coord={24.1,21.9,NERUBAR}}),	-- Old Sacrificial Pit
 					visit_exploration(14948,{coord={70.7,64.6,NERUBAR}}),	-- Pillar-nest Xesh
-					--visit_exploration(15153,{coord={66.0,17.4,NERUBAR}}),	-- Salien Gutters
-					--visit_exploration(14901,{coord={47.0,76.8,NERUBAR}}),	-- The Blood Pits
+					-- visit_exploration(15153,{coord={66.0,17.4,NERUBAR}}),	-- Salien Gutters
+					-- visit_exploration(14901,{coord={47.0,76.8,NERUBAR}}),	-- The Blood Pits
 					visit_exploration(14794,{coord={69.2,26.6,NERUBAR}}),	-- The Burrows
 					visit_exploration(15134,{coord={49.4,41.7,NERUBAR}}),	-- The Burrows
-					--visit_exploration(14793,{coord={38.7,18.8,NERUBAR}}),	-- The Skeins
+					-- visit_exploration(14793,{coord={38.7,18.8,NERUBAR}}),	-- The Skeins
 					visit_exploration(15517,{coord={55.1,43.8,NERUBAR}}),	-- The Royal Apothecary
 					visit_exploration(14791,{coord={64.8,32.5,NERUBAR}}),	-- Umbral Bazaar
-					--visit_exploration(14765,{coord={48.0,8.2,NERUBAR}}),	-- Twitching Gorge
+					-- visit_exploration(14765,{coord={48.0,8.2,NERUBAR}}),	-- Twitching Gorge
 				}),
 			}),
 			m(NERUBAR_LOWER, {
 				explorationHeader({
-					--visit_exploration(15358,{coord={78.5,57.3,NERUBAR_LOWER}}),	-- Discordant Sieve
+					-- visit_exploration(15358,{coord={78.5,57.3,NERUBAR_LOWER}}),	-- Discordant Sieve
 				}),
 			}),
 		}),

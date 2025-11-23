@@ -2,7 +2,7 @@
 --     B L A C K   M A R K E T   A U C T I O N   H O U S E       --
 -------------------------------------------------------------------
 -- Sources:
---   8.2.5: https://www.wowhead.com/news/new-black-market-auction-house-listings-in-8-2-5-revealed-tusks-of-mannoroth-295182
+-- 8.2.5: https://www.wowhead.com/news/new-black-market-auction-house-listings-in-8-2-5-revealed-tusks-of-mannoroth-295182
 BLACK_MARKET_AUCTION_HOUSE = createHeader({
 	readable = "Black Market Auction House",
 	icon = [[~_.asset("Category_Blackmarket")]],
@@ -47,7 +47,7 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 	-- #endif
 	["groups"] = {
 		n(ARMOR, {
-			header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, { -- Ordos
+			header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, {	-- Ordos
 				-- Head
 				i(105804),	-- Aladya's Spiritfire Greathelm
 				i(105810),	-- Buc-Zakai Burning Hood

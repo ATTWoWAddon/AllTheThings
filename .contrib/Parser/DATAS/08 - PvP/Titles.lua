@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 }, ["collectible"] = false }, {
+root(ROOTS.PVP, pvp(filter(TITLES, sharedData({ ["timeline"] = { ADDED_3_0_3 }, ["collectible"] = false }, {
 	title(529, {	-- Battle Mender <Name>
 		["timeline"] = { ADDED_10_2_0 },
 	}),

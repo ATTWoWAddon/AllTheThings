@@ -1,14 +1,7 @@
-11.2.5.63906
-ach(61874),	-- The Unbound Tank
-ach(61875),	-- The Unbound Healer
-ach(61876),	-- The Unbound Damage Dealer
-ach(61877),	-- The Unbound Dungeon Master
 11.2.7.63642
 ach(42192),	-- Snowball Fight!
-ach(42299),	-- Visions of a Shadowed Sun
 ach(51753),	-- Azsuna Matata
 ach(61023),	-- [DNT] Exalted with a Dracthyr Player Faction
-ach(61498),	-- Ready for Midnight
 ach(61516),	-- Radiant Singer
 ach(61553),	-- Dynamic Flight Power - Second Wind (Granted in Script 101809)
 ach(61554),	-- Dynamic Flight Power - Aerial Halt (Granted in Script 101809)
@@ -22,7 +15,7 @@ ach(41291),	-- Mythic: Windrunner Spire
 ach(41293),	-- The Restless Heart kills (Normal Windrunner Spire) \\ [PH] Restless Heart kills (Normal Windrunner Spire)
 ach(41294),	-- The Restless Heart kills (Heroic Windrunner Spire) \\ [PH] Restless Heart kills (Heroic Windrunner Spire)
 ach(41295),	-- The Restless Heart kills (Mythic Windrunner Spire) \\ [PH] Restless Heart kills (Mythic Windrunner Spire)
-ach(41802),	-- Eversong Woods
+ach(41802),	-- Eversong In Reprise \\ Eversong Woods
 ach(41803),	-- For Zul'Aman! \\ Living Amani Legend
 ach(41804),	-- One Does Not Simply Walk Into Harandar \\ Harandar
 ach(41805),	-- Arator's Journey
@@ -33,7 +26,7 @@ ach(41962),	-- Mythic: Murder Row
 ach(42045),	-- Midnight
 ach(42117),	-- The War of Light and Shadow
 ach(42278),	-- The Empty Cradle \\ Day of the Titan
-ach(42283),	-- Azeroth Runs on Dundun
+ach(42283),	-- Abundance: Azeroth Runs on Dundun \\ Azeroth Runs on Dundun
 ach(60888),	-- Pushing My Buttons
 ach(60891),	-- The Crimson Rogue
 ach(61091),	-- Midnight Safari
@@ -129,7 +122,6 @@ ach(61565),	-- War Within Dungeon Hero
 ach(61566),	-- Glory of the War Within Hero
 ach(61567),	-- Midnight Dungeon Hero
 ach(61568),	-- Glory of the Midnight Hero
-ach(61569),	-- Fool Me Once...
 12.0.0.63854
 ach(61574),	-- Legends Never Die
 ach(61576),	-- Eversong Woods Glyph Hunter
@@ -201,7 +193,7 @@ ach(61660),	-- Ziekket kills (Heroic The Blinding Vale)
 ach(61661),	-- Ziekket kills (Mythic The Blinding Vale)
 ach(61678),	-- Midnight Superior
 ach(61679),	-- Midnight Epic
-ach(61681),	-- You Should See Him in a Crown
+ach(61681),	-- Abundance: You Should See Him in a Crown \\ You Should See Him in a Crown
 12.0.0.63967
 ach(61706),	-- Herald of the Goddess
 ach(61707),	-- Delver of the Depths: Midnight
@@ -221,16 +213,16 @@ ach(61720),	-- Midnight Delver
 ach(61721),	-- Midnight Delver II
 ach(61722),	-- Curio Enthusiast: Midnight
 ach(61723),	-- Curio Fanatic: Midnight
-ach(61724),	-- The Grudge Pit Stories NEED UPDATE
-ach(61725),	-- Parhelion Plaza Stories NEED UPDATE
-ach(61726),	-- Collegiate Calamity Stories NEED UPDATE
-ach(61727),	-- The Shadow Enclave Stories NEED UPDATE
-ach(61728),	-- The Darkway Stories NEED UPDATE
-ach(61729),	-- Atal'Aman Stories NEED UPDATE
-ach(61730),	-- Twilight Crypts Stories NEED UPDATE
-ach(61731),	-- The Gulf of Memory Stories NEED UPDATE
-ach(61732),	-- Sunkiller Sanctum Stories NEED UPDATE
-ach(61733),	-- Shadowguard Point Stories NEED UPDATE
+ach(61724),	-- The Grudge Pit Stories \\ The Grudge Pit Stories NEED UPDATE
+ach(61725),	-- Parhelion Plaza Stories \\ Parhelion Plaza Stories NEED UPDATE
+ach(61726),	-- Collegiate Calamity Stories \\ Collegiate Calamity Stories NEED UPDATE
+ach(61727),	-- The Shadow Enclave Stories \\ The Shadow Enclave Stories NEED UPDATE
+ach(61728),	-- The Darkway Stories \\ The Darkway Stories NEED UPDATE
+ach(61729),	-- Atal'Aman Stories \\ Atal'Aman Stories NEED UPDATE
+ach(61730),	-- Twilight Crypts Stories \\ Twilight Crypts Stories NEED UPDATE
+ach(61731),	-- The Gulf of Memory Stories \\ The Gulf of Memory Stories NEED UPDATE
+ach(61732),	-- Sunkiller Sanctum Stories \\ Sunkiller Sanctum Stories NEED UPDATE
+ach(61733),	-- Shadowguard Point Stories \\ Shadowguard Point Stories NEED UPDATE
 ach(61734),	-- Midnight Delves: Endgame
 ach(61739),	-- Sojourner of Harandar
 ach(61741),	-- Delve Loremaster: Midnight
@@ -299,9 +291,146 @@ ach(61899),	-- Sunkiller Sanctum Discoveries
 ach(61900),	-- Shadowguard Point Discoveries
 ach(61901),	-- Midnight: Leave No Treasure Unfound
 ach(61906),	-- Glory of the Midnight Delver
-ach(61910),	-- Hero of Murlocs
+ach(61910),	-- Mrglgrgl of Grglmrgl \\ Hero of Murlocs
 ach(61911),	-- Ready, Set, Snap!
 ach(61912),	-- Anchoring the Defense
 ach(61913),	-- A Singular Problem
 ach(61916),	-- Void Elf Demon Hunter
 ach(61917),	-- "Hold aggro, I got this"
+12.0.0.64124
+ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
+ach(61588),	-- Keystone Victor: Maisara Caverns
+ach(61589),	-- Keystone Victor: Nexus-Point Xenas
+ach(61590),	-- Keystone Victor: Windrunner Spire
+ach(61591),	-- Keystone Victor: Algeth'ar Academy
+ach(61592),	-- Keystone Victor: Pit of Saron
+ach(61593),	-- Keystone Victor: Seat of the Triumvirate
+ach(61594),	-- Keystone Victor: Skyreach
+ach(61922),	-- Ninety Percent is Good Enough
+ach(61936),	-- Aura Farming
+ach(61937),	-- Abundance: Artisan of Mausoloa
+ach(61938),	-- Abundance: Artisan of Loaknit
+ach(61939),	-- Abundance: Artisan of Floaret
+ach(61940),	-- Abundance: Artisan of Loanite
+ach(61941),	-- Abundance: Acolyte of a Glorious Entity
+ach(61942),	-- Heritage of the Haranir
+ach(61943),	-- Abundance: Prosperous Plentitude!
+ach(61953),	-- Putting in the Practice
+ach(61954),	-- Putting in the Practice
+ach(61955),	-- Putting in the Practice
+ach(61956),	-- Putting in the Practice
+ach(61957),	-- Sojourner of Eversong Woods \\ Sojourner of Eversong Woods (Midnight)
+ach(61958),	-- Focused Target
+ach(61959),	-- Focused Target
+ach(61960),	-- Treasures of Eversong Woods \\ Treasures of Eversong Woods (Midnight)
+ach(61961),	-- Runestone Rush
+12.0.0.64228
+ach(62057),	-- Midnight: The Highest Peaks
+ach(62058),	-- Hungry Hungry Hatchlings
+ach(62104),	-- Midnight Lore Hunter
+ach(62105),	-- Lysikas Would Be Proud
+ach(62106),	-- The Only Winning Move Is Not To Play
+ach(62107),	-- Mandatory Training
+ach(62108),	-- Training with Patience
+ach(62109),	-- Training with Patience
+ach(62110),	-- Loremaster of Midnight
+ach(62111),	-- Boots on the Ground: Arathi Basin
+ach(62112),	-- Boots on the Ground: Battle for Gilneas
+ach(62113),	-- Boots on the Ground: Silvershard Mines
+ach(62114),	-- Learning the Landscape: Arathi Basin
+ach(62115),	-- Learning the Landscape: Battle for Gilneas
+ach(62116),	-- Learning the Landscape: Silvershard Mines
+ach(62117),	-- Abyss Anglers: Boarhide Catch Sack \\ Abyss Anglers: Placeholder 1
+ach(62118),	-- Abyss Anglers: Amazardhide Catch Case \\ Abyss Anglers: Placeholder 2
+ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel \\ Abyss Anglers: Placeholder 3
+ach(62120),	-- Altar of Blessings: The Penitent Troll \\ Altar of Blessings: Placeholder 1
+ach(62121),	-- Altar of Blessings: Sacred Buffet Devotee \\ Altar of Blessings: Placeholder 2
+ach(62122),	-- Tallest Tree in the Forest
+ach(62125),	-- Treasures of Zul'Aman
+ach(62126),	-- Treasures of Voidstorm
+12.0.0.64339
+ach(62130),	-- The Ultimate Predator
+ach(62133),	-- Thrill of the Chase
+ach(62134),	-- The Deadliest of Prey
+ach(62135),	-- Now It's A Party
+ach(62136),	-- I'm Good At What I Do
+ach(62137),	-- I'm Not Trapped In Here With You
+ach(62138),	-- You're Trapped In Here With Me
+ach(62139),	-- Midnight Hunter
+ach(62140),	-- Kitchen Nightmare
+ach(62141),	-- Look, I'm Just Trying To Fish Here
+ach(62142),	-- I Didn't Hear No Bell
+ach(62143),	-- Trapped In The Middle With You
+ach(62145),	-- Dungeon Unlock: Windrunner Spire
+ach(62146),	-- Dungeon Unlock: Murder Row
+ach(62147),	-- Dungeon Unlock: Den of Nalorakk
+ach(62148),	-- Dungeon Unlock: Maisara Caverns
+ach(62149),	-- Dungeon Unlock: The Blinding Vale
+ach(62150),	-- Dungeon Unlock: Nexus-Point Xenas
+ach(62151),	-- Dungeon Unlock: Voidscar Arena
+ach(62152),	-- Dungeon Unlock: Magisters' Terrace
+ach(62185),	-- Ever Painting
+ach(62186),	-- The Party Must Go On
+ach(62187),	-- Grand Magister's Sommelier
+ach(62188),	-- More Than Just Their Roots
+ach(62189),	-- Mind-Seeker
+ach(62190),	-- Life of the Party
+ach(62191),	-- Call of the Light
+ach(62192),	-- Midnight Diplomat
+ach(62193),	-- Midnight Dungeon Damage Dealer
+ach(62194),	-- Midnight Dungeon Healer
+ach(62195),	-- Midnight Dungeon Tank
+ach(62196),	-- Midnight Dungeoneer
+ach(62199),	-- Put a Pin in It
+ach(62200),	-- Gnome Alone
+ach(62201),	-- The Frog and the Princesses
+ach(62202),	-- Spiritpaw Marathon
+ach(62206),	-- Midnight Delver III
+ach(62207),	-- Abyss Anglers: Reinforced Joints
+ach(62208),	-- Abyss Anglers: Depth Grease
+ach(62209),	-- Abyss Anglers: Pahk Trench Fins
+ach(62210),	-- Abyss Anglers: Depthdiver's Used Tank
+ach(62211),	-- Abyss Anglers: Fathom-Tested Tank
+ach(62212),	-- Abyss Anglers: Nalorakk's Breath Tank
+ach(62213),	-- Abyss Anglers: Shallows Net
+ach(62214),	-- Abyss Anglers: Triple-Thread Net
+ach(62215),	-- Abyss Anglers: Heavy Harpoon Cannon
+ach(62216),	-- Abyss Anglers: Hollowcore Harpoon Turret
+ach(62217),	-- Abyss Anglers: Idol of the Depths
+ach(62218),	-- Abyss Anglers: Even The Best
+ach(62219),	-- Abyss Anglers: No Sea Can Hold Me
+ach(62220),	-- Abyss Anglers: Proper Procedure
+ach(62221),	-- Abyss Anglers: Fresh Depth Tech
+12.0.0.64499
+ach(62144),	-- Prey: Mad Magisters (Hard)
+ach(62153),	-- Prey: Insane Inventors (Hard)
+ach(62154),	-- Prey: A Different Kind of Void (Hard)
+ach(62155),	-- Prey: Ethereal Assassins (Hard)
+ach(62156),	-- Prey: Anger Management (Hard)
+ach(62157),	-- Prey: Sadistic Shamans (Hard)
+ach(62158),	-- Prey: The Fallen Farstriders (Hard)
+ach(62159),	-- Prey: Bloody Green Thumbs (Hard)
+ach(62160),	-- Prey: Blinded By The Light (Hard)
+ach(62161),	-- Prey: Outsmarting the Schemers (Hard)
+ach(62162),	-- Prey: Dominating the Void (Hard)
+ach(62163),	-- Prey: Chasing Death (Hard)
+ach(62164),	-- Prey: No Rest for the Wretched (Hard)
+ach(62165),	-- Prey: A Thorn in the Side (Hard)
+ach(62166),	-- Prey: Breaking the Blade (Hard)
+ach(62167),	-- Prey: Mad Magisters (Nightmare)
+ach(62168),	-- Prey: Insane Inventors (Nightmare)
+ach(62169),	-- Prey: A Different Kind of Void (Nightmare)
+ach(62173),	-- Prey: Ethereal Assassins (Nightmare)
+ach(62174),	-- Prey: Anger Management (Nightmare)
+ach(62175),	-- Prey: Sadistic Shamans (Nightmare)
+ach(62176),	-- Prey: The Fallen Farstriders (Nightmare)
+ach(62177),	-- Prey: Bloody Green Thumbs (Nightmare)
+ach(62178),	-- Prey: Blinded By The Light (Nightmare)
+ach(62179),	-- Prey: Outsmarting the Schemers (Nightmare)
+ach(62180),	-- Prey: Dominating the Void (Nightmare)
+ach(62181),	-- Prey: Chasing Death (Nightmare)
+ach(62182),	-- Prey: No Rest for the Wretched (Nightmare)
+ach(62183),	-- Prey: A Thorn in the Side (Nightmare)
+ach(62184),	-- Prey: Breaking the Blade Nightmare)
+ach(62222),	-- Abyss Anglers: The Amani Way
+ach(62223),	-- Alchemy-on-Demand

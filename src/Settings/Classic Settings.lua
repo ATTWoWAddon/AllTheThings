@@ -615,7 +615,7 @@ ATTSettingsPanelMixin = {
 		-- Create the header label
 		local headerLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 		Mixin(headerLabel, ATTSettingsObjectMixin);
-		--self:RegisterObject(headerLabel);
+		-- self:RegisterObject(headerLabel);
 		headerLabel:SetJustifyH("LEFT")
 		headerLabel:SetText(text)
 		headerLabel:SetWordWrap(false)

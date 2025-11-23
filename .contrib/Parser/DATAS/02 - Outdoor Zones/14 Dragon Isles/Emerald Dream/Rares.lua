@@ -226,9 +226,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Can randomly spawn in zone.",
 				["coords"] = {
 					{ 26.3, 28.5, EMERALD_DREAM },
-					--{ 65.4, 43.5, EMERALD_DREAM },
-					--{ 67.5, 66.2, EMERALD_DREAM },
-					--{ 41.5, 31.1, EMERALD_DREAM },
+					-- { 65.4, 43.5, EMERALD_DREAM },
+					-- { 67.5, 66.2, EMERALD_DREAM },
+					-- { 41.5, 31.1, EMERALD_DREAM },
 				},
 				["groups"] = {
 					i(208373),	-- Band of Bated Breath

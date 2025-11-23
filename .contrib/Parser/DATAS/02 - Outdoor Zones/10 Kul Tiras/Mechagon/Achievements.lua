@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13475, {	-- Junkyard Scavenger
-				--i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Gnomish Cog Stack (DECOR!)
+				-- i(XXXXXX, {["timeline"] = { ADDED_11_2_7 }}),	-- Gnomish Cog Stack (DECOR!)
 			}),
 			ach(13476, {	-- Junkyard Tinkerer
 				["_noautomation"] = true,

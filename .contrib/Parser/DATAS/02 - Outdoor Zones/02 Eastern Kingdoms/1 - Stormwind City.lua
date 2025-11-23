@@ -557,38 +557,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					i(34864, {	-- Baby Crocolisk
 						["timeline"] = { ADDED_2_4_0 },
 					}),
-					i(67414, {	-- Bag of Shiny Things
-						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							26488,	-- Big Gulp
-							26420,	-- Diggin' For Worms
-							26414,	-- Hitting a Walleye
-							26442,	-- Rock Lobster
-							26536,	-- Thunder Falls
-						},
-						["provider"] = { "n", 5494 },	-- Catherine Leland
-						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = {
-							i(44983, {	-- Strand Crawler (PET!)
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["timeline"] = { ADDED_2_4_0 },
-							}),
-							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-							i(67410, {	-- Very Unlucky Rock
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-							i(67388, {	-- String of Alligator Teeth
-								["timeline"] = { ADDED_4_0_1 },
-							}),
-						},
-					}),
 				}),
 				prof(HERBALISM, {
 					n(5566, {	-- Tannysa <Herbalism Trainer>
@@ -1265,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1665, {	-- Bartleby's Mug
 					["sourceQuest"] = 1640,	-- Beat Bartleby
 					["altQuests"] = {
-						--1665,	-- Bartleby's Mug
+						-- 1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
 						9582,	-- Strength of One
 						-- #endif
@@ -1290,7 +1258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE CATA
 					["groups"] = {
 						recipe(71),		-- Defensive Stance
-						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 					},
 					-- #endif
@@ -3206,6 +3174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					text = {
 						en = "Speak to Brother Romulus",
 						es = "Habla con el Hermano Romulus",
+						mx = "Habla con el Hermano Romulus",
 						de = "Sprich mit Bruder Romulus",
 						fr = "Parlez à Frère Romulus",
 						it = "Parla con Fratello Romulus",
@@ -3338,7 +3307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["sourceQuest"] = 42782,	-- To Be Prepared
-				--	["altQuests"] = { 43806 },	-- Scenario Skip (A)
+					-- ["altQuests"] = { 43806 },	-- Scenario Skip (A)
 					["qg"] = 108916,	-- Knight Dameron
 					["coord"] = { 19.0, 26.1, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
@@ -4066,7 +4035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					-- #if BEFORE 4.0.1
 					["groups"] = {
-						--recipe(7328),	-- Redemption [Rank 1]
+						-- recipe(7328),	-- Redemption [Rank 1]
 					},
 					-- #endif
 				}),
@@ -4633,7 +4602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
-					--["provider"] = { "o",  },	-- Summoning Circle
+					-- ["provider"] = { "o",  },	-- Summoning Circle
 					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 204905, 1 },	-- Ominous Tome

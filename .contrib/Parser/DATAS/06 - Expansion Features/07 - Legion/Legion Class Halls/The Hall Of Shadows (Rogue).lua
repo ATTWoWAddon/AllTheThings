@@ -61,10 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 				}),
-				n(FOLLOWERS, bubbleDownSelf({
-					["collectible"] = false,
-					["u"] = UNLEARNABLE,	-- Temporary troops
-				}, {
+				n_TrainingFollowers({
 					follower(907),	-- Crew of Pirates
 					follower(917),	-- Crew of Pirates
 					follower(918),	-- Crew of Pirates
@@ -85,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					follower(914),	-- Uncrowned Duelists
 					follower(915),	-- Uncrowned Duelists
 					follower(916),	-- Uncrowned Duelists
-				})),
+				}),
 				n(QUESTS, {
 					-- Intro
 					q(40832, {	-- Call of The Uncrowned
@@ -107,7 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(44034, {	-- Another Worthy Blade
-						["sourceQuest"] = 40840,	-- A Worthy Blade
+						["sourceQuest"] = 40997,	-- Lethal Efficiency
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
@@ -126,6 +123,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+							["maps"] = { BLASTED_LANDS },
 							["groups"] = {
 								i(173531, {	-- Blasted Lands Scroll (QI!)
 									["timeline"] = { ADDED_9_0_1 },
@@ -142,6 +140,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+							["maps"] = { DUSKWOOD },
 							["groups"] = {
 								i(173530, {	-- Duskwood Scroll (QI!)
 									["timeline"] = { ADDED_9_0_1 },
@@ -154,11 +153,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								42501,	-- Finishing the Job
 								42502,	-- No Sanctuary
 							},
-							["maps"] = { DUSKWOOD },
+							["maps"] = { BLASTED_LANDS, DUSKWOOD },
 						}),
 						q(42539, {	-- Cloak and Dagger
 							["sourceQuest"] = 42503,	-- Codebreaker
-							["maps"] = { DUSKWOOD },
+							["maps"] = { BLASTED_LANDS, DUSKWOOD },
 							["groups"] = {
 								o(250678, {	-- Blood of the Innocent
 									["coord"] = { 73.6, 43.7, DUSKWOOD },
@@ -185,17 +184,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								i(128870, {	-- The Kingslayers [Main Hand]
-									["ItemAppearanceModifierID"] = 9,
+								o(251107, {	-- The Kingslayers
+									["coord"] = { 82.8, 28.0, STORMWIND_CITY },
 									["groups"] = {
-										artifact(228),	-- The Kingslayers [Main Hand]
+										i(128870, {	-- The Kingslayers [Main Hand]
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = { artifact(228) },	-- The Kingslayers [Main Hand]
+										}),
 									},
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(228),	-- The Kingslayers [Off Hand]
-									},
+									["groups"] = { artifact(228) },	-- The Kingslayers [Off Hand]
 								}),
 							},
 						}),
@@ -208,15 +208,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = {
 								i(128870, {	-- The Kingslayers [Main Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(228),	-- The Kingslayers [Main Hand]
-									},
+									["groups"] = { artifact(228) },	-- The Kingslayers [Main Hand]
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(228),	-- The Kingslayers [Off Hand]
-									},
+									["groups"] = { artifact(228) },	-- The Kingslayers [Off Hand]
 								}),
 							},
 						}),
@@ -352,8 +348,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							40950,	-- Honoring Success
 							-- #ENDIF
 						},
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
+						["qgs"] = {
+							101513,	-- Lord Jorach Ravenholdt
+							102594,	-- Marin Noggenfogger
+						},
+						["coords"] = {
+							{ 31.6, 66.4, THE_HALL_OF_SHADOWS },
+							{ 41.3, 78.0, THE_HALL_OF_SHADOWS },
+						},
 					}),
 					q(40997, {	-- Lethal Efficiency
 						["sourceQuest"] = 40996,	-- Delegation
@@ -381,7 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
-						["sourceQuest"] = 43261,	-- Champion: Vanessa VanCleef
+						["sourceQuest"] = 42139,	-- Rise, Champions
 						["provider"] = { "n", 94141 },	-- Garona Halforcen
 						["coord"] = { 42.4, 74.7, THE_HALL_OF_SHADOWS },
 						["groups"] = {
@@ -413,6 +415,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43015,	-- What Winstone Suggests
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
+						["groups"] = {
+							o(253072, {	-- SI:7 Missive
+								["coord"] = { 81.4, 70, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(140278) },	-- SI:7 Missive (QI!)
+							}),
+						},
 					}),
 					q(43829, {	-- Spy vs. Spy
 						["sourceQuest"] = 43958,	-- A Body of Evidence
@@ -528,8 +536,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
 						["groups"] = {
-							i(140811),	-- Gallywix's Safe Key (QI!)
-							i(140814),	-- Love Potion #6 (QI!)
+							o(254254, {	-- Gallywix's Key Ring
+								["coord"] = { 20.1, 59.0, AZSHARA },
+								["groups"] = { 	i(140811) },	-- Gallywix's Safe Key (QI!)
+							}),
+							o(254255, {	-- Gallywix's Safe
+								["coord"] = { 19.9, 56.1, AZSHARA },
+								["groups"] = { 	i(140814) },	-- Love Potion #6 (QI!)
+							}),
 						},
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
@@ -551,7 +565,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42684,	-- Throwing SI:7 Off the Trail
 							43468,	-- Blood for the Wolfe
 							42730,	-- Noggenfogger's Reasonable Request
+							91620,	-- Noggenfogger's Reasonable Request (Remix)
 						},
+						["sourceQuestNumRequired"] = 3,
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
@@ -605,9 +621,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(891),	-- Valeera Sanguinar
-						},
+						["groups"] = { follower(891) },	-- Valeera Sanguinar
 					}),
 					-- Chap 3
 					q(43470, {	-- Pruning the Garden
@@ -679,7 +693,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(44215, {	-- One More Thing...
-						["sourceQuest"] = 37689,	-- The Imposter
+						["sourceQuests"] = {
+							43724,	-- Champion: Master Mathias Shaw
+							43723,	-- Champion: Taoshi
+						},
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
@@ -705,7 +722,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["isBreadcrumb"] = true,
 					}),
 					q(45992, {	-- Investigate the Broken Shore
-						["sourceQuest"] = 45991,	--  An Urgent Warning
+						["sourceQuest"] = 45991,	-- An Urgent Warning
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
@@ -739,26 +756,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
-					q(44758, {	-- What's the Cache? (A)
+					q(44758, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- What's the Cache? (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
-						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
 						},
-					}),
-					q(46323, {	-- What's the Cache? (H)
+					})),
+					q(46323, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- What's the Cache? (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
-						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
 						},
-					}),
+					})),
 					q(45835, {	-- False Orders (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 						["provider"] = { "n", 119821 },	-- Tess Graymane
@@ -774,7 +789,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["races"] = HORDE_ONLY,
 					}),
 					q(45073, {	-- Loot and Plunder!
-						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["sourceQuests"] = {
+							45833,	-- The Pirate's Bay (A)
+							46322,	-- The Pirate's Bay (H)
+						},
 						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["coord"] = { 57.7, 63.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
@@ -858,26 +876,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
-					q(46058, {	-- Champion: Lilian Voss
+					q(46058, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Lilian Voss
 						["sourceQuest"] = 46827,	-- Meld Into the Shadows
 						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
-						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
-					}),
-					q(46059, {	-- Champion: Tess Greymane
+					})),
+					q(46059, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Tess Greymane
 						["sourceQuest"] = 46260,	-- Meld Into the Shadows
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
-						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
-					}),
+					})),
 					q(46103, {	-- Dread Infiltrators
 						["sourceQuests"] = {
 							46058,	-- Champion: Lilian Voss
@@ -907,9 +923,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					})),
 					-- Side Quest
 					q(47591, {	-- Wanna Buy a Lamp?
-						["provider"] = { "n", 103792 },	-- Griftah
-						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
-						["timeline"] = { ADDED_7_2_5 },
 						-- TODO: Determine actual sourceQuests 3 Retail-Errors reports with these not being completed
 						-- ["sourceQuests"] = {
 						-- 	42504,	-- The Unseen Blade (A)
@@ -917,6 +930,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						-- 	40849,	-- The Dreadblades
 						-- 	41924,	-- Fangs of the Devourer
 						-- },
+						["provider"] = { "n", 103792 },	-- Griftah
+						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47592, {	-- Shine Bright Like a Diamond
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
@@ -1164,17 +1180,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					n(99863, {	-- Jenri <Spymaster>
 						["coord"] = { 54.3, 41.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
-							i(130329, { -- Gloves of Artful Dodging
-								["cost"] = 746 -- 7s 46c
+							i(130329, {	-- Gloves of Artful Dodging
+								["cost"] = 746,		-- 7s 46c
 							}),
-							i(130325, { -- Shoulder of Artful Dodging
-								["cost"] = 1093 -- 10s 93c
+							i(130325, {	-- Shoulder of Artful Dodging
+								["cost"] = 1093,	-- 10s 93c
 							}),
-							i(130323, { -- Vest of Artful Dodging
-								["cost"] = 1450 -- 14s 50c
+							i(130323, {	-- Vest of Artful Dodging
+								["cost"] = 1450,	-- 14s 50c
 							}),
-							i(7676, { -- Thistle Tea
-								["cost"] = 120 -- 1s 20c
+							i(7676, {	-- Thistle Tea
+								["cost"] = 120,		-- 1s 20c
 							}),
 						},
 					}),

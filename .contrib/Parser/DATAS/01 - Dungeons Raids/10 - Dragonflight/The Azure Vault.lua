@@ -14,12 +14,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(71155, {	-- The Azure Vaults
-					--["sourceQuests"] = { },	-- TODO
+					-- ["sourceQuests"] = { },	-- TODO
 					["qg"] = 186188,	-- Sindragosa
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
 				q(75388, {	-- The Azure Vaults
-					--["sourceQuests"] = { },	-- TODO
+					-- ["sourceQuests"] = { },	-- TODO
 					["qg"] = 190000,	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["timeline"] = { ADDED_10_1_0 },

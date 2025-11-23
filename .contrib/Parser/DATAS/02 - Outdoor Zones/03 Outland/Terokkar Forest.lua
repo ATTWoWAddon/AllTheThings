@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 					}),
 					q(10842, {	-- Vengeful Souls
-						--["sourceQuest"] = 10852,	-- Missing Friends
+						-- ["sourceQuest"] = 10852,	-- Missing Friends
 						["qg"] = 22278,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
@@ -1666,15 +1666,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(32535),	-- Gift of the Talonpriests
 							i(32534),	-- Brooch of the Immortal King
-							i(31564),	--	Skystalker's Leggings
-							i(31580),	--	Slatesteel Leggings
-							i(31556),	--	Windchanneller's Leggings
-							i(31572),	--	Mistshroud Pants
-							i(32536),	--	Terokk's Gavel
-							i(32537),	--	Terokk's Gavel
-							i(32782),	--	Time-Lost Figurine (TOY!)
-							i(32540),	--	Terokk's Might
-							i(32541),	--	Terokk's Wisdom
+							i(31564),	-- Skystalker's Leggings
+							i(31580),	-- Slatesteel Leggings
+							i(31556),	-- Windchanneller's Leggings
+							i(31572),	-- Mistshroud Pants
+							i(32536),	-- Terokk's Gavel
+							i(32537),	-- Terokk's Gavel
+							i(32782),	-- Time-Lost Figurine (TOY!)
+							i(32540),	-- Terokk's Might
+							i(32541),	-- Terokk's Wisdom
 						},
 					}),
 				}),

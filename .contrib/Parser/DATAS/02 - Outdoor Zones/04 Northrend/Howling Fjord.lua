@@ -28,7 +28,7 @@ root(ROOTS.Zones, {
 						-- #else
 						["sourceQuests"] = {
 							11291,	-- To Westguard Keep!
-							-- TODO:: confirm the quest below
+							-- TODO:  confirm the quest below
 							11436,	-- Let's Go Surfing Now
 							11344,	-- Anguish of Nifflevar
 							11501,	-- News From the East
@@ -1838,7 +1838,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11256, {	-- Skorn Must Fall!
-						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:: verify
+						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:  verify
 						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -2037,7 +2037,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11469, {	-- Swabbin' Soap
-						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
+						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:  verify
 						["qg"] = 24784,	-- Scuttle Frostprow
 						["coord"] = { 37.7, 79.5, HOWLING_FJORD },
 						["groups"] = {
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11567, {	-- The Ancient Armor of the Kvaldir
-						["sourceQuest"] = 11510,	--	"Scoodles"
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
 						["groups"] = {

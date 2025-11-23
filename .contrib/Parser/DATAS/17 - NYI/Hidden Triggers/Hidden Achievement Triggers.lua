@@ -7,32 +7,32 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
-		--1.14.1.40666
+		-- 1.14.1.40666
 		-- #if CLASSIC
 		ach(15329),	-- Has Died
 		-- #endif
-		--1.14.1.40688
+		-- 1.14.1.40688
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15330)),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
 		-- #endif
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15332)),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
 		-- #endif
-		--1.14.1.40800
+		-- 1.14.1.40800
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15333)),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
 		applyclassicphase(SOM_PHASE_ONE, ach(15334)),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
 		applyclassicphase(SOM_PHASE_ONE, ach(15335)),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 		-- #endif
-		--1.14.2.42597
+		-- 1.14.2.42597
 		-- #if CLASSIC
 		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
 		-- #endif
-		--1.14.3.42770
+		-- 1.14.3.42770
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15637)),	-- The Immortal (Season of Mastery) \\ The Immortal
 		-- #endif
-		--1.15.1.53009
+		-- 1.15.1.53009
 		-- #if SEASON_OF_DISCOVERY
 		ach(19563),	-- Unbroken Self-Found Soul
 		ach(20129),	-- [DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
@@ -48,7 +48,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(20139),	-- [DNT] Self-Found Soul (Level 60)
 		ach(20193),	-- [DNT] Self-Found Soul (Removed Self-Found)
 		-- #endif
-		--1.15.2.53941
+		-- 1.15.2.53941
 		-- #if SEASON_OF_DISCOVERY
 		ach(40131),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
 		ach(40132),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
@@ -56,16 +56,21 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(40135),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
 		ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 		-- #endif
-		--1.15.4.56573
+		-- 1.15.4.56573
 		-- #if SEASON_OF_DISCOVERY
 		ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
 		ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
 		ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
 		ach(41011),	-- Rune Learned - Shared Acquisition - Wild Gods (50)
 		-- #endif
+		-- 1.15.7.60000
+		-- #if SEASON_OF_DISCOVERY
+		ach(42133),	-- [DNT] Balnazzar Defeated (Rewarded MOP 2025 Classic LEVEL Boost)
+		ach(42186),	-- [DNT] Balnazzar Defeated (Rewarded MOP 2025 Classic LEVEL Boost Hotfix)
+		-- #endif
 	}),
 	expansion(EXPANSION.TBC, {
-		--2.5.1.39399
+		-- 2.5.1.39399
 		-- #if AFTER 3.0.1
 		ach(15019),	-- Gladiator: Season 1
 		ach(15020),	-- Duelist: Season 1
@@ -74,7 +79,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(15018),	-- Infernal Gladiator
 		ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
 		-- #endif
-		--2.5.2.39570
+		-- 2.5.2.39570
 		-- #if AFTER 3.0.1
 		ach(15199),	-- Gladiator: Season 2
 		ach(15200),	-- Gladiator: Season 4
@@ -89,7 +94,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(15209),	-- Rival: Season 2
 		ach(15210),	-- Challenger: Season 2
 		-- #endif
-		--2.5.4.44833
+		-- 2.5.4.44833
 		-- #if AFTER 3.0.1
 		ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
 		-- #endif
@@ -533,7 +538,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(4821),	-- Halion kills (Ruby Sanctum 10 player)
 		ach(4822),	-- Halion kills (Heroic Ruby Sanctum 10 player)
 		ach(4823),	-- Halion kills (Heroic Ruby Sanctum 25 player)
-		--3.4.0.46158
+		-- 3.4.0.46158
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(16313),	-- Rival: Season 5
@@ -544,13 +549,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
 		-- #endif
 		-- #endif
-		--3.4.1.47966
+		-- 3.4.1.47966
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 		-- #endif
 		-- #endif
-		--3.4.2.49311
+		-- 3.4.2.49311
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(17415),	-- Rival: Season 6
@@ -561,7 +566,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 		-- #endif
 		-- #endif
-		--3.4.2.49658
+		-- 3.4.2.49658
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(18544),	-- Rival: Season 7
@@ -574,7 +579,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(18551),	-- Gladiator: Season 8
 		-- #endif
 		-- #endif
-		--3.4.3.55417
+		-- 3.4.3.55417
 		-- #if WRATH
 		ach(40821),	-- Successfully Stress Test CN Realms
 		ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
@@ -2861,13 +2866,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 10.0.2.46479
 			ach(17209),	-- <Hidden> Chromie Time - Hit 59 While In Chromie Time (copy)
 			ach(17210),	-- <Hidden> Chromie Time - Hit 60 While In Chromie Time (copy)
-			--10.0.2.47631
+			-- 10.0.2.47631
 			ach(17365),	-- <Hidden> 10.0 Professions Onboarding Skip Completed [DNT]
 		})),
 
 		-- 10.0.5
 		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-			--10.0.5.47871
+			-- 10.0.5.47871
 			ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
 			ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
 			ach(17310),	-- 10.0 Prologue - Storms - Dimmed Primeval Water
@@ -2876,13 +2881,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(17313),	-- 10.0 Prologue - Storms - Dimmed Primeval Storm
 			ach(17338),	-- <Hidden> ACCOUNT: Veritistrasz Q2 Completed
 			ach(17420),	-- Trial of Tyr Ineligible For Spark Skip [DNT]
-			--10.0.5.48001
+			-- 10.0.5.48001
 			ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 		})),
 
 		-- 10.0.7
 		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-			--10.0.7.47910
+			-- 10.0.7.47910
 			ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
 			ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
 			ach(17308),	-- <DNT> Winterpelt Furbolg - 1 - Revered
@@ -2891,23 +2896,23 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 			ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
 			ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
-			--10.0.7.47983
+			-- 10.0.7.47983
 			ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
-			--10.0.7.48076
+			-- 10.0.7.48076
 			ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
 			ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
-			--10.0.7.48749
+			-- 10.0.7.48749
 			ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
 		})),
 
 		-- 10.1.0
 		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-			--10.1.0.48480
+			-- 10.1.0.48480
 			ach(17537),	-- Dragon Chase - WS01
 			ach(17538),	-- Dragon Chase - WS02
 			ach(17725),	-- Vicious Saddle (37)
 			ach(17726),	-- Vicious Saddle (37)
-			--10.1.0.48537
+			-- 10.1.0.48537
 			ach(17742),	-- <DNT> Loamm Niffen Rank 01 (Account) \\ <DNT> Loamm Niffen Rank 01
 			ach(17743),	-- <DNT> Loamm Niffen Rank 02 (Account) \\ <DNT> Loamm Niffen Rank 02
 			ach(17744),	-- <DNT> Loamm Niffen Rank 03 (Account) \\ <DNT> Loamm Niffen Rank 03
@@ -2927,14 +2932,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(17759),	-- <DNT> Loamm Niffen Rank 18 (Account) \\ <DNT> Loamm Niffen Rank 18
 			ach(17760),	-- <DNT> Loamm Niffen Rank 19 (Account) \\ <DNT> Loamm Niffen Rank 19
 			ach(17761),	-- <DNT> Loamm Niffen Rank 20 (Account) \\ <DNT> Loamm Niffen Rank 20
-			--10.1.0.48661
+			-- 10.1.0.48661
 			ach(17788),	-- Current Patch - Login Video [DNT] (DO NOT EDIT) \\ Current Patch - Login Video [DNT] (Updated Every Patch)
 			ach(17836),	-- Flightstones earned
 			ach(17837),	-- Whelpling's Shadowflame Crest Fragments earned
 			ach(17838),	-- Drake's Shadowflame Crest Fragments earned
 			ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
 			ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
-			--10.1.0.48776
+			-- 10.1.0.48776
 			ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
 			ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
 			ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
@@ -2955,7 +2960,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18146),	-- <DNT> Loamm Niffen Rank 18 (Character)
 			ach(18147),	-- <DNT> Loamm Niffen Rank 19 (Character)
 			ach(18148),	-- <DNT> Loamm Niffen Rank 20 (Character)
-			--10.1.0.48898
+			-- 10.1.0.48898
 			ach(18169),	-- [DNT] Shimmershell Snail
 			ach(18180),	-- Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)
 			ach(18181),	-- The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)
@@ -3011,17 +3016,17 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18246),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character)
 			ach(18247),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character)
 			ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character)
-			--10.1.0.49092
+			-- 10.1.0.49092
 			ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
-			--10.1.0.49426
+			-- 10.1.0.49426
 			ach(18394),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests (copy)
-			--10.1.0.49890
+			-- 10.1.0.49890
 			ach(17542),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 2
 		})),
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-			--10.1.5.49516
+			-- 10.1.5.49516
 			ach(17732),	-- <Hidden>10.1.5 Chromie Time - Hit 60 While In Chromie Time (copy) (copy)
 			ach(17733),	-- <Hidden> 10.1.5 Chromie Time - Hit 61 While In Chromie Time (copy) (copy)
 			ach(18381),	-- <Hidden> Account has completed Alliance NPE Quest
@@ -3030,25 +3035,25 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18392),	-- <Hidden> 10.1.5 Warlock Expansion - Mail Quest Push - Horde (NJS)
 			ach(18396),	-- <Hidden> 10.1.5 Warlock Expansion - Mail Quest Push - Oman's Letter (NJS)
 			ach(18507),	-- <Hidden> Completed Legion based Tasks \\ <Hidden> Completed 5 Legion based Tasks
-			--10.1.5.49595
+			-- 10.1.5.49595
 			ach(18509),	-- <Hidden> Completed Robot based Tasks
 			ach(18543),	-- <Hidden> Completed HvA based Tasks
-			--10.1.5.49719
+			-- 10.1.5.49719
 			ach(18555),	-- <Hidden> Completed Murloc based Tasks
-			--10.1.5.50006
+			-- 10.1.5.50006
 			ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
 		})),
 
-		--10.1.7
+		-- 10.1.7
 		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			--10.1.7.50442
+			-- 10.1.7.50442
 			ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 			ach(18938),	-- Seeing Red (account)
-			--10.1.7.51059
+			-- 10.1.7.51059
 			ach(19137),	-- <Hidden> Base 11.0 Tender [DNT]
 			ach(19138),	-- <Hidden> Heroic 11.0 Tender [DNT]
 			ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
-			--10.1.7.51237
+			-- 10.1.7.51237
 			ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
 		})),
 
@@ -3138,7 +3143,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18861),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 4
 			ach(18933),	-- <Hidden> 10.2 Tyr Campaign - Ch 04 - Mail Quest Push - Valunei's Letter (AAO)
 			ach(19391),	-- [DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
-			--10.2.0.51239
+			-- 10.2.0.51239
 			ach(17730),	-- Random Login Variable B
 			ach(18647),	-- <Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
 			ach(19287),	-- Vicious Saddle (38)
@@ -3148,7 +3153,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- 10.2.5
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			ach(19784),	-- Hearthstone Game Wins
-			--10.2.5.52968
+			-- 10.2.5.52968
 			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
 

@@ -808,7 +808,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(67597),	-- Sealed Crate
 			},
 		}),
-		--	Recipe:
+		-- Recipe:
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",

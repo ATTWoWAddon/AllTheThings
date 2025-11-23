@@ -8,6 +8,8 @@ r(53663),	-- Master of Anatomy
 r(53664),	-- Master of Anatomy
 r(53665),	-- Master of Anatomy
 r(53666),	-- Master of Anatomy
+3.80.0.64393
+r(1271601),	-- Titanic Gathering (Skinning)
 
 
 
@@ -24,3 +26,5 @@ r(53663),	-- Master of Anatomy
 r(53664),	-- Master of Anatomy
 r(53665),	-- Master of Anatomy
 r(53666),	-- Master of Anatomy
+3.80.0.64393
+r(1271601),	-- Titanic Gathering (Skinning)

@@ -19,7 +19,7 @@ i(122207, 38081);		-- Music Roll: Tinkertown (Unlocks The Zandalari)
 i(122216, 38082);		-- Music Roll: The Zandalari (Unlocks Tinkertown)
 i(122208, 38083);		-- Music Roll: Exodar (Unlocks Silvermoon)
 i(122217, 38084);		-- Music Roll: Silvermoon (Unlocks Exodar)
---i(122217, 38348);		-- Music Roll: Silvermoon (Unlocks Exodar)   [Note: Not sure why it unlocks two separate ID's]
+-- i(122217, 38348);		-- Music Roll: Silvermoon (Unlocks Exodar)   [Note: Not sure why it unlocks two separate ID's]
 i(122209, 38085);		-- Music Roll: Curse of the Worgen (Unlocks Rescue the Warchief)
 i(122218, 38086);		-- Music Roll: Rescue the Warchief (Unlocks Curse of the Worgen)
 i(122219, 38101);		-- Music Roll: Way of the Monk
@@ -72,15 +72,15 @@ i(122232, 38094);		-- [75951993] = { 38094, "The Argent Tournament", "Purchased 
 i(122236, 38097);		-- [57113318] = { 38097, "Totems of the Grizzlemaw", "Speak to Remington Brode, who patrols all over Grizzly Hills.\nHe starts at Amberpine Lodge, follows the road counter-clockwise to Conquest Hold,\nthen north to Westfall Brigade Encampment, and then south to Camp Oneqwah.\n\nWhen you find him select \"<Breathe deeply.>\",\"I'm looking for a song...\",\n\"A song about the wilderness.\", and \"Yes!\"" },
 						-- [22026934] = { 38097, "Totems of the Grizzlemaw", "Speak to Remington Brode, who patrols all over Grizzly Hills.\nHe starts at Amberpine Lodge, follows the road counter-clockwise to Conquest Hold,\nthen north to Westfall Brigade Encampment, and then south to Camp Oneqwah.\n\nWhen you find him select \"<Breathe deeply.>\",\"I'm looking for a song...\",\n\"A song about the wilderness.\", and \"Yes!\"" },
 -- Cataclysm
-i(122238, 38099);		--[51507505] = { 38099, "Darkmoon Carousel", "Purchased from Chester for 90 [Darkmoon Prize Ticket]." }
+i(122238, 38099);		-- [51507505] = { 38099, "Darkmoon Carousel", "Purchased from Chester for 90 [Darkmoon Prize Ticket]." }
 -- Pandaria
-i(122221, 38102);		--[82222928] = { 38102, "Song of Liu Lang", "Purchased from Tan Shin Tiao for 100 gold.\nRequires Revered with The Lorewalkers." },
-i(122199, 38067);		--[48486149] = { 38067, "Heart of Pandaria", "Inside the Terrace of Endless Spring raid.\n\nDefeat Sha of Fear.\nThis is NOT a guaranteed drop." },
-						--[38914829] = { 38067, "Heart of Pandaria", "Defeat Sha of Fear.\nThis is NOT a guaranteed drop." },
+i(122221, 38102);		-- [82222928] = { 38102, "Song of Liu Lang", "Purchased from Tan Shin Tiao for 100 gold.\nRequires Revered with The Lorewalkers." },
+i(122199, 38067);		-- [48486149] = { 38067, "Heart of Pandaria", "Inside the Terrace of Endless Spring raid.\n\nDefeat Sha of Fear.\nThis is NOT a guaranteed drop." },
+						-- [38914829] = { 38067, "Heart of Pandaria", "Defeat Sha of Fear.\nThis is NOT a guaranteed drop." },
 -- HORDE ONLY:
-i(122211, 38072);		--[10605360] = { 38072, "War March", "Purchased from Ongrom Black Tooth for 500 [Lion's Landing Commission]." },
+i(122211, 38072);		-- [10605360] = { 38072, "War March", "Purchased from Ongrom Black Tooth for 500 [Lion's Landing Commission]." },
 -- ALLIANCE ONLY:
-i(122202, 38071);		--[89533354] = { 38071, "High Seas", "Purchased from Proveditor Grantley for 500 [Domination Point Commission]." },
+i(122202, 38071);		-- [89533354] = { 38071, "High Seas", "Purchased from Proveditor Grantley for 500 [Domination Point Commission]." },
 -- Draenor
-i(122200, 38068);		--[48363460] = { 38068, "A Siege of Worlds", "Defeat Blackhand.\nThis is NOT a guaranteed drop." },
-						--[51562724] = { 38068, "A Siege of Worlds", "Inside the Blackrock Foundry raid.\n\nDefeat Blackhand.\nThis is NOT a guaranteed drop." },
+i(122200, 38068);		-- [48363460] = { 38068, "A Siege of Worlds", "Defeat Blackhand.\nThis is NOT a guaranteed drop." },
+						-- [51562724] = { 38068, "A Siege of Worlds", "Inside the Blackrock Foundry raid.\n\nDefeat Blackhand.\nThis is NOT a guaranteed drop." },

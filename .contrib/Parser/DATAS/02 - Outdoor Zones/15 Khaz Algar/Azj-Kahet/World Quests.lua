@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(224102),	-- Chunked Kobyss Innards (QI!)
 						i(222921),	-- Mangled Kobyss Innards (QI!)
 						i(224103),	-- Uncertain Kobyss Innards (QI!)
-						--i(222980),	-- Slim (PET!) (Was supposed to come from this WQ, but never happened. "Fixed" in 11.0.7 to be rewarded from the Quest Grad, Gutsy Solutions
+						-- i(222980),	-- Slim (PET!) (Was supposed to come from this WQ, but never happened. "Fixed" in 11.0.7 to be rewarded from the Quest Grad, Gutsy Solutions
 					},
 				}),
 				q(82468, {	-- Let Them Win
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 63.9, 17.3, AZJ_KAHET },
 					}),
 					q(82159, {	-- Special Assignment: A Pound of Cure
-						--["coord"] = { x, y, AZJ_KAHET },
+						-- ["coord"] = { x, y, AZJ_KAHET },
 					}),
 					q(82161),	-- Special Assignment: Bombs from Behind [Trigger]
 					q(82531, {	-- Special Assignment: Bombs from Behind

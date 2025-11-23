@@ -115,7 +115,7 @@ end
 
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
-        local parent = rawget(t, "parent")
+		local parent = rawget(t, "parent")
 		if parent and parent.instanceID then return t.name; end
 		local instanceParent = t.sourceParent or t.symParent
 		return instanceParent and ("%s [%s]"):format(t.name, instanceParent.text or UNKNOWN) or t.name;
@@ -169,16 +169,6 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["e"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
 			return 1271;	-- TIMEWALKING event constant
-		end
-	end,
-	["hash"] = function(t)
-		local key = t.key;
-		if key then
-			if t.parent then
-				local parentKey = t.parent.key;
-				if parentKey then return key .. t[key] .. "~" .. parentKey .. t.parent[parentKey]; end
-			end
-			return key .. t[key];
 		end
 	end,
 	["ignoreSourceLookup"] = app.ReturnTrue,

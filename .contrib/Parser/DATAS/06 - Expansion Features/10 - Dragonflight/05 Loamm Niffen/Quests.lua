@@ -25,7 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["groups"] = {
 									i(205982, {	-- Lost Dig Map
 										-- ["questID"] = 75882,
-										--["isWeekly"] = true,
+										-- ["isWeekly"] = true,
 									}),
 									i(202172),	-- Overflowing Satchel of Coins
 									i(204717),	-- Splintered Spark of Shadowflame

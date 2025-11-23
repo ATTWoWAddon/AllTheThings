@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				BossOnly(HELYA, {
 					ach(10808),	-- Heroic: Maw of Souls
 					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
-				--	i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!) (Not confirmed)
+					-- i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!) (Not confirmed)
 					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
 					i(136696),	-- Plans: Terrorspike (RECIPE!)
 				}),

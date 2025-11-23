@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["maps"] = { AZJ_KAHET },
 			}),
 			o(446299, {	-- Silk-spun Supplies
-				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
+				-- ["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
 				["coord"] = { 67.5, 27.5, AZJ_KAHET },
 				["questID"] = 82719,
 			}),

@@ -550,7 +550,7 @@ root(ROOTS.Zones, {
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuests"] = {
 							13351,	-- Sneak Preview
-							-- TODO:: confirm below:
+							-- TODO:  confirm below:
 							13278,	-- Coprous the Defiled
 						},
 						["qg"] = 29795,	-- Koltira Deathweaver

@@ -5,8 +5,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	inst(1271, {	-- Ara-Kara, City of Echoes
 		["coord"] = { 52.2, 45.8, NERUBAR_LOWER },
 		["maps"] = {
-			2357,	--	-- CityOfEchoes_A // Echoing Overlook
-			2358,	--	-- CityOfEchoes_B // The Undercache
+			2357,	-- CityOfEchoes_A // Echoing Overlook
+			2358,	-- CityOfEchoes_B // The Undercache
 		},
 		["groups"] = {
 			n(QUESTS, {

@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					["cost"] = { { "i", 169873, 1 } },	-- 1x Mechanized Supply Key
 				}),
 				o(327597, {	-- Old Rusty Chest
-					--["questID"] = ,
+					-- ["questID"] = ,
 					["isDaily"] = true,
 					["coord"] = { 20.9, 80.3, MECHAGON },
 					["cost"] = { { "i", 169218, 1 } },	-- 1x Old Rusty Key

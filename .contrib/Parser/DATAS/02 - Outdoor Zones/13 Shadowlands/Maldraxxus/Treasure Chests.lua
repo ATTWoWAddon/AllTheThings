@@ -411,7 +411,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
 			n(TREASURES, {
-				--	Treasures of Maldraxxus achievement
+				-- Treasures of Maldraxxus achievement
 				q(58709),	-- Forgotten Mementos - clicking the chain
 				q(59245),	-- Misplaced Supplies (daily trigger)
 				-- q(62582),	-- Using Cache of Spare Weapons

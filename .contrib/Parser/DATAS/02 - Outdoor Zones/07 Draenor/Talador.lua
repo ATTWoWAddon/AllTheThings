@@ -112,20 +112,6 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9637),		-- Poor Communication
-					ach(9564, {	-- Securing Draenor (A)
-						["collectible"] = false,
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(26258),	-- Assault on Shattrath Harbor
-						},
-					}),
-					ach(9562, {	-- Securing Draenor (Horde)
-						["collectible"] = false,
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(26242),	-- Assault on Shattrath Harbor
-						},
-					}),
 					ach(9632),		-- The Power Is Yours
 					ach(9636),		-- United We Stand
 				}),
@@ -2525,13 +2511,7 @@ root(ROOTS.Zones, {
 						["modelScale"] = 2,
 						["coord"] = { 39.2, 41.7, TALADOR },
 						["groups"] = {
-							i(112623, {	-- Pack of Fishing Supplies
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-								i(44983),	-- Strand Crawler (PET!)
-								i(33820),	-- Weather-Beaten Fishing Hat
-							}),
+							i(112623),	-- Pack of Fishing Supplies
 						},
 					}),
 					o(230643, {	-- Teroclaw Nest

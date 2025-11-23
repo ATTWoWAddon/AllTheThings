@@ -366,7 +366,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						--["sym"] = {MOP_SYM_PETS},
+						-- ["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -452,7 +452,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						--["sym"] = {MOP_SYM_PETS},
+						-- ["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -569,8 +569,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
 						["groups"] = {
-						--	NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
-						--	it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
+							-- NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
+							-- it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
 							i(105838),	-- Aeth's Swiftcinder Cloak Normal
 							i(105830),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							i(105826),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
@@ -747,6 +747,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(86848),	-- Serrated Wasp Bracers
 							i(86841),	-- Shining Cicada Bracers
 							i(86843),	-- Smooth Beetle Wristbands
+							-- Trinkets
+							i(86772),	-- Jade Bandit Figurine [confirmed Retail drop 2025-06-02 Runaway]
 							-- #endif
 						},
 					}),

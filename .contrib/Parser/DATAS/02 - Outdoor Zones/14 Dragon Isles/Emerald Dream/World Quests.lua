@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["coord"] = { 37.7, 67.5, EMERALD_DREAM },
 						["groups"] = {
 							ach(19293, {	-- Friends In Feathers
-								--require q(78370) / Claws for Concern
+								-- require q(78370) / Claws for Concern
 								i(210522),	-- Blueloo (PET!)
 								crit(62785, {	-- Beaks
 									["coord"] = { 36.9, 65.8, EMERALD_DREAM },

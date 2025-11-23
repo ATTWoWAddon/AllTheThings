@@ -358,3 +358,60 @@
 10376@@@--
 10378@@@--
 10549@@@--
+9085@@@Shadows of Doom
+9153@@@Under the Shadow
+9154@@@Light's Hope Chapel
+9247@@@The Keeper's Call
+9260@@@Investigate the Scourge of Stormwind
+9261@@@Investigate the Scourge of Ironforge
+9262@@@Investigate the Scourge of Darnassus
+9263@@@Investigate the Scourge of Orgrimmar
+9264@@@Investigate the Scourge of Thunder Bluff
+9265@@@Investigate the Scourge of the Undercity
+9292@@@Cracked Necrotic Crystal
+9295@@@Letter from the Front
+9299@@@Note from the Front
+9300@@@Page from the Front
+9301@@@Envelope from the Front
+9302@@@Missive from the Front
+9304@@@Document from the Front
+9310@@@Faint Necrotic Crystal
+60860@@@--
+60870@@@--
+61547@@@--
+65309@@@--
+65616@@@--
+66145@@@--
+66193@@@--
+66281@@@--
+66286@@@--
+66287@@@--
+66288@@@--
+66289@@@--
+66290@@@--
+66291@@@--
+66292@@@--
+66293@@@--
+66294@@@--
+66295@@@--
+66317@@@--
+66318@@@--
+73193@@@--
+74584@@@--
+75300@@@--
+78647@@@--
+78650@@@--
+78651@@@--
+78652@@@--
+78653@@@--
+78654@@@--
+64032@@@--
+64033@@@--
+64036@@@--
+64071@@@--
+64095@@@--
+64275@@@--
+66990@@@--
+66991@@@--
+93823@@@--
+93824@@@--

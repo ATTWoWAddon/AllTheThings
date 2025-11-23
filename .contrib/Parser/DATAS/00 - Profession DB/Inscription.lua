@@ -248,7 +248,7 @@ i(50166, 71101);	-- Glyph of Eternal Water / Glyph of Mana Shield [CATA] / Glyph
 i(50168, 71102);	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
 i(50167, 71015);	-- Glyph of Rapid Rejuvenation
 
---weird?
+-- weird?
 i(0, 58321);	-- Glyph of Shadow Protection / Glyph of Reflective Shield[MOP+]
 i(0, 56957);	-- Glyph of Shred
 
@@ -272,7 +272,7 @@ i(0, 57226);	-- Glyph of Unbreakable Armor[Removed Cata]
 -- Later Research
 i(0, 56952);	-- Glyph of Rake / Glyph of Pounce[4.1.0-WOD] / Glyph of Rake[Wod-Legion] Ink of the sea
 
---3.0.1.8303
+-- 3.0.1.8303
 i(0, 45358);	-- Inscription (Journeyman)
 i(0, 45360);	-- Inscription (Artisan)
 i(0, 45357);	-- Inscription (Apprenntice)
@@ -290,7 +290,7 @@ i(0, 50603);	-- Scroll of Intellect VII
 i(0, 50620);	-- Scroll of Stamina VIII
 i(0, 50611);	-- Scroll of Versatility VIII
 i(0, 50619);	-- Scroll of Stamina VII
---3.1.0.9767
+-- 3.1.0.9767
 i(0, 64294);	--
 i(0, 57208);	--
 i(0, 58322);	--
@@ -497,7 +497,7 @@ i(0, 56949);	--
 i(0, 56960);	-- Swiftmend??
 i(0, 64282);	--
 i(0, 57014);	--
---3.3.5.12340
+-- 3.3.5.12340
 i(0, 68166);	-- Glyph of Thunder Strike
 i(0, 69385);	-- Runescroll of Fortitude
 
@@ -544,7 +544,7 @@ i(0, 107907);	-- Glyph of Shadow (Minor Inscription Research??) (4.3.0
 -- Taken from Twinstar
 -- 4.0.1
 i(68810, 89815);	-- Glyph of Colossus Smash (REMOVED?)
---4.3.4.15595
+-- 4.3.4.15595
 i(0, 99547);	-- Vicious Charm of Triumph
 i(0, 94404);	-- Glyph of Feral Charge
 i(0, 94711);	-- Glyph of Vanish
@@ -644,7 +644,7 @@ i(0, 112461);	-- Glyph of Water Roll
 i(0, 112460);	-- Glyph of Zen Flight
 
 -- Blackfallow
---i(0, 57855);	-- Glyph of Charm Woodland Creature
+-- i(0, 57855);	-- Glyph of Charm Woodland Creature
 
 i(0, 130407);	-- Mystery of the Mists (removed`?)
 i(0, 127475);	-- Incarnadine Ink Removed?
@@ -1698,3 +1698,13 @@ i(249705, 1249468);	-- Deal: Cartel Om
 i(249701, 1249463);	-- Deal: Cartel Zo
 i(246811, 1243994);	-- Inspired Writer's Quill
 i(244334, 1236908);	-- Vantus Rune: Manaforge Omega
+
+------------------
+-- PATCH 11.2.7 --
+------------------
+--- ITEM ---
+i(257025, 1261032);	-- Technique: Frostwall Elevated Brazier
+i(257028, 1261066);	-- Technique: Orcish Banded Barrel
+i(262809, 1269500);	-- Technique: Orcish Fence
+i(262810, 1269501);	-- Technique: Orcish Fencepost
+i(257027, 1261045);	-- Technique: Wooden Shipping Crate

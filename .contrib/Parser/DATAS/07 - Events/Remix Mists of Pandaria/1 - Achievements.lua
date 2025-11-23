@@ -36,7 +36,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		},
 		["groups"] = {
 			i(224003, {	-- Cup of Nearly Infinite Kafa
-				--["questID"] = 31304,
+				-- ["questID"] = 31304,
 			}),
 		},
 	}),

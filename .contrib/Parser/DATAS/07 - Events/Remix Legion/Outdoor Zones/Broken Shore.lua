@@ -16,6 +16,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							60870,	-- Tomb of Sargeras
 						}},
 					}),
+					ach(42655, {	-- The Armies of Legionfall
+						i(252753, {	-- Demonic Storage Chest (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					}),
 					ach(42666, {	-- The Broken Shore
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -25,27 +30,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							42655,	-- The Armies of Legionfall
 						}},
 						["groups"] = { iensemble(253231) },	-- Fallen King's Corrupted Blades
-					}),
-				}),
-				n(FACTIONS, {
-					faction(FACTION_ARMIES_OF_LEGIONFALL, {
-						n(ACHIEVEMENTS, {
-							ach(42655, {	-- The Armies of Legionfall
-								i(252753, {	-- Demonic Storage Chest (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-								}),
-							}),
-						}),
-					}),
-				}),
-				n(ZONE_REWARDS, {
-					filter(CLOTH, {
-					}),
-					filter(LEATHER, {
-					}),
-					filter(MAIL, {
-					}),
-					filter(PLATE, {
 					}),
 				}),
 			},

@@ -476,7 +476,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		q(39349, {	-- Black Rook Hold: Heavy, But Helpful
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
@@ -492,7 +492,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls

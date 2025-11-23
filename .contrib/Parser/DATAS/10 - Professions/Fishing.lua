@@ -75,11 +75,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			["timeline"] = { ADDED_3_0_2 },	-- NOTE: Players didn't actually get credit for this... Sigh.
 		}),
 		ach(5478, {	-- The Limnologist
-			--["sym"] = {{ "achievement_criteria" }},
+			-- ["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_4_0_3_LAUNCH },
 		}),
 		ach(5479, {	-- The Oceanographer
-			--["sym"] = {{ "achievement_criteria" }},
+			-- ["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_4_0_3_LAUNCH },
 		}),
 		ach(153, {	-- The Old Gnome and the Sea
@@ -225,6 +225,21 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}},
 		}),
 		-- #endif
+		container(67414, {	-- Bag of Shiny Things
+			["description"] = "Fishing Daily Quest Reward",
+			["timeline"] = { ADDED_4_0_1 },
+			["providers"] = {
+				{"i",112623},	-- Pack of Fishing Supplies
+			},
+			["groups"] = {
+				i(44983),	-- Strand Crawler (PET!)
+				i(33820),	-- Weather-Beaten Fishing Hat
+				i(45991),	-- Bone Fishing Pole
+				i(45992),	-- Jeweled Fishing Pole
+				i(67410),	-- Very Unlucky Rock
+				i(67388),	-- String of Alligator Teeth
+			},
+		}),
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(ACHIEVEMENTS, {

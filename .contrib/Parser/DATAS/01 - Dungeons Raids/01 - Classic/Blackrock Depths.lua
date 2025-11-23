@@ -2193,10 +2193,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
 						-- Crieve note: The following items are still sourceless on WoWHead, so it's quite possible the intent was to make versions for Allied Races, but Blizzard realized that'd be dumb and smacked the intern that was doing the dumb.
-					--	i(141979),	-- Crown of the Hallowed
-					--	i(141980),	-- Crown of the Hallowed
-					--	i(141981),	-- Crown of the Hallowed
-					--	i(141982),	-- Crown of the Hallowed
+						-- i(141979),	-- Crown of the Hallowed
+						-- i(141980),	-- Crown of the Hallowed
+						-- i(141981),	-- Crown of the Hallowed
+						-- i(141982),	-- Crown of the Hallowed
 					},
 				}),
 
@@ -2282,7 +2282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27591, {	-- The Dark Iron Pact [Horde]
 					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
-					["qg"] = 45824,	--  Thunderheart
+					["qg"] = 45824,	-- Thunderheart
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),

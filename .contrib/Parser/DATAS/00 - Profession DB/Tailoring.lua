@@ -1889,3 +1889,10 @@ i(239486, 1228344);	-- Pure Chronomatic Fiber
 i(239487, 1228343);	-- Pure Dexterous Fiber
 i(239485, 1228338);	-- Pure Energizing Fiber
 i(239488, 1228342);	-- Pure Precise Fiber
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+i(257109, 1261231);	-- Pattern: Argussian Circular Rug
+i(258486, 1263360);	-- Pattern: Beloved Elekk Plushie
+i(257110, 1261232);	-- Pattern: Karabor Bed

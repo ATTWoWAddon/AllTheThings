@@ -265,27 +265,26 @@ root(ROOTS.Zones, {
 				}),
 				n(109641, {	-- Arcanor Prime
 					["questID"] = 45494,
-				--	["coord"] = { , , AZSUNA },
+					-- ["coord"] = { , , AZSUNA },
 				}),
---[[ TODO:
---				n(101596, {	-- Charfeather }),
---				n(108255, {	-- Coura, Mistress of Arcana }),
---				n(109702, {	-- Deepclaw }),
---				n(109584, {	-- Fjordun }),
---				n(109630, {	-- Immolian }),
---				n(103975, {	-- Jade Darkhaven }),
---				n(109653, {	-- Marblub the Massive }),
---				n(93622, {	-- Mortiferous }),
---				n(111434, {	-- Sea King Tidross }),
---				n(109594, {	-- Stormfeather }),
---				o(254087, {	-- The Dreadblades
---					i(128872),	-- Rogue Outlaw Hidden Appearance
---				}),
---				n(109620, {	-- The Whisperer }),
---				n(110824, {	-- Tideclaw }),
---				n(102064, {	-- Torrentius }),
---				n(109575, {	-- Valakar the Thirsty }),
---]]
+				-- TODO:
+				-- n(101596, {	-- Charfeather }),
+				-- n(108255, {	-- Coura, Mistress of Arcana }),
+				-- n(109702, {	-- Deepclaw }),
+				-- n(109584, {	-- Fjordun }),
+				-- n(109630, {	-- Immolian }),
+				-- n(103975, {	-- Jade Darkhaven }),
+				-- n(109653, {	-- Marblub the Massive }),
+				-- n(93622, {	-- Mortiferous }),
+				-- n(111434, {	-- Sea King Tidross }),
+				-- n(109594, {	-- Stormfeather }),
+				-- o(254087, {	-- The Dreadblades
+				-- 	i(128872),	-- Rogue Outlaw Hidden Appearance
+				-- }),
+				-- n(109620, {	-- The Whisperer }),
+				-- n(110824, {	-- Tideclaw }),
+				-- n(102064, {	-- Torrentius }),
+				-- n(109575, {	-- Valakar the Thirsty }),
 			}),
 		}),
 	}),

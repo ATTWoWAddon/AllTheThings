@@ -8,9 +8,9 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 				header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles
 					q(89402, {	-- Harandar
+						--["sourceQuests"] = { XXX },	-- ??
 						["provider"] = { "n", 240523 },	-- Scouting Map
 						["coord"] = { 45.5, 70.4, SILVERMOON_CITY_MID },
-						--["sourceQuests"] = { XXX },	-- ??
 					}),
 					q(86899, {	-- The Root Cause
 						["sourceQuests"] = { 89402 },	-- Harandar
@@ -462,12 +462,12 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 			}),
 			--Delves
 			q(93421, {	-- Delver's Call: The Grudge Pit
-				["coord"] = { 71.2, 52.1, HARANDAR },
 				--["provider"] = { "o", xxx },	-- The Grudge Pit
+				["coord"] = { 71.2, 52.1, HARANDAR },
 			}),
 			q(93416, {	-- Delver's Call: The Gulf of Memory
-				["coord"] = { 52.9, 51.7, HARANDAR },
 				--["provider"] = { "o", xxx },	-- The Gulf of Memory
+				["coord"] = { 52.9, 51.7, HARANDAR },
 			}),
 			--Quest that lead to Luminous Dust vendor
 			q(92448, {	-- Where Dust Dances

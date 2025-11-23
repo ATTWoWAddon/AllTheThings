@@ -406,6 +406,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(168410),	-- First Aid Kit (PQI!)
+					--
 					i(174780),	-- Emptied First Aid Kit
 				},
 			}),
@@ -415,6 +417,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 61.8, 82.8, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
+					i(168410),	-- First Aid Kit (PQI!)
+					--
 					i(174780),	-- Emptied First Aid Kit
 				},
 			}),
@@ -449,7 +453,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 58.3, 74.6, EXILES_REACH },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					o(339769, {
+					o(339769, {	-- Campfire
 						["coord"] = { 58.5, 74.5, EXILES_REACH },
 						["groups"] = { i(174074) },	-- Cooked Meat (QI!)
 					}),

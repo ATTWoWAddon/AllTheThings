@@ -284,8 +284,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(277637, {	-- Void-Seeped Cache
-						--["isDaily"] = true, ?
-						--["questID"] = ?,
+						-- ["isDaily"] = true, ?
+						-- ["questID"] = ?,
 						["coords"] = {
 							{ 31.4, 25.4, EREDATH },
 							{ 31.4, 25.7, EREDATH },

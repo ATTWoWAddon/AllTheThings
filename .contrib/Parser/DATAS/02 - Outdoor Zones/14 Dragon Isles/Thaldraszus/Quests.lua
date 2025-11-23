@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.8, 64.3, THALDRASZUS },
 					["groups"] = {
-						i(197103),	--	Highland Drake: Maned Chin (MM!)
+						i(197103),	-- Highland Drake: Maned Chin (MM!)
 					},
 				}),
 				q(66472, {	-- Primal List

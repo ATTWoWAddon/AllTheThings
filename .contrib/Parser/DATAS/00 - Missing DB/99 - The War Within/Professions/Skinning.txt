@@ -65,6 +65,9 @@ r(1265723),	-- Finesse
 r(1265727),	-- Perception
 r(1265730),	-- Deftness
 r(1265817),	-- Artisan Skinner's Moxie
+12.0.0.64339
+r(1226037),	-- Carve Meat
+r(1277733),	-- High-Value Beasts
 
 
 
@@ -164,3 +167,6 @@ r(1265723),	-- Finesse
 r(1265727),	-- Perception
 r(1265730),	-- Deftness
 r(1265817),	-- Artisan Skinner's Moxie
+12.0.0.64339
+r(1226037),	-- Carve Meat
+r(1277733),	-- High-Value Beasts

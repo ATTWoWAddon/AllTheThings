@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(169372),	-- Necrofin Tadpole (PET!)
 				i(170191, {	-- Skeletal Hand
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-				--	didn't trigger quest completion!
+					-- didn't trigger quest completion!
 				}),
 			},
 		}),
@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(NAZJATAR, {
 		n(RARES, {
-			--	Naga Commanders
+			-- Naga Commanders
 			q(56882),	-- Commander Minezra
 			q(56895),	-- Incantatrix Vazina
 			q(56894),	-- Shadowbinder Athissa

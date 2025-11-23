@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(ZONE_DROPS, {
-			i(128340, {	-- Chieftain's Beads
+			i(128340, {	-- Chieftain's Beads (QS!)
 				["coord"] = { 48.4, 87.9, VALSHARAH },
 				["cr"] = 91318,	-- Chieftain Graw
 			}),
@@ -132,6 +132,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			i(121172, {	-- Kal'delar Sabatons
 				["bonusID"] = 1812,
+			}),
+			i(127860, {	-- Warden's Signet (QS!)
+				["coord"] = { 38.9, 65.1, VALSHARAH },
+				["cr"] = 94366,	-- Lelyn Swiftshadow
 			}),
 		}),
 	}),
