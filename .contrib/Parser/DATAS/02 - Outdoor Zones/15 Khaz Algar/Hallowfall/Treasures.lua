@@ -182,30 +182,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(453749, {	-- Palawltar's Codex of Dimensional Structure
 				["coord"] = { 48.7, 64.7, HALLOWFALL },
-				-- ["questID"] = 83309, (automated)
 				["groups"] = {
-					i(225216),	-- Palawltar's Codex of Dimensional Structure [book]
+					i(225216),	-- Palawltar's Codex of Dimensional Structure (CI!)
 				},
 			}),
 			o(453751, {	-- Care and Feeding of the Imperial Lynx
 				["coord"] = { 69.4, 44.0, HALLOWFALL },
-				-- ["questID"] = 83310, (automated)
 				["groups"] = {
-					i(225207),	-- Care and Feeding of the Imperial Lynx [book]
+					i(225207),	-- Care and Feeding of the Imperial Lynx (CI!)
 				},
 			}),
 			o(453752, {	-- Shadow Curfew Guidelines
 				["coord"] = { 64.2, 28.1, HALLOWFALL },
-				-- ["questID"] = 83311, (automated)
 				["groups"] = {
-					i(225204),	-- Shadow Curfew Guidelines [book]
+					i(225204),	-- Shadow Curfew Guidelines (CI!)
 				},
 			}),
 			o(453753, {	-- Beledar - The Emperor's Vision
 				["coord"] = { 56.6, 65.2, HALLOWFALL },
-				-- ["questID"] = 83312, (automated)
 				["groups"] = {
-					i(225203),	-- Beledar - The Emperor's Vision [book]
+					i(225203),	-- Beledar - The Emperor's Vision (CI!)
 				},
 			}),
 			o(439473, {	-- Tenir and the Order of Night
@@ -217,21 +213,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(453754, {	-- The Song of Renilash
 				["coord"] = { 70.2, 56.8, HALLOWFALL },
-				-- ["questID"] = 83313, (automated)
 				["groups"] = {
-					i(225215),	-- The Song of Renilash [book]
+					i(225215),	-- The Song of Renilash (CI!)
 				},
 			}),
 			o(453755, {	-- The Big Book of Arathi Idioms
 				["coord"] = { 48.1, 39.6, HALLOWFALL },
-				-- ["questID"] = 83314, (automated)
 				["groups"] = {
-					i(225212),	-- The Big Book of Arathi Idioms [book]
+					i(225212),	-- The Big Book of Arathi Idioms (CI!)
 				},
 			}),
 			o(419729, {	-- Strange Eggs
 				["coord"] = { 67.1, 21.8, HALLOWFALL },
-				-- ["questID"] = 83032,	-- I looted it with some characters and never got any questID - Darkal
 				["groups"] = {
 					i(212331),	-- The Unusual Bug
 				},

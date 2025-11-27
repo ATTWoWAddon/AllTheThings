@@ -7301,7 +7301,6 @@ root(ROOTS.Unsorted, {
 				i(163372),	-- Damarcus' Backpack
 				i(163373),	-- Rachel's Flute \\ Rachel's Tambourine
 				i(163374),	-- Josh's Fang Necklace \\ Josh's Lucky Ferret's Foot
-				i(163535),	-- Outpost Upgrade
 				i(163544),	-- Scroll of Agile Swimming
 				i(163545),	-- Scroll of Ocean Ferocity
 				i(163546),	-- Scroll of the Forked Tongue
@@ -7528,25 +7527,6 @@ root(ROOTS.Unsorted, {
 				i(160583),	-- Broken Sethrak Blade
 				i(162667),	-- Farraki Funeral Urn
 				i(162683),	-- Archaic Dinomancy Carvings
-			}),
-			filter(MISC, {	-- War Effort
-				i(161121),	-- The Wolf's Den
-				i(161385),	-- Stonefist Watch
-				i(161449),	-- Swiftwind Post \\ Fairwind Post
-				i(162119),	-- Hillcrest Pasture
-				i(162543),	-- Veiled Grotto
-				i(162576),	-- Mugamba Overlook
-				i(162603),	-- Verdant Hollow
-				i(162645),	-- Mistvine Ledge
-				i(162975),	-- Grimwatt's Crash
-				i(163038),	-- Vulture's Nest
-				i(163193),	-- Outpost Upgrade
-				i(163507),	-- Outpost Upgrade
-				i(163570),	-- Outpost Upgrade
-				i(163571),	-- Outpost Upgrade
-				i(163594),	-- Outpost Upgrade
-				i(163600),	-- Outpost Upgrade
-				i(163610),	-- Outpost Upgrade
 			}),
 			n(PROFESSIONS, {
 				i(152578),	-- Sack of Herbs
@@ -7931,9 +7911,7 @@ root(ROOTS.Unsorted, {
 				i(163209),	-- Disco Jellyfish
 				i(163214),	-- Neutralized Explosive Sample
 				i(163386),	-- Bloodied Sentinel's Glaive
-				i(163547),	-- Mission Report
 				i(163562),	-- Blightcaller's Easy Death
-				i(163622),	-- Mission Report
 				i(163647),	-- Azerite Shard
 				i(163856),	-- Ancient Pilgrimage Scrollcasing
 				i(151611),	-- Dreadtick Mandible
@@ -7979,6 +7957,7 @@ root(ROOTS.Unsorted, {
 			i(165359),	-- Windfall Cavern
 			i(165360),	-- Stonetusk Watch
 			i(165361),	-- Hillcrest Pasture
+			i(165362),	-- Swiftwind Post
 			i(165363),	-- Mudfisher Cove
 			i(165364),	-- Vulture's Nest
 			i(165365),	-- Grimwatt's Crash

@@ -344,6 +344,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(156927),	-- Great Hall Recall
 			i(158841),	-- High King's Pride
 			i(151060),	-- Keystone Container
+			i(163570),	-- Outpost Upgrade
 			i(162549),	-- Personal Anchor
 			i(155010),	-- REUSE ME (DNT)
 			i(155011),	-- REUSE ME (DNT)

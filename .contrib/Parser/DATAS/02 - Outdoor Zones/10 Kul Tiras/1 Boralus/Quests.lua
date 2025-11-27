@@ -273,6 +273,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162975),	-- Grimwatt's Crash (CI!)
 											i(162977),	-- Mission Report (QI!)
 										},
 									}),
@@ -292,6 +293,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
+										["groups"] = {
+											i(163535),	-- Outpost Upgrade
+											i(163547),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -316,6 +321,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162645),	-- Mistvine Ledge (CI!)
 											i(162646),	-- Mission Report (QI!)
 										},
 									}),
@@ -335,6 +341,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
+										["groups"] = {
+											i(163610),	-- Outpost Upgrade
+											i(163622),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -359,6 +369,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162576),	-- Mugamba Overlook (CI!)
 											i(162577),	-- Mission Report (QI!)
 										},
 									}),
@@ -379,6 +390,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163600),	-- Outpost Upgrade
 											i(163602),	-- Mission Report (QI!)
 										},
 									}),
@@ -405,6 +417,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162543),	-- Veiled Grotto (CI!)
 											i(162553),	-- Mission Report (QI!)
 										},
 									}),
@@ -431,6 +444,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(162603),	-- Verdant Hollow (CI!)
 											i(162604),	-- Mission Report (QI!)
 										},
 									}),
@@ -451,6 +465,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163594),	-- Outpost Upgrade
 											i(163597),	-- Mission Report (QI!)
 										},
 									}),
@@ -477,6 +492,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163038),	-- Vulture's Nest (CI!)
 											i(163039),	-- Mission Report (QI!)
 										},
 									}),
@@ -497,6 +513,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
+											i(163571),	-- Outpost Upgrade
 											i(163572),	-- Mission Report (QI!)
 										},
 									}),
@@ -865,13 +882,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(QUESTS, {
-				-- Missions
-				q(53746),	-- Verdant Hollow completed
-				q(53747),	-- Veiled Grotto completed
-				q(53748),	-- Mugamba Overlook completed
-				q(53749),	-- Mistvine Ledge completed
-				q(53750),	-- Vulture's Nest completed
-				q(53751),	-- Grimwatt's Crash completed
 				-- Outpost Upgrades
 				q(54292),	-- Brennadam completed
 				q(54296),	-- Castaway Point completed

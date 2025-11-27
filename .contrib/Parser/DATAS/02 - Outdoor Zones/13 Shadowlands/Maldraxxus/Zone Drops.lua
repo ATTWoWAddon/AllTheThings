@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.0, 70.6, MALDRAXXUS },
 				["crs"] = { 170563 },	-- Runespeaker Phaeton
 			}),
-			i(183691, {	-- Mucosal Pigment
+			i(183691, {	-- Mucosal Pigment (CI!)
 				["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 				["crs"] = {
 					165014,	-- Animated Plague

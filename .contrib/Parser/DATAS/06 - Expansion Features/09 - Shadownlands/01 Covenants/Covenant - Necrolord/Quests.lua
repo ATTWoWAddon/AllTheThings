@@ -87,7 +87,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 174020 },	-- Captain Prateq
 				["coord"] = { 70.4, 27.7, MALDRAXXUS },
 				["groups"] = {
-					i(183394, {	-- Discarded Grimoire
+					i(183394, {	-- Discarded Grimoire (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -272,7 +272,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "o", 358319 },	-- Sorcerer's Note
 				["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
 				["groups"] = {
-					i(183397, {	-- Sorcerer's Blade
+					i(183397, {	-- Sorcerer's Blade (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -512,7 +512,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 172813 },	-- Ton'hamil
 				["coord"] = { 67.9, 30.6, MALDRAXXUS },
 				["groups"] = {
-					i(183399, {	-- Ritualist's Mantle
+					i(183399, {	-- Ritualist's Mantle (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
@@ -698,7 +698,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 174120 },	-- Moret the Vogue
 				["coord"] = { 71.7, 32.9, MALDRAXXUS },
 				["groups"] = {
-					i(183401, {	-- Amethystine Dye
+					i(183401, {	-- Amethystine Dye (CI!)
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 					i(183400),	-- Amethystine Powder (QI!)

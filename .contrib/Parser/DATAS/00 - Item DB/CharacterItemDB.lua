@@ -258,13 +258,27 @@ is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 -- Flight Path Maps --
 iq(166445, 54705);					-- 7th Legion Scouting Map
 iq(166444, 54704);					-- Honorbound Scouting Map
+-- Outpost Unlocks --
+iq(162975, 53751);					-- Grimwatt's Crash
+iq(162119, 53743);					-- Hillcrest Pasture
+iq(162645, 53749);					-- Mistvine Ledge
+iq(161482, 53745);					-- Mudfisher Cove
+iq(162576, 53748);					-- Mugamba Overlook
+iq(161385, 53740);					-- Stonefist Watch
+iq(162511, 53742);					-- Stonetusk Watch
+iq(161449, 53744);					-- Swiftwind Post
+iq(161121, 53739);					-- The Wolf's Den
+iq(162543, 53747);					-- Veiled Grotto
+iq(162603, 53746);					-- Verdant Hollow
+iq(163038, 53750);					-- Vulture's Nest
+iq(161487, 53741);					-- Windfall Cavern
 -- Outpost Upgrades --
-ihqt(165880, 54304);				-- Outpost Upgrade: Arom's Stand
-ihqt(165836, 54261);				-- Outpost Upgrade: Brennadam
-ihqt(165873, 54283);				-- Outpost Upgrade: Castaway Point
-ihqt(165728, 54226);				-- Outpost Upgrade: The Great Seal
-ihqt(165804, 54259);				-- Outpost Upgrade: Vulpera Hideaway
-ihqt(165750, 54238);				-- Outpost Upgrade: Zul'jan Ruins
+iq(165880, 54304);					-- Outpost Upgrade: Arom's Stand
+iq(165836, 54261);					-- Outpost Upgrade: Brennadam
+iq(165873, 54283);					-- Outpost Upgrade: Castaway Point
+iq(165728, 54226);					-- Outpost Upgrade: The Great Seal
+iq(165804, 54259);					-- Outpost Upgrade: Vulpera Hideaway
+iq(165750, 54238);					-- Outpost Upgrade: Zul'jan Ruins
 -- Random One-Time Items --
 ihqt(162580, 52854);				-- Fading Treasure Map
 ihqt(162584, 52860);				-- Singed Treasure Map
@@ -318,6 +332,7 @@ iq(165840, 54264);					-- Shattered Pet Portal
 iq(187923, 65039);					-- Aurelid Lure
 iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
 iq(180705, 61160, HUNTER);			-- Gargon Training Manual
+ihqt(180085, 60587);				-- Kyrian Keepsake
 iq(184222, 62822);					-- Lemet's Requisition Orders
 iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(183124, 62255, HUNTER);			-- Simple Tome of Bone-Binding
@@ -391,6 +406,14 @@ iq(177235, 59686);					-- Tubbins's Lucky Teapot
 iq(181436, 61452);					-- Vanity Mirror
 iq(177242, 59692);					-- Venthyr Arsenal
 iq(181442, 61458);					-- Visions of Sire Denathrius
+-- Necrolord
+iq(183401, 62319);					-- Amethystine Dye
+iq(183690, 62404);					-- Ashen Ink
+iq(183394, 62266);					-- Discarded Grimoire
+iq(183692, 62408);					-- Jagged Bonesaw
+iq(183691, 62405);					-- Mucosal Pigment
+iq(183399, 62311);					-- Ritualist's Mantle
+iq(183397, 62306);					-- Sorcerer's Blade
 
 -----------------
 -- PATCH 9.0.5 --
@@ -823,6 +846,7 @@ ihqt(227432, 80873);				-- Pristine Tailor's Diagrams
 iq(229195, 84006);					-- Queen's Pheromone (8.8 Thousand)
 ihqt(224038, 82631);				-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread
+ihqt(224026, 83620);				-- Storm Vessel
 ihqt(224024, 82633);				-- Theories of Bodily Transmutation, Chapter 8
 is(227710, 460392, MAGE);			-- Tome of Polymorph: Mosswool
 ihqt(224056, 82626);				-- Uses for Leftover Husks (After You Take Them Apart)
@@ -833,6 +857,13 @@ ihqt(224658, 83068);				-- Void-Lit Leatherworking Notes
 ihqt(224657, 83067);				-- Void-Lit Skinning Notes
 iq(228946, 84693);					-- Weaver's Lair Profession Table
 ihqt(224050, 82635);				-- Web Sparkles: Pretty and Powerful
+-- Biblo Archivist
+ihqt(225203, 83312);				-- Beledar - The Emperor's Vision
+ihqt(225207, 83310);				-- Care and Feeding of the Imperial Lynx
+ihqt(225216, 83309);				-- Palawltar's Codex of Dimensional Structure
+ihqt(225204, 83311);				-- Shadow Curfew Guidelines
+ihqt(225212, 83314);				-- The Big Book of Arathi Idioms
+ihqt(225215, 83313);				-- The Song of Renilash
 
 ------------------
 -- PATCH 11.0.5 --
@@ -936,7 +967,7 @@ ihqt(235858, 87260);				-- Ethereal Tome of Leatherworking Knowledge
 ihqt(235857, 87259);				-- Ethereal Tome of Mining Knowledge
 ihqt(235856, 87258);				-- Ethereal Tome of Skinning Knowledge
 ihqt(235855, 87257);				-- Ethereal Tome of Tailoring Knowledge
--- ihqt(246737, ???);					-- K'areshi Voidstone
+ihqt(246737, 91521);				-- K'areshi Voidstone
 is(0, 1239155);						-- Path of the All-Devouring
 is(0, 1237215);						-- Path of the Eco-Dome
 

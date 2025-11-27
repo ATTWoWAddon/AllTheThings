@@ -131,8 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(169664, {		-- Kyrian Corpse
 				["coord"] = { 32.7, 21.2, MALDRAXXUS },
 				["groups"] = {
-					i(180085, {	-- Kyrian Keepsake
-						["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
+					i(180085, {	-- Kyrian Keepsake (CI!)
 						["groups"] = {
 							i(175708),	-- Reconstructed Family Locket
 						},
