@@ -1665,7 +1665,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51857),	-- Hersir's Greatspear
 							i(51858),	-- Soulbreaker
 							i(51852),	-- Wand of Ruby Claret
-							i(51847),	-- Spauldersof the Blood Princes
+							i(51847),	-- Spaulders of the Blood Princes
 							i(51848),	-- Heartsick Mender's Cape
 							i(51851),	-- Bloodsoul Raiment
 							i(51853),	-- Blood-Drinker's Girdle

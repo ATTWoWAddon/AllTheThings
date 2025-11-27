@@ -3012,7 +3012,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						moh(10, i(122367, {	-- The Blessed Hammer of Grace
 							["timeline"] = { ADDED_6_1_0 },
 						})),
-						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
+						moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
 							["timeline"] = { ADDED_6_1_0 },
 						})),
 

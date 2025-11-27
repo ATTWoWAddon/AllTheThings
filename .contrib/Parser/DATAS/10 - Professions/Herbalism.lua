@@ -1662,7 +1662,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_HERBALISM_KNOWLEDGE),
+				currency(MID_HERBALISM_KNOWLEDGE),
 			},
 		},{
 			i(224817),	-- Algari Herbalism Notes

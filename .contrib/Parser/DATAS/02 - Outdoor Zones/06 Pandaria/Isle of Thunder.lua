@@ -749,8 +749,8 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 48.4, 86.4, ISLE_OF_THUNDER },
 							{ 50.2, 90.8, ISLE_OF_THUNDER },
-							},
-							["groups"] = {
+						},
+						["groups"] = {
 							crit(22820, {	-- Haywire Sunreaver Construct
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),

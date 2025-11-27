@@ -491,7 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6128, {	-- Ping Pong Champion
 							-- #if AFTER 6.0.3
-							["description"] = "Can be soloed without a pet to hold the boss, the ball occationaly have an immune phase where it can pass through the boss without losing the strike.",
+							["description"] = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
 							-- #endif
 						}),
 					})),
@@ -562,7 +562,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlextraxa on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alextraza in time. Make sure the aspect is properly assaulted to get credit.",
+							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
 							["groups"] = {
 								crit(18658, {	-- Alexstrasza Assaulted First
 									["provider"] = { "n", 56099 },	-- Alexstrasza

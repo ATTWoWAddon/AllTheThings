@@ -266,10 +266,10 @@ ihqt(165728, 54226);				-- Outpost Upgrade: The Great Seal
 ihqt(165804, 54259);				-- Outpost Upgrade: Vulpera Hideaway
 ihqt(165750, 54238);				-- Outpost Upgrade: Zul'jan Ruins
 -- Random One-Time Items --
-ihqt(162580, 52854)					-- Fading Treasure Map
-ihqt(162584, 52860)					-- Singed Treasure Map
-ihqt(162571, 52853)					-- Soggy Treasure Map
-ihqt(162581, 52859)					-- Yellowed Treasure Map
+ihqt(162580, 52854);				-- Fading Treasure Map
+ihqt(162584, 52860);				-- Singed Treasure Map
+ihqt(162571, 52853);				-- Soggy Treasure Map
+ihqt(162581, 52859);				-- Yellowed Treasure Map
 
 -----------------
 -- PATCH 8.1.0 --
@@ -553,7 +553,7 @@ ihqt(202047, 72248);				-- Gleaming Incarnate Thunderstone
 iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
 iq(195453, 67718);					-- Ludo's Stash Map
 is(0, 390631, HUNTER);				-- Ottuk Taming
-is(200205 ,391622, MAGE);			-- Tome of Polymorph: Duck
+is(200205, 391622, MAGE);			-- Tome of Polymorph: Duck
 iq(199069, 70538);					-- Yennu's Map
 
 ------------------

@@ -6,8 +6,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		n(SPECIAL, {
 			i(209860),	-- Thorn-Laden Heart @ 34.5, 63.2, EMERALD_DREAM [hunter only] from Envoy of Winter
 			i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only] from fire kitty/Keen-eyed Cian?
-			i(209862),	-- Thorn-Laden Heart @ 40.2, 71.9, EMERALD_DREAM [hunter only] from some bear (Moragh inculded) that was on path to rare
-			-- reqruied for n: 140044 (Athainne) which should spawn in Drustvar (but wasn't up for me here)
+			i(209862),	-- Thorn-Laden Heart @ 40.2, 71.9, EMERALD_DREAM [hunter only] from some bear (Moragh included) that was on path to rare
+			-- required for n: 140044 (Athainne) which should spawn in Drustvar (but wasn't up for me here)
 			-- need to press  "Present the thorn-laden beast heart to Athainne.", she will give instead
 			-- i(209863),	-- Moontouched Thorns
 			-- i(209864),	-- Moontouched Thorns

@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203445),	-- Stuffed Doll (QI!)
 					},
 				}),
-				q(72668, {	-- A Nuturing Enviroment
+				q(72668, {	-- A Nurturing Environment
 					["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72454, {	-- The Obsidian Hatchling
 					["sourceQuests"] = {
 						73021,	-- A Lesson in Responsibility
-						72668,	-- A Nuturing Enviroment
+						72668,	-- A Nurturing Environment
 						72667,	-- Snack Run
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72455, {	-- Warmth and Comfort
 					["sourceQuests"] = {
 						73021,	-- A Lesson in Responsibility
-						72668,	-- A Nuturing Enviroment
+						72668,	-- A Nurturing Environment
 						72667,	-- Snack Run
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				------ Day 4 ------
 				q(72994, {	-- A Cavalier Pet
-					["sourceQuests"] = { 72459 },	-- I'm the Boss!
+					["sourceQuests"] = { 72993 },	-- I'm the Boss!
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["groups"] = {

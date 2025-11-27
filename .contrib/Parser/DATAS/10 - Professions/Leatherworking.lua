@@ -1522,7 +1522,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_LEATHERWORKING_KNOWLEDGE),
+				currency(MID_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
 			-- i(),	-- Leatherworking Designs

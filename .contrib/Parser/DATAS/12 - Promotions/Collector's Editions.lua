@@ -483,7 +483,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
 			i(260438),	-- Cerulean Phase-Hunter (MOUNT!)
-			i(260622),	-- Exodar Replica (TOY!
+			i(260622),	-- Exodar Replica (TOY!)
 			i(260221),	-- Naaru's Embrace (TOY!)
 			i(260433),	-- Starshard Whelpling (PET!)
 			i(260759),	-- Reins of the Starshard Netherdrake (MOUNT!)
@@ -494,7 +494,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		["groups"] = {
 			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
-			i(254666),	-- Exodar Replica (TOY!
+			i(254666),	-- Exodar Replica (TOY!)
 			i(263489),	-- Naaru's Enfold (TOY!)
 			i(253699),	-- Starshard Whelpling (PET!)
 			i(252950),	-- Starspark Netherdrake (MOUNT!)

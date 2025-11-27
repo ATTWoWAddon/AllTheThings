@@ -523,7 +523,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				-- TODO: these unlock questIDs can be provided by Wago data as to which Battle Pet items unlock them
 				-- so perhaps restructure into real HQTs that contain the relevant vendor pets?
 				-- perhaps a new group type for an automatic 'unlock' header?
-				-- Summoning battle pets near Elanna / unlocks for battle pets
+				-- Summoning battle pets near Elianna / unlocks for battle pets
 				-- q(78847),	-- summon Dreamborne Scarab (i: 210553) (spellID 426137)
 				q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (i: ?)) (spellID 429058)
 				-- q(78848),	-- summon Dreamhoof (i: 210555) (spellID 426148)

@@ -148,7 +148,7 @@ root(ROOTS.Zones, {
 				}),
 				crit(26976, {	-- Christoph VonFeasel (Darkmoon Island)
 					["_quests"] = { 36471 },	-- A New Darkmoon Challenger!
-					--["_npcs"] = { 85519 },	-- Christoph VonFeasel <Grand Master Pet Tamer>
+					-- ["_npcs"] = { 85519 },	-- Christoph VonFeasel <Grand Master Pet Tamer>
 				}),
 				crit(26977, {	-- Courageous Yon
 					["_npcs"] = { 66738 },	-- Courageous Yon <Grand Master Pet Tamer>
@@ -179,7 +179,7 @@ root(ROOTS.Zones, {
 				}),
 				crit(26986, {	-- Jeremy Feasel (Darkmoon Island)
 					["_quests"] = { 32175 },	-- Darkmoon Pet Battle!
-					--["_npcs"] = { 67370 },	-- Jeremy Feasel <Master Pet Tamer>
+					-- ["_npcs"] = { 67370 },	-- Jeremy Feasel <Master Pet Tamer>
 				}),
 				crit(26987, {	-- Lorewalker Cho (Pandaria - Celestial Tournament)
 					["_npcs"] = { 71926 },	-- Lorewalker Cho

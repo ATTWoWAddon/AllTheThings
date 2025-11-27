@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 						n(COMMON_BOSS_DROPS, {
 							["description"] = "Can drop from High Priest Venoxis, Bloodlord Mandokir, High Priestess Kilnara, Zanzil, and Jin'do the Godbreaker after completing the quest 'Restored Hakkari Bijou'.",
-							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallem Empire'.
+							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallen Empire'.
 							-- ["crs"] = {
 								-- 52155,	-- High Priest Venoxis
 								-- 52151,	-- Bloodlord Mandokir
@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								i(SANDFURY_COIN),
 								i(SKULLSPLITTER_COIN),
 								i(VILEBRANCH_COIN),
-								i(203742, {	-- Waterlooged Gurubashi Cache
+								i(203742, {	-- Waterlogged Gurubashi Cache
 									["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 									["groups"] = {
 										i(19945),	-- Lizardscale Eyepatch

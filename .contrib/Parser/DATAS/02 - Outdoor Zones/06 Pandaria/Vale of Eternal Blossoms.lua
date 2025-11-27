@@ -407,7 +407,7 @@ root(ROOTS.Zones, {
 						["aqd"] = {
 							["qgs"] = {
 								64572,	-- Sara Finkleswitch
-								63596,	-- Audrey Burnhelp
+								63596,	-- Audrey Burnhep
 							},
 							["coords"] = {
 								{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },

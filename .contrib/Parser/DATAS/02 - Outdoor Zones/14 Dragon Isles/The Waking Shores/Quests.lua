@@ -1216,10 +1216,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
-				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
+				["coord"] = { 75.8, 33.0, THE_WAKING_SHORES },
 			}),
 			q(72709, {	-- Funding a Treasure Hunt
-				["sourceQuests"] = 72708,	-- Dragon Isles Supplies
+				["sourceQuests"] = { 72708 },	-- Dragon Isles Supplies
 				["provider"] = { "n", 198846 },	-- Cataloger Jakes
 				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "questID", 70409 },	-- Archeologist Artifact Notes
@@ -1254,7 +1254,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
 				["classes"] = { ROGUE },
 				["groups"] = {
-					i(198133),	-- Golden Expedition Compass (QI!
+					i(198133),	-- Golden Expedition Compass (QI!)
 					i(198135),	-- Jeb's Supply Pack (QI!)
 					i(198139),	-- Jeb's Underwear
 					i(198134),	-- Shiny Surveyor Scope (QI!)

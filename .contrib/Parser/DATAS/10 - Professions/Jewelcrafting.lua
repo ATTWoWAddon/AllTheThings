@@ -949,7 +949,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
+				currency(MID_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
 			q(83265, {	-- TWW Weekly Jewelcrafting Knowledgepoint #1

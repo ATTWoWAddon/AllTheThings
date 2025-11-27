@@ -728,7 +728,7 @@ root(ROOTS.Zones, {
 							["groups"] = { i(140635) },	-- Notable Antiquities of Ancient Azeroth (QI!)
 						}),
 						--
-						i(139905),	-- Gloves of thee Arcane Purge
+						i(139905),	-- Gloves of the Arcane Purge
 						i(139934),	-- Handguards of Demonsbane
 						i(139965),	-- Grips of the Fel Destroyer
 						i(139997),	-- Gauntlets of Legion Devastation

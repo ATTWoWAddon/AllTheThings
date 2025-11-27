@@ -589,7 +589,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_SKINNING_KNOWLEDGE),
+				currency(MID_SKINNING_KNOWLEDGE),
 			},
 		},{
 			q(81459, {	-- TWW Weekly Skinning Knowledgepoint #1

@@ -1792,7 +1792,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					["hordeQuestData"] = q(28434, {	-- Strategic Cuts (H)
 						["sourceQuest"] = 28433,	-- Grunt Work (H)
-						["qg"] = 28432,	-- Eitrigg
+						["qg"] = 48568,	-- Eitrigg
 						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },

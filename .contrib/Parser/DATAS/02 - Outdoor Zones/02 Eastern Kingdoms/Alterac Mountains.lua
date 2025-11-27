@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(533, {	-- Infiltration
-					["sourceQuest"] = 498,	-- The Rescue,
+					["sourceQuest"] = 498,	-- The Rescue
 					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },

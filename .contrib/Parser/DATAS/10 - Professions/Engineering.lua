@@ -1492,7 +1492,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENGINEERING_KNOWLEDGE),
+				currency(MID_ENGINEERING_KNOWLEDGE),
 			},
 		},{
 			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1

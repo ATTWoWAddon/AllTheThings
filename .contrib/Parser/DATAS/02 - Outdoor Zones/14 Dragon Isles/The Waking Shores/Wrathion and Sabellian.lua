@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74077,
 					["isDaily"] = true,
 					["crs"] = { 190971 },	-- pre-combat
-					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
+					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 				}),
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(199215, {	-- Worldbreaker Membership
-							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twillight Cache before.",
+							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
 							["cost"] = {
 								{ "i", 202173, 20 },		-- 20x Magmote
 							},

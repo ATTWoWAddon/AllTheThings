@@ -1072,7 +1072,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENCHANTING_KNOWLEDGE),
+				currency(MID_ENCHANTING_KNOWLEDGE),
 			},
 		},{i(225230),
 			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1

@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
-				["creatureID"] = 132701,	-- T'zane <Tehe Soul Terror>
+				["creatureID"] = 132701,	-- T'zane <The Soul Terror>
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart
 				},
-				["creatureID"] = 140163,	-- Warbringeer Yenajz
+				["creatureID"] = 140163,	-- Warbringer Yenajz
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw

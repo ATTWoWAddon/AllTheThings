@@ -1140,7 +1140,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		["groups"] = appendAllGroups(
 			-- Table of Content:
 			-- 	Cloth + Silk
-			-- 	Elemetal reagents
+			-- 	Elemental reagents
 			-- 	Clams
 			-- 	Cooking reagents
 			-- 	Other reagents

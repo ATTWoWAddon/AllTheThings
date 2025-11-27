@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 71.6, 57.6, HALLOWFALL },
 					["groups"] = {
 						i(216669),	-- Shattered Remnants (QI!)
+						i(224189),	-- Ivory Tinderbox (QI!)
 					},
 				}),
 				q(78666, {	-- The Only Good Spider
@@ -136,7 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(220508),	-- Lamplighter's Unlit Torch (COSMETIC!)
 					},
 				}),
-				q(78936, {	-- Something FIshy
+				q(78936, {	-- Something's Fishy
 					["sourceQuests"] = {
 						78932,	-- Fickle Fiendish Fish	-- I'm currently unsure if this quest pop during Blades of the Arathi
 						78929,	-- Tricks of the Dark	-- or this two quest, need more data
@@ -147,7 +148,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(78937, {	-- Shadow Upon Shadow
 					["sourceQuests"] = {
 						78934,	-- Blades of the Arathi
-						78936,	-- Something FIshy
+						78936,	-- Something's Fishy
 					},
 					["provider"] = { "n", 221100 },	-- Faerin
 					["coord"] = { 55.1, 32.7, HALLOWFALL },
@@ -374,14 +375,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
 					["coord"] = { 45.8, 13.1, HALLOWFALL },
-				}),
-				q(78692, {	-- Teach a Man to Fish
-					["sourceQuests"] = {
-						78694,	-- Reclaiming Velhan's Claim
-						78693,	-- Spears for Fears
-					},
-					["provider"] = { "n", 213613 },	-- Aemyra Acton
-					["coord"] = { 50.0, 20.8, HALLOWFALL },
 				}),
 				q(78687, {	-- Crash Recovery
 					["sourceQuests"] = { 78692 },	-- Teach a Man to Fish
@@ -1084,7 +1077,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(224187),	-- Dented Spearhead (QI!)
 							i(224188),	-- Filigreed Cleric (QI!)
 							i(224186),	-- Hymns of the Flame (QI!)
-							i(224189),	-- Ivory Tinderbox (QI!
+							i(224189),	-- Ivory Tinderbox (QI!)
 							i(224179),	-- Swamplogged Letter (QI!)
 						}),
 						--
@@ -1187,7 +1180,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(82832, {	-- Wooden Figure
 					["sourceQuests"] = { 82813 },	-- Time Borrowed
-					["provider"] = { "n", 217609 },	-- Barahi Lynflayme
+					["provider"] = { "n", 217609 },	-- Barahl Lynflayme
 					["coord"] = { 69.3, 43.8, HALLOWFALL },
 					["cost"] = {{"i", 224273, 1}},	-- 1x Wooden Figure
 				}),

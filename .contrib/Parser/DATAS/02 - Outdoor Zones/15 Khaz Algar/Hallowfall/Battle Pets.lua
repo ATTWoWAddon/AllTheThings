@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pet(4515, {	-- Azure Flickerfly (PET!)
 					["description"] = "Found most commonly between the Coreway and Hallowfall gates, or around Mereldar and The Weaver's Lair.",
-					-- ["coord"] = { X, Y HALLOWFALL },
+					-- ["coord"] = { X, Y, HALLOWFALL },
 				}),
 				pet(4457, {	-- Chitin Burrower (PET!)
 					["description"] = "Found commonly in small groups around the 3 main underground zones.",

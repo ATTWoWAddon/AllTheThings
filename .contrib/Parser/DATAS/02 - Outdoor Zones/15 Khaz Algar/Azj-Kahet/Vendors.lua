@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
-			n(218214, {	-- Ruukk <Silks & Secrets>>
+			n(218214, {	-- Ruukk <Silks & Secrets>
 				["coord"] = { 51.4, 12.5, NERUBAR },
 				["groups"] = {
 					i(226515, {	-- Rumor Map: Bounties
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				},
 			}),
-			n(218200, {	-- Yaggi <Sitck Cook>
+			n(218200, {	-- Yaggi <Stick Cook>
 				["coord"] = { 49.6, 26.2, NERUBAR },
 				["sym"] = {{"select","itemID",
 					221850,	-- Freshly Webbed Kebab (PET!)
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 59.9, 31.6, NERUBAR_LOWER },
 				["groups"] = {
 					i(223972),	-- Cracked Weavershell
-					i(223973),	-- Sticky Gossamer Sac]
+					i(223973),	-- Sticky Gossamer Sac
 					i(223974),	-- Jostling Ovoid
 					i(223975),	-- Suspiciously Heavy Egg
 					i(223976),	-- Yesterday's Eggs

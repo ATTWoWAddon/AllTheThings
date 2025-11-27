@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						76441,	-- Grim Reprisal
 					},
 					["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
-					["coord"] = { 536, 50.9, EMERALD_DREAM },
+					["coord"] = { 53.6, 50.9, EMERALD_DREAM },
 					["groups"] = {
 						i(209900),	-- Chartreuse Champion's Shoulderplates
 						i(209899),	-- Fearless Faerie's Shoulderpads
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				q(76443, {	-- The Looming Cinder
-					["sourceQuests"] = { 76442 },	-- Forlorn Hop
+					["sourceQuests"] = { 76442 },	-- Forlorn Hope
 					["provider"] = { "n", 211193 },	-- Tyrande Whisperwind
 					["coord"] = { 36.1, 50.8, EMERALD_DREAM },
 					["groups"] = {
@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
 				}),
 				q(76283, {	-- Andu-falah-dor
-					["sourceQuests"] = { 76281 },	-- New Moon (TOD): 76282 & 77781 also required?)
+					["sourceQuests"] = { 76281 },	-- New Moon (TODO: 76282 & 77781 also required?)
 					["provider"] = { "n", 206849 },	-- Merithra of the Dream
 					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
 					["groups"] = {
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			-- Sprout weekly?
 			q(77677, {	-- Some Water...
-				["description"] = "Dismount, and click through dialoge to obtain quest.",
+				["description"] = "Dismount, and click through dialogue to obtain quest.",
 				-- ["sourceQuests"] = {
 				-- 	77283,	-- A Multi-Front Battle
 				-- 	77887,	-- 'World Quest Unlock' (spellID 421687)

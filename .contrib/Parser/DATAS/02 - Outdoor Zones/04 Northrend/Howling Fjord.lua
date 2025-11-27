@@ -92,7 +92,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
-							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occaasionally as a secondary pet.",
+							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",
 							["coord"] = { 56.5, 51.0, HOWLING_FJORD },
 						}),
 						pet(644, {	-- Fjord Rat (PET!)

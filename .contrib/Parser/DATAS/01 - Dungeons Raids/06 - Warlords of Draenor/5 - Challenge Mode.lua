@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			["sym"] = {{"meta_achievement",
 				8882,	-- Auchindoun: Gold
 				8878,	-- Bloodmaul Slag Mines: Gold
-				8880,	-- Grimrail Depot: Gold
+				8890,	-- Grimrail Depot: Gold
 				9000,	-- Iron Docks: Gold
 				8886,	-- Shadowmoon Burial Grounds: Gold
 				8874,	-- Skyreach: Gold

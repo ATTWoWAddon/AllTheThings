@@ -5959,7 +5959,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_INSCRIPTION_KNOWLEDGE),
+				currency(MID_INSCRIPTION_KNOWLEDGE),
 			},
 		},{
 			q(83264, {	-- TWW Weekly Inscription Knowledgepoint #1

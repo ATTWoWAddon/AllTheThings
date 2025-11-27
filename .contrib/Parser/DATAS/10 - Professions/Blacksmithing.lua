@@ -1378,7 +1378,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_BLACKSMITHING_KNOWLEDGE),
+				currency(MID_BLACKSMITHING_KNOWLEDGE),
 			},
 		}, {
 			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1

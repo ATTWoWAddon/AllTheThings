@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			battlepets({
 				["sym"] = {{"select","speciesID",
 					385,	-- Mouse (PET!)
-					386,	-- Prarie Dog (PET!)
+					386,	-- Prairie Dog (PET!)
 					378,	-- Rabbit (PET!)
 				}},
 				["groups"] = {
@@ -1825,7 +1825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/6 Stalker Claws
-							["provider"] = { "i", 4801 },	-- Thunderhorn Totem
+							["provider"] = { "i", 4801 },	-- Stalker Claws
 							["cr"] = 2959,	-- Prairie Stalker
 						}),
 						objective(2, {	-- 0/6 Cougar Claws

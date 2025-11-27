@@ -200,7 +200,7 @@ root(ROOTS.ExpansionFeatures,
 				q(35997, {	-- Empire's Fall
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
-						39022,	-- Call of the Archmage <<-Check this
+						39022,	-- Call of the Archmage	TODO:Check this
 					},
 					["qg"] = 83823,	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
@@ -220,7 +220,7 @@ root(ROOTS.ExpansionFeatures,
 				q(35998, {	-- Legacy of the Sorcerer Kings
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
-						39022,	-- Call of the Archmage <<--Check this
+						39022,	-- Call of the Archmage	TODO:Check this
 					},
 					["qg"] = 83823,	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },

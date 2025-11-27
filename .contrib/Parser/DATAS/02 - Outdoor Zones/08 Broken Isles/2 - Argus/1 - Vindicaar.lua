@@ -427,7 +427,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(49014, {	-- The Burning Throne
-							["sourceQuests"] = { 48559 },	-- An Oferring of Light
+							["sourceQuests"] = { 48559 },	-- An Offering of Light
 							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 							["coords"] = {
 								{ 59.1, 20.2, EREDATH },
@@ -438,7 +438,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(48203, {	-- The Burning Throne
-							["sourceQuests"] = { 47654 },	-- An Oferring of Light
+							["sourceQuests"] = { 47654 },	-- Seat of the Triumvirate: The Crest of Knowledge
 							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 							["coord"] = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
@@ -492,7 +492,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(47287, {	-- The Vindicaar Matrix Core
-							["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
+							["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 							["coords"] = {
 								{ 43.7, 29.2, THE_VINDICAAR_KROKUUN_UPPER },

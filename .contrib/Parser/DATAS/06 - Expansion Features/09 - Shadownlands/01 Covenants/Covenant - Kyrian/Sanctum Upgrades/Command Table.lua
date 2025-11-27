@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
-									["altQuests"] = { 61860 },	-- Adenturer: Pelodis
+									["altQuests"] = { 61860 },	-- Adventurer: Pelodis
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["DisablePartySync"] = true,
@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
-									["altQuests"] = { 61859 },	-- Adenturer: Nemea
+									["altQuests"] = { 61859 },	-- Adventurer: Nemea
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["DisablePartySync"] = true,

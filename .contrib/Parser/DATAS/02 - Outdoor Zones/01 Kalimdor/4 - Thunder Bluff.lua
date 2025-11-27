@@ -1173,7 +1173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2209,	-- Kris
 						923,	-- Longsword
 						2526,	-- Main Gauche
-						2208,	-- Poniad
+						2208,	-- Poniard
 						20977,	-- Recruit's Shortsword
 						2534,	-- Rondel
 						2027,	-- Scimitar

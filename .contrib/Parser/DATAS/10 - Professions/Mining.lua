@@ -1530,7 +1530,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_MINING_KNOWLEDGE),
+				currency(MID_MINING_KNOWLEDGE),
 			},
 		},{
 			q(83054, {	-- TWW Weekly Mining Knowledgepoint #1

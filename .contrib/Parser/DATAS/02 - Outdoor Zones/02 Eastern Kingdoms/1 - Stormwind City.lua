@@ -99,14 +99,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			petbattles({
-				n(63596, {	-- Audrey Burnheap <Battle Pet Tamer>
+				n(63596, {	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["description"] =
 						-- #if BEFORE 9.0.3
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quests might not be given until the daily reset.",
 						-- #else
-						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until the daily reset.",
 						-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- Horde Shared Account-Wide Pet Battle Intro Quests
 						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					},
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
 					["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
 					-- ["altQuests"] = { 31967 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["maps"] = { THE_HINTERLANDS, EASTERN_PLAGUELANDS, SEARING_GORGE, SWAMP_OF_SORROWS, BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
 					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
 					-- ["altQuests"] = { 31891 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31927, {	-- Battle Pet Tamers: Northrend (A)
 					["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
 					-- ["altQuests"] = { 31929 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						31976,	-- The Returning Champion (A)
 					},
 					-- ["altQuests"] = { 31921 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(31930, {	-- Battle Pet Tamers: Pandaria (A)
 					["sourceQuest"] = 31985,	-- The Triumphant Return (A)
 					-- ["altQuests"] = { 31952 },
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31316, {	-- Julia, The Pet Tamer
 					["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
-					["qg"] = 63596,	-- Audrey Burnhelp
+					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { ELWYNN_FOREST },
@@ -1462,7 +1462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								898,	-- Nightbane Worgen
 							},
 						}),
-						objective(1, {	-- 0/1 Burning Rock
+						objective(2, {	-- 0/1 Burning Rock
 							["provider"] = { "i", 6845 },	-- Burning Rock
 							["coord"] = { 74.2, 77.8, DUSKWOOD },
 							["cr"] = 6170,	-- Gutspill

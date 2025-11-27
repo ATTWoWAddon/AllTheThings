@@ -617,7 +617,7 @@ root(ROOTS.Zones, {
 					}),
 					q(29944, {  -- Leaders Among Breeders
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
-						["qg"] = 56133,	-- Chen Stormsout
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88375),	-- Turnip Punching Bag (TOY!)
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, {
 					q(30032, {	-- The Quest for Better Barley
 						["sourceQuests"] = {
 							30029,	-- Wee Little Shenanigans
-							30030,	-- Out of Spite
+							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 						},
 						["qg"] = 57211,	-- Grainlord Kai
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(99858)),	-- Tyrannical Gladiator's Boots of Alacrity
 								moh(2, i(99904)),	-- Tyrannical Gladiator's Boots of Cruelty
-								moh(2, i(99826)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(99826)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(99912)),	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(99817)),	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(99913)),	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
@@ -1894,7 +1894,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(103230)),	-- Grievous Gladiator's Boots of Alacrity
 								moh(2, i(103276)),	-- Grievous Gladiator's Boots of Cruelty
-								moh(2, i(103199)),	-- Grievous Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(103199)),	-- Grievous Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(103284)),	-- Grievous Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(103190)),	-- Grievous Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(103285)),	-- Grievous Gladiator's Footguards of Meditation (Mail)
@@ -2518,7 +2518,7 @@ root(ROOTS.Zones, {
 							n(FEET, {
 								moh(2, i(91597)),	-- Malevolent Gladiator's Boots of Alacrity
 								moh(2, i(91690)),	-- Malevolent Gladiator's Boots of Cruelty
-								moh(2, i(91539)),	-- Malevolent Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(91539)),	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(91705)),	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(91522)),	-- Malevolent Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(91707)),	-- Malevolent Gladiator's Footguards of Meditation (Mail)
@@ -2816,7 +2816,7 @@ root(ROOTS.Zones, {
 								-- From Celestials/Vendor
 								moh(2, i(102716)),	-- Prideful Gladiator's Boots of Alacrity
 								moh(2, i(102660)),	-- Prideful Gladiator's Boots of Cruelty
-								moh(2, i(102631)),	-- Prideful Gladiator's Footguards of Alacrity (Leahter)
+								moh(2, i(102631)),	-- Prideful Gladiator's Footguards of Alacrity (Leather)
 								moh(2, i(102664)),	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 								moh(2, i(102760)),	-- Prideful Gladiator's Footguards of Meditation (Leather)
 								moh(2, i(102623)),	-- Prideful Gladiator's Footguards of Meditation (Mail)

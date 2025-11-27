@@ -4002,7 +4002,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(REAGENTS, {
 		-- Table of Content:
 		-- 	Cloth + Silk
-		-- 	Elemetal reagents
+		-- 	Elemental reagents
 		-- 	Clams
 		-- 	Cooking reagents
 		-- 	Sacks of Gems

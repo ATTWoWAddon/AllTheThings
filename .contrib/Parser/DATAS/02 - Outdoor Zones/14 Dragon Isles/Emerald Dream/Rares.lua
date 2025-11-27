@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					210161,	-- Ristar, the Rabid
 					209358,	-- Splinterlimb
 					210111,	-- Surging Lasher
-					209902,	-- Talthonel Ashwhisper
+					209902,	-- Talthonei Ashwhisper
 					209911,	-- The Apostle
 					210508,	-- Voracious Mikanji
 				},

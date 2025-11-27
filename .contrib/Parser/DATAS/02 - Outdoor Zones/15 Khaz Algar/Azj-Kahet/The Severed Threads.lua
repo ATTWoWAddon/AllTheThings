@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["crs"] = { 226483 },	-- Dig Spot
 				},{
 					["groups"] = bubbleDownFiltered({
-						["sharedDescription"] = "Talk to Dor'garad to reveal the Dig Spots. Interract with them to fill the progress bar. After you are done, he'll throw the treasure to you.\nOnly available if your weekly pact is with The General.",
+						["sharedDescription"] = "Talk to Dor'garad to reveal the Dig Spots. Interact with them to fill the progress bar. After you are done, he'll throw the treasure to you.\nOnly available if your weekly pact is with The General.",
 					},FILTERFUNC_objectID,{
 						o(455279, {	-- Vizier's Appreciation
 							["provider"] = { "n", 224900 },	-- Dor'garad

@@ -1408,7 +1408,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_TAILORING_KNOWLEDGE),
+				currency(MID_TAILORING_KNOWLEDGE),
 			},
 		},{
 			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1

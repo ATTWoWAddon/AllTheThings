@@ -2695,7 +2695,7 @@ root(ROOTS.Zones, {
 							i(101864),	-- Cranefeather Britches
 							i(101865),	-- Cranefeather Gloves
 							i(101866),	-- Cranefeather Hood
-							i(101867),	-- Cranefeather Ferkin
+							i(101867),	-- Cranefeather Jerkin
 							i(101868),	-- Cranefeather Shoulders
 							i(101869),	-- Cranefeather Waistband
 							i(101781),	-- Fire-Chanter Bindings
@@ -2807,14 +2807,14 @@ root(ROOTS.Zones, {
 							i(101843),	-- Crimsonscale Legguards
 							i(101844),	-- Crimsonscale Spaulders
 							i(101845),	-- Crimsonscale Vest
-							i(101830),	-- Ordon Leagend-Keeper Belt
-							i(101831),	-- Ordon Leagend-Keeper Bracers
-							i(101832),	-- Ordon Leagend-Keeper Gauntlets
-							i(101833),	-- Ordon Leagend-Keeper Greaves
-							i(101834),	-- Ordon Leagend-Keeper Helm
-							i(101835),	-- Ordon Leagend-Keeper Legguards
-							i(101836),	-- Ordon Leagend-Keeper Spaulders
-							i(101837),	-- Ordon Leagend-Keeper Vestments
+							i(101830),	-- Ordon Legend-Keeper Belt
+							i(101831),	-- Ordon Legend-Keeper Bracers
+							i(101832),	-- Ordon Legend-Keeper Gauntlets
+							i(101833),	-- Ordon Legend-Keeper Greaves
+							i(101834),	-- Ordon Legend-Keeper Helm
+							i(101835),	-- Ordon Legend-Keeper Legguards
+							i(101836),	-- Ordon Legend-Keeper Spaulders
+							i(101837),	-- Ordon Legend-Keeper Vestments
 						},
 					}),
 					i(102273, {	-- Timeless Mail Helm

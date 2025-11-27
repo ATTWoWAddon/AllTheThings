@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 							i(94190),	-- Spectral Porcupette (PET!)
 						},
 					}),
-					q(32617, {	-- A Mountian of Dinosaur Bones
+					q(32617, {	-- A Mountain of Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
 						["cost"] = {{ "i", 94288, 9999 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,

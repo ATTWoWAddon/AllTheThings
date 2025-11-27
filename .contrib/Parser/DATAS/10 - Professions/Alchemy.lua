@@ -1181,7 +1181,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ALCHEMY_KNOWLEDGE),
+				currency(MID_ALCHEMY_KNOWLEDGE),
 			},
 		}, {
 			i(228773),	-- Algari Alchemist's Notebook

@@ -792,7 +792,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 	filter(REAGENTS, {
 		-- Table of Content:
 		-- 	Cloth + Silk
-		-- 	Elemetal reagents
+		-- 	Elemental reagents
 		-- 	Clams
 		-- 	Cooking reagents
 		-- 	Other reagents
