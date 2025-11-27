@@ -3,7 +3,15 @@ P8xx = createHeader({
 	icon = [[~_.asset("Expansion_BFA")]],
 	text = {
 		en = "Patch 8.x.x",
+		-- TODO: de = "",
 		es = "Parche 8.x.x",
 		mx = "Parche 8.x.x",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });

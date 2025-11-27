@@ -3,6 +3,14 @@ TIER_FOUR = createHeader({
 	-- icon = "", Uses different Icons
 	text = {
 		en = [[~string.format(COVENANT_SANCTUM_TIER, 4)]],
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "T4套装",
 		tw = "T4套裝",
 	},

@@ -16,7 +16,15 @@ LEGENDARIES = createHeader({
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
 		en = [[~LOOT_JOURNAL_LEGENDARIES]],
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Легендарные предметы",
 		cn = [[~ITEM_QUALITY5_DESC]],
+		-- TODO: tw = "",
 	},
 });

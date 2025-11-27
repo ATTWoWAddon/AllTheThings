@@ -3,7 +3,15 @@ P1xx = createHeader({
 	icon = [[~_.asset("Expansion_CLASSIC")]],
 	text = {
 		en = "Patch 1.x.x",
+		-- TODO: de = "",
 		es = "Parche 1.x.x",
 		mx = "Parche 1.x.x",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });

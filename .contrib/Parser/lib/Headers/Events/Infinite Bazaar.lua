@@ -17,8 +17,16 @@ INFINITE_BAZAAR = createHeader({
 	-- #if BEFORE 11.2.5
 	description = {
 		en = "The Infinite Bazaar has multiple locations.",
+		-- TODO: de = "",
 		es = "El Bazar Infinito tiene varias ubicaciones.",
 		mx = "El Bazar Infinito tiene varias ubicaciones.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 	-- #endif
 });

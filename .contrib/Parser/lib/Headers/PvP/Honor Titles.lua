@@ -5,11 +5,28 @@ HONOR_TITLES = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Honor Titles",
+		-- TODO: de = "",
 		es = "Titulos de honor",
 		mx = "Titulos de honor",		
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
+		-- TODO: tw = "",
 		-- #else
 		en = [[~HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES]],
-		-- #endif
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: de = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
+		-- TODO: tw = "",
+		-- #endif
 	},
 });

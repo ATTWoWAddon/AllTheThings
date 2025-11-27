@@ -7,11 +7,15 @@ ALL_ROLES = createHeader({
 	-- #endif
 	text = {
 		en = "All Roles",
-		es = "Todos los roles",
 		de = "Alle Rollen",
-		fr = "Tous les Rôles",
+		es = "Todos los roles",
 		mx = "Todos los roles",
+		fr = "Tous les Rôles",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Все роли",
 		cn = "全部职责",
+		-- TODO: tw = "",
 	},
 });

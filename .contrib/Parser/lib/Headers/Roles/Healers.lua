@@ -3,11 +3,15 @@ HEALER_ROLE = createHeader({
 	icon = 136042,
 	text = {
 		en = "Healers",
-		es = "Sanador",
 		de = "Heiler",
-		fr = "Soigneurs",
+		es = "Sanador",
 		mx = "Sanador",
+		fr = "Soigneurs",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Лекарь",
 		cn = "治疗者",
+		-- TODO: tw = "",
 	},
 });

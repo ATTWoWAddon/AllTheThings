@@ -3,14 +3,15 @@ COVENANT_ASSAULTS = createHeader({
 	icon = 236373,
 	text = {
 		en = "Covenant Assaults",
-		es = "Asaltos de las Curias",
 		de = "Paktangriffe",
+		es = "Asaltos de las Curias",
+		mx = "Asaltos de los pactos",
 		fr = "Assauts de congrégation",
 		it = "Assalti delle Congreghe",
-		mx = "Asaltos de los pactos",
+		ko = "성약의 습격",
 		pt = "Ataques Pactos",
 		ru = "Нападения Ковенантов",
-		ko = "성약의 습격",
 		cn = "盟约突袭",
+		-- TODO: tw = "",
 	},
 });

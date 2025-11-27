@@ -4,8 +4,14 @@ DPS_ROLE = createHeader({
 	text = {
 		en = "DPS",
 		de = "DDs",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		fr = "Dégâts",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Боец",
 		cn = "伤害输出",
+		-- TODO: tw = "",
 	},
 });

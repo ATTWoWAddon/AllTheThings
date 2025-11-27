@@ -3,10 +3,15 @@ WEEKLY_PROFESSION_KNOWLEDGE = createHeader({
 	icon = 237446,
 	text = {
 		en = "Weekly Profession Knowledge",
+		-- TODO: de = "",
 		es = "Conocimiento de profesión semanal",
-		fr = "Connaissance hebdomadaire de profession",
 		mx = "Conocimiento de profesión semanal",
+		fr = "Connaissance hebdomadaire de profession",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Еженедельные Очки Знаний Профессий",
 		cn = "每周专业知识",
+		-- TODO: tw = "",
 	},
 });

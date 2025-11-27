@@ -10,9 +10,13 @@ COMMON_VENDOR_ITEMS = createHeader({
 		-- [[~BATTLE_PET_BREED_QUALITY2.." "..BATTLE_PET_SOURCE_3 .. " " .. ITEMS]]
 		-- Technically you can use the above string, but it's kinda dirty.
 		en = "Common Vendor Items",
+		-- TODO: de = "",
 		es = "Objetos comunes entre vendedores",
-		fr = "Objets communs des vendeurs",
 		mx = "Objetos comunes entre vendedores",
+		fr = "Objets communs des vendeurs",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Обычные предметы у Торговцев",
 		cn = "商人共同物品",
 		tw = "商人共通物品",

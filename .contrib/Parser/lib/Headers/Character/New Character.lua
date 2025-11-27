@@ -3,14 +3,15 @@ NEW_CHARACTER = createHeader({
 	icon = 1530081,
 	text = {
 		en = "New Character",
-		es = "Nuevo personaje",
 		de = "Neuer Charakter",
+		es = "Nuevo personaje",
+		mx = "Nuevo personaje",
 		fr = "Nouveau personnage",
 		it = "Nuovo personaggio",
-		mx = "Nuevo personaje",
+		ko = "새로운 캐릭터",
 		pt = "Novo personagem",
 		ru = "Новый персонаж",
-		ko = "새로운 캐릭터",
 		cn = "新角色",
+		-- TODO: tw = "",
 	},
 });

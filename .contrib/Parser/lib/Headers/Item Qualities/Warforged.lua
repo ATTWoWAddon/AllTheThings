@@ -3,8 +3,16 @@ WARFORGED = createHeader({
 	icon = 450907,
 	text = {
 		en = "Warforged",
+		-- TODO: de = "",
 		es = "Forjado por la guerra",
 		mx = "Forjas de la guerra",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 });
 

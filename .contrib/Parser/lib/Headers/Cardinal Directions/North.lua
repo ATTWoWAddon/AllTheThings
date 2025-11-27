@@ -3,10 +3,15 @@ NORTH = createHeader({
 	icon = 450907,
 	text = {
 		en = "North",
+		-- TODO: de = "",
 		es = "Norte",
-		fr = "Nord",
 		mx = "Norte",
+		fr = "Nord",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
 		ru = "Север",
 		cn = "北部",
+		-- TODO: tw = "",
 	},
 });
