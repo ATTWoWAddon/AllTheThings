@@ -188,38 +188,38 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_LA
 		n(252873, {	-- Morta Gage <Decor Specialist>
 			["coord"] = { 42.0, 50.1, ARCANTINA },
 			["groups"] = {
-				i(253176, {	-- Ancient Zandalari Ritual Scroll
-					["cost"] = {{"c", 3316, 750}},
+				i(253176, {	-- Ancient Zandalari Ritual Scroll (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
-				i(253598, {	-- Banner of the Ebon Blade
-					["cost"] = {{"c", 3316, 8000}},
+				i(253598, {	-- Banner of the Ebon Blade (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 8000}},
 				}),
-				i(253543, {	-- Clefthoof Hide Rug
-					["cost"] = {{"c", 3316, 750}},
+				i(253543, {	-- Clefthoof Hide Rug (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
-				i(253174, {	-- Dried Gilnean Roses
-					["cost"] = {{"c", 3316, 750}},
+				i(253174, {	-- Dried Gilnean Roses (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
-				i(253175, {	-- Hyjal Climbing Vine
-					["cost"] = {{"c", 3316, 2500}},
+				i(253175, {	-- Hyjal Climbing Vine (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 2500}},
 				}),
-				i(253178, {	-- Inactive Filigree Moon Lamp
-					["cost"] = {{"c", 3316, 750}},
+				i(253178, {	-- Inactive Filigree Moon Lamp (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
-				i(253179, {	-- Ornamental Proudmoore Anchor
-					["cost"] = {{"c", 3316, 2500}},
+				i(253179, {	-- Ornamental Proudmoore Anchor (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 2500}},
 				}),
-				i(253177, {	-- Pylon Fragment
-					["cost"] = {{"c", 3316, 2500}},
+				i(253177, {	-- Pylon Fragment (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 2500}},
 				}),
-				i(253700, {	-- Sandy Vulpera Banner
-					["cost"] = {{"c", 3316, 2500}},
+				i(253700, {	-- Sandy Vulpera Banner (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 2500}},
 				}),
-				i(253542, {	-- Scarred Orcish Spear
-					["cost"] = {{"c", 3316, 750}},
+				i(253542, {	-- Scarred Orcish Spear (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
-				i(253544, {	-- Weathered History of the Warchiefs
-					["cost"] = {{"c", 3316, 750}},
+				i(253544, {	-- Weathered History of the Warchiefs (DECOR!)
+					["cost"] = {{"c", VOIDLIGHT_MARL, 750}},
 				}),
 			},
 		}),

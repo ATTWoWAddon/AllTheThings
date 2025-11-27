@@ -1198,6 +1198,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(63797),	-- Eye of Despair
 						i(63796),	-- Dark-Eye Ring
+						i(246427, {	-- Dilapidated Wildhammer Well (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						-- #if BEFORE MOP
 						i(63798, {	-- Winged Axe
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -3154,6 +3157,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48368,	-- Grundy MacGraff
 					["coord"] = { 54.2, 16.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(28149, {	-- Whispers in the Wind
 					["sourceQuest"] = 28133,	-- Fury Unbound
@@ -3229,6 +3237,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 					},
 				}),
+				n(253227, {	-- Breana Bitterbrand <Decor Specialist>
+					["coord"] = { 49.6, 29.6, TWILIGHT_HIGHLANDS },
+					["timeline"] = { ADDED_11_2_7 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(246427, {	-- Dilapidated Wildhammer Well (DECOR!)
+							["sourceQuest"] = 28244,	-- Eye Spy
+							["cost"] = {{ "g", 10000000 }},	-- 1,000g
+						}),
+						i(246108, {	-- Embellished Dwarven Tome (DECOR!)
+							["minReputation"] = { FACTION_WILDHAMMER_CLAN, HONORED },	-- Wildhammer Clan, Honored
+							["cost"] = {{ "g", 20000000 }},	-- 2,000g
+						}),
+						i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
+							["sourceQuest"] = 28655,	-- Wild, Wild, Wildhammer Wedding
+							["cost"] = {{ "g", 15000000 }},	-- 1,500g
+						}),
+						i(246425, {	-- Round Dwarven Table (DECOR!)
+							["minReputation"] = { FACTION_WILDHAMMER_CLAN, FRIENDLY },	-- Wildhammer Clan, Friendly
+							["cost"] = {{ "g", 4000000 }},	-- 400g
+						}),
+					},
+				}),
 				n(49605, {	-- Brian Terrel <Bowyer>
 					["coord"] = { 43.8, 57.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -3265,9 +3296,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{	-- Neutral
 						},
 						{	-- Friendly
+							i(246425, {	-- Round Dwarven Table (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{ "g", 4000000 }},	-- 400g
+							}),
 							i(65908),	-- Tabard of the Wildhammer Clan
 						},
 						{	-- Honored
+							i(246108, {	-- Embellished Dwarven Tome (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{ "g", 20000000 }},	-- 2,000g
+							}),
 							i(62423),	-- Helm of the Skyborne
 							i(62426),	-- Mantle of Wild Feathers
 							i(62424),	-- Gloves of Aetherial Rumors

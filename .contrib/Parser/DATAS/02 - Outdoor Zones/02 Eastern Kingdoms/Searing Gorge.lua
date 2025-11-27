@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					q(84356, {	-- Oh, Shiny!
 						["qg"] = 14624,	-- Master Smith Burninate <The Thorium Brotherhood>
-						["coord"] = { 38.6, 28.6, SEARING_GORGE },
+						["coord"] = { 38.8, 28.5, SEARING_GORGE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Flamestone Cluster
 								["provider"] = { "i", 227767 },	-- Flamestone Cluster
@@ -1468,6 +1468,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47393,	-- Mountain-Lord Rendan
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(245333, {	-- Shadowforge Wooden Box (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(28032, {	-- The Mysteries of the Fire-Gizzard
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
@@ -1709,6 +1714,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63242, {	-- Amulet of the Thorium Brotherhood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(246409, {	-- Shadowforge Grinding Wheel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(7722, {	-- What the Flux?
@@ -1916,7 +1924,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["coord"] = { 37.0, 48.9, SEARING_GORGE },
 					["timeline"] = { ADDED_7_1_5 },
-					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
+					["cost"] = {{ "i", 142359, 1 }},	-- Lava Oil
 					["groups"] = {
 						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
 							["timeline"] = { ADDED_7_1_5 },
@@ -1940,6 +1948,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			n(VENDORS, {
+				n(14624, {	-- Master Smith Burninate <The Thorium Brotherhood>
+					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["groups"] = {
+						i(246409, {	-- Shadowforge Grinding Wheel (DECOR!)
+							["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "g", 5600000 }},	-- 560g
+						}),
+						i(245333, {	-- Shadowforge Wooden Box (DECOR!)
+							["sourceQuest"] = 28065,	-- The Mountain-Lord's Support
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = {{ "g", 1200000 }},	-- 120g
+						}),
+					},
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(62916, {	-- Dark Iron Bullet
 					["description"] = "In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",

@@ -5293,7 +5293,6 @@ root(ROOTS.Unsorted, {
 				i(241043),	-- Elodor Barrel
 				i(241066),	-- Forsaken Spiked Brazier
 				i(241067),	-- Large Forsaken Spiked Brazier
-				i(243335),	-- Tauren Bluff Rug
 				i(244313),	-- Orcish Fence
 				i(244321),	-- Orcish Lumberjack's Stool
 				i(244322),	-- Frostwolf Banded Stool
@@ -5319,7 +5318,6 @@ root(ROOTS.Unsorted, {
 				i(245315),	-- Trashfire Barrel
 				i(245320),	-- Very Reliable Undermine Lamppost
 				i(245321),	-- Rust-Plated Storage Barrel
-				i(245333),	-- Shadowforge Wooden Box
 				i(245413),	-- Zandalari Sconce
 				i(245422),	-- Draenic Bookcase
 				i(245425),	-- Hanging Draenethyst Light
@@ -5366,15 +5364,8 @@ root(ROOTS.Unsorted, {
 				i(246002),	-- Red Suramar Seat Cushion
 				i(246089),	-- Bel'ameth Wooden Table
 				i(246100),	-- Small Bel'ameth Tent
-				i(246108),	-- Embellished Dwarven Tome
 				i(246110),	-- Filigree Moon Sconce
-				i(246409),	-- Shadowforge Grinding Wheel
-				i(246411),	-- Ironforge Bookcase
-				i(246412),	-- Small Ironforge Bookcase
 				i(246424),	-- Square Stormpike Table
-				i(246425),	-- Round Dwarven Table
-				i(246427),	-- Dilapidated Wildhammer Well
-				i(246428),	-- Overgrown Wildhammer Fountain
 				i(246480),	-- Automated Gnomeregan Guardian
 				i(246481),	-- Retired Industrial Gnomegrabber
 				i(246482),	-- Mechanical Gnomish Lamppost

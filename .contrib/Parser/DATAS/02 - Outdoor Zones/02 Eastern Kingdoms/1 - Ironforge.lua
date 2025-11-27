@@ -1852,6 +1852,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2529,	-- Zweihander
 					}},
 				}),
+				n(246411, {	-- Inge Brightview <Library Display Enthusiast>
+					["coord"] = { 75.4, 9.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_11_2_7 },
+					["groups"] = {
+						i(246411, {	-- Ironforge Bookcase (DECOR!)
+							["cost"] = {{ "g", 7000000 }},	-- 700g
+						}),
+						i(246412, {	-- Small Ironforge Bookcase (DECOR!)
+							["cost"] = {{ "g", 4500000 }},	-- 450g
+						}),
+					},
+				}),
 				n(5155, {	-- Ingrys Stonebrow
 					["coord"] = { 39.2, 5.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

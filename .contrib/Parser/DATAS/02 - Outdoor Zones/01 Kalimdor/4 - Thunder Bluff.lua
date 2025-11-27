@@ -864,6 +864,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
+					["groups"] = {
+						i(243335, {	-- Tauren Bluff Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				q(24540, {	-- War Dance
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
@@ -914,31 +919,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.05, 50.23, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(167860, {	-- Ancient Tauren Talisman
-							["timeline"] = { ADDED_8_2_0 },
-							["races"] = { TAUREN },
-						}),
-						i(45584, {	-- Thunder Bluff Tabard
-							["timeline"] = { ADDED_3_1_0 },
-						}),
-						i(64917, {	-- Cape of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64918, {	-- Mantle of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64919, {	-- Shroud of Thunder Bluff
-							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67534, {	-- Thunder Bluff Satchel
-							["minReputation"] = { FACTION_THUNDER_BLUFF, REVERED },	-- Thunder Bluff, Revered.
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_THUNDER_BLUFF, {
+						{		-- Neutral
+							i(167860, {	-- Ancient Tauren Talisman
+								["timeline"] = { ADDED_8_2_0 },
+								["races"] = { TAUREN },
+							}),
+							i(243335, {	-- Tauren Bluff Rug (DECOR!)
+								["sourceQuest"] = 26397,	-- Walk With The Earth Mother
+								["timeline"] = { ADDED_11_2_7 },
+							}),
+							i(45584, {	-- Thunder Bluff Tabard
+								["timeline"] = { ADDED_3_1_0 },
+							}),
+						}, {	-- Friendly
+						}, {	-- Honored
+						}, {	-- Revered
+							i(67534, {	-- Thunder Bluff Satchel
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+						}, {	-- Exalted
+							i(64917, {	-- Cape of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+							i(64918, {	-- Mantle of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+							i(64919, {	-- Shroud of Thunder Bluff
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+						},
+					}),
 				}),
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
