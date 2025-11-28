@@ -27,6 +27,12 @@ i(233353, 0); -- Light Blue Qiraji Resonating Crystal
 i(233356, 0); -- Orange Qiraji Resonating Crystal
 i(233357, 0); -- Twilight Qiraji Resonating Crystal
 
+-- Phase 7
+i(236662, 0); -- Reins of War
+i(236663, 0); -- Reins of Conquest
+i(236664, 0); -- Reins of Death
+i(236665, 0); -- Reins of Famine
+
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 

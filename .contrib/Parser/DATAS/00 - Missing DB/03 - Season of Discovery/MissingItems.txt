@@ -2006,123 +2006,7 @@ i(235789),	-- Flame of Life
 i(235790),	-- Enchanted Firebrand
 i(235852),	-- Violet Satchel
 i(235867),	-- Scrap of Parchment
-i(236097),	-- Robe of Faith
-i(236098),	-- Belt of Faith
-i(236099),	-- Sandals of Faith
-i(236100),	-- Bindings of Faith
-i(236101),	-- Leggings of Faith
-i(236102),	-- Shoulderpads of Faith
-i(236103),	-- Circlet of Faith
-i(236104),	-- Gloves of Faith
-i(236105),	-- Ring of Faith
-i(236106),	-- Wrists of Faith
-i(236107),	-- Girdle of Faith
-i(236108),	-- Mantle of Faith
-i(236109),	-- Pants of Faith
-i(236110),	-- Crown of Faith
-i(236111),	-- Hands of Faith
-i(236112),	-- Band of Faith
-i(236113),	-- Boots of Faith
-i(236114),	-- Garb of Faith
-i(236115),	-- Redemption Tunic
-i(236116),	-- Ring of Redemption
-i(236117),	-- Redemption Headpiece
-i(236118),	-- Redemption Handguards
-i(236119),	-- Redemption Wristguards
-i(236120),	-- Redemption Girdle
-i(236121),	-- Redemption Legguards
-i(236122),	-- Redemption Spaulders
-i(236123),	-- Redemption Boots
-i(236124),	-- Redemption Vambraces
-i(236125),	-- Redemption Belt
-i(236126),	-- Redemption Shoulderplates
-i(236127),	-- Redemption Leggings
-i(236128),	-- Redemption Helmet
-i(236129),	-- Redemption Gloves
-i(236130),	-- Band of Redemption
-i(236131),	-- Redemption Greaves
-i(236132),	-- Redemption Breastplate
-i(236133),	-- Redemption Bracers
-i(236134),	-- Redemption Waistguard
-i(236135),	-- Redemption Pauldrons
-i(236136),	-- Redemption Legplates
-i(236137),	-- Redemption Crown
-i(236138),	-- Redemption Gauntlets
-i(236139),	-- Loop of Redemption
-i(236140),	-- Redemption Sabatons
-i(236141),	-- Redemption Chestguard
-i(236142),	-- Earthshatter Handguards
-i(236143),	-- Earthshatter Legguards
-i(236144),	-- Earthshatter Headpiece
-i(236145),	-- Earthshatter Spaulders
-i(236146),	-- Earthshatter Boots
-i(236147),	-- Earthshatter Tunic
-i(236148),	-- Earthshatter Girdle
-i(236149),	-- Earthshatter Wristguards
-i(236150),	-- Ring of the Earthshatterer
-i(236151),	-- Earthshatter Bindings
-i(236152),	-- Earthshatter Cord
-i(236153),	-- Earthshatter Mantle
-i(236154),	-- Earthshatter Kilt
-i(236155),	-- Earthshatter Crown
-i(236156),	-- Earthshatter Mitts
-i(236157),	-- Band of the Earthshatterer
-i(236158),	-- Earthshatter Greaves
-i(236159),	-- Earthshatter Embrace
-i(236160),	-- Earthshatter Bracers
-i(236162),	-- Earthshatter Waistguard
-i(236163),	-- Earthshatter Pauldrons
-i(236164),	-- Earthshatter Legplates
-i(236165),	-- Earthshatter Faceguard
-i(236166),	-- Earthshatter Gloves
-i(236167),	-- Loop of the Earthshatterer
-i(236168),	-- Earthshatter Sabatons
-i(236169),	-- Earthshatter Chestguard
-i(236170),	-- Earthshatter Vambraces
-i(236171),	-- Earthshatter Belt
-i(236172),	-- Earthshatter Epaulets
-i(236173),	-- Earthshatter Leggings
-i(236174),	-- Earthshatter Helmet
-i(236175),	-- Earthshatter Grips
-i(236176),	-- Signet of the Earthshatterer
-i(236177),	-- Earthshatter Treads
-i(236179),	-- Earthshatter Armor
-i(236182),	-- Dreamwalker Headpiece
-i(236183),	-- Dreamwalker Wristguards
-i(236184),	-- Dreamwalker Handguards
-i(236185),	-- Dreamwalker Boots
-i(236186),	-- Dreamwalker Tunic
-i(236187),	-- Dreamwalker Girdle
-i(236188),	-- Dreamwalker Legguards
-i(236189),	-- Dreamwalker Spaulders
-i(236190),	-- Ring of the Dreamwalker
-i(236192),	-- Dreamwalker Bindings
-i(236193),	-- Dreamwalker Cord
-i(236194),	-- Dreamwalker Mantle
-i(236195),	-- Dreamwalker Kilt
-i(236196),	-- Dreamwalker Hood
-i(236197),	-- Dreamwalker Mitts
-i(236198),	-- Band of the Dreamwalker
-i(236199),	-- Dreamwalker Sandals
-i(236200),	-- Dreamwalker Leathers
-i(236201),	-- Dreamwalker Bracers
-i(236202),	-- Dreamwalker Waistguard
-i(236203),	-- Dreamwalker Pauldrons
-i(236204),	-- Dreamwalker Leggings
-i(236205),	-- Dreamwalker Headdress
-i(236206),	-- Dreamwalker Gauntlets
-i(236207),	-- Loop of the Dreamwalker
-i(236208),	-- Dreamwalker Sabatons
-i(236209),	-- Dreamwalker Armor
-i(236210),	-- Dreamwalker Wraps
-i(236211),	-- Dreamwalker Sash
-i(236212),	-- Dreamwalker Shoulderpads
-i(236213),	-- Dreamwalker Trousers
-i(236214),	-- Dreamwalker Cowl
-i(236215),	-- Dreamwalker Grips
-i(236216),	-- Signet of the Dreamwalker
-i(236217),	-- Dreamwalker Stompers
-i(236218),	-- Dreamwalker Vest
+
 i(236219),	-- Harbinger of Doom
 i(236220),	-- Necro-Knight's Garb
 i(236221),	-- Misplaced Servo Arm
@@ -2381,10 +2265,6 @@ i(236657),	-- Bubbles' Rotting Branch
 i(236658),	-- Bubbles' Spine Trophy
 i(236660),	-- Bubbles' Troll Tusk
 i(236661),	-- Bubbles' Ribcage of Ribaldy
-i(236662),	-- Reins of War
-i(236663),	-- Reins of Conquest
-i(236664),	-- Reins of Death
-i(236665),	-- Reins of Famine
 i(236690),	-- Glacial Cloak
 i(236692),	-- Glacial Gloves
 i(236693),	-- Glacial Wrists
