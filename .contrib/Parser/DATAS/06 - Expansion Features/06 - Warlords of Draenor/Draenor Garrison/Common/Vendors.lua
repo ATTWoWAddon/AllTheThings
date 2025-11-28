@@ -43,8 +43,10 @@ local FUR_TRADER = {
 		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
 	}),
 	i(127724, {	-- Pattern: Mighty Hexweave Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
@@ -53,8 +55,10 @@ local FUR_TRADER = {
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 	}),
 	i(127742, {	-- Pattern: Savage Hexweave Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
@@ -167,8 +171,10 @@ local HERB_TRADER = {
 local LEATHER_TRADER = {
 	PRIMAL_SPIRIT,
 	i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
@@ -177,8 +183,10 @@ local LEATHER_TRADER = {
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 	}),
 	i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
@@ -189,8 +197,10 @@ local LEATHER_TRADER = {
 local ORE_TRADER = {
 	PRIMAL_SPIRIT,
 	i(127726, {	-- Design: Mighty Taladite Amplifier (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
@@ -202,20 +212,26 @@ local ORE_TRADER = {
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(127744, {	-- Design: Savage Taladite Amplifier (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
@@ -231,32 +247,42 @@ local ORE_TRADER = {
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(127729, {	-- Schematic: Advanced Muzzlesprocket (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
 	i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127739, {	-- Schematic: Infrablue-Blocker Lenses (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
@@ -272,8 +298,10 @@ local ORE_TRADER = {
 		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
 	}),
 	i(127747, {	-- Schematic: Taladite Firing Pin (RECIPE!)
+		-- #IF AFTER 10.0.5
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
 	}),
