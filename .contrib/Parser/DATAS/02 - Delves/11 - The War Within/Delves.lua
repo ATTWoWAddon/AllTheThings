@@ -3145,8 +3145,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			filter(MISC, {
-				i(233021, {	-- Grappling-Grabber 9000 (QI!)
+				o(503639, {	-- Tools Chest
+					["coord"] = { 43.6, 13.7, EARTHCRAWL_MINES },
 					["timeline"] = { ADDED_11_1_0 },
+					["groups"] = { i(233021) },	-- Grappling-Grabber 9000 (QI!)
 				}),
 				i(213000),	-- Holy Flamethrower Torch (QI!)
 				i(213085, {	-- Lost Treasure (QI!)

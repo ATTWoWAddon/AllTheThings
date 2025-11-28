@@ -155,7 +155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(173704, {	-- Granary Jug (QI!)
 									["timeline"] = { ADDED_9_0_1 },
 								}),
-								o_repeated({	-- -- Sack of Roasted Grain
+								o_repeated({	-- Sack of Roasted Grain
 									["coords"] = {
 										{ 51.1, 60.8, VALLEY_OF_THE_FOUR_WINDS },
 										{ 51.3, 63.3, VALLEY_OF_THE_FOUR_WINDS },

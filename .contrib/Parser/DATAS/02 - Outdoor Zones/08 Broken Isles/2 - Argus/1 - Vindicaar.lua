@@ -321,9 +321,10 @@ root(ROOTS.Zones, {
 								127057,	-- Illidan Stormrage
 							},
 							["coords"] = {
-								{ 40.1, 21.3, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 30.3, 60.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 32.8, 59.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
+								{ 40.1, 21.3, THE_VINDICAAR_KROKUUN_UPPER },
+								{ 47.3, 19.8, THE_VINDICAAR_EREDATH_UPPER },
 								{ 68.8, 26.1, ANTORAN_WASTES },
 							},
 							["isWeekly"] = true,
@@ -373,6 +374,7 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 126954 },	-- High Exarch Turalyon
 							["coords"] = {
 								{ 33.7, 58.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+								{ 34.2, 56.8, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
@@ -484,9 +486,13 @@ root(ROOTS.Zones, {
 						}),
 						q(48277, {	-- The Speaker Seeks
 							["sourceQuests"] = { 48272 },	-- Visions of Fear
-							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+							["qgs"] = {
+								124312,	-- High Exarch Turalyon
+								126954,	-- High Exarch Turalyon
+							},
 							["coords"] = {
 								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+								{ 33.9, 58.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 45.9, 24.1, THE_VINDICAAR_EREDATH_UPPER },
 								{ 39.1, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
 							},
