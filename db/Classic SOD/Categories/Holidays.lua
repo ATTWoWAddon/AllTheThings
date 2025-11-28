@@ -42,7 +42,7 @@ h(-58,{e=13})}}),
 h(-37,{e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerTierTurnIn=100;local tierOneMaxRep=500;if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep);else	local tierTwoMaxRep=1050;if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep);else	local tierThreeMaxRep=1700;if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep);else	local tierFourMaxRep=2500;if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep);else	local tierFiveMaxRep=5001;if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep);end	end	end	end	end	local repPerDeckTurnIn=150;addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000);end	end,g={
-crit(8823,{achID=2336,id=8,u=1609})}})}}),
+crit(8823,{achID=2336,id=1,u=1609})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={{37.3,37.7,1412},{41.6,68.8,1429}},cost={{"i",19182,5}},e=1,lvl=6,qgs={14828},repeatable=1,rwp=40300,g={
 s(163847,19295,{e=1,f=1,q=1,rwp=40300})}}),
