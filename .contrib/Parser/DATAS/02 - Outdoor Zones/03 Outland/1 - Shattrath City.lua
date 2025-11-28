@@ -1701,7 +1701,7 @@ root(ROOTS.Zones, {
 									-- #ENDIF
 									["timeline"] = { ADDED_2_0_1, REMOVED_6_0_2 },
 									["groups"] = {
-										spell(27957, {	-- Enchant Ring - Healing Power
+										r(27957, {	-- Enchant Ring - Healing Power
 											["timeline"] = { ADDED_2_0_1, DELETED_5_0_4 },
 										}),
 									},
