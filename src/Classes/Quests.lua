@@ -675,6 +675,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	local info = {
 		infoText,
 		questChange..": \""..(QuestNameFromID[id] or "???").."\"",
+		OBJREF = questRef,
 	};
 	if checks then
 		for k,v in pairs(checks) do
@@ -794,9 +795,9 @@ PrintQuestInfo = function(questID, new)
 		if nyi then
 			-- Report the output
 			app.Modules.Contributor.AddReportData(
-				questRef.__type,
+				"Quest",
 				questID,
-				BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange),
+				BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange, questRef),
 				"Quest "..questChange.." "..text.." [NYI] ATT "..app.Version)
 			return
 		end
@@ -805,9 +806,9 @@ PrintQuestInfo = function(questID, new)
 		if unsorted then
 			-- Report the output
 			app.Modules.Contributor.AddReportData(
-				questRef.__type,
+				"Quest",
 				questID,
-				BuildDiscordQuestInfoTable(questID, "unsorted-quest", questChange),
+				BuildDiscordQuestInfoTable(questID, "unsorted-quest", questChange, questRef),
 				"Quest "..questChange.." "..text.." [UNS] ATT "..app.Version)
 			return
 		end

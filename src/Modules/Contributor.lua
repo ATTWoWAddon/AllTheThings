@@ -111,6 +111,14 @@ local function DoReport(reporttype, id)
 	reportData.REPORTED = true
 end
 
+local function BuildGenericReportData(objRef, id)
+	return {
+		id = id,
+		name = (objRef and objRef.name or UNKNOWN),
+		type = (objRef and objRef.__type or UNKNOWN),
+		[objRef and objRef.key or "RefID"] = (objRef and objRef[objRef.key]) or UNKNOWN,
+	}
+end
 local function AddReportData(reporttype, id, data, chatlink)
 	-- app.PrintDebug("Contributor.AddReportData",reporttype,id)
 	-- app.PrintTable(data)
@@ -118,6 +126,15 @@ local function AddReportData(reporttype, id, data, chatlink)
 	if reportData.REPORTED then app.PrintDebug("Duplicate Report Ignored",reporttype,id) return end
 
 	if type(data) == "table" then
+		-- if the incoming data has an OBJREF then capture that information into a generic table
+		local objref = data.OBJREF
+		data.OBJREF = nil
+		if objref then
+			local genericData = BuildGenericReportData(objref, id)
+			for k,v in pairs(genericData) do
+				reportData[k] = v
+			end
+		end
 		-- add any ordered data first
 		for i=1,#data do
 			reportData[#reportData + 1] = data[i]
@@ -142,14 +159,6 @@ api.DoReport = function(id, text)
 end
 api.AddReportData = AddReportData
 
-local function BuildGenericReportData(objRef, id)
-	return {
-		id = id,
-		name = (objRef and objRef.name or UNKNOWN),
-		type = (objRef and objRef.__type or UNKNOWN),
-		[objRef and objRef.key or "RefID"] = (objRef and objRef[objRef.key]) or UNKNOWN,
-	}
-end
 
 -- Used to override the precision of coord accuracy based on irregularly sized maps
 -- typically we don't want the report to trigger even when interacting from max range
