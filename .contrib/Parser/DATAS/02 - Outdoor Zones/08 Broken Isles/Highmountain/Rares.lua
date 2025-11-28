@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(RARES, sharedData({ 
+			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
 				-- #IF BEFORE 12.0.0
 				["isDaily"] = true, -- Daily during Legion Remix 2025
@@ -69,7 +69,10 @@ root(ROOTS.Zones, {
 					},
 					["groups"] = {
 						o(245479, {	-- Battered Chest
-							i(131781),	-- Plate Hiking Boots
+							["questID"] = 40612,
+							["groups"] = {
+								i(131781),	-- Plate Hiking Boots
+							},
 						}),
 					},
 				}),
