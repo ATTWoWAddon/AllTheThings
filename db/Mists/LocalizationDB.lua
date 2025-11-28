@@ -1258,7 +1258,7 @@ localize(L.HEADER_NAMES, {
 	[-368] = "Storming the Citadel",
 	[-369] = "The Plagueworks",
 	[-370] = C_Map.GetAreaInfo(4892),
-	[-371] = "The Frostwing Halls",
+	[-371] = C_Map.GetAreaInfo(7932),
 	[-372] = "Cache of Madness",
 	[-388] = C_Map.GetAreaInfo(1769),
 	[-389] = C_Spell.GetSpellName(147343),

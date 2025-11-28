@@ -6256,6 +6256,8 @@ ach(42763,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)th
 ach(61350,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2}),
 ach(42765,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2}),
 ach(61358,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2}),
+ach(61459,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,r=1,rwp=50200,u=2}),
+ach(61460,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,r=2,rwp=50200,u=2}),
 ach(61354,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2,g={
 title(223,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2})}}),
 ach(61362,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,pvp=1,rwp=50200,u=2,g={

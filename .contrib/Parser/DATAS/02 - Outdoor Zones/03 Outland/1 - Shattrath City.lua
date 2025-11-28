@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local RECIPE_UNLEARNABLE;
 local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 	cl(WARRIOR, {
 		-- DPS
@@ -1695,7 +1696,7 @@ root(ROOTS.Zones, {
 								i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
 								i(22537, {	-- Formula: Enchant Ring - Healing Power (RECIPE!)
 									-- #IF AFTER 5.0.4
-									["description"] = REMOVED_RECIPE_UNLEARNABLE,
+									["description"] = RECIPE_UNLEARNABLE,
 									["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 									-- #ENDIF
 									["timeline"] = { ADDED_2_0_1,REMOVED_5_0_4 },

@@ -4593,11 +4593,11 @@ i(57793,{awp=40003,b=1,f=113,q=1})}})}),
 h(-58,{
 n(8359,{coords={{45.6,55.8,88}},r=1,sym={{"select","itemID",236,1849,238,1850,239,237,1843,843,1844,844,846,845}}}),
 n(50483,{awp=40003,coords={{47.05,50.23,88}},r=1,g={
-s(175840,45584,{awp=30100,b=1,f=9,q=1,r=1}),
+s(175840,45584,{awp=30100,b=1,f=9,minReputation={81,0},q=1,r=1}),
+i(67534,{awp=40003,b=1,f=113,minReputation={81,21000},q=2}),
 s(209364,64917,{awp=40003,b=1,f=3,lvl=35,minReputation={81,42000},q=3,r=1}),
 s(209365,64918,{awp=40003,b=1,f=3,lvl=35,minReputation={81,42000},q=3,r=1}),
-s(209366,64919,{awp=40003,b=1,f=3,lvl=35,minReputation={81,42000},q=3,r=1}),
-i(67534,{awp=40003,b=1,f=113,minReputation={81,21000},q=2})}}),
+s(209366,64919,{awp=40003,b=1,f=3,lvl=35,minReputation={81,42000},q=3,r=1})}}),
 n(3019,{coords={{53.8,57.2,88}},r=1,sym={{"select","itemID",926,2025,2523,2029,2522,927,2530,2531,853,12249,1196,37}},g={
 s(124770,12249,{f=22,isLimited=1,lvl=26,q=2})}}),
 n(8360,{coords={{45.2,56.6,88}},r=1,sym={{"select","itemID",17187,847,1845,849,1846,850,848,2445,17188,1853,287,1852,718,286,285,1202}}}),
@@ -17048,7 +17048,7 @@ crit(19481,{achID=6828,awp=50004,id=9,r=2,u=50})}})}),
 h(-32,{
 fp(2,{coords={{71,72.5,84}},crs={352},r=2})}),
 h(-43,{awp=50004,pb=1,g={
-n(63596,{awp=50004,coords={{69.2,25,84}},description="Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",pb=1,r=2,g={
+n(63596,{awp=50004,coords={{69.2,25,84}},description="Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quests might not be given until the daily reset.",pb=1,r=2,g={
 r(119467,{awp=50004,pb=1})}}),
 q(32008,{altQuests={32009},awp=50004,coords={{69.2,25,84}},description="|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,qgs={63596},r=2}),
 q(31878,{altQuests={32009},awp=50004,coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,r=2}),
@@ -18827,7 +18827,8 @@ p(331,{awp=40200,b=1,itemID=72042,npcID=54539,q=1,spellID=101986})}}),
 q(344,{coords={{77.1,30.2,84}},lvl=20,qgs={1440},r=2,rwp=40003,sourceQuests={343},u=2}),
 q(395,{coords={{78.3,70.7,84}},lvl=16,qgs={332},r=2,rwp=40003,sourceQuests={394},u=2}),
 q(1705,{c={1},coords={{59.7,33.8,84}},lvl=20,maps={47},qgs={1416},r=2,rwp=40003,sourceQuests={1700},u=2,g={
-qo(1,{coords={{74.2,77.8,47}},crs={205,206,533,898,920,6170},providers={{"i",6844},{"i",6845}},rwp=40003,u=2})}}),
+qo(1,{coords={{74.2,77.8,47}},crs={205,206,533,898,920},providers={{"i",6844}},rwp=40003,u=2}),
+qo(2,{coords={{74.2,77.8,47}},crs={6170},providers={{"i",6845}},rwp=40003,u=2})}}),
 q(27092,{awp=40003,coords={{37.2,56.4,84}},qgs={50049},r=2,rwp=70003,sourceQuests={27072}}),
 q(7642,{c={2},coords={{59.7,33.8,84}},cost={{"i",12360,6},{"i",14047,40},{"i",8836,10},{"i",13180,5},{"g",1500000}},lvl=60,maps={317},qgs={1416},r=2,rwp=40003,sourceQuests={7641},u=2}),
 q(5634,{altQuests={5635,5636,5637,5638,5639,5640},c={5},coords={{47.2,52.2,27},{43.4,65.6,37},{55.6,56.8,57},{20.8,50.2,84},{38.8,26.6,84},{26.4,7.6,87},{39.6,80.8,89}},lvl=10,qgs={376,377,1226,3600,11397,11401,11406},races={1,3},rwp=30002,u=2}),
@@ -22473,7 +22474,7 @@ q(28246,{awp=40003,coords={{46.3,45.9,36}},qgs={48110},r=2,sourceQuests={28245},
 qo(1,{awp=40003,coords={{40.8,60.2,36}},providers={{"i",63350},{"n",9176}}}),
 qo(2,{awp=40003,coords={{39.2,56.6,36}},providers={{"i",63350},{"n",48099}}}),
 qo(3,{awp=40003,coords={{45.2,52.6,36}},providers={{"i",63350},{"n",48100}}})}}),
-q(28434,{awp=40003,coords={{44.5,44.4,36}},qgs={28432},r=1,sourceQuests={28433},g={
+q(28434,{awp=40003,coords={{44.5,44.4,36}},qgs={48568},r=1,sourceQuests={28433},g={
 qo(1,{awp=40003,coords={{40.8,60.2,36}},providers={{"i",63350},{"n",9176}}}),
 qo(2,{awp=40003,coords={{39.2,56.6,36}},providers={{"i",63350},{"n",48099}}}),
 qo(3,{awp=40003,coords={{45.2,52.6,36}},providers={{"i",63350},{"n",48100}}})}}),
@@ -28845,6 +28846,8 @@ s(125393,13065,{awp=40003,f=27,lvl=45,q=3}),
 s(119360,4091,{awp=40003,f=20,lvl=42,q=3}),
 s(125439,13112,{awp=40003,f=5,lvl=43,q=3}),
 s(125379,13051,{awp=40003,f=26,lvl=39,q=3})}})}),
+h(-58,{
+n(14624,{coords={{38.8,28.5,32}}})}),
 h(-63,{
 i(62916,{awp=40003,crs={8338,8566},description="In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",q=1}),
 i(18944,{crs={9318},q=1}),
@@ -33956,7 +33959,7 @@ s(145097,35359,{awp=20001,b=1,c={11},f=5,lvl=70,minReputation={935,9000},q=3,u=1
 s(145072,35330,{awp=20001,b=1,c={9},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(145087,35345,{awp=20001,b=1,c={8},f=4,lvl=70,minReputation={935,9000},q=3,u=18}),
 r(33999,{awp=20001,b=1,itemID=28273,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
-r(27926,{awp=20001,itemID=22537,learnedAt=370,minReputation={935,21000},requireSkill=333,rwp=60002,u=17}),
+r(27926,{awp=20001,collectible=false,itemID=22537,learnedAt=370,minReputation={935,21000},requireSkill=333,rwp=50004,u=2}),
 r(34010,{awp=20001,b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},rwp=50004,u=2}),
 r(17632,{awp=20001,b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171,u=17}),
@@ -46130,7 +46133,7 @@ crit(83,{achID=41,awp=30002,id=2,u=30})}}),
 ach(1356,{awp=30002,r=1,sourceQuests={11234,11261,11264,11267,11268,11307,11310,11324,11352,11367,11428,11433,11453,11467,11471,11572,12481},u=30,g={
 crit(5049,{achID=41,awp=30002,id=2,u=30})}})}}),
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",646,647,450,378,417,424,388,397,387,412,379}},u=30,g={
-p(523,{awp=50004,coords={{56.5,51,117}},description="Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occaasionally as a secondary pet.",npcID=62640,pb=1,u=30,g={
+p(523,{awp=50004,coords={{56.5,51,117}},description="Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",npcID=62640,pb=1,u=30,g={
 crit(21773,{achID=6588,awp=50004,id=7,pb=1,u=30}),
 crit(19444,{achID=2556,awp=30002,id=6,u=30})}}),
 p(644,{awp=50004,coords={{58,52,117}},description="Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",npcID=62641,pb=1,u=30,g={
