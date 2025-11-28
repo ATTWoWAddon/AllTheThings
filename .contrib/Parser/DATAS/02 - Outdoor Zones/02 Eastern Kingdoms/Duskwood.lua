@@ -2201,13 +2201,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(45811, {	-- Marina DeSirrus
 					["coord"] = { 7.80, 34.2, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 10.1.7
 					["groups"] = {
 						i(920, {	-- Wicked Spiked Mace
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { ADDED_10_1_7 },
 						}),
 					},
-					-- #endif
 				}),
 				n(45771, {	-- Marus
 					["coords"] = {
@@ -2852,21 +2850,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(920, {	-- Wicked Spiked Mace
 					["coords"] = {
-						-- #if AFTER 10.1.7
-						{ 7.8, 33.8, DUSKWOOD },
-						-- #else
 						{ 23.6, 71.6, DUSKWOOD },
 						{ 49.8, 77.8, DUSKWOOD },
-						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3, },	-- Added under Marina DeSirrus in 10.1.7
 					["crs"] = {
-						-- #if AFTER 10.1.7
-						45811,	-- Marina DeSirrus
-						-- #else
 						909,	-- Defias Night Blade
 						215,	-- Defias Night Runner
-						-- #endif
 					},
 				}),
 			}),
