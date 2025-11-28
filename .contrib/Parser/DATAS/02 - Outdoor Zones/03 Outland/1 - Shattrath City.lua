@@ -1699,7 +1699,12 @@ root(ROOTS.Zones, {
 									["description"] = RECIPE_UNLEARNABLE,
 									["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 									-- #ENDIF
-									["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4, DELETED_6_0_2 },
+									["timeline"] = { ADDED_2_0_1, REMOVED_6_0_2 },
+									["groups"] = {
+										spell(27957, {	-- Enchant Ring - Healing Power
+											["timeline"] = { ADDED_2_0_1, DELETED_5_0_4 },
+										}),
+									},
 								}),
 								i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 								i(29191, {	-- Glyph of Power
