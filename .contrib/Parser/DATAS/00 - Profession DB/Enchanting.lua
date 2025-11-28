@@ -300,7 +300,7 @@ i(22533, 27914);	-- Fortitude [Bracers]
 i(28276, 34005);	-- Greater Arcane Resistance [REMOVED: 5.0.4]
 i(22530, 27906);	-- Greater Dodge / TBC: Major Defense [Bracers]
 i(28277, 34006);	-- Greater Shadow Resistance [REMOVED: 5.0.4]
-i(22537, 27926);	-- Healing Power [Ring] [REMOVED: 6.0.2]
+i(22537, 27926);	-- Healing Power [Ring] [REMOVED: 5.0.4]
 i(22539, 27945);	-- Intellect [Shield]
 i(22565, 28022);	-- Large Prismatic Shard
 i(22556, 27977);	-- Major Agility [Weapon]
