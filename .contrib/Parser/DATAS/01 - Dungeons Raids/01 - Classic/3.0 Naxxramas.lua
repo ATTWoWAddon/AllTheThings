@@ -1740,7 +1740,10 @@ applyclassicphase(PHASE_SIX,
 								i(22701),	-- Polar Leggings
 							},
 						}),
-					})),
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					),
+					-- #endif
 					n(ZONE_DROPS, {
 						i(22708),	-- Fate of Ramaladni
 						i(22682, {	-- Frozen Rune
