@@ -487,7 +487,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(21506),	-- Pendant of the Shifting Sands
 					},
 				}),
-			})),
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(21801),	-- Antenna of Invigoration
 				i(21804),	-- Coif of Elemental Fury
