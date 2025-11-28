@@ -1693,7 +1693,13 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
 								applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
 								i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
-								i(22537, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+								i(22537, {	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+									-- #IF AFTER 5.0.4
+									["description"] = REMOVED_RECIPE_UNLEARNABLE,
+									["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+									-- #ENDIF
+									["timeline"] = { ADDED_2_0_1,REMOVED_5_0_4 },
+								}),
 								i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 								i(29191, {	-- Glyph of Power
 									["timeline"] = { REMOVED_5_0_4 },

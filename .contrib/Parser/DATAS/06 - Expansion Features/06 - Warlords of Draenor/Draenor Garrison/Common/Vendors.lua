@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-local WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable but the item still appears on the vendor even though it has no use and is no longer collectible.";
+local REMOVED_RECIPE_UNLEARNABLE = "Blizzard made this recipe unlearnable but the item still appears on the vendor even though it has no use and is no longer collectible.";
 local ALCHEMICAL_CATALYST = 108996;
 local BLACKROCK_ORE = 109118;
 local CERULEAN_PIGMENT = 114931;
@@ -44,7 +44,7 @@ local FUR_TRADER = {
 	}),
 	i(127724, {	-- Pattern: Mighty Hexweave Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
@@ -56,7 +56,7 @@ local FUR_TRADER = {
 	}),
 	i(127742, {	-- Pattern: Savage Hexweave Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
@@ -67,7 +67,7 @@ local HERB_TRADER = {
 	PRIMAL_SPIRIT,
 	i(128161, {	-- Recipe: Elemental Distillate (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
@@ -81,7 +81,7 @@ local HERB_TRADER = {
 	}),
 	i(128160, {	-- Recipe: Wildswater (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
@@ -107,14 +107,14 @@ local HERB_TRADER = {
 	}),
 	i(127723, {	-- Technique: Mighty Ensorcelled Tarot (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 	}),
 	i(127728, {	-- Technique: Mighty Weapon Crystal (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
@@ -122,14 +122,14 @@ local HERB_TRADER = {
 	}),
 	i(127741, {	-- Technique: Savage Ensorcelled Tarot (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 	}),
 	i(127746, {	-- Technique: Savage Weapon Crystal (RECIPE!)
 		-- #if AFTER 9.0.1
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
@@ -172,7 +172,7 @@ local LEATHER_TRADER = {
 	PRIMAL_SPIRIT,
 	i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
@@ -184,7 +184,7 @@ local LEATHER_TRADER = {
 	}),
 	i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
@@ -198,7 +198,7 @@ local ORE_TRADER = {
 	PRIMAL_SPIRIT,
 	i(127726, {	-- Design: Mighty Taladite Amplifier (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -213,7 +213,7 @@ local ORE_TRADER = {
 	}),
 	i(127744, {	-- Design: Savage Taladite Amplifier (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -221,7 +221,7 @@ local ORE_TRADER = {
 	}),
 	i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -229,7 +229,7 @@ local ORE_TRADER = {
 	}),
 	i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -248,7 +248,7 @@ local ORE_TRADER = {
 	}),
 	i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -256,7 +256,7 @@ local ORE_TRADER = {
 	}),
 	i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -264,7 +264,7 @@ local ORE_TRADER = {
 	}),
 	i(127729, {	-- Schematic: Advanced Muzzlesprocket (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -272,7 +272,7 @@ local ORE_TRADER = {
 	}),
 	i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -280,7 +280,7 @@ local ORE_TRADER = {
 	}),
 	i(127739, {	-- Schematic: Infrablue-Blocker Lenses (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
@@ -299,7 +299,7 @@ local ORE_TRADER = {
 	}),
 	i(127747, {	-- Schematic: Taladite Firing Pin (RECIPE!)
 		-- #IF AFTER 10.0.5
-		["description"] = WOD_REMOVED_RECIPE_STR,
+		["description"] = REMOVED_RECIPE_UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
