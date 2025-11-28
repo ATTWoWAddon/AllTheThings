@@ -1726,33 +1726,6 @@ i(233217),	-- Tunneler's Incense
 i(233226),	-- Ancient Zandalarian Rope
 i(233250),	-- Ancient Branch
 i(233358),	-- Tamed Silithid Tank
-i(233417),	-- Mace of Unending Life
-i(233418),	-- Cloak of Unending Life
-i(233419),	-- Band of Unending Life
-i(233420),	-- Cloak of the Unseen Path
-i(233421),	-- Scythe of the Unseen Path
-i(233422),	-- Signet of the Unseen Path
-i(233423),	-- Blade of Vaulted Secrets
-i(233424),	-- Drape of Vaulted Secrets
-i(233425),	-- Band of Vaulted Secrets
-i(233426),	-- Blade of Eternal Justice
-i(233427),	-- Cape of Eternal Justice
-i(233428),	-- Ring of Eternal Justice
-i(233429),	-- Gavel of Infinite Wisdom
-i(233430),	-- Shroud of Infinite Wisdom
-i(233431),	-- Ring of Infinite Wisdom
-i(233432),	-- Cloak of Veiled Shadows
-i(233433),	-- Dagger of Veiled Shadows
-i(233434),	-- Band of Veiled Shadows
-i(233435),	-- Hammer of the Gathering Storm
-i(233436),	-- Cloak of the Gathering Storm
-i(233437),	-- Ring of the Gathering Storm
-i(233438),	-- Shroud of Unspoken Names
-i(233439),	-- Kris of Unspoken Names
-i(233440),	-- Ring of Unspoken Names
-i(233441),	-- Drape of Unyielding Strength
-i(233442),	-- Sickle of Unyielding Strength
-i(233443),	-- Signet of Unyielding Strength
 i(233672),	-- Doomcaller's Pants
 i(233673),	-- Doomcaller's Treads
 i(233696),	-- Stormcaller's Sabatons
@@ -1953,13 +1926,8 @@ i(234800),	-- Simone's Cultivating Hammer
 i(234801),	-- Amulet of the Fallen God
 i(234802),	-- Cloak of the Fallen God
 i(234803),	-- Ring of the Fallen God
-i(234811),	-- Charm of the Shifting Sands
-i(234812),	-- Amulet of the Shifting Sands
-i(234813),	-- Choker of the Shifting Sands
-i(234814),	-- Pendant of the Shifting Sands
 i(234960),	-- Reins of the Blood-Caked Tiger
 i(234961),	-- Whistle of the Blood-Caked Raptor
-i(235048),	-- Head of Ossirian the Unscarred
 i(235142),	-- Blood-Caked Silver Coin
 i(235143),	-- Blood-Caked Gold Coin
 i(235144),	-- Satchel of Blood-Caked Copper Coins
