@@ -1972,7 +1972,7 @@ i(213102),	-- Rune of Wickedness
 i(213109),	-- Rune of Focused Rage
 i(213110),	-- Rune of the Commander
 i(213111),	-- Rune of Intervention
-i(213117),	-- Rune of Berserk
+i(213117),	-- Rune of BerserkDesecrated Pauldrons
 i(213119),	-- Rune of Instinct
 i(213120),	-- Rune of the Dreamer
 i(213122),	-- Rune of Steady Shot
@@ -2225,124 +2225,6 @@ i(236227),	-- Belt of the Grand Crusader
 i(236228),	-- Spaulders of the Grand Crusader
 i(236229),	-- Leggings of the Grand Crusader
 i(236230),	-- Leggings of Elemental Fury
-i(236231),	-- Desecrated Breastplate
-i(236232),	-- Desecrated Waistguard
-i(236233),	-- Desecrated Gauntlets
-i(236234),	-- Desecrated Sabatons
-i(236235),	-- Desecrated Bracers
-i(236236),	-- Desecrated Helmet
-i(236237),	-- Desecrated Pauldrons
-i(236238),	-- Desecrated Legplates
-i(236239),	-- Desecrated Sandals
-i(236240),	-- Desecrated Shoulderpads
-i(236241),	-- Desecrated Circlet
-i(236242),	-- Desecrated Robe
-i(236243),	-- Desecrated Gloves
-i(236244),	-- Desecrated Belt
-i(236245),	-- Desecrated Bindings
-i(236246),	-- Desecrated Leggings
-i(236247),	-- Desecrated Wristguards
-i(236248),	-- Desecrated Boots
-i(236249),	-- Desecrated Headpiece
-i(236250),	-- Desecrated Handguards
-i(236251),	-- Desecrated Tunic
-i(236252),	-- Desecrated Girdle
-i(236253),	-- Desecrated Legguards
-i(236254),	-- Desecrated Spaulders
-i(236255),	-- Wristguards of Vengeance
-i(236256),	-- Touch of Frost
-i(236257),	-- Gem of Nerubis
-i(236258),	-- Cryptfiend Silk Cloak
-i(236259),	-- Band of Unanswered Prayers
-i(236260),	-- Icebane Pauldrons
-i(236261),	-- Malice Stone Pendant
-i(236262),	-- Polar Shoulder Pads
-i(236263),	-- Widow's Remorse
-i(236264),	-- The Widow's Embrace
-i(236265),	-- Wraith Blade
-i(236266),	-- Pendant of Forgotten Names
-i(236267),	-- Crystal Webbed Robe
-i(236268),	-- Kiss of the Spider
-i(236269),	-- Maexxna's Fang
-i(236270),	-- Hatchet of Sundered Bone
-i(236271),	-- Libram of Light
-i(236272),	-- Cloak of the Scourge
-i(236273),	-- Band of the Inevitable
-i(236274),	-- Hailstone Band
-i(236275),	-- Noth's Frigid Heart
-i(236276),	-- Totem of Flowing Water
-i(236277),	-- Necklace of Necropsy
-i(236278),	-- Glacial Headdress
-i(236279),	-- Preceptor's Hat
-i(236280),	-- Legplates of Carnage
-i(236281),	-- Icy Scale Coif
-i(236282),	-- Loatheb's Reflection
-i(236283),	-- Ring of Spiritual Fervor
-i(236284),	-- Brimstone Staff
-i(236285),	-- The Eye of Nerub
-i(236286),	-- Band of Unnatural Forces
-i(236287),	-- Severance
-i(236288),	-- The Plague Bearer
-i(236289),	-- Cloak of Suturing
-i(236290),	-- Wand of Fates
-i(236291),	-- Band of Reanimation
-i(236292),	-- Midnight Haze
-i(236293),	-- Toxin Injector
-i(236294),	-- Icy Scale Spaulders
-i(236295),	-- Glacial Mantle
-i(236296),	-- Death's Bargain
-i(236297),	-- The End of Dreams
-i(236298),	-- Rime Covered Mantle
-i(236299),	-- Claymore of Unholy Might
-i(236300),	-- Gluth's Missing Collar
-i(236301),	-- Digested Hand of Power
-i(236302),	-- Eye of Diminution
-i(236303),	-- Leggings of Polarity
-i(236304),	-- Plated Abomination Ribcage
-i(236305),	-- Spire of Twilight
-i(236306),	-- The Castigator
-i(236307),	-- Veil of Eclipse
-i(236308),	-- Idol of Longevity
-i(236309),	-- Girdle of the Mentor
-i(236310),	-- Wand of the Whispering Dead
-i(236311),	-- Signet of the Fallen Defender
-i(236312),	-- Iblis, Blade of the Fallen Seraph
-i(236313),	-- The Soul Harvester's Bindings
-i(236314),	-- Boots of Displacement
-i(236315),	-- Polar Helmet
-i(236316),	-- Sadist's Collar
-i(236318),	-- Seal of the Damned
-i(236319),	-- Leggings of Apocalypse
-i(236320),	-- Warmth of Forgiveness
-i(236321),	-- Maul of the Redeemed Crusader
-i(236322),	-- Soulstring
-i(236323),	-- Resilience of the Scourge
-i(236324),	-- Power of the Scourge
-i(236325),	-- Fortitude of the Scourge
-i(236326),	-- Might of the Scourge
-i(236327),	-- Cloak of the Necropolis
-i(236328),	-- Sapphiron's Left Eye
-i(236329),	-- Eye of the Dead
-i(236330),	-- Sapphiron's Right Eye
-i(236331),	-- The Restrained Essence of Sapphiron
-i(236333),	-- Shroud of Dominion
-i(236334),	-- Slayer's Crest
-i(236335),	-- Fists of the Unrelenting
-i(236336),	-- The Face of Death
-i(236337),	-- Glyph of Deflection
-i(236338),	-- Claw of the Frost Wyrm
-i(236339),	-- Gressil, Dawn of Ruin
-i(236340),	-- Might of Menethil
-i(236341),	-- The Hungering Cold
-i(236342),	-- Stormrage's Talisman of Seething
-i(236343),	-- Kingsfall
-i(236344),	-- Nerubian Slavemaker
-i(236345),	-- Gem of Trapped Innocents
-i(236346),	-- Soulseeker
-i(236347),	-- Shield of Condemnation
-i(236348),	-- Hammer of the Twisting Nether
-i(236349),	-- Doomfinger
-i(236350),	-- The Phylactery of Kel'Thuzad
 i(236351),	-- Mark of the Champion
 i(236352),	-- Mark of the Champion
 i(236354),	-- Aspirant's Seal of the Dawn

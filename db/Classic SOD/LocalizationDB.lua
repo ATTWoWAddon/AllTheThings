@@ -219,6 +219,9 @@ L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your c
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+L.DECOR_CHECKBOX = CATALOG_SHOP_TYPE_DECOR;
+L.DECOR_CHECKBOX_TOOLTIP = "Enable this option to track warband decor completion.";
+L.DECOR_ID = "Decor ID";
 L.DELETE_CHARACTER = "Right Click to Delete this Character";
 L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
 L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
@@ -1070,7 +1073,7 @@ localize(L.HEADER_NAMES, {
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-546] = "iCoke",
-	[-547] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-547] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[-551] = BATTLE_PET_SOURCE_9,
 	[-559] = "Children's Week",
 	[-574] = "Feast of Winter Veil",
@@ -1377,7 +1380,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=17,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=24,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=1,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=15,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
@@ -1403,7 +1405,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=21,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=28,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=5,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
 });
 
 -- Filter Database Module
@@ -4217,8 +4220,8 @@ local achievements = {
 	},
 	[546] = {
 		name = "Safe Deposit",
-		description = "Buy 6 additional bank slots.",
-		icon = 132594,
+		description = "Buy 7 additional bank slots.",
+		icon = 0,
 		category = 92,
 		criteria = {2002},
 	},
@@ -12748,7 +12751,7 @@ for key,value in pairs({
 	[522] = "Erreicht einen ehrfürchtigen Ruf.",
 	[523] = "Erreicht bei 5 Fraktionen einen ehrfürchtigen Ruf.",
 	[524] = "Erreicht bei 10 Fraktionen einen ehrfürchtigen Ruf.",
-	[546] = "Kauft 6 zusätzliche Bankplätze.",
+	[546] = "Kauft 7 zusätzliche Bankplätze.",
 	[627] = "Erforscht Dun Morogh und enthüllt die verdeckten Gebiete auf der Weltkarte.",
 	[628] = "Bezwingt Edwin van Cleef.",
 	[629] = "Bezwingt Taragaman den Hungerleider.",
@@ -17121,6 +17124,10 @@ for key,value in pairs({
 	[1612] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 8 di Season of Discovery.|r",
 })
 do phases[key].description = value; end
+for key,value in pairs({
+	[546] = "Buy 6 additional bank slots.",
+})
+do achievements[key].description = value; end
 for key,value in pairs({
 	[81] = "Feats of Strength",
 	[92] = "General",

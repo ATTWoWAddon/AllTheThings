@@ -48,7 +48,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["maps"] = { SILITHUS },
 				}),
 			}),
-			n(QUESTS, {
+			n(QUESTS,
+			-- #if SEASON_OF_DISCOVERY
+			bubbleDown({ ["timeline"] = { REMOVED_1_15_5 } },
+			-- #endif
+			{
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
@@ -483,7 +487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(21506),	-- Pendant of the Shifting Sands
 					},
 				}),
-			}),
+			})),
 			n(ZONE_DROPS, {
 				i(21801),	-- Antenna of Invigoration
 				i(21804),	-- Coif of Elemental Fury

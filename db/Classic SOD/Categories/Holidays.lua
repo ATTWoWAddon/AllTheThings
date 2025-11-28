@@ -239,20 +239,20 @@ h(-39,{description="These recipes are mailed to characters with the correspondin
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
-q(8744,{e=14,isYearly=1,maps={1454,1455},providers={{"o",180743},{"i",21191}},g={
+q(8744,{e=14,isYearly=1,maps={1454,1455},providers={{"i",21191},{"o",180743}},g={
 i(21254,{b=1,e=14,f=55,q=1})}}),
-q(8803,{e=14,isYearly=1,lvl=10,maps={1454,1455},providers={{"o",180793},{"i",21363}},g={
+q(8803,{e=14,isYearly=1,lvl=10,maps={1454,1455},providers={{"i",21363},{"o",180793}},g={
 i(21328,{b=1,e=14,q=1})}}),
-q(8768,{e=14,isYearly=1,lvl=20,maps={1454,1455},providers={{"o",180747},{"i",21310}},g={
+q(8768,{e=14,isYearly=1,lvl=20,maps={1454,1455},providers={{"i",21310},{"o",180747}},g={
 p(119,{awp=11101,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
 p(118,{awp=11101,e=14,itemID=21308,petTypeID=5,q=1,spellID=26529}),
 p(120,{awp=11101,e=14,itemID=21305,petTypeID=1,q=1,spellID=26541}),
 p(117,{awp=11101,e=14,itemID=21309,petTypeID=7,q=1,spellID=26045})}}),
-q(8767,{c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"o",180746},{"i",21270}},rwp=60203,g={
+q(8767,{c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21270},{"o",180746}},rwp=60203,g={
 i(21235,{b=1,e=14,f=55,q=1,rwp=60203})}}),
-q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"o",180746},{"i",21271}},rwp=60203,g={
+q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21271},{"o",180746}},rwp=60203,g={
 i(21241,{b=1,e=14,f=55,q=1,rwp=60203})}}),
-q(8769,{e=14,isYearly=1,lvl=40,maps={1454,1455},providers={{"o",180748},{"i",21327}},g={
+q(8769,{e=14,isYearly=1,lvl=40,maps={1454,1455},providers={{"i",21327},{"o",180748}},g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
 r(21943,{e=14,itemID=17722,learnedAt=190,q=2,requireSkill=165}),
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
@@ -503,7 +503,7 @@ q(8983,{coords={{67.6,38.2,1458}},e=9,isYearly=1,qgs={6741},r=1,rwp=30300,source
 q(8980,{coords={{50,68.6,1458}},e=9,isYearly=1,qgs={5204},r=1,rwp=30300,sourceQuests={8979},g={
 i(21812,{b=1,e=9,q=1,rwp=30300}),
 i(22218,{e=9,f=55,q=1,rwp=30300})}})}}),
-h(-47,{description="These items are contained within the Gifts and Pledges of Adoration.",e=9,providers={{"i",21979},{"i",22155},{"i",21980},{"i",22154},{"i",21981},{"i",21975},{"i",22164},{"i",22156},{"i",22165},{"i",22158},{"i",22166},{"i",22157}},g={
+h(-47,{description="These items are contained within the Gifts and Pledges of Adoration.",e=9,providers={{"i",21975},{"i",21979},{"i",21980},{"i",21981},{"i",22154},{"i",22155},{"i",22156},{"i",22157},{"i",22158},{"i",22164},{"i",22165},{"i",22166}},g={
 i(21813,{b=1,e=9,q=1,g={
 i(21816,{e=9,q=1}),
 i(21817,{e=9,q=1}),

@@ -17,7 +17,7 @@ ach(8),
 ach(9),
 ach(10,{rwp=90001}),
 ach(11,{rwp=90001}),
-ach(879,{providers={{"i",13328},{"i",13329},{"i",13327},{"i",13326},{"i",12354},{"i",12353},{"i",12302},{"i",12303},{"i",12351},{"i",12330},{"i",15292},{"i",15293},{"i",13317},{"i",8586}},rwp=10400,u=2}),
+ach(879,{providers={{"i",8586},{"i",12302},{"i",12303},{"i",12330},{"i",12351},{"i",12353},{"i",12354},{"i",13317},{"i",13326},{"i",13327},{"i",13328},{"i",13329},{"i",15292},{"i",15293}},rwp=10400,u=2}),
 ach(522),
 ach(16433,{awp=11403,OnUpdate=function(t)if t.collectible and _.Level>=60 then	local i,spellID=1,select(10,UnitBuff("player",1));while spellID do	if spellID==364001 then	t:SetAchievementCollected(t.achievementID,true);return false;end	i=i + 1;spellID=select(10,UnitBuff("player",i));end;t:SetAchievementCollected(t.achievementID,false);end	end,rwp=11500,u=2}),
 flt(100,{
