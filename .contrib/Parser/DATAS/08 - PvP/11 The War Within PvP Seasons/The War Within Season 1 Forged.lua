@@ -87,17 +87,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = {
-					filter(BACK_F, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_0 } }, {
+					-- #if AFTER MID
+					moh(80, iensemble(251020)),	-- Arsenal: Forged Warmonger's Weapons
+					moh(12, iensemble(251016)),	-- Ensemble: Forged Warmonger's Cloth Armor
+					moh(12, iensemble(251017)),	-- Ensemble: Forged Warmonger's Leather Armor
+					moh(12, iensemble(251018)),	-- Ensemble: Forged Warmonger's Mail Armor
+					moh(12, iensemble(251019)),	-- Ensemble: Forged Warmonger's Plate Armor
+					-- #endif
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223839)),	-- Forged Warmonger's Cape
 						bloody(525, i(223841)),	-- Forged Warmonger's Cloak
 						bloody(525, i(223842)),	-- Forged Warmonger's Drape
 						bloody(525, i(223840)),	-- Forged Warmonger's Shawl
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223813)),	-- Forged Warmonger's Bindings
 						bloody(700, i(223812)),	-- Forged Warmonger's Cord
 						bloody(875, i(223810)),	-- Forged Warmonger's Crown
@@ -106,8 +113,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(223814)),	-- Forged Warmonger's Mantle
 						bloody(875, i(223811)),	-- Forged Warmonger's Pants
 						bloody(700, i(223808)),	-- Forged Warmonger's Slippers
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(700, i(223819)),	-- Forged Warmonger's Belt
 						bloody(700, i(223815)),	-- Forged Warmonger's Boots
 						bloody(875, i(223818)),	-- Forged Warmonger's Breeches
@@ -116,8 +123,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(223821)),	-- Forged Warmonger's Jerkin
 						bloody(700, i(223822)),	-- Forged Warmonger's Shoulderguard
 						bloody(525, i(223820)),	-- Forged Warmonger's Wraps
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223838)),	-- Forged Warmonger's Armguards
 						bloody(875, i(223831)),	-- Forged Warmonger's Chestguard
 						bloody(700, i(223837)),	-- Forged Warmonger's Cinch
@@ -126,8 +133,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(223833)),	-- Forged Warmonger's Grips
 						bloody(875, i(223834)),	-- Forged Warmonger's Helm
 						bloody(875, i(223835)),	-- Forged Warmonger's Leggings
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223830)),	-- Forged Warmonger's Bracers
 						bloody(700, i(223829)),	-- Forged Warmonger's Clasp
 						bloody(875, i(223824)),	-- Forged Warmonger's Cuirass
@@ -136,8 +143,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(223827)),	-- Forged Warmonger's Legguards
 						bloody(700, i(223825)),	-- Forged Warmonger's Sabatons
 						bloody(700, i(223828)),	-- Forged Warmonger's Spaulders
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 						bloody(525, i(223859)),		-- Forged Warmonger's Aegis
 						bloody(875, i(223844)),		-- Forged Warmonger's Battleaxe
 						bloody(1750, i(223853)),	-- Forged Warmonger's Battlestaff
@@ -160,10 +167,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(1750, i(223852)),	-- Forged Warmonger's Spire
 						bloody(875, i(223848)),		-- Forged Warmonger's Twinblade
 						bloody(1225, i(223862)),	-- Forged Warmonger's Wand
-					}),
-				},
+					})),
+				}),
 			}),
-		})),
+		}),
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
@@ -606,6 +613,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(220378, {	-- Forged Equipment Chest
 						["timeline"] = { ADDED_11_0_5 },
 					}),
+
 				},
 			}),
 			o(456208, {	-- The Catalyst

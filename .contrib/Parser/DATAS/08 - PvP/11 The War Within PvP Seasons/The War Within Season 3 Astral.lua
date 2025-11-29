@@ -88,17 +88,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = {
-					filter(BACK_F, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_0 } }, {
+					-- #if AFTER MID
+					moh(80, iensemble(251247)),	-- Arsenal: Astral Warmonger's Weapons
+					moh(12, iensemble(251243)),	-- Ensemble: Astral Warmonger's Cloth Armor
+					moh(12, iensemble(251244)),	-- Ensemble: Astral Warmonger's Leather Armor
+					moh(12, iensemble(251245)),	-- Ensemble: Astral Warmonger's Mail Armor
+					moh(12, iensemble(251246)),	-- Ensemble: Astral Warmonger's Plate Armor
+					-- #endif
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(525, i(230695)),	-- Astral Warmonger's Cape
 						bloody(525, i(230697)),	-- Astral Warmonger's Cloak
 						bloody(525, i(230698)),	-- Astral Warmonger's Drape
 						bloody(525, i(230696)),	-- Astral Warmonger's Shawl
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(525, i(230669)),	-- Astral Warmonger's Bindings
 						bloody(700, i(230668)),	-- Astral Warmonger's Cord
 						bloody(875, i(230663)),	-- Astral Warmonger's Garb
@@ -107,8 +114,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230666)),	-- Astral Warmonger's Mask
 						bloody(875, i(230667)),	-- Astral Warmonger's Pants
 						bloody(700, i(230664)),	-- Astral Warmonger's Slippers
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(700, i(230675)),	-- Astral Warmonger's Belt
 						bloody(700, i(230671)),	-- Astral Warmonger's Boots
 						bloody(875, i(230674)),	-- Astral Warmonger's Breeches
@@ -117,8 +124,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230677)),	-- Astral Warmonger's Jerkin
 						bloody(700, i(230678)),	-- Astral Warmonger's Shoulderguard
 						bloody(525, i(230676)),	-- Astral Warmonger's Wraps
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(525, i(230694)),	-- Astral Warmonger's Armguards
 						bloody(875, i(230687)),	-- Astral Warmonger's Chestguard
 						bloody(700, i(230693)),	-- Astral Warmonger's Cinch
@@ -127,8 +134,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230689)),	-- Astral Warmonger's Grips
 						bloody(875, i(230690)),	-- Astral Warmonger's Helm
 						bloody(875, i(230691)),	-- Astral Warmonger's Leggings
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(525, i(230686)),	-- Astral Warmonger's Bracers
 						bloody(700, i(230685)),	-- Astral Warmonger's Clasp
 						bloody(875, i(230680)),	-- Astral Warmonger's Cuirass
@@ -137,8 +144,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230683)),	-- Astral Warmonger's Legguards
 						bloody(700, i(230681)),	-- Astral Warmonger's Sabatons
 						bloody(700, i(230684)),	-- Astral Warmonger's Spaulders
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						bloody(525, i(230712)),	-- Astral Warmonger's Aegis
 						bloody(875, i(230699)),	-- Astral Warmonger's Battleaxe
 						bloody(1750, i(230706)),	-- Astral Warmonger's Battlestaff
@@ -161,10 +168,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(1225, i(230718)),	-- Astral Warmonger's Scepter
 						bloody(875, i(230703)),	-- Astral Warmonger's Twinblade
 						bloody(1225, i(230715)),	-- Astral Warmonger's Wand
-					}),
-				},
+					})),
+				}),
 			}),
-		})),
+		}),
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },

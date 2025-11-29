@@ -5958,22 +5958,7 @@ root(ROOTS.Unsorted, {
 			i(250911),	-- Ensemble: Villager's City Collection
 			i(250927),	-- Quirky Turkey \\ [PH] Turkey Mount - Brown
 			i(250928),	-- Murky Turkey \\ [PH] Turkey Mount - Purple\
-			i(251016),	-- Ensemble: Forged Warmonger's Cloth Armor
-			i(251017),	-- Ensemble: Forged Warmonger's Leather Armor
-			i(251018),	-- Ensemble: Forged Warmonger's Mail Armor
-			i(251019),	-- Ensemble: Forged Warmonger's Plate Armor
-			i(251020),	-- Arsenal: Forged Warmonger's Weapons
 			i(251023),	-- Bronze Simulacrum
-			i(251236),	-- Ensemble: Prized Warmonger's Cloth Armor
-			i(251237),	-- Ensemble: Prized Warmonger's Leather Armor
-			i(251238),	-- Ensemble: Prized Warmonger's Mail Armor
-			i(251239),	-- Ensemble: Prized Warmonger's Plate Armor
-			i(251240),	-- Arsenal: Prized Warmonger's Weapons
-			i(251243),	-- Ensemble: Astral Warmonger's Cloth Armor
-			i(251244),	-- Ensemble: Astral Warmonger's Leather Armor
-			i(251245),	-- Ensemble: Astral Warmonger's Mail Armor
-			i(251246),	-- Ensemble: Astral Warmonger's Plate Armor
-			i(251247),	-- Arsenal: Astral Warmonger's Weapons
 			i(251657),	-- Bunch of Pink Carrots
 			i(251658),	-- Bunch of Purple Carrots
 			i(251659),	-- Bunch of Yellow Carrots

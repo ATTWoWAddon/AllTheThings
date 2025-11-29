@@ -88,17 +88,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
+		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = {
-					filter(BACK_F, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_0 } }, {
+					-- #if AFTER MID
+					moh(80, iensemble(251240)),	-- Arsenal: Prized Warmonger's Weapons
+					moh(12, iensemble(251236)),	-- Ensemble: Prized Warmonger's Cloth Armor
+					moh(12, iensemble(251237)),	-- Ensemble: Prized Warmonger's Leather Armor
+					moh(12, iensemble(251238)),	-- Ensemble: Prized Warmonger's Mail Armor
+					moh(12, iensemble(251239)),	-- Ensemble: Prized Warmonger's Plate Armor
+					-- #endif
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(525, i(230138)),	-- Prized Warmonger's Cape
 						bloody(525, i(230140)),	-- Prized Warmonger's Cloak
 						bloody(525, i(230141)),	-- Prized Warmonger's Drape
 						bloody(525, i(230139)),	-- Prized Warmonger's Shawl
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(525, i(230112)),	-- Prized Warmonger's Bindings
 						bloody(700, i(230111)),	-- Prized Warmonger's Cord
 						bloody(875, i(230109)),	-- Prized Warmonger's Crown
@@ -107,8 +114,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230113)),	-- Prized Warmonger's Mantle
 						bloody(875, i(230110)),	-- Prized Warmonger's Pants
 						bloody(700, i(230107)),	-- Prized Warmonger's Slippers
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(700, i(230118)),	-- Prized Warmonger's Belt
 						bloody(700, i(230114)),	-- Prized Warmonger's Boots
 						bloody(875, i(230117)),	-- Prized Warmonger's Breeches
@@ -117,8 +124,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230120)),	-- Prized Warmonger's Jerkin
 						bloody(700, i(230121)),	-- Prized Warmonger's Shoulderguard
 						bloody(525, i(230119)),	-- Prized Warmonger's Wraps
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(525, i(230137)),	-- Prized Warmonger's Armguards
 						bloody(875, i(230130)),	-- Prized Warmonger's Chestguard
 						bloody(700, i(230136)),	-- Prized Warmonger's Cinch
@@ -127,8 +134,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230132)),	-- Prized Warmonger's Grips
 						bloody(875, i(230133)),	-- Prized Warmonger's Helm
 						bloody(875, i(230134)),	-- Prized Warmonger's Leggings
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(525, i(230129)),	-- Prized Warmonger's Bracers
 						bloody(700, i(230128)),	-- Prized Warmonger's Clasp
 						bloody(875, i(230123)),	-- Prized Warmonger's Cuirass
@@ -137,8 +144,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230126)),	-- Prized Warmonger's Legguards
 						bloody(700, i(230124)),	-- Prized Warmonger's Sabatons
 						bloody(700, i(230127)),	-- Prized Warmonger's Spaulders
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 						bloody(525, i(230156)),		-- Prized Warmonger's Aegis
 						bloody(875, i(230142)),		-- Prized Warmonger's Battleaxe
 						bloody(1750, i(230149)),	-- Prized Warmonger's Battlestaff
@@ -161,10 +168,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(1750, i(230148)),	-- Prized Warmonger's Spire
 						bloody(875, i(230146)),		-- Prized Warmonger's Twinblade
 						bloody(1225, i(230159)),	-- Prized Warmonger's Wand
-					}),
-				},
+					})),
+				}),
 			}),
-		})),
+		}),
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
