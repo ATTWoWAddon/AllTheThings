@@ -584,21 +584,26 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 25.7, 70.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(160202),	-- Banisher Bands
-					i(158624),	-- Banisher Strap
-					i(160203),	-- Crone-Seeker's Bands
-					i(158625),	-- Crone-Seeker's Girdle
-					i(160204),	-- Waycrest Militia Bindings
-					i(158626),	-- Waycrest Militia Cinch
+					i(158603),	-- Wickerwoven Handwraps
+					i(158604),	-- Banisher Mitts
+					i(158605),	-- Crone-Seeker's Grips
+					i(158606),	-- Waycrest Militia Gloves
 					i(158623),	-- Wickerwoven Cinch
+					i(158624),	-- Banisher Strap
+					i(158625),	-- Crone-Seeker's Girdle
+					i(158626),	-- Waycrest Militia Cinch
 					i(160201),	-- Wickerwoven Wristwraps
+					i(160202),	-- Banisher Bands
+					i(160203),	-- Crone-Seeker's Bands
+					i(160204),	-- Waycrest Militia Bindings
 					--
-					h(i(159072)),	-- Death-Pledged Armguards
-					h(i(159068)),	-- Death-Pledged Waistguard
-					h(i(159070)),	-- Loa Speaker's Cuffs
 					h(i(159067)),	-- Loa Speaker's Waistwrap
-					h(i(159073)),	-- Ritual Flayer's Bracers
+					h(i(159068)),	-- Death-Pledged Waistguard
 					h(i(159069)),	-- Ritual Flayer's Cord
+					h(i(159070)),	-- Loa Speaker's Cuffs
+					h(i(159072)),	-- Death-Pledged Armguards
+					h(i(159073)),	-- Ritual Flayer's Bracers
+					h(i(159079)),	-- Captivating Glowfly Lantern
 				},
 			}),
 			q(48517, {	-- Honorable Discharge
@@ -799,14 +804,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(156951),	-- Bag of Reagents (QI!)
 					i(156950),	-- Organic Matter Sample (QI!)
+					i(158593),	-- Drust-Speaker's Pathfinder
 					i(158595),	-- Ashenwood Defender
+					i(160193),	-- Wickerwoven Mittens
 					i(160194),	-- Banisher Grasps
 					i(160195),	-- Crone-Seeker's Mitts
-					i(158593),	-- Drust-Speaker's Pathfinder
 					i(160196),	-- Waycrest Militia Grips
-					i(160193),	-- Wickerwoven Mittens
+					i(160197),	-- Wickerwoven Pantaloons
+					i(160198),	-- Banisher Britches
+					i(160199),	-- Crone-Seeker's Leggings
+					i(160200),	-- Waycrest Militia Pants
+					i(160201),	-- Wickerwoven Wristwraps
+					i(160202),	-- Banisher Bands
+					i(160203),	-- Crone-Seeker's Bands
+					i(160204),	-- Waycrest Militia Bindings
 					--
 					h(i(155373)),	-- Golden Lilypad
+					h(i(159066)),	-- Nazmani Warplate Belt
+					h(i(159071)),	-- Nazmani Warplate Armsplints
 				},
 			}),
 			q(48170, {	-- Once Bitten, Twice Shy

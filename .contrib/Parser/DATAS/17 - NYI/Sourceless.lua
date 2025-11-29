@@ -45,8 +45,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				-- Drustvar items = Nazmir quest rewards
 				filter(CLOTH, {
 					-- Loads on Wowhead & ingame
-					i(158603),	-- Wickerwoven Handwraps
-					i(160197),	-- Wickerwoven Pantaloons
 
 					-- Loads on Wowhead but not ingame
 					i(155461),	-- Wickerwoven Headpiece
@@ -60,8 +58,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155470),	-- Banisher Headcover
 					i(155472),	-- Banisher Shoulderguards
 					i(155473),	-- Banisher Cinch
-					i(158604),	-- Banisher Mitts
-					i(160198),	-- Banisher Britches
 					i(160863),	-- Banisher Mantle
 					i(160867),	-- Banisher Hood
 				}),
@@ -69,8 +65,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155475),	-- Crone-Seeker's Chestguard
 					i(155478),	-- Crone-Seeker's Skullguard
 					i(155480),	-- Crone-Seeker's Spaulders
-					i(158605),	-- Crone-Seeker's Grips
-					i(160199),	-- Crone-Seeker's Leggings
 					i(160864),	-- Crone-Seeker's Pauldrons
 					i(160868),	-- Crone-Seeker's Coif
 				}),
@@ -78,8 +72,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155483),	-- Waycrest Militia Chestplate
 					i(155486),	-- Waycrest Militia Warhelm
 					i(155488),	-- Waycrest Militia Shoulderplates
-					i(158606),	-- Waycrest Militia Gloves
-					i(160200),	-- Waycrest Militia Pants
 					i(160865),	-- Waycrest Militia Shoulderplates
 					i(160869),	-- Waycrest Militia Greathelm
 				}),
