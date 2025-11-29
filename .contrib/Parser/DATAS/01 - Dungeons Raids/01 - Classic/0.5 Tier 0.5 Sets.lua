@@ -46,7 +46,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						i(226782), -- Feralheart Bindings
+						i(226788), -- Feralheart Bands
+						i(226796), -- Feralheart Wristguards
+						i(226815), -- Feralheart Wrists
+						-- #else
 						i(22108),	-- Feralheart Bracers
+						-- #endif
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -73,9 +80,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Feralheart Boots
+						i(226774), -- Feralheart Galoshes
+						i(226781), -- Feralheart Sandals
+						i(226794), -- Feralheart Walkers
+						i(226803), -- Feralheart Treads
+						i(226821), -- Feralheart Boots
+						-- Feralheart Legs
+						i(226779), -- Feralheart Kilt
+						i(226787), -- Feralheart Pants
+						i(226791), -- Feralheart Trousers
+						i(226799), -- Feralheart Legguards
+						i(226818), -- Feralheart Legs
+						-- Feralheart Shoulders
+						i(226778), -- Feralheart Spaulders
+						i(226785), -- Feralheart Mantle
+						i(226798), -- Feralheart Pauldrons
+						i(226817), -- Feralheart Shoulders
+						i(226790), -- Feralheart Epaulets
+						-- #ELSE
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
 						i(22112),	-- Feralheart Spaulders
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -107,8 +135,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						i(226772), -- Feralheart Sash
+						i(226780), -- Feralheart Cord
+						i(226789), -- Feralheart Girdle
+						i(226797), -- Feralheart Waistguard
+						i(226816), -- Feralheart Waist
+
+
+						-- Feralheart Gloves
+						i(226777), -- Feralheart Hands
+						i(226784), -- Feralheart Gauntlets
+						i(226793), -- Feralheart Fists
+						i(226802), -- Feralheart Grips
+						i(226820), -- Feralheart Gloves
+						-- #ELSE
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -139,8 +183,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						i(226773), -- Feralheart Cowl
+						i(226786), -- Feralheart Headdress
+						i(226792), -- Feralheart Cap
+						i(226801), -- Feralheart Faceguard
+						i(226819), -- Feralheart Helm
+
+
+						-- Feralheart Chest
+						i(226776), -- Feralheart Vest
+						i(226795), -- Feralheart Tunic
+						i(226804), -- Feralheart Armor
+						i(226822), -- Feralheart Chest
+						i(226783), -- Feralheart Embrace
+						-- #ELSE
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
+						-- #ENDIF
 					},
 				},
 			}),
@@ -184,7 +244,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Beastmaster Bracers
+						i(226885), -- Beastmaster's Bindings
+						i(226889), -- Beastmaster's Bracers
+						i(226897), -- Beastmaster's Wrists
+						-- #ELSE
 						i(22011),	-- Beastmaster's Bindings
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -211,9 +278,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Beastmaster Boots / Greaves
+						i(226881), -- Beastmaster's Treads
+						i(226895), -- Beastmaster's Greaves
+						i(226903), -- Beastmaster's Boots
+
+
+						-- Beastmaster Legs
+						i(226882), -- Beastmaster's Pants
+						i(226892), -- Beastmaster's Leggings
+						i(226900), -- Beastmaster's Legs
+
+
+						-- Beastmaster Shoulders
+						i(226884), -- Beastmaster's Mantle
+						i(226891), -- Beastmaster's Pauldrons
+						i(226899), -- Beastmaster's Shoulders
+						-- #ELSE
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
 						i(22016),	-- Beastmaster's Mantle
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -243,8 +329,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Beastmaster Belts
+						i(226888), -- Beastmaster's Belt
+						i(226890), -- Beastmaster's Waistwrap
+						i(226898), -- Beastmaster's Waist
+
+
+						-- Beastmaster Gloves
+						i(226883), -- Beastmaster's Gauntlets
+						i(226894), -- Beastmaster's Fists
+						i(226902), -- Beastmaster's Gloves
+						-- #ELSE
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -275,8 +374,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Beastmaster Head
+						i(226887), -- Beastmaster's Cap
+						i(226893), -- Beastmaster's Coif
+						i(226901), -- Beastmaster's Helm
+
+
+						-- Beastmaster Chest
+						i(226886), -- Beastmaster's Tunic
+						i(226896), -- Beastmaster's Chain
+						i(226904), -- Beastmaster's Chest
+						-- #ELSE
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
+						-- #ENDIF
 					},
 				},
 			}),
@@ -320,7 +432,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Sorcerer Bracers
+						i(226929), -- Sorcerer's Bindings
+						i(226937), -- Sorcerer's Wrists
+						-- #ELSE
 						i(22063),	-- Sorcerer's Bindings
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -338,9 +456,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Sorcerer Boots
+						i(226931), -- Sorcerer's Sandals
+						i(226943), -- Sorcerer's Boots
+
+
+						-- Sorcerer Legs
+						i(226933), -- Sorcerer's Leggings
+						i(226940), -- Sorcerer's Legs
+
+
+						-- Sorcerer Shoulders
+						i(226936), -- Sorcerer's Mantle
+						i(226939), -- Sorcerer's Shoulders
+						-- #ELSE
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
 						i(22068),	-- Sorcerer's Mantle
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -372,8 +506,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Sorcerer Belts
+						i(226934), -- Sorcerer's Belt
+						i(226938), -- Sorcerer's Waist
+
+
+						-- Sorcerer Gloves
+						i(226930), -- Sorcerer's Gauntlets
+						i(226942), -- Sorcerer's Gloves
+						-- #ELSE
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -404,8 +549,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Sorcerer Head
+						i(226935), -- Sorcerer's Crown
+						i(226941), -- Sorcerer's Helm
+
+
+						-- Sorcerer Chest
+						i(226932), -- Sorcerer's Robes
+						i(226944), -- Sorcerer's Chest
+						-- #ELSE
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
+						-- #ENDIF
 					},
 				},
 			}),
@@ -553,7 +709,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						objective(1, {	-- 0/15 Winterspring Blood Sample
 							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
 						}),
+						-- #IF SEASON_OF_DISCOVERY
+						-- Soulforge Bracers
+						i(226970), -- Soulforge Bracers
+						i(226977), -- Soulforge Bindings
+						i(226985), -- Soulforge Wristguards
+						i(226993), -- Soulforge Wrists
+						-- #ELSE
 						i(22088),	-- Soulforge Bracers
+						-- #ENDIF
 					},
 				}),
 				q(8954, {	-- Anthion's Parting Words [A]
@@ -579,9 +743,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Soulforge Boots
+						i(226974), -- Soulforge Warboots
+						i(226983), -- Soulforge Treads
+						i(226991), -- Soulforge Sabatons
+						i(226999), -- Soulforge Boots
+
+
+						-- Soulforge Legs
+						i(226972), -- Soulforge Legplates
+						i(226980), -- Soulforge Leggings
+						i(226988), -- Soulforge Legguards
+						i(226996), -- Soulforge Legs
+
+
+						-- Soulforge Shoulders
+						i(226969), -- Soulforge Spaulders
+						i(226979), -- Soulforge Epaulets
+						i(226987), -- Soulforge Pauldrons
+						i(226995), -- Soulforge Shoulders
+						-- #ELSE
 						i(22087),	-- Soulforge Boots
 						i(22092),	-- Soulforge Legplates
 						i(22093),	-- Soulforge Spaulders
+						-- #ENDIF
 					},
 				}),
 				q(8933, {	-- Just Compensation [A]
@@ -597,8 +783,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Soulforge Belts
+						i(226971), -- Soulforge Belt
+						i(226978), -- Soulforge Cord
+						i(226986), -- Soulforge Waistguard
+						i(226994), -- Soulforge Waist
+
+
+						-- Soulforge Gloves
+						i(226975), -- Soulforge Gauntlets
+						i(226982), -- Soulforge Fists
+						i(226990), -- Soulforge Handguards
+						i(226998), -- Soulforge Gloves
+						-- #ELSE
 						i(22086),	-- Soulforge Belt
 						i(22090),	-- Soulforge Gauntlets
+						-- #ENDIF
 					},
 				}),
 				q(9002, {	-- Saving the Best for Last [A]
@@ -623,8 +824,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Soulforge Head
+						i(226976), -- Soulforge Greathelm
+						i(226981), -- Soulforge Crown
+						i(226989), -- Soulforge Faceguard
+						i(226997), -- Soulforge Helm
+						-- Soulforge Chest
+						i(226973), -- Soulforge Breastplate
+						i(226984), -- Soulforge Embrace
+						i(226992), -- Soulforge Chestguards
+						i(227000), -- Soulforge Chest
+						-- #ELSE
 						i(22091),	-- Soulforge Helm
 						i(22089),	-- Soulforge Breastplate
+						-- #ENDIF
 					},
 				}),
 				-- #endif
@@ -669,7 +883,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Virtuous Bracers
+						i(226949), -- Virtuous Bracers
+						i(226953), -- Virtuous Wraps
+						i(226961), -- Virtuous Wrists
+						-- #ELSE
 						i(22079),	-- Virtuous Bracers
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -697,9 +918,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Virtuous Boots
+						i(226952), -- Virtuous Sandals
+						i(226959), -- Virtuous Slippers
+						i(226967), -- Virtuous Boots
+
+
+						-- Virtuous Legs
+						i(226946), -- Virtuous Skirt
+						i(226956), -- Virtuous Leggings
+						i(226964), -- Virtuous Legs
+
+
+						-- Virtuous Shoulders
+						i(226951), -- Virtuous Mantle
+						i(226955), -- Virtuous Epaulets
+						i(226963), -- Virtuous Shoulders
+						-- #ELSE
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
 						i(22082),	-- Virtuous Mantle
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -730,8 +970,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Virtuous Belts
+						i(226948), -- Virtuous Belt
+						i(226954), -- Virtuous Cord
+						i(226962), -- Virtuous Waist
+
+
+						-- Virtuous Gloves
+						i(226950), -- Virtuous Mitts
+						i(226958), -- Virtuous Hands
+						i(226966), -- Virtuous Gloves
+						-- #ELSE
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -762,8 +1015,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Virtuous Head
+						i(226947), -- Virtuous Crown
+						i(226957), -- Virtuous Cowl
+						i(226965), -- Virtuous Helm
+
+
+						-- Virtuous Chest
+						i(226945), -- Virtuous Robe
+						i(226960), -- Virtuous Gown
+						i(226968), -- Virtuous Chest
+						-- #ELSE
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
+						-- #ENDIF
 					},
 				},
 			}),
@@ -807,7 +1073,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Darkmantle Bracers
+						i(226830), -- Darkmantle Bracers
+						i(226835), -- Darkmantle Wristguards
+						i(226845), -- Darkmantle Wrists
+						-- #ELSE
 						i(22004),	-- Darkmantle Bracers
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -825,9 +1098,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Darkmantle Boots
+						i(226831), -- Darkmantle Footpads
+						i(226842), -- Darkmantle Treads
+						i(226851), -- Darkmantle Boots
+
+
+						-- Darkmantle Legs
+						i(226827), -- Darkmantle Pants
+						i(226838), -- Darkmantle Legguards
+						i(226848), -- Darkmantle Legs
+
+
+						-- Darkmantle Shoulders
+						i(226826), -- Darkmantle Spaulders
+						i(226837), -- Darkmantle Pauldrons
+						i(226847), -- Darkmantle Shoulders
+						-- #ELSE
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
 						i(22008),	-- Darkmantle Spaulders
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -857,8 +1149,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Darkmantle Belts
+						i(226832), -- Darkmantle Belt
+						i(226836), -- Darkmantle Waistguard
+						i(226846), -- Darkmantle Waist
+
+
+						-- Darkmantle Gloves
+						i(226828), -- Darkmantle Grips
+						i(226840), -- Darkmantle Handguards
+						i(226850), -- Darkmantle Gloves
+						-- #ELSE
 						i(22006),	-- Darkmantle Gloves
 						i(22002),	-- Darkmantle Belt
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -889,8 +1194,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Darkmantle Head
+						i(226829), -- Darkmantle Cap
+						i(226841), -- Darkmantle Faceguard
+						i(226849), -- Darkmantle Helm
+
+
+						-- Darkmantle Chest
+						i(226825), -- Darkmantle Tunic
+						i(226843), -- Darkmantle Armor
+						i(226852), -- Darkmantle Chest
+						-- #ELSE
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
+						-- #ENDIF
 					},
 				},
 			}),
@@ -1053,7 +1371,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								11735,	-- Stonelash Scorpid
 							},
 						}),
+						-- #IF SEASON_OF_DISCOVERY
+						-- Bracers
+						i(227001),	-- Bindings of The Five Thunders
+						i(227009),	-- Bracers of The Five Thunders
+						i(227017),	-- Bands of The Five Thunders
+						i(227025),	-- Wristguards of The Five Thunders
+						i(227033),	-- Wrists of The Five Thunders
+						-- #ELSE
 						i(22095),	-- Bindings of The Five Thunders
+						-- #ENDIF
 					},
 				}),
 				q(8957, {	-- Anthion's Parting Words [H]
@@ -1079,9 +1406,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Boots / Legs / Shoulders
+						i(227007),	-- Slippers of The Five Thunders
+						i(227015),	-- Greaves of The Five Thunders
+						i(227023),	-- Treads of The Five Thunders
+						i(227031),	-- Sabatons of The Five Thunders
+						i(227039),	-- Boots of The Five Thunders
+
+						i(227005),	-- Kilt of The Five Thunders
+						i(227012),	-- Leggings of The Five Thunders
+						i(227020),	-- Legplates of The Five Thunders
+						i(227028),	-- Legguards of The Five Thunders
+						i(227036),	-- Legs of The Five Thunders
+
+						i(227003),	-- Pauldrons of The Five Thunders
+						i(227011),	-- Mantle of The Five Thunders
+						i(227019),	-- Spaulders of The Five Thunders
+						i(227027),	-- Shoulderguards of The Five Thunders
+						i(227035),	-- Shoulders of The Five Thunders
+						-- #ELSE
 						i(22096),	-- Boots of The Five Thunders
 						i(22100),	-- Kilt of The Five Thunders
 						i(22101),	-- Pauldrons of The Five Thunders
+						-- #ENDIF
 					},
 				}),
 				q(8942, {	-- Just Compensation [H]
@@ -1105,8 +1453,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Belt / Gloves
+						i(227008),	-- Cord of The Five Thunders
+						i(227010),	-- Sash of The Five Thunders
+						i(227018),	-- Girdle of The Five Thunders
+						i(227026),	-- Waistguard of The Five Thunders
+						i(227034),	-- Waist of The Five Thunders
+
+						i(227006),	-- Gauntlets of The Five Thunders
+						i(227014),	-- Grasp of The Five Thunders
+						i(227022),	-- Fists of The Five Thunders
+						i(227030),	-- Handguards of The Five Thunders
+						i(227038),	-- Gloves of The Five Thunders
+						-- #ELSE
 						i(22098),	-- Cord of The Five Thunders
 						i(22099),	-- Gauntlets of The Five Thunders
+						-- #ENDIF
 					},
 				}),
 				q(9011, {	-- Saving the Best for Last [H]
@@ -1131,8 +1494,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Head
+						i(227002),	-- Coif of The Five Thunders
+						i(227013),	-- Crown of The Five Thunders
+						i(227021),	-- Face of The Five Thunders
+						i(227029),	-- Headpiece of The Five Thunders
+						i(227037),	-- Helm of The Five Thunders
+
+						-- Chest
+						i(227004),	-- Vest of The Five Thunders
+						i(227016),	-- Tunic of The Five Thunders
+						i(227024),	-- Chain of The Five Thunders
+						i(227032),	-- Chestguard of The Five Thunders
+						i(227040),	-- Chest of The Five Thunders
+						-- #ELSE
 						i(22097),	-- Coif of The Five Thunders
 						i(22102),	-- Vest of The Five Thunders
+						-- #ENDIF
 					},
 				}),
 				-- #endif
@@ -1177,7 +1556,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						i(226907), -- Deathmist Bracers
+						i(226911), -- Deathmist Wraps
+						i(226913), -- Deathmist Bindings
+						i(226921), -- Deathmist Wrists
+						-- #ELSE
 						i(22071),	-- Deathmist Bracers
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -1195,9 +1581,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Deathmist Boots
+						i(226908), -- Deathmist Sandals
+						i(226919), -- Deathmist Treads
+						i(226927), -- Deathmist Boots
+
+						-- Deathmist Legs
+						i(226910), -- Deathmist Leggings
+						i(226916), -- Deathmist Pants
+						i(226924), -- Deathmist Legs
+
+						-- Deathmist Shoulders
+						i(226912), -- Deathmist Mantle
+						i(226915), -- Deathmist Epaulets
+						i(226923), -- Deathmist Shoulders
+						-- #ELSE
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
 						i(22073),	-- Deathmist Mantle
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -1219,8 +1622,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Deathmist Belts
+						i(226905), -- Deathmist Belt
+						i(226914), -- Deathmist Cord
+						i(226922), -- Deathmist Waist
+
+						-- Deathmist Gloves
+						i(226918), -- Deathmist Grasps
+						i(226926), -- Deathmist Gloves
+						-- #ELSE
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -1251,8 +1665,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Deathmist Head
+						i(226909), -- Deathmist Mask
+						i(226917), -- Deathmist Hood
+						i(226925), -- Deathmist Helm
+
+						-- Deathmist Chest
+						i(226906), -- Deathmist Robe
+						i(226920), -- Deathmist Embrace
+						i(226928), -- Deathmist Chest
+						-- #ELSE
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
+						-- #ENDIF
 					},
 				},
 			}),
@@ -1296,7 +1722,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Bracers
+						i(226863), -- Bracers of Heroism
+						i(226865), -- Wristguards of Heroism
+						i(226873), -- Wrists of Heroism
+						-- #ELSE
 						i(21996),	-- Bracers of Heroism
+						-- #ENDIF
 					},
 				},
 				{	-- Anthion's Parting Words
@@ -1324,9 +1757,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Boots / Legs / Shoulders
+						i(226857), -- Battleboots of Heroism
+						i(226871), -- Sabatons of Heroism
+						i(226879), -- Boots of Heroism
+
+						i(226859), -- Legplates of Heroism
+						i(226868), -- Legguards of Heroism
+						i(226876), -- Legs of Heroism
+
+						i(226858), -- Spaulders of Heroism
+						i(226867), -- Pauldrons of Heroism
+						i(226875), -- Shoulders of Heroism
+						-- #ELSE
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
 						i(22001),	-- Spaulders of Heroism
+						-- #ENDIF
 					},
 				},
 				{	-- Just Compensation
@@ -1357,8 +1805,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Belt / Gloves
+						i(226864), -- Belt of Heroism
+						i(226866), -- Waistguard of Heroism
+						i(226874), -- Waist of Heroism
+
+						i(226861), -- Gauntlets of Heroism
+						i(226870), -- Handguards of Heroism
+						i(226878), -- Gloves of Heroism
+						-- #ELSE
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
+						-- #ENDIF
 					},
 				},
 				{	-- Saving the Best for Last
@@ -1389,8 +1848,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["groups"] = {
+						-- #IF SEASON_OF_DISCOVERY
+						-- Head
+						i(226860), -- Crown of Heroism
+						i(226869), -- Faceguard of Heroism
+						i(226877), -- Helm of Heroism
+
+						-- Chest
+						i(226862), -- Breastplate of Heroism
+						i(226872), -- Chestguard of Heroism
+						i(226880), -- Chest of Heroism
+						-- #ELSE
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
+						-- #ENDIF
 					},
 				},
 			}),
