@@ -841,7 +841,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_0 }, ["bonusID"] = 7532 }, {
-			n(CLASSES, {
+			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
 				cl(DEATHKNIGHT, {
 					i(229731),	-- Prized Gladiator's Cloak
 					i(229713),	-- Prized Gladiator's Chestguard
@@ -985,7 +985,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(229756),	-- Prized Gladiator's Plate Warboots
 					i(229769),	-- Prized Gladiator's Plate Wristguards
 				}),
-			}),
+			})),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["groups"] = sharedData({

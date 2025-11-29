@@ -849,7 +849,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0, ADDED_12_0_0 }, ["bonusID"] = 7532 }, {
-			n(CLASSES, {
+			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 				cl(DEATHKNIGHT, {
 					i(230591),	-- Astral Gladiator's Cloak
 					i(230575),	-- Astral Gladiator's Chestguard
@@ -993,7 +993,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(230615),	-- Astral Gladiator's Plate Warboots
 					i(230627),	-- Astral Gladiator's Plate Wristguards
 				}),
-			}),
+			})),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["groups"] = sharedData({
