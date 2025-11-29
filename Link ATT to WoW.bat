@@ -43,6 +43,7 @@ if exist "%~1\" (
 )
 EXIT /B 0
 
+echo Defining :link_beta
 :link_beta
 if exist "%~1\" (
     echo Linking BETA "%~1\"
