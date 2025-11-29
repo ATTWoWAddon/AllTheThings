@@ -1589,6 +1589,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216638),	-- Timerunner's Intro Kit
 			i(219218),	-- Timerunner's Starter Kit
 			i(219219),	-- Timerunner's Starter Kit
+			i(223639, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Aspirant's Cloak Rack
+			i(223640, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Gladiator's Cloak Rack
 			i(213532),	-- Void Rune
 			i(213537),	-- Void Tendril
 		})),
@@ -1935,6 +1937,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(246822),	-- A Steamy Romance Novel: Devouring Love
+			i(246823),	-- A Steamy Romance Novel: Got Milk?
+			i(246816),	-- A Steamy Romance Novel: Nightborne of the Living Dead
+			i(246817),	-- A Steamy Romance Novel: Of Elven Bondage
+			i(246820),	-- A Steamy Romance Novel: Stormy Seas
+			i(246821),	-- A Steamy Romance Novel: The Lusty Draconian Mage
+			i(246818),	-- A Steamy Romance Novel: Waves of Desire
 			i(249235),	-- Bottomless Bag of Entropy
 			i(250975),	-- Hellcaller Chest
 		})),

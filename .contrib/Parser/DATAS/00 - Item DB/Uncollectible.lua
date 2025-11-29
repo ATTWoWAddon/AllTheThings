@@ -280,7 +280,6 @@ i(153570);	-- "Magic" Rock
 i(155842);	-- "Preserved" Foodstuffs
 i(153566);	-- "Shiny" Rock
 i(153567);	-- "Smooth" Rock
-i(162981);	-- A Steamy Romance Novel: Stormy Seas
 i(158862);	-- Ancient Grave Dust
 i(162634);	-- Ancient Nazmani Coins
 i(158811);	-- Ashen Coal

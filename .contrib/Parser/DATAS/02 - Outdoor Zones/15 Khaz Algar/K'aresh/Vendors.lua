@@ -127,6 +127,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(243801, {	-- Zo'phar <Rare Materials>
 				["coord"] = { 53.2, 54.1, KARESH_TAZAVESH },
 				["groups"] = {
+					i(29571),	-- A Steamy Romance Novel
+					i(63271),	-- A Steamy Romance Novel: Big Brass Bombs
+					i(54291),	-- A Steamy Romance Novel: Blue Moon
+					i(37467),	-- A Steamy Romance Novel: Forbidden Love
+					i(128436),	-- A Steamy Romance Novel: Got Milk?
+					i(87530),	-- A Steamy Romance Novel: Hot and Misty
+					i(128985),	-- A Steamy Romance Novel: Nightborne of the Living Dead
+					i(46023),	-- A Steamy Romance Novel: Northern Exposure
+					i(128984),	-- A Steamy Romance Novel: Of Elven Bondage
+					i(108649),	-- A Steamy Romance Novel: Savage Passions
+					i(162981),	-- A Steamy Romance Novel: Stormy Seas
+					i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
+					i(128983),	-- A Steamy Romance Novel: Waves of Desire
 					i(246811, {	-- Technique: Inspired Writer's Quill (RECIPE!)
 						["cost"] = {{ "g", 5000000 }},	-- 500g
 						["requireSkill"] = INSCRIPTION,

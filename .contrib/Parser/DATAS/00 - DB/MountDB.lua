@@ -1464,7 +1464,11 @@ i(186648, 347251);	-- Soaring Razorwing
 i(186657, 354352);	-- Soulbound Gloomcharger
 i(187525, 358319);	-- Soultwisted Deathwalker
 i(186492, 353859);	-- Summer Wilderling
+-- #if AFTER 11.2.0
+i(246698, 317177);		-- Sunwarmed Furline
+-- #else
 i(0, 317177);		-- Sunwarmed Furline
+-- #endif
 i(186641, 347536);	-- Tamed Mauler
 i(186637, 346554);	-- Tazavesh Gearglider
 i(186177, 353036);	-- Unchained Gladiator's Soul Eater

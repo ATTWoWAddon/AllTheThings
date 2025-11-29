@@ -5983,7 +5983,6 @@ root(ROOTS.Unsorted, {
 			i(251669),	-- Sturdy Wearable Pot Lid
 			i(251670),	-- Battered Wearable Pot Lid
 			i(251672),	-- Used Wearable Pot Lid
-			i(251674),	-- Sssurine's Luxurious Sssandals
 			i(251797),	-- Ears of Orange Corn
 			i(251798),	-- Ears of Purple Corn
 			i(251799),	-- Ears of White Corn
@@ -6158,73 +6157,10 @@ root(ROOTS.Unsorted, {
 				i(243344),	-- Chef's Hat
 				i(243347),	-- Keg of Curiosities
 			}),
-			filter(MOUNTS, {
-				i(246698),	-- Sunwarmed Furline
-			}),
-			n(PROFESSIONS, {
-				i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
-				i(231771),	-- Formula: Enchanted Runed Ethereal Crest
-				i(231772),	-- Formula: Enchanted Weathered Ethereal Crest
-				i(231774),	-- Nascent Weathered Ethereal Crest
-				i(231775),	-- Nascent Gilded Ethereal Crest
-				i(231776),	-- Nascent Runed Ethereal Crest
-				i(246816),	-- A Steamy Romance Novel: Nightborne of the Living Dead
-				i(246817),	-- A Steamy Romance Novel: Of Elven Bondage
-				i(246818),	-- A Steamy Romance Novel: Waves of Desire
-				i(246820),	-- A Steamy Romance Novel: Stormy Seas
-				i(246821),	-- A Steamy Romance Novel: The Lusty Draconian Mage
-				i(246822),	-- A Steamy Romance Novel: Devouring Love
-				i(246823),	-- A Steamy Romance Novel: Got Milk?
-			}),
-			n(PVP, {
-				-- Ensembles/Arsenals
-				i(232808),	-- Ensemble: Astral Aspirant's Cloth Armor
-				i(232809),	-- Ensemble: Astral Aspirant's Leather Armor
-				i(232810),	-- Ensemble: Astral Aspirant's Mail Armor
-				i(232811),	-- Ensemble: Astral Aspirant's Plate Armor
-				i(232812),	-- Ensemble: Astral Gladiator's Death Knight Armor
-				i(232813),	-- Ensemble: Astral Gladiator's Demon Hunter Armor
-				i(232814),	-- Ensemble: Astral Gladiator's Druid Armor
-				i(232815),	-- Ensemble: Astral Gladiator's Evoker Armor
-				i(232816),	-- Ensemble: Astral Gladiator's Hunter Armor
-				i(232817),	-- Ensemble: Astral Gladiator's Mage Armor
-				i(232818),	-- Ensemble: Astral Gladiator's Monk Armor
-				i(232819),	-- Ensemble: Astral Gladiator's Paladin Armor
-				i(232820),	-- Ensemble: Astral Gladiator's Priest Armor
-				i(232821),	-- Ensemble: Astral Gladiator's Rogue Armor
-				i(232822),	-- Ensemble: Astral Gladiator's Shaman Armor
-				i(232823),	-- Ensemble: Astral Gladiator's Warlock Armor
-				i(232824),	-- Ensemble: Astral Gladiator's Warrior Armor
-				i(232825),	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
-				i(232826),	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
-				i(232827),	-- Ensemble: Elite Astral Gladiator's Druid Armor
-				i(232828),	-- Ensemble: Elite Astral Gladiator's Evoker Armor
-				i(232829),	-- Ensemble: Elite Astral Gladiator's Hunter Armor
-				i(232830),	-- Ensemble: Elite Astral Gladiator's Mage Armor
-				i(232831),	-- Ensemble: Elite Astral Gladiator's Monk Armor
-				i(232832),	-- Ensemble: Elite Astral Gladiator's Paladin Armor
-				i(232833),	-- Ensemble: Elite Astral Gladiator's Priest Armor
-				i(232834),	-- Ensemble: Elite Astral Gladiator's Rogue Armor
-				i(232835),	-- Ensemble: Elite Astral Gladiator's Shaman Armor
-				i(232836),	-- Ensemble: Elite Astral Gladiator's Warlock Armor
-				i(232837),	-- Ensemble: Elite Astral Gladiator's Warrior Armor
-				i(232870),	-- Arsenal: Astral Aspirant's Weapons
-				i(232871),	-- Arsenal: Astral Gladiator's Weapons
-				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
-			}),
 			filter(QUEST_ITEMS, {
 				i(232517),	-- Biome Eco-Stabilizer
 				i(229405),	-- Entropic Core
 				i(238296),	-- Phase Disruptor
-			}),
-		})),
-	}),
-	expansion(EXPANSION.DF, {
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-			-- Left Remaining To Darkal --
-			n(PVP, {
-				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
-				i(223769),	-- Eternal Aspirant's Cape
 			}),
 		})),
 	}),

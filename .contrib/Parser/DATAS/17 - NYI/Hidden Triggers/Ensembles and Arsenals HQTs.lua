@@ -1,27 +1,6 @@
 -----------------------------------------------------------------------
 --   E N S E M B L E S    A N D    A R S E N A L S    M O D U L E    --
 -----------------------------------------------------------------------
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-	n(PVP, {
-		-- Unburied Aspirant's Cloak Rack (Item 223639)
-		q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82410),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		-- Unburied Gladiator's Cloak Rack (Item 223640)
-		q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
-		q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
-	}),
-})));
 
 --[[
 

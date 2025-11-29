@@ -356,6 +356,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			n(ARMOR, {
+				i(223769),	-- Eternal Aspirant's Cape
+			}),
 			n(SETS, {
 				i(223243),	-- Ensemble: Blue Diver Suit
 				i(221541),	-- Ensemble: Blue Tropical
@@ -1039,6 +1042,41 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(250707),	-- The Horseman's Burning Cowl
 				i(250709),	-- The Horseman's Chilling Cowl
+			}),
+			n(PVP, {
+				i(232870),	-- Arsenal: Astral Aspirant's Weapons
+				i(232871),	-- Arsenal: Astral Gladiator's Weapons
+				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
+				i(232808),	-- Ensemble: Astral Aspirant's Cloth Armor
+				i(232809),	-- Ensemble: Astral Aspirant's Leather Armor
+				i(232810),	-- Ensemble: Astral Aspirant's Mail Armor
+				i(232811),	-- Ensemble: Astral Aspirant's Plate Armor
+				i(232812),	-- Ensemble: Astral Gladiator's Death Knight Armor
+				i(232813),	-- Ensemble: Astral Gladiator's Demon Hunter Armor
+				i(232814),	-- Ensemble: Astral Gladiator's Druid Armor
+				i(232815),	-- Ensemble: Astral Gladiator's Evoker Armor
+				i(232816),	-- Ensemble: Astral Gladiator's Hunter Armor
+				i(232817),	-- Ensemble: Astral Gladiator's Mage Armor
+				i(232818),	-- Ensemble: Astral Gladiator's Monk Armor
+				i(232819),	-- Ensemble: Astral Gladiator's Paladin Armor
+				i(232820),	-- Ensemble: Astral Gladiator's Priest Armor
+				i(232821),	-- Ensemble: Astral Gladiator's Rogue Armor
+				i(232822),	-- Ensemble: Astral Gladiator's Shaman Armor
+				i(232823),	-- Ensemble: Astral Gladiator's Warlock Armor
+				i(232824),	-- Ensemble: Astral Gladiator's Warrior Armor
+				i(232825),	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
+				i(232826),	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
+				i(232827),	-- Ensemble: Elite Astral Gladiator's Druid Armor
+				i(232828),	-- Ensemble: Elite Astral Gladiator's Evoker Armor
+				i(232829),	-- Ensemble: Elite Astral Gladiator's Hunter Armor
+				i(232830),	-- Ensemble: Elite Astral Gladiator's Mage Armor
+				i(232831),	-- Ensemble: Elite Astral Gladiator's Monk Armor
+				i(232832),	-- Ensemble: Elite Astral Gladiator's Paladin Armor
+				i(232833),	-- Ensemble: Elite Astral Gladiator's Priest Armor
+				i(232834),	-- Ensemble: Elite Astral Gladiator's Rogue Armor
+				i(232835),	-- Ensemble: Elite Astral Gladiator's Shaman Armor
+				i(232836),	-- Ensemble: Elite Astral Gladiator's Warlock Armor
+				i(232837),	-- Ensemble: Elite Astral Gladiator's Warrior Armor
 			}),
 			n(SETS, {
 				------ Void's Binding Swimwear Set ------

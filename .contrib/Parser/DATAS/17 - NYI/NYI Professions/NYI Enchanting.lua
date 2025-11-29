@@ -65,8 +65,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.1.0
 				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
-					i(230985),	-- Nascent Runed Undermine Crest
 					i(230986),	-- Nascent Gilded Undermine Crest
+					i(230985),	-- Nascent Runed Undermine Crest
 					i(230987),	-- Nascent Weathered Undermine Crest
 				})),
 
@@ -78,6 +78,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238404),	-- Enchant Weapon - Twilight Devastation
 					i(239089),	-- Enchant Weapon - Twisted Appendage
 					i(239094),	-- Enchant Weapon - Void Ritual
+				})),
+
+				-- 11.2.0
+				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+					i(231775),	-- Nascent Gilded Ethereal Crest
+					i(231776),	-- Nascent Runed Ethereal Crest
+					i(231774),	-- Nascent Weathered Ethereal Crest
 				})),
 			}),
 		}),
@@ -303,9 +310,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 11.1.0
 				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 					-- Without SpellID attached
-					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
-					i(230932),	-- Formula: Enchanted Runed Undermine Crest
 					i(230933),	-- Formula: Enchanted Gilded Undermine Crest
+					i(230932),	-- Formula: Enchanted Runed Undermine Crest
+					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
 				})),
 
 				-- 11.1.5
@@ -323,6 +330,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
 					i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
 					i(239096),	-- Formula: Enchant Weapon - Void Ritual
+				})),
+
+				-- 11.2.0
+				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+					-- Without SpellID attached
+					i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
+					i(231771),	-- Formula: Enchanted Runed Ethereal Crest
+					i(231772),	-- Formula: Enchanted Weathered Ethereal Crest
 				})),
 			}),
 		}),

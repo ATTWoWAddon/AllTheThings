@@ -8636,8 +8636,25 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			q(77904),	-- Treasures, Not Trash
 			q(77907),	-- Shadow Spear
+			q(77904),	-- Treasures, Not Trash
+			-- Unburied Aspirant's Cloak Rack (Item 223639)
+			q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82410),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
+			-- Unburied Gladiator's Cloak Rack (Item 223640)
+			q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
+			q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
 		})),
 	}),
 	expansion(EXPANSION.TWW, {

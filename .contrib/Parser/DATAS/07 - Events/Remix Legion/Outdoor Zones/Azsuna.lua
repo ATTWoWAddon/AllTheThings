@@ -60,6 +60,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["coord"] = { 66.0, 45.9, AZSUNA },
 					}),
 				}),
+				n(TREASURES, {
+					o(240645, {	-- Glimmering Treasure Chest
+						["questID"] = 37649,
+						["coord"] = { 69.5, 49.3, 632 },	-- Oceanus Cove
+						["description"] = "In the Oceanus Cove cave next to Lady Sssurine.",
+						["groups"] = { i(251674) },	-- Sssurine's Luxurious Sssandals
+					}),
+				}),
 				n(ZONE_REWARDS, {
 					filter(CLOAKS, {
 						i(247481),	-- Astromancer's Greatcloak
