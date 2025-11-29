@@ -646,9 +646,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232890),	-- Arsenal: Algari Warmonger's Weapons
 				i(232866),	-- Arsenal: Elite Forged Gladiator's Weapons
 				i(232869),	-- Arsenal: Elite Prized Gladiator's Weapons
-				i(232864),	-- Arsenal: Forged Aspirant's Weapons
 				i(232865),	-- Arsenal: Forged Gladiator's Weapons
-				i(232867),	-- Arsenal: Prized Aspirant's Weapons
 				i(232868),	-- Arsenal: Prized Gladiator's Weapons
 				i(232886),	-- Ensemble: Algari Warmonger's Cloth Armor
 				i(232887),	-- Ensemble: Algari Warmonger's Leather Armor
@@ -680,10 +678,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232722),	-- Ensemble: Elite Prized Gladiator's Shaman Armor
 				i(232723),	-- Ensemble: Elite Prized Gladiator's Warlock Armor
 				i(232724),	-- Ensemble: Elite Prized Gladiator's Warrior Armor
-				i(232664),	-- Ensemble: Forged Aspirant's Cloth Armor
-				i(232665),	-- Ensemble: Forged Aspirant's Leather Armor
-				i(232666),	-- Ensemble: Forged Aspirant's Mail Armor
-				i(232667),	-- Ensemble: Forged Aspirant's Plate Armor
 				i(232668),	-- Ensemble: Forged Gladiator's Death Knight Armor
 				i(232669),	-- Ensemble: Forged Gladiator's Demon Hunter Armor
 				i(232670),	-- Ensemble: Forged Gladiator's Druid Armor
@@ -697,10 +691,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232678),	-- Ensemble: Forged Gladiator's Shaman Armor
 				i(232679),	-- Ensemble: Forged Gladiator's Warlock Armor
 				i(232680),	-- Ensemble: Forged Gladiator's Warrior Armor
-				i(232695),	-- Ensemble: Prized Aspirant's Cloth Armor
-				i(232696),	-- Ensemble: Prized Aspirant's Leather Armor
-				i(232697),	-- Ensemble: Prized Aspirant's Mail Armor
-				i(232698),	-- Ensemble: Prized Aspirant's Plate Armor
 				i(232699),	-- Ensemble: Prized Gladiator's Death Knight Armor
 				i(232700),	-- Ensemble: Prized Gladiator's Demon Hunter Armor
 				i(232701),	-- Ensemble: Prized Gladiator's Druid Armor
@@ -1045,13 +1035,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(245951),	-- Wildhammer's Portable Forge
 			}),
 			n(PVP, {
-				i(232870),	-- Arsenal: Astral Aspirant's Weapons
 				i(232871),	-- Arsenal: Astral Gladiator's Weapons
 				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
-				i(232808),	-- Ensemble: Astral Aspirant's Cloth Armor
-				i(232809),	-- Ensemble: Astral Aspirant's Leather Armor
-				i(232810),	-- Ensemble: Astral Aspirant's Mail Armor
-				i(232811),	-- Ensemble: Astral Aspirant's Plate Armor
 				i(232812),	-- Ensemble: Astral Gladiator's Death Knight Armor
 				i(232813),	-- Ensemble: Astral Gladiator's Demon Hunter Armor
 				i(232814),	-- Ensemble: Astral Gladiator's Druid Armor

@@ -172,10 +172,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					moh(80, iensemble(232867)),	-- Arsenal: Prized Aspirant's Weapons
+					moh(12, iensemble(232695)),	-- Ensemble: Prized Aspirant's Cloth Armor
+					moh(12, iensemble(232696)),	-- Ensemble: Prized Aspirant's Leather Armor
+					moh(12, iensemble(232697)),	-- Ensemble: Prized Aspirant's Mail Armor
+					moh(12, iensemble(232698)),	-- Ensemble: Prized Aspirant's Plate Armor
+				}),
+			}),
+			n(219217, {	-- Velerd <Honor Quartermaster>
+				["coord"] = { 55.0, 76.5, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(229504)),	-- Prized Aspirant's Cape
 						honor(525, i(229503)),	-- Prized Aspirant's Cloak
@@ -289,7 +303,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(525, i(229515)),	-- Prized Aspirant's Shield
 						honor(1750, i(229510)),	-- Prized Aspirant's Staff
 					}),
-				},
+				}),
 			})
 		})),
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {

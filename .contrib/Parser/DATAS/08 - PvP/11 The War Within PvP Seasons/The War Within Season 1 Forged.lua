@@ -171,10 +171,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					moh(80, iensemble(232864)),	-- Arsenal: Forged Aspirant's Weapons
+					moh(12, iensemble(232664)),	-- Ensemble: Forged Aspirant's Cloth Armor
+					moh(12, iensemble(232665)),	-- Ensemble: Forged Aspirant's Leather Armor
+					moh(12, iensemble(232666)),	-- Ensemble: Forged Aspirant's Mail Armor
+					moh(12, iensemble(232667)),	-- Ensemble: Forged Aspirant's Plate Armor
+				}),
+			}),
+			n(219217, {	-- Velerd <Honor Quartermaster>
+				["coord"] = { 55.0, 76.5, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(218434)),	-- Forged Aspirant's Cape
 						honor(525, i(218433)),	-- Forged Aspirant's Cloak
@@ -288,7 +302,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(1225, i(218452)),	-- Forged Aspirant's Wand
 						honor(875, i(218443)),	-- Forged Aspirant's Warglaive
 					}),
-				},
+				}),
 			})
 		})),
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {

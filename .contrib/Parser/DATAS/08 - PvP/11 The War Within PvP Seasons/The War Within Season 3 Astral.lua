@@ -172,10 +172,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0, ADDED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					moh(80, iensemble(232870)),	-- Arsenal: Astral Aspirant's Weapons
+					moh(12, iensemble(232808)),	-- Ensemble: Astral Aspirant's Cloth Armor
+					moh(12, iensemble(232809)),	-- Ensemble: Astral Aspirant's Leather Armor
+					moh(12, iensemble(232810)),	-- Ensemble: Astral Aspirant's Mail Armor
+					moh(12, iensemble(232811)),	-- Ensemble: Astral Aspirant's Plate Armor
+				}),
+			}),
+			n(219217, {	-- Velerd <Honor Quartermaster>
+				["coord"] = { 55.0, 76.5, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(230365)),	-- Astral Aspirant's Cape
 						honor(525, i(230364)),	-- Astral Aspirant's Cloak
@@ -290,7 +304,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						honor(1225, i(230382)),	-- Astral Aspirant's Wand
 						honor(875, i(230374)),	-- Astral Aspirant's Warglaive
 					}),
-				},
+				}),
 			})
 		})),
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
