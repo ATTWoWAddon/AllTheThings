@@ -6753,7 +6753,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1608})}}),
 h(-31,{awp=10200,u=1608,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1608,g={
-crit(8825,{achID=2336,id=5,u=1609})}}),
+crit(8825,{achID=2336,id=1,u=1609})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1608})}}),
 h(-45,{awp=10200,u=1608,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1608}),
@@ -7557,6 +7557,35 @@ h(-19,{awp=11506,u=1611,g={
 i(226404,{awp=11506,b=1,q=2,u=1611}),
 i(238681,{awp=11506,f=55,lvl=60,u=1611,g={
 i(22484,{awp=11506,b=1,q=2,u=1611})}})}}),
+h(-63,{awp=11506,u=1611,g={
+s(284817,236708,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284818,236709,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284827,236718,{awp=11506,f=4,lvl=58,q=4,u=1611}),
+s(284845,236736,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284816,236707,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284836,236727,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284830,236721,{awp=11506,f=4,lvl=58,q=4,u=1611}),
+s(284839,236730,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284851,236742,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284854,236745,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284833,236724,{awp=11506,f=4,lvl=58,q=4,u=1611}),
+s(284842,236733,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284848,236739,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284857,236748,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284825,236716,{awp=11506,f=4,lvl=58,q=4,u=1611}),
+s(284834,236725,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284819,236710,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284821,236712,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284849,236740,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284846,236737,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284852,236743,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284855,236746,{awp=11506,f=7,lvl=58,q=4,u=1611}),
+s(284843,236734,{awp=11506,f=6,lvl=58,q=4,u=1611}),
+s(284840,236731,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284837,236728,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284831,236722,{awp=11506,f=4,lvl=58,q=4,u=1611}),
+s(284820,236711,{awp=11506,f=5,lvl=58,q=4,u=1611}),
+s(284828,236719,{awp=11506,f=4,lvl=58,q=4,u=1611})}}),
 h(-614,{awp=11506,u=1611,g={
 h(-19,{awp=11506,u=1611,g={
 s(284434,235894,{awp=11506,f=27,lvl=60,q=4,u=1611}),

@@ -162,6 +162,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(22484),	-- Necrotic Rune
 						}),
 					}),
+					n(ZONE_DROPS, {
+						i(236708),	-- Breastplate of Undead Slaying
+						i(236709),	-- Chestguard of Undead Slaying
+						i(236718),	-- Robe of Undead Cleansing
+						i(236736),	-- Chestguard of Undead Cleansing
+						i(236707),	-- Tunic of Undead Slaying
+						i(236727),	-- Tunic of Undead Cleansing
+						i(236721),	-- Robe of Undead Purification
+						i(236730),	-- Tunic of Undead Purification
+						i(236742),	-- Chestguard of Undead Purification
+						i(236745),	-- Breastplate of Undead Purification
+						i(236724),	-- Robe of Undead Warding
+						i(236733),	-- Tunic of Undead Warding
+						i(236739),	-- Chestguard of Undead Warding
+						i(236748),	-- Breastplate of Undead Warding
+						i(236716),	-- Bracers of Undead Cleansing
+						i(236725),	-- Wristwraps of Undead Slaying
+						i(236710),	-- Wristguards of Undead Slaying
+						i(236712),	-- Bracers of Undead Slaying				
+						i(236740),	-- Wristguards of Undead Purification
+						i(236737),	-- Wristguards of Undead Warding
+						i(236743),	-- Bracers of Undead Purification
+						i(236746),	-- Bracers of Undead Warding
+						i(236734),	-- Wristguards of Undead Cleansing
+						i(236731),	-- Wristwraps of Undead Warding
+						i(236728),	-- Wristwraps of Undead Purification
+						i(236722),	-- Bracers of Undead Warding
+						i(236711),	-- Wristwraps of Undead Slaying
+						i(236719),	-- Bracers of Undead Purification
+						i(236710),	-- Wristguards of Undead Slaying
+						i(236712),	-- Bracers of Undead Slaying
+					}),
 					n(APPRENTICE , {	-- Apprentice
 						n(COMMON_BOSS_DROPS, {	-- Common Boss Drops
 							i(235894),	-- Doomsayer's Demise

@@ -144,6 +144,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
+					-- #IF SEASON_OF_DISCOVERY
+					i(236713),	-- Handwraps of Undead Slaying
+					i(236714),	-- Gauntlets of Undead Slaying
+					i(236715),	-- Handguards of Undead Slaying
+					i(236717),	-- Gloves of Undead Cleansing
+					i(236726),	-- Handwraps of Undead Cleansing
+					i(236735),	-- Handguards of Undead Cleansing
+					i(236720),	-- Gloves of Undead Purification
+					i(236729),	-- Handwraps of Undead Purification
+					i(236741),	-- Handguards of Undead Purificatio
+					i(236744),	-- Gauntlets of Undead Purification
+					i(236723),	-- Gloves of Undead Warding
+					i(236732),	-- Handwraps of Undead Warding
+					i(236738),	-- Handguards of Undead Warding
+					i(236747),	-- Gauntlets of Undead Warding
+					-- #ELSE
 					i(23084, {	-- Gloves of Undead Cleansing
 						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
@@ -156,6 +172,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(23078, {	-- Gauntlets of Undead Slaying
 						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
+					-- #ENDIF
 				},
 			}),
 			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Blessed Wizard Oil
@@ -761,6 +778,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				i(43076, {	-- Blessed Tunic of Undead Slaying
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236708)),	-- Breastplate of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236709)),	-- Chestguard of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236718)),	-- Robe of Undead Cleansing
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236736)),	-- Chestguard of Undead Cleansing
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236707)),	-- Tunic of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236727)),	-- Tunic of Undead Cleansing
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236721)),	-- Robe of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236730)),	-- Tunic of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236742)),	-- Chestguard of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236745)),	-- Breastplate of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236724)),	-- Robe of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236733)),	-- Tunic of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236739)),	-- Chestguard of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236748)),	-- Breastplate of Undead Warding
+				-- #ELSE
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23087, {	-- Breastplate of Undead Slaying
 					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
@@ -773,6 +806,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23089, {	-- Tunic of Undead Slaying
 					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
+				-- #ENDIF
 			},
 		}),
 		n(28194, {	-- Prince Tenris Mirkblood
@@ -920,6 +954,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				i(43075, {	-- Blessed Trousers of Undead Cleansing
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
+				-- #IF SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236716)),	-- Bracers of Undead Cleansing
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236725)),	-- Wristwraps of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236710)),	-- Wristguards of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying				
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236740)),	-- Wristguards of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236737)),	-- Wristguards of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236743)),	-- Bracers of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236746)),	-- Bracers of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236734)),	-- Wristguards of Undead Cleansing
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236731)),	-- Wristwraps of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236728)),	-- Wristwraps of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236722)),	-- Bracers of Undead Warding
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236711)),	-- Wristwraps of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236719)),	-- Bracers of Undead Purification
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236710)),	-- Wristguards of Undead Slaying
+				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(236712)),	-- Bracers of Undead Slaying
+				-- #ELSE
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23091, {	-- Bracers of Undead Cleansing
 					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				})),
@@ -932,6 +984,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23090, {	-- Bracers of Undead Slaying
 					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				})),
+				-- #ENDIF
 			},
 		}),
 		n(REWARDS, {
