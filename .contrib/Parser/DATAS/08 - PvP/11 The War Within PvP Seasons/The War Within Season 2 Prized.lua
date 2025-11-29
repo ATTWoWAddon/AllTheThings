@@ -306,11 +306,64 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_0 } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					iensemble(232868, {	-- Arsenal: Prized Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(232699, {	-- Ensemble: Prized Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232700, {	-- Ensemble: Prized Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232701, {	-- Ensemble: Prized Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232702, {	-- Ensemble: Prized Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232703, {	-- Ensemble: Prized Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232704, {	-- Ensemble: Prized Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232705, {	-- Ensemble: Prized Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232706, {	-- Ensemble: Prized Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232707, {	-- Ensemble: Prized Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232708, {	-- Ensemble: Prized Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232709, {	-- Ensemble: Prized Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232710, {	-- Ensemble: Prized Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232711, {	-- Ensemble: Prized Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(229731)),	-- Prized Gladiator's Cloak
@@ -633,10 +686,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(230721, {	-- Prized Equipment Chest
 						["timeline"] = { ADDED_11_1_5 },
 					}),
-				},
+				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2

@@ -307,11 +307,64 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0, ADDED_12_0_0 } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					iensemble(232871, {	-- Arsenal: Astral Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(232812, {	-- Ensemble: Astral Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232813, {	-- Ensemble: Astral Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232814, {	-- Ensemble: Astral Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232815, {	-- Ensemble: Astral Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232816, {	-- Ensemble: Astral Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232817, {	-- Ensemble: Astral Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232818, {	-- Ensemble: Astral Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232819, {	-- Ensemble: Astral Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232820, {	-- Ensemble: Astral Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232821, {	-- Ensemble: Astral Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232822, {	-- Ensemble: Astral Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232823, {	-- Ensemble: Astral Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232824, {	-- Ensemble: Astral Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(230591)),	-- Astral Gladiator's Cloak
@@ -641,10 +694,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(230722, {	-- Astral Equipment Chest
 						["timeline"] = { ADDED_11_2_5 },
 					}),
-				},
+				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3

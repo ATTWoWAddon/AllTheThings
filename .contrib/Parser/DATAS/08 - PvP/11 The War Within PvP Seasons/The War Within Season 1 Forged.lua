@@ -305,11 +305,64 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_0 } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(232668, {	-- Ensemble: Forged Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232669, {	-- Ensemble: Forged Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232670, {	-- Ensemble: Forged Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232671, {	-- Ensemble: Forged Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232672, {	-- Ensemble: Forged Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232673, {	-- Ensemble: Forged Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232674, {	-- Ensemble: Forged Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232675, {	-- Ensemble: Forged Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232676, {	-- Ensemble: Forged Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232677, {	-- Ensemble: Forged Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232678, {	-- Ensemble: Forged Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232679, {	-- Ensemble: Forged Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232680, {	-- Ensemble: Forged Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
@@ -627,11 +680,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(220378, {	-- Forged Equipment Chest
 						["timeline"] = { ADDED_11_0_5 },
 					}),
-
-				},
+				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
