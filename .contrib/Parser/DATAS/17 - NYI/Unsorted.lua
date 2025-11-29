@@ -6009,7 +6009,6 @@ root(ROOTS.Unsorted, {
 			i(252750),	-- Aquatic Winter Toque \\ Aquatic Winter Hat
 			i(252751),	-- Snowy Winter Toque \\ Snowy Winter Hat
 			i(252752),	-- Sunny Winter Toque \\ Sunny Winter Hat
-			i(253520),	-- Enclave Aspirant's Hatchet
 			i(255881),	-- Severed Threads Commendation
 			i(259454),	-- Ensemble: Regalia of Shackled Elements
 			i(242590),	-- Strom'kar, the Warbreaker
