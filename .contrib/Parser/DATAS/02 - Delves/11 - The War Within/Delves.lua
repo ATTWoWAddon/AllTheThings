@@ -2446,6 +2446,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 				n(ARMOR, {
+					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
+						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+					}),
+					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
+						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+					}),
+					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
+						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+					}),
+					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
+						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+					}),
 					filter(BACK_F, {
 						i(225414, {	-- Cave Topographer's Drape
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
@@ -2566,6 +2582,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 				n(WEAPONS, {
+					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
+						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+					}),
 					i(225500, {	-- Bedrock Breaker
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
 					}),

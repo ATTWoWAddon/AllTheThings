@@ -5436,6 +5436,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(231629),	-- zzOld
 			}),
 			n(HEAD, {
+				i(243344),	-- Chef's Hat
 				i(237520),	-- Hemet's Hood
 			}),
 			filter(TABARDS, {

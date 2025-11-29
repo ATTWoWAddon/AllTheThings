@@ -14953,7 +14953,7 @@ s(224026,227648,{b=1,e=242,f=7,lvl=35}),
 s(224023,227645,{b=1,e=242,f=7,lvl=35}),
 s(224021,227643,{b=1,e=242,f=7,lvl=35})}}),
 crit(70436,{achID=40997,e=242,id=2})}}),
-n(227257,{coords={{46,28.9,71}},e=242,isDaily=1,isRaid=1,maps=a[785],questID=84256,g={
+n(227257,{coords={{46,28.9,71}},description="To engage Archavon, simply have five players stepping on the five runes around his dome.\n\nIgnore the valkyrs above the runes, they will despawn immediatelly when all runes are stepped on!",e=242,isDaily=1,isRaid=1,maps=a[785],questID=84256,g={
 flt(100,{e=242,g={
 mnt(61465,{b=1,e=242,itemID=43959,lvl=17,r=2}),
 mnt(61467,{b=1,e=242,itemID=44083,lvl=17,r=1})}}),

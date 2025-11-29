@@ -1937,6 +1937,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(239204),	-- (DNT NEEDS CRESTS) Overflowing K'aresh Trove
+			i(239109),	-- [NYI] Outdoor Voidforged Container - Ruins of Yaathron
 			i(246822),	-- A Steamy Romance Novel: Devouring Love
 			i(246823),	-- A Steamy Romance Novel: Got Milk?
 			i(246816),	-- A Steamy Romance Novel: Nightborne of the Living Dead
@@ -1945,7 +1947,20 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(246821),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 			i(246818),	-- A Steamy Romance Novel: Waves of Desire
 			i(249235),	-- Bottomless Bag of Entropy
+			i(238921),	-- Containment Canister
+			i(248327),	-- Ensemble: Dark Iron's Ceremonial Collection
+			i(247973),	-- Ensemble: The Horseman's Ghoulish Collection
+			i(243580),	-- Etheric Pylon
 			i(250975),	-- Hellcaller Chest
+			i(247927),	-- Humming Mana-Stone
+			i(243347),	-- Keg of Curiosities
+			i(246906),	-- Locus Console
+			i(247926),	-- Muted Mana-Stone
+			i(246837),	-- Mysterious Notebook
+			i(243152),	-- NEW ITem
+			i(244300),	-- Phase-Sealed Box
+			i(244421),	-- Set Keystone Map: Eco-Dome Al'dani
+			i(246904),	-- Unseen Path of the Phase Stalker
 		})),
 
 		-- 11.2.5

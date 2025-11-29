@@ -2001,7 +2001,9 @@ root(ROOTS.NeverImplemented, {
 			i(248342),	-- Astral Gladiator's Axe
 			i(248354),	-- Astral Gladiator's Bulwark
 			i(248344),	-- Astral Gladiator's Gun
+			-- #if BEFORE MID
 			i(238008),	-- Wastelander's Folly
+			-- #endif
 		})),
 	}),
 	n(WEAPONS, {

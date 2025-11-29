@@ -1040,8 +1040,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
 			n(ARMOR, {
-				i(250707),	-- The Horseman's Burning Cowl
-				i(250709),	-- The Horseman's Chilling Cowl
+				i(245526),	-- Bloodmarked Phasebound Visor
+				i(244806),	-- Renowned Explorer's Versatile Vest
+				i(245951),	-- Wildhammer's Portable Forge
 			}),
 			n(PVP, {
 				i(232870),	-- Arsenal: Astral Aspirant's Weapons
@@ -1079,7 +1080,58 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232837),	-- Ensemble: Elite Astral Gladiator's Warrior Armor
 			}),
 			n(SETS, {
-				------ Void's Binding Swimwear Set ------
+				------ Felreaver's Hellfire  Set ------
+				i(246981),	-- Ensemble: Felreaver's Hellfire Attire
+				i(246976),	-- Felreaver's Hellfire Belt
+				i(246974),	-- Felreaver's Hellfire Gauntlets
+				i(246979),	-- Felreaver's Hellfire Helm
+				i(246977),	-- Felreaver's Hellfire Jacket
+				i(246975),	-- Felreaver's Hellfire Legguards
+				i(246978),	-- Felreaver's Hellfire Shoulderguards
+				i(246980),	-- Felreaver's Hellfire Treads
+
+				------ Felreaver's Legion  Set ------
+				i(246973),	-- Ensemble: Felreaver's Legion Attire
+				i(246968),	-- Felreaver's Legion Belt
+				i(246966),	-- Felreaver's Legion Gauntlets
+				i(246971),	-- Felreaver's Legion Helm
+				i(246969),	-- Felreaver's Legion Jacket
+				i(246967),	-- Felreaver's Legion Legguards
+				i(246970),	-- Felreaver's Legion Shoulderguards
+				i(246972),	-- Felreaver's Legion Treads
+
+				------ Stillwater Fisher Set ------
+				i(244231),	-- Ensemble: Stillwater Fisher Attire
+				i(244229),	-- Angler's Mantle
+				i(244352),	-- Cloak of the Veiled Paws
+				i(244228),	-- Sash of the Tipsy Sage
+				i(244230),	-- Strawhat of Frosted Currents
+
+				------ The Horseman's Burning Set ------
+				i(247982),	-- Ensemble: The Horseman's Burning Collection
+				i(247976),	-- The Horseman's Burning Breastplate
+				i(247977),	-- The Horseman's Burning Cinch
+				i(247981),	-- The Horseman's Burning Cloak
+				i(250707),	-- The Horseman's Burning Cowl
+				i(247978),	-- The Horseman's Burning Greaves
+				i(247980),	-- The Horseman's Burning Grips
+				i(247974),	-- The Horseman's Burning Helm
+				i(247975),	-- The Horseman's Burning Mantle
+				i(247979),	-- The Horseman's Burning Treads
+
+				------ The Horseman's Chilling Set ------
+				i(247906),	-- Ensemble: The Horseman's Chilling Collection
+				i(247899),	-- The Horseman's Chilling Breastplate
+				i(247900),	-- The Horseman's Chilling Cinch
+				i(247905),	-- The Horseman's Chilling Cloak
+				i(250709),	-- The Horseman's Chilling Cowl
+				i(247901),	-- The Horseman's Chilling Greaves
+				i(247904),	-- The Horseman's Chilling Grips
+				i(247897),	-- The Horseman's Chilling Helm
+				i(247898),	-- The Horseman's Chilling Mantle
+				i(247903),	-- The Horseman's Chilling Treads
+
+				------ Void's Binding Set ------
 				i(246898),	-- Ensemble: Void's Binding Swimwear
 				i(246896),	-- Void's Binding Anklets
 				i(246893),	-- Void's Binding Briefs
@@ -1088,18 +1140,42 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(246894),	-- Void's Binding Shade
 				i(246892),	-- Void's Binding Wraps
 
-				------ Stillwater Fisher Attire Set ------
-				i(244231),	-- Ensemble: Stillwater Fisher Attire
-				i(244229),	-- Angler's Mantle
-				i(244352),	-- Cloak of the Veiled Paws
-				i(244228),	-- Sash of the Tipsy Sage
-				i(244230),	-- Strawhat of Frosted Currents
+				------ Wildhammer's Ceremonial Set ------
+				i(248318),	-- Ensemble: Wildhammer's Ceremonial Collection
+				i(248313),	-- Wildhammer's Ceremonial Belt
+				i(248314),	-- Wildhammer's Ceremonial Boots
+				i(248312),	-- Wildhammer's Ceremonial Chestplate
+				i(248317),	-- Wildhammer's Ceremonial Cloak
+				i(248310),	-- Wildhammer's Ceremonial Crown
+				i(248316),	-- Wildhammer's Ceremonial Gauntlets
+				i(248311),	-- Wildhammer's Ceremonial Mantle
+				i(248315),	-- Wildhammer's Ceremonial Legguards
+				i(248395),	-- Wildhammer's Ritualistic Mantle
 			}),
 			n(WEAPONS, {
+				i(246785),	-- Coldsnap Felblade
+				i(246790),	-- Coldsnap Feldirk
+				i(246990),	-- Felreaver's Azure Staff
+				i(246996),	-- Felreaver's Azure Wand
+				i(246994),	-- Felreaver's Hellfire Staff
+				i(246998),	-- Felreaver's Hellfire Wand
+				i(246319),	-- Festering Scythe
+				i(246787),	-- Hellfire Felblade
+				i(246791),	-- Hellfire Feldirk
 				i(237853),	-- Soulweave Bulwark
 				i(237389),	-- Soulweave Great Blade
 				i(238510),	-- Soulweave Longbow
 				i(237477),	-- Soulweave Staff
+				i(247707),	-- The Horseman's Burning Blade
+				i(247716),	-- The Horseman's Burning Bulwark
+				i(247711),	-- The Horseman's Burning Great Blade
+				i(247705),	-- The Horseman's Chilling Blade
+				i(247714),	-- The Horseman's Chilling Bulwark
+				i(247709),	-- The Horseman's Chilling Great Blade
+				i(246783),	-- Wildhammer's Ancient Crusher
+				i(245954),	-- Wildhammer's Ceremonial Mace
+				i(245958),	-- Wildhammer's Crystal Ward
+				i(246800),	-- Wildhammer's Mighty Crossbow
 			}),
 		})),
 	}),

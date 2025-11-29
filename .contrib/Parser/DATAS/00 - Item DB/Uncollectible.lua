@@ -2585,6 +2585,7 @@ i(238884);	-- Machine Remnant
 i(238876);	-- Malicious Mandible
 i(238869);	-- Matted Pelt
 i(238801);	-- Mite-Kissed Silver Tooth
+i(238853);	-- Netherbound Heart
 i(238855);	-- Netherclaw
 i(248970);	-- Nexus-Princess Ky'veza
 i(238856);	-- Nightpiercer Feather
