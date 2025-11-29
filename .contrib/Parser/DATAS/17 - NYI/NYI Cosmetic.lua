@@ -644,38 +644,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(PVP, {
 				i(232890),	-- Arsenal: Algari Warmonger's Weapons
-				i(232866),	-- Arsenal: Elite Forged Gladiator's Weapons
-				i(232869),	-- Arsenal: Elite Prized Gladiator's Weapons
 				i(232886),	-- Ensemble: Algari Warmonger's Cloth Armor
 				i(232887),	-- Ensemble: Algari Warmonger's Leather Armor
 				i(232888),	-- Ensemble: Algari Warmonger's Mail Armor
 				i(232889),	-- Ensemble: Algari Warmonger's Plate Armor
-				i(232681),	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
-				i(232682),	-- Ensemble: Elite Forged Gladiator's Demon Hunter Armor
-				i(232683),	-- Ensemble: Elite Forged Gladiator's Druid Armor
-				i(232684),	-- Ensemble: Elite Forged Gladiator's Evoker Armor
-				i(232685),	-- Ensemble: Elite Forged Gladiator's Hunter Armor
-				i(232686),	-- Ensemble: Elite Forged Gladiator's Mage Armor
-				i(232687),	-- Ensemble: Elite Forged Gladiator's Monk Armor
-				i(232688),	-- Ensemble: Elite Forged Gladiator's Paladin Armor
-				i(232689),	-- Ensemble: Elite Forged Gladiator's Priest Armor
-				i(232690),	-- Ensemble: Elite Forged Gladiator's Rogue Armor
-				i(232691),	-- Ensemble: Elite Forged Gladiator's Shaman Armor
-				i(232692),	-- Ensemble: Elite Forged Gladiator's Warlock Armor
-				i(232693),	-- Ensemble: Elite Forged Gladiator's Warrior Armor
-				i(232712),	-- Ensemble: Elite Prized Gladiator's Death Knight Armor
-				i(232713),	-- Ensemble: Elite Prized Gladiator's Demon Hunter Armor
-				i(232714),	-- Ensemble: Elite Prized Gladiator's Druid Armor
-				i(232715),	-- Ensemble: Elite Prized Gladiator's Evoker Armor
-				i(232716),	-- Ensemble: Elite Prized Gladiator's Hunter Armor
-				i(232717),	-- Ensemble: Elite Prized Gladiator's Mage Armor
-				i(232718),	-- Ensemble: Elite Prized Gladiator's Monk Armor
-				i(232719),	-- Ensemble: Elite Prized Gladiator's Paladin Armor
-				i(232720),	-- Ensemble: Elite Prized Gladiator's Priest Armor
-				i(232721),	-- Ensemble: Elite Prized Gladiator's Rogue Armor
-				i(232722),	-- Ensemble: Elite Prized Gladiator's Shaman Armor
-				i(232723),	-- Ensemble: Elite Prized Gladiator's Warlock Armor
-				i(232724),	-- Ensemble: Elite Prized Gladiator's Warrior Armor
 			}),
 			n(SETS, {
 				------ Forest Dweller's Butterfly Set ------
@@ -1005,22 +977,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(245526),	-- Bloodmarked Phasebound Visor
 				i(244806),	-- Renowned Explorer's Versatile Vest
 				i(245951),	-- Wildhammer's Portable Forge
-			}),
-			n(PVP, {
-				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
-				i(232825),	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
-				i(232826),	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
-				i(232827),	-- Ensemble: Elite Astral Gladiator's Druid Armor
-				i(232828),	-- Ensemble: Elite Astral Gladiator's Evoker Armor
-				i(232829),	-- Ensemble: Elite Astral Gladiator's Hunter Armor
-				i(232830),	-- Ensemble: Elite Astral Gladiator's Mage Armor
-				i(232831),	-- Ensemble: Elite Astral Gladiator's Monk Armor
-				i(232832),	-- Ensemble: Elite Astral Gladiator's Paladin Armor
-				i(232833),	-- Ensemble: Elite Astral Gladiator's Priest Armor
-				i(232834),	-- Ensemble: Elite Astral Gladiator's Rogue Armor
-				i(232835),	-- Ensemble: Elite Astral Gladiator's Shaman Armor
-				i(232836),	-- Ensemble: Elite Astral Gladiator's Warlock Armor
-				i(232837),	-- Ensemble: Elite Astral Gladiator's Warrior Armor
 			}),
 			n(SETS, {
 				------ Felreaver's Hellfire  Set ------

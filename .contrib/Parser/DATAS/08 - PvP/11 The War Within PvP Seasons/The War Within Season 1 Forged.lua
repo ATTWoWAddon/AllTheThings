@@ -834,7 +834,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(218650),	-- Forged Gladiator's Chestguard
@@ -982,7 +982,60 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["u"] = ELITE_PVP_REQUIREMENT,
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					iensemble(232866, {	-- Arsenal: Elite Forged Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(232681, {	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232682, {	-- Ensemble: Elite Forged Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232683, {	-- Ensemble: Elite Forged Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232684, {	-- Ensemble: Elite Forged Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232685, {	-- Ensemble: Elite Forged Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232686, {	-- Ensemble: Elite Forged Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232687, {	-- Ensemble: Elite Forged Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232688, {	-- Ensemble: Elite Forged Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232689, {	-- Ensemble: Elite Forged Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232690, {	-- Ensemble: Elite Forged Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232691, {	-- Ensemble: Elite Forged Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232692, {	-- Ensemble: Elite Forged Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232693, {	-- Ensemble: Elite Forged Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+				["coord"] = { 59.8, 69.3, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+				},FILTERFUNC_itemID,{
 					honor(100, i(223616, {	-- Forged Gladiator's Tabard
 						["sourceAchievements"] = { 40392 },	-- Elite: The War Within Season 1
 					})),
@@ -1003,7 +1056,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(225861)),	-- Forged Gladiator's Staff
 					moh(5, i(225859)),	-- Forged Gladiator's Warglaive
 					moh(5, i(225874)),	-- Forged Gladiator's Wither-Blade
-				},
+				}),
 			}),
 		})),
 		n(REWARDS, {

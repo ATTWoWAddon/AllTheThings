@@ -848,7 +848,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0, ADDED_12_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(230591),	-- Astral Gladiator's Cloak
@@ -996,7 +996,60 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = {
+				["groups"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["u"] = ELITE_PVP_REQUIREMENT,
+					["timeline"] = { ADDED_12_0_0 },
+				}, {
+					iensemble(232872, {	-- Arsenal: Elite Astral Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(232825, {	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(232826, {	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(232827, {	-- Ensemble: Elite Astral Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(232828, {	-- Ensemble: Elite Astral Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(232829, {	-- Ensemble: Elite Astral Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(232830, {	-- Ensemble: Elite Astral Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(232831, {	-- Ensemble: Elite Astral Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(232832, {	-- Ensemble: Elite Astral Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(232833, {	-- Ensemble: Elite Astral Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(232834, {	-- Ensemble: Elite Astral Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(232835, {	-- Ensemble: Elite Astral Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(232836, {	-- Ensemble: Elite Astral Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(232837, {	-- Ensemble: Elite Astral Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+				["coord"] = { 59.8, 69.3, DORNOGAL },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				},FILTERFUNC_itemID,{
 					honor(100, i(232908, {	-- Astral Gladiator's Tabard
 						["sourceAchievements"] = { 41027 },	-- Elite: The War Within Season 3
 					})),
@@ -1018,7 +1071,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(248347)),	-- Astral Gladiator's Staff
 					moh(5, i(248359)),	-- Astral Gladiator's Sword
 					moh(5, i(248345)),	-- Astral Gladiator's Warglaive
-				},
+				}),
 			}),
 		})),
 		n(REWARDS, {
