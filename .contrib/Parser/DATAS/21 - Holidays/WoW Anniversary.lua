@@ -4456,7 +4456,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					},
 				}),
 				n(227257, {	-- Archavon the Stone Watcher
-					["description"] = "To engage Archavon, simply have five players stepping on the five runes around his dome.\n\nIgnore the valkyrs above the runes, they will despawn immediatelly when all runes are stepped on!",
+					["description"] = "To engage Archavon, simply have five players stepping on the five runes around his dome.\n\nIgnore the valkyrs above the runes, they will despawn immediately when all runes are stepped on!",
 					["isRaid"] = true,
 					["questID"] = 84256,
 					["isDaily"] = true,

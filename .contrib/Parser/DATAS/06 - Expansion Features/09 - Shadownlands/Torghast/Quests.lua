@@ -109,9 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				["timeline"] = { ADDED_9_1_0 },
-				["groups"] = {
-					i(186732),	-- The Box of Many Things (QI!)
-				},
+				["groups"] = { i(186732) },	-- The Box of Many Things (QI!)
 			}),
 
 			-- Champion Unlocks
@@ -119,280 +117,212 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 62229 },	-- Ashraka's Intelligence
 				["provider"] = { "n", 173395 },	-- Ashraka
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1311),	-- Ashraka
-				},
+				["groups"] = { follower(1311) },	-- Ashraka
 			}),
 			q(61223, {	-- Champion: Ayeleth the Deprived [Venthyr]
 				["sourceQuests"] = { 61259 },	-- Ayeleth's Hunger
 				["provider"] = { "n", 171918 },	-- Ayeleth
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1220),	-- Ayeleth
-				},
+				["groups"] = { follower(1220) },	-- Ayeleth
 			}),
 			q(61421, {	-- Champion: Blisswing [Night Fae]
 				["sourceQuests"] = { 61427 },	-- Blisswing's Rescue
 				["provider"] = { "n", 172275 },	-- Blisswing
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1277),	-- Blisswing
-				},
+				["groups"] = { follower(1277) },	-- Blisswing
 			}),
 			q(61424, {	-- Champion: Chalkyth [Night Fae]
 				["sourceQuests"] = { 61430 },	-- Chalkyth's Saber
 				["provider"] = { "n", 172240 },	-- Chalkyth
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1280),	-- Chalkyth
-				},
+				["groups"] = { follower(1280) },	-- Chalkyth
 			}),
 			q(62999, {	-- Champion: Croman
 				["sourceQuests"] = { 62993 },	-- The Riddle of Death
 				["provider"] = { "n", 175649 },	-- Croman
-				["groups"] = {
-					follower(1325),	-- Croman
-				},
+				["groups"] = { follower(1325) },	-- Croman
 			}),
 			q(61218, {	-- Champion: Dug Gravewell [Venthyr]
 				["sourceQuests"] = { 61228 },	-- Dug's Missing Shovel
 				["provider"] = { "n", 171869 },	-- Dug Gravewell
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1214),	-- Dug Gravewell
-				},
+				["groups"] = { follower(1214) },	-- Dug Gravewell
 			}),
 			q(61422, {	-- Champion: Duskleaf [Night Fae]
 				["sourceQuests"] = { 61428 },	-- Duskleaf's Revenge
 				["provider"] = { "n", 172238 },	-- Duskleaf
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				-- found in Twisting Corridors
-				["groups"] = {
-					follower(1278)	-- Duskleaf
-				},
+				["groups"] = { follower(1278) }	-- Duskleaf
 			}),
 			q(64170, {	-- Champion: ELGU - 007 [Kyrian]
 				["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
 				["provider"] = { "n", 179666 },	-- ELGU - 007
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1328),	-- ELGU - 007
-				},
+				["groups"] = { follower(1328) },	-- ELGU - 007
 			}),
 			q(64169, {	-- Champion: Ella [Night Fae]
 				["sourceQuests"] = { 64185 },	-- Assist Ella With ?
 				["provider"] = { "n", 179672 },	-- Ella
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1327),	-- Ella
-				},
+				["groups"] = { follower(1327) },	-- Ella
 			}),
 			q(61958, {	-- Champion: Gorgelimb [Necrolord]
 				-- ["sourceQuests"] = { },	-- TODO
 				["provider"] = { "n", 173397 },	-- Gorgelimb
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1306),	-- Gorgelimb
-				},
+				["groups"] = { follower(1306) },	-- Gorgelimb
 			}),
 			q(61319, {	-- Champion: Hala [Kyrian]
 				["sourceQuests"] = { 61348 },	-- Hala's Sword
 				["provider"] = { "n", 172037 },	-- Hala
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1267),	-- Hala
-				},
+				["groups"] = { follower(1267) },	-- Hala
 			}),
 			q(61321, {	-- Champion: Ispiron [Kyrian]
 				["sourceQuests"] = { 61395 },	-- Spare Parts
 				["provider"] = { "n", 172154 },	-- Ispiron
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1269),	-- Ispiron
-				},
+				["groups"] = { follower(1269) },	-- Ispiron
 			}),
 			q(61222, {	-- Champion: Kaletar the Mender [Venthyr]
 				["sourceQuests"] = { 61248 },	-- Kaletar's Freedom
 				["provider"] = { "n", 171898 },	-- Kaletar <Mender>
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				-- Skoldus Hall, Layer 3
-				["groups"] = {
-					follower(1217),	-- Kaletar the Mender
-				},
+				["groups"] = { follower(1217) },	-- Kaletar the Mender
 			}),
 			q(61423, {	-- Champion: Karynmwylyann [Night Fae]
 				["sourceQuests"] = { 61429 },	-- Karynmwylyann's Roots
 				["provider"] = { "n", 172239 },	-- Karynmwylyann
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1279),	-- Karynmwylyann
-				},
+				["groups"] = { follower(1279) },	-- Karynmwylyann
 			}),
 			q(64171, {	-- Champion: Kiaranyka [Kyrian]
 				["sourceQuests"] = { 64187 },	-- Kiaranyka's Search
 				["provider"] = { "n", 179667 },	-- Kiaranyka
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1329),	-- Kiaranyka
-				},
+				["groups"] = { follower(1329) },	-- Kiaranyka
 			}),
 			q(64173, {	-- Champion: Kinessa the Absorbent
 				["sourceQuests"] = { 64189 },	-- Kinessa's Support
 				["provider"] = { "n", 179678 },	-- Kinessa the Absorbent
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1331),	-- Kinessa the Absorbent
-				},
+				["groups"] = { follower(1331) },	-- Kinessa the Absorbent
 			}),
 			q(61313, {	-- Champion: Kythekios [Kyrian]
 				["sourceQuests"] = { 61322 },	-- Kythekios' Memory Stone
 				["provider"] = { "n", 171995 },	-- Kythekios
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1222),	-- Kythekios
-				},
+				["groups"] = { follower(1222) },	-- Kythekios
 			}),
 			q(64175, {	-- Champion: Lassik Spinebender [Venthyr]
 				["sourceQuests"] = { 64191 },	-- Lassik's Gear
 				["provider"] = { "n", 179682 },	-- Lassik Spinebender
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1333),	-- Lassik Spinebender
-				},
+				["groups"] = { follower(1333) },	-- Lassik Spinebender
 			}),
 			q(61425, {	-- Champion: Lloth'wellyn [Night Fae]
 				["sourceQuests"] = { 61431 },	-- Lloth'wellyn's Breakthrough
 				["provider"] = { "n", 172241 },	-- Lloth'wellyn
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1281),	-- Lloth'wellyn
-				},
+				["groups"] = { follower(1281) },	-- Lloth'wellyn
 			}),
 			q(60651, {	-- Champion: Meatball [ALL]
 				["sourceQuests"] = { 60573 },	-- Meatball's Revenge
 				["provider"] = { "n", 169842 },	-- Meatball
-				["groups"] = {
-					follower(1257),	-- Meatball
-				},
+				["groups"] = { follower(1257) },	-- Meatball
 			}),
 			q(61320, {	-- Champion: Molako [Kyrian]
 				["sourceQuests"] = { 61347 },	-- Molako's Freedom
 				["provider"] = { "n", 172032 },	-- Molako
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1268),	-- Molako
-				},
+				["groups"] = { follower(1268) },	-- Molako
 			}),
 			q(61219, {	-- Champion: Nerith Darkwing [Venthyr]
 				["sourceQuests"] = { 61262 },	-- Nerith's Vengeance
 				["provider"] = { "n", 171927 },	-- Nerith Darkwing
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1215),	-- Nerith Darkwing
-				},
+				["groups"] = { follower(1215) },	-- Nerith Darkwing
 			}),
 			q(61961, {	-- Champion: Rattlebag [Necrolord]
 				["sourceQuests"] = { 62236 },	-- Rattlebag's Lost Armor
 				["provider"] = { "n", 173398 },	-- Rattlebag
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1310),	-- Rattlebag
-				},
+				["groups"] = { follower(1310) },	-- Rattlebag
 			}),
 			q(64172, {	-- Champion: Ryuja Shockfist
 				["sourceQuests"] = { 64188 },	-- Ryuja's Supplies
 				["provider"] = { "n", 179676 },	-- Ryuja Shockfist
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1330),	-- Ryuja Shockfist
-				},
+				["groups"] = { follower(1330) },	-- Ryuja Shockfist
 			}),
 			q(64168, {	-- Champion: Spore of Marasmius [Night Fae]
 				["sourceQuests"] = { 64184 },	-- Missing Friend
 				["provider"] = { "n", 179670 },	-- Spore of Marasmius
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1326),	-- Spore of Marasmius
-				},
+				["groups"] = { follower(1326) },	-- Spore of Marasmius
 			}),
 			q(64174, {	-- Champion: Steadyhands [Venthyr]
 				["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
 				["provider"] = { "n", 179680 },	-- Steadyhands
 				["timeline"] = { ADDED_9_1_0 },
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1332),	-- Steadyhands
-				},
+				["groups"] = { follower(1332) },	-- Steadyhands
 			}),
 			q(61221, {	-- Champion: Stonehuck [Venthyr]
 				["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
 				["provider"] = { "n", 171878 },	-- Stonehuck
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1216),	-- Stonehuck
-				},
+				["groups"] = { follower(1216) },	-- Stonehuck
 			}),
 			q(61959, {	-- Champion: Talethi [Necrolord]
 				["sourceQuests"] = { 62226 },	-- Talethi's Desire
 				["provider"] = { "n", 173399 },	-- Talethi
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1307),	-- Talethi
-				},
+				["groups"] = { follower(1307) },	-- Talethi
 			}),
 			q(61318, {	-- Champion: Telethakas [Kyrian]
 				["sourceQuests"] = { 61340 },	-- Telethakas' Revenge
 				["provider"] = { "n", 172022 },	-- Telethakas
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1223),	-- Telethakas
-				},
+				["groups"] = { follower(1223) },	-- Telethakas
 			}),
 			q(61317, {	-- Champion: Teliah [Kyrian]
 				["sourceQuests"] = { 61330 },	-- Teliah's Stolen Spear
 				["provider"] = { "n", 172006 },	-- Teliah
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				["groups"] = {
-					follower(1221),	-- Teliah
-				},
+				["groups"] = { follower(1221) },	-- Teliah
 			}),
 			q(61217, {	-- Champion: Thela Soulsipper [Venthyr]
 				["sourceQuests"] = { 61243 },	-- Thela's Memory Stone
 				["provider"] = { "n", 171893 },	-- Thela Soulsipper
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["groups"] = {
-					follower(1213),	-- Thela Soulsipper
-				},
+				["groups"] = { follower(1213) },	-- Thela Soulsipper
 			}),
 			q(61962, {	-- Champion: Velkein [Necrolord]
 				["sourceQuests"] = { 62231 },	-- Velkein's Blade
 				["provider"] = { "n", 173400 },	-- Velkein
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1308),	-- Velkein
-				},
+				["groups"] = { follower(1308) },	-- Velkein
 			}),
 			q(61960, {	-- Champion: Xertora [Necrolord]
 				["sourceQuests"] = { 62227 },	-- Xertora's Construct
 				["provider"] = { "n", 173401 },	-- Assembler Xertora
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["groups"] = {
-					follower(1309),	-- Assembler Xertora
-				},
+				["groups"] = { follower(1309) },	-- Assembler Xertora
 			}),
 			q(61426, {	-- Champion: Yira'lya [Night Fae]
 				-- ["sourceQuests"] = { },	-- TODO
 				["provider"] = { "n", 172243 },	-- Yira'lya
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
-				["groups"] = {
-					follower(1282)	-- Yira'lya
-				},
+				["groups"] = { follower(1282) },	-- Yira'lya
 			}),
 		}),
 		-- Bonus Quests

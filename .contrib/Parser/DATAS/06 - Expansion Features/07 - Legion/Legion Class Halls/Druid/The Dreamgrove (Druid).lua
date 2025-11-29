@@ -839,7 +839,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42042, {	-- Teensy Weensies!
 						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
-						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
+						["provider"] = { "n", 106136 },	-- Mylune
 						["coord"] = { 45.0, 32.3, 715 },
 						["groups"] = { i(136840) },	-- Mylune's Flute (QI!)
 					}),

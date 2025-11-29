@@ -787,7 +787,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["groups"] = { i(146409) },	-- Nightborne Soulstone (QI!)
 							}),
 							o(268475, {	-- Twilight Reliquary
-								["coord"] = { 50.0, 58.5, HALL_OF_THE_GUARDIAN },
+								["coords"] = {
+									{ 50.0, 58.5, HALL_OF_THE_GUARDIAN },
+									{ 50.0, 58.5, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+								},
 								["groups"] = { i(146403) },	-- Twilight Device (QI!)
 							}),
 						},
