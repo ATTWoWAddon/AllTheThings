@@ -498,6 +498,12 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230082),	-- Prowler's Lively Mask
 				i(230041),	-- Prowler's Lively Shoulder Cape
 
+				------ Prowler's Midnight Set ------
+				i(230152),	-- Ensemble: Prowler's Midnight Headgear
+				i(230054),	-- Prowler's Midnight Cowl
+				i(230074),	-- Prowler's Midnight Mask
+				i(230033),	-- Prowler's Midnight Shoulder Cape
+
 				------ Prowler's Plum Set ------
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
 				i(230068),	-- Prowler's Plum Cowl
@@ -624,6 +630,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			n(ARMOR, {
 				i(231559),	-- [DNT] Experimental Gobbo-Flyer v3
+				i(238243),	-- Hidden Boots
 				i(235034),	-- Vigilante's Aquatic Mask
 				i(235023),	-- Vigilante's Cloudy Mask
 				i(235022),	-- Vigilante's Grassy Mask
@@ -903,7 +910,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 11.1.7
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
 			n(SETS, {
-
 				------ Banshee's Chilling Set ------
 				i(244223),	-- Ensemble: Banshee's Chilling Collection
 				i(244206),	-- Banshee's Chilling Chestplate
@@ -1025,6 +1031,37 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242384),	-- Sickly Forsaken Quiver
 				i(242389),	-- Sickly Forsaken Wand
 				i(242355),	-- Sickly Forsaken Warglaives
+			}),
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			n(ARMOR, {
+				i(250707),	-- The Horseman's Burning Cowl
+				i(250709),	-- The Horseman's Chilling Cowl
+			}),
+			n(SETS, {
+				------ Void's Binding Swimwear Set ------
+				i(246898),	-- Ensemble: Void's Binding Swimwear
+				i(246896),	-- Void's Binding Anklets
+				i(246893),	-- Void's Binding Briefs
+				i(246897),	-- Void's Binding Halter Top
+				i(246895),	-- Void's Binding Sash
+				i(246894),	-- Void's Binding Shade
+				i(246892),	-- Void's Binding Wraps
+
+				------ Stillwater Fisher Attire Set ------
+				i(244231),	-- Ensemble: Stillwater Fisher Attire
+				i(244229),	-- Angler's Mantle
+				i(244352),	-- Cloak of the Veiled Paws
+				i(244228),	-- Sash of the Tipsy Sage
+				i(244230),	-- Strawhat of Frosted Currents
+			}),
+			n(WEAPONS, {
+				i(237853),	-- Soulweave Bulwark
+				i(237389),	-- Soulweave Great Blade
+				i(238510),	-- Soulweave Longbow
+				i(237477),	-- Soulweave Staff
 			}),
 		})),
 	}),

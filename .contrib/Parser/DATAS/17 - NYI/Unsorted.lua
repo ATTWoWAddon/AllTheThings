@@ -6043,7 +6043,6 @@ root(ROOTS.Unsorted, {
 				i(248787),	-- Ensemble: Void-Scarred Seer's Wrappings
 				i(246319),	-- Festering Scythe
 				i(246915),	-- Arsenal: Ethereal Weaponry
-				i(245523),	-- Shadowguard Credentials
 				i(245526),	-- Bloodmarked Phasebound Visor
 				i(244806),	-- Renowned Explorer's Versatile Vest
 
@@ -6178,35 +6177,6 @@ root(ROOTS.Unsorted, {
 				i(246823),	-- A Steamy Romance Novel: Got Milk?
 			}),
 			n(PVP, {
-				i(232616),	-- Astral Gladiator's Coin Pouch
-				i(230722),	-- Astral Equipment Chest
-				i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
-				i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
-				i(230816),	-- [11.2 PVP] Gladiator's Gun <TEMPLATE>
-				i(230817),	-- [11.2 PVP] Gladiator's Warglaive <TEMPLATE>
-				i(230819),	-- [11.2 PVP] Gladiator's Spear <TEMPLATE>
-				i(230820),	-- [11.2 PVP] Gladiator's Staff <TEMPLATE>
-				i(230821),	-- [11.2 PVP] Gladiator's Greatsword <TEMPLATE>
-				i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
-				i(230823),	-- [11.2 PVP] Gladiator's Crossbow <TEMPLATE>
-				i(230824),	-- [11.2 PVP] Gladiator's Scepter <TEMPLATE>
-				i(230825),	-- [11.2 PVP] Gladiator's Focus <TEMPLATE>
-				i(230826),	-- [11.2 PVP] Gladiator's Shield <TEMPLATE>
-				i(230827),	-- [11.2 PVP] Gladiator's Bulwark <TEMPLATE>
-				i(230828),	-- [11.2 PVP] Gladiator's Claws <TEMPLATE>
-				i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
-				i(230830),	-- [11.2 PVP] Gladiator's Greataxe <TEMPLATE>
-				i(230831),	-- [11.2 PVP] Gladiator's Pulverizer <TEMPLATE>
-				i(230832),	-- [11.2 PVP] Gladiator's Wither-Blade <TEMPLATE>
-				i(230833),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-				i(230834),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-				i(230835),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-				i(230836),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-				i(231629),	-- zzOld
-				i(231636),	-- zzOld
-				i(248342),	-- Astral Gladiator's Axe
-				i(248344),	-- Astral Gladiator's Gun
-				i(248354),	-- Astral Gladiator's Bulwark
 				-- Ensembles/Arsenals
 				i(232808),	-- Ensemble: Astral Aspirant's Cloth Armor
 				i(232809),	-- Ensemble: Astral Aspirant's Leather Armor
@@ -6243,108 +6213,10 @@ root(ROOTS.Unsorted, {
 				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
 			}),
 			filter(QUEST_ITEMS, {
-				i(229166),	-- Void Stuffs
-				i(229398),	-- Sabeel's Tuning Key
-				i(229399),	-- Patram's Tuning Key
-				i(229400),	-- Xaheen's Tuning Key
-				i(229402),	-- Serving Tray
-				i(229403),	-- Toy Boat
-				i(229404),	-- Carved Toy
+				i(232517),	-- Biome Eco-Stabilizer
 				i(229405),	-- Entropic Core
-				i(229406),	-- Codex of The Exchange
-				i(229898),	-- Capture Device
-				i(231094),	-- Unused - Tranquilizing Dart [DNT]
-				i(231790),	-- Small Stone Tablet
-				i(231801),	-- Well-Worn Coin
-				i(231804),	-- Game Piece
-				i(231805),	-- [DNT]Well-worn Coin
-				i(232280),	-- Cracked Pendant
-				i(232281),	-- Small Fossil
-				i(232426),	-- Game Board
-				i(232516),	-- Fading Essence
-				i(232522),	-- High Priest's Record[DNT]
-				i(232553),	-- Temple Keystone[DNT]
-				i(232554),	-- Waning Essence[DNT]
-				i(232568),	-- Priest's Remains[DNT]
-				i(232630),	-- Xy Imports Ledger
-				i(233005),	-- Om'taha's Toolkit[DNT]
-				i(233012),	-- Flamethrower
-				i(233287),	-- Barrel of Swirling Energy
-				i(235983),	-- Warrant: Shatterpulse
 				i(238296),	-- Phase Disruptor
-				i(239566),	-- Arcane Runed Signet
-				i(242547),	-- Cracked Keystone
-				i(242654),	-- Shadowtrade Overstock
-				i(246592),	-- Shadowguard Credentials
-				i(246593),	-- Shadowguard Credentials
 			}),
-			i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-			i(249235),	-- Bottomless Bag of Entropy
-			i(250706),	-- The Horseman's Hallowed Cowl
-			i(250707),	-- The Horseman's Burning Cowl
-			i(250709),	-- The Horseman's Chilling Cowl
-			i(250975),	-- Hellcaller Chest
-			i(242534),	-- Azure Sea Skiff
-			i(244228),	-- Sash of the Tipsy Sage
-			i(244229),	-- Angler's Mantle
-			i(244230),	-- Strawhat of Frosted Currents
-			i(244231),	-- Ensemble: Stillwater Fisher Attire
-			i(244352),	-- Cloak of the Veiled Paws
-			i(231821),	-- Makeshift Explosives
-			i(232517),	-- Biome Eco-Stabilizer
-			i(246732),	-- Void-Forged Overseer
-			i(246892),	-- Void's Binding Wraps
-			i(246893),	-- Void's Binding Briefs
-			i(246894),	-- Void's Binding Shade
-			i(246895),	-- Void's Binding Sash
-			i(246896),	-- Void's Binding Anklets
-			i(246897),	-- Void's Binding Halter Top
-			i(246898),	-- Ensemble: Void's Binding Swimwear
-			i(237389),	-- Soulweave Great Blade
-			i(237477),	-- Soulweave Staff
-			i(237853),	-- Soulweave Bulwark
-			i(238510),	-- Soulweave Longbow
-		})),
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
-			i(250776),	-- Illusion: Sha Corruption
-		})),
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-			-- Left Remaining To Darkal --
-			n(ARMOR, {
-				-- Darkal Check Later
-				i(238243),	-- Hidden Boots
-			}),
-		})),
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-			i(230033),	-- Prowler's Midnight Shoulder Cape
-			i(230054),	-- Prowler's Midnight Cowl
-			i(230074),	-- Prowler's Midnight Mask
-			i(230152),	-- Ensemble: Prowler's Midnight Headgear
-			-- Left Remaining To Darkal --
-			race(DRACTHYR_HORDE, {	-- New Dracthyr Starting Gear
-				i(232033),	-- Creche-Binder's Cord
-				i(232265),	-- Creche-Guard's Chopper
-				i(232266),	-- Creche-Guard's Bulwark
-				i(232267),	-- Creche-Guard's Axe
-				i(232269),	-- Creche-Guard's Girdle
-				i(232270),	-- Creche-Guard's Pauldrons
-				i(232278),	-- Creche-Scout's Longspear
-				i(232282),	-- Creche-Scout's Belt
-				i(232283),	-- Creche-Scout's Spaulders
-				i(232290),	-- Creche-Talon's Blade
-				i(232293),	-- Creche-Talon's Clasp
-				i(232331),	-- Creche-Weaver's Sash
-				i(232338),	-- Creche-Magus's Cinch
-			}),
-		})),
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			-- Left Remaining To Darkal --
-			-- Have QuestID attached
-			i(228947),	-- Weaver's Lair Profession Table
-		})),
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
-			-- Left Remaining To Darkal --
-			i(220445),	-- Illusionary Charm
 		})),
 	}),
 	expansion(EXPANSION.DF, {

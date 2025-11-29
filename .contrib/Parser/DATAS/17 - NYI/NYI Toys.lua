@@ -160,5 +160,10 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 			i(232304),	-- Unknown (TOY!)
 			i(232308),	-- Unknown (TOY!)
 		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(242534),	-- Azure Sea Skiff (TOY!)
+		})),
 	}),
 }));

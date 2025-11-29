@@ -5017,6 +5017,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(227569),	-- White Tiger Handguards
 				i(227568),	-- White Tiger Legguards
 			}),
+			cl(HUNTER, {
+				i(232282),	-- Creche-Scout's Belt
+				i(232283),	-- Creche-Scout's Spaulders
+			}),
+			cl(MAGE, {
+				i(232338),	-- Creche-Magus's Cinch
+			}),
+			cl(PRIEST, {
+				i(232331),	-- Creche-Weaver's Sash
+			}),
+			cl(ROGUE, {
+				i(232293),	-- Creche-Talon's Clasp
+			}),
+			cl(WARLOCK, {
+				i(232033),	-- Creche-Binder's Cord
+			}),
+			cl(WARRIOR, {
+				i(232269),	-- Creche-Guard's Girdle
+				i(232270),	-- Creche-Guard's Pauldrons
+			}),
 		})),
 
 		-- 11.0.7
@@ -5413,9 +5433,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(CLOAKS, {
 				i(237521),	-- Hemet's Cloak
+				i(231629),	-- zzOld
 			}),
 			n(HEAD, {
 				i(237520),	-- Hemet's Hood
+			}),
+			filter(TABARDS, {
+				i(231636),	-- zzOld
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {

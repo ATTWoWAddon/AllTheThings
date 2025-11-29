@@ -2103,6 +2103,7 @@ i(225429);	-- Green Hills of Stranglethorn - Page 24
 i(225426);	-- Green Hills of Stranglethorn - Page 25
 i(225416);	-- Green Hills of Stranglethorn - Page 26
 i(225419);	-- Green Hills of Stranglethorn - Page 27
+i(220445);	-- Illusionary Charm
 
 ------------------
 -- PATCH 11.0.2 --

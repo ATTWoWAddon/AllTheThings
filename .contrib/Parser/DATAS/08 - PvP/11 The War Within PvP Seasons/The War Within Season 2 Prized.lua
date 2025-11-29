@@ -19,7 +19,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(41047, {	-- Prized Weapons of Conquest
 				i(232615, {	-- Prized Gladiator's Coin Pouch
 					i(230852, {	-- Prized Gladiator's Weapon Token
-					--[[ Might need another sym
+						--[[ Might need another sym
 						["sym"] = {
 							{"select", "npcID", 219222 },	-- Lalandi <Conquest Quartermaster>
 							{"pop"},

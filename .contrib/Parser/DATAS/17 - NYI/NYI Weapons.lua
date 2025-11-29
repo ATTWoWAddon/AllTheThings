@@ -1937,6 +1937,11 @@ root(ROOTS.NeverImplemented, {
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(225667),	-- Ambassador Flamelash's Trident
 			i(231490),	-- Arbiter's Blade
+			i(232267),	-- Creche-Guard's Axe
+			i(232266),	-- Creche-Guard's Bulwark
+			i(232265),	-- Creche-Guard's Chopper
+			i(232278),	-- Creche-Scout's Longspear
+			i(232290),	-- Creche-Talon's Blade
 			i(232474),	-- Defias Cuirass
 			i(232475),	-- Defias Cuirass
 			i(225666),	-- General Angerforge's Axe
@@ -1971,6 +1976,31 @@ root(ROOTS.NeverImplemented, {
 
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
+			i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
+			i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
+			i(230827),	-- [11.2 PVP] Gladiator's Bulwark <TEMPLATE>
+			i(230828),	-- [11.2 PVP] Gladiator's Claws <TEMPLATE>
+			i(230823),	-- [11.2 PVP] Gladiator's Crossbow <TEMPLATE>
+			i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
+			i(230825),	-- [11.2 PVP] Gladiator's Focus <TEMPLATE>
+			i(230830),	-- [11.2 PVP] Gladiator's Greataxe <TEMPLATE>
+			i(230821),	-- [11.2 PVP] Gladiator's Greatsword <TEMPLATE>
+			i(230816),	-- [11.2 PVP] Gladiator's Gun <TEMPLATE>
+			i(230833),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230834),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230835),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230836),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
+			i(230831),	-- [11.2 PVP] Gladiator's Pulverizer <TEMPLATE>
+			i(230824),	-- [11.2 PVP] Gladiator's Scepter <TEMPLATE>
+			i(230826),	-- [11.2 PVP] Gladiator's Shield <TEMPLATE>
+			i(230819),	-- [11.2 PVP] Gladiator's Spear <TEMPLATE>
+			i(230820),	-- [11.2 PVP] Gladiator's Staff <TEMPLATE>
+			i(230817),	-- [11.2 PVP] Gladiator's Warglaive <TEMPLATE>
+			i(230832),	-- [11.2 PVP] Gladiator's Wither-Blade <TEMPLATE>
+			i(248342),	-- Astral Gladiator's Axe
+			i(248354),	-- Astral Gladiator's Bulwark
+			i(248344),	-- Astral Gladiator's Gun
 			i(238008),	-- Wastelander's Folly
 		})),
 	}),

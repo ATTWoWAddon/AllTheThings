@@ -1784,6 +1784,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(228951),	-- Pact Treasure Map
 			i(232575),	-- Tome of Town Portal
 			i(228742),	-- Unidentifiable Cloth
+			i(228947),	-- Weaver's Lair Profession Table
 		})),
 
 		-- 11.0.5
@@ -1928,7 +1929,14 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
 			i(246114),	-- Catalyst Elixir
 			i(238740),	-- Distilled Knowledge of Timeways
+			i(250776),	-- Illusion: Sha Corruption
 			i(246730),	-- Landro's Loot Box
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			i(249235),	-- Bottomless Bag of Entropy
+			i(250975),	-- Hellcaller Chest
 		})),
 
 		-- 11.2.5

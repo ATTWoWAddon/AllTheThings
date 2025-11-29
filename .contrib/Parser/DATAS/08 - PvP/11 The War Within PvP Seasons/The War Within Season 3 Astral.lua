@@ -5,7 +5,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 	n(SEASON_ASTRAL, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			ach(41048, {	-- Astral Weapons of Conquest
-				i(232600),	-- Astral Gladiator's Weapon Token
+				i(232616, {	-- Astral Gladiator's Coin Pouch
+					i(232600, {	-- Astral Gladiator's Weapon Token
+						--[[ Might need another sym
+						["sym"] = {
+							{"select", "npcID", 219222 },	-- Lalandi <Conquest Quartermaster>
+							{"pop"},
+							{"where", "headerID", WEAPONS},
+							{"pop"}
+						},
+						--]]
+					}),
+				}),
 			}),
 			ach(42042, {	-- Astral Combatant
 				["races"] = ALLIANCE_ONLY,
@@ -606,9 +617,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(230651)),	-- Astral Gladiator's Shield
 						conquest(525, i(230657)),	-- Astral Gladiator's Bulwark
 					}),
-					-- i(230722, {	-- Astral Equipment Chest
-					-- 	["timeline"] = { ADDED_11_2_5 },
-					-- }),
+					i(230722, {	-- Astral Equipment Chest
+						["timeline"] = { ADDED_11_2_5 },
+					}),
 				},
 			}),
 			o(456208, {	-- The Catalyst
