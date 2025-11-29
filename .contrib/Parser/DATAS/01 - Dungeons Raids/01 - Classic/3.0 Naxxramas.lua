@@ -1740,10 +1740,11 @@ applyclassicphase(PHASE_SIX,
 								i(22701),	-- Polar Leggings
 							},
 						}),
-					}),
+					}
 					-- #if SEASON_OF_DISCOVERY
-					),
+					)
 					-- #endif
+					),
 					n(ZONE_DROPS, {
 						i(22708),	-- Fate of Ramaladni
 						i(22682, {	-- Frozen Rune
@@ -3551,7 +3552,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22658),	-- Glacial Cloak
+									i(236690),	-- Glacial Cloak
 								},
 							}),
 							q(9239, {	-- Glacial Gloves
@@ -3571,7 +3572,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22654),	-- Glacial Gloves
+									i(236692),	-- Glacial Gloves
 								},
 							}),
 							q(9240, {	-- Glacial Vest
@@ -3592,7 +3593,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22652),	-- Glacial Vest
+									i(236694),	-- Glacial Vest
 								},
 							}),
 							q(9238, {	-- Glacial Wrists
@@ -3612,7 +3613,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22655),	-- Glacial Wrists
+									i(236693),	-- Glacial Wrists
 								},
 							}),
 							q(9235, {	-- Icebane Bracers
@@ -3632,7 +3633,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22671),	-- Icebane Bracers
+									i(236696),	-- Icebane Bracers
 								},
 							}),
 							q(9236, {	-- Icebane Breastplate
@@ -3653,7 +3654,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22669),	-- Icebane Breastplate
+									i(236695),	-- Icebane Breastplate
 								},
 							}),
 							q(9234, {	-- Icebane Gauntlets
@@ -3673,7 +3674,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22670),	-- Icebane Gauntlets
+									i(236697),	-- Icebane Gauntlets
 								},
 							}),
 							q(9244, {	-- Icy Scale Bracers
@@ -3693,7 +3694,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22665),	-- Icy Scale Bracers
+									i(236698),	-- Icy Scale Bracers
 								},
 							}),
 							q(9246, {	-- Icy Scale Breastplate
@@ -3714,7 +3715,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22664),	-- Icy Scale Breastplate
+									i(236699),	-- Icy Scale Breastplate
 								},
 							}),
 							q(9245, {	-- Icy Scale Gauntlets
@@ -3734,7 +3735,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22666),	-- Icy Scale Gauntlets
+									i(236700),	-- Icy Scale Gauntlets
 								},
 							}),
 							q(9233, {	-- Omarion's Handbook
@@ -3763,7 +3764,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22663),	-- Polar Bracers
+									i(236701),	-- Polar Bracers
 								},
 							}),
 							q(9242, {	-- Polar Gloves
@@ -3783,7 +3784,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22662),	-- Polar Gloves
+									i(236703),	-- Polar Gloves
 								},
 							}),
 							q(9243, {	-- Polar Tunic
@@ -3804,7 +3805,7 @@ applyclassicphase(PHASE_SIX,
 								["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 								-- #endif
 								["groups"] = {
-									i(22661),	-- Polar Tunic
+									i(236702),	-- Polar Tunic
 								},
 							}),
 							q(9230, {	-- Ramaladni's Icy Grasp
@@ -3818,7 +3819,7 @@ applyclassicphase(PHASE_SIX,
 								},
 								["lvl"] = 60,
 								["groups"] = {
-									i(22707),	-- Ramaladni's Icy Grasp
+									i(237294),	-- Ramaladni's Icy Grasp
 								},
 							}),
 							q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
@@ -3867,11 +3868,11 @@ applyclassicphase(PHASE_SIX,
 								["lvl"] = 60,
 							}),
 							q(9120, {	-- The Fall of Kel'Thuzad
-								["provider"] = { "i", 22520 },	-- The Phylactery of Kel'Thuzad
+								["provider"] = { "i", 236350 },	-- The Phylactery of Kel'Thuzad
 								["lvl"] = 60,
 								["groups"] = {
-									i(23206),	-- Mark of the Champion
-									i(23207),	-- Mark of the Champion
+									i(236351),	-- Mark of the Champion
+									i(236352),	-- Mark of the Champion
 								},
 							}),
 							q(9229, {	-- The Fate of Ramaladni
@@ -3897,10 +3898,10 @@ applyclassicphase(PHASE_SIX,
 								},
 								["lvl"] = 60,
 								["groups"] = {
-									i(22700),	-- Glacial Leggings
-									i(22699),	-- Icebane Leggings
-									i(22702),	-- Icy Scale Leggings
-									i(22701),	-- Polar Leggings
+									i(237290),	-- Icebane Leggings
+									i(237291),	-- Glacial Leggings
+									i(237292),	-- Polar Leggings
+									i(237293),	-- Icy Scale Leggings
 								},
 							}),
 						}),						
@@ -4207,7 +4208,23 @@ applyclassicphase(PHASE_SIX,
 									15932,	-- Gluth
 								},
 							}),
-
+							i(236397, {	-- Remnants of Valor
+								["crs"] = {
+									15956,	-- Anub'Rekhan
+									15953,	-- Grand Widow Faerlina
+									15952,	-- Maexxna
+									15954,	-- Noth the Plaguebringer
+									15936,	-- Heigan the Unclean
+									16011,	-- Loatheb
+									16061,	-- Instructor Razuvious
+									16060,	-- Gothik the Harvester
+									16062,	-- Highlord Mograine <The Ashbringer>
+									16028,	-- Patchwerk
+									15931,	-- Grobbulus
+									15932,	-- Gluth
+									15928,	-- Thaddius
+								},
+							}),
 							i(22726, {	-- Splinter of Atiesh
 								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								["crs"] = {

@@ -2019,8 +2019,6 @@ i(236227),	-- Belt of the Grand Crusader
 i(236228),	-- Spaulders of the Grand Crusader
 i(236229),	-- Leggings of the Grand Crusader
 i(236230),	-- Leggings of Elemental Fury
-i(236351),	-- Mark of the Champion
-i(236352),	-- Mark of the Champion
 i(236354),	-- Aspirant's Seal of the Dawn
 i(236355),	-- Initiate's Seal of the Dawn
 i(236356),	-- Squire's Seal of the Dawn
@@ -2051,7 +2049,6 @@ i(236393),	-- Knight's Seal of the Dawn
 i(236394),	-- Squire's Seal of the Dawn
 i(236395),	-- Initiate's Seal of the Dawn
 i(236396),	-- Aspirant's Seal of the Dawn
-i(236397),	-- Remnants of Valor
 i(236398),	-- Atiesh, Greatstaff of the Guardian
 i(236399),	-- Atiesh, Greatstaff of the Guardian
 i(236400),	-- Atiesh, Greatstaff of the Guardian
@@ -2265,19 +2262,6 @@ i(236657),	-- Bubbles' Rotting Branch
 i(236658),	-- Bubbles' Spine Trophy
 i(236660),	-- Bubbles' Troll Tusk
 i(236661),	-- Bubbles' Ribcage of Ribaldy
-i(236690),	-- Glacial Cloak
-i(236692),	-- Glacial Gloves
-i(236693),	-- Glacial Wrists
-i(236694),	-- Glacial Vest
-i(236695),	-- Icebane Breastplate
-i(236696),	-- Icebane Bracers
-i(236697),	-- Icebane Gauntlets
-i(236698),	-- Icy Scale Bracers
-i(236699),	-- Icy Scale Breastplate
-i(236700),	-- Icy Scale Gauntlets
-i(236701),	-- Polar Bracers
-i(236702),	-- Polar Tunic
-i(236703),	-- Polar Gloves
 i(236704),	-- Frosty Wrists
 i(236705),	-- Frosty Gloves
 i(236706),	-- Frosty Vest
@@ -2347,11 +2331,6 @@ i(237286),	-- Band of Piety
 i(237287),	-- Verimonde's Last Resort
 i(237288),	-- Sanctified Leather Helm
 i(237289),	-- Leggings of the Plague Hunter
-i(237290),	-- Icebane Leggings
-i(237291),	-- Glacial Leggings
-i(237292),	-- Polar Leggings
-i(237293),	-- Icy Scale Leggings
-i(237294),	-- Ramaladni's Icy Grasp
 i(237348),	-- Monster - Sword, Short Ornate
 i(237381),	-- Desecrated Ring
 i(237386),	-- Wartorn Undermine Supply Crate

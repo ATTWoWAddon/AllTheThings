@@ -2225,67 +2225,67 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(233562),	-- Angelista's Charm
 					},
 				}),
-			e(1544, {	-- Battleguard Sartura
-				["creatureID"] = 15516,
-				["groups"] = {
-					i(233572),	-- Necklace of Purity
-					i(233573),	-- Recomposed Boots
-					i(233574),	-- Leggings of the Festering Swarm
-					i(233575),	-- Robes of the Battleguard
-					i(233576),	-- Silithid Claw
-					i(233577),	-- Thick Qirajihide Belt
-					i(233578),	-- Creeping Vine Helm
-					i(233579),	-- Gloves of Enforcement
-					i(233580),	-- Badge of the Swarmguard
-					i(233581),	-- Sartura's Might
-					i(233582),	-- Gauntlets of Steadfast Determination
-					i(233583),	-- Legplates of Blazing Light
-					i(233584),	-- Scaled Leggings of Qiraji Fury
-					i(233643),	-- Anubisath Warhammer
-					i(233644),	-- Garb of Royal Ascension
-					i(233645),	-- Gloves of the Immortal
-					i(233646),	-- Gloves of the Redeemed Prophecy
-					i(233647),	-- Neretzek, the Blood Drinker
-					i(233648),	-- Ritssyn's Ring of Chaos
-					i(233649),	-- Shard of the Fallen Star
-					i(235047),	-- Gloves of the Fallen Prophet
-				},
-			}),
-			e(1545, {	-- Fankriss the Unyielding
-				["creatureID"] = 15510,
-				["groups"] = {
-					i(233369),	-- Qiraji Bindings of Dominance
-					i(233370),	-- Qiraji Bindings of Command
-					i(233371),	-- Qiraji Bindings of Sovereignty
-					i(233585),	-- Ancient Qiraji Ripper
-					i(233586),	-- Jaw of the Sand Reaver
-					i(233587),	-- Barbed Choker
-					i(233588),	-- Cloak of Untold Secrets
-					i(233589),	-- Fetish of the Sand Reaver
-					i(233590),	-- Hive Tunneler's Boots
-					i(233591),	-- Silithid Carapace Chestguard
-					i(233592),	-- Mantle of Wicked Revenge
-					i(233593),	-- Pauldrons of the Unrelenting
-					i(233594),	-- Robes of the Guardian Saint
-					i(233595),	-- Scaled Sand Reaver Leggings
-				},
-			}),
-			e(1548, {	-- Viscidus
-					["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
-					["creatureID"] = 15299,
+				e(1544, {	-- Battleguard Sartura
+					["creatureID"] = 15516,
+					["groups"] = {
+						i(233572),	-- Necklace of Purity
+						i(233573),	-- Recomposed Boots
+						i(233574),	-- Leggings of the Festering Swarm
+						i(233575),	-- Robes of the Battleguard
+						i(233576),	-- Silithid Claw
+						i(233577),	-- Thick Qirajihide Belt
+						i(233578),	-- Creeping Vine Helm
+						i(233579),	-- Gloves of Enforcement
+						i(233580),	-- Badge of the Swarmguard
+						i(233581),	-- Sartura's Might
+						i(233582),	-- Gauntlets of Steadfast Determination
+						i(233583),	-- Legplates of Blazing Light
+						i(233584),	-- Scaled Leggings of Qiraji Fury
+						i(233643),	-- Anubisath Warhammer
+						i(233644),	-- Garb of Royal Ascension
+						i(233645),	-- Gloves of the Immortal
+						i(233646),	-- Gloves of the Redeemed Prophecy
+						i(233647),	-- Neretzek, the Blood Drinker
+						i(233648),	-- Ritssyn's Ring of Chaos
+						i(233649),	-- Shard of the Fallen Star
+						i(235047),	-- Gloves of the Fallen Prophet
+					},
+				}),
+				e(1545, {	-- Fankriss the Unyielding
+					["creatureID"] = 15510,
 					["groups"] = {
 						i(233369),	-- Qiraji Bindings of Dominance
 						i(233370),	-- Qiraji Bindings of Command
 						i(233371),	-- Qiraji Bindings of Sovereignty
-						i(233598),	-- Slime-Coated Leggings
-						i(233599),	-- Sharpened Silithid Femur
-						i(233600),	-- Ring of the Qiraji Fury
-						i(233601),	-- Scarab Brooch
-						i(233603),	-- Gauntlets of the Righteous Champion
-						i(233604),	-- Gauntlets of Kalimdor
+						i(233585),	-- Ancient Qiraji Ripper
+						i(233586),	-- Jaw of the Sand Reaver
+						i(233587),	-- Barbed Choker
+						i(233588),	-- Cloak of Untold Secrets
+						i(233589),	-- Fetish of the Sand Reaver
+						i(233590),	-- Hive Tunneler's Boots
+						i(233591),	-- Silithid Carapace Chestguard
+						i(233592),	-- Mantle of Wicked Revenge
+						i(233593),	-- Pauldrons of the Unrelenting
+						i(233594),	-- Robes of the Guardian Saint
+						i(233595),	-- Scaled Sand Reaver Leggings
 					},
 				}),
-				e(1546, {	-- Princess Huhuran
+				e(1548, {	-- Viscidus
+						["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
+						["creatureID"] = 15299,
+						["groups"] = {
+							i(233369),	-- Qiraji Bindings of Dominance
+							i(233370),	-- Qiraji Bindings of Command
+							i(233371),	-- Qiraji Bindings of Sovereignty
+							i(233598),	-- Slime-Coated Leggings
+							i(233599),	-- Sharpened Silithid Femur
+							i(233600),	-- Ring of the Qiraji Fury
+							i(233601),	-- Scarab Brooch
+							i(233603),	-- Gauntlets of the Righteous Champion
+							i(233604),	-- Gauntlets of Kalimdor
+						},
+					}),
+					e(1546, {	-- Princess Huhuran
 					["creatureID"] = 15509,
 					["groups"] = {
 						i(233369),	-- Qiraji Bindings of Dominance
