@@ -680,5 +680,6 @@ HeaderAssignments = {
 	["Zone Drops"] = -63,
 	["Zone Rewards"] = -64,
 	["Zskera Vaults"] = -403,
+	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -697;
+NextHeaderID = -698;

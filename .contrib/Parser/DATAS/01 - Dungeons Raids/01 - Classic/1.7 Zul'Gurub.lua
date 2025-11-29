@@ -1244,6 +1244,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+			d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+			-- #endif
 			o(180229, {	-- Jinxed Hoodoo Pile
 				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 				["groups"] = {
@@ -1518,6 +1522,527 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(20257),	-- Seafury Gauntlets
 				i(19855),	-- Bloodsoaked Legplates
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			})),
+			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {
+				n(COMMON_BOSS_DROPS, {
+					i(230854, {	-- Band of Servitude
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230856, {	-- Belt of Untapped Power
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230857, {	-- Blooddrenched Mask
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(19881, {	-- Channeler's Head
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230858, {	-- Cloak of the Hakkari Worshipers
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230859, {	-- Gloves of the Tormented
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(19943, {	-- Massive Mojo
+						["crs"] = {
+							14834,	-- Hakkar
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(230860, {	-- Might of the Tribe
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(19724, {	-- Primal Hakkari Aegis
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19717, {	-- Primal Hakkari Armsplint
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19716, {	-- Primal Hakkari Bindings
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19719, {	-- Primal Hakkari Girdle
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19723, {	-- Primal Hakkari Kossack
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19720, {	-- Primal Hakkari Sash
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19721, {	-- Primal Hakkari Shawl
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19718, {	-- Primal Hakkari Stanchion
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(19722, {	-- Primal Hakkari Tabard
+						["crs"] = {
+							11382,	-- Bloodlord Mandokir
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+							11380,	-- Jin'do the Hexxer
+						},
+					}),
+					i(230861, {	-- Sacrificial Gauntlets
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230855, {	-- Seal of the Gurubashi Berserker
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230862, {	-- Zulian Headdress
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+					i(230863, {	-- Zulian Scepter of Rites
+						["crs"] = {
+							14509,	-- High Priest Thekal
+							14507,	-- High Priest Venoxis
+							14515,	-- High Priestess Arlokk
+							14517,	-- High Priestess Jeklik
+							14510,	-- High Priestess Mar'li
+						},
+					}),
+				}),				
+				o(180229, {	-- Jinxed Hoodoo Pile
+					["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+					["groups"] = {
+						i(19727, {	-- Blood Scythe
+							["requireSkill"] = HERBALISM,
+							["b"] = 1,
+						}),
+						i(231517),	-- Punctured Voodoo Doll
+						i(231518),	-- Punctured Voodoo Doll
+						i(231519),	-- Punctured Voodoo Doll
+						i(231520),	-- Punctured Voodoo Doll
+						i(231521),	-- Punctured Voodoo Doll
+						i(231522),	-- Punctured Voodoo Doll
+						i(231523),	-- Punctured Voodoo Doll
+						i(231524),	-- Punctured Voodoo Doll
+						i(231525),	-- Punctured Voodoo Doll
+					},
+				}),
+				n(14517, {	-- High Priestess Jeklik
+					i(230911), -- Jeklik's Crusher
+					i(230913), -- Jeklik's Opaline Talisman
+					i(230912), -- Animist's Spaulders
+					i(230914), -- Peacekeeper Boots
+					i(230916), -- Seafury Boots
+					i(230915), -- Primalist's Band
+					i(232299),	-- Zulian Defender
+				}),
+				n(14507, {	-- High Priest Venoxis
+					applyclassicphase(PHASE_FIVE, i(22216)),	-- Venoxis's Venom Sac
+					i(230865), -- Fang of Venoxis
+					i(230868), -- Zulian Stone Axe
+					i(232311), -- Zulian Tigerhide Cloak
+					i(230864), -- Runed Bloodstained Hauberk
+					i(230866), -- Blooddrenched Footpads
+					i(230867), -- Zanzil's Band
+				}),
+				n(14510, {	-- High Priestess Mar'li
+					i(230918), -- Mar'li's Touch
+					i(230917), -- Flowing Ritual Robes
+					i(230919), -- Bloodstained Greaves (Swapped?)
+					i(230921), -- Band of Jin
+					i(230920), -- Mar'li's Eye
+					i(230922), -- Talisman of Protection
+				}),
+				n(11382, {	-- Bloodlord Mandokir
+					ach(881, {	-- Swift Razzashi Raptor
+						["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
+						["timeline"] = { REMOVED_4_0_3 },
+						["filterID"] = MOUNTS,
+					}),
+					i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
+						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					i(230989), -- Bloodlord's Defender
+					i(230991), -- Halberd of Smiting
+					i(230993), -- Mandokir's Sting
+					i(230992), -- Warblade of the Hakkari OH
+					i(230998), -- Hakkari Loa Cloak
+					i(230996), -- Bloodsoaked Pauldrons
+					i(230995), -- Blooddrenched Grips
+					i(230994), -- Animist's Leggings
+					i(230997), -- Bloodtinged Kilt
+					i(230999), -- Overlord's Crimson Band
+					i(231000), -- Primalist's Seal
+					i(231001), -- Zanzil's Seal
+					i(231512), -- Primal Hakkari Idol
+				}),
+				o(180368, {	-- Tablet of Madness
+					["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
+					["requireSkill"] = ALCHEMY,
+					["groups"] = {
+						recipe(24266),	-- Gurubashi Mojo Madness
+					},
+				}),
+				o(180327, {	-- Brazier of Madness
+					["description"] = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
+					["cost"] = {
+						{ "i", 19931, 1 },	-- Gurubashi Mojo Madness
+					},
+					["groups"] = {
+						filter(TRINKET_F, {
+							["description"] = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
+							["groups"] = {
+								i(19951, {	-- Gri'lek's Charm of Might [Warrior]
+									["cost"] = {
+										{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19952, {	-- Gri'lek's Charm of Valor [Paladin]
+									["cost"] = {
+										{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19953, {	-- Renataki's Charm of Beasts [Hunter]
+									["cost"] = {
+										{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19954, {	-- Renataki's Charm of Trickery [Rogue]
+									["cost"] = {
+										{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19957, {	-- Hazza'rah's Charm of Destruction [Warlock]
+									["cost"] = {
+										{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19958, {	-- Hazza'rah's Charm of Healing [Priest]
+									["cost"] = {
+										{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19959, {	-- Hazza'rah's Charm of Magic [Mage]
+									["cost"] = {
+										{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19955, {	-- Wushoolay's Charm of Nature [Druid]
+									["cost"] = {
+										{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+								i(19956, {	-- Wushoolay's Charm of Spirits [Shaman]
+									["cost"] = {
+										{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
+										{ "i", 19939, 1 },	-- Gri'lek's Blood
+										{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+										{ "i", 19940, 1 },	-- Renataki's Tooth
+										{ "i", 19941, 1 },	-- Wushoolay's Mane
+									},
+								}),
+							},
+						}),
+						n(15082, {	-- Gri'lek
+							i(231513), -- Gri'lek's Blood
+							i(231274), -- Gri'lek's Grinder
+							i(231273), -- Gri'lek's Carver
+						}),
+						n(15083, {	-- Hazza'rah
+							i(231516), -- Hazza'rah's Dream Thread
+							i(231276), -- Thoughtblighter
+							i(19968),	-- Fiery Retributer Doublecheck
+						}),
+						n(15084, {	-- Renataki
+							i(231514), -- Renataki's Tooth
+							i(231277), -- Pitchfork of Madness
+							i(232309), -- Renataki's Soul Conduit
+						}),
+						n(15085, {	-- Wushoolay
+							i(231515), -- Wushoolay's Mane
+							i(231279), -- Wushoolay's Poker
+							i(231278), -- Hoodoo Hunting Bow
+						}),
+					},
+				}),
+				n(14509, {	-- High Priest Thekal
+					ach(880, {	-- Swift Zulian Tiger
+						["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
+						["timeline"] = { REMOVED_4_0_3 },
+						["filterID"] = MOUNTS,
+					}),
+					i(19902, {	-- Swift Zulian Tiger (MOUNT!)
+						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					i(230925), -- Thekal's Grasp
+					i(230930), -- Zulian Slicer
+					i(230926), -- Peacekeeper Leggings
+					i(230927), -- Ritualistic Legguards
+					i(230928), -- Seafury Leggings
+					i(230923), -- Betrayer's Boots
+					i(230929), -- Seal of Jin
+				}),
+				o(180366, {	-- Battered Tackle Box
+					["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
+					["requireSkill"] = FISHING,
+					["groups"] = {
+						i(19973),	-- Nat's Measuring Tape
+					},
+				}),
+				n(15114, {	-- Gahz'ranka
+					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
+					["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
+					["cost"] = {
+						{ "i", 19974, 1 },	-- Mudskunk Lure
+						{ "i", 19975, 5 },	-- Zulian Mudskunk
+					},
+					["groups"] = {
+						ach(560, {	-- Deadliest Catch
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
+						}),
+						i(231016), -- Nat Pagle's Fish Terminator
+						i(231272), -- Tigule's Harpoon
+						i(19945),	-- Foror's Eyepatch
+						i(231271), -- Nat Pagle's Broken Reel
+						TOME_OF_POLYMORPH_TURTLE,
+					},
+				}),
+				n(14515, {	-- High Priestess Arlokk
+					["provider"] = { "o", 180526 },	-- Gong of Bethekk
+					["groups"] = {
+						i(230944), -- Panther Hide Sack
+						i(230934), -- Arlokk's Grasp
+						i(230939), -- Will of Arlokk
+						i(230941), -- Arlokk's Hoodoo Stick
+						i(230942), -- Bloodsoaked Greaves
+						i(230943), -- Overlord's Onyx Band
+					},
+				}),
+				n(11380, {	-- Jin'do the Hexxer
+					i(231005), -- Jin'do's Bag of Whammies
+					i(231002), -- Jin'do's Hexxer
+					i(231004), -- Jin'do's Judgement
+					i(231013), -- The Hexxer's Cover
+					i(231003), -- Jin'do's Evil Eye
+					i(231012), -- Overlord's Embrace
+					i(231009), -- Blooddrenched Leggings
+					i(231007), -- Bloodstained Coif
+					i(231010), -- Bloodsoaked Gauntlets
+					i(231011), -- Bloodtinged Gloves
+					i(231008), -- Bloodstained Legplates
+					i(231006), -- Animist's Boots
+					i(231512), -- Primal Hakkari Idol
+				}),
+				n(14834, {	-- Hakkar the Soulflayer
+					n(ZG_HAKKAR_HARDMODE, {
+						["description"] = "When you leave a specific Priest or Priestess alive and defeat Hakkar, then there is a guaranteed chance that a piece of rare or epic loot from that boss will drop from Hakkar, including an Item from Hakkar himself.",
+						["groups"] = {
+							i(231512), -- Primal Hakkari Idol (Bonus)
+							i(231856), -- Ancient Hakkari Manslayer (Hakkar)
+							i(231851), -- Arlokk's Grasp
+							i(231858), -- Bloodcaller (Hakkar)
+							i(231867), -- Bloodlord's Defender
+							i(231855), -- Fang of the Faceless
+							i(231874), -- Fang of Venoxis
+							i(231870), -- Halberd of Smiting
+							i(231861),	-- Jeklik's Crusher
+							i(231846), -- Gri'lek's Carver
+							i(231852), -- Gurubashi Dwarf Destroyer
+							i(231868), -- Mandokir's Sting
+							i(231866), -- Mar'li's Touch
+							i(231848), -- Nat Pagle's Fish Terminator
+							i(231864), -- Pitchfork of Madness
+							i(232310), -- Renataki's Soul Conduit
+							i(231863), -- Thoughtblighter
+							i(231849), -- Tigule's Harpoon
+							i(231857), -- Touch of Chaos
+							i(231853), -- Warblade of the Hakkari MH BL
+							i(231869), -- Warblade of the Hakkari OH BL
+							i(231850), -- Will of Arlokk
+							i(231876), -- Zulian Slicer
+							i(231875), -- Thekal's Grasp
+							i(231865), -- Zulian Scepter of Rites
+							i(231854), -- Zin'rokh, Destroyer of Worlds
+						},
+					}),
+					i(19802),	-- Heart of Hakkar
+					i(231289), -- Aegis of the Blood God
+					i(231293), -- Ancient Hakkari Manslayer
+					i(231296), -- Bloodcaller
+					i(231301), -- Fang of the Faceless
+					i(231302), -- Gurubashi Dwarf Destroyer
+					i(231308), -- Touch of Chaos
+					i(231309), -- Warblade of the Hakkari MH
+					i(231315), -- Zin'rokh, Destroyer of Worlds
+					i(231306), -- Soul Corrupter's Necklace
+					i(231307), -- The Eye of Hakkar
+					i(231300), -- Cloak of Consumption
+					i(231303), -- Peacekeeper Gauntlets
+					i(231305), -- Seafury Gauntlets
+					i(231299), -- Bloodsoaked Legplates
+				}),
+			}))),
+			-- #endif
 		},
 	})),
 })));

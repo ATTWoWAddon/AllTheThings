@@ -989,453 +989,324 @@ i(225689),	-- Spell Notes: Arcane Barrage
 i(225690),	-- Spell Notes: Frozen Orb
 i(225691),	-- Spell Notes: Overheat
 1.15.4.56400
-i(224122),	-- Dream Eater
-i(224279),	-- Terrestris
-i(224280),	-- Suzerain, Defender of the Dragonflights
-i(224281),	-- Gla'sir
-i(224282),	-- Rae'lar
-i(229362),	-- Storehouse Key
-i(229415),	-- Survival Supplies
-i(229416),	-- Warm Fur
-i(229749),	-- Truthbearer
-i(229806),	-- Truthbearer
-i(229894),	-- Dream Emerald
-i(229897),	-- Scroll: Create Signet of Beckoning
-i(229909),	-- Staff of Order
-i(229911),	-- Caius' Dream Eater
-i(229964),	-- Demon Lord's Hoof
-i(229965),	-- The Eye of Az'olgothal
-i(229966),	-- Torque of the Silver Hand
-i(229971),	-- Staff of Inferno
-i(229972),	-- Staff of Rime
-i(230003),	-- Hammer of the Lightbringer
-i(230018),	-- Mannoroc Orb Fragments
-i(230751),	-- Ninja Obi
-i(230854),	-- Band of Servitude
-i(230855),	-- Seal of the Gurubashi Berserker
-i(230856),	-- Belt of Untapped Power
-i(230857),	-- Blooddrenched Mask
-i(230858),	-- Cloak of the Hakkari Worshipers
-i(230859),	-- Gloves of the Tormented
-i(230860),	-- Might of the Tribe
-i(230861),	-- Sacrificial Gauntlets
-i(230862),	-- Zulian Headdress
-i(230863),	-- Zulian Scepter of Rites
-i(230864),	-- Runed Bloodstained Hauberk
-i(230865),	-- Fang of Venoxis
-i(230866),	-- Blooddrenched Footpads
-i(230867),	-- Zanzil's Band
-i(230868),	-- Zulian Stone Axe
-i(230903),	-- Scroll: Essence of Fire
-i(230908),	-- Imbued Essence of Fire
-i(230909),	-- Depleted Essence of Fire
-i(230911),	-- Jeklik's Crusher
-i(230912),	-- Animist's Spaulders
-i(230913),	-- Jeklik's Opaline Talisman
-i(230914),	-- Peacekeeper Boots
-i(230915),	-- Primalist's Band
-i(230916),	-- Seafury Boots
-i(230917),	-- Flowing Ritual Robes
-i(230918),	-- Mar'li's Touch
-i(230919),	-- Bloodstained Greaves
-i(230920),	-- Mar'li's Eye
-i(230921),	-- Band of Jin
-i(230922),	-- Talisman of Protection
-i(230923),	-- Betrayer's Boots
-i(230925),	-- Thekal's Grasp
-i(230926),	-- Peacekeeper Leggings
-i(230927),	-- Ritualistic Legguards
-i(230928),	-- Seafury Leggings
-i(230929),	-- Seal of Jin
-i(230930),	-- Zulian Slicer
-i(230934),	-- Arlokk's Grasp
-i(230939),	-- Will of Arlokk
-i(230941),	-- Arlokk's Hoodoo Stick
-i(230942),	-- Bloodsoaked Greaves
-i(230943),	-- Overlord's Onyx Band
-i(230944),	-- Panther Hide Sack
-i(230946),	-- Scroll: SEENECS FO ROFTS
-i(230947),	-- Scroll: Essence of Frost
-i(230948),	-- Imbued Essence of Frost
-i(230949),	-- Depleted Essence of Frost
-i(230984),	-- Incomplete Staff of Order
-i(230989),	-- Bloodlord's Defender
-i(230991),	-- Halberd of Smiting
-i(230992),	-- Warblade of the Hakkari
-i(230993),	-- Mandokir's Sting
-i(230994),	-- Animist's Leggings
-i(230995),	-- Blooddrenched Grips
-i(230996),	-- Bloodsoaked Pauldrons
-i(230997),	-- Bloodtinged Kilt
-i(230998),	-- Hakkari Loa Cloak
-i(230999),	-- Overlord's Crimson Band
-i(231000),	-- Primalist's Seal
-i(231001),	-- Zanzil's Seal
-i(231002),	-- Jin'do's Hexxer
-i(231003),	-- Jin'do's Evil Eye
-i(231004),	-- Jin'do's Judgement
-i(231005),	-- Jin'do's Bag of Whammies
-i(231006),	-- Animist's Boots
-i(231007),	-- Bloodstained Coif
-i(231008),	-- Bloodstained Legplates
-i(231009),	-- Blooddrenched Leggings
-i(231010),	-- Bloodsoaked Gauntlets
-i(231011),	-- Bloodtinged Gloves
-i(231012),	-- Overlord's Embrace
-i(231013),	-- The Hexxer's Cover
-i(231014),	-- Lizardscale Eyepatch
-i(231015),	-- Twill Mask
-i(231016),	-- Nat Pagle's Fish Terminator
-i(231271),	-- Nat Pagle's Broken Reel
-i(231272),	-- Tigule's Harpoon
-i(231273),	-- Gri'lek's Carver
-i(231274),	-- Gri'lek's Grinder
-i(231275),	-- Blazefury Retributer
-i(231276),	-- Thoughtblighter
-i(231277),	-- Pitchfork of Madness
-i(231278),	-- Hoodoo Hunting Bow
-i(231279),	-- Wushoolay's Poker
-i(231280),	-- Wushoolay's Charm of Nature
-i(231281),	-- Wushoolay's Charm of Spirits
-i(231282),	-- Hazza'rah's Charm of Chilled Magic
-i(231283),	-- Hazza'rah's Charm of Warding
-i(231284),	-- Hazza'rah's Charm of Destruction
-i(231285),	-- Gri'lek's Charm of Valor
-i(231286),	-- Gri'lek's Charm of Might
-i(231287),	-- Renataki's Charm of Trickery
-i(231288),	-- Renataki's Charm of Ravaging
-i(231289),	-- Aegis of the Blood God
-i(231293),	-- Ancient Hakkari Manslayer
-i(231296),	-- Bloodcaller
-i(231298),	-- Scroll of Lesser Spatial Mending
-i(231299),	-- Bloodsoaked Legplates
-i(231300),	-- Cloak of Consumption
-i(231301),	-- Fang of the Faceless
-i(231302),	-- Gurubashi Dwarf Destroyer
-i(231303),	-- Peacekeeper Gauntlets
-i(231304),	-- Scroll: SERELS PATALIS GNEMIND
-i(231305),	-- Seafury Gauntlets
-i(231306),	-- Soul Corrupter's Necklace
-i(231307),	-- The Eye of Hakkar
-i(231308),	-- Touch of Chaos
-i(231309),	-- Warblade of the Hakkari
-i(231315),	-- Zin'rokh, Destroyer of Worlds
-i(231316),	-- Pristine Enchanted South Seas Kelp
-i(231317),	-- Zandalar Haruspex's Tunic
-i(231318),	-- Zandalar Haruspex's Belt
-i(231319),	-- Zandalar Haruspex's Bracers
-i(231320),	-- Maelstrom's Wrath
-i(231321),	-- Zandalar Predator's Mantle
-i(231322),	-- Zandalar Predator's Belt
-i(231323),	-- Zandalar Predator's Bracers
-i(231324),	-- Jewel of Kajaro
-i(231325),	-- Zandalar Illusionist's Mantle
-i(231326),	-- Zandalar Illusionist's Wraps
-i(231327),	-- Zandalar Illusionist's Robe
-i(231328),	-- Hero's Brand
-i(231329),	-- Zandalar Freethinker's Breastplate
-i(231330),	-- Zandalar Freethinker's Belt
-i(231331),	-- Zandalar Freethinker's Armguards
-i(231332),	-- The All-Seeing Eye of Zuldazar
-i(231333),	-- Zandalar Confessor's Mantle
-i(231334),	-- Zandalar Confessor's Bindings
-i(231335),	-- Zandalar Confessor's Wraps
-i(231336),	-- Zandalarian Shadow Mastery Talisman
-i(231337),	-- Zandalar Madcap's Tunic
-i(231338),	-- Zandalar Madcap's Mantle
-i(231339),	-- Zandalar Madcap's Bracers
-i(231340),	-- Unmarred Vision of Voodress
-i(231341),	-- Zandalar Augur's Hauberk
-i(231342),	-- Zandalar Augur's Belt
-i(231343),	-- Zandalar Augur's Bracers
-i(231346),	-- Kezan's Unstoppable Taint
-i(231347),	-- Zandalar Demoniac's Wraps
-i(231348),	-- Zandalar Demoniac's Robe
-i(231349),	-- Zandalar Demoniac's Mantle
-i(231350),	-- Rage of Mugamba
-i(231351),	-- Zandalar Vindicator's Armguards
-i(231352),	-- Zandalar Vindicator's Belt
-i(231353),	-- Zandalar Vindicator's Breastplate
-i(231354),	-- Animist's Caress
-i(231355),	-- Animist's Balance
-i(231357),	-- Animist's Fury
-i(231358),	-- Animist's Roar
-i(231359),	-- Falcon's Call
-i(231361),	-- Syncretist's Seal
-i(231362),	-- Syncretist's Sigil
-i(231363),	-- Syncretist's Crest
-i(231364),	-- Syncretist's Emblem
-i(231366),	-- Prophetic Aura
-i(231367),	-- Prophetic Curse
-i(231368),	-- Death's Embrace
-i(231370),	-- Death's Advance
-i(231371),	-- Vodouisant's Embrace
-i(231372),	-- Vodouisant's Shroud
-i(231373),	-- Vodouisant's Charm
-i(231375),	-- Vodouisant's Vigilance
-i(231376),	-- Hoodoo Hex
-i(231377),	-- Hoodoo Curse
-i(231379),	-- Presence of Might
-i(231381),	-- Presence of Valor
-i(231382),	-- Vessel of Rebirth
-i(231383),	-- Presence of Sight
-i(231384),	-- Falcon's Fury
-i(231385),	-- Simulacrum of the Dragon Soul
-i(231386),	-- Flawless Black Dragonscale
-i(231466),	-- Blackwing Warlock's Codex
-i(231509),	-- Cassandra's Tome
-i(231512),	-- Primal Hakkari Idol
-i(231513),	-- Gri'lek's Blood
-i(231514),	-- Renataki's Tooth
-i(231515),	-- Wushoolay's Mane
-i(231516),	-- Hazza'rah's Dream Thread
-i(231517),	-- Punctured Voodoo Doll
-i(231518),	-- Punctured Voodoo Doll
-i(231519),	-- Punctured Voodoo Doll
-i(231520),	-- Punctured Voodoo Doll
-i(231521),	-- Punctured Voodoo Doll
-i(231522),	-- Punctured Voodoo Doll
-i(231523),	-- Punctured Voodoo Doll
-i(231524),	-- Punctured Voodoo Doll
-i(231525),	-- Punctured Voodoo Doll
-i(231530),	-- Warlord's Plate Armor
-i(231531),	-- General's Plate Boots
-i(231532),	-- General's Plate Gauntlets
-i(231533),	-- General's Plate Leggings
-i(231534),	-- Warlord's Plate Shoulders
-i(231535),	-- Warlord's Plate Headpiece
-i(231536),	-- Field Marshal's Plate Armor
-i(231537),	-- Field Marshal's Plate Shoulderguards
-i(231538),	-- Field Marshal's Plate Helm
-i(231539),	-- Marshal's Plate Boots
-i(231540),	-- Marshal's Plate Legguards
-i(231541),	-- Marshal's Plate Gauntlets
-i(231543),	-- Field Marshal's Leather Chestpiece
-i(231544),	-- Marshal's Leather Handgrips
-i(231545),	-- Field Marshal's Leather Mask
-i(231546),	-- Marshal's Leather Footguards
-i(231547),	-- Field Marshal's Leather Epaulets
-i(231548),	-- Marshal's Leather Leggings
-i(231549),	-- Warlord's Leather Breastplate
-i(231551),	-- Warlord's Leather Spaulders
-i(231552),	-- General's Leather Treads
-i(231553),	-- Warlord's Leather Helm
-i(231554),	-- General's Leather Legguards
-i(231555),	-- General's Leather Mitts
-i(231557),	-- Field Marshal's Chain Pauldrons
-i(231558),	-- Marshal's Chain Legplates
-i(231560),	-- Marshal's Chain Grips
-i(231561),	-- Marshal's Chain Sabatons
-i(231562),	-- Field Marshal's Chain Greathelm
-i(231563),	-- Field Marshal's Chain Armor
-i(231564),	-- General's Chain Sabatons
-i(231565),	-- Warlord's Chain Pauldrons
-i(231566),	-- Warlord's Chain Armor
-i(231567),	-- General's Chain Legplates
-i(231568),	-- Warlord's Chain Greathelm
-i(231569),	-- General's Chain Grips
-i(231570),	-- General's Chain Greaves
-i(231571),	-- Warlord's Chain Helm
-i(231572),	-- Warlord's Chain Shoulders
-i(231573),	-- Warlord's Chain Hauberk
-i(231574),	-- General's Chain Legguards
-i(231575),	-- General's Chain Vices
-i(231576),	-- Field Marshal's Chain Shoulders
-i(231577),	-- Marshal's Chain Legguards
-i(231578),	-- Marshal's Chain Vices
-i(231579),	-- Marshal's Chain Greaves
-i(231580),	-- Field Marshal's Chain Helm
-i(231581),	-- Field Marshal's Chain Hauberk
-i(231582),	-- Field Marshal's Dreadweave Robe
-i(231583),	-- Field Marshal's Dreadweave Shoulders
-i(231584),	-- Field Marshal's Coronal
-i(231585),	-- Marshal's Dreadweave Boots
-i(231586),	-- Marshal's Dreadweave Gloves
-i(231587),	-- Marshal's Dreadweave Leggings
-i(231588),	-- General's Dreadweave Pants
-i(231589),	-- General's Dreadweave Gloves
-i(231590),	-- Warlord's Dreadweave Hood
-i(231591),	-- Warlord's Dreadweave Robe
-i(231592),	-- Warlord's Dreadweave Mantle
-i(231593),	-- General's Dreadweave Boots
-i(231594),	-- Warlord's Silk Amice
-i(231595),	-- General's Silk Trousers
-i(231596),	-- Warlord's Silk Raiment
-i(231597),	-- General's Silk Boots
-i(231598),	-- General's Silk Gloves
-i(231599),	-- General's Silk Gauntlets
-i(231600),	-- General's Silk Handwraps
-i(231601),	-- Warlord's Silk Cowl
-i(231602),	-- Field Marshal's Silk Spaulders
-i(231603),	-- Field Marshal's Silk Vestments
-i(231604),	-- Field Marshal's Coronet
-i(231605),	-- Marshal's Silk Leggings
-i(231606),	-- Marshal's Silk Footwraps
-i(231607),	-- Marshal's Silk Gloves
-i(231608),	-- Marshal's Silk Gauntlets
-i(231609),	-- Marshal's Silk Handwraps
-i(231610),	-- General's Satin Treads
-i(231611),	-- Warlord's Satin Epaulets
-i(231612),	-- Warlord's Satin Robes
-i(231613),	-- General's Satin Grips
-i(231614),	-- General's Satin Leggings
-i(231615),	-- Warlord's Satin Crown
-i(231616),	-- Field Marshal's Satin Crown
-i(231617),	-- Marshal's Satin Grips
-i(231618),	-- Field Marshal's Satin Robe
-i(231619),	-- Marshal's Satin Leggings
-i(231620),	-- Marshal's Satin Treads
-i(231621),	-- Field Marshal's Satin Epaulets
-i(231622),	-- Field Marshal's Satin Hood
-i(231623),	-- Marshal's Satin Handwraps
-i(231624),	-- Field Marshal's Satin Tunic
-i(231625),	-- Testament of Horn of Lordaeron
-i(231626),	-- Marshal's Satin Legguards
-i(231627),	-- Marshal's Satin Walkers
-i(231628),	-- Field Marshal's Satin Mantle
-i(231630),	-- General's Satin Walkers
-i(231631),	-- Warlord's Satin Mantle
-i(231632),	-- Warlord's Satin Tunic
-i(231633),	-- General's Satin Handwraps
-i(231634),	-- General's Satin Legguards
-i(231635),	-- Warlord's Satin Hood
-i(231639),	-- Marshal's Lamellar Legguards
-i(231640),	-- Field Marshal's Lamellar Helmet
-i(231641),	-- Field Marshal's Lamellar Chestplate
-i(231642),	-- Warden's Herb Bag
-i(231643),	-- Marshal's Lamellar Gloves
-i(231644),	-- Warden's Enchanting Bag
-i(231645),	-- Field Marshal's Lamellar Pauldrons
-i(231646),	-- Marshal's Lamellar Greaves
-i(231647),	-- Marshal's Lamellar Leggings
-i(231648),	-- Field Marshal's Lamellar Headguard
-i(231649),	-- Field Marshal's Lamellar Breastplate
-i(231650),	-- Marshal's Lamellar Gauntlets
-i(231651),	-- Field Marshal's Lamellar Shoulders
-i(231652),	-- Marshal's Lamellar Sabatons
-i(231653),	-- Warlord's Mail Hauberk
-i(231654),	-- Warlord's Mail Pauldrons
-i(231655),	-- General's Mail Vices
-i(231656),	-- General's Mail Greaves
-i(231657),	-- Warlord's Mail Headguard
-i(231658),	-- General's Mail Legguards
-i(231659),	-- Warlord's Mail Spaulders
-i(231660),	-- General's Mail Gauntlets
-i(231661),	-- General's Mail Sabatons
-i(231662),	-- Warlord's Mail Breastplate
-i(231663),	-- Warlord's Mail Helm
-i(231664),	-- General's Mail Leggings
-i(231665),	-- Warlord's Mail Epaulets
-i(231666),	-- General's Mail Gloves
-i(231667),	-- General's Mail Boots
-i(231668),	-- Warlord's Mail Chestguard
-i(231669),	-- Warlord's Mail Skullcap
-i(231670),	-- General's Mail Pants
-i(231671),	-- General's Dragonhide Greaves
-i(231672),	-- Warlord's Dragonhide Pauldrons
-i(231673),	-- General's Dragonhide Legguards
-i(231674),	-- Warlord's Dragonhide Tunic
-i(231675),	-- Warlord's Dragonhide Headdress
-i(231676),	-- General's Dragonhide Gauntlets
-i(231677),	-- General's Dragonhide Gloves
-i(231678),	-- Warlord's Dragonhide Helm
-i(231679),	-- Warlord's Dragonhide Armor
-i(231680),	-- General's Dragonhide Pants
-i(231681),	-- Warlord's Dragonhide Spaulders
-i(231682),	-- General's Dragonhide Boots
-i(231683),	-- General's Dragonhide Treads
-i(231684),	-- Warlord's Dragonhide Shoulders
-i(231685),	-- General's Dragonhide Leggings
-i(231686),	-- Warlord's Dragonhide Chestpiece
-i(231687),	-- Warlord's Dragonhide Headguard
-i(231688),	-- General's Dragonhide Grips
-i(231689),	-- Field Marshal's Dragonhide Headguard
-i(231690),	-- Field Marshal's Dragonhide Chestpiece
-i(231691),	-- Marshal's Dragonhide Leggings
-i(231692),	-- Marshal's Dragonhide Treads
-i(231693),	-- Field Marshal's Dragonhide Shoulders
-i(231694),	-- Marshal's Dragonhide Grips
-i(231695),	-- Field Marshal's Dragonhide Helm
-i(231696),	-- Field Marshal's Dragonhide Armor
-i(231697),	-- Marshal's Dragonhide Pants
-i(231698),	-- Marshal's Dragonhide Boots
-i(231699),	-- Field Marshal's Dragonhide Spaulders
-i(231700),	-- Marshal's Dragonhide Gloves
-i(231701),	-- Field Marshal's Dragonhide Headdress
-i(231702),	-- Field Marshal's Dragonhide Tunic
-i(231703),	-- Marshal's Dragonhide Legguards
-i(231704),	-- Marshal's Dragonhide Greaves
-i(231705),	-- Field Marshal's Dragonhide Pauldrons
-i(231706),	-- Marshal's Dragonhide Gauntlets
-i(231732),	-- Suspicious Supplies
-i(231752),	-- S03 - Monster - Sword, 2H Alliance
-i(231754),	-- Kestrel
-i(231755),	-- Peregrine
-i(231778),	-- Mountain Spring Water
-i(231780),	-- Tome of Conjure Water VIII
-i(231789),	-- Sigil of the Keeper
-i(231792),	-- Soul of Mischief
-i(231797),	-- Soul of the Void
-i(231798),	-- Soul of Enthralling
-i(231799),	-- Soul of Devouring
-i(231800),	-- Soul of Des'Altek
-i(231811),	-- Libram of Awe
-i(231828),	-- Rune of Meditation Specialization
-i(231829),	-- Rune of Healing Specialization
-i(231836),	-- Glowing Scroll of Spatial Mending
-i(231837),	-- Shadow Carving
-i(231841),	-- Blood of the Lightbringer
-i(231842),	-- Nandieb's Stave
-i(231843),	-- First Sigil Fragment
-i(231844),	-- Second Sigil Fragment
-i(231845),	-- Third Sigil Fragment
-i(231846),	-- Gri'lek's Carver
-i(231847),	-- Gri'lek's Grinder
-i(231848),	-- Nat Pagle's Fish Terminator
-i(231849),	-- Tigule's Harpoon
-i(231850),	-- Will of Arlokk
-i(231851),	-- Arlokk's Grasp
-i(231852),	-- Gurubashi Dwarf Destroyer
-i(231853),	-- Warblade of the Hakkari
-i(231854),	-- Zin'rokh, Destroyer of Worlds
-i(231855),	-- Fang of the Faceless
-i(231856),	-- Ancient Hakkari Manslayer
-i(231857),	-- Touch of Chaos
-i(231858),	-- Bloodcaller
-i(231859),	-- Jin'do's Hexxer
-i(231860),	-- Jin'do's Judgement
-i(231861),	-- Jeklik's Crusher
-i(231862),	-- Blazefury Retributer
-i(231863),	-- Thoughtblighter
-i(231864),	-- Pitchfork of Madness
-i(231865),	-- Zulian Scepter of Rites
-i(231866),	-- Mar'li's Touch
-i(231867),	-- Bloodlord's Defender
-i(231868),	-- Mandokir's Sting
-i(231869),	-- Warblade of the Hakkari
-i(231870),	-- Halberd of Smiting
-i(231871),	-- Wushoolay's Poker
-i(231872),	-- Hoodoo Hunting Bow
-i(231873),	-- Zulian Stone Axe
-i(231874),	-- Fang of Venoxis
-i(231875),	-- Thekal's Grasp
-i(231876),	-- Zulian Slicer
-i(231885),	-- Frostmourne
-i(231887),	-- Test Dagger
-i(231890),	-- Terrestris
-i(231891),	-- Treatise of the Falcon
-i(231901),	-- Truthbearer
-i(231902),	-- Ada's Amulet
-i(231903),	-- Scrap of Torn Cloth
-i(231904),	-- Tarnished Horn
-i(231909),	-- Crystallized Starlight
-i(231996),	-- Supercharged Gobmogrifier
-i(232299),	-- Zulian Defender
-i(232309),	-- Renataki's Soul Conduit
-i(232310),	-- Renataki's Soul Conduit
-i(232311),	-- Zulian Tigerhide Cloak
-i(232312),	-- Blood of the Lightbringer
-i(232324),	-- Bird Whistle \\ Whistle
+i(231902), -- Ada's Amulet
+i(231354), -- Animist's Caress
+i(231355), -- Animist's Balance
+i(231357), -- Animist's Fury
+i(231358), -- Animist's Roar
+i(232324), -- Bird Whistle \\ Whistle
+i(231466), -- Blackwing Warlock's Codex
+i(231275), -- Blazefury Retributer
+i(231862), -- Blazefury Retributer
+i(231841), -- Blood of the Lightbringer
+i(232312), -- Blood of the Lightbringer
+i(229911), -- Caius' Dream Eater
+i(231509), -- Cassandra's Tome
+i(231909), -- Crystallized Starlight
+i(231368), -- Death's Embrace
+i(231370), -- Death's Advance
+i(229964), -- Demon Lord's Hoof
+i(230909), -- Depleted Essence of Fire
+i(230949), -- Depleted Essence of Frost
+i(224122), -- Dream Eater
+i(229894), -- Dream Emerald
+i(231359), -- Falcon's Call
+i(231384), -- Falcon's Fury
+i(231843), -- First Sigil Fragment
+i(231386), -- Flawless Black Dragonscale
+i(231885), -- Frostmourne
+i(231531), -- General's Plate Boots
+i(231532), -- General's Plate Gauntlets
+i(231533), -- General's Plate Leggings
+i(231552), -- General's Leather Treads
+i(231554), -- General's Leather Legguards
+i(231555), -- General's Leather Mitts
+i(231564), -- General's Chain Sabatons
+i(231567), -- General's Chain Legplates
+i(231569), -- General's Chain Grips
+i(231570), -- General's Chain Greaves
+i(231574), -- General's Chain Legguards
+i(231575), -- General's Chain Vices
+i(231588), -- General's Dreadweave Pants
+i(231589), -- General's Dreadweave Gloves
+i(231593), -- General's Dreadweave Boots
+i(231595), -- General's Silk Trousers
+i(231597), -- General's Silk Boots
+i(231598), -- General's Silk Gloves
+i(231599), -- General's Silk Gauntlets
+i(231600), -- General's Silk Handwraps
+i(231610), -- General's Satin Treads
+i(231613), -- General's Satin Grips
+i(231614), -- General's Satin Leggings
+i(231630), -- General's Satin Walkers
+i(231633), -- General's Satin Handwraps
+i(231634), -- General's Satin Legguards
+i(231655), -- General's Mail Vices
+i(231656), -- General's Mail Greaves
+i(231658), -- General's Mail Legguards
+i(231660), -- General's Mail Gauntlets
+i(231661), -- General's Mail Sabatons
+i(231664), -- General's Mail Leggings
+i(231666), -- General's Mail Gloves
+i(231667), -- General's Mail Boots
+i(231670), -- General's Mail Pants
+i(231671), -- General's Dragonhide Greaves
+i(231673), -- General's Dragonhide Legguards
+i(231676), -- General's Dragonhide Gauntlets
+i(231677), -- General's Dragonhide Gloves
+i(231680), -- General's Dragonhide Pants
+i(231682), -- General's Dragonhide Boots
+i(231683), -- General's Dragonhide Treads
+i(231685), -- General's Dragonhide Leggings
+i(231688), -- General's Dragonhide Grips
+i(224281), -- Gla'sir
+i(231836), -- Glowing Scroll of Spatial Mending
+i(231285), -- Gri'lek's Charm of Valor
+i(231286), -- Gri'lek's Charm of Might
+i(231847), -- Gri'lek's Grinder
+i(230003), -- Hammer of the Lightbringer
+i(231282), -- Hazza'rah's Charm of Chilled Magic
+i(231283), -- Hazza'rah's Charm of Warding
+i(231284), -- Hazza'rah's Charm of Destruction
+i(231328), -- Hero's Brand
+i(231376), -- Hoodoo Hex
+i(231377), -- Hoodoo Curse
+i(231872), -- Hoodoo Hunting Bow
+i(230908), -- Imbued Essence of Fire
+i(230948), -- Imbued Essence of Frost
+i(230984), -- Incomplete Staff of Order
+i(231324), -- Jewel of Kajaro
+i(231859), -- Jin'do's Hexxer
+i(231860), -- Jin'do's Judgement
+i(231754), -- Kestrel
+i(231346), -- Kezan's Unstoppable Taint
+i(231811), -- Libram of Awe
+i(231014), -- Lizardscale Eyepatch
+i(231320), -- Maelstrom's Wrath
+i(230018), -- Mannoroc Orb Fragments
+i(231539), -- Marshal's Plate Boots
+i(231540), -- Marshal's Plate Legguards
+i(231541), -- Marshal's Plate Gauntlets
+i(231544), -- Marshal's Leather Handgrips
+i(231546), -- Marshal's Leather Footguards
+i(231548), -- Marshal's Leather Leggings
+i(231558), -- Marshal's Chain Legplates
+i(231560), -- Marshal's Chain Grips
+i(231561), -- Marshal's Chain Sabatons
+i(231577), -- Marshal's Chain Legguards
+i(231578), -- Marshal's Chain Vices
+i(231579), -- Marshal's Chain Greaves
+i(231585), -- Marshal's Dreadweave Boots
+i(231586), -- Marshal's Dreadweave Gloves
+i(231587), -- Marshal's Dreadweave Leggings
+i(231605), -- Marshal's Silk Leggings
+i(231606), -- Marshal's Silk Footwraps
+i(231607), -- Marshal's Silk Gloves
+i(231608), -- Marshal's Silk Gauntlets
+i(231609), -- Marshal's Silk Handwraps
+i(231617), -- Marshal's Satin Grips
+i(231619), -- Marshal's Satin Leggings
+i(231620), -- Marshal's Satin Treads
+i(231623), -- Marshal's Satin Handwraps
+i(231626), -- Marshal's Satin Legguards
+i(231627), -- Marshal's Satin Walkers
+i(231639), -- Marshal's Lamellar Legguards
+i(231643), -- Marshal's Lamellar Gloves
+i(231646), -- Marshal's Lamellar Greaves
+i(231647), -- Marshal's Lamellar Leggings
+i(231650), -- Marshal's Lamellar Gauntlets
+i(231652), -- Marshal's Lamellar Sabatons
+i(231691), -- Marshal's Dragonhide Leggings
+i(231692), -- Marshal's Dragonhide Treads
+i(231694), -- Marshal's Dragonhide Grips
+i(231697), -- Marshal's Dragonhide Pants
+i(231698), -- Marshal's Dragonhide Boots
+i(231700), -- Marshal's Dragonhide Gloves
+i(231703), -- Marshal's Dragonhide Legguards
+i(231704), -- Marshal's Dragonhide Greaves
+i(231706), -- Marshal's Dragonhide Gauntlets
+i(231778), -- Mountain Spring Water
+i(231842), -- Nandieb's Stave
+i(230751), -- Ninja Obi
+i(231755), -- Peregrine
+i(231379), -- Presence of Might
+i(231381), -- Presence of Valor
+i(231383), -- Presence of Sight
+i(231316), -- Pristine Enchanted South Seas Kelp
+i(231366), -- Prophetic Aura
+i(231367), -- Prophetic Curse
+i(224282), -- Rae'lar
+i(231350), -- Rage of Mugamba
+i(231287), -- Renataki's Charm of Trickery
+i(231288), -- Renataki's Charm of Ravaging
+i(231828), -- Rune of Meditation Specialization
+i(231829), -- Rune of Healing Specialization
+i(231752), -- S03 - Monster - Sword, 2H Alliance
+i(231903), -- Scrap of Torn Cloth
+i(231298), -- Scroll of Lesser Spatial Mending
+i(229897), -- Scroll: Create Signet of Beckoning
+i(230903), -- Scroll: Essence of Fire
+i(230946), -- Scroll: SEENECS FO ROFTS
+i(230947), -- Scroll: Essence of Frost
+i(231304), -- Scroll: SERELS PATALIS GNEMIND
+i(231844), -- Second Sigil Fragment
+i(231837), -- Shadow Carving
+i(231789), -- Sigil of the Keeper
+i(231385), -- Simulacrum of the Dragon Soul
+i(231792), -- Soul of Mischief
+i(231797), -- Soul of the Void
+i(231798), -- Soul of Enthralling
+i(231799), -- Soul of Devouring
+i(231800), -- Soul of Des'Altek
+i(229909), -- Staff of Order
+i(229971), -- Staff of Inferno
+i(229972), -- Staff of Rime
+i(229362), -- Storehouse Key
+i(231996), -- Supercharged Gobmogrifier
+i(229415), -- Survival Supplies
+i(231732), -- Suspicious Supplies
+i(224280), -- Suzerain, Defender of the Dragonflights
+i(231361), -- Syncretist's Seal
+i(231362), -- Syncretist's Sigil
+i(231363), -- Syncretist's Crest
+i(231364), -- Syncretist's Emblem
+i(231904), -- Tarnished Horn
+i(224279), -- Terrestris
+i(231890), -- Terrestris
+i(231887), -- Test Dagger
+i(231625), -- Testament of Horn of Lordaeron
+i(229965), -- The Eye of Az'olgothal
+i(231332), -- The All-Seeing Eye of Zuldazar
+i(231845), -- Third Sigil Fragment
+i(231780), -- Tome of Conjure Water VIII
+i(229966), -- Torque of the Silver Hand
+i(231891), -- Treatise of the Falcon
+i(229749), -- Truthbearer
+i(229806), -- Truthbearer
+i(231901), -- Truthbearer
+i(231015), -- Twill Mask
+i(231340), -- Unmarred Vision of Voodress
+i(231382), -- Vessel of Rebirth
+i(231371), -- Vodouisant's Embrace
+i(231372), -- Vodouisant's Shroud
+i(231373), -- Vodouisant's Charm
+i(231375), -- Vodouisant's Vigilance
+i(231642), -- Warden's Herb Bag
+i(231644), -- Warden's Enchanting Bag
+i(229416), -- Warm Fur
+i(231280), -- Wushoolay's Charm of Nature
+i(231281), -- Wushoolay's Charm of Spirits
+i(231871), -- Wushoolay's Poker
+i(231317), -- Zandalar Haruspex's Tunic
+i(231318), -- Zandalar Haruspex's Belt
+i(231319), -- Zandalar Haruspex's Bracers
+i(231321), -- Zandalar Predator's Mantle
+i(231322), -- Zandalar Predator's Belt
+i(231323), -- Zandalar Predator's Bracers
+i(231325), -- Zandalar Illusionist's Mantle
+i(231326), -- Zandalar Illusionist's Wraps
+i(231327), -- Zandalar Illusionist's Robe
+i(231329), -- Zandalar Freethinker's Breastplate
+i(231330), -- Zandalar Freethinker's Belt
+i(231331), -- Zandalar Freethinker's Armguards
+i(231333), -- Zandalar Confessor's Mantle
+i(231334), -- Zandalar Confessor's Bindings
+i(231335), -- Zandalar Confessor's Wraps
+i(231337), -- Zandalar Madcap's Tunic
+i(231338), -- Zandalar Madcap's Mantle
+i(231339), -- Zandalar Madcap's Bracers
+i(231341), -- Zandalar Augur's Hauberk
+i(231342), -- Zandalar Augur's Belt
+i(231343), -- Zandalar Augur's Bracers
+i(231347), -- Zandalar Demoniac's Wraps
+i(231348), -- Zandalar Demoniac's Robe
+i(231349), -- Zandalar Demoniac's Mantle
+i(231351), -- Zandalar Vindicator's Armguards
+i(231352), -- Zandalar Vindicator's Belt
+i(231353), -- Zandalar Vindicator's Breastplate
+i(231336), -- Zandalarian Shadow Mastery Talisman
+i(231873), -- Zulian Stone Axe
+i(231536), -- Field Marshal's Plate Armor
+i(231537), -- Field Marshal's Plate Shoulderguards
+i(231538), -- Field Marshal's Plate Helm
+i(231543), -- Field Marshal's Leather Chestpiece
+i(231545), -- Field Marshal's Leather Mask
+i(231547), -- Field Marshal's Leather Epaulets
+i(231557), -- Field Marshal's Chain Pauldrons
+i(231562), -- Field Marshal's Chain Greathelm
+i(231563), -- Field Marshal's Chain Armor
+i(231576), -- Field Marshal's Chain Shoulders
+i(231580), -- Field Marshal's Chain Helm
+i(231581), -- Field Marshal's Chain Hauberk
+i(231582), -- Field Marshal's Dreadweave Robe
+i(231583), -- Field Marshal's Dreadweave Shoulders
+i(231584), -- Field Marshal's Coronal
+i(231602), -- Field Marshal's Silk Spaulders
+i(231603), -- Field Marshal's Silk Vestments
+i(231604), -- Field Marshal's Coronet
+i(231616), -- Field Marshal's Satin Crown
+i(231618), -- Field Marshal's Satin Robe
+i(231621), -- Field Marshal's Satin Epaulets
+i(231622), -- Field Marshal's Satin Hood
+i(231624), -- Field Marshal's Satin Tunic
+i(231628), -- Field Marshal's Satin Mantle
+i(231640), -- Field Marshal's Lamellar Helmet
+i(231641), -- Field Marshal's Lamellar Chestplate
+i(231645), -- Field Marshal's Lamellar Pauldrons
+i(231648), -- Field Marshal's Lamellar Headguard
+i(231649), -- Field Marshal's Lamellar Breastplate
+i(231651), -- Field Marshal's Lamellar Shoulders
+i(231689), -- Field Marshal's Dragonhide Headguard
+i(231690), -- Field Marshal's Dragonhide Chestpiece
+i(231693), -- Field Marshal's Dragonhide Shoulders
+i(231695), -- Field Marshal's Dragonhide Helm
+i(231696), -- Field Marshal's Dragonhide Armor
+i(231699), -- Field Marshal's Dragonhide Spaulders
+i(231701), -- Field Marshal's Dragonhide Headdress
+i(231702), -- Field Marshal's Dragonhide Tunic
+i(231705), -- Field Marshal's Dragonhide Pauldrons
+i(231530), -- Warlord's Plate Armor
+i(231534), -- Warlord's Plate Shoulders
+i(231535), -- Warlord's Plate Headpiece
+i(231549), -- Warlord's Leather Breastplate
+i(231551), -- Warlord's Leather Spaulders
+i(231553), -- Warlord's Leather Helm
+i(231565), -- Warlord's Chain Pauldrons
+i(231566), -- Warlord's Chain Armor
+i(231568), -- Warlord's Chain Greathelm
+i(231571), -- Warlord's Chain Helm
+i(231572), -- Warlord's Chain Shoulders
+i(231573), -- Warlord's Chain Hauberk
+i(231590), -- Warlord's Dreadweave Hood
+i(231591), -- Warlord's Dreadweave Robe
+i(231592), -- Warlord's Dreadweave Mantle
+i(231594), -- Warlord's Silk Amice
+i(231596), -- Warlord's Silk Raiment
+i(231601), -- Warlord's Silk Cowl
+i(231611), -- Warlord's Satin Epaulets
+i(231612), -- Warlord's Satin Robes
+i(231615), -- Warlord's Satin Crown
+i(231631), -- Warlord's Satin Mantle
+i(231632), -- Warlord's Satin Tunic
+i(231635), -- Warlord's Satin Hood
+i(231653), -- Warlord's Mail Hauberk
+i(231654), -- Warlord's Mail Pauldrons
+i(231657), -- Warlord's Mail Headguard
+i(231659), -- Warlord's Mail Spaulders
+i(231662), -- Warlord's Mail Breastplate
+i(231663), -- Warlord's Mail Helm
+i(231665), -- Warlord's Mail Epaulets
+i(231668), -- Warlord's Mail Chestguard
+i(231669), -- Warlord's Mail Skullcap
+i(231672), -- Warlord's Dragonhide Pauldrons
+i(231674), -- Warlord's Dragonhide Tunic
+i(231675), -- Warlord's Dragonhide Headdress
+i(231678), -- Warlord's Dragonhide Helm
+i(231679), -- Warlord's Dragonhide Armor
+i(231681), -- Warlord's Dragonhide Spaulders
+i(231684), -- Warlord's Dragonhide Shoulders
+i(231686), -- Warlord's Dragonhide Chestpiece
+i(231687), -- Warlord's Dragonhide Headguard
 1.15.4.56493
 i(232343),	-- QAEnchant Shield - Law of Nature
 i(232344),	-- Vick's VIP Pass
