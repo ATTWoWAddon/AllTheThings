@@ -11,7 +11,7 @@ ZG_HAKKAR_HARDMODE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "祖尔格拉布哈卡困难模式",
 		-- TODO: tw = "",
 	},
 });
@@ -28,7 +28,7 @@ AQ_TEMPLE_HARDMODE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "安其拉神殿困难模式",
 		-- TODO: tw = "",
 	},
 });

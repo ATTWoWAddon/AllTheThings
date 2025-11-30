@@ -16,7 +16,7 @@ WHELP_DAYCARE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Драконьи ясли",
-		-- TODO: cn = "",
+		cn = "幼鳞日托所",
 		-- TODO: tw = "",
 	},
 });

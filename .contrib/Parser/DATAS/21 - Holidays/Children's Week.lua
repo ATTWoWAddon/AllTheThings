@@ -26,7 +26,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "儿童周",
 		-- TODO: tw = "",
 		-- #endif
 	},

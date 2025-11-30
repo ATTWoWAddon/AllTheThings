@@ -29,7 +29,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Кубок полётов на Высший пилотаж",
-		-- TODO: cn = "",
+		cn = "驭空术杯赛",
 		-- TODO: tw = "",
 	},
 });

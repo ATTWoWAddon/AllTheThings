@@ -19,7 +19,7 @@ SCROLL_OF_RESURRECTION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "以下物品套装作为复活卷轴接受者的角色提升奖励而实施。\n\n在复活卷轴服务退役后，它们后来被添加到海加尔山和瓦丝琪尔的商人处。",
 		-- TODO: tw = "",
 	},
 });

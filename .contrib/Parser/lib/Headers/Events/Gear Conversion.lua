@@ -24,7 +24,7 @@ GEAR_CONVERSION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这些物品是由在幻境新生活动期间创建的角色获得的，并在活动结束时自动转移到正式服。",
 		-- TODO: tw = "",
 	},
 });

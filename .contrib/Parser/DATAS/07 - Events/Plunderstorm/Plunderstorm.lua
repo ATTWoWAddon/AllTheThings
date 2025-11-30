@@ -25,7 +25,7 @@ PLUNDERSTORM = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "霸业风暴",
 		-- TODO: tw = "",
 		-- #else
 		en = [[~WOWLABS_GAMEMODE_HEADER]],

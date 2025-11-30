@@ -11,7 +11,7 @@ RANK_THREE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Ранг 3",
-		-- TODO: cn = "",
+		cn = "等级 3",
 		-- TODO: tw = "",
 	},
 });

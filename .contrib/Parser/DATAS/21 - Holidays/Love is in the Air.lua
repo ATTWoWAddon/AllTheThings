@@ -26,7 +26,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "情人节",
 		-- TODO: tw = "",
 		-- #endif
 	},

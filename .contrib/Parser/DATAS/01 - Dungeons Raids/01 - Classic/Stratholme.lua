@@ -15,7 +15,7 @@ MAIN_GATE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "正门",
 		-- TODO: tw = "",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5916)]],	-- Stratholme - Main Gate
@@ -39,7 +39,7 @@ SERVICE_ENTRANCE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "仆从入口",
 		-- TODO: tw = "",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance

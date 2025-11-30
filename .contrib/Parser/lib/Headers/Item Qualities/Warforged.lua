@@ -11,7 +11,7 @@ WARFORGED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "战火",
 		-- TODO: tw = "",
 	},
 });

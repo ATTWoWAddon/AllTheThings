@@ -16,7 +16,7 @@ PET_BATTLES = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "宠物对战相关任务和驯练师。",
 		-- TODO: tw = "",
 	},
 });

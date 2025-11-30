@@ -26,7 +26,7 @@ HALLOWS_END_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "万圣节",
 		-- TODO: tw = "",
 		-- #endif
 	},

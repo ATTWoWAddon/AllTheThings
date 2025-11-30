@@ -22,7 +22,7 @@ SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "安其拉三宝",
 		-- TODO: tw = "",
 	},
 });
