@@ -128,11 +128,10 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["classes"] = { WARLOCK },
 				-- Activate Fightbot 11.2.7, then interrupt its abilities... Creative much?
 			}),
-			q(90888, {	-- Catapult Bombardment [A]
+			q(90895, {	-- Catapult Bombardment
 				["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
 				["qg"] = 244658,	-- Lady Jaina Proudmoore
 				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
-				["races"] = ALLIANCE_ONLY,
 				["groups"] = {	-- Pants and Necklace
 					-- Paladin
 					i(153906),	-- Sunsoul Amulet
@@ -140,20 +139,9 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 					-- Hunter
 					i(153800),	-- Trailseeker Choker
 					i(153809),	-- Trailseeker Legguards
-				},
-			}),
-			q(90895, {	-- Catapult Bombardment [H]
-				["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-				["qg"] = 244658,	-- Lady Jaina Proudmoore
-				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
-				["races"] = HORDE_ONLY,
-				["groups"] = {	-- Pants and Necklace
-					-- Paladin
-					i(153906),	-- Sunsoul Amulet
-					i(153905),	-- Sunsoul Legguards
-					-- Hunter
-					i(153800),	-- Trailseeker Choker
-					i(153809),	-- Trailseeker Legguards
+					--Warlock
+					i(154009),  --Felsoul Medallion
+					i(154017),  --Felsoul Leggings
 				},
 			}),
 			q(90893, {	-- Repelling the Siege
