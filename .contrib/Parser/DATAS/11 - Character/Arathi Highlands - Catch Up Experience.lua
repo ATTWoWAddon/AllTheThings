@@ -114,6 +114,18 @@ root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 				},
 				["qg"] = 249423,	-- Sergeant Colvin
 				["coord"] = { 19.6, 57.5, ARATHI_HIGHLANDS_CATCHUP },
+				["classes"] = { DEMONHUNTER, DEATHKNIGHT, DRUID, EVOKER, HUNTER, MAGE, MONK, PALADIN, PRIEST, ROGUE, SHAMAN, WARRIOR },
+				-- Activate Fightbot 11.2.7, then interrupt its abilities... Creative much?
+			}),
+			q(93382, {	-- Pardon the Interruption
+				["sourceQuests"] = {
+					90885,	-- My Beautiful Pumpkins
+					90886,	-- Best Laid Plans of Kobolds and Ogres
+					90887,	-- Farmer's Nemesis
+				},
+				["qg"] = 249423,	-- Sergeant Colvin
+				["coord"] = { 19.6, 57.5, ARATHI_HIGHLANDS_CATCHUP },
+				["classes"] = { WARLOCK },
 				-- Activate Fightbot 11.2.7, then interrupt its abilities... Creative much?
 			}),
 			q(90888, {	-- Catapult Bombardment [A]
