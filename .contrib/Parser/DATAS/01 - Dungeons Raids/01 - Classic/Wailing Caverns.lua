@@ -8,6 +8,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 718,	-- Wailing Caverns
+		["zone-text-names"] = {
+			"The Wailing Caverns",	-- To fix Us client
+			"Las Cuevas de los Lamentos",	-- To fix Es and Mx clients
+		},
 		-- #endif
 		["mapID"] = WAILING_CAVERNS,
 		["coords"] = {
