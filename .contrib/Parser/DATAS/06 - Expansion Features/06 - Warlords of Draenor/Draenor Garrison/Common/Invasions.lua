@@ -18,6 +18,18 @@ root(ROOTS.ExpansionFeatures,
 				n(ACHIEVEMENTS, {
 					ach(9208),	-- Botani Invasion
 					ach(9207),	-- Goren Invasion
+					ach(9162),	-- Bronze Defender
+					ach(9164),	-- Silver Defender
+					ach(9165),	-- Golden Defender
+					achpart(9826, 9827),	-- Platinum Defender / Impervious Defender
+					ach(9209, {		-- Master Defender
+						crit(27294),		-- Botani
+						crit(27295),		-- Goren
+						crit(27296),		-- Iron Horde
+						crit(27297),		-- Ogres
+						crit(27298),		-- Shadow Council
+						crit(27299),		-- Shadowmoon
+					}),
 					ach(9827, {		-- Impervious Defender
 						crit(27586),		-- Botani
 						crit(27587),		-- Goren
@@ -25,19 +37,10 @@ root(ROOTS.ExpansionFeatures,
 						crit(27589),		-- Ogres
 						crit(27590),		-- Shadow Council
 						crit(27591),		-- Shadowmoon
-						ach(9209, {		-- Master Defender
-							crit(27294),		-- Botani
-							crit(27295),		-- Goren
-							crit(27296),		-- Iron Horde
-							crit(27297),		-- Ogres
-							crit(27298),		-- Shadow Council
-							crit(27299),		-- Shadowmoon
-						}),
 					}),
-					ach(9543, {	-- Invasion? What Invasion? (50)
-						ach(9167),		-- Invasion Specialist (10)
-						ach(9152),		-- It's an Invasion! (1)
-					}),
+					ach(9152),		-- It's an Invasion! (1)
+					ach(9167),		-- Invasion Specialist (10)
+					ach(9543),	-- Invasion? What Invasion? (50)
 					ach(9244),		-- Invasions Are Better with Friends
 					ach(9205),		-- Iron Horde Invasion
 					ach(9858, {		-- Master and Commander
@@ -49,17 +52,6 @@ root(ROOTS.ExpansionFeatures,
 						crit(27709),		-- Annihilon
 					}),
 					ach(9204),		-- Ogre Invasion
-					ach(9826, {		-- Platinum Defender
-						crit(27586),		-- Botani
-						crit(27587),		-- Goren
-						crit(27588),		-- Iron Horde
-						crit(27589),		-- Ogres
-						crit(27590),		-- Shadow Council
-						crit(27591),		-- Shadowmoon
-						ach(9165),		-- Golden Defender
-						ach(9164),		-- Silver Defender
-						ach(9162),		-- Bronze Defender
-					}),
 					ach(9181, {		-- Save Those Buildings!
 						crit(25290),		-- Goren
 						crit(25292),		-- Iron Horde

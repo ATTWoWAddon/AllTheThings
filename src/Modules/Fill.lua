@@ -426,6 +426,11 @@ FillAdjusts[1] =
 		end
 	end
 
+-- Class types which should not be filled further
+local FillStopTypes = {
+	EnsembleItem = 1,
+	EnsembleSpell = 1,
+}
 local function FillGroupDirect(group, FillData, doDGU)
 	local groups, temp = {}, {}
 	-- only use Fillers from within the respective FillData.Fillers
@@ -517,6 +522,9 @@ local function FillGroupsLayered(group, FillData)
 
 	FillGroupDirect(group, FillData)
 
+	-- Some Types should never be filled beyond themselves
+	if FillStopTypes[group.__type] then return end
+
 	return group.g
 end
 -- Fills the group and returns an array of the next layer of groups to fill
@@ -533,6 +541,9 @@ local function FillGroupsLayeredAsync(group, FillData)
 	-- app.PrintDebug("FGL",group.hash)
 
 	FillGroupDirect(group, FillData, true)
+
+	-- Some Types should never be filled beyond themselves
+	if FillStopTypes[group.__type] then return end
 
 	local g = group.g;
 	if g then

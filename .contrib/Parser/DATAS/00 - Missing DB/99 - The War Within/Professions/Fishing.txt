@@ -20,11 +20,11 @@ r(1225281),	-- Tender Lumifin
 r(1225282),	-- Arcane Wyrmfish
 r(1225283),	-- Eversong Trout
 r(1225284),	-- Lucky Loa
-r(1225322),	-- Quel'thalas
+r(1225322),	-- Quel'Thalas \\ Quel'thalas
 r(1225335),	-- Zul'Aman
 r(1225336),	-- Voidstorm
 r(1225337),	-- Rootlands
-r(1225340),	-- Quel'thalas Anglin'
+r(1225340),	-- Quel'Thalas Anglin' \\ Quel'thalas Anglin'
 r(1226157),	-- Lucky Loa Lure
 r(1226158),	-- Sunwell Fish Lure
 r(1226159),	-- Amani Angler's Ward
@@ -62,11 +62,11 @@ r(1225281),	-- Tender Lumifin
 r(1225282),	-- Arcane Wyrmfish
 r(1225283),	-- Eversong Trout
 r(1225284),	-- Lucky Loa
-r(1225322),	-- Quel'thalas
+r(1225322),	-- Quel'Thalas \\ Quel'thalas
 r(1225335),	-- Zul'Aman
 r(1225336),	-- Voidstorm
 r(1225337),	-- Rootlands
-r(1225340),	-- Quel'thalas Anglin'
+r(1225340),	-- Quel'Thalas Anglin' \\ Quel'thalas Anglin'
 r(1226157),	-- Lucky Loa Lure
 r(1226158),	-- Sunwell Fish Lure
 r(1226159),	-- Amani Angler's Ward

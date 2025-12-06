@@ -99,7 +99,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(239166, {	-- Geeves
 				["coord"] = { 29.2, 25.8, UNDERMINE },
 				["groups"] = {
-					-- TODO: move in uncollectible if there won't be any purpose or shared in zone
 					i(236647),	-- Coin and Kaja
 					i(236649),	-- Few Screws Loose
 					i(236646),	-- Gallagio Especial
@@ -180,6 +179,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(245325, {	-- Undermine Market Stall (DECOR!)
 						["sourceQuest"] = 85711,	-- Unsolicited Feedback
 						["cost"] = {{ "c", RESONANCE_CRYSTALS, 1000 }},
+					}),
+				},
+			}),
+			n(239333, {	-- Street Food Vendor
+				["coords"] = {
+					{ 26.0, 43.0, UNDERMINE },
+					{ 28.2, 26.6, UNDERMINE },
+					{ 29.6, 42.8, UNDERMINE },
+					{ 33.8, 36.8, UNDERMINE },
+					{ 33.8, 39.4, UNDERMINE },
+					{ 36.4, 46.4, UNDERMINE },
+					{ 50.4, 34.2, UNDERMINE },
+					{ 57.0, 35.0, UNDERMINE },
+					{ 58.0, 46.4, UNDERMINE },
+					{ 59.6, 26.4, UNDERMINE },
+					{ 60.6, 20.4, UNDERMINE },
+					{ 64.0, 53.6, UNDERMINE },
+				},
+				["groups"] = {
+					i(256328, {	-- Leftover Undermine Takeout (DECOR!)
+						["cost"] = {{ "c", RESONANCE_CRYSTALS, 300 }},
+						["timeline"] = { ADDED_11_2_7 },
 					}),
 				},
 			}),

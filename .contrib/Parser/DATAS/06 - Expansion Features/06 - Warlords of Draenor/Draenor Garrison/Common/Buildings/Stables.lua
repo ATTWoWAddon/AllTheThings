@@ -87,6 +87,20 @@ root(ROOTS.ExpansionFeatures,
 							crit(26078),		-- Karak Killed
 							crit(26079),		-- Karak Killed
 						})),
+						ach(9538, {		-- Intro to Husbandry
+							crit(26051, { ["races"] = ALLIANCE_ONLY }),		-- Wrangling a Wolf
+							crit(26047, { ["races"] = HORDE_ONLY }),		-- Wrangling a Wolf
+							crit(26046, { ["races"] = ALLIANCE_ONLY }),		-- Taming a Talbuk
+							crit(26052, { ["races"] = HORDE_ONLY }),		-- Taming a Talbuk
+							crit(26043, { ["races"] = ALLIANCE_ONLY }),		-- Capturing a Clefthoof
+							crit(26049, { ["races"] = HORDE_ONLY }),		-- Capturing a Clefthoof
+							crit(26042, { ["races"] = ALLIANCE_ONLY }),		-- Besting a Boar
+							crit(26048, { ["races"] = HORDE_ONLY }),		-- Besting a Boar
+							crit(26045, { ["races"] = ALLIANCE_ONLY }),		-- Requisition a Riverbeast
+							crit(26053, { ["races"] = HORDE_ONLY }),		-- Requisition a Riverbeast
+							crit(26044, { ["races"] = ALLIANCE_ONLY }),		-- Entangling an Elekk
+							crit(26050, { ["races"] = HORDE_ONLY }),		-- Entangling an Elekk
+						}),
 						ach(9526, {	-- Master of Mounts
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["groups"] = {
@@ -103,20 +117,6 @@ root(ROOTS.ExpansionFeatures,
 								crit(26056, { ["races"] = HORDE_ONLY }),		-- Riverbeast Trained
 								crit(26055, { ["races"] = ALLIANCE_ONLY }),		-- Elekk Trained
 								crit(26054, { ["races"] = HORDE_ONLY }),		-- Elekk Trained
-								ach(9538, {		-- Intro to Husbandry
-									crit(26051, { ["races"] = ALLIANCE_ONLY }),		-- Wrangling a Wolf
-									crit(26047, { ["races"] = HORDE_ONLY }),		-- Wrangling a Wolf
-									crit(26046, { ["races"] = ALLIANCE_ONLY }),		-- Taming a Talbuk
-									crit(26052, { ["races"] = HORDE_ONLY }),		-- Taming a Talbuk
-									crit(26043, { ["races"] = ALLIANCE_ONLY }),		-- Capturing a Clefthoof
-									crit(26049, { ["races"] = HORDE_ONLY }),		-- Capturing a Clefthoof
-									crit(26042, { ["races"] = ALLIANCE_ONLY }),		-- Besting a Boar
-									crit(26048, { ["races"] = HORDE_ONLY }),		-- Besting a Boar
-									crit(26045, { ["races"] = ALLIANCE_ONLY }),		-- Requisition a Riverbeast
-									crit(26053, { ["races"] = HORDE_ONLY }),		-- Requisition a Riverbeast
-									crit(26044, { ["races"] = ALLIANCE_ONLY }),		-- Entangling an Elekk
-									crit(26050, { ["races"] = HORDE_ONLY }),		-- Entangling an Elekk
-								}),
 							},
 						}),
 						a(ach(9540, {	-- The Stable Master (Alliance)

@@ -783,11 +783,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["classes"] = { PALADIN },
 						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 						["groups"] = {
-							i(143890),	-- Boots of Kicking (QI!)
-							i(143891),	-- Gauntless of Huge Grapsing (QI!)
-							i(143777),	-- Helm of Greatness (QI!)
-							i(143782),	-- Pants of Wonderment (QI!)
-							i(143889),	-- Spaulders of Hugeness (QI!)
+							o(267031, {	-- Sack of Armor
+								["coords"] = {
+									{ 44.3, 9.4, HIGHMOUNTAIN },
+									{ 44.8, 11.2, HIGHMOUNTAIN },
+									{ 44.9, 7.5, HIGHMOUNTAIN },
+									{ 45.0, 7.4, HIGHMOUNTAIN },
+									{ 46.2, 9.1, HIGHMOUNTAIN },
+									{ 47.2, 7.4, HIGHMOUNTAIN },
+									{ 49.5, 7.1, HIGHMOUNTAIN },
+									{ 49.6, 9.4, HIGHMOUNTAIN },
+									{ 50.8, 9.6, HIGHMOUNTAIN },
+									{ 51.8, 11.3, HIGHMOUNTAIN },
+									{ 53.0, 11.4, HIGHMOUNTAIN },
+									{ 54.0, 13.0, HIGHMOUNTAIN },
+									{ 55.3, 15.2, HIGHMOUNTAIN },
+								},
+								["groups"] = {
+									i(143890),	-- Boots of Kicking (QI!)
+									i(143891),	-- Gauntless of Huge Grapsing (QI!)
+									i(143777),	-- Helm of Greatness (QI!)
+									i(143782),	-- Pants of Wonderment (QI!)
+									i(143889),	-- Spaulders of Hugeness (QI!)
+								},
+							}),
 						},
 					}),
 					q(44220, {	-- Blessing of the Order
@@ -882,12 +901,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45813, {	-- Where Art Thou, My Sweet
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
 						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
-						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 48.6, 40.9, LEGION_DALARAN },
 						["classes"] = { PALADIN },
 						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["groups"] = {
-							follower(1001),	-- Maximillian of Northshire
-						},
+						["groups"] = { follower(1001) },	-- Maximillian of Northshire
 					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -933,25 +950,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 45770,	-- Stirring in the Shadows
 						["groups"] = {
 							i(153177, {	-- Golden Charger's Birdle
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(143503, {	-- Highlord's Vengeful Charger (MOUNT!)
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(143505, {	-- Highlord's Valorous Charger (MOUNT!)
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(143504, {	-- Highlord's Vigilant Charger (MOUNT!)
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(153174, {	-- Valorous Charger's Bridle
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(153175, {	-- Vengeful Charger's Bridle
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(153176, {	-- Vigilant Charger's Bridle
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 						},
 					}),
@@ -978,13 +995,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(140558),	-- Greatsword of the Silver Hand
 							i(140941, {	-- Highlord's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140975, {	-- Highlord's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140974, {	-- Highlord's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139694, {	-- Legplates of the Silver Hand
 								["cost"] = 5000000,	-- 500g
@@ -992,12 +1009,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250230, {	-- Replica Altar of Ancient Kings (DECOR!)
 								["sourceAchievement"] = 42293,	-- Hidden Potential of the Highlord
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2500 } },
 							}),
 							i(250233, {	-- Replica Libram of Ancient Kings (DECOR!)
 								["sourceAchievement"] = 60968,	-- Legendary Research of the Silver Hand
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139691, {	-- Sabatons of the Silver Hand
 								["cost"] = 5000000,	-- 500g
@@ -1005,24 +1022,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250234, {	-- Sanctum of Light Candelabra (DECOR!)
 								["sourceAchievement"] = 42276,	-- The Highlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1200 } },
 							}),
 							i(250232, {	-- Sanctum of Light Hallway Rug (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(250231, {	-- Silver Hand Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(250235, {	-- Silver Hand Tribute to the Fallen (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(250236, {	-- Silver Hand Weapon Rack (DECOR!)
 								["sourceAchievement"] = 60987,	-- Raise an Army for the Sanctum of Light
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(139695, {	-- Spaulders of the Silver Hand
 								["cost"] = 5000000,	-- 500g

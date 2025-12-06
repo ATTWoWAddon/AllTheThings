@@ -7332,6 +7332,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(256071, {	-- Solelo <Traveling Book Shop>
+					["description"] = "Not all items are sold each day.",
+					["coord"] = { 49.4, 80.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_11_2_7 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246848, { 	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 20000g
+						}),
+						i(246847, { 	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(239179, {	-- Tome of Twilight Nihilism (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+					},
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, n(17804, {	-- Squire Rowe
 					["sourceQuest"] = 6502,	-- Drakefire Amulet
@@ -7435,9 +7455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.4, 65.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
-					["groups"] = {
-						i(33042),	-- Black Coffee
-					},
+					["groups"] = { i(33042) },	-- Black Coffee
 				}),
 				n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 					["coords"] = {

@@ -800,7 +800,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -6387,7 +6387,8 @@ q(83621,{type="hqt"}),
 q(65440,{type="hqt"}),
 q(85588,{type="hqt"}),
 q(86400,{awp=110100,type="hqt"}),
-q(91744,{awp=110200,type="hqt"})}),
+q(91744,{awp=110200,type="hqt"}),
+q(93399,{awp=110207,coords={{46.3,49.6,2339}},lc={1,"questID",84638},providers={{"n",234562}},repeatable=1,type="hqt"})}),
 h(-56,{
 q(82255,{type="hqt"})})}),
 m(2255,{maps={2213,2216,2256},petBattleLvl=25,lvl=78,g={
@@ -7078,6 +7079,7 @@ q(92486,{type="hqt"}),
 q(92654,{type="hqt"}),
 q(92666,{type="hqt"}),
 q(92733,{type="hqt"}),
+q(94424,{type="hqt"}),
 q(92734,{type="hqt"}),
 q(93629,{type="hqt"}),
 q(94392,{type="hqt"}),
@@ -7085,8 +7087,8 @@ q(94701,{type="hqt"}),
 q(94706,{type="hqt"}),
 q(94707,{type="hqt"}),
 q(94709,{type="hqt"}),
-q(94714,{type="hqt"})}}),
-q(86534,{awp=110002,type="hqt"}),
+q(94714,{type="hqt"}),
+q(94415,{type="hqt"})}}),
 h(-557,{awp=110200,e=7,g={
 q(90118,{e=7,type="hqt"}),
 q(91959,{e=7,type="hqt"}),
@@ -7185,7 +7187,7 @@ q(94682,{type="hqt"}),
 q(94693,{type="hqt"}),
 q(94695,{type="hqt"}),
 q(94681,{type="hqt"})})}),
-m(-686,{
+h(-686,{
 h(-45,{
 q(89431,{type="hqt"}),
 q(89290,{type="hqt"})})}),
@@ -7209,13 +7211,13 @@ q(91465,{type="hqt"})})})}}),
 m(2437,{maps={2536},g={
 h(-45,{
 q(91965,{repeatable=1,type="hqt"}),
-q(91964,{repeatable=1,type="hqt"})})}}),
-m(2541,{
+q(91964,{repeatable=1,type="hqt"})})}})}),
+m(2541,{icon=_.asset("Arcantina"),g={
 h(-45,{
 q(92378,{type="hqt"}),
 q(92385,{type="hqt"}),
 q(92381,{type="hqt"}),
-q(92384,{type="hqt"})})})})}),
+q(92384,{type="hqt"})})}})}),
 h(-521,{awp=110000,u=3,g={
 x(11,{u=3,g={
 h(-522,{u=3,g={

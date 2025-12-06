@@ -119,6 +119,27 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		i(226875), -- Shoulders of Heroism
 		i(226878), -- Gloves of Heroism
 		i(226874), -- Waist of Heroism
+		i(226877),	-- Helm of Heroism
+		i(226880),	-- Chest of Heroism
+		i(226901),	-- Beastmaster's Helm
+		i(226904),	-- Beastmaster's Chest
+		i(226925),	-- Deathmist Helm
+		i(226928),	-- Deathmist Chest
+		i(226938),	-- Sorcerer's Waist
+		i(226941),	-- Sorcerer's Helm
+		i(226942),	-- Sorcerer's Gloves
+		i(226944),	-- Sorcerer's Chest
+		i(226965),	-- Virtuous Helm
+		i(226968),	-- Virtuous Chest
+		i(226775),	-- Feralheart Wraps
+		i(226819),	-- Feralheart Helm
+		i(226822),	-- Feralheart Chest
+		i(226849),	-- Darkmantle Helm
+		i(226852),	-- Darkmantle Chest
+		i(226997),	-- Soulforge Helm
+		i(227000),	-- Soulforge Chest
+		i(227037),	-- Helm of The Five Thunders
+		i(227040),	-- Chest of The Five Thunders
 		-- #endif
 	}),
 	expansion(EXPANSION.TBC, {

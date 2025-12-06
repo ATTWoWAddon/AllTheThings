@@ -612,76 +612,6 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-11.2.7.63642
-r(1259422),	-- Literature of the Blue Dragonflight
-r(1259429),	-- Literature of the Red Dragonflight
-r(1259433),	-- Literature of the Green Dragonflight
-r(1259441),	-- Valdrakken Banded Barrel
-r(1259451),	-- Valdrakken Storage Crate
-r(1259461),	-- Long Valdrakken Storage Crate
-r(1259784),	-- Forgeground Market Bins
-r(1259796),	-- Dornogal Bookcase
-r(1259805),	-- Meadery Storage Chest
-r(1259818),	-- Freywold Table
-r(1260005),	-- Algari Fence
-r(1260044),	-- Algari Fencepost
-r(1260508),	-- Zuldazar Fencepost
-r(1260564),	-- Zuldazar Fence
-r(1260577),	-- Gilded Zandalari Table
-r(1260583),	-- Boralus Barrel
-r(1260593),	-- Proudmoore Shipping Crate
-r(1260596),	-- Boralus Bookshelf
-r(1260704),	-- Tauren Storage Chest
-r(1260711),	-- Covered Square Suramar Table
-r(1260719),	-- Nightborne Jeweler's Table
-r(1260730),	-- Suramar Storage Crate
-r(1260737),	-- Suramar Dresser
-r(1261237),	-- Hanging Paper Lanterns
-r(1261238),	-- Pandaren Wooden Table
-r(1261239),	-- Square Pandaren Table
-r(1261240),	-- Lucky Traveler's Bench
-r(1261241),	-- Lorewalker's Bookcase
-r(1261259),	-- Gilnean Wooden Table
-r(1261278),	-- Gilnean Rocking Chair
-r(1261288),	-- Gilnean Wall Shelf
-r(1261549),	-- Brill Coffin Lid
-r(1261572),	-- Brill Coffin
-r(1261587),	-- Kharanos Bookcase
-r(1261644),	-- Wooden Ironforge Table
-r(1263241),	-- Broker's Hex Table
-r(1263243),	-- Cartel Ta Bookcase
-r(1263247),	-- Ardenweald Hanging Baskets
-r(1263272),	-- Aspiring Soul's Chair
-r(1263278),	-- Large Revendreth Storage Crate
-r(1263285),	-- Tome of Maldraxxian Rituals
-r(1263293),	-- Hollow Night Fae Shrine
-r(1263344),	-- Dalaran Display Shelves
-r(1263562),	-- Silver Dalaran Bench
-r(1263564),	-- Dalaran Street Sign
-r(1263570),	-- Dalaran Scholar's Bookcase
-r(1263574),	-- Kirin Tor Crate
-r(1263575),	-- Dalaran Post
-r(1263810),	-- Aldor Bookcase
-r(1263811),	-- Gilded Draenei Round Table
-r(1263812),	-- Halaa Bench
-r(1263813),	-- Crystal Signpost
-r(1263814),	-- Talon King's Totem
-r(1267108),	-- Brown Dye Pigment
-r(1268662),	-- Black Dye Pigment
-r(1268770),	-- White Dye Pigment
-r(1268984),	-- Blue Dye Pigment
-r(1268985),	-- Green Dye Pigment
-r(1268989),	-- Yellow Dye Pigment
-r(1268993),	-- Orange Dye Pigment
-r(1268998),	-- Red Dye Pigment
-r(1268999),	-- Teal Dye Pigment
-r(1269057),	-- Purple Dye Pigment
-11.2.7.64011
-r(1269495),	-- Thunder Bluff Totem
-r(1269534),	-- Gilnean Map
-r(1269540),	-- Gilnean Postbox
-11.2.7.64044
-r(1272572),	-- Valdrakken Wall Shelf
 12.0.0.63534
 r(471010),	-- Midnight Inscription
 r(471044),	-- Recraft Equipment
@@ -769,9 +699,9 @@ r(1248629),	-- Harandar Runestone
 r(1248630),	-- Harandar Signpost
 r(1248631),	-- Magnificent Towering Bookcase
 r(1260760),	-- Thalassian Competitor's Bow
-r(1264550),	-- Super Sin'dorei Alchemist's Mixing Rod
-r(1264551),	-- Super Sin'dorei Rolling Pin
-r(1264552),	-- Super Sin'dorei Quill
+r(1264550),	-- Gilded Alchemist's Mixing Rod \\ Super Sin'dorei Alchemist's Mixing Rod
+r(1264551),	-- Gilded Sin'dorei Rolling Pin \\ Super Sin'dorei Rolling Pin
+r(1264552),	-- Gilded Sin'dorei Quill \\ Super Sin'dorei Quill
 r(1265604),	-- Multicraft
 r(1265618),	-- Knowledge
 r(1265655),	-- Quality
@@ -789,76 +719,6 @@ r(1269575),	-- Midnight Milling
 
 Missing in Inscription
 
-11.2.7.63642
-r(1259422),	-- Literature of the Blue Dragonflight
-r(1259429),	-- Literature of the Red Dragonflight
-r(1259433),	-- Literature of the Green Dragonflight
-r(1259441),	-- Valdrakken Banded Barrel
-r(1259451),	-- Valdrakken Storage Crate
-r(1259461),	-- Long Valdrakken Storage Crate
-r(1259784),	-- Forgeground Market Bins
-r(1259796),	-- Dornogal Bookcase
-r(1259805),	-- Meadery Storage Chest
-r(1259818),	-- Freywold Table
-r(1260005),	-- Algari Fence
-r(1260044),	-- Algari Fencepost
-r(1260508),	-- Zuldazar Fencepost
-r(1260564),	-- Zuldazar Fence
-r(1260577),	-- Gilded Zandalari Table
-r(1260583),	-- Boralus Barrel
-r(1260593),	-- Proudmoore Shipping Crate
-r(1260596),	-- Boralus Bookshelf
-r(1260704),	-- Tauren Storage Chest
-r(1260711),	-- Covered Square Suramar Table
-r(1260719),	-- Nightborne Jeweler's Table
-r(1260730),	-- Suramar Storage Crate
-r(1260737),	-- Suramar Dresser
-r(1261237),	-- Hanging Paper Lanterns
-r(1261238),	-- Pandaren Wooden Table
-r(1261239),	-- Square Pandaren Table
-r(1261240),	-- Lucky Traveler's Bench
-r(1261241),	-- Lorewalker's Bookcase
-r(1261259),	-- Gilnean Wooden Table
-r(1261278),	-- Gilnean Rocking Chair
-r(1261288),	-- Gilnean Wall Shelf
-r(1261549),	-- Brill Coffin Lid
-r(1261572),	-- Brill Coffin
-r(1261587),	-- Kharanos Bookcase
-r(1261644),	-- Wooden Ironforge Table
-r(1263241),	-- Broker's Hex Table
-r(1263243),	-- Cartel Ta Bookcase
-r(1263247),	-- Ardenweald Hanging Baskets
-r(1263272),	-- Aspiring Soul's Chair
-r(1263278),	-- Large Revendreth Storage Crate
-r(1263285),	-- Tome of Maldraxxian Rituals
-r(1263293),	-- Hollow Night Fae Shrine
-r(1263344),	-- Dalaran Display Shelves
-r(1263562),	-- Silver Dalaran Bench
-r(1263564),	-- Dalaran Street Sign
-r(1263570),	-- Dalaran Scholar's Bookcase
-r(1263574),	-- Kirin Tor Crate
-r(1263575),	-- Dalaran Post
-r(1263810),	-- Aldor Bookcase
-r(1263811),	-- Gilded Draenei Round Table
-r(1263812),	-- Halaa Bench
-r(1263813),	-- Crystal Signpost
-r(1263814),	-- Talon King's Totem
-r(1267108),	-- Brown Dye Pigment
-r(1268662),	-- Black Dye Pigment
-r(1268770),	-- White Dye Pigment
-r(1268984),	-- Blue Dye Pigment
-r(1268985),	-- Green Dye Pigment
-r(1268989),	-- Yellow Dye Pigment
-r(1268993),	-- Orange Dye Pigment
-r(1268998),	-- Red Dye Pigment
-r(1268999),	-- Teal Dye Pigment
-r(1269057),	-- Purple Dye Pigment
-11.2.7.64011
-r(1269495),	-- Thunder Bluff Totem
-r(1269534),	-- Gilnean Map
-r(1269540),	-- Gilnean Postbox
-11.2.7.64044
-r(1272572),	-- Valdrakken Wall Shelf
 12.0.0.63534
 r(471010),	-- Midnight Inscription
 r(471044),	-- Recraft Equipment
@@ -946,9 +806,9 @@ r(1248629),	-- Harandar Runestone
 r(1248630),	-- Harandar Signpost
 r(1248631),	-- Magnificent Towering Bookcase
 r(1260760),	-- Thalassian Competitor's Bow
-r(1264550),	-- Super Sin'dorei Alchemist's Mixing Rod
-r(1264551),	-- Super Sin'dorei Rolling Pin
-r(1264552),	-- Super Sin'dorei Quill
+r(1264550),	-- Gilded Alchemist's Mixing Rod \\ Super Sin'dorei Alchemist's Mixing Rod
+r(1264551),	-- Gilded Sin'dorei Rolling Pin \\ Super Sin'dorei Rolling Pin
+r(1264552),	-- Gilded Sin'dorei Quill \\ Super Sin'dorei Quill
 r(1265604),	-- Multicraft
 r(1265618),	-- Knowledge
 r(1265655),	-- Quality

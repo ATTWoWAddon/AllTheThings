@@ -8,14 +8,13 @@ root(ROOTS.ExpansionFeatures,
 			n(BUILDINGS, {
 				garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
 					n(ACHIEVEMENTS, {
-						ach(9452, {		-- Trap Superstar (500)
-							ach(9451),		-- Trapper's Delight (250)
-							ach(9565, {		-- Master Trapper (125)
-								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-								["groups"] = { i(111969) },		-- Barn, Level 3 [Blueprints]
-							}),
-							ach(9450),		-- The Trap Game (50)
+						ach(9450),		-- The Trap Game (50)
+						ach(9565, {		-- Master Trapper (125)
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["groups"] = { i(111969) },		-- Barn, Level 3 [Blueprints]
 						}),
+						ach(9451),		-- Trapper's Delight (250)
+						ach(9452),		-- Trap Superstar (500)
 					}),
 					n(QUESTS, {
 						q(36274, {	-- Bigger Trap, Better Rewards

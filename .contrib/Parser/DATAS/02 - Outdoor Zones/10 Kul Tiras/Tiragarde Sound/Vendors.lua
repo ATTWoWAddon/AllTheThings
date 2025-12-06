@@ -54,10 +54,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(252392, { 	-- Admiral's Chandelier (DECOR!)
-						["cost"] = {{ "c", 1560, 250 }},	-- 250x War Resources
+						["sourceQuest"] = 48089,	-- Mountain Sounds
+						["cost"] = { { "c", 1560, 250 } },	-- 250x War Resources
 					}),
 					i(252405, { 	-- Admiral's Low-Hanging Chandelier (DECOR!)
-						["cost"] = {{ "c", 1560, 250 }},	-- 250x War Resources
+						["cost"] = { { "c", 1560, 250 } },	-- 250x War Resources
 					}),
 				},
 			}),

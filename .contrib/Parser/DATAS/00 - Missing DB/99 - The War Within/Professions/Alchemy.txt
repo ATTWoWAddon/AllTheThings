@@ -1,66 +1,21 @@
 12.0.0.63534
-r(471003),	-- Midnight Alchemy
-r(471040),	-- Recraft Equipment
 r(1230772),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1230854),	-- Midnight Catalyst
-r(1230855),	-- Composite Flora
-r(1230856),	-- Wondrous Synergist
-r(1230857),	-- Midnight Potion Cauldron
-r(1230858),	-- Light's Preservation
+r(1230854),	-- [DNT] Midnight Catalyst \\ Midnight Catalyst
 r(1230859),	-- Potion of Recklessness
-r(1230860),	-- Draught of Rampant Abandon
-r(1230861),	-- Primal Philosopher's Stone
-r(1230862),	-- Potion of Devoured Dreams
-r(1230863),	-- Potion of Zealotry
-r(1230864),	-- Amani Extract
-r(1230865),	-- Midnight Mana Potion
-r(1230866),	-- Midnight Healing Potion
-r(1230867),	-- Void-Shrouded Tincture
-r(1230868),	-- Refreshing Serum
-r(1230869),	-- Light's Potential
-r(1230870),	-- Haranir Phial of Finesse
 r(1230871),	-- [DNT] Alchemy Recipe - Reuse Me
-r(1230872),	-- Haranir Phial of Ingenuity
-r(1230873),	-- Haranir Phial of Perception
-r(1230874),	-- Midnight Flask Cauldron
-r(1230875),	-- Midnight Versatility Flask
-r(1230876),	-- Midnight Mastery Flask
-r(1230877),	-- Midnight Haste Flask
-r(1230878),	-- Midnight Critical Strike Flask
-r(1230879),	-- Midnight Stacking Heals Flask
-r(1230880),	-- Midnight Vicious Flask of the Wrecking Ball
-r(1230881),	-- Midnight Vicious Flask of Manifested Fury
-r(1230882),	-- Midnight Vicious Flask of Determination
-r(1230883),	-- Midnight Vicious Flask of Honor
-r(1230884),	-- Midnight Vicious Flask of Classical Spirits
-r(1230885),	-- Midnight Alchemist Stone
-r(1230886),	-- Enlightenment Tonic
-r(1230887),	-- Transmute: Mote of Wild Magic
-r(1230888),	-- Transmute: Mote of Pure Void
-r(1230889),	-- Transmute: Mote of Primal Energy
-r(1230890),	-- Transmute: Mote of Light
-r(1230891),	-- Box of Rocks
-r(1230892),	-- Bouquet of Herbs
-r(1230893),	-- School of Gems
-r(1233129),	-- Recycle Potions
-r(1233130),	-- Recycle Flasks
+r(1230879),	-- [DNT] Midnight Stacking Heals Flask \\ Midnight Stacking Heals Flask
+r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball \\ Midnight Vicious Flask of the Wrecking Ball
+r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury \\ Midnight Vicious Flask of Manifested Fury
+r(1230882),	-- [DNT] Midnight Vicious Flask of Determination \\ Midnight Vicious Flask of Determination
+r(1230883),	-- Vicious Thalassian Flask of Honor \\ Midnight Vicious Flask of Honor
+r(1230884),	-- [DNT] Midnight Vicious Flask of Classical Spirits \\ Midnight Vicious Flask of Classical Spirits
 r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1233132),	-- Entropic Illuminant
 r(1233133),	-- Rootbound Vat
 r(1233135),	-- Sunsmoke Censer
 r(1233136),	-- Riftstone \\ Void Elf KnickKnack
 r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
-r(1233138),	-- Silvermoon Spire Fountain
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1265599),	-- Multicraft
-r(1265614),	-- Knowledge
-r(1265651),	-- Quality
-r(1265659),	-- Sparks
-r(1265667),	-- Artisan Alchemist's Moxie
-r(1265675),	-- Concentration
-r(1265692),	-- Resourcefulness
-r(1265701),	-- Ingenuity
-r(1265732),	-- Skill
 12.0.0.64124
 r(1273064),	-- Arakkoan Alchemist's Bottle
 r(1273070),	-- Arakkoan Alchemist's Concoction
@@ -69,69 +24,27 @@ r(1273070),	-- Arakkoan Alchemist's Concoction
 
 
 Missing in Alchemy
+
+11.2.7.63642
+r(1263548),	-- Pandaren Alchemist's Kit
 12.0.0.63534
-r(471003),	-- Midnight Alchemy
-r(471040),	-- Recraft Equipment
 r(1230772),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1230854),	-- Midnight Catalyst
-r(1230855),	-- Composite Flora
-r(1230856),	-- Wondrous Synergist
-r(1230857),	-- Midnight Potion Cauldron
-r(1230858),	-- Light's Preservation
+r(1230854),	-- [DNT] Midnight Catalyst \\ Midnight Catalyst
 r(1230859),	-- Potion of Recklessness
-r(1230860),	-- Draught of Rampant Abandon
-r(1230861),	-- Primal Philosopher's Stone
-r(1230862),	-- Potion of Devoured Dreams
-r(1230863),	-- Potion of Zealotry
-r(1230864),	-- Amani Extract
-r(1230865),	-- Midnight Mana Potion
-r(1230866),	-- Midnight Healing Potion
-r(1230867),	-- Void-Shrouded Tincture
-r(1230868),	-- Refreshing Serum
-r(1230869),	-- Light's Potential
-r(1230870),	-- Haranir Phial of Finesse
 r(1230871),	-- [DNT] Alchemy Recipe - Reuse Me
-r(1230872),	-- Haranir Phial of Ingenuity
-r(1230873),	-- Haranir Phial of Perception
-r(1230874),	-- Midnight Flask Cauldron
-r(1230875),	-- Midnight Versatility Flask
-r(1230876),	-- Midnight Mastery Flask
-r(1230877),	-- Midnight Haste Flask
-r(1230878),	-- Midnight Critical Strike Flask
-r(1230879),	-- Midnight Stacking Heals Flask
-r(1230880),	-- Midnight Vicious Flask of the Wrecking Ball
-r(1230881),	-- Midnight Vicious Flask of Manifested Fury
-r(1230882),	-- Midnight Vicious Flask of Determination
-r(1230883),	-- Midnight Vicious Flask of Honor
-r(1230884),	-- Midnight Vicious Flask of Classical Spirits
-r(1230885),	-- Midnight Alchemist Stone
-r(1230886),	-- Enlightenment Tonic
-r(1230887),	-- Transmute: Mote of Wild Magic
-r(1230888),	-- Transmute: Mote of Pure Void
-r(1230889),	-- Transmute: Mote of Primal Energy
-r(1230890),	-- Transmute: Mote of Light
-r(1230891),	-- Box of Rocks
-r(1230892),	-- Bouquet of Herbs
-r(1230893),	-- School of Gems
-r(1233129),	-- Recycle Potions
-r(1233130),	-- Recycle Flasks
+r(1230879),	-- [DNT] Midnight Stacking Heals Flask \\ Midnight Stacking Heals Flask
+r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball \\ Midnight Vicious Flask of the Wrecking Ball
+r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury \\ Midnight Vicious Flask of Manifested Fury
+r(1230882),	-- [DNT] Midnight Vicious Flask of Determination \\ Midnight Vicious Flask of Determination
+r(1230883),	-- Vicious Thalassian Flask of Honor \\ Midnight Vicious Flask of Honor
+r(1230884),	-- [DNT] Midnight Vicious Flask of Classical Spirits \\ Midnight Vicious Flask of Classical Spirits
 r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 r(1233132),	-- Entropic Illuminant
 r(1233133),	-- Rootbound Vat
 r(1233135),	-- Sunsmoke Censer
 r(1233136),	-- Riftstone \\ Void Elf KnickKnack
 r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
-r(1233138),	-- Silvermoon Spire Fountain
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1265599),	-- Multicraft
-r(1265614),	-- Knowledge
-r(1265651),	-- Quality
-r(1265659),	-- Sparks
-r(1265667),	-- Artisan Alchemist's Moxie
-r(1265675),	-- Concentration
-r(1265692),	-- Resourcefulness
-r(1265701),	-- Ingenuity
-r(1265732),	-- Skill
 12.0.0.64124
 r(1273064),	-- Arakkoan Alchemist's Bottle
 r(1273070),	-- Arakkoan Alchemist's Concoction

@@ -12,7 +12,7 @@ r(1236060),	-- Enchant Ring - Zul'jin's Mastery
 r(1236061),	-- Enchant Shoulders - Flight of the Eagle
 r(1236062),	-- Enchant Shoulders - Akil'zon's Swiftness
 r(1236063),	-- Enchant Tool - Amani Perception
-r(1236064),	-- Enchant Tool - Amani Resourcfulness
+r(1236064),	-- Enchant Tool - Amani Resourcefulness \\ Enchant Tool - Amani Resourcfulness
 r(1236065),	-- Enchant Weapon - Strength of Halazzi
 r(1236066),	-- Enchant Weapon - Jan'alai's Precision
 r(1236067),	-- Enchant Weapon - Berserker's Rage
@@ -98,6 +98,13 @@ r(1265677),	-- Concentration
 r(1265685),	-- Skill
 r(1265695),	-- Resourcefulness
 r(1265703),	-- Ingenuity
+12.0.0.64741
+r(1280394),	-- Radiant Shatter
+r(1280401),	-- Dawn Shatter
+r(1280952),	-- Disenchant
+r(1281342),	-- Endless Codex of Blooming Light
+r(1281348),	-- Endless Codex of Nature's Grace
+r(1281349),	-- Endless Codex of the Voidtouched
 
 
 
@@ -118,7 +125,7 @@ r(1236060),	-- Enchant Ring - Zul'jin's Mastery
 r(1236061),	-- Enchant Shoulders - Flight of the Eagle
 r(1236062),	-- Enchant Shoulders - Akil'zon's Swiftness
 r(1236063),	-- Enchant Tool - Amani Perception
-r(1236064),	-- Enchant Tool - Amani Resourcfulness
+r(1236064),	-- Enchant Tool - Amani Resourcefulness \\ Enchant Tool - Amani Resourcfulness
 r(1236065),	-- Enchant Weapon - Strength of Halazzi
 r(1236066),	-- Enchant Weapon - Jan'alai's Precision
 r(1236067),	-- Enchant Weapon - Berserker's Rage
@@ -204,3 +211,10 @@ r(1265677),	-- Concentration
 r(1265685),	-- Skill
 r(1265695),	-- Resourcefulness
 r(1265703),	-- Ingenuity
+12.0.0.64741
+r(1280394),	-- Radiant Shatter
+r(1280401),	-- Dawn Shatter
+r(1280952),	-- Disenchant
+r(1281342),	-- Endless Codex of Blooming Light
+r(1281348),	-- Endless Codex of Nature's Grace
+r(1281349),	-- Endless Codex of the Voidtouched

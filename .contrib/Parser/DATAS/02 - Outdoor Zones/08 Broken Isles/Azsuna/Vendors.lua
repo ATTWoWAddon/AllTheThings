@@ -6,6 +6,15 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(VENDORS, {
+				n(89939, {	-- Berazus
+					["coord"] = { 47.8, 23.3, AZSUNA },
+					["groups"] = {
+						i(246864, {	-- Tome of the Lost Dragon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
+						}),
+					},
+				}),
 				n(107139, {	-- Enchantress Ilyana
 					["coord"] = { 46.8, 40.8, AZSUNA },
 					["groups"] = {
@@ -41,13 +50,13 @@ root(ROOTS.Zones, {
 					["crs"] = { 99420 },	-- Kharmeera (after completion of Quests)
 					["groups"] = sharedData({ ["sourceQuest"] = 39923 }, {	-- Down to the Core
 						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility [Rank 1] (RECIPE!)
-							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
+							["cost"] = { { "i", 124442, 1 } },	-- 1x Chaos Crystal
 						}),
 						i(128575, {	-- Formula: Enchant Cloak - Binding of Intellect [Rank 1] (RECIPE!)
-							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
+							["cost"] = { { "i", 124442, 1 } },	-- 1x Chaos Crystal
 						}),
 						i(128573, {	-- Formula: Enchant Cloak - Binding of Strength [Rank 1] (RECIPE!)
-							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
+							["cost"] = { { "i", 124442, 1 } },	-- 1x Chaos Crystal
 						}),
 					}),
 				}),

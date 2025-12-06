@@ -1247,7 +1247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226910), -- Deathmist Leggings
 							i(226912), -- Deathmist Mantle
 						}),
-						i(227379, { -- Wicked Boots, Legs, and Shoulders Set
+						i(227380, { -- Wicked Boots, Legs, and Shoulders Set
 							-- Tank
 							i(226919), -- Deathmist Treads
 							i(226916), -- Deathmist Pants

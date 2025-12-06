@@ -647,9 +647,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(42550),	-- Weakness Spectralizers
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264708),	-- Home Defense Gadget (DECOR!)
 			i(264711),	-- Joybuzz's Joyful Wall of Trains (DECOR!)
 			i(264707),	-- Resizable All-Purpose Gear (DECOR!)
-			i(245602),	-- Gilnean Problem Solver (DECOR!)
 		})),
 		filter(MISC, {
 			i(40893, {	-- Bladed Pickaxe

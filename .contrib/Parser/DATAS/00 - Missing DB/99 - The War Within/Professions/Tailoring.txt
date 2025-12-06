@@ -1,27 +1,3 @@
-11.2.7.63642
-r(1259247),	-- Draconic Circular Rug
-r(1260215),	-- Dornogal Framed Rug
-r(1260326),	-- Undermine Bean Bag Chair
-r(1260458),	-- Red Dazar'alor Rug
-r(1260475),	-- Zanchuli Tapestry
-r(1260769),	-- Shal'dorei Open-Air Tent
-r(1260774),	-- Circular Shal'dorei Rug
-r(1261250),	-- Pandaren Meander Rug
-r(1261317),	-- Surwich Expedition Tent
-r(1261688),	-- Elder Rise Rug
-r(1261695),	-- Dwarven District Banner
-r(1261940),	-- Tapestry of the Five Flights
-r(1262370),	-- "Unity of Thorns" Tapestry
-r(1263553),	-- Pandaren Fishing Net
-r(1263620),	-- Gilded Dalaran Banner
-r(1263627),	-- Kirin Tor Skyline Banner
-r(1263669),	-- Grand Drape of the Exiles
-r(1263692),	-- Draenei Weaver's Loom
-r(1263853),	-- Kyrian Aspirant's Rolled Cushion
-r(1263858),	-- Beloved Raptor Plushie
-11.2.7.64044
-r(1272575),	-- Heart of the Forest Banner
-r(1272578),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 12.0.0.63534
 r(471015),	-- Midnight Tailoring
 r(471047),	-- Recraft Equipment
@@ -111,36 +87,19 @@ r(1279125),	-- Thalassian Enchanter's Bonnet
 r(1279126),	-- [DNT] Thalassian Fisher's Suncover
 r(1279128),	-- Thalassian Herbalist's Cowl
 r(1279129),	-- Thalassian Tailor's Threads
+12.0.0.64741
+r(1280541),	-- Smuggler's Cloak
+r(1280542),	-- Silvermoon Agent's Drape
+r(1280543),	-- Scout's Cape
+r(1280544),	-- Farstrider's Embroidered Cover
+r(1280545),	-- Blood-Tempered Cape
+r(1280546),	-- Spellbreaker's Shroud
 
 
 
 
 Missing in Tailoring
 
-11.2.7.63642
-r(1259247),	-- Draconic Circular Rug
-r(1260215),	-- Dornogal Framed Rug
-r(1260326),	-- Undermine Bean Bag Chair
-r(1260458),	-- Red Dazar'alor Rug
-r(1260475),	-- Zanchuli Tapestry
-r(1260769),	-- Shal'dorei Open-Air Tent
-r(1260774),	-- Circular Shal'dorei Rug
-r(1261250),	-- Pandaren Meander Rug
-r(1261317),	-- Surwich Expedition Tent
-r(1261688),	-- Elder Rise Rug
-r(1261695),	-- Dwarven District Banner
-r(1261940),	-- Tapestry of the Five Flights
-r(1262370),	-- "Unity of Thorns" Tapestry
-r(1263553),	-- Pandaren Fishing Net
-r(1263620),	-- Gilded Dalaran Banner
-r(1263627),	-- Kirin Tor Skyline Banner
-r(1263669),	-- Grand Drape of the Exiles
-r(1263692),	-- Draenei Weaver's Loom
-r(1263853),	-- Kyrian Aspirant's Rolled Cushion
-r(1263858),	-- Beloved Raptor Plushie
-11.2.7.64044
-r(1272575),	-- Heart of the Forest Banner
-r(1272578),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
 12.0.0.63534
 r(471015),	-- Midnight Tailoring
 r(471047),	-- Recraft Equipment
@@ -230,3 +189,10 @@ r(1279125),	-- Thalassian Enchanter's Bonnet
 r(1279126),	-- [DNT] Thalassian Fisher's Suncover
 r(1279128),	-- Thalassian Herbalist's Cowl
 r(1279129),	-- Thalassian Tailor's Threads
+12.0.0.64741
+r(1280541),	-- Smuggler's Cloak
+r(1280542),	-- Silvermoon Agent's Drape
+r(1280543),	-- Scout's Cape
+r(1280544),	-- Farstrider's Embroidered Cover
+r(1280545),	-- Blood-Tempered Cape
+r(1280546),	-- Spellbreaker's Shroud

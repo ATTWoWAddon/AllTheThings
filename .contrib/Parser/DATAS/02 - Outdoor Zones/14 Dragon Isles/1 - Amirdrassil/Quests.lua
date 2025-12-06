@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["provider"] = { "n", 216067 },	-- Shandris Feathermoon
 				["coord"] = { 51, 60.6, AMIRDRASSIL },
 				["groups"] = {
+					i(251022, { ["timeline"] = { ADDED_11_2_7 } }),	-- Bel'ameth Traveler's Pack (DECOR!)
 					i(213004),	-- Violet Kaldorei Backpack (COSMETIC!)
 					i(212981),	-- Violet Kaldorei Bedroll (COSMETIC!)
 				},

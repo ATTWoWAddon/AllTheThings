@@ -349,7 +349,7 @@ qo(2,{e=16,providers={{"i",20494}},questID=8311})}}),
 q(8353,{coords={{18.6,51.4,1455}},e=16,qgs={5111},r=2,repeatable=1,g={
 qo(3,{e=16,providers={{"i",20490}},questID=8311})}}),
 q(8357,{coords={{67.2,15.8,1457}},e=16,qgs={6735},r=2,repeatable=1,g={
-qo(4,{e=16,providers={{"i",20496}},questID=8311})}}),
+qo(4,{e=16,providers={{"i",20490},{"i",20492},{"i",20494},{"i",20496}},questID=8311})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(8312,{coords={{71.2,22.8,1454}},e=16,isYearly=1,lvl=10,qgs={15309},r=1,g={
 q(8359,{coords={{54.2,68.4,1454}},e=16,qgs={6929},r=1,repeatable=1,g={
@@ -359,7 +359,7 @@ qo(2,{e=16,providers={{"i",20495}},questID=8312})}}),
 q(8354,{coords={{67.8,38.6,1458}},e=16,qgs={6741},r=1,repeatable=1,g={
 qo(3,{e=16,providers={{"i",20491}},questID=8312})}}),
 q(8360,{coords={{45.8,64.4,1456}},e=16,qgs={6746},r=1,repeatable=1,g={
-qo(4,{e=16,providers={{"i",20497}},questID=8312})}}),
+qo(4,{e=16,providers={{"i",20491},{"i",20493},{"i",20495},{"i",20497}},questID=8312})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(8322,{coords={{55.6,69.9,1420},{51.4,59,1424}},cost={{"i",20605,1}},e=16,isYearly=1,lvl=30,qgs={15197},r=1,rwp=40003}),
 q(8409,{coords={{51.4,59,1424}},e=16,isYearly=1,lvl=30,providers={{"o",180570}},r=1,rwp=40003,sourceQuests={8322},g={

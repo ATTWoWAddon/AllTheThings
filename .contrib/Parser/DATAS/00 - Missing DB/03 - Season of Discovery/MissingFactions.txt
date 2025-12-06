@@ -1,3 +1,8 @@
+1.15.0.52124
+faction(2586),	-- Azeroth Commerce Authority
+faction(2587),	-- Durotar Supply and Logistics
+1.15.2.53941
+faction(2641),	-- Emerald Wardens
 1.15.3.55112
 faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
 1.15.3.55391

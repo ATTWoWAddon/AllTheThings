@@ -241,6 +241,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 					}),
+					n(86683, sharedData({	-- Tai'tasi
+						["timeline"] = { ADDED_11_2_7 },
+					},{
+						i(245444, {["cost"] = {{"c",GARRISON_RESOURCES,250}}}),	-- Orcish Communal Stove (DECOR!)
+						i(245445, {["cost"] = {{"c",GARRISON_RESOURCES,150}}}),	-- Frostwolf Axe-Dart Board (DECOR!)
+						i(244322, {["cost"] = {{"c",GARRISON_RESOURCES,100}}}),	-- Frostwolf Banded Stool (DECOR!)
+						i(244321, {["cost"] = {{"c",GARRISON_RESOURCES,100}}}),	-- Orcish Lumberjack's Stool (DECOR!)
+					})),
 				}),
 			}),
 		}),

@@ -297,12 +297,25 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 82.2, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = bubbleDownClassicRep(FACTION_THE_LOREWALKERS, {
 						{		-- Neutral
+							i(247858, {	-- Shaohao Ceremonial Bell (DECOR!)
+								["cost"] = 16000000,	-- 1,600g
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						}, {	-- Friendly
+							i(245512, { ["timeline"] = { ADDED_11_2_7 } }),	-- Pandaren Cradle Stool (DECOR!)
 						}, {	-- Honored
+							i(247855, { ["timeline"] = { ADDED_11_2_7 } }),	-- Pandaren Lacquered Crate (DECOR!)
+							i(247662, { ["timeline"] = { ADDED_11_2_7 } }),	-- Pandaren Scholar's Lectern (DECOR!)
 						}, {	-- Revered
+							i(258147, {	-- Empty Lorewalker's Bookcase (DECOR!)
+								["cost"] = 8000000,	-- 800g
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(93230),	-- Grand Commendation of the Lorewalkers
-							i(122221, {	-- Music Roll: Song of Liu Lang
-								["timeline"] = { ADDED_6_1_0 },
+							i(122221, {	["timeline"] = { ADDED_6_1_0 } } ),	-- Music Roll: Song of Liu Lang
+							i(247663, {	-- Pandaren Scholar's Bookcase (DECOR!)
+								["cost"] = 16000000,	-- 1,600g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Exalted
 							i(89363, {	-- Red Flying Cloud (MOUNT!)
@@ -326,7 +339,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_LOREWALKERS, {
 		n(QUESTS, {
-			
+
 		}),
 	}),
 })));

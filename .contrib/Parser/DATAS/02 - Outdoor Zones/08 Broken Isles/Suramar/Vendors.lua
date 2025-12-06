@@ -38,7 +38,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 2400000 },	-- 240g
-									{ "c", ORDER_RESOURCES, 500 },	-- 500x Order Resources
+									{ "c", ORDER_RESOURCES, 500 },
 								},
 							}),
 							i(121736, {	-- Nightfall Slipeprs
@@ -51,7 +51,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 2400000 },	-- 240g
-									{ "c", ORDER_RESOURCES, 500 },	-- 500x Order Resources
+									{ "c", ORDER_RESOURCES, 500 },
 								},
 							}),
 						}, {	-- Honored
@@ -115,14 +115,14 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 4000000 },	-- 400g
-									{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+									{ "c", ORDER_RESOURCES, 750 },
 								},
 							}),
 							i(247844, {	-- Suramar Library (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 4000000 },	-- 400g
-									{ "c", ORDER_RESOURCES, 750 },	-- 750x Order Resources
+									{ "c", ORDER_RESOURCES, 750 },
 								},
 							}),
 							i(140746, {	-- Treasure Map: Suramar
@@ -133,7 +133,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 							i(136899, {	-- Extinguished Eye (PET!)
@@ -153,7 +153,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 						}, {	-- Exalted
@@ -161,7 +161,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 8000000 },	-- 800g
-									{ "c", ORDER_RESOURCES, 2000 },	-- 2,000x Order Resources
+									{ "c", ORDER_RESOURCES, 2000 },
 								},
 							}),
 							i(139768, {	-- Amice of the Black Harvest
@@ -211,7 +211,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {
 									{ "g", 5600000 },	-- 560g
-									{ "c", ORDER_RESOURCES, 1000 },	-- 1,000x Order Resources
+									{ "c", ORDER_RESOURCES, 1000 },
 								},
 							}),
 							i(140575),	-- Nightfallen Tabard

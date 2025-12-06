@@ -17,10 +17,9 @@ root(ROOTS.ExpansionFeatures,
 								crit(28523),	-- Transport
 								crit(28524),	-- Battleship
 							}),
-							ach(10168, {	-- Naval Armada
-								ach(10169),	-- Naval Fleet
-								ach(10177),	-- Set Sail!
-							}),
+							ach(10177),	-- Set Sail!
+							ach(10169),	-- Naval Fleet
+							ach(10168),	-- Naval Armada
 							ach(10166, {	-- Naval Mechanics
 								crit(28536),	-- Tuskarr Fishing Net
 								crit(28529),	-- Felsmoke Launchers

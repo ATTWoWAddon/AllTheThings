@@ -292,7 +292,7 @@ root(ROOTS.Zones, {
 								{ 39.8, 25.7, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["cost"] = {{ "c", ORDER_RESOURCES, 900 }},	-- 900x Order Resources
+							["cost"] = { { "c", ORDER_RESOURCES, 900 } },
 							["repeatable"] = true,
 							["groups"] = {
 								i(152097, {	-- Lightforged Bulwark
@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 								{ 45.9, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 39.2, 24.8, THE_VINDICAAR_KROKUUN_UPPER },
 							},
-							["cost"] = {{ "c", ORDER_RESOURCES, 150 }},	-- 150x Order Resources
+							["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 							["isWeekly"] = true,
 							["groups"] = {
 								i(152097, {	-- Lightforged Bulwark
@@ -603,6 +603,14 @@ root(ROOTS.Zones, {
 							},
 							["groups"] = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
 								{		-- Neutral
+									i(245422, {	-- Draenic Bookcase (DECOR!)
+										["timeline"] = { ADDED_11_2_7 },
+										["cost"] = 2400000,	-- 240g
+									}),
+									i(251480, {	-- Draenic Wooden Wall Shelf (DECOR!)
+										["timeline"] = { ADDED_11_2_7 },
+										["cost"] = 6400000,	-- 640g
+									}),
 								}, {	-- Friendly
 									i(152658),	-- Formula: Chaos Shatter (RECIPE!)
 									i(152725),	-- Technique: Mass Mill Astral Glory (RECIPE!)

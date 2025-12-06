@@ -19,7 +19,7 @@ ach(41802),	-- Eversong In Reprise \\ Eversong Woods
 ach(41803),	-- For Zul'Aman! \\ Living Amani Legend
 ach(41804),	-- One Does Not Simply Walk Into Harandar \\ Harandar
 ach(41805),	-- Arator's Journey
-ach(41806),	-- Voidstorm
+ach(41806),	-- Breaching the Voidstorm \\ Voidstorm
 ach(41960),	-- Murder Row
 ach(41961),	-- Heroic: Murder Row
 ach(41962),	-- Mythic: Murder Row
@@ -75,11 +75,11 @@ ach(61512),	-- Charonus kills (Heroic Voidscar Arena)
 ach(61513),	-- Charonus kills (Mythic Voidscar Arena)
 ach(61514),	-- It's Treason Then
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
-ach(61520),	-- Explore Harandar - Placeholder
+ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
 ach(61521),	-- Skyriding Glyphs: The Shining Span
-ach(61522),	-- Skyriding Glyphs: Sunstrider Isle
+ach(61522),	-- Skyriding Glyphs: Brightwing Estate \\ Skyriding Glyphs: Sunstrider Isle
 ach(61523),	-- Skyriding Glyphs: Silvermoon City
-ach(61524),	-- Skyriding Glyphs: Runestone Shan'dor
+ach(61524),	-- Skyriding Glyphs: Goldenmist Village \\ Skyriding Glyphs: Runestone Shan'dor
 ach(61525),	-- Skyriding Glyphs: Daggerspine Point
 ach(61526),	-- Skyriding Glyphs: Suncrown Tree
 ach(61527),	-- Skyriding Glyphs: Fairbreeze Village
@@ -125,7 +125,7 @@ ach(61568),	-- Glory of the Midnight Hero
 12.0.0.63854
 ach(61574),	-- Legends Never Die
 ach(61576),	-- Eversong Woods Glyph Hunter
-ach(61581),	-- Zul'aman Glyph Hunter
+ach(61581),	-- Zul'Aman Glyph Hunter \\ Zul'aman Glyph Hunter
 ach(61582),	-- Harandar Glyph Hunter
 ach(61583),	-- Voidstorm Glyph Hunter
 ach(61584),	-- Midnight Glyph Hunter
@@ -164,9 +164,9 @@ ach(61624),	-- Ahead of the Curve: Crown of the Cosmos
 ach(61625),	-- Cutting Edge: Crown of the Cosmos
 ach(61626),	-- Ahead of the Curve: Midnight Falls
 ach(61627),	-- Cutting Edge: Midnight Falls
-ach(61635),	-- Voidspire: Wing 1
-ach(61636),	-- Voidspire: Wing 2
-ach(61637),	-- Voidspire: Wing 3
+ach(61635),	-- Voidspire: Weapons of the Void \\ Voidspire: Wing 1
+ach(61636),	-- Voidspire: Fanatics of the Light \\ Voidspire: Wing 2
+ach(61637),	-- Voidspire: Crown of the Cosmos \\ Voidspire: Wing 3
 ach(61638),	-- Den of Nalorakk
 ach(61639),	-- Maisara Caverns
 ach(61640),	-- Nexus-Point Xenas
@@ -271,9 +271,9 @@ ach(61836),	-- Midnight Delves: Tier 3
 ach(61839),	-- Midnight Pathfinder
 ach(61843),	-- Quel'Dressed
 ach(61854),	-- The Midnight Explorer
-ach(61855),	-- Explore Eversong Woods - Placeholder
-ach(61856),	-- Explore Zul'Aman - Placeholder
-ach(61857),	-- Explore Voidstorm - Placeholder
+ach(61855),	-- Explore Eversong Woods \\ Explore Eversong Woods - Placeholder
+ach(61856),	-- Explore Zul'Aman \\ Explore Zul'Aman - Placeholder
+ach(61857),	-- Explore Voidstorm \\ Explore Voidstorm - Placeholder
 ach(61858),	-- Light of the Party
 ach(61859),	-- Midnight Flight Master
 ach(61860),	-- From The Cradle to the Grave
@@ -295,7 +295,7 @@ ach(61910),	-- Mrglgrgl of Grglmrgl \\ Hero of Murlocs
 ach(61911),	-- Ready, Set, Snap!
 ach(61912),	-- Anchoring the Defense
 ach(61913),	-- A Singular Problem
-ach(61916),	-- Void Elf Demon Hunter
+ach(61916),	-- Rage of the Ren'dorei \\ Void Elf Demon Hunter
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64124
 ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
@@ -434,3 +434,40 @@ ach(62183),	-- Prey: A Thorn in the Side (Nightmare)
 ach(62184),	-- Prey: Breaking the Blade Nightmare)
 ach(62222),	-- Abyss Anglers: The Amani Way
 ach(62223),	-- Alchemy-on-Demand
+12.0.0.64741
+ach(62230),	-- Die in a Delve
+ach(62232),	-- Blacksmithing-on-Demand
+ach(62233),	-- Enchanting-on-Demand
+ach(62234),	-- Engineering-on-Demand
+ach(62235),	-- Inscription-on-Demand
+ach(62236),	-- Jewelcrafting-on-Demand
+ach(62237),	-- Leatherworking-on-Demand
+ach(62238),	-- Tailoring-on-Demand
+ach(62239),	-- Dedicated to the Craft: Alchemy
+ach(62240),	-- Dedicated to the Craft: Blacksmithing
+ach(62241),	-- Dedicated to the Craft: Enchanting
+ach(62242),	-- Dedicated to the Craft: Engineering
+ach(62243),	-- Dedicated to the Craft: Inscription
+ach(62244),	-- Dedicated to the Craft: Jewelcrafting
+ach(62245),	-- Dedicated to the Craft: Leatherworking
+ach(62246),	-- Dedicated to the Craft: Tailoring
+ach(62247),	-- Herbalism-on-Demand
+ach(62248),	-- Mining-on-Demand
+ach(62249),	-- Skinning-on-Demand
+ach(62250),	-- Dedicated to the Craft: Herbalism
+ach(62251),	-- Dedicated to the Craft: Mining
+ach(62252),	-- Dedicated to the Craft: Skinning
+ach(62256),	-- Yelling into the Voidstorm
+ach(62260),	-- That's Aln, Folks!
+ach(62261),	-- Forever Song
+ach(62262),	-- Silvermoon Court Champion
+ach(62263),	-- Amani Tribe Champion
+ach(62264),	-- Hara'ti Champion
+ach(62265),	-- The Singularity Champion
+ach(62266),	-- Abundance: An Acolyte no Longer
+ach(62267),	-- A Most Violent Loa
+ach(62268),	-- Abundance: Professionals Only
+ach(62269),	-- Altar of Blessings: Amani Curious
+ach(62270),	-- Altar of Blessings: One for Altar
+ach(62271),	-- Abyss Anglers: Trench Berserker
+ach(62272),	-- Abyss Anglers: Certified Depthdiver

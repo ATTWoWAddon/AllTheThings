@@ -6,18 +6,18 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(MISSIONS, {
-				n(85805, {	-- Frostwall Command Table [Garrison Level 3]
-					["modelScale"] = 2.5,
+				header(HEADERS.NPC, 85805, {	-- Command Table
 					["crs"] = {
 						80432,	-- Frostwall Level 1 Command Table
 						86031,	-- Frostwall Level 2 Command Table
 						81546,	-- Lunarfall Level 1 Command Table
 						84224,	-- Lunarfall Level 2 Command Table
 						84698,	-- Lunarfall Level 3 Command Table
+						85805,	-- Frostwall Level 3 Command Table
 					},
 					["groups"] = {
+						ach(9150),	-- Exploration Mission Specialist
 						ach(9900, {	-- Exploration Mission Master
-							ach(9150),	-- Exploration Mission Specialist
 							crit(27777),	-- Exploration: Oshu'gun Dig Site
 							crit(27778),	-- Exploration: Razed Warsong Outpost Dig Site
 							crit(27779),	-- Exploration: Stonecrag Excavation Dig Site
@@ -32,30 +32,24 @@ root(ROOTS.ExpansionFeatures,
 							crit(27788),	-- Exploration: Burial Fields
 							crit(27789),	-- Exploration: Umbrafen Dig Site
 						}),
-						ach(9147, {	-- Mission Specialist
-							ach(9523),	-- Patrolling Draenor [Yes this is a pre-req]
-							ach(9145),	-- Treasure Mission Specialist
-						}),
-						ach(9140, {	-- On A Metric Ton of Missions
-							ach(9133),	-- On a Mission
-							ach(9134),	-- On a Few Missions
-							ach(9138),	-- On a Lot of Missions
-							ach(9139),	-- On a Massive Numbeer of Missions
-						}),
+						ach(9147),	-- Mission Specialist
+						ach(9133),	-- On a Mission
+						ach(9134),	-- On a Few Missions
+						ach(9138),	-- On a Lot of Missions
+						ach(9139),	-- On a Massive Numbeer of Missions
+						ach(9140),	-- On A Metric Ton of Missions
+						ach(9146),	-- Patrolling Mission Specialist
 						ach(9523, {	-- Patrolling Draenor
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["groups"] = {
 								i(111971),	-- Barracks, Level 3 [Blueprints]
-								ach(9146),	-- Patrolling Mission Specialist
 							},
 						}),
-						ach(9143, {	-- The Rarer the Better
-							ach(9141),	-- A Rare Mission
-							ach(9142),	-- Keeping It Rare
-						}),
-						ach(9524, {	-- Treasure Master
-							ach(9145),	-- Treasure Mission Specialist
-						}),
+						ach(9141),	-- A Rare Mission
+						ach(9142),	-- Keeping It Rare
+						ach(9143),	-- The Rarer the Better
+						ach(9145),	-- Treasure Mission Specialist
+						ach(9524),	-- Treasure Master
 						mi(463, {	-- Bird Watching
 							i(118731),	-- Spires of Arak Treasure Map (CI!)
 						}),
@@ -458,20 +452,22 @@ root(ROOTS.ExpansionFeatures,
 						i(122584),	-- Winning with Wildlings
 					},
 				}),
-				n(94398, {	-- Frostwall Fleet Command Table
-					["modelScale"] = 2.3,
-					["cr"] = 94399,	-- Lunarfall Fleet Command Table
+				header(HEADERS.NPC, 94398, {	-- Fleet Command Table
+					["crs"] = {
+						94398,	-- Frostwall Fleet Command Table
+						94399,	-- Lunarfall Fleet Command Table
+					},
 					["groups"] = {
-						a(ach(10174)),	-- Admiral [A]
-						a(ach(10173)),	-- Fleet Commander [A]
 						a(ach(10172, {	-- Petty Officer [A]
 							a(i(128362)),	-- Captain's Hat [A]
 						})),
-						h(ach(10276)),	-- Admiral [H]
-						h(ach(10275)),	-- Fleet Commander [H]
 						h(ach(10255, {	-- Petty Officer [H]
 							h(i(128363)),	-- Captain's Hat [H]
 						})),
+						a(ach(10173)),	-- Fleet Commander [A]
+						h(ach(10275)),	-- Fleet Commander [H]
+						a(ach(10174)),	-- Admiral [A]
+						h(ach(10276)),	-- Admiral [H]
 						a(achpart(10256, 10167, {	-- Charting a Course [A]
 							a(i(128365)),	-- Fleet Commander's Hat [A]
 						})),
@@ -488,16 +484,16 @@ root(ROOTS.ExpansionFeatures,
 							crit(28518),	-- Naval Bonus Expert
 							crit(28519),	-- Naval Siege Expert
 						}),
-						ach(10036),	-- Naval Bonus Expert
 						ach(10017),	-- Naval Bonus Specialist
-						ach(10154),	-- Naval Combat Expert
+						ach(10036),	-- Naval Bonus Expert
 						ach(10156),	-- Naval Combat Specialist
-						ach(10155),	-- Naval Siege Expert
+						ach(10154),	-- Naval Combat Expert
 						ach(10161),	-- Naval Siege Specialist
-						ach(10163),	-- Naval Training Expert
+						ach(10155),	-- Naval Siege Expert
 						ach(10162),	-- Naval Training Specialist
-						ach(10160),	-- Naval Treasure Expert
+						ach(10163),	-- Naval Training Expert
 						ach(10159),	-- Naval Treasure Specialist
+						ach(10160),	-- Naval Treasure Expert
 						ach(10170, {	-- Seaman
 							i(128353),	-- Admiral's Compass
 						}),

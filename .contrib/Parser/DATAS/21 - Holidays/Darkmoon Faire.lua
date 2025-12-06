@@ -513,6 +513,133 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}),
 					},
 				}),
+				header(HEADERS.Achievement, 9755, {	-- Darkmoon Race Enthusiast
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						n(ACHIEVEMENTS, {
+							ach(9819, {	-- Darkmoon Like the Wind
+								["crs"] = { 89736 },	-- Wanderluster
+							}),
+						}),
+						n(QUESTS, {
+							q(33756, {	-- Let's Keep Racing
+								["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["isDaily"] = true,
+							}),
+							q(37868, {	-- More Big Racing!
+								["sourceQuest"] = 37911,	-- The Real Big Race
+								["qg"] = 90473,	-- Patti Earnhard
+								["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
+								["isDaily"] = true,
+							}),
+							q(37911, {	-- The Real Big Race
+								["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+								["qg"] = 90473,	-- Patti Earnhard
+								["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
+								["isDaily"] = true,
+								["groups"] = appendAllGroups({},
+									sharedData({["crs"] = { 89732 }},{	-- Powermonger
+										ach(9812),	-- Goal-Oriented
+										ach(9813),	-- Big Powermonger: Bronze
+										ach(9815),	-- Big Powermonger: Silver
+										ach(9817, {	-- Big Powermonger: Gold
+											i(122124),	-- Darkmoon Cannon
+										}),
+									}),
+									sharedData({["crs"] = { 90148 }},{	-- Racing Strider
+										ach(9793),	-- Big Race Enthusiast
+										ach(9794),	-- Big Race Novice
+										ach(9795),	-- Big Race Jockey
+										ach(9797),	-- Big Race Leadfoot
+										ach(9799, {	-- Big Race Roadhog
+											i(122128),	-- Checkered Flag
+										}),
+									}),
+									sharedData({["crs"] = { 89734 }},{	-- Rocketeer
+										ach(9800),	-- Rocket Man
+										ach(9801),	-- Big Rocketeer: Bronze
+										ach(9803),	-- Big Rocketeer: Silver
+										ach(9805, {	-- Big Rocketeer: Gold
+											i(122125),	-- Race MiniZep (PET!)
+										}),
+									}),
+									sharedData({["crs"] = { 89736 }},{	-- Wanderluster
+										ach(9806),	-- Vagabond
+										ach(9807),	-- Big Wanderluster: Bronze
+										ach(9809),	-- Big Wanderluster: Silver
+										ach(9811, {	-- Big Wanderluster: Gold
+											i(122121),	-- Darkmoon Gazer (TOY!)
+										}),
+									}),{	-- Rewards
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+									}),
+							}),
+							q(37910, {	-- The Real Race
+								["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["isDaily"] = true,
+								["groups"] = appendAllGroups({},
+									sharedData({["crs"] = { 89732 }},{	-- Powermonger
+										ach(9780),	-- Go-Getter
+										ach(9781),	-- Powermonger: Bronze
+										ach(9783),	-- Powermonger: Silver
+										ach(9785, {	-- Powermonger: Gold
+											i(122120),	-- Gaze of the Darkmoon (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 90148 }},{	-- Racing Strider
+										ach(9756),	-- Darkmoon Racer Novice
+										ach(9759),	-- Darkmoon Racer Jockey
+										ach(9760),	-- Darkmoon Racer Leadfoot
+										ach(9761, {	-- Darkmoon Racer Roadhog
+											i(122129),	-- Fire-Eater Vial (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 89734 }},{	-- Rocketeer
+										ach(9770),	-- Blast Off!
+										ach(9769),	-- Rocketeer: Bronze
+										ach(9766),	-- Rocketeer: Silver
+										ach(9764, {	-- Rocketeer: Gold
+											i(122119),	-- Everlasting Darkmoon Firework (TOY!)
+										}),
+									}),
+									sharedData({["crs"] = { 89736 }},{	-- Wanderluster
+										ach(9786),	-- Wayfarer
+										ach(9787),	-- Wanderluster: Bronze
+										ach(9790),	-- Wanderluster: Silver
+										ach(9792, {	-- Wanderluster: Gold
+											i(122126),	-- Attraction Sign (TOY!)
+										}),
+									}),{	-- Rewards
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+									}),
+							}),
+							q(37819, {	-- Welcome to the Darkmoon Races
+								["qg"] = 74056,	-- Malle Earnhard
+								["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
+								["groups"] = {
+									ach(9755),	-- Darkmoon Race Enthusiast
+									-- #if AFTER 5.2.0
+									DARKMOON_GAME_PRIZE,
+									-- #else
+									DARKMOON_PRIZE_TICKET,
+									-- #endif
+								},
+							}),
+						}),
+					},
+				}),
 			},
 		}),
 		-- #endif
@@ -2931,20 +3058,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		n(QUESTS, {	-- TODO: Move into mini game section.
-			q(33756, {	-- Let's Keep Racing
-				["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-			}),
-			q(37868, {	-- More Big Racing!
-				["sourceQuest"] = 37911,	-- The Real Big Race
-				["qg"] = 90473,	-- Patti Earnhard
-				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-			}),
 			q(29455, {	-- Target: Turtle
 				["qg"] = 54485,	-- Jessica Rogers
 				["coord"] = { 51.5, 77.1, DARKMOON_ISLAND },
@@ -2980,109 +3093,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 			}),
-			q(37911, {	-- The Real Big Race
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["qg"] = 90473,	-- Patti Earnhard
-				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-				["groups"] = {
-					ach(9817, {	-- Big Powermonger: Gold
-						["crs"] = { 89732 },	-- Powermonger
-						["groups"] = {
-							i(122124),	-- Darkmoon Cannon
-							ach(9815),	-- Big Powermonger: Gold
-							ach(9813),	-- Big Powermonger: Gold
-							ach(9812),	-- Big Powermonger: Gold
-						},
-					}),
-					ach(9799, {	-- Big Race Roadhog
-						["crs"] = { 90148 },	-- Racing Strider
-						["groups"] = {
-							i(122128),	-- Checkered Flag
-							ach(9797),	-- Big Race Leadfoot
-							ach(9795),	-- Big Race Jockey
-							ach(9794),	-- Big Race Novice
-							ach(9793),	-- Big Race Enthusiast
-						},
-					}),
-					ach(9805, {	-- Big Rocketeer: Gold
-						["crs"] = { 89734 },	-- Rocketeer
-						["groups"] = {
-							i(122125),	-- Race MiniZep (PET!)
-							ach(9803),	-- Big Rocketeer: Gold
-							ach(9801),	-- Big Rocketeer: Gold
-							ach(9800),	-- Rocket Man
-						},
-					}),
-					ach(9811, {	-- Big Wanderluster: Gold
-						["crs"] = { 89736 },	-- Wanderluster
-						["groups"] = {
-							i(122121),	-- Darkmoon Gazer (TOY!)
-							ach(9809),	-- Big Wanderluster: Gold [Real Big Race -- R25]
-							ach(9807),	-- Big Wanderluster: Gold [Real Big Race -- R40]
-							ach(9806),	-- Big Wanderluster: Gold [Real Big Race -- R30]
-							ach(9819),	-- Darkmoon Like the Wind
-						},
-					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
-			q(37910, {	-- The Real Race
-				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["isDaily"] = true,
-				["groups"] = {
-					ach(9761, {	-- Darkmoon Racer Roadhog
-						["crs"] = { 90148 },	-- Racing Strider
-						["groups"] = {
-							i(122129),	-- Fire-Eater Vial (TOY!)
-							ach(9760),	-- Darkmoon Racer Leadfoot
-							ach(9759),	-- Darkmoon Racer Jockey
-							ach(9756),	-- Darkmoon Racer Novice
-						},
-					}),
-					ach(9785, {	-- Powermonger: Gold
-						["crs"] = { 89732 },	-- Powermonger
-						["groups"] = {
-							i(122120),	-- Gaze of the Darkmoon (TOY!)
-							ach(9783),	-- Powermonger: Silver
-							ach(9781),	-- Powermonger: Bronze
-							ach(9780),	-- Go-Getter
-						},
-					}),
-					ach(9764, {	-- Rocketeer: Gold
-						["crs"] = { 89734 },	-- Rocketeer
-						["groups"] = {
-							i(122119),	-- Everlasting Darkmoon Firework (TOY!)
-							ach(9766),	-- Rocketeer: Silver
-							ach(9769),	-- Rocketeer: Bronze
-							ach(9770),	-- Blast Off!
-						},
-					}),
-					ach(9792, {	-- Wanderluster: Gold
-						["crs"] = { 89736 },	-- Wanderluster
-						["groups"] = {
-							i(122126),	-- Attraction Sign (TOY!)
-							ach(9819),	-- Darkmoon Like the Wind
-							ach(9790),	-- Wanderluster: Silver
-							ach(9787),	-- Wanderluster: Bronze
-							ach(9786),	-- Wayfarer
-						},
-					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
 			q(29434, {	-- Tonk Commander
 				["qg"] = 54605,	-- Finaly Coolshot
 				["coord"] = { 50.7, 65.1, DARKMOON_ISLAND },
@@ -3097,19 +3107,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							}),
 						},
 					}),
-					-- #if AFTER 5.2.0
-					DARKMOON_GAME_PRIZE,
-					-- #else
-					DARKMOON_PRIZE_TICKET,
-					-- #endif
-				},
-			}),
-			q(37819, {	-- Welcome to the Darkmoon Races
-				["qg"] = 74056,	-- Malle Earnhard
-				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
-					ach(9755),	-- Darkmoon Race Enthusiast
 					-- #if AFTER 5.2.0
 					DARKMOON_GAME_PRIZE,
 					-- #else

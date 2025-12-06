@@ -41,3 +41,18 @@ fp(3214),	-- Quest Path 11347: 12.0 Z1 - Eversong - Teleporters - Tranquil Repos
 12.0.0.64499
 fp(3215),	-- Quest Path 11348: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Up - SJC
 fp(3216),	-- Quest Path 11349: 12.0 Z1 - Eversong - Teleporters - Moon Tower - Going Down - SJC
+12.0.0.64741
+fp(3218),	-- 12.0 Silvermoon Sunfury Spire Teleport Base
+fp(3219),	-- 12.0 Silvermoon Sunfury Spire Teleport Top
+fp(3220),	-- Quest Path 11370: 12.0 Z1 - Fairbreeze - Main Translocator - Going Up - SJC
+fp(3221),	-- Quest Path 11371: 12.0 Z1 - Fairbreeze - Main Translocator - Going Down - SJC
+fp(3222),	-- Quest Path 11372: 12.0 Z1 - Eversong - Teleporters - Fairbreeze West - A > B - SJC
+fp(3223),	-- Quest Path 11373: 12.0 Z1 - Eversong - Teleporters - Fairbreeze West - B > A - SJC
+fp(3224),	-- Quest Path 11374: 12.0 Z1 - Eversong - Teleporters - Fairbreeze East - A > B - SJC
+fp(3225),	-- Quest Path 11375: 12.0 Z1 - Eversong - Teleporters - Fairbreeze East - B > A - SJC
+fp(3226),	-- Quest Path 11376: 12.0 Z1 - Eversong - Teleporters - River Tower - Going Up - SJC
+fp(3227),	-- Quest Path 11377: 12.0 Z1 - Eversong - Teleporters - River Tower - Going Down - SJC
+fp(3228),	-- Quest Path 11378: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Up - SJC
+fp(3229),	-- Quest Path 11379: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Down - SJC
+fp(3230),	-- Quest Path 11380: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Up - SJC
+fp(3231),	-- Quest Path 11381: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Down - SJC

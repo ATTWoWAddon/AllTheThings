@@ -892,9 +892,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}, {	-- Honored
 							i(83845),	-- Design: Jade Panther (RECIPE!)
 							i(83830),	-- Design: Sunstone Panther (RECIPE!)
+							i(247732, { ["timeline"] = { ADDED_11_2_7 } }),	-- Lucky Hanging Lantern (DECOR!)
 						}, {	-- Revered
 							i(89222, {	-- Cloud Ring (TOY!)
 								["cost"] = 10000000,	-- 1,000g
+							}),
+							i(247730, {	-- Red Crane Kite (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = 8000000,	-- 800g
 							}),
 							i(83931),	-- Design: Ruby Panther (RECIPE!)
 							i(83932),	-- Design: Sapphire Panther (RECIPE!)

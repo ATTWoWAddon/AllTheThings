@@ -72,6 +72,12 @@
 15210@@@Challenger: Season 2
 2.5.4.44833
 15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+2.5.5.64616
+62036@@@[DNT] Raid Attunement Achieved - Karazhan
+62037@@@[DNT] Raid Attunement Achieved - Coilfang: Serpentshrine Cavern
+62038@@@[DNT] Raid Attunement Achieved - Tempest Keep
+62039@@@[DNT] Raid Attunement Achieved - The Battle for Mount Hyjal
+62040@@@[DNT] Raid Attunement Achieved - Black Temple
 3.0.1.8303
 1@@@Race/Level Achievement [PH]
 2@@@Class/Level Achievement [PH]
@@ -5217,6 +5223,33 @@
 61950@@@Scholomance: Platinum (TRACKER)
 61951@@@Siege of Niuzao Temple: Platinum (TRACKER)
 61952@@@Stormstout Brewery: Platinum (TRACKER)
+5.5.3.64530
+61962@@@Realm First! Challenge Conqueror: Platinum (Season 2)
+61963@@@Realm First! Challenge Conqueror: Platinum (Season 3)
+61967@@@Temple of the Jade Serpent: Platinum
+61968@@@Stormstout Brewery: Platinum
+61969@@@Mogu'shan Palace: Platinum
+61970@@@Shado-Pan Monastery: Platinum
+61971@@@Gate of the Setting Sun: Platinum
+61972@@@Scarlet Halls: Platinum
+61973@@@Scarlet Monastery: Platinum
+61974@@@Scholomance: Platinum
+61975@@@Siege of Niuzao Temple: Platinum
+61977@@@Stormstout Brewery: Platinum (TRACKER) (Season 3)
+61978@@@Mogu'shan Palace: Platinum (TRACKER) (Season 3)
+61979@@@Shado-Pan Monastery: Platinum (TRACKER) (Season 3)
+61980@@@Gate of the Setting Sun: Platinum (TRACKER) (Season 3)
+61981@@@Scarlet Halls: Platinum (TRACKER) (Season 3)
+61982@@@Scarlet Monastery: Platinum (TRACKER) (Season 3)
+61983@@@Scholomance: Platinum (TRACKER) (Season 3)
+61984@@@Siege of Niuzao Temple: Platinum (TRACKER) (Season 3)
+61985@@@Temple of the Jade Serpent: Platinum (TRACKER) (Season 3)
+61987@@@Challenge Conqueror: Platinum (Season 1)
+61990@@@Challenge Conqueror: Platinum (Season 2)
+61991@@@Challenge Conqueror: Platinum (Season 3)
+62055@@@The Mistwalker
+62059@@@Mistborne
+62060@@@Heir to the Mist
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -17601,3 +17634,55 @@
 62184@@@Prey: Breaking the Blade Nightmare)
 62222@@@Abyss Anglers: The Amani Way
 62223@@@Alchemy-on-Demand
+12.0.0.64741
+40016@@@Improving on History
+40018@@@Unleashed Monstrosities
+41806@@@Breaching the Voidstorm
+61467@@@Lorewalking: The Elves of Quel'Thalas
+61520@@@Explore Harandar
+61522@@@Skyriding Glyphs: Brightwing Estate
+61524@@@Skyriding Glyphs: Goldenmist Village
+61581@@@Zul'Aman Glyph Hunter
+61635@@@Voidspire: Weapons of the Void
+61636@@@Voidspire: Fanatics of the Light
+61637@@@Voidspire: Crown of the Cosmos
+61855@@@Explore Eversong Woods
+61856@@@Explore Zul'Aman
+61857@@@Explore Voidstorm
+61916@@@Rage of the Ren'dorei
+62230@@@Die in a Delve
+62232@@@Blacksmithing-on-Demand
+62233@@@Enchanting-on-Demand
+62234@@@Engineering-on-Demand
+62235@@@Inscription-on-Demand
+62236@@@Jewelcrafting-on-Demand
+62237@@@Leatherworking-on-Demand
+62238@@@Tailoring-on-Demand
+62239@@@Dedicated to the Craft: Alchemy
+62240@@@Dedicated to the Craft: Blacksmithing
+62241@@@Dedicated to the Craft: Enchanting
+62242@@@Dedicated to the Craft: Engineering
+62243@@@Dedicated to the Craft: Inscription
+62244@@@Dedicated to the Craft: Jewelcrafting
+62245@@@Dedicated to the Craft: Leatherworking
+62246@@@Dedicated to the Craft: Tailoring
+62247@@@Herbalism-on-Demand
+62248@@@Mining-on-Demand
+62249@@@Skinning-on-Demand
+62250@@@Dedicated to the Craft: Herbalism
+62251@@@Dedicated to the Craft: Mining
+62252@@@Dedicated to the Craft: Skinning
+62256@@@Yelling into the Voidstorm
+62260@@@That's Aln, Folks!
+62261@@@Forever Song
+62262@@@Silvermoon Court Champion
+62263@@@Amani Tribe Champion
+62264@@@Hara'ti Champion
+62265@@@The Singularity Champion
+62266@@@Abundance: An Acolyte no Longer
+62267@@@A Most Violent Loa
+62268@@@Abundance: Professionals Only
+62269@@@Altar of Blessings: Amani Curious
+62270@@@Altar of Blessings: One for Altar
+62271@@@Abyss Anglers: Trench Berserker
+62272@@@Abyss Anglers: Certified Depthdiver

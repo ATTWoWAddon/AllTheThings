@@ -976,3 +976,21 @@
 691@@@Treasure Seeker %s
 12.0.0.64499
 740@@@Loa-speaker %s
+12.0.0.64741
+556@@@Spirebane %s
+676@@@%s, Famed Slayer of the Voidspire
+678@@@Dawnbringer %s
+740@@@Loa-Speaker %s
+741@@@Thalassian Alchemist %s
+742@@@Thalassian Blacksmith %s
+743@@@Thalassian Enchanter %s
+744@@@Thalassian Engineer %s
+745@@@Thalassian Scribe %s
+746@@@Thalassian Jewelcrafter %s
+747@@@Thalassian Leatherworker %s
+748@@@Thalassian Tailor %s
+750@@@Thalassian Miner %s
+751@@@Thalassian Herbalist %s
+752@@@Thalassian Skinner %s
+753@@@%s, the Singular
+754@@@Dustlord %s

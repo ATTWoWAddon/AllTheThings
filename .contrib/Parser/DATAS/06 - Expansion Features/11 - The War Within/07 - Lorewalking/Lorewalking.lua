@@ -237,15 +237,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				header(HEADERS.Quest, 93929, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The War Within Recap
 					q(93929, {	-- The War Within Recap
 						["lvl"] = 71,
+						["isBreadcrumb"] = true,
 					}),
 					q(91843, {	-- Recap: The Harbinger
 						["qg"] = 248956,	-- Tome of History
 						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["isRepeatable"] = true,
 					}),
 					q(91864, {	-- Recap: Fractured Visions
 						["sourceQuest"] = 91843,	-- Recap: The Harbinger
 						["qg"] = 248948,	-- Tome of History
 						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["isRepeatable"] = true,
 						["groups"] = {
 							i(254323, {	-- Worldsoul Satchel
 								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
@@ -259,6 +262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
 							{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
 						},
+						["isRepeatable"] = true,
 						["groups"] = {
 							i(254324, {	-- Worldsoul Satchel
 								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
@@ -269,6 +273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["sourceQuest"] = 91868,	-- Recap: Shadowy Pursuits
 						["qg"] = 248948,	-- Tome of History
 						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["isRepeatable"] = true,
 						["groups"] = {
 							i(254325, {	-- Worldsoul Satchel
 								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
@@ -280,6 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["sourceQuest"] = 84967,	-- The Shadowguard Shattered
 						["qg"] = 231128,	-- Locus-Walker
 						["coord"] = { 37.7, 74.8, KARESH_TAZAVESH },
+						["isRepeatable"] = true,
 					}),
 				})),
 			}),

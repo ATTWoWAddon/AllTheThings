@@ -10723,3 +10723,8 @@
 16826@@@Behemoth's Rise
 16855@@@Voidscar Arena
 16860@@@The Great Sea
+12.0.0.64741
+2037@@@Quel'Thalas
+16601@@@The Sunwell
+16863@@@Quiet Cavern
+16864@@@Consumptor Cave

@@ -2888,3 +2888,101 @@
 18800@@@[DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll02.m2
 18801@@@[DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack01.m2
 18802@@@[DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack02.m2
+12.0.0.64741
+1148@@@Ritual-Cursed Sarcophagus
+1159@@@Sin’dorei Honor Stone
+1160@@@Diamond Honor Stone
+1442@@@Silvermoon Sundial
+1489@@@Majestic Lightwood Table
+1908@@@Ornate Silvermoon Candelabra
+4042@@@Trueshot Skeletal Dragon Head
+4839@@@Nesingwary Mounted Shoveltusk Head
+4841@@@Nesingwary Mounted Elk Head
+5129@@@[DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask01.m2 (FG)
+7689@@@Razorwind Banner Pelt
+7825@@@Lush Garden Trellis
+7826@@@Colorful White Noblegarden Egg
+7827@@@Colorful Blue Noblegarden Egg
+7828@@@Colorful Purple Noblegarden Egg
+7832@@@Crimson Crystal Column
+7833@@@Crimson Crystal Core
+7834@@@Crimson Crystal Fragment
+8872@@@Eversong Feast Platter
+8874@@@Eversong Dessert Platter
+8875@@@Goldenmist Grapes
+9065@@@Lush Garden Fungal Basin
+9422@@@Thalassian Academy Dictation Device
+9443@@@Lush Garden Butterfly Sconce
+10858@@@Zul’Aman Ancestral Fountain
+11323@@@Amani Crafter's Tool Rack
+11328@@@Banner of the Amani Tribe
+11470@@@Silvermoon Energy Focus
+11940@@@Lush Garden Gnome-Like Statue
+12140@@@Simple Bone-Tied Charm
+12141@@@Windmark Tribal Charm
+12142@@@Amani Dreamer's Charm
+12143@@@Barebone Rope Charm
+12171@@@Lush Garden Fungal Chair
+12223@@@Lush Garden Fungal Fountain
+14583@@@Hearthlight Armillary
+14591@@@Tenebrous Ren'dorei Armillary
+14602@@@Cosmic Kettle
+14603@@@Cosmic Chalice
+14631@@@Smoldering Energy Forge
+14800@@@Tazaveshi Hookah
+14838@@@Beloved Lion Plushie
+14839@@@Beloved Wolf Plushie
+15062@@@Silvermoon Curio Shelves
+15071@@@Sturdy Void Elf Crate
+15140@@@Spring Blossom Tree
+15141@@@Spring Blossom Pond
+15260@@@Sturdy Void Elf Trunk
+15478@@@Firm Haranir Pillow
+15480@@@Warm Haranir Blanket
+15483@@@Sin’dorei Storage Jar
+15484@@@Woodblock Stool
+15487@@@Zul'Aman Forest Hammock
+15489@@@Three-Tier Zul'Aman Shelf
+15490@@@Amani Trophy Frame
+15492@@@Zul’Aman Armament Rest
+15572@@@Amani War Drum
+15573@@@Colossal Amani Stone Visage
+15579@@@Cosmic Barrel
+15597@@@Ornate Void Elf Banner
+15743@@@Skyweave Amani Tapestry
+15744@@@Greenvine Amani Tapestry
+15745@@@Earthhide Amani Tapestry
+15768@@@Sturdy Void Elf Barricade
+15851@@@Amani Slate Bench
+15891@@@Sturdy Void Elf Trunk Open
+15894@@@Cosmic Traveler's Satchel
+16092@@@Zul’Aman Flame Cradle
+16097@@@Void Elf Bedroll
+17628@@@March on Quel'Danas Vanquisher's Aureate Trophy
+17629@@@Dreamrift Vanquisher's Aureate Trophy
+17630@@@Voidspire Vanquisher's Aureate Trophy
+18396@@@March on Quel'Danas Vanquisher's Gleaming Trophy
+18397@@@Dreamrift Vanquisher's Gleaming Trophy
+18398@@@Voidspire Vanquisher's Gleaming Trophy
+18484@@@Crucible Votive Rack
+18617@@@Ornate Cosmic Table
+18800@@@Void Elf Bedroll Open
+18825@@@[DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_Spear01.m2
+18826@@@[DNT] [AUTOGEN] 12PH_Leg_6HU_Barracks_WoodBenchSmall.M2
+18897@@@[DNT] [AUTOGEN] 12PH_Monk_Banner_Standing01.M2
+18898@@@[DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Bookshelf01_filled.M2
+18959@@@[DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Fountain02.M2
+19011@@@[DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2
+19159@@@[DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay02.M2
+19197@@@[DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa01_Silver.M2
+19198@@@[DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru01_Silver.M2
+19200@@@[DNT] [AUTOGEN] 12BE_BloodElf_Navigation_SecretDoor03.M2
+19215@@@[DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay03.M2
+19216@@@[DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay04.M2
+19217@@@[DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay05.M2
+19218@@@[DNT] [AUTOGEN] 12PH_Elwynn_Lighting_Sconce01.M2
+19219@@@[DNT] [AUTOGEN] 12PH_Elwynn_Lighting_Sconce02.M2
+19229@@@Endless Codex of Blooming Light
+19231@@@Endless Codex of Nature's Grace
+19234@@@Endless Codex of the Voidtouched
+19252@@@[DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2

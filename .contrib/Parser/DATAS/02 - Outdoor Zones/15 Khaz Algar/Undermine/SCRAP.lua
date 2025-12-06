@@ -159,6 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				FromSCRAP(n(REWARDS, {
 					n(EVENT_COMPLETION, {	-- Can drop from the reward chests but would be obtuse to list under each one.
 						currency(3226),	-- Market Research
+						i(245315, { ["timeline"] = { ADDED_11_2_7 } }),	-- Trashfire Barrel (DECOR!)
 					}),
 					currency(3218),	-- Empty Kaja'Cola Can
 					currency(3220, {	-- Vintage Kaja'Cola Can
@@ -180,10 +181,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(233246, {	-- Gunk-Covered Thingy
 						["description"] = "Requires the 'Scrappy S.C.R.A.P.per III' perk unlocked by reaching Renown 11 with The Cartels of Undermine.\n\nThen you have a chance to loot them from the progress-based reward containers that will appear for participating players when the 2-minute timer of their actual S.C.R.A.P. job ends.",
 						["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 11 },
-					}),
-					i(245315, {	-- Trashfire Barrel (DECOR!)
-						["description"] = "Can randomly drop while scraping.",
-						["timeline"] = { ADDED_11_2_7 },
 					}),
 				})),
 				n(VENDORS, {

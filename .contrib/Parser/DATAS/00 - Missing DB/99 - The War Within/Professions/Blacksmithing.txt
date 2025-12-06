@@ -110,6 +110,8 @@ r(1276110),	-- Gilded Silvermoon Hanger
 r(1276111),	-- Ren'dorei Anvil
 r(1276112),	-- Masterwork Crafting Hammer
 r(1276113),	-- Ornate Crafter's Tongs
+12.0.0.64741
+r(1229602),	-- Sun-Blessed Sickle
 
 
 
@@ -118,9 +120,6 @@ Missing in Blacksmithing
 
 11.2.7.63642
 r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
-11.2.7.64044
-r(1272614),	-- Dalaran Sun Sconce
-r(1272662),	-- Dalaran Sewer Gate
 12.0.0.63534
 r(471004),	-- Midnight Blacksmithing
 r(471041),	-- Recraft Equipment
@@ -231,3 +230,5 @@ r(1276110),	-- Gilded Silvermoon Hanger
 r(1276111),	-- Ren'dorei Anvil
 r(1276112),	-- Masterwork Crafting Hammer
 r(1276113),	-- Ornate Crafter's Tongs
+12.0.0.64741
+r(1229602),	-- Sun-Blessed Sickle

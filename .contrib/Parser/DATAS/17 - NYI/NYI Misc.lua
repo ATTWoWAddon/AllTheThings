@@ -605,7 +605,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(181755),	-- Droman Aliothe Happy PH Reward
 			i(181754),	-- Droman Aliothe Very Happy PH Reward
 			i(180423),	-- Duchess Helveera
-			i(176878),	-- Dulled Memento
 			i(179377),	-- Elegant Diary Key
 			i(170479),	-- Elevator Key: Level 5
 			i(170480),	-- Elevator Key: Level 10
@@ -1225,7 +1224,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(193057),	-- 10.0 Placeholder Enchanting Crystal
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(200964),	-- Alliance Dueling Flag
-			i(192604),	-- Ancient Lantern
 			i(192684),	-- Ancient War Tusk
 			i(201175),	-- Arakkoa Ritual Feather
 			i(193448),	-- Arcane Cell

@@ -836,9 +836,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127586 },	-- Joma
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(152849),	-- Pulsating Extract (QI!)
-				},
+				["groups"] = { i(152849) },	-- Pulsating Extract (QI!)
 			}),
 			q(48089, {	-- Mountain Sounds
 				["sourceQuests"] = { 48087 },	-- Equine Retrieval
@@ -846,6 +844,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(252392, { ["timeline"] = { ADDED_11_2_7 } }), 	-- Admiral's Chandelier (DECOR!)
 					i(153357),	-- Battlehorn of the Mountain (PQI!)
 				},
 			}),

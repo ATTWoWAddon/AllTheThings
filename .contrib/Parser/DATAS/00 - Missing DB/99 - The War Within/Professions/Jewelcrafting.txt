@@ -16,31 +16,6 @@ r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 10.0.0.44649
 r(382975),	-- Legion Prospecting
-11.2.7.63642
-r(1259369),	-- Valdrakken Gilded Throne
-r(1259384),	-- Valdrakken Fence
-r(1259386),	-- Valdrakken Fencepost
-r(1260096),	-- Octagonal Ochre Window
-r(1260172),	-- Gundargaz Candelabra
-r(1260492),	-- Zandalari Skullfire Lamp
-r(1260501),	-- Small Mask of Bwonsamdi, Loa of Graves
-r(1260757),	-- Shaded Suramar Window
-r(1261242),	-- Jade Temple Dragon Fountain
-r(1261243),	-- Pandaren Stone Wall
-r(1261244),	-- Pandaren Stone Post
-r(1261305),	-- Smoke Sconce
-r(1261659),	-- Ironforge Chandelier
-r(1261667),	-- Blackrock Lamppost
-r(1262357),	-- Smoke Lamp
-r(1263351),	-- Suramar Jeweler's Assortment
-r(1263577),	-- Kirin Tor Glass Table
-r(1263605),	-- Kirin Tor Sun Chandelier
-r(1263815),	-- Shattrath Lamppost
-r(1263817),	-- Shattrath Sconce
-11.2.7.64011
-r(1269496),	-- Draenei Crystal Chandelier
-r(1269502),	-- Kyrian Floating Lamp
-r(1269504),	-- Maldraxxian Runic Tablet
 12.0.0.63534
 r(471011),	-- Midnight Jewelcrafting
 r(471045),	-- Recraft Equipment
@@ -80,7 +55,7 @@ r(1230470),	-- Powerful Eversong Diamond
 r(1230471),	-- Telluric Eversong Diamond
 r(1230472),	-- Stoic Eversong Diamond
 r(1230473),	-- Indecipherable Eversong Diamond
-r(1230474),	-- Kalidescopic Prism
+r(1230474),	-- Kaleidoscopic Prism \\ Kalidescopic Prism
 r(1230475),	-- Sin'dorei Lens
 r(1230476),	-- Sunglass Vial
 r(1230477),	-- Prismatic Focusing Iris
@@ -116,7 +91,7 @@ r(1242461),	-- Mage-Eye Precision Loupes
 r(1242462),	-- Thalassian Scribe's Crystalline Lens
 r(1242463),	-- Flawless Text Scrutinizers
 r(1242464),	-- Attuned Thalassian Rune-Prism
-r(1246889),	-- Gilded Thalassian Armillary
+r(1246889),	-- Tenebrous Ren'dorei Armillary \\ Gilded Thalassian Armillary
 r(1246891),	-- Bejeweled Sin'dorei Lyre
 r(1246892),	-- Resplendent Highborne Statue
 r(1246893),	-- Miniature Replica Haranir Mural
@@ -159,31 +134,6 @@ r(248937),	-- Empyrial Circlet
 r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
-11.2.7.63642
-r(1259369),	-- Valdrakken Gilded Throne
-r(1259384),	-- Valdrakken Fence
-r(1259386),	-- Valdrakken Fencepost
-r(1260096),	-- Octagonal Ochre Window
-r(1260172),	-- Gundargaz Candelabra
-r(1260492),	-- Zandalari Skullfire Lamp
-r(1260501),	-- Small Mask of Bwonsamdi, Loa of Graves
-r(1260757),	-- Shaded Suramar Window
-r(1261242),	-- Jade Temple Dragon Fountain
-r(1261243),	-- Pandaren Stone Wall
-r(1261244),	-- Pandaren Stone Post
-r(1261305),	-- Smoke Sconce
-r(1261659),	-- Ironforge Chandelier
-r(1261667),	-- Blackrock Lamppost
-r(1262357),	-- Smoke Lamp
-r(1263351),	-- Suramar Jeweler's Assortment
-r(1263577),	-- Kirin Tor Glass Table
-r(1263605),	-- Kirin Tor Sun Chandelier
-r(1263815),	-- Shattrath Lamppost
-r(1263817),	-- Shattrath Sconce
-11.2.7.64011
-r(1269496),	-- Draenei Crystal Chandelier
-r(1269502),	-- Kyrian Floating Lamp
-r(1269504),	-- Maldraxxian Runic Tablet
 12.0.0.63534
 r(471011),	-- Midnight Jewelcrafting
 r(471045),	-- Recraft Equipment
@@ -223,7 +173,7 @@ r(1230470),	-- Powerful Eversong Diamond
 r(1230471),	-- Telluric Eversong Diamond
 r(1230472),	-- Stoic Eversong Diamond
 r(1230473),	-- Indecipherable Eversong Diamond
-r(1230474),	-- Kalidescopic Prism
+r(1230474),	-- Kaleidoscopic Prism \\ Kalidescopic Prism
 r(1230475),	-- Sin'dorei Lens
 r(1230476),	-- Sunglass Vial
 r(1230477),	-- Prismatic Focusing Iris
@@ -259,7 +209,7 @@ r(1242461),	-- Mage-Eye Precision Loupes
 r(1242462),	-- Thalassian Scribe's Crystalline Lens
 r(1242463),	-- Flawless Text Scrutinizers
 r(1242464),	-- Attuned Thalassian Rune-Prism
-r(1246889),	-- Gilded Thalassian Armillary
+r(1246889),	-- Tenebrous Ren'dorei Armillary \\ Gilded Thalassian Armillary
 r(1246891),	-- Bejeweled Sin'dorei Lyre
 r(1246892),	-- Resplendent Highborne Statue
 r(1246893),	-- Miniature Replica Haranir Mural

@@ -259,7 +259,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 					}),
-
 					i(198824, {	-- Duskwing Ohuna (MOUNT!)
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 1000 }},
 					}),
@@ -274,6 +273,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					i(209944, {	-- Friendsurge Defenders (TOY!)
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+					}),
+					i(255673, {	-- Moonclasp Satchel (DEDOR!)
+						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
 			}),

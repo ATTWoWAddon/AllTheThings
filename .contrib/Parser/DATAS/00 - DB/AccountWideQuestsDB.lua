@@ -2104,6 +2104,7 @@ local AccountWideQuestsDB = {
 	91969,	-- Time to Decorate
 	92031,	-- Meet the Vandals
 	92078,	-- A New Recipe!
+	92437,	-- Decor Treasure Hunt
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92573,	-- Sturdy Chest
@@ -2111,14 +2112,116 @@ local AccountWideQuestsDB = {
 	92628,	-- ??
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
+	92733,	-- Triggered after entering house
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
 	92863,	-- Ensemble: Triumvirate High Guard's Battlegear
 	92889,	-- Arsenal: Odyn's Spears
+	92961,	-- Decor Treasure Hunt
+	92962,	-- Decor Treasure Hunt
+	92963,	-- Decor Treasure Hunt
+	92964,	-- Decor Treasure Hunt
+	92965,	-- Decor Treasure Hunt
+	92966,	-- Decor Treasure Hunt
+	92967,	-- Decor Treasure Hunt
+	92968,	-- Decor Treasure Hunt
+	92969,	-- Decor Treasure Hunt
+	92970,	-- Decor Treasure Hunt
+	92971,	-- Decor Treasure Hunt
+	92972,	-- Decor Treasure Hunt
+	92973,	-- Decor Treasure Hunt
+	92974,	-- Decor Treasure Hunt
+	92975,	-- Decor Treasure Hunt
+	92976,	-- Decor Treasure Hunt
+	92977,	-- Decor Treasure Hunt
+	92978,	-- Decor Treasure Hunt
+	92979,	-- Decor Treasure Hunt
+	92980,	-- Decor Treasure Hunt
+	92981,	-- Decor Treasure Hunt
+	92982,	-- Decor Treasure Hunt
+	92983,	-- Decor Treasure Hunt
+	92984,	-- Decor Treasure Hunt
+	92985,	-- Decor Treasure Hunt
+	92986,	-- Decor Treasure Hunt
+	92987,	-- Decor Treasure Hunt
+	92988,	-- Decor Treasure Hunt
+	92989,	-- Decor Treasure Hunt
+	92990,	-- Decor Treasure Hunt
+	92991,	-- Decor Treasure Hunt
+	92992,	-- Decor Treasure Hunt
+	92993,	-- Decor Treasure Hunt
+	92994,	-- Decor Treasure Hunt
+	92995,	-- Decor Treasure Hunt
+	92996,	-- Decor Treasure Hunt
+	92997,	-- Decor Treasure Hunt
+	92998,	-- Decor Treasure Hunt
+	92999,	-- Decor Treasure Hunt
+	93000,	-- Decor Treasure Hunt
+	93001,	-- Decor Treasure Hunt
+	93002,	-- Decor Treasure Hunt
+	93003,	-- Decor Treasure Hunt
+	93004,	-- Decor Treasure Hunt
+	93005,	-- Decor Treasure Hunt
+	93006,	-- Decor Treasure Hunt
+	93007,	-- Decor Treasure Hunt
+	93008,	-- Decor Treasure Hunt
+	93009,	-- Decor Treasure Hunt
 	93033,	-- Triggers when you spawn in Bazaar for the first time [Remix: Legion]
 	93057,	-- A House For You
+	93073,	-- Decor Treasure Hunt
+	93074,	-- Decor Treasure Hunt
+	93075,	-- Decor Treasure Hunt
+	93077,	-- Decor Treasure Hunt
+	93078,	-- Decor Treasure Hunt
+	93079,	-- Decor Treasure Hunt
+	93080,	-- Decor Treasure Hunt
+	93081,	-- Decor Treasure Hunt
+	93082,	-- Decor Treasure Hunt
+	93083,	-- Decor Treasure Hunt
+	93084,	-- Decor Treasure Hunt
+	93085,	-- Decor Treasure Hunt
+	93087,	-- Decor Treasure Hunt
+	93088,	-- Decor Treasure Hunt
+	93091,	-- Decor Treasure Hunt
+	93097,	-- Decor Treasure Hunt
+	93098,	-- Decor Treasure Hunt
+	93099,	-- Decor Treasure Hunt
+	93100,	-- Decor Treasure Hunt
+	93101,	-- Decor Treasure Hunt
+	93102,	-- Decor Treasure Hunt
+	93103,	-- Decor Treasure Hunt
+	93104,	-- Decor Treasure Hunt
+	93105,	-- Decor Treasure Hunt
+	93106,	-- Decor Treasure Hunt
+	93107,	-- Decor Treasure Hunt
+	93108,	-- Decor Treasure Hunt
+	93109,	-- Decor Treasure Hunt
+	93110,	-- Decor Treasure Hunt
+	93111,	-- Decor Treasure Hunt
+	93115,	-- Decor Treasure Hunt
+	93131,	-- Decor Treasure Hunt
+	93132,	-- Decor Treasure Hunt
+	93133,	-- Decor Treasure Hunt
+	93134,	-- Decor Treasure Hunt
+	93135,	-- Decor Treasure Hunt
+	93136,	-- Decor Treasure Hunt
+	93137,	-- Decor Treasure Hunt
+	93138,	-- Decor Treasure Hunt
+	93139,	-- Decor Treasure Hunt
+	93140,	-- Decor Treasure Hunt
+	93141,	-- Decor Treasure Hunt
+	93142,	-- Decor Treasure Hunt
+	93143,	-- Decor Treasure Hunt
+	93147,	-- Decor Treasure Hunt
+	93148,	-- Decor Treasure Hunt
+	93149,	-- Decor Treasure Hunt
+	93150,	-- Decor Treasure Hunt
+	93151,	-- Decor Treasure Hunt
+	93152,	-- Decor Treasure Hunt
 	94210,	-- Feathering the Nest
 	94379,	-- This Old Hearth
+	94415,	-- Plumbing the Void
+	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
 	-- #ENDIF
 }

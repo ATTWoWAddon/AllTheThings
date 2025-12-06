@@ -96,4 +96,29 @@ do
 
 		app.SearchAndOpen("decor:"..decorID)
 	end)
+	app.AddEventRegistryCallback("HousingCatalogEntry.TooltipCreated", function(val1, entryFrame, tooltip)
+		-- Debug
+		-- app.PrintDebug(val1, entryFrame, tooltip)
+		-- local args = { ... }
+		-- for i = 1, #args do
+			-- app.PrintDebug(i, args[i])
+			-- if type(args[i]) == "table" then
+			-- 	app.PrintTable(args[i])
+			-- end
+		-- end
+
+		if not entryFrame then return end
+
+		local entryInfo = entryFrame.entryInfo
+		if not entryInfo then return end
+
+		local entryID = entryInfo.entryID
+		if not entryID then return end
+
+		local decorID = entryID.recordID
+		if not decorID then return end
+
+		-- Attach ATT info to Housing Catalog tooltips
+		app.ForceAttachTooltip(tooltip, {type="decor", id=decorID})
+	end)
 end

@@ -2049,6 +2049,9 @@
 258710@@@Suen
 5.5.3.64400
 248495@@@Smoldering Valor
+5.5.3.64530
+259419@@@Xuen
+259429@@@[PH] Charity Construction Dog
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -24120,3 +24123,29 @@
 259103@@@Zul'jarra
 259153@@@Soridormi
 259222@@@Zul'jarra
+12.0.0.64741
+241981@@@Quel'Thalas Mage
+246004@@@Cauldron of Sin'dorei Flasks |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+246105@@@Cauldron of Sin'dorei Flasks |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+246112@@@Voidlight Potion Cauldron |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+246117@@@Voidlight Potion Cauldron |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+258242@@@Antoran Inquisitor
+259311@@@Zul'jarra
+259313@@@Akil'zon
+259341@@@Scalecommander Azurathel
+259344@@@Garona Halforcen
+259399@@@Alleria Windrunner
+259406@@@Grand Artificer Romuul
+259583@@@Amani People
+259693@@@Voidwalker
+259694@@@Sunwell Magus
+259698@@@Sunwell Guard
+259716@@@Riftglaive Blackstar
+259718@@@Icy Familiar
+259727@@@Gnarla
+259728@@@Sunwing Hatchling
+259736@@@Mor'duun
+259756@@@Twilight Ogre Directional Sound Cue
+259821@@@Sound Stalker - 12.0 Raid - Voidspire - Boss 1 - March of the Endless
+259830@@@Silvermoon's Arcane Defender
+259831@@@Arcanovoid Construct

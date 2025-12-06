@@ -1114,6 +1114,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(87312, {	-- Vora Strongarm <Bartender>
 							["races"] = HORDE_ONLY,
+							["crs"] = { 87300 },	-- Vora Strongarm <Bartender> (lvl 3 Inn)
 							["groups"] = { i(239162) },	-- Wooden Mug (DECOR!)
 						}),
 					}),

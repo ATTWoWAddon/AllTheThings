@@ -424,6 +424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(245520, {	-- Gilnean Celebration Keg (DECOR!)
 							["sourceAchievement"] = 19719,	-- Reclamation of Gilneas
+							["races"] = WORGEN,
 							["cost"] = 1500000,	-- 150g
 						}),
 						i(245617, {	-- Gilnean Stocks (DECOR!)

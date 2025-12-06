@@ -1,62 +1,21 @@
 11.1.0.58221
 pet(4670),	-- Hermes
 pet(4671),	-- Cauldrone
+pet(4674),	-- Dosh
+pet(4675),	-- FO-MO Mark II
 11.1.5.59571
 pet(4761),	-- Pascal the Wonder Pup
 pet(4792),	-- Ada the Sweetest
 11.2.0.61476
 pet(4824),	-- Baby Karesh Fox - Orange
-pet(4830),	-- Rhay'Dahr \\ Observer, Baby (Green)
 pet(4837),	-- Worm, Cosmic - Critter (Red)
 12.0.0.63534
-pet(4803),	-- Niblet
-pet(4874),	-- Akil Fledgling
-pet(4881),	-- Purple Swamp Leech
 pet(4887),	-- Dundun
-pet(4888),	-- Naloki
-pet(4889),	-- Nether Familiar
-pet(4891),	-- Wrathful Wyrm
 pet(4905),	-- [DNT] Baby Amazard (Red)
-pet(4906),	-- Scruffbeak \\ [DNT] Baby Amani Eagle (Grey)
-pet(4910),	-- Do, child of Filo \\ Do, child of Fi'lo
-pet(4914),	-- Chillcrawler
-pet(4928),	-- Dragonhawk Munchkin
-pet(4929),	-- Munchy \\ Vermillion Grovecrawler
-pet(4930),	-- Lil' Preyseeker
-pet(4942),	-- Distorted Memory
 12.0.0.63724
 pet(4945),	-- Aud'rei III
-pet(4946),	-- Linda the Lucky
-pet(4950),	-- Immature Behemoth \\ Preyseeker's Immature Behemoth
-pet(4951),	-- Bubbly Snapling
-pet(4952),	-- Blitzcreek
-pet(4953),	-- Sporbie
-pet(4954),	-- Ziorg'pharon
-pet(4955),	-- Kreepah'zoyd
-pet(4956),	-- Spormilian
-pet(4957),	-- Lost Star
-pet(4958),	-- Ominous Domanus \\ Ominous Dominus
-pet(4959),	-- Hexed Bunny
-pet(4960),	-- Treja'saka \\ Saka'saka
-pet(4961),	-- Nibblesworth
-12.0.0.63854
-pet(4963),	-- Grumpy Mandrake
-pet(4964),	-- Plump Mandrake
-pet(4965),	-- Chirpy Mandrake
-pet(4966),	-- Screechy Mandrake
-pet(4967),	-- Gortham
-pet(4971),	-- Luma
-pet(4972),	-- Willie
-12.0.0.63967
-pet(4975),	-- Razeshi C.
-pet(4977),	-- Emberwing Hatchling
-12.0.0.64124
-pet(4981),	-- Nova \\ [PH] Black Baby Hawkstrider
-pet(4982),	-- Flicker \\ [DNT] Baby Eversong Lynx (Black)
-pet(4983),	-- Kai
-pet(4984),	-- Medusa \\ [PH] Purple Siphoid
-12.0.0.64228
-pet(4985),	-- Princess Bloodshed
+12.0.0.64741
+pet(5003),	-- Sunwing Hatchling
 
 
 
@@ -65,3 +24,5 @@ Missing in PetDB.lua
 
 12.0.0.63534
 pet(4795),	-- Voidcrawler
+12.0.0.64741
+pet(5003),	-- Sunwing Hatchling

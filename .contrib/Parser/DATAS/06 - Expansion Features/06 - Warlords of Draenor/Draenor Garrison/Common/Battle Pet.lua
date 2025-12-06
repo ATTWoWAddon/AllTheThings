@@ -66,7 +66,7 @@ root(ROOTS.ExpansionFeatures,
 								91363,	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
 								91364,	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 							},
-							["coord"] = { 32.6, 39.8, FROSTWALL },
+							["coord"] = { 33.3, 42.9, FROSTWALL },	-- level 3
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone

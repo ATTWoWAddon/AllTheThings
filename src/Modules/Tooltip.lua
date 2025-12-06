@@ -844,6 +844,8 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		[Enum_TooltipDataType.CompanionPet] = "speciesID",
 		[Enum_TooltipDataType.Currency] = "currencyID",
 		[Enum_TooltipDataType.InstanceLock] = "instanceID",
+		-- temp?
+		decor = "decorID",
 	};
 	-- Currently, ATT has no desired handling for these types, and most instances of them are already
 	-- ignored via GetOwner() check. But we can avoid that sooner since the tooltip type is provided
@@ -1089,6 +1091,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				end
 				return true;
 			end
+			-- app.PrintDebug("AttachTooltip-No Search",ttType,ttId)
 		end
 		-- app.PrintDebug("AttachTooltip-Return");
 	end
@@ -1100,6 +1103,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
 	end);
+	app.ForceAttachTooltip = AttachTooltip
 else
 	-- Pre-10.0.2 (Legacy)
 	local function AttachTooltip(self)

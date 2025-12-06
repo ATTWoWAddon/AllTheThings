@@ -977,6 +977,7 @@ app.ThingKeys = {
 	titleID = true,
 	campsiteID = true,
 	decorID = true,
+	garrisonbuildingID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
 };
@@ -3175,7 +3176,7 @@ customWindowUpdates.NWP = function(self, force)
 		end
 		local NWPwindow = {
 			text = L.NEW_WITH_PATCH,
-			icon = app.asset("WindowIcon_RWP"),
+			icon = app.asset("Interface_Newly_Added"),
 			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
 			back = 1,
@@ -3203,7 +3204,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 	local BFA = {80001,80100,80105,80200,80205,80300,80307}
 	local SL = {90001,90002,90005,90100,90105,90200,90205,90207}
 	local DF = {100000,100002,100005,100007,100100,100105,100107,100200,100205,100206,100207}
-	local TWW = {110000,110002,110005,110007,110100,110105,110107,110200}
+	local TWW = {110000,110002,110005,110007,110100,110105,110107,110200,110205,110207}
 
 	-- Locals
 	local param = {}
@@ -3370,7 +3371,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 		end
 		local AWPwindow = {
 			text = L.ADDED_WITH_PATCH,
-			icon = 135769,
+			icon = app.asset("Interface_Newly_Added"),
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
 			back = 1,
@@ -4124,7 +4125,7 @@ customWindowUpdates.RWP = function(self, force)
 		end
 		self.initialized = true;
 		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
-			["icon"] = app.asset("WindowIcon_RWP"),
+			["icon"] = app.asset("Interface_Future_Unobtainable"),
 			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			["visible"] = true,
 			["back"] = 1,

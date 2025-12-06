@@ -114,7 +114,7 @@ namespace ATT.FieldTypes
                     // add the provider data into the provider object
                     if (providerObj[1].TryConvert(out decimal id))
                     {
-                        // need to track 
+                        // need to track
                         if (!HasData && providerType == "i")
                         {
                             FirstItemProvider = id;
@@ -209,51 +209,54 @@ namespace ATT.FieldTypes
 
         public void Consolidate()
         {
+            if (!HasData) return;
+
             // don't modify providers on any special 'type' of Quest
-            if (!HasData || _data.ContainsKey("type")) return;
-
-            bool hasQuestGivers = _data.TryGetValue("qgs", out List<object> qgs) && qgs.Count > 0;
-
-            // Item providers consolidation
-            var itemIDs = GetProviderType("i", true);
-            if (itemIDs != null)
+            if (!_data.ContainsKey("type"))
             {
-                var itemIDscopy = itemIDs.ToList();
-                foreach (var itemID in itemIDscopy)
+                bool hasQuestGivers = _data.TryGetValue("qgs", out List<object> qgs) && qgs.Count > 0;
+
+                // Item providers consolidation
+                var itemIDs = GetProviderType("i", true);
+                if (itemIDs != null)
                 {
-                    // Remove any NYI Item from being a provider
-                    if (TryGetSOURCED("itemID", itemID, out var itemSources) && itemSources.Any(i => i.TryGetValue("_nyi", out bool nyi) && nyi))
+                    var itemIDscopy = itemIDs.ToList();
+                    foreach (var itemID in itemIDscopy)
                     {
-                        // The item was classified as never being implemented
-                        Remove("i", itemID);
-                        LogDebug($"INFO: Removed NYI 'provider-item' {itemID}", _data);
-                    }
-                    else
-                    {
-                        // the First Item provider should also be Sourced
-                        if (!hasQuestGivers && FirstItemProvider == itemID)
+                        // Remove any NYI Item from being a provider
+                        if (TryGetSOURCED("itemID", itemID, out var itemSources) && itemSources.Any(i => i.TryGetValue("_nyi", out bool nyi) && nyi))
                         {
-                            // Items which are the 'first' provider indicate that their acquisition is what 'provides' the data
-                            // and thus they must be Sourced to be properly visible for being acquired
-                            if (itemSources == null)
-                            {
-                                // The item isn't Sourced in Retail version
-                                // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
-                                // There are currently about 1000 warnings due to unsourced Items of this nature
-                                LogDebugWarn($"Non-Sourced 'provider-item' {itemID}", _data);
-                            }
+                            // The item was classified as never being implemented
+                            Remove("i", itemID);
+                            LogDebug($"INFO: Removed NYI 'provider-item' {itemID}", _data);
                         }
                         else
                         {
-                            // Classic likes providers to be Items still due to the logic implementation
-                            if (!PreProcessorTags.Contains("ANYCLASSIC"))
+                            // the First Item provider should also be Sourced
+                            if (!hasQuestGivers && FirstItemProvider == itemID)
                             {
-                                if (ObjectData.TryGetMostSignificantObjectType(_data, out ObjectData objectData, out object objKeyValue)
-                                    && objectData.ObjectType == "questID")
+                                // Items which are the 'first' provider indicate that their acquisition is what 'provides' the data
+                                // and thus they must be Sourced to be properly visible for being acquired
+                                if (itemSources == null)
                                 {
-                                    // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                    Objects.Merge(_data, "qis", itemID);
-                                    Remove("i", itemID);
+                                    // The item isn't Sourced in Retail version
+                                    // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                                    // There are currently about 1000 warnings due to unsourced Items of this nature
+                                    LogDebugWarn($"Non-Sourced 'provider-item' {itemID}", _data);
+                                }
+                            }
+                            else
+                            {
+                                // Classic likes providers to be Items still due to the logic implementation
+                                if (!PreProcessorTags.Contains("ANYCLASSIC"))
+                                {
+                                    if (ObjectData.TryGetMostSignificantObjectType(_data, out ObjectData objectData, out object objKeyValue)
+                                        && objectData.ObjectType == "questID")
+                                    {
+                                        // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                        Objects.Merge(_data, "qis", itemID);
+                                        Remove("i", itemID);
+                                    }
                                 }
                             }
                         }

@@ -261,13 +261,13 @@ i(92681,{f=55,pb=1,spellID=134490})}}),
 i(82800,{collectible=false,description="|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",f=101,pb=1,spellID=123302})}}),
 h(-55,{awp=50004,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",g={
 n(63596,{coords={{69.4,24.4,84}},r=2,g={
-p(138,{npcID=21010,races={11}}),
+p(138,{itemID=29901,npcID=21010,races={11},spellID=35907}),
 p(630,{npcID=63098,races={22}}),
-p(68,{npcID=7553,races={4}}),
+p(68,{itemID=8500,npcID=7553,races={4},spellID=10707}),
 p(792,{npcID=65314,races={25}}),
-p(43,{npcID=7382,pb=1,races={1},g={
+p(43,{itemID=8487,npcID=7382,pb=1,races={1},spellID=10676,g={
 crit(23587,{achID=8397,awp=50400,id=15,pb=1})}}),
-p(72,{npcID=7560,races={3,7}})}}),
+p(72,{itemID=8497,npcID=7560,races={3,7},spellID=10711})}}),
 n(63075,{coords={{53.8,50.1,27}},r=2,sym={{"select","npcID",63596},{"pop"}}}),
 n(63077,{coords={{49.2,52,97}},r=2,sym={{"select","npcID",63596},{"pop"}}}),
 n(63014,{coords={{40.2,66,37}},r=2,sym={{"select","npcID",63596},{"pop"}}}),
@@ -279,12 +279,12 @@ n(63086,{coords={{36.8,77.1,85}},r=1,sym={{"select","npcID",63626},{"pop"}}}),
 n(63061,{coords={{52.7,41.3,1}},r=1,sym={{"select","npcID",63626},{"pop"}}}),
 n(63067,{coords={{49.2,56.1,7}},r=1,sym={{"select","npcID",63626},{"pop"}}}),
 n(63626,{coords={{52.6,59.3,85}},r=1,g={
-p(75,{npcID=7565,races={2,8}}),
-p(70,{npcID=14421,races={6}}),
-p(142,{npcID=21055,races={10}}),
+p(75,{itemID=10360,npcID=7565,races={2,8},spellID=10714}),
+p(70,{itemID=10394,npcID=14421,races={6},spellID=10709}),
+p(142,{itemID=29953,npcID=21055,races={10},spellID=36027}),
 p(792,{npcID=65314,races={26}}),
 p(629,{npcID=63097,races={9}}),
-p(55,{npcID=7395,races={5}})}})}}),
+p(55,{itemID=10393,npcID=7395,races={5},spellID=10688})}})}}),
 h(-58,{awp=60003,g={
 n(98725,{coords={a[15]},r=2,g={
 i(86143,{cost={{"i",163036,5}},description="You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",f=55,spellID=133994}),

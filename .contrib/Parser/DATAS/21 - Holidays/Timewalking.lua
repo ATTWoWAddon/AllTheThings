@@ -7460,44 +7460,21 @@ AddInstancesToRotation(EXPANSION.BFA, {
 -- Shadowlands Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT, {
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 }},{
-		--[[n(GROUP_FINDER, {
-			i(238790, {	-- Remnant of Azeroth (A)
-				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
-			}),
-			i(238791, {	-- Remnant of Azeroth (H)
-				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
+		n(GROUP_FINDER, {
+			i(253517, {	-- The Flickering Anima (QS!)
+				["description"] = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
-			-- TW BFA Quest under level 80
-			q(88808, {	-- A Scarred Journey Through Time
-				["provider"] = { "n", 239840 },	-- Churbro
-				["coords"] = {
-					{ 70.8, 17.3, BORALUS },	-- Alliance
-					{ 46.1, 94.9, DAZARALOR },	-- Horde
-				},
-				["lockCriteria"] = { 1, "lvl", 80 },
+			-- TODO below max level quest
+			q(92650, {	-- The Flickering Anima
+				["provider"] = { "i", 253517 },		-- The Flickering Anima
 				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
-			q(89222, {	-- Remnant of Azeroth (A)
-				["provider"] = { "i", 238790 },		-- Remnant of Azeroth (A)
-				["races"] = ALLIANCE_ONLY,
-				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
-			}),
-			q(89223, {	-- Remnant of Azeroth (H)
-				["provider"] = { "i", 238791 },		-- Remnant of Azeroth (H)
-				["races"] = HORDE_ONLY,
-				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
-			}),
-		}),--]]
+		}),
 		n(VENDORS, {
-			n(242687, {	-- Collector Ta'steld <Timewalking Vendor>
+			n(252687, {	-- Collector Ta'steld <Timewalking Vendor>
 				["coords"] = {
 					{ 56.3, 63.7, ORIBOS },
 				},
@@ -7675,9 +7652,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						i(259463, {	-- Snowpaw Glimmerfur Prowler (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),
-						i(258488, {	-- Skypaw Glimmerfur (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
+						--i(258488, {	-- Skypaw Glimmerfur (MOUNT!)
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+						--}),
 					}),
 					filter(TOYS, {
 						i(256881, {	-- Steward's Bauble (TOY!)

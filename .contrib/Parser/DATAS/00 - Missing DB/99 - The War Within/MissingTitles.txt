@@ -74,9 +74,9 @@ title(668),	-- %s, Famed Slayer of the Undreamt
 title(670),	-- %s, Teacher of Strong \\ %s, Mycelial Mentor
 12.0.0.63854
 title(671),	-- Mind-Seeker %s
-title(676),	-- %s, Famed Slayer of the VoidspireRaid
+title(676),	-- %s, Famed Slayer of the Voidspire \\ %s, Famed Slayer of the VoidspireRaid
 title(677),	-- %s, Famed Slayer of the Dark Naaru
-title(678),	-- [PH] DarkwellRaid %s
+title(678),	-- Dawnbringer %s \\ [PH] DarkwellRaid %s
 title(679),	-- Dream-Eater %s
 title(680),	-- %s, Chronicler of the Haranir
 12.0.0.63967
@@ -92,4 +92,18 @@ title(689),	-- %s, Fabled Vanquisher of Nullaeus
 title(690),	-- [PH] VoidspireRaid %s
 title(691),	-- Treasure Seeker %s
 12.0.0.64499
-title(740),	-- Loa-speaker %s
+title(740),	-- Loa-Speaker %s \\ Loa-speaker %s
+12.0.0.64741
+title(741),	-- Thalassian Alchemist %s
+title(742),	-- Thalassian Blacksmith %s
+title(743),	-- Thalassian Enchanter %s
+title(744),	-- Thalassian Engineer %s
+title(745),	-- Thalassian Scribe %s
+title(746),	-- Thalassian Jewelcrafter %s
+title(747),	-- Thalassian Leatherworker %s
+title(748),	-- Thalassian Tailor %s
+title(750),	-- Thalassian Miner %s
+title(751),	-- Thalassian Herbalist %s
+title(752),	-- Thalassian Skinner %s
+title(753),	-- %s, the Singular
+title(754),	-- Dustlord %s

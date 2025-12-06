@@ -304,7 +304,7 @@ exploration(1898),	-- Dustwind Gulch
 exploration(1958),	-- Tanner Camp
 exploration(1977),	-- Zul'Gurub
 exploration(2017),	-- Stratholme
-exploration(2037),	-- Quel'thalas \\ UNUSEDShadowfang Keep 003
+exploration(2037),	-- Quel'Thalas \\ Quel'thalas \\ UNUSEDShadowfang Keep 003
 exploration(2077),	-- Twilight Vale
 exploration(2078),	-- Twilight Shore
 exploration(2098),	-- Dawning Wood Catacombs
@@ -3113,7 +3113,6 @@ exploration(8502),	-- South Seas
 exploration(8525),	-- Underrot
 exploration(8526),	-- Arathi Basin
 exploration(8566),	-- The Great Sea
-exploration(8567),	-- Tiragarde Sound
 exploration(8573),	-- MSandersTest2016
 exploration(8582),	-- AI Test Map 8 - Arathi Basin
 exploration(8601),	-- Animation Playground
@@ -3136,10 +3135,7 @@ exploration(8689),	-- Zul'jan Ruins
 exploration(8692),	-- Bloodwash
 exploration(8699),	-- Nazmir [DEVLAND COPY]
 exploration(8711),	-- Gloom Hollow
-exploration(8716),	-- Proudmoore Keep
-exploration(8718),	-- Tradewinds Market \\ Boralus Market
 exploration(8719),	-- Warbeast Kraal
-exploration(8721),	-- Drustvar
 exploration(8723),	-- The Savage Front
 exploration(8724),	-- Raz'lotec
 exploration(8725),	-- Terrace of War
@@ -3248,10 +3244,6 @@ exploration(8837),	-- Sentry Point
 exploration(8838),	-- Nat's Landing
 exploration(8839),	-- Theramore Isle
 exploration(8844),	-- Crescent Isle
-exploration(8846),	-- Tiragarde Redoubt
-exploration(8847),	-- The Gravewood
-exploration(8848),	-- Gol Inath
-exploration(8849),	-- Fate's End
 exploration(8851),	-- Kazai \\ Kaz'ai
 exploration(8853),	-- Prisoners' Pass
 exploration(8854),	-- Vulpera Hideaway
@@ -3270,9 +3262,7 @@ exploration(8879),	-- The Eternal Spring
 exploration(8880),	-- Sunken Shallows
 exploration(8896),	-- Beastwatcher Glade \\ The Eyrie (UNUSED) \\ The Eyrie
 exploration(8900),	-- The Zocalo
-exploration(8903),	-- Eastpoint Station
 exploration(8913),	-- Zo'bal Ruins
-exploration(8917),	-- Wellington
 exploration(8921),	-- Tal'gurub
 exploration(8923),	-- The Slough
 exploration(8924),	-- Razorjaw River
@@ -3285,7 +3275,6 @@ exploration(8948),	-- Forlorn Ruins
 exploration(8950),	-- Ruins of Lordaeron
 exploration(8954),	-- Scaletrader Post
 exploration(8955),	-- Dev Area - H (copy)
-exploration(8956),	-- Gol Thovas
 exploration(8957),	-- Dev Area - I
 exploration(8958),	-- Goldtusk Inn
 exploration(8963),	-- Redrock Mesa
@@ -3302,22 +3291,18 @@ exploration(9009),	-- Sanctum of the Claw
 exploration(9023),	-- [Test] Environment Art - Tina 01
 exploration(9028),	-- Atal'Dazar
 exploration(9029),	-- Hozen Island
-exploration(9034),	-- Fallhaven Ranch
 exploration(9035),	-- Shrine of Shadra
 exploration(9036),	-- Throne of Rezan \\ Lair of Rezan
-exploration(9042),	-- Stormsong Valley
 exploration(9053),	-- Zaldraxia's Camp
 exploration(9099),	-- [TEMP] CV JulienTest
 exploration(9101),	-- Tropical Isle 8.0
 exploration(9147),	-- The Old Seawall
 exploration(9163),	-- Julien Test Land
 exploration(9164),	-- Freehold
-exploration(9165),	-- Elderstone Mine
 exploration(9166),	-- Shrine of Xibala
 exploration(9168),	-- Arathi Highlands
 exploration(9169),	-- Kel'vax's Shrine
 exploration(9173),	-- The Zocalo
-exploration(9177),	-- Rimestone's Lair \\ PH Glacier Cave
 exploration(9178),	-- The Far Reach
 exploration(9183),	-- RiverZone_Art
 exploration(9191),	-- Zeb'Saur [UNUSED] \\ Zeb'Saur
@@ -3325,26 +3310,18 @@ exploration(9192),	-- Pterror Rise
 exploration(9194),	-- Court of Spirits
 exploration(9201),	-- Hir'eek's Lair
 exploration(9202),	-- Withering Gulch
-exploration(9223),	-- Trader's Camp
 exploration(9226),	-- Scorched Sands Outpost \\ Shifting Sand Outpost
 exploration(9227),	-- Carrion Grounds
 exploration(9228),	-- Scorched Sands Arena \\ Shifting Sand Arena
 exploration(9230),	-- Crumbling OverlookDELETE JDA \\ Crumbling Overlook
-exploration(9232),	-- Barbthorn Cave
-exploration(9234),	-- The Wicker Altar
-exploration(9263),	-- Rockskip Falls
 exploration(9270),	-- Torga's Innards
-exploration(9274),	-- Forgotten Lodge \\ Mountainside Cottage
-exploration(9275),	-- Gol Var
 exploration(9278),	-- Kul Tiras Arena
 exploration(9279),	-- Hook Point \\ Kul Tiras Arena
 exploration(9302),	-- Throne of Ascension
 exploration(9303),	-- The Alchemist's Lair
 exploration(9304),	-- Tempest Cliffs
-exploration(9305),	-- Castaway Point
 exploration(9309),	-- Redrock Mines
 exploration(9311),	-- Sethrak War Camp
-exploration(9317),	-- Dead Man's Tale
 exploration(9319),	-- Camp Lastwind \\ Desperate Vulpera Camp
 exploration(9321),	-- Necropolis Catacombs
 exploration(9322),	-- Sails' Rest
@@ -3364,23 +3341,19 @@ exploration(9353),	-- Rakjan's Peak \\ Rak'jan's Peak
 exploration(9354),	-- Siege of Boralus
 exploration(9355),	-- Little Tortolla
 exploration(9356),	-- The Steamway
-exploration(9357),	-- Arathor's Embrace
 exploration(9361),	-- Terrace of the Speakers
-exploration(9362),	-- Ring of Booty \\ The Parley Pit
 exploration(9364),	-- Conqueror's Path
 exploration(9371),	-- Sethrak Assault Spire
 exploration(9373),	-- Sandscar Breach \\ Dol'watha
 exploration(9377),	-- Dead Man's Tale
 exploration(9382),	-- Sacrificial Pits
 exploration(9383),	-- BlizzCon 2017
-exploration(9384),	-- Roughneck Camp
 exploration(9388),	-- Hero Stage LD Demo Area
 exploration(9389),	-- Uldir
 exploration(9391),	-- Underrot \\ The Underrot
 exploration(9392),	-- Creepy Isle of Blizzcon
 exploration(9398),	-- Jewelhammer's Vault
 exploration(9406),	-- Speakers' Step
-exploration(9407),	-- Ashvane Company Yards \\ Boralus Docks
 exploration(9408),	-- Sodden Depths
 exploration(9409),	-- Waterlogged Sewers
 exploration(9410),	-- Cell Block: Scillus
@@ -3399,7 +3372,6 @@ exploration(9428),	-- Grand Parlor
 exploration(9429),	-- Forgotten Attic
 exploration(9430),	-- Nazwatha Sanctum \\ Naz'watha Interior
 exploration(9431),	-- The Prison of Ink
-exploration(9432),	-- Watchman's Rise
 exploration(9434),	-- Bloodfire Ravine
 exploration(9437),	-- Gral's Grotto
 exploration(9439),	-- Arathi Highlands
@@ -3413,7 +3385,6 @@ exploration(9459),	-- Galen's Fall
 exploration(9460),	-- Galson's Lode
 exploration(9461),	-- Highlands Mill \\ The Backwoods
 exploration(9462),	-- IsleCVTest
-exploration(9464),	-- Windswept Cove
 exploration(9466),	-- The Rotting Mire \\ Archipelago [PH]
 exploration(9467),	-- White Mesa Isles
 exploration(9468),	-- IsleCVTest2
@@ -3426,7 +3397,6 @@ exploration(9486),	-- lost world [ph]
 exploration(9487),	-- Wonderland
 exploration(9488),	-- Swamp Island
 exploration(9489),	-- Rock Spire
-exploration(9491),	-- The Salty Spitoon
 exploration(9492),	-- Valorcall Pass
 exploration(9493),	-- Northfold Crossing
 exploration(9494),	-- Ar'gorok \\ Northfold
@@ -3440,19 +3410,15 @@ exploration(9526),	-- Kings' Rest
 exploration(9527),	-- Temple of Sethraliss
 exploration(9533),	-- Rootway Collapse
 exploration(9535),	-- Francesco test - internal only
-exploration(9536),	-- Winterdeep Mine
 exploration(9540),	-- Snowblossom Village \\ Snowblossom Villiage \\ Panderan Farm
 exploration(9541),	-- Pandaren Farm Dev
-exploration(9547),	-- Corlain Aviary
 exploration(9548),	-- Havenswood
 exploration(9552),	-- Quest Training
 exploration(9553),	-- Stormwind City
-exploration(9554),	-- Stormsong Monastery
 exploration(9555),	-- Redrock Lowlands
 exploration(9557),	-- Torka's Camp
 exploration(9558),	-- Feeding Pits \\ Feeding Pens
 exploration(9559),	-- Temple of Kimbul
-exploration(9562),	-- Thornheart \\ Briarback Sanctum
 exploration(9564),	-- The Maiden's Virtue
 exploration(9565),	-- Crater of Conquerors
 exploration(9567),	-- Bwoljin's Fall \\ Dusty Ruins
@@ -3467,46 +3433,33 @@ exploration(9576),	-- The Dread Chain \\ Permafrost Necromancy
 exploration(9584),	-- Abandoned Passage
 exploration(9585),	-- Fetid Crypt
 exploration(9586),	-- The Blood Font
-exploration(9588),	-- Hook Point \\ Hook Point Alley \\ Saltwater Alley \\ Boralus Slums
 exploration(9589),	-- Xal'vor
 exploration(9591),	-- Whispering Reef
 exploration(9592),	-- Fort Victory
-exploration(9593),	-- Unity Square
-exploration(9594),	-- The Abyssal Melody
-exploration(9595),	-- Eventide Trench
 exploration(9597),	-- Tongo's Hideout
 exploration(9598),	-- The Great Seal \\ The Royal Chambers
 exploration(9599),	-- Spirits Be With You
 8.0.1.26010
-exploration(9602),	-- Mariner's Row \\ The Outroad
 exploration(9605),	-- Vigilant Isles
 exploration(9609),	-- Magni's Encampment
 8.0.1.26032
-exploration(9611),	-- Hook Point Market
 exploration(9612),	-- Crackling RidgeDELETE JDA \\ Beastbreaker Den
 8.0.1.26095
-exploration(9615),	-- Ashenwood Grove
 exploration(9616),	-- Jorundall
 exploration(9618),	-- Tempest's Roar
-exploration(9620),	-- Wavespeaker's Sanctum
 exploration(9624),	-- Verdant Hollow \\ Iron Hollow
 exploration(9625),	-- Thaelin's Hideout
-exploration(9627),	-- Crosswind Commons
 exploration(9630),	-- The Golden Isle
 exploration(9631),	-- Boulderfist Hall
 exploration(9632),	-- Bonetrail Gulch
-exploration(9636),	-- Northwood Home
+exploration(9639),	-- Ring of Booty
 exploration(9640),	-- Smuggler's Run
-exploration(9644),	-- Timberfell Outpost \\ Marris Outpost
 8.0.1.26131
 exploration(9645),	-- Southern Drift
-exploration(9647),	-- Falcon's Roost
 exploration(9651),	-- Model Test World \\ Model Size Land
-exploration(9652),	-- Altar of Drowned Whispers \\ Altar of the Deep
 8.0.1.26175
 exploration(9653),	-- Hall of Communion
 exploration(9658),	-- Vol'dun
-exploration(9659),	-- The Drust Bar \\ Nothing to Declare
 exploration(9660),	-- The Drunken Drummer
 exploration(9661),	-- Lost Spirit Lounge
 exploration(9662),	-- Hot House
@@ -3523,7 +3476,6 @@ exploration(9672),	-- Stormwind City
 exploration(9673),	-- Northern Elwynn Mountains
 exploration(9674),	-- Stormwind Harbor
 exploration(9675),	-- Lion's Rest
-exploration(9677),	-- Watchman's Tower
 exploration(9679),	-- Arathi Highlands
 exploration(9680),	-- Ar'gorok
 exploration(9681),	-- Drywhisker Mine
@@ -3558,7 +3510,6 @@ exploration(9726),	-- Crapopolis
 exploration(9727),	-- The High Road
 exploration(9728),	-- White Frag Lane
 exploration(9729),	-- Platinum Sands
-exploration(9731),	-- The Swine's Larder
 exploration(9734),	-- Arathi Highlands
 exploration(9735),	-- Ar'gorok
 exploration(9736),	-- Hatchet Ridge
@@ -3588,15 +3539,8 @@ exploration(9759),	-- Thoradin's Wall
 exploration(9760),	-- Faldir's Cove
 exploration(9761),	-- The Drowned Reef
 exploration(9762),	-- Circle of East Binding
-exploration(9763),	-- The Rusty Blade
 exploration(9764),	-- Thros, the Blighted Lands
-exploration(9765),	-- Proudmoore Academy
-exploration(9766),	-- The Golden Flagon
-8.0.1.26310
-exploration(9769),	-- Monastery Archives
 8.0.1.26367
-exploration(9770),	-- Ai'twen's Cave
-exploration(9771),	-- Proudmoore Barracks
 exploration(9772),	-- Rastakhan's Might
 exploration(9773),	-- Lair of Rezan
 exploration(9775),	-- Redrock Cavern
@@ -3604,7 +3548,6 @@ exploration(9776),	-- Forward Camp \\ Froward Camp
 exploration(9777),	-- The Tusk Pools
 8.0.1.26433
 exploration(9778),	-- Uncharted Island
-exploration(9779),	-- Swiftwind Post \\ Fairwind Post \\ Cliffside Watch
 exploration(9780),	-- The Siren's Call
 exploration(9781),	-- Kunza-Kunza
 exploration(9782),	-- Abandoned Ruin
@@ -3614,12 +3557,8 @@ exploration(9786),	-- Gorgrond
 exploration(9788),	-- Skyrender Eyrie
 exploration(9789),	-- The Feeding Grounds
 exploration(9793),	-- Carapace Ridge
-exploration(9796),	-- Wolf's Den
-exploration(9798),	-- Beacon Hill
 8.0.1.26476
 exploration(9800),	-- The Great Sea \\ Great Sea
-exploration(9801),	-- Snug Harbor Inn \\ The Snug Harbor
-exploration(9802),	-- Harbormaster's Office
 exploration(9805),	-- Takulu Bridge
 exploration(9806),	-- Redfield's Watch
 exploration(9807),	-- Altar of Rot
@@ -3627,9 +3566,7 @@ exploration(9808),	-- Eastern Kingdoms
 exploration(9809),	-- Vol'dun
 exploration(9810),	-- The Whispering Crag
 8.0.1.26522
-exploration(9811),	-- Sandy Refuge
 exploration(9812),	-- Plains of Tojek
-exploration(9813),	-- Stonefist Watch
 exploration(9814),	-- Vestibule of the Faithless
 exploration(9815),	-- Echoing Warrens
 exploration(9816),	-- Clutch of the Great Mother
@@ -3637,13 +3574,9 @@ exploration(9817),	-- The Galvanized Grotto
 exploration(9818),	-- The Bazaar of Watchful Eyes
 exploration(9819),	-- Atrium of Sethraliss
 exploration(9820),	-- Collapsed Tunnel
-exploration(9824),	-- Mudfisher Cove
 exploration(9826),	-- Sword of Dawn \\ Sword of Dawn - 8.0 Boost
 exploration(9828),	-- Troll Forest Cafe
-exploration(9829),	-- Windfall Cavern
 exploration(9830),	-- Tempest's Roar \\ Tempest's Roar - 8.0 Boost
-exploration(9831),	-- The Siren's Daughter
-exploration(9832),	-- The Valorous Rose
 exploration(9838),	-- Boulderfist Hall
 8.0.1.26567
 exploration(9935),	-- Terrace of Crafters
@@ -3658,12 +3591,10 @@ exploration(9943),	-- Beastwatch
 exploration(9944),	-- Razorbloom Fallow
 exploration(9945),	-- Evermorn Hold
 exploration(9946),	-- Brimstone Springs
-exploration(9947),	-- Stonetusk Watch
 exploration(9948),	-- Xibala Shallows
 exploration(9949),	-- Tirisfal Glades: The Blight
 exploration(9950),	-- Boulder'gor
 exploration(9951),	-- South Seas
-exploration(9956),	-- Ironmaul Overlook
 exploration(9957),	-- Gral's Call - Crew's Quarters
 exploration(9958),	-- Gral's Call - Rest of Ship
 exploration(9959),	-- Undercity
@@ -3674,37 +3605,24 @@ exploration(9963),	-- Fonts of Cleansing
 exploration(9964),	-- Tidewater Sanctum
 exploration(9966),	-- Mugamba Overlook
 exploration(9970),	-- Hall of Strength
-exploration(9971),	-- Crescent Cove \\ Forlorn Sands
 8.0.1.26624
-exploration(9972),	-- Beryl Meadow
-exploration(9973),	-- Twin Rivers
 exploration(9974),	-- Mistvine Ledge
-exploration(9975),	-- Briarback Warrens
 exploration(9976),	-- Lifestone Cavern
 exploration(9977),	-- Gnarlroot Cleft
 exploration(9978),	-- Grimwatt's Crash
-exploration(9979),	-- Dampwick Ward
-exploration(9980),	-- Ashvane Docks
 exploration(9981),	-- Darkshore
 exploration(9982),	-- Tradewinds Market
 exploration(9983),	-- Dampwick Ward \\ Hook Point
 exploration(9984),	-- Ashvane Company Yards
 exploration(9985),	-- Unity Square
 exploration(9986),	-- Kraken's Breach
-exploration(9988),	-- The Lost Estate
 exploration(9992),	-- Mugambala
 exploration(9993),	-- The Sand Bar
 exploration(9994),	-- Chamber of Rezan
-exploration(9995),	-- Anchors Down
-exploration(9996),	-- The Drunk Tank
-exploration(9997),	-- The Lost Scroll
-exploration(9998),	-- The Sunken Keg
 exploration(9999),	-- Sink n' Swim
 exploration(10000),	-- The Dive Bar
 exploration(10001),	-- Heyman's Hideaway
-exploration(10002),	-- Mount Cortis
 exploration(10003),	-- Shrine of Shadows
-exploration(10005),	-- Raimond's Laboratory
 exploration(10006),	-- House of Jol
 exploration(10007),	-- The Shrunken Head
 exploration(10008),	-- Watertusk Inn
@@ -3712,28 +3630,19 @@ exploration(10009),	-- Beastcaller Inn
 exploration(10010),	-- Dark Iron Forward Camp
 exploration(10011),	-- Nightborne Forward Camp
 exploration(10012),	-- The Hozen Throne
-exploration(10013),	-- The Screaming Pit
 exploration(10014),	-- Torga's Tavern
 exploration(10015),	-- Tol Dagor
 exploration(10016),	-- Davenport Residence
-exploration(10017),	-- Sanctum of the Sages
-exploration(10018),	-- Tradewinds Counting House
 exploration(10020),	-- Sanctuary of Blood
 exploration(10021),	-- Ruins of Xal'vor
 8.0.1.26707
 exploration(10022),	-- Firelands
-exploration(10025),	-- Lord Admiral's Rest
-8.0.1.26734
-exploration(10026),	-- Tiragarde Sound
-exploration(10027),	-- The Wayward Cask
 8.0.1.26788
 exploration(10028),	-- Blackrock Depths
 exploration(10029),	-- The Scarab Dais
 exploration(10030),	-- The Scarab Wall
 exploration(10031),	-- Valor's Rest
 8.0.1.26812
-exploration(10033),	-- Path of Storms
-exploration(10034),	-- Upton Borough
 exploration(10035),	-- Lair of Xak'lar
 8.0.1.26871
 exploration(10037),	-- Upton Borough
@@ -3764,9 +3673,6 @@ exploration(10073),	-- Twilight Shore
 exploration(10074),	-- Twilight Vale
 exploration(10075),	-- Auberdine Refugee Camp
 exploration(10076),	-- Battle of Dazar'alor \\ Siege of Zuldazar \\ The Burning of Zuldazar
-exploration(10077),	-- Horde Airship
-exploration(10078),	-- Horde Airship
-exploration(10079),	-- Horde Airship
 exploration(10080),	-- Bitterstone Quarry
 exploration(10081),	-- Cinderfall Grove
 exploration(10082),	-- Ashwood Depot
@@ -3819,9 +3725,7 @@ exploration(10258),	-- Lornesta Mine
 exploration(10259),	-- Gloomtide Strand
 exploration(10260),	-- Tenebrous Vault
 exploration(10261),	-- Uncharted Territory
-exploration(10262),	-- The Strider
 exploration(10263),	-- Gnomeregan
-exploration(10265),	-- Shrine of the Storm (copy)
 exploration(10266),	-- Crucible of Storms \\ Shrine of the Storm
 exploration(10268),	-- Delaryn's Demise
 exploration(10270),	-- Zandalari Treasury
@@ -3877,7 +3781,6 @@ exploration(10324),	-- Gloomtide Strand
 exploration(10325),	-- Twilight Shore
 exploration(10326),	-- Nazj'vel
 exploration(10339),	-- Predator Pass
-exploration(10343),	-- Iwen's Sanctum \\ Emma's Retreat
 exploration(10349),	-- The Veiled Sea
 8.1.0.28151
 exploration(10355),	-- Icecrown Citadel
@@ -3902,7 +3805,6 @@ exploration(10384),	-- Path of the Ancestors
 exploration(10385),	-- Loa's Sanctum
 exploration(10386),	-- Walk of Kings
 exploration(10387),	-- The Heart of the Empire
-exploration(10388),	-- Shatterfall Pass
 8.1.0.28294
 exploration(10390),	-- Cinderfall Grove
 exploration(10391),	-- Ashwood Depot
@@ -3966,10 +3868,8 @@ exploration(10217),	-- The Skybag
 exploration(10218),	-- Warsong Gulch
 exploration(10219),	-- Warsong Lumber Mill
 exploration(10220),	-- Silverwing Hold
-exploration(10369),	-- Atwater Stead
 exploration(10380),	-- Allied - Kul Tiran Unlock
 exploration(10421),	-- Uldir
-exploration(10426),	-- The Swift Vengeance
 exploration(10427),	-- The Swift Vengeance
 exploration(10429),	-- The Prison of Ink
 exploration(10440),	-- Arathi Basin \\ Arathi Basin - AI
@@ -3980,7 +3880,6 @@ exploration(10444),	-- Blacksmith \\ Blacksmith - Arathi Basin - AI
 exploration(10445),	-- Lumber Mill \\ Lumber Mill - Arathi Basin - AI
 exploration(10446),	-- Gold Mine \\ Gold Mine - Arathi Basin - AI
 exploration(10447),	-- Farm \\ Stables \\ Stables - Arathi Basin - AI
-exploration(10454),	-- Tiffin's Melody \\ Kul Tiran Flagship
 exploration(10455),	-- Tiffin's Melody \\ Kul Tiran Flagship
 8.1.5.29220
 exploration(10483),	-- Uncharted Territory
@@ -4112,7 +4011,6 @@ exploration(10458),	-- Alterac Valley
 exploration(10473),	-- Arcantina \\ Hearthstone Tavern
 exploration(10476),	-- Stormwind
 exploration(10582),	-- Caverns of Time
-exploration(10619),	-- Honeyback Hatchery
 exploration(10625),	-- Durotar
 exploration(10626),	-- Southfury River
 exploration(10627),	-- Southfury River
@@ -4815,13 +4713,6 @@ exploration(14083),	-- Enigma Crucible \\ Enigma Chamber
 11.2.5.62554
 exploration(16363),	-- The Skyfire
 11.2.7.63642
-exploration(15511),	-- Durotar_DemoArea
-exploration(15512),	-- Dreg_DemoArea
-exploration(15515),	-- Housing_Plots
-exploration(15524),	-- Razorwind Shores
-exploration(15529),	-- Azshara_DemoArea
-exploration(15534),	-- Dreg_DemoArea_Flood
-exploration(15542),	-- Housing NPC Prototype Neighborhood
 exploration(15543),	-- The Wandering Isle
 exploration(15614),	-- Pei-Wu Forest
 exploration(15615),	-- Ki-Han Brewery
@@ -4857,17 +4748,8 @@ exploration(15706),	-- The Laughing Crane
 exploration(15707),	-- Chamber of Whispers
 exploration(15708),	-- The Dawning Span
 exploration(15709),	-- Teeming Burrow
-exploration(16105),	-- Founder's Point
-exploration(16107),	-- Elwynn 2 test
-exploration(16226),	-- Cragthorn Highlands
-exploration(16227),	-- DurotarMain_Housing
-exploration(16228),	-- Runetotem's Bounty
-exploration(16229),	-- Saltfang Shoals
 exploration(16300),	-- Home Interior
 exploration(16309),	-- Castle Nathria
-exploration(16376),	-- Brumewood Hollow
-exploration(16377),	-- Gilded Oaks
-exploration(16378),	-- The Outer Banks
 exploration(16381),	-- [DNT] \\ [DNT] Later Patch
 exploration(16387),	-- [DNT] \\ [DNT] Later Patch
 exploration(16391),	-- [DNT] \\ [DNT] Later Patch
@@ -4929,21 +4811,8 @@ exploration(16477),	-- Dun Modr
 exploration(16478),	-- Thandol Span
 exploration(16533),	-- Quillgrave \\ [DNT][PH]
 exploration(16540),	-- Quillgrave \\ [DNT][PH]
-exploration(16541),	-- 12DUR_Oasis_TEST_MCarwen
 exploration(16551),	-- Vault of the Incarnates (V2)
-exploration(16588),	-- Town Center
-exploration(16589),	-- The Common
 exploration(16621),	-- [DNT] \\ Red Hollow
-exploration(16687),	-- Four Sisters
-exploration(16688),	-- Ragewater Springs
-exploration(16690),	-- Scorchsong Isle \\ Sorchsong Isle
-exploration(16700),	-- Faldir's Torch
-exploration(16701),	-- Morgan's Rest
-exploration(16704),	-- Breakwater Bight
-exploration(16709),	-- Crescent Cove
-exploration(16753),	-- The Bloom
-11.2.7.64011
-exploration(16818),	-- Highlands \\ Stoneveil Ridge
 12.0.0.63534
 exploration(15173),	-- Eversong Woods
 exploration(15355),	-- Harandar
@@ -5232,7 +5101,7 @@ exploration(16596),	-- Torment's Rise
 exploration(16598),	-- The Stump
 exploration(16599),	-- Slayer's Rise
 exploration(16600),	-- Shadow Rise
-exploration(16601),	-- The Darkwell
+exploration(16601),	-- The Sunwell \\ The Darkwell
 exploration(16613),	-- Sunwell Ramparts
 exploration(16618),	-- Hall of Blood
 exploration(16627),	-- Sunwing Sundries
@@ -5299,3 +5168,6 @@ exploration(16851),	-- Mettle's Hold
 12.0.0.64499
 exploration(16855),	-- Voidscar Arena
 exploration(16860),	-- The Great Sea
+12.0.0.64741
+exploration(16863),	-- Quiet Cavern
+exploration(16864),	-- Consumptor Cave

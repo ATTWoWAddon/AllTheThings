@@ -90,7 +90,7 @@ r(1244876),	-- Primal Philosopher's Stone
 r(1244895),	-- Mote of Pure Void
 r(1244939),	-- Mote of Primal Energy
 r(1244940),	-- Mote of Light
-r(1244942),	-- Midnight Mana Potion
+r(1244942),	-- Lightfused Mana Potion \\ Midnight Mana Potion
 r(1248781),	-- Composite Flora
 r(1248784),	-- Bouquet of Herbs
 r(1248787),	-- School of Gems
@@ -99,9 +99,9 @@ r(1248831),	-- Potion of Devoured Dreams
 r(1248832),	-- Potion of Recklessness
 r(1248834),	-- Draught of Rampant Abandon
 r(1248839),	-- Void-Shrouded Tincture
-r(1248840),	-- Midnight Critical Strike Flask
-r(1248842),	-- Midnight Haste Flask
-r(1248845),	-- Midnight Mastery Flask
+r(1248840),	-- Flask of the Shattered Sun \\ Midnight Critical Strike Flask
+r(1248842),	-- Flask of the Blood Knights \\ Midnight Haste Flask
+r(1248845),	-- Flask of the Magisters \\ Midnight Mastery Flask
 r(1248848),	-- Haranir Phial of Ingenuity
 r(1248849),	-- Haranir Phial of Perception
 

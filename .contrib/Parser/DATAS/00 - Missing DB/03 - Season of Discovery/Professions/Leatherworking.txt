@@ -32,6 +32,9 @@ r(1223778),	-- Icy Scale Bracers
 r(1223780),	-- Polar Tunic
 r(1223782),	-- Polar Gloves
 r(1223784),	-- Polar Bracers
+1.15.7.59706
+r(1226689),	-- Scarlet Quiver
+r(1226690),	-- Scarlet Ammo Pouch
 
 
 
@@ -67,22 +70,3 @@ r(1223778),	-- Icy Scale Bracers
 r(1223780),	-- Polar Tunic
 r(1223782),	-- Polar Gloves
 r(1223784),	-- Polar Bracers
-1.15.7.59706
-r(1224615),	-- Scarlet Infiltrator's Bandana
-r(1224616),	-- Scarlet Infiltrator's Shoulderpads
-r(1224617),	-- Scarlet Infiltrator's Vest
-r(1224618),	-- Scarlet Infiltrator's Bracers
-r(1224619),	-- Scarlet Infiltrator's Gloves
-r(1224620),	-- Scarlet Infiltrator's Belt
-r(1224621),	-- Scarlet Infiltrator's Trousers
-r(1224622),	-- Scarlet Infiltrator's Shoes
-r(1224623),	-- Scarlet Huntsman's Coif
-r(1224624),	-- Scarlet Huntsman's Pauldrons
-r(1224625),	-- Scarlet Huntsman's Chain
-r(1224626),	-- Scarlet Huntsman's Wristguards
-r(1224627),	-- Scarlet Huntsman's Handguards
-r(1224628),	-- Scarlet Huntsman's Clasp
-r(1224629),	-- Scarlet Huntsman's Legguards
-r(1224630),	-- Scarlet Huntsman's Boots
-r(1226689),	-- Scarlet Quiver
-r(1226690),	-- Scarlet Ammo Pouch

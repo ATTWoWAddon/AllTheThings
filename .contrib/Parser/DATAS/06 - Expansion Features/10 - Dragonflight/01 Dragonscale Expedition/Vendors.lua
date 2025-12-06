@@ -61,9 +61,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{		-- RENOWN 1 --
 						i(198854, {	-- Archeologist Artifact Notes (CI!)
 							["sourceQuest"] = 72709,	-- Funding a Treasure Hunt
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 10 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
+						}),
+						i(245283, {	-- Blood Elven Candelabra (DECOR!)
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245288, {	-- Circular Sin'dorei Rug (DECOR!)
+							["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245287, {	-- Long Sin'dorei Rug (DECOR!)
+							["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(245286, {	-- Rectangular Sin'dorei Rug (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
+						}),
+						i(245285, {	-- Reliquary Storage Crate (DECOR!)
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+						i(238975, {	-- Reliquary Telescope (DECOR!)
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
@@ -571,6 +593,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					198387,	-- Excavator's Mallet
 					198717,	-- Excavator's Punch
 					199746,	-- Excavator's Trowel
+					-- #if AFTER 11.2.7
+					245283,	-- Blood Elven Candelabra (DECOR!)
+					245288,	-- Circular Sin'dorei Rug (DECOR!)
+					245287,	-- Long Sin'dorei Rug (DECOR!)
+					245286,	-- Rectangular Sin'dorei Rug (DECOR!)
+					245285,	-- Reliquary Storage Crate (DECOR!)
+					238975,	-- Reliquary Telescope (DECOR!)
+					-- #endif
 					------ RENOWN 7 ------
 					194102,	-- Expedition Excavator
 					194325,	-- Researcher's Magnifier

@@ -1736,6 +1736,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "o", 192824 },	-- Half Full Glass of Wine
 							}),
 							-- #endif
+							i(258145, { ["timeline"] = { ADDED_11_2_7 } }),	-- Eversong Party Platter (DECOR!)
 							i(44113),	-- Small Spice Bag
 							currency(81),	-- Epicurean's Award
 						},

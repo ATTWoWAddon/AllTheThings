@@ -8,11 +8,10 @@ root(ROOTS.ExpansionFeatures,
 			n(ACHIEVEMENTS, {
 				ach(9130),		-- A Rare Friend
 				ach(9131),		-- An Epic Buddy
-				ach(9494, {	-- Commander (40)
-					ach(9109),		-- Fearless Leader (25)
-					ach(9108),		-- Where You Go, They Will Follow (10)
-					ach(9107),		-- Follow the Leader (5)
-				}),
+				ach(9107),		-- Follow the Leader (5)
+				ach(9108),		-- Where You Go, They Will Follow (10)
+				ach(9109),		-- Fearless Leader (25)
+				ach(9494),	-- Commander (40)
 				pvp(ach(9630, {	-- Defender of Draenor (A)
 					["races"] = ALLIANCE_ONLY,
 				})),
@@ -34,19 +33,17 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = { follower(465) },	-- Harrison Jones
 				}),
 				petbattle(ach(9264)),	-- Draenor Pet Brawler
-				a(ach(9101, {	-- Even More Plots (A)
-					a(ach(9100)),		-- More Plots (A)
-				})),
-				h(ach(9546, {	-- Even More Plots (H)
-					h(ach(9545)),		-- More Plots (H)
-				})),
+				a(ach(9100)),	-- More Plots (A)
+				a(ach(9101)),	-- Even More Plots (A)
+				h(ach(9545)),	-- More Plots (H)
+				h(ach(9546)),	-- Even More Plots (H)
+				ach(9110),	-- Following Up
+				ach(9111),	-- Raising the Bar
 				ach(9129, {	-- Filling the Ranks
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					["groups"] = {
 						a(i(111967)),	-- Dwarven Bunker, Level 3 (Garrison Blueprint)
 						h(i(116186)),	-- War Mill, Level 3 (Garrison Blueprint)
-						ach(9111),	-- Raising the Bar
-						ach(9110),	-- Following Up
 					},
 				}),
 				achpart(9828, 10015, {	-- Ten Hit Tunes (A) (10)
@@ -89,10 +86,9 @@ root(ROOTS.ExpansionFeatures,
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					["groups"] = { i(111983) },	-- Storehouse, Level 3 (Garrison Blueprint)
 				}),
-				ach(9128, {	-- Grand Master Draftsman (60)
-					ach(9126),		-- Master Draftsman (40)
-					ach(9125),		-- Draftsman (20)
-				}),
+				ach(9125),	-- Draftsman (20)
+				ach(9126),	-- Master Draftsman (40)
+				ach(9128),	-- Grand Master Draftsman (60)
 				a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
 					crit(28291, {	-- All Hands On Deck
 						["_quests"] = { 38259 },
@@ -133,16 +129,37 @@ root(ROOTS.ExpansionFeatures,
 						["_quests"] = { 38463 },
 					}),
 				})),
-				ach(9243, {	-- Item Level Force (20 - lvl 650)
-					ach(9213),	-- Item Level Army (10 - lvl 650)
-					ach(9212),	-- My Item Level Is Way Higher than Yours (1 - lvl 650)
-					ach(9211),	-- My Item Level Is Higher than Yours (1 - lvl 625)
-				}),
+				ach(9211),	-- My Item Level Is Higher than Yours (1 - lvl 625)
+				ach(9212),	-- My Item Level Is Way Higher than Yours (1 - lvl 650)
+				ach(9213),	-- Item Level Army (10 - lvl 650)
+				ach(9243),	-- Item Level Force (20 - lvl 650)
 				ach(9097, {	-- Keepin' Busy
 					crit(25212),		-- Mine
 					crit(25210),		-- Fishing Shack
 					crit(25211),		-- Herb Garden
 					crit(25213),		-- Pet Menagerie
+				}),
+				ach(9095, {		-- Builder
+					crit(25236),		-- At least 2 small buildings activated
+					crit(25227),		-- At least 2 small buildings activated
+					crit(25228),		-- At least 2 small buildings activated
+					crit(25229),		-- At least 2 small buildings activated
+					crit(25235),		-- At least 2 small buildings activated
+					crit(25230),		-- At least 2 small buildings activated
+					crit(25231),		-- At least 2 small buildings activated
+					crit(25232),		-- At least 2 small buildings activated
+					crit(25233),		-- At least 2 small buildings activated
+					crit(25234),		-- At least 2 small buildings activated
+					crit(25216),		-- At least 2 medium buildings activated
+					crit(25220),		-- At least 2 medium buildings activated
+					crit(25217),		-- At least 2 medium buildings activated
+					crit(25218),		-- At least 2 medium buildings activated
+					crit(25219),		-- At least 2 medium buildings activated
+					crit(25221),		-- At least 1 large building activated
+					crit(25222),		-- At least 1 large building activated
+					crit(25223),		-- At least 1 large building activated
+					crit(25224),		-- At least 1 large building activated
+					crit(27941),		-- At least 1 large building activated
 				}),
 				ach(9096, {	-- Master Builder
 					crit(25226),		-- At least 3 small buildings activated
@@ -165,28 +182,6 @@ root(ROOTS.ExpansionFeatures,
 					crit(25252),		-- At least 2 large buildings activated
 					crit(25253),		-- At least 2 large buildings activated
 					crit(25225),		-- At least 2 large buildings activated
-					ach(9095, {		-- Builder
-						crit(25236),		-- At least 2 small buildings activated
-						crit(25227),		-- At least 2 small buildings activated
-						crit(25228),		-- At least 2 small buildings activated
-						crit(25229),		-- At least 2 small buildings activated
-						crit(25235),		-- At least 2 small buildings activated
-						crit(25230),		-- At least 2 small buildings activated
-						crit(25231),		-- At least 2 small buildings activated
-						crit(25232),		-- At least 2 small buildings activated
-						crit(25233),		-- At least 2 small buildings activated
-						crit(25234),		-- At least 2 small buildings activated
-						crit(25216),		-- At least 2 medium buildings activated
-						crit(25220),		-- At least 2 medium buildings activated
-						crit(25217),		-- At least 2 medium buildings activated
-						crit(25218),		-- At least 2 medium buildings activated
-						crit(25219),		-- At least 2 medium buildings activated
-						crit(25221),		-- At least 1 large building activated
-						crit(25222),		-- At least 1 large building activated
-						crit(25223),		-- At least 1 large building activated
-						crit(25224),		-- At least 1 large building activated
-						crit(27941),		-- At least 1 large building activated
-					}),
 				}),
 				ach(9246, {		-- Master Draenor Crafter
 					["_noautomation"] = true,
@@ -214,9 +209,8 @@ root(ROOTS.ExpansionFeatures,
 						crit(27605),	-- The Crystal Reborn
 					},
 				}),
-				ach(9098, {	-- Movin' On Up (Lvl 3)
-					ach(9099),		-- Time for an Upgrade (Lvl 2)
-				}),
+				ach(9099),		-- Time for an Upgrade (Lvl 2)
+				ach(9098),	-- Movin' On Up (Lvl 3)
 				a(ach(9564)),	-- Securing Draenor [A] (automated)
 				h(ach(9562)),	-- Securing Draenor [H] (automated)
 				ach(8933),		-- Staying Regular
@@ -302,22 +296,21 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				ach(9407, {	-- Working Many Orders (750)
-					ach(9406, {	-- Working More Orders (250)
-						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["groups"] = {
-							i(111930),	-- Alchemy Lab, Level 3 (Garrison Blueprint)
-							i(111973),	-- Enchanter's Study, Level 3 (Garrison Blueprint)
-							i(109257),	-- Engineering Works, Level 3 (Garrison Blueprint)
-							i(111975),	-- Gem Boutique, Level 3 (Garrison Blueprint)
-							i(111979),	-- Scribe's Quarters, Level 3 (Garrison Blueprint)
-							i(111993),	-- Tailoring Emporium, Level 3 (Garrison Blueprint)
-							i(111991),	-- The Forge, Level 3 (Garrison Blueprint)
-							i(111989),	-- The Tannery, Level 3 (Garrison Blueprint)
-						},
-					}),
-					ach(9405),	-- Working Some Orders (125)
+				ach(9405),	-- Working Some Orders (125)
+				ach(9406, {	-- Working More Orders (250)
+					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					["groups"] = {
+						i(111930),	-- Alchemy Lab, Level 3 (Garrison Blueprint)
+						i(111973),	-- Enchanter's Study, Level 3 (Garrison Blueprint)
+						i(109257),	-- Engineering Works, Level 3 (Garrison Blueprint)
+						i(111975),	-- Gem Boutique, Level 3 (Garrison Blueprint)
+						i(111979),	-- Scribe's Quarters, Level 3 (Garrison Blueprint)
+						i(111993),	-- Tailoring Emporium, Level 3 (Garrison Blueprint)
+						i(111991),	-- The Forge, Level 3 (Garrison Blueprint)
+						i(111989),	-- The Tannery, Level 3 (Garrison Blueprint)
+					},
 				}),
+				ach(9407),	-- Working Many Orders (750)
 			}),
 		})),
 	})

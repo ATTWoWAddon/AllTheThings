@@ -1402,7 +1402,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		}),
 		n(VENDORS, {
 			i(143727, {	-- Champion's Salute (TOY!)
-				["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+				["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 				["timeline"] = { ADDED_7_2_0 },
 			}),
 		}),

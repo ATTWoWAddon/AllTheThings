@@ -2,6 +2,16 @@
 q(77690),	-- CLASSIC:A Small Upgrade
 q(78023),	--
 q(78024),	--
+q(78124),	-- CLASSIC:Nar'thalas Almanac
+q(78127),	-- CLASSIC:The Dalaran Digest
+q(78142),	-- CLASSIC:Bewitchments and Glamours
+q(78143),	-- CLASSIC:Secrets of the Dreamers
+q(78145),	-- CLASSIC:Arcanic Systems Manual
+q(78146),	-- CLASSIC:Goaz Scrolls
+q(78147),	-- CLASSIC:Crimes Against Anatomy
+q(78148),	-- CLASSIC:Runes of the Sorceror-Kings
+q(78149),	-- CLASSIC:Fury of the Land
+q(78150),	-- CLASSIC:Friend of the Library
 q(78242),	--
 q(78280),	--
 q(78295),	--
@@ -16,6 +26,13 @@ q(78910),	--
 q(78919),	--
 q(78924),	-- CLASSIC:In Search of Thaelrid
 q(78994),	-- CLASSIC:A Solid Foundation
+q(79091),	-- CLASSIC:Archmage Antonidas: The Unabridged Autobiography
+q(79092),	-- CLASSIC:Archmage Theocritus's Research Journal
+q(79093),	-- CLASSIC:Rumi of Gnomeregan: The Collected Works
+q(79094),	-- CLASSIC:The Lessons of Ta'zo
+q(79095),	-- CLASSIC:The Apothecary's Metaphysical Primer
+q(79096),	-- CLASSIC:Ataeric: On Arcane Curiosities
+q(79097),	-- CLASSIC:Baxtan: On Destructive Magics
 1.15.0.52610
 q(79482),	-- CLASSIC:Stolen Winter Veil Treats
 q(79483),	-- CLASSIC:Stolen Winter Veil Treats
@@ -113,6 +130,7 @@ q(82011),	-- CLASSIC:Victory Lap for the Gnomes!
 q(82013),	-- CLASSIC:Hush Money
 q(82032),	--
 q(82060),	--
+q(82068),	-- CLASSIC:Fight the Nightmare Incursions
 q(82070),	--
 q(82071),	-- CLASSIC:Purifying Fire
 q(82072),	-- CLASSIC:Purging Earth
@@ -120,6 +138,7 @@ q(82073),	-- CLASSIC:Cleansing Water
 q(82074),	-- CLASSIC:Answering Fire's Call
 q(82075),	-- CLASSIC:Answering Earth's Call
 q(82076),	-- CLASSIC:Answering Water's Call
+q(82084),	-- CLASSIC:A Lesson in Literacy
 q(82089),	-- CLASSIC:Master of Transmutation
 q(82090),	-- CLASSIC:Mixology For Fun and Profit
 q(82091),	--
@@ -145,6 +164,78 @@ q(82850),	-- CLASSIC:Fish Oil
 q(82851),	-- CLASSIC:Dark Iron Ordinance
 q(82853),	-- CLASSIC:Shredder Turbochargers
 1.15.3.55112
+q(81730),	-- CLASSIC:Duskwood Mission I: Defeat Worgen
+q(81731),	-- CLASSIC:Duskwood Mission II: Defeat Ogres
+q(81732),	-- CLASSIC:Duskwood Mission III: Defeat Dragonkin
+q(81733),	-- CLASSIC:Duskwood Mission IV: Ogre Intelligence
+q(81734),	-- CLASSIC:Duskwood Mission V: Worgen Intelligence
+q(81735),	-- CLASSIC:Duskwood Mission VI: Dragon Intelligence
+q(81736),	-- CLASSIC:Duskwood Mission VII: Recover Shadowscythe
+q(81737),	-- CLASSIC:Duskwood Mission VIII: Recover Ogre Magi text
+q(81738),	-- CLASSIC:Duskwood Mission IX: Recover Dragon Egg
+q(81739),	-- CLASSIC:Duskwood Mission X: Nightmare Moss
+q(81740),	-- CLASSIC:Duskwood Mission XI: Cold Iron Ore
+q(81741),	-- CLASSIC:Duskwood Mission XII: Dream-Touched Dragonscale
+q(81742),	-- CLASSIC:Duskwood Mission XIII: Defeat Ylanthrius
+q(81743),	-- CLASSIC:Duskwood Mission XIV: Defeat Vvarc'zul
+q(81744),	-- CLASSIC:Duskwood Mission XV: Defeat Amokarok
+q(81745),	-- CLASSIC:Duskwood Mission XVI: Rescue Kroll Mountainshade
+q(81746),	-- CLASSIC:Duskwood Mission XVII: Rescue Alara Grovemender
+q(81747),	-- CLASSIC:Duskwood Mission XVIII: Rescue Elenora Marshwalker
+q(81768),	-- CLASSIC:Ashenvale Mission I: Defeat Satyrs
+q(81769),	-- CLASSIC:Ashenvale Mission II: Defeat Treants
+q(81770),	-- CLASSIC:Ashenvale Mission III: Defeat Dragonkin
+q(81771),	-- CLASSIC:Ashenvale Mission IV: Dragon Intelligence
+q(81772),	-- CLASSIC:Ashenvale Mission V: Satyr Intelligence
+q(81773),	-- CLASSIC:Ashenvale Mission VI: Treant Intelligence
+q(81774),	-- CLASSIC:Ashenvale Mission VII: Recover Dreamengine
+q(81775),	-- CLASSIC:Ashenvale Mission VIII: Recover Azsharan Prophecy
+q(81776),	-- CLASSIC:Ashenvale Mission IX: Recover Dream-Touched Dragonegg
+q(81777),	-- CLASSIC:Ashenvale Mission X: Dreamroot
+q(81778),	-- CLASSIC:Ashenvale Mission XI: Fool's Gold Dust
+q(81779),	-- CLASSIC:Ashenvale Mission XII: Dream-Infused Dragonscale
+q(81780),	-- CLASSIC:Ashenvale Mission XIII: Defeat Larsera
+q(81781),	-- CLASSIC:Ashenvale Mission XIV: Defeat Zalius
+q(81782),	-- CLASSIC:Ashenvale Mission XV: Defeat Shredder 9000
+q(81783),	-- CLASSIC:Ashenvale Mission XVI: Rescue Alyssian Windcaller
+q(81784),	-- CLASSIC:Ashenvale Mission XVII: Rescue Doran Dreambough
+q(81785),	-- CLASSIC:Ashenvale Mission XVIII: Rescue Maseara Autumnmoon
+q(81786),	-- CLASSIC:Hinterlands Mission I: Defeat Moonkin
+q(81787),	-- CLASSIC:Hinterlands Mission II: Defeat Giant Turtles
+q(81788),	-- CLASSIC:Hinterlands Mission III: Defeat Dragonkin
+q(81789),	-- CLASSIC:Hinterlands Mission IV: Dragon Intelligence
+q(81817),	-- CLASSIC:Hinterlands Mission V: Turtle Intelligence
+q(81820),	-- CLASSIC:Hinterlands Mission VI: Moonkin Intelligence
+q(81826),	-- CLASSIC:Hinterlands Mission VII: Recover Star-Touched Dragonegg
+q(81830),	-- CLASSIC:Hinterlands Mission VIII: Recover Elunar Relic
+q(81832),	-- CLASSIC:Hinterlands Mission IX: Recover Dreampearl
+q(81833),	-- CLASSIC:Hinterlands Mission X: Star Lotus
+q(81834),	-- CLASSIC:Hinterlands Mission XI: Starsilver Ore
+q(81835),	-- CLASSIC:Hinterlands Mission XII: Starshells
+q(81837),	-- CLASSIC:Hinterlands Mission XIII: Defeat Florius
+q(81838),	-- CLASSIC:Hinterlands Mission XIV: Defeat Doomkin
+q(81839),	-- CLASSIC:Hinterlands Mission XV: Defeat Ghamoo-Raja
+q(81850),	-- CLASSIC:Hinterlands Mission XVI: Rescue Elianar Shadowdrinker
+q(81851),	-- CLASSIC:Hinterlands Mission XVII: Rescue Serlina Starbright
+q(81852),	-- CLASSIC:Hinterlands Mission XVIII: Rescue Veanna Cloudsleeper
+q(81855),	-- CLASSIC:Feralas Mission I: Defeat Children of Cenarius
+q(81856),	-- CLASSIC:Feralas Mission II: Defeat Harpies
+q(81857),	-- CLASSIC:Feralas Mission III: Defeat Dragonkin
+q(81858),	-- CLASSIC:Feralas Mission IV: Dragon Intelligence
+q(81859),	-- CLASSIC:Feralas Mission V: Cenarion Intelligence
+q(81860),	-- CLASSIC:Feralas Mission VI: Harpy Intelligence
+q(81861),	-- CLASSIC:Feralas Mission VII: Recover Moonglow Dragonegg
+q(81863),	-- CLASSIC:Feralas Mission VIII: Recover Keeper's Notes
+q(81864),	-- CLASSIC:Feralas Mission IX: Recover Harpy Screed
+q(81865),	-- CLASSIC:Feralas Mission X: Moonroot
+q(81866),	-- CLASSIC:Feralas Mission XI: Greater Moonstone
+q(81867),	-- CLASSIC:Feralas Mission XII: Greater Moondragon Scales
+q(81868),	-- CLASSIC:Feralas Mission XIII: Defeat Tyrannikus
+q(81870),	-- CLASSIC:Feralas Mission XIV: Defeat Alondrius
+q(81871),	-- CLASSIC:Feralas Mission XV: Defeat Slirena
+q(81872),	-- CLASSIC:Feralas Mission XVI: Rescue Mellias Earthtender
+q(81873),	-- CLASSIC:Feralas Mission XVII: Rescue Nerene Brooksinger
+q(81874),	-- CLASSIC:Feralas Mission XVIII: Rescue Jamniss Treemender
 q(83183),	--
 q(83184),	--
 q(83185),	--
@@ -212,7 +303,11 @@ q(83995),	--
 q(83996),	--
 q(83997),	--
 q(83998),	--
+q(84008),	-- CLASSIC:A Lesson in Grace
+q(84017),	-- CLASSIC:A Time to Kill
 q(84124),	-- CLASSIC:Legacy of Valor
+q(84125),	-- CLASSIC:Close Enough To Touch
+q(84126),	-- CLASSIC:Finish the Fight
 q(84135),	-- CLASSIC:Beach Bot
 q(84136),	-- CLASSIC:The Beast Master of Moonglade
 q(84137),	-- CLASSIC:Mechanical Romance
@@ -259,6 +354,8 @@ q(84411),	-- CLASSIC:Diplomat Ring
 q(84412),	-- CLASSIC:A Diplomatic Mission
 q(84413),	-- CLASSIC:Repairing the Shard
 q(84415),	--
+q(84416),	--
+q(84417),	--
 1.15.3.55348
 q(84499),	--
 q(84500),	--
@@ -431,6 +528,7 @@ q(86971),	-- CLASSIC:Curious Karazhan Curios!
 q(86972),	-- CLASSIC:Curious Karazhan Curios!
 q(87283),	-- CLASSIC:The Violet Satchel
 q(87360),	-- CLASSIC:The Fall of Kel'Thuzad
+q(87361),	-- CLASSIC:Laid to Rest
 q(87362),	-- CLASSIC:Hope Begins in the Dark
 q(87364),	-- CLASSIC:Seal the Deal
 q(87365),	-- CLASSIC:Valor Grows by Daring
@@ -443,21 +541,12 @@ q(87371),	--
 q(87372),	--
 q(87373),	--
 1.15.6.58658
-q(87441),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87442),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87443),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87444),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
-q(87459),	-- CLASSIC:Scarlet Activities
-q(87493),	-- CLASSIC:Unrest at Tyr's Hand
-q(87497),	-- CLASSIC:The Schism
-q(87498),	-- CLASSIC:The Scarlet Reclamation
 q(87502),	-- CLASSIC:Gathering Intelligence
 q(87506),	-- CLASSIC:Weakening The Defenses
 q(87508),	-- CLASSIC:Report to Lord Tyrosus
 q(87509),	-- CLASSIC:The Wrath of the Dawn
 q(87516),	-- CLASSIC:Decapitation Strike
 q(87517),	-- CLASSIC:Red = Dead
-q(87518),	-- CLASSIC:Fall of the Grand Crusader
 q(87520),	-- CLASSIC:Antithesis of the Light
 1.15.6.58725
 q(87377),	-- CLASSIC:Never at Rest
@@ -470,6 +559,7 @@ q(88718),	-- CLASSIC:Never at Rest
 q(88729),	-- CLASSIC:Ramaladni's Icy Grasp
 q(88730),	-- CLASSIC:The Only Song I Know...
 q(88744),	-- CLASSIC:Under the Shadow
+q(88745),	-- CLASSIC:Shadows of Doom
 q(88748),	-- CLASSIC:Cracked Necrotic Crystal
 q(88749),	-- CLASSIC:Faint Necrotic Crystal
 1.15.6.58866
@@ -505,11 +595,9 @@ q(89376),	--
 q(89224),	-- CLASSIC:Food Shortage
 q(89226),	--
 q(89229),	-- CLASSIC:The Right Path
-q(89232),	-- CLASSIC:The First Step
 q(89234),	-- CLASSIC:A Personal Matter
 q(89235),	-- CLASSIC:The Culling
 q(89236),	-- CLASSIC:Wrangling Apples
-q(89237),	-- CLASSIC:This Could Get Expensive...
 q(89245),	-- CLASSIC:Fish in a Barrel
 q(89253),	-- CLASSIC:Main Course
 q(89255),	-- CLASSIC:Prove Your Worth: Headgear
@@ -522,10 +610,6 @@ q(89261),	-- CLASSIC:Prove Your Worth: Legguards
 q(89262),	-- CLASSIC:Prove Your Worth: Boots
 q(89298),	--
 q(89299),	--
-q(89300),	-- CLASSIC:The Ashbringer
-q(89301),	-- CLASSIC:A Difficult Path
-q(89303),	-- CLASSIC:On Fate's Path
-q(89304),	-- CLASSIC:The Perfect Metal
 q(89310),	-- CLASSIC:Terrordale
 q(89328),	-- CLASSIC:Loss
 q(89329),	-- CLASSIC:Stomping Out The Infestation
@@ -534,37 +618,20 @@ q(89341),	-- CLASSIC:The Great Feast
 q(89342),	-- CLASSIC:VIP Haute Club Membership
 q(89381),	-- CLASSIC:Pin Cushion
 q(89421),	-- CLASSIC:Bullet Heaven
-q(89442),	-- CLASSIC:Emblem of Darkness
-q(89443),	-- CLASSIC:Falling Into Place
 q(89444),	-- CLASSIC:The Corrupted Emblem
-q(89445),	-- CLASSIC:Blades of Light
-q(89446),	-- CLASSIC:The Lost Craftsman
-q(89447),	-- CLASSIC:Extravagant Tastes
-q(89448),	-- CLASSIC:Gathering Light
-q(89449),	-- CLASSIC:The Radiant Forge
-q(89451),	-- CLASSIC:Journey To Moonglade
-q(89462),	-- CLASSIC:The Druid of the Talon
 q(89463),	-- CLASSIC:Nondisclosure Arguement
 q(89471),	-- CLASSIC:Goblin Tinkering
-q(89473),	-- CLASSIC:The Well of Eternity
-q(89474),	-- CLASSIC:Forgiveness
-q(89475),	-- CLASSIC:The Lonely Path of the Damned
 q(89485),	-- CLASSIC:Whimsical Horrors
 q(89486),	-- CLASSIC:A Pinch of Gunpowder
 q(89487),	-- CLASSIC:Much Ado About Magnets
-q(89488),	-- CLASSIC:A Kind of Peace
 q(89489),	-- CLASSIC:Increased Drop Rate
 q(89491),	-- CLASSIC:A Complicated Escape Plan
-q(89562),	-- CLASSIC:My Old Enemy
 q(89563),	-- CLASSIC:Leonid's Burden
 q(89567),	-- CLASSIC:The Wrecked Caravan
 q(89568),	-- CLASSIC:Something New
 q(89574),	-- CLASSIC:Servants of Death
 q(90106),	--
 q(90107),	-- CLASSIC:The Blade Reformed
-q(90506),	-- CLASSIC:Take Their Breath Away
-q(90507),	-- CLASSIC:Logistics Challenges
-q(90508),	-- CLASSIC:As The Crow Flies
 q(90510),	-- CLASSIC:New Avalon
 q(90516),	--
 q(90518),	-- CLASSIC:An Apple a Day Keeps the Undead at Bay
@@ -572,7 +639,6 @@ q(90519),	-- CLASSIC:Fish On Demand
 q(90520),	-- CLASSIC:Food Safety
 q(90539),	--
 q(90558),	--
-q(90559),	-- CLASSIC:The Tempering
 q(90566),	-- CLASSIC:Oh, My Bleeding Hearts!
 q(90603),	--
 q(90604),	--

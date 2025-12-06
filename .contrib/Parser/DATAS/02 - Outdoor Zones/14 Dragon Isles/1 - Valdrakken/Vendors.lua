@@ -746,6 +746,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			n(196637, {	-- Tethalash
+				["coord"] = { 25.6, 35.6, VALDRAKKEN },
+				["sym"] = {{"select","itemID",
+					198809,	-- Armored Vorquin Leystrider (MOUNT!)
+					201720,	-- Bronze Vorquin (MOUNT!)
+					201702,	-- Crimson Vorquin (MOUNT!)
+					198808,	-- Guardian Vorquin (MOUNT!)
+					198811,	-- Majestic Armored Vorquin (MOUNT!)
+					201719,	-- Obsidian Vorquin (MOUNT!)
+					201704,	-- Sapphire Vorquin (MOUNT!)
+					198810,	-- Swift Armored Vorquin (MOUNT!)
+				}},
+				["groups"] = {
+					i(249548, { ["timeline"] = { ADDED_11_2_7 } }),	-- Augmenter's Opal Banner (DECOR!)
+					i(249824, { ["timeline"] = { ADDED_11_2_7 } }),	-- Devastator's Brazier (DECOR!)
+					i(249549, {	-- Draconic Crafter's Table (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
+					}),
+					i(249547, { ["timeline"] = { ADDED_11_2_7 } }),	-- Evoker's Elegant Rug (DECOR!)
+					i(249545, { ["timeline"] = { ADDED_11_2_7 } }),	-- Preserver's Censer (DECOR!)
+				},
+			}),
 			n(185562, {	-- Tithris
 				["coord"] = { 47.3, 46.7, VALDRAKKEN },
 				["groups"] = {
@@ -756,9 +779,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(196640, {	-- Yzinia <Innkeeper>
 				["coord"] = { 22.6, 30.8, VALDRAKKEN },
-				["groups"] = {
-					i(200099),	-- M.R.E.
-				},
+				["groups"] = { i(200099) },	-- M.R.E.
 			}),
 			n(216449, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Vaskarn
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },

@@ -1957,6 +1957,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
+				n(2140, {	-- Edwin Harly
+					["coord"] = { 44.1, 39.7, SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["groups"] = { i(257412, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Stoppered Gilnean Barrel (DECOR!)
+				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
 					["coords"] = {
 						-- #if AFTER CATA

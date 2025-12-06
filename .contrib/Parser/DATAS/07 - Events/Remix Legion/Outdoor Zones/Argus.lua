@@ -25,14 +25,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 					}),
-					ach(42693),	-- Breaking the Legion I
-					ach(42694),	-- Breaking the Legion II
+					achpart(42693, 42695),	-- Breaking the Legion I
+					achpart(42694, 42695),	-- Breaking the Legion II
 					ach(42695),	-- Breaking the Legion III
 					ach(60818),	-- Elusive Foes: Argus
 					ach(60817),	-- Explore Argus
-					ach(42696),	-- Greater Invasion Points I
-					ach(42697),	-- Greater Invasion Points II
-					ach(42698),	-- Greater Invasion Points III
+					ach(42696, {	-- Greater Invasion Points I
+						["maps"] = { 927, 928, 929, 930, 931, 932 },
+					}),
+					ach(42697, {	-- Greater Invasion Points II
+						["maps"] = { 927, 928, 929, 930, 931, 932 },
+					}),
+					ach(42698, {	-- Greater Invasion Points III
+						["maps"] = { 927, 928, 929, 930, 931, 932 },
+					}),
 					ach(60816),	-- Hidden Treasures: Argus
 					ach(42618, {	-- Looking for Group: Argus
 						-- Meta Achievement

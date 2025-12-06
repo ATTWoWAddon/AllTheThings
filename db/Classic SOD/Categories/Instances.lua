@@ -3409,7 +3409,7 @@ q(8557,{awp=11505,c={1},coords={{51.8,39.5,1451}},cost={{"i",20860,5},{"i",20864
 s(230990,233441,{awp=11505,c={1},f=3,lvl=60,q=4,u=1610})}}),
 q(8558,{awp=11505,c={1},coords={{51.1,38.9,1451}},cost={{"i",20858,5},{"i",20862,5},{"i",20873,2},{"i",20886,1}},minReputation={609,42000},qgs={15499},u=1610,g={
 s(230991,233442,{awp=11505,c={1},f=21,lvl=60,q=4,u=1610})}})}}),
-q(8791,{awp=11505,lvl=60,maps={1451},providers={{"i",235048}},u=1610,g={
+q(8791,{awp=11505,lvl=60,maps={1451},providers={{"i",21220},{"i",235048}},u=1610,g={
 i(234811,{awp=11505,f=51,lvl=60,u=1610}),
 i(234812,{awp=11505,f=51,lvl=60,u=1610}),
 i(234813,{awp=11505,f=51,lvl=60,u=1610}),
@@ -5064,7 +5064,7 @@ i(237294,{awp=11506,f=52,u=1611})}}),
 q(9121,{altQuests={9122,9123,9378},awp=11506,coords={{81.5,58.3,1423}},cost={{"i",12811,1},{"i",20725,2},{"i",14344,2},{"i",12363,5},{"g",600000}},lvl=60,minReputation={529,9000},qgs={16116},u=1611}),
 q(9122,{altQuests={9121,9123,9378},awp=11506,coords={{81.5,58.3,1423}},cost={{"i",20725,1},{"i",12363,2},{"g",300000}},lvl=60,minReputation={529,21000},qgs={16116},u=1611}),
 q(9123,{altQuests={9121,9122,9378},awp=11506,coords={{81.5,58.3,1423}},lvl=60,minReputation={529,42000},qgs={16116},u=1611}),
-q(9120,{awp=11506,lvl=60,providers={{"i",236350}},u=1611,g={
+q(9120,{awp=11506,lvl=60,providers={{"i",22520},{"i",236350}},u=1611,g={
 i(236351,{awp=11506,f=53,u=1611}),
 i(236352,{awp=11506,f=53,u=1611})}}),
 q(9229,{awp=11506,coords={{81.8,58.1,1423}},lvl=60,qgs={16112},sourceQuests={9033},u=1611,g={
@@ -5558,7 +5558,7 @@ s(289445,241077,{awp=11507,f=4,lvl=60,q=4,u=1612}),
 i(239718,{awp=11507,lvl=60,u=1612}),
 i(239756,{awp=11507,lvl=60,u=1612}),
 i(239760,{awp=11507,lvl=60,u=1612}),
-i(239694,{awp=11507,f=55,lvl=60,u=1612}),
+i(239694,{awp=11507,lvl=60,u=1612}),
 s(289444,241076,{awp=11507,f=5,lvl=60,q=4,u=1612}),
 s(289509,241170,{awp=11507,f=7,lvl=60,q=4,u=1612}),
 i(240997,{awp=11507,f=36,lvl=60,q=4,u=1612}),
@@ -6999,7 +6999,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1608})}}),
 h(-31,{awp=10200,u=1608,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1608,g={
-crit(8825,{achID=2336,id=5,u=1609})}}),
+crit(8825,{achID=2336,id=1,u=1609})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1608})}}),
 h(-45,{awp=10200,u=1608,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1608}),

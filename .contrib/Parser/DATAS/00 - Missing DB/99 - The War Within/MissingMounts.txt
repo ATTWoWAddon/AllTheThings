@@ -4,70 +4,25 @@ mount(332482),	-- Bonecleaver's Skullboar \\ PH Skullboar \\ PH Skullboar (Grey)
 mount(1254363),	-- (PH) Legion Remix Mount
 12.0.0.63534
 mount(1238827),	-- Swift Spectral Dragonhawk
-mount(1242904),	-- Ashes of Belo'ren
-mount(1243593),	-- Fierce Grimlynx
-mount(1251433),	-- Amani Sunfeather \\ [DNT] Amani Eagle Orange
-mount(1251630),	-- Amani Windcaller
 mount(1251665),	-- Amani Blessed Bear
 mount(1252141),	-- [DNT] Jellyfish
-mount(1253929),	-- Cerulean Sporeglider
-mount(1260356),	-- Echo of Aln'sharan
-mount(1261291),	-- Fiery Dragonhawk
-mount(1261322),	-- Crimson Silvermoon Hawkstrider
-mount(1261325),	-- [DNT] 12.0 Black Hawkstrider
-mount(1261336),	-- Preyseeker's Hubris
-mount(1261337),	-- Preyseeker's Wrath
-mount(1265784),	-- Lucent Hawkstrider \\ [DNT] 12.0 White Hawkstrider
 12.0.0.63724
-mount(1253938),	-- Ruddy Sporeglider
-mount(1261357),	-- Amani Blessed Bear
 mount(1261579),	-- Ravenous Shredclaw \\ Red Kaiju Stalker
 mount(1266702),	-- Voidbound Stormray \\ Purple Cosmic Flyer
-mount(1266980),	-- Tenebrous Harrower \\ [DNT] 12.0 Void Harrower
-mount(1266993),	-- Arboreal Pseudoshell \\ [PH] Green Garden Snail
-mount(1266997),	-- Cabbage Pseudoshell \\ [PH] Pink Garden Snail
-mount(1267002),	-- Lavender Pseudoshell \\ [PH] Purple Garden Snail
-mount(1267004),	-- Accented Pseudoshell \\ [PH] Red Garden Snail
-mount(1268919),	-- Delver's Arcane Golem
-mount(1268924),	-- Silvermoon's Arcane Defender
-mount(1268926),	-- Elven Arcane Guardian
-mount(1268949),	-- Arcanovoid Construct
 12.0.0.63854
 mount(1263635),	-- Spectral Hawkstrider
-mount(1269273),	-- Vicious Snapvine
-mount(1269277),	-- Ferocious Snapvine
-mount(1269279),	-- Blooded Snapvine
-mount(1269280),	-- Savage Snapvine
-mount(1270520),	-- Fluffy Comfy Flying Quilt \\ Fluffy Comfy Flying Carpet
-mount(1270521),	-- Gruffy Comfy Flying Quilt \\ Gruffy Comfy Flying Carpet
-mount(1270522),	-- Huffy Comfy Flying Quilt \\ Huffy Comfy Flying Carpet
-mount(1270523),	-- Stuffy Comfy Flying Quilt \\ Stuffy Comfy Flying Carpet
 12.0.0.63967
 mount(1253924),	-- Brilliant Petalwing
-mount(1260354),	-- Untained Grove Crawler
-mount(1261583),	-- Insatiable Shredclaw
-mount(1270675),	-- Vivid Chloroceros
 12.0.0.64124
-mount(1261302),	-- Cobalt Dragonhawk
 mount(1261323),	-- Cerulean Hawkstrider
 mount(1261334),	-- Contained Stormarion Defender
 12.0.0.64228
-mount(1243597),	-- Rootstalker Grimlynx
-mount(1253927),	-- Vibrant Petalwing
-mount(1261155),	-- Augmented Stormray
-mount(1261316),	-- Amani Sharptalon
-mount(1261348),	-- Blessed Amani Burrower \\ [DNT] 12.0 Amani Pangolin
 mount(1261349),	-- Giganto Manis
-mount(1261351),	-- Witherbark Pango
-mount(1261360),	-- Ancestral War Bear \\ [DNT] 12.0 Shadowpine Bear
-mount(1261576),	-- Hexed Vilefeather Eagle \\ [DNT] 12.0 Hex Eagle Mount
-mount(1266700),	-- Sanguine Harrower
 12.0.0.64339
 mount(1261391),	-- Relinquished Scarlet Charger
-mount(1261584),	-- Prowling Shredclaw
-mount(1261585),	-- Frenzied Shredclaw
-12.0.0.64499
-mount(1261338),	-- Preyseeker's Nightmare
+12.0.0.64741
+mount(1261332),	-- Duskbrute Harrower
+mount(1266703),	-- Lab-grown Stormray
 
 
 
@@ -78,3 +33,6 @@ Missing in MountDB.lua
 mount(332482),	-- Bonecleaver's Skullboar \\ PH Skullboar \\ PH Skullboar (Grey)
 12.0.0.63534
 mount(1251665),	-- Amani Blessed Bear
+12.0.0.64741
+mount(1261332),	-- Duskbrute Harrower
+mount(1266703),	-- Lab-grown Stormray

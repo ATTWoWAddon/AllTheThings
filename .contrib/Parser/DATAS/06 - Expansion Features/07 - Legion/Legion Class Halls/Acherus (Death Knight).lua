@@ -787,7 +787,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(34653),	-- Archerus Knight's Wristguard
 							i(250114, {	-- Acherus Worktable (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] =  {{ "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(38662),	-- Bladed Ebon Amulet
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
@@ -808,7 +808,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(140935, {	-- Deathlord's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 }} ,
 							}),
 							i(139680, {	-- Deathlord's Bracers
 								["cost"] = 5000000,	-- 500g
@@ -826,7 +826,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140963, {	-- Deathlord's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(139676, {	-- Deathlord's Helm
 								["cost"] = 5000000,	-- 500g
@@ -835,28 +835,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140962, {	-- Deathlord's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},
 							}),
 							i(139678, {	-- Deathlord's Mantle
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250124, {	-- Ebon Blade Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},
 							}),
 							i(250112, {	-- Ebon Blade Planning Map (DECOR!)
 								["sourceAchievement"] = 60981,	-- Raise an Army for Acherus
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},
 							}),
 							i(250113, {	-- Ebon Blade Tome (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},
 							}),
 							i(250115, {	-- Ebon Blade Weapon Rack (DECOR!)
 								["sourceAchievement"] = 42270,	-- The Deathlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},
 							}),
 							i(38669),	-- Engraved Saronite Legplates
 							i(174488, {	-- Freezing Greatsword of the Ebon Blade
@@ -877,12 +877,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250123, {	-- Replica Acherus Soul Forge (DECOR!)
 								["sourceAchievement"] = 42287,	-- Hidden Potential of the Deathlord
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},
 							}),
 							i(260584, {	-- Replica Libram of the Dead (DECOR!)
 								["sourceAchievement"] = 60962,	-- Legendary Research of the Ebon Blade
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},
 							}),
 							i(38707),	-- Runed Spellblade
 							i(38665),	-- Saronite War Plate
@@ -911,17 +911,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = {
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(147540, {	-- Frostbrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(147541, {	-- Vilebrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},

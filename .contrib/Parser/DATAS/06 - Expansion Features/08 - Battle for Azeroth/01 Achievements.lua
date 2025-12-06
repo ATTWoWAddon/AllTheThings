@@ -226,14 +226,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		h(ach(13284, {	-- Frontline Warrior (H)
 			i(245476, {["timeline"] = { ADDED_11_2_7 }}),	-- Large Forsaken War Tent (DECOR!)
 		})),
-		ach(12740, {	-- Full of Scrap!
+		ach(12738, {	-- Holy Scrap!
 			["maps"] = {
 				BORALUS,
 				DAZARALOR,
 			},
-			["groups"] = {
-				ach(12739),	-- Scraptastic!
-				ach(12738),	-- Holy Scrap!
+		}),
+		ach(12739, {	-- Scraptastic!
+			["maps"] = {
+				BORALUS,
+				DAZARALOR,
+			},
+		}),
+		ach(12740, {	-- Full of Scrap!
+			["maps"] = {
+				BORALUS,
+				DAZARALOR,
 			},
 		}),
 		ach(12482, {	-- Get Hek'd

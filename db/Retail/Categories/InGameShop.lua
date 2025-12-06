@@ -46,10 +46,10 @@ p(2051,{awp=70300,b=1,itemID=147900,npcID=122033,spellID=243499,u=3}),
 p(2184,{awp=80001,b=1,itemID=160587,npcID=138742,spellID=272771,u=3}),
 p(4568,{awp=110105,b=1,itemID=223498,npcID=223691,spellID=449280,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(4717,{awp=110007,itemID=233190,npcID=234439,spellID=473300,u=3})),
-p(156,{awp=90005,npcID=23234,rwp=90105,u=2}),
+p(156,{awp=90005,b=1,itemID=32588,npcID=23234,rwp=90105,spellID=40549,u=2}),
 p(2185,{awp=80001,b=1,itemID=160588,npcID=138741,rwp=100107,spellID=272772,u=2}),
 p(316,{awp=40100,b=1,itemID=70099,npcID=53623,rwp=80300,spellID=99578,u=2}),
-p(2623,{awp=80300,npcID=151788,rwp=100107,u=2}),
+p(2623,{awp=80300,itemID=258414,npcID=151788,rwp=100107,spellID=294231,u=2}),
 i(69847,{awp=40100,b=1,f=101,rwp=40200,spellID=98736,u=2}),
 p(311,{awp=40200,itemID=72068,npcID=53283,pb=1,rwp=50407,spellID=98736,u=2,g={
 crit(23740,{achID=8397,awp=50400,id=12,pb=1})}}),

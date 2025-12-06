@@ -227,14 +227,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["races"] = HORDE_ONLY,
 					}),
 					-- Dracthyr Mounts
-					i(198809),	-- Armored Vorquin Leystrider (MOUINT!)
-					i(201720),	-- Bronze Vorquin (MOUINT!)
-					i(201702),	-- Crimson Vorquin (MOUINT!)
-					i(198808),	-- Guardian Vorquin (MOUINT!)
-					i(198811),	-- Majestic Armored Vorquin (MOUINT!)
-					i(201719),	-- Obsidian Vorquin (MOUINT!)
-					i(201704),	-- Sapphire Vorquin (MOUINT!)
-					i(198810),	-- Swift Armored Vorquin (MOUINT!)
+					i(198809),	-- Armored Vorquin Leystrider (MOUNT!)
+					i(201720),	-- Bronze Vorquin (MOUNT!)
+					i(201702),	-- Crimson Vorquin (MOUNT!)
+					i(198808),	-- Guardian Vorquin (MOUNT!)
+					i(198811),	-- Majestic Armored Vorquin (MOUNT!)
+					i(201719),	-- Obsidian Vorquin (MOUNT!)
+					i(201704),	-- Sapphire Vorquin (MOUNT!)
+					i(198810),	-- Swift Armored Vorquin (MOUNT!)
 				},
 			}),
 			n(200562, {	-- Turik

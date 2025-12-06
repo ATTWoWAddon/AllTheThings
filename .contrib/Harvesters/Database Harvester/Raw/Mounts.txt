@@ -536,6 +536,8 @@
 5.5.2.63832
 1266345@@@Cerulean Phase-Hunter
 1266866@@@Reins of the Starshard Netherdrake
+5.5.3.64530
+1280068@@@[PH] Lunar Horse Mount
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -2445,3 +2447,10 @@
 1261348@@@Blessed Amani Burrower
 1261360@@@Ancestral War Bear
 1261576@@@Hexed Vilefeather Eagle
+12.0.0.64741
+3363@@@Lost Nether Drake
+1243003@@@Light-forged Mechsuit
+1261332@@@Duskbrute Harrower
+1266703@@@Lab-grown Stormray
+1270522@@@Comfy Bel'ameth Flying Quilt
+1270523@@@Comfy Silvermoon Flying Quilt

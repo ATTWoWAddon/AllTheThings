@@ -1234,13 +1234,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140937, {	-- Archdruid's Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(140967, {	-- Archdruid's Greater Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 4000 }},	-- 4,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 4000 } },
 							}),
 							i(140966, {	-- Archdruid's Lesser Armor Kit
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139730, {	-- Bracers of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
@@ -1248,12 +1248,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(260581, {	-- Brazier of Elune (DECOR!)
 								["sourceAchievement"] = 42272,	-- The Archdruid's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},	-- 1,500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(251013, {	-- Cenarion Arch (DECOR!)
 								["sourceAchievement"] = 60983,	-- Raise an Army for the Dreamgrove
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},	-- 2,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139729, {	-- Cord of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
@@ -1262,7 +1262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(140542),	-- Dreamgrove Spire
 							i(250133, {	-- Dreamweaver Banner (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1000 }},	-- 1,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(139725, {	-- Gloves of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
@@ -1277,14 +1277,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250111, {	-- Replica Tome of the Ancients (DECOR!)
 								["sourceAchievement"] = 60964,	-- Legendary Research of the Dreamgrove
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},	-- 3,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(139723, {	-- Robes of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(245550, {	-- Runed Dreamweaver Moonstone (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(139724, {	-- Sandals of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
@@ -1292,11 +1292,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250134, {	-- Seed of Ages Cutting (DECOR!)
 								["sourceAchievement"] = 42289,	-- Hidden Potential of the Archdruid
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},	-- 5,000x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(246216, {	-- Sprouting Lamppost (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 500 }},	-- 500x Order Resources
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(136795),	-- Tome of the Wilds: Charm Woodland Creature (CI!)
 							i(136794),	-- Tome of the Wilds: Flap (CI!)

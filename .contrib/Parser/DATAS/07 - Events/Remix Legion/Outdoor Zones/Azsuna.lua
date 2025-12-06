@@ -61,10 +61,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 				n(TREASURES, {
-					o(240645, {	-- Glimmering Treasure Chest
-						["questID"] = 37649,
-						["coord"] = { 69.5, 49.3, 632 },	-- Oceanus Cove
-						["description"] = "In the Oceanus Cove cave next to Lady Sssurine.",
+					header(HEADERS.Object, 240645, {	-- Glimmering Treasure Chest
+						["provider"] = { "o", 240645 },	-- Glimmering Treasure Chest
 						["groups"] = { i(251674) },	-- Sssurine's Luxurious Sssandals
 					}),
 				}),

@@ -2163,11 +2163,13 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(ZONE_DROPS, {
-					applyclassicphase(WRATH_PHASE_TWO, i(44981, {	-- Ashwood Brand
+					applyclassicphase(WRATH_PHASE_TWO, n(33224, {	-- Maiden of Ashwood Lake
 						["description"] = "Kiss this frog.",
 						["provider"] = { "i", 44986 },	-- Warts-B-Gone Lip Balm
 						["coord"] = { 60.5, 51.5, GRIZZLY_HILLS },
-						["cr"] = 33224,	-- Maiden of Ashwood Lake
+						["groups"] = {
+							i(44981),	-- Ashwood Brand
+						},
 					})),
 					i(36743, {	-- Desperate Mojo
 						["description"] = "Only used for a given quest, can otherwise be vendored.",

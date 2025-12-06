@@ -713,7 +713,7 @@ decor(4038),	-- Suramar Street Light
 decor(4039),	-- Suramar Storage Crate
 decor(4040),	-- Suramar Window
 decor(4041),	-- Shal'dorei Open-Air Tent
-decor(4042),	-- Trueshot Skeletal Dragon Trophy
+decor(4042),	-- Trueshot Skeletal Dragon Head \\ Trueshot Skeletal Dragon Trophy
 decor(4048),	-- Pandaren Target Dummy
 decor(4157),	-- Traditional Brewfest Stein
 decor(4158),	-- Venthyr's Target Dummy
@@ -815,8 +815,8 @@ decor(4823),	-- Elwynn Grass Spread \\ Large Grass Patch
 decor(4829),	-- [DNT] Rugged Brazier - DO NOT USE - neighborhood use only
 decor(4831),	-- [DNT] Standing Rugged Brazier - DO NOT USE - neighborhood use only
 decor(4833),	-- [DNT] Rugged Fire Pit - DO NOT USE - neighborhood use only
-decor(4839),	-- Nesingwary Shoveltusk Trophy
-decor(4841),	-- Nesingwary Elk Trophy
+decor(4839),	-- Nesingwary Mounted Shoveltusk Head \\ Nesingwary Shoveltusk Trophy
+decor(4841),	-- Nesingwary Mounted Elk Head \\ Nesingwary Elk Trophy
 decor(4843),	-- Void-Corrupted Rotunda
 decor(4844),	-- Rough Wooden Chair
 decor(4845),	-- Elwynn Small Grass Patch \\ Tiny Grass Patch
@@ -903,7 +903,7 @@ decor(7607),	-- Conclave Pedestal
 decor(7608),	-- Netherlight Lightwell
 decor(7609),	-- Conjured Altar of the Guardian
 decor(7688),	-- Tusked Leather Tapestry
-decor(7689),	-- Razorwind Trophy Pelt
+decor(7689),	-- Razorwind Banner Pelt \\ Razorwind Trophy Pelt
 decor(7701),	-- Ancient Weyrn Device
 decor(7815),	-- Uncrowned Apothecary's Cabinet
 decor(7816),	-- Uncrowned Apothecary's Supplies
@@ -1497,7 +1497,7 @@ decor(1144),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Decor_Fountain01_LightBloom.m2
 decor(1145),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01_LightBloom.m2
 decor(1146),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone01.m2
 decor(1147),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01.m2
-decor(1148),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus01.m2
+decor(1148),	-- Ritual-Cursed Sarcophagus \\ [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus01.m2
 decor(1149),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_WallShelf01.m2
 decor(1150),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus02.m2
 decor(1151),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporeContainer01_Lightbloom.m2
@@ -1506,8 +1506,8 @@ decor(1154),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone04.m2
 decor(1156),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone05.m2
 decor(1157),	-- Sturdy Haranir Chair \\ [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Chair02_SitMedium.m2
 decor(1158),	-- [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Chair01_SitMedium.m2
-decor(1159),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone02.m2
-decor(1160),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone03.m2
+decor(1159),	-- Sin’dorei Honor Stone \\ [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone02.m2
+decor(1160),	-- Diamond Honor Stone \\ [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone03.m2
 decor(1164),	-- [DNT] [AUTOGEN] 12PM_Primitive_Furniture_Table01.m2
 decor(1204),	-- Sunsmoke Censer \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_IncenseBurner01.m2
 decor(1220),	-- Embroidered Sunfury Chair \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Chair01.m2
@@ -1537,8 +1537,8 @@ decor(1431),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn05.m2
 decor(1432),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn04_Destroyed01.m2
 decor(1433),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02_Destroyed01.m2
 decor(1441),	-- [DNT] Small String of Schmancy Goblin Lights - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 11GO_Goblin_Lighting_Stringlights02.m2
-decor(1442),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Sundial01.m2
-decor(1489),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Table06.m2
+decor(1442),	-- Silvermoon Sundial \\ [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Sundial01.m2
+decor(1489),	-- Majestic Lightwood Table \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Table06.m2
 decor(1642),	-- [DNT] 12PH_NightElf_INE01_Partition_Pillar.wmo - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_NightElf_INE01_Partition_Pillar.wmo
 decor(1643),	-- [DNT] 12PH_NightElf_INE01_Partition_W_S.wmo - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_NightElf_INE01_Partition_W_S.wmo
 decor(1644),	-- [DNT] 12PH_NightElf_INE01_Partition_W_L.wmo - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_NightElf_INE01_Partition_W_L.wmo
@@ -1561,7 +1561,7 @@ decor(1904),	-- [DNT] 12BE_BloodElf_Lighting_LanternFloating01_Off.m2 - DO NOT U
 decor(1905),	-- [DNT] [AUTOGEN] 11WE_WildElves_Navigation_RootPortal01.m2
 decor(1906),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Chandelier02.m2
 decor(1907),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Candle02.m2
-decor(1908),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Candelabra03.m2
+decor(1908),	-- Ornate Silvermoon Candelabra \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Candelabra03.m2
 decor(1909),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternFloating02.m2
 decor(1926),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03.m2
 decor(1927),	-- [DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2 - DO NOT USE - no off lights \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2
@@ -1643,7 +1643,7 @@ decor(4427),	-- Kafa Creamer
 decor(4428),	-- Legerdemain Lounge Sign Board
 decor(4429),	-- Dalaran Kafa Table
 decor(4430),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue02.m2
-decor(5129),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask01.m2
+decor(5129),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask01.m2 (FG) \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask01.m2
 decor(5130),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask02.m2
 decor(5131),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask03.m2
 decor(5132),	-- Cosmic Void Table \\ [DNT] [AUTOGEN] 12VD_Void_Furniture_Table01.m2
@@ -1670,25 +1670,25 @@ decor(7700),	-- War Creche Teaching Crystal
 decor(7780),	-- Silvermoon Privacy Screen \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Screen01.m2
 decor(7781),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Screen02.m2
 decor(7782),	-- Crimson Lightwood Privacy Screen \\ Crimson Lightwood Screen \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Screen03.m2
-decor(7825),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Trellis01.m2
-decor(7826),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg01.m2
-decor(7827),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg02.m2
-decor(7828),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg03.m2
+decor(7825),	-- Lush Garden Trellis \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Trellis01.m2
+decor(7826),	-- Colorful White Noblegarden Egg \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg01.m2
+decor(7827),	-- Colorful Blue Noblegarden Egg \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg02.m2
+decor(7828),	-- Colorful Purple Noblegarden Egg \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Egg03.m2
 decor(7829),	-- Spring Blossom Ceiling Light \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
 decor(7830),	-- Spring Blossom Shelf \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_WallShelf01.m2
-decor(7832),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal01.m2
-decor(7833),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal02.m2
-decor(7834),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal03.m2
+decor(7832),	-- Crimson Crystal Column \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal01.m2
+decor(7833),	-- Crimson Crystal Core \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal02.m2
+decor(7834),	-- Crimson Crystal Fragment \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_BloodCrystal03.m2
 decor(8124),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue01_Mirrored.m2
 decor(8179),	-- Pandaren Wooden Cart
 decor(8180),	-- Commander's Kafa Mug
 decor(8181),	-- Ceramic Kafa Mug
 decor(8182),	-- Dalaran Kafa Grinder
 decor(8844),	-- Test Decor
-decor(8872),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_LargePlatter01.m2
+decor(8872),	-- Eversong Feast Platter \\ [DNT] [AUTOGEN] 12BE_BloodElf_Food_LargePlatter01.m2
 decor(8873),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_LargePlatter02.m2
-decor(8874),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_LargePlatter03.m2
-decor(8875),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_Grapes01.m2
+decor(8874),	-- Eversong Dessert Platter \\ [DNT] [AUTOGEN] 12BE_BloodElf_Food_LargePlatter03.m2
+decor(8875),	-- Goldenmist Grapes \\ [DNT] [AUTOGEN] 12BE_BloodElf_Food_Grapes01.m2
 decor(8876),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_Meat01.m2
 decor(8877),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_Pie01.m2
 decor(8878),	-- [DNT] Elegant Silvermoon Dessert Tray - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12BE_BloodElf_Food_Cake01.m2
@@ -1707,7 +1707,7 @@ decor(8990),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Pitcher01.m2
 decor(8991),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug01.m2
 decor(8992),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug02.m2
 decor(8993),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Tent01.m2
-decor(9065),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_BirdBath01.m2
+decor(9065),	-- Lush Garden Fungal Basin \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_BirdBath01.m2
 decor(9248),	-- Dried Gilnean Roses
 decor(9249),	-- Hyjal Climbing Vine
 decor(9250),	-- Ancient Zandalari Ritual Scroll
@@ -1740,13 +1740,13 @@ decor(9291),	-- [DNT] [AUTOGEN] 12PM_Primitive_Furniture_Bed01.m2
 decor(9419),	-- Thalassian Chest
 decor(9420),	-- Astalor's Hookah
 decor(9421),	-- 590 Quel'Lithien Red Display Bottle
-decor(9422),	-- Thalassion Academy Dictation Device
+decor(9422),	-- Thalassian Academy Dictation Device \\ Thalassion Academy Dictation Device
 decor(9423),	-- Sin'dorei Wine Display
 decor(9439),	-- Scarred Orcish Spear
 decor(9440),	-- Clefthoof Hide Rug
 decor(9441),	-- Weathered History of the Warchiefs
 decor(9442),	-- Sandy Vulpera Tapestry
-decor(9443),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_WallLamp01.m2
+decor(9443),	-- Lush Garden Butterfly Sconce \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_WallLamp01.m2
 decor(9444),	-- Spring Blossom Wreath \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Wreath01.m2
 decor(9475),	-- Banner of the Ebon Blade
 decor(9476),	-- Artisanal Display Tent
@@ -1809,7 +1809,7 @@ decor(10778),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Window01.m2
 decor(10784),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas01.m2
 decor(10788),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas04.m2
 decor(10790),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_EnergyFocus01.m2
-decor(10858),	-- [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain01.m2
+decor(10858),	-- Zul’Aman Ancestral Fountain \\ [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain01.m2
 decor(10859),	-- [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain02.m2
 decor(10861),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Bowl01.m2
 decor(10862),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack04.m2
@@ -1825,12 +1825,12 @@ decor(11140),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack08.m2
 decor(11141),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_RopeKnot01.m2
 decor(11284),	-- Silvermoon Training Dummy \\ [DNT] [AUTOGEN] 12BE_BloodElf_Defense_TrainingDummy01.m2
 decor(11285),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack07.m2
-decor(11323),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_ToolRack02.m2
+decor(11323),	-- Amani Crafter's Tool Rack \\ [DNT] [AUTOGEN] 12TR_Amani_Crafting_ToolRack02.m2
 decor(11324),	-- Hash'ey Heartbroth Cauldron \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Cauldron01.m2
 decor(11325),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit02.m2
 decor(11326),	-- Empty Amani Cauldron \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Cauldron02.m2
 decor(11327),	-- Carved Idol of Nalorakk, Loa of War \\ Carved Idol of Nalorakk \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_LoaTrinket03.m2
-decor(11328),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_Banner01.m2
+decor(11328),	-- Banner of the Amani Tribe \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_Banner01.m2
 decor(11329),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Incense01.m2
 decor(11330),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_SmallTent01.m2
 decor(11331),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_Awning02.m2
@@ -1838,7 +1838,7 @@ decor(11332),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_SmallTent02.m2
 decor(11333),	-- Carved Idol of Jan'alai, Loa of Fire \\ Carved Idol of Jan'alai \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_LoaTrinket04.m2
 decor(11334),	-- Boiling Amani Cauldron \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Cauldron03.m2
 decor(11468),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_Awning01.m2
-decor(11470),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_EnergyFocus02.m2
+decor(11470),	-- Silvermoon Energy Focus \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_EnergyFocus02.m2
 decor(11504),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Sack02.m2
 decor(11505),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_SmallTent03.m2
 decor(11506),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Sack01.m2
@@ -1850,11 +1850,11 @@ decor(11936),	-- Carved Idol of Halazzi, Loa of the Hunt \\ Carved Idol of Halaz
 decor(11937),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy04.m2
 decor(11938),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy05.m2
 decor(11939),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Banner03.m2
-decor(11940),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Statue01.m2
-decor(12140),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket01.m2
-decor(12141),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket02.m2
-decor(12142),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket03.m2
-decor(12143),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket04.m2
+decor(11940),	-- Lush Garden Gnome-Like Statue \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Statue01.m2
+decor(12140),	-- Simple Bone-Tied Charm \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket01.m2
+decor(12141),	-- Windmark Tribal Charm \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket02.m2
+decor(12142),	-- Amani Dreamer's Charm \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket03.m2
+decor(12143),	-- Barebone Rope Charm \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_HangingTrinket04.m2
 decor(12144),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack01.m2
 decor(12145),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack03.m2
 decor(12146),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_HangingRope01.m2
@@ -1877,7 +1877,7 @@ decor(12167),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_HangingRope07_NoAnim.m2
 decor(12168),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_HangingRope10_Long_NoAnim.m2
 decor(12169),	-- [DNT] [AUTOGEN] 12PH_Folk_Barrel02.m2
 decor(12170),	-- [DNT] [AUTOGEN] 12PH_Folk_Barrel02_Open.m2
-decor(12171),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Chair01.m2
+decor(12171),	-- Lush Garden Fungal Chair \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Chair01.m2
 decor(12172),	-- Spring Blossom Window \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Window01.m2
 decor(12173),	-- Spring Blossom Gazebo \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Gazebo01.m2
 decor(12174),	-- [DNT] [AUTOGEN] 12PH_Folk_Bed_Small01.m2
@@ -1888,7 +1888,7 @@ decor(12216),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Incense02.m2
 decor(12219),	-- [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Shelf01.m2
 decor(12221),	-- [DNT] [AUTOGEN] 12PM_Primitive_Lighting_Brazier01.m2
 decor(12222),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_HangingRope01_NoAnim.m2
-decor(12223),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Fountain01.m2
+decor(12223),	-- Lush Garden Fungal Fountain \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_Fountain01.m2
 decor(12224),	-- [DNT] [AUTOGEN] 12PM_Primitive_Lighting_Brazier01_Unlit.m2
 decor(12225),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_StoneAltar01.m2
 decor(12284),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack02.m2
@@ -1916,7 +1916,7 @@ decor(14579),	-- Embossed Sin'dorei Fur Rug \\ [DNT] [AUTOGEN] 12BE_BloodElf_Dec
 decor(14580),	-- Ensorcelled Broom \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_SweepingBroom01.m2
 decor(14581),	-- Gilded Silvermoon Anvil \\ [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Anvil01.m2
 decor(14582),	-- Masterwork Crafting Hammer \\ [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Hammer01.m2
-decor(14583),	-- Gilded Thalassian Armillary \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_ArmillarySphere01.m2
+decor(14583),	-- Hearthlight Armillary \\ Gilded Thalassian Armillary \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_ArmillarySphere01.m2
 decor(14584),	-- Shining Sin'dorei Hourglass \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Hourglass01.m2
 decor(14585),	-- Font of Gleaming Water \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_MagicalBauble01.m2
 decor(14586),	-- Ornamental Silvermoon Hanger \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_DraperyHanger01.m2
@@ -1924,7 +1924,7 @@ decor(14587),	-- Gilded Silvermoon Hanger \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor
 decor(14588),	-- Animated Sin'dorei Pick \\ [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Pickaxe01_AnimSpecial.m2
 decor(14589),	-- Animated Sin'dorei Hammer \\ [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Hammer01_AnimSpecial.m2
 decor(14590),	-- Ren'dorei Anvil \\ [DNT] [AUTOGEN] 12VE_VoidElf_Crafting_Anvil01.m2
-decor(14591),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_KnickKnack01.m2
+decor(14591),	-- Tenebrous Ren'dorei Armillary \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_KnickKnack01.m2
 decor(14592),	-- Dark Void Inkwell \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_KnickKnack02.m2
 decor(14593),	-- Cosmic Void Ashwell \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_KnickKnack04.m2
 decor(14594),	-- Floating Void-Touched Tome \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_FloatingTome01.m2
@@ -1935,8 +1935,8 @@ decor(14598),	-- Ren'dorei Postal Repository \\ [DNT] [AUTOGEN] 12VE_VoidElf_Nav
 decor(14599),	-- Brilliant Phoenix Harp \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Harp01.m2
 decor(14600),	-- Spellbound Tome of Thalassian Magics \\ [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome01_Open.m2
 decor(14601),	-- Bejeweled Sin'dorei Lyre \\ [DNT] [AUTOGEN] 12BE_BloodElf_Special_LirathHarp01.m2
-decor(14602),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_QuestPot01.m2
-decor(14603),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_QuestCup01.m2
+decor(14602),	-- Cosmic Kettle \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_QuestPot01.m2
+decor(14603),	-- Cosmic Chalice \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_QuestCup01.m2
 decor(14616),	-- Rootflame Campfire \\ [DNT] [AUTOGEN] 11WE_WildElves_Lighting_Campfire01.m2
 decor(14617),	-- Luxurious Silvermoon Lounge Cushion \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_BeanBag02.m2
 decor(14618),	-- Plush Silvermoon Bed \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Bed01_Open.m2
@@ -1952,7 +1952,7 @@ decor(14627),	-- Ren'dorei Warp Orb \\ [DNT] [AUTOGEN] 12VD_Void_Decor_FloatingI
 decor(14628),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_Rug01.m2
 decor(14629),	-- [DNT] [AUTOGEN] 12PM_Primitive_Lighting_CampFire01.m2
 decor(14630),	-- [DNT] [AUTOGEN] 12PM_Primitive_Lighting_CampFire_Unlit01.m2
-decor(14631),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Crafting_EnergyForge01.m2
+decor(14631),	-- Smoldering Energy Forge \\ [DNT] [AUTOGEN] 12VE_VoidElf_Crafting_EnergyForge01.m2
 decor(14632),	-- Void Elf Throne \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_Chair01.m2
 decor(14633),	-- Void Elf Stool \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_Stool01.m2
 decor(14634),	-- Void Elf Floating Lantern \\ [DNT] [AUTOGEN] 12VE_VoidElf_Lighting_FloatingLantern01.m2
@@ -1976,7 +1976,7 @@ decor(14796),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Skewer02.m2
 decor(14797),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_LoaShrine_Lynx01.m2
 decor(14798),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_LoaShrine_Eagle01.m2
 decor(14799),	-- Harandar Anvil \\ [DNT] [AUTOGEN] 11WE_WildElves_Crafting_Anvil01.m2
-decor(14800),	-- Tazaveshi Hookah \\ [DNT] [AUTOGEN] 11ET_Ethereal_Decor_EnergyHookah01.m2
+decor(14800),	-- Tazaveshi Hookah \\ Tazaveshi Hookah \\ [DNT] [AUTOGEN] 11ET_Ethereal_Decor_EnergyHookah01.m2
 decor(14801),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy01.m2
 decor(14802),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy03.m2
 decor(14803),	-- [DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy06.m2
@@ -2007,8 +2007,8 @@ decor(14834),	-- Consortium Energy Banner \\ [DNT] [AUTOGEN] ET_STANDARD.M2
 decor(14835),	-- Ren'dorei Lightpost \\ [DNT] [AUTOGEN] 12VD_Void_Lighting_Torch01.m2
 decor(14836),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Cup02.m2
 decor(14837),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Cup03.m2
-decor(14838),	-- [DNT] [AUTOGEN] 12PH_Shop_Misc_LionPlushie01.M2
-decor(14839),	-- [DNT] [AUTOGEN] 12PH_Shop_Misc_WolfPlushie01.M2
+decor(14838),	-- Beloved Lion Plushie \\ [DNT] [AUTOGEN] 12PH_Shop_Misc_LionPlushie01.M2
+decor(14839),	-- Beloved Wolf Plushie \\ [DNT] [AUTOGEN] 12PH_Shop_Misc_WolfPlushie01.M2
 decor(14965),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce \\ [DNT] [AUTOGEN] 11WE_WildElves_Lighting_Sconce01.m2
 decor(14967),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost \\ [DNT] [AUTOGEN] 11WE_WildElves_Lighting_Torch01.m2
 decor(14968),	-- Harandar Glowvine Lantern \\ Harandar Glow-vine Lantern \\ [DNT] [AUTOGEN] 11WE_WildElves_Lighting_Lantern01.m2
@@ -2026,7 +2026,7 @@ decor(15013),	-- Sunlit Glass Mirror \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Mirr
 decor(15059),	-- Grand Lightwood Table \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Table01.m2
 decor(15060),	-- Ornate Lightwood Table \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Table02.m2
 decor(15061),	-- Magister's Bookshelf \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfSet01.m2
-decor(15062),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfSet02.m2
+decor(15062),	-- Silvermoon Curio Shelves \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfSet02.m2
 decor(15063),	-- Floating Spire Shelf \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfFloating01.m2
 decor(15064),	-- Sin'dorei Spinning Library \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfFloatingSet01.m2
 decor(15065),	-- Turning Silvermoon Archives \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ShelfFloatingSet02.m2
@@ -2035,12 +2035,12 @@ decor(15067),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_LargeTent01.m2
 decor(15068),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Gourd03.m2
 decor(15069),	-- Illicit Long Table \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_MurderRow_LongTable01.m2
 decor(15070),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Tan.M2
-decor(15071),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate03.m2
+decor(15071),	-- Sturdy Void Elf Crate \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate03.m2
 decor(15072),	-- Cuddly Seafoam Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Seafoam.M2
 decor(15073),	-- Cuddly Saffron Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Saffron.M2
 decor(15074),	-- Cuddly Sage Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Sage.M2
-decor(15140),	-- Spring Blossom Pond \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Tree01.M2
-decor(15141),	-- Spring Blossom Tree \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Tree02.M2
+decor(15140),	-- Spring Blossom Tree \\ Spring Blossom Pond \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Tree01.M2
+decor(15141),	-- Spring Blossom Pond \\ Spring Blossom Tree \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_Tree02.M2
 decor(15142),	-- Cuddly Lavender Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Lavender.M2
 decor(15143),	-- Cuddly Pink Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Pink.M2
 decor(15144),	-- Cuddly Gold-Colored Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Gold.M2
@@ -2069,7 +2069,7 @@ decor(15256),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Weaponrack01.m2
 decor(15257),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_WeaponrackEmpty01.m2
 decor(15258),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue04.M2
 decor(15259),	-- [DNT] [AUTOGEN] 12PM_Primitive_Structure_LargeTent02.m2
-decor(15260),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate01.m2
+decor(15260),	-- Sturdy Void Elf Trunk \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate01.m2
 decor(15265),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_Anvil01.m2
 decor(15266),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_WorkBench01.m2
 decor(15283),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_Forge01.m2
@@ -2117,21 +2117,21 @@ decor(15464),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_WoodenSpike01.m2
 decor(15465),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_WoodenSpike02.m2
 decor(15466),	-- [DNT] [AUTOGEN] 12PM_Primitive_Storage_Gourd04.m2
 decor(15467),	-- Blessed Phoenix Egg \\ [DNT] [AUTOGEN] 12du_darkwellraid_phoenixegg01.m2
-decor(15478),	-- Lush Haranir Pillow \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Pillow01.m2
+decor(15478),	-- Firm Haranir Pillow \\ Lush Haranir Pillow \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Pillow01.m2
 decor(15479),	-- Plush Haranir Leather Pillow \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Pillow02.m2
-decor(15480),	-- Plush Haranir Blanket \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Blanket01.m2
+decor(15480),	-- Warm Haranir Blanket \\ Plush Haranir Blanket \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Blanket01.m2
 decor(15481),	-- Eerie Iridescent Riftshroom \\ Eerie Irisdescent Riftshroom \\ [DNT] [AUTOGEN] 12RTL_Bioluminescent_Plant_PancakeMushroom_C03.m2
 decor(15482),	-- [DNT] [AUTOGEN] 12ESW_Main_Topiary_CubeYellow_B02.m2
-decor(15483),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Storage_Jar03.m2
-decor(15484),	-- [DNT] [AUTOGEN] 12TR_Amani_Furniture_Stool01_SitMedium.m2
+decor(15483),	-- Sin’dorei Storage Jar \\ [DNT] [AUTOGEN] 12BE_BloodElf_Storage_Jar03.m2
+decor(15484),	-- Woodblock Stool \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Stool01_SitMedium.m2
 decor(15485),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_ToolRack01.m2
 decor(15486),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit01.m2
-decor(15487),	-- [DNT] [AUTOGEN] 12TR_Amani_Furniture_Hammock01.m2
+decor(15487),	-- Zul'Aman Forest Hammock \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Hammock01.m2
 decor(15488),	-- Galactic Void-Scarred Barricade \\ [DNT] [AUTOGEN] 12VD_Void_Defense_Barricade01.m2
-decor(15489),	-- [DNT] [AUTOGEN] 12TR_Amani_Furniture_Shelf01.m2
-decor(15490),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy01.m2
+decor(15489),	-- Three-Tier Zul'Aman Shelf \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Shelf01.m2
+decor(15490),	-- Amani Trophy Frame \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy01.m2
 decor(15491),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy02.m2
-decor(15492),	-- [DNT] [AUTOGEN] 12TR_Amani_Defense_WeaponRack01.m2
+decor(15492),	-- Zul’Aman Armament Rest \\ [DNT] [AUTOGEN] 12TR_Amani_Defense_WeaponRack01.m2
 decor(15493),	-- Blossoming Forge \\ [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Forge01.m2
 decor(15494),	-- On'ohia's Call \\ [DNT] [AUTOGEN] 11WE_WildElves_Defense_Spear01.m2
 decor(15495),	-- [DNT] [AUTOGEN] 11WE_WildElves_Defense_Bow01.m2
@@ -2151,13 +2151,13 @@ decor(15568),	-- Amani Hanging Brazier \\ [DNT] [AUTOGEN] 12TR_Amani_Lighting_Ha
 decor(15569),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_Torch01.m2
 decor(15570),	-- Amani Ritual Altar \\ [DNT] [AUTOGEN] 12TR_Amani_Ritual_Altar01.m2
 decor(15571),	-- Amani Incense Burner \\ [DNT] [AUTOGEN] 12TR_Amani_Ritual_Incense01.m2
-decor(15572),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_LargeDrum01.m2
-decor(15573),	-- [DNT] [AUTOGEN] 12TR_Amani_Structure_TikiHead01.m2
+decor(15572),	-- Amani War Drum \\ [DNT] [AUTOGEN] 12TR_Amani_Ritual_LargeDrum01.m2
+decor(15573),	-- Colossal Amani Stone Visage \\ [DNT] [AUTOGEN] 12TR_Amani_Structure_TikiHead01.m2
 decor(15574),	-- Voidlight Brazier \\ [DNT] [AUTOGEN] 12VD_Void_Lighting_Brazier01.m2
 decor(15575),	-- Cosmic Void Training Dummy \\ [DNT] [AUTOGEN] 12VD_Void_Special_TargetDummy01.m2
 decor(15576),	-- Domanaar Control Console \\ [DNT] [AUTOGEN] 12VD_Void_Special_ControlConsole01.m2
 decor(15578),	-- Cosmic Void Summoning Crystal \\ [DNT] [AUTOGEN] 12VD_Void_Ritual_SummoningCrystal01.m2
-decor(15579),	-- [DNT] [AUTOGEN] 12VD_Void_Storage_Barrel01.m2
+decor(15579),	-- Cosmic Barrel \\ [DNT] [AUTOGEN] 12VD_Void_Storage_Barrel01.m2
 decor(15581),	-- Cosmic Void Crate \\ [DNT] [AUTOGEN] 12VD_Void_Storage_LargeCrate01.m2
 decor(15582),	-- Cosmic Void Cache \\ [DNT] [AUTOGEN] 12VD_Void_Decor_KnickKnack01.m2
 decor(15583),	-- Cosmic Void Gravitational Orb \\ [DNT] [AUTOGEN] 12VD_Void_Decor_KnickKnack03.m2
@@ -2166,12 +2166,12 @@ decor(15585),	-- Galactic Commander's Orb \\ [DNT] [AUTOGEN] 12VD_Void_Lighting_
 decor(15586),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack12.M2
 decor(15587),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_Plate01.m2
 decor(15596),	-- Carved Idol of Akil'zon, Loa of Victory \\ Carved Idol of Akil'zon \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_LoaTrinket02.m2
-decor(15597),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Banner01.m2
+decor(15597),	-- Ornate Void Elf Banner \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Banner01.m2
 decor(15598),	-- Elegant Elven Bathtub \\ [DNT] [AUTOGEN] 12PH_Opulent_Bathtub01.M2
 decor(15599),	-- Empty Elegant Elven Bathtub \\ [DNT] [AUTOGEN] 12PH_Opulent_Bathtub01_Empty.M2
-decor(15743),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry01.m2
-decor(15744),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry02.m2
-decor(15745),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry03.m2
+decor(15743),	-- Skyweave Amani Tapestry \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry01.m2
+decor(15744),	-- Greenvine Amani Tapestry \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry02.m2
+decor(15745),	-- Earthhide Amani Tapestry \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry03.m2
 decor(15746),	-- Void Elf Torch \\ [DNT] [AUTOGEN] 12VE_VoidElf_Lighting_Torch01.m2
 decor(15747),	-- Cosmic Void Campfire \\ [DNT] [AUTOGEN] 12VE_VoidElf_Lighting_Campfire01.m2
 decor(15748),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry04.m2
@@ -2191,15 +2191,15 @@ decor(15761),	-- Imperator's Torment Crystal \\ [DNT] [AUTOGEN] 12VD_Void_Decor_
 decor(15762),	-- Voltaic Trigore Egg \\ [DNT] [AUTOGEN] 12VD_Void_Special_KaijuEgg01.m2
 decor(15763),	-- [DNT] [AUTOGEN] 12XP_Prey_Special_Map01.m2
 decor(15764),	-- Devouring Host Ritual Engine \\ [DNT] [AUTOGEN] 12VD_Void_Special_BridgeConsole01.m2
-decor(15768),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Defense_Barricade01.m2
+decor(15768),	-- Sturdy Void Elf Barricade \\ [DNT] [AUTOGEN] 12VE_VoidElf_Defense_Barricade01.m2
 decor(15769),	-- Void Elf Barrel \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Barrel01.m2
 decor(15770),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Special_SingularityAnchor01_Base01.m2
 decor(15771),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Special_SingularityAnchor01_Bomb01.m2
-decor(15851),	-- [DNT] [AUTOGEN] 12TR_Amani_Furniture_Bench01_SitMedium.m2
+decor(15851),	-- Amani Slate Bench \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Bench01_SitMedium.m2
 decor(15890),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Defense_WeaponRack01.m2
-decor(15891),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate02.m2
+decor(15891),	-- Sturdy Void Elf Trunk Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate02.m2
 decor(15893),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate04.m2
-decor(15894),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Satchel02.m2
+decor(15894),	-- Cosmic Traveler's Satchel \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Satchel02.m2
 decor(15895),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent01.m2
 decor(15896),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent02.m2
 12.0.0.64124
@@ -2216,12 +2216,12 @@ decor(16035),	-- Cuddly Tangerine Grrgle
 decor(16036),	-- Cuddly Sapphire Grrgle
 decor(16037),	-- Cuddly Clover Grrgle
 decor(16038),	-- Cuddly Peach Grrgle
-decor(16092),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_HangingFire02.m2
+decor(16092),	-- Zul’Aman Flame Cradle \\ [DNT] [AUTOGEN] 12TR_Amani_Lighting_HangingFire02.m2
 decor(16093),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_Hex_Brazier01.m2
 decor(16094),	-- Amani Warding Hex \\ [DNT] [AUTOGEN] 12TR_Amani_Defense_Hex_TerritoryMarker01.m2
 decor(16095),	-- [DNT] [AUTOGEN] 12TR_Amani_Navigation_Canoe01.m2
 decor(16096),	-- [DNT] [AUTOGEN] 12TR_Amani_Navigation_Oar01.m2
-decor(16097),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll01.m2
+decor(16097),	-- Void Elf Bedroll \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll01.m2
 decor(16227),	-- Decorated Underground Table \\ [DNT] [AUTOGEN] 10MP_MolePeople_Table01.m2
 decor(16228),	-- Loamm Bartering Stall \\ [DNT] [AUTOGEN] 10MP_MolePeople_Merchant_Stall02.m2
 decor(16229),	-- Ceramic Loamm Bowl \\ [DNT] [AUTOGEN] 10MP_MolePeople_Food_Bowl04.m2
@@ -2306,9 +2306,9 @@ decor(17523),	-- Preyseeker's Farstrider Bust \\ [DNT] [AUTOGEN] 12XP_Prey_Speci
 12.0.0.64339
 decor(17626),	-- [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Table01.m2
 decor(17627),	-- [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Table03.m2
-decor(17628),	-- March on Quel'Danas Vanquisher's Trophy \\ Gleaming March on Quel'Danas Vanquisher's Trophy
-decor(17629),	-- Dreamrift Vanquisher's Trophy \\ Gleaming Dreamrift Vanquisher's Trophy
-decor(17630),	-- Voidspire Vanquisher's Trophy \\ Gleaming Voidspire Vanquisher's Trophy
+decor(17628),	-- March on Quel'Danas Vanquisher's Aureate Trophy \\ March on Quel'Danas Vanquisher's Trophy \\ Gleaming March on Quel'Danas Vanquisher's Trophy
+decor(17629),	-- Dreamrift Vanquisher's Aureate Trophy \\ Dreamrift Vanquisher's Trophy \\ Gleaming Dreamrift Vanquisher's Trophy
+decor(17630),	-- Voidspire Vanquisher's Aureate Trophy \\ Voidspire Vanquisher's Trophy \\ Gleaming Voidspire Vanquisher's Trophy
 decor(17785),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_LampPost01.m2
 decor(17786),	-- [DNT] [AUTOGEN] 12PH_BloodElf_Food_WineBottle01_SpecialAnim.M2
 decor(17787),	-- Gilded Silvermoon Gazebo \\ [DNT] [AUTOGEN] 12PH_Opulent_Gazebo01.M2
@@ -2332,17 +2332,17 @@ decor(17889),	-- [DNT] [AUTOGEN] 12PH_Leg_Zandalari_Mask_01.M2
 12.0.0.64499
 decor(17918),	-- Granite Cobblestone Path
 decor(17919),	-- Granite Cobblestone Long Path
-decor(18396),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru02.M2
-decor(18397),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa02.M2
-decor(18398),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria02.M2
+decor(18396),	-- March on Quel'Danas Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru02.M2
+decor(18397),	-- Dreamrift Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa02.M2
+decor(18398),	-- Voidspire Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria02.M2
 decor(18482),	-- [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES02.M2
 decor(18483),	-- Eye of Acherus
-decor(18484),	-- Crucible Votive
+decor(18484),	-- Crucible Votive Rack \\ Crucible Votive
 decor(18485),	-- Amani Training Dummy
 decor(18614),	-- [DNT] [AUTOGEN] 12PH_Opulent_Stovetop01.M2
 decor(18615),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_Hex_HangingFire01.m2
 decor(18616),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome02_Open.m2
-decor(18617),	-- [DNT] [AUTOGEN] 12VD_Void_Furniture_Table02.m2
+decor(18617),	-- Ornate Cosmic Table \\ [DNT] [AUTOGEN] 12VD_Void_Furniture_Table02.m2
 decor(18618),	-- [DNT] [AUTOGEN] 12PH_Rugged_Brazier02.M2
 decor(18619),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Decor_HayBail01.M2
 decor(18620),	-- [DNT] [AUTOGEN] 12PH_Rugged_TableLight02.M2
@@ -2350,6 +2350,26 @@ decor(18792),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Fountain03.M2
 decor(18793),	-- [DNT] [AUTOGEN] 12PH_Opulent_WaterWell01.M2
 decor(18798),	-- [DNT] [AUTOGEN] 12TR_Amani_Defense_TerritoryMarker01.m2
 decor(18799),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Anvil01.m2
-decor(18800),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll02.m2
+decor(18800),	-- Void Elf Bedroll Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll02.m2
 decor(18801),	-- [DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack01.m2
 decor(18802),	-- [DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack02.m2
+12.0.0.64741
+decor(18825),	-- [DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_Spear01.m2
+decor(18826),	-- [DNT] [AUTOGEN] 12PH_Leg_6HU_Barracks_WoodBenchSmall.M2
+decor(18897),	-- [DNT] [AUTOGEN] 12PH_Monk_Banner_Standing01.M2
+decor(18898),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Bookshelf01_filled.M2
+decor(18959),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Fountain02.M2
+decor(19011),	-- [DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2
+decor(19159),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay02.M2
+decor(19197),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa01_Silver.M2
+decor(19198),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru01_Silver.M2
+decor(19200),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_SecretDoor03.M2
+decor(19215),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay03.M2
+decor(19216),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay04.M2
+decor(19217),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay05.M2
+decor(19218),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Lighting_Sconce01.M2
+decor(19219),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Lighting_Sconce02.M2
+decor(19229),	-- Endless Codex of Blooming Light
+decor(19231),	-- Endless Codex of Nature's Grace
+decor(19234),	-- Endless Codex of the Voidtouched
+decor(19252),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2

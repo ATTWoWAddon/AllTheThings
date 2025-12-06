@@ -1,3 +1,6 @@
+11.2.7.63642
+r(473408),	-- Housing Crafting Test Recipe
+r(1246464),	-- [DNT] TWW Engineering Decor Template
 12.0.0.63534
 r(471007),	-- Midnight Engineering
 r(471043),	-- Recraft Equipment
@@ -72,7 +75,7 @@ r(1229924),	-- M3DDY
 r(1229925),	--
 r(1229926),	-- W-47CH D0G
 r(1229927),	-- Curious Red Button
-r(1229928),	-- Wormhole Generator: Quel'thalas
+r(1229928),	-- Wormhole Generator: Quel'Thalas \\ Wormhole Generator: Quel'thalas
 r(1229929),	--
 r(1229930),	-- Recycling
 r(1229934),	-- Spark of Beginnings
@@ -119,6 +122,9 @@ r(1265704),	-- Ingenuity
 
 Missing in Engineering
 
+11.2.7.63642
+r(473408),	-- Housing Crafting Test Recipe
+r(1246464),	-- [DNT] TWW Engineering Decor Template
 12.0.0.63534
 r(471007),	-- Midnight Engineering
 r(471043),	-- Recraft Equipment
@@ -193,7 +199,7 @@ r(1229924),	-- M3DDY
 r(1229925),	--
 r(1229926),	-- W-47CH D0G
 r(1229927),	-- Curious Red Button
-r(1229928),	-- Wormhole Generator: Quel'thalas
+r(1229928),	-- Wormhole Generator: Quel'Thalas \\ Wormhole Generator: Quel'thalas
 r(1229929),	--
 r(1229930),	-- Recycling
 r(1229934),	-- Spark of Beginnings
