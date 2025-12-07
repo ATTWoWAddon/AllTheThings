@@ -102,12 +102,6 @@ end
 app.CreateHash = CreateHash;
 
 -- Helper Functions
-local ShouldExcludeFromTooltipHelper = function(t)
-	-- Whether or not to exclude this data from the source list in the tooltip.
-	local parent = t.parent;
-	if parent then return parent.ShouldExcludeFromTooltip; end
-	return false;
-end
 -- Classic needs to use Search Module for this
 local SourceSearcher = app.SourceSearcher or setmetatable({}, { __index = function(t,key) return app.GetRawField end})
 
@@ -234,11 +228,11 @@ local DefaultFields = {
 	["iconPath"] = function(t)
 		return rawget(t, "icon")
 	end,
-	["ShouldExcludeFromTooltipHelper"] = function(t)
-		return ShouldExcludeFromTooltipHelper;
-	end,
+	-- Base ShouldExcludeFromTooltip is false, so search upwards in hierarchy for a defined result
 	["ShouldExcludeFromTooltip"] = function(t)
-		return t.ShouldExcludeFromTooltipHelper(t);
+		-- Whether or not to exclude this data from the source list in the tooltip.
+		local parent = t.parent
+		if parent then return parent.ShouldExcludeFromTooltip end
 	end,
 	-- Allows automatically handling a global re-try timer for the specific group for operations which need to 're-try' things
 	-- concerning this group and are not using Event-driven handling
