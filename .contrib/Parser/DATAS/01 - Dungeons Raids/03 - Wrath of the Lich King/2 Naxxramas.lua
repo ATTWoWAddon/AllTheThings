@@ -2936,7 +2936,7 @@ inst(754, {	-- Naxxramas
 							["sourceQuestNumRequired"] = 1,
 							["groups"] = {
 								i(22682, {	-- Frozen Rune
-									["description"] = "31 Frozen Runes can be found through (Lower) Nazzramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
+									["description"] = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
 									-- Arachnid Quarter: (6)
 										-- 1: Behind Anub'Rekhan
 										-- 2: To the left of Grand Widow Faerlina
