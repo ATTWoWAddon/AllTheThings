@@ -7955,8 +7955,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 			e(2392, {	-- Surgeon Stitchflesh
 				["crs"] = {
-					modItemId(162689,1),	-- Surgeon Stitchflesh
-					modItemId(164578,1),	-- Stitchflesh's Creation
+					162689,	-- Surgeon Stitchflesh
+					164578,	-- Stitchflesh's Creation
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(178750,1),	-- Encrusted Canopic Lid
