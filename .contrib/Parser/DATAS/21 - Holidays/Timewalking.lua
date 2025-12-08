@@ -7880,8 +7880,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 		inst_tw(1186, {	-- Spires of Ascension
 			e(2399, {	-- Kin-Tara
 				["crs"] = {
-					modItemId(163077,1),	-- Azules
-					modItemId(162059,1),	-- Kin-Tara
+					163077,	-- Azules
+					162059,	-- Kin-Tara
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(180115,1),	-- Azure-Venom Choker
