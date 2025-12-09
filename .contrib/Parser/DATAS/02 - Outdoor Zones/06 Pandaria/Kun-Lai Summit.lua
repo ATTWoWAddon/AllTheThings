@@ -3641,7 +3641,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 65, 60, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					})),
-					i(74849),	-- Pink Turnip
 				}),
 			},
 		}),

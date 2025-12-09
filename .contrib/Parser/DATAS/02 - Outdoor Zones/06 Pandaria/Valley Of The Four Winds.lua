@@ -2841,7 +2841,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74842),	-- Mogu Pumpkin
+					i(74842, {	-- Mogu Pumpkin
+						["description"] = "Drops from Virmen.",
+					}),
 				}),
 			},
 		}),

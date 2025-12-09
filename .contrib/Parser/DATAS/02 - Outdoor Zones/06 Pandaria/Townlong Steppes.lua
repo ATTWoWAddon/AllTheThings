@@ -1877,7 +1877,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74849),	-- Pink Turnip
 				}),
 			},
 		}),
