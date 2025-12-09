@@ -609,19 +609,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["lvl"] = 80,
 		}),
 		-- Phase 5: Infinite Echoes
-		--[[q(XXXXX, {	-- Out of Time
+		q(91821, {	-- Out of Time
 			--["sourceQuest"] = XXXXX,
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 			["timeline"] = { ADDED_11_2_7 },
 		}),
-		q(XXXXX, {	-- Until Our Next Hello
+		q(91757, {	-- Until Our Next Hello
 			--["sourceQuest"] = XXXXX,
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 			["timeline"] = { ADDED_11_2_7 },
-		}),--]]
+		}),
 	}),
 })))

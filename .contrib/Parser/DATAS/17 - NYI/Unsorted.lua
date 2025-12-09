@@ -5905,7 +5905,6 @@ root(ROOTS.Unsorted, {
 			i(248092),	-- Blinky
 			i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
 			i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
-			i(248393),	-- Blank Doomsayer's Pamphlet
 			i(248725),	-- Smoked Rib Surprise
 			i(248727),	-- Smoked Rib Leftovers
 			i(248728),	-- Bacon-Wrapped Smoked Ribs

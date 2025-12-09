@@ -101,6 +101,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 
 		------ Misc ------
+		i(248393, {	-- Blank Doomsayer's Pamphlet
+			["description"] = "Bring this item to Moratari before burning it at the infinite bonfire.",	-- Exo Note: I don't know if the description is even warranted. Remove if it is.
+			["crs"] = {
+				248660,	-- Lost Legion Infernal
+				248688,	-- Lost Legion Infernal
+			},
+			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 }
+		}),
 		i(251562),	-- Tome of Combat Training
 		i(263226),	-- Infinite Knowledge
 
