@@ -326,9 +326,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(TALOC, {
 					i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 				}),
+				BossOnly(MOTHER),
+				BossOnly(ZEKVOZ),
+				BossOnly(FETID_DEVOURER),
+				BossOnly(VECTIS),
+				BossOnly(ZUL),
+				BossOnly(MYTHRAX),
 				BossOnly(ZUL, {
 					i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 				}),
+				BossOnly(GHUUN),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
@@ -342,17 +349,17 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				ZoneDrops({}),
-				header(HEADERS.LFGDungeon, 12521, {	-- Halls of Containment
+				header(HEADERS.LFGDungeon, 1731, {	-- Halls of Containment
 					Boss(TALOC),
 					Boss(MOTHER),
 					Boss(ZEKVOZ),
 				}),
-				header(HEADERS.LFGDungeon, 12522, {	-- Crimson Descent
+				header(HEADERS.LFGDungeon, 1732, {	-- Crimson Descent
 					Boss(FETID_DEVOURER),
 					Boss(VECTIS),
 					Boss(ZUL),
 				}),
-				header(HEADERS.LFGDungeon, 12523, {	-- Heart of Corruption
+				header(HEADERS.LFGDungeon, 1733, {	-- Heart of Corruption
 					Boss(MYTHRAX),
 					Boss(GHUUN),
 				}),
