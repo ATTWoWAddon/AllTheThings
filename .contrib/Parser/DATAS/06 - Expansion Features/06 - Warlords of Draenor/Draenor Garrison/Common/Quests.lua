@@ -3159,6 +3159,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 133883 },	-- Scouting Missive: The Heart of Shattrath
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(251547, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenei Farmer's Trellis (DECOR!)
+				},
 			}),
 			q(40942, {	-- Missive: Assault on the Pit
 				["provider"] = { "i", 133878 },	-- Scouting Missive: The Pit
