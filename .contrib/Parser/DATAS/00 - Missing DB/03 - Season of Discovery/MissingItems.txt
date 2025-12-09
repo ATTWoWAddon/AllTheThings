@@ -1238,74 +1238,9 @@ i(230984),	-- Incomplete Staff of Order
 i(231014),	-- Lizardscale Eyepatch
 i(231015),	-- Twill Mask
 i(231275),	-- Blazefury Retributer
-i(231280),	-- Wushoolay's Charm of Nature
-i(231281),	-- Wushoolay's Charm of Spirits
-i(231282),	-- Hazza'rah's Charm of Chilled Magic
-i(231283),	-- Hazza'rah's Charm of Warding
-i(231284),	-- Hazza'rah's Charm of Destruction
-i(231285),	-- Gri'lek's Charm of Valor
-i(231286),	-- Gri'lek's Charm of Might
-i(231287),	-- Renataki's Charm of Trickery
-i(231288),	-- Renataki's Charm of Ravaging
 i(231298),	-- Scroll of Lesser Spatial Mending
 i(231304),	-- Scroll: SERELS PATALIS GNEMIND
-i(231316),	-- Pristine Enchanted South Seas Kelp
-i(231317),	-- Zandalar Haruspex's Tunic
-i(231318),	-- Zandalar Haruspex's Belt
-i(231319),	-- Zandalar Haruspex's Bracers
-i(231320),	-- Maelstrom's Wrath
-i(231321),	-- Zandalar Predator's Mantle
-i(231322),	-- Zandalar Predator's Belt
-i(231323),	-- Zandalar Predator's Bracers
-i(231324),	-- Jewel of Kajaro
-i(231325),	-- Zandalar Illusionist's Mantle
-i(231326),	-- Zandalar Illusionist's Wraps
-i(231327),	-- Zandalar Illusionist's Robe
-i(231328),	-- Hero's Brand
-i(231329),	-- Zandalar Freethinker's Breastplate
-i(231330),	-- Zandalar Freethinker's Belt
-i(231331),	-- Zandalar Freethinker's Armguards
-i(231332),	-- The All-Seeing Eye of Zuldazar
-i(231333),	-- Zandalar Confessor's Mantle
-i(231334),	-- Zandalar Confessor's Bindings
-i(231335),	-- Zandalar Confessor's Wraps
-i(231336),	-- Zandalarian Shadow Mastery Talisman
-i(231337),	-- Zandalar Madcap's Tunic
-i(231338),	-- Zandalar Madcap's Mantle
-i(231339),	-- Zandalar Madcap's Bracers
 i(231340),	-- Unmarred Vision of Voodress
-i(231341),	-- Zandalar Augur's Hauberk
-i(231342),	-- Zandalar Augur's Belt
-i(231343),	-- Zandalar Augur's Bracers
-i(231346),	-- Kezan's Unstoppable Taint
-i(231347),	-- Zandalar Demoniac's Wraps
-i(231348),	-- Zandalar Demoniac's Robe
-i(231349),	-- Zandalar Demoniac's Mantle
-i(231350),	-- Rage of Mugamba
-i(231351),	-- Zandalar Vindicator's Armguards
-i(231352),	-- Zandalar Vindicator's Belt
-i(231353),	-- Zandalar Vindicator's Breastplate
-i(231354),	-- Animist's Caress
-i(231355),	-- Animist's Balance
-i(231357),	-- Animist's Fury
-i(231358),	-- Animist's Roar
-i(231359),	-- Falcon's Call
-i(231361),	-- Syncretist's Seal
-i(231362),	-- Syncretist's Sigil
-i(231363),	-- Syncretist's Crest
-i(231364),	-- Syncretist's Emblem
-i(231366),	-- Prophetic Aura
-i(231367),	-- Prophetic Curse
-i(231368),	-- Death's Embrace
-i(231370),	-- Death's Advance
-i(231371),	-- Vodouisant's Embrace
-i(231372),	-- Vodouisant's Shroud
-i(231373),	-- Vodouisant's Charm
-i(231375),	-- Vodouisant's Vigilance
-i(231376),	-- Hoodoo Hex
-i(231377),	-- Hoodoo Curse
-i(231379),	-- Presence of Might
-i(231381),	-- Presence of Valor
 i(231382),	-- Vessel of Rebirth
 i(231383),	-- Presence of Sight
 i(231384),	-- Falcon's Fury

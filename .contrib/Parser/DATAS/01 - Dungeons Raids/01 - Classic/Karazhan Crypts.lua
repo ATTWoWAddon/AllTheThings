@@ -168,15 +168,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							n(238270, {	-- Encrypted Text
 								["description"] = "These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",
 								["groups"] = {
-									spell(1219577),	-- Enchant Off-Hand - Superior Intellect
-									spell(1219578),	-- Enchant Off-Hand - Excellent Spirit
-									spell(1219579),	-- Enchant Off-Hand - Wisdom
-									spell(1219580),	-- Enchant 2H Weapon - Spellblasting
-									spell(1219581),	-- Enchant Shield - Excellent Stamina
-									spell(1219586),	-- Enchant Gloves - Superior Strength
-									spell(1219587),	-- Enchant Cloak - Agility
-									spell(1220623),	-- Enchant Shield - Critical Strike
-									spell(1220624),	-- Enchant Bracer - Greater Spellpower
+									r(1219577),	-- Enchant Off-Hand - Superior Intellect
+									r(1219578),	-- Enchant Off-Hand - Excellent Spirit
+									r(1219579),	-- Enchant Off-Hand - Wisdom
+									r(1219580),	-- Enchant 2H Weapon - Spellblasting
+									r(1219581),	-- Enchant Shield - Excellent Stamina
+									r(1219586),	-- Enchant Gloves - Superior Strength
+									r(1219587),	-- Enchant Cloak - Agility
+									r(1220623),	-- Enchant Shield - Critical Strike
+									r(1220624),	-- Enchant Bracer - Greater Spellpower
 								},
 							}),
 						}),
