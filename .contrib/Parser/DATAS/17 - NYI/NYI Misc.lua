@@ -2083,6 +2083,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(237750),	-- Warbreaker's Revenge
 			i(237769),	-- Xenedar Gem Fragment
 		})),
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			i(246026),	-- Orgrimmar Beam Platform (DECOR)
+			i(246028),	-- Orgrimmar Large Platform (DECOR)
+			i(246027),	-- Orgrimmar Round Platform (DECOR)
+		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0

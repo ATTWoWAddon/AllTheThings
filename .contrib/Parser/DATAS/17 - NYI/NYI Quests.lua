@@ -2668,7 +2668,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(43635, { ["name"] = "Needs of the Many", ["_drop"] = { "g" }, }),	-- Needs of the Many
 			q(44091, { ["name"] = "Needs of the Many", }),	-- Needs of the Many
 			q(39868, { ["name"] = "Neltharion's Lair Heroic Reward Quest", }),	-- Neltharion's Lair Heroic Reward Quest
-			q(41211, { ["name"] = "Neltharion's Lair: Neltharion's Treasure", }),	-- Neltharion's Lair: Neltharion's Treasure
 			q(41857, { ["name"] = "Neltharion's Lair: Stonedark Slaves", }),	-- Neltharion's Lair: Stonedark Slaves
 			q(38661, { ["name"] = "Nightmare Bombs", }),	-- Nightmare Bombs
 			q(40811, { ["name"] = "Not to Scale", }),	-- Not to Scale

@@ -1157,6 +1157,7 @@ MobileDB.GameObject = {
 	[245670] = true,	-- Whelp Cage
 	[245672] = true,	-- Whelp Cage
 	[245676] = true,	-- Satyr Cage (q:40573)
+	[245788] = true,	-- Fur Blanket (q:40606)
 	[245847] = true,	-- Spoils of the Worthy
 	[245849] = true,	-- The Svalnguard (q:40613)
 	[245925] = true,	-- Garden (q:40747)

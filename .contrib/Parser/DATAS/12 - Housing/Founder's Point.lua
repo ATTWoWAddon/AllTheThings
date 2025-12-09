@@ -249,7 +249,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(235994) },	-- Ornate Stonework Fireplace (DECOR!)
 			}),
 			q(93009, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Behind the big circular hay bale location 57.59
+				["coord"] = { 53.6, 42.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246255) },	-- Bel'ameth Large Platform (DECOR!)
 			}),
 			q(93078, {	-- Decor Treasure Hunt

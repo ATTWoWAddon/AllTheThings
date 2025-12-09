@@ -139,6 +139,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 			}),
+			-- #if AFTER 11.2.7
+			n(241141, {	-- Erus <Scrap Master>
+				["coord"] = { 45.8, 68.0, BROKEN_ISLES },
+				["groups"] = {
+					i(254267, {	-- Fragmented Memento of Epoch Challenges
+						-- Note: Mementos are sold in a stack of 10 for 10 Motes. Although you can't buy 1, cost of 1 is technically correct.
+						["cost"] = {{ "i", 253224, 1 }},	-- Mote of a Broken Time
+					}),
+				},
+			}),
+			-- #endif
 			n(246030, {	-- Freddie Threads <Discount Cloak Dealer>
 				["coord"] = { 45.4, 67.8, BROKEN_ISLES },
 				["groups"] = {
