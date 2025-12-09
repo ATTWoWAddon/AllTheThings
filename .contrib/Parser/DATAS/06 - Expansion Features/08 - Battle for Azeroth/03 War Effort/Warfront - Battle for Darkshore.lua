@@ -247,6 +247,14 @@ root(ROOTS.ExpansionFeatures,
 									i(165489),	-- Deathguard's Sabatons
 								},
 							}),
+							n(DECOR, sharedDataSelf({
+								["timeline"] = { ADDED_11_2_7 },
+							},{
+								i(245462),	-- Banshee Queen's Banner
+								i(245627),	-- Elven Temple Brazier
+								i(246110),	-- Filigree Moon Sconce
+								i(241066),	-- Forsaken Spiked Brazier
+							})),
 						},
 					})),
 					n(RARES, {
