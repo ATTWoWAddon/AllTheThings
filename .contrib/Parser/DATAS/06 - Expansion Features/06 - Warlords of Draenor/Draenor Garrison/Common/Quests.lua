@@ -3139,6 +3139,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 122410 },	-- Scouting Missive: Shattrath Harbor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(241043, { ["timeline"] = { ADDED_11_2_7 } }),	-- Elodor Barrel (DECOR!)
+				},
 			}),
 			q(38200, {	-- Missive: Assault on Skettis
 				["provider"] = { "i", 122407 },	-- Scouting Missive: Skettis
@@ -3149,6 +3152,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 122415 },	-- Scouting Missive: Socrethar's Rise
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(251329, { ["timeline"] = { ADDED_11_2_7 } }),	-- Shadowmoon Open-Air Shed (DECOR!)
+				},
 			}),
 			q(38189, {	-- Missive: Assault on Stonefury Cliffs
 				["provider"] = { "i", 122401 },	-- Scouting Missive: Stonefury Cliffs
