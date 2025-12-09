@@ -5647,8 +5647,6 @@ root(ROOTS.Unsorted, {
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
 				i(241066),	-- Forsaken Spiked Brazier
 				i(245259),	-- Small Val'sharah Bookcase
-				i(245294),	-- Councilward's Jeweled Goblet
-				i(245425),	-- Hanging Draenethyst Light
 				i(245462),	-- Banshee Queen's Banner
 				i(245627),	-- Elven Temple Brazier
 				i(245655),	-- Filigree Moon Lamp
@@ -5660,16 +5658,7 @@ root(ROOTS.Unsorted, {
 				i(247915),	-- Square Suramar Table
 				i(248116),	-- Valdrakken Chandelier
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
-				i(251330),	-- Draenic Fencepost
-				i(251477),	-- Draenic Wooden Table
-				i(251478),	-- Square Draenic Table
-				i(251548),	-- Draenic Fence
-				i(251549),	-- Emblem of the Naaru's Blessing
-				i(251640),	-- Draenic Forge
-				i(251653),	-- Draenethyst Lamppost
-				i(251654),	-- Large Karabor Fountain
 				i(255840),	-- Champion Brawler's Gloves
-				i(256903),	-- Gilnean Banded Crate
 				i(259071),	-- Brawler's Guild Punching Bag
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread

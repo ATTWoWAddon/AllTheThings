@@ -2367,6 +2367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/9 Irontree Shredder slain
 							["provider"] = { "n", 48259 },	-- Irontree Shredder
 						}),
+						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
 					},
 				}),
 				q(28256, {	-- The Skull of Gul'dan
@@ -3061,6 +3062,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = 1500000,	-- 150g
 						}),
+					},
+				}),
+				n(48258, {	-- Willard Harrington <Blacksmithing Supplies>
+					["coord"] = { 61.6, 25.8, FELWOOD },
+					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
 					},
 				}),
 			}),

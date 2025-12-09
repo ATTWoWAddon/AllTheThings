@@ -1584,6 +1584,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(112518),	-- Auchenai Keeper Gloves
+							i(251640, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Forge (DECOR!)
 							i(112519),	-- Sha'tari Deadeye Gauntlets
 							i(112517),	-- Sha'tari Keeper Handguards
 							i(112516),	-- Talador Sentinel Gloves

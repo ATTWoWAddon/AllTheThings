@@ -345,6 +345,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 81530,	-- Anchorite Laanda
 					["coord"] = { 50.6, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(251478, {["timeline"] = { ADDED_11_2_7 }}),	-- Square Draenic Table (DECOR!)
+					},
 				}),
 				q(35197, {	-- Forging Ahead
 					["sourceQuest"] = 35195,	-- Socrethar's Fury
@@ -707,6 +710,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(251477, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Wooden Table (DECOR!)
 						i(119144, {	-- Touch of the Naaru (TOY!)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -786,6 +790,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 75028,	-- Exarch Maladaar
 					["coord"] = { 49.8, 48.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(251653, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenethyst Lamppost (DECOR!)
+					}
 				}),
 				q(35687, {	-- Socrethar's Demise
 					["sourceQuest"] = 35684,	-- Reclaiming the City

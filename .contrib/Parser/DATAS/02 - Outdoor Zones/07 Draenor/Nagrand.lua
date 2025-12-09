@@ -1377,6 +1377,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.0, 32.7, 553 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(245425, { ["timeline"] = { ADDED_11_2_7 } }),	-- Hanging Draenethyst Light (DECOR!)
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
 							i(118125),	-- Void-Warped Oshu'gun Greatmaul

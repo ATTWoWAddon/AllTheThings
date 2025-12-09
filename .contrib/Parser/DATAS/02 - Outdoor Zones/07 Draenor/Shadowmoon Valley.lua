@@ -995,6 +995,7 @@ root(ROOTS.Zones, {
 							i(106150),	-- Karabor Honor Guard Helm
 							i(106156),	-- Karabor Sage Cap
 							i(106160),	-- Karabor Skirmisher Hood
+							i(251654, { ["timeline"] = { ADDED_11_2_7 } }),	-- Large Karabor Fountain (DECOR!)
 							i(106139),	-- Rangari Initiate Helm
 						},
 					}),
@@ -1056,6 +1057,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 33256,	-- The Defense of Karabor
 						["provider"] = { "i", 119208 },	-- The Prophet's Arcanum
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(251549, { ["timeline"] = { ADDED_11_2_7 } }),	-- Emblem of the Naaru's Blessing (DECOR!)
+						},
 					}),
 					q(33255, {	-- The Righteous March
 						["sourceQuest"] = 33837,	-- Darkness Falls
@@ -1103,6 +1107,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.3, 26.1, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(251548, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Fence (DECOR!)
+							i(251330, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Fencepost (DECOR!)
 							i(113234),	-- Karabor Honor Guard Wristwraps
 							i(113233),	-- Karabor Sage Wristwraps
 							i(113235),	-- Karabor Skirmisher Wristwraps
