@@ -292,127 +292,138 @@ root(ROOTS.Zones, {
 				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
-						["crs"] = {
-							18802,	-- Alchemist Gribble <Alchemy Trainer> (A)
-							16588,	-- Apothecary Antonivich <Alchemy Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ALCHEMY,
+						n(18802, {	-- Alchemist Gribble <Alchemy Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ALCHEMY,
+						}),
+						n(16588, {	-- Apothecary Antonivich <Alchemy Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ALCHEMY,
+						}),
 					}),
 					prof(BLACKSMITHING, {
-						["crs"] = {
-							16823,	-- Humphry <Blacksmithing Trainer> (A)
-							16583,	-- Rohok <Blacksmithing Trainer> (H)
-						},
-						["coords"] = {
-							{ 56.8, 63.8, HELLFIRE_PENINSULA },	-- Honour Hold
-							{ 53.2, 38.2, HELLFIRE_PENINSULA },	-- Thrallmar
-						},
-						["groups"] = TBC_BLACKSMITHING,
+						n(16823, {	-- Humphry <Blacksmithing Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.8, 63.8, HELLFIRE_PENINSULA },	-- Honour Hold
+							["groups"] = TBC_BLACKSMITHING,
+						}),
+						n(16583, {	-- Rohok <Blacksmithing Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },	-- Thrallmar
+							["groups"] = TBC_BLACKSMITHING,
+						}),
 					}),
 					prof(FIRST_AID, {
-						["crs"] = {
-							18990,	-- Burko <Bandage Trainer> (A)
-							18991,	-- Aresella <Bandage Trainer> (H)
-						},
-						["coords"] = {
-							{ 22.4, 39.2, HELLFIRE_PENINSULA },
-							{ 26.2, 62.0, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_FIRST_AID,
+						n(18990, {	-- Burko <Bandage Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 22.4, 39.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_FIRST_AID,
+						}),
+						n(18991, {	-- Aresella <Bandage Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_FIRST_AID,
+						}),
 					}),
 					prof(ENCHANTING, {
-						["crs"] = {
-							18773,	-- Johan Barnes <Enchanting Trainer> (A)
-							18753,	-- Felannia <Enchanting Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.6, 66.0, HELLFIRE_PENINSULA },
-							{ 52.5, 36.0, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ENCHANTING,
+						n(18773, {	-- Johan Barnes <Enchanting Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENCHANTING,
+						}),
+						n(18753, {	-- Felannia <Enchanting Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.5, 36.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENCHANTING,
+						}),
 					}),
 					prof(ENGINEERING, {
-						["crs"] = {
-							18775,	-- Lebowski <Engineering Trainer> (A)
-							18752,	-- Zebig <Engineering Trainer> (H)
-						},
-						["coords"] = {
-							{ 55.6, 65.6, HELLFIRE_PENINSULA },
-							{ 54.8, 38.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_ENGINEERING,
+						n(18775, {	-- Lebowski <Engineering Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENGINEERING,
+						}),
+						n(18752, {	-- Zebig <Engineering Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 54.8, 38.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_ENGINEERING,
+						}),
 					}),
 					prof(HERBALISM, {
-						["crs"] = {
-							18776,	-- Rorelien <Herbalism Trainer> (A)
-							18748,	-- Ruak Stronghorn <Herbalism Trainer> (H)
-						},
-						["coords"] = {
-							{ 53.6, 65.8, HELLFIRE_PENINSULA },
-							{ 52.2, 36.2, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_HERBALISM,
+						n(18776, {	-- Rorelien <Herbalism Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 53.6, 65.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_HERBALISM,
+						}),
+						n(18748, {	-- Ruak Stronghorn <Herbalism Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_HERBALISM,
+						}),
 					}),
 					-- #if AFTER WRATH
 					prof(INSCRIPTION, {
-						["crs"] = {
-							30721,	-- Michael Schwan <Inscription Trainer> (A)
-							30722,	-- Neferatti <Inscription Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.0, 65.6, HELLFIRE_PENINSULA },
-							{ 52.2, 36.0, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_INSCRIPTION,
+						n(30721, {	-- Michael Schwan <Inscription Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.0, 65.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_INSCRIPTION,
+						}),
+						n(30722, {	-- Neferatti <Inscription Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_INSCRIPTION,
+						}),
 					}),
 					-- #endif
 					prof(JEWELCRAFTING, {
-						["crs"] = {
-							18774,	-- Tatiana <Jewelcrafting Trainer> (A)
-							18751,	-- Kalaen <Jewelcrafting Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.6, 63.6, HELLFIRE_PENINSULA },
-							{ 56.8, 37.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_JEWELCRAFTING,
+						n(18774, {	-- Tatiana <Jewelcrafting Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_JEWELCRAFTING,
+						}),
+						n(18751, {	-- Kalaen <Jewelcrafting Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.8, 37.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_JEWELCRAFTING,
+						}),
 					}),
 					prof(LEATHERWORKING, {
-						["crs"] = {
-							18771,	-- Brumman <Leatherworking Trainer> (A)
-							18754,	-- Barim Spilthoof <Leatherworking Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.0, 64.0, HELLFIRE_PENINSULA },
-							{ 56.2, 38.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_LEATHERWORKING,
+						n(18771, {	-- Brumman <Leatherworking Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.0, 64.0, HELLFIRE_PENINSULA },
+							["groups"] = TBC_LEATHERWORKING,
+						}),
+						n(18754, {	-- Barim Spilthoof <Leatherworking Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.2, 38.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_LEATHERWORKING,
+						}),
 					}),
 					prof(MINING, {
-						["crs"] = {
-							18779,	-- Hurnak Grimmord <Mining Trainer> (A)
-							18747,	-- Krugosh <Mining Trainer> (H)
-						},
-						["coords"] = {
-							{ 56.6, 63.8, HELLFIRE_PENINSULA },
-							{ 55.4, 37.6, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_MINING,
+						n(18779, {	-- Hurnak Grimmord <Mining Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.6, 63.8, HELLFIRE_PENINSULA },
+							["groups"] = TBC_MINING,
+						}),
+						n(18747, {	-- Krugosh <Mining Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 55.4, 37.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_MINING,
+						}),
 					}),
 					prof(TAILORING, {
-						["crs"] = {
-							18772,	-- Hama <Tailoring Trainer> (A)
-							18749,	-- Dalinna <Tailoring Trainer> (H)
-						},
-						["coords"] = {
-							{ 54.6, 63.6, HELLFIRE_PENINSULA },
-							{ 56.6, 37.2, HELLFIRE_PENINSULA },
-						},
-						["groups"] = TBC_TAILORING,
+						n(18772, {	-- Hama <Tailoring Trainer> (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
+							["groups"] = TBC_TAILORING,
+						}),
+						n(18749, {	-- Dalinna <Tailoring Trainer> (Horde)
+							["races"] = HORDE_ONLY,
+							["coord"] = { 56.6, 37.2, HELLFIRE_PENINSULA },
+							["groups"] = TBC_TAILORING,
+						}),
 					}),
 				}),
 				n(QUESTS, {

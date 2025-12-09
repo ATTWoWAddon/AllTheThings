@@ -4,114 +4,124 @@
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
-			["crs"] = {
-				153811,	-- Instructor Okanu <Profession Trainer> [A]
-				154393,	-- Narv <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.2, NAZJATAR },
-				{ 49.2, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_ALCHEMY,
+			n(153811, {	-- Instructor Okanu <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.2, NAZJATAR },
+				["groups"] = NAZJATAR_ALCHEMY,
+			}),
+			n(154393, {	-- Narv <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_ALCHEMY,
+			}),
 		}),
 		prof(BLACKSMITHING, {
-			["crs"] = {
-				153817,	-- Instructor Alikana <Profession Trainer> [A]
-				154321,	-- Jada <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.6, NAZJATAR },
-				{ 49.0, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_BLACKSMITHING,
+			n(153817, {	-- Instructor Alikana <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.6, NAZJATAR },
+				["groups"] = NAZJATAR_BLACKSMITHING,
+			}),
+			n(154321, {	-- Jada <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.0, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_BLACKSMITHING,
+			}),
 		}),
 		prof(COOKING, {
-			["crs"] = {
-				154257,	-- Instructor Ulooaka <Profession Trainer> [A]
-				154408,	-- Rolm <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.0, NAZJATAR },
-				{ 49.2, 61.8, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_COOKING,
+			n(154257, {	-- Instructor Ulooaka <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.0, NAZJATAR },
+				["groups"] = NAZJATAR_COOKING,
+			}),
+			n(154408, {	-- Rolm <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.8, NAZJATAR },
+				["groups"] = NAZJATAR_COOKING,
+			}),
 		}),
 		prof(ENCHANTING, {
-			["crs"] = {
-				153811,	-- Instructor Okanu <Profession Trainer> [A]
-				154393,	-- Narv <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.2, NAZJATAR },
-				{ 49.2, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_ENCHANTING,
+			n(153811, {	-- Instructor Okanu <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.2, NAZJATAR },
+				["groups"] = NAZJATAR_ENCHANTING,
+			}),
+			n(154393, {	-- Narv <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_ENCHANTING,
+			}),
 		}),
 		prof(ENGINEERING, {
-			["crs"] = {
-				153817,	-- Instructor Alikana <Profession Trainer> [A]
-				154321,	-- Jada <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.6, NAZJATAR },
-				{ 49.0, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_ENGINEERING,
+			n(153817, {	-- Instructor Alikana <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.6, NAZJATAR },
+				["groups"] = NAZJATAR_ENGINEERING,
+			}),
+			n(154321, {	-- Jada <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.0, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_ENGINEERING,
+			}),
 		}),
 		prof(HERBALISM, {
-			["crs"] = {
-				154257,	-- Instructor Ulooaka <Profession Trainer> [A]
-				154408,	-- Rolm <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.0, NAZJATAR },
-				{ 49.2, 61.8, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_HERBALISM,
+			n(154257, {	-- Instructor Ulooaka <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.0, NAZJATAR },
+				["groups"] = NAZJATAR_HERBALISM,
+			}),
+			n(154408, {	-- Rolm <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.8, NAZJATAR },
+				["groups"] = NAZJATAR_HERBALISM,
+			}),
 		}),
 		prof(INSCRIPTION, {
-			["crs"] = {
-				153811,	-- Instructor Okanu <Profession Trainer> [A]
-				154393,	-- Narv <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.2, NAZJATAR },
-				{ 49.2, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_INSCRIPTION,
+			n(153811, {	-- Instructor Okanu <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.2, NAZJATAR },
+				["groups"] = NAZJATAR_INSCRIPTION,
+			}),
+			n(154393, {	-- Narv <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_INSCRIPTION,
+			}),
 		}),
 		prof(JEWELCRAFTING, {
-			["crs"] = {
-				153811,	-- Instructor Okanu <Profession Trainer> [A]
-				154393,	-- Narv <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.2, NAZJATAR },
-				{ 49.2, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_JEWELCRAFTING,
+			n(153811, {	-- Instructor Okanu <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.2, NAZJATAR },
+				["groups"] = NAZJATAR_JEWELCRAFTING,
+			}),
+			n(154393, {	-- Narv <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_JEWELCRAFTING,
+			}),
 		}),
 		prof(LEATHERWORKING, {
-			["crs"] = {
-				153817,	-- Instructor Alikana <Profession Trainer> [A]
-				154321,	-- Jada <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.6, NAZJATAR },
-				{ 49.0, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_LEATHERWORKING,
+			n(153817, {	-- Instructor Alikana <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.6, NAZJATAR },
+				["groups"] = NAZJATAR_LEATHERWORKING,
+			}),
+			n(154321, {	-- Jada <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.0, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_LEATHERWORKING,
+			}),
 		}),
 		prof(MINING, {
-			["crs"] = {
-				154257,	-- Instructor Ulooaka <Profession Trainer> [A]
-				154408,	-- Rolm <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.0, NAZJATAR },
-				{ 49.2, 61.8, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_MINING,
+			n(154257, {	-- Instructor Ulooaka <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.0, NAZJATAR },
+				["groups"] = NAZJATAR_MINING,
+			}),
+			n(154408, {	-- Rolm <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.2, 61.8, NAZJATAR },
+				["groups"] = NAZJATAR_MINING,
+			}),
 		}),
 		prof(SKINNING, {
 			q(56565, {	-- Hanging by a Thread [A]
@@ -144,15 +154,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			}),
 		}),
 		prof(TAILORING, {
-			["crs"] = {
-				153817,	-- Instructor Alikana <Profession Trainer> [A]
-				154321,	-- Jada <Profession Trainer> [H]
-			},
-			["coords"] = {
-				{ 38.0, 53.6, NAZJATAR },
-				{ 49.0, 61.6, NAZJATAR },
-			},
-			["groups"] = NAZJATAR_TAILORING,
+			n(153817, {	-- Instructor Alikana <Profession Trainer> [Alliance]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 38.0, 53.6, NAZJATAR },
+				["groups"] = NAZJATAR_TAILORING,
+			}),
+			n(154321, {	-- Jada <Profession Trainer> [Horde]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 49.0, 61.6, NAZJATAR },
+				["groups"] = NAZJATAR_TAILORING,
+			}),
 		}),
 	}),
 })));

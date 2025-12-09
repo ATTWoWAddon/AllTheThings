@@ -10,7 +10,7 @@ i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
 h(-679,{awp=110207,g={
-o(574596,{maps={1,7,10,14,15,17,18,21,22,23,25,26,27,32,36,37,42,47,48,49,50,51,52,56,62,63,65,66,69,70,71,76,77,78,80,83,88,199,210,241,425,427,461,462,469},type="AsGenericObjectContainer",g={
+o(574596,{maps={1,7,10,14,15,17,18,21,22,23,25,26,27,32,36,37,42,47,48,49,50,51,52,56,62,63,65,66,69,70,71,76,77,78,80,83,88,199,210,425,427,461,462,469},type="AsGenericObjectContainer",g={
 o(574596,{type="AsSubGenericObject"}),
 o(578925,{type="AsSubGenericObject"}),
 o(576717,{type="AsSubGenericObject"}),
@@ -43,7 +43,6 @@ o(576402,{type="AsSubGenericObject"}),
 o(584615,{type="AsSubGenericObject"}),
 o(574416,{type="AsSubGenericObject"}),
 o(573368,{type="AsSubGenericObject"}),
-o(574611,{type="AsSubGenericObject"}),
 o(584694,{type="AsSubGenericObject"}),
 o(573057,{type="AsSubGenericObject"}),
 o(576282,{type="AsSubGenericObject"}),
@@ -4917,10 +4916,9 @@ i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
 h(-679,{awp=110207,g={
-o(578160,{maps={21,198,217,241,249},type="AsGenericObjectContainer",g={
+o(578160,{maps={198,217,241,249},type="AsGenericObjectContainer",g={
 o(578160,{type="AsSubGenericObject"}),
 o(573547,{type="AsSubGenericObject"}),
-o(573459,{type="AsSubGenericObject"}),
 o(574611,{type="AsSubGenericObject"}),
 o(586651,{type="AsSubGenericObject"}),
 i(251764,{type="AsSubGenericObject"})}})}}),
