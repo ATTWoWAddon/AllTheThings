@@ -156,7 +156,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240350),	-- Legwraps of Night Eternal
 					i(240352),	-- Robe of Night Eternal
 					i(240353),	-- Vestments of Night Eternal
-					}),
+				}),
 				filter(LEATHER, {
 					i(240775),	-- Lunarblight Leather Cowl
 					i(240781),	-- Lunarblight Leather Cuffs
@@ -166,7 +166,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240778),	-- Lunarblight Leather Strap
 					i(240780),	-- Lunarblight Leather Striders
 					i(240777),	-- Lunarblight Leather Tunic
-					}),
+				}),
 				filter(MAIL, {
 					i(240306),	-- Faceguard of Devouring Night
 					i(240299),	-- Handguards of Devouring Night
@@ -176,7 +176,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240301),	-- Stompers of Devouring Night
 					i(240303),	-- Waistband of Devouring Night
 					i(240300),	-- Wristguards of Devouring Night
-					}),
+				}),
 				filter(PLATE, {
 					i(240544),	-- Xorothian Battleplate
 					i(240539),	-- Xorothian Gauntlets
@@ -608,5 +608,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
+		-- Phase 5: Infinite Echoes
+		--[[q(XXXXX, {	-- Out of Time
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
+		}),
+		q(XXXXX, {	-- Until Our Next Hello
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
+		}),--]]
 	}),
 })))

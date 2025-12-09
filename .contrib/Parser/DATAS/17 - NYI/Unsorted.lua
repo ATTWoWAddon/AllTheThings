@@ -5834,7 +5834,6 @@ root(ROOTS.Unsorted, {
 				i(243304),	-- Jubilant Snowman Costume
 				i(245580),	-- Rolling Snowball
 			}),
-			i(264675),	-- Cache from the Infinite's Armory
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
