@@ -537,6 +537,13 @@ local fieldConverters = {
 			CacheField(group, "nextQuests", value[i])
 		end
 	end,
+	["lc"] = function(group, value)
+		for i=2,#value,2 do
+			if value[i] == "questID" then
+				CacheField(group, "nextQuests", value[i + 1])
+			end
+		end
+	end,
 	["sourceQuests"] = function(group, value)
 		for i=1,#value do
 			CacheField(group, "sourceQuestID", value[i]);
