@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,cl,crit,cs,d,de,en,exp,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cl,crit,cs,d,en,exp,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateEnsemble,_.CreateExploration,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{1,2,3,4,5,6,7,8,9,10,11,12},{1,2,4,5,6,7,8,9,10,11,12},{1,2,6},{1,2},{1,3,4,7,11,22,24,25,29,30,32,34,37,52,85},{1,3,7,10},{1,5,8,9},{1},{10,11},{10},{11},{12},{1204,9000},{13},{151763},{154208},{2,5,9},{2},{3,34,84,85},{3,7,13},{3},{35},{37.7,55.3,1355},{4,10,11,12},{4,10,11},{4,6,8,11},{4},{5,8,9},{5},{50.5,66.2,1355},{52,70},{6},{7},{8,10,12,13},{8},{9}};
 _.Categories.NeverImplemented={
 h(-12,{
@@ -12853,11 +12853,7 @@ i(242369),
 i(237755,{spellID=1223471}),
 i(237751,{spellID=1223173}),
 i(237750,{spellID=1223065}),
-i(237769,{spellID=1223492})}}),
-x(11.0207,{awp=110207,g={
-de(1957,{itemID=246026}),
-de(1959,{itemID=246028}),
-de(1958,{itemID=246027})}})})}),
+i(237769,{spellID=1223492})}})})}),
 flt(100,{
 x(1,{
 h(-232,{

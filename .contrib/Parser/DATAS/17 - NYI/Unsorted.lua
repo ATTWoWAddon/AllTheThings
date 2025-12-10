@@ -5663,6 +5663,12 @@ root(ROOTS.Unsorted, {
 				i(246026),	-- Orgrimmar Beam Platform
 				i(246028),	-- Orgrimmar Large Platform
 				i(246027),	-- Orgrimmar Round Platform
+				i(246035),	-- Stormwind Angled Platform
+				i(246031),	-- Stormwind Beam Platform
+				i(246033),	-- Stormwind Large Platform
+				i(246032),	-- Stormwind Round Platform
+				i(246034),	-- Stormwind Small Platform
+				i(241625),	-- Open Elven Wood Crate
 			}),
 			filter(MISC, {
 				i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean
