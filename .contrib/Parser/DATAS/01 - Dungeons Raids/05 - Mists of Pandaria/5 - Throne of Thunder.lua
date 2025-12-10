@@ -83,14 +83,6 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.rwp = 50400;
 	end
 end]];
-local VALE_SOO_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
-		t.description = "This will become unavailable when the Siege of Orgrimmar phase begins."
-	end
-end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, inst(362, {	-- Throne of Thunder
@@ -195,31 +187,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				faction(FACTION_SHADO_PAN_ASSAULT, {	-- Shado-Pan Assault
 					["icon"] = 645204,
 				}),
-			}),
-			n(QUESTS, {
-				{
-					["aqd"] = q(32719, {	-- Mogu Runes of Fate (A)
-						["qg"] = 64029,	-- Elder Lin
-						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					["hqd"] = q(32718, {	-- Mogu Runes of Fate (H)
-						["qg"] = 63996,	-- Elder Liao
-						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
-					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
-					-- #if MOP
-					["OnUpdate"] = VALE_SOO_ONUPDATE,
-					-- #endif
-					["isWeekly"] = true,
-					["groups"] = {
-						currency(752, {	-- Mogu Rune of Fate
-							-- #if MOP
-							["OnUpdate"] = VALE_SOO_ONUPDATE,
-							-- #endif
-						}),
-					},
-				},
 			}),
 			n(VENDORS, {
 				n(RAID_FINDER_VENDOR, {
