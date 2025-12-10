@@ -120,7 +120,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246245) },	-- Stormwind Round Platform (DECOR!)
 			}),
 			q(92976, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: on the Duskwood side of the most southern bridge on the map
+				["coord"] = { 47.7, 62.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246243) },	-- Stormwind Beam Platform (DECOR!)
 			}),
 			q(92977, {	-- Decor Treasure Hunt
@@ -168,7 +168,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(235677) },	-- Wrought Iron Floor Lamp (DECOR!)
 			}),
 			q(92988, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Guilded Oaks area. just north of the flightpath on the coast is a mill.
+				["coord"] = { 34.6, 60.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235675) },	-- Three-Candle Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92989, {	-- Decor Treasure Hunt

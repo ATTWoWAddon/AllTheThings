@@ -362,6 +362,7 @@ MobileDB.Creature = {
 	 [75968] = true,	-- Iron Shredder Prototype
 	 [77367] = true,	-- Archmage Kem
 	 [77789] = true,	-- Blingtron 5000
+	 [79813] = true,	-- Albert de Hyde
 	 [79815] = true,	-- Grun'lek
 	 [79836] = true,	-- Gez'la
 	 [79862] = true,	-- Yorn Longhoof <Banker>

@@ -108,6 +108,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246036) },	-- High-Backed Orgrimmar Chair (DECOR)
 			}),
 			q(93097, {	-- Decor Treasure Hunt
+				["coord"] = { 57.8, 63.5, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(246217) },	-- Short Orgrimmar Bench (DECOR)
 			}),
 			q(93098, {	-- Decor Treasure Hunt
@@ -153,6 +154,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(245680) },	-- Orgrimmar Bureaucrat's Desk (DECOR)
 			}),
 			q(93110, {	-- Decor Treasure Hunt
+				["coord"] = { 44.2, 86.7, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(245398) },	-- Tusked Fireplace (DECOR)
 			}),
 			q(93111, {	-- Decor Treasure Hunt
