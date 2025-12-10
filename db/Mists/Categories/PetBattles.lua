@@ -140,13 +140,13 @@ i(92681,{awp=50004,b=1,f=55,pb=1,q=3})}}),
 i(82800,{awp=50004,collectible=false,description="|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",f=101,pb=1,q=3})}}),
 h(-55,{awp=50004,g={
 n(63596,{awp=50004,coords={{69.4,24.4,84}},r=2,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",g={
-p(138,{awp=50004,npcID=21010,races={11}}),
+p(138,{awp=50004,itemID=29901,npcID=21010,q=1,races={11},spellID=35907}),
 p(630,{awp=50004,npcID=63098,races={22}}),
-p(68,{awp=50004,npcID=7553,races={4}}),
-p(792,{awp=50004,npcID=65314,races={25}}),
-p(43,{awp=50004,npcID=7382,races={1},g={
+p(68,{awp=50004,itemID=8500,npcID=7553,q=1,races={4},spellID=10707}),
+p(792,{awp=50004,itemID=88148,npcID=65314,q=1,races={25},spellID=127816}),
+p(43,{awp=50004,itemID=8487,npcID=7382,q=1,races={1},spellID=10676,g={
 crit(23587,{achID=8397,awp=50400,id=14,pb=1})}}),
-p(72,{awp=50004,npcID=7560,races={3,7}})}}),
+p(72,{awp=50004,itemID=8497,npcID=7560,q=1,races={3,7},spellID=10711})}}),
 n(63075,{awp=50004,coords={{53.8,50.1,27}},r=2,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",sym={{"select","npcID",63596},{"pop"}}}),
 n(63077,{awp=50004,coords={{49.2,52,97}},r=2,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",sym={{"select","npcID",63596},{"pop"}}}),
 n(63014,{awp=50004,coords={{40.2,66,37}},r=2,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",sym={{"select","npcID",63596},{"pop"}}}),
@@ -158,9 +158,9 @@ n(63086,{awp=50004,coords={{36.8,77.1,85}},r=1,sharedDescription="You may only l
 n(63061,{awp=50004,coords={{52.7,41.3,1}},r=1,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",sym={{"select","npcID",63626},{"pop"}}}),
 n(63067,{awp=50004,coords={{49.2,56.1,7}},r=1,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",sym={{"select","npcID",63626},{"pop"}}}),
 n(63626,{awp=50004,coords={{52.6,59.3,85}},r=1,sharedDescription="You may only learn the pet offered once per character from this Battle Pet Trainer.|r",g={
-p(75,{awp=50004,npcID=7565,races={2,8}}),
-p(70,{awp=50004,npcID=14421,races={6}}),
-p(142,{awp=50004,npcID=21055,races={10}}),
-p(792,{awp=50004,npcID=65314,races={26}}),
+p(75,{awp=50004,itemID=10360,npcID=7565,q=1,races={2,8},spellID=10714}),
+p(70,{awp=50004,itemID=10394,npcID=14421,q=1,races={6},spellID=10709}),
+p(142,{awp=50004,itemID=29953,npcID=21055,q=1,races={10},spellID=36027}),
+p(792,{awp=50004,itemID=88148,npcID=65314,q=1,races={26},spellID=127816}),
 p(629,{awp=50004,npcID=63097,races={9}}),
-p(55,{awp=50004,npcID=7395,races={5}})}})}})};
+p(55,{awp=50004,itemID=10393,npcID=7395,q=1,races={5},spellID=10688})}})}})};

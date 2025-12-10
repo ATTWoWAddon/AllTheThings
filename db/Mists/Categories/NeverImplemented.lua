@@ -3247,7 +3247,7 @@ mnt(28828,{displayID=16314})}}),
 x(2.0005,{awp=20005,g={
 mnt(32420,{displayID=17701,itemID=25664})}}),
 x(2.0008,{awp=20008,g={
-i(29225,{b=1,displayID=20359,f=100,lvl=40,q=4})}}),
+i(29225,{b=1,displayID=20359,lvl=40,q=4})}}),
 x(2.01,{awp=20100,g={
 mnt(40212,{displayID=16314})}}),
 x(2.0102,{awp=20102,g={
@@ -3326,7 +3326,7 @@ mnt(128859),
 mnt(127180,{b=1,displayID=43708,itemID=87785,lvl=90,q=4}),
 mnt(123160,{b=1,displayID=42837,itemID=84728,lvl=90,q=4}),
 mnt(127274,{b=1,displayID=43714,itemID=87793,lvl=90,q=4}),
-i(91016,{b=1,displayID=42352,f=100,lvl=40,q=4})}}),
+i(91016,{b=1,displayID=42352,lvl=40,q=4})}}),
 x(5.01,{awp=50100,g={
 mnt(134854,{displayID=46799})}}),
 x(5.04,{awp=50400,g={

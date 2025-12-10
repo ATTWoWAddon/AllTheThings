@@ -7031,6 +7031,8 @@ r(146925,{awp=50400,learnedAt=600,requireSkill=197,u=54}),
 r(143011,{awp=50400,learnedAt=600,requireSkill=197,u=54})}})}})}}),
 flt(50,{awp=50004,g={
 i(89112,{awp=50004,b=1,q=1}),
+i(74849,{awp=50004,description="Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",q=1}),
+i(74844,{awp=50004,description="Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",q=1}),
 i(76061,{awp=50004,b=1,q=3})}})}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
 i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={

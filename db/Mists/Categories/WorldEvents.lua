@@ -452,8 +452,8 @@ h(-16,{awp=50100,rwp=60002,u=51,g={
 n(67262,{awp=50100,rwp=60002,u=51,g={
 i(97983,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
 h(-31,{awp=50100,rwp=60002,u=51,g={
-faction(1419,{awp=50100,description="Before Phase 4, you can only reach Rank 8.",minReputation={1419,8},r=2,rwp=60002,u=51}),
-faction(1374,{awp=50100,description="Before Phase 4, you can only reach Rank 8.",minReputation={1374,8},r=1,rwp=60002,u=51})}}),
+faction(1419,{awp=50100,r=2,rwp=60002,u=51}),
+faction(1374,{awp=50100,r=1,rwp=60002,u=51})}}),
 h(-45,{awp=50100,rwp=60002,u=51,g={
 q(32836,{awp=50300,providers={{"i",97978}},rwp=70003,u=53,g={
 crit(23371,{achID=8339,awp=50300,id=1,r=2,rwp=70003,u=53}),
@@ -607,7 +607,7 @@ n(70713,{awp=50300,maps={500},r=2,rwp=90002,u=51}),
 n(70719,{awp=50300,maps={500},r=2,rwp=90002,u=51}),
 n(68364,{awp=50100,coords={{50.8,29.4,503}},r=1,u=51,g={
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
-mnt(142641,{awp=50300,b=1,description="While this is already in the shop, you cannot get Rank 10 until Phase 4.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156,u=51}),
@@ -626,7 +626,7 @@ s(279118,98082,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279278,98543,{awp=50300,b=1,f=10,q=4,rwp=90002,u=53})}}),
 n(68363,{awp=50100,coords={{54.3,25.2,500}},r=2,u=51,g={
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
-mnt(142641,{awp=50300,b=1,description="While this is already in the shop, you cannot get Rank 10 until Phase 4.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279125,98092,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),

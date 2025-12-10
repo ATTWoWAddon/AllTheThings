@@ -147,6 +147,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						ach(7294),	-- A Taste of Things to Come (Halfhill)
 						ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
 							["provider"] = { "n", 58710 },	-- Jogu the Drunk
+							-- #if ANYCLASSIC
+							["timeline"] = { ADDED_5_0_4, "deleted 5.5.3" },
+							-- #endif
 							["groups"] = {
 								crit(21034, {	-- Green Cabbage
 									["_npcs"] = { 58567 },	-- Ripe Green Cabbage

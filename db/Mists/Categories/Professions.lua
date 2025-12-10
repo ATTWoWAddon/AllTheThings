@@ -158,7 +158,7 @@ i(87538,{awp=50004,b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(397,{awp=50004,requireSkill=794})}}),
 i(87539,{awp=50004,b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(401,{awp=50004,requireSkill=794}),
-i(97986,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,requireSkill=794,rwp=70003,u=53})}}),
+i(97986,{awp=50300,b=1,lvl=90,q=1,requireSkill=794,rwp=70003,u=53})}}),
 i(87540,{awp=50004,b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(385,{awp=50004,requireSkill=794})}}),
 i(87541,{awp=50004,b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
@@ -945,7 +945,7 @@ crit(21983,{achID=7611,awp=50004,id=2,providers={{"i",86542}}}),
 crit(21984,{achID=7611,awp=50004,id=8,providers={{"i",86545}}}),
 crit(21985,{achID=7611,awp=50004,id=11,providers={{"i",86544}}})}})}}),
 h(-45,{awp=50004,requireSkill=356,g={
-i(97981,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,requireSkill=356,rwp=70003,u=53})}})}})}),
+i(97981,{awp=50300,b=1,description="Drops from fishing pools in Pandaria.",lvl=90,q=1,requireSkill=356,rwp=70003,u=53})}})}})}),
 prof(182,{
 h(-26,{awp=30002,requireSkill=182,rwp=60002,g={
 r(81708,{awp=40003,learnedAt=1,rank=1,requireSkill=182,rwp=60002}),

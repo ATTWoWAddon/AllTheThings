@@ -950,7 +950,7 @@ i(93730,{awp=50200,e=1,f=55,q=1,rwp=80205}),
 p(335,{awp=40300,b=1,e=1,itemID=73765,npcID=54487,q=3,spellID=103074}),
 toy(90899,{awp=50100,b=1,e=1,q=3}),
 p(339,{awp=40300,b=1,e=1,itemID=73905,npcID=55367,q=3,spellID=103549}),
-i(97987,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",e=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
+i(97987,{awp=50300,b=1,e=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
 h(-56,{e=1}),
 h(-58,{e=1,g={
 n(55072,{awp=40300,coords={{47.5,66.3,407}},description="This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",e=1,g={

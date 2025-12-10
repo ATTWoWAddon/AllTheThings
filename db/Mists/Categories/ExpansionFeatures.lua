@@ -4299,8 +4299,8 @@ s(275794,93136,{awp=50004,b=1,f=25,lvl=90,q=3,u=51}),
 s(275791,93133,{awp=50004,b=1,f=27,lvl=90,q=3,u=51})}})}}),
 ah(98133,{awp=50300,description="Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",providers={{"i",98133}},type="i",u=53,g={
 h(-45,{awp=50004,u=53,g={
-i(97979,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,rwp=70003,u=53}),
-i(97982,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,rwp=70003,u=53})}}),
+i(97979,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53}),
+i(97982,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})}}),
 h(-89,{awp=50004,u=53,g={
 s(275676,92881,{awp=50004,b=1,f=3,lvl=90,q=3,u=53}),
 s(273634,89503,{awp=50004,b=1,f=3,lvl=90,q=3,u=53}),
@@ -5385,14 +5385,6 @@ crit(21268,{achID=7294,awp=50004,id=9,providers={{"s",129705}},u=50}),
 crit(21269,{achID=7294,awp=50004,id=10,providers={{"s",129676}},u=50}),
 crit(21270,{achID=7294,awp=50004,id=11,providers={{"s",129675}},u=50}),
 crit(22568,{achID=7294,awp=50004,id=12,providers={{"s",130109}},u=50})}}),
-ach(7295,{awp=50004,providers={{"n",58710}},u=50,g={
-crit(21121,{achID=7295,awp=50004,id=2,providers={{"s",123355}},u=50}),
-crit(21122,{achID=7295,awp=50004,id=3,providers={{"s",123380}},u=50}),
-crit(21120,{achID=7295,awp=50004,id=1,providers={{"s",123356}},u=50}),
-crit(21123,{achID=7295,awp=50004,id=4,providers={{"s",123451}},u=50}),
-crit(21124,{achID=7295,awp=50004,id=5,providers={{"s",123522}},u=50}),
-crit(21126,{achID=7295,awp=50004,id=6,providers={{"s",123548}},u=50}),
-crit(21127,{achID=7295,awp=50004,id=7,providers={{"s",123571}},u=50})}}),
 ach(7293,{awp=50004,u=50})}}),
 n(66175,{awp=50004,cost={{"i",85267,1}},crs={66172},description="Each tree is a one-time use vanity item that lasts three minutes.",u=50}),
 n(65916,{awp=50004,cost={{"i",85216,1}},description="Enigma Seeds will result in a Fool's Cap, Green Tea Leaf, Rain Poppy, Silkweed, Snow Lily or a Golden Lotus being grown in the plot. As with herbing, Golden Lotus will result in only 1 received, while the rest 2-4 will be received. Unlike gathering them in the wild, however, Golden Lotuses harvested from an Enigma Seed will not give the [Luck of the Lotus] buff.",u=50,g={
@@ -5407,7 +5399,7 @@ i(74250,{awp=50004,q=2,u=50}),
 i(74249,{awp=50004,q=1,u=50})}}),
 i(85219,{awp=50004,b=1,crs={66152,66161},description="This seed is acquired by harvesting crops at Sunsong Ranch, albeit very rarely.",f=55,q=3,u=50,g={
 p(650,{awp=50004,itemID=85220,npcID=63365,q=3,spellID=123778,u=50})}}),
-i(97988,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,rwp=70003,u=53}),
+i(97988,{awp=50300,b=1,description="Can only be harvested along with normal crops or Portal Shard crops.",lvl=90,q=1,rwp=70003,u=53}),
 n(67482,{awp=50004,cost={{"i",91806,1}},crs={67446},u=51,g={
 i(91865,{awp=50004,b=1,f=55,q=1,r=2,u=51}),
 i(91866,{awp=50004,b=1,f=55,q=1,r=2,u=51}),
@@ -5431,30 +5423,23 @@ n(66006,{awp=50004,cost={{"i",89197,1}},crs={66003},u=50,g={
 i(72988,{awp=50004,q=1,u=50})}}),
 n(66173,{awp=50004,cost={{"i",85269,1}},crs={66171},description="Each tree is a one-time use vanity item that lasts three minutes.",u=50}),
 n(58567,{awp=50004,cost={{"i",79102,1}},crs={58566,60113,63157},u=50,g={
-i(74840,{awp=50004,q=1,u=50}),
-crit(21034,{achID=7295,awp=50004,id=2,providers={{"s",111123}},u=50})}}),
+i(74840,{awp=50004,q=1,u=50})}}),
 n(66113,{awp=50004,cost={{"i",89328,1}},crs={66108,66109,66112},u=50,g={
 i(74847,{awp=50004,q=1,u=50})}}),
 n(63154,{awp=50004,cost={{"i",80590,1}},crs={63153,63156,63158},u=50,g={
-i(74841,{awp=50004,q=1,u=50}),
-crit(20536,{achID=7295,awp=50004,id=1,providers={{"s",123353}},u=50})}}),
+i(74841,{awp=50004,q=1,u=50})}}),
 n(63185,{awp=50004,cost={{"i",80592,1}},crs={63180,63181,63184},u=50,g={
-i(74842,{awp=50004,q=1,u=50}),
-crit(21035,{achID=7295,awp=50004,id=4,providers={{"s",123445}},u=50})}}),
+i(74842,{awp=50004,q=1,u=50})}}),
 n(63250,{awp=50004,cost={{"i",80594,1}},crs={63245,63246,63249},u=50,g={
-i(74849,{awp=50004,q=1,u=50}),
-crit(21038,{achID=7295,awp=50004,id=6,providers={{"s",123549}},u=50})}}),
+i(74849,{awp=50004,q=1,u=50})}}),
 n(63229,{awp=50004,cost={{"i",80593,1}},crs={63223,63224,63228},u=50,g={
-i(74844,{awp=50004,q=1,u=50}),
-crit(21036,{achID=7295,awp=50004,id=5,providers={{"s",123524}},u=50})}}),
+i(74844,{awp=50004,q=1,u=50})}}),
 n(63165,{awp=50004,cost={{"i",80591,1}},crs={63160,63161,63164},u=50,g={
-i(74843,{awp=50004,q=1,u=50}),
-crit(21037,{achID=7295,awp=50004,id=3,providers={{"s",123375}},u=50})}}),
+i(74843,{awp=50004,q=1,u=50})}}),
 n(66129,{awp=50004,cost={{"i",89329,1}},crs={66123,66124,66128},u=50,g={
 i(74848,{awp=50004,q=1,u=50})}}),
 n(63265,{awp=50004,cost={{"i",80595,1}},crs={63260,63261,63264},u=50,g={
-i(74850,{awp=50004,q=1,u=50}),
-crit(21039,{achID=7295,awp=50004,id=7,providers={{"s",123570}},u=50})}}),
+i(74850,{awp=50004,q=1,u=50})}}),
 n(66085,{awp=50004,cost={{"i",89326,1}},crs={66080,66081,66084},u=50,g={
 i(74846,{awp=50004,q=1,u=50})}})}}),
 h(-39,{awp=50004,u=50,g={
