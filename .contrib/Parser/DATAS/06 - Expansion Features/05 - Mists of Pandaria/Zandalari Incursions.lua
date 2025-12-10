@@ -76,6 +76,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(94225),	-- Stolen Celestial Insignia
 					i(94227),	-- Stolen Golden Lotus Insignia
 					i(94226),	-- Stolen Klaxxi Insignia
+					i(94223),	-- Stolen Shado-Pan Insignia
 				},
 			}),
 			n(69768, {	-- Zandalari Warscout
