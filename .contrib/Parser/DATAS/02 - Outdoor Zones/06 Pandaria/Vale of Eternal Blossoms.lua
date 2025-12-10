@@ -542,23 +542,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #if ANYCLASSIC
-					-- CRIEVE NOTE: They added new versions of the quests probably to prevent them from randomly disappearing in later phases. We'll see if this set gets removed.
-					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
-						["aqd"] = q(94404, {	-- Mogu Runes of Fate (A)
+					-- CRIEVE NOTE: They added this new version of the quests probably to prevent them from randomly disappearing in later phases. We'll see if this set gets removed.
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(94404, {	-- Mogu Runes of Fate (Both)
+						["aqd"] = {
 							["qg"] = 64029,	-- Elder Lin
 							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						}),
-						["hqd"] = q(94403, {	-- Mogu Runes of Fate (H)
+						},
+						["hqd"] = {
 							["qg"] = 63996,	-- Elder Liao
 							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						}),
+						},
 						["timeline"] = { ADDED_5_5_3 },
 						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
 						["isWeekly"] = true,
 						["groups"] = {
 							currency(752),	-- Mogu Rune of Fate
 						},
-					}),
+					})),
 					-- #endif
 					RemovedWithSOO(q(30633, {	-- Out with the Scouts
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
