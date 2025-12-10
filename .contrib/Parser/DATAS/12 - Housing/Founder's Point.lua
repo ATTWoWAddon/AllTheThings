@@ -64,7 +64,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245384) },	-- Sturdy Wooden Shelf (DECOR!)
 			}),
 			q(92962, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Go northeast and fly to the highest mountain in the isle. At its peak you'll find a mound of dirt. /way 69.2, 26.7
+				["coord"] = { 69.2, 26.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245355) },	-- Sturdy Wooden Door (DECOR!)
 			}),
 			q(92963, {	-- Decor Treasure Hunt
@@ -72,7 +72,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245356) },	-- Goldshire Window (DECOR!)
 			}),
 			q(92964, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Located south of the Cliffside flight path, next to the tower.
+				["coord"] = { 64.9, 51.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245376) },	-- Tall Sturdy Wooden Bookcase (DECOR!)
 			}),
 			q(92965, {	-- Decor Treasure Hunt
@@ -108,11 +108,15 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246104) },	-- Carved Wooden Crate (DECOR!)
 			}),
 			q(92972, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Follow the left coastside from the bridge on the south coast of the zone. Soon you will see a cave with the secret inside.
+				["description"] = "In a cave",
+				["coords"] = {
+					{ 45.8, 64.9, FOUNDERS_POINT },	-- Cave entrance
+					{ 45.4, 64.3, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(246103) },	-- Small Wooden Nightstand (DECOR!)
 			}),
 			q(92973, {	-- Decor Treasure Hunt
-				-- Exo Note: Maybe around 46.4, 57.8?
+				["coord"] = { 46.3, 57.9, FOUNDERS_POINT },
 				["groups"] = { i(246101) },	-- Small Wooden Stool (DECOR!)
 			}),
 			q(92974, {	-- Decor Treasure Hunt
@@ -136,7 +140,11 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(243334) },	-- Reinforced Wooden Chest (DECOR!)
 			}),
 			q(92979, {	-- Decor Treasure Hunt
-				-- Exo Note: Cave at 62.3, 79.5
+				["description"] = "In a cave",
+				["coords"] = {
+					{ 62.4, 79.5, FOUNDERS_POINT },	-- Cave entrance
+					{ 61.6, 79.4, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(245334) },	-- Wicker Basket (DECOR!)
 			}),
 			q(92980, {	-- Decor Treasure Hunt
@@ -152,7 +160,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(244531) },	-- Sturdy Fireplace (DECOR!)
 			}),
 			q(92983, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: There's a covered bridge to the left of Small Aerie flightpoint. The mound of dirt can be found bellow, by the river. You won't need to dip into the water. /way 42.5, 44.7
+				["coord"] = { 42.5, 44.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245372) },	-- Covered Wooden Table (DECOR!)
 			}),
 			q(92984, {	-- Decor Treasure Hunt
@@ -160,7 +168,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245336) },	-- Sturdy Wooden Bed (DECOR!)
 			}),
 			q(92985, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Founders Point isle has 2 main rivers. Go to the west one. The river ends in a big waterfall where it meets the sea. Check the waters bellow said waterfall. /way 37.1, 45.9
+				["coord"] = { 37.1, 45.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246106) },	-- Wooden Chamberstick (DECOR!)
 			}),
 			q(92986, {	-- Decor Treasure Hunt
@@ -180,10 +188,11 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253589) },	-- Short Wooden Cabinet (DECOR!)
 			}),
 			q(92990, {	-- Decor Treasure Hunt
+				["coord"] = { 49.7, 42.4, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246258) },	-- Bel'ameth Round Platform (DECOR!)
 			}),
 			q(92991, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: you will be find the treasure at coordinates 49.15, 27.16
+				["coord"] = { 49.2, 27.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246254) },	-- Bel'ameth Beam Platform (DECOR!)
 			}),
 			q(92992, {	-- Decor Treasure Hunt
@@ -211,7 +220,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246107) },	-- Large Sturdy Wooden Table (DECOR!)
 			}),
 			q(92998, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Check below the first steps of the wooden stairs 26.2, 37.9
+				["coord"] = { 26.2, 37.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246102) },	-- Large Covered Wooden Table (DECOR!)
 			}),
 			q(92999, {	-- Decor Treasure Hunt
@@ -227,7 +236,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(241618) },	-- Elegant Padded Footstool (DECOR!)
 			}),
 			q(93001, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: in the river basically next to the architect
+				["coord"] = { 56.8, 52.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244782) },	-- Elven Floral Window (DECOR!)
 			}),
 			q(93002, {	-- Decor Treasure Hunt
@@ -239,7 +248,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(257690) },	-- Elegant Padded Chaise (DECOR!)
 			}),
 			q(93004, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Located to the east of the bulletin board on the zone map, at the entrance to the theatre area.
+				["coord"] = { 55.3, 39.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244780) },	-- Circular Elven Table (DECOR!)
 			}),
 			q(93005, {	-- Decor Treasure Hunt
@@ -255,16 +264,12 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253181) },	-- Gemmed Elven Chest (DECOR!)
 			}),
 			q(93008, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Gazebo set on a pond in Founders Point. The dirt pile is on the platform, not in the pond. /way 52, 29
+				["coord"] = { 52.4, 28.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235994) },	-- Ornate Stonework Fireplace (DECOR!)
 			}),
 			q(93009, {	-- Decor Treasure Hunt
 				["coord"] = { 53.6, 42.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246255) },	-- Bel'ameth Large Platform (DECOR!)
-			}),
-			q(93078, {	-- Decor Treasure Hunt
-				-- Exo Note: Somewhere in the area of 53.8, 24.0
-				["groups"] = { i(244533) },	-- Iron Chain Chandelier (DECOR!)
 			}),
 		}));
 		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based
