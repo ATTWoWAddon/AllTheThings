@@ -500,6 +500,18 @@ app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 	},
 }, (function(t) return t.factionID; end));
 
+local function OnClickCostItem(row, button)
+	if button ~= "RightButton" then
+		return true
+	end
+
+	local group = row.ref
+	if not group then return true end
+
+	-- perform a search-based popout of the cost item rather than cloning the group
+	app.CreatePopoutForSearch(group.key..":"..group.itemID)
+	return true
+end
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 local CreateCostItem = app.CreateClass("CostItem", KEY, {
 	IsClassIsolated = true,
@@ -524,6 +536,7 @@ local CreateCostItem = app.CreateClass("CostItem", KEY, {
 	costCollectibles = app.EmptyFunction,
 	collectibleAsCost = app.EmptyFunction,
 	costsCount = app.EmptyFunction,
+	OnClick = function() return OnClickCostItem end,
 })
 app.CreateCostItem = function(t, total)
 	local c = app.WrapObject(CreateCostItem(t[KEY]), t);

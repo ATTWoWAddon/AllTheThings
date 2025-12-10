@@ -260,6 +260,24 @@ local function ParseCommand(msg)
 	return args
 end
 
+-- Performs a search for ATT content, then opens the single result in a new popout window
+app.CreatePopoutForSearch = function(search)
+	app.SetSkipLevel(2)
+	local group = app.GetCachedSearchResults(app.SearchForLink, search, nil, {SkipFill=true,IgnoreCache=true})
+	app.SetSkipLevel(0)
+	-- make sure it's 'something' returned from the search before throwing it into a window
+	if group then
+		if group.criteriaID and not group.achievementID then
+			app.print("Unsourced Criteria",group.criteriaID,"Use /att criteriaID:achievementID to view unsourced Criteria info")
+			return true
+		end
+		if group.link or group.name or group.text or group.key then
+			app:CreateMiniListForGroup(group)
+			return true
+		end
+	end
+end
+
 -- Default /att support
 AddSlashCommands({"allthethings","things","att"},
 function(cmd)
@@ -359,19 +377,8 @@ function(cmd)
 		end
 
 		-- Search for the Link in the database
-		app.SetSkipLevel(2);
-		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
-		app.SetSkipLevel(0);
-		-- make sure it's 'something' returned from the search before throwing it into a window
-		if group then
-			if group.criteriaID and not group.achievementID then
-				app.print("Unsourced Criteria",group.criteriaID,"Use /att criteriaID:achievementID to view unsourced Criteria info")
-				return true
-			end
-			if group.link or group.name or group.text or group.key then
-				app:CreateMiniListForGroup(group);
-				return true;
-			end
+		if app.CreatePopoutForSearch(cmd) then
+			return true
 		end
 		app.print("Unknown Command: ", cmd);
 	else

@@ -12,6 +12,8 @@ app.UI = {
 			return button == "RightButton"
 		end,
 		OnlySortingRightClick = function(row, button)
+			if button == "LeftButton" then return end
+
 			return button == "RightButton" and not IsShiftKeyDown()
 		end,
 	}
