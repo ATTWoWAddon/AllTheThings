@@ -2108,6 +2108,7 @@ local AccountWideQuestsDB = {
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92573,	-- Sturdy Chest
+	92577,	-- Furniture Favor
 	92588,	-- Fallen King's Corrupted Blades
 	92626,	-- ??
 	92628,	-- ??

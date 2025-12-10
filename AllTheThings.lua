@@ -2610,10 +2610,10 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					return group
 				end
 				header = CreateWrapVisualHeader(header, {group})
-				header.SortType = "name"
+				header.SortType = "Global"
 				return header
 			else
-				return { g = { group }, ["collectible"] = false, SortType = "name" };
+				return { g = { group }, ["collectible"] = false, SortType = "Global" };
 			end
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header

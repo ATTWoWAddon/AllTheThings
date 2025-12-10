@@ -695,9 +695,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(252312, {	-- Second Chair Pawdo <Frederick's Fabulous Furniture>
 				["timeline"] = { ADDED_11_2_7 },
-				["coord"] = { 53.0, 67.9, DORNOGAL },
-				["sym"] = { {"select","itemID", 253168} },	-- Earthen Storage Crate (DECOR!)
-				["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
+				["coords"] = {
+					{ 52.9, 68.0, DORNOGAL },
+					{ 52.9, 89.0, ORGRIMMAR },
+					{ 56.1, 77.1, STORMWIND_CITY },
+				},
+				["groups"] = {
+					i(253168),	-- Earthen Storage Crate (DECOR!)
+					i(253173),	-- Meadery Storage Barrel (DECOR!)
+					i(245655),	-- Filigree Moon Lamp (DECOR!)
+					i(245259),	-- Small Val'sharah Bookcase (DECOR!)
+				},
 			}),
 			n(234906, {	-- Syenite
 				["coord"] = { 58.0, 56.8, DORNOGAL },

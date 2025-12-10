@@ -73,6 +73,15 @@ root(ROOTS.Housing, n(QUESTS, {
 			},
 			["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
 		}),
+		q(92577, {	-- Furniture Favor
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(245259) },	-- Small Val'sharah Bookcase (DECOR!)
+		}),
 		-- Repeatables
 		q(92608, {	-- Furniture Favor
 			["qg"] = 252717,	-- Corlen Hordralin

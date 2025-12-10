@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 			}),
 			prof(ENCHANTING, {
 				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
-					["coord"] = { 47.0, 35.8, THE_GREAT_SEAL },
+					["coord"] = { 47.1, 35.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(BFA_ENCHANTING, {
 						r(265805),	-- Zandalari Enchanting

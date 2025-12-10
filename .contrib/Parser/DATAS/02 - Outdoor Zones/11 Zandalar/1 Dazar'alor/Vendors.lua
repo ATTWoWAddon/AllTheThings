@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
-				["coord"] = { 47.0, 35.8, DAZARALOR },
+				["coord"] = { 47.1, 35.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)

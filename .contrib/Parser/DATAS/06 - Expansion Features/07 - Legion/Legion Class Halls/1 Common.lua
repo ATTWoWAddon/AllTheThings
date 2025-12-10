@@ -156,14 +156,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			}),
 			ach(10460),	-- Hidden Potential
 			ach(10459),	-- Improving on History
-			ach(11213),	-- Lead a Legion (100)
-			ach(11212),	-- Raise an Army (20)
 			ach(10706),	-- Training the Troops (5)
+			ach(11212),	-- Raise an Army (20)
+			ach(11213),	-- Lead a Legion (100)
 			ach(11223),	-- Legendary Research
-			ach(11217),	-- Many Many Missions, Handle It! (500)
-			ach(11216),	-- So Many Missions (100)
-			ach(11215),	-- Quite a Few Missions (50)
 			ach(11214),	-- Many Missions (10)
+			ach(11215),	-- Quite a Few Missions (50)
+			ach(11216),	-- So Many Missions (100)
+			ach(11217),	-- Many Many Missions, Handle It! (500)
 			ach(11219),	-- Need Backup
 			ach(10853),	-- Part of History
 			un(REMOVED_FROM_GAME, ach(11772)),	-- Power Ascended

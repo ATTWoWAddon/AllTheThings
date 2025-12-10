@@ -5645,8 +5645,6 @@ root(ROOTS.Unsorted, {
 			n(DECOR, {
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-				i(245259),	-- Small Val'sharah Bookcase
-				i(245655),	-- Filigree Moon Lamp
 				i(246487),	-- Gnomish Tesla Coil
 				i(246845),	-- Tome of Shadowforge Cunning
 				i(246860),	-- Tome of Forsaken Resilience
