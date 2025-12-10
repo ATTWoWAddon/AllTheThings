@@ -50,18 +50,17 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["cr"] = 236112,	-- Billson
 			}),
 		}),
-		-- It might be possible that some of these quests are Neutral but not yet datamined properly on WoWhead
-		-- In that case, create a Neutral Header in the Quests fileand move respective quests there.
 		header(HEADERS.Quest, 92969, sharedData({	-- Decor Treasure Hunt
 			["qg"] = 248854,	-- The Last Architect
 			-- this allows proper merging with 'coord' used below
 			["coords"] = {{ 52.7, 37.5, FOUNDERS_POINT }},
 		},{
 			q(92437, {	-- Decor Treasure Hunt
+				["coord"] = { 63.2, 38.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245375) },	-- Sturdy Wooden Bookcase (DECOR!)
 			}),
 			q(92961, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: It is by the portal where you first enter, go behind the stone tower and it is in the shade of the big tree
+				["coord"] = { 58.1, 30.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245384) },	-- Sturdy Wooden Shelf (DECOR!)
 			}),
 			q(92962, {	-- Decor Treasure Hunt
@@ -77,11 +76,15 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245376) },	-- Tall Sturdy Wooden Bookcase (DECOR!)
 			}),
 			q(92965, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: /way 59.6 52.4
+				["coord"] = { 59.6, 52.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235523) },	-- Sturdy Wooden Chair (DECOR!)
 			}),
 			q(92966, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: 64.7, 57.7 Cave entrance underwater. 66.9, 57.0 Decor Treasure
+				["description"] = "In a cave",
+				["coords"] = {
+					{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave entrance
+					{ 66.9, 57.0, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(236676) },	-- Stormwind Interior Narrow Wall (DECOR!)
 			}),
 			q(92967, {	-- Decor Treasure Hunt
@@ -101,7 +104,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246742) },	-- Tall Sturdy Wooden Chair (DECOR!)
 			}),
 			q(92971, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Next to gazebo in the roundabout on the southwest side near Guilded Oaks flightpoint. /way 41, 61
+				["coord"] = { 40.9, 61.3, FOUNDERS_POINT },
 				["groups"] = { i(246104) },	-- Carved Wooden Crate (DECOR!)
 			}),
 			q(92972, {	-- Decor Treasure Hunt
@@ -113,10 +116,11 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246101) },	-- Small Wooden Stool (DECOR!)
 			}),
 			q(92974, {	-- Decor Treasure Hunt
-				-- Exo Note: Treasure should be at 55.1, 50.6
+				["coord"] = { 55.0, 50.7, FOUNDERS_POINT },
 				["groups"] = { i(246246) },	-- Stormwind Large Platform (DECOR!)
 			}),
 			q(92975, {	-- Decor Treasure Hunt
+				["coord"] = { 49.9, 56.6, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246245) },	-- Stormwind Round Platform (DECOR!)
 			}),
 			q(92976, {	-- Decor Treasure Hunt
@@ -144,7 +148,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245547) },	-- Wide Charming Couch (DECOR!)
 			}),
 			q(92982, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Head South West to the tip of the island, just after the last house (plot 41) to where the Decor smugglers are selling Horde items. Due South of them, in the water, is a group of turtles, and there is a pile of sand below the wreck above them.
+				["coord"] = { 61.9, 82.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244531) },	-- Sturdy Fireplace (DECOR!)
 			}),
 			q(92983, {	-- Decor Treasure Hunt
@@ -183,11 +187,11 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246254) },	-- Bel'ameth Beam Platform (DECOR!)
 			}),
 			q(92992, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: It's northeast of the Mear's Farm flight path, among 3 huge barrels.
+				["coord"] = { 41.0, 28.4, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245578) },	-- Bel'ameth Interior Doorway (DECOR!)
 			}),
 			q(92993, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: between the towers by the farm in founders point
+				["coord"] = { 40.0, 32.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245576) },	-- Bel'ameth Round Interior Pillar (DECOR!)
 			}),
 			q(92994, {	-- Decor Treasure Hunt
@@ -195,7 +199,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245575) },	-- Bel'ameth Interior Wall (DECOR!)
 			}),
 			q(92995, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: /way 30.9, 31.1
+				["coord"] = { 30.9, 31.1, FOUNDERS_POINT },		-- Treasure
 				["groups"] = { i(255650) },	-- Elegant Table Lamp (DECOR!)
 			}),
 			q(92996, {	-- Decor Treasure Hunt
@@ -203,7 +207,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246502) },	-- Charming Couch (DECOR!)
 			}),
 			q(92997, {	-- Decor Treasure Hunt
-				-- Exo Note: Somewhere around 24.1, 34.9
+				["coord"] = { 21.1, 30.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246107) },	-- Large Sturdy Wooden Table (DECOR!)
 			}),
 			q(92998, {	-- Decor Treasure Hunt
@@ -211,10 +215,15 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246102) },	-- Large Covered Wooden Table (DECOR!)
 			}),
 			q(92999, {	-- Decor Treasure Hunt
+				["coord"] = { 28.3, 40.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245662) },	-- Carved Wooden Bar Table (DECOR!)
 			}),
 			q(93000, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: In a torchlit cave at /way 59.0, 45.7. To the left of the third waterfall (facing the waterfall) down from Cliffside flight path in Founders Point.
+				["description"] = "In a cave",
+				["coords"] = {
+					{ 59.0, 45.5, FOUNDERS_POINT },	-- Cave entrance
+					{ 59.2, 44.9, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(241618) },	-- Elegant Padded Footstool (DECOR!)
 			}),
 			q(93001, {	-- Decor Treasure Hunt
@@ -226,7 +235,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253490) },	-- Elegant Elven Desk (DECOR!)
 			}),
 			q(93003, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Right next to flight master Jeff at the portal where you spawn when entering the neighborhood. Coords: /way 56.65, 27.51
+				["coord"] = { 56.7, 27.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(257690) },	-- Elegant Padded Chaise (DECOR!)
 			}),
 			q(93004, {	-- Decor Treasure Hunt
@@ -242,6 +251,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253479) },	-- Small Elegant Padded Chair (DECOR!)
 			}),
 			q(93007, {	-- Decor Treasure Hunt
+				["coord"] = { 57.3, 39.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253181) },	-- Gemmed Elven Chest (DECOR!)
 			}),
 			q(93008, {	-- Decor Treasure Hunt
@@ -255,13 +265,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(93078, {	-- Decor Treasure Hunt
 				-- Exo Note: Somewhere in the area of 53.8, 24.0
 				["groups"] = { i(244533) },	-- Iron Chain Chandelier (DECOR!)
-			}),
-			q(93142, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: By the Stage area to the right of the city's center. A straight line down from the northest flight point.
-				["groups"] = { i(257691) },	-- Open Elegant Elven Barrel (DECOR!)
-			}),
-			q(93148, {	-- Decor Treasure Hunt
-				["groups"] = { i(244169) },	-- Elegant Almond Table (DECOR!)
 			}),
 		}));
 		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based

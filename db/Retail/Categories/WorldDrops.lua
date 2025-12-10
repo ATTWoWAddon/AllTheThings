@@ -7036,7 +7036,8 @@ r(146925,{learnedAt=75,requireSkill=197}),
 r(143011,{learnedAt=75,requireSkill=197})}})})}),
 flt(50,{
 i(89112,{spellID=129352}),
-i(74844,{description="Drops from Jinyu, Sprites or Zandalari."}),
+i(74849,{description="Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes."}),
+i(74844,{description="Drops from Jinyu, Sprites or Zandalari. Located in almost every zone."}),
 i(76061)})}}),
 x(6,{awp=60003,g={
 h(-51,{

@@ -5660,6 +5660,9 @@ root(ROOTS.Unsorted, {
 				i(263024),	-- Founder's Point Grassy Spread
 				i(263026),	-- Brawler's Barricade
 				i(247739),	-- Kun-Lai Lacquered Rickshaw
+				i(246026),	-- Orgrimmar Beam Platform
+				i(246028),	-- Orgrimmar Large Platform
+				i(246027),	-- Orgrimmar Round Platform
 			}),
 			filter(MISC, {
 				i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean

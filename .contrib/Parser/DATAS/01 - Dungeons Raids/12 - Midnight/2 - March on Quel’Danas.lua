@@ -97,7 +97,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(BELOREN, {
 					i(256715),	-- Design: Thalassian Phoenix Torque (RECIPE!)
-					i(264187),	-- Blessed Phoenix Egg (DECOR)
+					i(264187),	-- Blessed Phoenix Egg (DECOR!)
 				}),
 				BossOnly(LURA, {
 					i(258519),	-- Plans: Magister's Valediction (RECIPE!)
