@@ -1913,7 +1913,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32643, {	-- Work Order: Dominance Offensive II
 					["sourceQuest"] = 32642,	-- Work Order: Dominance Offensive I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_DOMINANCE_OFFENSIVE, EXALTED },
 					["races"] = HORDE_ONLY,
@@ -1945,7 +1948,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32945, {	-- Work Order: Kirin Tor Offensive II
 					["sourceQuest"] = 32944,	-- Work Order: Kirin Tor Offensive I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },
 					["races"] = ALLIANCE_ONLY,
@@ -1974,7 +1980,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32648, {	-- Work Order: Golden Lotus II
 					["sourceQuest"] = 32647,	-- Work Order: Golden Lotus I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
 					["groups"] = {
@@ -2005,7 +2014,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32646, {	-- Work Order: Operation: Shieldwall II
 					["sourceQuest"] = 32645,	-- Work Order: Operation: Shieldwall I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_OPERATION_SHIELDWALL, EXALTED },
 					["races"] = ALLIANCE_ONLY,
@@ -2034,7 +2046,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32650, {	-- Work Order: Shado-Pan II
 					["sourceQuest"] = 32649,	-- Work Order: Shado-Pan I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_SHADO_PAN, EXALTED },
 					["groups"] = {
@@ -2064,7 +2079,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32943, {	-- Work Order: Sunreaver Onslaught II
 					["sourceQuest"] = 32942,	-- Work Order: Sunreaver Onslaught I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_SUNREAVER_ONSLAUGHT, EXALTED },
 					["races"] = HORDE_ONLY,
@@ -2093,7 +2111,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32657, {	-- Work Order: The August Celestials II
 					["sourceQuest"] = 32653,	-- Work Order: The August Celestials I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_THE_AUGUST_CELESTIALS, EXALTED },
 					["groups"] = {
@@ -2120,7 +2141,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(32659, {	-- Work Order: The Klaxxi II
 					["sourceQuest"] = 32658,	-- Work Order: The Klaxxi I
-					["provider"] = { "o", 218765 },	-- Empty Crate
+					["providers"] = {
+						{ "o", 218750 },	-- Work Orders
+						{ "o", 218765 },	-- Empty Crate
+					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 					["maxReputation"] = { FACTION_THE_KLAXXI, EXALTED },
 					["groups"] = {
