@@ -31,7 +31,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(94158, {	-- Big Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
