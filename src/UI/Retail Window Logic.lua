@@ -1432,7 +1432,7 @@ else
 		= C_ContentTracking.IsTracking, C_ContentTracking.StartTracking, C_ContentTracking.StopTracking
 	app.AddContentTracking = function(group)
 		-- if this group is currently tracked
-		local sourceID, mountID, achievementID = group.sourceID, group.mountJournalID, group.achievementID
+		local sourceID, mountID, achievementID, questID = group.sourceID, group.mountJournalID, group.achievementID, group.questID
 		local type = sourceID and 0
 					or mountID and 1
 					or achievementID and 2
@@ -1449,6 +1449,17 @@ else
 				StartTracking(type, id)
 			end
 			return true
+		end
+		-- Quests can be tracked using another API
+		if questID then
+			-- Add tracking
+			if C_QuestLog.AddQuestWatch(questID) or C_QuestLog.AddWorldQuestWatch(questID) then
+				return true
+			end
+			-- Remove tracking
+			if C_QuestLog.RemoveQuestWatch(questID) or C_QuestLog.RemoveWorldQuestWatch(questID) then
+				return true
+			end
 		end
 	end
 end
