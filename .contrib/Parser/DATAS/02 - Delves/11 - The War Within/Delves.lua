@@ -3122,7 +3122,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["description"] = "Use Waygate on the 1st Level.",
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
-						{ 62.4, 37.9, 2455 },	-- Lower Chamber (Sturdy Chest)
+						{ 62.1, 38.2, 2454 },	-- Lower Chamber (Sturdy Chest)
 					},
 					["questID"] = 83692,
 				}),
