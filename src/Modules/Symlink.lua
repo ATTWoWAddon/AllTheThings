@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling the processing of a 'sym' link within ATT data
 
 -- Global Locals
-local select,tremove,unpack,ipairs,GetAchievementNumCriteria,type
-	= select,tremove,unpack,ipairs,GetAchievementNumCriteria,type
+local select,tremove,unpack,GetAchievementNumCriteria,type
+	= select,tremove,unpack,GetAchievementNumCriteria,type
 
 -- App locals
 local GetItemInfoInstant,SearchForObject,ArrayAppend,CloneArray,AssignChildren,SearchForField,GetRelativeValue,wipearray
@@ -65,31 +65,34 @@ app.AddEventHandler("OnLoad", function()
 	end
 end)
 
--- TODO: performance pass: ipairs
-
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
-	local value;
-	local vals = select("#", ...);
+	local value
+	local vals = select("#", ...)
 	for i=1,vals do
-		value = select(i, ...);
-		for _,v in ipairs(arr) do
-			if v == value then return true; end
+		value = select(i, ...)
+		for i=1,#arr do
+			if arr[i] == value then return true end
 		end
 	end
 end
 local function Resolve_Extract(results, group, field)
 	if group[field] then
 		results[#results + 1] = group
-	elseif group.g then
-		for _,o in ipairs(group.g) do
-			Resolve_Extract(results, o, field);
+	else
+		local g = group.g
+		if g then
+			for i=1,#g do
+				Resolve_Extract(results, g[i], field)
+			end
 		end
 	end
 end
 local function Resolve_Find(results, groups, field, val)
 	if groups then
-		for _,o in ipairs(groups) do
+		local o
+		for i=1,#groups do
+			o = groups[i]
 			if o[field] == val then
 				results[#results + 1] = o
 			else
@@ -167,14 +170,15 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
 	fill = function(finalized, searchResults, o)
-		local okey = o.key;
-		if okey then
-			local okeyval = o[okey];
-			if okeyval then
-				for _,result in ipairs(SearchForObject(okey, okeyval, "field", true)) do
-					ArrayAppend(searchResults, result.g);
-				end
-			end
+		local okey = o.key
+		if not okey then return end
+
+		local okeyval = o[okey]
+		if not okeyval then return end
+
+		local objs = SearchForObject(okey, okeyval, "field", true)
+		for i=1,#objs do
+			ArrayAppend(searchResults, objs[i].g)
 		end
 	end,
 	-- Instruction to finalize the current search results and prevent additional queries from affecting this selection
@@ -214,7 +218,9 @@ local ResolveFunctions = {
 		end
 		wipearray(searchResults);
 		if orig then
-			for _,obj in ipairs(orig) do
+			local obj
+			for i=1,#orig do
+				obj = orig[i]
 				-- insert raw & symlinked Things from this group
 				ArrayAppend(searchResults, obj.g, ResolveSymbolicLink(obj));
 			end
@@ -231,9 +237,9 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to include only search results where a key value is a value
 	whereany = function(finalized, searchResults, o, cmd, field, ...)
-		local hash = {};
-		for k,value in ipairs({...}) do
-			hash[value] = true;
+		local hash, vals = {}, {...}
+		for i=1,#vals do
+			hash[vals[i]] = true
 		end
 		for k=#searchResults,1,-1 do
 			local result = searchResults[k];
@@ -244,14 +250,14 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to extract all nested results which contain a given field
 	extract = function(finalized, searchResults, o, cmd, field)
-		local orig;
+		local orig
 		if #searchResults > 0 then
-			orig = CloneArray(searchResults);
+			orig = CloneArray(searchResults)
 		end
-		wipearray(searchResults);
+		wipearray(searchResults)
 		if orig then
-			for _,o in ipairs(orig) do
-				Resolve_Extract(searchResults, o, field);
+			for i=1,#orig do
+				Resolve_Extract(searchResults, orig[i], field)
 			end
 		end
 	end,
@@ -287,8 +293,8 @@ local ResolveFunctions = {
 		local values = {...};
 		if #values > 1 then
 			local matches = {};
-			for i,o in ipairs(values) do
-				matches[o] = true;
+			for i=1,#values do
+				matches[values[i]] = true;
 			end
 			for k=#searchResults,1,-1 do
 				local result = searchResults[k];
@@ -540,7 +546,9 @@ if GetAchievementNumCriteria then
 			then
 				local quests = app.SearchForField("questID", assetID)
 				if #quests > 0 then
-					for _,c in ipairs(quests) do
+					local c
+					for i=1,#quests do
+						c = quests[i]
 						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 						NestObject(c, criteriaObject);
 						AssignChildren(c);
@@ -730,14 +738,16 @@ local SubroutineCache = {
 		end
 		wipearray(searchResults);
 		if orig then
-			for _,o in ipairs(orig) do
-				if not o.f then
-					if o.g then
+			local ob
+			for i=1,#orig do
+				ob = orig[i]
+				if not ob.f then
+					if ob.g then
 						-- no filter Item with sub-groups
-						ArrayAppend(searchResults, o.g)
+						ArrayAppend(searchResults, ob.g)
 					else
 						-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
-						searchResults[#searchResults + 1] = o
+						searchResults[#searchResults + 1] = ob
 					end
 				end
 			end
@@ -760,10 +770,12 @@ local SubroutineCache = {
 			wipearray(searchResults);
 			local c;
 			if orig then
-				for _,o in ipairs(orig) do
-					c = o.c;
+				local ob
+				for i=1,#orig do
+					ob = orig[i]
+					c = ob.c;
 					if c and ContainsAnyValue(c, classID) then
-						searchResults[#searchResults + 1] = o
+						searchResults[#searchResults + 1] = ob
 					end
 				end
 			end
@@ -820,9 +832,10 @@ local NonSelectCommands = {
 	usemodID = true,
 }
 local HandleCommands = app.Debugging and function(finalized, searchResults, o, oSym)
-	local cmd, cmdFunc
+	local cmd, cmdFunc, sym
 	local debug = true
-	for _,sym in ipairs(oSym) do
+	for i=1,#oSym do
+		sym = oSym[i]
 		cmd = sym[1];
 		cmdFunc = ResolveFunctions[cmd];
 		-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
@@ -839,8 +852,9 @@ local HandleCommands = app.Debugging and function(finalized, searchResults, o, o
 		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"from",o.hash,"with:",unpack(sym))
 	end
 end or function(finalized, searchResults, o, oSym)
-	local cmd, cmdFunc
-	for _,sym in ipairs(oSym) do
+	local cmd, cmdFunc, sym
+	for i=1,#oSym do
+		sym = oSym[i]
 		cmd = sym[1];
 		cmdFunc = ResolveFunctions[cmd];
 		if cmdFunc then
@@ -903,8 +917,8 @@ ResolveSymbolicLink = function(o, refonly)
 				app.RefreshItemGroup(clone)
 			end
 			if PruneFinalized then
-				for _,field in ipairs(PruneFinalized) do
-					clone[field] = nil
+				for i=1,#PruneFinalized do
+					clone[PruneFinalized[i]] = nil
 				end
 			end
 			if FillFinalized then
