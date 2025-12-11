@@ -2687,17 +2687,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(CLOTH, {
 				i(134017),	-- Don Carlos' Famous Hat
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(138420),	-- Pilfered Ettin String
+				-- #endif
 			}),
 			filter(FINGER_F, {
 				i(141907),	-- Arena Victory Bonus
 			}),
 			filter(LEATHER, {
 				i(129046),	-- 7.0 PH Leather Helm
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129127),	-- Ebon Stalker's Boots
+				-- #endif
 			}),
 			filter(MAIL, {
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129152),	-- Boulderfall Stompers
+				-- #endif
 			}),
 			filter(NECK_F, {
 				i(131919),	-- Bitestone Incisor
@@ -4755,7 +4764,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(207390),	-- Delve Ring
 			-- Mail Belt
 			i(223458),	-- [PH] 11.0 - Belt
-			i(226165),	-- Unseemly Agate Choker
 
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
@@ -4804,9 +4812,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221717 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221713 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["sourceID"] = 221287 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4868,9 +4876,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221716 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221712 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221286 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4932,9 +4940,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["sourceID"] = 221288 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4996,9 +5002,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221718 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225737, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221714 }),	-- 11.0 Raid Template - Plate - Head
+						i(225736, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["sourceID"] = 221289 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5014,9 +5022,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
+				filter(BACK_F, {
+					itemsource(222783),	-- Royal Emblem of Nerub-ar
+					itemsource(222784),	-- Royal Emblem of Nerub-ar
+					itemsource(222785),	-- Royal Emblem of Nerub-ar
+					itemsource(222786),	-- Royal Emblem of Nerub-ar
+				}),
+				filter(MAIL, {
+					itemsource(222523),	-- Liquified Defector's Leggings
+					itemsource(222524),	-- Liquified Defector's Leggings
+					itemsource(222525),	-- Liquified Defector's Leggings
+					itemsource(222526),	-- Liquified Defector's Leggings
+				}),
 			}),
 			filter(CLOTH, {
 				i(225730, {["bonusID"] = 6894 }),	-- Stone Gaze Ceinture
+			}),
+			filter(NECK_F, {
+				i(226695),	-- Cunning Advisor's Favor
+				i(226696),	-- Mighty Advisor's Favor
+				i(226165),	-- Unseemly Agate Choker
 			}),
 			filter(TRINKET_F, {
 				i(213423),	-- Bygone Weapon Charm
@@ -5033,10 +5058,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-				i(226695),	-- Cunning Advisor's Favor
-				i(226696),	-- Mighty Advisor's Favor
+			}),
+		})),
+
+		-- 11.0.2
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
+				filter(MAIL, {
+					itemsource(225006),	-- Liquified Defector's Leggings
+					itemsource(225007),	-- Liquified Defector's Leggings
+				}),
 			}),
 		})),
 
@@ -5965,6 +5997,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(LEATHER, {
 				i(235915),	-- Highmountain Hide Cap
+				itemsource(290211),	-- The First Satyr's Spaulders
 			}),
 		})),
 	}),

@@ -35756,72 +35756,12 @@ s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
-11.0.0.54675
-s(221287)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221288)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221289)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221630)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(221631)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(221646)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(221647)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(221713)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221714)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221715)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221717)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(221718)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(221719)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(222487)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222488)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222489)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222490)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222515)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222516)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222517)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222518)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222523)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222524)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222525)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222526)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222783)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222784)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222785)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222786)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-11.0.2.55665
-s(225006)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(225007)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
 11.1.7.60520
 s(229796)/i(231758),	--
 11.2.0.61476
 s(285331)/i(237520),	--
 s(289548)/i(241239),	-- Epaulets of Arcing Power
 s(289550)/i(241240),	-- Type II Bomber Jacket
-11.2.5.62554
-s(290211)/i(242368),	-- The First Satyr's Spaulders
-11.2.7.63642
-s(230711)/i(233067),	--
-s(289394)/i(240847),	--
-s(290289)/i(242548),	--
-s(292276)/i(244545),	--
-s(294117)/i(247219),	--
-s(295218)/i(247697),	--
-s(295620)/i(248667),	--
-s(295621)/i(248668),	--
-s(295622)/i(248669),	--
-s(295623)/i(248670),	--
-s(295624)/i(248671),	--
-s(295625)/i(248672),	--
-s(295626)/i(248673),	--
-s(295627)/i(248674),	--
-s(295628)/i(248675),	--
-s(295629)/i(248676),	--
-s(295630)/i(248677),	--
-s(295631)/i(248678),	--
-s(295632)/i(248679),	--
-s(295728)/i(248952),	--
-s(296324)/i(249825),	--
-s(298469)/i(252260),	--
-s(298571)/i(252989),	--
-s(301157)/i(257326),	--
 12.0.0.63534
 s(266734)/i(235225),	-- Garden Shears
 s(266736)/i(235231),	--

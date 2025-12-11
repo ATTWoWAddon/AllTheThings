@@ -59,7 +59,9 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 			i(232979),	-- Jaks Jabberjaw (MM!)
 			i(232978),	-- Louie Firehands (MM!)
 			i(232930),	-- Zaps Leadfoot (MM!)
+			-- #if BEFORE 11.2.0
 			i(235696),	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
+			-- #endif
 			i(235693),	-- Delver's Dirigible Schematic: Rocket (MM!)
 		})),
 	}),

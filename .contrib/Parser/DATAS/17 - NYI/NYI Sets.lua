@@ -11287,6 +11287,18 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(228151, {["sourceID"] = 224358 }),	-- Noetic of the Forgotten Reservoir
 					i(228151, {["sourceID"] = 224359 }),	-- Noetic of the Forgotten Reservoir
 					i(228151, {["sourceID"] = 224360 }),	-- Noetic of the Forgotten Reservoir
+					itemsource(221630),	-- Sarong of the Forgotten Reservoir
+					itemsource(221631),	-- Sarong of the Forgotten Reservoir
+					itemsource(222487),	-- Sarong of the Forgotten Reservoir
+					itemsource(222488),	-- Sarong of the Forgotten Reservoir
+					itemsource(222489),	-- Sarong of the Forgotten Reservoir
+					itemsource(222490),	-- Sarong of the Forgotten Reservoir
+					itemsource(221646),	-- Vestments of the Forgotten Reservoir
+					itemsource(221647),	-- Vestments of the Forgotten Reservoir
+					itemsource(222515),	-- Vestments of the Forgotten Reservoir
+					itemsource(222516),	-- Vestments of the Forgotten Reservoir
+					itemsource(222517),	-- Vestments of the Forgotten Reservoir
+					itemsource(222518),	-- Vestments of the Forgotten Reservoir
 				}),
 				cl(WARLOCK, {
 					i(228158, {["sourceID"] = 224433 }),	-- Hexflame Coven's All-Seeing Eye
