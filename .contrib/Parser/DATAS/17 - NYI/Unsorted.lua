@@ -6079,8 +6079,6 @@ root(ROOTS.Unsorted, {
 			i(252752),	-- Sunny Winter Toque \\ Sunny Winter Hat
 			i(255881),	-- Severed Threads Commendation
 			i(259454),	-- Ensemble: Regalia of Shackled Elements
-			i(242590),	-- Strom'kar, the Warbreaker
-			i(246013),	-- Thas'dorah, Legacy of the Windrunners
 		})),
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			filter(BATTLE_PETS, {
