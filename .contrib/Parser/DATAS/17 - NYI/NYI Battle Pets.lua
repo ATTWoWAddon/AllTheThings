@@ -1560,41 +1560,42 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4738),	-- Status Symbol (PET!)
 			pet(4743),	-- Swabbie (PET!)
 			--
-			i(231628, {	-- Bawkinator 2000 (PET!)
-				["displayID"] = 75333,
-			}),
-			i(231627, {	-- Black Cave Crab (PET!)
-				["displayID"] = 120695,
-			}),
-			-- #if BEFORE 11.2.0
-			i(231757, {	-- Cauldrone (PET!) TODO: [wrong ItemID]
-				["displayID"] = 47711,
-			}),
-			-- #endif
-			i(231760, {	-- Crunchy (PET!)
-				["displayID"] = 54848,
-			}),
-			-- i(231762, {	-- Dosh (PET!) TODO: [wrong ItemID]
-			-- 	["displayID"] = 123032,
-			-- }),
-			i(231758, {	-- Finnity (PET!)
-				["displayID"] = 74800,
-			}),
-			-- i(231763, {	-- FO-MO Mark II (PET!) TODO: [wrong ItemID]
-			-- 	["displayID"] = 111667,
-			-- }),
 			i(235909, {	-- Gleam (PET!)
 				["displayID"] = 89251,
 			}),
 			i(232854, {	-- Grinner (PET!)
 				["displayID"] = 121850,
 			}),
-			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
-			-- 	["displayID"] = 120709,
-			-- }),
+			--[[
+			-- TODO: Wrong itemID! All of these are using npcID instead.
+			i(231628, {	-- Bawkinator 2000 (PET!)
+				["displayID"] = 75333,
+			}),
+			i(231627, {	-- Black Cave Crab (PET!)
+				["displayID"] = 120695,
+			}),
+			i(231760, {	-- Crunchy (PET!)
+				["displayID"] = 54848,
+			}),
+			i(231762, {	-- Dosh (PET!)
+				["displayID"] = 123032,
+			}),
+			i(231758, {	-- Finnity (PET!)
+				["displayID"] = 74800,
+			}),
+			i(231763, {	-- FO-MO Mark II (PET!)
+				["displayID"] = 111667,
+			}),
+			i(231756, {	-- Hermes
+				["displayID"] = 120709,
+			}),
 			i(231613, {	-- Yellow Tropical Frog (PET!)
 				["displayID"] = 122963,
 			}),
+			i(231757, {	-- Cauldrone (PET!)
+				["displayID"] = 47711,
+			}),
+			]]--
 		})),
 	}),
 }));

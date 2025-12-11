@@ -5522,9 +5522,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
 			filter(LEATHER, {
 				i(241240),	-- Type II Bomber Jacket
+				i(241240, {["modID"] = 23 }),	-- Type II Bomber Jacket
 			}),
 			filter(MAIL, {
 				i(241239),	-- Epaulets of Arcing Power
+				i(241239, {["modID"] = 23 }),	-- Epaulets of Arcing Power
 			}),
 			filter(CLOAKS, {
 				i(237521),	-- Hemet's Cloak
@@ -5532,7 +5534,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			n(HEAD, {
 				i(243344),	-- Chef's Hat
-				i(237520),	-- Hemet's Hood
+				i(237520, {["sourceID"] = 285331 }),	-- Hemet's Hood
 			}),
 			filter(TABARDS, {
 				i(231636),	-- zzOld

@@ -35756,12 +35756,6 @@ s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
-11.1.7.60520
-s(229796)/i(231758),	--
-11.2.0.61476
-s(285331)/i(237520),	--
-s(289548)/i(241239),	-- Epaulets of Arcing Power
-s(289550)/i(241240),	-- Type II Bomber Jacket
 12.0.0.63534
 s(266734)/i(235225),	-- Garden Shears
 s(266736)/i(235231),	--
