@@ -6,12 +6,12 @@ local _, app = ...;
 -- Encapsulates the functionality for handling the processing of a 'sym' link within ATT data
 
 -- Global Locals
-local select,tremove,unpack,ipairs,GetAchievementNumCriteria,tinsert,wipe,type
-	= select,tremove,unpack,ipairs,GetAchievementNumCriteria,tinsert,wipe,type
+local select,tremove,unpack,ipairs,GetAchievementNumCriteria,type
+	= select,tremove,unpack,ipairs,GetAchievementNumCriteria,type
 
 -- App locals
-local GetItemInfoInstant,SearchForObject,ArrayAppend,CloneArray,AssignChildren,SearchForField,GetRelativeValue
-= app.WOWAPI.GetItemInfoInstant,app.SearchForObject,app.ArrayAppend,app.CloneArray,app.AssignChildren,app.SearchForField,app.GetRelativeValue
+local GetItemInfoInstant,SearchForObject,ArrayAppend,CloneArray,AssignChildren,SearchForField,GetRelativeValue,wipearray
+= app.WOWAPI.GetItemInfoInstant,app.SearchForObject,app.ArrayAppend,app.CloneArray,app.AssignChildren,app.SearchForField,app.GetRelativeValue,app.wipearray
 
 -- Upgrade API Implementation
 -- Access via AllTheThings.Modules.Symlink
@@ -65,7 +65,7 @@ app.AddEventHandler("OnLoad", function()
 	end
 end)
 
--- TODO: performance pass: tinsert, wipearray, ipairs
+-- TODO: performance pass: ipairs
 
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
@@ -154,7 +154,7 @@ local ResolveFunctions = {
 			end
 			if parent then
 				-- app.PrintDebug("selectparent-searched",level,parent.hash,parent.text)
-				tinsert(searchResults, parent);
+				searchResults[#searchResults + 1] = parent
 				return;
 			end
 		end
@@ -180,7 +180,7 @@ local ResolveFunctions = {
 	-- Instruction to finalize the current search results and prevent additional queries from affecting this selection
 	finalize = function(finalized, searchResults)
 		ArrayAppend(finalized, searchResults);
-		wipe(searchResults);
+		wipearray(searchResults);
 	end,
 	-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue
 	merge = function(finalized, searchResults)
@@ -188,10 +188,10 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		-- finalized first
 		ArrayAppend(searchResults, finalized);
-		wipe(finalized);
+		wipearray(finalized);
 		-- then any existing searchResults
 		ArrayAppend(searchResults, orig);
 	end,
@@ -201,7 +201,7 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		local group = CreateObject({[field] = value });
 		NestObjects(group, orig);
 		searchResults[1] = group;
@@ -212,7 +212,7 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
 			for _,obj in ipairs(orig) do
 				-- insert raw & symlinked Things from this group
@@ -248,7 +248,7 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
 			for _,o in ipairs(orig) do
 				Resolve_Extract(searchResults, o, field);
@@ -260,7 +260,7 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			local resolved = {}
 			Resolve_Find(resolved, searchResults, field, val)
-			wipe(searchResults)
+			wipearray(searchResults)
 			ArrayAppend(searchResults, resolved)
 		end
 	end,
@@ -270,14 +270,14 @@ local ResolveFunctions = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
 			local result, g;
 			for k=#orig,1,-1 do
 				result = orig[k];
 				g = result.g;
 				if g and index <= #g then
-					tinsert(searchResults, g[index]);
+					searchResults[#searchResults + 1] = g[index]
 				end
 			end
 		end
@@ -501,7 +501,7 @@ local ResolveFunctions = {
 		if onCurrent then
 			if #searchResults == 0 then return end
 			local orig = CloneArray(searchResults);
-			wipe(searchResults);
+			wipearray(searchResults);
 			local result
 			for k=1,#orig do
 				result = CreateObject(orig[k])
@@ -603,7 +603,7 @@ if GetAchievementNumCriteria then
 				-- this criteria object may have been turned into a cost via costs/providers assignment, so make sure we update those respective costs via the Cost Runner
 				-- if settings are changed while this is running, it's ok because it refreshes costs from the cache
 				app.HandleEvent("OnSearchResultUpdate", criteriaObject)
-				tinsert(searchResults, criteriaObject);
+				searchResults[#searchResults + 1] = criteriaObject
 			end
 		end
 	end
@@ -728,7 +728,7 @@ local SubroutineCache = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
 			for _,o in ipairs(orig) do
 				if not o.f then
@@ -737,7 +737,7 @@ local SubroutineCache = {
 						ArrayAppend(searchResults, o.g)
 					else
 						-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
-						tinsert(searchResults, o);
+						searchResults[#searchResults + 1] = o
 					end
 				end
 			end
@@ -757,13 +757,13 @@ local SubroutineCache = {
 			if #searchResults > 0 then
 				orig = CloneArray(searchResults);
 			end
-			wipe(searchResults);
+			wipearray(searchResults);
 			local c;
 			if orig then
 				for _,o in ipairs(orig) do
 					c = o.c;
 					if c and ContainsAnyValue(c, classID) then
-						tinsert(searchResults, o);
+						searchResults[#searchResults + 1] = o
 					end
 				end
 			end
