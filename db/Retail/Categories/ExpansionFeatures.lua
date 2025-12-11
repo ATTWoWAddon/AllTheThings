@@ -4378,7 +4378,7 @@ h(-652,{awp=50200,coords={{52.56,18.85,371},{75.11,67.47,379},{36.58,85.67,388},
 h(-12,{
 ach(8078)}),
 h(-19,{crs={69768,69769,69841,69842},g={
-i(94158,{b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",sym={{"select","itemID",87218},{"pop"}}}),
+i(94158,{b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",sym={{"select","itemID",87218},{"groupfill"}}}),
 i(94159,{b=1,description="Can contain all sorts of herbs, ore, and cloth."}),
 i(94225,{f=55,factionID=1341,repeatable=1,spellID=138419}),
 i(94227,{f=55,factionID=1269,repeatable=1,spellID=138420}),

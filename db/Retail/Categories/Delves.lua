@@ -1440,7 +1440,7 @@ o(549999,{
 i(245747,{spellID=1239876})}),
 i(246053,{spellID=1240570})}),
 h(-56,{
-o(455498,{coords={{47.9,24.6,2455},{62.4,37.9,2455}},description="Use Waygate on the 1st Level.",questID=83692}),
+o(455498,{coords={{62.1,38.2,2454},{47.9,24.6,2455}},description="Use Waygate on the 1st Level.",questID=83692}),
 o(455518,{coords={{62,11.1,2455}},questID=83673}),
 o(455535,{coords={{49.7,92.6,2455}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573}),
 o(539785,{coords={{43.9,64.7,2455},{43.3,65.7,2476}},questID=90839})})}}),

@@ -35797,9 +35797,6 @@ s(289548)/i(241239),	-- Epaulets of Arcing Power
 s(289550)/i(241240),	-- Type II Bomber Jacket
 11.2.5.62554
 s(290211)/i(242368),	-- The First Satyr's Spaulders
-s(294233)/i(247457),	-- Captain's Parade Breastplate
-s(294234)/i(247457),	-- Captain's Parade Breastplate
-s(294235)/i(247457),	-- Captain's Parade Breastplate
 11.2.7.63642
 s(230711)/i(233067),	--
 s(289394)/i(240847),	--

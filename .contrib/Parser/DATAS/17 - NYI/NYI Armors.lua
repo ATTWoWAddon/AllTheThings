@@ -5835,6 +5835,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5874,6 +5875,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5913,6 +5915,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5952,12 +5955,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
 						i(247463),	-- Shoulderguard of the Eclipse
 					}),
 				}),
+			}),
+			filter(LEATHER, {
+				i(235915),	-- Highmountain Hide Cap
 			}),
 		})),
 	}),

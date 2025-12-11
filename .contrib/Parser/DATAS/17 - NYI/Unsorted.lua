@@ -5825,260 +5825,215 @@ root(ROOTS.Unsorted, {
 			i(265822),	-- Unstable Mechagon Re-Localizatron
 		})),
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
-			i(235903),	-- Gold Lightforged Chestguard
-			i(235915),	-- Highmountain Hide Cap
-			i(239647),	-- Reins of the Bloodguard Fel Bat
-			i(239666),	-- Reins of the Risen Fel Bat
-			i(239686),	-- Reins of the Forgotten Fel Bat
-			i(239741),	-- Blood Knight's Plate Shawl
-			i(239742),	-- Blood Knight's Plate Drape
-			i(239743),	-- Blood Knight's Plate Cloak
-			i(239744),	-- Blood Knight's Plate Armguards
-			i(239745),	-- Blood Knight's Plate Mantle
-			i(239746),	-- Blood Knight's Plate Legguards
-			i(239747),	-- Blood Knight's Plate Greathelm
-			i(239748),	-- Blood Knight's Plate Gauntlets
-			i(239749),	-- Blood Knight's Plate Breastplate
-			i(239750),	-- Blood Knight's Plate Sabatons
-			i(239751),	-- Blood Knight's Plate Girdle
-			i(239777),	-- Valorborne Dragonscale Vambraces
-			i(239778),	-- Valorborne Dragonscale Epaulets
-			i(239779),	-- Valorborne Dragonscale Breeches
-			i(239780),	-- Valorborne Dragonscale Faceguard
-			i(239781),	-- Valorborne Dragonscale Handguards
-			i(239782),	-- Valorborne Dragonscale Haubergeon
-			i(239783),	-- Valorborne Dragonscale Greaves
-			i(239784),	-- Valorborne Dragonscale Waistband
-			i(239806),	-- Mountainborne Bindings
-			i(239807),	-- Mountainborne Trousers
-			i(239808),	-- Mountainborne Shoulders
-			i(239809),	-- Mountainborne Headgear
-			i(239810),	-- Mountainborne Grips
-			i(239811),	-- Mountainborne Vest
-			i(239812),	-- Mountainborne Striders
-			i(239813),	-- Mountainborne Cinch
-			i(239814),	-- Cuffs of the Hunting Dream
-			i(239815),	-- Spaulders of the Hunting Dream
-			i(239816),	-- Legguards of the Hunting Dream
-			i(239817),	-- Hat of the Hunting Dream
-			i(239818),	-- Grips of the Hunting Dream
-			i(239819),	-- Vest of the Hunting Dream
-			i(239820),	-- Boots of the Hunting Dream
-			i(239821),	-- Waistband of the Hunting Dream
-			i(239959),	-- Fel-marked Hauberk
-			i(239960),	-- Fel-marked Vambraces
-			i(239961),	-- Fel-marked Pinions
-			i(239962),	-- Fel-marked Wargreaves
-			i(239966),	-- Fel-marked Faceguard
-			i(239967),	-- Fel-marked Handguards
-			i(239968),	-- Fel-marked Chestguard
-			i(239969),	-- Fel-marked Greaves
-			i(239970),	-- Fel-marked Cinch
-			i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
-			i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
-			i(241600),	-- Ensemble: Chains of the Chosen Dead
-			i(241602),	-- Ensemble: Chains of the Chosen Dead
-			i(241605),	-- Ensemble: Garb of the Chosen Dead
-			i(241606),	-- Ensemble: Garb of the Chosen Dead
-			i(241609),	-- Ensemble: Regalia of the Chosen Dead
-			i(241610),	-- Ensemble: Regalia of the Chosen Dead
-			i(245663),	-- Holy Golden Greatsword
-			i(245664),	-- Holy Hologem Greatsword
-			i(247457),	-- Captain's Parade Breastplate
-			i(247894),	-- Dalaran Hearthstone
-			i(248088),	-- Jade, Bright Foreseer
-			i(248089),	-- Tangled Dreamweaver
-			i(248090),	-- Viridian Phase-Hunter
-			i(248091),	-- Anima Wyrmling
-			i(248092),	-- Blinky
-			i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
-			i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
-			i(248725),	-- Smoked Rib Surprise
-			i(248727),	-- Smoked Rib Leftovers
-			i(248728),	-- Bacon-Wrapped Smoked Ribs
-			i(248729),	-- Steaming Pot of Stew
-			i(248730),	-- Weathered Pot of Stew
-			i(248732),	-- Stolen Pot of Stew
-			i(248734),	-- Fiery Dirk of the Ice Queen
-			i(248735),	-- Arcane Dirk of the Ice Queen
-			i(248736),	-- Glowing Dirk of the Ice Queen
-			i(248737),	-- Well-Used Great Steak Knife
-			i(248738),	-- Used Great Steak Knife
-			i(248739),	-- Dull Great Steak Knife
-			i(248816),	-- Fiery Wand of the Ice Queen
-			i(248817),	-- Arcane Wand of the Ice Queen
-			i(248818),	-- Glowing Wand of the Ice Queen
-			i(248828),	-- Fiery Great Axe of the Frostwolf
-			i(248829),	-- Arcane Great Axe of the Frostwolf
-			i(248830),	-- Glowing Great Axe of the Frostwolf
-			i(248832),	-- Big Bronze Fork
-			i(248839),	-- Big Iron Fork
-			i(248841),	-- Big Silver Fork
-			i(248913),	-- Fiery Warglaives of the North
-			i(248914),	-- Arcane Warglaives of the North
-			i(248915),	-- Glowing Warglaives of the North
-			i(248923),	-- Unfathomably Stale Bread
-			i(248924),	-- Stale Mulgore Spice Bread
-			i(248925),	-- Months Old Rye Bread \\ Months Old Sourdough Bread
-			i(249717),	-- Golden Food Fanatic Backpack
-			i(249718),	-- Bronze Food Fanatic Backpack
-			i(249719),	-- Fine Food Fanatic Backpack \\ Silver Food Fanatic Backpack
-			i(249721),	-- Big Steel Spoon
-			i(249722),	-- Big Blue Spoon
-			i(249723),	-- Big Fancy Spoon
-			i(249727),	-- Noble's Winter Hood \\ [PH] Blue Winter Helm
-			i(249728),	-- Noble's Winter Pauldrons \\ [PH] Blue Winter Armored Shoulder
-			i(249729),	-- Noble's Winter Tunic \\ [PH] Blue Winter Chest
-			i(249730),	-- Noble's Winter Belt \\ [PH] Blue Winter Waist
-			i(249731),	-- Noble's Winter Leggings \\ [PH] Blue Winter Legs
-			i(249733),	-- Noble's Winter Boots \\ [PH] Blue Winter Feet
-			i(249734),	-- Noble's Winter Gloves \\ [PH] Blue Winter Hands
-			i(249735),	-- Noble's Winter Cloak \\ [PH] Blue Winter Cloak
-			i(249737),	-- Seafarer's Winter Hood \\ [PH] Teal Winter Helm
-			i(249738),	-- Seafarer's Winter Pauldrons \\ [PH] Teal Winter Armored Shoulder
-			i(249739),	-- Seafarer's Winter Tunic \\ [PH] Teal Winter Chest
-			i(249740),	-- Seafarer's Winter Belt \\ [PH] Teal Winter Waist
-			i(249741),	-- Seafarer's Winter Leggings \\ [PH] Teal Winter Legs
-			i(249742),	-- Seafarer's Winter Boots \\ [PH] Teal Winter Feet
-			i(249743),	-- Seafarer's Winter Gloves \\ [PH] TealWinter Hands
-			i(249744),	-- Seafarer's Winter Cloak \\ [PH] Teal Winter Cloak
-			i(249745),	-- Ensemble: The Seafarer's Winter Collection \\ [PH] Ensemble: The Teal Winter Collection
-			i(249746),	-- Drustvar Winter Hood \\ [PH] Orange Winter Helm
-			i(249747),	-- Drustvar Winter Pauldrons \\ [PH] Orange Winter Armored Shoulder
-			i(249748),	-- Drustvar Winter Tunic \\ [PH] Orange Winter Chest
-			i(249749),	-- Drustvar Winter Belt \\ [PH] Orange Winter Waist
-			i(249750),	-- Drustvar Winter Leggings \\ [PH] Orange Winter Legs
-			i(249751),	-- Drustvar Winter Boots \\ [PH] Orange Winter Feet
-			i(249752),	-- Drustvar Winter Gloves \\ [PH] Orange Winter Hands
-			i(249753),	-- Drustvar Winter Cloak \\ [PH] Orange Winter Cloak
-			i(249754),	-- Ensemble: The Drustvar Winter Collection \\ [PH] Ensemble: The Orange Winter Collection
-			i(249755),	-- Kirin Tor Winter Hood \\ [PH] Purple Winter Helm
-			i(249756),	-- Kirin Tor Winter Pauldrons \\ [PH] Purple Winter Armored Shoulder
-			i(249757),	-- Kirin Tor Winter Tunic \\ [PH] Purple Winter Chest
-			i(249758),	-- Kirin Tor Winter Belt \\ [PH] Purple Winter Waist
-			i(249759),	-- Kirin Tor Winter Leggings \\ [PH] Purple Winter Legs
-			i(249760),	-- Kirin Tor Winter Boots \\ [PH] Purple Winter Feet
-			i(249761),	-- Kirin Tor Winter Gloves \\ [PH] Purple Winter Hands
-			i(249762),	-- Kirin Tor Winter Cloak \\ [PH] Purple Winter Cloak
-			i(249763),	-- Ensemble: The Kirin Tor Winter Collection \\ [PH] Ensemble: The Purple Winter Collection
-			i(249861),	-- Noble's Winter Spaulders \\ [PH] Blue Winter Padded Shoulder
-			i(249862),	-- Seafarer's Winter Spaulders \\ [PH] Teal Winter Padded Shoulder
-			i(249863),	-- Drustvar Winter Spaulders \\ [PH] Orange Winter Padded Shoulder
-			i(249864),	-- Kirin Tor Winter Spaulders \\ [PH] Purple Winter Padded Shoulder
-			i(249906),	-- Villager's Forest Cap
-			i(249908),	-- Villager's Forest Handwraps
-			i(249909),	-- Villager's Forest Tunic
-			i(249910),	-- Villager's Forest Buckle
-			i(249911),	-- Villager's Forest Pants
-			i(249916),	-- Villager's Forest Boots
-			i(249917),	-- Ensemble: Villager's Forest Attire
-			i(249926),	-- Villager's Seaside Cap
-			i(249927),	-- Villager's Seaside Handwraps
-			i(249928),	-- Villager's Seaside Tunic
-			i(249929),	-- Villager's Seaside Buckle
-			i(249930),	-- Villager's Seaside Pants
-			i(249931),	-- Villager's Seaside Boots
-			i(249932),	-- Ensemble: Villager's Seaside Attire
-			i(249940),	-- Villager's City Cap
-			i(249941),	-- Villager's City Handwraps
-			i(249942),	-- Villager's City Tunic
-			i(249943),	-- Villager's City Buckle
-			i(249944),	-- Villager's City Pants
-			i(249945),	-- Villager's City Boots
-			i(249946),	-- Ensemble: Villager's City Attire
-			i(250084),	-- Sturdy Pot Lid
-			i(250085),	-- Battered Pot Lid
-			i(250087),	-- Used Pot Lid
-			i(250105),	-- Sharktested Crest-Horn
-			i(250106),	-- Floestrider Crest-Horn \\ Floestrider Crest-horn
-			i(250108),	-- Cragstepper Crest-Horn \\ Cragstepper Crest-horn
-			i(250191),	-- Reins of the Bilebound Ur'zul
-			i(250291),	-- Hot and Fresh Portable Bakery
-			i(250292),	-- Piping Hot Portable Bakery
-			i(250293),	-- Red Hot Portable Bakery
-			i(250321),	-- Reins of the Thorignir Drake
-			i(250726),	-- Reins of the Leyfrost Manasaber
-			i(250727),	-- Reins of the Nightwell Manasaber
-			i(250762),	-- Felfueled Memento of the Abyss
-			i(250779),	-- Golden Food Fanatic Shield
-			i(250780),	-- Bronze Food Fanatic Shield
-			i(250781),	-- Fine Food Fanatic Shield \\ Silver Food Fanatic Shield
-			i(250883),	-- Villager's Forest Bonnet
-			i(250884),	-- Villager's Forest Blouse
-			i(250885),	-- Villager's Forest Belt
-			i(250886),	-- Villager's Forest Skirt
-			i(250887),	-- Villager's Forest Sabatons
-			i(250888),	-- Ensemble: Villager's Forest Collection
-			i(250890),	-- Villager's Forest Gloves
-			i(250891),	-- Villager's Seaside Bonnet
-			i(250892),	-- Villager's Seaside Gloves
-			i(250893),	-- Villager's Seaside Blouse
-			i(250894),	-- Villager's Seaside Belt
-			i(250895),	-- Villager's Seaside Skirt
-			i(250896),	-- Villager's Seaside Sabatons
-			i(250897),	-- Ensemble: Villager's Seaside Collection
-			i(250905),	-- Villager's City Bonnet
-			i(250906),	-- Villager's City Gloves
-			i(250907),	-- Villager's City Blouse
-			i(250908),	-- Villager's City Belt
-			i(250909),	-- Villager's City Skirt
-			i(250910),	-- Villager's City Sabatons
-			i(250911),	-- Ensemble: Villager's City Collection
-			i(250927),	-- Quirky Turkey \\ [PH] Turkey Mount - Brown
-			i(250928),	-- Murky Turkey \\ [PH] Turkey Mount - Purple\
-			i(251023),	-- Bronze Simulacrum
-			i(251657),	-- Bunch of Pink Carrots
-			i(251658),	-- Bunch of Purple Carrots
-			i(251659),	-- Bunch of Yellow Carrots
-			i(251660),	-- Offhand Bunch of Yellow Carrots
-			i(251661),	-- Offhand Bunch of Purple Carrots
-			i(251662),	-- Offhand Bunch of Pink Carrots
-			i(251669),	-- Sturdy Wearable Pot Lid
-			i(251670),	-- Battered Wearable Pot Lid
-			i(251672),	-- Used Wearable Pot Lid
-			i(251797),	-- Ears of Orange Corn
-			i(251798),	-- Ears of Purple Corn
-			i(251799),	-- Ears of White Corn
-			i(251801),	-- Offhand Ears of Orange Corn
-			i(251802),	-- Offhand Ears of Purple Corn
-			i(251803),	-- Offhand Ears of White Corn
-			i(251855),	-- Bunch of Orange Chile
-			i(251856),	-- Bunch of Red Chile
-			i(251857),	-- Bunch of Yellow Chile
-			i(251870),	-- Offhand Bunch of Orange Chile
-			i(251872),	-- Offhand Bunch of Red Chile
-			i(251873),	-- Offhand Bunch of Yellow Chile
-			i(251985),	-- Trapper's Black Quiver
-			i(251986),	-- Trapper's Blue Quiver
-			i(251987),	-- Trapper's Brown Quiver
-			i(251988),	-- Trapper's Dark Brown Quiver
-			i(251990),	-- Trapper's Light Brown Quiver
-			i(251991),	-- Trapper's Red Quiver
-			i(251992),	-- Trapper's Purple Quiver
-			i(252137),	-- Lil' Chompers
-			i(252193),	-- Slippery Saul
-			i(252194),	-- Fishmonger May
-			i(252195),	-- Fishstick Keith
-			i(252199),	-- Festive Eve
-			i(252656),	-- K'areshi Scientific Expedition Supply
-			i(252710),	-- Midnight Winter Toque \\ Midnight Winter Hat
-			i(252712),	-- Sepia Winter Toque \\ Sepia Winter Hat
-			i(252713),	-- Grassy Winter Toque \\ Grassy Winter Hat
-			i(252714),	-- Cloudy Winter Toque \\ Cloudy Winter Hat
-			i(252715),	-- Deep Winter Toque \\ Deep Winter Hat
-			i(252741),	-- Camo Winter Toque \\ Camo Winter Hat
-			i(252742),	-- Brick Winter Toque \\ Brick Winter Hat
-			i(252743),	-- Lively Winter Toque \\ Lively Winter Hat
-			i(252744),	-- Faded Winter Toque \\ Faded Winter Hat
-			i(252746),	-- Rosy Winter Toque \\ Rosy Winter Hat
-			i(252747),	-- Plum Winter Toque \\ Plum Winter Hat
-			i(252748),	-- Crimson Winter Toque \\ Crimson Winter Hat
-			i(252749),	-- Violet Winter Toque \\ Violet Winter Hat
-			i(252750),	-- Aquatic Winter Toque \\ Aquatic Winter Hat
-			i(252751),	-- Snowy Winter Toque \\ Snowy Winter Hat
-			i(252752),	-- Sunny Winter Toque \\ Sunny Winter Hat
-			i(255881),	-- Severed Threads Commendation
-			i(259454),	-- Ensemble: Regalia of Shackled Elements
+			filter(BATTLE_PETS, {
+				i(248091),	-- Anima Wyrmling
+				i(248092),	-- Blinky
+				i(252199),	-- Festive Eve
+				i(252194),	-- Fishmonger May
+				i(252195),	-- Fishstick Keith
+				i(252137),	-- Lil' Chompers
+				i(252193),	-- Slippery Saul
+			}),
+			filter(COSMETIC, {
+				i(235903),	-- Gold Lightforged Chestguard
+				i(245663),	-- Holy Golden Greatsword
+				i(245664),	-- Holy Hologem Greatsword
+				i(248725),	-- Smoked Rib Surprise
+				i(248727),	-- Smoked Rib Leftovers
+				i(248728),	-- Bacon-Wrapped Smoked Ribs
+				i(248729),	-- Steaming Pot of Stew
+				i(248730),	-- Weathered Pot of Stew
+				i(248732),	-- Stolen Pot of Stew
+				i(248734),	-- Fiery Dirk of the Ice Queen
+				i(248735),	-- Arcane Dirk of the Ice Queen
+				i(248736),	-- Glowing Dirk of the Ice Queen
+				i(248737),	-- Well-Used Great Steak Knife
+				i(248738),	-- Used Great Steak Knife
+				i(248739),	-- Dull Great Steak Knife
+				i(248816),	-- Fiery Wand of the Ice Queen
+				i(248817),	-- Arcane Wand of the Ice Queen
+				i(248818),	-- Glowing Wand of the Ice Queen
+				i(248828),	-- Fiery Great Axe of the Frostwolf
+				i(248829),	-- Arcane Great Axe of the Frostwolf
+				i(248830),	-- Glowing Great Axe of the Frostwolf
+				i(248832),	-- Big Bronze Fork
+				i(248839),	-- Big Iron Fork
+				i(248841),	-- Big Silver Fork
+				i(248913),	-- Fiery Warglaives of the North
+				i(248914),	-- Arcane Warglaives of the North
+				i(248915),	-- Glowing Warglaives of the North
+				i(248923),	-- Unfathomably Stale Bread
+				i(248924),	-- Stale Mulgore Spice Bread
+				i(248925),	-- Months Old Rye Bread
+				i(249717),	-- Golden Food Fanatic Backpack
+				i(249718),	-- Bronze Food Fanatic Backpack
+				i(249719),	-- Fine Food Fanatic Backpack
+				i(249721),	-- Big Steel Spoon
+				i(249722),	-- Big Blue Spoon
+				i(249723),	-- Big Fancy Spoon
+				i(249737),	-- Seafarer's Winter Hood
+				i(249738),	-- Seafarer's Winter Pauldrons
+				i(249739),	-- Seafarer's Winter Tunic
+				i(249740),	-- Seafarer's Winter Belt
+				i(249741),	-- Seafarer's Winter Leggings
+				i(249742),	-- Seafarer's Winter Boots
+				i(249743),	-- Seafarer's Winter Gloves
+				i(249744),	-- Seafarer's Winter Cloak
+				i(249745),	-- Ensemble: The Seafarer's Winter Collection
+				i(249746),	-- Drustvar Winter Hood
+				i(249747),	-- Drustvar Winter Pauldrons
+				i(249748),	-- Drustvar Winter Tunic
+				i(249749),	-- Drustvar Winter Belt
+				i(249750),	-- Drustvar Winter Leggings
+				i(249751),	-- Drustvar Winter Boots
+				i(249752),	-- Drustvar Winter Gloves
+				i(249753),	-- Drustvar Winter Cloak
+				i(249754),	-- Ensemble: The Drustvar Winter Collection
+				i(249755),	-- Kirin Tor Winter Hood
+				i(249756),	-- Kirin Tor Winter Pauldrons
+				i(249757),	-- Kirin Tor Winter Tunic
+				i(249758),	-- Kirin Tor Winter Belt
+				i(249759),	-- Kirin Tor Winter Leggings
+				i(249760),	-- Kirin Tor Winter Boots
+				i(249761),	-- Kirin Tor Winter Gloves
+				i(249762),	-- Kirin Tor Winter Cloak
+				i(249763),	-- Ensemble: The Kirin Tor Winter Collection
+				i(249862),	-- Seafarer's Winter Spaulders
+				i(249863),	-- Drustvar Winter Spaulders
+				i(249864),	-- Kirin Tor Winter Spaulders
+				i(249906),	-- Villager's Forest Cap
+				i(249908),	-- Villager's Forest Handwraps
+				i(249909),	-- Villager's Forest Tunic
+				i(249910),	-- Villager's Forest Buckle
+				i(249911),	-- Villager's Forest Pants
+				i(249916),	-- Villager's Forest Boots
+				i(249917),	-- Ensemble: Villager's Forest Attire
+				i(249926),	-- Villager's Seaside Cap
+				i(249927),	-- Villager's Seaside Handwraps
+				i(249928),	-- Villager's Seaside Tunic
+				i(249929),	-- Villager's Seaside Buckle
+				i(249930),	-- Villager's Seaside Pants
+				i(249931),	-- Villager's Seaside Boots
+				i(249932),	-- Ensemble: Villager's Seaside Attire
+				i(249940),	-- Villager's City Cap
+				i(249941),	-- Villager's City Handwraps
+				i(249942),	-- Villager's City Tunic
+				i(249943),	-- Villager's City Buckle
+				i(249944),	-- Villager's City Pants
+				i(249945),	-- Villager's City Boots
+				i(249946),	-- Ensemble: Villager's City Attire
+				i(250084),	-- Sturdy Pot Lid
+				i(250085),	-- Battered Pot Lid
+				i(250087),	-- Used Pot Lid
+				i(250291),	-- Hot and Fresh Portable Bakery
+				i(250292),	-- Piping Hot Portable Bakery
+				i(250293),	-- Red Hot Portable Bakery
+				i(250779),	-- Golden Food Fanatic Shield
+				i(250780),	-- Bronze Food Fanatic Shield
+				i(250781),	-- Fine Food Fanatic Shield
+				i(250883),	-- Villager's Forest Bonnet
+				i(250884),	-- Villager's Forest Blouse
+				i(250885),	-- Villager's Forest Belt
+				i(250886),	-- Villager's Forest Skirt
+				i(250887),	-- Villager's Forest Sabatons
+				i(250888),	-- Ensemble: Villager's Forest Collection
+				i(250890),	-- Villager's Forest Gloves
+				i(250891),	-- Villager's Seaside Bonnet
+				i(250892),	-- Villager's Seaside Gloves
+				i(250893),	-- Villager's Seaside Blouse
+				i(250894),	-- Villager's Seaside Belt
+				i(250895),	-- Villager's Seaside Skirt
+				i(250896),	-- Villager's Seaside Sabatons
+				i(250897),	-- Ensemble: Villager's Seaside Collection
+				i(250905),	-- Villager's City Bonnet
+				i(250906),	-- Villager's City Gloves
+				i(250907),	-- Villager's City Blouse
+				i(250908),	-- Villager's City Belt
+				i(250909),	-- Villager's City Skirt
+				i(250910),	-- Villager's City Sabatons
+				i(250911),	-- Ensemble: Villager's City Collection
+				i(251657),	-- Bunch of Pink Carrots
+				i(251658),	-- Bunch of Purple Carrots
+				i(251659),	-- Bunch of Yellow Carrots
+				i(251660),	-- Offhand Bunch of Yellow Carrots
+				i(251661),	-- Offhand Bunch of Purple Carrots
+				i(251662),	-- Offhand Bunch of Pink Carrots
+				i(251669),	-- Sturdy Wearable Pot Lid
+				i(251670),	-- Battered Wearable Pot Lid
+				i(251672),	-- Used Wearable Pot Lid
+				i(251797),	-- Ears of Orange Corn
+				i(251798),	-- Ears of Purple Corn
+				i(251799),	-- Ears of White Corn
+				i(251801),	-- Offhand Ears of Orange Corn
+				i(251802),	-- Offhand Ears of Purple Corn
+				i(251803),	-- Offhand Ears of White Corn
+				i(251855),	-- Bunch of Orange Chile
+				i(251856),	-- Bunch of Red Chile
+				i(251857),	-- Bunch of Yellow Chile
+				i(251870),	-- Offhand Bunch of Orange Chile
+				i(251872),	-- Offhand Bunch of Red Chile
+				i(251873),	-- Offhand Bunch of Yellow Chile
+				i(251985),	-- Trapper's Black Quiver
+				i(251986),	-- Trapper's Blue Quiver
+				i(251987),	-- Trapper's Brown Quiver
+				i(251988),	-- Trapper's Dark Brown Quiver
+				i(251990),	-- Trapper's Light Brown Quiver
+				i(251991),	-- Trapper's Red Quiver
+				i(251992),	-- Trapper's Purple Quiver
+				i(252710),	-- Midnight Winter Toque
+				i(252712),	-- Sepia Winter Toque
+				i(252713),	-- Grassy Winter Toque
+				i(252714),	-- Cloudy Winter Toque
+				i(252715),	-- Deep Winter Toque
+				i(252741),	-- Camo Winter Toque
+				i(252742),	-- Brick Winter Toque
+				i(252743),	-- Lively Winter Toque
+				i(252744),	-- Faded Winter Toque
+				i(252746),	-- Rosy Winter Toque
+				i(252747),	-- Plum Winter Toque
+				i(252748),	-- Crimson Winter Toque
+				i(252749),	-- Violet Winter Toque
+				i(252750),	-- Aquatic Winter Toque
+				i(252751),	-- Snowy Winter Toque
+				i(252752),	-- Sunny Winter Toque
+			}),
+			filter(MISC, {
+				i(251023),	-- Bronze Simulacrum
+				i(241600),	-- Ensemble: Chains of the Chosen Dead
+				i(241602),	-- Ensemble: Chains of the Chosen Dead
+				i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
+				i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
+				i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
+				i(241605),	-- Ensemble: Garb of the Chosen Dead
+				i(241606),	-- Ensemble: Garb of the Chosen Dead
+				i(259454),	-- Ensemble: Regalia of Shackled Elements
+				i(241609),	-- Ensemble: Regalia of the Chosen Dead
+				i(241610),	-- Ensemble: Regalia of the Chosen Dead
+				i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
+				i(252656),	-- K'areshi Scientific Expedition Supply
+				i(255881),	-- Severed Threads Commendation
+			}),
+			filter(MOUNTS, {
+				i(250108),	-- Cragstepper Crest-Horn
+				i(250762),	-- Felfueled Memento of the Abyss
+				i(250106),	-- Floestrider Crest-Horn
+				i(248088),	-- Jade, Bright Foreseer
+				i(250928),	-- Murky Turkey
+				i(250927),	-- Quirky Turkey
+				i(239647),	-- Reins of the Bloodguard Fel Bat
+				i(239666),	-- Reins of the Risen Fel Bat
+				i(239686),	-- Reins of the Forgotten Fel Bat
+				i(250191),	-- Reins of the Bilebound Ur'zul
+				i(250321),	-- Reins of the Thorignir Drake
+				i(250726),	-- Reins of the Leyfrost Manasaber
+				i(250727),	-- Reins of the Nightwell Manasaber
+				i(250105),	-- Sharktested Crest-Horn
+				i(248089),	-- Tangled Dreamweaver
+				i(248090),	-- Viridian Phase-Hunter
+			}),
+			filter(QUEST_ITEMS, {
+				i(247894),	-- Dalaran Hearthstone
+			}),
 		})),
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			filter(BATTLE_PETS, {

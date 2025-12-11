@@ -16091,5 +16091,59 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			filter(LEATHER, {
+				i(239820),	-- Boots of the Hunting Dream
+				i(239814),	-- Cuffs of the Hunting Dream
+				i(239818),	-- Grips of the Hunting Dream
+				i(239817),	-- Hat of the Hunting Dream
+				i(239816),	-- Legguards of the Hunting Dream
+				i(239815),	-- Spaulders of the Hunting Dream
+				i(239819),	-- Vest of the Hunting Dream
+				i(239821),	-- Waistband of the Hunting Dream
+				i(239806),	-- Mountainborne Bindings
+				i(239813),	-- Mountainborne Cinch
+				i(239810),	-- Mountainborne Grips
+				i(239809),	-- Mountainborne Headgear
+				i(239808),	-- Mountainborne Shoulders
+				i(239812),	-- Mountainborne Striders
+				i(239807),	-- Mountainborne Trousers
+				i(239811),	-- Mountainborne Vest
+			}),
+			filter(MAIL, {
+				i(239970),	-- Fel-marked Cinch
+				i(239968),	-- Fel-marked Chestguard
+				i(239966),	-- Fel-marked Faceguard
+				i(239969),	-- Fel-marked Greaves
+				i(239967),	-- Fel-marked Handguards
+				i(239959),	-- Fel-marked Hauberk
+				i(239961),	-- Fel-marked Pinions
+				i(239960),	-- Fel-marked Vambraces
+				i(239962),	-- Fel-marked Wargreaves
+				i(239779),	-- Valorborne Dragonscale Breeches
+				i(239778),	-- Valorborne Dragonscale Epaulets
+				i(239780),	-- Valorborne Dragonscale Faceguard
+				i(239783),	-- Valorborne Dragonscale Greaves
+				i(239781),	-- Valorborne Dragonscale Handguards
+				i(239782),	-- Valorborne Dragonscale Haubergeon
+				i(239777),	-- Valorborne Dragonscale Vambraces
+				i(239784),	-- Valorborne Dragonscale Waistband
+			}),
+			filter(PLATE, {
+				i(239744),	-- Blood Knight's Plate Armguards
+				i(239743),	-- Blood Knight's Plate Cloak
+				i(239749),	-- Blood Knight's Plate Breastplate
+				i(239742),	-- Blood Knight's Plate Drape
+				i(239748),	-- Blood Knight's Plate Gauntlets
+				i(239751),	-- Blood Knight's Plate Girdle
+				i(239747),	-- Blood Knight's Plate Greathelm
+				i(239746),	-- Blood Knight's Plate Legguards
+				i(239745),	-- Blood Knight's Plate Mantle
+				i(239750),	-- Blood Knight's Plate Sabatons
+				i(239741),	-- Blood Knight's Plate Shawl
+			}),
+		})),
 	}),
 }));
