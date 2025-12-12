@@ -5067,4 +5067,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+	m(KALIMDOR, {
+		m(THE_BARRENS, {
+			q(55296),	-- Triggered after complete 'Chen's Empty Keg' (822)
+		}),
+	}),
+}));
 -- #endif
