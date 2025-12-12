@@ -1901,6 +1901,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 		n(HERITAGE, {
 			q(85050),	-- Triggered after accepting 'Invitation to the Spirit Festival' (84442)
+			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
 		}),
 	})),
 });
