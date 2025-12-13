@@ -30,6 +30,8 @@ app.AddEventHandler("OnStartupDone", function()
 	IsAccountCached = app.IsAccountCached
 end)
 
+local HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
+
 -- Decor Lib [STUB -- WIP]
 do
 	app.CreateDecor = app.ExtendClass("Item", CLASSNAME, KEY, {
@@ -38,37 +40,33 @@ do
 		collected = function(t) return IsAccountCached(CACHE, t.decorID) and 1 end,
 	});
 	local function RefreshDecorCollection()
-		local decorType = Enum.HousingCatalogEntryType.Decor
-		local state
-		local saved, none = {}, {}
-		local added = {}
-		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			if not IsAccountCached(CACHE, id) then
-				state = C_HousingCatalog_GetCatalogEntryInfoByRecordID(decorType, id, true)
-				-- if id == 2545 then
-				-- 	app.PrintDebug(id)
-				-- 	app.PrintTable(state)
-				-- end
-				-- quantity is how many owned
-				-- hasPlaced is used when the item is owned, but placed in the house (or outside)
-				if state then
-					local sum = state.numStored + state.numPlaced
-					if sum > 0 and sum < 1000000 then	-- Sometimes API returns 4294967295
-						-- state is valid, keep it
-						saved[id] = true
-						added[#added + 1] = id
-					else
-						none[id] = true
-					end
-				end
+		HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
+		HousingSearcher:SetAutoUpdateOnParamChanges(false)
+		HousingSearcher:SetIncludeMarketEntries(false)
+	   	HousingSearcher:SetResultsUpdatedCallback(function()
+			local saved, none = {}, {}
+			local added = {}
+			local entries = HousingSearcher:GetCatalogSearchResults()
+			for _, entry in pairs(entries) do
+		  		if not IsAccountCached(CACHE, entry.recordID) then
+		      		local info = C_HousingCatalog.GetCatalogEntryInfo(entry)
+		      		if info ~= nil then
+		          		local qty = info.numPlaced + info.numStored
+		          
+						-- qty can sometimes be 4294967295
+		          		if qty > 0 and qty < 1000000 then
+                    		saved[entry.recordID] = true
+                    		added[#added + 1] = entry
+                  		else
+                    		none[entry.recordID] = true		          
+		          		end
+		      		end
+		   		end
 			end
-		end
-
-		-- Account Cache
-		app.SetBatchAccountCached(CACHE, saved, 1)
-		-- Decor is not currently reliably refreshed, so don't clear missing
-		-- app.SetBatchAccountCached(CACHE, none)
-		return added
+			app.SetBatchAccountCached(CACHE, saved, 1)
+			app.SetBatchAccountCached(CACHE, none)
+		end)
+	   HousingSearcher:RunSearch()
 	end
 	local function RefreshWithUpdate()
 		-- silently refresh any updated Decor
