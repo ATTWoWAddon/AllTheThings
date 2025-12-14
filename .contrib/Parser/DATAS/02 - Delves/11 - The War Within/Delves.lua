@@ -903,7 +903,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(42241, {	-- Overcharged Delver
-			["timeline"] = { ADDED_11_1_7 },
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
 				crit(105440, {	-- Fungal Folly
 					["maps"] = { FUNGAL_FOLLY },
