@@ -29,7 +29,7 @@ RAID_FLEXIBLE_VENDOR = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "灵活供应商",
-		-- TODO: tw = "",
+		tw = "彈性模式商人",
 	},
 });
 RAID_NORMAL_VENDOR = createHeader({

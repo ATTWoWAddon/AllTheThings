@@ -17,7 +17,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "竞争之魂",
 		-- TODO: tw = "",
 		-- #endif
 	},
@@ -31,7 +31,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
 		-- TODO: tw = "",
 	},
 });

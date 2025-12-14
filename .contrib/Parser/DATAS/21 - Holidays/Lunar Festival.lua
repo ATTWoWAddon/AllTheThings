@@ -27,7 +27,7 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "春节",
 		-- TODO: tw = "",
 		-- #endif
 	},

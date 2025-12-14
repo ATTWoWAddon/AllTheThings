@@ -2537,6 +2537,9 @@ root(ROOTS.Zones, {
 					n(64395, {	-- Nam Ironpaw <Stockmaster>
 						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
+							i(74853, {	-- 100 Year Soy Sauce
+								["cost"] = { { "c", 402, 1 }, },	-- 1x Ironpaw Token
+							}),
 							i(86468, {	-- Apron
 								["sourceQuest"] = 31820,	-- A Present for Teacher (Nomi)
 								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token

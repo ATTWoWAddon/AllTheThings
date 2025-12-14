@@ -256,6 +256,17 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 		}),
 	}),
+	filter(COSMETIC, {
+		expansion(EXPANSION.TWW, {
+			-- 11.0.7
+			expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+				i(234710),	-- Earthen Artisan Kilt
+				i(234712),	-- Earthen Explorer's Kilt
+				i(234711),	-- Earthen Peacekeeper Warkilt
+				i(234709),	-- Earthen Travel Kilt
+			})),
+		}),
+	}),
 	f(MISC, {
 		expansion(EXPANSION.DF, {
 			-- 10.1.7

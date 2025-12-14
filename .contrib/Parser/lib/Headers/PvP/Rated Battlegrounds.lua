@@ -18,7 +18,7 @@ RATED_BATTLEGROUNDS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这些物品需要经典/评级战场的军团士兵/骑士队长或更高的排名才能购买。",
 		-- TODO: tw = "",
 	},
 });

@@ -27,7 +27,7 @@ WARPWOOD_QUARTER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该副本的此部分可从最东侧的入口进入。（右侧）",
 		tw = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	},
 });
@@ -45,7 +45,7 @@ GORDOK_COMMONS = createHeader({
 		-- TODO: pt = "",
 		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
 		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+		-- tw = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
 	},
 	description = {
 		en = "This part of the instance can be accessed from the northern-most portal.",
@@ -57,7 +57,7 @@ GORDOK_COMMONS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该副本的此部分可从最北侧的入口进入。",
 		tw = "副本的這部分可以從最北邊的傳送門進入。",
 	},
 });
@@ -75,7 +75,7 @@ CAPITAL_GARDENS = createHeader({
 		-- TODO: pt = "",
 		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
 		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
-		tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+		-- tw = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
 	},
 	description = {
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",
@@ -87,7 +87,7 @@ CAPITAL_GARDENS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该副本的此部分可从最西侧的入口进入。（左侧）",
 		tw = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	},
 });

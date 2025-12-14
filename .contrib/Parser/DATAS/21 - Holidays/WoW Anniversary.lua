@@ -34,7 +34,7 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这是一个每年重现的活动，发生在十一月初到年底之间。",
 		tw = "這是一個每年重複的活動，發生在十一月初到年底之間。",
 	},
 });

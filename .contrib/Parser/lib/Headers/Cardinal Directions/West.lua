@@ -12,6 +12,6 @@ WEST = createHeader({
 		-- TODO: pt = "",
 		ru = "Запад",
 		cn = "西部",
-		-- TODO: tw = "",
+		-- tw = "西部",
 	},
 });

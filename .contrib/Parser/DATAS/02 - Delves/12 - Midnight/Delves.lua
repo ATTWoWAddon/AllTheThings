@@ -11,8 +11,8 @@ DELVES_MID_S1 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки MID 1 сезон",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "至暗之夜地下堡第一季",
+		tw = "至暗之夜探究第一季",
 	},
 });
 DELVES_MID_S2 = createHeader({
@@ -28,8 +28,8 @@ DELVES_MID_S2 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки MID 2 сезон",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "至暗之夜地下堡第二季",
+		tw = "至暗之夜探究第二季",
 	},
 });
 DELVES_MID_S3 = createHeader({
@@ -45,8 +45,8 @@ DELVES_MID_S3 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки MID 3 сезон",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "至暗之夜地下堡第三季",
+		tw = "至暗之夜探究第三季",
 	},
 });
 -- #if AFTER 12.0.0

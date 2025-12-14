@@ -191,6 +191,10 @@ root(ROOTS.Zones, {
 					["coord"] = { 50.3, 41, STORMHEIM },
 					["description"] = "Inside the cave.",
 				}),
+				o(269079, {	-- Small Treasure Chest
+					["coord"] = { 59.9, 70.8, STORMHEIM },
+					["timeline"] = { ADDED_7_2_0 },
+				}),
 				o(269082, {	-- Small Treasure Chest
 					["coord"] = { 29.1, 47.1, STORMHEIM },
 					["timeline"] = { ADDED_7_2_0 },

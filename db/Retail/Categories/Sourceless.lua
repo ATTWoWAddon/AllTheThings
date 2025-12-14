@@ -1,6 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
+local a={{3,34,84,85}};
 _.Categories.Sourceless={
 h(-88,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(4,{awp=40003,g={
@@ -181,6 +182,13 @@ s(97121,161227,{f=7}),
 s(97125,161231,{f=7}),
 s(97129,161235,{f=7}),
 s(97145,161254,{b=1,f=7,r=1})})})}})}}),
+flt(2,{awp=110007,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(11,{
+x(11.0007,{
+s(249114,234710,{f=2,races=a[1]}),
+s(249116,234712,{f=2,races=a[1]}),
+s(249115,234711,{f=2,races=a[1]}),
+s(249113,234709,{f=2,races=a[1]})})})}}),
 flt(50,{awp=100107,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(10,{
 x(10.0107,{

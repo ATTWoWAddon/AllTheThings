@@ -79,25 +79,74 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 		}),
 		n(QUESTS, {
-			--[[q(XXXXX, {	-- The Cult Within
-				["qgs"] = {
-					XXXXXX,	-- Stormwind NPC
-					XXXXXX,	-- Orgrimmar NPC
+			q(90759, {	-- The Cult Within [A]
+				["description"] = "Pops-up upon login",
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(90764, {	-- The Cult Within [H]
+				["description"] = "Pops-up upon login",
+				["races"] = HORDE_ONLY,
+			}),
+			q(90760, {	-- Avoiding Blame [A]
+				["sourceQuest"] = 90759,	-- The Cult Within
+				--["qg"] = ,	-- X
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(90761, {	-- Avoiding Blame [H]
+				["sourceQuest"] = 90764,	-- The Cult Within
+				--["qg"] = ,	-- X
+				["races"] = HORDE_ONLY,
+			}),
+			q(90762, {	-- The Twilight Highlands [A]
+				["sourceQuest"] = 90760,	-- Avoiding Blame
+				--["qg"] = ,	-- X
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(90763, {	-- The Twilight Highlands [H]
+				["sourceQuest"] = 90761,	-- Avoiding Blame
+				--["qg"] = ,	-- X
+				["races"] = HORDE_ONLY,
+			}),
+			q(90765, {	-- Midnight Dress
+				["sourceQuests"] = {
+					90762,	-- The Twilight Highlands [A]
+					90763,	-- The Twilight Highlands [H]
 				},
+				["sourceQuestNumRequired"] = 1,
+				--["qg"] = ,	-- X
+				["groups"] = {
+					i(246398),	-- Cultist Cowl (QI!)
+					i(246399),	-- Cultist Dagger (QI!)
+					i(246400),	-- Cultist Robes (QI!)
+					i(246397),	-- Twilight Cultist Robes (QI!)
 				},
-				["coords"] = {
-					{ X, Y, STORMWIND_CITY },
-					{ X, Y, ORGRIMMAR },
+			}),
+			-- Stay awhile and listen after accepting Midnight Dress!!! --
+			q(90766, {	-- Xal'atath's Proven Faithful
+				["sourceQuest"] = 90765,	-- Midnight Dress
+				--["qg"] = ,	-- X
+			}),
+			q(90767, {	-- More Doom
+				["sourceQuest"] = 90766,	-- Xal'atath's Proven Faithful
+				--["qg"] = ,	-- X
+				["groups"] = {
+					i(250465),	-- Shadow Crystal (QI!)
 				},
-			}),--]]
-		}),
-		n(SPECIAL, {
+			}),
+			q(90768, {	-- Cult It Out
+				["sourceQuest"] = 90767,	-- More Doom
+				--["qg"] = ,	-- X
+				["groups"] = {
+					i(246627),	-- Twilight's Blade Tabard
+					title(643),	-- <Name>, Definitely Not a Cultist
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(249197, {	-- Armorer Kalinovan
 				["coord"] = { 49.7, 81.3, TWILIGHT_HIGHLANDS },
 				["groups"] = sharedData({
-					["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 40 }},
+					["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
 				}, {
 					filter(CLOAKS, {
 						i(246674),	-- Ascension Arrestor's Cape
@@ -171,34 +220,34 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 49.8, 81.3, TWILIGHT_HIGHLANDS },
 				["groups"] = {
 					iensemble(248218, {	-- Arsenal: Weathered Twilight's Hammer Armaments
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 40 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
 					}),
 					i(246628, {	-- Emerald Sporbit (PET!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 30 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 30 } },
 					}),
 					i(245330, {	-- Enchanted Blood Elven Candelabra (DECOR!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 50 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 50 } },
 					}),
 					iensemble(249438, {	-- Ensemble: Well-Worn Twilight Cultist's Attire
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 40 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
 					}),
 					i(224148, {	-- Retrained Skyrazor (MOUNT!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 100 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 100 } },
 					}),
 					i(244911, {	-- Rhay'Dahr (PET!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 30 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 30 } },
 					}),
 					i(232856, {	-- Scruff (PET!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 30 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 30 } },
 					}),
 					i(245284, {	-- Silvermoon Wooden Chair (DECOR!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 50 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 50 } },
 					}),
 					i(251997, {	-- Sin'dorei Winged Chaise (DECOR!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 75 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 75 } },
 					}),
 					i(249468, {	-- Twilight's Blade Top Secret Strategy Training Guide (TOY!)
-						["cost"] = {{ "c", TWILIGHTS_BLADE_INSIGNIA, 30 }},
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 30 } },
 					}),
 				},
 			}),

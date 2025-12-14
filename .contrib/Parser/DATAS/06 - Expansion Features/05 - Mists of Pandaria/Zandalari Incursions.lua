@@ -15,7 +15,7 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "赞达拉入侵",
-		-- TODO: tw = "",
+		tw = "贊達拉入侵",
 	},
 	description = {
 		en = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",

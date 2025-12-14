@@ -14,8 +14,8 @@ PARTY_SYNC = createHeader({
 		ko = "파티 동기화",
 		pt = "Sincronização de Grupo",
 		ru = "режиме синхронизации",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "队伍同步",
+		tw = "隊伍同步",
 		-- #endif
 	},
 });

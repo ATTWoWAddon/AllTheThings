@@ -28,7 +28,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "若该任务旁有勾选标记，请查看下方哪块石头处于激活状态。若所有石头均未勾选，则意味着今日无法与任何猫头鹰石互动，请明日再来。",
 		-- TODO: tw = "",
 	},
 });
@@ -46,7 +46,7 @@ DUSKWOOD_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Сумеречный лес - активен",
-		-- TODO: cn = "",
+		cn = "激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -59,7 +59,7 @@ DUSKWOOD_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
 		-- TODO: tw = "",
 	},
 });
@@ -77,7 +77,7 @@ FERALAS_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Фералас - активен",
-		-- TODO: cn = "",
+		cn = "激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -90,7 +90,7 @@ FERALAS_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
 		-- TODO: tw = "",
 	},
 });
@@ -108,7 +108,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Внутренние земли - активен",
-		-- TODO: cn = "",
+		cn = "激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -121,7 +121,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
 		-- TODO: tw = "",
 	},
 });
@@ -139,7 +139,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Сумеречный лес - активирован",
-		-- TODO: cn = "",
+		cn = "已激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -152,7 +152,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该任务用于提示你是否已激活暮色森林的猫头鹰石。",
 		-- TODO: tw = "",
 	},
 });
@@ -170,7 +170,7 @@ FERALAS_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Фералас - активирован",
-		-- TODO: cn = "",
+		cn = "已激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -183,7 +183,7 @@ FERALAS_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该任务用于提示你是否已激活菲拉斯的猫头鹰石。",
 		-- TODO: tw = "",
 	},
 });
@@ -201,7 +201,7 @@ THE_HINTERLANDS_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Внутренние земли - активирован",
-		-- TODO: cn = "",
+		cn = "已激活",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -214,7 +214,7 @@ THE_HINTERLANDS_ACTIVATED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "该任务用于提示你是否已激活辛特兰的猫头鹰石。",
 		-- TODO: tw = "",
 	},
 });

@@ -25,8 +25,8 @@ DELVES_TWW_S1 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 1 сезон",
-		cn = "地心之战地下堡第1季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第一季",
+		tw = "地心之戰探究第一季",
 	},
 });
 DELVES_TWW_S2 = createHeader({
@@ -42,8 +42,8 @@ DELVES_TWW_S2 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 2 сезон",
-		cn = "地心之战地下堡第2季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第二季",
+		tw = "地心之戰探究第二季",
 	},
 });
 DELVES_TWW_S3 = createHeader({
@@ -59,8 +59,8 @@ DELVES_TWW_S3 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 3 сезон",
-		cn = "地心之战地下堡第3季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第三季",
+		tw = "地心之戰探究第三季",
 	},
 });
 local UNDERCOIN = 2803;

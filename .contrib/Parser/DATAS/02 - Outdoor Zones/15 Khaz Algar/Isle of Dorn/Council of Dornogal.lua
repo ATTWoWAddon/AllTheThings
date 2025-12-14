@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 											-- #endif
 										},
 										["groups"] = {
-											i(245294, {["timeline"] = { ADDED_11_2_7 }}),	-- Councilward's Jeweled Goblet (DECOR!)
+											i(245294, { ["timeline"] = { ADDED_11_2_7 } }),	-- Councilward's Jeweled Goblet (DECOR!)
 											i(228320),	-- Design: Binding of Binding (RECIPE!)
 											i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 											i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
@@ -188,6 +188,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}),
 									i(235151, {	-- Distinguished Actor's Chest
 										["timeline"] = { ADDED_11_1_0 },
+										["groups"] = { i(245294, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Councilward's Jeweled Goblet (DECOR!)
 									}),
 								},
 							}),

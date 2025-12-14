@@ -6,11 +6,20 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 1.x.x
 		n(P1xx, {
 			i(6834),	-- Black Tuxedo
+			i(7996),	-- Worn Fishing Hat
+		}),
+	}),
+	expansion(EXPANSION.WRATH, {
+		-- 3.x.x
+		n(P3xx, {
+			i(34718),	-- Black Leather Shoes
+			i(45860),	-- Crystal Tiara
 		}),
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
 		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+			i(62058),	-- Irradiated Bandages
 			i(52488),	-- Jeweler's Sapphire Monocle
 		})),
 	}),
@@ -18,6 +27,12 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 5.0.1
 		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			i(73240),	-- Sedge Hat of the Enlightened
+		})),
+
+		-- 5.1.0
+		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
+			i(92553),	-- Gnomish X-Ray Specs Visual
+			i(90986),	-- Ruby Bracelet
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
@@ -38,12 +53,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 		-- 7.2.0
 		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
-			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
-			i(147378),	-- Wooden Toy Sword [A] (Visual usage for toy weapon set)
-			--
 			i(146306),	-- Green Winter Clothes
 			i(146305),	-- Green Winter Hat
 			i(146307),	-- Winter Boots
+			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
+			i(147378),	-- Wooden Toy Sword [A] (Visual usage for toy weapon set)
 		})),
 	}),
 	expansion(EXPANSION.BFA, {
@@ -65,23 +79,36 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-			i(182306),	-- Monster Mantle
+			n(ARMOR, {
+				i(182306),	-- Monster Mantle
+			}),
 		})),
 
 		-- 9.1.0
 		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
-			iensemble(186500),	-- Ensemble: Garb of the Twilight Grove (questID 63596)
-			iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia (questID 63600)
-			iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments (questID 63629)
-			iensemble(186513),	-- Ensemble: Radiant Court Attire (questID 63632)
-			iensemble(186514),	-- Ensemble: Redeemed Inquisitor's Vestments (questID 63636)
-			i(185774),	-- PH Green Head Candle
-			i(186093),	-- Shaded Spectacles
+			n(ARMOR, {
+				i(185774),	-- PH Green Head Candle
+				i(186093),	-- Shaded Spectacles
+			}),
+			n(SETS, {
+				i(186500),	-- Ensemble: Garb of the Twilight Grove
+				q(63596),	--Ensemble: Garb of the Twilight Grove
+				i(186518),	-- Ensemble: Forsworn Aspirant's Regalia
+				q(63600),	--Ensemble: Forsworn Aspirant's Regalia
+				i(186505),	-- Ensemble: Rogue Necromancer's Vestments
+				q(63629),	--Ensemble: Rogue Necromancer's Vestments
+				i(186513),	-- Ensemble: Radiant Court Attire
+				q(63632),	--Ensemble: Radiant Court Attire
+				i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments
+				q(63636),	--Ensemble: Redeemed Inquisitor's Vestments
+			}),
 		})),
 
 		-- 9.1.5
 		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
-			i(187914),	-- Captain Noteo's Unused Eye Patch
+			n(ARMOR, {
+				i(187914),	-- Captain Noteo's Unused Eye Patch
+			}),
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -167,6 +194,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(189869),	-- Distinguished Warcloak
 			}),
 			n(SETS, {
+				------ Tidecaller's Chainmail ------
+				i(200917),	-- Ensemble: Tidecaller's Chainmail
+
 				------ Val'Sharah Protector Set ------
 				i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
 				i(190547),	-- Val'Sharah Protector's Bracers
@@ -466,6 +496,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Patched Harvest Golem Set ------
 				i(226471),	-- Ensemble: Patched Harvest Golem
+				q(84000),	-- Ensemble: Patched Harvest Golem
 			}),
 			n(WEAPONS, {
 				i(225495),	-- Brilliant Beacon
@@ -484,36 +515,42 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Prowler's Cloudy Set ------
 				i(230168),	-- Ensemble: Prowler's Cloudy Headgear
+				q(85122),	-- Ensemble: Prowler's Cloudy Headgear
 				i(230058),	-- Prowler's Cloudy Cowl
 				i(230078),	-- Prowler's Cloudy Mask
 				i(230037),	-- Prowler's Cloudy Shoulder Cape
 
 				------ Prowler's Grassy Set ------
 				i(230167),	-- Ensemble: Prowler's Grassy Headgear
+				q(85121),	-- Ensemble: Prowler's Grassy Headgear
 				i(230057),	-- Prowler's Grassy Cowl
 				i(230077),	-- Prowler's Grassy Mask
 				i(230036),	-- Prowler's Grassy Shoulder Cape
 
 				------ Prowler's Lively Set ------
 				i(230172),	-- Ensemble: Prowler's Lively Headgear
+				q(85126),	-- Ensemble: Prowler's Lively Headgear
 				i(230062),	-- Prowler's Lively Cowl
 				i(230082),	-- Prowler's Lively Mask
 				i(230041),	-- Prowler's Lively Shoulder Cape
 
 				------ Prowler's Midnight Set ------
 				i(230152),	-- Ensemble: Prowler's Midnight Headgear
+				q(85118),	-- Ensemble: Prowler's Midnight Headgear
 				i(230054),	-- Prowler's Midnight Cowl
 				i(230074),	-- Prowler's Midnight Mask
 				i(230033),	-- Prowler's Midnight Shoulder Cape
 
 				------ Prowler's Plum Set ------
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
+				q(85137),	-- Ensemble: Prowler's Plum Headgear
 				i(230068),	-- Prowler's Plum Cowl
 				i(230088),	-- Prowler's Plum Mask
 				i(230047),	-- Prowler's Plum Shoulder Cape
 
 				------ Prowler's Rosy Set ------
 				i(230177),	-- Ensemble: Prowler's Rosy Headgear
+				q(85136),	-- Ensemble: Prowler's Rosy Headgear
 				i(230067),	-- Prowler's Rosy Cowl
 				i(230087),	-- Prowler's Rosy Mask
 				i(230046),	-- Prowler's Rosy Shoulder Cape
@@ -537,10 +574,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233160),	-- Banded Lively War Wraps
 				i(233180),	-- Banded Rosy War Slippers
 				i(233163),	-- Banded Rosy War Wraps
-				i(234710),	-- Earthen Artisan Kilt
-				i(234712),	-- Earthen Explorer's Kilt
-				i(234711),	-- Earthen Peacekeeper Warkilt
-				i(234709),	-- Earthen Travel Kilt
 				i(234758),	-- Korkron Spaulders
 				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233100),	-- Long Cloudy War Skirt
@@ -551,18 +584,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233143),	-- Long Lively War Skirt and Leg Wraps
 				i(233107),	-- Long Rosy War Skirt
 				i(233146),	-- Long Rosy War Skirt and Leg Wraps
-				i(234059),	-- Lunar Festival Attire - Purple
-				i(234060),	-- Lunar Festival Attire - Teal
-				i(234043),	-- Lunar Festival Belt - Purple
-				i(234044),	-- Lunar Festival Belt - Teal
-				i(234055),	-- Lunar Festival Crown - Purple
-				i(234056),	-- Lunar Festival Crown - Teal
-				i(234047),	-- Lunar Festival Robe - Purple
-				i(234048),	-- Lunar Festival Robe - Teal
-				i(234039),	-- Lunar Festival Slippers - Purple
-				i(234040),	-- Lunar Festival Slippers - Teal
-				i(234051),	-- Lunar Festival Spaulders - Purple
-				i(234052),	-- Lunar Festival Spaulders - Teal
 				i(232924),	-- Sailor's Belt
 				i(233083),	-- Short Cloudy War Skirt
 				i(233122),	-- Short Cloudy War Skirt and Leg Wraps
@@ -583,7 +604,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(SETS, {
 				------ Cobalt Clockwork Set ------
-				i(233327),	-- Cobalt Clockwork Attire
+				i(233327),	-- Ensemble: Cobalt Clockwork Attire
+				q(86333),	-- Ensemble: Cobalt Clockwork Attire
 				i(233310),	-- Cobalt Clockwork Belt
 				i(233322),	-- Cobalt Clockwork Boots
 				i(233314),	-- Cobalt Clockwork Bracer
@@ -596,7 +618,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233302),	-- Cobalt Clockwork Uniform
 
 				------ Violet Clockwork Set ------
-				i(233330),	-- Violet Clockwork Attire
+				i(233330),	-- Ensemble: Violet Clockwork Attire
+				q(86336),	-- Ensemble: Violet Clockwork Attire
 				i(233313),	-- Violet Clockwork Belt
 				i(233325),	-- Violet Clockwork Boots
 				i(233317),	-- Violet Clockwork Bracer
@@ -606,6 +629,24 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233309),	-- Violet Clockwork Leggings
 				i(233301),	-- Violet Clockwork Pauldrons
 				i(233305),	-- Violet Clockwork Uniform
+
+				------  Ornate Violet Lunar Festival Set ------
+				i(234059),	-- Ensemble: Ornate Violet Lunar Festival Attire
+				q(86421),	-- Ensemble: Ornate Violet Lunar Festival Attire
+				i(234043),	-- Ornate Violet Lunar Belt
+				i(234055),	-- Ornate Violet Lunar Crown
+				i(234047),	-- Ornate Violet Lunar Robe
+				i(234039),	-- Ornate Violet Lunar Slippers
+				i(234051),	-- Ornate Violet Lunar Spaulders
+
+				------  Ornate Teal Lunar Festival Set ------
+				i(234060),	-- Ensemble: Ornate Teal Lunar Festival Attire
+				q(86422),	-- Ensemble: Ornate Teal Lunar Festival Attire
+				i(234044),	-- Ornate Teal Lunar Belt
+				i(234056),	-- Ornate Teal Lunar Crown
+				i(234048),	-- Ornate Teal Lunar Robe
+				i(234040),	-- Ornate Teal Lunar Slippers
+				i(234052),	-- Ornate Teal Lunar Spaulders
 			}),
 			n(WEAPONS, {
 				i(233233),	-- Azure Lunar Firewhacker
@@ -651,6 +692,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				------ Forest Dweller's Butterfly Set ------
 				i(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
+				q(86875),	-- Ensemble: Forest Dweller's Butterfly Attire
 				i(235589),	-- Forest Dweller's Butterfly Belt
 				i(235568),	-- Forest Dweller's Butterfly Boots
 				i(235576),	-- Forest Dweller's Butterfly Cap
@@ -661,6 +703,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Forest Dweller's Garden Set ------
 				i(235592),	-- Ensemble: Forest Dweller's Garden Attire
+				q(86871),	-- Ensemble: Forest Dweller's Garden Attire
 				i(235588),	-- Forest Dweller's Garden Belt
 				i(235567),	-- Forest Dweller's Garden Boots
 				i(235575),	-- Forest Dweller's Garden Cap
@@ -677,6 +720,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Spring Butterfly Set ------
 				i(235227),	-- Ensemble: Ornaments of the Spring Butterfly
+				q(86726),	-- Ensemble: Ornaments of the Spring Butterfly
 				i(235214),	-- Spring Butterfly Belt
 				i(235150),	-- Spring Butterfly Helm
 				i(235212),	-- Spring Butterfly Pauldrons
@@ -776,6 +820,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				------ Lavaborn Citrine Set ------
 				i(238447),	-- Ensemble: Lavaborn Citrine Attire
+				q(88991),	-- Ensemble: Lavaborn Citrine Attire
 				i(238445),	-- Lavaborn Citrine Bracer
 				i(238444),	-- Lavaborn Citrine Chestguard
 				i(238439),	-- Lavaborn Citrine Cinch
@@ -788,6 +833,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Woodland Gilneas Fox Set ------
 				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
+				q(87526),	-- Ensemble: Woodland Attire of the Gilneas Fox
 				i(237220),	-- Woodland Belt of the Gilneas Fox
 				i(237198),	-- Woodland Boots of the Gilneas Fox
 				i(237229),	-- Woodland Cloak of the Gilneas Fox
@@ -799,6 +845,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Woodland Grey Wolf Set ------
 				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
+				q(87524),	-- Ensemble: Woodland Attire of the Grey Wolf
 				i(237218),	-- Woodland Belt of the Grey Wolf
 				i(237195),	-- Woodland Boots of the Grey Wolf
 				i(237227),	-- Woodland Cloak of the Grey Wolf
@@ -810,6 +857,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Stormstout's Set ------
 				i(237379),	-- Ensemble: Stormstout's Collection
+				q(87671),	-- Ensemble: Stormstout's Collection
 				i(237376),	-- Stormstout's Belt
 				i(237378),	-- Stormstout's Boots
 				i(237375),	-- Stormstout's Hat
@@ -847,6 +895,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				------ Banshee's Chilling Set ------
 				i(244223),	-- Ensemble: Banshee's Chilling Collection
+				q(90926),	-- Ensemble: Banshee's Chilling Collection
 				i(244206),	-- Banshee's Chilling Chestplate
 				i(244198),	-- Banshee's Chilling Grip
 				i(244180),	-- Banshee's Chilling Veil
@@ -859,6 +908,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Banshee's Sickly Set ------
 				i(244227),	-- Ensemble: Banshee's Sickly Collection
+				q(90929),	-- Ensemble: Banshee's Sickly Collection
 				i(244209),	-- Banshee's Sickly Chestplate
 				i(244201),	-- Banshee's Sickly Grip
 				i(244183),	-- Banshee's Sickly Veil
@@ -871,31 +921,37 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Brick Sweatsuit Set ------
 				i(242462),	-- Ensemble: Brick Sweatsuit
+				q(90646),	-- Ensemble: Brick Sweatsuit
 				i(242443),	-- Brick Sweatpants
 				i(242414),	-- Brick Sweatshirt
 
 				------ Camo Sweatsuit Set ------
 				i(242461),	-- Ensemble: Camo Sweatsuit
+				q(90645),	-- Ensemble: Camo Sweatsuit
 				i(242442),	-- Camo Sweatpants
 				i(242413),	-- Camo Sweatshirt
 
 				------ Cloudy Sweatsuit Set ------
 				i(242459),	-- Ensemble: Cloudy Sweatsuit
+				q(90643),	-- Ensemble: Cloudy Sweatsuit
 				i(242440),	-- Cloudy Sweatpants
 				i(242411),	-- Cloudy Sweatshirt
 
 				------ Crimson Sweatsuit Set ------
 				i(242478),	-- Ensemble: Crimson Sweatsuit
+				q(90653),	-- Ensemble: Crimson Sweatsuit
 				i(242449),	-- Crimson Sweatpants
 				i(242420),	-- Crimson Sweatshirt
 
 				------ Deep Sweatsuit Set ------
 				i(242460),	-- Ensemble: Deep Sweatsuit
+				q(90644),	-- Ensemble: Deep Sweatsuit
 				i(242441),	-- Deep Sweatpants
 				i(242412),	-- Deep Sweatshirt
 
 				------ Grandmaster's Deep Set ------
 				i(243268),	-- Ensemble: Grandmaster's Deep Attire
+				q(90855),	-- Ensemble: Grandmaster's Deep Attire
 				i(243260),	-- Grandmaster's Deep Belt
 				i(243259),	-- Grandmaster's Deep Cloak
 				i(243265),	-- Grandmaster's Deep Boots
@@ -907,6 +963,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Grandmaster's Smoke Set ------
 				i(243286),	-- Ensemble: Grandmaster's Smoke Attire
+				q(90857),	-- Ensemble: Grandmaster's Deep Attire
 				i(243279),	-- Grandmaster's Smoke Belt
 				i(243278),	-- Grandmaster's Smoke Cloak
 				i(243284),	-- Grandmaster's Smoke Boots
@@ -918,26 +975,25 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Grassy Sweatsuit Set ------
 				i(242458),	-- Ensemble: Grassy Sweatsuit
+				q(90642),	-- Ensemble: Grassy Sweatsuit
 				i(242439),	-- Grassy Sweatpants
 				i(242410),	-- Grassy Sweatshirt
 
-				------ Midnight Sweatsuit Set ------
-				i(242455),	-- Ensemble: Midnight Sweatsuit
-				i(242407),	-- Midnight Sweatpants
-				i(242454),	-- Midnight Sweatshirt
-
 				------ Rosy Sweatsuit Set ------
 				i(242471),	-- Ensemble: Rosy Sweatsuit
+				q(90651),	-- Ensemble: Rosy Sweatsuit
 				i(242447),	-- Rosy Sweatpants
 				i(242418),	-- Rosy Sweatshirt
 
 				------ Sepia Sweatsuit Set ------
 				i(242457),	-- Ensemble: Sepia Sweatsuit
+				q(90641),	-- Ensemble: Sepia Sweatsuit
 				i(242438),	-- Sepia Sweatpants
 				i(242409),	-- Sepia Sweatshirt
 
 				------ Sunny Sweatsuit Set ------
 				i(242492),	-- Ensemble: Sunny Sweatsuit
+				q(90657),	-- Ensemble: Sunny Sweatsuit
 				i(242453),	-- Sunny Sweatpants
 				i(242424),	-- Sunny Sweatshirt
 			}),
@@ -977,8 +1033,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(245951),	-- Wildhammer's Portable Forge
 			}),
 			n(SETS, {
-				------ Felreaver's Hellfire  Set ------
+				------ Dark Iron's Ceremonial Set ------
+				i(248327),	-- Ensemble: Dark Iron's Ceremonial Collection
+				q(91818),	-- Ensemble: Dark Iron's Ceremonial Collection
+
+				------ Felreaver's Hellfire Set ------
 				i(246981),	-- Ensemble: Felreaver's Hellfire Attire
+				q(91637),	-- Ensemble: Felreaver's Hellfire Attire
 				i(246976),	-- Felreaver's Hellfire Belt
 				i(246974),	-- Felreaver's Hellfire Gauntlets
 				i(246979),	-- Felreaver's Hellfire Helm
@@ -987,8 +1048,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(246978),	-- Felreaver's Hellfire Shoulderguards
 				i(246980),	-- Felreaver's Hellfire Treads
 
-				------ Felreaver's Legion  Set ------
-				i(246973),	-- Ensemble: Felreaver's Legion Attire
+				------ Felreaver's Legion Set ------
+				i(246973),	-- Ensemble: Fashion of the Fanatic Felcyclist
+				q(91636),	-- Ensemble: Fashion of the Fanatic Felcyclist
 				i(246968),	-- Felreaver's Legion Belt
 				i(246966),	-- Felreaver's Legion Gauntlets
 				i(246971),	-- Felreaver's Legion Helm
@@ -999,6 +1061,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Stillwater Fisher Set ------
 				i(244231),	-- Ensemble: Stillwater Fisher Attire
+				q(90930),	-- Ensemble: Stillwater Fisher Attire
 				i(244229),	-- Angler's Mantle
 				i(244352),	-- Cloak of the Veiled Paws
 				i(244228),	-- Sash of the Tipsy Sage
@@ -1006,6 +1069,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ The Horseman's Burning Set ------
 				i(247982),	-- Ensemble: The Horseman's Burning Collection
+				q(91773),	-- Ensemble: The Horseman's Burning Collection
 				i(247976),	-- The Horseman's Burning Breastplate
 				i(247977),	-- The Horseman's Burning Cinch
 				i(247981),	-- The Horseman's Burning Cloak
@@ -1018,6 +1082,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ The Horseman's Chilling Set ------
 				i(247906),	-- Ensemble: The Horseman's Chilling Collection
+				q(91761),	-- Ensemble: The Horseman's Chilling Collection
 				i(247899),	-- The Horseman's Chilling Breastplate
 				i(247900),	-- The Horseman's Chilling Cinch
 				i(247905),	-- The Horseman's Chilling Cloak
@@ -1028,8 +1093,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(247898),	-- The Horseman's Chilling Mantle
 				i(247903),	-- The Horseman's Chilling Treads
 
+				------ The Horseman's Ghoulish Set ------
+				i(247973),	-- Ensemble: The Horseman's Ghoulish Collection
+				q(91771),	-- Ensemble: The Horseman's Ghoulish Collection
+
 				------ Void's Binding Set ------
 				i(246898),	-- Ensemble: Void's Binding Swimwear
+				q(91625),	-- Ensemble: Void's Binding Swimwear
 				i(246896),	-- Void's Binding Anklets
 				i(246893),	-- Void's Binding Briefs
 				i(246897),	-- Void's Binding Halter Top
@@ -1039,6 +1109,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Wildhammer's Ceremonial Set ------
 				i(248318),	-- Ensemble: Wildhammer's Ceremonial Collection
+				q(91817),	-- Ensemble: Wildhammer's Ceremonial Collection
 				i(248313),	-- Wildhammer's Ceremonial Belt
 				i(248314),	-- Wildhammer's Ceremonial Boots
 				i(248312),	-- Wildhammer's Ceremonial Chestplate
@@ -1073,6 +1144,216 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(245954),	-- Wildhammer's Ceremonial Mace
 				i(245958),	-- Wildhammer's Crystal Ward
 				i(246800),	-- Wildhammer's Mighty Crossbow
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			n(ARMOR, {
+				i(252750),	-- Aquatic Winter Toque
+				i(251670),	-- Battered Wearable Pot Lid
+				i(252742),	-- Brick Winter Toque
+				i(249718),	-- Bronze Food Fanatic Backpack
+				i(252741),	-- Camo Winter Toque
+				i(252714),	-- Cloudy Winter Toque
+				i(252748),	-- Crimson Winter Toque
+				i(252715),	-- Deep Winter Toque
+				i(252744),	-- Faded Winter Toque
+				i(249719),	-- Fine Food Fanatic Backpack
+				i(235903),	-- Gold Lightforged Chestguard
+				i(249717),	-- Golden Food Fanatic Backpack
+				i(252713),	-- Grassy Winter Toque
+				i(250291),	-- Hot and Fresh Portable Bakery
+				i(252743),	-- Lively Winter Toque
+				i(252710),	-- Midnight Winter Toque
+				i(250292),	-- Piping Hot Portable Bakery
+				i(252747),	-- Plum Winter Toque
+				i(250293),	-- Red Hot Portable Bakery
+				i(252746),	-- Rosy Winter Toque
+				i(252712),	-- Sepia Winter Toque
+				i(252751),	-- Snowy Winter Toque
+				i(251669),	-- Sturdy Wearable Pot Lid
+				i(252752),	-- Sunny Winter Toque
+				i(251985),	-- Trapper's Black Quiver
+				i(251986),	-- Trapper's Blue Quiver
+				i(251987),	-- Trapper's Brown Quiver
+				i(251988),	-- Trapper's Dark Brown Quiver
+				i(251990),	-- Trapper's Light Brown Quiver
+				i(251991),	-- Trapper's Red Quiver
+				i(251992),	-- Trapper's Purple Quiver
+				i(251672),	-- Used Wearable Pot Lid
+				i(252749),	-- Violet Winter Toque
+			}),
+			n(SETS, {
+				------ The Seafarer's Winter Set ------
+				i(249754),	-- Ensemble: The Drustvar Winter Collection
+				q(92097),	-- Ensemble: The Drustvar Winter Collection
+				i(249749),	-- Drustvar Winter Belt
+				i(249751),	-- Drustvar Winter Boots
+				i(249753),	-- Drustvar Winter Cloak
+				i(249752),	-- Drustvar Winter Gloves
+				i(249746),	-- Drustvar Winter Hood
+				i(249750),	-- Drustvar Winter Leggings
+				i(249747),	-- Drustvar Winter Pauldrons
+				i(249863),	-- Drustvar Winter Spaulders
+				i(249748),	-- Drustvar Winter Tunic
+
+				------ The Kirin Tor Winter Set ------
+				i(249763),	-- Ensemble: The Kirin Tor Winter Collection
+				q(92098),	-- Ensemble: The Kirin Tor Winter Collection
+				i(249758),	-- Kirin Tor Winter Belt
+				i(249760),	-- Kirin Tor Winter Boots
+				i(249762),	-- Kirin Tor Winter Cloak
+				i(249761),	-- Kirin Tor Winter Gloves
+				i(249755),	-- Kirin Tor Winter Hood
+				i(249759),	-- Kirin Tor Winter Leggings
+				i(249756),	-- Kirin Tor Winter Pauldrons
+				i(249864),	-- Kirin Tor Winter Spaulders
+				i(249757),	-- Kirin Tor Winter Tunic
+
+				------ The Seafarer's Winter Set ------
+				i(249745),	-- Ensemble: The Seafarer's Winter Collection
+				q(92096),	-- Ensemble: The Seafarer's Winter Collection
+				i(249740),	-- Seafarer's Winter Belt
+				i(249742),	-- Seafarer's Winter Boots
+				i(249744),	-- Seafarer's Winter Cloak
+				i(249743),	-- Seafarer's Winter Gloves
+				i(249737),	-- Seafarer's Winter Hood
+				i(249741),	-- Seafarer's Winter Leggings
+				i(249738),	-- Seafarer's Winter Pauldrons
+				i(249862),	-- Seafarer's Winter Spaulders
+				i(249739),	-- Seafarer's Winter Tunic
+
+				------ Villager's City Set 1 ------
+				i(249946),	-- Ensemble: Villager's City Attire
+				q(92117),	-- Ensemble: Villager's City Attire
+				i(249945),	-- Villager's City Boots
+				i(249943),	-- Villager's City Buckle
+				i(249940),	-- Villager's City Cap
+				i(249941),	-- Villager's City Handwraps
+				i(249944),	-- Villager's City Pants
+				i(249942),	-- Villager's City Tunic
+
+				------ Villager's City Set 2 ------
+				i(250911),	-- Ensemble: Villager's City Collection
+				q(92370),	-- Ensemble: Villager's City Collection
+				i(250908),	-- Villager's City Belt
+				i(250907),	-- Villager's City Blouse
+				i(250905),	-- Villager's City Bonnet
+				i(250906),	-- Villager's City Gloves
+				i(250910),	-- Villager's City Sabatons
+				i(250909),	-- Villager's City Skirt
+
+				------ Villager's Forest Set 1 ------
+				i(250888),	-- Ensemble: Villager's Forest Collection
+				q(92367),	-- Ensemble: Villager's Forest Collection
+				i(250885),	-- Villager's Forest Belt
+				i(250884),	-- Villager's Forest Blouse
+				i(250883),	-- Villager's Forest Bonnet
+				i(250890),	-- Villager's Forest Gloves
+				i(250887),	-- Villager's Forest Sabatons
+				i(250886),	-- Villager's Forest Skirt
+
+				------ Villager's Forest Set 2 ------
+				i(249917),	-- Ensemble: Villager's Forest Attire
+				q(92112),	-- Ensemble: Villager's Forest Attire
+				i(249916),	-- Villager's Forest Boots
+				i(249910),	-- Villager's Forest Buckle
+				i(249906),	-- Villager's Forest Cap
+				i(249908),	-- Villager's Forest Handwraps
+				i(249911),	-- Villager's Forest Pants
+				i(249909),	-- Villager's Forest Tunic
+
+				------ Villager's Seaside Set 1 ------
+				i(249932),	-- Ensemble: Villager's Seaside Attire
+				q(92115),	-- Ensemble: Villager's Seaside Attire
+				i(249931),	-- Villager's Seaside Boots
+				i(249929),	-- Villager's Seaside Buckle
+				i(249926),	-- Villager's Seaside Cap
+				i(249927),	-- Villager's Seaside Handwraps
+				i(249930),	-- Villager's Seaside Pants
+				i(249928),	-- Villager's Seaside Tunic
+
+				------ Villager's Seaside Set 2 ------
+				i(250897),	-- Ensemble: Villager's Seaside Collection
+				q(92368),	-- Ensemble: Villager's Seaside Collection
+				i(250894),	-- Villager's Seaside Belt
+				i(250893),	-- Villager's Seaside Blouse
+				i(250891),	-- Villager's Seaside Bonnet
+				i(250892),	-- Villager's Seaside Gloves
+				i(250896),	-- Villager's Seaside Sabatons
+				i(250895),	-- Villager's Seaside Skirt
+
+				------ Unused duplicated Ensembles ------
+				i(241600),	-- Ensemble: Chains of the Chosen Dead
+				i(241602),	-- Ensemble: Chains of the Chosen Dead
+				i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
+				i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
+				i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
+				i(241605),	-- Ensemble: Garb of the Chosen Dead
+				i(241606),	-- Ensemble: Garb of the Chosen Dead
+				i(259454),	-- Ensemble: Regalia of Shackled Elements
+				i(241609),	-- Ensemble: Regalia of the Chosen Dead
+				i(241610),	-- Ensemble: Regalia of the Chosen Dead
+				i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
+			}),
+			n(WEAPONS, {
+				i(248735),	-- Arcane Dirk of the Ice Queen
+				i(248817),	-- Arcane Wand of the Ice Queen
+				i(248829),	-- Arcane Great Axe of the Frost
+				i(248914),	-- Arcane Warglaives of the Nort
+				i(248728),	-- Bacon-Wrapped Smoked Ribs
+				i(250085),	-- Battered Pot Lid
+				i(248832),	-- Big Bronze Fork
+				i(248839),	-- Big Iron Fork
+				i(248841),	-- Big Silver Fork
+				i(249721),	-- Big Steel Spoon
+				i(249722),	-- Big Blue Spoon
+				i(249723),	-- Big Fancy Spoon
+				i(250780),	-- Bronze Food Fanatic Shield
+				i(251657),	-- Bunch of Pink Carrots
+				i(251658),	-- Bunch of Purple Carrots
+				i(251659),	-- Bunch of Yellow Carrotsts
+				i(251855),	-- Bunch of Orange Chilets
+				i(251856),	-- Bunch of Red Chile
+				i(251857),	-- Bunch of Yellow Chile
+				i(248739),	-- Dull Great Steak Knife
+				i(251797),	-- Ears of Orange Corn
+				i(251798),	-- Ears of Purple Corn
+				i(251799),	-- Ears of White Corn
+				i(248734),	-- Fiery Dirk of the Ice Queen
+				i(248816),	-- Fiery Wand of the Ice Queen
+				i(248828),	-- Fiery Great Axe of the Frostw
+				i(248913),	-- Fiery Warglaives of the North
+				i(250781),	-- Fine Food Fanatic Shield
+				i(248736),	-- Glowing Dirk of the Ice Queen
+				i(248818),	-- Glowing Wand of the Ice Queen
+				i(248830),	-- Glowing Great Axe of the Fros
+				i(248915),	-- Glowing Warglaives of the Nor
+				i(250779),	-- Golden Food Fanatic Shield
+				i(245663),	-- Holy Golden Greatsword
+				i(245664),	-- Holy Hologem Greatsword
+				i(248925),	-- Months Old Rye Bread
+				i(251660),	-- Offhand Bunch of Yellow Carro
+				i(251661),	-- Offhand Bunch of Purple Carro
+				i(251662),	-- Offhand Bunch of Pink Carrots
+				i(251801),	-- Offhand Ears of Orange Corn
+				i(251802),	-- Offhand Ears of Purple Corn
+				i(251803),	-- Offhand Ears of White Cornolf
+				i(251870),	-- Offhand Bunch of Orange Chilewolf
+				i(251872),	-- Offhand Bunch of Red Chiletwolf
+				i(251873),	-- Offhand Bunch of Yellow Chile
+				i(248725),	-- Smoked Rib Surprise
+				i(248727),	-- Smoked Rib Leftovers
+				i(248924),	-- Stale Mulgore Spice Bread
+				i(248729),	-- Steaming Pot of Stewh
+				i(248732),	-- Stolen Pot of Stewth
+				i(250084),	-- Sturdy Pot Lid
+				i(248923),	-- Unfathomably Stale Bread
+				i(248738),	-- Used Great Steak Knife
+				i(250087),	-- Used Pot Lid
+				i(248730),	-- Weathered Pot of Stew
+				i(248737),	-- Well-Used Great Steak Knife
 			}),
 		})),
 	}),

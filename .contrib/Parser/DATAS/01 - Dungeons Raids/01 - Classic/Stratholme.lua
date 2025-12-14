@@ -7,16 +7,16 @@ MAIN_GATE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Main Gate",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		de = "Haupttor",
+		es = "Puerta principal",
+		mx = "Puerta principal",
+		fr = "Grande porte",
+		-- it = "Main Gate",
+		ko = "정문",
+		pt = "Portão Principal",
+		ru = "Главные врата",
+		cn = "正门",
+		tw = "主門",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5916)]],	-- Stratholme - Main Gate
 		-- #endif
@@ -31,16 +31,16 @@ SERVICE_ENTRANCE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",
-		-- TODO: de = "",
-		es = "Entrada de servicio",
-		mx = "Entrada de servicio",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		de = "Dienstboteneingang",
+		es = "Entrada del servicio",
+		mx = "Entrada del servicio",
+		fr = "Entrée de service",
+		-- it = "Service Entrance",
+		ko = "공무용 입구",
+		pt = "Entrada de Serviço",
+		ru = "Черный ход",
+		cn = "后门",
+		tw = "僕從入口",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
 		-- #endif

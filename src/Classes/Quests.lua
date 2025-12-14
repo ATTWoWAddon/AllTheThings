@@ -2083,6 +2083,31 @@ app.AddEventHandler("OnNewPopoutGroup", AddQuestItems)
 
 -- Retail Modifications
 if app.IsRetail then
+	local CreateNestedQuest = app.ExtendClass("Quest", "QuestNested", "questID", {
+		RefreshCollectionOnly = true,
+		IsClassIsolated = true,
+		collectible = function(t)
+			-- don't consider locked quests which have been skipped if not tracking locked quests
+			if t.locked and not app.Settings:Get("Thing:QuestsLocked") then
+				return
+			end
+			if t.saved then return true end
+			-- don't consider incomplete quest collectible if it has a parent which has become saved (perhaps a skipped breadcrumb)
+			local parent = t.parent
+			if parent and parent.questID and parent.saved then
+				return
+			end
+			-- force collectible for normally un-collectible but trackable (repeatable) Quests to make sure it shows in list if the quest needs to be completed to progess
+			-- unless a quest is specifically set to be non-collectible directly
+			if t.trackable and rawget(t, "collectible") then
+				return
+			end
+			return true
+		end,
+		collected = function(t) return t.saved and 1 end,
+		OnSetVisibility = function(t) return OnSetVisibilityForNestedQuest end,
+	})
+
 	local _reportedBadQuestSequence;
 	local BackTraceChecks = {};
 	local function BackTraceForSelf(parents, questID, checkQuestID)
@@ -2142,21 +2167,7 @@ if app.IsRetail then
 			end
 
 			-- Save this questRef (depth doesn't change the ref so only clone it once)
-			questRef = app.CloneClassInstance(questRef, true);
-
-			-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
-			-- unless a quest is specifically set to be non-collectible directly
-			if not questRef.collectible and questRef.trackable and rawget(questRef, "collectible") ~= false then
-				questRef.collectible = true;
-			end
-
-			-- don't consider locked quests which have been skipped if not tracking locked quests
-			if questRef.locked and not app.Settings:Get("Thing:QuestsLocked") then
-				questRef.collectible = false;
-			end
-
-			-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-			questRef.OnSetVisibility = OnSetVisibilityForNestedQuest
+			questRef = CreateNestedQuest(questID, app.CloneClassInstance(questRef, true))
 
 			-- If the quest is provided by an Item, then show that Item directly under the quest so it can easily show tooltip/Source information if desired
 			if questRef.providers then

@@ -6137,11 +6137,6 @@ q(73106,{type="hqt"}),
 q(73375,{type="hqt"}),
 q(73378,{type="hqt"}),
 q(73384,{type="hqt"})}}),
-q(65718,{awp=100005,type="hqt",u=1}),
-q(72087,{awp=100005,type="hqt",u=1}),
-q(72088,{awp=100005,type="hqt",u=1}),
-q(72123,{awp=100005,type="hqt",u=1}),
-q(72124,{awp=100005,type="hqt",u=1}),
 h(-557,{awp=100107,e=7,g={
 q(77775,{e=7,isDaily=1,type="hqt"})}}),
 h(-567,{awp=100205,e=133701,g={

@@ -1469,12 +1469,12 @@ q(42081,{awp=70003,coords={a[362]},lvl=45,qgs=a[509],requireSkill=171,sourceQues
 q(48016,{awp=70300,coords={a[438]},cost={{"i",127842,1},{"i",151568,5},{"i",151565,75}},lvl=45,qgs=a[157],requireSkill=171,g={
 i(164380,{requireSkill=171,spellID=281423}),
 i(164379,{requireSkill=171}),
-r(247694,{b=1,itemID=151706,lvl=10,requireSkill=171})}}),
+r(247694,{b=1,itemID=151706,learnedAt=90,lvl=10,requireSkill=171})}}),
 q(48002,{awp=70300,coords={a[438]},lvl=45,qgs=a[157],requireSkill=171,sourceQuests=a[377],g={
-r(247619,{b=1,itemID=151657,lvl=10,requireSkill=171}),
+r(247619,{b=1,itemID=151657,learnedAt=80,lvl=10,requireSkill=171}),
 i(151845,{requireSkill=171})}}),
 q(48013,{awp=70300,coords={a[438]},lvl=45,qgs=a[157],requireSkill=171,sourceQuests=a[377],g={
-r(247688,{b=1,itemID=151703,lvl=10,requireSkill=171})}})}}),
+r(247688,{b=1,itemID=151703,learnedAt=80,lvl=10,requireSkill=171})}})}}),
 x(8,{requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18770,{providers={{"i",156631}},requireSkill=171})}}),
@@ -1768,7 +1768,7 @@ r(184220,{learnedAt=1,requireSkill=164,u=5}),
 r(184217,{learnedAt=1,requireSkill=164,u=5}),
 r(184219,{learnedAt=1,requireSkill=164,u=5}),
 r(184218,{learnedAt=1,requireSkill=164,u=5}),
-r(182967,{b=1,itemID=123933,lvl=10,requireSkill=164})}}),
+r(182967,{b=1,itemID=123933,learnedAt=40,lvl=10,requireSkill=164})}}),
 q(38519,{awp=70003,coords={a[428]},lvl=10,qgs={92245},requireSkill=164,sourceQuests={39699},g={
 r(182967,{learnedAt=40,requireSkill=164})}}),
 q(38518,{awp=70003,coords={a[428]},isBreadcrumb=1,lvl=10,nextQuests=a[274],qgs=a[511],requireSkill=164,sourceQuests={38519}}),
@@ -1784,7 +1784,7 @@ q(38523,{awp=70003,coords={a[362]},lvl=10,qgs=a[509],requireSkill=164,sourceQues
 r(182999,{learnedAt=20,requireSkill=164})}}),
 q(39702,{awp=70003,coords={a[362]},isBreadcrumb=1,lvl=10,nextQuests=a[295],qgs=a[509],requireSkill=164,sourceQuests={38523}}),
 q(39680,{awp=70003,coords={a[308]},lvl=10,qgs=a[532],requireSkill=164,sourceQuests=a[297],g={
-r(182963,{b=1,itemID=123929,lvl=10,requireSkill=164})}}),
+r(182963,{b=1,itemID=123929,learnedAt=40,lvl=10,requireSkill=164})}}),
 q(39726,{awp=70003,coords={a[308]},lvl=10,qgs=a[532],requireSkill=164,sourceQuests=a[297]}),
 q(39729,{awp=70003,coords={a[308]},isBreadcrumb=1,lvl=10,nextQuests=a[279],qgs=a[532],requireSkill=164,sourceQuests=a[295]}),
 q(38564,{awp=70003,coords={a[362]},lvl=10,qgs=a[509],requireSkill=164,sourceQuests={39729}}),
@@ -1831,21 +1831,21 @@ r(184442,{learnedAt=60,requireSkill=164})}}),
 q(38533,{awp=70003,coords={a[425]},lvl=45,qgs=a[512],requireSkill=164,sourceQuests={38833},g={
 r(182944,{learnedAt=60,requireSkill=164})}}),
 q(38534,{awp=70003,coords={a[425]},cost={{"i",123917,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182974,{b=1,itemID=123940,lvl=10,requireSkill=164})}}),
+r(182974,{b=1,itemID=123940,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38538,{awp=70003,coords={a[425]},cost={{"i",123911,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182980,{b=1,itemID=123946,lvl=10,requireSkill=164})}}),
+r(182980,{b=1,itemID=123946,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38542,{awp=70003,coords={a[425]},cost={{"i",123910,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182981,{b=1,itemID=123947,lvl=10,requireSkill=164})}}),
+r(182981,{b=1,itemID=123947,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38539,{awp=70003,coords={a[425]},cost={{"i",123912,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182979,{b=1,itemID=123945,lvl=10,requireSkill=164})}}),
+r(182979,{b=1,itemID=123945,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38541,{awp=70003,coords={a[425]},cost={{"i",123914,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182977,{b=1,itemID=123943,lvl=10,requireSkill=164})}}),
+r(182977,{b=1,itemID=123943,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38540,{awp=70003,coords={a[425]},cost={{"i",123913,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182978,{b=1,itemID=123944,lvl=10,requireSkill=164})}}),
+r(182978,{b=1,itemID=123944,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38537,{awp=70003,coords={a[425]},cost={{"i",123915,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182976,{b=1,itemID=123942,lvl=10,requireSkill=164})}}),
+r(182976,{b=1,itemID=123942,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(38536,{awp=70003,coords={a[425]},cost={{"i",123916,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[512],requireSkill=164,sourceQuests=a[278],g={
-r(182975,{b=1,itemID=123941,lvl=10,requireSkill=164})}}),
+r(182975,{b=1,itemID=123941,learnedAt=80,lvl=10,requireSkill=164})}}),
 q(46696,{awp=70200,coords={a[340]},lvl=45,qgs=a[150],repeatable=1,requireSkill=164,sourceQuests=a[376],g={
 i(147197,{requireSkill=164})}}),
 q(46700,{awp=70200,coords={a[340]},lvl=45,qgs=a[150],repeatable=1,requireSkill=164,sourceQuests=a[375],g={
@@ -2465,13 +2465,13 @@ q(40990,{coords={{69.8,38.8,627}},lvl=10,qgs=a[137],requireSkill=185,sourceQuest
 q(40991,{lvl=10,qgs=a[137],requireSkill=185,sourceQuests={40990},g={
 ach(10591,{requireSkill=185})}}),
 q(44581,{lvl=10,qgs=a[137],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
+r(201512,{b=1,itemID=133826,learnedAt=20,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}}),
 q(40989,{description="If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",lvl=10,qgs=a[142],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
+r(201512,{b=1,itemID=133826,learnedAt=20,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}}),
 q(40988,{description="If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",lvl=10,qgs=a[142],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
+r(201512,{b=1,itemID=133826,learnedAt=20,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}})}})}}),
 x(8,{awp=80001,requireSkill=185,g={
 h(-12,{requireSkill=185,g={
@@ -2965,13 +2965,13 @@ q(3646,{coords={a[452]},cost=20000,qgs={8738},repeatable=1,requireSkill=202,rwp=
 i(10791,{b=1,requireSkill=202,u=2})}})}}),
 h(-47,{requireSkill=202,rwp=40003,u=2,g={
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",requireSkill=202,u=2,g={
-r(12607,{itemID=10603,requireSkill=202,u=2}),
-r(15633,{b=1,itemID=11827,requireSkill=202,u=2}),
-r(12616,{itemID=10606,requireSkill=202,u=2})}}),
+r(12607,{itemID=10603,learnedAt=240,requireSkill=202,u=2}),
+r(15633,{b=1,itemID=11827,learnedAt=205,requireSkill=202,u=2}),
+r(12616,{itemID=10606,learnedAt=245,requireSkill=202,u=2})}}),
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",requireSkill=202,u=2,g={
-r(3968,{itemID=4416,requireSkill=202,u=2}),
-r(3972,{itemID=4417,requireSkill=202,u=2}),
-r(15628,{b=1,itemID=11828,requireSkill=202,u=2})}})}})}}),
+r(3968,{itemID=4416,learnedAt=215,requireSkill=202,u=2}),
+r(3972,{itemID=4417,learnedAt=200,requireSkill=202,u=2}),
+r(15628,{b=1,itemID=11828,learnedAt=205,requireSkill=202,u=2})}})}})}}),
 x(4,{awp=100107,requireSkill=202,g={
 ach(18908,{requireSkill=202,g={
 en(209063,{b=1,questID=78031,requireSkill=202,spellID=422556,tmogSetID=3124,g={
@@ -3093,14 +3093,14 @@ r(198981,{learnedAt=90,requireSkill=202})}}),
 q(40878,{coords={a[268]},cost={{"i",132515,2}},lvl=10,maps=a[486],qgs=a[517],requireSkill=202,sourceQuests=a[336],g={
 r(198985,{learnedAt=20,requireSkill=202})}}),
 q(40882,{coords={a[268]},lvl=45,maps=a[498],qgs=a[523],requireSkill=202,sourceQuests={40877},g={
-r(198970,{b=1,itemID=133673,lvl=10,requireSkill=202,sourceQuests=a[338]}),
-r(198971,{b=1,itemID=133674,lvl=10,requireSkill=202,sourceQuests=a[338]}),
-r(198969,{b=1,itemID=133672,lvl=10,requireSkill=202,sourceQuests=a[338]}),
-r(198968,{b=1,itemID=133671,lvl=10,requireSkill=202,sourceQuests=a[338]})}}),
+r(198970,{b=1,itemID=133673,learnedAt=60,lvl=10,requireSkill=202,sourceQuests=a[338]}),
+r(198971,{b=1,itemID=133674,learnedAt=60,lvl=10,requireSkill=202,sourceQuests=a[338]}),
+r(198969,{b=1,itemID=133672,learnedAt=60,lvl=10,requireSkill=202,sourceQuests=a[338]}),
+r(198968,{b=1,itemID=133671,learnedAt=60,lvl=10,requireSkill=202,sourceQuests=a[338]})}}),
 q(40880,{coords={a[268]},lvl=45,qgs=a[517],requireSkill=202,sourceQuests={40877,40878},g={
 r(198980,{learnedAt=80,requireSkill=202})}}),
 q(40881,{coords={{69.5,68.4,71}},lvl=45,providers={{"o",246438}},requireSkill=202,sourceQuests={40880},g={
-r(198989,{b=1,itemID=141849,lvl=10,requireSkill=202,sourceQuests=a[337]})}}),
+r(198989,{b=1,itemID=141849,learnedAt=20,lvl=10,requireSkill=202,sourceQuests=a[337]})}}),
 q(40879,{coords={a[268]},lvl=45,qgs=a[517],requireSkill=202,sourceQuests=a[337],g={
 r(198990,{learnedAt=20,requireSkill=202})}}),
 q(46119,{awp=70105,coords={a[268]},lvl=45,qgs=a[523],requireSkill=202,sourceQuests=a[338],g={
@@ -3781,7 +3781,7 @@ q(40020,{lvl=10,providers={{"i",129136}},requireSkill=182,sourceQuests={40019}})
 q(40021,{lvl=10,qgs=a[540],requireSkill=182,sourceQuests={40020},g={
 r(193296,{requireSkill=182})}}),
 q(40022,{lvl=10,providers={{"i",129141}},requireSkill=182,sourceQuests={40021}}),
-q(40023,{description="Farm around 1000-4000 Dreamleaves to make this quest spawn.",lvl=10,qgs=a[540],requireSkill=182,sourceQuests={40022},g={
+q(40023,{coords={{54,73.9,641}},description="Farm around 1000-4000 Dreamleaves to make this quest spawn.",lvl=10,qgs=a[540],requireSkill=182,sourceQuests={40022},g={
 r(193297,{requireSkill=182}),
 crit(61502,{achID=18837,awp=100107,id=3,providers={{"s",193297}},requireSkill=182})}})}}),
 ah(193309,{awp=70003,maps=a[457],providers={{"o",244786},{"o",247999},{"o",248000},{"o",248001},{"o",248002},{"o",248003},{"o",248004},{"o",248005},{"o",248006},{"o",248007},{"o",248008},{"o",248009},{"o",248010},{"o",248011},{"o",248012},{"o",252404}},requireSkill=182,type="s",g={
@@ -4146,7 +4146,7 @@ r(209664,{learnedAt=1,requireSkill=773})}}),
 q(40064,{awp=70003,description="There is a chance of getting this quest when milling Foxflower.",lvl=10,providers={{"i",136915}},requireSkill=773,g={
 r(209660,{learnedAt=1,requireSkill=773})}}),
 q(43929,{awp=70100,description="Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",lvl=45,qgs=a[508],requireSkill=773,g={
-r(192907,{b=1,itemID=137783,lvl=10,requireSkill=773})}})}}),
+r(192907,{b=1,itemID=137783,learnedAt=100,lvl=10,requireSkill=773})}})}}),
 x(8,{requireSkill=773,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18772,{providers={{"i",153670}},requireSkill=773})}}),
@@ -4179,7 +4179,7 @@ q(49881,{awp=80105,coords={a[234]},lvl=10,qgs=a[187],requireSkill=773,sourceQues
 q(49882,{awp=80105,coords={{32.6,86,862}},lvl=10,qgs={131397},requireSkill=773,sourceQuests={49881},g={
 r(256301,{learnedAt=150,requireSkill=773})}})}}),
 h(-55,{awp=80001,requireSkill=773,g={
-r(309443,{awp=80205,description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,requireSkill=773})}})}}),
+r(309443,{awp=80205,description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,learnedAt=175,requireSkill=773})}})}}),
 x(10,{requireSkill=773,g={
 h(-45,{awp=100002,requireSkill=773,g={
 q(70361,{coords={a[441]},description="This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",lc={1,"spellID",366251,"questID",72244},lvl=10,qgs=a[217],requireSkill=773}),
@@ -4523,7 +4523,7 @@ i(201016,{b=1,requireSkill=755,spellID=384373})}}),
 o(380822,{coords={{33.9,63.7,2022}},description="Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",questID=70273,requireSkill=755,g={
 i(201017,{b=1,requireSkill=755,spellID=384373})}}),
 o(384318,{coords={{58.5,36.7,2025}},questID=72356,requireSkill=755,g={
-r(374525,{b=1,itemID=194654,requireSkill=755})}}),
+r(374525,{b=1,itemID=194654,learnedAt=70,requireSkill=755})}}),
 o(380577,{coords={{25.2,34.8,2023}},questID=70282,requireSkill=755,g={
 i(198670,{b=1,requireSkill=755,spellID=384373})}}),
 o(380545,{coords={{56.9,43.6,2025}},questID=70261,requireSkill=755,g={
@@ -4810,7 +4810,7 @@ i(130130,{b=1,requireSkill=165}),
 i(130879,{requireSkill=165})}}),
 q(40215,{coords={a[248]},lvl=45,qgs=a[519],requireSkill=165,sourceQuests={40214},g={
 r(194780,{learnedAt=100,requireSkill=165}),
-r(194780,{b=1,itemID=141850,lvl=10,requireSkill=165})}}),
+r(194780,{b=1,itemID=141850,learnedAt=100,lvl=10,requireSkill=165})}}),
 q(46684,{awp=70200,coords={a[340]},lvl=45,qgs=a[150],repeatable=1,requireSkill=165,sourceQuests=a[376]}),
 q(46688,{awp=70200,coords={a[340]},lvl=45,qgs=a[150],repeatable=1,requireSkill=165,sourceQuests=a[373],g={
 i(146693,{requireSkill=165}),
@@ -4849,8 +4849,8 @@ i(147209,{requireSkill=165,spellID=240386}),
 i(146713,{b=1,requireSkill=165})}}),
 q(48078,{awp=70300,coords={{39.6,73.6,831}},cost={{"i",151567,12},{"i",151566,12}},lvl=45,qgs={125349},requireSkill=165,sourceQuests=a[386],g={
 i(151880,{requireSkill=165,spellID=248914}),
-r(247800,{b=1,itemID=151740,lvl=10,requireSkill=165}),
-r(247803,{b=1,itemID=151743,lvl=10,requireSkill=165}),
+r(247800,{b=1,itemID=151740,learnedAt=90,lvl=10,requireSkill=165}),
+r(247803,{b=1,itemID=151743,learnedAt=90,lvl=10,requireSkill=165}),
 i(151879,{requireSkill=165})}})}})}}),
 x(8,{requireSkill=165,g={
 h(-12,{awp=100107,requireSkill=165,g={
@@ -5154,10 +5154,10 @@ q(38799,{coords={a[238]},lvl=10,maps=a[487],qgs=a[513],requireSkill=186,sourceQu
 i(126947,{b=1,requireSkill=186}),
 i(126940,{requireSkill=186})}}),
 q(38888,{coords={a[367]},description="You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",lvl=10,qgs=a[516],requireSkill=186,sourceQuests={38777,38784,38785}}),
-q(38786,{lvl=10,maps=a[427],qgs=a[526],requireSkill=186,sourceQuests={38888},g={
+q(38786,{coords={a[427]},lvl=10,qgs=a[526],requireSkill=186,sourceQuests={38888},g={
 i(128769,{requireSkill=186}),
 i(128767,{requireSkill=186,spellID=191910})}}),
-q(38787,{lvl=10,maps=a[427],qgs=a[526],requireSkill=186,sourceQuests={38786}})}})}}),
+q(38787,{coords={a[427]},lvl=10,qgs=a[526],requireSkill=186,sourceQuests={38786}})}})}}),
 x(8,{requireSkill=186,g={
 h(-12,{awp=100107,requireSkill=186,g={
 ach(18840,{requireSkill=186,g={
@@ -5814,7 +5814,7 @@ i(135575,{requireSkill=197})}}),
 q(38975,{awp=70003,coords={{40.2,69.6,680}},cost={{"i",6787,1},{"i",54486,1},{"i",10053,1},{"i",41515,1},{"i",6238,1}},lvl=45,qgs={93976},requireSkill=197,sourceQuests=a[284],g={
 r(185933,{learnedAt=60,requireSkill=197})}}),
 q(44741,{awp=70100,coords={a[310]},lvl=45,qgs=a[529],requireSkill=197,g={
-r(229041,{b=1,itemID=142076,lvl=10,requireSkill=197})}}),
+r(229041,{b=1,itemID=142076,learnedAt=100,lvl=10,requireSkill=197})}}),
 q(46678,{awp=70200,coords={a[340]},lvl=45,qgs=a[150],repeatable=1,requireSkill=197,sourceQuests=a[376],g={
 i(147281,{requireSkill=197})}}),
 q(46682,{awp=70003,coords={a[339]},lvl=45,qgs=a[150],repeatable=1,requireSkill=197,sourceQuests=a[372],g={
@@ -5865,17 +5865,17 @@ r(292946,{learnedAt=150,requireSkill=197})}}),
 q(53962,{awp=80105,coords={a[480]},lvl=50,qgs=a[188],r=1,requireSkill=197,sourceQuests=a[420],g={
 r(292946,{learnedAt=150,requireSkill=197})}})}}),
 ah(164733,{awp=80105,coords={{45,39,862},{54,61,862},{59,75,862},{71,35,862},{73,67,862},{26,78,863},{29,56,863},{38,58,863},{38,89,863},{43,29,863},{53,56,863},{55,21,863},{37,87,864},{41,64,864},{49,84,864},{50,64,864},{54,41,864},{40,24,895},{85,77,895},{23,43,896},{33,23,896},{36,72,896},{46,38,896},{63,35,896},{26.8,36.6,1355},{29.4,45.2,1355},{36.6,27.8,1355},{37.4,68,1355},{37.8,19.6,1355},{42,47,1355},{43.8,86.4,1355},{43.8,86.6,1355},{44.4,16.4,1355},{47.4,75.8,1355},{50.4,31.2,1355},{59.2,15,1355},{62.4,57.2,1355},{64.6,46.8,1355},{69.8,24.4,1355},{77.4,25.4,1355},{77.6,25.4,1355},{79,51.8,1355}},description="This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",providers={{"i",164733},{"n",151903}},requireSkill=197,type="i",g={
-r(8786,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167889,requireSkill=197}),
-r(22866,{awp=80001,b=1,cost={{"i",158378,150}},itemID=167881,requireSkill=197}),
-r(18412,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167887,requireSkill=197}),
-r(18408,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167886,requireSkill=197}),
-r(22870,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167882,requireSkill=197}),
-r(22867,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167883,requireSkill=197}),
-r(3862,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167890,requireSkill=197}),
-r(22868,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167884,requireSkill=197}),
-r(22869,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167885,requireSkill=197}),
-r(18436,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167888,requireSkill=197}),
-r(6692,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167880,requireSkill=197})}})}}),
+r(8786,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167889,learnedAt=195,requireSkill=197}),
+r(22866,{awp=80001,b=1,cost={{"i",158378,150}},itemID=167881,learnedAt=300,requireSkill=197}),
+r(18412,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167887,learnedAt=285,requireSkill=197}),
+r(18408,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167886,learnedAt=275,requireSkill=197}),
+r(22870,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167882,learnedAt=300,requireSkill=197}),
+r(22867,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167883,learnedAt=300,requireSkill=197}),
+r(3862,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167890,learnedAt=220,requireSkill=197}),
+r(22868,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167884,learnedAt=300,requireSkill=197}),
+r(22869,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167885,learnedAt=300,requireSkill=197}),
+r(18436,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167888,learnedAt=300,requireSkill=197}),
+r(6692,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167880,learnedAt=170,requireSkill=197})}})}}),
 x(10,{requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18902,{providers={{"s",376530}},requireSkill=197,g={

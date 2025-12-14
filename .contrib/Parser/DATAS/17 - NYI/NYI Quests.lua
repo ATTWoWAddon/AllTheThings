@@ -5890,10 +5890,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59986),	-- Wide Worlds of Catalysts
 			q(60888),	-- Ceremony of Awakening
 			q(60599),	-- Soul Shape
-			q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
-			q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
-			q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
-			q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 			q(60380),	-- A Source of Sorrowvine (Kyrian)
 			q(60379),	-- A Source of Sorrowvine (Necrolords)
 			q(60373),	-- A Source of Sorrowvine (Night Fae)
@@ -6946,11 +6942,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(63464),	--
 			q(63477),	--
 			q(63577),	--
-			q(63596),	--
-			q(63600),	--
-			q(63629),	--
-			q(63632),	--
-			q(63636),	--
 			q(63640),	--
 			q(63715),	--
 			q(63716),	--
@@ -8190,10 +8181,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75065),	-- Campaign Testing - Dummy Quest
 			q(73696),	-- Dragonscale Expedition Flag - Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 			q(73702),	-- Dragonscale Expedition Flag - Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
-			q(74363),	-- Ensemble: Cloudburst Regalia
-			q(74365),	-- Ensemble: Cyclonic Battlegear
-			q(74364),	-- Ensemble: Dust Devil Armor
-			q(74366),	-- Ensemble: Firestorm Armor
 			q(74361),	-- Deprecated Quest
 			q(74362),	-- Deprecated Quest
 			q(74774, {["_drop"] = {"g"}}),	-- More Keys

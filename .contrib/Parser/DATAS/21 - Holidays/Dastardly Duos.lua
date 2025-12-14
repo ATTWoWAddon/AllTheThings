@@ -28,7 +28,7 @@ DASTARDLY_DUOS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "战斗迷们，大家好。世界上最邪恶的反派们联手归来，誓要复仇！前往暴风城、奥格瑞玛或多诺加尔，与艾泽拉斯过去的邪恶首领们一决高下。",
 		-- TODO: tw = "",
 	},
 });

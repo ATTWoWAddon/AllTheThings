@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Симлинк",
 		-- TODO: ko = "",
 		cn = "符号链接",
-		-- TODO: tw = "",
+		tw = "符號連結",
 	},
 })

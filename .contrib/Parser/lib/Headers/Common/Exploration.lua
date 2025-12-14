@@ -14,7 +14,7 @@ EXPLORATION = createHeader({
 		-- TODO: pt = "",
 		ru = "Исследование",
 		cn = "探索",
-		-- TODO: tw = "",
+		-- tw = "探索",
 	},
 });
 explorationHeader = function(g)

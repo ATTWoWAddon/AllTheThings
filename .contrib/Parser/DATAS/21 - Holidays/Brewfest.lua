@@ -27,7 +27,7 @@ BREWFEST_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "美酒节",
 		-- TODO: tw = "",
 		-- #endif
 	},

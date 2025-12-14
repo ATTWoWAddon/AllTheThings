@@ -181,6 +181,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["description"] = "Farm around 1000-4000 Dreamleaves to make this quest spawn.",
 					["sourceQuests"] = { 40022 },	-- Choked by Nightmare
 					["provider"] = { "n", 98135 },	-- Wildcrafter Osme <Herbalism Trainer>
+					["coord"] = { 54.0, 73.9, VALSHARAH },
 					["groups"] = {
 						r(193297),	-- Dreamleaf [Rank 3]
 					},

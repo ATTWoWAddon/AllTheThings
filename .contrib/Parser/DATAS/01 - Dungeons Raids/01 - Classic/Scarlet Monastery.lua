@@ -15,7 +15,7 @@ SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 		-- TODO: pt = "",
 		ru = "Кладбище",
 		cn = "墓地",
-		-- TODO: tw = "",
+		tw = "墓地",
 	},
 });
 SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
@@ -32,7 +32,7 @@ SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
 		-- TODO: pt = "",
 		ru = "Библиотека",
 		cn = "图书馆",
-		-- TODO: tw = "",
+		tw = "圖書館",
 	},
 });
 SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
@@ -49,7 +49,7 @@ SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 		-- TODO: pt = "",
 		ru = "Оружейная",
 		cn = "武器库",
-		-- TODO: tw = "",
+		tw = "武器庫",
 	},
 });
 SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
@@ -66,7 +66,7 @@ SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 		-- TODO: pt = "",
 		ru = "Собор",
 		cn = "修道院",
-		-- TODO: tw = "",
+		tw = "修道院",
 	},
 });
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {

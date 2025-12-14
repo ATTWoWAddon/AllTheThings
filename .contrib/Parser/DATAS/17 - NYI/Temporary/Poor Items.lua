@@ -3557,9 +3557,6 @@ root(ROOTS.NeverImplemented, {
 					i(179618),	-- Oribos Quest Mail Cloak
 					i(179619),	-- Oribos Quest Plate Cloak
 				}),
-				filter(COSMETIC, {
-					i(182306),	-- Monster Mantle
-				}),
 				filter(MISC, {
 					i(182320),	-- Monster - Warfronts Mythic Plague Doctor Mask
 				}),

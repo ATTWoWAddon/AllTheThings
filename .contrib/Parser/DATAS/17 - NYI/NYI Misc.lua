@@ -1282,7 +1282,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(203461),	-- Chronologically Reallocated Rations
 			i(202112),	-- Crystal Shattering Armaments
 			i(202310),	-- Defective Doomsday Device
-			i(200917),	-- Ensemble: Tidecaller's Chainmail
 			i(201990),	-- Primal Mote
 			i(204277),	-- Ruby Whelp Treat
 			i(204236),	-- Sack of Stolen Dragon Glyphs
@@ -1312,15 +1311,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(202688),	-- [DNT] Valdrakken Accord Item 04
 			i(202689),	-- [DNT] Valdrakken Accord Item 05
 			i(203693),	-- Ensemble: Cloudburst Regalia
+			q(74363),	-- Ensemble: Cloudburst Regalia
 			i(203694),	-- Ensemble: Cyclonic Battlegear
+			q(74365),	-- Ensemble: Cyclonic Battlegear
 			i(203696),	-- Ensemble: Dust Devil Armor
+			q(74364),	-- Ensemble: Dust Devil Armor
 			i(203695),	-- Ensemble: Firestorm Armor
-			i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-			i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-			i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-			i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-			i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-			i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+			q(74366),	-- Ensemble: Firestorm Armor
 			i(203465),	-- Draconic Artifact
 			i(203210),	-- Dragonscale Supply Box
 			i(203466),	-- Dragonscale Surplus Crate
@@ -1950,8 +1947,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(246818),	-- A Steamy Romance Novel: Waves of Desire
 			i(249235),	-- Bottomless Bag of Entropy
 			i(238921),	-- Containment Canister
-			i(248327),	-- Ensemble: Dark Iron's Ceremonial Collection
-			i(247973),	-- Ensemble: The Horseman's Ghoulish Collection
 			i(243580),	-- Etheric Pylon
 			i(250975),	-- Hellcaller Chest
 			i(247927),	-- Humming Mana-Stone

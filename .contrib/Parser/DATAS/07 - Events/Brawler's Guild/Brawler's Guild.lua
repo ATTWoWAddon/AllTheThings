@@ -919,9 +919,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					},
 					["DisablePartySync"] = true,
 					["coord"] = { 53.0, 61.2, DEEPRUN_TRAM },
-					["groups"] = {
-						i(254690),	-- Blood-Soaked Invitation
-					},
+					["groups"] = { i(254690) },	-- Blood-Soaked Invitation
 				}),
 				q(94363, {	-- The Gloves Are Off
 					["sourceQuest"] = 92851,	-- Questionable Qualifications
@@ -948,9 +946,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						"achID", 61414,	-- The First Rule of Brawler's Guild [H]
 					},
 					["DisablePartySync"] = true,
-					["groups"] = {
-						i(254690),	-- Blood-Soaked Invitation
-					},
+					["groups"] = { i(254690) },	-- Blood-Soaked Invitation
 				}),
 				q(94372, {	-- The Gloves Are Off
 					["sourceQuest"] = 92740,	-- Questionable Qualifications
@@ -1207,25 +1203,21 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							["cost"] = 80000000,	-- 8000g
 						}),
 					}),
-					-- #if BEFORE WOD
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(167812, {	-- Brawlers Guild Tabard
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
@@ -1370,25 +1362,21 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							["cost"] = 80000000,	-- 8000g
 						}),
 					}),
-					-- #if BEFORE WOD
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(167811, {	-- Brawlers Guild Tabard
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),

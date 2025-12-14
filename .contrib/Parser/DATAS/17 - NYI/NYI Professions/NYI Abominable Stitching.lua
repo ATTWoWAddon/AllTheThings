@@ -9,9 +9,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(183413),	-- Ensemble: Stitched Alacrity of Maldraxxus
+					q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
 					i(183411),	-- Ensemble: Stitched Authority of Maldraxxus
+					q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
 					i(183414),	-- Ensemble: Stitched Guile of Maldraxxus
+					q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
 					i(183415),	-- Ensemble: Stitched Rationale of Maldraxxus
+					q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 				})),
 			}),
 		}),

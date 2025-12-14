@@ -11,7 +11,7 @@ QUALITY_ELITE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Элитный",
-		-- TODO: cn = "",
+		cn = "精英",
 		-- TODO: tw = "",
 	},
 });
