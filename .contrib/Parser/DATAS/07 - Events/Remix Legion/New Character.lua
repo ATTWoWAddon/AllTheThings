@@ -106,6 +106,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			-- HQTs triggered in M+
 			q(94420, { ["isDaily"] = true }),	-- Triggered after First M+ of each day
 			q(94421),	-- Triggered after First M+ 10 completed
+			q(94422),	-- Triggered after First M+ 30 completed
 		},
 	})),
 }))
