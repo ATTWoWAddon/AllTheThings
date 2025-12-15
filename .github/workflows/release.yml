@@ -89,7 +89,7 @@ jobs:
            ref: ${{ github.ref }}
 
       - name: Download artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: db-output  # Name of the artifact to download
           path: db
