@@ -71,7 +71,7 @@ jobs:
           "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
             name: db-output  # Artifact name
             path: db/  # File path to upload
