@@ -7,8 +7,8 @@ WARCRAFT_RUMBLE = createHeader({
 	text = {
 		en = "Warcraft Rumble",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Warcraft Rumble",
+		mx = "Warcraft Rumble",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -107,26 +107,32 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 	}),
 	n(MAILBOX, {
 		i(202183, {	-- Small Rumble Purse
-			i(204731),	-- Warcraft Rumble Welcome Letter [N] (QI!)
-			i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QI!)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QI!)
-				["races"] = HORDE_ONLY,
-			}),
+			["timeline"] = { REMOVED_10_2_0 },
+			["groups"] = {
+				i(204731),	-- Warcraft Rumble Welcome Letter [N] (QI!)
+				i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QI!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QI!)
+					["races"] = HORDE_ONLY,
+				}),
+			},
 		}),
 	}),
 	n(QUESTS, {
 		q(73183, {	-- Wanna Play a Game? [N]
 			["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N] (QI!)
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75625, {	-- Wanna Play a Game? [A]
 			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A] (QI!)
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75626, {	-- Wanna Play a Game? [H]
 			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H] (QI!)
 			["races"] = HORDE_ONLY,
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75221, {	-- Find a Rumble Coin
 			["qg"] = 201230,	-- Mizzen
