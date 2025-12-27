@@ -637,13 +637,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				q(272, {	-- Trial of the Sea Lion [A]
-					["sourceQuest"] = 29,	-- Trial of the Lake [A]
+				{	-- Trial of the Sea Lion
+					["allianceQuestData"] = q(272, {	-- Trial of the Sea Lion [A]
+						["sourceQuest"] = 29,	-- Trial of the Lake [A]
+					}),
+					["hordeQuestData"] = q(30, {	-- Trial of the Sea Lion [H]
+						["sourceQuest"] = 28,	-- Trial of the Lake [H]
+					}),
 					["qg"] = 11799,	-- Tajarri
 					["coord"] = { 36.4, 40.2, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 16,
 					["groups"] = {
@@ -658,43 +661,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{
 							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
 							["coord"] = { 17.9, 33.0, WESTFALL },
-						},
-						{
-							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
-							["coord"] = { 48.9, 11.3, DARKSHORE },
-						},
-						-- #endif
-					},
-				}),
-				q(30, {	-- Trial of the Sea Lion [H]
-					["sourceQuest"] = 28,	-- Trial of the Lake [H]
-					["qg"] = 11799,	-- Tajarri
-					["coord"] = { 36.4, 40.2, MOONGLADE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
-					["races"] = HORDE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 16,
-					["groups"] = {
-						objective(1, {	-- 0/1 Pendant of the Sea Lion
-							["provider"] = { "i", 15885 },	-- Pendant of the Sea Lion
-							["cost"] = {
-								{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
-								{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility
-							},
-						}),
-						-- #if BEFORE 4.0.3
-						{
-							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
 							["coord"] = { 29.6, 29.5, SILVERPINE_FOREST },
 						},
 						{
 							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
+							["coord"] = { 48.9, 11.3, DARKSHORE },
 							["coord"] = { 56.7, 8.3, THE_BARRENS },
 						},
 						-- #endif
 					},
-				}),
+				},
 				q(6845, {	-- Uncovering Past Secrets
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber

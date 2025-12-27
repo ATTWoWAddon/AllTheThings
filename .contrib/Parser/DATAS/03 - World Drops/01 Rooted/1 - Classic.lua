@@ -5407,6 +5407,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
 			["coord"] = { 44.0, 48.0, DARKSHORE },
+			["maps"] = {
+				DARKSHORE,
+				LOCH_MODAN,
+				MULGORE,
+				REDRIDGE_MOUNTAINS,
+				TELDRASSIL,
+				THE_BARRENS,
+				WESTFALL,
+			},
 			-- #endif
 			-- #if AFTER TBC
 			["maps"] = {
@@ -5416,6 +5425,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["crs"] = {
 				-- #if BEFORE 4.0.3
+				154,	-- Greater Fleshripper
+				199, 	-- Young Fleshripper
+				428,	-- Dire Condor
+				1109,	-- Fleshripper
+				1194,	-- Mountain Buzzard
+				1995,	-- Strigid Owl
+				1996,	-- Strigid Screecher
+				1997,	-- Strigid Hunter
+				2969,	-- Wiry Swoop
+				2970,	-- Swoop
+				2971,	-- Taloned Swoop
 				10158,	-- Moonkin
 				10157,	-- Moonkin Oracle
 				10160,	-- Raging Moonkin
@@ -5439,7 +5459,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #elseif AFTER 4.0.3
 			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
 			-- #else
-			["description"] = "Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
 			-- #endif
 		}),
 		i(5465, {	-- Small Spider Leg
