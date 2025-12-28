@@ -191,14 +191,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					-- The Azure Span --
 				q(71191, {	-- Net Worth
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
-					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["coord"] = { 58.6, 34.4, THE_AZURE_SPAN },
 					["groups"] = {
 						i(200646),	-- Gruff Fisher's Net (QI!)
 					},
 				}),
 				q(72069, {	-- Subglacial Refill
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
-					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["coord"] = { 58.6, 34.4, THE_AZURE_SPAN },
 				}),
 					-- Thaldraszus
 				q(71193, {	-- Underwater Menace
