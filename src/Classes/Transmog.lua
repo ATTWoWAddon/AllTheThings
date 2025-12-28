@@ -1041,6 +1041,7 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 	local linkInfo, sourceFilter, otherFilter
 	local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
 	local onlyObtainable = app.Settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances")
+	local FilterInGame = app.Modules.Filter.Filters.InGame
 	if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 		-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 		for i,otherSourceID in ipairs(allVisualSources) do
@@ -1054,7 +1055,7 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-				if not (onlyObtainable and (otherATTSource.u == 1 or otherATTSource.u == 2)) then
+				if not onlyObtainable or FilterInGame(otherATTSource) then
 					sourceFilter = sourceGroup.f
 					otherFilter = otherATTSource.f
 					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
@@ -1081,7 +1082,7 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-					if not (onlyObtainable and (otherATTSource.u == 1 or otherATTSource.u == 2)) then
+				if not onlyObtainable or FilterInGame(otherATTSource) then
 					-- existing logic that builds linkInfo
 					linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
 					if not working and linkInfo.working then
