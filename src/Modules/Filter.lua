@@ -101,7 +101,8 @@ local function FilterBind(group)
 end
 api.Filters.Bind = FilterBind;
 local function FilterInGame(item)
-	return not item.u or item.u > 2;
+	local u = item.u
+	return not u or u > 2
 end
 api.Filters.InGame = FilterInGame;
 -- manually track InGame in CurrentCharacterFilters
