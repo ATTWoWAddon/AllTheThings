@@ -119,6 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 							["provider"] = { "n", 104381 },	-- Grif Wildheart
 							["coord"] = { 71.2, 50.2, LEGION_DALARAN },
+							["maps"] = { 635, 745 },	-- Shield's Rest / Ulduar
 						}),
 						q(42158, {	-- The Creator's Workshop
 							["sourceQuests"] = { 41574 },	-- Stolen Thunder
