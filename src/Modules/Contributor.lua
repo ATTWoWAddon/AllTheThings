@@ -1681,6 +1681,7 @@ MobileDB.GameObject = {
 	[281905] = true,	-- Treasure Chest (Zuldazar)
 	[282481] = true,	-- Ransacked Supplies (wq:50962 [A], wq:50813 [H])
 	[282626] = true,	-- Fish Pile
+	[284468] = true,	-- 7th Legion Supply Crate (q:50966)
 	[282740] = true,	-- Mysterious Trashpile
 	[287006] = true,	-- Faithless Weapon Rack (q:49665)
 	[287066] = true,	-- Morgrum's Device (q:49282)

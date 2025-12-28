@@ -56,7 +56,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50966, {	-- Cleanup Crew
 				["groups"] = {
-					i(160703),	-- Bundle of Supplies (QI!)
+					o(284468, {	-- 7th Legion Supply Crate
+						i(160703),	-- Bundle of Supplies (QI!)
+					}),
 				},
 			}),
 			q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
