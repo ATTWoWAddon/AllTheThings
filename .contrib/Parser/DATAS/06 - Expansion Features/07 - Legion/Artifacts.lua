@@ -1713,8 +1713,8 @@ root(ROOTS.ExpansionFeatures,
 						HiddenAppearance(1296099, {
 							artifact(328),	-- Find Hidden Artifact Skin
 							artifact(326),	-- Complete 30 Legion Dungeons Hidden
-							artifact(318),	-- Complete 200 WQ Hidden
-							artifact(327),	-- Kill 1,000 Players Hidden
+							artifact(327),	-- Complete 200 WQ Hidden
+							artifact(318),	-- Kill 1,000 Players Hidden
 						}),
 					}),
 					i(128943, {	-- Skull of the Man'ari
