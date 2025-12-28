@@ -74,6 +74,7 @@ ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
 });
 MountDB = CreateDatabaseContainer("MountDB");
 ObjectDB = CreateDatabaseContainer("ObjectDB");
+QuestDB = CreateDatabaseContainer("QuestDB");
 RecipeDB = CreateDatabaseContainer("RecipeDB");
 SpeciesDB = CreateDatabaseContainer("SpeciesDB");
 SpellDB = CreateDatabaseContainer("SpellDB");

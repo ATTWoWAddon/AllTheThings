@@ -1955,6 +1955,7 @@ end");
                     case "_objectiveItems":
                     case "_spellQuests":
                     case "qis":
+                    case "poiIDs":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

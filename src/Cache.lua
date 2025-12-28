@@ -488,6 +488,11 @@ local fieldConverters = {
 			cacheCreatureID(group, value[i]);
 		end
 	end,
+	["poiIDs"] = function(group, value)
+		for i=1,#value do
+			CacheField(group, "poiID", value[i])
+		end
+	end,
 	["maps"] = function(group, value)
 		for i=1,#value do
 			cacheMapID(group, value[i]);

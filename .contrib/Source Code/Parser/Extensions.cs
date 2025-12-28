@@ -618,5 +618,25 @@ namespace ATT
         }
 
         public static T SafeIndex<T>(this IList<T> vals, int index) => (vals != null && vals.Count > index) ? vals[index] : default;
+
+        public static bool IsEquivalent(this object val1, object val2)
+        {
+            if (Equals(val1, val2))
+            {
+                return true;
+            }
+
+            if (val1 is ICollection<object> col1 && val2 is ICollection<object> col2)
+            {
+                return col1.Matches(col2);
+            }
+
+            if (val1 is IEnumerable<object> arr1 && val2 is IEnumerable<object> arr2)
+            {
+                return arr1.Matches(arr2);
+            }
+
+            return false;
+        }
     }
 }
