@@ -32,9 +32,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						["_npcs"] = { 124555 },	-- Sotanathor
 					}),
 				}),
-				achpart(42693, 42695),	-- Breaking the Legion I
-				achpart(42694, 42695),	-- Breaking the Legion II
-				ach(42695),	-- Breaking the Legion III
+				achpart(42693, 42695, {	-- Breaking the Legion I
+						["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
+				achpart(42694, 42695, {	-- Breaking the Legion II
+						["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
+				ach(42695, {	-- Breaking the Legion III
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
+				}),
 				ach(42696, {	-- Greater Invasion Points I
 					["maps"] = { 927, 928, 929, 930, 931, 932 },
 				}),
