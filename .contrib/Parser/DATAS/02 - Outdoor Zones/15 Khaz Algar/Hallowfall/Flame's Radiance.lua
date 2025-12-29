@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["minReputation"] = { FACTION_FLAMES_RADIANCE, 5 },
 					}),
 					title(628, {	-- Sacred Templar <Name>
-						["minReputation"] = { FACTION_FLAMES_RADIANCE, 5 },
+						["minReputation"] = { FACTION_FLAMES_RADIANCE, 10 },
 					}),
 				}),
 				n(QUESTS, sharedData({
