@@ -21663,7 +21663,6 @@ i(122720),	-- Vrykul Helmet \\ ul Helmet
 i(122721),	-- Vrykul Shield \\ ul Shield
 i(122742),	-- Bladebone Hook \\ ebone Hook
 i(122743),	-- Gaiju Pearl \\ u Pearl
-i(122746),	-- Head of Thane Wildsky \\ of Thane Wildsky
 i(123857),	-- Runic Pouch \\ c Pouch
 i(123860),	-- Odyn's Horn \\ 's Horn
 i(123861),	-- Piece of your Soul \\ e of your Soul
@@ -21995,7 +21994,6 @@ i(128675),	-- Spirit Bomb \\ it Bomb
 i(128676),	-- Uncalibrated Malloric Burettes \\ librated Malloric Burettes
 i(128679),	-- Lined Demonsbreath Crucible \\ d Demonsbreath Crucible
 i(128681),	-- Fragile Demonsbreath Crucible \\ ile Demonsbreath Crucible
-i(128692),	-- Royal Summons \\ l Summons
 i(128707),	-- Azsuna Scouting Report \\ na Scouting Report
 i(128708),	-- Molted Feather \\ ed Feather
 i(128712),	-- Darkmoon Card of the Legion \\ moon Card of the Legion

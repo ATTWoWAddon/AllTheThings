@@ -1235,6 +1235,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 96683 },	-- Nathanos Blightcaller
 					["coord"] = { 29.4, 47.1, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(128692) },	-- Royal Summons (QI!)
 				}),
 				q(45188, {	-- The Wisdom of the Council
 					["sourceQuests"] = { 45187 },	-- Secrets in the Underbelly

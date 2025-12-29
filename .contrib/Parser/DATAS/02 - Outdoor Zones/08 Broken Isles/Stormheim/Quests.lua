@@ -54,6 +54,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 44.1, 18.1, STORMHEIM },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(122746),	-- Head of Thane Wildsky (QI!)
 						i(121499),	-- Footwraps of the Blightcaller
 						i(121501),	-- Duskbat Exterminator's Treads
 						i(121500),	-- Blighthound Master's Greaves
