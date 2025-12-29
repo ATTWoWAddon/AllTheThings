@@ -385,17 +385,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["groups"] = {
 										i(128908, {	-- Warswords of the Valarjar [Main Hand]
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(296),	-- Warswords of the Valarjar
-											},
+											["groups"] = { artifact(296) },	-- Warswords of the Valarjar
 										}),
 									},
 								}),
 								i(134553, {	-- Warswords of the Valarjar [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(296),	-- Warswords of the Valarjar
-									},
+									["groups"] = { artifact(296) },	-- Warswords of the Valarjar
 								}),
 							},
 						}),
@@ -413,18 +409,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = {
 								i(128288, {	-- Scaleshard
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(66),	-- Scaleshard
-									},
+									["groups"] = { artifact(66) },	-- Scaleshard
 								}),
 								o(248831, {	-- Scale of the Earth Warder
 									["coord"] = { 49.9, 82.3, 635 },	-- Shield's Rest
 									["groups"] = {
 										i(128289, {	-- Scale of the Earth-Warder
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(66),	-- Scale of the Earth-Warder
-											},
+											["groups"] = { artifact(66) },	-- Scale of the Earth-Warder
 										}),
 									},
 								}),
@@ -435,9 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40579 },	-- Weapons of Legend
 						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
 						["coord"] = { 56.2, 27.0, SKYHOLD },
-						["groups"] = {
-							i(139684),	-- Battlelord's Greathelm
-						},
+						["groups"] = { i(139684) },	-- Battlelord's Greathelm
 					}),
 					q(39530, {	-- The Forgening
 						["sourceQuests"] = {
@@ -481,6 +471,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40585,	-- Thus Begins the War
 						["provider"] = { "n", 112663 },	-- Danica the Reclaimer
 						["maps"] = { LEGION_DALARAN },
+						["isBreadcrumb"] = true,
 					}),
 					q(42598, {	-- Champions of Skyhold
 						["sourceQuest"] = 42597,	-- Odyn's Summons
@@ -491,17 +482,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107984 },	-- Ragnvald Drakeborn
 						["coord"] = { 61.3, 33.8, SKYHOLD },
-						["groups"] = {
-							follower(708),	-- Ragnvald Drakeborn
-						},
+						["groups"] = { follower(708) },	-- Ragnvald Drakeborn
 					}),
 					q(42606, {	-- Champion: Finna Bjornsdottir
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107985 },	-- Finna Bjornsdottir
 						["coord"] = { 61.5, 34.5, SKYHOLD },
-						["groups"] = {
-							follower(709),	-- Finna Bjornsdottir
-						},
+						["groups"] = { follower(709) },	-- Finna Bjornsdottir
 					}),
 					q(42607, {	-- Captain Stahlstrom
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
@@ -523,7 +510,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.3, SKYHOLD },
 					}),
-					-- Chap 1
+					-- Chapter 1
 					q(43750, {	-- The Call of Battle
 						["sourceQuest"] = 42611,	-- Einar the Runecaster
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
@@ -538,14 +525,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42193,	-- The Gjallarhorn
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["coord"] = { 63.8, 47.2, STORMHEIM },
+						["groups"] = {
+							i(137182),	-- Crown of the Forgotten King (QI!)
+							i(137184),	-- Drakerider's Medallion (QI!)
+							i(137183),	-- Stormcloak Signet (QI!)
+						},
 					}),
 					q(42650, {	-- Break the Bonds
 						["sourceQuest"] = 42194,	-- Stolen Honor
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["coord"] = { 63.8, 47.2, STORMHEIM },
-						["groups"] = {
-							i(138204),	-- Svergan's Belongings (QI!)
-						},
+						["groups"] = { i(138204) },	-- Svergan's Belongings (PQI!)
 					}),
 					q(42651, {	-- Svergan's Promise
 						["sourceQuest"] = 42650,	-- Break the Bonds
@@ -561,11 +551,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
 						["coord"] = { 52.0, 82.6, SKYHOLD },
-						["groups"] = {
-							follower(710),	-- Svergan Stormcloak
-						},
+						["groups"] = { follower(710) },	-- Svergan Stormcloak
 					}),
-					-- Chap 2
+					-- Chapter 2
 					q(42110, {	-- To the Summit!
 						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["provider"] = { "n", 107987 },	-- Hymdall
@@ -581,7 +569,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
 						["groups"] = {
-							i(139501),	-- Frostcrag Drums (QI!)
+							i(139501),	-- Frostcrag Drums (PQI!)
 							i(138205),	-- The Gjallarhorn (QI!)
 							follower(711),	-- Hymdall
 							artifact(793),	-- Strom'kar, the Warbreaker
@@ -591,7 +579,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							-- artifact(146),	-- Scaleshard
 						},
 					}),
-					-- Chap 3
+					-- Chapter 3
 					q(43585, {	-- Preparing For War
 						["sourceQuest"] = 42204,	-- Jorhuttam
 						["provider"] = { "n", 96469 },	-- Odyn
@@ -612,9 +600,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
 						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["groups"] = {
-							follower(712),	-- King Ymiron
-						},
+						["groups"] = { follower(712) },	-- King Ymiron
 					}),
 					q(43090, {	-- Ulduar's Oath
 						["sourceQuests"] = {
@@ -625,25 +611,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 744, 746 },	-- Ulduar (Scenario Map)
-						["groups"] = {
-							i(139688),	-- Battlelord's Bracers
-						},
+						["groups"] = { i(139688) },	-- Battlelord's Bracers
 					}),
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
 						["coord"] = { 57.1, 75.0, SKYHOLD },
-						["groups"] = {
-							follower(714),	-- Dvalen Ironrune
-						},
+						["groups"] = { follower(714) },	-- Dvalen Ironrune
 					}),
 					q(42618, {	-- Champion: Thorim
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112765 },	-- Thorim
 						["coord"] = { 59.5, 75.2, SKYHOLD },
-						["groups"] = {
-							follower(713),	-- Thorim
-						},
+						["groups"] = { follower(713) },	-- Thorim
 					}),
 					-- Chap 4
 					q(44667, {	-- Will of the Valarjar
@@ -686,9 +666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
 						["provider"] = { "n", 113583 },	-- Hodir
 						["coord"] = { 59.7, 78.4, SKYHOLD },
-						["groups"] = {
-							follower(715),	-- Hodir
-						},
+						["groups"] = { follower(715) },	-- Hodir
 					}),
 					q(43425, {	-- A Hero's Weapon
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
@@ -759,9 +737,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
 						["timeline"] = { ADDED_7_2_0 },
-						["groups"] = {
-							i(144071),	-- Helya's Horn (QI!)
-						},
+						["groups"] = { i(144071) },	-- Helya's Horn (PQI!)
 					}),
 					q(45128, {	-- A Glorious Reunion
 						["sourceQuests"] = {
@@ -844,18 +820,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							follower(989),	-- Lord Darius Crowley / Eitrigg
-						},
+						["groups"] = { follower(989) },	-- Lord Darius Crowley / Eitrigg
 					})),
 					q(45873, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Eitrigg
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 117479 },	-- Eitrigg
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							follower(989),	-- Lord Darius Crowley / Eitrigg
-						},
+						["groups"] = { follower(989) },	-- Lord Darius Crowley / Eitrigg
 					})),
 					q(46208, {	-- A Godly Invitation
 						["sourceQuests"] = {
@@ -871,9 +843,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 829 },	-- Halls of Valor (Scenario Map)
-						["groups"] = {
-							mount(229388),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
-						},
+						["groups"] = { mount(229388) },	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 					})),
 					-- The End
 					q(43888, {	-- Hitting the Books
@@ -908,13 +878,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(THE_KEEPERS_EYE, { ["questID"] = 46226, }),
 							n(FIRST_OF_THE_VALKYR, { ["questID"] = 46227, }),
 							n(THE_SEALING_OF_THE_HALLS_OF_VALOR, { ["questID"] = 46228, }),
-						}
+						},
 					})),
 					i(144437, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of the Valarjar
-						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
-						["crs"] = {
-							115732,	-- Jorvild the Trusted (highest drop chance)
-						},
+						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+						["cr"] = 115732,	-- Jorvild the Trusted (highest drop chance)
 						["groups"] = {
 							n(HIS_NAME_IS_DRAGONBLOOD, { ["questID"] = 46229, }),
 							n(THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER, { ["questID"] = 46230, }),
@@ -922,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(THE_PROPHECY_OF_RYTHAS_THE_ORACLE, { ["questID"] = 46232, }),
 							n(THE_LESSONS_OF_THE_BLACKFIST, { ["questID"] = 46233, }),
 							n(VOLUNDS_FOLLY, { ["questID"] = 46234, }),
-						}
+						},
 					})),
 				}),
 				n(SPECIAL, {

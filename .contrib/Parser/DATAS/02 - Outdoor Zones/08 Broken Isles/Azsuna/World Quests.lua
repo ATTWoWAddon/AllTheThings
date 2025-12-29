@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
 				q(42119, {	-- A Cleansing Cocktail
+					i(136859),	-- Fat Bear Liver (QI!)
 					o(249704, {	-- Cliffwing Hippogryph Egg
 						["coords"] = {
 							{ 40.4, 32.9, AZSUNA },
