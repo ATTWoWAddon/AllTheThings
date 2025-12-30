@@ -23,7 +23,7 @@ local pairs, select, math_floor,tinsert,tremove
 	= pairs, select, math.floor,tinsert,tremove
 local L, ColorizeRGB, contains, CloneDictionary
 	= app.L, app.Modules.Color.ColorizeRGB, app.contains, app.CloneDictionary
-local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
+local GetRelativeField = app.GetRelativeField
 local GetDetailedItemLevelInfo = GetDetailedItemLevelInfo;
 local ArtifactDB = setmetatable(app.ArtifactDB or {}, { __index = function(t,key)
 	app.PrintDebug("ArtifactID not in DB!",key)
@@ -505,7 +505,7 @@ app.AddEventRegistration("ARTIFACT_UPDATE", function(...)
 				CurrentArtifactRelicItemLevels[itemID] = myArtifactData;
 			end
 			for relicSlotIndex=1,count,1 do
-				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
+				local _, _, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
 				myArtifactData[relicSlotIndex] = {
 					relicType = relicType,
 					iLvl = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,

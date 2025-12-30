@@ -1,11 +1,11 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
 local ipairs, pairs, time, tinsert, tremove, tsort =
 	  ipairs, pairs, time, tinsert, tremove, table.sort;
-local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo = 
+local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo =
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
 -- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
 
@@ -145,7 +145,7 @@ local function ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk)
 		app.print("Syncing Data Chunk [" .. uid .. "] " .. chunkIndex .. " of " .. chunkCount .. "...");
 		app:GetWindow("Account Management"):Rebuild();
 	end
-	
+
 	-- Check if we're finished
 	local count = 0;
 	for key,ignored in pairs(chunks) do
@@ -162,7 +162,7 @@ local function ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk)
 			app:GetWindow("Account Management"):Rebuild();
 		end
 		pending[uid] = nil;
-		
+
 		-- Check to see if there are any pending receives remaining
 		local any = false;
 		for uid,chunks in pairs(pending) do
@@ -269,11 +269,11 @@ end
 local function BroadcastMessage(detail, msg)
 	-- Update the last played timestamp. This ensures the sync process does NOT destroy unsaved progress on this character.
 	CurrentCharacter.lastPlayed = time();
-	
+
 	-- Cache some things related to BattleNet.
 	UpdateBattleTags();
 	UpdateOnlineAccounts();
-	
+
 	-- Check for online accounts and send them the check message.
 	local sent = {};
 	for key,character in pairs(OnlineAccounts) do
@@ -284,7 +284,7 @@ local function BroadcastMessage(detail, msg)
 			sent[guid] = true;
 		end
 	end
-	
+
 	-- Check to see if we have any linked accounts
 	local any = false;
 	for playerName,allowed in pairs(LinkedCharacters) do
@@ -302,7 +302,7 @@ local function BroadcastMessage(detail, msg)
 			SilentlyLinkedCharacters[guid] = true;
 			characterByInfo[guid] = character;
 		end
-		
+
 		-- Now send to any explicitly linked accounts.
 		for identifier,allowed in pairs(LinkedCharacters) do
 			if allowed then
@@ -337,14 +337,14 @@ local function ProcessAddonMessageMethod(self, method, sender, text)
 	-- Check for chunks, which are gigantic sets of data.
 	if text:sub(1, 6) == "chunk`" then
 		local content = SplitString("`", text);
-		local uid, chunkIndex, chunkCount, chunk = 
+		local uid, chunkIndex, chunkCount, chunk =
 			tonumber(content[2]), tonumber(content[3]), tonumber(content[4]), content[5];
-		
+
 		-- If we have finished receiving chunks for this UID, then return a text!
 		text = ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk);
 		if not text then return; end
 	end
-	
+
 	-- Process the addon message and send back a response. (or several)
 	local responses = {};
 	ProcessAddonMessageText(self, sender, text, responses);
@@ -542,7 +542,7 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 			if timeStamp and lastUpdated >= timeStamp then
 				return;
 			end
-			
+
 			local keys = {};
 			for index,v in pairs(value) do
 				if v and index then tinsert(keys, tonumber(index)); end
@@ -598,7 +598,7 @@ local deserializers = {
 				savedInstanceID = id;
 			end
 			currentValue[savedInstanceID] = instance;
-			
+
 			-- Now iterate over the different difficulties
 			local dataCount = #instanceData;
 			for j=2,dataCount,1 do
@@ -607,11 +607,11 @@ local deserializers = {
 				local difficultyID = difficultyData[1];
 				if difficultyID ~= "shared" then difficultyID = tonumber(difficultyID); end
 				instance[difficultyID] = difficulty;
-				
+
 				-- Assign the simple data.
 				difficulty.id = tonumber(difficultyData[2]);
 				difficulty.reset = tonumber(difficultyData[3]);
-				
+
 				-- Iterate over the encounters (name/number pairs)
 				local encounters = {};
 				difficulty.encounters = encounters;
@@ -681,7 +681,7 @@ local serializers = {
 			str = str .. ";" .. tostring(savedInstanceID):gsub(":", "%%3A"):gsub(",", "%%2C");
 			any = true;
 			for difficultyID,difficulty in pairs(difficulties) do
-				str = str .. 
+				str = str ..
 					"@" .. difficultyID ..
 					":" .. (difficulty.id or 0) ..
 					":" .. (difficulty.reset or 0);
@@ -689,14 +689,14 @@ local serializers = {
 				if encounters then
 					for i,encounter in ipairs(encounters) do
 						-- Escape commas and colons from encounter names.
-						str = str .. 
-							":" .. encounter.name:gsub(":", "%%3A"):gsub(",", "%%2C") .. 
+						str = str ..
+							":" .. encounter.name:gsub(":", "%%3A"):gsub(",", "%%2C") ..
 							":" .. (encounter.isKilled and 1 or 0);
 					end
 				end
 			end
 		end
-		
+
 		-- Encounter names might have commas or colons in them, use URL escaping to prevent it.
 		if any then return str; end
 	end,
@@ -720,7 +720,7 @@ local serializers = {
 		end
 		if any then return str; end
 	end,
-	
+
 	-- The main data package containing the simple stuff.
 	Summary = function(character, value)
 		if value ~= nil then return; end	-- We don't want this to try to encode an invalid set of data.
@@ -730,7 +730,7 @@ local serializers = {
 			.. ";" .. (character.classID or "1") .. ";" .. (character.class or "CLASS")
 			.. ";" .. (character.raceID or "1") .. ";" .. (character.lastPlayed or "0") .. ";" .. (character.Deaths or "0");
 	end,
-	
+
 	-- These are now included inside of "Summary" to compress the data package more.
 	battleTag = ignoreField,
 	text = ignoreField,
@@ -842,16 +842,16 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 		-- White list any future communications with this sender for the rest of the session.
 		getmetatable(LinkedCharacters).__index[sender] = true;
 	end
-	
+
 	-- Clear out any pending chunks for the sender. (so it doesn't get malformed)
 	pendingReceiveChunksForUser[sender] = nil;
 	pendingSendChunksForUser[sender] = nil;
-	
+
 	-- If this wasn't sent as a response to a check request, send our own check request!
 	if not isResponding then
 		tinsert(responses, { detail = "Checking", msg = "check," .. CurrentCharacter.battleTag .. ",1" });
 	end
-	
+
 	-- Generate the sync string
 	local response, chars = "chars," .. CurrentCharacter.guid .. ":" .. CurrentCharacter.lastPlayed, { [CurrentCharacter.guid] = true };
 	for guid,character in pairs(CharacterData) do
@@ -885,25 +885,24 @@ MESSAGE_HANDLERS.link = function(self, sender, content, responses)
 		-- White list any future communications with this sender for the rest of the session.
 		getmetatable(LinkedCharacters).__index[sender] = true;
 	end
-	
+
 	-- Generate the linked string, which gets the character ready on the other end and connects the bnet account
 	tinsert(responses, { detail = CurrentCharacter.text, msg = "linked," .. CurrentCharacter.guid .. "," .. CurrentCharacter.text .. "," .. CurrentCharacter.lastPlayed });
 	return true;
 end
 MESSAGE_HANDLERS.linked = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
-	
+
 	-- Parse the linked string.
 	local guid = content[2];
 	local text = content[3];
-	local lastPlayed = tonumber(content[4]);
-	
+
 	-- Check for a Character
 	local character = CharacterData[guid];
 	if not character then
 		character = { text = text, guid = guid, lastPlayed = 0 };
 		CharacterData[guid] = character;
-		
+
 		-- Update Battle.net stuff.
 		UpdateBattleTags();
 		UpdateOnlineAccounts();
@@ -919,20 +918,20 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 	if not guid then return false; end
 	tremove(content, 1);
 	tremove(content, 1);
-	
+
 	-- Parse the content
 	local fieldCount = #content;
 	if fieldCount < 1 then
 		return false;
 	end
-	
+
 	-- Now cache the character and update!
 	local character = CharacterData[guid];
 	if not character then
 		character = {};
 		character.guid = guid;
 	end
-	
+
 	-- Parse each of the fields.
 	for i=1,fieldCount,1 do
 		local fieldDataString = content[i];
@@ -942,16 +941,16 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local data = (deserializers[fieldName] or defaultDeserializer)(fieldName, character[fieldName], fieldData, character);
 		if data then character[fieldName] = data; end
 	end
-	
+
 	-- Notify the player.
 	CharacterData[guid] = character;
-	
+
 	-- Cache some things related to BattleNet.
 	UpdateBattleTags();
 	UpdateOnlineAccounts();
 	local accountCharacter = sender and OnlineAccounts[sender];
 	app.print("Updated " .. (character.text or "??") .. " from " .. (accountCharacter and accountCharacter.text or sender) .. "!");
-	
+
 	-- Update the Sync Window!
 	RecalculateAccountWideData();
 	self:Update(true);
@@ -966,20 +965,20 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	end
 	if not guid then return false; end
 	--print("request", guid, lastUpdated);
-	
+
 	-- Cache the character
 	local character = CharacterData[guid];
 	if not character then return false; end
-	
+
 	-- Ensure the TimeStamps field exists.
 	local timeStamps = character.TimeStamps;
 	if not timeStamps then
 		timeStamps = {};
 		character.TimeStamps = timeStamps;
 	end
-	
+
 	-- Iterate through the fields for the character.
-	local skip, rawData = true, "rawchar," .. guid;
+	local rawData = "rawchar," .. guid;
 	local str = serializers.Summary(character);
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
@@ -1151,7 +1150,7 @@ end
 local function OnClickForLinkedAccount(row, button)
 	local identifier = row.ref.datalink;
 	if not identifier then return true; end
-	
+
 	if button == "RightButton" then
 		app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
 		function()
@@ -1160,7 +1159,7 @@ local function OnClickForLinkedAccount(row, button)
 		end);
 	else
 		--print("SynchronizeWithLinkedCharacter", identifier);
-		
+
 		-- Cache characters by their names.
 		local characterByInfo = {};
 		for guid,character in pairs(CharacterData) do
@@ -1168,10 +1167,10 @@ local function OnClickForLinkedAccount(row, button)
 			if name then characterByInfo[name] = character; end
 			characterByInfo[guid] = character;
 		end
-		
+
 		-- Update the last played timestamp. This ensures the sync process does NOT destroy unsaved progress on this character.
 		CurrentCharacter.lastPlayed = time();
-		
+
 		-- Now send to any explicitly linked accounts.
 		local character = characterByInfo[identifier];
 		if character then
@@ -1185,7 +1184,7 @@ end
 local function OnClickForSyncQueue(row, button)
 	local identifier = row.ref.text;
 	if not identifier then return true; end
-	
+
 	if button == "RightButton" then
 		app:ShowPopupDialog("SYNC QUEUE: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
 		function()
@@ -1209,7 +1208,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				progress = GetProgressColorText(primeData.progress, primeData.total),
 			});
 		end
-		
+
 		local total = 0;
 		local timestamps = character.TimeStamps;
 		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "Spells", "Titles", "Toys", "Transmog", "Quests" }) do
@@ -1282,7 +1281,7 @@ end
 local function OnTooltipForSyncQueue(t, tooltipInfo)
 	local identifier = t.text;
 	if not identifier then return; end
-	
+
 	-- Show the Receive Queue
 	local receiving = pendingReceiveChunksForUser[identifier];
 	if receiving then
@@ -1303,7 +1302,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			});
 		end
 	end
-	
+
 	-- Show the Send Queue
 	local sending = pendingSendChunksForUser[identifier];
 	if sending then
@@ -1324,7 +1323,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			});
 		end
 	end
-	
+
 	tinsert(tooltipInfo, {
 		left = "Right Click to Delete this Sync Target",
 		r = 1, g = 0.8, b = 0.8
@@ -1333,7 +1332,7 @@ end
 local function OnUpdateForSyncQueue(t)
 	local identifier = t.text;
 	if not identifier then return; end
-	
+
 	local progress, total = 0, 0;
 	local receiving = pendingReceiveChunksForUser[identifier];
 	if receiving then
@@ -1344,7 +1343,7 @@ local function OnUpdateForSyncQueue(t)
 			end
 		end
 	end
-	
+
 	local sending = pendingSendChunksForUser[identifier];
 	if sending then
 		for uid,data in pairs(sending) do
@@ -1385,14 +1384,14 @@ app:CreateWindow("Account Management", {
 		AccountWideData = ATTAccountWideData;
 		CharacterData = ATTCharacterData;
 		CurrentCharacter = app.CurrentCharacter;
-		
+
 		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
 		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
 		for guid,character in pairs(CharacterData) do
 			character.bnetAccountID = nil;
 			character.gameAccountID = nil;
 		end
-		
+
 		-- Setup the saved variable for Linked Characters
 		local linked = settings.LinkedCharacters;
 		if not linked then
@@ -1402,8 +1401,8 @@ app:CreateWindow("Account Management", {
 		end
 		settings.LinkedCharacters = linked;
 		setmetatable(linked, { __index = SilentlyLinkedCharacters });
-		
-		-- Cache the current character's BattleTag. 
+
+		-- Cache the current character's BattleTag.
 		EnableBattleNet = settings.EnableBattleNet;
 		if BNGetInfo then
 			local battleTag = select(2, BNGetInfo());
@@ -1412,7 +1411,7 @@ app:CreateWindow("Account Management", {
 				CurrentCharacter.battleTag = battleTag;
 			end
 		end
-		
+
 		-- Register for Addon Messaging
 		C_ChatInfo.RegisterAddonMessagePrefix(AddonMessagePrefix);
 		pcall(self.RegisterEvent, self, "BN_CHAT_MSG_ADDON");
@@ -1424,7 +1423,7 @@ app:CreateWindow("Account Management", {
 			UpdateBattleTags();
 			UpdateOnlineAccounts();
 		end
-		
+
 		local options = {
 			{	-- Add Linked Character
 				text = "Add Linked Character",
@@ -1531,7 +1530,7 @@ app:CreateWindow("Account Management", {
 							tinsert(g, character);
 						end
 					end
-					
+
 					if #g < 1 then
 						tinsert(g, {
 							text = "No characters found.",
@@ -1564,7 +1563,7 @@ app:CreateWindow("Account Management", {
 							parent = data,
 						}));
 					end
-					
+
 					if #g < 1 then
 						tinsert(g, {
 							text = "No linked accounts found.",
@@ -1603,7 +1602,7 @@ app:CreateWindow("Account Management", {
 							parent = data,
 						});
 					end
-					
+
 					data.visible = #g > 1;
 					return false;
 				end,
@@ -1611,9 +1610,9 @@ app:CreateWindow("Account Management", {
 		};
 		self.data = {
 			text = "Account Management",
-			icon = app.asset("WindowIcon_AccountManagement"), 
+			icon = app.asset("WindowIcon_AccountManagement"),
 			description = "This list shows you all of the functionality related to managing your account data.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			indent = 0,
 			back = 1,

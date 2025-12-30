@@ -1,7 +1,6 @@
 -- App locals
-local appName, app = ...;
-local contains, CloneReference =
-	app.contains, app.CloneReference;
+local _, app = ...;
+local CloneReference = app.CloneReference;
 
 -- Global locals
 local ipairs, tinsert, math_max, pairs, unpack, wipe
@@ -58,7 +57,6 @@ local searchMethods = {
 				local results = {};
 				app:BuildFlatSearchFilteredResponse(o.g, everythingFilter, results);
 				for i,o in ipairs(results) do
-					local saved = o.saved;
 					if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
 						if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
 							tinsert(cache, o);
@@ -79,7 +77,6 @@ local searchMethods = {
 	end,
 	Quest = function(self, cache)
 		for i,o in ipairs(Search("questID")) do
-			local saved = o.saved;
 			if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
 				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
 					tinsert(cache, o);

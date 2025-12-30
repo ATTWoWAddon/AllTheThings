@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 if C_TransmogCollection then
@@ -25,9 +25,9 @@ app:CreateWindow("Collected Sources", {
 		if not self.data then
 			self.data = {
 				text = "Collected Sources",
-				icon = 134941, 
+				icon = 134941,
 				description = "This window shows you all of the collected sources (according to Blizzard) tracked by ATT. Go get 'em!",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				indent = 0,

@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local contains, MergeClone = app.contains, app.MergeClone;
 
 -- Global locals

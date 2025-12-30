@@ -424,7 +424,7 @@ local GetFixedItemSpecInfo = GetSpecializationInfo and function(itemID)
 		if not specs or #specs < 1 then
 			specs = {};
 			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
-			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, _, _, expacID, _, _ = GetItemInfo(itemID);
 			-- only Armor items
 			if itemClassID and itemClassID == 4 then
 				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
@@ -1185,7 +1185,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			if reference.cost then
 				if type(reference.cost) == "table" then
-					local _, name, icon, amount;
+					local _, name, icon
 					for k,v in pairs(reference.cost) do
 						_ = v[1];
 						if _ == "g" then

@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert
@@ -13,9 +13,9 @@ app:CreateWindow("Locked", {
 		if not self.data then
 			self.data = {
 				text = "Locked Out",
-				icon = 134236, 
+				icon = 134236,
 				description = "This window shows you all of the quests and other things that you missed while leveling up. (Such as breadcrumbs or quests that have the choice between one or another)\n\nNOTE: With Party Sync you could go back and do some of these later. (Introduced in patch 8.2.5 during BFA)",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				indent = 0,

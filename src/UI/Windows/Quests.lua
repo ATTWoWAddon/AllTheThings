@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Implementation
 app:CreateWindow("Quests", {
@@ -11,7 +11,7 @@ app:CreateWindow("Quests", {
 				text = "Quests",
 				icon = 132049,
 				description = "This window shows you all of the quests (based on filters) that you can complete. Go get 'em!\n\nNOTE: This window will not include quest items used to complete quests, but will show all of the associated quest rewards.",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				OnUpdate = function(t)

@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -46,7 +46,7 @@ app:CreateWindow("AchievementFinder", {
 								local criteria = {};
 								for criteriaID=totalCriteria,1,-1 do
 									---@diagnostic disable-next-line: redundant-parameter
-									local criteriaString, criteriaType, _, _, reqQuantity, _, flags, assetID, _, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+									local criteriaString, criteriaType, _, _, reqQuantity, _, _, assetID, _, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 									local crit = { ["criteriaID"] = criteriaID, ["criteriaUID"] = criteriaUID };
 									if criteriaString ~= nil and criteriaString ~= "" then
 										crit.name = criteriaString;

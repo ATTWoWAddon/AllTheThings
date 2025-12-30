@@ -3,7 +3,7 @@
 --- Dependencies:
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local ipairs,math_floor
 	= ipairs,math.floor

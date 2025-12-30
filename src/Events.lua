@@ -1,5 +1,5 @@
 
-local appName, app = ...;
+local _, app = ...;
 
 local rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert
 	= rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert

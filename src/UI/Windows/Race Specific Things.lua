@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local containsValue = app.containsValue;
 local tinsert = tinsert;
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
@@ -11,9 +11,9 @@ app:CreateWindow("Race Specific Things", {
 		if self.data then return true; end
 		self.data = {
 			text = "Race Specific Things",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the race specific things for all races.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

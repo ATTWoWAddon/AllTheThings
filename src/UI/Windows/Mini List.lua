@@ -1,8 +1,8 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local contains, containsValue = app.contains, app.containsValue;
-local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeField, GetRelativeValue, MergeObject, SearchForField
-	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeField, app.GetRelativeValue, app.MergeObject, app.SearchForField;
+local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeValue, MergeObject, SearchForField
+	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeValue, app.MergeObject, app.SearchForField;
 local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Global locals
@@ -167,14 +167,14 @@ local CachedMapData = setmetatable({}, {
 						elseif key == "objectID" then
 							headerConst = app.HeaderConstants.TREASURES;
 						end
-						
+
 						-- Does this involve a profession?
 						local requireSkill = GetRelativeValue(group, "requireSkill");
 						if requireSkill then
 							clone = app.CreateProfession(requireSkill, { g = { clone } });
 							headerConst = app.HeaderConstants.PROFESSIONS;
 						end
-						
+
 						if headerConst then
 							MergeIntoHeader(headerConst, clone);
 						elseif key == "headerID" then
@@ -215,7 +215,7 @@ local CachedMapData = setmetatable({}, {
 				results.mapID = mapID;
 				results.back = 1;
 				results.indent = 0;
-				
+
 				if app.Settings:GetTooltipSetting("Expand:MiniList") then
 					ExpandGroupsRecursively(results, true);
 					results.expanded = true;

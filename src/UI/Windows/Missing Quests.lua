@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
@@ -18,7 +18,7 @@ app:CreateWindow("Missing Quests", {
 			text = "Missing Quests",
 			icon = app.asset("Interface_Quest"),
 			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			options = {
@@ -48,11 +48,11 @@ app:CreateWindow("Missing Quests", {
 						tinsert(data.g, header);
 					end
 				end
-				
+
 				local MissingQuestsFromATT, MissingQuestsFromQuestie = {}, {};
 				local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
 				if not QuestieDB.QuestPointers then return; end
-				
+
 				local MissingQuestsFromATTDict, MissingQuestsFromQuestieDict = {}, {};
 				for id,_ in pairs(ATTAccountWideData.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
@@ -80,7 +80,7 @@ app:CreateWindow("Missing Quests", {
 						tinsert(MissingQuestsFromATT, id);
 					end
 				end
-				
+
 				for id,questData in pairs(SearchForFieldContainer("questID")) do
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
@@ -95,7 +95,7 @@ app:CreateWindow("Missing Quests", {
 						end
 					end
 				end
-				
+
 				-- Build a summary for ATT
 				local parent, g = data.options[1], {};
 				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
@@ -127,7 +127,7 @@ app:CreateWindow("Missing Quests", {
 					tinsert(g, quest);
 				end
 				if #g > 0 then parent.g = g; end
-				
+
 				-- Build a summary for Questie
 				local parent, g = data.options[2], {};
 				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Values);
@@ -147,9 +147,9 @@ app:CreateWindow("Missing Quests", {
 					tinsert(g, quest);
 				end
 				if #g > 0 then parent.g = g; end
-				
+
 				-- Build a Sourced ATT structure for Questie
-				local parent, g = data.options[3], {};
+				local parent = data.options[3]
 				local MissingQuestsFromQuestieDict = {};
 				for i,questID in ipairs(MissingQuestsFromQuestie) do
 					MissingQuestsFromQuestieDict[questID] = true;

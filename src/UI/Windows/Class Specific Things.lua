@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local containsValue = app.containsValue;
 local tinsert = tinsert;
 
@@ -10,9 +10,9 @@ app:CreateWindow("Class Specific Things", {
 		if self.data then return true; end
 		self.data = {
 			text = "Class Specific Things",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the class specific things for all classes.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

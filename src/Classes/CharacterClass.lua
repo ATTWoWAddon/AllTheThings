@@ -1,6 +1,6 @@
 do
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals

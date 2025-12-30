@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local contains = app.contains;
 local AssignChildren, CloneClassInstance, CloneReference, wipearray
 	= app.AssignChildren, app.CloneClassInstance, app.CloneReference, app.wipearray;

@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert, pairs
@@ -19,11 +19,11 @@ app:CreateWindow("Maps", {
 				description = "This window helps debug when we're missing map IDs in the addon.",
 				back = 1,
 				indent = 0,
-				visible = true, 
+				visible = true,
 				expanded = true,
 				g = g,
 			};
-			
+
 			-- Cache all maps by their ID number, starting with maps we reference in our DB.
 			local mapsByID = {};
 			for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
@@ -38,7 +38,7 @@ app:CreateWindow("Maps", {
 					mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
 				end
 			end
-			
+
 			-- Go through all of the possible maps, including only maps that have C_Map data.
 			for mapID=1,20000,1 do
 				if not mapsByID[mapID] then
@@ -54,7 +54,7 @@ app:CreateWindow("Maps", {
 					end
 				end
 			end
-			
+
 			-- Iterate through the maps we have cached, determine their parents and link them together.
 			-- Also push them on to the stack.
 			for mapID,mapObject in pairs(mapsByID) do
@@ -73,7 +73,7 @@ app:CreateWindow("Maps", {
 				mapObject.parent = parent;
 				tinsert(parent.g, mapObject);
 			end
-			
+
 			-- Sort the maps by number of relative maps, then by name if matching.
 			app.Sort(g, function(a, b)
 				local aSize, bSize = #a.g, #b.g;
@@ -85,7 +85,7 @@ app:CreateWindow("Maps", {
 					return false;
 				end
 			end, true);
-			
+
 			-- Now finally, clear out unused gs.
 			for i,mapObject in ipairs(g) do
 				if #mapObject.g < 1 then

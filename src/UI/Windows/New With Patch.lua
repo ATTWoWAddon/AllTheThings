@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local tinsert = tinsert;
 local L = app.L;
 
@@ -10,9 +10,9 @@ app:CreateWindow("New With Patch", {
 		if self.data then return true; end
 		self.data = {
 			text = "New With Patch",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things that were added with the most recent patch.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

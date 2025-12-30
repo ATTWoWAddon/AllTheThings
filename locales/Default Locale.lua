@@ -1,4 +1,4 @@
-local appName, app = ...;
+local _, app = ...;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 

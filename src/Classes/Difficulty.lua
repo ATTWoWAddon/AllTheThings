@@ -1,6 +1,6 @@
 do
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 local L, contains, containsValue, GetRelativeValue = app.L, app.contains, app.containsValue, app.GetRelativeValue;
 
 -- Global locals

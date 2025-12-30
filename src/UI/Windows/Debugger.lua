@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Globals
 local C_Map_GetMapInfo = C_Map.GetMapInfo

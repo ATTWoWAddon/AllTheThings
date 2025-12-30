@@ -1,9 +1,9 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
-local ipairs, pairs, tinsert, tremove =
-	  ipairs, pairs, tinsert, tremove;
+local ipairs, pairs, tremove =
+	  ipairs, pairs, tremove;
 
 -- Implementation
 app:CreateWindow("Mounts", {

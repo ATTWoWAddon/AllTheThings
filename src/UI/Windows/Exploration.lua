@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Implementation
 app:CreateWindow("Exploration", {
@@ -11,7 +11,7 @@ app:CreateWindow("Exploration", {
 				text = "Exploration",
 				icon = app.asset("Category_Exploration"),
 				description = "This window shows you all of the exploration locations that you can complete. You may need to Shift+Left Click any header in ATT and also relog for these to be detected perfectly.",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				OnUpdate = function(t)

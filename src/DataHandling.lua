@@ -3,7 +3,7 @@
 --- Dependencies: Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 	= pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type

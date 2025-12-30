@@ -5,7 +5,7 @@
 --- Dependencies: Cache, Table, Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local CurrentSkipLevel = 0	-- Whether to skip certain cost items
 -- Returns the current Skip Level

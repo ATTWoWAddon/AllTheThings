@@ -1,6 +1,6 @@
 -- App locals
-local appName, app = ...;
-local contains, MergeClone = app.contains, app.MergeClone;
+local _, app = ...;
+local contains = app.contains
 
 -- Global locals
 local ipairs, pairs, select, tinsert =
@@ -52,7 +52,7 @@ local function getAchievementCategory(categories, achievementCategoryID)
 		c = app.CreateAchievementCategory(achievementCategoryID);
 		categories[achievementCategoryID] = c;
 		c.g = {};
-		
+
 		local p = getAchievementCategory(categories, c.parentCategoryID);
 		if not p.g then p.g = {}; end
 		tinsert(p.g, c);
@@ -205,7 +205,7 @@ app:CreateWindow("Achievements", {
 										achievement.g = g;
 									end
 									app.CacheFields(achievement);
-									
+
 									-- Put a copy in Unsorted.
 									if unsorted then unsorted:AddUnsortedAchievement(achievement); end
 								end

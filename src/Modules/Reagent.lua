@@ -1,13 +1,11 @@
 -- Reagents Module
 local _, app = ...;
-local L = app.L
 
 -- Globals
 local setmetatable,tonumber,wipe,ipairs,pairs
 	= setmetatable,tonumber,wipe,ipairs,pairs
 
 -- App
-local IsComplete = app.IsComplete
 
 -- Reagent API Implementation
 -- Access via AllTheThings.Modules.Reagent

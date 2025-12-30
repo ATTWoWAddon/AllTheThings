@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local tinsert = tinsert;
 
 -- Implementation
@@ -9,9 +9,9 @@ app:CreateWindow("Missing Source IDs", {
 		if self.data then return true; end
 		self.data = {
 			text = "Missing Source IDs",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things that are currently missing sourceIDs that should have them in ATT.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

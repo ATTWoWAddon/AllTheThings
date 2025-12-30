@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert, pairs, wipe
@@ -10,11 +10,11 @@ local IsInGroup, IsInInstance, LeaveParty, ResetInstances, SetLootMethod =
 	  IsInGroup, IsInInstance, (C_PartyInfo and C_PartyInfo.LeaveParty or LeaveParty), ResetInstances, SetLootMethod;
 local GetInstanceInfo, ResetInstances, UnitIsGroupLeader =
 	  GetInstanceInfo, ResetInstances, UnitIsGroupLeader;
-local GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID = 
+local GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID =
 	  GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
-local GetLootSpecialization, GetNumSpecializations, GetSpecialization, GetSpecializationInfo, GetSpecializationInfoByID = 
+local GetLootSpecialization, GetNumSpecializations, GetSpecialization, GetSpecializationInfo, GetSpecializationInfoByID =
 	  GetLootSpecialization, GetNumSpecializations, GetSpecialization, GetSpecializationInfo, GetSpecializationInfoByID;
-local GetActiveTalentGroup, IsAllowedToUserTeleport, IsInLFGDungeon, LFGTeleport = 
+local GetActiveTalentGroup, IsAllowedToUserTeleport, IsInLFGDungeon, LFGTeleport =
 	  GetActiveTalentGroup, IsAllowedToUserTeleport, IsInLFGDungeon, LFGTeleport;
 local C_LFGList_GetActiveEntryInfo = C_LFGList and C_LFGList.GetActiveEntryInfo;
 local C_LFGList_RemoveListing = C_LFGList and C_LFGList.RemoveListing;
@@ -151,7 +151,7 @@ app:CreateWindow("RaidAssistant", {
 	Commands = { "attra" },
 	OnInit = function(self, handlers)
 		self.ignoreNoEntries = true;
-		
+
 		-- Setup Event Handlers and register for events
 		local updateWithTrigger = function()
 			self:Update(true);
@@ -166,22 +166,22 @@ app:CreateWindow("RaidAssistant", {
 		self:RegisterEvent("UPDATE_INSTANCE_INFO");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
-		
+
 		-- Does Difficulty have some options to change?
 		if GetDifficultyInfo and GetDifficultyInfo(1) then
 			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 		end
-		
+
 		-- Does Dual Spec or Specializations exist in the API?
 		if GetActiveTalentGroup or GetSpecialization then
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 		end
-		
+
 		-- Does Loot Spec exist in the API?
 		if GetLootSpecialization then
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 		end
-		
+
 		-- Do Scenarios exist in the API?
 		if C_Scenario_IsInScenario then
 			self:RegisterEvent("SCENARIO_UPDATE");
@@ -268,7 +268,7 @@ app:CreateWindow("RaidAssistant", {
 					end,
 				},
 			};
-			
+
 			-- If Difficulties exist, this means we can use the API!
 			if GetDifficultyInfo and GetDifficultyInfo(1) then
 				-- If Dungeon Difficulty exists, we can change that using the API!
@@ -354,7 +354,7 @@ app:CreateWindow("RaidAssistant", {
 						end,
 					}));
 				end
-				
+
 				-- If Raid Difficulty exists, we can change that using the API!
 				if GetRaidDifficultyID then
 					-- At some point Blizzard decided that difficulties made too much sense and scrapped them and added new ones.
@@ -446,7 +446,7 @@ app:CreateWindow("RaidAssistant", {
 							end,
 						}));
 					end
-					
+
 					-- Create the normal raid difficulty header.
 					local highestDifficultyID = raidDifficultyIDs[#raidDifficultyIDs];
 					local setRaidDifficulty = function(row, button)
@@ -531,9 +531,9 @@ app:CreateWindow("RaidAssistant", {
 						end,
 					}));
 				end
-				
+
 			end
-			
+
 			-- If Loot Method exists, we can change how loot gets distributed for the raid.
 			if app.CreateLootMethod then
 				-- Allow the user to change the Loot Method
@@ -547,7 +547,7 @@ app:CreateWindow("RaidAssistant", {
 					OnClick = function(row, button)
 						self:Reset();
 						return true;
-					end, 
+					end,
 					OnUpdate = function(data)
 						local g = data.g;
 						if #g < 1 then
@@ -579,7 +579,7 @@ app:CreateWindow("RaidAssistant", {
 						return true;
 					end,
 				}));
-				
+
 				-- Allow the user to select a Loot Master
 				local lootmasters = {
 					text = MASTER_LOOTER,
@@ -670,7 +670,7 @@ app:CreateWindow("RaidAssistant", {
 					end,
 				}));
 			end
-			
+
 			-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
 			if app.CreateLootThreshold then
 				local lootthreshold = {
@@ -722,7 +722,7 @@ app:CreateWindow("RaidAssistant", {
 					end,
 				}));
 			end
-			
+
 			-- If Specializations are available, that means we don't need to look up player talents.
 			if GetSpecialization and GetSpecializationInfo then
 				-- If Loot Spec exists, we have the ability to change the player's current loot specialization.
@@ -809,19 +809,19 @@ app:CreateWindow("RaidAssistant", {
 									data.icon = icon;
 								end
 							end
-							
+
 							data.visible = true;
 							return true;
 						end,
 					});
 				end
 			end
-			
+
 			-- If Dual Spec exists, we have the ability to confirm which specialization the player currently is.
 			if GetActiveTalentGroup then
 				--TODO: Setup Talent Swapping
 			end
-			
+
 			-- If LFG exists, we get some access to some special api functions.
 			if C_LFGList_GetActiveEntryInfo then
 				-- For teleporting in/out... (available with Dungeon Finder itself)
@@ -856,7 +856,7 @@ app:CreateWindow("RaidAssistant", {
 						end,
 					});
 				end
-				
+
 				-- And for Delisting the group!
 				if C_LFGList_RemoveListing then
 					tinsert(options, {
@@ -877,11 +877,11 @@ app:CreateWindow("RaidAssistant", {
 					});
 				end
 			end
-			
+
 			-- Raid Assistant Header
 			local raidassistant = {
 				text = "Raid Assistant",
-				icon = app.asset("WindowIcon_RaidAssistant"), 
+				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
 				expanded = true,
 				back = 1,

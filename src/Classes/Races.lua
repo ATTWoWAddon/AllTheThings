@@ -1,6 +1,6 @@
 
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 if C_CreatureInfo_GetRaceInfo then

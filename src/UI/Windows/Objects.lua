@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert, pairs
@@ -13,7 +13,7 @@ iconTexture.TrySetTexture = function(self, texture)
 	-- If we already validated this texture, return the status.
 	local valid = validTextures[texture];
 	if valid ~= nil then return valid; end
-	
+
 	-- Attempt to set the texture.
 	self:SetTexture(nil);
 	self:SetTexture(texture);
@@ -32,7 +32,7 @@ modelFrame.TrySetModel = function(self, model)
 	-- If we already validated this model, return the status.
 	local valid = validModels[model];
 	if valid ~= nil then return valid; end
-	
+
 	-- Attempt to set the model.
 	self:ClearModel();
 	self:SetModel(model);
@@ -47,23 +47,23 @@ local function OnUpdateForObject(t)
 	-- Calculate the completion for each object.
 	local progress, total = 0, 1;
 	if app.ObjectNames[t.objectID] then progress = progress + 1; end
-	
+
 	if checkIcons then
 		local icon = app.ObjectIcons[t.objectID];
 		if icon and iconTexture:TrySetTexture(icon) then progress = progress + 1; end
 		total = total + 1;
 	end
-	
+
 	if checkModels then
 		local model = t.model;
 		if model and modelFrame:TrySetModel(model) then progress = progress + 1; end
 		total = total + 1;
 	end
-	
+
 	-- Set out object's progress.
 	t.progress = progress;
 	t.total = total;
-	
+
 	-- Increment parent progress
 	t.parent.progress = t.parent.progress + t.progress;
 	t.parent.total = t.parent.total + t.total;
@@ -87,7 +87,7 @@ local function OnTooltipForObject(t, tooltipInfo)
 			r2 = 1, g2 = 0.4, b2 = 0.4,
 		});
 	end
-	
+
 	if checkIcons then
 		local icon = app.ObjectIcons[t.objectID];
 		if icon then
@@ -119,7 +119,7 @@ local function OnTooltipForObject(t, tooltipInfo)
 			});
 		end
 	end
-	
+
 	if checkModels then
 		local model = t.model;
 		if model then
@@ -201,22 +201,22 @@ app:CreateWindow("Objects", {
 			};
 			self.data = {
 				text = "Object Debugger",
-				icon = app.asset("WindowIcon_RaidAssistant"), 
+				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
 				back = 1,
 				indent = 0,
-				visible = true, 
+				visible = true,
 				expanded = true,
 				g = g,
 			};
-			
+
 			-- Cache and sort all of the objectIDs we reference in our DB.
 			local objectIDs = {};
 			for objectID,o in pairs(app.SearchForFieldContainer("objectID")) do
 				tinsert(objectIDs, tonumber(objectID));
 			end
 			app.Sort(objectIDs, app.SortDefaults.Values);
-			
+
 			-- Now iterate through those ids and create objects for them.
 			for _,objectID in ipairs(objectIDs) do
 				tinsert(g, app.CreateObject(objectID, {

@@ -1,12 +1,12 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local contains = app.contains;
 local AssignChildren, ExpandGroupsRecursively =
 	app.AssignChildren, app.ExpandGroupsRecursively;
 
 -- Global locals
-local ipairs, tinsert, setmetatable =
-	  ipairs, tinsert, setmetatable;
+local ipairs, setmetatable =
+	  ipairs, setmetatable;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Local variables
@@ -86,9 +86,9 @@ app:CreateWindow("Local List", {
 	OnInit = function(self, handlers)
 		self.data = {
 			text = "Local List",
-			icon = app.asset("Category_Zones"), 
+			icon = app.asset("Category_Zones"),
 			description = "This window shows you all of the content for the local map.\n\nThis is more a debugging tool than anything else.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

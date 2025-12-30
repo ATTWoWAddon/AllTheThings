@@ -1,6 +1,6 @@
 -- Base Class Helpers
 -- Contains necessary logic for defining, creating and working with all Class structures in a consistent manner
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local type,pairs,setmetatable,rawget,unpack,rawset,select

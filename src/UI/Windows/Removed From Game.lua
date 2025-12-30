@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local tinsert = tinsert;
 
 -- Implementation
@@ -9,9 +9,9 @@ app:CreateWindow("Removed From Game", {
 		if self.data then return true; end
 		self.data = {
 			text = "Removed From Game",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things that have been removed from the game.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

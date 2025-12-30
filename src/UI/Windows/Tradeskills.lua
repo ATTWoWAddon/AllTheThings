@@ -1,7 +1,7 @@
 -- App locals
-local appName, app = ...;
-local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForField, SearchForFieldContainer
-	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForField, app.SearchForFieldContainer;
+local _, app = ...;
+local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
+	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
 
 -- Global locals
 local ipairs, pairs, tinsert =
@@ -16,7 +16,6 @@ local GameTooltip = GameTooltip;
 -- WoW API Cache
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 local function RefreshSkills()
 	-- Store Skill Data

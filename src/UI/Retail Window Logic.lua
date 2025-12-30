@@ -1710,7 +1710,6 @@ app.AddEventHandler("RowOnLeave", function (self)
 	GameTooltip:ClearLines();
 	GameTooltip:Hide();
 end)
-local RowSearchSkipFillOptions = {SkipFill=true}
 app.AddEventHandler("RowOnEnter", function(self)
 	local reference = self.ref;
 	if not reference then return; end
@@ -1978,7 +1977,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 							end
 						end
 						if bestSpecID then
-							local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+							local id, name, _, icon = GetSpecializationInfo(bestSpecID);
 							if totalItems > 0 then
 								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);

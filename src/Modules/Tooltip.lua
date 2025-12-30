@@ -622,7 +622,7 @@ local function FindCommandEnd(txt, i, l)
 	return true, j;
 end
 local function StripColorAndTextureData(txt)
-	local str, l, c, c2 = "", txt:len();
+	local str, l, c = "", txt:len()
 	local i = 1;
 	while i < l do
 		c = txt:sub(i,i);

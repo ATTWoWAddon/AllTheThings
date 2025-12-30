@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert
@@ -13,9 +13,9 @@ app:CreateWindow("Breadcrumbs", {
 		if not self.data then
 			self.data = {
 				text = "Follow the Breadcrumbs",
-				icon = 133968, 
+				icon = 133968,
 				description = "This window shows you all of the breadcrumbs tracked by ATT. Go get 'em!",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				indent = 0,

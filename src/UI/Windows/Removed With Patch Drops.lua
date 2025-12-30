@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local tinsert, ipairs = tinsert, ipairs;
 local GetRelativeValue = app.GetRelativeValue;
 
@@ -19,12 +19,10 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 end
 local function ReapplyExpand(g, g2)
 	for j,p in ipairs(g2) do
-		local found = false;
 		local key = p.key;
 		local id = p[key];
 		for i,o in ipairs(g) do
 			if o[key] == id then
-				found = true;
 				if o.expanded then
 					if not p.expanded then
 						p.expanded = true;
@@ -154,14 +152,14 @@ app:CreateWindow("Removed With Patch Drops", {
 						message = message .. str;
 						count = count + 1;
 					end
-					
+
 					app:ShowPopupDialogWithMultiLineEditBox(message);
 					return true;
 				end,
 				OnUpdate = app.ReturnTrue,
 			},
 		};
-		
+
 		local filteredData = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
 			if group.rwp and group.itemID then
 				local headerID = GetRelativeValue(group, "headerID");
@@ -170,12 +168,12 @@ app:CreateWindow("Removed With Patch Drops", {
 				end
 			end
 		end);
-		
+
 		self.data = {
 			text = "Removed With Patch Drops",
-			icon = app.asset("WindowIcon_RWP"), 
+			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things excluding recipes that get removed in a future patch from zone drop, rare, and world drop sources.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,
@@ -193,7 +191,7 @@ app:CreateWindow("Removed With Patch Drops", {
 							if ExcludeRecipes and (group.f or 0) == 200 then
 								return false;
 							end
-							
+
 							-- We only want to include items from mobs that are available in the future.
 							local parent = group.parent;
 							if parent and (parent.rwp or parent.u == app.PhaseConstants.NEVER_IMPLEMENTED) and not parent.awp then
@@ -207,13 +205,13 @@ app:CreateWindow("Removed With Patch Drops", {
 									end
 								end
 							end
-							
+
 							-- If we only want to see permanently removed things, then do that.
 							local awp = GetRelativeValue(group, "awp");
 							if ExcludeAddedWithPatch and awp and awp >= group.rwp then
 								return false;
 							end
-							
+
 							-- Return everything else.
 							return true;
 						end

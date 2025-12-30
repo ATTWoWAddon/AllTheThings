@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Implementation
 app:CreateWindow("Dailies", {
@@ -9,9 +9,9 @@ app:CreateWindow("Dailies", {
 		if not self.data then
 			self.data = {
 				text = "Dailies",
-				icon = app.asset("Interface_Questd"), 
+				icon = app.asset("Interface_Questd"),
 				description = "You can search the ATT Database for all Dailies. All quests displayed are 'incomplete', despite ATT sometimes showing completion for them. If you have a daily 'completed' in ATT, that simply means that you've reached Exalted with the associated reputation if there is one.",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				OnUpdate = function(t)

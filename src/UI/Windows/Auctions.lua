@@ -1,13 +1,12 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local CloneReference = app.CloneReference;
-local GetProgressTextForRow = app.GetProgressTextForRow;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Global locals
 local debugprofilestop, next, pcall, select, tinsert, tonumber, type
 	= debugprofilestop, next, pcall, select, tinsert, tonumber, type;
-	
+
 -- Module locals
 local auctionData, priceA, priceB, oldLegacyFilter = {};
 local function SortByPrice(a,b)
@@ -26,9 +25,9 @@ end
 -- API Differences
 local CanFullScan, ReceiveAuctions, RunFullScan, OnClickForAuctionItem;
 if C_AuctionHouse then
-	local C_AuctionHouse_ReplicateItems, C_AuctionHouse_GetNumReplicateItems, C_AuctionHouse_GetReplicateItemInfo, C_AuctionHouse_GetReplicateItemLink
-		= C_AuctionHouse.ReplicateItems, C_AuctionHouse.GetNumReplicateItems, C_AuctionHouse.GetReplicateItemInfo, C_AuctionHouse.GetReplicateItemLink;
-	
+	local C_AuctionHouse_ReplicateItems, C_AuctionHouse_GetNumReplicateItems, C_AuctionHouse_GetReplicateItemInfo
+		= C_AuctionHouse.ReplicateItems, C_AuctionHouse.GetNumReplicateItems, C_AuctionHouse.GetReplicateItemInfo
+
 	-- Only allow a scan once every 15 minutes.
 	local cooldown = 0;
 	CanFullScan = function()
@@ -40,7 +39,7 @@ if C_AuctionHouse then
 		for i,auction in ipairs(auctions) do
 			-- https://warcraft.wiki.gg/wiki/API_C_AuctionHouse.GetReplicateItemInfo
 			local itemID = auction[17];
-			auctionData[itemID] = 
+			auctionData[itemID] =
 				itemLink = C_AuctionHouse_GetReplicateItemLink(0),
 				count = auction[3],
 				price = auction[10]
@@ -91,7 +90,7 @@ if C_AuctionHouse then
 	end
 	OnClickForAuctionItem = function(self, button)
 		local reference = self.ref;
-		
+
 		-- Attempt to search manually with the link.
 		local link = reference.link or reference.silentLink;
 		if link then
@@ -144,7 +143,7 @@ app:CreateWindow("Auctions", {
 		self:UpdatePosition();
 	end,
 	OnSave = function(self, settings)
-		
+
 	end,
 	OnInit = function(self, handlers)
 		function ProcessAuctions()
@@ -153,7 +152,7 @@ app:CreateWindow("Auctions", {
 			local beginTime = debugprofilestop();
 			ReceiveAuctions(function(count)
 				app.print(format("Scanned %d auctions in %d milliseconds", count, debugprofilestop()-beginTime));
-				
+
 				-- Write back the valid auction data to saved variables.
 				AllTheThingsAuctionData = auctionData;
 				wipe(self.data.g);
@@ -215,7 +214,7 @@ app:CreateWindow("Auctions", {
 			else
 				self:Hide();
 			end
-			
+
 		end
 		self:SetMovable(false);
 	end,
@@ -227,10 +226,10 @@ app:CreateWindow("Auctions", {
 			end
 			self.data = {
 				text = "Auction Module",
-				icon = 133784, 
+				icon = 133784,
 				description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 				SortType = "Global",
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				indent = 0,
@@ -253,17 +252,17 @@ app:CreateWindow("Auctions", {
 								return;
 							end
 							if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-							
+
 							if CanFullScan() then
 								-- Clear out the old scan data.
 								app.print("Full Scan Initiated... Please Wait!");
 								wipe(self.data.g);
 								wipe(auctionData);
 								self:Update(true);
-								
+
 								-- Register for the event and send the query.
 								RunFullScan(self);
-								
+
 								-- Update the Scan Button State
 								row:StartATTCoroutine("UpdateScanButton", function()
 									repeat
@@ -337,7 +336,7 @@ app:CreateWindow("Auctions", {
 						icon = 134932,
 						description = "Click this button to toggle debug mode to show everything regardless of filters!",
 						SortPriority = 1.2,
-						OnClick = function() 
+						OnClick = function()
 							app.Settings:ToggleDebugMode();
 						end,
 						OnUpdate = function(data)
@@ -358,7 +357,7 @@ app:CreateWindow("Auctions", {
 						icon = 133733,
 						description = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 						SortPriority = 1.3,
-						OnClick = function() 
+						OnClick = function()
 							app.Settings:ToggleAccountMode();
 						end,
 						OnUpdate = function(data)
@@ -382,7 +381,7 @@ app:CreateWindow("Auctions", {
 						icon = 134932,
 						description = "Click this button to toggle faction mode to show everything for your faction!",
 						SortPriority = 1.4,
-						OnClick = function() 
+						OnClick = function()
 							app.Settings:ToggleFactionMode();
 						end,
 						OnUpdate = function(data)
@@ -473,7 +472,7 @@ app:CreateWindow("Auctions", {
 								data.metas[option.Meta] = option;
 							end
 						end
-						
+
 						-- Determine if anything is cached in the Auction Data.
 						local any = false;
 						for itemID,price in pairs(auctionData) do
@@ -503,13 +502,13 @@ app:CreateWindow("Auctions", {
 										value = value .. "_" .. searchResult.u;
 									end
 									keys = searchResultsByKey[key];
-									
+
 									-- Make sure that the key type is represented.
 									if not keys then
 										keys = {};
 										searchResultsByKey[key] = keys;
 									end
-									
+
 									-- First time this key value was used.
 									data = keys[value];
 									if not data then
@@ -539,7 +538,7 @@ app:CreateWindow("Auctions", {
 									end
 								end
 							end
-							
+
 							-- Apply a sub-filter to items with spellID-based identifiers.
 							if searchResultsByKey.spellID then
 								local filteredItems = {};
@@ -555,12 +554,12 @@ app:CreateWindow("Auctions", {
 										print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or RETRIEVING_DATA) .. " is missing a filterID?");
 									end
 								end
-								
+
 								if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
 								if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
 								searchResultsByKey.spellID = nil;
 							end
-							
+
 							-- Process the Non-Collectible Items for Reagents
 							local reagentCache = AllTheThingsAD.Reagents;
 							if not reagentCache then
@@ -589,7 +588,7 @@ app:CreateWindow("Auctions", {
 									end
 								end
 							end
-							
+
 							-- Display Test for Raw Data + Filtering
 							for key, searchResults in pairs(searchResultsByKey) do
 								local subdata = self.data.metas[key];
