@@ -640,7 +640,7 @@
 1218@@@TESTAzshara
 1219@@@Legash Encampment
 1220@@@Thalassian Base Camp
-1221@@@Ruins of Eldarath
+1221@@@Ruins of Eldarath 
 1222@@@Hetaera's Clutch
 1223@@@Temple of Zin-Malor
 1224@@@Bear's Head
@@ -791,8 +791,8 @@
 1959@@@Dustfire Valley
 1977@@@Zul'Gurub
 1978@@@Misty Reed Post
-1997@@@Bloodvenom Post
-1998@@@Talonbranch Glade
+1997@@@Bloodvenom Post 
+1998@@@Talonbranch Glade 
 2017@@@Stratholme
 2037@@@UNUSEDShadowfang Keep 003
 2057@@@Scholomance
@@ -10723,9 +10723,6 @@
 16863@@@Quiet Cavern
 16864@@@Consumptor Cave
 12.0.0.64975
-1221@@@Ruins of Eldarath 
-1997@@@Bloodvenom Post 
-1998@@@Talonbranch Glade 
 16814@@@Magisters' Terrace
 12.0.1.64889
 16543@@@Floaret Grotto
