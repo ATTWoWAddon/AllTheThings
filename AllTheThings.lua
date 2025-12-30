@@ -5452,10 +5452,11 @@ end;
 customWindowUpdates.WorldQuests = function(self, force, got)
 	-- localize some APIs
 	local C_TaskQuest_GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsOnMap;
+	local C_AreaPoiInfo_GetAreaPOIForMap,C_AreaPoiInfo_GetAreaPOIInfo,C_AreaPoiInfo_GetEventsForMap,C_AreaPoiInfo_GetAreaPOISecondsLeft
+		= C_AreaPoiInfo.GetAreaPOIForMap,C_AreaPoiInfo.GetAreaPOIInfo,C_AreaPoiInfo.GetEventsForMap,C_AreaPoiInfo.GetAreaPOISecondsLeft
 	local C_QuestLine_RequestQuestLinesForMap = C_QuestLine.RequestQuestLinesForMap;
 	local C_QuestLine_GetAvailableQuestLines = C_QuestLine.GetAvailableQuestLines;
 	local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
-	local C_AreaPoiInfo_GetAreaPOISecondsLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft;
 	local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
 	local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo =
 		  GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
@@ -5499,8 +5500,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				{
 					1978,	-- Dragon Isles
 					{
-						{ 2085 },	-- Primalist Tomorrow
-						-- any un-attached sub-zones
+						2085,	-- Primalist Tomorrow
 					}
 				},
 				-- Shadowlands Continents
@@ -5511,30 +5511,16 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				-- BFA Continents
 				{
 					875,	-- Zandalar
-					{
-						{ 863, 5969, { 54135, 54136 }},	-- Nazmir (Romp in the Swamp [H] / March on the Marsh [A])
-						{ 864, 5970, { 53885, 54134 }},	-- Voldun (Isolated Victory [H] / Many Fine Heroes [A])
-						{ 862, 5973, { 53883, 54138 }},	-- Zuldazar (Shores of Zuldazar [H] / Ritual Rampage [A])
-					}
 				},
 				{
 					876,	-- Kul'Tiras
-					{
-						{ 896, 5964, { 54137, 53701 }},	-- Drustvar (In Every Dark Corner [H] / A Drust Cause [A])
-						{ 942, 5966, { 54132, 51982 }},	-- Stormsong Valley (A Horde of Heroes [H] / Storm's Rage [A])
-						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
-					}
 				},
 				{ 1355 },	-- Nazjatar
 				-- Legion Continents
 				{
 					619,	-- Broken Isles
 					{
-						{ 627 },	-- Dalaran (not a Zone, so doesn't list automatically)
-						{ 630, 5175, { 47063 }},	-- Azsuna
-						{ 650, 5177, { 47063 }},	-- Highmountain
-						{ 634, 5178, { 47063 }},	-- Stormheim
-						{ 641, 5210, { 47063 }},	-- Val'Sharah
+						627,	-- Dalaran
 					}
 				},
 				{ 905 },	-- Argus
@@ -5543,11 +5529,6 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				-- MoP Continents
 				{
 					424,	-- Pandaria
-					{
-						{ 1530, 6489, { 56064 }},	-- Assault: The Black Empire
-						{ 1530, 6491, { 57728 }},	-- Assault: The Endless Swarm
-						{ 1530, 6490, { 57008 }},	-- Assault: The Warring Clans
-					},
 				},
 				-- Cataclysm Continents
 				{ 948 },	-- The Maelstrom
@@ -5559,15 +5540,12 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				{
 					12,		-- Kalimdor
 					{
-						{ 1527, 6486, { 57157 }},	-- Assault: The Black Empire
-						{ 1527, 6488, { 56308 }},	-- Assault: Aqir Unearthed
-						{ 1527, 6487, { 55350 }},	-- Assault: Amathet Advance
-						{ 62 },	-- Darkshore
+						62,	-- Darkshore
 					},
 				},
 				{	13,		-- Eastern Kingdoms
 					{
-						{ 14 },	-- Arathi Highlands
+						14,	-- Arathi Highlands
 					},
 				},
 			}
@@ -5633,6 +5611,75 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 					end
 				end
 			end
+			local MapPOIs = {}
+			-- Area POIs (Points of Interest)
+			self.MergeAreaPOIs = function(self, mapObject)
+				local mapID = mapObject.mapID
+				if not mapID then return end
+
+				local pois = app.ArrayAppend(C_AreaPoiInfo_GetAreaPOIForMap(mapID), C_AreaPoiInfo_GetEventsForMap(mapID))
+				if not pois or #pois == 0 then return end
+
+				-- replace the POI IDs with their respective infos
+				for i=1,#pois do
+					pois[i] = C_AreaPoiInfo_GetAreaPOIInfo(mapID, pois[i])
+				end
+				local poi, poiID, x, y
+				for i=1,#pois do
+					poi = pois[i]
+					poiID = poi.areaPoiID
+					local poiMapID = poi.linkedUiMapID
+					-- one poiID may by linked to multiple Things or copies of a Thing so make sure to merge them together
+					local o = app.SearchForObject("poiID", poiID, nil, true)
+					if #o > 0 then
+						local clone = CreateObject(o[1])
+						if not poiMapID and not poi.isPrimaryMapForPOI then
+							poiMapID = GetRelativeValue(o[1], "mapID")
+						end
+						if #o > 1 then
+							for i=2,#o do
+								MergeProperties(clone, o[i])
+							end
+						end
+						o = clone
+					end
+					if o and o.__type then
+						o.timeRemaining = C_AreaPoiInfo_GetAreaPOISecondsLeft(poiID)
+						if self.includeAll or
+							-- if it has time remaining
+							(not o.timeRemaining or (o.timeRemaining > 0))
+						then
+							-- add the map POI coords to our new object
+							if poi.position then
+								x, y = poi.position.x, poi.position.y
+							else
+								x, y = nil, nil
+							end
+							if x and y then
+								o.coords = {{ 100 * x, 100 * y, mapID }}
+							end
+							if not poiMapID or poiMapID == mapID or poi.isPrimaryMapForPOI then
+								NestObject(mapObject, o)
+							else
+								local mapPOIs = MapPOIs[poiMapID]
+								if mapPOIs then mapPOIs[#mapPOIs + 1] = o
+								else
+									mapPOIs = {o}
+									MapPOIs[poiMapID] = mapPOIs
+								end
+							end
+						end
+					end
+				end
+
+				-- add any POIs which show only on 'other' maps but intended for this one
+				local myPOIs = MapPOIs[mapID]
+				if myPOIs then
+					for i=1,#myPOIs do
+						NestObject(mapObject, myPOIs[i])
+					end
+				end
+			end
 			-- Storylines/Map Quest Icons
 			self.MergeStorylines = function(self, mapObject)
 				local mapID = mapObject.mapID;
@@ -5695,11 +5742,13 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				-- print("Build Map",mapObject.mapID,mapObject.text);
 
 				-- Merge Tasks for Zone
-				self:MergeTasks(mapObject);
+				self:MergeTasks(mapObject)
 				-- Merge Storylines for Zone
-				self:MergeStorylines(mapObject);
+				self:MergeStorylines(mapObject)
 				-- Merge Repeatables for Zone
-				self:MergeRepeatables(mapObject);
+				self:MergeRepeatables(mapObject)
+				-- Merge Area POIs for Zone
+				self:MergeAreaPOIs(mapObject)
 
 				-- look for quests on map child maps as well
 				local mapChildInfos = C_Map_GetMapChildrenInfo(mapObject.mapID, 3);
@@ -5729,6 +5778,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				wipe(self.data.g);
 				-- Rebuild all World Quest data
 				wipe(AddedQuestIDs)
+				wipe(MapPOIs)
 				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
@@ -5759,34 +5809,17 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 					-- Build top-level maps all the way down
 					self:BuildMapAndChildren(mapObject);
 
-					-- Invasions
-					local mapIDPOIPairs = pair[2];
-					if mapIDPOIPairs then
-						for i,arr in ipairs(mapIDPOIPairs) do
-							-- Sub-Map with Quest information to track
-							if #arr >= 3 then
-								for j,questID in ipairs(arr[3]) do
-									if not IsQuestFlaggedCompleted(questID) then
-										local timeLeft = C_AreaPoiInfo_GetAreaPOISecondsLeft(arr[2]);
-										if timeLeft and timeLeft > 0 then
-											local questObject = GetPopulatedQuestObject(questID);
-											-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
-											questObject.timeRemaining = timeLeft;
-											local subMapObject = app.CreateMapWithStyle(arr[1]);
-											NestObject(subMapObject, questObject);
-											NestObject(mapObject, subMapObject);
-										end
-									end
-								end
-							else
-								-- Basic Sub-map
-								local subMap = app.CreateMapWithStyle(arr[1]);
+					-- Additional Maps
+					local additionalMapIDs = pair[2];
+					if additionalMapIDs then
+						for i=1,#additionalMapIDs do
+							-- Basic Sub-map
+							local subMap = app.CreateMapWithStyle(additionalMapIDs[i])
 
-								-- Build top-level maps all the way down for the sub-map
-								self:BuildMapAndChildren(subMap);
+							-- Build top-level maps all the way down for the sub-map
+							self:BuildMapAndChildren(subMap);
 
-								NestObject(mapObject, subMap);
-							end
+							NestObject(mapObject, subMap);
 						end
 					end
 
