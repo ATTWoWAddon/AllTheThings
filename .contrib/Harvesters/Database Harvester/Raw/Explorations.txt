@@ -1220,10 +1220,10 @@
 16374@@@Arcane Sanctum
 16394@@@Naxxramas
 1.15.7.62797
-1221@@@Ruins of Eldarath 
-1997@@@Bloodvenom Post 
-1998@@@Talonbranch Glade 
-15810@@@Bloodvenom Post 
+1221@@@Ruins of Eldarath
+1997@@@Bloodvenom Post
+1998@@@Talonbranch Glade
+15810@@@Bloodvenom Post
 2.5.1.38043
 65@@@Reuse Me 3
 66@@@Reuse Me 6
@@ -1893,7 +1893,7 @@
 4074@@@The Waking Halls
 4077@@@Sorlof's Strand
 4079@@@Frostblade Pass
-4096@@@ClaytÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶n's WoWEdit Land
+4096@@@Claytön's WoWEdit Land
 4097@@@Winterfin Caverns
 4098@@@Glimmer Bay
 4099@@@Winterfin Retreat
@@ -2553,8 +2553,6 @@
 14483@@@Wintergrasp Boundary
 3.4.0.45102
 14483@@@Uncharted Territory
-3.4.5.62824
-4096@@@ClaytÃƒÆ’Ã‚Â¶n's WoWEdit Land
 4.4.0.53627
 17@@@Northern Barrens
 33@@@Northern Stranglethorn
@@ -10348,8 +10346,6 @@
 16621@@@[DNT]
 16690@@@Scorchsong Isle
 16818@@@Stoneveil Ridge
-11.2.7.64978
-4096@@@Claytön's WoWEdit Land
 12.0.0.63534
 10473@@@Arcantina
 13343@@@Doug Land
