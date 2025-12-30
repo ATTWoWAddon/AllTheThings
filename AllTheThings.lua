@@ -5791,16 +5791,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 					end
 
 					-- Merge everything for this map into the list
-					app.Sort(mapObject.g);
-					if mapObject.g then
-						-- Sort the sub-groups as well
-						for i,mapGrp in ipairs(mapObject.g) do
-							if mapGrp.mapID then
-								app.Sort(mapGrp.g);
-							end
-						end
-					end
-					MergeObject(temp, mapObject);
+					app.Sort(mapObject.g, true)
+					MergeObject(temp, mapObject)
 				end
 
 				-- Acquire all of the emissary quests
@@ -5815,15 +5807,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 							NestObject(mapObject, questObject);
 						end
 					end
-					app.Sort(mapObject.g);
-					if mapObject.g then
-						-- Sort the sub-groups as well
-						for i,mapGrp in ipairs(mapObject.g) do
-							if mapGrp.mapID then
-								app.Sort(mapGrp.g);
-							end
-						end
-					end
+					app.Sort(mapObject.g, true)
 					MergeObject(temp, mapObject);
 				end
 
@@ -5849,9 +5833,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { text = DUNGEONS_BUTTON, icon = app.asset("Category_GroupFinder") };
 					local gfg = {}
-					groupFinder.g = gfg
+					local groupFinder = app.CreateRawText(DUNGEONS_BUTTON, { icon = app.asset("Category_GroupFinder"), g = gfg })
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- app.PrintDebug("RandInfo",index,GetLFGRandomDungeonInfo(index));
@@ -5861,9 +5844,8 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader}
 						local hg = {}
-						header.g = hg
+						local header = app.CreateRawText(name, { g = hg, dungeonID = dungeonID, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader})
 						if expansionLevel and not isHoliday then
 							header.icon = app.CreateExpansion(expansionLevel + 1).icon;
 						elseif isTimeWalker then
@@ -5898,7 +5880,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 						end
 						gfg[#gfg + 1] = header
 					end
-					tinsert(temp, CreateObject(groupFinder));
+					MergeObject(temp, groupFinder)
 				end
 
 				-- put all the things into the window data, turning them into objects as well
