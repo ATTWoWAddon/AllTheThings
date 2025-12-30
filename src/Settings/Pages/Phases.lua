@@ -1,4 +1,4 @@
-local _, app = ...;
+local appName, app = ...;
 if not app.IsClassic then return; end	-- This is only available in Classic!
 local date, L, settings = date, app.L, app.Settings;
 
