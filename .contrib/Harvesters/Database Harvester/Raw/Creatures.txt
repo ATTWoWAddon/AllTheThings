@@ -23267,6 +23267,8 @@
 257174@@@Dragonscale Researcher
 257178@@@Vulpera Mixologist
 257279@@@Anduin Wrynn
+11.2.7.64978
+251511@@@Heartglow Listener
 12.0.0.63534
 143622@@@Ancient Imp
 222593@@@Emerald Sporbit

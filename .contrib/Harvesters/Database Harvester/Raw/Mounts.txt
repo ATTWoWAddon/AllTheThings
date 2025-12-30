@@ -2356,6 +2356,8 @@
 1264988@@@Snowpaw Glimmerfur Prowler
 1266248@@@Savage Crimson Battle Turtle
 1266579@@@Cloudborn Razorwing
+11.2.7.64978
+1247422@@@Scorching Valor
 12.0.0.63534
 447173@@@Elder Glowmite
 451487@@@Retrained Skyrazor
@@ -2457,5 +2459,4 @@
 1270522@@@Comfy Bel'ameth Flying Quilt
 1270523@@@Comfy Silvermoon Flying Quilt
 12.0.1.64889
-1247422@@@Scorching Valor
 1261298@@@Crimson Dragonhawk
