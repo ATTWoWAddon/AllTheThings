@@ -1,4 +1,4 @@
-0.5.3.3368
+﻿0.5.3.3368
 1@@@Sharpened (TEST)
 2@@@Lightning Proc (TEST)
 3@@@Freeze Enemy

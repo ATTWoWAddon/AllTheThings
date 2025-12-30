@@ -1,4 +1,4 @@
-1.13.0.28211
+﻿1.13.0.28211
 1@@@Dun Morogh
 2@@@Longshore
 3@@@Badlands
@@ -1220,10 +1220,6 @@
 16374@@@Arcane Sanctum
 16394@@@Naxxramas
 1.15.7.62797
-1221@@@Ruins of Eldarath
-1997@@@Bloodvenom Post
-1998@@@Talonbranch Glade
-15810@@@Bloodvenom Post
 2.5.1.38043
 65@@@Reuse Me 3
 66@@@Reuse Me 6
@@ -10726,9 +10722,13 @@
 16601@@@The Sunwell
 16863@@@Quiet Cavern
 16864@@@Consumptor Cave
+12.0.0.64975
+1221@@@Ruins of Eldarath 
+1997@@@Bloodvenom Post 
+1998@@@Talonbranch Glade 
+16814@@@Magisters' Terrace
 12.0.1.64889
 16543@@@Floaret Grotto
-16814@@@Magisters' Terrace
 16829@@@The Approach
 16873@@@Razorwind Camp
 16874@@@Founders Point Camp

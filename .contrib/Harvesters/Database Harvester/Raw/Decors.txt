@@ -1,4 +1,4 @@
-11.2.7.63642
+﻿11.2.7.63642
 12@@@[DNT] Orgrimmar Interior Wall - DO NOT USE
 13@@@[DNT] Partition Pillar (WMO) - DO NOT USE
 60@@@[DNT] Partition Doorway (WMO) - DO NOT USE
@@ -3003,25 +3003,33 @@
 19231@@@Endless Codex of Nature's Grace
 19234@@@Endless Codex of the Voidtouched
 19252@@@[DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2
+12.0.0.64975
+1204@@@Sunsmoke Censer DEPRICATED DONT USE
+3920@@@[DNT] Orange Spore Light - endeavor canceled (inside only)
+3921@@@[DNT] Spore Light - endeavor canceled (inside only)
+10273@@@Sin'dorei Artisan's Easel
+14977@@@Gilded Eversong Cup
+17918@@@Granite Cobblestone Long Path
+17919@@@Granite Cobblestone Path
+18482@@@[DNT] DR_DRAENEI_HOLORUNES02.M2 - Do not use - duplicate
+19197@@@Dreamrift Vanquisher's Argent Trophy
+19198@@@March on Quel'Danas Vanquisher's Argent Trophy
+19252@@@Voidspire Vanquisher's Argent Trophy
+20172@@@[DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
 12.0.1.64889
 1147@@@Rutaani Sporepod
 1159@@@Sin'dorei Honor Stone
-1204@@@Sunsmoke Censer DEPRICATED DONT USE
 1726@@@Sturdy Haranir Handcart
 2224@@@Stoppered Spring Water Gourd
 2232@@@Ruddy Haranir Pigment Bowl
 2605@@@Rustic Harandar Planter
-3920@@@[DNT] Orange Spore Light - endeavor canceled (inside only)
-3921@@@[DNT] Spore Light - endeavor canceled (inside only)
 8993@@@Fungal Pergola
-10273@@@Sin'dorei Artisan's Easel
 10327@@@Root-Woven Door
 10542@@@"Eversong Lantern" Painting
 10778@@@Root-Woven Window
 10858@@@Zul'Aman Ancestral Fountain
 11325@@@Amani Spearhunter's Spit
 14554@@@Ornate Cosmic Rug
-14977@@@Gilded Eversong Cup
 15155@@@Bubbling Haranir Cauldron
 15483@@@Sin'dorei Storage Jar
 15486@@@Depthdiver's Cooking Spit
@@ -3031,10 +3039,4 @@
 16092@@@Zul'Aman Flame Cradle
 17516@@@Fungarian Vine Fence
 17886@@@Altar of the Shul'ka
-17918@@@Granite Cobblestone Long Path
-17919@@@Granite Cobblestone Path
-18482@@@[DNT] DR_DRAENEI_HOLORUNES02.M2 - Do not use - duplicate
 18800@@@Open Void Elf Bedroll
-19197@@@Dreamrift Vanquisher's Argent Trophy
-19198@@@March on Quel'Danas Vanquisher's Argent Trophy
-19252@@@Voidspire Vanquisher's Argent Trophy

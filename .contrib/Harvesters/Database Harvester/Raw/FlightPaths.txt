@@ -1,4 +1,4 @@
-0.5.3.3368
+﻿0.5.3.3368
 1@@@Northshire Abbey
 2@@@Stormwind, Elwynn
 3@@@Programmer Isle
