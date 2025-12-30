@@ -16748,8 +16748,6 @@ s(146471)/i(29143),	-- thoof Hide Quiver \\ Clefthoof Hide Quiver
 s(146472)/i(29144),	-- Hide Quiver \\ Worg Hide Quiver
 s(146473)/i(34100),	-- hide Quiver \\ Knothide Quiver
 s(146474)/i(34105),	-- er of a Thousand Feathers \\ Quiver of a Thousand Feathers
-3.4.3.51831
-s(48336)/i(92553),	-- ish X-Ray Specs Visual \\ Gnomish X-Ray Specs Visual
 7.3.0.24473
 s(147)/i(906),	-- Tan Leather Shoulderpads (Test)
 s(148)/i(907),	-- Black Mail Shoulderpads of might (Test)
@@ -16801,7 +16799,6 @@ s(2552)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
 s(2553)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
 s(2637)/i(6886),	-- Monster - Throwing Knife
 s(2730)/i(7248),	-- Twain TEST Cloak
-s(3007)/i(7996),	-- Fishing Hat \\ Worn Fishing Hat
 s(3010)/i(8067),	-- ted Light Shot \\ Crafted Light Shot
 s(3011)/i(8068),	-- ted Heavy Shot \\ Crafted Heavy Shot
 s(3012)/i(8069),	-- ted Solid Shot \\ Crafted Solid Shot
@@ -17531,7 +17528,6 @@ s(16067)/i(34603),	-- racting Blades \\ Distracting Blades
 s(16081)/i(34622),	-- esever \\ Spinesever
 s(16096)/i(34662),	-- zzOLDEnchanted Thorium Spikes
 s(16125)/i(34716),	-- er Cufflinks \\ Silver Cufflinks
-s(16127)/i(34718),	-- k Leather Shoes \\ Black Leather Shoes
 s(16130)/i(34783),	-- tstrike \\ Nightstrike
 s(16226)/i(34965),	-- Test Copy Unwavering Legguards
 s(16227)/i(34966),	-- Test Two Unwavering Legguards
@@ -17843,7 +17839,6 @@ s(21771)/i(45296),	-- ling Blades \\ Twirling Blades
 s(21946)/i(45499),	-- Test Wraps of the Item Purchase Refund
 s(21997)/i(45575),	-- Test Melee Rifle [PH]
 s(22046)/i(45692),	-- Monster - Sword, Vargul (Blue) (2H)
-s(22093)/i(45860),	-- tal Tiara \\ Crystal Tiara
 s(22232)/i(46104),	-- Shirt of the Yogg-Slayer
 s(22233)/i(46105),	-- Shirt of the Future Champion
 s(22431)/i(46326),	-- Conqueror's Darkruned Boots
@@ -19358,7 +19353,6 @@ s(31112)/i(61917),	-- QA PVP Test Warrior DPS Set Helm
 s(31113)/i(61918),	-- QA PVP Test Warrior DPS Set Legs
 s(31114)/i(61919),	-- QA PVP Test Warrior DPS Set Shoulders
 s(31134)/i(62032),	-- Monster - Mace, Wildhammer Stormhammer (Lightning)
-s(31140)/i(62058),	-- diated Bandages \\ Irradiated Bandages
 s(31141)/i(62059),	-- Gnome Pants \\ Torn Gnome Pants
 s(31142)/i(62060),	-- diated Gnome Boots \\ Irradiated Gnome Boots
 s(31297)/i(62232),	-- Great Sword of the Sin'dorei
@@ -24258,7 +24252,6 @@ s(47327)/i(90982),	-- Art Template Mail Hand - Mail_PVPHunter_F_01 - Red
 s(47328)/i(90983),	-- Art Template Mail Head - Mail_PVPHunter_F_01 - Red
 s(47329)/i(90984),	-- Art Template Mail Legs - Mail_PVPHunter_F_01 - Red
 s(47330)/i(90985),	-- Art Template Mail Shoulder - Mail_PVPHunter_F_01 - Red
-s(47331)/i(90986),	-- Bracelet \\ Ruby Bracelet
 s(47332)/i(90987),	-- Art Template Plate Belt - Plate_PVPDeathKnight_F_01 - Alliance
 s(47333)/i(90988),	-- Art Template Plate Boot - Plate_PVPDeathKnight_F_01 - Alliance
 s(47334)/i(90989),	-- Art Template Plate Chest - Plate_PVPDeathKnight_F_01 - Alliance
@@ -24712,7 +24705,6 @@ s(48427)/i(92891),	-- Art Template Generic Head - Helm_Misc_FireworkPartyHat_A_0
 s(48428)/i(92892),	-- Art Template Generic Head - Helm_Misc_FishPartyHat_A_01
 s(48429)/i(92893),	-- Art Template Generic Head - Helm_Misc_SquidPartyHat_A_01
 s(48431)/i(92895),	-- Art Template Generic Head - Helm_Misc_VikingPartyHat_A_01
-s(48432)/i(92948),	-- ler's Razor Claws \\ Brawler's Razor Claws
 s(48433)/i(92961),	-- Monster - Staff_2H_Hozumonkeyking_01
 s(48553)/i(93150),	-- Art Template Leather Belt Leather_PVPRogue_F_01 - Alliance
 s(48554)/i(93151),	-- Art Template Leather Boot Leather_PVPRogue_F_01 - Alliance
@@ -24898,7 +24890,6 @@ s(48988)/i(93837),	-- Art Template Plate Head - Plate_PVPWarrior_F_01 - Bronze
 s(48989)/i(93838),	-- Art Template Plate Legs - Plate_PVPWarrior_F_01 - Bronze
 s(48990)/i(93839),	-- Art Template Plate Shoulder - Plate_PVPWarrior_F_01 - Bronze
 s(48991)/i(93840),	-- Art Template Plate Wrist - Plate_PVPWarrior_F_01 - Bronze
-s(49008)/i(93858),	-- ler's Bladed Claws \\ Brawler's Bladed Claws
 s(49018)/i(93868),	-- Art Template Plate Belt - Plate_PVPWarrior_F_01 - Gold
 s(49019)/i(93869),	-- Art Template Plate Boot - Plate_PVPWarrior_F_01 - Gold
 s(49020)/i(93870),	-- Art Template Plate Chest - Plate_PVPWarrior_F_01 - Gold
@@ -30980,6 +30971,13 @@ s(84500)/i(144259),	-- Kil'jaeden's Burning Wish \\ jaeden's Burning Wish
 s(84506)/i(144278),	--
 s(84514)/i(144320),	--
 s(84515)/i(144321),	--
+s(84530)/i(144365),	-- The Very Best Shirt \\ Very Best Shirt
+s(84531)/i(144366),	-- Dubvest \\ est
+s(84532)/i(144367),	-- Observer's Shirt \\ rver's Shirt
+s(84533)/i(144368),	-- Felfeather Jersey \\ eather Jersey
+s(84535)/i(144370),	-- Croc-Tooth Harness \\ -Tooth Harness
+s(84536)/i(144371),	-- Gorestained Tunic \\ stained Tunic
+s(84537)/i(144372),	-- Hide of the Murderaffe \\ of the Murderaffe
 s(84542)/i(144388),	--
 s(84579)/i(144456),	--
 s(85937)/i(146114),	--
@@ -31080,6 +31078,7 @@ s(89294)/i(151172),	--
 s(89301)/i(151182),	--
 s(89306)/i(151196),	--
 s(89323)/i(151260),	--
+s(89324)/i(151263),	-- Electrified Compression Shirt \\ trified Compression Shirt
 s(89397)/i(151357),	--
 s(89398)/i(151358),	--
 s(89399)/i(151359),	--
@@ -42017,11 +42016,12 @@ s(304288)/i(267639),	-- Tarnished Silvermoon Sunguard
 s(304289)/i(267640),	-- Tarnished Silvermoon Sunveil
 s(304290)/i(267641),	-- Tarnished Silvermoon Suncrest
 s(304324)/i(268069),	--
+12.0.0.64975
+s(304557)/i(268361),	--
 12.0.1.64889
 s(304520)/i(268274),	-- Blinky's Collar
 s(304555)/i(268326),	-- Sin'dorei Citizen's Cloak
 s(304556)/i(268327),	-- Sin'dorei Citizen's Shawl
-s(304557)/i(268361),	--
 s(304558)/i(268365),	-- Thalassian Competitor's Staff
 s(304585)/i(268475),	-- Evercore Dome Dinger
 s(304586)/i(268477),	-- P.O.W. x3

@@ -1,17 +1,19 @@
+8.3.0.32489
+pet(2779),	-- Anima Wyrmling
+11.2.7.64978
+pet(4894),	-- Heartglow Listener
 12.0.0.63534
 pet(4887),	-- Dundun
 pet(4905),	-- [DNT] Baby Amazard (Red)
 12.0.0.63724
 pet(4945),	-- Aud'rei III
-12.0.0.64741
-pet(5003),	-- Sunwing Hatchling
 
 
 
 
 Missing in PetDB.lua
 
+11.2.7.64978
+pet(4894),	-- Heartglow Listener
 12.0.0.63534
 pet(4795),	-- Voidcrawler
-12.0.0.64741
-pet(5003),	-- Sunwing Hatchling

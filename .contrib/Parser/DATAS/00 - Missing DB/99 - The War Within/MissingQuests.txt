@@ -2104,8 +2104,6 @@ q(91029),	--
 q(91171),	--
 q(91172),	--
 q(91202),	--
-11.1.7.61965
-q(92347),	--
 11.2.0.61476
 q(84763),	--
 q(84764),	--
@@ -2267,10 +2265,6 @@ q(92843),	--
 q(93516),	--
 11.2.5.63906
 q(94008),	--
-11.2.5.64154
-q(94422),	--
-11.2.5.64484
-q(94932),	--
 11.2.7.63642
 q(63415),	--
 q(83547),	-- Welcome to the Neighborhood
@@ -2310,8 +2304,6 @@ q(86960),	-- The Key to Good Health
 q(86962),	-- Blood in the Wound
 q(87000),	-- No Wood Left Behind
 q(90973),	--
-q(91041),	-- A Gently Shaken Gift
-q(91042),	-- A Winter Veil Gift
 q(91200),	--
 q(91204),	--
 q(91692),	--
@@ -2333,15 +2325,9 @@ q(92498),	--
 q(92535),	--
 q(92536),	--
 q(92537),	--
-q(92578),	--
-q(92580),	-- Spare A Chair
 q(92581),	--
 q(92584),	--
 q(92585),	--
-q(92715),	-- By Invitation Only?
-q(92740),	-- Questionable Qualifications
-q(92845),	-- By Invitation Only?
-q(92851),	-- Questionable Qualifications
 q(92876),	--
 q(92943),	--
 q(93042),	--
@@ -2356,7 +2342,6 @@ q(93324),	--
 q(93325),	--
 q(93326),	--
 q(93327),	--
-q(93328),	--
 q(93329),	--
 q(93330),	--
 q(93331),	--
@@ -2371,7 +2356,6 @@ q(93398),	--
 q(93400),	--
 q(93401),	--
 q(93402),	--
-q(93403),	--
 q(93405),	--
 q(93441),	--
 q(93452),	-- Retrieved Crumpled Present
@@ -2388,12 +2372,9 @@ q(93765),	--
 q(93877),	-- Conditional Objectives - Sequential
 q(93878),	-- Conditional Objectives - Multiple Steps, No Sequence
 q(93879),	-- Conditional Objectives - Conditional After Sequence
-q(93888),	--
 q(93901),	-- [DNT] House Level 2 Room Award
 q(93902),	-- [DNT] House Level 4 Room Award
-q(94363),	-- The Gloves Are Off
 q(94364),	--
-q(94372),	-- The Gloves Are Off
 11.2.7.64044
 q(94431),	-- [DNT] House Level 3 Room Award
 q(94437),	-- [DNT] House Level 5 Room Award
@@ -5201,6 +5182,15 @@ q(95053),	--
 q(95054),	--
 q(95067),	--
 q(95068),	--
+12.0.0.64975
+q(95146),	--
+q(95166),	--
+q(95215),	-- BETA:A New Direction
+q(95220),	-- BETA:Midnight (20-79) E
+q(95230),	-- BETA:Midnight (80) E
+q(95237),	-- BETA:Midnight (81-89) E
+q(95247),	--
+q(95281),	--
 12.0.1.64889
 q(93581),	-- BETA:Against Overwhelming Odds
 q(93582),	--
@@ -5219,10 +5209,8 @@ q(95135),	--
 q(95136),	--
 q(95137),	--
 q(95138),	--
-q(95146),	--
 q(95154),	--
 q(95155),	--
-q(95166),	--
 q(95167),	--
 q(95168),	--
 q(95169),	--
@@ -5231,13 +5219,8 @@ q(95171),	--
 q(95172),	--
 q(95173),	--
 q(95175),	-- BETA:Anchoring the Defense
-q(95215),	-- BETA:A New Direction
-q(95220),	-- BETA:Midnight (20-79) E
-q(95230),	-- BETA:Midnight (80) E
 q(95234),	--
-q(95237),	-- BETA:Midnight (81-89) E
 q(95240),	--
 q(95243),	--
 q(95244),	--
 q(95245),	-- BETA:Midnight: World Tour
-q(95247),	--

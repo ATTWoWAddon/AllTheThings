@@ -642,7 +642,7 @@ exploration(4072),	-- Sub zone
 exploration(4073),	-- Winter's Terrace
 exploration(4074),	-- The Waking Halls
 exploration(4079),	-- Frostblade Pass
-exploration(4096),	-- Clayt�n's WoWEdit Land \\ Claytön's WoWEdit Land
+exploration(4096),	-- Claytön's WoWEdit Land
 exploration(4100),	-- The Culling of Stratholme
 exploration(4102),	-- Krom's Landing
 exploration(4110),	-- Farshire Fields
@@ -5174,3 +5174,5 @@ exploration(16864),	-- Consumptor Cave
 12.0.1.64889
 exploration(16873),	-- Razorwind Camp
 exploration(16874),	-- Founders Point Camp
+12.0.1.64914
+exploration(16875),	-- Den of the Undreamt

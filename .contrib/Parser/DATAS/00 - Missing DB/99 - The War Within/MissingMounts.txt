@@ -17,10 +17,8 @@ mount(1261349),	-- Giganto Manis
 12.0.0.64339
 mount(1261391),	-- Relinquished Scarlet Charger
 12.0.0.64741
-mount(1261332),	-- Duskbrute Harrower
 mount(1266703),	-- Lab-grown Stormray
 12.0.1.64889
-mount(1247422),	-- Scorching Valor
 mount(1261298),	-- Crimson Dragonhawk
 
 
@@ -30,9 +28,3 @@ Missing in MountDB.lua
 
 12.0.0.63534
 mount(1251665),	-- Amani Blessed Bear
-12.0.0.64741
-mount(1261332),	-- Duskbrute Harrower
-mount(1266703),	-- Lab-grown Stormray
-12.0.1.64889
-mount(1247422),	-- Scorching Valor
-mount(1261298),	-- Crimson Dragonhawk

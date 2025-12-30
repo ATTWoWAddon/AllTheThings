@@ -76,7 +76,7 @@ r(1230759),	-- Refulgent Weightstone
 r(1230760),	-- Refulgent Razorstone
 r(1230761),	-- Refulgent Copper Ingot
 r(1230762),	-- Gloaming Alloy
-r(1230763),	-- Dazzling Alloy
+r(1230763),	-- Sterling Alloy \\ Dazzling Alloy
 r(1230764),	-- Refulgent Repair Hammer
 r(1230765),	-- [DNT] TBD Master Repair Hammer
 r(1230766),	-- Murder Row Fleet Feet Recipe \\ Murder Row Fleet Feet
@@ -194,7 +194,7 @@ r(1230759),	-- Refulgent Weightstone
 r(1230760),	-- Refulgent Razorstone
 r(1230761),	-- Refulgent Copper Ingot
 r(1230762),	-- Gloaming Alloy
-r(1230763),	-- Dazzling Alloy
+r(1230763),	-- Sterling Alloy \\ Dazzling Alloy
 r(1230764),	-- Refulgent Repair Hammer
 r(1230765),	-- [DNT] TBD Master Repair Hammer
 r(1230766),	-- Murder Row Fleet Feet Recipe \\ Murder Row Fleet Feet
