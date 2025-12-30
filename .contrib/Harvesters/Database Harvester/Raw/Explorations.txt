@@ -1893,7 +1893,7 @@
 4074@@@The Waking Halls
 4077@@@Sorlof's Strand
 4079@@@Frostblade Pass
-4096@@@ClaytÃƒÂ¶n's WoWEdit Land
+4096@@@ClaytÃƒÆ’Ã‚Â¶n's WoWEdit Land
 4097@@@Winterfin Caverns
 4098@@@Glimmer Bay
 4099@@@Winterfin Retreat
@@ -2554,7 +2554,7 @@
 3.4.0.45102
 14483@@@Uncharted Territory
 3.4.5.62824
-4096@@@ClaytÃ¶n's WoWEdit Land
+4096@@@ClaytÃƒÂ¶n's WoWEdit Land
 4.4.0.53627
 17@@@Northern Barrens
 33@@@Northern Stranglethorn
