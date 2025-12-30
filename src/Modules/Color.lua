@@ -270,7 +270,7 @@ end
 app.GetColoredTimeRemaining = function(t)
 	-- Returns 'Time Left: %s'
 	if t and t > 0 then
-		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t * 60));
+		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t))
 		if t < 30 then
 			return Colorize(timeLeft, colors.TimeUnder30Min);
 		elseif t < 120 then

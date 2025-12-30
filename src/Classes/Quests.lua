@@ -1642,7 +1642,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return IsQuestSaved(t.questID);
 	end,
 	timeRemaining = function(t)
-		return t.isWorldQuest and GetQuestTimeLeftMinutes(t.questID) or nil;
+		return t.isWorldQuest and GetQuestTimeLeftMinutes(t.questID) * 60 or nil;
 	end,
 
 	-- Defaults (Mostly used for nesting quests under their npcs for Pet Battles)
@@ -1807,7 +1807,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return true;
 	end,
 	timeRemaining = function(t)
-		return GetQuestTimeLeftMinutes(t.questID);
+		return GetQuestTimeLeftMinutes(t.questID) * 60;
 	end,
 }, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
 --]]
