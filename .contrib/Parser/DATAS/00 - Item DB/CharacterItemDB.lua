@@ -13,10 +13,11 @@ ihqt() - This is simply an Item which triggers a QuestID, but no noticeable diff
 --]]
 
 local Items = ItemDBConditional;
+local Spells
 -- #IF ANYCLASSIC
-local Spells = RecipeDB;
+Spells = RecipeDB;
 -- #ELSE
-local Spells = SpellDB;
+Spells = SpellDB;
 -- #ENDIF
 local iq = function(itemID, questID, classID, raceID)
 	if not itemID or itemID < 1 then
