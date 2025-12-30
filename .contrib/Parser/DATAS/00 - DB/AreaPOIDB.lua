@@ -18,6 +18,28 @@ local q = function(questID, ...)
 	end
 end
 
+-- BFA Assaults
+q(54136, 5969)	-- Nazmir Assault [A]
+q(54135, 5969)	-- Nazmir Assault [H]
+q(54134, 5970)	-- Voldun Assault [A]
+q(53885, 5970)	-- Voldun Assault [H]
+q(54138, 5973)	-- Zuldazar Assault [A]
+q(53883, 5973)	-- Zuldazar Assault [H]
+q(53701, 5964)	-- Drustvar Assault [A]
+q(54137, 5964)	-- Drustvar Assault [H]
+q(51982, 5966)	-- Stormsong Valley Assault [A]
+q(54132, 5966)	-- Stormsong Valley Assault [H]
+q(53711, 5896)	-- Tiragarde Sound Assault [A]
+q(53939, 5896)	-- Tiragarde Sound Assault [H]
+
+-- BFA Black Empire Assaults
+q(56064, 6489)	-- Assault: The Black Empire
+q(57728, 6491)	-- Assault: The Endless Swarm
+q(57008, 6490)	-- Assault: The Warring Clans
+q(57157, 6486)	-- Assault: The Black Empire
+q(56308, 6488)	-- Assault: Aqir Unearthed
+q(55350, 6487)	-- Assault: Amathet Advance
+
 -- Legion Invasions/Assaults
 q(47063, 5175, 5177, 5178, 5210, 5270, 5271, 5272, 5273)	-- Legion Assault
 
