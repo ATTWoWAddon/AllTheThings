@@ -292,7 +292,7 @@ def add_latest_build(build: str) -> list[str]:
         if version.parse(build) > version.parse(build_lines[-1]):
             build_lines.append(build + "\n")
             next_builds.append(build + "\n")
-    with open("Builds.txt", "w", encoding="utf-8", errors="replace") as build_list:
+    with open("Builds.txt", "w") as build_list:
         build_list.writelines(build_lines)
     return next_builds
 
@@ -484,7 +484,7 @@ def post_process_recipes(flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path_dict[profession], "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path_dict[profession], "w") as missing_file:
             missing_file.writelines(missing_lines)
     return
 
@@ -527,7 +527,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Followers:
@@ -563,7 +563,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                         missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                     else:
                         missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Illusions:
@@ -578,7 +578,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Quests:
@@ -597,7 +597,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Toys:
@@ -612,7 +612,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Transmog:
@@ -629,7 +629,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w", encoding="utf-8", errors="replace") as missing_file:
+        with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
 
@@ -666,10 +666,10 @@ def add_latest_data(build: str) -> None:
                 print("Nothing New")
             before_list.extend(after_list)
             before_list = list(dict.fromkeys(before_list))
-        with open(raw_path, "w", encoding="utf-8", errors="replace") as raw_file:
+        with open(raw_path, "w") as raw_file:
             raw_file.writelines(before_list)
         if difference and thing == Items:
-            with open("FastItem.txt", "w", encoding="utf-8", errors="replace") as item_file:
+            with open("FastItem.txt", "w") as item_file:
                 for index, name_line in enumerate(difference):
                     id: str = re.sub("[^\\d^.]", "", name_line.split(DELIMITER)[0].strip())
                     try:
