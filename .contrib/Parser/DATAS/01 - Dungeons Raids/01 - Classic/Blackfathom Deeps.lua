@@ -91,6 +91,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["timeline"] = { REMOVED_1_2_4 },
+					-- #if AFTER 1.2.4
+					["description"] = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -1096,16 +1099,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_1_2_4, REMOVED_4_0_3 } }, {
-		inst(227, {
-			q(908),	-- Triggered completing Amongst the Ruins 2nd version, 908 was the original ID in classic and reemplaced in the patch 1.2.4
-		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-		inst(227, {
-			q(35929),	-- Blackfathom Deeps Reward Quest - Normal completion
-			q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
-		}),
-	})),
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	inst(227, {
+		q(35929),	-- Blackfathom Deeps Reward Quest - Normal completion
+		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
+	}),
+})));
