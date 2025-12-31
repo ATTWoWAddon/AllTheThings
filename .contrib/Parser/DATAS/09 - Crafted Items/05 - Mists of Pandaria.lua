@@ -681,6 +681,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(74724),	-- Enchant Weapon - Jade Spirit
 			i(74728),	-- Enchant Weapon - River's Song
 			i(74723),	-- Enchant Weapon - Windsong
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,i(254314, {["timeline"] = {ADDED_5_5_1}})),	-- Enchant Weapon - Tyrann
+			-- #endif
 		}),
 	}),
 	prof(ENGINEERING, {
