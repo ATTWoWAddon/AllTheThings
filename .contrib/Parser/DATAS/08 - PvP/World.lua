@@ -91,6 +91,14 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 		}),
 	})),
 	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
+			ach(14516, {	-- Impressing Zo'Sorg
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(14515, {	-- Zo'Sorg's Bidding
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+		}),
 		n(BOUNTY, {
 			i(184810),	-- Plundered Supplies
 		}),
@@ -347,7 +355,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					61230,	-- Remains in the Rise
 					61266,	-- Spectral Stocker
 					61229,	-- Dedication in the Void
-					61449,	-- Customary Rise	
+					61449,	-- Customary Rise
 					61232,	-- Midnight Treasures
 				}},
 				["groups"] = {
