@@ -1035,13 +1035,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(30989, {	-- An Old Pit Fighter
-					["sourceQuest"] = 30988,	-- The Alliance Way
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
-				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
 					["provider"] = { "o", 369893 },	-- Urgent Missive
@@ -3230,13 +3223,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 881,	-- Surena Caledon
 						}),
 					},
-				}),
-				q(30988, {	-- The Alliance Way
-					["sourceQuest"] = 30987,	-- Joining the Alliance
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
 				q(434, {	-- The Attack!
 					["sourceQuest"] = 2746,	-- Items of Some Consequence

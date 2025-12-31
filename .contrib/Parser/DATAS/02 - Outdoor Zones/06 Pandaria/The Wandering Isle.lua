@@ -69,6 +69,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(30989, {	-- An Old Pit Fighter
+						["sourceQuest"] = 30988,	-- The Alliance Way
+						["qg"] = 61796,	-- King Varian Wrynn
+						["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
+					}),
 					q(29410, {	-- Aysa of the Tushui
 						["sourceQuest"] = 29409,	-- The Disciple's Challenge
 						["qg"] = 53566,	-- Master Shang Xi
@@ -237,6 +244,14 @@ root(ROOTS.Zones, {
 								},
 							}),
 						},
+					}),
+					q(31014, {	-- Hellscream's Gift
+						["sourceQuest"] = 31013,	-- The Horde Way
+						["qg"] = 62092,	-- Garrosh Hellscream
+						["coord"] = { 70.6, 30.8, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["maps"] = { 503 },	-- Brawl'gar Arena
+						["races"] = { PANDAREN_HORDE },
 					}),
 					q(29422, {	-- Huo, the Spirit of Fire
 						["sourceQuest"] = 29421,	-- Only the Worthy Shall Pass
@@ -771,6 +786,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(30988, {	-- The Alliance Way
+						["sourceQuest"] = 30987,	-- Joining the Alliance
+						["qg"] = 61796,	-- King Varian Wrynn
+						["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
+					}),
 					q(29664, {	-- The Challenger's Fires
 						["sourceQuest"] = 29420,	-- The Spirit's Guardian
 						["qg"] = 54135,	-- Master Li Fei
@@ -858,6 +880,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
+					}),
+					q(31013, {	-- The Horde Way
+						["sourceQuest"] = 31012,	-- Joining the Horde
+						["qg"] = 39605,	-- Garrosh Hellscream
+						["coord"] = { 48.2, 70.6, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4 },
+						["races"] = { PANDAREN_NEUTRAL },
 					}),
 					q(29661, {	-- The Lesson of Dry Fur
 						["sourceQuest"] = 29521,	-- The Singing Pools

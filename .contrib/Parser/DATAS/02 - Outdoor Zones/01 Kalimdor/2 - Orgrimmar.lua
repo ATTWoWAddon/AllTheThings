@@ -1264,14 +1264,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						COOKING_AWARD,
 					},
 				}),
-				q(31014, {	-- Hellscream's Gift
-					["sourceQuest"] = 31013,	-- The Horde Way
-					["qg"] = 62092,	-- Garrosh Hellscream
-					["coord"] = { 70.6, 30.8, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["maps"] = { 503 },	-- Brawl'gar Arena
-					["races"] = { PANDAREN_HORDE },
-				}),
 				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
 					["altQuests"] = {
@@ -2008,13 +2000,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 50.9, 37.8, ORGRIMMAR },
 						}),
 					},
-				}),
-				q(31013, {	-- The Horde Way
-					["sourceQuest"] = 31012,	-- Joining the Horde
-					["qg"] = 39605,	-- Garrosh Hellscream
-					["coord"] = { 48.2, 70.6, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = { PANDAREN_NEUTRAL },
 				}),
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria
