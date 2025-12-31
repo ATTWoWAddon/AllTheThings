@@ -78,6 +78,24 @@ root(ROOTS.Housing, n(QUESTS, {
 			["timeline"] = { ADDED_12_0_0 },
 		}),
 		-- Misc
+		q(92578, {	-- Draconic Decor
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(248116) },	-- Valdrakken Chandelier (DECOR!)
+		}),
+		q(92577, {	-- Dreamy Inspiration
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(245259) },	-- Small Val'sharah Bookcase (DECOR!)
+		}),
 		q(92572, {	-- Furniture Favor
 			["qg"] = 252312,	-- Second Chair Pawdo
 			["coords"] = {
@@ -87,23 +105,14 @@ root(ROOTS.Housing, n(QUESTS, {
 			},
 			["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
 		}),
-		q(92577, {	-- Furniture Favor
+		q(92581, {	-- Last Light
 			["qg"] = 252312,	-- Second Chair Pawdo
 			["coords"] = {
 				{ 52.9, 68.0, DORNOGAL },
 				{ 52.9, 89.0, ORGRIMMAR },
 				{ 56.1, 77.1, STORMWIND_CITY },
 			},
-			["groups"] = { i(245259) },	-- Small Val'sharah Bookcase (DECOR!)
-		}),
-		q(92578, {	-- Draconic Decor
-			["qg"] = 252312,	-- Second Chair Pawdo
-			["coords"] = {
-				{ 52.9, 68.0, DORNOGAL },
-				{ 52.9, 89.0, ORGRIMMAR },
-				{ 56.1, 77.1, STORMWIND_CITY },
-			},
-			["groups"] = { i(248116) },	-- Valdrakken Chandelier (DECOR!)
+			["groups"] = { i(247915) },	-- Square Suramar Table (DECOR!)
 		}),
 		q(92580, {	-- Spare A Chair
 			["qg"] = 252312,	-- Second Chair Pawdo

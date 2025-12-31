@@ -6135,8 +6135,6 @@ root(ROOTS.Unsorted, {
 			n(DECOR, {
 				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
 				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-				i(247908),	-- Nightborne Lantern
-				i(247915),	-- Square Suramar Table
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread
