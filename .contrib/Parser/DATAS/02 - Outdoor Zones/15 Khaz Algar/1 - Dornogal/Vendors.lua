@@ -701,10 +701,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ 56.1, 77.1, STORMWIND_CITY },
 				},
 				["groups"] = {
-					i(253168),	-- Earthen Storage Crate (DECOR!)
-					i(253173),	-- Meadery Storage Barrel (DECOR!)
-					i(245655),	-- Filigree Moon Lamp (DECOR!)
-					i(245259),	-- Small Val'sharah Bookcase (DECOR!)
+					i(246601, {	-- Bolt Chair (DECOR!)
+						["sourceQuest"] = 92580,	-- Spare A Chair
+					}),
+					i(256168, {	-- Draconic Sconce (DECOR!)
+						["sourceQuest"] = 92578,	-- Draconic Decor
+					}),
+					i(253168, {	-- Earthen Storage Crate (DECOR!)
+						["sourceQuest"] = 92572,	-- Furniture Favor
+					}),
+					i(245655, {	-- Filigree Moon Lamp (DECOR!)
+						["sourceQuest"] = 92577,	-- Dreamy Inspiration
+					}),
+					i(246487, {	-- Gnomish Tesla Coil (DECOR!)
+						["sourceQuest"] = 92580,	-- Spare A Chair
+					}),
+					i(253173, {	-- Meadery Storage Barrel (DECOR!)
+						["sourceQuest"] = 92572,	-- Furniture Favor
+					}),
+					i(247908, {	-- Nightborne Lantern (DECOR!)
+						["sourceQuest"] = 92581,	-- Last Light
+					}),
+					i(245259, {	-- Small Val'sharah Bookcase (DECOR!)
+						["sourceQuest"] = 92577,	-- Dreamy Inspiration
+					}),
+					i(247915, {	-- Square Suramar Table (DECOR!)
+						["sourceQuest"] = 92581,	-- Last Light
+					}),
 					i(248116, {	-- Valdrakken Chandelier (DECOR!)
 						["sourceQuest"] = 92578,	-- Draconic Decor
 					}),
