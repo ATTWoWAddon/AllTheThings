@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, {
 							{		-- RENOWN 1 --
 								i(245293, {	-- Collection of Arathi Scripture (DECOR!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 5200 }},
+									["cost"] = {{ "c", RESONANCE_CRYSTALS, 1200 }},
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 							}, {	-- RENOWN 2 --

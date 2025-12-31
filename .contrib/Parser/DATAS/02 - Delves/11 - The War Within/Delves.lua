@@ -3628,7 +3628,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			filter(MISC, {
 				i(244901, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Statically Charged (CI!)
 				i(234454),	-- Remote Teleporter (QI!)
-				i(234451),	-- Stolen Goods (QI!)
+				o(504179, {	-- Stolen Goods
+					i(234451),	-- Stolen Goods (QI!)
+				}),
 			}),
 			n(TREASURES, {
 				o(503157, {	-- Sturdy Chest

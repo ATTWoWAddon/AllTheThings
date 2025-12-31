@@ -712,11 +712,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 						["coords"] = {
 							{ 42.9, 6.1, TRUESHOT_LODGE },
+							{ 47.5, 39.4, TRUESHOT_LODGE },
 							{ 49.9, 65.7, 723 },	-- Violet Hold (Scenario Map)
 						},
-						["groups"] = {
-							follower(748),	-- Halduron Brightwing
-						},
+						["groups"] = { follower(748) },	-- Halduron Brightwing
 					}),
 					q(44090, {	-- Pledge of Loyalty
 						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
@@ -768,9 +767,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 117308 },	-- D'Bynn
 						["coord"] = { 52.2, 48.9, SURAMAR },
 						["timeline"] = { ADDED_7_2_0 },
-						["groups"] = {
-							i(143788),	-- Manaroot (QI!)
-						},
+						["groups"] = { i(143788) },	-- Manaroot (QI!)
 					}),
 					q(45553, {	-- The Nighthuntress Beckons
 						["sourceQuests"] = { 45552 },	-- Soothing Wounds

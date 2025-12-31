@@ -1816,7 +1816,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 244908 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.8, 77.9, ORGRIMMAR },
+			},
 			["lvl"] = 10,
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -2428,24 +2431,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #if AFTER 8.3.0
 	n(TREASURES, {
 		o(180746, {	-- Gently Shaken Gift
-			i(178529, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_9_0_1 },
-			}),
-			i(187520, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(192093, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_10_0_2_LAUNCH },
-			}),
-			i(210657, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_10_2_0 },
-			}),
-			i(218309, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_11_0_7 },
-			}),
-			i(244906, {	-- Gently Shaken Gift
-				["timeline"] = { ADDED_11_2_7 },
-			}),
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.9, 78.5, ORGRIMMAR },
+			},
+			["groups"] = {
+				i(178529, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_9_0_1 },
+				}),
+				i(187520, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(192093, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				}),
+				i(210657, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				i(218309, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(244906, {	-- Gently Shaken Gift
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+			},
 		}),
 		o(341827, {	-- Greatfeather Pepe
 			["coords"] = {
@@ -2456,24 +2465,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["groups"] = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
 		}),
 		o(187236, {	-- Winter Veil Gift
-			i(178528, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_9_0_1 },
-			}),
-			i(187561, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(192094, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_10_0_2_LAUNCH },
-			}),
-			i(209871, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_10_2_0 },
-			}),
-			i(218311, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_11_0_7 },
-			}),
-			i(244908, {	-- Winter Veil Gift
-				["timeline"] = { ADDED_11_2_7 },
-			}),
+			["coords"] = {
+				{ 33.5, 66.5, IRONFORGE },
+				{ 49.9, 78.5, ORGRIMMAR },
+			},
+			["groups"] = {
+				i(178528, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_9_0_1 },
+				}),
+				i(187561, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(192094, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				}),
+				i(209871, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				i(218311, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(244908, {	-- Winter Veil Gift
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+			},
 		}),
 	}),
 	-- #endif
