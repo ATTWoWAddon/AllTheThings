@@ -35454,8 +35454,6 @@ s(168880)/i(190619),	-- Antecedent's Aliform Joggers \\ [DNT] 9.2 Raid - Sepulch
 s(168882)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 s(168883)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 s(168884)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
-9.2.5.43254
-s(180385)/i(192441),	-- Rhapsodic Pulverizer
 10.0.0.44649
 s(167515)/i(189590),	-- 10.0 Raid Template - Mail - Waist
 s(167516)/i(189590),	-- 10.0 Raid Template - Mail - Waist

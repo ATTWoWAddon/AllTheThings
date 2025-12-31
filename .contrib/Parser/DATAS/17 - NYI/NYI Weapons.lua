@@ -1441,7 +1441,7 @@ root(ROOTS.NeverImplemented, {
 		i(188099),	-- [PH] Copy Vault Patroller's Staff
 		-- 9.2.5
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
-		i(192441),	-- Rhapsodic Pulverizer
+		i(192441, {["sourceID"] = 180385 }),	-- Rhapsodic Pulverizer
 		--
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe

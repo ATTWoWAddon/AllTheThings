@@ -6133,37 +6133,11 @@ root(ROOTS.Unsorted, {
 				i(263504),	-- Skymaster's Blood Pauldrons
 			}),
 			n(DECOR, {
-				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
-				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
 				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread
 				i(263023),	-- Founder's Point Grassy Patch
 				i(263024),	-- Founder's Point Grassy Spread
-				i(247739),	-- Kun-Lai Lacquered Rickshaw
-				i(246026),	-- Orgrimmar Beam Platform
-				i(246028),	-- Orgrimmar Large Platform
-				i(246027),	-- Orgrimmar Round Platform
-				i(246035),	-- Stormwind Angled Platform
-				i(246031),	-- Stormwind Beam Platform
-				i(246033),	-- Stormwind Large Platform
-				i(246032),	-- Stormwind Round Platform
-				i(246034),	-- Stormwind Small Platform
-				i(241625),	-- Open Elven Wood Crate
-				i(266241),	-- Brumewood Hollow Large Garden Cluster
-				i(266240),	-- Founder's Point Large Garden Cluster
-				i(266242),	-- Gilded Oaks Large Garden Cluster
-				i(266444),	-- Granite Cobblestone Long Path
-				i(266443),	-- Granite Cobblestone Path
-				i(266245),	-- Granite Cobblestone Path Arc
-				i(266244),	-- Granite Cobblestone Path Corner
-				i(266239),	-- Outer Banks Large Garden Cluster
-				i(266243),	-- Stoneveil Ridge Large Garden Cluster
-				i(266238),	-- Cragthorn Highlands Large Garden Cluster
-				i(266236),	-- Razorwind Blooms Large Garden Cluster
-				i(266235),	-- Razorwind Cactus Large Garden Cluster
-				i(266237),	-- Runetotem's Bounty Large Garden Cluster
-				i(266234),	-- Saltfang Shoals Large Garden Cluster
 			}),
 			filter(MISC, {
 				i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean
