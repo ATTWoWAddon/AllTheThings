@@ -628,6 +628,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_11_0_0 },
 				["groups"] = {
 					i(204717),	-- Splintered Spark of Shadowflame
 				},

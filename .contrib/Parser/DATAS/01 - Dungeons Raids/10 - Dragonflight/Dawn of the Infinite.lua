@@ -707,6 +707,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(76140, {	-- Dawn of the Infinite
 					["provider"] = { "n", 187669 },	-- Nozdormu
 					["coord"] = { 60.8, 38.9, VALDRAKKEN },
+					["timeline"] = { REMOVED_11_0_0 },
 				}),
 				q(76141, {	-- Align in the Sand
 					["sourceQuests"] = { 76140 },	-- Dawn of the Infinite
