@@ -201,13 +201,6 @@ root(ROOTS.ExpansionFeatures,
 			["ItemAppearanceModifierID"] = 9,
 			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {
-				ach(11143, {		-- Honoring the Past
-					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-					["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
-				}),
-				ach(10853, {		-- Part of History
-					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-				}),
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
 						["ItemAppearanceModifierID"] = 0,

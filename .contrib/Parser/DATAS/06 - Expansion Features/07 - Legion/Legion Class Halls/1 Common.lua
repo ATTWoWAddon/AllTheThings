@@ -81,12 +81,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				-- #ENDIF
 			}),
-			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
+			achpart(10994, 11137),	-- A Glorious Campaign
+			achpart(11135, 11137),	-- A Heroic Campaign
 			ach(11137),	-- A Legendary Campaign
 			achpart(11136, 11137),	-- An Epic Campaign
-			achpart(11135, 11137),	-- A Heroic Campaign
-			achpart(10994, 11137),	-- A Glorious Campaign
 			ach(11171),	-- Arsenal of Power
+			ach(10852, {	-- Artifact or Artifiction
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
 			ach(11222),	-- Champions of Power
 			ach(11221),	-- Champions Rise
 			ach(11220),	-- Roster of Champions
@@ -105,13 +107,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					ach(11153, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3
 						["description"] = "Progress indicates number of Legion World Quests completed",
 					}),
-					ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
+					pvp(ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
 						["description"] = "Progress indicates number of players defeated in PvP",
-						["pvp"] = true,
-					}),
+					})),
 				},
 			}),
-			ach(10747),	-- Fighting with Style: Upgraded
+			ach(10747, {	-- Fighting with Style: Upgraded
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
 			ach(10748, {	-- Fighting with Style: Valorous
 				["sym"] = {{"meta_achievement",
 					10459,	-- Improving on History
@@ -165,11 +168,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			ach(11216),	-- So Many Missions (100)
 			ach(11217),	-- Many Many Missions, Handle It! (500)
 			ach(11219),	-- Need Backup
-			ach(10853),	-- Part of History
-			un(REMOVED_FROM_GAME, ach(11772)),	-- Power Ascended
-			un(REMOVED_FROM_GAME, ach(11144)),	-- Power Realized
-			ach(11609),	-- Power Unbound (automated)
-			ach(11610),	-- Power Unleashed
+			ach(11143, {		-- Honoring the Past
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+				["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
+			}),
+			ach(10853, {		-- Part of History
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
+			ach(11772, {	-- Power Ascended
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(11144, {	-- Power Realized
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
+			ach(11609, {	-- Power Unbound (automated)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(11610, {	-- Power Unleashed
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
 		}),
 		n_TrainingFollowers({
 			-- Dinner Guests (Moroes Mission reward)
