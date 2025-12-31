@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(57354, {	-- Overdue
 				i(171262),	-- Shirakess Grimoire (QI!)
 			}),
-			q(56385),	-- Pearlhusk Crawler
+			petbattle(q(56385)),	-- Pearlhusk Crawler
 			petbattle(q(56381)),	-- Prince Wiggletail
 			q(57336),	-- Putting the Past to Rest
 			petbattle(q(56387)),	-- Ravenous Scalespawn
