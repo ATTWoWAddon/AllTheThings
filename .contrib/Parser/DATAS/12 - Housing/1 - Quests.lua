@@ -49,7 +49,7 @@ root(ROOTS.Housing, n(QUESTS, {
 		q(92816, {	-- A Letter for Adventure
 			-- It seems most people are not getting this
 			-- Figure out lock criteria for this
-			["sourceQuests"] = { 94379 },	-- Time to Decorate
+			["sourceQuests"] = { 94379 },	-- This Old Hearth
 			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
 			["groups"] = {
 				i(254504),	-- Adventuring Letter (QI!)
