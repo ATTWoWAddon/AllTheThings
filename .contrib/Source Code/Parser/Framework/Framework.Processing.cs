@@ -4436,9 +4436,26 @@ namespace ATT
             if (!data.TryGetValue("timeline", out object timelineRef) || !(timelineRef is Timeline timeline))
                 return true;
 
-            // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
-            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
-                LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+            // Warn if the first entry is a 'removing' change (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
+            if (CurrentParseStage == ParseStage.Validation && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+            {
+                // TODO: eventually data will be surely be cleaned up and we can slowly adjust this warning to apply to ALL timelines situations
+                // first, all timelines > 8.0 should ensure they are not removed only and remove the entrycount check below
+                // then slowly work back into earlier timelines and adjust the above version cutoff as applicable
+                // finally the ending check should just be ['validation' & entry @ 0 is removing change] -> ERROR
+
+                // alternatively, we allow removed-only timelines IF there's an inheriting timeline which includes an ADDED change, to ensure that the removed-only
+                // object is not arbitrarily-included into all versions of ATT
+                // (this would require this logic to be adjusted)
+                if (timeline.EntryCount > 1)
+                {
+                    LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+                }
+                else
+                {
+                    LogDebugWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+                }
+            }
 
             // Get the most relevant timeline for the current release version
             var adaptedTimeline = timeline.GetAdaptedTimeline(CURRENT_RELEASE_VERSION);
