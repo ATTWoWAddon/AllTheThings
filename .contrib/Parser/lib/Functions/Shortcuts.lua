@@ -370,11 +370,16 @@ bubbleDownSelf = function(data, t)
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
+	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
+	if data.timeline then
+		local timelineSelfReturn = timelineSelf(data, t, true)
+		if timelineSelfReturn then return timelineSelfReturn end
+	end
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
 -- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
-timelineSelf = function(data, t)
+timelineSelf = function(data, t, auto)
 	if not data then
 		print("ERROR: timelineSelf: No Data")
 		return t
@@ -384,12 +389,14 @@ timelineSelf = function(data, t)
 		return t
 	end
 	local datacount = 0
-	local withtimeline
+	local withtimeline = data.timeline and true or nil
 	for k, v in pairs(data) do
 		datacount = datacount + 1
-		withtimeline = withtimeline or k == "timeline"
 	end
 	if datacount > 1 or not withtimeline then
+		-- if we automatically call this function, then don't ERROR just return empty so the caller can handle it
+		if auto then return end
+
 		print("ERROR: timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled!")
 		return t
 	end
