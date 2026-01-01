@@ -4073,7 +4073,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
+				-- #if BEFORE 6.0.1
 				LOWER_BLACKROCK_SPIRE,
+				-- #endif
 				SILITHUS,
 				STRATHOLME,
 				SWAMP_OF_SORROWS,

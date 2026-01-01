@@ -264,12 +264,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_3_0 },
-							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["groups"] = {
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6272,	-- Rank 1 Appearance
 								}),
-								i(171219),	-- Corrupt Black Dragonscales (QI!)
+								o(334696, {	-- Corrupt Black Dragonscales
+									["coord"] = { 47.3, 68.6, 1539 },	-- Blackwing Descent (Scenario)
+									["g"] = { i(171219) },	-- Corrupt Black Dragonscales (QI!)
+								}),
 								i(172072),	-- Experimental Vial
 							},
 						}),
@@ -323,6 +325,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(173447),	-- Nefarious Tormentor's Footguards
 								i(173818),	-- Nefarious Tormentor's Girdle
 								-- Leather
+								i(173439),	-- Footpads of the Insatiable Maw
+								i(173815),	-- Girdle of the Insatiable Maw
 								-- Cloth
 								i(173812),	-- Vile Manipulator's Cord
 								i(173431),	-- Vile Manipulator's Footwraps
@@ -345,7 +349,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 17.5, 62.1, 1472 },	-- The Dragon's Spine
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = {
-								i(167830),	-- Petrified Ebony Scale (QI!)
+								o(324039, {	-- Petrified Dragon Scale
+									["coord"] = { 18.9, 57.8, 1472 },	-- Neltharion's Lair (Scenario)
+									["g"] = { i(167830) },	-- Petrified Ebony Scale (QI!)
+								}),
 							},
 						}),
 						q(55395, {	-- Don't Close Your Eyes
@@ -513,8 +520,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["groups"] = {
 								i(169652),	-- Bolt of Embroidered Cloth
-								i(170490),	-- Torn Journal Page #58 (QI!)
-								i(170491),	-- Burnt Journal Page
+								o(329645, {	-- Wrathion's Journal Page
+									["coord"] = { 75.4, 45.1, 46 }, -- Karazan Catacombs
+									["g"] = { i(170490) },	-- Torn Journal Page #58 (QI!)
+								}),
+								o(332577, {	-- Burnt Journal Page
+									["coord"] = { 73.4, 48.9, 46 }, -- Karazan Catacombs
+									["g"] = { i(170491) },	-- Burnt Journal Page
+								}),
 								i(169651),	-- The Ways of the Old Gods
 							},
 						}),
