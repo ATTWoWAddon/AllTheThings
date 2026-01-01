@@ -2414,13 +2414,13 @@ i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
 h(-679,{awp=110207,g={
-o(571070,{maps={102,105,107,108,122},type="AsGenericObjectContainer",g={
+o(571070,{type="AsGenericObjectContainer",g={
 o(571070,{type="AsSubGenericObject"}),
 o(571071,{type="AsSubGenericObject"}),
-o(571213,{type="AsSubGenericObject"}),
-o(571345,{type="AsSubGenericObject"}),
+o(571213,{maps={105},type="AsSubGenericObject"}),
+o(571345,{coords={{44.5,35,109},{45.3,11.5,109},{45.8,53.6,109}},type="AsSubGenericObject"}),
 o(572094,{type="AsSubGenericObject"}),
-o(572129,{type="AsSubGenericObject"}),
+o(572129,{coords={{36.9,31.8,104},{44,56.7,104}},type="AsSubGenericObject"}),
 o(572869,{type="AsSubGenericObject"}),
 o(572995,{type="AsSubGenericObject"}),
 i(242691,{b=2,type="AsSubGenericObject"})}})}}),

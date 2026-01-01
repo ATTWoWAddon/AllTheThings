@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,campsite,cl,crit,cs,d,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{1,2,3,4,5,6,7,8,9,10,11,12},{1,2,4,5,6,7,8,9,10,11,12},{1,2,6},{1,2},{1,3,4,7,11,22,24,25,29,30,32,34,37,52,85},{1,3,7,10},{1,5,8,9},{1},{10,11},{10},{11},{12},{1204,9000},{13},{151763},{154208},{2,5,9},{2},{3,7,13},{3},{35},{37.7,55.3,1355},{4,10,11,12},{4,10,11},{4,6,8,11},{4},{5,8,9},{5},{50.5,66.2,1355},{52,70},{6},{7},{8,10,12,13},{8},{9}};
 _.Categories.NeverImplemented={
 h(-12,{
@@ -9413,7 +9413,19 @@ s(295658,248730,{f=1}),
 s(295665,248737,{f=26})})}})})}),
 h(-679,{awp=110207,g={
 x(11,{
-x(11.0207)})}}),
+x(11.0207,{
+de(678,{itemID=238862,spellID=1226475}),
+de(3883,{itemID=247743,spellID=1245228}),
+de(3879,{itemID=247739,spellID=1245224}),
+de(992,{itemID=241625,spellID=1231536}),
+de(1957,{itemID=246026}),
+de(1959,{itemID=246028}),
+de(1958,{itemID=246027}),
+de(1966,{itemID=246035}),
+de(1962,{itemID=246031}),
+de(1964,{itemID=246033}),
+de(1963,{itemID=246032}),
+de(1965,{itemID=246034})})})}}),
 h(-30,{
 h(-55,{
 exp(11526,{awp=90002,g={
@@ -46294,7 +46306,7 @@ i(188098),
 i(188104),
 i(188099),
 s(104765,168895,{f=29}),
-i(192441),
+s(180385,192441),
 i(25497,{b=1}),
 i(28261,{b=1,spellID=32759}),
 i(25641,{b=1}),

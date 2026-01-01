@@ -2486,7 +2486,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=21,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=21,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=28,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=12,["monthDay"]=28,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026}),
@@ -2538,7 +2537,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=11,["monthDay"]=29,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
@@ -9020,6 +9020,7 @@ local ObjectNames = {
 	[284448] = "Hidden Scholar's Chest",
 	[284454] = "Da White Shark's Bounty",
 	[284455] = "The Exile's Lament",
+	[284468] = "7th Legion Supply Crate",
 	[286016] = "Ship's Log",
 	[286954] = "Bot Buster Bomb",
 	[287006] = "Faithless Weapon Rack",
@@ -17494,6 +17495,7 @@ local ObjectModels = {
 	[284448] = 1805764,
 	[284454] = 1802580,
 	[284455] = 1802580,
+	[284468] = 950767,
 	[286016] = 1852972,
 	[286954] = 254419,
 	[287006] = 1719861,
@@ -28708,6 +28710,7 @@ localize(ObjectNames, {
 	[284448] = "Versteckte Truhe eines Gelehrten",
 	[284454] = "Beute der Haibraut",
 	[284455] = "Klage des Verbannten",
+	[284468] = "Vorratskiste der 7. Legion",
 	[286016] = "Schiffslogbuch",
 	[286954] = "Botbrecherbombe",
 	[287006] = "Waffenständer der Treulosen",
@@ -35975,6 +35978,7 @@ localize(ObjectNames, {
 	[284448] = "Coffre d’érudit caché",
 	[284454] = "Prime de la Squale",
 	[284455] = "La lamente de l’exil",
+	[284468] = "Caisse de fournitures de la 7e Légion",
 	[286016] = "Journal de bord",
 	[286954] = "Bombe anti-robot",
 	[287006] = "Râtelier d’armes infidèles",
@@ -42411,6 +42415,7 @@ localize(ObjectNames, {
 	[284448] = "Cassa Nascosta dello Studioso",
 	[284454] = "Bottino dello Squalo Bianco",
 	[284455] = "Lamento dell'Esule",
+	[284468] = "Cassa di Rifornimenti della VII Legione",
 	[286016] = "Diario di Bordo",
 	[286954] = "Bomba Robodemolitrice",
 	[287006] = "Rastrelliera delle Armi dei Senzafede",
@@ -48961,6 +48966,7 @@ localize(ObjectNames, {
 	[284448] = "Baú Escondido do Erudito",
 	[284454] = "Recompensa do Tubarão Branco",
 	[284455] = "O Lamento do Exílio",
+	[284468] = "Caixote de Suprimentos da 7ª Legião",
 	[286016] = "Registro de Bordo",
 	[286954] = "Bomba-robô Pressurizada",
 	[287006] = "Cavalete de Armas de Ímpios",
@@ -56526,6 +56532,7 @@ localize(ObjectNames, {
 	[284448] = "Спрятанный сундук ученого",
 	[284454] = "Сокровище Белой Акулы",
 	[284455] = "Плач изгоя",
+	[284468] = "Ящик с припасами 7-го легиона",
 	[286016] = "Бортовой журнал",
 	[286954] = "Противоботовая бомба",
 	[287006] = "Оружейная стойка отступников",
@@ -63159,6 +63166,7 @@ localize(ObjectNames, {
 	[284448] = "숨겨진 학자의 상자",
 	[284454] = "하얀 상어의 선물",
 	[284455] = "추방자의 탄식",
+	[284468] = "7군단 보급품 상자",
 	[286016] = "항해일지",
 	[286954] = "로봇 퇴치 폭탄",
 	[287006] = "부정한 무기 선반",
@@ -70495,6 +70503,7 @@ localize(ObjectNames, {
 	[284448] = "Cofre de erudito oculto",
 	[284454] = "Recompensa del Tiburón Blanco",
 	[284455] = "Lamento del Exiliado",
+	[284468] = "Cajón de suministros de la Séptima Legión",
 	[286016] = "Cuaderno de bitácora",
 	[286954] = "Bomba destruyerrobots",
 	[287006] = "Expositor de armas de los infieles",
@@ -78331,6 +78340,7 @@ localize(ObjectNames, {
 	[284448] = "隐蔽的学者宝箱",
 	[284454] = "大白鲨的财宝",
 	[284455] = "流亡者的挽歌",
+	[284468] = "第七军团补给箱",
 	[286016] = "船只日志",
 	[286954] = "机械爆破弹",
 	[287006] = "无信者武器架",
