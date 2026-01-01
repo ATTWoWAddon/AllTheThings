@@ -1706,7 +1706,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(95, i(251671)),	-- Wearable Copper Pot Lid
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.99999" } }, {	-- TODO: Timeline out correctly
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.64978" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
 			}),
@@ -1750,7 +1750,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		})),
 	}),
 	n(YEAR2026, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(258266),	-- Ensemble: Vengeful Regalia of the Crusader
 			}),
