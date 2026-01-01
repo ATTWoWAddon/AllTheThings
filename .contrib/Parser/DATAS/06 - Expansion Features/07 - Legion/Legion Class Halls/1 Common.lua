@@ -93,7 +93,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			ach(11221),	-- Champions Rise
 			ach(11220),	-- Roster of Champions
 			ach(11846, {	-- Champions of Legionfall (Broken Shore)
-				crit(36604, {		-- Complete 'Champions of Legionfall'
+				crit(36604, {	-- Complete 'Champions of Legionfall'
 					["_quests"] = { 47137 },
 				}),
 			}),
@@ -168,11 +168,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			ach(11216),	-- So Many Missions (100)
 			ach(11217),	-- Many Many Missions, Handle It! (500)
 			ach(11219),	-- Need Backup
-			ach(11143, {		-- Honoring the Past
+			ach(11143, {	-- Honoring the Past
 				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 				["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
 			}),
-			ach(10853, {		-- Part of History
+			ach(10853, {	-- Part of History
 				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 			}),
 			ach(11772, {	-- Power Ascended
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},
@@ -385,7 +385,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},
@@ -441,7 +441,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},

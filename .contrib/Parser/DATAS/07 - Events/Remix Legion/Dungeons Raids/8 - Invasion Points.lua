@@ -33,10 +33,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 				achpart(42693, 42695, {	-- Breaking the Legion I
-						["maps"] = { 921, 922, 923, 924, 925, 926 },
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
 				}),
 				achpart(42694, 42695, {	-- Breaking the Legion II
-						["maps"] = { 921, 922, 923, 924, 925, 926 },
+					["maps"] = { 921, 922, 923, 924, 925, 926 },
 				}),
 				ach(42695, {	-- Breaking the Legion III
 					["maps"] = { 921, 922, 923, 924, 925, 926 },

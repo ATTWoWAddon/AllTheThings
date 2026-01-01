@@ -109,11 +109,11 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 		i(202183, {	-- Small Rumble Purse
 			["timeline"] = { REMOVED_10_2_0 },
 			["groups"] = {
-				i(204731),	-- Warcraft Rumble Welcome Letter [N] (QI!)
-				i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QI!)
+				i(204731),	-- Warcraft Rumble Welcome Letter [N] (QS!)
+				i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QS!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QI!)
+				i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QS!)
 					["races"] = HORDE_ONLY,
 				}),
 			},
@@ -121,16 +121,16 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 	}),
 	n(QUESTS, {
 		q(73183, {	-- Wanna Play a Game? [N]
-			["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N] (QI!)
+			["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N] (QS!)
 			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75625, {	-- Wanna Play a Game? [A]
-			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A] (QI!)
+			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A] (QS!)
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75626, {	-- Wanna Play a Game? [H]
-			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H] (QI!)
+			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H] (QS!)
 			["races"] = HORDE_ONLY,
 			["timeline"] = { REMOVED_10_2_0 },
 		}),
