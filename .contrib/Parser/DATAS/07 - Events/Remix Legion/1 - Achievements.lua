@@ -98,6 +98,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42593),	-- Pillars of Creation
 		ach(61339, {	-- Putting the Finite in Infinite
 			["description"] = "Earned upon completing a +49 or higher Keystone in time.",	-- There is some reaching 999 Infinite Power stuff, but everyone will do a dungeon at +49 before reaching 999 power
+			["maps"] = {
+				751,	-- Black Rook Hold
+				845,	-- Cathedral of Eternal Night
+				761,	-- Court of Stars
+				733,	-- Darkheart Thicket
+				713,	-- Eye of Azshara
+				703,	-- Halls of Valor
+				706,	-- Maw of Souls
+				731,	-- Neltharion's Lair
+				809,	-- Return to Karazhan
+				903,	-- Seat of the Triumvirate
+				749,	-- The Arcway
+				710,	-- Vault of the Wardens
+			},
 		}),
 		ach(42313),	-- Remixing Time
 		ach(60959),	-- Tenured in the Timeways I

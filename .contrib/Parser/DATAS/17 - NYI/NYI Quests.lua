@@ -178,7 +178,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
 			q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 			q(785, { ["name"] = "A Strategic Alliance", }),
-			q(908, { ["name"] = "Amongst the Ruins", }),
 			q(8489, { ["name"] = "An Intact Converter", }),
 			q(8478, { ["name"] = "Choose Your Weapon", }),
 			q(8230, { ["name"] = "Collin's Test Quest", }),
