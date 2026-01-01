@@ -295,6 +295,11 @@ bubbleDown = function(data, t)
 		print("ERROR: bubbleDown: No Source 't'")
 		return t
 	end
+	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
+	-- if data.timeline then
+	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
+	-- 	if timelineSelfReturn then return timelineSelfReturn end
+	-- end
 	if not data.IgnoreWarnings then
 		for key,val in pairs(data) do
 			if BubbleDownKeyWarnings[key] then
@@ -371,10 +376,13 @@ bubbleDownSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
 	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
-	if data.timeline then
-		local timelineSelfReturn = timelineSelf(data, t, true)
-		if timelineSelfReturn then return timelineSelfReturn end
-	end
+	-- if data.timeline then
+	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
+	-- 	if timelineSelfReturn then
+	-- 		applyData(data, t)
+	-- 		return timelineSelfReturn
+	-- 	end
+	-- end
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
