@@ -1038,35 +1038,38 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
-		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
-			["groups"] = {
-				ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
-				iensemble(248249),	-- Lightstider Raiment
-				i(243020),	-- Lightwing Dragonhawk (MOUNT!)
-			},
-		}),
-		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
-			["groups"] = {
-				ach(61402),	-- Epic Edition: Voidlight Surger
-				i(243063),	-- Doomfeathers (PET!)
-				i(243062),	-- Hopeflutter (PET!)
-				i(252668, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Harbinger" Painting (DECOR!)
-				i(252666, {["timeline"] = { ADDED_11_2_7 }}),	-- "The High Exarch" Painting (DECOR!)
-				i(252667, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Ranger of the Void" Painting (DECOR!)
-				i(252669, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Redeemer" Painting (DECOR!)
-				i(244668, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Fountain (DECOR!)
-				i(246414, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Rotunda (DECOR!)
-				i(245939, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Fountain (DECOR!)
-				i(248809, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Rotunda (DECOR!)
-				i(245610),	-- Voidlight Surger (MOUNT!)
-				i(243019),	-- Voidwing Dragonhawk (MOUNT!)
-				iensemble(248974),	-- Voidstrider Raiment
-			},
-		}),
-	})),
+	expansion(EXPANSION.MID, {
+		["forcetimeline"] = { ADDED_11_2_0 },
+		["groups"] = {
+			n(HEROIC_EDITION, {
+				["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+				["groups"] = {
+					ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
+					iensemble(248249),	-- Lightstider Raiment
+					i(243020),	-- Lightwing Dragonhawk (MOUNT!)
+				},
+			}),
+			n(EPIC_EDITION, {
+				["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+				["groups"] = {
+					ach(61402),	-- Epic Edition: Voidlight Surger
+					i(243063),	-- Doomfeathers (PET!)
+					i(243062),	-- Hopeflutter (PET!)
+					i(252668, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Harbinger" Painting (DECOR!)
+					i(252666, {["timeline"] = { ADDED_11_2_7 }}),	-- "The High Exarch" Painting (DECOR!)
+					i(252667, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Ranger of the Void" Painting (DECOR!)
+					i(252669, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Redeemer" Painting (DECOR!)
+					i(244668, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Fountain (DECOR!)
+					i(246414, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Rotunda (DECOR!)
+					i(245939, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Fountain (DECOR!)
+					i(248809, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Rotunda (DECOR!)
+					i(245610),	-- Voidlight Surger (MOUNT!)
+					i(243019),	-- Voidwing Dragonhawk (MOUNT!)
+					iensemble(248974),	-- Voidstrider Raiment
+				},
+			}),
+		},
+	}),
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
@@ -1132,7 +1135,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["description"] = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
 		["groups"] = {
 			i(265804, {	-- Sanctuary Chess Collection
-				-- TODO: We can remove decorID once Wago data is updated
+				-- TODO: Remove decorID once Wago data is updated with these
+				i(259055, {["decorID"] = 12247}),	-- Hatred's Wolfpelt Rug (DECOR!)
+				i(259056, {["decorID"] = 12248}),	-- Prime Evil's Chest (DECOR!)
 				i(259059, {["decorID"] = 12251}),	-- Sanctuary Chess Dark Bishop (DECOR!)
 				i(259064, {["decorID"] = 12256}),	-- Sanctuary Chess Dark King (DECOR!)
 				i(259063, {["decorID"] = 12255}),	-- Sanctuary Chess Dark Knight (DECOR!)

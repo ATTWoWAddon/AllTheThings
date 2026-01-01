@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Worldsoul-Searching
+		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				40244,	-- Nerub-ar Palace
