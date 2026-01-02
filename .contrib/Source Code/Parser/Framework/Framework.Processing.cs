@@ -2110,7 +2110,7 @@ namespace ATT
                         (CurrentParentGroup.Value.Key == "itemID" ||
                         CurrentParentGroup.Value.Key == "objectID"))
                     {
-                        LogDebugWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
+                        LogWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
                     }
                 }
             }
@@ -4123,7 +4123,7 @@ namespace ATT
                 if (!TryGetSOURCED("questID", altQuestID, out var _))
                 {
                     // Source Quest not in database
-                    LogDebugWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");
+                    LogWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");
                 }
             }
         }
