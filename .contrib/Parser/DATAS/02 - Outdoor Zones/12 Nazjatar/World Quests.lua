@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(56023),	-- Leylocked Chest
 			q(56024),	-- Leylocked Chest
 			q(56025),	-- Leylocked Chest
-			q(56388),	-- Mindshackle
+			petbattle(q(56388)),	-- Mindshackle
 			q(57335),	-- Murloc Mayhem
 			q(57354, {	-- Overdue
 				i(171262),	-- Shirakess Grimoire (QI!)
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 			}),
 			petbattle(q(56384)),	-- Shadowspike Lurker
-			q(56383),	-- Silence
+			petbattle(q(56383)),	-- Silence
 			q(55899),	-- Starseeker of the Shirakess
 			q(55897),	-- Szun, Breaker of Slaves
 			q(55898),	-- Tempest-Speaker Shalan'ali
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(57330),	-- Time for Revenge
 			q(56078),	-- Time to Krill
 			q(55896),	-- Undana, Chilling Assassin
-			q(56390),	-- Voltgorger
+			petbattle(q(56390)),	-- Voltgorger
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
 				["requireSkill"] = COOKING,
 				["races"] = ALLIANCE_ONLY,
