@@ -420,7 +420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 25,
 				}),
 				q(2842, {	-- Chief Engineer Scooty
-					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
+					["description"] = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
 					["coord"] = { 75.6, 25.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -615,6 +615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["lockCriteria"] = { 1, "questID", 2842 },
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rig Blueprints

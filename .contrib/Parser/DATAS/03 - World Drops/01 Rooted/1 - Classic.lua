@@ -5408,15 +5408,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
-			["coord"] = { 44.0, 48.0, DARKSHORE },
-			["maps"] = {
-				DARKSHORE,
-				LOCH_MODAN,
-				MULGORE,
-				REDRIDGE_MOUNTAINS,
-				TELDRASSIL,
-				THE_BARRENS,
-				WESTFALL,
+			["coord"] = {
+				{ 44.0, 48.0, DARKSHORE },
+				{ 76.6, 68.2, LOCH_MODAN },
+				{ 40.6, 59.0, MULGORE },
+				{ 52.0, 38.8, REDRIDGE_MOUNTAINS },
+				{ 54.6, 60.6, TELDRASSIL },
+				{ 61.2, 59.8, WESTFALL },
 			},
 			-- #endif
 			-- #if AFTER TBC
