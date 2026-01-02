@@ -2349,8 +2349,8 @@ root(ROOTS.Zones, {
 							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
 							{ "merge" },
-							{ "exclude", "headerID", BACK },	-- Exclude the 'Back' header
 							{ "pop" },
+							{ "exclude", "headerID", BACK },	-- Exclude the 'Back' header
 							-- #endif
 						},
 						["timeline"] = { ADDED_4_3_0 },
