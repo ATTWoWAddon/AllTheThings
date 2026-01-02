@@ -1819,7 +1819,7 @@ namespace ATT
                 return;
             }
 
-            string previousType = null;
+            string previousParam1 = null;
             string previousCommand = null;
             // some logic to check for duplicate 'select' commands of the same type
             foreach (object cmdObj in symObject)
@@ -1839,55 +1839,62 @@ namespace ATT
                 // check various commands
                 if (command.Count > 0 && command[0].TryConvert(out string commandName))
                 {
-                    if (commandName == "select")
-                    {
-                        if (command.Count > 1 && command[1].TryConvert(out string commandType))
-                        {
-                            if (previousType == commandType)
-                            {
-                                LogDebugWarn($"'sym-select' can be cleaned up (all ID's can be passed into one 'select')", data);
-                                break;
-                            }
-                            else
-                            {
-                                List<object> selections = command.Skip(2).ToList();
-                                List<decimal> selectionValues = selections.AsTypedEnumerable<decimal>().ToList();
+                    command.SafeIndex(1).TryConvert(out string commandParam1);
 
-                                // verify all select values are decimals
-                                if (selections.Count != selectionValues.Count)
-                                {
-                                    LogError($"'sym-select' contains non-numeric selection values", data);
-                                }
+                    // checks for the current command
+                    switch (commandName)
+                    {
+                        case "select":
+                        case "exclude":
+                            List<object> selections = command.Skip(2).ToList();
+
+                            // verify all select values are numeric
+                            if (selections.Count != selections.Count(v => v.IsNumeric()))
+                            {
+                                LogError($"'sym-{commandName}' contains non-numeric selection values", data);
                             }
 
-                            previousType = commandType;
-                        }
-                    }
-                    else
-                    {
-                        previousType = null;
+                            // repeating commands of the same type can be consolidated
+                            if (commandName == previousCommand && !string.IsNullOrWhiteSpace(commandParam1) && previousParam1 == commandParam1)
+                            {
+                                LogWarn($"'sym-{commandName}' for '{previousParam1}' can be cleaned up (all ID's can be passed into one '{commandName}')", data);
+                                return;
+                            }
+                            break;
+                        case "not":
+                            // repeating commands of the same type can be consolidated
+                            if (commandName == previousCommand && !string.IsNullOrWhiteSpace(commandParam1) && previousParam1 == commandParam1)
+                            {
+                                LogWarn($"'sym-{commandName}' for '{previousParam1}' can be cleaned up (all ID's can be passed into one '{commandName}')", data);
+                                return;
+                            }
+                            break;
                     }
 
-                    // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
-                    if (previousCommand == "sub")
+                    // checks for the previous command
+                    switch (previousCommand)
                     {
-                        switch (commandName)
-                        {
-                            case "merge":
-                            case "select":
-                            case "fill":
-                            case "sub":
-                                break;
-                            case "finalize":
-                                LogWarn($"'sym' '{previousCommand}' command followed by 'finalize' is pointless", data);
-                                break;
-                            default:
-                                LogWarn($"'sym' '{previousCommand}' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
-                                break;
-                        }
+                        // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
+                        case "sub":
+                            switch (commandName)
+                            {
+                                case "merge":
+                                case "select":
+                                case "fill":
+                                case "sub":
+                                    break;
+                                case "finalize":
+                                    LogWarn($"'sym' '{previousCommand}' command followed by 'finalize' is pointless", data);
+                                    break;
+                                default:
+                                    LogWarn($"'sym' '{previousCommand}' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
+                                    break;
+                            }
+                            break;
                     }
 
                     previousCommand = commandName;
+                    previousParam1 = commandParam1;
                 }
             }
 

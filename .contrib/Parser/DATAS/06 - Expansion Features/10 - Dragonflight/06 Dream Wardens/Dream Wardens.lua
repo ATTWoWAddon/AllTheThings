@@ -154,8 +154,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sym"] = {
 									{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 									{"pop"},
-									{"exclude","itemID",211417},	-- Dream Wardens Insignia [Epic 1k]
-									{"exclude","itemID",210243},	-- Technique: Contract: Dream Wardens (RECIPE!)
+									{"exclude","itemID",
+										211417,	-- Dream Wardens Insignia [Epic 1k]
+										210243,	-- Technique: Contract: Dream Wardens (RECIPE!)
+									},
 								},
 								["groups"] = {
 									i(202172),	-- Overflowing Satchel of Coins

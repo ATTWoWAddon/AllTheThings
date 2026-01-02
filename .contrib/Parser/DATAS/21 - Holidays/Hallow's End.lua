@@ -934,10 +934,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			{ "pop" },	-- Get the Rewards.
 			{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
 			{ "pop" },	-- Get the Rewards.
-			{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-			{ "exclude", "itemID", 20392 },	-- Exclude Gnome Female Mask?
-			{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-			{"select","itemID",
+			{ "exclude", "itemID",
+				69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195,	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+				20392,	-- Exclude Gnome Female Mask?
+				20413,	-- Exclude Hallowed Wand - Random
+			},
+			{ "select", "itemID",
 				37585,	-- Chewy Fel Taffy
 				37583,	-- G.N.E.R.D.S.
 				37582,	-- Pyroblast Cinnamon Ball
@@ -4337,13 +4339,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- Masks & Wands & Candy
 				{ "selectparent" },	-- Select the "Rewards" header.
 				{ "pop" },	-- Get the Rewards.
-				{ "exclude", "itemID", 37586, 20393, 34077 },	-- Handful of Treats & Treat Bag
+				{ "exclude", "itemID",
+					37586, 20393, 34077,	-- Handful of Treats & Treat Bag
 				-- #if AFTER CATA
-				{ "exclude", "itemID", 20390, 20389, 20388 },	-- Exclude Candy Bar, Candy Corn, Lollipop
+					20390, 20389, 20388,	-- Exclude Candy Bar, Candy Corn, Lollipop
 				-- #endif
-				{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-				{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-				{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
+					69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195,	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+					20413,	-- Exclude Hallowed Wand - Random
+				},
 				{"select","itemID",
 					33292,	-- Hallowed Helm
 					33154,	-- Sinister Squashling (PET!)

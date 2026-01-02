@@ -563,7 +563,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		})),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
-			["sym"] = { MOP_SYM_PETS, {"select", "itemID",
+			["sym"] = { appendAllGroups({}, MOP_SYM_PETS, {
 				13335,	-- Deathcharger's Reins
 				43953,	-- Reins of the Blue Drake
 				44151,	-- Reins of the Blue Proto-Drake
@@ -571,7 +571,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				32768,	-- Reins of the Raven Lord
 				43962,	-- Reins of the White Polar Bear
 				35513,	-- Swift White Hawkstrider
-			}},
+			})},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },

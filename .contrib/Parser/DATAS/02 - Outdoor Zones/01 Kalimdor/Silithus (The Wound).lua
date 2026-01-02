@@ -1466,23 +1466,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(131837, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.2, 18.4, SILITHUS },
-					["sym"] = {
-						{"select", "itemID", 137884 },	-- Pattern Dreadleather Bindings
-						{"select", "itemID", 137890 },	-- Pattern Dreadleather Footpads
-						{"select", "itemID", 137889 },	-- Pattern Dreadleather Gloves
-						{"select", "itemID", 137891 },	-- Pattern Dreadleather Jerkin
-						{"select", "itemID", 137888 },	-- Pattern Dreadleather Mask
-						{"select", "itemID", 137887 },	-- Pattern Dreadleather Pants
-						{"select", "itemID", 137886 },	-- Pattern Dreadleather Shoulderguard
-						{"select", "itemID", 142407 },	-- Pattern Drums Of The Mountain
-						{"select", "itemID", 137916 },	-- Pattern Gravenscale Armbands
-						{"select", "itemID", 137921 },	-- Pattern Gravenscale Grips
-						{"select", "itemID", 137923 },	-- Pattern Gravenscale Hauberk
-						{"select", "itemID", 137919 },	-- Pattern Gravenscale Leggings
-						{"select", "itemID", 137918 },	-- Pattern Gravenscale Spaulders
-						{"select", "itemID", 137922 },	-- Pattern Gravenscale Treads
-						{"select", "itemID", 137920 },	-- Pattern Gravenscale Warhelm
-					},
+					["sym"] = {{"select", "itemID",
+						137884,	-- Pattern Dreadleather Bindings
+						137890,	-- Pattern Dreadleather Footpads
+						137889,	-- Pattern Dreadleather Gloves
+						137891,	-- Pattern Dreadleather Jerkin
+						137888,	-- Pattern Dreadleather Mask
+						137887,	-- Pattern Dreadleather Pants
+						137886,	-- Pattern Dreadleather Shoulderguard
+						142407,	-- Pattern Drums Of The Mountain
+						137916,	-- Pattern Gravenscale Armbands
+						137921,	-- Pattern Gravenscale Grips
+						137923,	-- Pattern Gravenscale Hauberk
+						137919,	-- Pattern Gravenscale Leggings
+						137918,	-- Pattern Gravenscale Spaulders
+						137922,	-- Pattern Gravenscale Treads
+						137920,	-- Pattern Gravenscale Warhelm
+					}},
 				}),
 			}),
 		},

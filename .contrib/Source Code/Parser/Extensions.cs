@@ -466,6 +466,12 @@ namespace ATT
                 return true;
             }
 
+            if (obj is null)
+            {
+                value = default;
+                return false;
+            }
+
             if (!lazy)
             {
                 try
@@ -526,15 +532,11 @@ namespace ATT
             typeof(double),  typeof(decimal), typeof(float)
         };
 
-        public static bool IsNumeric(this Type myType)
-        {
-            return NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this Type myType) => NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
-        public static bool IsDecimal(this Type myType)
-        {
-            return DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this object val) => val?.GetType().IsNumeric() ?? false;
+
+        public static bool IsDecimal(this Type myType) => DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
