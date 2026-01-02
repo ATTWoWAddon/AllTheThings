@@ -150,8 +150,8 @@ namespace ATT
         public static List<object> ALL_RACES;
         public static List<object> ALL_CLASSES;
 
-        private static readonly ConcurrentDictionary<string, ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>> SOURCED =
-            new ConcurrentDictionary<string, ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>>();
+        private static readonly ConcurrentDictionary<string, ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>> SOURCED =
+            new ConcurrentDictionary<string, ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>>();
 
         // TODO: clean all these separate collections into the above
         /// <summary>
@@ -822,7 +822,7 @@ namespace ATT
             string[] sourcedIDs = Config["SOURCED"];
             foreach (string id in sourcedIDs)
             {
-                SOURCED.TryAdd(id, new ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>());
+                SOURCED.TryAdd(id, new ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>());
             }
         }
 

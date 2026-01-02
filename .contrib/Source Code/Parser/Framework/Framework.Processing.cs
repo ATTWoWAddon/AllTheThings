@@ -1266,7 +1266,7 @@ namespace ATT
             List<IDictionary<string, object>> rawSources = new List<IDictionary<string, object>>();
             foreach (long sourceID in sourceIDs.AsTypedEnumerable<long>())
             {
-                if (TryGetSOURCED("sourceID", sourceID, out HashSet<IDictionary<string, object>> sources)
+                if (TryGetSOURCED("sourceID", sourceID, out var sources)
                     && sources.TryGetAnyMatchingGroup(IsObtainableData, out var matched))
                 {
                     // this SourceID is Sourced & Obtainable elsewhere, symlink it to the Ensemble
@@ -1323,7 +1323,7 @@ namespace ATT
             // distinct Ensemble
             if (data.TryGetValue("_altTmogSetQuestID", out long altTransmogSetQuestID))
             {
-                if (!TryGetSOURCED("questID", altTransmogSetQuestID, out HashSet<IDictionary<string, object>> questSources))
+                if (!TryGetSOURCED("questID", altTransmogSetQuestID, out var questSources))
                 {
                     data.TryGetValue("ensembleID", out long ensembleID);
                     LogWarn($"Ensemble {ensembleID} has matching un-sourced alternate questID {altTransmogSetQuestID}. This is either due to bad Blizzard data and hopefully fixed in future Wago updates, or should have an hqt({altTransmogSetQuestID}) added to prevent this message.", data);
@@ -1528,9 +1528,9 @@ namespace ATT
             data["_remove"] = false;
         }
 
-        internal static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
+        internal static bool TryGetSOURCED(string field, object idObj, out ConcurrentHashSet<IDictionary<string, object>> sources)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                 && idObj.TryConvert(out long id)
                 && id > 0
                 && fieldSources.TryGetValue(id, out sources))
@@ -1542,24 +1542,24 @@ namespace ATT
             return false;
         }
 
-        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
+        private static IEnumerable<IEnumerable<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, object> field in data)
             {
-                if (SOURCED.TryGetValue(field.Key, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+                if (SOURCED.TryGetValue(field.Key, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                     && field.Value.TryConvert(out long id) && id > 0
-                    && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+                    && fieldSources.TryGetValue(id, out ConcurrentHashSet<IDictionary<string, object>> objectSources))
                 {
                     yield return objectSources;
                 }
             }
         }
 
-        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
+        private static IEnumerable<IEnumerable<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                 && idObj.TryConvert(out long id) && id > 0
-                && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+                && fieldSources.TryGetValue(id, out ConcurrentHashSet<IDictionary<string, object>> objectSources))
             {
                 yield return objectSources;
             }
@@ -1567,9 +1567,9 @@ namespace ATT
 
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
             {
-                fieldSources.GetOrAdd(id, _ => new HashSet<IDictionary<string, object>>()).Add(data);
+                fieldSources.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
             }
         }
 
@@ -1586,7 +1586,7 @@ namespace ATT
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
                 {
-                    kvp.Value.GetOrAdd(id, _ => new HashSet<IDictionary<string, object>>()).Add(data);
+                    kvp.Value.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
                 }
                 // TODO: not treating encounters as sources for NPCs currently due to overzealous merging without respect to difficulty
                 // special cases where the id field is not in the data, but we will treat that data as Sourced for that key/id anyway
@@ -3076,7 +3076,7 @@ namespace ATT
                             // 91 (BATTLE_PET_SPECIES)
                             case 91:
                                 // world quest battle pets have 'speciesID' and are sourced under NYI... don't move any of their criteria there
-                                if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out HashSet<IDictionary<string, object>> sourcedSpecies)
+                                if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out var sourcedSpecies)
                                     && sourcedSpecies.All(s => IsObtainableData(s)))
                                 {
                                     IncorporateDataField(data, "_species", existingModifierTree.Asset);
@@ -3849,7 +3849,7 @@ namespace ATT
                 data.TryGetValue("achID", out long achID);
                 foreach (long questID in questObjs.AsTypedEnumerable<long>())
                 {
-                    if (!TryGetSOURCED("questID", questID, out HashSet<IDictionary<string, object>> questRefs))
+                    if (!TryGetSOURCED("questID", questID, out var questRefs))
                     {
                         // remove the quests which are not sourced from being reported as failed to merge
                         Objects.TrackPostProcessMergeKey("questID", questID);
@@ -4027,7 +4027,7 @@ namespace ATT
 
             foreach (long itemID in objectiveItems.AsTypedEnumerable<long>())
             {
-                if (!TryGetSOURCED("itemID", itemID, out HashSet<IDictionary<string, object>> sourcedItems))
+                if (!TryGetSOURCED("itemID", itemID, out var sourcedItems))
                 {
                     // this shouldn't happen since we only add to this field if it IS Sourced after Validate stage
                     continue;
@@ -4098,7 +4098,7 @@ namespace ATT
                 }
 
                 // TODO: eventually add check for _unsorted to ensure all sourceQuests are present in Main list
-                if (!TryGetSOURCED("questID", sourceQuestID, out HashSet<IDictionary<string, object>> sourceQuestObjs))
+                if (!TryGetSOURCED("questID", sourceQuestID, out var sourceQuestObjs))
                 {
                     // Source Quest not in database *anywhere*
                     LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
@@ -4229,7 +4229,7 @@ namespace ATT
                 {
                     // this single Quest Item on HQT is Sourced 1 time in ATT without a questID itself, maybe remove the HQT?
                     if (TryGetSOURCED("itemID", itemID, out var itemSources)
-                        && itemSources.Count == 1
+                        && itemSources.Count() == 1
                         && !itemSources.First().ContainsKey("questID"))
                     {
                         LogDebugWarn($"Possibly remove HQT {questID} since it is linked from one non-Quest Item {itemID} which is has one Source and could simply be an ItemWithQuest", data);
