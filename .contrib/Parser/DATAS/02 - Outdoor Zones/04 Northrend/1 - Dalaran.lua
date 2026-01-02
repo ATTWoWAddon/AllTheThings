@@ -1176,8 +1176,10 @@ root(ROOTS.Zones, {
 									{ "not", "headerID", BACK, WAIST, WRIST, FEET },				-- Exclude off-piece headers
 									{ "not", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },	-- Exclude off-piece filters
 									{ "pop" },						-- Flatten everything out
-									{ "exclude", "itemID", 45983 },	-- Exclude Furious Gladiator's Tabard
-									{ "exclude", "itemID", 42214 },	-- Exclude Savage Gladiator's Waraxe
+									{ "exclude", "itemID",
+										45983,	-- Exclude Furious Gladiator's Tabard
+										42214,	-- Exclude Savage Gladiator's Waraxe
+									},
 									{ "exclude", "u", 1 },			-- Exclude items that were never available to begin with
 								},
 								-- #endif
