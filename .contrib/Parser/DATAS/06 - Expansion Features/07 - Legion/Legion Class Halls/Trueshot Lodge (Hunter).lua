@@ -457,11 +457,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42390 },	-- Recruiting Rexxar
 						["provider"] = { "n", 107425 },	-- Rexxar
 						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["groups"] = {
+							i(137612),	-- Raw Meat
+							i(137609),	-- Wood
+							i(137613),	-- Hearty Steak
+						},
 					}),
 					q(42392, {	-- Survive the Night
 						["sourceQuests"] = { 43335 },	-- Survival Skills
 						["provider"] = { "n", 107425 },	-- Rexxar
 						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["groups"] = {
+							i(137612),	-- Raw Meat
+							i(137609),	-- Wood
+							i(137613),	-- Hearty Steak
+						},
 					}),
 					q(42410, {	-- Champion: Rexxar
 						["sourceQuests"] = { 42392 },	-- Survive the Night
