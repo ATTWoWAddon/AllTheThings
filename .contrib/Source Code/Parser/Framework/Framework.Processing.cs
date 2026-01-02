@@ -1871,9 +1871,19 @@ namespace ATT
                     // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
                     if (previousCommand == "sub")
                     {
-                        if (commandName != "merge" && commandName != "sub" && commandName != "select" && commandName != "fill")
+                        switch (commandName)
                         {
-                            LogWarn($"'sym' 'sub' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
+                            case "merge":
+                            case "select":
+                            case "fill":
+                            case "sub":
+                                break;
+                            case "finalize":
+                                LogWarn($"'sym' '{previousCommand}' command followed by 'finalize' is pointless", data);
+                                break;
+                            default:
+                                LogWarn($"'sym' '{previousCommand}' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
+                                break;
                         }
                     }
 

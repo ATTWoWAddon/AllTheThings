@@ -916,11 +916,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				n(248108, {	-- Avatar of the August Celestials <August Stone Fragment Exchange>
 					["aqd"] = {
 						["coord"] = { 41.4, 46.3, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
-						["maps"] = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						["maps"] = { SHRINE_OF_SEVEN_STARS },
 					},
 					["hqd"] = {
 						["coord"] = { 42.5, 76.6, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
-						["maps"] = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						["maps"] = { SHRINE_OF_TWO_MOONS },
 					},
 					["groups"] = appendGroups(
 					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, {	-- Tier Tokens (Terrace)
@@ -1356,11 +1356,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3 } }, {
 					["aqd"] = {
 						["coord"] = { 42.6, 50.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
-						["maps"] = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						["maps"] = { SHRINE_OF_SEVEN_STARS },
 					},
 					["hqd"] = {
 						["coord"] = { 42.6, 84.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
-						["maps"] = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						["maps"] = { SHRINE_OF_TWO_MOONS },
 					},
 					["groups"] = appendGroups(
 					{	-- Tier Tokens
@@ -1369,13 +1369,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						shards(55, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.CHEST)),
 						shards(45, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.GAUNTLETS)),
 						shards(55, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.LEGS)),
-						
+
 						shards(60, i(CELESTIAL_TOKENS.SEASON2.PROTECTOR.HELM)),
 						shards(50, i(CELESTIAL_TOKENS.SEASON2.PROTECTOR.SHOULDERS)),
 						shards(55, i(CELESTIAL_TOKENS.SEASON2.PROTECTOR.CHEST)),
 						shards(45, i(CELESTIAL_TOKENS.SEASON2.PROTECTOR.GAUNTLETS)),
 						shards(55, i(CELESTIAL_TOKENS.SEASON2.PROTECTOR.LEGS)),
-						
+
 						shards(60, i(CELESTIAL_TOKENS.SEASON2.VANQUISHER.HELM)),
 						shards(50, i(CELESTIAL_TOKENS.SEASON2.VANQUISHER.SHOULDERS)),
 						shards(55, i(CELESTIAL_TOKENS.SEASON2.VANQUISHER.CHEST)),
@@ -1404,7 +1404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						shards(30, i(95632)),	-- Worldbreaker's Stormscythe
 						shards(30, i(95791)),	-- Wu-Lai, Bladed Fan of the Consorts
 						shards(30, i(95861)),	-- Zeeg's Ancient Kegsmasher
-						
+
 						-- Two-Handed
 						shards(50, i(95877)),	-- Bo-Ris, Horror in the Night
 						shards(50, i(95862)),	-- Darkwood Spiritstaff
@@ -1694,10 +1694,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 							i(93666),	-- Spawn of Horridon (MOUNT!)  [Unconfirmed]
 							i(89783),	-- Son of Galleon (MOUNT!)
-							
+
 							i(87794),	-- Golden Water Strider (MOUNT!)
 							i(87792),	-- Orange Water Strider (MOUNT!)
-							
+
 							i(94295),	-- Primal Egg
 							i(94573),	-- Direhorn Runt (PET!)
 							i(88148),	-- Jade Crane Chick (PET!)
@@ -1750,13 +1750,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.CHEST)),
 						crystals(45, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.GAUNTLETS)),
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.LEGS)),
-						
+
 						crystals(60, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.HELM)),
 						crystals(50, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.SHOULDERS)),
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.CHEST)),
 						crystals(45, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.GAUNTLETS)),
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.PROTECTOR.LEGS)),
-						
+
 						crystals(60, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.HELM)),
 						crystals(50, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.SHOULDERS)),
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.CHEST)),
@@ -1764,13 +1764,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						crystals(55, i(CELESTIAL_TOKENS.SEASON3.VANQUISHER.LEGS)),
 					},
 					{	-- Weapons
-						
+
 					},
 					{	-- Necks
-						
+
 					},
 					{	-- Cloaks
-						
+
 					},
 					{	-- Plate Armor
 						-- Head
@@ -1813,14 +1813,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						-- Feet
 					},
 					{	-- Rings
-						
+
 					},
 					{	-- Trinkets
-						
+
 					},
 					{	-- Bags
 						crystals(10, i(, {	-- Sack of Celestial Chance
-							
+
 						})),
 						crystals(10, i()),	-- Satchel of Stone Crystals
 					},
