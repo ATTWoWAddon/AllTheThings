@@ -184,9 +184,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19354, {	-- Draconic Avenger
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19358, {	-- Draconic Maul
 					["crs"] = {
@@ -204,14 +202,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19439, {	-- Interlaced Shadow Jerkin
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19438, {	-- Ringo's Blizzard Boots
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19183),	-- Hourglass Sand
 			}),
@@ -312,9 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			n(14401, {	-- Master Elemental Shaper Krixix
 				-- #if BEFORE WRATH
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-				["groups"] = {
-					r(22967),	-- Smelt Elementium
-				},
+				["groups"] = { r(22967) },	-- Smelt Elementium
 				-- #else
 				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
 				-- #endif
@@ -596,9 +588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 										{ "i", 231800, 1 },	-- Soul of Des'Altek
 										{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
 									},
-									["groups"] = {
-										i(229910),	-- Scythe of Chaos
-									},
+									["groups"] = { i(229910) },	-- Scythe of Chaos
 								}),
 							},
 						}),
@@ -984,9 +974,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				}),
 				n(14401, {	-- Master Elemental Shaper Krixix
 					["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-					["groups"] = {
-						r(22967),	-- Smelt Elementium
-					},
+					["groups"] = { r(22967) },	-- Smelt Elementium
 				}),
 				e(1533, {	-- Ebonroc
 					["creatureID"] = 14601,

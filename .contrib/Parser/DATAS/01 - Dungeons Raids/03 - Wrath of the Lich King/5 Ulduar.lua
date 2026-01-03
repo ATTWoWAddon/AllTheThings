@@ -223,9 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3181,	-- I Love the Smell of Saronite in the Morning (10 player)
 								3158,	-- One Light in the Darkness (10 player)
 							}},
-							["groups"] = {
-								i(45802),	-- Rusted Proto-Drake (MOUNT!)
-							},
+							["groups"] = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
 						}),
 						revampAch(2919),	-- A Quick Shave (10 player)
 						revampAch(3159),	-- Alone in the Darkness (10 player)
@@ -237,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
 							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
-							title(127),	-- , Champion of Ulduar
+							title(127),	-- <Name>, Champion of Ulduar
 						})),
 						revampAch(2961),	-- Cheese the Freeze (10 player)
 						revampAch(2980),	-- Con-speed-atory (10 player)
@@ -334,14 +332,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3181,	-- I Love the Smell of Saronite in the Morning (10 player)
 								3158,	-- One Light in the Darkness (10 player)
 							}},
-							["groups"] = {
-								i(45802),	-- Rusted Proto-Drake (MOUNT!)
-							},
+							["groups"] = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
 						}),
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
 							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
-							title(127),	-- , Champion of Ulduar
+							title(127),	-- <Name>, Champion of Ulduar
 						})),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
 							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
@@ -661,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							revampAch(3036, {	-- Observed (10 player)
-								title(129),	-- Starcaller
+								title(129),	-- Starcaller <Name>
 							}),
 							ach(5020, {	-- Observed - Guild Edition
 								["timeline"] = { ADDED_4_0_3 },
@@ -673,14 +669,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							ach(3316, {	-- Herald of the Titans
 								["description"] = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-								-- #if AFTER SL
-								["lockCriteria"] = { 1, "lvl", 31 },
-								-- #else
-								["lockCriteria"] = { 1, "lvl", 80 },
-								-- #endif
-								["groups"] = {
-									title(131),	-- , Herald of the Titans
+								["lockCriteria"] = {
+									-- #if AFTER SL
+									{ 1, "lvl", 31 },
+									-- #else
+									{ 1, "lvl", 80 },
+									-- #endif
 								},
+								["groups"] = { title(131) },	-- <Name>, Herald of the Titans
 							}),
 							i(46052),	-- Reply-Code Alpha
 							i(46047),	-- Pendant of the Somber Witness
@@ -1034,9 +1030,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
 								3163,	-- One Light in the Darkness (25 player)
 							}},
-							["groups"] = {
-								i(45801),	-- Ironbound Proto-Drake (MOUNT!)
-							},
+							["groups"] = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
 						}),
 						revampAch(2921),	-- A Quick Shave (25 player)
 						revampAch(3164),	-- Alone in the Darkness (25 player)
@@ -1050,7 +1044,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
 							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
-							title(126),	-- , Conqueror of Ulduar
+							title(126),	-- <Name>, Conqueror of Ulduar
 						})),
 						revampAch(3007),	-- Crazy Cat Lady (25 player)
 						revampAch(2984),	-- Deforestation (25 player)
@@ -1135,7 +1129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
-								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
@@ -1160,14 +1154,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
 								3163,	-- One Light in the Darkness (25 player)
 							}},
-							["groups"] = {
-								i(45801),	-- Ironbound Proto-Drake (MOUNT!)
-							},
+							["groups"] = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
 						}),
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
 							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
-							title(126),	-- , Conqueror of Ulduar
+							title(126),	-- <Name>, Conqueror of Ulduar
 						})),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
 							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
@@ -1266,7 +1258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
-								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
@@ -1957,7 +1949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(3011, {	-- Kiss and Make Up (25 player)
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-								["crs"] = { 33134 },	-- Sara
+								["cr"] = 33134,	-- Sara
 							}),
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
 							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
@@ -2446,15 +2438,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3316, {	-- Herald of the Titans
 							-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 							-- #if AFTER SL
-							["lockCriteria"] = { 1, "lvl", 31 },
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
 							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],
-							-- #else
-							["lockCriteria"] = { 1, "lvl", 80 },
 							-- #endif
-							["groups"] = {
-								title(131),	-- , Herald of the Titans
-							},
+							["lockCriteria"] =
+								-- #if AFTER SL
+								{ 1, "lvl", 31 },
+								-- #else
+								{ 1, "lvl", 80 },
+								-- #endif
+							["groups"] = { title(131) },	-- <Name>, Herald of the Titans
 						}),
 						i(46052),	-- Reply-Code Alpha
 						i(46053),	-- Reply-Code Alpha
@@ -2725,16 +2718,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12364),	-- Knock on Wood
 						ach(12365),	-- Knock, Knock on Wood
 						ach(12366, {	-- Knock, Knock, Knock on Wood
-							i(45613, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Dreambinder
-							i(45484, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bladetwister
-							i(45947, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Serilas, Blood Blade of Invar One-Arm
-							i(45294, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Petrified Ivy Sprig
-							i(45485, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bronze Pendant of the Vanir
-							i(45945, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Seed of Budding Carnage
-							i(45486, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Drape of the Sullen Goddess
-							i(45943, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Gloves of Whispering Winds
-							i(45487, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Handguards of Revitalization
-							i(45488, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Leggings of the Enslaved Idol
+							i(45613, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Dreambinder
+							i(45484, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bladetwister
+							i(45947, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Serilas, Blood Blade of Invar One-Arm
+							i(45294, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Petrified Ivy Sprig
+							i(45485, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bronze Pendant of the Vanir
+							i(45945, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Seed of Budding Carnage
+							i(45486, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Drape of the Sullen Goddess
+							i(45943, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Gloves of Whispering Winds
+							i(45487, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Handguards of Revitalization
+							i(45488, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil

@@ -128,11 +128,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(ZONE_DROPS, {
 				i(24246, {	-- Sanguine Hibiscus
-					-- #if BEFORE 4.3.0
-					["description"] = "Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named Gzhun'tt for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. Gzhun'tt can be found in Sporeggar.",
-					-- #else
-					["description"] = "Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 4.3.0
+						"Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",
+						-- #else
+						"Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named Gzhun'tt for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. Gzhun'tt can be found in Sporeggar.",
+						-- #endif
 					["provider"] = { "o", 183385 },	-- Sanguine Hibiscus
 				}),
 			}),

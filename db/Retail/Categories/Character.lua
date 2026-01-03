@@ -6982,7 +6982,7 @@ s(93076,156674,{f=2,races=a[161]})}})}}),
 ra(1,{awp=100007,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",races=a[53],g={
 q(72644,{altQuests={75265},isBreadcrumb=1,lvl=50,nextQuests=a[278],races=a[53],g={
 i(203475,{races=a[53]})}}),
-q(75265,{altQuests={72644},coords={{54.6,20,84}},isBreadcrumb=1,lvl=50,nextQuests=a[278],qgs={199340},races=a[53],g={
+q(75265,{altQuests={72644},coords={{54.6,20,84}},isBreadcrumb=1,lvl=50,nextQuests=a[278],qgs={199340},races=a[53],rwp=110207,u=2,g={
 i(203475,{races=a[53]})}}),
 q(72405,{coords={{87.5,30.8,84}},lvl=50,qgs={198884},races=a[53],sourceQuests={72644,75265},sqreq=1}),
 q(72408,{coords={a[189]},lvl=50,qgs=a[127],races=a[53],sourceQuests=a[278]}),

@@ -49,9 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_1_15_4 },
 					["maps"] = { MOLTEN_CORE },
 					["classes"] = SWORD_CLASSES,
-					["groups"] = {
-						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
-					},
+					["groups"] = { i(19019) },	-- Thunderfury, Blessed Blade of the Windseeker
 				}),
 				q(85443, {	-- Rise, Thunderfury!
 					["sourceQuest"] = 85441,	-- Thunderaan the Windseeker
@@ -154,9 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if ANYCLASSIC
 				["modelScale"] = 20,
 				-- #endif
-				["groups"] = {
-					i(19018),	-- Dormant Wind Kissed Blade
-				},
+				["groups"] = { i(19018) },	-- Dormant Wind Kissed Blade
 			})),
 		},
 	}))),

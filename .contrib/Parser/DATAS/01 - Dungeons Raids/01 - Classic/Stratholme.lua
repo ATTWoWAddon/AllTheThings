@@ -1712,11 +1712,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					e(456, {	-- Baron Rivendare [Classic] / Lord Aurius Rivendare [CATA+]
-						-- #if AFTER 4.0.3
-						["creatureID"] = 45412,	-- Lord Aurius Rivendare
-						-- #else
-						["creatureID"] = 10440,	-- Baron Rivendare
-						-- #endif
+						["crs"] = {
+							-- #if AFTER CATA
+							45412,	-- Lord Aurius Rivendare
+							-- #else
+							10440,	-- Baron Rivendare
+							-- #endif
+						},
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
 							ach(729, {	-- Deathcharger's Reins

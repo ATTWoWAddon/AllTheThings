@@ -78,13 +78,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
-					-- #if AFTER 4.3.0
-					["sourceQuest"] = 29684,	-- Severed Communications
-					["lvl"] = lvlsquish(68, 68, 25),
-					-- #else
-					["sourceQuest"] = 11488,	-- Magisters' Terrace
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER 4.3.0
+						29684,	-- Severed Communications
+						-- #else
+						11488,	-- Magisters' Terrace
+						-- #endif
+					},
+					["lvl"] =
+						-- #if AFTER 4.3.0
+						lvlsquish(68, 68, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["qg"] = 24822,	-- Tyrith
 					["groups"] = {
 						objective(1, {	-- Scrying Orb Activated

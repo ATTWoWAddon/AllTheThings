@@ -3500,7 +3500,7 @@ i(12184,{coords={a[88],a[139]},crs=a[188],description="Drops from raptors in pre
 i(4461,{coords={a[128]},crs=a[58],description="Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents."}),
 i(17969),
 i(12203,{coords={a[114],a[142]},crs=a[214],description="Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood."}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={-353,17,51,81,83,242,317}}),
+i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={17,51,81,83,242,317}}),
 i(10285,{crs={5856,5857,5858},description="Drops from spiders in Searing Gorge.",maps={32}}),
 i(5635,{coords={{27,60,95},{50,60,95},{70,38,95}},crs={16347,16348,16349},description="Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!"}),
 i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={14,26,66,69,230,235,280,301}}),

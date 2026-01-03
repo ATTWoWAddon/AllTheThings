@@ -274,7 +274,8 @@ crit(103524,{achID=41714,id=3,providers={{"i",230219}}}),
 crit(103525,{achID=41714,id=4,providers={{"i",230218}}}),
 crit(103526,{achID=41714,id=5,providers={{"i",230220}}})}}),
 ach(40438,{awp=110000,maps=a[9],g={
-mnt(452779,{b=1,itemID=224415,lvl=30})}}),
+mnt(452779,{b=1,itemID=224415,lvl=30}),
+crit(109697,{achID=61451,awp=110207,id=7})}}),
 ach(40524,{awp=110000,maps=a[10]}),
 ach(40732,{awp=110000,maps=a[9]}),
 ach(40098,{awp=110000,maps=a[10],g={

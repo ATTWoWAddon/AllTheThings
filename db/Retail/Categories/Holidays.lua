@@ -4670,7 +4670,7 @@ ach(7601,{awp=50004,e=16,r=2}),
 ach(7602,{awp=50004,e=16,r=1}),
 ach(18360,{awp=100105,e=16}),
 ach(40862,{awp=110002,e=16})}}),
-n(23682,{awp=20001,e=16,maps=a[518],sym={{"selectparent"},{"pop"},{"where","headerID",-47},{"pop"},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195},{"exclude","itemID",20392},{"exclude","itemID",20413},{"select","itemID",37585,37583,37582,37584,37606,37604}},g={
+n(23682,{awp=20001,e=16,maps=a[518],sym={{"selectparent"},{"pop"},{"where","headerID",-47},{"pop"},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195,20392,20413},{"select","itemID",37585,37583,37582,37584,37606,37604}},g={
 ach(18962,{awp=100107,e=16,g={
 crit(61941,{achID=18959,e=16,id=2})}}),
 ach(255,{awp=30002,e=16,rwp=100107,u=2,g={
@@ -5770,7 +5770,7 @@ h(-47,{e=16,g={
 i(34077,{awp=20001,b=1,e=16,f=55,spellID=44245,g={
 i(36877,{e=16,f=55}),
 i(34068,{e=16,f=55,spellID=44212})}}),
-i(37586,{awp=20403,b=1,e=16,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077},{"exclude","itemID",20390,20389,20388},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195},{"exclude","itemID",20413},{"finalize"},{"select","itemID",33292,33154}}}),
+i(37586,{awp=20403,b=1,e=16,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077,20390,20389,20388,69187,69188,69189,69190,69192,69193,69194,69195,20413},{"select","itemID",33292,33154}}}),
 i(20393,{b=1,e=16,rwp=40200,u=2}),
 i(20390,{b=1,e=16,f=55,rwp=40001,spellID=24707,u=2}),
 i(20389,{b=1,e=16,f=55,rwp=40001,spellID=24707,u=2}),

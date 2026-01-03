@@ -14626,8 +14626,14 @@ artifact(454,{c=a[1298]}),
 artifact(211,{c=a[1298]}),
 artifact(469,{c=a[1298]})}}),
 q(42390,{c=a[1298],coords={a[1920]},lvl=10,qgs=a[264],sourceQuests=a[1864]}),
-q(43335,{c=a[1298],coords={a[1549]},lvl=10,qgs=a[268],sourceQuests={42390}}),
-q(42392,{c=a[1298],coords={a[1549]},lvl=10,qgs=a[268],sourceQuests={43335}}),
+q(43335,{c=a[1298],coords={a[1549]},lvl=10,qgs=a[268],sourceQuests={42390},g={
+i(137612,{b=1,c=a[1298],spellID=432324}),
+i(137609,{b=1,c=a[1298],spellID=432325}),
+i(137613,{b=1,c=a[1298],f=55,spellID=213306})}}),
+q(42392,{c=a[1298],coords={a[1549]},lvl=10,qgs=a[268],sourceQuests={43335},g={
+i(137612,{b=1,c=a[1298],spellID=432324}),
+i(137609,{b=1,c=a[1298],spellID=432325}),
+i(137613,{b=1,c=a[1298],f=55,spellID=213306})}}),
 q(42410,{c=a[1298],coords={a[1549]},lvl=10,qgs=a[268],sourceQuests={42392},g={
 follower(743,{c=a[1298]})}}),
 q(42395,{c=a[1298],coords={a[1920]},lvl=10,qgs=a[272],sourceQuests={42393,42410},g={
@@ -28596,7 +28602,7 @@ h(-170,{
 h(-45,{
 q(78444,{coords={a[2242]},isWeekly=1,lvl=70,maxReputation=a[1214],minReputation=a[1204],qgs=a[1011],sourceQuests={77283,77887},sqreq=1,g={
 i(210421,{f=55,lvl=60,minReputation=a[1204],spellID=425588}),
-i(210872,{b=1,f=55,lvl=60,minReputation=a[1204],sym={{"select","itemID",211389},{"pop"},{"exclude","itemID",211417},{"exclude","itemID",210243}},g={
+i(210872,{b=1,f=55,lvl=60,minReputation=a[1204],sym={{"select","itemID",211389},{"pop"},{"exclude","itemID",211417,210243}},g={
 i(202172,{b=1,minReputation=a[1204]})}})}}),
 q(78579,{coords={a[2242]},DisablePartySync=1,lc=a[178],lvl=70,minReputation={2574,2},qgs=a[1011],rwp=110000,u=2}),
 q(78385,{coords={a[2813]},lvl=70,minReputation={2574,3},qgs=a[1025],g={
@@ -31986,6 +31992,9 @@ q(91871,{coords={a[2197]},qgs=a[1072],repeatable=1,sourceQuests={91868},g={
 i(254325,{description="Contains Equipment rewarded from various Quests available throughout Khaz Algar."})}}),
 q(93979,{coords={{37.7,74.8,2472}},description="'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",qgs={231128},repeatable=1,sourceQuests=a[3435]})}})})}}),
 h(-12,{awp=110002,g={
+ach(61451,{awp=110207,g={
+de(11455,{itemID=257353,spellID=1261469}),
+mnt(1262886,{itemID=258188})}}),
 ach(41665,{awp=110100,g={
 i(236852,{b=1,questID=87353,spellID=1220989,tmogSetID=4341,type="ihqt",g={
 d(17,{
@@ -32831,7 +32840,8 @@ cl(1,{
 s(221675,211982,{b=1,bonusID=8107,c=a[191],f=7,lvl=80}),
 s(221683,211984,{b=1,bonusID=8107,c=a[191],f=7,lvl=80})})})}})}),
 ach(41201,{awp=110007,g={
-mnt(448934,{b=1,itemID=223313,lvl=30})}})}}),
+mnt(448934,{b=1,itemID=223313,lvl=30}),
+crit(109694,{achID=61451,awp=110207,id=5})}})}}),
 h(-45,{awp=110107,g={
 ah(41820,{type="a",g={
 q(91039,{isBreadcrumb=1,lvl=80,nextQuests=a[3418]}),

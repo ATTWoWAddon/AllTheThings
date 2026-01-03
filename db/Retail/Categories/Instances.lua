@@ -634,7 +634,7 @@ crit(4010,{achID=1285,id=3})}}),
 gach(5056,{awp=40003}),
 ach(15330,{awp=11401,rwp=11500,u=2}),
 i(17204,{b=1,spellID=21160}),
-i(19017,{b=1,c=a[50],description="For this to drop, you must be on the Thunderaan the Windseeker quest."}),
+i(19017,{b=1,c=a[50],description="For this to drop, you must be on the 'Thunderaan the Windseeker' quest."}),
 r(213037,{awp=70003,b=1,itemID=138018,lvl=10,requireSkill=197,skillID=2534}),
 ill(5872,{awp=70003,b=1,c=a[1172],itemID=138833,questID=42942}),
 s(7085,17076,{b=1,f=26,lvl=25}),
@@ -692,7 +692,7 @@ s(7449,18715,{b=1,c=a[691],description="Go back to Felwood after having complete
 q(7508,{c=a[59],maps=a[560],qgs=a[257],qis={18513},rwp=30300,sourceQuests={7507},u=2}),
 q(7509,{c=a[59],cost={{"i",18488,1}},crs={10184},maps=a[560],qgs=a[257],qis={18492},rwp=30300,sourceQuests={7508},u=2,g={
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},spellID=22906,u=2}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",u=2}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",u=2}),
 s(7284,18348,{b=1,c=a[59],f=25,lvl=25,spellID=265255,u=2})}}),
 q(7497,{coords={{67,85,84}},learnedAt=300,lvl=30,qgs={14394},r=2,requireSkill=165,sourceQuests={7496,24428},g={
 r(19093,{awp=30202,learnedAt=320,requireSkill=165,skillID=2532}),
@@ -1214,7 +1214,7 @@ q(8246,{coords={a[286]},cost={{"i",19858,15}},minReputation=a[628],qgs=a[283],re
 i(20077,{b=1,spellID=24422,u=2}),
 i(20076,{b=1,spellID=24421,u=2}),
 i(20078,{b=1,spellID=24420,u=2})}}),
-q(8183,{description="Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",maps=a[533],providers={{"i",19802}},u=2,g={
+q(8183,{description="Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",maps=a[533],providers={{"i",19802}},u=2,g={
 i(19948,{b=1,f=53,spellID=24574,u=2}),
 i(19950,{b=1,f=53,spellID=24658,u=2}),
 i(19949,{b=1,f=53,spellID=24661,u=2})}}),
@@ -2447,7 +2447,8 @@ q(6565,{coords={a[135]},crs={12902},qgs=a[218],r=1,rwp=40003,sourceQuests={6564}
 s(7173,17695,{b=1,f=4,u=2}),
 i(17694,{b=1,f=52,u=2})}}),
 q(26891,{awp=40003,qgs=a[218],qis=a[367],r=1,rwp=60002,u=2}),
-q(6921,{coords={a[135]},qgs=a[218],qis=a[367],r=1,rwp=40003,u=2}),
+q(908,{coords={a[135]},description="This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",qgs=a[218],qis=a[367],r=1,rwp=10204,u=2}),
+q(6921,{awp=10204,coords={a[135]},qgs=a[218],qis=a[367],r=1,rwp=40003,u=2}),
 q(6922,{lvl=10,maps=a[1125],providers={{"i",16782}},r=1,rwp=60002,u=2,g={
 s(6955,16886,{b=1,f=25,u=2}),
 s(6956,16887,{b=1,f=1,u=2})}}),
@@ -55544,7 +55545,7 @@ ach(16404,{
 crit(55255,{achID=16295,id=6})})}})})}}),
 inst(1209,{awp=100105,coords={{61,84.3,2025}},maps={2190,2191,2192,2193,2194,2195,2196,2197,2198},savedInstanceID=2579,g={
 h(-45,{
-q(76140,{coords={{60.8,38.9,2112}},lvl=70,qgs=a[434]}),
+q(76140,{coords={{60.8,38.9,2112}},lvl=70,qgs=a[434],rwp=110000,u=2}),
 q(76141,{coords={a[956]},lvl=70,qgs=a[499],sourceQuests=a[1222]}),
 q(76142,{coords={a[956]},lvl=70,qgs=a[499],sourceQuests=a[1222],g={
 i(206586,{spellID=413920}),
@@ -56579,7 +56580,8 @@ h(-12,{
 ach(40247),
 ach(40248),
 ach(40249),
-ach(40244),
+ach(40244,{
+crit(109690,{achID=61451,awp=110207,id=1})}),
 ach(40245),
 ach(40246),
 ach(40232,{
@@ -57757,7 +57759,8 @@ ach(41225),
 ach(41226),
 ach(41227),
 ach(41228),
-ach(41222),
+ach(41222,{
+crit(109691,{achID=61451,awp=110207,id=2})}),
 ach(41223),
 ach(41224),
 ach(41286,{
@@ -59049,7 +59052,8 @@ h(-12,{
 ach(41601),
 ach(41602),
 ach(41603),
-ach(41598),
+ach(41598,{
+crit(109692,{achID=61451,awp=110207,id=3})}),
 ach(41599),
 ach(41600),
 ach(41597,{

@@ -290,7 +290,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226882), -- Beastmaster's Pants
 							i(226884), -- Beastmaster's Mantle
 						}),
-
 					},
 				},
 				{	-- Just Compensation
@@ -330,7 +329,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226894), -- Beastmaster's Fists
 							i(226890), -- Beastmaster's Waistwrap
 						}),
-
 					},
 				},
 				{	-- Saving the Best for Last
@@ -371,7 +369,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226893), -- Beastmaster's Coif
 							i(226896), -- Beastmaster's Chain
 						}),
-
 					},
 				},
 			}),
@@ -443,13 +440,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						-- Sorcerer Boots
 						i(226931), -- Sorcerer's Sandals
 						i(226943), -- Sorcerer's Boots
-
-
 						-- Sorcerer Legs
 						i(226933), -- Sorcerer's Leggings
 						i(226940), -- Sorcerer's Legs
-
-
 						-- Sorcerer Shoulders
 						i(226936), -- Sorcerer's Mantle
 						i(226939), -- Sorcerer's Shoulders
@@ -594,7 +587,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226988), -- Soulforge Legguards
 							i(226987), -- Soulforge Pauldrons
 						}),
-
 					},
 				}),
 				q(84166, {	-- Just Compensation [A]
@@ -625,7 +617,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226990), -- Soulforge Handguards
 							i(226986), -- Soulforge Waistguard
 						}),
-
 					},
 				}),
 				q(84198, {	-- Saving the Best for Last [A]
@@ -755,7 +746,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226956), -- Virtuous Leggings
 							i(226955), -- Virtuous Epaulets
 						}),
-
 					},
 				},
 				{	-- Just Compensation
@@ -836,7 +826,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226957), -- Virtuous Cowl
 							i(226960), -- Virtuous Gown
 						}),
-
 					},
 				},
 			}),
@@ -917,7 +906,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226838), -- Darkmantle Legguards
 							i(226837), -- Darkmantle Pauldrons
 						}),
-
 					},
 				},
 				{	-- Just Compensation
@@ -957,7 +945,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226840), -- Darkmantle Handguards
 							i(226836), -- Darkmantle Waistguard
 						}),
-
 					},
 				},
 				{	-- Saving the Best for Last
@@ -998,7 +985,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226841), -- Darkmantle Faceguard
 							i(226843), -- Darkmantle Armor
 						}),
-
 					},
 				},
 			}),
@@ -1084,7 +1070,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(227028), -- Legguards of The Five Thunders
 							i(227027), -- Shoulderguards of The Five Thunders
 						}),
-
 					},
 				}),
 				q(84176, {	-- Just Compensation [H]
@@ -1128,7 +1113,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(227030), -- Handguards of The Five Thunders
 							i(227026), -- Waistguard of The Five Thunders
 						}),
-
 					},
 				}),
 				q(84208, {	-- Saving the Best for Last [H]
@@ -1253,7 +1237,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226916), -- Deathmist Pants
 							i(226915), -- Deathmist Epaulets
 						}),
-
 					},
 				},
 				{	-- Just Compensation
@@ -1285,7 +1268,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226918), -- Deathmist Grasps
 							i(226914), -- Deathmist Cord
 						}),
-
 					},
 				},
 				{	-- Saving the Best for Last
@@ -1416,7 +1398,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226859), -- Legplates of Heroism
 							i(226858), -- Spaulders of Heroism
 						}),
-
 					},
 				},
 				{	-- Just Compensation
@@ -1457,7 +1438,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226861), -- Gauntlets of Heroism
 							i(226864), -- Belt of Heroism
 						}),
-
 					},
 				},
 				{	-- Saving the Best for Last
@@ -1498,7 +1478,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							i(226860), -- Crown of Heroism
 							i(226862), -- Breastplate of Heroism
 						}),
-
 					},
 				},
 			}),
@@ -1542,9 +1521,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22108),	-- Feralheart Bracers
-					},
+					["groups"] = { i(22108) },	-- Feralheart Bracers
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8951),	-- Anthion's Parting Words [A]
@@ -1680,9 +1657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22011),	-- Beastmaster's Bindings
-					},
+					["groups"] = { i(22011) },	-- Beastmaster's Bindings
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8952),	-- Anthion's Parting Words [A]
@@ -1816,9 +1791,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22063),	-- Sorcerer's Bindings
-					},
+					["groups"] = { i(22063) },	-- Sorcerer's Bindings
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8953),	-- Anthion's Parting Words [A]
@@ -1946,9 +1919,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22088),	-- Soulforge Bracers
-					},
+					["groups"] = { i(22088) },	-- Soulforge Bracers
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8954),	-- Anthion's Parting Words [A]
@@ -2165,9 +2136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22079),	-- Virtuous Bracers
-					},
+					["groups"] = { i(22079) },	-- Virtuous Bracers
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8955),	-- Anthion's Parting Words [A]
@@ -2303,9 +2272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22004),	-- Darkmantle Bracers
-					},
+					["groups"] = { i(22004) },	-- Darkmantle Bracers
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8956),	-- Anthion's Parting Words [A]
@@ -2431,9 +2398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22095),	-- Bindings of The Five Thunders
-					},
+					["groups"] = { i(22095) },	-- Bindings of The Five Thunders
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(10496),	-- Anthion's Parting Words [A]
@@ -2673,9 +2638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(22071),	-- Deathmist Bracers
-					},
+					["groups"] = { i(22071) },	-- Deathmist Bracers
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8958),	-- Anthion's Parting Words [A]
@@ -2792,9 +2755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						{ "g", 200000 },	-- 20g
 					},
 					["lvl"] = 58,
-					["groups"] = {
-						i(21996),	-- Bracers of Heroism
-					},
+					["groups"] = { i(21996) },	-- Bracers of Heroism
 				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8959),	-- Anthion's Parting Words [A]
@@ -2912,9 +2873,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { WINTERSPRING },
-					["cost"] = {
-						{ "i", 21939, 1 },	-- Fel Elemental Rod
-					},
+					["cost"] = { { "i", 21939, 1 } },	-- Fel Elemental Rod
 					["lvl"] = 58,
 				}),
 				{	-- A Supernatural Device
@@ -2994,9 +2953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						237,	-- Court of the Highborne
 						238,	-- Prison of Immol'Thar
 					},
-					["cost"] = {
-						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
-					},
+					["cost"] = { { "i", 21983, 1 } },	-- Incomplete Banner of Provocation
 					["lvl"] = 58,
 				}),
 				q(8947, {	-- Anthion's Strange Request
@@ -3097,9 +3054,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3119,9 +3074,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARLOCK, DRUID },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3138,9 +3091,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3154,9 +3105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3174,9 +3123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
 					["maps"] = { STRATHOLME },
 					["lvl"] = 58,
-					["groups"] = {
-						i(22137),	-- Ysida's Satchel
-					},
+					["groups"] = { i(22137) },	-- Ysida's Satchel
 				}),
 				q(8949, {	-- Falrin's Vendetta
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
@@ -3246,9 +3193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								12178,	-- Tortured Druid
 								12179,	-- Tortured Sentinel
 							},
-							["cost"] = {
-								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-							},
+							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
 						}),
 						objective(2, {	-- 0/12 Frozen Ectoplasm
 							["provider"] = { "i", 21936 },	-- Frozen Ectoplasm
@@ -3256,9 +3201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								7524,	-- Anguished Highborne
 								7523,	-- Suffering Highborne
 							},
-							["cost"] = {
-								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-							},
+							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
 						}),
 						objective(3, {	-- 0/12 Stable Ectoplasm
 							["provider"] = { "i", 21935 },	-- Stable Ectoplasm
@@ -3269,9 +3212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 								8540,	-- Torn Screamer
 								8538,	-- Unseen Servant
 							},
-							["cost"] = {
-								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-							},
+							["cost"] = { { "i", 21946, 1 } },	-- Ectoplasmic Distiller
 						}),
 					},
 				}),
@@ -3387,9 +3328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { WARRIOR, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3408,9 +3347,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3432,9 +3369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { PRIEST, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3450,9 +3385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["classes"] = { HUNTER, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
@@ -3472,9 +3405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["qg"] = 16031,	-- Ysida Harmon
 					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
-					["cost"] = {
-						{ "i", 22139, 1 },	-- Ysida's Locket
-					},
+					["cost"] = { { "i", 22139, 1 } },	-- Ysida's Locket
 					["lvl"] = 58,
 				}),
 				q(8996, {	-- Return to Bodley
@@ -3490,9 +3421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["cost"] = {
-						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
-					},
+					["cost"] = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
 					["lvl"] = 58,
 					["groups"] = {
 						i(22057, {	-- Brazier of Invocation
@@ -3813,9 +3742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						WESTERN_PLAGUELANDS,
 						TIRISFAL_GLADES,
 					},
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Incendicite of Incendius

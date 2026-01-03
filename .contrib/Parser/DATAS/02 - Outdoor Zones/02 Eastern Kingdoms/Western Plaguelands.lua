@@ -3293,16 +3293,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.6, 36.0, WESTERN_PLAGUELANDS },
 						{ 62.4, 36.2, WESTERN_PLAGUELANDS },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1813,	-- Decaying Horror
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
 						44485,	-- Flesh-Cobbled Brute
 						44484,	-- Flesh-Cobbled Ripper
 						44486,	-- Unholy Corpuscle
+						-- #else
+						1813,	-- Decaying Horror
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(12707, {	-- Plans: Runic Plate Boots
@@ -3311,14 +3311,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Maybe still drops, this tag will help with reporting if somebody does get a drop
-					-- #if AFTER CATA
-					["cr"] = 1783,	-- Skeletal Flayer
-					-- #else
 					["crs"] = {
 						1783,	-- Skeletal Flayer
+						-- #if BEFORE CATA
 						1791,	-- Slavering Ghoul
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },

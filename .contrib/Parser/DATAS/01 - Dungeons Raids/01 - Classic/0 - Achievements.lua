@@ -39,9 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		}),
 		ach(7934, {	-- Raiding with Leashes
 			["timeline"] = { ADDED_5_1_0 },
-			["groups"] = {
-				i(93031),	-- Mr. Bigglesworth (PET!)
-			},
+			["groups"] = { i(93031) },	-- Mr. Bigglesworth (PET!)
 		}),
 	}),
 }));

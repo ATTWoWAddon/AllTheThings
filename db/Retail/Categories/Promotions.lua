@@ -455,6 +455,46 @@ q(82809,{awp=110000,qgs={209681},u=3,g={
 p(4590,{b=1,itemID=224259,npcID=224716,spellID=452222,u=3}),
 p(4589,{b=1,itemID=224261,npcID=224717,spellID=452221,u=3}),
 p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}})}}),
+x(12,{awp=110200,u=3,g={
+h(-522,{description="These rewards were made available to anyone who purchased Midnight Heroic Edition.",u=3,g={
+ach(61401,{providers={{"s",1234305}},u=3}),
+en(248249,{questID=91814,spellID=1246785,tmogSetID=5165,u=3,g={
+s(295500,248378,{f=3}),
+s(295501,248379,{f=2}),
+s(295502,248380,{f=2}),
+s(295503,248381,{f=2}),
+s(295504,248382,{f=2}),
+s(295505,248383,{f=2}),
+s(295506,248384,{f=2}),
+s(295507,248385,{f=2}),
+s(295508,248386,{f=2}),
+s(295509,248387,{f=2})}}),
+mnt(1234305,{itemID=243020,lvl=30,u=3})}}),
+h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
+ach(61402,{providers={{"s",1239138}},u=3}),
+p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
+p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
+de(9151,{awp=110207,itemID=252668,spellID=1254915,u=3}),
+de(9149,{awp=110207,itemID=252666,spellID=1254913,u=3}),
+de(9150,{awp=110207,itemID=252667,spellID=1254914,u=3}),
+de(9152,{awp=110207,itemID=252669,spellID=1254916,u=3}),
+de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
+de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
+de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
+de(4843,{awp=110207,itemID=248809,spellID=1247795,u=3}),
+mnt(1239138,{itemID=245610,lvl=30,u=3}),
+mnt(1234303,{itemID=243019,lvl=30,u=3}),
+en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={
+s(295490,248368,{f=3}),
+s(295491,248369,{f=2}),
+s(295492,248370,{f=2}),
+s(295493,248371,{f=2}),
+s(295494,248372,{f=2}),
+s(295495,248373,{f=2}),
+s(295496,248374,{f=2}),
+s(295497,248375,{f=2}),
+s(295498,248376,{f=2}),
+s(295499,248377,{f=2})}})}})}}),
 h(-529,{awp=80205,description="These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",rwp=100100,u=2,g={
 mnt(302361,{itemID=207964,lvl=10,r=2,u=2}),
 mnt(302362,{itemID=207963,lvl=10,r=1,u=2})}}),
@@ -471,6 +511,8 @@ mnt(369476,{b=1,itemID=191114,u=3}),
 ach(15640,{providers={{"i",191114}},u=3})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
+de(12247,{itemID=259055,spellID=1264380,u=3}),
+de(12248,{itemID=259056,spellID=1264381,u=3}),
 de(12251,{itemID=259059,spellID=1264384,u=3}),
 de(12256,{itemID=259064,spellID=1264389,u=3}),
 de(12255,{itemID=259063,spellID=1264388,u=3}),
@@ -1418,14 +1460,14 @@ ach(17357,{sourceQuests={73391}}),
 ach(17358,{sourceQuests={73392}}),
 ach(17359,{sourceQuests={73393}})}),
 h(-39,{
-i(202183,{
+i(202183,{rwp=100200,u=2,g={
 i(204731,{b=2}),
 i(205189,{b=2,r=2}),
-i(205190,{b=2,r=1})})}),
+i(205190,{b=2,r=1})}})}),
 h(-45,{
-q(73183,{providers={{"i",204731}}}),
-q(75625,{providers={{"i",205189}},r=2}),
-q(75626,{providers={{"i",205190}},r=1}),
+q(73183,{providers={{"i",204731}},rwp=100200,u=2}),
+q(75625,{providers={{"i",205189}},r=2,rwp=100200,u=2}),
+q(75626,{providers={{"i",205190}},r=1,rwp=100200,u=2}),
 q(75221,{coords={{48,46.4,2112}},cost={{"i",202162,1}},qgs=a[10],repeatable=1,g={
 i(202163,{spellID=398642,g={
 toy(201931,{b=1}),
