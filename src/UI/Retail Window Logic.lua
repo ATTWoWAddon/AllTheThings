@@ -381,7 +381,7 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 	end
 end
 local __Text = {}
-local function GetProgressTextForRow(data)
+local function GetProgressTextForRow(data, forceTracking)
 	-- build the row text from left to right with possible info
 	-- Reagent (show reagent icon)
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
@@ -414,6 +414,8 @@ local function GetProgressTextForRow(data)
 	local stateIcon = GetCollectibleIcon(data, true)
 	if stateIcon then
 		__Text[#__Text + 1] = stateIcon
+		-- don't need to force tracking icon since it's a collectible Thing directly
+		forceTracking = nil
 	end
 	-- Container
 	local isContainer = data.isContainer
@@ -433,7 +435,7 @@ local function GetProgressTextForRow(data)
 	end
 
 	-- Trackable (Only if no other text available)
-	if #__Text == 0 then
+	if #__Text == 0 or forceTracking then
 		stateIcon = GetTrackableIcon(data, true)
 		if stateIcon then
 			__Text[#__Text + 1] = stateIcon

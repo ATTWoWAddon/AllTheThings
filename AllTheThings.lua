@@ -197,7 +197,7 @@ local function BuildContainsInfo(root, entries, indent, layer)
 				else
 					-- Insert into the display.
 					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
-					local o = { group = group, right = GetProgressTextForRow(group) };
+					local o = { group = group, right = GetProgressTextForRow(group, true) };
 					local indicator = ContainsTypesIndicators[group.filledType] or Indicator(group);
 					o.prefix = indicator and (Indents[indent]:sub(3) .. "|T" .. indicator .. ":0|t ") or Indents[indent]
 					entries[#entries + 1] = o
