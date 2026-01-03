@@ -669,13 +669,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							ach(3316, {	-- Herald of the Titans
 								["description"] = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-								["lockCriteria"] = {
+								["lockCriteria"] =
 									-- #if AFTER SL
 									{ 1, "lvl", 31 },
 									-- #else
 									{ 1, "lvl", 80 },
 									-- #endif
-								},
 								["groups"] = { title(131) },	-- <Name>, Herald of the Titans
 							}),
 							i(46052),	-- Reply-Code Alpha
