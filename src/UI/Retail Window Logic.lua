@@ -345,7 +345,7 @@ local function GetCatalystIcon(data, iconOnly)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.isCost or data.isOwnedCost then
+	if data.isCost or data.isOwnedCost or (data.progress == data.total and data.costTotal > 0) then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end

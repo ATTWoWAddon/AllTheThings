@@ -494,10 +494,8 @@ local function UpdateSearchResults(searchResults)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
-	local o
 	for i=1,#found do
-		o = found[i]
-		DirectGroupUpdate(o, true)
+		DirectGroupUpdate(found[i], true)
 	end
 	-- TODO: use event
 	app.WipeSearchCache()
