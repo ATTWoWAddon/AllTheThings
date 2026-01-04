@@ -125,12 +125,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(250, i(217068)),	-- Draconic Warmonger's Dirk
 						bloody(450, i(217047)),	-- Draconic Warmonger's Flameshot
 						bloody(450, i(217054)),	-- Draconic Warmonger's Greatsword
-						bloody(250, i(217057)),	-- Draconic Warmonger's Hammer
+						bloody(300, i(217065)),	-- Draconic Warmonger's Hammer
 						bloody(300, i(217045)),	-- Draconic Warmonger's Hatchet
 						bloody(450, i(217060)),	-- Draconic Warmonger's Impaler
 						bloody(250, i(217063)),	-- Draconic Warmonger's Mace
 						bloody(250, i(217066)),	-- Draconic Warmonger's Sabre
-						bloody(300, i(217065)),	-- Draconic Warmonger's Scepter
+						bloody(250, i(217057)),	-- Draconic Warmonger's Scepter
 						bloody(250, i(217050)),	-- Draconic Warmonger's Shortsword
 						bloody(450, i(217061)),	-- Draconic Warmonger's Spear
 						bloody(300, i(217049)),	-- Draconic Warmonger's Spellblade
