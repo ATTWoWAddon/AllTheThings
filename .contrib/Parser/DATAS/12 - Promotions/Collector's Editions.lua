@@ -230,7 +230,7 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "暗黑破坏神 IV：憎恨之王",
 		-- TODO: tw = "",
 	},
 	description = {

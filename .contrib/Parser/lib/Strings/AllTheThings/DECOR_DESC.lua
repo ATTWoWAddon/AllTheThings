@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "点击此按钮以根据你缺少的内容随机选择一个装饰。",
 		-- TODO: tw = "",
 	},
 })
