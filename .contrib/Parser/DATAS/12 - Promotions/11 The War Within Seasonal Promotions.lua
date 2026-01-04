@@ -405,7 +405,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(235343, {	-- Topsy Turvy Joker's Mask
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.99999" },	-- Removed December 30th, 2025
+				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" },	-- Removed December 30th, 2025
 			}),
 		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,
