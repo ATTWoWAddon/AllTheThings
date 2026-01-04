@@ -7445,7 +7445,6 @@ root(ROOTS.Unsorted, {
 
 				i(158383),	-- Tidespray Pet Bandage \\ Sun-Bleached Pet Bandage
 				i(160059),	-- Amber Tanning Oil
-				i(160398),	-- Choral Honey
 				i(160399),	-- Wild Flour
 				i(160400),	-- Foosaka
 				i(160705),	-- Major's Frothy Coffee

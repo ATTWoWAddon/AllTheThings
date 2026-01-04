@@ -29,6 +29,7 @@ i(138293);	-- Explorer's Pack
 i(139398);	-- Pant Loaf
 i(151492);	-- Bronze Drake
 -- BFA Vendor
+i(160398);	-- Choral Honey
 i(162588);	-- Weathered Scrollcase
 -- SL
 i(184412);	-- Title Reward: Spirestalker

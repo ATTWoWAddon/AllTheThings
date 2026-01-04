@@ -23,6 +23,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193178, {	-- Blightfur
+				["description"] = "Speak to nearby NPC to spawn.",
+				["cr"] = 193633,	-- Golkrin
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
 				["groups"] = {
