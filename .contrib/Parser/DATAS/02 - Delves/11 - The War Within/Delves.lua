@@ -1376,6 +1376,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 						i(237999),	-- Battered Matter Destabilizer
+						i(218126),	-- Befouler's Syringe
 						i(238007),	-- Bulwark of the Great Dark
 						i(237997),	-- Ethereal Handchopper
 						i(238004),	-- Exile's Beacon

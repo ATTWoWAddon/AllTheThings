@@ -1889,6 +1889,7 @@ root(ROOTS.Zones, {
 					o(220641, {	-- Thunderlord Cache
 						["questID"] = 32803,
 						["coord"] = { 34.2, 23.4, FROSTFIRE_RIDGE },
+						["groups"] = { i(107658) },	-- Thunderlord Longspear
 					}),
 					o(224623, {	-- Wiggling Egg
 						["questID"] = 33505,

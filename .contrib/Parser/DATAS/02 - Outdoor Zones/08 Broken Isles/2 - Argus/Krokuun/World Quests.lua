@@ -96,9 +96,27 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","npcID",124804}},	-- Select the WQ NPC
 					}),
 					q(47712, {	-- The Devastator
-						["groups"] = {
-							i(151188),	-- Devastator Energy Cell (QI!)
-						},
+						o(271689, {	-- Fel Energy Shard
+							["coords"] = {
+								{ 41.3, 72.8, KROKUUN },
+								{ 42.8, 85.4, KROKUUN },
+								{ 42.9, 79.1, KROKUUN },
+								{ 42.9, 81.5, KROKUUN },
+								{ 43.0, 81.3, KROKUUN },
+								{ 43.2, 77.8, KROKUUN },
+								{ 43.3, 73.4, KROKUUN },
+								{ 43.9, 69.7, KROKUUN },
+								{ 45.0, 73.5, KROKUUN },
+								{ 45.0, 78.3, KROKUUN },
+								{ 46.0, 73.3, KROKUUN },
+								{ 46.1, 77.8, KROKUUN },
+								{ 46.6, 71.4, KROKUUN },
+								{ 47.2, 75.4, KROKUUN },
+								{ 47.4, 77.6, KROKUUN },
+								{ 48.3, 72.0, KROKUUN },
+							},
+							["groups"] = { i(151188) },	-- Devastator Energy Cell (QI!)
+						}),
 					}),
 					q(47625),	-- The Ritual We Share
 					q(48091, {	-- Vagath the Betrayed

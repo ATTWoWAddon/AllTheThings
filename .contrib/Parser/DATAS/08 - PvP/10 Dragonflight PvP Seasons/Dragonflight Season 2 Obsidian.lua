@@ -46,7 +46,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(500),	-- Obsidian Legend <Name>
 			}),
 			-- Fashion
-			ach(18249),		-- Obsidian Tie Event
+			ach(18249, { ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }),		-- Obsidian Tie Event
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 			i(205246, {	-- Vicious War Snail [A] (MOUNT!)

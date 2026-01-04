@@ -118,27 +118,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 				}),
 				n(VENDORS, {
+					n(COMMON_VENDOR_ITEMS, {
+						["crs"] = {
+							86777,	-- Elder Surehide <Trader>
+							86779,	-- Krixel Pinchwhistle <Trader>
+							86778,	-- Pyxni Pennypocket <Trader>
+							86776,	-- Ribchewer <Trader>
+							86683,	-- Tai'tasi <Trader>
+						},
+						["groups"] = {
+							i(245444, {	-- Orcish Communal Stove (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{"c",GARRISON_RESOURCES,250}},
+							}),
+							i(245445, {	-- Frostwolf Axe-Dart Board (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{"c",GARRISON_RESOURCES,150}},
+							}),
+							i(244322, {	-- Frostwolf Banded Stool (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{"c",GARRISON_RESOURCES,100}},
+							}),
+							i(244321, {	-- Orcish Lumberjack's Stool (DECOR!)
+								["races"] = HORDE_ONLY,
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {{"c",GARRISON_RESOURCES,100}},
+							}),
+						},
+					}),
 					n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 						["races"] = HORDE_ONLY,
 						["crs"] = { 86698 },	-- Kil'rip
 						["groups"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
 							{		-- Neutral
-								i(245444, {	-- Orcish Communal Stove (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c",GARRISON_RESOURCES,250}},
-								}),
-								i(245445, {	-- Frostwolf Axe-Dart Board (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c",GARRISON_RESOURCES,150}},
-								}),
-								i(244322, {	-- Frostwolf Banded Stool (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c",GARRISON_RESOURCES,100}},
-								}),
-								i(244321, {	-- Orcish Lumberjack's Stool (DECOR!)
-									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c",GARRISON_RESOURCES,100}},
-								}),
 							}, {	-- Friendly
 								i(245433, {	-- Blackrock Strongbox (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
