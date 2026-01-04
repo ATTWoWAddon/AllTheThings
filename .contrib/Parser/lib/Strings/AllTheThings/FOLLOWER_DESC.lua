@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "点击此按钮以根据你缺少的内容随机选择一个追随者。",
+		cn = "点击此按钮以根据缺少的内容随机选择一个追随者。",
 		-- TODO: tw = "",
 	},
 })
