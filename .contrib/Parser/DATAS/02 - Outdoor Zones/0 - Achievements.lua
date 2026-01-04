@@ -1497,278 +1497,280 @@ root(ROOTS.Zones, {
 		ach(1206, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- To All The Squirrels I've Loved Before
 			["description"] = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
 			-- TODO: really would prefer an actual coords for each criteria instead of maps
-			crit(3741, {	-- Borean Frog (Borean Tundra)
-				["crs"] = { 25677 },	-- Borean Frog
-				["coords"] = {
-					{ 72.6, 41.0, BOREAN_TUNDRA },
-					{ 72.8, 34.6, BOREAN_TUNDRA },
-					{ 73.0, 38.6, BOREAN_TUNDRA },
-					{ 74.4, 34.2, BOREAN_TUNDRA },
-				},
-			}),
-			crit(3744, {	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
-				["maps"] = { EVERSONG_WOODS, ELWYNN_FOREST, ARATHI_HIGHLANDS },
-				["crs"] = { 6368 },	-- Cat
-			}),
-			crit(21278, {	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
-				["maps"] = { EVERSONG_WOODS, ELWYNN_FOREST, ARATHI_HIGHLANDS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3745, {	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
-				["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES, WESTFALL, NORTHERN_BARRENS, REDRIDGE_MOUNTAINS, AZUREMYST_ISLE, DUSKWOOD, HOWLING_FJORD },
-				["crs"] = { 620 },	-- Chicken
-			}),
-			crit(21279, {	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
-				["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES, WESTFALL, NORTHERN_BARRENS, REDRIDGE_MOUNTAINS, AZUREMYST_ISLE, DUSKWOOD, HOWLING_FJORD },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3746, {	-- Cow (Elwynn Forest, Stormwind City, Arathi Highlands, Redridge Mountains)
-				["maps"] = {
-					ARATHI_HIGHLANDS,
-					REDRIDGE_MOUNTAINS,
-					-- #if BEFORE CATA
-					HILLSBRAD_FOOTHILLS,
-					-- #endif
-				},
-				["crs"] = { 2442 },	-- Cow
-				["coords"] = {
-					{ 42.6, 62.8, ELWYNN_FOREST },
-					{ 45.6, 55.4, ELWYNN_FOREST },
-					{ 57.0, 71.8, ELWYNN_FOREST },
-					{ 78.0, 61.4, ELWYNN_FOREST },
-				},
-			}),
-			crit(3748, {	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
-				["maps"] = { DARKSHORE, DARNASSUS, ELWYNN_FOREST, ASHENVALE, TELDRASSIL, FERALAS, WESTERN_PLAGUELANDS, THE_HINTERLANDS, MOONGLADE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS },
-				["crs"] = { 883 },	-- Deer
-			}),
-			crit(21281, {	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
-				["maps"] = { DARKSHORE, DARNASSUS, ELWYNN_FOREST, ASHENVALE, TELDRASSIL, FERALAS, WESTERN_PLAGUELANDS, THE_HINTERLANDS, MOONGLADE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3749, {	-- Ewe (Ruins of Gilneas, Shattrath City)
-				["crs"] = { 19665 },	-- Ewe
-				["coords"] = {
-					-- requires weird phasing requirements...
-					-- { 45.4, 17.2, RUINS_OF_GILNEAS },
-					-- { 49.8, 22.8, RUINS_OF_GILNEAS },
-					-- { 53.8, 20.8, RUINS_OF_GILNEAS },
-					-- { 55.0, 12.0, RUINS_OF_GILNEAS },
-					{ 58.7, 23.7, SHATTRATH_CITY },
-				},
-			}),
-			crit(3750, {	-- Fawn (Teldrassil, Elwynn Forest)
-				["maps"] = {
-					-- #if AFTER CATA
-					TELDRASSIL,
-					-- #endif
-					ELWYNN_FOREST,
-				},
-				["crs"] = { 890 },	-- Fawn
-			}),
-			crit(21282, {	-- Fawn (Teldrassil, Elwynn Forest)
-				["maps"] = {
-					-- #if AFTER CATA
-					TELDRASSIL,
-					-- #endif
-					ELWYNN_FOREST,
-				},
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3751, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
-				["maps"] = {
-					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					DARNASSUS,
-					NORTHERN_BARRENS,
-					SOUTHERN_BARRENS,
-					TELDRASSIL,
-					-- #endif
-					EVERSONG_WOODS,
-					GUNDRAK,
-					GUNDRAK_FLOOR2,
-					MARAUDON,
-					ZANGARMARSH,
-				},
-				["crs"] = { 13321 },	-- Small Frog
-				["coords"] = {
-					{ 50.2, 66.6, ELWYNN_FOREST },
-					{ 74.4, 45.0, SWAMP_OF_SORROWS },
-				},
-			}),
-			crit(21283, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
-				["maps"] = { DARNASSUS, ARATHI_HIGHLANDS, GUNDRAK, GUNDRAK_FLOOR2, NORTHERN_BARRENS, TELDRASSIL, ZANGARMARSH },
-				["timeline"] = { ADDED_5_0_4 },
-				["crs"] = { 61071 },	-- Small Frog (Battle Pet)
-			}),
-			crit(3752, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
-				["maps"] = {
-					-- #if AFTER CATA
-					DESOLACE,
-					MULGORE,
-					NORTHERN_BARRENS,
-					SOUTHERN_BARRENS,
-					-- #else
-					THE_BARRENS,
-					-- #endif
-				},
-				["crs"] = { 4166 },	-- Gazelle
-			}),
-			crit(21284, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
-				["maps"] = {
-					-- #if AFTER CATA
-					DESOLACE,
-					MULGORE,
-					NORTHERN_BARRENS,
-					SOUTHERN_BARRENS,
-					-- #else
-					THE_BARRENS,
-					-- #endif
-				},
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3753, {	-- Hare (Durotar, The Hinterlands)
-				["maps"] = { DUROTAR, THE_HINTERLANDS },
-				["crs"] = { 5951 },	-- Hare
-			}),
-			crit(21285, {	-- Hare (Durotar, The Hinterlands)
-				["maps"] = { DUROTAR, THE_HINTERLANDS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3754, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
-				["maps"] = {
-					UNGORO_CRATER,
-					-- #if AFTER CATA
-					SWAMP_OF_SORROWS,
-					NORTHERN_STRANGLETHORN,
-					THE_CAPE_OF_STRANGLETHORN,
-					-- #endif
-				},
-				["crs"] = { 9600 },	-- Parrot
-			}),
-			crit(21286, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
-				["maps"] = {
-					UNGORO_CRATER,
-					-- #if AFTER CATA
-					SWAMP_OF_SORROWS,
-					NORTHERN_STRANGLETHORN,
-					THE_CAPE_OF_STRANGLETHORN,
-					-- #endif
-				},
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3761, {	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
-				["maps"] = {
-					MULGORE, STONETALON_MOUNTAINS, ARATHI_HIGHLANDS, DESOLACE, WESTFALL,
-					-- #if AFTER CATA
-					NORTHERN_BARRENS,
-					SOUTHERN_BARRENS,
-					-- #else
-					THE_BARRENS,
-					-- #endif
-				},
-				["crs"] = { 2620 },	-- Prairie Dog
-			}),
-			crit(21292, {	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
-				["maps"] = {
-					MULGORE, STONETALON_MOUNTAINS, ARATHI_HIGHLANDS, DESOLACE, WESTFALL,
-					-- #if AFTER CATA
-					NORTHERN_BARRENS,
-					SOUTHERN_BARRENS,
-					-- #else
-					THE_BARRENS,
-					-- #endif
-				},
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3755, {	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
-				["maps"] = { ELWYNN_FOREST, DARKSHORE, DUN_MOROGH, STONETALON_MOUNTAINS, NORTHREND_DALARAN, FERALAS, DUSKWOOD, MOONGLADE, AZSHARA, TELDRASSIL, WESTERN_PLAGUELANDS, TIRISFAL_GLADES, MULGORE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
-				["crs"] = { 721 },	-- Rabbit
-			}),
-			crit(21287, {	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
-				["maps"] = { ELWYNN_FOREST, DARKSHORE, DUN_MOROGH, STONETALON_MOUNTAINS, NORTHREND_DALARAN, FERALAS, DUSKWOOD, MOONGLADE, AZSHARA, TELDRASSIL, WESTERN_PLAGUELANDS, TIRISFAL_GLADES, MULGORE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3756, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["crs"] = { 2098 },	-- Ram
-				["coords"] = {
-					{ 25.8, 67.2, LOCH_MODAN },
-					{ 71.6, 71.4, LOCH_MODAN },
-					{ 74.6, 48.0, LOCH_MODAN },
-					{ 76.4, 43.6, LOCH_MODAN },
-					{ 16.2, 72.2, WETLANDS },
-					{ 48.0, 67.8, WETLANDS },
-					-- #if AFTER CATA
-					{ 86.8, 72.2, ARATHI_HIGHLANDS},
-					-- #endif
-				},
-			}),
-			crit(21288, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["maps"] = {
-					LOCH_MODAN,
-					WETLANDS,
-					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					-- #endif
-				},
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3757, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
-				["maps"] = { ELWYNN_FOREST, HILLSBRAD_FOOTHILLS, ALTERAC_MOUNTAINS, WESTFALL, LOCH_MODAN, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
-				["crs"] = { 1933 },	-- Sheep
-			}),
-			crit(21289, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
-				["maps"] = { ELWYNN_FOREST, HILLSBRAD_FOOTHILLS, ALTERAC_MOUNTAINS, WESTFALL, LOCH_MODAN, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3747, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
-				["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, BOREAN_TUNDRA, AZSHARA, STRANGLETHORN_VALE, BLACKFATHOM_DEEPS },
-				-- #IF BEFORE 5.2
-				["crs"] = { 6827 },	-- Crab
-				-- #ENDIF
-			}),
-			crit(21280, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
-				["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, BOREAN_TUNDRA, AZSHARA, STRANGLETHORN_VALE, BLACKFATHOM_DEEPS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3758, {	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
-				["maps"] = { DUSKWOOD, AZSHARA, HOWLING_FJORD, TEROKKAR_FOREST, AZUREMYST_ISLE, BLOODMYST_ISLE },
-				["crs"] = { 17467 },	-- Skunk
-			}),
-			crit(21290, {	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
-				["maps"] = { DUSKWOOD, AZSHARA, HOWLING_FJORD, TEROKKAR_FOREST, AZUREMYST_ISLE, BLOODMYST_ISLE },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3615, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
-				["maps"] = { NORTHREND_DALARAN, DARKSHORE, DARNASSUS },
-				["crs"] = { 1412 },	-- Squirrel
-			}),
-			crit(21273, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
-				["maps"] = { NORTHREND_DALARAN, DARKSHORE, DARNASSUS },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
-			crit(3739, {	-- Steam Frog (Borean Tundra)
-				["crs"] = { 25679 },	-- Steam Frog
-				["coords"] = {
-					{ 60.8, 47.8, BOREAN_TUNDRA },
-					{ 64.6, 40.8, BOREAN_TUNDRA },
-					{ 68.6, 40.4, BOREAN_TUNDRA },
-					{ 78.8, 28.2, BOREAN_TUNDRA },
-				},
-			}),
-			crit(3759, {	-- Swine (Durotar, Northern Barrens)
-				["maps"] = { DUROTAR, NORTHERN_BARRENS },
-				["crs"] = { 10685 },	-- Swine
-			}),
-			crit(3760, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
-				["maps"] = { ORGRIMMAR, TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
-				["crs"] = { 1420 },	-- Toad
-			}),
-			crit(21291, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
-				["maps"] = { TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
-				["coord"] = { 45.3, 48.3, ORGRIMMAR },
-				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
-			}),
+			["groups"] = {
+				crit(3741, {	-- Borean Frog (Borean Tundra)
+					["crs"] = { 25677 },	-- Borean Frog
+					["coords"] = {
+						{ 72.6, 41.0, BOREAN_TUNDRA },
+						{ 72.8, 34.6, BOREAN_TUNDRA },
+						{ 73.0, 38.6, BOREAN_TUNDRA },
+						{ 74.4, 34.2, BOREAN_TUNDRA },
+					},
+				}),
+				crit(3744, {	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
+					["maps"] = { EVERSONG_WOODS, ELWYNN_FOREST, ARATHI_HIGHLANDS },
+					["crs"] = { 6368 },	-- Cat
+				}),
+				crit(21278, {	-- Cat (Eversong Woods, Elwynn Forest, Arathi Highlands, Gilneas City)
+					["maps"] = { EVERSONG_WOODS, ELWYNN_FOREST, ARATHI_HIGHLANDS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3745, {	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
+					["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES, WESTFALL, NORTHERN_BARRENS, REDRIDGE_MOUNTAINS, AZUREMYST_ISLE, DUSKWOOD, HOWLING_FJORD },
+					["crs"] = { 620 },	-- Chicken
+				}),
+				crit(21279, {	-- Chicken (Elwynn Forest, Tirisfal Glades, Westfall, Northern Barrens, Redridge Mountains, Azuremyst Isle, Duskwood and Howling Fjord)
+					["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES, WESTFALL, NORTHERN_BARRENS, REDRIDGE_MOUNTAINS, AZUREMYST_ISLE, DUSKWOOD, HOWLING_FJORD },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3746, {	-- Cow (Elwynn Forest, Stormwind City, Arathi Highlands, Redridge Mountains)
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						REDRIDGE_MOUNTAINS,
+						-- #if BEFORE CATA
+						HILLSBRAD_FOOTHILLS,
+						-- #endif
+					},
+					["crs"] = { 2442 },	-- Cow
+					["coords"] = {
+						{ 42.6, 62.8, ELWYNN_FOREST },
+						{ 45.6, 55.4, ELWYNN_FOREST },
+						{ 57.0, 71.8, ELWYNN_FOREST },
+						{ 78.0, 61.4, ELWYNN_FOREST },
+					},
+				}),
+				crit(3748, {	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
+					["maps"] = { DARKSHORE, DARNASSUS, ELWYNN_FOREST, ASHENVALE, TELDRASSIL, FERALAS, WESTERN_PLAGUELANDS, THE_HINTERLANDS, MOONGLADE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS },
+					["crs"] = { 883 },	-- Deer
+				}),
+				crit(21281, {	-- Deer (Darkshore, Darnassus, Elwynn Forest, Gilneas, Ashenvale, Teldrassil, Feralas, Western Plaguelands, The Hinterlands, Moonglade, Azuremyst Isle, Dire Maul, Gilneas City, Hillsbrad Foothills, Northern Barrens)
+					["maps"] = { DARKSHORE, DARNASSUS, ELWYNN_FOREST, ASHENVALE, TELDRASSIL, FERALAS, WESTERN_PLAGUELANDS, THE_HINTERLANDS, MOONGLADE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3749, {	-- Ewe (Ruins of Gilneas, Shattrath City)
+					["crs"] = { 19665 },	-- Ewe
+					["coords"] = {
+						-- requires weird phasing requirements...
+						-- { 45.4, 17.2, RUINS_OF_GILNEAS },
+						-- { 49.8, 22.8, RUINS_OF_GILNEAS },
+						-- { 53.8, 20.8, RUINS_OF_GILNEAS },
+						-- { 55.0, 12.0, RUINS_OF_GILNEAS },
+						{ 58.7, 23.7, SHATTRATH_CITY },
+					},
+				}),
+				crit(3750, {	-- Fawn (Teldrassil, Elwynn Forest)
+					["maps"] = {
+						-- #if AFTER CATA
+						TELDRASSIL,
+						-- #endif
+						ELWYNN_FOREST,
+					},
+					["crs"] = { 890 },	-- Fawn
+				}),
+				crit(21282, {	-- Fawn (Teldrassil, Elwynn Forest)
+					["maps"] = {
+						-- #if AFTER CATA
+						TELDRASSIL,
+						-- #endif
+						ELWYNN_FOREST,
+					},
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3751, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
+					["maps"] = {
+						-- #if AFTER CATA
+						ARATHI_HIGHLANDS,
+						DARNASSUS,
+						NORTHERN_BARRENS,
+						SOUTHERN_BARRENS,
+						TELDRASSIL,
+						-- #endif
+						EVERSONG_WOODS,
+						GUNDRAK,
+						GUNDRAK_FLOOR2,
+						MARAUDON,
+						ZANGARMARSH,
+					},
+					["crs"] = { 13321 },	-- Small Frog
+					["coords"] = {
+						{ 50.2, 66.6, ELWYNN_FOREST },
+						{ 74.4, 45.0, SWAMP_OF_SORROWS },
+					},
+				}),
+				crit(21283, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
+					["maps"] = { DARNASSUS, ARATHI_HIGHLANDS, GUNDRAK, GUNDRAK_FLOOR2, NORTHERN_BARRENS, TELDRASSIL, ZANGARMARSH },
+					["timeline"] = { ADDED_5_0_4 },
+					["crs"] = { 61071 },	-- Small Frog (Battle Pet)
+				}),
+				crit(3752, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
+					["maps"] = {
+						-- #if AFTER CATA
+						DESOLACE,
+						MULGORE,
+						NORTHERN_BARRENS,
+						SOUTHERN_BARRENS,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
+					["crs"] = { 4166 },	-- Gazelle
+				}),
+				crit(21284, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
+					["maps"] = {
+						-- #if AFTER CATA
+						DESOLACE,
+						MULGORE,
+						NORTHERN_BARRENS,
+						SOUTHERN_BARRENS,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3753, {	-- Hare (Durotar, The Hinterlands)
+					["maps"] = { DUROTAR, THE_HINTERLANDS },
+					["crs"] = { 5951 },	-- Hare
+				}),
+				crit(21285, {	-- Hare (Durotar, The Hinterlands)
+					["maps"] = { DUROTAR, THE_HINTERLANDS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3754, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
+					["maps"] = {
+						UNGORO_CRATER,
+						-- #if AFTER CATA
+						SWAMP_OF_SORROWS,
+						NORTHERN_STRANGLETHORN,
+						THE_CAPE_OF_STRANGLETHORN,
+						-- #endif
+					},
+					["crs"] = { 9600 },	-- Parrot
+				}),
+				crit(21286, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
+					["maps"] = {
+						UNGORO_CRATER,
+						-- #if AFTER CATA
+						SWAMP_OF_SORROWS,
+						NORTHERN_STRANGLETHORN,
+						THE_CAPE_OF_STRANGLETHORN,
+						-- #endif
+					},
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3761, {	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
+					["maps"] = {
+						MULGORE, STONETALON_MOUNTAINS, ARATHI_HIGHLANDS, DESOLACE, WESTFALL,
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						SOUTHERN_BARRENS,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
+					["crs"] = { 2620 },	-- Prairie Dog
+				}),
+				crit(21292, {	-- Prairie Dog (Mulgore, Northern Barrens, Stonetalon Mountains, Arathi Highlands, Southern Barrens, Desolace and Westfall)
+					["maps"] = {
+						MULGORE, STONETALON_MOUNTAINS, ARATHI_HIGHLANDS, DESOLACE, WESTFALL,
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						SOUTHERN_BARRENS,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3755, {	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
+					["maps"] = { ELWYNN_FOREST, DARKSHORE, DUN_MOROGH, STONETALON_MOUNTAINS, NORTHREND_DALARAN, FERALAS, DUSKWOOD, MOONGLADE, AZSHARA, TELDRASSIL, WESTERN_PLAGUELANDS, TIRISFAL_GLADES, MULGORE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
+					["crs"] = { 721 },	-- Rabbit
+				}),
+				crit(21287, {	-- Rabbit (Elwynn Forest, Darkshore, Stormwind City, Dun Morogh, Stonetalon Mountains, Dalaran, Feralas, Scarlet Monastery, Mount Hyjal, Duskwood, Moonglade, Azshara, Teldrassil, Western Plaguelands, Tirisfal Glades, Mulgore, Azuremyst Isle, Silvermoon City, Hillsbrad Foothills, Howling Fjord, Redridge Mountains)
+					["maps"] = { ELWYNN_FOREST, DARKSHORE, DUN_MOROGH, STONETALON_MOUNTAINS, NORTHREND_DALARAN, FERALAS, DUSKWOOD, MOONGLADE, AZSHARA, TELDRASSIL, WESTERN_PLAGUELANDS, TIRISFAL_GLADES, MULGORE, AZUREMYST_ISLE, HILLSBRAD_FOOTHILLS, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3756, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
+					["crs"] = { 2098 },	-- Ram
+					["coords"] = {
+						{ 25.8, 67.2, LOCH_MODAN },
+						{ 71.6, 71.4, LOCH_MODAN },
+						{ 74.6, 48.0, LOCH_MODAN },
+						{ 76.4, 43.6, LOCH_MODAN },
+						{ 16.2, 72.2, WETLANDS },
+						{ 48.0, 67.8, WETLANDS },
+						-- #if AFTER CATA
+						{ 86.8, 72.2, ARATHI_HIGHLANDS},
+						-- #endif
+					},
+				}),
+				crit(21288, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
+					["maps"] = {
+						LOCH_MODAN,
+						WETLANDS,
+						-- #if AFTER CATA
+						ARATHI_HIGHLANDS,
+						-- #endif
+					},
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3757, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
+					["maps"] = { ELWYNN_FOREST, HILLSBRAD_FOOTHILLS, ALTERAC_MOUNTAINS, WESTFALL, LOCH_MODAN, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
+					["crs"] = { 1933 },	-- Sheep
+				}),
+				crit(21289, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
+					["maps"] = { ELWYNN_FOREST, HILLSBRAD_FOOTHILLS, ALTERAC_MOUNTAINS, WESTFALL, LOCH_MODAN, HOWLING_FJORD, REDRIDGE_MOUNTAINS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3747, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
+					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, BOREAN_TUNDRA, AZSHARA, STRANGLETHORN_VALE, BLACKFATHOM_DEEPS },
+					-- #IF BEFORE 5.2
+					["crs"] = { 6827 },	-- Crab
+					-- #ENDIF
+				}),
+				crit(21280, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
+					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, BOREAN_TUNDRA, AZSHARA, STRANGLETHORN_VALE, BLACKFATHOM_DEEPS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3758, {	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
+					["maps"] = { DUSKWOOD, AZSHARA, HOWLING_FJORD, TEROKKAR_FOREST, AZUREMYST_ISLE, BLOODMYST_ISLE },
+					["crs"] = { 17467 },	-- Skunk
+				}),
+				crit(21290, {	-- Skunk (Duskwood, Azshara, Gilneas, Howling Fjord, Terokkar Forest, Azuremyst Isle, Gilneas City, Bloodmyst Isle)
+					["maps"] = { DUSKWOOD, AZSHARA, HOWLING_FJORD, TEROKKAR_FOREST, AZUREMYST_ISLE, BLOODMYST_ISLE },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3615, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
+					["maps"] = { NORTHREND_DALARAN, DARKSHORE, DARNASSUS },
+					["crs"] = { 1412 },	-- Squirrel
+				}),
+				crit(21273, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
+					["maps"] = { NORTHREND_DALARAN, DARKSHORE, DARNASSUS },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+				crit(3739, {	-- Steam Frog (Borean Tundra)
+					["crs"] = { 25679 },	-- Steam Frog
+					["coords"] = {
+						{ 60.8, 47.8, BOREAN_TUNDRA },
+						{ 64.6, 40.8, BOREAN_TUNDRA },
+						{ 68.6, 40.4, BOREAN_TUNDRA },
+						{ 78.8, 28.2, BOREAN_TUNDRA },
+					},
+				}),
+				crit(3759, {	-- Swine (Durotar, Northern Barrens)
+					["maps"] = { DUROTAR, NORTHERN_BARRENS },
+					["crs"] = { 10685 },	-- Swine
+				}),
+				crit(3760, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
+					["maps"] = { ORGRIMMAR, TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
+					["crs"] = { 1420 },	-- Toad
+				}),
+				crit(21291, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
+					["maps"] = { TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
+					["coord"] = { 45.3, 48.3, ORGRIMMAR },
+					["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
+				}),
+			},
 		})),
 		ach(5548, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- To All the Squirrels Who Cared for Me
 			-- TODO map/coord here instead of individual zone files - Not all spawn locations added
