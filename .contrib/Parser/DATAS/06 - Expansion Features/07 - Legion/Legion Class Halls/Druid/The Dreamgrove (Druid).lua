@@ -789,7 +789,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chapter 2
 					q(42037, {	-- Gathering the Dreamweavers
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
+						["sourceQuests"] = {
+								42036,	-- Idol of the Wilds
+								42038,	-- Champion: Broll Bearmantle
+								42039,	-- Champion: Sylendra Gladesong
+						},
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
 						["lvl"] = 103,
@@ -917,7 +921,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chapter 3
 					q(43403, {	-- Defending the Isles
-						["sourceQuests"] = { 42046 },	-- A New Beginning
+						["sourceQuests"] = {
+							42046,	-- A New Beginning
+							42047,	-- Champion: Hamuul Runetotem
+							42048,	-- Champion: Mylune
+						},
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.8, 50.6, THE_DREAMGROVE },
 					}),
@@ -930,7 +938,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 44.9, 50.0, THE_DREAMGROVE },
 					}),
 					q(91614, {	-- Focusing the Energies (Remix)
-						["sourceQuests"] = { 42046 },	-- A New Beginning
+						["sourceQuests"] = {
+							42046,	-- A New Beginning
+							42047,	-- Champion: Hamuul Runetotem
+							42048,	-- Champion: Mylune
+						},
 						["qgs"] = {
 							103832,	-- Keeper Remulos
 							106250,	-- Keeper Remulos
@@ -939,7 +951,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 					}),
 					q(42049, {	-- Powering the Portal
-						["sourceQuests"] = { 42046 },	-- A New Beginning
+						["sourceQuests"] = {
+							42046,	-- A New Beginning
+							42047,	-- Champion: Hamuul Runetotem
+							42048,	-- Champion: Mylune
+						},
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.9, 50.0, THE_DREAMGROVE },
 						["groups"] = { i(137119) },	-- Shard of Nightmare (QI!)
