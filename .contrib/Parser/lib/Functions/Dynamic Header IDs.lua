@@ -591,6 +591,7 @@ HeaderAssignments = {
 	["Treasures of Azeroth"] = -691,
 	["Trial of Style"] = -38,
 	["Trinket"] = -99,
+	["Tutorials"] = -704,
 	["Twilight Assist"] = -659,
 	["Twilight Duo"] = -660,
 	["Twilight Zone"] = -661,
@@ -685,4 +686,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -704;
+NextHeaderID = -705;

@@ -241,13 +241,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}),
 					q(91843, {	-- Recap: The Harbinger
 						["qg"] = 248956,	-- Tome of History
-						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
 						["isRepeatable"] = true,
 					}),
 					q(91864, {	-- Recap: Fractured Visions
 						["sourceQuest"] = 91843,	-- Recap: The Harbinger
 						["qg"] = 248948,	-- Tome of History
-						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
 						["isRepeatable"] = true,
 						["groups"] = {
 							i(254323, {	-- Worldsoul Satchel
@@ -261,6 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["coords"] = {
 							{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
 							{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
+							{ 46.4, 60.2, VALDRAKKEN },
 						},
 						["isRepeatable"] = true,
 						["groups"] = {
@@ -272,7 +279,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(91871, {	-- Recap: The Dark Heart
 						["sourceQuest"] = 91868,	-- Recap: Shadowy Pursuits
 						["qg"] = 248948,	-- Tome of History
-						["coord"] = { 49.5, 31.9, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.9, DORNOGAL },
+							{ 46.4, 60.2, VALDRAKKEN },
+						},
 						["isRepeatable"] = true,
 						["groups"] = {
 							i(254325, {	-- Worldsoul Satchel
