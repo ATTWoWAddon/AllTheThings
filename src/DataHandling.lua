@@ -862,6 +862,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateNPC(t.npcID, t);
 		elseif t.questID then
 			t = app.CreateQuest(t.questID, t);
+		elseif t.campsiteID then
+			t = app.CreateWarbandScene(t.campsiteID, t);
 		-- Non-Thing groups
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);

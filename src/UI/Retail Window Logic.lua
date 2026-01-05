@@ -276,8 +276,8 @@ local function SetPortraitIcon(self, data)
 			self.Border:SetWidth(self:GetHeight());
 			self.Border:Show();
 			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+				local swatches = data["atlas-color"] or app.EmptyTable;
+				self.Border:SetVertexColor(swatches[1] or 1, swatches[2] or 1, swatches[3] or 1, swatches[4] or 1);
 			else
 				self.Border:SetVertexColor(1, 1, 1, 1.0);
 			end

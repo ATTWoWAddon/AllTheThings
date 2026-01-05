@@ -4174,6 +4174,7 @@ customWindowUpdates.Import = function(self, force)
 
 	if not self.initialized then
 		self.initialized = true
+		local SearchForObject = app.SearchForObject
 
 		function self:Rebuild()
 			self:BuildData()
@@ -4195,30 +4196,23 @@ customWindowUpdates.Import = function(self, force)
 			local ids = {}
 			for id in str:gmatch("%d+") do
 				id = tonumber(id)
-				if not id or id <= 0 or id >= 1000000 then
-					return nil
+				if id then
+					ids[#ids + 1] = id
 				end
-				ids[#ids + 1] = id
 			end
 			return ids
 		end
 
-		local function FindATTObjects(typeKey, id)
-			local searchKey = typeKey .. ":" .. id
-			local results = app.SearchForLink(searchKey)
-			if not results or #results == 0 then
-				results = app.SourceSearcher.LinkSources(searchKey)
-			end
-			return results
-		end
-
 		local function CreateTypeObject(typeKey, id)
-			return SearchForObject(typeKey, id, "key")
-				or SearchForObject(typeKey, id, "field")
-				or CreateObject({
-					[typeKey] = id,
-					visible = true,
+			local o = setmetatable({ OnSetVisibility = app.ReturnTrue }, {
+					__index = id and (SearchForObject(typeKey, id, "key")
+									or SearchForObject(typeKey, id, "field")
+									or CreateObject({[typeKey]=id}))
+								or setmetatable({name=EMPTY}, app.BaseClass)
 				})
+			-- app.PrintDebug("Created", typeKey, id, "->", o.name or "???")
+			-- app.PrintTable(o)
+			return o
 		end
 
 		function self:Import(typeKey, input)
@@ -4226,47 +4220,21 @@ customWindowUpdates.Import = function(self, force)
 			self:ClearResults()
 			if not ids then return false end
 
-			local seen = {}
+			-- app.PrintDebug("Importing", #ids, typeKey)
 
+			local objs = {}
 			for _, id in ipairs(ids) do
-				local found = FindATTObjects(typeKey, id)
-
-				if found and #found > 0 then
-					for _, ref in ipairs(found) do
-						local key = ref.key
-						local value = key and ref[key]
-						local uid = key and value and (key .. ":" .. value)
-
-						if uid and not seen[uid] then
-							seen[uid] = true
-
-							local clone = app.CloneReference(ref)
-							clone.forceShow = true
-							clone.OnUpdate = app.AlwaysShowUpdate
-							tinsert(self.data.g, clone)
-						end
-					end
-				else
-					-- Fallback creation
-					local obj = CreateTypeObject(typeKey, id)
-					local key = obj.key
-					local value = key and obj[key]
-					local uid = key and value and (key .. ":" .. value)
-
-					if uid and not seen[uid] then
-						seen[uid] = true
-						obj.forceShow = true
-						obj.OnUpdate = app.AlwaysShowUpdate
-						tinsert(self.data.g, obj)
-					end
-				end
+				objs[#objs + 1] = CreateTypeObject(typeKey, id)
 			end
+
+			-- Merge all the search results into the list, ensure to clone
+			NestObjects(self.data, objs, true)
 		end
 
 		local initialButtons = {
 			{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
-			-- LUA error currently { id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
+			{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 			{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
