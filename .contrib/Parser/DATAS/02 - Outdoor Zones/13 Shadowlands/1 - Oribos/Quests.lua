@@ -936,6 +936,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 		})),
+		n(HIDDEN_QUESTS, {
+			hqt(66316, {	-- Stay awhile and listen with Bolvar (spellID )
+				["timeline"] = {ADDED_9_2_5},
+				["name"] = "Stay awhile and listen: Bolvar Fordragon",
+				-- ["sourceQuest"] = xxx,
+				["provider"] = { "n", 164079 },	-- Bolvar Fordragon
+				["coord"] = { 40.0, 65.3, ORIBOS },
+			}),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
@@ -961,9 +970,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				}),
 				hqt(65618, {	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
 					["timeline"] = {ADDED_9_2_0},
-				}),
-				hqt(66316, {	-- Stay awhile and listen with Bolvar (9.2.5)
-					["timeline"] = {ADDED_9_2_5},
 				}),
 				hqt(66313, {	-- Stay awhile and listen with Proundmoore
 					["timeline"] = {ADDED_9_2_5},
