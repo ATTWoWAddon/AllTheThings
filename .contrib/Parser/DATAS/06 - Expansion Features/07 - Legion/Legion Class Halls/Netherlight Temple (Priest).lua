@@ -228,6 +228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ 12.8, 59.1, TIRISFAL_GLADES },
 								-- #endif
 							},
+							["maps"] = { 20 },	-- Keeper's Rest
 							["groups"] = { i(173523) },	-- Tirisfal Camp Scroll (QI!)
 						}),
 					}),
