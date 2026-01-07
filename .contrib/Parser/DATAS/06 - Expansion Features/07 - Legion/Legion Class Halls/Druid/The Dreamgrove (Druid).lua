@@ -700,7 +700,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42096, {	-- Champion: Naralex
 						["sourceQuests"] = { 42583 },	-- Rise, Champions
 						["provider"] = { "n", 103778 },	-- Naralex
-						["coord"] = { 44.5, 51.4, THE_DREAMGROVE },
+						["coords"] = {
+							{ 44.5, 51.4, THE_DREAMGROVE },
+							{ 67.7, 75.4, THE_DREAMGROVE },
+						},
 						["groups"] = { follower(639) },	-- Naralex
 					}),
 					q(40650, {	-- Champion: Zen'tabra

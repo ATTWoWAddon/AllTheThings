@@ -2032,6 +2032,7 @@ local AccountWideQuestsDB = {
 	91082,	-- Hellcaller chest tracker
 	91083,	-- Hellcaller chest tracker
 	91142,	-- A Tabard for the Trusted
+	91154,	-- Dissenter Tailtrek
 	91166,	-- Hellcaller chest tracker
 	91167,	-- Hellcaller chest tracker
 	91168,	-- Hellcaller chest tracker

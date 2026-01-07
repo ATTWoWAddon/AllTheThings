@@ -376,6 +376,7 @@ MobileDB.Creature = {
 	 [84857] = true,	-- Kyra Goldhands <Banker>
 	 [85369] = true,	-- Vee
 	 [85414] = true,	-- Alexi Barov
+	 [85418] = true,	-- Lio the Lioness
 	 [85882] = true,	-- Blixthraz Blastcharge
 	 [86629] = true,	-- Raza'kul
 	 [86677] = true,	-- Kuros

@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures,
 								79858,	-- Serr'ah
 							},
 							["coords"] = {
-								{ 28.3, 38.8, LUNARFALL },	-- lvl 2/3 garrison
+								{ 28.3, 38.8, LUNARFALL },
 								{ 32.6, 39.8, FROSTWALL },
 							},
 							["isWeekly"] = true,

@@ -134,6 +134,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				-- #if AFTER 11.1.7
 				239840,	-- Churbro <Timewalking Vendor>
 				-- #endif
+				-- #if AFTER 11.2.7
+				252687,	-- Collector Ta'steld <Timewalking Vendor>
+				-- #endif
 			},
 			["maps"] = {
 				-- #if AFTER 6.2.2.20395
@@ -158,6 +161,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				BORALUS,
 				DAZARALOR,
 				-- #endif
+				-- #if AFTER 11.1.7
+				ORIBOS,
+				-- #endif
 			},
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
@@ -181,6 +187,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(238739, {	-- Chrono Corsair (MOUNT!)
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
@@ -7633,18 +7659,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						}),
 					}),
 					filter(MOUNTS, {
-						i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
-						i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
-						i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
-						i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
 						i(258515, {	-- Crimson Lupine (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),

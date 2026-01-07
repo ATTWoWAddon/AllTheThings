@@ -4232,12 +4232,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),
-						-- i(246848, { 	-- Scribe's Working Notes (DECOR!)
-						-- 	["cost"] = 20000000,	-- 20000g
-						-- }),
-						-- i(246847, { 	-- Tome of Draenei Faith (DECOR!)
-						-- 	["cost"] = 20000000,	-- 2000g
-						-- }),
+						i(246848, { 	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 20000g
+						}),
+						i(246847, { 	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
 						i(246860, {	-- Tome of Forsaken Resilience (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),
