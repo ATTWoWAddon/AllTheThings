@@ -326,11 +326,11 @@ namespace ATT
         /// <summary>
         /// Performs a ReadKey if the parser is not in an Automated run
         /// </summary>
-        public static void WaitForUser()
+        public static void WaitForUser(string message = "Press Enter once you have resolved the issue.")
         {
             if (!Automated)
             {
-                Trace.WriteLine("Press Enter once you have resolved the issue.");
+                Trace.WriteLine(message);
                 Console.ReadKey();
             }
         }

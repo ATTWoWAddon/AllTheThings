@@ -3288,7 +3288,7 @@ namespace ATT
                     else
                     {
                         allSourceIDs.AddRange(additionalTmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                        LogDebug($"INFO: Ensemble {tmogSetID} has {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                        LogDebug($"INFO: Ensemble {tmogSetID} adding {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}. Use _IgnoreSharedEnsembleByQuestID if this is unexpected.", data);
                     }
                 }
             }
