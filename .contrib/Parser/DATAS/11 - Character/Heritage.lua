@@ -725,9 +725,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
 				["groups"] = {
 					title(493),	-- Lionguard <Name>
-					iensemble(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-					iensemble(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-					iensemble(203213),	-- Ensemble: Lion's Heritage White Armor Set
+					-- these all share the same questID, which is also the parent questID
+					iensemble(203211, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage Blue Armor Set
+					iensemble(203212, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage Scarlet Armor Set
+					iensemble(203213, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Lion's Heritage White Armor Set
 				},
 			}),
 		}),
@@ -1084,9 +1085,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 52.3, 43.4, DUROTAR },
 				["groups"] = {
 					i(204170),	-- Clan Banner (TOY!)
-					iensemble(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-					iensemble(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-					iensemble(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+					-- these all share the same questID, which is also the parent questID
+					iensemble(203214, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
+					iensemble(203215, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
+					iensemble(203216, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Wolf's Heritage Warsong Armor Set
 				},
 			}),
 		}),

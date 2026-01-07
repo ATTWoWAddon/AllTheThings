@@ -60,6 +60,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					iensemble(142273, {	-- Ensemble: Blackened Defias Armor
 						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
+						["_IgnoreSharedEnsembleByQuestID"] = true,	-- some NYI mage ensemble shared questID
 					}),
 				},
 			}),
