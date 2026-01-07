@@ -58,6 +58,20 @@ local BLOODTHIRSTY_GROUPS = {
 	cl(MAGE, {
 		moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 			["timeline"] = { ADDED_7_2_0 },
+			-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+			-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+			["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+				i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+				i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(64931),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(64932),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88251),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88252),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(88253),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+			}),
 		})),
 		moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 		moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl

@@ -602,43 +602,26 @@ root(ROOTS.PVP, {
 					moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["timeline"] = { ADDED_7_2_0 },
+						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+						["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+							i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+							i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
+							i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+							i(64931),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+							i(64932),	-- Gladiator's Silk Amice - confirmed 14/10/21
+							i(88251),	-- Gladiator's Silk Amice - confirmed 14/10/21
+							i(88252),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+							i(88253),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+							i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
+							i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+						}),
 					})),
 					moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 					moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl
 					moh(2, i(64855)),	-- Bloodthirsty Gladiator's Silk Handguards
 					moh(3, i(64856)),	-- Bloodthirsty Gladiator's Silk Robe
 					moh(3, i(64857)),	-- Bloodthirsty Gladiator's Silk Trousers
-					-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
-					i(64928, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64929, {	-- Gladiator's Silk Robe - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64930, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64931, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64932, {	-- Gladiator's Silk Amice - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(88251, {	-- Gladiator's Silk Amice - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88252, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88253, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88254, {	-- Gladiator's Silk Robe - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88255, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
