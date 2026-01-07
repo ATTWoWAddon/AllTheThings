@@ -1157,7 +1157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = { follower(999) },	-- Thisalee Crow
 					}),
 					q(46317, {	-- Talon's Call
-						["sourceQuests"] = { 45425 },	-- Champion: Thisalee Crow
+						["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
 						["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 						["coord"] = { 43.6, 63.6, BROKEN_SHORE },
 					}),
