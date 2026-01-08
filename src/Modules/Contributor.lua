@@ -1407,6 +1407,7 @@ MobileDB.GameObject = {
 	[252410] = true,	-- Scrolls, Sigils, and the Nightborne Way (q:43524)
 	[252443] = true,	-- Containment Crystal (q:43525)
 	[252541] = true,	-- Powder Keg
+	[252568] = true,	-- Legion Cage (q:43394)
 	[252571] = true,	-- Cage
 	[252572] = true,	-- Cage
 	[252665] = true,	-- Challenger's Cache (Eye of Aszhara)
