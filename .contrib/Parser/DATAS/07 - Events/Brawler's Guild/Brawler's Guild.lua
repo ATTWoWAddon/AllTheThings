@@ -276,7 +276,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 			}),
 		}),
-		-- Season 5
+		-- Season 4
 		n(ACHIEVEMENTS, sharedData({
 			["timeline"] = { ADDED_11_2_7 },
 		},{
@@ -293,7 +293,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		-- Season 5 - Challenges
+		-- Season 4 - Challenges
 		n(ACHIEVEMENTS, sharedData({
 			["crs"] = {
 				254940,	-- Challenge Broker Senna
