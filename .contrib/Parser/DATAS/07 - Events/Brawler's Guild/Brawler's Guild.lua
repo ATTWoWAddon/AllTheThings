@@ -275,60 +275,44 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			ach(11567, {	-- You Are Not The Contents Of Your Wallet
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 			}),
-			-- Season 5
-			ach(61421, {	-- A Prime Ordeal
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61422, {	-- Audience Participation
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61419, {	-- Brawler's Chilled
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61424, {	-- Brawlzilla
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61426, {	-- Bare Knuckle Brawl
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61429, {	-- Brawl Star
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = { title(666) },	-- Brawl Star %s
-			}),
-			ach(61423, {	-- Featherweight Brawler
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61425, {	-- Hot Footed
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
-			ach(61420, {	-- Let Me Solo It
-				["cr"] = 254940,	-- Challenge Broker Senna
-				["timeline"] = { ADDED_11_2_7 },
-			}),
+		}),
+		-- Season 5
+		n(ACHIEVEMENTS, sharedData({
+			["timeline"] = { ADDED_11_2_7 },
+		},{
 			ach(61466, {	-- The Best There Is
 				["crs"] = {
 					70751,	-- Card Trader Ami
 					70752,	-- Card Trader Leila
 				},
-				["timeline"] = { ADDED_11_2_7 },
 			}),
 			ach(61413, {	-- The First Rule of Brawler's Guild
-				["timeline"] = { ADDED_11_2_7 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(61414, {	-- The First Rule of Brawler's Guild
-				["timeline"] = { ADDED_11_2_7 },
 				["races"] = HORDE_ONLY,
 			}),
-		}),
+		})),
+		-- Season 5 - Challenges
+		n(ACHIEVEMENTS, sharedData({
+			["crs"] = {
+				254940,	-- Challenge Broker Senna
+				253381,	-- Challenge Broker Guo
+			},
+			["timeline"] = { ADDED_11_2_7 },
+		},{
+			ach(61429, {	-- Brawl Star
+				["groups"] = { title(666) },	-- Brawl Star %s
+			}),
+			ach(61421),	-- A Prime Ordeal
+			ach(61422),	-- Audience Participation
+			ach(61419),	-- Brawler's Chilled
+			ach(61424),	-- Brawlzilla
+			ach(61426),	-- Bare Knuckle Brawl
+			ach(61423),	-- Featherweight Brawler
+			ach(61425),	-- Hot Footed
+			ach(61420),	-- Let Me Solo It
+		})),
 		-- #if BEFORE LEGION
 		n(BOSSES, {
 			n(67262, {	-- Bruce
