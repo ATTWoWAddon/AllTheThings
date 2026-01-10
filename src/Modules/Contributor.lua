@@ -1956,7 +1956,6 @@ MobileDB.GameObject = {
 	[376386] = true,	-- Disturbed Dirt
 	[376426] = true,	-- Magic-Bound Chest
 	[376519] = true,	-- Vine Wrapped Chest
-	[376583] = true,	-- Decay Covered Chest
 	[376584] = true,	-- Dracthyr Supply Chest
 	[376585] = true,	-- Icemaw Storage Cache
 	[376587] = true,	-- Expedition Scout's Pack
