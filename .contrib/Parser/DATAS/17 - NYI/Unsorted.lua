@@ -198,7 +198,6 @@ root(ROOTS.Unsorted, {
 			-- qi
 			i(235651),	-- Conveniently-Shaped Claw
 			i(235656),	-- Relic of Domination
-			i(235663),	-- Captured Twilight's Blade Banner
 			i(235666),	-- Shadow Infused Shard
 			i(237142),	-- Arcane Viewfinder
 			-- prof
@@ -1608,7 +1607,6 @@ root(ROOTS.Unsorted, {
 			i(247422),	-- Spiteful Shadowgraft
 			i(247713),	-- Reliquary of Darkness
 			-- Cosmetic
-			i(246627),	-- Twilight's Blade Tabard
 			i(246726),	-- Greatsword of Returning Light
 			-- Alch
 			i(246671),	-- Recipe: Sunsmoke Censer
@@ -1922,7 +1920,6 @@ root(ROOTS.Unsorted, {
 			i(250462),	-- Forgotten Farstrider's Insignia
 
 			-- QI
-			i(250465),	-- Shadow Crystal \ Gembombs
 			i(250705),	-- Naga Missive PH NAME
 			i(250750),	-- Pouch of Sprouted Clippings
 			i(250753),	-- Bag of Cracked Orebits
@@ -5248,7 +5245,6 @@ root(ROOTS.Unsorted, {
 			i(260639),	-- Fractured Bone
 			i(260640),	-- Crooked Bird Talons
 			i(260641),	-- Arid Tendrils
-			i(260642),	-- Fossilized Wildlife
 			i(260643),	-- Pile of Feathers
 			i(260644),	-- Lightbloom Bark
 			i(260646),	-- Glowing Gland
@@ -5262,7 +5258,6 @@ root(ROOTS.Unsorted, {
 			i(260657),	-- Holey Organ
 			i(260658),	-- Crystal Rock Shard
 			i(260660),	-- Putrid Mushroom Spores
-			i(260661),	-- Glowing Shrub
 			i(260663),	-- Lightbloom Residue
 			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs

@@ -2609,6 +2609,8 @@ i(220262);	-- Elongated Proboscis
 i(247672);	-- Eversong Fizz
 i(260672);	-- Fetid Eye
 i(260689);	-- Fine Bioluminescent Powder
+i(260642);	-- Fossilized Wildlife
+i(260661);	-- Glowing Shrub
 i(260606);	-- Light and Shaggy Fur
 i(260693);	-- Mossy Lump of Dirt
 i(243845);	-- Petalwrap Sack

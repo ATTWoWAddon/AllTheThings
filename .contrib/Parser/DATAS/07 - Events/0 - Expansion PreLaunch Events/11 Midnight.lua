@@ -18,8 +18,110 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				},
 			}),
 		}),
-		n(BOSSES, {
-			-- Exo Note: Events (Bonus Objectives) that need to be completed in order for boss to be killed rotate every 30 minutes.
+		n(QUESTS, {
+			q(90759, {	-- The Cult Within [A]
+				["description"] = "Pops-up upon login",
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(90764, {	-- The Cult Within [H]
+				["description"] = "Pops-up upon login",
+				["races"] = HORDE_ONLY,
+			}),
+			q(90760, {	-- Avoiding Blame [A]
+				["sourceQuest"] = 90759,	-- The Cult Within [A]
+				["qg"] = 246156,	-- Magister Umbric
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 71.9, 60.0, STORMWIND_CITY },
+			}),
+			q(90761, {	-- Avoiding Blame [H]
+				["sourceQuest"] = 90764,	-- The Cult Within [H]
+				--["qg"] = ,	-- X
+				["races"] = HORDE_ONLY,
+			}),
+			q(90762, {	-- The Twilight Highlands [A]
+				["sourceQuest"] = 90760,	-- Avoiding Blame [A]
+				["qg"] = 246156,	-- Magister Umbric
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 71.9, 60.0, STORMWIND_CITY },
+			}),
+			q(90763, {	-- The Twilight Highlands [H]
+				["sourceQuest"] = 90761,	-- Avoiding Blame [H]
+				--["qg"] = ,	-- X
+				["races"] = HORDE_ONLY,
+			}),
+			q(90765, {	-- Midnight Dress
+				["sourceQuests"] = {
+					90762,	-- The Twilight Highlands [A]
+					90763,	-- The Twilight Highlands [H]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["qg"] = 237504,	-- Grand Magister Rommath
+				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
+				["groups"] = {
+					o(619217, {	-- Overtaken Voidcaster
+						["coord"] = { 47.2, 72.9, TWILIGHT_HIGHLANDS },
+						["groups"] = { i(246398) },	-- Cultist Cowl (QI!)
+					}),
+					o(553558, {	-- Cultist Dagger
+						["coord"] = { 46.6, 72.0, TWILIGHT_HIGHLANDS },
+						["groups"] = { i(246399) },	-- Cultist Dagger (QI!)
+					}),
+					i(246400),	-- Cultist Robes (QI!)
+					i(246397),	-- Twilight Cultist Robes (QI!)
+				},
+			}),
+			------ Stay awhile and listen ------
+			hqt(92103, {	-- Stay awhile and listen: Squabble Amongst Ministers
+				["name"] = "Stay awhile and listen: Squabble Amongst Ministers",
+				["sourceQuests"] = {
+					90762,	-- The Twilight Highlands [A]
+					90763,	-- The Twilight Highlands [H]
+				},
+				["qg"] = 237506,	-- Magister Umbric
+				["coord"] = { 49.9, 80.8, TWILIGHT_HIGHLANDS },
+			}),
+			--
+			q(90766, {	-- Xal'atath's Proven Faithful
+				["sourceQuest"] = 90765,	-- Midnight Dress
+				["qg"] = 246021,	-- Gehl Harrowtongue
+				["coord"] = { 46.4, 72.0, TWILIGHT_HIGHLANDS },
+			}),
+			q(90767, {	-- More Doom
+				["sourceQuest"] = 90766,	-- Xal'atath's Proven Faithful
+				["qg"] = 246022,	-- Gehl Harrowtongue
+				["coord"] = { 52.2, 70.8, TWILIGHT_HIGHLANDS },
+				["groups"] = {
+					o(570882, {	-- Inert Shadow Crystal
+						["coord"] = { 52.9, 69.5, TWILIGHT_HIGHLANDS },
+						["groups"] = { i(250465) },	-- Shadow Crystal (QI!)
+					}),
+				},
+			}),
+			q(90768, {	-- Cult It Out
+				["sourceQuest"] = 90767,	-- More Doom
+				["qg"] = 246025,	-- Magister Umbric
+				["coord"] = { 52.4, 70.5, TWILIGHT_HIGHLANDS },
+				["groups"] = {
+					i(246627),	-- Twilight's Blade Tabard
+					title(643),	-- <Name>, Definitely Not a Cultist
+				},
+			}),
+			-- Repeatable (Daily) Quests
+			q(87308, {	-- Twilight's Dawn
+				["sourceQuest"] = 90768,	-- Cult It Out
+				["qg"] = 237504,	-- Grand Magister Rommath
+				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
+				["isDaily"] = true,
+			}),
+			q(91795, {	-- Disrupt the Call
+				["sourceQuest"] = 90768,	-- Cult It Out
+				["qg"] = 237504,	-- Grand Magister Rommath
+				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
+				["isDaily"] = true,
+			}),
+		}),
+		n(RARES, {
+			-- Several rares share Spawn Points. Coordinate depends on who the Cultists are trying to summon.
 			n(246462, {	-- Archbishop Benedictus
 				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
 			}),
@@ -36,16 +138,16 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
 			}),
 			n(246840, {	-- Executioner Lynthelma
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
 			}),
 			n(246549, {	-- Ez'Haadosh the Liminality
 				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
 			}),
 			n(246565, {	-- Gustavan, Herald of the End
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
 			}),
 			n(246471, {	-- Ix the Bloodfallen
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
 			}),
 			n(246566, {	-- Mirrorvise
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
@@ -75,72 +177,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
 			}),
 			n(246578, {	-- Voidclaw Hexathor
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
 			}),
 		}),
-		n(QUESTS, {
-			q(90759, {	-- The Cult Within [A]
-				["description"] = "Pops-up upon login",
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(90764, {	-- The Cult Within [H]
-				["description"] = "Pops-up upon login",
-				["races"] = HORDE_ONLY,
-			}),
-			q(90760, {	-- Avoiding Blame [A]
-				["sourceQuest"] = 90759,	-- The Cult Within [A]
-				--["qg"] = ,	-- X
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(90761, {	-- Avoiding Blame [H]
-				["sourceQuest"] = 90764,	-- The Cult Within [H]
-				--["qg"] = ,	-- X
-				["races"] = HORDE_ONLY,
-			}),
-			q(90762, {	-- The Twilight Highlands [A]
-				["sourceQuest"] = 90760,	-- Avoiding Blame [A]
-				--["qg"] = ,	-- X
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(90763, {	-- The Twilight Highlands [H]
-				["sourceQuest"] = 90761,	-- Avoiding Blame [H]
-				--["qg"] = ,	-- X
-				["races"] = HORDE_ONLY,
-			}),
-			q(90765, {	-- Midnight Dress
-				["sourceQuests"] = {
-					90762,	-- The Twilight Highlands [A]
-					90763,	-- The Twilight Highlands [H]
-				},
-				["sourceQuestNumRequired"] = 1,
-				--["qg"] = ,	-- X
-				["groups"] = {
-					i(246398),	-- Cultist Cowl (QI!)
-					i(246399),	-- Cultist Dagger (QI!)
-					i(246400),	-- Cultist Robes (QI!)
-					i(246397),	-- Twilight Cultist Robes (QI!)
-				},
-			}),
-			-- Stay awhile and listen after accepting Midnight Dress!!! --
-			q(90766, {	-- Xal'atath's Proven Faithful
-				["sourceQuest"] = 90765,	-- Midnight Dress
-				--["qg"] = ,	-- X
-			}),
-			q(90767, {	-- More Doom
-				["sourceQuest"] = 90766,	-- Xal'atath's Proven Faithful
-				--["qg"] = ,	-- X
-				["groups"] = {
-					i(250465),	-- Shadow Crystal (QI!)
-				},
-			}),
-			q(90768, {	-- Cult It Out
-				["sourceQuest"] = 90767,	-- More Doom
-				--["qg"] = ,	-- X
-				["groups"] = {
-					i(246627),	-- Twilight's Blade Tabard
-					title(643),	-- <Name>, Definitely Not a Cultist
-				},
-			}),
+		n(REWARDS, {
+			currency(TWILIGHTS_BLADE_INSIGNIA),
 		}),
 		n(VENDORS, {
 			n(249197, {	-- Armorer Kalinovan
@@ -252,6 +293,23 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				},
 			}),
 		}),
+		n(WORLD_QUESTS, sharedData({
+			["sourceQuest"] = 90768,	-- Cult It Out
+		}, {
+			q(86959, {	-- Bloodeye Prisoners
+				["coord"] = { 40.8, 66.7, TWILIGHT_HIGHLANDS },
+			}),
+			q(86957, {	-- Drakgor's Revenge
+				["coord"] = { 40.6, 17.5, TWILIGHT_HIGHLANDS },
+			}),
+			q(86945, {	-- Shadowed Supplies
+				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
+			}),
+			q(86939, {	-- Twilight's Wedge
+				["coord"] = { 39.0, 29.2, TWILIGHT_HIGHLANDS },
+				["groups"] = { i(235663) },	-- Captured Twilight's Blade Banner (PQI!)
+			}),
+		})),
 	}),
 }))
 
