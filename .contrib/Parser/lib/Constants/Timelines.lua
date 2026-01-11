@@ -656,9 +656,10 @@ REMOVED_11_2_7 = "removed 11.2.7.64704";				-- The War Within 11.2.7 launch on D
 --------------
 -- MIDNIGHT --
 --------------
-CREATED_12_0_0 = "created 12.0.0";						-- Midnight 12.0.0 Prepatch
-ADDED_12_0_0 = "added 12.0.0";							-- Midnight 12.0.0 Prepatch
-REMOVED_12_0_0 = "removed 12.0.0";						-- Midnight 12.0.0 Prepatch
+CREATED_12_0_0 = "created 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+ADDED_12_0_0 = "added 12.0.0";							-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+REMOVED_12_0_0 = "removed 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+REMOVED_MID_LAUNCH = "removed 12.0.1";					-- Midnight 12.0.1/Pre-Patch ends on TODO
 CREATED_12_0_0_LAUNCH = "created 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
 ADDED_12_0_0_LAUNCH = "added 12.0.0";					-- Midnight 12.0.0 Launch on March 2nd, 2026
 REMOVED_12_0_0_LAUNCH = "removed 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
