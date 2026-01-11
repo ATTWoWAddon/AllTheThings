@@ -82,6 +82,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(92966, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave entrance
 					{ 66.9, 57.0, FOUNDERS_POINT },	-- Treasure
 				},
@@ -110,6 +111,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(92972, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 45.8, 64.9, FOUNDERS_POINT },	-- Cave entrance
 					{ 45.4, 64.3, FOUNDERS_POINT },	-- Treasure
 				},
@@ -142,6 +144,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(92979, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 62.4, 79.5, FOUNDERS_POINT },	-- Cave entrance
 					{ 61.6, 79.4, FOUNDERS_POINT },	-- Treasure
 				},
@@ -230,6 +233,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			q(93000, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 59.0, 45.5, FOUNDERS_POINT },	-- Cave entrance
 					{ 59.2, 44.9, FOUNDERS_POINT },	-- Treasure
 				},

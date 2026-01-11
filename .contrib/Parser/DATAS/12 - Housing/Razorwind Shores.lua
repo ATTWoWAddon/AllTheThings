@@ -173,6 +173,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			q(93111, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 53.7, 57.4, RAZORWIND_SHORES },	-- qg
 					{ 40.0, 73.0, RAZORWIND_SHORES },	-- Cave entrance
 					{ 39.5, 70.2, RAZORWIND_SHORES },	-- Treasure
 				},
@@ -250,6 +251,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			q(93150, {	-- Decor Treasure Hunt
 				["description"] = "Inside the cave.",
 				["coords"] = {
+					{ 53.7, 57.4, RAZORWIND_SHORES },	-- qg
 					{ 39.7, 57.8, RAZORWIND_SHORES },	-- Cave entrance
 					{ 39.3, 57.6, RAZORWIND_SHORES },	-- Treasure
 				},
