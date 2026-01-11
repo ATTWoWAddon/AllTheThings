@@ -5884,54 +5884,15 @@ root(ROOTS.Unsorted, {
 				i(257324),	-- Dreamforged Bludgeon
 				i(257325),	-- Greatsword of the Somnambulant
 				i(257327),	-- Drusahl's Polearm
-				i(258979),	-- Azure Guardian's Cloak \\ RENAME Cloak
-				i(258980),	-- Azure Guardian's Waistguard
-				i(258981),	-- Azure Guardian's Girdle
-				i(258982),	-- Azure Guardian's Belt
-				i(258983),	-- Azure Guardian's Sash
-				i(258984),	-- Azure Guardian's Hood
-				i(258985),	-- Azure Guardian's Helm
-				i(258986),	-- Azure Guardian's Cap
-				i(258987),	-- Azure Guardian's Greathelm
 				i(258988),	-- Azure Guardian's Choker \\ RENAME Choker
 				i(258989),	-- Azure Guardian's Signet \\ RENAME Signet
 				i(258990),	-- Azure Guardian's Band \\ RENAME Loop
-				i(258991),	-- Azure Guardian's Grips
-				i(258992),	-- Azure Guardian's Gauntlets
-				i(258993),	-- Azure Guardian's Gloves
-				i(258994),	-- Azure Guardian's Handguards
 				i(258995),	-- Azure Guardian's Legguards
 				i(258996),	-- Azure Guardian's Leggings
 				i(258997),	-- Azure Guardian's Scales
 				i(258998),	-- Azure Guardian's Breeches
 				i(258999),	-- Arcane Stone \\ RENAME Trinket
 				i(259000),	-- Azure Runes \\ RENAME Trinket
-				i(259001),	-- Azure Guardian's Wraps
-				i(259002),	-- Azure Guardian's Vambraces
-				i(259003),	-- Azure Guardian's Bracers
-				i(259004),	-- Azure Guardian's Bindings
-				i(259005),	-- Azure Guardian's Spaulders
-				i(259006),	-- Azure Guardian's Pauldrons
-				i(259007),	-- Azure Guardian's Mantle
-				i(259008),	-- Azure Guardian's Monnion
-				i(259009),	-- Azure Guardian's Sabatons
-				i(259010),	-- Azure Guardian's Slippers
-				i(259011),	-- Azure Guardian's Cover
-				i(259012),	-- Azure Guardian's Boots
-				i(259013),	-- Azure Guardian's Vestments
-				i(259014),	-- Azure Guardian's Chestplate
-				i(259015),	-- Azure Guardian's Hauberk
-				i(259016),	-- Azure Guardian's Vest
-				i(259017),	-- Azure Guardian's Defender \\ RENAME Shield
-				i(259018),	-- Azure Guardian's Treat \\ RENAME Offhand
-				i(259019),	-- Azure Guardian's Blade \\ RENAME 1H Sword
-				i(259020),	-- Azure Guardian's Stabber \\ RENAME 1H Dagger
-				i(259021),	-- Azure Guardian's Staff \\ RENAME Staff
-				i(259022),	-- Azure Guardian's Bolter \\ RENAME Crossbow
-				i(259023),	-- Azure Guardian's Chopper \\ RENAME 1H Axe
-				i(259024),	-- Azure Guardian's Mace \\ RENAME 1H Mace
-				i(259025),	-- Azure Guardian's Claymore \\ RENAME 2H Sword
-				i(259026),	-- Azure Guardian's Polearm \\ RENAME Polearm
 			}),
 			filter(COSMETIC, {
 				i(250309),	-- Simple Dagger \\ [PH] Simple Dagger
@@ -7468,8 +7429,6 @@ root(ROOTS.Unsorted, {
 				i(162369),	-- Recipe: Contract: Voldunai
 				i(162386),	-- Design: Honorable Combatant's Staff of Intuition
 				i(162387),	-- Design: Honorable Combatant's Staff of Intuition
-				i(162516),	-- Rasboralus
-				i(162517),	-- U'taka
 				i(163203),	-- Hypersensitive Azeritometer Sensor
 				i(163783),	-- Mount Mugamba Spring Water \\ Mount Mugaba Spring Water
 				i(163784),	-- Seafoam Coconut Water

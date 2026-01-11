@@ -59,7 +59,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155467),	-- Banisher Chestpiece
 					i(155470),	-- Banisher Headcover
 					i(155472),	-- Banisher Shoulderguards
-					i(155473),	-- Banisher Cinch
 					i(158604),	-- Banisher Mitts
 					i(160198),	-- Banisher Britches
 					i(160863),	-- Banisher Mantle

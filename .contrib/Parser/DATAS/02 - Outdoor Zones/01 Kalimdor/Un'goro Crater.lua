@@ -621,7 +621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4384, {	-- Crystal Yield
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -1915,7 +1915,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Western Crystal Pylon
 							["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-							["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+							["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 						}),
 					},
 				}),

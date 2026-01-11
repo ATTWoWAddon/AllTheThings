@@ -1207,7 +1207,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 110810 },	-- Almenis
 						["coord"] = { 41.0, 29.3, THE_DREAMGROVE },
 					}),
-					q(44237),	-- Ancients of War
+					q(44237, {	-- Ancients of War
+						["qg"] = 111786,	-- Treant Sapling
+						["coord"] = { 43.2, 63.2, THE_DREAMGROVE },
+					}),
 				}),
 				n(98000, {	-- Scouting Map
 					["groups"] = { i(139420) },	-- Wild Mushroom
