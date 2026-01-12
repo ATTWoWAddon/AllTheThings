@@ -32,15 +32,20 @@ jobs:
       - name: Check for changes since last tag
         id: check_changes
         run: |
-          LAST_TAG=$(git describe --tags --abbrev=0)
-          echo "Last tag: $LAST_TAG"
-          CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "No changes detected since last tag."
-            echo "changes_detected=false" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            LAST_TAG=$(git describe --tags --abbrev=0)
+            echo "Last tag: $LAST_TAG"
+            CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
+            if [ -z "$CHANGED_FILES" ]; then
+              echo "No changes detected since last tag."
+              echo "changes_detected=false" >> $GITHUB_OUTPUT
+            else
+              echo "Changes detected since last tag:"
+              echo "$CHANGED_FILES"
+              echo "changes_detected=true" >> $GITHUB_OUTPUT
+            fi
           else
-            echo "Changes detected since last tag:"
-            echo "$CHANGED_FILES"
+            echo "Triggered by ${{ github.event_name }}, always proceed."
             echo "changes_detected=true" >> $GITHUB_OUTPUT
           fi
 
