@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(201559,	-- Shiobhan Waterborn
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-				["coord"] = { 60, 68, THE_AZURE_SPAN },
+				["coord"] = { 60.0, 68.0, THE_AZURE_SPAN },
 				["questID"] = 74533,
 				["groups"] = {
 					bo(74462, true),
