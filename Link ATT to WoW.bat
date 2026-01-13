@@ -60,6 +60,7 @@ EXIT /B 0
 :link_wowfolder
 if exist "%~1\" (
     echo "Linking using root WoW folder: %~1"
+    call :link_expansion "%~1\_anniversary_"
     call :link_expansion "%~1\_classic_"
     call :link_expansion "%~1\_classic_era_"
     call :link_expansion "%~1\_classic_beta_"
