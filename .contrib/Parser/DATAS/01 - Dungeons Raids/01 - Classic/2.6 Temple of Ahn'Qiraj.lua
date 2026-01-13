@@ -1329,8 +1329,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
-					{ "i", 21762, 1, PHASE_ONE },	-- Greater Scarab Coffer Key [pre-4.3]
-					{ "i", 76402, 1, CATA_PHASE_ONE },	-- Greater Scarab Coffer Key [4.3]
+					-- #if BEFORE 4.3.0
+					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
+					-- #else
+					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+					-- #endif
 				},
 				["groups"] = {
 					i(20876),	-- Idol of Death
