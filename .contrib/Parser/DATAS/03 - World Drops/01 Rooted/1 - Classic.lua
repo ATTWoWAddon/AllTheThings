@@ -5408,7 +5408,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
-			["coord"] = {
+			["coords"] = {
 				{ 44.0, 48.0, DARKSHORE },
 				{ 76.6, 68.2, LOCH_MODAN },
 				{ 40.6, 59.0, MULGORE },
