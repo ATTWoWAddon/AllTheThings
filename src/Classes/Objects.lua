@@ -8,8 +8,8 @@ local ArrayAppend = app.ArrayAppend;
 local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
-local C_QuestLog_IsOnQuest, ipairs, setmetatable, rawget
-	= C_QuestLog.IsOnQuest, ipairs, setmetatable, rawget;
+local C_QuestLog_IsOnQuest,setmetatable,rawget
+	= C_QuestLog.IsOnQuest,setmetatable,rawget
 
 local GenerateGroupsForGenericSubGroup = function(t)
 	-- only load this if we're in a tooltip-level or new window build
@@ -33,7 +33,10 @@ local GenerateGroupsForGenericSubGroup = function(t)
 	if not sp then app.PrintDebug("spg.sourceParent MISSING??",app:SearchLink(t)) return end
 	spg = {}
 	-- make a copy of the non-object groups for this object to display
-	for _,o in ipairs(sp.g) do
+	local g = sp.g
+	local o
+	for i=1,#g do
+		o = g[i]
 		if not o.objectID then
 			spg[#spg + 1] = o
 		end
@@ -66,7 +69,9 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 
 		local g = t.g
 		if g then
-			for _,o in ipairs(g) do
+			local o
+			for i=1,#g do
+				o = g[i]
 				customIcon = (o.itemID or o.criteriaID) and o.icon or nil
 				if customIcon then return customIcon end
 			end
@@ -86,60 +91,67 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 "AsGenericObjectContainer", {
 	__ignoreCaching = app.ReturnTrue,
 	trackable = function(t)
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.trackable then return true; end
+		local g = t.g
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.objectID and o.trackable then return true end
 		end
 	end,
 	repeatable = function(t)
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.repeatable then return true; end
+		local g = t.g
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.objectID and o.repeatable then return true end
 		end
 	end,
 	saved = function(t)
-		local anySaved;
-		for _,group in ipairs(t.g) do
-			if group.objectID then
-				if group.saved then
-					anySaved = true;
+		local g = t.g
+		local o, anySaved
+		for i=1,#g do
+			o = g[i]
+			if o.objectID then
+				if o.saved then
+					anySaved = true
 				else
-					return;
+					return
 				end
 			end
 		end
 		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
-		return anySaved;
+		return anySaved
 	end,
 	coords = function(t)
-		local unsavedCoords = {};
-		for _,group in ipairs(t.g) do
+		local g, unsaved = t.g, {}
+		local o
+		for i=1,#g do
+			o = g[i]
 			-- show collected coords of all sub-objects which are not saved
-			if group.objectID and group.coords and not group.saved then
-				ArrayAppend(unsavedCoords, group.coords);
+			if o.objectID and o.coords and not o.saved then
+				ArrayAppend(unsaved, o.coords)
 			end
 		end
-		return unsavedCoords;
+		return unsaved
 	end,
 	maps = function(t)
-		local unsaved = {};
-		for _,group in ipairs(t.g) do
+		local g, unsaved = t.g, {}
+		local o
+		for i=1,#g do
+			o = g[i]
 			-- show collected maps of all sub-objects which are not saved
-			if group.objectID and group.maps and not group.saved then
-				ArrayAppend(unsaved, group.maps)
+			if o.objectID and o.maps and not o.saved then
+				ArrayAppend(unsaved, o.maps)
 			end
 		end
 		return unsaved
 	end,
 	indicatorIcon = function(t)
-		local anyActive
-		local activeObjectVignettes = app.ActiveVignettes.object
-		for _,group in ipairs(t.g) do
-			if group.objectID and activeObjectVignettes[group.objectID] then
-				anyActive = true;
-				break
+		local g, activeObjectVignettes = t.g, app.ActiveVignettes.object
+		for i=1,#g do
+			if activeObjectVignettes[g[i].objectID] then
+				return app.asset("Interface_Ping")
 			end
-		end
-		if anyActive then
-			return app.asset("Interface_Ping");
 		end
 	end,
 	-- This is never used typically since this class is only generated for objects which have a raw .g
