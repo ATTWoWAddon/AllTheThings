@@ -3,7 +3,7 @@ local appName, _ = ...;
 local ach,ah,crit,cu,en,flt,gs,h,heir,i,ill,mnt,n,p,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 local a={{7}};
 _.Categories.BlackMarket={
-h(-554,{awp=50004,maps={2393},u=9,g={
+h(-554,{awp=50004,maps={628,2339},u=9,g={
 h(-88,{u=9,g={
 ah(72057,{awp=80205,type="n",u=9,g={
 s(57126,105804,{b=1,f=7,lvl=35,u=9}),
@@ -227,24 +227,24 @@ i(50380,{lvl=25,r=1,u=9}),
 i(110678,{awp=60002,b=1,description="Contains 250-500 Darkmoon Faire Tickets",u=9,g={
 cu(515,{awp=50004,u=9})}})}}),
 flt(200,{u=9,g={
-r(124638,{itemID=86238,requireSkill=165,skillID=2528,u=9}),
-r(124643,{itemID=86272,requireSkill=165,skillID=2528,u=9}),
-r(125559,{itemID=86380,requireSkill=197,skillID=2536,u=9}),
-r(125560,{itemID=86381,requireSkill=197,skillID=2536,u=9}),
-r(124641,{itemID=86279,requireSkill=165,skillID=2528,u=9}),
-r(124639,{itemID=86280,requireSkill=165,skillID=2528,u=9}),
-r(124640,{itemID=86281,requireSkill=165,skillID=2528,u=9}),
-r(124644,{itemID=86283,requireSkill=165,skillID=2528,u=9}),
-r(124645,{itemID=86284,requireSkill=165,skillID=2528,u=9}),
-r(125558,{itemID=86379,requireSkill=197,skillID=2536,u=9}),
-r(124642,{itemID=86297,requireSkill=165,skillID=2528,u=9}),
-r(125561,{itemID=86382,requireSkill=197,skillID=2536,u=9}),
-r(126853,{itemID=87411,requireSkill=164,skillID=2473,u=9}),
-r(126854,{itemID=87412,requireSkill=164,skillID=2473,u=9}),
-r(126851,{itemID=87409,requireSkill=164,skillID=2473,u=9}),
-r(126855,{itemID=87413,requireSkill=164,skillID=2473,u=9}),
-r(126852,{itemID=87410,requireSkill=164,skillID=2473,u=9}),
-r(126850,{itemID=87408,requireSkill=164,skillID=2473,u=9})}}),
+r(124638,{itemID=86238,learnedAt=75,requireSkill=165,u=9}),
+r(124643,{itemID=86272,learnedAt=75,requireSkill=165,u=9}),
+r(125559,{itemID=86380,learnedAt=75,requireSkill=197,u=9}),
+r(125560,{itemID=86381,learnedAt=75,requireSkill=197,u=9}),
+r(124641,{itemID=86279,learnedAt=75,requireSkill=165,u=9}),
+r(124639,{itemID=86280,learnedAt=75,requireSkill=165,u=9}),
+r(124640,{itemID=86281,learnedAt=75,requireSkill=165,u=9}),
+r(124644,{itemID=86283,learnedAt=75,requireSkill=165,u=9}),
+r(124645,{itemID=86284,learnedAt=75,requireSkill=165,u=9}),
+r(125558,{itemID=86379,learnedAt=75,requireSkill=197,u=9}),
+r(124642,{itemID=86297,learnedAt=75,requireSkill=165,u=9}),
+r(125561,{itemID=86382,learnedAt=75,requireSkill=197,u=9}),
+r(126853,{itemID=87411,learnedAt=75,requireSkill=164,u=9}),
+r(126854,{itemID=87412,learnedAt=75,requireSkill=164,u=9}),
+r(126851,{itemID=87409,learnedAt=75,requireSkill=164,u=9}),
+r(126855,{itemID=87413,learnedAt=75,requireSkill=164,u=9}),
+r(126852,{itemID=87410,learnedAt=75,requireSkill=164,u=9}),
+r(126850,{itemID=87408,learnedAt=75,requireSkill=164,u=9})}}),
 flt(10,{u=9,g={
 s(21629,45037,{b=1,f=10,spellID=63604,u=9}),
 s(5518,14617,{awp=60002,b=1,f=10,u=9})}}),
@@ -373,6 +373,8 @@ i(110592,{awp=60002,b=1,rwp=60200,u=2}),
 i(102137,{awp=50400,b=1,rwp=60002,u=2}),
 i(97565,{awp=50300,b=1,rwp=50400,u=2}),
 h(-58,{u=9,g={
+n(219055,{coords={{64.8,52.7,2339}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
+n(100986,{coords={{71.37,17.93,628}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(94829,_.ResolveQuestData({aqd=
 {coords={{37.2,35.8,582}}},hqd=
 {coords={{44.96,50.07,590}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}))}})}})};
