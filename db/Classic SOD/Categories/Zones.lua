@@ -510,6 +510,12 @@ r(13220,{c={4},rwp=30002}),
 r(13228,{c={4},rwp=30002}),
 r(13229,{c={4},rwp=30002}),
 r(13230,{c={4},rwp=30002})}})}),
+prof(393,{
+n(7088,{coords={{63.2,45.2,1454}},r=1,g={
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(3363,{coords={{63.6,50,1454}},r=1,g={
 r(3908,{learnedAt=0,lvl=5,rank=1,requireSkill=197}),
@@ -3639,11 +3645,11 @@ qo(1,{coords={{36.4,40.2,1450},{54.1,50.1,1450}},providers={{"i",15877}},rwp=400
 q(78229,{c={11},coords={{52.4,40.4,1450}},cost={{"i",210026,1},{"i",210043,1},{"i",210044,1}},qgs={12042},rwp=20001,u=1605,g={
 i(210137,{b=1,c={11},f=55,q=2,rwp=20001,u=1605,g={
 r(410028,{rwp=20001,u=1605})}})}}),
-q(272,{c={11},coords={{36.4,40.2,1450}},lvl=16,maps={1436,1439},qgs={11799},r=2,rwp=40003,sourceQuests={29},g={
+q(272,{c={11},coords={{36.4,40.2,1450}},lvl=16,qgs={11799},r=2,rwp=40003,sourceQuests={29},g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003}),
-i(15882,{coords={{17.9,33,1436}},q=1,rwp=40003}),
-i(15883,{coords={{48.9,11.3,1439}},q=1,rwp=40003})}}),
-q(30,{c={11},coords={{36.4,40.2,1450}},lvl=16,maps={1413,1421},qgs={11799},r=1,rwp=40003,sourceQuests={28},g={
+i(15882,{coords={{29.6,29.5,1421}},q=1,rwp=40003}),
+i(15883,{coords={{56.7,8.3,1413}},q=1,rwp=40003})}}),
+q(30,{c={11},coords={{36.4,40.2,1450}},lvl=16,qgs={11799},r=1,rwp=40003,sourceQuests={28},g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003}),
 i(15882,{coords={{29.6,29.5,1421}},q=1,rwp=40003}),
 i(15883,{coords={{56.7,8.3,1413}},q=1,rwp=40003})}}),
@@ -6379,7 +6385,7 @@ q(4386,{coords={{77.3,50,1449}},cost={{"i",11188,10},{"i",11184,10}},lvl=47,prov
 i(11567,{b=1,q=1,rwp=40003})}}),
 q(4383,{coords={{23.5,50,1449}},cost={{"i",11185,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
 i(11564,{b=1,q=1,rwp=40003})}}),
-q(4384,{coords={{23.8,59.1,1449}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
+q(4384,{coords={{23.5,50,1449}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
 i(11565,{b=1,q=1,rwp=40003})}}),
 q(4284,{coords={{41.8,2.6,1449}},cost={{"i",11188,7},{"i",11186,7},{"i",11185,7},{"i",11184,7}},lvl=47,qgs={9117},rwp=40003}),
 q(5150,{coords={{43.6,7.2,1449}},cost={{"i",11315,15}},lvl=47,providers={{"i",15699}},qgs={9274},repeatable=1,rwp=40003,g={
@@ -6452,7 +6458,7 @@ q(3909,{coords={{31.2,45.2,1452}},lvl=47,maps={1444},qgs={9298},rwp=40003,source
 q(4041,{coords={{44,11,1444},{45.1,25.6,1444}},providers={{"i",11242},{"o",164798}},qgs={7775},repeatable=1,rwp=40003,g={
 qo(1,{providers={{"i",11243}},questID=3909,rwp=40003})}})}}),
 q(4288,{coords={{41.8,2.6,1449}},lvl=47,qgs={9117},rwp=40003,sourceQuests={4284},g={
-qo(1,{coords={{23.8,59.1,1449}},providers={{"o",164956}},rwp=40003})}}),
+qo(1,{coords={{23.5,50,1449}},providers={{"o",164956}},rwp=40003})}}),
 q(9063,{c={11},coords={{52.4,40.6,1450},{76.6,27.6,1456},{34.8,8.6,1457}},lvl=50,qgs={3033,4218,12042},rwp=40003,u=1607}),
 q(9051,{c={11},coords={{71.6,76,1449}},lvl=50,qgs={9619},rwp=40003,sourceQuests={9052},u=1607,g={
 qo(1,{crs={6498},providers={{"i",22432}},rwp=40003,u=1607})}}),
@@ -7375,6 +7381,12 @@ r(13220,{c={4},rwp=30002}),
 r(13228,{c={4},rwp=30002}),
 r(13229,{c={4},rwp=30002}),
 r(13230,{c={4},rwp=30002})}})}),
+prof(393,{
+n(1292,{coords={{67.8,49,1453}},r=2,g={
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(1346,{coords={{43.6,73.8,1453}},r=2,g={
 r(3908,{learnedAt=0,lvl=5,rank=1,requireSkill=197}),
@@ -13230,7 +13242,7 @@ s(157124,3071,{b=1,f=21,q=1,rwp=40003})}}),
 h(-316,{c={1},coords={{61.8,52,1420}},qgs={208919,208920},questID=75300,r=1,rwp=20001,u=1605,g={
 i(204716,{b=1,c={1},f=55,q=2,rwp=20001,u=1605,g={
 r(425447,{rwp=20001,u=1605})}})}}),
-q(354,{coords={{61.73,52.3,1420}},lvl=7,qgs={1500},r=1,rwp=40003,sourceQuests={362},g={
+q(354,{coords={{61.73,52.3,1420}},lvl=7,qgs={1500},r=1,rwp=40003,g={
 qo(1,{coords={{46.8,29.6,1420}},crs={1654},providers={{"i",2829}},rwp=40003}),
 qo(2,{coords={{49.6,36.2,1420}},crs={1655},providers={{"i",2828}},rwp=40003}),
 qo(3,{coords={{44,33.4,1420}},crs={1656},providers={{"i",2830}},rwp=40003})}}),

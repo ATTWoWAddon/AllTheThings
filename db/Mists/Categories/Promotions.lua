@@ -41,7 +41,7 @@ mnt(74856,{b=1,description="Obtained if you set up a 3 Month WoW Subscription be
 mnt(471440,{awp=30400,description="Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1217476,{awp=30400,description="Rewarded from the Treasure Workshop.",rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=30400,description="Can be bought for ¥200 RMB (~$27 USD) for a limited time in the Ingame Shop.",rwp=40400,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(459784,{awp=30400,illusionID=8553,itemID=227362,rwp=40400,type="illusionID",u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(459784,{awp=30400,itemID=227362,rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42777,{awp=30400,itemID=49284,lvl=40,q=4,rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{awp=30400,itemID=49283,lvl=20,q=3,rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{awp=30400,itemID=49286,lvl=20,q=4,rwp=40400,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(

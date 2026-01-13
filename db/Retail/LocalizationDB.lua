@@ -1607,7 +1607,7 @@ localize(L.HEADER_NAMES, {
 	[-698] = TRANSMOG_SOURCE_4,
 	[-700] = "Hati's Aftermath",
 	[-703] = "Diablo IV: Lord of Hatred",
-	[-704] = "Tutorials",
+	[-704] = EJ_TUTORIALS,
 	[-705] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-706] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
@@ -2486,7 +2486,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026}),
@@ -2538,7 +2537,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=20,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -23417,6 +23417,7 @@ L.QUEST_NAMES = {
 	[65612] = "Stay awhile and listen: Baine Bloodhoof",
 	[65614] = "Stay awhile and listen: Arbiter Pelagos",
 	[65621] = "[DEPRECATED] Tracking Quest - Egg Tracker",
+	[66316] = "Stay awhile and listen: Bolvar Fordragon",
 	[66359] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
 	[66360] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
 	[66361] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",

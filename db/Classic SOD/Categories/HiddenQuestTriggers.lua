@@ -6,6 +6,9 @@ _.Categories.HiddenQuestTriggers={
 x(1,{
 inst(760,{isRaid=1,savedInstanceID=249,g={
 q(76175,{type="hqt"})}}),
+m(1414,{maps={1464},g={
+m(1413,{
+q(55296,{type="hqt"})})}}),
 m(1415,{awp=11101,maps={1463},g={
 m(1434,{awp=11101,g={
 q(7908,{awp=11201,type="hqt"}),

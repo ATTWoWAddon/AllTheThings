@@ -482,11 +482,11 @@ r(44953,{awp=20300,b=1,e=14,itemID=34262,learnedAt=285,q=2,requireSkill=165}),
 r(45022,{awp=20300,b=1,e=14,itemID=34413,learnedAt=325,q=1,requireSkill=185}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
-q(8744,{e=14,isYearly=1,maps={1454,1455},providers={{"i",21191},{"o",180743}},g={
+q(8744,{coords={{49.5,78.5,1454},{33.5,66.5,1455}},e=14,isYearly=1,providers={{"i",21191},{"o",180743}},g={
 i(21254,{b=1,e=14,f=55,q=1})}}),
-q(8803,{e=14,isYearly=1,lvl=10,maps={1454,1455},providers={{"i",21363},{"o",180793}},g={
+q(8803,{coords={{49.6,77.7,1454},{33.6,66.1,1455}},e=14,isYearly=1,lvl=10,providers={{"i",21363},{"o",180793}},g={
 i(21328,{b=1,e=14,q=1})}}),
-q(8768,{e=14,isYearly=1,lvl=20,maps={1454,1455},providers={{"i",21310},{"o",180747}},g={
+q(8768,{coords={{49.6,78.2,1454},{33.6,66.3,1455}},e=14,isYearly=1,lvl=20,providers={{"i",21310},{"o",180747}},g={
 p(119,{awp=11101,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
 p(118,{awp=11101,e=14,itemID=21308,petTypeID=5,q=1,spellID=26529}),
 p(120,{awp=11101,e=14,itemID=21305,petTypeID=1,q=1,spellID=26541}),
@@ -495,7 +495,7 @@ q(8767,{c={1,2,3,4},description="Given prior to 2015 exclusively to non-spell ca
 i(21235,{b=1,e=14,f=55,q=1,rwp=60203})}}),
 q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"i",21271},{"o",180746}},rwp=60203,g={
 i(21241,{b=1,e=14,f=55,q=1,rwp=60203})}}),
-q(8769,{e=14,isYearly=1,lvl=40,maps={1454,1455},providers={{"i",21327},{"o",180748}},g={
+q(8769,{coords={{49.5,78.7,1454},{33.6,66.5,1455}},e=14,isYearly=1,lvl=40,providers={{"i",21327},{"o",180748}},g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
 r(21943,{e=14,itemID=17722,learnedAt=190,q=2,requireSkill=165}),
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
@@ -559,7 +559,7 @@ q(8799,{coords={{53.2,66.6,1454}},cost={{"i",8150,1},{"g",50000}},description="R
 i(21213,{e=14,f=106,lvl=30,q=2,rwp=40300})}}),
 q(7062,{coords={{30.2,59.8,1455}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
-q(6964,{coords={{51,65.4,1454}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
+q(6964,{coords={{51,71.1,1454}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
 i(17735,{e=14,q=1})}}),
 q(7025,{coords={{33.2,65.8,1455}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,g={
@@ -573,7 +573,7 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(6962,{coords={{52.4,68.8,1454}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13445},r=1,g={
+q(6962,{coords={{49.9,78.4,1454}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13445},r=1,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
 i(2840,{e=14,q=1}),

@@ -677,7 +677,7 @@ crit(4010,{achID=1285,awp=30002,id=1})}),
 gach(5056,{awp=40003}),
 ach(15330,{awp=11401,rwp=11500,u=2}),
 i(17204,{b=1,q=5}),
-i(19017,{b=1,c={1,2,3,4,6,8,9},description="For this to drop, you must be on the Thunderaan the Windseeker quest.",q=1}),
+i(19017,{b=1,c={1,2,3,4,6,8,9},description="For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",q=1}),
 s(128750,17076,{b=1,f=26,lvl=60,q=4}),
 s(128756,17104,{b=1,f=22,lvl=60,q=4}),
 s(129720,18816,{b=1,f=20,lvl=60,q=4}),
@@ -738,7 +738,7 @@ q(7508,{c={1,2},lvl=60,maps={234},providers={{"i",18513}},qgs={14368},rwp=30300,
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},u=2,g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}},rwp=30300,u=2}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=1,rwp=30300,u=2}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,rwp=30300,u=2}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,rwp=30300,u=2}),
 s(201131,18348,{b=1,c={1,2},f=25,lvl=60,q=4,rwp=30300,u=2})}}),
 q(7497,{coords={{67,85,1453}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496,24428},g={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
@@ -1248,7 +1248,7 @@ q(8246,{awp=10700,coords={{15.1,16,1434}},cost={{"i",19858,15}},lvl=58,minReputa
 i(20077,{awp=10700,b=1,lvl=55,q=3,rwp=40003,u=2}),
 i(20076,{awp=10700,b=1,lvl=55,q=3,rwp=40003,u=2}),
 i(20078,{awp=10700,b=1,lvl=55,q=3,rwp=40003,u=2})}}),
-q(8183,{awp=10700,description="Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",lvl=58,maps={1434},providers={{"i",19802}},rwp=40003,u=2,g={
+q(8183,{awp=10700,description="Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",lvl=58,maps={1434},providers={{"i",19802}},rwp=40003,u=2,g={
 i(19948,{awp=10700,b=1,f=53,q=4,rwp=40003,u=2}),
 i(19950,{awp=10700,b=1,f=53,q=4,rwp=40003,u=2}),
 i(19949,{awp=10700,b=1,f=53,q=4,rwp=40003,u=2})}}),
@@ -1620,7 +1620,7 @@ i(20889,{awp=10900,b=1,c={2,3,7,9,11},crs={15341,15348,15369,15370},q=3,u=15}),
 i(20890,{awp=10900,b=1,c={5,8,9,11},crs={15339,15340,15369,15370},q=4,u=15}),
 i(20886,{awp=10900,b=1,c={1,2,3,4,7},crs={15339,15340,15369,15370},q=4,u=15}),
 i(76401,{awp=40300,b=1,crs={15339,15340,15341,15348,15369,15370},q=3,u=40})}}),
-o(180691,{awp=10900,cost={{"i",76401,1},{"i",21761,1}},description="These can be found along the walls of the instance and require a coffer key to open.",u=15,g={
+o(180691,{awp=10900,cost={{"i",76401,1}},description="These can be found along the walls of the instance and require a coffer key to open.",u=15,g={
 i(20873,{awp=10900,c={1,8,11},q=3,u=15}),
 i(20869,{awp=10900,c={2,3,7,9},q=3,u=15}),
 i(20866,{awp=10900,c={3,4,8},q=3,u=15}),
@@ -1921,7 +1921,7 @@ i(21232,{awp=10900,b=1,crs={15275,15276,15299,15509,15510,15511,15516,15517,1554
 i(21237,{awp=10900,b=1,crs={15275,15276,15299,15509,15510,15511,15516,15517,15543,15544},lvl=60,q=4,u=15}),
 i(76402,{awp=40300,crs={15263,15275,15276,15299,15509,15510,15511,15516,15517,15543,15544,15727},q=3,u=40}),
 i(21229,{awp=10900,b=1,crs={15263,15275,15276,15299,15509,15510,15511,15516,15517,15543,15544},description="Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",q=1,u=15})}}),
-o(180690,{awp=10900,cost={{"i",76402,1},{"i",21762,1}},u=15,g={
+o(180690,{awp=10900,cost={{"i",76402,1}},u=15,g={
 i(20876,{awp=10900,c={1,5,8,9},q=3,u=15}),
 i(20879,{awp=10900,c={2,3,5,7,11},q=3,u=15}),
 i(20875,{awp=10900,c={1,4,8,9},q=3,u=15}),
@@ -2497,8 +2497,10 @@ s(128960,17695,{b=1,f=4,q=2,rwp=40003,u=2}),
 i(17694,{b=1,f=52,q=2,rwp=40003,u=2})}}),
 q(26891,{awp=40003,lvl=20,qgs={12736},r=1,rwp=60002,g={
 qo(1,{awp=40003,providers={{"i",16762}},rwp=60002})}}),
-q(6921,{coords={{11.6,34.3,1440}},lvl=21,qgs={12736},r=1,rwp=40003,u=2,g={
-qo(1,{providers={{"i",16762}},rwp=40003,u=2})}}),
+q(908,{coords={{11.6,34.3,1440}},description="This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",lvl=21,qgs={12736},r=1,rwp=10204,u=2,g={
+qo(1,{providers={{"i",16762}},rwp=10204,u=2})}}),
+q(6921,{awp=10204,coords={{11.6,34.3,1440}},lvl=21,qgs={12736},r=1,rwp=40003,u=2,g={
+qo(1,{awp=10204,providers={{"i",16762}},rwp=40003,u=2})}}),
 q(6922,{lvl=21,maps={1440},providers={{"i",16782}},r=1,rwp=60002,g={
 s(128561,16886,{b=1,f=25,q=3,rwp=60002}),
 s(128562,16887,{b=1,f=1,q=3,rwp=60002})}}),
@@ -3943,7 +3945,7 @@ q(2904,{lvl=20,qgs={7850},rwp=40003,u=2,g={
 s(122961,9536,{b=1,f=4,q=2,rwp=40003,u=2}),
 s(122960,9535,{b=1,f=6,q=2,rwp=40003,u=2})}}),
 q(2931,{coords={{59.6,67,1442}},isBreadcrumb=1,lvl=25,nextQuests={2930},qgs={4077},r=2,rwp=40003,u=2}),
-q(2842,{coords={{75.6,25.2,1454}},description="You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",lvl=20,qgs={3413},r=1,rwp=40003,u=2}),
+q(2842,{coords={{75.6,25.2,1454}},description="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",lvl=20,qgs={3413},r=1,rwp=40003,u=2}),
 q(2930,{coords={{70.2,48.4,1455}},lvl=25,qgs={7950},r=2,rwp=40003,sourceQuests={2931},u=2,g={
 qo(1,{providers={{"i",9316}},rwp=40003,u=2}),
 s(123023,9604,{b=1,f=24,q=2,rwp=40003,u=2}),
@@ -3971,7 +3973,7 @@ q(2947,{lvl=28,maps={1455},providers={{"o",142487}},r=2,sourceQuests={2945},g={
 i(9362,{b=1,f=52,q=2})}}),
 q(2949,{lvl=28,maps={1454},providers={{"o",142487}},r=1,sourceQuests={2945},g={
 i(9362,{b=1,f=52,q=2})}}),
-q(2841,{coords={{75.8,25.2,1454}},lvl=25,qgs={3412},r=1,rwp=40003,u=2,g={
+q(2841,{coords={{75.8,25.2,1454}},lc={1,"questID",2842},lvl=25,qgs={3412},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"i",9153},{"o",142477}},rwp=40003,u=2}),
 qo(2,{crs={7800},providers={{"i",9299}},rwp=40003,u=2}),
 s(200955,9623,{b=1,f=4,q=3,rwp=40003,u=2}),
@@ -4477,7 +4479,7 @@ q(26983,{awp=40003,coords={{49.4,67.6,199}},isBreadcrumb=1,lvl=31,nextQuests={26
 q(1050,{coords={{75,12.5,1455}},lvl=28,qgs={3979},r=2,rwp=40003,u=2,g={
 qo(1,{description="In the hallway with the benches immediately to your left upon entering it.",providers={{"i",5536},{"o",19284}},rwp=40003,u=2}),
 i(7746,{b=1,f=51,q=2,rwp=40003,u=2})}}),
-q(1951,{c={8},coords={{478.2,75.8,1441}},lvl=30,maps={1445},qgs={6548},rwp=40003,sourceQuests={1950},u=2,g={
+q(1951,{c={8},coords={{47.82,75.8,1441}},lvl=30,maps={1445},qgs={6548},rwp=40003,sourceQuests={1950},u=2,g={
 qo(1,{providers={{"i",7274}},rwp=40003,u=2})}}),
 q(26959,{awp=40003,lvl=31,qgs={44660},r=1,rwp=50004,sourceQuests={26987},g={
 qo(1,{awp=40003,providers={{"n",3974}},rwp=50004}),
@@ -4763,7 +4765,6 @@ i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Pla
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
 i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=45,q=1,rwp=40003,u=2}),
-i(20520,{awp=100105,q=2,rwp=50004}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003,u=2}),
 s(129606,18702,{awp=100105,f=7,lvl=40,q=3,rwp=50004}),
 s(128380,16671,{crs={10478},f=6,lvl=52,q=3,rwp=40003,u=2}),
@@ -4892,7 +4893,7 @@ n(10507,{awp=100105,rwp=50004,g={
 s(128425,16716,{f=5,lvl=53,q=3,rwp=40003,u=2})}}),
 n(10504,{awp=100105,rwp=50004,g={
 s(128431,16722,{f=7,lvl=52,q=3,rwp=40003,u=2})}}),
-n(1853,{awp=100105,description="You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
+n(1853,{awp=100105,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
 r(18458,{awp=100105,itemID=14514,learnedAt=300,q=4,requireSkill=197,rwp=50004}),
 r(17580,{awp=100105,b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171,rwp=50004}),
 s(126091,13937,{awp=100105,b=1,f=28,lvl=40,q=4,rwp=50004}),
@@ -16486,7 +16487,8 @@ s(178109,49783,{awp=30300,b=1,f=23,lvl=80,q=4,u=33}),
 s(178110,49784,{awp=30300,b=1,f=7,lvl=80,q=4,u=33}),
 i(50317,{awp=30300,b=1,f=113,q=4,u=33}),
 s(178112,49786,{awp=30300,b=1,f=5,lvl=80,q=4,u=33}),
-s(178113,49787,{awp=30300,b=1,f=6,lvl=80,q=4,u=33})}}),
+s(178113,49787,{awp=30300,b=1,f=6,lvl=80,q=4,u=33}),
+crit(13315,{achID=4516,awp=30300,id=1,u=33})}}),
 e(616,{awp=30300,npcID=36502,u=33,g={
 s(178118,49792,{awp=30300,b=1,f=3,lvl=80,q=4,u=33}),
 s(178116,49790,{awp=30300,b=1,f=28,lvl=80,q=4,u=33}),
@@ -16499,7 +16501,8 @@ s(178117,49791,{awp=30300,b=1,f=7,lvl=80,q=4,u=33}),
 s(178121,49795,{awp=30300,b=1,f=7,lvl=80,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=33}),
 s(178124,49798,{awp=30300,b=1,f=6,lvl=80,q=4,u=33}),
 i(49800,{awp=30300,b=1,f=52,lvl=80,q=4,u=33}),
-s(178119,49793,{awp=30300,b=1,f=28,lvl=80,q=4,u=33})}})}}),
+s(178119,49793,{awp=30300,b=1,f=28,lvl=80,q=4,u=33}),
+crit(13316,{achID=4516,awp=30300,id=1,u=33})}})}}),
 d(2,{awp=30300,lvl=80,u=33,g={
 h(-63,{awp=30300,u=33,g={
 i(50379,{awp=30300,lvl=80,q=4,r=2,u=33}),

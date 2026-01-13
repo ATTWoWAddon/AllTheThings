@@ -3551,7 +3551,7 @@ i(5784,{coords={{15.1,39.3,1437}},crs={1024,1025,1026,1027,1028,1029,1418},descr
 i(5523,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",maps={1413,1421,1432,1433,1436,1439,1440},q=1,g={
 i(5503,{q=1}),
 i(5498,{q=2})}}),
-i(6889,{coords={{44,48,1439}},crs={10157,10158,10159,10160},description="Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",q=1}),
+i(6889,{coords={{40.6,59,1412},{76.6,68.2,1432},{52,38.8,1433},{61.2,59.8,1436},{54.6,60.6,1438},{44,48,1439}},crs={154,199,428,1109,1194,1995,1996,1997,2969,2970,2971,10157,10158,10159,10160},description="Drops from birds, owlkin and striders in entry- and lower level vanilla zones",q=1}),
 i(4402,{coords={{81,48,1418},{15,61,1435},{62,42,1437},{36,12,1442},{46,24,1444},{45,68,1445}},description="Drops from small dragonkin like darters and whelps.",q=1}),
 i(5465,{coords={{35.7,13.7,1421}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",maps={1438},q=1}),
 i(1475,{description="Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1432,1442},q=1}),

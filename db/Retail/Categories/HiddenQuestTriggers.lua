@@ -800,7 +800,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -3798,7 +3798,6 @@ q(65757,{awp=90200,type="hqt"}),
 q(66047,{awp=90200,type="hqt"}),
 q(65511,{awp=90200,type="hqt"}),
 q(65618,{awp=90200,type="hqt"}),
-q(66316,{awp=90205,type="hqt"}),
 q(66313,{awp=90205,type="hqt"})})}}),
 m(1565,{awp=90002,maps={1816,1818,1824,1825,1826,1827,1829},petBattleLvl=25,lvl=10,g={
 h(-45,{

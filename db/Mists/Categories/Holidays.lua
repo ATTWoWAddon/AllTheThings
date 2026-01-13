@@ -1392,13 +1392,13 @@ r(44953,{awp=20300,b=1,e=14,itemID=34262,learnedAt=285,q=2,requireSkill=165}),
 r(45022,{awp=20300,b=1,e=14,itemID=34413,learnedAt=325,q=1,requireSkill=185}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
-q(8744,{e=14,isYearly=1,maps={85,87},providers={{"i",21191},{"o",180743}},g={
+q(8744,{coords={{49.5,78.5,85},{33.5,66.5,87}},e=14,isYearly=1,providers={{"i",21191},{"o",180743}},g={
 i(21254,{b=1,e=14,f=55,q=1}),
 crit(6251,{achID=1689,awp=30002,e=14,id=3})}}),
-q(8803,{e=14,isYearly=1,lvl=10,maps={85,87},providers={{"i",21363},{"o",180793}},g={
+q(8803,{coords={{49.6,77.7,85},{33.6,66.1,87}},e=14,isYearly=1,lvl=10,providers={{"i",21363},{"o",180793}},g={
 i(21328,{b=1,e=14,q=1}),
 crit(6254,{achID=1689,awp=30002,e=14,id=6})}}),
-q(8768,{e=14,isYearly=1,lvl=20,maps={85,87},providers={{"i",21310},{"o",180747}},g={
+q(8768,{coords={{49.6,78.2,85},{33.6,66.3,87}},e=14,isYearly=1,lvl=20,providers={{"i",21310},{"o",180747}},g={
 p(119,{awp=11101,e=14,itemID=21301,npcID=15698,q=1,spellID=26533}),
 p(118,{awp=11101,e=14,itemID=21308,npcID=15706,q=1,spellID=26529}),
 p(120,{awp=11101,e=14,itemID=21305,npcID=15705,q=1,spellID=26541}),
@@ -1410,7 +1410,7 @@ crit(6252,{achID=1689,awp=30002,e=14,id=4})}}),
 q(8788,{c={5,7,8,9,11},description="Given prior to 2015 exclusively to spell casters.",e=14,isYearly=1,maps={85,87},providers={{"i",21271},{"o",180746}},rwp=60203,g={
 i(21241,{b=1,e=14,f=55,q=1,rwp=60203}),
 crit(6253,{achID=1689,awp=30002,e=14,id=5})}}),
-q(8769,{e=14,isYearly=1,lvl=40,maps={85,87},providers={{"i",21327},{"o",180748}},g={
+q(8769,{coords={{49.5,78.7,85},{33.6,66.5,87}},e=14,isYearly=1,lvl=40,providers={{"i",21327},{"o",180748}},g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
 r(21943,{e=14,itemID=17722,learnedAt=190,q=2,requireSkill=165}),
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
@@ -1491,7 +1491,7 @@ q(8799,{coords={{52.4,77,85}},cost={{"i",8150,1},{"g",50000}},description="Requi
 i(21213,{e=14,f=106,lvl=20,q=2,rwp=40300,u=2})}}),
 q(7062,{coords={{30.2,59.8,87}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
-q(6964,{coords={{51,65.4,85}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
+q(6964,{coords={{51,71.1,85}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
 i(17735,{e=14,q=1})}}),
 q(7025,{coords={{33.2,65.8,87}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,g={
@@ -1694,7 +1694,7 @@ ach(968,{awp=30002,e=16,r=1,g={
 crit(2227,{achID=971,awp=30002,e=16,id=3})}}),
 ach(7601,{awp=50004,e=16,r=2}),
 ach(7602,{awp=50004,e=16,r=1})}}),
-n(23682,{awp=20001,description="You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",e=16,lvl=89,maps={435,436},sym={{"selectparent"},{"pop"},{"where","headerID",-47},{"pop"},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195},{"exclude","itemID",20392},{"exclude","itemID",20413},{"select","itemID",37585,37583,37582,37584,37606,37604}},g={
+n(23682,{awp=20001,description="You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",e=16,lvl=89,maps={435,436},sym={{"selectparent"},{"pop"},{"where","headerID",-47},{"pop"},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195,20392,20413},{"select","itemID",37585,37583,37582,37584,37606,37604}},g={
 ach(255,{awp=30002,e=16,rwp=100107,g={
 crit(5821,{achID=1656,awp=30002,e=16,id=3})}}),
 i(54516,{awp=30300,b=1,e=16,q=3,rwp=60002,sym={{"selectparent",2},{"pop"},{"where","headerID",-47},{"pop"},{"contains","itemID",33226,34000,34002,34001,34003,20562,20561,20392,20391,49212,49210,20565,20566,69187,69188,69189,69190,20563,20564,69192,69193,20569,20570,20571,20572,20567,20568,20574,20573,69194,69195,49215,49216},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195}},g={
@@ -2560,7 +2560,7 @@ h(-47,{e=16,g={
 i(34077,{awp=20001,b=1,e=16,f=55,q=1,g={
 i(36877,{awp=20001,e=16,f=55,q=1}),
 i(34068,{awp=20001,e=16,f=55,q=1})}}),
-i(37586,{awp=20403,b=1,e=16,q=1,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077},{"exclude","itemID",20390,20389,20388},{"exclude","itemID",69187,69188,69189,69190,69192,69193,69194,69195},{"exclude","itemID",20413},{"finalize"},{"select","itemID",33292,33154}}}),
+i(37586,{awp=20403,b=1,e=16,q=1,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077,20390,20389,20388,69187,69188,69189,69190,69192,69193,69194,69195,20413},{"select","itemID",33292,33154}}}),
 i(20393,{b=1,e=16,q=1,rwp=40200,u=2}),
 i(20390,{b=1,e=16,f=55,q=1,rwp=40001,u=2}),
 i(20389,{b=1,e=16,f=55,q=1,rwp=40001,u=2}),
