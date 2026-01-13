@@ -2065,6 +2065,50 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(88235),	-- Gladiator's Plate Shoulders
 				}),
 			}),
+			-- #if BEFORE 7.2.0
+			-- Obtainable in PvP Ensemble in 7.2.0
+			n(SEASON_RUTHLESS, {
+				cl(DRUID, {
+					i(88171),	-- Gladiator's Ironskin Gloves
+					i(88172),	-- Gladiator's Ironskin Helm
+					i(88173),	-- Gladiator's Ironskin Legguards
+					i(88174),	-- Gladiator's Ironskin Tunic
+					i(88175),	-- Gladiator's Ironskin Spaulders
+					i(88176),	-- Gladiator's Copperskin Gloves
+					i(88177),	-- Gladiator's Copperskin Helm
+					i(88178),	-- Gladiator's Copperskin Legguards
+					i(88179),	-- Gladiator's Copperskin Tunic
+					i(88180),	-- Gladiator's Copperskin Spaulders
+					i(93508),	-- Crafted Gladiator's Ironskin Gloves
+					i(93510),	-- Crafted Gladiator's Ironskin Helm
+					i(93512),	-- Crafted Gladiator's Ironskin Legguards
+					i(93514),	-- Crafted Gladiator's Ironskin Spaulders
+					i(93516),	-- Crafted Gladiator's Ironskin Tunic
+					i(93518),	-- Crafted Gladiator's Copperskin Gloves
+					i(93520),	-- Crafted Gladiator's Copperskin Helm
+					i(93522),	-- Crafted Gladiator's Copperskin Legguards
+					i(93524),	-- Crafted Gladiator's Copperskin Spaulders
+					i(93526),	-- Crafted Gladiator's Copperskin Tunic
+				}),
+			}),
+			-- #endif
+			-- #if BEFORE 7.2.0
+			-- Obtainable in PvP Ensemble in 7.2.0
+			n(SEASON_VICIOUS, {
+				cl(MAGE, {
+					i(64928),	-- Gladiator's Silk Trousers
+					i(64929),	-- Gladiator's Silk Robe
+					i(64930),	-- Gladiator's Silk Handguards
+					i(64931),	-- Gladiator's Silk Cowl
+					i(64932),	-- Gladiator's Silk Amice
+					i(88251),	-- Gladiator's Silk Amice
+					i(88252),	-- Gladiator's Silk Cowl
+					i(88253),	-- Gladiator's Silk Handguards
+					i(88254),	-- Gladiator's Silk Robe
+					i(88255),	-- Gladiator's Silk Trousers
+				}),
+			}),
+			-- #endif
 			cl(WARRIOR, {
 				i(81704),	-- Ymirjar Lord's Battleplate
 				i(81705),	-- Ymirjar Lord's Gauntlets

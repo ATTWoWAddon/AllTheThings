@@ -60,6 +60,7 @@ local BLOODTHIRSTY_GROUPS = {
 			["timeline"] = { ADDED_7_2_0 },
 			-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
 			-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+			-- #if AFTER 11.0.0
 			["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
 				i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 				i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
@@ -72,6 +73,7 @@ local BLOODTHIRSTY_GROUPS = {
 				i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
 				i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 			}),
+			-- #endif
 		})),
 		moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 		moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl

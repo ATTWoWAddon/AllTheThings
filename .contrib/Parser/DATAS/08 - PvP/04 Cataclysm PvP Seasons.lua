@@ -604,6 +604,7 @@ root(ROOTS.PVP, {
 						["timeline"] = { ADDED_7_2_0 },
 						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
 						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+						-- #if AFTER 11.0.0
 						["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
 							i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 							i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
@@ -616,6 +617,7 @@ root(ROOTS.PVP, {
 							i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
 							i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
 						}),
+						-- #endif
 					})),
 					moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 					moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl
@@ -1781,6 +1783,7 @@ root(ROOTS.PVP, {
 						["timeline"] = { ADDED_7_2_0 },
 						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
 						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+						-- #if AFTER 11.0.0
 						["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
 							i(88171),	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
 							i(88172),	-- Gladiator's Ironskin Helm - confirmed 14/10/21
@@ -1803,6 +1806,7 @@ root(ROOTS.PVP, {
 							i(93524),	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
 							i(93526),	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
 						}),
+						-- #endif
 					})),
 					moh(2, i(70279)),	-- Ruthless Gladiator's Dragonhide Gloves
 					moh(3, i(70280, {	-- Ruthless Gladiator's Dragonhide Helm
