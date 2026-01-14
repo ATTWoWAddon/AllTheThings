@@ -472,7 +472,7 @@ app:CreateWindow("Tradeskills", {
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;
 		handlers.LEARNED_SPELL_IN_TAB = newSpellLearned;
-		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
+		pcall(self.RegisterEvent, self, "LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 
 		-- Default Update refreshes
