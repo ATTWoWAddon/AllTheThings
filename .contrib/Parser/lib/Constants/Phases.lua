@@ -1091,6 +1091,10 @@ TBC_PHASE_ONE = createClassicPhase({
 TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 	readable = "TBC Classic - Dark Portal Opens",
 	minimumBuildVersion = 20501,
+-- #if BEFORE 2.5.6
+--	buildVersion = 20501,	-- TBC Classic 2020-2021
+	buildVersion = 20505,	-- TBC Classic 2026-2027
+-- #endif
 	phaseID = 1701,
 	text = {
 		en = "Dark Portal Opens",
