@@ -5995,14 +5995,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 400 toys.","Toybox Tycoon","Pet: Brutus",12996,-1,-1,11176,15247,0,10,131072,7,1567068,163244,68526,0,0,0,0
 "Complete the Pride of Kul Tiras storyline.","The Pride of Kul Tiras","Decor Reward: Proudmoore Green Drape",12997,-1,1,0,15284,0,10,132096,12,1722903,0,68524,0,0,0,0
 "Defeat Harlan Sweete after destroying three Chests o' Booty in Freehold on Mythic Difficulty.","That Sweete Booty",,12998,1754,-1,0,15285,0,10,0,31,1542860,0,70748,0,0,0,0
-"Defeat Harlan Sweete in Freehold on Mythic difficulty while in a guild group.","Mythic: Freehold Guild Run",,12999,1754,-1,12832,15299,0,10,49152,1,2011112,0,68528,0,0,0,0
-"Defeat Gorak Tul in Waycrest Manor on Mythic difficulty while in a guild group.","Mythic: Waycrest Manor Guild Run",,13000,1862,-1,12484,15299,0,10,49152,2,2011154,0,68530,0,0,0,0
-"Defeat Vol'zith the Whisperer in Shrine of the Storm on Mythic difficulty while in a guild group.","Mythic: Shrine of the Storm Guild Run",,13001,1864,-1,12837,15299,0,10,49152,3,2011138,0,68532,0,0,0,0
-"Defeat Yazma in Atal'Dazar on Mythic difficulty while in a guild group.","Mythic: Atal'Dazar Guild Run",,13002,1763,-1,12825,15299,0,10,49152,4,2011105,0,68534,0,0,0,0
-"Defeat the Unbound Abomination in Underrot on Mythic difficulty while in a guild group.","Mythic: Underrot Guild Run",,13003,1841,-1,12501,15299,0,10,49152,5,2011151,0,68536,0,0,0,0
-"Restore the Avatar of Sethraliss in the Temple of Sethraliss on Mythic difficulty while in a guild group.","Mythic: The Temple of Sethraliss Guild Run",,13004,1877,-1,12505,15299,0,10,49152,6,2011143,0,68538,0,0,0,0
-"Defeat Overseer Korgus in Tol Dagor on Mythic difficulty while in a guild group.","Mythic: Tol Dagor Guild Run",,13005,1771,-1,12841,15299,0,10,49152,7,2011149,0,68540,0,0,0,0
-"Defeat Mogul Razdunk in The MOTHERLODE!! on Mythic difficulty while in a guild group.","Mythic: The MOTHERLODE!! Guild Run",,13006,1594,-1,12845,15299,0,10,49152,8,2011121,0,68542,0,0,0,0
+"Defeat Harlan Sweete in Freehold on Mythic difficulty while in a guild group.","Mythic: Freehold Guild Run",,12999,1754,-1,0,15299,0,10,49152,1,2011112,0,68528,0,0,0,0
+"Defeat Gorak Tul in Waycrest Manor on Mythic difficulty while in a guild group.","Mythic: Waycrest Manor Guild Run",,13000,1862,-1,0,15299,0,10,49152,2,2011154,0,68530,0,0,0,0
+"Defeat Vol'zith the Whisperer in Shrine of the Storm on Mythic difficulty while in a guild group.","Mythic: Shrine of the Storm Guild Run",,13001,1864,-1,0,15299,0,10,49152,3,2011138,0,68532,0,0,0,0
+"Defeat Yazma in Atal'Dazar on Mythic difficulty while in a guild group.","Mythic: Atal'Dazar Guild Run",,13002,1763,-1,0,15299,0,10,49152,4,2011105,0,68534,0,0,0,0
+"Defeat the Unbound Abomination in Underrot on Mythic difficulty while in a guild group.","Mythic: Underrot Guild Run",,13003,1841,-1,0,15299,0,10,49152,5,2011151,0,68536,0,0,0,0
+"Restore the Avatar of Sethraliss in the Temple of Sethraliss on Mythic difficulty while in a guild group.","Mythic: The Temple of Sethraliss Guild Run",,13004,1877,-1,0,15299,0,10,49152,6,2011143,0,68538,0,0,0,0
+"Defeat Overseer Korgus in Tol Dagor on Mythic difficulty while in a guild group.","Mythic: Tol Dagor Guild Run",,13005,1771,-1,0,15299,0,10,49152,7,2011149,0,68540,0,0,0,0
+"Defeat Mogul Razdunk in The MOTHERLODE!! on Mythic difficulty while in a guild group.","Mythic: The MOTHERLODE!! Guild Run",,13006,1594,-1,0,15299,0,10,49152,8,2011121,0,68542,0,0,0,0
 "Defeat Viq'goth in Siege of Boralus while in a guild group.","Siege of Boralus Guild Run",,13007,1822,-1,0,15299,0,10,49152,9,2011139,0,68544,0,0,0,0
 "Defeat Dazar in Kings' Rest while in a guild group.","Kings' Rest Guild Run",,13008,1762,-1,0,15299,0,10,49152,10,2011123,0,68546,0,0,0,0
 "Collect each of the Sandworm Scales listed below from Sandfishing in Vol'dun.","Adept Sandfisher",,13009,-1,0,0,15284,0,5,131072,81,236576,0,68548,0,0,0,0
@@ -11669,7 +11669,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Cage of Carnage matches","Cage of Carnage matches",,40908,-1,-1,0,152,0,0,1,17,136243,0,168402,0,0,0,0
 "Cage of Carnage victories","Cage of Carnage victories",,40909,-1,-1,0,152,0,0,1,18,136243,0,168404,0,0,0,0
 "Aid in the stress testing of the realms in China.","Successfully Stress Test CN Realms",,40910,-1,-1,0,81,0,0,133120,265,442272,0,168422,0,0,0,0
-"Accomplished one of the following feats during Season Two of The War Within on your current character:","The War Within Season 2: Master Blaster","Item Reward: Crystallized Essence of Kaja'mite",40911,-1,-1,0,81,0,0,0,253,6392630,0,168470,0,0,0,0
+"Accomplished one of the following feats during Season Two of The War Within on your current character:","The War Within Season 2: Master Blaster","Item Reward: Crystallized Essence of Kaja'mite",40911,-1,-1,0,81,0,0,2048,253,6392630,0,168470,0,0,0,0
 "Complete Skyrocketing Sprint.","Skyrocketing Sprint: Bronze",,40912,-1,-1,0,15462,0,0,1048576,1768,1002572,0,0,0,0,0,0
 "Get Silver ranked time for Skyrocketing Sprint.","Skyrocketing Sprint: Silver",,40913,-1,-1,40912,15462,0,0,1048576,1772,1002575,0,0,0,0,0,0
 "Get Gold ranked time for Skyrocketing Sprint.","Skyrocketing Sprint: Gold",,40914,-1,-1,40913,15462,0,0,1048576,1774,1002573,0,0,0,0,0,0
@@ -12153,15 +12153,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Vicious Saddle (41)",,41698,-1,1,41696,15270,0,0,1179648,137,1379171,103533,207462,0,0,0,0
 ,"Vicious Saddle (41)",,41699,-1,0,41697,15270,0,0,1179648,70,1379171,103533,207464,0,0,0,0
 "Gain new High Scores each week!","Dastardly Duos Weekly High Score",,41706,-1,-1,0,15545,0,50,131072,1,6740278,0,207477,0,0,0,0
-"Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,8,6740278,0,207484,0,0,0,0
+"Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,7,6740278,0,207484,0,0,0,0
 "Make friends with all 5 Grabbable Rats in Undermine.","You're My Friend Now",,41708,-1,-1,0,15521,0,5,131072,9,6351952,0,207587,0,0,0,0
 "Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,22,6025441,0,207593,0,0,0,0
 "Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1179648,14,136243,0,207597,0,0,0,0
 "Defeat Sprocketmonger Lockenstock without being struck by Blazing Beam, Rocket Barrage, Mega Magnetize, Jumbo Void Beam, or Void Barrage in Liberation of Undermine on Normal difficulty or higher.","Conveyor Slayer",,41711,2769,-1,0,15526,0,10,0,26,132996,0,207600,0,0,0,0
 "Collect the following cosmetic unlocks for the Delver's Gob-Trotter.","From Trash to Treasure",,41714,-1,-1,41532,15523,0,10,131072,28,132241,0,207651,0,0,0,0
 "You draw extra cheers from the crowd!","Fiendishly Famous","Cheery bombs collect more cheers near you",41715,-1,-1,0,15545,0,10,131072,2,6740278,0,207661,0,0,0,0
-"The fans love you and want to see you succeed.","Duo Darling","Gain higher scores when you don't die in Dastardly Duos matches",41716,-1,-1,0,15545,0,10,131072,7,6740278,0,207663,0,0,0,0
-"You came from behind, then won!","Duos Underdog",,41717,-1,-1,0,15545,0,10,131072,6,6740278,0,207666,0,0,0,0
+"The fans love you and want to see you succeed.","Duo Darling","Gain higher scores when you don't die in Dastardly Duos matches",41716,-1,-1,0,15545,0,10,131072,6,6740278,0,207663,0,0,0,0
+"You came from behind, then won!","Duos Underdog",,41717,-1,-1,0,15545,0,10,131072,5,6740278,0,207666,0,0,0,0
 "Give the set workers job security!","Inside Connections","Workers hide an extra present inside one Dastardly Duos prop.",41722,-1,-1,0,15545,0,10,131072,3,6740278,0,207761,0,0,0,0
 "Raise a companion to level 80.","Buddy System VIII",,41723,-1,-1,41537,15531,0,10,131072,62,236569,0,207767,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 12 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 12","Keystones will no longer deplete below level 12 during the War Within Season 2.",41724,-1,-1,0,15272,0,0,1050624,138,648754,0,207769,0,0,0,0
@@ -12222,15 +12222,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"<DNT> The One-Armed Bandit defeated",,41799,-1,-1,0,15526,0,0,1048576,59,136243,0,208214,0,0,0,0
 ,"<DNT> Mug'Zee, Heads of Security defeated",,41800,-1,-1,0,15526,0,0,1048576,60,136243,0,208216,0,0,0,0
 ,"<DNT> Chrome King Gallywix defeated",,41801,-1,-1,0,15526,0,0,1048576,61,136243,0,208218,0,0,0,0
-"Complete the following questlines in Eversong Woods.","Eversong In Reprise",,41802,-1,-1,0,15547,0,10,131072,2,236762,0,208226,0,0,0,0
-"Complete the following questlines in Zul'Aman.","For Zul'Aman!","Customization Reward: Amani Appearances for Darkspear Troll",41803,-1,-1,0,15547,0,10,131072,3,7127503,0,208230,0,0,0,0
-"Complete the following questlines in Harandar.","One Does Not Simply Walk Into Harandar",,41804,-1,-1,0,15547,0,10,131072,4,7385004,0,208234,0,0,0,0
-"Complete the following questlines with Arator.","Arator's Journey",,41805,-1,-1,0,15547,0,10,131072,5,7477175,0,208238,0,0,0,0
-"Complete the following questlines in Voidstorm.","Breaching the Voidstorm",,41806,-1,-1,0,15547,0,10,131072,6,7490911,0,208241,0,0,0,0
+"Complete the following questlines in Eversong Woods.","Eversong In Reprise",,41802,-1,-1,0,15547,0,10,131072,3,236762,0,208226,0,0,0,0
+"Complete the following questlines in Zul'Aman.","For Zul'Aman!","Customization Reward: Amani Appearances for Darkspear Troll",41803,-1,-1,0,15547,0,10,131072,4,7127503,0,208230,0,0,0,0
+"Complete the following questlines in Harandar.","One Does Not Simply Walk Into Harandar",,41804,-1,-1,0,15547,0,10,131072,5,7385004,0,208234,0,0,0,0
+"Complete the following questlines with Arator.","Arator's Journey",,41805,-1,-1,0,15547,0,10,131072,6,7477175,0,208238,0,0,0,0
+"Complete the following questlines in Voidstorm.","Breaching the Voidstorm",,41806,-1,-1,0,15547,0,10,131072,7,7490911,0,208241,0,0,0,0
 ,"11.0.7 Plunderstorm - Mainline Power Reward - Fixup Achievement",,41807,-1,-1,0,15506,0,0,137756676,1,136243,0,208252,0,0,0,0
 "Complete the following storylines in K'aresh.","Otherworldly Ecologist",,41808,-1,-1,0,15506,0,10,131072,14,1381295,0,208265,0,0,0,0
 "Do a daily quest for each of the species in the Oasis.","Ecological Variety",,41809,-1,-1,0,15506,0,10,131072,15,461112,0,208282,0,0,0,0
-"Gain and upgrade your podium!","Winner's Podium",,41810,-1,-1,0,15545,0,10,131072,5,6403295,0,208328,0,0,0,0
+"Gain and upgrade your podium!","Winner's Podium",,41810,-1,-1,0,15545,0,10,131072,4,6403295,0,208328,0,0,0,0
 "Ensure all the creatures in the Oasis are fully integrated into the ecosystem.","Ecological Stability",,41811,-1,-1,0,15506,0,10,131072,17,236819,0,208339,0,0,0,0
 "Gather a group of experts to assist in the Oasis in K'aresh.","Expertly Done",,41812,-1,-1,0,15521,0,5,131072,132,134149,0,208332,0,0,0,0
 "Complete the following achievements in K'aresh.","Ecological Succession",,41815,-1,-1,0,15506,0,20,131072,20,6921877,0,208354,0,0,0,0
@@ -12269,9 +12269,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 50000 Displaced Corrupted Mementos.","A Monumental Amount of Mementos",,41897,-1,-1,41983,15546,0,10,131072,58,646678,0,208975,0,0,0,0
 ,"Midnight Jewelcrafting 75 (DNT)",,41977,-1,-1,0,15494,0,0,9437188,9,136243,0,209266,0,0,0,0
 "Obtain 75000 Displaced Corrupted Mementos.","A Mountain of Mementos",,41898,-1,-1,41897,15546,0,20,131072,59,646678,0,208977,0,0,0,0
-"Get into the Limelight! Show the crowd you're a star!","Center of Attention",,41905,-1,-1,0,15545,0,10,131072,14,6740278,0,208991,0,0,0,0
-"Keep things moving. Build momentum!","My Way, The Highway",,41916,-1,-1,0,15545,0,10,131072,15,6740278,0,209015,0,0,0,0
-"You somehow snatch victory from dastardly clutches.",Undefeatable,,41922,-1,-1,0,15545,0,10,131072,16,6740278,0,209032,0,0,0,0
+"Get into the Limelight! Show the crowd you're a star!","Center of Attention",,41905,-1,-1,0,15545,0,10,131072,13,6740278,0,208991,0,0,0,0
+"Keep things moving. Build momentum!","My Way, The Highway",,41916,-1,-1,0,15545,0,10,131072,14,6740278,0,209015,0,0,0,0
+"You somehow snatch victory from dastardly clutches.",Undefeatable,,41922,-1,-1,0,15545,0,10,131072,15,6740278,0,209032,0,0,0,0
 "Complete the Revisited Horrific Vision achievements listed below.","Reeking of Visions","Pet: Reek",41928,-1,-1,0,15546,0,10,131072,1,1022950,174463,209056,0,0,0,0
 "Complete the Revisited Horrific Vision achievements listed below.","Through the Depths of Visions","Mount: Black Serpent of N'Zoth",41929,-1,-1,41928,15546,0,20,131072,2,136122,174654,209059,0,0,0,0
 ,"Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)",,41930,-1,-1,0,81,0,0,1048580,218,136243,0,209063,0,0,0,0
@@ -12279,11 +12279,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)",,41938,-1,-1,0,81,0,0,1048580,227,136243,0,209075,0,0,0,0
 ,"Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)",,41946,-1,-1,0,81,0,0,1048580,222,136243,0,209077,0,0,0,0
 ,"Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)",,41947,-1,-1,0,81,0,0,1048580,231,136243,0,209079,0,0,0,0
-"Defeat at least two bosses.","Defeat the Dastardlies",,41948,-1,-1,0,15545,0,10,131072,9,6740278,0,209096,0,0,0,0
-"Defeat at least four bosses.","Defeat the Dastardlies",,41949,-1,-1,41948,15545,0,10,131072,10,6740278,0,209107,0,0,0,0
-"Defeat at least six bosses.","Defeat the Dastardlies",,41950,-1,-1,41949,15545,0,10,131072,11,6740278,0,209118,0,0,0,0
-"Defeat at least eight bosses.","Defeat the Dastardlies",,41951,-1,-1,41950,15545,0,10,131072,12,6740278,0,209129,0,0,0,0
-"Defeat all the Dastardly Bosses.","Defeat the Dastardlies",,41952,-1,-1,41951,15545,0,10,131072,13,6740278,0,209140,0,0,0,0
+"Defeat at least two bosses.","Defeat the Dastardlies",,41948,-1,-1,0,15545,0,10,131072,8,6740278,0,209096,0,0,0,0
+"Defeat at least four bosses.","Defeat the Dastardlies",,41949,-1,-1,41948,15545,0,10,131072,9,6740278,0,209107,0,0,0,0
+"Defeat at least six bosses.","Defeat the Dastardlies",,41950,-1,-1,41949,15545,0,10,131072,10,6740278,0,209118,0,0,0,0
+"Defeat at least eight bosses.","Defeat the Dastardlies",,41951,-1,-1,41950,15545,0,10,131072,11,6740278,0,209129,0,0,0,0
+"Defeat all the Dastardly Bosses.","Defeat the Dastardlies",,41952,-1,-1,41951,15545,0,10,131072,12,6740278,0,209140,0,0,0,0
 "Complete all objectives in the Revisited Horrific Visions of Stormwind and Orgrimmar in a single visit while not in a party and with any 5 Faceless Masks active .","Mad World","Title: The Faceless One",41953,-1,-1,0,81,0,0,2048,234,3163628,0,209151,0,0,0,0
 "Defeat Lithiel Cinderfury in Murder Row.","Murder Row",,41960,2813,-1,0,15541,0,10,0,14,7266213,0,209154,0,0,0,0
 "Defeat Lithiel Cinderfury in Murder Row on Heroic difficulty or higher.","Heroic: Murder Row",,41961,2813,-1,41960,15541,0,10,0,15,7266213,0,209168,0,0,0,0
@@ -12304,7 +12304,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete 4 Warrants in K'aresh.","Bounty Seeker","Pet: Starlight",41979,-1,-1,41978,15506,0,5,0,60,901746,245255,209324,0,0,0,0
 "Complete all Warrants in K'aresh.",Vigilante,"Mount: Terror of the Night",41980,-1,-1,41979,15506,0,10,0,61,133564,237485,209317,0,0,0,0
 "Obtain 25000 Displaced Corrupted Mementos.","Memento Mania",,41983,-1,-1,41896,15546,0,10,131072,57,646678,0,209344,0,0,0,0
-"Highest Score","Dastardly Duos Highest Score",,41984,-1,-1,0,15545,0,0,1,4,6740278,0,209354,0,0,0,0
+"Highest Score","Dastardly Duos Highest Score",,41984,-1,-1,0,15550,0,0,1,12,6740278,0,209354,0,0,0,0
 ,"Highest Score",,41986,-1,-1,0,15550,0,0,1,1,6740278,0,209356,0,0,0,0
 ,"Highest Kill Score",,41987,-1,-1,0,15550,0,0,1,2,6740278,0,209358,0,0,0,0
 ,"Highest Time Score",,41988,-1,-1,0,15550,0,0,1,3,6740278,0,209360,0,0,0,0
@@ -12321,9 +12321,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Kill at least 5 of the following Nightfall elites in Hallowfall or Azj-Kahet.","Fighter of the Nightman",,41999,-1,-1,0,15521,0,10,131072,135,135945,0,209392,0,0,0,0
 "Total Props Destroyed","Total Props Destroyed",,42000,-1,-1,0,15550,0,0,1,10,6740278,0,209376,0,0,0,0
 ,"Total Runs Completed",,42001,-1,-1,0,15550,0,0,1,11,6740278,0,209378,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of Plenty",,42002,-1,-1,0,15545,0,10,131072,17,6740278,0,209415,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of More Plenty",,42003,-1,-1,42002,15545,0,10,131072,18,6740278,0,209417,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of Most Plenty",,42004,-1,-1,42003,15545,0,10,131072,19,6740278,0,209419,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of Plenty",,42002,-1,-1,0,15545,0,10,131072,16,6740278,0,209415,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of More Plenty",,42003,-1,-1,42002,15545,0,10,131072,17,6740278,0,209417,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of Most Plenty",,42004,-1,-1,42003,15545,0,10,131072,18,6740278,0,209419,0,0,0,0
 ,"Midnight Alchemy 25 (DNT)",,42010,-1,-1,0,15489,0,0,9437188,8,136243,0,209437,0,0,0,0
 ,"Midnight Alchemy 50 (DNT)",,42011,-1,-1,0,15489,0,0,9437188,9,136243,0,209441,0,0,0,0
 ,"Midnight Alchemy 60 (DNT)",,42012,-1,-1,0,15489,0,0,9437188,10,136243,0,209443,0,0,0,0
@@ -12336,7 +12336,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the bosses within the Tomb of Sargeras on Normal difficulty or higher.","Tomb of Sargeras",,42031,1676,-1,0,15255,0,10,0,59,1536894,0,209576,0,0,0,0
 "Defeat the bosses of Antorus, the Burning Throne on Normal difficulty or higher.","Antorus, the Burning Throne",,42032,1712,-1,0,15255,0,10,131072,83,1711341,0,209581,0,0,0,0
 "End The War Within Season 3 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won in The War Within Season 3).","Astral Legend: The War Within Season 3","Character Title: Astral Legend",42033,-1,-1,0,15270,0,0,14336,295,236540,0,0,0,0,0,0
-,"Midnight companion levels obtained",,61778,-1,-1,0,15572,0,0,1048577,12,136243,0,220678,0,0,0,0
+,"Torment's Rise clears",,61777,-1,-1,0,15572,0,0,1,11,136243,0,220656,0,0,0,0
 "End The War Within PvP Season 3 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in The War Within Season 3).","Astral Warlord: The War Within Season 3","Character Title: Astral Warlord",42034,-1,0,0,15270,0,0,14336,299,236540,0,0,0,0,0,0
 "End The War Within PvP Season 3 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in The War Within Season 3).","Astral Marshal: The War Within Season 3","Character Title:Astral Marshal",42035,-1,1,0,15270,0,0,14336,302,236540,0,0,0,0,0,0
 "End The War Within Season 3 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in The War Within Season 3).","Astral Gladiator: The War Within Season 3","Character Title: Astral Gladiator",42036,-1,-1,0,15270,0,0,14336,290,236540,0,0,0,0,0,0
@@ -12346,10 +12346,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Astral Combatant",,42042,-1,0,0,15270,0,0,1179648,94,236538,243159,209603,0,0,0,0
 ,"Astral Combatant",,42043,-1,1,0,15270,0,0,1179648,87,236538,243157,209605,0,0,0,0
 "Win 50 Solo Shuffle rounds as a Healer at or above Rival I during The War Within Season 3.","Battle Mender: The War Within Season 3","Reward: Seasonal Character Title",42044,-1,-1,0,15270,0,0,133120,6,236249,0,209626,0,0,0,0
-"Complete the Midnight storyline.",Midnight,,42045,-1,-1,0,15547,0,10,131072,7,7490911,0,209651,0,0,0,0
+"Complete the Midnight storyline.",Midnight,,42045,-1,-1,0,15547,0,10,131072,8,7490911,0,209651,0,0,0,0
 "Aid the people of the Broken Isles by completing the achievements below.","Broken Memories",,42114,-1,-1,0,15257,0,40,131072,1,1408999,0,218484,0,0,0,0
 "Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,19,6100921,0,209721,0,0,0,0
-"Complete the following max level questlines.","The War of Light and Shadow",,42117,-1,-1,0,15547,0,10,131072,8,135980,0,209723,0,0,0,0
+"Complete the following max level questlines.","The War of Light and Shadow",,42117,-1,-1,0,15547,0,10,131072,9,135980,0,209723,0,0,0,0
 "Defeat the Plexus Sentinel after saving all mice from atomization in Manaforge Omega on Normal difficuty or higher.","Of Mice and Manaforges",,42118,2810,-1,0,15526,0,10,0,76,5502861,0,209730,0,0,0,0
 ,"Vicious Saddle (42)",,42123,-1,1,41698,15270,0,0,1179648,138,1379171,103533,209733,0,0,0,0
 ,"Vicious Saddle (42)",,42124,-1,0,41699,15270,0,0,1179648,71,1379171,103533,209735,0,0,0,0
@@ -12391,7 +12391,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Xal'atath Lorewalking Campaign.","Lorewalking: Blade's Bane","Decor Reward: Tome of the Survivor",42188,-1,-1,0,15552,0,5,132096,1,1131285,0,210377,0,0,0,0
 "Complete the Lich King Lorewalking Campaign.","Lorewalking: The Lich King","Decor Reward: Tale of the Penultimate Lich King",42189,-1,-1,0,15552,0,5,132096,2,343637,0,210379,0,0,0,0
 "Complete 4 out of the 6 Overcharged Delves.","Overcharged Delver","Toy: Redeployment Module",42241,-1,-1,0,15531,0,0,131072,4,2000853,235016,210760,0,0,0,0
-"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Her: Nexus-Princess Ky'veza","Reward: Delver's Mana-Skimmer Schematic: Hyperdrive",42190,-1,-1,0,15531,0,0,14336,17,6361900,0,210387,0,0,0,0
+"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? without any other players in your party, before the release of the Midnight Pre-Patch.","Let Me Solo Her: Nexus-Princess Ky'veza","Reward: Delver's Mana-Skimmer Schematic: Hyperdrive",42190,-1,-1,0,15531,0,0,14336,17,6361900,0,210387,0,0,0,0
 "Buy six bank tabs.","Safer Deposit",,42191,-1,-1,0,92,0,10,0,139,4203076,0,210425,0,0,0,0
 "Proud owner of the 2025 Vintage Winter Veil gift, Jubilant Snowman Costume.","Snowball Fight!",,42192,-1,-1,0,15274,0,0,133120,85,133202,0,210430,0,0,0,0
 "Defeat Nexus-Princess Ky'veza in her lair before the release of the next season of delves.","My Stab-Happy Nemesis","Reward: Hal'hadar's Phasebound Visor",42193,-1,-1,0,15531,0,0,14336,9,6218232,0,210434,0,0,0,0
@@ -12432,12 +12432,12 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Monk class Order Campaign.","The Grandmaster's Campaign","Decor Reward: Monastery Gong",42275,-1,-1,0,15304,0,5,132096,9,627608,0,211082,0,0,0,0
 "Complete the Paladin class Order Campaign.","The Highlord's Campaign","Decor Reward: Sanctum of Light Candelabra",42276,-1,-1,0,15304,0,5,132096,10,4726195,0,211084,0,0,0,0
 "Complete the Priest class Order Campaign.","The High Priest's Campaign","Decor Reward: Scroll of the Conclave",42277,-1,-1,0,15304,0,5,132096,11,1060983,0,211086,0,0,0,0
-"Complete the following questlines alongside the Legends of the Haranir.","The Empty Cradle",,42278,-1,-1,0,15547,0,10,0,20,2967109,0,211098,0,0,0,0
+"Complete the following questlines alongside the Legends of the Haranir.","The Empty Cradle",,42278,-1,-1,0,15547,0,10,0,21,2967109,0,211098,0,0,0,0
 "Complete the Rogue class Order Campaign.","The Shadowblade's Campaign","Decor Reward: Uncrowned Market Stall",42279,-1,-1,0,15304,0,5,132096,12,1373907,0,211088,0,0,0,0
 "Complete the Shaman class Order Campaign.","The Farseer's Campaign","Decor Reward: Maelstrom Lava Lamp",42280,-1,-1,0,15304,0,5,132096,13,538566,0,211090,0,0,0,0
 "Complete the Warlock class Order Campaign.","The Netherlord's Campaign","Decor Reward: Dreadscar Dais",42281,-1,-1,0,15304,0,5,132096,14,626007,0,211092,0,0,0,0
 "Complete the Warrior class Order Campaign.","The Battlelord's Campaign","Decor Reward: Valarjar Shield Wall",42282,-1,-1,0,15304,0,5,132096,15,1394957,0,211094,0,0,0,0
-"Complete the Abundance achievements listed below.","Abundance: Azeroth Runs on Dundun","Reward: Unlock Dundun's Abundant Travel Method for purchase.",42283,-1,-1,0,15553,0,10,0,50,538536,0,221301,0,0,0,0
+"Complete the Abundance achievements listed below.","Abundance: Azeroth Runs on Dundun","Reward: Unlock Dundun's Abundant Travel Method for purchase.",42283,-1,-1,0,15553,0,10,0,51,538536,0,221301,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Death Knight.","Hidden Potential of the Deathlord","Decor Reward: Replica Acherus Soul Forge",42287,-1,-1,0,15304,0,5,132096,57,236348,0,211278,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Demon Hunter.","Hidden Potential of the Slayer","Decor Reward: Replica Cursed Forge of the Nathrezim",42288,-1,-1,0,15304,0,5,132096,58,236348,0,211282,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Druid.","Hidden Potential of the Archdruid","Decor Reward: Seed of Ages Cutting",42289,-1,-1,0,15304,0,5,132096,59,236348,0,211285,0,0,0,0
@@ -12515,7 +12515,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the following group activities in Suramar.","Looking for Group: Suramar","Bronze Cache",42551,-1,-1,0,15604,0,0,132096,185,1409002,0,211814,0,0,0,0
 "Complete the Highmountain storylines listed below with a Timerunner.","Campaign: Highmountain","Reward: Perfected Epoch Memento",42552,-1,-1,0,15604,0,0,132096,127,1409000,0,212889,0,0,0,0
 "Defeat the following enemies in The Nighthold on Raid Finder difficulty.","Raid Finder: The Nighthold","Lesser Bronze Cache",42553,-1,-1,0,15604,0,0,132096,100,1413853,0,211906,0,0,0,0
-,"Midnight Tier 1 delves completed",,61779,-1,-1,0,15572,0,0,1048577,13,136243,0,220702,0,0,0,0
+,"Midnight companion levels obtained",,61778,-1,-1,0,15572,0,0,1048577,12,136243,0,220678,0,0,0,0
 "Defeat the following enemies in Antorus the Burning Throne on Raid Finder difficulty.","Raid Finder: Antorus the Burning Throne","Lesser Bronze Cache",42554,-1,-1,0,15604,0,0,132096,175,1711341,0,215539,0,0,0,0
 "Complete 100 world quests across the Broken Isles with a Timerunner.","Broken Isles World Quests IV","+1 Infinite Knowledge",42555,-1,-1,42570,15604,0,0,132096,205,4622478,0,215389,0,0,0,0
 "Defeat the following enemies in Trial of Valor on Raid Finder difficulty.","Raid Finder: Trial of Valor","Lesser Bronze Cache",42558,-1,-1,0,15604,0,0,132096,76,1530373,0,211894,0,0,0,0
@@ -12755,7 +12755,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Pressed the Small Red Button 10 times and lived to tell the tale.","Pushing My Buttons",,60888,-1,-1,0,15492,0,0,0,7,6383525,0,212776,0,0,0,0
 "Experience the mysteries of K'aresh by completing the achievements below.","Unraveled and Persevering",,60889,-1,-1,0,15521,0,20,393216,14,6921878,0,213815,0,0,0,0
 "Discover the following lore objects in K'aresh.","Secrets of the K'areshi",,60890,-1,-1,0,15521,0,10,131072,4,1723993,0,213822,0,0,0,0
-"Complete storylines involving Valeera Sanguinar listed below.","The Crimson Rogue",,60891,-1,-1,0,15547,0,10,0,21,236439,0,213866,0,0,0,0
+"Complete storylines involving Valeera Sanguinar listed below.","The Crimson Rogue",,60891,-1,-1,0,15547,0,10,0,22,236439,0,213866,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 2 [DNT]",,60915,-1,-1,0,81,0,0,3276804,9,136243,0,213955,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 3 [DNT]",,60916,-1,-1,0,81,0,0,3276804,10,136243,0,213957,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 4 [DNT]",,60917,-1,-1,0,81,0,0,3276804,11,136243,0,213959,0,0,0,0
@@ -12859,7 +12859,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the following trainers of Eastern Kingdoms with a team of all level 25 Elemental pets.","Elemental Battler of Eastern Kingdoms",,61033,-1,-1,0,15119,0,5,131072,125,618975,0,214914,0,0,0,0
 "Defeat the following trainers of Eastern Kingdoms with a team of all level 25 Elemental pets.","Flying Battler of Eastern Kingdoms",,61034,-1,-1,0,15119,0,5,131072,126,618976,0,214927,0,0,0,0
 "Defeat the following trainers of Eastern Kingdoms with a team of all level 25 Humanoid pets.","Humanoid Battler of Eastern Kingdoms",,61035,-1,-1,0,15119,0,5,131072,127,618977,0,214940,0,0,0,0
-,"Midnight Tier 2 delves completed",,61780,-1,-1,0,15572,0,0,1048577,14,136243,0,220704,0,0,0,0
+,"Midnight Tier 1 delves completed",,61779,-1,-1,0,15572,0,0,1048577,13,136243,0,220702,0,0,0,0
 "Defeat the following trainers of Eastern Kingdoms with a team of all level 25 Magic pets.","Magic Battler of Eastern Kingdoms",,61036,-1,-1,0,15119,0,5,131072,128,618978,0,214953,0,0,0,0
 "Defeat the following trainers of Eastern Kingdoms with a team of all level 25 Mechanical pets.","Mechanical Battler of Eastern Kingdoms",,61037,-1,-1,0,15119,0,5,131072,129,618979,0,214966,0,0,0,0
 "Complete the following achievements.","Family Battler of Eastern Kingdoms","Pet: Byrn",61040,-1,-1,0,15119,0,10,135168,163,655853,205017,215009,0,0,0,0
@@ -12913,7 +12913,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Reach level 80 with a Priest in Legion: Remix.","Timerunner: Priest","Mount: High Priest's Felscorned Seeker",61088,-1,-1,0,15604,0,0,132096,88,4622478,0,215860,0,0,0,0
 "Reach level 80 with a Mage in Legion: Remix.","Timerunner: Mage","Mount: Archmage's Felscorned Disc",61089,-1,-1,0,15604,0,0,132096,96,4622478,0,215854,0,0,0,0
 "Reach level 80 with a Warlock in Legion: Remix.","Timerunner: Warlock","Mount: Felscorned Netherlord's Dreadsteed",61090,-1,-1,0,15604,0,0,132096,101,4622478,0,215857,0,0,0,0
-"Catch every wild pet in Eversong, Zul'Aman, Rootlands, and Voidstorm.","Midnight Safari","Pet: Do, child of Filo",61091,-1,-1,0,15118,0,5,131072,56,2205238,0,215908,0,0,0,0
+"Collect every wild pet in Eversong Woods, Zul'Aman, Harandar, and Voidstorm.","Midnight Safari","Pet: Do, child of Filo",61091,-1,-1,0,15118,0,5,131072,56,2205238,0,215908,0,0,0,0
 "Defeat So'leah in Tazavesh, the Veiled Market on Hard Mode during The War Within Season 3.","Hard Mode: Tazavesh, the Veiled Market",,61092,-1,-1,0,15272,0,0,2048,181,4062727,0,215930,0,0,0,0
 "Within a single lockout, defeat all bosses in Tazavesh, the Veiled Market without any player dying on Hard Mode during The War Within Season 3.","Flawless Transaction",,61093,-1,-1,0,15272,0,0,2048,182,413573,0,215932,0,0,0,0
 "Complete the following achievements.","Old World Family Battler","Reward: Magical Pet Clicker",61094,-1,-1,0,15119,0,10,135168,165,643856,0,215934,0,0,0,0
@@ -12959,11 +12959,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Degentrius kills (Heroic Magisters' Terrace)",,61216,2811,-1,0,15542,0,0,1,5,7439625,0,216268,0,0,0,0
 ,"Degentrius kills (Mythic Magisters' Terrace)",,61217,2811,-1,0,15542,0,0,1,6,7439625,0,216270,0,0,0,0
 "Earn Exalted status with the Wardens with a Timerunner.","The Wardens","Bronze Cache, Decor Reward: Sentinel's Moonwing Gaze",61218,-1,-1,0,15604,0,0,132096,54,1394958,0,216308,0,0,0,0
-"Complete the Harandar world quest ""Claw Enforcement"" while having 15 or more stacks of Predator's Pursuit.","No Time to Paws",,61219,-1,-1,0,15547,0,5,0,18,1817485,0,216348,0,0,0,0
+"Complete the Harandar world quest ""Claw Enforcement"" while having 15 or more stacks of Predator's Pursuit.","No Time to Paws",,61219,-1,-1,0,15547,0,5,0,19,1817485,0,216348,0,0,0,0
 "Earn 1000 honor in Eversong Woods while in War Mode.","Tour of Duty: Eversong Woods",,61221,-1,-1,0,15283,0,10,131072,19,236762,0,216356,0,0,0,0
-"Earn 1000 honor in Zul'Aman while in War Mode.","Tour of Duty: Zul'Aman",,61222,-1,-1,0,15283,0,10,131072,20,5770809,0,216359,0,0,0,0
-"Earn 1000 honor in Harandar while in War Mode.","Tour of Duty: Harandar",,61223,-1,-1,0,15283,0,10,131072,21,5770809,0,216363,0,0,0,0
-"Earn 1000 honor in Voidstorm while in War Mode.","Tour of Duty: Voidstorm",,61224,-1,-1,0,15283,0,10,131072,22,5770809,0,216361,0,0,0,0
+"Earn 1000 honor in Zul'Aman while in War Mode.","Tour of Duty: Zul'Aman",,61222,-1,-1,0,15283,0,10,131072,20,7488399,0,216359,0,0,0,0
+"Earn 1000 honor in Harandar while in War Mode.","Tour of Duty: Harandar",,61223,-1,-1,0,15283,0,10,131072,21,7385004,0,216363,0,0,0,0
+"Earn 1000 honor in Voidstorm while in War Mode.","Tour of Duty: Voidstorm",,61224,-1,-1,0,15283,0,10,131072,22,7507880,0,216361,0,0,0,0
 "Complete each of the following PvP World Quests in Midnight.","Investigating the Rise",,61225,-1,-1,0,15283,0,5,131072,17,5387169,0,216409,0,0,0,0
 "Complete each of the following World PvP World Quests in Midnight 10 times.",Uprising,,61226,-1,-1,61225,15283,0,5,131072,18,5387169,0,216420,0,0,0,0
 "Get 50 honorable kills in Slayer's Rise.","Entering the Void",,61227,-1,-1,0,15283,0,5,131072,16,1455893,0,216434,0,0,0,0
@@ -12972,39 +12972,38 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Collecting Remains Quest in Midnight 5 times.","Remains in the Rise",,61230,-1,-1,0,15283,0,5,131072,13,133728,0,216440,0,0,0,0
 "Open 5 War Supply Crates in Midnight while within War Mode.","Midnight Loot",,61231,-1,-1,0,15283,0,5,131072,12,132595,0,216442,0,0,0,0
 "Open 25 War Supply Crates in Midnight while within War Mode.","Midnight Treasures",,61232,-1,-1,61231,15283,0,10,131072,11,132595,0,216444,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 12 during Midnight Season One.","Midnight Season 1: Resilient Keystone 12","Keystones will no longer deplete below level 12 during Midnight Season 1.",61233,-1,-1,0,15272,0,0,2048,189,648754,0,216446,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 12 during Midnight Season One.","Midnight Season 1: Resilient Keystone 12","Keystones will no longer deplete below level 12 during Midnight Season 1.",61233,-1,-1,0,15272,0,0,2048,190,648754,0,216446,0,0,0,0
 "Loot a bounty from a slain player in each of the zones in Midnight while in War Mode.","Hunt in the Night",,61234,-1,-1,0,15283,0,10,131072,9,2125377,0,216473,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 13 during Midnight Season One.","Midnight Season 1: Resilient Keystone 13","Keystones will no longer deplete below level 13 during Midnight Season 1.",61235,-1,-1,0,15272,0,0,2048,190,648754,0,216455,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 14 during Midnight Season One.","Midnight Season 1: Resilient Keystone 14","Keystones will no longer deplete below level 14 during Midnight Season 1.",61236,-1,-1,0,15272,0,0,2048,191,648754,0,216464,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 15 during Midnight Season One.","Midnight Season 1: Resilient Keystone 15","Keystones will no longer deplete below level 15 during Midnight Season 1.",61237,-1,-1,0,15272,0,0,2048,192,648754,0,216478,0,0,0,0
-"Loot 20 bounty from slain players in Midnight while in War Mode.","Midnight Bounty",,61238,-1,-1,61234,15283,0,10,131072,10,2125377,0,216487,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 16 during Midnight Season One.","Midnight Season 1: Resilient Keystone 16","Keystones will no longer deplete below level 16 during Midnight Season 1.",61239,-1,-1,0,15272,0,0,2048,193,648754,0,216489,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 13 during Midnight Season One.","Midnight Season 1: Resilient Keystone 13","Keystones will no longer deplete below level 13 during Midnight Season 1.",61235,-1,-1,0,15272,0,0,2048,191,648754,0,216455,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 14 during Midnight Season One.","Midnight Season 1: Resilient Keystone 14","Keystones will no longer deplete below level 14 during Midnight Season 1.",61236,-1,-1,0,15272,0,0,2048,192,648754,0,216464,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 15 during Midnight Season One.","Midnight Season 1: Resilient Keystone 15","Keystones will no longer deplete below level 15 during Midnight Season 1.",61237,-1,-1,0,15272,0,0,2048,193,648754,0,216478,0,0,0,0
+"Loot 20 bounty from slain players in Midnight while in War Mode.","Midnight Bounty",,61238,-1,-1,0,15283,0,10,131072,10,2125377,0,216487,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 16 during Midnight Season One.","Midnight Season 1: Resilient Keystone 16","Keystones will no longer deplete below level 16 during Midnight Season 1.",61239,-1,-1,0,15272,0,0,2048,194,648754,0,216489,0,0,0,0
 "Open 10 Spectral Battle Chests in Slayer's Rise.","Spectral Stocker",,61266,-1,-1,61265,15283,0,5,131072,8,1542848,0,216675,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 17 during Midnight Season One.","Midnight Season 1: Resilient Keystone 17","Keystones will no longer deplete below level 17 during Midnight Season 1.",61240,-1,-1,0,15272,0,0,2048,194,648754,0,216498,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 18 during Midnight Season One.","Midnight Season 1: Resilient Keystone 18","Keystones will no longer deplete below level 18 during Midnight Season 1.",61241,-1,-1,0,15272,0,0,2048,195,648754,0,216507,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 19 during Midnight Season One.","Midnight Season 1: Resilient Keystone 19","Keystones will no longer deplete below level 19 during Midnight Season 1.",61242,-1,-1,0,15272,0,0,2048,196,648754,0,216516,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 20 during Midnight Season One.","Midnight Season 1: Resilient Keystone 20","Keystones will no longer deplete below level 20 during Midnight Season 1.",61243,-1,-1,0,15272,0,0,2048,197,648754,0,216525,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 21 during Midnight Season One.","Midnight Season 1: Resilient Keystone 21","Keystones will no longer deplete below level 21 during Midnight Season 1.",61244,-1,-1,0,15272,0,0,2048,198,648754,0,216534,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 22 during Midnight Season One.","Midnight Season 1: Resilient Keystone 22","Keystones will no longer deplete below level 22 during Midnight Season 1.",61245,-1,-1,0,15272,0,0,2048,199,648754,0,216543,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 23 during Midnight Season One.","Midnight Season 1: Resilient Keystone 23","Keystones will no longer deplete below level 23 during Midnight Season 1.",61246,-1,-1,0,15272,0,0,2048,200,648754,0,216552,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 24 during Midnight Season One.","Midnight Season 1: Resilient Keystone 24","Keystones will no longer deplete below level 24 during Midnight Season 1.",61247,-1,-1,0,15272,0,0,2048,201,648754,0,216561,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 25 during Midnight Season One.","Midnight Season 1: Resilient Keystone 25","Keystones will no longer deplete below level 25 during Midnight Season 1.",61248,-1,-1,0,15272,0,0,2048,202,648754,0,216570,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 26 during Midnight Season One.","Midnight Season 1: Resilient Keystone 26","Keystones will no longer deplete below level 26 during Midnight Season 1.",61249,-1,-1,0,15272,0,0,2048,203,648754,0,216579,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 27 during Midnight Season One.","Midnight Season 1: Resilient Keystone 27","Keystones will no longer deplete below level 27 during Midnight Season 1.",61250,-1,-1,0,15272,0,0,2048,204,648754,0,216588,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 28 during Midnight Season One.","Midnight Season 1: Resilient Keystone 28","Keystones will no longer deplete below level 28 during Midnight Season 1.",61251,-1,-1,0,15272,0,0,2048,205,648754,0,216597,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 29 during Midnight Season One.","Midnight Season 1: Resilient Keystone 29","Keystones will no longer deplete below level 29 during Midnight Season 1.",61252,-1,-1,0,15272,0,0,2048,206,648754,0,216606,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 30 during Midnight Season One.","Midnight Season 1: Resilient Keystone 30","Keystones will no longer deplete below level 30 during Midnight Season 1.",61253,-1,-1,0,15272,0,0,2048,207,648754,0,216615,0,0,0,0
-"Complete a Mythic+ dungeon within the time limit during Midnight Season One.","Midnight Keystone Explorer: Season One",,61254,-1,-1,0,15272,0,0,133120,183,618860,0,216624,0,0,0,0
-"Attain a Mythic+ Rating of at least 1500 during Midnight Season One.","Midnight Keystone Conqueror: Season One","Title: The Umbral",61255,-1,-1,61254,15272,0,0,133120,184,618860,0,216626,0,0,0,0
-"Attain a Mythic+ Rating of at least 2000 during Midnight Season One.","Midnight Keystone Master: Season One","Mount: Calamitous Carrion",61256,-1,-1,61255,15272,0,0,133120,185,618859,262620,216628,0,0,0,0
-"Attain a Mythic+ Rating of at least 2500 during Midnight Season One.","Midnight Keystone Hero: Season One",,61257,-1,-1,61256,15272,0,0,133120,186,648760,0,216630,0,0,0,0
-"Attain a Mythic+ Rating of at least 3000 during Midnight Season One.","Midnight Keystone Legend: Season One","Mount: Convalescent Carrion",61258,-1,-1,61257,15272,0,0,133120,187,648758,262621,216632,0,0,0,0
-"End Midnight Mythic+ Season 1 with a Mythic+ Rating in the top 0.1% of all players in your region.","Umbral Hero: Midnight Season One","Title: The Umbral Hero",61259,-1,-1,0,15272,0,0,14336,188,618859,0,216634,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 17 during Midnight Season One.","Midnight Season 1: Resilient Keystone 17","Keystones will no longer deplete below level 17 during Midnight Season 1.",61240,-1,-1,0,15272,0,0,2048,195,648754,0,216498,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 18 during Midnight Season One.","Midnight Season 1: Resilient Keystone 18","Keystones will no longer deplete below level 18 during Midnight Season 1.",61241,-1,-1,0,15272,0,0,2048,196,648754,0,216507,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 19 during Midnight Season One.","Midnight Season 1: Resilient Keystone 19","Keystones will no longer deplete below level 19 during Midnight Season 1.",61242,-1,-1,0,15272,0,0,2048,197,648754,0,216516,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 20 during Midnight Season One.","Midnight Season 1: Resilient Keystone 20","Keystones will no longer deplete below level 20 during Midnight Season 1.",61243,-1,-1,0,15272,0,0,2048,198,648754,0,216525,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 21 during Midnight Season One.","Midnight Season 1: Resilient Keystone 21","Keystones will no longer deplete below level 21 during Midnight Season 1.",61244,-1,-1,0,15272,0,0,2048,199,648754,0,216534,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 22 during Midnight Season One.","Midnight Season 1: Resilient Keystone 22","Keystones will no longer deplete below level 22 during Midnight Season 1.",61245,-1,-1,0,15272,0,0,2048,200,648754,0,216543,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 23 during Midnight Season One.","Midnight Season 1: Resilient Keystone 23","Keystones will no longer deplete below level 23 during Midnight Season 1.",61246,-1,-1,0,15272,0,0,2048,201,648754,0,216552,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 24 during Midnight Season One.","Midnight Season 1: Resilient Keystone 24","Keystones will no longer deplete below level 24 during Midnight Season 1.",61247,-1,-1,0,15272,0,0,2048,202,648754,0,216561,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 25 during Midnight Season One.","Midnight Season 1: Resilient Keystone 25","Keystones will no longer deplete below level 25 during Midnight Season 1.",61248,-1,-1,0,15272,0,0,2048,203,648754,0,216570,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 26 during Midnight Season One.","Midnight Season 1: Resilient Keystone 26","Keystones will no longer deplete below level 26 during Midnight Season 1.",61249,-1,-1,0,15272,0,0,2048,204,648754,0,216579,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 27 during Midnight Season One.","Midnight Season 1: Resilient Keystone 27","Keystones will no longer deplete below level 27 during Midnight Season 1.",61250,-1,-1,0,15272,0,0,2048,205,648754,0,216588,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 28 during Midnight Season One.","Midnight Season 1: Resilient Keystone 28","Keystones will no longer deplete below level 28 during Midnight Season 1.",61251,-1,-1,0,15272,0,0,2048,206,648754,0,216597,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 29 during Midnight Season One.","Midnight Season 1: Resilient Keystone 29","Keystones will no longer deplete below level 29 during Midnight Season 1.",61252,-1,-1,0,15272,0,0,2048,207,648754,0,216606,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 30 during Midnight Season One.","Midnight Season 1: Resilient Keystone 30","Keystones will no longer deplete below level 30 during Midnight Season 1.",61253,-1,-1,0,15272,0,0,2048,208,648754,0,216615,0,0,0,0
+"Complete a Mythic+ dungeon within the time limit during Midnight Season One.","Midnight Keystone Explorer: Season One",,61254,-1,-1,0,15272,0,0,133120,184,618860,0,216624,0,0,0,0
+"Attain a Mythic+ Rating of at least 1500 during Midnight Season One.","Midnight Keystone Conqueror: Season One","Title: The Umbral",61255,-1,-1,61254,15272,0,0,133120,185,618860,0,216626,0,0,0,0
+"Attain a Mythic+ Rating of at least 2000 during Midnight Season One.","Midnight Keystone Master: Season One","Mount: Calamitous Carrion",61256,-1,-1,61255,15272,0,0,133120,186,618859,262620,216628,0,0,0,0
+"Attain a Mythic+ Rating of at least 2500 during Midnight Season One.","Midnight Keystone Hero: Season One",,61257,-1,-1,61256,15272,0,0,133120,187,648760,0,216630,0,0,0,0
+"Attain a Mythic+ Rating of at least 3000 during Midnight Season One.","Midnight Keystone Legend: Season One","Mount: Convalescent Carrion",61258,-1,-1,61257,15272,0,0,133120,188,648758,262621,216632,0,0,0,0
+"End Midnight Mythic+ Season 1 with a Mythic+ Rating in the top 0.1% of all players in your region.","Umbral Hero: Midnight Season One","Title: The Umbral Hero",61259,-1,-1,0,15272,0,0,14336,189,618859,0,216634,0,0,0,0
 "Complete Windrunner Spire at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Windrunner Spire","Max Level Unlock: Teleport to Windrunner Spire",61262,2805,-1,0,15272,0,0,264192,58,7266215,0,216637,0,0,0,0
-"Discover the hidden treasures across Harandar.","Treasures of Harandar","Reward: Brilliant Petalwing",61263,-1,-1,0,15553,0,5,131072,21,1029751,252011,216639,0,0,0,0
-"Defeat all of the rare creatures found in Harandar.","Leaf None Behind",,61264,-1,-1,0,15553,0,10,131072,16,614747,0,216648,0,0,0,0
+"Discover the hidden treasures across Harandar.","Treasures of Harandar","Mount: Vivacious Chloroceros",61263,-1,-1,0,15553,0,5,131072,21,1029751,263579,216639,0,0,0,0
+"Defeat all of the rare creatures found in Harandar.","Leaf None Behind","Decor Reward: Lightbloom Moss Mound",61264,-1,-1,0,15553,0,10,131072,16,614747,0,216648,0,0,0,0
 "Open a Spectral Battle Chest in Slayer's Rise.","Spectral Capture",,61265,-1,-1,0,15283,0,5,131072,7,1542848,0,216673,0,0,0,0
-,"Twilight Crypts clears",,61775,-1,-1,0,15572,0,0,1,9,136243,0,220662,0,0,0,0
 "Complete Magisters' Terrace at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Magisters' Terrace","Max Level Unlock: Teleport to Magisters' Terrace",61267,2811,-1,0,15272,0,0,264192,59,134556,0,216680,0,0,0,0
 "Complete Nexus-Point Xenas at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Nexus-Point Xenas","Max Level Unlock: Teleport to Nexus-Point Xenas",61268,2915,-1,0,15272,0,0,264192,60,236323,0,216682,0,0,0,0
 "Complete Maisara Caverns at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Maisara Caverns","Max Level Unlock: Teleport to Maisara Caverns",61269,2874,-1,0,15272,0,0,264192,61,236323,0,216684,0,0,0,0
@@ -13092,7 +13091,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat one of the following Prey targets on Hard difficulty.","Prey: Hard Mode I",,61389,-1,-1,0,15605,0,10,131072,4,3565724,0,217786,0,0,0,0
 "Defeat 15 of the following Prey targets on Nightmare difficulty.","Prey: Nightmare Mode II",,61391,-1,-1,61392,15605,0,10,131072,8,3565724,0,217817,0,0,0,0
 "Defeat one of the following Prey targets on Nightmare difficulty.","Prey: Nightmare Mode I",,61392,-1,-1,0,15605,0,10,131072,7,3565724,0,217848,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways IV event.","Master of the Turbulent Timeways IV","Item: Ta'readon's Mount Voucher",61394,-1,-1,0,15454,0,20,131072,3,5199633,254694,217879,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways IV event.","Master of the Turbulent Timeways IV","Item: Ta'readon's Mount Voucher",61394,-1,-1,0,15454,0,20,132096,3,5199633,0,217879,0,0,0,0
 "Owner of Midnight Heroic Edition Lightwing Dragonhawk mount.","Heroic Edition: Lightwing Dragonhawk",,61401,-1,-1,0,15268,0,0,133120,93,6841375,0,218102,0,0,0,0
 "Owner of Midnight Epic Edition Voidlight Surger mount.","Epic Edition: Voidlight Surger",,61402,-1,-1,0,15268,0,0,133120,94,7135882,0,218104,0,0,0,0
 ,"Galactic Combatant",,61403,-1,0,0,15270,0,0,1179648,95,236538,257502,218116,0,0,0,0
@@ -13123,10 +13122,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win 25 Horde versus Alliance Slayer's Rise Events.","Customary Rise",,61449,-1,-1,61448,15283,0,10,131072,6,1455894,0,218406,0,0,0,0
 "Obtain the Galactic Gladiator's Goredrake from Midnight Season 1.","Galactic Gladiator's Goredrake",,61450,-1,-1,0,15269,1,0,145408,59,7388252,0,218469,0,0,0,0
 "Chase down the mysteries within (and without) Azeroth by completing the following achievements.",Worldsoul-Searching,"Mount Reward: Geargrinder Mk. 11; Decor Reward: Drained Dark Heart of Galakrond",61451,-1,-1,0,15301,0,100,230400,8,5770811,258188,218471,0,0,0,0
-"Complete the optional Zul'Aman storylines listed below.","Sojourner of Zul'Aman",,61452,-1,-1,0,15547,0,10,131072,15,7210235,0,218492,0,0,0,0
-"Complete all of the Zul'Aman achievements listed below.","Making an Amani Out of You",,61453,-1,-1,0,15553,0,25,131072,9,7127505,0,218513,0,0,0,0
+"Complete the optional Zul'Aman storylines listed below.","Sojourner of Zul'Aman",,61452,-1,-1,0,15547,0,10,131072,16,7210235,0,218492,0,0,0,0
+"Complete all of the Zul'Aman achievements listed below.","Making an Amani Out of You",,61453,-1,-1,0,15553,0,25,131072,8,7127505,0,218513,0,0,0,0
 "Defeat Chimaerus after plucking all Corrupted Feathers from Sergeant Quackers and rescuing him from the Aln in The Dreamrift on Normal difficulty or higher.","Falling Between The Quacks",,61454,2939,-1,0,15566,0,10,0,28,4048814,0,218528,0,0,0,0
-"Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,37,6119037,0,218534,0,0,0,0
+"Find all of the Shadowpine Songseekers in Zul'aman.","Shadowpine Scattered",,61455,-1,-1,0,15553,0,5,131072,38,6119037,0,218534,0,0,0,0
 ,"Die in Lordaeron or Undercity",,61456,-1,-1,0,15522,0,0,1048576,2,136243,0,218541,0,0,0,0
 "Complete the Sparks of War quest in Midnight 5 times.","Spark in the Night",,61464,-1,-1,0,15283,0,5,131072,2,132147,0,218749,0,0,0,0
 "Complete the Sparks of War quest in Midnight 20 times.","Spark in the Night",,61465,-1,-1,61464,15283,0,5,131072,3,132147,0,218754,0,0,0,0
@@ -13146,7 +13145,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Slayer's Rise battles","Slayer's Rise battles",,61494,727,-1,0,153,0,0,1,24,136243,0,219111,0,0,0,0
 "Slayer's Rise victories","Slayer's Rise victories",,61495,-1,-1,0,153,0,0,1,25,136243,0,219109,0,0,0,0
 "Complete the final chapter of the War Within campaign.","Ready for Midnight","Title: Azeroth's Vanguard",61498,-1,-1,0,15506,0,10,131072,65,1392543,0,219129,0,0,0,0
-"Complete the Midnight storylines listed below.","Allied Race: Haranir","Reward: Haranir Race Unlocked",61506,-1,-1,0,15547,0,0,131072,11,7448213,246736,219288,0,0,0,0
+"Complete the Midnight storylines listed below.","Allied Race: Haranir","Reward: Haranir Race Unlocked",61506,-1,-1,0,15547,0,0,131072,12,7448213,246736,219288,0,0,0,0
 "Defeat all of the rare creatures found in Eversong Woods.","A Bloody Song","Decor Reward: Silvermoon Energy Focus",61507,-1,-1,0,15553,0,10,131072,13,7214192,0,219307,0,0,0,0
 "Defeat Charonus in Voidscar Arena.","Voidscar Arena",,61508,2923,-1,0,15541,0,10,0,23,7439626,0,219323,0,0,0,0
 "Defeat Charonus in Voidscar Arena on Heroic difficulty or higher.","Heroic: Voidscar Arena",,61509,2923,-1,61508,15541,0,10,0,24,7439626,0,219325,0,0,0,0
@@ -13172,7 +13171,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect the Skyriding Glyph at Shadebasin Watch in Zul'Aman.","Skyriding Glyphs: Shadebasin Watch",,61532,-1,-1,0,15462,0,0,1179648,1841,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Temple of Akil'zon in Zul'Aman.","Skyriding Glyphs: Temple of Akil'zon",,61533,-1,-1,0,15462,0,0,1179648,1842,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Temple of Jan'alai in Zul'Aman.","Skyriding Glyphs: Temple of Jan'alai",,61534,-1,-1,0,15462,0,0,1179648,1843,5926319,0,0,0,0,0,0
-,"The Darkway clears",,61776,-1,-1,0,15572,0,0,1,10,136243,0,220660,0,0,0,0
+,"Twilight Crypts clears",,61775,-1,-1,0,15572,0,0,1,9,136243,0,220662,0,0,0,0
 "Collect the Skyriding Glyph at Strait of Hexx'alor in Zul'Aman.","Skyriding Glyphs: Strait of Hexx'alor",,61535,-1,-1,0,15462,0,0,1179648,1844,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Witherbark Bluffs in Zul'Aman.","Skyriding Glyphs: Witherbark Bluffs",,61536,-1,-1,0,15462,0,0,1179648,1845,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Nalorakk's Prowl in Zul'Aman.","Skyriding Glyphs: Nalorakk's Prowl",,61537,-1,-1,0,15462,0,0,1179648,1846,5926319,0,0,0,0,0,0
@@ -13200,14 +13199,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect the Skyriding Glyph at the Gorging Pit in Voidstorm.","Skyriding Glyphs: The Gorging Pit",,61559,-1,-1,0,15462,0,0,1179648,1866,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Shadowguard Point in Voidstorm.","Skyriding Glyphs: Shadowguard Point",,61560,-1,-1,0,15462,0,0,1179648,1867,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Obscurion Citadel in Voidstorm.","Skyriding Glyphs: Obscurion Citadel",,61561,-1,-1,0,15462,0,0,1179648,1868,5926319,0,0,0,0,0,0
-"Collect the Skyriding Glyph at Master's Perch in Voidstorm.","Skyriding Glyphs: Master's Perch",,61562,-1,-1,0,15462,0,0,1179648,1869,5926319,0,0,0,0,0,0
+"Collect the Skyriding Glyph at Masters' Perch in Voidstorm.","Skyriding Glyphs: Masters' Perch",,61562,-1,-1,0,15462,0,0,1179648,1869,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Ethereum Refinery in Voidstorm.","Skyriding Glyphs: Ethereum Refinery",,61563,-1,-1,0,15462,0,0,1179648,1870,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at Hanaar Outpost in Voidstorm.","Skyriding Glyphs: Hanaar Outpost",,61564,-1,-1,0,15462,0,0,1179648,1871,5926319,0,0,0,0,0,0
 "Complete the War Within Heroic dungeon achievements listed below.","War Within Dungeon Hero","Pet: Moss Skipper",61565,-1,-1,0,168,0,20,131072,61,5832952,221492,219474,0,0,0,0
 "Complete the War Within Mythic dungeon achievements listed below.","Glory of the War Within Hero",,61566,-1,-1,0,168,0,25,131072,62,5530986,0,219485,0,0,0,0
 "Complete the Midnight Heroic dungeon achievements listed below.","Midnight Dungeon Hero","Pet: Niblet",61567,-1,-1,0,168,0,20,131072,66,7431982,240840,219496,0,0,0,0
 "Complete the Midnight Mythic dungeon achievements listed below.","Glory of the Midnight Hero",,61568,-1,-1,0,168,0,25,131072,67,7427980,0,219501,0,0,0,0
-"Learn the story of all of the Legends of the Haranir relics listed below.","Legends Never Die","Decor Reward: ""On'ohia's Call""",61574,-1,-1,0,15547,0,10,132096,13,7491037,0,219529,0,0,0,0
+"Learn the story of all of the Legends of the Haranir relics listed below.","Legends Never Die","Decor Reward: ""On'ohia's Call""",61574,-1,-1,0,15547,0,10,132096,14,7491037,0,219529,0,0,0,0
 "Discover the following Skyriding Glyphs in Eversong Woods:","Eversong Woods Glyph Hunter",,61576,-1,-1,0,15462,0,10,131072,1834,5926319,0,219517,0,0,0,0
 "Discover the following Skyriding Glyphs in Zul'Aman:","Zul'Aman Glyph Hunter",,61581,-1,-1,0,15462,0,10,131072,1835,5926319,0,219539,0,0,0,0
 "Discover the following Skyriding Glyphs in Harandar:","Harandar Glyph Hunter",,61582,-1,-1,0,15462,0,10,131072,1836,5926319,0,219551,0,0,0,0
@@ -13215,14 +13214,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the following Glyph Hunter achievements in Midnight:","Midnight Glyph Hunter","Mount: Crimson Dragonhawk",61584,-1,-1,0,15462,0,20,131072,34,5926319,257145,219573,0,0,0,0
 "Rescued Kasreth's experimental pet, Gortham, from the pipes of Nexus Point Xenas.","You Conduit!",,61585,-1,-1,0,15274,1,0,2048,3,7137527,0,219580,0,0,0,0
 "Collect any armor set from Midnight PvP Season 1.","Galactic Gala",,61586,-1,-1,0,15259,0,10,131072,94,7388205,0,219608,0,0,0,0
-"Attain a region-best keystone dungeon completion for Magisters' Terrace (Midnight).","Keystone Victor: Magisters' Terrace (Midnight)",,61587,-1,-1,0,15272,0,0,6144,208,7439625,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Maisara Caverns.","Keystone Victor: Maisara Caverns",,61588,-1,-1,0,15272,0,0,6144,209,7322719,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Nexus-Point Xenas.","Keystone Victor: Nexus-Point Xenas",,61589,-1,-1,0,15272,0,0,6144,210,7439626,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Windrunner Spire.","Keystone Victor: Windrunner Spire",,61590,-1,-1,0,15272,0,0,6144,211,7266215,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Algeth'ar Academy.","Keystone Victor: Algeth'ar Academy",,61591,-1,-1,0,15272,0,0,6144,212,4578414,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Pit of Saron.","Keystone Victor: Pit of Saron",,61592,-1,-1,0,15272,0,0,6144,213,343641,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Seat of the Triumvirate.","Keystone Victor: Seat of the Triumvirate",,61593,-1,-1,0,15272,0,0,6144,214,1711340,0,0,0,0,0,0
-"Attain a region-best keystone dungeon completion for Skyreach.","Keystone Victor: Skyreach",,61594,-1,-1,0,15272,0,0,6144,215,1002596,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Magisters' Terrace (Midnight).","Keystone Victor: Magisters' Terrace (Midnight)",,61587,-1,-1,0,15272,0,0,6144,209,7439625,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Maisara Caverns.","Keystone Victor: Maisara Caverns",,61588,-1,-1,0,15272,0,0,6144,210,7322719,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Nexus-Point Xenas.","Keystone Victor: Nexus-Point Xenas",,61589,-1,-1,0,15272,0,0,6144,211,7439626,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Windrunner Spire.","Keystone Victor: Windrunner Spire",,61590,-1,-1,0,15272,0,0,6144,212,7266215,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Algeth'ar Academy.","Keystone Victor: Algeth'ar Academy",,61591,-1,-1,0,15272,0,0,6144,213,4578414,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Pit of Saron.","Keystone Victor: Pit of Saron",,61592,-1,-1,0,15272,0,0,6144,214,343641,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Seat of the Triumvirate.","Keystone Victor: Seat of the Triumvirate",,61593,-1,-1,0,15272,0,0,6144,215,1711340,0,0,0,0,0,0
+"Attain a region-best keystone dungeon completion for Skyreach.","Keystone Victor: Skyreach",,61594,-1,-1,0,15272,0,0,6144,216,1002596,0,0,0,0,0,0
 "Defeat Ki'katal the Harvester in Ara-Kara, City of Echoes on Mythic difficulty while in a guild group.","Mythic: Ara-Kara, City of Echoes Guild Run",,61595,2660,-1,0,15528,0,10,49152,1,5899326,0,219667,0,0,0,0
 "Defeat Goldie Baronbottom in Cinderbrew Meadery on Mythic difficulty while in a guild group.","Mythic: Cinderbew Meadery Guild Run",,61596,2661,-1,0,15528,0,10,49152,2,5899327,0,219669,0,0,0,0
 "Defeat Izo, the Grand Splicer in City of Threads on Mythic difficulty while in a guild group.","Mythic: City of Threads Guild Run",,61597,2669,-1,0,15528,0,10,49152,3,5899328,0,219671,0,0,0,0
@@ -13250,7 +13249,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Ziekket in The Blinding Vale on Mythic difficulty while in a guild group.","Mythic: The Blinding Vale Guild Run",,61619,2859,-1,0,15569,0,10,49152,6,7354408,0,219727,0,0,0,0
 "Defeat Charonus in Voidscar Arena on Mythic difficulty while in a guild group.","Mythic: Voidscar Arena Guild Run",,61620,2923,-1,0,15569,0,10,49152,7,7439626,0,219729,0,0,0,0
 "Defeat The Restless Heart in Windrunner Spire on Mythic difficulty while in a guild group.","Mythic: Windrunner Spire Guild Run",,61621,2805,-1,0,15569,0,10,49152,8,7266215,0,219731,0,0,0,0
-"Among the first two hundred guilds worldwide to defeat Crown of the Cosmos on Mythic difficulty.","Hall of Fame: Crown of the Cosmos","Title: Famed Slayer of the VoidspireRaid",61622,2912,-1,0,15093,0,0,4258304,52,7448205,0,219733,0,0,0,0
+"Among the first two hundred guilds worldwide to defeat Crown of the Cosmos on Mythic difficulty.","Hall of Fame: Crown of the Cosmos","Title: Famed Slayer of the Voidspire",61622,2912,-1,0,15093,0,0,4258304,52,7448205,0,219733,0,0,0,0
 "Among the first two hundred guilds worldwide to defeat Midnight Falls on Mythic difficulty.","Hall of Fame: Midnight Falls","Title: Famed Slayer of the Dark Naaru",61623,2913,-1,0,15093,0,0,4258304,54,7448204,0,219735,0,0,0,0
 "Defeat Crown of the Cosmos in The Voidspire on Heroic difficulty or higher, before the release of the next raid tier.","Ahead of the Curve: Crown of the Cosmos",,61624,2912,-1,0,15271,0,0,6144,95,7448205,0,219737,0,0,0,0
 "Defeat Crown of the Cosmos in The Voidspire on Mythic difficulty, before the release of the next raid tier.","Cutting Edge: Crown of the Cosmos",,61625,2912,-1,61624,15271,0,0,6144,96,7448205,0,219739,0,0,0,0
@@ -13285,7 +13284,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Ziekket kills (Mythic The Blinding Vale)",,61661,2859,-1,0,15542,0,0,1,18,7354408,0,219901,0,0,0,0
 "Equip a Superior or better item, with a minimum item level of 220, in every slot.","Midnight Superior",,61678,-1,-1,0,92,0,10,0,51,135865,0,219904,0,0,0,0
 "Equip an Epic or better item, with a minimum item level of 233, in every slot.","Midnight Epic",,61679,-1,-1,0,92,0,10,0,52,132885,0,219920,0,0,0,0
-"Harvest a total lifetime amount of 1,000,000 Abundance.","Abundance: You Should See Him in a Crown","Reward: The Loa of Abundance gains a crown.",61681,-1,-1,0,15553,0,10,131072,69,1670851,0,223076,0,0,0,0
+"Harvest a total lifetime amount of 1,000,000 Abundance.","Abundance: You Should See Him in a Crown","Reward: The Loa of Abundance gains a crown.",61681,-1,-1,0,15553,0,10,131072,70,1670851,0,223076,0,0,0,0
 "Participate in 5 instanced PvP matches.","Entering Battle","Decor Reward: Berserker's Empowerment",61683,-1,-1,0,95,1,5,132096,45,132147,0,220209,0,0,0,0
 "Participate in 20 instanced PvP matches.","Progressing in Battle","Decor Reward: Guardian's Empowerment",61684,-1,-1,61683,95,1,5,132096,46,132147,0,220211,0,0,0,0
 "Participate in 50 instanced PvP matches.","Proficient in Battle","Decor Reward: Chaotic Empowerment",61685,-1,-1,61684,95,1,5,132096,47,132147,0,220213,0,0,0,0
@@ -13297,7 +13296,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Midnight delves listed below on Tier 4 or higher with lives remaining.","Delver of the Depths II: Midnight",,61708,-1,-1,61707,15571,0,10,143360,7,1786405,0,220443,0,0,0,0
 "Complete the Midnight delves listed below on Tier 8 or higher with lives remaining.","Delver of the Depths III: Midnight",,61709,-1,-1,61708,15571,0,25,143360,8,1786405,0,220432,0,0,0,0
 "Complete the Midnight delves listed below on Tier 11 with lives remaining.","Delver of the Depths IV: Midnight",,61710,-1,-1,61709,15571,0,25,131072,9,1786405,0,220421,0,0,0,0
-,"Torment's Rise clears",,61777,-1,-1,0,15572,0,0,1,11,136243,0,220656,0,0,0,0
+,"The Darkway clears",,61776,-1,-1,0,15572,0,0,1,10,136243,0,220660,0,0,0,0
 "Complete every Midnight delve on Tier 4 or higher with lives remaining as a damage dealer.","Midnight Delver Damage Dealer",,61711,-1,-1,0,15571,0,10,131072,10,135989,0,220457,0,0,0,0
 "Complete every Midnight delve on Tier 8 or higher with lives remaining as a damage dealer.","Midnight Delver Damage Dealer II",,61712,-1,-1,61711,15571,0,10,131072,11,135846,0,220468,0,0,0,0
 "Complete every Midnight delve on Tier 11 with lives remaining as a damage dealer.","Midnight Delver Damage Dealer III",,61713,-1,-1,61712,15571,0,25,131072,12,135845,0,220479,0,0,0,0
@@ -13322,7 +13321,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete each story variant of Sunkiller Sanctum.","Sunkiller Sanctum Stories",,61732,-1,-1,0,15571,0,5,131072,32,7137506,0,220596,0,0,0,0
 "Complete each story variant of Shadowguard Point.","Shadowguard Point Stories",,61733,-1,-1,0,15571,0,5,131072,33,6999168,0,220592,0,0,0,0
 "Reach level 90 and complete the Midnight main story campaign on your Warband.","Midnight Delves: Endgame","Unlock: Tier 4 delves in Midnight",61734,-1,-1,61836,15571,0,10,131072,5,6025441,0,220604,0,0,0,0
-"Complete the optional Harandar storylines listed below.","Sojourner of Harandar",,61739,-1,-1,0,15547,0,10,131072,17,7505704,0,220633,0,0,0,0
+"Complete the optional Harandar storylines listed below.","Sojourner of Harandar",,61739,-1,-1,0,15547,0,10,131072,18,7505704,0,220633,0,0,0,0
 "Complete the War Within delve achievements listed below.","Delve Loremaster: Midnight",,61741,-1,-1,0,15571,0,25,131072,34,645218,0,220622,0,0,0,0
 ,"Parhelion Plaza clears",,61767,-1,-1,0,15572,0,0,1,1,136243,0,220658,0,0,0,0
 ,"Sunkiller Sanctum clears",,61768,-1,-1,0,15572,0,0,1,2,136243,0,220676,0,0,0,0
@@ -13332,6 +13331,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"The Grudge Pit clears",,61772,-1,-1,0,15572,0,0,1,6,136243,0,220672,0,0,0,0
 ,"The Gulf of Memory clears",,61773,-1,-1,0,15572,0,0,1,7,136243,0,220668,0,0,0,0
 ,"The Shadow Enclave clears",,61774,-1,-1,0,15572,0,0,1,8,136243,0,220664,0,0,0,0
+,"Midnight Tier 2 delves completed",,61780,-1,-1,0,15572,0,0,1048577,14,136243,0,220704,0,0,0,0
 ,"Midnight Tier 3 delves completed",,61781,-1,-1,0,15572,0,0,1048577,15,136243,0,220706,0,0,0,0
 ,"Midnight Tier 4 delves completed",,61782,-1,-1,0,15572,0,0,1048577,16,136243,0,220708,0,0,0,0
 ,"Midnight Tier 5 delves completed",,61783,-1,-1,0,15572,0,0,1048577,17,136243,0,220710,0,0,0,0
@@ -13350,7 +13350,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete a Tier 4 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 4 (Season 1)","Unlock: Tier 5 delves in Midnight Season 1",61800,-1,-1,0,15531,0,0,133120,53,6025441,0,220737,0,0,0,0
 "Complete a Tier 5 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in Midnight Season 1",61801,-1,-1,61800,15531,0,0,133120,54,6025441,0,220751,0,0,0,0
 "Complete a Tier 6 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61802,-1,-1,61801,15531,0,0,133120,55,6025441,0,220739,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,56,6025441,0,220741,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,56,6025441,0,220741,0,0,0,0
 "Complete a Tier 8 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in Midnight Season 1",61804,-1,-1,61803,15531,0,0,133120,57,6025441,0,220743,0,0,0,0
 "Complete a Tier 9 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in Midnight Season 1",61805,-1,-1,61804,15531,0,0,133120,58,6025441,0,220745,0,0,0,0
 "Complete a Tier 10 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in Midnight Season 1",61806,-1,-1,61805,15531,0,0,133120,59,6025441,0,220747,0,0,0,0
@@ -13360,10 +13360,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete a Tier 1 delve.","Midnight Delves: Tier 1","Unlock: Tier 2 delves in Midnight",61832,-1,-1,0,15571,0,10,131072,2,6025441,0,220765,0,0,0,0
 "Complete a Tier 2 delve.","Midnight Delves: Tier 2","Unlock: Tier 3 delves in Midnight",61835,-1,-1,61832,15571,0,10,131072,3,6025441,0,220767,0,0,0,0
 "Complete a Tier 3 delve.","Midnight Delves: Tier 3",,61836,-1,-1,61835,15571,0,10,131072,4,6025441,0,220769,0,0,0,0
-"Complete the Midnight achievements listed below.","Midnight Pathfinder","Reward: Steady Flight unlocked within Midnight, Finery Funds",61839,-1,-1,0,15553,0,10,2229248,36,237386,0,220771,0,0,0,0
+"Complete the Midnight achievements listed below.","Midnight Pathfinder","Reward: Steady Flight unlocked within Midnight, Finery Funds",61839,-1,-1,0,15553,0,10,2229248,37,237386,0,220771,0,0,0,0
 "Collect the appearances of a class set from Midnight Season 1.",Quel'Dressed,,61843,-1,-1,0,15259,0,10,0,58,7454100,0,220775,0,0,0,0
 "Explore the Lands of Midnight.","The Midnight Explorer",,61854,-1,-1,0,97,0,10,131072,13,7488399,0,220789,0,0,0,0
-"Get killed by a Fungal Strider.","""Hold aggro, I got this""",,61917,-1,-1,0,81,0,0,133120,2,464342,0,221182,0,0,0,0
 "Explore Eversong Woods, revealing the covered areas of the world map.","Explore Eversong Woods",,61855,-1,-1,0,15553,0,10,131072,3,7578704,0,220791,0,0,0,0
 "Explore Zul'Aman, revealing the covered areas of the world map.","Explore Zul'Aman",,61856,-1,-1,0,15553,0,10,131072,4,7578705,0,220793,0,0,0,0
 "Explore Voidstorm, revealing the covered areas of the world map.","Explore Voidstorm",,61857,-1,-1,0,15553,0,10,0,6,7385004,0,220795,0,0,0,0
@@ -13373,7 +13372,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Chase an Opportunistic Harrower back to its nest in Voidstorm.","Oh, No You Don't!",,61861,-1,-1,0,15553,0,5,131072,27,7388254,0,220856,0,0,0,0
 ,"<DNT> Brewgarden Tutorial Completed",,61862,-1,-1,0,162,0,0,3276804,13,136243,0,220858,0,0,0,0
 "Find and open all Sturdy Chests hidden in Atal'Aman.","Atal'Aman Discoveries",,61863,-1,-1,0,15571,0,5,131200,35,4203076,0,220861,0,0,0,0
-"Complete the optional Voidstorm storylines listed below.","Sojourner of Voidstorm",,61864,-1,-1,0,15547,0,10,131072,16,7448210,0,220881,0,0,0,0
+"Complete the optional Voidstorm storylines listed below.","Sojourner of Voidstorm",,61864,-1,-1,0,15547,0,10,131072,17,7448210,0,220881,0,0,0,0
 "As a Tank, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 3.","The Unbound Tank",,61874,-1,-1,0,15272,0,0,131072,150,134951,0,220898,0,0,0,0
 "As a Healer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 3.","The Unbound Healer",,61875,-1,-1,0,15272,0,0,131072,152,648207,0,220907,0,0,0,0
 "As a Damage Dealer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 3.","The Unbound Damage Dealer",,61876,-1,-1,0,15272,0,0,131072,155,132147,0,220916,0,0,0,0
@@ -13390,35 +13389,36 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Find and open all Sturdy Chests hidden in Shadowguard Point.","Shadowguard Point Discoveries",,61900,-1,-1,0,15571,0,5,131200,44,4203076,0,221038,0,0,0,0
 "Find and open all Sturdy Chests hidden throughout Midnight delves.","Midnight: Leave No Treasure Unfound","Title: Treasure Seeker",61901,-1,-1,0,15571,0,25,131072,45,4203076,0,221058,0,0,0,0
 "Complete the Midnight delve achievements listed below.","Glory of the Midnight Delver","Mount: Giganto Manis",61906,-1,-1,0,15571,0,25,143360,46,6025441,257199,221069,0,0,0,0
-"Complete the storylines involving King Mrgl-Mrgl in Borean Tundra, Highmountain, and Zul'Aman.","Mrglgrgl of Grglmrgl",,61910,-1,-1,0,15547,0,5,131072,10,134169,0,221077,0,0,0,0
+"Complete the storylines involving King Mrgl-Mrgl in Borean Tundra, Highmountain, and Zul'Aman.","Mrglgrgl of Grglmrgl",,61910,-1,-1,0,15547,0,5,131072,11,134169,0,221077,0,0,0,0
 "Defeat Vaelgor & Ezzorak after all players break each Nullzone's tethers within 3 seconds in The Voidspire on Normal difficulty or higher.","Ready, Set, Snap!",,61911,2912,-1,0,15566,0,10,0,25,615099,0,221094,0,0,0,0
 "Construct one of each of the following defenses for the Stormarion Assault.","Anchoring the Defense",,61912,-1,-1,0,15553,0,5,0,22,7431083,0,221137,0,0,0,0
 "Complete all three waves of the Stormarion Assault.","A Singular Problem",,61913,-1,-1,0,15553,0,10,0,23,3610524,0,221142,0,0,0,0
-"Complete the Rage of the Ren'dorei storyline.","Rage of the Ren'dorei","Reward: Void Elf Demon Hunter Unlocked",61916,-1,-1,0,15547,0,10,131072,9,1305156,0,221170,0,0,0,0
+"Complete the Rage of the Ren'dorei storyline.","Rage of the Ren'dorei","Reward: Void Elf Demon Hunter Unlocked",61916,-1,-1,0,15547,0,10,131072,10,1305156,0,221170,0,0,0,0
+"Get killed by a Fungal Strider.","""Hold aggro, I got this""",,61917,-1,-1,0,81,0,0,133120,2,464342,0,221182,0,0,0,0
 "Finish Stormarion Assault with the Singularity Anchor at 90 percent health or higher.","Ninety Percent is Good Enough",,61922,-1,-1,0,15553,0,10,0,24,464068,0,221224,0,0,0,0
 "Defeat the Lightblinded Vanguard while your entire raid has Maximum Aura in The Voidspire on Normal difficulty or higher.","Aura Farming",,61936,2912,-1,0,15566,0,10,0,26,135872,0,221315,0,0,0,0
-"Earn 250,000 Abundance at the Watha'nan Crypts in Eversong Woods.","Abundance: Artisan of Mausoloa",,61937,-1,-1,0,15553,0,5,0,51,132853,0,221291,0,0,0,0
-"Earn 250,000 Abundance at the Loaknit Den in Zul'Aman.","Abundance: Artisan of Loaknit",,61938,-1,-1,0,15553,0,5,0,54,4620680,0,221295,0,0,0,0
-"Earn 250,000 Abundance at the Floaret Grotto in Harandar.","Abundance: Artisan of Floaret",,61939,-1,-1,0,15553,0,5,0,52,4620675,0,221297,0,0,0,0
-"Earn 250,000 Abundance at the Abundant Voidburrow in Voidstorm.","Abundance: Artisan of Loanite",,61940,-1,-1,0,15553,0,5,0,53,136248,0,221299,0,0,0,0
-"Unlock Abundance by completing its tutorial with Dundun and Chel the Chip.","Abundance: Acolyte of a Glorious Entity",,61941,-1,-1,0,15553,0,5,0,47,6351950,0,221306,0,0,0,0
-"Earn level 50 on a newly created haranir character.","Heritage of the Haranir","Reward: Haranir Heritage Armor",61942,-1,-1,61506,15547,0,10,131072,12,7288045,0,221308,0,0,0,0
-"Complete each Abundance event location.","Abundance: Prosperous Plentitude!",,61943,-1,-1,0,15553,0,5,0,48,237376,0,221310,0,0,0,0
+"Earn 250,000 Abundance at the Watha'nan Crypts in Eversong Woods.","Abundance: Artisan of Mausoloa",,61937,-1,-1,0,15553,0,5,0,52,132853,0,221291,0,0,0,0
+"Earn 250,000 Abundance at the Loaknit Den in Zul'Aman.","Abundance: Artisan of Loaknit",,61938,-1,-1,0,15553,0,5,0,55,4620680,0,221295,0,0,0,0
+"Earn 250,000 Abundance at the Floaret Grotto in Harandar.","Abundance: Artisan of Floaret",,61939,-1,-1,0,15553,0,5,0,53,4620675,0,221297,0,0,0,0
+"Earn 250,000 Abundance at the Abundant Voidburrow in Voidstorm.","Abundance: Artisan of Loanite",,61940,-1,-1,0,15553,0,5,0,54,136248,0,221299,0,0,0,0
+"Unlock Abundance by completing its tutorial with Dundun and Chel the Chip.","Abundance: Acolyte of a Glorious Entity",,61941,-1,-1,0,15553,0,5,0,48,6351950,0,221306,0,0,0,0
+"Earn level 50 on a newly created haranir character.","Heritage of the Haranir","Reward: Haranir Heritage Armor",61942,-1,-1,61506,15547,0,10,131072,13,7288045,0,221308,0,0,0,0
+"Complete each Abundance event location.","Abundance: Prosperous Plentitude!",,61943,-1,-1,0,15553,0,5,0,49,237376,0,221310,0,0,0,0
 "Win 10 matches of Training Grounds.","Putting in the Practice",,61953,-1,-1,0,15575,0,5,131072,3,236652,0,221335,0,0,0,0
 "Win 25 matches of Training Grounds.","Putting in the Practice",,61954,-1,-1,61953,15575,0,5,131072,4,236652,0,221337,0,0,0,0
 "Win 100 matches of Training Grounds.","Putting in the Practice",,61955,-1,-1,61954,15575,0,10,131072,5,236652,0,221339,0,0,0,0
 "Win 250 matches of Training Grounds.","Putting in the Practice",,61956,-1,-1,61955,15575,0,10,131072,6,236652,0,221341,0,0,0,0
-"Complete the optional Eversong Woods storylines listed below.","Sojourner of Eversong Woods",,61957,-1,-1,0,15547,0,10,131072,14,7301737,0,221343,0,0,0,0
+"Complete the optional Eversong Woods storylines listed below.","Sojourner of Eversong Woods",,61957,-1,-1,0,15547,0,10,131072,15,7301737,0,221343,0,0,0,0
 "Slay each of the 15 Horde champions listed below.","Focused Target",,61958,-1,1,0,15575,0,10,131072,1,1322722,0,221361,0,0,0,0
 "Slay each of the 15 Alliance champions listed below.","Focused Target",,61959,-1,0,0,15575,0,10,131072,2,1322722,0,221365,0,0,0,0
-"Discover the hidden treasures across Eversong Woods.","Treasures of Eversong Woods",,61960,-1,-1,0,15553,0,5,131072,18,4641307,0,221369,0,0,0,0
+"Discover the hidden treasures across Eversong Woods.","Treasures of Eversong Woods","Pet: Sootpaw",61960,-1,-1,0,15553,0,5,131072,18,4641307,269028,221369,0,0,0,0
 "Defend all of the runestones in Eversong Woods.","Runestone Rush",,61961,-1,-1,0,15553,0,5,131072,32,134423,0,221379,0,0,0,0
 "Place telescopes on the tallest peaks in Midnight.","Midnight: The Highest Peaks",,62057,-1,-1,0,15553,0,10,131072,1,134442,0,221620,0,0,0,0
 "Defeat Vorasius after every player feeds a hatcling enough to put it to sleep in The Voidspire on Normal difficulty or higher.","Hungry Hungry Hatchlings",,62058,2912,-1,0,15566,0,10,0,23,7126992,0,221690,0,0,0,0
 "Obtain 600 mounts (usable by a single character).","Insurmountable Collection","Mount: Anu'shalla, Shadow's Guidance",62096,-1,0,15833,15248,0,10,131072,30,7545241,265656,221822,0,0,0,0
 "Obtain 500 mounts (usable by a single character).","Insurmountable Collection","Mount: Anu'shalla, Shadow's Guidance",62103,-1,1,15834,15248,0,10,131072,21,7545241,265656,221824,0,0,0,0
 "Discover the following lore objects across Midnight.","Midnight Lore Hunter",,62104,-1,-1,0,15553,0,5,131072,12,4549135,0,221922,0,0,0,0
-"Complete the Voidstorm world quest ""Precision Excision"" without missing a single shot.","Lysikas Would Be Proud",,62105,-1,-1,0,15547,0,5,0,19,132222,0,221934,0,0,0,0
+"Complete the Voidstorm world quest ""Precision Excision"" without missing a single shot.","Lysikas Would Be Proud",,62105,-1,-1,0,15547,0,5,0,20,132222,0,221934,0,0,0,0
 "Defeat Imperator Averzian after causing him to destroy your banners in the Voidspire on Normal difficulty or higher.","The Only Winning Move Is Not To Play",,62106,2912,-1,0,15566,0,10,0,22,1141394,0,221936,0,0,0,0
 "Perform a /train emote in each of the Training Grounds maps.","Mandatory Training",,62107,-1,-1,0,15575,0,5,131072,7,1103068,0,221938,0,0,0,0
 "Win in each of the following maps in Training Grounds without dying.","Training with Patience",,62108,-1,-1,62109,15575,0,5,131072,9,136106,0,221952,0,0,0,0
@@ -13429,18 +13429,18 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win 10 Silvershard Mines Training Grounds battles without letting the enemy team capture a mine cart.","Boots on the Ground: Silvershard Mines",,62113,-1,-1,0,15575,0,0,131072,15,6654664,0,222000,0,0,0,0
 "Take 50 flags in Arathi Basin Training Grounds.","Learning the Landscape: Arathi Basin",,62114,-1,-1,0,15575,0,0,131072,10,1391691,0,222002,0,0,0,0
 "Take 30 flags in Battle for Gilneas Training Grounds.","Learning the Landscape: Battle for Gilneas",,62115,-1,-1,0,15575,0,0,131072,11,1391692,0,222004,0,0,0,0
-"Capture 100 carts in Silvershard Mines Training Grounds.","Learning the Landscape: Silvershard Mines",,62116,-1,-1,0,15575,0,0,131072,12,1391693,0,222006,0,0,0,0
+"Take control of 100 carts in Silvershard Mines Training Grounds.","Learning the Landscape: Silvershard Mines",,62116,-1,-1,0,15575,0,0,131072,12,1391693,0,222006,0,0,0,0
 "Complete a Successful Dive in Abyss Anglers.
 
-(A Successful Dive is accomplished by safely exiting the event with full Catch Cargo.)","Abyss Anglers: Boarhide Catch Sack","Reward: Unlock Boarhide Catch Sack for purchase",62117,-1,-1,0,15553,0,5,131072,75,133665,0,223645,0,0,0,0
-"Complete a successful dive with a Catch Rating of 3 or higher, having caught 5 or less fish.","Abyss Anglers: Amazardhide Catch Case","Reward: Unlock Amazardhide Catch Case for purchase",62118,-1,-1,0,15553,0,5,131072,76,133665,0,222418,0,0,0,0
-"Complete a successful dive in Abyss Anglers dive with a Catch Rating of 5.","Abyss Anglers: Loaknit-Woven Catch Satchel","Reward: Unlock Loaknit-Woven Catch Satchel for purchase",62119,-1,-1,0,15553,0,10,131072,77,133665,0,222420,0,0,0,0
-"Develop bonds with all Loa and unlock them for worship at the Altar of Blessings.","Altar of Blessings: The Penitent Troll",,62120,-1,-1,0,15553,0,5,131072,73,135944,0,222483,0,0,0,0
-"Trigger each of the Blessing effects listed.","Altar of Blessings: Sacred Buffet Devotee",,62121,-1,-1,0,15553,0,5,131072,74,135876,0,222493,0,0,0,0
-"Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,5,131072,15,463283,0,222024,0,0,0,0
-"Discover the hidden treasures across Zul'Aman.","Treasures of Zul'Aman",,62125,-1,-1,0,15553,0,5,131072,20,1519429,0,222041,0,0,0,0
-"Discover the hidden treasures across Voidstorm","Treasures of Voidstorm",,62126,-1,-1,0,15553,0,5,131072,19,7137586,0,222052,0,0,0,0
-"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator",,62130,-1,-1,0,15553,0,0,0,14,7448210,0,222082,0,0,0,0
+(A Successful Dive is accomplished by safely exiting the event with full Catch Cargo.)","Abyss Anglers: Boarhide Catch Sack","Reward: Unlock Boarhide Catch Sack for purchase",62117,-1,-1,0,15553,0,5,1179648,76,133665,0,223645,0,0,0,0
+"Complete a successful dive with a Catch Rating of 3 or higher, having caught 5 or less fish.","Abyss Anglers: Amazardhide Catch Case","Reward: Unlock Amazardhide Catch Case for purchase",62118,-1,-1,0,15553,0,5,1179648,77,133665,0,222418,0,0,0,0
+"Complete a successful dive in Abyss Anglers dive with a Catch Rating of 5.","Abyss Anglers: Loaknit-Woven Catch Satchel","Reward: Unlock Loaknit-Woven Catch Satchel for purchase",62119,-1,-1,0,15553,0,10,1179648,78,133665,0,222420,0,0,0,0
+"Develop bonds with all Loa and unlock them for worship at the Altar of Blessings.","Altar of Blessings: The Penitent Troll",,62120,-1,-1,0,15553,0,5,131072,74,135944,0,222483,0,0,0,0
+"Trigger each of the Blessing effects listed.","Altar of Blessings: Sacred Buffet Devotee",,62121,-1,-1,0,15553,0,5,131072,75,135876,0,222493,0,0,0,0
+"Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,10,131072,15,463283,0,222024,0,0,0,0
+"Discover the hidden treasures across Zul'Aman.","Treasures of Zul'Aman","Toy: Pango Plating",62125,-1,-1,0,15553,0,5,131072,20,1519429,268717,222041,0,0,0,0
+"Discover the hidden treasures across Voidstorm","Treasures of Voidstorm","Toy: Interdimensional Parcel Signal",62126,-1,-1,0,15553,0,5,131072,19,7137586,264695,222052,0,0,0,0
+"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Opened Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,0,14,7448210,0,222082,0,0,0,0
 "Evade the Hungering Presence's grasp in Voidstorm for at least 60 seconds.","Thrill of the Chase",,62133,-1,-1,0,15553,0,5,131072,28,4622488,0,222101,0,0,0,0
 "Complete 5 Prey Hunts in War Mode.","The Deadliest of Prey",,62134,-1,-1,0,15605,0,5,131072,11,1450139,0,222107,0,0,0,0
 "Complete a Nightmare Hunt while in War Mode.","Now It's A Party",,62135,-1,-1,0,15605,0,5,131072,12,132295,0,222108,0,0,0,0
@@ -13465,7 +13465,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Mordril Shadowfell or Deliah Gloomsong on Hard mode.","Prey: A Different Kind of Void (Hard)","Decor Reward: Preyseeker's Ren'dorei Bust",62154,-1,-1,0,15605,0,5,132096,24,3565724,0,222181,0,0,0,0
 "Defeat Phaseblade Talasha or Nexus-Edge Hadim on Hard mode.","Prey: Ethereal Assassins (Hard)","Decor Reward: Preyseeker's Ethereal Bust",62155,-1,-1,0,15605,0,5,132096,25,3565724,0,222184,0,0,0,0
 "Defeat Jo'zolo the Breaker or Zadu, Fist of Nalorakk on Hard mode.","Prey: Anger Management (Hard)","Decor Reward: Preyseeker's Breaker Bust",62156,-1,-1,0,15605,0,5,132096,26,3565724,0,222187,0,0,0,0
-"Defeat The Talon of Janali or The Wing of Akil'zon on Hard mode.","Prey: Sadistic Shamans (Hard)","Decor Reward: Preyseeker's Amani Bust",62157,-1,-1,0,15605,0,5,132096,27,3565724,0,222190,0,0,0,0
+"Defeat The Talon of Jan'alai or The Wing of Akil'zon on Hard mode.","Prey: Sadistic Shamans (Hard)","Decor Reward: Preyseeker's Amani Bust",62157,-1,-1,0,15605,0,5,132096,27,3565724,0,222190,0,0,0,0
 "Defeat Ranger Swiftglade or Lieutenant Blazewing on Hard mode.","Prey: The Fallen Farstriders (Hard)","Decor Reward: Preyseeker's Farstrider Bust",62158,-1,-1,0,15605,0,5,132096,28,3565724,0,222193,0,0,0,0
 "Defeat Petyoll the Razorleaf or Lamyne of the Undercroft on Hard mode.","Prey: Bloody Green Thumbs (Hard)","Decor Reward: Preyseeker's Rutaani Bust",62159,-1,-1,0,15605,0,5,132096,29,3565724,0,222196,0,0,0,0
 "Defeat High Vindicator Vureem or Crusader Luxia Maxwell on Hard mode.","Prey: Blinded By The Light (Hard)","Decor Reward: Preyseeker's Vindicator Bust",62160,-1,-1,0,15605,0,5,132096,30,3565724,0,222199,0,0,0,0
@@ -13480,50 +13480,49 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Mordril Shadowfell or Deliah Gloomsong on Nightmare mode.","Prey: A Different Kind of Void (Nightmare)","Decor Reward: Preyseeker's Ren'dorei Effigy",62169,-1,-1,0,15605,0,5,132096,39,3565724,0,222226,0,0,0,0
 "Defeat Phaseblade Talasha or Nexus-Edge Hadim on Nightmare mode.","Prey: Ethereal Assassins (Nightmare)","Decor Reward: Preyseeker's Ethereal Effigy",62173,-1,-1,0,15605,0,5,132096,40,3565724,0,222229,0,0,0,0
 "Defeat Jo'zolo the Breaker or Zadu, Fist of Nalorakk on Nightmare mode.","Prey: Anger Management (Nightmare)","Decor Reward: Preyseeker's Breaker Effigy",62174,-1,-1,0,15605,0,5,132096,41,3565724,0,222232,0,0,0,0
-"Defeat The Talon of Janali or The Wing of Akil'zon on Nightmare mode.","Prey: Sadistic Shamans (Nightmare)","Decor Reward: Preyseeker's Amani Effigy",62175,-1,-1,0,15605,0,5,132096,42,3565724,0,222235,0,0,0,0
+"Defeat The Talon of Jan'alaii or The Wing of Akil'zon on Nightmare mode.","Prey: Sadistic Shamans (Nightmare)","Decor Reward: Preyseeker's Amani Effigy",62175,-1,-1,0,15605,0,5,132096,42,3565724,0,222235,0,0,0,0
 "Defeat Ranger Swiftglade or Lieutenant Blazewing on Nightmare mode.","Prey: The Fallen Farstriders (Nightmare)","Decor Reward: Preyseeker's Farstrider Effigy",62176,-1,-1,0,15605,0,5,132096,43,3565724,0,222238,0,0,0,0
 "Defeat Petyoll the Razorleaf or Lamyne of the Undercroft on Nightmare mode.","Prey: Bloody Green Thumbs (Nightmare)","Decor Reward: Preyseeker's Rutaani Effigy",62177,-1,-1,0,15605,0,5,132096,44,3565724,0,222241,0,0,0,0
 "Defeat High Vindicator Vureem or Crusader Luxia Maxwell on Nightmare mode.","Prey: Blinded By The Light (Nightmare)","Decor Reward: Preyseeker's Vindicator Effigy",62178,-1,-1,0,15605,0,5,132096,45,3565724,0,222244,0,0,0,0
 "Defeat Praetor Singularis or Consul Nebulor on Nightmare mode.","Prey: Outsmarting the Schemers (Nightmare)","Decor Reward: Preyseeker's Consul Effigy",62179,-1,-1,0,15605,0,5,132096,46,3565724,0,222247,0,0,0,0
 "Defeat Executor Kaenius or Imperator Enigmalia on Nightmare mode.","Prey: Dominating the Void (Nightmare)","Decor Reward: Preyseeker's Executor Effigy",62180,-1,-1,0,15605,0,5,132096,47,3565724,0,222250,0,0,0,0
-"Aid the Hara'ti by completing the achievements below.","That's Aln, Folks!",,62260,-1,-1,0,15553,0,20,131072,7,7385004,0,223020,0,0,0,0
 "Defeat Knight-Errant Bloodshatter or Vylenna the Defector on Nightmare mode.","Prey: Chasing Death (Nightmare)","Decor Reward: Preyseeker's Knight-Errant Effigy",62181,-1,-1,0,15605,0,5,132096,48,3565724,0,222253,0,0,0,0
 "Defeat Lost Theldrin or Neydra the Starving on Nightmare mode.","Prey: No Rest for the Wretched (Nightmare)","Decor Reward: Preyseeker's Wretched Effigy",62182,-1,-1,0,15605,0,5,132096,49,3565724,0,222256,0,0,0,0
 "Defeat Thornspeaker Edgath or Thorn-Witch Liset on Nightmare mode.","Prey: A Thorn in the Side (Nightmare)","Decor Reward: Preyseeker's Thornspeaker Effigy",62183,-1,-1,0,15605,0,5,132096,50,3565724,0,222259,0,0,0,0
 "Defeat Grothoz, the Burning Shadow or Dengzag, the Darkened Blaze on Nightmare mode.","Prey: Breaking the Blade (Nightmare)","Decor Reward: Preyseeker's Twilight Effigy",62184,-1,-1,0,15605,0,5,132096,51,3565724,0,222262,0,0,0,0
 "Discover all painter's easels found outdoors in Eversong Woods.","Ever Painting","Decor Reward: Silvermoon Painter's Cushion",62185,-1,-1,0,15553,0,5,132096,34,7549082,0,222267,0,0,0,0
-"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,131072,33,133460,0,222151,0,0,0,0
+"Invite all four factions to Saltheril's Haven in Eversong Woods.","The Party Must Go On","Decor Reward: Eversong Feast Platter",62186,-1,-1,0,15553,0,5,131072,33,133460,0,222151,0,0,0,0
 "Sample every drink available for Grand Magister Rommath in Eversong Woods.","Grand Magister's Sommelier",,62187,-1,-1,0,15553,0,5,131072,35,132809,0,222265,0,0,0,0
 "Listen to the stories of the Haranir who went to the surface, seeking the world trees.","More Than Just Their Roots",,62188,-1,-1,0,15553,0,5,131072,2,236160,0,222268,0,0,0,0
 "Joined the secretive cabal of the Mind-Seekers.",Mind-Seeker,,62189,-1,-1,0,81,0,0,133120,267,6035316,0,222284,0,0,0,0
-"Reach the maximum reputation with each Silvermoon Court faction in Eversong Woods.","Life of the Party",,62190,-1,-1,0,15600,0,10,131072,1,669452,0,222304,0,0,0,0
+"Reach the maximum reputation with each Silvermoon Court faction in Eversong Woods.","Life of the Party","Mount Reward: Umbral Dragonhawk",62190,-1,-1,0,15600,0,10,131072,1,669452,257144,222304,0,0,0,0
 "Complete ""The Light's Summons"" questline.","Call of the Light",,62191,-1,-1,0,96,0,10,131072,2,135981,0,222313,0,0,0,0
 "Reach max renown with each of the reputations listed below.","Midnight Diplomat","Reward: Finery Funds",62192,-1,-1,0,15600,0,10,132096,6,236682,0,222348,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Damage Dealer.","Midnight Dungeon Damage Dealer",,62193,-1,-1,0,15541,0,10,131072,2,7009181,0,222353,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Healer.","Midnight Dungeon Healer",,62194,-1,-1,0,15541,0,10,131072,3,7431122,0,222362,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank.","Midnight Dungeon Tank",,62195,-1,-1,0,15541,0,10,131072,4,7392266,0,222371,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank, Healer, and Damage Dealer.","Midnight Dungeoneer","Reward: Finery Funds",62196,-1,-1,0,15541,0,30,132096,1,7259236,0,222380,0,0,0,0
-"Find and join Chu'ke the possessed doll in Zul'Aman.","Put a Pin in It",,62199,-1,-1,0,15553,0,5,131072,39,5206188,0,222398,0,0,0,0
-"Collect all of the lost gnome's diary pages in Zul'Aman.","Gnome Alone",,62200,-1,-1,0,15553,0,5,131072,40,133740,0,222400,0,0,0,0
-"/kiss all of the ""princess"" frogs in Zul'Aman.","The Frog and the Princesses",,62201,-1,-1,0,15553,0,5,131072,41,2399262,0,222402,0,0,0,0
-"Assist the Spiritpaw Runner in Zul'Aman.","Spiritpaw Marathon",,62202,-1,-1,0,15553,0,5,131072,42,4891426,0,222404,0,0,0,0
+"Find and join Chu'ke the possessed doll in Zul'Aman.","Put a Pin in It",,62199,-1,-1,0,15553,0,5,131072,40,5206188,0,222398,0,0,0,0
+"Collect all of the lost gnome's diary pages in Zul'Aman.","Gnome Alone",,62200,-1,-1,0,15553,0,5,131072,41,133740,0,222400,0,0,0,0
+"/kiss all of the ""princess"" frogs in Zul'Aman.","The Frog and the Princesses",,62201,-1,-1,0,15553,0,5,131072,42,2399262,0,222402,0,0,0,0
+"Assist the Spiritpaw Runner in Zul'Aman.","Spiritpaw Marathon",,62202,-1,-1,0,15553,0,5,131072,43,4891426,0,222404,0,0,0,0
 "Complete every Midnight delve on Tier 11 or higher with lives remaining as a Damage Dealer, Healer, and Tank.","Midnight Delver III",,62206,-1,-1,61721,15571,0,50,132096,21,4887539,0,222406,0,0,0,0
-"Complete 10 successful dives in Abyss Anglers.","Abyss Anglers: Reinforced Joints","Reward: Unlock Reinforced Joints for purchase",62207,-1,-1,0,15553,0,5,131072,78,5728024,0,222422,0,0,0,0
-"Complete 30 successful dives in Abyss Anglers.","Abyss Anglers: Depth Grease","Reward: Unlock Depth Grease for purchase",62208,-1,-1,0,15553,0,5,131072,79,5728024,0,222424,0,0,0,0
-"Complete 50 successful dives in Abyss Anglers.","Abyss Anglers: Pahk Trench Fins","Reward: Unlock Pahk Trench Fins for purchase",62209,-1,-1,0,15553,0,10,131072,80,5728024,0,222426,0,0,0,0
-"Survive an Abyss Anglers dive for 10 minutes with a full Catch Cargo.","Abyss Anglers: Depthdiver's Used Tank","Reward: Unlock Depthdiver's Used Tank for purchase",62210,-1,-1,0,15553,0,5,131072,81,5727887,0,222428,0,0,0,0
-"Survive a Depthbash Thresher attack 3 times in a single Abyss Anglers dive.","Abyss Anglers: Fathom-Tested Tank","Reward: Unlock Fathom-Tested Tank for purchase",62211,-1,-1,0,15553,0,5,131072,82,5727887,0,222430,0,0,0,0
-"Complete a successful dive with a Catch Rating of 4 or higher, in 3 minutes or less.","Abyss Anglers: Nalorakk's Breath Tank","Reward: Unlock Nalorakk's Breath Tank for purchase",62212,-1,-1,0,15553,0,10,131072,83,5727887,0,222432,0,0,0,0
-"Discover 50 Sunken Treasures throughout your Abyss Anglers dives.","Abyss Anglers: Shallows Net","Reward: Unlock Shallows Net for purchase",62213,-1,-1,0,15553,0,5,131072,84,2124986,0,222434,0,0,0,0
-"Discover 50 Ancient Treasures throughout your Abyss Anglers dives.","Abyss Anglers: Triple-Thread Net","Reward: Unlock Triple-Thread Net for purchase",62214,-1,-1,0,15553,0,5,131072,85,2124986,0,222436,0,0,0,0
-"Catch each of the Shallows creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Heavy Harpoon Cannon","Reward: Unlock Heavy Harpoon Cannon for purchase",62215,-1,-1,0,15553,0,10,131072,86,4038104,0,222438,0,0,0,0
-"Catch each of the Trench creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Hollowcore Harpoon Turret","Reward: Unlock Hollowcore Harpoon Turret for purchase",62216,-1,-1,0,15553,0,10,131072,87,236339,0,222453,0,0,0,0
-"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Idol of the Depths","Reward: Unlock Idol of the Depths for purchase",62217,-1,-1,0,15553,0,10,131072,88,2027958,0,222466,0,0,0,0
-"Run out of breath during an Abyss Anglers dive.","Abyss Anglers: Even The Best",,62218,-1,-1,0,15553,0,5,131072,89,538558,0,222475,0,0,0,0
-"Attempt to swim beyond during an Abyss Anglers dive.","Abyss Anglers: No Sea Can Hold Me",,62219,-1,-1,0,15553,0,5,131072,91,135861,0,222477,0,0,0,0
-"Exit an Abyss Anglers dive by swimming to the surface.","Abyss Anglers: Proper Procedure",,62220,-1,-1,0,15553,0,5,131072,92,7473399,0,222479,0,0,0,0
-"Use a Consumable during an Abyss Anglers dive.","Abyss Anglers: Fresh Depth Tech",,62221,-1,-1,0,15553,0,5,131072,93,133640,0,222481,0,0,0,0
-"Remove all of a Brakpuffer's Scales with an Uppercut during an Abyss Anglers dive.","Abyss Anglers: The Amani Way",,62222,-1,-1,0,15553,0,5,131072,90,6712972,0,222530,0,0,0,0
+"Complete 10 successful dives in Abyss Anglers.","Abyss Anglers: Reinforced Joints","Reward: Unlock Reinforced Joints for purchase",62207,-1,-1,0,15553,0,5,1179648,79,5728024,0,222422,0,0,0,0
+"Complete 30 successful dives in Abyss Anglers.","Abyss Anglers: Depth Grease","Reward: Unlock Depth Grease for purchase",62208,-1,-1,0,15553,0,5,1179648,80,5728024,0,222424,0,0,0,0
+"Complete 50 successful dives in Abyss Anglers.","Abyss Anglers: Pahk Trench Fins","Reward: Unlock Pahk Trench Fins for purchase",62209,-1,-1,0,15553,0,10,1179648,81,5728024,0,222426,0,0,0,0
+"Survive an Abyss Anglers dive for 10 minutes with a full Catch Cargo.","Abyss Anglers: Depthdiver's Used Tank","Reward: Unlock Depthdiver's Used Tank for purchase",62210,-1,-1,0,15553,0,5,1179648,82,5727887,0,222428,0,0,0,0
+"Survive a Depthbash Thresher attack 3 times in a single Abyss Anglers dive.","Abyss Anglers: Fathom-Tested Tank","Reward: Unlock Fathom-Tested Tank for purchase",62211,-1,-1,0,15553,0,5,1179648,83,5727887,0,222430,0,0,0,0
+"Complete a successful dive with a Catch Rating of 4 or higher, in 3 minutes or less.","Abyss Anglers: Nalorakk's Breath Tank","Reward: Unlock Nalorakk's Breath Tank for purchase",62212,-1,-1,0,15553,0,10,1179648,84,5727887,0,222432,0,0,0,0
+"Discover 50 Sunken Treasures throughout your Abyss Anglers dives.","Abyss Anglers: Shallows Net","Reward: Unlock Shallows Net for purchase",62213,-1,-1,0,15553,0,5,1179648,85,2124986,0,222434,0,0,0,0
+"Discover 50 Ancient Treasures throughout your Abyss Anglers dives.","Abyss Anglers: Triple-Thread Net","Reward: Unlock Triple-Thread Net for purchase",62214,-1,-1,0,15553,0,5,1179648,86,2124986,0,222436,0,0,0,0
+"Catch each of the Shallows creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Heavy Harpoon Cannon","Reward: Unlock Heavy Harpoon Cannon for purchase",62215,-1,-1,0,15553,0,10,1179648,87,4038104,0,222438,0,0,0,0
+"Catch each of the Trench creatures listed below throughout your Abyss Anglers dives.","Abyss Anglers: Hollowcore Harpoon Turret","Reward: Unlock Hollowcore Harpoon Turret for purchase",62216,-1,-1,0,15553,0,10,1179648,88,236339,0,222453,0,0,0,0
+"Complete each of the Abyss Anglers Achievements listed.","Abyss Anglers: Idol of the Depths","Reward: Unlock Idol of the Depths for purchase",62217,-1,-1,0,15553,0,10,1179648,89,2027958,0,222466,0,0,0,0
+"Run out of breath during an Abyss Anglers dive.","Abyss Anglers: Even The Best",,62218,-1,-1,0,15553,0,5,1179648,90,538558,0,222475,0,0,0,0
+"Attempt to swim beyond during an Abyss Anglers dive.","Abyss Anglers: No Sea Can Hold Me",,62219,-1,-1,0,15553,0,5,1179648,92,135861,0,222477,0,0,0,0
+"Exit an Abyss Anglers dive by swimming to the surface.","Abyss Anglers: Proper Procedure",,62220,-1,-1,0,15553,0,5,1179648,93,7473399,0,222479,0,0,0,0
+"Use a Consumable during an Abyss Anglers dive.","Abyss Anglers: Fresh Depth Tech",,62221,-1,-1,0,15553,0,5,1179648,94,133640,0,222481,0,0,0,0
+"Remove all of a Brakpuffer's Scales with an Uppercut during an Abyss Anglers dive.","Abyss Anglers: The Amani Way",,62222,-1,-1,0,15553,0,5,1179648,91,6712972,0,222530,0,0,0,0
 "Fulfill 50 Midnight crafting orders for Alchemy.",Alchemy-on-Demand,,62223,-1,-1,0,15489,0,5,131072,74,7548896,0,222577,0,0,0,0
 ,"Die in a Delve",,62230,-1,-1,0,15571,0,0,1179648,1,136243,0,222808,0,0,0,0
 "Fulfill 50 Midnight crafting orders for Blacksmithing.",Blacksmithing-on-Demand,,62232,-1,-1,0,15490,0,5,131072,22,7548936,0,222840,0,0,0,0
@@ -13548,44 +13547,45 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Prove your dedication to Midnight Mining.","Dedicated to the Craft: Mining","Title: Thalassian Miner",62251,-1,-1,0,15497,0,5,131072,20,7549223,0,222918,0,0,0,0
 "Prove your dedication to Midnight Skinning.","Dedicated to the Craft: Skinning","Title: Thalassian Skinner",62252,-1,-1,0,15498,0,5,131072,17,5929561,0,222921,0,0,0,0
 "Complete all of the Voidstorm achievements listed below.","Yelling into the Voidstorm",,62256,-1,-1,0,15553,0,25,131072,10,7127505,0,223003,0,0,0,0
-"Complete the Eversong Woods achievements listed below.","Forever Song",,62261,-1,-1,0,15553,0,25,131072,8,7127505,0,223044,0,0,0,0
+"Aid the Hara'ti by completing the achievements below.","That's Aln, Folks!",,62260,-1,-1,0,15553,0,20,131072,9,7385004,0,223020,0,0,0,0
+"Complete the Eversong Woods achievements listed below.","Forever Song",,62261,-1,-1,0,15553,0,25,131072,7,236762,0,223044,0,0,0,0
 "Reach rank 20 with the Silvermoon Court.","Silvermoon Court Champion",,62262,-1,-1,0,15600,0,10,131072,2,7505700,0,223068,0,0,0,0
 "Reach rank 20 with the Amani Tribe.","Amani Tribe Champion",,62263,-1,-1,0,15600,0,10,131072,3,7505698,0,223070,0,0,0,0
 "Reach rank 20 with the Hara'ti.","Hara'ti Champion",,62264,-1,-1,0,15600,0,10,131072,4,7505704,0,223072,0,0,0,0
 "Reach rank 20 with The Singularity.","The Singularity Champion",,62265,-1,-1,0,15600,0,10,131072,5,7505702,0,223074,0,0,0,0
-"Harvest a total lifetime amount of 10,000,000 Abundance.","Abundance: An Acolyte no Longer",,62266,-1,-1,0,15553,0,10,131072,70,1670851,0,221272,0,0,0,0
-"Experience the rage of Filo, Loa of Childhood.","A Most Violent Loa",,62267,-1,-1,0,15553,0,5,131072,38,1320372,0,223103,0,0,0,0
-"Harvest from an Artisan Node in an Abundance event.","Abundance: Professionals Only",,62268,-1,-1,0,15553,0,5,131072,49,1670851,0,223105,0,0,0,0
-"Unlock any Loa for worship at the Altar of Blessings.","Altar of Blessings: Amani Curious",,62269,-1,-1,0,15553,0,5,131072,71,135944,0,223107,0,0,0,0
-"Complete Blessings of the Loa from Du'gal the Alter Keeper in Amani'Zar Village.","Altar of Blessings: One for Altar",,62270,-1,-1,0,15553,0,5,131072,72,135944,0,223117,0,0,0,0
-"Catch 100 creatures in Abyss Anglers.","Abyss Anglers: Trench Berserker",,62271,-1,-1,0,15553,0,5,131072,94,4554374,0,223119,0,0,0,0
-"Earn 1,000,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: Certified Depthdiver",,62272,-1,-1,0,15553,0,5,131072,97,136148,0,223121,0,0,0,0
-"Joined in the defense of the Sunwell against the forces of Xal'atath during Midnight.","Echoes of Midnight","Midnight themed cross-promotional game rewards",62273,-1,-1,0,15268,0,0,133120,102,136243,0,0,0,0,0,0
-"Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,43,134442,0,223171,0,0,0,0
-"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,131072,44,134442,0,223177,0,0,0,0
-"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,131072,45,134442,0,223183,0,0,0,0
-"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,131072,46,134442,0,223189,0,0,0,0
+"Harvest a total lifetime amount of 10,000,000 Abundance.","Abundance: An Acolyte no Longer",,62266,-1,-1,0,15553,0,10,131072,71,1670851,0,221272,0,0,0,0
+"Experience the rage of Filo, Loa of Childhood.","A Most Violent Loa",,62267,-1,-1,0,15553,0,5,131072,39,1320372,0,223103,0,0,0,0
+"Harvest from an Artisan Node in an Abundance event.","Abundance: Professionals Only",,62268,-1,-1,0,15553,0,5,131072,50,1670851,0,223105,0,0,0,0
+"Unlock any Loa for worship at the Altar of Blessings.","Altar of Blessings: Amani Curious",,62269,-1,-1,0,15553,0,5,131072,72,135944,0,223107,0,0,0,0
+"Complete Blessings of the Loa from Du'gal the Alter Keeper in Amani'Zar Village.","Altar of Blessings: One for Altar",,62270,-1,-1,0,15553,0,5,131072,73,135944,0,223117,0,0,0,0
+"Catch 100 creatures in Abyss Anglers.","Abyss Anglers: Trench Berserker",,62271,-1,-1,0,15553,0,5,1179648,95,4554374,0,223119,0,0,0,0
+"Earn 1,000,000 points in cumulative Abyss Anglers dives.","Abyss Anglers: Certified Depthdiver",,62272,-1,-1,0,15553,0,5,1179648,98,136148,0,223121,0,0,0,0
+"Joined in the defense of the Sunwell against the forces of Xal'atath during Midnight.","Echoes of Midnight","Midnight themed cross-promotional game rewards",62273,-1,-1,0,15268,0,0,133120,102,7578704,0,223144,0,0,0,0
+"Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,44,134442,0,223171,0,0,0,0
+"Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,131072,45,134442,0,223177,0,0,0,0
+"Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,131072,46,134442,0,223183,0,0,0,0
+"Place telescopes on the tallest peaks in Voidstorm.","Voidstorm: The Highest Peaks","Decor Reward: Void Elf Weapon Rack",62291,-1,-1,0,15553,0,5,131072,47,134442,0,223189,0,0,0,0
 ,"Adventurer Dawncrests earned",,62292,-1,-1,0,130,0,0,1,71,136243,0,223201,0,0,0,0
 ,"Veteran Dawncrests earned",,62293,-1,-1,0,130,0,0,1,72,136243,0,223203,0,0,0,0
 ,"Champion Dawncrests earned",,62294,-1,-1,0,130,0,0,1,73,136243,0,223205,0,0,0,0
 ,"Hero Dawncrests earned",,62295,-1,-1,0,130,0,0,1,74,136243,0,223207,0,0,0,0
 ,"Myth Dawncrests earned",,62296,-1,-1,0,130,0,0,1,75,136243,0,223209,0,0,0,0
-"Complete an Abundance event having earned points in every score catagory.","Abundance: Loa of all Trades",,62324,-1,-1,0,15553,0,0,131072,55,6712973,0,223262,0,0,0,0
-"Trigger the Treasure Dundun Bonus in each Abundance location.","Abundance: Treasures Aplenty",,62325,-1,-1,0,15553,0,0,131072,64,1604165,0,223264,0,0,0,0
-"Trigger the Golden Glow Bonus in each Abundance location.","Abundance: Golden Opportunities",,62326,-1,-1,0,15553,0,0,131072,65,236261,0,223269,0,0,0,0
-"Trigger the Runaways Bonus in each Abundance location.","Abundance: Squash the Competition",,62329,-1,-1,0,15553,0,0,131072,66,538536,0,223274,0,0,0,0
-"Trigger the Gigantic Harvest Bonus in each Abundance location.","Abundance: One Bite at a Time",,62330,-1,-1,0,15553,0,0,131072,67,4622465,0,223279,0,0,0,0
-"Trigger the Rain of Abundance Bonus in each Abundance location.","Abundance: Drops of Prosperity",,62331,-1,-1,0,15553,0,0,131072,68,612098,0,223284,0,0,0,0
-"Complete each of the Abundance achievements below.","Abundance: Dundun's Favored",,62332,-1,-1,0,15553,0,0,131072,63,135931,0,223289,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Materials Harvested catagory.","Abundance: Harvester",,62333,-1,-1,0,15553,0,0,131072,57,7549104,0,223295,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Materials Contributed catagory.","Abundance: Contributer",,62336,-1,-1,0,15553,0,0,131072,58,7549104,0,223297,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Basic Nodes catagory.","Abundance: Professional",,62337,-1,-1,0,15553,0,0,131072,59,7549014,0,223299,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Artisan Nodes catagory.","Abundance: Artisan",,62338,-1,-1,0,15553,0,0,131072,60,7549115,0,223301,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Bonus Events catagory.","Abundance: Gambler",,62339,-1,-1,0,15553,0,0,131072,62,237284,0,223305,0,0,0,0
-"Complete an Abundance event having earned a score of at least 10,000 in the Large Orbs catagory.","Abundance: Investor",,62340,-1,-1,0,15553,0,0,131072,61,4632783,0,223303,0,0,0,0
-"Complete each of the Abundance achievements below.","Abundance: Ain't Dun Till It's Dun",,62341,-1,-1,0,15553,0,0,131072,56,236248,0,223307,0,0,0,0
-"Catch a Golden creature during an Abyss Anglers dive.","Abyss Anglers: The Finest of Fish",,62342,-1,-1,0,15553,0,0,131072,95,4777763,0,223318,0,0,0,0
-"Catch a Legendary creature during an Abyss Anglers dive.","Abyss Anglers: Legends Lurk Beneath",,62343,-1,-1,0,15553,0,0,131072,96,970811,0,223320,0,0,0,0
+"Complete an Abundance event having earned points in every score catagory.","Abundance: Loa of all Trades",,62324,-1,-1,0,15553,0,0,131072,56,6712973,0,223262,0,0,0,0
+"Trigger the Treasure Dundun Bonus in each Abundance location.","Abundance: Treasures Aplenty",,62325,-1,-1,0,15553,0,0,131072,65,1604165,0,223264,0,0,0,0
+"Trigger the Golden Glow Bonus in each Abundance location.","Abundance: Golden Opportunities",,62326,-1,-1,0,15553,0,0,131072,66,236261,0,223269,0,0,0,0
+"Trigger the Runaways Bonus in each Abundance location.","Abundance: Squash the Competition",,62329,-1,-1,0,15553,0,0,131072,67,538536,0,223274,0,0,0,0
+"Trigger the Gigantic Harvest Bonus in each Abundance location.","Abundance: One Bite at a Time",,62330,-1,-1,0,15553,0,0,131072,68,4622465,0,223279,0,0,0,0
+"Trigger the Rain of Abundance Bonus in each Abundance location.","Abundance: Drops of Prosperity",,62331,-1,-1,0,15553,0,0,131072,69,612098,0,223284,0,0,0,0
+"Complete each of the Abundance achievements below.","Abundance: Dundun's Favored",,62332,-1,-1,0,15553,0,0,131072,64,135931,0,223289,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Materials Harvested catagory.","Abundance: Harvester",,62333,-1,-1,0,15553,0,0,131072,58,7549104,0,223295,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Materials Contributed catagory.","Abundance: Contributer",,62336,-1,-1,0,15553,0,0,131072,59,7549104,0,223297,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Basic Nodes catagory.","Abundance: Professional",,62337,-1,-1,0,15553,0,0,131072,60,7549014,0,223299,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Artisan Nodes catagory.","Abundance: Artisan",,62338,-1,-1,0,15553,0,0,131072,61,7549115,0,223301,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Bonus Events catagory.","Abundance: Gambler",,62339,-1,-1,0,15553,0,0,131072,63,237284,0,223305,0,0,0,0
+"Complete an Abundance event having earned a score of at least 10,000 in the Large Orbs catagory.","Abundance: Investor",,62340,-1,-1,0,15553,0,0,131072,62,4632783,0,223303,0,0,0,0
+"Complete each of the Abundance achievements below.","Abundance: Ain't Dun Till It's Dun",,62341,-1,-1,0,15553,0,0,131072,57,236248,0,223307,0,0,0,0
+"Catch a Golden creature during an Abyss Anglers dive.","Abyss Anglers: The Finest of Fish",,62342,-1,-1,0,15553,0,0,1179648,96,4777763,0,223318,0,0,0,0
+"Catch a Legendary creature during an Abyss Anglers dive.","Abyss Anglers: Legends Lurk Beneath",,62343,-1,-1,0,15553,0,0,1179648,97,970811,0,223320,0,0,0,0
 "Complete the achievements listed below.","Preying For Midnight","Title: Preyseeker",62351,-1,-1,0,15605,0,30,131072,21,7493985,0,223405,0,0,0,0
 "Get consumed by the Devouring Host in The Voidspire or March on Quel'Danas.","Nothing to See Here",,62352,-1,-1,0,15566,0,10,0,21,4914666,0,223416,0,0,0,0
 "Harvest 250 Ironwood Lumber","Classically Trained Lumberjack","Reward: Mounted Lumber Harvesting in Classic Zones",62357,-1,-1,0,15606,0,5,131072,22,7467227,0,223403,0,0,0,0
@@ -13608,3 +13608,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 5000 Community Coupons.","A Fist Full of Coupons",,62377,-1,-1,62376,15606,0,10,131072,17,466723,0,223509,0,0,0,0
 "Collect 10000 Community Coupons.","A Few Coupons More",,62378,-1,-1,62377,15606,0,10,131072,18,351042,0,223511,0,0,0,0
 "Defeat all of the following Prey targets on any difficulty.","Gotta Hunt Them All",,62383,-1,-1,0,15605,0,0,0,10,3565724,0,223523,0,0,0,0
+"Fully unlock the Research Console in Voidstorm.","Staring Into The Void","Mount: Lab-grown Stormray",62385,-1,-1,0,15547,0,0,0,2,136243,260697,0,0,0,0,0
+"Rally your forces against Xal'atath by completing the achievements below.","Light Up the Night","Mount: Brilliant Petalwing",62386,-1,-1,0,15553,0,40,131072,36,7636523,252011,223795,0,0,0,0
+"Earn a Five Star Review for your services at the Illicit Rain.","Illicit Rain: Five Stars","Toy: Feeling Fielder Mk. 7",62388,-1,-1,0,15272,0,0,133120,183,3750310,263975,223810,0,0,0,0
