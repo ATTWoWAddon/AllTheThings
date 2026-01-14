@@ -533,7 +533,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_4_0_1 } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]

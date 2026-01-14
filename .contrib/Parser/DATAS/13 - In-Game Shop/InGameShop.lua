@@ -700,7 +700,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		-- #endif
 		-- #if ANYCLASSIC
 		i(192455, {	-- Kalu'ak Whalebone Glider (MOUNT!)
-			["timeline"] = { ADDED_2_5_4_A },
+			["timeline"] = { ADDED_3_4_0 },
 		}),
 		-- #endif
 		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)

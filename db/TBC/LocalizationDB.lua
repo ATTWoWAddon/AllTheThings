@@ -1112,10 +1112,7 @@ localize(L.HEADER_NAMES, {
 	[-483] = "The Scepter of the Shifting Sands",
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
-	[-522] = "Heroic Edition",
-	[-523] = "Epic Edition",
 	[-524] = "TBC Classic Deluxe Edition",
-	[-525] = "WotLK Classic Northrend Upgrade",
 	[-546] = "iCoke",
 	[-547] = AUCTION_CATEGORY_MISCELLANEOUS,
 	[-548] = REFER_A_FRIEND,
@@ -1280,10 +1277,7 @@ localize(L.HEADER_ICONS, {
 	[-483] = 133062,
 	[-520] = _.asset("promotion_blizzcon"),
 	[-521] = _.asset("promotion_collector"),
-	[-522] = _.asset("weapon_type_heirloom"),
-	[-523] = _.asset("weapon_type_legendary"),
 	[-524] = _.asset("expansion_tbc"),
-	[-525] = _.asset("expansion_wotlk"),
 	[-546] = 132797,
 	[-547] = 135999,
 	[-548] = 236688,
@@ -6918,13 +6912,6 @@ local achievements = {
 		description = "Within one raid lockout, defeat every boss in Naxxramas without allowing any raid member to die during any of the boss encounters during Season of Mastery.",
 		icon = 135922,
 		category = 81,
-	},
-	[16332] = {
-		name = "The Perfect Pebble",
-		description = "Receive a Glowing Pebble from Pebble the penguin.",
-		icon = 294481,
-		category = 81,
-		criteria = {55087},
 	},
 	[16433] = {
 		name = "Soul of Iron (Season of Mastery)",
@@ -15892,12 +15879,6 @@ local achievementCriterias = {
 		type = 0,
 		asset = 10184,
 	},
-	[55087] = {
-		name = "Glowing Pebble",
-		amount = 1,
-		type = 29,
-		asset = 388350,
-	},
 	[58452] = {
 		name = "[DNT] Exalted with Gadgetzan",
 		type = 8,
@@ -18468,7 +18449,6 @@ for key,value in pairs({
 	[15334] = "Überlebender des alten Gottes (Saison der Meisterschaft)",
 	[15335] = "Überlebender der Verdammten (Saison der Meisterschaft)",
 	[15637] = "Der Unsterbliche (Saison der Meisterschaft)",
-	[16332] = "Der perfekte Kiesel",
 	[16433] = "Eisenseele (Saison der Meisterschaft)",
 })
 do achievements[key].name = value; end
@@ -18780,7 +18760,6 @@ for key,value in pairs({
 	[15334] = "Bezwingt C'Thun ohne zu sterben während der Saison der Meisterschaft.",
 	[15335] = "Bezwingt Kel'Thuzad ohne zu sterben während der Saison der Meisterschaft.",
 	[15637] = "Bezwingt jeden Boss in Naxxramas während der Saison der Meisterschaft innerhalb eines einzigen Schlachtzugzyklus, ohne dass ein Gruppenmitglied während der Bosskämpfe stirbt.",
-	[16332] = "Erhalte einen leuchtenden Kiesel von Pebbles dem Pinguin.",
 	[16433] = "Erreicht Stufe 60 ohne zu sterben während der Saison der Meisterschaft.",
 })
 do achievements[key].description = value; end
@@ -20527,7 +20506,6 @@ for key,value in pairs({
 	[13428] = "Ehrfürchtig bei den Sehern",
 	[17023] = "Ehrfürchtig bei den Shen'dralar.",
 	[54579] = "Onyxia",
-	[55087] = "Leuchtender Kiesel",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -22303,7 +22281,6 @@ for key,value in pairs({
 	[15334] = "Survivant du Dieu très ancien (saison de la Maîtrise)",
 	[15335] = "Survivant des damnés (saison de la Maîtrise)",
 	[15637] = "Il en restera plus d’un (saison de la Maîtrise)",
-	[16332] = "Glorieux galet",
 	[16433] = "Âme de fer (saison de la Maîtrise)",
 })
 do achievements[key].name = value; end
@@ -22615,7 +22592,6 @@ for key,value in pairs({
 	[15334] = "Vaincre C’Thun sans jamais mourir au cours de la saison de la Maîtrise.",
 	[15335] = "Vaincre Kel’Thuzad sans jamais mourir au cours de la saison de la Maîtrise.",
 	[15637] = "Entre deux réinitialisations de raids, vaincre chaque boss de Naxxramas sans qu’un seul membre du raid meure au cours des combats contre les boss durant la saison de la Maîtrise.",
-	[16332] = "Recevoir un galet brillant de Galetin le pingouin.",
 	[16433] = "Atteindre le niveau 60 sans jamais mourir au cours de la saison de la Maîtrise.",
 })
 do achievements[key].description = value; end
@@ -24362,7 +24338,6 @@ for key,value in pairs({
 	[13428] = "Exalté auprès des Clairvoyants",
 	[17023] = "Exalté auprès des Shen’dralar",
 	[54579] = "Onyxia",
-	[55087] = "Galet brillant",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -26847,7 +26822,6 @@ for key,value in pairs({
 	[13428] = "Exalted with The Scryers",
 	[17023] = "Exalted with the Shen'dralar.",
 	[54579] = "Onyxia",
-	[55087] = "Glowing Pebble",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -28276,7 +28250,6 @@ for key,value in pairs({
 	[15334] = "Sobrevivente do Deus Antigo (Temporada de Maestria)",
 	[15335] = "Sobrevivente do Senhor do Fogo (Temporada de Maestria)",
 	[15637] = "Imortal (Temporada de Maestria)",
-	[16332] = "Pedrisco precioso",
 	[16433] = "Alma de Ferro (Temporada de Maestria)",
 })
 do achievements[key].name = value; end
@@ -28588,7 +28561,6 @@ for key,value in pairs({
 	[15334] = "Derrotar C'Thun sem ter morrido nenhuma vez durante a Temporada de Maestria.",
 	[15335] = "Derrotar Kel'Thuzad sem ter morrido nenhuma vez durante a Temporada de Maestria.",
 	[15637] = "Durante 1 período de vínculo de raide, derrotar todos os chefes em Naxxramas sem permitir que nenhum integrante do raide morra em pelo menos 1 confronto com chefes, dentro da Temporada de Maestria.",
-	[16332] = "Receber um Pedrisco Chamejante de Pedrisco, o pinguim.",
 	[16433] = "Alcançar o nível 60 sem ter morrido nenhuma vez durante a Temporada de Maestria.",
 })
 do achievements[key].description = value; end
@@ -30335,7 +30307,6 @@ for key,value in pairs({
 	[13428] = "Exaltado pelos Áugures",
 	[17023] = "Exaltado com os Shen'dralar",
 	[54579] = "Onyxia",
-	[55087] = "Pedrisco Chamejante",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -32485,7 +32456,6 @@ for key,value in pairs({
 	[15334] = "Выжить пред лицом древнего бога (сезон мастерства)",
 	[15335] = "Выжить пред лицом Проклятых (сезон мастерства)",
 	[15637] = "Бессмертный (сезон мастерства)",
-	[16332] = "Идеальный камень",
 	[16433] = "Душа из железа (сезон мастерства)",
 })
 do achievements[key].name = value; end
@@ -32797,7 +32767,6 @@ for key,value in pairs({
 	[15334] = "Победите К'Туна в ходе сезона мастерства, ни разу не умерев.",
 	[15335] = "Победите Кел'Тузада в ходе сезона мастерства, ни разу не умерев.",
 	[15637] = "В течение одного сохраненного рейда в ходе сезона мастерства убейте всех боссов в Наксрамасе, не допустив смерти ни одного участника рейда.",
-	[16332] = "Получите сияющий камень от пингвина Камешка.",
 	[16433] = "Достигните в ходе сезона мастерства 60-го уровня, ни разу не умерев.",
 })
 do achievements[key].description = value; end
@@ -34544,7 +34513,6 @@ for key,value in pairs({
 	[13428] = "Превознесение у Провидцев",
 	[17023] = "Превознесение у шен'дралар",
 	[54579] = "Ониксия",
-	[55087] = "Сияющий камень",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -35962,7 +35930,6 @@ for key,value in pairs({
 	[15334] = "고대 신의 생존자 (마스터리 서버)",
 	[15335] = "저주받은 자의 생존자 (마스터리 서버)",
 	[15637] = "불사신 (마스터리 서버)",
-	[16332] = "완벽한 조약돌",
 	[16433] = "철의 영혼 (마스터리 서버)",
 })
 do achievements[key].name = value; end
@@ -36274,7 +36241,6 @@ for key,value in pairs({
 	[15334] = "마스터리 서버 도중 죽지 않고 쑨 처치",
 	[15335] = "마스터리 서버 도중 죽지 않고 켈투자드 처치",
 	[15637] = "공격대 귀속 기간 내에 마스터리 서버에서 공격대원이 한 명도 죽지 않은 상태로 낙스라마스의 모든 우두머리 처치",
-	[16332] = "펭귄 펭돌이로부터 빛나는 조약돌 받기",
 	[16433] = "마스터리 서버 도중 죽지 않고 60 레벨 달성",
 })
 do achievements[key].description = value; end
@@ -38021,7 +37987,6 @@ for key,value in pairs({
 	[13428] = "점술가 길드 확고한 동맹",
 	[17023] = "셴드랄라 확고한 동맹",
 	[54579] = "오닉시아",
-	[55087] = "빛나는 조약돌",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -38877,10 +38842,7 @@ localize(L.HEADER_NAMES, {
 	[-482] = "La apertura del Portal Oscuro",
 	[-483] = "El cetro del Mar de Dunas",
 	[-521] = "Edición de coleccionista",
-	[-522] = "Edición Heroica",
-	[-523] = "Edición Épica",
 	[-524] = "Edición TBC Classic Deluxe",
-	[-525] = "Pack Heroic Rasganorte WotLK Classic",
 	[-550] = "Espíritu de competición",
 	[-557] = "Fiesta de la cerveza",
 	[-559] = "Semana de los Niños",
@@ -40370,7 +40332,6 @@ for key,value in pairs({
 	[15334] = "Superviviente del dios antiguo (temporada de maestría)",
 	[15335] = "Superviviente de los malditos (temporada de maestría)",
 	[15637] = "El Inmortal (temporada de maestría)",
-	[16332] = "El guijarro perfecto",
 	[16433] = "Alma de hierro (temporada de maestría)",
 })
 do achievements[key].name = value; end
@@ -40682,7 +40643,6 @@ for key,value in pairs({
 	[15334] = "Derrota a C'Thun sin morir ni una sola vez durante la temporada de maestría.",
 	[15335] = "Derrota a Kel'Thuzad sin morir ni una sola vez durante la temporada de maestría.",
 	[15637] = "En el tiempo tope de la banda, derrota a todos los jefes de Naxxramas sin muertes de los miembros de la banda durante los enfrentamientos con estos durante la temporada de maestría.",
-	[16332] = "Recibe un guijarro resplandeciente de Guijarro el pingüino.",
 	[16433] = "Alcanza el nivel 60 sin morir ni una sola vez durante la temporada de maestría.",
 })
 do achievements[key].description = value; end
@@ -42429,7 +42389,6 @@ for key,value in pairs({
 	[13428] = "Exaltado con los Arúspices",
 	[17023] = "Exaltado con los Shen'dralar",
 	[54579] = "Onyxia",
-	[55087] = "Guijarro resplandeciente",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -42700,7 +42659,6 @@ localize(L.HEADER_NAMES, {
 	[-74] = "Dragones de pesadilla",
 	[-103] = "Evento de pre-expansion",
 	[-367] = "Defensores de Atal'ai",
-	[-525] = "Paquete heroico Rasganorte WotLK Classic",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
@@ -42735,7 +42693,6 @@ for key,value in pairs({
 	[15334] = "Superviviente del dios antiguo (Temporada de maestría)",
 	[15335] = "Superviviente de los Condenados (Temporada de maestría)",
 	[15637] = "Los inmortales (Temporada de maestría)",
-	[16332] = "La piedrita perfecta",
 	[16433] = "Alma de hierro (Temporada de maestría)",
 })
 do achievements[key].name = value; end
@@ -42781,7 +42738,6 @@ for key,value in pairs({
 	[15334] = "Derrota a C'Thun sin morir ni una vez durante la temporada de maestría.",
 	[15335] = "Derrota a Kel'Thuzad sin morir ni una vez durante la temporada de maestría.",
 	[15637] = "En el tiempo tope de la banda, derrota a todos los jefes de Naxxramas sin muertes de los miembros de la banda durante esos enfrentamientos en la temporada de maestría.",
-	[16332] = "Recibe una piedrita radiante de Piedri, el pingüino.",
 	[16433] = "Alcanza el nivel 60 sin morir ni una vez durante la temporada de maestría.",
 })
 do achievements[key].description = value; end
@@ -44528,7 +44484,6 @@ for key,value in pairs({
 	[13428] = "Exaltado con los Arúspices",
 	[17023] = "Exaltado con los Shen'dralar.",
 	[54579] = "Onyxia",
-	[55087] = "Piedrita radiante",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -45389,10 +45344,7 @@ localize(L.HEADER_NAMES, {
 	[-483] = "流沙节杖",
 	[-520] = "暴雪嘉年华",
 	[-521] = "典藏版",
-	[-522] = "英雄礼包",
-	[-523] = "史诗礼包",
 	[-524] = "'燃烧的远征'怀旧服典藏包",
-	[-525] = "'巫妖王之怒'怀旧服 - 北裂境升级",
 	[-546] = "可口可乐活动",
 	[-550] = "竞争之魂",
 	[-557] = "美酒节",
@@ -46675,7 +46627,6 @@ for key,value in pairs({
 	[15334] = "上古之神的生还者（赛季服）",
 	[15335] = "诅咒生还者（赛季服）",
 	[15637] = "永恒者（赛季服）",
-	[16332] = "完美的鹅卵石",
 	[16433] = "钢铁之魂（赛季服）",
 })
 do achievements[key].name = value; end
@@ -46987,7 +46938,6 @@ for key,value in pairs({
 	[15334] = "在赛季服直到击败克苏恩为止都没有死亡。",
 	[15335] = "在赛季服直到击败克尔苏加德为止都没有死亡。",
 	[15637] = "在一个团队副本锁定周期内，在赛季服击败纳克萨玛斯中的所有首领，并且在所有这些首领战中无一人死亡。",
-	[16332] = "从企鹅小岩处获得一颗发光的鹅卵石。",
 	[16433] = "在赛季服升到60级为止都没有死亡。",
 })
 do achievements[key].description = value; end
@@ -48734,7 +48684,6 @@ for key,value in pairs({
 	[13428] = "占星者崇拜",
 	[17023] = "辛德拉崇拜",
 	[54579] = "奥妮克希亚",
-	[55087] = "发光的鹅卵石",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",
@@ -49442,10 +49391,7 @@ localize(L.HEADER_NAMES, {
 	[-481] = "安其拉之戰捐獻",
 	[-483] = "流沙節杖",
 	[-520] = "暴雪嘉年華",
-	[-522] = "英雄版",
-	[-523] = "史詩版",
 	[-524] = "燃燒的遠征：經典版 - 豪華版",
-	[-525] = "巫妖王之怒：經典版 - 北裂境升級",
 	[-546] = "可口可樂活動",
 	[-557] = "啤酒節",
 	[-559] = "兒童週",
@@ -49806,7 +49752,6 @@ for key,value in pairs({
 	[15334] = "古神生還者(大師賽季)",
 	[15335] = "詛咒生還者(大師賽季)",
 	[15637] = "不朽(大師賽季)",
-	[16332] = "完美的鵝卵石",
 	[16433] = "鋼鐵之魂(大師賽季)",
 })
 do achievements[key].name = value; end
@@ -50118,7 +50063,6 @@ for key,value in pairs({
 	[15334] = "在大師賽季中，在完全沒有死亡的情況下擊敗克蘇恩。",
 	[15335] = "在大師賽季中，在完全沒有死亡的情況下擊敗科爾蘇加德。",
 	[15637] = "大師賽季中，同一團隊進度時與首領戰鬥期間無人死亡的情況下擊敗納克薩瑪斯的所有首領。",
-	[16332] = "從企鵝沛寶那裡獲得一個發光的鵝卵石。",
 	[16433] = "在大師賽季中，在完全沒有死亡的情況下達到60級。",
 })
 do achievements[key].description = value; end
@@ -51865,7 +51809,6 @@ for key,value in pairs({
 	[13428] = "占卜者崇拜",
 	[17023] = "辛德拉崇拜。",
 	[54579] = "奧妮克希亞",
-	[55087] = "發光的鵝卵石",
 	[58452] = "[DNT] Exalted with Gadgetzan",
 	[58453] = "[DNT] Exalted with Ratchet",
 	[58454] = "[DNT] Exalted with Booty Bay",

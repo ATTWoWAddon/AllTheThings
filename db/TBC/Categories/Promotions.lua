@@ -42,14 +42,7 @@ mnt(1266345,{awp=20505,itemID=260438,rwp=30002,u=3}),
 toy(260622,{awp=20505,rwp=30002,u=3}),
 toy(260221,{awp=20505,rwp=30002,u=3}),
 p(4962,{awp=20505,itemID=260433,rwp=30002,u=3}),
-mnt(1266866,{awp=20505,itemID=260759,rwp=30002,u=3})}}),
-h(-525,{awp=20504,rwp=40001,u=3,g={
-h(-522,{awp=20504,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=3,g={
-p(4234,{awp=20504,itemID=198665,petTypeID=9,rwp=40001,spellID=384796,u=3}),
-toy(198647,{awp=20504,rwp=40001,u=3}),
-ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},rwp=40001,u=3})}}),
-h(-523,{awp=20504,description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
-mnt(372677,{awp=20504,itemID=192455,rwp=40001,u=3})}})}})}}),
+mnt(1266866,{awp=20505,itemID=260759,rwp=30002,u=3})}})}}),
 h(-546,{awp=11201,u=2,g={
 p(757,{awp=11201,b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
 p(124,{awp=11201,b=1,itemID=22781,petTypeID=8,q=1,spellID=28505,u=2}),
