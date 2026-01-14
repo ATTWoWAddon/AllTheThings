@@ -57,7 +57,7 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 			end
 		end]],
 	}),
-	i(37298, {	-- Essence of Competition (PET!) (China Only)
+	cnONLY(i(37298, {	-- Essence of Competition (PET!) (China Only)
 		["description"] = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
-	}),
+	})),
 })));

@@ -62,8 +62,8 @@ h(-550,{awp=20403,rwp=30002,g={
 ach(1637,{awp=20403,providers={{"i",37297}},rwp=30002}),
 p(179,{awp=20403,b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,petTypeID=2,q=3,rwp=30002,spellID=48406}),
 ach(1636,{awp=20403,providers={{"i",36941}},rwp=30002}),
-s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002}),
-p(180,{awp=20403,b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,petTypeID=2,q=3,rwp=30002,spellID=48408})}}),
+s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(180,{awp=20403,b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,petTypeID=2,q=3,rwp=30002,spellID=48408}))}}),
 h(-551,{awp=20001,u=2,g={
 flt(101,{awp=20001,u=2,g={
 p(156,{awp=20001,b=1,itemID=32588,petTypeID=8,q=3,spellID=40549,u=2}),
