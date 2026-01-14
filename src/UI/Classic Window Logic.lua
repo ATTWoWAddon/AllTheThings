@@ -1988,11 +1988,16 @@ function app:CreateWindow(suffix, settings)
 				end
 			end
 
-			settings.Commands.RootCommandIndex = settings.RootCommandIndex
-			app.AddSlashCommands(settings.Commands, onCommand)
 			window.Commands = settings.Commands;
 			window.HideFromSettings = settings.HideFromSettings;
 			window.SettingsName = settings.SettingsName or window.Suffix;
+			settings.Commands.RootCommandIndex = settings.RootCommandIndex
+			app.AddSlashCommands(settings.Commands, onCommand)
+			local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
+			app.ChatCommands.Help[primaryCommand:lower()] = {
+				settings.UsageText or ("Usage: " .. primaryCommand),
+				settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
+			};
 		end
 		if settings.TooltipAnchor then
 			window.TooltipAnchor = settings.TooltipAnchor;

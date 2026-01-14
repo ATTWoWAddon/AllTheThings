@@ -35,7 +35,7 @@ app:CreateWindow("Prime", {
 				commandFunc(args);
 				return true;
 			elseif arg1 == "help" then
-				app.ChatCommands.PrintHelp();
+				app.ChatCommands.PrintHelp(args[2]);
 				return true;
 			end
 
