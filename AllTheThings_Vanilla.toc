@@ -131,6 +131,7 @@ src\Classes\Transmog.lua
 # src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
+src\Classes\Decor.lua
 # src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
@@ -140,6 +141,7 @@ src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
 src\Expansions\Dragonflight.lua
+src\Expansions\The War Within.lua
 
 # Load the Settings Menu
 src\Settings\Classic Settings.xml
@@ -152,6 +154,7 @@ classic\ATT-Classic.lua
 src\Classes\Classic\Mounts & Battle Pets.lua
 
 src\UI\Game Tooltip.lua
+src\UI\Instance Difficulty Icon.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
 src\UI\World Map Button.lua
