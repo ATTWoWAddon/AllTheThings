@@ -38,7 +38,7 @@
 src\WoW API Wrappers.lua
 
 # Raw DBs
-db\Classic\ReferenceDB.lua
+db\TBC\ReferenceDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
