@@ -1869,6 +1869,13 @@ local AccountWideQuestsDB = {
 	86484,	-- Temper Like A Tempest
 	86485,	-- A Loyal Friend
 	86486,	-- Hungry, Hungry Snapdragon
+	86491,	-- Dastardly Duos! It's on!
+	86503,	-- Who are the Dastardly Duos?
+	86504,	-- Ensemble: Paradise Beach Loungewear
+	86505,	-- Ensemble: Southsea Cruise Loungewear
+	86506,	-- Ensemble: Salvage Rig Garments
+	86507,	-- Ensemble: Rusty Bruiser's Outfit
+	86508,	-- Ensemble: Sun-Soaked Clothing
 	86555,
 	86567,	-- A Threatening Letter
 	86568,	-- Misplaced Work Order
@@ -1877,11 +1884,28 @@ local AccountWideQuestsDB = {
 	86571,	-- Second Half of Noggenfogger's Journal
 	86572,	-- First Half of Noggenfogger's Journal
 	86573,	-- Gallywix's Notes
+	86596,	-- Steamwheedle's Trove (Exalted)
+	86597,	-- Blackwater's Trove (Exalted)
+	86598,	-- Bilgewater's Trove (Honored)
+	86599,	-- Venture Co.'s Trove (Exalted)
+	86630,	-- Crumpled Schematic: Wormhole Generator: Undermine
 	86706,	-- Seeking Knowledge of the Past
+	86748,	-- Bilgewater's Trove (Revered)
+	86749,	-- Bilgewater's Trove (Exalted)
+	86750,	-- Blackwater's Trove (Honored)
+	86751,	-- Blackwater's Trove (Revered)
+	86753,	-- Steamwheedle's Trove (Honored)
+	86754,	-- Steamwheedle's Trove (Revered)
+	86755,	-- Venture Co.'s Trove (Honored)
+	86756,	-- Venture Co.'s Trove (Revered)
 	86771,	-- Paint: Body Roll Blue
 	86772,	-- Paint: Goblin Green
 	86773,	-- Paint: Redlining Red
 	86774,	-- Paint: Yellow Cake Yellow
+	86787,	-- Sturdy Chest
+	86788,	-- Sturdy Chest
+	86789,	-- Sturdy Chest
+	86790,	-- Sturdy Chest
 	86801,	-- Faceless Mask of Multitudes
 	86878,	-- Nightfall Sanctum Campsite
 	86931,	-- triggered after turn in of any of the pact weeklies?
