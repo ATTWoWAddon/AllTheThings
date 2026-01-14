@@ -198,7 +198,8 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 				end
 				if character.raceID then
 					rawset(t, "raceID", character.raceID);
-					rawset(t, "race", C_CreatureInfo.GetRaceInfo(character.raceID).raceName);
+					local raceInfo = C_CreatureInfo.GetRaceInfo(character.raceID);
+					if raceInfo then rawset(t, "race", raceInfo.raceName); end
 				end
 				return t;
 			end
