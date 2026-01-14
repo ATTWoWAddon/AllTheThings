@@ -5,7 +5,7 @@ local _, app = ...
 local CACHE = "Decor"
 local CLASSNAME = "Decor"
 local KEY = "decorID"
-if not C_HousingCatalog then
+if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 	-- If Decor isn't distinguishable yet, simply create an extended Item
 	app.CreateDecor = app.ExtendClass("Item", CLASSNAME, KEY, {});
 
