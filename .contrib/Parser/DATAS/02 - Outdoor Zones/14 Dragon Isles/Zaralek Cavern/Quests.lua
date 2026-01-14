@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["coord"] = { 55.5, 54.7, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
 			}),
 			q(73709, {	-- Favor on the Side

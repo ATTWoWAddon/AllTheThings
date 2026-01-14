@@ -1064,7 +1064,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(139587),	-- Suspicious Crate (TOY!)
 							}),
 							o(252269, {	-- Pack of Battle Potions
-								i(139588),	-- Pack of Battle Potions
+								["coord"] = { 36.7, 58.6, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139588) },	-- Pack of Battle Potions
 							}),
 							o(252284, {	-- Pile of Sticky Bombs
 								["coord"] = { 30.8, 59.1, THE_HALL_OF_SHADOWS },
@@ -1079,7 +1080,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["groups"] = { i(94222) },	-- Key to the Palace of Lei Shen
 							}),
 							o(252279, {	-- Stolen Tome of Artifact Lore
-								i(139591),	-- Stolen Tome of Artifact Lore
+								["coord"] = { 36.9, 57.4, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139591) },	-- Stolen Tome of Artifact Lore
 							}),
 							o(252277, {	-- Thistle Tea
 								i(139586),	-- Thistle Tea

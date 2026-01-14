@@ -25,9 +25,6 @@ root(ROOTS.Unsorted, {
 			i(248814),	-- Witherbark Supplies
 			i(249775),	-- Bright Berry
 			i(249779),	-- Discordant Tune
-			-- Mount
-			i(248681),	-- Scorching Valor
-
 
 			-- Toy
 
@@ -6124,7 +6121,6 @@ root(ROOTS.Unsorted, {
 				i(243215),	-- Enlarged Insect Organs
 				i(243218),	-- Pristine Blushleaf Shell
 				i(243226),	-- Glimmering Elemental Core
-				i(243228),	-- Dim Elemental Essence
 				i(252990),	-- Drustvar Candies
 				i(260429),	-- Crescent Cove Crab
 				i(260519),	-- Farm Carrots

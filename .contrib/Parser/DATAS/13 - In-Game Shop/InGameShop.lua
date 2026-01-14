@@ -172,6 +172,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { ADDED_7_3_0 },
 		}),
+		pet(4862, {	-- Smoldering Valor
+			-- TODO: I'm certain this has an itemid
+			["timeline"] = { ADDED_11_2_7 },
+		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC

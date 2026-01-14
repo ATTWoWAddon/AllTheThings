@@ -2580,6 +2580,7 @@ i(243145);	-- Well-Preserved Wrappings
 -- PATCH 11.2.7 --
 ------------------
 i(192604);	-- Ancient Lantern
+i(243228);	-- Dim Elemental Essence
 i(176878);	-- Dulled Memento
 i(243227);	-- Handful of Water Droplets
 i(263508);	-- Human Brain

@@ -481,7 +481,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
-			["cost"] = {{ "i", 127849, 1 }},	-- 1xFlask of the Countless Armies
+			["cost"] = {{ "i", 127849, 1 }},	-- 1x Flask of the Countless Armies
 		}),
 		q(39348, {	-- Halls of Valor: The Prime Ingredient
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
@@ -489,7 +489,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
-			["cost"] = {{ "i", 127850, 1 }},	-- 1xFlask of Ten Thousand Scars
+			["cost"] = {{ "i", 127850, 1 }},	-- 1x Flask of Ten Thousand Scars
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
@@ -497,7 +497,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls
-			["cost"] = {{ "i", 127847, 1 }},	-- 1xFlask of the Whispered Pact
+			["cost"] = {{ "i", 127847, 1 }},	-- 1x Flask of the Whispered Pact
+			["groups"] = {
+				o(249462, {	-- Crate of Dragur Dust
+					i(136819),	-- Dragur Dust (QI!)
+				}),
+			},
 		}),
 		q(39351, {	-- The Emerald Nightmare: Rage Fire
 			["sourceQuests"] = {

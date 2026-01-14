@@ -613,10 +613,16 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		------ 7.3.0 ------
 		q(48074, {	-- Looming Over Me
 			["sourceQuests"] = { 46941 },	-- The Path Forward
+			["coords"] = {
+				{ 42.8, 61.8, THE_VINDICAAR_EREDATH_LOWER },
+			},
 			["timeline"] = { ADDED_7_3_0 },
 			["groups"] = {
 				r(247807),	-- Lightweave Breeches [Rank 1]
-				i(151874),	-- Lightweave Loom (QI!)
+				o(272745, {	-- Lightweave Loom
+					["coord"] = { 53.8, 23.2, EREDATH },
+					["groups"] = { i(151874) },	-- Lightweave Loom (QI!)
+				}),
 			},
 		}),
 	})),

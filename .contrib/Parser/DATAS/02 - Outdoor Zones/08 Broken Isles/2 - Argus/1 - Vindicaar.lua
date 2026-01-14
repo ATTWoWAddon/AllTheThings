@@ -486,6 +486,7 @@ root(ROOTS.Zones, {
 							["coords"] = {
 								{ 33.6, 58.0, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.1, 57.1, THE_VINDICAAR_KROKUUN_UPPER },
+								{ 39.6, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(48273, {	-- The Speaker Listens
