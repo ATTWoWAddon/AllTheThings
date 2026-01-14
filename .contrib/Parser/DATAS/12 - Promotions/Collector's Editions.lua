@@ -491,7 +491,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #else
-	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_7 } }, {
+	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_7, ADDED_11_2_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			-- #if AFTER 11.2.5
