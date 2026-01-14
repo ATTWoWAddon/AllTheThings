@@ -124,13 +124,18 @@ end
 -- Prints the Help information for a given command
 -- cmd : The command's Help to print
 app.ChatCommands.PrintHelp = function(cmd)
-	local help = app.ChatCommands.Help[cmd:lower()]
-	if not help then
-		app.print("No Help provided for command:",cmd)
-		return true
-	end
-	for _,helpLine in ipairs(help) do
-		app.print(helpLine)
+	local help = cmd and app.ChatCommands.Help[cmd:lower()]
+	if help then
+		for _,helpLine in ipairs(help) do
+			app.print(helpLine)
+		end
+	else
+		for command,help in pairs(app.ChatCommands.Help) do
+			app.print("Command: " .. command);
+			for _,helpLine in ipairs(help) do
+				app.print(helpLine)
+			end
+		end
 	end
 	return true
 end
@@ -293,6 +298,8 @@ function(cmd)
 			local help = args[2] == "help"
 			if help then return app.ChatCommands.PrintHelp(cmd) end
 			return commandFunc(args)
+		elseif cmd == "help" then
+			return app.ChatCommands.PrintHelp(cmd)
 		end
 
 		-- first arg is always the window/command to execute

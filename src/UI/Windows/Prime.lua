@@ -32,7 +32,11 @@ app:CreateWindow("Prime", {
 			local commandFunc = app.ChatCommands[arg1]
 			if commandFunc then
 				if args[2] == "help" then return app.ChatCommands.PrintHelp(arg1) end
-				return commandFunc(args)
+				commandFunc(args);
+				return true;
+			elseif arg1 == "help" then
+				app.ChatCommands.PrintHelp();
+				return true;
 			end
 
 			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
