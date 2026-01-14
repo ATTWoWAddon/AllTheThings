@@ -448,9 +448,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			i(25535),	-- Netherwhelp (PET!)
-			i(30360, {	-- Lurky (PET!)
+			euONLY(i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",
-			}),
+			})),
 		},
 	})),
 	-- #if ANYCLASSIC
