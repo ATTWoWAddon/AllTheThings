@@ -6289,6 +6289,7 @@ app.Startup = function()
 		currentCharacter = {};
 		characterData[app.GUID] = currentCharacter;
 	end
+	currentCharacter.build = app.GameBuildVersion;
 	local name, realm = UnitName("player");
 	if not realm then realm = GetRealmName(); end
 	if name then currentCharacter.name = name; end

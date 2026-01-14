@@ -651,6 +651,7 @@ local deserializers = {
 		character.raceID = tonumber(data[9]);
 		character.lastPlayed = tonumber(data[10]);
 		character.Deaths = tonumber(data[11]);
+		character.build = data[12];
 	end,
 	TimeStamps = function(field, currentValue, data)
 		if not currentValue then
@@ -728,11 +729,13 @@ local serializers = {
 			.. ";" .. (character.name or character.guid) .. ";" .. (character.realm or "REALM")
 			.. ";" .. (character.factionID or "1").. ";" .. (character.lvl or "1")
 			.. ";" .. (character.classID or "1") .. ";" .. (character.class or "CLASS")
-			.. ";" .. (character.raceID or "1") .. ";" .. (character.lastPlayed or "0") .. ";" .. (character.Deaths or "0");
+			.. ";" .. (character.raceID or "1") .. ";" .. (character.lastPlayed or "0")
+			.. ";" .. (character.Deaths or "0") .. ";" .. (character.build or "BUILD");
 	end,
 
 	-- These are now included inside of "Summary" to compress the data package more.
 	battleTag = ignoreField,
+	build = ignoreField,
 	text = ignoreField,
 	name = ignoreField,
 	realm = ignoreField,
@@ -1200,8 +1203,14 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 	if character then
 		local primeData = character.PrimeData;
 		if primeData then
+			local buildString;
+			if character.build then
+				local expansion = app.CreateExpansion(character.build * 0.0001);
+				buildString = "|T" .. expansion.icon .. ":0|t " .. expansion.text;
+			end
 			tinsert(tooltipInfo, {
 				left = primeData.modeString,
+				right = buildString,
 				r = 1, g = 1, b = 1
 			});
 			tinsert(tooltipInfo, {
