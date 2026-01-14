@@ -195,7 +195,6 @@ root(ROOTS.Unsorted, {
 			-- qi
 			i(235651),	-- Conveniently-Shaped Claw
 			i(235656),	-- Relic of Domination
-			i(235666),	-- Shadow Infused Shard
 			i(237142),	-- Arcane Viewfinder
 			-- prof
 			i(235919),	-- [PH] 12.0 Cooking - Test Food
@@ -1560,6 +1559,7 @@ root(ROOTS.Unsorted, {
 			i(246335),	-- Glimmer of Midnight Tailoring Knowledge
 			-- QI
 			i(246374),	-- Juvenile Blood
+			i(246397),	-- Twilight Cultist Robes
 			i(246436),	-- Ogre Tome of Dark Magic
 			i(246437),	-- Ogre Tome of Fighting Techniques
 			i(246439),	-- Void Ashes

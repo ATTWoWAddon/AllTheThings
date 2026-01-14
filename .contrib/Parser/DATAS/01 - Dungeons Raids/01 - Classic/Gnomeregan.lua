@@ -615,7 +615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "questID", 2842 },
+					["lockCriteria"] = { 1, "questID", 2842 },	-- Chief Engineer Scooty
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rig Blueprints

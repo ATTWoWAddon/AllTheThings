@@ -11,11 +11,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(61430),	-- Crunching for Cultists
-			ach(42300, {	-- Two Minutes to Midnight
-				["groups"] = {
-					title(642),	-- %s, Thorn of Twilight
-					i(246594),	-- Light-Forged Mechsuit (MOUNT!)
-				},
+			ach(42300, {	-- Two Minutes to Midnight (automated)
+				title(642),	-- <Name>, Thorn of Twilight
+				i(246594),	-- Light-Forged Mechsuit (MOUNT!)
 			}),
 		}),
 		n(QUESTS, {
@@ -35,8 +33,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			q(90761, {	-- Avoiding Blame [H]
 				["sourceQuest"] = 90764,	-- The Cult Within [H]
-				--["qg"] = ,	-- X
+				["qg"] = 246158,	-- Grand Magister Rommath
 				["races"] = HORDE_ONLY,
+				["coord"] = { 42.1, 60.4, ORGRIMMAR },
 			}),
 			q(90762, {	-- The Twilight Highlands [A]
 				["sourceQuest"] = 90760,	-- Avoiding Blame [A]
@@ -46,8 +45,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			q(90763, {	-- The Twilight Highlands [H]
 				["sourceQuest"] = 90761,	-- Avoiding Blame [H]
-				--["qg"] = ,	-- X
+				["qg"] = 246158,	-- Grand Magister Rommath
 				["races"] = HORDE_ONLY,
+				["coord"] = { 42.1, 60.4, ORGRIMMAR },
 			}),
 			q(90765, {	-- Midnight Dress
 				["sourceQuests"] = {
@@ -63,20 +63,17 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						["groups"] = { i(246398) },	-- Cultist Cowl (QI!)
 					}),
 					o(553558, {	-- Cultist Dagger
-						["coord"] = { 46.6, 72.0, TWILIGHT_HIGHLANDS },
+						["coord"] = { 46.5, 72.0, TWILIGHT_HIGHLANDS },
 						["groups"] = { i(246399) },	-- Cultist Dagger (QI!)
 					}),
 					i(246400),	-- Cultist Robes (QI!)
-					i(246397),	-- Twilight Cultist Robes (QI!)
 				},
 			}),
 			------ Stay awhile and listen ------
 			hqt(92103, {	-- Stay awhile and listen: Squabble Amongst Ministers
 				["name"] = "Stay awhile and listen: Squabble Amongst Ministers",
-				["sourceQuests"] = {
-					90762,	-- The Twilight Highlands [A]
-					90763,	-- The Twilight Highlands [H]
-				},
+				["description"] = "Dialogue becomes available after accepting 'Midnight Dress' (90765).",
+				["sourceQuest"] = 90765,	-- Midnight Dress
 				["qg"] = 237506,	-- Magister Umbric
 				["coord"] = { 49.9, 80.8, TWILIGHT_HIGHLANDS },
 			}),
@@ -106,33 +103,33 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					title(643),	-- <Name>, Definitely Not a Cultist
 				},
 			}),
-			-- Repeatable (Daily) Quests
+			-- Repeatable Quests
 			q(87308, {	-- Twilight's Dawn
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isDaily"] = true,
+				["isRepeatable"] = true,
 			}),
 			q(91795, {	-- Disrupt the Call
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isDaily"] = true,
+				["isRepeatable"] = true,
 			}),
 		}),
 		n(RARES, {
-			-- Several rares share Spawn Points. Coordinate depends on who the Cultists are trying to summon.
+			-- Several rares share Spawn Points. Location depends on which Rare is conducting the Ritual.
 			n(246462, {	-- Archbishop Benedictus
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
 			}),
 			n(246343, {	-- Asira Dawnslayer
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
 			}),
 			n(237853, {	-- Berg the Spellfist
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
 			}),
 			n(246478, {	-- Commander Ix'vaarha
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
 			}),
 			n(237997, {	-- Corla, Herald of Twilight
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
@@ -141,7 +138,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
 			}),
 			n(246549, {	-- Ez'Haadosh the Liminality
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
 			}),
 			n(246565, {	-- Gustavan, Herald of the End
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
@@ -156,19 +153,19 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
 			}),
 			n(246460, {	-- Ray of Putrescence
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
 			}),
 			n(246572, {	-- Redeye the Skullchewer
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
 			}),
 			n(246558, {	-- Saligrum the Observer
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
 			}),
 			n(246559, {	-- Sharfadi, Bulwark of the Night
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
 			}),
 			n(246844, {	-- T'aavihan the Unbound
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
 			}),
 			n(253378, {	-- Voice of the Eclipse
 				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
@@ -263,14 +260,14 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					iensemble(248218, {	-- Arsenal: Weathered Twilight's Hammer Armaments
 						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
 					}),
+					iensemble(249438, {	-- Ensemble: Well-Worn Twilight Cultist's Attire
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
+					}),
 					i(246628, {	-- Emerald Sporbit (PET!)
 						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 30 } },
 					}),
 					i(245330, {	-- Enchanted Blood Elven Candelabra (DECOR!)
 						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 50 } },
-					}),
-					iensemble(249438, {	-- Ensemble: Well-Worn Twilight Cultist's Attire
-						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
 					}),
 					i(224148, {	-- Retrained Skyrazor (MOUNT!)
 						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 100 } },
@@ -299,8 +296,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			q(86959, {	-- Bloodeye Prisoners
 				["coord"] = { 40.8, 66.7, TWILIGHT_HIGHLANDS },
 			}),
+			q(91779, {	-- Combat Training for Cultists
+				["coord"] = { 51.3, 71.3, TWILIGHT_HIGHLANDS },
+			}),
 			q(86957, {	-- Drakgor's Revenge
 				["coord"] = { 40.6, 17.5, TWILIGHT_HIGHLANDS },
+			}),
+			q(86941, {	-- Elemental Infusion
+				["coord"] = { 57.8, 31.1, TWILIGHT_HIGHLANDS },
+				["groups"] = { i(235666) },	-- Shadow Infused Shard (QI!)
 			}),
 			q(86945, {	-- Shadowed Supplies
 				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
@@ -308,6 +312,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			q(86939, {	-- Twilight's Wedge
 				["coord"] = { 39.0, 29.2, TWILIGHT_HIGHLANDS },
 				["groups"] = { i(235663) },	-- Captured Twilight's Blade Banner (PQI!)
+			}),
+			q(86938, {	-- Void Perforations
+				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
 			}),
 		})),
 	}),

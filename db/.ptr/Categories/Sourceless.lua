@@ -67,7 +67,6 @@ flt(5,{
 s(92330,155467,{f=5}),
 s(92333,155470,{f=5}),
 s(92335,155472,{f=5}),
-s(92336,155473,{b=1,f=5,r=2}),
 s(94574,158604,{b=1,f=5,r=2}),
 s(96203,160198,{b=1,f=5,r=2}),
 s(96834,160863,{f=5}),
@@ -185,10 +184,13 @@ flt(50,{awp=100107,sharedDescription="If you obtain this item, please provide as
 x(10,{
 x(10.0107,{
 i(208878,{b=1,f=55})})})}}),
-h(-41,{awp=100200,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{
+h(-41,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{awp=100200,g={
 x(10.02,{
-mm(207775,{b=1,questID=77146})})})}}),
+mm(207775,{b=1,questID=77146})})}}),
+x(11,{awp=110000,g={
+x(11.0000001,{
+mm(223510,{b=1,questID=82177})})}})}}),
 h(-33,{awp=90001,g={
 x(9,{
 x(9.0001,{
