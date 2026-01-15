@@ -297,12 +297,4 @@ app:CreateWindow("Random", {
 		};
 		self.data = self.defaultHeader;
 	end,
-	--OnUpdate = function(self, ...)
-		-- Update the groups without forcing Debug Mode.
-		--local visibilityFilter = app.Modules.Filter.Get.Visible();
-		--app.Modules.Filter.Set.Visible(true);
-		--self:DefaultUpdate(...);
-		--app.Modules.Filter.Set.Visible(visibilityFilter);
-		--return false;
-	--end
 });

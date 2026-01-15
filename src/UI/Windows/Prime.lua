@@ -60,7 +60,7 @@ app:CreateWindow("Prime", {
 		return false;
 	end,
 	OnUpdate = function(self, ...)
-		self.DefaultUpdate(self, ...);
+		self:DefaultUpdate(...);
 
 		-- Write the current character's progress.
 		local rootData = self.data;
