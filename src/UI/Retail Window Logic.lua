@@ -115,6 +115,9 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
+local function AssignChildrenForWindow(self)
+	AssignChildren(self.data);
+end
 -- TODO: instead of requiring 'got' parameter to indicate something was collected
 -- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
 -- and clear on update
@@ -1039,6 +1042,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Suffix = suffix;
 	window.Toggle = Toggle;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
+	window.AssignChildren = AssignChildrenForWindow;
 	window.DefaultUpdate = UpdateWindow;
 	window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.Refresh = function(...) Refresh(...) end;

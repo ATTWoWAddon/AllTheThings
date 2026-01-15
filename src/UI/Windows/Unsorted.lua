@@ -38,7 +38,7 @@ app:CreateWindow("Unsorted", {
 				self.data.g = unsorted;
 				app.CacheFields(self.data);
 				tinsert(unsorted, self.achievementHeader);
-				self:DefaultRebuild();
+				self:AssignChildren();
 			end
 		end
 		self:DefaultUpdate(...);

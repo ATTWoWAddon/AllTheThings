@@ -1222,6 +1222,9 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
+local function AssignChildrenForWindow(self)
+	AssignChildren(self.data);
+end
 local function UpdateWindow(self, force, trigger)
 	-- If this window doesn't have data, do nothing.
 	local data = self.data;
@@ -1641,12 +1644,7 @@ function app:CreateWindow(suffix, settings)
 
 		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		function window:DefaultRebuild()
-			AssignChildren(self.data);
-		end
-		function window:AssignChildren()
-			AssignChildren(self.data);
-		end
+		window.AssignChildren = AssignChildrenForWindow;
 		function window:ExpandData(expanded)
 			ExpandGroupsRecursively(self.data, expanded, true);
 		end
@@ -1658,7 +1656,7 @@ function app:CreateWindow(suffix, settings)
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = window;
 						self:ForceUpdate(true);
@@ -1671,7 +1669,7 @@ function app:CreateWindow(suffix, settings)
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:Update(true);
@@ -1683,7 +1681,7 @@ function app:CreateWindow(suffix, settings)
 				function window:ForceRebuild()
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						self.data.window = self;
 						self:ForceUpdate(true);
 					end
@@ -1691,7 +1689,7 @@ function app:CreateWindow(suffix, settings)
 				function window:Rebuild()
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						self.data.window = self;
 						self:Update(true);
 					end
@@ -1704,7 +1702,7 @@ function app:CreateWindow(suffix, settings)
 						print("ForceRebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
 						self.data.window = self;
-						self:DefaultRebuild();
+						self:AssignChildren();
 						print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:ForceUpdate(true);
@@ -1714,7 +1712,7 @@ function app:CreateWindow(suffix, settings)
 					if self.data then
 						print("Rebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
-						self:DefaultRebuild();
+						self:AssignChildren();
 						print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:Update(true);
@@ -1723,14 +1721,14 @@ function app:CreateWindow(suffix, settings)
 			else
 				function window:ForceRebuild()
 					if self.data then
-						self:DefaultRebuild();
+						self:AssignChildren();
 						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
 				function window:Rebuild()
 					if self.data then
-						self:DefaultRebuild();
+						self:AssignChildren();
 						self.data.window = self;
 						self:Update(true);
 					end
@@ -2581,7 +2579,7 @@ local function OnInitForPopout(self, questID, group)
 		end
 	end
 
-	AssignChildren(self.data);
+	self:AssignChildren();
 	UpdateGroups(self.data, self.data.g);
 end
 function app:CreateMiniListForGroup(group)
