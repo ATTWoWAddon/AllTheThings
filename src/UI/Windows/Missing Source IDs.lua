@@ -35,10 +35,17 @@ app:CreateWindow("Missing Source IDs", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.
-		local oldFilter = AllTheThingsSettings.Unobtainable[2];
-		AllTheThingsSettings.Unobtainable[2] = true;
+		local rawSettings = app.Settings:GetRawSettings("General");
+		local debugMode = app.MODE_DEBUG;
+		if not debugMode then
+			rawSettings.DebugMode = true;
+			app.Settings:UpdateMode();
+		end
 		self:DefaultUpdate(...);
-		AllTheThingsSettings.Unobtainable[2] = oldFilter;
+		if not debugMode then
+			rawSettings.DebugMode = debugMode;
+			app.Settings:UpdateMode();
+		end
 		return false;
 	end
 });

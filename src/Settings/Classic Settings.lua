@@ -239,18 +239,18 @@ settings.Initialize = function(self)
 	_G["AllTheThingsSettingsPerCharacter"] = AllTheThingsSettingsPerCharacter;
 
 	-- Assign the default settings
-	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
-	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
-	if not AllTheThingsSettings.Unobtainable then
-		if AllTheThingsSettings.Unobtainables then
-			AllTheThingsSettings.Unobtainable = AllTheThingsSettings.Unobtainables;
+	if not RawSettings.General then RawSettings.General = {}; end
+	if not RawSettings.Tooltips then RawSettings.Tooltips = {}; end
+	if not RawSettings.Unobtainable then
+		if RawSettings.Unobtainables then
+			RawSettings.Unobtainable = RawSettings.Unobtainables;
 		else
-			AllTheThingsSettings.Unobtainable = {};
+			RawSettings.Unobtainable = {};
 		end
 	end
-	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
-	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
-	setmetatable(AllTheThingsSettings.Unobtainable, UnobtainableSettingsBase);
+	setmetatable(RawSettings.General, GeneralSettingsBase);
+	setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
+	setmetatable(RawSettings.Unobtainable, UnobtainableSettingsBase);
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
@@ -302,7 +302,7 @@ settings.Initialize = function(self)
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)
-	return AllTheThingsSettings.General[setting];
+	return RawSettings.General[setting];
 end
 settings.ResetFilters = function(self)
 	wipe(AllTheThingsSettingsPerCharacter.Filters)
@@ -457,7 +457,7 @@ settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
 end
 settings.GetTooltipSetting = function(self, setting)
-	return AllTheThingsSettings.Tooltips[setting];
+	return RawSettings.Tooltips[setting];
 end
 
 local ModifierFuncs = {
@@ -468,9 +468,9 @@ local ModifierFuncs = {
 }
 settings.GetTooltipSettingWithMod = function(self, setting)
 	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
-	local v = AllTheThingsSettings.Tooltips[setting]
+	local v = RawSettings.Tooltips[setting]
 	if not v then return v end
-	local k = AllTheThingsSettings.Tooltips[setting..":Mod"]
+	local k = RawSettings.Tooltips[setting..":Mod"]
 	if k == "None" then
 		return v
 	end
@@ -483,10 +483,10 @@ settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting]
 end
 settings.GetUnobtainableFilter = function(self, u)
-	return AllTheThingsSettings.Unobtainable[u];
+	return RawSettings.Unobtainable[u];
 end
 settings.Set = function(self, setting, value)
-	AllTheThingsSettings.General[setting] = value;
+	RawSettings.General[setting] = value;
 	app.HandleEvent("Settings.OnSet","General",setting,value)
 	self:Refresh();
 end
@@ -505,7 +505,7 @@ settings.SetFilter = function(self, filterID, value)
 	self:UpdateMode(1);
 end
 settings.SetTooltipSetting = function(self, setting, value)
-	AllTheThingsSettings.Tooltips[setting] = value;
+	RawSettings.Tooltips[setting] = value;
 	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
 	app.WipeSearchCache();
 	self:Refresh();

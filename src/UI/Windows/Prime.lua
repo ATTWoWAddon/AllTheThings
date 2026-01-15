@@ -64,10 +64,12 @@ app:CreateWindow("Prime", {
 
 		-- Write the current character's progress.
 		local rootData = self.data;
-		app.CurrentCharacter.PrimeData = {
-			progress = rootData.progress,
-			total = rootData.total,
-			modeString = rootData.modeString,
-		};
+		if rootData and rootData.total and rootData.total > 0 then
+			app.CurrentCharacter.PrimeData = {
+				progress = rootData.progress,
+				total = rootData.total,
+				modeString = rootData.modeString,
+			};
+		end
 	end
 });

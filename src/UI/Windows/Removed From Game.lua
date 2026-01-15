@@ -35,10 +35,11 @@ app:CreateWindow("Removed From Game", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.
-		local oldFilter = AllTheThingsSettings.Unobtainable[2];
-		AllTheThingsSettings.Unobtainable[2] = true;
+		local rawSettings = app.Settings:GetRawSettings("Unobtainable");
+		local oldFilter = rawSettings[2];
+		rawSettings[2] = true;
 		self:DefaultUpdate(...);
-		AllTheThingsSettings.Unobtainable[2] = oldFilter;
+		rawSettings[2] = oldFilter;
 		return false;
 	end
 });

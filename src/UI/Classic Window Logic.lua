@@ -1555,8 +1555,8 @@ function app:CreateWindow(suffix, settings)
 		end
 		window:SetSize(300, 300);
 		window:Hide();
-
-		if AllTheThingsSettings then
+		
+		if app.IsReady then
 			if suffix == "Prime" then
 				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
 			else

@@ -180,14 +180,15 @@ app:CreateWindow("Missing Quests", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Force Debug Mode
+		local rawSettings = app.Settings:GetRawSettings("General");
 		local debugMode = app.MODE_DEBUG;
 		if not debugMode then
-			AllTheThingsSettings.General.DebugMode = true;
+			rawSettings.DebugMode = true;
 			app.Settings:UpdateMode();
 		end
 		self:DefaultUpdate(...);
 		if not debugMode then
-			AllTheThingsSettings.General.DebugMode = debugMode;
+			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
 		return false;
