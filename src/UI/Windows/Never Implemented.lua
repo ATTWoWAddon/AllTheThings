@@ -8,7 +8,7 @@ app:CreateWindow("Never Implemented", {
 	OnLoad = function(self, settings)
 		local g = app.Categories.NeverImplemented;
 		if g then
-			local nyiData = app.CacheFields({
+			self.data = app.CacheFields({
 				text = L.NEVER_IMPLEMENTED,
 				icon = app.asset("Interface_Tchest"),
 				description = L.NEVER_IMPLEMENTED_DESC,
@@ -18,7 +18,6 @@ app:CreateWindow("Never Implemented", {
 				u = 1,
 				g = g,
 			});
-			self.data = nyiData;
 			self:AssignChildren();
 		end
 	end,

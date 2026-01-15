@@ -11,9 +11,8 @@ app:CreateWindow("Missing Quests", {
 		"attquestie",
 		"attmq",
 	},
-	IsQuestieLoaded = false,
-	OnRebuild = function(self, ...)
-		if self.data then return; end
+	HideFromSettings = true,
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Missing Quests",
 			icon = app.asset("Interface_Quest"),
@@ -40,7 +39,8 @@ app:CreateWindow("Missing Quests", {
 				},
 			},
 			OnUpdate = function(data)
-				if not self.IsQuestieLoaded then return; end
+				local QuestieDB = self.QuestieDB;
+				if not QuestieDB then return; end
 				if not data.g then
 					data.g = {};
 					for i,header in ipairs(data.options) do
@@ -50,9 +50,6 @@ app:CreateWindow("Missing Quests", {
 				end
 
 				local MissingQuestsFromATT, MissingQuestsFromQuestie = {}, {};
-				local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
-				if not QuestieDB.QuestPointers then return; end
-
 				local MissingQuestsFromATTDict, MissingQuestsFromQuestieDict = {}, {};
 				for id,_ in pairs(ATTAccountWideData.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
@@ -171,10 +168,19 @@ app:CreateWindow("Missing Quests", {
 		};
 		app:StartATTCoroutine("Waiting For Questie...", function()
 			coroutine.yield();
-			while not (Questie and Questie.started) do
+			local waiter = 200;
+			while not QuestieLoader do
+				coroutine.yield();
+				waiter = waiter - 1;
+				if waiter < 0 then
+					return;
+				end
+			end
+			local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
+			while not QuestieDB.QuestPointers do
 				coroutine.yield();
 			end
-			self.IsQuestieLoaded = true;
+			self.QuestieDB = QuestieDB;
 			self:Update(true);
 		end);
 	end,

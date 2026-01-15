@@ -5,8 +5,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Missing Source IDs", {
 	Commands = { "attmissingsourceids" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Missing Source IDs",
 			icon = app.asset("WindowIcon_RWP"),
@@ -31,7 +30,6 @@ app:CreateWindow("Missing Source IDs", {
 				end
 			end,
 		};
-		return true;
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.

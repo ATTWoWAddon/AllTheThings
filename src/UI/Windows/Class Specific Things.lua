@@ -6,8 +6,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Class Specific Things", {
 	Commands = { "attclasses" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Class Specific Things",
 			icon = app.asset("WindowIcon_RWP"),
@@ -37,6 +36,5 @@ app:CreateWindow("Class Specific Things", {
 				end
 			end,
 		};
-		return true;
 	end,
 });

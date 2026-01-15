@@ -157,74 +157,75 @@ end
 app:CreateWindow("Objects", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
-	OnRebuild = function(self)
-		if not self.data then
-			local g = {
-				{	-- Check Icons
-					text = "Check Icons",
-					icon = 135468,
-					description = "Click this row to toggle icon checking",
-					collectible = true,
-					visible = true,
-					priority = 6,
-					OnClick = function(row, button)
-						checkIcons = not checkIcons;
-						self:Update(true);
-						return true;
-					end,
-					OnUpdate = function(data)
-						data.parent = self.data;
-						data.collected = checkIcons;
-						data.visible = true;
-						return true;
-					end,
-				},
-				{	-- Check Models
-					text = "Check Models",
-					icon = 135468,
-					description = "Click this row to toggle model checking",
-					collectible = true,
-					visible = true,
-					priority = 6,
-					OnClick = function(row, button)
-						checkModels = not checkModels;
-						self:Update(true);
-						return true;
-					end,
-					OnUpdate = function(data)
-						data.parent = self.data;
-						data.collected = checkModels;
-						data.visible = true;
-						return true;
-					end,
-				},
-			};
-			self.data = {
-				text = "Object Debugger",
-				icon = app.asset("WindowIcon_RaidAssistant"),
-				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
-				back = 1,
-				indent = 0,
-				visible = true,
-				expanded = true,
-				g = g,
-			};
+	OnLoad = function(self, settings)
+		self.data = {
+			text = "Object Debugger",
+			icon = app.asset("WindowIcon_RaidAssistant"),
+			description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
+			back = 1,
+			indent = 0,
+			visible = true,
+			expanded = true,
+			g = {},
+			OnUpdate = function(data)
+				local g = data.g;
+				if #g < 1 then
+					tinsert(g, {	-- Check Icons
+						text = "Check Icons",
+						icon = 135468,
+						description = "Click this row to toggle icon checking",
+						collectible = true,
+						visible = true,
+						priority = 6,
+						OnClick = function(row, button)
+							checkIcons = not checkIcons;
+							self:Update(true);
+							return true;
+						end,
+						OnUpdate = function(data)
+							data.parent = self.data;
+							data.collected = checkIcons;
+							data.visible = true;
+							return true;
+						end,
+					});
+					tinsert(g, {	-- Check Models
+						text = "Check Models",
+						icon = 135468,
+						description = "Click this row to toggle model checking",
+						collectible = true,
+						visible = true,
+						priority = 6,
+						OnClick = function(row, button)
+							checkModels = not checkModels;
+							self:Update(true);
+							return true;
+						end,
+						OnUpdate = function(data)
+							data.parent = self.data;
+							data.collected = checkModels;
+							data.visible = true;
+							return true;
+						end,
+					});
 
-			-- Cache and sort all of the objectIDs we reference in our DB.
-			local objectIDs = {};
-			for objectID,o in pairs(app.SearchForFieldContainer("objectID")) do
-				tinsert(objectIDs, tonumber(objectID));
-			end
-			app.Sort(objectIDs, app.SortDefaults.Values);
+					-- Cache and sort all of the objectIDs we reference in our DB.
+					local objectIDs = {};
+					for objectID,o in pairs(app.SearchForFieldContainer("objectID")) do
+						tinsert(objectIDs, tonumber(objectID));
+					end
+					app.Sort(objectIDs, app.SortDefaults.Values);
 
-			-- Now iterate through those ids and create objects for them.
-			for _,objectID in ipairs(objectIDs) do
-				tinsert(g, app.CreateObject(objectID, {
-					OnTooltip = OnTooltipForObject,
-					OnUpdate = OnUpdateForObject,
-					parent = self.data
-				}));
+					-- Now iterate through those ids and create objects for them.
+					for _,objectID in ipairs(objectIDs) do
+						tinsert(g, app.CreateObject(objectID, {
+							OnTooltip = OnTooltipForObject,
+							OnUpdate = OnUpdateForObject,
+							parent = self.data
+						}));
+					end
+				end
 			end
-		end
-	end
+		};
+	end,
 });

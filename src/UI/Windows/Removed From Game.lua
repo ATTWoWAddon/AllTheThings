@@ -5,8 +5,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Removed From Game", {
 	Commands = { "attrfg" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Removed From Game",
 			icon = app.asset("WindowIcon_RWP"),
@@ -31,7 +30,6 @@ app:CreateWindow("Removed From Game", {
 				end
 			end,
 		};
-		return true;
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.

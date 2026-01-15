@@ -6,8 +6,7 @@ local L = app.L;
 -- Implementation
 app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnLoad = function(self, settings)
 		self.data = {
 			text = "New With Patch",
 			icon = app.asset("WindowIcon_RWP"),
@@ -63,6 +62,5 @@ app:CreateWindow("New With Patch", {
 				end
 			end,
 		};
-		return true;
 	end,
 });

@@ -7,8 +7,7 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 -- Implementation
 app:CreateWindow("Race Specific Things", {
 	Commands = { "attraces" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Race Specific Things",
 			icon = app.asset("WindowIcon_RWP"),
@@ -38,6 +37,5 @@ app:CreateWindow("Race Specific Things", {
 				end
 			end,
 		};
-		return true;
 	end,
 });

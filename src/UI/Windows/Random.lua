@@ -171,14 +171,7 @@ app:CreateWindow("Random", {
 	OnSave = function(self, settings)
 		settings.SearchFilter = SearchFilter;
 	end,
-	OnRebuild = function(self, ...)
-		if self.data then return; end
-
-		-- For this window's options to work, Prime needs to be fully initialized.
-		local prime = app:GetWindow("Prime");
-		if not prime then return; end
-		if not prime.data then prime:ForceUpdate(); end
-
+	OnInit = function(self, handlers)
 		self.defaultHeader = {
 			text = "Random - Go Get 'Em!",
 			icon = app.asset("WindowIcon_Random"),
@@ -215,6 +208,16 @@ app:CreateWindow("Random", {
 					end,
 				}
 			},
+			OnUpdate = function(data)
+				local g = data.g;
+				if #g < 1 then
+					data.OnUpdate = nil;
+					-- For this window's options to work, Prime needs to be fully initialized.
+					local prime = app:GetWindow("Prime");
+					if not prime.data then prime:ForceUpdate(); end
+					Reroll(self);
+				end
+			end
 		};
 		self.filterOptions = {
 			text = "Apply a Search Filter",
@@ -292,9 +295,7 @@ app:CreateWindow("Random", {
 				},
 			},
 		};
-
 		self.data = self.defaultHeader;
-		Reroll(self);
 	end,
 	--OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

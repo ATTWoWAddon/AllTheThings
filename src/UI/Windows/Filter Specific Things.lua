@@ -5,8 +5,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Filter Specific Things", {
 	Commands = { "attfiltertypes" },
-	OnRebuild = function(self)
-		if self.data then return true; end
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Filter Specific Things",
 			icon = app.asset("WindowIcon_RWP"),
@@ -34,7 +33,6 @@ app:CreateWindow("Filter Specific Things", {
 				end
 			end,
 		};
-		return true;
 	end,
 	OnUpdate = function(self, ...)
 		-- Prevent Quests and Achievements from being collectible within this context.
