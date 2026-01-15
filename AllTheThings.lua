@@ -2197,7 +2197,7 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 					end
 					if refresh then
 						-- refresh the window again
-						self:BaseUpdate();
+						self:DefaultUpdate();
 					else
 						-- otherwise stop until a group is expanded again
 						self.UpdateDone = nil;
@@ -2237,7 +2237,7 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 			})
 			self:SetData(db);
 		end
-		self:BaseUpdate(true);
+		self:DefaultUpdate(true);
 	end
 end;
 local function RoundNumber(number, decimalPlaces)
@@ -2414,7 +2414,7 @@ customWindowUpdates.AuctionData = function(self)
 	AssignChildren(self.data);
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
-	self:BaseUpdate(true);
+	self:DefaultUpdate(true);
 end;
 customWindowUpdates.Bounty = function(self, force, got)
 	if not self.initialized then
@@ -2427,7 +2427,7 @@ customWindowUpdates.Bounty = function(self, force, got)
 			["OnUpdate"] = app.AlwaysShowUpdate,
 			["OnClickHandler"] = function(toggle)
 				app.Settings:SetTooltipSetting("Auto:BountyList", toggle);
-				self:BaseUpdate(true, got);
+				self:DefaultUpdate(true, got);
 			end,
 		});
 		local header = app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
@@ -2478,7 +2478,7 @@ customWindowUpdates.Bounty = function(self, force, got)
 	if self:IsVisible() then
 		-- Update the window and all of its row data
 		self.data.back = 1;
-		self:BaseUpdate(true, got);
+		self:DefaultUpdate(true, got);
 	end
 end;
 customWindowUpdates.CosmicInfuser = function(self, force)
@@ -2571,7 +2571,7 @@ customWindowUpdates.CosmicInfuser = function(self, force)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 customWindowUpdates.CurrentInstance = function(self, force, got)
@@ -3010,7 +3010,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- Update the mapID into the data for external reference in case not rebuilding
 			self.data.mapID = self.mapID;
 		end
-		self:BaseUpdate(force, got);
+		self:DefaultUpdate(force, got);
 	end
 end;
 customWindowUpdates.ItemFilter = function(self, force)
@@ -3102,7 +3102,7 @@ customWindowUpdates.ItemFilter = function(self, force)
 			self:BuildData();
 		end
 
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 customWindowUpdates.NWP = function(self, force)
@@ -3210,7 +3210,7 @@ customWindowUpdates.NWP = function(self, force)
 		self:BuildData();
 	end
 	if self:IsVisible() then
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember window data of each expansion (param) and dont make new windows infinitely
@@ -3409,11 +3409,11 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 		self:BuildData();
 	end
 	if self:IsVisible() then
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 customWindowUpdates.Prime = function(self, ...)
-	self:BaseUpdate(...);
+	self:DefaultUpdate(...);
 
 	-- Write the current character's progress if a top-level update has been completed
 	local rootData = self.data;
@@ -3649,7 +3649,7 @@ customWindowUpdates.RaidAssistant = function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self:SetData(raidassistant);
-							Callback(self.BaseUpdate, self, true);
+							Callback(self.DefaultUpdate, self, true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -3666,7 +3666,7 @@ customWindowUpdates.RaidAssistant = function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self:SetData(raidassistant);
-							Callback(self.BaseUpdate, self, true);
+							Callback(self.DefaultUpdate, self, true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -3856,7 +3856,7 @@ customWindowUpdates.RaidAssistant = function(self)
 		local visibleState = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible()
 		self:BuildData();
-		self:BaseUpdate(true);
+		self:DefaultUpdate(true);
 		app.Modules.Filter.Set.Visible(visibleState)
 	end
 end;
@@ -4146,7 +4146,7 @@ customWindowUpdates.Random = function(self)
 		self.data.total = 0;
 		self.data.indent = 0;
 		AssignChildren(self.data);
-		self:BaseUpdate(true);
+		self:DefaultUpdate(true);
 	end
 end;
 customWindowUpdates.RWP = function(self, force)
@@ -4166,7 +4166,7 @@ customWindowUpdates.RWP = function(self, force)
 		self.ExpandInfo = { Expand = true, Manual = true };
 	end
 	if self:IsVisible() then
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 customWindowUpdates.Import = function(self, force)
@@ -4318,7 +4318,7 @@ customWindowUpdates.Import = function(self, force)
 		self:ResetToInitialButtons()
 	end
 
-	self:BaseUpdate(force)
+	self:DefaultUpdate(force)
 end
 customWindowUpdates.Sync = function(self)
 	if self:IsVisible() then
@@ -4554,7 +4554,7 @@ customWindowUpdates.Sync = function(self)
 		for i,g in ipairs(self.data.g) do
 			if g.OnUpdate then g.OnUpdate(g, self); end
 		end
-		self:BaseUpdate(true);
+		self:DefaultUpdate(true);
 	end
 end;
 
@@ -4913,7 +4913,7 @@ customWindowUpdates.list = function(self, force, got)
 		-- requires Visibility filter to check .visibile for display of the group
 		local filterVisible = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible(true);
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
 end
@@ -5413,7 +5413,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force or self.force, got);
+		self:DefaultUpdate(force or self.force, got);
 		self.force = nil;
 	end
 end;
@@ -5893,7 +5893,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			end
 		end
 
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end;
 end)();

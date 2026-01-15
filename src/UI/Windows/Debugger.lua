@@ -859,7 +859,7 @@ app.LoadDebugger = function()
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end);
 	local debuggerWindow = app:GetWindow("Debugger");
 	app.TopLevelUpdateGroup(debuggerWindow.data);

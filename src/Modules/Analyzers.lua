@@ -41,7 +41,7 @@ local OnUpdate_CheckSymlinks = function(self, force)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end
 end
 api.CheckSymlinks = function()

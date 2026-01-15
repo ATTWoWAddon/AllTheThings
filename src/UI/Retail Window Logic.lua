@@ -1040,7 +1040,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Toggle = Toggle;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
 	window.DefaultUpdate = UpdateWindow;
-	window.BaseUpdate = UpdateWindow;
 	window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.Refresh = function(...) Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
@@ -1384,7 +1383,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 			end
 			-- Add Timerunning filter to the popout
 			popout.Filters = not popout.isQuestChain and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
-			self:BaseUpdate(force or got, got);
+			self:DefaultUpdate(force or got, got);
 		end
 
 		app.HandleEvent("OnNewPopoutGroup", popout.data)
