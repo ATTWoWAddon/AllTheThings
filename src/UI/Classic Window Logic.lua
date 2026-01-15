@@ -1206,7 +1206,7 @@ local function SetWindowVisible(self, show)
 		self:Hide();
 	end
 end
-local function ToggleWindow(self, cmd)
+local function ToggleWindow(self)
 	self:SetVisible(not self:IsVisible());
 end
 local function ProcessGroup(data, object)
@@ -1819,16 +1819,15 @@ function app:CreateWindow(suffix, settings)
 				RedrawVisibleRowData(self);
 			end
 		end
-
+		
+		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
+		-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
 		local delays = {};
 		window.DelayedCall = function(self, method, delay, force)
 			delays[method] = delay or 60;
 			window:StartATTCoroutine("DelayedCall::" .. method, function()
-				while delays[method] > 0 do
-					coroutine.yield();
+				while delays[method] > 0 or InCombatLockdown() do
 					delays[method] = delays[method] - 1;
-				end
-				while InCombatLockdown() do
 					coroutine.yield();
 				end
 				window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
