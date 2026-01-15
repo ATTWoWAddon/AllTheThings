@@ -4513,7 +4513,7 @@ i(252193, 4896);	-- Slippery Saul
 -- PATCH 11.2.7 --
 ------------------
 i(254876, 4911);	-- P.O.S.T. Assistant
-i(0, 4862);	-- Smoldering Valor
+i(248073, 4862);	-- Smoldering Valor
 i(245544, 4851);	-- Tiny Snow Buddy
 
 ------------------
