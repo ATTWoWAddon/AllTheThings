@@ -141,6 +141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1109,6 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(119, {	-- Return to Verner
+					["sourceQuest"] = 118,	-- The Price of Shoes
 					["providers"] = {
 						{ "n",  514 },	-- Smith Argus
 						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
@@ -1593,6 +1595,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(122, {	-- Underbelly Scales
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
