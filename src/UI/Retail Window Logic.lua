@@ -1042,10 +1042,11 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Suffix = suffix;
 	window.Toggle = Toggle;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
+	local onUpdateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.AssignChildren = AssignChildrenForWindow;
-	window.DefaultUpdate = UpdateWindow;
-	window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
-	window.Refresh = function(...) Refresh(...) end;
+	window.DefaultUpdate = function(...) return UpdateWindow(...) end;
+	window.Update = function(...) return onUpdateFunc(...) end;
+	window.Refresh = function(...) return Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
 	window.SetVisible = SetVisible;
