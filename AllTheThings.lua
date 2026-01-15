@@ -2411,7 +2411,7 @@ customWindowUpdates.AuctionData = function(self)
 	self.data.total = 0;
 	self.data.indent = 0;
 	self.data.back = 1;
-	AssignChildren(self.data);
+	self:AssignChildren();
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:DefaultUpdate(true);
@@ -2459,7 +2459,7 @@ customWindowUpdates.Bounty = function(self, force, got)
 			}),
 		});
 		self:SetData(header);
-		AssignChildren(self.data);
+		self:AssignChildren();
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -4128,7 +4128,7 @@ customWindowUpdates.Random = function(self)
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
-				AssignChildren(self.data);
+				self:AssignChildren();
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
@@ -4145,7 +4145,7 @@ customWindowUpdates.Random = function(self)
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.indent = 0;
-		AssignChildren(self.data);
+		self:AssignChildren();
 		self:DefaultUpdate(true);
 	end
 end;
@@ -6106,7 +6106,7 @@ app.ProcessAuctionData = function()
 	-- app.Sort(window.data.g, function(a, b)
 	-- 	return (b.priority or 0) > (a.priority or 0);
 	-- end);
-	-- AssignChildren(window.data);
+	-- window:AssignChildren();
 	-- app.TopLevelUpdateGroup(window.data);
 	-- window:Show();
 	-- window:Update();
