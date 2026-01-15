@@ -320,7 +320,7 @@ local KeyMaps = setmetatable({
 	quest = "questID",
 }, { __index = function(t,key) return key:gsub("id", "ID") end})
 app.LoadDebugger = function()
-	local debuggerWindow = app:GetWindow("Debugger", UIParent, function(self, force)
+	app.AddCustomWindowOnUpdate("Debugger", function(self, force)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
@@ -861,6 +861,7 @@ app.LoadDebugger = function()
 		-- Update the window and all of its row data
 		self:BaseUpdate(force);
 	end);
+	local debuggerWindow = app:GetWindow("Debugger");
 	app.TopLevelUpdateGroup(debuggerWindow.data);
 	debuggerWindow:Show();
 	app.LoadDebugger = function()
