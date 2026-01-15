@@ -1038,10 +1038,10 @@ function app:GetWindow(suffix, parent, onUpdate)
 	app.Windows[suffix] = window;
 	window.Suffix = suffix;
 	window.Toggle = Toggle;
-	local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
-	window.BaseUpdate = function(...) UpdateWindow(...) end;
-	window.Update = function(...) updateFunc(...) end;
+	window.DefaultUpdate = UpdateWindow;
+	window.BaseUpdate = UpdateWindow;
+	window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.Refresh = function(...) Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
@@ -1144,6 +1144,15 @@ function app:GetWindow(suffix, parent, onUpdate)
 	-- TODO: eventually remove this when Windows are re-designed to have an OnInit/OnUpdate distinction for Retail
 	window:Update();
 	return window;
+end
+function app:CreateWindow(suffix, settings)
+	-- TODO: Properly implement or use the classic version of CreateWindow.
+	if settings then
+		if settings.OnUpdate then
+			app.AddCustomWindowOnUpdate(suffix, settings.OnUpdate);
+		end
+	end
+	return app:GetWindow(suffix);
 end
 
 -- TODO: Refactoring
