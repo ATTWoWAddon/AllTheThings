@@ -57,10 +57,12 @@ local DynamicCategory_Nested = function(self)
 	self.SortType = "Global";
 	-- sort children of top level groups
 	local g = self.g
-	for i = 1, #g do
-		local child = g[i]
-		if child.g then
-			child.SortType = "expansion"
+	if g then
+		for i = 1, #g do
+			local child = g[i]
+			if child.g then
+				child.SortType = "expansion"
+			end
 		end
 	end
 	-- don't fill into dynamic groups if they are popped out
