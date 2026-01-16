@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local tinsert, math_floor
 	= tinsert, math.floor;
 local Colorize = app.Modules.Color.Colorize;
@@ -16,11 +17,73 @@ local function GetPatchString(patch)
 	patch = tonumber(patch)
 	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 100) .. "." .. (patch % 10))
 end
+local function ParseCommand(self, cmd)
+	if cmd and cmd ~= "" then
+		cmd = cmd:lower();
+		local patch = 0;
+		local major, minor, build = ("."):split(cmd);
+		if not minor then
+			if cmd == "default" then
+				patch = DefaultRWP;
+			elseif cmd == "classic" then
+				patch = 19999;
+			elseif cmd == "tbc" then
+				patch = 29999;
+			elseif cmd == "wrath" then
+				patch = 39999;
+			elseif cmd == "cata" then
+				patch = 49999;
+			elseif cmd == "mop" then
+				patch = 59999;
+			elseif cmd == "wod" then
+				patch = 69999;
+			elseif cmd == "legion" then
+				patch = 79999;
+			elseif cmd == "bfa" then
+				patch = 89999;
+			elseif cmd == "shadowlands" or cmd == "sl" then
+				patch = 99999;
+			elseif cmd == "dragonflight" or cmd == "df" then
+				patch = 109999;
+			elseif cmd == "tww" then
+				patch = 119999;
+			elseif cmd == "midnight" then
+				patch = 129999;
+			elseif cmd == "any" or cmd == "all" then
+				patch = 9999999999;
+			else
+				patch = tonumber(cmd);
+			end
+		else
+			if build then patch = patch + tonumber(build); end
+			patch = patch + (tonumber(minor) * 100);
+			patch = patch + (tonumber(major) * 10000);
+		end
+		if patch > 0 then
+			while patch < 10000 do patch = patch * 10; end
+			if MaximumRWP ~= patch then
+				MaximumRWP = patch;
+				wipe(self.data.g);
+				self:Rebuild();
+			end
+		else
+			app.print("Invalid patch format '" .. cmd .. "'");
+		end
+	end
+end
 
 
 -- Implementation
-app:CreateWindow("Removed With Patch", {
+app:CreateWindow("Future Unobtainables", {
 	Commands = { "attrwp" },
+	OnCommand = function(self, cmd)
+		if cmd and cmd ~= "" then
+			ParseCommand(self, cmd);
+			if self:IsShown() then
+				return true;
+			end
+		end
+	end,
 	OnLoad = function(self, settings)
 		ExcludeNonCollectibles = settings.ExcludeNonCollectibles;
 		if ExcludeNonCollectibles == nil then ExcludeNonCollectibles = true; end
@@ -52,8 +115,8 @@ app:CreateWindow("Removed With Patch", {
 					return true;
 				end,
 			},
-			{	-- Maximum Removed With Patch
-				prefix = "Maximum Removed With Patch: ",
+			{	-- Maximum Patch
+				prefix = "Maximum Patch: ",
 				text = RETRIEVING_DATA,
 				icon = 134941,
 				description = "Press this button to change the maximum removed with patch value.\n\nChanging this value will filter out items that get removed after the given patch.",
@@ -61,58 +124,7 @@ app:CreateWindow("Removed With Patch", {
 				priority = 6,
 				OnClick = function(row, button)
 					app:ShowPopupDialogWithEditBox("Please enter a new maximum RWP", MaximumRWP, function(cmd)
-						if cmd and cmd ~= "" then
-							cmd = cmd:lower();
-							local patch = 0;
-							local major, minor, build = ("."):split(cmd);
-							if not minor then
-								if cmd == "default" then
-									patch = DefaultRWP;
-								elseif cmd == "classic" then
-									patch = 19999;
-								elseif cmd == "tbc" then
-									patch = 29999;
-								elseif cmd == "wrath" then
-									patch = 39999;
-								elseif cmd == "cata" then
-									patch = 49999;
-								elseif cmd == "mop" then
-									patch = 59999;
-								elseif cmd == "wod" then
-									patch = 69999;
-								elseif cmd == "legion" then
-									patch = 79999;
-								elseif cmd == "bfa" then
-									patch = 89999;
-								elseif cmd == "shadowlands" or cmd == "sl" then
-									patch = 99999;
-								elseif cmd == "dragonflight" or cmd == "df" then
-									patch = 109999;
-								elseif cmd == "tww" then
-									patch = 119999;
-								elseif cmd == "midnight" then
-									patch = 129999;
-								elseif cmd == "any" or cmd == "all" then
-									patch = 9999999999;
-								else
-									patch = tonumber(cmd);
-								end
-							else
-								if build then patch = patch + tonumber(build); end
-								patch = patch + (tonumber(minor) * 100);
-								patch = patch + (tonumber(major) * 10000);
-							end
-							if patch > 0 then
-								while patch < 10000 do patch = patch * 10; end
-								if MaximumRWP ~= patch then
-									MaximumRWP = patch;
-									wipe(self.data.g);
-									self:Rebuild();
-								end
-							else
-								app.print("Invalid patch format '" .. cmd .. "'");
-							end
-						end
+						ParseCommand(self, cmd);
 					end);
 					return true;
 				end,
@@ -123,9 +135,9 @@ app:CreateWindow("Removed With Patch", {
 			},
 		};
 		self.data = {
-			text = "Removed With Patch Loot",
-			icon = app.asset("WindowIcon_RWP"),
-			description = "This window shows you all of the things that get removed in a future patch that we know about and have documented in the addon. These items use a 'removed in patch' note on their tooltip to indicate when you can expect an item to be removed from the game.",
+			text = L.FUTURE_UNOBTAINABLE,
+			icon = app.asset("Interface_Future_Unobtainable"),
+			description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

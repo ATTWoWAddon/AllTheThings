@@ -16,6 +16,7 @@
 	<Script file="Filter Specific Things.lua"/>
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
+	<Script file="Future Unobtainables.lua"/>
 	<Script file="Heirlooms.lua"/>
 	<Script file="Hidden Achievement Triggers.lua"/>
 	<Script file="Hidden Quest Triggers.lua"/>
@@ -38,7 +39,6 @@
 	<Script file="Random.lua"/>
 	<Script file="Removed From Game.lua"/>
 	<Script file="Removed With Patch Drops.lua"/>
-	<Script file="Removed With Patch Loot.lua"/>
 	<Script file="Season of Discovery.lua"/>
 	<Script file="Soft Reserves.lua"/>
 	<Script file="Titles.lua"/>
