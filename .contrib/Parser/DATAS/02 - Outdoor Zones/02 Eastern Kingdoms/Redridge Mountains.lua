@@ -2490,8 +2490,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1462, {	-- Ring of the Shadow
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 429,	-- Shadowhide Darkweaver
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
 						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
