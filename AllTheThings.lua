@@ -2239,67 +2239,39 @@ app.AddCustomWindowOnUpdate("AchievementHarvester", function(self, ...)
 end)
 app.AddCustomWindowOnUpdate("Bounty", function(self, force, got)
 	if not self.initialized then
-		self.initialized = true;
-		local autoOpen = app.CreateToggle("openAuto", {
-			["text"] = L.OPEN_AUTOMATICALLY,
-			["icon"] = 134327,
-			["description"] = L.OPEN_AUTOMATICALLY_DESC,
-			["visible"] = true,
-			["OnUpdate"] = app.AlwaysShowUpdate,
-			["OnClickHandler"] = function(toggle)
-				app.Settings:SetTooltipSetting("Auto:BountyList", toggle);
-				self:DefaultUpdate(true, got);
-			end,
-		});
-		local header = app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
-			['visible'] = true,
-			["g"] = {
-				autoOpen,
-			},
-		});
-		-- add bounty content
-		-- TODO: This window pulls its data manually, there should be a key for bounty.
-		-- Update this when we merge over Classic's extended window logic.
-		-- NOTE: Everything we want is current marked with a u value of 45, so why not just pull that in? :)
-		NestObjects(header, {
-			app.CreateCustomHeader(app.HeaderConstants.RARES, {
-				app.CreateNPC(87622, {	-- Ogom the Mangler
-					['g'] = {
-						app.CreateItemSource(67041, 119366),
-					},
-				}),
-			}),
-			app.CreateCustomHeader(app.HeaderConstants.ZONE_DROPS, {
-				["description"] = "These items were likely not readded with 10.1.7 or their source is currently unknown.",
-				["g"] = {
-					app.CreateItemSource(85, 778),	-- Kobold Excavation Pick
-					app.CreateItemSource(1932, 4951),	-- Squeeler's Belt
-					app.CreateItem(1462),	-- Ring of the Shadow
-					app.CreateItem(1404),	-- Tidal Charm
-				},
-			}),
-		});
-		self:SetData(header);
-		self:AssignChildren();
-		self.rawData = {};
-		local function RefreshBounties()
-			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
-				autoOpen.saved = true;
-				self:SetVisible(true);
-			end
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
 		end
-		self:SetScript("OnEvent", function(self, e, ...)
-			if select(1, ...) == appName then
-				self:UnregisterEvent("ADDON_LOADED");
-				Callback(RefreshBounties);
-			end
-		end);
-		self:RegisterEvent("ADDON_LOADED");
+		self.initialized = true;
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
+			["visible"] = true,
+			["g"] = app:BuildSearchResponse("isBounty"),
+		}))
+		self:BuildData();
+		self.ExpandInfo = { Expand = true, Manual = true };
 	end
 	if self:IsVisible() then
-		-- Update the window and all of its row data
-		self.data.back = 1;
-		self:DefaultUpdate(true, got);
+		--[[
+		-- Update the groups without forcing Debug Mode.
+		local visibleState = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible()
+		self:BuildData();
+		self:DefaultUpdate(force);
+		app.Modules.Filter.Set.Visible(visibleState)
+		]]--
+		
+		-- Force Debug Mode
+		local rawSettings = app.Settings:GetRawSettings("General");
+		local debugMode = app.MODE_DEBUG;
+		if not debugMode then
+			rawSettings.DebugMode = true;
+			app.Settings:UpdateMode();
+		end
+		self:DefaultUpdate(force);
+		if not debugMode then
+			rawSettings.DebugMode = debugMode;
+			app.Settings:UpdateMode();
+		end
 	end
 end)
 app.AddCustomWindowOnUpdate("CosmicInfuser", function(self, force)
