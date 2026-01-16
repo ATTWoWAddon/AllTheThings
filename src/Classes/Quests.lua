@@ -1521,7 +1521,7 @@ if IsQuestReplayable then
 
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
 	OnSetVisibilityForNestedQuest = function(data)
-		return not data.saved or IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
+		return not IsQuestSaved(data.questID)
 	end
 
 	-- Detect state changes
