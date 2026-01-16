@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local CloneReference = app.CloneReference;
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Global locals
 local ipairs, tinsert, math_max, pairs, unpack, wipe
@@ -27,23 +28,13 @@ end
 
 -- Local Functions
 local SearchFilter;
-local excludedZones = {
-	[12] = 1,	-- Kalimdor
-	[13] = 1,	-- Eastern Kingdoms
-	[101] = 1,	-- Outland
-	[113] = 1,	-- Northrend
-	[424] = 1,	-- Pandaria
-	[948] = 1,	-- The Maelstrom
-	[572] = 1,	-- Draenor
-	[619] = 1,	-- Broken Isles
-	[905] = 1,	-- Argus
-	[876] = 1,	-- Kul'Tiras
-	[875] = 1,	-- Zandalar
-	[947] = 1,	-- Cosmic (Classic)
-	[1414] = 1,	-- Kalimdor (Classic)
-	[1415] = 1,	-- Eastern Kingdoms (Classic)
-	[1945] = 1,	-- Outland (Classic)
-};
+local excludedZones = setmetatable({}, {
+	__index = function(t, mapID)
+		local info = C_Map_GetMapInfo(mapID);
+		t[mapID] = not info or info.mapType < 3;
+		return t[mapID];
+	end
+});
 local everythingFilter = function(t)
 	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.expansionID;
 end;

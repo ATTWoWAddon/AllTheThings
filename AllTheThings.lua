@@ -3625,23 +3625,14 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 					end
 				end
 			end
-
-			local excludedZones = {
-				[12] = 1,	-- Kalimdor
-				[13] = 1, -- Eastern Kingdoms
-				[101] = 1,	-- Outland
-				[113] = 1,	-- Northrend
-				[424] = 1,	-- Pandaria
-				[948] = 1,	-- The Maelstrom
-				[572] = 1,	-- Draenor
-				[619] = 1,	-- The Broken Isles
-				[905] = 1,	-- Argus
-				[876] = 1,	-- Kul'Tiras
-				[875] = 1,	-- Zandalar
-				[1550] = 1,	-- The Shadowlands
-				[1978] = 1,	-- Dragon Isles
-				[2274] = 1,	-- Khaz Algar
-			};
+			
+			local excludedZones = setmetatable({}, {
+				__index = function(t, mapID)
+					local info = C_Map_GetMapInfo(mapID);
+					t[mapID] = not info or info.mapType < 3;
+					return t[mapID];
+				end
+			});
 
 			-- Represents how to search for a given named-Thing
 			local SelectionMethods = setmetatable({
