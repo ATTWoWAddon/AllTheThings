@@ -2178,9 +2178,6 @@ root(ROOTS.Unsorted, {
 			-- Pvp jc
 			i(253307),	-- Infused Heliotrope
 
-			-- Qi
-			i(253387),	-- Unmarred Eyeball \\ Cracked Novice's Glaive \\ Broken Training Glaive
-
 			-- Wep
 			i(253388),	-- Tyrannus's Runeblade
 
@@ -3104,8 +3101,6 @@ root(ROOTS.Unsorted, {
 			-- Delve
 			i(257683),	-- Porcelain Blade Tip
 			-- QI
-			i(257714),	-- Spiny Protrusion \\ Handmade Necklace
-			i(257715),	-- Dense Hide Scrap \\ Demon Horn Shard
 			i(257727),	-- Condensed Void Reserves
 			-- Engi
 			i(257733),	-- M0LL1, Atomic Anomaly
@@ -3252,7 +3247,6 @@ root(ROOTS.Unsorted, {
 			i(258280),	-- [DNT] Huge Pouch of Supplies
 
 			-- QI
-			i(258295),	-- Jagged Fang \\ Dragonhawk Feather
 			i(258321),	-- Ransacked Heirloom
 			i(258324),	-- Stolen Game Meat \\ Stolen Game
 			i(258329),	-- Carrion Essence

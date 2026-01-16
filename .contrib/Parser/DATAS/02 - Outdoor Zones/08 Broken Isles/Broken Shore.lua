@@ -1665,7 +1665,9 @@ root(ROOTS.Zones, {
 						i(147206),	-- Potent Venom Sac (QI!)
 					}),
 					q(46104),	-- Arachnid Toxicity
-					q(45694),	-- Arachnicide
+					q(45694, {	-- Arachnicide
+						i(143856),	-- Bolt of Felsilk (QI!)
+					}),
 					q(46750, {	-- Battery Backup
 						i(146892),	-- Battleship Power Core (QI!)
 					}),
@@ -1827,7 +1829,9 @@ root(ROOTS.Zones, {
 					q(45379),	-- Treasure Master Iks'reeged
 					q(45973, {	-- Unchecked Power
 						["groups"] = {
-							i(146951),	-- Abjurist's Scroll of Knowledge (QI!)
+							o(268715, {	-- Abjurist's Satchel
+								i(146951),	-- Abjurist's Scroll of Knowledge (QI!)
+							}),
 						},
 					}),
 					q(45791, {	-- War Materiel

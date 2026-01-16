@@ -1547,6 +1547,7 @@ MobileDB.GameObject = {
 	[268466] = true,	-- Demonic Archaeology Find
 	[268617] = true,	-- Control Console
 	[268643] = true,	-- Codex Draconomicus Rubicus (q:46812)
+	[268715] = true,	-- Abjurist's Satchel (wq:45973)
 	[268745] = true,	-- Ancient Pylon (q:46818)
 	[268734] = true,	-- Crystalized Fel
 	[268760] = true,	-- Argunite Matrix
