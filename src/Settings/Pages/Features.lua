@@ -232,35 +232,6 @@ function(self)
 end)
 checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
-
--- AH Module is disabled in Retail currently
---[[
-local checkboxShowAHModule = child:CreateCheckBox(L.AUCTION_TAB_CHECKBOX,
-function(self)
-	self:SetChecked(false)
-	self:Disable()
-	self:SetAlpha(0.4)
-	-- self:SetChecked(settings:GetTooltipSetting("Auto:AH"))
-end,
-function(self)
-	-- settings:SetTooltipSetting("Auto:AH", self:GetChecked())
-	-- if app.Blizzard_AuctionHouseUILoaded then
-	-- 	if app.AuctionModuleTabID then
-	-- 		if self:GetChecked() then
-	-- 			PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 			app:OpenAuctionModule()
-	-- 		else
-	-- 			PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 		end
-	-- 	else
-	-- 		app:OpenAuctionModule()
-	-- 	end
-	-- end
-end)
-checkboxShowAHModule:SetATTTooltip(L.AUCTION_TAB_CHECKBOX_TOOLTIP)
-checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)
-]]--
-
 else
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)

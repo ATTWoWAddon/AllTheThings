@@ -127,7 +127,6 @@ local TooltipSettingsBase = {
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Auto:Sync"] = true,
-		["Auto:AH"] = false,
 		["Celebrate"] = true,
 		["Channel"] = "Master",
 		["Cost"] = true,
