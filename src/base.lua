@@ -32,6 +32,8 @@ app.asset = function(path)
 end
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
+-- Does not omit the UpdateGroup handling but will persist showing the data
+app.ForceShowUpdate = function(data) data.forceShow = true end
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 

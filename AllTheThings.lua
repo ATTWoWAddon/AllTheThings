@@ -4203,8 +4203,8 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 			return ids
 		end
 
-		local function CreateTypeObject(typeKey, id)
-			local o = setmetatable({ OnSetVisibility = app.ReturnTrue }, {
+		local function SearchTypeObject(typeKey, id)
+			local o = setmetatable({ OnUpdate = app.ForceShowUpdate }, {
 					__index = id and (SearchForObject(typeKey, id, "key")
 									or SearchForObject(typeKey, id, "field")
 									or CreateObject({[typeKey]=id}))
@@ -4224,11 +4224,7 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 
 			local objs = {}
 			for _, id in ipairs(ids) do
-				local obj = CreateTypeObject(typeKey, id)
-				obj.forceShow = true
-				obj.OnUpdate  = app.AlwaysShowUpdate
-
-				objs[#objs + 1] = obj
+				objs[#objs + 1] = SearchTypeObject(typeKey, id)
 			end
 
 			-- Merge all the search results into the list, ensure to clone
