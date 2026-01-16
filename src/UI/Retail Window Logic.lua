@@ -1162,7 +1162,6 @@ end
 -- TODO: Refactoring
 -- Some windows still new to be 'loaded' so they can setup their logic about when to show/hide
 app.AddEventHandler("OnReady", function()
-	app:GetWindow("AuctionData")
 	app:GetWindow("Tradeskills")
 end)
 app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
