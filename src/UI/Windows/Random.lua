@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local CloneReference = app.CloneReference;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
@@ -144,7 +145,7 @@ local function Reroll(self)
 		end
 		self:AssignChildren();
 		self:ExpandData(true);
-		self:Update();
+		self:Update(true);
 	end
 end
 local function SetSearchFilter(self, filter)
@@ -164,9 +165,9 @@ app:CreateWindow("Random", {
 	end,
 	OnInit = function(self, handlers)
 		self.defaultHeader = {
-			text = "Random - Go Get 'Em!",
+			text = L.GO_GO_RANDOM,
 			icon = app.asset("WindowIcon_Random"),
-			description = "This window allows you to randomly select a place or item to get. Go get 'em!",
+			description = L.GO_GO_RANDOM_DESC,
 			expanded = true,
 			visible = true,
 			back = 1,
@@ -174,9 +175,9 @@ app:CreateWindow("Random", {
 			g = { },
 			options = {
 				{
-					text = "Change Search Filter",
+					text = L.APPLY_SEARCH_FILTER,
 					icon = app.asset("Button_Search"),
-					description = "Click this to change your search filter.",
+					description = L.APPLY_SEARCH_FILTER_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
 						self:SetData(self.filterOptions);
@@ -184,16 +185,16 @@ app:CreateWindow("Random", {
 					end,
 				},
 				{
-					text = "Reroll",
+					text = L.REROLL,
 					icon = app.asset("Button_Reroll"),
-					description = "Click this button to reroll using the active filter.",
+					description = L.REROLL_DESC,
 					visible = true,
 					OnClick = function(row, button)
 						Reroll(self);
 						return true;
 					end,
 					OnUpdate = function(data)
-						data.text = "Reroll: " .. SearchFilter;
+						data.text = L.REROLL .. ": " .. SearchFilter;
 						data.visible = true;
 						return true;
 					end,
@@ -211,15 +212,15 @@ app:CreateWindow("Random", {
 			end
 		};
 		self.filterOptions = {
-			text = "Apply a Search Filter",
+			text = L.APPLY_SEARCH_FILTER,
 			icon = app.asset("Button_Search"),
-			description = "Please select a search filter option.",
+			description = L.APPLY_SEARCH_FILTER_DESC,
 			expanded = true,
 			visible = true,
 			back = 1,
 			g = {
 				setmetatable({
-					['description'] = "Click this button to search... EVERYTHING.",
+					['description'] = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						return SetSearchFilter(self, "ATT");
