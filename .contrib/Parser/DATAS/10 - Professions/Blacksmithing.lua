@@ -256,7 +256,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				r(183281, {["u"]=TRAINING}),	-- Leystone Cuffplate
 				r(183283, {["u"]=TRAINING}),	-- Leystone Fingerguard
 				i(124051),	-- Burnt, Exploded Mess (QI!)
+				i(128777),	-- Heated Leystone Bar (QI!)
 				i(124007),	-- Leystone Bar (QI!)
+				i(124009),	-- Leystone Cuffplate (QI!)
+				i(124010),	-- Leystone Fingerguard (QI!)
 				i(124008),	-- Red-Hot Leystone Bar (QI!)
 				i(124005),	-- Shopkeeper's Leystone Ore (QI!)
 			},
