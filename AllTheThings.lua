@@ -2159,10 +2159,10 @@ app.AddCustomWindowOnUpdate = function(customName, onUpdate)
 	if customWindowUpdates[customName] then
 		app.print("Cannot replace Custom Window: "..customName)
 	end
-	app.print("Added",customName)
+	-- app.print("Added",customName)
 	customWindowUpdates[customName] = onUpdate
 end
-customWindowUpdates.AchievementHarvester = function(self, ...)
+app.AddCustomWindowOnUpdate("AchievementHarvester", function(self, ...)
 	-- /run AllTheThings:GetWindow("AchievementHarvester"):Toggle();
 	if self:IsVisible() then
 		if not self.initialized then
@@ -2239,7 +2239,7 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 		end
 		self:DefaultUpdate(true);
 	end
-end;
+end)
 local function RoundNumber(number, decimalPlaces)
 	local ret;
 	if number < 60 then
@@ -2249,7 +2249,7 @@ local function RoundNumber(number, decimalPlaces)
 	end
 	return ret;
 end
-customWindowUpdates.AuctionData = function(self)
+app.AddCustomWindowOnUpdate("AuctionData", function(self)
 	if not self.initialized then
 		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;
 		self.initialized = true;
@@ -2415,8 +2415,8 @@ customWindowUpdates.AuctionData = function(self)
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:DefaultUpdate(true);
-end;
-customWindowUpdates.Bounty = function(self, force, got)
+end)
+app.AddCustomWindowOnUpdate("Bounty", function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		local autoOpen = app.CreateToggle("openAuto", {
@@ -2480,8 +2480,8 @@ customWindowUpdates.Bounty = function(self, force, got)
 		self.data.back = 1;
 		self:DefaultUpdate(true, got);
 	end
-end;
-customWindowUpdates.CosmicInfuser = function(self, force)
+end)
+app.AddCustomWindowOnUpdate("CosmicInfuser", function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -2573,8 +2573,8 @@ customWindowUpdates.CosmicInfuser = function(self, force)
 		-- Update the window and all of its row data
 		self:DefaultUpdate(force);
 	end
-end;
-customWindowUpdates.CurrentInstance = function(self, force, got)
+end)
+app.AddCustomWindowOnUpdate("CurrentInstance", function(self, force, got)
 	-- app.PrintDebug("CurrentInstance:Update",force,got)
 	if not self.initialized then
 		force = true;
@@ -3012,8 +3012,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		end
 		self:DefaultUpdate(force, got);
 	end
-end;
-customWindowUpdates.ItemFilter = function(self, force)
+end)
+app.AddCustomWindowOnUpdate("ItemFilter", function(self, force)
 	if self:IsVisible() then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
@@ -3104,8 +3104,8 @@ customWindowUpdates.ItemFilter = function(self, force)
 
 		self:DefaultUpdate(force);
 	end
-end;
-customWindowUpdates.NWP = function(self, force)
+end)
+app.AddCustomWindowOnUpdate("NWP", function(self, force)
 	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
@@ -3212,8 +3212,8 @@ customWindowUpdates.NWP = function(self, force)
 	if self:IsVisible() then
 		self:DefaultUpdate(force);
 	end
-end;
-customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember window data of each expansion (param) and dont make new windows infinitely
+end)
+app.AddCustomWindowOnUpdate("awp", function(self, force)	-- TODO: Change this to remember window data of each expansion (param) and dont make new windows infinitely
 	-- Patch Interface Build tables
 	local CLASSIC = {10100,10200,10300,10400,10500,10600,10700,10800,10900,10903,11000,11100,11101,11102,11200,11201}
 	-- Classic was using different build numbers originally, so these are made up to make a correct timeline search
@@ -3411,8 +3411,8 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 	if self:IsVisible() then
 		self:DefaultUpdate(force);
 	end
-end;
-customWindowUpdates.Prime = function(self, ...)
+end)
+app.AddCustomWindowOnUpdate("Prime", function(self, ...)
 	self:DefaultUpdate(...);
 
 	-- Write the current character's progress if a top-level update has been completed
@@ -3424,8 +3424,8 @@ customWindowUpdates.Prime = function(self, ...)
 			modeString = rootData.modeString,
 		};
 	end
-end
-customWindowUpdates.RaidAssistant = function(self)
+end)
+app.AddCustomWindowOnUpdate("RaidAssistant", function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -3859,8 +3859,8 @@ customWindowUpdates.RaidAssistant = function(self)
 		self:DefaultUpdate(true);
 		app.Modules.Filter.Set.Visible(visibleState)
 	end
-end;
-customWindowUpdates.Random = function(self)
+end)
+app.AddCustomWindowOnUpdate("Random", function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -4148,8 +4148,8 @@ customWindowUpdates.Random = function(self)
 		self:AssignChildren();
 		self:DefaultUpdate(true);
 	end
-end;
-customWindowUpdates.RWP = function(self, force)
+end)
+app.AddCustomWindowOnUpdate("RWP", function(self, force)
 	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
@@ -4168,8 +4168,8 @@ customWindowUpdates.RWP = function(self, force)
 	if self:IsVisible() then
 		self:DefaultUpdate(force);
 	end
-end;
-customWindowUpdates.Import = function(self, force)
+end)
+app.AddCustomWindowOnUpdate("Import", function(self, force)
 	if not self:IsVisible() then return end
 
 	if not self.initialized then
@@ -4319,8 +4319,8 @@ customWindowUpdates.Import = function(self, force)
 	end
 
 	self:DefaultUpdate(force)
-end
-customWindowUpdates.Sync = function(self)
+end)
+app.AddCustomWindowOnUpdate("Sync", function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -4556,7 +4556,7 @@ customWindowUpdates.Sync = function(self)
 		end
 		self:DefaultUpdate(true);
 	end
-end;
+end)
 
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 ---@return table?
@@ -4575,7 +4575,7 @@ local function GetPopulatedQuestObject(questID)
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
-customWindowUpdates.list = function(self, force, got)
+app.AddCustomWindowOnUpdate("list", function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
 			-- can only determine a sourceID if there is an itemID/sourceID on the group
@@ -4916,8 +4916,8 @@ customWindowUpdates.list = function(self, force, got)
 		self:DefaultUpdate(force);
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
-end
-customWindowUpdates.Tradeskills = function(self, force, got)
+end)
+app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
 	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 		return;
 	end
@@ -5416,8 +5416,8 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		self:DefaultUpdate(force or self.force, got);
 		self.force = nil;
 	end
-end;
-customWindowUpdates.WorldQuests = function(self, force, got)
+end)
+app.AddCustomWindowOnUpdate("WorldQuests", function(self, force, got)
 	-- localize some APIs
 	local C_TaskQuest_GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsOnMap;
 	local C_AreaPoiInfo_GetAreaPOIForMap,C_AreaPoiInfo_GetAreaPOIInfo,C_AreaPoiInfo_GetEventsForMap,C_AreaPoiInfo_GetAreaPOISecondsLeft
@@ -5895,7 +5895,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 
 		self:DefaultUpdate(force);
 	end
-end;
+end)
 end)();
 
 -- Auction House Lib
