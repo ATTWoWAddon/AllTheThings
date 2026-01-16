@@ -759,7 +759,7 @@ local function Refresh(self)
 		local row = GameTooltip:GetOwner()
 		if row and row.__ref ~= row.ref then
 			-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
-			-- force tooltip to refresh since the scroll has changed for but the tooltip is still visible
+			-- force tooltip to refresh since the scroll has changed but the tooltip is still visible
 			local OnLeave = row:GetScript("OnLeave")
 			local OnEnter = row:GetScript("OnEnter")
 			OnLeave(row)
