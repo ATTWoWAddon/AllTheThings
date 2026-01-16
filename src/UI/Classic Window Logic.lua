@@ -1976,12 +1976,12 @@ function app:CreateWindow(suffix, settings)
 			if settings.OnCommand then
 				onCommand = function(cmd)
 					if not settings.OnCommand(window, cmd) then
-						window:Toggle(cmd);
+						window:Toggle();
 					end
 				end
 			else
 				onCommand = function(cmd)
-					window:Toggle(cmd);
+					window:Toggle();
 				end
 			end
 
