@@ -4224,7 +4224,11 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 
 			local objs = {}
 			for _, id in ipairs(ids) do
-				objs[#objs + 1] = CreateTypeObject(typeKey, id)
+				local obj = CreateTypeObject(typeKey, id)
+				obj.forceShow = true
+				obj.OnUpdate  = app.AlwaysShowUpdate
+
+				objs[#objs + 1] = obj
 			end
 
 			-- Merge all the search results into the list, ensure to clone
