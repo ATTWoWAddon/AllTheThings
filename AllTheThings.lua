@@ -2126,9 +2126,6 @@ end
 
 end	-- Dynamic/Main Data
 
-do -- Search Response Logic
-end -- Search Response Logic
-
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
 local customWindowUpdates = { params = {} };
