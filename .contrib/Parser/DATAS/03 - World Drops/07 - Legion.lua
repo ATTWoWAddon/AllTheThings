@@ -146,7 +146,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121375),	-- Voo's Juicer
 	}),
 	filter(REAGENTS, {
-		i(151567),	-- Lightweave Cloth
+		i(151567, { ["timeline"] = { ADDED_7_3_0 } }),	-- Lightweave Cloth
+		i(124437),	-- Shal'dorei Silk
+		i(124438),	-- Unbroken Claw
+		i(124439),	-- Unbroken Tooth
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {

@@ -438,7 +438,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241704 },	-- Orweyna
 						["coord"] = { 58.4, 55.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
-							ach(61506),	-- Allied Race: Haranir (just in case, atm)
+							ach(61506, {	-- Allied Race: Haranir (just in case, atm)
+								i(246736),	-- Ivory Grimlynx (MOUNT!)
+							}),
 						},
 					}),
 				}),
@@ -455,18 +457,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 255822 },	-- Orweyna
 				["coord"] = { 36.6, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					i(251194),	-- TODO: missing names
-					i(251190),	-- TODO: missing names
-					i(251183),	-- TODO: missing names
+					i(251190),	-- Bloodthorn Burnous
+					i(251194),	-- Lightwarden's Bind
+					i(251183),	-- Rootwarden Wraps
 				},
 			}),
 			--Delves
 			q(93421, {	-- Delver's Call: The Grudge Pit
-				--["provider"] = { "o", xxx },	-- The Grudge Pit
+				["provider"] = { "o", 612264 },	-- The Grudge Pit
 				["coord"] = { 71.2, 52.1, MAP.MIDNIGHT.HARANDAR },
 			}),
 			q(93416, {	-- Delver's Call: The Gulf of Memory
-				--["provider"] = { "o", xxx },	-- The Gulf of Memory
+				["provider"] = { "o", 612259 },	-- The Gulf of Memory
 				["coord"] = { 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
 			}),
 			--Quest that lead to Luminous Dust vendor

@@ -4561,6 +4561,7 @@ i(264654, 4977);	-- Emberwing Hatchling
 i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
 i(244339, 4816);	-- Hawkstrider Hatchling
+i(252650, 4894);	-- Heartglow Listener
 i(262395, 4959);	-- Hexed Bunny
 i(265030, 4983);	-- Kai
 i(262393, 4955);	-- Kreepah'zoyd
@@ -4584,6 +4585,7 @@ i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
+i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(251004, 3364);	-- Striped Snakebiter

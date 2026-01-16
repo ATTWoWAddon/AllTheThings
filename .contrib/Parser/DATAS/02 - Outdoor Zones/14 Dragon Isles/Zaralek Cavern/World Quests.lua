@@ -121,6 +121,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75151, {	-- Redistributing the Remnants
 						["coord"] = { 52.9, 21.5, ZARALEK_CAVERN },
+						["groups"] = {
+							o(390557, {	-- Drakeforged Arming Rack
+								["coords"] = {
+									{ 41.8, 18.8, ZARALEK_CAVERN },
+									{ 42.4, 23.9, ZARALEK_CAVERN },
+									{ 42.5, 19.5, ZARALEK_CAVERN },
+									{ 42.9, 18.7, ZARALEK_CAVERN },
+									{ 43.1, 23.1, ZARALEK_CAVERN },
+									{ 43.4, 17.6, ZARALEK_CAVERN },
+									{ 43.9, 14.7, ZARALEK_CAVERN },
+									{ 43.9, 18.2, ZARALEK_CAVERN },
+									{ 44.1, 20.2, ZARALEK_CAVERN },
+									{ 44.4, 22.8, ZARALEK_CAVERN },
+									{ 45.1, 19.0, ZARALEK_CAVERN },
+								},
+								["groups"] = { i(204437) },	-- Drakeforged Armaments (QI!)
+							}),
+						},
 					}),
 					q(75663, {	-- Restless Torment
 						["coord"] = { 51.2, 42.8, ZARALEK_CAVERN },

@@ -169,7 +169,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
 				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
 				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
-				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus (TOY!)
 			},
 		}),
 		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {

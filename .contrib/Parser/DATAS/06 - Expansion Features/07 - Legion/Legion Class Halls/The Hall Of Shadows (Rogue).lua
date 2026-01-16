@@ -1084,7 +1084,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["groups"] = { i(139591) },	-- Stolen Tome of Artifact Lore
 							}),
 							o(252277, {	-- Thistle Tea
-								i(139586),	-- Thistle Tea
+								["coord"] = { 34.5, 63.7, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139586) },	-- Thistle Tea
 							}),
 							o(252289, {	-- Vanishing Powder
 								["coord"] = { 30.0, 67.6, THE_HALL_OF_SHADOWS },

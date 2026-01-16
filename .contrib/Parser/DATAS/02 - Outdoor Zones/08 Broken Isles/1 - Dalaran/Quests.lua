@@ -818,7 +818,10 @@ root(ROOTS.Zones, {
 						44555,	-- Khadgar's Discovery
 					},
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
+					["coords"] = {
+						{ 28.8, 48.4, LEGION_DALARAN },
+						{ 70.9, 45.0, LEGION_DALARAN },
+					},
 					["lvl"] = 110,
 				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
