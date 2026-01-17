@@ -70,8 +70,7 @@ FUNCTION_TEMPLATES = {
 			local buffs = {...};
 			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")
 			ExportDB.OnInitDB[OnInitName] = [[~function(t)
-				local buffs={};
-				for i,id in ipairs({]] .. table.concat(buffs, ", ") .. [[}) do buffs[id]=1; end
+				local buffs={[]] .. table.concat(buffs, "]=1,[") .. [[]=1};
 				t.ShouldExcludeFromTooltipHelper = function(t)
 					local target = UnitExists("mouseover") and "mouseover" or "target";
 					for i=1,10,1 do
