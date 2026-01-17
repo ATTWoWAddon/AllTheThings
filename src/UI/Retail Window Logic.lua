@@ -29,7 +29,7 @@ local TryColorizeName = app.TryColorizeName
 local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-local GetUnobtainableTexture = app.GetUnobtainableTexture
+local GetIndicatorIcon = app.GetIndicatorIcon;
 local wipearray = app.wipearray
 
 app.Windows = {};
@@ -300,23 +300,6 @@ local function SetPortraitIcon(self, data)
 	self:SetTexture(QUESTION_MARK_ICON);
 	return true
 end
--- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
- local function GetIndicatorIcon(group)
-	-- Use the group's own indicator if defined
-	local groupIndicator = group.indicatorIcon
-	if groupIndicator then return groupIndicator end
-
-	-- Otherwise use some common logic
-	if group.saved then
-		if group.parent and group.parent.locks or group.repeatable then
-			return app.asset("known");
-		else
-			return app.asset("known_green");
-		end
-	end
-	return GetUnobtainableTexture(group);
-end
-app.GetIndicatorIcon = GetIndicatorIcon
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];

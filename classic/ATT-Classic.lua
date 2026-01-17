@@ -654,10 +654,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				if group.u then
 					local phase = L.PHASES[group.u];
 					if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
+						o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
 					end
 				elseif group.e then
-					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+					o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[4];
 				end
 				if o.texture then
 					o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
@@ -680,10 +680,10 @@ local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.u then
 				local phase = L.PHASES[group.u];
 				if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
+					o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
 				end
 			elseif group.e then
-				o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+				o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[4];
 			end
 			if o.texture then
 				o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
