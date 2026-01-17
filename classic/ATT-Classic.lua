@@ -1537,21 +1537,19 @@ function app:GetDataCache()
 		-----------------------------------------
 		-- Dungeons & Raids
 		if app.Categories.Instances then
-			tinsert(g, {
-				text = GROUP_FINDER,
+			tinsert(g, app.CreateRawText(GROUP_FINDER, {
 				icon = app.asset("Category_D&R"),
 				g = app.Categories.Instances,
-			});
+			}));
 		end
 
 		-- Outdoor Zones
 		if app.Categories.Zones then
-			tinsert(g, {
-				mapID = 947,
-				text = BUG_CATEGORY2,
+			tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
 				icon = app.asset("Category_Zones"),
+				mapID = 947,
 				g = app.Categories.Zones,
-			});
+			}));
 		end
 
 		-- World Drops
@@ -1564,23 +1562,21 @@ function app:GetDataCache()
 		if app.Categories.Craftables then
 			local craftables = app.Categories.Craftables;
 			ProcessBindOnPickupProfessions(craftables);
-			tinsert(g, {
-				text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,
+			tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
 				icon = app.asset("Category_Crafting"),
 				DontEnforceSkillRequirements = true,
 				isCraftedCategory = true,
 				g = craftables,
-			});
+			}));
 		end
 
 		-- Group Finder
 		if app.Categories.GroupFinder then
-			tinsert(g, {
-				text = DUNGEONS_BUTTON,
+			tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
 				icon = app.asset("Category_GroupFinder"),
 				u = 33,	-- WRATH_PHASE_FOUR
 				g = app.Categories.GroupFinder,
-			});
+			}));
 		end
 
 		-- Professions
@@ -1601,11 +1597,10 @@ function app:GetDataCache()
 
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
-			tinsert(g, {
-				text = EXPANSION_FILTER_TEXT,
+			tinsert(g, app.CreateRawText(EXPANSION_FILTER_TEXT, {
 				icon = app.asset("Category_ExpansionFeatures"),
 				g = app.Categories.ExpansionFeatures
-			});
+			}));
 		end
 
 		-----------------------------------------
@@ -1613,12 +1608,10 @@ function app:GetDataCache()
 		-----------------------------------------
 		-- Character
 		if app.Categories.Character then
-			local db = {};
-			db.g = app.Categories.Character;
-			db.text = CHARACTER;
-			db.name = db.text;
-			db.icon = app.asset("Category_ItemSets");
-			tinsert(g, db);
+			tinsert(g, app.CreateRawText(CHARACTER, {
+				icon = app.asset("Category_ItemSets"),
+				g = app.Categories.Character,
+			}));
 		end
 
 		-- PvP
@@ -1631,13 +1624,12 @@ function app:GetDataCache()
 
 		-- Promotions
 		if app.Categories.Promotions then
-			tinsert(g, {
-				text = BATTLE_PET_SOURCE_8,
+			tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
 				icon = app.asset("Category_Promo"),
 				description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 				g = app.Categories.Promotions,
 				isPromotionCategory = true
-			});
+			}));
 		end
 
 		-- Season of Discovery
@@ -1649,22 +1641,20 @@ function app:GetDataCache()
 
 		-- Skills
 		if app.Categories.Skills then
-			tinsert(g, {
-				text = SKILLS,
+			tinsert(g, app.CreateRawText(SKILLS, {
 				icon = 136105,
 				g = app.Categories.Skills
-			});
+			}));
 		end
 
 		-- World Events
 		if app.Categories.WorldEvents then
-			tinsert(g, {
-				text = BATTLE_PET_SOURCE_7;
+			tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
 				icon = app.asset("Category_Event"),
 				description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
 				g = app.Categories.WorldEvents,
 				isEventCategory = true,
-			});
+			}));
 		end
 
 		---------------------------------------
