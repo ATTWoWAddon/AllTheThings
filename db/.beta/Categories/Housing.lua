@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,campsite,de,exp,faction,fp,h,i,m,n,q,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateQuest,_.CreateTitle;
+local ach,ah,campsite,de,exp,faction,flt,fp,h,i,m,n,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
 local a={{233063,233708},{2351,2352},{248854},{252312},{253596},{51.9,38.7,2352},{52.2,37.8,2352},{52.7,37.5,2352},{52.9,68,2339},{52.9,89,85},{53.1,40.1,2352},{53.5,58.5,2351},{53.7,57.4,2351},{54.2,58,2351},{55.3,57.6,2351},{56.1,77.1,84},{91863},{92437},{92961},{92962},{92963},{92964},{92965},{92966},{92967},{92968},{92969},{92970},{92971},{92972},{92973},{92977},{92978},{92979},{92980},{92981},{92982},{92983},{92984},{92985},{92986},{92987},{92988},{92989},{92991},{92992},{92993},{92994},{92995},{92996},{92997},{92998},{92999},{93000},{93002},{93003},{93005},{93006},{93007},{93008},{93134},{93135},{93136},{93137},{93141},{93143},{93147},{93149},{93150},{93152}};
 _.Categories.Housing={
 h(-12,{awp=110207,g={
@@ -20,6 +20,152 @@ ach(40887,{awp=120000}),
 ach(61211,{description="Build your own home through Housing",sourceQuests={91863,92486}})}}),
 h(-31,{awp=120000,g={
 faction(2663)}}),
+prof(2984,{awp=110207,coords={{53.6,58.1,2351},{52.4,37.6,2352}},g={
+h(-23,{
+i(259115),
+i(259131),
+i(259078),
+i(259120),
+i(259107),
+i(259108),
+i(259105),
+i(259109),
+i(259098),
+i(259151),
+i(259153),
+i(259133),
+i(259122),
+i(259150),
+i(259118),
+i(259134),
+i(259127),
+i(259144),
+i(259139),
+i(258838),
+i(259143),
+i(259147),
+i(259103),
+i(259149),
+i(259099),
+i(259152),
+i(259100),
+i(259113),
+i(259111),
+i(259128),
+i(259116),
+i(259132),
+i(259110),
+i(259114),
+i(259102),
+i(259096),
+i(259135),
+i(259140),
+i(259146),
+i(259119),
+i(259130),
+i(259121),
+i(259101),
+i(259097),
+i(259154),
+i(259142),
+i(259117),
+i(259138),
+i(259124),
+i(259123),
+i(259104),
+i(259137),
+i(259148),
+i(259145),
+i(259125),
+i(259126),
+i(259141),
+i(259136),
+i(259053),
+i(259106),
+i(259129)}),
+flt(200,{
+r(1264719,{requireSkill=2984}),
+r(1265087,{requireSkill=2984}),
+r(1264912,{requireSkill=2984}),
+r(1277205,{requireSkill=2984}),
+r(1264713,{requireSkill=2984}),
+r(1265105,{requireSkill=2984}),
+r(1265120,{requireSkill=2984}),
+r(1264954,{requireSkill=2984}),
+r(1265115,{requireSkill=2984}),
+r(1264952,{requireSkill=2984}),
+r(1265114,{requireSkill=2984}),
+r(1264712,{requireSkill=2984}),
+r(1265112,{requireSkill=2984}),
+r(1264936,{requireSkill=2984}),
+r(1265111,{requireSkill=2984}),
+r(1264921,{requireSkill=2984}),
+r(1277215,{requireSkill=2984}),
+r(1265122,{requireSkill=2984}),
+r(1264889,{requireSkill=2984}),
+r(1265080,{requireSkill=2984}),
+r(1264938,{requireSkill=2984}),
+r(1264950,{requireSkill=2984}),
+r(1264722,{requireSkill=2984}),
+r(1265098,{requireSkill=2984}),
+r(1264725,{requireSkill=2984}),
+r(1265089,{requireSkill=2984}),
+r(1265121,{requireSkill=2984}),
+r(1264721,{requireSkill=2984}),
+r(1264760,{requireSkill=2984}),
+r(1265081,{requireSkill=2984}),
+r(1265082,{requireSkill=2984}),
+r(1264928,{requireSkill=2984}),
+r(1277210,{requireSkill=2984}),
+r(1264914,{requireSkill=2984}),
+r(1264913,{requireSkill=2984}),
+r(1277204,{requireSkill=2984}),
+r(1265094,{requireSkill=2984}),
+r(1265103,{requireSkill=2984}),
+r(1277201,{requireSkill=2984}),
+r(1265091,{requireSkill=2984}),
+r(1265077,{requireSkill=2984}),
+r(1265113,{requireSkill=2984}),
+r(1264955,{requireSkill=2984}),
+r(1264715,{requireSkill=2984}),
+r(1264940,{requireSkill=2984}),
+r(1265100,{requireSkill=2984}),
+r(1265117,{requireSkill=2984}),
+r(1264720,{requireSkill=2984}),
+r(1264926,{requireSkill=2984}),
+r(1277206,{requireSkill=2984}),
+r(1264916,{requireSkill=2984}),
+r(1277209,{requireSkill=2984}),
+r(1264894,{requireSkill=2984}),
+r(1265088,{requireSkill=2984}),
+r(1264895,{requireSkill=2984}),
+r(1265084,{requireSkill=2984}),
+r(1265086,{requireSkill=2984}),
+r(1264885,{requireSkill=2984}),
+r(1264924,{requireSkill=2984}),
+r(1277208,{requireSkill=2984}),
+r(1265102,{requireSkill=2984}),
+r(1277200,{requireSkill=2984}),
+r(1265097,{requireSkill=2984}),
+r(1264944,{requireSkill=2984}),
+r(1265106,{requireSkill=2984}),
+r(1265109,{requireSkill=2984}),
+r(1265078,{requireSkill=2984}),
+r(1264886,{requireSkill=2984}),
+r(1265099,{requireSkill=2984}),
+r(1265116,{requireSkill=2984}),
+r(1265107,{requireSkill=2984}),
+r(1265101,{requireSkill=2984}),
+r(1264945,{requireSkill=2984}),
+r(1265079,{requireSkill=2984}),
+r(1265085,{requireSkill=2984}),
+r(1264942,{requireSkill=2984}),
+r(1264717,{requireSkill=2984}),
+r(1264469,{requireSkill=2984}),
+r(1277207,{requireSkill=2984}),
+r(1265104,{requireSkill=2984}),
+r(1265119,{requireSkill=2984}),
+r(1264891,{requireSkill=2984})})}}),
 h(-45,{awp=110207,g={
 q(93057,{description="Triggers on login. Requires a re-log if purchasing Midnight via in-game shop.",isBreadcrumb=1,maps=a[2],nextQuests=a[17]}),
 q(91863,{maps=a[2],sourceQuests={93057}}),
@@ -36,10 +182,17 @@ i(254504,{spellID=1258142})}}),
 q(93647,{coords={a[14],a[6]},qgs={255519,255520}}),
 q(89450,{awp=120000,coords={a[15],a[11]},qgs=a[1],g={
 i(239098,{spellID=1225512})}}),
-q(92572,{coords={a[16],a[10],a[9]},qgs=a[4],g={
-de(9247,{itemID=253173,spellID=1255725})}}),
+q(92578,{coords={a[16],a[10],a[9]},qgs=a[4],g={
+de(4172,{itemID=248116,sourceQuests={92578},spellID=1246280})}}),
 q(92577,{coords={a[16],a[10],a[9]},qgs=a[4],g={
-de(1693,{itemID=245259,spellID=1238340})}}),
+de(1693,{itemID=245259,sourceQuests={92577},spellID=1238340})}}),
+q(92572,{coords={a[16],a[10],a[9]},qgs=a[4],g={
+de(9247,{itemID=253173,sourceQuests={92572},spellID=1255725})}}),
+q(92581,{coords={a[16],a[10],a[9]},qgs=a[4],g={
+de(4029,{itemID=247915,sourceQuests={92581},spellID=1245901})}}),
+q(92580,{coords={a[16],a[10],a[9]},qgs=a[4],g={
+de(2330,{itemID=246487,sourceQuests={92580},spellID=1242335}),
+i(265822,{spellID=1277282})}}),
 q(92608,{coords={{53.9,55.7,2339},{53.9,55.7,2351}},qgs={252717},repeatable=1,g={
 i(253316,{spellID=1256057})}})}}),
 m(2352,{awp=110207,g={
@@ -76,7 +229,7 @@ q(92964,{coords={a[8],{64.9,51,2352}},qgs=a[3],g={
 de(390,{itemID=245376,sourceQuests=a[22],spellID=1238501})}}),
 q(92965,{coords={a[8],{59.6,52.5,2352}},qgs=a[3],g={
 de(494,{itemID=235523,sourceQuests=a[23],spellID=1217181})}}),
-q(92966,{coords={{64.6,57.6,2352},{66.9,57,2352}},description="In a cave",qgs=a[3],g={
+q(92966,{coords={a[8],{64.6,57.6,2352},{66.9,57,2352}},description="Inside the cave.",qgs=a[3],g={
 de(528,{itemID=236676,sourceQuests=a[24],spellID=1220600})}}),
 q(92967,{coords={a[8],{58.3,65.1,2352}},qgs=a[3],g={
 de(530,{itemID=236678,sourceQuests=a[25],spellID=1220603})}}),
@@ -88,7 +241,7 @@ q(92970,{coords={{39.1,60,2352},a[8]},qgs=a[3],g={
 de(2496,{itemID=246742,sourceQuests=a[28],spellID=1243651})}}),
 q(92971,{coords={{40.9,61.3,2352},a[8]},qgs=a[3],g={
 de(1994,{itemID=246104,sourceQuests=a[29],spellID=1240791})}}),
-q(92972,{coords={{45.4,64.3,2352},{45.8,64.9,2352}},description="In a cave",qgs=a[3],g={
+q(92972,{coords={{45.4,64.3,2352},{45.8,64.9,2352},a[8]},description="Inside the cave.",qgs=a[3],g={
 de(1993,{itemID=246103,sourceQuests=a[30],spellID=1240790})}}),
 q(92973,{coords={{46.3,57.9,2352},a[8]},qgs=a[3],g={
 de(1991,{itemID=246101,sourceQuests=a[31],spellID=1240788})}}),
@@ -102,7 +255,7 @@ q(92977,{coords={a[8],{64.56,85.6,2352}},qgs=a[3],g={
 de(1739,{itemID=245548,sourceQuests=a[32],spellID=1238937})}}),
 q(92978,{coords={a[8],{54.2,73.6,2352}},qgs=a[3],g={
 de(1280,{itemID=243334,sourceQuests=a[33],spellID=1235453})}}),
-q(92979,{coords={{61.6,79.4,2352},{62.4,79.5,2352}},description="In a cave",qgs=a[3],g={
+q(92979,{coords={a[8],{61.6,79.4,2352},{62.4,79.5,2352}},description="Inside the cave.",qgs=a[3],g={
 de(1123,{itemID=245334,sourceQuests=a[34],spellID=1238434})}}),
 q(92980,{coords={{28.6,46.8,2352},a[8]},qgs=a[3],g={
 de(1745,{itemID=245556,sourceQuests=a[35],spellID=1239013})}}),
@@ -144,7 +297,7 @@ q(92998,{coords={{26.2,37.9,2352},a[8]},qgs=a[3],g={
 de(1992,{itemID=246102,sourceQuests=a[52],spellID=1240789})}}),
 q(92999,{coords={{28.3,40.1,2352},a[8]},qgs=a[3],g={
 de(1878,{itemID=245662,sourceQuests=a[53],spellID=1239623})}}),
-q(93000,{coords={{59,45.5,2352},{59.2,44.9,2352}},description="In a cave",qgs=a[3],g={
+q(93000,{coords={a[8],{59,45.5,2352},{59.2,44.9,2352}},description="Inside the cave.",qgs=a[3],g={
 de(985,{itemID=241618,sourceQuests=a[54],spellID=1231528})}}),
 q(93001,{coords={a[8],{56.8,52.3,2352}},qgs=a[3],g={
 de(1488,{itemID=244782,spellID=1237900})}}),
@@ -392,8 +545,8 @@ de(723,{itemID=245402,spellID=1238527}),
 de(724,{itemID=245403,spellID=1238528}),
 de(725,{itemID=245404,spellID=1238529})}}),
 n(255519,{coords={a[6]},g={
-i(253580,{spellID=1256697}),
-i(251766,{cost={{"i",242691,1}}})}}),
+i(253580,{spellID=1280456}),
+i(251766,{b=2,cost={{"i",242691,1}}})}}),
 n(255221,{coords={{53.5,40.9,2352}},g={
 de(4474,{itemID=248648,spellID=1247355}),
 de(521,{itemID=245371,spellID=1238494}),
@@ -558,13 +711,13 @@ q(93109,{coords={{47.8,88.4,2351},a[13]},qgs=a[5],g={
 de(1879,{itemID=245680,spellID=1239679})}}),
 q(93110,{coords={{44.2,86.7,2351},a[13]},qgs=a[5],g={
 de(81,{itemID=245398,spellID=1238523})}}),
-q(93111,{coords={{39.5,70.2,2351},{40,73,2351}},description="In a cave",qgs=a[5],g={
+q(93111,{coords={{39.5,70.2,2351},{40,73,2351},a[13]},description="Inside the cave.",qgs=a[5],g={
 de(1744,{itemID=245555,spellID=1239012})}}),
 q(93115,{coords={{42.2,66.3,2351},a[13]},qgs=a[5],g={
 de(2446,{itemID=246614,spellID=1243050})}}),
 q(93131,{coords={{44.7,66.4,2351},a[13]},qgs=a[5],g={
 de(2534,{itemID=246868,spellID=1244140})}}),
-q(93132,{coords={{42.6,50.4,2351},a[13]},qgs=a[5],g={
+q(93132,{coords={{42.6,50.4,2351},a[13]},description="Under the water.",qgs=a[5],g={
 de(2535,{itemID=246869,spellID=1244141})}}),
 q(93133,{coords={{51.8,80,2351},a[13]},qgs=a[5],g={
 de(2548,{itemID=246882,spellID=1244154})}}),
@@ -594,7 +747,7 @@ q(93148,{coords={{43.3,69.5,2351},a[13]},qgs=a[5],g={
 de(1356,{itemID=244169,spellID=1236505})}}),
 q(93149,{coords={{39.2,74,2351},a[13]},qgs=a[5],g={
 de(1329,{itemID=243495,sourceQuests=a[68],spellID=1235725})}}),
-q(93150,{coords={{39.3,57.6,2351},{39.7,57.8,2351}},description="In a cave",qgs=a[5],g={
+q(93150,{coords={{39.3,57.6,2351},{39.7,57.8,2351},a[13]},description="Inside the cave.",qgs=a[5],g={
 de(987,{itemID=241620,sourceQuests=a[69],spellID=1231531})}}),
 q(93151,{coords={{40,78.5,2351},a[13]},qgs=a[5],g={
 de(11721,{itemID=257692,spellID=1261853})}}),
@@ -740,8 +893,8 @@ de(11481,{itemID=257390,spellID=1261508}),
 de(11482,{itemID=257392,spellID=1261510}),
 de(4463,{itemID=248637,spellID=1247344})}}),
 n(255520,{coords={a[14]},g={
-i(253580,{spellID=1256697}),
-i(251766,{cost={{"i",242691,1}}})}}),
+i(253580,{spellID=1280456}),
+i(251766,{b=2,cost={{"i",242691,1}}})}}),
 n(255299,{coords={a[12]},g={
 de(1486,{itemID=244780,spellID=1237898}),
 de(1356,{itemID=244169,spellID=1236505}),
