@@ -24,7 +24,6 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
-app.constructor = constructor;	-- Temporary
 
 -- Provides a Unique Counter value for the Key referenced on each reference
 local returnZero = function() return 0; end;
@@ -285,17 +284,18 @@ if app.IsRetail then
 	end
 end
 
+
+local CloneDictionary = app.CloneDictionary
+-- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
+local classDefinitions, _cache = {}, nil;
+local function call(class, key, t)
+	_cache = rawget(class, key);
+	if _cache then return _cache(t) end
+end
 local function ClassError(...)
 	local params = {...}
 	local err = app.TableConcat(params, nil, "", " ")
 	error(err)
-end
-local CloneDictionary = app.CloneDictionary
--- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-local classDefinitions, _cache = {}, nil;
-local call = function(class, key, t)
-	_cache = rawget(class, key);
-	if _cache then return _cache(t) end
 end
 -- Generates a metatable to use for the given class name based on the provided field functions
 local CreateClassMeta = not app.__perf and function(fields, className)

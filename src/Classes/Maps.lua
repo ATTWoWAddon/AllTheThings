@@ -3,31 +3,25 @@ local L = app.L;
 
 -- App locals
 local contains = app.contains;
+local distance = app.distance;
 
 -- Global locals
-local coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
-	= coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math.floor, math.sqrt, math.random;
-local CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown,IsInInstance
-	= CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown,IsInInstance
-local C_Map_GetMapArtID = C_Map.GetMapArtID;
-local C_Map_GetMapLevels = C_Map.GetMapLevels;
-local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
-local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
-local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
-local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
-local C_Map_GetWorldPosFromMapPos = C_Map.GetWorldPosFromMapPos;
+local coroutine, ipairs, pairs, pcall, tinsert, tonumber, math_floor
+	= coroutine, ipairs, pairs, pcall, tinsert, tonumber, math.floor;
+local CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown, IsInInstance
+	= CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown, IsInInstance
+local C_Map_GetMapInfo, C_Map_GetAreaInfo, C_Map_GetMapArtID, C_Map_GetMapLevels, C_Map_GetBestMapForUnit
+	= C_Map.GetMapInfo, C_Map.GetAreaInfo, C_Map.GetMapArtID, C_Map.GetMapLevels, C_Map.GetBestMapForUnit;
+local C_Map_GetPlayerMapPosition, C_Map_GetMapChildrenInfo, C_Map_GetWorldPosFromMapPos
+	= C_Map.GetPlayerMapPosition, C_Map.GetMapChildrenInfo, C_Map.GetWorldPosFromMapPos;
 local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.GetExploredAreaIDsAtPosition;
--- added in 8.0, can't use in Classic
-local C_Map_GetMapInfoAtPosition = C_Map.GetMapInfoAtPosition or app.ReturnFalse
+local C_Map_GetMapInfoAtPosition = C_Map.GetMapInfoAtPosition or app.ReturnFalse	-- added in 8.0, can't use in Classic
 
 -- Current Map Detection
 local CurrentMapID;
 local MapIDToMapName = setmetatable({}, {
 	__index = L.MAP_ID_TO_ZONE_TEXT,
 });
-local function distance( x1, y1, x2, y2 )
-	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
-end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
 	app.RealMapID = originalMapID
@@ -198,6 +192,8 @@ local function GetPlayerPosition()
 	return mapID, 50, 50, true
 end
 app.GetPlayerPosition = GetPlayerPosition
+app.GetMapName = GetMapName;
+
 local UpdateLocation
 if app.GameBuildVersion < 30000 then
 	-- Before Wrath Classic we didn't have mapIDs in the world proper, so ATT had to make a guess.
@@ -222,28 +218,9 @@ if app.GameBuildVersion < 30000 then
 	UpdateLocation = function()
 		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 	end
-elseif not app.IsRetail then
+else
 	-- After Wrath Classic you don't need to wait for a bit before checking.
-	local UpdateLocationCoroutine = function()
-		-- Acquire the new map ID.
-		local mapID = GetCurrentMapID();
-		while not mapID do
-			coroutine.yield();
-			mapID = GetCurrentMapID();
-		end
-		if CurrentMapID ~= mapID then
-			CurrentMapID = mapID;
-			app.CurrentMapID = mapID;
-			app.CurrentMapInfo = C_Map_GetMapInfo(mapID);
-			app.HandleEvent("OnCurrentMapIDChanged");
-		end
-	end
-	UpdateLocation = function()
-		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
-	end
-else	-- Retail [please don't make this a coroutine... we need the logic to execute when it's expected to based on Events]
 	local Callback = app.CallbackHandlers.Callback
-	-- After Wrath Classic you don't need to wait for a bit before checking.
 	local function RawUpdateLocation()
 		-- Acquire the new map ID.
 		local mapID = GetCurrentMapID() or 0
@@ -271,7 +248,6 @@ app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
 app.AddEventRegistration("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", UpdateLocation);
-app.GetMapName = GetMapName;
 
 -- Exploration
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};

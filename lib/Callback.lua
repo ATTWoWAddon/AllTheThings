@@ -5,7 +5,8 @@
 local _, app = ...;
 
 -- Global locals
-local After, max, unpack = C_Timer.After, math.max, unpack;
+local C_Timer_After, InCombatLockdown, math_max, unpack
+	= C_Timer.After, InCombatLockdown, math.max, unpack;
 
 -- Setup the callback tables since they are heavily used
 local __callbacks = {};
@@ -34,7 +35,7 @@ local CallbackMethodCache = setmetatable({}, { __mode = "kv",
 local function Callback(method, ...)
 	if not __callbacks[method] then
 		__callbacks[method] = ... and {...} or true;
-		After(0, CallbackMethodCache[method]);
+		C_Timer_After(0, CallbackMethodCache[method]);
 	-- else app.PrintDebug("CB:Skip",method)
 	end
 end
@@ -42,14 +43,13 @@ end
 local function DelayedCallback(method, delaySec, ...)
 	if not __callbacks[method] then
 		__callbacks[method] = ... and {...} or true;
-		After(max(0, delaySec or 0), CallbackMethodCache[method]);
+		C_Timer_After(math_max(0, delaySec or 0), CallbackMethodCache[method]);
 	-- else app.PrintDebug("DCB:Skip",method)
 	end
 end
 
 -- Callbacks to trigger after combat has ended!
 local __combatcallbacks = {};
-local InCombatLockdown = InCombatLockdown;
 -- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end

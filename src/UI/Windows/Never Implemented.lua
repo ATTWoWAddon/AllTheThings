@@ -18,6 +18,7 @@ app:CreateWindow("Never Implemented", {
 				u = 1,
 				g = g,
 			});
+			app.AssignFieldValue(self.data, "u", 1);
 			self:AssignChildren();
 		end
 	end,
@@ -30,11 +31,3 @@ app:CreateWindow("Never Implemented", {
 		return false;
 	end
 });
-
--- Ensure the u field is assigned
-app.AddEventHandler("OnLoad", function()
-	local category = { g = app.Categories.NeverImplemented }
-	if category then
-		app.AssignFieldValue(category, "u", 1);
-	end
-end)
