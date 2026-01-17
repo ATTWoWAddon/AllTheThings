@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 17771 },	-- Elementium Bar
 								-- #if SEASON_OF_DISCOVERY
 								-- #if BEFORE 1.15.4
-								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the mean time, gather the required materials while things are less in demand.",
+								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
 								-- #endif
 								-- #endif
 								["cost"] = {
@@ -165,9 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #if ANYCLASSIC
 								["modelScale"] = 20,
 								-- #endif
-								["groups"] = {
-									i(19018),	-- Dormant Wind Kissed Blade
-								},
+								["groups"] = { i(19018) },	-- Dormant Wind Kissed Blade
 							}),
 						},
 					})),
@@ -261,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
@@ -283,10 +281,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7848, {	-- Attunement to the Core
 					["description"] =
-						-- #if BEFORE 5.4.0
-						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
-						-- #else
+						-- #if AFTER 5.4.0
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+						-- #else
+						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #endif
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
@@ -354,9 +352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Discordant Bracers
 							["provider"] = { "i", 17309 },	-- Discordant Bracers
-							["cost"] = {
-								{ "i", 17310, 1 },	-- Aspect of Neptulon
-							},
+							["cost"] = { { "i", 17310, 1 } },	-- Aspect of Neptulon
 							["crs"] = {
 								8521,	-- Blighted Horror
 								8519,	-- Blighted Surge
@@ -383,10 +379,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47, 24.48, FELWOOD },
-					["cost"] = {
-						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
-					},
+					["coord"] = { 47.0, 24.48, FELWOOD },
+					["cost"] = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
@@ -475,11 +469,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_1, {
 			-- #endif
 			n(ZONE_DROPS, sharedData({
-				-- #if AFTER TWW
-				["description"] = "This armour was a 'Binds when equipped' prior to TWW.",
-				-- #elseif AFTER DF
-				["description"] = "This item will likely become soulbound with The War Within, you might want an appropriate character to hold on to it.",
-				-- #endif
+				["description"] =
+					-- #if AFTER TWW
+					"This armour was a 'Binds when equipped' prior to TWW.",
+					-- #elseif AFTER DF
+					"This item will likely become soulbound with The War Within, you might want an appropriate character to hold on to it.",
+					-- #else
+					nil,
+					-- #endif
 			}, {
 				i(16802),	-- Arcanist Belt (Mage)
 				i(16799),	-- Arcanist Bindings (Mage)
@@ -563,7 +560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(16867),	-- Legplates of Might (Warrior)
 					i(16822),	-- Nightslayer Pants (Rogue)
 					i(16814, {	-- Pants of Prophecy (Priest)
-						-- #if after 7.3.5
+						-- #if AFTER 7.3.5
 						["description"] = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
 						-- #endif
 					}),
@@ -796,7 +793,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					i(19017, {	-- Essence of the Firelord
-						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
+						["description"] = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
 						["classes"] = SWORD_CLASSES,
 						["b"] = 1,
 					}),

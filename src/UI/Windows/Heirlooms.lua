@@ -1,7 +1,6 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 if app.GameBuildVersion < 30000 then return; end	-- Heirlooms were added with Wrath.
-local L = app.L;
 
 -- Global locals
 local ipairs, pairs, tinsert =

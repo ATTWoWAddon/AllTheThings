@@ -1869,6 +1869,13 @@ local AccountWideQuestsDB = {
 	86484,	-- Temper Like A Tempest
 	86485,	-- A Loyal Friend
 	86486,	-- Hungry, Hungry Snapdragon
+	86491,	-- Dastardly Duos! It's on!
+	86503,	-- Who are the Dastardly Duos?
+	86504,	-- Ensemble: Paradise Beach Loungewear
+	86505,	-- Ensemble: Southsea Cruise Loungewear
+	86506,	-- Ensemble: Salvage Rig Garments
+	86507,	-- Ensemble: Rusty Bruiser's Outfit
+	86508,	-- Ensemble: Sun-Soaked Clothing
 	86555,
 	86567,	-- A Threatening Letter
 	86568,	-- Misplaced Work Order
@@ -1877,11 +1884,28 @@ local AccountWideQuestsDB = {
 	86571,	-- Second Half of Noggenfogger's Journal
 	86572,	-- First Half of Noggenfogger's Journal
 	86573,	-- Gallywix's Notes
+	86596,	-- Steamwheedle's Trove (Exalted)
+	86597,	-- Blackwater's Trove (Exalted)
+	86598,	-- Bilgewater's Trove (Honored)
+	86599,	-- Venture Co.'s Trove (Exalted)
+	86630,	-- Crumpled Schematic: Wormhole Generator: Undermine
 	86706,	-- Seeking Knowledge of the Past
+	86748,	-- Bilgewater's Trove (Revered)
+	86749,	-- Bilgewater's Trove (Exalted)
+	86750,	-- Blackwater's Trove (Honored)
+	86751,	-- Blackwater's Trove (Revered)
+	86753,	-- Steamwheedle's Trove (Honored)
+	86754,	-- Steamwheedle's Trove (Revered)
+	86755,	-- Venture Co.'s Trove (Honored)
+	86756,	-- Venture Co.'s Trove (Revered)
 	86771,	-- Paint: Body Roll Blue
 	86772,	-- Paint: Goblin Green
 	86773,	-- Paint: Redlining Red
 	86774,	-- Paint: Yellow Cake Yellow
+	86787,	-- Sturdy Chest
+	86788,	-- Sturdy Chest
+	86789,	-- Sturdy Chest
+	86790,	-- Sturdy Chest
 	86801,	-- Faceless Mask of Multitudes
 	86878,	-- Nightfall Sanctum Campsite
 	86931,	-- triggered after turn in of any of the pact weeklies?
@@ -2032,6 +2056,7 @@ local AccountWideQuestsDB = {
 	91082,	-- Hellcaller chest tracker
 	91083,	-- Hellcaller chest tracker
 	91142,	-- A Tabard for the Trusted
+	91154,	-- Dissenter Tailtrek
 	91166,	-- Hellcaller chest tracker
 	91167,	-- Hellcaller chest tracker
 	91168,	-- Hellcaller chest tracker
@@ -2108,6 +2133,9 @@ local AccountWideQuestsDB = {
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92573,	-- Sturdy Chest
+	92577,	-- Furniture Favor
+	92578,	-- Draconic Decor
+	92588,	-- Fallen King's Corrupted Blades
 	92626,	-- ??
 	92628,	-- ??
 	92680,	-- Ensemble: World-Defiler's Battle Armor

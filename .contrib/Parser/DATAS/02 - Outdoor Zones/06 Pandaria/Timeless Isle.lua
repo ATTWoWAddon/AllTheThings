@@ -965,14 +965,14 @@ root(ROOTS.Zones, {
 				n(QUESTS, {
 					q(33229, {	-- A Flash of Bronze... (A)
 						["qg"] = 73691,	-- Chromie <The Timewalkers>
-						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["coord"] = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(33230, {	-- A Flash of Bronze... (H)
 						["qg"] = 73691,	-- Chromie <The Timewalkers>
-						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["coord"] = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, {
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
 						["qg"] = 73691,	-- Chromie <The Timewalkers>
-						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["coord"] = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 					}),
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, {
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
 						["qg"] = 73691,	-- Chromie <The Timewalkers>
-						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["coord"] = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 						["groups"] = {

@@ -37,8 +37,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				pet(4461, {	-- Greenlands Chicken (PET!)
 					["description"] = "Likely a Rare spawn of Arathi Chicken, can be found frontline & backline. Coords are some confirmed repeat spawn spots.",
 					["coords"] = {
-						{ 49, 63, HALLOWFALL },
-						{ 76, 40, HALLOWFALL },
+						{ 49.0, 63.0, HALLOWFALL },
+						{ 76.0, 40.0, HALLOWFALL },
 					},
 				}),
 				pet(4533, {	-- Meek Bloodlasher (PET!)

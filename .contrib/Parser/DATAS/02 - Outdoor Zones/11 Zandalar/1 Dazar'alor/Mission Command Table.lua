@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["groups"] = { i(245463, {["timeline"] = { ADDED_11_2_7 }}),},	-- Lordaeron Banded Barrel (DECOR!)
 				}),
 				i(163036, {["races"]=IGNORED_VALUE}),	-- Polished Pet Charm
+				i(149503, {["races"]=IGNORED_VALUE}),	-- Stolen Gift
 				mission(2078),	-- Azeroth Bleeds
 				mission(2087),	-- Explore the Roost
 				mission(1878, {	-- The Shadow War

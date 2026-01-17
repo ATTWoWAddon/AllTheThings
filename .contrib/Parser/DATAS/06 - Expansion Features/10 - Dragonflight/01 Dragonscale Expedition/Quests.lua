@@ -399,7 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70766, {	-- The Fractured Flame
 						["sourceQuests"] = { 70507 },	-- The Insight of Tyr
 						["provider"] = { "i", 199790 },	-- Makko's Journal Cover
-						["coord"] = { 44, 66, OHNAHRAN_PLAINS },
+						["coord"] = { 44.0, 66.0, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(203598),	-- Makko's Journal Cover (QI!)
 							i(200295),	-- Makko's Complete Journal (QI!) [book]
@@ -795,7 +795,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["groups"] = {
 							spell(388278),	-- Intrepid Explorer cast
-							title(475),	-- Intrepid Explorer <Name> (TITLE!)
+							title(475),	-- Intrepid Explorer <Name>
 							i(197921),	-- Primal Infusion
 						},
 					}),

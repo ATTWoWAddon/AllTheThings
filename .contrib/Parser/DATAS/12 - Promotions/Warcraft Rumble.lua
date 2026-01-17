@@ -7,8 +7,8 @@ WARCRAFT_RUMBLE = createHeader({
 	text = {
 		en = "Warcraft Rumble",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Warcraft Rumble",
+		mx = "Warcraft Rumble",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -107,26 +107,32 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 	}),
 	n(MAILBOX, {
 		i(202183, {	-- Small Rumble Purse
-			i(204731),	-- Warcraft Rumble Welcome Letter [N] (QI!)
-			i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QI!)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QI!)
-				["races"] = HORDE_ONLY,
-			}),
+			["timeline"] = { REMOVED_10_2_0 },
+			["groups"] = {
+				i(204731),	-- Warcraft Rumble Welcome Letter [N] (QS!)
+				i(205189, {	-- Warcraft Rumble Welcome Letter [A] (QS!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(205190, {	-- Warcraft Rumble Welcome Letter [H] (QS!)
+					["races"] = HORDE_ONLY,
+				}),
+			},
 		}),
 	}),
 	n(QUESTS, {
 		q(73183, {	-- Wanna Play a Game? [N]
-			["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N] (QI!)
+			["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N] (QS!)
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75625, {	-- Wanna Play a Game? [A]
-			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A] (QI!)
+			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A] (QS!)
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75626, {	-- Wanna Play a Game? [H]
-			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H] (QI!)
+			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H] (QS!)
 			["races"] = HORDE_ONLY,
+			["timeline"] = { REMOVED_10_2_0 },
 		}),
 		q(75221, {	-- Find a Rumble Coin
 			["qg"] = 201230,	-- Mizzen
@@ -260,7 +266,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			o(386138, {	-- Rumble Coin Bag
 				["questID"] = 73928,
-				["coord"] = { 19.1, 82, OHNAHRAN_PLAINS },
+				["coord"] = { 19.1, 82.0, OHNAHRAN_PLAINS },
 			}),
 			o(386139, {	-- Rumble Coin Bag
 				["questID"] = 73936,
@@ -285,11 +291,11 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			o(387718, {	-- Rumble Foil Bag
 				["questID"] = 74848,
-				["coord"] = { 54, 75.3, ORGRIMMAR },
+				["coord"] = { 54.0, 75.3, ORGRIMMAR },
 			}),
 			o(386158, {	-- Rumble Foil Bag
 				["questID"] = 74287,
-				["coord"] = { 56, 12, DUROTAR },
+				["coord"] = { 56.0, 12.0, DUROTAR },
 			}),
 			o(387719, {	-- Rumble Foil Bag
 				["questID"] = 74849,
@@ -313,7 +319,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			o(405586, {	-- Rumble Foil Bag
 				["questID"] = 75040,
-				["coord"] = { 19.1, 82, OHNAHRAN_PLAINS },
+				["coord"] = { 19.1, 82.0, OHNAHRAN_PLAINS },
 			}),
 			o(405587, {	-- Rumble Foil Bag
 				["questID"] = 75041,
@@ -329,7 +335,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			o(387722, {	-- Rumble Foil Bag
 				["questID"] = 74852,
-				["coord"] = { 57, 66.7, THALDRASZUS },
+				["coord"] = { 57.0, 66.7, THALDRASZUS },
 			}),
 		}),
 	}),

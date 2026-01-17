@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 39.4, 44.4, CAVERNS_OF_TIME },
 						-- #else
-						{ 59.6, 54, TANARIS },
+						{ 59.6, 54.0, TANARIS },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },

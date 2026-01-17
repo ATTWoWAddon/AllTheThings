@@ -46,7 +46,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			},
 		}),
 		n(63014, {	-- Marcus Jensen
-			["coord"] = { 40.2, 66, ELWYNN_FOREST },
+			["coord"] = { 40.2, 66.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
 				{"select", "npcID", 63596},				-- Audrey Burnhep

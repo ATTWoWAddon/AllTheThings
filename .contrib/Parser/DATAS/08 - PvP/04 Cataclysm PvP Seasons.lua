@@ -602,43 +602,28 @@ root(ROOTS.PVP, {
 					moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["timeline"] = { ADDED_7_2_0 },
+						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+						-- #if AFTER 11.0.0
+						["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+							i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+							i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
+							i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+							i(64931),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+							i(64932),	-- Gladiator's Silk Amice - confirmed 14/10/21
+							i(88251),	-- Gladiator's Silk Amice - confirmed 14/10/21
+							i(88252),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+							i(88253),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+							i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
+							i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+						}),
+						-- #endif
 					})),
 					moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 					moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl
 					moh(2, i(64855)),	-- Bloodthirsty Gladiator's Silk Handguards
 					moh(3, i(64856)),	-- Bloodthirsty Gladiator's Silk Robe
 					moh(3, i(64857)),	-- Bloodthirsty Gladiator's Silk Trousers
-					-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
-					i(64928, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64929, {	-- Gladiator's Silk Robe - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64930, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64931, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(64932, {	-- Gladiator's Silk Amice - confirmed 14/10/21
-						["timeline"] = { CREATED_4_0_3, ADDED_7_2_0 },
-					}),
-					i(88251, {	-- Gladiator's Silk Amice - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88252, {	-- Gladiator's Silk Cowl - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88253, {	-- Gladiator's Silk Handguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88254, {	-- Gladiator's Silk Robe - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88255, {	-- Gladiator's Silk Trousers - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
@@ -1796,69 +1781,33 @@ root(ROOTS.PVP, {
 					moh(12, iensemble(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
 						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 						["timeline"] = { ADDED_7_2_0 },
+						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+						-- #if AFTER 11.0.0
+						["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+							i(88171),	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
+							i(88172),	-- Gladiator's Ironskin Helm - confirmed 14/10/21
+							i(88173),	-- Gladiator's Ironskin Legguards - confirmed 14/10/21
+							i(88174),	-- Gladiator's Ironskin Tunic - confirmed 14/10/21
+							i(88175),	-- Gladiator's Ironskin Spaulders - confirmed 14/10/21
+							i(88176),	-- Gladiator's Copperskin Gloves - confirmed 14/10/21
+							i(88177),	-- Gladiator's Copperskin Helm - confirmed 14/10/21
+							i(88178),	-- Gladiator's Copperskin Legguards - confirmed 14/10/21
+							i(88179),	-- Gladiator's Copperskin Tunic - confirmed 14/10/21
+							i(88180),	-- Gladiator's Copperskin Spaulders - confirmed 14/10/21
+							i(93508),	-- Crafted Gladiator's Ironskin Gloves - confirmed 14/10/21
+							i(93510),	-- Crafted Gladiator's Ironskin Helm - confirmed 14/10/21
+							i(93512),	-- Crafted Gladiator's Ironskin Legguards - confirmed 14/10/21
+							i(93514),	-- Crafted Gladiator's Ironskin Spaulders - confirmed 14/10/21
+							i(93516),	-- Crafted Gladiator's Ironskin Tunic - confirmed 14/10/21
+							i(93518),	-- Crafted Gladiator's Copperskin Gloves - confirmed 14/10/21
+							i(93520),	-- Crafted Gladiator's Copperskin Helm - confirmed 14/10/21
+							i(93522),	-- Crafted Gladiator's Copperskin Legguards - confirmed 14/10/21
+							i(93524),	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
+							i(93526),	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
+						}),
+						-- #endif
 					})),
-					-- #if AFTER 7.2.0.23436
-					i(88171, {	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88172, {	-- Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88173, {	-- Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88174, {	-- Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88175, {	-- Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88176, {	-- Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88177, {	-- Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88178, {	-- Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88179, {	-- Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88180, {	-- Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(93508, {	-- Crafted Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93510, {	-- Crafted Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93512, {	-- Crafted Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93514, {	-- Crafted Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93516, {	-- Crafted Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93518, {	-- Crafted Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93520, {	-- Crafted Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93522, {	-- Crafted Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93524, {	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93526, {	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					-- #endif
 					moh(2, i(70279)),	-- Ruthless Gladiator's Dragonhide Gloves
 					moh(3, i(70280, {	-- Ruthless Gladiator's Dragonhide Helm
 						-- #if ANYCLASSIC
@@ -1910,68 +1859,6 @@ root(ROOTS.PVP, {
 						["OnUpdate"] = RUTHLESS_ELITE_ONUPDATE,	-- These were made unavailable together with Elite gear in Cata Classic.
 						-- #endif
 					})),
-					-- #if BEFORE 7.2.0.23436
-					i(88171, {	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88172, {	-- Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88173, {	-- Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88174, {	-- Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88175, {	-- Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88176, {	-- Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88177, {	-- Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88178, {	-- Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88179, {	-- Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(88180, {	-- Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_0_4, ADDED_7_2_0 },
-					}),
-					i(93508, {	-- Crafted Gladiator's Ironskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93510, {	-- Crafted Gladiator's Ironskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93512, {	-- Crafted Gladiator's Ironskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93514, {	-- Crafted Gladiator's Ironskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93516, {	-- Crafted Gladiator's Ironskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93518, {	-- Crafted Gladiator's Copperskin Gloves - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93520, {	-- Crafted Gladiator's Copperskin Helm - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93522, {	-- Crafted Gladiator's Copperskin Legguards - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93524, {	-- Crafted Gladiator's Copperskin Spaulders - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					i(93526, {	-- Crafted Gladiator's Copperskin Tunic - confirmed 14/10/21
-						["timeline"] = { CREATED_5_2_0, ADDED_7_2_0 },
-					}),
-					-- #endif
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor

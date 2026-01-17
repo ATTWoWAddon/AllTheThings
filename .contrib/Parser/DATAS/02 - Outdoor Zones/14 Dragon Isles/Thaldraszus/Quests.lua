@@ -1235,7 +1235,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(72519, {	-- Temporal Two-ning
 				["sourceQuests"] = { 66032 },	-- Return to the Present
 				["provider"] = { "n", 186931 },	-- Nozdormu
-				["coord"] = { 60, 82.4, THALDRASZUS },
+				["coord"] = { 60.0, 82.4, THALDRASZUS },
 			}),
 			q(67178, {	-- White Eyes, Blue Dragon
 				["sourceQuests"] = { 67167 },	-- It's Time To Duel!

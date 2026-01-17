@@ -3441,16 +3441,43 @@ r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197}),
 r(12059,{itemID=10301,learnedAt=215,q=2,requireSkill=197})}),
 cl(11,{
 i(17682,{c={11},f=200,lvl=50,q=3,rank=1,spellID=21849}),
-i(17683,{c={11},f=200,lvl=60,q=3,rank=2,spellID=21850})}),
+i(17683,{c={11},f=200,lvl=60,q=3,rank=2,spellID=21850}),
+i(216764,{b=1,c={11},f=200,lvl=25,q=2,spellID=436956,u=1606}),
+i(216771,{b=1,c={11},f=200,lvl=25,q=2,spellID=417123,u=1606}),
+i(216767,{b=1,c={11},f=200,lvl=25,q=2,spellID=437138,u=1606})}),
 cl(8,{
 i(18600,{c={8},f=200,lvl=56,q=3,rank=1,spellID=23028}),
+i(216740,{b=1,c={8},f=200,lvl=25,q=2,spellID=436949,u=1606}),
 i(22890,{c={8},f=200,lvl=60,q=3,rank=5,spellID=28609,u=1611})}),
 cl(5,{
 i(17413,{c={5},f=200,lvl=48,q=3,rank=1,spellID=21562}),
 i(17414,{c={5},f=200,lvl=60,q=3,rank=2,spellID=21564}),
-i(22393,{c={5},f=200,lvl=60,q=3,rank=1,spellID=27683,u=1610})}),
+i(22393,{c={5},f=200,lvl=60,q=3,rank=1,spellID=27683,u=1610}),
+i(216744,{b=1,c={5},f=200,lvl=25,q=2,spellID=436951,u=1606}),
+i(216745,{b=1,c={5},f=200,lvl=25,q=2,spellID=401977,u=1606})}),
 cl(9,{
-i(22891,{c={9},f=200,lvl=60,q=3,rank=4,spellID=28610,u=1611})})}),
+i(216748,{b=1,c={9},f=200,lvl=25,q=2,spellID=437169,u=1606}),
+i(22891,{c={9},f=200,lvl=60,q=3,rank=4,spellID=28610,u=1611}),
+i(216747,{b=1,c={9},f=200,lvl=25,q=2,spellID=437032,u=1606})}),
+cl(3,{
+i(216770,{b=1,c={3},f=200,lvl=25,q=2,spellID=415423,u=1606}),
+i(226401,{b=1,c={3},f=200,lvl=10,q=2,spellID=409580,u=1608})}),
+cl(2,{
+i(216768,{b=1,c={2},f=200,lvl=25,q=2,spellID=435984,u=1606}),
+i(226398,{b=1,c={2},f=200,lvl=10,q=2,spellID=407798,u=1608}),
+i(226400,{b=1,c={2},f=200,lvl=10,q=2,spellID=415076,u=1608})}),
+cl(4,{
+i(226394,{b=1,c={4},f=200,lvl=60,q=2,u=1608}),
+i(226395,{b=1,c={4},f=200,lvl=60,q=2,u=1608}),
+i(226396,{b=1,c={4},f=200,lvl=60,q=2,u=1608}),
+i(216738,{b=1,c={4},f=200,lvl=25,q=2,spellID=438040,u=1606}),
+i(226397,{b=1,c={4},f=200,lvl=60,q=2,u=1608})}),
+cl(7,{
+i(226402,{b=1,c={7},f=200,lvl=10,q=2,spellID=425336,u=1608}),
+i(216769,{b=1,c={7},f=200,lvl=25,q=2,spellID=437009,u=1606})}),
+cl(1,{
+i(216746,{b=1,c={1},f=200,lvl=25,q=2,spellID=403215,u=1606}),
+i(226403,{b=1,c={1},f=200,lvl=40,q=2,spellID=403228,u=1608})})}),
 flt(56,{
 i(3173,{coords={{29.2,53,1432},{35.4,38.5,1432},{73.7,44.8,1432},{48.6,31.8,1439}},crs={1186,1188,1189,1225,2163,2164,2165},description="Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",q=1}),
 i(3730,{coords={{39.5,63.6,1440},{67.5,62.2,1440}},crs={3809,3810},description="Drops from bears in the level bracket 20-30 like bears in Ashenvale.",q=1}),
@@ -3524,7 +3551,7 @@ i(5784,{coords={{15.1,39.3,1437}},crs={1024,1025,1026,1027,1028,1029,1418},descr
 i(5523,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",maps={1413,1421,1432,1433,1436,1439,1440},q=1,g={
 i(5503,{q=1}),
 i(5498,{q=2})}}),
-i(6889,{coords={{44,48,1439}},crs={10157,10158,10159,10160},description="Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",q=1}),
+i(6889,{coords={{40.6,59,1412},{76.6,68.2,1432},{52,38.8,1433},{61.2,59.8,1436},{54.6,60.6,1438},{44,48,1439}},crs={154,199,428,1109,1194,1995,1996,1997,2969,2970,2971,10157,10158,10159,10160},description="Drops from birds, owlkin and striders in entry- and lower level vanilla zones",q=1}),
 i(4402,{coords={{81,48,1418},{15,61,1435},{62,42,1437},{36,12,1442},{46,24,1444},{45,68,1445}},description="Drops from small dragonkin like darters and whelps.",q=1}),
 i(5465,{coords={{35.7,13.7,1421}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",maps={1438},q=1}),
 i(1475,{description="Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1432,1442},q=1}),

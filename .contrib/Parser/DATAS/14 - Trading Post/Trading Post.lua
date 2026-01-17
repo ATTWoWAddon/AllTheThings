@@ -27,7 +27,7 @@ FILLED_TRAVELERS_LOG = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Эта награда выдаётся за заполнение прогресса Очков путешествия в течение месяца.",
-		-- TODO: cn = "",
+		cn = "此奖励在当月填满旅行点进度条后获得。",
 		-- TODO: tw = "",
 	},
 });
@@ -1706,7 +1706,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(95, i(251671)),	-- Wearable Copper Pot Lid
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.99999" } }, {	-- TODO: Timeline out correctly
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.64978" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
 			}),
@@ -1749,269 +1749,42 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			}),
 		})),
 	}),
+	n(YEAR2026, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(258266),	-- Ensemble: Vengeful Regalia of the Crusader
+			}),
+			filter(MOUNTS, {
+				traderstender(750, i(212631)),	-- Reins of the Brilliant Sunburst Peafowl (MOUNT!)
+				traderstender(500, i(260409)),	-- Savage Crimson Battle Turtle (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(300, i(233361)),	-- Wind-Up Wuffi (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(90, i(260422)),	-- Axe of the Crimson Crescent
+				traderstender(40, i(260418)),	-- Basic Crimson Sabatons
+				traderstender(150, i(256725)),	-- Crest of Unending Woe
+				traderstender(50, i(252748)),	-- Crimson Winter Toque
+				traderstender(200, i(253046)),	-- Crusader's Ruby Blade
+				traderstender(230, i(253050)),	-- Crusader's Ruby Greatblade
+				traderstender(230, i(253277)),	-- Crusader's Ruby Greatmace
+				traderstender(200, i(253280)),	-- Crusader's Ruby Mace
+				traderstender(100, iensemble(242478)),	-- Ensemble: Crimson Sweatsuit
+				traderstender(650, iensemble(233328)),	-- Ensemble: Golden Clockwork Attire
+				traderstender(100, iensemble(257979)),	-- Ensemble: Sorcerer's Brick Garb
+				traderstender(440, iensemble(249946)),	-- Ensemble: Villager's City Attire
+				traderstender(440, iensemble(250911)),	-- Ensemble: Villager's City Collection
+				traderstender(260, i(233277)),	-- Golden Clockwork Defender
+				traderstender(300, i(233257)),	-- Golden Clockwork Doomfist
+				traderstender(325, i(233249)),	-- Golden Clockwork Power Hammer
+				traderstender(150, i(260411)),	-- Iron Chainkini
+				traderstender(300, i(233270)),	-- Long-Range Golden Clockstopper
+				traderstender(100, i(251517)),	-- Shield of Unending Woe
+				traderstender(300, i(233273)),	-- Steam-Powered Golden Cloak
+				traderstender(100, i(260934)),	-- Thalassian Archer's Quiver
+				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
+			}),
+		})),
+	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF,
-sharedData({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
-	-- These don't trigger when using ensembles, but they are listed on Wowhead
-	q(65718),	-- Ensemble: Slumbering Caldera Regalia
-	q(72087),	-- Ensemble: Void-Bound Raiment
-	q(72088),	-- Ensemble: Void-Bound Battlegear
-	q(72123),	-- Ensemble: Void-Bound Chains
-	q(72124),	-- Ensemble: Void-Bound Warplate
-})));
-
-root(ROOTS.NeverImplemented, {
-	n(TRADING_POST_NYI, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
-		filter(BATTLE_PETS, {
-			traderstender(750, i(190173)),	-- Lil' Maka'jin (PET!)
-		}),
-		filter(COSMETIC, {
-			-- 10.0.0
-			expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
-				n(SETS, {
-					------ Honored Valarjar Set [Mail] ------
-					i(190563),	-- Armbands of the Honored Valarjar
-					i(190564),	-- Cape of the Honored Valarjar
-					i(190568),	-- Coif of the Honored Valarjar
-					i(190567),	-- Cuirass of the Honored Valarjar
-					i(190566),	-- Gauntlets of the Honored Valarjar
-					i(190565),	-- Girdle of the Honored Valarjar
-					i(190570),	-- Legguards of the Honored Valarjar
-					i(190571),	-- Pauldrons of the Honored Valarjar
-					i(190569),	-- Sabatons of the Honored Valarjar
-
-					------ Honored Valarjar Set [Plate] ------
-					i(190919),	-- Breastplate of the Honored Valarjar
-					i(190915),	-- Gardbrace of the Honored Valarjar
-					i(190914),	-- Greatbelt of the Honored Valarjar
-					i(190911),	-- Greatcloak of the Honored Valarjar
-					i(190916),	-- Greaves of the Honored Valarjar
-					i(190918),	-- Handguards of the Honored Valarjar
-					i(190917),	-- Helm of the Honored Valarjar
-					i(190913),	-- Vambraces of the Honored Valarjar
-					i(190912),	-- Warboots of the Honored Valarjar
-
-					------ Slumbering Caldera Set ------
-					i(190781),	-- Slumbering Caldera Bracers
-					i(190780),	-- Slumbering Caldera Crown
-					i(190775),	-- Slumbering Caldera Gauntlets
-					i(190776),	-- Slumbering Caldera Girdle
-					i(190782),	-- Slumbering Caldera Hauberk
-					i(190778),	-- Slumbering Caldera Legguards
-					i(190777),	-- Slumbering Caldera Pauldrons
-					i(190774),	-- Slumbering Caldera Robe
-					i(190779),	-- Slumbering Caldera Sabatons
-
-					------ Twisted Arcanum Set ------
-					i(190162),	-- Twisted Arcanum Bindings
-					i(190159),	-- Twisted Arcanum Cowl
-					i(190158),	-- Twisted Arcanum Grips
-					i(190161),	-- Twisted Arcanum Mantle
-					i(190163),	-- Twisted Arcanum Robe
-					i(190156),	-- Twisted Arcanum Sash
-					i(190157),	-- Twisted Arcanum Slippers
-					i(190160),	-- Twisted Arcanum Trousers
-					i(190193),	-- Twisted Arcanum Tunic
-				}),
-			})),
-
-			-- 10.0.5
-			expansion(EXPANSION.DF, patch(0,5), bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
-				n(ARMOR, {
-					i(190672),	-- Deathguard Acolyte's Cloak
-					i(189869),	-- Distinguished Warcloak
-				}),
-				n(SETS, {
-					i(190575),	-- Ensemble: Chains of the Honored Valarjar
-					i(190165),	-- Ensemble: Twisted Arcanum Regalia
-
-					------ Val'Sharah Protector Set ------
-					i(190547),	-- Val'Sharah Protector's Bracers
-					i(190897),	-- Val'Sharah Protector's Crown
-					i(190213),	-- Val'sharah Protector's Cuirass
-					i(190676),	-- Val'Sharah Protector's Gauntlets
-					i(190861),	-- Val'Sharah Protector's Girdle
-					i(189881),	-- Val'sharah Protector's Greaves
-					i(190069),	-- Val'sharah Protector's Sabatons
-					i(190074),	-- Val'sharah Protector's Spaulders
-
-					------ Void-Bound Set [Cloth] ------
-					i(190679),	-- Void-Bound Cord
-					i(190839),	-- Void-Bound Crown
-					i(190834),	-- Void-Bound Cuffs
-					i(200923),	-- Void-Bound Drape
-					i(190680),	-- Void-Bound Gloves
-					i(190683),	-- Void-Bound Mantle
-					i(190838),	-- Void-Bound Robe
-					i(190835),	-- Void-Bound Slippers
-					i(190684),	-- Void-Bound Trousers
-
-					------ Void-Bound Set [Leather] ------
-					i(190863),	-- Void-Bound Belt
-					i(190862),	-- Void-Bound Bracers
-					i(200920),	-- Void-Bound Cloak
-					i(190704),	-- Void-Bound Handguards
-					i(200919),	-- Void-Bound Leggings
-					i(190879),	-- Void-Bound Mask
-					i(190708),	-- Void-Bound Shoulderguards
-					i(190703),	-- Void-Bound Striders
-					i(190707),	-- Void-Bound Vest
-
-					------ Void-Bound Set [Mail] ------
-					i(190677),	-- Void-Bound Boots
-					i(190678),	-- Void-Bound Chain
-					i(190682),	-- Void-Bound Circlet
-					i(190837),	-- Void-Bound Grips
-					i(190840),	-- Void-Bound Hauberk
-					i(200922),	-- Void-Bound Shroud
-					i(190841),	-- Void-Bound Spaulders
-					i(190681),	-- Void-Bound Tassets
-					i(190836),	-- Void-Bound Wristguards
-
-					------ Void-Bound Set [Plate] ------
-					i(190866),	-- Void-Bound Breastplate
-					i(190865),	-- Void-Bound Gauntlets
-					i(190701),	-- Void-Bound Girdle
-					i(200921),	-- Void-Bound Greatcloak
-					i(190706),	-- Void-Bound Greathelm
-					i(190705),	-- Void-Bound Greaves
-					i(190867),	-- Void-Bound Pauldrons
-					i(190864),	-- Void-Bound Sabatons
-					i(190702),	-- Void-Bound Vambraces
-				}),
-				n(WEAPONS, {
-					i(190715),	-- Anodized Sniper Rifle
-					i(190675),	-- Arborcidal Peon's Chopper
-					i(190711),	-- Arcanist's Barbed Baton
-					i(190446),	-- Blazing Forgehammer
-					i(190131),	-- Brick-on-a-Stick
-					i(190714),	-- Gorian Pulverizer
-					i(190442),	-- Illidari Bladeward
-					i(190713),	-- Imperator's Command
-					i(189883),	-- Lordaeron Sentry's Bulwark
-					i(189886),	-- Might of the Titanforged
-					i(190687),	-- Painted Warblade
-					i(190148),	-- Ravencrest's Razor
-					i(189872),	-- Shattered Krokul Edge
-					i(190079),	-- Smoldering Forgeblade
-					i(190691),	-- Twisted Guardian's Profane Barrier
-					i(189884),	-- Vengeful Nemesis Warblades
-				}),
-			})),
-
-			-- 10.1.0
-			expansion(EXPANSION.DF, patch(1,7), bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
-				n(SETS, {
-					i(190796),	-- Ensemble: Slumbering Caldera Regalia
-				}),
-				n(WEAPONS, {
-					i(190077),	-- Scarlet Zealot's Heater Shield
-					i(189885),	-- The Battlespoon
-				}),
-			})),
-
-			-- 10.1.5
-			expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-				n(ARMOR, {
-					i(190559),	-- Helm of the Swift
-				}),
-				n(SETS, {
-					i(200917),	-- Ensemble: Tidecaller's Chainmail
-
-					------ Vagabond's Deep Threads ------
-					i(206283),	-- Vagabond's Deep Cape
-					i(206294),	-- Vagabond's Deep Hood
-
-					------ Vagabond's Grassy Threads ------
-					i(206329),	-- Ensemble: Vagabond's Grassy Threads
-					i(206285),	-- Vagabond's Grassy Cape
-					i(206296),	-- Vagabond's Grassy Hood
-
-					------ Wanderer's Deep Trappings ------
-					i(206316),	-- Wanderer's Deep Cloak
-					i(206305),	-- Wanderer's Deep Scarf
-
-					------ Wanderer's Grassy Trappings ------
-					i(206340),	-- Ensemble: Wanderer's Grassy Trappings
-					i(206318),	-- Wanderer's Grassy Cloak
-					i(206307),	-- Wanderer's Grassy Scarf
-
-				}),
-				n(WEAPONS, {
-					i(190561),	-- Crystalblade of Shifting Magic
-				}),
-			})),
-
-			-- 10.2.0
-			expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
-				n(ARMOR, {
-					i(210856),	-- Trader's Faded Sarong
-					i(210851),	-- Trader's Grassy Sarong
-				}),
-				n(WEAPONS, {
-					i(190875),	-- Chilled Touch of the Condemned
-				}),
-			})),
-
-			-- 10.2.5
-			expansion(EXPANSION.DF, patch(2,5), bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
-				n(ARMOR, {
-					i(190807),	-- Artisan's Work Shirt
-					i(190669),	-- Burnished Helm of Righteousness
-					i(190692),	-- Champion's Battle Standard
-					i(190847),	-- Deathmantle Assassin's Barb
-					i(190090),	-- Dessicated Bouquet
-					i(212625),	-- Dueler's Grassy Shoulder Cape
-					i(190893),	-- Jeweled Valkyrion Cape
-					i(190688),	-- Silvered Helm of Righteousness
-					i(212705),	-- Spring Reveler's Cornsilk Attire
-					i(212706),	-- Spring Reveler's Cornsilk Belt
-					i(212707),	-- Spring Reveler's Cornsilk Boots
-					i(212713),	-- Spring Reveler's Cornsilk Dress
-					i(212987),	-- Spring Reveler's Cornsilk Pants
-					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-					i(212610),	-- Wings of the Emerald Monarch
-				}),
-				n(SETS, {
-					i(190924),	-- Arsenal: Ruby Felfire Armaments
-					i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
-					i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
-					i(200918),	-- Ensemble: Void-Bound Raiment
-					i(200924),	-- Ensemble: Void-Bound Battlegear
-					i(201000),	-- Ensemble: Void-Bound Chains
-					i(201001),	-- Ensemble: Void-Bound Warplate
-				}),
-				n(WEAPONS, {
-					i(190848),	-- [DNT] Do not use
-					i(213162),	-- Blessed Bow of the Windseeker
-					i(190908),	-- Devourer's Skullscythe
-					i(190816),	-- Forgehand's "Stable" Fuel Cell
-					i(213107),	-- Gladiator's Ragged Greatsword
-					i(213077),	-- Lavender Bow-quet
-					i(190822),	-- Mo'arg Enforcer's Halberd
-					i(213063),	-- Paradise's Ruby Axe
-					i(190900),	-- Prototype Farstrider Sniper Rifle
-					i(190820),	-- Restless Void Handaxe
-					i(213066),	-- Rosy Floral Edge
-					i(213069),	-- Rosy Floral Stalk
-					i(213072),	-- Ruby Floral Staff
-					i(190891),	-- Shabby Battleaxe
-					i(190903),	-- Soulburner Warscythe
-					i(190902),	-- Will of the Titanforged
-					i(190889),	-- Woodsman's Hatchet
-				}),
-			})),
-		}),
-		filter(MOUNTS, {
-			mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
-			i(137615),	-- Molten Flarecore (MOUNT!)
-			i(247791),	-- Adorned Northeron Gryphon
-			i(246919),	-- Cinder-seared Elekk
-			i(247794),	-- Emberwing Sky Guide
-			i(246917),	-- Thunder-ridged Elekk
-			i(247720),	-- The Headless Horseman's Chilling Charger
-			i(247722),	-- The Headless Horseman's Burning Charger
-		}),
-	})),
-});

@@ -345,6 +345,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 81530,	-- Anchorite Laanda
 					["coord"] = { 50.6, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(251478, {["timeline"] = { ADDED_11_2_7 }}),	-- Square Draenic Table (DECOR!)
+					},
 				}),
 				q(35197, {	-- Forging Ahead
 					["sourceQuest"] = 35195,	-- Socrethar's Fury
@@ -707,6 +710,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(251477, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Wooden Table (DECOR!)
 						i(119144, {	-- Touch of the Naaru (TOY!)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -786,6 +790,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["qg"] = 75028,	-- Exarch Maladaar
 					["coord"] = { 49.8, 48.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(251653, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenethyst Lamppost (DECOR!)
+					}
 				}),
 				q(35687, {	-- Socrethar's Demise
 					["sourceQuest"] = 35684,	-- Reclaiming the City
@@ -797,17 +804,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				-- The Ring of Blood
 				q(36219, {	-- Garrison Campaign: The Ring of Blood
 					["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-					["provider"] = { "o", 234243 },	-- Overly Gaudy Note [H Tier 2]
-					["coord"] = { 42.9, 50.2, FROSTWALL },	-- [H Tier 2]
+					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
+					["coords"] = {
+						{ 34.4, 32.8, LUNARFALL },
+						{ 43.8, 48.1, FROSTWALL },
+					},
 				}),
 				q(36280, {	-- Garrison Campaign: The Ring of Blood
 					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
+					["coords"] = {
+						{ 34.4, 32.8, LUNARFALL },
+						{ 43.8, 48.1, FROSTWALL },
+					},
 				}),
 				q(36281, {	-- Garrison Campaign: The Ring of Blood
 					["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
+					["coords"] = {
+						{ 34.4, 32.8, LUNARFALL },
+						{ 43.8, 48.1, FROSTWALL },
+					},
 				}),
 				q(36282, {	-- Garrison Campaign: The Ring of Blood
 					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
+					["coords"] = {
+						{ 34.4, 32.8, LUNARFALL },
+						{ 43.8, 48.1, FROSTWALL },
+					},
 				}),
 				q(36220, {	-- How Tough Are You?
 					["sourceQuests"] = { 36219, 36280, 36281, 36282 },	-- Garrison Campaign: The Ring of Blood (4 different versions... come on, blizzard)
@@ -3139,6 +3164,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 122410 },	-- Scouting Missive: Shattrath Harbor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(241043, { ["timeline"] = { ADDED_11_2_7 } }),	-- Elodor Barrel (DECOR!)
+				},
 			}),
 			q(38200, {	-- Missive: Assault on Skettis
 				["provider"] = { "i", 122407 },	-- Scouting Missive: Skettis
@@ -3149,6 +3177,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 122415 },	-- Scouting Missive: Socrethar's Rise
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(251329, { ["timeline"] = { ADDED_11_2_7 } }),	-- Shadowmoon Open-Air Shed (DECOR!)
+				},
 			}),
 			q(38189, {	-- Missive: Assault on Stonefury Cliffs
 				["provider"] = { "i", 122401 },	-- Scouting Missive: Stonefury Cliffs
@@ -3159,6 +3190,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "i", 133883 },	-- Scouting Missive: The Heart of Shattrath
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
+				["groups"] = {
+					i(251547, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenei Farmer's Trellis (DECOR!)
+				},
 			}),
 			q(40942, {	-- Missive: Assault on the Pit
 				["provider"] = { "i", 133878 },	-- Scouting Missive: The Pit

@@ -143,7 +143,7 @@ end)
 checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP)
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
-local checkboxAutomaticallyOpenBountyList;
+local checkboxFilterMiniListTimerunning;
 if app.IsRetail then
 	-- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
 	local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L.AUTO_MAIN_LIST_CHECKBOX,
@@ -173,7 +173,7 @@ if app.IsRetail then
 		app:GetWindow("CurrentInstance").Filters = active and { Timerunning = true } or nil
 	end
 	app.AddEventHandler("OnLoad", AddTimerunningToCurrentInstance)
-	local checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
+	checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
 		self:SetAlpha(app.Modules.Events.IsTimerunningActive and 1 or 0.4)
@@ -189,16 +189,6 @@ if app.IsRetail then
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
 	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
-
-	checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:BountyList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenBountyList:SetATTTooltip(L.AUTO_BOUNTY_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
 end
 
 local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,
@@ -209,7 +199,11 @@ function(self)
 	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked())
 end)
 checkboxAutomaticallyOpenProfessionList:SetATTTooltip(L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallyOpenBountyList or checkboxAutomaticallySkipCutscenes)
+if checkboxFilterMiniListTimerunning then
+	checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
+else
+	checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
+end
 
 if app.IsRetail then
 -- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
@@ -232,35 +226,6 @@ function(self)
 end)
 checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
-
--- AH Module is disabled in Retail currently
---[[
-local checkboxShowAHModule = child:CreateCheckBox(L.AUCTION_TAB_CHECKBOX,
-function(self)
-	self:SetChecked(false)
-	self:Disable()
-	self:SetAlpha(0.4)
-	-- self:SetChecked(settings:GetTooltipSetting("Auto:AH"))
-end,
-function(self)
-	-- settings:SetTooltipSetting("Auto:AH", self:GetChecked())
-	-- if app.Blizzard_AuctionHouseUILoaded then
-	-- 	if app.AuctionModuleTabID then
-	-- 		if self:GetChecked() then
-	-- 			PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 			app:OpenAuctionModule()
-	-- 		else
-	-- 			PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID)
-	-- 		end
-	-- 	else
-	-- 		app:OpenAuctionModule()
-	-- 	end
-	-- end
-end)
-checkboxShowAHModule:SetATTTooltip(L.AUCTION_TAB_CHECKBOX_TOOLTIP)
-checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)
-]]--
-
 else
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)

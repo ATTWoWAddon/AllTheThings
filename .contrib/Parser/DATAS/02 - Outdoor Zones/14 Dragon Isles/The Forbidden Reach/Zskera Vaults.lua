@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74996, {	-- A Difficult Legacy
 					["sourceQuests"] = { 74796 },	-- A Dusty Vase
 					["provider"] = { "n", 201564 },	-- Voraxian
-					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+					["coord"] = { 85.5, 35.0, OHNAHRAN_PLAINS },
 				}),
 				q(74796, {	-- A Dusty Vase
 					["provider"] = { "i", 203687 },	-- Dusty Vase
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74493, {	-- Second Time Is The Charm
 					["sourceQuests"] = { 74795 },	-- An Odd Round Object
 					["provider"] = { "n", 201564 },	-- Voraxian
-					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+					["coord"] = { 85.5, 35.0, OHNAHRAN_PLAINS },
 				}),
 				q(74293, {	-- Not Forgotten
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az

@@ -15,7 +15,7 @@ MINIGAMES_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "小游戏",
-		-- TODO: tw = "",
+		tw = "小遊戲",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
@@ -27,7 +27,7 @@ MINIGAMES_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "以下小游戏每次游玩需要消耗一枚暗月游戏代币，并且每天都有一个任务可以获得奖券以及一些相关的成就。",
 		-- TODO: tw = "",
 	},
 });
@@ -57,7 +57,7 @@ DARKMOON_DANCE_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "要玩暗月马戏团跳舞游戏，请与南部亭子前的西蒙·塞兹丹斯交谈。每次尝试暗月马戏团跳舞游戏都需要一枚暗月游戏代币。与西蒙交谈还将为您的舞蹈游戏设置难度：\n  只是一些有趣和轻松的东西！（简单）\n  我想要一些挑战！（中等）\n  展示你的动作，不要退缩！（困难）\n\n暗月舞蹈大师不是像大多数舞蹈游戏那样的节奏游戏，而是记忆游戏。你将在舞蹈竞技场旁边有一个舞者，他将开始一系列由他面前的符文突出显示的动作。简单的游戏每次有3个符文的序列，中等游戏4个符文，困难游戏5个符文。\n\n有三种可能的符文：鸡舞（黄色）、强力旋转（紫色）和拳头泵（蓝色）。一旦对手完成他们的序列，你有5秒钟的时间来匹配舞者使用的确切序列。只要你及时完成并且没有错过任何步骤，就不会因为花时间完成序列而受到惩罚。\n\n如果您成功完成所有步骤，游戏将在5轮后结束，但如果您错过太多步骤，游戏可能会提前结束。没有错过任何步骤将为您带来完美的分数。",
 		-- TODO: tw = "",
 	},
 });
@@ -87,7 +87,7 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "整个岛上大约会出现60个漂浮的环，但大多数不在马戏团区域内，而是在树林中。玩家开始时有十秒的飞行时间，飞过一个环会刷新这个增益效果。规划一条路线，使下一个环始终在即将飞过的环的10秒内，因为有很多方法可以被切断。",
 		-- TODO: tw = "",
 	},
 });
@@ -117,7 +117,7 @@ SHOOTING_GALLERY_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "为了最大化你的得分，等待当前的标记消失，然后瞄准中间的目标。只要出现任何绿色标记，立即按1，在短暂的施法时间内，如果有必要，将你的枪移动到指向左侧或右侧目标的位置。",
 		-- TODO: tw = "",
 	},
 });
@@ -147,7 +147,7 @@ WHACK_A_GNOLL_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "位于入口附近，游客们会收到一个大锤，用来敲打从该区域的九个桶中弹出的填充豺狼人。玩家将有60秒的时间来获得30分。豺狼人有三种类型：普通的、霍格和婴儿，分别奖励1分、3分或一次击倒。",
 		-- TODO: tw = "",
 	},
 });
@@ -362,7 +362,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			["groups"] = {
 				n(DARKMOON_DANCE_HEADER, {
 					["cr"] = 181097,	-- Simon Sezdans <Dance Master>
-					["coord"] = { 51.2, 74, DARKMOON_ISLAND },
+					["coord"] = { 51.2, 74.0, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_9_2_0 },
 					["groups"] = {
 						n(ACHIEVEMENTS, {
@@ -407,7 +407,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}),
 						q(64783, {	-- Dance Dance Darkmoon
 							["qg"] = 181097,	-- Simon Sezdans <Dance Master>
-							["coord"] = { 51.2, 74, DARKMOON_ISLAND },
+							["coord"] = { 51.2, 74.0, DARKMOON_ISLAND },
 							["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 							["timeline"] = { ADDED_9_2_0 },
 							["isDaily"] = true,
@@ -2751,7 +2751,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				-- #if AFTER 4.3.0
 				["coord"] = { 48.0, 62.0, ORGRIMMAR },
 				-- #else
-				["coord"] = { 52.2, 66, ORGRIMMAR },
+				["coord"] = { 52.2, 66.0, ORGRIMMAR },
 				["lvl"] = 6,
 				-- #endif
 				["races"] = HORDE_ONLY,
@@ -2923,9 +2923,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				-- #else
 				["coords"] = {
 					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37, 37.4, MULGORE },
+					{ 37.0, 37.4, MULGORE },
 					-- #if AFTER TBC
-					{ 34, 34.8, TEROKKAR_FOREST },
+					{ 34.0, 34.8, TEROKKAR_FOREST },
 					-- #endif
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
@@ -2949,7 +2949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["qg"] = 14841,	-- Rinling
 				["coords"] = {
 					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37, 37.4, MULGORE },
+					{ 37.0, 37.4, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["timeline"] = { REMOVED_2_0_1 },
@@ -3030,7 +3030,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 19452 },	-- Sayge's Fortune #27
 					{ "n", 14822 },	-- Sayge
 				},
-				["coord"] = { 35, 61.5, MULGORE },
+				["coord"] = { 35.0, 61.5, MULGORE },
 				["timeline"] = { REMOVED_4_3_0 },
 				["repeatable"] = true,
 				["lvl"] = 10,

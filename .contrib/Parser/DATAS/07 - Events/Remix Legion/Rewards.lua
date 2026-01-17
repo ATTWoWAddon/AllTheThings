@@ -7,6 +7,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		i(248247),	-- Cache of Infinite Power
 		i(237812),	-- Cache of Infinite Treasure
 		i(239303),	-- Cache of Infinite Treasure (Call to Arms - Bonus Cache)
+		i(264675, { ["timeline"] = { ADDED_11_2_7 }	}),	-- Cache from the Infinite's Armory
 
 		------ Bronze Caches, ordered by quality ------
 		i(246812),	-- Minor Bronze Cache (Uncommon)
@@ -94,13 +95,50 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		i(253227, {	-- Flawless Thread of Time (Phase 5)
-			-- Flawless Thread of Time drops at max level during the final phase of Legion Remix and will reward max-level equipment.
-			-- Use: Combine 10 of these to create an item of incredible potential.
-			-- "In the now-collapsing alternate timeline where the infinite dragonflight experiments on the history of the Legion's third invasion, uncorrupted moments are increasingly rare and phenomenally potent."
-			-- Exo Note: Maybe something new? Or Symlink to other?
+			-- Flawless Thread of Time drops at max level during the final phase of Legion Remix and can go past the 11.2.5 iLVL cap of 740 up to iLVL 779
+			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 },
+			["sym"] = {
+				-- The Emerald Nightmare
+				{"select","instanceID",768},{"pop"},
+				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
+				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
+				{"finalize"},
+
+				-- Trial of Valor
+				-- No Trial of Valor items are in the mote
+
+				-- The Nighthold
+				{"select","instanceID",786},{"pop"},
+				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
+				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
+				{"finalize"},
+
+				-- Tomb of Sargeras
+				{"select","instanceID",875},{"pop"},
+				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
+				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
+				{"finalize"},
+
+				-- Antorus, the Burning Throne
+				{"select","instanceID",946},{"pop"},
+				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
+				{"where","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Common Boss Drops
+			},
 		}),
 
 		------ Misc ------
+		i(248393, {	-- Blank Doomsayer's Pamphlet
+			["crs"] = {
+				-- #if AFTER 11.2.7.65299
+				248661,	-- Infernal of the End Times
+				248689,	-- Infernal of the End Times
+				-- #else
+				248660,	-- Lost Legion Infernal
+				248688,	-- Lost Legion Infernal
+				-- #endif
+			},
+			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 }
+		}),
 		i(251562),	-- Tome of Combat Training
 		i(263226),	-- Infinite Knowledge
 

@@ -16,9 +16,6 @@ required-dependencies:
 optional-dependencies:
 
 embedded-libraries:
-  - callbackhandler
-  - libdatabroker-1-1
-  - libstub
 
 license-output: LICENSE.txt
 

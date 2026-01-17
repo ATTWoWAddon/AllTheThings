@@ -234,6 +234,7 @@ root(ROOTS.Zones, {
 							["coords"] = {
 								{ 40.7, 24.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 46.6, 23.1, THE_VINDICAAR_EREDATH_UPPER },
+								{ 52.0, 51.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 							},
 							["groups"] = { i(152594) },	-- Essence of Shadow (QI!)
@@ -289,6 +290,7 @@ root(ROOTS.Zones, {
 								126954,	-- High Exarch Turalyon
 							},
 							["coords"] = {
+								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 39.8, 25.7, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
 							},
@@ -484,6 +486,7 @@ root(ROOTS.Zones, {
 							["coords"] = {
 								{ 33.6, 58.0, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.1, 57.1, THE_VINDICAAR_KROKUUN_UPPER },
+								{ 39.6, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(48273, {	-- The Speaker Listens

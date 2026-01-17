@@ -54,15 +54,17 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			title(436),	-- <Name> the Avowed
+			i(183940),	-- Avowed Archivist's Tome
 			title(424),	-- Deathbringer <Name>
 			title(408),	-- Pilgrim <Name> the Mallet Bearer
-			i(183940),	-- Avowed Archivist's Tome
 		})),
 
 		-- 9.2.0
+		-- #if BEFORE 11.2.0
 		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			title(453),	-- <Name> the [PH] TBD Title
 		})),
+		-- #endif
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.2.0
@@ -72,20 +74,20 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			title(539),	-- Mistrunner (TITLE!)
+			title(539),	-- Mistrunner
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.1.5
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
-			title(619),	-- Recruit <Name>
-			title(620),	-- Reservist <Name>
-			title(621),	-- Field Sacredite <Name>
-			title(623),	-- Stalwart <Name>
-			title(624),	-- Ardent <Name>
 			title(625),	-- Aeroknight <Name>
+			title(624),	-- Ardent <Name>
+			title(621),	-- Field Sacredite <Name>
 			title(626),	-- Flame Guard <Name>
 			title(627),	-- Radiant Officer <Name>
+			title(619),	-- Recruit <Name>
+			title(620),	-- Reservist <Name>
+			title(623),	-- Stalwart <Name>
 		})),
 	}),
 }));

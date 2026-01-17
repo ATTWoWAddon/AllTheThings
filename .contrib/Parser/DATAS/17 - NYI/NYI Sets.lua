@@ -2065,6 +2065,50 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(88235),	-- Gladiator's Plate Shoulders
 				}),
 			}),
+			-- #if BEFORE 7.2.0
+			-- Obtainable in PvP Ensemble in 7.2.0
+			n(SEASON_RUTHLESS, {
+				cl(DRUID, {
+					i(88171),	-- Gladiator's Ironskin Gloves
+					i(88172),	-- Gladiator's Ironskin Helm
+					i(88173),	-- Gladiator's Ironskin Legguards
+					i(88174),	-- Gladiator's Ironskin Tunic
+					i(88175),	-- Gladiator's Ironskin Spaulders
+					i(88176),	-- Gladiator's Copperskin Gloves
+					i(88177),	-- Gladiator's Copperskin Helm
+					i(88178),	-- Gladiator's Copperskin Legguards
+					i(88179),	-- Gladiator's Copperskin Tunic
+					i(88180),	-- Gladiator's Copperskin Spaulders
+					i(93508),	-- Crafted Gladiator's Ironskin Gloves
+					i(93510),	-- Crafted Gladiator's Ironskin Helm
+					i(93512),	-- Crafted Gladiator's Ironskin Legguards
+					i(93514),	-- Crafted Gladiator's Ironskin Spaulders
+					i(93516),	-- Crafted Gladiator's Ironskin Tunic
+					i(93518),	-- Crafted Gladiator's Copperskin Gloves
+					i(93520),	-- Crafted Gladiator's Copperskin Helm
+					i(93522),	-- Crafted Gladiator's Copperskin Legguards
+					i(93524),	-- Crafted Gladiator's Copperskin Spaulders
+					i(93526),	-- Crafted Gladiator's Copperskin Tunic
+				}),
+			}),
+			-- #endif
+			-- #if BEFORE 7.2.0
+			-- Obtainable in PvP Ensemble in 7.2.0
+			n(SEASON_VICIOUS, {
+				cl(MAGE, {
+					i(64928),	-- Gladiator's Silk Trousers
+					i(64929),	-- Gladiator's Silk Robe
+					i(64930),	-- Gladiator's Silk Handguards
+					i(64931),	-- Gladiator's Silk Cowl
+					i(64932),	-- Gladiator's Silk Amice
+					i(88251),	-- Gladiator's Silk Amice
+					i(88252),	-- Gladiator's Silk Cowl
+					i(88253),	-- Gladiator's Silk Handguards
+					i(88254),	-- Gladiator's Silk Robe
+					i(88255),	-- Gladiator's Silk Trousers
+				}),
+			}),
+			-- #endif
 			cl(WARRIOR, {
 				i(81704),	-- Ymirjar Lord's Battleplate
 				i(81705),	-- Ymirjar Lord's Gauntlets
@@ -11287,6 +11331,18 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(228151, {["sourceID"] = 224358 }),	-- Noetic of the Forgotten Reservoir
 					i(228151, {["sourceID"] = 224359 }),	-- Noetic of the Forgotten Reservoir
 					i(228151, {["sourceID"] = 224360 }),	-- Noetic of the Forgotten Reservoir
+					itemsource(221630),	-- Sarong of the Forgotten Reservoir
+					itemsource(221631),	-- Sarong of the Forgotten Reservoir
+					itemsource(222487),	-- Sarong of the Forgotten Reservoir
+					itemsource(222488),	-- Sarong of the Forgotten Reservoir
+					itemsource(222489),	-- Sarong of the Forgotten Reservoir
+					itemsource(222490),	-- Sarong of the Forgotten Reservoir
+					itemsource(221646),	-- Vestments of the Forgotten Reservoir
+					itemsource(221647),	-- Vestments of the Forgotten Reservoir
+					itemsource(222515),	-- Vestments of the Forgotten Reservoir
+					itemsource(222516),	-- Vestments of the Forgotten Reservoir
+					itemsource(222517),	-- Vestments of the Forgotten Reservoir
+					itemsource(222518),	-- Vestments of the Forgotten Reservoir
 				}),
 				cl(WARLOCK, {
 					i(228158, {["sourceID"] = 224433 }),	-- Hexflame Coven's All-Seeing Eye
@@ -14581,10 +14637,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -14698,10 +14751,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -14815,10 +14865,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -14932,10 +14979,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -15154,10 +15198,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -15544,10 +15585,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(MAGE, {
 						i(237713),	-- Augur's Ephemeral Brilliance
 						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
 						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
 						i(237719),	-- Augur's Ephemeral Mitts
 						i(237720),	-- Augur's Ephemeral Slippers
 						i(237721),	-- Augur's Ephemeral Habiliments
@@ -16089,6 +16127,60 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(230614),	-- Astral Gladiator's Chestplate
 					}),
 				})),
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			filter(LEATHER, {
+				i(239820),	-- Boots of the Hunting Dream
+				i(239814),	-- Cuffs of the Hunting Dream
+				i(239818),	-- Grips of the Hunting Dream
+				i(239817),	-- Hat of the Hunting Dream
+				i(239816),	-- Legguards of the Hunting Dream
+				i(239815),	-- Spaulders of the Hunting Dream
+				i(239819),	-- Vest of the Hunting Dream
+				i(239821),	-- Waistband of the Hunting Dream
+				i(239806),	-- Mountainborne Bindings
+				i(239813),	-- Mountainborne Cinch
+				i(239810),	-- Mountainborne Grips
+				i(239809),	-- Mountainborne Headgear
+				i(239808),	-- Mountainborne Shoulders
+				i(239812),	-- Mountainborne Striders
+				i(239807),	-- Mountainborne Trousers
+				i(239811),	-- Mountainborne Vest
+			}),
+			filter(MAIL, {
+				i(239970),	-- Fel-marked Cinch
+				i(239968),	-- Fel-marked Chestguard
+				i(239966),	-- Fel-marked Faceguard
+				i(239969),	-- Fel-marked Greaves
+				i(239967),	-- Fel-marked Handguards
+				i(239959),	-- Fel-marked Hauberk
+				i(239961),	-- Fel-marked Pinions
+				i(239960),	-- Fel-marked Vambraces
+				i(239962),	-- Fel-marked Wargreaves
+				i(239779),	-- Valorborne Dragonscale Breeches
+				i(239778),	-- Valorborne Dragonscale Epaulets
+				i(239780),	-- Valorborne Dragonscale Faceguard
+				i(239783),	-- Valorborne Dragonscale Greaves
+				i(239781),	-- Valorborne Dragonscale Handguards
+				i(239782),	-- Valorborne Dragonscale Haubergeon
+				i(239777),	-- Valorborne Dragonscale Vambraces
+				i(239784),	-- Valorborne Dragonscale Waistband
+			}),
+			filter(PLATE, {
+				i(239744),	-- Blood Knight's Plate Armguards
+				i(239743),	-- Blood Knight's Plate Cloak
+				i(239749),	-- Blood Knight's Plate Breastplate
+				i(239742),	-- Blood Knight's Plate Drape
+				i(239748),	-- Blood Knight's Plate Gauntlets
+				i(239751),	-- Blood Knight's Plate Girdle
+				i(239747),	-- Blood Knight's Plate Greathelm
+				i(239746),	-- Blood Knight's Plate Legguards
+				i(239745),	-- Blood Knight's Plate Mantle
+				i(239750),	-- Blood Knight's Plate Sabatons
+				i(239741),	-- Blood Knight's Plate Shawl
 			}),
 		})),
 	}),

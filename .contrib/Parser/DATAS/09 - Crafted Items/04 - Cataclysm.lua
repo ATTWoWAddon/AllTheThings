@@ -48,8 +48,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(578160, {	-- Ashwood Lumber
-			i(251764),	-- Ashwood Lumber
+		o_repeated({	-- Ashwood Lumber
+			["maps"] = {
+				MOUNT_HYJAL,
+				RUINS_OF_GILNEAS,
+				TWILIGHT_HIGHLANDS,
+				ULDUM,
+			},
+			["groups"] = {
+				-- Objects
+				o(578160),	-- [Mount Hyjal]
+				o(573547),	-- [Ruins of Gilneas]
+				o(574611),	-- [Twilight Highlands]
+				o(586651),	-- [Uldum]
+				-- Drops
+				i(251764),	-- Ashwood Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {

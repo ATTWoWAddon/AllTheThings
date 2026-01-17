@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29269, {	-- At One
 						["sourceQuest"] = 29240,	-- Emergency Extraction
 						["qg"] = 53149,	-- Kalecgos
-						["coord"] = { 31, 24, BOREAN_TUNDRA },
+						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Bonded with Tarecgosa's Essence
 								["provider"] = { "n", 52835 },	-- Tarecgosa
@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29270, {	-- Time Grows Short
 						["sourceQuest"] = 29269,	-- At One
 						["qg"] = 53210,	-- Kalecgos
-						["coord"] = { 31, 24, BOREAN_TUNDRA },
+						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/1000 Seething Cinder
 								["provider"] = { "i", 69815 },	-- Seething Cinder
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29285, {	-- Alignment
 						["sourceQuest"] = 29270,	-- Time Grows Short
 						["qg"] = 53215,	-- Kalecgos
-						["coord"] = { 23, 30.8, BOREAN_TUNDRA },
+						["coord"] = { 23.0, 30.8, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Witnessed Kalecgos's Ascension
 								["provider"] = { "n", 53227 },	-- Kalecgos
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 53466,	-- Hallegosa
 						["allianceQuestData"] = q(29312, {	-- The Stuff of Legends [A]
 							["sourceQuest"] = 29307,	-- Heart of Flame [A]
-							["coord"] = { 54.6, 56, STORMWIND_CITY },
+							["coord"] = { 54.6, 56.0, STORMWIND_CITY },
 						}),
 						["hordeQuestData"] = q(29309, {	-- The Stuff of Legends [H]
 							["sourceQuest"] = 29308,	-- Heart of Flame [H]

@@ -290,9 +290,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(53994, {	-- Naga Attack!
-				["groups"] = {
-					i(165605),	-- Azsharan Medallion
-				},
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(50315, {	-- Not On the Itinerary
 				["races"] = ALLIANCE_ONLY,

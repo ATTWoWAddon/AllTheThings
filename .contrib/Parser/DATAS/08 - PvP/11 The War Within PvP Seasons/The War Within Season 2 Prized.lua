@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
-			ach(41595),	-- Prized Guise
+			ach(41595, { ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_0 } }),	-- Prized Guise
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 			i(229989, {	-- Vicious Electro Eel [A] (MOUNT!)

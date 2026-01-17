@@ -2,6 +2,8 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+local COIN_OF_AIR = 1416;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
@@ -37,12 +39,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = {
 									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
 									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
-									{ "i", 124444, 10 },	-- 10xInfernal Brimstone
+									{ "i", 124444, 10 },	-- 10x Infernal Brimstone
+								},
+							}),
+							q(94932, {	-- Bindings of the Windlord (REMIX)
+								["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
+								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
+								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
+								["coord"] = { 40.8, 80.8, STORMHEIM },
+								["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+								["cost"] = {
+									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
+									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
 								},
 							}),
 							q(43560, {	-- Audience with the Windlord
-								["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
+								["sourceQuests"] = {
+									43558,	-- Bindings of the Windlord
+									94932,	-- Bindings of the Windlord (REMIX)
+								},
+								["sourceQuestNumRequired"] = 1,
 								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
+								["coord"] = { 40.8, 80.8, STORMHEIM },
 								["groups"] = {
 									i(139536, {	-- Emanation of the Winds
 										artifact(881),	-- The Dreadblades [Main Hand]
@@ -88,14 +106,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(40832, {	-- Call of The Uncrowned
 						["provider"] = { "n", 102018 },	-- Ravenholdt Courier
 						["maps"] = { LEGION_DALARAN },
+						["groups"] = { i(133558) },	-- Sealed Letter (PQI!)
 					}),
 					q(40839, {	-- The Final Shadow
 						["sourceQuest"] = 40832,	-- Call of the Uncrowned
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(136786),	-- Uncrowned Insignia
-						},
+						["groups"] = { i(136786) },	-- Uncrowned Insignia
 					}),
 					-- Artifact Choosen
 					q(40840, {	-- A Worthy Blade
@@ -154,6 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								42502,	-- No Sanctuary
 							},
 							["maps"] = { BLASTED_LANDS, DUSKWOOD },
+							["groups"] = { i(138102) },	-- Coded Message (PQI!)
 						}),
 						q(42539, {	-- Cloak and Dagger
 							["sourceQuest"] = 42503,	-- Codebreaker
@@ -184,6 +202,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								i(139178),	-- Coded Message (QI!)
+								--
 								o(251107, {	-- The Kingslayers
 									["coord"] = { 82.8, 28.0, STORMWIND_CITY },
 									["groups"] = {
@@ -264,6 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 40.8, 75.4, THE_HALL_OF_SHADOWS },
+							["groups"] = { i(136602) },	-- Valeera's Note (PQI!)
 						}),
 						q(41920, {	-- A Matter of Finesse
 							["sourceQuest"] = 41919,	-- The Shadows Reveal
@@ -292,6 +313,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["maps"] = { 740, 741 },	-- Shadowgore Citadel (Scenario Map)
 							["groups"] = {
+								i(136802),	-- Holding Cell Key (QI!)
+								--
 								o(249347, {		-- Fangs of the Devourer
 									["coord"] = { 63.8, 52.8, 740 },	-- Shadowgore Citadel (Scenario Map)
 									["groups"] = {
@@ -312,9 +335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 40840,	-- A Worthy Blade
 						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["coord"] = { 26.9, 36.7, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(139742),	-- Mask of the Uncrowned
-						},
+						["groups"] = { i(139742) },	-- Mask of the Uncrowned
 					}),
 					q(40950, {	-- Honoring Success
 						["sourceQuests"] = {
@@ -378,17 +399,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42139,	-- Rise, Champions
 						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
 						["coord"] = { 42.4, 68.3, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(591),	-- Vanessa VanCleef
-						},
+						["groups"] = { follower(591) },	-- Vanessa VanCleef
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
 						["sourceQuest"] = 42139,	-- Rise, Champions
 						["provider"] = { "n", 94141 },	-- Garona Halforcen
 						["coord"] = { 42.4, 74.7, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(778),	-- Garona Halforcen
-						},
+						["groups"] = { follower(778) },	-- Garona Halforcen
 					}),
 					q(42140, {	-- A More Wretched Hive of Scum and Villainy
 						["sourceQuest"] = 42139,	-- Rise, Champions
@@ -410,14 +427,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.8, 44.9, THE_HALL_OF_SHADOWS },
 					}),
-					-- Chap 1
+					-- Chapter 1
 					q(43958, {	-- A Body of Evidence
 						["sourceQuest"] = 43015,	-- What Winstone Suggests
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							o(253072, {	-- SI:7 Missive
-								["coord"] = { 81.4, 70, THE_HALL_OF_SHADOWS },
+								["coord"] = { 81.4, 70.0, THE_HALL_OF_SHADOWS },
 								["groups"] = { i(140278) },	-- SI:7 Missive (QI!)
 							}),
 						},
@@ -493,7 +510,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							follower(779),	-- Lord Jorach Ravenholdt
 						},
 					}),
-					-- Chap 2
+					-- Chapter 2
 					q(43841, {	-- Convincin' Old Yancey
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
@@ -508,9 +525,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43852,	-- Fancy Lads and Buccaneers
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(780),	-- Fleet Admiral Tethys
-						},
+						["groups"] = { follower(780) },	-- Fleet Admiral Tethys
 					}),
 					q(42684, {	-- Throwing SI:7 Off the Trail
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
@@ -526,6 +541,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
+						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 					}),
 					q(44178, {	-- A Particularly Potent Potion
 						["sourceQuests"] = {
@@ -538,11 +554,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = {
 							o(254254, {	-- Gallywix's Key Ring
 								["coord"] = { 20.1, 59.0, AZSHARA },
-								["groups"] = { 	i(140811) },	-- Gallywix's Safe Key (QI!)
+								["groups"] = { i(140811) },	-- Gallywix's Safe Key (QI!)
 							}),
 							o(254255, {	-- Gallywix's Safe
 								["coord"] = { 19.9, 56.1, AZSHARA },
-								["groups"] = { 	i(140814) },	-- Love Potion #6 (QI!)
+								["groups"] = { i(140814) },	-- Love Potion #6 (QI!)
 							}),
 						},
 					}),
@@ -550,9 +566,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(890),	-- Marin Noggenfogger
-						},
+						["groups"] = { follower(890) },	-- Marin Noggenfogger
 					}),
 					q(43468, {	-- Blood for the Wolfe
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
@@ -571,7 +585,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["groups"] = { i(139302) },	-- Etching from the Raven's Eye Tablet
+						["groups"] = {
+							o(251960, {	-- The Raven's Eye Tablet
+								i(139302),	-- Etching from the Raven's Eye Tablet
+							}),
+						},
 					}),
 					q(43249, {	-- The Raven's Eye
 						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
@@ -623,7 +641,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["groups"] = { follower(891) },	-- Valeera Sanguinar
 					}),
-					-- Chap 3
+					-- Chapter 3
 					q(43470, {	-- Pruning the Garden
 						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
 						["provider"] = { "n", 98100 },	-- Taoshi
@@ -640,6 +658,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43485, {	-- A Burning Distraction
+						["description"] = "If the User Interface fails to show you where the detonator is, go to 29.7 79.5.",
 						["sourceQuests"] = {
 							43469,	-- Where In the World is Mathias?
 							43479,	-- The World is Not Enough
@@ -680,17 +699,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 37689,	-- The Imposter
 						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
 						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(893),	-- Master Mathias Shaw
-						},
+						["groups"] = { follower(893) },	-- Master Mathias Shaw
 					}),
 					q(43723, {	-- Champion: Taoshi
 						["sourceQuest"] = 37689,	-- The Imposter
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 77.0, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							follower(892),	-- Taoshi
-						},
+						["groups"] = { follower(892) },	-- Taoshi
 					}),
 					q(44215, {	-- One More Thing...
 						["sourceQuests"] = {
@@ -761,18 +776,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
-						},
+						["groups"] = { i(142116) },	-- Fel-Infused Gunpowder Cache (QI!)
 					})),
 					q(46323, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- What's the Cache? (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
-						},
+						["groups"] = { i(142116) },	-- Fel-Infused Gunpowder Cache (QI!)
 					})),
 					q(45835, {	-- False Orders (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
@@ -807,9 +818,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 118126 },	-- Crackers
 						["coord"] = { 57.7, 63.5, AZSUNA },
-						["groups"] = {
-							i(143679),	-- Crackers (PET!)
-						},
+						["groups"] = { i(143679) },	-- Crackers (PET!)
 					})),
 					q(45836, {	-- Jorach's Calling (A)
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
@@ -948,25 +957,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 47604,	-- In the Land of Magic
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(151131),	-- Lamp of Al'Abas
-						},
+						["groups"] = { i(151131) },	-- Lamp of Al'Abas
 					})),
 					q(47606, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Loyalty Is Its Own Reward
 						["sourceQuest"] = 47605,	-- Coins of Air
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(151143),	-- Shining Lamp of Al'Abas
-						},
+						["groups"] = { i(151143) },	-- Shining Lamp of Al'Abas
 					})),
 					q(47607, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- High Fash-Djinn
 						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(151144),	-- Gleaming Lamp of Al'Abas
-						},
+						["groups"] = { i(151144) },	-- Gleaming Lamp of Al'Abas
 					})),
 					q(47594, {	-- I'll Take Those, Thanks!
 						["sourceQuest"] = 47605,	-- Coins of Air
@@ -1047,9 +1050,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(130324),	-- Boots of Artful Dodging
 							},
 						}),
-						n(TREASURES, sharedData({ ["cost"] = { { "i", 139781, 1 } } }, {
+						n(TREASURES, sharedData({
+							["cost"] = { { "i", 139781, 1 } },	-- Marin Noggenfogger's Lucky Coin
+						}, {
 							o(252273, {	-- Box of Throwing Daggers
-								i(139589),	-- Poisoned Throwing Knives
+								["coord"] = { 31.7, 64.7, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139589) },	-- Poisoned Throwing Knives
 							}),
 							o(252267, {	-- Large Plundered Sack
 								i(141408),	-- Uncrowned Shadowcraft Cap
@@ -1058,28 +1064,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								i(139587),	-- Suspicious Crate (TOY!)
 							}),
 							o(252269, {	-- Pack of Battle Potions
-								i(139588),	-- Pack of Battle Potions
+								["coord"] = { 36.7, 58.6, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139588) },	-- Pack of Battle Potions
 							}),
 							o(252284, {	-- Pile of Sticky Bombs
 								["coord"] = { 30.8, 59.1, THE_HALL_OF_SHADOWS },
 								["groups"] = { i(139584) },	-- Sticky Bombs
 							}),
 							o(252272, {	-- Smoky Boots
-								i(139592),	-- Smoky Boots
-								i(130324),	-- Boots of Artful Dodging
+								["coord"] = { 37.7, 57.6, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139592) },	-- Smoky Boots
 							}),
 							o(252282, {	-- Sparkling Set of Keys
 								["coord"] = { 37.3, 59.6, THE_HALL_OF_SHADOWS },
 								["groups"] = { i(94222) },	-- Key to the Palace of Lei Shen
 							}),
 							o(252279, {	-- Stolen Tome of Artifact Lore
-								i(139591),	-- Stolen Tome of Artifact Lore
+								["coord"] = { 36.9, 57.4, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139591) },	-- Stolen Tome of Artifact Lore
 							}),
 							o(252277, {	-- Thistle Tea
-								i(139586),	-- Thistle Tea
+								["coord"] = { 34.5, 63.7, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139586) },	-- Thistle Tea
 							}),
 							o(252289, {	-- Vanishing Powder
-								i(139586),	-- Thistle Tea
+								["coord"] = { 30.0, 67.6, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(139585) },	-- Smoke Powder
 							}),
 						})),
 					}),
@@ -1096,10 +1106,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(120857, {	-- Barrel of Bandanas (TOY!)
-								["cost"] = {{ "c", 1416, 50000 }},	-- 50,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 50000 } },
 							}),
 							i(151877, {	-- Barrel of Eyepatches (TOY!)
-								["cost"] = {{ "c", 1416, 50000 }},	-- 50,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 50000 } },
 								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(151181, {	-- Certified Organic Lamp Shining Kit
@@ -1108,24 +1118,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(27982),	-- Charm of Potent and Powerful Passions
 							i(27941),	-- Compassionate Critter's Friend
 							i(120858, {	-- Crimson Shadowcap
-								["cost"] = {{ "c", 1416, 25000 }},	-- 25,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 25000 } },
 							}),
 							i(151633, {	-- Dig Rat (PET!)
-								["cost"] = {{ "c", 1416, 10000 }},	-- 10,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 10000 } },
 								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(151749),	-- Dubious Lamp
 							i(120439, {	-- Embroidered Crimson and Gold Mask
-								["cost"] = {{ "c", 1416, 25000 }},	-- 25,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 25000 } },
 							}),
 							i(120861, {	-- Fancy Crimson Shadowcap
-								["cost"] = {{ "c", 1416, 50000 }},	-- 50,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 50000 } },
 							}),
 							i(120437, {	-- Forboding Black Mask
-								["cost"] = {{ "c", 1416, 5000 }},	-- 5,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 5000 } },
 							}),
 							i(120433, {	-- Glamorous Purple Mask
-								["cost"] = {{ "c", 1416, 5000 }},	-- 5,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 5000 } },
 							}),
 							i(151144, {	-- Gleaming Lamp of Al'Abas
 								["cost"] = 5000000,	-- 500g
@@ -1135,10 +1145,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(34249),	-- Hula Girl Doll
 							i(138954, {	-- Illusion: Poisoned (ILLUSION!)
-								["cost"] = {{ "c", 1416, 25000 }},	-- 25,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 25000 } },
 							}),
 							i(120434, {	-- Immaculate White Mask
-								["cost"] = {{ "c", 1416, 5000 }},	-- 5,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 5000 } },
 							}),
 							i(27992),	-- Infallible Tikbalang Ward
 							i(151131, {	-- Lamp of Al'Abas
@@ -1147,12 +1157,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(27940),	-- Marvelous Madstone of Immortality
 							i(120435, {	-- Mossy Green Mask
-								["cost"] = {{ "c", 1416, 5000 }},	-- 5,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 5000 } },
 							}),
 							i(27976),	-- Polished Pendant of Edible Energy
 							i(74918),	-- Problem Solving Pendant
 							i(120431, {	-- Rakish Orange Mask
-								["cost"] = {{ "c", 1416, 5000 }},	-- 5,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 5000 } },
 							}),
 							i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
 							i(151143, {	-- Shining Lamp of Al'Abas
@@ -1160,10 +1170,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(120432, {	-- Sinister Rogue Mask
-								["cost"] = {{ "c", 1416, 25000 }},	-- 25,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 25000 } },
 							}),
 							i(151569, {	-- Sneaky Marmot (PET!)
-								["cost"] = {{ "c", 1416, 10000 }},	-- 10,000x Coin of Air
+								["cost"] = { { "c", COIN_OF_AIR, 10000 } },
 								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(27978),	-- Soap on a Rope
@@ -1255,7 +1265,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250786, {	-- Uncrowned Planning Table (DECOR!)
 								["sourceAchievement"] = 60989,	-- Raise an Army for the Hall of Shadows
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] =  {{ "c", ORDER_RESOURCES, 2000 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(139746, {	-- Wristbands of the Uncrowned
 								["cost"] = 5000000,	-- 500g
@@ -1308,7 +1318,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(44871, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 1
 			q(44872, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 2
 			q(42061),	-- Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
-			q(43634,{isDaily=true}),	-- Looted Rogue Vault
+			q(43634,{isRepeatable=true}),	-- Looted Rogue Vault
 			q(50804),	-- Opened the way to the order hall for the first time during "Call of The Uncrowned" (questID 40832)
 			q(43716),	-- Rogue Vault Rare Triggered
 			-- q(43719),	-- Rare Item One Obtained - looted the "Suspicious Crate" toy (itemID 139587)

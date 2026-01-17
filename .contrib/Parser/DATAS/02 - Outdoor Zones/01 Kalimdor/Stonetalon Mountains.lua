@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4197 },	-- Ken'zigla
 						{ "i", 6624 },	-- Ken'zigla's Draught
 					},
-					["coord"] = { 73.2, 95, STONETALON_MOUNTAINS },
+					["coord"] = { 73.2, 95.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1711,7 +1711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  16208 },	-- Enchanted Gaea Seeds
 								{ "o", 177929 },	-- Gaea Dirt Mound
 							},
-							["coord"] = { 31, 61, STONETALON_MOUNTAINS },
+							["coord"] = { 31.0, 61.0, STONETALON_MOUNTAINS },
 						}),
 						i(16985, {	-- Windseeker Boots
 							["timeline"] = { REMOVED_4_0_3 },

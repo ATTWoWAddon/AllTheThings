@@ -310,7 +310,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					ach(41818, {	-- Rise of the Red Dawn (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							title(630, {	-- %s of Stromgarde
+							title(630, {	-- <Name> of Stromgarde
 								["races"] = ALLIANCE_ONLY,
 								["timeline"] = { ADDED_11_1_7 },
 							}),
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					ach(41820, {	-- Rise of the Red Dawn (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							title(629, {	-- %s of Hammerfall
+							title(629, {	-- <Name> of Hammerfall
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_1_7 },
 							}),

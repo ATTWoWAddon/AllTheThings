@@ -441,7 +441,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		n(P4xx, {
 			filter(BACK_F, {
 				i(59791),	-- Giantslayer Cloak
-				i(58696),	-- QA Combat Test Healer Cloak 3 \\ QA Combat Test Healer Cloak 2
+				i(58696),	-- QA Combat Test Healer Cloak 3
 			}),
 			filter(LEATHER, {
 				i(59790),	-- Gnash-Crusher Helm
@@ -2687,17 +2687,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			filter(CLOTH, {
 				i(134017),	-- Don Carlos' Famous Hat
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(138420),	-- Pilfered Ettin String
+				-- #endif
 			}),
 			filter(FINGER_F, {
 				i(141907),	-- Arena Victory Bonus
 			}),
 			filter(LEATHER, {
 				i(129046),	-- 7.0 PH Leather Helm
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129127),	-- Ebon Stalker's Boots
+				-- #endif
 			}),
 			filter(MAIL, {
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
 				i(129152),	-- Boulderfall Stompers
+				-- #endif
 			}),
 			filter(NECK_F, {
 				i(131919),	-- Bitestone Incisor
@@ -2707,6 +2716,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(134599),	-- Vanguard Choker
 				i(134597),	-- Vanguard Necklace
 				i(134598),	-- Vanguard Pendant
+			}),
+			filter(PLATE, {
+				-- #if BEFORE 11.2.5
+				-- It was added into Legion: Remix Ensembles
+				i(139603, {["bonusID"] = 1}),	-- Vault Patroller's Warboots
+				-- #endif
 			}),
 			n(RELICS, {
 				i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
@@ -3126,7 +3141,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(166490),	-- Shiny Ring
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
-				i(174470),	-- Bound Sinew Ring \\ Ring - PH
+				i(174470),	-- Bound Sinew Ring
 				i(174053),	-- Corrupted Ring - Overconfident
 				i(174050),	-- Corrupted Ring - Revel in Violence
 				i(174051),	-- Corrupted Ring - Spontaneous Fury
@@ -3136,7 +3151,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(174057),	-- Corrupted Ring - Mesmerizing
 				i(174055),	-- Corrupted Ring - Thing From Beyond
 				i(170738),	-- Felsoul Band of Destruction
-				i(174468),	-- Ring of Deceitful Rumors \\ Ring - PH
+				i(174468),	-- Ring of Deceitful Rumors
 			}),
 			n(P8xx, {
 				i(167135),	-- QA Combat Test Ring 1
@@ -4755,7 +4770,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(207390),	-- Delve Ring
 			-- Mail Belt
 			i(223458),	-- [PH] 11.0 - Belt
-			i(226165),	-- Unseemly Agate Choker
 
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
@@ -4804,9 +4818,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221717 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221713 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["sourceID"] = 221287 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4868,9 +4882,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221716 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221712 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221286 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4932,9 +4946,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["sourceID"] = 221288 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -4996,9 +5008,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221718 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225737, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221714 }),	-- 11.0 Raid Template - Plate - Head
+						i(225736, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["sourceID"] = 221289 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5014,9 +5028,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
+				filter(BACK_F, {
+					itemsource(222783),	-- Royal Emblem of Nerub-ar
+					itemsource(222784),	-- Royal Emblem of Nerub-ar
+					itemsource(222785),	-- Royal Emblem of Nerub-ar
+					itemsource(222786),	-- Royal Emblem of Nerub-ar
+				}),
+				filter(MAIL, {
+					itemsource(222523),	-- Liquified Defector's Leggings
+					itemsource(222524),	-- Liquified Defector's Leggings
+					itemsource(222525),	-- Liquified Defector's Leggings
+					itemsource(222526),	-- Liquified Defector's Leggings
+				}),
 			}),
 			filter(CLOTH, {
 				i(225730, {["bonusID"] = 6894 }),	-- Stone Gaze Ceinture
+			}),
+			filter(NECK_F, {
+				i(226695),	-- Cunning Advisor's Favor
+				i(226696),	-- Mighty Advisor's Favor
+				i(226165),	-- Unseemly Agate Choker
 			}),
 			filter(TRINKET_F, {
 				i(213423),	-- Bygone Weapon Charm
@@ -5033,10 +5064,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-				i(226695),	-- Cunning Advisor's Favor
-				i(226696),	-- Mighty Advisor's Favor
+			}),
+		})),
+
+		-- 11.0.2
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
+				filter(MAIL, {
+					itemsource(225006),	-- Liquified Defector's Leggings
+					itemsource(225007),	-- Liquified Defector's Leggings
+				}),
 			}),
 		})),
 
@@ -5490,9 +5528,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
 			filter(LEATHER, {
 				i(241240),	-- Type II Bomber Jacket
+				i(241240, {["modID"] = 23 }),	-- Type II Bomber Jacket
 			}),
 			filter(MAIL, {
 				i(241239),	-- Epaulets of Arcing Power
+				i(241239, {["modID"] = 23 }),	-- Epaulets of Arcing Power
 			}),
 			filter(CLOAKS, {
 				i(237521),	-- Hemet's Cloak
@@ -5500,7 +5540,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			n(HEAD, {
 				i(243344),	-- Chef's Hat
-				i(237520),	-- Hemet's Hood
+				i(237520, {["sourceID"] = 285331 }),	-- Hemet's Hood
 			}),
 			filter(TABARDS, {
 				i(231636),	-- zzOld
@@ -5835,6 +5875,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5874,6 +5915,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5913,6 +5955,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
@@ -5952,12 +5995,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					filter(PLATE, {
 						i(247485),	-- Breastplate of the Remembered King
 						i(247479),	-- Bridgebreaker Gauntlets
+						i(247457),	-- Captain's Parade Breastplate
 						i(247462),	-- Chrono-Tempered Legplates
 						i(247461),	-- Eventide Casque
 						i(247459),	-- Gauntlets of Fractured Eons
 						i(247463),	-- Shoulderguard of the Eclipse
 					}),
 				}),
+			}),
+			filter(LEATHER, {
+				i(235915),	-- Highmountain Hide Cap
+				itemsource(290211),	-- The First Satyr's Spaulders
 			}),
 		})),
 	}),

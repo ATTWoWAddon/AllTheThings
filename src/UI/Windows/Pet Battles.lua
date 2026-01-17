@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert =
@@ -9,9 +9,7 @@ local ipairs, tinsert =
 app:CreateWindow("Pet Battles", {
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
-	Commands = {
-		"attpetbattles",
-	},
+	Commands = { "attpetbattles" },
 	OnInit = function(self, handlers)
 		self.data = app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
 			description = "This list shows you all of the pet battle content as well as where to acquire battle pets in the ATT database.",

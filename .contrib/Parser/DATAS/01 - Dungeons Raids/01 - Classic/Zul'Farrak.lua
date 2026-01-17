@@ -149,7 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							5497,	-- Jennea Cannon <Mage Trainer>
 						},
 						["coords"] = {
-							{ 27, 8.2, IRONFORGE },
+							{ 27.0, 8.2, IRONFORGE },
 							{ 38.6, 79.4, STORMWIND_CITY },
 						},
 					},
@@ -159,8 +159,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							4568,	-- Anastasia Hartwell <Mage Trainer>
 						},
 						["coords"] = {
-							{ 38.4, 86, ORGRIMMAR },
-							{ 85, 10.2, UNDERCITY },
+							{ 38.4, 86.0, ORGRIMMAR },
+							{ 85.0, 10.2, UNDERCITY },
 						},
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4787, {	-- The Ancient Egg
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 67, 22.4, TANARIS },
+					["coord"] = { 67.0, 22.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
 					["lvl"] = 40,

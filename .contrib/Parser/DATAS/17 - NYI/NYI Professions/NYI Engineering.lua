@@ -397,6 +397,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(447348),	-- Tinker: Lightning Tether
 					r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 				})),
+
+				-- 11.2.7
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+					r(1246464),	-- [DNT] TWW Engineering Decor Template
+					-- With SpellID attached
+					i(233203),	-- Schematic: Housing Crafting Test Recipe
+				})),
 			}),
 		}),
 	}),

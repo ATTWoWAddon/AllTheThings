@@ -58,6 +58,22 @@ local BLOODTHIRSTY_GROUPS = {
 	cl(MAGE, {
 		moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 			["timeline"] = { ADDED_7_2_0 },
+			-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
+			-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
+			-- #if AFTER 11.0.0
+			["groups"] = sharedData({["timeline"] = { ADDED_7_2_0, REMOVED_11_0_0 }},{
+				i(64928),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+				i(64929),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(64930),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(64931),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(64932),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88251),	-- Gladiator's Silk Amice - confirmed 14/10/21
+				i(88252),	-- Gladiator's Silk Cowl - confirmed 14/10/21
+				i(88253),	-- Gladiator's Silk Handguards - confirmed 14/10/21
+				i(88254),	-- Gladiator's Silk Robe - confirmed 14/10/21
+				i(88255),	-- Gladiator's Silk Trousers - confirmed 14/10/21
+			}),
+			-- #endif
 		})),
 		moh(2, i(64853)),	-- Bloodthirsty Gladiator's Silk Amice
 		moh(3, i(64854)),	-- Bloodthirsty Gladiator's Silk Cowl
@@ -1622,7 +1638,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7583 },	-- Sprinkle
 						{ "i", 8528 },	-- Violet Powder
 					},
-					["coord"] = { 51, 26.8, TANARIS },
+					["coord"] = { 51.0, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
 				}),
@@ -1768,7 +1784,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 8585 },	-- Tapped Dowsing Widget
 								{ "i", 8584 },	-- Untapped Dowsing Widget
 							},
-							["coord"] = { 39, 29, TANARIS },
+							["coord"] = { 39.0, 29.0, TANARIS },
 						}),
 					},
 				}),
@@ -2697,13 +2713,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8526 },	-- Violet Tragan
 								{ "o", 141853 },	-- Violet Tragan
 							},
-							["coord"] = { 40, 59, THE_HINTERLANDS },
+							["coord"] = { 40.0, 59.0, THE_HINTERLANDS },
 						}),
 					},
 				}),
 				q(2872, {	-- Stoley's Debt
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
-					["coord"] = { 27.8, 77, STRANGLETHORN_VALE },
+					["coord"] = { 27.8, 77.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
@@ -2963,7 +2979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8593 },	-- Scrimshank's Surveying Gear
 								{ "o", 144053 },	-- Scrimshank's Surveying Gear
 							},
-							["coord"] = { 56, 71, TANARIS },
+							["coord"] = { 56.0, 71.0, TANARIS },
 						}),
 					},
 				}),
@@ -3267,7 +3283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7882 },	-- Security Chief Bilgewhizzle
 					},
 					["coords"] = {
-						{ 51.9, 27, TANARIS },
+						{ 51.9, 27.0, TANARIS },
 						{ 66.8, 22.3, TANARIS },
 						{ 67.0, 23.8, TANARIS },
 					},
@@ -3276,7 +3292,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Firebeard's Head
 							["provider"] = { "i", 9246 },	-- Firebeard's Head
-							["coord"] = { 73.4, 47, TANARIS },
+							["coord"] = { 73.4, 47.0, TANARIS },
 							["cr"] = 7883,	-- Andre Firebeard
 						}),
 					},
@@ -3288,7 +3304,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					},
 					["coords"] = {
-						{ 51.9, 27, TANARIS },
+						{ 51.9, 27.0, TANARIS },
 						{ 66.8, 22.3, TANARIS },
 						{ 52.4, 28.4, TANARIS },
 					},

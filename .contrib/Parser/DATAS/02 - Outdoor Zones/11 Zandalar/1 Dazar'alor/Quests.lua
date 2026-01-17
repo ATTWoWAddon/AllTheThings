@@ -406,6 +406,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48897,	-- The Bargain is Struck (Gonk)
 					49663,	-- False Prophecies
 				},
+				["sourceQuestNumRequired"] = 3,
 				["provider"] = { "n", 120740 },	-- King Rastakhan
 				["coord"] = { 49.8, 46.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -754,7 +755,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(46931, {	-- Speaker of the Horde
 				["sourceQuests"] = { 46930 },	-- Rastakhan
 				["provider"] = { "n", 120740 },	-- King Rastakhan
-				["coord"] = { 49.8, 46.4, DAZARALOR },
+				["coord"] = { 50.0, 42.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(49488, {	-- Tal'gurub
@@ -783,7 +784,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48897, {	-- The Bargain is Struck (Gonk)
 				["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
 				["provider"] = { "n", 127576 },	-- Wardruid Loti
-				["coord"] = { 50, 33.6, DAZARALOR },
+				["coord"] = { 50.0, 33.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(245486, {	-- Tired Troll's Bench (DECOR!)

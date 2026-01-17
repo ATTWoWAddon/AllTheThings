@@ -108,7 +108,7 @@ local EncounterToLoot = {
 
 ------ EncounterCoords ------
 local EncounterCoords = {
-	[ANTROS] = { 48, 5, ZERETH_MORTIS },
+	[ANTROS] = { 48.0, 5.0, ZERETH_MORTIS },
 	[MORGETH] = { 69.1, 44.2, THE_MAW },
 	[MORTANIS] = { 32.1, 67.3, MALDRAXXUS },
 	[NURGASH] = { 27.2, 14.9, REVENDRETH },

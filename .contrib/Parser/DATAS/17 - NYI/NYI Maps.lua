@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(MAPS, {
 	--[[
-	Maps are devided into 4 categories which are used ingame
+	Maps are devided into 4 categories which are used ingame (https://wago.tools/db2/UiMap)
 	0 = World - Might be available and missing from ATT currently
 	1 = [DEPRECATED] Legacy Taxi - Hiding this here in NYI, it's not possible to collect anything there or enter this Map
 	2 = Taxi and Adventure - Hiding this here in NYI, it's not possible to collect anything there or enter this Map
@@ -34,6 +34,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 			m(947),	-- Azeroth
 			m(838),	-- Battle for Blackrock Mountain
 			m(834),	-- Coldridge Valley
+			m(946),	-- Cosmic
 			m(938),	-- Gilneas Island
 			m(824),	-- Islands
 			m(828),	-- The Eye of Eternity
@@ -366,6 +367,43 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2268),	-- Amirdrassil
+		})),
+	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			-- 0 (World)
+			m(2311),	-- 11.0 - Hallowfall - [Spreading the Light]- Disabled
+			m(2275),	-- 11.0 - Underground [Deprecated]
+			-- 2 (Taxi and Adventure)
+			m(2270),	-- Azj' Kahet
+			m(2273),	-- Hallowfall
+			m(2271),	-- Isle of Dorn
+			m(2276),	-- Khaz Algar
+			m(2298),	-- Nerub-ar Palace
+			m(2272),	-- The Ringing Deeps
+		})),
+
+		-- 11.1.0
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+			-- 3 (Minimap)
+			m(2431),	-- Minimap_RingingDeeps_Coreway
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			-- 0 (World)
+			m(2453),	-- Archival Assault
+			-- 2 (Taxi and Adventure)
+			m(2398),	-- K'aresh
+			m(2374),	-- Undermine
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			-- 2 (Taxi and Adventure)
+			m(2401),	-- Alliance Housing District
+			m(2402),	-- Horde Housing District
 		})),
 	}),
 }));

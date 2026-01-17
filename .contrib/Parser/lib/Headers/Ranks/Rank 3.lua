@@ -4,14 +4,14 @@ RANK_THREE = createHeader({
 	text = {
 		en = [[~string.format(AZERITE_ESSENCE_RANK, 3)]],
 		de = "Rang 3",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Rango 3",
+		mx = "Rango 3",
 		fr = "Rang 3",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Ранг 3",
-		-- TODO: cn = "",
+		cn = "等级 3",
 		-- TODO: tw = "",
 	},
 });

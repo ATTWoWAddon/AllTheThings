@@ -3,6 +3,11 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
+		-- #if SEASON_OF_DISCOVERY
+		i(231885),	-- Frostmourne
+		i(231887),	-- Test Dagger
+		i(232343),	-- QAEnchant Shield - Law of Nature
+		-- #endif
 		filter(BOWS, {
 			expansion(EXPANSION.CLASSIC, {
 				n(P1xx, {
@@ -1436,7 +1441,7 @@ root(ROOTS.NeverImplemented, {
 		i(188099),	-- [PH] Copy Vault Patroller's Staff
 		-- 9.2.5
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
-		i(192441),	-- Rhapsodic Pulverizer
+		i(192441, {["sourceID"] = 180385 }),	-- Rhapsodic Pulverizer
 		--
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
@@ -1838,6 +1843,7 @@ root(ROOTS.NeverImplemented, {
 			i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
 			i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
 			i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+			i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 			i(212457),	-- 11.0 Raid Template - INT - Trinket
 			i(211652),	-- 11.0 Dungeon Template - Shield - Shield
 			i(211653),	-- 11.0 Dungeon Template - Generic - Holdable

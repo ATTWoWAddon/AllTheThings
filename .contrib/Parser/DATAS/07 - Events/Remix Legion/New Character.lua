@@ -18,6 +18,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(240550),	-- Ered'ruin Legguards
 			i(240549),	-- Ered'ruin Sabatons
 		}),
+		filter(MISC, {
+			i(219243),	-- Recruit's Reagent Bag
+			i(250411),	-- Timerunner's Hearthstone
+			i(216653),	-- Timerunner's Satchel
+		}),
 		filter(PLATE, {
 			i(240688),	-- Nar'thalas Graduate's Breastplate
 			i(240690),	-- Nar'thalas Graduate's Legguards
@@ -36,11 +41,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(243368, {	-- Timerunner's Dagger
 						["classes"] = { ROGUE },
 					}),
-				}),
-				filter(MISC, {
-					i(219243),	-- Recruit's Reagent Bag
-					i(250411),	-- Timerunner's Hearthstone
-					i(216653),	-- Timerunner's Satchel
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(243372, {	-- Timerunner's Mace
@@ -100,11 +100,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(93155),	-- Triggered after killing 50 Empowered Enemies and obtaining achievement 'Legionslayer III'
 			q(91851),	-- Triggered after completing 10 WQs in Heroic World Tier and obtaining achievement 'Heroic Broken Isles World Quests I'
 			q(93243),	-- Triggered after completing 'Flow of the Nightmare' (q:43241) bonus objective in Val'sharah
-			q(93195),	-- Triggered after Flamescale rare 1st kill of the day
-			q(92541),	-- Triggered after completing a major invasion point daily
+			q(93195, { ["isDaily"] = true }),	-- Triggered after Flamescale rare 1st kill of the day
+			q(92541, { ["isDaily"] = true }),	-- Triggered after completing a major invasion point daily
 			-- HQTs triggered in M+
-			q(94420),	-- Triggered after First M+ of each day
+			q(94420, { ["isDaily"] = true }),	-- Triggered after First M+ of each day
 			q(94421),	-- Triggered after First M+ 10 completed
+			q(94422),	-- Triggered after First M+ 30 completed
 		},
 	})),
 }))

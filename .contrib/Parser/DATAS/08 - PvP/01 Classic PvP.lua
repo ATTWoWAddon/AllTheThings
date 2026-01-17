@@ -1062,8 +1062,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				["qg"] = 15351,	-- Alliance Brigadier General
 				["coords"] = {
 					{ 57.8, 34.6, DARNASSUS },
-					{ 69.8, 90, IRONFORGE },
-					{ 79.4, 18, STORMWIND_CITY },
+					{ 69.8, 90.0, IRONFORGE },
+					{ 79.4, 18.0, STORMWIND_CITY },
 					-- #if AFTER TBC
 					{ 67.4, 33.9, SHATTRATH_CITY },
 					-- #else
@@ -1099,8 +1099,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				["qg"] = 15351,	-- Alliance Brigadier General
 				["coords"] = {
 					{ 57.8, 34.6, DARNASSUS },
-					{ 69.8, 90, IRONFORGE },
-					{ 79.4, 18, STORMWIND_CITY },
+					{ 69.8, 90.0, IRONFORGE },
+					{ 79.4, 18.0, STORMWIND_CITY },
 					-- #if AFTER TBC
 					{ 67.4, 33.9, SHATTRATH_CITY },
 					-- #else

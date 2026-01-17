@@ -1,5 +1,3 @@
-11.2.7.63642
-r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
 12.0.0.63534
 r(471004),	-- Midnight Blacksmithing
 r(471041),	-- Recraft Equipment
@@ -78,7 +76,7 @@ r(1230759),	-- Refulgent Weightstone
 r(1230760),	-- Refulgent Razorstone
 r(1230761),	-- Refulgent Copper Ingot
 r(1230762),	-- Gloaming Alloy
-r(1230763),	-- Dazzling Alloy
+r(1230763),	-- Sterling Alloy \\ Dazzling Alloy
 r(1230764),	-- Refulgent Repair Hammer
 r(1230765),	-- [DNT] TBD Master Repair Hammer
 r(1230766),	-- Murder Row Fleet Feet Recipe \\ Murder Row Fleet Feet
@@ -118,8 +116,6 @@ r(1229602),	-- Sun-Blessed Sickle
 
 Missing in Blacksmithing
 
-11.2.7.63642
-r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
 12.0.0.63534
 r(471004),	-- Midnight Blacksmithing
 r(471041),	-- Recraft Equipment
@@ -198,7 +194,7 @@ r(1230759),	-- Refulgent Weightstone
 r(1230760),	-- Refulgent Razorstone
 r(1230761),	-- Refulgent Copper Ingot
 r(1230762),	-- Gloaming Alloy
-r(1230763),	-- Dazzling Alloy
+r(1230763),	-- Sterling Alloy \\ Dazzling Alloy
 r(1230764),	-- Refulgent Repair Hammer
 r(1230765),	-- [DNT] TBD Master Repair Hammer
 r(1230766),	-- Murder Row Fleet Feet Recipe \\ Murder Row Fleet Feet

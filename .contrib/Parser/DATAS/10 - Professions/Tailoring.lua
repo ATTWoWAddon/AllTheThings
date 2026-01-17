@@ -57,7 +57,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["groups"] = {
 					objective(1, {	-- 0/1 Sample of Primal Mooncloth
 						["provider"] = { "i", 31530 },	-- Sample of Primal Mooncloth
-						["coord"] = { 80, 65, ZANGARMARSH },
+						["coord"] = { 80.0, 65.0, ZANGARMARSH },
 						["cost"] = {
 							{ "i", 31524, 1 },	-- Square of Imbued Netherweave
 							{ "i", 31525, 1 },	-- Vial of Primal Reagents
@@ -613,10 +613,16 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		------ 7.3.0 ------
 		q(48074, {	-- Looming Over Me
 			["sourceQuests"] = { 46941 },	-- The Path Forward
+			["coords"] = {
+				{ 42.8, 61.8, THE_VINDICAAR_EREDATH_LOWER },
+			},
 			["timeline"] = { ADDED_7_3_0 },
 			["groups"] = {
 				r(247807),	-- Lightweave Breeches [Rank 1]
-				i(151874),	-- Lightweave Loom (QI!)
+				o(272745, {	-- Lightweave Loom
+					["coord"] = { 53.8, 23.2, EREDATH },
+					["groups"] = { i(151874) },	-- Lightweave Loom (QI!)
+				}),
 			},
 		}),
 	})),

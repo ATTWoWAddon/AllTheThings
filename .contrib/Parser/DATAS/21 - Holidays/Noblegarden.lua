@@ -26,7 +26,7 @@ NOBLEGARDEN_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "复活节",
 		-- TODO: tw = "",
 		-- #endif
 	},
@@ -459,7 +459,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		n(216836, {	-- Golden Egg
 			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
 			["coords"] = {
-				{ 31, 85, ELWYNN_FOREST },
+				{ 31.0, 85.0, ELWYNN_FOREST },
 				{ 34.91, 87.96, ELWYNN_FOREST },
 				{ 28.8, 86.68, ELWYNN_FOREST },
 				{ 34.83, 81.68, ELWYNN_FOREST },

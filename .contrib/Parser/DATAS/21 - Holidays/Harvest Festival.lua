@@ -72,7 +72,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["groups"] = {
 				objective(1, {	-- Grom's Tribute
 					["provider"] = { "i", 19851 },	-- Grom's Tribute
-					["coord"] = { 83, 79, ASHENVALE },
+					["coord"] = { 83.0, 79.0, ASHENVALE },
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},

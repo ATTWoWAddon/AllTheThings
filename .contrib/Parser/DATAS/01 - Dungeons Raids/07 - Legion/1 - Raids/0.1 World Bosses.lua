@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["groups"] = {
-					i(139895),	-- Skinning Technique: Legion Butchery
+					i(139895),	-- Skinning Technique: Legion Butchery (RECIPE!)
 					i(141540),	-- Coerced Wizard's Cloak
 					i(141445),	-- Mantle of the Aspiring Spellgiant
 					i(141416),	-- Padawsen's Squished Pauldrons

@@ -259,7 +259,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51153),	-- Mor'fani the Exile
 			q(54287, {	-- Naga Attack!
-				i(165605),	-- Azsharan Medallion
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(51103),	-- Nez'ara
 			q(51834),	-- No Negotiations

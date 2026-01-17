@@ -1,4 +1,4 @@
-3.4.2.49311
+﻿3.4.2.49311
 458@@@Brown Horse
 459@@@Gray Wolf
 468@@@White Stallion
@@ -356,6 +356,8 @@
 3.80.0.64393
 1250045@@@Ashened Cataclysm
 1272988@@@Inarius' Charger
+3.80.0.64859
+1280400@@@Titan-Reforged Invincible
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -2354,6 +2356,8 @@
 1264988@@@Snowpaw Glimmerfur Prowler
 1266248@@@Savage Crimson Battle Turtle
 1266579@@@Cloudborn Razorwing
+11.2.7.64978
+1247422@@@Scorching Valor
 12.0.0.63534
 447173@@@Elder Glowmite
 451487@@@Retrained Skyrazor
@@ -2454,3 +2458,5 @@
 1266703@@@Lab-grown Stormray
 1270522@@@Comfy Bel'ameth Flying Quilt
 1270523@@@Comfy Silvermoon Flying Quilt
+12.0.1.64889
+1261298@@@Crimson Dragonhawk

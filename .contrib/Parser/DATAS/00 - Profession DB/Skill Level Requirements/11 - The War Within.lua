@@ -1,4 +1,7 @@
 -- #if AFTER 11.0.0
+-- #if NOT ANYCLASSIC
+if true then return end
+-- #endif
 -- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!
 local recipeDB = RecipeDBConditional;
 
@@ -3591,10 +3594,10 @@ for spellID,learnedAt in pairs({
 	[442989] = 0,	-- Imbued Mulch
 	[442988] = 0,	-- Magical Mulch
 	[382582] = 0,	-- Opening
-	[391088] = 0,	-- Refine Herbs - 
-	[391089] = 0,	-- Refine Herbs - 
-	[438811] = 0,	-- Refine Herbs - 
-	[438812] = 0,	-- Refine Herbs - 
+	[391088] = 0,	-- Refine Herbs -
+	[391089] = 0,	-- Refine Herbs -
+	[438811] = 0,	-- Refine Herbs -
+	[438812] = 0,	-- Refine Herbs -
 	[252407] = 0,	-- Riverbud
 	[252406] = 0,	-- Riverbud
 	[252405] = 0,	-- Riverbud
@@ -7373,18 +7376,18 @@ for spellID,learnedAt in pairs({
 	[389703] = 1,	-- Overload Titan Deposit
 	[439747] = 1,	-- Overload Webbed Deposits
 	[439743] = 1,	-- Overload Weeping
-	[442330] = 1,	-- Refine Aqirite 
-	[442331] = 1,	-- Refine Aqirite 
-	[442328] = 1,	-- Refine Bismuth 
-	[442329] = 1,	-- Refine Bismuth 
-	[383795] = 1,	-- Refine Draconium 
-	[383793] = 1,	-- Refine Draconium 
-	[442333] = 1,	-- Refine Ironclaw Ore 
-	[442332] = 1,	-- Refine Ironclaw Ore 
-	[383797] = 1,	-- Refine Khaz'gorite 
-	[383796] = 1,	-- Refine Khaz'gorite 
-	[383649] = 1,	-- Refine Serevite 
-	[383792] = 1,	-- Refine Serevite 
+	[442330] = 1,	-- Refine Aqirite
+	[442331] = 1,	-- Refine Aqirite
+	[442328] = 1,	-- Refine Bismuth
+	[442329] = 1,	-- Refine Bismuth
+	[383795] = 1,	-- Refine Draconium
+	[383793] = 1,	-- Refine Draconium
+	[442333] = 1,	-- Refine Ironclaw Ore
+	[442332] = 1,	-- Refine Ironclaw Ore
+	[383797] = 1,	-- Refine Khaz'gorite
+	[383796] = 1,	-- Refine Khaz'gorite
+	[383649] = 1,	-- Refine Serevite
+	[383792] = 1,	-- Refine Serevite
 	[74530] = 1,	-- Smelt Elementium
 	[84038] = 1,	-- Smelt Obsidium
 	[377987] = 10,	-- Heart in a Bottle
@@ -7488,18 +7491,18 @@ for spellID,learnedAt in pairs({
 	[257146] = 0,	-- Leather Gathering
 	[382587] = 0,	-- Opening
 	[442645] = 0,	-- Quiet River Bass Lure
-	[440943] = 0,	-- Refine Chitin - 
-	[440942] = 0,	-- Refine Chitin - 
-	[440929] = 0,	-- Refine Hides - 
-	[375731] = 0,	-- Refine Hides - 
-	[440934] = 0,	-- Refine Hides - 
-	[375763] = 0,	-- Refine Hides - 
-	[376611] = 0,	-- Refine Leather - 
-	[440938] = 0,	-- Refine Leather - 
-	[376612] = 0,	-- Refine Leather - 
-	[440937] = 0,	-- Refine Leather - 
-	[376614] = 0,	-- Refine Scales - 
-	[376613] = 0,	-- Refine Scales - 
+	[440943] = 0,	-- Refine Chitin -
+	[440942] = 0,	-- Refine Chitin -
+	[440929] = 0,	-- Refine Hides -
+	[375731] = 0,	-- Refine Hides -
+	[440934] = 0,	-- Refine Hides -
+	[375763] = 0,	-- Refine Hides -
+	[376611] = 0,	-- Refine Leather -
+	[440938] = 0,	-- Refine Leather -
+	[376612] = 0,	-- Refine Leather -
+	[440937] = 0,	-- Refine Leather -
+	[376614] = 0,	-- Refine Scales -
+	[376613] = 0,	-- Refine Scales -
 	[442648] = 0,	-- Roaring Anglerseeker Lure
 	[257150] = 0,	-- Scale Gathering
 	[257149] = 0,	-- Scale Gathering

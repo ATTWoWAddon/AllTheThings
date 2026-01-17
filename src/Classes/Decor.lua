@@ -5,15 +5,15 @@ local _, app = ...
 local CACHE = "Decor"
 local CLASSNAME = "Decor"
 local KEY = "decorID"
-if not C_HousingCatalog then
+if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 	-- If Decor isn't distinguishable yet, simply create an extended Item
 	app.CreateDecor = app.ExtendClass("Item", CLASSNAME, KEY, {});
 
 	return
 end
 
-local C_HousingCatalog_GetCatalogEntryInfoByRecordID
-	= C_HousingCatalog.GetCatalogEntryInfoByRecordID
+local C_HousingCatalog_GetCatalogEntryInfoByRecordID,C_HouseEditor_IsHouseEditorActive
+	= C_HousingCatalog.GetCatalogEntryInfoByRecordID,C_HouseEditor.IsHouseEditorActive
 
 -- TODO: test other APIs
 -- this is non-parameterized, returns the max decor that can be owned
@@ -49,12 +49,17 @@ do
 				-- 	app.PrintDebug(id)
 				-- 	app.PrintTable(state)
 				-- end
-				-- quantity is how many owned
-				-- hasPlaced is used when the item is owned, but placed in the house (or outside)
+				-- numStored is how many owned in storage
+				-- numPlaced is how many owned, not in storage
 				if state then
+					-- numStored is currently gone on PTR/Beta
+					if not state.numStored then
+						if state.quantity > 100000 then state.quantity = 0 end
+						state.numStored = state.remainingRedeemable + state.quantity
+					end
+
 					local sum = state.numStored + state.numPlaced
-					if sum > 0 and sum < 1000000 then	-- Sometimes API returns 4294967295
-						-- state is valid, keep it
+					if sum > 0 then
 						saved[id] = true
 						added[#added + 1] = id
 					else
@@ -116,6 +121,9 @@ do
 		-- app.PrintDebug(val1, entryFrame, tooltip)
 		-- app.PrintTable(entryFrame)
 		-- app.PrintTable(tooltip)
+
+		-- Don't hook the ATT information when actually editing your House (unnecessary at that point)
+		if C_HouseEditor_IsHouseEditorActive() then return end
 
 		if not entryFrame then return end
 

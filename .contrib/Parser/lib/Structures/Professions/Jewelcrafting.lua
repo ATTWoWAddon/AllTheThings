@@ -1519,7 +1519,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timel
 }));
 SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
-	r(325248),	-- Shadowlands Prospecting \\ Prospecting
+	r(325248),	-- Shadowlands Prospecting
 	r(311953),	-- Mass Prospect Elethium
 	r(311948),	-- Mass Prospect Laestrite
 	r(311950),	-- Mass Prospect Oxxein

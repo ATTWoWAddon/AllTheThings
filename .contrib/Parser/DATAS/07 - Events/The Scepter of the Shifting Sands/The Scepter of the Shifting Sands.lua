@@ -92,7 +92,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "i", 21039 },	-- Narain's Turban
 								{ "i", 21040 },	-- Narain's Robe
 							},
-							["coord"] = { 65, 72, WINTERSPRING },
+							["coord"] = { 65.0, 72.0, WINTERSPRING },
 						}),
 						i(21042, {	-- Narain's Special Kit
 							i(21037),	-- Crude Map
@@ -130,7 +130,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8305, {	-- Long Forgotten Memories
 					["sourceQuest"] = 8303,	-- Anachronos
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -232,7 +232,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8555, {	-- The Charge of the Dragonflights
 					["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
@@ -288,7 +288,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						8741,	-- The Champion Returns
 					},
 					["qg"] = 15192,	-- Anachronos
-					["coord"] = { 65, 50, TANARIS },
+					["coord"] = { 65.0, 50.0, TANARIS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21175),	-- The Scepter of the Shifting Sands
@@ -326,7 +326,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						objective(2, {	-- 0/1 Fragment of the Nightmare's Corruption (Duskwood)
 							["provider"] = { "i", 21149 },	-- Fragment of the Nightmare's Corruption
 							["description"] = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-							["coord"] = { 48, 33, DUSKWOOD },
+							["coord"] = { 48.0, 33.0, DUSKWOOD },
 							["cr"] = 15625,	-- Twilight Corrupter
 						}),
 						objective(3, {	-- 0/1 Fragment of the Nightmare's Corruption (Feralas)
@@ -410,7 +410,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["itemID"] = 21106,	-- Draconic for Dummies [Chapter IV]
 							["_allowObjectProvider"] = true,
 							["provider"] = { "o", 180666 },	-- Draconic for Dummies
-							["coord"] = { 77, 38, UNDERCITY },
+							["coord"] = { 77.0, 38.0, UNDERCITY },
 						},
 						{
 							["itemID"] = 21107,	-- Draconic for Dummies [Chapter V]
@@ -420,7 +420,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								-- #if AFTER WRATH
 								{ 75.35, 29.73, STORMWIND_CITY },
 								-- #else
-								{ 72, 6, STORMWIND_CITY },
+								{ 72.0, 6.0, STORMWIND_CITY },
 								-- #endif
 							},
 						},
@@ -433,7 +433,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["_allowObjectProvider"] = true,
 							["provider"] = { "o", 180667 },	-- Draconic for Dummies
 							["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-							["coord"] = { 32, 42.9, BLACKWING_LAIR },
+							["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
 						},
 						{
 							["itemID"] = 21110,	-- Draconic for Dummies [Chapter VIII]
@@ -469,7 +469,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							},
 							["description"] = "This summons a 40 man raid boss.",
 							["cost"] = {{ "i", 21136, 1 }},	-- Arcanite Buoy
-							["coord"] = { 65, 55, AZSHARA },
+							["coord"] = { 65.0, 55.0, AZSHARA },
 							["cr"] = 15571,	-- Maws
 						}),
 						i(21526),	-- Band of Icy Depths

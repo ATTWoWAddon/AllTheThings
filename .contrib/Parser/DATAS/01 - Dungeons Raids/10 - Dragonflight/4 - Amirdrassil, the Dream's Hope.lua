@@ -12,8 +12,6 @@ local SMOLDERON = 2563;
 local TINDRAL = 2565;
 local FYRAKK = 2519;
 
-local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
-
 local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end

@@ -1841,6 +1841,7 @@ i(10922,{c={4},f=55,lvl=56,q=1,rwp=30002,u=2})}}),
 prof(393,{description="The following items can be gathered by skinning creatures out in the world.",g={
 h(-22,{
 s(121696,7005,{collectible=false,description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=57,q=1})}),
+sp(8613,{
 i(4234,{maps={1425,1445,1446},q=1}),
 i(2318,{maps={1421,1432,1436,1439},q=1}),
 i(2319,{maps={1417,1442},q=1}),
@@ -1881,7 +1882,7 @@ i(8165,{description="Can be skinned from elite creatures of any Dragonflights ar
 i(20501,{q=1}),
 i(20500,{q=1}),
 i(11512,{b=1,q=1}),
-i(20498,{q=1})}}),
+i(20498,{q=1})})}}),
 prof(197,{
 h(-88,{
 s(123361,10030,{f=4,lvl=43,q=2}),
@@ -3728,7 +3729,7 @@ i(42751,{awp=30002,c={8},f=111,lvl=62,q=1,races={1,2,3,4,5,6,7,8,10,11},u=30})}}
 flt(1,{awp=30003,u=30,g={
 s(175211,44210,{awp=30003,f=1,lvl=77,q=4,u=30}),
 s(171992,38322,{awp=30003,f=1,lvl=77,q=4,u=30}),
-ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854},{"s",64051}},type="i",u=30,g={
+ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854}},type="i",u=30,g={
 s(175937,45850,{awp=30003,f=1,lvl=70,q=3,u=30}),
 s(175938,45851,{awp=30003,f=1,lvl=70,q=3,u=30}),
 s(175939,45852,{awp=30003,f=1,lvl=70,q=3,u=30}),

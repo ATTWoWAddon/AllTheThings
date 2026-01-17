@@ -1,5 +1,3 @@
-11.2.7.63642
-r(1245945),	-- [DNT] TWW Cooking Decor Template
 12.0.0.63534
 r(471005),	-- Midnight Cooking
 r(1226166),	-- Farstrider Rations
@@ -55,8 +53,6 @@ r(1265693),	-- Resourcefulness
 
 Missing in Cooking
 
-11.2.7.63642
-r(1245945),	-- [DNT] TWW Cooking Decor Template
 12.0.0.63534
 r(471005),	-- Midnight Cooking
 r(1226166),	-- Farstrider Rations

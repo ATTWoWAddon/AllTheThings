@@ -86,16 +86,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_THE_DELVES,
 			["groups"] = {
 				-- #if AFTER 11.2.0
-				-- title(650),	-- Delver %s // doesn't load ingame
+				title(650),	-- Delver <Name>
 				-- #else
-				title(598),	-- Delver %s
+				title(598),	-- Delver <Name> / Flickering <Name>
 				-- #endif
 			},
 		}),
 		ach(41096, {	-- Delve Infinite (1000)
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
-			["groups"] = { title(599) },	-- Infinite Delver %s
+			["groups"] = { title(599) },	-- Infinite Delver <Name>
 		}),
 	}),
 })));

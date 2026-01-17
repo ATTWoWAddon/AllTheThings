@@ -8,8 +8,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(559409, {	-- Fel-Touched Lumber
-			i(251767),	-- Fel-Touched Lumber
+		o_repeated({	-- Fel-Touched Lumber
+			["maps"] = {
+				AZSUNA,
+				BROKEN_SHORE,
+				EREDATH,
+				HIGHMOUNTAIN,
+				652,	-- Thunder Totem
+				750,	-- Thunder Totem
+				TRUESHOT_LODGE,
+				KROKUUN,
+				STORMHEIM,
+				SURAMAR,
+				VALSHARAH,
+				THE_DREAMGROVE,
+			},
+			["groups"] = {
+				-- Objects
+				o(559409),	-- [Azsuna]
+				o(562439),	-- [Broken Shore]
+				o(558389),	-- [Eredath]
+				o(560822),	-- [Highmountain/Thunder Totem/Trueshot Lodge]
+				o(558361),	-- [Krokuun]
+				o(560826),	-- [Stormheim]
+				o(562159),	-- [Suramar]
+				o(560358),	-- [Val'sharah/The Dreamgrove]
+				-- Drops
+				i(251767),	-- Fel-Touched Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -787,6 +813,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
 			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
 			--]]
+		}),
+	}),
+	prof(SKINNING, {
+		filter(BATTLE_PETS, {
+			i(153057, {	-- Fossorial Bile Larva (PET!)
+				["description"] = "This can be obtained from any skinnable Argus mob.",
+				["timeline"] = { ADDED_7_3_0 },
+			}),
+		}),
+		n(DISCOVERY, {
+			r(195125, {	-- Skinning (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(194174),	-- Skinning Journal
+			applyclassicphase(BFA_PHASE_ONE, r(265867, {["timeline"] = {ADDED_8_0_1}})),	-- Skinning (Legion)
+		}),
+		spell(8613, {	-- Skinning
+			i(151566, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Leather
+			i(124115),	-- Stormscale
+			i(124113),	-- Stonehide Leather
+		}),
+		filter(TOYS, {
+			i(130102),	-- Mother's Skinning Knife (TOY!)
 		}),
 	}),
 	prof(TAILORING, {

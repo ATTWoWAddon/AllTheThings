@@ -1,7 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local VAULT_OF_THE_INCARNATES = 2390;
 local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
@@ -484,7 +483,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				q(72686, {	-- Storm Surge
 					["provider"] = { "n", 196598 },	-- Rethelshi
-					["coord"] = { 38.2, 37, VALDRAKKEN },
+					["coord"] = { 38.2, 37.0, VALDRAKKEN },
 					["isWeekly"] = true,
 					["groups"] = {
 						currency(2122),	-- Storm Sigil

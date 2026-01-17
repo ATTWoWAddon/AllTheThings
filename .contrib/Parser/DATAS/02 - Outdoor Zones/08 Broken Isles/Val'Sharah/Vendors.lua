@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["coord"] = { 60.2, 84.9, VALSHARAH },
 				["groups"] = {
 					i(245698, {	-- Kaldorei Stone Fence (DECOR!)
+						["sourceQuest"] = 40573,	-- The Nightmare Lord
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 					}),

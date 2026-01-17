@@ -39,7 +39,21 @@ root(ROOTS.Housing, n(QUESTS, {
 				{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal [A]
 				{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide [H]
 			},
-			["groups"] = { i(266892) },	-- Neighbourhood Campsites (Unlocks 'Founders Point' and 'Razorwind Shores' Campsites. Could not see Campsite IDs even with them enabled in ATT Settings)
+			["groups"] = {
+				i(266892, sharedDataSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Neighbourhood Campsites
+					campsite(146),	-- Founders Point
+					campsite(145),	-- Razorwind Shores
+				})),
+			},
+		}),
+		q(92816, {	-- A Letter for Adventure
+			-- It seems most people are not getting this
+			-- Figure out lock criteria for this
+			["sourceQuests"] = { 94379 },	-- This Old Hearth
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["groups"] = {
+				i(254504),	-- Adventuring Letter (QI!)
+			},
 		}),
 		q(93647, {	-- Lumber For You
 			["qgs"] = {
@@ -64,6 +78,24 @@ root(ROOTS.Housing, n(QUESTS, {
 			["timeline"] = { ADDED_12_0_0 },
 		}),
 		-- Misc
+		q(92578, {	-- Draconic Decor
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(248116) },	-- Valdrakken Chandelier (DECOR!)
+		}),
+		q(92577, {	-- Dreamy Inspiration
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(245259) },	-- Small Val'sharah Bookcase (DECOR!)
+		}),
 		q(92572, {	-- Furniture Favor
 			["qg"] = 252312,	-- Second Chair Pawdo
 			["coords"] = {
@@ -72,6 +104,27 @@ root(ROOTS.Housing, n(QUESTS, {
 				{ 56.1, 77.1, STORMWIND_CITY },
 			},
 			["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
+		}),
+		q(92581, {	-- Last Light
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = { i(247915) },	-- Square Suramar Table (DECOR!)
+		}),
+		q(92580, {	-- Spare A Chair
+			["qg"] = 252312,	-- Second Chair Pawdo
+			["coords"] = {
+				{ 52.9, 68.0, DORNOGAL },
+				{ 52.9, 89.0, ORGRIMMAR },
+				{ 56.1, 77.1, STORMWIND_CITY },
+			},
+			["groups"] = {
+				i(246487),	-- Gnomish Tesla Coil (DECOR!)
+				i(265822),	-- Unstable Mechagon Re-Localizatron (QI!)
+			},
 		}),
 		-- Repeatables
 		q(92608, {	-- Furniture Favor
@@ -87,7 +140,7 @@ root(ROOTS.Housing, n(QUESTS, {
 			},
 		}),
 	},
-}))
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
@@ -109,7 +162,8 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94709),	-- Triggered after entering house (tutorial?)
 				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
 				-- q(94750),	-- Unflagged after talking to Elven Decor vendor
+				--q(91029),	-- -- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
 			},
 		}),
 	})
-})
+});

@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 				n(FLIGHT_PATHS, {
 					fp(1988, {	-- Hope's Landing, Antoran Wastes
 						["cr"] = 125407,	-- Lightforged Beacon
-						["coord"] = { 73, 50.4, ANTORAN_WASTES },
+						["coord"] = { 73.0, 50.4, ANTORAN_WASTES },
 					}),
 					fp(1992, {	-- Light's Purchase
 						["cr"] = 125410,	-- Lightforged Beacon

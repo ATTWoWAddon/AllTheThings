@@ -298,11 +298,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					},
 				}),
 				e(191, {	-- Zul'jin [Old ID: 23863, they reused it for Daakara in the Cata remake]
-					-- #if AFTER BFA
-					["creatureID"] = 130255,	-- NEW ID from BFA
-					-- #else
-					["creatureID"] = 23863,	-- OLD ID from TBC
-					-- #endif
+					["crs"] = {
+						-- #if AFTER BFA
+						130255,	-- NEW ID from BFA
+						-- #else
+						23863,	-- OLD ID from TBC
+						-- #endif
+					},
 					["hideText"] = true,
 					["groups"] = {
 						ach(691),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.

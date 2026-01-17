@@ -850,7 +850,7 @@ root(ROOTS.Zones, {
 									{ "o", 187039 },	-- Smuggled Mana Cell
 								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
-								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 51.0, 19.3, BLADES_EDGE_MOUNTAINS },
 								["crs"] = {
 									22243,	-- Bash'ir Arcanist
 									22241,	-- Bash'ir Raider
@@ -887,7 +887,7 @@ root(ROOTS.Zones, {
 									{ "o", 187039 },	-- Smuggled Mana Cell
 								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
-								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 51.0, 19.3, BLADES_EDGE_MOUNTAINS },
 								["crs"] = {
 									22243,	-- Bash'ir Arcanist
 									22241,	-- Bash'ir Raider
@@ -908,7 +908,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Mana Berry
 								["provider"] = { "i", 33849 },	-- Mana Berry
-								["coord"] = { 48, 54, NETHERSTORM },
+								["coord"] = { 48.0, 54.0, NETHERSTORM },
 							}),
 							i(33844),	-- Barrel of Fish
 							i(33857),	-- Crate of Meat
@@ -1143,7 +1143,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
 						["qg"] = 25140,	-- Lord Torvos
-						["coord"] = { 62.6, 36, SHATTRATH_CITY },
+						["coord"] = { 62.6, 36.0, SHATTRATH_CITY },
 						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { NETHERSTORM },
 						["isDaily"] = true,
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/6 Multiphase Readings Taken
 								["provider"] = { "i", 35233 },	-- Multiphase Spectrographic Goggles
-								["coord"] = { 36, 66, NAGRAND },
+								["coord"] = { 36.0, 66.0, NAGRAND },
 							}),
 						},
 					})),
@@ -1266,7 +1266,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11369, {	-- WANTED: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1278,7 +1278,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11384, {	-- WANTED: A Warp Splinter Clipping
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { TEMPEST_KEEP_BOTANICA },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1290,7 +1290,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11382, {	-- WANTED: Aeonus's Hourglass
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1315,7 +1315,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11363, {	-- WANTED: Bladefist's Seal
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { HELLFIRE_CITADEL_SHATTERED_HALLS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1340,7 +1340,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11362, {	-- WANTED: Keli'dan's Feathered Stave
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1365,7 +1365,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11375, {	-- WANTED: Murmur's Whisper
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1377,7 +1377,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11354, {	-- WANTED: Nazan's Riding Crop
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11386, {	-- WANTED: Pathaleon's Projector
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { TEMPEST_KEEP_MECHANAR },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1414,7 +1414,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11373, {	-- WANTED: Shaffar's Wondrous Pendant
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { AUCHINDOUN_MANA_TOMBS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1478,7 +1478,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11378, {	-- WANTED: The Epoch Hunter's Head
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1490,7 +1490,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11374, {	-- WANTED: The Exarch's Soul Gem
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { AUCHINDOUN_AUCHENAI_CRYPTS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11372, {	-- WANTED: The Headfeathers of Ikiss
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { AUCHINDOUN_SETHEKK_HALLS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11368, {	-- WANTED: The Heart of Quagmirran
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1526,7 +1526,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11388, {	-- WANTED: The Scroll of Skyriss
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { TEMPEST_KEEP_ARCATRAZ },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11499, {	-- WANTED: The Signet Ring of Prince Kael'thas
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { MAGISTERS_TERRACE },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, {
 					})),
 					q(11370, {	-- WANTED: The Warlord's Treatise
 						["qg"] = 24369,	-- Wind Trader Zhareem
-						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["coord"] = { 75.0, 37.0, SHATTRATH_CITY },
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),

@@ -176,7 +176,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				iensemble(257105),	-- Ensemble: Sargerei Commander's Hellforged Regalia
 			})),
 			mapped(ach(42691, {	-- Timeworn Keystone Hero (L40)
-				title(658),	-- %s the Infernal (TITLE!)
+				title(658),	-- <Name> the Infernal
 			})),
 		}),
 		d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {

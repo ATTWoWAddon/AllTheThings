@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1073 },	-- Ashlan Stonesmirk
 						{ "i", 2609 },	-- Disarming Colloid
 					},
-					["coord"] = { 50, 18.2, WETLANDS },
+					["coord"] = { 50.0, 18.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(278, {	-- A Dark Threat Looms (5/7)
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2610 },	-- Disarming Mixture
 					},
-					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -897,7 +897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1681 },	-- Brock Stoneseeker
 						{ "i", 16310 },	-- Brock's List (PQI!)
 					},
-					["coord"] = { 37, 47.8, LOCH_MODAN },
+					["coord"] = { 37.0, 47.8, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
 				}),
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Grawmug slain
 							["provider"] = { "n", 1205 },	-- Grawmug
-							["coord"] = { 33.2, 91, LOCH_MODAN },
+							["coord"] = { 33.2, 91.0, LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Gnasher slain
 							["provider"] = { "n", 1206 },	-- Gnasher
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1339, {	-- Mountaineer Stormpike's Task
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1146,7 +1146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(302, {	-- Powder to Ironband
 					["sourceQuest"] = 301,	-- Report to Ironforge
 					["qg"] = 1356,	-- Prospector Stormpike
-					["coord"] = { 74.4, 12, IRONFORGE },
+					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(416, {	-- Rat Catching
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell
-					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["coord"] = { 34.8, 47.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

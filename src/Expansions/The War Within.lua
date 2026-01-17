@@ -21,6 +21,8 @@ do
 	local KEY = "campsiteID"
 	local WarbandSceneInfoMeta = setmetatable({}, {
 		__index = function(t, id)
+			if not id then return app.EmptyTable end
+
 			local info = C_WarbandScene_GetWarbandSceneEntry(id) or app.EmptyTable
 			t[id] = info
 			return info

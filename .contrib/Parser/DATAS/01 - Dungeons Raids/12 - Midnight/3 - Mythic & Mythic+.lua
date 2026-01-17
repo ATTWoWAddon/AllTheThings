@@ -1,14 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
 			["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 }
 		},{
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One
-				title(655),	-- %s the Umbral
+				title(655),	-- <Name> the Umbral
 			}),
 			ach(61256, {	-- Midnight Keystone Master: Season One
 				i(262620),	-- Calamitous Carrion (MOUNT!)
@@ -18,12 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
 			ach(61259, {	-- Umbral Hero: Midnight Season One
-				["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },
-				["groups"] = {
-					title(656, {	-- <Name> the Umbral Hero
-						["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },
-					}),
-				},
+				title(656),	-- <Name> the Umbral Hero
 			}),
 			ach(16643, {	-- Keystone Hero: Algeth'ar Academy
 				spell(393273),	-- Path of the Draconic Diploma
@@ -35,19 +30,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			--	spell(445416),	-- Path of Nerubian Ascension
 			}),
 			ach(61267, {	-- Keystone Hero: Magisters' Terrace
-			--	spell(445424),	-- Path of the Twilight Fortress
+				spell(1254572),	-- Path of Devoted Magistry
 			}),
 			ach(61262, {	-- Keystone Hero: Windrunner Spire
-			--	spell(354464),	-- Path of the Misty Forest
+				spell(1254400),	-- Path of the Windrunners
 			}),
 			ach(61270, {	-- Keystone Hero: Seat of the Triumvirate
-			--	spell(445414),	-- Path of the Arathi Flagship
+				spell(1254551),	-- Path of Dark Dereliction
 			}),
 			ach(61271, {	-- Keystone Hero: Pit of Saron
-			--	spell(354462),	-- Path of the Courageous
+				spell(1254555),	-- Path of Unyielding Blight
 			}),
 			ach(61272, {	-- Keystone Hero: Skyreach
-			--	spell(445269),	-- Path of the Corrupted Foundry
+				spell(1254557),	-- Path of the Crowning Pinnacle
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
 			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal October 2025
@@ -113,4 +108,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		})),
 	}),
-})));
+}));

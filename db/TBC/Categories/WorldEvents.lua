@@ -4,10 +4,10 @@ local ach,h,i,mnt,q,qo,r,s,title,x=_.CreateAchievement,_.CreateCustomHeader,_.Cr
 _.Categories.WorldEvents={
 h(-103,{
 x(2,{
-h(-482,{lvl=55,maps={1419},rwp=20001,u=2,g={
-q(10259,{coords={{58.25,55.05,1419}},lvl=55,qgs={19942},rwp=20001,u=2,g={
-ach(2079,{providers={{"i",28788}},rwp=20001,u=2}),
-s(139134,28788,{b=1,f=9,q=1,rwp=20001,u=2})}})}})})}),
+h(-482,{lvl=55,maps={1419},rwp=20506,u=1701,g={
+q(10259,{coords={{58.25,55.05,1419}},lvl=55,qgs={19942},rwp=20506,u=1701,g={
+ach(2079,{providers={{"i",28788}},rwp=20506,u=1701}),
+s(139134,28788,{b=1,f=9,q=1,rwp=20506,u=1701})}})}})})}),
 h(-481,{maps={1454,1455},rwp=20001,u=2,g={
 h(-210,{r=2,rwp=20001,u=2,g={
 q(8811,{coords={{55.2,64.7,1453},{59.3,64.1,1455}},cost={{"i",21436,1}},qgs={15735,15766},r=2,repeatable=1,rwp=20001,u=2}),

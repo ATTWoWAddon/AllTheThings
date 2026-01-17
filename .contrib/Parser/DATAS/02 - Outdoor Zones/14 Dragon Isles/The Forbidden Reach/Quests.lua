@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(72713, {	-- Inheritance
 					["sourceQuests"] = { 72712 },	-- The Best We Have
 					["provider"] = { "n", 200403 },	-- Talon Damos
-					["coord"] = { 55, 37.2, THE_FORBIDDEN_REACH },
+					["coord"] = { 55.0, 37.2, THE_FORBIDDEN_REACH },
 				}),
 				q(72545, {	-- Creche Fallen
 					["sourceQuests"] = { 72713 },	-- Inheritance
@@ -275,21 +275,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75263, {	-- Reach South
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75237, {	-- Reach West
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
-				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			-- Augmentation Evoker questline

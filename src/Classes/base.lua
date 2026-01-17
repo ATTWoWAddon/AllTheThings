@@ -1,6 +1,6 @@
 -- Base Class Helpers
 -- Contains necessary logic for defining, creating and working with all Class structures in a consistent manner
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local type,pairs,setmetatable,rawget,unpack,rawset,select
@@ -965,7 +965,7 @@ app.CreateCache = function(idField, className)
 	end
 	cache.DefaultFunctions = DefaultFunctions
 	if app.__perf then
-		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
+		return app.__perf.CaptureTable(cache, "ClassCache:"..(className or idField))
 	end
 	if className then
 		ClassDataCaches[className] = cache

@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pet(4574, {	-- Snuffling (PET!)
 					["description"] = "Found around the area of Taelloch/Obsidian Hollow.",
-					["coord"] = { 68, 47, THE_RINGING_DEEPS },
+					["coord"] = { 68.0, 47.0, THE_RINGING_DEEPS },
 				}),
 			},
 		})),

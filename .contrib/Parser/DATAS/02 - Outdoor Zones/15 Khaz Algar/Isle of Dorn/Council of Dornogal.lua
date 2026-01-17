@@ -166,6 +166,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 											-- #endif
 										},
 										["groups"] = {
+											i(245294, { ["timeline"] = { ADDED_11_2_7 } }),	-- Councilward's Jeweled Goblet (DECOR!)
 											i(228320),	-- Design: Binding of Binding (RECIPE!)
 											i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 											i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
@@ -187,6 +188,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}),
 									i(235151, {	-- Distinguished Actor's Chest
 										["timeline"] = { ADDED_11_1_0 },
+										["groups"] = { i(245294, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Councilward's Jeweled Goblet (DECOR!)
 									}),
 								},
 							}),
@@ -219,11 +221,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								}),
 								i(245295, {	-- Literature of Dornogal (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
 								}),
 								i(245297, {	-- Literature of Gundargaz (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
 								}),
 								i(245296, {	-- Literature of Taelloch (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },

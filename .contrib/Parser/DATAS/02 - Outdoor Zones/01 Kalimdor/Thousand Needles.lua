@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4881, {	-- Assassination Plot
 					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["provider"] = { "i", 12564 },	-- Assassination Note
-					["coord"] = { 21.2, 32, THOUSAND_NEEDLES },
+					["coord"] = { 21.2, 32.0, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["cr"] = 10617,	-- Galak Messenger
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1532, {	-- Call of Air [Thunder Bluff]
 					["qg"] = 5906,	-- Xanis Flameweaver
-					["coord"] = { 25.2, 21, THUNDER_BLUFF },
+					["coord"] = { 25.2, 21.0, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
 					["altQuests"] = { 25562 },	-- Circle the Wagons... er, Boats [H]
 					["qg"] = 40487,	-- Razzeric
-					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
+					["coord"] = { 77.0, 74.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -489,7 +489,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
 					["altQuests"] = { 25543 },	-- Circle the Wagons... er, Boats [H]
 					["qg"] = 40487,	-- Razzeric
-					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
+					["coord"] = { 77.0, 74.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","questID",25543},{"pop"}},
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4904, {	-- Free at Last
 					["qg"] = 10646,	-- Lakota Windsong
-					["coord"] = { 38, 26.6, THOUSAND_NEEDLES },
+					["coord"] = { 38.0, 26.6, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -1289,21 +1289,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  12765 },	-- Secret Note #1
 								{ "o", 176344 },	-- Document Chest #1
 							},
-							["coord"] = { 32, 33, THOUSAND_NEEDLES },
+							["coord"] = { 32.0, 33.0, THOUSAND_NEEDLES },
 						}),
 						objective(2, {	-- 0/1 Secret Note #2
 							["providers"] = {
 								{ "i",  12766 },	-- Secret Note #2
 								{ "o", 190483 },	-- Document Chest #2
 							},
-							["coord"] = { 34, 39, THOUSAND_NEEDLES },
+							["coord"] = { 34.0, 39.0, THOUSAND_NEEDLES },
 						}),
 						objective(3, {	-- 0/1 Secret Note #3
 							["providers"] = {
 								{ "i",  12768 },	-- Secret Note #3
 								{ "o", 190484 },	-- Document Chest #3
 							},
-							["coord"] = { 39, 41, THOUSAND_NEEDLES },
+							["coord"] = { 39.0, 41.0, THOUSAND_NEEDLES },
 						}),
 						i(15457, {	-- Desert Shoulders
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1458,7 +1458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1192, {	-- Indurium Ore
 					["sourceQuest"] = 1194,	-- Rizzle's Schematics
 					["qg"] = 4630,	-- Pozzik
-					["coord"] = { 80, 75.8, THOUSAND_NEEDLES },
+					["coord"] = { 80.0, 75.8, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5833, 4 }},	-- Indurium Ore
 					["repeatable"] = true,
@@ -1640,7 +1640,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1148, {	-- Parts of the Swarm (1/2)
 					["provider"] = { "i", 5877 },	-- Cracked Silithid Carapace
-					["coord"] = { 70.2, 87, THOUSAND_NEEDLES },
+					["coord"] = { 70.2, 87.0, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
@@ -1665,7 +1665,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1184, {	-- Parts of the Swarm (2/2)
 					["sourceQuest"] = 1148,	-- Parts of the Swarm (1/2)
 					["qg"] = 3428,	-- Korran
-					["coord"] = { 51, 29.6, THE_BARRENS },
+					["coord"] = { 51.0, 29.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -1819,7 +1819,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 773 },	-- Krazek
 						{ "i", 5804 },	-- Goblin Rumors
 					},
-					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
@@ -2044,7 +2044,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 20447 },	-- Harpy Foodstuffs
 								{ "i", 5845 },	-- Flank of Meat
 							},
-							["coord"] = { 26, 55.4, THOUSAND_NEEDLES },
+							["coord"] = { 26.0, 55.4, THOUSAND_NEEDLES },
 							["cr"] = 4490,	-- Grenka Bloodscreech
 						}),
 					},
@@ -2455,7 +2455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 4485 },	-- Belgrom Rockmaul
 						{ "i", 5850 },	-- Belgrom's Sealed Note
 					},
-					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -2733,7 +2733,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Arnak's Hoof
 							["provider"] = { "i", 12884 },	-- Arnak's Hoof
-							["coord"] = { 38.2, 27, THOUSAND_NEEDLES },
+							["coord"] = { 38.2, 27.0, THOUSAND_NEEDLES },
 							["cr"] = 10896,	-- Arnak Grimtotem
 						}),
 						i(15471, {	-- Brawnhide Armor

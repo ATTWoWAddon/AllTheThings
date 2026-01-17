@@ -77,7 +77,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
-			ach(40728),	-- Forged Finery
+			ach(40728, { ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_0 } }),	-- Forged Finery
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			i(223511, {	-- Vicious Skyflayer [A] (MOUNT!)

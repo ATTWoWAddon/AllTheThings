@@ -186,9 +186,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44006,	-- Your Fullest Potential
 							},
 							["sourceQuestNumRequired"] = 1,
-							["provider"] = { "n", 96539 },	-- Stormcaller Mylra
+							["qgs"] = {
+								96539,	-- Stormcaller Mylra
+								105461,	-- Stormcaller Mylra
+							},
 							["coords"] = {
-								{ 34.5, 76.1, 725 },	-- The Maelstrom (Scenario Map)
+								{ 35.8, 77.0, 725 },	-- The Maelstrom (Scenario Map)
 								{ 34.5, 76.1, THE_HEART_OF_AZEROTH },
 							},
 						}),
@@ -585,6 +588,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = {
 							42208,	-- Return to the Firelands
 							42990,	-- Neltharion's Lair: The Earthen Amulet
+							42988,	-- Worldmender
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_OF_AZEROTH },
@@ -773,6 +777,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
 							46258,	-- The Calm After the Storm
+							46057,	-- Champion: Magatha Grimtotem
+							41746,	-- Champion: Muln Earthfury
 						},
 						["provider"] = { "n", 117888 },	-- Orono
 						["coord"] = { 44.6, 61.6, BROKEN_SHORE },

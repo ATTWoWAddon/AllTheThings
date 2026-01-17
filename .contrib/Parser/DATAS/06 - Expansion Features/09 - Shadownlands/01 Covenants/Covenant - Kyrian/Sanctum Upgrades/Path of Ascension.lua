@@ -1307,7 +1307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["icon"] = 3565449,
 							["groups"] = {
 								n(REWARDS, {
-									title(439,	{	-- <Name> the Ascended (TITLE!)
+									title(439,	{	-- <Name> the Ascended
 										["description"] = "Finish all fights on Humility Difficulty.",
 									}),
 									n(171873, {	-- Athanos

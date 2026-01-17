@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(196637, {	-- Tethalash
-				["description"] = "Requires Exalted with either Dark Talons (Horde) or Obsidian Warders (Alliance)",
+				["description"] = "To speak to you, you must be a Dracthyr or Exalted with either Dark Talons (Horde) or Obsidian Warders (Alliance)",
 				["coord"] = { 25.6, 35.6, VALDRAKKEN },
 				["sym"] = {{"select","itemID",
 					198809,	-- Armored Vorquin Leystrider (MOUNT!)

@@ -1,3 +1,6 @@
+-- #if NOT ANYCLASSIC
+if true then return end
+-- #endif
 local recipeDB = RecipeDBConditional;
 
 -- Blacksmithing

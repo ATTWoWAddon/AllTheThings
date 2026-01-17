@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1116, {	-- Dream Dust in the Swamp
 					["sourceQuest"] = 1115,	-- The Rumormonger
 					["qg"] = 773,	-- Krazek
-					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
@@ -1355,7 +1355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Mok'rash the Cleaver slain
 							["provider"] = { "n", 1493 },	-- Mok'rash the Cleaver
-							["coord"] = { 35, 65.4, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 35.0, 65.4, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						i(61562, {	-- Smott's Signet
 							["timeline"] = { ADDED_4_0_3 },
@@ -1454,7 +1454,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 60386 },	-- Pure Water
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),
@@ -2135,7 +2135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4034 },	-- Stone of the Tides
 								{ "i", 4027 },	-- Catelyn's Blade
 							},
-							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
+							["coord"] = { 25.0, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
 						}),
 						i(4120, {	-- Robe of Crystal Waters
@@ -2211,7 +2211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 58811 },	-- The Holy Water of Clarity
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),
@@ -2232,7 +2232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 58811 },	-- The Holy Water of Clarity
 								{ "o", 759 },	-- The Holy Spring
 							},
-							["coord"] = { 43, 48, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 43.0, 48.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				}),

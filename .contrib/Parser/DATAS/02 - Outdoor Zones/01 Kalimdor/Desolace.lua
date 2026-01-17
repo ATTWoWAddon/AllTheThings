@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6142, {	-- Clam Bait
 					["qg"] = 12031,	-- Mai'Lahii
-					["coord"] = { 22.6, 72, DESOLACE },
+					["coord"] = { 22.6, 72.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 31,
@@ -964,7 +964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					-- #endif
 					["qg"] = 11317,	-- Jinar'Zillen
-					["coord"] = { 22.4, 73, DESOLACE },
+					["coord"] = { 22.4, 73.0, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(25, 25, 10),
 					["groups"] = {
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Ghost-o-plasm
 							["provider"] = { "i", 15849 },	-- Ghost-o-plasm
-							["coord"] = { 65, 91, DESOLACE },
+							["coord"] = { 65.0, 91.0, DESOLACE },
 							["cost"] = {{ "i", 15848, 1 }},	-- Crate of Ghost Magnets
 							["cr"] = 11560,	-- Magrami Spectre
 						}),
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  14523 },	-- Demon Pick
 								{ "o", 176581 },	-- Hand of Iruxos Crystal
 							},
-							["coord"] = { 55, 26.4, DESOLACE },
+							["coord"] = { 55.0, 26.4, DESOLACE },
 							["cr"] = 11876,	-- Demon Spirit
 						}),
 					},
@@ -1172,7 +1172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11877 },	-- Roon Wildmane
 						{ "i", 14546 },	-- Roon's Kodo Horn
 					},
-					["coord"] = { 25, 72.2, DESOLACE },
+					["coord"] = { 25.0, 72.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
@@ -1512,7 +1512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Draenethyst Shard
 							["provider"] = { "i", 6190 },	-- Draenethyst Shard
-							["coord"] = { 65, 21, SWAMP_OF_SORROWS },
+							["coord"] = { 65.0, 21.0, SWAMP_OF_SORROWS },
 							["cr"] = 5622,	-- Ongeku
 						}),
 					},
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 63.24, 20.68, HILLSBRAD_FOOTHILLS },	-- Krusk
-						{ 75, 34.2, ORGRIMMAR },	-- Belgrom Rockmaul
+						{ 75.0, 34.2, ORGRIMMAR },	-- Belgrom Rockmaul
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -2165,7 +2165,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Infused Burning Gem
 							["provider"] = { "i", 6435 },	-- Infused Burning Gem
-							["coord"] = { 55, 26.7, DESOLACE },
+							["coord"] = { 55.0, 26.7, DESOLACE },
 							["cost"] = {{ "i", 6436, 1 }},	-- Burning Gem
 							["crs"] = {
 								4665,	-- Burning Blade Adept
@@ -2203,7 +2203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Shadowstalker Scalp
 							["provider"] = { "i", 6441 },	-- Shadowstalker Scalp
-							["coord"] = { 75.8, 20, DESOLACE },
+							["coord"] = { 75.8, 20.0, DESOLACE },
 							["cr"] = 4674,	-- Hatefury Shadowstalker
 						}),
 					},
@@ -2218,7 +2218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Oracle Crystal
 							["provider"] = { "i", 6442 },	-- Oracle Crystal
-							["coord"] = { 31, 15.4, DESOLACE },
+							["coord"] = { 31.0, 15.4, DESOLACE },
 							["cr"] = 4718,	-- Slitherblade Oracle
 						}),
 					},
@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 65, 25, DESOLACE },
+					["coord"] = { 65.0, 25.0, DESOLACE },
 					["groups"] = {
 						i(216950),	-- Creepy Dalaran Relic
 					},

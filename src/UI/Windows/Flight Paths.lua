@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Global locals

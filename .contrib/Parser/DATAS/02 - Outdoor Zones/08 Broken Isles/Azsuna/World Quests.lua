@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
 				q(42119, {	-- A Cleansing Cocktail
+					i(136859),	-- Fat Bear Liver (QI!)
 					o(249704, {	-- Cliffwing Hippogryph Egg
 						["coords"] = {
 							{ 40.4, 32.9, AZSUNA },
@@ -83,6 +84,7 @@ root(ROOTS.Zones, {
 				petbattle(q(42146)),	-- Dazed and Confused and Adorable
 				q(44054),	-- Demonicide
 				q(42276, {	-- Disgusting, but Useful
+					i(137330),	-- Manastalker Tendril (QI!)
 					o(250267, {	-- Felsurge Egg
 						["coords"] = {
 							{ 31.8, 44.4, AZSUNA },
@@ -163,6 +165,7 @@ root(ROOTS.Zones, {
 				q(46165),	-- Kazruul (Invasion WQ)
 				q(46167),	-- Kozrum (Invasion WQ)
 				q(42101, {	-- Language of the Lost
+					i(136833),	-- Oracle's Scrying Orb (QI!)
 					o(249513, {	-- Illegible Writings
 						["coords"] = {
 							{ 58.3, 53.4, AZSUNA },

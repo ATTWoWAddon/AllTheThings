@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(689, {	-- A King's Tribute (2/3)
 					["sourceQuest"] = 686,	-- A King's Tribute (1/3)
 					["qg"] = 2790,	-- Grand Mason Marblesten
-					["coord"] = { 38.6, 87, IRONFORGE },
+					["coord"] = { 38.6, 87.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(700, {	-- A King's Tribute (3/3)
 					["sourceQuest"] = 689,	-- A King's Tribute (2/3)
 					["qg"] = 2790,	-- Grand Mason Marblesten
-					["coord"] = { 38.6, 87, IRONFORGE },
+					["coord"] = { 38.6, 87.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 25, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_2_3_0 },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 149481 },	-- Rune of Beth'Amara
 								{ "i",  10445 },	-- Drawing Kit
 							},
-							["coord"] = { 36, 53, AZSHARA },
+							["coord"] = { 36.0, 53.0, AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Rubbing: Rune of Jin'yael
 							["providers"] = {
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 149480 },	-- Rune of Jin'yael
 								{ "i",  10445 },	-- Drawing Kit
 							},
-							["coord"] = { 39, 50, AZSHARA },
+							["coord"] = { 39.0, 50.0, AZSHARA },
 						}),
 						objective(3, {	-- 0/1 Rubbing: Rune of Markri
 							["providers"] = {
@@ -465,7 +465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 149482 },	-- Rune of Markri
 								{ "i",  10445 },	-- Drawing Kit
 							},
-							["coord"] = { 39, 55, AZSHARA },
+							["coord"] = { 39.0, 55.0, AZSHARA },
 						}),
 						objective(4, {	-- 0/1 Rubbing: Rune of Sael'hai
 							["providers"] = {
@@ -473,12 +473,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 149483 },	-- Rune of Sael'hai
 								{ "i",  10445 },	-- Drawing Kit
 							},
-							["coord"] = { 42, 64, AZSHARA },
+							["coord"] = { 42.0, 64.0, AZSHARA },
 						}),
 						q(3451, {	-- Signal for Pickup (1/2)
 							["sourceQuest"] = 3450,	-- An Easy Pickup
 							["qg"] = 8517,	-- Xiggs Fuselighter
-							["coord"] = { 71, 94.2, IRONFORGE },
+							["coord"] = { 71.0, 94.2, IRONFORGE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 45,
@@ -487,14 +487,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["questID"] = 3449,	-- Arcane Runes
 									["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
 									["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
-									["coord"] = { 77, 91, AZSHARA },
+									["coord"] = { 77.0, 91.0, AZSHARA },
 								}),
 							},
 						}),
 						q(3483, {	-- Signal for Pickup (2/2)
 							["sourceQuest"] = 3451,	-- Signal for Pickup (1/2)
 							["qg"] = 8517,	-- Xiggs Fuselighter
-							["coord"] = { 71, 94.2, IRONFORGE },
+							["coord"] = { 71.0, 94.2, IRONFORGE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
@@ -599,7 +599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5673,	-- Elune's Grace [Stormwind City]
 					},
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 25, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- Tormus Deepforge
-					["coord"] = { 48.6, 43, IRONFORGE },
+					["coord"] = { 48.6, 43.0, IRONFORGE },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 2857, 4 },	-- Runed Copper Belt
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1682, {	-- Grey Iron Weapons
 					["sourceQuest"] = 1681,	-- Ironband's Compound
 					["qg"] = 6031,	-- Tormus Deepforge
-					["coord"] = { 49, 42.6, IRONFORGE },
+					["coord"] = { 49.0, 42.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 4256 },	-- Golnir Bouldertoe
 						{ "i", 16311 },	-- Honorary Picks
 					},
-					["coord"] = { 51, 26, IRONFORGE },
+					["coord"] = { 51.0, 26.0, IRONFORGE },
 					["races"] = { DARKIRON, DWARF, GNOME },
 					-- #if BEFORE 4.0.3
 					["lvl"] = 10,
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1681, {	-- Ironband's Compound
 					["sourceQuest"] = 1680,	-- Tormus Deepforge
 					["qg"] = 6031,	-- Tormus Deepforge
-					["coord"] = { 49, 42.6, IRONFORGE },
+					["coord"] = { 49.0, 42.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { WARRIOR },
@@ -888,7 +888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Catch Cold Water Crayfish
 							["provider"] = { "i", 69940 },	-- Grimnur's Bait
-							["coord"] = { 84, 51, DUN_MOROGH },
+							["coord"] = { 84.0, 51.0, DUN_MOROGH },
 						}),
 						objective(2, {	-- Take Crayfish to Cook Ghilm
 							["provider"] = { "n", 1355 },	-- Cook Ghilm
@@ -954,7 +954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								{ 47.5, 14.5, IRONFORGE },
-								{ 71, 10, IRONFORGE },
+								{ 71.0, 10.0, IRONFORGE },
 							},
 						}),
 						i(67414),	-- Bag of Shiny Things
@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1578, {	-- Supplying the Front
 					["qg"] = 6031,	-- Tormus Deepforge
-					["coord"] = { 48.5, 43, IRONFORGE },
+					["coord"] = { 48.5, 43.0, IRONFORGE },
 					["maps"] = { LOCH_MODAN },
 					["cost"] = {
 						{ "i", 2845, 6 },	-- Copper Axe
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2997, {	-- The Tome of Divinity [Dun Morogh]
 					["qg"] = 1232,	-- Azar Stronghammer <Paladin Trainer>
-					["coord"] = { 47.6, 52, DUN_MOROGH },
+					["coord"] = { 47.6, 52.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3000, {	-- The Tome of Divinity [Stormwind City]
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coord"] = { 37.2, 33, STORMWIND_CITY },
+					["coord"] = { 37.2, 33.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["qg"] = 6179,	-- Tiza Battleforge
-					["coord"] = { 27.4, 12, IRONFORGE },
+					["coord"] = { 27.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1293,7 +1293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1647, {	-- The Tome of Divinity (2/8)
 					["sourceQuest"] = 1646,	-- The Tome of Divinity (1b/8)
 					["qg"] = 6179,	-- Tiza Battleforge
-					["coord"] = { 27.4, 12, IRONFORGE },
+					["coord"] = { 27.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6179 },	-- Tiza Battleforge
 						{ "i", 6866 },	-- Symbol of Life
 					},
-					["coord"] = { 27.4, 12, IRONFORGE },
+					["coord"] = { 27.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
@@ -1341,7 +1341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(1789, {	-- The Symbol of Life
 							["qg"] = 6179,	-- Tiza Battleforge
-							["coord"] = { 27.4, 12, IRONFORGE },
+							["coord"] = { 27.4, 12.0, IRONFORGE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {

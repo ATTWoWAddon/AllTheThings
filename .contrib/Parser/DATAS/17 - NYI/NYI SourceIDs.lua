@@ -4734,6 +4734,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 
 		-- 11.1.7
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(231758, {["sourceID"] = 229796 }),	-- Unknown Name [NYI]
 			i(235392, {["sourceID"] = 266798 }),	-- Unknown Name [NYI]
 			i(242980, {["sourceID"] = 291747 }),	-- Unknown Name [NYI]
 			i(242982, {["sourceID"] = 291748 }),	-- Unknown Name [NYI]
@@ -5553,6 +5554,34 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(249789, {["sourceID"] = 296323 }),	-- Unknown Name [NYI]
 			i(253282, {["sourceID"] = 298780 }),	-- Unknown Name [NYI]
 			i(254755, {["sourceID"] = 299353 }),	-- Unknown Name [NYI]
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			i(233067, {["sourceID"] = 230711 }),	-- Unknown Name [NYI]
+			i(240847, {["sourceID"] = 289394 }),	-- Unknown Name [NYI]
+			i(242548, {["sourceID"] = 290289 }),	-- Unknown Name [NYI]
+			i(244545, {["sourceID"] = 292276 }),	-- Unknown Name [NYI]
+			i(247219, {["sourceID"] = 294117 }),	-- Unknown Name [NYI]
+			i(247697, {["sourceID"] = 295218 }),	-- Unknown Name [NYI]
+			i(248667, {["sourceID"] = 295620 }),	-- Unknown Name [NYI]
+			i(248668, {["sourceID"] = 295621 }),	-- Unknown Name [NYI]
+			i(248669, {["sourceID"] = 295622 }),	-- Unknown Name [NYI]
+			i(248670, {["sourceID"] = 295623 }),	-- Unknown Name [NYI]
+			i(248671, {["sourceID"] = 295624 }),	-- Unknown Name [NYI]
+			i(248672, {["sourceID"] = 295625 }),	-- Unknown Name [NYI]
+			i(248673, {["sourceID"] = 295626 }),	-- Unknown Name [NYI]
+			i(248674, {["sourceID"] = 295627 }),	-- Unknown Name [NYI]
+			i(248675, {["sourceID"] = 295628 }),	-- Unknown Name [NYI]
+			i(248676, {["sourceID"] = 295629 }),	-- Unknown Name [NYI]
+			i(248677, {["sourceID"] = 295630 }),	-- Unknown Name [NYI]
+			i(248678, {["sourceID"] = 295631 }),	-- Unknown Name [NYI]
+			i(248679, {["sourceID"] = 295632 }),	-- Unknown Name [NYI]
+			i(248952, {["sourceID"] = 295728 }),	-- Unknown Name [NYI]
+			i(249825, {["sourceID"] = 296324 }),	-- Unknown Name [NYI]
+			i(252260, {["sourceID"] = 298469 }),	-- Unknown Name [NYI]
+			i(252989, {["sourceID"] = 298571 }),	-- Unknown Name [NYI]
+			i(257326, {["sourceID"] = 301157 }),	-- Unknown Name [NYI]
 		})),
 	}),
 }));

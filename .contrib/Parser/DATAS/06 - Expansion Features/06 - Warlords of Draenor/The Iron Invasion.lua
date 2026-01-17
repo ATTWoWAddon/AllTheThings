@@ -472,7 +472,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Toothsmash the Annihilator slain
 							["provider"] = { "n", 82451 },	-- Toothsmash the Annihilator
-							["coord"] = { 44, 35.4, BLASTED_LANDS },
+							["coord"] = { 44.0, 35.4, BLASTED_LANDS },
 						}),
 						i(118774),	-- Armswake Greatcloak
 						i(118773),	-- Butcher's Wrap

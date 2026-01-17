@@ -631,19 +631,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Pocket-Nuke Armed at Sofera's Naze
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 55, 38, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 55.0, 38.0, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- Pocket-Nuke Armed at Corrahn's Dagger
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 49, 46, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 49.0, 46.0, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- Pocket-Nuke Armed at the Headland
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 43, 48, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 43.0, 48.0, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(4, {	-- Pocket-Nuke Armed at Gavin's Naze
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
-							["coord"] = { 39, 48, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 39.0, 48.0, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65721, {	-- Corrahn's Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Magistrate Burnside slain
 							["provider"] = { "n", 47790 },	-- Magistrate Burnside
-							["coord"] = { 36.6, 58, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 36.6, 58.0, HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -1459,7 +1459,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["coord"] = { 74.4, 12, IRONFORGE },
+					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1577,21 +1577,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1768 },	-- Flame of Azel
 							},
-							["coord"] = { 46, 32, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 46.0, 32.0, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- Flame of Veraz charged
 							["providers"] = {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1769 },	-- Flame of Veraz
 							},
-							["coord"] = { 46, 32, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 46.0, 32.0, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(3, {	-- Flame of Uzel charged
 							["providers"] = {
 								{ "i", 3710 },	-- Rod of Helcular
 								{ "o", 1770 },	-- Flame of Uzel
 							},
-							["coord"] = { 37, 68, ALTERAC_MOUNTAINS },
+							["coord"] = { 37.0, 68.0, ALTERAC_MOUNTAINS },
 						}),
 					},
 				}),
@@ -1836,7 +1836,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 3502 },	-- Mudsnout Blossoms
 								{ "o", 1723 },	-- Mudsnout Blossom
 							},
-							["coord"] = { 58, 74.8, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 58.0, 74.8, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65717, {	-- Kingslayer's Breastplate
 							["timeline"] = { ADDED_4_0_3 },
@@ -1905,7 +1905,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 50.4, 57, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -2984,7 +2984,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 				})),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
 					["altQuests"] = { 27746 },	-- Empire of Dirt
-					["qg"] = 44640,	-- High Warlord Cromush
+					["qgs"] = {
+						44640,	-- High Warlord Cromush
+						45631,	-- High Warlord Cromush
+						46125,	-- High Warlord Cromush
+						-- #if AFTER SL
+						176567,	-- High Warlord Cromush
+						-- #endif
+					},
 					["coords"] = {
 						{ 57.3, 10.1, SILVERPINE_FOREST },	-- Forsaken High Command
 						{ 44.8, 40.7, SILVERPINE_FOREST },	-- The Sepulcher

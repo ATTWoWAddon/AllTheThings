@@ -4,10 +4,10 @@ name: Release
 
 # Controls when the action will run.
 on:
-  # Package alpha version 
+  # Package alpha version
   schedule:
-    - cron: '0 6 * * *'   #at 06:00 UTC everyday
-    - cron: '0 16 * * 0'  #at 16:00 UTC every sunday
+    - cron: '0 6 * * *'   # at 06:00 UTC everyday
+    - cron: '0 16 * * 0'  # at 16:00 UTC every sunday
   # Triggers the workflow on tag events
   push:
     tags: '*'
@@ -16,8 +16,43 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Check for changes since last tag
+  check-changes:
+    runs-on: ubuntu-slim
+    outputs:
+      changes_detected: ${{ steps.check_changes.outputs.changes_detected }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+           fetch-depth: 300
+           fetch-tags: true
+           ref: ${{ github.ref }}
+
+      - name: Check for changes since last tag
+        id: check_changes
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            LAST_TAG=$(git describe --tags --abbrev=0)
+            echo "Last tag: $LAST_TAG"
+            CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
+            if [ -z "$CHANGED_FILES" ]; then
+              echo "No changes detected since last tag."
+              echo "changes_detected=false" >> $GITHUB_OUTPUT
+            else
+              echo "Changes detected since last tag:"
+              echo "$CHANGED_FILES"
+              echo "changes_detected=true" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "Triggered by ${{ github.event_name }}, always proceed."
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          fi
+
   build-windows:
     runs-on: windows-latest
+    needs: check-changes
+    if: needs.check-changes.outputs.changes_detected == 'true'
 
     steps:
       - uses: actions/checkout@v6
@@ -71,7 +106,7 @@ jobs:
           "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
             name: db-output  # Artifact name
             path: db/  # File path to upload
@@ -89,7 +124,7 @@ jobs:
            ref: ${{ github.ref }}
 
       - name: Download artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: db-output  # Name of the artifact to download
           path: db

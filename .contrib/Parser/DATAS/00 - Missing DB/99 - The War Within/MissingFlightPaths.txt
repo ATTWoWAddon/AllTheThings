@@ -1,13 +1,3 @@
-11.2.0.61476
-fp(3026),	-- Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
-fp(3111),	-- Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC
-11.2.7.63642
-fp(3175),	-- Quest Path 11142: 11.2.7 Catch Up - TWW - Q2 - Dornegal to Freywold (KRB)
-fp(3176),	-- Quest Path 11144: 11.2.7 Catch Up - TWW - Q2 - Meadery to Coreway (KRB)
-fp(3177),	-- Quest Path 11146: 11.2.7 Catch Up - TWW - Q2 - Coreway to Ringing Deeps (KRB)
-fp(3178),	-- Quest Path 11147: 11.2.7 Catch Up - TWW - Q3 - Weaver to City (KRB)
-fp(3179),	-- Quest Path 11151: 11.2.7 Catch Up - TWW - Q3 - Priory to Foundation Hall (KRB)
-fp(3204),	-- Quest Path 11298: 11.2.7 Catch Up -  TWW -  Q2 -  Cavern to Awakening Machine (KRB)
 12.0.0.63534
 fp(3093),	-- Quest Path 10497: 12.0 Z3 - Legends - Shrine 01 - Exit Path - (LWB)
 fp(3101),	-- Quest Path 10502: 12.0 Z3 - Legends - Shrine 02 - Exit Path - (LWB)
@@ -56,3 +46,8 @@ fp(3228),	-- Quest Path 11378: 12.0 Z1 - Eversong - Teleporters - Goldenmist - G
 fp(3229),	-- Quest Path 11379: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Down - SJC
 fp(3230),	-- Quest Path 11380: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Up - SJC
 fp(3231),	-- Quest Path 11381: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Down - SJC
+12.0.1.64889
+fp(3232),	-- Quest Path 10760: 12.0 Z1 - Local Story 09 - How to Train Your Protegee Q2c - Teleport to Top - Missile Teleport Curve Up (RRN)
+fp(3233),	-- Quest Path 10761: 12.0 Z1 - Local Story 02c - How to Train Your Protegee Q02c - Teleport Down - Missle Teleport Curve Down (RRN)
+fp(3234),	-- Quest Path 10393: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport to Top - Missile Teleport Curve Up (RRN)
+fp(3235),	-- Quest Path 10398: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport Down - Missle Teleport Curve Down (RRN)

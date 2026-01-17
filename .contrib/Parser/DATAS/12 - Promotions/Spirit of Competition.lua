@@ -17,7 +17,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "竞争之魂",
 		-- TODO: tw = "",
 		-- #endif
 	},
@@ -31,7 +31,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
 		-- TODO: tw = "",
 	},
 });
@@ -57,7 +57,7 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 			end
 		end]],
 	}),
-	i(37298, {	-- Essence of Competition (PET!) (China Only)
+	cnONLY(i(37298, {	-- Essence of Competition (PET!) (China Only)
 		["description"] = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
-	}),
+	})),
 })));

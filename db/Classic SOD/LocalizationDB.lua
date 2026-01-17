@@ -127,7 +127,9 @@ L.BREADCRUMBS = "Breadcrumbs";
 L.BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
 L.CACHED_RECIPES_1 = "Cached ";
 L.CACHED_RECIPES_2 = " known recipes!";
+L.CAMPSITE_DESC = "Click this button to select a random campsite based on what you're missing.";
 L.CAMPSITE_ID = "Campsite ID";
+L.CAMPSITES = WARBAND_SCENES;
 L.CAMPSITES_CHECKBOX = WARBAND_SCENES;
 L.CAMPSITES_CHECKBOX_TOOLTIP = "Enable this option to track warband campsite completion.";
 L.CATALYST = "Catalyst";
@@ -219,8 +221,10 @@ L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your c
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+L.DECOR = BINDING_TAG_DECOR;
 L.DECOR_CHECKBOX = CATALOG_SHOP_TYPE_DECOR;
 L.DECOR_CHECKBOX_TOOLTIP = "Enable this option to track warband decor completion.";
+L.DECOR_DESC = "Click this button to select a random decor based on what you're missing.";
 L.DECOR_ID = "Decor ID";
 L.DELETE_CHARACTER = "Right Click to Delete this Character";
 L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
@@ -314,12 +318,15 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Enable this setting if you want to 
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
 L.FILTERS_PAGE = "Filters";
+L.FLIGHT_PATH_DESC = "Click this button to select a random flight path based on what you're missing.";
 L.FLIGHT_PATH_ID = "Flight Path ID";
 L.FLIGHT_PATHS = "Flight Paths";
 L.FLIGHT_PATHS_CHECKBOX = "Flight Paths";
 L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
 L.FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
+L.FOLLOWER_DESC = "Click this button to select a random follower based on what you're missing.";
 L.FOLLOWER_ID = "Follower ID";
+L.FOLLOWERS = GARRISON_FOLLOWERS;
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Followers & Companions";
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by " .. SHIFT_KEY_TEXT .. " clicking the header for this to be detected.";
@@ -507,6 +514,8 @@ L.OBJECT_TYPE = "Object Type";
 L.OBJECTIVES = "Objectives";
 L.ONLY_NOT_TRASH = "Filter Trash Items";
 L.ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.";
+L.ONLY_OBTAINABLE_CHECKBOX = "Only Obtainable";
+L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "Enable this option if you want to see only obtainable shared appearances.";
 L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
 L.ONLY_RWP = "Only RWP";
@@ -590,7 +599,7 @@ L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 L.QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
 L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
 L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
+L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
 L.QUESTS_CHECKBOX = QUESTS_LABEL;
 L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
@@ -724,7 +733,7 @@ L.SHOW_RECIPES_CHECKBOX = "Show Recipes";
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
 L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
-L.SHOW_SKYRIDING_CHECKBOX = "Skyriding";
+L.SHOW_SKYRIDING_CHECKBOX = "Dragonriding";
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Skyriding within the game.";
 L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by " .. SHIFT_KEY_TEXT .. " clicking on an ATT window.";
@@ -963,6 +972,7 @@ _.HeaderConstants = {
 	QUESTS = -45,
 	RARES = -46,
 	REWARDS = -47,
+	SEASON_OF_DISCOVERY = -632,
 	SHARED_APPEARANCES = -341,
 	SHOULDER = -98,
 	SPECIAL = -55,
@@ -1106,6 +1116,22 @@ localize(L.HEADER_NAMES, {
 	[-629] = "Bless the Fallen",
 	[-630] = "Burn the Fallen Knight",
 	[-631] = "Speak to Harold",
+	[-632] = "Season of Discovery",
+	[-633] = "Comprehension",
+	[-634] = "Tier 1",
+	[-635] = "Tier 2",
+	[-636] = "Tier 3",
+	[-637] = "Monster Hunting",
+	[-638] = "Nightmare Incursions",
+	[-639] = "Rune Engraving",
+	[-640] = "Soul Brokers",
+	[-641] = "Squire Training",
+	[-642] = "Inspiration Rank One",
+	[-643] = "Inspiration Rank Two",
+	[-644] = "Tier-Set Shoulder Enchants",
+	[-645] = "Waylaid Supplies",
+	[-646] = "Crafted",
+	[-647] = "Gathering",
 	[-688] = "Blood Moon",
 	[-697] = "Zul'Gurub Hakkar Hardmode",
 	[-698] = TRANSMOG_SOURCE_4,
@@ -1140,6 +1166,12 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-615] = "1 of 3 Operas will be randomly selected every day.",
 	[-616] = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 	[-627] = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
+	[-632] = "This Season brings an initial level cap of 25 and a new level-25 endgame, including a 10-player Blackfathom Deeps raid with new mechanics, new and reimagined bosses to challenge player tactics and strategies, and fresh rewards.",
+	[-638] = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
+	[-639] = "Rune Engraving is a new class system for Season of Discovery. It allows each class to tailor their gameplay experience by unlocking new unique abilities!",
+	[-641] = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
+	[-642] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
+	[-645] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
 	[-688] = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
 });
 localize(L.HEADER_LORE, {
@@ -1271,6 +1303,21 @@ localize(L.HEADER_ICONS, {
 	[-629] = 131038,
 	[-630] = 131038,
 	[-631] = 131038,
+	[-632] = 134269,
+	[-633] = 135933,
+	[-634] = 134937,
+	[-635] = 237449,
+	[-636] = 237446,
+	[-637] = 131013,
+	[-638] = 134108,
+	[-639] = 136244,
+	[-640] = 136169,
+	[-641] = 237377,
+	[-642] = 131013,
+	[-643] = 131013,
+	[-645] = 132763,
+	[-646] = 131034,
+	[-647] = 131025,
 	[-688] = 237513,
 	[-697] = 237211,
 	[-698] = _.asset("category_worlddrops"),
@@ -1296,60 +1343,57 @@ localize(L.EVENT_REMAPPING, {
 });
 
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(17, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=6,["year"]=2024}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
-});
-_.Modules.Events.SetEventInformation(16, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=6,["year"]=2024},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=6,["year"]=2024}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=7,["year"]=2025},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=7,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026})
-});
-_.Modules.Events.SetEventInformation(14, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=2,["year"]=2024},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=5,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027})
-});
 _.Modules.Events.SetEventInformation(133899, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=5,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=1,["year"]=2028})
 });
 _.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(15, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=4,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=5,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=5,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=6,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=7,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=7,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=7,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(11, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=6,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=7,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=2,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(18, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=1,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=3,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=3,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=4,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=4,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=4,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=4,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=5,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=5,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(9, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=3,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=5,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=5,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=7,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=7,["year"]=2027})
+});
+_.Modules.Events.SetEventInformation(17, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=2,["year"]=2027})
+});
+_.Modules.Events.SetEventInformation(16, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=7,["year"]=2025},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=7,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=2,["year"]=2027},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=2,["year"]=2027})
+});
+_.Modules.Events.SetEventInformation(14, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
 });
 _.Modules.Events.SetEventInformation(13, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=1,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=15,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=29,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=5,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
@@ -1373,7 +1417,10 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=19,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=30,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=30,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=21,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=28,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=4,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=11,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=18,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
 });
 
 -- Filter Database Module
@@ -2499,7 +2546,27 @@ local ObjectNames = {
 	[424076] = "Quadrangulation Beacon 003",
 	[424077] = "Quadrangulation Beacon 004",
 	[433596] = "Spellbound War Chest",
+	[439557] = "Nightmare Moss",
+	[439558] = "Cold Iron Deposit",
+	[439627] = "Dreamroot",
+	[439628] = "Fool's Gold Vein",
+	[439762] = "Star Lotus",
+	[439778] = "Starsilver Vein",
+	[439810] = "Moonroot",
+	[439815] = "Greater Moonstone Formation",
+	[441113] = "Ogre Magi Text",
+	[441114] = "Mysterious Box",
+	[441119] = "Unhatched Green Dragon Egg",
+	[441124] = "Dream-Touched Dragon Egg",
+	[441128] = "Vibrating Crate",
+	[441129] = "Azsharan Prophecy",
+	[441133] = "Star-Touched Dragon Egg",
+	[441140] = "Humming Box",
+	[441141] = "Dreampearl",
 	[441222] = "Grave Mound",
+	[441310] = "Moonglow Dragon Egg",
+	[441312] = "Mad Keeper's Notes",
+	[441314] = "Harpy Screed",
 	[441848] = "Small Burrow",
 	[441946] = "Shrine of the Moon",
 	[441947] = "Shrine of the Beast",
@@ -3711,7 +3778,27 @@ local ObjectModels = {
 	[424076] = 197768,
 	[424077] = 197768,
 	[433596] = 196987,
+	[439557] = 219463,
+	[439558] = 219532,
+	[439627] = 219469,
+	[439628] = 219524,
+	[439762] = 219483,
+	[439778] = 219569,
+	[439810] = 219486,
+	[439815] = 190809,
+	[441113] = 198021,
+	[441114] = 196976,
+	[441119] = 200964,
+	[441124] = 200964,
+	[441128] = 197150,
+	[441129] = 198454,
+	[441133] = 200964,
+	[441140] = 196989,
+	[441141] = 198719,
 	[441222] = 219463,
+	[441310] = 200964,
+	[441312] = 198036,
+	[441314] = 201113,
 	[441848] = 189528,
 	[441946] = 201267,
 	[441947] = 201267,
@@ -4148,7 +4235,7 @@ local achievements = {
 	[546] = {
 		name = "Safe Deposit",
 		description = "Buy 7 additional bank slots.",
-		icon = 132594,
+		icon = 0,
 		category = 92,
 		criteria = {2002},
 	},
@@ -4471,7 +4558,7 @@ local achievements = {
 		category = 169,
 		operator = 8,
 		amount = 1,
-		criteria = {-69,-70,-71,-72,-73,-74,-75,-76,-77,-78,-79},
+		criteria = {-68,-69,-70,-71,-72,-73,-74,-75,-76,-77,-78},
 	},
 	[732] = {
 		name = "Professional Artisan",
@@ -4480,7 +4567,7 @@ local achievements = {
 		category = 169,
 		operator = 8,
 		amount = 1,
-		criteria = {-80,-81,-82,-83,-84,-85,-86,-87,-88,-89,-90},
+		criteria = {-79,-80,-81,-82,-83,-84,-85,-86,-87,-88,-89},
 	},
 	[736] = {
 		name = "Explore Mulgore",
@@ -4753,14 +4840,14 @@ local achievements = {
 		description = "Get 50000 honorable kills.",
 		icon = 236660,
 		category = 95,
-		criteria = {-124},
+		criteria = {-123},
 	},
 	[870] = {
 		name = "100000 Honorable Kills",
 		description = "Get 100000 honorable kills.",
 		icon = 236661,
 		category = 95,
-		criteria = {-125},
+		criteria = {-124},
 	},
 	[871] = {
 		name = "Avast Ye, Admiral!",
@@ -4801,7 +4888,8 @@ local achievements = {
 		description = "Learn the apprentice riding skill.",
 		icon = 132261,
 		category = 92,
-		criteria = {-128,-129,-130,-131,-132,-133,-134,-135,-136},
+		operator = 8,
+		criteria = {-127,-128,-129,-130,-131,-132,-133,-134,-135},
 	},
 	[907] = {
 		name = "The Justicar",
@@ -4857,14 +4945,14 @@ local achievements = {
 		description = "Obtain a companion pet.",
 		icon = 132599,
 		category = 92,
-		criteria = {-140},
+		criteria = {-139},
 	},
 	[1248] = {
 		name = "Plethora of Pets",
 		description = "Collect 25 unique companion pets.",
 		icon = 132599,
 		category = 92,
-		criteria = {-154},
+		criteria = {-153},
 	},
 	[1307] = {
 		name = "Upper Blackrock Spire",
@@ -4916,21 +5004,21 @@ local achievements = {
 		description = "Obtain 10 mounts.",
 		icon = 132254,
 		category = 92,
-		criteria = {-175},
+		criteria = {-174},
 	},
 	[2142] = {
 		name = "Filling Up The Barn",
 		description = "Obtain 25 mounts.",
 		icon = 132259,
 		category = 92,
-		criteria = {-176},
+		criteria = {-175},
 	},
 	[2336] = {
 		name = "Insane in the Membrane",
 		description = "Raise your reputation to Honored with the Bloodsail Buccaneers, and Exalted with Booty Bay, Everlook, Gadgetzan, Ratchet, Darkmoon Faire, Ravenholdt, and Shen'dralar.",
 		icon = 236206,
 		category = 81,
-		criteria = {8818,8821,8822,8823,8824,8825,8820,8819},
+		criteria = {58452,58453,58454,8824,8825,58455,58456,8823},
 	},
 	[2357] = {
 		name = "Dreadsteed of Xoroth",
@@ -5085,221 +5173,221 @@ local achievementCategories = {
 L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories;
 
 local achievementCriterias = {
-	[-176] = {
+	[-175] = {
 		name = "Obtain 25 mounts",
 		amount = 25,
 		type = 75,
 		asset = 777,
 	},
-	[-175] = {
+	[-174] = {
 		name = "Obtain 10 mounts",
 		amount = 10,
 		type = 75,
 		asset = 777,
 	},
-	[-154] = {
+	[-153] = {
 		name = "Obtain 25 companion pets",
 		amount = 25,
 		type = 75,
 		asset = 778,
 	},
-	[-140] = {
+	[-139] = {
 		name = "Obtain a companion pet",
 		amount = 1,
 		type = 75,
 		asset = 778,
 	},
-	[-136] = {
+	[-135] = {
 		name = "Apprentice Riding",
 		amount = 1,
 		type = 40,
 		asset = 762,
 	},
-	[-135] = {
+	[-134] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 149,
 	},
-	[-134] = {
+	[-133] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 554,
 	},
-	[-133] = {
+	[-132] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 150,
 	},
-	[-132] = {
+	[-131] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 533,
 	},
-	[-131] = {
+	[-130] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 152,
 	},
-	[-130] = {
+	[-129] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 553,
 	},
-	[-129] = {
+	[-128] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 713,
 	},
-	[-128] = {
+	[-127] = {
 		name = nil,
 		amount = 1,
 		type = 40,
 		asset = 148,
 	},
-	[-125] = {
+	[-124] = {
 		name = "Get 100000 honorable kills",
 		amount = 100000,
 		type = 113,
 	},
-	[-124] = {
+	[-123] = {
 		name = "Get 50000 honorable kills",
 		amount = 50000,
 		type = 113,
 	},
-	[-90] = {
+	[-89] = {
 		name = "Tailoring",
 		amount = 4,
 		type = 40,
 		asset = 197,
 	},
-	[-89] = {
+	[-88] = {
 		name = "Engineering",
 		amount = 4,
 		type = 40,
 		asset = 202,
 	},
-	[-88] = {
+	[-87] = {
 		name = "Enchanting",
 		amount = 4,
 		type = 40,
 		asset = 333,
 	},
-	[-87] = {
+	[-86] = {
 		name = "Mining",
 		amount = 4,
 		type = 40,
 		asset = 186,
 	},
-	[-86] = {
+	[-85] = {
 		name = "Inscription",
 		amount = 4,
 		type = 40,
 		asset = 773,
 	},
-	[-85] = {
+	[-84] = {
 		name = "Jewelcrafting",
 		amount = 4,
 		type = 40,
 		asset = 755,
 	},
-	[-84] = {
+	[-83] = {
 		name = "Skinning",
 		amount = 4,
 		type = 40,
 		asset = 393,
 	},
-	[-83] = {
+	[-82] = {
 		name = "Leatherworking",
 		amount = 4,
 		type = 40,
 		asset = 165,
 	},
-	[-82] = {
+	[-81] = {
 		name = "Herbalism",
 		amount = 4,
 		type = 40,
 		asset = 182,
 	},
-	[-81] = {
+	[-80] = {
 		name = "Blacksmithing",
 		amount = 4,
 		type = 40,
 		asset = 164,
 	},
-	[-80] = {
-		name = "Alchemy",
-		amount = 4,
-		type = 40,
-		asset = 171,
-	},
 	[-79] = {
 		name = "Alchemy",
-		amount = 3,
+		amount = 4,
 		type = 40,
 		asset = 171,
 	},
 	[-78] = {
+		name = "Alchemy",
+		amount = 3,
+		type = 40,
+		asset = 171,
+	},
+	[-77] = {
 		name = "Blacksmithing",
 		amount = 3,
 		type = 40,
 		asset = 164,
 	},
-	[-77] = {
+	[-76] = {
 		name = "Leatherworking",
 		amount = 3,
 		type = 40,
 		asset = 165,
 	},
-	[-76] = {
+	[-75] = {
 		name = "Mining",
 		amount = 3,
 		type = 40,
 		asset = 186,
 	},
-	[-75] = {
+	[-74] = {
 		name = "Enchanting",
 		amount = 3,
 		type = 40,
 		asset = 333,
 	},
-	[-74] = {
+	[-73] = {
 		name = "Tailoring",
 		amount = 3,
 		type = 40,
 		asset = 197,
 	},
-	[-73] = {
+	[-72] = {
 		name = "Skinning",
 		amount = 3,
 		type = 40,
 		asset = 393,
 	},
-	[-72] = {
+	[-71] = {
 		name = "Jewelcrafting",
 		amount = 3,
 		type = 40,
 		asset = 755,
 	},
-	[-71] = {
+	[-70] = {
 		name = "Inscription",
 		amount = 3,
 		type = 40,
 		asset = 773,
 	},
-	[-70] = {
+	[-69] = {
 		name = "Herbalism",
 		amount = 3,
 		type = 40,
 		asset = 182,
 	},
-	[-69] = {
+	[-68] = {
 		name = "Engineering",
 		amount = 3,
 		type = 40,
@@ -8777,8 +8865,8 @@ local achievementCriterias = {
 		asset = 713,
 	},
 	[2002] = {
-		name = "Purchase 7 bank slots",
-		amount = 7,
+		name = "Purchase 6 bank slots",
+		amount = 6,
 		type = 45,
 	},
 	[2006] = {
@@ -10366,50 +10454,20 @@ local achievementCriterias = {
 		type = 43,
 		asset = 1557,
 	},
-	[8818] = {
-		name = "Honored with Bloodsail Buccaneers",
-		amount = 9000,
-		type = 46,
-		asset = 87,
-	},
-	[8819] = {
-		name = "Exalted with Booty Bay",
-		amount = 42000,
-		type = 46,
-		asset = 21,
-	},
-	[8820] = {
-		name = "Exalted with Everlook",
-		amount = 42000,
-		type = 46,
-		asset = 577,
-	},
-	[8821] = {
-		name = "Exalted with Gadgetzan",
-		amount = 42000,
-		type = 46,
-		asset = 369,
-	},
-	[8822] = {
-		name = "Exalted with Ratchet",
-		amount = 42000,
-		type = 46,
-		asset = 470,
-	},
 	[8823] = {
-		name = "Exalted with Darkmoon Faire",
+		name = "[DNT] Exalted with Darkmoon Faire",
 		amount = 42000,
 		type = 46,
 		asset = 909,
 	},
 	[8824] = {
-		name = "Exalted with Ravenholdt",
+		name = "[DNT] Exalted with Ravenholdt",
 		amount = 42000,
 		type = 46,
 		asset = 349,
 	},
 	[8825] = {
-		name = "Exalted with Shen'dralar",
+		name = "[DNT] Exalted with Shen'dralar",
 		amount = 42000,
 		type = 46,
 		asset = 809,
@@ -10608,6 +10666,31 @@ local achievementCriterias = {
 		name = "Onyxia",
 		type = 0,
 		asset = 10184,
+	},
+	[58452] = {
+		name = "[DNT] Exalted with Gadgetzan",
+		type = 8,
+		asset = 17522,
+	},
+	[58453] = {
+		name = "[DNT] Exalted with Ratchet",
+		type = 8,
+		asset = 17521,
+	},
+	[58454] = {
+		name = "[DNT] Exalted with Booty Bay",
+		type = 8,
+		asset = 17518,
+	},
+	[58455] = {
+		name = "[DNT] Exalted with Everlook",
+		type = 8,
+		asset = 17520,
+	},
+	[58456] = {
+		name = "[DNT] Honored with Bloodsail Buccaneers",
+		type = 8,
+		asset = 17523,
 	},
 };
 L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
@@ -11518,6 +11601,9 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Bibliothek",
 	[-363] = "Waffenkammer",
 	[-364] = "Kathedrale",
+	[-365] = "Haupttor",
+	[-366] = "Dienstboteneingang",
+	[-367] = "Verteidiger der Atal'ai",
 	[-483] = "Das Szepter der Sandstürme",
 	[-559] = "Kinderwoche",
 	[-574] = "Winterhauchfest",
@@ -11530,6 +11616,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Saisonfisch: Sommerbarsch",
 	[-587] = "Saisonfisch: Winterkalmar",
 	[-588] = "Anglerwettbewerb im Schlingendorntal",
+	[-611] = "Adel der Silithiden",
 	[-613] = "Alptraumhain",
 	[-614] = "Lehrling",
 	[-615] = "Oper der Verwünschung",
@@ -11540,6 +11627,16 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Sprich mit N'ora",
 	[-626] = "Sprich mit Bruder Romulus",
 	[-627] = "Ausbruch des Schwarzfels",
+	[-632] = "Saison der Entdeckungen",
+	[-633] = "Verständnis",
+	[-634] = "Stufe 1",
+	[-635] = "Stufe 2",
+	[-636] = "Stufe 3",
+	[-637] = "Monsterjagd",
+	[-638] = "Alptraumeinfälle",
+	[-639] = "Runenschnitzen",
+	[-640] = "Seelenvermittler",
+	[-645] = "Abgefangene Vorräte",
 	[-688] = "Blutmond",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -11550,6 +11647,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Die Gegenstände in dieser Liste teilen ihre Vorlage mit dem oben genannten Gegenstand. Im Modus für Einzigartige Vorlagen kann diese Liste Ihnen helfen zu verstehen, warum ein bestimmter Gegenstand als gesammelt markiert ist, oder ob nicht.",
 	[-342] = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
 	[-343] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
+	[-632] = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Tiefschwarze Grotte-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
+	[-639] = "Runengravur ist ein neues System, das kürzlich für Season of Discovery angekündigt wurde. Es ermöglicht jeder Klasse, ihr Spielerlebnis individuell anzupassen, indem sie neue einzigartige Fähigkeiten freischaltet!",
+	[-645] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Abgefangene Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
@@ -12416,7 +12516,27 @@ localize(ObjectNames, {
 	[424074] = "Quadrangulationssignalgeber 001",
 	[424075] = "Quadrangulationssignalgeber 002",
 	[433596] = "Verzauberte Kriegstruhe",
+	[439557] = "Alptraummoos",
+	[439558] = "Kalteisenvorkommen",
+	[439627] = "Traumwurzel",
+	[439628] = "Katzengoldvorkommen",
+	[439762] = "Sternenlotus",
+	[439778] = "Sternensilberader",
+	[439810] = "Mondwurzel",
+	[439815] = "Große Mondsteinformation",
+	[441113] = "Ogermagiertext",
+	[441114] = "Geheimnisvolle Kiste",
+	[441119] = "Ungeschlüpftes grünes Drachenei",
+	[441124] = "Traumberührtes Drachenei",
+	[441128] = "Vibrierende Kiste",
+	[441129] = "Azsharische Prophezeiung",
+	[441133] = "Sternenberührtes Drachenei",
+	[441140] = "Summender Kasten",
+	[441141] = "Traumperle",
 	[441222] = "Grabhügel",
+	[441310] = "Mondscheindrachenei",
+	[441312] = "Notizen des wahnsinnigen Bewahrers",
+	[441314] = "Harpyienschrift",
 	[441848] = "Kleiner Bau",
 	[441946] = "Schrein des Mondes",
 	[441947] = "Schrein des Tieres",
@@ -12787,35 +12907,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Erhaltet 25 Reittiere",
-	[-175] = "Erhaltet 10 Reittiere",
-	[-154] = "Erhaltet 25 Haustiere",
-	[-140] = "Erlangt ein Haustier.",
-	[-136] = "Unerfahrenes Reiten",
-	[-125] = "Erringt 100.000 ehrenhafte Siege",
-	[-124] = "Erringt 50.000 ehrenhafte Siege",
-	[-90] = "Schneiderei",
-	[-89] = "Ingenieurskunst",
-	[-88] = "Verzauberkunst",
-	[-87] = "Bergbau",
-	[-86] = "Inschriftenkunde",
-	[-85] = "Juwelierskunst",
-	[-84] = "Kürschnerei",
-	[-83] = "Lederverarbeitung",
-	[-82] = "Kräuterkunde",
-	[-81] = "Schmiedekunst",
-	[-80] = "Alchemie",
+	[-175] = "Erhaltet 25 Reittiere",
+	[-174] = "Erhaltet 10 Reittiere",
+	[-153] = "Erhaltet 25 Haustiere",
+	[-139] = "Erlangt ein Haustier.",
+	[-135] = "Unerfahrenes Reiten",
+	[-124] = "Erringt 100.000 ehrenhafte Siege",
+	[-123] = "Erringt 50.000 ehrenhafte Siege",
+	[-89] = "Schneiderei",
+	[-88] = "Ingenieurskunst",
+	[-87] = "Verzauberkunst",
+	[-86] = "Bergbau",
+	[-85] = "Inschriftenkunde",
+	[-84] = "Juwelierskunst",
+	[-83] = "Kürschnerei",
+	[-82] = "Lederverarbeitung",
+	[-81] = "Kräuterkunde",
+	[-80] = "Schmiedekunst",
 	[-79] = "Alchemie",
-	[-78] = "Schmiedekunst",
-	[-77] = "Lederverarbeitung",
-	[-76] = "Bergbau",
-	[-75] = "Verzauberkunst",
-	[-74] = "Schneiderei",
-	[-73] = "Kürschnerei",
-	[-72] = "Juwelierskunst",
-	[-71] = "Inschriftenkunde",
-	[-70] = "Kräuterkunde",
-	[-69] = "Ingenieurskunst",
+	[-78] = "Alchemie",
+	[-77] = "Schmiedekunst",
+	[-76] = "Lederverarbeitung",
+	[-75] = "Bergbau",
+	[-74] = "Verzauberkunst",
+	[-73] = "Schneiderei",
+	[-72] = "Kürschnerei",
+	[-71] = "Juwelierskunst",
+	[-70] = "Inschriftenkunde",
+	[-69] = "Kräuterkunde",
+	[-68] = "Ingenieurskunst",
 	[-66] = "10 Fraktionen ehrfürchtig",
 	[-65] = "5 Fraktionen ehrfürchtig",
 	[-64] = "Erreicht bei einer Fraktion ehrfürchtigen Ruf",
@@ -13802,14 +13922,9 @@ for key,value in pairs({
 	[8740] = "Insigne der Horde",
 	[8741] = "Insigne der Allianz",
 	[8749] = "Ruinen der Scharlachroten Enklave",
-	[8818] = "Wohlwollend bei den Blutsegelbukanieren",
-	[8819] = "Ehrfürchtig in der Beutebucht",
-	[8820] = "Ehrfürchtig in der Ewigen Warte",
-	[8821] = "Ehrfürchtig in Gadgetzan",
-	[8822] = "Ehrfürchtig in Ratschet",
-	[8823] = "Ehrfürchtig auf dem Dunkelmond-Jahrmarkt",
-	[8824] = "Ehrfürchtig in Rabenholdt",
-	[8825] = "Ehrfürchtig bei den Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essenz des Feuerfürsten",
 	[8894] = "Brustplatte des Eroberers",
 	[8895] = "Brustplatte des Rächers",
@@ -13843,6 +13958,11 @@ for key,value in pairs({
 	[13371] = "Medaillon der Allianz",
 	[17023] = "Ehrfürchtig bei den Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -14190,7 +14310,9 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Librairie",
 	[-363] = "Armurerie",
 	[-364] = "Cathédrale",
-	[-367] = "Défenseurs Atal'ai",
+	[-365] = "Grande porte",
+	[-366] = "Entrée de service",
+	[-367] = "Défenseurs atal’ai",
 	[-481] = "Effort de guerre d’Ahn'Qiraj",
 	[-483] = "Le Sceptre des Sables changeants",
 	[-521] = "Edition Collector",
@@ -14205,6 +14327,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Poisson de saison : bar d'été",
 	[-587] = "Poisson de saison : calmar d'hiver",
 	[-588] = "Concours de pêche de Strangleronce",
+	[-611] = "Famille royale silithide",
 	[-613] = "Bosquet du cauchemar",
 	[-614] = "Apprenti",
 	[-615] = "Opéra de malédiction",
@@ -14215,6 +14338,16 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Parlez à N'ora",
 	[-626] = "Parlez à Frère Romulus",
 	[-627] = "Éruption de Blackrock",
+	[-632] = "Saison de Découverte",
+	[-633] = "Compréhension",
+	[-634] = "Étage 1",
+	[-635] = "Étage 2",
+	[-636] = "Étage 3",
+	[-637] = "Chasse aux Monstres",
+	[-638] = "Incursions de cauchemar",
+	[-639] = "Gravure",
+	[-640] = "Courtiers D'âmes",
+	[-645] = "Fournitures égarées",
 	[-688] = "Lune de sang",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -14225,6 +14358,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Les éléments de cette liste sont des apparences partagées pour l'élément ci-dessus. En mode Apparence unique, cette liste peut vous aider à comprendre pourquoi ou pourquoi un élément spécifique serait marqué Collecté.",
 	[-342] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 	[-343] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
+	[-632] = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Profondeurs de Brassenoire à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
+	[-639] = "La gravure de runes est un nouveau système récemment annoncé pour Season of Discovery. Il permet à chaque classe d'adapter son expérience de jeu en débloquant de nouvelles capacités uniques!",
+	[-645] = "Les objets de quête Fournitures égarées proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des Fournitures égarées à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
@@ -15093,7 +15229,27 @@ localize(ObjectNames, {
 	[424074] = "Balise de quandrangulation 001",
 	[424075] = "Balise de quandrangulation 002",
 	[433596] = "Coffre de guerre envoûté",
+	[439557] = "Mousse des cauchemars",
+	[439558] = "Gisement de fer froid",
+	[439627] = "Oniracine",
+	[439628] = "Filon de pyrite",
+	[439762] = "Lotus stellaire",
+	[439778] = "Veine d’astrargent",
+	[439810] = "Racine lunaire",
+	[439815] = "Formation de pierre de lune supérieure",
+	[441113] = "Texte de l’ogre magi",
+	[441114] = "Boîte mystérieuse",
+	[441119] = "Œuf de dragon vert non-éclos",
+	[441124] = "Œuf de dragon touché par le Rêve",
+	[441128] = "Caisse vibrante",
+	[441129] = "Prophétie d’Azshara",
+	[441133] = "Œuf de dragon touché par les étoiles",
+	[441140] = "Boîte bourdonnante",
+	[441141] = "Perle onirique",
 	[441222] = "Tumulus",
+	[441310] = "Œuf de dragon lueur-de-lune",
+	[441312] = "Notes du gardien fou",
+	[441314] = "Diatribe de harpie",
 	[441848] = "Petit terrier",
 	[441946] = "Sanctuaire de la Lune",
 	[441947] = "Sanctuaire de la Bête",
@@ -15328,7 +15484,7 @@ for key,value in pairs({
 	[522] = "Monter une réputation jusqu'à Exalté.",
 	[523] = "Monter 5 réputations jusqu'à Exalté.",
 	[524] = "Monter 10 réputations jusqu'à Exalté.",
-	[546] = "Acheter 7 emplacements de sac supplémentaires.",
+	[546] = "Acheter 6 emplacements de sac supplémentaires.",
 	[627] = "Explorer Dun Morogh et révéler les zones voilées de la carte du monde.",
 	[628] = "Vaincre Edwin VanCleef.",
 	[629] = "Vaincre Taragaman l'Affameur.",
@@ -15466,35 +15622,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Obtenir 25 montures",
-	[-175] = "Obtenir 10 montures",
-	[-154] = "Obtenir 25 mascottes",
-	[-140] = "Obtenir une mascotte.",
-	[-136] = "Apprenti cavalier",
-	[-125] = "Obtenir 100 000 victoires honorables",
-	[-124] = "Obtenir 50 000 victoires honorables",
-	[-90] = "Couture",
-	[-89] = "Ingénierie",
-	[-88] = "Enchantement",
-	[-87] = "Minage",
-	[-86] = "Calligraphie",
-	[-85] = "Joaillerie",
-	[-84] = "Dépeçage",
-	[-83] = "Travail du cuir",
-	[-82] = "Herboristerie",
-	[-81] = "Forge",
-	[-80] = "Alchimie",
+	[-175] = "Obtenir 25 montures",
+	[-174] = "Obtenir 10 montures",
+	[-153] = "Obtenir 25 mascottes",
+	[-139] = "Obtenir une mascotte.",
+	[-135] = "Apprenti cavalier",
+	[-124] = "Obtenir 100 000 victoires honorables",
+	[-123] = "Obtenir 50 000 victoires honorables",
+	[-89] = "Couture",
+	[-88] = "Ingénierie",
+	[-87] = "Enchantement",
+	[-86] = "Minage",
+	[-85] = "Calligraphie",
+	[-84] = "Joaillerie",
+	[-83] = "Dépeçage",
+	[-82] = "Travail du cuir",
+	[-81] = "Herboristerie",
+	[-80] = "Forge",
 	[-79] = "Alchimie",
-	[-78] = "Forge",
-	[-77] = "Travail du cuir",
-	[-76] = "Minage",
-	[-75] = "Enchantement",
-	[-74] = "Couture",
-	[-73] = "Dépeçage",
-	[-72] = "Joaillerie",
-	[-71] = "Calligraphie",
-	[-70] = "Herboristerie",
-	[-69] = "Ingénierie",
+	[-78] = "Alchimie",
+	[-77] = "Forge",
+	[-76] = "Travail du cuir",
+	[-75] = "Minage",
+	[-74] = "Enchantement",
+	[-73] = "Couture",
+	[-72] = "Dépeçage",
+	[-71] = "Joaillerie",
+	[-70] = "Calligraphie",
+	[-69] = "Herboristerie",
+	[-68] = "Ingénierie",
 	[-66] = "Être exalté auprès de 10 factions",
 	[-65] = "Être exalté auprès de 5 factions",
 	[-64] = "Être exalté auprès d’une faction",
@@ -16481,14 +16637,9 @@ for key,value in pairs({
 	[8740] = "Insigne de la Horde",
 	[8741] = "Insigne de l’Alliance",
 	[8749] = "Ruines de l’enclave Écarlate",
-	[8818] = "Honoré auprès de la Voile sanglante",
-	[8819] = "Exalté auprès de Baie-du-Butin",
-	[8820] = "Exalté auprès de Long-Guet",
-	[8821] = "Exalté auprès de Gadgetzan",
-	[8822] = "Exalté auprès de Cabestan",
-	[8823] = "Exalté auprès de la foire de Sombrelune",
-	[8824] = "Exalté auprès de Ravenholdt",
-	[8825] = "Exalté auprès des Shen’dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence du seigneur du Feu",
 	[8894] = "Cuirasse de conquérant",
 	[8895] = "Cuirasse de vengeur",
@@ -16522,6 +16673,11 @@ for key,value in pairs({
 	[13371] = "Médaillon de l’Alliance",
 	[17023] = "Exalté auprès des Shen’dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -16573,6 +16729,7 @@ localize(_.CategoryNames, {
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuovo personaggio",
 	[-17] = "Prova di Classe",
+	[-25] = "Istruttore dei Demoni",
 	[-36] = "Festività",
 	[-48] = "Istruttore di equitazione",
 	[-316] = "Rissa Corpulenta",
@@ -16590,6 +16747,14 @@ localize(L.HEADER_NAMES, {
 	[-624] = "Parla con Grizzby",
 	[-625] = "Parla con N'ora",
 	[-626] = "Parla con Fratello Romulus",
+	[-632] = "La Stagione delle Scoperte",
+	[-633] = "Comprensione",
+	[-634] = "Livello 1",
+	[-635] = "Livello 2",
+	[-636] = "Livello 3",
+	[-637] = "Caccia ai Mostri",
+	[-640] = "Broker Dell'anima",
+	[-645] = "Forniture Waylaid",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-316] = "Solo la persona che ottiene il colpo finale sull'ubriaco riceverà il credito, indipendentemente da chi ha toccato per primo il bersaglio. Non è previsto alcun credito collettivo per questo.",
@@ -16597,6 +16762,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
 	[-342] = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
 	[-343] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
+	[-632] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Abissi di Fondocupo per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
+	[-639] = "L'incisione delle rune è un nuovo sistema recentemente annunciato per la Stagione delle Scoperte. Permette a ogni classe di personalizzare la propria esperienza di gioco sbloccando nuove abilità uniche!",
+	[-645] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
 });
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -16979,6 +17147,10 @@ for key,value in pairs({
 })
 do phases[key].description = value; end
 for key,value in pairs({
+	[546] = "Buy 6 additional bank slots.",
+})
+do achievements[key].description = value; end
+for key,value in pairs({
 	[81] = "Feats of Strength",
 	[92] = "General",
 	[95] = "Player vs. Player",
@@ -17001,35 +17173,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Obtain 25 mounts",
-	[-175] = "Obtain 10 mounts",
-	[-154] = "Obtain 25 companion pets",
-	[-140] = "Obtain a companion pet",
-	[-136] = "Apprentice Riding",
-	[-125] = "Get 100000 honorable kills",
-	[-124] = "Get 50000 honorable kills",
-	[-90] = "Tailoring",
-	[-89] = "Engineering",
-	[-88] = "Enchanting",
-	[-87] = "Mining",
-	[-86] = "Inscription",
-	[-85] = "Jewelcrafting",
-	[-84] = "Skinning",
-	[-83] = "Leatherworking",
-	[-82] = "Herbalism",
-	[-81] = "Blacksmithing",
-	[-80] = "Alchemy",
+	[-175] = "Obtain 25 mounts",
+	[-174] = "Obtain 10 mounts",
+	[-153] = "Obtain 25 companion pets",
+	[-139] = "Obtain a companion pet",
+	[-135] = "Apprentice Riding",
+	[-124] = "Get 100000 honorable kills",
+	[-123] = "Get 50000 honorable kills",
+	[-89] = "Tailoring",
+	[-88] = "Engineering",
+	[-87] = "Enchanting",
+	[-86] = "Mining",
+	[-85] = "Inscription",
+	[-84] = "Jewelcrafting",
+	[-83] = "Skinning",
+	[-82] = "Leatherworking",
+	[-81] = "Herbalism",
+	[-80] = "Blacksmithing",
 	[-79] = "Alchemy",
-	[-78] = "Blacksmithing",
-	[-77] = "Leatherworking",
-	[-76] = "Mining",
-	[-75] = "Enchanting",
-	[-74] = "Tailoring",
-	[-73] = "Skinning",
-	[-72] = "Jewelcrafting",
-	[-71] = "Inscription",
-	[-70] = "Herbalism",
-	[-69] = "Engineering",
+	[-78] = "Alchemy",
+	[-77] = "Blacksmithing",
+	[-76] = "Leatherworking",
+	[-75] = "Mining",
+	[-74] = "Enchanting",
+	[-73] = "Tailoring",
+	[-72] = "Skinning",
+	[-71] = "Jewelcrafting",
+	[-70] = "Inscription",
+	[-69] = "Herbalism",
+	[-68] = "Engineering",
 	[-66] = "10 reputations to exalted",
 	[-65] = "5 reputations to exalted",
 	[-64] = "Get a reputation to exalted",
@@ -18016,14 +18188,9 @@ for key,value in pairs({
 	[8740] = "Insignia of the Horde",
 	[8741] = "Insignia of the Alliance",
 	[8749] = "Ruins of the Scarlet Enclave",
-	[8818] = "Honored with Bloodsail Buccaneers",
-	[8819] = "Exalted with Booty Bay",
-	[8820] = "Exalted with Everlook",
-	[8821] = "Exalted with Gadgetzan",
-	[8822] = "Exalted with Ratchet",
-	[8823] = "Exalted with Darkmoon Faire",
-	[8824] = "Exalted with Ravenholdt",
-	[8825] = "Exalted with Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence of the Firelord",
 	[8894] = "Conqueror's Breastplate",
 	[8895] = "Avenger's Breastplate",
@@ -18057,6 +18224,11 @@ for key,value in pairs({
 	[13371] = "Medallion of the Alliance",
 	[17023] = "Exalted with the Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -18167,6 +18339,9 @@ localize(L.HEADER_NAMES, {
 	[-342] = "Aparência Única",
 	[-343] = "Recompensa",
 	[-350] = "Os Quatro Cavaleiros",
+	[-365] = "Portão Principal",
+	[-366] = "Entrada de Serviço",
+	[-367] = "Defensores Atal'ai",
 	[-483] = "Cetro das Areias Cambiantes",
 	[-559] = "Semana das Crianças",
 	[-574] = "Festa do Véu de Inverno",
@@ -18179,6 +18354,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Peixe sazonal: robalo de verão",
 	[-587] = "Peixe sazonal: Lula de Inverno",
 	[-588] = "Festerê de Pesca da Selva do Espinhaço",
+	[-611] = "Realeza Silítidea",
 	[-613] = "Bosque do Pesadelo",
 	[-614] = "Aprendiz",
 	[-615] = "Ópera da Maldição",
@@ -18189,6 +18365,16 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Fale com o N'ora",
 	[-626] = "Fale com o Irmão Romulus",
 	[-627] = "Erupção da Rocha Negra",
+	[-632] = "Temporada de Descoberta",
+	[-633] = "Compreensão",
+	[-634] = "Nível 1",
+	[-635] = "Nível 2",
+	[-636] = "Nível 3",
+	[-637] = "Caça aos Monstros",
+	[-638] = "Incursões Pesadelares",
+	[-639] = "Gravura",
+	[-640] = "Corretores de Almas",
+	[-645] = "Suprimentos Escondidos",
 	[-688] = "Lua Sangrenta",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -18198,6 +18384,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
 	[-342] = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 	[-343] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
+	[-632] = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Profundezas Negras para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
+	[-639] = "A gravação de runas é um novo sistema anunciado recentemente para a Temporada de Descobertas. Ele permite que cada classe personalize sua experiência de jogo, desbloqueando novas habilidades únicas!",
+	[-645] = "Itens de missão Suprimentos Escondidos são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Escondidos a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 });
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -18901,6 +19090,21 @@ localize(ObjectNames, {
 	[424010] = "Tábua com Pregos",
 	[424012] = "Monturo de Terra",
 	[424074] = "Sinalizador de Quadrangulação 001",
+	[439557] = "Musgo do Pesadelo",
+	[439558] = "Depósito de Ferro Frio",
+	[439627] = "Raiz-de-sonho",
+	[439628] = "Veio de Ouro de Tolo",
+	[439810] = "Raiz-da-lua",
+	[439815] = "Formação de Pedras-da-lua Maiores",
+	[441113] = "Texto de Magus Ogro",
+	[441114] = "Caixa Misteriosa",
+	[441119] = "Ovo de Dragão Verde Choco",
+	[441124] = "Ovo de Dragão Tocado pelo Sonho",
+	[441128] = "Caixote Vibratório",
+	[441129] = "Profecia Azshariana",
+	[441310] = "Ovo de Dragão do Brilho da Lua",
+	[441312] = "Anotações do Guardião Louco",
+	[441314] = "Escrito das Harpias",
 	[441947] = "Altar da Fera",
 	[441948] = "Altar do Guardião",
 	[455812] = "Espada do Escudeiro Cuteberto",
@@ -19123,7 +19327,7 @@ for key,value in pairs({
 	[522] = "Tornar-se exaltado por uma facção.",
 	[523] = "Tornar-se exaltado por 5 facções.",
 	[524] = "Tornar-se exaltado por 10 facções.",
-	[546] = "Comprar 7 compartimentos bancários.",
+	[546] = "Comprar 6 compartimentos bancários.",
 	[627] = "Explorar Dun Morogh, revelando as áreas encobertas do mapa.",
 	[628] = "Derrotar Edwin VanCleef.",
 	[629] = "Derrotar Taragaman, o Famélico.",
@@ -19261,35 +19465,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Obter 25 montarias",
-	[-175] = "Obter 10 montarias",
-	[-154] = "Obter 25 mascotes companheiros",
-	[-140] = "Obter uma mascote",
-	[-136] = "Aprendiz de Montaria",
-	[-125] = "Alcançar um total de 100.000 jogadores abatidos honrosamente",
-	[-124] = "Alcançar um total de 50.000 jogadores abatidos honrosamente",
-	[-90] = "Alfaiataria",
-	[-89] = "Engenharia",
-	[-88] = "Encantamento",
-	[-87] = "Mineração",
-	[-86] = "Escrivania",
-	[-85] = "Joalheria",
-	[-84] = "Esfolamento",
-	[-83] = "Couraria",
-	[-82] = "Herborismo",
-	[-81] = "Ferraria",
-	[-80] = "Alquimia",
+	[-175] = "Obter 25 montarias",
+	[-174] = "Obter 10 montarias",
+	[-153] = "Obter 25 mascotes companheiros",
+	[-139] = "Obter uma mascote",
+	[-135] = "Aprendiz de Montaria",
+	[-124] = "Alcançar um total de 100.000 jogadores abatidos honrosamente",
+	[-123] = "Alcançar um total de 50.000 jogadores abatidos honrosamente",
+	[-89] = "Alfaiataria",
+	[-88] = "Engenharia",
+	[-87] = "Encantamento",
+	[-86] = "Mineração",
+	[-85] = "Escrivania",
+	[-84] = "Joalheria",
+	[-83] = "Esfolamento",
+	[-82] = "Couraria",
+	[-81] = "Herborismo",
+	[-80] = "Ferraria",
 	[-79] = "Alquimia",
-	[-78] = "Ferraria",
-	[-77] = "Couraria",
-	[-76] = "Mineração",
-	[-75] = "Encantamento",
-	[-74] = "Alfaiataria",
-	[-73] = "Esfolamento",
-	[-72] = "Joalheria",
-	[-71] = "Escrivania",
-	[-70] = "Herborismo",
-	[-69] = "Engenharia",
+	[-78] = "Alquimia",
+	[-77] = "Ferraria",
+	[-76] = "Couraria",
+	[-75] = "Mineração",
+	[-74] = "Encantamento",
+	[-73] = "Alfaiataria",
+	[-72] = "Esfolamento",
+	[-71] = "Joalheria",
+	[-70] = "Escrivania",
+	[-69] = "Herborismo",
+	[-68] = "Engenharia",
 	[-66] = "Exaltado por 10 facções",
 	[-65] = "Exaltado por 5 facções",
 	[-64] = "Elevar uma reputação até o nível de exaltado",
@@ -20276,14 +20480,9 @@ for key,value in pairs({
 	[8740] = "Insígnia da Horda",
 	[8741] = "Insígnia da Aliança",
 	[8749] = "Ruínas do Enclave Escarlate",
-	[8818] = "Honrado pelos Bucaneiros da Vela Sangrenta",
-	[8819] = "Exaltado pela Angra do Butim",
-	[8820] = "Exaltado por Visteterna",
-	[8821] = "Exaltado por Geringontzan",
-	[8822] = "Exaltado pela Vila Catraca.",
-	[8823] = "Exaltado pela Feira de Negraluna",
-	[8824] = "Exaltado por Corvoforte",
-	[8825] = "Exaltado por Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essência do Senhor do Fogo",
 	[8894] = "Peitoral do Conquistador",
 	[8895] = "Peitoral do Vingador",
@@ -20317,6 +20516,11 @@ for key,value in pairs({
 	[13371] = "Medalhão da Aliança",
 	[17023] = "Exaltado com os Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -20761,7 +20965,7 @@ L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки
 L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
 L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
 L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
-L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
+L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 L.QUESTS_CHECKBOX_TOOLTIP = "Включите для отслеживания обычных Заданий.\n\nПри помощи правого клика на любое задание в списках Вы можете открыть полную цепочку заданий, чтобы отобразить Ваш прогресс и любые предшествующие Задания.\n\nПримечание: Задания не отслеживаются перманентно из-за природы отслеживания Ежедневных, Еженедельных, Ежегодных и Локальных заданий в базе данных Blizzard.";
 L.QUESTS_DESC = "Все задания в игре в порядке возрастания номеров.";
@@ -21018,6 +21222,8 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Библиотека",
 	[-363] = "Оружейная",
 	[-364] = "Собор",
+	[-365] = "Главные врата",
+	[-366] = "Черный ход",
 	[-367] = "Защитники Атал'ай",
 	[-481] = "Война в Ан'Кираже",
 	[-483] = "Скипетр Зыбучих песков",
@@ -21033,6 +21239,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Сезонная рыба: летний окунь",
 	[-587] = "Сезонная рыба: зимний кальмар",
 	[-588] = "Рыбомания Тернистой долины",
+	[-611] = "Силитидская знать",
 	[-613] = "Роща Кошмаров",
 	[-614] = "Ученик",
 	[-615] = "Проклятая опера",
@@ -21043,6 +21250,16 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Поговорите с Н'ора",
 	[-626] = "Поговорите с Брат Ромул",
 	[-627] = "Извержение Черной горы",
+	[-632] = "Сезон открытий",
+	[-633] = "Понимание",
+	[-634] = "Уровень 1",
+	[-635] = "Уровень 2",
+	[-636] = "Уровень 3",
+	[-637] = "Охота на монстров",
+	[-638] = "Кошмарные вторжения",
+	[-639] = "Гравировка",
+	[-640] = "Душевные брокеры",
+	[-645] = "Перехват припасов",
 	[-688] = "Кровавая луна",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -21055,6 +21272,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 	[-342] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
+	[-632] = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
+	[-639] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
+	[-645] = "Квестовые предметы Перехват припасов падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
@@ -21911,6 +22131,21 @@ localize(ObjectNames, {
 	[424010] = "Доска с гвоздями",
 	[424012] = "Куча грязи",
 	[424075] = "Квадрангуляционный маяк 002",
+	[439627] = "Сон-корень",
+	[439628] = "Жила ложного золота",
+	[439762] = "Звездный лотос",
+	[439778] = "Жила звездного серебра",
+	[439810] = "Лунный корень",
+	[439815] = "Отложение большого лунного камня",
+	[441124] = "Усиленное Сном яйцо дракона",
+	[441128] = "Вибрирующий ящик",
+	[441129] = "Азшарское пророчество",
+	[441133] = "Усиленное звездами яйцо дракона",
+	[441140] = "Гудящая коробка",
+	[441141] = "Жемчужина Сна",
+	[441310] = "Лунное яйцо дракона",
+	[441312] = "Записки безумного хранителя",
+	[441314] = "Бессвязные записи гарпии",
 	[441848] = "Маленькая яма",
 	[441946] = "Святилище луны",
 	[441947] = "Святилище зверя",
@@ -22150,7 +22385,7 @@ for key,value in pairs({
 	[522] = "Добейтесь того, чтобы вас превозносила какая-либо фракция.",
 	[523] = "Добейтесь того, чтобы вас превозносили 5 фракций.",
 	[524] = "Добейтесь того, чтобы вас превозносили 10 фракций.",
-	[546] = "Купите 7 дополнительных ячеек в банке.",
+	[546] = "Купите 6 дополнительных ячеек в банке.",
 	[627] = "Исследуйте Дун Морог, открыв все его области на карте.",
 	[628] = "Победите Эдвина ван Клифа.",
 	[629] = "Победите Баззалана.",
@@ -22288,35 +22523,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Получить 25 средств передвижения",
-	[-175] = "Получить 10 средств передвижения",
-	[-154] = "Соберите 25 питомцев-спутников",
-	[-140] = "Заведите питомца.",
-	[-136] = "Верховая езда (ученик)",
-	[-125] = "Одержите 100 000 почетных побед",
-	[-124] = "Одержать 50 000 почетных побед",
-	[-90] = "Портняжное дело",
-	[-89] = "Инженерное дело",
-	[-88] = "Наложение чар",
-	[-87] = "Горное дело",
-	[-86] = "Начертание",
-	[-85] = "Ювелирное дело",
-	[-84] = "Снятие шкур",
-	[-83] = "Кожевничество",
-	[-82] = "Травничество",
-	[-81] = "Кузнечное дело",
-	[-80] = "Алхимия",
+	[-175] = "Получить 25 средств передвижения",
+	[-174] = "Получить 10 средств передвижения",
+	[-153] = "Соберите 25 питомцев-спутников",
+	[-139] = "Заведите питомца.",
+	[-135] = "Верховая езда (ученик)",
+	[-124] = "Одержите 100 000 почетных побед",
+	[-123] = "Одержать 50 000 почетных побед",
+	[-89] = "Портняжное дело",
+	[-88] = "Инженерное дело",
+	[-87] = "Наложение чар",
+	[-86] = "Горное дело",
+	[-85] = "Начертание",
+	[-84] = "Ювелирное дело",
+	[-83] = "Снятие шкур",
+	[-82] = "Кожевничество",
+	[-81] = "Травничество",
+	[-80] = "Кузнечное дело",
 	[-79] = "Алхимия",
-	[-78] = "Кузнечное дело",
-	[-77] = "Кожевничество",
-	[-76] = "Горное дело",
-	[-75] = "Наложение чар",
-	[-74] = "Портняжное дело",
-	[-73] = "Снятие шкур",
-	[-72] = "Ювелирное дело",
-	[-71] = "Начертание",
-	[-70] = "Травничество",
-	[-69] = "Инженерное дело",
+	[-78] = "Алхимия",
+	[-77] = "Кузнечное дело",
+	[-76] = "Кожевничество",
+	[-75] = "Горное дело",
+	[-74] = "Наложение чар",
+	[-73] = "Портняжное дело",
+	[-72] = "Снятие шкур",
+	[-71] = "Ювелирное дело",
+	[-70] = "Начертание",
+	[-69] = "Травничество",
+	[-68] = "Инженерное дело",
 	[-66] = "Превознесение в 10 фракциях",
 	[-65] = "Превознесение в 5 фракциях",
 	[-64] = "Превознесение в одной из фракций",
@@ -23303,14 +23538,9 @@ for key,value in pairs({
 	[8740] = "Знак различия Орды",
 	[8741] = "Знак различия Альянса",
 	[8749] = "Руины анклава Алого ордена",
-	[8818] = "Уважение среди Пиратов Кровавого Паруса",
-	[8819] = "Превознесение в Пиратской Бухте",
-	[8820] = "Превознесение в Круговзоре",
-	[8821] = "Превознесение в Прибамбасске",
-	[8822] = "Превознесение в Кабестане",
-	[8823] = "Превознесение у ярмарки Новолуния",
-	[8824] = "Превознесение у Черного Ворона",
-	[8825] = "Превознесение у Шен'драларов",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Сущность повелителя огня",
 	[8894] = "Кираса завоевателя",
 	[8895] = "Кираса Мстителя",
@@ -23344,6 +23574,11 @@ for key,value in pairs({
 	[13371] = "Медальон Альянса",
 	[17023] = "Превознесение у шен'дралар",
 	[54579] = "Ониксия",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -23411,6 +23646,9 @@ localize(L.HEADER_NAMES, {
 	[-342] = "독특한 외관",
 	[-343] = "하사품",
 	[-350] = "4인 기사단",
+	[-365] = "정문",
+	[-366] = "공무용 입구",
+	[-367] = "아탈라이 파수병",
 	[-483] = "흐르는 모래의 홀",
 	[-520] = "블리즈컨",
 	[-559] = "어린이 주간",
@@ -23424,6 +23662,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "제철 생선: 여름 농어",
 	[-587] = "제철 생선: 겨울 오징어",
 	[-588] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-611] = "실리시드 왕실",
 	[-613] = "악몽의 숲",
 	[-614] = "수습생",
 	[-615] = "악심의 오페라",
@@ -23434,6 +23673,16 @@ localize(L.HEADER_NAMES, {
 	[-625] = "노라와 대화",
 	[-626] = "로물루스 형제와 대화하세요",
 	[-627] = "검은바위 분출",
+	[-632] = "발견의 계절",
+	[-633] = "이해력",
+	[-634] = "층 1",
+	[-635] = "층 2",
+	[-636] = "층 3",
+	[-637] = "몬스터 사냥",
+	[-638] = "악몽 침공지",
+	[-639] = "각인술",
+	[-640] = "소울 브로커",
+	[-645] = "잘못 놓인 보급품",
 	[-688] = "핏빛 달",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -23443,6 +23692,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
 	[-342] = "이 아이템은 독특한 외형을 가지고 있습니다. 외형을 획득하려면 이 아이템을 특별히 수집해야 합니다.",
 	[-343] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
+	[-632] = "이번 시즌에는 새로운 메커니즘이 포함된 10인 Blackfathom Deeps 레이드, 플레이어 전술과 전략에 도전할 수 있는 새롭고 재구성된 보스, 새로운 보상을 포함하여 초기 레벨 상한이 25이고 새로운 레벨 25 최종 게임이 제공됩니다.",
+	[-639] = "룬 각인은 최근 발견의 시즌에 발표된 새로운 시스템입니다. 이를 통해 각 클래스는 새로운 고유 능력을 잠금 해제하여 게임 플레이 경험을 맞춤화할 수 있습니다!",
+	[-645] = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
 });
 localize(ObjectNames, {
 	[31] = "오래된 사자상",
@@ -24199,6 +24451,22 @@ localize(ObjectNames, {
 	[424074] = "사각 측량 신호기 001",
 	[424075] = "사각 측량 신호기 002",
 	[424077] = "사각 측량 신호기 004",
+	[439557] = "악몽 이끼",
+	[439627] = "꿈뿌리",
+	[439628] = "바보의 금 광맥",
+	[439762] = "별빛연꽃",
+	[439778] = "별빛은 광맥",
+	[439810] = "달뿌리",
+	[439815] = "상급 월장석 형성물",
+	[441124] = "꿈에 물든 용의 알",
+	[441128] = "진동하는 상자",
+	[441129] = "아즈샤라의 예언",
+	[441133] = "별에 물든 용의 알",
+	[441140] = "웅웅거리는 상자",
+	[441141] = "꿈진주",
+	[441310] = "달빛너울 용의 알",
+	[441312] = "광기 어린 수호자의 기록",
+	[441314] = "하피의 장광설",
 	[441946] = "달의 제단",
 	[441947] = "야수의 제단",
 	[441948] = "감시관의 제단",
@@ -24435,7 +24703,7 @@ for key,value in pairs({
 	[522] = "확고한 동맹 평판 획득",
 	[523] = "5개 세력과 확고한 동맹 달성",
 	[524] = "10개 세력과 확고한 동맹 달성",
-	[546] = "은행 가방 보관함 7개 구입",
+	[546] = "은행 가방 보관함 6개 구입",
 	[627] = "던 모로 탐험 및 지역 발견",
 	[628] = "에드윈 밴클리프 처치",
 	[629] = "욕망의 타라가만 처치",
@@ -24573,35 +24841,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "탈것 25개 획득",
-	[-175] = "탈것 10개 획득",
-	[-154] = "애완동물 25마리 모으기",
-	[-140] = "애완동물 획득",
-	[-136] = "초급 타기",
-	[-125] = "명예 승수 100,000",
-	[-124] = "명예 승수 50,000",
-	[-90] = "재봉술",
-	[-89] = "기계공학",
-	[-88] = "마법부여",
-	[-87] = "채광",
-	[-86] = "주문각인",
-	[-85] = "보석세공",
-	[-84] = "무두질",
-	[-83] = "가죽세공",
-	[-82] = "약초채집",
-	[-81] = "대장기술",
-	[-80] = "연금술",
+	[-175] = "탈것 25개 획득",
+	[-174] = "탈것 10개 획득",
+	[-153] = "애완동물 25마리 모으기",
+	[-139] = "애완동물 획득",
+	[-135] = "초급 타기",
+	[-124] = "명예 승수 100,000",
+	[-123] = "명예 승수 50,000",
+	[-89] = "재봉술",
+	[-88] = "기계공학",
+	[-87] = "마법부여",
+	[-86] = "채광",
+	[-85] = "주문각인",
+	[-84] = "보석세공",
+	[-83] = "무두질",
+	[-82] = "가죽세공",
+	[-81] = "약초채집",
+	[-80] = "대장기술",
 	[-79] = "연금술",
-	[-78] = "대장기술",
-	[-77] = "가죽세공",
-	[-76] = "채광",
-	[-75] = "마법부여",
-	[-74] = "재봉술",
-	[-73] = "무두질",
-	[-72] = "보석세공",
-	[-71] = "주문각인",
-	[-70] = "약초채집",
-	[-69] = "기계공학",
+	[-78] = "연금술",
+	[-77] = "대장기술",
+	[-76] = "가죽세공",
+	[-75] = "채광",
+	[-74] = "마법부여",
+	[-73] = "재봉술",
+	[-72] = "무두질",
+	[-71] = "보석세공",
+	[-70] = "주문각인",
+	[-69] = "약초채집",
+	[-68] = "기계공학",
 	[-66] = "10개 세력과 확고한 동맹",
 	[-65] = "5개 세력과 확고한 동맹",
 	[-64] = "확고한 동맹 평판 얻기",
@@ -25588,14 +25856,9 @@ for key,value in pairs({
 	[8740] = "호드 계급장",
 	[8741] = "얼라이언스 계급장",
 	[8749] = "붉은십자군 폐허",
-	[8818] = "붉은해적단 우호적",
-	[8819] = "무법항 확고한 동맹",
-	[8820] = "눈망루 마을 확고한 동맹",
-	[8821] = "가젯잔 확고한 동맹",
-	[8822] = "톱니항 확고한 동맹",
-	[8823] = "다크문 유랑단 확고한 동맹",
-	[8824] = "라벤홀트 암살단 확고한 동맹",
-	[8825] = "셴드랄라 확고한 동맹",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "불의 군주의 정수",
 	[8894] = "정복자의 가슴보호갑",
 	[8895] = "응징의 가슴보호갑",
@@ -25629,6 +25892,11 @@ for key,value in pairs({
 	[13371] = "얼라이언스의 메달",
 	[17023] = "셴드랄라 확고한 동맹",
 	[54579] = "오닉시아",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -26429,8 +26697,9 @@ localize(L.HEADER_NAMES, {
 	[-36] = "Festividades",
 	[-37] = "Feria de la Luna Negra",
 	[-46] = "Raro",
-	[-48] = "Instructora de equitación",
+	[-48] = "Instructor de equitación",
 	[-56] = "Tesoros",
+	[-58] = "Vendedores",
 	[-59] = "Maestro armero",
 	[-61] = "Jefes de mundo",
 	[-63] = "Botín de zona",
@@ -26451,7 +26720,9 @@ localize(L.HEADER_NAMES, {
 	[-343] = "Recompensa",
 	[-349] = "Capitanes",
 	[-350] = "Los Cuatro Jinetes",
-	[-366] = "Entrada de servicio",
+	[-365] = "Puerta principal",
+	[-366] = "Entrada del servicio",
+	[-367] = "Defensores Atal'ai",
 	[-483] = "El cetro del Mar de Dunas",
 	[-521] = "Edición de coleccionista",
 	[-559] = "Semana de los Niños",
@@ -26476,21 +26747,43 @@ localize(L.HEADER_NAMES, {
 	[-625] = "Habla con el N'ora",
 	[-626] = "Habla con el Hermano Romulus",
 	[-627] = "Erupción de Roca Negra",
+	[-632] = "Temporada de Descubrimiento",
+	[-633] = "Comprensión",
+	[-634] = "Nivel 1",
+	[-635] = "Nivel 2",
+	[-636] = "Nivel 3",
+	[-637] = "Caza de Monstruos",
+	[-638] = "Incursiones de la Pesadilla",
+	[-639] = "Grabado de Runas",
+	[-640] = "Especuladores de almas",
+	[-641] = "Entrenamiento de escudero",
+	[-642] = "Inspiración Rango 1",
+	[-643] = "Inspiración Rango 2",
+	[-644] = "Encantamientos de hombros para conjuntos de niveles",
+	[-645] = "Suministros saqueados",
+	[-646] = "Fabricado",
+	[-647] = "Recolección",
 	[-688] = "Luna Sangrienta",
 	[-697] = "Zul'Gurub Hakkar Modo dificil",
 });
 localize(L.HEADER_DESCRIPTIONS, {
+	[-25] = "Los brujos pueden enseñar nuevos trucos a sus demonios. Algunos grimorios de nivel superior solo se pueden comprar al Instructor de Demonios en las capitales de tu facción.",
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
 	[-43] = "Esta sección contiene misiones y domadores relacionados con los Duelos de Mascotas.",
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
 	[-47] = "Contiene cosas que son recompensadas o están disponibles en otro contenido dentro de la sección contenedora.\nSe consolidan aquí en un esfuerzo por reducir la duplicación de muchas fuentes posibles.",
-	[-59] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
+	[-59] = "Un maestro armero es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
 	[-316] = "Sólo la persona que dé el golpe final al borracho obtendrá crédito, independientemente de quién haya tocado el objetivo primero. No hay crédito grupal por esto.",
 	[-317] = "Lanza Polimorfia sobre criaturas afectadas por Polimorfia Salvaje para convertirlas nuevamente en aprendices. Cada uno te dará una nota. Recoge 6 notas para aprender la runa.",
 	[-341] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como coleccionado.",
 	[-342] = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 	[-343] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
 	[-613] = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
+	[-632] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una banda de 10 jugadores en Cavernas de Brazanegra con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
+	[-639] = "El Grabado de Runas es un nuevo sistema de clases para la Temporada de Descubrimiento. Permite a cada clase personalizar su experiencia de juego desbloqueando nuevas habilidades únicas.",
+	[-641] = "A partir del nivel 50, los paladines pueden completar una cadena de misiones en las Tierras de la Peste del Oeste que les otorgará una reliquia que invoca a su propio escudero. Este escudero puede subir de nivel luchando en combate y curándose con los hechizos del paladín. (Entra en combate y simplemente usa Destello de Luz de rango 1 mientras ataca a los enemigos).",
+	[-642] = "Después de recibir a tu escudero, invócalo usando la Reliquia y luego súbelo de nivel entrando en combate y manteniéndolo con vida.",
+	[-645] = "Los objetos de misión de Suministros saqueados caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros saqueados a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
 });
 localize(L.HEADER_LORE, {
@@ -27330,6 +27623,23 @@ localize(ObjectNames, {
 	[424012] = "Túmulo de barro",
 	[424074] = "Baliza de cuadrangulación 001",
 	[424075] = "Baliza de cuadrangulación 002",
+	[439557] = "Musgo de la Pesadilla",
+	[439558] = "Depósito de hierro frío",
+	[439627] = "Raíz del Sueño",
+	[439628] = "Filón de oro falso",
+	[439762] = "Loto estelar",
+	[439778] = "Filón de plataestelar",
+	[439810] = "Raíz lunar",
+	[439815] = "Formación de piedra lunar superior",
+	[441124] = "Huevo de dragón tocado por el Sueño",
+	[441128] = "Cajón vibrante",
+	[441129] = "Profecía de Azshara",
+	[441133] = "Huevo de dragón tocado por las estrellas",
+	[441140] = "Caja zumbante",
+	[441141] = "Perla onírica",
+	[441310] = "Huevo de dragón de resplandor lunar",
+	[441312] = "Notas del vigilante demente",
+	[441314] = "Desvaríos de arpía",
 	[441848] = "Madriguera pequeña",
 	[441946] = "Santuario de la luna",
 	[441947] = "Santuario de la bestia",
@@ -27715,35 +28025,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Consigue 25 monturas",
-	[-175] = "Consigue 10 monturas",
-	[-154] = "Consigue 25 mascotas de compañía",
-	[-140] = "Consigue una mascota de compañía",
-	[-136] = "Aprendiz jinete",
-	[-125] = "Consigue 100 000 muertes con honor",
-	[-124] = "Consigue 50 000 muertes con honor",
-	[-90] = "Sastrería",
-	[-89] = "Ingeniería",
-	[-88] = "Encantamiento",
-	[-87] = "Minería",
-	[-86] = "Inscripción",
-	[-85] = "Joyería",
-	[-84] = "Desuello",
-	[-83] = "Peletería",
-	[-82] = "Herboristería",
-	[-81] = "Herrería",
-	[-80] = "Alquimia",
+	[-175] = "Consigue 25 monturas",
+	[-174] = "Consigue 10 monturas",
+	[-153] = "Consigue 25 mascotas de compañía",
+	[-139] = "Consigue una mascota de compañía",
+	[-135] = "Aprendiz jinete",
+	[-124] = "Consigue 100 000 muertes con honor",
+	[-123] = "Consigue 50 000 muertes con honor",
+	[-89] = "Sastrería",
+	[-88] = "Ingeniería",
+	[-87] = "Encantamiento",
+	[-86] = "Minería",
+	[-85] = "Inscripción",
+	[-84] = "Joyería",
+	[-83] = "Desuello",
+	[-82] = "Peletería",
+	[-81] = "Herboristería",
+	[-80] = "Herrería",
 	[-79] = "Alquimia",
-	[-78] = "Herrería",
-	[-77] = "Peletería",
-	[-76] = "Minería",
-	[-75] = "Encantamiento",
-	[-74] = "Sastrería",
-	[-73] = "Desuello",
-	[-72] = "Joyería",
-	[-71] = "Inscripción",
-	[-70] = "Herboristería",
-	[-69] = "Ingeniería",
+	[-78] = "Alquimia",
+	[-77] = "Herrería",
+	[-76] = "Peletería",
+	[-75] = "Minería",
+	[-74] = "Encantamiento",
+	[-73] = "Sastrería",
+	[-72] = "Desuello",
+	[-71] = "Joyería",
+	[-70] = "Inscripción",
+	[-69] = "Herboristería",
+	[-68] = "Ingeniería",
 	[-66] = "10 reputaciones Exaltado",
 	[-65] = "5 reputaciones Exaltado",
 	[-64] = "Eleva una reputación a Exaltado",
@@ -28730,14 +29040,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -28771,6 +29076,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -29031,16 +29341,24 @@ localize(_.CategoryNames, {
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín compartido entre los jefes",
 	[-36] = "Fiestas",
+	[-59] = "Maestro de armas",
 	[-63] = "Botín de la zona",
 	[-74] = "Dragones de pesadilla",
 	[-103] = "Evento de pre-expansion",
+	[-367] = "Defensores de Atal'ai",
 	[-613] = "Arboleda de las Pesadillas",
 	[-615] = "Ópera de imprecación",
+	[-632] = "Temporada de descubrimiento",
+	[-638] = "Incursiones de pesadilla",
+	[-640] = "Negociante de almas",
+	[-645] = "Suministros faltantes",
 	[-688] = "Luna de sangre",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
+	[-59] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
 	[-613] = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
+	[-645] = "Los objetos de misión de Suministros faltantes caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros faltantes a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
 });
 for key,value in pairs({
@@ -29110,35 +29428,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "Consigue 25 monturas",
-	[-175] = "Consigue 10 monturas",
-	[-154] = "Consigue 25 mascotas de compañía",
-	[-140] = "Consigue una mascota de compañía",
-	[-136] = "Aprendiz jinete",
-	[-125] = "Consigue 100000 muertes con honor",
-	[-124] = "Consigue 50000 muertes con honor",
-	[-90] = "Sastrería",
-	[-89] = "Ingeniería",
-	[-88] = "Encantamiento",
-	[-87] = "Minería",
-	[-86] = "Inscripción",
-	[-85] = "Joyería",
-	[-84] = "Desuello",
-	[-83] = "Peletería",
-	[-82] = "Herboristería",
-	[-81] = "Herrería",
-	[-80] = "Alquimia",
+	[-175] = "Consigue 25 monturas",
+	[-174] = "Consigue 10 monturas",
+	[-153] = "Consigue 25 mascotas de compañía",
+	[-139] = "Consigue una mascota de compañía",
+	[-135] = "Aprendiz jinete",
+	[-124] = "Consigue 100000 muertes con honor",
+	[-123] = "Consigue 50000 muertes con honor",
+	[-89] = "Sastrería",
+	[-88] = "Ingeniería",
+	[-87] = "Encantamiento",
+	[-86] = "Minería",
+	[-85] = "Inscripción",
+	[-84] = "Joyería",
+	[-83] = "Desuello",
+	[-82] = "Peletería",
+	[-81] = "Herboristería",
+	[-80] = "Herrería",
 	[-79] = "Alquimia",
-	[-78] = "Herrería",
-	[-77] = "Peletería",
-	[-76] = "Minería",
-	[-75] = "Encantamiento",
-	[-74] = "Sastrería",
-	[-73] = "Desuello",
-	[-72] = "Joyería",
-	[-71] = "Inscripción",
-	[-70] = "Herboristería",
-	[-69] = "Ingeniería",
+	[-78] = "Alquimia",
+	[-77] = "Herrería",
+	[-76] = "Peletería",
+	[-75] = "Minería",
+	[-74] = "Encantamiento",
+	[-73] = "Sastrería",
+	[-72] = "Desuello",
+	[-71] = "Joyería",
+	[-70] = "Inscripción",
+	[-69] = "Herboristería",
+	[-68] = "Ingeniería",
 	[-66] = "10 reputaciones Exaltado",
 	[-65] = "5 reputaciones Exaltado",
 	[-64] = "Eleva una reputación a Exaltado",
@@ -30125,14 +30443,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con los Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -30166,6 +30479,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -30358,6 +30676,8 @@ L.DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的
 L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
 L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
+L.DECOR_CHECKBOX_TOOLTIP = "启用此选项以跟踪战团装饰完成情况。";
+L.DECOR_ID = "装饰 ID";
 L.DELETE_CHARACTER = "右击删除此角色";
 L.DELETE_LINKED_ACCOUNT = "右击删除此链接帐号";
 L.DELETE_LINKED_CHARACTER = "右击删除此链接角色";
@@ -30979,8 +31299,14 @@ localize(L.HEADER_NAMES, {
 	[-59] = "武器大师",
 	[-61] = "世界首领",
 	[-63] = "地区掉落",
+	[-69] = "安其拉神殿困难模式",
 	[-74] = "梦魇之龙",
+	[-97] = "圣物",
 	[-103] = "资料片前夕",
+	[-229] = "来源 ID",
+	[-232] = "补丁 1.x.x",
+	[-243] = "护甲附魔",
+	[-245] = "武器附魔",
 	[-298] = HONOR .. PAPERDOLL_SIDEBAR_TITLES,
 	[-316] = "魁梧斗殴",
 	[-317] = "野生多晶型物",
@@ -30997,6 +31323,8 @@ localize(L.HEADER_NAMES, {
 	[-362] = "图书馆",
 	[-363] = "武器库",
 	[-364] = "修道院",
+	[-365] = "正门",
+	[-366] = "后门",
 	[-367] = "阿塔莱防御者",
 	[-481] = "安其拉之战捐献",
 	[-483] = "流沙节杖",
@@ -31014,6 +31342,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "时令鱼类：夏季鲈鱼",
 	[-587] = "时令鱼类：冬鱿鱼",
 	[-588] = "荆棘谷钓鱼大赛",
+	[-611] = "安其拉三宝",
 	[-613] = "梦魇林地",
 	[-614] = "学徒",
 	[-615] = "邪咒歌剧",
@@ -31024,10 +31353,25 @@ localize(L.HEADER_NAMES, {
 	[-625] = "与奈奥拉谈",
 	[-626] = "与罗穆卢斯修士交谈",
 	[-627] = "黑石大爆发",
+	[-632] = "探索赛季",
+	[-633] = "理解",
+	[-634] = "等级 1",
+	[-635] = "等级 2",
+	[-636] = "等级 3",
+	[-637] = "怪物狩猎",
+	[-638] = "梦魇进犯",
+	[-639] = "铭刻",
+	[-640] = "灵魂掮客",
+	[-645] = "遭劫货物",
+	[-646] = "制造",
+	[-647] = "采集",
 	[-688] = "鲜血之月",
+	[-697] = "祖尔格拉布哈卡困难模式",
 });
 localize(L.HEADER_DESCRIPTIONS, {
+	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
+	[-43] = "宠物对战相关任务和驯练师。",
 	[-44] = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
 	[-47] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-59] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个职业在创建时都会学习所有适合该职业的武器熟练度。不久之后，武器大师就被从游戏中删除了。",
@@ -31036,7 +31380,18 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "此列表中的物品是以下物品的共享外观。在唯一外观模式下，此列表可帮助了解特定物品被标记为已收藏的原因。",
 	[-342] = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
 	[-343] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
+	[-355] = "该副本的此部分可从最东侧的入口进入。（右侧）",
+	[-356] = "该副本的此部分可从最北侧的入口进入。",
+	[-357] = "该副本的此部分可从最西侧的入口进入。（左侧）",
 	[-613] = "梦魇林地可在通往翡翠梦境的传送门附近找到。",
+	[-632] = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
+	[-639] = "铭刻是最近在发现季节宣布的一个新系统。它允许每个职业通过解锁新的独特能力来定制他们的游戏体验！",
+	[-645] = "'遭劫货物'任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将'遭劫货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
+	[-688] = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
+});
+localize(L.HEADER_LORE, {
+	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
+	[-318] = "地下城套装的第2套职业套装，通常称为T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
@@ -31727,6 +32082,10 @@ localize(ObjectNames, {
 	[424075] = "四边定位信标002",
 	[424076] = "四边定位信标003",
 	[424077] = "四边定位信标004",
+	[439627] = "梦之根",
+	[439628] = "愚人金矿脉",
+	[441124] = "梦触龙蛋",
+	[441128] = "震动的箱子",
 	[441848] = "小地洞",
 	[441946] = "月亮神龛",
 	[441947] = "野兽神龛",
@@ -31975,7 +32334,7 @@ for key,value in pairs({
 	[522] = "在一个势力中达到崇拜声望。",
 	[523] = "在5个势力中达到崇拜声望。",
 	[524] = "在10个势力中达到崇拜声望。",
-	[546] = "购买7个额外的银行栏位。",
+	[546] = "购买6个额外的银行栏位。",
 	[627] = "探索丹莫罗，走过世界地图中被遮住的各个角落。",
 	[628] = "击败艾德温·范克里夫。",
 	[629] = "击败饥饿者塔拉加曼。",
@@ -32113,35 +32472,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "获得25种坐骑",
-	[-175] = "获得10种坐骑",
-	[-154] = "获得25个宠物小伙伴",
-	[-140] = "获得一个宠物小伙伴",
-	[-136] = "初级骑术",
-	[-125] = "达到100000个荣誉消灭",
-	[-124] = "达到50000个荣誉消灭",
-	[-90] = "裁缝",
-	[-89] = "工程学",
-	[-88] = "附魔",
-	[-87] = "采矿",
-	[-86] = "铭文",
-	[-85] = "珠宝加工",
-	[-84] = "剥皮",
-	[-83] = "制皮",
-	[-82] = "草药学",
-	[-81] = "锻造",
-	[-80] = "炼金术",
+	[-175] = "获得25种坐骑",
+	[-174] = "获得10种坐骑",
+	[-153] = "获得25个宠物小伙伴",
+	[-139] = "获得一个宠物小伙伴",
+	[-135] = "初级骑术",
+	[-124] = "达到100000个荣誉消灭",
+	[-123] = "达到50000个荣誉消灭",
+	[-89] = "裁缝",
+	[-88] = "工程学",
+	[-87] = "附魔",
+	[-86] = "采矿",
+	[-85] = "铭文",
+	[-84] = "珠宝加工",
+	[-83] = "剥皮",
+	[-82] = "制皮",
+	[-81] = "草药学",
+	[-80] = "锻造",
 	[-79] = "炼金术",
-	[-78] = "锻造",
-	[-77] = "制皮",
-	[-76] = "采矿",
-	[-75] = "附魔",
-	[-74] = "裁缝",
-	[-73] = "剥皮",
-	[-72] = "珠宝加工",
-	[-71] = "铭文",
-	[-70] = "草药学",
-	[-69] = "工程学",
+	[-78] = "炼金术",
+	[-77] = "锻造",
+	[-76] = "制皮",
+	[-75] = "采矿",
+	[-74] = "附魔",
+	[-73] = "裁缝",
+	[-72] = "剥皮",
+	[-71] = "珠宝加工",
+	[-70] = "铭文",
+	[-69] = "草药学",
+	[-68] = "工程学",
 	[-66] = "10个势力达到崇拜声望",
 	[-65] = "5个势力达到崇拜声望",
 	[-64] = "1个势力达到崇拜声望",
@@ -33128,14 +33487,9 @@ for key,value in pairs({
 	[8740] = "部落徽记",
 	[8741] = "联盟徽记",
 	[8749] = "血色领地废墟",
-	[8818] = "在血帆海盗的声望达到尊敬",
-	[8819] = "藏宝海湾崇拜",
-	[8820] = "永望镇崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齿城崇拜",
-	[8823] = "暗月马戏团崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "火焰之王的精华",
 	[8894] = "胜利者胸甲",
 	[8895] = "复仇者的胸甲",
@@ -33169,6 +33523,11 @@ for key,value in pairs({
 	[13371] = "联盟勋章",
 	[17023] = "辛德拉崇拜",
 	[54579] = "奥妮克希亚",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -33347,7 +33706,7 @@ L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成時套用|r";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "啟用指標提示";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在指標提示中查看 ATT 提供的資訊，請啟用此選項。這包括其他玩家發送的物品連接，在拍賣行、在地城助手、在你的背包裡、在世界、在 NPC 等等。\n\n如果你關閉了這個功能，就會嚴重降低你快速判斷是否需要擊殺首領或學習外觀的能力。\n\n我們建議你保持此設定。";
 L.ENCOUNTER_ID = "首領戰鬥 ID";
-L.EVENT_ACTIVE = "啟動:";
+L.EVENT_ACTIVE = "啟用:";
 L.EVENT_END = "結束:";
 L.EVENT_SCHEDULE = "事件時程表";
 L.EVENT_START = "開始:";
@@ -33437,6 +33796,7 @@ L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略裝備綁定/拾取
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤幻象。\n\n這些看起來很酷的塑形效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
 L.INCLUDE_ORIGINAL_CHECKBOX = "原始來源";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜歡在指標提示中的共享外觀列表中看到原始來源資訊，請啟用此選項。";
+L.INFORMATION_PAGE = "資訊";
 L.INSTANCE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機副本。";
 L.ITEM_DESC = "點擊此按鈕可依據缺少的內容選擇隨機物品。";
 L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 |c" .. _.DefaultColors.Account .. "帳號模式|r。|r";
@@ -33452,6 +33812,7 @@ L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] 已加入收藏。在資料庫�
 L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
 L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 L.ITEM_LEVEL = "物品等級";
+L.ITEM_STRING = "物品字串";
 L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在指標提示中查看所有伺服器上已知此配方的完整角色列表，請啟用此選項。";
 L.LAYER = "相位";
@@ -33504,6 +33865,7 @@ L.MINIMAP_SLIDER = "小地圖按鈕尺寸";
 L.MINIMAP_SLIDER_TOOLTIP = "使用此選項可自訂小地圖按鈕的大小。\n\n預設：36";
 L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。";
 L.MISSION_ID = "任務 ID";
+L.MOD_ID = "模組 ID";
 L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的內容總結在這裡。啟用所有 |c" .. _.DefaultColors.Insane .. "彩色選項|r 解鎖 |c" .. _.DefaultColors.Insane .. "瘋狂模式|r。|r";
 L.MODULES = "模組";
 L.MODULES_LABEL = "模組和小列表";
@@ -33524,7 +33886,7 @@ L.NESTED_QUEST_REQUIREMENTS = "多重任務需要";
 L.NEVER_IMPLEMENTED = "從未實裝";
 L.NEVER_IMPLEMENTED_DESC = "這裡的物品在技術上存在於遊戲內，但從未向玩家開放過";
 L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
-L.NEW_VERSION_FLAVORS = {"因為萬物都飢餓。","無敵下次|cffffaaaa|肯定|r會掉落"};
+L.NEW_VERSION_FLAVORS = {"因為 AllTheThings 餓了。","下次|cffffaaaa一定|r會掉落無敵！","否則今晚會有魚人在你窗外尖叫","因為所謂的收藏不過是換個說法的囤積癖。","而 Crieve 會幫一隻烏龜重新入水。","否則你的戰鬥寵物要成立工會了。"};
 L.NEW_WITH_PATCH = "最新加入內容";
 L.NEW_WITH_PATCH_TOOLTIP = "這會顯示遊戲最新更新中加入的所有內容。";
 L.NO_COORDINATES_FORMAT = "%s 沒有已知座標";
@@ -33534,6 +33896,7 @@ L.NO_LINKED_ACCOUNTS = "未找到連接帳號。";
 L.NO_SEARCH_METHOD = "未指定搜尋方法。";
 L.NOT_AVAILABLE_IN_PL = "在個人拾取中不可用。";
 L.NOTHING_TO_SELECT_FROM = "沒有什麼可以隨意選擇的。如果在“設定”中啟用了“臨時更新”，則必須在使用此視窗之前更新主列表（/att）。";
+L.OBJECT = "物體";
 L.OBJECT_TYPE = "目標類型";
 L.OBJECTIVES = "目標";
 L.ONLY_NOT_TRASH = "排除垃圾物品";
@@ -33555,6 +33918,7 @@ L.PERCENTAGES_CHECKBOX = "顯示完成百分比";
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比請啟用此選項。\n\n按完成度對組進行著色不受影響。";
 L.PERSONAL_LOOT_DESC = "每位玩家都有獨立的機會拾取對自己職業有用的物品…\n\n…或者像戒指這樣的無用之物。\n\n如果是自己一個人的話，點擊兩次就會自動創建一個隊伍。";
 L.PET_DESC = "點擊此按鈕可依據缺少的內容選擇隨機寵物。";
+L.PHASES_PAGE = "階段";
 L.PLAY_DEATH_SOUND_CHECKBOX = "死亡時播放音效";
 L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "如果你想在死亡時聽到音效，請啟用此選項。";
 L.PLAYER_COORDINATES = "玩家座標";
@@ -33567,6 +33931,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s 完美主
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s消滅者|r";
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA擁抱者%s|r";
 L.PLEASE_REPORT_MESSAGE = "請把錯誤回報給 ATT Discord 的 #classic-errors！謝謝！";
+L.POPOUT = "彈出列表";
 L.PRECISION_SLIDER = "百分比精確度";
 L.PRECISION_SLIDER_TOOLTIP = "使用此選項可自訂百分比計算中所需的精度級別。\n\n預設：2";
 L.PREREQUISITE_QUESTS = "必須先完成一些前置任務才有可能獲得：";
@@ -33601,6 +33966,7 @@ L.QUEST_DESC = "點擊此按鈕可依據缺少的內容選擇隨機任務。";
 L.QUEST_GIVER = "任務給予者";
 L.QUEST_GIVERS = "任務給予者";
 L.QUEST_ID = "任務 ID";
+L.QUEST_ITEMS = "任務物品";
 L.QUEST_LOOP = "可能剛剛從無限源任務循環中爆發出來。";
 L.QUEST_MAY_BE_REMOVED = "擷取任務資訊失敗。這個任務可能已從遊戲中移除。";
 L.QUEST_OBJECTIVE_INVALID = "無效的任務目標";
@@ -33628,6 +33994,7 @@ L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接�
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
+L.REPEATABLES_LABEL = "可重複";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "回報已收藏事物";
 L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一條訊息，詳細說明收藏了哪些物品或從收藏中刪除了哪些物品，請啟用此選項。\n\n注意：這是因為暴雪默默的加入了外觀和其他收藏品並且忽略了通知你可用的其他物品。\n\n我們建議你保持此設定。如果你打開了這個選項，你會聽到警告聲。";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX = "回報任務";
@@ -33737,6 +34104,7 @@ L.STORE_IN_PROFILE_BUTTON_TOOLTIP = "預設情況下，ATT 會依角色儲存這
 L.SUMMARIZE_CHECKBOX = "總結事物";
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "啟用該選項可在指標提示中總結事物。例如，如果一個事物可以變成另一個事物的商人，那麼在指標提示中顯示另一個事物，以提供其多種用途的可見性。如果一個事物作為許多其他事物的容器，這個選項將顯示該容器所包含的所有其他事物。\n\n我們建議你保持此設定開啟。";
 L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
+L.SYMLINK = "符號連結";
 L.SYNC_CHARACTERS_TOOLTIP = "這會顯示您帳號中的所有角色。";
 L.TELEPORT_TO_FROM_DUNGEON = "傳送至/出地城";
 L.TELEPORT_TO_FROM_DUNGEON_DESC = "點擊此處傳送到當前地城或從當前地城傳送出去。\n\n潘達利亞之謎可以這種方式快速傳送到當前副本之外。";
@@ -33839,11 +34207,17 @@ localize(L.HEADER_NAMES, {
 	[-63] = "地區掉落",
 	[-74] = "夢魘之龍",
 	[-103] = "資料片前夕",
+	[-243] = "護甲附魔",
 	[-318] = "T0.5套裝",
 	[-341] = "共享外觀",
 	[-342] = "獨特外觀",
 	[-350] = "四騎士",
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (東)",
+	[-362] = "圖書館",
+	[-363] = "武器庫",
+	[-365] = "主門",
+	[-366] = "僕從入口",
+	[-367] = "阿塔萊防衛者",
 	[-481] = "安其拉之戰捐獻",
 	[-483] = "流沙節杖",
 	[-520] = "暴雪嘉年華",
@@ -33859,20 +34233,37 @@ localize(L.HEADER_NAMES, {
 	[-586] = "季節性魚類：夏日鱸魚",
 	[-587] = "季節性魚類：冬魷魚",
 	[-588] = "荊棘谷釣魚大賽",
+	[-611] = "異種蠍皇族",
 	[-613] = "夢魘林地",
 	[-614] = "(初級)學徒",
 	[-615] = "詛咒歌劇",
 	[-627] = "黑石爆發",
+	[-632] = "探索賽季",
+	[-634] = "等級 1",
+	[-635] = "等級 2",
+	[-636] = "等級 3",
+	[-637] = "怪物狩獵",
+	[-638] = "夢魘入侵",
+	[-639] = "紋刻",
+	[-640] = "靈魂仲介者",
+	[-645] = "遭攔截的物資",
+	[-646] = "製作",
+	[-647] = "採集",
 	[-688] = "血月",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "術士可以教導他們的惡魔新技能，一些高等級的魔典只能從你陣營首都的惡魔訓練師那裡購買。",
 	[-36] = "你可能需要在特定節日的活動中才能完成本節中的事物。",
+	[-43] = "這個區塊包含與寵物對戰相關的任務與訓練師。",
+	[-44] = "這個區塊只會顯示你目前角色的專業技能，除非處於帳號或是除錯模式",
 	[-59] = "武器大師是一個 NPC，為角色提供學習特定武器技能的機會，不同武器大師的可用性各不相同。所有武器技能都可以在 1 级進行訓練，長柄武器除外，需要 20 级。\n\n在更新 4.0.1 中，武器大師的訓練已经過時，因為现在每個職業在創建时都會學習所有適合該職業的武器熟練度。不久之後，武器大師就被從遊戲中删除了。",
 	[-355] = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	[-613] = "夢魘林地可在通往翡翠夢境的傳送門附近找到。",
+	[-632] = "這個賽季起初將會有 25 級的上限，還會帶來全新的 25 級終局內容，包括帶有全新機制的 10 人玩家黑澗深淵副本、全新設計的首領來挑戰玩家的戰術實力，同時還會給予新獎勵。",
+	[-639] = "紋刻是最近在探索賽季實現的一個新系統，它允許每個職業通過解鎖新的獨特能力來自訂他們的遊戲體驗！",
+	[-645] = "'遭攔截的物資'任務物品會從艾澤拉斯各地6級及以上的怪物掉落。這些任務要求將'遭攔截的物資'交付給某個組織的代表，以換取少量銀幣、經驗值和聲望。當然，物資運送中有一些物品遺失，你可以補充這些物品以獲得更多的聲望獎勵。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
@@ -34096,7 +34487,7 @@ for key,value in pairs({
 	[522] = "1項聲望提升至崇拜。",
 	[523] = "5項聲望提升至崇拜。",
 	[524] = "10項聲望提升至崇拜。",
-	[546] = "購買7個銀行欄位。",
+	[546] = "購買6個銀行欄位。",
 	[627] = "探索丹莫洛，解開世界地圖上未知的區域。",
 	[628] = "擊敗艾德溫·范克里夫。",
 	[629] = "擊敗『飢餓者』塔拉加曼。",
@@ -34234,35 +34625,35 @@ for key,value in pairs({
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
-	[-176] = "獲得25隻坐騎",
-	[-175] = "獲得10隻坐騎",
-	[-154] = "獲得25隻寵物夥伴",
-	[-140] = "獲得一隻寵物夥伴",
-	[-136] = "初級騎術",
-	[-125] = "達成100000次榮譽擊殺",
-	[-124] = "達成50000次榮譽擊殺",
-	[-90] = "裁縫",
-	[-89] = "工程學",
-	[-88] = "附魔",
-	[-87] = "採礦",
-	[-86] = "銘文學",
-	[-85] = "珠寶設計",
-	[-84] = "剝皮",
-	[-83] = "製皮",
-	[-82] = "草藥學",
-	[-81] = "鍛造",
-	[-80] = "鍊金術",
+	[-175] = "獲得25隻坐騎",
+	[-174] = "獲得10隻坐騎",
+	[-153] = "獲得25隻寵物夥伴",
+	[-139] = "獲得一隻寵物夥伴",
+	[-135] = "初級騎術",
+	[-124] = "達成100000次榮譽擊殺",
+	[-123] = "達成50000次榮譽擊殺",
+	[-89] = "裁縫",
+	[-88] = "工程學",
+	[-87] = "附魔",
+	[-86] = "採礦",
+	[-85] = "銘文學",
+	[-84] = "珠寶設計",
+	[-83] = "剝皮",
+	[-82] = "製皮",
+	[-81] = "草藥學",
+	[-80] = "鍛造",
 	[-79] = "鍊金術",
-	[-78] = "鍛造",
-	[-77] = "製皮",
-	[-76] = "採礦",
-	[-75] = "附魔",
-	[-74] = "裁縫",
-	[-73] = "剝皮",
-	[-72] = "珠寶設計",
-	[-71] = "銘文學",
-	[-70] = "草藥學",
-	[-69] = "工程學",
+	[-78] = "鍊金術",
+	[-77] = "鍛造",
+	[-76] = "製皮",
+	[-75] = "採礦",
+	[-74] = "附魔",
+	[-73] = "裁縫",
+	[-72] = "剝皮",
+	[-71] = "珠寶設計",
+	[-70] = "銘文學",
+	[-69] = "草藥學",
+	[-68] = "工程學",
 	[-66] = "10項聲望崇拜",
 	[-65] = "5項聲望崇拜",
 	[-64] = "取得一項聲望崇拜",
@@ -35249,14 +35640,9 @@ for key,value in pairs({
 	[8740] = "部落徽記",
 	[8741] = "聯盟徽記",
 	[8749] = "血色領區廢墟",
-	[8818] = "血帆海盜尊敬",
-	[8819] = "藏寶海灣崇拜",
-	[8820] = "永望鎮崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齒城崇拜",
-	[8823] = "暗月馬戲團崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "炎魔的精華",
 	[8894] = "征服者的胸甲",
 	[8895] = "復仇者的胸甲",
@@ -35290,6 +35676,11 @@ for key,value in pairs({
 	[13371] = "聯盟勳章",
 	[17023] = "辛德拉崇拜。",
 	[54579] = "奧妮克希亞",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end

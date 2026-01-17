@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
 				}),
 				q(73079, {	-- Dragonrider Racing - Morqut Ascent
-					["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+					["coord"] = { 34.0, 59.8, THE_FORBIDDEN_REACH },
 				}),
 				q(73082, {	-- Dragonrider Racing - Southern Reach Route
 					["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },

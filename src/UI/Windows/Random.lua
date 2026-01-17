@@ -1,7 +1,8 @@
 -- App locals
-local appName, app = ...;
-local contains, CloneReference =
-	app.contains, app.CloneReference;
+local _, app = ...;
+local L = app.L;
+local CloneReference = app.CloneReference;
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Global locals
 local ipairs, tinsert, math_max, pairs, unpack, wipe
@@ -28,23 +29,13 @@ end
 
 -- Local Functions
 local SearchFilter;
-local excludedZones = {
-	[12] = 1,	-- Kalimdor
-	[13] = 1,	-- Eastern Kingdoms
-	[101] = 1,	-- Outland
-	[113] = 1,	-- Northrend
-	[424] = 1,	-- Pandaria
-	[948] = 1,	-- The Maelstrom
-	[572] = 1,	-- Draenor
-	[619] = 1,	-- Broken Isles
-	[905] = 1,	-- Argus
-	[876] = 1,	-- Kul'Tiras
-	[875] = 1,	-- Zandalar
-	[947] = 1,	-- Cosmic (Classic)
-	[1414] = 1,	-- Kalimdor (Classic)
-	[1415] = 1,	-- Eastern Kingdoms (Classic)
-	[1945] = 1,	-- Outland (Classic)
-};
+local excludedZones = setmetatable({}, {
+	__index = function(t, mapID)
+		local info = C_Map_GetMapInfo(mapID);
+		t[mapID] = not info or info.mapType < 3;
+		return t[mapID];
+	end
+});
 local everythingFilter = function(t)
 	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.expansionID;
 end;
@@ -58,7 +49,6 @@ local searchMethods = {
 				local results = {};
 				app:BuildFlatSearchFilteredResponse(o.g, everythingFilter, results);
 				for i,o in ipairs(results) do
-					local saved = o.saved;
 					if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
 						if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
 							tinsert(cache, o);
@@ -79,7 +69,6 @@ local searchMethods = {
 	end,
 	Quest = function(self, cache)
 		for i,o in ipairs(Search("questID")) do
-			local saved = o.saved;
 			if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
 				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
 					tinsert(cache, o);
@@ -156,7 +145,7 @@ local function Reroll(self)
 		end
 		self:AssignChildren();
 		self:ExpandData(true);
-		self:Update();
+		self:Update(true);
 	end
 end
 local function SetSearchFilter(self, filter)
@@ -174,18 +163,11 @@ app:CreateWindow("Random", {
 	OnSave = function(self, settings)
 		settings.SearchFilter = SearchFilter;
 	end,
-	OnRebuild = function(self, ...)
-		if self.data then return; end
-
-		-- For this window's options to work, Prime needs to be fully initialized.
-		local prime = app:GetWindow("Prime");
-		if not prime then return; end
-		if not prime.data then prime:ForceUpdate(); end
-
+	OnInit = function(self, handlers)
 		self.defaultHeader = {
-			text = "Random - Go Get 'Em!",
+			text = L.GO_GO_RANDOM,
 			icon = app.asset("WindowIcon_Random"),
-			description = "This window allows you to randomly select a place or item to get. Go get 'em!",
+			description = L.GO_GO_RANDOM_DESC,
 			expanded = true,
 			visible = true,
 			back = 1,
@@ -193,9 +175,9 @@ app:CreateWindow("Random", {
 			g = { },
 			options = {
 				{
-					text = "Change Search Filter",
+					text = L.APPLY_SEARCH_FILTER,
 					icon = app.asset("Button_Search"),
-					description = "Click this to change your search filter.",
+					description = L.APPLY_SEARCH_FILTER_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
 						self:SetData(self.filterOptions);
@@ -203,32 +185,42 @@ app:CreateWindow("Random", {
 					end,
 				},
 				{
-					text = "Reroll",
+					text = L.REROLL,
 					icon = app.asset("Button_Reroll"),
-					description = "Click this button to reroll using the active filter.",
+					description = L.REROLL_DESC,
 					visible = true,
 					OnClick = function(row, button)
 						Reroll(self);
 						return true;
 					end,
 					OnUpdate = function(data)
-						data.text = "Reroll: " .. SearchFilter;
+						data.text = L.REROLL .. ": " .. SearchFilter;
 						data.visible = true;
 						return true;
 					end,
 				}
 			},
+			OnUpdate = function(data)
+				local g = data.g;
+				if #g < 1 then
+					data.OnUpdate = nil;
+					-- For this window's options to work, Prime needs to be fully initialized.
+					local prime = app:GetWindow("Prime");
+					if not prime.data then prime:ForceUpdate(); end
+					Reroll(self);
+				end
+			end
 		};
 		self.filterOptions = {
-			text = "Apply a Search Filter",
+			text = L.APPLY_SEARCH_FILTER,
 			icon = app.asset("Button_Search"),
-			description = "Please select a search filter option.",
+			description = L.APPLY_SEARCH_FILTER_DESC,
 			expanded = true,
 			visible = true,
 			back = 1,
 			g = {
 				setmetatable({
-					['description'] = "Click this button to search... EVERYTHING.",
+					['description'] = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						return SetSearchFilter(self, "ATT");
@@ -295,16 +287,6 @@ app:CreateWindow("Random", {
 				},
 			},
 		};
-
 		self.data = self.defaultHeader;
-		Reroll(self);
 	end,
-	--OnUpdate = function(self, ...)
-		-- Update the groups without forcing Debug Mode.
-		--local visibilityFilter = app.Modules.Filter.Get.Visible();
-		--app.Modules.Filter.Set.Visible(true);
-		--self:DefaultUpdate(...);
-		--app.Modules.Filter.Set.Visible(visibilityFilter);
-		--return false;
-	--end
 });

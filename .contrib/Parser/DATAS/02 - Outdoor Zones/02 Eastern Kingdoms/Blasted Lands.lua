@@ -359,7 +359,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/9 Okril'lon Infantry slain
 							["provider"] = { "n", 42359 },	-- Okril'lon Infantry
-							["coord"] = { 53, 14.2, BLASTED_LANDS },
+							["coord"] = { 53.0, 14.2, BLASTED_LANDS },
 						}),
 						i(59373, {	-- Nethergarde Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -952,7 +952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7582,	-- The Prison's Casing
 					},
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -1356,7 +1356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7581, {	-- The Prison's Bindings
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARLOCK },
@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
-					["coord"] = { 34, 50.2, BLASTED_LANDS },
+					["coord"] = { 34.0, 50.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["classes"] = { WARLOCK },
@@ -1504,7 +1504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Examined the Horde Plans
 							["provider"] = { "o", 203225 },	-- Horde Plans
-							["coord"] = { 53, 49, BLASTED_LANDS },
+							["coord"] = { 53.0, 49.0, BLASTED_LANDS },
 						}),
 						i(59394, {	-- Gloves of Foolish Innocence
 							["timeline"] = { ADDED_4_0_3 },

@@ -4,7 +4,7 @@
 root(ROOTS.Housing, n(FACTIONS, {
 	["timeline"] = { ADDED_12_0_0 },	-- TODO: verify, maybe hotfixed in earlier
 	["groups"] = {
-		faction(2663, {	-- Meerah
+			faction(2663, {	-- Meerah
 		}),
 	},
-}))
+}));

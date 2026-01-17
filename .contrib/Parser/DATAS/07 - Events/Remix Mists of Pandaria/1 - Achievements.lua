@@ -25,7 +25,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(220766),	-- August Phoenix (MOUNT!)
 		}),
 		ach(40223, {	-- Timerunner
-			title(551),	-- Timerunner (TITLE!)
+			title(551),	-- Timerunner
 			i(208555),	-- Timerunner's Idol
 		}),
 	}),

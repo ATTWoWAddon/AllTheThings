@@ -419,7 +419,7 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 		return OnTooltipForCriteriaData;
 	end,
 },
-"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 0; end,
+"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11 or t.type == 0 or t.type == 74; end,	-- 74 appears to be if someone has a title, but no id is provided.
 "ForBankSlots", DefaultCriteriaFields, function(t) return t.type == 45; end,
 "ForSkillRank", ForSkillRankFields, function(t) return t.type == 40; end,
 "ForSkillCount", ForSkillCountFields, function(t) return t.type == 75; end,
@@ -428,7 +428,7 @@ local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 "ForHonorableKills", DefaultCriteriaFields, function(t) return t.type == 113; end,
 "ForReputation", ForReputationFields, function(t) return t.type == 46; end,
 "ForLevel", ForLevelFields, function(t) return t.type == 5; end,
-"ForOwnItem", ForOwnItemFields, function(t) return t.type == 36 or t.type == 57; end,
+"ForOwnItem", ForOwnItemFields, function(t) return t.type == 36 or t.type == 57 or t.type == 41 or t.type == 42; end,	-- 41 is using the item, 42 is for specifically looting the item.
 "ForQuest", ForQuestFields, function(t) return t.type == 27; end,
 "ForSpells", ForSpellsFields, function(t) return t.type == 34; end,
 "ForExploration", ForExplorationFields, function(t)

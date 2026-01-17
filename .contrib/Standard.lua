@@ -244,7 +244,7 @@ o(objectID, {	-- Object Name
 Example:
 o(373568, {	-- Provis Cache
 	["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
-	["coord"] = { 42, 51.9, ZERETH_MORTIS },
+	["coord"] = { 42.0, 51.9, ZERETH_MORTIS },
 	["questID"] = 65183,
 	["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
 	["groups"] = {

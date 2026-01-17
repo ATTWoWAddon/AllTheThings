@@ -1560,22 +1560,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72988 },	-- The Booty Bay Journal
 						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 41.3, 73.1, THE_CAPE_OF_STRANGLETHORN },
+						["groups"] = {
+							i(258982, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Belt
+							i(258981, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Girdle
+							i(258983, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Sash
+							i(258980, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Waistguard
+						},
 					}),
 					q(72529, {	-- Information is King
 						["sourceQuests"] = { 72527 },	-- No Such Thing as Bad Luck
 						["provider"] = { "n", 2846 },	-- Blixrez Goodstitch
 						["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
-						["groups"] = {
-							i(201986),	-- Crocolisk Skin
-						},
+						["groups"] = { i(201986) },	-- Crocolisk Skin (QI!)
 					}),
 					q(72530, {	-- Anyway, I Started Bribing
 						["sourceQuests"] = { 72529 },	-- Information is King
 						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.8, 74.0, THE_CAPE_OF_STRANGLETHORN },
-						["groups"] = {
-							i(202271),	-- Pouch of Gold Coins (QI!)
-						},
+						["groups"] = { i(202271) },	-- Pouch of Gold Coins (QI!)
 					}),
 					q(72532, {	-- Money, Money, Money!
 						["sourceQuests"] = { 72530 },	-- Anyway, I Started Bribing
@@ -1601,6 +1603,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.3, 77.4, THE_CAPE_OF_STRANGLETHORN },
+						["groups"] = {
+							i(259014, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Chestplate
+							i(259015, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Hauberk
+							i(259016, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Vest
+							i(259013, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Vestments
+						},
 					}),
 					q(73181, {	-- Zeroing Debt
 						["sourceQuests"] = { 72534 },	-- Settled With the Baron
@@ -1676,16 +1684,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 199361 },	-- Kirygosa
 						["coord"] = { 46.5, 44.5, THE_JADE_FOREST },
 						["groups"] = {
-							i(203182),	-- Fish Food
+							i(203182),	-- Fish Food (QI!)
+							--
+							i(258992, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Gauntlets
+							i(258993, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Gloves
+							i(258991, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Grips
+							i(258994, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Handguards
 						},
 					}),
 					q(72653, {	-- Local Deliveries
 						["sourceQuests"] = { 72650 },	-- Warm Winds and Water
 						["provider"] = { "n", 199361 },	-- Kirygosa
 						["coord"] = { 46.5, 44.5, THE_JADE_FOREST },
-						["groups"] = {
-							i(203228),	-- Wild Blue Yonders
-						},
+						["groups"] = { i(203228) },	-- Wild Blue Yonders (QI!)
 					}),
 					q(72654, {	-- Up, Up, and Home
 						["sourceQuests"] = {
@@ -1709,6 +1720,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72655 },	-- A Drink With Kalecgos
 						["provider"] = { "n", 201019 },	-- Kalecgos
 						["coord"] = { 45.9, 43.6, THE_JADE_FOREST },
+						["groups"] = {
+							i(258986, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Cap
+							i(258987, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Greathelm
+							i(258985, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Helm
+							i(258984, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Hood
+						},
 					}),
 				}),
 				header(HEADERS.Quest, 72939, {	-- Theramore
@@ -1733,6 +1750,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 73188 },	-- The Sullied Banner
 						["provider"] = { "n", 199736 },	-- Surigosa
 						["coord"] = { 62.9, 49.7, DUSTWALLOW_MARSH },
+						["groups"] = {
+							i(259004, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Bindings
+							i(259003, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Bracers
+							i(259002, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Vambraces
+							i(259001, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Wraps
+						},
 					}),
 					q(72831, {	-- Creative Solutions
 						["sourceQuests"] = { 73188 },	-- The Sullied Banner
@@ -1751,6 +1774,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72833 },	-- Breaking the Cycle
 						["provider"] = { "n", 199736 },	-- Surigosa
 						["coord"] = { 67.0, 54.6, DUSTWALLOW_MARSH },
+						["groups"] = {
+							i(259007, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Mantle
+							i(259008, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Monnion
+							i(259006, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Pauldrons
+							i(259005, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Spaulders
+						},
 					}),
 				}),
 				header(HEADERS.Quest, 72656, {	-- Winterspring
@@ -1775,14 +1804,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72657 },	-- A Protector of Magic
 						["provider"] = { "n", 199370 },	-- Haleh
 						["coord"] = { 48.1, 59.1, WINTERSPRING },
-						["groups"] = {
-							i(203459),	-- Totemic Ruins
-						},
+						["groups"] = { i(203459) },	-- Totemic Ruins (QI!)
 					}),
 					q(72659, {	-- Test Subject
 						["sourceQuests"] = { 74354 },	-- Artifacts Abound
 						["provider"] = { "n", 199370 },	-- Haleh
 						["coord"] = { 48.1, 59.1, WINTERSPRING },
+						["groups"] = {
+							i(259012, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Boots
+							i(259011, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Cover
+							i(259009, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Sabatons
+							i(259010, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Slippers
+						},
 					}),
 					q(72660, {	-- Owl of a Sudden
 						["sourceQuests"] = { 72659 },	-- Test Subject
@@ -1798,6 +1831,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72661 },	-- A Wyrm Rest
 						["provider"] = { "n", 199404 },	-- Sindragosa
 						["coord"] = { 32.3, 49.1, WINTERSPRING },
+						["groups"] = { i(258979, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Azure Guardian's Cloak
 					}),
 				}),
 				header(HEADERS.Quest, 75244, {	-- Reunited Again
@@ -1860,12 +1894,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["groups"] = {
 							ach(17773, {	-- A Blue Dawn
 								["timeline"] = { ADDED_10_1_7 },
-								["groups"] = {
-									i(248104, {	-- Pentagonal Stone Table (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
-									}),
-								},
+								["groups"] = { i(248104, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Pentagonal Stone Table (DECOR!)
 							}),
+							i(259019, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Blade
+							i(259022, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Bolter
+							i(259023, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Chopper
+							i(259025, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Claymore
+							i(259017, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Defender
+							i(259024, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Mace
+							i(259026, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Polearm
+							i(259020, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Stabber
+							i(259021, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Staff
+							i(259018, { ["timeline"] = { ADDED_11_2_7 } }),	-- Azure Guardian's Treatise
 							iensemble(205958),	-- Ensemble: Azure Renewal Finery
 							i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
 								["description"] = "You will find this in your mailbox upon completing this quest",
@@ -1873,6 +1913,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(205959),	-- Letter from Kirygosa
 							i(205970),	-- Azure Flightstone
 						},
+					}),
+					q(91467, {	-- Incarnates on the Move
+						["description"] = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
+						["sourceQuests"] = { 72951 },	-- A Peaceful Farewell
+						["provider"] = { "n", 247407 },	-- Scalecommander Emberthal
+						["coord"] = { 39.4, 63.0, THE_AZURE_SPAN },
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					q(91466, {	-- Aiding the Green Dragons
+						["description"] = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
+						["sourceQuests"] = { 91467 },	-- Incarnates on the Move
+						["provider"] = { "n", 247407 },	-- Scalecommander Emberthal
+						["coord"] = { 39.4, 63.0, THE_AZURE_SPAN },
+						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
 				header(HEADERS.Quest, 73196, sharedData({ ["classes"] = { DRUID, EVOKER, MAGE, PRIEST, SHAMAN, WARLOCK }, }, {	-- Tarecgosa's Rest

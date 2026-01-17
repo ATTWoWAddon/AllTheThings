@@ -421,7 +421,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				39340,	-- Lining the Crucible
 			},
 			["provider"] = { "i", 127877 },	-- Bendy Glass Tubes
-			["coord"] = { 40, 50, 678 },	-- Vault of the Wardens
+			["coord"] = { 40.0, 50.0, 678 },	-- Vault of the Wardens
 			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 		}),
 		q(39344, {	-- Going Underground
@@ -481,7 +481,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
-			["cost"] = {{ "i", 127849, 1 }},	-- 1xFlask of the Countless Armies
+			["cost"] = {{ "i", 127849, 1 }},	-- 1x Flask of the Countless Armies
 		}),
 		q(39348, {	-- Halls of Valor: The Prime Ingredient
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
@@ -489,7 +489,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
-			["cost"] = {{ "i", 127850, 1 }},	-- 1xFlask of Ten Thousand Scars
+			["cost"] = {{ "i", 127850, 1 }},	-- 1x Flask of Ten Thousand Scars
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
@@ -497,7 +497,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls
-			["cost"] = {{ "i", 127847, 1 }},	-- 1xFlask of the Whispered Pact
+			["cost"] = {{ "i", 127847, 1 }},	-- 1x Flask of the Whispered Pact
+			["groups"] = {
+				o(249462, {	-- Crate of Dragur Dust
+					i(136819),	-- Dragur Dust (QI!)
+				}),
+			},
 		}),
 		q(39351, {	-- The Emerald Nightmare: Rage Fire
 			["sourceQuests"] = {
@@ -1167,9 +1172,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(1230870),	-- Haranir Phial of Finesse
 				r(1230858),	-- Light's Preservation
 				r(1230885),	-- Midnight Alchemist Stone
-				r(1230874),	-- Midnight Flask Cauldron
-				r(1230857),	-- Midnight Potion Cauldron
-				r(1230875),	-- Midnight Versatility Flask
+				r(1230874),	-- Cauldron of Sin'dorei Flasks
+				r(1230857),	-- Voidlight Potion Cauldron
+				r(1230875),	-- Flask of Thalassian Resistance
 				r(1230867),	-- Void-Shrouded Tincture
 				r(1230856),	-- Wondrous Synergist
 			}),

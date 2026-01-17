@@ -17,7 +17,7 @@ r(1225278),	-- Sunwell Fish
 r(1225279),	-- Warping Wise
 r(1225280),	-- Twisted Tetra
 r(1225281),	-- Tender Lumifin
-r(1225282),	-- Arcane Wyrmfish
+r(1225282),	-- Wyrmfish \\ Arcane Wyrmfish
 r(1225283),	-- Eversong Trout
 r(1225284),	-- Lucky Loa
 r(1225322),	-- Quel'Thalas \\ Quel'thalas
@@ -28,7 +28,7 @@ r(1225340),	-- Quel'Thalas Anglin' \\ Quel'thalas Anglin'
 r(1226157),	-- Lucky Loa Lure
 r(1226158),	-- Sunwell Fish Lure
 r(1226159),	-- Amani Angler's Ward
-r(1226161),	-- Warping Wise Lure
+r(1226161),	-- Ominous Octopus Lure \\ Warping Wise Lure
 r(1231090),	-- Rootland Crab Lure
 r(1235486),	-- Blood Hunter Lure
 r(1265717),	-- Skill
@@ -59,7 +59,7 @@ r(1225278),	-- Sunwell Fish
 r(1225279),	-- Warping Wise
 r(1225280),	-- Twisted Tetra
 r(1225281),	-- Tender Lumifin
-r(1225282),	-- Arcane Wyrmfish
+r(1225282),	-- Wyrmfish \\ Arcane Wyrmfish
 r(1225283),	-- Eversong Trout
 r(1225284),	-- Lucky Loa
 r(1225322),	-- Quel'Thalas \\ Quel'thalas
@@ -70,7 +70,7 @@ r(1225340),	-- Quel'Thalas Anglin' \\ Quel'thalas Anglin'
 r(1226157),	-- Lucky Loa Lure
 r(1226158),	-- Sunwell Fish Lure
 r(1226159),	-- Amani Angler's Ward
-r(1226161),	-- Warping Wise Lure
+r(1226161),	-- Ominous Octopus Lure \\ Warping Wise Lure
 r(1231090),	-- Rootland Crab Lure
 r(1235486),	-- Blood Hunter Lure
 r(1265717),	-- Skill

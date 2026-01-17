@@ -1,8 +1,9 @@
 local Items = ItemDBConditional;
 local MountDB = MountDB;
 local i = function(itemID, spellID)
-	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_drop"] = { "spellID" } };
-	MountDB[spellID] = Items[itemID]
+	local item = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_drop"] = { "spellID" } }
+	Items[itemID] = item
+	MountDB[spellID] = itemID == 0 and item or Items[itemID]
 end
 -- If the mount is obtained from an item, use i(itemID, mountID);
 -- Otherwise use i(0, mountID); example if the mount is obtained from store.
@@ -1316,6 +1317,7 @@ i(0, 326390);		-- Steamscale Incinerator
 -- PATCH 9.0.1 --
 -----------------
 --- NYI ---
+i(182083, 332482);	-- Bonecleaver's Skullboar
 i(0, 312772);		-- Gilded Prowler
 i(0, 332257);		-- Gorm (Yellow)
 i(0, 332908);		-- PH Devourer Mite (Green)
@@ -1421,10 +1423,11 @@ i(180415, 332245);	-- Winterborn Runestag
 -----------------
 i(184168, 344577);	-- Bound Shadehound
 i(0, 347812);		-- Sapphire Skyblazer
-i(0, 346136);		-- Viridian Phase-Hunter
 -- #if AFTER 11.2.5
+i(248090, 346136);	-- Viridian Phase-Hunter
 i(258430, 348162);	-- Wandering Ancient
 -- #else
+i(0, 346136);		-- Viridian Phase-Hunter
 i(0, 348162);		-- Wandering Ancient
 -- #endif
 --- NYI ---
@@ -1561,7 +1564,11 @@ i(191123, 369666);	-- Grimhowl
 i(190170, 366791);	-- Jigglesworth Sr.
 i(190581, 367676);	-- Nether-Gorged Greatwyrm
 i(192557, 334482);	-- Restoration Deathwalker
+-- #if AFTER 11.2.5
+i(248089, 359843);	-- Tangled Dreamweaver
+-- #else
 i(0, 359843);		-- Tangled Dreamweaver
+-- #endif
 --- NYI ---
 i(0, 367190);		-- [DND] Test Mount JZB
 
@@ -1634,7 +1641,11 @@ i(199412, 387231);	-- Hailstorm Armoredon
 i(194705, 360954);	-- Highland Drake
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
+-- #if AFTER 11.2.5
+i(248088, 369451);	-- Jade, Bright Foreseer
+-- #else
 i(0, 369451);		-- Jade, Bright Foreseer
+-- #endif
 i(201440, 359622);	-- Liberated Slyvern
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(192601, 373859);	-- Loyal Magmammoth
@@ -1668,7 +1679,6 @@ i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(192800, 352926);	-- Skyskin Hornstrider
 --- NYI ---
 i(0, 369480);		-- Cerulean Marsh Hopper
-i(190168, 366789);	-- Crusty Crawler
 i(203226, 399708);	-- Stormfused Salamanther
 
 ------------------
@@ -1739,6 +1749,7 @@ i(258427, 358072);		-- Bound Blizzard
 i(0, 358072);		-- Bound Blizzard
 -- #endif
 i(137576, 171840);	-- Coldflame Infernal
+i(190168, 366789);	-- Crusty Crawler
 i(198824, 385262);	-- Duskwing Ohuna
 i(208598, 419345);	-- Eve's Ghastly Rider
 -- #if AFTER 11.2.5
@@ -2238,18 +2249,17 @@ i(250756, 1251298);	-- Turquoise Courser
 i(250751, 1251295);	-- Twilight Courser
 i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
---- UNSORTED ---
+--- NYI ---
 i(0, 1254363);	-- (PH LEGION REMIX MOUNT)
-i(250927, 1251685);	-- Quirky Turkey
+i(250191, 1250481);	-- Bilebound Ur'zul-horn
+i(239647, 1229264);	-- Bloodguard Fel Ba
+i(250762, 0);		-- Felfueled Memento of the Abyss
+i(250106, 1250287);	-- Floestrider Crest-Horn
+i(239686, 1229286);	-- Forgotten Fel Batt
+i(250726, 1251257);	-- Leyfrost Manasabe
 i(250928, 1251689);	-- Murky Turkey
-i(250191, 1250481);	-- Bilebound Ur'zul
-i(239647, 1229264);	-- Bloodguard Fel Bat
-i(250108, 1250288);	-- Cragstepper Crest-horn
-i(250106, 1250287);	-- Floestrider Crest-horn
-i(239686, 1229286);	-- Forgotten Fel Bat
-i(243194, 1234971);	-- Grandiose Grrloc
-i(250726, 1251257);	-- Leyfrost Manasaber
-i(250727, 1251264);	-- Nightwell Manasaber
+i(250727, 1251264);	-- Nightwell Manasabr
+i(250927, 1251685);	-- Quirky Turkeyer
 i(239666, 1229278);	-- Risen Fel Bat
 i(250105, 1250285);	-- Sharktested Crest-Horn
 i(250321, 1250740);	-- Thorignir Drake
@@ -2263,11 +2273,14 @@ i(257511, 1261668);	-- Bronze Wilderling
 i(257513, 1261671);	-- Bronze Aquilon
 i(257514, 1261677);	-- Bronze Corpsefly
 i(257516, 1261681);	-- Bronze Gravewing
+i(250108, 1250288);	-- Cragstepper Crest-Horn
 i(258515, 1263387);	-- Crimson Lupine
 i(258188, 1262886);	-- Geargrinder Mk. 11
 i(242715, 1233516);	-- K'arroc Swiftwing
+i(260409, 1266248);	-- Savage Crimson Battle Turtle
+i(248681, 1247422);	-- Scorching Valor
 i(259463, 1264988);	-- Snowpaw Glimmerfur Prowler
---- NYI ---
+--- UNSORTED ---
 i(258488, 1263369);	-- Skypaw Glimmerfur
 
 ------------------
@@ -2277,6 +2290,7 @@ i(265656, 1276650);	-- Anu'shalla, Shadow's Guidance
 i(262620, 1257058);	-- Calamitous Carrion
 i(262621, 1257081);	-- Convalescent Carrion
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
+i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
 i(257504, 1261648);	-- Vicious Snaplizard [A]
@@ -2304,9 +2318,13 @@ i(257156, 1261323);	-- Cerulean Hawkstrider
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(260580, 1266579);	-- Cloudborn Razorwing
 i(257156, 1261302);	-- Cobalt Dragonhawk
+i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
+i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
 i(0, 1261334);	-- Contained Stormarion Defender
+i(257145, 1261298);	-- Crimson Dragonhawk
 i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262496, 1268919);	-- Delver's Arcane Golem
+i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(262706, 1269277);	-- Ferocious Snapvine
@@ -2316,9 +2334,9 @@ i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(257448, 1261585);	-- Frenzied Shredclaw
 i(0, 1261349);	-- Giganto Manis
 i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
-i(263451, 1270522);	-- Huffy Comfy Flying Quilt
 i(257446, 1261583);	-- Insatiable Shredclaw
 i(211086, 428065);	-- Jeweled Jade Scarab
+i(0, 1266703);	-- Lab-grown Stormray
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(260916, 3363);	-- Lost Nether Drake
 i(260231, 1265784);	-- Lucent Hawkstrider
@@ -2331,15 +2349,15 @@ i(0, 1261391);	-- Relinquished Scarlet Charger
 i(246735, 1243597);	-- Rootstalker Grimlynx
 i(252017, 1253938);	-- Ruddy Sporeglider
 i(260635, 1266700);	-- Sanguine Harrower
-i(260409, 1266248);	-- Savage Crimson Battle Turtle
 i(262708, 1269280);	-- Savage Snapvine
 i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(0, 1263635);	-- Spectral Hawkstrider
-i(263452, 1270523);	-- Stuffy Comfy Flying Quilt
 i(0, 1238827);	-- Swift Spectral Dragonhawk
 i(260887, 1266980);	-- Tenebrous Harrower
+i(257144, 1261296);	-- Umbral Dragonhawk
 i(256423, 1260354);	-- Untainted Grove Crawler
 i(262705, 1269273);	-- Vicious Snapvine
+i(0, 1270673);	-- Vivacious Chloroceros
 i(263580, 1270675);	-- Vivid Chloroceros
 i(252012, 1253927);	-- Vibrant Petalwing
 i(0, 1266702);	-- Voidbound Stormray

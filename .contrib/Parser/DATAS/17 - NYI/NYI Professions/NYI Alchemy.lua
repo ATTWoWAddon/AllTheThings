@@ -53,8 +53,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
 					i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
 					i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
-					i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
-					i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
+					i(171277),	-- [DNT] Spiritual Intellect Flask
+					i(171279),	-- [DNT] Spiritual Strength Flask
 					i(171293),	-- Alchemist's Pouch
 					i(171281),	-- Eternal Cauldron
 					i(171282),	-- Eternal Cauldron

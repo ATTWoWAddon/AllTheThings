@@ -488,6 +488,11 @@ local fieldConverters = {
 			cacheCreatureID(group, value[i]);
 		end
 	end,
+	["poiIDs"] = function(group, value)
+		for i=1,#value do
+			CacheField(group, "poiID", value[i])
+		end
+	end,
 	["maps"] = function(group, value)
 		for i=1,#value do
 			cacheMapID(group, value[i]);
@@ -535,6 +540,13 @@ local fieldConverters = {
 	["nextQuests"] = function(group, value)
 		for i=1,#value do
 			CacheField(group, "nextQuests", value[i])
+		end
+	end,
+	["lc"] = function(group, value)
+		for i=2,#value,2 do
+			if value[i] == "questID" then
+				CacheField(group, "nextQuests", value[i + 1])
+			end
 		end
 	end,
 	["sourceQuests"] = function(group, value)

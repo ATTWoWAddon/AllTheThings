@@ -633,6 +633,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
+				prof(SKINNING, {
+					n(1292, {	-- Maris Granger <Skinning Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 72.6, 62.0, STORMWIND_CITY },
+							-- #else
+							{ 67.8, 49.0, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_SKINNING,
+					}),
+				}),
 				prof(TAILORING, {
 					n(1346, {	-- Georgio Bolero <Tailoring Trainer>
 						["coords"] = {
@@ -891,7 +904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
 						{ "i", 209748 },	-- Althalaxx Orb
 					},
-					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
@@ -934,7 +947,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5480,	-- Ilsa Corbin <Warrior Trainer>
 					},
 					["coords"] = {
-						{ 41, 65.8, ELWYNN_FOREST },
+						{ 41.0, 65.8, ELWYNN_FOREST },
 						-- #if AFTER WRATH
 						{ 80.4, 59.8, STORMWIND_CITY },
 						-- #else
@@ -1010,7 +1023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1021,13 +1034,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
-				}),
-				q(30989, {	-- An Old Pit Fighter
-					["sourceQuest"] = 30988,	-- The Alliance Way
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
@@ -1058,7 +1064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(7645, {	-- Ancient Equine Spirit
 							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
-							["coord"] = { 52, 55.6, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 52.0, 55.6, HILLSBRAD_FOOTHILLS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
@@ -1163,7 +1169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 77.1, 53.3, STORMWIND_CITY },
 						-- #else
-						{ 74, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1963,7 +1969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7249 },	-- Charged Rift Gem
 								{ "o", 271 },	-- Miners' League Crates
 							},
-							["coord"] = { 35, 27, LOCH_MODAN },
+							["coord"] = { 35.0, 27.0, LOCH_MODAN },
 						}),
 					},
 				}),
@@ -2147,7 +2153,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2256,7 +2262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER WRATH
 								{ 51.0, 95.0, STORMWIND_CITY },
 								-- #else
-								{ 39.4, 86, STORMWIND_CITY },
+								{ 39.4, 86.0, STORMWIND_CITY },
 								-- #endif
 							},
 							["cr"] = 6492,	-- Rift Spawn
@@ -2337,7 +2343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   8683 },	-- Clara's Fresh Apple
 								{ "o", 142076 },	-- Clara's Fresh Apples
 							},
-							["coord"] = { 34, 57.2, ELWYNN_FOREST },
+							["coord"] = { 34.0, 57.2, ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -2512,7 +2518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 77.1, 53.3, STORMWIND_CITY },
 						-- #else
-						{ 74, 37.2, STORMWIND_CITY },
+						{ 74.0, 37.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2574,7 +2580,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 51.4, 73.8, STORMWIND_CITY },
 						-- #else
-						{ 40.8, 64, STORMWIND_CITY },
+						{ 40.8, 64.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2622,7 +2628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 7206 },	-- Mirror Lake Water Sample
 								{ "i", 7207 },	-- Jennea's Flask
 							},
-							["coord"] = { 28, 62, ELWYNN_FOREST },
+							["coord"] = { 28.0, 62.0, ELWYNN_FOREST },
 						}),
 						i(7508, {	-- Ley Orb
 							-- #if AFTER 4.0.3
@@ -2883,7 +2889,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(175151),	-- Fearbreaker (QI!)
+						o(344604, {	-- Fearbreaker
+							["coord"] = { 87.6, 35.1, STORMWIND_CITY },
+							["g"] = { i(175151) },	-- Fearbreaker (QI!)
+						}),
 					},
 				}),
 				q(26396, {	-- Return to Argus
@@ -3044,7 +3053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
 						-- #else
-						{ 49, 30.2, STORMWIND_CITY },
+						{ 49.0, 30.2, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3054,7 +3063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
 					["qg"] = 1212,	-- Bishop Farthing
-					["coord"] = { 39.2, 28, STORMWIND_CITY },
+					["coord"] = { 39.2, 28.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { PRIEST },
@@ -3218,13 +3227,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(30988, {	-- The Alliance Way
-					["sourceQuest"] = 30987,	-- Joining the Alliance
-					["qg"] = 61796,	-- King Varian Wrynn
-					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
-				}),
 				q(434, {	-- The Attack!
 					["sourceQuest"] = 2746,	-- Items of Some Consequence
 					["qg"] = 7766,	-- Tyrion
@@ -3269,7 +3271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(138766),	-- Stormwind Vanguard Stave
 						i(138764),	-- Stormwind Vanguard Waraxe
 						o(240215, {	-- Ashes of a Fallen Crusader
-							["coord"] = { 42, 42, BROKEN_ISLES},
+							["coord"] = { 42.0, 42.0, BROKEN_ISLES},
 							["groups"] = {
 								i(139389, {	-- Charred Locket
 									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
@@ -3390,7 +3392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },
 						-- #else
-						{ 41.2, 58, STORMWIND_CITY },
+						{ 41.2, 58.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3666,7 +3668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
 					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
-					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -3750,7 +3752,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #elseif AFTER WRATH
 						{ 76.9, 47.8, STORMWIND_CITY },
 						-- #else
-						{ 74, 30, STORMWIND_CITY },
+						{ 74.0, 30.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["maps"] = {
@@ -3792,7 +3794,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1787,	-- The Tome of Divinity (8)
 					},
 					["qg"] = 927,	-- Brother Wilhelm
-					["coord"] = { 41, 66, ELWYNN_FOREST },
+					["coord"] = { 41.0, 66.0, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -3869,7 +3871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 63.8, 72.2, STORMWIND_CITY },
 						-- #else
-						{ 57, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3885,7 +3887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 63.8, 72.2, STORMWIND_CITY },
 						-- #else
-						{ 57, 61.8, STORMWIND_CITY },
+						{ 57.0, 61.8, STORMWIND_CITY },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4270,7 +4272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
 						{ "i", 18819 },	-- Rohan's Exorcism Censer
 					},
-					["coord"] = { 25, 8.2, IRONFORGE },
+					["coord"] = { 25.0, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -4386,7 +4388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}) },
 							},
-							["coord"] = { 26, 22, ASHENVALE },
+							["coord"] = { 26.0, 22.0, ASHENVALE },
 							["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
 						}),
 						i(190308, {	-- 0/1 Burning Torch
@@ -4414,7 +4416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								{ 26.79, 22.42, ASHENVALE },
-								{ 15, 31, ASHENVALE },
+								{ 15.0, 31.0, ASHENVALE },
 							},
 						}),
 					},
@@ -5388,6 +5390,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(44481),	-- Grindgear Toy Gorilla
+						i(44601),	-- Heavy Copper Racer
+						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+						i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+						i(44599),	-- Zippy Copper Racer
 					},
 				}),
 				n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
@@ -7341,10 +7348,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),
-						i(246848, { 	-- Scribe's Working Notes (DECOR!)
-							["cost"] = 20000000,	-- 20000g
+						i(246848, {	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 2000g
 						}),
-						i(246847, { 	-- Tome of Draenei Faith (DECOR!)
+						i(246847, {	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246860, {	-- Tome of Forsaken Resilience (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246845, {	-- Tome of Shadowforge Cunning (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),
 						i(239179, {	-- Tome of Twilight Nihilism (DECOR!)

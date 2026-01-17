@@ -201,7 +201,7 @@ root(ROOTS.Zones, {
 					}),
 					q(14011, {	-- Primal Strike (Goblin)
 						["qg"] = 34695,	-- Maxx Avalanche <Shaman Trainer>
-						["coord"] = { 59.6, 77, KEZAN },
+						["coord"] = { 59.6, 77.0, KEZAN },
 						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 						["races"] = { GOBLIN },
 						["classes"] = { SHAMAN },

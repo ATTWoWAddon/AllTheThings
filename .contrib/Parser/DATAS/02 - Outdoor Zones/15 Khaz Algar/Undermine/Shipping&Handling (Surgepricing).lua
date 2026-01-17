@@ -96,9 +96,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					filter(COSMETIC, {
 						i(231556),	-- Breakneck Cabbie's Coat
 					}),
-					n(DECOR, {
-						i(245320, { ["timeline"] = { ADDED_11_2_7 } }),	-- Very Reliable Undermine Lamppost (DECOR!)
-					}),
+					n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+						i(245320),	-- Very Reliable Undermine Lamppost (DECOR!)
+					})),
 					n(ARMOR, {
 						["groups"] = {
 							filter(BACK_F, {

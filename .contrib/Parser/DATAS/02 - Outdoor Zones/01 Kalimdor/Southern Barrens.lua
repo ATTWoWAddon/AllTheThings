@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(388, {	-- Northwatch Hold, Southern Barrens
 					["cr"] = 39212,	-- Bill Williamson <Flight Master>
-					["coord"] = { 66.4, 47, SOUTHERN_BARRENS },
+					["coord"] = { 66.4, 47.0, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1053,7 +1053,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 6912 },	-- Heartswood
 								{ "o", 93192 },	-- Heartswood
 							},
-							["coord"] = { 31, 31, ASHENVALE },
+							["coord"] = { 31.0, 31.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -1669,7 +1669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3644 },	-- Bael Modan Flying Machine
 								{ "i", 5021 },	-- Explosive Stick of Gann
 							},
-							["coord"] = { 46, 85, THE_BARRENS },
+							["coord"] = { 46.0, 85.0, THE_BARRENS },
 						}),
 						i(5313, {	-- Totemic Clan Ring
 							["timeline"] = { REMOVED_4_0_3 },

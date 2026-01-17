@@ -123,43 +123,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(41119, {	-- The Hunt (Altruis)
 							["sourceQuest"] = 41121,	-- By Any Means (Altruis)
 							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-							["maps"] = { 723 },	-- Violet Hold
+							["coord"] = { 50.4, 70.0, 723 },	-- Violet Hold
 							["groups"] = {
 								o(251878, {	-- Twinblades of the Deceiver
 									["coord"] = { 33.0, 67.0, SURAMAR },
 									["groups"] = {
 										i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = {
-												artifact(26),	-- Standard
-											},
+											["groups"] = { artifact(26) },	-- Standard
 										}),
 									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 							},
 						}),
 						q(39247, {	-- The Hunt (Kayn)
 							["sourceQuest"] = 39051,	-- By Any Means (Kayn)
 							["provider"] = { "n", 94902 },	-- Kayn Sunfury
-							["coord"] = { 50.5, 70, 723 },	-- The Violet Hold
+							["coord"] = { 50.5, 70.0, 723 },	-- The Violet Hold
 							["groups"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
 									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(26),	-- Standard
-									},
+									["groups"] = { artifact(26) },	-- Standard
 								}),
 							},
 						}),
@@ -386,6 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 108239 },	-- Akama
 						["coord"] = { 57.9, 57.4, 720 },
 						["groups"] = {
@@ -452,6 +445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
@@ -698,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(44694, {	-- One Battle at a Time
-						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
+						["sourceQuests"] = { 42776 },	-- Two Worthies
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 73.8, 721 },
 						["lvl"] = 110,
@@ -909,10 +903,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 60.1, 50.8, 720 },
 						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 						["lvl"] = 110,
-						["groups"] = {
-							mount(229417, {	-- Slayer's Felbroken Shrieker (MOUNT!)
-									}),
-						},
+						["groups"] = { mount(229417) },	-- Slayer's Felbroken Shrieker (MOUNT!)
 					}),
 					q(42776, {	-- Two Worthies
 						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
@@ -1186,7 +1177,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(44599),	-- Tracking Quest: Working with the Wardens 3 - completed the "Working With the Wardens: Mellok, Son of Torok" mission
 			q(44600),	-- Tracking Quest: Working with the Wardens 4 - completed the "Working With the Wardens: Fathnyr" mission
 			q(44601),	-- Tracking Quest: Working with the Wardens 5 - completed the "Working With the Wardens: Mal'Dreth the Corruptor" mission
-			q(44602),	-- Tracking Quest: Preparations for Invasion 1  - completed the "Preparations for Invasion: Scouting their Hold" mission
+			q(44602),	-- Tracking Quest: Preparations for Invasion 1 - completed the "Preparations for Invasion: Scouting their Hold" mission
 			q(44604),	-- Tracking Quest: Preparations for Invasion 2 - completed the "Preparations for Invasion: Weapon Improvements" mission
 			q(44605),	-- Tracking Quest: Preparations for Invasion 3 - completed the "Preparations for Invasion: Snatch and Grab" mission
 			q(44606),	-- Tracking Quest: Preparations for Invasion 4 - completed the "Preparations for Invasion: Ship-Shape" mission

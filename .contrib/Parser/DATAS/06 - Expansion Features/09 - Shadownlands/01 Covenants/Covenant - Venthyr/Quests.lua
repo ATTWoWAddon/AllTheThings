@@ -450,7 +450,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(65170, {	-- Kindred Spirits
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
 				["provider"] = { "n", 161979 },	-- Theotar
-				["coord"] = { 50.5, 18, SINFALL_REACHES },
+				["coord"] = { 50.5, 18.0, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_1_5 },
 				["groups"] = {
 					follower(1210),	-- Theotar

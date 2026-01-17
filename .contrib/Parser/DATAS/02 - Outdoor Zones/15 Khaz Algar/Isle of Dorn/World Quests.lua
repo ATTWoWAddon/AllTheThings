@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 77.5, 48.5, ISLE_OF_DORN },
 				}),
 				q(82455, {	-- No More Bread
-					["coord"] = { 40, 63.6, ISLE_OF_DORN },
+					["coord"] = { 40.0, 63.6, ISLE_OF_DORN },
 				}),
 				q(82451, {	-- Preserving Plush Pals
 					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },

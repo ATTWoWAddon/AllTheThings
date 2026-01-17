@@ -3095,7 +3095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 9.2.5
 					n(SPECIAL, {
 						o(373438, {	-- Coilclutch Vine
-							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
+							["coord"] = { 34.7, 75.0, VASHJIR_SHIMMERING_EXPANSE },
 							["cost"] = {{"i",187662,1}},	-- Strange Goop
 							["timeline"] = { ADDED_9_2_5 },
 							["groups"] = {

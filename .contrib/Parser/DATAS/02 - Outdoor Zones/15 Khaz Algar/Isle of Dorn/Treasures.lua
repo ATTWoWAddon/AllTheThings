@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			o(444065, {	-- Elemental Geode
 				["coords"] = {
 					{ 45.6, 60.2, ISLE_OF_DORN },
+					{ 60.2, 62.6, ISLE_OF_DORN },
 					{ 77.1, 35.7, ISLE_OF_DORN },
 					{ 70.0, 53.8, ISLE_OF_DORN },
 				},
@@ -31,9 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ 53.7, 66.9, ISLE_OF_DORN },
 					{ 52.6, 67.1, ISLE_OF_DORN },
 				},
-				["groups"] = {
-					i(221550),	-- Boskroot Cap
-				},
+				["groups"] = { i(221550) },	-- Boskroot Cap
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
 				["description"] = "5 min wait after turnin of the Dornish Pike until the Goldengill Trout is available. You will be able to loot the battle pet in Dornogal.",

@@ -41,19 +41,6 @@ root(ROOTS.Zones, {
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 				}),
-				prof(SKINNING, {
-					i(139894, {	-- Skinning Technique: Unbroken Claw
-						["requireSkill"] = SKINNING,
-						["crs"] = {
-							91799,	-- Juvenile Stormwing
-						},
-						["groups"] = {
-							{ -- Unbroken Claw
-								["recipeID"] = 194171,	-- Unbroken Claw
-							},
-						},
-					}),
-				}),
 			}),
 		}),
 	}),

@@ -27,7 +27,7 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "春节",
 		-- TODO: tw = "",
 		-- #endif
 	},
@@ -245,21 +245,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 						{ "o", 332292 },	-- Flower of Thoughtfulness
 						{ "i", 170319 },	-- Flower of Thoughtfulness (QI!)
 					},
-					["coord"] = { 49, 23, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 49.0, 23.0, HILLSBRAD_FOOTHILLS },
 				}),
 				objective(2, {	-- 0/3 Flower of Luck
 					["providers"] = {
 						{ "o", 332293 },	-- Flower of Luck
 						{ "i", 170321 },	-- Flower of Luck (QI!)
 					},
-					["coord"] = { 48, 55, DUN_MOROGH },
+					["coord"] = { 48.0, 55.0, DUN_MOROGH },
 				}),
 				objective(3, {	-- 0/3 Flower of Generosity
 					["providers"] = {
 						{ "o", 332294 },	-- Flower of Generosity
 						{ "i", 170322 },	-- Flower of Generosity (QI!)
 					},
-					["coord"] = { 48, 55, DUN_MOROGH },
+					["coord"] = { 48.0, 55.0, DUN_MOROGH },
 				}),
 				i(169208, {	-- Crown of Everlasting Fortune
 					["timeline"] = { ADDED_8_3_0 },
@@ -664,13 +664,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(73861, {	-- Elder Razlok
 			["qg"] = 201143,	-- Elder Razlok
-			["coord"] = { 50, 66.5, THALDRASZUS },
+			["coord"] = { 50.0, 66.5, THALDRASZUS },
 			["timeline"] = { ADDED_10_0_5 },
 			["isYearly"] = true,
 		}),
 		q(73858, {	-- Iskaara Elder Nemaglek
 			["qg"] = 201139,	-- Iskaara Elder Nemaglek
-			["coord"] = { 12.8, 49, THE_AZURE_SPAN },
+			["coord"] = { 12.8, 49.0, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_0_5 },
 			["isYearly"] = true,
 		}),
@@ -837,7 +837,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if AFTER CATA
 				{ 69.1, 73.3, WESTERN_PLAGUELANDS },
 				-- #else
-				{ 69, 73, WESTERN_PLAGUELANDS },
+				{ 69.0, 73.0, WESTERN_PLAGUELANDS },
 				-- #endif
 			},
 			["isYearly"] = true,
@@ -1435,7 +1435,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #elseif AFTER WRATH
 				{ 36.3, 66.1, STORMWIND_CITY },
 				-- #else
-				{ 21.6, 54, STORMWIND_CITY },
+				{ 21.6, 54.0, STORMWIND_CITY },
 				-- #endif
 			},
 			["isYearly"] = true,

@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13098, {	-- For Posterity
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["qg"] = 30676,	-- Chronicler Bah'Kini
-					["coord"] = { 70, 21, ZULDRAK },
+					["coord"] = { 70.0, 21.0, ZULDRAK },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
@@ -202,7 +202,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13111, {	-- One of a Kind
 					["sourceQuest"] = 13099,	-- Just Checkin'
 					["qg"] = 30676,	-- Chronicler Bah'Kini
-					["coord"] = { 70, 21, ZULDRAK },
+					["coord"] = { 70.0, 21.0, ZULDRAK },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {

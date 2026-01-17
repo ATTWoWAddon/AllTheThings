@@ -718,7 +718,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["coord"] = { 82.5, 48.0, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(57217, {	-- Unearthed Keeper
-							["coord"] = { 71, 68.0, NZOTH_ASSAULT_ULDUM },
+							["coord"] = { 71.0, 68.0, NZOTH_ASSAULT_ULDUM },
 						}),
 					})),
 					n(ZONE_DROPS, {

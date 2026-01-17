@@ -103,6 +103,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 37.7, 45.7, HIGHMOUNTAIN },
 					["groups"] = {
 						i(131761),	-- Thick Bristly Hood
+						i(139893),	-- Skinning Technique: Unbroken Tooth (RECIPE!)
 					},
 				}),
 				n(94877, {	-- Brogrul the Mighty

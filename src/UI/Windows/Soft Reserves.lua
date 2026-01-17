@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local L = app.L;
 
 -- Global locals
@@ -98,12 +98,9 @@ local function GetGroupType()
 	end
 	return "RAID";
 end
-local IsRaidLeader = app.GameBuildVersion >= 50000 and function()
+local IsRaidLeader = function()
 	---@diagnostic disable-next-line: param-type-mismatch
 	return UnitIsGroupLeader("player");
-end or function()
-	---@diagnostic disable-next-line: param-type-mismatch
-	return UnitIsGroupLeader("player", "raid");
 end
 if GetLootMethod then
 	IsPrimaryLooter = function()

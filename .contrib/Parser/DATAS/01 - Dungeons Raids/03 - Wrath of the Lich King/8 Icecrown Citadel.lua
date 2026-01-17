@@ -2148,7 +2148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50426),	-- Heaven's Fall, Kryss of a Thousand Lies
 							i(49997),	-- Mithrios, Bronzebeard's Legacy
 							i(50428),	-- Royal Scepter of Terenas II
-							i(49981),	-- Fal'inrush, Defender of Quel'thalas
+							i(49981),	-- Fal'inrush, Defender of Quel'Thalas
 							i(122229, {	-- Music Roll: Invincible
 								["timeline"] = { ADDED_6_1_0 },
 							}),
@@ -2538,7 +2538,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
 							i(50738),	-- Mithrios, Bronzebeard's Legacy
 							i(50734),	-- Royal Scepter of Terenas II
-							i(50733),	-- Fal'inrush, Defender of Quel'thalas
+							i(50733),	-- Fal'inrush, Defender of Quel'Thalas
 							i(122229, {	-- Music Roll: Invincible
 								["timeline"] = { ADDED_6_1_0 },
 							}),

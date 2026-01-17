@@ -227,7 +227,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11060, {	-- A Crystalforged Darkrune
 						["qg"] = 23300,	-- Gahk
-						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
+						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["timeline"] = {
 							ADDED_3_3_0,
@@ -256,7 +256,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/5 Bladespire Hold building cursed
 								["provider"] = { "i", 30479 },	-- Wicked Strong Fetish (Provided)
-								["coord"] = { 42, 47, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 42.0, 47.0, BLADES_EDGE_MOUNTAINS },
 								["cr"] = 21446,	-- Bladespire Evil Spirit
 							}),
 							objective(2, {	-- 0/2 Bloodmaul Outpost building cursed
@@ -1805,15 +1805,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Poison the keg of Green Spot Grog
 								["provider"] = { "n", 22480 },	-- Marmot
-								["coord"] = { 55, 25, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 55.0, 25.0, BLADES_EDGE_MOUNTAINS },
 							}),
 							objective(2, {	-- Poison the keg of Ripe Moonshine
 								["provider"] = { "n", 22480 },	-- Marmot
-								["coord"] = { 55, 28, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 55.0, 28.0, BLADES_EDGE_MOUNTAINS },
 							}),
 							objective(3, {	-- Poison the keg of Fermented Seed Beer
 								["provider"] = { "n", 22480 },	-- Marmot
-								["coord"] = { 55, 23, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 55.0, 23.0, BLADES_EDGE_MOUNTAINS },
 							}),
 						},
 					}),
@@ -2170,7 +2170,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11027, {	-- Yous Have Da Darkrune?
 						["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 						["qg"] = 23300,	-- Gahk
-						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
+						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["timeline"] = {
 							ADDED_3_3_0,
@@ -2379,7 +2379,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					i(32601, {	-- Unstable Flask of the Sorcerer
-						["coord"] = { 54, 11, BLADES_EDGE_MOUNTAINS },
+						["coord"] = { 54.0, 11.0, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32569, 10 },	-- Apexis Shard
 						},

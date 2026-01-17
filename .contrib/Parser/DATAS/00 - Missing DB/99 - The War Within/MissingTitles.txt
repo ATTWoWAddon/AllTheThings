@@ -58,26 +58,18 @@ title(737),	-- %s, Heir to the Mist
 5.5.3.64308
 title(738),	-- %s, the Thundering Stampede
 title(739),	-- %s, the Momentous Terror
-11.2.0.62049
-title(650),	-- Delver %s
 12.0.0.63534
 title(0),	-- Loa-speaker %s
-title(643),	-- %s, Definitely Not a Cultist
 title(660),	-- [PH] %s
 title(661),	-- [PH] %s
 title(662),	-- [PH] %s
 title(663),	-- [PH] %s
 title(665),	-- Honorary Hara'ti %s
 title(667),	-- %s, Life of the Party
-title(668),	-- %s, Famed Slayer of the Undreamt
 12.0.0.63724
 title(670),	-- %s, Teacher of Strong \\ %s, Mycelial Mentor
 12.0.0.63854
 title(671),	-- Mind-Seeker %s
-title(676),	-- %s, Famed Slayer of the Voidspire \\ %s, Famed Slayer of the VoidspireRaid
-title(677),	-- %s, Famed Slayer of the Dark Naaru
-title(678),	-- Dawnbringer %s \\ [PH] DarkwellRaid %s
-title(679),	-- Dream-Eater %s
 title(680),	-- %s, Chronicler of the Haranir
 12.0.0.63967
 title(681),	-- Scourgebane %s
@@ -107,3 +99,5 @@ title(751),	-- Thalassian Herbalist %s
 title(752),	-- Thalassian Skinner %s
 title(753),	-- %s, the Singular
 title(754),	-- Dustlord %s
+12.0.1.64889
+title(755),	-- Preyseeker %s

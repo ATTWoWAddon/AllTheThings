@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(569, {	-- Stonemaul Hold, Feralas
 					["cr"] = 41605,	-- Mergek <Wind Rider Master>
-					["coord"] = { 51, 48.4, FERALAS },
+					["coord"] = { 51.0, 48.4, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2981, {	-- A Threat in Feralas
 					["qg"] = 4485,	-- Belgrom Rockmaul
-					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 				q(3062, {	-- Dark Heart
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["qg"] = 5566,	-- Tannysa
-					["coord"] = { 44.8, 77, STORMWIND_CITY },
+					["coord"] = { 44.8, 77.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1037,7 +1037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3788, {	-- Jonespyre's Request
 					["qg"] = 7736,	-- Innkeeper Shyria
-					["coord"] = { 31, 43.4, FERALAS },
+					["coord"] = { 31.0, 43.4, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2321,7 +2321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4120, {	-- The Strength of Corruption
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
@@ -2429,7 +2429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3063, {	-- Vengeance on the Northspring
 					["qg"] = 7776,	-- Talo Thornhoof
-					["coord"] = { 76, 43.8, FERALAS },
+					["coord"] = { 76.0, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -2768,7 +2768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81924, {	-- Wisdom of the Guardians
 					["qg"] = 221985,	-- Tyrisius
-					["coord"] = { 57.2, 69, FERALAS },
+					["coord"] = { 57.2, 69.0, FERALAS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { THE_HINTERLANDS, AZSHARA },
 					["classes"] = { DRUID },

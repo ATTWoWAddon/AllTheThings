@@ -134,6 +134,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				-- #if AFTER 11.1.7
 				239840,	-- Churbro <Timewalking Vendor>
 				-- #endif
+				-- #if AFTER 11.2.7
+				252687,	-- Collector Ta'steld <Timewalking Vendor>
+				-- #endif
 			},
 			["maps"] = {
 				-- #if AFTER 6.2.2.20395
@@ -158,6 +161,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				BORALUS,
 				DAZARALOR,
 				-- #endif
+				-- #if AFTER 11.1.7
+				ORIBOS,
+				-- #endif
 			},
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
@@ -181,6 +187,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(238739, {	-- Chrono Corsair (MOUNT!)
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
@@ -218,6 +244,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				}),
 			},
 		}),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_0 } }, {
+			q(92857, {	-- Ta'readon's Mount Voucher
+				["provider"] = { "i", 254694 },	-- Ta'readon's Mount Voucher
+				["sym"] = {{"select","itemID",
+					-- You can choose 1 mount from this quest and buy the rest from the vendor
+					257511,	-- Bronze Wilderling Harness (MOUNT!)
+					257513,	-- Bronze Aquilon Harness (MOUNT!)
+					257514,	-- Bronze Corpsefly Harness (MOUNT!)
+					257516,	-- Bronze Gravewing Harness (MOUNT!)
+				}},
+			}),
+		})),
 		n(REWARDS, {
 			TimelyGoodieBag({	-- Timely Goodie Bag
 				-- TODO: probably nice to organize by armor/type & weapon since the drops are likely loot-spec-based
@@ -309,9 +347,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(83274, {	-- An Original Path Through Time
 				["provider"] = { "n", 234555 },	-- Bobadormu
@@ -322,16 +358,22 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["timeline"] = { ADDED_11_0_5 },
 				["isWeekly"] = true,
 				["lvl"] = 80,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(82817, {	-- Disturbance Detected: Blackrock Depths
+				["qgs"] = { 234556 },	-- Grannadormu
+				["coords"] = {
+					{ 52.8, 82.8, ORGRIMMAR },
+					{ 56.0, 18.4, STORMWIND_CITY },
 				},
+				["timeline"] = { ADDED_11_2_7 },
+				["isWeekly"] = true,
+				["groups"] = { i(232471) },	-- Cache of Dark Iron Treasures
 			}),
 			q(83285, {	-- The Ancient Scroll
 				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -958,13 +1000,11 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(47523, {	-- Disturbance Detected: Black Temple
 				["provider"] = { "n", 123252 },	-- Vormu
-				["coord"] = { 54.6, 39,  SHATTRATH_CITY },
+				["coord"] = { 54.6, 39.0,  SHATTRATH_CITY },
 				["timeline"] = { ADDED_7_2_5 },
 				["isWeekly"] = true,
 				["groups"] = {
@@ -2156,9 +2196,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(50316, {	-- Disturbance Detected: Ulduar
 				["provider"] = { "n", 130654 },	-- Vormu
@@ -2441,7 +2479,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							-- Lich King
 							i(171571),	-- Archus, Greatstaff of Antonidas
 							i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
-							i(171563),	-- Fal'inrush, Defender of Quel'thalas
+							i(171563),	-- Fal'inrush, Defender of Quel'Thalas
 							i(171566),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(171576),	-- Halion, Staff of Forgotten Love
 							i(171565),	-- Havoc's Call, Blade of Lordaeron Kings
@@ -3710,9 +3748,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(57637, {	-- Disturbance Detected: Firelands
 				["provider"] = { "n", 158276 },	-- Vormu
@@ -4734,16 +4770,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(45563, {	-- The Shrouded Coin
 				["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -5064,9 +5096,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		inst_tw(321, {	-- Mogu'shan Palace
 			e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 				["crs"] = {
-					modItemId(61445,1),	-- Haiyan the Unstoppable
-					modItemId(61442,1),	-- Kuai the Brute
-					modItemId(61444,1),	-- Ming the Cunning
+					61445,	-- Haiyan the Unstoppable
+					61442,	-- Kuai the Brute
+					61444,	-- Ming the Cunning
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(144020,1),	-- Crest of the Clan Lords
@@ -5106,8 +5138,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		inst_tw(246, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Scholomance
 			e(659,   {	-- Instructor Chillheart
 				["crs"] = {
-					modItemId(58633,2),	-- Instructor Chillheart
-					modItemId(58664,2),	-- Instructor Chillheart's Phylactery
+					58633,	-- Instructor Chillheart
+					58664,	-- Instructor Chillheart's Phylactery
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(144201,2),	-- Gravetouch Greatsword
@@ -5410,25 +5442,19 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(55498, {	-- The Shimmering Crystal (A)
 				["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal (A)
 				["races"] = ALLIANCE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 			q(55499, {	-- The Shimmering Crystal (H)
 				["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal (H)
 				["races"] = HORDE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -6083,16 +6109,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				["timeline"] = { ADDED_11_0_7 },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
-				["groups"] = {
-					i(232877),	-- Timely Goodie Bag
-				},
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(64710, {	-- Whispering Felflame Crystal
 				["provider"] = { "i", 187611 },	-- Whispering Felflame Crystal
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {
@@ -6403,8 +6425,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1672, {	-- Lord Kur'talos Ravencrest
 				["crs"] = {
-					modItemId(98970,1),	-- Dantalionax
-					modItemId(98965,1),	-- Kur'talos Ravencrest
+					98970,	-- Dantalionax
+					98965,	-- Kur'talos Ravencrest
 				},
 				["sym"] = {{"select", "modItemID",
 					modItemId(136716,1),	-- Caged Horror
@@ -7466,7 +7488,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			}),
 		}),
 		n(QUESTS, {
-			-- TODO below max level quest
+			q(92647, {	-- A Shadowed Journey Through Time
+				--["qg"] = ,	--
+				--["coord"] = {  },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
 			q(92650, {	-- The Flickering Anima
 				["provider"] = { "i", 253517 },		-- The Flickering Anima
 				["isWeekly"] = true,
@@ -7631,30 +7659,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						}),
 					}),
 					filter(MOUNTS, {
-						i(182083, {	-- Bonecleaver's Skullboar (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						}),
-						i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
-							["cost"] = {{ "i", 254694, 1 }},	-- Ta'readon's Mount Voucher
-						}),
-						i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
-							["cost"] = {{ "i", 254694, 1 }},	-- Ta'readon's Mount Voucher
-						}),
-						i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
-							["cost"] = {{ "i", 254694, 1 }},	-- Ta'readon's Mount Voucher
-						}),
-						i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
-							["cost"] = {{ "i", 254694, 1 }},	-- Ta'readon's Mount Voucher
-						}),
 						i(258515, {	-- Crimson Lupine (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),
 						i(259463, {	-- Snowpaw Glimmerfur Prowler (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),
-						--i(258488, {	-- Skypaw Glimmerfur (MOUNT!)
-							--["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
-						--}),
 					}),
 					filter(TOYS, {
 						i(256881, {	-- Steward's Bauble (TOY!)
@@ -7699,306 +7709,306 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 		inst_tw(1188, {	-- De Other Side
 			e(2408, {	-- Hakkar the Soulflayer
 				["crs"] = { 164558 },	-- Hakkar the Soulflayer
-				["sym"] = {{"select", "modItemID",
-					modItemId(179328,1),	-- Bloodspiller
-					modItemId(179331,1),	-- Blood-Spattered Scale
-					modItemId(179326,1),	-- Girdle of the Soulflayer
-					modItemId(179325,1),	-- Hakkari Revenant's Grips
-					modItemId(179324,1),	-- Soulfeather Breeches
-					modItemId(179322,1),	-- Windscale Moccasins
-					modItemId(179330,1),	-- Zin'khas, Blade of the Fallen God
+				["sym"] = {{"select", "itemID",
+					179328,	-- Bloodspiller
+					179331,	-- Blood-Spattered Scale
+					179326,	-- Girdle of the Soulflayer
+					179325,	-- Hakkari Revenant's Grips
+					179324,	-- Soulfeather Breeches
+					179322,	-- Windscale Moccasins
+					179330,	-- Zin'khas, Blade of the Fallen God
 				}},
 			}),
 			e(2409, {	-- The Manastorms
 				["crs"] = {
-					modItemId(164556,1),	-- Millhouse Manastorm
-					modItemId(164555,1),	-- Millificent Manastorm
+					164556,	-- Millhouse Manastorm
+					164555,	-- Millificent Manastorm
 				},
-				["sym"] = {{"select", "modItemID",
-					modItemId(179338,1),	-- Dynamo Doomstompers
-					modItemId(179335,1),	-- Manastorm's Magnificent Threads
-					modItemId(179342,1),	-- Overwhelming Power Crystal
-					modItemId(179336,1),	-- Rocket Chicken Handlers
-					modItemId(179340,1),	-- Supercollider
-					modItemId(179337,1),	-- Techno-Coil Legguards
-					modItemId(179339,1),	-- Whizblast Walking Stick
+				["sym"] = {{"select", "itemID",
+					179338,	-- Dynamo Doomstompers
+					179335,	-- Manastorm's Magnificent Threads
+					179342,	-- Overwhelming Power Crystal
+					179336,	-- Rocket Chicken Handlers
+					179340,	-- Supercollider
+					179337,	-- Techno-Coil Legguards
+					179339,	-- Whizblast Walking Stick
 				}},
 			}),
 			e(2398, {	-- Dealer Xy'exa
 				["crs"] = { 164450 },	-- Millificent Manastorm
-				["sym"] = {{"select", "modItemID",
-					modItemId(179346,1),	-- Breastplate of Fatal Contrivances
-					modItemId(179347,1),	-- Collector's Pulse Staff
-					modItemId(179349,1),	-- Dealer Xy'exa's Cape
-					modItemId(179344,1),	-- Far Traveler's Shoulderpads
-					modItemId(179350,1),	-- Inscrutable Quantum Device
-					modItemId(179343,1),	-- Sash of Exquisite Acquisitions
-					modItemId(179345,1),	-- Spatial Rift Striders
-					modItemId(179348,1),	-- Xy Cartel Crossbow
+				["sym"] = {{"select", "itemID",
+					179346,	-- Breastplate of Fatal Contrivances
+					179347,	-- Collector's Pulse Staff
+					179349,	-- Dealer Xy'exa's Cape
+					179344,	-- Far Traveler's Shoulderpads
+					179350,	-- Inscrutable Quantum Device
+					179343,	-- Sash of Exquisite Acquisitions
+					179345,	-- Spatial Rift Striders
+					179348,	-- Xy Cartel Crossbow
 				}},
 			}),
 			e(2410, {	-- Mueh'zala
 				["crs"] = { 166608 },	-- Mueh'zala
-				["sym"] = {{"select", "modItemID",
-					modItemId(182178,1),	-- Raptor Soul (SS!)
-					modItemId(186998,1),	-- Pattern: Pallid Oracle Bones (RECIPE!)
-					modItemId(179355,1),	-- Death God's Signet
-					modItemId(179353,1),	-- Harness of Twisted Whims
-					modItemId(179351,1),	-- Mueh'zala's Hexthread Sarong
-					modItemId(179352,1),	-- Primeval Soul's Ankleguards
-					modItemId(179354,1),	-- Reality-Shatter Vambraces
-					modItemId(179356,1),	-- Shadowgrasp Totem
+				["sym"] = {{"select", "itemID",
+					182178,	-- Raptor Soul (SS!)
+					186998,	-- Pattern: Pallid Oracle Bones (RECIPE!)
+					179355,	-- Death God's Signet
+					179353,	-- Harness of Twisted Whims
+					179351,	-- Mueh'zala's Hexthread Sarong
+					179352,	-- Primeval Soul's Ankleguards
+					179354,	-- Reality-Shatter Vambraces
+					179356,	-- Shadowgrasp Totem
 				}},
 			}),
 		}),
 		inst_tw(1185, {	-- Halls of Atonement
 			e(2406, {	-- Halkias
 				["crs"] = { 165408 },	-- Halkias
-				["sym"] = {{"select", "modItemID",
-					modItemId(178818,1),	-- Halkias' Towering Pillars
-					modItemId(178830,1),	-- Shardskin Sabatons
-					modItemId(178827,1),	-- Sin Stained
-					modItemId(178817,1),	-- Hood of Refracted Shadows
-					modItemId(178813,1),	-- Sinlight Shroud
+				["sym"] = {{"select", "itemID",
+					178818,	-- Halkias' Towering Pillars
+					178830,	-- Shardskin Sabatons
+					178827,	-- Sin Stained
+					178817,	-- Hood of Refracted Shadows
+					178813,	-- Sinlight Shroud
 				}},
 			}),
 			e(2387, {	-- Echelon
 				["crs"] = { 164185 },	-- Echelon
-				["sym"] = {{"select", "modItemID",
-					modItemId(178819,1),	-- Skyterror's Stonehide Leggings
-					modItemId(178815,1),	-- Soaring Decimator's Hauberk
-					modItemId(178833,1),	-- Stonefiend Shaper's Mitts
-					modItemId(178834,1),	-- Stoneguardian's Morningstar
-					modItemId(178812,1),	-- Wing Commander's Helmet
-					modItemId(178825,1),	-- Pulsating Stoneheart
+				["sym"] = {{"select", "itemID",
+					178819,	-- Skyterror's Stonehide Leggings
+					178815,	-- Soaring Decimator's Hauberk
+					178833,	-- Stonefiend Shaper's Mitts
+					178834,	-- Stoneguardian's Morningstar
+					178812,	-- Wing Commander's Helmet
+					178825,	-- Pulsating Stoneheart
 				}},
 			}),
 			e(2411, {	-- High Adjudicator Aleez
 				["crs"] = { 165410 },	-- High Adjudicator Aleez
-				["sym"] = {{"select", "modItemID",
-					modItemId(178814,1),	-- Breastplate of Otherworldly Influence
-					modItemId(178822,1),	-- Cord of the Dark Word
-					modItemId(178832,1),	-- Gloves of Haunting Fixation
-					modItemId(178821,1),	-- Mantle of Ephemeral Visages
-					modItemId(178826,1),	-- Sunblood Amethyst
-					modItemId(178828,1),	-- Nathrian Tabernacle
+				["sym"] = {{"select", "itemID",
+					178814,	-- Breastplate of Otherworldly Influence
+					178822,	-- Cord of the Dark Word
+					178832,	-- Gloves of Haunting Fixation
+					178821,	-- Mantle of Ephemeral Visages
+					178826,	-- Sunblood Amethyst
+					178828,	-- Nathrian Tabernacle
 				}},
 			}),
 			e(2413, {	-- Lord Chamberlain
 				["crs"] = { 164218 },	-- Lord Chamberlain
-				["sym"] = {{"select", "modItemID",
-					modItemId(178816,1),	-- Nathrian Usurper's Mask
-					modItemId(178829,1),	-- Nathrian Ferula
-					modItemId(178824,1),	-- Signet of the False Accuser
-					modItemId(178831,1),	-- Slippers of Leavened Station
-					modItemId(178823,1),	-- Waistcord of Dark Devotion
-					modItemId(178820,1),	-- Pauldrons of Unleashed Pride
+				["sym"] = {{"select", "itemID",
+					178816,	-- Nathrian Usurper's Mask
+					178829,	-- Nathrian Ferula
+					178824,	-- Signet of the False Accuser
+					178831,	-- Slippers of Leavened Station
+					178823,	-- Waistcord of Dark Devotion
+					178820,	-- Pauldrons of Unleashed Pride
 				}},
 			}),
 		}),
 		inst_tw(1183, {	-- Plaguefall
 			e(2419, {	-- Globgrog
 				["crs"] = { 164255 },	-- Globgrog
-				["sym"] = {{"select", "modItemID",
-					modItemId(178762,1),	-- Blightborne Chain Legguards
-					modItemId(178760,1),	-- Disgested Interrogator's Gaze
-					modItemId(178773,1),	-- Plague Handler's Greathelm
-					modItemId(178770,1),	-- Slimy Consumptive Organ
-					modItemId(178756,1),	-- Stradama's Misplaced Slippers
-					modItemId(178753,1),	-- Surgical Pustule Extractor
+				["sym"] = {{"select", "itemID",
+					178762,	-- Blightborne Chain Legguards
+					178760,	-- Disgested Interrogator's Gaze
+					178773,	-- Plague Handler's Greathelm
+					178770,	-- Slimy Consumptive Organ
+					178756,	-- Stradama's Misplaced Slippers
+					178753,	-- Surgical Pustule Extractor
 				}},
 			}),
 			e(2403, {	-- Doctor Ickus
 				["crs"] = { 164967 },	-- Doctor Ickus
-				["sym"] = {{"select", "modItemID",
-					modItemId(178759,1),	-- Depraved Physician's Mask
-					modItemId(178775,1),	-- Fleshfused Crushers
-					modItemId(178763,1),	-- Malodorous Gristle-Sown Spaulders
-					modItemId(178771,1),	-- Phial of Putrefaction
-					modItemId(178752,1),	-- Sophisticated Bonecracker
-					modItemId(178767,1),	-- Tortured Assistant's Bindings
+				["sym"] = {{"select", "itemID",
+					178759,	-- Depraved Physician's Mask
+					178775,	-- Fleshfused Crushers
+					178763,	-- Malodorous Gristle-Sown Spaulders
+					178771,	-- Phial of Putrefaction
+					178752,	-- Sophisticated Bonecracker
+					178767,	-- Tortured Assistant's Bindings
 				}},
 			}),
 			e(2423, {	-- Domina Venomblade
 				["crs"] = { 164266 },	-- Domina Venomblade
-				["sym"] = {{"select", "modItemID",
-					modItemId(178933,1),	-- Arachnid Cipher Ring
-					modItemId(178932,1),	-- Belt of Wretched Manipulations
-					modItemId(178928,1),	-- Domina's Oozing Shiv
-					modItemId(178934,1),	-- Fastened Venombarb Binds
-					modItemId(178929,1),	-- Halberd of the Aranakk
-					modItemId(178930,1),	-- Mitts of Flawless Duplication
-					modItemId(178931,1),	-- Scarred Bloodbound Girdle
+				["sym"] = {{"select", "itemID",
+					178933,	-- Arachnid Cipher Ring
+					178932,	-- Belt of Wretched Manipulations
+					178928,	-- Domina's Oozing Shiv
+					178934,	-- Fastened Venombarb Binds
+					178929,	-- Halberd of the Aranakk
+					178930,	-- Mitts of Flawless Duplication
+					178931,	-- Scarred Bloodbound Girdle
 				}},
 			}),
 			e(2404, {	-- Margrave Stradama
 				["crs"] = { 164267 },	-- Margrave Stradama
-				["sym"] = {{"select", "modItemID",
-					modItemId(178755,1),	-- Blighted Margrave's Cloak
-					modItemId(178757,1),	-- Gloves of Obscure Rituals
-					modItemId(178769,1),	-- Infinitely Divisible Ooze
-					modItemId(178761,1),	-- Leggings of the Erudite Scholar
-					modItemId(178774,1),	-- Muckwallow Stompers
-					modItemId(178764,1),	-- Plagueborne Shoulderguards
-					modItemId(178754,1),	-- Poxstorm, Longsword of Pestilence
+				["sym"] = {{"select", "itemID",
+					178755,	-- Blighted Margrave's Cloak
+					178757,	-- Gloves of Obscure Rituals
+					178769,	-- Infinitely Divisible Ooze
+					178761,	-- Leggings of the Erudite Scholar
+					178774,	-- Muckwallow Stompers
+					178764,	-- Plagueborne Shoulderguards
+					178754,	-- Poxstorm, Longsword of Pestilence
 				}},
 			}),
 		}),
 		inst_tw(1189, {	-- Sanguine Depths
 			e(2388, {	-- Kryxis the Voracious
 				["crs"] = { 162100 },	-- Kryxis the Voracious
-				["sym"] = {{"select", "modItemID",
-					modItemId(178835,1),	-- Anima-Splattered Hide
-					modItemId(178848,1),	-- Entwined Gorger Tendril
-					modItemId(178844,1),	-- Essence Surgers Cuffs
-					modItemId(178854,1),	-- Hungering Devourer's Twinblade
-					modItemId(178836,1),	-- Sabatons of the Rushing Juggernaut
-					modItemId(178846,1),	-- Shackles of Alluring Vitality
-					modItemId(178853,1),	-- Voracious Gorger Spine
+				["sym"] = {{"select", "itemID",
+					178835,	-- Anima-Splattered Hide
+					178848,	-- Entwined Gorger Tendril
+					178844,	-- Essence Surgers Cuffs
+					178854,	-- Hungering Devourer's Twinblade
+					178836,	-- Sabatons of the Rushing Juggernaut
+					178846,	-- Shackles of Alluring Vitality
+					178853,	-- Voracious Gorger Spine
 				}},
 			}),
 			e(2415, {	-- Executor Tarvold
 				["crs"] = { 162103 },	-- Executor Tarvold
-				["sym"] = {{"select", "modItemID",
-					modItemId(178859,1),	-- Castigator's Mantle
-					modItemId(178851,1),	-- Cloak of Enveloping Manifestations
-					modItemId(178843,1),	-- Executor's Prideful Girdle
-					modItemId(178849,1),	-- Overflowing Anima Prison
-					modItemId(178855,1),	-- Sinsmasher
-					modItemId(178837,1),	-- Sinsoaked Waders
-					modItemId(178845,1),	-- Vambraces of the Depraved Warden
+				["sym"] = {{"select", "itemID",
+					178859,	-- Castigator's Mantle
+					178851,	-- Cloak of Enveloping Manifestations
+					178843,	-- Executor's Prideful Girdle
+					178849,	-- Overflowing Anima Prison
+					178855,	-- Sinsmasher
+					178837,	-- Sinsoaked Waders
+					178845,	-- Vambraces of the Depraved Warden
 				}},
 			}),
 			e(2421, {	-- Grand Proctor Beryllia
 				["crs"] = { 162102 },	-- Grand Proctor Beryllia
-				["sym"] = {{"select", "modItemID",
-					modItemId(178838,1),	-- Beryllia's Leggings of Endless Torment
-					modItemId(178841,1),	-- Iron Spiked Handgrips
-					modItemId(178850,1),	-- Lingering Sunmote
-					modItemId(178847,1),	-- Radiant Light Binders
-					modItemId(178852,1),	-- Vessel of Shining Radiance
-					modItemId(178842,1),	-- Waistguard of Expurged Anguish
+				["sym"] = {{"select", "itemID",
+					178838,	-- Beryllia's Leggings of Endless Torment
+					178841,	-- Iron Spiked Handgrips
+					178850,	-- Lingering Sunmote
+					178847,	-- Radiant Light Binders
+					178852,	-- Vessel of Shining Radiance
+					178842,	-- Waistguard of Expurged Anguish
 				}},
 			}),
 			e(2407, {	-- General Kaal
 				["crs"] = {
-					modItemId(162133,1),	-- General Kaal (during gauntlet)
-					modItemId(162099,1),	-- General Kaal
+					162133,	-- General Kaal (during gauntlet)
+					162099,	-- General Kaal
 				},
-				["sym"] = {{"select", "modItemID",
-					modItemId(178862,1),	-- Bladedancer's Armor Kit
-					modItemId(178860,1),	-- Cowl of the Devoted General
-					modItemId(178861,1),	-- Decanter of Anima-Charged Winds
-					modItemId(178840,1),	-- Guilewind Stone Talons
-					modItemId(178856,1),	-- Kaal's Gloomblade
-					modItemId(178857,1),	-- Stone General's Edge
-					modItemId(178858,1),	-- Wicked Bladewing Pauldrons
-					modItemId(178839,1),	-- Wind Dancer's Legguards
+				["sym"] = {{"select", "itemID",
+					178862,	-- Bladedancer's Armor Kit
+					178860,	-- Cowl of the Devoted General
+					178861,	-- Decanter of Anima-Charged Winds
+					178840,	-- Guilewind Stone Talons
+					178856,	-- Kaal's Gloomblade
+					178857,	-- Stone General's Edge
+					178858,	-- Wicked Bladewing Pauldrons
+					178839,	-- Wind Dancer's Legguards
 				}},
 			}),
 		}),
 		inst_tw(1186, {	-- Spires of Ascension
 			e(2399, {	-- Kin-Tara
 				["crs"] = {
-					modItemId(163077,1),	-- Azules
-					modItemId(162059,1),	-- Kin-Tara
+					163077,	-- Azules
+					162059,	-- Kin-Tara
 				},
-				["sym"] = {{"select", "modItemID",
-					modItemId(180115,1),	-- Azure-Venom Choker
-					modItemId(180100,1),	-- Forsworn Stalker's Hauberk
-					modItemId(180109,1),	-- Kin-Tara's Baleful Cord
-					modItemId(180097,1),	-- Quarterstaff of Discordant Ethic
-					modItemId(180101,1),	-- Warboots of Ruthless Conviction
-					modItemId(180103,1),	-- Winged Hunters' Gloves
+				["sym"] = {{"select", "itemID",
+					180115,	-- Azure-Venom Choker
+					180100,	-- Forsworn Stalker's Hauberk
+					180109,	-- Kin-Tara's Baleful Cord
+					180097,	-- Quarterstaff of Discordant Ethic
+					180101,	-- Warboots of Ruthless Conviction
+					180103,	-- Winged Hunters' Gloves
 				}},
 			}),
 			e(2416, {	-- Ventunax
 				["crs"] = { 162058 },	-- Ventunax
-				["sym"] = {{"select", "modItemID",
-					modItemId(180102,1),	-- Dark Stride Footwraps
-					modItemId(180110,1),	-- Dark Praetorian's Clasp
-					modItemId(180104,1),	-- Distorted Construct's Gauntlets
-					modItemId(180116,1),	-- Overcharged Anima Battery
-					modItemId(180095,1),	-- Penitent Edge
-					modItemId(180111,1),	-- Shadowhirl Waistwrap
+				["sym"] = {{"select", "itemID",
+					180102,	-- Dark Stride Footwraps
+					180110,	-- Dark Praetorian's Clasp
+					180104,	-- Distorted Construct's Gauntlets
+					180116,	-- Overcharged Anima Battery
+					180095,	-- Penitent Edge
+					180111,	-- Shadowhirl Waistwrap
 				}},
 			}),
 			e(2414, {	-- Oryphrion
 				["crs"] = { 162060 },	-- Oryphrion
-				["sym"] = {{"select", "modItemID",
-					modItemId(180105,1),	-- Absonant Construct's Handguards
-					modItemId(180118,1),	-- Anima Field Emitter
-					modItemId(180117,1),	-- Empyreal Ordnance
-					modItemId(180107,1),	-- Purge Protocol Legwraps
-					modItemId(180112,1),	-- The Philosopher
-					modItemId(180113,1),	-- Thunderous Echo Vambraces
-					modItemId(180106,1),	-- Vicious Surge Faceguard
+				["sym"] = {{"select", "itemID",
+					180105,	-- Absonant Construct's Handguards
+					180118,	-- Anima Field Emitter
+					180117,	-- Empyreal Ordnance
+					180107,	-- Purge Protocol Legwraps
+					180112,	-- The Philosopher
+					180113,	-- Thunderous Echo Vambraces
+					180106,	-- Vicious Surge Faceguard
 				}},
 			}),
 			e(2412, {	-- Devos, Paragon of Doubt
 				["crs"] = { 162061 },	-- Devos, Paragon of Doubt
-				["sym"] = {{"select", "modItemID",
-					modItemId(180108,1),	-- Abyssal Disharmony Breeches
-					modItemId(180119,1),	-- Boon of the Archon
-					modItemId(180099,1),	-- Breastplate of Brutal Dissonance
-					modItemId(180096,1),	-- Devos' Cacophonous Poleaxe
-					modItemId(180123,1),	-- Drape of Twisted Loyalties
-					modItemId(180114,1),	-- Fallen Paragon's Armguards
-					modItemId(183054,1),	-- Mysterious Soul Mirror
-					modItemId(180098,1),	-- Sinister Requiem Vestments
+				["sym"] = {{"select", "itemID",
+					180108,	-- Abyssal Disharmony Breeches
+					180119,	-- Boon of the Archon
+					180099,	-- Breastplate of Brutal Dissonance
+					180096,	-- Devos' Cacophonous Poleaxe
+					180123,	-- Drape of Twisted Loyalties
+					180114,	-- Fallen Paragon's Armguards
+					183054,	-- Mysterious Soul Mirror
+					180098,	-- Sinister Requiem Vestments
 				}},
 			}),
 		}),
 		inst_tw(1182, {	-- The Necrotic Wake
 			e(2395, {	-- Blightbone
 				["crs"] = { 162691 },	-- Blightbone
-				["sym"] = {{"select", "modItemID",
-					modItemId(178732,1),	-- Abominable Visage
-					modItemId(178735,1),	-- Blight Belcher
-					modItemId(178733,1),	-- Blightbone Spaulders
-					modItemId(178730,1),	-- Engorged Worm Smasher
-					modItemId(178734,1),	-- Fused Bone Greatbelt
-					modItemId(178736,1),	-- Stitchflesh's Misplaced Signet
-					modItemId(178731,1),	-- Viscera-Stitched Footpads
+				["sym"] = {{"select", "itemID",
+					178732,	-- Abominable Visage
+					178735,	-- Blight Belcher
+					178733,	-- Blightbone Spaulders
+					178730,	-- Engorged Worm Smasher
+					178734,	-- Fused Bone Greatbelt
+					178736,	-- Stitchflesh's Misplaced Signet
+					178731,	-- Viscera-Stitched Footpads
 				}},
 			}),
 			e(2391, {	-- Amarth, The Harvester
 				["crs"] = { 163157 },	-- Amarth, The Harvester
-				["sym"] = {{"select", "modItemID",
-					modItemId(178737,1),	-- Amarth's Spellblade
-					modItemId(178742,1),	-- Bottled Chimera Toxin
-					modItemId(178739,1),	-- Legplates of Unholy Frenzy
-					modItemId(178738,1),	-- Rattling Deadeye Hood
-					modItemId(178740,1),	-- Reanimator's Mantle
-					modItemId(178741,1),	-- Risen Monstrosity Cuffs
+				["sym"] = {{"select", "itemID",
+					178737,	-- Amarth's Spellblade
+					178742,	-- Bottled Chimera Toxin
+					178739,	-- Legplates of Unholy Frenzy
+					178738,	-- Rattling Deadeye Hood
+					178740,	-- Reanimator's Mantle
+					178741,	-- Risen Monstrosity Cuffs
 				}},
 			}),
 			e(2392, {	-- Surgeon Stitchflesh
 				["crs"] = {
-					modItemId(162689,1),	-- Surgeon Stitchflesh
-					modItemId(164578,1),	-- Stitchflesh's Creation
+					162689,	-- Surgeon Stitchflesh
+					164578,	-- Stitchflesh's Creation
 				},
-				["sym"] = {{"select", "modItemID",
-					modItemId(178750,1),	-- Encrusted Canopic Lid
-					modItemId(178744,1),	-- Freshly Embalmed Jerkin
-					modItemId(178748,1),	-- Gory Surgeon's Gloves
-					modItemId(178772,1),	-- Satchel of Misbegotten Minions
-					modItemId(178751,1),	-- Spare Meat Hook
-					modItemId(178743,1),	-- Stitchflesh's Scalpel
-					modItemId(178745,1),	-- Striders of Restless Malice
-					modItemId(178749,1),	-- Vile Butcher's Pauldrons
+				["sym"] = {{"select", "itemID",
+					178750,	-- Encrusted Canopic Lid
+					178744,	-- Freshly Embalmed Jerkin
+					178748,	-- Gory Surgeon's Gloves
+					178772,	-- Satchel of Misbegotten Minions
+					178751,	-- Spare Meat Hook
+					178743,	-- Stitchflesh's Scalpel
+					178745,	-- Striders of Restless Malice
+					178749,	-- Vile Butcher's Pauldrons
 				}},
 			}),
 			e(2396, {	-- Nalthor the Rimebinder
 				["crs"] = { 162693 },	-- Nalthor the Rimebinder
-				["sym"] = {{"select", "modItemID",
-					modItemId(178777,1),	-- Dark Frost Helmet
-					modItemId(178778,1),	-- Lichbone Legguards
-					modItemId(178782,1),	-- Necropolis Lord's Shackles
-					modItemId(178780,1),	-- Rimebinder's Runeblade
-					modItemId(178781,1),	-- Ritual Commander's Ring
-					modItemId(178783,1),	-- Siphoning Phylactery Shard
-					modItemId(178779,1),	-- Undying Chill Shoulderpads
+				["sym"] = {{"select", "itemID",
+					178777,	-- Dark Frost Helmet
+					178778,	-- Lichbone Legguards
+					178782,	-- Necropolis Lord's Shackles
+					178780,	-- Rimebinder's Runeblade
+					178781,	-- Ritual Commander's Ring
+					178783,	-- Siphoning Phylactery Shard
+					178779,	-- Undying Chill Shoulderpads
 				}},
 			}),
 		}),
@@ -8035,6 +8045,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
 			q(86295, { ["timeline"] = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
 			q(89211, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID 1229050)
+			q(92856, { ["timeline"] = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
 		})),
 	})),
 });

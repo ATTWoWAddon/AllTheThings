@@ -1,28 +1,19 @@
-11.1.0.58221
-pet(4670),	-- Hermes
-pet(4671),	-- Cauldrone
-pet(4674),	-- Dosh
-pet(4675),	-- FO-MO Mark II
-11.1.5.59571
-pet(4761),	-- Pascal the Wonder Pup
-pet(4792),	-- Ada the Sweetest
-11.2.0.61476
-pet(4824),	-- Baby Karesh Fox - Orange
-pet(4837),	-- Worm, Cosmic - Critter (Red)
+8.3.0.32489
+pet(2779),	-- Anima Wyrmling
+11.2.7.64978
+pet(4894),	-- Heartglow Listener
 12.0.0.63534
 pet(4887),	-- Dundun
 pet(4905),	-- [DNT] Baby Amazard (Red)
 12.0.0.63724
 pet(4945),	-- Aud'rei III
-12.0.0.64741
-pet(5003),	-- Sunwing Hatchling
 
 
 
 
 Missing in PetDB.lua
 
+11.2.7.64978
+pet(4894),	-- Heartglow Listener
 12.0.0.63534
 pet(4795),	-- Voidcrawler
-12.0.0.64741
-pet(5003),	-- Sunwing Hatchling

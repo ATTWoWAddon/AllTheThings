@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,campsite,cq,crit,cu,en,exp,flt,h,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateExploration,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cq,crit,cu,en,exp,faction,flt,h,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"n",221427},{"n",234168},{"n",236626},{"n",244753},{"o",455716},{"s",453139},{"s",464820},{206017},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},{2249,2250,2277,2310,2347,2420},{2249},{2250},{2251},{225401},{2259},{2269},{2277},{2299},{2301},{2302},{2310},{2312},{2347},{235490},{2396},{2420},{245191},{245938},{249592},{2570,12},{47.4,44.4,2339},{48,43.4,2339},{52.2,12.2,2301},{53.1,17.2,2259},{55.3,55.9,2248},{68},{70},{85242},{90969}};
 _.Categories.Delves={
 x(11,{
@@ -85,7 +85,7 @@ ach(42202,{maps=a[10]}),
 ach(42203,{maps=a[10],g={
 title(550)}})}}),
 m(2484,{coords={{38.5,51.1,2472}},icon=_.asset("Delves_Shadow"),maps={2484},g={
-h(-12,{
+h(-12,{rwp=120000,g={
 ach(42190,{providers={a[4]},g={
 mm(238182,{b=1,questID=88819})}}),
 ach(42193,{
@@ -94,7 +94,7 @@ crit(105274,{achID=42193,id=1,providers={{"n",244752}}}),
 crit(105275,{achID=42193,id=2,providers={a[4]}}),
 crit(105911,{achID=40438,awp=110000,id=7})}),
 ach(42194,{providers={a[4]},g={
-title(639)}})}),
+title(639)}})}}),
 h(-30,{
 exp(16539,{collectible=false,coords={{53.4,82.9,2484}}})})}})}}),
 h(-12,{
@@ -274,7 +274,8 @@ crit(103524,{achID=41714,id=3,providers={{"i",230219}}}),
 crit(103525,{achID=41714,id=4,providers={{"i",230218}}}),
 crit(103526,{achID=41714,id=5,providers={{"i",230220}}})}}),
 ach(40438,{awp=110000,maps=a[9],g={
-mnt(452779,{b=1,itemID=224415,lvl=30})}}),
+mnt(452779,{b=1,itemID=224415,lvl=30}),
+crit(109697,{achID=61451,awp=110207,id=7})}}),
 ach(40524,{awp=110000,maps=a[10]}),
 ach(40732,{awp=110000,maps=a[9]}),
 ach(40098,{awp=110000,maps=a[10],g={
@@ -297,14 +298,14 @@ ach(40506,{awp=110000,maps=a[10],g={
 title(570),
 crit(68727,{achID=40438,id=2})}}),
 ach(40523,{awp=110000,maps=a[9]}),
-ach(42241,{awp=110107,g={
-crit(105440,{achID=42241,maps=a[12]}),
-crit(105441,{achID=42241,maps=a[13]}),
-crit(105442,{achID=42241,maps=a[22]}),
-crit(105443,{achID=42241,maps=a[18]}),
-crit(105444,{achID=42241,maps=a[27]}),
-crit(105445,{achID=42241,maps=a[24]}),
-toy(235016,{b=1})}}),
+ach(42241,{awp=110107,rwp=110200,u=2,g={
+crit(105440,{achID=42241,maps=a[12],u=2}),
+crit(105441,{achID=42241,maps=a[13],u=2}),
+crit(105442,{achID=42241,maps=a[22],u=2}),
+crit(105443,{achID=42241,maps=a[18],u=2}),
+crit(105444,{achID=42241,maps=a[27],u=2}),
+crit(105445,{achID=42241,maps=a[24],u=2}),
+toy(235016,{b=1,u=2})}}),
 ach(40863,{awp=110000,maps=a[10],providers={a[6]}}),
 ach(40864,{awp=110000,crs=a[15],maps=a[10],providers={a[6]}}),
 ach(41105,{awp=110100,crs=a[15],maps=a[10],providers={a[6]}}),
@@ -346,7 +347,8 @@ ach(40436,{awp=110000,maps=a[10]}),
 ach(40460,{awp=110000,maps=a[9]}),
 ach(40462,{awp=110000,maps=a[9]}),
 ach(40463,{awp=110000,maps=a[9]}),
-ach(41095,{awp=110100,maps=a[9]}),
+ach(41095,{awp=110100,maps=a[9],g={
+title(650)}}),
 ach(41096,{awp=110100,maps=a[9],g={
 title(599)}})}),
 h(-24,{maps=a[10],g={
@@ -688,6 +690,7 @@ s(266874,235486,{b=1,cost={{"c",3028,1}},f=23,lvl=70,rwp=110200,u=2}),
 i(235422,{b=1,cost={{"c",3028,1}},f=52,lvl=70,rwp=110200,u=2})}}),
 h(-385,{awp=110200,g={
 s(287247,237999,{b=1,cost={{"c",3028,1}},f=23,lvl=70}),
+s(200655,218126,{b=1,cost={{"c",3028,1}},f=29,lvl=70,spellID=442205}),
 s(287255,238007,{b=1,cost={{"c",3028,1}},f=8,lvl=70}),
 s(287245,237997,{b=1,cost={{"c",3028,1}},f=21,lvl=70}),
 s(287252,238004,{b=1,cost={{"c",3028,1}},f=28,lvl=70}),
@@ -756,12 +759,12 @@ i(239571,{b=1}),
 i(239567,{b=1}),
 i(239570,{b=1})}})})}),
 flt(200,{
-r(435383,{itemID=223085,learnedAt=90,requireSkill=755}),
-r(445393,{itemID=223139,learnedAt=90,requireSkill=333}),
-r(446991,{itemID=224434,learnedAt=80,requireSkill=197}),
-r(443960,{itemID=223101,learnedAt=100,requireSkill=165}),
-r(450277,{itemID=223051,learnedAt=90,requireSkill=164}),
-r(444207,{itemID=223060,learnedAt=90,requireSkill=773})}),
+r(435383,{itemID=223085,requireSkill=755,skillID=2879}),
+r(445393,{itemID=223139,requireSkill=333,skillID=2874}),
+r(446991,{itemID=224434,requireSkill=197,skillID=2883}),
+r(443960,{itemID=223101,requireSkill=165,skillID=2880}),
+r(450277,{itemID=223051,requireSkill=164,skillID=2872}),
+r(444207,{itemID=223060,requireSkill=773,skillID=2878})}),
 h(-101,{
 s(218289,219355,{b=1,f=34,lvl=70}),
 s(193921,211041,{b=1,f=1,lvl=70}),
@@ -775,6 +778,8 @@ s(218290,219356,{b=1,f=21,lvl=70}),
 s(218287,219353,{b=1,f=33,lvl=70}),
 s(193926,211046,{b=1,f=20,lvl=70}),
 s(193920,211040,{b=1,f=8,lvl=70})})}}),
+h(-31,{
+faction(2640)}),
 h(-35,{
 q(77716,{lvl=70,type="hqt"}),
 q(77718,{lvl=70,type="hqt"}),
@@ -1440,7 +1445,7 @@ o(549999,{
 i(245747,{spellID=1239876})}),
 i(246053,{spellID=1240570})}),
 h(-56,{
-o(455498,{coords={{47.9,24.6,2455},{62.4,37.9,2455}},description="Use Waygate on the 1st Level.",questID=83692}),
+o(455498,{coords={{62.1,38.2,2454},{47.9,24.6,2455}},description="Use Waygate on the 1st Level.",questID=83692}),
 o(455518,{coords={{62,11.1,2455}},questID=83673}),
 o(455535,{coords={{49.7,92.6,2455}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573}),
 o(539785,{coords={{43.9,64.7,2455},{43.3,65.7,2476}},questID=90839})})}}),
@@ -1690,7 +1695,8 @@ exp(15990,{collectible=false,coords={{49.1,63,2423}}})}),
 flt(50,{
 cq(90949,{awp=110107,b=1,itemID=244901,spellID=1238252}),
 i(234454,{spellID=1214231}),
-i(234451,{spellID=1214202})}),
+o(504179,{
+i(234451,{spellID=1214202})})}),
 h(-56,{
 o(503157,{coords={{61,63.9,2420}},questID=86787,g={
 crit(102897,{achID=41101,id=1})}}),

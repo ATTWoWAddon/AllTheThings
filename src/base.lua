@@ -7,8 +7,6 @@ local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,
 	= rawget, pairs, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
-app.EmptyFunction = function() end;
-app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 app.Categories = {};
 
 
@@ -34,6 +32,8 @@ app.asset = function(path)
 end
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
+-- Does not omit the UpdateGroup handling but will persist showing the data
+app.ForceShowUpdate = function(data) data.forceShow = true end
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 
@@ -343,13 +343,26 @@ app.GetNameFromProvider = function(pt, id)
 end
 
 -- Common Metatable Functions
-app.MetaTable = {}
-app.MetaTable.AutoTable = { __index = function(t, key)
-	if key == nil then return end
-	local k = {}
-	t[key] = k
-	return k
-end}
+do
+local __MetaTable = {
+	AutoTable = function()
+		return { __index = function(t, key)
+			if key == nil then return end
+			local k = {}
+			t[key] = k
+			return k
+		end}
+	end,
+}
+if app.__perf then
+	-- if tracking performance, we actually want each MetaTable reference to create a unique metatable so that performance stats are not shared
+	-- between multiple tables
+	app.MetaTable = setmetatable({__noperf=true}, { __index = function(t,key) return __MetaTable[key] and __MetaTable[key]() or nil end })
+else
+	app.MetaTable = {}
+	app.MetaTable.AutoTable = __MetaTable.AutoTable()
+end
+end
 
 -- Cache information about the player.
 app.Gender = UnitSex("player");

@@ -17,8 +17,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		["timeline"] = { ADDED_11_2_0 },
 	}),
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(543723, {	-- Dornic Fir Lumber
-			i(248012),	-- Dornic Fir Lumber
+		o_repeated({	-- Dornic Fir Lumber
+			["maps"] = {
+				AZJ_KAHET,
+				NERUBAR,
+				HALLOWFALL,
+				ISLE_OF_DORN,
+				DORNOGAL,
+				SIREN_ISLE,
+				THE_RINGING_DEEPS,
+			},
+			["groups"] = {
+				-- Objects
+				o(544781),	-- [Azj-Kahet/City of Threads]
+				o(546737),	-- [Hallowfall]
+				o(543723),	-- [Isle of Dorn/Dornogal]
+				o(546928),	-- [Siren Isle]
+				o(546738),	-- [The Ringing Deeps]
+				-- Drops
+				i(248012),	-- Dornic Fir Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -263,9 +281,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Cuauldrons
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
-			-- Decor
-			-- FirstCraft(XXXXX, 1259673, ADDED_11_2_7);	-- Boulder Springs Hot Tub
-			-- FirstCraft(XXXXX, 1261878, ADDED_11_2_7);	-- Nerubian Alchemist's Retort
 		})),
 		filter(MISC, {
 			i(212781),	-- Formulated Courage
@@ -422,9 +437,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Other
 			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
 			FirstCraft(83399, 450292);	-- Coreforged Skeleton Key
-			-- Decor
-			-- FirstCraft(XXXXX, 1259675, ADDED_11_2_7);	-- Rusting Bolted Bench
-			-- FirstCraft(XXXXX, 1259681, ADDED_11_2_7);	-- Shredderwheel Storage Chest
 		})),
 		filter(MISC, {
 			i(222520),	-- Coreforged Repair Hammer+
@@ -844,9 +856,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81044, 445372);	-- Runed Ironclaw Rod
 			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
 			FirstCraft(81028, 445355);	-- Scepter of Radiant Magics
-			-- Decor
-			-- FirstCraft(XXXXX, 1259715, ADDED_11_2_7);	-- Dornogal Hanging Sconce
-			-- FirstCraft(XXXXX, 1259690, ADDED_11_2_7);	-- Replica Awakening Machine Stasis Pod
 		})),
 		filter(ILLUSIONS, {
 		}),
@@ -1267,9 +1276,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81323, 447334),	-- Miner's Bismuth Hoard
 			FirstCraft(81312, 447323),	-- Spring-Loaded Aqirite Fabric Cutters
 			FirstCraft(81311, 447322),	-- Spring-Loaded Bismuth Fabric Cutters
-			-- Decor
-			-- FirstCraft(XXXXX, 1259778, ADDED_11_2_7);	-- Replica Rumbling Wastes Drill Pod
-			-- FirstCraft(XXXXX, 1259724, ADDED_11_2_7);	-- Schmancy Goblin String Lights
 		})),
 		filter(GEMS, {
 			i(221904),	-- Tinker: Earthen Delivery Drill+
@@ -1707,13 +1713,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80710, 444201);	-- Inquisitor's Baton
 			FirstCraft(80709, 444200);	-- Inquisitor's Crutch
 			FirstCraft(80705, 444196);	-- Inquisitor's Torch
-			-- Decor
-			-- FirstCraft(XXXXX, 1260005, ADDED_11_2_7);	-- Algari Fence
-			-- FirstCraft(XXXXX, 1260044, ADDED_11_2_7);	-- Algari Fencepost
-			-- FirstCraft(XXXXX, 1259796, ADDED_11_2_7);	-- Dornogal Bookcase
-			-- FirstCraft(XXXXX, 1259784, ADDED_11_2_7);	-- Forgeground Market Bins
-			-- FirstCraft(XXXXX, 1259818, ADDED_11_2_7);	-- Freywold Table
-			-- FirstCraft(XXXXX, 1259805, ADDED_11_2_7);	-- Meadery Storage Chest
 		})),
 		filter(GLYPHS, {
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
@@ -2044,9 +2043,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81255, 435389);	-- Remembrance Stone
 			-- Mounts
 			FirstCraft(89248, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
-			-- Decor
-			-- FirstCraft(XXXXX, 1260172, ADDED_11_2_7);	-- Gundargaz Candelabra
-			-- FirstCraft(XXXXX, 1260096, ADDED_11_2_7);	-- Octagonal Ochre Window
 		})),
 		filter(GEMS, {
 			i(213748),	-- Cognitive Bloodstone
@@ -2368,9 +2364,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80948, 444078);	-- Sporecoated Hide
 			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
 			FirstCraft(80947, 444077);	-- Writhing Hide
-			-- Decor
-			-- FirstCraft(XXXXX, 1270836, ADDED_11_2_7);	-- Well-Lit Incontinental Couch
-			-- FirstCraft(XXXXX, 1260328, ADDED_11_2_7);	-- Zhevra-Stripe Rug
 		})),
 		filter(MISC, {
 			i(219495),	-- Blessed Weapon Grip+
@@ -2855,9 +2848,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80863, 446999);	-- Weavercloth Spellthread
 			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
 			FirstCraft(80861, 446997);	-- Weavercloth Embroidery Thread
-			-- Decor
-			-- FirstCraft(XXXXX, 1260215, ADDED_11_2_7);	-- Dornogal Framed Rug
-			-- FirstCraft(XXXXX, 1260326, ADDED_11_2_7);	-- Undermine Bean Bag Chair
 		})),
 	}),
 })));

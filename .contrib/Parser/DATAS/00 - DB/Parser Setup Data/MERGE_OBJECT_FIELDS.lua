@@ -4,12 +4,12 @@
 
 MERGE_OBJECT_FIELDS = {
 	spellID = { "type","learnedAt" },
-	recipeID = { "requireSkill","learnedAt" },
+	recipeID = { "requireSkill","learnedAt","skillID" },
 	speciesID = { "pb","crs","itemID" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
 	mountID = { "itemID" },
-	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g" },
+	questID = { "type","sourceQuests","altQuests","isBreadcrumb","c","r","races","lvl","OnTooltip","_type","_area","_category","_text","name","description","nextQuests","isDaily","isMonthly","isYearly","repeatable","g","poiIDs" },
 	itemID = { "_class","_subclass","_inventoryType","ignoreBonus","minReputation","spellID","decorID","crs","mountID","speciesID","recipeID" },
 }
 

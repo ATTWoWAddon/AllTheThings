@@ -1,9 +1,2 @@
-11.2.0.61476
-campsite(99),	-- Adventurer's Rest
-campsite(110),	-- Test Example from Scratch
-campsite(111),	-- Adventurer's Rest (Test) \\ Adventurer's Rest
 12.0.0.63534
 campsite(141),	-- Saconway Test 091725
-12.0.0.63854
-campsite(145),	-- Razorwind Shores
-campsite(146),	-- Founders Point

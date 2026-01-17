@@ -271,7 +271,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14048, {	-- Can't Get Enough Turkey (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, DUN_MOROGH },
 					["cost"] = { { "i", 44838, 20 } },	-- Slow-Roasted Turkey
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -319,7 +319,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14051, {	-- Don't Forget The Stuffing! (Alliance)
 					["qg"] = 34708,	-- Caitrin Ironkettle
-					["coord"] = { 60, 34.2, DUN_MOROGH },
+					["coord"] = { 60.0, 34.2, DUN_MOROGH },
 					["cost"] = { { "i", 44837, 20 } },	-- Spice Bread Stuffing
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -496,7 +496,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14035, {	-- Slow-roasted Turkey (Alliance)
 					["sourceQuest"] = 14033,	-- Candied Sweet Potatoes (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -529,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14023, {	-- Spice Bread Stuffing (Alliance)
 					["qg"] = 34675,	-- Gregory Tabor
-					["coord"] = { 34, 51.4, ELWYNN_FOREST },
+					["coord"] = { 34.0, 51.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {

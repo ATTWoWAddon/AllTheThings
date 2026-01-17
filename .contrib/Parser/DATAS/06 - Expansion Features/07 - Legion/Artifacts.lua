@@ -1,10 +1,11 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local MageTowerFilter
 -- #if BEFORE BFA
-local MageTowerFilter = {["u"] = 41};
+MageTowerFilter = {["u"] = 41};
 -- #else
-local MageTowerFilter =
+MageTowerFilter =
 {["timeline"] = {
 	ADDED_7_2_0,
 	REMOVED_8_0_1,
@@ -200,13 +201,6 @@ root(ROOTS.ExpansionFeatures,
 			["ItemAppearanceModifierID"] = 9,
 			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {
-				ach(11143, {		-- Honoring the Past
-					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-					["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
-				}),
-				ach(10853, {		-- Part of History
-					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-				}),
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
 						["ItemAppearanceModifierID"] = 0,
@@ -1713,8 +1707,8 @@ root(ROOTS.ExpansionFeatures,
 						HiddenAppearance(1296099, {
 							artifact(328),	-- Find Hidden Artifact Skin
 							artifact(326),	-- Complete 30 Legion Dungeons Hidden
-							artifact(318),	-- Complete 200 WQ Hidden
-							artifact(327),	-- Kill 1,000 Players Hidden
+							artifact(327),	-- Complete 200 WQ Hidden
+							artifact(318),	-- Kill 1,000 Players Hidden
 						}),
 					}),
 					i(128943, {	-- Skull of the Man'ari

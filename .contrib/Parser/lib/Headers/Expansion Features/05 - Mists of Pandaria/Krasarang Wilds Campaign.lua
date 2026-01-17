@@ -3,14 +3,14 @@ KRASARANG_WILDS_CAMPAIGN = createHeader({
 	text = {
 		en = "Krasarang Wilds Campaign",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Campaña de la Espesura Krasarang",
+		mx = "Campaña de la Espesura Krasarang",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "卡桑琅丛林战役",
 		-- TODO: tw = "",
 	},
 });

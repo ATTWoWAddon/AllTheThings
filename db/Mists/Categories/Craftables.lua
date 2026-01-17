@@ -2041,6 +2041,7 @@ i(10922,{c={4},f=55,lvl=56,rwp=30002,u=2})}}),
 prof(393,{description="The following items can be gathered by skinning creatures out in the world.",g={
 h(-22,{
 s(121696,7005,{collectible=false,description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=57,learnedAt=1,q=1,requireSkill=393})}),
+sp(8613,{
 i(4234,{maps={22,26,70,71},q=1}),
 i(2318,{maps={10,21,48,52,62,76},q=1}),
 i(2319,{maps={14,65},q=1}),
@@ -2081,7 +2082,7 @@ i(8165,{description="Can be skinned from elite creatures of any Dragonflights ar
 i(20501),
 i(20500),
 i(11512,{b=1,q=1}),
-i(20498)}}),
+i(20498)})}}),
 prof(197,{
 h(-88,{
 s(123361,10030,{f=4,lvl=43,q=2}),
@@ -3959,7 +3960,7 @@ i(40919,{awp=30002,c={11},f=111,lvl=25,q=1,u=30})}}),
 flt(1,{awp=30003,u=30,g={
 s(175211,44210,{awp=30003,f=1,lvl=77,q=4,u=30}),
 s(171992,38322,{awp=30003,f=1,lvl=77,q=4,u=30}),
-ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854},{"s",64051}},type="i",u=30,g={
+ah(45854,{awp=30100,description="This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",providers={{"i",45854}},type="i",u=30,g={
 s(175937,45850,{awp=30003,f=1,lvl=70,q=3,u=30}),
 s(175938,45851,{awp=30003,f=1,lvl=70,q=3,u=30}),
 s(175939,45852,{awp=30003,f=1,lvl=70,q=3,u=30}),
@@ -4753,7 +4754,7 @@ r(93328,{awp=40003,b=1,itemID=67538,learnedAt=525,q=4,requireSkill=171,u=40})}})
 i(64652,{awp=40003,b=1,cost={{"c",401,45}},u=40}),
 i(64653,{awp=40003,b=1,cost={{"c",401,45}},u=40}),
 p(264,{awp=40003,b=1,cost={{"c",401,150}},itemID=60847,npcID=45128,q=4,spellID=84263,u=40}),
-i(97986,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,requireSkill=794,rwp=70003,u=53}),
+i(97986,{awp=50300,b=1,lvl=90,q=1,requireSkill=794,rwp=70003,u=53}),
 i(64656,{awp=40003,b=1,cost={{"c",401,45}},u=40}),
 toy(64881,{awp=40003,b=1,cost={{"c",401,150}},q=4,u=40}),
 i(64904,{awp=40003,b=1,cost={{"c",401,150}},f=52,lvl=85,q=4,u=40}),
@@ -6328,7 +6329,8 @@ i(74726,{awp=50004,q=3,u=50}),
 i(74725,{awp=50004,q=3,u=50}),
 i(74724,{awp=50004,q=3,u=50}),
 i(74728,{awp=50004,q=3,u=50}),
-i(74723,{awp=50004,q=3,u=50})}})}}),
+i(74723,{awp=50004,q=3,u=50}),
+i(254314,{awp=50501,b=1,q=3,u=52})}})}}),
 prof(202,{awp=50004,u=50,g={
 prof(20219,{awp=50004,description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",u=50,g={
 flt(100,{awp=50004,u=50,g={
@@ -7508,6 +7510,6 @@ i(82447,{awp=50004,b=1,q=3,u=50})}})}}),
 h(-45,{
 q(31752,{isDaily=1,qgs={43929},g={
 i(86623,{b=1,q=2,sym={{"select","itemID",87250,87251,41508,44413,15996,11826,4401,11825,21277}},g={
-i(97985,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,rwp=70003,u=53}),
+i(97985,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53}),
 p(1320,{b=1,itemID=103670,npcID=73011,q=3,spellID=147124}),
 i(90561)}})}})})}})};

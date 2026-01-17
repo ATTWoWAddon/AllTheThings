@@ -8,6 +8,11 @@ root(ROOTS.Zones, {
 			n(TREASURES, {
 				o(241717, {	-- Glimmering Treasure Chest
 					["questID"] = 38763,
+					-- #if AFTER 11.2.7
+					-- #if BEFORE 12.0.0
+					["isDaily"] = true,	-- Maybe only daily during remix?
+					-- #endif
+					-- #endif
 					["coord"] = { 49.7, 47.3, STORMHEIM },
 				}),
 				o(241721, {	-- Glimmering Treasure Chest
@@ -175,7 +180,7 @@ root(ROOTS.Zones, {
 				}),
 				o(250987, {	-- Small Treasure Chest
 					["questID"] = 42632,
-					["coord"] = { 74, 52.2, STORMHEIM },
+					["coord"] = { 74.0, 52.2, STORMHEIM },
 				}),
 				o(251776, {	-- Small Treasure Chest
 					["questID"] = 43238,
@@ -183,8 +188,12 @@ root(ROOTS.Zones, {
 				}),
 				o(241153, {	-- Small Treasure Chest
 					["questID"] = 38483,
-					["coord"] = { 50.3, 41, STORMHEIM },
+					["coord"] = { 50.3, 41.0, STORMHEIM },
 					["description"] = "Inside the cave.",
+				}),
+				o(269079, {	-- Small Treasure Chest
+					["coord"] = { 59.9, 70.8, STORMHEIM },
+					["timeline"] = { ADDED_7_2_0 },
 				}),
 				o(269082, {	-- Small Treasure Chest
 					["coord"] = { 29.1, 47.1, STORMHEIM },

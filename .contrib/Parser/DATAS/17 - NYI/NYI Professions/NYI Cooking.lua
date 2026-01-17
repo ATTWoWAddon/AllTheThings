@@ -299,6 +299,38 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.MOP, {
+				-- 5.0.1
+				expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+					-- Without SpellID attached
+					i(87247),	-- Recipe: Banquet of the Brew
+					i(87227),	-- Recipe: Banquet of the Grill
+					i(87243),	-- Recipe: Banquet of the Oven
+					i(87235),	-- Recipe: Banquet of the Pot
+					i(87239),	-- Recipe: Banquet of the Steamer
+					i(87231),	-- Recipe: Banquet of the Wok
+					i(74665),	-- Recipe: Black Pepper Ribs and Shrimp
+					i(74670),	-- Recipe: Braised Turtle
+					i(74663),	-- Recipe: Charbroiled Tiger Steak
+					i(74677),	-- Recipe: Chun Tian Spring Rolls
+					i(74664),	-- Recipe: Eternal Blossom Fish
+					i(74673),	-- Recipe: Fire Spirit Salmon
+					i(87249),	-- Recipe: Great Banquet of the Brew
+					i(87229),	-- Recipe: Great Banquet of the Grill
+					i(87245),	-- Recipe: Great Banquet of the Oven
+					i(87237),	-- Recipe: Great Banquet of the Pot
+					i(87241),	-- Recipe: Great Banquet of the Steamer
+					i(87233),	-- Recipe: Great Banquet of the Wok
+					i(74671),	-- Recipe: Mogu Fish Stew
+					i(74666),	-- Recipe: Sauteed Carrots
+					i(74668),	-- Recipe: Sea Mist Rice Noodles
+					i(74672),	-- Recipe: Shrimp Dumplings
+					i(74674),	-- Recipe: Steamed Crab Surprise
+					i(74669),	-- Recipe: Swirling Mist Soup
+					i(74676),	-- Recipe: Twin Fish Platter
+					i(74667),	-- Recipe: Valley Stir Fry
+					i(74675),	-- Recipe: Wildfowl Roast
+				})),
+
 				-- 5.0.4
 				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					-- With SpellID attached
@@ -411,42 +443,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(224419),	-- Recipe: Jester's Board (RECIPE!)
 					i(223959),	-- Recipe: Secret Sauce (RECIPE!)
 				})),
+
+				-- 11.2.7
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+					r(1245945),	-- [DNT] TWW Cooking Decor Template
+				})),
 			}),
-		}),
-	}),
-	-- Needs Sorting
-	prof(COOKING, {
-		expansion(EXPANSION.MOP, {
-			-- 5.0.1
-			expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
-				i(87239),	-- Recipe: Banquet of the Steamer
-				i(74673),	-- Recipe: Fire Spirit Salmon
-				i(87241),	-- Recipe: Great Banquet of the Steamer
-				i(74672),	-- Recipe: Shrimp Dumplings
-				i(74674),	-- Recipe: Steamed Crab Surprise
-				i(87235),	-- Recipe: Banquet of the Pot
-				i(74670),	-- Recipe: Braised Turtle
-				i(87237),	-- Recipe: Great Banquet of the Pot
-				i(74671),	-- Recipe: Mogu Fish Stew
-				i(74669),	-- Recipe: Swirling Mist Soup
-				i(87227),	-- Recipe: Banquet of the Grill
-				i(74665),	-- Recipe: Black Pepper Ribs and Shrimp
-				i(74663),	-- Recipe: Charbroiled Tiger Steak
-				i(74664),	-- Recipe: Eternal Blossom Fish
-				i(87229),	-- Recipe: Great Banquet of the Grill
-				i(87243),	-- Recipe: Banquet of the Oven
-				i(74677),	-- Recipe: Chun Tian Spring Rolls
-				i(87245),	-- Recipe: Great Banquet of the Oven
-				i(74676),	-- Recipe: Twin Fish Platter
-				i(74675),	-- Recipe: Wildfowl Roast
-				i(87247),	-- Recipe: Banquet of the Brew
-				i(87249),	-- Recipe: Great Banquet of the Brew
-				i(87231),	-- Recipe: Banquet of the Wok
-				i(87233),	-- Recipe: Great Banquet of the Wok
-				i(74666),	-- Recipe: Sauteed Carrots
-				i(74668),	-- Recipe: Sea Mist Rice Noodles
-				i(74667),	-- Recipe: Valley Stir Fry
-			})),
 		}),
 	}),
 }));

@@ -56,7 +56,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50966, {	-- Cleanup Crew
 				["groups"] = {
-					i(160703),	-- Bundle of Supplies (QI!)
+					o(284468, {	-- 7th Legion Supply Crate
+						i(160703),	-- Bundle of Supplies (QI!)
+					}),
 				},
 			}),
 			q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
@@ -192,14 +194,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51636),	-- Make Loh Go
 			q(50876),	-- Murderbeak
 			q(54051, {	-- Naga Attack!
-				["groups"] = {
-					i(165605),	-- Azsharan Medallion
-				},
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(54060, {	-- Naga Attack!
-				["groups"] = {
-					i(165605),	-- Azsharan Medallion
-				},
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(54508, {	-- No Bridge Too Dire (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,

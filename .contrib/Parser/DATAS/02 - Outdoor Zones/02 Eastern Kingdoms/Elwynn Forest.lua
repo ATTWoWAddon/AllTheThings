@@ -2518,7 +2518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(39, {	-- Deliver Thomas' Report
 					["sourceQuest"] = 71,	-- Report to Thomas
 					["qg"] = 261,	-- Guard Thomas
-					["coord"] = { 74, 72.2, ELWYNN_FOREST },
+					["coord"] = { 74.0, 72.2, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,

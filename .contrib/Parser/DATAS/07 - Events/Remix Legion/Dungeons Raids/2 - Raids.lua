@@ -39,7 +39,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					42639,	-- Heroic: Trial of Valor
 				}},
 				["groups"] = {
-					title(659),	-- %s of the Infinite Chaos (TITLE!)
+					title(659),	-- <Name> of the Infinite Chaos
 				},
 			}),
 			ach(61078, {	-- Mythic Legion Remix Raids

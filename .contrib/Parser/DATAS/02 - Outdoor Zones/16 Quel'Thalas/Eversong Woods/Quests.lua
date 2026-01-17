@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(248047),	-- Lightbloom Band
 							i(248048),	-- Ring of Overgrowth
 							o(577805, {	-- Strange Seed
-								i(253386),	-- Strange Seed (QI!)
+								i(253386),	-- Light-pulsing Seed (QI!)
 							}),
 						},
 					}),
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90835, {	-- Rumors Abound
 						--["sourceQuests"] = { xx },	-- xx
 						["provider"] = { "n", 244493 },	-- Avara
-						["coord"] = { 56, 63.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["coord"] = { 56.0, 63.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 						["groups"] = {
 						},
 					}),
@@ -1116,6 +1116,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92869 },	-- Fishy Dis-pondencies
 						["provider"] = { "n", 253468 },	-- Drathen
 						["coord"] = { 44.8, 60.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["groups"] = { i(267456) },	-- Lil' Scoots' Pillow (TOY!)
 					}),
 				--}),
 			--}),

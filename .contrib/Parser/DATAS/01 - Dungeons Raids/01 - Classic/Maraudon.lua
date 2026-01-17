@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(17696, {	-- Filled Cerulean Vial
 							["description"] = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
-							["coord"] = { 38, 58, DESOLACE },
+							["coord"] = { 38.0, 58.0, DESOLACE },
 							["cost"] = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
 						}),
 						-- #endif

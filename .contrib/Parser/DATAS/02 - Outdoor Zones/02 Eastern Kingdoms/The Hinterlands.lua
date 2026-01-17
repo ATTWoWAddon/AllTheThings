@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
 					["qg"] = 2700,	-- Captain Nials
-					["coord"] = { 40, 48.8, ARATHI_HIGHLANDS },
+					["coord"] = { 40.0, 48.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
 					["isBreadcrumb"] = true,
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
 					["qg"] = 7780,	-- Rin'ji <Witherbark Troll>
-					["coord"] = { 30.6, 47, THE_HINTERLANDS },
+					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
@@ -1618,7 +1618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2937, {	-- Summoning Shadra
 					["sourceQuest"] = 2936,	-- The Spider God
 					["qg"] = 3188,	-- Master Gadrin
-					["coord"] = { 56, 74.6, DUROTAR },
+					["coord"] = { 56.0, 74.6, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
@@ -1629,7 +1629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9324 },	-- Shadra's Venom
 								{ "i", 9323 },	-- Gadrin's Parchment
 							},
-							["coord"] = { 34, 72, THE_HINTERLANDS },
+							["coord"] = { 34.0, 72.0, THE_HINTERLANDS },
 							["cr"] = 2707,	-- Shadra <The Venom Queen>
 						}),
 					},
@@ -1750,7 +1750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Message to the Wildhammer Delivered
 							["provider"] = { "i", 19036 },	-- Final Message to the Wildhammer
-							["coord"] = { 14, 48, THE_HINTERLANDS },
+							["coord"] = { 14.0, 48.0, THE_HINTERLANDS },
 						}),
 						i(19119, {	-- Owlbeast Hide Gloves
 							["timeline"] = { REMOVED_4_0_3 },

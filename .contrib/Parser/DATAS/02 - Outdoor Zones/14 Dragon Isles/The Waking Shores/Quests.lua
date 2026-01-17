@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
 					["sourceQuests"] = { 70134 },	-- Memories
 					["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
-					["coord"] = { 23, 60, THE_WAKING_SHORES },
+					["coord"] = { 23.0, 60.0, THE_WAKING_SHORES },
 				}),
 			}),
 			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking

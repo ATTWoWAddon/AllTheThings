@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(233471, {	-- Scrapchewer
 				["description"] = "Can be summoned by anyone who has a contract with the Venture Co.",
-				["coord"] = { 56.8, 79, UNDERMINE },
+				["coord"] = { 56.8, 79.0, UNDERMINE },
 				["crs"] = {
 					234911,	-- Vignette Bunny [DNT]
 					234832,	-- Krazzik's Drill Rig

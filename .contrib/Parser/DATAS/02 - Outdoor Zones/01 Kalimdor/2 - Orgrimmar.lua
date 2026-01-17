@@ -630,6 +630,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
+				prof(SKINNING, {
+					n(7088, {	-- Thuwd <Skinning Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 61.0, 54.6, ORGRIMMAR },
+							-- #else
+							{ 63.2, 45.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_SKINNING,
+					}),
+				}),
 				prof(TAILORING, {
 					n(3363, {	-- Magar <Tailoring Trainer>
 						["coords"] = {
@@ -1135,7 +1148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8051 },	-- Flare Gun
 					},
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1198,7 +1211,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2378, {	-- Find the Shattered Hand
 					["altQuests"] = { 2380 },	-- To Orgrimmar!
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1250,14 +1263,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						COOKING_AWARD,
 					},
-				}),
-				q(31014, {	-- Hellscream's Gift
-					["sourceQuest"] = 31013,	-- The Horde Way
-					["qg"] = 62092,	-- Garrosh Hellscream
-					["coord"] = { 70.6, 30.8, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["maps"] = { 503 },	-- Brawl'gar Arena
-					["races"] = { PANDAREN_HORDE },
 				}),
 				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
@@ -1357,7 +1362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8087 },	-- Sample of Zanzil's Altered Mixture
 					},
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1646,7 +1651,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1509, {	-- News of Dogran (1/2)
 					["sourceQuest"] = 1508,	-- Blind Cazul
 					["qg"] = 5910,	-- Zankaja
-					["coord"] = { 37, 59.6, ORGRIMMAR },
+					["coord"] = { 37.0, 59.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1730,7 +1735,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(10794, {	-- Rogues of the Shattered Hand
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
-					["coord"] = { 79.4, 52, SILVERMOON_CITY },
+					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1861,7 +1866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
-					["coord"] = { 85, 10.2, UNDERCITY },
+					["coord"] = { 85.0, 10.2, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
@@ -1996,13 +2001,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(31013, {	-- The Horde Way
-					["sourceQuest"] = 31012,	-- Joining the Horde
-					["qg"] = 39605,	-- Garrosh Hellscream
-					["coord"] = { 48.2, 70.6, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = { PANDAREN_NEUTRAL },
-				}),
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.4, ORGRIMMAR },
@@ -2103,7 +2101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2380,	-- To Orgrimmar!
 					},
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2303,7 +2301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7268 },	-- Xavian Water Sample
 								{ "i", 7269 },	-- Deino's Flask
 							},
-							["coord"] = { 76, 41, ASHENVALE },
+							["coord"] = { 76.0, 41.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -2402,7 +2400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2382, {	-- Wrenix of Ratchet
 					["sourceQuest"] = 2379,	-- Zando'zan
 					["qg"] = 3402,	-- Zando'zan
-					["coord"] = { 42.8, 53, ORGRIMMAR },
+					["coord"] = { 42.8, 53.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2447,7 +2445,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["altQuests"] = { 10372 },	-- A Discreet Inquiry
 					-- #endif
 					["qg"] = 3401,	-- Shenthul
-					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -2609,6 +2607,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(44481),	-- Grindgear Toy Gorilla
+						i(44601),	-- Heavy Copper Racer
+						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+						i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+						i(44599),	-- Zippy Copper Racer
 					},
 				}),
 				n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
@@ -4229,12 +4232,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(239177, {	-- Open Tome of Twilight Nihilism (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),
-						-- i(246848, { 	-- Scribe's Working Notes (DECOR!)
-						-- 	["cost"] = 20000000,	-- 20000g
-						-- }),
-						-- i(246847, { 	-- Tome of Draenei Faith (DECOR!)
-						-- 	["cost"] = 20000000,	-- 2000g
-						-- }),
+						i(246848, { 	-- Scribe's Working Notes (DECOR!)
+							["cost"] = 20000000,	-- 20000g
+						}),
+						i(246847, { 	-- Tome of Draenei Faith (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246860, {	-- Tome of Forsaken Resilience (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
+						i(246845, {	-- Tome of Shadowforge Cunning (DECOR!)
+							["cost"] = 20000000,	-- 2000g
+						}),
 						i(239179, {	-- Tome of Twilight Nihilism (DECOR!)
 							["cost"] = 20000000,	-- 2000g
 						}),

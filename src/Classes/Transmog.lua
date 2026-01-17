@@ -1040,6 +1040,8 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 	end
 	local linkInfo, sourceFilter, otherFilter
 	local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
+	local onlyObtainable = app.Settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances")
+	local FilterInGame = app.Modules.Filter.Filters.InGame
 	if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 		-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 		for i,otherSourceID in ipairs(allVisualSources) do
@@ -1053,15 +1055,17 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-				sourceFilter = sourceGroup.f
-				otherFilter = otherATTSource.f
-				-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-				if (sourceFilter == otherFilter or sourceFilter == 2 or otherFilter == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-					linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
-					if not working and linkInfo.working then
-						working = true
+				if not onlyObtainable or FilterInGame(otherATTSource) then
+					sourceFilter = sourceGroup.f
+					otherFilter = otherATTSource.f
+					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+					if (sourceFilter == otherFilter or sourceFilter == 2 or otherFilter == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
+						linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+						if not working and linkInfo.working then
+							working = true
+						end
+						info[#info + 1] = linkInfo
 					end
-					info[#info + 1] = linkInfo
 				end
 			end
 		end
@@ -1078,54 +1082,57 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				end
 			else
 				local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field") or UnknownAppearancesCache[otherSourceID]
-				linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
-				if not working and linkInfo.working then
-					working = true
-				end
-				-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
-				-- matching Appearance hasn't unlocked another one
-				if not app.Settings:Get("Completionist") then
-					local failText
-					sourceFilter = sourceGroup.f
-					otherFilter = otherATTSource.f
-					-- Show the primary reason why an appearance does not meet given criteria.
-					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-					if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
-						-- This is NOT the same type. Therefore, no credit for you!
-						failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
-					-- Classes
-					elseif otherATTSource.c
-						and (not sourceGroup.c or not containsAny(otherATTSource.c, sourceGroup.c))
-						and not EncompassingClassArmorTypeVisualIDs.Known[sourceInfo.visualID]
-					then
-						-- This is NOT for the shared appearance class. Therefore, no credit for you!
-						if #otherATTSource.c == 1 then
-							failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
-						else
-							local classes = {}
-							for i,classID in ipairs(otherATTSource.c) do
-								classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
-							end
-							failText = app.TableConcat(classes, nil, nil, ", ")
-						end
-					-- Faction
-					elseif otherATTSource.r
-						and sourceGroup.r ~= otherATTSource.r
-						and not DualFactionCollectedVisualIDs.Known[sourceInfo.visualID]
-					then
-						-- This is NOT for the shared appearance Faction. Therefore, no credit for you!
-						failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
-					-- Races (only if not Faction)
-					elseif otherATTSource.races
-						and (not sourceGroup.races or not containsAny(otherATTSource.races, sourceGroup.races))
-					then
-						-- This is NOT for the shared appearance race. Therefore, no credit for you!
-						failText = RACE
+				if not onlyObtainable or FilterInGame(otherATTSource) then
+					-- existing logic that builds linkInfo
+					linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+					if not working and linkInfo.working then
+						working = true
 					end
+					-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
+					-- matching Appearance hasn't unlocked another one
+					if not app.Settings:Get("Completionist") then
+						local failText
+						sourceFilter = sourceGroup.f
+						otherFilter = otherATTSource.f
+						-- Show the primary reason why an appearance does not meet given criteria.
+						-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+						if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
+							-- This is NOT the same type. Therefore, no credit for you!
+							failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
+						-- Classes
+						elseif otherATTSource.c
+							and (not sourceGroup.c or not containsAny(otherATTSource.c, sourceGroup.c))
+							and not EncompassingClassArmorTypeVisualIDs.Known[sourceInfo.visualID]
+						then
+							-- This is NOT for the shared appearance class. Therefore, no credit for you!
+							if #otherATTSource.c == 1 then
+								failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
+							else
+								local classes = {}
+								for i,classID in ipairs(otherATTSource.c) do
+									classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
+								end
+								failText = app.TableConcat(classes, nil, nil, ", ")
+							end
+						-- Faction
+						elseif otherATTSource.r
+							and sourceGroup.r ~= otherATTSource.r
+							and not DualFactionCollectedVisualIDs.Known[sourceInfo.visualID]
+						then
+							-- This is NOT for the shared appearance Faction. Therefore, no credit for you!
+							failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
+						-- Races (only if not Faction)
+						elseif otherATTSource.races
+							and (not sourceGroup.races or not containsAny(otherATTSource.races, sourceGroup.races))
+						then
+							-- This is NOT for the shared appearance race. Therefore, no credit for you!
+							failText = RACE
+						end
 
-					if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+						if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+					end
+					info[#info + 1] = linkInfo
 				end
-				info[#info + 1] = linkInfo
 			end
 		end
 	end

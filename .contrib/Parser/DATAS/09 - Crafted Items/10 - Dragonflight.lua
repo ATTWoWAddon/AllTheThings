@@ -36,8 +36,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	i(191526),	-- Lesser Illustrious Insight
 	i(204462, {["timeline"] = {ADDED_10_1_0}}),	-- Dracothyst Shards
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(551833, {	-- Dragonpine Lumber
-			i(251773),	-- Dragonpine Lumber
+		o_repeated({	-- Dragonpine Lumber
+			["maps"] = {
+				AMIRDRASSIL,
+				EMERALD_DREAM,
+				OHNAHRAN_PLAINS,
+				THALDRASZUS,
+				THE_AZURE_SPAN,
+				THE_FORBIDDEN_REACH,
+				THE_WAKING_SHORES,
+			},
+			["groups"] = {
+				-- Objects
+				o(547740),	-- [Amirdrassil]
+				o(555364),	-- [Emerald Dream]
+				o(547487),	-- [Ohn'ahran Plains]
+				o(551833),	-- [Thaldraszus/Valdrakken]
+				o(549325),	-- [The Azure Span/Traitor's Rest]
+				o(546955),	-- [The Forbidden Reach]
+				o(547258),	-- [The Waking Shores]
+				-- Drops
+				i(251773),	-- Dragonpine Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -345,9 +365,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71245, 370676);	-- Sustaining Alchemist Stone
 			-- Artisan Curios
 			FirstCraft(74308, 400270, ADDED_10_0_7);	-- Draconic Suppression Powder
-			-- Decor
-			-- FirstCraft(XXXXX, 1261882, ADDED_11_2_7);	-- Dragon's Elixir Bottle
-			-- FirstCraft(XXXXX, 1261885, ADDED_11_2_7);	-- Verdant Valdrakken Vase
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -599,9 +616,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74477, 400808, ADDED_10_0_7);	-- Ancient Ceremonial Trident
 			-- Legendary
 			FirstCraft(75418, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
-			-- Decor
-			-- FirstCraft(XXXXX, 1261892, ADDED_11_2_7);	-- Valdrakken Hanging Cauldron
-			-- FirstCraft(XXXXX, 1261896, ADDED_11_2_7);	-- Wingrest Signal Brazier
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
@@ -1018,9 +1032,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(75235, 405937, ADDED_10_1_0, REMOVED_TWW_LAUNCH);	-- Titan Training Matrix V
 			-- Legendary
 			FirstCraft(78011, 422338, ADDED_10_2_0);	-- Shalasar's Sophic Vellum
-			-- Decor
-			-- FirstCraft(XXXXX, 1261933, ADDED_11_2_7);	-- Draconic Scribe's Basin
-			-- FirstCraft(XXXXX, 1261919, ADDED_11_2_7);	-- Five Flights' Grimoire
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air (ILLUSION!)
@@ -1391,9 +1402,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74312, 400810, ADDED_10_0_7);	-- Gnomish Voicebox
 			-- Legendary
 			FirstCraft(75435, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
-			-- Decor
-			-- FirstCraft(XXXXX, 1259404, ADDED_11_2_7);	-- Thaldraszus Telescope
-			-- FirstCraft(XXXXX, 1263237, ADDED_11_2_7);	-- Titanic Tyrhold Fountain
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -2002,15 +2010,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(78708, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
 			-- Legendary
 			FirstCraft(78010, 422337, ADDED_10_2_0);	-- Lydiara's Binding Rune
-			-- Decor
-			-- FirstCraft(XXXXX, 1259422, ADDED_11_2_7);	-- Literature of the Blue Dragonflight
-			-- FirstCraft(XXXXX, 1259433, ADDED_11_2_7);	-- Literature of the Green Dragonflight
-			-- FirstCraft(XXXXX, 1259429, ADDED_11_2_7);	-- Literature of the Red Dragonflight
-			-- FirstCraft(XXXXX, 1259461, ADDED_11_2_7);	-- Long Valdrakken Storage Crate
-			-- FirstCraft(XXXXX, 1259441, ADDED_11_2_7);	-- Valdrakken Banded Barrel
-			-- FirstCraft(XXXXX, 1259451, ADDED_11_2_7);	-- Valdrakken Storage Crate
-			-- FirstCraft(XXXXX, 1272572, ADDED_11_2_7);	-- Valdrakken Wall Shelf
-			-- FirstCraft(XXXXX, 1259233, ADDED_11_2_7);	-- Valdrakken Market Tent
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -2482,10 +2481,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74482, 400812, ADDED_10_0_7);	-- Crystal Tuning Fork
 			-- Legendary
 			FirstCraft(75434, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
-			-- Decor
-			-- FirstCraft(XXXXX, 1259384, ADDED_11_2_7);	-- Valdrakken Fence
-			-- FirstCraft(XXXXX, 1259386, ADDED_11_2_7);	-- Valdrakken Fencepost
-			-- FirstCraft(XXXXX, 1259369, ADDED_11_2_7);	-- Valdrakken Gilded Throne
 		})),
 		filter(GEMS, {
 			i(192917),	-- Crafty Alexstraszite+
@@ -2971,9 +2966,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(74483, 400814, ADDED_10_0_7);	-- Reinforced Pristine Leather
 			-- Legendary
 			FirstCraft(78009, 422330, ADDED_10_2_0);	-- Erden's Glowspore Grip
-			-- Decor
-			-- FirstCraft(XXXXX, 1259195, ADDED_11_2_7);	-- Draconic Nesting Bed
-			-- FirstCraft(XXXXX, 1259233, ADDED_11_2_7);	-- Valdrakken Market Tent
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -3651,9 +3643,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstCraft(71849, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
 			-- Artisan Curios
 			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
-			-- Decor
-			-- FirstCraft(XXXXX, 1259247, ADDED_11_2_7);	-- Draconic Circular Rug
-			-- FirstCraft(XXXXX, 1261940, ADDED_11_2_7);	-- Tapestry of the Five Flights
 		})),
 	}),
 })));

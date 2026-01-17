@@ -1610,8 +1610,9 @@ end");
                 }
                 else
                 {
+                    bool warnOnConvert = field[0] != '_' && field != "qis";
                     // Merge the new list of data into the old data and ensure there are no duplicate values.
-                    foreach (long entry in newList.AsTypedEnumerable<long>())
+                    foreach (long entry in newList.AsTypedEnumerable<long>(warnOnConvert: warnOnConvert))
                     {
                         if (!oldList.Contains(entry))
                             oldList.Add(entry);
@@ -1691,6 +1692,15 @@ end");
                 //item.DataBreakPoint("_DEBUG", true);
                 if (value is string v && v == IgnoredValue)
                     return;
+
+                if (value == null)
+                {
+                    if (item.Remove(field))
+                    {
+                        LogWarn($"Removed value of '{field}' due to 'null' merge", item);
+                    }
+                    return;
+                }
 
                 // Convert the name of the field to something more standardized.
                 switch (field = ConvertFieldName(field))
@@ -1790,11 +1800,6 @@ end");
                         }
 
                     // String Data Type Fields
-                    case "model":
-                        {
-                            item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
-                            break;
-                        }
                     case "lore":
                     case "name":
                     case "type":
@@ -1805,7 +1810,14 @@ end");
                     case "SortType":
                     case "an":
                         {
-                            item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
+                            if (value.TryConvert(out string vString))
+                            {
+                                item[field] = vString.Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
+                            }
+                            else
+                            {
+                                LogError($"Expected 'string' type value for {field}", item);
+                            }
                             break;
                         }
 
@@ -1824,24 +1836,6 @@ end");
                             }
                             break;
                         }
-                    case "npcID":
-                        {
-                            try
-                            {
-                                long l = Convert.ToInt64(value);
-                                if (l > 0) item[field] = l;
-                                else
-                                {
-                                    LogWarn($"Converted npcID {l} to headerID {MiniJSON.Json.Serialize(item)}");
-                                    item["headerID"] = l;
-                                }
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
 
                     // Float Data Type Fields (field conversions)
                     //case "dr":
@@ -1854,7 +1848,7 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}", item);
                             }
                             break;
                         }
@@ -1874,6 +1868,8 @@ end");
                     case "creatureID":
                     case "displayID":
                     case "modID":
+                    case "model":
+                    case "npcID":
                     case "ItemAppearanceModifierID":
                     case "bonusID":
                     case "runeforgepowerID":
@@ -1909,14 +1905,15 @@ end");
                     case "_multiDifficultyID":
                     case "trackID":
                     case "catalystID":
+                    case "skillID":
                         {
-                            try
+                            if (value.TryConvert(out long vLong))
                             {
-                                item[field] = Convert.ToInt64(value);
+                                item[field] = vLong;
                             }
-                            catch
+                            else
                             {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
                             }
                             break;
                         }
@@ -1958,6 +1955,7 @@ end");
                     case "_objectiveItems":
                     case "_spellQuests":
                     case "qis":
+                    case "poiIDs":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

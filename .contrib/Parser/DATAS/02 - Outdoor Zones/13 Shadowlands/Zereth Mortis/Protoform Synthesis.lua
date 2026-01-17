@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65358, {	-- Schematic Reassimilation: Microlicid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
-					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 28.1, 50.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364697),	-- Microlicid
 					},
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65359, {	-- Schematic Reassimilation: Shelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189446 },	-- Schematic: Shelly
-					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["coord"] = { 57.9, 78.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364698),	-- Shelly
 					},
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65360, {	-- Schematic Reassimilation: Viperid Menace
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
-					["coord"] = { 58.9, 77, ZERETH_MORTIS },
+					["coord"] = { 58.9, 77.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(364699),	-- Viperid Menace
 					},
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65381, {	-- Schematic Reassimilation: Desertwing Hunter
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189458 },	-- Schematic: Desertwing Hunter
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365050),	-- Desertwing Hunter
 					},
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65393, {	-- Schematic Reassimilation: Prototype Leaper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
-					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365062),	-- Prototype Leaper
 					},
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65389, {	-- Schematic Reassimilation: Tarachnid Creeper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
-					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["coord"] = { 62.9, 22.0, ZERETH_MORTIS },
 					["groups"] = {
 						recipe(365056),	-- Tarachnid Creeper
 					},
@@ -453,7 +453,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375393, {	-- Protoform Schematic
 					["description"] = "On top a pillar. Need door of shadows/flying.",
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189458),	-- Schematic: Desertwing Hunter
 					},
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375389, {	-- Protoform Schematic
 					["description"] = "Inside the vespoid nest.",
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189475),	-- Schematic: Forged Spiteflyer
 					},
@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				o(375903, {	-- Protoform Schematic
-					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 					["groups"] = {
 						i(189469),	-- Schematic: Prototype Leaper
 					},
@@ -515,7 +515,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375486, {	-- Protoform Schematic
 					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
-					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["coord"] = { 57.9, 78.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189446),	-- Schematic: Shelly
 					},
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375370, {	-- Protoform Schematic
 					["description"] = "Inside the building.",
-					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["coord"] = { 62.9, 22.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189466),	-- Schematic: Tarachnid Creeper
 					},
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375502, {	-- Protoform Schematic
 					["description"] = "Hidden in tree leaves, on branch with small orb above water.",
-					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 28.1, 50.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189445),	-- Schematic: Microlicid
 					},
@@ -584,7 +584,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				o(375746, {	-- Protoform Schematic
 					["description"] = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
-					["coord"] = { 49, 73.1, 2029 },
+					["coord"] = { 49.0, 73.1, 2029 },
 					["questID"] = 65651,
 					["groups"] = {
 						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod

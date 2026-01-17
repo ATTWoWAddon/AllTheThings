@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Moonwell Water Tube
 							["provider"] = { "i", 14339 },	-- Moonwell Water Tube
-							["coord"] = { 37, 43, DARKSHORE },
+							["coord"] = { 37.0, 43.0, DARKSHORE },
 							["cost"] = {{ "i", 14338, 1 }},	-- Empty Water Tube
 						}),
 					},
@@ -456,7 +456,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5338 },	-- Ancient Moonstone Seal
 								{ "o", 16393 },	-- Ancient Flame
 							},
-							["coord"] = { 42, 61, DARKSHORE },
+							["coord"] = { 42.0, 61.0, DARKSHORE },
 						}),
 						i(7229, {	-- Explorer's Vest
 							["timeline"] = { REMOVED_4_0_3 },
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1002, {	-- Buzzbox 323
 					["sourceQuest"] = 1001,	-- Buzzbox 411
 					["provider"] = { "o", 17183 },	-- Buzzbox 411
-					["coord"] = { 42, 28.7, DARKSHORE },
+					["coord"] = { 42.0, 28.7, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(983, {	-- Buzzbox 827
 					["qg"] = 3666,	-- Wizbang Cranktoggle
-					["coord"] = { 37, 44, DARKSHORE },
+					["coord"] = { 37.0, 44.0, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -1341,7 +1341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5273 },	-- Mathystra Relic
 								{ "o", 13360 },	-- Mathystra Relic
 							},
-							["coord"] = { 59, 21.8, DARKSHORE },
+							["coord"] = { 59.0, 21.8, DARKSHORE },
 						}),
 						i(5757, {	-- Hardwood Cudgel
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Den Mother slain
 							["provider"] = { "n", 6788 },	-- Den Mother
-							["coord"] = { 51.4, 38, DARKSHORE },
+							["coord"] = { 51.4, 38.0, DARKSHORE },
 						}),
 						i(7738, {	-- Evergreen Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3359,7 +3359,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
-					["coord"] = { 51.4, 38, DARKSHORE },
+					["coord"] = { 51.4, 38.0, DARKSHORE },
 					["classes"] = { DRUID },
 					["cr"] = 6788,	-- Den Mother
 					["groups"] = {

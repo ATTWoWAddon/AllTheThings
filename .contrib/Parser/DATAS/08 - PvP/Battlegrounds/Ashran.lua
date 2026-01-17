@@ -555,7 +555,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(56339, {	-- Tremblade Must Die
 					["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
-					["coord"] = { 45, 28.7, 1478 },
+					["coord"] = { 45.0, 28.7, 1478 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),

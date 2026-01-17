@@ -32,8 +32,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This npc can spawn around Zereth Mortis where Wild Poultrids are. Do /chicken to start a pet battle.",
 				["crs"] = { 183286 },	-- Enraged Poultrid
 				["coords"] = {
-					{ 44, 92, ZERETH_MORTIS },
-					{ 48, 81, ZERETH_MORTIS },
+					{ 44.0, 92.0, ZERETH_MORTIS },
+					{ 48.0, 81.0, ZERETH_MORTIS },
 					{ 31.3, 55.3, ZERETH_MORTIS },
 					{ 39.6, 55.5, ZERETH_MORTIS },
 					{ 48.7, 95.6, ZERETH_MORTIS },
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			pet(3208),	-- Red Viperid (PET!)
 			pet(3200,{	-- Scarlet Proto Avian (PET!)
 				["description"] = "Rare spawn of Proto-Avian Fledgling. Best chances are killing critters around the Genesis Vestibule. Good luck!",
-				["coord"] = { 30, 54, ZERETH_MORTIS },
+				["coord"] = { 30.0, 54.0, ZERETH_MORTIS },
 			}),
 			pet(3203),	-- Tarachnid Ambusher (PET!)
 			pet(3202),	-- Tarachnid Stalker (PET!)

@@ -53,7 +53,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				["groups"] = {
 					objective(1, {	-- Dance of the Spirits
 						["provider"] = { "n", 40352 },	-- Witch Doctor Hez'tok
-						["coord"] = { 57, 74.14, DUROTAR },
+						["coord"] = { 57.0, 74.14, DUROTAR },
 					}),
 					i(54653),	-- Darkspear Pride (TOY!)
 				},
@@ -81,7 +81,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				["groups"] = {
 					objective(1, {	-- Challenge the Tiger Matriarch
 						["provider"] = { "n", 40312 },	-- Tiger Matriarch
-						["coord"] = { 59, 82, DUROTAR },
+						["coord"] = { 59.0, 82.0, DUROTAR },
 					}),
 				},
 			}),

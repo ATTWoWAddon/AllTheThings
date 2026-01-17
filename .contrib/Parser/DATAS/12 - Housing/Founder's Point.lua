@@ -50,42 +50,46 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["cr"] = 236112,	-- Billson
 			}),
 		}),
-		-- It might be possible that some of these quests are Neutral but not yet datamined properly on WoWhead
-		-- In that case, create a Neutral Header in the Quests fileand move respective quests there.
 		header(HEADERS.Quest, 92969, sharedData({	-- Decor Treasure Hunt
 			["qg"] = 248854,	-- The Last Architect
 			-- this allows proper merging with 'coord' used below
 			["coords"] = {{ 52.7, 37.5, FOUNDERS_POINT }},
 		},{
 			q(92437, {	-- Decor Treasure Hunt
+				["coord"] = { 63.2, 38.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245375) },	-- Sturdy Wooden Bookcase (DECOR!)
 			}),
 			q(92961, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: It is by the portal where you first enter, go behind the stone tower and it is in the shade of the big tree
+				["coord"] = { 58.1, 30.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245384) },	-- Sturdy Wooden Shelf (DECOR!)
 			}),
 			q(92962, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Go northeast and fly to the highest mountain in the isle. At its peak you'll find a mound of dirt. /way 69.2, 26.7
+				["coord"] = { 69.2, 26.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245355) },	-- Sturdy Wooden Door (DECOR!)
 			}),
 			q(92963, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found near the entrance to the Brumewood Hollow of the Founders Point at 63.1, 46.7",
 				["coord"] = { 63.1, 46.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245356) },	-- Goldshire Window (DECOR!)
 			}),
 			q(92964, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Located south of the Cliffside flight path, next to the tower.
+				["coord"] = { 64.9, 51.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245376) },	-- Tall Sturdy Wooden Bookcase (DECOR!)
 			}),
 			q(92965, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: /way 59.6 52.4
+				["coord"] = { 59.6, 52.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235523) },	-- Sturdy Wooden Chair (DECOR!)
 			}),
 			q(92966, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: 64.7, 57.7 Cave entrance underwater. 66.9, 57.0 Decor Treasure
+				["description"] = "Inside the cave.",
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
+					{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave entrance
+					{ 66.9, 57.0, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(236676) },	-- Stormwind Interior Narrow Wall (DECOR!)
 			}),
 			q(92967, {	-- Decor Treasure Hunt
+				["coord"] = { 58.3, 65.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(236678) },	-- Stormwind Interior Doorway (DECOR!)
 			}),
 			q(92968, {	-- Decor Treasure Hunt
@@ -93,6 +97,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(236677) },	-- Stormwind Interior Wall (DECOR!)
 			}),
 			q(92969, {	-- Decor Treasure Hunt
+				["coord"] = { 55.4, 71.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(242951) },	-- Sturdy Wooden Bench (DECOR!)
 			}),
 			q(92970, {	-- Decor Treasure Hunt
@@ -100,26 +105,32 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246742) },	-- Tall Sturdy Wooden Chair (DECOR!)
 			}),
 			q(92971, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Next to gazebo in the roundabout on the southwest side near Guilded Oaks flightpoint. /way 41, 61
+				["coord"] = { 40.9, 61.3, FOUNDERS_POINT },
 				["groups"] = { i(246104) },	-- Carved Wooden Crate (DECOR!)
 			}),
 			q(92972, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Follow the left coastside from the bridge on the south coast of the zone. Soon you will see a cave with the secret inside.
+				["description"] = "Inside the cave.",
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
+					{ 45.8, 64.9, FOUNDERS_POINT },	-- Cave entrance
+					{ 45.4, 64.3, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(246103) },	-- Small Wooden Nightstand (DECOR!)
 			}),
 			q(92973, {	-- Decor Treasure Hunt
-				-- Exo Note: Maybe around 46.4, 57.8?
+				["coord"] = { 46.3, 57.9, FOUNDERS_POINT },
 				["groups"] = { i(246101) },	-- Small Wooden Stool (DECOR!)
 			}),
 			q(92974, {	-- Decor Treasure Hunt
-				-- Exo Note: Treasure should be at 55.1, 50.6
+				["coord"] = { 55.0, 50.7, FOUNDERS_POINT },
 				["groups"] = { i(246246) },	-- Stormwind Large Platform (DECOR!)
 			}),
 			q(92975, {	-- Decor Treasure Hunt
+				["coord"] = { 49.9, 56.6, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246245) },	-- Stormwind Round Platform (DECOR!)
 			}),
 			q(92976, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: on the Duskwood side of the most southern bridge on the map
+				["coord"] = { 47.7, 62.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246243) },	-- Stormwind Beam Platform (DECOR!)
 			}),
 			q(92977, {	-- Decor Treasure Hunt
@@ -127,30 +138,32 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245548) },	-- Iron-Reinforced Cupboard (DECOR!)
 			}),
 			q(92978, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found between the dock and the stranded boat at the Brumewood Hollow of the Founders Point at 54.2, 73.6",
 				["coord"] = { 54.2, 73.6, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(243334) },	-- Reinforced Wooden Chest (DECOR!)
 			}),
 			q(92979, {	-- Decor Treasure Hunt
-				-- Exo Note: Cave at 62.3, 79.5
+				["description"] = "Inside the cave.",
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
+					{ 62.4, 79.5, FOUNDERS_POINT },	-- Cave entrance
+					{ 61.6, 79.4, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(245334) },	-- Wicker Basket (DECOR!)
 			}),
 			q(92980, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found at The Outer Banks of the Founders Point at 28.6, 46.8",
 				["coord"] = { 28.6, 46.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245556) },	-- Iron-Reinforced Standing Mirror (DECOR!)
 			}),
 			q(92981, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found just below the Watch Tower at The Outer Banks of the Founders Point at 29.9, 48.2",
 				["coord"] = { 29.9, 48.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245547) },	-- Wide Charming Couch (DECOR!)
 			}),
 			q(92982, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Head South West to the tip of the island, just after the last house (plot 41) to where the Decor smugglers are selling Horde items. Due South of them, in the water, is a group of turtles, and there is a pile of sand below the wreck above them.
+				["coord"] = { 61.9, 82.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244531) },	-- Sturdy Fireplace (DECOR!)
 			}),
 			q(92983, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: There's a covered bridge to the left of Small Aerie flightpoint. The mound of dirt can be found bellow, by the river. You won't need to dip into the water. /way 42.5, 44.7
+				["coord"] = { 42.5, 44.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245372) },	-- Covered Wooden Table (DECOR!)
 			}),
 			q(92984, {	-- Decor Treasure Hunt
@@ -158,39 +171,39 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245336) },	-- Sturdy Wooden Bed (DECOR!)
 			}),
 			q(92985, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Founders Point isle has 2 main rivers. Go to the west one. The river ends in a big waterfall where it meets the sea. Check the waters bellow said waterfall. /way 37.1, 45.9
+				["coord"] = { 37.1, 45.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246106) },	-- Wooden Chamberstick (DECOR!)
 			}),
 			q(92986, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Between plots #13 and #14 in Founders Point 36.6, 54.2
+				["coord"] = { 36.6, 54.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(239075) },	-- Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92987, {	-- Decor Treasure Hunt
-				["description"] = "Treasure can be found below a big tree in the Gilded Oaks of the Founders Point at 36.6, 57.9",
 				["coord"] = { 36.6, 57.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235677) },	-- Wrought Iron Floor Lamp (DECOR!)
 			}),
 			q(92988, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Guilded Oaks area. just north of the flightpath on the coast is a mill.
+				["coord"] = { 34.6, 60.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235675) },	-- Three-Candle Wrought Iron Chandelier (DECOR!)
 			}),
 			q(92989, {	-- Decor Treasure Hunt
-				-- Exo Note: Lighthouse. Around 34.6, 74.0
+				["coord"] = { 34.0, 72.7, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253589) },	-- Short Wooden Cabinet (DECOR!)
 			}),
 			q(92990, {	-- Decor Treasure Hunt
+				["coord"] = { 49.7, 42.4, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246258) },	-- Bel'ameth Round Platform (DECOR!)
 			}),
 			q(92991, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: you will be find the treasure at coordinates 49.15, 27.16
+				["coord"] = { 49.2, 27.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246254) },	-- Bel'ameth Beam Platform (DECOR!)
 			}),
 			q(92992, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: It's northeast of the Mear's Farm flight path, among 3 huge barrels.
+				["coord"] = { 41.0, 28.4, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245578) },	-- Bel'ameth Interior Doorway (DECOR!)
 			}),
 			q(92993, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: between the towers by the farm in founders point
+				["coord"] = { 40.0, 32.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245576) },	-- Bel'ameth Round Interior Pillar (DECOR!)
 			}),
 			q(92994, {	-- Decor Treasure Hunt
@@ -198,31 +211,36 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245575) },	-- Bel'ameth Interior Wall (DECOR!)
 			}),
 			q(92995, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: /way 30.9, 31.1
+				["coord"] = { 30.9, 31.1, FOUNDERS_POINT },		-- Treasure
 				["groups"] = { i(255650) },	-- Elegant Table Lamp (DECOR!)
 			}),
 			q(92996, {	-- Decor Treasure Hunt
 				["coord"] = { 29.0, 28.2, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246502) },	-- Charming Couch (DECOR!)
-				-- Exo Note: ObjectID:572258
 			}),
 			q(92997, {	-- Decor Treasure Hunt
-				-- Exo Note: Somewhere around 24.1, 34.9
+				["coord"] = { 21.1, 30.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246107) },	-- Large Sturdy Wooden Table (DECOR!)
 			}),
 			q(92998, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Check below the first steps of the wooden stairs 26.2, 37.9
+				["coord"] = { 26.2, 37.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246102) },	-- Large Covered Wooden Table (DECOR!)
 			}),
 			q(92999, {	-- Decor Treasure Hunt
+				["coord"] = { 28.3, 40.1, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(245662) },	-- Carved Wooden Bar Table (DECOR!)
 			}),
 			q(93000, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: In a torchlit cave at /way 59.0, 45.7. To the left of the third waterfall (facing the waterfall) down from Cliffside flight path in Founders Point.
+				["description"] = "Inside the cave.",
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
+					{ 59.0, 45.5, FOUNDERS_POINT },	-- Cave entrance
+					{ 59.2, 44.9, FOUNDERS_POINT },	-- Treasure
+				},
 				["groups"] = { i(241618) },	-- Elegant Padded Footstool (DECOR!)
 			}),
 			q(93001, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: in the river basically next to the architect
+				["coord"] = { 56.8, 52.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244782) },	-- Elven Floral Window (DECOR!)
 			}),
 			q(93002, {	-- Decor Treasure Hunt
@@ -230,15 +248,15 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253490) },	-- Elegant Elven Desk (DECOR!)
 			}),
 			q(93003, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Right next to flight master Jeff at the portal where you spawn when entering the neighborhood. Coords: /way 56.65, 27.51
+				["coord"] = { 56.7, 27.5, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(257690) },	-- Elegant Padded Chaise (DECOR!)
 			}),
 			q(93004, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Located to the east of the bulletin board on the zone map, at the entrance to the theatre area.
+				["coord"] = { 55.3, 39.9, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(244780) },	-- Circular Elven Table (DECOR!)
 			}),
 			q(93005, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: at the fork between plots 16 and 11, just above the Brumewood Hollow area.
+				["coord"] = { 60.3, 56.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253441) },	-- Grand Elven Bookcase (DECOR!)
 			}),
 			q(93006, {	-- Decor Treasure Hunt
@@ -246,26 +264,16 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(253479) },	-- Small Elegant Padded Chair (DECOR!)
 			}),
 			q(93007, {	-- Decor Treasure Hunt
+				["coord"] = { 57.3, 39.3, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(253181) },	-- Gemmed Elven Chest (DECOR!)
 			}),
 			q(93008, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Gazebo set on a pond in Founders Point. The dirt pile is on the platform, not in the pond. /way 52, 29
+				["coord"] = { 52.4, 28.8, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(235994) },	-- Ornate Stonework Fireplace (DECOR!)
 			}),
 			q(93009, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: Behind the big circular hay bale location 57.59
+				["coord"] = { 53.6, 42.0, FOUNDERS_POINT },	-- Treasure
 				["groups"] = { i(246255) },	-- Bel'ameth Large Platform (DECOR!)
-			}),
-			q(93078, {	-- Decor Treasure Hunt
-				-- Exo Note: Somewhere in the area of 53.8, 24.0
-				["groups"] = { i(244533) },	-- Iron Chain Chandelier (DECOR!)
-			}),
-			q(93142, {	-- Decor Treasure Hunt
-				-- WoWhead Comment: By the Stage area to the right of the city's center. A straight line down from the northest flight point.
-				["groups"] = { i(257691) },	-- Open Elegant Elven Barrel (DECOR!)
-			}),
-			q(93148, {	-- Decor Treasure Hunt
-				["groups"] = { i(244169) },	-- Elegant Almond Table (DECOR!)
 			}),
 		}));
 		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based
@@ -339,69 +347,60 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			n(255228, {	-- "Len" Splinthoof <Decor Vendor>
 				["coord"] = { 62.5, 80.4, FOUNDERS_POINT },
 				["groups"] = {
-					i(246883),	-- Crude Banded Crate
-					i(245546),	-- Durable Wooden Chest
-					i(246880),	-- Horned Banded Barrel
-					i(246218),	-- Iron-Reinforced Crate
-					i(251638),	-- Jagged Orgrimmar Trellis
-					i(254893),	-- Large Razorwind Gazebo
-					i(246220),	-- Leather-Banded Wooden Bench
-					i(246612),	-- Logger's Picnic Table
-					i(246882),	-- Long Orgrimmar Bench
-					i(246884),	-- Open Crude Banded Crate
-					i(246881),	-- Open Horned Banded Barrel
-					i(246616),	-- Open Iron-Reinforced Crate
-					i(246615),	-- Open Spiky Banded Barrel
-					i(251545),	-- Razorwind Cooking Grill
-					i(257099),	-- Razorwind Covered Well
-					i(246611),	-- Razorwind Fountain
-					i(256357),	-- Razorwind Porch Chair
-					i(245533),	-- Razorwind Brazier
-					i(244532),	-- Rugged Stool
-					i(246217),	-- Short Orgrimmar Bench
-					i(255708),	-- Small Jagged Orgrimmar Trellis
-					i(246241),	-- Spiky Banded Barrel
-					i(244535),	-- Tusked Gazebo
-					i(251637),	-- Tusked Weapon Stand
-					i(246868),	-- Wide Hide-Covered Bench
-					i(249550),	-- Wind Rider Roost
+					i(246883),	-- Crude Banded Crate (DECOR!)
+					i(245546),	-- Durable Wooden Chest (DECOR!)
+					i(246880),	-- Horned Banded Barrel (DECOR!)
+					i(246218),	-- Iron-Reinforced Crate (DECOR!)
+					i(251638),	-- Jagged Orgrimmar Trellis (DECOR!)
+					i(254893),	-- Large Razorwind Gazebo (DECOR!)
+					i(246220),	-- Leather-Banded Wooden Bench (DECOR!)
+					i(246612),	-- Logger's Picnic Table (DECOR!)
+					i(246882),	-- Long Orgrimmar Bench (DECOR!)
+					i(246884),	-- Open Crude Banded Crate (DECOR!)
+					i(246881),	-- Open Horned Banded Barrel (DECOR!)
+					i(246616),	-- Open Iron-Reinforced Crate (DECOR!)
+					i(246615),	-- Open Spiky Banded Barrel (DECOR!)
+					i(251545),	-- Razorwind Cooking Grill (DECOR!)
+					i(257099),	-- Razorwind Covered Well (DECOR!)
+					i(246611),	-- Razorwind Fountain (DECOR!)
+					i(256357),	-- Razorwind Porch Chair (DECOR!)
+					i(245533),	-- Razorwind Brazier (DECOR!)
+					i(244532),	-- Rugged Stool (DECOR!)
+					i(246217),	-- Short Orgrimmar Bench (DECOR!)
+					i(255708),	-- Small Jagged Orgrimmar Trellis (DECOR!)
+					i(246241),	-- Spiky Banded Barrel (DECOR!)
+					i(244535),	-- Tusked Gazebo (DECOR!)
+					i(251637),	-- Tusked Weapon Stand (DECOR!)
+					i(246868),	-- Wide Hide-Covered Bench (DECOR!)
+					i(249550),	-- Wind Rider Roost (DECOR!)
 				},
 			}),
 			n(255230, {	-- "Yen" Malone <Decor Vendor>
 				["coord"] = { 62.2, 80.3, FOUNDERS_POINT },
 				["groups"] = {
-					i(248631),	-- Azsharan Firespear Tree
-					i(248630),	-- Barrens Hosta Bush
-					i(266238),	-- Cragthorn Highlands Large Garden Cluster
-					i(260702),	-- Dry Razorwind Grass Patch
-					i(248633),	-- Flowering Durotar Cactus
-					i(266444),	-- Granite Cobblestone Long Path (DECOR!)
-					i(266443),	-- Granite Cobblestone Path (DECOR!)
-					i(266245),	-- Granite Cobblestone Path Arc (DECOR!)
-					i(266244),	-- Granite Cobblestone Path Corner (DECOR!)
-					i(248632),	-- Hardy Razorwind Grass Patch
-					i(248629),	-- Nagrand Blueberry Bush
-					i(248638),	-- Pink Razorwind Paintbrush
-					i(248634),	-- Razorwind Acacia Tree
-					i(266236),	-- Razorwind Blooms Large Garden Cluster
-					i(266235),	-- Razorwind Cactus Large Garden Cluster
-					i(248626),	-- Razorwind Fighting Cactus
-					i(248650),	-- Razorwind Flamebrush
-					i(248636),	-- Razorwind Gobtree
-					i(248628),	-- Razorwind Palm Tree
-					i(248625),	-- Razorwind Succulent Palm
-					i(248627),	-- Razorwind Tumbleweed
-					i(260701),	-- Red Razorwind Paintbrush
-					i(266237),	-- Runetotem's Bounty Large Garden Cluster
-					i(266234),	-- Saltfang Shoals Large Garden Cluster
-					i(257359),	-- Slate Cobblestone Pair
-					i(257388),	-- Slate Cobblestone
-					i(257390),	-- Slate Cobblestone Path
-					i(257392),	-- Slate Cobblestone Trio
-					i(248637),	-- Sunset Aster Flowers
-					i(248338),	-- Flat Boulder
-					i(248339),	-- Hilltop Boulder
-					i(248337),	-- Round-Top Boulder
+					i(248631),	-- Azsharan Firespear Tree (DECOR!)
+					i(248630),	-- Barrens Hosta Bush (DECOR!)
+					i(260702),	-- Dry Razorwind Grass Patch (DECOR!)
+					i(248633),	-- Flowering Durotar Cactus (DECOR!)
+					i(248632),	-- Hardy Razorwind Grass Patch (DECOR!)
+					i(248629),	-- Nagrand Blueberry Bush (DECOR!)
+					i(248638),	-- Pink Razorwind Paintbrush (DECOR!)
+					i(248634),	-- Razorwind Acacia Tree (DECOR!)
+					i(248626),	-- Razorwind Fighting Cactus (DECOR!)
+					i(248650),	-- Razorwind Flamebrush (DECOR!)
+					i(248636),	-- Razorwind Gobtree (DECOR!)
+					i(248628),	-- Razorwind Palm Tree (DECOR!)
+					i(248625),	-- Razorwind Succulent Palm (DECOR!)
+					i(248627),	-- Razorwind Tumbleweed (DECOR!)
+					i(260701),	-- Red Razorwind Paintbrush (DECOR!)
+					i(257359),	-- Slate Cobblestone Pair (DECOR!)
+					i(257388),	-- Slate Cobblestone (DECOR!)
+					i(257390),	-- Slate Cobblestone Path (DECOR!)
+					i(257392),	-- Slate Cobblestone Trio (DECOR!)
+					i(248637),	-- Sunset Aster Flowers (DECOR!)
+					i(248338),	-- Flat Boulder (DECOR!)
+					i(248339),	-- Hilltop Boulder (DECOR!)
+					i(248337),	-- Round-Top Boulder (DECOR!)
 				},
 			}),
 			n(255218, {	-- Argan Hammerfist
@@ -604,7 +603,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
 					}),
 					-- Reach the second milestone of the endeavor
-					i(253525, {	-- Thalassion Academy Dictation Device (DECOR!)
+					i(253525, {	-- Thalassian Academy Dictation Device (DECOR!)
 						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
 					}),
 					-- Reach the third milestone of the endeavor
@@ -636,13 +635,17 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 			n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 				["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
-				["groups"] = { i(253580) },	-- Harvesting Hatchet
+				["groups"] = {
+					i(253580),	-- Harvesting Hatchet
+					i(251766, {	-- Shadowmoon Lumber
+						["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
+					}),
+				},
 			}),
 			n(255221, {	-- Trevor Grenner <Decor Vendor>
 				["coord"] = { 53.5, 40.9, FOUNDERS_POINT },
 				["groups"] = {
 					i(248648),	-- Autumn Leaf Pile (DECOR!)
-					i(266241),	-- Brumewood Hollow Large Garden Cluster (DECOR!)
 					i(245371),	-- Charming Laurel Tree (DECOR!)
 					i(245327),	-- Creeping Corner Ivy (DECOR!)
 					i(248642),	-- Creeping Lattice Ivy (DECOR!)
@@ -662,21 +665,13 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					i(255646),	-- Founder's Point Apple Tree (DECOR!)
 					i(258659),	-- Founder's Point Autumn Apple Tree (DECOR!)
 					i(248647),	-- Founder's Point Blooming Grass Patch (DECOR!)
-					i(266240),	-- Founder's Point Large Garden Cluster (DECOR!)
 					i(245369),	-- Gift of Gilneas (DECOR!)
-					i(266242),	-- Gilded Oaks Large Garden Cluster (DECOR!)
 					i(248639),	-- Gloomrose (DECOR!)
-					i(266444),	-- Granite Cobblestone Long Path (DECOR!)
-					i(266443),	-- Granite Cobblestone Path (DECOR!)
-					i(266245),	-- Granite Cobblestone Path Arc (DECOR!)
-					i(266244),	-- Granite Cobblestone Path Corner (DECOR!)
-					i(266239),	-- Outer Banks Large Garden Cluster (DECOR!)
 					i(248645),	-- Pink Gilnean Rose (DECOR!)
 					i(248646),	-- Silvermoon Sunrise Bush (DECOR!)
 					i(245328),	-- Small Boxwood Bush (DECOR!)
 					i(245329),	-- Small Poppy Cluster (DECOR!)
 					i(248644),	-- Spiritbloom Flower (DECOR!)
-					i(266243),	-- Stoneveil Ridge Large Garden Cluster (DECOR!)
 					i(248649),	-- Young Chestnut Tree (DECOR!)
 					i(248338),	-- Flat Boulder (DECOR!)
 					i(248339),	-- Hilltop Boulder (DECOR!)
@@ -786,4 +781,4 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 		}),
 	},
-}))
+}));

@@ -22,7 +22,6 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1300, {	-- Magister's Terrace
 		["coord"] = { 63.0, 15.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-		["timeline"] = { ADDED_12_0_0_LAUNCH },
 		["maps"] = {},
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({

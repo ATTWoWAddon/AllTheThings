@@ -20,10 +20,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
 					["description"] = "Requires Renown 39.",
 				}),
-				title(442, {	-- Protector of the Weald (TITLE!)
+				title(442, {	-- Protector of the Weald
 					["description"] = "Requires Renown 80.",
 				}),
-				title(428, {	-- Winter's Envoy (TITLE!)
+				title(428, {	-- Winter's Envoy
 					["description"] = "Requires Renown 40.",
 				}),
 				iensemble(186497, {	-- Ensemble: Garb of Pure Spirit

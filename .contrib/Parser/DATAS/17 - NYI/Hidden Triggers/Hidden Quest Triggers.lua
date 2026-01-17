@@ -763,6 +763,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		--hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
+		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
 	--------------------

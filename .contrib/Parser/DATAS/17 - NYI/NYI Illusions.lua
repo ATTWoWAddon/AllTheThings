@@ -11,7 +11,13 @@ root(ROOTS.NeverImplemented, filter(ILLUSIONS, {
 
 		-- 8.3.0
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
-			i(174933),	-- Voidwrath (ILLUSION!)
+			i(174933),	-- Illusion: Voidwrath (ILLUSION!)
+		})),
+	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(250776),	-- Illusion: Sha Corruption (ILLUSION!)
 		})),
 	}),
 }));

@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -780,7 +780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6604, {	-- Enraged Wildkin (1/4)
 					["qg"] = 11755,	-- Harlo Wigglesworth
-					["coord"] = { 61, 38.4, WINTERSPRING },
+					["coord"] = { 61.0, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4861, {	-- Enraged Wildkin (2/4)
 					["sourceQuest"] = 6604,	-- Enraged Wildkin (1/4)
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4863, {	-- Enraged Wildkin (3/4)
 					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 					["provider"] = { "o", 175587 },	-- Damaged Crate
-					["coord"] = { 59, 59.7, WINTERSPRING },
+					["coord"] = { 59.0, 59.7, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -940,7 +940,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4901, {	-- Guardians of the Altar
 					["sourceQuest"] = 979,	-- Find Ranshalla
 					["qg"] = 10300,	-- Ranshalla
-					["coord"] = { 63, 59.4, WINTERSPRING },
+					["coord"] = { 63.0, 59.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5601, {	-- Sister Pamela
 					["qg"] = 11629,	-- Jessica Redpath
-					["coord"] = { 61.2, 39, WINTERSPRING },
+					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["qg"] = 11192,	-- Kilram
-					["coord"] = { 61.2, 37, WINTERSPRING },
+					["coord"] = { 61.2, 37.0, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_SPIRE },
 					-- #if BEFORE TBC
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 11079 },	-- Wynd Nightchaser
 						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
 					},
-					["coord"] = { 52, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1779,7 +1779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5249,	-- To Winterspring!
 					},
 					["qg"] = 11079,	-- Wynd Nightchaser
-					["coord"] = { 52, 30.2, WINTERSPRING },
+					["coord"] = { 52.0, 30.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5245, {	-- Troubled Spirits of Kel'Theril
 					["sourceQuest"] = 5244,	-- The Ruins of Kel'Theril
 					["qg"] = 10301,	-- Jaron Stoneshaper
-					["coord"] = { 52, 30.4, WINTERSPRING },
+					["coord"] = { 52.0, 30.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -1908,7 +1908,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175888 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 55, 42, WINTERSPRING },
+							["coord"] = { 55.0, 42.0, WINTERSPRING },
 						}),
 						objective(2, {	-- 0/1 Second Relic Fragment
 							["providers"] = {
@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175891 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 50, 41, WINTERSPRING },
+							["coord"] = { 50.0, 41.0, WINTERSPRING },
 						}),
 						objective(3, {	-- 0/1 Third Relic Fragment
 							["providers"] = {
@@ -1924,7 +1924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175892 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 53, 43, WINTERSPRING },
+							["coord"] = { 53.0, 43.0, WINTERSPRING },
 						}),
 						objective(4, {	-- 0/1 Fourth Relic Fragment
 							["providers"] = {
@@ -1932,7 +1932,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 175893 },	-- Highborne Relic Fragment
 								{ "i", 12891 },	-- Jaron's Pick
 							},
-							["coord"] = { 52, 41, WINTERSPRING },
+							["coord"] = { 52.0, 41.0, WINTERSPRING },
 						}),
 					},
 				}),
@@ -2485,6 +2485,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
+					},
+				}),
+				n(2303, {	-- Lyranne Feathersong <Food & Drink>
+					["coord"] = { 52.0, 29.2, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						i(231780, {	-- Tome of Conjure Water VIII
+							["timeline"] = { ADDED_1_15_4 },
+						}),
+						-- #endif
 					},
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>

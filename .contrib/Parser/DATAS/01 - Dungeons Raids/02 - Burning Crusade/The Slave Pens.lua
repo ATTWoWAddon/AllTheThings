@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						objective(2, {	-- Naturalist Bite Discovered
 							["provider"] = { "n", 17893 },	-- Naturalist Bite
-							["coord"] = { 95, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
+							["coord"] = { 95.0, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
 						}),
 						objective(3, {	-- Weeder Greenthumb Discovered
 							["provider"] = { "n", 17890 },	-- Weeder Greenthumb
@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["groups"] = {
 						objective(1, {	-- Naturalist Bite Discovered
 							["provider"] = { "n", 17893 },	-- Naturalist Bite
-							["coord"] = { 95, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
+							["coord"] = { 95.0, 65.4, COILFANG_RESERVOIR_SLAVE_PENS },
 						}),
 						objective(2, {	-- Weeder Greenthumb Discovered
 							["provider"] = { "n", 17890 },	-- Weeder Greenthumb

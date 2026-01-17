@@ -9,6 +9,3 @@ title(260),	-- Architect %s \\ Prideful Marauder %s
 title(980),	-- Skirmisher %s
 title(995),	-- Malevolent Skirmisher %s
 title(996),	-- Tyrannical Skirmisher %s
-5.5.3.64141
-title(736),	-- %s, the Mistborne
-title(737),	-- %s, Heir to the Mist

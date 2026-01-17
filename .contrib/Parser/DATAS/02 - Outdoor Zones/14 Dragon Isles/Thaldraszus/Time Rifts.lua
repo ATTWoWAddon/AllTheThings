@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["minReputation"] = { FACTION_SORIDORMI, 5 },
 							["groups"] = {
 								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
-								spell(417360),	-- Unparalleled (TITLE!)
+								spell(417360),	-- Unparalleled
 							},
 						}),
 					}),
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc (QI!)
 						["coords"] = {
-							{ 55, 57.5, ULDEROTH },
+							{ 55.0, 57.5, ULDEROTH },
 							{ 45.8, 72.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 					}),

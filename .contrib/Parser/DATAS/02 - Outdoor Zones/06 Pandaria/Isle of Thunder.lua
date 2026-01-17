@@ -407,7 +407,7 @@ root(ROOTS.Zones, {
 												{ "o", 218196 },	-- Heavy Explosives
 												{ "i", 93962 },	-- Heavy Explosives
 											},
-											["coord"] = { 48.4, 51, ISLE_OF_THUNDER },
+											["coord"] = { 48.4, 51.0, ISLE_OF_THUNDER },
 										}),
 									},
 								}),
@@ -824,7 +824,7 @@ root(ROOTS.Zones, {
 							i(95566),	-- Ra'sha's Sacrificial Dagger
 							i(94158, {	-- Big Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
 								["description"] = "Can contain all sorts of herbs, ore, and cloth.",

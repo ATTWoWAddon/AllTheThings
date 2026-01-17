@@ -4560,12 +4560,7 @@ s(209303,64853,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtain
 s(209304,64854,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),
 s(209305,64855,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),
 s(209306,64856,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),
-s(209307,64857,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),
-s(209375,64928,{awp=70200,b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=1}),
-s(209376,64929,{awp=70200,b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=1}),
-s(209377,64930,{awp=70200,b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=1}),
-s(209378,64931,{awp=70200,b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=1}),
-s(209379,64932,{awp=70200,b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=1})}}),
+s(209307,64857,{b=1,c={8},f=4,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40})}}),
 cl(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,u=40,g={
 s(209266,64802,{b=1,c={2},f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),
 s(209267,64803,{b=1,c={2},f=7,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2;t.rwp=nil;else	t.u=40;t.rwp=40200;end	end,pvp=1,q=3,races={1,2,3,4,5,6,7,8,9,10,11,22},u=40}),

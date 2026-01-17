@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "可重复",
-		-- TODO: tw = "",
+		tw = "可重複",
 	},
 })

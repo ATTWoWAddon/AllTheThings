@@ -93,6 +93,7 @@
     <Compile Include="DB\Types\HolidayNames.cs" />
     <Compile Include="DB\Types\Holiday.cs" />
     <Compile Include="DB\Types\HouseDecor.cs" />
+    <Compile Include="DB\Types\SkillLineAbility.cs" />
     <Compile Include="DB\Types\UiMapAssignment.cs" />
     <Compile Include="DB\Types\UiMap.cs" />
     <Compile Include="DB\Types\ContentTuning.cs" />

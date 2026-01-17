@@ -6,12 +6,12 @@ local _, app = ...;
 -- Encapsulates the functionality for handling the processing of a 'sym' link within ATT data
 
 -- Global Locals
-local select,tremove,unpack,ipairs,GetAchievementNumCriteria,tinsert,wipe,type
-	= select,tremove,unpack,ipairs,GetAchievementNumCriteria,tinsert,wipe,type
+local select,tremove,unpack,GetAchievementNumCriteria,type
+	= select,tremove,unpack,GetAchievementNumCriteria,type
 
 -- App locals
-local GetItemInfoInstant,SearchForObject,ArrayAppend,CloneArray,AssignChildren,SearchForField,GetRelativeValue
-= app.WOWAPI.GetItemInfoInstant,app.SearchForObject,app.ArrayAppend,app.CloneArray,app.AssignChildren,app.SearchForField,app.GetRelativeValue
+local GetItemInfoInstant,SearchForObject,ArrayAppend,CloneArray,AssignChildren,SearchForField,GetRelativeValue,wipearray
+= app.WOWAPI.GetItemInfoInstant,app.SearchForObject,app.ArrayAppend,app.CloneArray,app.AssignChildren,app.SearchForField,app.GetRelativeValue,app.wipearray
 
 -- Upgrade API Implementation
 -- Access via AllTheThings.Modules.Symlink
@@ -65,31 +65,34 @@ app.AddEventHandler("OnLoad", function()
 	end
 end)
 
--- TODO: performance pass: tinsert, wipearray, ipairs
-
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
-	local value;
-	local vals = select("#", ...);
+	local value
+	local vals = select("#", ...)
 	for i=1,vals do
-		value = select(i, ...);
-		for _,v in ipairs(arr) do
-			if v == value then return true; end
+		value = select(i, ...)
+		for i=1,#arr do
+			if arr[i] == value then return true end
 		end
 	end
 end
 local function Resolve_Extract(results, group, field)
 	if group[field] then
 		results[#results + 1] = group
-	elseif group.g then
-		for _,o in ipairs(group.g) do
-			Resolve_Extract(results, o, field);
+	else
+		local g = group.g
+		if g then
+			for i=1,#g do
+				Resolve_Extract(results, g[i], field)
+			end
 		end
 	end
 end
 local function Resolve_Find(results, groups, field, val)
 	if groups then
-		for _,o in ipairs(groups) do
+		local o
+		for i=1,#groups do
+			o = groups[i]
 			if o[field] == val then
 				results[#results + 1] = o
 			else
@@ -105,7 +108,7 @@ end
 -- (various expected components of the respective sym command)
 local ResolveFunctions = {
 	-- Instruction to search the full database for multiple of a given type
-	["select"] = function(finalized, searchResults, o, cmd, field, ...)
+	select = function(finalized, searchResults, o, cmd, field, ...)
 		local cache, val;
 		local vals = select("#", ...);
 		if vals > 3 then
@@ -141,7 +144,7 @@ local ResolveFunctions = {
 		SelectMod = nil
 	end,
 	-- Instruction to select the parent object of the group that owns the symbolic link
-	["selectparent"] = function(finalized, searchResults, o, cmd, level)
+	selectparent = function(finalized, searchResults, o, cmd, level)
 		level = level or 1;
 		-- an search for the specific 'o' to retrieve the source parent since the parent is not always actually attached to the reference resolving the symlink
 		local parent
@@ -154,74 +157,77 @@ local ResolveFunctions = {
 			end
 			if parent then
 				-- app.PrintDebug("selectparent-searched",level,parent.hash,parent.text)
-				tinsert(searchResults, parent);
+				searchResults[#searchResults + 1] = parent
 				return;
 			end
 		end
 		app.print("'selectparent' failed for",o.hash);
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
-	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)
+	selectprofession = function(finalized, searchResults, o, cmd, requireSkill)
 		local search = app:BuildSearchResponse("requireSkill", requireSkill);
 		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
-	["fill"] = function(finalized, searchResults, o)
-		local okey = o.key;
-		if okey then
-			local okeyval = o[okey];
-			if okeyval then
-				for _,result in ipairs(SearchForObject(okey, okeyval, "field", true)) do
-					ArrayAppend(searchResults, result.g);
-				end
-			end
+	fill = function(finalized, searchResults, o)
+		local okey = o.key
+		if not okey then return end
+
+		local okeyval = o[okey]
+		if not okeyval then return end
+
+		local objs = SearchForObject(okey, okeyval, "field", true)
+		for i=1,#objs do
+			ArrayAppend(searchResults, objs[i].g)
 		end
 	end,
 	-- Instruction to finalize the current search results and prevent additional queries from affecting this selection
-	["finalize"] = function(finalized, searchResults)
+	finalize = function(finalized, searchResults)
 		ArrayAppend(finalized, searchResults);
-		wipe(searchResults);
+		wipearray(searchResults);
 	end,
 	-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue
-	["merge"] = function(finalized, searchResults)
+	merge = function(finalized, searchResults)
 		local orig;
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		-- finalized first
 		ArrayAppend(searchResults, finalized);
-		wipe(finalized);
+		wipearray(finalized);
 		-- then any existing searchResults
 		ArrayAppend(searchResults, orig);
 	end,
 	-- Instruction to "push" all of the group values into an object as specified
-	["push"] = function(finalized, searchResults, o, cmd, field, value)
+	push = function(finalized, searchResults, o, cmd, field, value)
 		local orig;
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		local group = CreateObject({[field] = value });
 		NestObjects(group, orig);
 		searchResults[1] = group;
 	end,
 	-- Instruction to "pop" all of the group values up one level
-	["pop"] = function(finalized, searchResults)
+	pop = function(finalized, searchResults)
 		local orig;
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
-			for _,obj in ipairs(orig) do
+			local obj
+			for i=1,#orig do
+				obj = orig[i]
 				-- insert raw & symlinked Things from this group
 				ArrayAppend(searchResults, obj.g, ResolveSymbolicLink(obj));
 			end
 		end
 	end,
 	-- Instruction to include only search results where a key value is a value
-	["where"] = function(finalized, searchResults, o, cmd, field, value)
+	where = function(finalized, searchResults, o, cmd, field, value)
 		for k=#searchResults,1,-1 do
 			local result = searchResults[k];
 			if not result[field] or result[field] ~= value then
@@ -230,10 +236,10 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to include only search results where a key value is a value
-	["whereany"] = function(finalized, searchResults, o, cmd, field, ...)
-		local hash = {};
-		for k,value in ipairs({...}) do
-			hash[value] = true;
+	whereany = function(finalized, searchResults, o, cmd, field, ...)
+		local hash, vals = {}, {...}
+		for i=1,#vals do
+			hash[vals[i]] = true
 		end
 		for k=#searchResults,1,-1 do
 			local result = searchResults[k];
@@ -243,41 +249,41 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to extract all nested results which contain a given field
-	["extract"] = function(finalized, searchResults, o, cmd, field)
-		local orig;
+	extract = function(finalized, searchResults, o, cmd, field)
+		local orig
 		if #searchResults > 0 then
-			orig = CloneArray(searchResults);
+			orig = CloneArray(searchResults)
 		end
-		wipe(searchResults);
+		wipearray(searchResults)
 		if orig then
-			for _,o in ipairs(orig) do
-				Resolve_Extract(searchResults, o, field);
+			for i=1,#orig do
+				Resolve_Extract(searchResults, orig[i], field)
 			end
 		end
 	end,
 	-- Instruction to find all nested results which contain a given field/value
-	["find"] = function(finalized, searchResults, o, cmd, field, val)
+	find = function(finalized, searchResults, o, cmd, field, val)
 		if #searchResults > 0 then
 			local resolved = {}
 			Resolve_Find(resolved, searchResults, field, val)
-			wipe(searchResults)
+			wipearray(searchResults)
 			ArrayAppend(searchResults, resolved)
 		end
 	end,
 	-- Instruction to include the search result with a given index within each of the selection's groups
-	["index"] = function(finalized, searchResults, o, cmd, index)
+	index = function(finalized, searchResults, o, cmd, index)
 		local orig;
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
 			local result, g;
 			for k=#orig,1,-1 do
 				result = orig[k];
 				g = result.g;
 				if g and index <= #g then
-					tinsert(searchResults, g[index]);
+					searchResults[#searchResults + 1] = g[index]
 				end
 			end
 		end
@@ -287,8 +293,8 @@ local ResolveFunctions = {
 		local values = {...};
 		if #values > 1 then
 			local matches = {};
-			for i,o in ipairs(values) do
-				matches[o] = true;
+			for i=1,#values do
+				matches[values[i]] = true;
 			end
 			for k=#searchResults,1,-1 do
 				local result = searchResults[k];
@@ -310,19 +316,19 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to include only search results where a key exists
-	["is"] = function(finalized, searchResults, o, cmd, field)
+	is = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
 			if not searchResults[k][field] then tremove(searchResults, k); end
 		end
 	end,
 	-- Instruction to include only search results where a key doesn't exist
-	["isnt"] = function(finalized, searchResults, o, cmd, field)
+	isnt = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
 			if searchResults[k][field] then tremove(searchResults, k); end
 		end
 	end,
 	-- Instruction to include only search results where a key value/table contains a value
-	["contains"] = function(finalized, searchResults, o, cmd, field, ...)
+	contains = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			app.print("'",cmd,"' had empty value set")
@@ -356,7 +362,7 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to exclude search results where a key value contains a value
-	["exclude"] = function(finalized, searchResults, o, cmd, field, ...)
+	exclude = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			app.print("'",cmd,"' had empty value set")
@@ -386,7 +392,7 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to include only search results where an item is of a specific inventory type
-	["invtype"] = function(finalized, searchResults, o, cmd, ...)
+	invtype = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			app.print("'",cmd,"' had empty value set")
@@ -412,7 +418,7 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
-	["meta_achievement"] = function(finalized, searchResults, o, cmd, ...)
+	meta_achievement = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			app.print("'",cmd,"' had empty value set")
@@ -442,7 +448,7 @@ local ResolveFunctions = {
 		PruneFinalized = { "g" };
 	end,
 	-- Instruction to search the full database for an achievementID and persist the associated Criteria
-	["partial_achievement"] = function(finalized, searchResults, o, cmd, achID)
+	partial_achievement = function(finalized, searchResults, o, cmd, achID)
 		local cache = app.SearchForField("achievementID", achID)
 		local crit
 		for i=1,#cache do
@@ -453,7 +459,7 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to simply 'prune' sub-groups from the finalized selection, or specified fields
-	["prune"] = function(finalized, searchResults, o, cmd, ...)
+	prune = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			PruneFinalized = { "g" }
@@ -467,23 +473,23 @@ local ResolveFunctions = {
 		end
 	end,
 	-- Instruction to apply a specific modID to any Items within the finalized search results
-	["modID"] = function(finalized, searchResults, o, cmd, modID)
+	modID = function(finalized, searchResults, o, cmd, modID)
 		FinalizeModID = modID
 	end,
 	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
-	["myModID"] = function(finalized, searchResults, o)
+	myModID = function(finalized, searchResults, o)
 		FinalizeModID = o.modID
 	end,
 	-- Instruction to apply a specific modID to any Items within the finalized search results
-	["usemodID"] = function(finalized, searchResults, o, cmd, modID)
+	usemodID = function(finalized, searchResults, o, cmd, modID)
 		SelectMod = GetGroupItemIDWithModID(nil, nil, modID)
 	end,
 	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
-	["usemyModID"] = function(finalized, searchResults, o)
+	usemyModID = function(finalized, searchResults, o)
 		SelectMod = GetGroupItemIDWithModID(nil, nil, o.modID)
 	end,
 	-- Instruction to use the modID from the Source object to filter matching modID on any Items within the finalized search results
-	["whereMyModID"] = function(finalized, searchResults, o)
+	whereMyModID = function(finalized, searchResults, o)
 		local modID = o.modID
 		-- don't filter things without modID if this thing doesn't have a modID
 		if not modID then return end
@@ -497,11 +503,11 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to perform an immediate 'FillGroups' against the objects in the finalized set prior to returning the results
 	-- or to fill the groups currently within the searchResults at this step
-	["groupfill"] = function(finalized, searchResults, o, cmd, onCurrent)
+	groupfill = function(finalized, searchResults, o, cmd, onCurrent)
 		if onCurrent then
 			if #searchResults == 0 then return end
 			local orig = CloneArray(searchResults);
-			wipe(searchResults);
+			wipearray(searchResults);
 			local result
 			for k=1,#orig do
 				result = CreateObject(orig[k])
@@ -532,7 +538,7 @@ if GetAchievementNumCriteria then
 			---@diagnostic disable-next-line: redundant-parameter
 			_, criteriaType, _, _, reqQuantity, _, _, assetID, _, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 			if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
-			criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+			criteriaObject = app.CreateAchievementCriteria(uniqueID, {achievementID = achievementID}, true);
 
 			-- criteriaType ref: https://warcraft.wiki.gg/wiki/API_GetAchievementCriteriaInfo
 			-- Quest source
@@ -540,13 +546,15 @@ if GetAchievementNumCriteria then
 			then
 				local quests = app.SearchForField("questID", assetID)
 				if #quests > 0 then
-					for _,c in ipairs(quests) do
+					local c
+					for i=1,#quests do
+						c = quests[i]
 						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 						NestObject(c, criteriaObject);
 						AssignChildren(c);
 						app.CacheFields(criteriaObject);
 						app.DirectGroupUpdate(c);
-						criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+						criteriaObject = app.CreateAchievementCriteria(uniqueID, {achievementID = achievementID}, true);
 						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
 					end
 					-- added to the quest(s) groups, not added to achievement
@@ -603,7 +611,7 @@ if GetAchievementNumCriteria then
 				-- this criteria object may have been turned into a cost via costs/providers assignment, so make sure we update those respective costs via the Cost Runner
 				-- if settings are changed while this is running, it's ok because it refreshes costs from the cache
 				app.HandleEvent("OnSearchResultUpdate", criteriaObject)
-				tinsert(searchResults, criteriaObject);
+				searchResults[#searchResults + 1] = criteriaObject
 			end
 		end
 	end
@@ -611,28 +619,28 @@ end
 
 -- Subroutine Logic Cache
 local SubroutineCache = {
-	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2)
+	pvp_gear_base = function(finalized, searchResults, o, cmd, _, headerID1, headerID2)
 		local select, find = ResolveFunctions.select, ResolveFunctions.find
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		if headerID2 then
 			find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Find the Set header
 		end
 	end,
-	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3)
+	pvp_gear_faction_base = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3)
 		local select, find = ResolveFunctions.select, ResolveFunctions.find
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
 		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
 	end,
 	-- Set Gear
-	["pvp_set_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, classID)
+	pvp_set_ensemble = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, classID)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "classID", classID);		-- Select the class header
 		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
-	["pvp_set_faction_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3, classID)
+	pvp_set_faction_ensemble = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3, classID)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
@@ -641,14 +649,14 @@ local SubroutineCache = {
 		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	-- Weapons
-	["pvp_weapons_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2)
+	pvp_weapons_ensemble = function(finalized, searchResults, o, cmd, _, headerID1, headerID2)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
 		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
-	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3)
+	pvp_weapons_faction_ensemble = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
@@ -657,7 +665,7 @@ local SubroutineCache = {
 		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
-	["common_recipes_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+	common_recipes_vendor = function(finalized, searchResults, o, cmd, npcID)
 			local select, pop, is, exclude = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is, ResolveFunctions.exclude;
 		select(finalized, searchResults, o, "select", "npcID", npcID);	-- Main Vendor
 		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
@@ -686,13 +694,13 @@ local SubroutineCache = {
 			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
 		0);	-- 0 allows the trailing comma on previous itemIDs for cleanliness
 	end,
-	["common_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+	common_vendor = function(finalized, searchResults, o, cmd, npcID)
 		local select, pop = ResolveFunctions.select, ResolveFunctions.pop
 		select(finalized, searchResults, o, "select", "npcID", npcID);	-- Main Vendor
 		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
 	end,
 	-- TW Instance
-	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
+	tw_instance = function(finalized, searchResults, o, cmd, instanceID)
 		local select, pop, whereany, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.whereany, ResolveFunctions.push, ResolveFunctions.finalize;
 		select(finalized, searchResults, o, "select", "itemID", 133543);	-- Infinite Timereaver
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
@@ -702,7 +710,7 @@ local SubroutineCache = {
 		if #searchResults > 0 then o.e = searchResults[1].e; end
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
-	["instance_tier"] = function(finalized, searchResults, o, cmd, instanceID, difficultyID, classID)
+	instance_tier = function(finalized, searchResults, o, cmd, instanceID, difficultyID, classID)
 		local select, pop, where, extract, invtype =
 			ResolveFunctions.select,
 			ResolveFunctions.pop,
@@ -728,16 +736,18 @@ local SubroutineCache = {
 		if #searchResults > 0 then
 			orig = CloneArray(searchResults);
 		end
-		wipe(searchResults);
+		wipearray(searchResults);
 		if orig then
-			for _,o in ipairs(orig) do
-				if not o.f then
-					if o.g then
+			local ob
+			for i=1,#orig do
+				ob = orig[i]
+				if not ob.f then
+					if ob.g then
 						-- no filter Item with sub-groups
-						ArrayAppend(searchResults, o.g)
+						ArrayAppend(searchResults, ob.g)
 					else
 						-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
-						tinsert(searchResults, o);
+						searchResults[#searchResults + 1] = ob
 					end
 				end
 			end
@@ -757,13 +767,15 @@ local SubroutineCache = {
 			if #searchResults > 0 then
 				orig = CloneArray(searchResults);
 			end
-			wipe(searchResults);
+			wipearray(searchResults);
 			local c;
 			if orig then
-				for _,o in ipairs(orig) do
-					c = o.c;
+				local ob
+				for i=1,#orig do
+					ob = orig[i]
+					c = ob.c;
 					if c and ContainsAnyValue(c, classID) then
-						tinsert(searchResults, o);
+						searchResults[#searchResults + 1] = ob
 					end
 				end
 			end
@@ -820,9 +832,10 @@ local NonSelectCommands = {
 	usemodID = true,
 }
 local HandleCommands = app.Debugging and function(finalized, searchResults, o, oSym)
-	local cmd, cmdFunc
+	local cmd, cmdFunc, sym
 	local debug = true
-	for _,sym in ipairs(oSym) do
+	for i=1,#oSym do
+		sym = oSym[i]
 		cmd = sym[1];
 		cmdFunc = ResolveFunctions[cmd];
 		-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
@@ -839,8 +852,9 @@ local HandleCommands = app.Debugging and function(finalized, searchResults, o, o
 		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"from",o.hash,"with:",unpack(sym))
 	end
 end or function(finalized, searchResults, o, oSym)
-	local cmd, cmdFunc
-	for _,sym in ipairs(oSym) do
+	local cmd, cmdFunc, sym
+	for i=1,#oSym do
+		sym = oSym[i]
 		cmd = sym[1];
 		cmdFunc = ResolveFunctions[cmd];
 		if cmdFunc then
@@ -903,8 +917,8 @@ ResolveSymbolicLink = function(o, refonly)
 				app.RefreshItemGroup(clone)
 			end
 			if PruneFinalized then
-				for _,field in ipairs(PruneFinalized) do
-					clone[field] = nil
+				for i=1,#PruneFinalized do
+					clone[PruneFinalized[i]] = nil
 				end
 			end
 			if FillFinalized then
@@ -932,6 +946,11 @@ ResolveSymbolicLink = function(o, refonly)
 	return cloned;
 end
 app.ResolveSymbolicLink = ResolveSymbolicLink
+
+-- Performance Tracking
+if app.__perf then
+	app.__perf.AutoCaptureTable(ResolveFunctions, "Symlink.ResolveFunctions");
+end
 
 local function ResolveSymlinkGroupAsync(group)
 	-- app.PrintDebug("RSGa",group.hash)

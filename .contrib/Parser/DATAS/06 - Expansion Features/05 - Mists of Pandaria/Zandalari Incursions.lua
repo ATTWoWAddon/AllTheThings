@@ -15,7 +15,7 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "赞达拉入侵",
-		-- TODO: tw = "",
+		tw = "贊達拉入侵",
 	},
 	description = {
 		en = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",
@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["groups"] = {
 					i(94158, {	-- Big Bag of Zandalari Supplies
 						["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-						["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+						["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 					}),
 					i(94159, {	-- Small Bag of Zandalari Supplies
 						["description"] = "Can contain all sorts of herbs, ore, and cloth.",
@@ -76,6 +76,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					i(94225),	-- Stolen Celestial Insignia
 					i(94227),	-- Stolen Golden Lotus Insignia
 					i(94226),	-- Stolen Klaxxi Insignia
+					i(94223),	-- Stolen Shado-Pan Insignia
 				},
 			}),
 			n(69768, {	-- Zandalari Warscout

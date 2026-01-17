@@ -56,9 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
-							["groups"] = {
-								i(20600),	-- Malfurion's Signet Ring
-							},
+							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -137,9 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
 					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.2, 41.8, MOONGLADE },
-					["groups"] = {
-						i(234155),	-- Malfurion's Signet Ring
-					},
+					["groups"] = { i(234155) },	-- Malfurion's Signet Ring
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {

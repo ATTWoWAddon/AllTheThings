@@ -1,7 +1,7 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,cl,crit,exp,faction,h,i,m,mnt,n,p,pvprank,q,qo,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
+local ach,cl,crit,exp,faction,h,i,m,mnt,n,pvprank,q,qo,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
 _.Categories.PVP={
 h(-12,{pvp=1,g={
 ach(238,{pvp=1,u=1608}),
@@ -828,13 +828,13 @@ s(229687,231618,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229690,231621,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229691,231622,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229693,231624,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
-p(4676,{awp=11101,b=1,c={5},itemID=231628,lvl=60,pvp=1,q=4}),
+s(229696,231628,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229686,231617,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229688,231619,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229689,231620,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229692,231623,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229694,231626,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
-p(4677,{awp=11101,b=1,c={5},itemID=231627,lvl=60,pvp=1,q=4}),
+s(229695,231627,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(223601,227119,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=3}),
 s(223603,227121,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=3}),
 s(223618,227136,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=3}),
@@ -1021,7 +1021,7 @@ s(229699,231631,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229700,231632,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229703,231635,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229679,231610,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
-p(4665,{awp=11101,b=1,c={5},itemID=231613,lvl=60,pvp=1,q=4}),
+s(229682,231613,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229683,231614,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229698,231630,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),
 s(229701,231633,{awp=11101,b=1,c={5},f=4,lvl=60,pvp=1,q=4}),

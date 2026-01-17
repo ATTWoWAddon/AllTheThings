@@ -5,6 +5,10 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(ZONE_DROPS, {
+			i(158918, {	-- Bilgewater Patented Flamethrower (QS!)
+				["coord"] = { 38.4, 36.6, DRUSTVAR },
+				["cr"] = 135541,	-- Bilgewater Incinerator
+			}),
 			i(168126, {	-- Grasping Wicker Arm
 				["requireSkill"] = ENCHANTING,
 				["crs"] = {

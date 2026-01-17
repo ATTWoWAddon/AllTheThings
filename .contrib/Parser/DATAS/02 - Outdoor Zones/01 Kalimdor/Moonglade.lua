@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(26, {	-- A Lesson to Learn [A]
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8, DARNASSUS },
+					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6001, {	-- Body and Heart [A]
 					["sourceQuest"] = 5931,	-- Back to Darnassus
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8, DARNASSUS },
+					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
 							["cost"] = {{ "i", 15208, 1 }},	-- Cenarion Moondust
-							["coord"] = { 43, 45, DARKSHORE },
+							["coord"] = { 43.0, 45.0, DARKSHORE },
 						}),
 						-- #if BEFORE 4.0.3
 						{
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
 							["cost"] = {{ "i", 15710, 1 }},	-- Cenarion Lunardust
-							["coord"] = { 42, 60, THE_BARRENS },
+							["coord"] = { 42.0, 60.0, THE_BARRENS },
 						}),
 						-- #if BEFORE 4.0.3
 						{
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5925, {	-- Heeding the Call [Teldrassil]
 					["qg"] = 3602,	-- Kal <Druid Trainer>
-					["coord"] = { 56, 61.6, TELDRASSIL },
+					["coord"] = { 56.0, 61.6, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1047,	-- The New Frontier [Darnassus]
 					},
 					["qg"] = 10877,	-- Courier Hammerfall
-					["coord"] = { 31.6, 67, IRONFORGE },
+					["coord"] = { 31.6, 67.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
@@ -590,7 +590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
 							["provider"] = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
 							["cost"] = {{ "i", 15842, 1 }},	-- Empty Dreadmist Falls Sampler
-							["coord"] = { 47, 18, THE_BARRENS },
+							["coord"] = { 47.0, 18.0, THE_BARRENS },
 						}),
 					},
 				}),
@@ -637,13 +637,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				q(272, {	-- Trial of the Sea Lion [A]
-					["sourceQuest"] = 29,	-- Trial of the Lake [A]
+				{	-- Trial of the Sea Lion
+					["allianceQuestData"] = q(272, {	-- Trial of the Sea Lion [A]
+						["sourceQuest"] = 29,	-- Trial of the Lake [A]
+					}),
+					["hordeQuestData"] = q(30, {	-- Trial of the Sea Lion [H]
+						["sourceQuest"] = 28,	-- Trial of the Lake [H]
+					}),
 					["qg"] = 11799,	-- Tajarri
 					["coord"] = { 36.4, 40.2, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARKSHORE, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 16,
 					["groups"] = {
@@ -658,43 +661,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{
 							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
 							["coord"] = { 17.9, 33.0, WESTFALL },
-						},
-						{
-							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
-							["coord"] = { 48.9, 11.3, DARKSHORE },
-						},
-						-- #endif
-					},
-				}),
-				q(30, {	-- Trial of the Sea Lion [H]
-					["sourceQuest"] = 28,	-- Trial of the Lake [H]
-					["qg"] = 11799,	-- Tajarri
-					["coord"] = { 36.4, 40.2, MOONGLADE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
-					["races"] = HORDE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 16,
-					["groups"] = {
-						objective(1, {	-- 0/1 Pendant of the Sea Lion
-							["provider"] = { "i", 15885 },	-- Pendant of the Sea Lion
-							["cost"] = {
-								{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
-								{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility
-							},
-						}),
-						-- #if BEFORE 4.0.3
-						{
-							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
 							["coord"] = { 29.6, 29.5, SILVERPINE_FOREST },
 						},
 						{
 							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
+							["coord"] = { 48.9, 11.3, DARKSHORE },
 							["coord"] = { 56.7, 8.3, THE_BARRENS },
 						},
 						-- #endif
 					},
-				}),
+				},
 				q(6845, {	-- Uncovering Past Secrets
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber

@@ -24,7 +24,7 @@ addVersionFlavor({
 	ru = "потому что AllTheThings голоден.",
 	ko = "AllTheThings가 배고프기 때문입니다.",
 	cn = "因为 AllTheThings 饿了。",
-	tw = "因為萬物都飢餓。",
+	tw = "因為 AllTheThings 餓了。",
 });
 addVersionFlavor({
 	en = "and Invincible will drop |cffffaaaafor sure|r next time.",
@@ -37,7 +37,7 @@ addVersionFlavor({
 	ru = "и Непобедимый |cffffaaaaточно|r дропнет в следующий раз",
 	-- TODO: ko = "",
 	cn = "下次|cffffaaaa一定|r出无敌！",
-	tw = "無敵下次|cffffaaaa|肯定|r會掉落",
+	tw = "下次|cffffaaaa一定|r會掉落無敵！",
 });
 addVersionFlavor({
 	en = "or a murloc will scream outside your window tonight.",
@@ -50,7 +50,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "否则今晚会有鱼人在你窗外尖叫。",
-	-- TODO: tw = "",
+	tw = "否則今晚會有魚人在你窗外尖叫",
 });
 addVersionFlavor({
 	en = "because collecting is just hoarding with extra steps.",
@@ -63,7 +63,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "因为所谓的收藏，不过是换了个说法的囤积癖罢了。",
-	-- TODO: tw = "",
+	tw = "因為所謂的收藏不過是換個說法的囤積癖。",
 });
 addVersionFlavor({
 	en = "and Crieve will help a turtle to make it to the water.",
@@ -76,7 +76,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "而 Crieve 会帮一只乌龟重新入水。",
-	-- TODO: tw = "",
+	tw = "而 Crieve 會幫一隻烏龜重新入水。",
 });
 addVersionFlavor({
 	en = "or your battle pets will unionize.",
@@ -89,7 +89,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "否则你的战斗宠物就要成立公会了！",
-	-- TODO: tw = "",
+	tw = "否則你的戰鬥寵物要成立工會了。",
 });
 --[[
 addVersionFlavor({
@@ -148,7 +148,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "是，大厨！",
-	-- TODO: tw = "",
+	tw = "是的，大廚！",
 });
 ]]--
 --[[
@@ -163,7 +163,7 @@ addVersionFlavor({
 	-- TODO: ru = "",
 	-- TODO: ko = "",
 	cn = "艾泽拉斯的勇士。",
-	tw = "艾澤拉斯的勇士",
+	tw = "艾澤拉斯的勇士。",
 });
 ]]--
 

@@ -162,7 +162,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					ach(10809),	-- Mythic: Maw of Souls
 					ach(10863),	-- Mythic: Maw of Souls Guild Run
 					ach(10412, {	-- Poor Unfortunate Souls
-						["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
+						["description"] =
+						-- #if BEFORE 11.2.5
+						"Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
+						-- #else
+						"Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
+						-- #endif
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
 						["crs"] = { 98806 },	-- Soul Essence
 						["groups"] = { i(140323) },	-- Lagan (PET!)

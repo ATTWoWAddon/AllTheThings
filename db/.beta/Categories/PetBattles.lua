@@ -195,7 +195,7 @@ n(147070,{coords={{31.8,71.6,30}},pb=1,g={
 p(2532,{b=1,cost={{"i",165835,2}},itemID=165855,npcID=147679,pb=1,spellID=286576}),
 p(2531,{b=1,cost={{"i",165835,1}},itemID=165854,npcID=147671,pb=1,spellID=286574}),
 p(2533,{b=1,cost={{"i",165835,3}},itemID=165857,npcID=147692,pb=1,spellID=286582}),
-r(286478,{b=1,cost={{"i",165835,1}},itemID=165844,learnedAt=135,lvl=10,pb=1,requireSkill=202}),
+r(286478,{b=1,cost={{"i",165835,1}},itemID=165844,lvl=10,pb=1,requireSkill=202,skillID=2499}),
 i(165839,{b=1,cost={{"i",165835,1}},f=55,pb=1})}}),
 i(165835)}}),
 q(56492,{awp=80200,coords={{43.1,19.9,23}},isDaily=1,isWeekly=1,lvl=50,maps={1505},pb=1,qgs=a[6],sourceQuests={56491},g={

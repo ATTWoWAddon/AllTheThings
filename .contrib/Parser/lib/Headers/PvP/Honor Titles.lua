@@ -17,8 +17,8 @@ HONOR_TITLES = createHeader({
 		-- TODO: tw = "",
 		-- #else
 		en = [[~HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES]],
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Titulos de honor",
+		mx = "Titulos de honor",
 		-- TODO: de = "",
 		-- TODO: fr = "",
 		-- TODO: it = "",

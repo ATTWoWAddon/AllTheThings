@@ -12,8 +12,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	i(162461, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguicell
 	i(171320, {["timeline"] = {ADDED_8_3_0}}),	-- Void Focus
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(556425, {	-- Darkpine Lumber
-			i(251768),	-- Darkpine Lumber
+		o_repeated({	-- Darkpine Lumber
+			["maps"] = {
+				DRUSTVAR,
+				MECHAGON,
+				NAZMIR,
+				STORMSONG_VALLEY,
+				TIRAGARDE_SOUND,
+				BORALUS,
+				VOLDUN,
+				ZULDAZAR,
+				DAZARALOR,
+			},
+			["groups"] = {
+				-- Objects
+				o(557988),	-- [Drustvar]
+				o(558338),	-- [Mechagon]
+				o(556076),	-- [Nazmir]
+				o(556704),	-- [Stormsong Valley]
+				o(556425),	-- [Tiragarde Sound/Boralus]
+				o(556387),	-- [Vol'dun]
+				o(555545),	-- [Zuldazar/Dazar'alor]
+				-- Drops
+				i(251768),	-- Darkpine Lumber
+			},
 		}),
 	})),
 	filter(MOUNTS, {
@@ -763,22 +785,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(FISHING, {
-		i(174328, {["timeline"] = {ADDED_8_3_0}}),	-- Aberrant Voidfin
+		i(174328, { ["timeline"] = { ADDED_8_3_0 } }),	-- Aberrant Voidfin
 		i(152545),	-- Frenzied Fangtooth
 		i(152547),	-- Great Sea Catfish
 		i(163131, {	-- Great Sea Ray (MOUNT!)
 			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
-		i(167562, {["timeline"] = {ADDED_8_2_0}}),	-- Ionized Minnow
+		i(167562, { ["timeline"] = { ADDED_8_2_0 } }),	-- Ionized Minnow
 		i(152546),	-- Lane Snapper
-		i(174327, {["timeline"] = {ADDED_8_3_0}}),	-- Malformed Gnasher
-		i(168646, {["timeline"] = {ADDED_8_2_0}}),	-- Mauve Stinger
+		i(174327, { ["timeline"] = { ADDED_8_3_0 } }),	-- Malformed Gnasher
+		i(168646, { ["timeline"] = { ADDED_8_2_0 } }),	-- Mauve Stinger
 		i(162515),	-- Midnight Salmon
+		i(162516, {	-- Rasboralus
+			["description"] = "Caught around Boralus's Proudmoore Keep.",
+		}),
 		i(152549),	-- Redtail Loach
 		i(152543),	-- Sand Shifter
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
-		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		i(162517, {	-- U'taka
+			["description"] = "Caught in Dazar'alor.",
+		}),
+		i(168302, { ["timeline"] = { ADDED_8_2_0 } }),	-- Viper Fish
 		spell(273293, {	-- Aromatic Fish Oil
 			i(160711),	-- Aromatic Fish Oil
 		}),

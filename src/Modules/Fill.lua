@@ -5,7 +5,7 @@
 --- Dependencies: Cache, Table, Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local CurrentSkipLevel = 0	-- Whether to skip certain cost items
 -- Returns the current Skip Level
@@ -176,7 +176,7 @@ local FillFunctions = {
 			for craftedItemID,recipe in pairs(craftableItemIDs) do
 				craftedItemID = math_floor(craftedItemID)
 				craftedItems[craftedItemID] = true
-				skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
+				skillID = recipe ~= true and GetRelativeValue(recipe, "requireSkill") or nil
 				-- Searches for a filter-matched crafted Item
 				search = SearchForObject("itemID",craftedItemID,"field");
 				search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
@@ -522,10 +522,22 @@ local function FillGroupsLayered(group, FillData)
 
 	FillGroupDirect(group, FillData)
 
-	-- Some Types should never be filled beyond themselves
-	if FillStopTypes[group.__type] then return end
+	local g = group.g
+	-- Some Types should never be filled beyond themselves, unless there's another group of the same Type
+	-- Only matters for Ensembles right now. If any other Types added, might need to review
+	if g and FillStopTypes[group.__type] then
+		local nextFill, o
+		for i=1,#g do
+			o = g[i]
+			if FillStopTypes[o.__type] then
+				if nextFill then nextFill[#nextFill + 1] = o
+				else nextFill = { o } end
+			end
+		end
+		return nextFill
+	end
 
-	return group.g
+	return g
 end
 -- Fills the group and returns an array of the next layer of groups to fill
 -- Run an entire layer, run a function to run the next layer
@@ -542,10 +554,25 @@ local function FillGroupsLayeredAsync(group, FillData)
 
 	FillGroupDirect(group, FillData, true)
 
-	-- Some Types should never be filled beyond themselves
-	if FillStopTypes[group.__type] then return end
+	local g = group.g
+	-- Some Types should never be filled beyond themselves, unless there's another group of the same Type
+	-- Only matters for Ensembles right now. If any other Types added, might need to review
+	if g and FillStopTypes[group.__type] then
+		local nextFill, o
+		for i=1,#g do
+			o = g[i]
+			if FillStopTypes[o.__type] then
+				if nextFill then nextFill[#nextFill + 1] = o
+				else nextFill = { o } end
+			end
+		end
+		-- if FillData.CurrentLayer then
+		-- 	app.PrintDebug("AddLayered.g",FillData.CurrentLayer,#g,app:SearchLink(group))
+		-- end
+		app.ArrayAppend(FillData.NextLayer, nextFill)
+		return
+	end
 
-	local g = group.g;
 	if g then
 		-- if FillData.CurrentLayer then
 		-- 	app.PrintDebug("AddLayered.g",FillData.CurrentLayer,#g,app:SearchLink(group))

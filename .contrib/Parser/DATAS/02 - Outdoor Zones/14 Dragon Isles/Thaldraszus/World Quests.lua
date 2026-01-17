@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.3, 83.4, THALDRASZUS },
 				}),
 				pvp(q(71225, {	-- Blown Through Wind: Rhuzast
-					["coord"] = { 53, 40.2, THALDRASZUS },
+					["coord"] = { 53.0, 40.2, THALDRASZUS },
 				})),
 				q(70073, {	-- Bluefeather Banners
 					["coord"] = { 50.9, 68.2, THALDRASZUS },

@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
 						-- #else
-						{ 32, 28.6, STRANGLETHORN_VALE },
+						{ 32.0, 28.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1 },
@@ -561,7 +561,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
 						-- #else
-						{ 32, 28.6, STRANGLETHORN_VALE },
+						{ 32.0, 28.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_0_1 },
@@ -884,7 +884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Place the grim message.
 							["provider"] = { "i", 9319 },	-- Nimboya's Laden Pike
-							["coord"] = { 32, 58, THE_HINTERLANDS },
+							["coord"] = { 32.0, 58.0, THE_HINTERLANDS },
 							["cost"] = {
 								{ "i", 15002, 1 },	-- Nimboya's Pike
 								{ "i", 9320, 20 },	-- Witherbark Skull x20
@@ -1058,7 +1058,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
 					["qg"] = 738,	-- Private Thorsen
-					["coord"] = { 40, 8, STRANGLETHORN_VALE },
+					["coord"] = { 40.0, 8.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1211,7 +1211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(570, {	-- Mok'thardin's Enchantment (1/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(572, {	-- Mok'thardin's Enchantment (2/4)
 					["sourceQuest"] = 570,	-- Mok'thardin's Enchantment (1/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(571, {	-- Mok'thardin's Enchantment (3/4)
 					["sourceQuest"] = 572,	-- Mok'thardin's Enchantment (2/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(573, {	-- Mok'thardin's Enchantment (4/4)
 					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment (3/4)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
-					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["coord"] = { 32.0, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
@@ -1691,7 +1691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(593, {	-- Filling the Soul Gem
 							["qg"] = 2530,	-- Yenniku <Darkspear Hostage>
-							["coord"] = { 39, 58.2, STRANGLETHORN_VALE },
+							["coord"] = { 39.0, 58.2, STRANGLETHORN_VALE },
 							["cost"] = { { "i", 3912, 1 } },	-- Soul Gem
 							["repeatable"] = true,
 							["groups"] = {

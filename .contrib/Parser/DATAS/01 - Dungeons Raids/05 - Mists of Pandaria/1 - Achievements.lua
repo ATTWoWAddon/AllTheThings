@@ -274,29 +274,23 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #endif
 			-- #if ANYCLASSIC
 			ach(62055, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_2, REMOVED_5_5_3 } }, {	-- The Mistwalker (Season 1)
-				-- #if BEFORE 5.5.3
-				["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				-- #endif
+				["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
 					title(255),	-- Mistwalker <Name>
 					i(248742),	-- Reins of the Celestial Riding Tiger (MOUNT!)
 				},
 			})),
 			ach(62059, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Mistborne (Season 2)
-				-- #if BEFORE 5.5.4
-			-- ToDo: Update for S2 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				-- #endif
+			-- ToDo: Update for S2 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 2 to be a Mistborne.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
-					title(255),	-- Mistwalker <Name>
-					i(248743),	-- Reins of the Celestial Riding Serpent (MOUNT!)
+					title(736),	-- %s, the Mistborne
+				--	i(xx),	-- Reins of the Black Kor'kron Proto-Drake (MOUNT!)
 				},
 			})),
 			ach(62060, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Heir to the Mist (Season 3)
-				-- #if BEFORE 5.5.5
-			-- ToDo: Update for S3 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				-- #endif
+			-- ToDo: Update for S3 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 3 to be a Heir to the Mist.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
-					title(255),	-- Mistwalker <Name>
+					title(737),	-- %s, Heir to the Mist
 					i(248744),	-- Reins of the Celestial Riding Ox (MOUNT!)
 				},
 			})),

@@ -654,10 +654,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				if group.u then
 					local phase = L.PHASES[group.u];
 					if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
+						o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
 					end
 				elseif group.e then
-					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+					o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[4];
 				end
 				if o.texture then
 					o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
@@ -680,10 +680,10 @@ local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.u then
 				local phase = L.PHASES[group.u];
 				if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
+					o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
 				end
 			elseif group.e then
-				o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+				o.texture = L.UNOBTAINABLE_ITEM_TEXTURES[4];
 			end
 			if o.texture then
 				o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
@@ -2203,6 +2203,7 @@ local ADDON_LOADED_HANDLERS = {
 			currentCharacter = {};
 			characterData[app.GUID] = currentCharacter;
 		end
+		currentCharacter.build = app.GameBuildVersion;
 		local name, realm = UnitName("player");
 		if not realm then realm = GetRealmName(); end
 		if name then currentCharacter.name = name; end
@@ -2253,7 +2254,7 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-		
+
 		-- Clean up other matching Characters with identical Name-Realm but differing GUID
 		app.CallbackHandlers.Callback(function()
 			local myGUID = app.GUID;
@@ -2324,7 +2325,7 @@ local ADDON_LOADED_HANDLERS = {
 			-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
 			app.ChatCommands.Add("remove-deleted-character-backups", function(args)
 				local backups = 0
-				for guid,char in pairs(accountWideData._CharacterBackups) do
+				for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
 					backups = backups + 1
 				end
 				accountWideData._CharacterBackups = nil

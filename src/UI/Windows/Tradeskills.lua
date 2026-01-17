@@ -1,7 +1,7 @@
 -- App locals
-local appName, app = ...;
-local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForField, SearchForFieldContainer
-	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForField, app.SearchForFieldContainer;
+local _, app = ...;
+local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
+	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
 
 -- Global locals
 local ipairs, pairs, tinsert =
@@ -16,7 +16,6 @@ local GameTooltip = GameTooltip;
 -- WoW API Cache
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 local function RefreshSkills()
 	-- Store Skill Data
@@ -473,7 +472,7 @@ app:CreateWindow("Tradeskills", {
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;
 		handlers.LEARNED_SPELL_IN_TAB = newSpellLearned;
-		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
+		pcall(self.RegisterEvent, self, "LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 
 		-- Default Update refreshes

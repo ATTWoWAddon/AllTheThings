@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7817, {	-- A Donation of Mageweave
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29, UNDERCITY },
+					["coord"] = { 71.8, 29.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7818, {	-- A Donation of Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29, UNDERCITY },
+					["coord"] = { 71.8, 29.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7814, {	-- A Donation of Silk
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29, UNDERCITY },
+					["coord"] = { 71.8, 29.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7813, {	-- A Donation of Wool
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29, UNDERCITY },
+					["coord"] = { 71.8, 29.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7819, {	-- Additional Runecloth [Undercity]
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
-					["coord"] = { 71.8, 29, UNDERCITY },
+					["coord"] = { 71.8, 29.0, UNDERCITY },
 					["maxReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1478,	-- Halgar's Summons
 					["altQuests"] = { 1501 },	-- Creature of the Void [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = { ORC, UNDEAD },
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1472, {	-- Devourer of Souls [Undercity]
 					["altQuests"] = { 1507 },	-- Devourer of Souls [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5204 },	-- Apothecary Zinge
 						{ "i", 8525 },	-- Zinge's Purchase Order
 					},
-					["coord"] = { 50, 68.4, UNDERCITY },
+					["coord"] = { 50.0, 68.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65593, {	-- Hearts of the Lovers
 					["altQuests"] = { 65610 },	-- Wish You Were Here
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
 					["classes"] = { WARLOCK },
@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1472,	-- Devourer of Souls [Undercity]
 					},
 					["qg"] = 5693,	-- Godrick Farsan
-					["coord"] = { 85, 14.8, UNDERCITY },
+					["coord"] = { 85.0, 14.8, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERPINE_FOREST, WETLANDS },
 					["classes"] = { WARLOCK },
@@ -666,7 +666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- Burn the Highvale Records
-							["coord"] = { 32, 46.9, THE_HINTERLANDS },
+							["coord"] = { 32.0, 46.9, THE_HINTERLANDS },
 						}),
 						objective(2, {	-- Burn the Highvale Notes
 							["coord"] = { 29.7, 48.5, THE_HINTERLANDS },
@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1885, {	-- Mennet Carkad
 					["qg"] = 2130,	-- Marion Call
-					["coord"] = { 61.6, 52, TIRISFAL_GLADES },
+					["coord"] = { 61.6, 52.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -780,7 +780,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coords"] = {
 						{ 39.0, 86.0, ORGRIMMAR },
-						{ 25, 20.6, THUNDER_BLUFF },
+						{ 25.0, 20.6, THUNDER_BLUFF },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 5204 },	-- Apothecary Zinge
 						{ "i", 6016 },	-- Wolf Heart Sample
 					},
-					["coord"] = { 50, 68.4, UNDERCITY },
+					["coord"] = { 50.0, 68.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -889,22 +889,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Filled Vial Labeled #1
 							["provider"] = { "i", 10691 },	-- Filled Vial Labeled #1
 							["cost"] = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
-							["coord"] = { 48, 60, AZSHARA },
+							["coord"] = { 48.0, 60.0, AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Filled Vial Labeled #2
 							["provider"] = { "i", 10692 },	-- Filled Vial Labeled #2
 							["cost"] = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
-							["coord"] = { 47, 51, AZSHARA },
+							["coord"] = { 47.0, 51.0, AZSHARA },
 						}),
 						objective(3, {	-- 0/1 Filled Vial Labeled #3
 							["provider"] = { "i", 10693 },	-- Filled Vial Labeled #3
 							["cost"] = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
-							["coord"] = { 48, 48, AZSHARA },
+							["coord"] = { 48.0, 48.0, AZSHARA },
 						}),
 						objective(4, {	-- 0/1 Filled Vial Labeled #4
 							["provider"] = { "i", 10694 },	-- Filled Vial Labeled #4
 							["cost"] = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
-							["coord"] = { 47, 46, AZSHARA },
+							["coord"] = { 47.0, 46.0, AZSHARA },
 						}),
 						i(10695, {	-- Box of Empty Vials
 							i(10687),	-- Empty Vial Labeled #1
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 65593,	-- Hearts of the Lovers
 					["altQuests"] = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1063,7 +1063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1476,	-- Hearts of the Pure
 					["altQuests"] = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1473,	-- Creature of the Void [Undercity]
 					["altQuests"] = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = { ORC, UNDEAD },
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1886, {	-- The Deathstalkers (1/4)
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7231 },	-- Astor's Letter of Introduction
 					},
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7294 },	-- Andron's Ledger
 					},
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1169,7 +1169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14420, {	-- The Deathstalkers (1/4)
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
@@ -1194,7 +1194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7231 },	-- Astor's Letter of Introduction
 					},
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1221,7 +1221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7294 },	-- Andron's Ledger
 					},
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1295,7 +1295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1999, {	-- Tools of the Trade
 					["sourceQuest"] = 1998,	-- Fenwick Thatros
 					["qg"] = 6467,	-- Mennet Carkad
-					["coord"] = { 83.2, 69, UNDERCITY },
+					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },

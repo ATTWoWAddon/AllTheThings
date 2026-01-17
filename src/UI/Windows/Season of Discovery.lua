@@ -1,4 +1,4 @@
-local appName, app = ...;
+local _, app = ...;
 
 ---@diagnostic disable: deprecated
 if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) or app.GameBuildVersion >= 20000 then return; end
@@ -16,7 +16,7 @@ app:CreateWindow("Season of Discovery", {
 	Commands = { "attsod" },
 	OnInit = function(self, handlers)
 		self.data = app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,

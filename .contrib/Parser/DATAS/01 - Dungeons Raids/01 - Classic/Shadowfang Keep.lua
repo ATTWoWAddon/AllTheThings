@@ -1501,7 +1501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1013, {	-- The Book of Ur
 					["qg"] = 2934,	-- Keeper Bel'dugur
-					["coord"] = { 54, 54.6, UNDERCITY },
+					["coord"] = { 54.0, 54.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,

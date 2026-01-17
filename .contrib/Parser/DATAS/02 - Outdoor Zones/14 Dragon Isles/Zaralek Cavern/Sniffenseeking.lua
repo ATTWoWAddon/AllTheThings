@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75393, {	-- Making Scents
-						["coord"] = { 58, 54.6, ZARALEK_CAVERN },
+						["coord"] = { 58.0, 54.6, ZARALEK_CAVERN },
 					}),
 					q(75996, {	-- Your Weight in Gold
 						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75621, {	-- Element Whispers
-						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
+						["coord"] = { 55.9, 52.0, ZARALEK_CAVERN },
 						["groups"] = {
 							i(205689),	-- Champion's Crystal
 						},

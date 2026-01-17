@@ -1,16 +1,7 @@
-11.2.0.61476
-faction(2657),	-- 11.2 Ethereum
-faction(2659),	-- The K'aresh Trust (Paragon)
-faction(2722),	-- Delves: Season 3
-faction(2739),	-- Delves: Coffer Key Shards Conversion
-11.2.7.63642
-faction(2662),	-- [PH] The Power of Friendship
-faction(2663),	-- Meerah
-faction(2664),	-- Flynn Fairwind
-faction(2665),	-- Lillistrasza
-faction(2666),	-- Roasts and Boasts
-faction(2766),	-- Brawl'gar Arena
-faction(2767),	-- Bizmo's Brawlpub
+1.14.1.41077
+faction(1041),	-- Frenzy
+11.1.5.59571
+faction(2689),	-- Flame's Radiance (Paragon)
 12.0.0.63534
 faction(2696),	-- Amani Tribe
 faction(2698),	-- Midnight

@@ -1396,7 +1396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(2, {	-- 0/10 Giant Silver Vein
 							["provider"] = { "i", 11405 },	-- Giant Silver Vein
-							["coord"] = { 68, 17, AZSHARA },
+							["coord"] = { 68.0, 17.0, AZSHARA },
 							["crs"] = {
 								6146,	-- Cliff Breaker
 								6147,	-- Cliff Thunderer
@@ -1406,7 +1406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
 							["provider"] = { "i", 11413 },	-- Nagmara's Filled Vial
 							["cost"] = { { "i", 11412, 1 } },	-- Nagmara's Vial
-							["coord"] = { 31, 49, UNGORO_CRATER },
+							["coord"] = { 31.0, 49.0, UNGORO_CRATER },
 						}),
 						i(11962, {	-- Manacle Cuffs
 							["timeline"] = { REMOVED_4_0_3 },

@@ -148,8 +148,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+					i(193232),	-- Deathchill Hide+
+					i(193233),	-- Deathchill Hide++
+					i(193234),	-- Deathchill Hide+++
+					i(193239),	-- Drygrate Scales+
+					i(193240),	-- Drygrate Scales++
+					i(193241),	-- Drygrate Scales+++
 					i(193475),	-- Masterwork Riding Crop
 					i(193495),	-- Savage Bow
+				})),
+			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					i(219895),	-- Deepfury Hide+
+					i(219896),	-- Deepfury Hide++
+					i(219897),	-- Deepfury Hide+++
 				})),
 			}),
 		}),
@@ -415,6 +429,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(444085),	-- Deepfury Hide (RECIPE!)
+				})),
+
+				-- 11.2.7
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+					r(1269498),	-- Snowfall Tribe Scare-Totem
 				})),
 			}),
 		}),

@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65271, {	-- Forging Connections
 					["sourceQuests"] = { 64951 },	-- The Road to Haven
 					["provider"] = { "n", 181931 },	-- Pelagos
-					["coord"] = { 34, 60.8, ZERETH_MORTIS },
+					["coord"] = { 34.0, 60.8, ZERETH_MORTIS },
 				}),
 				q(64953, {	-- Defending Haven
 					["sourceQuests"] = { 65271 },	-- Forging Connections
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65768, {	-- Our Forward Scouts
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.7, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.7, ZERETH_MORTIS },
 					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(190968),	-- Genesis Fields Report (QI!)
 						i(190969),	-- Provis Flora Report (QI!)
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65771, {	-- Favor of the First Ones
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 178015 },	-- Elder Zoor
-					["coord"] = { 34.8, 65, ZERETH_MORTIS },
+					["coord"] = { 34.8, 65.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(190976),	-- Enlightened Incense (QI!)
 						i(190749),	-- Temporal Cryptic Grips
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						65768,	-- Our Forward Scouts
 					},
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.6, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.6, ZERETH_MORTIS },
 				}),
 				q(64796, {	-- Scour The Sands
 					["sourceQuests"] = { 64794 },	-- Knowing is Half the Battle
@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64797, {	-- Harmony and Discord
 					["sourceQuests"] = { 64796 },	-- Scour The Sands
 					["provider"] = { "n", 182046 },	-- Shandris Feathermoon
-					["coord"] = { 48, 44.9, ZERETH_MORTIS },
+					["coord"] = { 48.0, 44.9, ZERETH_MORTIS },
 					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188024),	-- Anthemic Shoulders
 						i(188037),	-- Choral Amice
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64821, {	-- Nothing is True
 					["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 					["groups"] = {
 						i(187839),	-- Tonal Jammer
 					},
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64822, {	-- A Break in Communcation
 					["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				}),
 				q(64823, {	-- Doppelganger Duel
 					["sourceQuests"] = {
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						64822,	-- A Break in Communcation
 					},
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				}),
 				q(64824, {	-- Fighting For The Forge
 					["sourceQuests"] = { 64823 },	-- Doppelganger Duel
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64825, {	-- Seeking Haven
 					["sourceQuests"] = { 64824 },	-- Fighting For The Forge
 					["provider"] = { "n", 183717 },	-- Lady Jaina Proudmoore
-					["coord"] = { 57, 53.6, ZERETH_MORTIS },
+					["coord"] = { 57.0, 53.6, ZERETH_MORTIS },
 					["groups"] = {
 						i(190748),	-- Dimensional Cryptic Grips
 						i(190742),	-- Dimensional Enigmatic Footguards
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64218, {	-- Danger Near and Far
 					["sourceQuests"] = { 64825 },	-- Seeking Haven
 					["provider"] = { "n", 179611 },	-- Pelagos
-					["coord"] = { 35.2, 65, ZERETH_MORTIS },
+					["coord"] = { 35.2, 65.0, ZERETH_MORTIS },
 				}),
 				q(64219, {	-- A Mysterious Voice
 					["sourceQuests"] = { 64218 },	-- Danger Near and Far
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64223, {	-- Core of the Matter
 					["sourceQuests"] = { 64219 },	-- A Mysterious Voice
 					["provider"] = { "n", 179611 },	-- Pelagos
-					["coord"] = { 39.8, 78, ZERETH_MORTIS },
+					["coord"] = { 39.8, 78.0, ZERETH_MORTIS },
 				}),
 				q(64224, {	-- Seeking the Unknown
 					["sourceQuests"] = { 64223 },	-- Core of the Matter
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						64226,	-- Security Measures
 					},
 					["provider"] = { "n", 177958 },	-- Firim
-					["coord"] = { 34, 48.1, ZERETH_MORTIS },
+					["coord"] = { 34.0, 48.1, ZERETH_MORTIS },
 				}),
 				q(65149, {	-- Surveying Cyphers
 					["sourceQuests"] = { 64228 },	-- Now You May Speak
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65305, {	-- The Way Forward
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "n", 179611 },	-- Pelagos
-					["coord"] = { 34, 48, ZERETH_MORTIS },
+					["coord"] = { 34.0, 48.0, ZERETH_MORTIS },
 					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188019),	-- Anthemic Cuirass
 						i(188006),	-- Choral Vestments
@@ -326,12 +326,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65335, {	-- News from Oribos
 					["sourceQuests"] = { 65305 },	-- The Way Forward
 					["provider"] = { "n", 183677 },	-- Uther the Lightbringer
-					["coord"] = { 35, 64.7, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.7, ZERETH_MORTIS },
 				}),
 				q(64830, {	-- Enlisting the Enlightened
 					["sourceQuests"] = { 65335 },	-- News from Oribos
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.7, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.7, ZERETH_MORTIS },
 				}),
 				q(64833, {	-- Forging Unity from Diversity
 					["sourceQuests"] = { 64830 },	-- Enlisting the Enlightened
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64799, {	-- The Broken Crown
 					["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				}),
 				q(64800, {	-- Our Last Option
 					["sourceQuests"] = { 64799 },	-- The Broken Crown
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64937, {	-- You Light Up My Left
 					["sourceQuests"] = { 64936 },	-- Searching High and Low
 					["provider"] = { "n", 184949 },	-- Popopoc
-					["coord"] = { 48, 34, ZERETH_MORTIS },
+					["coord"] = { 48.0, 34.0, ZERETH_MORTIS },
 					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188022),	-- Anthemic Coif
 						i(188009),	-- Choral Slippers
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64879, {	-- A Monumental Discovery
 					["sourceQuests"] = { 65328 },	-- Arbiter in the Making
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 					["isBreadcrumb"] = true,
 				}),
 				q(64723, {	-- Restoration Porject
@@ -834,12 +834,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65249, {	-- The Jailer's Defeat
 					["sourceQuests"] = { 65329 },	-- Safe Haven
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				}),
 				q(65250, {	-- Prisoner of Interest
 					["sourceQuests"] = { 65249 },	-- The Jailer's Defeat
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 35, 64.8, ZERETH_MORTIS },
+					["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				}),
 				q(65260, {	-- A Long Walk
 					["sourceQuests"] = { 65250 },	-- Prisoner of Interest
@@ -849,12 +849,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65263, {	-- The Fate of Sylvanas
 					["sourceQuests"] = { 65260 },	-- A Long Walk
 					["provider"] = { "n", 183830 },	-- Arbiter Pelagos
-					["coord"] = { 55, 49.2, ORIBOS },
+					["coord"] = { 55.0, 49.2, ORIBOS },
 				}),
 				q(65297, {	-- Penance and Renewal
 					["sourceQuests"] = { 65263 },	-- The Fate of Sylvanas
 					["provider"] = { "n", 183830 },	-- Arbiter Pelagos
-					["coord"] = { 55, 49.2, ORIBOS },
+					["coord"] = { 55.0, 49.2, ORIBOS },
 				}),
 				q(66170,{	-- Silent Vigil
 					["sourceQuests"] = { 65297 },	-- Penance and Renewal
@@ -977,7 +977,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65350, {	-- Restore the Flow
 					["sourceQuests"] = { 65349 },	-- Lost Grace
 					["provider"] = { "n", 184537 },	-- Nadir
-					["coord"] = { 55, 50.3, ZERETH_MORTIS },
+					["coord"] = { 55.0, 50.3, ZERETH_MORTIS },
 					["groups"] = {
 						i(188199),	-- Locrian Swale (QI!)
 					},
@@ -985,12 +985,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65353, {	-- An Automa-free Diet
 					["sourceQuests"] = { 65349 },	-- Lost Grace
 					["provider"] = { "n", 184537 },	-- Nadir
-					["coord"] = { 55, 50.3, ZERETH_MORTIS },
+					["coord"] = { 55.0, 50.3, ZERETH_MORTIS },
 				}),
 				q(65448, {	-- A Return to Grace
 					["sourceQuests"] = { 65350 },	-- Restore the Flow
 					["provider"] = { "o", 375283 },	-- Percolation Array
-					["coord"] = { 74.1, 69, 2028 },
+					["coord"] = { 74.1, 69.0, 2028 },
 					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188026),	-- Anthemic Bracers
 						i(188012),	-- Choral Wraps
@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			q(66383, {	-- Legendary Assistance
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				["minReputation"] = { FACTION_THE_ENLIGHTENED, HONORED },	-- Assumption
 			}),
 			q(65774, {	-- The Catalyst Awakens
@@ -1072,7 +1072,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			q(65259, {	-- The Heart of the Sepulcher
 				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+				["coord"] = { 35.0, 64.7, ZERETH_MORTIS },
 			}),
 			q(65749, {	-- The Necessity Of Equipment
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			q(65324, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_0} }, {	-- Patterns Within Patterns
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				["repeatable"] = true,
 				["groups"] = {
 					i(190610, {	-- Tribute of the Enlightened Elders
@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 			}),
 			q(65256, {	-- Cluck, Cluck, Boom
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1200,7 +1200,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 			}),
 			q(64717, {	-- Materials of Creation
 				["description"] = "Has Forge-tap for the achievement",
@@ -1217,7 +1217,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 				["groups"] = {
 					i(189439),	-- Compilation Nodule (QI!)
 					i(189438),	-- Composition Mote (QI!)
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 				["groups"] = {
 					i(189449),	-- Jiro Scan (QI!)
 				},
@@ -1316,7 +1316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			q(66042, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0} }, {	-- Patterns Within Patterns
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["coord"] = { 35.0, 64.8, ZERETH_MORTIS },
 				["groups"] = {
 					i(191139, {	-- Tribute of the Enlightened Elders
 						["sym"] = {

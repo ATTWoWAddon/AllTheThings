@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["groups"] = {
 					objective(1, {	-- 0/1 Alysra slain
 						["provider"] = { "n", 54314 },	-- Alysra
-						["coord"] = { 49, 19.4, MOUNT_HYJAL },
+						["coord"] = { 49.0, 19.4, MOUNT_HYJAL },
 					}),
 				},
 			}),

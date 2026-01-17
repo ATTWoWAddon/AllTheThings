@@ -709,6 +709,7 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 81443,	-- Krixel Pinchwhistle
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
+						["groups"] = { i(115533) },	-- Vial of Refined Serum (QI!)
 					}),
 					q(34939, {  -- Declawing The Bloodmane
 						["sourceQuests"] = {
@@ -749,6 +750,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 35285,	-- Follow that Hotrod!
 						["qg"] = 81443,	-- Krixel Pinchwhistle
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
+						["groups"] = { i(115475) },	-- Vial of Untested Serum (QI!)
 					}),
 					q(35298, {	-- Flame On
 						["sourceQuests"] = {
@@ -1317,6 +1319,20 @@ root(ROOTS.Zones, {
 						["qg"] = 81972,	-- Kimzee Pinchwhistle
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
 						["groups"] = {
+							o(231811, {	-- Serviceable Gear
+								["coords"] = {
+									{ 57.9, 90.5, SPIRES_OF_ARAK },
+									{ 58.3, 89.7, SPIRES_OF_ARAK },
+									{ 58.9, 88.4, SPIRES_OF_ARAK },
+									{ 59.4, 89.9, SPIRES_OF_ARAK },
+									{ 59.7, 87.4, SPIRES_OF_ARAK },
+									{ 60.0, 89.4, SPIRES_OF_ARAK },
+									{ 60.6, 88.7, SPIRES_OF_ARAK },
+								},
+								["groups"] = { i(112634 ) },	-- Serviceable Gear (QI!)
+							}),
+							i(112698),	-- G-14 Buster Rocket (QI!)
+							--
 							i(118077),	-- Fungal Resistant Chainmail Boots
 							i(118075),	-- Fungal Resistant Plate Boots
 							i(118076),	-- Fungal Resistant Slippers

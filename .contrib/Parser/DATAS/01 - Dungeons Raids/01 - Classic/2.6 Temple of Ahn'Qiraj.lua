@@ -5,7 +5,7 @@ local ANACHRONOS_COORD;
 -- #if AFTER TBC
 ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
-ANACHRONOS_COORD = { 65, 50, TANARIS };
+ANACHRONOS_COORD = { 65.0, 50.0, TANARIS };
 -- #endif
 local SILITHID_ROYALTY_SHARED_DROPS = COMMON_BOSS_DROPS;
 -- #if ANYCLASSIC
@@ -14,16 +14,16 @@ SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
-		-- TODO: de = "",
+		de = "Adel der Silithiden",
 		es = "Realeza Silitida",
 		mx = "Realeza Silitida",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		fr = "Famille royale silithide",
+		-- it = "Silithid Royalty",
+		ko = "실리시드 왕실",
+		pt = "Realeza Silítidea",
+		ru = "Силитидская знать",
+		cn = "安其拉三宝",
+		tw = "異種蠍皇族",
 	},
 });
 -- #endif
@@ -1329,8 +1329,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
-					{ "i", 21762, 1, PHASE_ONE },	-- Greater Scarab Coffer Key [pre-4.3]
-					{ "i", 76402, 1, CATA_PHASE_ONE },	-- Greater Scarab Coffer Key [4.3]
+					-- #if BEFORE 4.3.0
+					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
+					-- #else
+					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+					-- #endif
 				},
 				["groups"] = {
 					i(20876),	-- Idol of Death

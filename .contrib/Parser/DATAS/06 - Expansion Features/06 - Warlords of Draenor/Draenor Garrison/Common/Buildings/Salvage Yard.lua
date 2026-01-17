@@ -17,10 +17,28 @@ root(ROOTS.ExpansionFeatures,
 						q(37086, {	-- Salvaging the Situation
 							["qg"] = 77378,	-- Hennick Helmsley
 							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 46.4, 59.4, LUNARFALL },
+								{ 50.4, 57.4, LUNARFALL },
+								{ 51.4, 63.2, LUNARFALL },
+							},
+							["groups"] = {
+								i(118471),	-- Salvaged Parts (QI!)
+								i(118473),	-- Small Sack of Salvaged Goods (QI!)
+							},
 						}),
 						q(37045, {	-- Salvaging the Situation
 							["qg"] = 79857,	-- Lumba the Crusher
 							["races"] = HORDE_ONLY,
+							["coords"] = {
+								{ 48.0, 32.4, FROSTWALL },
+								{ 53.0, 41.4, FROSTWALL },
+								{ 53.8, 36.4, FROSTWALL },
+							},
+							["groups"] = {
+								i(118471),	-- Salvaged Parts (QI!)
+								i(118473),	-- Small Sack of Salvaged Goods (QI!)
+							},
 						}),
 					}),
 					i(139594),	-- Salvage Crate

@@ -1,6 +1,6 @@
 if C_TransmogCollection and C_TransmogCollection.GetIllusions then
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local L = app.L;
 
 -- Global locals

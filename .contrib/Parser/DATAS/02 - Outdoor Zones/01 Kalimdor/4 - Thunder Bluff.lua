@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 46, 58.2, MULGORE },
+						{ 46.0, 58.2, MULGORE },
 						-- #else
 						{ 51.2, 29.0, THE_BARRENS },
 						-- #endif
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1845, {	-- Brutal Helm
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["qg"] = 6410,	-- Orm Stonehoof
-					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["coord"] = { 39.0, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1844, {	-- Chimaeric Horn
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["qg"] = 6410,	-- Orm Stonehoof
-					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["coord"] = { 39.0, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 1770 },	-- Flame of Uzel
 								{ "i", 5810 },	-- Fresh Carcass
 							},
-							["coord"] = { 37, 68, ALTERAC_MOUNTAINS },
+							["coord"] = { 37.0, 68.0, ALTERAC_MOUNTAINS },
 							["cr"] = 4504,	-- Frostmaw
 						}),
 						-- #if BEFORE 4.0.3
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
 					-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44, 44.6, THUNDER_BLUFF },
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1130, {	-- Melor Sends Word
 					["qg"] = 3387,	-- Jorn Skyseer
-					["coord"] = { 44.8, 59, THE_BARRENS },
+					["coord"] = { 44.8, 59.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -538,7 +538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 2995 },	-- Tal
 						{ "i", 16283 },	-- Ahanu's Leather Goods
 					},
-					["coord"] = { 46.8, 50, THUNDER_BLUFF },
+					["coord"] = { 46.8, 50.0, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
 						MULGORE,
@@ -621,7 +621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 206157 },	-- Seaforium Mining Charge
 								{ "o", 403041 },	-- Blasting Supplies
 							},
-							["coord"] = { 61, 47, MULGORE },
+							["coord"] = { 61.0, 47.0, MULGORE },
 						}),
 					},
 				})),
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Place the Toxic Fogger
 							["provider"] = { "i", 5638 },	-- Toxic Fogger
-							["coord"] = { 66, 45, STONETALON_MOUNTAINS },
+							["coord"] = { 66.0, 45.0, STONETALON_MOUNTAINS },
 						}),
 					},
 				}),
@@ -758,7 +758,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Etched Phial
 							["provider"] = { "i", 5868 },	-- Filled Etched Phial
-							["coord"] = { 60, 72, ASHENVALE },
+							["coord"] = { 60.0, 72.0, ASHENVALE },
 							["cost"] = {{ "i", 5867, 1 }},	-- Etched Phial
 						}),
 						-- #if BEFORE 4.0.3
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5869 },	-- Cloven Hoof
 								{ "o", 20807 },	-- Ancient Brazier
 							},
-							["coord"] = { 42, 35, THOUSAND_NEEDLES },
+							["coord"] = { 42.0, 35.0, THOUSAND_NEEDLES },
 						}),
 						i(6739, {	-- Cliffrunner's Aim
 							["timeline"] = { REMOVED_4_0_3 },

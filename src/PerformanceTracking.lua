@@ -8,8 +8,8 @@ local appName, app = ...;
 -- Tables should represent a scope nested within their parent table's scope, etc.
 -- Functions should use their containing Table scope with a key name
 
-local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable, getmetatable, tostring
-	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable, getmetatable, tostring
+local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable, getmetatable, tostring,rawget
+	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable, getmetatable, tostring,rawget
 
 local debug = false
 print("Perf:Loading:debug:",debug)
@@ -83,15 +83,17 @@ end
 local function IgnorePerf(o, scope)
 	if not o then return true end
 	if type(o) == "table" then
+		if rawget(o, "__noperf") then print("Perf.Ignore: NoPerf!",scope) return true end
 		local mt = getmetatable(o)
 		if mt and mt.__index and type(mt.__index) == "function" then return end
 		if o.IsForbidden then print("Perf.Ignore: Game Object!",scope,o:GetName()) return true end
+		if scopes[o] then print("Perf.Ignore: Duplicate Perf!",scope) return true end
 	end
 end
 
--- Attempts to get the performance scope for the table. If it does not exist, it will be set using the provided 'scope'
-local function GetPerfForScope(t, scope)
-	return scopes[t] or (scope and scopes.__new(t, scope)) or nil
+-- Attempts to get the performance scope for the obj. If it does not exist, it will be set using the provided 'scope'
+local function GetPerfForScope(obj, scope)
+	return scopes[obj] or (scope and scopes.__new(obj, scope)) or nil
 end
 
 -- Returns the Function wrapped in a performance capture function.
@@ -123,7 +125,7 @@ local function CaptureTable(table, scope)
 	if IgnorePerf(table, scope) then return table end
 	GetPerfForScope(table, scope or tostring(table))
 
-	-- print("Perf.T:",scope)
+	-- print("Perf.T:",scope,table,getmetatable(table))
 	local keys = {}
 	for key,_ in pairs(table) do
 		keys[#keys + 1] = key
@@ -140,8 +142,19 @@ local function CaptureTable(table, scope)
 end
 
 local perf_meta_capture
-local function AutoCaptureTable(t, scope)
+local function AutoCaptureTable(t, scope, host)
 	if IgnorePerf(t, scope) then return t end
+	-- If this table has a host table, then attach the scope from the host table if the host is currently performance-tracked
+	if host then
+		local hostperf = GetPerfForScope(host)
+		if not hostperf then
+			-- print("Perf.A.IgnoreHost",t,scope,host)
+			return
+		end
+		local hostscope = hostperf.__scope
+		print("Perf.A.host",hostscope,".",scope)
+		scope = hostscope.."."..scope
+	end
 	CaptureTable(t, scope)
 	local perf = GetPerfForScope(t, scope or tostring(t))
 
@@ -149,35 +162,48 @@ local function AutoCaptureTable(t, scope)
 	local mt = getmetatable(t)
 	if mt then
 		if mt.__newindex then
-			print("Perf.A.FAIL",scope,perf.__scope)
+			print("Perf.A.FAIL",scope,perf.__scope,mt,"=>",mt.__newindex)
 		else
 			print("Perf.A.__newindex",scope,perf.__scope)
 			mt.__newindex = perf_meta_capture.__newindex
 		end
 	else
-		print("Perf.A",scope,perf.__scope)
-		return setmetatable(t, perf_meta_capture)
+		print("Perf.A",scope)
+		setmetatable(t, perf_meta_capture)
 	end
+	return t
 end
 
 perf_meta_capture = {
 	-- when tracking performance, assignment of a new value into the table should automatically wrap all
 	-- the functions so that the performance wrap versions are used afterwards when referenced
 	__newindex = function(t, key, val)
-		if type(key) ~= "string" or IgnorePerf(val) then
+		if IgnorePerf(val) then
+			rawset(t, key, val)
+			return
+		end
+		local keytype = type(key)
+		if keytype ~= "string" and keytype ~= "number" then
 			rawset(t, key, val)
 			return
 		end
 
-		local scope = (GetPerfForScope(t) or GetPerfForScope(t, "NOSCOPE")).__scope
+		local perfkey
+		-- for number keys, we need to track the unique val as the scope rather than the key's value, since the same function
+		-- may get repeatedly assigned into the same table at different times
+		if keytype == "number" then
+			perfkey = tostring(val)
+		else
+			perfkey = key
+		end
+
 		if type(val) == "table" then
-			local tscope = scope.."."..key
-			local pt = CaptureTable(val, tscope)
-			rawset(t, key, pt)
-			AutoCaptureTable(pt, tscope)
+			AutoCaptureTable(val, perfkey, t)
+			rawset(t, key, val)
 			return
 		elseif type(val) == "function" then
-			local pf = CaptureFunction(val, key, scope)
+			local scope = (GetPerfForScope(t) or GetPerfForScope(t, "NOSCOPE")).__scope
+			local pf = CaptureFunction(val, perfkey, scope)
 			if pf then
 				rawset(t, key, pf)
 				return

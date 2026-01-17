@@ -12,6 +12,6 @@ NEW_CHARACTER = createHeader({
 		pt = "Novo personagem",
 		ru = "Новый персонаж",
 		cn = "新角色",
-		-- TODO: tw = "",
+		-- tw = "新角色",
 	},
 });

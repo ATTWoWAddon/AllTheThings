@@ -1159,37 +1159,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(19466, {	-- Oh My God, They Were Clutchmates
 			["timeline"] = { ADDED_10_2_6 },
 			-- Meta Achievement
-			-- #if BEFORE 11.0.7
 			["sym"] = {{"meta_achievement",
+				18615,	-- Legend of the Multiverse
+				16539,	-- In High Esteem
+				16494,	-- Loyalty to the Prince
+				16537,	-- Maximum Power!
+				16760,	-- The Obsidian Bloodline
+				17427,	-- Winterpelt Conversationalist
+				-- #if BEFORE 11.0.7
 				16522,	-- A True Explorer
 				16530,	-- Ally of the Flights
-				16539,	-- In High Esteem
 				16529,	-- Joining the Community
 				16528,	-- Joining the Khansguard
-				18615,	-- Legend of the Multiverse
-				16494,	-- Loyalty to the Prince
-				16537,	-- Maximum Power!
-				16760,	-- The Obsidian Bloodline
 				17763,	-- There's No Place Like Loamm
 				19235,	-- Warden of the Dream
-				17427,	-- Winterpelt Conversationalist
-			}},
-			-- #else
-			["sym"] = {{"meta_achievement",
+				-- #else
 				41174,	-- A True Explorer
-				41174,	-- Ally of the Flights
-				16539,	-- In High Esteem
+				41182,	-- Ally of the Flights
 				41181,	-- Joining the Community
 				41180,	-- Joining the Khansguard
-				18615,	-- Legend of the Multiverse
-				16494,	-- Loyalty to the Prince
-				16537,	-- Maximum Power!
-				16760,	-- The Obsidian Bloodline
 				41183,	-- There's No Place Like Loamm
 				41177,	-- Warden of the Dream
-				17427,	-- Winterpelt Conversationalist
+				-- #endif
 			}},
-			-- #endif
 		}),
 		ach(16549, {	-- Popular Around the Isles
 			-- Meta Achievement

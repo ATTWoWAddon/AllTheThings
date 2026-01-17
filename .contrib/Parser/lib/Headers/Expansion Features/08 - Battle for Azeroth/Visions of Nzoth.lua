@@ -7,8 +7,8 @@ VISIONS_OF_NZOTH = createHeader({
 		-- #else
 		en = "Visions of N'Zoth",
 		de = "Visionen von N'Zoth",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Visiones de N'Zoth",
+		mx = "Visiones de N'Zoth",
 		fr = "Visions de N'Zoth",
 		-- TODO: it = "",
 		-- TODO: ko = "",

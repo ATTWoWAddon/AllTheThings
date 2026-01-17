@@ -8,11 +8,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42503),	-- Artifact, Remixed III
 		ach(42565, {	-- Bringing Order to the Isles
 		-- Added with Phase3 Legion Remix Release -- Gold 5th Nov 2025
-			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.",
+			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
+			["OnTooltip"] = [[function(t, tooltipInfo)
+				tinsert(tooltipInfo, { left = " " });
+				local index = #tooltipInfo + 1;
+				local progress,total = 0,0;
+				for i,id in pairs({-288,-272,3,7,6,0,8,4,9,5,2,1}) do
+					local cl = _.CreateCharacterClass(i);
+					local a,b,c = GetAchievementCriteriaInfoByID(42565,108648+id)
+					tinsert(tooltipInfo, { left = "|T" .. cl.icon .. ":0|t " .. cl.text, right = _.GetCollectionIcon(c) });
+					if c then progress = progress + 1; end
+					total = total + 1;
+				end
+				tinsert(tooltipInfo, index, { left = "|cffffffffYour Account Completion Progress|r", right = _.Modules.Color.GetProgressColorText(progress, total) });
+			end]],
 			["groups"] = {
 				crit(108652, {["_quests"] = { 45354 }}),	-- Dispersion of the Discs (Mage)
 				crit(108656, {["_quests"] = { 46792 }}),	-- Gathering of the Storms (Shaman)
-				crit(108655, {["_quests"] = { 46089 }}),	-- Hiding In Plain Sight (Rogue)
+				crit(108655, {["_quests"] = { 46089,46178 }}),	-- Hiding In Plain Sight [A]/[H] (Rogue)
 				crit(108651, {["_quests"] = { 46337 }}),	-- Night of the Wilds (Hunter)
 				crit(108376, {["_quests"] = { 45770 }}),	-- Stirring in the Shadows (Paladin)
 				crit(108648, {["_quests"] = { 46813 }}),	-- The Lost Glacier (Death Knight)
@@ -73,27 +86,42 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				1642,	-- Val'sharah (Scenario)
 			},
 			["groups"] = {
-				i(250404, {	-- Hanging Felsteel Chain (DECOR!)
-					["timeline"] = { ADDED_11_2_7 },
-				}),
 				i(250622, {	-- Vertical Felsteel Chain (DECOR!)
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 			},
 		}),
+		ach(11065, {	-- It All Makes Sense Now (Originally under Legion PreLaunch Event)
+			["description"] = "Locate one of the many Doomsayers in Dalaran (Legion Remix).\nSpeak with them and take a pamphlet.\nNormally there is a 20-minute cooldown between acquiring pamphlets, but you circumvent that with the death mechanic:\n\nFind a Doomsayer near a graveyard.\nFly up into the sky and then fall to the ground to die.\nRelease spirit and talk to the Spirit Healer to take Resurrection sickness.\nFly back to the Doomsayer and talk to him again for a new pamphlet.\nRepeat until done.",
+			["maps"] = { LEGION_DALARAN, STORMWIND_CITY, ORGRIMMAR },
+		}),
 		ach(42593),	-- Pillars of Creation
 		ach(61339, {	-- Putting the Finite in Infinite
-			["description"] = "Earned upon reaching 999 Infinite Power or completing a +49 or higher Keystone in time.",
+			["description"] = "Earned upon completing a +49 or higher Keystone in time.",	-- There is some reaching 999 Infinite Power stuff, but everyone will do a dungeon at +49 before reaching 999 power
+			["maps"] = {
+				751,	-- Black Rook Hold
+				845,	-- Cathedral of Eternal Night
+				761,	-- Court of Stars
+				733,	-- Darkheart Thicket
+				713,	-- Eye of Azshara
+				703,	-- Halls of Valor
+				706,	-- Maw of Souls
+				731,	-- Neltharion's Lair
+				809,	-- Return to Karazhan
+				903,	-- Seat of the Triumvirate
+				749,	-- The Arcway
+				710,	-- Vault of the Wardens
+			},
 		}),
 		ach(42313),	-- Remixing Time
 		ach(60959),	-- Tenured in the Timeways I
 		ach(60960),	-- Tenured in the Timeways II
 		ach(60961),	-- Tenured in the Timeways III
 		ach(60935, {	-- Tenured in the Timeways IV
-			title(646),	-- Chronoscholar (TITLE!)
+			title(646),	-- Chronoscholar
 		}),
 		ach(42301, {	-- Timerunner
-			title(551),	-- Timerunner (TITLE!)
+			title(551),	-- Timerunner
 		}),
 		ach(42685, {	-- Timerunner: Death Knight
 			i(252954),	-- Felscorned Reins of the Vilebrood Vanquisher (MOUNT!)

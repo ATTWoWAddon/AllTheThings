@@ -1,4 +1,4 @@
-1.14.3.42926
+﻿1.14.3.42926
 61544@@@Orphan Spell Visual Invisible Holder
 2.5.5.64508
 255994@@@Exodar Replica
@@ -237,6 +237,8 @@
 245603@@@Sa'bak's Favored
 3.80.0.64393
 257025@@@Star Fragment
+3.80.0.64859
+54730@@@Gregarious Grell
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -291,7 +293,6 @@
 54491@@@Darkmoon Monkey
 54539@@@Alliance Balloon
 54541@@@Horde Balloon
-54730@@@Gregarious Grell
 54745@@@Sand Scarab
 55187@@@Darkmoon Balloon
 55215@@@Lumpy
@@ -23266,6 +23267,8 @@
 257174@@@Dragonscale Researcher
 257178@@@Vulpera Mixologist
 257279@@@Anduin Wrynn
+11.2.7.64978
+251511@@@Heartglow Listener
 12.0.0.63534
 143622@@@Ancient Imp
 222593@@@Emerald Sporbit
@@ -24149,3 +24152,38 @@
 259821@@@Sound Stalker - 12.0 Raid - Voidspire - Boss 1 - March of the Endless
 259830@@@Silvermoon's Arcane Defender
 259831@@@Arcanovoid Construct
+12.0.0.64975
+234064@@@Dreaded Voidwalker
+234065@@@Hollowsoul Shredder
+237357@@@Anduin Lothar
+241326@@@Arcane Magister
+241444@@@Runed Spellbreaker
+246417@@@Commander Koruth Mountainfist
+257161@@@Blazing Pyromancer
+259847@@@Misha
+12.0.1.64889
+236594@@@Zul'jan
+236604@@@Lady Liadrin
+236659@@@Zul'jarra
+236734@@@Arator
+237402@@@Lightbloom Petalwing
+240545@@@Unbound Wraith
+240857@@@Manifestation of Midnight
+241082@@@Torundo the Grizzled
+241303@@@Kul'amara the Fierce
+244562@@@Tak'lejo
+245589@@@Lilaju
+245979@@@Pel'na Torntusk
+250495@@@Bartender Bob
+250786@@@Manifestation of Midnight
+251671@@@Lightbloated Magister
+253382@@@Mibaza
+255616@@@Void Portal
+256103@@@Devouring Darkcaller
+257268@@@Netherwyrm
+259918@@@Devouring Darkcaller
+260196@@@Lightbloom Petalwing
+260197@@@Orweyna
+260198@@@Arator
+12.0.1.64914
+253164@@@Guard

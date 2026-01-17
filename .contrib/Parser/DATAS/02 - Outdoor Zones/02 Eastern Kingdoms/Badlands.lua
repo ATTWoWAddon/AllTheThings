@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -383,7 +383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2203, {	-- Badlands Reagent Run II
 					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
 					["races"] = HORDE_ONLY,
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
-					["coord"] = { 6.4, 47, BADLANDS },
+					["coord"] = { 6.4, 47.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
-					["coord"] = { 3.4, 48, BADLANDS },
+					["coord"] = { 3.4, 48.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1281,7 +1281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(710, {	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1294,7 +1294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(711, {	-- Study of the Elements: Rock (2/3)
 					["sourceQuest"] = 710,	-- Study of the Elements: Rock (1/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(712, {	-- Study of the Elements: Rock (3/3)
 					["sourceQuest"] = 711,	-- Study of the Elements: Rock (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						712,	-- Study of the Elements: Rock (3/3)
 					},
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
@@ -1798,7 +1798,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(778, {	-- This Is Going to Be Hard (3/3)
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard (2/3)
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 25.8, 45, BADLANDS },
+					["coord"] = { 25.8, 45.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2202, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ULDAMAN },
 					["races"] = HORDE_ONLY,
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
-					["coord"] = { 5.8, 48, BADLANDS },
+					["coord"] = { 5.8, 48.0, BADLANDS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
@@ -2073,7 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 58, 54, BADLANDS },
+					["coord"] = { 58.0, 54.0, BADLANDS },
 					["groups"] = {
 						i(216951),	-- Slippery Dalaran Relic
 					},

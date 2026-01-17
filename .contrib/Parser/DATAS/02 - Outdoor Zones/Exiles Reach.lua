@@ -1076,7 +1076,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
 			q(90842, {	-- Home Is Where the Hearth Is
@@ -1084,7 +1083,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
 			q(90843, {	-- Aiding the Dragon Isles
@@ -1092,7 +1090,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 244496 },	-- Kalecgos
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { SHAMAN },
 				["races"] = HORDE_ONLY,
 			}),
 

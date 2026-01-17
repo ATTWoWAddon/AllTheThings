@@ -20,23 +20,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 47.04, 73.84, EMERALD_DREAM },
 					{ 48.80, 74.51, EMERALD_DREAM },
 					{ 48.85, 76.55, EMERALD_DREAM },
-					{ 53, 66, EMERALD_DREAM },
+					{ 53.0, 66.0, EMERALD_DREAM },
 				},
 			}),
 			pet(4276, {	-- Fol'ya Pup (PET!)
 				["coords"] = {
-					{ 54, 64, EMERALD_DREAM },
-					{ 47, 47, EMERALD_DREAM },
+					{ 54.0, 64.0, EMERALD_DREAM },
+					{ 47.0, 47.0, EMERALD_DREAM },
 				},
 			}),
 			pet(4278, {	-- Leyhart (PET!)
 				["coords"] = {
-					{ 59, 66, EMERALD_DREAM },
+					{ 59.0, 66.0, EMERALD_DREAM },
 				},
 			}),
 			pet(4280, {	-- Pewling (PET!)
 				["coords"] = {
-					{ 59, 67, EMERALD_DREAM },
+					{ 59.0, 67.0, EMERALD_DREAM },
 				},
 			}),
 			pet(4302, {	-- Pale Slumbertooth (PET!)
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			pet(4277, {	-- Sapnibbler (PET!)
 				["coords"] = {
-					{ 56, 70, EMERALD_DREAM },
+					{ 56.0, 70.0, EMERALD_DREAM },
 				},
 			}),
 			pet(4279, {	-- Slumbertooth (PET!)

@@ -126,7 +126,9 @@ L.BREADCRUMBS = "Breadcrumbs";
 L.BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
 L.CACHED_RECIPES_1 = "Cached ";
 L.CACHED_RECIPES_2 = " known recipes!";
+L.CAMPSITE_DESC = "Click this button to select a random campsite based on what you're missing.";
 L.CAMPSITE_ID = "Campsite ID";
+L.CAMPSITES = WARBAND_SCENES;
 L.CAMPSITES_CHECKBOX = WARBAND_SCENES;
 L.CAMPSITES_CHECKBOX_TOOLTIP = "Enable this option to track warband campsite completion.";
 L.CATALYST = "Catalyst";
@@ -218,8 +220,10 @@ L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your c
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
+L.DECOR = BINDING_TAG_DECOR;
 L.DECOR_CHECKBOX = CATALOG_SHOP_TYPE_DECOR;
 L.DECOR_CHECKBOX_TOOLTIP = "Enable this option to track warband decor completion.";
+L.DECOR_DESC = "Click this button to select a random decor based on what you're missing.";
 L.DECOR_ID = "Decor ID";
 L.DELETE_CHARACTER = "Right Click to Delete this Character";
 L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
@@ -313,12 +317,15 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Enable this setting if you want to 
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
 L.FILTERS_PAGE = "Filters";
+L.FLIGHT_PATH_DESC = "Click this button to select a random flight path based on what you're missing.";
 L.FLIGHT_PATH_ID = "Flight Path ID";
 L.FLIGHT_PATHS = "Flight Paths";
 L.FLIGHT_PATHS_CHECKBOX = "Flight Paths";
 L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
 L.FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
+L.FOLLOWER_DESC = "Click this button to select a random follower based on what you're missing.";
 L.FOLLOWER_ID = "Follower ID";
+L.FOLLOWERS = GARRISON_FOLLOWERS;
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Followers & Companions";
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by " .. SHIFT_KEY_TEXT .. " clicking the header for this to be detected.";
@@ -506,6 +513,8 @@ L.OBJECT_TYPE = "Object Type";
 L.OBJECTIVES = "Objectives";
 L.ONLY_NOT_TRASH = "Filter Trash Items";
 L.ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.";
+L.ONLY_OBTAINABLE_CHECKBOX = "Only Obtainable";
+L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "Enable this option if you want to see only obtainable shared appearances.";
 L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
 L.ONLY_RWP = "Only RWP";
@@ -589,7 +598,7 @@ L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 L.QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
 L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
 L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
+L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
 L.QUESTS_CHECKBOX = QUESTS_LABEL;
 L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
@@ -723,7 +732,7 @@ L.SHOW_RECIPES_CHECKBOX = "Show Recipes";
 L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
 L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
-L.SHOW_SKYRIDING_CHECKBOX = "Skyriding";
+L.SHOW_SKYRIDING_CHECKBOX = "Dragonriding";
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Skyriding within the game.";
 L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by " .. SHIFT_KEY_TEXT .. " clicking on an ATT window.";
@@ -1552,19 +1561,19 @@ localize(L.EVENT_REMAPPING, {
 
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(242, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=5,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=1,["year"]=2028})
 });
 _.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(444, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
@@ -2746,6 +2755,7 @@ local ObjectNames = {
 	[2743] = "Carved Stone Urn",
 	[2744] = "Giant Clam",
 	[2842] = "Pillar of Diamond",
+	[2847] = "Tattered Chest",
 	[2848] = "Pillar of Opal",
 	[2858] = "Pillar of Amethyst",
 	[2866] = "Firebloom",
@@ -4222,6 +4232,7 @@ local ObjectNames = {
 	[202619] = "Flame Blossom",
 	[202648] = "Kul Tiras Treasure",
 	[202652] = "Twilight Supplies",
+	[202655] = "Troll Archaeology Find",
 	[202697] = "Eye of Twilight",
 	[202701] = "Outhouse Hideout",
 	[202702] = "Stonebloom",
@@ -4281,6 +4292,8 @@ local ObjectNames = {
 	[203061] = "Stormwind Locker",
 	[203066] = "Twilight Arms Crate",
 	[203067] = "Twilight Anvil",
+	[203071] = "Night Elf Archaeology Find",
+	[203078] = "Nerubian Archaeology Find",
 	[203088] = "BD-816 War Apparatus",
 	[203090] = "Sunken Treasure Chest",
 	[203091] = "Ogre Outhouse",
@@ -4412,6 +4425,7 @@ local ObjectNames = {
 	[204279] = "Spool of Rope",
 	[204280] = "Bottle of Whiskey",
 	[204281] = "Worm Mound",
+	[204282] = "Dwarf Archaeology Find",
 	[204284] = "Stormwind Lobster Trap",
 	[204296] = "Chalky Crystal Formation",
 	[204297] = "Chalky Crystal Formation",
@@ -4613,6 +4627,7 @@ local ObjectNames = {
 	[206833] = "Twilight Element of Earth",
 	[206834] = "Twilight Element of Fire",
 	[206835] = "Twilight Element of Water",
+	[206836] = "Fossil Archaeology Find",
 	[206839] = "The Light of Souls",
 	[206853] = "Obsidian-Flecked Mud",
 	[206881] = "Slumber Sand",
@@ -4639,6 +4654,10 @@ local ObjectNames = {
 	[207182] = "Humbert's Sword",
 	[207183] = "Humbert's Pants",
 	[207184] = "Humbert's Helm",
+	[207187] = "Orc Archaeology Find",
+	[207188] = "Draenei Archaeology Find",
+	[207189] = "Vrykul Archaeology Find",
+	[207190] = "Tol'vir Archaeology Find",
 	[207259] = "Induction Samophlange",
 	[207279] = "Warchief's Command Board",
 	[207281] = "Atulhet's Record Fragment",
@@ -5502,6 +5521,7 @@ local ObjectModels = {
 	[2743] = 199751,
 	[2744] = 196998,
 	[2842] = 199976,
+	[2847] = 219372,
 	[2848] = 199976,
 	[2858] = 199976,
 	[2866] = 219452,
@@ -6942,6 +6962,7 @@ local ObjectModels = {
 	[202619] = 219452,
 	[202648] = 196988,
 	[202652] = 196632,
+	[202655] = 511906,
 	[202697] = 192702,
 	[202701] = 190617,
 	[202702] = 201351,
@@ -7000,6 +7021,8 @@ local ObjectModels = {
 	[203061] = 341870,
 	[203066] = 359128,
 	[203067] = 189642,
+	[203071] = 511900,
+	[203078] = 511890,
 	[203088] = 311821,
 	[203090] = 219372,
 	[203113] = 200886,
@@ -7123,6 +7146,7 @@ local ObjectModels = {
 	[204279] = 198422,
 	[204280] = 304794,
 	[204281] = 189528,
+	[204282] = 511904,
 	[204284] = 243108,
 	[204296] = 370321,
 	[204297] = 370330,
@@ -7318,6 +7342,7 @@ local ObjectModels = {
 	[206833] = 317821,
 	[206834] = 317822,
 	[206835] = 317823,
+	[206836] = 511898,
 	[206839] = 196689,
 	[206853] = 189528,
 	[206881] = 202405,
@@ -7343,6 +7368,10 @@ local ObjectModels = {
 	[207182] = 189687,
 	[207183] = 199371,
 	[207184] = 197873,
+	[207187] = 511902,
+	[207188] = 511888,
+	[207189] = 511892,
+	[207190] = 511896,
 	[207259] = 197768,
 	[207279] = 418794,
 	[207281] = 202596,
@@ -8228,6 +8257,9 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Bibliothek",
 	[-363] = "Waffenkammer",
 	[-364] = "Kathedrale",
+	[-365] = "Haupttor",
+	[-366] = "Dienstboteneingang",
+	[-367] = "Verteidiger der Atal'ai",
 	[-368] = "Sturm auf die Zitadelle",
 	[-369] = "Die Seuchenwerke",
 	[-371] = "Die Frostschwingenhallen",
@@ -8253,6 +8285,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Saisonfisch: Sommerbarsch",
 	[-587] = "Saisonfisch: Winterkalmar",
 	[-588] = "Anglerwettbewerb im Schlingendorntal",
+	[-611] = "Adel der Silithiden",
 	[-659] = "Zwielicht-Assistent",
 	[-660] = "Zwielicht-Duo",
 	[-661] = "Zwielichtzone",
@@ -8404,6 +8437,7 @@ localize(ObjectNames, {
 	[2743] = "Verzierte Steinurne",
 	[2744] = "Riesenmuschel",
 	[2842] = "Diamantsäule",
+	[2847] = "Ramponierte Truhe",
 	[2848] = "Opalsäule",
 	[2858] = "Amethystsäule",
 	[2866] = "Feuerblüte",
@@ -9801,6 +9835,7 @@ localize(ObjectNames, {
 	[202619] = "Flammenblüte",
 	[202648] = "Schatz von Kul Tiras",
 	[202652] = "Versorgungsgüter des Schattenhammers",
+	[202655] = "Archäologischer trollischer Fund",
 	[202697] = "Auge des Zwielichts",
 	[202701] = "Plumpskloversteck",
 	[202702] = "Steinblüte",
@@ -9857,6 +9892,8 @@ localize(ObjectNames, {
 	[203061] = "Sturmwindspind",
 	[203066] = "Waffenkiste des Schattenhammers",
 	[203067] = "Amboss des Schattenhammers",
+	[203071] = "Archäologischer nachtelfischer Fund",
+	[203078] = "Archäologischer nerubischer Fund",
 	[203088] = "BD-816 Kriegsmaschine",
 	[203090] = "Versunkene Schatzkiste",
 	[203113] = "Pulverfass",
@@ -9975,6 +10012,7 @@ localize(ObjectNames, {
 	[204279] = "Seilspule",
 	[204280] = "Flasche Whiskey",
 	[204281] = "Wurmhaufen",
+	[204282] = "Archäologischer zwergischer Fund",
 	[204284] = "Sturmwindhummerfalle",
 	[204296] = "Kalkhaltige Kristallformation",
 	[204297] = "Kalkhaltige Kristallformation",
@@ -10170,6 +10208,7 @@ localize(ObjectNames, {
 	[206833] = "Zwielichtelement der Erde",
 	[206834] = "Zwielichtelement des Feuers",
 	[206835] = "Zwielichtelement des Wassers",
+	[206836] = "Archäologischer fossiler Fund",
 	[206839] = "Das Licht der Seelen",
 	[206853] = "Obsidiandurchsetzter Schlamm",
 	[206881] = "Schlummersand",
@@ -10195,6 +10234,10 @@ localize(ObjectNames, {
 	[207182] = "Humberts Schwert",
 	[207183] = "Humberts Hose",
 	[207184] = "Humberts Helm",
+	[207187] = "Archäologischer orcischer Fund",
+	[207188] = "Archäologischer draeneiischer Fund",
+	[207189] = "Archäologischer Fund der Vrykul",
+	[207190] = "Archäologischer Fund der Tol'vir",
 	[207259] = "Induktionssamophlang",
 	[207279] = "Auf Befehl des Kriegshäuptlings",
 	[207281] = "Atulhets Aufzeichnungsfragment",
@@ -10701,7 +10744,9 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Librairie",
 	[-363] = "Armurerie",
 	[-364] = "Cathédrale",
-	[-367] = "Défenseurs Atal'ai",
+	[-365] = "Grande porte",
+	[-366] = "Entrée de service",
+	[-367] = "Défenseurs atal’ai",
 	[-368] = "La prise de la citadelle",
 	[-369] = "La Pesterie",
 	[-371] = "Les salles de l'Aile de givre",
@@ -10731,6 +10776,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Poisson de saison : bar d'été",
 	[-587] = "Poisson de saison : calmar d'hiver",
 	[-588] = "Concours de pêche de Strangleronce",
+	[-611] = "Famille royale silithide",
 	[-659] = "Aide Crépusculaire",
 	[-660] = "Duo Crépusculaire",
 	[-661] = "Chroniques des Crépusculaires",
@@ -10882,6 +10928,7 @@ localize(ObjectNames, {
 	[2743] = "Urne en pierre gravée",
 	[2744] = "Palourde géante",
 	[2842] = "Pilier de diamant",
+	[2847] = "Coffre en morceaux",
 	[2848] = "Pilier d'opale",
 	[2858] = "Pilier d'améthyste",
 	[2866] = "Fleur de feu",
@@ -12286,6 +12333,7 @@ localize(ObjectNames, {
 	[202619] = "Fleur-de-flammes",
 	[202648] = "Trésor de Kul Tiras",
 	[202652] = "Matériel du Crépuscule",
+	[202655] = "Trouvaille archéologique trolle",
 	[202697] = "Œil du Crépuscule",
 	[202701] = "Planque des toilettes",
 	[202702] = "Pierrelette",
@@ -12342,6 +12390,8 @@ localize(ObjectNames, {
 	[203061] = "Placard de Hurlevent",
 	[203066] = "Caisse d'armes du Crépuscule",
 	[203067] = "Enclume du Crépuscule",
+	[203071] = "Trouvaille archéologique elfe de la nuit",
+	[203078] = "Trouvaille archéologique nérubienne",
 	[203088] = "Appareil de guerre BD-816",
 	[203090] = "Coffre au trésor englouti",
 	[203113] = "Baril de poudre à canon",
@@ -12458,6 +12508,7 @@ localize(ObjectNames, {
 	[204279] = "Rouleau de corde",
 	[204280] = "Bouteille de whisky",
 	[204281] = "Tas de vers",
+	[204282] = "Trouvaille archéologique naine",
 	[204284] = "Piège à homard de Hurlevent",
 	[204296] = "Formation de cristal crayeux",
 	[204297] = "Formation de cristal crayeux",
@@ -12653,6 +12704,7 @@ localize(ObjectNames, {
 	[206833] = "Élément de terre du Crépuscule",
 	[206834] = "Élément de feu du Crépuscule",
 	[206835] = "Élément d'eau du Crépuscule",
+	[206836] = "Trouvaille archéologique fossile",
 	[206839] = "La Lumière des âmes",
 	[206853] = "Boue tachetée d'obsidienne",
 	[206881] = "Sable de léthargie",
@@ -12678,6 +12730,10 @@ localize(ObjectNames, {
 	[207182] = "Epée d'Humbert",
 	[207183] = "Pantalon d'Humbert",
 	[207184] = "Heaume d'Humbert",
+	[207187] = "Trouvaille archéologique orque",
+	[207188] = "Trouvaille archéologique draeneï",
+	[207189] = "Trouvaille archéologique vrykule",
+	[207190] = "Trouvaille archéologique tol'vir",
 	[207259] = "Samophlange à induction",
 	[207279] = "Tableau de commandement du chef de guerre",
 	[207281] = "Fragment d'archive d'Atulhet",
@@ -14026,6 +14082,7 @@ localize(ObjectNames, {
 	[202619] = "Sbocciafiamma",
 	[202648] = "Tesoro di Kul Tiras",
 	[202652] = "Rifornimenti del Crepuscolo",
+	[202655] = "Ritrovamento Archeologico Troll",
 	[202697] = "Occhio del Crepuscolo",
 	[202701] = "Nascondiglio della Latrina",
 	[202702] = "Sbocciapietra",
@@ -14081,6 +14138,8 @@ localize(ObjectNames, {
 	[203061] = "Baule di Roccavento",
 	[203066] = "Cassa di Armi del Crepuscolo",
 	[203067] = "Incudine del Crepuscolo",
+	[203071] = "Ritrovamento Archeologico Elfico",
+	[203078] = "Ritrovamento Archeologico Nerubiano",
 	[203088] = "Apparato Militare BD-816",
 	[203090] = "Cassa del Tesoro Sommersa",
 	[203113] = "Barile di Polvere da Sparo",
@@ -14197,6 +14256,7 @@ localize(ObjectNames, {
 	[204279] = "Rotolo di Corda",
 	[204280] = "Bottiglia di Whisky",
 	[204281] = "Tumulo del Verme",
+	[204282] = "Ritrovamento Archeologico Nanico",
 	[204284] = "Trappola per Aragoste di Roccavento",
 	[204296] = "Formazione di Cristalli Bianchi",
 	[204297] = "Formazione di Cristalli Bianchi",
@@ -14391,6 +14451,7 @@ localize(ObjectNames, {
 	[206833] = "Elemento della Terra del Crepuscolo",
 	[206834] = "Elemento del Fuoco del Crepuscolo",
 	[206835] = "Elemento dell'Acqua del Crepuscolo",
+	[206836] = "Ritrovamento Archeologico Fossile",
 	[206839] = "Luce delle Anime",
 	[206853] = "Fango Chiazzato d'Ossidiana",
 	[206881] = "Sabbia del Riposo",
@@ -14416,6 +14477,10 @@ localize(ObjectNames, {
 	[207182] = "Spada di Humbert",
 	[207183] = "Pantaloni di Humbert",
 	[207184] = "Elmo di Humbert",
+	[207187] = "Ritrovamento Archeologico Orchesco",
+	[207188] = "Ritrovamento Archeologico Draenei",
+	[207189] = "Ritrovamento Archeologico Vrykul",
+	[207190] = "Ritrovamento Archeologico Tol'vir",
 	[207259] = "Samoflago a Induzione",
 	[207279] = "Bacheca degli Ordini del Capoguerra",
 	[207281] = "Frammento della Memoria di Atulhet",
@@ -14665,6 +14730,9 @@ localize(L.HEADER_NAMES, {
 	[-342] = "Aparência Única",
 	[-343] = "Recompensa",
 	[-350] = "Os Quatro Cavaleiros",
+	[-365] = "Portão Principal",
+	[-366] = "Entrada de Serviço",
+	[-367] = "Defensores Atal'ai",
 	[-368] = "Invasão da Cidadela",
 	[-369] = "Antro da Peste",
 	[-371] = "Salões da Asa Gélida",
@@ -14690,6 +14758,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "Peixe sazonal: robalo de verão",
 	[-587] = "Peixe sazonal: Lula de Inverno",
 	[-588] = "Festerê de Pesca da Selva do Espinhaço",
+	[-611] = "Realeza Silítidea",
 	[-659] = "Assistente do Crepúsculo",
 	[-660] = "Dupla do Crepúsculo",
 	[-661] = "Além da Imaginação",
@@ -14836,6 +14905,7 @@ localize(ObjectNames, {
 	[2742] = "Baú da Nidificação",
 	[2743] = "Urna de Pedra com Gravuras",
 	[2744] = "Marisco Gigante",
+	[2847] = "Baú Gasto",
 	[2848] = "Pilar de Opala",
 	[2858] = "Pilar de Ametista",
 	[2866] = "Ignídea",
@@ -16142,6 +16212,7 @@ localize(ObjectNames, {
 	[202619] = "Florescência de Chama",
 	[202648] = "Tesouro de Kul Tiraz",
 	[202652] = "Suprimentos Crepusculares",
+	[202655] = "Achado Arqueológico Trólico",
 	[202697] = "Olho do Crepúsculo",
 	[202701] = "Casinha de Esconderijo",
 	[202702] = "Flor-pétrea",
@@ -16198,6 +16269,8 @@ localize(ObjectNames, {
 	[203061] = "Baú de Ventobravo",
 	[203066] = "Caixote de Armas do Crepúsculo",
 	[203067] = "Bigorna do Crepúsculo",
+	[203071] = "Achado Arqueológico Noctiélfico",
+	[203078] = "Descoberta Arqueológica Nerubiana",
 	[203088] = "Aparato de Guerra BD-816",
 	[203090] = "Baú do Tesouro Afundado",
 	[203113] = "Barril de Pólvora",
@@ -16317,6 +16390,7 @@ localize(ObjectNames, {
 	[204279] = "Carretel de Corda",
 	[204280] = "Garrafa de Uísque",
 	[204281] = "Monte de Verme",
+	[204282] = "Achado Arqueológico Enânico",
 	[204284] = "Armadilha de Lagostas de Ventobravo",
 	[204296] = "Formação de Cristal Calcário",
 	[204297] = "Formação de Cristal Calcário",
@@ -16512,6 +16586,7 @@ localize(ObjectNames, {
 	[206833] = "Elemento do Crepúsculo da Terra",
 	[206834] = "Elemento do Crepúsculo do Fogo",
 	[206835] = "Elemento do Crepúsculo da Água",
+	[206836] = "Achado Arqueológico de Fóssil",
 	[206839] = "A Luz das Almas",
 	[206853] = "Lama Salpicada de Obsidiana",
 	[206881] = "Areia do Sono",
@@ -16537,6 +16612,10 @@ localize(ObjectNames, {
 	[207182] = "Espada do Humberto",
 	[207183] = "Calças do Humberto",
 	[207184] = "Elmo do Humberto",
+	[207187] = "Achado Arqueológico Órquico",
+	[207188] = "Achado Arqueológico Draeneico",
+	[207189] = "Achado Arqueológico Vraikálico",
+	[207190] = "Achado Arqueológico Tol'vírico",
 	[207259] = "Rebimboca de Indução",
 	[207279] = "Mural de Ordens do Chefe Guerreiro",
 	[207281] = "Fragmento de Registro Atul-het",
@@ -17114,7 +17193,7 @@ L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки
 L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
 L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
 L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
-L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
+L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 L.QUESTS_CHECKBOX_TOOLTIP = "Включите для отслеживания обычных Заданий.\n\nПри помощи правого клика на любое задание в списках Вы можете открыть полную цепочку заданий, чтобы отобразить Ваш прогресс и любые предшествующие Задания.\n\nПримечание: Задания не отслеживаются перманентно из-за природы отслеживания Ежедневных, Еженедельных, Ежегодных и Локальных заданий в базе данных Blizzard.";
 L.QUESTS_DESC = "Все задания в игре в порядке возрастания номеров.";
@@ -17396,6 +17475,8 @@ localize(L.HEADER_NAMES, {
 	[-362] = "Библиотека",
 	[-363] = "Оружейная",
 	[-364] = "Собор",
+	[-365] = "Главные врата",
+	[-366] = "Черный ход",
 	[-367] = "Защитники Атал'ай",
 	[-368] = "Штурм цитадели",
 	[-369] = "Чумодельня",
@@ -17428,6 +17509,7 @@ localize(L.HEADER_NAMES, {
 	[-587] = "Сезонная рыба: зимний кальмар",
 	[-588] = "Рыбомания Тернистой долины",
 	[-592] = "Годовщина WoW",
+	[-611] = "Силитидская знать",
 	[-659] = "Сумеречные помощники",
 	[-660] = "Сумеречный дуэт",
 	[-661] = "Зона сумерек",
@@ -17581,6 +17663,7 @@ localize(ObjectNames, {
 	[2743] = "Резная каменная урна",
 	[2744] = "Гигантский моллюск",
 	[2842] = "Алмазный столп",
+	[2847] = "Побитый сундук",
 	[2848] = "Опаловый столп",
 	[2858] = "Аметистовый столп",
 	[2866] = "Огнецвет",
@@ -18991,6 +19074,7 @@ localize(ObjectNames, {
 	[202619] = "Огненный цветок",
 	[202648] = "Кул-тирасское сокровище",
 	[202652] = "Припасы Сумеречного Молота",
+	[202655] = "Тролльская археологическая находка",
 	[202697] = "Око Сумерек",
 	[202701] = "Убежище в туалете",
 	[202702] = "Камнецвет",
@@ -19047,6 +19131,8 @@ localize(ObjectNames, {
 	[203061] = "Сундук Штормграда",
 	[203066] = "Ящик с оружием Сумеречного Молота",
 	[203067] = "Наковальня Сумеречного Молота",
+	[203071] = "Эльфийская археологическая находка",
+	[203078] = "Нерубская археологическая находка",
 	[203088] = "Машина войны БА-64",
 	[203090] = "Затонувший сундук с сокровищами",
 	[203113] = "Бочонок с порохом",
@@ -19167,6 +19253,7 @@ localize(ObjectNames, {
 	[204279] = "Моток веревки",
 	[204280] = "Бутылка виски",
 	[204281] = "Куча червей",
+	[204282] = "Дворфийская археологическая находка",
 	[204284] = "Штормградская ловушка на омаров",
 	[204296] = "Меловое кристалловидное образование",
 	[204297] = "Меловое кристалловидное образование",
@@ -19362,6 +19449,7 @@ localize(ObjectNames, {
 	[206833] = "Сумеречный дух земли",
 	[206834] = "Сумеречный дух огня",
 	[206835] = "Сумеречный дух воды",
+	[206836] = "Находка-окаменелость",
 	[206839] = "Свет души",
 	[206853] = "Насыщенная обсидианом грязь",
 	[206881] = "Сонный порошок",
@@ -19387,6 +19475,10 @@ localize(ObjectNames, {
 	[207182] = "Меч Гумберта",
 	[207183] = "Штаны Гумберта",
 	[207184] = "Шлем Гумберта",
+	[207187] = "Оркская археологическая находка",
+	[207188] = "Дренейская археологическая находка",
+	[207189] = "Врайкульская археологическая находка",
+	[207190] = "Тол'вирская археологическая находка",
 	[207259] = "Индукционный самофланж",
 	[207279] = "Доска приказов вождя",
 	[207281] = "Обломок скрижали с записями Атулхета",
@@ -19626,6 +19718,9 @@ localize(L.HEADER_NAMES, {
 	[-342] = "독특한 외관",
 	[-343] = "하사품",
 	[-350] = "4인 기사단",
+	[-365] = "정문",
+	[-366] = "공무용 입구",
+	[-367] = "아탈라이 파수병",
 	[-368] = "성채 몰아치기",
 	[-369] = "역병작업장",
 	[-371] = "서리날개 전당",
@@ -19652,6 +19747,7 @@ localize(L.HEADER_NAMES, {
 	[-586] = "제철 생선: 여름 농어",
 	[-587] = "제철 생선: 겨울 오징어",
 	[-588] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-611] = "실리시드 왕실",
 	[-659] = "황혼의 지원",
 	[-660] = "황혼의 2인조",
 	[-661] = "황혼 지대",
@@ -21102,6 +21198,7 @@ localize(ObjectNames, {
 	[202619] = "화염꽃",
 	[202648] = "쿨 티라스 보물",
 	[202652] = "황혼의 보급품",
+	[202655] = "트롤 고고학 발굴품",
 	[202697] = "황혼의 눈",
 	[202701] = "화장실 은신처",
 	[202702] = "바위꽃",
@@ -21158,6 +21255,8 @@ localize(ObjectNames, {
 	[203061] = "스톰윈드 사물함",
 	[203066] = "황혼의 무기 상자",
 	[203067] = "황혼의 모루",
+	[203071] = "나이트 엘프 고고학 발굴품",
+	[203078] = "네루비안 고고학 발굴품",
 	[203088] = "BD-816 전쟁 장비",
 	[203090] = "가라앉은 보물 상자",
 	[203113] = "화약 통",
@@ -21278,6 +21377,7 @@ localize(ObjectNames, {
 	[204279] = "밧줄 타래",
 	[204280] = "위스키 병",
 	[204281] = "벌레 더미",
+	[204282] = "드워프 고고학 발굴품",
 	[204284] = "스톰윈드 바닷가재 덫",
 	[204296] = "석회질 수정 결정체",
 	[204297] = "석회질 수정 결정체",
@@ -21473,6 +21573,7 @@ localize(ObjectNames, {
 	[206833] = "대지의 황혼 원소",
 	[206834] = "불의 황혼 원소",
 	[206835] = "물의 황혼 원소",
+	[206836] = "화석 고고학 발굴품",
 	[206839] = "영혼의 빛",
 	[206853] = "흑요석 섞인 진흙",
 	[206881] = "졸음 모래",
@@ -21498,6 +21599,10 @@ localize(ObjectNames, {
 	[207182] = "험버트의 검",
 	[207183] = "험버트의 바지",
 	[207184] = "험버트의 투구",
+	[207187] = "오크 고고학 발굴품",
+	[207188] = "드레나이 고고학 발굴품",
+	[207189] = "브리쿨 고고학 발굴품",
+	[207190] = "톨비르 고고학 발굴품",
 	[207259] = "유도 사모플랜지",
 	[207279] = "대족장의 명령 게시판",
 	[207281] = "아툴헤트의 기록 파편",
@@ -22477,6 +22582,7 @@ localize(L.HEADER_NAMES, {
 	[-37] = "Feria de la Luna Negra",
 	[-46] = "Raro",
 	[-56] = "Tesoros",
+	[-58] = "Vendedores",
 	[-61] = "Jefes de mundo",
 	[-63] = "Botín de zona",
 	[-66] = "Protocolo Inferno",
@@ -22492,6 +22598,7 @@ localize(L.HEADER_NAMES, {
 	[-87] = "Cofre final",
 	[-97] = "Reliquias",
 	[-103] = "Evento de pre-parche",
+	[-219] = "Reliquias",
 	[-229] = "Fuente IDs",
 	[-232] = "Parche 1.x.x",
 	[-235] = "Parche 2.x.x",
@@ -22522,7 +22629,9 @@ localize(L.HEADER_NAMES, {
 	[-343] = "Recompensa",
 	[-349] = "Capitanes",
 	[-350] = "Los Cuatro Jinetes",
-	[-366] = "Entrada de servicio",
+	[-365] = "Puerta principal",
+	[-366] = "Entrada del servicio",
+	[-367] = "Defensores Atal'ai",
 	[-368] = "Asaltar la Ciudadela",
 	[-369] = "Los Talleres de la Peste",
 	[-371] = "Las Cámaras de Alaescarcha",
@@ -22722,6 +22831,7 @@ localize(ObjectNames, {
 	[2743] = "Urna de piedra labrada",
 	[2744] = "Almeja gigante",
 	[2842] = "Pilar de diamante",
+	[2847] = "Cofre ajado",
 	[2848] = "Pilar de ópalo",
 	[2858] = "Pilar de amatista",
 	[2866] = "Flor de fuego",
@@ -24115,6 +24225,7 @@ localize(ObjectNames, {
 	[202619] = "Flor de llamas",
 	[202648] = "Tesoro de Kul Tiras",
 	[202652] = "Suministros Crepusculares",
+	[202655] = "Hallazgo arqueológico de los trols",
 	[202697] = "Ojo del Crepúsculo",
 	[202701] = "Letrina escondrijo",
 	[202702] = "Cetraria",
@@ -24171,6 +24282,8 @@ localize(ObjectNames, {
 	[203061] = "Baúl de Ventormenta",
 	[203066] = "Cajón de armas Crepuscular",
 	[203067] = "Yunque Crepuscular",
+	[203071] = "Hallazgo arqueológico de los elfos de la noche",
+	[203078] = "Hallazgo arqueológico nerubiano",
 	[203088] = "Aparato de guerra BD-816",
 	[203090] = "Arqueta hundida",
 	[203113] = "Barril de Pólvora",
@@ -24290,6 +24403,7 @@ localize(ObjectNames, {
 	[204279] = "Bobina de cuerda",
 	[204280] = "Botella de whisky",
 	[204281] = "Túmulo de gusano",
+	[204282] = "Hallazgo arqueológico de los enanos",
 	[204284] = "Trampa de langosta de Ventormenta",
 	[204296] = "Formación de cristal calcáreo",
 	[204297] = "Formación de cristal calcáreo",
@@ -24485,6 +24599,7 @@ localize(ObjectNames, {
 	[206833] = "Elemento de tierra Crepuscular",
 	[206834] = "Elemento de fuego Crepuscular",
 	[206835] = "Elemento de agua Crepuscular",
+	[206836] = "Hallazgo arqueológico fósil",
 	[206839] = "La Luz de las almas",
 	[206853] = "Barro con motas de obsidiana",
 	[206881] = "Arena de sueño",
@@ -24510,6 +24625,10 @@ localize(ObjectNames, {
 	[207182] = "Espada de Humbert",
 	[207183] = "Pantalones de Humbert",
 	[207184] = "Yelmo de Humbert",
+	[207187] = "Hallazgo arqueológico de los orcos",
+	[207188] = "Hallazgo arqueológico de los draenei",
+	[207189] = "Hallazgo arqueológico de los vrykuls",
+	[207190] = "Hallazgo arqueológico de los tol'vir",
 	[207259] = "Churumbele de inducción",
 	[207279] = "Tablón de mando del Jefe de Guerra",
 	[207281] = "Trozo de tablilla de Atulhet",
@@ -25025,6 +25144,7 @@ localize(L.HEADER_NAMES, {
 	[-63] = "Botín de la zona",
 	[-74] = "Dragones de pesadilla",
 	[-103] = "Evento de pre-expansion",
+	[-367] = "Defensores de Atal'ai",
 	[-525] = "Paquete heroico Rasganorte WotLK Classic",
 	[-526] = "Paquete heroico abrasador de Cataclysm Classic",
 	[-527] = "Paquete heroico infundido por los sha",
@@ -25238,6 +25358,8 @@ L.DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的
 L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
 L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
+L.DECOR_CHECKBOX_TOOLTIP = "启用此选项以跟踪战团装饰完成情况。";
+L.DECOR_ID = "装饰 ID";
 L.DELETE_CHARACTER = "右击删除此角色";
 L.DELETE_LINKED_ACCOUNT = "右击删除此链接帐号";
 L.DELETE_LINKED_CHARACTER = "右击删除此链接角色";
@@ -25869,8 +25991,18 @@ localize(L.HEADER_NAMES, {
 	[-85] = "二箱",
 	[-86] = "三箱",
 	[-87] = "最终宝箱",
+	[-97] = "圣物",
 	[-103] = "资料片前夕",
 	[-219] = ITEM_QUALITY7_DESC,
+	[-229] = "来源 ID",
+	[-232] = "补丁 1.x.x",
+	[-235] = "补丁 2.x.x",
+	[-236] = "补丁 3.x.x",
+	[-237] = "补丁 4.x.x",
+	[-238] = "补丁 5.x.x",
+	[-239] = "补丁 6.x.x",
+	[-243] = "护甲附魔",
+	[-245] = "武器附魔",
 	[-247] = select(2,GetAchievementInfo(2091)).."：第1赛季",
 	[-248] = select(2,GetAchievementInfo(418)).."：第2赛季",
 	[-249] = select(2,GetAchievementInfo(419)).."：第3赛季",
@@ -25899,6 +26031,8 @@ localize(L.HEADER_NAMES, {
 	[-362] = "图书馆",
 	[-363] = "武器库",
 	[-364] = "修道院",
+	[-365] = "正门",
+	[-366] = "后门",
 	[-367] = "阿塔莱防御者",
 	[-368] = "进攻堡垒",
 	[-369] = "天灾工厂",
@@ -25907,6 +26041,7 @@ localize(L.HEADER_NAMES, {
 	[-414] = "元素誓约",
 	[-415] = "巨魔来袭",
 	[-474] = "元素动荡",
+	[-476] = "霸业风暴",
 	[-481] = "安其拉之战捐献",
 	[-482] = "开启黑暗之门",
 	[-483] = "流沙节杖",
@@ -25922,6 +26057,7 @@ localize(L.HEADER_NAMES, {
 	[-527] = "'熊猫人之谜'怀旧服 - 宿煞英雄礼包",
 	[-534] = "星际争霸II：自由之翼",
 	[-546] = "可口可乐活动",
+	[-550] = "竞争之魂",
 	[-557] = "美酒节",
 	[-559] = "儿童周",
 	[-560] = "小游戏",
@@ -25942,6 +26078,7 @@ localize(L.HEADER_NAMES, {
 	[-587] = "时令鱼类：冬鱿鱼",
 	[-588] = "荆棘谷钓鱼大赛",
 	[-592] = "魔兽世界周年庆",
+	[-611] = "安其拉三宝",
 	[-659] = "暮光帮凶",
 	[-660] = "暮光二重奏",
 	[-661] = "暮光领域",
@@ -25949,12 +26086,26 @@ localize(L.HEADER_NAMES, {
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
+	[-43] = "宠物对战相关任务和驯练师。",
 	[-44] = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
 	[-47] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-213] = "此部分显示能在正式服的游戏内商城购买的东西。",
+	[-304] = "这些物品需要经典/评级战场的军团士兵/骑士队长或更高的排名才能购买。",
 	[-341] = "此列表中的物品是以下物品的共享外观。在唯一外观模式下，此列表可帮助了解特定物品被标记为已收藏的原因。",
 	[-342] = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
 	[-343] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
+	[-355] = "该副本的此部分可从最东侧的入口进入。（右侧）",
+	[-356] = "该副本的此部分可从最北侧的入口进入。",
+	[-357] = "该副本的此部分可从最西侧的入口进入。（左侧）",
+	[-550] = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
+	[-560] = "以下小游戏每次游玩需要消耗一枚暗月游戏代币，并且每天都有一个任务可以获得奖券以及一些相关的成就。",
+	[-563] = "为了最大化你的得分，等待当前的标记消失，然后瞄准中间的目标。只要出现任何绿色标记，立即按1，在短暂的施法时间内，如果有必要，将你的枪移动到指向左侧或右侧目标的位置。",
+	[-564] = "位于入口附近，游客们会收到一个大锤，用来敲打从该区域的九个桶中弹出的填充豺狼人。玩家将有60秒的时间来获得30分。豺狼人有三种类型：普通的、霍格和婴儿，分别奖励1分、3分或一次击倒。",
+	[-592] = "这是一个每年重现的活动，发生在十一月初到年底之间。",
+});
+localize(L.HEADER_LORE, {
+	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
+	[-318] = "地下城套装的第2套职业套装，通常称为T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
@@ -27264,6 +27415,7 @@ localize(ObjectNames, {
 	[202619] = "烈焰花丛",
 	[202648] = "库尔提拉斯宝藏",
 	[202652] = "暮光补给品",
+	[202655] = "巨魔考古发现",
 	[202697] = "暮光之眼",
 	[202701] = "厕所藏匿处",
 	[202702] = "石花",
@@ -27319,6 +27471,8 @@ localize(ObjectNames, {
 	[203061] = "暴风城锁箱",
 	[203066] = "暮光武器箱",
 	[203067] = "暮光铁砧",
+	[203071] = "暗夜精灵考古发现",
+	[203078] = "蛛魔考古发现",
 	[203088] = "BD-816战争器械",
 	[203090] = "沉没的宝箱",
 	[203113] = "一桶火药",
@@ -27429,6 +27583,7 @@ localize(ObjectNames, {
 	[204279] = "一捆绳子",
 	[204280] = "一瓶威士忌酒",
 	[204281] = "虫堆",
+	[204282] = "矮人考古发现",
 	[204284] = "暴风城龙虾陷阱",
 	[204296] = "粉白水晶阵列",
 	[204297] = "粉白水晶阵列",
@@ -27588,6 +27743,7 @@ localize(ObjectNames, {
 	[206833] = "暮光土元素",
 	[206834] = "暮光火元素",
 	[206835] = "暮光水元素",
+	[206836] = "化石考古发现",
 	[206839] = "灵魂之光",
 	[206853] = "黑曜斑点软泥",
 	[206881] = "沉睡之砂",
@@ -27609,6 +27765,9 @@ localize(ObjectNames, {
 	[207182] = "亨伯特的长剑",
 	[207183] = "亨伯特的长裤",
 	[207184] = "亨伯特的头盔",
+	[207187] = "兽人考古发现",
+	[207188] = "德莱尼考古发现",
+	[207190] = "托维尔考古发现",
 	[207259] = "感应主动式负载平衡器",
 	[207279] = "大酋长的命令布告板",
 	[207281] = "阿图希特的记录碎片",
@@ -27912,7 +28071,7 @@ L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成時套用|r";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "啟用指標提示";
 L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在指標提示中查看 ATT 提供的資訊，請啟用此選項。這包括其他玩家發送的物品連接，在拍賣行、在地城助手、在你的背包裡、在世界、在 NPC 等等。\n\n如果你關閉了這個功能，就會嚴重降低你快速判斷是否需要擊殺首領或學習外觀的能力。\n\n我們建議你保持此設定。";
 L.ENCOUNTER_ID = "首領戰鬥 ID";
-L.EVENT_ACTIVE = "啟動:";
+L.EVENT_ACTIVE = "啟用:";
 L.EVENT_END = "結束:";
 L.EVENT_SCHEDULE = "事件時程表";
 L.EVENT_START = "開始:";
@@ -28002,6 +28161,7 @@ L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略裝備綁定/拾取
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤幻象。\n\n這些看起來很酷的塑形效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
 L.INCLUDE_ORIGINAL_CHECKBOX = "原始來源";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜歡在指標提示中的共享外觀列表中看到原始來源資訊，請啟用此選項。";
+L.INFORMATION_PAGE = "資訊";
 L.INSTANCE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機副本。";
 L.ITEM_DESC = "點擊此按鈕可依據缺少的內容選擇隨機物品。";
 L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 |c" .. _.DefaultColors.Account .. "帳號模式|r。|r";
@@ -28017,6 +28177,7 @@ L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] 已加入收藏。在資料庫�
 L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
 L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 L.ITEM_LEVEL = "物品等級";
+L.ITEM_STRING = "物品字串";
 L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
 L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在指標提示中查看所有伺服器上已知此配方的完整角色列表，請啟用此選項。";
 L.LAYER = "相位";
@@ -28069,6 +28230,7 @@ L.MINIMAP_SLIDER = "小地圖按鈕尺寸";
 L.MINIMAP_SLIDER_TOOLTIP = "使用此選項可自訂小地圖按鈕的大小。\n\n預設：36";
 L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。";
 L.MISSION_ID = "任務 ID";
+L.MOD_ID = "模組 ID";
 L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的內容總結在這裡。啟用所有 |c" .. _.DefaultColors.Insane .. "彩色選項|r 解鎖 |c" .. _.DefaultColors.Insane .. "瘋狂模式|r。|r";
 L.MODULES = "模組";
 L.MODULES_LABEL = "模組和小列表";
@@ -28089,7 +28251,7 @@ L.NESTED_QUEST_REQUIREMENTS = "多重任務需要";
 L.NEVER_IMPLEMENTED = "從未實裝";
 L.NEVER_IMPLEMENTED_DESC = "這裡的物品在技術上存在於遊戲內，但從未向玩家開放過";
 L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
-L.NEW_VERSION_FLAVORS = {"因為萬物都飢餓。","無敵下次|cffffaaaa|肯定|r會掉落"};
+L.NEW_VERSION_FLAVORS = {"因為 AllTheThings 餓了。","下次|cffffaaaa一定|r會掉落無敵！","否則今晚會有魚人在你窗外尖叫","因為所謂的收藏不過是換個說法的囤積癖。","而 Crieve 會幫一隻烏龜重新入水。","否則你的戰鬥寵物要成立工會了。"};
 L.NEW_WITH_PATCH = "最新加入內容";
 L.NEW_WITH_PATCH_TOOLTIP = "這會顯示遊戲最新更新中加入的所有內容。";
 L.NO_COORDINATES_FORMAT = "%s 沒有已知座標";
@@ -28099,6 +28261,7 @@ L.NO_LINKED_ACCOUNTS = "未找到連接帳號。";
 L.NO_SEARCH_METHOD = "未指定搜尋方法。";
 L.NOT_AVAILABLE_IN_PL = "在個人拾取中不可用。";
 L.NOTHING_TO_SELECT_FROM = "沒有什麼可以隨意選擇的。如果在“設定”中啟用了“臨時更新”，則必須在使用此視窗之前更新主列表（/att）。";
+L.OBJECT = "物體";
 L.OBJECT_TYPE = "目標類型";
 L.OBJECTIVES = "目標";
 L.ONLY_NOT_TRASH = "排除垃圾物品";
@@ -28120,6 +28283,7 @@ L.PERCENTAGES_CHECKBOX = "顯示完成百分比";
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比請啟用此選項。\n\n按完成度對組進行著色不受影響。";
 L.PERSONAL_LOOT_DESC = "每位玩家都有獨立的機會拾取對自己職業有用的物品…\n\n…或者像戒指這樣的無用之物。\n\n如果是自己一個人的話，點擊兩次就會自動創建一個隊伍。";
 L.PET_DESC = "點擊此按鈕可依據缺少的內容選擇隨機寵物。";
+L.PHASES_PAGE = "階段";
 L.PLAY_DEATH_SOUND_CHECKBOX = "死亡時播放音效";
 L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "如果你想在死亡時聽到音效，請啟用此選項。";
 L.PLAYER_COORDINATES = "玩家座標";
@@ -28132,6 +28296,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s 完美主
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s消滅者|r";
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA擁抱者%s|r";
 L.PLEASE_REPORT_MESSAGE = "請把錯誤回報給 ATT Discord 的 #classic-errors！謝謝！";
+L.POPOUT = "彈出列表";
 L.PRECISION_SLIDER = "百分比精確度";
 L.PRECISION_SLIDER_TOOLTIP = "使用此選項可自訂百分比計算中所需的精度級別。\n\n預設：2";
 L.PREREQUISITE_QUESTS = "必須先完成一些前置任務才有可能獲得：";
@@ -28166,6 +28331,7 @@ L.QUEST_DESC = "點擊此按鈕可依據缺少的內容選擇隨機任務。";
 L.QUEST_GIVER = "任務給予者";
 L.QUEST_GIVERS = "任務給予者";
 L.QUEST_ID = "任務 ID";
+L.QUEST_ITEMS = "任務物品";
 L.QUEST_LOOP = "可能剛剛從無限源任務循環中爆發出來。";
 L.QUEST_MAY_BE_REMOVED = "擷取任務資訊失敗。這個任務可能已從遊戲中移除。";
 L.QUEST_OBJECTIVE_INVALID = "無效的任務目標";
@@ -28193,6 +28359,7 @@ L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接�
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
+L.REPEATABLES_LABEL = "可重複";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "回報已收藏事物";
 L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一條訊息，詳細說明收藏了哪些物品或從收藏中刪除了哪些物品，請啟用此選項。\n\n注意：這是因為暴雪默默的加入了外觀和其他收藏品並且忽略了通知你可用的其他物品。\n\n我們建議你保持此設定。如果你打開了這個選項，你會聽到警告聲。";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX = "回報任務";
@@ -28302,6 +28469,7 @@ L.STORE_IN_PROFILE_BUTTON_TOOLTIP = "預設情況下，ATT 會依角色儲存這
 L.SUMMARIZE_CHECKBOX = "總結事物";
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "啟用該選項可在指標提示中總結事物。例如，如果一個事物可以變成另一個事物的商人，那麼在指標提示中顯示另一個事物，以提供其多種用途的可見性。如果一個事物作為許多其他事物的容器，這個選項將顯示該容器所包含的所有其他事物。\n\n我們建議你保持此設定開啟。";
 L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
+L.SYMLINK = "符號連結";
 L.SYNC_CHARACTERS_TOOLTIP = "這會顯示您帳號中的所有角色。";
 L.TELEPORT_TO_FROM_DUNGEON = "傳送至/出地城";
 L.TELEPORT_TO_FROM_DUNGEON_DESC = "點擊此處傳送到當前地城或從當前地城傳送出去。\n\n潘達利亞之謎可以這種方式快速傳送到當前副本之外。";
@@ -28412,6 +28580,7 @@ localize(L.HEADER_NAMES, {
 	[-86] = "第三個箱子",
 	[-87] = "最後的箱子",
 	[-103] = "資料片前夕",
+	[-243] = "護甲附魔",
 	[-247] = select(2,GetAchievementInfo(2091)).."：第1賽季",
 	[-248] = select(2,GetAchievementInfo(418)).."：第2賽季",
 	[-249] = select(2,GetAchievementInfo(419)).."：第3賽季",
@@ -28431,9 +28600,15 @@ localize(L.HEADER_NAMES, {
 	[-342] = "獨特外觀",
 	[-350] = "四騎士",
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (東)",
+	[-362] = "圖書館",
+	[-363] = "武器庫",
+	[-365] = "主門",
+	[-366] = "僕從入口",
+	[-367] = "阿塔萊防衛者",
 	[-414] = "元素桎梏",
 	[-415] = "食人妖入侵",
 	[-474] = "元素入侵",
+	[-476] = "強襲風暴",
 	[-481] = "安其拉之戰捐獻",
 	[-483] = "流沙節杖",
 	[-484] = "天譴軍團入侵",
@@ -28448,6 +28623,7 @@ localize(L.HEADER_NAMES, {
 	[-546] = "可口可樂活動",
 	[-557] = "啤酒節",
 	[-559] = "兒童週",
+	[-560] = "小遊戲",
 	[-566] = "亡者節",
 	[-574] = "冬幕節",
 	[-576] = "萬鬼節",
@@ -28463,6 +28639,7 @@ localize(L.HEADER_NAMES, {
 	[-587] = "季節性魚類：冬魷魚",
 	[-588] = "荊棘谷釣魚大賽",
 	[-592] = "《魔獸世界》週年紀念",
+	[-611] = "異種蠍皇族",
 	[-659] = "暮光協助",
 	[-660] = "暮光雙人組",
 	[-661] = "暮光地帶",
@@ -28470,6 +28647,8 @@ localize(L.HEADER_NAMES, {
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定節日的活動中才能完成本節中的事物。",
+	[-43] = "這個區塊包含與寵物對戰相關的任務與訓練師。",
+	[-44] = "這個區塊只會顯示你目前角色的專業技能，除非處於帳號或是除錯模式",
 	[-213] = "此部分顯示能在正式服的遊戲內商城購買的東西。",
 	[-355] = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",

@@ -323,7 +323,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = {
 						40070,	-- Eagle Egg Recovery
 						42425,	-- Going Down, Going Up
-						-- may also require "Tamer Takedown"
+						40071,	-- Tamer Takedown
 					},
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },

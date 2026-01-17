@@ -1091,6 +1091,10 @@ TBC_PHASE_ONE = createClassicPhase({
 TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 	readable = "TBC Classic - Dark Portal Opens",
 	minimumBuildVersion = 20501,
+-- #if BEFORE 2.5.6
+--	buildVersion = 20501,	-- TBC Classic 2020-2021
+	buildVersion = 20505,	-- TBC Classic 2026-2027
+-- #endif
 	phaseID = 1701,
 	text = {
 		en = "Dark Portal Opens",
@@ -1936,6 +1940,24 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
 		mx = "Incluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.",
 	},
 });
+MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
+	readable = "Celestial Dungeons (ToT)",
+	originalTimelines = { "5.2.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50503,
+	phaseID = 5201,
+	release = os.time({
+		year=2025,
+		month=12,
+		day=17,
+	}),
+	text = {
+		en = "Celestial Dungeons (ToT)",
+	},
+	lore = {
+		en = "Included Throne of Thunder LFR gear for Celestial Dungeons.",
+	},
+});
 MOP_PHASE_ESCALATION = createClassicPhase({
 	readable = "Mists Classic - Escalation",
 	originalTimelines = { "5.3.0" },
@@ -1968,6 +1990,24 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
 		en = "Included Siege of Orgrimmar and the Timeless Isle.",
 		es = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
 		mx = "Incluía Asedio de Orgrimmar y la Isla intemporal.",
+	},
+});
+MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
+	readable = "Celestial Dungeons (SoO)",
+	originalTimelines = { "5.4.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50505,
+	phaseID = 5401,
+	release = os.time({
+		year=2026,
+		month=4,
+		day=20,
+	}),
+	text = {
+		en = "Celestial Dungeons (SoO)",
+	},
+	lore = {
+		en = "Included Siege of Orgrimmar LFR gear for Celestial Dungeons.",
 	},
 });
 

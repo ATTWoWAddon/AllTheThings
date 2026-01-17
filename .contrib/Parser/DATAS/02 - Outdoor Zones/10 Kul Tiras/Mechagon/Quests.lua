@@ -755,6 +755,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56117),	-- Recyclable Parts
 			o(326027, {	-- Recyclerizer DX-82
 				["modelScale"] = 3,
+				["coords"] = {
+					{ 53.4, 61.2, MECHAGON },
+					{ 54.4, 56.4, MECHAGON },
+					{ 55.9, 62.4, MECHAGON },
+					{ 58.7, 59.3, MECHAGON },
+				},
 				["groups"] = {
 					i(168946, {	-- Bundle of Recyclable Parts
 						["cost"] = {
@@ -988,24 +994,41 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					155259,	-- Lifting Specialist Gogo <Venture Co.> (Horde)
 					155202,	-- Profit Maker Grifa <Venture Co.> (Alliance)
 				},
-				["groups"] = {
-					i(169681),	-- BOOM-TASTIC 3000 (QI!)
-				},
+				["groups"] = { i(169681) },	-- BOOM-TASTIC 3000 (QI!)
 			}),
 			q(55696, {	-- Test Drive
 				["sourceQuest"] = 56175,	-- Emission Free
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
-				["groups"] = {
-					i(168270),	-- Rusty Mechaspider (QI!)
-				},
+				["groups"] = { i(168270) },	-- Rusty Mechaspider (QI!)
 			}),
 			q(56306, {	-- The Family Jewels
 				["provider"] = { "n", 154511 },	-- Sneaky Pete
 				["coord"] = { 24.2, 75.3, MECHAGON },
 				["isDaily"] = true,
 				["groups"] = {
-					i(169241),	-- Family Jewelry (QI!)
+					o(327620, {	-- Family Jewelry
+						["coords"] = {
+							{ 14.4, 83.9, MECHAGON },
+							{ 14.6, 84.1, MECHAGON },
+							{ 16.1, 85.0, MECHAGON },
+							{ 17.0, 73.4, MECHAGON },
+							{ 17.7, 78.4, MECHAGON },
+							{ 18.9, 71.9, MECHAGON },
+							{ 19.4, 80.4, MECHAGON },
+							{ 20.1, 77.8, MECHAGON },
+							{ 20.6, 72.4, MECHAGON },
+							{ 20.6, 82.4, MECHAGON },
+							{ 21.4, 76.3, MECHAGON },
+							{ 22.7, 70.1, MECHAGON },
+							{ 23.1, 80.4, MECHAGON },
+							{ 24.0, 67.7, MECHAGON },
+							{ 25.0, 76.9, MECHAGON },
+							{ 25.2, 84.7, MECHAGON },
+							{ 25.5, 85.0, MECHAGON },
+						},
+						["groups"] = { i(169241) },	-- Family Jewelry (QI!)
+					}),
 				},
 			}),
 			q(56053, {	-- The Final Act
@@ -1019,7 +1042,30 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 63.2, 43.0, MECHAGON },
 				["isDaily"] = true,
 				["groups"] = {
-					i(168246),	-- Golden Cogpaste (QI!)
+					o_repeated({	-- Golden Cogpaste
+						["coords"] = {
+							{ 67.0, 63.9, MECHAGON },
+							{ 67.9, 60.4, MECHAGON },
+							{ 69.3, 57.4, MECHAGON },
+							{ 69.8, 65.5, MECHAGON },
+							{ 70.4, 57.4, MECHAGON },
+							{ 70.4, 58.0, MECHAGON },
+							{ 70.4, 64.3, MECHAGON },
+							{ 71.7, 62.2, MECHAGON },
+							{ 73.4, 58.4, MECHAGON },
+							{ 75.4, 64.2, MECHAGON },
+							{ 75.7, 57.4, MECHAGON },
+							{ 77.1, 61.0, MECHAGON },
+							{ 80.2, 63.2, MECHAGON },
+							{ 80.6, 60.4, MECHAGON },
+							{ 81.4, 63.6, MECHAGON },
+						},
+						["groups"] = {
+							i(168246),	-- Golden Cogpaste (QI!)
+							o(325976),	-- Golden Cogpaste
+							o(325980),	-- Golden Cogpaste
+						},
+					})
 				},
 			}),
 			q(54922, {	-- The Nuts and Bolts of It

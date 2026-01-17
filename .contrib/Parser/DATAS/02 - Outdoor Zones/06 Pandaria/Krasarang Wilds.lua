@@ -596,7 +596,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30169, {	-- Raid Leader Slovan
 						["qg"] = 58278,	-- Tired Shushen <Waterspeaker>
-						["coord"] = { 29.7, 39, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(88387),	-- Shushen's Spittoon (TOY!)
 						},
@@ -899,7 +899,7 @@ root(ROOTS.Zones, {
 					}),
 					q(30168, {	-- Thieving Raiders
 						["qg"] = 58278,	-- Tired Shushen
-						["coord"] = { 29.7, 39, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(78958),	-- Pillaged Jinyu Loot (QI!)
 							i(81532),	-- Silkspawn Carving
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, {
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
 						["provider"] = { "i", 90172 },	-- Clamshell Band
 						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
-						["coord"] = { 12.6, 82, KRASARANG_WILDS },
+						["coord"] = { 12.6, 82.0, KRASARANG_WILDS },
 						["cost"] = {
 							{ "i", 90170, 1 },	-- Clamstok's Clamshell [Dread Wastes]
 							{ "i", 90169, 1 },	-- Damlak's Clamshell [Krasarang Wilds]
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50352, {	-- Qu'nas
-						["coord"] = { 67.2, 23, KRASARANG_WILDS },
+						["coord"] = { 67.2, 23.0, KRASARANG_WILDS },
 						["groups"] = {
 							i(90717),	-- Qu'nas' Apocryphal Legplates
 						},

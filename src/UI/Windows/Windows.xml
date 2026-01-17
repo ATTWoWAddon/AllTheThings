@@ -3,6 +3,7 @@
 	<Script file="Prime.lua"/>
 	<Script file="Achievements.lua"/>
 	<Script file="Account Management.lua"/>
+	<Script file="Added With Patch.lua"/>
 	<Script file="Attunements.lua"/>
 	<Script file="Auctions.lua"/>
 	<Script file="Battle Pets.lua"/>
@@ -16,6 +17,7 @@
 	<Script file="Filter Specific Things.lua"/>
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
+	<Script file="Future Unobtainables.lua"/>
 	<Script file="Heirlooms.lua"/>
 	<Script file="Hidden Achievement Triggers.lua"/>
 	<Script file="Hidden Quest Triggers.lua"/>
@@ -38,7 +40,6 @@
 	<Script file="Random.lua"/>
 	<Script file="Removed From Game.lua"/>
 	<Script file="Removed With Patch Drops.lua"/>
-	<Script file="Removed With Patch Loot.lua"/>
 	<Script file="Season of Discovery.lua"/>
 	<Script file="Soft Reserves.lua"/>
 	<Script file="Titles.lua"/>

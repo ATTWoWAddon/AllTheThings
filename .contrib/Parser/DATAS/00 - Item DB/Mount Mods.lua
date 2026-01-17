@@ -452,7 +452,6 @@ i(213561, 79690);	-- Winding Slitherdrake: Void Scales
 ------------------
 -- PATCH 11.0.0 --
 ------------------
---- NYI ---
 i(223510, 82177);	-- Delver's Dirigible Schematic: Template
 
 ------------------
@@ -526,7 +525,6 @@ i(235691, 82191);	-- Delver's Dirigible Schematic: Yellow Paint
 i(238178, 88814);	-- Delver's Mana-Skimmer Schematic: Canister
 i(238177, 88816);	-- Delver's Mana-Skimmer Schematic: Emitter
 i(238181, 88820);	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
+i(238182, 88819);	-- Delver's Mana-Skimmer Schematic: Hyperdrive
 i(238179, 88815);	-- Delver's Mana-Skimmer Schematic: Quad Glider
 i(238180, 88817);	-- Delver's Mana-Skimmer Schematic: Void Paint
---- UNSORTED ---
-i(238182, 88819);	-- Delver's Mana-Skimmer Schematic: Hyperdrive

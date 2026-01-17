@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82266, {	-- Tower Washing Simulator
-					["coord"] = { 37, 34.1, NERUBAR },
+					["coord"] = { 37.0, 34.1, NERUBAR },
 					["groups"] = {
 						i(223220),	-- Kaheti All-Purpose Cleanser (QI!)
 					},

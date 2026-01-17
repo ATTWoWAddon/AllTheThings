@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
@@ -11,14 +11,13 @@ app:CreateWindow("Missing Quests", {
 		"attquestie",
 		"attmq",
 	},
-	IsQuestieLoaded = false,
-	OnRebuild = function(self, ...)
-		if self.data then return; end
+	HideFromSettings = true,
+	OnInit = function(self, handlers)
 		self.data = {
 			text = "Missing Quests",
 			icon = app.asset("Interface_Quest"),
 			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
-			visible = true, 
+			visible = true,
 			expanded = true,
 			back = 1,
 			options = {
@@ -40,7 +39,8 @@ app:CreateWindow("Missing Quests", {
 				},
 			},
 			OnUpdate = function(data)
-				if not self.IsQuestieLoaded then return; end
+				local QuestieDB = self.QuestieDB;
+				if not QuestieDB then return; end
 				if not data.g then
 					data.g = {};
 					for i,header in ipairs(data.options) do
@@ -48,11 +48,8 @@ app:CreateWindow("Missing Quests", {
 						tinsert(data.g, header);
 					end
 				end
-				
+
 				local MissingQuestsFromATT, MissingQuestsFromQuestie = {}, {};
-				local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
-				if not QuestieDB.QuestPointers then return; end
-				
 				local MissingQuestsFromATTDict, MissingQuestsFromQuestieDict = {}, {};
 				for id,_ in pairs(ATTAccountWideData.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
@@ -80,7 +77,7 @@ app:CreateWindow("Missing Quests", {
 						tinsert(MissingQuestsFromATT, id);
 					end
 				end
-				
+
 				for id,questData in pairs(SearchForFieldContainer("questID")) do
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
@@ -95,7 +92,7 @@ app:CreateWindow("Missing Quests", {
 						end
 					end
 				end
-				
+
 				-- Build a summary for ATT
 				local parent, g = data.options[1], {};
 				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
@@ -127,7 +124,7 @@ app:CreateWindow("Missing Quests", {
 					tinsert(g, quest);
 				end
 				if #g > 0 then parent.g = g; end
-				
+
 				-- Build a summary for Questie
 				local parent, g = data.options[2], {};
 				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Values);
@@ -147,9 +144,9 @@ app:CreateWindow("Missing Quests", {
 					tinsert(g, quest);
 				end
 				if #g > 0 then parent.g = g; end
-				
+
 				-- Build a Sourced ATT structure for Questie
-				local parent, g = data.options[3], {};
+				local parent = data.options[3]
 				local MissingQuestsFromQuestieDict = {};
 				for i,questID in ipairs(MissingQuestsFromQuestie) do
 					MissingQuestsFromQuestieDict[questID] = true;
@@ -171,23 +168,33 @@ app:CreateWindow("Missing Quests", {
 		};
 		app:StartATTCoroutine("Waiting For Questie...", function()
 			coroutine.yield();
-			while not (Questie and Questie.started) do
+			local waiter = 200;
+			while not QuestieLoader do
+				coroutine.yield();
+				waiter = waiter - 1;
+				if waiter < 0 then
+					return;
+				end
+			end
+			local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
+			while not QuestieDB.QuestPointers do
 				coroutine.yield();
 			end
-			self.IsQuestieLoaded = true;
+			self.QuestieDB = QuestieDB;
 			self:Update(true);
 		end);
 	end,
 	OnUpdate = function(self, ...)
 		-- Force Debug Mode
+		local rawSettings = app.Settings:GetRawSettings("General");
 		local debugMode = app.MODE_DEBUG;
 		if not debugMode then
-			AllTheThingsSettings.General.DebugMode = true;
+			rawSettings.DebugMode = true;
 			app.Settings:UpdateMode();
 		end
 		self:DefaultUpdate(...);
 		if not debugMode then
-			AllTheThingsSettings.General.DebugMode = debugMode;
+			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
 		return false;

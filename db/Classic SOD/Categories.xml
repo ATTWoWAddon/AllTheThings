@@ -10,6 +10,7 @@
 	<Script file="Categories/Professions.lua"/>
 	<Script file="Categories/Promotions.lua"/>
 	<Script file="Categories/PVP.lua"/>
+	<Script file="Categories/SeasonOfDiscovery.lua"/>
 	<Script file="Categories/Skills.lua"/>
 	<Script file="Categories/Unsorted.lua"/>
 	<Script file="Categories/WorldDrops.lua"/>

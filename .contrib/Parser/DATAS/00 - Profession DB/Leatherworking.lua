@@ -2626,4 +2626,4 @@ i(0, 1260328);		-- Zhevra-Stripe Rug
 i(257033, 1261081);	-- Blackrock Bunkbed
 i(257058, 1261122);	-- Orcish Sleeping Cot
 --- NYI---
---r(1269498);		-- Snowfall Tribe Scare-Totem [Not Working?/Duplicate?]
+i(0, 1269498);		-- Snowfall Tribe Scare-Totem

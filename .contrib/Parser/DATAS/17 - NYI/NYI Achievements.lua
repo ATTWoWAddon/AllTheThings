@@ -643,59 +643,54 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- CREATED_11_0_0
+		-- 11.0.0
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			ach(18830),	-- Level 2
-			ach(20512),	-- Herding Cats
-			ach(40099),	-- That Extra Push Over the Cliff
-			ach(40101),	-- Hitting one's Stride
-			ach(40102),	-- Dawn of a new Delve
-			ach(40265),	-- [PH] The Silken Court Achievement
-			ach(40306),	-- Allied Races: Earthen
-			ach(40432),	-- Nemesis (Solo)
-			ach(40505),	-- Fate of the Kirin Tor
-			ach(40510),	-- One Ping Only
-			ach(40511),	-- Rare Within
-			ach(40619),	-- Mine Poppin'
-
-			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
-
-			-- 11.0.0.55000
-			ach(40750),	-- Treasure Trove Keys obtained
-
-			-- 11.0.0.54675
+			ach(40306),	-- Allied Races: Earthen
 			ach(40509),	-- Awakening The Machine: Wave 10
-
-			-- 11.0.0.54774
 			ach(40586),	-- Awakening The Machine: Wave 20
 			ach(40587),	-- Awakening The Machine: Wave 30
 			ach(40588),	-- Awakening The Machine: Wave 40
 			ach(40589),	-- Awakening The Machine: Wave 50
+			ach(40102),	-- Dawn of a new Delve
+			ach(40505),	-- Fate of the Kirin Tor
+			ach(20512),	-- Herding Cats
+			ach(40101),	-- Hitting one's Stride
+			ach(18830),	-- Level 2
+			ach(40619),	-- Mine Poppin'
+			ach(40432),	-- Nemesis (Solo)
+			ach(40510),	-- One Ping Only
+			ach(40511),	-- Rare Within
+			ach(40099),	-- That Extra Push Over the Cliff
+			ach(40750),	-- Treasure Trove Keys obtained
+			ach(40265),	-- [PH] The Silken Court Achievement
 		})),
 
-		-- CREATED_11_0_7
+		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,07), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
-			-- 11.0.7.57361
-			ach(41219),	-- Explore Siren Isle => Appeared in build 11.0.7.57361, but hasn't been seen since
+			ach(41219),	-- Explore Siren Isle
 		})),
 
-		-- CREATED_11_1_5
+		-- 11.1.5
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
-			-- 11.1.5.60008
-			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
 			ach(41700),	-- Dastardly Duos Weekly Wins
+			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
 		})),
 
-		-- CREATED_11_1_7
+		-- 11.1.7
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
-			-- 11.1.7.60520
-			ach(42028),	-- Ashes to Ashes (Temporary home as this will likely return / is planned for Legion Remix, but missing files keeps picking up the commented version)
+			ach(42028),	-- Ashes to Ashes
+		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+			ach(51753),	-- Azsuna Matata
 		})),
 	}),
 	expansion(EXPANSION.MID, {
-		-- CREATED_12_0_0
+		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+
 		})),
 	}),
 	-- #endif

@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 			}),
 			prof(ENCHANTING, {
 				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
-					["coord"] = { 47.0, 35.8, THE_GREAT_SEAL },
+					["coord"] = { 47.1, 35.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(BFA_ENCHANTING, {
 						r(265805),	-- Zandalari Enchanting
@@ -121,64 +121,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 				}),
 			}),
 			prof(SKINNING, {
-				-- Bone Gathering
-				q(52216, {	-- Hexoskeleton
-					["description"] = "Requires 50 Zandalari Skinning",
-					["provider"] = { "n", 122699 },	-- Rana the Cutta
-					["coord"] = { 43.8, 34.7, DAZARALOR },
-					["requireSkill"] = SKINNING,
+				n(122699, {	-- Rana the Cutta <Skinning Trainer>
+					["coord"] = { 43.8, 34.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						recipe(257153),	-- Skinning Technique: Bone Gathering (Rank 2)
-						i(161434),	-- Unbroken Makrura Carapace (QI!)
-					},
-				}),
-				q(52217, {	-- Loa Fit For A King
-					["description"] = "Requires 150 Zandalari Skinning",
-					["sourceQuest"] = 52216,	-- Hexoskeleton
-					["provider"] = { "n", 122699 },	-- Rana the Cutta
-					["coord"] = { 43.8, 34.7, DAZARALOR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)
-						i(161435),	-- Rezan's Bone Splinter (QI!)
-					},
-				}),
-				-- Leather Gathering
-				q(51575, {	-- Lost But Not Forgotten
-					["description"] = "Requires 50 Zandalari Skinning",
-					["provider"] = { "n", 122699 },	-- Rana the Cutta
-					["coord"] = { 43.8, 34.7, DAZARALOR },
-					["requireSkill"] = SKINNING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
-						i(161430),	-- Rana's 'Ancient Artifact' (QI!)
-					},
-				}),
-				-- Scale Gathering
-				q(52214, {	-- Ceremonial Vestments
-					["description"] = "Requires 50 Zandalari Skinning",
-					["provider"] = { "n", 122699 },	-- Rana the Cutta
-					["coord"] = { 43.8, 34.7, DAZARALOR },
-					["requireSkill"] = SKINNING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						recipe(257150),	-- Skinning Technique: Scale Gathering (Rank 2)
-						i(161432),	-- Pristine Crocolisk Skin (QI!)
-					},
-				}),
-				q(52215, {	-- A Thicker Thread
-					["description"] = "Requires 150 Zandalari Skinning",
-					["sourceQuest"] = 52214,	-- Ceremonial Vestments
-					["provider"] = { "n", 122699 },	-- Rana the Cutta
-					["coord"] = { 43.8, 34.7, DAZARALOR },
-					["requireSkill"] = SKINNING,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
-						i(161433),	-- Thick Webbing (QI!)
-					},
+					["groups"] = appendGroups(BFA_SKINNING, {
+						r(265871),	-- Skinning (Zandalari)
+					}),
 				}),
 			}),
 			prof(TAILORING, {

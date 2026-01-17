@@ -273,7 +273,7 @@ namespace ATT
             catch (FormatException configException)
             {
                 Trace.WriteLine(configException);
-                Framework.WaitForUser();
+                Framework.WaitForUser("Press any key to close...");
                 return ErrorCode;
             }
 
@@ -419,8 +419,7 @@ namespace ATT
                 {
                     Trace.WriteLine("Could not find the '_main.lua' header file.");
                     Trace.WriteLine("Operation cannot continue without it.");
-                    Trace.WriteLine("Press Enter to Close.");
-                    Framework.WaitForUser();
+                    Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
                 }
                 Framework.CurrentFileName = mainFileName;
@@ -564,7 +563,7 @@ namespace ATT
                 catch (Exception e)
                 {
                     Framework.LogException(e);
-                    Framework.WaitForUser();
+                    Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
                 }
 
@@ -617,6 +616,7 @@ namespace ATT
                 if (Errored)
                 {
                     Trace.WriteLine("-- Errors encountered during Processing. Please fix them to allow exporting addon DB properly.");
+                    Framework.WaitForUser("Press any key to close...");
                     return ErrorCode;
                 }
 
@@ -669,6 +669,7 @@ namespace ATT
             {
                 Framework.LogException(e);
                 Trace.WriteLine("-- Exception encountered during Parse. Please fix them to allow exporting addon DB properly.");
+                Framework.WaitForUser("Press any key to close...");
             }
 
             return ErrorCode;

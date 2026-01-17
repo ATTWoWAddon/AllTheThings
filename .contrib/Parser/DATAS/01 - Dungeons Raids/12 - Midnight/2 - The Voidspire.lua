@@ -38,7 +38,7 @@ local EncounterToLoot = {
 		i(249313),	-- Light-Judged Spaulders
 		i(249326),	-- Light's March Bracers
 		i(249310),	-- Robes of the Voidbound
-		i(249320),	-- Sabatons of Obscurment
+		i(249320),	-- Sabatons of Obscurement
 		i(249279),	-- Sunstrike Rifle
 		i(249334),	-- Void-Claimed Shinkickers
 		i(249293),	-- Weight of Command
@@ -204,7 +204,6 @@ InstanceHelper.UpgradeMapping = {
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
-		["timeline"] = { ADDED_12_0_0 },
 		--["maps"] = {
 
 		--},

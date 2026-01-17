@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(413784, {	-- Self-Baking Herb Based Cookies
 				["questID"] = 78834,
-				["coord"] = { 59.6, 19, EMERALD_DREAM },
+				["coord"] = { 59.6, 19.0, EMERALD_DREAM },
 				["isDaily"] = true,
 				["groups"] = {
 					i(210346),	-- Self-Baking Herb Based Cookies

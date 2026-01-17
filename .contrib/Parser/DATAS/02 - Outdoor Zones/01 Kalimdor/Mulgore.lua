@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(QUESTS, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
-							["coord"] = { 44.2, 76, MULGORE },
+							["coord"] = { 44.2, 76.0, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #else
 								{ 44.9, 77.1, MULGORE },
 								-- #endif
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27014,	-- Hallowed Note
 							["qg"] = 37724,	-- Seer Ravenfeather <Priest Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45, 75.2, MULGORE },
+							["coord"] = { 45.0, 75.2, MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
 							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
-							["coord"] = { 45, 76, MULGORE },
+							["coord"] = { 45.0, 76.0, MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["races"] = { TAUREN },
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
-							["coord"] = { 44, 76, MULGORE },
+							["coord"] = { 44.0, 76.0, MULGORE },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { TAUREN },
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -351,9 +351,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45, 75, CAMP_NARACHE },
+								{ 45.0, 75.0, CAMP_NARACHE },
 								-- #else
-								{ 45, 76, MULGORE },
+								{ 45.0, 76.0, MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #else
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(757, {	-- Rite of Strength
 							["sourceQuest"] = 755,	-- Rites of the Earthmother (1/3)
 							["qg"] = 2982,	-- Seer Graytongue
-							["coord"] = { 42.6, 92, MULGORE },
+							["coord"] = { 42.6, 92.0, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 15.4, 30.4, CAMP_NARACHE },
 								-- #else
-								{ 41.2, 76, MULGORE },
+								{ 41.2, 76.0, MULGORE },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -563,7 +563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #else
 								{ 44.9, 77.1, MULGORE },
 								-- #endif
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #else
 								{ 44.9, 77.1, MULGORE },
 								-- #endif
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 3091,	-- Simple Note
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45, 75.6, MULGORE },
+							["coord"] = { 45.0, 75.6, MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -748,7 +748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27015,	-- Consecrated Note
 							["qg"] = 37737,	-- Sunwalker Helaku <Paladin Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 45, 75.6, MULGORE },
+							["coord"] = { 45.0, 75.6, MULGORE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
 								-- #elseif AFTER CATA
-								{ 49, 78.2, MULGORE },
+								{ 49.0, 78.2, MULGORE },
 								-- #else
 								{ 44.9, 77.1, MULGORE },
 								-- #endif
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/6 Broken Tools
 							["provider"] = { "i", 4703 },	-- Broken Tools
 							["cost"] = {{ "i", 4702, 1 }},	-- Prospector's Pick
-							["coord"] = { 34, 46, MULGORE },
+							["coord"] = { 34.0, 46.0, MULGORE },
 							["crs"] = {
 								2990,	-- Bael'dun Appraiser
 								2989,	-- Bael'dun Digger
@@ -1032,7 +1032,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14439, {	-- Journey into Thunder Bluff
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["qg"] = 2994,	-- Ancestral Spirit
-					["coord"] = { 61.4, 21, MULGORE },
+					["coord"] = { 61.4, 21.0, MULGORE },
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(775, {	-- Journey into Thunder Bluff
 					["sourceQuest"] = 773,	-- Rite of Wisdom
 					["qg"] = 2994,	-- Ancestral Spirit
-					["coord"] = { 61.4, 21, MULGORE },
+					["coord"] = { 61.4, 21.0, MULGORE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(766, {	-- Mazzranache
 					["qg"] = 3055,	-- Maur Raincaller
-					["coord"] = { 47, 57, MULGORE },
+					["coord"] = { 47.0, 57.0, MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -1792,7 +1792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Cleanse the Thunderhorn Water Well
 							["provider"] = { "i", 5415 },	-- Thunderhorn Cleansing Totem
-							["coord"] = { 44, 45, MULGORE },
+							["coord"] = { 44.0, 45.0, MULGORE },
 						}),
 						i(4963, {	-- Thunderhorn Cloak
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1908,7 +1908,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Cleanse the Wildmane Well
 							["provider"] = { "i", 5416 },	-- Wildmane Cleansing Totem
-							["coord"] = { 43, 14, MULGORE },
+							["coord"] = { 43.0, 14.0, MULGORE },
 						}),
 						i(3443, {	-- Ceremonial Tomahawk
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1971,7 +1971,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Cleanse the Winterhoof Water Well
 							["provider"] = { "i", 5411 },	-- Winterhoof Cleansing Totem
-							["coord"] = { 53, 66, MULGORE },
+							["coord"] = { 53.0, 66.0, MULGORE },
 						}),
 					},
 				}),
@@ -2031,7 +2031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
 					["description"] = "You can tame him and you still get the rune!",
-					["coord"] = { 36, 57, MULGORE },
+					["coord"] = { 36.0, 57.0, MULGORE },
 					["cost"] = {{ "i", 205961, 1 }},	-- Mulgore Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking

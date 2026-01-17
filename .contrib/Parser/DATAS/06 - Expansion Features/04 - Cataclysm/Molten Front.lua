@@ -784,15 +784,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Northwestern Lava Pool sampled
 							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
-							["coord"] = { 21, 29, THE_MOLTEN_FRONT },
+							["coord"] = { 21.0, 29.0, THE_MOLTEN_FRONT },
 						}),
 						objective(2, {	-- 0/1 Northeastern Lava Pool sampled
 							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
-							["coord"] = { 30, 31, THE_MOLTEN_FRONT },
+							["coord"] = { 30.0, 31.0, THE_MOLTEN_FRONT },
 						}),
 						objective(3, {	-- 0/1 Central Lava Pool sampled
 							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
-							["coord"] = { 23, 40, THE_MOLTEN_FRONT },
+							["coord"] = { 23.0, 40.0, THE_MOLTEN_FRONT },
 						}),
 						currency(416),	-- Mark of the World Tree (x1)
 					},
@@ -1173,7 +1173,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53243 },	-- Injured Druid of the Talon
 								{ "i", 69837 },	-- Arthorn's Injury Kit
 							},
-							["coord"] = { 26, 36.4, THE_MOLTEN_FRONT },
+							["coord"] = { 26.0, 36.4, THE_MOLTEN_FRONT },
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
@@ -1372,7 +1372,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53152 },	-- Charhound
 								{ "n", 54339 },	-- Ancient Charhound
 							},
-							["coord"] = { 48.4, 72, THE_MOLTEN_FRONT },
+							["coord"] = { 48.4, 72.0, THE_MOLTEN_FRONT },
 						}),
 						currency(416),	-- Mark of the World Tree (x1)
 					},
@@ -1576,7 +1576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 52871 },	-- Druid of the Flame
 								{ "n", 52872 },	-- Druid of the Flame
 							},
-							["coord"] = { 47.8, 73, THE_MOLTEN_FRONT },
+							["coord"] = { 47.8, 73.0, THE_MOLTEN_FRONT },
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},

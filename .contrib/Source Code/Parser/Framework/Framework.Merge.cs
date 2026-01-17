@@ -149,6 +149,9 @@ namespace ATT
                     case "SpellDB":
                         MergeSpellDB(pair.Value);
                         break;
+                    case "QuestDB":
+                        DBMerge(pair.Value, "questID");
+                        break;
                     case "ItemSpeciesDB":
                         {
                             // The format of the Item Species DB is a dictionary of item ID -> Values.

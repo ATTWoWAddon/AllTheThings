@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["timeline"] = { ADDED_9_0_5, REMOVED_9_1_0 },
 			}),
 			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
-				title(431),	-- <Name> the Proud (TITLE!)
+				title(431),	-- <Name> the Proud
 			}),
 			ach(14532, {	-- Shadowlands Keystone Master: Season One
 				i(182717),	-- Sintouched Deathwalker (MOUNT!)
@@ -30,13 +30,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		},{
 			ach(15073),		-- Shadowlands Keystone Explorer: Season Two
 			ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
-				title(446),	-- <Name> the Tormented (TITLE!)
+				title(446),	-- <Name> the Tormented
 			}),
 			ach(15078, {	-- Shadowlands Keystone Master: Season Two
 				i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 			}),
 			ach(15327, {	-- Tormented Hero: Shadowlands Season 2
-				title(451),	-- <Name> the Tormented Hero (TITLE!)
+				title(451),	-- <Name> the Tormented Hero
 			}),
 			-- Keystone Hero
 			ach(15051, {	-- Keystone Hero: De Other Side
@@ -69,14 +69,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		},{
 			ach(15496),		-- Shadowlands Keystone Explorer: Season Three
 			ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
-				title(457),	-- <Name> the Cryptic (TITLE!)
+				title(457),	-- <Name> the Cryptic
 			}),
 			ach(15499, {	-- Shadowlands Keystone Master: Season Three
 				i(187682),	-- Wastewarped Deathwalker (MOUNT!)
 			}),
 			ach(15506),		-- Shadowlands Keystone Hero: Season Three
 			ach(15691, {	-- Cryptic Hero: Shadowlands Season 3
-				title(458),	-- <Name> the Cryptic Hero (TITLE!)
+				title(458),	-- <Name> the Cryptic Hero
 			}),
 			-- Keystone Hero
 			ach(15051, {	-- Keystone Hero: De Other Side
@@ -114,13 +114,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		},{
 			ach(15688),		-- Shadowlands Keystone Explorer: Season Four
 			ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
-				title(465),	-- <Name> the Shrouded (TITLE!)
+				title(465),	-- <Name> the Shrouded
 			}),
 			ach(15690, {	-- Shadowlands Keystone Master: Season Four
 				i(192557),	-- Restoration Deathwalker (MOUNT!)
 			}),
 			ach(15756, {	-- Shrouded Hero: Shadowlands Season 4
-				title(466),	-- <Name> the Shrouded Hero (TITLE!)
+				title(466),	-- <Name> the Shrouded Hero
 			}),
 			-- Keystone Hero
 			ach(15695, {	-- Keystone Hero: Grimrail Depot

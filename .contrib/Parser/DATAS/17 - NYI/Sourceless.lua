@@ -59,7 +59,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(155467),	-- Banisher Chestpiece
 					i(155470),	-- Banisher Headcover
 					i(155472),	-- Banisher Shoulderguards
-					i(155473),	-- Banisher Cinch
 					i(158604),	-- Banisher Mitts
 					i(160198),	-- Banisher Britches
 					i(160863),	-- Banisher Mantle
@@ -271,7 +270,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(207775),	-- Grotto Netherwing Drake: Teal Scales (MM!)
 			})),
 		}),
-
+		expansion(EXPANSION.TWW, {
+			-- 11.0.0
+			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				i(223510),	-- Delver's Dirigible Schematic: Template (MM!)
+			})),
+		}),
 	}),
 	n(FOLLOWERS, {
 		expansion(EXPANSION.SL, {
@@ -450,7 +454,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 7.3.2
 			expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 } }, {
-				q(49619),	-- completed some missions on the Legion Mission Board
+				q(49619),	-- completed Scour the Surface mission
 				q(49620),	-- completed some missions on the Legion Mission Board
 				q(49621),	--
 			})),

@@ -29,7 +29,7 @@ local TryColorizeName = app.TryColorizeName
 local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-local GetUnobtainableTexture = app.GetUnobtainableTexture
+local GetIndicatorIcon = app.GetIndicatorIcon;
 local wipearray = app.wipearray
 
 app.Windows = {};
@@ -114,6 +114,9 @@ local function ProcessGroup(data, object)
 			ProcessGroup(data, g[i]);
 		end
 	end
+end
+local function AssignChildrenForWindow(self)
+	AssignChildren(self.data);
 end
 -- TODO: instead of requiring 'got' parameter to indicate something was collected
 -- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
@@ -276,8 +279,8 @@ local function SetPortraitIcon(self, data)
 			self.Border:SetWidth(self:GetHeight());
 			self.Border:Show();
 			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+				local swatches = data["atlas-color"] or app.EmptyTable;
+				self.Border:SetVertexColor(swatches[1] or 1, swatches[2] or 1, swatches[3] or 1, swatches[4] or 1);
 			else
 				self.Border:SetVertexColor(1, 1, 1, 1.0);
 			end
@@ -296,30 +299,6 @@ local function SetPortraitIcon(self, data)
 	-- anything without an icon ends up with weird spacing in lists
 	self:SetTexture(QUESTION_MARK_ICON);
 	return true
-end
--- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
- local function GetIndicatorIcon(group)
-	-- Use the group's own indicator if defined
-	local groupIndicator = group.indicatorIcon
-	if groupIndicator then return groupIndicator end
-
-	-- Otherwise use some common logic
-	if group.saved then
-		if group.parent and group.parent.locks or group.repeatable then
-			return app.asset("known");
-		else
-			return app.asset("known_green");
-		end
-	end
-	return GetUnobtainableTexture(group);
-end
-app.GetIndicatorIcon = GetIndicatorIcon
-local function SetIndicatorIcon(self, data)
-	local texture = GetIndicatorIcon(data);
-	if texture then
-		self:SetTexture(texture);
-		return true;
-	end
 end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
@@ -345,7 +324,7 @@ local function GetCatalystIcon(data, iconOnly)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.isCost or data.isOwnedCost then
+	if data.isCost or data.isOwnedCost or (data.progress == data.total and data.costTotal > 0) then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
@@ -381,7 +360,7 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 	end
 end
 local __Text = {}
-local function GetProgressTextForRow(data)
+local function GetProgressTextForRow(data, forceTracking)
 	-- build the row text from left to right with possible info
 	-- Reagent (show reagent icon)
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
@@ -414,6 +393,8 @@ local function GetProgressTextForRow(data)
 	local stateIcon = GetCollectibleIcon(data, true)
 	if stateIcon then
 		__Text[#__Text + 1] = stateIcon
+		-- don't need to force tracking icon since it's a collectible Thing directly
+		forceTracking = nil
 	end
 	-- Container
 	local isContainer = data.isContainer
@@ -433,7 +414,7 @@ local function GetProgressTextForRow(data)
 	end
 
 	-- Trackable (Only if no other text available)
-	if #__Text == 0 then
+	if #__Text == 0 or forceTracking then
 		stateIcon = GetTrackableIcon(data, true)
 		if stateIcon then
 			__Text[#__Text + 1] = stateIcon
@@ -564,9 +545,11 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 4;
 		end
-		local rowIndicator = row.Indicator;
 		-- indicator is always attached to the Texture
-		if SetIndicatorIcon(rowIndicator, data) then
+		local texture = GetIndicatorIcon(data);
+		if texture then
+			local rowIndicator = row.Indicator;
+			rowIndicator:SetTexture(texture);
 			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
 			rowIndicator:Show();
 		end
@@ -754,7 +737,7 @@ local function Refresh(self)
 		local row = GameTooltip:GetOwner()
 		if row and row.__ref ~= row.ref then
 			-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
-			-- force tooltip to refresh since the scroll has changed for but the tooltip is still visible
+			-- force tooltip to refresh since the scroll has changed but the tooltip is still visible
 			local OnLeave = row:GetScript("OnLeave")
 			local OnEnter = row:GetScript("OnEnter")
 			OnLeave(row)
@@ -1036,11 +1019,12 @@ function app:GetWindow(suffix, parent, onUpdate)
 	app.Windows[suffix] = window;
 	window.Suffix = suffix;
 	window.Toggle = Toggle;
-	local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
-	window.BaseUpdate = function(...) UpdateWindow(...) end;
-	window.Update = function(...) updateFunc(...) end;
-	window.Refresh = function(...) Refresh(...) end;
+	local onUpdateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+	window.AssignChildren = AssignChildrenForWindow;
+	window.DefaultUpdate = function(...) return UpdateWindow(...) end;
+	window.Update = function(...) return onUpdateFunc(...) end;
+	window.Refresh = function(...) return Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
 	window.SetVisible = SetVisible;
@@ -1143,11 +1127,19 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:Update();
 	return window;
 end
+function app:CreateWindow(suffix, settings)
+	-- TODO: Properly implement or use the classic version of CreateWindow.
+	if settings then
+		if settings.OnUpdate then
+			app.AddCustomWindowOnUpdate(suffix, settings.OnUpdate);
+		end
+	end
+	return app:GetWindow(suffix);
+end
 
 -- TODO: Refactoring
 -- Some windows still new to be 'loaded' so they can setup their logic about when to show/hide
 app.AddEventHandler("OnReady", function()
-	app:GetWindow("AuctionData")
 	app:GetWindow("Tradeskills")
 end)
 app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
@@ -1373,7 +1365,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 			end
 			-- Add Timerunning filter to the popout
 			popout.Filters = not popout.isQuestChain and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
-			self:BaseUpdate(force or got, got);
+			self:DefaultUpdate(force or got, got);
 		end
 
 		app.HandleEvent("OnNewPopoutGroup", popout.data)
@@ -1432,7 +1424,7 @@ else
 		= C_ContentTracking.IsTracking, C_ContentTracking.StartTracking, C_ContentTracking.StopTracking
 	app.AddContentTracking = function(group)
 		-- if this group is currently tracked
-		local sourceID, mountID, achievementID = group.sourceID, group.mountJournalID, group.achievementID
+		local sourceID, mountID, achievementID, questID = group.sourceID, group.mountJournalID, group.achievementID, group.questID
 		local type = sourceID and 0
 					or mountID and 1
 					or achievementID and 2
@@ -1449,6 +1441,17 @@ else
 				StartTracking(type, id)
 			end
 			return true
+		end
+		-- Quests can be tracked using another API
+		if questID then
+			-- Add tracking
+			if C_QuestLog.AddQuestWatch(questID) or C_QuestLog.AddWorldQuestWatch(questID) then
+				return true
+			end
+			-- Remove tracking
+			if C_QuestLog.RemoveQuestWatch(questID) or C_QuestLog.RemoveWorldQuestWatch(questID) then
+				return true
+			end
 		end
 	end
 end
@@ -1699,7 +1702,6 @@ app.AddEventHandler("RowOnLeave", function (self)
 	GameTooltip:ClearLines();
 	GameTooltip:Hide();
 end)
-local RowSearchSkipFillOptions = {SkipFill=true}
 app.AddEventHandler("RowOnEnter", function(self)
 	local reference = self.ref;
 	if not reference then return; end
@@ -1967,7 +1969,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 							end
 						end
 						if bestSpecID then
-							local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+							local id, name, _, icon = GetSpecializationInfo(bestSpecID);
 							if totalItems > 0 then
 								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);

@@ -7,7 +7,7 @@ RARES = createHeader({
 		-- #if AFTER TWW
 		en = [[~MAP_LEGEND_RARE]],
 		-- TODO: de = "",
-		-- TODO: es = "",
+		es = "Raro",
 		mx = "Raro",	-- this is to avoid use the word in female because blizz use "rara" from "criatura rara" and latam players say "raros" from "enemigos raros"
 		-- TODO: fr = "",
 		-- TODO: it = "",

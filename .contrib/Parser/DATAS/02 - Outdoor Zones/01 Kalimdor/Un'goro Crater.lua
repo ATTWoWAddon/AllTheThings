@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4491, {	-- A Little Help From My Friends
 					["sourceQuest"] = 4492,	-- Lost!
 					["qg"] = 9999,	-- Ringo
-					["coord"] = { 52, 50, UNGORO_CRATER },
+					["coord"] = { 52.0, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 174793 },	-- Gorishi Hive Hatchery
 								{ "i",  11132 },	-- Unused Scraping Vial
 							},
-							["coord"] = { 48, 85, UNGORO_CRATER },
+							["coord"] = { 48.0, 85.0, UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -621,7 +621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24723,	-- The Western Pylon
 					},
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 8 },	-- Red Power Crystal
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4384, {	-- Crystal Yield
 					["sourceQuest"] = 4321,	-- Making Sense of It
 					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11186, 10 },	-- Red Power Crystal
@@ -768,7 +768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  12472 },	-- Krackle's Thermometer
 								{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 							},
-							["coord"] = { 49, 45, UNGORO_CRATER },
+							["coord"] = { 49.0, 45.0, UNGORO_CRATER },
 						}),
 					},
 				}),
@@ -1040,7 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  11179 },	-- Golden Flame
 								{ "o", 164910 },	-- Ornate Chest
 							},
-							["coord"] = { 50.2, 50, UNGORO_CRATER },
+							["coord"] = { 50.2, 50.0, UNGORO_CRATER },
 						}),
 						i(11905, {	-- Linken's Boomerang
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1887,7 +1887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								{ 45.1, 25.6, FERALAS },
-								{ 44, 11, FERALAS },
+								{ 44.0, 11.0, FERALAS },
 							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
@@ -1915,7 +1915,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Discover and examine the Western Crystal Pylon
 							["provider"] = { "o", 164956 },	-- Western Crystal Pylon
-							["coord"] = { 23.8, 59.1, UNGORO_CRATER },
+							["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 						}),
 					},
 				}),

@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local SIGHTLESS_EYE = 1149;
 local VEILED_ARGUNITE = 1508;	-- Exo Note: Temp placement until it gets added to currencies
 
 root(ROOTS.Zones, {
@@ -16,15 +17,45 @@ root(ROOTS.Zones, {
 							["requireSkill"] = FISHING,
 						}),
 						ach(11066, {	-- Underbelly Tycoon
-							["cost"] = { { "c", 1149, 20000 } },	-- 20,000x Sightless Eyes
-							["groups"] = {
-								i(138387),	-- Ratstallion (MOUNT!)
-							},
+							["cost"] = { { "c", SIGHTLESS_EYE, 20000 } },
+							["groups"] = { i(138387) },	-- Ratstallion (MOUNT!)
 						}),
 					}),
 					petbattle(filter(BATTLE_PETS, {
 						pet(1915),	-- Blind Rat (PET!)
 					})),
+					n(QUESTS, {
+						q(43473, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+						q(43474, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+						q(43475, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+						q(43477, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+						q(43476, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+						q(43478, {	-- Experimental Potion: Test Subjects Needed
+							["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+							["coord"] = { 75.4, 83.4, LEGION_THE_UNDERBELLY },
+							["isDaily"] = true,
+						}),
+					}),
 					n(VENDORS, {
 						n(106056, {	-- Charles Seaton
 							["coord"] = { 74.2, 54.8, LEGION_THE_UNDERBELLY },
@@ -45,31 +76,23 @@ root(ROOTS.Zones, {
 							["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
 							["timeline"] = { ADDED_7_0_3 },
 							["groups"] = {
-								i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-									["timeline"] = { ADDED_7_0_3 },
-								}),
-								i(136927, {	-- Scarlet Confessional Book (TOY!)
-									["timeline"] = { ADDED_7_0_3 },
-								}),
-								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-									["timeline"] = { ADDED_7_0_3 },
-								}),
-								i(136972, {	-- Tome of Hex: Cockroach (CI!)
-									["timeline"] = { ADDED_7_0_3 },
-								}),
+								i(136803),	-- Dirty Tricks, Vol 1: Detection (CI!)
+								i(136927),	-- Scarlet Confessional Book (TOY!)
+								i(141056),	-- Technique: Glyph of Burnout (RECIPE!)
+								i(136972),	-- Tome of Hex: Cockroach (CI!)
 							},
 						}),
 						n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
 							["coord"] = { 66.2, 74.8, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137826, {	-- Design: Sorcerous Shadowruby Pendant [Rank 2]
-									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(139427, {	-- Wild Mana Wand
-									["cost"] = { { "c", 1149, 175 }, },	-- 175x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 175 } },
 								}),
 							},
 						}),
@@ -95,31 +118,31 @@ root(ROOTS.Zones, {
 							["coord"] = { 66.0, 79.9, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(139423, {	-- Croc Mojo
-									["cost"] = { { "c", 1149, 175 }, },	-- 175x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 175 } },
 								}),
 								i(128625, {	-- Formula: Leylight Brazier (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(138031, {	-- Portal Key: Abandoned Shack (CI!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(138030, {	-- Portal Key: Alchemists' Lair (CI!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(138028, {	-- Portal Key: Black Market (CI!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(138029, {	-- Portal Key: Inn Entrance (CI!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(138032, {	-- Portal Key: Rear Entrance (CI!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(138027, {	-- Portal Key: Sewer Guard Station (CI!)
-									["cost"] = { { "c", 1149, 50 }, },	-- 50x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 50 } },
 								}),
 								i(141058, {	-- Technique: Glyph of Critterhex (RECIPE!)
-									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 							},
 						}),
@@ -127,19 +150,17 @@ root(ROOTS.Zones, {
 							["coord"] = { 58.0, 58.1, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(137932, {	-- Pattern: Flaming Hoop (RECIPE!)
-									["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(137934, {	-- Pattern: Leather Pet Leash (RECIPE!)
-									["cost"] = { { "c", 1149, 50 }, },		-- 50x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 50 } },
 								}),
 								i(136904, {	-- Sewer-Pipe Jelly  (PET!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(139412, {	-- Young Mutant War Turtles
-									["cost"] = { { "c", 1149, 1500 }, },	-- 1,500x Sightless Eye
-									["groups"] = {
-										pet(1912),	-- Young Mutant Warturtle (PET!)
-									},
+									["cost"] = { { "c", SIGHTLESS_EYE, 1500 } },
+									["groups"] = { pet(1912) },	-- Young Mutant Warturtle (PET!)
 								}),
 							},
 						}),
@@ -147,16 +168,16 @@ root(ROOTS.Zones, {
 							["coord"] = { 47.0, 56.6, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(137828, {	-- Design: Twisted Pandemonite Choker [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(139425, {	-- Imp-Binding Contract
-									["cost"] = { { "c", 1149, 225 }, },		-- 225x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 225 } },
 								}),
-								i(139896, {	-- Skinning Technique: Legion Gutting
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+								i(139896, {	-- Skinning Technique: Legion Gutting (RECIPE!)
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(141066, {	-- Technique: Grimoire of the Voidlord (RECIPE!)
-									["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 							},
 						}),
@@ -164,10 +185,10 @@ root(ROOTS.Zones, {
 							["coord"] = { 67.4, 18.1, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(137831, {	-- Design: Vindictive Pandemonite Choker [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(141038, {	-- Technique: Glyph of Shadow-Enemies (RECIPE!)
-									["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 							},
 						}),
@@ -175,61 +196,61 @@ root(ROOTS.Zones, {
 							["coord"] = { 65.8, 80.8, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(137966, {	-- Pattern: Imbued Silkweave Cinch [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137974, {	-- Pattern: Imbued Silkweave Cinch [Rank 3] (RECIPE!)
 									["cost"] = {
-										{ "c", 1149, 500 },	-- 500x Sightless Eye
+										{ "c", SIGHTLESS_EYE, 500 },
 										{ "g", 15000000 },	-- 1,500g
 									},
 								}),
 								i(137954, {	-- Pattern: Silkweave Cinch [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137962, {	-- Pattern: Silkweave Cinch [Rank 3] (RECIPE!)
-									["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 500 } },
 								}),
 								i(137901, {	-- Pattern: Battlebound Girdle [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137913, {	-- Pattern: Battlebound Girdle [Rank 3] (RECIPE!)
-									["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 500 } },
 								}),
 								i(123949, {	-- Plans: Demonsteel Waistguard [Rank 3] (RECIPE!)
 									["cost"] = {
-										{ "c", 1149, 500 },	-- 500x Sightless Eye
+										{ "c", SIGHTLESS_EYE, 500 },
 										{ "g", 15000000 },	-- 1,500g
 									},
 								}),
 								i(137885, {	-- Pattern: Dreadleather Belt [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137893, {	-- Pattern: Dreadleather Belt [Rank 3] (RECIPE!)
 									["cost"] = {
-										{ "c", 1149, 500 },	-- 500x Sightless Eye
+										{ "c", SIGHTLESS_EYE, 500 },
 										{ "g", 15000000 },	-- 1,500g
 									},
 								}),
 								i(137917, {	-- Pattern: Gravenscale Girdle [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137925, {	-- Pattern: Gravenscale Girdle [Rank 3] (RECIPE!)
 									["cost"] = {
-										{ "c", 1149, 500 },	-- 500x Sightless Eye
+										{ "c", SIGHTLESS_EYE, 500 },
 										{ "g", 15000000 },	-- 1,500g
 									},
 								}),
 								i(123929, {	-- Plans: Leystone Waistguard [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(123937, {	-- Plans: Leystone Waistguard [Rank 3] (RECIPE!)
-									["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 500 } },
 								}),
 								i(137869, {	-- Pattern: Warhide Belt [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137881, {	-- Pattern: Warhide Belt [Rank 3] (RECIPE!)
-									["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 500 } },
 								}),
 							},
 						}),
@@ -237,22 +258,22 @@ root(ROOTS.Zones, {
 							["coord"] = { 71.5, 24.0, LEGION_THE_UNDERBELLY },
 							["groups"] = {
 								i(137829, {	-- Design: Subtle Shadowruby Pendant [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137706, {	-- Schematic: Gunpowder Charge [Rank 2] (RECIPE!)
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 								i(137720, {	-- Schematic: Gunpowder Charge [Rank 3] (RECIPE!)
 									["cost"] = {
-										{ "c", 1149, 500 },	-- 500x Sightless Eye
+										{ "c", SIGHTLESS_EYE, 500 },
 										{ "g", 15000000 },	-- 1,500g
 									},
 								}),
 								i(141057, {	-- Technique: Glyph of Flash Bang (RECIPE!)
-									["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 100 } },
 								}),
 								i(139426, {	-- Widowsister Contract
-									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
+									["cost"] = { { "c", SIGHTLESS_EYE, 250 } },
 								}),
 							},
 						}),

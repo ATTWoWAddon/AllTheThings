@@ -15,8 +15,8 @@
 ## Category-zhTW: 戰隊收藏
 ## Notes-enUS: Tracks your collection of mounts, pets, toys, transmog, and more.|nFilter to your liking, or try to collect all the things!|n|nNightly builds and weekly updates.
 ## Notes-deDE: Verfolgt deine Sammlung an Reittieren, Haustieren, Spielzeugen, Transmogs und mehr.|nFiltere nach Belieben oder versuche, alles zu sammeln!|n|nNächtliche Builds und wöchentliche Updates.
-## Notes-esES: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nConstrucciones nocturnas y actualizaciones semanales.
-## Notes-esMX: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nConstrucciones nocturnas y actualizaciones semanales.
+## Notes-esES: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nCompilaciones nocturnas y actualizaciones semanales.
+## Notes-esMX: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nCompilaciones nocturnas y actualizaciones semanales.
 ## Notes-frFR: Suivez votre collection de montures, familiers, jouets, transmogrifications et plus encore.|nFiltrez selon vos préférences ou essayez de tout collectionner !|n|nConstructions nocturnes et mises à jour hebdomadaires.
 ## Notes-itIT: Tieni traccia della tua collezione di cavalcature, animali domestici, giocattoli, trasmogrificazione e altro.|nFiltra a tuo piacimento o prova a collezionare tutto!|n|nBuild notturne e aggiornamenti settimanali.
 ## Notes-koKR: 탈것, 애완동물, 장난감, 변신 등의 컬렉션을 추적합니다.|n원하는 대로 필터링하거나 모든 것을 수집해보세요!|n|n매일 밤 빌드와 주간 업데이트.
@@ -130,6 +130,7 @@ src\Classes\Transmog.lua
 # src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
+src\Classes\Decor.lua
 # src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
@@ -139,6 +140,7 @@ src\Expansions\Legion.lua
 src\Expansions\Battle For Azeroth.lua
 src\Expansions\Shadowlands.lua
 src\Expansions\Dragonflight.lua
+src\Expansions\The War Within.lua
 
 # Load the Settings Menu
 src\Settings\Classic Settings.xml
@@ -151,6 +153,7 @@ classic\ATT-Classic.lua
 src\Classes\Classic\Mounts & Battle Pets.lua
 
 src\UI\Game Tooltip.lua
+src\UI\Instance Difficulty Icon.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
 src\UI\World Map Button.lua

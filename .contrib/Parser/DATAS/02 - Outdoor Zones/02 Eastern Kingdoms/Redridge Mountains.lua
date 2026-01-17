@@ -141,6 +141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -282,7 +283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(246, {	-- Assessing the Threat
 					["sourceQuest"] = 244,	-- Encroaching Gnolls
 					["qg"] = 1070,	-- Deputy Feldon
-					["coord"] = { 30.8, 60, REDRIDGE_MOUNTAINS },
+					["coord"] = { 30.8, 60.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
@@ -694,6 +695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(126, {	-- Howling in the Hills
+					["sourceQuest"] = 124,	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -722,7 +724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Blackrock Hunter slain
 							["provider"] = { "n", 4462 },	-- Blackrock Hunter
-							["coord"] = { 47, 67.2, REDRIDGE_MOUNTAINS },
+							["coord"] = { 47.0, 67.2, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -962,7 +964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Pendant of Shadow
 							["provider"] = { "i", 3617 },	-- Pendant of Shadow (QI!)
-							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },
+							["coord"] = { 80.0, 49.0, REDRIDGE_MOUNTAINS },
 							["cr"] = 397,	-- Morganth
 						}),
 						i(5274, {	-- Rose Mantle
@@ -1087,7 +1089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 43329 },	-- Homurk
 								{ "n", 43350 },	-- Utroka the Keymistress
 							},
-							["coord"] = { 28.2, 13, REDRIDGE_MOUNTAINS },
+							["coord"] = { 28.2, 13.0, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -1108,6 +1110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(119, {	-- Return to Verner
+					["sourceQuest"] = 118,	-- The Price of Shoes
 					["providers"] = {
 						{ "n",  514 },	-- Smith Argus
 						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
@@ -1206,7 +1209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 433 },	-- Shadowhide Gnoll
 								{ "n", 568 },	-- Shadowhide Warrior
 							},
-							["coord"] = { 70.2, 42, REDRIDGE_MOUNTAINS },
+							["coord"] = { 70.2, 42.0, REDRIDGE_MOUNTAINS },
 						}),
 						i(60719, {	-- Danforth's Breastplate
 							["timeline"] = { ADDED_4_0_3 },
@@ -1592,6 +1595,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(122, {	-- Underbelly Scales
+					["sourceQuest"] = 119,	-- Return to Verner
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2486,8 +2490,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1462, {	-- Ring of the Shadow
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 429,	-- Shadowhide Darkweaver
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
 						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },

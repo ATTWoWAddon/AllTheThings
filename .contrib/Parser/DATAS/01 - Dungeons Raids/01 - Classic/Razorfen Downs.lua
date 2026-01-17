@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER CATA
 			{ 43.5, 25.2, THOUSAND_NEEDLES },	-- Razorfen Downs
 			-- #else
-			{ 50, 92, THE_BARRENS },
+			{ 50.0, 92.0, THE_BARRENS },
 			-- #endif
 		},
 		["lvl"] = lvlsquish(35, 35, 15),
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				q(6626, {	-- A Host of Evil
 					["qg"] = 12866,	-- Myriam Moonsinger
-					["coord"] = { 49,94, THE_BARRENS },
+					["coord"] = { 49.0, 94.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
 					["groups"] = {
@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3341, {	-- Bring the End
 					["qg"] = 2308,	-- Andrew Brownell
-					["coord"] = { 74, 32.8, UNDERCITY },
+					["coord"] = { 74.0, 32.8, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,

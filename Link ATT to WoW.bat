@@ -1,4 +1,6 @@
 :: Run this batch script to link the AllTheThings addon with all non-PTR versions of the game.
+:: If it does NOT report "Linking using root WoW folder: ..." in the command output, then make sure to add your personal WoW install directory
+:: into the :do_links label of the script similar to existing examples
 @echo off
 SETLOCAL
 pushd %~dp0
@@ -6,6 +8,8 @@ pushd %~dp0
 :: Set the target folder name (case-insensitive match)
 set "TargetName=World of Warcraft"
 set "MatchedDir="
+set "Name="
+set "Parent="
 
 :: Start from the batch’s directory (without trailing backslash)
 set "Dir=%~dp0"
@@ -25,20 +29,15 @@ if /I "%Name%"=="%TargetName%" (
 )
 
 :: If we’re at root, stop
-for %%R in ("%Dir%") do if "%%~nxR"=="" goto :NotFound
+if "%Parent:~-2%"==":\" goto :NotFound
 
 :: Move up one level
-if "%Parent:~-1%"=="\" (
-    set "Dir=%Parent:~0,-1%"
-) else (
-    set "Dir=%Parent%"
-)
+set "Dir=%Parent:~0,-1%"
 
 goto :Up
 
 :Found
 echo Found target folder: %MatchedDir%
-:: set "MatchedDir=%Dir%"
 goto :do_links
 
 :NotFound
@@ -61,6 +60,7 @@ EXIT /B 0
 :link_wowfolder
 if exist "%~1\" (
     echo "Linking using root WoW folder: %~1"
+    call :link_expansion "%~1\_anniversary_"
     call :link_expansion "%~1\_classic_"
     call :link_expansion "%~1\_classic_era_"
     call :link_expansion "%~1\_classic_beta_"

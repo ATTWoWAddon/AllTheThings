@@ -62,150 +62,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				ach(11742, {["timeline"] = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
 			}),
 			-- #endif
+			n(QUESTS,
 			-- #if SEASON_OF_DISCOVERY
-			n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_1_15_4 }, }, {
-				cl(DRUID, {
-
-				}),
-				cl(HUNTER, {
-
-				}),
-				cl(MAGE, {
-
-				}),
-				cl(PALADIN, {
-
-				}),
-				cl(PRIEST, {
-
-				}),
-				cl(ROGUE, {
-
-				}),
-				cl(SHAMAN, {
-
-				}),
-				cl(WARLOCK, {
-					q(85505, {	-- Soul of Devouring
-						["sourceQuest"] = 85486,	-- Soul of Enthralling
-						["qg"] = 232802,	-- Doan Karhan
-						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						["groups"] = {
-							objective(1, {	-- Find Felhunter Area
-								["provider"] = { "i", 231837 },	-- Shadow Carving
-								["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
-								["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
-							}),
-							i(231796, {	-- Depleted Scythe of Chaos (Devouring)
-								["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
-								["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
-								["cost"] = {
-									{ "i", 231799, 1 },	-- Soul of Devouring
-									{ "i", 231795, 1 },	-- Depleted Scythe of Chaos (Enthralling)
-								},
-								["cr"] = 232896,	-- Ravenous Felhound
-							}),
-						},
-					}),
-					q(85486, {	-- Soul of Enthralling
-						["sourceQuest"] = 85485,	-- Soul of the Void
-						["qg"] = 232802,	-- Doan Karhan
-						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						["groups"] = {
-							objective(1, {	-- Use Glowing Scroll of Spatial Mending on Fel Portal
-								["provider"] = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
-								["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
-								["cr"] = 232900,	-- Cursed Mage
-							}),
-							i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
-								["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
-								["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
-								["cost"] = {
-									{ "i", 231798, 1 },	-- Soul of Enthralling
-									{ "i", 231794, 1 },	-- Depleted Scythe of Chaos (Void)
-								},
-								["cr"] = 230146,	-- Fel Interloper
-							}),
-						},
-					}),
-					q(85468, {	-- Soul of Mischief
-						["sourceQuest"] = 85112,	-- The Depleted Scythe
-						["qg"] = 6247,	-- Doan Karhan
-						["coord"] = { 49.2, 57.2, THE_BARRENS },
-						["maps"] = { EASTERN_PLAGUELANDS },
-						["groups"] = {
-							objective(1, {	-- 0/5 Suspicious Supplies placed
-								["provider"] = { "i", 231732 },	-- Suspicious Supplies
-							}),
-							i(231793, {	-- Depleted Scythe of Chaos (Mischief)
-								["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
-								["coord"] = { 69.6, 32.0, EASTERN_PLAGUELANDS },
-								["cost"] = {
-									{ "i", 231792, 1 },	-- Soul of Mischief
-									{ "i", 231722, 1 },	-- Depleted Scythe of Chaos
-								},
-								["cr"] = 232731,	-- Xirath <Manathirst Imp>
-							}),
-						},
-					}),
-					q(85485, {	-- Soul of the Void
-						["sourceQuest"] = 85468,	-- Soul of Mischief
-						["qg"] = 232802,	-- Doan Karhan
-						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						["groups"] = {
-							i(231794, {	-- Depleted Scythe of Chaos (Void)
-								["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
-								["coord"] = { 59.0, 67.0, EASTERN_PLAGUELANDS },
-								["cost"] = {
-									{ "i", 231797, 1 },	-- Soul of the Void
-									{ "i", 231793, 1 },	-- Depleted Scythe of Chaos (Mischief)
-								},
-								["cr"] = 232875,	-- Abandoned Voidwalker
-							}),
-						},
-					}),
-					q(85112, {	-- The Depleted Scythe
-						["providers"] = {
-							{ "i", 231722 },	-- Depleted Scythe of Chaos
-							{ "n",   6247 },	-- Doan Karhan
-						},
-						["coord"] = { 49.2, 57.2, THE_BARRENS },
-					}),
-					q(85506, {	-- The Final Test
-						["sourceQuest"] = 85505,	-- Soul of Devouring
-						["qg"] = 232802,	-- Doan Karhan
-						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						["maps"] = { ASHENVALE },
-						["groups"] = {
-							objective(1, {	-- Speak to Doan Karhan
-								["provider"] = { "n", 232924 },	-- Doan Karhan
-								["coord"] = { 84.8, 70.6, ASHENVALE },
-							}),
-							n(232886, {	-- Des'Altek
-								["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
-								["cost"] = {
-									{ "i", 231800, 1 },	-- Soul of Des'Altek
-									{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
-								},
-								["groups"] = {
-									i(229910),	-- Scythe of Chaos
-								},
-							}),
-						},
-					}),
-				}),
-				cl(WARRIOR, {
-
-				}),
-			}))),
+			bubbleDown({ ["timeline"] = { REMOVED_1_15_4 } },
 			-- #endif
-			n(QUESTS, {
+			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
 					["provider"] = { "i", 19003 },	-- Head of Nefarian
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7782, bubbleDownSelf(SOD_REMOVED_1_15_4, {	-- The Lord of Blackrock [A] (2/2)
+				q(7782, {	-- The Lord of Blackrock [A] (2/2)
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["qgs"] = {
 						-- #if AFTER LEGION
@@ -233,26 +100,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19384),	-- Master Dragonslayer's Ring
 					},
-				})),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FIVE, q(85643, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [A] (2/2)
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(230840),	-- Master Dragonslayer's Medallion
-						i(230841),	-- Master Dragonslayer's Orb
-						i(230839),	-- Master Dragonslayer's Ring
-					},
-				}))),
-				-- #endif
+				}),
 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
 					["provider"] = { "i", 19002 },	-- Head of Nefarian
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
-				q(7784, bubbleDownSelf(SOD_REMOVED_1_15_4, {	-- The Lord of Blackrock [H] (2/2)
+				q(7784, {	-- The Lord of Blackrock [H] (2/2)
 					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["qgs"] = {
 						-- #if AFTER BFA
@@ -273,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						-- #elseif AFTER CATA
 						{ 48.6, 71.0, ORGRIMMAR },	-- Saurfang, Vol'jin, Garrosh
 						-- #else
-						{ 32, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
+						{ 32.0, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -282,21 +136,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						i(19366),	-- Master Dragonslayer's Orb
 						i(19384),	-- Master Dragonslayer's Ring
 					},
-				})),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FIVE, q(85644, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [H] (2/2)
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
-					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32, 37.8, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(230840),	-- Master Dragonslayer's Medallion
-						i(230841),	-- Master Dragonslayer's Orb
-						i(230839),	-- Master Dragonslayer's Ring
-					},
-				}))),
-				-- #endif
-			}),
+				}),
+			}
+			-- #if SEASON_OF_DISCOVERY
+			)
+			-- #endif
+			),
 			-- #if SEASON_OF_DISCOVERY
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
@@ -339,9 +184,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19354, {	-- Draconic Avenger
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19358, {	-- Draconic Maul
 					["crs"] = {
@@ -359,14 +202,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19439, {	-- Interlaced Shadow Jerkin
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19438, {	-- Ringo's Blizzard Boots
-					["crs"] = {
-						12460,	-- Death Talon Wyrmguard
-					},
+					["cr"] = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19183),	-- Hourglass Sand
 			}),
@@ -467,9 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			n(14401, {	-- Master Elemental Shaper Krixix
 				-- #if BEFORE WRATH
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-				["groups"] = {
-					r(22967),	-- Smelt Elementium
-				},
+				["groups"] = { r(22967) },	-- Smelt Elementium
 				-- #else
 				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
 				-- #endif
@@ -627,6 +464,180 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #if SEASON_OF_DISCOVERY
 			})),
 			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {
+				n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_1_15_4 }, }, {
+					cl(DRUID, {
+
+					}),
+					cl(HUNTER, {
+
+					}),
+					cl(MAGE, {
+
+					}),
+					cl(PALADIN, {
+
+					}),
+					cl(PRIEST, {
+
+					}),
+					cl(ROGUE, {
+
+					}),
+					cl(SHAMAN, {
+
+					}),
+					cl(WARLOCK, {
+						q(85505, {	-- Soul of Devouring
+							["sourceQuest"] = 85486,	-- Soul of Enthralling
+							["qg"] = 232802,	-- Doan Karhan
+							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["groups"] = {
+								objective(1, {	-- Find Felhunter Area
+									["provider"] = { "i", 231837 },	-- Shadow Carving
+									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
+								}),
+								i(231796, {	-- Depleted Scythe of Chaos (Devouring)
+									["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
+									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									["cost"] = {
+										{ "i", 231799, 1 },	-- Soul of Devouring
+										{ "i", 231795, 1 },	-- Depleted Scythe of Chaos (Enthralling)
+									},
+									["cr"] = 232896,	-- Ravenous Felhound
+								}),
+							},
+						}),
+						q(85486, {	-- Soul of Enthralling
+							["sourceQuest"] = 85485,	-- Soul of the Void
+							["qg"] = 232802,	-- Doan Karhan
+							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["groups"] = {
+								objective(1, {	-- Use Glowing Scroll of Spatial Mending on Fel Portal
+									["provider"] = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
+									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									["cr"] = 232900,	-- Cursed Mage
+								}),
+								i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
+									["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
+									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									["cost"] = {
+										{ "i", 231798, 1 },	-- Soul of Enthralling
+										{ "i", 231794, 1 },	-- Depleted Scythe of Chaos (Void)
+									},
+									["cr"] = 230146,	-- Fel Interloper
+								}),
+							},
+						}),
+						q(85468, {	-- Soul of Mischief
+							["sourceQuest"] = 85112,	-- The Depleted Scythe
+							["qg"] = 6247,	-- Doan Karhan
+							["coord"] = { 49.2, 57.2, THE_BARRENS },
+							["maps"] = { EASTERN_PLAGUELANDS },
+							["groups"] = {
+								objective(1, {	-- 0/5 Suspicious Supplies placed
+									["provider"] = { "i", 231732 },	-- Suspicious Supplies
+								}),
+								i(231793, {	-- Depleted Scythe of Chaos (Mischief)
+									["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
+									["coord"] = { 69.6, 32.0, EASTERN_PLAGUELANDS },
+									["cost"] = {
+										{ "i", 231792, 1 },	-- Soul of Mischief
+										{ "i", 231722, 1 },	-- Depleted Scythe of Chaos
+									},
+									["cr"] = 232731,	-- Xirath <Manathirst Imp>
+								}),
+							},
+						}),
+						q(85485, {	-- Soul of the Void
+							["sourceQuest"] = 85468,	-- Soul of Mischief
+							["qg"] = 232802,	-- Doan Karhan
+							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["groups"] = {
+								i(231794, {	-- Depleted Scythe of Chaos (Void)
+									["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
+									["coord"] = { 59.0, 67.0, EASTERN_PLAGUELANDS },
+									["cost"] = {
+										{ "i", 231797, 1 },	-- Soul of the Void
+										{ "i", 231793, 1 },	-- Depleted Scythe of Chaos (Mischief)
+									},
+									["cr"] = 232875,	-- Abandoned Voidwalker
+								}),
+							},
+						}),
+						q(85112, {	-- The Depleted Scythe
+							["providers"] = {
+								{ "i", 231722 },	-- Depleted Scythe of Chaos
+								{ "n",   6247 },	-- Doan Karhan
+							},
+							["coord"] = { 49.2, 57.2, THE_BARRENS },
+						}),
+						q(85506, {	-- The Final Test
+							["sourceQuest"] = 85505,	-- Soul of Devouring
+							["qg"] = 232802,	-- Doan Karhan
+							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							["maps"] = { ASHENVALE },
+							["groups"] = {
+								objective(1, {	-- Speak to Doan Karhan
+									["provider"] = { "n", 232924 },	-- Doan Karhan
+									["coord"] = { 84.8, 70.6, ASHENVALE },
+								}),
+								n(232886, {	-- Des'Altek
+									["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
+									["cost"] = {
+										{ "i", 231800, 1 },	-- Soul of Des'Altek
+										{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
+									},
+									["groups"] = { i(229910) },	-- Scythe of Chaos
+								}),
+							},
+						}),
+					}),
+					cl(WARRIOR, {
+						q(85446, {	-- Scale of the Dragon Lord
+							["qg"] = 232596,	-- Riosus
+							["coord"] = { 74.2, 70.0, WETLANDS },
+							["groups"] = {
+								objective(1, {	-- 	Bathe the Dragonscale in Shadowflame
+									["provider"] = { "i", 232414 },	-- Dragontooth Blade
+									["cr"] = 11583,	-- Shadowmage <Cult of the Damned>
+								}),
+							},
+						}),
+					}),
+					q(7781, {	-- The Lord of Blackrock [A] (1/2)
+						["provider"] = { "i", 19003 },	-- Head of Nefarian
+						["maps"] = { STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(85643, {	-- The Lord of Blackrock [A] (2/2)
+						["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
+						["qg"] = 1748,	-- Highlord Bolvar Fordragon
+						["coord"] = { 78.0, 18.0, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(230840),	-- Master Dragonslayer's Medallion
+							i(230841),	-- Master Dragonslayer's Orb
+							i(230839),	-- Master Dragonslayer's Ring
+						},
+					}),
+					q(7783, {	-- The Lord of Blackrock [H] (1/2)
+						["provider"] = { "i", 19002 },	-- Head of Nefarian
+						["maps"] = { ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+					}),
+					q(85644, {	-- The Lord of Blackrock [H] (2/2)
+						["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
+						["qg"] = 4949,	-- Thrall <Warchief>
+						["coord"] = { 32.0, 37.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(230840),	-- Master Dragonslayer's Medallion
+							i(230841),	-- Master Dragonslayer's Orb
+							i(230839),	-- Master Dragonslayer's Ring
+						},
+					}),
+				}))),
 				n(ZONE_DROPS, {
 					i(18562, {	-- Elementium Ingot
 						["crs"] = {
@@ -963,9 +974,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				}),
 				n(14401, {	-- Master Elemental Shaper Krixix
 					["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-					["groups"] = {
-						r(22967),	-- Smelt Elementium
-					},
+					["groups"] = { r(22967) },	-- Smelt Elementium
 				}),
 				e(1533, {	-- Ebonroc
 					["creatureID"] = 14601,

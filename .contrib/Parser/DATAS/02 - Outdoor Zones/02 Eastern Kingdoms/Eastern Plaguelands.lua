@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(243229),	-- Hearthstone of the Dawn
 							},
 						}),
-					}),							
+					}),
 					n(PROFESSIONS, {
 						prof(ENCHANTING, {
 							["description"] = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(242268, {	-- If You Give a Crusader an Enchant
 									i(241191),	-- Formula: Enchant Weapon - Grand Crusader
 								}),
-								i(242363, {	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition								
+								i(242363, {	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
 									i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
 								}),
 								i(242267, {	-- From Arcanist to Archmage
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(242268, {	-- World of Wardcraft
 									i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
 								}),
-							},						
+							},
 						}),
 					}),
 					n(VENDORS, {
@@ -1731,15 +1731,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Seed planted in southeastern ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 37, 48, EASTERN_PLAGUELANDS },
+							["coord"] = { 37.0, 48.0, EASTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- Seed planted in western ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 33, 44, EASTERN_PLAGUELANDS },
+							["coord"] = { 33.0, 44.0, EASTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Seed planted in northeastern ziggurat
 							["provider"] = { "i", 61036 },	-- Rayne's Seeds
-							["coord"] = { 37, 42, EASTERN_PLAGUELANDS },
+							["coord"] = { 37.0, 42.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62965, {	-- Ring of New Life
 							["timeline"] = { ADDED_4_0_3 },
@@ -2707,7 +2707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2731,7 +2731,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3122,7 +3122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Warlord Thresh'jin's Body burned
 							["provider"] = { "i", 61316 },	-- Body of Warlord Thresh'jin
-							["coord"] = { 67, 9, EASTERN_PLAGUELANDS },
+							["coord"] = { 67.0, 9.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62991, {	-- Strength's Supremacy
 							["timeline"] = { ADDED_4_0_3 },
@@ -4246,7 +4246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 10936 },	-- Joseph Redpath
 								{ "i", 15209 },	-- Relic Bundle
 							},
-							["coord"] = { 35, 84, EASTERN_PLAGUELANDS },
+							["coord"] = { 35.0, 84.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62957, {	-- Homecoming Wrap
 							["timeline"] = { ADDED_4_0_3 },
@@ -4392,7 +4392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Borelgore slain
 							["provider"] = { "n", 11896 },	-- Borelgore
-							["coord"] = { 58, 29, EASTERN_PLAGUELANDS },
+							["coord"] = { 58.0, 29.0, EASTERN_PLAGUELANDS },
 						}),
 						i(62987, {	-- Eastwall Gauntlets
 							["timeline"] = { ADDED_4_0_3 },
@@ -4720,7 +4720,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
 						-- #else
-						{ 53.4, 22, EASTERN_PLAGUELANDS },
+						{ 53.4, 22.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4809,7 +4809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- Open portal wi thin Library Wing
 							["provider"] = { "o", 205877 },	-- Argent Portal
-							["coord"] = { 77, 71, EASTERN_PLAGUELANDS },
+							["coord"] = { 77.0, 71.0, EASTERN_PLAGUELANDS },
 						}),
 					},
 				}),

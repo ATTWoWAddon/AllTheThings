@@ -624,7 +624,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								o(291277, {	-- Valentine's Log
-									["coord"] = { 61.1, 49, DRUSTVAR },
+									["coord"] = { 61.1, 49.0, DRUSTVAR },
 									["groups"] = { i(160939) }
 								}),
 							},
@@ -1733,7 +1733,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["sourceQuests"] = { 57151 },	-- A Line in the Sand
 						["altQuests"] = { 54109 },	-- Queen's Favor
 						["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
-						["coord"] = { 50, 91.3, 1534 },
+						["coord"] = { 50.0, 91.3, 1534 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(172203),	-- Cracked Hearthstone (QI!)

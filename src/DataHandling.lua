@@ -3,7 +3,7 @@
 --- Dependencies: Runner, Callback
 ---
 
-local appName, app = ...
+local _, app = ...
 
 local pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 	= pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
@@ -494,10 +494,8 @@ local function UpdateSearchResults(searchResults)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
-	local o
 	for i=1,#found do
-		o = found[i]
-		DirectGroupUpdate(o, true)
+		DirectGroupUpdate(found[i], true)
 	end
 	-- TODO: use event
 	app.WipeSearchCache()
@@ -864,6 +862,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateNPC(t.npcID, t);
 		elseif t.questID then
 			t = app.CreateQuest(t.questID, t);
+		elseif t.campsiteID then
+			t = app.CreateWarbandScene(t.campsiteID, t);
 		-- Non-Thing groups
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);

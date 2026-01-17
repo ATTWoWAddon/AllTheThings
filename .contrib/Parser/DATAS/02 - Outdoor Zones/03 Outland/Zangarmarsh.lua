@@ -358,7 +358,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/12 Withered Giant slain
 								["provider"] = { "n", 18124 },	-- Withered Giant
-								["coord"] = { 81, 42, ZANGARMARSH },
+								["coord"] = { 81.0, 42.0, ZANGARMARSH },
 							}),
 							i(25599),	-- Explorer's Bands
 							i(25598),	-- Fen Strider's Bracer
@@ -413,19 +413,19 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Umbrafen Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 70, 80, ZANGARMARSH },
+								["coord"] = { 70.0, 80.0, ZANGARMARSH },
 							}),
 							objective(2, {	-- Marshlight Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 25, 43, ZANGARMARSH },
+								["coord"] = { 25.0, 43.0, ZANGARMARSH },
 							}),
 							objective(3, {	-- Serpent Lake Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 62, 41, ZANGARMARSH },
+								["coord"] = { 62.0, 41.0, ZANGARMARSH },
 							}),
 							objective(4, {	-- Lagoon Controls Disabled
 								["provider"] = { "i", 24355 },	-- Ironvine Seeds
-								["coord"] = { 63, 64, ZANGARMARSH },
+								["coord"] = { 63.0, 64.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -686,7 +686,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Release Murlocs at Daggerfen Village
 								["provider"] = { "i", 24470 },	-- Murloc Cage
-								["coord"] = { 26.4, 22, ZANGARMARSH },
+								["coord"] = { 26.4, 22.0, ZANGARMARSH },
 							}),
 							i(25612),	-- Daggerfen Mail
 							i(25610),	-- Fen Strider's Footguards
@@ -749,7 +749,7 @@ root(ROOTS.Zones, {
 									{ "i",  24471 },	-- Ango'rosh Attack Plans
 									{ "o", 182166 },	-- Ango'rosh Attack Plans
 								},
-								["coord"] = { 19.9, 27, ZANGARMARSH },
+								["coord"] = { 19.9, 27.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1144,7 +1144,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Klaq slain
 								["provider"] = { "n", 18282 },	-- Lord Klaq
-								["coord"] = { 73, 94.6, ZANGARMARSH },
+								["coord"] = { 73.0, 94.6, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1318,7 +1318,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(2, {	-- Explore the Boha'mu Ruins
-								["coord"] = { 45, 68, ZANGARMARSH },
+								["coord"] = { 45.0, 68.0, ZANGARMARSH },
 							}),
 						},
 					}),
@@ -1493,7 +1493,7 @@ root(ROOTS.Zones, {
 						["hordeQuestData"] = q(9635, {	-- The Zapthrottle Mote Extractor! [A]
 							["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [H]
 							["qg"] = 17637,	-- Mack Diver <Engineering Trainer>
-							["coord"] = { 34, 51, ZANGARMARSH },
+							["coord"] = { 34.0, 51.0, ZANGARMARSH },
 						}),
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {

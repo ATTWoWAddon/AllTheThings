@@ -254,7 +254,7 @@ namespace ATT.FieldTypes
                                         && objectData.ObjectType == "questID")
                                     {
                                         // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                        Objects.Merge(_data, "qis", itemID);
+                                        Objects.Merge(_data, "qis", (long)itemID);
                                         Remove("i", itemID);
                                     }
                                 }

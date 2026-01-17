@@ -3,7 +3,7 @@
 ---------------------------------------------
 root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 	i(232875),	-- Spark of Radiance
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7, ADDED_12_0_0 } }, {
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 		o(618517, {	-- Thalassian Lumber
 			i(256963),	-- Thalassian Lumber
 		}),
@@ -19,28 +19,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			i(241308),	-- Light's Potential++
 			i(241287),	-- Light's Preservation+
 			i(241286),	-- Light's Preservation++
-			i(241327),	-- Midnight Critical Strike Flask+
-			i(241326),	-- Midnight Critical Strike Flask++
-			i(241319),	-- Midnight Flask Cauldron+
-			i(241318),	-- Midnight Flask Cauldron++
-			i(241325),	-- Midnight Haste Flask+
-			i(241324),	-- Midnight Haste Flask++
-			i(241305),	-- Midnight Healing Potion+
-			i(241304),	-- Midnight Healing Potion++
-			i(241301),	-- Midnight Mana Potion+
-			i(241300),	-- Midnight Mana Potion++
-			i(241323),	-- Midnight Mastery Flask+
-			i(241322),	-- Midnight Mastery Flask++
+			i(241327),	-- Flask of the Shattered Sun+
+			i(241326),	-- Flask of the Shattered Sun++
+			i(241319),	-- Cauldron of Sin'dorei Flasks+
+			i(241318),	-- Cauldron of Sin'dorei Flasks++
+			i(241325),	-- Flask of the Blood Knights+
+			i(241324),	-- Flask of the Blood Knights++
+			i(241305),	-- Silvermoon Health Potion+
+			i(241304),	-- Silvermoon Health Potion++
+			i(241301),	-- Lightfused Mana Potion+
+			i(241300),	-- Lightfused Mana Potion++
+			i(241323),	-- Flask of the Magisters+
+			i(241322),	-- Flask of the Magisters++
 			i(241311),	-- Midnight Phial of Finesse+
 			i(241310),	-- Midnight Phial of Finesse++
 			i(241313),	-- Midnight Phial of Ingenuity+
 			i(241312),	-- Midnight Phial of Ingenuity++
 			i(241317),	-- Midnight Phial of Perception+
 			i(241316),	-- Midnight Phial of Perception++
-			i(241285),	-- Midnight Potion Cauldron+
-			i(241284),	-- Midnight Potion Cauldron++
-			i(241321),	-- Midnight Versatility Flask+
-			i(241320),	-- Midnight Versatility Flask++
+			i(241285),	-- Voidlight Potion Cauldron+
+			i(241284),	-- Voidlight Potion Cauldron++
+			i(241321),	-- Flask of Thalassian Resistance+
+			i(241320),	-- Flask of Thalassian Resistance++
 			i(241295),	-- Potion of Devoured Dreams+
 			i(241294),	-- Potion of Devoured Dreams++
 			i(241297),	-- Potion of Zealotry+
@@ -80,7 +80,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			i(241283),	-- Wondrous Synergist+
 		}),
 		filter(TRINKET_F, {
-			i(241340),	-- Midnight Alchemist's Stone
+			i(241340),	-- Magister's Alchemist Stone
 			i(241291),	-- Primal Philosopher's Stone
 		}),
 	}),

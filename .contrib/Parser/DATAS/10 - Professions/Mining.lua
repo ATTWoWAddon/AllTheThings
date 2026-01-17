@@ -427,7 +427,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(38786, {	-- Where Respect is Due
 				["sourceQuests"] = { 38888 },	-- The Highmountain Tauren
 				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
-				["maps"] = { 55.0, 84.0, HIGHMOUNTAIN },
+				["coord"] = { 55.0, 84.0, HIGHMOUNTAIN },
 				["groups"] = {
 					i(128769),	-- Glass-Extracted Leystone (QI!)
 					i(128767),	-- Ronos' Pick (QI!)
@@ -436,7 +436,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(38787, {	-- The Legend of Rethu Ironhorn
 				["sourceQuests"] = { 38786 },	-- Where Respect is Due
 				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
-				["maps"] = { 55.0, 84.0, HIGHMOUNTAIN },
+				["coord"] = { 55.0, 84.0, HIGHMOUNTAIN },
 			}),
 		}),
 	})),

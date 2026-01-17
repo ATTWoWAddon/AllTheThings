@@ -2343,19 +2343,14 @@ root(ROOTS.Zones, {
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "merge" },	-- Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
 							-- #if BEFORE LEGION
-							{ "finalize" },
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" },	-- Merciless Gladiator's Set
-							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR }, { "merge" },		-- Vengeful Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+							{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
-							{ "exclude", "itemID",
-								28379,	-- Sergeant's Heavy Cape (A)
-								28378,	-- Sergeant's Heavy Cape (H)
-								28380,	-- Sergeant's Heavy Cloak (A)
-								28377,	-- Sergeant's Heavy Cloak (H)
-							},
+							{ "merge" },
 							{ "pop" },
+							{ "exclude", "headerID", BACK },	-- Exclude the 'Back' header
 							-- #endif
 						},
 						["timeline"] = { ADDED_4_3_0 },

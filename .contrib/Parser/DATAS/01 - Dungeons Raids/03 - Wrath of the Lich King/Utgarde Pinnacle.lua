@@ -4,7 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(286, {	-- Utgarde Pinnacle
 		["mapID"] = UTGARDE_PINNACLE,
-		["coord"] = { 57, 47, HOWLING_FJORD },
+		["coord"] = { 57.0, 47.0, HOWLING_FJORD },
 		["maps"] = { UTGARDE_PINNACLE_FLOOR2 },
 		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {

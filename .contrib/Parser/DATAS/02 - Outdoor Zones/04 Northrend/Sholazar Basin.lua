@@ -796,7 +796,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							ach(938, {	-- The Snows of Northrend
-								i(248807, {["timeline"] = { ADDED_11_2_7 }}),	-- Nesingwary Shoveltusk Trophy (DECOR!)
+								i(248807, {["timeline"] = { ADDED_11_2_7 }}),	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
 							}),
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun
@@ -1265,7 +1265,7 @@ root(ROOTS.Zones, {
 					n(28038, {	-- Purser Boulian <Innkeeper>
 						["coord"] = { 26.8, 59.3, SHOLAZAR_BASIN },
 						["groups"] = {
-							i(248807, {	-- Nesingwary Shoveltusk Trophy (DECOR!)
+							i(248807, {	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
 								["sourceAchievement"] = 938,	-- The Snows of Northrend
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 5000000,	-- 500g

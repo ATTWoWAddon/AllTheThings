@@ -406,6 +406,32 @@ app.SortDefaults = setmetatable({
 			return true;
 		end
 	end,
+	expansion = function(a, b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true
+			end
+		elseif b then
+			return false
+		else
+			-- neither a or b exists, equality returns false
+			return false
+		end
+
+		-- Compare by expansionID (lowest to highest)
+		local aExp = a.expansionID or 0
+		local bExp = b.expansionID or 0
+
+		if aExp == bExp then
+			-- fallback: alphabetical by name/text if same
+			a = toLowerString(a.name or a.text)
+			b = toLowerString(b.name or b.text)
+			return a < b
+		else
+			return aExp < bExp
+		end
+	end,
 	progress = function(a, b)
 		-- If either object doesn't exist
 		if a then

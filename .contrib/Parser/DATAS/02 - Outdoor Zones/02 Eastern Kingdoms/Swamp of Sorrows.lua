@@ -659,7 +659,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- Captured Jaguar Fed
 							["provider"] = { "i", 23659 },	-- Fel-Tainted Morsels
-							["coord"] = { 65.4, 23, DUSTWALLOW_MARSH },
+							["coord"] = { 65.4, 23.0, DUSTWALLOW_MARSH },
 							["cr"] = 17111,	-- Captured Jaguar
 						}),
 						objective(3, {	-- Captured Tarantula Fed
@@ -1249,7 +1249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2622, {	-- The Missing Orders
 					["sourceQuest"] = 2621,	-- The Disgraced One
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["coord"] = { 47.8, 55, SWAMP_OF_SORROWS },
+					["coord"] = { 47.8, 55.0, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2623, {	-- The Swamp Talker
 					["sourceQuest"] = 2622,	-- The Missing Orders
 					["qg"] = 7643,	-- Bengor
-					["coord"] = { 45, 57.2, SWAMP_OF_SORROWS },
+					["coord"] = { 45.0, 57.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 69, 28, SWAMP_OF_SORROWS },
+					["coord"] = { 69.0, 28.0, SWAMP_OF_SORROWS },
 					["groups"] = {
 						i(216948),	-- Odd Dalaran Relic
 					},

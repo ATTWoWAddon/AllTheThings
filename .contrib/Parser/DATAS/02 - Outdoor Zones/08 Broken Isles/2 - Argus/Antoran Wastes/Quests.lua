@@ -7,14 +7,8 @@ root(ROOTS.Zones, {
 			m(ANTORAN_WASTES, {
 				n(QUESTS, {
 					q(49007, {	-- Commander on Deck!
-						["description"] = "Collect all four parts from mobs near the Terminus, and combine them to repair the Portal Generator. This allows you to summon Squadron Commander Vishax.",
-						["provider"] = { "i", 152965 },	-- Vishax's Portal Generator
-						["cost"] = {
-							{ "i", 152890, 1 },	-- Smashed Portal Generator
-							{ "i", 152940, 1 },	-- Arc Circuit
-							{ "i", 152941, 1 },	-- Conductive Sheath
-							{ "i", 152891, 1 },	-- Power Cell
-						},
+						["description"] = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
+						["provider"] = { "i", 152965 },	-- Vishax's Portal Generator (QS!)
 					}),
 					q(48605, {	-- Commander's Downfall
 						["sourceQuests"] = { 48513 },	-- Invasion Point Offensive
@@ -79,7 +73,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		m(ARGUS, {
 			m(ANTORAN_WASTES, {
 				n(QUESTS, {
-					q(48984),	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
+					q(48984, {	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishax's Portal Generator
+						["name"] = "Vishax's Portal Generator repaired",
+					}),
 					q(49162),	-- Triggers when completing 'Sizing Up The Opposition' (questID 48929) (spellID 254549)
 				}),
 				n(TREASURES, {

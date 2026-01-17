@@ -5,7 +5,8 @@ local L, settings = app.L, app.Settings;
 local pairs, ipairs, tonumber, math_floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
 	= pairs, ipairs, tonumber, math.floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
-local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
+local GetCoordString = app.Modules.Color.GetCoordString;
+local GetPatchString = app.Modules.Color.GetPatchString;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 local wipearray = app.wipearray
@@ -23,13 +24,6 @@ local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAcc
 local child = settings:CreateOptionsPage(L.INFORMATION_PAGE, L.INTERFACE_PAGE)
 
 -- Conversion Methods for specific formats for a given Information Type.
-local function GetCoordString(x, y)
-	return GetNumberWithZeros(app.round(x, 1), 1) .. ", " .. GetNumberWithZeros(app.round(y, 1), 1);
-end
-local function GetPatchString(patch)
-	patch = tonumber(patch)
-	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 100) .. "." .. (patch % 10))
-end
 local DefaultConversionMethod = function(value)
 	return value;
 end
@@ -126,8 +120,12 @@ local ConversionMethods = setmetatable({
 			return IsRetrievingConversionMethod(app.ObjectNames[objectID], reference)
 		end
 	end,
-	professionName = function(spellID, reference)
-		return IsRetrievingConversionMethod(GetSpellName(app.SkillDB.SkillToSpell[spellID] or 0), reference)
+	professionName = function(skillID, reference)
+		local skillName = app.WOWAPI.GetTradeSkillDisplayName(skillID)
+		if skillName then
+			return skillName
+		end
+		return IsRetrievingConversionMethod(GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)
@@ -420,7 +418,7 @@ local GetFixedItemSpecInfo = GetSpecializationInfo and function(itemID)
 		if not specs or #specs < 1 then
 			specs = {};
 			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
-			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, _, _, expacID, _, _ = GetItemInfo(itemID);
 			-- only Armor items
 			if itemClassID and itemClassID == 4 then
 				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
@@ -808,9 +806,9 @@ local InformationTypes = {
 			end
 			if maps and #maps > 0 then
 				local mapNames,uniques,name = {},{},nil;
-				local rootMapID = reference.mapID;
+				local rootMapID = reference.mapID
 				local myRealMapID = app.RealMapID
-				local onMyMap = rootMapID == myRealMapID
+				local onMyMap = myRealMapID and rootMapID == myRealMapID
 				if rootMapID then uniques[app.GetMapName(rootMapID) or rootMapID] = true; end
 				for i,mapID in ipairs(maps) do
 					onMyMap = onMyMap or mapID == myRealMapID
@@ -1156,7 +1154,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("requireSkill", { text = TRADE_SKILLS, priority = 8000,
 		Process = function(t, reference, tooltipInfo)
-			local requireSkill, learnedAt = reference.requireSkill, reference.learnedAt;
+			local requireSkill, learnedAt = reference.skillID or reference.requireSkill, reference.learnedAt;
 			if requireSkill then
 				local professionName = ConversionMethods.professionName(requireSkill, reference);
 				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
@@ -1181,7 +1179,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			if reference.cost then
 				if type(reference.cost) == "table" then
-					local _, name, icon, amount;
+					local _, name, icon
 					for k,v in pairs(reference.cost) do
 						_ = v[1];
 						if _ == "g" then

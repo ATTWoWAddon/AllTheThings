@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						80150,	-- Curious Dalaran Relic [The Barrens]
 					},
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["groups"] = {
 						i(217014, {	-- Supply Bag
 							i(213144, {	-- Luminous Epiphany
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216947 },	-- Whirring Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { ARATHI_HIGHLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80152, {	-- Curious Dalaran Relic [Badlands]
@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216951 },	-- Slippery Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { BADLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80098, {	-- Curious Dalaran Relic [Deadwind Pass]
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216945 },	-- Curious Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80151, {	-- Curious Dalaran Relic [Desolace]
 					-- ["sourceQuest"] = ,	--
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216950 },	-- Creepy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { DESOLACE },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80147, {	-- Curious Dalaran Relic [Duskwood]
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216946 },	-- Glittering Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80149, {	-- Curious Dalaran Relic [Swamp of Sorrows]
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216948 },	-- Odd Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80150, {	-- Curious Dalaran Relic [The Barrens]
@@ -256,14 +256,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216949 },	-- Heavy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["maps"] = { THE_BARRENS },
 				})),
 			}),
 			n(RARES, {
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 43, 29, DEADWIND_PASS },
+					["coord"] = { 43.0, 29.0, DEADWIND_PASS },
 					["groups"] = {
 						i(216945),	-- Curious Dalaran Relic
 					},
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				applyclassicphase(SOD_PHASE_TWO, n(218920, {	-- Dalaran Agent <Violet Eye>
-					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["coord"] = { 52.0, 34.2, DEADWIND_PASS },
 					["groups"] = {
 						-- TODO: This might be a quest, gonna need to see if it triggers a questID when you talk to them.
 						i(216941),	-- Ariden's Sigil

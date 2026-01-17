@@ -43,11 +43,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				pvp(q(47148)),				-- Something Different
 				-- #ENDIF
 				-- #ENDIF
-				pvp(q(83358, {["timeline"] = { ADDED_11_0_5 }})),	-- The Arena Calls
+				pvp(q(83358, { ["timeline"] = { ADDED_11_0_5 } } )),	-- The Arena Calls
 				petbattle(pvp(q(83357, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				}))),
-				q(83366),					-- The World Awaits
+				q(83366, {	-- The World Awaits
+					i(255881, { ["timeline"] = { ADDED_11_2_5 } }),	-- Severed Threads Commendation
+				}),
 			})),
 			n(QUESTS, {
 				q(84776, {	-- A Call to Delves

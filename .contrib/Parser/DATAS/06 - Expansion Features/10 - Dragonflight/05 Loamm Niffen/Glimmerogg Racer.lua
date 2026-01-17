@@ -48,6 +48,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
 				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },
+				["lockCriteria"] = { 1, "factionID", FACTION_GLIMMEROGG_RACER + 0.5 },    -- Rank 5, Professional, 2800
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
 				q(74949),	-- Snailspiration: Archetype of Vigilance

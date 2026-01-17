@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7887 },	-- Necklace and Gem Salvage
 					},
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7668 },	-- Bloodstained Journal
 					},
-					["coord"] = { 2.6, 46, BADLANDS },
+					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
@@ -274,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1956, {	-- Power in Uldaman
 					["sourceQuest"] = 1955,	-- The Exorcism
 					["qg"] = 6546,	-- Tabetha
-					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
 					["lvl"] = 35,

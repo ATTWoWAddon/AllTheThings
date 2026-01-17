@@ -279,13 +279,6 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = MOP_FIRST_AID,
 					}),
-					prof(HERBALISM, {
-						n(66980, {	-- Grower Miao <Herbalism Trainer>
-							["races"] = HORDE_ONLY,
-							["coord"] = { 27.8, 15.6, THE_JADE_FOREST },
-							["groups"] = MOP_HERBALISM,
-						}),
-					}),
 					prof(INSCRIPTION, {
 						n(56065, {	-- Inkmaster Wei <Inscription Trainer>
 							["coord"] = { 54.8, 45.0, THE_JADE_FOREST },
@@ -419,7 +412,7 @@ root(ROOTS.Zones, {
 					}),
 					prof(JEWELCRAFTING, {
 						n(65098, {	-- Mai the Jade Shaper <Jewelcrafting Trainer>
-							["coord"] = { 48.1, 35, THE_JADE_FOREST },
+							["coord"] = { 48.1, 35.0, THE_JADE_FOREST },
 							["groups"] = MOP_JEWELCRAFTING,
 						}),
 					}),
@@ -428,6 +421,17 @@ root(ROOTS.Zones, {
 							["coord"] = { 46.0, 29.4, THE_JADE_FOREST },
 							["groups"] = MOP_MINING,
 						}),
+					}),
+					prof(SKINNING, {
+						["aqd"] = {
+							["cr"] = 67026,	-- Hao of the Stag's Horns <Skinning Trainer> (A)
+							["coord"] = { 44.8, 85.6, THE_JADE_FOREST },
+						},
+						["hqd"] = {
+							["cr"] = 66981,	-- Trapper Ri <Skinning Trainer> (H)
+							["coord"] = { 27.8, 15.4, THE_JADE_FOREST },
+						},
+						["groups"] = MOP_SKINNING,
 					}),
 				}),
 				n(QUESTS, {
@@ -651,7 +655,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(2, {	-- Speak to General Nazgrim aboard Hellscream's Fist
 								["provider"] = { "n", 55054 },	-- General Nazgrim
-								["coord"] = { 66, 0, DUROTAR },
+								["coord"] = { 66.0, 0.0, DUROTAR },
 							}),
 						},
 					}),
@@ -815,7 +819,7 @@ root(ROOTS.Zones, {
 									{ "n", 55183 },	-- Training Bag
 									{ "n", 55184 },	-- Training Bag
 								},
-								["coord"] = { 41.6, 27, THE_JADE_FOREST },
+								["coord"] = { 41.6, 27.0, THE_JADE_FOREST },
 							}),
 							i(80731),	-- Ambermist Cord
 							i(80732),	-- Blackthicket Belt
@@ -839,7 +843,7 @@ root(ROOTS.Zones, {
 									{ "n", 55787 },	-- Peaceful Beast Spirit
 									{ "n", 55790 },	-- Raging Beast Spirit
 								},
-								["coord"] = { 20.2, 11, THE_JADE_FOREST },
+								["coord"] = { 20.2, 11.0, THE_JADE_FOREST },
 							}),
 						},
 					}),
@@ -894,7 +898,7 @@ root(ROOTS.Zones, {
 									{ "n", 61747 },	-- Jeweled Macaw
 									{ "n", 61748 },	-- Jeweled Macaw
 								},
-								["coord"] = { 62.4, 78, THE_JADE_FOREST },
+								["coord"] = { 62.4, 78.0, THE_JADE_FOREST },
 							}),
 						},
 					}),
@@ -1013,7 +1017,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/12 Greenstone Nibbler slain
 								["provider"] = { "n", 56401 },	-- Greenstone Nibbler
-								["coord"] = { 44, 29.2, THE_JADE_FOREST_GREENSTONE_QUARRY_2 },
+								["coord"] = { 44.0, 29.2, THE_JADE_FOREST_GREENSTONE_QUARRY_2 },
 							}),
 							objective(2, {	-- 0/6 Greenstone Gorger slain
 								["provider"] = { "n", 56404 },	-- Greenstone Gorger
@@ -1609,7 +1613,7 @@ root(ROOTS.Zones, {
 									{ "i",  76333 },	-- Greeen Branch (QI!)
 									{ "o", 209903 },	-- Greeen Branch
 								},
-								["coord"] = { 30, 52.3, THE_JADE_FOREST },
+								["coord"] = { 30.0, 52.3, THE_JADE_FOREST },
 							}),
 						},
 					}),
@@ -1758,7 +1762,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Signaled Survivors
 								["provider"] = { "i", 76305 },	-- Hellscream's Fist Signal Flare (QI!)
-								["coord"] = { 28, 47, THE_JADE_FOREST },
+								["coord"] = { 28.0, 47.0, THE_JADE_FOREST },
 							}),
 							i(80763),	-- Friendship Ring
 							i(80764),	-- Band of Acceptance
@@ -1930,7 +1934,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/8 Fireworks launched
 								["provider"] = { "o", 209672 },	-- Firework Launcher
-								["coord"] = { 58, 59, THE_JADE_FOREST },
+								["coord"] = { 58.0, 59.0, THE_JADE_FOREST },
 							}),
 						},
 					}),
@@ -2643,7 +2647,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/6 Vacant Destroyer Kicked
 								["provider"] = { "o", 214873 },	-- Vacant Destroyer
-								["coord"] = { 48, 16, THE_JADE_FOREST },
+								["coord"] = { 48.0, 16.0, THE_JADE_FOREST },
 							}),
 						},
 					}),
@@ -3851,7 +3855,7 @@ root(ROOTS.Zones, {
 					o(213362, {	-- Ship's Locker
 						["questID"] = 31396,	-- Ship's Locker
 						["description"] = "Located underwater in a boat.",
-						["coord"] = { 51.28, 100.54, THE_JADE_FOREST },	-- Can't use Uncharted Sea MapID, plots the point incorrectly.
+						["coord"] = { 50.88, 99.74, THE_JADE_FOREST },	-- Can't use Uncharted Sea MapID, plots the point incorrectly.
 					}),
 					o(213333, {	-- Spirit Binders
 						["coord"] = { 42.2, 17.4, THE_JADE_FOREST },

@@ -432,19 +432,59 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(698, {	-- Xin the Weaponmaster
 						["creatureID"] = 61398,	-- Xin the Weaponmaster
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60894),	-- Celestial: Mogu'shan Palace
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
 							i(86789),	-- Elegion, the Fanged Crescent
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86886)),	-- Loshan, Terror Incarnate (Terrace)
 							i(89952),	-- Pheromone-Coated Choker
 							i(86748),	-- Cape of Three Lanterns
 							i(86790),	-- Vial of Dragon's Blood
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95735),	-- Artery Rippers
+							i(95681),	-- Beady-Eye Bracers
+							i(95762),	-- Bracers of Fragile Bone
+							i(95629),	-- Cloudbreaker Greatbelt
+							i(95657),	-- Dinomancer's Spiritbinding Spire
+							i(95737),	-- Durumu's Severed Tentacle
+							i(95710),	-- Fetish of the Hydra
+							i(95655),	-- Flamecaster's Burning Crown
+							i(95708),	-- Frostborn Wristwraps
+							i(95764),	-- Leggings of the Malformed Sapling
+							i(95818),	-- Lei Shen's Orb of Command
+							i(95817),	-- Lightning-Imbued Chalice
+							i(95709),	-- Megaera's Shining Eye
+							i(95958),	-- Necklace of the Terra-Cotta Archer
+							i(95790),	-- Qon's Flaming Scimitar
+							i(95682),	-- Quakestompers
+							i(95789),	-- Rein-binder's Fists
+							i(95736),	-- Reinforced Mirror-Sheen Cloak
+							i(95816),	-- Soul Prism of Lei Shen
+							i(95640),	-- Soulblade of the Breaking Storm
+							i(95627),	-- Spearman's Jingling Leggings
+							i(95959),	-- Spiderweb Tabi
+							i(95628),	-- Static-Shot Shoulderguards
+							i(95763),	-- Stolen Relic of Zuldazar
+							i(95656),	-- Vaccinator's Armwraps
+							i(95878),	-- Visage of the Doomed
+							i(95791),	-- Wu-Lai, Bladed Fan of the Empyreans
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

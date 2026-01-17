@@ -81,12 +81,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { WESTERN_PLAGUELANDS },
 							["cost"] = { { "i", 139623, 1 } },	-- 1xTimolain's Phylactery
 						}),
-						q(43687, {	-- Walking in the Shadows
-							["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
-							["sourceQuests"] = { 43685 },	-- Phylactery Used
-							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						hqt(43688, name(HEADERS.Item, 139624, {	-- Shard of Darkness
+							["description"] = "You must have the Shard of Darkness in your inventory in order to trigger this dialog.",
+							["qg"] = 90259,	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.2, SANCTUM_OF_LIGHT },
-							["cost"] = { { "i", 139624, 1 } },	-- 1xShard of Darkness
+							["provider"] = { "i", 139624 },	-- 1x Shard of Darkness
+						})),
+						q(43687, {	-- Walking in the Shadows
+							["qg"] = 90259,	-- Lord Maxwell Tyrosus
+							["sourceQuests"] = { 43688 },	-- Shard of Darkness
+							["coord"] = { 49.8, 72.2, SANCTUM_OF_LIGHT },
 							["groups"] = {
 								i(139566, {	-- Heart of Corruption
 									artifact(865),	-- Retribution Hidden Artifact Appearance
@@ -1069,7 +1073,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 			q(43578),	-- Looted Paladin Daily Mount
 			q(46767),	-- Maximillian 1 Week Cooldown - triggered after turning in "Champion: Nerus Moonfang" (questID 46045)
-			q(43688),	-- Shard Delivered - unlocking the Walking in the Shadows quest
 			q(44426),	-- Talking Pair Flavor Heard - triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin order hall
 			q(44458),	-- Tracking Quest: Blood of Our Enemy 1 - completed the "Blood of Our Enemy: Stormheim" mission
 			q(44459),	-- Tracking Quest: Blood of Our Enemy 2 - completed the "Blood of Our Enemy: Val'sharah" mission

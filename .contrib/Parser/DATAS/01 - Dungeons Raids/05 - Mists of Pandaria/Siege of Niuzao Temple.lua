@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	applyclassicphase(MOP_PHASE_ONE, inst(324, {	-- Siege of Niuzao Temple
-		["coord"] = { 35, 82, TOWNLONG_STEPPES },
+		["coord"] = { 35.0, 82.0, TOWNLONG_STEPPES },
 		["maps"] = {
 			SIEGE_OF_NIUZAO_TEMPLE,
 			SIEGE_OF_NIUZAO_TEMPLE_THE_HOLLOWED_OUT_TREE,
@@ -452,19 +452,56 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(727, {	-- Wing Leader Ner'onok
 						["creatureID"] = 62205,	-- Wing Leader Ner'onok
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60900),	-- Celestial: Siege of Niuzao Temple
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
 							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86783),	-- Zian's Choker of Coalesced Shadow
 							i(89972),	-- Band of Bursting Novas
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86830)),	-- Ring of the Shattered Shell
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86890)),	-- Terror in the Mists (Terrace)
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95972),	-- Abandoned Zandalari Arrowlinks
+							i(95974),	-- Abandoned Zandalari Greatbelt
+							i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
+							i(95750),	-- Bracers of Mutagenic Fervor
+							i(95805),	-- Conduit-Breaker Chain Leggings
+							i(95778),	-- Crown of the Golden Golem
+							i(95779),	-- Delicate Vial of the Sanguinaire
+							i(95806),	-- Doomed Crown of Lei Shen
+							i(95725),	-- Egg-Shard Grips
+							i(95868),	-- Forgotten Mantle of the Moon
+							i(95804),	-- Fusion Slasher Chestguard
+							i(95643),	-- Ghostbinder Greatboots
+							i(95644),	-- Ionized Yojamban Carapace
+							i(95867),	-- Jerthud, Graceful Hand of the Savior
+							i(95777),	-- Matter-Swapped Legplates
+							i(95698),	-- Megaera's Poisoned Fang
+							i(95866),	-- Nadagast's Exsanguinator
+							i(95752),	-- Pathogenic Gauntlets
+							i(95696),	-- Refreshing Abalone Girdle
+							i(95671),	-- Robes of Treacherous Ground
+							i(95724),	-- Talonrender Chestplate
+							i(95697),	-- Tortos' Shellseizers
+							i(95645),	-- Wastewalker's Sandblasted Drape
+							i(95669),	-- Wushoolay's Final Choice
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

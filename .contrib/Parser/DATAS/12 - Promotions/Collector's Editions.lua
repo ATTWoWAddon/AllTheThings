@@ -217,6 +217,26 @@ DIABLO_IV = createHeader({
 		en = "Granted to owners of Diablo IV Base Version.",
 	},
 });
+DIABLO_IV_LORD_OF_HATRED = createHeader({
+	readable = "Diablo IV: Lord of Hatred",
+	icon = 1529348,
+	text = {
+		en = "Diablo IV: Lord of Hatred",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
+	},
+});
 OVERWATCH_ORIGINS = createHeader({
 	readable = "Overwatch: Origins",
 	icon = 1303199,
@@ -428,9 +448,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			i(25535),	-- Netherwhelp (PET!)
-			i(30360, {	-- Lurky (PET!)
+			euONLY(i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",
-			}),
+			})),
 		},
 	})),
 	-- #if ANYCLASSIC
@@ -471,10 +491,14 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #else
-	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_7 } }, {
+	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_7, ADDED_11_2_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		["groups"] = {
+			-- #if AFTER 11.2.5
+			i(248090),	-- Viridian Phase-Hunter (MOUNT!)
+			-- #else
 			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
+			-- #endif
 		},
 	})),
 	-- #endif
@@ -509,7 +533,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_4_0_1 } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
@@ -756,7 +780,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
 			["groups"] = {
+				-- #if AFTER 11.2.5
+				i(248091),	-- Anima Wyrmling (PET!)
+				-- #else
 				pet(2779),	-- Anima Wyrmling (PET!)
+				-- #endif
 				i(172179),	-- Eternal Traveler's Hearthstone (TOY!)
 				i(172177),	-- Illusion: Wraithchill (ILLUSION!)
 			},
@@ -771,7 +799,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					["timeline"] = { REMOVED_10_0_2 },
 				}),
 				pet(3175),	-- Murkastrasza (PET!)
+				-- #if AFTER 11.2.5
+				i(248089),	-- Tangled Dreamweaver (MOUNT!)
+				-- #else
 				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
+				-- #endif
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
 					["timeline"] = { ADDED_10_0_5, REMOVED_10_2_0 },
@@ -1006,35 +1038,38 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
-		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
-			["groups"] = {
-				ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
-				iensemble(248249),	-- Lightstider Raiment
-				i(243020),	-- Lightwing Dragonhawk (MOUNT!)
-			},
-		}),
-		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
-			["groups"] = {
-				ach(61402),	-- Epic Edition: Voidlight Surger
-				i(243063),	-- Doomfeathers (PET!)
-				i(243062),	-- Hopeflutter (PET!)
-				i(252668, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Harbinger" Painting (DECOR!)
-				i(252666, {["timeline"] = { ADDED_11_2_7 }}),	-- "The High Exarch" Painting (DECOR!)
-				i(252667, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Ranger of the Void" Painting (DECOR!)
-				i(252669, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Redeemer" Painting (DECOR!)
-				i(244668, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Fountain (DECOR!)
-				i(246414, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Rotunda (DECOR!)
-				i(245939, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Fountain (DECOR!)
-				i(248809, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Rotunda (DECOR!)
-				i(245610),	-- Voidlight Surger (MOUNT!)
-				i(243019),	-- Voidwing Dragonhawk (MOUNT!)
-				iensemble(248974),	-- Voidstrider Raiment
-			},
-		}),
-	})),
+	expansion(EXPANSION.MID, {
+		["forcetimeline"] = { ADDED_11_2_0 },
+		["groups"] = {
+			n(HEROIC_EDITION, {
+				["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+				["groups"] = {
+					ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
+					iensemble(248249),	-- Lightstider Raiment
+					i(243020),	-- Lightwing Dragonhawk (MOUNT!)
+				},
+			}),
+			n(EPIC_EDITION, {
+				["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+				["groups"] = {
+					ach(61402),	-- Epic Edition: Voidlight Surger
+					i(243063),	-- Doomfeathers (PET!)
+					i(243062),	-- Hopeflutter (PET!)
+					i(252668, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Harbinger" Painting (DECOR!)
+					i(252666, {["timeline"] = { ADDED_11_2_7 }}),	-- "The High Exarch" Painting (DECOR!)
+					i(252667, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Ranger of the Void" Painting (DECOR!)
+					i(252669, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Redeemer" Painting (DECOR!)
+					i(244668, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Fountain (DECOR!)
+					i(246414, {["timeline"] = { ADDED_11_2_7 }}),	-- Light-Infused Rotunda (DECOR!)
+					i(245939, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Fountain (DECOR!)
+					i(248809, {["timeline"] = { ADDED_11_2_7 }}),	-- Void-Corrupted Rotunda (DECOR!)
+					i(245610),	-- Voidlight Surger (MOUNT!)
+					i(243019),	-- Voidwing Dragonhawk (MOUNT!)
+					iensemble(248974),	-- Voidstrider Raiment
+				},
+			}),
+		},
+	}),
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
@@ -1094,6 +1129,30 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)
 			ach(15640),	-- Return to Darkness
+		},
+	})),
+	n(DIABLO_IV_LORD_OF_HATRED, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		["description"] = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
+		["groups"] = {
+			i(265804, {	-- Sanctuary Chess Collection
+				-- TODO: Remove decorID once Wago data is updated with these
+				i(259055, {["decorID"] = 12247}),	-- Hatred's Wolfpelt Rug (DECOR!)
+				i(259056, {["decorID"] = 12248}),	-- Prime Evil's Chest (DECOR!)
+				i(259059, {["decorID"] = 12251}),	-- Sanctuary Chess Dark Bishop (DECOR!)
+				i(259064, {["decorID"] = 12256}),	-- Sanctuary Chess Dark King (DECOR!)
+				i(259063, {["decorID"] = 12255}),	-- Sanctuary Chess Dark Knight (DECOR!)
+				i(259062, {["decorID"] = 12254}),	-- Sanctuary Chess Dark Pawn (DECOR!)
+				i(259061, {["decorID"] = 12253}),	-- Sanctuary Chess Dark Queen (DECOR!)
+				i(259060, {["decorID"] = 12252}),	-- Sanctuary Chess Dark Rook (DECOR!)
+				i(259065, {["decorID"] = 12257}),	-- Sanctuary Chess Light Bishop (DECOR!)
+				i(259070, {["decorID"] = 12262}),	-- Sanctuary Chess Light King (DECOR!)
+				i(259069, {["decorID"] = 12261}),	-- Sanctuary Chess Light Knight (DECOR!)
+				i(259068, {["decorID"] = 12260}),	-- Sanctuary Chess Light Pawn (DECOR!)
+				i(259067, {["decorID"] = 12259}),	-- Sanctuary Chess Light Queen (DECOR!)
+				i(259066, {["decorID"] = 12258}),	-- Sanctuary Chess Light Rook (DECOR!)
+				i(259058, {["decorID"] = 12250}),	-- Sanctuary's Chess Board (DECOR!)
+				i(259057, {["decorID"] = 12249}),	-- Sanctuary's Chess Match (DECOR!)
+			}),
 		},
 	})),
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {

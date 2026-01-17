@@ -566,6 +566,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.1, 34.9, VALDRAKKEN },
 				}),
+				q(91691, {	-- The Vanishing of Iridikron
+					["sourceQuests"] = { 75417 },	-- Symbol of Hope
+					["provider"] = { "n", 187669 },	-- Nozdormu
+					["coord"] = { 60.8, 39.2, VALDRAKKEN },
+					["lockCriteria"] = { 1, "questID", 75918 },	-- Fire Season
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				q(91695, {	-- Tracking Down Incarnates
+					["sourceQuests"] = { 91691 },	-- The Vanishing of Iridikron
+					["provider"] = { "n", 187669 },	-- Nozdormu
+					["coord"] = { 60.8, 39.2, VALDRAKKEN },
+					["lockCriteria"] = { 1, "questID", 75918 },	-- Fire Season
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			------ New System ------
 			q(76101, {	-- Tougher Down Under
@@ -614,6 +628,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_11_0_0 },
 				["groups"] = {
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
@@ -731,7 +746,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["coord"] = { 55.5, 54.7, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
 			}),
 			q(73709, {	-- Favor on the Side

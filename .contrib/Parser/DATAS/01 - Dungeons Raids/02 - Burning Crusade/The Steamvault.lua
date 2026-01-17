@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29616, {	-- Storming the Steamvault
 					["qg"] = 17841,	-- Ysiel Windsinger
-					["coord"] = { 78.4, 62, ZANGARMARSH },
+					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),

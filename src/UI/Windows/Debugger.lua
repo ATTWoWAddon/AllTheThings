@@ -320,7 +320,7 @@ local KeyMaps = setmetatable({
 	quest = "questID",
 }, { __index = function(t,key) return key:gsub("id", "ID") end})
 app.LoadDebugger = function()
-	local debuggerWindow = app:GetWindow("Debugger", UIParent, function(self, force)
+	app.AddCustomWindowOnUpdate("Debugger", function(self, force)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
@@ -390,7 +390,7 @@ app.LoadDebugger = function()
 					for i=#self.data.options,1,-1 do
 						tinsert(self.data.g, 1, self.data.options[i]);
 					end
-					app.AssignChildren(self.data);
+					self:AssignChildren();
 					AfterCombatCallback(self.Update, self, true);
 				end
 			end
@@ -449,7 +449,7 @@ app.LoadDebugger = function()
 										for i,info in ipairs(row.ref.data) do
 											app.NestObject(self.data, app.__CreateObject(info));
 										end
-										app.AssignChildren(self.data);
+										self:AssignChildren();
 										AfterCombatCallback(self.Update, self, true);
 										return true;
 									end,
@@ -459,7 +459,7 @@ app.LoadDebugger = function()
 							for i=#self.data.options,1,-1 do
 								tinsert(self.data.g, 1, self.data.options[i]);
 							end
-							app.AssignChildren(self.data);
+							self:AssignChildren();
 							AfterCombatCallback(self.Update, self, true);
 							return true;
 						end,
@@ -677,7 +677,7 @@ app.LoadDebugger = function()
 						["g"] = rawGroups
 					};
 					app.NestObject(self.data, app.__CreateObject(info));
-					app.AssignChildren(self.data);
+					self:AssignChildren();
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
@@ -855,12 +855,13 @@ app.LoadDebugger = function()
 			InitDebuggerData();
 			-- Ensure the current Zone is added when the Window is initialized
 			AddObject();
-			app.AssignChildren(self.data);
+			self:AssignChildren();
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force);
+		self:DefaultUpdate(force);
 	end);
+	local debuggerWindow = app:GetWindow("Debugger");
 	app.TopLevelUpdateGroup(debuggerWindow.data);
 	debuggerWindow:Show();
 	app.LoadDebugger = function()

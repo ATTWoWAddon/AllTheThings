@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- Apothecary Enith Rescued
 							["provider"] = { "i", 22628 },	-- Restorative Draught
 							["cr"] = 16208,	-- Apothecary Enith
-							["coord"] = { 32, 73.8, GHOSTLANDS },
+							["coord"] = { 32.0, 73.8, GHOSTLANDS },
 						}),
 						objective(2, {	-- Apprentice Varnis Rescued
 							["provider"] = { "i", 22628 },	-- Restorative Draught
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9460, {	-- Combining Forces
 					["sourceQuest"] = 9532,	-- Find Keltus Darkleaf
 					["qg"] = 17224,	-- Keltus Darkleaf
-					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["coord"] = { 33.0, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- Night Elf Moon Crystal Deactivated
 							["provider"] = { "i", 23191 },	-- Crystal Controlling Orb
-							["coord"] = { 58, 65, GHOSTLANDS },
+							["coord"] = { 58.0, 65.0, GHOSTLANDS },
 							["cr"] = 16333,	-- Sentinel Infiltrator
 						}),
 						i(23400),	-- Sylastor's Cloak
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9532, {	-- Find Keltus Darkleaf
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
-					["coord"] = { 79.6, 52, SILVERMOON_CITY },
+					["coord"] = { 79.6, 52.0, SILVERMOON_CITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = { BLOODELF },
@@ -698,7 +698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						objective(2, {	-- Investigate the Amani Catacombs
 							["provider"] = { "i",  22755 },	-- Blazing Torch
-							["coord"] = { 62.9, 31, GHOSTLANDS },
+							["coord"] = { 62.9, 31.0, GHOSTLANDS },
 						}),
 					},
 				}),
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "n", 16330 },	-- Sentinel Spy
 						}),
 						objective(2, {	-- Investigate An'daroth
-							["coord"] = { 38, 14.4, GHOSTLANDS },
+							["coord"] = { 38.0, 14.4, GHOSTLANDS },
 						}),
 					},
 				}),
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Deatholme Acolyte slain
 							["provider"] = { "n", 16315 },	-- Deatholme Acolyte
-							["coord"] = { 13, 54.6, GHOSTLANDS },
+							["coord"] = { 13.0, 54.6, GHOSTLANDS },
 						}),
 						objective(2, {	-- 0/10 Fallen Ranger slain
 							["provider"] = { "n", 16314 },	-- Fallen Ranger
@@ -824,7 +824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "n", 17224 },	-- Keltus Darkleaf
 						{ "i", 23919 },	-- Stack of Reports
 					},
-					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["coord"] = { 33.0, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
 					["classes"] = { ROGUE },

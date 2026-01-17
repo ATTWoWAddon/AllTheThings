@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(5651, {	-- In Favor of Darkness
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3098,	-- Glyphic Scroll
 							["qg"] = 2124,	-- Isabella <Mage Trainer>
 							-- #if BEFORE MOP
-							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 									["coords"] = {
 										{ 36.6, 61.6, TIRISFAL_GLADES },
-										{ 31, 65, TIRISFAL_GLADES },
+										{ 31.0, 65.0, TIRISFAL_GLADES },
 									},
 									["cr"] = 1919,	-- Samuel Fipps
 								}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
 							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { PRIEST },
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER MOP
 							["coord"] = { 47.6, 58.4, DEATHKNELL },
 							-- #else
-							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["coord"] = { 31.0, 66.0, TIRISFAL_GLADES },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2124 },	-- Isabella <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
-							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
+							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
 							["classes"] = { MAGE },
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			m(SCARLET_MONASTERY_ENTRANCE, {
 				n(QUESTS, {
 					q(77644,{	-- The Scarlet Key
-						["coord"] = { 48, 56.3, SCARLET_MONASTERY_ENTRANCE },
+						["coord"] = { 48.0, 56.3, SCARLET_MONASTERY_ENTRANCE },
 						["timeline"] = { ADDED_10_1_7 },
 						["cost"] = { {"i", 208485, 1} },	-- The Scarlet Key
 					}),
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
 						["coords"] = {
 							{ 51.8, 67.4, TIRISFAL_GLADES },
-							{ 79, 26, TIRISFAL_GLADES },
+							{ 79.0, 26.0, TIRISFAL_GLADES },
 						},
 						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
@@ -1572,9 +1572,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(354, {	-- Deaths in the Family
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 362,	-- The Haunted Mills
-					-- #endif
 					["qg"] = 1500,	-- Coleman Farthing
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1638,7 +1635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5482, {	-- Doom Weed
 					["sourceQuest"] = 5481,	-- Gordo's Task
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["coord"] = { 57.5, 49, TIRISFAL_GLADES },
+					["coord"] = { 57.5, 49.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2033,7 +2030,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(374, {	-- Proof of Demise
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1652,	-- Deathguard Burgess
-					["coord"] = { 60.8, 52, TIRISFAL_GLADES },
+					["coord"] = { 60.8, 52.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -2067,14 +2064,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(409, {	-- Proving Allegiance
 					["sourceQuest"] = 366,	-- Return the Book
 					["qg"] = 1497,	-- Gunther Arcanus
-					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
 						q(431, {	-- Candles of Beckoning
 							["provider"] = { "o", 1586 },	-- Crate of Candles
-							["coord"] = { 68.1, 42, TIRISFAL_GLADES },
+							["coord"] = { 68.1, 42.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -2386,7 +2383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 The Lich's Spellbook
 							["provider"] = { "i", 2833 },	-- The Lich's Spellbook
-							["coord"] = { 68, 42.1, TIRISFAL_GLADES },
+							["coord"] = { 68.0, 42.1, TIRISFAL_GLADES },
 						}),
 					},
 				}),
@@ -2460,7 +2457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1497 },	-- Gunther Arcanus
 						{ "i", 3081 },	-- Nether Gem
 					},
-					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
+					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,

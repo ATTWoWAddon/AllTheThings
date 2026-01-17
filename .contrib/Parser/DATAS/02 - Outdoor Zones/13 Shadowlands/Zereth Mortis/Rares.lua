@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 					n(182155, {	-- High Reaver Damaris
 						["crs"] = { 182156 },	-- Edra, the Will Grazer
-						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["coord"] = { 63.8, 27.0, ZERETH_MORTIS },
 						["questID"] = 65586,
 						["groups"] = {
 							i(190106),	-- Approaching Terror's Torch
@@ -40,11 +40,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						},
 					}),
 					n(182114, {	-- Iska, Outrider of Ruin
-						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["coord"] = { 63.8, 27.0, ZERETH_MORTIS },
 						["questID"] = 65585,
 						["groups"] = {
 							n(182120, {	-- Rhuv, Gorger of Ruin
-								["coord"] = { 63.8, 27, ZERETH_MORTIS },
+								["coord"] = { 63.8, 27.0, ZERETH_MORTIS },
 								["questID"] = 65706,
 								["groups"] = {
 									i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 					n(182158, {	-- Reanimatrox Marzan
 						["crs"] = { 182161 },	-- Phalangax, the Final Grasp
-						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["coord"] = { 63.8, 27.0, ZERETH_MORTIS },
 						["questID"] = 65587,
 						["groups"] = {
 							i(190108),	-- Aegis of Laughing Souls
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(183596, {	-- Chitali the Eldest <Cervid Prime>
-				["coord"] = { 50.3, 69, ZERETH_MORTIS },
+				["coord"] = { 50.3, 69.0, ZERETH_MORTIS },
 				["questID"] = 65553,
 				["groups"] = {
 					i(189994),	-- Chitali's Command
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
-				["coord"] = { 54, 34, ZERETH_MORTIS },
+				["coord"] = { 54.0, 34.0, ZERETH_MORTIS },
 				["questID"] = 65547,
 				["groups"] = {
 					i(189950),	-- Constrained Prey's Binds
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(179043, {	-- Orixal <Helicid Prime>
-				["coord"] = { 56.6, 69, ZERETH_MORTIS },
+				["coord"] = { 56.6, 69.0, ZERETH_MORTIS },
 				["questID"] = 65582,
 				["groups"] = {
 					i(189952),	-- Celestial Mollusk's Chestshell
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(183814, {	-- Otaris the Provoked
-				["coord"] = { 58.6, 39, ZERETH_MORTIS },
+				["coord"] = { 58.6, 39.0, ZERETH_MORTIS },
 				["questID"] = 65257,
 				["groups"] = {
 					i(189957),	-- Colossus' Focusing Headpiece
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
 				["coords"] = {
-					{ 53, 47.6, ZERETH_MORTIS },
+					{ 53.0, 47.6, ZERETH_MORTIS },
 					{ 53.4, 47.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65574,
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(184413, {	-- Shifting Stargorger
-				["coord"] = { 42, 21.9, ZERETH_MORTIS },
+				["coord"] = { 42.0, 21.9, ZERETH_MORTIS },
 				["questID"] = 65549,
 				["groups"] = {
 					i(189908),	-- Gorger's Leggings of Famine
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183516, {	-- The Engulfer
 				["description"] = "Need to complete The Matriarch Event. See emote call in the zone",
 				["crs"] = { 183505 },	-- The Matriarch
-				["coord"] = { 44, 75, ZERETH_MORTIS },
+				["coord"] = { 44.0, 75.0, ZERETH_MORTIS },
 				["questID"] = 65580,
 				["groups"] = {
 					i(190006),	-- Anima-Siphoning Sword
@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(183747, {	-- Vitiane
-				["coord"] = { 47, 47, ZERETH_MORTIS },
+				["coord"] = { 47.0, 47.0, ZERETH_MORTIS },
 				["questID"] = 65584,
 				["groups"] = {
 					i(189922),	-- Cowl of Shameful Proliferation

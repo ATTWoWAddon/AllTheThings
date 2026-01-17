@@ -1,9 +1,9 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
-local ipairs, pairs, floor, tinsert, tremove =
-	  ipairs, pairs, floor, tinsert, tremove;
+local ipairs, pairs, floor, tinsert
+	= ipairs, pairs, floor, tinsert
 
 -- App locals
 local GetRelativeValue, GetDeepestRelativeFunc = app.GetRelativeValue, app.GetDeepestRelativeFunc;
@@ -43,7 +43,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									associatedSpellIDs[result.spellID] = true;
 								end
 							end
-							
+
 							-- Build specialization headers
 							local specializations = {};
 							if specializationProfessionIDs then
@@ -56,7 +56,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									specializations[spellID] = specialization;
 								end
 							end
-							
+
 							local expansions, events = {}, {};
 							for expansionID,_ in pairs(app.SearchForFieldContainer("expansionID")) do
 								expansionID = floor(expansionID);
@@ -68,9 +68,9 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									expansion.g = {};
 								end
 							end
-							
-							
-							
+
+
+
 							local recipes = {};
 							for spellID,sources in pairs(app.SearchForFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
@@ -120,7 +120,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 													end
 												end
 												recipe.parent = expansions[floor(awp / 10000)] or data;
-												
+
 												if e then
 													local headerID = GetDeepestRelativeFunc(mostAccessibleSource.parent, function(group)
 														if group.e == e and group.headerID then
@@ -148,13 +148,13 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									end
 								end
 							end
-							
+
 							for expansionID,expansion in pairs(expansions) do
 								if #expansion.g > 0 then
 									tinsert(data.g, expansion);
 								end
 							end
-							
+
 							data.OnUpdate = nil;
 							self:AssignChildren();
 						end

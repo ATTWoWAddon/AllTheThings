@@ -943,3 +943,5 @@ i(0, 1260331);		-- Valdrakken Blossomfruit Platter
 --- ITEM ---
 i(248013, 1245993);	-- Dornic Mine and Cheese Platter
 i(260556, 1266560);	-- Hungry Human's Platter
+--- NYI ---
+i(0, 1245945);		-- [DNT] TWW Cooking Decor Template

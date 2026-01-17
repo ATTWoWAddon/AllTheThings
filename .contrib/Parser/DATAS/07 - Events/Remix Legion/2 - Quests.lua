@@ -156,7 +156,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240350),	-- Legwraps of Night Eternal
 					i(240352),	-- Robe of Night Eternal
 					i(240353),	-- Vestments of Night Eternal
-					}),
+				}),
 				filter(LEATHER, {
 					i(240775),	-- Lunarblight Leather Cowl
 					i(240781),	-- Lunarblight Leather Cuffs
@@ -166,7 +166,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240778),	-- Lunarblight Leather Strap
 					i(240780),	-- Lunarblight Leather Striders
 					i(240777),	-- Lunarblight Leather Tunic
-					}),
+				}),
 				filter(MAIL, {
 					i(240306),	-- Faceguard of Devouring Night
 					i(240299),	-- Handguards of Devouring Night
@@ -176,7 +176,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(240301),	-- Stompers of Devouring Night
 					i(240303),	-- Waistband of Devouring Night
 					i(240300),	-- Wristguards of Devouring Night
-					}),
+				}),
 				filter(PLATE, {
 					i(240544),	-- Xorothian Battleplate
 					i(240539),	-- Xorothian Gauntlets
@@ -571,10 +571,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		-- Infinite Epilogues
 		q(91522, {	-- Order from Chaos
-			["sourceQuests"] = {	-- Exo Note: Confirmed
+			["sourceQuests"] = {
 				45354,	-- Dispersion of the Discs (Mage)
 				46792,	-- Gathering of the Storms (Shaman)
-				46089,	-- Hiding In Plain Sight (Rogue)
+				46089,	-- Hiding In Plain Sight [A] (Rogue)
+				46178,	-- Hiding In Plain Sight [H] (Rogue)
 				46337,	-- Night of the Wilds (Hunter)
 				45770,	-- Stirring in the Shadows (Paladin)
 				46813,	-- The Lost Glacier (Death Knight)
@@ -607,6 +608,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["qg"] = 243853,	-- Moratari
 			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
+		}),
+		-- Phase 5: Infinite Echoes
+		q(91821, {	-- Out of Time
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
+		}),
+		q(91757, {	-- Until Our Next Hello
+			--["sourceQuest"] = XXXXX,
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 	}),
 })))

@@ -1354,11 +1354,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["groups"] = { i(158904) },	-- Alpaca Hides (QI!)
 					}),
 					o(282632, {
-						["coord"] = { 40, 75.6, VOLDUN },
+						["coord"] = { 40.0, 75.6, VOLDUN },
 						["groups"] = { i(158902) },	-- Fresh Water (QI!)
 					}),
 					o(282634, {
-						["coord"] = { 40, 75.2, VOLDUN },
+						["coord"] = { 40.0, 75.2, VOLDUN },
 						["groups"] = { i(158901) },	-- Hyena Jerky (QI!)
 					}),
 					o(282631, {
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["groups"] = { i(151220) },	-- Grenja's Skull (QI!)
 					}),
 					o(271792, {	-- Man'zul's Skull
-						["coord"] = { 47, 59.8, VOLDUN },
+						["coord"] = { 47.0, 59.8, VOLDUN },
 						["groups"] = { i(151218) },	-- Man'zul's Skull (QI!)
 					}),
 					o(271795, {	-- Volni's Skull

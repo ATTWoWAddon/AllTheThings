@@ -500,7 +500,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 7.0.3
 		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			-- With MountID Attached
-			i(137615, {	-- Flarecore Infernal (MOUNT!)
+			i(137615, {	-- Flarecore Infernal / Molten Flarecore (MOUNT!)
 				["displayID"] = 70127,
 			}),
 			-- Without MountID Attached
@@ -766,9 +766,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- 10.0.5
 		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
-			mount(369480, {	-- Cerulean Marsh Hopper
+			mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
 				["displayID"] = 105766,
 			}),
+			-- With MountID attached
 			i(203226, {	-- Stormfused Salamanther (MOUNT!)
 				-- ["displayID"] =
 			}),
@@ -829,14 +830,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			mount(405623, {	-- Armadillo Roller
+			mount(405623, {	-- Armadillo Roller (MOUNT!)
 				["displayID"] = 91633,
 			}),
 			-- With MountID attached
 			i(223570, {	-- Ebonhide Ramolith (MOUNT!)
 				["displayID"] = 117966,
 			}),
-			i(226044, {	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
+			i(226044, {	-- Plunderlord's Weathered Crocolisk (MOUNT!)
 				["displayID"] = 121171,
 			}),
 			i(223321, {	-- [PH] ArathiLynxMount (Black Fur, Black Armor) (MOUNT!)
@@ -942,7 +943,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(219012, {	-- Placeholder Delve Exclusive Mount (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			i(223268, {	-- [PH] DwarvenMechBoss (Gold)
+			i(223268, {	-- [PH] DwarvenMechBoss (Gold) (MOUNT!)
 				["displayID"] = 119383,
 			}),
 			i(223502, {	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed) (MOUNT!)
@@ -972,6 +973,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- 11.1.5
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			-- With MountID attached
 			i(238902, {	-- Autumn Harvesthog (MOUNT!)
 				["displayID"] = 127825,
 			}),
@@ -988,6 +990,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- 11.1.7
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			-- With MountID attached
 			i(243593, {	-- Banshee's Chilling Charger (MOUNT!)
 				["displayID"] = 129222,
 			}),
@@ -999,6 +1002,72 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(243592, {	-- Grandmaster's Smokey Board (MOUNT!)
 				["displayID"] = 129385,
+			}),
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			-- With MountID attached
+			i(247791, {	-- Adorned Northeron Gryphon (MOUNT!)
+				["displayID"] = 131427,
+			}),
+			i(246919, {	-- Cinder-seared Elekk (MOUNT!)
+				["displayID"] = 131303,
+			}),
+			i(247794, {	-- Emberwing Sky Guide (MOUNT!)
+				["displayID"] = 131430,
+			}),
+			i(247720, {	-- The Headless Horseman's Chilling Charger (MOUNT!)
+				["displayID"] = 131406,
+			}),
+			i(247722, {	-- The Headless Horseman's Burning Charger (MOUNT!)
+				["displayID"] = 131408,
+			}),
+			i(246917, {	-- Thunder-ridged Elekk (MOUNT!)
+				["displayID"] = 131302,
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			mount(1254363),	-- (PH LEGION REMIX MOUNT)
+			-- With MountID attached
+			i(250106, {	-- Floestrider Crest-Horn
+				["displayID"] = 136075,
+			}),
+			i(250928, {	-- Murky Turkey
+				["displayID"] = 136380,
+			}),
+			i(250927, {	-- Quirky Turkey
+				["displayID"] = 136375,
+			}),
+			i(250191, {	-- Reins of the Bilebound Ur'zul
+				-- ["displayID"] = ,
+			}),
+			i(239647, {	-- Reins of the Bloodguard Fel Bat
+				-- ["displayID"] = ,
+			}),
+			i(239686, {	-- Reins of the Forgotten Fel Bat
+				-- ["displayID"] = ,
+			}),
+			i(250726, {	-- Reins of the Leyfrost Manasaber
+				-- ["displayID"] = ,
+			}),
+			i(250727, {	-- Reins of the Nightwell Manasaber
+				-- ["displayID"] = ,
+			}),
+			i(239666, {	-- Reins of the Risen Fel Bat
+				-- ["displayID"] = ,
+			}),
+			i(250321, {	-- Reins of the Thorignir Drake
+				-- ["displayID"] = ,
+			}),
+			i(250105, {	-- Sharktested Crest-Horn
+				["displayID"] = 136074,
+			}),
+			-- Without MountID Attached
+			i(250762, {	-- Felfueled Memento of the Abyss
+				-- ["displayID"] = ,
 			}),
 		})),
 	}),

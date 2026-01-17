@@ -656,7 +656,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { FERALAS, THE_HINTERLANDS, ZULFARRAK },
@@ -696,7 +696,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { THE_BARRENS },
 					["groups"] = {
@@ -732,7 +732,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						{ "i", 210177 },	-- Ataeric: On Arcane Curiosities
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33, UNDERCITY },
+					["coord"] = { 73.6, 33.0, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -747,7 +747,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { THE_BARRENS },
 					["groups"] = {
@@ -762,7 +762,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { WESTFALL },
 					["groups"] = {
@@ -777,7 +777,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { DUSKWOOD },
 					["groups"] = {
@@ -810,7 +810,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["sourceQuestNumRequired"] = 10,
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["groups"] = {
 						recipe(425170),	-- Engrave Pants - Icy Veins
@@ -824,7 +824,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { STONETALON_MOUNTAINS },
 					["groups"] = {
@@ -839,7 +839,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { WETLANDS },
 					["groups"] = {
@@ -854,7 +854,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { DARKSHORE },
 					["groups"] = {
@@ -881,7 +881,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { LOCH_MODAN },
 					["groups"] = {
@@ -896,7 +896,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { WAILING_CAVERNS },
 					["groups"] = {
@@ -908,7 +908,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						{ "i", 208185 },	-- The Apothecary's Metaphysical Primer
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33, UNDERCITY },
+					["coord"] = { 73.6, 33.0, UNDERCITY },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -923,7 +923,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["coords"] = {
 						{ 37.8, 80.2, STORMWIND_CITY },
-						{ 73.6, 33, UNDERCITY },
+						{ 73.6, 33.0, UNDERCITY },
 					},
 					["maps"] = { SILVERPINE_FOREST },
 					["groups"] = {
@@ -935,7 +935,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						{ "i", 207972 },	-- The Lessons of Ta'zo
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33, UNDERCITY },
+					["coord"] = { 73.6, 33.0, UNDERCITY },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1339,7 +1339,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["groups"] = {
 					objective(1, {	-- Rescue Alyssian Windcaller
 						["provider"] = { "n", 221270 },	-- Alyssian Windcaller <Druid of the Claw>
-						["coord"] = { 92, 54, ASHENVALE },
+						["coord"] = { 92.0, 54.0, ASHENVALE },
 					}),
 				},
 			}),
@@ -1363,7 +1363,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["groups"] = {
 					objective(1, {	-- Rescue Maseara Autumnmoon
 						["provider"] = { "n", 221269 },	-- Maseara Autumnmoon <Druid of the Claw>
-						["coord"] = { 81, 50, ASHENVALE },
+						["coord"] = { 81.0, 50.0, ASHENVALE },
 					}),
 				},
 			}),
@@ -1884,7 +1884,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["groups"] = {
 					objective(1, {	-- Rescue Nerene Brooksinger
 						["provider"] = { "n", 221398 },	-- Nerene Brooksinger <Druid of the Claw>
-						["coord"] = { 45, 16, FERALAS },
+						["coord"] = { 45.0, 16.0, FERALAS },
 					}),
 				},
 			}),
@@ -3282,7 +3282,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(223222),	-- Fel Mail Wristbands
 					}),
 					i(223148, {	-- Otherworldly Treasure (25)
-						["sym"] = {{"select","itemID",	
+						["sym"] = {{"select","itemID",
 							221499,	-- Rune of the Felguard
 						}},
 						["groups"] = {
@@ -3294,7 +3294,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						},
 					}),
 					i(223149, {	-- Otherworldly Treasure (35)
-						["sym"] = {{"select","itemID",	
+						["sym"] = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
@@ -3306,7 +3306,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						},
 					}),
 					i(223150, {	-- Otherworldly Treasure (45)
-						["sym"] = {{"select","itemID",	
+						["sym"] = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
@@ -3327,7 +3327,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						},
 					}),
 					i(223151, {	-- Otherworldly Treasure (55)
-						["sym"] = {{"select","itemID",	
+						["sym"] = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
@@ -4192,7 +4192,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			pt = "Suprimentos Escondidos",
 			ru = "Перехват припасов",
 			cn = "遭劫货物",
-			tw = "伏擊物資",
+			tw = "遭攔截的物資",
 		},
 		description = {
 			en = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
@@ -4204,8 +4204,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			ko = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
 			pt = "Itens de missão Suprimentos Escondidos são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Escondidos a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 			ru = "Квестовые предметы Перехват припасов падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
-			cn = "'被伏击的货物'任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将'被伏击的货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
-			tw = "'遭攔截的貨物'任務物品會從艾澤拉斯各地6級及以上的怪物掉落。這些任務要求將'遭攔截的貨物'交付給某個組織的代表，以換取少量銀幣、經驗值和聲望。當然，物資運送中有一些物品遺失，你可以補充這些物品以獲得更多的聲望獎勵。",
+			cn = "'遭劫货物'任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将'遭劫货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
+			tw = "'遭攔截的物資'任務物品會從艾澤拉斯各地6級及以上的怪物掉落。這些任務要求將'遭攔截的物資'交付給某個組織的代表，以換取少量銀幣、經驗值和聲望。當然，物資運送中有一些物品遺失，你可以補充這些物品以獲得更多的聲望獎勵。",
 		},
 	}), {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),

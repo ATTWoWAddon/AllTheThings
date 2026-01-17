@@ -266,3 +266,16 @@ ExportDB.OnClickDB = {
 		end
 	end]]
 }
+
+-- #if ANYCLASSIC
+local CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID
+-- #if BEFORE 5.5.3
+CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = 1243929	-- Dominion of the Empress (Season 1)
+-- #elseif BEFORE 5.5.5
+CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = 1272162	-- Might of the Thunder King (Season 2 - Throne of Thunder)
+-- #else
+-- CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID = TODO	-- TODO (Season 3 -Siege of Orgrimmar)
+-- #endif
+FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS
+= FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(CELESTIAL_DUNGEON_DIFFICULTY_BUFFS_ID)
+-- #endif

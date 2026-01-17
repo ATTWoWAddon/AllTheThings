@@ -1,4 +1,4 @@
-0.5.3.3368
+﻿0.5.3.3368
 1@@@Northshire Abbey
 2@@@Stormwind, Elwynn
 3@@@Programmer Isle
@@ -2878,3 +2878,8 @@
 3229@@@Quest Path 11379: 12.0 Z1 - Eversong - Teleporters - Goldenmist - Going Down - SJC
 3230@@@Quest Path 11380: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Up - SJC
 3231@@@Quest Path 11381: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Down - SJC
+12.0.1.64889
+3232@@@Quest Path 10760: 12.0 Z1 - Local Story 09 - How to Train Your Protegee Q2c - Teleport to Top - Missile Teleport Curve Up (RRN)
+3233@@@Quest Path 10761: 12.0 Z1 - Local Story 02c - How to Train Your Protegee Q02c - Teleport Down - Missle Teleport Curve Down (RRN)
+3234@@@Quest Path 10393: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport to Top - Missile Teleport Curve Up (RRN)
+3235@@@Quest Path 10398: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport Down - Missle Teleport Curve Down (RRN)

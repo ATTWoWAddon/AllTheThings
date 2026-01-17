@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local L, CloneReference = app.L, app.CloneReference;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 
@@ -13,7 +13,7 @@ app:CreateWindow("Unsorted", {
 		-- Add an achievement header
 		local achievementHeader = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, { g = {} });
 		self.achievementHeader = achievementHeader;
-		
+
 		-- Make a function to add a new unsorted achievement.
 		self.AddUnsortedAchievement = function(self, achievement)
 			achievement = CloneReference(achievement);
@@ -38,7 +38,7 @@ app:CreateWindow("Unsorted", {
 				self.data.g = unsorted;
 				app.CacheFields(self.data);
 				tinsert(unsorted, self.achievementHeader);
-				self:DefaultRebuild();
+				self:AssignChildren();
 			end
 		end
 		self:DefaultUpdate(...);

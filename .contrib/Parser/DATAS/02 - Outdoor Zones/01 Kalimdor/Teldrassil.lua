@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(4495, {	-- A Good Friend
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(921, {	-- Crown of the Earth (1/6)
 							["sourceQuest"] = 920,	-- Tenaron's Summons
 							["qg"] = 3514,	-- Tenaron Stormgrip
-							["coord"] = { 59, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3514 },	-- Tenaron Stormgrip
 								{ "i", 5186 },	-- Partially Filled Vessel
 							},
-							["coord"] = { 59, 39.4, TELDRASSIL },
+							["coord"] = { 59.0, 39.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -280,9 +280,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -308,9 +308,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -383,9 +383,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(3521, {	-- Iverron's Antidote (1/2)
 							["sourceQuest"] = 3519,	-- A Friend in Need
 							["qg"] = 8583,	-- Dirania Silvershine
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 8583 },	-- Dirania Silvershine
 								{ "i", 10642 },	-- Iverron's Antidote
 							},
-							["coord"] = { 60.8, 42, TELDRASSIL },
+							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
@@ -694,9 +694,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -725,9 +725,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 50, 28, SHADOWGLEN },
+										{ 50.0, 28.0, SHADOWGLEN },
 										-- #else
-										{ 59, 28, TELDRASSIL },
+										{ 59.0, 28.0, TELDRASSIL },
 										-- #endif
 									},
 								}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(459, {	-- The Woodland Protector (2/2)
 							["sourceQuest"] = 458,	-- The Woodland Protector (1/2)
 							["qg"] = 1992,	-- Tarindrella
-							["coord"] = { 57.8, 45, TELDRASSIL },
+							["coord"] = { 57.8, 45.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -876,9 +876,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 45.8, 73, SHADOWGLEN },
+								{ 45.8, 73.0, SHADOWGLEN },
 								-- #elseif AFTER CATA
-								{ 58, 38.8, TELDRASSIL },
+								{ 58.0, 38.8, TELDRASSIL },
 								-- #else
 								{ 58.6, 44.2, TELDRASSIL },
 								-- #endif
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 63, 58, TELDRASSIL },
+							["coord"] = { 63.0, 58.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1222,7 +1222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5645 },	-- Filled Tourmaline Phial
 								{ "i", 5621 },	-- Tourmaline Phial
 							},
-							["coord"] = { 42, 67, TELDRASSIL },
+							["coord"] = { 42.0, 67.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1238,7 +1238,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 38, 34, TELDRASSIL },
+							["coord"] = { 38.0, 34.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1450,7 +1450,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 3838 },	-- Vesprystus
 						{ "i", 16262 },	-- Nessa's Collection
 					},
-					["coord"] = { 58.4, 94, TELDRASSIL },
+					["coord"] = { 58.4, 94.0, TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
@@ -1607,7 +1607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4161, {	-- Recipe of the Kaldorei
 					["qg"] = 6286,	-- Zarrin
-					["coord"] = { 57, 61.2, TELDRASSIL },
+					["coord"] = { 57.0, 61.2, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["requireSkill"] = COOKING,
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 18151 },	-- Filled Amethyst Phial
 								{ "i", 18152 },	-- Amethyst Phial
 							},
-							["coord"] = { 40, 29, TELDRASSIL },
+							["coord"] = { 40.0, 29.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5639 },	-- Filled Jade Phial
 								{ "i", 5619 },	-- Jade Phial
 							},
-							["coord"] = { 60, 50, TELDRASSIL },
+							["coord"] = { 60.0, 50.0, TELDRASSIL },
 						}),
 					},
 				}),
@@ -2000,7 +2000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6722, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["coord"] = { 45.8, 53, DUN_MOROGH },
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },

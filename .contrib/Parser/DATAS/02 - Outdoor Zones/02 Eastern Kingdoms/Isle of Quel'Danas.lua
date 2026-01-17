@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 								{ "i",  34338 },	-- Mana Remnants
 								{ "o", 187078 },	-- Crystal Ward
 							},
-							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
+							["coord"] = { 46.0, 35.0, ISLE_OF_QUELDANAS },
 							["crs"] = {
 								24960,	-- Wretched Devourer
 								24966,	-- Wretched Fiend
@@ -1624,15 +1624,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Portal Reading Taken
 							["provider"] = { "i", 34533 },	-- Astromancer's Crystal
-							["coord"] = { 48, 44, ISLE_OF_QUELDANAS },
+							["coord"] = { 48.0, 44.0, ISLE_OF_QUELDANAS },
 						}),
 						objective(2, {	-- 0/1 Shrine Reading Taken
 							["provider"] = { "i", 34533 },	-- Astromancer's Crystal
-							["coord"] = { 61, 62, ISLE_OF_QUELDANAS },
+							["coord"] = { 61.0, 62.0, ISLE_OF_QUELDANAS },
 						}),
 						objective(3, {	-- 0/1 Bloodcrystal Reading Taken
 							["provider"] = { "i", 34533 },	-- Astromancer's Crystal
-							["coord"] = { 42, 35, ISLE_OF_QUELDANAS },
+							["coord"] = { 42.0, 35.0, ISLE_OF_QUELDANAS },
 						}),
 						i(35230),	-- Darnarian's Scroll of Teleportation
 					},
@@ -1845,7 +1845,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 								{ "i",  34338 },	-- Mana Remnants
 								{ "o", 187078 },	-- Crystal Ward
 							},
-							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
+							["coord"] = { 46.0, 35.0, ISLE_OF_QUELDANAS },
 							["crs"] = {
 								24960,	-- Wretched Devourer
 								24966,	-- Wretched Fiend

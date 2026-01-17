@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(78596, {	-- Summons to Lord Greymane
 					["qg"] = 212899,	-- Greyguard Elite
 					["coords"] = {
-						{ 59, 42.3, VALDRAKKEN },
+						{ 59.0, 42.3, VALDRAKKEN },
 						{ 62.4, 71.9, STORMWIND_CITY },
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(78183, {	-- Scarlet Blood
 					["sourceQuest"] = 78182,	-- Knee-High
 					["qg"] = 210964,	-- Lillian Voss
-					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
+					["coord"] = { 57.0, 53.0, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/12 Scarlet forces slain
 							["providers"] = {
@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(78184, {	-- Smokepowder and Mirrors
 					["sourceQuests"] = 78182,	-- Knee-High
 					["qg"] = 210905,	-- Princess Tess Greymane
-					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
+					["coord"] = { 57.0, 53.0, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/8 Scarlet Explosives
 							["providers"] = {
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						78184,	-- Smokepowder and Mirrors
 					},
 					["qg"] = 210905,	-- Princess Tess Greymane
-					-- ["coord"] = { 57, 53, RUINS_OF_GILNEAS },	-- Spawns with you.
+					-- ["coord"] = { 57.0, 53.0, RUINS_OF_GILNEAS },	-- Spawns with you.
 				}),
 				q(78186, {	-- Crushing the Crusade
 					["sourceQuest"] = 78185,	-- Hounds of War
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				["groups"] = {
 					o(421360, {	-- Memorial Bouquet
-						["coord"] = { 48.8, 53, RUINS_OF_GILNEAS },
+						["coord"] = { 48.8, 53.0, RUINS_OF_GILNEAS },
 						["groups"] = {
 							i(211788),	-- Tess's Peacebloom (TOY!)
 						},

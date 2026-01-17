@@ -12,8 +12,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
 	i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(553616, {	-- Arden Lumber
-			i(251772),	-- Arden Lumber
+		o_repeated({	-- Arden Lumber
+			["maps"] = {
+				ARDENWEALD,
+				BASTION,
+				MALDRAXXUS,
+				REVENDRETH,
+			},
+			["groups"] = {
+				-- Objects
+				o(554661),	-- [Ardenweald]
+				o(553616),	-- [Bastion]
+				o(553646),	-- [Maldraxxus]
+				o(553804),	-- [Revendreth]
+				-- Drops
+				i(251772),	-- Arden Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {

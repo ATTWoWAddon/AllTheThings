@@ -3454,7 +3454,7 @@ i(7070,{coords={{61.6,30.4,14},{46.5,44,23},{56.4,74,23},{66.3,29.6,23},{18.3,60
 i(7082,{coords={{27.9,25.5,81},{37.7,17.4,81}},crs={11744,11745,17158,17159,17160,22310},description="If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",maps={107},q=2}),
 i(7076,{coords={{18.2,44,36},{62.3,46.8,36},{31.4,14,81},{59.6,59.3,83}},crs={7031,7032,11746,11747,48960},maps={232},providers={{"o",181068},{"o",181069}},q=2}),
 i(7078,{coords={{51.7,50.7,78}},crs={6520,6521},maps={232,242},q=2}),
-i(12808,{coords={{53,42,83}},crs={7523,7524,48664,48665},description="Drops from Undead creatures in the given zones.",maps={23,234,317,476},q=2}),
+i(12808,{coords={{53,42,83}},crs={7523,7524,48664,48665},description="Drops from Undead creatures in the given zones.",maps={23,234,317},q=2}),
 i(7080,{coords={{46.5,44,23},{56.4,74,23},{66.3,29.6,23},{18.3,60.2,51},{30.5,53.2,78},{33,50.5,83},{60,85.1,83}},crs={8519,8520,8521,8522,38254,46953,48767,50250},q=2}),
 i(14256,{coords={{33.4,46.8,17},{37.7,67.85,17},{45.9,46.8,17},{17.7,37.7,77},{42,40,77},{52,70.15,83},{52.3,75.7,83},{52.75,64.65,83}},crs={6011,7136,41253,41470,41471,46950,50315,50318,50321},description="Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",maps={239},q=1}),
 i(7191,{q=1}),
@@ -3468,7 +3468,7 @@ i(7077,{coords={{42,40,77},{51.7,50.7,78}},crs={5850,5852,6520,6521,9879},maps={
 i(10286,{coords={{33.7,78.2,17},{37.5,56.2,17},{40.3,69.5,17},{44.8,81,17},{51.5,25,77},{55.3,21.6,78},{69.5,36.7,78},{50.3,48.9,83}},crs={6509,6510,6511,6512,6517,6518,6519,6527,7100,7139,7149,45118,45119,45125,48952,49217},maps={234,280},q=1}),
 i(12204,{coords={{52,59,66}},crs={4700,4701,4702},description="Drops from kodos in Desolace as well as other vanilla zones.",q=1}),
 i(19441,{description="Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",maps={162,247},q=1}),
-i(7972,{description="Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",maps={236,317,476},q=1}),
+i(7972,{description="Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",maps={236,317},q=1}),
 i(14227,{crs={10374,10375,10376,10596},description="Drops from spiders in Lower Blackrock Spire.",maps={251},q=1}),
 i(8168,{coords={{55,35,17},{55,44,17},{58,20,17},{60,27,17},{60,38,17}},crs={5982,8299},rwp=40003,u=2}),
 i(5467,{crs={2972,2973,2974,3234,3236},description="Most viably obtained from kodos in Mulgore.",maps={7},q=1}),
@@ -6968,14 +6968,14 @@ i(100865,{awp=50400,b=1,f=50,q=3,requireSkill=164,u=54,g={
 r(146921,{awp=50400,learnedAt=605,requireSkill=164,u=54}),
 r(143255,{awp=50400,learnedAt=605,requireSkill=164,u=54})}})}}),
 prof(202,{awp=50004,g={
-i(94847,{awp=50200,b=1,f=50,q=3,requireSkill=202,rwp=90002,u=52}),
-i(100910,{awp=50200,b=1,f=50,q=3,requireSkill=202,u=52,g={
-r(139197,{awp=50200,learnedAt=600,requireSkill=202,u=52}),
-r(139176,{awp=50200,learnedAt=600,requireSkill=202,u=52}),
-r(139196,{awp=50200,learnedAt=600,requireSkill=202,u=52}),
-r(143714,{awp=50200,learnedAt=600,requireSkill=202,u=52}),
-r(139192,{awp=50200,learnedAt=600,requireSkill=202,u=52})}}),
-q(32630,{awp=50200,providers={{"i",94847}},rwp=90002,u=52})}}),
+i(94847,{awp=50300,b=1,f=50,q=3,requireSkill=202,rwp=50400,u=2}),
+i(100910,{awp=50400,b=1,f=50,q=3,requireSkill=202,u=54,g={
+r(139197,{awp=50400,learnedAt=600,requireSkill=202,u=54}),
+r(139176,{awp=50400,learnedAt=600,requireSkill=202,u=54}),
+r(139196,{awp=50400,learnedAt=600,requireSkill=202,u=54}),
+r(143714,{awp=50400,learnedAt=600,requireSkill=202,u=54}),
+r(139192,{awp=50400,learnedAt=600,requireSkill=202,u=54})}}),
+q(32630,{awp=50300,providers={{"i",94847}},rwp=50400,u=2})}}),
 prof(773,{awp=50004,g={
 r(146638,{awp=50400,b=1,itemID=102534,learnedAt=600,q=2,requireSkill=773}),
 r(148275,{awp=50400,b=1,itemID=104228,learnedAt=500,q=2,requireSkill=773}),
@@ -7031,6 +7031,8 @@ r(146925,{awp=50400,learnedAt=600,requireSkill=197,u=54}),
 r(143011,{awp=50400,learnedAt=600,requireSkill=197,u=54})}})}})}}),
 flt(50,{awp=50004,g={
 i(89112,{awp=50004,b=1,q=1}),
+i(74849,{awp=50004,description="Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",q=1}),
+i(74844,{awp=50004,description="Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",q=1}),
 i(76061,{awp=50004,b=1,q=3})}})}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
 i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={

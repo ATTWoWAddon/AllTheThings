@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							-- ["coord"] = {},
 						}),
 						crit(65409, {	-- The Riverbed
-							["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+							["coord"] = { 69.0, 34.3, OHNAHRAN_PLAINS },
 						}),
 						crit(65410, {	-- Igira's Watch
 							["_quests"] = { 76734 },	-- Research: Djaradin of Zaralek Cavern
@@ -238,7 +238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(77433, {	-- Excavation: Riverbed
 					["sourceQuests"] = { 77268 },	-- Hands-On Experience
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.5, 30, THALDRASZUS },
+					["coord"] = { 61.5, 30.0, THALDRASZUS },
 				}),
 				q(75493, {	-- Surveying the Riverbed
 					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
@@ -256,7 +256,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(75603, {	-- Do Rites by Her
 					["sourceQuests"] = { 75518 },	-- The Body on the Banks
 					["provider"] = { "n", 204643 },	-- Roska Rocktooth
-					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+					["coord"] = { 66.4, 46.0, OHNAHRAN_PLAINS },
 				}),
 				q(77327, {	-- Nirobin and the Office
 					["sourceQuests"] = {
@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						204835,	-- Zenata
 					},
 					["coords"] = {
-						{ 66.4, 46, OHNAHRAN_PLAINS },
+						{ 66.4, 46.0, OHNAHRAN_PLAINS },
 						{ 56.3, 43.9, THE_WAKING_SHORES },
 					},
 				}),
@@ -352,7 +352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["groups"] = {
 						-- spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
 						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
-							["coord"] = { 42, 35, ZARALEK_CAVERN },
+							["coord"] = { 42.0, 35.0, ZARALEK_CAVERN },
 							["groups"] = {
 								i(208228),	-- Ancient Trade-bonded Tablet (QI!)
 							},
@@ -429,7 +429,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 					["coords"] = {
 						{ 61.6, 31.3, THALDRASZUS },
-						{ 27, 46.5, THE_AZURE_SPAN },
+						{ 27.0, 46.5, THE_AZURE_SPAN },
 						{ 55.3, 51.4, 2262 },	-- Traitor's Rest
 					},
 					["isWeekly"] = true,
@@ -600,7 +600,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
-						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+						["coord"] = { 69.0, 34.3, OHNAHRAN_PLAINS },
 					}),
 					q(76734, {	-- Research: Djaradin of Zaralek Cavern
 						["coord"] = { 44.1, 54.1, ZARALEK_CAVERN },
@@ -621,7 +621,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
 					q(78616, {	-- Technoscrying: The Mysteries of the Concord Observatory
-						["coord"] = { 55, 46.2, THE_WAKING_SHORES },
+						["coord"] = { 55.0, 46.2, THE_WAKING_SHORES },
 					}),
 					q(78820, {	-- Technoscrying: The Mysteries of Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },

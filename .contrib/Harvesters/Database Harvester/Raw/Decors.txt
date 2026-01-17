@@ -1,4 +1,4 @@
-11.2.7.63642
+ï»¿11.2.7.63642
 12@@@[DNT] Orgrimmar Interior Wall - DO NOT USE
 13@@@[DNT] Partition Pillar (WMO) - DO NOT USE
 60@@@[DNT] Partition Doorway (WMO) - DO NOT USE
@@ -1258,7 +1258,7 @@
 11804@@@Legerdemain Lounge Sign Board
 11805@@@Dalaran Kafa Grinder
 11806@@@Pylon Fragment
-11807@@@Dalaran Kafa Table
+11807@@@DalaranÂ Kafa Table
 11808@@@Ornamental Proudmoore Anchor
 11809@@@[DNT] [AUTOGEN] 8DU_Mechagon_ControlConsole01.m2
 11810@@@[DNT] [AUTOGEN] 8DU_Mechagon_MachinePart05.m2
@@ -1588,6 +1588,23 @@
 17610@@@[DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier04.M2
 17611@@@[DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier05.M2
 17740@@@[DNT] [AUTOGEN] 12PH_Opulent_Sofa_Large01_NoCloth.M2
+11.2.7.64978
+12247@@@Hatred's Wolfpelt Rug
+12248@@@Prime Evil's Chest
+12249@@@Sanctuary's Chess Match
+12250@@@Sanctuary's Chess Board
+12251@@@Sanctuary Chess Dark Bishop
+12252@@@Sanctuary Chess Dark Rook
+12253@@@Sanctuary Chess Dark Queen
+12254@@@Sanctuary Chess Dark Pawn
+12255@@@Sanctuary Chess Dark Knight
+12256@@@Sanctuary Chess Dark King
+12257@@@Sanctuary Chess Light Bishop
+12258@@@Sanctuary Chess Light Rook
+12259@@@Sanctuary Chess Light Queen
+12260@@@Sanctuary Chess Light Pawn
+12261@@@Sanctuary Chess Light Knight
+12262@@@Sanctuary Chess Light King
 12.0.0.63534
 378@@@Sturdy Wooden Door
 669@@@NYI 12PH_Opulent_INE01_Partition_Pillar.wmo
@@ -2890,7 +2907,7 @@
 18802@@@[DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack02.m2
 12.0.0.64741
 1148@@@Ritual-Cursed Sarcophagus
-1159@@@Sin’dorei Honor Stone
+1159@@@Sinâ€™dorei Honor Stone
 1160@@@Diamond Honor Stone
 1442@@@Silvermoon Sundial
 1489@@@Majestic Lightwood Table
@@ -2913,7 +2930,7 @@
 9065@@@Lush Garden Fungal Basin
 9422@@@Thalassian Academy Dictation Device
 9443@@@Lush Garden Butterfly Sconce
-10858@@@Zul’Aman Ancestral Fountain
+10858@@@Zulâ€™Aman Ancestral Fountain
 11323@@@Amani Crafter's Tool Rack
 11328@@@Banner of the Amani Tribe
 11470@@@Silvermoon Energy Focus
@@ -2939,12 +2956,12 @@
 15260@@@Sturdy Void Elf Trunk
 15478@@@Firm Haranir Pillow
 15480@@@Warm Haranir Blanket
-15483@@@Sin’dorei Storage Jar
+15483@@@Sinâ€™dorei Storage Jar
 15484@@@Woodblock Stool
 15487@@@Zul'Aman Forest Hammock
 15489@@@Three-Tier Zul'Aman Shelf
 15490@@@Amani Trophy Frame
-15492@@@Zul’Aman Armament Rest
+15492@@@Zulâ€™Aman Armament Rest
 15572@@@Amani War Drum
 15573@@@Colossal Amani Stone Visage
 15579@@@Cosmic Barrel
@@ -2956,7 +2973,7 @@
 15851@@@Amani Slate Bench
 15891@@@Sturdy Void Elf Trunk Open
 15894@@@Cosmic Traveler's Satchel
-16092@@@Zul’Aman Flame Cradle
+16092@@@Zulâ€™Aman Flame Cradle
 16097@@@Void Elf Bedroll
 17628@@@March on Quel'Danas Vanquisher's Aureate Trophy
 17629@@@Dreamrift Vanquisher's Aureate Trophy
@@ -2986,3 +3003,40 @@
 19231@@@Endless Codex of Nature's Grace
 19234@@@Endless Codex of the Voidtouched
 19252@@@[DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2
+12.0.0.64975
+1204@@@Sunsmoke Censer DEPRICATED DONT USE
+3920@@@[DNT] Orange Spore Light - endeavor canceled (inside only)
+3921@@@[DNT] Spore Light - endeavor canceled (inside only)
+10273@@@Sin'dorei Artisan's Easel
+14977@@@Gilded Eversong Cup
+17918@@@Granite Cobblestone Long Path
+17919@@@Granite Cobblestone Path
+18482@@@[DNT] DR_DRAENEI_HOLORUNES02.M2 - Do not use - duplicate
+19197@@@Dreamrift Vanquisher's Argent Trophy
+19198@@@March on Quel'Danas Vanquisher's Argent Trophy
+19252@@@Voidspire Vanquisher's Argent Trophy
+20172@@@[DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
+12.0.1.64889
+1147@@@Rutaani Sporepod
+1159@@@Sin'dorei Honor Stone
+1726@@@Sturdy Haranir Handcart
+2224@@@Stoppered Spring Water Gourd
+2232@@@Ruddy Haranir Pigment Bowl
+2605@@@Rustic Harandar Planter
+8993@@@Fungal Pergola
+10327@@@Root-Woven Door
+10542@@@"Eversong Lantern" Painting
+10778@@@Root-Woven Window
+10858@@@Zul'Aman Ancestral Fountain
+11325@@@Amani Spearhunter's Spit
+14554@@@Ornate Cosmic Rug
+15155@@@Bubbling Haranir Cauldron
+15483@@@Sin'dorei Storage Jar
+15486@@@Depthdiver's Cooking Spit
+15492@@@Zul'Aman Armament Rest
+15890@@@Void Elf Weapon Rack
+15891@@@Open Sturdy Void Elf Trunk
+16092@@@Zul'Aman Flame Cradle
+17516@@@Fungarian Vine Fence
+17886@@@Altar of the Shul'ka
+18800@@@Open Void Elf Bedroll

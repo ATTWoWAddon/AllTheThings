@@ -1,6 +1,6 @@
 do
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 
 local EJ_GetEncounterInfo = EJ_GetEncounterInfo;
 if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then

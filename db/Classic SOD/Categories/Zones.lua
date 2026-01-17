@@ -510,6 +510,12 @@ r(13220,{c={4},rwp=30002}),
 r(13228,{c={4},rwp=30002}),
 r(13229,{c={4},rwp=30002}),
 r(13230,{c={4},rwp=30002})}})}),
+prof(393,{
+n(7088,{coords={{63.2,45.2,1454}},r=1,g={
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(3363,{coords={{63.6,50,1454}},r=1,g={
 r(3908,{learnedAt=0,lvl=5,rank=1,requireSkill=197}),
@@ -1523,7 +1529,7 @@ q(1140,{coords={{26.2,38.6,1440}},lvl=13,qgs={3663},r=2,rwp=40003,sourceQuests={
 qo(1,{coords={{66.7,57,1440}},providers={{"o",19901}},rwp=40003}),
 qo(2,{coords={{81.6,48.5,1440}},providers={{"o",20352}},rwp=40003})}}),
 q(1167,{coords={{26.2,38.6,1440}},lvl=13,maps={1439},qgs={3663},r=2,rwp=40003,sourceQuests={1140}}),
-q(6543,{coords={{48.12,5.42,1413}},lvl=17,providers={{"i",16763},{"i",16764},{"i",16765},{"i",16783}},qgs={8582},r=1,rwp=40003,sourceQuests={6541,6542},g={
+q(6543,{coords={{48.12,5.42,1413}},lvl=17,providers={{"i",16783}},qgs={8582},r=1,rwp=40003,sourceQuests={6541,6542},g={
 q(6546,{coords={{83.6,51.4,1440}},providers={{"i",16746}},qgs={12864},repeatable=1,rwp=40003,g={
 qo(3,{providers={{"i",16765}},questID=6543,rwp=40003})}}),
 q(6545,{coords={{12.2,34.2,1440}},providers={{"i",16746}},qgs={12863},repeatable=1,rwp=40003,g={
@@ -1766,7 +1772,9 @@ r(19053,{itemID=15729,learnedAt=265,q=1,requireSkill=10660,rwp=40003})}}),
 n(14301,{coords={{12,78.4,1447}},r=2,rwp=40003,g={
 s(160247,11305,{f=32,lvl=30,q=2,rwp=40003})}}),
 n(8678,{coords={{45.2,90.8,1447}},rwp=40003,g={
-r(12617,{itemID=10607,learnedAt=230,q=1,requireSkill=202,rwp=40003})}})}),
+r(12617,{itemID=10607,learnedAt=230,q=1,requireSkill=202,rwp=40003})}}),
+n(3621,{coords={{21.8,52,1447}},r=1,g={
+i(231780,{awp=11504,b=1,c={8},f=55,lvl=60,q=2})}})}),
 h(-63,{
 r(20012,{crs={6201},itemID=16219,learnedAt=270,q=2,requireSkill=333,rwp=20300}),
 r(19089,{awp=100107,coords={{50.4,80.2,1447},{64.6,87.2,1447},{70.4,17.6,1447},{80.6,18.6,1447}},crs={6146},itemID=15763,learnedAt=295,q=3,requireSkill=10656,rwp=40003}),
@@ -3637,11 +3645,11 @@ qo(1,{coords={{36.4,40.2,1450},{54.1,50.1,1450}},providers={{"i",15877}},rwp=400
 q(78229,{c={11},coords={{52.4,40.4,1450}},cost={{"i",210026,1},{"i",210043,1},{"i",210044,1}},qgs={12042},rwp=20001,u=1605,g={
 i(210137,{b=1,c={11},f=55,q=2,rwp=20001,u=1605,g={
 r(410028,{rwp=20001,u=1605})}})}}),
-q(272,{c={11},coords={{36.4,40.2,1450}},lvl=16,maps={1436,1439},qgs={11799},r=2,rwp=40003,sourceQuests={29},g={
+q(272,{c={11},coords={{36.4,40.2,1450}},lvl=16,qgs={11799},r=2,rwp=40003,sourceQuests={29},g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003}),
-i(15882,{coords={{17.9,33,1436}},q=1,rwp=40003}),
-i(15883,{coords={{48.9,11.3,1439}},q=1,rwp=40003})}}),
-q(30,{c={11},coords={{36.4,40.2,1450}},lvl=16,maps={1413,1421},qgs={11799},r=1,rwp=40003,sourceQuests={28},g={
+i(15882,{coords={{29.6,29.5,1421}},q=1,rwp=40003}),
+i(15883,{coords={{56.7,8.3,1413}},q=1,rwp=40003})}}),
+q(30,{c={11},coords={{36.4,40.2,1450}},lvl=16,qgs={11799},r=1,rwp=40003,sourceQuests={28},g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003}),
 i(15882,{coords={{29.6,29.5,1421}},q=1,rwp=40003}),
 i(15883,{coords={{56.7,8.3,1413}},q=1,rwp=40003})}}),
@@ -4813,8 +4821,7 @@ crit(1413,{achID=851,id=1})}),
 exp(978,{
 crit(1427,{achID=851,id=1})})}),
 h(-31,{
-faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end,g={
-crit(8821,{achID=2336,id=1,u=1609})}})}),
+faction(369,{icon=133784,maps={1413},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates near Ratchet",2.5,42000);if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Southsea Pirates in Tanaris (To 11999 Honored)",5,20999);end	end	end})}),
 h(-32,{
 fp(39,{coords={{51,29.2,1446}},crs={7823},r=2}),
 fp(40,{coords={{51.6,26.6,1446}},crs={7824},r=1})}),
@@ -5453,8 +5460,7 @@ crit(928,{achID=750,id=1})}),
 exp(1699,{
 crit(926,{achID=750,id=1})})}),
 h(-31,{
-faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet,g={
-crit(8822,{achID=2336,id=1,u=1609})}})}),
+faction(470,{icon=133784,maps={1446},OnTooltip=_.OnTooltipDB.ForRatchet})}),
 h(-32,{
 fp(77,{coords={{44.4,59,1413}},crs={10378},r=1,rwp=40003}),
 fp(25,{coords={{51.4,30.2,1413}},crs={3615},r=1}),
@@ -6379,7 +6385,7 @@ q(4386,{coords={{77.3,50,1449}},cost={{"i",11188,10},{"i",11184,10}},lvl=47,prov
 i(11567,{b=1,q=1,rwp=40003})}}),
 q(4383,{coords={{23.5,50,1449}},cost={{"i",11185,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
 i(11564,{b=1,q=1,rwp=40003})}}),
-q(4384,{coords={{23.8,59.1,1449}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
+q(4384,{coords={{23.5,50,1449}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},g={
 i(11565,{b=1,q=1,rwp=40003})}}),
 q(4284,{coords={{41.8,2.6,1449}},cost={{"i",11188,7},{"i",11186,7},{"i",11185,7},{"i",11184,7}},lvl=47,qgs={9117},rwp=40003}),
 q(5150,{coords={{43.6,7.2,1449}},cost={{"i",11315,15}},lvl=47,providers={{"i",15699}},qgs={9274},repeatable=1,rwp=40003,g={
@@ -6452,7 +6458,7 @@ q(3909,{coords={{31.2,45.2,1452}},lvl=47,maps={1444},qgs={9298},rwp=40003,source
 q(4041,{coords={{44,11,1444},{45.1,25.6,1444}},providers={{"i",11242},{"o",164798}},qgs={7775},repeatable=1,rwp=40003,g={
 qo(1,{providers={{"i",11243}},questID=3909,rwp=40003})}})}}),
 q(4288,{coords={{41.8,2.6,1449}},lvl=47,qgs={9117},rwp=40003,sourceQuests={4284},g={
-qo(1,{coords={{23.8,59.1,1449}},providers={{"o",164956}},rwp=40003})}}),
+qo(1,{coords={{23.5,50,1449}},providers={{"o",164956}},rwp=40003})}}),
 q(9063,{c={11},coords={{52.4,40.6,1450},{76.6,27.6,1456},{34.8,8.6,1457}},lvl=50,qgs={3033,4218,12042},rwp=40003,u=1607}),
 q(9051,{c={11},coords={{71.6,76,1449}},lvl=50,qgs={9619},rwp=40003,sourceQuests={9052},u=1607,g={
 qo(1,{crs={6498},providers={{"i",22432}},rwp=40003,u=1607})}}),
@@ -6514,8 +6520,7 @@ crit(1474,{achID=857,id=1})}),
 exp(2244,{
 crit(1483,{achID=857,id=1})})}),
 h(-31,{
-faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook,g={
-crit(8820,{achID=2336,id=1,u=1609})}}),
+faction(577,{icon=133784,maps={1413,1446},OnTooltip=_.OnTooltipDB.ForEverlook}),
 faction(589,{icon=132252,OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerKill=50;if reputation<1500 then	addRepInfo(tooltipInfo,reputation,"Complete Frostsaber Provisions (to 1500)",repPerKill,1500);else	addRepInfo(tooltipInfo,reputation,"Complete Winterfall Intrusion",repPerKill,42000);if reputation>=9000 then	repPerKill=50;addRepInfo(tooltipInfo,reputation,"Complete Rampaging Giants",repPerKill,42000);end	end	end	end,r=2})}),
 h(-32,{
 fp(52,{coords={{62.2,36.6,1452}},crs={11138},r=2}),
@@ -6664,6 +6669,8 @@ n(11188,{coords={{60.8,37.8,1452}},g={
 r(17556,{itemID=13480,learnedAt=275,q=1,requireSkill=171,rwp=20001})}}),
 n(11187,{coords={{61.2,39,1452}},g={
 r(15933,{itemID=16110,learnedAt=225,q=1,requireSkill=185})}}),
+n(2303,{coords={{52,29.2,1452}},r=2,g={
+i(231780,{awp=11504,b=1,c={8},f=55,lvl=60,q=2})}}),
 n(228216,{awp=11503,coords={{61.2,37,1452}},g={
 i(227286,{awp=11503,b=1,f=55,q=1})}}),
 n(11189,{coords={{61.2,37.2,1452}},g={
@@ -7374,6 +7381,12 @@ r(13220,{c={4},rwp=30002}),
 r(13228,{c={4},rwp=30002}),
 r(13229,{c={4},rwp=30002}),
 r(13230,{c={4},rwp=30002})}})}),
+prof(393,{
+n(1292,{coords={{67.8,49,1453}},r=2,g={
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 26 or 20;end,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,OnUpdate=function(t)t.lvl=settings:GetUnobtainableFilter(1605)and 41 or 35;end,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(1346,{coords={{43.6,73.8,1453}},r=2,g={
 r(3908,{learnedAt=0,lvl=5,rank=1,requireSkill=197}),
@@ -7480,7 +7493,7 @@ q(1638,{altQuests={1678,1679,1684},c={1},coords={{41,65.8,1429},{78.6,45.6,1453}
 q(7796,{coords={{44.2,73.6,1453}},cost={{"i",14047,20}},lvl=50,maxReputation={72,42000},qgs={14722},r=2,repeatable=1,rwp=40003,sourceQuests={7795}}),
 q(396,{coords={{49,30.2,1453}},lvl=16,providers={{"i",2956}},qgs={1646},r=2,rwp=40003,sourceQuests={395},g={
 i(2933,{b=1,f=52,q=3,rwp=40003})}}),
-q(7643,{c={2},coords={{37.6,32.6,1453}},lvl=60,maps={234,1424},providers={{"i",18753},{"i",18775}},qgs={928,14566},r=2,rwp=40003,sourceQuests={7642},g={
+q(7643,{c={2},coords={{37.6,32.6,1453}},lvl=60,maps={234,1424},providers={{"i",18753}},qgs={928,14566},r=2,rwp=40003,sourceQuests={7642},g={
 q(7645,{coords={{52,55.6,1424}},cost={{"i",13724,20},{"g",500000}},qgs={2357},repeatable=1,rwp=40003,g={
 qo(1,{providers={{"i",18775}},questID=7643,rwp=40003})}})}}),
 q(5676,{altQuests={5677,5678},c={5},coords={{38.8,26.6,1453},{26.4,7.6,1455},{40,80,1457}},lvl=20,qgs={376,11401,11406},races={1},rwp=30002,g={
@@ -8292,7 +8305,7 @@ exp(284,{
 crit(961,{achID=760,id=1,rwp=40003})})}),
 h(-31,{
 faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt,g={
-crit(8824,{achID=2336,id=1,u=1609})}}),
+crit(8824,{achID=2336,id=4,u=1609})}}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
 h(-44,{
 n(214212,{coords={{88.6,73.6,1416}},providers={{"i",211421}},u=1605,g={
@@ -8322,7 +8335,7 @@ q(504,{coords={{49.6,58.6,1424}},lvl=30,qgs={2263},r=2,rwp=40003,sourceQuests={5
 qo(1,{coords={{38,54.6,1416}},providers={{"n",2287}},rwp=40003}),
 s(158078,5249,{b=1,f=27,q=2,rwp=40003}),
 s(157449,3763,{b=1,f=8,q=2,rwp=40003})}}),
-q(1712,{c={1},coords={{80.4,66.8,1416}},cost={{"i",3357,8}},lvl=30,maps={1417,1434},providers={{"i",6851},{"i",6929}},qgs={6176},rwp=40003,sourceQuests={1791},g={
+q(1712,{c={1},coords={{80.4,66.8,1416}},cost={{"i",3357,8}},lvl=30,maps={1417,1434},providers={{"i",6929}},qgs={6176},rwp=40003,sourceQuests={1791},g={
 qo(2,{crs={587,588,595,597,660,671,694,697,699,701,702},providers={{"i",3901}},rwp=40003}),
 q(1714,{c={1},coords={{80.4,66.8,1416}},cost={{"i",4480,8},{"i",4481,8},{"i",4479,8}},lvl=30,qgs={6176},repeatable=1,rwp=40003,sourceQuests={1791},g={
 qo(3,{providers={{"i",6851}},questID=1712,rwp=40003})}})}}),
@@ -9442,7 +9455,7 @@ qo(1,{providers={{"n",1117}}}),
 n(1977)}}),
 q(291,{coords={{46.6,53.8,1426}},providers={{"i",2628}},qgs={1252},r=2,rwp=40003,sourceQuests={287}}),
 q(1653,{c={2},coords={{39.8,30.8,1453}},lvl=20,qgs={6171},r=2,rwp=40003,sourceQuests={1652}}),
-q(1654,{c={2},coords={{52.6,36.8,1426}},lvl=20,maps={221,291,310,1432,1439},providers={{"i",6993},{"i",6996},{"i",7083}},qgs={6181},r=2,rwp=40003,sourceQuests={1653},g={
+q(1654,{c={2},coords={{52.6,36.8,1426}},lvl=20,maps={221,291,310,1432,1439},providers={{"i",6996}},qgs={6181},r=2,rwp=40003,sourceQuests={1653},g={
 qo(1,{crs={641},providers={{"i",6994}},rwp=40003}),
 qo(3,{providers={{"i",6895},{"o",91138}},rwp=40003}),
 q(1655,{c={2},coords={{36,45,1432}},lvl=20,qgs={6241},r=2,repeatable=1,rwp=40003,g={
@@ -11180,7 +11193,7 @@ r(402849,{rwp=20001,u=1605})}}),
 i(208860,{coords={{35.6,48.9,1432}},providers={{"o",408014}},q=1,u=1605}),
 i(208701,{b=1,c={3},coords={{83.6,65.5,1432}},f=55,providers={{"o",407918}},q=2,u=1605,g={
 r(410110,{u=1605})}}),
-i(208687,{b=1,c={11},coords={{44.8,39.2,1432}},description="Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",f=55,providers={{"i",208682},{"i",208855},{"n",1224},{"n",209511}},q=2,u=1605,g={
+i(208687,{b=1,c={11},coords={{44.8,39.2,1432}},description="Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",f=55,providers={{"i",208855},{"n",1224}},q=2,u=1605,g={
 r(416049,{u=1605})}}),
 i(208772,{b=1,c={4},coords={{46.5,12.7,1432}},f=55,providers={{"o",407731}},q=2,rwp=20001,u=1605,g={
 r(424984,{rwp=20001,u=1605})}}),
@@ -11835,9 +11848,9 @@ i(205905,{b=1,c={5},f=55,q=2,rwp=20001,u=1605,g={
 r(425215,{rwp=20001,u=1605})}})}})}),
 h(-56,{
 i(210177,{coords={{43.4,41.2,1421}},providers={{"o",410299}},q=1,u=1605}),
-i(205932,{b=1,c={5},coords={{65.8,23.5,1421}},f=55,providers={{"o",411674},{"o",414646}},q=2,rwp=20001,u=1605,g={
+i(205932,{b=1,c={5},coords={{65.8,23.5,1421}},f=55,providers={{"o",411674}},q=2,rwp=20001,u=1605,g={
 r(402849,{rwp=20001,u=1605})}}),
-i(208772,{b=1,c={4},coords={{45.2,67.2,1421}},description="You will need to use Sprint to make the jump to the platform.",f=55,providers={{"o",407457},{"o",407731},{"o",409131},{"o",414624}},q=2,rwp=20001,u=1605,g={
+i(208772,{b=1,c={4},coords={{45.2,67.2,1421}},description="You will need to use Sprint to make the jump to the platform.",f=55,providers={{"o",409131}},q=2,rwp=20001,u=1605,g={
 r(424984,{rwp=20001,u=1605})}}),
 i(209844,{b=1,coords={{63.5,63.1,1421}},providers={{"o",409501}},q=1,u=1605})}),
 h(-58,{
@@ -11879,7 +11892,7 @@ i(3164,{crs={1765,1766,1923,12431},q=1}),
 r(6686,{crs={3530,3531},itemID=5771,learnedAt=70,q=1,requireSkill=197}),
 s(193739,210696,{b=1,c={1},coords={{66.2,31,1421}},crs={212598},description="Supposedly this will not drop if you've completed the Quick Strike rune already.",f=25,lvl=14,q=2,rwp=20001,u=1605}),
 i(210253,{b=1,c={7},coords={{45.6,22.6,1421}},crs={1773},f=55,q=2,rwp=20001,u=1605}),
-i(208778,{b=1,c={1},coords={{66.2,31,1421}},crs={1939,1940,1942,1943,1944},f=55,providers={{"i",208848},{"i",210696}},q=2,rwp=20001,u=1605,g={
+i(208778,{b=1,c={1},coords={{66.2,31,1421}},crs={1939,1940,1942,1943,1944},f=55,providers={{"i",210696}},q=2,rwp=20001,u=1605,g={
 r(425443,{rwp=20001,u=1605})}}),
 i(208754,{b=1,c={8},coords={{50.8,61.6,1421}},crs={1867},q=2,r=1,rwp=20001,u=1605}),
 i(206382,{b=1,c={7},coords={{58.6,44.8,1421}},crs={1972},f=54,lvl=20,q=2,u=1605,g={
@@ -11957,10 +11970,8 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},minReputation={87,41999},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 220 or 200;if t.admiral.collected then repForAdmiral=0;end	t.minReputation[2]=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;end	end,g={
-crit(8818,{achID=2336,id=1,u=1609})}}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,g={
-crit(8819,{achID=2336,id=1,u=1609})}}),
+faction(87,{crs={9179},icon=133694,maps={1418},minReputation={87,41999},OnTooltip=function(t,tooltipInfo)if not t.collectible then return;end	local reputation=t.reputation;if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true});tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true});if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000);else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000);tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1});if not t.eventful then	t.eventful=true;if DBM then	local f=CreateFrame("FRAME",nil,UIParent);f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo());end);f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...);if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)");DBM:CreatePizzaTimer(510,"Respawn (max)");end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0);f:SetSize(1,1);f:Hide();end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing);end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral);end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272);if f and #f>0 then t.dressing=f[1];end	end	if not t.admiral then	local f=_.SearchForField("questID",4621);if f and #f>0 then t.admiral=f[1];end	end	local isHuman=_.RaceIndex==1;local repForDressing=isHuman and 11 or 10;if t.dressing.collected then repForDressing=0;end	local repForAdmiral=isHuman and 220 or 200;if t.admiral.collected then repForAdmiral=0;end	t.minReputation[2]=math.max(t.reputation,41999)+ repForDressing + repForAdmiral;end	end}),
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end}),
 faction(2634,{description="This faction is probably not one that you can gain reputation with.",pvp=1,u=1})}),
 h(-32,{
 fp(18,{coords={{26.8,77,1434}},crs={2858},r=1}),
@@ -12446,7 +12457,11 @@ s(223212,226714,{awp=11503,cost={{"i",226404,15}},f=5,lvl=52,q=3,u=1608}),
 s(223209,226711,{awp=11503,cost={{"i",226404,25}},f=5,lvl=54,q=3,u=1608}),
 s(223210,226712,{awp=11503,cost={{"i",226404,25}},f=5,lvl=53,q=3,u=1608}),
 s(223207,226709,{awp=11503,b=1,cost={{"i",226404,50}},f=5,lvl=56,q=3,u=1608}),
-s(223211,226713,{awp=11503,b=1,cost={{"i",226404,25}},f=5,lvl=54,q=3,u=1608})}}),
+s(223211,226713,{awp=11503,b=1,cost={{"i",226404,25}},f=5,lvl=54,q=3,u=1608}),
+i(232423,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232424,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232390,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232391,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608})}}),
 cl(3,{awp=11503,u=1608,g={
 s(223218,226720,{awp=11503,b=1,cost={{"i",226404,50}},f=6,lvl=57,q=3,u=1608}),
 s(223214,226716,{awp=11503,b=1,cost={{"i",226404,25}},f=6,lvl=55,q=3,u=1608}),
@@ -12473,7 +12488,10 @@ s(223237,226739,{awp=11503,cost={{"i",226404,15}},f=7,lvl=52,q=3,u=1608}),
 s(223235,226737,{awp=11503,cost={{"i",226404,25}},f=7,lvl=54,q=3,u=1608}),
 s(223230,226732,{awp=11503,cost={{"i",226404,25}},f=7,lvl=53,q=3,u=1608}),
 s(223234,226736,{awp=11503,b=1,cost={{"i",226404,50}},f=7,lvl=56,q=3,u=1608}),
-s(223236,226738,{awp=11503,b=1,cost={{"i",226404,25}},f=7,lvl=54,q=3,u=1608})}}),
+s(223236,226738,{awp=11503,b=1,cost={{"i",226404,25}},f=7,lvl=54,q=3,u=1608}),
+i(232389,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232420,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232421,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608})}}),
 cl(5,{awp=11503,u=1608,g={
 s(223244,226746,{awp=11503,b=1,cost={{"i",226404,50}},f=4,lvl=57,q=3,u=1608}),
 s(223239,226741,{awp=11503,b=1,cost={{"i",226404,25}},f=4,lvl=55,q=3,u=1608}),
@@ -12500,7 +12518,11 @@ s(223249,226751,{awp=11503,cost={{"i",226404,15}},f=6,lvl=52,q=3,u=1608}),
 s(223246,226748,{awp=11503,cost={{"i",226404,25}},f=6,lvl=54,q=3,u=1608}),
 s(223252,226754,{awp=11503,cost={{"i",226404,25}},f=6,lvl=53,q=3,u=1608}),
 s(223248,226750,{awp=11503,b=1,cost={{"i",226404,50}},f=6,lvl=56,q=3,u=1608}),
-s(223250,226752,{awp=11503,b=1,cost={{"i",226404,25}},f=6,lvl=54,q=3,u=1608})}}),
+s(223250,226752,{awp=11503,b=1,cost={{"i",226404,25}},f=6,lvl=54,q=3,u=1608}),
+i(232392,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232409,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232416,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608}),
+i(232419,{awp=11503,b=1,cost={{"i",226404,25}},f=54,lvl=60,q=4,u=1608})}}),
 cl(9,{awp=11503,u=1608,g={
 s(223260,226762,{awp=11503,b=1,cost={{"i",226404,50}},f=4,lvl=57,q=3,u=1608}),
 s(223254,226756,{awp=11503,b=1,cost={{"i",226404,25}},f=4,lvl=55,q=3,u=1608}),
@@ -13220,7 +13242,7 @@ s(157124,3071,{b=1,f=21,q=1,rwp=40003})}}),
 h(-316,{c={1},coords={{61.8,52,1420}},qgs={208919,208920},questID=75300,r=1,rwp=20001,u=1605,g={
 i(204716,{b=1,c={1},f=55,q=2,rwp=20001,u=1605,g={
 r(425447,{rwp=20001,u=1605})}})}}),
-q(354,{coords={{61.73,52.3,1420}},lvl=7,qgs={1500},r=1,rwp=40003,sourceQuests={362},g={
+q(354,{coords={{61.73,52.3,1420}},lvl=7,qgs={1500},r=1,rwp=40003,g={
 qo(1,{coords={{46.8,29.6,1420}},crs={1654},providers={{"i",2829}},rwp=40003}),
 qo(2,{coords={{49.6,36.2,1420}},crs={1655},providers={{"i",2828}},rwp=40003}),
 qo(3,{coords={{44,33.4,1420}},crs={1656},providers={{"i",2830}},rwp=40003})}}),
@@ -13330,11 +13352,11 @@ h(-48,{(function(t)if _.RaceIndex==5 then	t.minReputation=nil;end	return t;end)(
 n(4773,{coords={{60,52.6,1420}},minReputation={68,42000},races={2,5,8},g={
 r(10906,{cost=200000,lvl=40})}}))}),
 h(-56,{
-i(204174,{b=1,c={4},coords={{66.7,24.6,1420}},cost={{"i",208007,1}},f=55,providers={{"o",386777},{"o",404830},{"o",405201},{"o",405946},{"o",407352}},q=2,rwp=20001,u=1605,g={
+i(204174,{b=1,c={4},coords={{66.7,24.6,1420}},cost={{"i",208007,1}},f=55,providers={{"o",405201}},q=2,rwp=20001,u=1605,g={
 r(400081,{rwp=20001,u=1605})}}),
 i(203991,{b=1,c={4},coords={{52.9,54,1420}},cost={{"i",208034,1}},f=55,providers={{"o",386675}},q=2,rwp=20001,u=1605,g={
 r(400095,{rwp=20001,u=1605})}}),
-i(203993,{b=1,c={4},coords={{52.5,25.8,1420}},cost={{"i",208005,1}},f=55,providers={{"o",387466},{"o",404941}},q=2,rwp=20001,u=1605,g={
+i(203993,{b=1,c={4},coords={{52.5,25.8,1420}},cost={{"i",208005,1}},f=55,providers={{"o",404941}},q=2,rwp=20001,u=1605,g={
 r(424992,{rwp=20001,u=1605})}}),
 i(208185,{coords={{59.5,52.3,1420}},providers={{"o",405879}},q=1,u=1605})}),
 h(-58,{
@@ -13498,7 +13520,7 @@ q(4973,{coords={{39.4,66.8,1422}},lvl=53,qgs={10667},repeatable=1,rwp=40003,sour
 qo(1,{coords={{41.3,69.8,1422}},providers={{"i",12638},{"o",175802}},rwp=40003}),
 i(12650,{b=1,f=55,q=1,rwp=40003})}}),
 q(5221,{coords={{46.2,52,1422}},cost={{"i",14047,4},{"i",13356,5},{"i",13320,1}},lvl=50,providers={{"o",177289}},repeatable=1,rwp=40003,sourceQuests={5219,5231}}),
-q(83936,{awp=11503,c={2},coords={{47.8,50.4,1422}},description="Upon completing this quest, you will have a personal Squire.",lvl=50,qgs={227672},sourceQuests={83822},u=1608,g={
+q(83936,{awp=11503,c={2},coords={{47.8,50.4,1422}},description="Upon completing this quest, you will have a personal Squire.",lvl=50,qgs={227672},sourceQuests={83822,84416},u=1608,g={
 i(226122,{awp=11503,b=1,lvl=50,q=3,u=1608})}}),
 q(8414,{c={2},coords={{42.8,84,1422}},cost={{"i",12840,20}},lvl=50,qgs={10838},r=2,rwp=40003,sourceQuests={8415},u=1607}),
 q(5218,{coords={{37.2,56.9,1422}},cost={{"i",14047,4},{"i",13357,6},{"i",13320,1}},lvl=50,providers={{"o",176361}},repeatable=1,rwp=40003,sourceQuests={5216,5229}}),
@@ -13850,7 +13872,7 @@ s(157781,4454,{f=20,lvl=21,q=3,rwp=40003})}})}),
 h(-56,{
 i(209845,{b=1,coords={{45.4,70.5,1436}},providers={{"o",409562}},q=1,u=1605}),
 i(208860,{coords={{52.7,53.8,1436}},providers={{"o",408014}},q=1,u=1605}),
-i(208771,{b=1,c={4},coords={{40.8,80.24,1436}},f=55,providers={{"i",208768},{"i",209030},{"i",211471},{"o",407453},{"o",407454},{"o",408718},{"o",414532}},q=2,u=1605,g={
+i(208771,{b=1,c={4},coords={{40.8,80.24,1436}},f=55,providers={{"i",209030},{"o",408718}},q=2,u=1605,g={
 r(400099,{u=1605})}})}),
 h(-58,{
 n(1669,{coords={{43.4,66.8,1436}},r=2,rwp=40003,g={

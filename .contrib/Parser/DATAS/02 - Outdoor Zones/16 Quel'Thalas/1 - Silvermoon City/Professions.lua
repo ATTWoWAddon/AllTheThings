@@ -48,26 +48,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{"c", ALCHEMISTS_MOXIE, 50},
 							},
 						}),
-						r(1230878, {	-- Midnight Critical Strike Flask
+						r(1230878, {	-- Flask of the Shattered Sun
 							["cost"] = {
 								{"i", STABILIZED_DERIVATE, 5},
 								{"c", ALCHEMISTS_MOXIE, 50},
 								{"i", 236780, 1},	-- 1x Nocturnal Lotus
 							},
 						}),
-						r(1230877, {	-- Midnight Haste Flask
+						r(1230877, {	-- Flask of the Blood Knights
 							["cost"] = {
 								{"i", STABILIZED_DERIVATE, 5},
 								{"c", ALCHEMISTS_MOXIE, 50},
 								{"i", 236780, 1},	-- 1x Nocturnal Lotus
 							},
 						}),
-						r(1230865, {	-- Midnight Mana Potion
+						r(1230865, {	-- Lightfused Mana Potion
 							["cost"] = {
 								{"i", STABILIZED_DERIVATE, 3},
 							},
 						}),
-						r(1230876, {	-- Midnight Mastery Flask
+						r(1230876, {	-- Flask of the Magisters
 							["cost"] = {
 								{"i", STABILIZED_DERIVATE, 5},
 								{"c", ALCHEMISTS_MOXIE, 50},

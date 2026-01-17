@@ -1,16 +1,5 @@
 1.15.2.53941
 r(446243),	-- Sigil of Living Dreams
-r(448624),	-- Scroll of Spatial Mending
-1.15.6.58185
-r(1219577),	-- Enchant Off-Hand - Superior Intellect
-r(1219578),	-- Enchant Off-Hand - Excellent Spirit
-r(1219579),	-- Enchant Off-Hand - Wisdom
-r(1219580),	-- Enchant 2H Weapon - Spellblasting
-r(1219581),	-- Enchant Shield - Excellent Stamina
-r(1219586),	-- Enchant Gloves - Superior Strength
-r(1219587),	-- Enchant Cloak - Agility
-r(1220623),	-- Enchant Shield - Critical Strike
-r(1220624),	-- Enchant Bracer - Greater Spellpower
 
 
 Nothing is Missing in Enchanting! Good Work!

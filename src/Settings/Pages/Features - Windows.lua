@@ -42,7 +42,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 	UpdateButtonText(self, window);
 	tinsert(tooltipInfo, { left = self:GetText() });
 	tinsert(tooltipInfo, { left = " " });
-	
+
 	-- Assign the Text Label and Tooltip
 	local data = window.data;
 	if data then
@@ -51,7 +51,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		local description = data.description;
 		if description then tinsert(tooltipInfo, { left = "|cffffffff" .. description .. "|r\n\n", wrap = true }); end
 	end
-	
+
 	if window.Commands then
 		local commands = "";
 		for k=1,#window.Commands,1 do
@@ -64,7 +64,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		tinsert(tooltipInfo, {
 			left = L["UPDATES_PAUSED"],
 			right = L["MAIN_LIST_REQUIRES_REFRESH"],
-			r = 1, g = 0.4, g = 0.4
+			r = 1, g = 0.4
 		});
 	end
 end
@@ -102,7 +102,7 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 			button.Window = window;
 			button.Suffix = window.Suffix;
 			UpdateButtonText(button, window);
-			
+
 			-- TODO: Preferred new style, once we get the window template designed
 			--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
 		end

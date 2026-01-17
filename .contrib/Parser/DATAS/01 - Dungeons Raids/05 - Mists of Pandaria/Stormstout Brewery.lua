@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	applyclassicphase(MOP_PHASE_ONE, inst(302, {	-- Stormstout Brewery
-		["coord"] = { 36, 69, VALLEY_OF_THE_FOUR_WINDS },
+		["coord"] = { 36.0, 69.0, VALLEY_OF_THE_FOUR_WINDS },
 		["maps"] = {
 			STORMSTOUT_BREWERY_GRAIN_CELLAR,
 			STORMSTOUT_BREWERY_STORMSTOUT_BREWHALL,
@@ -385,18 +385,55 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(670, {	-- Yan-Zhu the Uncasked
 						["creatureID"] = 59479,	-- Yan-Zhu the Uncasked
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60893),	-- Celestial: Stormstout Brewery
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
 							i(86741),	-- Dagger of the Seven Stars
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86865)),	-- Kri'tak, Imperial Scepter of the Swarm (HoF)
 							i(86776),	-- Amulet of the Hidden Kings
 							i(86767),	-- Circuit of the Frail Soul
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95870),	-- Abandoned Spaulders of Arrowflight
+							i(95871),	-- Abandoned Spaulders of Renewal
+							i(95975),	-- Abandoned Zandalari Goreplate
+							i(95753),	-- Black Blood Legplates
+							i(95728),	-- Durumu's Baleful Gaze
+							i(95726),	-- Fabled Feather of Ji-Kun
+							i(95869),	-- Forgotten Mantle of the Sun
+							i(95672),	-- Gaze of Gara'jal
+							i(95701),	-- Grips of Cinderflesh
+							i(95755),	-- Hydra-Scale Bloodcloak
+							i(95780),	-- Iron Qon's Boot Knife
+							i(95647),	-- Jalak's Maelstrom Staff
+							i(95807),	-- Legplates of the Lightning Throne
+							i(95808),	-- Legplates of Whipping Ionization
+							i(95673),	-- Loa-Ridden Bracers
+							i(95754),	-- Metabolically Boosted Shoulderplates
+							i(95977),	-- Necklace of the Terra-Cotta Vanquisher
+							i(95674),	-- Overloaded Bladebreaker Cuirass
+							i(95700),	-- Poisonblood Bladeshoulders
+							i(95699),	-- Quadra-Head Brooch
+							i(95782),	-- Quet'zal's Crackling Cord
+							i(95646),	-- Talisman of Living Poison
+							i(95809),	-- Uroe, Harbinger of Terror
+							i(95781),	-- Voice of the Quilen
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

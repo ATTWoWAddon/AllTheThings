@@ -287,7 +287,7 @@ ach(5794,{awp=40200}),
 ach(7520,{awp=50004,g={
 title(93,{awp=50004}),
 s(174770,43300,{awp=50004,b=1,f=9,q=4})}}),
-ach(1206,{awp=30002,g={
+ach(1206,{awp=30002,description="|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",g={
 crit(3741,{achID=1206,awp=30002,coords={{72.6,41,114},{72.8,34.6,114},{73,38.6,114},{74.4,34.2,114}},id=1,providers={{"n",25677}}}),
 crit(3744,{achID=1206,awp=30002,id=2,maps={14,37,94},providers={{"n",6368}}}),
 crit(3745,{achID=1206,awp=30002,id=3,maps={10,18,37,47,49,52,97,117},providers={{"n",620}}}),
@@ -2254,6 +2254,14 @@ r(13220,{c={4},rwp=30002,u=2}),
 r(13228,{c={4},rwp=30002,u=2}),
 r(13229,{c={4},rwp=30002,u=2}),
 r(13230,{c={4},rwp=30002,u=2})}})}),
+prof(393,{
+n(7088,{coords={{61,54.6,85}},r=1,g={
+r(74522,{awp=40003,learnedAt=425,rank=7,requireSkill=393,rwp=80001,u=40}),
+r(74495,{awp=40003,learnedAt=0,requireSkill=393,rwp=60002,u=40}),
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,lvl=20,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,lvl=35,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(3363,{coords={{60.6,59,85}},r=1,g={
 r(75156,{awp=40003,learnedAt=425,rank=7,requireSkill=197,rwp=80001,u=40}),
@@ -2493,7 +2501,6 @@ crit(15809,{achID=5475,awp=40200,id=4,r=1,u=40})}}),
 q(26220,{awp=40003,coords={{56.5,62.5,85}},isDaily=1,qgs={42506},r=1,requireSkill=185,g={
 cu(81,{awp=40003,u=40}),
 crit(15810,{achID=5475,awp=40200,id=5,r=1,u=40})}}),
-q(31014,{awp=50004,coords={{70.6,30.8,85}},maps={503},qgs={62092},races={26},rwp=70003,sourceQuests={31013}}),
 q(5652,{altQuests={5654,5655,5656,5657},c={5},coords={{54.2,42.8,1},{47,58.8,7},{35.6,87.6,85},{26,15.8,88},{49.01,18.32,998}},lvl=10,qgs={3044,3706,4606,6018,11407},races={8},rwp=20401,u=2}),
 q(5726,{coords={{32,37.8,85}},lvl=9,maps={1},qgs={4949},r=1,rwp=40003,u=2,g={
 qo(1,{crs={3197,3198},providers={{"i",14544}},rwp=40003,u=2})}}),
@@ -2545,7 +2552,6 @@ q(1504,{altQuests={1471},c={9},coords={{48.2,45.6,85}},lvl=10,qgs={5875},races={
 qo(1,{cost={{"i",7464,1}},providers={{"n",5676}},rwp=40003,u=2})}}),
 q(28805,{awp=40001,coords={{50.4,38.2,85}},qgs={45244},r=1,sourceQuests={28790},g={
 qo(1,{awp=40001,coords={{50.9,37.8,85}},providers={{"o",207416}}})}}),
-q(31013,{awp=50004,coords={{48.2,70.6,85}},qgs={39605},races={24},sourceQuests={31012}}),
 q(25159,{awp=40003,coords={{72.4,34.4,85}},isDaily=1,qgs={50482},r=1,requireSkill=755,g={
 cu(361,{awp=40003})}}),
 q(2756,{coords={{80.6,23.2,85}},cost={{"i",7922,4},{"i",7963,4}},learnedAt=210,lvl=40,qgs={7792},r=1,requireSkill=164,rwp=40003,u=2,g={
@@ -2606,7 +2612,12 @@ toy(54438,{awp=30303,b=1,q=2}),
 toy(54437,{awp=30303,b=1,q=2}),
 toy(44606,{awp=30002,b=1,q=3}),
 toy(45057,{awp=30100,b=1,q=3}),
-toy(69896,{awp=40100,b=1,e=13,q=1})}}),
+toy(69896,{awp=40100,b=1,e=13,q=1}),
+i(44481,{awp=40100,f=55,q=1}),
+i(44601,{awp=40100,f=55,q=1}),
+i(34498,{awp=40100,q=1}),
+i(44482,{awp=40100,f=55,q=1}),
+i(44599,{awp=40100,f=55,q=1})}}),
 n(69977,{awp=50200,coords={{38.6,70,85}},r=1,sym={{"sub","pvp_gear_base",4,-257,-296},{"merge"},{"pop"},{"exclude","headerID",-96,-92,-99}}}),
 n(54659,{awp=40300,coords={{38.2,71,85}},r=1,u=2}),
 n(3364,{coords={{60.6,58.6,85}},r=1,sym={{"sub","common_vendor",5154}},g={
@@ -5704,7 +5715,9 @@ qo(1,{awp=40003,providers={{"n",35095}}}),
 s(203067,53416,{awp=40003,b=1,f=27,q=2}),
 s(203097,53448,{awp=40003,b=1,f=5,q=2})}}),
 q(3621,{coords={{60.8,66.4,76}},lvl=45,maps={224},providers={{"i",10738}},qgs={7783},rwp=40003,sourceQuests={3602},u=2}),
-q(14270,{awp=40003,coords={{58.9,71.8,76}},providers={{"o",195642}},r=1,sourceQuests={14267}}),
+q(14270,{awp=40003,coords={{58.9,71.8,76}},providers={{"o",195642}},r=1,sourceQuests={14267},g={
+o(201579,{awp=40003,coords={{57.6,71,76}},g={
+i(49094,{awp=40003,q=1})}})}}),
 q(8151,_.ResolveQuestData({aqd=
 {coords={{67.6,35.8,84},{70.6,83.8,87},{42.2,7.6,89}},qgs={4205,5116,5516},rwp=40003,u=2},c={3},hqd=
 {coords={{66.2,18.6,85},{57.6,88.6,88}},qgs={3039,3352},rwp=40003,u=2},lvl=50,rwp=40003,u=2})),
@@ -5793,6 +5806,7 @@ s(124212,11305,{f=32,lvl=30,q=2,rwp=40003,u=2})}}),
 n(49887,{awp=40003,coords={{57.53,48.7,76}},r=1,sym={{"select","itemID",7341,7340,7339,7338,7342,7337}}}),
 n(8678,{coords={{45.2,90.8,76}},rwp=40003,u=2,g={
 r(12617,{itemID=10607,learnedAt=230,q=1,requireSkill=202,rwp=40003,u=2})}}),
+n(3621,{coords={{21.8,52,76}},r=1}),
 n(49885,{awp=40001,coords={{57,50.6,76}},r=1,g={
 r(25954,{awp=40001,itemID=21219,learnedAt=175,q=1,requireSkill=185}),
 r(25704,{awp=40001,itemID=21099,learnedAt=80,q=1,requireSkill=185})}}),
@@ -5963,7 +5977,7 @@ crit(21546,{achID=6560,awp=50004,id=2,pb=1})}}),
 h(-45,{awp=20001,u=17,g={
 q(9528,{awp=20001,coords={{13.6,73.2,97}},lvl=6,qgs={17312},r=2,u=17,g={
 s(134491,24113,{awp=20001,b=1,f=4,q=2,u=17})}}),
-q(9612,{awp=20001,coords={{37.6,18.6,97},{40.6,71,97},{42,57.4,97},{46.2,31.8,97},{53.4,42.4,97},{55.6,29.4,97},{55.6,47.8,97},{56.8,59.6,97},{58,41.6,97}},description="1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob\n.3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",lvl=8,qgs={17587},races={11},u=17}),
+q(9612,{awp=20001,coords={{37.6,18.6,97},{39.5,37.4,97},{40.6,71,97},{42,57.4,97},{46.2,31.8,97},{53.4,42.4,97},{55.6,29.4,97},{55.6,47.8,97},{56.8,59.6,97},{58,41.6,97}},description="1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob.\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.\n\nThis quest is presumably unobtainable by Warlocks.",lvl=8,qgs={17587},races={11},u=17}),
 q(9506,{awp=20001,coords={{47,70.2,97}},lvl=5,qgs={17240},r=2,sourceQuests={9505},u=17,g={
 qo(1,{awp=20001,coords={{59.6,67.7,97}},providers={{"i",23738},{"o",181675}},u=17}),
 qo(2,{awp=20001,coords={{58.6,66.4,97}},providers={{"i",23739},{"o",181674}},u=17})}}),
@@ -9130,7 +9144,8 @@ r(46684,{awp=20400,itemID=35564,learnedAt=250,q=1,requireSkill=185,rwp=40100,u=2
 r(46688,{awp=20400,itemID=35566,learnedAt=250,q=1,requireSkill=185,rwp=40100,u=2}),
 r(15933,{itemID=16110,learnedAt=225,q=1,requireSkill=185})}}),
 n(14522,{c={9},coords={{36.2,44.6,77}},rwp=40003,sourceQuests={7625},u=2,g={
-i(18687,{cost=1500000,q=1,rwp=40003,u=2})}})}),
+i(18687,{cost=1500000,q=1,rwp=40003,u=2})}}),
+n(48258,{awp=40003,coords={{61.6,25.8,77}}})}),
 h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003,u=2}),
 i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
@@ -9791,9 +9806,9 @@ q(29,{c={11},coords={{56.2,30.4,80}},lvl=16,qgs={11802},r=2,rwp=40003,sourceQues
 qo(1,{coords={{36.4,40.2,80},{54.1,50.1,80}},providers={{"i",15877}},rwp=40003,u=2})}}),
 q(28,{c={11},coords={{56.2,30.4,80}},lvl=16,qgs={11802},r=1,rwp=40003,sourceQuests={27},u=2,g={
 qo(1,{coords={{36.4,40.2,80},{54.1,50.1,80}},providers={{"i",15877}},rwp=40003,u=2})}}),
-q(272,{c={11},coords={{36.4,40.2,80}},lvl=16,maps={52,62},qgs={11799},r=2,rwp=40003,sourceQuests={29},u=2,g={
+q(272,{c={11},coords={{36.4,40.2,80}},lvl=16,qgs={11799},r=2,rwp=40003,sourceQuests={29},u=2,g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003,u=2})}}),
-q(30,{c={11},coords={{36.4,40.2,80}},lvl=16,maps={10,21},qgs={11799},r=1,rwp=40003,sourceQuests={28},u=2,g={
+q(30,{c={11},coords={{36.4,40.2,80}},lvl=16,qgs={11799},r=1,rwp=40003,sourceQuests={28},u=2,g={
 qo(1,{cost={{"i",15883,1},{"i",15882,1}},providers={{"i",15885}},rwp=40003,u=2})}}),
 q(6845,{coords={{44.88,35.6,80}},lvl=54,qgs={11939},rwp=40003,sourceQuests={6844},u=2,g={
 i(18400,{b=1,f=52,q=2,rwp=40003,u=2}),
@@ -15833,9 +15848,9 @@ q(24728,{awp=40003,coords={{23.5,50,78}},cost={{"i",11185,6},{"i",11186,8}},prov
 i(11564,{awp=40003,b=1,q=1})}}),
 q(4383,{coords={{23.5,50,78}},cost={{"i",11185,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},u=2,g={
 i(11564,{b=1,q=1,rwp=40003,u=2})}}),
-q(24729,{awp=40003,coords={{23.8,59.1,78}},cost={{"i",11184,6},{"i",11186,8}},providers={{"o",164956}},repeatable=1,sourceQuests={24721,24722,24723},g={
+q(24729,{awp=40003,coords={{23.5,50,78}},cost={{"i",11184,6},{"i",11186,8}},providers={{"o",164956}},repeatable=1,sourceQuests={24721,24722,24723},g={
 i(11565,{awp=40003,b=1,q=1})}}),
-q(4384,{coords={{23.8,59.1,78}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},u=2,g={
+q(4384,{coords={{23.5,50,78}},cost={{"i",11184,10},{"i",11186,10}},lvl=47,providers={{"o",164956}},repeatable=1,rwp=40003,sourceQuests={4321},u=2,g={
 i(11565,{b=1,q=1,rwp=40003,u=2})}}),
 q(24720,{awp=40003,coords={{54.2,62.5,78}},cost={{"i",11188,7},{"i",11186,7},{"i",11185,7},{"i",11184,7}},qgs={9117}}),
 q(4284,{coords={{41.8,2.6,78}},cost={{"i",11188,7},{"i",11186,7},{"i",11185,7},{"i",11184,7}},lvl=47,qgs={9117},rwp=40003,u=2}),
@@ -16011,7 +16026,7 @@ q(4041,{coords={{44,11,69},{45.1,25.6,69}},providers={{"i",11242},{"o",164798}},
 qo(1,{providers={{"i",11243}},questID=3909,rwp=40003,u=2})}})}}),
 q(24723,{awp=40003,coords={{31.9,50.3,78}},qgs={9272},sourceQuests={24709}}),
 q(4288,{coords={{41.8,2.6,78}},lvl=47,qgs={9117},rwp=40003,sourceQuests={4284},u=2,g={
-qo(1,{coords={{23.8,59.1,78}},providers={{"o",164956}},rwp=40003,u=2})}}),
+qo(1,{coords={{23.5,50,78}},providers={{"o",164956}},rwp=40003,u=2})}}),
 q(13906,{awp=30200,coords={{71.4,73.8,78}},cost={{"i",8170,20},{"i",14047,20},{"i",47196,20},{"g",800000}},lvl=48,qgs={11701},r=1,sourceQuests={13887},g={
 ach(3357,{awp=30200,providers={{"i",46102}},r=1}),
 mnt(64659,{awp=30200,b=1,itemID=46102,lvl=40,q=4,r=1})}}),
@@ -16477,6 +16492,7 @@ r(24367,{awp=40003,b=1,itemID=20013,learnedAt=285,q=1,requireSkill=171}),
 r(17556,{itemID=13480,learnedAt=275,q=1,requireSkill=171,rwp=20001,u=2})}}),
 n(11187,{coords={{59.8,51.6,83}},g={
 r(15933,{itemID=16110,learnedAt=225,q=1,requireSkill=185})}}),
+n(2303,{coords={{52,29.2,83}},r=2}),
 n(52830,{awp=40100,coords={{59.8,51.6,83}},g={
 p(306,{awp=40100,itemID=69239,npcID=52831,q=1,spellID=97638,g={
 crit(23595,{achID=8397,awp=50400,id=24,pb=1})}})}}),
@@ -18600,6 +18616,14 @@ r(13220,{c={4},rwp=30002,u=2}),
 r(13228,{c={4},rwp=30002,u=2}),
 r(13229,{c={4},rwp=30002,u=2}),
 r(13230,{c={4},rwp=30002,u=2})}})}),
+prof(393,{
+n(1292,{coords={{72.6,62,84}},r=2,g={
+r(74522,{awp=40003,learnedAt=425,rank=7,requireSkill=393,rwp=80001,u=40}),
+r(74495,{awp=40003,learnedAt=0,requireSkill=393,rwp=60002,u=40}),
+r(8613,{learnedAt=0,lvl=5,rank=1,requireSkill=393}),
+r(8617,{learnedAt=50,lvl=10,rank=2,requireSkill=393,rwp=80001}),
+r(8618,{learnedAt=125,lvl=20,rank=3,requireSkill=393,rwp=80001}),
+r(10768,{learnedAt=200,lvl=35,rank=4,requireSkill=393,rwp=80001})}})}),
 prof(197,{
 n(1346,{coords={{53.2,81.6,84}},r=2,g={
 r(75156,{awp=40003,learnedAt=425,rank=7,requireSkill=197,rwp=80001,u=40}),
@@ -18806,7 +18830,6 @@ q(7796,{coords={{53.9,81.7,84}},cost={{"i",14047,20}},lvl=50,maxReputation={72,4
 q(11451,{awp=20300,coords={{81.5,28.6,84}},lvl=60,maps={111},providers={{"i",34089}},qgs={24729},r=2}),
 q(396,{coords={{57.7,47.9,84}},lvl=16,providers={{"i",2956}},qgs={1646},r=2,rwp=40003,sourceQuests={395},u=2,g={
 i(2933,{b=1,f=52,q=3,rwp=40003,u=2})}}),
-q(30989,{awp=50004,coords={{82.6,28.2,84}},qgs={61796},races={24,25},rwp=70003,sourceQuests={30988}}),
 q(7643,{c={2},coords={{48.6,50,84}},lvl=60,maps={25,234},providers={{"i",18753}},qgs={928,14566},r=2,rwp=40003,sourceQuests={7642},u=2,g={
 q(7645,{coords={{52,55.6,25}},cost={{"i",13724,20},{"g",500000}},qgs={2357},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"i",18775}},questID=7643,rwp=40003,u=2})}})}}),
@@ -18950,7 +18973,6 @@ i(3899,{rwp=40003,u=2}),
 i(2154,{b=1,rwp=40003,u=2})}}),
 q(1688,{c={9},coords={{39.2,85.2,84}},lvl=10,maps={37},qgs={6122},races={1,7},rwp=40003,sourceQuests={1685,1715},u=2,g={
 qo(1,{coords={{71,80.6,37}},crs={881},providers={{"i",6810}},rwp=40003,u=2})}}),
-q(30988,{awp=50004,coords={{82.6,28.2,84}},qgs={61796},races={24,25},rwp=70003,sourceQuests={30987}}),
 q(434,{coords={{73.2,35.7,84}},lvl=16,qgs={7766},r=2,rwp=40003,sourceQuests={2746},u=2,g={
 qo(1,{providers={{"n",1754}},rwp=40003,u=2}),
 qo(2,{providers={{"n",1755}},rwp=40003,u=2})}}),
@@ -19153,7 +19175,12 @@ toy(54438,{awp=30303,b=1,q=2}),
 toy(54437,{awp=30303,b=1,q=2}),
 toy(44606,{awp=30002,b=1,q=3}),
 toy(45057,{awp=30100,b=1,q=3}),
-toy(69896,{awp=40100,b=1,e=13,q=1})}}),
+toy(69896,{awp=40100,b=1,e=13,q=1}),
+i(44481,{awp=40100,f=55,q=1}),
+i(44601,{awp=40100,f=55,q=1}),
+i(34498,{awp=40100,q=1}),
+i(44482,{awp=40100,f=55,q=1}),
+i(44599,{awp=40100,f=55,q=1})}}),
 n(1304,{coords={{42.6,76.8,84}},r=2,g={
 r(23067,{isLimited=1,itemID=18649,learnedAt=150,q=1,requireSkill=202})}}),
 n(50669,{awp=40001,coords={{64.8,71.6,84}},r=2,g={
@@ -22148,6 +22175,7 @@ i(12122,{b=1,description="Reward for turning in an Imperfect Draenethyst Fragmen
 h(-58,{
 n(3546,{coords={{59.4,14.9,17}},r=2,g={
 i(23848,{awp=20001,description="Buy at least one of these before you enter the Dark Portal!",f=55,lvl=30,q=1})}}),
+n(44337,{awp=40003,r=2}),
 n(8178,{coords={{62.4,16,17}},r=2,g={
 r(11477,{isLimited=1,itemID=9300,learnedAt=250,q=1,requireSkill=171})}}),
 n(44321,{awp=40003,coords={{62.4,16.2,17}},r=2,sym={{"select","itemID",20753,20752,20758,22307}}})}),
@@ -23560,7 +23588,8 @@ i(4605,{f=55,lvl=5,q=1}),
 i(4606,{f=55,lvl=15,q=1})}}),
 n(2669,{coords={{75.6,45.4,47}},r=2,g={
 r(3870,{isLimited=1,itemID=6401,learnedAt=155,q=1,requireSkill=197}),
-r(7643,{isLimited=1,itemID=6275,learnedAt=115,q=1,requireSkill=197})}})}),
+r(7643,{isLimited=1,itemID=6275,learnedAt=115,q=1,requireSkill=197})}}),
+n(44114,{awp=40001,coords={{20.3,58.4,47}},r=2})}),
 h(-63,{
 i(2794,{b=1,description="Quest obtained from the book has been made obsolete at the release of Cataclysm expansion. Book is safe to be destroyed but, you will loot another one eventually.\n\nIf you are questing in Duskwood and come upon it, keep it in your inventory until you finish to avoid having to destroy it every time you loot another copy.",lvl=20,q=1}),
 s(117070,885,{awp=100107,coords={{18.6,33,47},{19.8,45.2,47}},crs={3},f=21,lvl=19,q=2,rwp=40003,u=2}),
@@ -25603,7 +25632,8 @@ i(25874,{f=36,lvl=15,q=0,rwp=50004,u=2})}}),
 o(19017,{awp=20001,u=17}),
 o(184793,{awp=20001,coords={{60.3,73.7,95},{61.2,75.5,95},{61.5,68.8,95},{61.6,67.6,95},{61.7,71.3,95},{61.8,71.1,95},{62.3,66.4,95},{63.9,73,95},{64.3,73.6,95},{64.5,79.2,95},{64.7,64.1,95},{64.7,67.7,95},{65.1,58,95},{65.3,70.3,95},{65.3,80,95},{65.4,66.4,95},{65.4,80.1,95},{66.3,55.2,95},{66.7,60.2,95},{67.3,61.2,95},{67.8,57.7,95},{67.9,50.2,95},{68,58.1,95},{68.2,55.1,95},{68.5,54.9,95},{68.5,57.4,95},{68.6,56.3,95},{69.2,52.6,95},{69.4,49.3,95},{69.7,51.7,95},{69.9,50.3,95},{74.7,47,95},{75,44.5,95},{75.6,43.7,95},{75.6,45.5,95},{76.2,47.3,95},{77.2,42.2,95},{77.2,45,95},{77.4,41.5,95},{78.9,37.9,95},{79.1,39.5,95},{80.5,39.7,95},{80.8,39.2,95},{81.3,38.6,95},{81.5,36.6,95},{82.1,37.1,95}},description="You'll need to pick the locks. Use a Rogue or a Blacksmith with Skeleton Keys. Chests always spawn at fixed locations.",u=17,g={
 s(134301,23923,{awp=20001,f=20,lvl=12,q=1,u=17}),
-s(139864,29518,{awp=20001,f=25,lvl=16,q=1,u=17})}})}}),
+s(139864,29518,{awp=20001,f=25,lvl=16,q=1,u=17})}}),
+o(2847,{awp=20001,coords={{10.9,22.7,95},{12.6,25.1,95},{14.5,26.8,95}},u=17})}}),
 h(-58,{awp=20001,u=17,g={
 n(16268,{awp=20001,coords={{47,34.2,95}},r=1,u=17,g={
 s(139929,29583,{awp=20001,f=25,isLimited=1,lvl=15,q=2,u=17})}}),
@@ -26353,7 +26383,7 @@ q(549,{coords={{62.61,20.76,25}},lvl=17,providers={{"o",1763}},r=1,rwp=40003,u=2
 qo(1,{providers={{"n",2260}},rwp=40003,u=2}),
 qo(2,{providers={{"n",2261}},rwp=40003,u=2})}}),
 q(28571,{awp=40003,coords={{62.5,60.5,110},{44,35.4,998},{61.8,75.6,998},{66.5,49.8,998}},isBreadcrumb=1,lvl={19,23},nextQuests={28096},providers={{"o",207324},{"o",207325}},r=1}),
-q(28089,{altQuests={27746},awp=40003,coords={{44.8,40.7,21},{45.3,84.3,21},{52.2,66.3,21},{57.3,10.1,21}},isBreadcrumb=1,lvl=19,nextQuests={28096},qgs={44640},r=1}),
+q(28089,{altQuests={27746},awp=40003,coords={{44.8,40.7,21},{45.3,84.3,21},{52.2,66.3,21},{57.3,10.1,21}},isBreadcrumb=1,lvl=19,nextQuests={28096},qgs={44640,45631,46125},r=1}),
 q(28096,{awp=40001,coords={{29.2,63.3,25}},providers={{"i",62932}},qgs={2215},r=1,sourceQuests={28089,28571},g={
 qo(1,{awp=40001,providers={{"n",47444}}}),
 qo(2,{awp=40001,providers={{"n",47443}}}),
@@ -29169,6 +29199,7 @@ r(6702,{isLimited=1,itemID=5786,learnedAt=90,q=1,requireSkill=165}),
 r(6703,{isLimited=1,itemID=5787,learnedAt=95,q=1,requireSkill=165}),
 r(6686,{isLimited=1,itemID=5771,learnedAt=70,q=1,requireSkill=197}),
 r(8607,{itemID=6892,learnedAt=40,q=1,requireSkill=185})}}),
+n(2140,{coords={{44.1,39.7,21}},r=1}),
 n(5748,{coords={{59.4,33.4,21}},r=1,g={
 r(7753,{itemID=6328,learnedAt=50,q=1,requireSkill=185}),
 r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185})}}),
@@ -32901,7 +32932,7 @@ r(16661,{itemID=12703,learnedAt=295,q=3,requireSkill=164}),
 r(17580,{b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171}),
 r(17562,{b=1,itemID=13485,learnedAt=275,q=2,requireSkill=171})}})}),
 h(-63,{
-r(19095,{awp=100107,coords={{62.4,36.2,22},{64.6,36,22}},itemID=15771,learnedAt=300,q=3,requireSkill=165,rwp=40003,u=2}),
+r(19095,{awp=100107,coords={{62.4,36.2,22},{64.6,36,22}},crs={1813},itemID=15771,learnedAt=300,q=3,requireSkill=165,rwp=40003,u=2}),
 r(11466,{crs={1783},itemID=9296,learnedAt=240,q=2,requireSkill=171,rwp=40003,u=2}),
 r(17576,{crs={1812,1813},itemID=13496,learnedAt=290,q=2,requireSkill=171,rwp=40003,u=2})}),
 h(-43,{pb=1,g={
@@ -35897,7 +35928,8 @@ crit(21604,{achID=7499,awp=50004,id=25,pb=1})}}),
 crit(21469,{achID=6614,awp=50004,id=2,pb=1,u=17}),
 crit(21571,{achID=6560,awp=50004,id=45,pb=1})}}),
 h(-44,{awp=20001,u=17,g={
-prof(171,{awp=20001,coords={{52.2,36.4,100},{53.8,65.8,100}},crs={16588,18802},u=17,g={
+prof(171,{awp=20001,u=17,g={
+n(18802,{awp=20001,coords={{53.8,65.8,100}},r=2,u=17,g={
 r(28596,{awp=20005,learnedAt=275,rank=5,requireSkill=171,rwp=80001,u=17}),
 flt(55,{awp=20005,u=17,g={
 r(33740,{awp=20100,learnedAt=300,requireSkill=171,u=17}),
@@ -35913,7 +35945,24 @@ r(33733,{awp=20005,learnedAt=310,requireSkill=171,u=17}),
 r(33732,{awp=20005,learnedAt=300,requireSkill=171,u=17})}}),
 flt(53,{awp=20005,u=17,g={
 r(38070,{awp=20005,learnedAt=325,requireSkill=171,u=17})}})}}),
-prof(164,{awp=20001,coords={{53.2,38.2,100},{56.8,63.8,100}},crs={16583,16823},u=17,g={
+n(16588,{awp=20001,coords={{52.2,36.4,100}},r=1,u=17,g={
+r(28596,{awp=20005,learnedAt=275,rank=5,requireSkill=171,rwp=80001,u=17}),
+flt(55,{awp=20005,u=17,g={
+r(33740,{awp=20100,learnedAt=300,requireSkill=171,u=17}),
+r(39638,{awp=20100,learnedAt=320,requireSkill=171,u=17}),
+r(28545,{awp=20100,learnedAt=310,requireSkill=171,u=17}),
+r(28544,{awp=20005,learnedAt=305,requireSkill=171,u=17}),
+r(39636,{awp=20100,learnedAt=310,requireSkill=171,u=17}),
+r(33741,{awp=20005,learnedAt=315,requireSkill=171,u=17}),
+r(45061,{awp=20300,learnedAt=325,requireSkill=171,u=17}),
+r(33738,{awp=20005,learnedAt=300,requireSkill=171,u=17}),
+r(28551,{awp=20005,learnedAt=325,requireSkill=171,u=17}),
+r(33733,{awp=20005,learnedAt=310,requireSkill=171,u=17}),
+r(33732,{awp=20005,learnedAt=300,requireSkill=171,u=17})}}),
+flt(53,{awp=20005,u=17,g={
+r(38070,{awp=20005,learnedAt=325,requireSkill=171,u=17})}})}})}}),
+prof(164,{awp=20001,u=17,g={
+n(16823,{awp=20001,coords={{56.8,63.8,100}},r=2,u=17,g={
 r(29844,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=164,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
 r(29553,{awp=20005,learnedAt=315,requireSkill=164,u=17}),
@@ -35935,11 +35984,39 @@ r(29565,{awp=20005,learnedAt=320,requireSkill=164,u=17}),
 r(29558,{awp=20005,learnedAt=315,requireSkill=164,u=17}),
 r(29557,{awp=20005,learnedAt=310,requireSkill=164,u=17}),
 r(34983,{awp=20005,learnedAt=350,requireSkill=164,rwp=50004,u=2})}})}}),
-prof(129,{awp=20001,coords={{22.4,39.2,100},{26.2,62,100}},crs={18990,18991},u=17,g={
+n(16583,{awp=20001,coords={{53.2,38.2,100}},r=1,u=17,g={
+r(29844,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=164,rwp=80001,u=17}),
+h(-88,{awp=20005,u=17,g={
+r(29553,{awp=20005,learnedAt=315,requireSkill=164,u=17}),
+r(29551,{awp=20005,learnedAt=300,requireSkill=164,u=17}),
+r(29552,{awp=20005,learnedAt=310,requireSkill=164,u=17}),
+r(29556,{awp=20005,learnedAt=320,requireSkill=164,u=17}),
+r(29550,{awp=20005,learnedAt=325,requireSkill=164,u=17}),
+r(29547,{awp=20005,learnedAt=305,requireSkill=164,u=17}),
+r(29548,{awp=20005,learnedAt=315,requireSkill=164,u=17}),
+r(29545,{awp=20005,learnedAt=300,requireSkill=164,u=17}),
+r(29549,{awp=20005,learnedAt=315,requireSkill=164,u=17})}}),
+flt(50,{awp=20005,u=17,g={
+r(32655,{awp=20005,learnedAt=300,requireSkill=164,rwp=50004,u=2}),
+r(29654,{awp=20005,learnedAt=300,requireSkill=164,u=17}),
+r(34607,{awp=20005,learnedAt=300,requireSkill=164,u=17}),
+r(32284,{awp=20005,learnedAt=325,requireSkill=164,u=17})}}),
+h(-101,{awp=20005,u=17,g={
+r(29565,{awp=20005,learnedAt=320,requireSkill=164,u=17}),
+r(29558,{awp=20005,learnedAt=315,requireSkill=164,u=17}),
+r(29557,{awp=20005,learnedAt=310,requireSkill=164,u=17}),
+r(34983,{awp=20005,learnedAt=350,requireSkill=164,rwp=50004,u=2})}})}})}}),
+prof(129,{awp=20001,u=17,g={
+n(18990,{awp=20001,coords={{22.4,39.2,100}},r=2,u=17,g={
 r(27028,{awp=30100,learnedAt=275,lvl=50,rank=5,requireSkill=129,rwp=80001,u=17}),
 r(27033,{awp=30100,learnedAt=330,requireSkill=129,rwp=80001,u=17}),
 r(27032,{awp=30100,learnedAt=300,requireSkill=129,rwp=80001,u=17})}}),
-prof(333,{awp=20001,coords={{52.5,36,100},{53.6,66,100}},crs={18753,18773},u=17,g={
+n(18991,{awp=20001,coords={{26.2,62,100}},r=1,u=17,g={
+r(27028,{awp=30100,learnedAt=275,lvl=50,rank=5,requireSkill=129,rwp=80001,u=17}),
+r(27033,{awp=30100,learnedAt=330,requireSkill=129,rwp=80001,u=17}),
+r(27032,{awp=30100,learnedAt=300,requireSkill=129,rwp=80001,u=17})}})}}),
+prof(333,{awp=20001,u=17,g={
+n(18773,{awp=20001,coords={{53.6,66,100}},r=2,u=17,g={
 r(28029,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=333,rwp=80001,u=17}),
 h(-243,{awp=20005,u=17,g={
 r(33996,{awp=20005,learnedAt=310,requireSkill=333,u=17}),
@@ -35963,7 +36040,32 @@ r(28028,{awp=20005,learnedAt=350,requireSkill=333,u=17})}}),
 h(-245,{awp=20005,u=17,g={
 r(44383,{awp=20300,learnedAt=330,requireSkill=333,u=17}),
 r(27944,{awp=20005,learnedAt=310,requireSkill=333,u=17})}})}}),
-prof(202,{awp=20001,coords={{54.8,38.6,100},{55.6,65.6,100}},crs={18752,18775},u=17,g={
+n(18753,{awp=20001,coords={{52.5,36,100}},r=1,u=17,g={
+r(28029,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=333,rwp=80001,u=17}),
+h(-243,{awp=20005,u=17,g={
+r(33996,{awp=20005,learnedAt=310,requireSkill=333,u=17}),
+r(33993,{awp=20005,learnedAt=305,requireSkill=333,u=17}),
+r(27899,{awp=20005,learnedAt=305,requireSkill=333,u=17}),
+r(27957,{awp=20005,learnedAt=315,requireSkill=333,u=17}),
+r(34004,{awp=20005,learnedAt=310,requireSkill=333,u=17}),
+r(34002,{awp=20005,learnedAt=300,requireSkill=333,u=17}),
+r(27961,{awp=20005,learnedAt=310,requireSkill=333,u=17}),
+r(34001,{awp=20005,learnedAt=305,requireSkill=333,u=17}),
+r(33990,{awp=20005,learnedAt=320,requireSkill=333,u=17}),
+r(33995,{awp=20005,learnedAt=340,requireSkill=333,u=17}),
+r(33991,{awp=20005,learnedAt=300,requireSkill=333,u=17}),
+r(27905,{awp=20005,learnedAt=315,requireSkill=333,u=17})}}),
+flt(50,{awp=20005,u=17,g={
+r(42615,{awp=20200,learnedAt=335,requireSkill=333,u=17}),
+r(42613,{awp=20200,learnedAt=300,requireSkill=333,rwp=70305,u=17}),
+r(28027,{awp=20005,learnedAt=325,requireSkill=333,u=17}),
+r(32664,{awp=20005,learnedAt=300,requireSkill=333,rwp=50004,u=2}),
+r(28028,{awp=20005,learnedAt=350,requireSkill=333,u=17})}}),
+h(-245,{awp=20005,u=17,g={
+r(44383,{awp=20300,learnedAt=330,requireSkill=333,u=17}),
+r(27944,{awp=20005,learnedAt=310,requireSkill=333,u=17})}})}})}}),
+prof(202,{awp=20001,u=17,g={
+n(18775,{awp=20001,coords={{55.6,65.6,100}},r=2,u=17,g={
 r(30350,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=202,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
 r(41317,{awp=20100,c={4,10,11},learnedAt=350,requireSkill=202,u=18}),
@@ -35994,10 +36096,47 @@ r(30308,{awp=20005,learnedAt=340,requireSkill=202,u=17})}}),
 h(-101,{awp=20005,u=17,g={
 r(30312,{awp=20005,learnedAt=320,requireSkill=202,u=17}),
 r(41307,{awp=20100,learnedAt=375,requireSkill=202,u=18})}})}}),
-prof(182,{awp=20001,coords={{52.2,36.2,100},{53.6,65.8,100}},crs={18748,18776},u=17,g={
+n(18752,{awp=20001,coords={{54.8,38.6,100}},r=1,u=17,g={
+r(30350,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=202,rwp=80001,u=17}),
+h(-88,{awp=20005,u=17,g={
+r(41317,{awp=20100,c={4,10,11},learnedAt=350,requireSkill=202,u=18}),
+r(41320,{awp=20100,c={5,8,9},learnedAt=350,requireSkill=202,u=18}),
+r(40274,{awp=20100,c={1,2,6},learnedAt=350,requireSkill=202,u=18}),
+r(41315,{awp=20100,c={7},learnedAt=350,requireSkill=202,u=18}),
+r(41311,{awp=20100,c={2},learnedAt=350,requireSkill=202,u=18}),
+r(41316,{awp=20100,c={7},learnedAt=350,requireSkill=202,u=18}),
+r(41319,{awp=20100,c={10,11},learnedAt=350,requireSkill=202,u=18}),
+r(41321,{awp=20100,c={5},learnedAt=350,requireSkill=202,u=18}),
+r(41314,{awp=20100,c={3,7},learnedAt=350,requireSkill=202,u=18}),
+r(41312,{awp=20100,c={1,2,6},learnedAt=350,requireSkill=202,u=18}),
+r(41318,{awp=20100,c={10,11},learnedAt=350,requireSkill=202,u=18})}}),
+flt(50,{awp=20005,u=17,g={
+r(30311,{awp=20005,learnedAt=325,requireSkill=202,u=17}),
+r(30310,{awp=20005,learnedAt=300,requireSkill=202,u=17}),
+r(30346,{awp=20005,learnedAt=310,requireSkill=202,rwp=40001,u=2}),
+r(39973,{awp=20100,learnedAt=335,requireSkill=202,u=17})}}),
+flt(56,{awp=20005,u=17,g={
+r(30306,{awp=20005,learnedAt=325,requireSkill=202,u=17}),
+r(30303,{awp=20005,learnedAt=300,requireSkill=202,u=17}),
+r(30304,{awp=20005,learnedAt=300,requireSkill=202,u=17}),
+r(30309,{awp=20005,learnedAt=340,requireSkill=202,u=17}),
+r(30305,{awp=20005,learnedAt=300,requireSkill=202,u=17}),
+r(30307,{awp=20005,learnedAt=340,requireSkill=202,u=17}),
+r(39971,{awp=20100,learnedAt=335,requireSkill=202,u=17}),
+r(30308,{awp=20005,learnedAt=340,requireSkill=202,u=17})}}),
+h(-101,{awp=20005,u=17,g={
+r(30312,{awp=20005,learnedAt=320,requireSkill=202,u=17}),
+r(41307,{awp=20100,learnedAt=375,requireSkill=202,u=18})}})}})}}),
+prof(182,{awp=20001,u=17,g={
+n(18776,{awp=20001,coords={{53.6,65.8,100}},r=2,u=17,g={
 r(28695,{awp=20005,learnedAt=275,rank=5,requireSkill=182,rwp=80001,u=17})}}),
-prof(773,{awp=20001,coords={{52.2,36,100},{54,65.6,100}},crs={30721,30722},u=17}),
-prof(755,{awp=20001,coords={{54.6,63.6,100},{56.8,37.6,100}},crs={18751,18774},u=17,g={
+n(18748,{awp=20001,coords={{52.2,36.2,100}},r=1,u=17,g={
+r(28695,{awp=20005,learnedAt=275,rank=5,requireSkill=182,rwp=80001,u=17})}})}}),
+prof(773,{awp=20001,u=17,g={
+n(30721,{awp=20001,coords={{54,65.6,100}},r=2,u=17}),
+n(30722,{awp=20001,coords={{52.2,36,100}},r=1,u=17})}}),
+prof(755,{awp=20001,u=17,g={
+n(18774,{awp=20001,coords={{54.6,63.6,100}},r=2,u=17,g={
 r(28897,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=755,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
 r(41418,{awp=20100,learnedAt=365,requireSkill=755,u=18})}}),
@@ -36065,7 +36204,76 @@ r(40514,{awp=20100,learnedAt=340,requireSkill=755,u=18}),
 r(31051,{awp=20005,learnedAt=335,requireSkill=755,u=17})}}),
 flt(56,{awp=20005,u=17,g={
 r(38068,{awp=20005,learnedAt=325,requireSkill=755,u=17})}})}}),
-prof(165,{awp=20001,coords={{54,64,100},{56.2,38.6,100}},crs={18754,18771},u=17,g={
+n(18751,{awp=20001,coords={{56.8,37.6,100}},r=1,u=17,g={
+r(28897,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=755,rwp=80001,u=17}),
+h(-88,{awp=20005,u=17,g={
+r(41418,{awp=20100,learnedAt=365,requireSkill=755,u=18})}}),
+flt(61,{awp=20005,u=17,g={
+r(28905,{awp=30002,learnedAt=305,requireSkill=755,u=17}),
+r(28903,{awp=30002,learnedAt=300,requireSkill=755,u=17}),
+r(34590,{awp=30002,learnedAt=305,requireSkill=755,u=17}),
+r(28914,{awp=30002,learnedAt=315,requireSkill=755,u=17}),
+r(28910,{awp=30002,learnedAt=300,requireSkill=755,u=17}),
+r(28917,{awp=30002,learnedAt=305,requireSkill=755,u=17}),
+r(41420,{awp=20100,learnedAt=325,requireSkill=755,u=17}),
+r(41429,{awp=20100,learnedAt=350,requireSkill=755,u=17}),
+r(28916,{awp=30002,learnedAt=300,requireSkill=755,u=17}),
+r(28948,{awp=30002,learnedAt=325,requireSkill=755,u=17}),
+r(28950,{awp=30002,learnedAt=300,requireSkill=755,u=17}),
+r(28936,{awp=30002,learnedAt=325,requireSkill=755,u=17}),
+r(28953,{awp=30002,learnedAt=305,requireSkill=755,u=17}),
+r(28925,{awp=30002,learnedAt=300,requireSkill=755,u=17}),
+r(39463,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39455,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(39729,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(39712,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(31089,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(31096,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(28938,{awp=40003,learnedAt=300,rwp=40003,u=2}),
+r(39719,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(28924,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(28907,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(31099,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39722,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(39452,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39451,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(39725,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(39462,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39458,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(39730,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(39735,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(28957,{awp=40003,learnedAt=325,requireSkill=755,rwp=40003,u=2}),
+r(39717,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(31094,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(48789,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(46404,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(31110,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(31105,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39732,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(28906,{awp=40003,learnedAt=315,requireSkill=755,rwp=40003,u=2}),
+r(34069,{awp=40003,learnedAt=325,rwp=40003,u=2}),
+r(39710,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2}),
+r(31087,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(31100,{awp=40003,learnedAt=350,requireSkill=755,rwp=40003,u=2}),
+r(39723,{awp=40003,learnedAt=375,requireSkill=755,rwp=40003,u=2})}}),
+flt(52,{awp=20005,u=17,g={
+r(31050,{awp=20005,learnedAt=320,requireSkill=755,u=17}),
+r(26916,{awp=20005,learnedAt=310,requireSkill=755,u=17}),
+r(41414,{awp=20100,learnedAt=325,requireSkill=755,u=17}),
+r(31048,{awp=20005,learnedAt=310,requireSkill=755,u=17}),
+r(31049,{awp=20005,learnedAt=310,requireSkill=755,u=17}),
+r(31052,{awp=20005,learnedAt=335,requireSkill=755,u=17}),
+r(41415,{awp=20100,learnedAt=330,requireSkill=755,u=17})}}),
+flt(50,{awp=20005,u=17,g={
+r(47280,{awp=20400,learnedAt=350,requireSkill=755,u=17}),
+r(62941,{awp=30100,learnedAt=300,requireSkill=755,rwp=40003,u=2})}}),
+flt(51,{awp=20005,u=17,g={
+r(40514,{awp=20100,learnedAt=340,requireSkill=755,u=18}),
+r(31051,{awp=20005,learnedAt=335,requireSkill=755,u=17})}}),
+flt(56,{awp=20005,u=17,g={
+r(38068,{awp=20005,learnedAt=325,requireSkill=755,u=17})}})}})}}),
+prof(165,{awp=20001,u=17,g={
+n(18771,{awp=20001,coords={{54,64,100}},r=2,u=17,g={
 r(32549,{awp=20005,learnedAt=275,rank=5,requireSkill=165,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
 r(32462,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
@@ -36098,7 +36306,41 @@ r(32456,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
 r(32454,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
 r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=2}),
 r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}}),
-prof(186,{awp=20001,coords={{55.4,37.6,100},{56.6,63.8,100}},crs={18747,18779},u=17,g={
+n(18754,{awp=20001,coords={{56.2,38.6,100}},r=1,u=17,g={
+r(32549,{awp=20005,learnedAt=275,rank=5,requireSkill=165,rwp=80001,u=17}),
+h(-88,{awp=20005,u=17,g={
+r(32462,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(32463,{awp=20005,learnedAt=310,requireSkill=165,u=17}),
+r(32464,{awp=20005,learnedAt=320,requireSkill=165,u=17}),
+r(32465,{awp=20005,learnedAt=335,requireSkill=165,u=17}),
+r(36079,{awp=40003,learnedAt=330,requireSkill=165,u=17}),
+r(36078,{awp=40003,learnedAt=330,requireSkill=165,u=17}),
+r(36077,{awp=40003,learnedAt=330,requireSkill=165,u=17}),
+r(32466,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(32467,{awp=20005,learnedAt=310,requireSkill=165,u=17}),
+r(32468,{awp=20005,learnedAt=325,requireSkill=165,u=17}),
+r(32469,{awp=20005,learnedAt=335,requireSkill=165,u=17}),
+r(32470,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(32471,{awp=20005,learnedAt=315,requireSkill=165,u=17}),
+r(32472,{awp=20005,learnedAt=320,requireSkill=165,u=17}),
+r(32473,{awp=20005,learnedAt=330,requireSkill=165,u=17}),
+r(32478,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(32479,{awp=20005,learnedAt=310,requireSkill=165,u=17}),
+r(32480,{awp=20005,learnedAt=320,requireSkill=165,u=17}),
+r(32481,{awp=20005,learnedAt=330,requireSkill=165,u=17})}}),
+flt(50,{awp=20005,u=17,g={
+r(35540,{awp=20005,learnedAt=340,requireSkill=165,u=17}),
+r(44770,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
+r(351766,{awp=20001,learnedAt=340,requireSkill=165,rwp=30002,u=2}),
+r(44970,{awp=20300,learnedAt=350,requireSkill=165,u=17}),
+r(32455,{awp=20005,learnedAt=325,requireSkill=165,u=17}),
+r(44343,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=2}),
+r(32456,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(32454,{awp=20005,learnedAt=300,requireSkill=165,u=17}),
+r(44344,{awp=20300,learnedAt=315,requireSkill=165,rwp=40001,u=2}),
+r(45100,{awp=20300,learnedAt=300,requireSkill=165,u=17})}})}})}}),
+prof(186,{awp=20001,u=17,g={
+n(18779,{awp=20001,coords={{56.6,63.8,100}},r=2,u=17,g={
 r(29354,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=186,rwp=80001,u=17}),
 r(2656,{awp=20005,learnedAt=0,requireSkill=186,u=17}),
 r(35750,{awp=20005,learnedAt=300,requireSkill=186,u=17}),
@@ -36109,7 +36351,24 @@ r(29356,{awp=20005,learnedAt=275,requireSkill=186,u=17}),
 r(29360,{awp=20005,learnedAt=350,requireSkill=186,u=17}),
 r(29686,{awp=20005,learnedAt=375,requireSkill=186,u=17}),
 r(29361,{awp=20005,learnedAt=375,requireSkill=186,u=17})}}),
-prof(197,{awp=20001,coords={{54.6,63.6,100},{56.6,37.2,100}},crs={18749,18772},u=17,g={
+n(18747,{awp=20001,coords={{55.4,37.6,100}},r=1,u=17,g={
+r(29354,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=186,rwp=80001,u=17}),
+r(2656,{awp=20005,learnedAt=0,requireSkill=186,u=17}),
+r(35750,{awp=20005,learnedAt=300,requireSkill=186,u=17}),
+r(35751,{awp=20005,learnedAt=300,requireSkill=186,u=17}),
+r(29358,{awp=20005,learnedAt=325,requireSkill=186,u=17}),
+r(29359,{awp=20005,learnedAt=350,requireSkill=186,u=17}),
+r(29356,{awp=20005,learnedAt=275,requireSkill=186,u=17}),
+r(29360,{awp=20005,learnedAt=350,requireSkill=186,u=17}),
+r(29686,{awp=20005,learnedAt=375,requireSkill=186,u=17}),
+r(29361,{awp=20005,learnedAt=375,requireSkill=186,u=17})}})}}),
+prof(393,{awp=20001,u=17,g={
+n(18777,{awp=20001,coords={{54.6,63.2,100}},r=2,u=17,g={
+r(32678,{awp=20001,learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}}),
+n(18755,{awp=20001,coords={{56.2,38.6,100}},r=1,u=17,g={
+r(32678,{awp=20001,learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}})}}),
+prof(197,{awp=20001,u=17,g={
+n(18772,{awp=20001,coords={{54.6,63.6,100}},r=2,u=17,g={
 r(26790,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=197,rwp=80001,u=17}),
 h(-88,{awp=20005,u=17,g={
 r(26765,{awp=20005,learnedAt=310,requireSkill=197,u=17}),
@@ -36122,7 +36381,21 @@ r(26746,{awp=20005,learnedAt=315,requireSkill=197,u=17})}}),
 flt(50,{awp=20005,u=17,g={
 r(31460,{awp=20005,learnedAt=300,requireSkill=197,u=17})}}),
 flt(56,{awp=20005,u=17,g={
-r(26745,{awp=20005,learnedAt=300,requireSkill=197,u=17})}})}})}}),
+r(26745,{awp=20005,learnedAt=300,requireSkill=197,u=17})}})}}),
+n(18749,{awp=20001,coords={{56.6,37.2,100}},r=1,u=17,g={
+r(26790,{awp=20005,learnedAt=275,lvl=50,rank=5,requireSkill=197,rwp=80001,u=17}),
+h(-88,{awp=20005,u=17,g={
+r(26765,{awp=20005,learnedAt=310,requireSkill=197,u=17}),
+r(26772,{awp=20005,learnedAt=335,requireSkill=197,u=17}),
+r(26764,{awp=20005,learnedAt=310,requireSkill=197,u=17}),
+r(26770,{awp=20005,learnedAt=320,requireSkill=197,u=17}),
+r(26771,{awp=20005,learnedAt=325,requireSkill=197,u=17})}}),
+flt(113,{awp=20005,u=17,g={
+r(26746,{awp=20005,learnedAt=315,requireSkill=197,u=17})}}),
+flt(50,{awp=20005,u=17,g={
+r(31460,{awp=20005,learnedAt=300,requireSkill=197,u=17})}}),
+flt(56,{awp=20005,u=17,g={
+r(26745,{awp=20005,learnedAt=300,requireSkill=197,u=17})}})}})}})}}),
 h(-45,{awp=20001,u=17,g={
 q(10864,{awp=20001,coords={{52.2,36.4,100}},lvl=58,qgs={16588},r=1,sourceQuests={10835},u=17,g={
 qo(1,{awp=20001,providers={{"n",16867},{"n",16870},{"n",16878},{"n",19295},{"n",19410},{"n",19411},{"n",19413},{"n",19414},{"n",19415}},u=17})}}),
@@ -38101,7 +38374,7 @@ r(39961,{awp=20200,b=1,itemID=33622,learnedAt=365,minReputation={933,42000},q=3,
 s(139467,29121,{awp=20001,b=1,f=20,lvl=70,minReputation={933,42000},q=4,u=17}),
 i(29119,{awp=20001,b=1,f=51,lvl=70,minReputation={933,42000},q=4,u=17}),
 s(139468,29122,{awp=20001,b=1,f=4,lvl=70,minReputation={933,42000},q=4,u=17})}}),
-n(54650,{awp=40300,coords={{33,64.2,109}},sym={{"sub","pvp_gear_base",2,-247,-296},{"merge"},{"finalize"},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"sub","pvp_gear_base",2,-249,-296},{"merge"}},u=17}),
+n(54650,{awp=40300,coords={{33,64.2,109}},sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296}},u=17}),
 n(33940,{awp=30302,coords={{33.1,64.3,109}},rwp=40003,u=2}),
 n(33931,{awp=30200,coords={{33.1,64.3,109}},rwp=40003,u=2}),
 n(33918,{awp=30100,coords={{33.1,64.3,109}},rwp=40003,u=2}),
@@ -39952,7 +40225,7 @@ n(40205,{awp=40003,coords={{59.1,59.6,126}},rwp=40200,u=2}),
 n(33938,{coords={{59.1,59.6,126}},rwp=40003,u=2}),
 n(33925,{coords={{59.1,59.6,126}},rwp=40003,u=2}),
 n(33923,{coords={{59.1,59.6,126}},rwp=40003,u=2}),
-n(31865,{awp=30002,coords={{59.1,59.6,126}},sym={{"sub","pvp_gear_base",3,-251,-299},{"sub","pvp_gear_base",3,-251,-252},{"sub","pvp_gear_base",3,-251,-296},{"sub","pvp_gear_base",3,-253,-296},{"sub","pvp_gear_base",3,-253,-295},{"merge"},{"pop"},{"not","headerID",-89,-100,-102,-91},{"not","filterID",51,52,54,53},{"pop"},{"exclude","itemID",45983},{"exclude","itemID",42214},{"exclude","u",1}},u=30})}})}}),
+n(31865,{awp=30002,coords={{59.1,59.6,126}},sym={{"sub","pvp_gear_base",3,-251,-299},{"sub","pvp_gear_base",3,-251,-252},{"sub","pvp_gear_base",3,-251,-296},{"sub","pvp_gear_base",3,-253,-296},{"sub","pvp_gear_base",3,-253,-295},{"merge"},{"pop"},{"not","headerID",-89,-100,-102,-91},{"not","filterID",51,52,54,53},{"pop"},{"exclude","itemID",45983,42214},{"exclude","u",1}},u=30})}})}}),
 h(-12,{awp=30002,u=30,g={
 ach(2094,{awp=30002,requireSkill=356,u=30,g={
 crit(7445,{achID=2094,awp=30002,id=6,providers={{"i",43706}},u=30}),
@@ -40764,6 +41037,15 @@ r(70524,{awp=30303,learnedAt=250,requireSkill=186,u=30}),
 r(49258,{awp=30003,learnedAt=400,requireSkill=186,u=30}),
 r(55211,{awp=30003,learnedAt=450,requireSkill=186,u=30}),
 r(55208,{awp=30003,learnedAt=450,requireSkill=186,u=30})}})}}),
+prof(393,{awp=30002,u=30,g={
+n(28696,{awp=30002,coords={{35.2,28.4,125}},u=30,g={
+r(50305,{awp=30003,learnedAt=350,rank=6,requireSkill=393,rwp=80001,u=30}),
+r(53125,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30}),
+r(53662,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30}),
+r(53663,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30}),
+r(53664,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30}),
+r(53665,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30}),
+r(53666,{awp=30003,learnedAt=0,requireSkill=393,rwp=60002,u=30})}})}}),
 prof(197,{awp=30002,u=30,g={
 n(28699,{awp=30002,coords={{36.3,33.4,125}},requireSkill=197,u=30,g={
 r(56017,{awp=30002,description="In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",learnedAt=420,requireSkill=197,sourceAchievements={41},u=30}),
@@ -46114,9 +46396,11 @@ i(38364,{b=1,pvp=1,rwp=50004,u=2}),
 i(38363,{b=1,pvp=1,rwp=50004,u=2}),
 i(38362,{b=1,pvp=1,rwp=50004,u=2}),
 i(38361,{b=1,pvp=1,rwp=50004,u=2})}}),
-n(26229,{awp=30002,coords={{59.6,27.8,116}},r=2,sym={{"select","itemID",30758,30749,30750}},u=30})}}),
+n(26229,{awp=30002,coords={{59.6,27.8,116}},r=2,sym={{"select","itemID",30758,30749,30750}},u=30}),
+n(27391,{awp=30002,coords={{32.4,59.9,116}},r=2,u=30})}}),
 h(-63,{awp=30002,u=30,g={
-i(44981,{awp=30002,coords={{60.5,51.5,116}},crs={33224},description="Kiss this frog.",providers={{"i",44986}},q=1,u=31}),
+n(33224,{awp=30002,coords={{60.5,51.5,116}},description="Kiss this frog.",providers={{"i",44986}},u=31,g={
+i(44981,{awp=30002,q=1,u=31})}}),
 i(36743,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30}),
 i(35799,{awp=30002,description="Only used for a given quest, can otherwise be vendored.",q=1,u=30}),
 r(54979,{awp=30002,b=1,coords={{68.4,16,116}},crs={26270},itemID=41123,learnedAt=375,q=2,requireSkill=164,u=30}),
@@ -47007,7 +47291,7 @@ fp(334,{awp=30002,coords={{87.8,78,118}},crs={30433},u=30}),
 fp(333,{awp=30002,coords={{43.6,24.4,118}},crs={30314},u=30})}}),
 h(-43,{awp=50004,pb=1,u=30,g={
 n(71438,{awp=50300,coords={{47.8,14.3,118}},pb=1,u=30,g={
-i(97984,{awp=50300,b=1,description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,pb=1,q=1,rwp=70003,u=53})}}),
+i(97984,{awp=50300,b=1,lvl=90,pb=1,q=1,rwp=70003,u=53})}}),
 n(66675,{awp=50004,coords={{77.4,19.6,118}},description="Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",pb=1,petBattleLvl=25,u=30,g={
 q(31935,{awp=50004,isDaily=1,pb=1,sourceAchievements={6605},u=30,g={
 i(89125,{awp=50004,b=1,f=55,pb=1,q=1,u=30}),
@@ -47965,6 +48249,7 @@ i(38623,{awp=30002,q=1,u=30}),
 i(38622,{awp=30002,q=1,u=30}),
 i(38624,{awp=30002,q=1,u=30})}}),
 n(28040,{awp=30002,c={3},coords={{27.2,59.6,119}},sym={{"select","itemID",30758}},u=30}),
+n(28038,{awp=30002,coords={{26.8,59.3,119}},u=30}),
 n(31911,{awp=30002,coords={{55.1,69,119}},u=30,g={
 r(53885,{awp=30002,b=1,itemID=41561,learnedAt=350,minReputation={1104,3000},q=2,requireSkill=755,u=30}),
 i(44064,{awp=30002,b=1,f=55,lvl=70,minReputation={1104,3000},q=1,u=30}),
@@ -50938,7 +51223,7 @@ fp(1221,{awp=50200,coords={{41.8,79.2,507}},crs={69359},r=2,u=52}),
 fp(1222,{awp=50200,coords={{51.8,75.4,507}},crs={69360},r=1,u=52})}}),
 h(-46,{awp=50200,u=52,g={
 n(70096,{awp=50200,coords={{76.4,83.8,507},{77.6,82.6,507},{78.6,80.6,507}},u=52,g={
-i(94158,{awp=50200,b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"pop"}},u=52}),
+i(94158,{awp=50200,b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"groupfill"}},u=52}),
 i(94159,{awp=50200,b=1,description="Can contain all sorts of herbs, ore, and cloth.",q=2,u=52}),
 i(94225,{awp=50200,b=1,f=55,factionID=1341,q=3,u=52}),
 i(94227,{awp=50200,b=1,f=55,factionID=1269,q=3,u=52}),
@@ -51378,7 +51663,7 @@ n(69997,{awp=50200,coords={{50.49,74.96,504},{51.31,71.19,504}},isWeekly=1,u=52,
 crit(22823,{achID=8103,awp=50200,id=4,u=52})}}),
 n(70530,{awp=50200,coords={{39.41,81.6,504}},u=52,g={
 i(95566,{awp=50200,b=1,q=3,u=52}),
-i(94158,{awp=50200,b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"pop"}},u=52}),
+i(94158,{awp=50200,b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"groupfill"}},u=52}),
 i(94159,{awp=50200,b=1,description="Can contain all sorts of herbs, ore, and cloth.",q=2,u=52})}}),
 n(69961,{awp=50200,providers={{"i",95350}},u=52,g={
 crit(22838,{achID=8110,awp=50200,id=3,u=52})}}),
@@ -52050,9 +52335,7 @@ crit(19621,{achID=6716,awp=50004,id=4,u=50})}}),
 o(213332,{awp=50004,coords={{50.9,31.67,418},{52.96,27.42,418}},g={
 crit(19663,{achID=6754,awp=50004,id=2,u=50})}}),
 o(215765,{awp=50004,coords={{72.2,31.1,418}},g={
-crit(19796,{achID=6856,awp=50004,id=4,u=50})}})}}),
-h(-63,{awp=50004,g={
-i(74844,{awp=50004,q=1})}})}}),
+crit(19796,{achID=6856,awp=50004,id=4,u=50})}})}})}}),
 m(379,{awp=50004,icon=617832,lore="Kun-Lai Summit is a zone in northern Pandaria, surrounded by the Vale of Eternal Blossoms to the south, the Townlong Steppes to the west, and the Jade Forest to the east. It is a vast area with majestic mountains, autumnal plains, and a lush coastal area. High atop the frigid northern peaks looms the Temple of the White Tiger, an ancient training ground protected by an elite force of martial priests, along with the spirit of the White Tiger itself, Xuen. Deeper into the mountains is the hideout of the Shado-pan clan: a mysterious order charged with protecting Pandaria from the dark things buried beneath its surface. When the isolated people of Kun-Lai are threatened by marauders from the west and a Zandalari troll menace invading its northern shores, they turn to the Alliance and Horde for help.",maps={380,381,382,383,384,385,386,387,434,843},petBattleLvl=23,g={
 h(-12,{awp=50004,g={
 ach(6976,{awp=50004,g={
@@ -52454,15 +52737,15 @@ q(30650,{awp=50004,coords={{54.1,83.4,379}},qgs={63542},r=2,sourceQuests={30575,
 q(30655,{awp=50004,coords={{62.3,79.6,379}},qgs={63535},r=1,sourceQuests={30620,31253}}),
 q(30999,{awp=50004,coords={{57.3,61.6,379}},qgs={61847},sourceQuests={31459,31460}}),
 q(32816,{awp=50300,qgs={70980},sourceQuests={32815},u=53,g={
-s(279135,98137,{awp=50300,b=1,f=6,lvl=90,q=4,u=53}),
-s(279136,98138,{awp=50300,b=1,f=6,lvl=90,q=4,u=53}),
-s(279137,98139,{awp=50300,b=1,f=5,lvl=90,q=4,u=53}),
 s(279138,98140,{awp=50300,b=1,f=7,lvl=90,q=4,u=53}),
-s(279139,98141,{awp=50300,b=1,f=7,lvl=90,q=4,u=53}),
 s(279140,98142,{awp=50300,b=1,f=4,lvl=90,q=4,u=53}),
-s(279141,98143,{awp=50300,b=1,f=7,lvl=90,q=4,u=53}),
-s(279142,98144,{awp=50300,b=1,f=4,lvl=90,q=4,u=53}),
+s(279139,98141,{awp=50300,b=1,f=7,lvl=90,q=4,u=53}),
 s(279143,98145,{awp=50300,b=1,f=5,lvl=90,q=4,u=53}),
+s(279141,98143,{awp=50300,b=1,f=7,lvl=90,q=4,u=53}),
+s(279135,98137,{awp=50300,b=1,f=6,lvl=90,q=4,u=53}),
+s(279137,98139,{awp=50300,b=1,f=5,lvl=90,q=4,u=53}),
+s(279142,98144,{awp=50300,b=1,f=4,lvl=90,q=4,u=53}),
+s(279136,98138,{awp=50300,b=1,f=6,lvl=90,q=4,u=53}),
 crit(23361,{achID=8306,awp=50300,id=3,r=2,rwp=50400,u=2}),
 crit(23361,{achID=8307,awp=50300,id=3,r=1,rwp=50400,u=2})}}),
 q(30819,{awp=50004,coords={{60.6,21.3,379}},qgs={60785},sourceQuests={30805,30806,30807}}),
@@ -52849,6 +53132,7 @@ crit(19775,{achID=6847,awp=50004,id=3,u=50})}})}}),
 h(-58,{awp=50004,g={
 n(65515,{awp=50004,coords={{7.3,52.4,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,r=1,rwp=50200,sym={{"sub","pvp_gear_base",5,-259,-295},{"merge"},{"pop"}},u=2}),
 n(73145,{awp=50004,r=1,u=2}),
+n(59698,{awp=50004,coords={{57.2,61,379}}}),
 n(65165,{awp=50004,coords={{7.5,52.5,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,r=1,rwp=50200,sym={{"sub","pvp_gear_base",5,-259,-296},{"merge"},{"pop"}},u=2}),
 n(69965,{awp=50004,r=1,u=2}),
 n(65164,{awp=50004,coords={{7.1,52.5,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,r=1,rwp=50200,sym={{"sub","pvp_gear_base",5,-259,-299},{"merge"},{"pop"}},u=2,g={
@@ -52969,10 +53253,8 @@ mnt(127220,{awp=50004,b=1,cost=30000000,itemID=87789,lvl=85,q=4}),
 mnt(122708,{awp=50004,b=1,cost=1200000000,itemID=84101,lvl=85,q=4}),
 mnt(127216,{awp=50004,b=1,cost=30000000,itemID=87788,lvl=85,q=4})}})}}),
 h(-63,{awp=50004,g={
-i(97980,{awp=50300,b=1,crs={60742,60743,60746,60749,60752,60753},description="This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",lvl=90,q=1,rwp=70003,u=53}),
-i(97978,{awp=50300,b=1,coords={{65,60,379}},description="Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",lvl=90,q=1,rwp=70003,u=53}),
-i(74849,{awp=50004,q=1}),
-i(74844,{awp=50004,q=1})}})}}),
+i(97980,{awp=50300,b=1,crs={60742,60743,60746,60749,60752,60753},description="Best farmed by doing The Burlap Grind quest. This can take more than a few hundred kills to drop.",lvl=90,q=1,rwp=70003,u=53}),
+i(97978,{awp=50300,b=1,coords={{65,60,379}},description="Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",lvl=90,q=1,rwp=70003,u=53})}})}}),
 m(371,{awp=50004,icon=617824,lore="The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",maps={372,373,374,375},u=50,petBattleLvl=23,g={
 h(-12,{awp=50004,u=50,g={
 ach(6351,{awp=50004,u=50,g={
@@ -53239,9 +53521,6 @@ r(102698,{awp=50004,learnedAt=550,rank=1,requireSkill=129,rwp=80001,u=51}),
 r(102697,{awp=50004,learnedAt=500,requireSkill=129,rwp=80001,u=51}),
 h(-26,{awp=50004,rwp=80001,u=51,g={
 r(102699,{awp=50004,learnedAt=600,rank=2,requireSkill=129,rwp=80001,u=51})}})}})),
-prof(182,{awp=50004,u=50,g={
-n(66980,{awp=50004,coords={{27.8,15.6,371}},r=1,u=50,g={
-r(110413,{awp=50004,learnedAt=0,rank=8,requireSkill=182,rwp=80001,u=51})}})}}),
 prof(773,{awp=50004,u=50,g={
 n(56065,{awp=50004,coords={{54.8,45,371}},u=50}),
 q(31539,{awp=50004,coords={{54.6,44.2,371}},isWeekly=1,qgs={56065},requireSkill=773,u=50,g={
@@ -53701,7 +53980,12 @@ n(65092,{awp=50004,coords={{46,29.4,371}},u=50,g={
 r(102161,{awp=50004,learnedAt=500,rank=8,requireSkill=186,rwp=80001,u=51}),
 r(2656,{awp=50004,learnedAt=0,requireSkill=186,u=51}),
 r(102165,{awp=50004,learnedAt=500,requireSkill=186,u=51}),
-r(102167,{awp=50004,learnedAt=600,requireSkill=186,u=51})}})}})}}),
+r(102167,{awp=50004,learnedAt=600,requireSkill=186,u=51})}})}}),
+prof(393,_.ResolveQuestData({aqd=
+{awp=50004,coords={{44.8,85.6,371}},crs={67026}},awp=50004,hqd=
+{awp=50004,coords={{27.8,15.4,371}},crs={66981}},u=50,g={
+r(102216,{awp=50004,learnedAt=0,rank=8,requireSkill=393,rwp=80001,u=51}),
+r(102219,{awp=50004,learnedAt=0,requireSkill=393,rwp=60002,u=51})}}))}}),
 h(-45,{awp=50004,u=50,g={
 q(29619,{awp=50004,coords={{44.9,24.9,371}},qgs={54913},sourceQuests={29618},u=50,g={
 qo(1,{awp=50004,coords={{45.2,28.5,371}},crs={54930},providers={{"i",72589},{"o",209436}},u=50})}}),
@@ -54325,13 +54609,13 @@ q(29618,{awp=50004,coords={{44.9,24.9,371}},qgs={54913},sourceQuests={29617},u=5
 q(30000,{awp=50004,coords={{58,59,371}},qgs={56784},sourceQuests={29999,30004,30005,30011},u=50,g={
 s(267831,80686,{awp=50004,b=1,f=4,q=2,u=50}),
 s(267832,80687,{awp=50004,b=1,f=5,q=2,u=50}),
-s(267833,80688,{awp=50004,b=1,f=6,q=2,u=50}),
-s(267834,80689,{awp=50004,b=1,f=7,q=2,u=50}),
-s(267835,80690,{awp=50004,b=1,f=4,q=2,u=50}),
 s(267836,80691,{awp=50004,b=1,f=5,q=2,u=50}),
 s(267837,80692,{awp=50004,b=1,f=6,q=2,u=50}),
-s(267838,80693,{awp=50004,b=1,f=7,q=2,u=50}),
+s(267834,80689,{awp=50004,b=1,f=7,q=2,u=50}),
 s(267839,80694,{awp=50004,b=1,f=7,q=2,u=50}),
+s(267833,80688,{awp=50004,b=1,f=6,q=2,u=50}),
+s(267835,80690,{awp=50004,b=1,f=4,q=2,u=50}),
+s(267838,80693,{awp=50004,b=1,f=7,q=2,u=50}),
 crit(19349,{achID=6300,awp=50004,id=9,r=2,u=50}),
 crit(19349,{achID=6534,awp=50004,id=7,r=1,u=50})}}),
 q(29723,{awp=50004,coords={{38.4,46.2,371}},qgs={55234,55274},sourceQuests={29716},u=50,g={
@@ -54563,7 +54847,7 @@ o(214338,{awp=50004,coords={{46.3,80.6,371}},questID=31865,u=50}),
 o(213748,{awp=50004,coords={{23.49,35.05,371}},questID=31404,u=50,g={
 i(86216,{awp=50004,b=1,u=50}),
 crit(20902,{achID=7997,awp=50004,id=4,u=50})}}),
-o(213362,{awp=50004,coords={{51.28,100.54,371}},description="Located underwater in a boat.",questID=31396,u=50,g={
+o(213362,{awp=50004,coords={{50.88,99.74,371}},description="Located underwater in a boat.",questID=31396,u=50,g={
 crit(20895,{achID=7997,awp=50004,id=1,u=50})}}),
 o(213333,{awp=50004,coords={{42.2,17.4,371}},u=50,g={
 crit(19664,{achID=6754,awp=50004,id=3,u=50})}}),
@@ -54774,6 +55058,7 @@ s(267185,74572,{awp=50004,b=1,f=5,q=1}),
 s(267184,74571,{awp=50004,b=1,f=4,q=1})}}),
 q(29798,{awp=50004,coords={{42.3,86.4,378}},qgs={55940},sourceQuests={29665,29794,29797},g={
 qo(1,{awp=50004,coords={{36.8,84.6,378}},providers={{"n",56009}}})}}),
+q(30989,{awp=50004,coords={{82.6,28.2,84}},qgs={61796},races={24,25},rwp=70003,sourceQuests={30988}}),
 q(29410,{awp=50004,coords={{56.7,18.2,378}},qgs={53566},sourceQuests={29409}}),
 q(29784,{awp=50004,coords={{30.8,36.8,378}},qgs={65558},sourceQuests={29779,29780,29781}}),
 q(29786,{awp=50004,coords={{24.8,69.8,378}},qgs={55595},sourceQuests={29785},g={
@@ -54804,6 +55089,7 @@ q(29665,{awp=50004,coords={{42.3,86.4,378}},qgs={55940},sourceQuests={29796},g={
 qo(1,{awp=50004,coords={{37.6,87,378}},providers={{"n",56360}}})}}),
 q(30590,{awp=50004,coords={{36.3,72.4,378}},qgs={60055},sourceQuests={30589},g={
 qo(1,{awp=50004,coords={{35.4,78.8,378},{35.6,80.8,378},{36.2,76.6,378},{36.4,75.4,378},{36.5,76.7,378},{36.6,78.7,378},{37.7,77.2,378},{38.1,75.4,378},{38.2,78.2,378},{38.3,73.9,378},{38.4,78.9,378},{38.5,74.1,378},{38.5,79.1,378},{39.4,78.4,378},{39.8,75.7,378},{39.9,77.9,378}},providers={{"i",74955},{"o",209792}}})}}),
+q(31014,{awp=50004,coords={{70.6,30.8,85}},maps={503},qgs={62092},races={26},rwp=70003,sourceQuests={31013}}),
 q(29422,{awp=50004,coords={{38.8,25.5,378}},qgs={54135},sourceQuests={29421},g={
 qo(1,{awp=50004,coords={{39.44,29.59,378}},providers={{"i",72583},{"n",57779}}})}}),
 q(29424,{awp=50004,coords={{55.1,32.8,378}},qgs={54943},sourceQuests={29410},g={
@@ -54888,6 +55174,7 @@ q(29783,{awp=50004,coords={{29.9,39.8,378}},qgs={55585},sourceQuests={29776},g={
 qo(1,{awp=50004,coords={{31.2,47.8,378}},providers={{"i",74624},{"o",209665}}})}}),
 q(29771,{awp=50004,coords={{69.2,66.7,378}},qgs={55478},sourceQuests={29769,29770},g={
 qo(1,{awp=50004,coords={{61.9,79.1,378},{62.2,76.4,378},{62.2,79.9,378},{62.2,81,378},{62.3,77.1,378},{63.1,77.1,378},{63.4,79,378},{63.5,78.7,378}},providers={{"i",74301},{"o",209646}}})}}),
+q(30988,{awp=50004,coords={{82.6,28.2,84}},qgs={61796},races={24,25},rwp=70003,sourceQuests={30987}}),
 q(29664,{awp=50004,coords={{38.8,25.5,378}},qgs={54135},sourceQuests={29420},g={
 qo(1,{awp=50004,coords={{38.8,25.3,378}},providers={{"i",75008},{"o",209369}}}),
 qo(2,{awp=50004,coords={{38.8,23.5,378}},providers={{"i",75000},{"o",209801}}}),
@@ -54905,6 +55192,7 @@ qo(1,{awp=50004,coords={{39.8,88.4,378}},providers={{"n",60780}}}),
 s(267214,74601,{awp=50004,b=1,f=5,q=1}),
 s(267213,74600,{awp=50004,b=1,f=4,q=1}),
 s(267215,74602,{awp=50004,b=1,f=6,q=1})}}),
+q(31013,{awp=50004,coords={{48.2,70.6,85}},qgs={39605},races={24},sourceQuests={31012}}),
 q(29661,{awp=50004,coords={{65.6,42.6,378}},qgs={54975},sourceQuests={29521},g={
 qo(1,{awp=50004,coords={{61.5,47.8,378}},providers={{"o",209608}}}),
 s(267183,74570,{awp=50004,b=1,f=6,q=1}),
@@ -56646,9 +56934,7 @@ s(274480,90845,{awp=50004,b=1,f=6,lvl=90,minReputation={1270,42000},q=3}),
 s(274479,90844,{awp=50004,b=1,f=5,lvl=90,minReputation={1270,42000},q=3}),
 s(273832,89801,{awp=50004,b=1,f=4,lvl=90,minReputation={1270,42000},q=3}),
 s(273831,89800,{awp=50004,b=1,f=9,minReputation={1270,42000},q=3})}}),
-n(62737,{awp=50004,coords={{70.8,55.8,388}},sym={{"sub","common_vendor",65172}}})}}),
-h(-63,{awp=50004,g={
-i(74849,{awp=50004,q=1})}})}}),
+n(62737,{awp=50004,coords={{70.8,55.8,388}},sym={{"sub","common_vendor",65172}}})}})}}),
 m(390,{awp=50004,icon=618798,lore="The Vale of Eternal Blossoms is a zone at the center of the continent of Pandaria. The Vale has great cultural importance to both the pandaren and mogu, particularly the Mogu'shan Palace. Formerly known as a Cradle of Life and used as a place of experimentation by the Titans similar to Sholazar Basin and Un'goro Crater, this vale of golden flowers and trees served as the seat of power for the rulers of Pandaria, such as Emperor Shaohao and the mogu rulers following the death of Lei Shen.",maps={395,396},petBattleLvl=24,g={
 h(-12,{awp=50004,g={
 ach(6979,{awp=50004,g={
@@ -56777,10 +57063,10 @@ crit(21593,{achID=6560,awp=50004,id=67,pb=1})}}),
 h(-45,{awp=50004,g={
 q(30634,{awp=50004,coords={{56.6,43.6,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,sourceQuests={30632},u=2,g={
 i(80484,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,rwp=50400,u=2})}}),
-q(32016,{awp=50004,coords={{85.2,62.6,390}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;t.description="This will be removed when the Rise of the Thunder King phase begins."	end	end,qgs={64029},r=2,rwp=50200,u=2,g={
-cu(697,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;t.description="This will be removed when the Rise of the Thunder King phase begins."	end	end,rwp=50200,u=2})}}),
-q(32017,{awp=50004,coords={{62,20.6,390}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;t.description="This will be removed when the Rise of the Thunder King phase begins."	end	end,qgs={63996},r=1,rwp=50200,u=2,g={
-cu(697,{awp=50004,OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;t.description="This will be removed when the Rise of the Thunder King phase begins."	end	end,rwp=50200,u=2})}}),
+q(32016,{awp=50004,coords={{85.2,62.6,390}},cost={{"c",738,50}},isWeekly=1,qgs={64029},r=2,g={
+cu(697,{awp=50004})}}),
+q(32017,{awp=50004,coords={{62,20.6,390}},cost={{"c",738,50}},isWeekly=1,qgs={63996},r=1,g={
+cu(697,{awp=50004})}}),
 q(32900,{awp=50300,coords={{47.23,49.71,393}},description="Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",qgs={64101},r=2,u=53,g={
 i(98546,{awp=50300,b=1,q=4,u=53})}}),
 q(32901,{awp=50300,coords={{46.6,56.5,392}},description="Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",qgs={66998},r=1,u=53,g={
@@ -56789,6 +57075,14 @@ q(30630,{awp=50004,qgs={59964},r=2,sourceQuests={31512},u=2}),
 q(33008,{awp=50004,qgs={59964},r=1,sourceQuests={31511},u=2}),
 q(30635,{awp=50004,coords={{56.6,43.6,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,sourceQuests={30633,30634},u=2}),
 q(30638,{awp=50004,coords={{56.6,43.6,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,sourceQuests={30635,30636,30637,30654},u=2}),
+q(32719,{awp=50200,coords={{85.2,62.6,390}},cost={{"c",738,50}},isWeekly=1,qgs={64029},r=2,rwp=50400,u=2,g={
+cu(752,{awp=50200,rwp=50400,u=2})}}),
+q(32718,{awp=50200,coords={{62,20.6,390}},cost={{"c",738,50}},isWeekly=1,qgs={63996},r=1,rwp=50400,u=2,g={
+cu(752,{awp=50200,rwp=50400,u=2})}}),
+q(94404,_.ResolveQuestData({aqd=
+{awp=50503,coords={{85.2,62.6,390}},qgs={64029}},awp=50503,cost={{"c",738,50}},hqd=
+{awp=50503,coords={{62,20.6,390}},qgs={63996}},isWeekly=1,u=52,g={
+cu(752,{awp=50503,u=52})}})),
 q(30633,{awp=50004,coords={{56.6,43.6,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,sourceQuests={30632},u=2}),
 q(30636,{awp=50004,coords={{56.6,43.6,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2;else	t.u=50;t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,sourceQuests={30633,30634},u=2}),
 q(31369,{awp=100207,coords={{86.5,60.2,390}},isBreadcrumb=1,qgs={64033},r=2,rwp=50100,u=2}),
@@ -56873,8 +57167,7 @@ r(145308,{awp=50400,b=1,itemID=101767,learnedAt=600,q=2,requireSkill=185,u=54}),
 r(145305,{awp=50400,b=1,itemID=101765,q=2,requireSkill=185,u=54}),
 r(145307,{awp=50400,b=1,itemID=101766,q=2,requireSkill=185,u=54}),
 r(145310,{awp=50400,b=1,itemID=101769,q=2,requireSkill=185,u=54}),
-i(103624,{awp=50400,b=1,q=3,u=54}),
-i(76061,{awp=50004,b=1,q=3,u=50})}}),
+i(103624,{awp=50400,b=1,q=3,u=54})}}),
 o(213456,{awp=50004,coords={{67.7,44.2,390}},g={
 crit(19792,{achID=6855,awp=50004,id=8,u=50})}}),
 o(213334,{awp=50004,coords={{40.1,75.6,390}},g={
@@ -57401,6 +57694,9 @@ r(127115,{awp=50004,learnedAt=560,requireSkill=202,u=51}),
 r(127116,{awp=50004,learnedAt=525,requireSkill=202,u=51})}})}})}}),
 prof(356,{awp=50004,g={
 n(70398,{awp=50200,coords={{58.8,47,376}},description="Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies."})}}),
+prof(182,{awp=50004,g={
+n(65877,{awp=50004,coords={{53.6,51.2,376}},g={
+r(110413,{awp=50004,learnedAt=0,rank=8,requireSkill=182,rwp=80001,u=51})}})}}),
 prof(197,{awp=50004,g={
 n(57405,{awp=50004,coords={{62.6,59.6,376}},g={
 r(110426,{awp=50004,learnedAt=500,rank=8,requireSkill=197,rwp=80001,u=51}),
@@ -57863,6 +58159,7 @@ r(1257682,{awp=50004,b=1,itemID=254315,learnedAt=600,q=3,requireSkill=333,rwp=50
 n(73143,{awp=50004,r=2,u=2}),
 n(65167,{awp=50004,coords={{7.6,64.8,390}},OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2;else	t.u=50;end	end,r=2,rwp=50200,sym={{"sub","pvp_gear_base",5,-259,-296},{"merge"},{"pop"}},u=2}),
 n(64395,{awp=50004,coords={{53.6,51.2,376}},g={
+i(74853,{awp=50004,cost={{"c",402,1}},q=1}),
 heir(86468,{awp=50004,b=2,cost={{"c",402,50}},f=9,learnedAt=1,q=7,requireSkill=185,sourceID=271694,sourceQuests={31820}}),
 i(86425,{awp=50004,b=1,cost={{"c",402,50}},q=3,sourceQuests={31521}}),
 toy(88801,{awp=50004,b=1,cost={{"c",402,40}},q=1}),
@@ -57879,4 +58176,4 @@ toy(88802,{awp=50004,b=1,cost=10000000,q=1}),
 toy(91904,{awp=50004,b=1,cost=10000000,q=1})}}),
 n(59583,{awp=50004,coords={{55.6,49.8,376},{56.2,47,376}},sym={{"select","npcID",56705},{"pop"}}})}}),
 h(-63,{awp=50004,g={
-i(74842,{awp=50004,q=1})}})}})}})};
+i(74842,{awp=50004,description="Drops from Virmen.",q=1})}})}})}})};

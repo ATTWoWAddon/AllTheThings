@@ -9,14 +9,6 @@ WARBAND = createHeader({
 	},
 });
 
-CAMPSITES = createHeader({
-	readable = "Campsites",
-	icon = [[~_.asset("Category_Campsites")]],
-	text = {
-		en = [[~ACCOUNT_LEVEL_SCENE]],
-	},
-});
-
 root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		-- TWW

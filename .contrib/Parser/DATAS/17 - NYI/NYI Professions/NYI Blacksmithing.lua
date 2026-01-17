@@ -1217,6 +1217,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(218100),	-- Plans: <Optional Reagnt A>
 					i(218101),	-- Plans: <PVP Alloy>
 				})),
+
+				-- 11.2.7
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+					r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
+				})),
 			}),
 		}),
 	}),

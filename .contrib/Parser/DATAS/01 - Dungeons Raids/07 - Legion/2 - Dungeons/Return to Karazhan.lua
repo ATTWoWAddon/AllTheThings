@@ -14,6 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				q(44684, {	-- Corruption Runs Deep
 					["qg"] = 114631,	-- Archmage Karlain
 					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
+					["groups"] = { i(141878) },	-- Arcane-Infused Vial (PQI!)
 				}),
 				q(44764, {	-- Demon in Disguise
 					["sourceQuest"] = 44686,	-- Thought Collection
@@ -31,9 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
-					["groups"] = {
-						i(142460),	-- Violet Seal of the Archmage
-					},
+					["groups"] = { i(142460) },	-- Violet Seal of the Archmage
 				}),
 				q(44683, {	-- Holding the Lines
 					["qg"] = 114310,	-- Archmage Khadgar
@@ -44,9 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["description"] = "You must complete the full quest chain before the quest item will drop from the boss.",
 					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
 					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
-					["groups"] = {
-						i(142469),	-- Violet Seal of the Grand Magus
-					},
+					["groups"] = { i(142469) },	-- Violet Seal of the Grand Magus
 				}),
 				q(44685, {	-- Reclaiming the Ramparts
 					["sourceQuests"] = {
@@ -85,9 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["qg"] = 18255,	-- Mage Darius
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
-					["groups"] = {
-						i(142468),	-- Violet Seal of the Archmage
-					},
+					["groups"] = { i(142468) },	-- Violet Seal of the Archmage
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
 					["sourceQuest"] = 44733,	-- The Power of Corruption
@@ -198,9 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
-					["groups"] = {
-						i(138798),	-- Illusion: Sunfire (ILLUSION!)
-					},
+					["groups"] = { i(138798) },	-- Illusion: Sunfire (ILLUSION!)
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
@@ -521,7 +514,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				n(114895, {	-- Nightbane
-					["description"] = "This boss is only available if you do a speed run.",
+					["description"] = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
 					["cr"] = 115038,	-- Image of Medivh
 					["groups"] = {
 						i(142552),	-- Smoldering Ember Wyrm (MOUNT!)

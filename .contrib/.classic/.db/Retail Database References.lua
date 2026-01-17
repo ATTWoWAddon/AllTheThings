@@ -28,6 +28,7 @@
 -- #IMPORT: 21 - Holidays\\
 
 -- Expansion Features
+-- #IMPORT: 06 - Expansion Features\\01 - Classic\\
 -- #IMPORT: 06 - Expansion Features\\02 - Burning Crusade\\
 -- #IMPORT: 06 - Expansion Features\\03 - Wrath of the Lich King\\
 -- #IMPORT: 06 - Expansion Features\\04 - Cataclysm\\

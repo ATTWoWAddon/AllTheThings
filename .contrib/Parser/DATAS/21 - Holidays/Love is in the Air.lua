@@ -26,7 +26,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "情人节",
 		-- TODO: tw = "",
 		-- #endif
 	},
@@ -1048,7 +1048,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "n", 16005 },	-- Lieutenant Jocryn Heldric
 				{ "i", 21921 },	-- Carefully Penned Note
 			},
-			["coord"] = { 57, 59.8, STORMWIND_CITY },
+			["coord"] = { 57.0, 59.8, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1058,7 +1058,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "n", 16009 },	-- Tormek Stoneriver
 				{ "i", 21920 },	-- Creased Letter
 			},
-			["coord"] = { 32.4, 66, IRONFORGE },
+			["coord"] = { 32.4, 66.0, IRONFORGE },
 			["timeline"] = { REMOVED_3_3_0 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -1069,7 +1069,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "n", 16001 },	-- Aldris Fourclouds
 				{ "i", 21925 },	-- Immaculate Letter
 			},
-			["coord"] = { 42, 42, DARNASSUS },
+			["coord"] = { 42.0, 42.0, DARNASSUS },
 			["timeline"] = { REMOVED_3_3_0 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -2016,7 +2016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		})),
 		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Guo Plumpaw
-			["coord"] = { 3357, 50.9, ELWYNN_FOREST },
+			["coord"] = { 33.57, 50.9, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(210841),	-- Buttered Oysters

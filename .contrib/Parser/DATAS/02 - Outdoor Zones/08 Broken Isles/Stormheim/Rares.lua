@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(RARES, sharedData({ 
+			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
 				-- #IF BEFORE 12.0.0
 				["isDaily"] = true, -- Daily during Legion Remix 2025
@@ -15,7 +15,7 @@ root(ROOTS.Zones, {
 				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
 					n(109083, {	-- Houndmaster Payne
 						["questID"] = 42858,
-						["coord"] = { 72, 59.8, STORMHEIM },
+						["coord"] = { 72.0, 59.8, STORMHEIM },
 						["crs"] = { 109089 },	-- Houndmaster Payne
 						["description"] = "Patrols inside of Greywatch. Horde players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Batmaster Claud|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
 					}),

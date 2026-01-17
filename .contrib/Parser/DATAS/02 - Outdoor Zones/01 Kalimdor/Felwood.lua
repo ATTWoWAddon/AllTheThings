@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
 					["questID"] = 81883,	-- Aeonas: Trust in a Friend HQT
 					["sourceQuest"] = 81879,	-- Aeonas: Journey to Felwood HQT
-					["coord"] = { 45, 52, FELWOOD },
+					["coord"] = { 45.0, 52.0, FELWOOD },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11617 },	-- Eridan's Supplies
 								{ "i", 11169 },	-- Book of Aquor
 							},
-							["coord"] = { 70, 49, TANARIS },
+							["coord"] = { 70.0, 49.0, TANARIS },
 							["cr"] = 9453,	-- Aquementas
 						}),
 						-- #if NOT ANYCLASSIC
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["hordeQuestData"] = q(4102, {	-- Cleansing Felwood (H)
 						["qg"] = 9529,	-- Maybess Riverbreeze
-						["coord"] = { 46.8, 83, FELWOOD },
+						["coord"] = { 46.8, 83.0, FELWOOD },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4462, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 174684 },	-- Corrupted Night Dragon
-					["coord"] = { 35.1, 59, FELWOOD },
+					["coord"] = { 35.1, 59.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 10042 },	-- Corrupted Saber
 								{ "i", 12565 },	-- Winna's Kitten Carrier
 							},
-							["coord"] = { 32, 66, FELWOOD },
+							["coord"] = { 32.0, 66.0, FELWOOD },
 							["description"] = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
 						}),
 					},
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4401, {	-- Corrupted Songflower
 					["provider"] = { "o", 171939 },	-- Corrupted Songflower
-					["coord"] = { 46, 85.2, FELWOOD },
+					["coord"] = { 46.0, 85.2, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -732,7 +732,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4446, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174607 },	-- Corrupted Whipper Root
-					["coord"] = { 43, 46.9, FELWOOD },
+					["coord"] = { 43.0, 46.9, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -754,7 +754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(996, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174600 },	-- Corrupted Windblossom
-					["coord"] = { 57.5, 20, FELWOOD },
+					["coord"] = { 57.5, 20.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(998, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174599 },	-- Corrupted Windblossom
-					["coord"] = { 55.8, 7, FELWOOD },
+					["coord"] = { 55.8, 7.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4115, {	-- Corrupted Windblossom
 					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
-					["coord"] = { 50, 80, FELWOOD },
+					["coord"] = { 50.0, 80.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -798,7 +798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4221, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
-					["coord"] = { 39, 59.1, FELWOOD },
+					["coord"] = { 39.0, 59.1, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5646 },	-- Vial of Blessed Water
 								{ "i", 11682 },	-- Eridan's Vial
 							},
-							["coord"] = { 39, 84, DARNASSUS },
+							["coord"] = { 39.0, 84.0, DARNASSUS },
 						}),
 					},
 				}),
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 221636,	-- Gregory <Truthbearer>
 					["questID"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
 					["sourceQuest"] = 81883,	-- Aeonas: Trust in a Friend HQT
-					["coord"] = { 44.6, 52, FELWOOD },
+					["coord"] = { 44.6, 52.0, FELWOOD },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -1453,7 +1453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
 					["sourceQuest"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
 					["qg"] =  221636,	-- Gregory <Truthbearer>
-					["coord"] = { 44.6, 52, FELWOOD },
+					["coord"] = { 44.6, 52.0, FELWOOD },
 					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -1731,7 +1731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5891, {	-- Salve via Disenchanting (1/2)
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
@@ -1746,7 +1746,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4112, {	-- Salve via Disenchanting (2/2)
 					["sourceQuest"] = 4112,	-- Salve via Disenchanting (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5889, {	-- Salve via Gathering (1/2)
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4110, {	-- Salve via Gathering (2/2)
 					["sourceQuest"] = 5889,	-- Salve via Gathering (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
@@ -1853,7 +1853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5887, {	-- Salve via Hunting (1/2)
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
@@ -1867,7 +1867,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4108, {	-- Salve via Hunting (2/2)
 					["sourceQuest"] = 5887,	-- Salve via Hunting (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
@@ -1913,7 +1913,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5888, {	-- Salve via Mining (1/2)
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
@@ -1928,7 +1928,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4109, {	-- Salve via Mining (2/2)
 					["sourceQuest"] = 5888,	-- Salve via Mining (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
 					["requireSkill"] = MINING,
@@ -1975,7 +1975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5890, {	-- Salve via Skinning (1/2)
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
@@ -1990,7 +1990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4111, {	-- Salve via Skinning (2/2)
 					["sourceQuest"] = 5890,	-- Salve via Skinning (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
@@ -2309,7 +2309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 221587 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
 						{ "i", 221519 },	-- Mannoroc Orb
 					},
-					["coord"] = { 45, 52, FELWOOD },
+					["coord"] = { 45.0, 52.0, FELWOOD },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -2344,7 +2344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_THREE, q(81885, {	-- The Ritual
 					["sourceQuest"] = 81790,	-- Materials of Significance
 					["qg"] =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["coord"] = { 45, 52, FELWOOD },
+					["coord"] = { 45.0, 52.0, FELWOOD },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -2367,6 +2367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/9 Irontree Shredder slain
 							["provider"] = { "n", 48259 },	-- Irontree Shredder
 						}),
+						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
 					},
 				}),
 				q(28256, {	-- The Skull of Gul'dan
@@ -2396,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82043, {	-- The Wild Gods (1/2)
 					["qg"] = 222408,	-- Shadowtooth Emissary
-					["coord"] = { 51.4, 82, FELWOOD },
+					["coord"] = { 51.4, 82.0, FELWOOD },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { THE_HINTERLANDS, RAZORFEN_DOWNS },
 					["cost"] = {{ "i", 221261, 1 }},	-- Wildwhisper Draught
@@ -2633,7 +2634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12567 },	-- Filled Flasket
 								{ "i", 12566 },	-- Hardened Flasket
 							},
-							["coord"] = { 32, 66, FELWOOD },
+							["coord"] = { 32.0, 66.0, FELWOOD },
 						}),
 					},
 				}),
@@ -2992,7 +2993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(222408, {	-- Shadowtooth Emissary
 					["sourceQuest"] = 82044,	-- The Wild Gods (2/2)
-					["coord"] = { 51.4, 82, FELWOOD },
+					["coord"] = { 51.4, 82.0, FELWOOD },
 					["timeline"] = { ADDED_1_15_2 },
 					["lvl"] = 40,
 					["groups"] = {
@@ -3061,6 +3062,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = 1500000,	-- 150g
 						}),
+					},
+				}),
+				n(48258, {	-- Willard Harrington <Blacksmithing Supplies>
+					["coord"] = { 61.6, 25.8, FELWOOD },
+					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
 					},
 				}),
 			}),

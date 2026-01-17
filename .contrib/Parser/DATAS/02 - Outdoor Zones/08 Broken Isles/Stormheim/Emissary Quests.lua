@@ -49,6 +49,9 @@ root(ROOTS.Zones, {
 					["repeatable"] = true,
 					["groups"] = {
 						i(152106, {	-- Valarjar Strongbox
+							i(151462, {	-- Spoiled Sample (QS!)
+								["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
+							}),
 							i(147805),	-- Valarjar Stormwing (MOUNT!)
 						}),
 						un(REMOVED_FROM_GAME, i(146901, {	-- Valarjar Strongbox

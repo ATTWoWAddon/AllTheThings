@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188344 },	-- Chydrass
-					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
+					["coord"] = { 25.0, 56.1, THE_WAKING_SHORES },
 					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
 					["groups"] = {
 						i(201925),	-- Obsidian Genealogy (QI!)

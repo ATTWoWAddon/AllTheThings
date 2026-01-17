@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- Summoned Voidwalker slain
 							["provider"] = { "i", 23732 },	-- Voidstone
 							["cr"] = 5676,	-- Summoned Voidwalker
-							["coord"] = { 26, 15, GHOSTLANDS },
+							["coord"] = { 26.0, 15.0, GHOSTLANDS },
 						}),
 						-- #if BEFORE CATA
 						SUMMON_VOIDWALKER,

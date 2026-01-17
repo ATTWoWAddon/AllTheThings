@@ -66,15 +66,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 50.0, 48.4, AZSUNA },
 			}),
 			q(38407, {	-- Bottled Up
-				["provider"] = { "i", 122699 },	-- Okuna's Message
+				["provider"] = { "i", 122699 },	-- Okuna's Message (QS!)
 				["coord"] = { 49.9, 40.5, AZSUNA },
-				["crs"] = {
-					107439,	-- Salteye Beastfeeder
-					113866,	-- Salteye Clam Vanquisher
-					88099,	-- Salteye Hookblade
-					109174,	-- Salteye Spearguard
-					88101,	-- Salteye Tide-Shaman
-				},
 			}),
 			q(38203, {	-- Challiane Vineyards
 				["qgs"] = {

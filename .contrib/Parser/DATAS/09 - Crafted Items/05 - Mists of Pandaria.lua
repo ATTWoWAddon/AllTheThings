@@ -19,8 +19,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(562440, {	-- Bamboo Lumber
-			i(251763),	-- Bamboo Lumber
+		o_repeated({	-- Bamboo Lumber
+			["maps"] = {
+				DREAD_WASTES,
+				ISLE_OF_THUNDER,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+				NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+			["groups"] = {
+				-- Objects
+				o(568305),	-- [Dread Wastes/Townlong Steppes]
+				o(568405),	-- [Isle of Thunder]
+				o(567867),	-- [Krasarang Wilds/Valley of the Four Winds]
+				o(568132),	-- [Kun-Lai Summit]
+				o(562440),	-- [The Jade Forest]
+				o(568199),	-- [Timeless Isle]
+				o(568137),	-- [Townlong Steppes]
+				o(567726),	-- [Vale of Eternal Blossoms/Vale of Eternal Blossoms]
+				o(567840),	-- [Valley of the Four Winds]
+				-- Drops
+				i(251763),	-- Bamboo Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -656,6 +681,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(74724),	-- Enchant Weapon - Jade Spirit
 			i(74728),	-- Enchant Weapon - River's Song
 			i(74723),	-- Enchant Weapon - Windsong
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,i(254314, {["timeline"] = {ADDED_5_5_1}})),	-- Enchant Weapon - Tyranny
+			-- #endif
 		}),
 	}),
 	prof(ENGINEERING, {

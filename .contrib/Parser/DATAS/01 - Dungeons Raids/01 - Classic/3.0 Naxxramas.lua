@@ -4180,6 +4180,13 @@ applyclassicphase(PHASE_SIX,
 										{ "i", 237381, 1 },	-- Desecrated Ring
 									},
 								}),
+								i(236013, {	-- Ring of the Dreadnaught
+									["cost"] = {
+										{ "i", 12938, 1 },	-- Blood of Heroes
+										{ "i", 12363, 3 },	-- Arcane Crystal
+										{ "i", 237381, 1 },	-- Desecrated Ring
+									},
+								}),
 							},
 						}),
 						n(ZONE_DROPS, {

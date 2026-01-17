@@ -8,8 +8,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -152,8 +150,8 @@ namespace ATT
         public static List<object> ALL_RACES;
         public static List<object> ALL_CLASSES;
 
-        private static readonly ConcurrentDictionary<string, ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>> SOURCED =
-            new ConcurrentDictionary<string, ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>>();
+        private static readonly ConcurrentDictionary<string, ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>> SOURCED =
+            new ConcurrentDictionary<string, ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>>();
 
         // TODO: clean all these separate collections into the above
         /// <summary>
@@ -328,11 +326,11 @@ namespace ATT
         /// <summary>
         /// Performs a ReadKey if the parser is not in an Automated run
         /// </summary>
-        public static void WaitForUser()
+        public static void WaitForUser(string message = "Press Enter once you have resolved the issue.")
         {
             if (!Automated)
             {
-                Trace.WriteLine("Press Enter once you have resolved the issue.");
+                Trace.WriteLine(message);
                 Console.ReadKey();
             }
         }
@@ -824,7 +822,7 @@ namespace ATT
             string[] sourcedIDs = Config["SOURCED"];
             foreach (string id in sourcedIDs)
             {
-                SOURCED.TryAdd(id, new ConcurrentDictionary<long, HashSet<IDictionary<string, object>>>());
+                SOURCED.TryAdd(id, new ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>>());
             }
         }
 

@@ -49,7 +49,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(525),	-- Verdant Legend <Name>
 			}),
 			-- Fashion
-			ach(19276),	-- Verdant Vogue
+			ach(19276, { ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }),	-- Verdant Vogue
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 			i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)

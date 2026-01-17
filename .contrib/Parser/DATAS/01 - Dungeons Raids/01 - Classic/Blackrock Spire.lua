@@ -154,7 +154,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5068, {	-- Breastplate of Bloodthirst
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
@@ -194,7 +194,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5063, {	-- Cap of the Scarlet Savant
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { STRATHOLME },
 				["cost"] = {
@@ -240,7 +240,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "n", 9565 },	-- Mayara Brightwing
 					{ "i", 12437 },	-- Ridgewell's Crate
 				},
-				["coord"] = { 84.8, 69, BURNING_STEPPES },
+				["coord"] = { 84.8, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -256,7 +256,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4764, {	-- Doomrigger's Clasp
 				["sourceQuest"] = 4766,	-- Mayara Brightwing
 				["qg"] = 9565,	-- Mayara Brightwing
-				["coord"] = { 84.8, 69, BURNING_STEPPES },
+				["coord"] = { 84.8, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -581,7 +581,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5067, {	-- Leggings of Arcana
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["qg"] = 10637,	-- Malyfous Darkhammer
-				["coord"] = { 61, 38.8, WINTERSPRING },
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
@@ -672,7 +672,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					4764,	-- Doomrigger's Clasp [NOT SURE, but this quest constantly resets to Not Complete on Blizzard's Side.]
 				},
 				["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
-				["coord"] = { 74, 30, STORMWIND_CITY },
+				["coord"] = { 74.0, 30.0, STORMWIND_CITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
@@ -707,7 +707,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
 				["qg"] = 9563,	-- Ragged John
-				["coord"] = { 65, 23.6, BURNING_STEPPES },
+				["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -754,7 +754,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4701, {	-- Put Her Down
 				["qg"] = 9562,	-- Helendis Riverhorn
-				["coord"] = { 85.6, 69, BURNING_STEPPES },
+				["coord"] = { 85.6, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 55,
@@ -833,7 +833,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(4768, {	-- The Darkstone Tablet
 				["sourceQuest"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
 				["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
-				["coord"] = { 3, 47.6, BADLANDS },
+				["coord"] = { 3.0, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 57,
@@ -922,7 +922,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(8182, {	-- The Hand of Rastakhan
 				["sourceQuest"] = 8181,	-- Confront Yeh'kinya
 				["qg"] = 10460,	-- Prospector Ironboot
-				["coord"] = { 66.8, 24, TANARIS },
+				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 			}),
@@ -947,9 +947,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 						["coords"] = {
 							-- #if AFTER WRATH
-							{ 66.9, 9, EASTERN_PLAGUELANDS },
+							{ 66.9, 9.0, EASTERN_PLAGUELANDS },
 							-- #else
-							{ 72.4, 13, EASTERN_PLAGUELANDS },
+							{ 72.4, 13.0, EASTERN_PLAGUELANDS },
 							-- #endif
 						},
 					}),

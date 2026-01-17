@@ -1,17 +1,6 @@
 11.2.7.63642
-ach(42192),	-- Snowball Fight!
-ach(51753),	-- Azsuna Matata
-ach(61023),	-- [DNT] Exalted with a Dracthyr Player Faction
 ach(61516),	-- Radiant Singer
-ach(61553),	-- Dynamic Flight Power - Second Wind (Granted in Script 101809)
-ach(61554),	-- Dynamic Flight Power - Aerial Halt (Granted in Script 101809)
-11.2.7.64011
-ach(61862),	-- <DNT> Brewgarden Tutorial Completed
-ach(61890),	-- <Hidden> Housing Early Access [DNT]
 12.0.0.63534
-ach(41287),	-- Windrunner Spire
-ach(41288),	-- Heroic: Windrunner Spire
-ach(41291),	-- Mythic: Windrunner Spire
 ach(41293),	-- The Restless Heart kills (Normal Windrunner Spire) \\ [PH] Restless Heart kills (Normal Windrunner Spire)
 ach(41294),	-- The Restless Heart kills (Heroic Windrunner Spire) \\ [PH] Restless Heart kills (Heroic Windrunner Spire)
 ach(41295),	-- The Restless Heart kills (Mythic Windrunner Spire) \\ [PH] Restless Heart kills (Mythic Windrunner Spire)
@@ -20,9 +9,6 @@ ach(41803),	-- For Zul'Aman! \\ Living Amani Legend
 ach(41804),	-- One Does Not Simply Walk Into Harandar \\ Harandar
 ach(41805),	-- Arator's Journey
 ach(41806),	-- Breaching the Voidstorm \\ Voidstorm
-ach(41960),	-- Murder Row
-ach(41961),	-- Heroic: Murder Row
-ach(41962),	-- Mythic: Murder Row
 ach(42045),	-- Midnight
 ach(42117),	-- The War of Light and Shadow
 ach(42278),	-- The Empty Cradle \\ Day of the Titan
@@ -34,37 +20,13 @@ ach(61212),	-- Magisters' Terrace
 ach(61213),	-- Heroic: Magisters' Terrace
 ach(61214),	-- Mythic: Magisters' Terrace
 ach(61219),	-- No Time to Paws
-ach(61346),	-- We Will, In Fact, See It Again
-ach(61366),	-- The Voidspire \\ Voidspire
-ach(61367),	-- March on Quel'Danas
-ach(61368),	-- Heroic: The Voidspire \\ Heroic: Voidspire
-ach(61369),	-- Heroic: March on Quel'Danas
-ach(61370),	-- Mythic: The Voidspire \\ Mythic: Voidspire
-ach(61371),	-- Mythic: March on Quel'Danas
-ach(61372),	-- Mythic: Imperator Averzian
-ach(61373),	-- Mythic: Vorasius
-ach(61374),	-- Mythic: Fallen-King Salhadaar
-ach(61375),	-- Mythic: Vaelgor & Ezzorak
-ach(61376),	-- Mythic: Lightblinded Vanguard
-ach(61377),	-- Mythic: Crown of the Cosmos
-ach(61378),	-- Mythic: Belo'ren, Child of Al'ar \\ Mythic: Belo'ren
-ach(61379),	-- Mythic: Midnight Falls
-ach(61380),	-- Glory of the Midnight Raider
-ach(61381),	-- Eggsistential Crisis \\ Belo'ren Achievement
 ach(61444),	-- Vicious Saddle (43)
 ach(61445),	-- Vicious Saddle (43)
 ach(61452),	-- Sojourner of Zul'Aman
 ach(61453),	-- Making an Amani Out of You
-ach(61454),	-- Falling Between The Quacks
 ach(61455),	-- Shadowpine Scattered
 ach(61456),	-- Die in Lordaeron or Undercity
-ach(61487),	-- Chimaerus, the Undreamt God
-ach(61488),	-- Heroic: Chimaerus, the Undreamt God
-ach(61489),	-- Mythic: Chimaerus, the Undreamt God
 ach(61490),	-- Midnight Season 1: Champion of the Dawn
-ach(61491),	-- Ahead of the Curve: Chimaerus, the Undreamt God
-ach(61492),	-- Cutting Edge: Chimaerus, the Undreamt God
-ach(61493),	-- Hall of Fame: Chimaerus, the Undreamt God
 12.0.0.63724
 ach(61507),	-- A Bloody Song
 ach(61508),	-- Voidscar Arena
@@ -73,7 +35,6 @@ ach(61510),	-- Mythic: Voidscar Arena
 ach(61511),	-- Charonus kills (Normal Voidscar Arena)
 ach(61512),	-- Charonus kills (Heroic Voidscar Arena)
 ach(61513),	-- Charonus kills (Mythic Voidscar Arena)
-ach(61514),	-- It's Treason Then
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
 ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
 ach(61521),	-- Skyriding Glyphs: The Shining Span
@@ -141,40 +102,13 @@ ach(61601),	-- Mythic: The Rookery Guild Run
 ach(61602),	-- Mythic: The Stonevault Guild Run
 ach(61603),	-- Mythic: Operation: Floodgate Guild Run
 ach(61604),	-- Mythic: Eco-Dome Al'dani Guild Run (copy)
-ach(61605),	-- Mythic: Den of Nalorakk Guild Run
-ach(61606),	-- The Voidspire Guild Run
-ach(61607),	-- Heroic: The Voidspire Guild Run
-ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
-ach(61609),	-- March on Quel'Danas Guild Run
-ach(61610),	-- Heroic: March on Quel'Danas Guild Run
-ach(61611),	-- Mythic: Midnight Falls Guild Run
-ach(61612),	-- Chimaerus the Undreamt God Guild Run \\ The Dreamrift Guild Run
-ach(61613),	-- Heroic: Chimaerus the Undreamt God Guild Run \\ Heroic: The Dreamrift Guild Run
-ach(61614),	-- Mythic: Chimaerus the Undreamt God Guild Run
 ach(61615),	-- Mythic: Magisters' Terrace Guild Run
-ach(61616),	-- Mythic: Maisara Caverns Guild Run
-ach(61617),	-- Mythic: Murder Row Guild Run
 ach(61618),	-- Mythic: Nexus-Point Xenas Guild Run
 ach(61619),	-- Mythic: The Blinding Vale Guild Run
 ach(61620),	-- Mythic: Voidscar Arena Guild Run
 ach(61621),	-- Mythic: Windrunner Spire Guild Run
-ach(61622),	-- Hall of Fame: Crown of the Cosmos
-ach(61623),	-- Hall of Fame: Midnight Falls
-ach(61624),	-- Ahead of the Curve: Crown of the Cosmos
-ach(61625),	-- Cutting Edge: Crown of the Cosmos
-ach(61626),	-- Ahead of the Curve: Midnight Falls
-ach(61627),	-- Cutting Edge: Midnight Falls
-ach(61635),	-- Voidspire: Weapons of the Void \\ Voidspire: Wing 1
-ach(61636),	-- Voidspire: Fanatics of the Light \\ Voidspire: Wing 2
-ach(61637),	-- Voidspire: Crown of the Cosmos \\ Voidspire: Wing 3
-ach(61638),	-- Den of Nalorakk
-ach(61639),	-- Maisara Caverns
 ach(61640),	-- Nexus-Point Xenas
 ach(61641),	-- The Blinding Vale
-ach(61642),	-- Heroic: Den of Nalorakk
-ach(61643),	-- Mythic: Den of Nalorakk
-ach(61644),	-- Heroic: Maisara Caverns
-ach(61645),	-- Mythic: Maisara Caverns
 ach(61646),	-- Heroic: Nexus-Point Xenas
 ach(61647),	-- Mythic: Nexus-Point Xenas
 ach(61648),	-- Heroic: The Blinding Vale
@@ -269,7 +203,6 @@ ach(61832),	-- Midnight Delves: Tier 1
 ach(61835),	-- Midnight Delves: Tier 2
 ach(61836),	-- Midnight Delves: Tier 3
 ach(61839),	-- Midnight Pathfinder
-ach(61843),	-- Quel'Dressed
 ach(61854),	-- The Midnight Explorer
 ach(61855),	-- Explore Eversong Woods \\ Explore Eversong Woods - Placeholder
 ach(61856),	-- Explore Zul'Aman \\ Explore Zul'Aman - Placeholder
@@ -292,7 +225,6 @@ ach(61900),	-- Shadowguard Point Discoveries
 ach(61901),	-- Midnight: Leave No Treasure Unfound
 ach(61906),	-- Glory of the Midnight Delver
 ach(61910),	-- Mrglgrgl of Grglmrgl \\ Hero of Murlocs
-ach(61911),	-- Ready, Set, Snap!
 ach(61912),	-- Anchoring the Defense
 ach(61913),	-- A Singular Problem
 ach(61916),	-- Rage of the Ren'dorei \\ Void Elf Demon Hunter
@@ -307,7 +239,6 @@ ach(61592),	-- Keystone Victor: Pit of Saron
 ach(61593),	-- Keystone Victor: Seat of the Triumvirate
 ach(61594),	-- Keystone Victor: Skyreach
 ach(61922),	-- Ninety Percent is Good Enough
-ach(61936),	-- Aura Farming
 ach(61937),	-- Abundance: Artisan of Mausoloa
 ach(61938),	-- Abundance: Artisan of Loaknit
 ach(61939),	-- Abundance: Artisan of Floaret
@@ -326,10 +257,8 @@ ach(61960),	-- Treasures of Eversong Woods \\ Treasures of Eversong Woods (Midni
 ach(61961),	-- Runestone Rush
 12.0.0.64228
 ach(62057),	-- Midnight: The Highest Peaks
-ach(62058),	-- Hungry Hungry Hatchlings
 ach(62104),	-- Midnight Lore Hunter
 ach(62105),	-- Lysikas Would Be Proud
-ach(62106),	-- The Only Winning Move Is Not To Play
 ach(62107),	-- Mandatory Training
 ach(62108),	-- Training with Patience
 ach(62109),	-- Training with Patience
@@ -431,7 +360,7 @@ ach(62180),	-- Prey: Dominating the Void (Nightmare)
 ach(62181),	-- Prey: Chasing Death (Nightmare)
 ach(62182),	-- Prey: No Rest for the Wretched (Nightmare)
 ach(62183),	-- Prey: A Thorn in the Side (Nightmare)
-ach(62184),	-- Prey: Breaking the Blade Nightmare)
+ach(62184),	-- Prey: Breaking the Blade (Nightmare) \\ Prey: Breaking the Blade Nightmare)
 ach(62222),	-- Abyss Anglers: The Amani Way
 ach(62223),	-- Alchemy-on-Demand
 12.0.0.64741
@@ -471,3 +400,52 @@ ach(62269),	-- Altar of Blessings: Amani Curious
 ach(62270),	-- Altar of Blessings: One for Altar
 ach(62271),	-- Abyss Anglers: Trench Berserker
 ach(62272),	-- Abyss Anglers: Certified Depthdiver
+12.0.1.64889
+ach(62273),	-- Echoes of Midnight
+ach(62288),	-- Eversong Woods: The Highest Peaks
+ach(62289),	-- Zul'Aman: The Highest Peaks
+ach(62290),	-- Harandar: The Highest Peaks
+ach(62291),	-- Voidstorm: The Highest Peaks
+ach(62292),	-- Adventurer Dawncrests earned
+ach(62293),	-- Veteran Dawncrests earned
+ach(62294),	-- Champion Dawncrests earned
+ach(62295),	-- Hero Dawncrests earned
+ach(62296),	-- Myth Dawncrests earned
+ach(62324),	-- Abundance: Loa of all Trades
+ach(62325),	-- Abundance: Treasures Aplenty
+ach(62326),	-- Abundance: Golden Opportunities
+ach(62329),	-- Abundance: Squash the Competition
+ach(62330),	-- Abundance: One Bite at a Time
+ach(62331),	-- Abundance: Drops of Prosperity
+ach(62332),	-- Abundance: Dundun's Favored
+ach(62333),	-- Abundance: Harvester
+ach(62336),	-- Abundance: Contributer
+ach(62337),	-- Abundance: Professional
+ach(62338),	-- Abundance: Artisan
+ach(62339),	-- Abundance: Gambler
+ach(62340),	-- Abundance: Investor
+ach(62341),	-- Abundance: Ain't Dun Till It's Dun
+ach(62342),	-- Abyss Anglers: The Finest of Fish
+ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
+ach(62351),	-- Preying For Midnight
+ach(62352),	-- Nothing to See Here
+ach(62357),	-- Classically Trained Lumberjack
+ach(62358),	-- Outlandish Lumberjack
+ach(62359),	-- Wrathful Lumberjack
+ach(62360),	-- Cataclysmic Lumberjack
+ach(62361),	-- Mist-Shrouded Lumberjack
+ach(62362),	-- Lumberjack Warlord
+ach(62363),	-- Legion Lumberjack
+ach(62364),	-- Azeroth's Lumberjack
+ach(62365),	-- Shadowy Lumberjack
+ach(62366),	-- Draconic Lumberjack
+ach(62369),	-- The Lumberjack Within
+ach(62370),	-- Midnight Lumberjack
+ach(62371),	-- Couponing for Beginners
+ach(62373),	-- Coupon Collector
+ach(62374),	-- You Get The Best Deals Anywhere
+ach(62375),	-- Buying in Bulk
+ach(62376),	-- Extreme Couponing
+ach(62377),	-- A Fist Full of Coupons
+ach(62378),	-- A Few Coupons More
+ach(62383),	-- Gotta Hunt Them All

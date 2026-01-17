@@ -1163,6 +1163,12 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3188, {	-- Trub'ul (PET!)
 				["displayID"] = 103091,
 			}),
+			-- #if AFTER 11.2.5
+			-- Without SpeciesID Attached
+			i(188837, {	-- Blinky Egg (PET!)
+				["displayID"] = 101380,
+			}),
+			-- #endif
 		})),
 
 		-- 9.2.0
@@ -1559,41 +1565,86 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4746),	-- Sooty Croach (PET!)
 			pet(4738),	-- Status Symbol (PET!)
 			pet(4743),	-- Swabbie (PET!)
-			--
-			i(231628, {	-- Bawkinator 2000 (PET!)
+			-- Only SpeciesID
+			pet(4676, {	-- Bawkinator 2000 (PET!)
 				["displayID"] = 75333,
 			}),
-			i(231627, {	-- Black Cave Crab (PET!)
+			pet(4677, {	-- Black Cave Crab (PET!)
 				["displayID"] = 120695,
 			}),
-			-- #if BEFORE 11.2.0
-			i(231757, {	-- Cauldrone (PET!) TODO: [wrong ItemID]
+			pet(4671, {	-- Cauldrone (PET!)
 				["displayID"] = 47711,
 			}),
-			-- #endif
-			i(231760, {	-- Crunchy (PET!)
+			pet(4673, {	-- Crunchy (PET!)
 				["displayID"] = 54848,
 			}),
-			-- i(231762, {	-- Dosh (PET!) TODO: [wrong ItemID]
-			-- 	["displayID"] = 123032,
-			-- }),
-			i(231758, {	-- Finnity (PET!)
+			pet(4674, {	-- Dosh (PET!)
+				["displayID"] = 123032,
+			}),
+			pet(4672, {	-- Finnity (PET!)
 				["displayID"] = 74800,
 			}),
-			-- i(231763, {	-- FO-MO Mark II (PET!) TODO: [wrong ItemID]
-			-- 	["displayID"] = 111667,
-			-- }),
+			pet(4675, {	-- FO-MO Mark II (PET!)
+				["displayID"] = 111667,
+			}),
+			pet(4670, {	-- Hermes
+				["displayID"] = 120709,
+			}),
+			pet(4665, {	-- Yellow Tropical Frog (PET!)
+				["displayID"] = 122963,
+			}),
+			-- With SpeciesID Attached
 			i(235909, {	-- Gleam (PET!)
 				["displayID"] = 89251,
 			}),
 			i(232854, {	-- Grinner (PET!)
 				["displayID"] = 121850,
 			}),
-			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
-			-- 	["displayID"] = 120709,
-			-- }),
-			i(231613, {	-- Yellow Tropical Frog (PET!)
-				["displayID"] = 122963,
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			-- Only SpeciesID
+			pet(4761, {	-- Pascal the Wonder Pup (PET!)
+				["displayID"] = 126779,
+			}),
+			pet(4792, {	-- Ada the Sweetest (PET!)
+				["displayID"] = 70068,
+			}),
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			-- With SpeciesID Attached
+			i(246723, {	-- Unfazed Diver (PET!)
+				["displayID"] = 98508,
+			}),
+			-- Only SpeciesID
+			pet(4824, {	-- Baby Karesh Fox - Orange (PET!)
+				["displayID"] = 124240,
+			}),
+			pet(4837, {	-- Worm, Cosmic - Critter (Red) (PET!)
+				["displayID"] = 128503,
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			-- With SpeciesID Attached
+			i(252199, {	-- Festive Eve
+				["displayID"] = 137218,
+			}),
+			i(252194, {	-- Fishmonger May
+				["displayID"] = 137213,
+			}),
+			i(252195, {	-- Fishstick Keith
+				["displayID"] = 137215,
+			}),
+			i(252137, {	-- Lil' Chompers
+				["displayID"] = 137193,
+			}),
+			i(252193, {	-- Slippery Saul
+				["displayID"] = 137201,
 			}),
 		})),
 	}),

@@ -626,7 +626,8 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(290771),	-- Thas'dorah, Legacy of the Windrunners
 					itemsource(290772),	-- Thas'dorah, Legacy of the Windrunners
 					itemsource(290773),	-- Thas'dorah, Legacy of the Windrunners
-					itemsource(292943),	-- Thas'dorah, Legacy of the Windrunners
+					--itemsource(292943),	-- Thas'dorah, Legacy of the Windrunners
+					i(246013),	-- Thas'dorah, Legacy of the Windrunners [sourceID 292943]
 					itemsource(292944),	-- Thas'dorah, Legacy of the Windrunners
 					itemsource(292945),	-- Thas'dorah, Legacy of the Windrunners
 					itemsource(292946),	-- Thas'dorah, Legacy of the Windrunners
@@ -1569,7 +1570,8 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(291155),	-- Strom'kar, the Warbreaker
 					itemsource(291156),	-- Strom'kar, the Warbreaker
 					itemsource(291157),	-- Strom'kar, the Warbreaker
-					itemsource(291158),	-- Strom'kar, the Warbreaker
+					--itemsource(291158),	-- Strom'kar, the Warbreaker
+					i(242590),	-- Strom'kar, the Warbreaker [sourceID 291158]
 				}),
 				cl(WARRIOR, FURY, {
 					-- Main hand

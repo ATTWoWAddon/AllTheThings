@@ -664,7 +664,7 @@ e(1528,{npcID=11502,g={
 ach(686),
 ach(15330,{awp=11401,rwp=11500,u=2}),
 i(17204,{b=1,q=5}),
-i(19017,{b=1,c={1,2,3,4,8,9},description="For this to drop, you must be on the Thunderaan the Windseeker quest.",q=5}),
+i(19017,{b=1,c={1,2,3,4,8,9},description="For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",q=5}),
 s(163269,17076,{b=1,f=26,lvl=60,q=4}),
 s(163274,17104,{b=1,f=22,lvl=60,q=4}),
 s(163698,18816,{b=1,f=20,lvl=60,q=4}),
@@ -716,7 +716,7 @@ q(7508,{c={1,2},lvl=60,maps={234},providers={{"i",18513}},qgs={14368},rwp=30300,
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}},rwp=30300}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=4,rwp=30300}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,rwp=30300}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,rwp=30300}),
 s(163483,18348,{b=1,c={1,2},f=25,lvl=60,q=4,rwp=30300})}}),
 q(7497,{coords={{67,85,1453}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496},g={
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
@@ -1121,7 +1121,7 @@ q(8246,{awp=10700,coords={{15.1,16,1434}},cost={{"i",19858,15}},lvl=58,minReputa
 i(20077,{awp=10700,b=1,q=3,rwp=40003,u=14}),
 i(20076,{awp=10700,b=1,q=3,rwp=40003,u=14}),
 i(20078,{awp=10700,b=1,q=3,rwp=40003,u=14})}}),
-q(8183,{awp=10700,description="Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",lvl=58,maps={1434},providers={{"i",19802}},rwp=40003,u=14,g={
+q(8183,{awp=10700,description="Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",lvl=58,maps={1434},providers={{"i",19802}},rwp=40003,u=14,g={
 i(19948,{awp=10700,b=1,f=53,q=4,rwp=40003,u=14}),
 i(19950,{awp=10700,b=1,f=53,q=4,rwp=40003,u=14}),
 i(19949,{awp=10700,b=1,f=53,q=4,rwp=40003,u=14})}}),
@@ -2376,8 +2376,10 @@ q(6565,{coords={{11.6,34.3,1440}},lvl=17,qgs={12736},r=1,rwp=40003,sourceQuests=
 qo(1,{providers={{"n",12902}},rwp=40003}),
 s(163372,17695,{b=1,f=4,q=2,rwp=40003}),
 i(17694,{b=1,f=52,q=2,rwp=40003})}}),
-q(6921,{coords={{11.6,34.3,1440}},lvl=21,qgs={12736},r=1,rwp=40003,g={
-qo(1,{providers={{"i",16762}},rwp=40003})}}),
+q(908,{coords={{11.6,34.3,1440}},description="This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",lvl=21,qgs={12736},r=1,rwp=10204,u=2,g={
+qo(1,{providers={{"i",16762}},rwp=10204,u=2})}}),
+q(6921,{awp=10204,coords={{11.6,34.3,1440}},lvl=21,qgs={12736},r=1,rwp=40003,g={
+qo(1,{awp=10204,providers={{"i",16762}},rwp=40003})}}),
 q(6922,{lvl=21,maps={1440},providers={{"i",16782}},r=1,rwp=60002,g={
 s(163139,16886,{b=1,f=25,q=3,rwp=60002}),
 s(163140,16887,{b=1,f=1,q=3,rwp=60002})}}),
@@ -3241,7 +3243,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1101})}}),
 h(-31,{awp=10200,u=1101,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1101,g={
-crit(8825,{achID=2336,id=1,u=13})}}),
+crit(8825,{achID=2336,id=5,u=13})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1101})}}),
 h(-45,{awp=10200,u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
@@ -3596,7 +3598,7 @@ q(2904,{lvl=20,maps={1434},qgs={7850},rwp=40003,g={
 s(159421,9536,{b=1,f=4,q=2,rwp=40003}),
 s(159420,9535,{b=1,f=6,q=2,rwp=40003})}}),
 q(2931,{coords={{59.6,67,1442}},isBreadcrumb=1,lvl=25,nextQuests={2930},qgs={4077},r=2,rwp=40003}),
-q(2842,{coords={{75.6,25.2,1454}},description="You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",lvl=20,maps={1434},qgs={3413},r=1,rwp=40003}),
+q(2842,{coords={{75.6,25.2,1454}},description="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",lvl=20,maps={1434},qgs={3413},r=1,rwp=40003}),
 q(2930,{coords={{70.2,48.4,1455}},lvl=25,qgs={7950},r=2,rwp=40003,sourceQuests={2931},g={
 qo(1,{providers={{"i",9316}},rwp=40003}),
 s(159427,9604,{b=1,f=24,q=2,rwp=40003}),
@@ -3622,7 +3624,7 @@ q(2947,{lvl=28,maps={1455},providers={{"o",142487}},r=2,sourceQuests={2945},g={
 i(9362,{b=1,f=52,q=2})}}),
 q(2949,{lvl=28,maps={1454},providers={{"o",142487}},r=1,sourceQuests={2945},g={
 i(9362,{b=1,f=52,q=2})}}),
-q(2841,{coords={{75.8,25.2,1454}},lvl=25,qgs={3412},r=1,rwp=40003,g={
+q(2841,{coords={{75.8,25.2,1454}},lc={1,"questID",2842},lvl=25,qgs={3412},r=1,rwp=40003,g={
 qo(1,{providers={{"i",9153},{"o",142477}},rwp=40003}),
 qo(2,{crs={7800},providers={{"i",9299}},rwp=40003}),
 s(159432,9623,{b=1,f=4,q=3,rwp=40003}),
@@ -4021,7 +4023,7 @@ s(159017,7747,{b=1,f=8,q=2,rwp=40003})}}),
 q(1050,{coords={{75,12.5,1455}},lvl=28,qgs={3979},r=2,rwp=40003,g={
 qo(1,{description="In the hallway with the benches immediately to your left upon entering it.",providers={{"i",5536},{"o",19284}},rwp=40003}),
 i(7746,{b=1,f=51,q=2,rwp=40003})}}),
-q(1951,{c={8},coords={{478.2,75.8,1441}},lvl=30,maps={1445},qgs={6548},rwp=40003,sourceQuests={1950},g={
+q(1951,{c={8},coords={{47.82,75.8,1441}},lvl=30,maps={1445},qgs={6548},rwp=40003,sourceQuests={1950},g={
 qo(1,{providers={{"i",7274}},rwp=40003})}}),
 q(1160,{coords={{57.8,65.4,1458}},lvl=28,qgs={4488},r=1,rwp=40003,sourceQuests={1159},g={
 qo(1,{description="In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",providers={{"i",5861},{"o",20726}},rwp=40003})}})}}),
@@ -4208,7 +4210,6 @@ i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Pla
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
-i(20520,{awp=100105,q=2,rwp=50004}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003}),
 s(163643,18702,{awp=100105,f=7,lvl=55,q=3,rwp=50004}),
 s(162986,16671,{crs={10478},f=6,lvl=52,q=3,rwp=40003}),
@@ -4336,7 +4337,7 @@ n(10507,{awp=100105,rwp=50004,g={
 s(163031,16716,{f=5,lvl=53,q=3,rwp=40003})}}),
 n(10504,{awp=100105,rwp=50004,g={
 s(163037,16722,{f=7,lvl=52,q=3,rwp=40003})}}),
-n(1853,{awp=100105,description="You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
+n(1853,{awp=100105,description="You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",rwp=50004,g={
 r(18458,{awp=100105,itemID=14514,learnedAt=300,q=4,requireSkill=197,rwp=50004}),
 r(17580,{awp=100105,b=1,itemID=13501,learnedAt=295,q=2,requireSkill=171,rwp=50004}),
 s(161187,13937,{awp=100105,b=1,f=28,lvl=57,q=4,rwp=50004}),
@@ -5174,7 +5175,7 @@ i(11118,{b=1,f=52,lvl=42,q=3})}}),
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(131474,{description="Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",modelScale=3,g={
 i(6064,{q=1})}})}}),
-inst(240,{coords={{45.9,35.7,1413}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,savedInstanceID=43,["zone-text-areaID"]=718,g={
+inst(240,{coords={{45.9,35.7,1413}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,savedInstanceID=43,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
 h(-45,{description="To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",g={
 q(1487,{coords={{46,35.7,1413}},lvl=15,qgs={5768},rwp=40003,g={
 qo(1,{providers={{"n",3636}},rwp=40003}),

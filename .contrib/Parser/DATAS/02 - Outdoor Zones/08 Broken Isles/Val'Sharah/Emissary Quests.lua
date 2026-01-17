@@ -51,6 +51,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						i(152103, {	-- Dreamweaver Cache
 							i(147804),	-- Wild Dreamrunner (MOUNT!)
+							i(151462, {	-- Spoiled Sample (QS!)
+								["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
+							}),
 						}),
 						un(REMOVED_FROM_GAME, i(146898, {	-- Dreamweaver Cache
 							["sym"] = {

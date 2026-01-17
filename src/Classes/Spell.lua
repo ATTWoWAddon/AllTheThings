@@ -135,6 +135,7 @@ local SkillIcons = setmetatable({
 	[2819] = 3747898,	-- Protoform Synthesis
 	[2847] = 4638460,	-- Tuskarr Fishing Gear
 	[2886] = 1394946,	-- Supply Shipments
+	[2984] = 7449434,	-- Dye Crafting
 }, { __index = function(t, key)
 	if not key then return; end
 	local skillSpellID = app.SkillDB.SkillToSpell[key];

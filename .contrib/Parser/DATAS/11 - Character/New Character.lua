@@ -2009,7 +2009,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #endif
 	n(QUESTS, bubbleDownSelf({
 		["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-		["classes"] = { HUNTER, MAGE, PRIEST, ROGUE, WARLOCK, WARRIOR },
 		["timeline"] = { ADDED_11_0_5 },
 	}, {
 		q(84423, {	-- Shaking the Dust Off

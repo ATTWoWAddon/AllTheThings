@@ -14,7 +14,7 @@ local EncounterToCRS = {
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[BELOREN] = {
-		i(249283),	-- Belo'ren's Mystic Talon
+		i(249283),	-- Belo'melorn, the Shattered Talon
 		i(249284),	-- Belo'ren's Swift Talon
 		i(249377),	-- Darkstrider Treads
 		i(249328),	-- Echoing Void Mantle
@@ -61,7 +61,6 @@ InstanceHelper.UpgradeMapping = {
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1308, {	-- March on Quel'Danas
 		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
-		["timeline"] = { ADDED_12_0_0 },
 		--["maps"] = {
 
 		--},
@@ -97,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(BELOREN, {
 					i(256715),	-- Design: Thalassian Phoenix Torque (RECIPE!)
-					i(264187),	-- Blessed Phoenix Egg (DECOR)
+					i(264187),	-- Blessed Phoenix Egg (DECOR!)
 				}),
 				BossOnly(LURA, {
 					i(258519),	-- Plans: Magister's Valediction (RECIPE!)

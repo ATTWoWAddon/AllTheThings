@@ -21,7 +21,6 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1313, {	-- Voidscar Arena
 		["coord"] = { X, Y, MAP },
-		["timeline"] = { ADDED_12_0_0_LAUNCH },
 		["maps"] = {},
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -30,17 +29,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(ATROXUS, {
 				}),
 				BossOnly(CHARONUS, {
-					ach(),	-- 
+					ach(),	--
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(CHARONUS, {
-					ach(),	-- 
+					ach(),	--
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 				BossOnly(CHARONUS, {
-					ach(),	-- 
+					ach(),	--
 				}),
 			}),
 		},

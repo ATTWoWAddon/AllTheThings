@@ -649,7 +649,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["groups"] = { i(154137) },	-- Pristine Phylactery (QI!)
 					}),
 					o(278337, {	-- Repaired Phylactery
-						["coord"] = {  40.9, 52, NAZMIR },
+						["coord"] = { 40.9, 52.0, NAZMIR },
 						["groups"] = { i(152468) },	-- epaired Phylactery (QI!)
 					}),
 					i(154130),	-- Spirit Powder (QI!)
@@ -1059,10 +1059,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{
 						["description"] = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
 						["groups"] = {
-							i(155465),	-- Wickerwoven Cord
-							i(155462),	-- Wickerwoven Legwraps
+							i(155473),	-- Banisher Cinch
 							i(155481),	-- Crone-Seeker's Chain
 							i(155489),	-- Waycrest Militia Belt
+							i(155465),	-- Wickerwoven Cord
+							i(155462),	-- Wickerwoven Legwraps
 						},
 					})),
 					n(FACTION_HEADER_HORDE, bubbleDownSelf({["races"] = HORDE_ONLY},{

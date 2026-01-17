@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local L = app.L
 
 local type
@@ -9,8 +9,13 @@ local type
 app.UI = {
 	OnClick = {
 		IgnoreRightClick = function(row, button)
-			return button == "RightButton";
-		end
+			return button == "RightButton"
+		end,
+		OnlySortingRightClick = function(row, button)
+			if button == "LeftButton" then return end
+
+			return button == "RightButton" and not IsShiftKeyDown()
+		end,
 	}
 }
 
@@ -46,29 +51,20 @@ local function GetUnobtainableTexture(group)
 	end
 
 	-- Determine the texture color, default is green for events.
-	-- TODO: Use 4 for inactive events, use 5 for active events
-	local filter, u = 4, group.u;
+	local u = group.u;
 	if u then
-		-- only b = 0 (BoE), not BoA/BoP
-		-- removed, elite, bmah, tcg, summon
-		if u > 1 and u < 12 and group.itemID and (group.b or 0) == 0 then
-			filter = 2;
-		else
-			local phase = L.PHASES[u];
-			if phase then
-				if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
-					filter = phase.state or 0;
-				else
-					-- This is a phase that's available. No icon.
-					return;
+		local phase = L.PHASES[u];
+		if phase then
+			if not phase.buildVersion and group.itemID then
+				local b = group.b or 0;
+				if b == 2 or b == 0 then	-- BoE or Unbound
+					return L.UNOBTAINABLE_ITEM_TEXTURES[2];
 				end
-			else
-				-- otherwise it's an invalid unobtainable filter
-				app.print("Invalid Unobtainable Filter:",u);
-				return;
+			end
+			if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
+				return L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
 			end
 		end
-		return L.UNOBTAINABLE_ITEM_TEXTURES[filter];
 	end
 	if group.e then
 		return L.UNOBTAINABLE_ITEM_TEXTURES[app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
@@ -79,3 +75,21 @@ local function GetUnobtainableTexture(group)
 	end
 end
 app.GetUnobtainableTexture = GetUnobtainableTexture
+
+-- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
+local function GetIndicatorIcon(group)
+	-- Use the group's own indicator if defined
+	local groupIndicator = group.indicatorIcon
+	if groupIndicator then return groupIndicator end
+
+	-- Otherwise use some common logic
+	if group.saved then
+		if group.parent and group.parent.locks or group.repeatable then
+			return app.asset("known");
+		else
+			return app.asset("known_green");
+		end
+	end
+	return GetUnobtainableTexture(group);
+end
+app.GetIndicatorIcon = GetIndicatorIcon

@@ -11,8 +11,8 @@ VH_WAVE_6_BOSS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "第6波首领",
+		tw = "第6波首領",
 	},
 });
 VH_WAVE_12_BOSS = createHeader({
@@ -28,8 +28,8 @@ VH_WAVE_12_BOSS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "第12波首领",
+		tw = "第12波首領",
 	},
 });
 VH_FINAL_WAVE_BOSS = createHeader({
@@ -45,7 +45,7 @@ VH_FINAL_WAVE_BOSS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "最终首领",
+		tw = "最後一波首領",
 	},
 });

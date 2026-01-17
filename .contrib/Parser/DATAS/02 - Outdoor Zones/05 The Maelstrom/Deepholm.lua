@@ -447,7 +447,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Pebble brought to crystal formation
 								["provider"] = { "n", 43171 },	-- Jaspertip Crystal-gorger
-								["coord"] = { 29, 45, DEEPHOLM },
+								["coord"] = { 29.0, 45.0, DEEPHOLM },
 							}),
 							i(61425),	-- Bracers of the Energetic Elemental
 							i(61426),	-- Crystalmuncher Necklace

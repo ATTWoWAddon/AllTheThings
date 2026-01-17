@@ -111,7 +111,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			ach(18646, {	-- Whodunnit?
 				i(208152),	-- Pattie (MOUNT!)
-				title(519),	-- Honorary Preservationists (TITLE!)
+				title(519),	-- Honorary Preservationists
 				crit(60849, {	-- A Preservationist
 					["_quests"] = { 77203 },
 				}),

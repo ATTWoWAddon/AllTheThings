@@ -24,7 +24,7 @@ DRAGONS_OF_NIGHTMARE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
 		tw = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
 	},
 });

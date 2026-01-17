@@ -759,7 +759,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["coord"] = { 53.3, 36.5, 1644 },	-- Ember Court
 								["groups"] = {
 									o(354173, {	-- Ansel's Lucky Violin
-										["coord"] = { 60, 48.2, 1644 },
+										["coord"] = { 60.0, 48.2, 1644 },
 										["groups"] = { i(180485) },	-- Ansel's Lucky Violin
 									}),
 								},
@@ -769,14 +769,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["coord"] = { 53.1, 36.2, 1644 },	-- Ember Court
 								["groups"] = {
 									o(354174, {	-- Chiu's Lute
-										["coord"] = { 38, 31.9, 1644 },
+										["coord"] = { 38.0, 31.9, 1644 },
 										["groups"] = { i(180486) },	-- Chiu's Lute
 									}),
 								},
 							}),
 							q(60955, {	-- Noko's Flute
 								["qg"] = 170874,	-- Noko
-								["coord"] = { 54, 38.2, 1644 },	-- Ember Court
+								["coord"] = { 54.0, 38.2, 1644 },	-- Ember Court
 								["crs"] = 170916,	-- Rowdy Roadie
 								["groups"] = { i(180484) },	-- Noko's Flute
 							}),
@@ -2091,7 +2091,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 58.0, 27.4, REVENDRETH },
 									["groups"] = {
 										o(354185, {	-- House Iremoore Formal Wear
-											["coord"] = { 56, 35.5, REVENDRETH },
+											["coord"] = { 56.0, 35.5, REVENDRETH },
 											["groups"] = { i(180497) },	-- House Iremoore Disguise (QI!)
 										}),
 										i(176114),	-- RSVP: The Countess

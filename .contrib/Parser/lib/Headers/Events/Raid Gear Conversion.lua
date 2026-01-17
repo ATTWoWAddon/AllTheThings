@@ -4,8 +4,8 @@ RAID_GEAR_CONVERSION = createHeader({
 	text = {
 		en = "Raid Gear Conversion",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Conversión de equipo de banda",
+		mx = "Conversión de equipo de banda",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -16,6 +16,8 @@ RAID_GEAR_CONVERSION = createHeader({
 	},
 	description = {
 		en = "When transferring a Timerunner to Retail, any Normal+ raid drop in your |cffFF0000bags and bank only|R will grant the appearances for their LFR, N, H, and M difficulty Remix variants.",
+		es = "Al transferir un Cronoaventurero a retail, cualquier botín de banda Normal+ en tus |cffFF0000bolsas o banco solamente|R otorgará las apariencias para sus variantes de Remix de dificultad BdB, N, H, y M.",
+		mx = "Al transferir un Cronoaventurero a retail, cualquier botín de banda Normal+ en tus |cffFF0000bolsas o banco solamente|R otorgará las apariencias para sus variantes de Remix de dificultad BdB, N, H, y M.",
 	},
 });
 

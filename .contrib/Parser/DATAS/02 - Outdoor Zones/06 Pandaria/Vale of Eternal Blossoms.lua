@@ -458,24 +458,27 @@ root(ROOTS.Zones, {
 							i(80484),	-- Explosive Keg (QI!)
 						},
 					})),
-					RemovedWithTOT(q(32016, {	-- Elder Charms of Good Fortune
-						["qg"] = 64029,	-- Elder Lin
-						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
+					{
+						["aqd"] = q(32016, {	-- Elder Charm of Good Fortune (A)
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["hqd"] = q(32017, {	-- Elder Charm of Good Fortune (H)
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["timeline"] = {
+							ADDED_5_0_4,
+							-- #if NOT ANYCLASSIC
+							REMOVED_5_2_0,
+							-- #endif
+						},
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
 						["isWeekly"] = true,
 						["groups"] = {
 							currency(697),	-- Elder Charm of Good Fortune
 						},
-					})),
-					RemovedWithTOT(q(32017, {	-- Elder Charms of Good Fortune
-						["qg"] = 63996,	-- Elder Lin
-						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["groups"] = {
-							currency(697),	-- Elder Charm of Good Fortune
-						},
-					})),
+					},
 					applyclassicphase(MOP_PHASE_ESCALATION, {	-- Heroic Deeds
 						["aqd"] = q(32900, {	-- Heroic Deeds (A)
 							["qg"] = 64101,	-- Taijin the Cyclone
@@ -522,6 +525,41 @@ root(ROOTS.Zones, {
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
+						["aqd"] = q(32719, {	-- Mogu Runes of Fate (A)
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["hqd"] = q(32718, {	-- Mogu Runes of Fate (H)
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						["isWeekly"] = true,
+						["groups"] = {
+							currency(752),	-- Mogu Rune of Fate
+						},
+					}),
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: They added this new version of the quests probably to prevent them from randomly disappearing in later phases. We'll see if this set gets removed.
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(94404, {	-- Mogu Runes of Fate (Both)
+						["aqd"] = {
+							["qg"] = 64029,	-- Elder Lin
+							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["hqd"] = {
+							["qg"] = 63996,	-- Elder Liao
+							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["timeline"] = { ADDED_5_5_3 },
+						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						["isWeekly"] = true,
+						["groups"] = {
+							currency(752),	-- Mogu Rune of Fate
+						},
+					})),
+					-- #endif
 					RemovedWithSOO(q(30633, {	-- Out with the Scouts
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["qg"] = 58465,	-- Anji Autumnlight

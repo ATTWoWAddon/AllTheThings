@@ -217,6 +217,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["groups"] = SL_MINING,
 				}),
 			}),
+			prof(SKINNING, {
+				n(156669, {	-- Tanner Au'qil <Leatherworking Trainer>
+					["coord"] = { 42.6, 26.8, ORIBOS },
+					["groups"] = SL_SKINNING,
+				}),
+			}),
 			prof(TAILORING, {
 				n(156681, {	-- Stitcher Au'phes <Tailoring Trainer>
 					["coord"] = { 45.2, 31.6, ORIBOS },

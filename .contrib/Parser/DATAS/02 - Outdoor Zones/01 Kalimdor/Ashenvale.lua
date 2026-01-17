@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						en = "Defeat a Lieutenant",
 						de = "Besiege einen Leutnant",
 						es = "Derrota a un Teniente",
-						-- TODO: mx = "",
+						mx = "Derrota a un Teniente",
 						fr = "Battre un Lieutenant",
 						it = "Sconfiggi un Tenente",
 						ko = "중위를 처치하세요",
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						en = "Win the Battle",
 						de = "Gewinne den Kampf",
 						es = "Gana la Batalla",
-						-- TODO: mx = "",
+						mx = "Gana la Batalla",
 						fr = "Gagnez la Bataille",
 						it = "Vinci la Battaglia",
 						ko = "전투에서 승리하세요",
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5493 },	-- Elune's Tear
 								{ "o", 19015 },	-- Elune's Tear
 							},
-							["coord"] = { 46, 46.5, ASHENVALE },
+							["coord"] = { 46.0, 46.5, ASHENVALE },
 						}),
 					},
 				}),
@@ -1596,7 +1596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 74.0, 60.6, ASHENVALE },
 						-- #else
-						{ 73.6, 60, ASHENVALE },
+						{ 73.6, 60.0, ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -2541,7 +2541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 409315 },	-- Shattered Orb
 						{ "i", 209800 },	-- Orb Fragments
 					},
-					["coord"] = { 89.4, 77, ASHENVALE },
+					["coord"] = { 89.4, 77.0, ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
@@ -2583,10 +2583,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ring of Zoram
 							["provider"] = { "i", 5445 },	-- Ring of Zoram
 							["coords"] = {
-								{ 7.2, 13, ASHENVALE },
+								{ 7.2, 13.0, ASHENVALE },
 								{ 9.4, 15.2, ASHENVALE },
 								{ 12.4, 19.6, ASHENVALE },
-								{ 11, 29.6, ASHENVALE },
+								{ 11.0, 29.6, ASHENVALE },
 							},
 							["crs"] = {
 								3943,	-- Ruuzel
@@ -2605,7 +2605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 73.8, 62.4, ASHENVALE },
 						-- #else
-						{ 73, 61.4, ASHENVALE },
+						{ 73.0, 61.4, ASHENVALE },
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
@@ -3201,7 +3201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6504, {	-- The Lost Pages
 					["qg"] = 12718,	-- Gurda Ragescar
-					["coord"] = { 70, 71, ASHENVALE },
+					["coord"] = { 70.0, 71.0, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
@@ -3336,7 +3336,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Free the Highborne soul in Night Run
 							["provider"] = { "o", 19901 },	-- Circle of Imprisonment
-							["coord"] = { 66.7, 57, ASHENVALE },
+							["coord"] = { 66.7, 57.0, ASHENVALE },
 						}),
 						objective(2, {	-- Free the Highborne soul in Satyrnaar
 							["provider"] = { "o", 20352 },	-- Circle of Imprisonment
@@ -3655,7 +3655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6641, {	-- Vorsha the Lasher
 					["qg"] = 12717,	-- Muglash
-					["coord"] = { 12, 34.6, ASHENVALE },
+					["coord"] = { 12.0, 34.6, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
@@ -3737,7 +3737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(6581, {	-- Warsong Saw Blades
 							["qg"] = 12724,	-- Pixel
-							["coord"] = { 73, 61.4, ASHENVALE },
+							["coord"] = { 73.0, 61.4, ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {{ "i", 4369, 1 }},	-- Deadly Blunderbuss
 							["races"] = HORDE_ONLY,
@@ -4304,8 +4304,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(211531, {	-- Prophecy of Seven Visitors
 							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
 							["coords"] = {
-								{ 38, 29, ASHENVALE },
-								{ 38, 26, ASHENVALE },
+								{ 38.0, 29.0, ASHENVALE },
+								{ 38.0, 26.0, ASHENVALE },
 							},
 							["classes"] = { PRIEST },
 							["groups"] = {

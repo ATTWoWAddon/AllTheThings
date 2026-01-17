@@ -1272,13 +1272,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
-			header(HEADERS.Spell, 375232, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Emerald Dream [PH]
+			header(HEADERS.Spell, 375232, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Emerald Dream
 				q(76982, {	-- A Sentinel's Summon
 					["timeline"] = { REMOVED_10_2_0 },
 					["maps"] = { VALDRAKKEN },
 				}),
 				q(75918, {	-- Fire Season
-					["sourceQuests"] = { 76982 },	-- A Sentinel's Summon
+					["sourceQuests"] = {
+						-- #if AFTER 11.2.7
+						91695,	-- Tracking Down Incarnates
+						-- #else
+						76982,	-- A Sentinel's Summon
+						-- #endif
+					},
 					["provider"] = { "n", 205067 },	-- Shandris Feathermoon
 					["coord"] = { 50.3, 52.8, VALDRAKKEN },
 				}),

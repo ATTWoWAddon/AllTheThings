@@ -3,9 +3,6 @@ i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
 i(46779),	-- of Cenarius \\ Path of Cenarius
-12.0.0.64741
-i(267291),	-- Coffer Key Glue
-i(267456),	-- Lil' Scoots' Pillow
 
 
 
@@ -17,6 +14,3 @@ i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
 i(46779),	-- of Cenarius \\ Path of Cenarius
-12.0.0.64741
-i(267291),	-- Coffer Key Glue
-i(267456),	-- Lil' Scoots' Pillow

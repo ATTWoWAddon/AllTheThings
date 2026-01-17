@@ -586,7 +586,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(264295),	-- [DNT] Cloth Bracers
 							i(264296),	-- [DNT] Leather Bracers
 							i(264297),	-- [DNT] Mail Bracers
-							i(264298),	-- [DNT] Plate Bracers
+							i(264298),	-- Nightbreaker's Vambraces
 						},
 					}),
 				}),

@@ -11,19 +11,7 @@ s(189774)/i(208484),	-- Sunlight
 s(190111)/i(208740),	--
 s(190117)/i(208774),	--
 s(191033)/i(209842),	--
-s(194080)/i(211263),	-- Judgement Chestguard
-s(194131)/i(211443),	-- Blade of Rage
-s(194132)/i(211444),	-- Summoner's Cloak
-s(194133)/i(211445),	-- Barbaric Recurve
-s(194152)/i(211501),	-- Chestguard of Might
 s(194481)/i(211925),	--
-s(194485)/i(211940),	-- Ecks'av's Tribal Guardian
-s(194486)/i(211941),	-- Windwalker's Yari
-s(194488)/i(211944),	-- Tojara's Karma \\ Tojara's Will
-1.15.0.52212
-s(194917)/i(212588),	-- Provisioner's Gloves
-s(194918)/i(212589),	-- Courier Treads
-s(194919)/i(212590),	-- Hoist Strap
 1.15.0.52409
 s(195197)/i(213087),	-- Sergeant's Cloak
 s(195198)/i(213088),	-- Sergeant's Cloak
@@ -38,13 +26,10 @@ s(196748)/i(215113),	-- UNUSED - Razor-Lined Shoulderpads
 s(196751)/i(215116),	-- UNUSED - Hyperconductive Speed Belt
 s(196778)/i(215450),	-- Tabard Project (Aidan)
 s(198599)/i(216494),	-- Aragriar's Whimsical World Warper
-1.15.1.53247
-s(200231)/i(217497),	-- Narpas Sword
 1.15.2.53941
 s(198741)/i(216891),	--
 s(200650)/i(218083),	-- Tail of Eranikus
 s(218465)/i(219945),	--
-s(218687)/i(220649),	-- Merithra's Inheritence
 s(218798)/i(220794),	-- Knight's Plate Hauberk
 s(218799)/i(220795),	-- Knight-Lieutenant's Plate Pauldrons
 s(218800)/i(220796),	-- Blood Guard's Plate Pauldrons
@@ -159,69 +144,6 @@ s(218910)/i(220906),	-- Stone Guard's Dreadweave Leggings
 s(218911)/i(220907),	-- Blood Guard's Dreadweave Hat
 s(218912)/i(220908),	-- First Sergeant's Dreadweave Gloves
 s(218913)/i(220909),	-- First Sergeant's Dreadweave Boots
-s(219209)/i(221344),	-- Personal Spellbook
-s(219210)/i(221376),	-- Emerald Dream Helm
-s(219211)/i(221377),	-- Emerald Dream Legplates
-s(219212)/i(221378),	-- Emerald Dream Gauntlets
-s(219213)/i(221379),	-- Emerald Dream Sabatons
-s(219214)/i(221380),	-- Emerald Dream Breastplate
-s(219215)/i(221381),	-- Emerald Dream Pauldrons
-s(219216)/i(221382),	-- Emerald Encrusted Battleplate
-s(219217)/i(221383),	-- Emerald Encrusted Handguards
-s(219218)/i(221384),	-- Emerald Encrusted Helmet
-s(219219)/i(221385),	-- Emerald Encrusted Legplates
-s(219220)/i(221386),	-- Emerald Encrusted Spaulders
-s(219221)/i(221387),	-- Emerald Encrusted Plate Boots
-s(219222)/i(221388),	-- Emerald Scalemail Leggings
-s(219223)/i(221389),	-- Emerald Scalemail Gauntlets
-s(219224)/i(221390),	-- Emerald Scalemail Breastplate
-s(219225)/i(221391),	-- Emerald Scalemail Helmet
-s(219226)/i(221392),	-- Emerald Scalemail Shoulders \\ Emerald Scalemail Shoudlers
-s(219227)/i(221393),	-- Emerald Scalemail Boots
-s(219228)/i(221394),	-- Emerald Laden Boots
-s(219229)/i(221395),	-- Emerald Laden Breastplate
-s(219230)/i(221396),	-- Emerald Laden Gauntlets
-s(219231)/i(221397),	-- Emerald Laden Helmet
-s(219232)/i(221398),	-- Emerald Laden Leggings
-s(219233)/i(221399),	-- Emerald Laden Shoudlers
-s(219234)/i(221400),	-- Emerald Chain Shoudlers
-s(219235)/i(221401),	-- Emerald ChainLeggings
-s(219236)/i(221402),	-- Emerald Chain Helmet
-s(219237)/i(221403),	-- Emerald Chain Gauntlets
-s(219238)/i(221404),	-- Emerald Chain Breastplate
-s(219239)/i(221405),	-- Emerald Chain Boots
-s(219240)/i(221406),	-- Emerald Leather Vest
-s(219241)/i(221407),	-- Emerald Leather Gloves
-s(219242)/i(221408),	-- Emerald Leather Helm
-s(219243)/i(221409),	-- Emerald Leather Sabatons
-s(219244)/i(221410),	-- Emerald Leather Pants
-s(219245)/i(221411),	-- Emerald Leather Shoulders
-s(219246)/i(221412),	-- Emerald Dreamkeeper Gloves
-s(219247)/i(221413),	-- Emerald Dreamkeeper Helm
-s(219248)/i(221414),	-- Emerald Dreamkeeper Pants
-s(219249)/i(221415),	-- Emerald Dreamkeeper Boots
-s(219250)/i(221416),	-- Emerald Dreamkeeper Shoulders
-s(219251)/i(221417),	-- Emerald Dreamkeeper Chest
-s(219252)/i(221419),	-- Emerald Watcher Vest
-s(219253)/i(221420),	-- Emerald Watcher Boots
-s(219254)/i(221421),	-- Emerald Watcher Gloves
-s(219255)/i(221422),	-- Emerald Watcher Helm
-s(219256)/i(221423),	-- Emerald Watcher Leggings
-s(219257)/i(221424),	-- Emerald Watcher Shoulders
-s(219258)/i(221425),	-- Emerald Enchanted Circlet
-s(219259)/i(221426),	-- Emerald Enchanted Boots
-s(219260)/i(221427),	-- Emerald Enchanted Gloves
-s(219261)/i(221429),	-- Emerald Enchanted Pants
-s(219262)/i(221430),	-- Emerald Enchanted Robes
-s(219263)/i(221431),	-- Emerald Enchanted Shoulders
-s(219264)/i(221432),	-- Emerald Woven Mantle
-s(219265)/i(221434),	-- Emerald Woven Robes
-s(219266)/i(221435),	-- Emerald Woven Pants
-s(219267)/i(221436),	-- Emerald Woven Gloves
-s(219268)/i(221437),	-- Emerald Woven Circlet
-s(219269)/i(221438),	-- Emerald Woven Boots
-s(219270)/i(221439),	-- Armor of the Emerald Slumber
-s(219271)/i(221441),	-- Warden of the Dream
 s(219281)/i(221469),	-- Headhunter's Barbed Spear
 s(219404)/i(221784),	--
 s(219686)/i(223073),	-- Knight-Lieutenant's Mail Epaulets
@@ -230,10 +152,6 @@ s(219688)/i(223075),	-- Knight-Lieutenant's Mail Helmet
 s(219689)/i(223076),	-- Sergeant Major's Mail Gauntlets
 s(219690)/i(223077),	-- Sergeant Major's Mail Sabatons
 s(219691)/i(223078),	-- Knight's Mail Armor
-s(219693)/i(223164),	-- Curiosity Cowl
-s(219696)/i(223167),	-- Initiative Cap
-s(219697)/i(223169),	-- Tenacity Cap
-s(219699)/i(223172),	-- Tenacity Chain
 s(219700)/i(223173),	-- Geomancer's Cord
 s(219701)/i(223174),	-- Geomancer's Boots
 s(219702)/i(223175),	-- Geomancer's Cloak
@@ -243,53 +161,11 @@ s(219707)/i(223180),	-- Geomancer's Gloves
 s(219708)/i(223181),	-- Geomancer's Spaulders
 s(219709)/i(223182),	-- Geomancer's Trousers
 s(219710)/i(223183),	-- Geomancer's Wraps
-s(219722)/i(223198),	-- Modas Karkun
-s(219737)/i(223215),	-- Orah Raka
-s(219738)/i(223216),	-- Rakkan Archim
-s(219739)/i(223217),	-- Rakkas Lek
-s(219740)/i(223219),	-- Fel Cloth Wristbands
-s(219741)/i(223221),	-- Fel Leather Wristbands
-s(219742)/i(223222),	-- Fel Mail Wristbands
-s(219757)/i(223237),	-- Fel Cloth Shoulder Pads
-s(219758)/i(223238),	-- Fel Leather Shoulder Pads
-s(219759)/i(223239),	-- Fel Mail Shoulders
-s(219760)/i(223240),	-- Fel Cloth Hood
-s(219761)/i(223241),	-- Fel Leather Hat
-s(219762)/i(223242),	-- Fel Mail Coif
-s(219763)/i(223248),	-- Fel Cloth Legs
-s(219764)/i(223249),	-- Fel Leather Legs
-s(219765)/i(223250),	-- Fel Mail Legs
-s(219766)/i(223251),	-- Fel Plate Legs
-s(219771)/i(223256),	-- Fel Cloth Robes
-s(219776)/i(223261),	-- Fel Leather Chest
-s(219777)/i(223262),	-- Fel Mail Chest
-s(219778)/i(223263),	-- Fel Plate Chest
 s(219803)/i(223323),	-- Shirt \\ Premo's Poise-Demanding Uniform
 1.15.2.54332
 s(220131)/i(223648),	-- Dream Imbued Arrow
 1.15.3.55112
 s(222832)/i(225893),	-- Epoch's End
-s(223273)/i(226775),	-- Feralheart Wraps
-s(223307)/i(226819),	-- Feralheart Helm
-s(223310)/i(226822),	-- Feralheart Chest
-s(223335)/i(226849),	-- Darkmantle Helm
-s(223338)/i(226852),	-- Darkmantle Chest
-s(223360)/i(226877),	-- Helm of Heroism
-s(223363)/i(226880),	-- Chest of Heroism
-s(223384)/i(226901),	-- Beastmaster's Helm
-s(223387)/i(226904),	-- Beastmaster's Chest
-s(223408)/i(226925),	-- Deathmist Helm
-s(223411)/i(226928),	-- Deathmist Chest
-s(223421)/i(226938),	-- Sorcerer's Waist
-s(223424)/i(226941),	-- Sorcerer's Helm
-s(223425)/i(226942),	-- Sorcerer's Gloves
-s(223427)/i(226944),	-- Sorcerer's Chest
-s(223448)/i(226965),	-- Virtuous Helm
-s(223451)/i(226968),	-- Virtuous Chest
-s(223480)/i(226997),	-- Soulforge Helm
-s(223483)/i(227000),	-- Soulforge Chest
-s(223520)/i(227037),	-- Helm of The Five Thunders
-s(223523)/i(227040),	-- Chest of The Five Thunders
 s(224038)/i(227688),	-- Gorehowl
 1.15.3.55244
 s(224085)/i(227806),	-- Wisdom of the Timbermaw
@@ -398,50 +274,11 @@ s(229127)/i(230764),	--
 s(229247)/i(231014),	-- Lizardscale Eyepatch
 s(229248)/i(231015),	-- Twill Mask
 s(229441)/i(231275),	-- Blazefury Retributer
-s(229460)/i(231317),	-- Zandalar Haruspex's Tunic
-s(229461)/i(231318),	-- Zandalar Haruspex's Belt
-s(229462)/i(231319),	-- Zandalar Haruspex's Bracers
-s(229463)/i(231321),	-- Zandalar Predator's Mantle
-s(229464)/i(231322),	-- Zandalar Predator's Belt
-s(229465)/i(231323),	-- Zandalar Predator's Bracers
-s(229466)/i(231325),	-- Zandalar Illusionist's Mantle
-s(229467)/i(231326),	-- Zandalar Illusionist's Wraps
-s(229468)/i(231327),	-- Zandalar Illusionist's Robe
-s(229469)/i(231329),	-- Zandalar Freethinker's Breastplate
-s(229470)/i(231330),	-- Zandalar Freethinker's Belt
-s(229471)/i(231331),	-- Zandalar Freethinker's Armguards
-s(229472)/i(231333),	-- Zandalar Confessor's Mantle
-s(229473)/i(231334),	-- Zandalar Confessor's Bindings
-s(229474)/i(231335),	-- Zandalar Confessor's Wraps
-s(229475)/i(231337),	-- Zandalar Madcap's Tunic
-s(229476)/i(231338),	-- Zandalar Madcap's Mantle
-s(229477)/i(231339),	-- Zandalar Madcap's Bracers
-s(229478)/i(231341),	-- Zandalar Augur's Hauberk
-s(229479)/i(231342),	-- Zandalar Augur's Belt
-s(229480)/i(231343),	-- Zandalar Augur's Bracers
-s(229483)/i(231347),	-- Zandalar Demoniac's Wraps
-s(229484)/i(231348),	-- Zandalar Demoniac's Robe
-s(229485)/i(231349),	-- Zandalar Demoniac's Mantle
-s(229486)/i(231351),	-- Zandalar Vindicator's Armguards
-s(229487)/i(231352),	-- Zandalar Vindicator's Belt
-s(229488)/i(231353),	-- Zandalar Vindicator's Breastplate
-s(229682)/i(231613),	-- General's Satin Grips
-s(229695)/i(231627),	-- Marshal's Satin Walkers
-s(229696)/i(231628),	-- Field Marshal's Satin Mantle
 s(229792)/i(231752),	-- S03 - Monster - Sword, 2H Alliance
 s(229794)/i(231754),	-- Kestrel
 s(229795)/i(231755),	-- Peregrine
 s(229800)/i(231806),	-- Searing Arrow
 s(229801)/i(231807),	-- Searing Shot
-s(229815)/i(231847),	-- Gri'lek's Grinder
-s(229827)/i(231859),	-- Jin'do's Hexxer
-s(229828)/i(231860),	-- Jin'do's Judgement
-s(229830)/i(231862),	-- Blazefury Retributer
-s(229839)/i(231871),	-- Wushoolay's Poker
-s(229840)/i(231872),	-- Hoodoo Hunting Bow
-s(229841)/i(231873),	-- Zulian Stone Axe
-s(229845)/i(231885),	-- Frostmourne
-s(229846)/i(231887),	-- Test Dagger
 s(229847)/i(231890),	-- Terrestris
 s(230198)/i(232297),	--
 1.15.5.57537

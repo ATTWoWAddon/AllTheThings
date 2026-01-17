@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  55208 },	-- Sacred Nectar
 								{ "o", 203147 },	-- Aviana's Burial Circle
 							},
-							["coord"] = { 40, 44, MOUNT_HYJAL },
+							["coord"] = { 40.0, 44.0, MOUNT_HYJAL },
 						}),
 					},
 				}),
@@ -1701,7 +1701,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 39726 },	-- Garnoth, Fist of the Legion
 								{ "i", 54814 },	-- Talisman of Flame Ascendancy
 							},
-							["coord"] = { 65, 64.8, MOUNT_HYJAL },
+							["coord"] = { 65.0, 64.8, MOUNT_HYJAL },
 						}),
 					},
 				}),

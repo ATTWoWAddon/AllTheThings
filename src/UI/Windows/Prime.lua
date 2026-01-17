@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 
 -- Implementation
 app:CreateWindow("Prime", {
@@ -32,7 +32,11 @@ app:CreateWindow("Prime", {
 			local commandFunc = app.ChatCommands[arg1]
 			if commandFunc then
 				if args[2] == "help" then return app.ChatCommands.PrintHelp(arg1) end
-				return commandFunc(args)
+				commandFunc(args);
+				return true;
+			elseif arg1 == "help" then
+				app.ChatCommands.PrintHelp(args[2]);
+				return true;
 			end
 
 			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
@@ -56,14 +60,16 @@ app:CreateWindow("Prime", {
 		return false;
 	end,
 	OnUpdate = function(self, ...)
-		self.DefaultUpdate(self, ...);
+		self:DefaultUpdate(...);
 
 		-- Write the current character's progress.
 		local rootData = self.data;
-		app.CurrentCharacter.PrimeData = {
-			progress = rootData.progress,
-			total = rootData.total,
-			modeString = rootData.modeString,
-		};
+		if rootData and rootData.total and rootData.total > 0 then
+			app.CurrentCharacter.PrimeData = {
+				progress = rootData.progress,
+				total = rootData.total,
+				modeString = rootData.modeString,
+			};
+		end
 	end
 });

@@ -69,15 +69,27 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 				-- #endif
 			},
 		}),
+		-- #if AFTER 11.2.5
+		i(248091, {	-- Anima Wyrmling (PET!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		-- #else
 		pet(2779, {	-- Anima Wyrmling (PET!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { ADDED_6_0_2 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248092, {	-- Blinky (PET!)
+			["timeline"] = { ADDED_9_1_5 },
+		}),
+		-- #else
 		i(188837, {	-- Blinky (PET!)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		-- #endif
 		i(98550, {	-- Blossoming Ancient (PET!)
 			["timeline"] = {
 				-- #if ANYCLASSIC
@@ -159,6 +171,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { ADDED_7_3_0 },
+		}),
+		i(248073, {	-- Smoldering Valor
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = {
@@ -332,6 +347,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		------ Dreadlord's Venombane Set ------
 		iensemble(212219, {	-- Ensemble: Dreadlord's Venombane Regalia
 			["timeline"] = { ADDED_10_2_5 },
+		}),
+
+		------ Drustvar Winter Collection ------
+		iensemble(249754, {	-- Ensemble: The Drustvar Winter Collection
+			["timeline"] = { ADDED_11_2_7 },
 		}),
 
 		------ Feathered Archmage Set ------
@@ -622,6 +642,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(219450, {	-- Charming Courier (MOUNT!)
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
+		i(250108, {	-- Cragstepper Crest-Horn (MOUNT!)
+			["timeline"] = { ADDED_11_2_7 },
+		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { ADDED_10_1_0 },
 		}),
@@ -665,12 +688,18 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(85870, {	-- Imperial Quilen (MOUNT!)
 			["timeline"] = { ADDED_8_3_0 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248088, {	-- Jade, Bright Foreseer (MOUNT!)
+			["timeline"] = { ADDED_10_0_2 },
+		}),
+		-- #else
 		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },
 		}),
+		-- #endif
 		-- #if ANYCLASSIC
 		i(192455, {	-- Kalu'ak Whalebone Glider (MOUNT!)
-			["timeline"] = { ADDED_2_5_4_A },
+			["timeline"] = { ADDED_3_4_0 },
 		}),
 		-- #endif
 		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)
@@ -728,9 +757,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { ADDED_8_2_0 },
 		}),
+		-- #if AFTER 11.2.5
+		i(248089, {	-- Tangled Dreamweaver (MOUNT!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		-- #else
 		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 		i(231297, {	-- Timbered Sky Snake (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_0_7, },
@@ -738,9 +773,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.99999" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
 		}),
+		-- #if AFTER 11.2.5
+		i(248090, {	-- Viridian Phase-Hunter (MOUNT!)
+			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
+		}),
+		-- #else
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
 		}),
+		-- #endif
 		i(246920, {	-- Void-Razed Elekk (MOUNT!)
 			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
 		}),

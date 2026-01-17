@@ -5336,7 +5336,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 					49944,	-- Turn to Drust [H]
 				},
 				["provider"] = { "o", 279647 },	-- Tome of Sacrifice
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["groups"] = {
 					r(259665),	-- Blood Contract: Sacrifice
 					i(168046),	-- Fresh Heart (QI!)
@@ -5346,7 +5346,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
 				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
 				["provider"] = { "n", 131657 },	-- Bloodshed Compendium
-				["coord"] = { 20.7, 44, DRUSTVAR },
+				["coord"] = { 20.7, 44.0, DRUSTVAR },
 				["maps"] = { 1407 },	-- Prison of Ink (Scenario Map)
 				["groups"] = {
 					r(292012),	-- Blood Contract: Bloodshed
@@ -5356,14 +5356,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49876, {	-- Lines in the Sand [A]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49946, {	-- Lines in the Sand [H]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
-				["coord"] = { 20.6, 44, DRUSTVAR },
+				["coord"] = { 20.6, 44.0, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
@@ -5411,7 +5411,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Test of Quills
 				["sourceQuests"] = { 49881 },	-- The Final Verse
 				["provider"] = { "n", 131397 },	-- Miju
-				["coord"] = { 32.6, 86, ZULDAZAR },
+				["coord"] = { 32.6, 86.0, ZULDAZAR },
 				["groups"] = {
 					r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
 				},

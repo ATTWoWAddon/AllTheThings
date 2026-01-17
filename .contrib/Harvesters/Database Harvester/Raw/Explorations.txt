@@ -1,4 +1,4 @@
-1.13.0.28211
+ï»¿1.13.0.28211
 1@@@Dun Morogh
 2@@@Longshore
 3@@@Badlands
@@ -640,7 +640,7 @@
 1218@@@TESTAzshara
 1219@@@Legash Encampment
 1220@@@Thalassian Base Camp
-1221@@@Ruins of Eldarath
+1221@@@Ruins of Eldarath 
 1222@@@Hetaera's Clutch
 1223@@@Temple of Zin-Malor
 1224@@@Bear's Head
@@ -791,8 +791,8 @@
 1959@@@Dustfire Valley
 1977@@@Zul'Gurub
 1978@@@Misty Reed Post
-1997@@@Bloodvenom Post
-1998@@@Talonbranch Glade
+1997@@@Bloodvenom Post 
+1998@@@Talonbranch Glade 
 2017@@@Stratholme
 2037@@@UNUSEDShadowfang Keep 003
 2057@@@Scholomance
@@ -1220,10 +1220,6 @@
 16374@@@Arcane Sanctum
 16394@@@Naxxramas
 1.15.7.62797
-1221@@@Ruins of Eldarath 
-1997@@@Bloodvenom Post 
-1998@@@Talonbranch Glade 
-15810@@@Bloodvenom Post 
 2.5.1.38043
 65@@@Reuse Me 3
 66@@@Reuse Me 6
@@ -2553,8 +2549,6 @@
 14483@@@Wintergrasp Boundary
 3.4.0.45102
 14483@@@Uncharted Territory
-3.4.5.62824
-4096@@@Claytön's WoWEdit Land
 4.4.0.53627
 17@@@Northern Barrens
 33@@@Northern Stranglethorn
@@ -10728,3 +10722,12 @@
 16601@@@The Sunwell
 16863@@@Quiet Cavern
 16864@@@Consumptor Cave
+12.0.0.64975
+16814@@@Magisters' Terrace
+12.0.1.64889
+16543@@@Floaret Grotto
+16829@@@The Approach
+16873@@@Razorwind Camp
+16874@@@Founders Point Camp
+12.0.1.64914
+16875@@@Den of the Undreamt

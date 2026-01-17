@@ -1263,7 +1263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				q(4481, {	-- Libram of Constitution
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1282,7 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4483, {	-- Libram of Resilience
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1301,7 +1301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4463, {	-- Libram of Rumination
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1320,7 +1320,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4482, {	-- Libram of Tenacity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1339,7 +1339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4484, {	-- Libram of Voracity
 					["qg"] = 9836,	-- Mathredis Firestar
-					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["coord"] = { 65.0, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
@@ -1553,7 +1553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11079 },	-- Gor'tesh's Lopped Off Head
 								{ "o", 160840 },	-- Soft Dirt Mound
 							},
-							["coord"] = { 81, 46, BURNING_STEPPES },
+							["coord"] = { 81.0, 46.0, BURNING_STEPPES },
 						}),
 						i(11867, {	-- Maddening Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1831,7 +1831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  11470 },	-- Tablet Transcript
 								{ "o", 169294 },	-- Tablet of the Seven
 							},
-							["coord"] = { 53, 40, BURNING_STEPPES },
+							["coord"] = { 53.0, 40.0, BURNING_STEPPES },
 						}),
 					},
 				}),

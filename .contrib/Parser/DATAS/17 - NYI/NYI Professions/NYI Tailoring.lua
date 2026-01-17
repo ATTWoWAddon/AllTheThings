@@ -532,7 +532,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(118098),	-- Pattern: Murloc Chew Toy (RECIPE!)
 					-- Without SpellID attached
 					i(114851),	-- Pattern: Hexweave Cloth (RECIPE!)
-					i(118226),	-- Pattern: Miniature Flying Carpet \\ ern: Miniature Flying Carpet
+					i(118226),	-- Pattern: Miniature Flying Carpet
 					i(120128),	-- Pattern: Secrets of Draenor Tailoring (RECIPE!)
 					i(114868),	-- Pattern: Sumptuous Cowl (RECIPE!)
 					i(114870),	-- Pattern: Sumptuous Leggings (RECIPE!)

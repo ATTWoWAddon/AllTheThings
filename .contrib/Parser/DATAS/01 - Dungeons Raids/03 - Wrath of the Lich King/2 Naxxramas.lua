@@ -1766,6 +1766,9 @@ local DEATHS_BARGAINING_CHIP = 206576;
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 inst(754, {	-- Naxxramas
+	-- #if AFTER 10.1.5
+	["description"] = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
+	-- #endif
 	["mapID"] = NAXXRAMAS,
 	["coords"] = {
 		{ 87.4, 51.1, DRAGONBLIGHT },
@@ -2925,7 +2928,6 @@ inst(754, {	-- Naxxramas
 					}),
 					n(TREASURES, {
 						o(403731, {	-- Frozen Rune
-							["description"] = "Located everywhere inside of Naxxramas.",
 							["sourceQuests"] = {
 								76263,	-- The Dread Citadel - Naxxramas [Honored]
 								76264,	-- The Dread Citadel - Naxxramas [Revered]
@@ -2933,7 +2935,41 @@ inst(754, {	-- Naxxramas
 							},
 							["sourceQuestNumRequired"] = 1,
 							["groups"] = {
-								i(22682),	-- Frozen Rune
+								i(22682, {	-- Frozen Rune
+									["description"] = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
+									-- Arachnid Quarter: (6)
+										-- 1: Behind Anub'Rekhan
+										-- 2: To the left of Grand Widow Faerlina
+										-- 3: Eastern wall of the corridor parallel with Outer Ring.
+										-- 4: Secondmost westwern room of Outer ring, by upper entrance.
+										-- 5: Westernmost room of the outern room, by entrance
+										-- 6: Behind Maexxna
+									-- Plague Quarter: (8)
+										-- 7: Behind Noth the Plaguebringer
+										-- 8 + 9: Left and right sides, room of Heigan the Unclean
+										-- 10 + 11: Left side, room of Loatheb.
+										-- 12: Northenmost room of Outer Ring, by southern entrance
+										-- 13: Centre room, Outer Ring
+										-- 14: Westernmost room of Outer Ring, entrance to balcony overseeing room of Noth the Plaguebringer.
+									-- Military Quarter: (8)
+										-- 15: Left side, Instructor Razuvious
+										-- 16: North wall, western room of Gothik the Harvester.
+										-- 17: Junction room, Outer Ring
+										-- 18: Thirdmost northern room of Outer Ring, by northen entrance
+										-- 19: Secondmost northen room of Outer Ring, by lower entrace.
+										-- 20: Northenmost room of the Outer Ring, end wall ooze pool.
+										-- 21 + 22: Northen and southern corners, Horsemen's Assembly
+									-- Construct Quarter: (9)
+										-- 23: Westernmost wall section of southern hallroom
+										-- 24: Northenmost section, downstair room of Grobbulus
+										-- 25: Stairway, room of Grobbulus
+										-- 26: Right side, room of Gluth
+										-- 27: Thirdmost southern room of Outer Ring, by northen entrance
+										-- 28: Secondmost southern room of Outer Ring, by lower entrance
+										-- 29: Thirdmost eastern room of Outer Ring, by eastern entrance
+										-- 30: Easternmost room of Outer Ring, by entrance
+										-- 31: West of Thaddius
+								}),
 							},
 						}),
 					}),

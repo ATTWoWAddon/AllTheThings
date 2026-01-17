@@ -16748,8 +16748,6 @@ s(146471)/i(29143),	-- thoof Hide Quiver \\ Clefthoof Hide Quiver
 s(146472)/i(29144),	-- Hide Quiver \\ Worg Hide Quiver
 s(146473)/i(34100),	-- hide Quiver \\ Knothide Quiver
 s(146474)/i(34105),	-- er of a Thousand Feathers \\ Quiver of a Thousand Feathers
-3.4.3.51831
-s(48336)/i(92553),	-- ish X-Ray Specs Visual \\ Gnomish X-Ray Specs Visual
 7.3.0.24473
 s(147)/i(906),	-- Tan Leather Shoulderpads (Test)
 s(148)/i(907),	-- Black Mail Shoulderpads of might (Test)
@@ -16801,7 +16799,6 @@ s(2552)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
 s(2553)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
 s(2637)/i(6886),	-- Monster - Throwing Knife
 s(2730)/i(7248),	-- Twain TEST Cloak
-s(3007)/i(7996),	-- Fishing Hat \\ Worn Fishing Hat
 s(3010)/i(8067),	-- ted Light Shot \\ Crafted Light Shot
 s(3011)/i(8068),	-- ted Heavy Shot \\ Crafted Heavy Shot
 s(3012)/i(8069),	-- ted Solid Shot \\ Crafted Solid Shot
@@ -17531,7 +17528,6 @@ s(16067)/i(34603),	-- racting Blades \\ Distracting Blades
 s(16081)/i(34622),	-- esever \\ Spinesever
 s(16096)/i(34662),	-- zzOLDEnchanted Thorium Spikes
 s(16125)/i(34716),	-- er Cufflinks \\ Silver Cufflinks
-s(16127)/i(34718),	-- k Leather Shoes \\ Black Leather Shoes
 s(16130)/i(34783),	-- tstrike \\ Nightstrike
 s(16226)/i(34965),	-- Test Copy Unwavering Legguards
 s(16227)/i(34966),	-- Test Two Unwavering Legguards
@@ -17843,7 +17839,6 @@ s(21771)/i(45296),	-- ling Blades \\ Twirling Blades
 s(21946)/i(45499),	-- Test Wraps of the Item Purchase Refund
 s(21997)/i(45575),	-- Test Melee Rifle [PH]
 s(22046)/i(45692),	-- Monster - Sword, Vargul (Blue) (2H)
-s(22093)/i(45860),	-- tal Tiara \\ Crystal Tiara
 s(22232)/i(46104),	-- Shirt of the Yogg-Slayer
 s(22233)/i(46105),	-- Shirt of the Future Champion
 s(22431)/i(46326),	-- Conqueror's Darkruned Boots
@@ -19358,7 +19353,6 @@ s(31112)/i(61917),	-- QA PVP Test Warrior DPS Set Helm
 s(31113)/i(61918),	-- QA PVP Test Warrior DPS Set Legs
 s(31114)/i(61919),	-- QA PVP Test Warrior DPS Set Shoulders
 s(31134)/i(62032),	-- Monster - Mace, Wildhammer Stormhammer (Lightning)
-s(31140)/i(62058),	-- diated Bandages \\ Irradiated Bandages
 s(31141)/i(62059),	-- Gnome Pants \\ Torn Gnome Pants
 s(31142)/i(62060),	-- diated Gnome Boots \\ Irradiated Gnome Boots
 s(31297)/i(62232),	-- Great Sword of the Sin'dorei
@@ -24258,7 +24252,6 @@ s(47327)/i(90982),	-- Art Template Mail Hand - Mail_PVPHunter_F_01 - Red
 s(47328)/i(90983),	-- Art Template Mail Head - Mail_PVPHunter_F_01 - Red
 s(47329)/i(90984),	-- Art Template Mail Legs - Mail_PVPHunter_F_01 - Red
 s(47330)/i(90985),	-- Art Template Mail Shoulder - Mail_PVPHunter_F_01 - Red
-s(47331)/i(90986),	-- Bracelet \\ Ruby Bracelet
 s(47332)/i(90987),	-- Art Template Plate Belt - Plate_PVPDeathKnight_F_01 - Alliance
 s(47333)/i(90988),	-- Art Template Plate Boot - Plate_PVPDeathKnight_F_01 - Alliance
 s(47334)/i(90989),	-- Art Template Plate Chest - Plate_PVPDeathKnight_F_01 - Alliance
@@ -24712,7 +24705,6 @@ s(48427)/i(92891),	-- Art Template Generic Head - Helm_Misc_FireworkPartyHat_A_0
 s(48428)/i(92892),	-- Art Template Generic Head - Helm_Misc_FishPartyHat_A_01
 s(48429)/i(92893),	-- Art Template Generic Head - Helm_Misc_SquidPartyHat_A_01
 s(48431)/i(92895),	-- Art Template Generic Head - Helm_Misc_VikingPartyHat_A_01
-s(48432)/i(92948),	-- ler's Razor Claws \\ Brawler's Razor Claws
 s(48433)/i(92961),	-- Monster - Staff_2H_Hozumonkeyking_01
 s(48553)/i(93150),	-- Art Template Leather Belt Leather_PVPRogue_F_01 - Alliance
 s(48554)/i(93151),	-- Art Template Leather Boot Leather_PVPRogue_F_01 - Alliance
@@ -24898,7 +24890,6 @@ s(48988)/i(93837),	-- Art Template Plate Head - Plate_PVPWarrior_F_01 - Bronze
 s(48989)/i(93838),	-- Art Template Plate Legs - Plate_PVPWarrior_F_01 - Bronze
 s(48990)/i(93839),	-- Art Template Plate Shoulder - Plate_PVPWarrior_F_01 - Bronze
 s(48991)/i(93840),	-- Art Template Plate Wrist - Plate_PVPWarrior_F_01 - Bronze
-s(49008)/i(93858),	-- ler's Bladed Claws \\ Brawler's Bladed Claws
 s(49018)/i(93868),	-- Art Template Plate Belt - Plate_PVPWarrior_F_01 - Gold
 s(49019)/i(93869),	-- Art Template Plate Boot - Plate_PVPWarrior_F_01 - Gold
 s(49020)/i(93870),	-- Art Template Plate Chest - Plate_PVPWarrior_F_01 - Gold
@@ -30980,6 +30971,13 @@ s(84500)/i(144259),	-- Kil'jaeden's Burning Wish \\ jaeden's Burning Wish
 s(84506)/i(144278),	--
 s(84514)/i(144320),	--
 s(84515)/i(144321),	--
+s(84530)/i(144365),	-- The Very Best Shirt \\ Very Best Shirt
+s(84531)/i(144366),	-- Dubvest \\ est
+s(84532)/i(144367),	-- Observer's Shirt \\ rver's Shirt
+s(84533)/i(144368),	-- Felfeather Jersey \\ eather Jersey
+s(84535)/i(144370),	-- Croc-Tooth Harness \\ -Tooth Harness
+s(84536)/i(144371),	-- Gorestained Tunic \\ stained Tunic
+s(84537)/i(144372),	-- Hide of the Murderaffe \\ of the Murderaffe
 s(84542)/i(144388),	--
 s(84579)/i(144456),	--
 s(85937)/i(146114),	--
@@ -31080,6 +31078,7 @@ s(89294)/i(151172),	--
 s(89301)/i(151182),	--
 s(89306)/i(151196),	--
 s(89323)/i(151260),	--
+s(89324)/i(151263),	-- Electrified Compression Shirt \\ trified Compression Shirt
 s(89397)/i(151357),	--
 s(89398)/i(151358),	--
 s(89399)/i(151359),	--
@@ -35455,8 +35454,6 @@ s(168880)/i(190619),	-- Antecedent's Aliform Joggers \\ [DNT] 9.2 Raid - Sepulch
 s(168882)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 s(168883)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 s(168884)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
-9.2.5.43254
-s(180385)/i(192441),	-- Rhapsodic Pulverizer
 10.0.0.44649
 s(167515)/i(189590),	-- 10.0 Raid Template - Mail - Waist
 s(167516)/i(189590),	-- 10.0 Raid Template - Mail - Waist
@@ -35756,75 +35753,6 @@ s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
 10.2.6.53840
 s(197334)/i(216027),	-- Draconic Gladiator's Silk Blouse
-11.0.0.54675
-s(221287)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221288)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221289)/i(225726),	-- 11.0 Raid Template - Plate - Waist
-s(221630)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(221631)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(221646)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(221647)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(221713)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221714)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221715)/i(225736),	-- 11.0 Raid Template - Plate - Head
-s(221717)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(221718)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(221719)/i(225737),	-- 11.0 Raid Template - Plate - Feet
-s(222487)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222488)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222489)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222490)/i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-s(222515)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222516)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222517)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222518)/i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-s(222523)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222524)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222525)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222526)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(222783)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222784)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222785)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-s(222786)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-11.0.2.55665
-s(225006)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-s(225007)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-11.1.7.60520
-s(229796)/i(231758),	--
-11.2.0.61476
-s(285331)/i(237520),	--
-s(289548)/i(241239),	-- Epaulets of Arcing Power
-s(289550)/i(241240),	-- Type II Bomber Jacket
-11.2.5.62554
-s(290211)/i(242368),	-- The First Satyr's Spaulders
-s(294233)/i(247457),	-- Captain's Parade Breastplate
-s(294234)/i(247457),	-- Captain's Parade Breastplate
-s(294235)/i(247457),	-- Captain's Parade Breastplate
-11.2.7.63642
-s(230711)/i(233067),	--
-s(289394)/i(240847),	--
-s(290289)/i(242548),	--
-s(292276)/i(244545),	--
-s(294117)/i(247219),	--
-s(295218)/i(247697),	--
-s(295620)/i(248667),	--
-s(295621)/i(248668),	--
-s(295622)/i(248669),	--
-s(295623)/i(248670),	--
-s(295624)/i(248671),	--
-s(295625)/i(248672),	--
-s(295626)/i(248673),	--
-s(295627)/i(248674),	--
-s(295628)/i(248675),	--
-s(295629)/i(248676),	--
-s(295630)/i(248677),	--
-s(295631)/i(248678),	--
-s(295632)/i(248679),	--
-s(295728)/i(248952),	--
-s(296324)/i(249825),	--
-s(298469)/i(252260),	--
-s(298571)/i(252989),	--
-s(301157)/i(257326),	--
 12.0.0.63534
 s(266734)/i(235225),	-- Garden Shears
 s(266736)/i(235231),	--
@@ -36040,7 +35968,7 @@ s(292318)/i(244588),	-- Scout's Scaled Boots
 s(292319)/i(244589),	-- Scout's Scaled Bracers
 s(292320)/i(244590),	-- Scout's Scaled Vest
 s(292321)/i(244591),	-- Smuggler's Reinforced Hood
-s(292322)/i(244592),	-- Smuggler's Reinforced Shoulders
+s(292322)/i(244592),	-- Smuggler's Reinforced Shoulderguards \\ Smuggler's Reinforced Shoulders
 s(292323)/i(244593),	-- Smuggler's Reinforced Gloves
 s(292324)/i(244594),	-- Smuggler's Reinforced Pants
 s(292325)/i(244595),	-- Smuggler's Reinforced Binding
@@ -36587,7 +36515,7 @@ s(296024)/i(249279),	-- Sunstrike Rifle \\ 12.0 Raid - Guns - RangedRight
 s(296025)/i(249280),	-- Emblazoned Sunglaive \\ 12.0 Raid - Warglaives - Boss Name - Weapon
 s(296026)/i(249281),	-- Blade of the Final Twilight \\ 12.0 Raid - Sword1H - Str -Weapon
 s(296027)/i(249282),	--
-s(296028)/i(249283),	-- Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
+s(296028)/i(249283),	-- Belo'melorn, the Shattered Talon \\ Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
 s(296029)/i(249284),	-- Belo'ren's Swift Talon \\ 12.0 Raid - Dagger - Agi - Boss Name - Weapon
 s(296030)/i(249285),	--
 s(296031)/i(249286),	-- Brazier of the Dissonant Dirge \\ 12.0 Raid - Staff - Int - 2 Hand
@@ -36675,10 +36603,10 @@ s(296112)/i(249319),	-- Endless March Waistwrap \\ 12.0 Raid - Cloth - Waist
 s(296113)/i(249319),	-- Endless March Waistwrap \\ 12.0 Raid - Cloth - Waist
 s(296114)/i(249319),	-- Endless March Waistwrap \\ 12.0 Raid - Cloth - Waist
 s(296115)/i(249319),	-- Endless March Waistwrap \\ 12.0 Raid - Cloth - Waist
-s(296116)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(296117)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(296118)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(296119)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(296116)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(296117)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(296118)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(296119)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
 s(296120)/i(249321),	-- Vaelgor's Fearsome Grasp \\ 12.0 Raid - Leather - Hand
 s(296121)/i(249321),	-- Vaelgor's Fearsome Grasp \\ 12.0 Raid - Leather - Hand
 s(296122)/i(249321),	-- Vaelgor's Fearsome Grasp \\ 12.0 Raid - Leather - Hand
@@ -38274,67 +38202,67 @@ s(298078)/i(251007),	--
 s(298079)/i(251008),	--
 s(298080)/i(251009),	--
 s(298081)/i(251010),	--
-s(298083)/i(251077),	-- Item - Staff - Agi - 2 Hand
-s(298084)/i(251078),	-- Item - Sword2H - Str - 2 Hand
-s(298085)/i(251079),	-- Item - Mail - Wrist
-s(298086)/i(251080),	-- Item - Cloth - Head
-s(298087)/i(251081),	-- Item - Plate - Hand
-s(298088)/i(251082),	-- Item - Leather - Waist
-s(298089)/i(251083),	-- Item - Mace1H - Int - Weapon
-s(298090)/i(251084),	-- Item - Mail - Feet
-s(298091)/i(251085),	-- Item - Cloth - Shoulder
-s(298092)/i(251086),	-- Item - Plate - Waist
-s(298093)/i(251087),	-- Item - Leather - Legs
-s(298094)/i(251088),	-- Item - Axe1H - Str - Weapon
-s(298095)/i(251089),	-- Item - Mail - Hand
-s(298096)/i(251090),	-- Item - Cloth - Legs
-s(298097)/i(251091),	-- Item - Plate - Feet
-s(298098)/i(251092),	-- Item - Leather - Shoulder
-s(298099)/i(251094),	-- Item - Offhand - Holdable
-s(298100)/i(251095),	-- Item - Bows - Ranged
-s(298101)/i(251097),	-- Item - Mail - Shoulder
-s(298102)/i(251098),	-- Item - Plate - Head
-s(298103)/i(251099),	-- Item - Leather - Chest
+s(298083)/i(251077),	-- Roostwarden's Bough \\ Item - Staff - Agi - 2 Hand
+s(298084)/i(251078),	-- Emberdawn Defender \\ Item - Sword2H - Str - 2 Hand
+s(298085)/i(251079),	-- Amberfrond Bracers \\ Item - Mail - Wrist
+s(298086)/i(251080),	-- Brambledawn Halo \\ Item - Cloth - Head
+s(298087)/i(251081),	-- Embergrove Grasps \\ Item - Plate - Hand
+s(298088)/i(251082),	-- Snapvine Cinch \\ Item - Leather - Waist
+s(298089)/i(251083),	-- Excavating Cudgel \\ Item - Mace1H - Int - Weapon
+s(298090)/i(251084),	-- Whipcoil Sabatons \\ Item - Mail - Feet
+s(298091)/i(251085),	-- Mantle of Dark Devotion \\ Item - Cloth - Shoulder
+s(298092)/i(251086),	-- Riphook Defender \\ Item - Plate - Waist
+s(298093)/i(251087),	-- Legwraps of Lingering Legacies \\ Item - Leather - Legs
+s(298094)/i(251088),	-- Warworn Cleaver \\ Item - Axe1H - Str - Weapon
+s(298095)/i(251089),	-- Grips of Forgotten Honor \\ Item - Mail - Hand
+s(298096)/i(251090),	-- Commander's Faded Breeches \\ Item - Cloth - Legs
+s(298097)/i(251091),	-- Sabatons of Furious Revenge \\ Item - Plate - Feet
+s(298098)/i(251092),	-- Fallen Grunt's Mantle \\ Item - Leather - Shoulder
+s(298099)/i(251094),	-- Sigil of the Restless Heart \\ Item - Offhand - Holdable
+s(298100)/i(251095),	-- Hurricane's Heart \\ Item - Bows - Ranged
+s(298101)/i(251097),	-- Spaulders of Arrow's Flight \\ Item - Mail - Shoulder
+s(298102)/i(251098),	-- Fletcher's Faded Faceplate \\ Item - Plate - Head
+s(298103)/i(251099),	-- Vest of the Howling Gale \\ Item - Leather - Chest
 s(298104)/i(251100),	-- Item - Mace1H - Str - Weapon
-s(298105)/i(251101),	-- Item - Plate - Chest
-s(298106)/i(251102),	-- Item - Cloth - Waist
-s(298107)/i(251103),	-- Item - Leather - Wrist
-s(298108)/i(251104),	-- Item - Mail - Legs
-s(298109)/i(251105),	-- Item - Shield - Off-Hand Weapon
+s(298105)/i(251101),	-- Arcane Guardian's Shell \\ Item - Plate - Chest
+s(298106)/i(251102),	-- Clasp of Compliance \\ Item - Cloth - Waist
+s(298107)/i(251103),	-- Custodial Cuffs \\ Item - Leather - Wrist
+s(298108)/i(251104),	-- Leggings of Orderly Conduct \\ Item - Mail - Legs
+s(298109)/i(251105),	-- Ward of the Spellbreaker \\ Item - Shield - Off-Hand Weapon
 s(298110)/i(251106),	-- Item - Warglaives - Agi - Weapon
-s(298111)/i(251107),	-- Item - Plate - Feet
-s(298112)/i(251108),	-- Item - Cloth - Wrist
-s(298113)/i(251109),	-- Item - Leather - Head
-s(298114)/i(251110),	-- Item - Mail - Waist
-s(298115)/i(251111),	-- Item - Dagger - Int - Weapon
-s(298116)/i(251112),	-- Item - Plate - Waist
-s(298117)/i(251113),	-- Item - Leather - Hand
-s(298118)/i(251114),	-- Item - Mail - Chest
-s(298119)/i(251117),	-- Item - Axe2H - Str - 2 Hand
-s(298120)/i(251118),	-- Item - Plate - Legs
-s(298121)/i(251119),	-- Item - Mail - Head
-s(298122)/i(251120),	-- Item - Cloth - Chest
-s(298123)/i(251121),	-- Item - Leather - Feet
-s(298124)/i(251122),	-- Item - Sword1H - Agi - Weapon
-s(298125)/i(251123),	-- Item - Staff - Int - 2 Hand
-s(298126)/i(251124),	-- Item - Leather - Hand
-s(298127)/i(251125),	-- Item - Mail - Feet
-s(298128)/i(251126),	-- Item - Plate - Head
-s(298129)/i(251127),	-- Item - Cloth - Wrist
-s(298130)/i(251128),	-- Item - Dagger - Agi - Weapon
-s(298131)/i(251129),	-- Item - Cloth - Hand
-s(298132)/i(251130),	-- Item - Leather - Legs
-s(298133)/i(251131),	-- Item - Mail - Shoulder
-s(298134)/i(251132),	-- Item - Cloth - Cloak
-s(298135)/i(251133),	-- Item - Plate - Wrist
-s(298136)/i(251134),	-- Item - Axe2H - Str - 2 Hand
-s(298137)/i(251135),	-- Item - Leather - Wrist
-s(298138)/i(251137),	-- Item - Cloth - Feet
-s(298139)/i(251138),	-- Item - Plate - Shoulder
-s(298140)/i(251139),	-- Item - Cloth - Chest
-s(298141)/i(251140),	-- Item - Leather - Head
-s(298142)/i(251141),	-- Item - Mail - Legs
-s(298143)/i(251143),	-- Item - FistWeapon - Agi - Weapon
+s(298111)/i(251107),	-- Oathsworn Stompers \\ Item - Plate - Feet
+s(298112)/i(251108),	-- Wraps of Watchful Wrath \\ Item - Cloth - Wrist
+s(298113)/i(251109),	-- Spellsnap Shadowmask \\ Item - Leather - Head
+s(298114)/i(251110),	-- Sunlash's Sunsash \\ Item - Mail - Waist
+s(298115)/i(251111),	-- Splitshroud Stinger \\ Item - Dagger - Int - Weapon
+s(298116)/i(251112),	-- Shadowsplit Girdle \\ Item - Plate - Waist
+s(298117)/i(251113),	-- Gloves of Viscous Goo \\ Item - Leather - Hand
+s(298118)/i(251114),	-- Voidwarped Oozemail \\ Item - Mail - Chest
+s(298119)/i(251117),	-- Whirling Voidcleaver \\ Item - Axe2H - Str - 2 Hand
+s(298120)/i(251118),	-- Legplates of Lingering Dusk \\ Item - Plate - Legs
+s(298121)/i(251119),	-- Vortex Visage \\ Item - Mail - Head
+s(298122)/i(251120),	-- Wraps of Umbral Descent \\ Item - Cloth - Chest
+s(298123)/i(251121),	-- Domanaar's Dire Treads \\ Item - Leather - Feet
+s(298124)/i(251122),	-- Shadowslash Slicer \\ Item - Sword1H - Agi - Weapon
+s(298125)/i(251123),	-- Nibbles' Training Rod \\ Item - Staff - Int - 2 Hand
+s(298126)/i(251124),	-- Gauntlets of Fevered Defense \\ Item - Leather - Hand
+s(298127)/i(251125),	-- Felsoaked Soles \\ Item - Mail - Feet
+s(298128)/i(251126),	-- Greathelm of Temptation \\ Item - Plate - Head
+s(298129)/i(251127),	-- Nibbling Armbands \\ Item - Cloth - Wrist
+s(298130)/i(251128),	-- Bladesorrow \\ Item - Dagger - Agi - Weapon
+s(298131)/i(251129),	-- Counterfeit Clutches \\ Item - Cloth - Hand
+s(298132)/i(251130),	-- Breeches of Deft Deals \\ Item - Leather - Legs
+s(298133)/i(251131),	-- Jangling Felpaulets \\ Item - Mail - Shoulder
+s(298134)/i(251132),	-- Speakeasy Shroud \\ Item - Cloth - Cloak
+s(298135)/i(251133),	-- Overseer's Vambraces \\ Item - Plate - Wrist
+s(298136)/i(251134),	-- Xathuux's Cleave \\ Item - Axe2H - Str - 2 Hand
+s(298137)/i(251135),	-- Fury-fletched Armlets \\ Item - Leather - Wrist
+s(298138)/i(251137),	-- Tempestuous Sandals \\ Item - Cloth - Feet
+s(298139)/i(251138),	-- Cinderfury Shoulderguards \\ Item - Plate - Shoulder
+s(298140)/i(251139),	-- Summoner's Searing Shirt \\ Item - Cloth - Chest
+s(298141)/i(251140),	-- Vilefiend's Guise \\ Item - Leather - Head
+s(298142)/i(251141),	-- Lithiel's Linked Leggings \\ Item - Mail - Legs
+s(298143)/i(251143),	-- Grim Harvest Gloves \\ Item - FistWeapon - Agi - Weapon
 s(298144)/i(251144),	-- Autumn's Boon Belt \\ Item - Plate - Waist
 s(298145)/i(251145),	-- Forgotten Tribe Footguards \\ Item - Mail - Feet
 s(298146)/i(251146),	-- Scavenger's Spaulders \\ Item - Leather - Shoulder
@@ -38351,24 +38279,24 @@ s(298156)/i(251157),	-- Item - Plate - Shoulder
 s(298157)/i(251158),	-- Nalorakk's Nightmare \\ Item - Mail - Head
 s(298158)/i(251159),	-- War Trial Vestments \\ Item - Leather - Chest
 s(298159)/i(251160),	-- Forest Dream Leg-guards \\ Item - Cloth - Legs
-s(298160)/i(251161),	-- Item - Cloth - Cloak
-s(298161)/i(251162),	-- Item - Polearms - Agi - 2 Hand
-s(298162)/i(251163),	-- Item - FistWeapon - Int - Weapon
-s(298163)/i(251164),	-- Item - Plate - Shoulder \\ Item - Plate - Wrist
+s(298160)/i(251161),	-- Soulhunter's Mask \\ Item - Cloth - Cloak
+s(298161)/i(251162),	-- Traitor's Talon \\ Item - Polearms - Agi - 2 Hand
+s(298162)/i(251163),	-- Berserker's Hexclaws \\ Item - FistWeapon - Int - Weapon
+s(298163)/i(251164),	-- Amalgamation's Harness \\ Item - Plate - Shoulder \\ Item - Plate - Wrist
 s(298164)/i(251165),	-- Item - Mail - Hand
-s(298165)/i(251166),	-- Item - Leather - Waist
-s(298166)/i(251167),	-- Item - Cloth - Feet
-s(298167)/i(251168),	-- Item - Sword2H - Str - 2 Hand
-s(298168)/i(251169),	-- Item - Plate - Feet
-s(298169)/i(251170),	-- Item - Mail - Legs
-s(298170)/i(251171),	-- Item - Leather - Shoulder
-s(298171)/i(251172),	-- Item - Cloth - Hand
-s(298172)/i(251174),	-- Item - Bows - Ranged
-s(298173)/i(251175),	-- Item - Axe1H - Agi - Weapon
-s(298174)/i(251176),	-- Item - Mail - Shoulder \\ Item - Plate - Shoulder
-s(298175)/i(251177),	-- Item - Leather - Head
-s(298176)/i(251178),	-- Item - Dagger - Int - Weapon
-s(298177)/i(251179),	-- Item - Mail - Chest
+s(298165)/i(251166),	-- Falconer's Cinch \\ Item - Leather - Waist
+s(298166)/i(251167),	-- Nightprey Stalkers \\ Item - Cloth - Feet
+s(298167)/i(251168),	-- Liferipper's Cutlass \\ Item - Sword2H - Str - 2 Hand
+s(298168)/i(251169),	-- Footwraps of Ill-Fate \\ Item - Plate - Feet
+s(298169)/i(251170),	-- Wickedweave Trousers \\ Item - Mail - Legs
+s(298170)/i(251171),	-- Enthralled Bonespines \\ Item - Leather - Shoulder
+s(298171)/i(251172),	-- Vilehex Bonds \\ Item - Cloth - Hand
+s(298172)/i(251174),	-- Deciever's Rotbow \\ Item - Bows - Ranged
+s(298173)/i(251175),	-- Soulblight Cleaver \\ Item - Axe1H - Agi - Weapon
+s(298174)/i(251176),	-- Reanimator's Weight \\ Item - Mail - Shoulder \\ Item - Plate - Shoulder
+s(298175)/i(251177),	-- Fetid Vilecrown \\ Item - Leather - Head
+s(298176)/i(251178),	-- Ceremonial Hexblade \\ Item - Dagger - Int - Weapon
+s(298177)/i(251179),	-- Decaying Cuirass \\ Item - Mail - Chest
 s(298178)/i(251180),	-- Item - Dagger - Agi - Weapon
 s(298179)/i(251181),	-- Item - Polearm - Str - 2 Hand
 s(298180)/i(251182),	-- Item - Plate - Legs
@@ -40859,7 +40787,7 @@ s(302101)/i(260303),	--
 s(302102)/i(251935),	-- Lightgrasp Worldroot \\ Light's Righteous Arm
 s(302103)/i(251885),	-- Radiant Foil
 s(302104)/i(260310),	--
-s(302105)/i(260312),	-- Item - Cloth - Cloak
+s(302105)/i(260312),	-- Defiant Defender's Drape \\ Item - Cloth - Cloak
 12.0.0.63724
 s(302106)/i(260370),	-- Visage of Unseen Truths \\ 12.0 Raid - Cloth - Head
 s(302107)/i(260370),	-- Visage of Unseen Truths \\ 12.0 Raid - Cloth - Head
@@ -41116,7 +41044,7 @@ s(302618)/i(262990),	-- Sin'dorei Arcane Manuscript
 s(302619)/i(262991),	-- Two Thousand and Two Nights
 s(302620)/i(262992),	-- Myth Maker's Brush
 s(302635)/i(263009),	-- Valeera's Wicked Knife
-s(302645)/i(263193),	-- Item - Plate - Wrist
+s(302645)/i(263193),	-- Trollhunter's Bands \\ Item - Plate - Wrist
 s(302651)/i(263265),	-- Hara'ti Defender's Sash
 s(302652)/i(263267),	-- Hara'ti Defender's Cord
 s(302653)/i(263268),	-- Hara'ti Defender's Belt
@@ -41324,10 +41252,10 @@ s(303239)/i(249318),	-- Nullwalker's Dread Epaulettes \\ 12.0 Raid - Mail - Shou
 s(303240)/i(249318),	-- Nullwalker's Dread Epaulettes \\ 12.0 Raid - Mail - Shoulder
 s(303241)/i(249318),	-- Nullwalker's Dread Epaulettes \\ 12.0 Raid - Mail - Shoulder
 s(303242)/i(249318),	-- Nullwalker's Dread Epaulettes \\ 12.0 Raid - Mail - Shoulder
-s(303243)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(303244)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(303245)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
-s(303246)/i(249320),	-- Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(303243)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(303244)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(303245)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
+s(303246)/i(249320),	-- Sabatons of Obscurement \\ Sabatons of Obscurment \\ 12.0 Raid - Mail - Feet
 s(303247)/i(264193),	-- Amani Skyhunter's Sight
 s(303248)/i(264194),	-- Amani Flamebinder's Staff
 s(303249)/i(264195),	-- Amani Fangcaller's Spear
@@ -41360,7 +41288,7 @@ s(303280)/i(264294),	-- Nethersent Eredar's Cloak
 s(303281)/i(264295),	-- Nightbreaker's Bands \\ [DNT] Cloth Bracers
 s(303282)/i(264296),	-- Nightbreaker's Bracers \\ [DNT] Leather Bracers
 s(303283)/i(264297),	-- Nightbreaker's Cuffs \\ [DNT] Mail Bracers
-s(303284)/i(264298),	-- Nightbreaker's Vambracers \\ [DNT] Plate Bracers
+s(303284)/i(264298),	-- Nightbreaker's Vambraces \\ Nightbreaker's Vambracers \\ [DNT] Plate Bracers
 s(303285)/i(264299),	-- Viral Coagulation Belt \\ [DNT] Leather Belt
 s(303286)/i(264300),	-- Viral Coagulation Sash \\ [DNT] Cloth Belt
 s(303287)/i(264301),	-- Viral Coagulation Girdle \\ [DNT] Mail Belt
@@ -41441,10 +41369,10 @@ s(303371)/i(264466),	-- Tuskcarver's Trophy
 s(303372)/i(264467),	-- Tuskcarver's Shield
 s(303373)/i(264468),	-- Cloak of the Revantusk Rite
 s(303374)/i(264469),	-- Ashbound Tribute Cloak
-s(303375)/i(264471),	-- Loa Imposters Gloves
-s(303376)/i(264472),	-- Loa Imposters Clawguards
-s(303377)/i(264473),	-- Loa Imposters Tidegrips
-s(303378)/i(264474),	-- Loa Imposters Brinefists
+s(303375)/i(264471),	-- Loa Impostor's Gloves \\ Loa Imposters Gloves
+s(303376)/i(264472),	-- Loa Impostor's Clawguards \\ Loa Imposters Clawguards
+s(303377)/i(264473),	-- Loa Impostor's Tidegrips \\ Loa Imposters Tidegrips
+s(303378)/i(264474),	-- Loa Impostor's Brinefists \\ Loa Imposters Brinefists
 s(303383)/i(264519),	-- Repurposed Voidwalker's Chestplate
 s(303384)/i(264520),	-- Warden's Leycrook
 s(303385)/i(264521),	-- Striderplume Focus
@@ -41721,9 +41649,9 @@ s(303892)/i(265638),	-- Galactic Gladiator's Greataxe
 s(303893)/i(249925),	-- Hungering Victory \\ 12.0 Raid - Dagger - Agi - Weapon
 s(303894)/i(249925),	-- Hungering Victory \\ 12.0 Raid - Dagger - Agi - Weapon
 s(303895)/i(249925),	-- Hungering Victory \\ 12.0 Raid - Dagger - Agi - Weapon
-s(303896)/i(249283),	-- Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
-s(303897)/i(249283),	-- Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
-s(303898)/i(249283),	-- Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
+s(303896)/i(249283),	-- Belo'melorn, the Shattered Talon \\ Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
+s(303897)/i(249283),	-- Belo'melorn, the Shattered Talon \\ Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
+s(303898)/i(249283),	-- Belo'melorn, the Shattered Talon \\ Belo'ren's Mystic Talon \\ 12.0 Raid - Dagger - Int - Boss Name - Weapon
 s(303899)/i(249284),	-- Belo'ren's Swift Talon \\ 12.0 Raid - Dagger - Agi - Boss Name - Weapon
 s(303900)/i(249284),	-- Belo'ren's Swift Talon \\ 12.0 Raid - Dagger - Agi - Boss Name - Weapon
 s(303901)/i(249284),	-- Belo'ren's Swift Talon \\ 12.0 Raid - Dagger - Agi - Boss Name - Weapon
@@ -42086,3 +42014,23 @@ s(304288)/i(267639),	-- Tarnished Silvermoon Sunguard
 s(304289)/i(267640),	-- Tarnished Silvermoon Sunveil
 s(304290)/i(267641),	-- Tarnished Silvermoon Suncrest
 s(304324)/i(268069),	--
+12.0.0.64975
+s(304557)/i(268361),	--
+12.0.1.64889
+s(304520)/i(268274),	-- Blinky's Collar
+s(304555)/i(268326),	-- Sin'dorei Citizen's Cloak
+s(304556)/i(268327),	-- Sin'dorei Citizen's Shawl
+s(304558)/i(268365),	-- Thalassian Competitor's Staff
+s(304585)/i(268475),	-- Evercore Dome Dinger
+s(304586)/i(268477),	-- P.O.W. x3
+s(304587)/i(268479),	-- Thalassian Competitor's Rifle
+s(304617)/i(268634),	--
+s(304618)/i(268635),	--
+s(304619)/i(268636),	--
+s(304620)/i(268637),	--
+s(304621)/i(268638),	--
+s(304622)/i(268639),	--
+s(304623)/i(268640),	--
+s(304624)/i(268641),	--
+s(304625)/i(268642),	--
+s(304626)/i(268643),	--

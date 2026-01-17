@@ -178,7 +178,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
 			q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 			q(785, { ["name"] = "A Strategic Alliance", }),
-			q(908, { ["name"] = "Amongst the Ruins", }),
 			q(8489, { ["name"] = "An Intact Converter", }),
 			q(8478, { ["name"] = "Choose Your Weapon", }),
 			q(8230, { ["name"] = "Collin's Test Quest", }),
@@ -2540,6 +2539,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(41820, { ["name"] = "Walk Without Rhythm", }),	-- Walk Without Rhythm
 			q(40590, { ["name"] = "Warrior Inbound", }),	-- Warrior Inbound
 			q(37927, { ["name"] = "We Meet at Light's Hope", }),	-- We Meet at Light's Hope
+			q(44115, { ["name"] = "Welcome to Legion!", }),	-- Welcome to Legion!
 			q(37930, { ["name"] = "Whelp? That Happened.", }),	-- Whelp? That Happened.
 			q(41559, { ["name"] = "Where's Our Wine? - Tracking", }),	-- Where's Our Wine? - Tracking
 			q(41832, { ["name"] = "White Water Terror", }),	-- White Water Terror
@@ -2668,8 +2668,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(43635, { ["name"] = "Needs of the Many", ["_drop"] = { "g" }, }),	-- Needs of the Many
 			q(44091, { ["name"] = "Needs of the Many", }),	-- Needs of the Many
 			q(39868, { ["name"] = "Neltharion's Lair Heroic Reward Quest", }),	-- Neltharion's Lair Heroic Reward Quest
-			q(41211, { ["name"] = "Neltharion's Lair: Neltharion's Treasure", }),	-- Neltharion's Lair: Neltharion's Treasure
-			q(41857, { ["name"] = "Neltharion's Lair: Stonedark Slaves", }),	-- Neltharion's Lair: Stonedark Slaves
 			q(38661, { ["name"] = "Nightmare Bombs", }),	-- Nightmare Bombs
 			q(40811, { ["name"] = "Not to Scale", }),	-- Not to Scale
 			q(43742, { ["name"] = "Odyn Death Conversation Enabled", }),	-- Odyn Death Conversation Enabled
@@ -5891,10 +5889,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59986),	-- Wide Worlds of Catalysts
 			q(60888),	-- Ceremony of Awakening
 			q(60599),	-- Soul Shape
-			q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
-			q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
-			q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
-			q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 			q(60380),	-- A Source of Sorrowvine (Kyrian)
 			q(60379),	-- A Source of Sorrowvine (Necrolords)
 			q(60373),	-- A Source of Sorrowvine (Night Fae)
@@ -6947,11 +6941,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(63464),	--
 			q(63477),	--
 			q(63577),	--
-			q(63596),	--
-			q(63600),	--
-			q(63629),	--
-			q(63632),	--
-			q(63636),	--
 			q(63640),	--
 			q(63715),	--
 			q(63716),	--
@@ -7404,9 +7393,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66109),	-- Enchanted Compass
 			q(69840),	-- Enraged Sapphire
 			q(69849),	-- Enraged Steamburst Elemental
-			q(65569),	-- Ensemble: Twisted Arcanum Regalia
-			q(65676),	-- Ensemble: Chains of the Honored Valarjar
-			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
 			q(70596),	-- Essence of Arcana
 			q(66496),	-- Expedition Task Accepted (spellID 372078)
 			q(66497),	-- Expedition Task Accepted (spellID 372095)
@@ -8194,10 +8180,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75065),	-- Campaign Testing - Dummy Quest
 			q(73696),	-- Dragonscale Expedition Flag - Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 			q(73702),	-- Dragonscale Expedition Flag - Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
-			q(74363),	-- Ensemble: Cloudburst Regalia
-			q(74365),	-- Ensemble: Cyclonic Battlegear
-			q(74364),	-- Ensemble: Dust Devil Armor
-			q(74366),	-- Ensemble: Firestorm Armor
 			q(74361),	-- Deprecated Quest
 			q(74362),	-- Deprecated Quest
 			q(74774, {["_drop"] = {"g"}}),	-- More Keys
@@ -8399,8 +8381,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75536),	--
 			q(75605),	--
 			q(76198),	--
-			q(76226),	--
-			q(76237),	--
 			q(76245),	--
 			q(76289),	--
 			q(76360),	--

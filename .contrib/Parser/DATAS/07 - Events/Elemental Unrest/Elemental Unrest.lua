@@ -91,15 +91,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 						}),
 						objective(2, {	-- 0/1 Elemental Fire for the Soul
 							["provider"] = { "i", 52562 },	-- Elemental Fire for the Soul
-							["coord"] = { 73, 63, STORMWIND_CITY },
+							["coord"] = { 73.0, 63.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- 0/1 What Does 'The End of All Things' Mean for Me?
 							["provider"] = { "i", 52563 },	-- What Does 'The End of All Things' Mean for Me?
-							["coord"] = { 76, 59, STORMWIND_CITY },
+							["coord"] = { 76.0, 59.0, STORMWIND_CITY },
 						}),
 						objective(4, {	-- 0/1 Finding Security and Comfort in a Doomed World
 							["provider"] = { "i", 52565 },	-- Finding Security and Comfort in a Doomed World
-							["coord"] = { 73, 54, STORMWIND_CITY },
+							["coord"] = { 73.0, 54.0, STORMWIND_CITY },
 						}),
 					},
 				}),
@@ -152,15 +152,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					["groups"] = {
 						objective(1, {	-- Spread Message at Westbrook Garrison
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 24, 74, ELWYNN_FOREST },
+							["coord"] = { 24.0, 74.0, ELWYNN_FOREST },
 						}),
 						objective(2, {	-- Spread Message in Valley of Heroes
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 69, 83, STORMWIND_CITY },
+							["coord"] = { 69.0, 83.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- Spread Message in Goldshire
 							["provider"] = { "i", 53048 },	-- Doomsday Message
-							["coord"] = { 42, 66, ELWYNN_FOREST },
+							["coord"] = { 42.0, 66.0, ELWYNN_FOREST },
 						}),
 					},
 				}),
@@ -291,28 +291,28 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 								{ "n", 39757 },	-- Cultist Kagarn
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 17, DUROTAR },
+							["coord"] = { 48.0, 17.0, DUROTAR },
 						}),
 						objective(2, {	-- Speak to Cultist Agtar
 							["providers"] = {
 								{ "n", 39758 },	-- Cultist Agtar
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 17, DUROTAR },
+							["coord"] = { 48.0, 17.0, DUROTAR },
 						}),
 						objective(3, {	-- Speak to Cultist Tokka
 							["providers"] = {
 								{ "n", 39760 },	-- Cultist Tokka
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 48, 16, DUROTAR },
+							["coord"] = { 48.0, 16.0, DUROTAR },
 						}),
 						objective(4, {	-- Speak to Cultist Rokaga
 							["providers"] = {
 								{ "n", 39763 },	-- Cultist Rokaga
 								{ "i", 52729 },	-- Recruit's Robe
 							},
-							["coord"] = { 49, 17, DUROTAR },
+							["coord"] = { 49.0, 17.0, DUROTAR },
 						}),
 					},
 				}),
@@ -532,11 +532,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					["groups"] = {
 						objective(1, {	-- Disrupt Dwarven District Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations
-							["coord"] = { 64, 29.5, STORMWIND_CITY },
+							["coord"] = { 64.0, 29.5, STORMWIND_CITY },
 						}),
 						objective(2, {	-- Disrupt Cathedral Square Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations
-							["coord"] = { 58.3, 49, STORMWIND_CITY },
+							["coord"] = { 58.3, 49.0, STORMWIND_CITY },
 						}),
 						objective(3, {	-- Disrupt Park Ritual
 							["provider"] = { "i", 62412 },	-- Book of Incantations

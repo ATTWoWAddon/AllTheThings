@@ -466,7 +466,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = { i(139538) },	-- Nightmare Lash (QI!)
 					}),
 					q(42818, {	-- The Scarlet Assault
-						["sourceQuest"] = 43572,	-- Darkheart Thicket: The Nightmare Lash
+						["sourceQuests"] = {
+							43572,	-- Darkheart Thicket: The Nightmare Lash
+							44082,	-- Knights of the Ebon Blade
+						},
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
@@ -571,15 +574,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43686, {	-- The Fourth Horseman
 						["sourceQuests"] = {
-							43573,	-- Advancing the War Effort
-							43928,	-- Aggregates of Anguish
 							44690,	-- A Thirst For Blood
 							91615,	-- A Thirst For Blood (Remix)
 							44286,	-- Vault of the Wardens: A Masterpiece of Flesh
 							43574,	-- Maw of Souls: Maul of the Dead
 							44282,	-- Eye of Azshara: The Frozen Soul
 						},
-						["sourceQuestNumRequired"] = 6,
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["groups"] = {
@@ -663,12 +663,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(46305, {	-- Thorim's Flame
 						["sourceQuest"] = 44775,	-- The Peak of Bones
-						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow (mobileNPC)
 						["coord"] = { 51.3, 84.3, STORMHEIM },
 					}),
 					q(44783, {	-- From Bones They Rise
 						["sourceQuest"] = 44775,	-- The Peak of Bones
-						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow (mobileNPC)
 						["coord"] = { 51.3, 84.3, STORMHEIM },
 					}),
 					q(44787, {	-- The Bonemother
@@ -676,7 +676,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							44783,	-- From Bones They Rise
 							46305,	-- Thorim's Flame
 						},
-						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow (mobileNPC)
 						["maps"] = { STORMHEIM },
 					}),
 					q(45243, {	-- On Daumyr's Wings
@@ -787,7 +787,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(34653),	-- Archerus Knight's Wristguard
 							i(250114, {	-- Acherus Worktable (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] =  {{ "c", ORDER_RESOURCES, 500 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(38662),	-- Bladed Ebon Amulet
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
@@ -847,7 +847,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250112, {	-- Ebon Blade Planning Map (DECOR!)
 								["sourceAchievement"] = 60981,	-- Raise an Army for Acherus
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},
+								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},
 							}),
 							i(250113, {	-- Ebon Blade Tome (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
@@ -856,7 +856,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250115, {	-- Ebon Blade Weapon Rack (DECOR!)
 								["sourceAchievement"] = 42270,	-- The Deathlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 1500 }},
+								["cost"] = {{ "c", ORDER_RESOURCES, 1200 }},
 							}),
 							i(38669),	-- Engraved Saronite Legplates
 							i(174488, {	-- Freezing Greatsword of the Ebon Blade
@@ -877,12 +877,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(250123, {	-- Replica Acherus Soul Forge (DECOR!)
 								["sourceAchievement"] = 42287,	-- Hidden Potential of the Deathlord
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 5000 }},
+								["cost"] = {{ "c", ORDER_RESOURCES, 2500 }},
 							}),
 							i(260584, {	-- Replica Libram of the Dead (DECOR!)
 								["sourceAchievement"] = 60962,	-- Legendary Research of the Ebon Blade
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "c", ORDER_RESOURCES, 3000 }},
+								["cost"] = {{ "c", ORDER_RESOURCES, 2000 }},
 							}),
 							i(38707),	-- Runed Spellblade
 							i(38665),	-- Saronite War Plate

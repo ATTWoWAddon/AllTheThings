@@ -4,14 +4,14 @@ QUALITY_ELITE = createHeader({
 	text = {
 		en = [[~ELITE]],
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Elite",
+		mx = "Elite",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Элитный",
-		-- TODO: cn = "",
+		cn = "精英",
 		-- TODO: tw = "",
 	},
 });

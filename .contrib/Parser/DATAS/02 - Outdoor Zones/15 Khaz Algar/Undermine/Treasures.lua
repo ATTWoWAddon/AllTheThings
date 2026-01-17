@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(477363, {	-- Particularly Nice Lamp
-				["coord"] = { 39.4, 61, UNDERMINE },
+				["coord"] = { 39.4, 61.0, UNDERMINE },
 				["questID"] = 85492,
 				["groups"] = {
 					i(235221),	-- Particularly Bright Lightbulb

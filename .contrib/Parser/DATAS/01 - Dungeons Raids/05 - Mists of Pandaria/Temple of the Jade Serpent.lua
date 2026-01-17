@@ -437,19 +437,58 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(335, {	-- Sha of Doubt
 						["creatureID"] = 56439,	-- Sha of Doubt
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60892),	-- Celestial: Temple of the Jade Serpent
 							i(248204),	-- Chimera of Doubt
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
 							i(86762),	-- Gara'kal, Fist of the Spiritbinder
 							i(86759),	-- Soulgrasp Choker
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86814)),	-- Fragment of Fear Made Flesh
 							i(86791),	-- Bottle of Infinite Stars
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95731),	-- Aberrant Chestguard of Torment
+							i(95758),	-- Acid-Spine Bonemace
+							i(95756),	-- Band of the Scaled Tyrant
+							i(95651),	-- Bloodlord's Bloodsoaked Legplates
+							i(95979),	-- Columnbreaker Stompers
+							i(95729),	-- Crimson Bloom Legguards
+							i(95784),	-- Dam'ren's Frozen Footguards
+							i(95677),	-- Fortitude of the Zandalari
+							i(95650),	-- Frozen Warlord's Bracers
+							i(95812),	-- Legwraps of Cardinality
+							i(95730),	-- Links of the Disintegrator
+							i(95978),	-- Locksmasher Greaves
+							i(95980),	-- Necklace of the Terra-Cotta Protector
+							i(95702),	-- Plated Toothbreaker Girdle
+							i(95757),	-- Primordius' Talisman of Rage
+							i(95874),	-- Reconstructed Bloody Shoulderplates
+							i(95872),	-- Reconstructed Holy Shoulderplates
+							i(95785),	-- Ro'shak's Remembrance
+							i(95703),	-- Rot-Proof Greatplate
+							i(95783),	-- Saddle-Scarred Leggings
+							i(95811),	-- Soul Barrier
+							i(95704),	-- Spinescale Seal
+							i(95649),	-- Sul'lithuz Sandmail
+							i(95676),	-- Talisman of Angry Spirits
+							i(95810),	-- Ultimate Protection of the Emperor
+							i(95675),	-- Zerat, Malakk's Soulburning Greatsword
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

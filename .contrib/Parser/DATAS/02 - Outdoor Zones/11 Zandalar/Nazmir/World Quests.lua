@@ -205,10 +205,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141529 },	-- Lozu
 			})),
 			q(54267, {	-- Naga Attack!
-				i(165605),	-- Azsharan Medallion
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(54236, {	-- Naga Attack!
-				i(165605),	-- Azsharan Medallion
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(51548, {	-- Nagative Feedback (A)
 				["races"] = ALLIANCE_ONLY,

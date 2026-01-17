@@ -1,4 +1,4 @@
-1.14.0.39802
+﻿1.14.0.39802
 9275@@@Warlord Zaela kills (Upper Blackrock Spire)
 1.14.1.40666
 15329@@@Has Died
@@ -2836,6 +2836,67 @@
 42115@@@3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
 3.4.5.62072
 61022@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy) (copy)
+3.80.0.64859
+3838@@@Titanic Embers
+3839@@@25 Titanic Embers
+3840@@@50 Titanic Embers
+3841@@@100 Titanic Embers
+3842@@@250 Titanic Embers
+3843@@@500 Titanic Embers
+3844@@@1000 Titanic Embers
+3876@@@1500 Titanic Embers
+4316@@@2500 Titanic Embers
+4784@@@Titanic
+4785@@@Titanic
+61735@@@[DNT] CN ICC Event Title 1 - Dream Chaser
+61736@@@[DNT] CN ICC Event Title 2 - Northbound Rush
+61737@@@[DNT] CN ICC Event Title 3 - Dawn's Vanguard
+61738@@@[DNT] CN ICC Event Title 4 - The Overlord of Dawn
+61830@@@5000 Titanic Embers
+61831@@@10000 Titanic Embers
+61889@@@Molten Core Reforged
+61891@@@100000 Titanic Embers
+61920@@@Realm First! Ember Lord
+61921@@@Ahead of the Curve: Ragnaros
+61924@@@Realm First! The Phoenix Fall
+61925@@@Ahead of the Curve: Kael'thas Sunstrider
+61926@@@Realm First! Depth's Demise
+61927@@@Ahead of the Curve: Lady Vashj
+61928@@@Realm First! Scion of the Necropolis
+61929@@@Ahead of the Curve: Kel'Thuzad
+61930@@@Realm First! Spellweaver's Ruin
+61931@@@Ahead of the Curve: Malygos
+61932@@@Realm First! Onyx Harbinger
+61933@@@Ahead of the Curve: Sartharion
+62064@@@Temple of Ahn'Qiraj Reforged
+62070@@@Blackwing Lair Reforged
+62071@@@Ruins of Ahn'Qiraj Reforged
+62072@@@Zul'Gurub Reforged
+62073@@@Azuregos Reforged
+62074@@@Lord Kazzak Reforged
+62075@@@Dragons of Nightmare Reforged
+62076@@@Sunwell Plateau Reforged
+62077@@@The Black Temple Reforged
+62078@@@The Battle for Mount Hyjal Reforged
+62079@@@Tempest Keep Reforged
+62080@@@Serpentshrine Cavern Reforged
+62081@@@Magtheridon's Lair Reforged
+62082@@@Gruul's Lair Reforged
+62083@@@Zul'Aman Reforged
+62084@@@Karazhan Reforged
+62085@@@Doomwalker Reforged
+62086@@@Doom Lord Kazzak Reforged
+62087@@@Naxxramas Reforged
+62088@@@Ulduar Reforged
+62089@@@Trial of the Crusader Reforged
+62090@@@Icecrown Citadel Reforged
+62091@@@Ruby Sanctum Reforged
+62092@@@Eye of Eternity Reforged
+62093@@@Obsidian Sanctum Reforged
+62094@@@Vault of Archavon Reforged
+62095@@@Onyxia's Lair Reforged
+62197@@@Titanic Embers acquired
+62198@@@Titanic Fragments acquired
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -5250,6 +5311,8 @@
 62055@@@The Mistwalker
 62059@@@Mistborne
 62060@@@Heir to the Mist
+5.5.3.64857
+62350@@@Hidden - Mistwalker
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -17686,3 +17749,54 @@
 62270@@@Altar of Blessings: One for Altar
 62271@@@Abyss Anglers: Trench Berserker
 62272@@@Abyss Anglers: Certified Depthdiver
+12.0.1.64889
+61238@@@Midnight Bounty
+62184@@@Prey: Breaking the Blade (Nightmare)
+62273@@@Echoes of Midnight
+62288@@@Eversong Woods: The Highest Peaks
+62289@@@Zul'Aman: The Highest Peaks
+62290@@@Harandar: The Highest Peaks
+62291@@@Voidstorm: The Highest Peaks
+62292@@@Adventurer Dawncrests earned
+62293@@@Veteran Dawncrests earned
+62294@@@Champion Dawncrests earned
+62295@@@Hero Dawncrests earned
+62296@@@Myth Dawncrests earned
+62324@@@Abundance: Loa of all Trades
+62325@@@Abundance: Treasures Aplenty
+62326@@@Abundance: Golden Opportunities
+62329@@@Abundance: Squash the Competition
+62330@@@Abundance: One Bite at a Time
+62331@@@Abundance: Drops of Prosperity
+62332@@@Abundance: Dundun's Favored
+62333@@@Abundance: Harvester
+62336@@@Abundance: Contributer
+62337@@@Abundance: Professional
+62338@@@Abundance: Artisan
+62339@@@Abundance: Gambler
+62340@@@Abundance: Investor
+62341@@@Abundance: Ain't Dun Till It's Dun
+62342@@@Abyss Anglers: The Finest of Fish
+62343@@@Abyss Anglers: Legends Lurk Beneath
+62351@@@Preying For Midnight
+62352@@@Nothing to See Here
+62357@@@Classically Trained Lumberjack
+62358@@@Outlandish Lumberjack
+62359@@@Wrathful Lumberjack
+62360@@@Cataclysmic Lumberjack
+62361@@@Mist-Shrouded Lumberjack
+62362@@@Lumberjack Warlord
+62363@@@Legion Lumberjack
+62364@@@Azeroth's Lumberjack
+62365@@@Shadowy Lumberjack
+62366@@@Draconic Lumberjack
+62369@@@The Lumberjack Within
+62370@@@Midnight Lumberjack
+62371@@@Couponing for Beginners
+62373@@@Coupon Collector
+62374@@@You Get The Best Deals Anywhere
+62375@@@Buying in Bulk
+62376@@@Extreme Couponing
+62377@@@A Fist Full of Coupons
+62378@@@A Few Coupons More
+62383@@@Gotta Hunt Them All

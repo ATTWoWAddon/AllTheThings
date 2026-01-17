@@ -1287,6 +1287,7 @@ i(0, 1269506);		-- Gilnean Green Potion
 i(0, 1272712);		-- Glazed Sin'dorei Vial
 i(0, 1263559);		-- Icecrown Plague Canister
 i(0, 1261878);		-- Nerubian Alchemist's Retort
+i(0, 1263548);		-- Pandaren Alchemist's Kit
 i(0, 1261233);		-- Pandaren Alchemist's Retort
 i(0, 1263558);		-- San'layn Blood Orb
 i(0, 1272723);		-- Shadow Council Torch
@@ -1328,7 +1329,7 @@ i(0, 1265675);	-- Concentration
 i(0, 1230886);	-- Enlightenment Tonic
 i(0, 1265701);	-- Ingenuity
 i(0, 1265614);	-- Knowledge
-i(0, 1230866);	-- Midnight Healing Potion
+i(0, 1230866);	-- Silvermoon Health Potion
 i(0, 1265599);	-- Multicraft
 i(0, 1265651);	-- Quality
 i(0, 471040);	-- Recraft Equipment
@@ -1347,10 +1348,10 @@ i(247423, 1233138);	-- Silvermoon Spire Fountain
 i(0, 1230891);	-- Box of Rocks
 i(0, 1230870);	-- Haranir Phial of Finesse [Spell name and recipe name does not match]
 i(0, 1230858);	-- Light's Preservation
-i(0, 1230885);	-- Midnight Alchemist Stone
-i(0, 1230874);	-- Midnight Flask Cauldron
-i(0, 1230857);	-- Midnight Potion Cauldron
-i(0, 1230875);	-- Midnight Versatility Flask
+i(0, 1230885);	-- Magister's Alchemist Stone
+i(0, 1230874);	-- Cauldron of Sin'dorei Flasks
+i(0, 1230857);	-- Voidlight Potion Cauldron
+i(0, 1230875);	-- Flask of Thalassian Resistance
 i(0, 1230867);	-- Void-Shrouded Tincture
 i(0, 1230856);	-- Wondrous Synergist
 --- CAULDRON ---
@@ -1358,10 +1359,10 @@ i(0, 1230892);	-- Bouquet of Herbs
 i(0, 1230860);	-- Draught of Rampant Abandon
 i(0, 1230872);	-- Haranir Phial of Ingenuity [Spell name and recipe name does not match]
 i(0, 1230869);	-- Light's Potential
-i(0, 1230878);	-- Midnight Critical Strike Flask
-i(0, 1230877);	-- Midnight Haste Flask
-i(0, 1230865);	-- Midnight Mana Potion
-i(0, 1230876);	-- Midnight Mastery Flask
+i(0, 1230878);	-- Flask of the Shattered Sun
+i(0, 1230877);	-- Flask of the Blood Knights
+i(0, 1230865);	-- Lightfused Mana Potion
+i(0, 1230876);	-- Flask of the Magisters
 i(0, 1230862);	-- Potion of Devoured Dreams
 i(0, 1230863);	-- Potion of Zealotry
 i(0, 1230861);	-- Primal Philosopher's Stone

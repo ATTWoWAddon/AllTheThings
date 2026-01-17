@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Supplies Searched
 							["provider"] = { "o", 208419 },	-- Grain Sack
-							["coord"] = { 54.9, 42, THE_CAPE_OF_STRANGLETHORN },
+							["coord"] = { 54.9, 42.0, THE_CAPE_OF_STRANGLETHORN },
 						}),
 					},
 				},
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair
 							["provider"] = { "n", 52372 },	-- Mauti
-							["coord"] = { 77, 68, NORTHERN_STRANGLETHORN },
+							["coord"] = { 77.0, 68.0, NORTHERN_STRANGLETHORN },
 						}),
 					},
 				},
@@ -131,7 +131,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair
 							["provider"] = { "n", 52372 },	-- Mauti
-							["coord"] = { 77, 68, NORTHERN_STRANGLETHORN },
+							["coord"] = { 77.0, 68.0, NORTHERN_STRANGLETHORN },
 						}),
 					},
 				},

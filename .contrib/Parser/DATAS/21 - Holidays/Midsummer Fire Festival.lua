@@ -1443,7 +1443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["provider"] = { "n", 26204 },	-- Chillwind Lieutenant
 					["coords"] = {
 						-- #if BEFORE CATA
-						{ 21, 22, STRANGLETHORN_VALE },
+						{ 21.0, 22.0, STRANGLETHORN_VALE },
 						-- #else
 						{ 21.6, 41.4, NORTHERN_STRANGLETHORN },
 						-- #endif
@@ -2777,7 +2777,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
-					["coord"] = { 47.2, 29, TWILIGHT_HIGHLANDS },
+					["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(28950, {	-- Honor the Flame — Uldum

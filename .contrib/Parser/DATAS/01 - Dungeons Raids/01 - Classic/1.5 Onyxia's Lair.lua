@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7635, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- A Proper String
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14525,	-- Stoma the Ancient
-					["coord"] = { 47, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, FELWOOD },
 					-- #if AFTER WRATH
 					["maps"] = { BURNING_STEPPES },
 					-- #endif
@@ -140,14 +140,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7634, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Ancient Sinew Wrapped Lamina
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14526,	-- Hastat the Ancient
-					["coord"] = { 47, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, FELWOOD },
 					["maps"] = { WINTERSPRING },
 					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
-					["groups"] = {
-						i(18714),	-- Ancient Sinew Wrapped Lamina
-					},
+					["groups"] = { i(18714) },	-- Ancient Sinew Wrapped Lamina
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84560, {	-- Celebrating Good Times
@@ -241,9 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
-					["groups"] = {
-						i(228695),	-- A Dull and Flat Elven Blade
-					},
+					["groups"] = { i(228695) },	-- A Dull and Flat Elven Blade
 				})),
 				-- #endif
 				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
@@ -255,9 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
-					["groups"] = {
-						i(18513),	-- A Dull and Flat Elven Blade
-					},
+					["groups"] = { i(18513) },	-- A Dull and Flat Elven Blade
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
@@ -267,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["coord"] = { 47, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, FELWOOD },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
@@ -310,12 +304,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(228659, {	-- Ancient Rune Etched Stave
-							["cost"] = {
-								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
-							},
-							["groups"] = {
-								i(228334),	-- Rhok'delar, Longbow of the Ancient Keepers
-							},
+							["cost"] = { { "i", 18724, 1 } },	-- Enchanted Black Dragon Sinew
+							["groups"] = { i(228334) },	-- Rhok'delar, Longbow of the Ancient Keepers
 						}),
 						i(228332, {	-- Lok'delar, Stave of the Ancient Keepers
 							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
@@ -336,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["coord"] = { 47, 24.48, FELWOOD },
+					["coord"] = { 47.0, 24.48, FELWOOD },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
@@ -380,9 +370,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #endif
 						i(18707, {	-- Ancient Rune Etched Stave
-							["cost"] = {
-								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
-							},
+							["cost"] = { { "i", 18724, 1 } },	-- Enchanted Black Dragon Sinew
 							["groups"] = {
 								ach(11296, {	-- The Ancient Keeper
 									["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
@@ -441,21 +429,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
 							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
 							["cr"] = 10184,	-- Onyxia
-							["cost"] = {
-								{ "i", 18488, 1 },	-- Heated Ancient Blade
-							},
+							["cost"] = { { "i", 18488, 1 } },	-- Heated Ancient Blade
 						}),
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
 							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
 							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-							["cost"] = {
-								{ "i", 18489, 1 },	-- Unfired Ancient Blade
-							},
+							["cost"] = { { "i", 18489, 1 } },	-- Unfired Ancient Blade
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						i(228679),	-- Quel'Serrar
 					},
@@ -476,21 +460,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
 							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
 							["cr"] = 10184,	-- Onyxia
-							["cost"] = {
-								{ "i", 18488, 1 },	-- Heated Ancient Blade
-							},
+							["cost"] = { { "i", 18488, 1 } },	-- Heated Ancient Blade
 						}),
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
 							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
 							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-							["cost"] = {
-								{ "i", 18489, 1 },	-- Unfired Ancient Blade
-							},
+							["cost"] = { { "i", 18489, 1 } },	-- Unfired Ancient Blade
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						-- #endif
 						i(18348),	-- Quel'Serrar

@@ -275,7 +275,7 @@ root(ROOTS.Zones, {
 					q(13266, {	-- A Life Without Regret
 						["sourceQuest"] = 13257,	-- Herald of War
 						["qg"] = 31412,	-- Thrall
-						["coord"] = { 32, 37.8, ORGRIMMAR },
+						["coord"] = { 32.0, 37.8, ORGRIMMAR },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 					}),
@@ -2087,7 +2087,7 @@ root(ROOTS.Zones, {
 					q(13377, {	-- The Battle for the Undercity (A)
 						["sourceQuest"] = 13371,	-- The Killing Time
 						["qg"] = 32376,	-- Broll Bearmantle
-						["coord"] = { 50, 68.4, TIRISFAL_GLADES },
+						["coord"] = { 50.0, 68.4, TIRISFAL_GLADES },
 						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
@@ -2959,7 +2959,7 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					applyclassicphase(WRATH_PHASE_TWO, o(194238, {	-- Blade of Drak'Mar
-						["coord"] = { 93, 26, DRAGONBLIGHT },
+						["coord"] = { 93.0, 26.0, DRAGONBLIGHT },
 						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
 						["cr"] = 33273,	-- Maiden of Drak'Mar
 						["groups"] = { i(44978) },	-- Blade of Drak'Mar

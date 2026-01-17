@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								}),
 								objective(2, {	-- Underground Pond Reading
 									["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
-									["coord"] = { 43, 13, DEADWIND_PASS },
+									["coord"] = { 43.0, 13.0, DEADWIND_PASS },
 								}),
 							},
 						}),

@@ -769,7 +769,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(103, {	-- Keeper of the Flame
 					["qg"] = 392,	-- Captain Grayson
-					["coord"] = { 30, 86, WESTFALL },
+					["coord"] = { 30.0, 86.0, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
 					["lvl"] = 10,
@@ -1060,8 +1060,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						963,	-- Deputy Rainer
 					},
 					["coords"] = {
-						{ 60, 19.4, WESTFALL },
-						{ 56, 31.2, WESTFALL },
+						{ 60.0, 19.4, WESTFALL },
+						{ 56.0, 31.2, WESTFALL },
 						{ 42.2, 65.8, ELWYNN_FOREST },
 						{ 74.0, 72.2, ELWYNN_FOREST },
 						{ 84.6, 69.6, ELWYNN_FOREST },
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["qg"] = 392,	-- Captain Grayson
-					["coord"] = { 30, 86, WESTFALL },
+					["coord"] = { 30.0, 86.0, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 					["groups"] = {
@@ -1281,7 +1281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(104, {	-- The Coastal Menace
 					["qg"] = 392,	-- Captain Grayson
-					["coord"] = { 30, 86, WESTFALL },
+					["coord"] = { 30.0, 86.0, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 15,
 					["groups"] = {

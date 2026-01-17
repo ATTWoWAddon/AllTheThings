@@ -127,7 +127,9 @@ root(ROOTS.Zones, {
 					["requireSkill"] = HERBALISM,
 				}),
 				q(42169),	-- Left for Dead
-				q(44813),	-- Ley Line Interference
+				q(44813, {	-- Ley Line Interference
+					i(142446),	-- Leysight Spectacles (QI!)
+				}),
 				q(43774),	-- Ley Race
 				q(43583),	-- Life Finds a Way
 				q(44744),	-- Lifelines
@@ -301,6 +303,7 @@ root(ROOTS.Zones, {
 								i(140786),	-- Ley Spider Eggs (TOY!)
 								i(141301),	-- Unstable Powder Box (TOY!)
 								i(141306),	-- Wisp in a Bottle (TOY!)
+								i(245449, { ["timeline"] = { ADDED_11_2_7 } }),	-- Ancient Elven Highback Chair (DECOR!)
 							},
 						}),
 						o(251754, {	-- Glimmering Treasure Chest

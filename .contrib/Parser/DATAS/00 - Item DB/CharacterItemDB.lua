@@ -13,10 +13,11 @@ ihqt() - This is simply an Item which triggers a QuestID, but no noticeable diff
 --]]
 
 local Items = ItemDBConditional;
+local Spells
 -- #IF ANYCLASSIC
-local Spells = RecipeDB;
+Spells = RecipeDB;
 -- #ELSE
-local Spells = SpellDB;
+Spells = SpellDB;
 -- #ENDIF
 local iq = function(itemID, questID, classID, raceID)
 	if not itemID or itemID < 1 then
@@ -873,21 +874,21 @@ ihqt(225215, 83313);				-- The Song of Renilash
 ------------------
 -- PATCH 11.0.5 --
 ------------------
-ihqt(230264, 85224);				-- Bronze Celebration Titles: Broken Isles Enthusiast
-ihqt(230261, 85221);				-- Bronze Celebration Titles: Cataclysm Enthusiast
-ihqt(230258, 85218);				-- Bronze Celebration Titles: Classic Enthusiast
-ihqt(230263, 85223);				-- Bronze Celebration Titles: Draenor Enthusiast
-ihqt(230268, 85228);				-- Bronze Celebration Titles: Dragon Isles Enthusiast
-ihqt(229826, 85015);				-- Bronze Celebration Titles: Grizzly Hills Hiker
-ihqt(231833, 85517);				-- Bronze Celebration Titles: Karazhan Graduate
-ihqt(230266, 85226);				-- Bronze Celebration Titles: Kul Tiras Enthusiast
-ihqt(231832, 85516);				-- Bronze Celebration Titles: Molten Core Prospector
-ihqt(230260, 85220);				-- Bronze Celebration Titles: Northrend Enthusiast
-ihqt(230259, 85219);				-- Bronze Celebration Titles: Outland Enthusiast
-ihqt(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
-ihqt(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
-ihqt(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
-ihqt(230265, 85225);				-- Bronze Celebration Titles: Zuldazar Enthusiast
+iq(230264, 85224);				-- Bronze Celebration Titles: Broken Isles Enthusiast
+iq(230261, 85221);				-- Bronze Celebration Titles: Cataclysm Enthusiast
+iq(230258, 85218);				-- Bronze Celebration Titles: Classic Enthusiast
+iq(230263, 85223);				-- Bronze Celebration Titles: Draenor Enthusiast
+iq(230268, 85228);				-- Bronze Celebration Titles: Dragon Isles Enthusiast
+iq(229826, 85015);				-- Bronze Celebration Titles: Grizzly Hills Hiker
+iq(231833, 85517);				-- Bronze Celebration Titles: Karazhan Graduate
+iq(230266, 85226);				-- Bronze Celebration Titles: Kul Tiras Enthusiast
+iq(231832, 85516);				-- Bronze Celebration Titles: Molten Core Prospector
+iq(230260, 85220);				-- Bronze Celebration Titles: Northrend Enthusiast
+iq(230259, 85219);				-- Bronze Celebration Titles: Outland Enthusiast
+iq(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
+iq(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
+iq(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
+iq(230265, 85225);				-- Bronze Celebration Titles: Zuldazar Enthusiast
 ihqt(226241, 83824);				-- Shredded Green Hills of Stranglethorn
 
 ------------------
@@ -981,7 +982,7 @@ is(0, 1237215);						-- Path of the Eco-Dome
 ------------------
 -- PATCH 11.2.5 --
 ------------------
-ihqt(249242, 91961);				-- Bronze Celebration Titles: Khaz Algar Enthusiast
+iq(249242, 91961);				-- Bronze Celebration Titles: Khaz Algar Enthusiast
 ihqt(248127, 91783);				-- Delver's Cosmetic Surprise Bag
 ihqt(248126, 91784);				-- Delver's Starter Kit
 

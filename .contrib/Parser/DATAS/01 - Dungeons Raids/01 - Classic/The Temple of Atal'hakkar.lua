@@ -6,16 +6,16 @@ local ATALAI_DEFENDERS = createHeader({
 	icon = 134177,
 	text = {
 		en = "Atal'ai Defenders",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		fr = "Défenseurs Atal'ai",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
+		de = "Verteidiger der Atal'ai",
+		es = "Defensores Atal'ai",
+		mx = "Defensores de Atal'ai",
+		fr = "Défenseurs atal’ai",
+		it = "",
+		ko = "아탈라이 파수병",
+		pt = "Defensores Atal'ai",
 		ru = "Защитники Атал'ай",
 		cn = "阿塔莱防御者",
-		-- TODO: tw = "",
+		tw = "阿塔萊防衛者",
 	},
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(10593, {	-- An Ancient Evil
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["coord"] = { 57.8, 92, UNDERCITY },
+					["coord"] = { 57.8, 92.0, UNDERCITY },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,

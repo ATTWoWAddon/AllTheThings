@@ -438,20 +438,53 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			})),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
 					e(686, {	-- Taran Zhu
 						["creatureID"] = 56884,	-- Taran Zhu
-						["groups"] = {
+						["groups"] = appendGroups(
+						{
 							ach(60895),	-- Celestial: Shado-Pan Monastery
+						},
+						-- #if BEFORE 5.5.3
+						{	-- Season 1 Drops
+							i(86805),	-- Qin-xi's Polarizing Seal
 							i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86905)),	-- Shin'ka, Execution of Dominion (Terrace)
 							i(86739),	-- Beads of the Mogu'shi
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86813)),	-- Vizier's Ruby Signet (HoF)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86873)),	-- Watersoul Signet (Terrace)
-							i(86805),	-- Qin-xi's Polarizing Seal
 						},
+						-- #elseif BEFORE 5.5.5
+						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
+							i(95776),	-- Anima-Ringed Fingers
+							i(95774),	-- Athame of the Sanguine Ritual
+							i(95639),	-- Drape of Booming Nights
+							i(95721),	-- Featherflight Belt
+							i(95720),	-- Giorgio's Caduceus of Pure Moods
+							i(95749),	-- Gloves of Cushioned Air
+							i(95722),	-- Grasp of the Ruthless Mother
+							i(95642),	-- Infinitely Conducting Bracers
+							i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
+							i(95747),	-- Legplates of Re-Emergence
+							i(95863),	-- Lost Shoulders of Fire
+							i(95865),	-- Lost Shoulders of Fluidity
+							i(95864),	-- Lost Shoulders of Healing
+							i(95667),	-- Mar'li's Bloodstained Sandals
+							i(95969),	-- Necklace of the Terra-Cotta Mender
+							i(95694),	-- Robes of Concussive Shocks
+							i(95803),	-- Shan-Dun, Breaker of Hope
+							i(95748),	-- Talisman of Bloodlust
+							i(95693),	-- Vampire Bat-Hide Bracers
+							i(95668),	-- Zandalari Robes of the Final Rite
+						}),
+						-- #else
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS,{	-- Season 3 Drops
+							
+						}),
+						-- #endif
+						{}),
 					}),
 				},
 			})),

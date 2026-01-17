@@ -1199,3 +1199,16 @@ i(191019);	-- Mystic Leg Module
 i(191020);	-- Venerated Leg Module
 i(191021);	-- Zenith Leg Module
 -- #endif
+
+-- 11.2.7
+i(245586)	-- Ironwood Lumber
+i(242691)	-- Olemba Lumber
+i(251762)	-- Coldwind Lumber
+i(251764)	-- Ashwood Lumber
+i(251763)	-- Bamboo Lumber
+i(251766)	-- Shadowmoon Lumber
+i(251767)	-- Fel-Touched Lumber
+i(251768)	-- Darkpine Lumber
+i(251772)	-- Arden Lumber
+i(251773)	-- Dragonpine Lumber
+i(248012)	-- Dornic Fir Lumber

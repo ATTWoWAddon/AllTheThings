@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						226409,	-- Wenbrandt
 					},
 					["coords"] = {
-						{ 50, 50, 2335 },	-- Cinderbrew Meadery
+						{ 50.0, 50.0, 2335 },	-- Cinderbrew Meadery
 						{ 75.6, 43.5, ISLE_OF_DORN },
 					},
 				}),

@@ -4,14 +4,14 @@ RANK_TWO = createHeader({
 	text = {
 		en = [[~string.format(AZERITE_ESSENCE_RANK, 2)]],
 		de = "Rang 2",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Rango 2",
+		mx = "Rango 2",
 		fr = "Rang 2",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Ранг 2",
-		-- TODO: cn = "",
+		cn = "等级 2",
 		-- TODO: tw = "",
 	},
 });

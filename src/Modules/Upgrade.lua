@@ -487,11 +487,17 @@ local function GetUpgrade(t, up)
 				return
 			end
 			-- this case always means we expected an upgrade, but got none, which means the upgrade item
-			-- is not yet loaded in the Client an`d cannot return the proper SourceID because Blizzard.
+			-- is not yet loaded in the Client and cannot return the proper SourceID because Blizzard.
 			return false
 		end
 		ItemSourceCache[modItemID] = itemSource
 		-- app.PrintDebug("UPGRADE=>CACHE",modItemID,"==",itemSource.hash)
+	end
+
+	-- if the upgrade is identical sourceID, ignore it
+	if itemSource.sourceID == t.sourceID then
+		-- app.PrintDebug("GU:upgrade is same",t.hash,t.modItemID,"=+>",itemSource.hash,itemSource.modItemID)
+		return
 	end
 
 	-- cache the upgrade within the item itself
@@ -504,12 +510,12 @@ api.GetUpgrade = GetUpgrade;
 -- Returns the different and upgraded version of 't' (via 'up' field only)
 local function HasUpgrade(t)
 
-	-- app.PrintDebug("HU:",t.hash,t.modItemID,t.up,t._up)
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
+	-- app.PrintDebug("HU:",t.hash,t.modItemID,up,t._up,"|")
 	if not up then
 		-- app.PrintDebug("no upgrade",t.modItemID)
-		return;
+		return
 	end
 
 	-- find or create the upgrade for cached reference
@@ -669,12 +675,6 @@ app.AddEventHandler("OnLoad", function()
 				-- app.PrintDebug("mark working",FillData.Root.hash,app:SearchLink(FillData.Root))
 				FillData.Root.working = true
 			end
-			return
-		end
-
-		-- upgrade has to actually be different than the source item
-		if nextUpgrade.sourceID == group.sourceID then
-			-- app.PrintDebug("GU:upgrade is same",group.hash,group.modItemID,"=+>",nextUpgrade.hash,nextUpgrade.modItemID)
 			return
 		end
 

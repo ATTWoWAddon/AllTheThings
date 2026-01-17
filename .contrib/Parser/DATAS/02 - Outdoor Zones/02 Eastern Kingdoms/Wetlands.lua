@@ -890,7 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -906,7 +906,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(295, {	-- Ormer's Revenge (2/3)
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(296, {	-- Ormer's Revenge (3/3)
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
-					["coord"] = { 38, 51.2, WETLANDS },
+					["coord"] = { 38.0, 51.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -2000,7 +2000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 212209 },	-- Vodyanoi
 						{ "i", 210499 },	-- Marshroom
 					},
-					["coord"] = { 31, 18, WETLANDS },
+					["coord"] = { 31.0, 18.0, WETLANDS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["groups"] = {

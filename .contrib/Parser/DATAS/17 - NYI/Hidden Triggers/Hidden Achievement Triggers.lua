@@ -3945,6 +3945,18 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(61325),	-- <Hidden>[DNT] Jewelry Equipped
 			ach(61338),	-- Bronze gained across Warband
 		})),
+
+		-- 11.2.7
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+			-- 11.2.7.63642
+			ach(61023),	-- [DNT] Exalted with a Dracthyr Player Faction
+			ach(61553),	-- Dynamic Flight Power - Second Wind (Granted in Script 101809)
+			ach(61554),	-- Dynamic Flight Power - Aerial Halt (Granted in Script 101809)
+
+			-- 11.2.7.64011
+			ach(61862),	-- <DNT> Brewgarden Tutorial Completed
+			ach(61890),	-- <Hidden> Housing Early Access [DNT]
+		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0

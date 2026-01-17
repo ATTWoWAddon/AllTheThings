@@ -2495,3 +2495,5 @@ i(0, 1261896);		-- Wingrest Signal Brazier
 --- ITEM ---
 i(256940, 1260988);	-- Blackrock Weapon Rack
 i(256939, 1260987);	-- Frostwall Forge
+--- NYI ---
+i(0, 1246473);		-- [DNT] TWW Blacksmithing Decor Template

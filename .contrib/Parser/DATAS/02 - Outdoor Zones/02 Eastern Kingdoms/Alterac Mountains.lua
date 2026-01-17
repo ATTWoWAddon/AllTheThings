@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Crushridge Warmonger
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
-							["coord"] = { 38, 54.6, ALTERAC_MOUNTAINS },
+							["coord"] = { 38.0, 54.6, ALTERAC_MOUNTAINS },
 						}),
 						i(5249, {	-- Burning Sliver
 							["timeline"] = { REMOVED_4_0_3 },
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["coord"] = { 74.4, 12, IRONFORGE },
+					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["coord"] = { 50.4, 57, HILLSBRAD_FOOTHILLS },
+					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
 						{ "i", 217737 },	-- Modified Talisman
 					},
-					["coord"] = { 86, 80, ALTERAC_MOUNTAINS },
+					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { SILVERPINE_FOREST },
 					["classes"] = { ROGUE },

@@ -2095,7 +2095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 23, 47, DUSKWOOD },
+					["coord"] = { 23.0, 47.0, DUSKWOOD },
 					["groups"] = {
 						i(216946),	-- Glittering Dalaran Relic
 					},
@@ -2569,7 +2569,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(211490, {	-- Prophecy of a Thousand Lights
-							["coord"] = { 90, 30, DUSKWOOD },
+							["coord"] = { 90.0, 30.0, DUSKWOOD },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402859),	-- Engrave Gloves - Circle of Healing

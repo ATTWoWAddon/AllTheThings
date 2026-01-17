@@ -494,8 +494,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {
 				i(169376),	-- Skittering Eel (PET!)
 				i(170181),	-- Tidal Guard
-				i(170066),	-- Skinning Technique: Dredged Leather (Rank 2)
-				i(170067),	-- Skinning Technique: Cragscale (Rank 2)
+				i(170066),	-- Skinning Technique: Dredged Leather [Rank 2] (RECIPE!)
+				i(170067),	-- Skinning Technique: Cragscale [Rank 2] (RECIPE!)
 			},
 		}),
 		n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency

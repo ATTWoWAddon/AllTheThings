@@ -1,5 +1,5 @@
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 
 local pairs, PlayerHasToy = pairs, PlayerHasToy;
 

@@ -61,7 +61,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		ach(11139, {	-- Field Medic!
 			["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 			["groups"] = {
-				title(340),	-- Field Medic <Name> (TITLE!)
+				title(340),	-- Field Medic <Name>
 				i(139534, {	-- Bloody Letter
 					["criteriaID"] = 34872,		-- Bloody Letter
 					["maps"] = { SURAMAR },

@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1523, {	-- Call of Fire (1/5) [Thunder Bluff]
 					["qg"] = 5906,	-- Xanis Flameweaver
-					["coord"] = { 25.2, 21, THUNDER_BLUFF },
+					["coord"] = { 25.2, 21.0, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 5907 },	-- Kranal Fiss
 						{ "i", 6653 },	-- Torch of the Dormant Flame
 					},
-					["coord"] = { 55.8, 20, THE_BARRENS },
+					["coord"] = { 55.8, 20.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7766 },	-- Filled Brown Waterskin
 								{ "i", 7766 },	-- Empty Brown Waterskin
 							},
-							["coord"] = { 44, 77, THE_BARRENS },
+							["coord"] = { 44.0, 77.0, THE_BARRENS },
 						}),
 					},
 				}),
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7771 },	-- Filled Red Waterskin
 								{ "i", 7768 },	-- Empty Red Waterskin
 							},
-							["coord"] = { 62, 20, HILLSBRAD_FOOTHILLS },
+							["coord"] = { 62.0, 20.0, HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7770 },	-- Filled Blue Waterskin
 								{ "i", 7767 },	-- Empty Blue Waterskin
 							},
-							["coord"] = { 33, 67, ASHENVALE },
+							["coord"] = { 33.0, 67.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -786,7 +786,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4961, {	-- Cleansing of the Orb of Orahil
 					["sourceQuest"] = 1799,	-- Fragments of the Orb of Orahil
 					["qg"] = 6546,	-- Tabetha
-					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -1421,7 +1421,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 6912 },	-- Heartswood
 								{ "o", 93192 },	-- Heartswood
 							},
-							["coord"] = { 31, 31, ASHENVALE },
+							["coord"] = { 31.0, 31.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -1498,7 +1498,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4736, {	-- In Search of Menara Voidrender (Ironforge)
 					["qg"] = 5172,	-- Briarthorn
-					["coord"] = { 50.2, 6, IRONFORGE },
+					["coord"] = { 50.2, 6.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -1525,7 +1525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4739, {	-- In Search of Menara Voidrender (Undercity)
 					["qg"] = 4563,	-- Kaal Soulreaper
-					["coord"] = { 86, 15.6, UNDERCITY },
+					["coord"] = { 86.0, 15.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4965, {	-- Knowledge of the Orb of Orahil [Ironforge]
 					["qg"] = 5172,	-- Briarthorn
-					["coord"] = { 50.2, 6, IRONFORGE },
+					["coord"] = { 50.2, 6.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -1654,7 +1654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4969, {	-- Knowledge of the Orb of Orahil [Undercity]
 					["qg"] = 4563,	-- Kaal Soulreaper
-					["coord"] = { 86, 15.6, UNDERCITY },
+					["coord"] = { 86.0, 15.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -2019,7 +2019,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2381, {	-- Plundering the Plunderers
 					["sourceQuest"] = 2382,	-- Wrenix of Ratchet
 					["qg"] = 7161,	-- Wrenix the Wretched
-					["coord"] = { 63, 36.4, THE_BARRENS },
+					["coord"] = { 63.0, 36.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
@@ -2189,7 +2189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 6546 },	-- Tabetha
 						{ "i", 12642 },	-- Cleansed Infernal Orb
 					},
-					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -2241,7 +2241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3644 },	-- Bael Modan Flying Machine
 								{ "i", 5021 },	-- Explosive Stick of Gann
 							},
-							["coord"] = { 46, 85, THE_BARRENS },
+							["coord"] = { 46.0, 85.0, THE_BARRENS },
 						}),
 						i(5313, {	-- Totemic Clan Ring
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2451,7 +2451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3001, {	-- Seeking Strahad (Undercity)
 					["qg"] = 5675,	-- Carendin Halgar
-					["coord"] = { 85, 25.6, UNDERCITY },
+					["coord"] = { 85.0, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -2555,7 +2555,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12649 },	-- Imprisoned Infernal Spirit
 								{ "i", 12646 },	-- Infus Emerald
 							},
-							["coord"] = { 50, 73, DESOLACE },
+							["coord"] = { 50.0, 73.0, DESOLACE },
 							["cr"] = 4676,	-- Lesser Infernal
 						}),
 					},
@@ -2697,7 +2697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coords"] = {
 						{ 80.2, 32.4, ORGRIMMAR },
 						{ 57.4, 87.2, THUNDER_BLUFF },
-						{ 47.2, 17, UNDERCITY },
+						{ 47.2, 17.0, UNDERCITY },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2800,7 +2800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4487, {	-- Summon Felsteed (1/2) (Ironforge)
 					["qg"] = 5172,	-- Briarthorn
-					["coord"] = { 50.2, 6, IRONFORGE },
+					["coord"] = { 50.2, 6.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -2827,7 +2827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4489, {	-- Summon Felsteed (1/2) (Undercity)
 					["qg"] = 4563,	-- Kaal Soulreaper
-					["coord"] = { 86, 15.6, UNDERCITY },
+					["coord"] = { 86.0, 15.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -2893,7 +2893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1719, {	-- The Affray
 					["sourceQuest"] = 1718,	-- The Islander
 					["qg"] = 6236,	-- Klannoc Macleod
-					["coord"] = { 66.6, 49, THE_BARRENS },
+					["coord"] = { 66.6, 49.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
@@ -3349,7 +3349,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER CATA
 								{ 55.9, 80.5, NORTHERN_BARRENS },
 								-- #else
-								{ 55, 42, THE_BARRENS },
+								{ 55.0, 42.0, THE_BARRENS },
 								-- #endif
 							},
 						}),
@@ -3374,7 +3374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1791, {	-- The Windwatcher
 					["sourceQuest"] = 1719,	-- The Affray
 					["qg"] = 6236,	-- Klannoc Macleod
-					["coord"] = { 68.6, 49, THE_BARRENS },
+					["coord"] = { 68.6, 49.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS },
 					["classes"] = { WARRIOR },
@@ -3545,7 +3545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 99-Year-Old Port
 							["provider"] = { "i", 5334 },	-- 99-Year-Old Port
-							["coord"] = { 45, 35.2, THE_BARRENS },
+							["coord"] = { 45.0, 35.2, THE_BARRENS },
 							["cr"] = 3655,	-- Mad Magglish
 						}),
 					},
@@ -3888,7 +3888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 52, 36, THE_BARRENS },
+					["coord"] = { 52.0, 36.0, THE_BARRENS },
 					["groups"] = {
 						i(216949),	-- Heavy Dalaran Relic
 					},
@@ -4285,7 +4285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 42.6, 64.0, NORTHERN_BARRENS },
 						-- #else
-						{ 52, 54, THE_BARRENS },
+						{ 52.0, 54.0, THE_BARRENS },
 						-- #endif
 					},
 					["groups"] = {
@@ -4298,7 +4298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(208682, {	-- Abandoned Snapjaw Egg
 					["provider"] = { "o", 407117 },	-- Abandoned Snapjaw Nest
-					["coord"] = { 44, 22, THE_BARRENS },
+					["coord"] = { 44.0, 22.0, THE_BARRENS },
 					["classes"] = { DRUID },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209847, {	-- Arcanic Systems Manual
@@ -4334,7 +4334,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 208768 },	-- Buccaneer's Matchbox
 						{ "o", 407453 },	-- Southsea Loot Stash
 					},
-					["coord"] = { 62, 45, THE_BARRENS },
+					["coord"] = { 62.0, 45.0, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4357,7 +4357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 209511 },	-- Oasis Snapjaw Hatchling
 					},
 					["description"] = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
-					["coord"] = { 48, 40, THE_BARRENS },
+					["coord"] = { 48.0, 40.0, THE_BARRENS },
 					["classes"] = { DRUID },
 					["groups"] = {
 						recipe(416049),	-- Engrave Gloves - Lacerate
@@ -5065,6 +5065,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 		},
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+	m(KALIMDOR, {
+		m(THE_BARRENS, {
+			q(55296),	-- Triggered after complete 'Chen's Empty Keg' (822)
+		}),
 	}),
 }));
 -- #endif

@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
 							["lvl"] = 1,
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER LEGION
 							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 37.2, 19, EVERSONG_WOODS },
+							["coord"] = { 37.2, 19.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["races"] = { BLOODELF },
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER LEGION
 							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 37.2, 19, EVERSONG_WOODS },
+							["coord"] = { 37.2, 19.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = { BLOODELF },
@@ -669,7 +669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(1, 1, 1),
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 38, 21, EVERSONG_WOODS },
+							["coord"] = { 38.0, 21.0, EVERSONG_WOODS },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
@@ -1352,7 +1352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(32668, {	-- Learn To Ride
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
-					["coord"] = { 61.2, 54, EVERSONG_WOODS },
+					["coord"] = { 61.2, 54.0, EVERSONG_WOODS },
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
 					["lockCriteria"] = { 1,
@@ -1544,7 +1544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9691, {	-- Return to Silvermoon
 					["sourceQuest"] = 9686,	-- The Second Trial (2/2)
 					["qg"] = 17807,	-- Master Kelrun Bloodmourn
-					["coord"] = { 42, 28, EVERSONG_WOODS },
+					["coord"] = { 42.0, 28.0, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ "i", 23552 },	-- Filled Azure Phial
 								{ "i", 23566 },	-- Azure Phial
 							},
-							["coord"] = { 64, 72, EVERSONG_WOODS },
+							["coord"] = { 64.0, 72.0, EVERSONG_WOODS },
 						}),
 					},
 				}),
@@ -1856,7 +1856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9686, {	-- The Second Trial (2/2)
 					["sourceQuest"] = 9690,	-- The Second Trial (1/2)
 					["qg"] = 17807,	-- Master Kelrun Bloodmourn
-					["coord"] = { 42, 28, EVERSONG_WOODS },
+					["coord"] = { 42.0, 28.0, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },

@@ -101,7 +101,8 @@ local function FilterBind(group)
 end
 api.Filters.Bind = FilterBind;
 local function FilterInGame(item)
-	return not item.u or item.u > 2;
+	local u = item.u
+	return not u or u > 2
 end
 api.Filters.InGame = FilterInGame;
 -- manually track InGame in CurrentCharacterFilters
@@ -371,7 +372,8 @@ end);
 -- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
 RawCharacterFilters.Level = nil;
 
--- SkillLevel
+-- SkillLevel (Classic only)
+if app.IsClassic then
 app.MaximumSkillLevel = 99999;
 DefineToggleFilter("SkillLevel", CharacterFilters,
 function(group)
@@ -383,6 +385,7 @@ function(group)
 end);
 -- SkillLevel doesn't really exclude a character from seeing a given Thing
 RawCharacterFilters.SkillLevel = nil;
+end
 
 -- Trackable
 -- Whether this group can be 'tracked'

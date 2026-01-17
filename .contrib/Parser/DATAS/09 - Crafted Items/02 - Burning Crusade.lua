@@ -19,8 +19,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(572129, {	-- Olemba Lumber
-			i(242691),	-- Olemba Lumber
+		o_repeated({	-- Olemba Lumber
+			["maps"] = {
+				BLADES_EDGE_MOUNTAINS,
+				ISLE_OF_QUELDANAS,
+				NAGRAND,
+				TEROKKAR_FOREST,
+				ZANGARMARSH,
+				-- SMV/Netherstorm have barely any nodes
+			},
+			["groups"] = {
+				-- Objects
+				o(571070),	-- [Terokkar Forest/Shattrah/Nagrand]
+				o(571071),	-- [Zangarmarsh]
+				o(571213),	-- [Blade's Edge Mountains]
+				o(571345),	-- [Netherstorm]
+				o(572094),	-- [Nagrand]
+				o(572129),	-- [Shadowmoon Valley]
+				o(572869),	-- [Eversong Woods/Ghostlands]
+				o(572995),	-- [Ghostlands]
+				-- Drops
+				i(242691),	-- Olemba Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -149,7 +169,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
 				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
 				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
-				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus (TOY!)
 			},
 		}),
 		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
@@ -1223,13 +1243,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["maps"] = { NETHERSTORM },
 			}),
 			o(181280, {	-- Nightmare Vine
+				["description"] = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
 				["coords"] = {
 					{ 63.9, 68.3, BLADES_EDGE_MOUNTAINS },	-- Death's Door
 					{ 34.8, 40.4, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Wrath
 					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
-				["description"] = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
 				["maps"] = SHADOWMOON_VALLEY,
 			}),
 			o(181275, {	-- Ragveil
@@ -1244,14 +1264,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 			}),
 			o(181277, {	-- Terocone
+				["description"] = "Found near the base of trees.",
 				["coords"] = {
 					{ 43.4, 55.8, SHADOWMOON_VALLEY },	-- Sketh'lon Base Camp
 					{ 36.5, 32.5, SHADOWMOON_VALLEY },	-- Sketh'lon Wreckage
 					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
-				["description"] = "Found near the base of trees.",
-				["maps"] = TEROKKAR_FOREST,
+				["maps"] = { TEROKKAR_FOREST },
 			}),
 		}),
 	}),

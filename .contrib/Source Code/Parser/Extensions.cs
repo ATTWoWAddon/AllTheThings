@@ -458,7 +458,7 @@ namespace ATT
         /// <summary>
         /// Try to convert the object to a specific Type
         /// </summary>
-        public static bool TryConvert<T>(this object obj, out T value, bool lazy = false)
+        public static bool TryConvert<T>(this object obj, out T value, bool lazy = false, bool warnOnConvert = false, bool debugWarnOnConvert = false)
         {
             if (obj is T val)
             {
@@ -466,10 +466,25 @@ namespace ATT
                 return true;
             }
 
+            if (obj is null)
+            {
+                value = default;
+                return false;
+            }
+
             if (!lazy)
             {
                 try
                 {
+                    if (warnOnConvert)
+                    {
+                        Framework.LogWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
+                    }
+                    if (debugWarnOnConvert)
+                    {
+                        Framework.LogDebugWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
+                    }
+
                     value = (T)Convert.ChangeType(obj, typeof(T));
                     return true;
                 }
@@ -482,7 +497,7 @@ namespace ATT
         /// <summary>
         /// Converts a set of raw objects into a set of strongly-typed elements
         /// </summary>
-        public static IEnumerable<T> AsTypedEnumerable<T>(this object listObj)
+        public static IEnumerable<T> AsTypedEnumerable<T>(this object listObj, bool lazy = false, bool warnOnConvert = false)
         {
             if (listObj == null || listObj is string || !(listObj is IEnumerable objs))
                 yield break;
@@ -491,7 +506,7 @@ namespace ATT
             while (e.MoveNext())
             {
                 var c = e.Current;
-                if (c.TryConvert(out T t))
+                if (c.TryConvert(out T t, lazy, warnOnConvert))
                 {
                     yield return t;
                 }
@@ -517,15 +532,11 @@ namespace ATT
             typeof(double),  typeof(decimal), typeof(float)
         };
 
-        public static bool IsNumeric(this Type myType)
-        {
-            return NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this Type myType) => NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
-        public static bool IsDecimal(this Type myType)
-        {
-            return DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
-        }
+        public static bool IsNumeric(this object val) => val?.GetType().IsNumeric() ?? false;
+
+        public static bool IsDecimal(this Type myType) => DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
@@ -609,5 +620,25 @@ namespace ATT
         }
 
         public static T SafeIndex<T>(this IList<T> vals, int index) => (vals != null && vals.Count > index) ? vals[index] : default;
+
+        public static bool IsEquivalent(this object val1, object val2)
+        {
+            if (Equals(val1, val2))
+            {
+                return true;
+            }
+
+            if (val1 is ICollection<object> col1 && val2 is ICollection<object> col2)
+            {
+                return col1.Matches(col2);
+            }
+
+            if (val1 is IEnumerable<object> arr1 && val2 is IEnumerable<object> arr2)
+            {
+                return arr1.Matches(arr2);
+            }
+
+            return false;
+        }
     }
 }

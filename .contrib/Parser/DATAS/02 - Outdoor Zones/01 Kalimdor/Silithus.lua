@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
 						-- #else
-						{ 67, 69.6, SILITHUS },
+						{ 67.0, 69.6, SILITHUS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(40, 40, 15),
@@ -1046,21 +1046,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 20455 },	-- Hive'Ashi Rubbing
 								{ "o", 180454 },	-- Hive'Ashi Glyphed Crystal
 							},
-							["coord"] = { 50, 26, SILITHUS },
+							["coord"] = { 50.0, 26.0, SILITHUS },
 						}),
 						objective(2, {	-- 0/1 Hive'Zora Rubbing
 							["providers"] = {
 								{ "i", 20454 },	-- Hive'Zora Rubbing
 								{ "o", 180455 },	-- Hive'Zora Glyphed Crystal
 							},
-							["coord"] = { 37, 62, SILITHUS },
+							["coord"] = { 37.0, 62.0, SILITHUS },
 						}),
 						objective(3, {	-- 0/1 Hive'Regal Rubbing
 							["providers"] = {
 								{ "i", 20456 },	-- Hive'Regal Rubbing
 								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
-							["coord"] = { 52, 99, SILITHUS },
+							["coord"] = { 52.0, 99.0, SILITHUS },
 						}),
 						-- #endif
 					},
@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hive'Ashi Scout Report
 							["provider"] = { "i", 21161 },	-- Hive'Ashi Scout Report
-							["coord"] = { 44, 14, SILITHUS },
+							["coord"] = { 44.0, 14.0, SILITHUS },
 							["cr"] = 15611,	-- Cenarion Scout Jalia
 						}),
 						CENARION_TACTICAL_BADGE,
@@ -1154,7 +1154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hive'Regal Scout Report
 							["provider"] = { "i", 21160 },	-- Hive'Regal Scout Report
-							["coord"] = { 53, 97, SILITHUS },
+							["coord"] = { 53.0, 97.0, SILITHUS },
 							["cr"] = 15609,	-- Cenarion Scout Landion
 						}),
 						CENARION_TACTICAL_BADGE,
@@ -1975,7 +1975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
 						-- #else
-						{ 67, 69.6, SILITHUS },
+						{ 67.0, 69.6, SILITHUS },
 						-- #endif
 					},
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text

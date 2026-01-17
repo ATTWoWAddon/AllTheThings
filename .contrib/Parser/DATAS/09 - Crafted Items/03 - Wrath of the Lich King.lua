@@ -19,8 +19,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	i(180059, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(569722, {	-- Coldwind Lumber
-			i(251762),	-- Coldwind Lumber
+		o_repeated({	-- Coldwind Lumber
+			["maps"] = {
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DRAGONBLIGHT,
+				GRIZZLY_HILLS,
+				HOWLING_FJORD,
+				SHOLAZAR_BASIN,
+				THE_STORM_PEAKS,
+				WINTERGRASP,
+				ZULDRAK,
+			},
+			["groups"] = {
+				-- Objects
+				o(571034),	-- [Borean Tundra]
+				o(570347),	-- [Crystalsong Forest]
+				o(569722),	-- [Dragonblight]
+				o(569408),	-- [Grizzly Hills/Howling Fjord]
+				o(568528),	-- [Howling Fjord]
+				o(570942),	-- [Sholazar Basin]
+				o(570896),	-- [The Storm Peaks]
+				o(569785),	-- [Wintergrasp]
+				o(570233),	-- [Zul'Drak]
+				-- Drops
+				i(251762),	-- Coldwind Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {

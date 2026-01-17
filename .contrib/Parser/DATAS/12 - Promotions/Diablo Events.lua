@@ -319,7 +319,6 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	}),
 }));
 
-
 root(ROOTS.HiddenQuestTriggers, n(DIABLO_EVENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0} }, {
 	n(GREEDY_EMISSARY_EVENT, {
 		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account

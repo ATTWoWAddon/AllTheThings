@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(530, {	-- A Husband's Revenge
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity
 					["qg"] = 2050,	-- Raleigh Andrean
-					["coord"] = { 62, 43, UNDERCITY },
+					["coord"] = { 62.0, 43.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(479, {	-- Ambermill Investigations
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(516, {	-- Beren's Peril
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "o", 1627 },	-- Dalaran Crate
 					},
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1382,7 +1382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(480, {	-- The Weaver
 					["sourceQuest"] = 479,	-- Ambermill Investigations
 					["qg"] = 2121,	-- Shadow Priest Allister
-					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,

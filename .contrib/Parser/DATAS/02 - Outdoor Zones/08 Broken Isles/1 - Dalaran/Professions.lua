@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ALCHEMICAL_BONDING_AGENT = 138961;	-- Alchemical Bonding Agent
 local AURIPHAGIC_SARDINE = 138957;			-- Auriphagic Sardine
 local GLOB_OF_REALLY_STICKY_GLUE = 138958;	-- Glob of Really Sticky Glue
@@ -525,20 +526,20 @@ root(ROOTS.Zones, {
 								["coord"] = { 44.7, 62.0, BROKEN_ISLES },
 							}),
 							i(138811, {	-- Brinedeep Bottom Feeder (MOUNT!)
-								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+								["cost"] = { { "i", 138777, 100 } },	-- 100x Drowned Mana
 							}),
 							i(142532, {	-- Crate of Bobbers: Murloc Head (TOY!)
-								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+								["cost"] = { { "i", 138777, 100 } },	-- 100x Drowned Mana
 							}),
 							i(142531, {	-- Crate of Bobbers: Squeaky Duck (TOY!)
-								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+								["cost"] = { { "i", 138777, 100 } },	-- 100x Drowned Mana
 							}),
 							i(138810, {	-- Sting Ray Pup (PET!)
-								["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
+								["cost"] = { { "i", 138777, 50 } },	-- 50x Drowned Mana
 							}),
 							i(143842, {	-- Trashy (PET!)
 								["timeline"] = { ADDED_7_1_5 },
-								["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
+								["cost"] = { { "i", 138777, 50 } },	-- 50x Drowned Mana
 							}),
 						},
 					}),
@@ -564,9 +565,7 @@ root(ROOTS.Zones, {
 							["requireSkill"] = INSCRIPTION,
 							["isWorldQuest"] = true,
 							["lvl"] = { 45 },
-							["groups"] = {
-								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
-							},
+							["groups"] = { i(137769) },	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
 						}),
 					}),
 				}),

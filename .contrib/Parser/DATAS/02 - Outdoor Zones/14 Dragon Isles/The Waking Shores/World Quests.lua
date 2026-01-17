@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				]]--
 				q(70150, {	-- 'Many Whelps, Handle It'
-					["coord"] = { 57.8, 68, THE_WAKING_SHORES },
+					["coord"] = { 57.8, 68.0, THE_WAKING_SHORES },
 				}),
 				petbattle(q(74841, {	-- Adinakon
 					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(67014, {	-- Gorlocs No More-locs
-					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
+					["coord"] = { 80.0, 39.6, THE_WAKING_SHORES },
 				}),
 				q(66989, {	-- Helpful Harvest
 					["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 67.5, 64.2, THE_WAKING_SHORES },
 				}),
 				pvp(q(67005, {	-- How to Train a Proto-Drake
-					["coord"] = { 40, 89, THE_WAKING_SHORES },
+					["coord"] = { 40.0, 89.0, THE_WAKING_SHORES },
 					["groups"] = {
 						i(194818),	-- Proto-Drake Wrangler Rope (QI!)
 					},
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				pvp(q(72008, {	-- Overcoming a Mountain: Krolkoth
-					["coord"] = { 43.2, 58, THE_WAKING_SHORES },
+					["coord"] = { 43.2, 58.0, THE_WAKING_SHORES },
 				})),
 				q(70012, {	-- Protect the Nets!
 					["coord"] = { 55.6, 58.3, THE_WAKING_SHORES },

@@ -1205,28 +1205,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149025 },	-- Sentry Brazier
 							},
-							["coord"] = { 33, 60, SEARING_GORGE },
+							["coord"] = { 33.0, 60.0, SEARING_GORGE },
 						}),
 						objective(2, {	-- Southern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149030 },	-- Sentry Brazier
 							},
-							["coord"] = { 44, 60, SEARING_GORGE },
+							["coord"] = { 44.0, 60.0, SEARING_GORGE },
 						}),
 						objective(3, {	-- Eastern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149031 },	-- Sentry Brazier
 							},
-							["coord"] = { 50, 55, SEARING_GORGE },
+							["coord"] = { 50.0, 55.0, SEARING_GORGE },
 						}),
 						objective(4, {	-- Northern Tower Ablaze
 							["providers"] = {
 								{ "i",  10515 },	-- Torch of Retribution
 								{ "o", 149032 },	-- Sentry Brazier
 							},
-							["coord"] = { 33, 54, SEARING_GORGE },
+							["coord"] = { 33.0, 54.0, SEARING_GORGE },
 						}),
 						i(10742, {	-- Dragonflight Leggings
 							["timeline"] = { REMOVED_4_0_3 },

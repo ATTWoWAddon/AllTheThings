@@ -23,106 +23,138 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				})),
 				n(ARTIFACTS, {
 					header(HEADERS.Item, 141332, {	-- The Annals of Light and Shadow
-						["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
+						["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\n|cFFE50D12IMPORTANT:|r Start with Volume IV and Archivist Inkforge in your Order Hall.",
 						["groups"] = sharedData({
-							["groups"] = {
-								i(141332),	-- The Annals of Light and Shadow
-							},
+							["groups"] = { i(141332) },	-- The Annals of Light and Shadow
 						},{
 							q(44339, {	-- Volume I
 								["name"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
-								["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
-								["provider"] = { "n", 113873 },	-- Archivist Elysiana <Curator>
-								["coord"] = { 30.6, 50.8, LEGION_DALARAN },
+								["description"] = "After entering The Violet Citadel in new Dalaran, on the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
+								["provider"] = { "o", 252294 },	-- The Annals of Light and Shadow - Volume I
+								["coord"] = { 30.0, 51.4, LEGION_DALARAN },
 							}),
 							q(44340, {	-- Volume II
 								["name"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
-								["description"] = "High Priestess Ishanah is on the other side of the alcove, and next to her is a Draenei Anchorite.\n\nWorld Spawn - might be on cooldown!",
-								["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
-								["coord"] = { 58.4, 25.1, NETHERLIGHT_TEMPLE },
+								["description"] = "In the top right point of the Temple alcove, Volume II is on a table in front of a Draenei Anchorite.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
+								["provider"] = { "o", 252295 },	-- The Annals of Light and Shadow - Volume II
+								["coord"] = { 58.4, 24.8, NETHERLIGHT_TEMPLE },
 							}),
 							q(44341, {	-- Volume III
 								["name"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
-								["description"] = "Book is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\nWorld Spawn - might be on cooldown (60-minute respawn).",
-								["icon"] = 134503,
+								["description"] = "Volume III is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
+								["provider"] = { "o", 252296 },	-- The Annals of Light and Shadow - Volume III
 								["coords"] = {
 									{ 72.2, 73.4, DRAGONBLIGHT },	-- Entrance to cloister
-									{ 73.2, 72.9, DRAGONBLIGHT },	-- Actual book
+									{ 73.3, 72.9, DRAGONBLIGHT },	-- The Annals of Light and Shadow - Volume III
 								},
 							}),
-							q(44344, {	-- Volume IV
-								["name"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
-								["description"] = "On the left side of Meridelle Lightspark there is a shelf. On the lower board, there are some stacked books, and this volume is on the right side of those.\n\nWorld Spawn - might be on cooldown!",
-								["provider"] = { "n", 112401 },	-- Meridelle Lightspark <Logistics>
-								["coord"] = { 37.2, 25.0, NETHERLIGHT_TEMPLE },
+							q(44342, {	-- Volume IV
+								["name"] = "|cFFFFFFFFVolume IV|r | Archivist Inkforge in the class order hall.",
+								["description"] = "You must get Volume IV first in order to collect the others. Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you Volume IV.",
+								["provider"] = { "n", 111119 },	-- Archivist Inkforge
+								["coord"] = { 62.8, 36.0, NETHERLIGHT_TEMPLE },
 							}),
 							q(44343, {	-- Volume V
 								["name"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
-								["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
-								["provider"] = { "n", 58633 },	-- Instructor Chillheart
+								["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trash-pack on the right side. Volume V is on top of the 6th bookshelf from the right.",
+								["providers"] = {
+									{ "o", 252297 },	-- The Annals of Light and Shadow - Volume V
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ "o", 624276 },	-- The Annals of Light and Shadow - Volume V
+									-- #endif
+									-- #endif
+								},
 								["coords"] = {
 									{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
-									{ 58.8, 84.0, SCHOLOMANCE },	-- Actual volume inside the dungeon
+									{ 58.8, 84.0, SCHOLOMANCE },	-- The Annals of Light and Shadow - Volume V
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ 45.8, 68.5, BROKEN_ISLES },	-- Infinite Bazaar, around the Pile of Chronoqueries [REMIX ONLY]
+									-- #endif
+									-- #endif
 								},
 							}),
-							q(44342, {	-- Volume VI
-								["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
-								["description"] = "You must get this volume first in order to collect the others. Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
-								["provider"] = { "n", 111119 },	-- Archivist Inkforge
-								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
+							q(44344, {	-- Volume VI
+								["name"] = "|cFFFFFFFFVolume VI|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
+								["description"] = "In the top left point of the Temple alcove, Volume VI is on a shelf to the left of Meridelle Lightspark.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
+								["provider"] = { "o", 252298 },	-- The Annals of Light and Shadow - Volume VI
+								["coord"] = { 37.2, 25.1, NETHERLIGHT_TEMPLE },
 							}),
 							q(44345, {	-- Volume VII
 								["name"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
-								["description"] = "Run through the instance to Flameweaver Koegler's room. on the left-hand side of the room there's a table with a candelabra. Volume 7 is on the bench between the table and the bookshelf.",
-								["provider"] = { "n", 59150 },	-- Flameweaver Koegler
+								["description"] = "Run through the instance to Flameweaver Koegler's room. On the left-hand side of the room there's a table with a candelabra. Volume VII is on the bench between the table and the bookshelf.",
+								["providers"] = {
+									{ "o", 252299 },	-- The Annals of Light and Shadow - Volume VII
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ "o", 624277 },	-- The Annals of Light and Shadow - Volume VII
+									-- #endif
+									-- #endif
+								},
 								["coords"] = {
-									{ 69.0, 24.9, SCARLET_MONASTERY_ENTRANCE },	-- Scarlet Halls entrance
-									{ 35.7, 14.2, 432 },	-- Actual volume inside instance
+									{ 77.0, 56.0, SCARLET_MONASTERY_ENTRANCE },	-- Scarlet Halls entrance
+									{ 35.7, 14.2, 432 },	-- The Annals of Light and Shadow - Volume VII
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ 45.8, 68.5, BROKEN_ISLES },	-- Infinite Bazaar, around the Pile of Chronoqueries [REMIX ONLY]
+									-- #endif
+									-- #endif
 								},
 							}),
 							q(44350, {	-- Volume VIII
-								["name"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
-								["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+								["name"] = "|cFFFFFFFFVolume VIII|r | Inquisitor Ernstenbok, a Rare in the cave southwest of Halls of Valor, Stormheim.",
+								["description"] = "In order to be able to loot Volume VIII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 90139 },	-- Inquisitor Ernstenbok
 								["coord"] = { 63.6, 74.4, STORMHEIM },
 							}),
 							q(44347, {	-- Volume IX
 								["name"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
-								["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+								["description"] = "In order to be able to loot Volume IX, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 106351 },	-- Artificer Lothaire
 								["coord"] = { 33.8, 15.0, SURAMAR },
 							}),
 							q(44348, {	-- Volume X
-								["name"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
-								["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
-								["provider"] = { "n", 98542 },	-- Amalgam of Souls
+								["name"] = "|cFFFFFFFFVolume X|r | Black Rook Hold Library.",
+								["description"] = "After defeating The Amalgam of Souls, you will enter the Library with a large setup in the middle.\nHead along the left side, Volume X is on one of the tables.",
+								["provider"] = { "o", 252300 },	-- The Annals of Light and Shadow - Volume X
 								["coords"] = {
-									{ 58.6, 75.8, 751 },	-- item in instance
 									{ 38.4, 50.8, VALSHARAH },	-- Black Rook Hold entrance
+									{ 58.6, 75.8, 751 },	-- The Annals of Light and Shadow - Volume X
 								},
 							}),
 							q(44349, {	-- Volume XI
 								["name"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
-								["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
-								["provider"] = { "n", 15691 },	-- The Curator
+								["description"] = "After defeating The Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and three bookshelves below. Volume XI is on the bottom of the left-hand bookshelf.",
+								["providers"] = {
+									{ "o", 252301 },	-- The Annals of Light and Shadow - Volume XI
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ "o", 624278 },	-- The Annals of Light and Shadow - Volume XI
+									-- #endif
+									-- #endif
+								},
 								["coords"] = {
 									{ 46.9, 74.8, DEADWIND_PASS },	-- Karazhan entrance
-									{ 36.8, 37.9, 358 },
+									{ 36.8, 37.9, 358 },	-- The Annals of Light and Shadow - Volume XI
+									-- #if AFTER 11.2.5
+									-- #if BEFORE 12.0.0
+									{ 45.8, 68.5, BROKEN_ISLES },	-- Infinite Bazaar, around the Pile of Chronoqueries [REMIX ONLY]
+									-- #endif
+									-- #endif
 								},
 							}),
 							q(44346, {	-- Volume XII
-								["name"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
-								["description"] = "Fly to Shackle's Den and head east.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+								["name"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine in The Queen's Reprisal, Azsuna.",
+								["description"] = "In order to be able to loot Volume XII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 106990 },	-- Chief Bitterbrine
 								["coord"] = { 65.6, 56.8, AZSUNA },
 							}),
 							i(139567, {	-- Writings of the End
 								["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item.",
 								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
-								["cost"] = {{"i",141332,12}},	-- The Annals of Light and Shadow
-								["groups"] = {
-									artifact(738),	-- Discipline Priest Hidden Artifact Skin
-								},
+								["cost"] = { { "i", 141332, 12 } },	-- The Annals of Light and Shadow
+								["groups"] = { artifact(738) },	-- Tomekeeper's Spire, Discipline Priest Hidden Artifact appearance
 							}),
 						}),
 					}),
@@ -152,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(QUESTS, {
 					-- Start
 					q(40705, {	-- Priestly Matters
-						["qgs"] = {
+						["qgs"] = {	-- mobileNPC
 							101344,	-- Hooded Priestess (Horde)
 							102333,	-- Hooded Priestess (Alliance)
 						},
@@ -196,6 +228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ 12.8, 59.1, TIRISFAL_GLADES },
 								-- #endif
 							},
+							["maps"] = { 20 },	-- Keeper's Rest
 							["groups"] = { i(173523) },	-- Tirisfal Camp Scroll (QI!)
 						}),
 					}),
@@ -206,7 +239,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								101314,	-- Alonsus Faol
 								110564,	-- Alonsus Faol
 							},
-							["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
+							["coords"] = {
+								{ 51.5, 47.6, NETHERLIGHT_TEMPLE },
+								{ 79.0, 41.0, TIRISFAL_GLADES },
+								-- #if AFTER 11.1.7
+								{ 12.8, 59.1, TIRISFAL_GLADES },
+								-- #endif
+							},
 						}),
 						q(41966, {	-- House Call
 							["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
@@ -229,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 						q(42074, {	-- Return of the Light
 							["sourceQuests"] = { 41993 },	-- Salvation From On High
-							["provider"] = { "n", 106011 },	-- Jace  Darkweaver
+							["provider"] = { "n", 106011 },	-- Jace Darkweaver
 							["coord"] = { 33.5, 33.1, BROKEN_SHORE },
 							["maps"] = { 714 },	-- Niskara
 							["groups"] = {
@@ -253,8 +292,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								110564,	-- Alonsus Faol
 							},
 							["coords"] = {
-								{ 51.5, 47.9, NETHERLIGHT_TEMPLE },
+								{ 51.5, 47.6, NETHERLIGHT_TEMPLE },
 								{ 79.0, 41.0, TIRISFAL_GLADES },
+								-- #if AFTER 11.1.7
+								{ 12.8, 59.1, TIRISFAL_GLADES },
+								-- #endif
 							},
 						}),
 						q(41626, {	-- A New Threat
@@ -310,8 +352,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 101313 },	-- Prophet Velen
 						["coord"] = { 46.6, 20.9, LEGION_DALARAN },
 					}),
-					-- 41015
-					-- 41017
+					q(41015, {	-- Artifacts Need Artificers
+						["sourceQuests"] = { 40938 },	-- The Light and the Void
+						["provider"] = { "n", 102655 },	-- Alonsus Faol
+						["coord"] = { 48.9, 49.1, NETHERLIGHT_TEMPLE },
+						["timeline"] = { REMOVED_8_0_1 },
+					}),
+					q(41017, {	-- Empowering Your Artifact
+						["sourceQuests"] = { 41015 },	-- Artifacts Need Artificers
+						["provider"] = { "n", 102709 },	-- Betild Deepanvil <Master Artificer>
+						["coords"] = { 50.4, 21.8, NETHERLIGHT_TEMPLE },
+						["timeline"] = { REMOVED_8_0_1 },
+					}),
 					q(44251, {	-- Power Word: Armor
 						["provider"] = { "n", 112401 },	-- Meridelle Lightspark
 						["coord"] = { 38.9, 24.4, NETHERLIGHT_TEMPLE },
@@ -320,13 +372,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Zone
 					q(41019, {	-- Actions on Azeroth
-						["sourceQuests"] = { 40938 },	-- The Light and the Void
+						["sourceQuests"] = {
+							-- #if AFTER 8.0.1
+							40938,	-- The Light and the Void
+							-- #else
+							41017,	-- Empowering Your Artifact
+							-- #endif
+						},
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, NETHERLIGHT_TEMPLE },
 					}),
 					q(44100, {	-- Proper Introductions
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
-						["provider"] = { "n", 112695 },	-- Hooded Priest
+						["provider"] = { "n", 112695 },	-- Hooded Priest (mobileNPC)
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { PRIEST },	-- Priest
 						["isBreadcrumb"] = true,
 					}),
@@ -339,17 +398,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["provider"] = { "n", 110596 },	-- Calia Menethil
 						["coord"] = { 51.6, 50.0, NETHERLIGHT_TEMPLE },
-						["groups"] = {
-							follower(856),	-- Calia Menethil
-						},
+						["groups"] = { follower(856) },	-- Calia Menethil
 					}),
 					q(43272, {	-- Champion: High Priestess Ishanah
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
 						["provider"] = { "n", 110598 },	-- High Priestess Ishanah
 						["coord"] = { 57.4, 26.9, NETHERLIGHT_TEMPLE },
-						["groups"] = {
-							follower(857),	-- High Priestess Ishanah
-						},
+						["groups"] = { follower(857) },	-- High Priestess Ishanah
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions
@@ -366,7 +421,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.1, 48.5, NETHERLIGHT_TEMPLE },
 					}),
-
 					--
 					q(43386, {	-- Onslaught Envoy
 						["sourceQuests"] = { 43385 },	-- Infiltrating Our Enemies
@@ -427,9 +481,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43392,	-- Into the Void
 						["provider"] = { "n", 110684 },	-- Natalie Seline
 						["coord"] = { 24.2, 37.8, DUSKWOOD },
-						["groups"] = {
-							follower(874),	-- Natalie Seline
-						},
+						["groups"] = { follower(874) },	-- Natalie Seline
 					}),
 					q(43393, {	-- Rising Shadows
 						["sourceQuest"] = 43382,	-- Champion: Natalie Seline
@@ -440,17 +492,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43393 },	-- Rising Shadows
 						["provider"] = { "n", 111044 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 59.5, NETHERLIGHT_TEMPLE },
-						["maps"] = { 748 },
+						["maps"] = { 748 },	-- Niskara
 					}),
 					q(43396, {	-- The Mind of the Enemy
 						["sourceQuests"] = { 43394 },	-- Crossing Legion Lines
 						["provider"] = { "n", 110969 },	-- Aponi Brightmane
-						["coord"] = { 48.9, 63.6, 748 },
+						["coord"] = { 48.9, 63.6, 748 },	-- Niskara
 					}),
 					q(43395, {	-- Allies of the Light
 						["sourceQuests"] = { 43394 },	-- Crossing Legion Lines
 						["provider"] = { "n", 110969 },	-- Aponi Brightmane
-						["coord"] = { 48.9, 63.6, 748 },
+						["coord"] = { 48.9, 63.6, 748 },	-- Niskara
 					}),
 					q(43397, {	-- United As One
 						["sourceQuests"] = {
@@ -512,9 +564,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43401 },	-- A Light in the Darkness
 						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 						["coord"] = { 51.0, 48.4, NETHERLIGHT_TEMPLE },
-						["groups"] = {
-							follower(875),	-- Alonsus Faol
-						},
+						["groups"] = { follower(875) },	-- Alonsus Faol
 					}),
 					q(43402, {	-- High Priest of Netherlight
 						["sourceQuests"] = { 43398 },	-- Champion: Alonsus Faol
@@ -539,7 +589,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					--
-
 					q(45343, {	-- A Curious Contagion
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
@@ -638,6 +687,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["groups"] = { follower(1002) },	-- Aelthalyste
 					}),
+					q(46788, {	-- Further Advancement
+						-- ["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
+						["provider"] = { "n", 109776 },	-- Moira Thaurissan
+						["coord"] = { 51.3, 47.8, NETHERLIGHT_TEMPLE },
+						["timeline"] = { ADDED_7_2_0 },
+					}),
 					q(45788, {	-- The Speaker Awaits
 						["sourceQuests"] = { 46034 },	-- Champion: Aelthalyste
 						["qgs"] = {
@@ -653,7 +708,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							{ 48.0, 21.9, NETHERLIGHT_TEMPLE },
 							{ 50.4, 21.8, NETHERLIGHT_TEMPLE },
 						},
-						["maps"] = { 839 },	-- THe Maelstrom
+						["maps"] = { 839 },	-- The Maelstrom
 						["groups"] = { mount(229377) },	-- High Priest's Lightsworn Seeker (MOUNT!)
 					}),
 					q(43375, {	-- An Ample Supply
@@ -773,19 +828,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.2, 48.7, NETHERLIGHT_TEMPLE },
 					}),
-					-- Misc
+					-- Artifact Research
 					q(43884, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(46788, {	-- Further Advancement
-						-- ["sourceQuests"] = { 46034, },	-- Champion: Aelthalyste
-						["provider"] = { "n", 109776 },	-- Moira Thaurissan <Queen of the Dark Iron>
-					}),
-					q(46153, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
+						["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
+						["coord"] = { 58.4, 25.1, NETHERLIGHT_TEMPLE },
+						["timeline"] = { REMOVED_7_3_0 },
 					}),
 					q(46140, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
+						["sourceQuests"] = { 43884 },	-- Hitting the Books
+						["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
+						["coord"] = { 58.4, 25.1, NETHERLIGHT_TEMPLE },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
+					}),
+					q(46153, {	-- Furthering Knowledge
+						["sourceQuests"] = { 46140 },	-- Knowledge is Power
+						["provider"] = { "n", 111738 },	-- Juvess the Duskwhisperer
+						["coord"] = { 58.4, 25.1, NETHERLIGHT_TEMPLE },
+						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 				}),
 				n(SPECIAL, {

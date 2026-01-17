@@ -400,12 +400,21 @@ root(ROOTS.Promotions, {
 			}),
 			i(257518, {	-- Lil' Ashlee (PET!)
 				["description"] = "Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",
-				["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed December 8th, 2025
+				["timeline"] = { ADDED_11_2_5, "removed 11.2.7.64772" },	-- Removed December 8th, 2025
 				["u"] = REAL_MONEY,
 			}),
 			i(235343, {	-- Topsy Turvy Joker's Mask
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.99999" },	-- Removed December 30th, 2025
+				["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" },	-- Removed December 30th, 2025
+			}),
+			i(248681, {	-- Scorching Valor (MOUNT!)
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+				["timeline"] = { ADDED_11_2_7 },
+				["u"] = REAL_MONEY,
+			}),
+			i(263301, {	-- Cuddly Green Grrgle (DECOR!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_12_0_0, "removed 12.0.1.99999" },	-- Removed February 17th, 2026
 			}),
 		--	i(500001, {	-- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,

@@ -34,6 +34,14 @@ root(ROOTS.Zones, {
 							i(121738, {	-- Irongrove Refugee Boots
 								["cost"] = 5000000,	-- 500g
 							}),
+							i(247908, {	-- Nightborne Lantern (DECOR!)
+								["sourceQuest"] = 92581,	-- Last Light
+								["timeline"] = { ADDED_11_2_7 },
+								["cost"] = {
+									{ "g", 240000 },	-- 24g
+									{ "c", ORDER_RESOURCES, 50 },
+								},
+							}),
 							i(247921, {	-- Nightborne Wall Shelf (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = {

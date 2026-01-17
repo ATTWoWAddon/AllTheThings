@@ -313,14 +313,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53979, {	-- Naga Attack!
-				["groups"] = {
-					i(165605),	-- Azsharan Medallion
-				},
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(53963, {	-- Naga Attack!
-				["groups"] = {
-					i(165605),	-- Azsharan Medallion
-				},
+				a(i(165605)),	-- Azsharan Medallion [A] (QS!)
+				h(i(165668)),	-- Azsharan Medallion [H] (QS!)
 			}),
 			q(51620, {	-- Natural Resources
 				["races"] = ALLIANCE_ONLY,

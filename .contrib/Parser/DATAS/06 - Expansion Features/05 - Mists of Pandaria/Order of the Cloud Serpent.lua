@@ -177,15 +177,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["groups"] = {
 						objective(1, {	-- Northwestern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 62, 24, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 62.0, 24.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 						objective(2, {	-- Northeastern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 35, 32, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 35.0, 32.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 						objective(3, {	-- Southern Sha Disturbance measured
 							["provider"] = { "i", 88966 },	-- Sha Attunement Device (QI!)
-							["coord"] = { 61, 72, THE_JADE_FOREST_THE_WIDOWS_WAIL },
+							["coord"] = { 61.0, 72.0, THE_JADE_FOREST_THE_WIDOWS_WAIL },
 						}),
 					},
 				}),
@@ -484,7 +484,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "o", 214867 },	-- Stolen Boots
 								{ "o", 214868 },	-- Stolen Boots
 							},
-							["coord"] = { 63, 26.4, THE_JADE_FOREST },
+							["coord"] = { 63.0, 26.4, THE_JADE_FOREST },
 						}),
 					},
 				}),
@@ -735,7 +735,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
 					["qg"] = 63900,	-- Toortle Wider
-					["coord"] = { 49, 46, THE_JADE_FOREST },
+					["coord"] = { 49.0, 46.0, THE_JADE_FOREST },
 					["timeline"] = { ADDED_MOP_REMIX },
 					["isBreadcrumb"] = true,
 				}),

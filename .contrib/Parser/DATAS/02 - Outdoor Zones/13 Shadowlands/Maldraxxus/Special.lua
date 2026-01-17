@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(MALDRAXXUS, {
 		n(SPECIAL, {
 			n(182194, {	-- Baroness Vashj
-				["coord"] = { 57.6, 92, MALDRAXXUS },
+				["coord"] = { 57.6, 92.0, MALDRAXXUS },
 				["groups"] = {
 					i(187923, {	-- Aurelid Lure (CI!)
 						["description"] = "Step 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.\n\nObtained each week for free after the first time.",

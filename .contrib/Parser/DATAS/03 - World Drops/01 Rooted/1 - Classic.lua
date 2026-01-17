@@ -3363,10 +3363,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if AFTER 9.1.0
 		i(3300, {	-- Rabbit's Foot
-			["description"] = "Drops from wolves or dogs in Classic zones.",
+			["description"] = "Drops from wolves or dogs in vanilla zones.",
 		}),
 		i(11406, {	-- Rotting Bear Carcass
-			["description"] = "Drops from bears in Classic zones.",
+			["description"] = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
 		}),
 		-- #endif
 		-- #if SEASON_OF_DISCOVERY
@@ -4073,7 +4073,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["maps"] = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
+				-- #if BEFORE 6.0.1
 				LOWER_BLACKROCK_SPIRE,
+				-- #endif
 				SILITHUS,
 				STRATHOLME,
 				SWAMP_OF_SORROWS,
@@ -4630,8 +4632,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				EASTERN_PLAGUELANDS,
 				WESTERN_PLAGUELANDS,
 				-- #endif
-				DIRE_MAUL_CAPITAL_GARDENS,
+				-- #if BEFORE MOP
 				SCHOLOMANCE,
+				-- #endif
+				DIRE_MAUL_CAPITAL_GARDENS,
 				STRATHOLME,
 			},
 		}),
@@ -4654,8 +4658,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #elseif AFTER 4.0.3
 				EASTERN_PLAGUELANDS,
 				-- #endif
-				DIRE_MAUL,
+				-- #if BEFORE MOP
 				SCHOLOMANCE,
+				-- #endif
+				DIRE_MAUL,
 				STRATHOLME,
 			},
 		}),
@@ -5402,7 +5408,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
-			["coord"] = { 44.0, 48.0, DARKSHORE },
+			["coords"] = {
+				{ 44.0, 48.0, DARKSHORE },
+				{ 76.6, 68.2, LOCH_MODAN },
+				{ 40.6, 59.0, MULGORE },
+				{ 52.0, 38.8, REDRIDGE_MOUNTAINS },
+				{ 54.6, 60.6, TELDRASSIL },
+				{ 61.2, 59.8, WESTFALL },
+			},
 			-- #endif
 			-- #if AFTER TBC
 			["maps"] = {
@@ -5412,6 +5425,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["crs"] = {
 				-- #if BEFORE 4.0.3
+				154,	-- Greater Fleshripper
+				199, 	-- Young Fleshripper
+				428,	-- Dire Condor
+				1109,	-- Fleshripper
+				1194,	-- Mountain Buzzard
+				1995,	-- Strigid Owl
+				1996,	-- Strigid Screecher
+				1997,	-- Strigid Hunter
+				2969,	-- Wiry Swoop
+				2970,	-- Swoop
+				2971,	-- Taloned Swoop
 				10158,	-- Moonkin
 				10157,	-- Moonkin Oracle
 				10160,	-- Raging Moonkin
@@ -5435,7 +5459,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #elseif AFTER 4.0.3
 			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
 			-- #else
-			["description"] = "Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
 			-- #endif
 		}),
 		i(5465, {	-- Small Spider Leg

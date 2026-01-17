@@ -774,9 +774,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			o(180691, {	-- Scarab Coffer
 				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
 				["cost"] = {
-					-- #if ANYCLASSIC
-					{ "i", 21761, 1, PHASE_ONE },	-- Scarab Coffer Key [pre-4.3]
-					{ "i", 76401, 1, CATA_PHASE_ONE },	-- Scarab Coffer Key [4.3]
+					-- #if BEFORE 4.3.0
+					{ "i", 21761, 1 },	-- Scarab Coffer Key [pre-4.3]
 					-- #else
 					{ "i", 76401, 1 },	-- Scarab Coffer Key [4.3]
 					-- #endif

@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49144,	-- Wrath of the Zandalari
 				},
 				["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
-				["coord"] = { 49.6, 64.5, ZULDAZAR },
+				["coord"] = { 48.1, 60.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(49495, {	-- Enforcing Fate
@@ -1872,7 +1872,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129589 },	-- The Monkey King
 				["coords"] = {
 					{ 47.0, 88.4, DAZARALOR },
-					{ 57, 58.5, ZULDAZAR },
+					{ 57.0, 58.5, ZULDAZAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2094,7 +2094,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level
 				q(47527),	-- Rituals of Heresy
-				q(47797),	-- Occupation Hazard
+				q(47797, {	-- Occupation Hazard
+					["sourceQuest"] = 47737,	-- The Temple of Rezan
+					["coord"] = { 73.6, 26.3, ZULDAZAR },
+				}),
 				q(49918),	-- Gorilla Gorge
 				q(50178),	-- Trouble in the Rootway
 			})),

@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(79327, {	-- The Glittering Shard
 					["sourceQuests"] = { 79944 },	-- Raging Rifts
 					["provider"] = { "i", 212595 },	-- Glittering Shard
-					["coord"] = { 57, 16, THE_RINGING_DEEPS },
+					["coord"] = { 57.0, 16.0, THE_RINGING_DEEPS },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
@@ -1412,7 +1412,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
 				q(82116),	-- First option selected with ZZ-01-47 during 79023 'Small Friend, Big Plans' (2nd/3rd options have no HQT)
 				hqt(84585, name(HEADERS.Object, 457120, {	-- Rappelling Anchor
-					["coord"] = { 51, 47.6, THE_RINGING_DEEPS },
+					["coord"] = { 51.0, 47.6, THE_RINGING_DEEPS },
 				})),
 			}),
 		}),

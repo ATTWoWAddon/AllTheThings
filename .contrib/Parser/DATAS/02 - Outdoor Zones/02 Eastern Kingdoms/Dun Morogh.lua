@@ -897,7 +897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 12738 },	-- Nori Pridedrift
 								{ "i", 10439 },	-- Durnan's Scalding Mornbrew (PQI!)
 							},
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
@@ -909,7 +909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  786 },	-- Grelin Whitebeard
 								{ "i", 2619 },	-- Grelin's Report (PQI!)
 							},
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(218, {	-- The Stolen Journal
 							["sourceQuest"] = 182,	-- The Troll Cave
 							["qg"] = 786,	-- Grelin Whitebeard
-							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["coord"] = { 25.0, 75.8, DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
@@ -1314,7 +1314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
-							["coord"] = { 29, 67.4, DUN_MOROGH },
+							["coord"] = { 29.0, 67.4, DUN_MOROGH },
 							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { DWARF },
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						pet(442, {	-- Irradiated Roach (PET!)
 							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
-							["coord"] = { 43, 59, NEW_TINKERTOWN },
+							["coord"] = { 43.0, 59.0, NEW_TINKERTOWN },
 						}),
 					}),
 					petbattles({
@@ -3733,7 +3733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1879, {	-- Speak with Bink
 					["altQuests"] = { 1860 },	-- Speak with Jennea
 					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
-					["coord"] = { 47.4, 52, DUN_MOROGH },
+					["coord"] = { 47.4, 52.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -3775,7 +3775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2092,	-- Pilot Longbeard
 					},
 					["coords"] = {
-						{ 34.8, 47, LOCH_MODAN },
+						{ 34.8, 47.0, LOCH_MODAN },
 						{ 72.4, 93.6, IRONFORGE },
 					},
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3808,13 +3808,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "n", 41372 },	-- Frostmane Retreat North
 							},
-							["coord"] = { 64, 54, DUN_MOROGH },
+							["coord"] = { 64.0, 54.0, DUN_MOROGH },
 						}),
 						objective(2, {	-- Attack on Southern Frostmane Retreat
 							["providers"] = {
 								{ "n", 41373 },	-- Frostmane Retreat South
 							},
-							["coord"] = { 63, 57, DUN_MOROGH },
+							["coord"] = { 63.0, 57.0, DUN_MOROGH },
 						}),
 					},
 				}),
@@ -3921,7 +3921,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(6074, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
-					["coord"] = { 70, 84.6, IRONFORGE },
+					["coord"] = { 70.0, 84.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
@@ -4216,7 +4216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 76.3, 54.7, DUN_MOROGH },
 						-- #else
-						{ 69, 56.2, DUN_MOROGH },
+						{ 69.0, 56.2, DUN_MOROGH },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -4251,7 +4251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1872 },	-- Tharek Blackstone
 						{ "i", 2999 },	-- Steelgrill's Tools (PQI!)
 					},
-					["coord"] = { 46, 51.6, DUN_MOROGH },
+					["coord"] = { 46.0, 51.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,

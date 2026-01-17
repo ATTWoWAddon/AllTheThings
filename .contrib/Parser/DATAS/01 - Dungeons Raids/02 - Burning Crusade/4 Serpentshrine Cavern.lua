@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
 					["sourceQuest"] = 10708,	-- Akama's Promise
 					["qg"] = 22820,	-- Seer Olum
-					["coord"] = { 48, 18.2, SERPENTSHRINE_CAVERN },
+					["coord"] = { 48.0, 18.2, SERPENTSHRINE_CAVERN },
 					["maps"] = { SHADOWMOON_VALLEY },
 				}),
 			}),

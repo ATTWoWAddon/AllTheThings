@@ -578,8 +578,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
 				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 193744 },	-- Soragosa
-				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["qgs"] = {
+					193744,	-- Soragosa
+					216267,	-- Enchanter Falrin Treeshaper <House of Shen'dralar>
+				},
+				["coords"] = {
+					{ 30.8, 61.4, VALDRAKKEN },
+					{ 48.6, 54.2, AMIRDRASSIL },
+				},
 			}),
 			q(72155, {	-- Spread the Enchantment
 				["description"] = "Requires 45 Skill.",

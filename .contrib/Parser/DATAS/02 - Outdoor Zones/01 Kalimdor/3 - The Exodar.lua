@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
 					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
-					["coord"] = { 31, 27.8, THE_EXODAR },
+					["coord"] = { 31.0, 27.8, THE_EXODAR },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },

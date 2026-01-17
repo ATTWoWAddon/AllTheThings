@@ -894,18 +894,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				-- Horde OG: n(12793, {	-- Brave Stonehide
 				filter(NECK_F, {
 					i(28245, {	-- Pendant of Dominance
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 					i(28244, {	-- Pendant of Triumph
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 				}),
 				filter(FINGER_F, {
 					i(28247, {	-- Band of Dominance
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 					i(28246, {	-- Band of Triumph
-						["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_TBC_PHASE_TWO },
 					}),
 				}),
 				filter(TRINKET_F, {

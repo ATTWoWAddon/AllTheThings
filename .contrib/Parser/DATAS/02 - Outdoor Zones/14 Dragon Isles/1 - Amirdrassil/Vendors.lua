@@ -20,13 +20,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					i(210415, {	-- Darnassian Moonsilver Spaulders (COSMETIC!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
-					i(257352, {	-- Large Brazier of Elune
+					i(257352, {	-- Large Brazier of Elune (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 					}),
 				},
 			}),
 			n(216284, {	-- Mythrin'dir <Trade Goods>
+				["sourceQuest"] = 76283,	-- Andu-falah-dor
 				["coord"] = { 54.1, 60.8, AMIRDRASSIL },
 				["sym"] = {{"select","itemID",211399}},	-- Technique: Glyph of the Lunar Chameleon
 				["groups"] = {
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		})),
 		n(VENDORS, {	-- Non-factioned Vendors
 			n(216285, {	-- Ellandrieth <General Goods>
+				["sourceQuest"] = 76283,	-- Andu-falah-dor
 				["coord"] = { 48.2, 53.6, AMIRDRASSIL },
 				["groups"] = {
 					i(248401, { 	-- Ornamental Kaldorei Glaive (DECOR!)

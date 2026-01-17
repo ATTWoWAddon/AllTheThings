@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 44.6, 50.1, THALDRASZUS },
 				}),
 				q(70654, {	-- Are You Kitten Me?
-					["coord"] = { 59, 76.8, THALDRASZUS },
+					["coord"] = { 59.0, 76.8, THALDRASZUS },
 				}),
 				q(70656, {	-- Not Mushroom For Error
 					["coord"] = { 56.7, 35.3, THALDRASZUS },

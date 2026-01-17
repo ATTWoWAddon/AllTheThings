@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 			}),
 			n(185587, {	-- Rafiq
-				["coord"] = { 60.6, 51, ZERETH_MORTIS },
+				["coord"] = { 60.6, 51.0, ZERETH_MORTIS },
 				["groups"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
 					i(188054, {	-- Antecedent Drape
 						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 			}),
 			n(187651, {	-- Rendle
-				["coord"] = { 34.6, 64, ZERETH_MORTIS },
+				["coord"] = { 34.6, 64.0, ZERETH_MORTIS },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"find", "difficultyID", DIFFICULTY.RAID.MULTI.ALL},	-- Legendaries are listed under All Difficulties

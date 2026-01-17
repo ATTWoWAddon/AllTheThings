@@ -4,6 +4,9 @@ app.IsRetail = app.GameBuildVersion >= 100000;
 app.AfterCata = app.GameBuildVersion >= 40000;
 app.IsClassic = not app.IsRetail;
 
+app.EmptyFunction = function() end;
+app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
+
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
 -- In the future, ATT will reference all its global APIs provided by Blizzard through out WOWAPI lib.
 
@@ -111,6 +114,16 @@ if app.GameBuildVersion >= 70000 then
 end
 ---@diagnostic enable: deprecated
 
+-- Party APIs
+local C_PartyInfo = C_PartyInfo;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetLootMethod", C_PartyInfo and C_PartyInfo.GetLootMethod, GetLootMethod)
+AssignAPIWrapper("SetLootMethod", C_PartyInfo and C_PartyInfo.SetLootMethod, SetLootMethod)
+AssignAPIWrapper("ConvertToRaid", C_PartyInfo and C_PartyInfo.ConvertToRaid, ConvertToRaid)
+AssignAPIWrapper("InviteUnit", C_PartyInfo and C_PartyInfo.InviteUnit, InviteUnit)
+AssignAPIWrapper("LeaveParty", C_PartyInfo and C_PartyInfo.LeaveParty, LeaveParty)
+---@diagnostic enable: deprecated
+
 -- Quest APIs
 local C_QuestLog = C_QuestLog;
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
@@ -125,6 +138,7 @@ local C_TradeSkillUI = C_TradeSkillUI;
 -- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
+AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
 
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo

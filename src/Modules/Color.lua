@@ -115,6 +115,13 @@ local function GetNumberWithZeros(number, desiredLength)
 		return tostring(floor(number));
 	end
 end
+local function GetCoordString(x, y)
+	return GetNumberWithZeros(app.round(x, 1), 1) .. ", " .. GetNumberWithZeros(app.round(y, 1), 1);
+end
+local function GetPatchString(patch)
+	patch = tonumber(patch)
+	return patch and (floor(patch / 10000) .. "." .. (floor(patch / 100) % 100) .. "." .. (patch % 10))
+end
 local SettingsPrecision, UseMoreColors
 local function GetPercentageTextDefault(percent)
 	return " (" .. GetNumberWithZeros(percent * 100, SettingsPrecision) .. "%)";
@@ -181,6 +188,8 @@ api.Colorize = Colorize;
 api.ColorizeRGB = ColorizeRGB;
 api.HexToARGB = HexToARGB;
 api.RGBToHex = RGBToHex;
+api.GetCoordString = GetCoordString;
+api.GetPatchString = GetPatchString;
 api.GetNumberWithZeros = GetNumberWithZeros;
 api.GetProgressColor = GetProgressColor;
 api.GetProgressColorText = GetProgressColorText;
@@ -270,7 +279,7 @@ end
 app.GetColoredTimeRemaining = function(t)
 	-- Returns 'Time Left: %s'
 	if t and t > 0 then
-		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t * 60));
+		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t))
 		if t < 30 then
 			return Colorize(timeLeft, colors.TimeUnder30Min);
 		elseif t < 120 then

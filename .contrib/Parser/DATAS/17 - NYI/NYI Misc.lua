@@ -260,9 +260,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(137279),	-- Nightfallen Vendor List
 			i(134008),	-- Simple Rosary of Light
 			i(137282),	-- Valarjar Vendor List
-			i(139603, {	-- Vault Patroller's Warboots
-				["bonusID"] = 1,
-			}),
 			i(137278),	-- Wardens Vendor List
 		})),
 
@@ -310,7 +307,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		-- 7.3.5
 		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
 			i(156707),	-- Bret's Satchel of Helpful Goods
-			i(156718),	-- Stolen Ore \\ Stolen Azerite
+			i(156718),	-- Stolen Ore
 		})),
 
 		-- 7.x.x
@@ -442,7 +439,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 8.3.0
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
-			i(174097),	-- [DNT] Corruptium \\ [PH] Corruptium
+			i(174097),	-- [DNT] Corruptium
 			i(171321),	-- [DNT] REUSE ME [MTMM]
 			i(171322),	-- [DNT] REUSE ME [MTMM]
 			i(173876),	-- [PH] Tattered Cloth
@@ -500,10 +497,10 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(174885),	-- Veteran Highmountain Warbraves Contract
 			i(174884),	-- Veteran Huojin Monks Contract
 			i(174902),	-- Veteran Kul Tiran Marines Contract
-			i(173279),	-- Veteran Lightforged Dragoons Contract \\ Lightforged Dragoons Contract
+			i(173279),	-- Veteran Lightforged Dragoons Contract
 			i(174886),	-- Veteran Mag'har Outriders Contract
 			i(174903),	-- Veteran Mechagnome Spidercrawlers Contract
-			i(173284),	-- Veteran Nightborne Warpcaster Contract \\ Nightborne Warpcaster Contract
+			i(173284),	-- Veteran Nightborne Warpcaster Contract
 			i(174878),	-- Veteran Shattered Hand Specialists Contract
 			i(174882),	-- Veteran Silvermoon Sorceress Contract
 			i(174879),	-- Veteran Tauren Earthshakers Contract
@@ -563,7 +560,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180736),	-- Blacksmith's Journal
 			i(175041),	-- Blinding Anima
 			i(175148),	-- Blooming Vale
-			i(181281),	-- Boss 10 Lure
 			i(180007),	-- Brewfest Pretzel Bowl
 			i(180829),	-- Cache of Anima Tolls
 			i(183939),	-- Carefully Bottled Holy Water
@@ -1311,15 +1307,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(202688),	-- [DNT] Valdrakken Accord Item 04
 			i(202689),	-- [DNT] Valdrakken Accord Item 05
 			i(203693),	-- Ensemble: Cloudburst Regalia
+			q(74363),	-- Ensemble: Cloudburst Regalia
 			i(203694),	-- Ensemble: Cyclonic Battlegear
+			q(74365),	-- Ensemble: Cyclonic Battlegear
 			i(203696),	-- Ensemble: Dust Devil Armor
+			q(74364),	-- Ensemble: Dust Devil Armor
 			i(203695),	-- Ensemble: Firestorm Armor
-			i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-			i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-			i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-			i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-			i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-			i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+			q(74366),	-- Ensemble: Firestorm Armor
 			i(203465),	-- Draconic Artifact
 			i(203210),	-- Dragonscale Supply Box
 			i(203466),	-- Dragonscale Surplus Crate
@@ -1505,6 +1499,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			i(190924),	-- Arsenal: Ruby Felfire Armaments
 			i(212784),	-- Destroyed Relic
 			i(211104),	-- Ephemeral Fractured Emerald
 			i(211112),	-- Ephemeral Swift Emerald
@@ -1723,7 +1718,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224786),	-- Skeleton King Outfit
 			i(224729),	-- Slum Shark Tooth
 			i(210051),	-- Spark Feather
-			i(211494),	-- Spark of Beginnings
+			i(211494),	-- Spark of Vanity
 			i(228224),	-- Spark of Legacies
 			i(220342),	-- Spiced Stock
 			i(212527),	-- Spiderforged Emitter Key [REMOVED]
@@ -1932,7 +1927,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
 			i(246114),	-- Catalyst Elixir
 			i(238740),	-- Distilled Knowledge of Timeways
-			i(250776),	-- Illusion: Sha Corruption
 			i(246730),	-- Landro's Loot Box
 		})),
 
@@ -1949,8 +1943,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(246818),	-- A Steamy Romance Novel: Waves of Desire
 			i(249235),	-- Bottomless Bag of Entropy
 			i(238921),	-- Containment Canister
-			i(248327),	-- Ensemble: Dark Iron's Ceremonial Collection
-			i(247973),	-- Ensemble: The Horseman's Ghoulish Collection
 			i(243580),	-- Etheric Pylon
 			i(250975),	-- Hellcaller Chest
 			i(247927),	-- Humming Mana-Stone

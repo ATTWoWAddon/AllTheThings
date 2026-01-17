@@ -23,6 +23,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193178, {	-- Blightfur
+				["description"] = "Speak to nearby NPC to spawn.",
+				["cr"] = 193633,	-- Golkrin
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
 				["groups"] = {
@@ -93,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(201557,	-- Graniteclaw
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-				["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
+				["coord"] = { 57.9, 65.5, THE_AZURE_SPAN },
 				["questID"] = 74532,
 				["groups"] = {
 					bo(74459, true),
@@ -152,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(201559,	-- Shiobhan Waterborn
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-				["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
+				["coord"] = { 60.0, 68.0, THE_AZURE_SPAN },
 				["questID"] = 74533,
 				["groups"] = {
 					bo(74462, true),

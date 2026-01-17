@@ -79,6 +79,9 @@ namespace ATT
             // House Decor
             MergeItemDB(WagoData.GetAll<HouseDecor>().Values.Select(i => i.GetExportableData()));
 
+            // Recipe Skill lines
+            MergeRecipeDB(WagoData.GetAll<SkillLineAbility>().Values.Select(i => i.GetExportableData()));
+
             // GlyphGB
             foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
             {
@@ -1263,7 +1266,7 @@ namespace ATT
             List<IDictionary<string, object>> rawSources = new List<IDictionary<string, object>>();
             foreach (long sourceID in sourceIDs.AsTypedEnumerable<long>())
             {
-                if (TryGetSOURCED("sourceID", sourceID, out HashSet<IDictionary<string, object>> sources)
+                if (TryGetSOURCED("sourceID", sourceID, out var sources)
                     && sources.TryGetAnyMatchingGroup(IsObtainableData, out var matched))
                 {
                     // this SourceID is Sourced & Obtainable elsewhere, symlink it to the Ensemble
@@ -1320,7 +1323,7 @@ namespace ATT
             // distinct Ensemble
             if (data.TryGetValue("_altTmogSetQuestID", out long altTransmogSetQuestID))
             {
-                if (!TryGetSOURCED("questID", altTransmogSetQuestID, out HashSet<IDictionary<string, object>> questSources))
+                if (!TryGetSOURCED("questID", altTransmogSetQuestID, out var questSources))
                 {
                     data.TryGetValue("ensembleID", out long ensembleID);
                     LogWarn($"Ensemble {ensembleID} has matching un-sourced alternate questID {altTransmogSetQuestID}. This is either due to bad Blizzard data and hopefully fixed in future Wago updates, or should have an hqt({altTransmogSetQuestID}) added to prevent this message.", data);
@@ -1525,9 +1528,9 @@ namespace ATT
             data["_remove"] = false;
         }
 
-        internal static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
+        internal static bool TryGetSOURCED(string field, object idObj, out ConcurrentHashSet<IDictionary<string, object>> sources)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                 && idObj.TryConvert(out long id)
                 && id > 0
                 && fieldSources.TryGetValue(id, out sources))
@@ -1539,24 +1542,24 @@ namespace ATT
             return false;
         }
 
-        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
+        private static IEnumerable<IEnumerable<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, object> field in data)
             {
-                if (SOURCED.TryGetValue(field.Key, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+                if (SOURCED.TryGetValue(field.Key, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                     && field.Value.TryConvert(out long id) && id > 0
-                    && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+                    && fieldSources.TryGetValue(id, out ConcurrentHashSet<IDictionary<string, object>> objectSources))
                 {
                     yield return objectSources;
                 }
             }
         }
 
-        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
+        private static IEnumerable<IEnumerable<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources)
                 && idObj.TryConvert(out long id) && id > 0
-                && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+                && fieldSources.TryGetValue(id, out ConcurrentHashSet<IDictionary<string, object>> objectSources))
             {
                 yield return objectSources;
             }
@@ -1564,9 +1567,9 @@ namespace ATT
 
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)
         {
-            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, HashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
+            if (SOURCED.TryGetValue(field, out ConcurrentDictionary<long, ConcurrentHashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
             {
-                fieldSources.GetOrAdd(id, _ => new HashSet<IDictionary<string, object>>()).Add(data);
+                fieldSources.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
             }
         }
 
@@ -1583,7 +1586,7 @@ namespace ATT
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
                 {
-                    kvp.Value.GetOrAdd(id, _ => new HashSet<IDictionary<string, object>>()).Add(data);
+                    kvp.Value.GetOrAdd(id, _ => new ConcurrentHashSet<IDictionary<string, object>>()).Add(data);
                 }
                 // TODO: not treating encounters as sources for NPCs currently due to overzealous merging without respect to difficulty
                 // special cases where the id field is not in the data, but we will treat that data as Sourced for that key/id anyway
@@ -1816,7 +1819,7 @@ namespace ATT
                 return;
             }
 
-            string previousType = null;
+            string previousParam1 = null;
             string previousCommand = null;
             // some logic to check for duplicate 'select' commands of the same type
             foreach (object cmdObj in symObject)
@@ -1836,45 +1839,62 @@ namespace ATT
                 // check various commands
                 if (command.Count > 0 && command[0].TryConvert(out string commandName))
                 {
-                    if (commandName == "select")
-                    {
-                        if (command.Count > 1 && command[1].TryConvert(out string commandType))
-                        {
-                            if (previousType == commandType)
-                            {
-                                LogDebugWarn($"'sym-select' can be cleaned up (all ID's can be passed into one 'select')", data);
-                                break;
-                            }
-                            else
-                            {
-                                List<object> selections = command.Skip(2).ToList();
-                                List<decimal> selectionValues = selections.AsTypedEnumerable<decimal>().ToList();
+                    command.SafeIndex(1).TryConvert(out string commandParam1);
 
-                                // verify all select values are decimals
-                                if (selections.Count != selectionValues.Count)
-                                {
-                                    LogError($"'sym-select' contains non-numeric selection values", data);
-                                }
+                    // checks for the current command
+                    switch (commandName)
+                    {
+                        case "select":
+                        case "exclude":
+                            List<object> selections = command.Skip(2).ToList();
+
+                            // verify all select values are numeric
+                            if (selections.Count != selections.Count(v => v.IsNumeric()))
+                            {
+                                LogError($"'sym-{commandName}' contains non-numeric selection values", data);
                             }
 
-                            previousType = commandType;
-                        }
-                    }
-                    else
-                    {
-                        previousType = null;
+                            // repeating commands of the same type can be consolidated
+                            if (commandName == previousCommand && !string.IsNullOrWhiteSpace(commandParam1) && previousParam1 == commandParam1)
+                            {
+                                LogWarn($"'sym-{commandName}' for '{previousParam1}' can be cleaned up (all ID's can be passed into one '{commandName}')", data);
+                                return;
+                            }
+                            break;
+                        case "not":
+                            // repeating commands of the same type can be consolidated
+                            if (commandName == previousCommand && !string.IsNullOrWhiteSpace(commandParam1) && previousParam1 == commandParam1)
+                            {
+                                LogWarn($"'sym-{commandName}' for '{previousParam1}' can be cleaned up (all ID's can be passed into one '{commandName}')", data);
+                                return;
+                            }
+                            break;
                     }
 
-                    // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
-                    if (previousCommand == "sub")
+                    // checks for the previous command
+                    switch (previousCommand)
                     {
-                        if (commandName != "merge" && commandName != "sub" && commandName != "select" && commandName != "fill")
-                        {
-                            LogWarn($"'sym' 'sub' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
-                        }
+                        // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
+                        case "sub":
+                            switch (commandName)
+                            {
+                                case "merge":
+                                case "select":
+                                case "fill":
+                                case "sub":
+                                    break;
+                                case "finalize":
+                                    LogWarn($"'sym' '{previousCommand}' command followed by 'finalize' is pointless", data);
+                                    break;
+                                default:
+                                    LogWarn($"'sym' '{previousCommand}' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
+                                    break;
+                            }
+                            break;
                     }
 
                     previousCommand = commandName;
+                    previousParam1 = commandParam1;
                 }
             }
 
@@ -2067,10 +2087,10 @@ namespace ATT
                 && providers.GetProviderType("n", true) != null)
             {
                 var npcProviders = providers.GetProviderType("n").ToList();
-                List<object> quest_qgs = new List<object>(npcProviders.Count);
+                List<long> quest_qgs = new List<long>(npcProviders.Count);
                 foreach (var npcID in npcProviders)
                 {
-                    quest_qgs.Add(npcID);
+                    quest_qgs.Add((long)npcID);
                     providers.Remove("n", npcID);
                     //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
                 }
@@ -2090,7 +2110,7 @@ namespace ATT
                         (CurrentParentGroup.Value.Key == "itemID" ||
                         CurrentParentGroup.Value.Key == "objectID"))
                     {
-                        LogDebugWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
+                        LogWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
                     }
                 }
             }
@@ -3056,7 +3076,7 @@ namespace ATT
                             // 91 (BATTLE_PET_SPECIES)
                             case 91:
                                 // world quest battle pets have 'speciesID' and are sourced under NYI... don't move any of their criteria there
-                                if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out HashSet<IDictionary<string, object>> sourcedSpecies)
+                                if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out var sourcedSpecies)
                                     && sourcedSpecies.All(s => IsObtainableData(s)))
                                 {
                                     IncorporateDataField(data, "_species", existingModifierTree.Asset);
@@ -3268,7 +3288,7 @@ namespace ATT
                     else
                     {
                         allSourceIDs.AddRange(additionalTmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                        LogDebug($"INFO: Ensemble {tmogSetID} has {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                        LogDebug($"INFO: Ensemble {tmogSetID} adding {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}. Use _IgnoreSharedEnsembleByQuestID if this is unexpected.", data);
                     }
                 }
             }
@@ -3829,7 +3849,7 @@ namespace ATT
                 data.TryGetValue("achID", out long achID);
                 foreach (long questID in questObjs.AsTypedEnumerable<long>())
                 {
-                    if (!TryGetSOURCED("questID", questID, out HashSet<IDictionary<string, object>> questRefs))
+                    if (!TryGetSOURCED("questID", questID, out var questRefs))
                     {
                         // remove the quests which are not sourced from being reported as failed to merge
                         Objects.TrackPostProcessMergeKey("questID", questID);
@@ -4007,7 +4027,7 @@ namespace ATT
 
             foreach (long itemID in objectiveItems.AsTypedEnumerable<long>())
             {
-                if (!TryGetSOURCED("itemID", itemID, out HashSet<IDictionary<string, object>> sourcedItems))
+                if (!TryGetSOURCED("itemID", itemID, out var sourcedItems))
                 {
                     // this shouldn't happen since we only add to this field if it IS Sourced after Validate stage
                     continue;
@@ -4078,7 +4098,7 @@ namespace ATT
                 }
 
                 // TODO: eventually add check for _unsorted to ensure all sourceQuests are present in Main list
-                if (!TryGetSOURCED("questID", sourceQuestID, out HashSet<IDictionary<string, object>> sourceQuestObjs))
+                if (!TryGetSOURCED("questID", sourceQuestID, out var sourceQuestObjs))
                 {
                     // Source Quest not in database *anywhere*
                     LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
@@ -4103,7 +4123,7 @@ namespace ATT
                 if (!TryGetSOURCED("questID", altQuestID, out var _))
                 {
                     // Source Quest not in database
-                    LogDebugWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");
+                    LogWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");
                 }
             }
         }
@@ -4209,12 +4229,28 @@ namespace ATT
                 {
                     // this single Quest Item on HQT is Sourced 1 time in ATT without a questID itself, maybe remove the HQT?
                     if (TryGetSOURCED("itemID", itemID, out var itemSources)
-                        && itemSources.Count == 1
+                        && itemSources.Count() == 1
                         && !itemSources.First().ContainsKey("questID"))
                     {
                         LogDebugWarn($"Possibly remove HQT {questID} since it is linked from one non-Quest Item {itemID} which is has one Source and could simply be an ItemWithQuest", data);
                     }
                 }
+            }
+
+            // Retail: Items with 'learnedAt' are redundant/inaccurate with Blizzard tooltip and not used in ATT anyway
+            if (!PreProcessorTags.Contains("ANYCLASSIC") && data.TryGetValue("itemID", out itemID))
+            {
+                if (data.Remove("learnedAt"))
+                {
+                    LogDebug($"INFO: Removed 'learnedAt' from Item {itemID}", data);
+                }
+            }
+
+            // Titles under Guild Achievements (Hall of Fame) are not 'really' collectible since they are tied to the Guild
+            if (data.TryGetValue("titleID", out long titleID) && data.TryGetValue("__parent", out IDictionary<string, object> parent) && parent.TryGetValue("isGuild", out bool isGuild))
+            {
+                data["collectible"] = false;
+                LogDebug($"INFO: HoF Guild Achievement Title marked uncollectible: achID={titleID}", data);
             }
         }
 
@@ -4424,9 +4460,26 @@ namespace ATT
             if (!data.TryGetValue("timeline", out object timelineRef) || !(timelineRef is Timeline timeline))
                 return true;
 
-            // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
-            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
-                LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+            // Warn if the first entry is a 'removing' change (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
+            if (CurrentParseStage == ParseStage.Validation && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+            {
+                // TODO: eventually data will be surely be cleaned up and we can slowly adjust this warning to apply to ALL timelines situations
+                // first, all timelines > 8.0 should ensure they are not removed only and remove the entrycount check below
+                // then slowly work back into earlier timelines and adjust the above version cutoff as applicable
+                // finally the ending check should just be ['validation' & entry @ 0 is removing change] -> ERROR
+
+                // alternatively, we allow removed-only timelines IF there's an inheriting timeline which includes an ADDED change, to ensure that the removed-only
+                // object is not arbitrarily-included into all versions of ATT
+                // (this would require this logic to be adjusted)
+                if (timeline.EntryCount > 1)
+                {
+                    LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+                }
+                else
+                {
+                    LogDebugWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+                }
+            }
 
             // Get the most relevant timeline for the current release version
             var adaptedTimeline = timeline.GetAdaptedTimeline(CURRENT_RELEASE_VERSION);
@@ -4542,9 +4595,9 @@ namespace ATT
             {
                 List<object> parentg = new List<object>();
                 List<object> parentProviders = new List<object>();
-                List<decimal> parentCrs = new List<decimal>();
-                List<decimal> parentQis = new List<decimal>();
-                List<decimal> parentItems = new List<decimal>();
+                List<long> parentCrs = new List<long>();
+                List<long> parentQis = new List<long>();
+                List<long> parentItems = new List<long>();
 
                 foreach (var provider in providers)
                 {
@@ -4559,11 +4612,11 @@ namespace ATT
                             {
                                 Items.MarkItemAsReferenced(pID);
                                 // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                parentQis.Add(pID);
+                                parentQis.Add((long)pID);
                             }
                             else
                             {
-                                parentItems.Add(pID);
+                                parentItems.Add((long)pID);
                                 LogDebug($"INFO: Assigned 'objective-item' {pID} to parent due to being Sourced elsewhere", parentData);
                             }
                             break;
@@ -4593,7 +4646,7 @@ namespace ATT
                             }
                             else
                             {
-                                parentCrs.Add(pID);
+                                parentCrs.Add((long)pID);
                             }
                             break;
                     }

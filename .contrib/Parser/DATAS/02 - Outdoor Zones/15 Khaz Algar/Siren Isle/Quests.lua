@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(230771) },	-- Earthen Prototype (QI!)
 					}),
 					o(475286, {	-- Overcharged Battery
-						["coord"] = { 71.2, 46, SIREN_ISLE },
+						["coord"] = { 71.2, 46.0, SIREN_ISLE },
 						["groups"] = { i(230773) },	-- Overcharged Battery (QI!)
 					}),
 				},

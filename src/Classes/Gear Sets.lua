@@ -1,5 +1,5 @@
 -- App locals
-local appName,app = ...;
+local _,app = ...;
 if not C_TransmogSets then
 	-- Transmog is NOT supported.
 	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");

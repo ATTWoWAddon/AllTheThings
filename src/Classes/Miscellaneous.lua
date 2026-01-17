@@ -3,10 +3,10 @@
 local _, app = ...;
 
 -- Global locals
-local pairs = pairs;
+local pairs, ipairs = pairs, ipairs;
 
 -- App locals
-local AssignChildren = app.AssignChildren;
+local AssignChildren, GetRelativeValue = app.AssignChildren, app.GetRelativeValue
 local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
 
 local DynamicDataCache = app.CreateDataCache("dynamic", true);
@@ -55,6 +55,16 @@ local DynamicCategory_Nested = function(self)
 	AssignChildren(self);
 	-- delay-sort the top level groups
 	self.SortType = "Global";
+	-- sort children of top level groups
+	local g = self.g
+	if g then
+		for i = 1, #g do
+			local child = g[i]
+			if child.g then
+				child.SortType = "expansion"
+			end
+		end
+	end
 	-- don't fill into dynamic groups if they are popped out
 	self.skipFull = true
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
@@ -177,25 +187,37 @@ end
 -- Can indicate to keep sub-group Things if desired.
 local function NestDynamicValueCategories(group)
 	group.OnClick = false
-	local cat;
+	local cat, search
 	local field = group.dynamicValueID
 	local dynamicvalue_field = group.dynamic_valueField
 	local cache = SearchForFieldContainer(field);
 	-- app.PrintDebug("FDVC:",field,dynamicvalue_field)
 	for id,_ in pairs(cache) do
-		-- create a cloned version of the cached object, or create a new object from the Creator
-		cat = CreateObject(SearchForObject(field, id, "key") or { [field] = id }, true);
-		cat.dynamic_withsubgroups = group.dynamic_withsubgroups;
-		-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
-		cat.maps = nil;
-		cat.sourceParent = nil;
-		cat.symlink = nil;
-		-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
-		if not cat.collectible then
-			cat = app.CreateVisualHeaderWithGroups(cat)
+		search = SearchForObject(field, id, "key", true)
+		-- find the search header group which is not _nosearch if possible
+		cat = nil
+		for i=1,#search do
+			if not GetRelativeValue(search[i], "_nosearch") then
+				cat = search[i]
+				break
+			end
 		end
-		cat.parent = group
-		NestObject(group, FillDynamicCategory(cat, dynamicvalue_field or field, id));
+		if cat then
+			-- create a cloned version of the cached object, or create a new object from the Creator
+			cat = CreateObject(cat or { [field] = id }, true);
+			cat.dynamic_withsubgroups = group.dynamic_withsubgroups;
+			-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
+			cat.maps = nil;
+			cat.sourceParent = nil;
+			cat.symlink = nil;
+			-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
+			if not cat.collectible then
+				cat = app.CreateVisualHeaderWithGroups(cat)
+			end
+			cat.parent = group
+			NestObject(group, FillDynamicCategory(cat, dynamicvalue_field or field, id));
+		-- else app.PrintDebug("Skipped _nosearch Field Root",app:RawSearchLink(field,id))
+		end
 	end
 	-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
 	group.SortType = "Global";

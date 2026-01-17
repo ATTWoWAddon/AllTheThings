@@ -19,6 +19,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.6, 66.2, EREDATH },
 					}),
 					pet(2130, {	-- Void Shardling (PET!)
+						["maps"] = { 903 },	-- Seat of the Triumvirate
 						["coord"] = { 44.0, 47.0, EREDATH },
 					}),
 					pet(2129, {	-- Voidstalker Runt (PET!)

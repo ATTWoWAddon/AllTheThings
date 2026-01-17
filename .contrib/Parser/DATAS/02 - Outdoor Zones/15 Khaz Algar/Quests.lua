@@ -827,6 +827,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["qg"] = 233312,	-- Arator
 					["coord"] = { 26.6, 42.3, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "questID", 85002 },	-- Off to Tazavesh (completion locks the HQT)
 				}),
 			}),
 			header(HEADERS.AchCriteria, 42299.02, {	-- A Meeting with Minn'da
@@ -894,6 +895,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					["sourceQuest"] = 85212,	-- A Void Test of Wills
 					["qg"] = 233885,	-- Alleria Windrunner
 					["coord"] = { 60.8, 28.0, KARESH },
+					["lockCriteria"] = { 1, "questID", 85213 },	-- Off to Tazavesh, Again (completion locks the HQT -- unconfirmed)
 				}),
 				--
 				q(85214, {	-- Here Goes Something
@@ -968,9 +970,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				hqt(91850, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
 					["description"] = "Dialogue becomes available after accepting 'The Long Vigil' (84943) and 'Preludes and Preparations' (84944).",
-					["sourceQuest"] = 84942,	-- The Final Hazard
+					["sourceQuests"] = {
+						84943,	-- The Long Vigil
+						84944,	-- Preludes and Preparations
+					},
 					["qg"] = 238519,	-- Arator
 					["coord"] = { 30.5, 18.7, THE_MAW },
+					["lockCriteria"] = { 1, "questID", 84944 },	-- Preludes and Preparations (completion locks the HQT -- unconfirmed, but likely)
 				}),
 				--
 				q(84945, {	-- Repent of the Highborne
@@ -1007,17 +1013,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 					},
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },
+					["maps"] = { DORNOGAL },
 				}),
 				------ Stay awhile and listen ------
 				hqt(87418, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
 					["description"] = "Dialogue becomes available after accepting 'The Eleventh Hour' (84949).",
-					["sourceQuests"] = {
-						84946,	-- Returning to Life
-						84947,	-- Determination
-					},
+					["sourceQuest"] = 84949,	-- The Eleventh Hour
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },
+					["lockCriteria"] = { 1, "questID", 84949 },	-- The Eleventh Hour (completion locks the HQT -- unconfirmed)
 				}),
 				--
 			}),

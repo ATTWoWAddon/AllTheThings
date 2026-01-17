@@ -31,11 +31,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_4_3_0 },
-					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 67, 25),
-					-- #else
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["lvl"] =
+						-- #if AFTER WRATH
+						lvlsquish(67, 67, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
 							["provider"] = { "n", 20912 },	-- Harbinger Skyriss
@@ -64,11 +65,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18481,	-- A'dal
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
-					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 67, 25),
-					-- #else
-					["lvl"] = lvlsquish(70, 70, 25),
-					-- #endif
+					["lvl"] =
+						-- #if AFTER WRATH
+						lvlsquish(67, 67, 25),
+						-- #else
+						lvlsquish(70, 70, 25),
+						-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Top Shard of the Arcatraz Key
 							["provider"] = { "i", 31085 },	-- Top Shard of the Arcatraz Key

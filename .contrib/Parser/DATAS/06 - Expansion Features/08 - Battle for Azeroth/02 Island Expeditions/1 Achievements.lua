@@ -7,7 +7,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(13142),	-- Archipelago Explorer
 			pvp(ach(13134, {	-- Expedition Leader
-				-- #if BEFORE 11.0.7
 				["sym"] = {{"meta_achievement",
 					13122,	-- Island Conqueror
 					13125,	-- Azerite Admiral
@@ -16,27 +15,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					13124,	-- Metal Detector
 					13128,	-- I'm Here for the Pets
 					13132,	-- Helping Hand
+					-- #if BEFORE 11.0.7
 					13121,	-- Notorious
+					-- #endif
 					12595,	-- Expert Expeditioner
 					13133,	-- Team Deathmatch (A)
 					13135,	-- Team Deathmatch (H)
 					13141,	-- Island Slayer
 				}},
-				-- #else
-				["sym"] = {{"meta_achievement",
-					13122,	-- Island Conqueror
-					13125,	-- Azerite Admiral
-					13126,	-- Give Me The Energy
-					13127,	-- Tell Me A Tale
-					13124,	-- Metal Detector
-					13128,	-- I'm Here for the Pets
-					13132,	-- Helping Hand
-					12595,	-- Expert Expeditioner
-					13133,	-- Team Deathmatch (A)
-					13135,	-- Team Deathmatch (H)
-					13141,	-- Island Slayer
-				}},
-				-- #endif
 				["groups"] = {
 					title(382),	-- Expedition Leader
 				},

@@ -2719,3 +2719,130 @@
 94421@@@--
 94422@@@--
 94932@@@--
+63415@@@--
+83547@@@Welcome to the Neighborhood
+83557@@@--
+84382@@@--
+84387@@@--
+84388@@@--
+84389@@@--
+84390@@@--
+84391@@@--
+84420@@@--
+84422@@@--
+84427@@@--
+84428@@@--
+84431@@@--
+84436@@@--
+84505@@@--
+84522@@@--
+84523@@@--
+84524@@@--
+84678@@@--
+84679@@@--
+84832@@@[DNT] Example Breadcrumb to DF
+84833@@@--
+84934@@@A Dark Descent
+85000@@@--
+85016@@@--
+85017@@@Tracking Quest to Send Mailer [DNT]
+85049@@@--
+85062@@@--
+86330@@@--
+86331@@@--
+86905@@@No More Sick Days
+86936@@@Warped Wood
+86937@@@--
+86960@@@The Key to Good Health
+86962@@@Blood in the Wound
+87000@@@No Wood Left Behind
+90973@@@--
+91041@@@A Gently Shaken Gift
+91042@@@A Winter Veil Gift
+91200@@@--
+91204@@@--
+91691@@@The Vanishing of Iridikron
+91692@@@--
+91695@@@Tracking Down Incarnates
+91865@@@--
+91866@@@--
+91867@@@--
+91869@@@--
+91870@@@--
+91878@@@--
+91879@@@--
+91880@@@--
+92104@@@Broomstick Express
+92455@@@Specter Inspector
+92475@@@--
+92476@@@--
+92477@@@--
+92478@@@--
+92498@@@--
+92535@@@--
+92536@@@--
+92537@@@--
+92578@@@--
+92580@@@Spare A Chair
+92581@@@--
+92584@@@--
+92585@@@--
+92715@@@By Invitation Only?
+92740@@@--
+92845@@@By Invitation Only?
+92851@@@--
+92876@@@--
+92943@@@--
+93042@@@--
+93076@@@[DNT] TEST HOUSE ROOM REWARD
+93119@@@[DNT] TEST HOUSE DECOR REWARD
+93183@@@--
+93223@@@--
+93321@@@--
+93322@@@--
+93323@@@--
+93324@@@--
+93325@@@--
+93326@@@--
+93327@@@--
+93328@@@--
+93329@@@--
+93330@@@--
+93331@@@--
+93332@@@--
+93333@@@--
+93334@@@--
+93335@@@--
+93336@@@--
+93337@@@--
+93338@@@--
+93398@@@--
+93400@@@--
+93401@@@--
+93402@@@--
+93403@@@--
+93405@@@--
+93441@@@--
+93452@@@Retrieved Crumpled Present
+93466@@@--
+93468@@@--
+93469@@@--
+93477@@@--
+93492@@@--
+93683@@@Conditional Objectives - Singular
+93688@@@--
+93764@@@--
+93765@@@--
+93877@@@Conditional Objectives - Sequential
+93878@@@Conditional Objectives - Multiple Steps, No Sequence
+93879@@@Conditional Objectives - Conditional After Sequence
+93888@@@--
+93901@@@[DNT] House Level 2 Room Award
+93902@@@[DNT] House Level 4 Room Award
+94363@@@--
+94364@@@--
+94372@@@--
+94431@@@[DNT] House Level 3 Room Award
+94437@@@[DNT] House Level 5 Room Award
+94780@@@--
+95139@@@--

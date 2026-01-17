@@ -338,7 +338,7 @@ end)
 checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
-local checkboxOnlyRelevant;
+local checkboxOnlyRelevant, checkboxOnlyObtainable;
 if C_TransmogCollection then
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
@@ -374,6 +374,24 @@ end)
 checkboxOriginalSource:SetATTTooltip(L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP)
 checkboxOriginalSource:AlignBelow(checkboxSharedAppearances, 1)
 
+checkboxOnlyObtainable = child:CreateCheckBox(L.ONLY_OBTAINABLE_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances"))
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("OnlyShowObtainableSharedAppearances", self:GetChecked())
+end)
+checkboxOnlyObtainable:SetATTTooltip(L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP)
+checkboxOnlyObtainable:AlignBelow(checkboxOriginalSource)
+end
+
 checkboxOnlyRelevant = child:CreateCheckBox(L.ONLY_RELEVANT_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"))
@@ -389,8 +407,7 @@ function(self)
 	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked())
 end)
 checkboxOnlyRelevant:SetATTTooltip(L.ONLY_RELEVANT_CHECKBOX_TOOLTIP)
-checkboxOnlyRelevant:AlignBelow(checkboxOriginalSource)
-end
+checkboxOnlyRelevant:AlignBelow(checkboxOnlyObtainable)
 
 local checkboxSourceLocations = child:CreateCheckBox(L.SOURCE_LOCATIONS_CHECKBOX,
 function(self)

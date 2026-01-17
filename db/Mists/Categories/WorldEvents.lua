@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,crit,faction,h,heir,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFaction,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,crit,faction,flt,h,heir,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 _.Categories.WorldEvents={
 h(-103,{
 x(2,{
@@ -452,8 +452,8 @@ h(-16,{awp=50100,rwp=60002,u=51,g={
 n(67262,{awp=50100,rwp=60002,u=51,g={
 i(97983,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
 h(-31,{awp=50100,rwp=60002,u=51,g={
-faction(1419,{awp=50100,description="Before Phase 4, you can only reach Rank 8.",minReputation={1419,8},r=2,rwp=60002,u=51}),
-faction(1374,{awp=50100,description="Before Phase 4, you can only reach Rank 8.",minReputation={1374,8},r=1,rwp=60002,u=51})}}),
+faction(1419,{awp=50100,r=2,rwp=60002,u=51}),
+faction(1374,{awp=50100,r=1,rwp=60002,u=51})}}),
 h(-45,{awp=50100,rwp=60002,u=51,g={
 q(32836,{awp=50300,providers={{"i",97978}},rwp=70003,u=53,g={
 crit(23371,{achID=8339,awp=50300,id=1,r=2,rwp=70003,u=53}),
@@ -592,25 +592,28 @@ i(92718,{awp=50100,b=1,description="Awarded for winning a Brawl.",f=55,q=1,rwp=6
 i(92719,{awp=50100,b=1,description="Awarded for winning a Brawl.",f=55,q=1,rwp=60002,u=51})}}),
 h(-58,{awp=50100,rwp=60002,u=51,g={
 n(70751,{awp=50100,coords={{60.4,77.5,503}},r=1,rwp=90002,u=51,g={
-i(93823,{awp=50100,b=1,f=55,q=1,rwp=90002,u=51,g={
-n(67262,{awp=50100,rwp=90002,u=51,g={
+i(93823,{awp=50300,b=1,f=55,q=1,rwp=70003,u=51,g={
+n(67262,{awp=50300,rwp=70003,u=51,g={
 i(97983,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
 i(94178,{awp=50300,b=1,f=55,q=1,rwp=90002,u=53})}}),
 n(70752,{awp=50100,coords={{52.3,25.2,500}},r=2,rwp=90002,u=51,g={
-i(93823,{awp=50100,b=1,f=55,q=1,rwp=90002,u=51,g={
-n(67262,{awp=50100,rwp=90002,u=51,g={
+i(93823,{awp=50300,b=1,f=55,q=1,rwp=70003,u=51,g={
+n(67262,{awp=50300,rwp=70003,u=51,g={
 i(97983,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})}})}}),
 i(94178,{awp=50300,b=1,f=55,q=1,rwp=90002,u=53})}}),
-n(70723,{awp=50300,maps={500},r=2,rwp=90002,u=51}),
+n(70723,{awp=50300,coords={{22.1,72.4,500}},r=2,rwp=90002,u=51}),
 n(70714,{awp=50300,maps={503},r=1,rwp=90002,u=51}),
-n(70713,{awp=50300,maps={500},r=2,rwp=90002,u=51}),
-n(70719,{awp=50300,maps={500},r=2,rwp=90002,u=51}),
+n(70713,{awp=50300,maps={503},r=1,rwp=90002,u=51}),
+n(70719,{awp=50300,coords={{24.7,65,500}},r=2,rwp=90002,u=51}),
 n(68364,{awp=50100,coords={{50.8,29.4,503}},r=1,u=51,g={
+flt(100,{awp=50100,u=51,g={
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}}),
+flt(101,{awp=50100,u=51,g={
+p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156,u=51})}}),
+h(-679,{awp=50100,u=51}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
-mnt(142641,{awp=50300,b=1,description="While this is already in the shop, you cannot get Rank 10 until Phase 4.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156,u=51}),
 s(279125,98092,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279115,98079,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279116,98080,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
@@ -625,8 +628,11 @@ s(279122,98086,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279118,98082,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279278,98543,{awp=50300,b=1,f=10,q=4,rwp=90002,u=53})}}),
 n(68363,{awp=50100,coords={{54.3,25.2,500}},r=2,u=51,g={
+flt(100,{awp=50100,u=51,g={
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}}),
+flt(101,{awp=50100,u=51}),
+h(-679,{awp=50100,u=51}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=276259,u=51}),
-mnt(142641,{awp=50300,b=1,description="While this is already in the shop, you cannot get Rank 10 until Phase 4.",itemID=98405,lvl=85,q=4,rwp=70105,u=53}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,rwp=60002,sourceID=275683,u=51}),
 s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
 s(279125,98092,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),

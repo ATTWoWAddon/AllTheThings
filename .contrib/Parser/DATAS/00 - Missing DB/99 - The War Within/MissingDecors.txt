@@ -2,8 +2,6 @@
 decor(12),	-- [DNT] Orgrimmar Interior Wall - DO NOT USE
 decor(13),	-- [DNT] Partition Pillar (WMO) - DO NOT USE
 decor(60),	-- [DNT] Partition Doorway (WMO) - DO NOT USE
-decor(80),	-- Ornate Stonework Fireplace
-decor(81),	-- Tusked Fireplace
 decor(83),	-- [DNT] Plain Interior Narrow Wall - DO NOT USE
 decor(84),	-- [DNT] Plain Interior Wall - DO NOT USE
 decor(85),	-- [DNT] Sturdy Wooden Interior Pillar - DO NOT USE
@@ -12,428 +10,56 @@ decor(88),	-- [DNT] Stormwind Interior Doorway - DO NOT USE
 decor(89),	-- [DNT] Stormwind Interior Wall - DO NOT USE
 decor(90),	-- [DNT] Stormwind Interior Narrow Wall - DO NOT USE
 decor(91),	-- {DNT] Plain Interior Doorway - DO NOT USE
-decor(126),	-- Rolled Scroll
 decor(129),	-- [DNT] Green Book of Runes - DO NOT USE
-decor(373),	-- Sturdy Wooden Bookcase
-decor(374),	-- Sturdy Wooden Shelf
-decor(377),	-- Three-Candle Wrought Iron Chandelier
-decor(378),	-- Sturdy Wooden Door \\ Sturdy Wooden Interior Door
-decor(379),	-- Small Fruit Platter
-decor(383),	-- Wrought Iron Floor Lamp
 decor(387),	-- [DNT] Sturdy Wooden Table - DO NOT USE
-decor(388),	-- "Sunrise Canyon" Painting
-decor(389),	-- Goldshire Window
-decor(390),	-- Tall Sturdy Wooden Bookcase
 decor(399),	-- Abandoned Bookcase
-decor(478),	-- Wooden Coffin Lid
-decor(479),	-- Empty Stormwind Market Stand
-decor(480),	-- Stormwind Bean Seller's Stand
-decor(481),	-- Stormwind Spice Merchant's Stand
-decor(482),	-- Gryphon Roost
-decor(483),	-- Sturdy Wooden Coffin
-decor(484),	-- Open Wooden Coffin
-decor(485),	-- Open-Air Sturdy Tent
-decor(486),	-- Sturdy Sheltering Tent
-decor(487),	-- Small Stonework Fountain
-decor(488),	-- Large Stonework Fountain
-decor(489),	-- Sturdy Roofed Wagon
-decor(490),	-- Sturdy Open Wagon
-decor(491),	-- Sturdy Covered Wagon
-decor(492),	-- Well-Built Well
-decor(493),	-- Sturdy Wooden Wheelbarrow
-decor(494),	-- Sturdy Wooden Chair
-decor(495),	-- Sturdy Wooden Bed
-decor(496),	-- Covered Wooden Table
-decor(497),	-- Sturdy Wooden Table
-decor(498),	-- Circular Woolen Rug
 decor(508),	-- [DNT] Chair for Testing Decor Limits - do not use
 decor(518),	-- Studded Wooden Chair
 decor(519),	-- Orcish Wooden Bench
-decor(520),	-- Gift of Gilneas
-decor(521),	-- Charming Laurel Tree
-decor(522),	-- Orgrimmar Interior Narrow Wall
-decor(523),	-- Orgrimmar Interior Doorway
-decor(524),	-- Orgrimmar Interior Wall
-decor(525),	-- Orgrimmar Round Interior Pillar
-decor(526),	-- Orgrimmar Square Interior Pillar
-decor(527),	-- Stormwind Interior Pillar
-decor(528),	-- Stormwind Interior Narrow Wall
-decor(529),	-- Stormwind Interior Wall
-decor(530),	-- Stormwind Interior Doorway
-decor(533),	-- Sturdy Wooden Interior Pillar
-decor(534),	-- Plain Interior Wall
-decor(535),	-- Plain Interior Doorway
-decor(536),	-- Plain Interior Narrow Wall
 decor(562),	-- Winter Veil Tree
 decor(582),	-- Wild Violet Bellflowers
 decor(584),	-- Reaching Violet Bellflowers
 decor(586),	-- Arched Violet Bellflowers
 decor(592),	-- Algari Lettuce Plant
-decor(673),	-- Moon-Blessed Storage Crate
-decor(674),	-- Ancient Elven Highback Chair
-decor(675),	-- Cenarion Privacy Screen
-decor(676),	-- Deluxe Val'sharah Bed
-decor(677),	-- Cenarion Rectangular Rug
-decor(678),	-- [DNT] Cenarion Round Rug - do not use - new asset \\ Cenarion Round Rug
-decor(679),	-- Kaldorei Desk
-decor(714),	-- Silvermoon Wooden Chair
 decor(715),	-- Small Silvermoon Bookcase
-decor(716),	-- Reliquary Storage Crate
-decor(717),	-- Long Sin'dorei Rug
-decor(718),	-- Circular Sin'dorei Rug
-decor(720),	-- Reliquary Telescope
-decor(721),	-- Ceiling Cobweb
-decor(722),	-- Tented Cobweb
-decor(723),	-- Small Dangling Cobweb
-decor(724),	-- Large Dangling Cobweb
-decor(725),	-- Pillar Cobweb
-decor(726),	-- Wrought Iron Chandelier
 decor(744),	-- [DNT] Chair - do not use
-decor(749),	-- Hungry Human's Platter
-decor(750),	-- Tirisgarde Book Tempest
-decor(751),	-- Wooden Mug
-decor(752),	-- "Night on the Jeweled Estate" Painting
 decor(753),	-- "The Final Study" Painting
 decor(754),	-- "The Fallen Archmage" Painting
-decor(755),	-- Boralus-Style Lobster Platter
-decor(756),	-- Venthyr Tome of Unforgiven Sins
 decor(757),	-- "Aspects in the Clouds" Painting
 decor(758),	-- "Water Falls Home" Painting
-decor(759),	-- Dornic Mine and Cheese Platter
-decor(760),	-- Literature of Dornogal
-decor(761),	-- Literature of Taelloch
-decor(762),	-- Literature of Gundargaz
-decor(763),	-- Collection of Arathi Scripture
-decor(764),	-- Councilward's Jeweled Goblet
-decor(765),	-- Kaheti Predator's Assortment
-decor(766),	-- Open Tome of Twilight Nihilism
-decor(767),	-- Tome of Silvermoon Intrigue
-decor(768),	-- Tome of Twilight Nihilism
 decor(769),	-- "Edge of Val'sharah" Painting
-decor(770),	-- Stormwind Produce Seller's Stand
-decor(771),	-- Small Poppy Cluster
-decor(772),	-- Creeping Corner Ivy
-decor(773),	-- Small Boxwood Bush
-decor(825),	-- Cozy Four-Pipe Bed
 decor(826),	-- [DNT] Relaxing Goblin Beach Chair with Cup Gripper - DO NOT USE - new asset
-decor(827),	-- Rocket-Unpowered Rocket
-decor(828),	-- Well-Lit Incontinental Loveseat \\ DO NOT USE - new asset coming - Well-Lit Incontinental Loveseat
-decor(829),	-- Well-Lit Incontinental Couch \\ DO NOT USE - new asset coming - Well-Lit Incontinental Couch
-decor(837),	-- Lordaeron Banded Crate
-decor(838),	-- Lordaeron Banded Barrel
-decor(839),	-- Inert Blight Canister
-decor(840),	-- Banshee Queen's Banner
-decor(854),	-- Brill Coffin
-decor(855),	-- Gilnean Cauldron
 decor(856),	-- [DNT] Gilnean Problem Solver - Do Not Use - Updated Asset Available
-decor(857),	-- Gilnean Celebration Keg
-decor(858),	-- Worgen's Chicken Coop
-decor(859),	-- Gilnean Bench
-decor(860),	-- Gilnean Wooden Bed
 decor(861),	-- Open Lordaeron Banded Crate
-decor(862),	-- Forsaken Studded Table
-decor(863),	-- Tirisfal Wooden Chair
-decor(864),	-- Forsaken Spiked Chair
-decor(865),	-- Forsaken Round Rug
 decor(866),	-- Studious Sin'dorei Desk
-decor(922),	-- Brill Coffin Lid
-decor(923),	-- Lordaeron Fence
-decor(924),	-- Lordaeron Fencepost
-decor(925),	-- Elodor Barrel
-decor(926),	-- Argussian Crate
-decor(927),	-- Spherical Draenic Topiary
-decor(928),	-- Hanging Draenethyst Light
-decor(929),	-- Karabor Bed
-decor(930),	-- Draenic Bookcase
-decor(931),	-- Draenic Storage Chest
-decor(932),	-- Forsaken War Planning Table
-decor(933),	-- Lordaeron Spiked Weapon Rack
-decor(934),	-- Lordaeron Lantern
-decor(935),	-- Forsaken Long Table
-decor(936),	-- Lordaeron Hanging Lantern
-decor(937),	-- Large Forsaken War Tent
-decor(938),	-- Small Forsaken War Tent
-decor(939),	-- Blightfire Lantern
-decor(940),	-- Blightfire Hanging Lantern
-decor(941),	-- Lordaeron Sconce
-decor(942),	-- Blightfire Sconce
-decor(943),	-- Undercity Spiked Chest
-decor(944),	-- Lordaeron Rectangular Rug
-decor(945),	-- Lordaeron Torch
-decor(946),	-- Blightfire Torch
-decor(947),	-- Dark Ship's Lantern
-decor(948),	-- Forsaken Spiked Brazier
-decor(949),	-- Large Forsaken Spiked Brazier
-decor(984),	-- Elegant Padded Chair
-decor(985),	-- Elegant Padded Footstool
-decor(986),	-- [DNT] [AUTOGEN] 12PH_Opulent_Bench_Short01.m2 \\ Elegant Covered Bench
-decor(987),	-- Elegant Wooden Dresser
-decor(988),	-- Small Elegant End Table
-decor(989),	-- Ornate Weapon Rack
-decor(991),	-- [DNT] [AUTOGEN] 12PH_Opulent_Bench_Short01_NoCloth.m2 \\ Elegant Carved Bench
-decor(992),	-- Open Elven Wood Crate
-decor(994),	-- Grand Elven Bookcase
-decor(1044),	-- Stormwind Hall Rug
-decor(1083),	-- Secretive Bookcase Wall
-decor(1118),	-- Dark Iron Expedition Tent
-decor(1119),	-- Loch Modan Bearskin Rug
-decor(1120),	-- Replica Dark Iron Mole Machine
-decor(1121),	-- Gallagio L.U.C.K. Spinner
-decor(1122),	-- Sturdy Wooden Bench
-decor(1123),	-- Wicker Basket
-decor(1153),	-- Small Elegant Padded Chair
-decor(1155),	-- Standing Ornate Weapon Rack
-decor(1161),	-- Small Mask of Bwonsamdi, Loa of Graves
-decor(1162),	-- Elegant Elven Desk
-decor(1163),	-- Carved Elven Bookcase
-decor(1165),	-- Grand Elven Bench
-decor(1168),	-- Red Dazar'alor Rug
-decor(1169),	-- Square Pandaren Table
-decor(1170),	-- Zandalari Rickshaw
 decor(1171),	-- [DNT] Zandalari Wall Shelf - DO NOT USE
-decor(1172),	-- Pandaren Cradle Stool
-decor(1173),	-- Gemmed Eversong Lantern
-decor(1175),	-- Bookcase of Gonk
 decor(1176),	-- Circular Silvermoon Table
-decor(1177),	-- Blood Elven Candelabra
-decor(1178),	-- Dazar'alor Market Tent
-decor(1179),	-- Bwonsamdi's Golden Gong
-decor(1180),	-- Blue Dazar'alor Rug
-decor(1181),	-- Rectangular Sin'dorei Rug
-decor(1183),	-- Grand Mask of Bwonsamdi, Loa of Graves
-decor(1185),	-- Idol of Pa'ku, Master of Winds
-decor(1187),	-- Pandaren Wooden Table
-decor(1188),	-- Golden Loa's Altar
-decor(1189),	-- Stone Zandalari Lamp
 decor(1190),	-- Sin'dorei Display Case
-decor(1191),	-- Dazar'alor Forge
-decor(1192),	-- Zuldazar Stool
-decor(1193),	-- Tired Troll's Bench
-decor(1194),	-- Pandaren Stone Wall
-decor(1195),	-- Silvermoon Library Bookcase
-decor(1196),	-- Idol of Rezan, Loa of Kings
-decor(1197),	-- Zandalari Weapon Rack
-decor(1198),	-- Long Silvermoon Table
-decor(1199),	-- Zandalari Sconce
-decor(1200),	-- Zandalari Skullfire Lamp
-decor(1201),	-- Pandaren Cooking Table
-decor(1205),	-- Golden Zandalari Bed
-decor(1216),	-- Dark Iron Brazier
-decor(1217),	-- Gilded Zandalari Table
-decor(1218),	-- Red Dazar'alor Tent
-decor(1219),	-- Suramar Dresser
-decor(1231),	-- Stonebull Canoe
-decor(1232),	-- Thunder Totem Brazier
-decor(1235),	-- Whitewash River Basket
-decor(1236),	-- Enchanted Blood Elven Candelabra
-decor(1241),	-- Zandalari Ritual Drum
-decor(1242),	-- Tauren Leather Fence
-decor(1243),	-- Tauren Fencepost
-decor(1244),	-- Empty Wicker Basket
-decor(1245),	-- Circular Elven Floor Rug
-decor(1246),	-- Rectangular Elven Floor Rug
-decor(1251),	-- Large Highmountain Drum
-decor(1252),	-- Tauren Waterwheel
-decor(1257),	-- Undermine Round Table
-decor(1258),	-- Undermine Rectangular Table
-decor(1259),	-- Spring-Powered Undermine Chair
-decor(1260),	-- Rusting Bolted Bench
-decor(1261),	-- Very Reliable Undermine Lamppost
-decor(1262),	-- Undermine Fencepost
-decor(1263),	-- Undermine Fence
 decor(1264),	-- Rust-Plated Storage Crate
-decor(1265),	-- Rust-Plated Storage Barrel
-decor(1266),	-- Undermine Market Stall
-decor(1267),	-- Cartel Head's Schmancy Desk
-decor(1268),	-- Undermine Bookcase
-decor(1269),	-- Undermine Wall Shelf
-decor(1270),	-- Shredderwheel Storage Chest
-decor(1271),	-- Rocket-Powered Fountain
-decor(1272),	-- Trashfire Barrel
-decor(1273),	-- Zhevra-Stripe Rug
-decor(1274),	-- "Elegant" Lawn Flamingo
-decor(1275),	-- Undermine Bean Bag Chair
-decor(1276),	-- Reinforced Goblin Umbrella
-decor(1277),	-- Rusty Patchwork Tub
 decor(1279),	-- [DNT] Spring-Powered Pointer - DO NOT USE - new asset coming
-decor(1280),	-- Reinforced Wooden Chest
-decor(1281),	-- Tauren Bluff Rug
-decor(1282),	-- Elder Rise Rug
 decor(1283),	-- Open Silvermoon Drapes
 decor(1284),	-- Small Silvermoon Drapes
-decor(1287),	-- Warbrave's Brazier
 decor(1288),	-- [DNT] Tauren Hanging Brazier - DO NOT USE - new asset
-decor(1291),	-- Tauren Vertical Windmill
-decor(1292),	-- Tauren Windmill
-decor(1293),	-- Small Highmountain Drum
-decor(1294),	-- Riverbend Netting
-decor(1295),	-- Riverbend Jar
-decor(1297),	-- Highmountain Totem
-decor(1307),	-- Skyhorn Storage Chest
-decor(1308),	-- Tauren Storage Chest
-decor(1309),	-- Dried Whitewash Corn
-decor(1310),	-- Akunda the Tapestry
-decor(1311),	-- Zanchuli Tapestry
-decor(1312),	-- Zuldazar Fencepost
-decor(1313),	-- Zuldazar Fence
-decor(1314),	-- Tauren Soup Pot
-decor(1315),	-- Shadowforge Wooden Box
-decor(1317),	-- Draenor Cookpot
-decor(1318),	-- Frostwolf Bookcase
 decor(1319),	-- Durotar Signal Brazier
 decor(1320),	-- Durotar Hanging Brazier
-decor(1321),	-- Blackrock Bunkbed
-decor(1322),	-- Blackrock Strongbox
-decor(1323),	-- Orgrimmar Sconce
-decor(1324),	-- Horde Battle Emblem
-decor(1325),	-- Blackrock Weapon Rack
-decor(1326),	-- Orc-Forged Weaponry
-decor(1329),	-- Elegant Padded Divan
-decor(1350),	-- Rectangular Elegant Table
-decor(1351),	-- [DNT] Orcish Fencepost - DO NOT USE - new asset coming \\ Orcish Fencepost
-decor(1352),	-- Warsong Footrest
-decor(1353),	-- Frostwolf Round Table
-decor(1354),	-- Orcish Communal Stove
-decor(1355),	-- Frostwolf Axe-Dart Board
-decor(1356),	-- Elegant Almond Table
-decor(1405),	-- [DNT] Orcish Fence - DO NOT USE - new asset coming \\ Orcish Fence
-decor(1406),	-- Frostwall Architect's Table
-decor(1407),	-- Orcish Warlord's Planning Table
-decor(1408),	-- Warsong Workbench
-decor(1409),	-- Orcish Banded Barrel
-decor(1410),	-- Wine Barrel
-decor(1411),	-- Wooden Shipping Crate
-decor(1412),	-- Youngling's Courser Toys
-decor(1413),	-- Orcish Lumberjack's Stool
-decor(1414),	-- Frostwolf Banded Stool
-decor(1415),	-- Orcish Sleeping Cot
-decor(1416),	-- Peon's Work Bucket
-decor(1417),	-- Zuldazar Cook's Griddle
-decor(1418),	-- Zandalari Wall Shelf
-decor(1434),	-- Sturdy Wall Rack
-decor(1435),	-- Sturdy Fireplace
-decor(1436),	-- Rugged Stool
-decor(1437),	-- Iron Chain Chandelier
-decor(1438),	-- Iron-Reinforced Door
-decor(1439),	-- Tusked Gazebo
-decor(1440),	-- Nightborne Fireplace
-decor(1443),	-- Orcish Scribe's Drafting Table
-decor(1444),	-- Small Purple Suramar Seat Cushion
-decor(1445),	-- Gilnean Circular Rug
-decor(1446),	-- Silvermoon Painter's Cushion \\ Wide Silvermoon Seat Cushion
 decor(1447),	-- Small Silvermoon Seat Cushion
 decor(1448),	-- Triangular Silvermoon Seat Cushion
 decor(1449),	-- Circular Silvermoon Seat Cushion
 decor(1450),	-- Silvermoon Pillow Roll
-decor(1451),	-- Tied-Open Leather Curtains
-decor(1452),	-- Closed Leather Curtains
-decor(1453),	-- Leather Valance
-decor(1454),	-- Tied-Open Folk Curtains
-decor(1455),	-- Closed Folk Curtains
-decor(1456),	-- Durable Folk Valance
-decor(1457),	-- Restful Wooden Bench
-decor(1458),	-- Light-Infused Fountain
 decor(1459),	-- Tiny String of Schmancy Goblin Lights
 decor(1460),	-- Small String of Schmancy Goblin Lights
 decor(1461),	-- Drooping String of Schmancy Goblin Lights
 decor(1462),	-- Very Long String of Schmancy Goblin Lights
 decor(1463),	-- Long String of Schmancy Goblin Lights
-decor(1464),	-- Teal Suramar Seat Cushion
-decor(1465),	-- Purple Suramar Seat Cushion
-decor(1466),	-- Small Red Suramar Seat Cushion
-decor(1481),	-- Surwich Peddler's Wagon
-decor(1482),	-- Sethraliss Priest's Pillow
 decor(1484),	-- Sethrak Neckroll Pillow
-decor(1486),	-- Circular Elven Table
-decor(1487),	-- Elegant Wall Drape
-decor(1488),	-- Elven Floral Window
-decor(1674),	-- Head of the Broodmother
-decor(1692),	-- Val'sharah Bookcase
-decor(1693),	-- Small Val'sharah Bookcase
-decor(1694),	-- Kaldorei Chef's Table
-decor(1695),	-- Kaldorei Washbasin
-decor(1697),	-- Zocalo Drinks
-decor(1698),	-- Round Stitched Cushion
-decor(1699),	-- Stitched Pillow Roll
-decor(1700),	-- Iron-Studded Wooden Window
-decor(1701),	-- Charming Seat Cushion
-decor(1702),	-- Checkered Charming Seat Cushion
-decor(1703),	-- Thunder Totem Kiln
-decor(1704),	-- Old Salt's Fireplace
 decor(1717),	-- [DNT] Schmancy Goblin String Lights - DO NOT USE
 decor(1718),	-- [DNT] Schmancy Goblin String Lights - DO NOT USE
 decor(1719),	-- [DNT] Zuldazar Cook's Griddle - DO NOT USE
 decor(1720),	-- [DNT] Zuldazar Cook's Griddle - DO NOT USE
-decor(1723),	-- Orgrimmar Chair
-decor(1724),	-- Rugged Brazier
-decor(1725),	-- Frostwall Elevated Brazier
-decor(1736),	-- Orgrimmar Nightstand
-decor(1737),	-- Durable Wooden Chest
-decor(1738),	-- Wide Charming Couch
-decor(1739),	-- Iron-Reinforced Cupboard
-decor(1740),	-- Trueshot Lodge Fireplace
-decor(1741),	-- Runed Dreamweaver Moonstone
-decor(1742),	-- Worker's Wooden Desk
 decor(1743),	-- [DNT] Cornerstone 02 - DO NOT USE
-decor(1744),	-- Orgrimmar Tusked Bed
-decor(1745),	-- Iron-Reinforced Standing Mirror
-decor(1746),	-- Shaded Suramar Window
-decor(1747),	-- Elaborate Suramar Window
-decor(1748),	-- Octagonal Ochre Window
-decor(1749),	-- Meadery Ochre Window
-decor(1750),	-- Ornate Ochre Window
 decor(1751),	-- [DNT] Cornerstone 01 - DO NOT USE
-decor(1770),	-- Bel'ameth Interior Wall
-decor(1771),	-- Bel'ameth Round Interior Pillar
-decor(1772),	-- Bel'ameth Interior Doorway
-decor(1773),	-- Bel'ameth Interior Narrow Wall
-decor(1774),	-- Silvermoon Round Interior Pillar
-decor(1775),	-- Silvermoon Interior Narrow Wall
-decor(1776),	-- Silvermoon Interior Wall
-decor(1791),	-- Frostwall Forge
-decor(1792),	-- Ancestral Signal Brazier
-decor(1793),	-- Gilnean Problem Solver
-decor(1794),	-- Gilnean Noble's Trellis
-decor(1795),	-- Arched Rose Trellis
-decor(1796),	-- Gilnean Stone Wall
-decor(1801),	-- Bradensbrook Smoke Lantern
-decor(1802),	-- Bradensbrook Thorned Well
-decor(1826),	-- Gilnean Stocks
-decor(1827),	-- Surwich Expedition Tent
 decor(1828),	-- [DNT] Smoke Sconce - DO NOT USE - new asset
-decor(1829),	-- Little Wolf's Loo
-decor(1830),	-- Gilnean Wooden Table
-decor(1831),	-- Gilnean Wall Shelf
-decor(1832),	-- Gilnean Rocking Chair
-decor(1833),	-- Waning Wood Fence
-decor(1834),	-- Bel'ameth Bench
 decor(1835),	-- [DNT] Ornamental Kaldorei Glaive - DO NOT USE - new asset coming
-decor(1836),	-- Elven Temple Brazier
-decor(1844),	-- Silvermoon Interior Doorway
-decor(1861),	-- Filigree Moon Lamp
-decor(1862),	-- Wooden Gazebo
-decor(1863),	-- Stonework Fountain
-decor(1864),	-- Elwynn Cobblestone Round
-decor(1865),	-- Elwynn Cobblestone
-decor(1866),	-- Elwynn Cobblestone Pair
-decor(1867),	-- Elwynn Cobblestone Cluster
-decor(1878),	-- Carved Wooden Bar Table
-decor(1879),	-- Orgrimmar Bureaucrat's Desk
-decor(1880),	-- Tidesage's Fireplace
-decor(1881),	-- Shala'nir Feather Bed
-decor(1882),	-- Kaldorei Stone Fence
-decor(1883),	-- Kaldorei Stone Fencepost
-decor(1884),	-- Kaldorei Cushioned Seat
-decor(1885),	-- Elven Round Table
-decor(1886),	-- Kaldorei Wall Shelf
-decor(1887),	-- Kaldorei Treasure Trove
-decor(1888),	-- Bel'ameth Barrel
-decor(1889),	-- Crescent Moon Lamppost
-decor(1893),	-- Overgrown Arathi Trellis
-decor(1894),	-- Void-Corrupted Fountain
-decor(1900),	-- Sagehold Window
-decor(1919),	-- Orange Suramar Seat Cushion
-decor(1920),	-- Red Suramar Seat Cushion
 decor(1938),	-- [DNT] Silvermoon Small Platform - WMO - DO NOT USE \\ Silvermoon Small Platform
 decor(1943),	-- [DNT] Silvermoon Large Platform - WMO - DO NOT USE \\ Silvermoon Large Platform
 decor(1944),	-- [DNT] Silvermoon Round Platform - WMO - DO NOT USE \\ Silvermoon Round Platform
@@ -444,152 +70,14 @@ decor(1953),	-- [DNT] Bel'ameth Round Platform - WMO - DO NOT USE \\ Bel'ameth R
 decor(1954),	-- [DNT] Bel'ameth Large Platform - WMO - DO NOT USE \\ Bel'ameth Large Platform
 decor(1955),	-- [DNT] Bel'ameth Small Platform - WMO - DO NOT USE \\ Bel'ameth Small Platform
 decor(1956),	-- [DNT] Bel'ameth Angled Platform - WMO - DO NOT USE \\ Bel'ameth Angled Platform
-decor(1957),	-- [DNT] Orgrimmar Beam Platform - WMO - DO NOT USE \\ Orgrimmar Beam Platform
-decor(1958),	-- [DNT] Orgrimmar Round Platform - WMO - DO NOT USE \\ Orgrimmar Round Platform
-decor(1959),	-- [DNT] Orgrimmar Large Platform - WMO - DO NOT USE \\ Orgrimmar Large Platform
 decor(1960),	-- [DNT] Orgrimmar Small Platform - WMO - DO NOT USE \\ Orgrimmar Small Platform
 decor(1961),	-- [DNT] Orgrimmar Angled Platform - WMO - DO NOT USE \\ Orgrimmar Angled Platform
-decor(1962),	-- [DNT] Stormwind Beam Platform - WMO - DO NOT USE \\ Stormwind Beam Platform
-decor(1963),	-- [DNT] Stormwind Round Platform - WMO - DO NOT USE \\ Stormwind Round Platform
-decor(1964),	-- [DNT] Stormwind Large Platform - WMO - DO NOT USE \\ Stormwind Large Platform
-decor(1965),	-- [DNT] Stormwind Small Platform - WMO - DO NOT USE \\ Stormwind Small Platform
-decor(1966),	-- [DNT] Stormwind Angled Platform - WMO - DO NOT USE \\ Stormwind Angled Platform
-decor(1977),	-- High-Backed Orgrimmar Chair
-decor(1978),	-- Iron-Reinforced Wooden Rack
-decor(1979),	-- Stitched Leather Rug
-decor(1984),	-- Schmancy Goblin String Lights
-decor(1987),	-- Bel'ameth Wooden Table
 decor(1988),	-- [DNT] Amirdrassil Stool - DO NOT USE - new asset
-decor(1989),	-- Bel'ameth Crafter's Tent
-decor(1990),	-- Small Bel'ameth Tent
-decor(1991),	-- Small Wooden Stool
-decor(1992),	-- Large Covered Wooden Table
-decor(1993),	-- Small Wooden Nightstand
-decor(1994),	-- Carved Wooden Crate
-decor(1995),	-- Sturdy Weapon Rack
-decor(1996),	-- Wooden Chamberstick
-decor(1997),	-- Large Sturdy Wooden Table
-decor(1998),	-- Embellished Dwarven Tome
-decor(1999),	-- Open Carved Wooden Crate
-decor(2000),	-- Filigree Moon Sconce
-decor(2001),	-- Shadowforge Sconce
 decor(2018),	-- [DNT] Ornate Ironforge Bench - DO NOT USE - new asset coming
-decor(2086),	-- Sprouting Lamppost
-decor(2087),	-- Short Orgrimmar Bench
-decor(2088),	-- Iron-Reinforced Crate
-decor(2089),	-- Weather-Treated Wooden Table
-decor(2090),	-- Leather-Banded Wooden Bench
-decor(2091),	-- Boralus String Lights
-decor(2092),	-- Cozy Hide-Covered Bench
-decor(2093),	-- Large Orgrimmar Bookcase
-decor(2094),	-- Small Leather Rug
 decor(2095),	-- [DNT] Spiky Banded Barrel - DO NOT USE - duplicate
-decor(2098),	-- Spiky Banded Barrel
-decor(2099),	-- [DNT] Stormwind Beam Platform - M2 DO NOT USE \\ Stormwind Beam Platform \\ Stormwind Beam Platform - M2
-decor(2100),	-- [DNT] Stormwind Round Platform - M2 DO NOT USE \\ Stormwind Round Platform \\ Stormwind Round Platform - M2
-decor(2101),	-- [DNT] Stormwind Large Platform - M2 DO NOT USE \\ Stormwind Large Platform \\ Stormwind Large Platform - M2
-decor(2102),	-- [DNT] Stormwind Small Platform - M2 DO NOT USE \\ Stormwind Small Platform \\ Stormwind Small Platform - M2
-decor(2103),	-- [DNT] Stormwind Angled Platform - M2 DO NOT USE \\ Stormwind Angled Platform \\ Stormwind Angled Platform - M2
-decor(2104),	-- [DNT] Silvermoon Beam Platform - M2 DO NOT USE \\ Silvermoon Beam Platform \\ Silvermoon Beam Platform - M2
-decor(2105),	-- [DNT] Silvermoon Large Platform - M2 DO NOT USE \\ Silvermoon Large Platform \\ Silvermoon Large Platform - M2
-decor(2106),	-- [DNT] Silvermoon Small Platform - M2 DO NOT USE \\ Silvermoon Small Platform \\ Silvermoon Small Platform - M2
-decor(2107),	-- [DNT] Silvermoon Angled Platform - M2 DO NOT USE \\ Silvermoon Angled Platform \\ Silvermoon Angled Platform - M2
-decor(2108),	-- [DNT] Silvermoon Round Platform - M2 DO NOT USE \\ Silvermoon Round Platform \\ Silvermoon Round Platform - M2
-decor(2109),	-- [DNT] Bel'ameth Beam Platform - M2 DO NOT USE \\ Bel'ameth Beam Platform \\ Bel'ameth Beam Platform - M2
-decor(2110),	-- [DNT] Bel'ameth Large Platform - M2 DO NOT USE \\ Bel'ameth Large Platform \\ Bel'ameth Large Platform - M2
-decor(2111),	-- [DNT] Bel'ameth Small Platform - M2 DO NOT USE \\ Bel'ameth Small Platform \\ Bel'ameth Small Platform - M2
-decor(2112),	-- [DNT] Bel'ameth Angled Platform - M2 DO NOT USE \\ Bel'ameth Angled Platform \\ Bel'ameth Angled Platform - M2
-decor(2113),	-- [DNT] Bel'ameth Round Platform - M2 DO NOT USE \\ Bel'ameth Round Platform \\ Bel'ameth Round Platform - M2
-decor(2114),	-- [DNT] Orgrimmar Beam Platform - M2 DO NOT USE \\ Orgrimmar Beam Platform \\ Orgrimmar Beam Platform - M2
-decor(2115),	-- [DNT] Orgrimmar Round Platform - M2 DO NOT USE \\ Orgrimmar Round Platform \\ Orgrimmar Round Platform - M2
-decor(2116),	-- [DNT] Orgrimmar Large Platform - M2 DO NOT USE \\ Orgrimmar Large Platform \\ Orgrimmar Large Platform - M2
-decor(2117),	-- [DNT] Orgrimmar Small Platform - M2 DO NOT USE \\ Orgrimmar Small Platform \\ Orgrimmar Small Platform - M2
-decor(2118),	-- [DNT] Orgrimmar Angled Platform - M2 DO NOT USE \\ Orgrimmar Angled Platform \\ Orgrimmar Angled Platform - M2
-decor(2226),	-- Shadowforge Grinding Wheel
-decor(2227),	-- Dark Iron Table Saw
-decor(2228),	-- Ironforge Bookcase
-decor(2229),	-- Small Ironforge Bookcase
-decor(2230),	-- Blackrock Lamppost
-decor(2231),	-- Light-Infused Rotunda
-decor(2237),	-- Kharanos Bookcase
-decor(2238),	-- Stolen Ironforge Seat
-decor(2239),	-- Thelsamar Hanging Lantern
-decor(2240),	-- Wooden Ironforge Table
-decor(2241),	-- Square Stormpike Table
-decor(2242),	-- Round Dwarven Table
-decor(2243),	-- Ornate Ironforge Table
-decor(2244),	-- Dilapidated Wildhammer Well
-decor(2245),	-- Overgrown Wildhammer Fountain
-decor(2246),	-- Dark Iron Chandelier
-decor(2254),	-- Elegant Tied Curtain
-decor(2322),	-- Gnomish T.O.O.L.B.O.X.
-decor(2323),	-- Automated Gnomeregan Guardian
-decor(2324),	-- Retired Industrial Gnomegrabber
-decor(2325),	-- Mechanical Gnomish Lamppost
-decor(2326),	-- Redundant Reclamation Rig
-decor(2327),	-- Mechagon Hanging Floodlight
-decor(2328),	-- Mechagnome Sustenance Distributor \\ Mechagnome Sustenance Distribution Station
-decor(2329),	-- Gnomish Tesla Mega-Coil
-decor(2330),	-- Gnomish Tesla Coil
-decor(2331),	-- Ironforge Chandelier
-decor(2332),	-- Steel Ironforge Emblem
-decor(2333),	-- Ironforge Fencepost
-decor(2334),	-- Ironforge Fence
-decor(2337),	-- Small Emergency Warning Lamp
-decor(2338),	-- Emergency Warning Lamp
-decor(2339),	-- Mechagon Eyelight Lamp
-decor(2340),	-- Mechagon Miniature Artificial Sun
-decor(2341),	-- Gnomish Safety Flamethrower
-decor(2342),	-- Charming Couch
-decor(2343),	-- Large H.O.M.E. Cog
-decor(2384),	-- Short Orgrimmar Bookcase
-decor(2385),	-- Sturdy Wooden Trellis
-decor(2427),	-- Gnomish Fencepost
-decor(2428),	-- Gnomish Fence
-decor(2429),	-- Perpetual Motion Crate
-decor(2430),	-- Screw-Sealed Stembarrel
-decor(2431),	-- Self-Sealing Stembarrel
-decor(2432),	-- Small Mechanical Crate
-decor(2433),	-- Bolt Chair
-decor(2434),	-- Small H.O.M.E. Cog
-decor(2435),	-- Gnomish Cog Stack
-decor(2436),	-- Deactivated Atomic Recalibrator
-decor(2437),	-- Mecha-Storage Mecha-Chest
-decor(2438),	-- Mechagon Armory Rack
-decor(2439),	-- Durable Hex Table
-decor(2440),	-- Long Leather-Clad Table
-decor(2441),	-- Orgrimmar Open Dresser
-decor(2442),	-- Razorwind Standing Mirror
-decor(2443),	-- Razorwind Fountain
-decor(2444),	-- Logger's Picnic Table
-decor(2445),	-- Long Durable Table
-decor(2446),	-- Razorwind Bar Table
-decor(2447),	-- Open Spiky Banded Barrel
-decor(2448),	-- Open Iron-Reinforced Crate
-decor(2452),	-- Dwarven District Banner
-decor(2453),	-- Grummle Sleeping Bag
-decor(2454),	-- Tusked Candleholder
-decor(2458),	-- Grand Elven Wall Curtain
-decor(2465),	-- Gnomish Steam-Powered Bed
-decor(2466),	-- Gnomish Sprocket Table
-decor(2467),	-- Double-Sprocket Table
-decor(2468),	-- Caramel Mint Noodle Dish
-decor(2469),	-- Elegant Dracthyr's Tea Cup
-decor(2470),	-- Decorative Cinder Honeypot
-decor(2471),	-- Dornic Sliced Mineloaf
-decor(2472),	-- Earthen Hospitality Cheese-Like Brick
-decor(2474),	-- Elegant Pillow Roll
-decor(2495),	-- Grummle Bedroll
-decor(2496),	-- Tall Sturdy Wooden Chair
 decor(2505),	-- Zangarshroom Patch
 decor(2506),	-- Arched Wooden Bench
-decor(2511),	-- Tome of Shadowforge Cunning
-decor(2512),	-- Tome of Pandaren Wisdom
-decor(2513),	-- Tome of Draenei Faith
-decor(2514),	-- Scribe's Working Notes
 decor(2515),	-- "Welcoming Pantry" Painting
-decor(2516),	-- "Fruit of the Arcan'dor" Painting
-decor(2517),	-- "Raising Your Eyes" Painting
 decor(2518),	-- "Healthy Conjuration" Painting
 decor(2519),	-- "The Water Lilies" Painting
 decor(2520),	-- "Broken Steps" Painting
@@ -598,16 +86,8 @@ decor(2522),	-- "Smiling Suns" Painting
 decor(2523),	-- "Shu'halo Perspective" Painting
 decor(2524),	-- "Tidesage's Omen" Painting
 decor(2525),	-- "Fate of All Life" Painting
-decor(2526),	-- Tome of Forsaken Resilience
 decor(2527),	-- "Tea and Sin" Painting
 decor(2528),	-- "Light's Vengeance" Painting
-decor(2529),	-- Open Tome of the Dragon's Dedication
-decor(2530),	-- Tome of the Dragon's Dedication \\ Tome of the Lost Dragon
-decor(2531),	-- Tome of Reliquary Insights
-decor(2532),	-- Kaheti Scribe's Records
-decor(2533),	-- Tome of Earthen Directives
-decor(2534),	-- Wide Hide-Covered Bench
-decor(2535),	-- Razorwind Wall Mirror
 decor(2536),	-- Farmer's Water Trough
 decor(2537),	-- Hay-Filled Sturdy Feeding Trough
 decor(2538),	-- Carved Stone Bench
@@ -617,386 +97,58 @@ decor(2541),	-- Founder's Point Street Light
 decor(2542),	-- Founder's Point Lamppost
 decor(2543),	-- Sturdy Feeding Trough
 decor(2544),	-- [DNT] Unlit Tusked Sconce - DO NOT USE
-decor(2545),	-- Tusked Hanging Sconce
-decor(2546),	-- Horned Banded Barrel
-decor(2547),	-- Open Horned Banded Barrel
-decor(2548),	-- Long Orgrimmar Bench
-decor(2549),	-- Crude Banded Crate
-decor(2550),	-- Open Crude Banded Crate
 decor(2578),	-- Small Covered Wooden Table
 decor(2579),	-- Small Sturdy Wooden Table
-decor(2590),	-- Elegant Seat Cushion
-decor(2591),	-- Mushan Dumpling Stack
-decor(2592),	-- Small Orgrimmar Chair
-decor(2593),	-- Drake Kebab Platter
-decor(2594),	-- Roast Riverbeast Platter
-decor(2595),	-- Valdrakken Blossomfruit Platter
-decor(2596),	-- Bruffalon Rib Platter
-decor(3826),	-- Elven Front Door \\ Elegant Carved Door
-decor(3827),	-- Elven Woodvine Trellis
-decor(3831),	-- Pandaren Signal Brazier
-decor(3832),	-- Pandaren Scholar's Lectern
-decor(3833),	-- Pandaren Scholar's Bookcase
 decor(3834),	-- Jade Temple Incense Burner
 decor(3835),	-- Gate of the Apexis
 decor(3836),	-- Dalaran Pedestal
-decor(3837),	-- MOTHER's Titanic Brazier
-decor(3838),	-- N'Zoth's Captured Eye
-decor(3839),	-- Lorewalker's Bookcase
-decor(3840),	-- Pandaren Pantry
-decor(3867),	-- Iron Dragonmaw Gate
-decor(3868),	-- Pandaren Stone Post
-decor(3869),	-- Pandaren Stone Lamppost
-decor(3870),	-- Red Crane Kite
-decor(3871),	-- Hanging Paper Lanterns \\ Lantern Kite
-decor(3872),	-- Lucky Hanging Lantern
-decor(3873),	-- Halfhill Cookpot
-decor(3874),	-- Paw'don Well
-decor(3875),	-- Lucky Traveler's Bench
-decor(3876),	-- Jade Temple Dragon Fountain
-decor(3877),	-- Stormstout Brew Keg
-decor(3878),	-- Pandaren Meander Rug
-decor(3879),	-- [DNT] Kun-Lai Lacquered Rickshaw - do not use - new asset \\ Kun-Lai Lacquered Rickshaw
-decor(3880),	-- Kotmogu Pedestal
-decor(3881),	-- Kotmogu Orb of Power
 decor(3882),	-- Timeless Dumpling Cart
-decor(3883),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
-decor(3884),	-- Alliance Dueling Flag
-decor(3885),	-- Horde Dueling Flag
-decor(3886),	-- Silverwing Sentinels Flag
-decor(3887),	-- Warsong Outriders Flag
 decor(3888),	-- [DNT] Kyrian Spirit Healer - DO NOT USE - NPC tech not ready yet
 decor(3889),	-- Earthcrawl Mine Cart
-decor(3890),	-- Deephaul Crystal
-decor(3891),	-- Deactivated K'areshi Warp Cannon
-decor(3892),	-- Pandaren Fireplace
-decor(3893),	-- Challenger's Dueling Flag \\ Challenger's Duelling Flag
-decor(3894),	-- Alliance Battlefield Banner
-decor(3895),	-- Fortified Alliance Banner
-decor(3896),	-- Horde Battlefield Banner
-decor(3897),	-- Fortified Horde Banner
-decor(3898),	-- Uncontested Battlefield Banner
-decor(3899),	-- Netherstorm Battlefield Flag
-decor(3900),	-- Berserker's Empowerment
 decor(3901),	-- Enigmatic Purple Crystal
-decor(3902),	-- Healer's Empowerment
-decor(3903),	-- Runner's Empowerment
-decor(3904),	-- Wise Pandaren's Bed
-decor(3905),	-- Guardian's Empowerment
-decor(3906),	-- Chaotic Empowerment
-decor(3907),	-- Mysterious Empowerment
-decor(3981),	-- Nightborne Merchant's Stall
-decor(3982),	-- Deluxe Suramar Sleeper
-decor(3983),	-- Suramar Library
-decor(3984),	-- Nightborne Bench
-decor(3985),	-- Arcwine Counter
-decor(3993),	-- Pandaren Lacquered Crate
-decor(3994),	-- Serenity Peak Tent
-decor(3995),	-- Shaohao Ceremonial Bell
-decor(4022),	-- Nightborne Lantern
-decor(4023),	-- Suramar Fencepost
-decor(4024),	-- Suramar Sconce
-decor(4025),	-- Shal'dorei Seat
-decor(4026),	-- Large Traditional Shal'dorei Rug
-decor(4027),	-- Ornate Suramar Table
-decor(4028),	-- Covered Ornate Suramar Table
-decor(4029),	-- Square Suramar Table
-decor(4030),	-- Covered Square Suramar Table
-decor(4031),	-- Covered Small Suramar Table
-decor(4032),	-- Nightborne Jeweler's Table
-decor(4033),	-- Traditional Shal'dorei Rug
-decor(4034),	-- Circular Shal'dorei Rug
-decor(4035),	-- Nightborne Wall Shelf
-decor(4036),	-- Suramar Fence
-decor(4037),	-- Suramar Containment Cell
-decor(4038),	-- Suramar Street Light
-decor(4039),	-- Suramar Storage Crate
-decor(4040),	-- Suramar Window
-decor(4041),	-- Shal'dorei Open-Air Tent
-decor(4042),	-- Trueshot Skeletal Dragon Head \\ Trueshot Skeletal Dragon Trophy
 decor(4048),	-- Pandaren Target Dummy
 decor(4157),	-- Traditional Brewfest Stein
 decor(4158),	-- Venthyr's Target Dummy
-decor(4159),	-- Draconic Stone Table
-decor(4160),	-- Pentagonal Stone Table
-decor(4161),	-- Valdrakken Sconce
-decor(4162),	-- Valdrakken Banded Barrel
-decor(4163),	-- Valdrakken Storage Crate
-decor(4164),	-- Long Valdrakken Storage Crate
-decor(4165),	-- Valdrakken Fence
-decor(4166),	-- Valdrakken Fencepost
-decor(4167),	-- Verdant Valdrakken Vase
-decor(4168),	-- Valdrakken Garden Fountain
-decor(4169),	-- Thaldraszus Telescope
-decor(4170),	-- Draconic Nesting Bed
 decor(4171),	-- Valdrakken Bookcase \\ [DNT] Valdrakken Bookcase - DO NOT USE - newer asset in place
-decor(4172),	-- Valdrakken Chandelier
-decor(4173),	-- Studious Dracthyr's Tomes
-decor(4174),	-- Literature of the Blue Dragonflight
-decor(4175),	-- Literature of the Green Dragonflight
-decor(4176),	-- Literature of the Red Dragonflight
-decor(4177),	-- Draconic Circular Rug
 decor(4178),	-- Non-Fatal One-Armed Bandit
 decor(4179),	-- [DNT] DuelingFlag_HousingProp.m2 - DO NOT USE - tester asset
-decor(4180),	-- The Great Hoard
-decor(4181),	-- Portal to Damnation
-decor(4386),	-- Razorwind Storage Table
-decor(4401),	-- Stormwind Footlocker
-decor(4402),	-- Stormwind Large Wooden Table
-decor(4403),	-- Stormwind Wooden Bench
-decor(4404),	-- Stormwind Wooden Stool
-decor(4405),	-- Stormwind Wooden Table
-decor(4406),	-- Round-Top Boulder
-decor(4407),	-- Flat Boulder
-decor(4408),	-- Hilltop Boulder
 decor(4422),	-- Founder's Point Signpost
-decor(4423),	-- Ornamental Kaldorei Glaive
-decor(4443),	-- Stormwind Keg Stand
-decor(4444),	-- Westfall Woven Basket
-decor(4445),	-- Stormwind Gazebo
-decor(4446),	-- Stormwind Trellis and Basin
-decor(4447),	-- Stormwind Arched Trellis
-decor(4448),	-- Wooden Outhouse
 decor(4449),	-- Kaldorei Scribe's Shelf
 decor(4450),	-- Cookout Campfire
-decor(4451),	-- Razorwind Succulent Palm
-decor(4452),	-- Razorwind Fighting Cactus
-decor(4453),	-- Razorwind Tumbleweed
-decor(4454),	-- Razorwind Palm Tree
-decor(4455),	-- Nagrand Blueberry Bush
-decor(4456),	-- Barrens Hosta Bush
-decor(4457),	-- Azsharan Firespear Tree
-decor(4458),	-- Hardy Razorwind Grass Patch
-decor(4459),	-- Flowering Durotar Cactus
-decor(4460),	-- Razorwind Acacia Tree
-decor(4461),	-- Elwynn Whitebrush
-decor(4462),	-- Razorwind Gobtree
-decor(4463),	-- Sunset Aster Flowers
-decor(4464),	-- Pink Paintbrush \\ Pink Razorwind Paintbrush
-decor(4465),	-- Gloomrose
-decor(4466),	-- Duskberry Bush
-decor(4467),	-- Duskwood Shadebrush
-decor(4468),	-- Creeping Lattice Ivy
-decor(4469),	-- Duskwood Sycamore Shrub
-decor(4470),	-- Spiritbloom Flower
-decor(4471),	-- Pink Gilnean Rose
-decor(4472),	-- Silvermoon Sunrise Bush
-decor(4473),	-- Founder's Point Blooming Grass Patch \\ Founder's Point Grassy Patch
-decor(4474),	-- Autumn Leaf Pile
-decor(4475),	-- Young Chestnut Tree
-decor(4476),	-- Razorwind Flamebrush
-decor(4477),	-- Draconic Memorial Stone
-decor(4478),	-- Dragon's Grand Mirror
-decor(4479),	-- Valdrakken Stone Stool
-decor(4480),	-- Valdrakken Gilded Throne
-decor(4481),	-- Elegant Dracthyr's Tea Set
-decor(4482),	-- Dragon's Hoard Chest
-decor(4483),	-- Valdrakken Market Tent
-decor(4484),	-- Elven Wood Crate
-decor(4485),	-- Stormwind Workbench
-decor(4486),	-- Northshire Scribe's Desk
-decor(4487),	-- Jewelcrafter's Tent
-decor(4488),	-- Wooden Doghouse
 decor(4489),	-- Alliance Soldier's Bed
-decor(4490),	-- Stormwind Peddler's Cart
-decor(4560),	-- Relaxing Goblin Beach Chair with Cup Gripper
-decor(4561),	-- Amirdrassil Stool
-decor(4562),	-- Lovely Elven Shelf
-decor(4811),	-- Elwynn Fence
-decor(4812),	-- Elwynn Fencepost
-decor(4813),	-- Goldshire Food Cart
-decor(4814),	-- [DNT] City Wanderer's Candleholder - DO NOT USE - new asset \\ City Wanderer's Candleholder
-decor(4815),	-- Northshire Barrel
-decor(4816),	-- Wooden Storage Crate
-decor(4818),	-- Architect's Drafting Table
-decor(4819),	-- Stormwind Weapon Rack
-decor(4822),	-- Elwynn Grass Patch \\ Small Grass Patch
-decor(4823),	-- Elwynn Grass Spread \\ Large Grass Patch
 decor(4829),	-- [DNT] Rugged Brazier - DO NOT USE - neighborhood use only
 decor(4831),	-- [DNT] Standing Rugged Brazier - DO NOT USE - neighborhood use only
 decor(4833),	-- [DNT] Rugged Fire Pit - DO NOT USE - neighborhood use only
-decor(4839),	-- Nesingwary Mounted Shoveltusk Head \\ Nesingwary Shoveltusk Trophy
-decor(4841),	-- Nesingwary Mounted Elk Head \\ Nesingwary Elk Trophy
-decor(4843),	-- Void-Corrupted Rotunda
-decor(4844),	-- Rough Wooden Chair
-decor(4845),	-- Elwynn Small Grass Patch \\ Tiny Grass Patch
-decor(5111),	-- Golden Cloud Serpent Treasure Chest
-decor(5112),	-- Five Dawns Weapon Rack
-decor(5113),	-- Five Dawns Shrine of the Smoking Fish
 decor(5114),	-- Ironpaw Stew Cart
-decor(5115),	-- Hooded Iron Lantern
-decor(5116),	-- Stormwind Lamppost
-decor(5117),	-- Replica Felblood Altar
 decor(5118),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset \\ Dreadscar Battle Planning Map
-decor(5119),	-- Five Dawns Planning Table
-decor(5120),	-- Black Harvest Banner
-decor(5126),	-- Monastery Gong
-decor(5127),	-- Dreadscar Bookcase
-decor(5128),	-- Dreadscar Dais
-decor(5136),	-- Tauren Hanging Brazier
-decor(5292),	-- Black Harvest Orrery
-decor(5342),	-- Smoke Sconce
-decor(5525),	-- Replica Cursed Forge of the Nathrezim
-decor(5526),	-- Replica Forge of Odyn
-decor(5527),	-- Illidari Glaiverest
-decor(5528),	-- Skyhold Brazier
-decor(5529),	-- Skyhold War Table
-decor(5530),	-- Illidari Banner
-decor(5531),	-- Illidari Skull Sentinel
-decor(5532),	-- Valarjar Banner
 decor(5533),	-- Valarjar Keg of Celebration
-decor(5534),	-- Valarjar Shield Wall
-decor(5555),	-- Fel Hammer Scouting Map
-decor(5556),	-- Preserver's Censer
 decor(5557),	-- Dracthyr Weapon Rack
-decor(5558),	-- Evoker's Elegant Rug
-decor(5559),	-- Augmenter's Opal Banner
-decor(5560),	-- Draconic Crafter's Table
-decor(5561),	-- Wind Rider Roost
-decor(5562),	-- Skyhold Spear Rack
-decor(5563),	-- Elven Standing Mirror
-decor(5575),	-- Replica Tome of Fel Secrets
 decor(5687),	-- Founder's Point Street Sign
 decor(5688),	-- Founder's Point Navigation Sign
-decor(5689),	-- Devastator's Brazier
 decor(5851),	-- Small Wooden Footstool
-decor(5853),	-- Tusked Weapon Rack
-decor(5854),	-- Empty Orgrimmar Bathtub
 decor(5855),	-- Runed Stone Placard
-decor(5877),	-- Trueshot Lodge Weapon Rack
-decor(5878),	-- Replica Tome of the Ancients
-decor(5879),	-- Ebon Blade Planning Map
-decor(5880),	-- Ebon Blade Tome
-decor(5881),	-- Acherus Worktable
-decor(5882),	-- Ebon Blade Weapon Rack
 decor(5883),	-- "Autumn's Eternal Bliss" Painting
 decor(5884),	-- "Heart of Quel'Thalas" Painting
 decor(5885),	-- "Citadel of Unending Void" Painting
 decor(5886),	-- "Forest's Bulwark" Painting
 decor(5887),	-- "The Verdant Underwild" Painting
-decor(5888),	-- Replica Acherus Soul Forge
-decor(5889),	-- Ebon Blade Banner
-decor(5890),	-- Replica Altar of the Eternal Hunt
-decor(5891),	-- Unseen Path Archer's Gallery
-decor(5892),	-- Replica Tales of the Hunt
-decor(5893),	-- Banner of the Unseen Path
-decor(5894),	-- Tirisgarde Candle
-decor(5895),	-- Tirisgarde War Map
-decor(5896),	-- Tirisgarde Brazier
-decor(5897),	-- Dreamweaver Banner
-decor(5898),	-- Seed of Ages Cutting
-decor(7571),	-- Replica Altar of Ancient Kings
-decor(7572),	-- Silver Hand Banner
-decor(7573),	-- Sanctum of Light Hallway Rug
-decor(7574),	-- Replica Libram of Ancient Kings
-decor(7575),	-- Sanctum of Light Candelabra
-decor(7576),	-- Silver Hand Tribute to the Fallen
-decor(7577),	-- Silver Hand Weapon Rack
 decor(7578),	-- [DNT] Zuldazar Cook's Griddle - DO NOT USE
-decor(7579),	-- Tirisgarde Banner
 decor(7582),	-- Founder's Point Gravestone
 decor(7583),	-- Small Founder's Point Gravestone
 decor(7584),	-- Founder's Point Gravestone Tower
 decor(7585),	-- Large Founder's Point Gravestone
-decor(7606),	-- Netherlight Conclave Voidwell
-decor(7607),	-- Conclave Pedestal
-decor(7608),	-- Netherlight Lightwell
-decor(7609),	-- Conjured Altar of the Guardian
 decor(7688),	-- Tusked Leather Tapestry
 decor(7689),	-- Razorwind Banner Pelt \\ Razorwind Trophy Pelt
-decor(7701),	-- Ancient Weyrn Device
-decor(7815),	-- Uncrowned Apothecary's Cabinet
-decor(7816),	-- Uncrowned Apothecary's Supplies
-decor(7817),	-- Uncrowned Banner
-decor(7818),	-- Uncrowned Planning Table
-decor(7819),	-- Replica Crucible of the Uncrowned
-decor(7820),	-- Stolen Copy of the Blood Ledger
-decor(7821),	-- Netherlight Conclave Banner
-decor(7822),	-- Replica Altar of Light and Shadow
-decor(7823),	-- Replica Word of the Conclave
-decor(7824),	-- Scroll of the Conclave
-decor(7835),	-- Draconic Crafter's Forge
-decor(7836),	-- Small Razorwind Bar Table
-decor(7837),	-- Elemental Altar of the Maelstrom
-decor(7838),	-- Replica Words of Wind and Earth
-decor(7839),	-- Pedestal of the Maelstrom's Wisdom
 decor(7840),	-- Farseer's Furs
-decor(7841),	-- Maelstrom Banner
-decor(7842),	-- Horned Hanging Sconce
 decor(7871),	-- Painted Wood Scraps
 decor(7872),	-- Painted Wood Scrap Pile
-decor(7873),	-- Cenarion Arch
-decor(7874),	-- Earthen Ring Scouting Map
-decor(7875),	-- Maelstrom Chimes
-decor(7896),	-- Bel'ameth Traveler's Pack
-decor(8176),	-- Shadowmoon Open-Air Shed
-decor(8177),	-- Draenic Fencepost
-decor(8178),	-- Draenic Ottoman
-decor(8185),	-- Embroidered Embaari Tent
-decor(8186),	-- Draenic Wooden Table
-decor(8187),	-- Square Draenic Table
-decor(8188),	-- Shadowmoon Greenhouse
-decor(8189),	-- Draenic Wooden Wall Shelf
-decor(8190),	-- Elodor Armory Rack
-decor(8191),	-- Draenei Stargazer's Telescope
-decor(8192),	-- Draenethyst Lantern
-decor(8193),	-- "Dawning Hope" Mosaic
-decor(8194),	-- Small Karabor Fountain
-decor(8195),	-- Moon-Blessed Barrel
-decor(8196),	-- Draenic Basin
-decor(8235),	-- Telredor Recliner
-decor(8236),	-- Razorwind Cooking Grill
-decor(8237),	-- Argussian Circular Rug
-decor(8238),	-- Draenei Farmer's Trellis
-decor(8239),	-- Draenic Fence
-decor(8240),	-- Emblem of the Naaru's Blessing
-decor(8241),	-- Draenethyst Sconce
-decor(8242),	-- Grand Draenethyst Lamp
-decor(8768),	-- Netherlight Command Map
-decor(8769),	-- Tusked Weapon Stand
-decor(8770),	-- Jagged Orgrimmar Trellis
-decor(8771),	-- Hide-Covered Bench
-decor(8772),	-- Draenic Forge
-decor(8785),	-- Draenethyst Lamppost
-decor(8786),	-- Large Karabor Fountain
-decor(8787),	-- Draenethyst String Lights
-decor(8907),	-- Hide-Covered Wall Shelf
-decor(8910),	-- Tusked Chandelier
-decor(8911),	-- Tusked Sconce
-decor(8912),	-- Wolf Pelt Rug
-decor(8917),	-- Elegant Elven Chandelier
 decor(8974),	-- Wooden Planter Pot
 decor(8975),	-- Wooden Planter Row
 decor(8976),	-- Founder's Point Fence
 decor(8977),	-- Long Founder's Point Fence
 decor(8978),	-- Razorwind Wheelbarrow
-decor(8982),	-- Ornate Ironforge Bench
-decor(8983),	-- Boralus Barrel
-decor(8984),	-- Tidesage's Bookcase
 decor(8985),	-- Covered Wooden Desk
 decor(8986),	-- Sturdy Wooden Desk
-decor(8989),	-- Dalaran Espresso Machine
-decor(9035),	-- Admiralty's Upholstered Chair
-decor(9036),	-- Boralus Fence
-decor(9037),	-- Boralus Fencepost
-decor(9038),	-- Proudmoore Shipping Crate
-decor(9039),	-- Small Hull'n'Home Table
-decor(9040),	-- Large Hull'n'Home Table
-decor(9041),	-- Admiral's Chandelier
-decor(9042),	-- Hull'n'Home Dresser
-decor(9043),	-- Bowhull Bookcase
-decor(9044),	-- Brennadam Coop
-decor(9045),	-- Admiralty's Copper Lantern
-decor(9046),	-- Brennadam Grinder
-decor(9047),	-- Stormsong Water Pump
-decor(9048),	-- Stormsong Stove
-decor(9049),	-- Tiragarde Emblem
-decor(9050),	-- Boralus Bookshelf
-decor(9051),	-- Tidesage's Double Bookshelves
-decor(9052),	-- Admiral's Bed
-decor(9053),	-- Hull'n'Home Chair
-decor(9054),	-- Admiral's Low-Hanging Chandelier
-decor(9055),	-- Green Boralus Market Tent
 decor(9056),	-- Founder's Point Framed Torch
 decor(9057),	-- Long Old Founder's Point Fence
 decor(9058),	-- Old Founder's Point Fence
@@ -1005,58 +157,11 @@ decor(9060),	-- Old Founder's Point Fencepost
 decor(9061),	-- Founder's Point Waterwheel
 decor(9062),	-- Broken Founder's Point Fence
 decor(9063),	-- Old Broken Founder's Point Fence
-decor(9064),	-- Plush Cushioned Chair
-decor(9139),	-- Copper Stormsong Well
-decor(9140),	-- Tiragarde Treasure Chest
-decor(9141),	-- Proudmoore Green Drape
-decor(9142),	-- Copper Tidesage's Sconce
-decor(9143),	-- Tied-Right Leather Curtains
-decor(9144),	-- Founder's Point Front Door
-decor(9149),	-- "The High Exarch" Painting
-decor(9150),	-- "The Ranger of the Void" Painting
-decor(9151),	-- "The Harbinger" Painting
-decor(9152),	-- "The Redeemer" Painting
-decor(9166),	-- Seaworthy Boralus Bell
-decor(9167),	-- Dornogal Framed Rug
-decor(9168),	-- Stonelight Countertop
-decor(9169),	-- Boulder Springs Recliner
-decor(9170),	-- Boulder Springs Hot Tub
 decor(9176),	-- Founder's Point Standing Torch
 decor(9177),	-- Razorwind Banded Planter
-decor(9178),	-- Earthen Etched Throne
-decor(9179),	-- Freywold Bench
-decor(9180),	-- Dornogal Bookcase
-decor(9181),	-- Rambleshire Resting Platform
-decor(9182),	-- Fallside Lantern
-decor(9183),	-- Freywold Seat
-decor(9184),	-- Freywold Table
-decor(9185),	-- Dornogal Brazier
-decor(9186),	-- Dornogal Hanging Lantern
-decor(9187),	-- Dornogal Hanging Sconce
-decor(9188),	-- Coreway Sentinel Lamppost
-decor(9236),	-- Earthen Chain Wall Shelf
-decor(9237),	-- Fallside Storage Tent
-decor(9238),	-- Algari Fence
-decor(9239),	-- Algari Fencepost
-decor(9240),	-- Freywold Fountain
-decor(9241),	-- Forgeground Market Bins
-decor(9242),	-- Earthen Storage Crate
-decor(9243),	-- Meadery Storage Chest
-decor(9244),	-- Earthen Contender's Target
-decor(9245),	-- Replica Awakening Machine Stasis Pod
-decor(9246),	-- Gundargaz Grand Keg
-decor(9247),	-- Meadery Storage Barrel
-decor(9254),	-- Elegant Elven Canopy Bed
-decor(9255),	-- Gemmed Elven Chest
 decor(9261),	-- Reliquary Tent
 decor(9262),	-- [DNT] Horde Warlord's Throne - DO NOT USE - new asset here
-decor(9263),	-- Horde Warlord's Throne
 decor(9264),	-- Bel'ameth Front Door
-decor(9266),	-- Tirisfal Hollow Campfire
-decor(9267),	-- Blightfire Candle
-decor(9268),	-- Replica Rumbling Wastes Drill Pod
-decor(9269),	-- Gundargaz Candelabra
-decor(9424),	-- Goldshire Wardrobe
 decor(9425),	-- Iskaaran Open-Air Tent
 decor(9426),	-- Iskaaran Smith's Anvil
 decor(9427),	-- Iskaaran Cookpot
@@ -1071,158 +176,26 @@ decor(9435),	-- Finned Iskaaran Teapot
 decor(9436),	-- Iskaaran Charcuterie Board
 decor(9437),	-- Big Kinook's Legendary Soup Pot
 decor(9438),	-- Arch of Iskaara
-decor(9471),	-- Short Wooden Cabinet
-decor(9472),	-- Coal-Fired Stovetop
-decor(9473),	-- Sturdy Wooden Washbasin
-decor(9474),	-- Sturdy Wooden Bathtub
-decor(10324),	-- Small Orgrimmar Tusked Bed
 decor(10334),	-- Razorwind Smith's Hammer
 decor(10335),	-- Razorwind Miner's Pickaxe
 decor(10336),	-- Razorwind Woodworker's Hand Saw
 decor(10337),	-- Razorwind Crafter's Chisel
 decor(10338),	-- Razorwind Peon's Shovel
-decor(10343),	-- Sticky Lever
-decor(10344),	-- Dual-Action Turbo Pro Lever
-decor(10345),	-- Mechanical Gauge
-decor(10347),	-- Lively Pistons
 decor(10366),	-- [DNT] Sandy Vulpera Banner - do not use - duplicate \\ Sandy Vulpera Banner
-decor(10367),	-- Small Razorwind Square Table
 decor(10381),	-- Razorwind Logger's Axe
-decor(10791),	-- Large Razorwind Gazebo
-decor(10852),	-- Undermine Mechanic's Hanging Lamp
-decor(10853),	-- Undermine Alleyway Sconce
-decor(10854),	-- Silvermoon Barrel
-decor(10855),	-- Elwynn Apple Tree
-decor(10856),	-- Founder's Point Apple Tree
-decor(10857),	-- Spring-Powered Pointer
-decor(10860),	-- Elegant Table Lamp
-decor(10887),	-- Gnomish Tesla Tower
-decor(10888),	-- Moonclasp Satchel
-decor(10889),	-- Incontinental Table Lamp
 decor(10890),	-- Razorwind Iron Chandelier
 decor(10891),	-- Low-Hanging Razorwind Iron Chandelier
-decor(10892),	-- Small Jagged Orgrimmar Trellis
 decor(10893),	-- Razorwind Shores Canoe
-decor(10913),	-- Champion Brawler's Gloves
-decor(10944),	-- Silvermoon Gemmed Chair
-decor(10946),	-- Silvermoon Bench
-decor(10947),	-- Silvermoon Fencepost
-decor(10950),	-- Sin'dorei Sleeper
-decor(10952),	-- Razorwind Shores Front Door
 decor(10961),	-- [DNT] Legion's Fel Brazier - DO NOT USE - new asset in place
-decor(10962),	-- Draconic Sconce
-decor(10963),	-- Valdrakken Oven
-decor(10964),	-- Draconic Scribe's Basin
-decor(10965),	-- Five Flights' Grimoire
-decor(10966),	-- Silvermoon Fence
 decor(10967),	-- Silvermoon Front Door
-decor(11127),	-- Open Rust-Plated Storage Crate
-decor(11128),	-- Leftover Undermine Takeout
 decor(11129),	-- Razorwind Standing Tusk
-decor(11130),	-- Kharanos Stone Bed
-decor(11131),	-- Shadowforge Lamppost
-decor(11133),	-- Ornate Dwarven Wardrobe
-decor(11137),	-- Qalashi Goulash
-decor(11138),	-- Sunsmoke Censer
-decor(11139),	-- Razorwind Porch Chair
-decor(11160),	-- Shadowforge Stone Chair
 decor(11161),	-- [DNT] Kharanos Stone Bed - DO NOT USE - new asset present
-decor(11162),	-- Wingrest Signal Brazier
-decor(11163),	-- Valdrakken Hanging Lamp
-decor(11164),	-- Valdrakken Lamppost
-decor(11165),	-- Valdrakken Hanging Cauldron
-decor(11274),	-- Stormwind Forge
-decor(11275),	-- Conjured Archive of the Tirisgarde
-decor(11276),	-- Illidari Tent
 decor(11277),	-- Replica Hammer of Khaz'goroth
-decor(11280),	-- Replica Chronicle of Ages
-decor(11281),	-- Arcan'dor Cutting Fountain
-decor(11282),	-- Nightspire Fountain
-decor(11283),	-- Magistrix's Garden Fountain
-decor(11296),	-- Smoke Lamppost
-decor(11301),	-- Gilnean Banded Crate
-decor(11305),	-- Small Gilnean Table
-decor(11307),	-- Replica Tome of Blighted Implements
-decor(11315),	-- Tauren Jeweler's Roller
 decor(11316),	-- [DNT] Tauren Soup Pot - do not use - new asset \\ Tauren Cookpot
-decor(11319),	-- Zandalari War Chandelier
 decor(11322),	-- Pentagonal Valdrakken Tapestry
-decor(11370),	-- Bronze Banner of the Exiled
-decor(11371),	-- Draenei Smith's Anvil
-decor(11372),	-- Draenei Holo-Dais
-decor(11373),	-- Draenei Holo-Path
-decor(11374),	-- Draenei Crystal Forge
-decor(11375),	-- Dalaran Runic Anvil
-decor(11376),	-- Stoppered Black Potion
-decor(11377),	-- Gilnean Pitchfork
-decor(11378),	-- Pandaren Alchemist's Retort
-decor(11379),	-- Orcish Felblood Cauldron
-decor(11380),	-- Starry Scrying Pool
-decor(11381),	-- Boralus Bottle Lamp
-decor(11382),	-- Zandalari Bottle Shipment
-decor(11383),	-- Aspirant's Meditation Pool
-decor(11384),	-- Bejeweled Venthyr Chalice
-decor(11385),	-- Veil-Secured Animacone
-decor(11386),	-- Sintallow Candles
-decor(11387),	-- Dragon's Elixir Bottle
-decor(11388),	-- Tapestry of the Five Flights
-decor(11431),	-- Aldor Stellar Console
-decor(11432),	-- Mark of the Mages' Eye
-decor(11433),	-- Twilight Fire Canister
-decor(11434),	-- Pandaren Table Lamp
-decor(11435),	-- Intense Mogu Brazier
-decor(11436),	-- Venthyr Anima Bottle
-decor(11437),	-- Razorwind Covered Well
-decor(11438),	-- Apothecary's Worktable \\ Apothecary's Work Table
-decor(11439),	-- Stampwhistle's Postal Portal
-decor(11440),	-- Nerubian Alchemist's Retort
-decor(11451),	-- Naaru Crystal Icon
-decor(11453),	-- Tale of the Penultimate Lich King
-decor(11454),	-- Large Brazier of Elune
-decor(11455),	-- Drained Dark Heart of Galakrond
-decor(11456),	-- Scroll of K'aresh's Fall
-decor(11457),	-- Tome of the Survivor
-decor(11461),	-- Slate Cobblestone Pair
-decor(11479),	-- Slate Cobblestone
-decor(11480),	-- Iron-Reinforced Wooden Window
-decor(11481),	-- Slate Cobblestone Path
-decor(11482),	-- Slate Cobblestone Trio
-decor(11483),	-- Suramar Stepping Stone
-decor(11484),	-- Zandalari War Torch
 decor(11485),	-- Trueshot Lodge Food Nook
-decor(11486),	-- Replica Saga of the Valarjar
-decor(11487),	-- Tauren Storyteller's Frame
 decor(11488),	-- "Portrait of the Artist as a Young Goblin" Painting
-decor(11489),	-- Zandalari War Brazier
-decor(11490),	-- Highmountain Tanner's Frame
-decor(11491),	-- Skyhorn Banner
-decor(11492),	-- "Unity of Thorns" Tapestry
-decor(11493),	-- Maelstrom Lava Lamp
-decor(11494),	-- Pyrewood Glass Bottle
-decor(11495),	-- Baradin Bay Fishing Rack
-decor(11496),	-- Smoke Lamp
-decor(11497),	-- Standing Smoke Lamp
-decor(11498),	-- Stoppered Gilnean Barrel
-decor(11499),	-- Ornate Sin'dorei Sconce
-decor(11500),	-- Sin'dorei Crafter's Forge
-decor(11501),	-- Silvermoon Spire Fountain
-decor(11502),	-- Bejeweled Silvermoon Chandelier
-decor(11503),	-- Gilded Sunfury Chair
 decor(11707),	-- "That Thing What You've Always Needed" Advertisement
-decor(11708),	-- Suramar Stepping Stone Set
-decor(11718),	-- Small Gilnean Windmill
-decor(11719),	-- Elegant Padded Chaise
-decor(11720),	-- Open Elegant Elven Barrel
-decor(11721),	-- Elegant Curved Table
-decor(11722),	-- Snowfall Tribe Scare-Totem \\ [DNT] [AUTOGEN] WOLVAR_TOTEM02_DRAGONBLIGHT.M2
-decor(11723),	-- Gilnean Green Potion \\ [DNT] [AUTOGEN] WORGEN_BOTTLE_02.M2
-decor(11724),	-- Gilnean Postbox \\ [DNT] [AUTOGEN] WORGEN_MAILBOX.M2
-decor(11725),	-- Gilnean Map \\ [DNT] [AUTOGEN] WORGEN_PAPER_07.M2
-decor(11751),	-- Skyhorn Arrow Kite
-decor(11752),	-- Hanging Arrow Kite
-decor(11753),	-- Skyhorn Eagle Kite
-decor(11754),	-- Bloodtotem Banner \\ Highmountain Banner
-decor(11755),	-- Camp Narache Rug
 decor(11770),	-- Dalaran Kafa Press
 decor(11771),	-- [DNT] [AUTOGEN] 11WE_WildElves_Storage_Basket01.m2
 decor(11772),	-- [DNT] [AUTOGEN] 11WE_WildElves_Storage_HangingBasket01.m2
@@ -1232,7 +205,6 @@ decor(11775),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03.m2
 decor(11776),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2
 decor(11777),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging02_Off.m2
 decor(11778),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_ChaiseLounge01.m2
-decor(11779),	-- Scaled Twilight Mosaic \\ [DNT] [AUTOGEN] TWILIGHTSHAMMER_RUG02.M2
 decor(11782),	-- [DNT] [AUTOGEN] ZANGARLAMPPOST01.M2
 decor(11783),	-- [DNT] [AUTOGEN] ZANGARMUSHROOM05.M2
 decor(11784),	-- [DNT] [AUTOGEN] ZANGARMUSHROOMSHELF01.M2
@@ -1258,14 +230,13 @@ decor(11803),	-- Kafa Creamer
 decor(11804),	-- Legerdemain Lounge Sign Board
 decor(11805),	-- Dalaran Kafa Grinder
 decor(11806),	-- Pylon Fragment
-decor(11807),	-- Dalaran Kafa Table
+decor(11807),	-- DalaranÂ Kafa Table
 decor(11808),	-- Ornamental Proudmoore Anchor
 decor(11809),	-- [DNT] [AUTOGEN] 8DU_Mechagon_ControlConsole01.m2
 decor(11810),	-- [DNT] [AUTOGEN] 8DU_Mechagon_MachinePart05.m2
 decor(11811),	-- [DNT] [AUTOGEN] 8DU_Mechagon_MachinePart07.m2
 decor(11812),	-- [DNT] [AUTOGEN] 8DU_MECHAGON_LANTERN.m2
 decor(11813),	-- [DNT] [AUTOGEN] 8DU_Mechagon_LargeMachine01_BLANK.m2
-decor(11814),	-- Gnomeregan Recyli-Kiln
 decor(11815),	-- [DNT] [AUTOGEN] 8DU_Mechagon_ChargingStation02.m2
 decor(11816),	-- [DNT] [AUTOGEN] 8DU_Mechagon_JunkyardDoor01.m2
 decor(11817),	-- Green Thumb's Watering Can
@@ -1281,94 +252,28 @@ decor(11826),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03_Off.m2
 decor(11869),	-- Nazjatar Framing Post \\ [DNT] [AUTOGEN] 12PH_Leg_8ng_nazjatar_centerpiece01_side.m2
 decor(11870),	-- Spirit Anemones \\ [DNT] [AUTOGEN] 12PH_Leg_8NG_Nazjatar_Brazier01.m2
 decor(11871),	-- Elegant Silvermoon Dessert Tray
-decor(11872),	-- Eversong Party Platter
-decor(11873),	-- Empty Lorewalker's Bookcase
-decor(11874),	-- Orgrimmar Bathtub
-decor(11878),	-- Outland Mag'har Banner
-decor(11879),	-- Arakkoa Decoy Scarecrow
-decor(11880),	-- Talon King's Totem
-decor(11881),	-- Draenei Holo-Projector Pedestal
-decor(11882),	-- Tempest Keep Cryo-Pod
-decor(11883),	-- Draenei Weaver's Loom
-decor(11884),	-- Draenei Transmitter
-decor(11885),	-- Crystal Signpost
-decor(11886),	-- Gilded Draenei Round Table
-decor(11887),	-- Aldor Bookcase
-decor(11888),	-- Shattrath Sconce
-decor(11889),	-- Shattrath Lamppost
-decor(11890),	-- Grand Drape of the Exiles
-decor(11891),	-- Silver Dalaran Bench
-decor(11892),	-- Dalaran Post
-decor(11893),	-- Wolvar Postbag
-decor(11894),	-- Gilded Dalaran Banner
-decor(11895),	-- Dalaran Scholar's Bookcase
-decor(11896),	-- Kirin Tor Sun Chandelier
-decor(11897),	-- Kirin Tor Crate
-decor(11898),	-- Dalaran Street Sign
-decor(11899),	-- Kirin Tor Glass Table
-decor(11900),	-- San'layn Blood Orb
-decor(11901),	-- Icecrown Plague Canister
-decor(11902),	-- Pandaren Alchemist's Kit
-decor(11903),	-- Halaa Bench
-decor(11904),	-- Reconstructed Mogu Lightning Drill
 decor(11905),	-- Driftwood Barrel
 decor(11906),	-- Murloc Driftwood Hut
 decor(11907),	-- Driftwood Junk Pile
 decor(11908),	-- Shellscale Standard
 decor(11909),	-- Murloc's Wind Chimes
-decor(11910),	-- Dalaran Display Shelves
-decor(11911),	-- Failed Failure Detection Pylon
-decor(11912),	-- Dalaran Auto-Hammer
-decor(11913),	-- Suramar Jeweler's Assortment
 decor(11914),	-- Naga's Scale Bag \\ [DNT] [AUTOGEN] 8NG_Nazjatar_Bag01.m2
 decor(11915),	-- Azshara's Eternal Prize \\ [DNT] [AUTOGEN] 8ng_nazjatar_centerpiece01_pearl.m2
 decor(11916),	-- Azsharan Brazier \\ [DNT] [AUTOGEN] 8ng_nazjatar_centerpiece01_bowl.m2
-decor(11917),	-- Aspiring Soul's Chair
-decor(11918),	-- Ardenweald Lamppost
-decor(11919),	-- Maldraxxian Crate
-decor(11920),	-- Tome of Maldraxxian Rituals
-decor(11921),	-- Kyrian Anima Barrel
-decor(11922),	-- Hollow Night Fae Shrine
-decor(11923),	-- Broker's Hex Table
-decor(11924),	-- Ardenweald Hanging Baskets
-decor(11925),	-- Large Revendreth Storage Crate
-decor(11926),	-- Margrave's Stitched Leather Rug
-decor(11927),	-- Cartel Ta Bookcase
-decor(11928),	-- Cartel Xy Capture Crate
-decor(11929),	-- Titanic Tyrhold Fountain
 decor(11930),	-- Kobold Digger's Chair
 decor(11931),	-- Kobold Candle Trio
 decor(11932),	-- Kobold Wagon
 decor(11933),	-- Candle-Festooned Wooden Awning
 decor(11934),	-- Waxmaster's Candle Rack
-decor(11935),	-- [DNT] [AUTOGEN] TAURENSIGNPOST01.M2 \\ Thunder Bluff Totem
-decor(11941),	-- Kirin Tor Skyline Banner
 decor(11943),	-- Sparse Razorwind Fisher's Rack \\ [DNT] [AUTOGEN] 12PH_Durotar_Crafting_FishingRack02.m2
-decor(11944),	-- Gilnean Washing Line
-decor(11945),	-- Pandaren Fishing Net
-decor(11946),	-- Beloved Elekk Plushie
 decor(11947),	-- Flying Skyhorn Eagle Kite
-decor(11948),	-- K'areshi Warp Platform \\ [DNT] [AUTOGEN] 11ET_Ethereal_Structure_Platform01.m2
 decor(11949),	-- Razorwind Fisher's Rack \\ [DNT] [AUTOGEN] 12PH_Durotar_Crafting_FishingRack01.m2
 decor(11950),	-- Naakroan Brazier \\ [DNT] [AUTOGEN] 11ET_Ethereal_Lighting_Brazier01.m2
 decor(11951),	-- Shadowguard Collection Pylon \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_HoveringPylon01.m2
-decor(11952),	-- K'areshi Protectorate Portal \\ [DNT] [AUTOGEN] 12PH_Leg_7ET_ETHEREAL_PORTAL01.m2
 decor(11953),	-- Shadowguard Energy Siphon \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_SiphoningDevice01.m2
-decor(12161),	-- Beloved Raptor Plushie
-decor(12162),	-- Sandfury Diplomat's Banner
-decor(12163),	-- Tidesage's Totem
-decor(12164),	-- Drust Enchanter's Rod
-decor(12165),	-- Kyrian Aspirant's Rolled Cushion
-decor(12189),	-- [DNT] [AUTOGEN] 12ELW_Elwynn_Autumn_Tree_Apple_D01.m2 \\ Elwynn Autumn Apple Tree
-decor(12190),	-- [DNT] [AUTOGEN] 12ELW_Elwynn_Autumn_Tree_Apple_D02.m2 \\ Founder's Point Autumn Apple Tree
 decor(12192),	-- Razorwind River Paddle \\ [DNT] [AUTOGEN] 12PH_Durotar_Storage_Paddle01.m2
 decor(12193),	-- Tusk-Adorned Stitched Rug \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_RugLarge01.m2
 decor(12194),	-- Small Stitched Rug \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_RugSmall01.m2
-decor(12195),	-- Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe03.m2
-decor(12196),	-- Angled Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe45b.m2
-decor(12197),	-- Long Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe04.m2
-decor(12198),	-- Corner Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe90c.m2
-decor(12199),	-- [DNT] [AUTOGEN] 12PH_Folk_Bathtub01_Empty.m2 \\ Empty Wooden Bathtub
 decor(12200),	-- Glorious Pendant of Rukhmar \\ [DNT] [AUTOGEN] 6AK_Arakkoa_Dreamcatcher01.m2
 decor(12201),	-- Writings of Reshad the Outcast \\ [DNT] [AUTOGEN] 6AK_Arakkoa_Scrolls02.M2
 decor(12202),	-- Scroll of the Adherent \\ [DNT] [AUTOGEN] 6AK_Arakkoa_Scrolls04.m2
@@ -1377,15 +282,7 @@ decor(12204),	-- Skyreach Circular Table \\ [DNT] [AUTOGEN] 6AK_Arakkoa_Table01.
 decor(12205),	-- High Arakkoan Library Shelf \\ [DNT] [AUTOGEN] 12PH_Leg_6AK_Arakkoa_Shelf01.m2
 decor(12206),	-- High Arakkoan Alchemist's Shelf \\ [DNT] [AUTOGEN] 12PH_Leg_6AK_Arakkoa_Shelf02.m2
 decor(12207),	-- High Arakkoan Shelf \\ [DNT] [AUTOGEN] 12PH_Leg_6AK_Arakkoa_Shelf_empty.m2
-decor(12208),	-- "Rising Glory of Rukhmar" Statue \\ [DNT] [AUTOGEN] 12PH_Leg_6AK_Arakkoa_Statue01.m2
 decor(12209),	-- Uncorrupted Eye of Terokk \\ [DNT] [AUTOGEN] 6AK_Arakkoa_EyeTerrok.m2
-decor(12210),	-- Hull'n'Home Window
-decor(12211),	-- Exposed Corner Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe90.m2
-decor(12212),	-- Exposed Long Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe02.m2
-decor(12217),	-- Exposed Intersecting Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_PipeT.m2
-decor(12218),	-- Reinforced Corner Ethereal Pipe Segment \\ Exposed Corner Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe90b.m2
-decor(12220),	-- Exposed Angled Ethereal Pipe Segment \\ [DNT] [AUTOGEN] 12PH_Leg_11ET_Ethereal_Structure_Pipe45.m2
-decor(12263),	-- [DNT] [AUTOGEN] 12PH_BrawlersGuild_Punchingbag01.m2 \\ Brawler's Guild Punching Bag
 decor(12453),	-- Rolled Razorwind Leathers \\ [DNT] [AUTOGEN] 12PH_Durotar_Crafting_LeatherRoll01.m2
 decor(12454),	-- Low-Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HangingRope01.m2
 decor(12455),	-- Knotted Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HangingRope02.m2
@@ -1393,87 +290,30 @@ decor(12456),	-- Tusked Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_
 decor(12457),	-- Plain Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HangingRope04.m2
 decor(12458),	-- Adorned Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HangingRope05.m2
 decor(12459),	-- Lightly Adorned Hanging Razorwind Ropes \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HangingRope06.m2
-decor(14330),	-- Valdrakken Bookcase
 decor(14346),	-- Large Razorwind Farmer's Hay Pile \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HayPileLarge01.m2
 decor(14347),	-- Razorwind Farmer's Hay Pile \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HayPileMedium01.m2
 decor(14348),	-- Small Razorwind Farmer's Hay Pile \\ [DNT] [AUTOGEN] 12PH_Durotar_Decoration_HayPileSmall01.m2
-decor(14358),	-- Brazier of Elune
-decor(14359),	-- Cartel Collector's Cage
-decor(14360),	-- Arathi Bartender's Shelves
-decor(14361),	-- Replica Libram of the Dead
-decor(14379),	-- Kobold Trassure Pile
-decor(14380),	-- Maldraxxian Runic Tablet
-decor(14381),	-- Gob-chanical Trash Heap
-decor(14382),	-- Red Razorwind Paintbrush
-decor(14383),	-- Dry Razorwind Grass Patch
-decor(14461),	-- Uncrowned Market Stall
-decor(14553),	-- Draenei Crystal Chandelier
 decor(14615),	-- Simple Haranir Table \\ Leather Haranir Bed \\ [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Table02.m2
-decor(14644),	-- Replica Forge of the Roaring Mountain \\ [DNT] [AUTOGEN] 12ph_leg_7af_artifacthub_altarmonk.m2
-decor(14676),	-- Kyrian Floating Lamp \\ [DNT] [AUTOGEN] 9VL_Aspirants_Light01.m2
 decor(14730),	-- Small Telogrus Lamp \\ [DNT] [AUTOGEN] 10VE_VoidElf_Lighting_Lamp01.m2
 decor(14731),	-- Restful Bronze Bench \\ [DNT] [AUTOGEN] 11XP_Anniversary_Bench_02.m2
 11.2.7.64011
-decor(14810),	-- Brumewood Hollow Grassy Patch
-decor(14811),	-- Brumewood Hollow Grassy Spread
-decor(14812),	-- Founder's Point Grassy Patch
-decor(14813),	-- Founder's Point Grassy Spread
-decor(14814),	-- Sturdy Wine Press
-decor(14815),	-- Brawler's Barricade
-decor(14816),	-- Darkmaster's Mystical Brazier
 decor(15261),	-- Razorwind Roofer's Shingle
 decor(15262),	-- Razorwind Roofer's Shingle Pile
 decor(15263),	-- Tiny Clump of Hay
 decor(15264),	-- Razorwind Construction Crane
-decor(15453),	-- Cenarion Round Rug
-decor(15454),	-- Homestone Doormat
-decor(15477),	-- Dreadscar Battle Planning Map
-decor(15595),	-- Kun-Lai Lacquered Rickshaw
-decor(15605),	-- Golden Pandaren Privacy Screen
 11.2.7.64044
 decor(15740),	-- [DNT] [AUTOGEN] 12PH_Leg_Worgen_Bench_02.M2 \\ [DNT] 12PH_Leg_Worgen_Bench_02.M2
-decor(15741),	-- Thunder Totem Mailbox \\ [DNT] [AUTOGEN] 7TR_Tauren_Postbox01.m2
 decor(15742),	-- [DNT] [AUTOGEN] 12PH_Leg_7NE_Nightelf_Chair03.M2 \\ [DNT] 12PH_Leg_7NE_Nightelf_Chair03.M2
-decor(16012),	-- Dalaran Sewer Gate
-decor(16013),	-- Rolled Scarab Rug
-decor(16014),	-- Aspirant's Ringed Banner \\ Aspirant's Ringed Sash
-decor(16015),	-- Valdrakken Wall Shelf
-decor(16082),	-- Glazed Sin'dorei Vial
-decor(16083),	-- Shadow Council Torch
-decor(16084),	-- Resizable All-Purpose Gear
-decor(16085),	-- Home Defense Gadget
-decor(16086),	-- Stranglekelp Sack
-decor(16087),	-- Dalaran Sun Sconce
-decor(16088),	-- Joybuzz's Joyful Wall of Trains
-decor(16089),	-- Gilnean Spare Saddle
-decor(16090),	-- Heart of the Forest Banner
 decor(16091),	-- [DNT] 12PH_Leg_PA_innBench_01.M2
-decor(16219),	-- Arakkoan Alchemist's Concoction \\ [DNT] [AUTOGEN] AK_ALCHEMYBOTTLE01.M2
-decor(16220),	-- Arakkoan Alchemist's Bottle
 decor(16221),	-- [DNT] 12PH_Leg_7NE_Druid_StoneRune01.M2
 11.2.7.64438
-decor(7610),	-- Tome of the Corrupt
-decor(7620),	-- Vrykul Lord's Throne
-decor(7621),	-- Legion's Holo-Communicator
-decor(7622),	-- Hanging Felsteel Chain
-decor(7623),	-- Legion's Fel Torch
-decor(7624),	-- Corruption Pit
-decor(7625),	-- Legion's Fel Brazier
-decor(7658),	-- Vertical Felsteel Chain
-decor(7686),	-- Legion Torture Rack
-decor(7687),	-- Eredar Lord's Fel Torch
-decor(7690),	-- Altar of the Corrupted Flames
-decor(8810),	-- Sentinel's Moonwing Gaze
-decor(8811),	-- Fel Fountain
-decor(9165),	-- Demonic Storage Chest
-decor(11278),	-- Large Legion Candle
-decor(11279),	-- Small Legion Candle
-decor(11942),	-- Hanging Felsteel Cage
 decor(16754),	-- Draenei Holo-Junction \\ [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES01.M2
 decor(17609),	-- High-Mounted Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier03.M2
 decor(17610),	-- Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier04.M2
 decor(17611),	-- Low-Hanging Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier05.M2
-decor(17740),	-- Elegant Cushioned Chaise \\ [DNT] [AUTOGEN] 12PH_Opulent_Sofa_Large01_NoCloth.M2
+11.2.7.64978
+decor(12247),	-- Hatred's Wolfpelt Rug
+decor(12248),	-- Prime Evil's Chest
 12.0.0.63534
 decor(669),	-- [DNT] 12PH_Opulent_INE01_Partition_Pillar.wmo - DO NOT USE - unfinished \\ NYI 12PH_Opulent_INE01_Partition_Pillar.wmo
 decor(670),	-- [DNT] 12PH_Opulent_INE01_Partition_W_L.wmo  - DO NOT USE - unfinished \\ NYI 12PH_Opulent_INE01_Partition_W_L.wmo
@@ -1496,7 +336,7 @@ decor(1143),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_Jug01.m2
 decor(1144),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Decor_Fountain01_LightBloom.m2
 decor(1145),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01_LightBloom.m2
 decor(1146),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone01.m2
-decor(1147),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01.m2
+decor(1147),	-- Rutaani Sporepod \\ [DNT] [AUTOGEN] 12RU_Rutaani_Storage_SporePod01.m2
 decor(1148),	-- Ritual-Cursed Sarcophagus \\ [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus01.m2
 decor(1149),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_WallShelf01.m2
 decor(1150),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus02.m2
@@ -1506,10 +346,10 @@ decor(1154),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone04.m2
 decor(1156),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone05.m2
 decor(1157),	-- Sturdy Haranir Chair \\ [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Chair02_SitMedium.m2
 decor(1158),	-- [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Chair01_SitMedium.m2
-decor(1159),	-- Sin’dorei Honor Stone \\ [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone02.m2
+decor(1159),	-- Sin'dorei Honor Stone \\ Sinâ€™dorei Honor Stone \\ [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone02.m2
 decor(1160),	-- Diamond Honor Stone \\ [DNT] [AUTOGEN] 12BE_BloodElf_Graveyard_Gravestone03.m2
 decor(1164),	-- [DNT] [AUTOGEN] 12PM_Primitive_Furniture_Table01.m2
-decor(1204),	-- Sunsmoke Censer \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_IncenseBurner01.m2
+decor(1204),	-- Sunsmoke Censer DEPRICATED DONT USE \\ Sunsmoke Censer \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_IncenseBurner01.m2
 decor(1220),	-- Embroidered Sunfury Chair \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Chair01.m2
 decor(1221),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_FancyChair01.m2
 decor(1222),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Storage_Barrel01.m2
@@ -1547,7 +387,7 @@ decor(1646),	-- [DNT] Silvermoon Round Interior Pillar - DO NOT USE - duplicate 
 decor(1647),	-- [DNT] Silvermoon Interior Wall - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_BloodElf_IBE01_Partition_W_L.wmo
 decor(1648),	-- [DNT] Silvermoon Interior Narrow Wall - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_BloodElf_IBE01_Partition_W_S.wmo
 decor(1666),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_Workbench02.m2
-decor(1726),	-- [DNT] [AUTOGEN] 11WE_WildElves_Storage_Handcart01.m2
+decor(1726),	-- Sturdy Haranir Handcart \\ [DNT] [AUTOGEN] 11WE_WildElves_Storage_Handcart01.m2
 decor(1727),	-- [DNT] [AUTOGEN] 11WE_WildElves_Storage_Handcart02.m2
 decor(1728),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_GreatVault02.m2
 decor(1729),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Storage_RowBoat_Oar01.m2
@@ -1574,9 +414,9 @@ decor(2220),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_HangingGourds02.m2
 decor(2221),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_HangingGourds03.m2
 decor(2222),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd01.m2
 decor(2223),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd02.m2
-decor(2224),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd03.m2
+decor(2224),	-- Stoppered Spring Water Gourd \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd03.m2
 decor(2225),	-- Haranir Herb Rack \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_HangingHerbs01.m2
-decor(2232),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl01.m2
+decor(2232),	-- Ruddy Haranir Pigment Bowl \\ [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl01.m2
 decor(2233),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl02.m2
 decor(2234),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl03.m2
 decor(2235),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl04.m2
@@ -1616,7 +456,7 @@ decor(2601),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Decor_Bowl02.m2
 decor(2602),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Defense_Spear01.m2
 decor(2603),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Defense_Shield01.m2
 decor(2604),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Defense_BlowGun01.m2
-decor(2605),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Food_Planter01.m2
+decor(2605),	-- Rustic Harandar Planter \\ [DNT] [AUTOGEN] 12FN_Fungarian_Food_Planter01.m2
 decor(2606),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_Brazier01.m2
 decor(2607),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_Brazier01_Unlit.m2
 decor(3908),	-- Zangarmarsh Lamppost
@@ -1631,8 +471,8 @@ decor(3916),	-- Purple Zangarmarsh Tree
 decor(3917),	-- Withered Zangarmarsh Tree
 decor(3918),	-- Glowing Withered Zangarmarsh Tree
 decor(3919),	-- Pulsing Zangarshroom
-decor(3920),	-- Orange Spore Light
-decor(3921),	-- Yellow Spore Light
+decor(3920),	-- [DNT] Orange Spore Light - endeavor canceled (inside only) \\ Orange Spore Light
+decor(3921),	-- [DNT] Spore Light - endeavor canceled (inside only) \\ Yellow Spore Light
 decor(3922),	-- Galactic Void-Scarred Banner \\ Cosmic Void Banner \\ [DNT] [AUTOGEN] 12VD_Void_Decor_Banner01.m2
 decor(4013),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Pillow01_Destroyed.m2
 decor(4014),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_BeanBag01_Destroyed.m2
@@ -1706,7 +546,7 @@ decor(8988),	-- Sealed Sack of Roasted Kafa
 decor(8990),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Pitcher01.m2
 decor(8991),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug01.m2
 decor(8992),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug02.m2
-decor(8993),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Tent01.m2
+decor(8993),	-- Fungal Pergola \\ [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Tent01.m2
 decor(9065),	-- Lush Garden Fungal Basin \\ [DNT] [AUTOGEN] 12PH_Shop_Spring_GardenGnome_BirdBath01.m2
 decor(9248),	-- Dried Gilnean Roses
 decor(9249),	-- Hyjal Climbing Vine
@@ -1778,10 +618,10 @@ decor(9627),	-- [DNT] [AUTOGEN] 12PM_Primitive_Defense_Hammer01.m2
 decor(9628),	-- Fresh Canvas
 decor(9629),	-- "The Light Blooms" Unframed Painting
 decor(9630),	-- [DNT] [AUTOGEN] 12PH_Folk_Crate02_OPEN.m2
-decor(10273),	-- Sin'dori Artisan's Easel \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Easel01_Empty.m2
+decor(10273),	-- Sin'dorei Artisan's Easel \\ Sin'dori Artisan's Easel \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Easel01_Empty.m2
 decor(10325),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Furniture_Table02.m2
 decor(10326),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Cage01.m2
-decor(10327),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Door01.m2
+decor(10327),	-- Root-Woven Door \\ [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Door01.m2
 decor(10339),	-- Triple-Tested Steam Valve
 decor(10340),	-- Mad Science Blueprints
 decor(10341),	-- Safety Electrical Cabling
@@ -1802,14 +642,14 @@ decor(10538),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_RopeHanging02_NonAnimated.
 decor(10539),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_BBQRoaster01.m2
 decor(10540),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Plate01.m2
 decor(10541),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Canvas09.m2
-decor(10542),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_WallArt14.m2
+decor(10542),	-- "Eversong Lantern" Painting \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_WallArt14.m2
 decor(10543),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Chandelier01_Void.m2
 decor(10544),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging04_Void.m2
-decor(10778),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Window01.m2
+decor(10778),	-- Root-Woven Window \\ [DNT] [AUTOGEN] 12FN_Fungarian_Structure_Window01.m2
 decor(10784),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas01.m2
 decor(10788),	-- [DNT] [AUTOGEN] 12XP_Generic_Furniture_Canvas04.m2
 decor(10790),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Special_EnergyFocus01.m2
-decor(10858),	-- Zul’Aman Ancestral Fountain \\ [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain01.m2
+decor(10858),	-- Zul'Aman Ancestral Fountain \\ Zulâ€™Aman Ancestral Fountain \\ [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain01.m2
 decor(10859),	-- [DNT] [AUTOGEN] 12TR_Amani_Structure_Fountain02.m2
 decor(10861),	-- [DNT] [AUTOGEN] 12PM_Primitive_Cooking_Bowl01.m2
 decor(10862),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack04.m2
@@ -1827,7 +667,7 @@ decor(11284),	-- Silvermoon Training Dummy \\ [DNT] [AUTOGEN] 12BE_BloodElf_Defe
 decor(11285),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack07.m2
 decor(11323),	-- Amani Crafter's Tool Rack \\ [DNT] [AUTOGEN] 12TR_Amani_Crafting_ToolRack02.m2
 decor(11324),	-- Hash'ey Heartbroth Cauldron \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Cauldron01.m2
-decor(11325),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit02.m2
+decor(11325),	-- Amani Spearhunter's Spit \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit02.m2
 decor(11326),	-- Empty Amani Cauldron \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Cauldron02.m2
 decor(11327),	-- Carved Idol of Nalorakk, Loa of War \\ Carved Idol of Nalorakk \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_LoaTrinket03.m2
 decor(11328),	-- Banner of the Amani Tribe \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_Banner01.m2
@@ -1906,7 +746,7 @@ decor(14353),	-- [DNT] [AUTOGEN] 12PH_Leg_6HU_BLACKSMITH_FORGE03.m2
 decor(14432),	-- Alliance Doormat \\ [DNT] [AUTOGEN] 12PH_Misc_AllianceDoorMat01.m2
 decor(14433),	-- Horde Doormat \\ [DNT] [AUTOGEN] 12PH_Misc_HordeDoorMat01.m2
 decor(14467),	-- The Dark Portal \\ [DNT] [AUTOGEN] 12PH_Misc_TBCDarkPortal01.m2
-decor(14554),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs01.m2
+decor(14554),	-- Ornate Cosmic Rug \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs01.m2
 decor(14555),	-- Lush Telogrus Carpet \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs02.m2
 decor(14556),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs03.m2
 decor(14557),	-- Riftstone \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_KnickKnack03.m2
@@ -2017,7 +857,7 @@ decor(14970),	-- Rack of Silvermoon Arms \\ [DNT] [AUTOGEN] 12BE_BloodElf_Defens
 decor(14971),	-- Crimson Silvermoon Runner \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Rug02.m2
 decor(14972),	-- Plum Eversong Rug \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Rug03.m2
 decor(14975),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_PlanterFloating01.m2
-decor(14977),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Food_Cup01.m2
+decor(14977),	-- Gilded Eversong Cup \\ [DNT] [AUTOGEN] 12BE_BloodElf_Food_Cup01.m2
 decor(14978),	-- Farstrider's Comfy Cushion \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_BeanBag01.m2
 decor(14979),	-- Gilded Lightwood Wardrobe \\ [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Cabinet01.m2
 decor(14985),	-- Gilded Sky-Blue Drapery \\ [DNT] [AUTOGEN] 12BE_BloodElf_Decor_DraperySet02_BlueSmall.m2
@@ -2054,7 +894,7 @@ decor(15151),	-- Cuddly Green Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_
 decor(15152),	-- Cuddly Red Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Red.M2
 decor(15153),	-- Cuddly Blue Grrgle \\ [DNT] [AUTOGEN] 12PH_Misc_MurlocPlush01_Blue.M2
 decor(15154),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack11.M2
-decor(15155),	-- [DNT] [AUTOGEN] 11WE_WildElves_Cooking_Cauldron01.m2
+decor(15155),	-- Bubbling Haranir Cauldron \\ [DNT] [AUTOGEN] 11WE_WildElves_Cooking_Cauldron01.m2
 decor(15156),	-- [DNT] [AUTOGEN] 12TR_Amani_Storage_Crate01.m2
 decor(15157),	-- [DNT] [AUTOGEN] 12TR_Amani_Storage_Crate02.m2
 decor(15158),	-- Simple Amani Basket \\ [DNT] [AUTOGEN] 12TR_Amani_Storage_Basket01.m2
@@ -2122,16 +962,16 @@ decor(15479),	-- Plush Haranir Leather Pillow \\ [DNT] [AUTOGEN] 11WE_WildElves_
 decor(15480),	-- Warm Haranir Blanket \\ Plush Haranir Blanket \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_Blanket01.m2
 decor(15481),	-- Eerie Iridescent Riftshroom \\ Eerie Irisdescent Riftshroom \\ [DNT] [AUTOGEN] 12RTL_Bioluminescent_Plant_PancakeMushroom_C03.m2
 decor(15482),	-- [DNT] [AUTOGEN] 12ESW_Main_Topiary_CubeYellow_B02.m2
-decor(15483),	-- Sin’dorei Storage Jar \\ [DNT] [AUTOGEN] 12BE_BloodElf_Storage_Jar03.m2
+decor(15483),	-- Sin'dorei Storage Jar \\ Sinâ€™dorei Storage Jar \\ [DNT] [AUTOGEN] 12BE_BloodElf_Storage_Jar03.m2
 decor(15484),	-- Woodblock Stool \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Stool01_SitMedium.m2
 decor(15485),	-- [DNT] [AUTOGEN] 12TR_Amani_Crafting_ToolRack01.m2
-decor(15486),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit01.m2
+decor(15486),	-- Depthdiver's Cooking Spit \\ [DNT] [AUTOGEN] 12TR_Amani_Cooking_Spit01.m2
 decor(15487),	-- Zul'Aman Forest Hammock \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Hammock01.m2
 decor(15488),	-- Galactic Void-Scarred Barricade \\ [DNT] [AUTOGEN] 12VD_Void_Defense_Barricade01.m2
 decor(15489),	-- Three-Tier Zul'Aman Shelf \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Shelf01.m2
 decor(15490),	-- Amani Trophy Frame \\ [DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy01.m2
 decor(15491),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy02.m2
-decor(15492),	-- Zul’Aman Armament Rest \\ [DNT] [AUTOGEN] 12TR_Amani_Defense_WeaponRack01.m2
+decor(15492),	-- Zul'Aman Armament Rest \\ Zulâ€™Aman Armament Rest \\ [DNT] [AUTOGEN] 12TR_Amani_Defense_WeaponRack01.m2
 decor(15493),	-- Blossoming Forge \\ [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Forge01.m2
 decor(15494),	-- On'ohia's Call \\ [DNT] [AUTOGEN] 11WE_WildElves_Defense_Spear01.m2
 decor(15495),	-- [DNT] [AUTOGEN] 11WE_WildElves_Defense_Bow01.m2
@@ -2196,8 +1036,8 @@ decor(15769),	-- Void Elf Barrel \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Barrel0
 decor(15770),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Special_SingularityAnchor01_Base01.m2
 decor(15771),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Special_SingularityAnchor01_Bomb01.m2
 decor(15851),	-- Amani Slate Bench \\ [DNT] [AUTOGEN] 12TR_Amani_Furniture_Bench01_SitMedium.m2
-decor(15890),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Defense_WeaponRack01.m2
-decor(15891),	-- Sturdy Void Elf Trunk Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate02.m2
+decor(15890),	-- Void Elf Weapon Rack \\ [DNT] [AUTOGEN] 12VE_VoidElf_Defense_WeaponRack01.m2
+decor(15891),	-- Open Sturdy Void Elf Trunk \\ Sturdy Void Elf Trunk Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate02.m2
 decor(15893),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate04.m2
 decor(15894),	-- Cosmic Traveler's Satchel \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Satchel02.m2
 decor(15895),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent01.m2
@@ -2216,7 +1056,7 @@ decor(16035),	-- Cuddly Tangerine Grrgle
 decor(16036),	-- Cuddly Sapphire Grrgle
 decor(16037),	-- Cuddly Clover Grrgle
 decor(16038),	-- Cuddly Peach Grrgle
-decor(16092),	-- Zul’Aman Flame Cradle \\ [DNT] [AUTOGEN] 12TR_Amani_Lighting_HangingFire02.m2
+decor(16092),	-- Zul'Aman Flame Cradle \\ Zulâ€™Aman Flame Cradle \\ [DNT] [AUTOGEN] 12TR_Amani_Lighting_HangingFire02.m2
 decor(16093),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_Hex_Brazier01.m2
 decor(16094),	-- Amani Warding Hex \\ [DNT] [AUTOGEN] 12TR_Amani_Defense_Hex_TerritoryMarker01.m2
 decor(16095),	-- [DNT] [AUTOGEN] 12TR_Amani_Navigation_Canoe01.m2
@@ -2295,7 +1135,7 @@ decor(17472),	-- Preyseeker's Thornspeaker Bust \\ [DNT] [AUTOGEN] 12XP_Prey_Spe
 decor(17474),	-- Preyseeker's Twilight Bust \\ [DNT] [AUTOGEN] 12XP_Prey_Special_Trophy_GrothozTheBurningShadow02.m2
 decor(17476),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Tongs01.m2
 decor(17515),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed \\ [DNT] [AUTOGEN] 11WE_WildElves_Furniture_Bed02.m2
-decor(17516),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Navigation_Fence01.m2
+decor(17516),	-- Fungarian Vine Fence \\ [DNT] [AUTOGEN] 12FN_Fungarian_Navigation_Fence01.m2
 decor(17517),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Navigation_Fence02.m2
 decor(17518),	-- Preyseeker's Plinth \\ [DNT] [AUTOGEN] 12XP_Prey_Special_TrophyBase01.m2
 decor(17519),	-- Preyseeker's Ornate Plinth \\ [DNT] [AUTOGEN] 12XP_Prey_Special_TrophyBase02.m2
@@ -2327,15 +1167,15 @@ decor(17873),	-- Granite Cobblestone Path Corner \\ [DNT] [AUTOGEN] 12PH_Founder
 decor(17874),	-- Granite Cobblestone Path Arc \\ [DNT] [AUTOGEN] 12PH_Founders_CobblestonePath_02.M2
 decor(17879),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Lighting_HangingLantern02.m2
 decor(17880),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Lighting_HangingLantern03.m2
-decor(17886),	-- [DNT] [AUTOGEN] 11WE_WildElves_Ritual_Altar01.m2
+decor(17886),	-- Altar of the Shul'ka \\ [DNT] [AUTOGEN] 11WE_WildElves_Ritual_Altar01.m2
 decor(17889),	-- [DNT] [AUTOGEN] 12PH_Leg_Zandalari_Mask_01.M2
 12.0.0.64499
-decor(17918),	-- Granite Cobblestone Path
-decor(17919),	-- Granite Cobblestone Long Path
+decor(17918),	-- Granite Cobblestone Long Path \\ Granite Cobblestone Path
+decor(17919),	-- Granite Cobblestone Path \\ Granite Cobblestone Long Path
 decor(18396),	-- March on Quel'Danas Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru02.M2
 decor(18397),	-- Dreamrift Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa02.M2
 decor(18398),	-- Voidspire Vanquisher's Gleaming Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria02.M2
-decor(18482),	-- [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES02.M2
+decor(18482),	-- [DNT] DR_DRAENEI_HOLORUNES02.M2 - Do not use - duplicate \\ [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES02.M2
 decor(18483),	-- Eye of Acherus
 decor(18484),	-- Crucible Votive Rack \\ Crucible Votive
 decor(18485),	-- Amani Training Dummy
@@ -2350,7 +1190,7 @@ decor(18792),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Fountain03.M2
 decor(18793),	-- [DNT] [AUTOGEN] 12PH_Opulent_WaterWell01.M2
 decor(18798),	-- [DNT] [AUTOGEN] 12TR_Amani_Defense_TerritoryMarker01.m2
 decor(18799),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Anvil01.m2
-decor(18800),	-- Void Elf Bedroll Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll02.m2
+decor(18800),	-- Open Void Elf Bedroll \\ Void Elf Bedroll Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll02.m2
 decor(18801),	-- [DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack01.m2
 decor(18802),	-- [DNT] [AUTOGEN] 12AL_ArmyofLight_Defense_WeaponRack02.m2
 12.0.0.64741
@@ -2361,8 +1201,8 @@ decor(18898),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Bookshelf01_filled.M2
 decor(18959),	-- [DNT] [AUTOGEN] 12PH_Leg_7NB_Nightborn_Fountain02.M2
 decor(19011),	-- [DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2
 decor(19159),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay02.M2
-decor(19197),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa01_Silver.M2
-decor(19198),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru01_Silver.M2
+decor(19197),	-- Dreamrift Vanquisher's Argent Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_MalformedLoa01_Silver.M2
+decor(19198),	-- March on Quel'Danas Vanquisher's Argent Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_DarkNaaru01_Silver.M2
 decor(19200),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_SecretDoor03.M2
 decor(19215),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay03.M2
 decor(19216),	-- [DNT] [AUTOGEN] 12PH_Durotar_Decoration_Hay04.M2
@@ -2372,4 +1212,6 @@ decor(19219),	-- [DNT] [AUTOGEN] 12PH_Elwynn_Lighting_Sconce02.M2
 decor(19229),	-- Endless Codex of Blooming Light
 decor(19231),	-- Endless Codex of Nature's Grace
 decor(19234),	-- Endless Codex of the Voidtouched
-decor(19252),	-- [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2
+decor(19252),	-- Voidspire Vanquisher's Argent Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2
+12.0.0.64975
+decor(20172),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2

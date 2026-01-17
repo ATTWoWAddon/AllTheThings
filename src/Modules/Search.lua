@@ -60,6 +60,7 @@ local KeyMaps = setmetatable({
 	battlepet = "speciesID",
 	c = "currencyID",
 	camp = "campsiteID",
+	creature = "npcID",
 	currency = "currencyID",
 	crit = "criteriaID",
 	enchant = "spellID",
@@ -253,6 +254,8 @@ do
 	SourceSearcher.mountmodID = SourceSearcher.itemID
 	SourceSearcher.heirloomID = SourceSearcher.itemID
 	SourceSearcher.modItemID = SourceSearcher.itemID
+	-- Key-based searches only
+	SourceSearcher.factionID = SourceSearcher.achievementID
 	app.SourceSearcher = SourceSearcher
 end
 

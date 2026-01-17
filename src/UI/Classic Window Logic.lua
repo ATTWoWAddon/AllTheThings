@@ -1,5 +1,5 @@
 -- App locals
-local appName, app = ...;
+local _, app = ...;
 local contains = app.contains;
 local AssignChildren, CloneClassInstance, CloneReference, wipearray
 	= app.AssignChildren, app.CloneClassInstance, app.CloneReference, app.wipearray;
@@ -21,6 +21,7 @@ local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePre
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local IsModifierKeyDown = IsModifierKeyDown;
+local GetIndicatorIcon = app.GetIndicatorIcon;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
@@ -151,27 +152,6 @@ local function CalculateRowIndent(data)
 	else
 		return 0;
 	end
-end
-local function CalculateRowIndicatorTexture(group)
-	-- If group is quest and is currently accepted or saved...
-	local questID = group.questID;
-	if questID and C_QuestLog_IsOnQuest(questID) then
-		return app.asset(IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
-	elseif group.saved then
-		if group.parent and group.parent.locks or group.repeatable then
-			return app.asset("known");
-		else
-			return app.asset("known_green");
-		end
-	end
-
-	if group.u then
-		local phase = L.PHASES[group.u];
-		if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-			return L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
-		end
-	end
-	return group.e and L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
 end
 local function ExpandGroupsRecursively(group, expanded, manual)
 	if group.g and (not group.itemID or manual) then
@@ -357,7 +337,7 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Determine the Indicator Texture
-	local indicatorTexture = CalculateRowIndicatorTexture(data);
+	local indicatorTexture = GetIndicatorIcon(data);
 
 	-- Check to see what the text is currently
 	local text = data.text;
@@ -1206,7 +1186,7 @@ local function SetWindowVisible(self, show)
 		self:Hide();
 	end
 end
-local function ToggleWindow(self, cmd)
+local function ToggleWindow(self)
 	self:SetVisible(not self:IsVisible());
 end
 local function ProcessGroup(data, object)
@@ -1221,6 +1201,9 @@ local function ProcessGroup(data, object)
 			end
 		end
 	end
+end
+local function AssignChildrenForWindow(self)
+	AssignChildren(self.data);
 end
 local function UpdateWindow(self, force, trigger)
 	-- If this window doesn't have data, do nothing.
@@ -1555,8 +1538,8 @@ function app:CreateWindow(suffix, settings)
 		end
 		window:SetSize(300, 300);
 		window:Hide();
-
-		if AllTheThingsSettings then
+		
+		if app.IsReady then
 			if suffix == "Prime" then
 				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
 			else
@@ -1641,12 +1624,7 @@ function app:CreateWindow(suffix, settings)
 
 		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		function window:DefaultRebuild()
-			AssignChildren(self.data);
-		end
-		function window:AssignChildren()
-			AssignChildren(self.data);
-		end
+		window.AssignChildren = AssignChildrenForWindow;
 		function window:ExpandData(expanded)
 			ExpandGroupsRecursively(self.data, expanded, true);
 		end
@@ -1658,7 +1636,7 @@ function app:CreateWindow(suffix, settings)
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = window;
 						self:ForceUpdate(true);
@@ -1671,7 +1649,7 @@ function app:CreateWindow(suffix, settings)
 					local lastUpdate = GetTimePreciseSec();
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:Update(true);
@@ -1683,7 +1661,7 @@ function app:CreateWindow(suffix, settings)
 				function window:ForceRebuild()
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						self.data.window = self;
 						self:ForceUpdate(true);
 					end
@@ -1691,7 +1669,7 @@ function app:CreateWindow(suffix, settings)
 				function window:Rebuild()
 					local response = onRebuild(self);
 					if self.data then
-						if response then self:DefaultRebuild(); end
+						if response then self:AssignChildren(); end
 						self.data.window = self;
 						self:Update(true);
 					end
@@ -1704,7 +1682,7 @@ function app:CreateWindow(suffix, settings)
 						print("ForceRebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
 						self.data.window = self;
-						self:DefaultRebuild();
+						self:AssignChildren();
 						print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:ForceUpdate(true);
@@ -1714,7 +1692,7 @@ function app:CreateWindow(suffix, settings)
 					if self.data then
 						print("Rebuild: " .. suffix);
 						local lastUpdate = GetTimePreciseSec();
-						self:DefaultRebuild();
+						self:AssignChildren();
 						print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 						self.data.window = self;
 						self:Update(true);
@@ -1723,14 +1701,14 @@ function app:CreateWindow(suffix, settings)
 			else
 				function window:ForceRebuild()
 					if self.data then
-						self:DefaultRebuild();
+						self:AssignChildren();
 						self.data.window = self;
 						self:ForceUpdate(true);
 					end
 				end
 				function window:Rebuild()
 					if self.data then
-						self:DefaultRebuild();
+						self:AssignChildren();
 						self.data.window = self;
 						self:Update(true);
 					end
@@ -1821,16 +1799,15 @@ function app:CreateWindow(suffix, settings)
 				RedrawVisibleRowData(self);
 			end
 		end
-
+		
+		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
+		-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
 		local delays = {};
 		window.DelayedCall = function(self, method, delay, force)
 			delays[method] = delay or 60;
 			window:StartATTCoroutine("DelayedCall::" .. method, function()
-				while delays[method] > 0 do
-					coroutine.yield();
+				while delays[method] > 0 or InCombatLockdown() do
 					delays[method] = delays[method] - 1;
-				end
-				while InCombatLockdown() do
 					coroutine.yield();
 				end
 				window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
@@ -1979,20 +1956,25 @@ function app:CreateWindow(suffix, settings)
 			if settings.OnCommand then
 				onCommand = function(cmd)
 					if not settings.OnCommand(window, cmd) then
-						window:Toggle(cmd);
+						window:Toggle();
 					end
 				end
 			else
 				onCommand = function(cmd)
-					window:Toggle(cmd);
+					window:Toggle();
 				end
 			end
 
-			settings.Commands.RootCommandIndex = settings.RootCommandIndex
-			app.AddSlashCommands(settings.Commands, onCommand)
 			window.Commands = settings.Commands;
 			window.HideFromSettings = settings.HideFromSettings;
 			window.SettingsName = settings.SettingsName or window.Suffix;
+			settings.Commands.RootCommandIndex = settings.RootCommandIndex
+			app.AddSlashCommands(settings.Commands, onCommand)
+			local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
+			app.ChatCommands.Help[primaryCommand:lower()] = {
+				settings.UsageText or ("Usage: " .. primaryCommand),
+				settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
+			};
 		end
 		if settings.TooltipAnchor then
 			window.TooltipAnchor = settings.TooltipAnchor;
@@ -2576,7 +2558,7 @@ local function OnInitForPopout(self, questID, group)
 		end
 	end
 
-	AssignChildren(self.data);
+	self:AssignChildren();
 	UpdateGroups(self.data, self.data.g);
 end
 function app:CreateMiniListForGroup(group)

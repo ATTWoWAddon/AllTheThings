@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(847, {	-- Guile of the Raptor (3/3)
 					["sourceQuest"] = 702,	-- Guile of the Raptor (2/3)
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(655, {	-- Hammerfall
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -920,7 +920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2789 },	-- Skuerto
 						{ "i", 4533 },	-- Sealed Letter to Archmage Malin
 					},
-					["coord"] = { 46.6, 47, ARATHI_HIGHLANDS },
+					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(675, {	-- Raising Spirits (3/3)
 					["sourceQuest"] = 674,	-- Raising Spirits (2/3)
 					["qg"] = 2792,	-- Gor'mul
-					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
+					["coord"] = { 72.6, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
@@ -1236,7 +1236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Sigil Fragment
 							["provider"] = { "i", 4450 },	-- Sigil Fragment
-							["coord"] = { 15.2, 65, ARATHI_HIGHLANDS },
+							["coord"] = { 15.2, 65.0, ARATHI_HIGHLANDS },
 							["crs"] = {
 								2584,	-- Stromgarde Defender
 								2583,	-- Stromgarde Troll Hunter
@@ -1323,7 +1323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4485 },	-- Thundering Key
 								{ "o", 2690 },	-- Stone of Outer Binding
 							},
-							["coord"] = { 46.4, 52, ARATHI_HIGHLANDS },
+							["coord"] = { 46.4, 52.0, ARATHI_HIGHLANDS },
 						}),
 					},
 				}),
@@ -2170,7 +2170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
 					["provider"] = { "i", 216941 },	-- Ariden's Sigil
-					["coord"] = { 60, 40, ARATHI_HIGHLANDS },
+					["coord"] = { 60.0, 40.0, ARATHI_HIGHLANDS },
 					["groups"] = {
 						i(216947),	-- Whirring Dalaran Relic
 					},

@@ -61,9 +61,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						i(256677, {	-- Large Legion Candle (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
-						i(256678, {	-- Small Legion Candle (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
-						}),
 					}),
 					ach(42564, {	-- Tour Suramar
 						-- Meta Achievement

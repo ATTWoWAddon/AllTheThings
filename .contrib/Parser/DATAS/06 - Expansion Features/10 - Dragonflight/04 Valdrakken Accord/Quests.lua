@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}, {	-- RENOWN 2 --
 					q(70839, {	-- The Search for Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
-						["coord"] = { 26, 40, VALDRAKKEN },
+						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["groups"] = {
 							sp(388303),	-- Titan Relics
 						},
@@ -29,14 +29,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					------ BoP Titan Relic ------
 					q(70840, {	-- A Titan Relic
 						["provider"] = { "n", 195768 },	-- Sorotis
-						["coord"] = { 26, 40, VALDRAKKEN },
+						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 						["cost"] = { { "i", 199906, 1 }, },	-- 1x Titan Relic
 						["repeatable"] = true,
 					}),
 					q(70841, {	-- More Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
-						["coord"] = { 26, 40, VALDRAKKEN },
+						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 						["cost"] = { { "i", 199906, 5 }, },	-- 5x Titan Relic
 						["repeatable"] = true,
@@ -44,14 +44,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					------ BoA Titan Relic ------
 					q(71042, {	-- A Titan Relic
 						["provider"] = { "n", 195768 },	-- Sorotis
-						["coord"] = { 26, 40, VALDRAKKEN },
+						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 						["cost"] = { { "i", 200450, 1 }, },	-- 1x Titan Relic
 						["repeatable"] = true,
 					}),
 					q(71043, {	-- More Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
-						["coord"] = { 26, 40, VALDRAKKEN },
+						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 						["cost"] = { { "i", 200450, 5 }, },	-- 5x Titan Relic
 						["repeatable"] = true,
@@ -433,7 +433,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							q(77339, {	-- Data Recovery
 								["sourceQuests"] = { 75638 },	-- Dislocated Disc Located
 								["provider"] = { "n", 208703 },	-- Valunei
-								["coord"] = { 53.8, 61, VALDRAKKEN },
+								["coord"] = { 53.8, 61.0, VALDRAKKEN },
 							}),
 							q(77377, {	-- To Tyrhold! For Tyr!
 								["sourceQuests"] = { 77339 },	-- Data Recovery
@@ -443,7 +443,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							q(77340, {	-- Infiltrating the Nighthold
 								["sourceQuests"] = { 77377 },	-- To Tyrhold! For Tyr!
 								["provider"] = { "n", 208832 },	-- Eternus
-								["coord"] = { 60.4, 59, THALDRASZUS },
+								["coord"] = { 60.4, 59.0, THALDRASZUS },
 								["maps"] = {
 									2221,	-- The Nighthold (Scenario)
 									2220,	-- The Nighthold (Scenario)
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["groups"] = {
 							i(197921),		-- Primal Infusion
 							spell(388978),	-- Ally of Dragons
-							title(474),		-- <Name>, Ally of Dragons (TITLE!)
+							title(474),		-- <Name>, Ally of Dragons
 						},
 					}),
 					q(72704, {	-- Renown Supplies

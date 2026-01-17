@@ -162,6 +162,12 @@ root(ROOTS.Zones, {
 							["timeline"] = { ADDED_5_2_0 },
 						}),
 					}),
+					prof(HERBALISM, {
+						n(65877, {	-- Han Flowerbloom <Herbalism Trainer>
+							["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+							["groups"] = MOP_HERBALISM,
+						}),
+					}),
 					prof(TAILORING, {
 						n(57405, {	-- Silkmaster Tsai <"The Tailor of Pandaria">
 							["coord"] = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
@@ -1647,7 +1653,7 @@ root(ROOTS.Zones, {
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
 						["coords"] = {
-							{ 7.3, 65, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 7.3, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
@@ -1920,7 +1926,7 @@ root(ROOTS.Zones, {
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
 						["coords"] = {
-							{ 7.1, 65, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 7.1, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
@@ -2537,6 +2543,9 @@ root(ROOTS.Zones, {
 					n(64395, {	-- Nam Ironpaw <Stockmaster>
 						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
+							i(74853, {	-- 100 Year Soy Sauce
+								["cost"] = { { "c", 402, 1 }, },	-- 1x Ironpaw Token
+							}),
 							i(86468, {	-- Apron
 								["sourceQuest"] = 31820,	-- A Present for Teacher (Nomi)
 								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
@@ -2841,7 +2850,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(74842),	-- Mogu Pumpkin
+					i(74842, {	-- Mogu Pumpkin
+						["description"] = "Drops from Virmen.",
+					}),
 				}),
 			},
 		}),

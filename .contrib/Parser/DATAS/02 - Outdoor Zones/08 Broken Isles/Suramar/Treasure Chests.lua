@@ -39,13 +39,16 @@ root(ROOTS.Zones, {
 						{ 44.0, 31.9, SURAMAR },
 					},
 				}),
-				o(252832, {	-- Small Treasure Chest
-					["questID"] = 43857,
-					["coord"] = { 63.1, 49.1, SURAMAR },
-				}),
 				o(252884, {	-- Glimmering Treasure Chest
 					["questID"] = 43876,
 					["coord"] = { 60.4, 68.5, SURAMAR },
+				}),
+				o(252451, {	-- Glimmering Treasure Chest
+					["coord"] = { 22.8, 36.2, SURAMAR },
+				}),
+				o(252832, {	-- Small Treasure Chest
+					["questID"] = 43857,
+					["coord"] = { 63.1, 49.1, SURAMAR },
 				}),
 				o(248407, {	-- Kel'danath's Manaflask
 					-- ["sourceQuest"] = TODO,

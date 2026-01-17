@@ -19,8 +19,95 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		o(575032, {	-- Ironwood Lumber
-			i(245586),	-- Ironwood Lumber
+		o_repeated({	-- Ironwood Lumber
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				ASHENVALE,
+				AZSHARA,
+				BADLANDS,
+				BLASTED_LANDS,
+				BURNING_STEPPES,
+				DARKSHORE,
+				DEADWIND_PASS,
+				DESOLACE,
+				DUROTAR,
+				VALLEY_OF_TRIALS,
+				DUSKWOOD,
+				DUSTWALLOW_MARSH,
+				EASTERN_PLAGUELANDS,
+				ELWYNN_FOREST,
+				NORTHSHIRE_VALLEY,
+				FELWOOD,
+				FERALAS,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				MOONGLADE,
+				MULGORE,
+				CAMP_NARACHE,
+				THUNDER_BLUFF,
+				NEW_TINKERTOWN,
+				COLDRIDGE_VALLEY,
+				DUN_MOROGH,
+				NORTHERN_BARRENS,
+				NORTHERN_STRANGLETHORN,
+				THE_CAPE_OF_STRANGLETHORN,
+				REDRIDGE_MOUNTAINS,
+				SEARING_GORGE,
+				SILVERPINE_FOREST,
+				SOUTHERN_BARRENS,
+				STONETALON_MOUNTAINS,
+				SWAMP_OF_SORROWS,
+				TANARIS,
+				THE_HINTERLANDS,
+				TIRISFAL_GLADES,
+				UNGORO_CRATER,
+				WESTERN_PLAGUELANDS,
+				WESTFALL,
+				WETLANDS,
+				WINTERSPRING,
+			},
+			["groups"] = {
+				-- Objects
+				o(574596),	-- [Arathi Highlands]
+				o(578925),	-- [Ashenvale]
+				o(576717),	-- [Azshara]
+				o(574938),	-- [Badlands]
+				o(576622),	-- [Blasted Lands]
+				o(575031),	-- [Burning Steppes]
+				o(577792),	-- [Darkshore]
+				o(576400),	-- [Deadwind Pass]
+				o(582143),	-- [Desolace]
+				o(576692),	-- [Durotar/Valley of Trials]
+				o(576199),	-- [Duskwood]
+				o(582149),	-- [Dustwallow Marsh]
+				o(572254),	-- [Eastern Plaguelands]
+				o(575032),	-- [Elwynn Forest/Northshire]
+				o(577999),	-- [Felwood]
+				o(584475),	-- [Feralas]
+				o(573695),	-- [Hillsbrad Foothills]
+				o(574913),	-- [Loch Modan]
+				o(577787),	-- [Moonglade]
+				o(584445),	-- [Mulgore/Camp Narache/Thunder Bluff]
+				o(574731),	-- [New Tinkertown/Coldridge Valley/Dun Morogh]
+				o(581830),	-- [Northern Barrens]
+				o(576448),	-- [Northern Stranglethorn/The Cape of Stranglethorn]
+				o(576113),	-- [Redridge Mountains]
+				o(574966),	-- [Searing Gorge]
+				o(573459),	-- [Silverpine Forest]
+				o(581876),	-- [Southern Barrens]
+				o(578023),	-- [Stonetalon Mountains]
+				o(576402),	-- [Swamp of Sorrows]
+				o(584615),	-- [Tanaris]
+				o(574416),	-- [The Hinterlands]
+				o(573368),	-- [Tirisfal Glades]
+				o(584694),	-- [Un'Goro Crater]
+				o(573057),	-- [Western Plaguelands]
+				o(576282),	-- [Westfall]
+				o(574599),	-- [Wetlands]
+				o(577703),	-- [Winterspring]
+				-- Drops
+				i(245586),	-- Ironwood Lumber
+			},
 		}),
 	})),
 	prof(ALCHEMY, {
@@ -7596,7 +7683,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 				}),
 			}),
-			-- Base leathers:
+			spell(8613, {	-- Skinning
+				-- Base leathers:
 				i(4234, {	-- Heavy Leather
 					[MAPS_FIELD] = {
 						DUSTWALLOW_MARSH,
@@ -7908,6 +7996,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_SIX, i(234007)),	-- Spiked Silithid Chitin
 				-- #endif
+			}),
 		},
 	}),
 	prof(TAILORING, {

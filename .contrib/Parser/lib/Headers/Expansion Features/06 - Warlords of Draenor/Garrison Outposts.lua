@@ -12,7 +12,7 @@ ARTILLERY_TOWER = createHeader({
 		-- TODO: pt = "",
 		ru = "Артиллерийная башня",
 		cn = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
-		tw = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
+		-- tw = WOWAPI_GetSpellName(182108) .. [[.." 塔"]],
 	},
 });
 
@@ -53,7 +53,7 @@ SPARRING_ARENA = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "格斗竞技场",
 		-- TODO: tw = "",
 	},
 });
@@ -70,7 +70,7 @@ LUMBER_YARD = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "伐木场",
 		-- TODO: tw = "",
 	},
 });
@@ -87,7 +87,7 @@ ARCANE_SANCTUM = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "奥秘圣殿",
 		-- TODO: tw = "",
 	},
 });
@@ -97,14 +97,14 @@ ARSENAL = createHeader({
 	text = {
 		en = "Arsenal",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Arsenal",
+		mx = "Arsenal",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "军械库",
 		-- TODO: tw = "",
 	},
 });
@@ -121,7 +121,7 @@ TANKWORKS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "坦克工厂",
 		-- TODO: tw = "",
 	},
 });
@@ -145,7 +145,7 @@ SMUGGLING_RUN = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "走私货栈",
 		-- TODO: tw = "",
 	},
 });
@@ -162,7 +162,7 @@ BREWERY = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "酿酒厂",
 		-- TODO: tw = "",
 	},
 });

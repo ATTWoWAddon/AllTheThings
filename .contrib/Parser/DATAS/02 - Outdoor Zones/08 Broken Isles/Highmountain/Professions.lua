@@ -41,15 +41,6 @@ root(ROOTS.Zones, {
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
 				}),
-				prof(SKINNING, {
-					i(139893, {	-- Skinning Technique: Unbroken Tooth
-						["requireSkill"] = SKINNING,
-						["crs"] = { 97449 },	-- Bristlemaul
-						["groups"] = {
-							recipe(194170),	-- Unbroken Tooth
-						},
-					}),
-				}),
 				prof(TAILORING, {
 					i(137681, {	-- Pattern: Bloodtotem Saddle Blanket
 						["description"] = "Can drop from any Feltotem.",

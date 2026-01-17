@@ -1236,7 +1236,6 @@ if EJ_GetInstanceInfo and app.GameBuildVersion >= 50000 then
 		if lore then _t.lore = lore; end
 		if icon then _t.icon = icon; end
 		if link then _t.link = link; end
-		app.PrintDebug("cached instanceID",id,name,icon,link)
 		if field then return _t[field]; end
 	end
 	local oldIconField = instanceFields.icon;

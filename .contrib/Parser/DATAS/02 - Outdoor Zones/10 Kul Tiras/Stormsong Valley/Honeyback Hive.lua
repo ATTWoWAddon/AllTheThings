@@ -287,9 +287,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						n(155176, {	-- Honeyback Hivemother
 							i(169862, {	-- Alluring Bloom
 								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
-								["cost"] = {
-									{ "i", 168822, 5 },	-- Thin Jelly x5
-								},
+								["cost"] = { { "i", 168822, 35 } },	-- Thin Jelly x35
+							}),
+							i(172383, {	-- Collected Tidebloom Honey (QS!)
+								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
+							}),
+							i(173533, {	-- Collected Tidebloom Honey (QS!)
+								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
 							}),
 						}),
 					}),

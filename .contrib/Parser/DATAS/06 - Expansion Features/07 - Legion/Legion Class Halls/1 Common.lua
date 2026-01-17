@@ -81,17 +81,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				-- #ENDIF
 			}),
-			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
+			achpart(10994, 11137),	-- A Glorious Campaign
+			achpart(11135, 11137),	-- A Heroic Campaign
 			ach(11137),	-- A Legendary Campaign
 			achpart(11136, 11137),	-- An Epic Campaign
-			achpart(11135, 11137),	-- A Heroic Campaign
-			achpart(10994, 11137),	-- A Glorious Campaign
 			ach(11171),	-- Arsenal of Power
+			ach(10852, {	-- Artifact or Artifiction
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
 			ach(11222),	-- Champions of Power
 			ach(11221),	-- Champions Rise
 			ach(11220),	-- Roster of Champions
 			ach(11846, {	-- Champions of Legionfall (Broken Shore)
-				crit(36604, {		-- Complete 'Champions of Legionfall'
+				crit(36604, {	-- Complete 'Champions of Legionfall'
 					["_quests"] = { 47137 },
 				}),
 			}),
@@ -105,13 +107,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					ach(11153, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3
 						["description"] = "Progress indicates number of Legion World Quests completed",
 					}),
-					ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
+					pvp(ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
 						["description"] = "Progress indicates number of players defeated in PvP",
-						["pvp"] = true,
-					}),
+					})),
 				},
 			}),
-			ach(10747),	-- Fighting with Style: Upgraded
+			ach(10747, {	-- Fighting with Style: Upgraded
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
 			ach(10748, {	-- Fighting with Style: Valorous
 				["sym"] = {{"meta_achievement",
 					10459,	-- Improving on History
@@ -156,20 +159,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			}),
 			ach(10460),	-- Hidden Potential
 			ach(10459),	-- Improving on History
-			ach(11213),	-- Lead a Legion (100)
-			ach(11212),	-- Raise an Army (20)
 			ach(10706),	-- Training the Troops (5)
+			ach(11212),	-- Raise an Army (20)
+			ach(11213),	-- Lead a Legion (100)
 			ach(11223),	-- Legendary Research
-			ach(11217),	-- Many Many Missions, Handle It! (500)
-			ach(11216),	-- So Many Missions (100)
-			ach(11215),	-- Quite a Few Missions (50)
 			ach(11214),	-- Many Missions (10)
+			ach(11215),	-- Quite a Few Missions (50)
+			ach(11216),	-- So Many Missions (100)
+			ach(11217),	-- Many Many Missions, Handle It! (500)
 			ach(11219),	-- Need Backup
-			ach(10853),	-- Part of History
-			un(REMOVED_FROM_GAME, ach(11772)),	-- Power Ascended
-			un(REMOVED_FROM_GAME, ach(11144)),	-- Power Realized
-			ach(11609),	-- Power Unbound (automated)
-			ach(11610),	-- Power Unleashed
+			ach(11143, {	-- Honoring the Past
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+				["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
+			}),
+			ach(10853, {	-- Part of History
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
+			ach(11772, {	-- Power Ascended
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(11144, {	-- Power Realized
+				["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+			}),
+			ach(11609, {	-- Power Unbound (automated)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(11610, {	-- Power Unleashed
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
 		}),
 		n_TrainingFollowers({
 			-- Dinner Guests (Moroes Mission reward)
@@ -312,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},
@@ -368,7 +385,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},
@@ -424,7 +441,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 									{"exclude", "itemID",
 										152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
-										154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+										154172, 154173, 154174, 154175, 154176, 154177,	-- All Argus Trinkets
 										155831,	-- Pantheon's Blessing
 									},
 								},
@@ -447,7 +464,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1503, {	-- Council of War
 						q(45162, {	-- We Brought the Hammer
 							["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+							-- #if BEFORE 11.2.7
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							-- #endif
 						}),
 					}),
 					mission(1387, {	-- Friends, Not Food
@@ -459,7 +478,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1513, {	-- I've Got A Strange Feeling About This
 						q(45312, {	-- You Beat the Ball of Meat
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							-- #if BEFORE 11.2.7
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							-- #endif
 							["groups"] = {
 								follower(986),	-- Meatball
 							},
@@ -468,7 +489,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1504, {	-- It's Clean Up Time
 						q(45163, {	-- Clearing Up
 							["provider"] = { "i", 142554 },	-- Broken Handle
+							-- #if BEFORE 11.2.7
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							-- #endif
 						}),
 					}),
 					mission(1386, {	-- It's so FLUFFY!
@@ -477,7 +500,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1512, {	-- Master of Shadows
 						q(45304, {	-- Attacking the Darkness
 							["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+							-- #if BEFORE 11.2.7
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							-- #endif
 						}),
 					}),
 					mission(1506, {	-- Once More Into the Fray
@@ -1227,7 +1252,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
 					i(140362),	-- Dust from the Shadowlands
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (CI!) (removed until Brawler's Guild comes back someday)
+					-- #if BEFORE 11.2.7
+					un(REMOVED_FROM_GAME, i(142522, {["isYearly"] = true})),	-- Rude Letter (CI!) (removed until Brawler's Guild comes back someday)
+					-- #else
+					i(142522, {	-- Rude Letter (CI!)
+						["isYearly"] = true,
+					}),
+					-- #endif
 					i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
@@ -1425,8 +1456,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		q(43510),	-- Seal of Fate: Class Hall - weekly quest, various sources
 		q(48308),	-- Tracking Quest - triggered after obtaining "Azeroth Invasion Plans" (itemID 152316)
 		q(48309),	-- Tracking Quest - triggered after obtaining "Discharged Shock Lance" (itemID 152320)
-		q(48310),	-- Tracking Quest - triggered after obtaining "Sargerei Manifesto"  (itemID 152324)
-		q(48311),	-- Tracking Quest - triggered after obtaining "Sanguine Argunite"  (itemID 152328)
+		q(48310),	-- Tracking Quest - triggered after obtaining "Sargerei Manifesto" (itemID 152324)
+		q(48311),	-- Tracking Quest - triggered after obtaining "Sanguine Argunite" (itemID 152328)
 		q(44703),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 1 (44057 - A "Noble" Event)
 		q(44704),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 2 (44057 - A "Noble" Event)
 		q(44705),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 3 (44057 - A "Noble" Event)

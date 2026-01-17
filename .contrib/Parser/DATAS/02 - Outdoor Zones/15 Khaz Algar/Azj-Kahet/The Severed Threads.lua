@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 						}),
 						q(80671, {	-- Blade of the General
 							["sourceQuests"] = {
@@ -667,7 +667,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								220867,	-- Y'tekhi
 							},
 							["coords"] = {
-								{ 55.2, 41, AZJ_KAHET },
+								{ 55.2, 41.0, AZJ_KAHET },
 								{ 55.9, 42.2, AZJ_KAHET },
 							},
 							["groups"] = {
@@ -695,7 +695,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 							["groups"] = {
 								i(225573, {	-- The Vizier's Capital (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
@@ -721,7 +721,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								223750,	-- Lady Vinazian
 								220867,	-- Y'tekhi
 							},
-							["coord"] = { 55.2, 41, AZJ_KAHET },
+							["coord"] = { 55.2, 41.0, AZJ_KAHET },
 							["groups"] = {
 								i(225571, {	-- The Weaver's Gratuity (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]

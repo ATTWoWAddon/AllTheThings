@@ -200,13 +200,13 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 			ach(4854, {	-- I Had It in My Hand
-				title(148),	-- Assistant Professor <Name> (TITLE!)
+				title(148),	-- Assistant Professor <Name>
 			}),
 			ach(4855, {	-- What was Briefly Yours is Now Mine
-				title(149),	-- Associate Professor <Name> (TITLE!)
+				title(149),	-- Associate Professor <Name>
 			}),
 			ach(4856, {	-- It Belongs in a Museum!
-				title(150),	-- Professor <Name> (TITLE!)
+				title(150),	-- Professor <Name>
 			}),
 			ach(5191, {	-- Tragedy in Three Acts
 				crit(15053, {	-- Delicate Music Box

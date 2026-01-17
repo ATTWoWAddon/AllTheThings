@@ -255,6 +255,8 @@ SKILL_ID_CONVERSION_TABLE = {
 	-- Supply Shipments [DF]
 	[2886] = 2886,   -- Supply Shipments
 
+	-- Dye Crafting [TWW]
+	[2984] = 2984,   -- Dye Crafting
 }
 
 -- Export skill data into DB for addon use
@@ -306,7 +308,7 @@ ExportDB.SkillDB = {
 		[125586] = 125586,	-- Way of the Pot
 		[125587] = 125587,	-- Way of the Steamer
 		[125584] = 125584,	-- Way of the Wok
-		
+
 		-- Riding
 		[762] = 33388,	-- Riding
 		-- #if BEFORE TBC

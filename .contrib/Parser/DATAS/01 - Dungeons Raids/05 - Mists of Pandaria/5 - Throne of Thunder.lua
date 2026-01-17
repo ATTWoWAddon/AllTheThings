@@ -83,14 +83,6 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.rwp = 50400;
 	end
 end]];
-local VALE_SOO_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
-		t.description = "This will become unavailable when the Siege of Orgrimmar phase begins."
-	end
-end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, inst(362, {	-- Throne of Thunder
@@ -196,32 +188,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["icon"] = 645204,
 				}),
 			}),
-			n(QUESTS, {
-				{
-					["aqd"] = q(32719, {	-- Mogu Runes of Fate (A)
-						["qg"] = 64029,	-- Elder Lin
-						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					["hqd"] = q(32718, {	-- Mogu Runes of Fate (H)
-						["qg"] = 63996,	-- Elder Liao
-						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
-					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
-					-- #if MOP
-					["OnUpdate"] = VALE_SOO_ONUPDATE,
-					-- #endif
-					["isWeekly"] = true,
-					["groups"] = {
-						currency(752, {	-- Mogu Rune of Fate
-							-- #if MOP
-							["OnUpdate"] = VALE_SOO_ONUPDATE,
-							-- #endif
-						}),
-					},
-				},
-			}),
 			n(VENDORS, {
+				-- #if NOT ANYCLASSIC
 				n(RAID_FINDER_VENDOR, {
 					["provider"] = { "n", 70346 },	-- Ao Pye <Shado-Pan Assault Quartermaster>
 					["coord"] = { 38.0, 64.6, TOWNLONG_STEPPES },
@@ -396,6 +364,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 					},
 				}),
+				-- #endif
 				n(RAID_NORMAL_VENDOR, {
 					["provider"] = { "n", 70346 },	-- Ao Pye <Shado-Pan Assault Quartermaster>
 					["coord"] = { 38.0, 64.6, TOWNLONG_STEPPES },
@@ -811,6 +780,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							header(HEADERS.Item, 212750, {	-- Grimoire of the Ancient Observer
 								["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumus Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
 								["cost"] = {{"i",211949,1}},	-- Durumu's Glass Pupil
+								["timeline"] = { ADDED_10_2_5 },
 								["groups"] = {
 									o(420873, {	-- Ritual Book
 										i(212750, {	-- Grimoire of the Ancient Observer (CI!)
@@ -893,8 +863,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(95965),	-- Home-Warding Slippers
 							i(95978),	-- Locksmasher Greaves
 							i(95958),	-- Necklace of the Terra-Cotta Archer
+							i(95964),	-- Necklace of the Terra-Cotta Invoker
 							i(95969),	-- Necklace of the Terra-Cotta Mender
 							i(95980),	-- Necklace of the Terra-Cotta Protector
+							i(95977),	-- Necklace of the Terra-Cotta Vanquisher
 							i(95960),	-- Scalehide Spurs
 							i(95963),	-- Silentflame Sandals
 							i(95959),	-- Spiderweb Tabi

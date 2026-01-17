@@ -135,6 +135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(139624, {	-- Shard of Darkness
 					["description"] = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
+					["sourceQuests"] = { 43685 },	-- Phylactery Used
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
 					["requireSkill"] = FISHING,
@@ -239,7 +240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5090, {	-- A Call to Arms: The Plaguelands! [Ironforge]
 					["qg"] = 10877,	-- Courier Hammerfall
-					["coord"] = { 31.6, 67, IRONFORGE },
+					["coord"] = { 31.6, 67.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -271,7 +272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
 					["qg"] = 10879,	-- Harbinger Balthazad
-					["coord"] = { 64, 44, UNDERCITY },
+					["coord"] = { 64.0, 44.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -431,7 +432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  15042 },	-- Empty Termite Jar
 								{ "o", 177464 },	-- Large Termite Mound
 							},
-							["coord"] = { 42, 38, EASTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 38.0, EASTERN_PLAGUELANDS },
 						}),
 					},
 				},
@@ -598,19 +599,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Tower One marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 40, 72, WESTERN_PLAGUELANDS },
+							["coord"] = { 40.0, 72.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- Tower Two marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 42, 66, WESTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 66.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(3, {	-- Tower Three marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 44, 63, WESTERN_PLAGUELANDS },
+							["coord"] = { 44.0, 63.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(4, {	-- Tower Four marked
 							["provider"] = { "i", 12815 },	-- Beacon Torch
-							["coord"] = { 46, 70, WESTERN_PLAGUELANDS },
+							["coord"] = { 46.0, 70.0, WESTERN_PLAGUELANDS },
 						}),
 					},
 				},
@@ -1105,7 +1106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5231,	-- Target: Dalson's Tears
 					},
 					["provider"] = { "o", 177289 },	-- Scourge Cauldron
-					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["coord"] = { 46.2, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
@@ -1696,7 +1697,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 177289 },	-- Scourge Cauldron
 						{ "i",  13191 },	-- Filled Dalson's Tears Bottle
 					},
-					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["coord"] = { 46.2, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
@@ -1741,7 +1742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 176393 },	-- Scourge Cauldron
 						{ "i",  13192 },	-- Filled Writhing Haunt Bottle
 					},
-					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["coord"] = { 53.0, 65.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
@@ -1778,7 +1779,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coords"] = {
 								{ 83.1, 69.1, TIRISFAL_GLADES },
-								{ 40, 53, WESTERN_PLAGUELANDS },
+								{ 40.0, 53.0, WESTERN_PLAGUELANDS },
 							},
 						}),
 					},
@@ -2266,7 +2267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Scourge Bone Animus destroyed
 							["provider"] = { "o", 204966 },	-- Scourge Bone Animus
-							["coord"] = { 42, 66, WESTERN_PLAGUELANDS },
+							["coord"] = { 42.0, 66.0, WESTERN_PLAGUELANDS },
 						}),
 						objective(2, {	-- 0/5 Stickbone Berserker slain
 							["provider"] = { "n", 44329 },	-- Stickbone Berserker
@@ -2601,7 +2602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6004, {	-- Unfinished Business (1/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2622,7 +2623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6023, {	-- Unfinished Business (2/3)
 					["sourceQuest"] = 6004,	-- Unfinished Business (1/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
@@ -2639,7 +2640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6025, {	-- Unfinished Business (3/3)
 					["sourceQuest"] = 6023,	-- Unfinished Business (2/3)
 					["qg"] = 11610,	-- Kirsta Deepshadow
-					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
+					["coord"] = { 52.0, 28.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
@@ -2668,7 +2669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Uther's blessing
 							["provider"] = { "i", 61920 },	-- Chillwind Tribute
-							["coord"] = { 52, 82.8, WESTERN_PLAGUELANDS },
+							["coord"] = { 52.0, 82.8, WESTERN_PLAGUELANDS },
 						}),
 					},
 				}),
@@ -2843,7 +2844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5233,	-- Target: Writhing Haunt
 					},
 					["provider"] = { "o", 176393 },	-- Scourge Cauldron
-					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["coord"] = { 53.0, 65.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 13320, 1 },	-- Arcane Quickener
@@ -3292,16 +3293,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.6, 36.0, WESTERN_PLAGUELANDS },
 						{ 62.4, 36.2, WESTERN_PLAGUELANDS },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1813,	-- Decaying Horror
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
 						44485,	-- Flesh-Cobbled Brute
 						44484,	-- Flesh-Cobbled Ripper
 						44486,	-- Unholy Corpuscle
+						-- #else
+						1813,	-- Decaying Horror
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(12707, {	-- Plans: Runic Plate Boots
@@ -3310,14 +3311,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Maybe still drops, this tag will help with reporting if somebody does get a drop
-					-- #if AFTER CATA
-					["cr"] = 1783,	-- Skeletal Flayer
-					-- #else
 					["crs"] = {
 						1783,	-- Skeletal Flayer
+						-- #if BEFORE CATA
 						1791,	-- Slavering Ghoul
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },

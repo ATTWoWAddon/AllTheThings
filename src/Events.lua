@@ -1,5 +1,5 @@
 
-local appName, app = ...;
+local _, app = ...;
 
 local rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert
 	= rawget, pairs, rawset, setmetatable, print, type, pcall, tinsert
@@ -10,6 +10,10 @@ local EventHandlers = setmetatable({
 	OnRecalculate = {},
 	OnRefreshCollections = {},
 }, app.MetaTable.AutoTable)
+-- Performance Tracking for Caching
+if app.__perf then
+	app.__perf.AutoCaptureTable(EventHandlers, "Events.EventHandlers");
+end
 app.AddEventHandler = function(eventName, handler, forceStart)
 	if type(handler) ~= "function" then
 		app.print("AddEventHandler was provided a non-function",handler)
@@ -185,6 +189,7 @@ local Run = Runner.Run
 local OnEnd = Runner.OnEnd
 local IsRunning = Runner.IsRunning
 -- Runner.SetPerFrameDefault(5)
+-- Runner.ToggleDebugFrameTime()
 local Callback = app.CallbackHandlers.Callback
 local IgnoredDebugEvents = {
 	RowOnEnter = true,

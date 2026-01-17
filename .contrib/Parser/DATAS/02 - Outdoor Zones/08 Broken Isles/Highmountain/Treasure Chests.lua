@@ -123,12 +123,10 @@ root(ROOTS.Zones, {
 				o(243688, {	-- Treasure Chest
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131927),	-- Shimmering Roc Feather
-					},
+					["groups"] = { i(131927) },	-- Shimmering Roc Feather
 				}),
 				o(265526, {	-- Treasure Chest
-					["coord"] = { 39, 54.5, HIGHMOUNTAIN },
+					["coord"] = { 39.0, 54.5, HIGHMOUNTAIN },
 					["questID"] = 44731,
 				}),
 				o(250541, {	-- Treasure Chest
@@ -138,9 +136,7 @@ root(ROOTS.Zones, {
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131926),	-- Delicate Roc Feather
-					},
+					["groups"] = { i(131926) },	-- Delicate Roc Feather
 				}),
 				o(245548, {	-- Treasure Chest
 					["description"] = "Inside Mucksnout Den. Cave entrance is at |cFFFFFFFF41.6, 46.9|r.",
@@ -154,9 +150,7 @@ root(ROOTS.Zones, {
 				o(244519, {	-- Treasure Chest
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, HIGHMOUNTAIN },
-					["groups"] = {
-						i(131810),	-- Derelict Skyhorn Kite
-					},
+					["groups"] = { i(131810) },	-- Derelict Skyhorn Kite
 				}),
 				o(245524, {	-- Treasure Chest
 					["questID"] = 40471,

@@ -16,7 +16,7 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(61316),	-- Custom Cabinets					(400)
 		ach(61317),	-- Domicile Designer				(450)
 		ach(61318, {	-- Fully Furnished				(500)
-			title(657),	-- %s the Furnished
+			title(657),	-- <Name> the Furnished
 		}),
 		ach(40887, {	-- Fox Friends
 			["timeline"] = { ADDED_12_0_0 },	-- TODO: probably hotfixed in earlier
@@ -27,4 +27,4 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 			["sourceQuests"] = { 91863 },	-- My First House
 		}),
 	},
-}))
+}));

@@ -3346,7 +3346,11 @@ i(0, 2871);			-- Pet Training Dummy
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+-- #if ATTER 11.2.5
+i(248091, 2779);	-- Anima Wyrmling
+-- #else
 i(0, 2779);			-- Anima Wyrmling
+-- #endif
 --- NYI ---
 i(0, 2951);			-- PH Slime
 i(180838, 0);		-- Blue Etherwyrm
@@ -3633,7 +3637,11 @@ i(186545, 0);		-- REUSE
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+-- #if AFTER 11.2.5
+i(248092, 3153);	-- Blinky
+-- #else
 i(188837, 3153);	-- Blinky
+-- #endif
 i(186553, 3107);	-- Gurgl
 --- NYI ---
 i(0, 3188);			-- Trub'ul
@@ -4390,28 +4398,28 @@ n(231577, 4662);	-- Varmint MK II
 n(231567, 4657);	-- Venture Bombshell
 n(231477, 4651);	-- Wily Rat
 --- TRAINER ---
-i(0, 4741);	-- Cannoneer
-i(0, 4739);	-- Fancier Rat
-i(0, 4740);	-- Handbag Hyena
-i(0, 4742);	-- Lookout
-i(0, 4744);	-- Muddy Croach
-i(0, 4737);	-- Precision Powerdrill
-i(0, 4745);	-- Rusty Croach
-i(0, 4746);	-- Sooty Croach
-i(0, 4738);	-- Status Symbol
-i(0, 4743);	-- Swabbie
+i(0, 4741);			-- Cannoneer
+i(0, 4739);			-- Fancier Rat
+i(0, 4740);			-- Handbag Hyena
+i(0, 4742);			-- Lookout
+i(0, 4744);			-- Muddy Croach
+i(0, 4737);			-- Precision Powerdrill
+i(0, 4745);			-- Rusty Croach
+i(0, 4746);			-- Sooty Croach
+i(0, 4738);			-- Status Symbol
+i(0, 4743);			-- Swabbie
 --- NYI ---
-i(231628, 4676);	-- Bawkinator 2000
-i(231627, 4677);	-- Black Cave Crab
-i(0, 4671);	-- Cauldrone
-i(231760, 4673);	-- Crunchy
-i(0, 4674);	-- Dosh
-i(231758, 4672);	-- Finnity
-i(0, 4675);	-- FO-MO Mark II
+i(0, 4676);			-- Bawkinator 2000
+i(0, 4677);			-- Black Cave Crab
+i(0, 4671);			-- Cauldrone
+i(0, 4673);			-- Crunchy
+i(0, 4674);			-- Dosh
+i(0, 4672);			-- Finnity
+i(0, 4675);			-- FO-MO Mark II
 i(235909, 4755);	-- Gleam
 i(232854, 4634);	-- Grinner
-i(0, 4670);	-- Hermes
-i(231613, 4665);	-- Yellow Tropical Frog
+i(0, 4670);			-- Hermes
+i(0, 4665);			-- Yellow Tropical Frog
 
 ------------------
 -- PATCH 11.1.5 --
@@ -4433,9 +4441,9 @@ i(235795, 4749);	-- Void-Scarred Scorpid
 i(235797, 4750);	-- Void-Scarred Tallstrider Chick
 i(238942, 4793);	-- Weechi
 i(223498, 4568);	-- Whoopy
---- UNSORTED ---
-i(0, 4792);	-- Ada the Sweetest
-i(0, 4761);	-- Pascal the Wonder Pup
+--- NYI ---
+i(0, 4792);			-- Ada the Sweetest
+i(0, 4761);			-- Pascal the Wonder Pup
 
 ------------------
 -- PATCH 11.1.7 --
@@ -4477,11 +4485,10 @@ i(244467, 4825);	-- Veridian Thorntail
 i(245212, 4836);	-- Vitriolic Inchshifter
 i(244914, 4833);	-- Xanthous Siphonmite
 i(246694, 4859);	-- Zo'ya
---- UNSORTED ---
-i(0, 4824);	-- Baby Karesh Fox - Orange
-
+--- NYI ---
+i(0, 4824);			-- Baby Karesh Fox - Orange
 i(246723, 4860);	-- Unfazed Diver
-i(0, 4837);	-- Worm, Cosmic - Critter (Red)
+i(0, 4837);			-- Worm, Cosmic - Critter (Red)
 
 ------------------
 -- PATCH 11.2.5 --
@@ -4495,8 +4502,7 @@ i(246342, 4855);	-- Mustyfur Fel Snooter
 i(129108, 1751);	-- Son of Goredome
 i(253699, 4903);	-- Starshard Whelpling
 i(239699, 4801);	-- Tidbit
-
---- UNSORTED ---
+--- NYI ---
 i(252199, 4899);	-- Festive Eve
 i(252194, 4897);	-- Fishmonger May
 i(252195, 4898);	-- Fishstick Keith
@@ -4507,6 +4513,8 @@ i(252193, 4896);	-- Slippery Saul
 -- PATCH 11.2.7 --
 ------------------
 i(254876, 4911);	-- P.O.S.T. Assistant
+i(248073, 4862);	-- Smoldering Valor
+i(245544, 4851);	-- Tiny Snow Buddy
 
 ------------------
 -- PATCH 12.0.0 --
@@ -4533,15 +4541,14 @@ i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
 i(222967, 4475);	-- Webbers
-
 --- UNSORTED ---
 i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
-i(0, 4905);	-- [DNT] Baby Amazard (Red)
+i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(264909, 4982);	-- [DNT] Baby Eversong Lynx (Black)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
 i(265035, 4984);	-- [PH] Purple Siphoid
 i(260705, 4947);	-- Assistant Botanist Leafy
-i(0, 4945);	-- Aud'rei III
+i(0, 4945);			-- Aud'rei III
 i(263492, 4952);	-- Blitzcreek
 i(260942, 4951);	-- Bubbly Snapling
 i(258739, 4914);	-- Chillcrawler
@@ -4549,11 +4556,12 @@ i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
 i(258189, 4910);	-- Do, child of Fi'lo
 i(259224, 4928);	-- Dragonhawk Munchkin
-i(0, 4887);	-- Dundun
+i(0, 4887);			-- Dundun
 i(264654, 4977);	-- Emberwing Hatchling
 i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
 i(244339, 4816);	-- Hawkstrider Hatchling
+i(252650, 4894);	-- Heartglow Listener
 i(262395, 4959);	-- Hexed Bunny
 i(265030, 4983);	-- Kai
 i(262393, 4955);	-- Kreepah'zoyd
@@ -4577,10 +4585,11 @@ i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
+i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(251004, 3364);	-- Striped Snakebiter
-i(245544, 4851);	-- Tiny Snow Buddy
+i(267838, 5003);	-- Sunwing Hatchling
 i(259337, 4929);	-- Vermillion Grovecrawler
 i(264434, 4976);	-- Voldy
 i(221495, 4497);	-- Waddles

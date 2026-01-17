@@ -2468,6 +2468,66 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
+						n(85950, {	-- Trader Caerel <General Goods>
+							["coord"] = { 41.0, 59.6, STORMSHIELD },
+							["groups"] = sharedData({
+								["timeline"] = { ADDED_11_2_7 }
+							},{
+								i(251653, {	-- Draenethyst Lamppost (DECOR!)
+									["sourceQuest"] = 35685,	-- Socrethar's Demise
+									["cost"] = {
+										{ "c", GARRISON_RESOURCES, 1000 },
+										{ "g", 5000000 },	-- 500g
+									},
+								}),
+								i(251548, {	-- Draenic Fence (DECOR!)
+									["sourceQuest"] = 34792,	-- The Traitor's True Name
+									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 500 },
+										{ "g", 3000000 },	-- 300g
+									},
+								}),
+								i(251330, {	-- Draenic Fencepost (DECOR!)
+									["sourceQuest"] = 34792,	-- The Traitor's True Name
+									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 300 },
+										{ "g", 1000000 },	-- 100g
+									},
+								}),
+								i(251640, {	-- Draenic Forge (DECOR!)
+									["sourceQuest"] = 34099,	-- The Battle for Shattrath
+									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 1000 },
+										{ "g", 5000000 },	-- 500g
+									},
+								}),
+								i(251477, {	-- Draenic Wooden Table (DECOR!)
+									["sourceQuest"] = 36169,	-- The Trial of Champions
+									["cost"] = {
+										{ "c", GARRISON_RESOURCES, 1000 },
+										{ "g", 5000000 },	-- 500g
+									},
+								}),
+								i(251549, {	-- Emblem of the Naaru's Blessing (DECOR!)
+									["sourceQuest"] = 37322,	-- The Prophet's Final Message
+									["cost"] = {{ "c", GARRISON_RESOURCES, 2000 }},
+								}),
+								i(245425, {	-- Hanging Draenethyst Light (DECOR!)
+									["sourceQuest"] = 35396,	-- The Dark Heart of Oshu'gun
+									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 500 },
+										{ "g", 3000000 },	-- 300g
+									},
+								}),
+								i(251654, {	-- Large Karabor Fountain (DECOR!)
+									["sourceQuest"] = 33256,	-- The Defense of Karabor
+									["cost"] = {
+										{ "c", APEXIS_CRYSTAL, 2000 },
+										{ "g", 8000000 },	-- 800g
+									},
+								}),
+							}),
+						}),
 						n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
 							["coord"] = { 46.6, 76.7, STORMSHIELD },
 							["groups"] = bubbleDownClassicRep(FACTION_COUNCIL_OF_EXARCHS, {

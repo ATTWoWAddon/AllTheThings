@@ -1,7 +1,3 @@
-9.0.1.34490
-mount(332482),	-- Bonecleaver's Skullboar \\ PH Skullboar \\ PH Skullboar (Grey)
-11.2.5.62554
-mount(1254363),	-- (PH) Legion Remix Mount
 12.0.0.63534
 mount(1238827),	-- Swift Spectral Dragonhawk
 mount(1251665),	-- Amani Blessed Bear
@@ -21,18 +17,14 @@ mount(1261349),	-- Giganto Manis
 12.0.0.64339
 mount(1261391),	-- Relinquished Scarlet Charger
 12.0.0.64741
-mount(1261332),	-- Duskbrute Harrower
 mount(1266703),	-- Lab-grown Stormray
+12.0.1.64889
+mount(1261298),	-- Crimson Dragonhawk
 
 
 
 
 Missing in MountDB.lua
 
-9.0.1.34490
-mount(332482),	-- Bonecleaver's Skullboar \\ PH Skullboar \\ PH Skullboar (Grey)
 12.0.0.63534
 mount(1251665),	-- Amani Blessed Bear
-12.0.0.64741
-mount(1261332),	-- Duskbrute Harrower
-mount(1266703),	-- Lab-grown Stormray

@@ -20,7 +20,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}},
 			["timeline"] = { ADDED_3_0_3 },
 			["groups"] = {
-				title(51),	-- Salty <Name> (TITLE!)
+				title(51),	-- Salty <Name>
 			},
 		})),
 		ach(1556, {	-- 25 Fish

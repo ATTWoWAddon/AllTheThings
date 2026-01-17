@@ -127,7 +127,9 @@ en(242480,{awp=110205,description="Obtained through watching Twitch Streamers wi
 s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
 p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
-s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2})}}),
+s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2}),
+mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3}),
+de(15151,{awp=120000,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369,u=2})}}),
 h(-669,{awp=120000}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
@@ -225,10 +227,10 @@ crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=2})}}),
-p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2})}}),
-h(-524,{awp=90100,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=90207,u=2,g={
-mnt(346136,{u=2})}}),
+crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
+h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
+mnt(346136,{itemID=248090,u=3})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
 mnt(1256677,{itemID=253573,u=3}),
 toy(254666,{u=3}),
@@ -305,14 +307,14 @@ s(106493,172081,{f=2,rwp=90205,u=2}),
 s(106494,172082,{f=2,rwp=90205,u=2}),
 s(106495,172083,{f=2,rwp=90205,u=2})}})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
-p(2779,{npcID=157969,u=2}),
+i(248091,{f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{npcID=181535,u=2}),
-mnt(359843,{u=2}),
+mnt(359843,{itemID=248089,u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
@@ -510,6 +512,24 @@ crit(34640,{achID=8795,id=3,u=3})}})}}),
 h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",u=3,g={
 mnt(369476,{b=1,itemID=191114,u=3}),
 ach(15640,{providers={{"i",191114}},u=3})}}),
+h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
+i(265804,{spellID=1277191,u=3,g={
+de(12247,{itemID=259055,spellID=1264380,u=3}),
+de(12248,{itemID=259056,spellID=1264381,u=3}),
+de(12251,{itemID=259059,spellID=1264384,u=3}),
+de(12256,{itemID=259064,spellID=1264389,u=3}),
+de(12255,{itemID=259063,spellID=1264388,u=3}),
+de(12254,{itemID=259062,spellID=1264387,u=3}),
+de(12253,{itemID=259061,spellID=1264386,u=3}),
+de(12252,{itemID=259060,spellID=1264385,u=3}),
+de(12257,{itemID=259065,spellID=1264390,u=3}),
+de(12262,{itemID=259070,spellID=1264395,u=3}),
+de(12261,{itemID=259069,spellID=1264394,u=3}),
+de(12260,{itemID=259068,spellID=1264393,u=3}),
+de(12259,{itemID=259067,spellID=1264392,u=3}),
+de(12258,{itemID=259066,spellID=1264391,u=3}),
+de(12250,{itemID=259058,spellID=1264383,u=3}),
+de(12249,{itemID=259057,spellID=1264382,u=3})}})}}),
 h(-533,{awp=60203,description="These rewards are available to anyone who purchases Overwatch Origins Collection.",rwp=100002,u=2,g={
 p(1828,{b=1,itemID=134047,npcID=103159,spellID=204148,u=2}),
 ach(11064,{providers={{"n",103159}},u=2})}}),
@@ -1299,8 +1319,8 @@ h(-550,{awp=20403,rwp=30002,u=2,g={
 ach(1637,{providers={{"i",37297}},u=2}),
 p(179,{b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,npcID=27217,spellID=48406,u=2}),
 ach(1636,{providers={{"i",36941}},u=2}),
-s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,u=2}),
-p(180,{b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,spellID=48408,u=2})}}),
+s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(180,{b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,spellID=48408,u=2}))}}),
 h(-551,{awp=20001,u=10,g={
 flt(101,{u=10,g={
 i(50301,{awp=30300,b=1,f=101,u=10,g={
@@ -1378,12 +1398,12 @@ s(18369,38311,{awp=20403,b=1,f=9,u=10})}}),
 flt(102,{u=10,g={
 i(23716,{awp=20203,b=1,f=53,spellID=69777,u=10}),
 toy(49704,{awp=30202,b=1,u=10}),
-toy(93672,{awp=50200,b=1,model="803615",modelScale=5,u=10}),
+toy(93672,{awp=50200,b=1,model=803615,modelScale=5,u=10}),
 toy(79769,{awp=40302,b=1,u=10}),
-toy(38301,{awp=20402,b=1,model="201182",modelScale=3,u=10}),
+toy(38301,{awp=20402,b=1,model=201182,modelScale=3,u=10}),
 toy(54452,{awp=30305,b=1,u=10}),
 toy(33223,{awp=20200,b=1,u=10}),
-toy(45063,{awp=30100,b=1,model="253206",u=10,g={
+toy(45063,{awp=30100,b=1,model=253206,u=10,g={
 s(21636,45061,{b=1,collectible=false,f=2,spellID=62972,u=10}),
 s(21694,45176,{b=1,collectible=false,f=2,spellID=62972,u=10}),
 s(21695,45177,{b=1,collectible=false,f=2,spellID=62972,u=10}),
@@ -1391,19 +1411,19 @@ s(21696,45178,{b=1,collectible=false,f=2,spellID=62972,u=10}),
 s(21697,45179,{b=1,collectible=false,f=2,spellID=62972,u=10})}}),
 toy(69227,{awp=40100,b=1,u=10}),
 toy(33219,{awp=20103,b=1,u=10}),
-toy(35227,{awp=20400,b=1,model="166247",u=10}),
+toy(35227,{awp=20400,b=1,model=166247,u=10}),
 toy(67097,{awp=40001,b=1,u=10}),
 toy(32542,{awp=20100,b=1,u=10}),
 toy(54212,{awp=30303,b=1,u=10}),
 toy(72159,{awp=40300,b=1,u=10}),
-toy(46780,{awp=30200,b=1,model="306851",modelScale=9,u=10}),
+toy(46780,{awp=30200,b=1,model=306851,modelScale=9,u=10}),
 toy(34499,{awp=20300,b=1,u=10}),
 i(23714,{awp=20203,b=1,f=53,spellID=69773,u=10}),
 toy(49703,{awp=30202,b=1,u=10}),
 toy(32566,{awp=20100,b=1,u=10}),
 toy(71628,{awp=40300,u=10}),
 toy(72161,{awp=40300,b=1,u=10}),
-toy(38578,{awp=20501,b=1,model="200314",modelScale=2,u=10}),
+toy(38578,{awp=20501,b=1,model=200314,modelScale=2,u=10}),
 toy(69215,{awp=40100,b=1,u=10})}})}}),
 h(-552,{awp=70003,u=2,g={
 ach(11210,{r=2,u=2}),
@@ -1443,14 +1463,14 @@ ach(17357,{sourceQuests={73391}}),
 ach(17358,{sourceQuests={73392}}),
 ach(17359,{sourceQuests={73393}})}),
 h(-39,{
-i(202183,{
+i(202183,{rwp=100200,u=2,g={
 i(204731,{b=2}),
 i(205189,{b=2,r=2}),
-i(205190,{b=2,r=1})})}),
+i(205190,{b=2,r=1})}})}),
 h(-45,{
-q(73183,{providers={{"i",204731}}}),
-q(75625,{providers={{"i",205189}},r=2}),
-q(75626,{providers={{"i",205190}},r=1}),
+q(73183,{providers={{"i",204731}},rwp=100200,u=2}),
+q(75625,{providers={{"i",205189}},r=2,rwp=100200,u=2}),
+q(75626,{providers={{"i",205190}},r=1,rwp=100200,u=2}),
 q(75221,{coords={{48,46.4,2112}},cost={{"i",202162,1}},qgs=a[10],repeatable=1,g={
 i(202163,{spellID=398642,g={
 toy(201931,{b=1}),

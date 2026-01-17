@@ -26,8 +26,8 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
-		-- TODO: tw = "",
+		cn = "儿童周",
+		tw = "兒童週",
 		-- #endif
 	},
 });
@@ -831,7 +831,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Go to the docks of Ratchet in the Barrens.
 					["provider"] = { "n", 9558 },	-- Grimble <Shipmaster>
-					["coord"] = { 63, 38, THE_BARRENS },
+					["coord"] = { 63.0, 38.0, THE_BARRENS },
 				}),
 			},
 		}),
@@ -848,7 +848,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
-					["coord"] = { 47, 5, THE_BARRENS },
+					["coord"] = { 47.0, 5.0, THE_BARRENS },
 				}),
 			},
 		}),
@@ -1351,7 +1351,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["groups"] = {
 				objective(1, {	-- Go to the Westfall Lighthouse.
 					["provider"] = { "n", 392 },	-- Captain Grayson
-					["coord"] = { 29, 86, WESTFALL },
+					["coord"] = { 29.0, 86.0, WESTFALL },
 				}),
 			},
 		}),
@@ -1451,7 +1451,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
-					["coord"] = { 41, 43, DARNASSUS },
+					["coord"] = { 41.0, 43.0, DARNASSUS },
 				}),
 			},
 		}),
@@ -1720,7 +1720,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
-					["coord"] = { 48, 12, LOCH_MODAN },
+					["coord"] = { 48.0, 12.0, LOCH_MODAN },
 				}),
 			},
 		}),

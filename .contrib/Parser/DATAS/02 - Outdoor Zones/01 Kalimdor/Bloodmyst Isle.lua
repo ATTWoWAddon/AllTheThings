@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Filled Bota Bag
 							["provider"] = { "i", 23750 },	-- Filled Bota Bag
 							["cost"] = { { "i", 23749, 1 } },	-- Empty Bota Bag
-							["coord"] = { 33, 37, ASHENVALE },
+							["coord"] = { 33.0, 37.0, ASHENVALE },
 						}),
 					},
 				}),
@@ -511,7 +511,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								{ "n",  17715 },	-- Atoph the Bloodcursed
 								{ "o", 181964 },	-- Statue of Queen Azshara
 							},
-							["coord"] = { 86, 54.8, BLOODMYST_ISLE },
+							["coord"] = { 86.0, 54.8, BLOODMYST_ISLE },
 						}),
 						i(24334),	-- Wheel of the Lost Hope
 					},
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- Vector Coil Destroyed and Sironas Slain
 							["provider"] = { "n", 17678 },	-- Sironas
-							["coord"] = { 15, 55.5, BLOODMYST_ISLE },
+							["coord"] = { 15.0, 55.5, BLOODMYST_ISLE },
 						}),
 						i(24352),	-- Blade of the Hand
 						i(24353),	-- Crossbow of the Hand
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								{ "i",  23878 },	-- Impact Site Crystal Sample
 								{ "o", 181779 },	-- Impact Site Crystal
 							},
-							["coord"] = { 58, 83, BLOODMYST_ISLE },
+							["coord"] = { 58.0, 83.0, BLOODMYST_ISLE },
 							["cost"] = { { "i", 23875, 1 } },	-- Crystal Mining Pick
 						}),
 						i(26006),	-- Crystal-Flecked Pants
@@ -1070,7 +1070,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Axxarien Crystal Sample
 							["provider"] = { "i", 23880 },	-- Axxarien Crystal Sample
 							["cost"] = { { "i", 23877, 1 } },	-- Crystal Mining Pick
-							["coord"] = { 41, 29, BLOODMYST_ISLE },
+							["coord"] = { 41.0, 29.0, BLOODMYST_ISLE },
 						}),
 					},
 				}),
@@ -1146,7 +1146,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								{ "o", 181780 },	-- Altered Bloodmyst Crystal
 							},
 							["cost"] = { { "i", 23876, 1 } },	-- Crystal Mining Pick
-							["coord"] = { 45, 47, BLOODMYST_ISLE },
+							["coord"] = { 45.0, 47.0, BLOODMYST_ISLE },
 						}),
 					},
 				}),

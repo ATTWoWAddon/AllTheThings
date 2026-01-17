@@ -57,6 +57,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(130019),	-- Armplates of Unrelenting Anguish
 						i(130000),	-- Bands of Unrelenting Anguish
 						i(129992),	-- Cuffs of Unrelenting Anguish
+						i(245698, { ["timeline"] = { ADDED_11_2_7 } }),	-- Kaldorei Stone Fence (DECOR!)
 						i(121643),	-- Thaon's Grief
 					},
 				}),
@@ -148,7 +149,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 					["coords"] = {
 						{ 48.9, 81.6, VALSHARAH },
-						{ 67.2, 27, 643 },	-- Sleeper's Barrow
+						{ 67.2, 27.0, 643 },	-- Sleeper's Barrow
 					},
 				}),
 				------ Chapter 3 ------
@@ -234,6 +235,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38377 },	-- The Emerald Queen
 					["provider"] = { "n", 98584 },	-- Ysera
 					["coord"] = { 52.4, 63.6, VALSHARAH },
+					["groups"] = { i(127273) },	-- Seal of Ysera (QI!)
 				}),
 				q(38655, {	-- Root Cause
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune

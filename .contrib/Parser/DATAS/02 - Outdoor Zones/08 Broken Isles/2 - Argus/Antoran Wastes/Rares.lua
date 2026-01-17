@@ -154,7 +154,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(127700, {	-- Squadron Commander Vishax
-						["description"] = "Collect |cFFFFD700Smashed Portal Generator|r, |cFFFFD700Conductive Sheath|r, |cFFFFD700Arc Circuit|r and |cFFFFD700Power Cell|r from the elite mobs on the Terminus docks and ship, and combine them to create |cFFFFD700Vishax's Portal Generator|r.\n\nOnce you create the item and do the follow-up quest, you can always power up the portal to the rare.",
+						["description"] = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
 						["modelScale"] = 0.63,
 						["questID"] = 48967,
 						["isDaily"] = true,

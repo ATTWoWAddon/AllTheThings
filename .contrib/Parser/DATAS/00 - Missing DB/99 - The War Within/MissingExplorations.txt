@@ -642,7 +642,7 @@ exploration(4072),	-- Sub zone
 exploration(4073),	-- Winter's Terrace
 exploration(4074),	-- The Waking Halls
 exploration(4079),	-- Frostblade Pass
-exploration(4096),	-- Clayt�n's WoWEdit Land \\ Claytön's WoWEdit Land
+exploration(4096),	-- Claytön's WoWEdit Land
 exploration(4100),	-- The Culling of Stratholme
 exploration(4102),	-- Krom's Landing
 exploration(4110),	-- Farshire Fields
@@ -5072,7 +5072,7 @@ exploration(16534),	-- Lair of Predaxas
 exploration(16536),	-- Solaarian Sunbath
 exploration(16538),	-- Isle of Quel'Danas
 exploration(16542),	-- Parhelion Plaza
-exploration(16543),	-- Abundant Grotto
+exploration(16543),	-- Floaret Grotto \\ Abundant Grotto
 exploration(16545),	-- Collegiate Calamity
 exploration(16547),	-- Magisters' Park
 exploration(16548),	-- The Grudge Pit
@@ -5148,7 +5148,7 @@ exploration(16810),	-- Dawnstar Village
 exploration(16811),	-- Sun's Reach Armory
 exploration(16812),	-- Sunwell Ramparts
 exploration(16813),	-- Parhelion Plaza
-exploration(16814),	-- Magister's Terrace
+exploration(16814),	-- Magisters' Terrace \\ Magister's Terrace
 exploration(16815),	-- Greengill Coast
 exploration(16816),	-- Silver Landing
 exploration(16817),	-- Western Sungrove
@@ -5157,7 +5157,7 @@ exploration(16825),	-- Devouring Stronghold
 exploration(16826),	-- Behemoth's Rise \\ Behemoth's Rsie
 exploration(16827),	-- The Riftlabs
 exploration(16828),	-- Crown of the Cosmos
-exploration(16829),	-- [PH] Battlefield
+exploration(16829),	-- The Approach \\ [PH] Battlefield
 12.0.0.64228
 exploration(16838),	-- Atal'Utek (copy)
 exploration(16841),	-- Tomb of Mun'jin
@@ -5171,3 +5171,8 @@ exploration(16860),	-- The Great Sea
 12.0.0.64741
 exploration(16863),	-- Quiet Cavern
 exploration(16864),	-- Consumptor Cave
+12.0.1.64889
+exploration(16873),	-- Razorwind Camp
+exploration(16874),	-- Founders Point Camp
+12.0.1.64914
+exploration(16875),	-- Den of the Undreamt

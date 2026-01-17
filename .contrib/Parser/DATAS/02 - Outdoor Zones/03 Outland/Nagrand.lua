@@ -441,7 +441,7 @@ root(ROOTS.Zones, {
 					q(9955, {	-- Cho'war the Pillager (A)
 						["sourceQuest"] = 9954,	-- Corki's Ransom
 						["qg"] = 18445,	-- Corki
-						["coord"] = { 29.5, 26, NAGRAND },
+						["coord"] = { 29.5, 26.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Corki Freed

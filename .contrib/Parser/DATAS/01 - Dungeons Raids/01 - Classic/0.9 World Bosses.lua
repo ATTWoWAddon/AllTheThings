@@ -55,9 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
-							["groups"] = {
-								i(20600),	-- Malfurion's Signet Ring
-							},
+							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {

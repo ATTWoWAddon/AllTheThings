@@ -50,6 +50,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						i(152102, {	-- Farondis Chest
 							i(147806),	-- Cloudwing Hippogryph (MOUNT!)
+							i(151462, {	-- Spoiled Sample (QS!)
+								["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
+							}),
 						}),
 						un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
 							["sym"] = {
@@ -65,6 +68,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						i(152107, {	-- Warden's Supply Kit
 							i(147843),	-- Sira's Extra Cloak (TOY!)
+							i(151462, {	-- Spoiled Sample (QS!)
+								["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
+							}),
 						}),
 						un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
 							["sym"] = {

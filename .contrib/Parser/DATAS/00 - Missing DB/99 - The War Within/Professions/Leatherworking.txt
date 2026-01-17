@@ -1,5 +1,3 @@
-11.2.7.64011
-r(1269498),	-- Snowfall Tribe Scare-Totem
 12.0.0.63534
 r(471012),	-- Midnight Leatherworking
 r(471046),	-- Recraft Equipment
@@ -119,8 +117,6 @@ r(1265707),	-- Ingenuity
 
 Missing in Leatherworking
 
-11.2.7.64011
-r(1269498),	-- Snowfall Tribe Scare-Totem
 12.0.0.63534
 r(471012),	-- Midnight Leatherworking
 r(471046),	-- Recraft Equipment

@@ -25,8 +25,8 @@ DELVES_TWW_S1 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 1 сезон",
-		cn = "地心之战地下堡第1季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第一季",
+		tw = "地心之戰探究第一季",
 	},
 });
 DELVES_TWW_S2 = createHeader({
@@ -42,8 +42,8 @@ DELVES_TWW_S2 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 2 сезон",
-		cn = "地心之战地下堡第2季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第二季",
+		tw = "地心之戰探究第二季",
 	},
 });
 DELVES_TWW_S3 = createHeader({
@@ -59,8 +59,8 @@ DELVES_TWW_S3 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		ru = "Вылазки TWW 3 сезон",
-		cn = "地心之战地下堡第3季",
-		-- TODO: tw = "",
+		cn = "地心之战地下堡第三季",
+		tw = "地心之戰探究第三季",
 	},
 });
 local UNDERCOIN = 2803;
@@ -249,7 +249,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			})),
 			ach(42801, {	-- Journey's End (Season 3)
 				["groups"] = {
-					title(638, {	-- %s the Delver Within
+					title(638, {	-- <Name> the Delver Within
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 				},
@@ -272,7 +272,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 38.5, 51.1, KARESH_TAZAVESH },
 			["maps"] = { DELVE_ETHEREAL_KYVEZA },
 			["groups"] = {
-				n(ACHIEVEMENTS, {
+				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
 					ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
 						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
 					}),
@@ -282,7 +282,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					ach(42194, {	-- Pruning the Princess
 						title(639),	-- Contract Killer %s
 					}),
-				}),
+				})),
 				n(EXPLORATION, {
 					map_exploration(16539,{coord={53.4,82.9,DELVE_ETHEREAL_KYVEZA}}),	-- Voidrazor Sanctuary
 				}),
@@ -903,7 +903,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(42241, {	-- Overcharged Delver
-			["timeline"] = { ADDED_11_1_7 },
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
 				crit(105440, {	-- Fungal Folly
 					["maps"] = { FUNGAL_FOLLY },
@@ -1376,6 +1376,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 						i(237999),	-- Battered Matter Destabilizer
+						i(218126),	-- Befouler's Syringe
 						i(238007),	-- Bulwark of the Great Dark
 						i(237997),	-- Ethereal Handchopper
 						i(238004),	-- Exile's Beacon
@@ -1756,6 +1757,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
 	})),
+	n(FACTIONS, {
+		faction(2640),	-- Brann Bronzebeard
+	}),
 	n(HIDDEN_QUESTS, {
 		-- Brann Bronzebeard leveling quest
 		hqt(77716),	-- Level 2
@@ -2425,7 +2429,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 						["groups"] = {
-							title(641, {	-- %s Bronzebeard
+							title(641, {	-- <Name> Bronzebeard
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["collectible"] = false,
 							}),
@@ -3122,7 +3126,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["description"] = "Use Waygate on the 1st Level.",
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
-						{ 62.4, 37.9, 2455 },	-- Lower Chamber (Sturdy Chest)
+						{ 62.1, 38.2, 2454 },	-- Lower Chamber (Sturdy Chest)
 					},
 					["questID"] = 83692,
 				}),
@@ -3312,7 +3316,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			filter(MISC, {
 				o(409302, {	-- Dispersal Crystal
-					["coord"] = { 63, 54.3, FUNGAL_FOLLY },
+					["coord"] = { 63.0, 54.3, FUNGAL_FOLLY },
 					["groups"] = { i(209788) },	-- Dispersion Crystal (QI!)
 				}),
 				i(210017),	-- Fungal Fish (QI!)
@@ -3625,7 +3629,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			filter(MISC, {
 				i(244901, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Statically Charged (CI!)
 				i(234454),	-- Remote Teleporter (QI!)
-				i(234451),	-- Stolen Goods (QI!)
+				o(504179, {	-- Stolen Goods
+					i(234451),	-- Stolen Goods (QI!)
+				}),
 			}),
 			n(TREASURES, {
 				o(503157, {	-- Sturdy Chest
@@ -3808,7 +3814,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 455685 },	-- Delver's Call: Dread Pit
 					["coords"] = {
 						{ 58.3, 64.2, THE_RINGING_DEEPS },
-						{ 30, 54.8, THE_DREAD_PIT },
+						{ 30.0, 54.8, THE_DREAD_PIT },
 					},
 				}),
 			}),
@@ -4035,7 +4041,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 83682,
 				}),
 				o(455523, {	-- Sturdy Chest
-					["coord"] = { 72, 88.8, THE_UNDERKEEP },
+					["coord"] = { 72.0, 88.8, THE_UNDERKEEP },
 					["questID"] = 83697,
 				}),
 			}),
