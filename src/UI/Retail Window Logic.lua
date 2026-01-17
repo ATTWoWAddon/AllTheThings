@@ -317,13 +317,6 @@ end
 	return GetUnobtainableTexture(group);
 end
 app.GetIndicatorIcon = GetIndicatorIcon
-local function SetIndicatorIcon(self, data)
-	local texture = GetIndicatorIcon(data);
-	if texture then
-		self:SetTexture(texture);
-		return true;
-	end
-end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
@@ -569,9 +562,11 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 4;
 		end
-		local rowIndicator = row.Indicator;
 		-- indicator is always attached to the Texture
-		if SetIndicatorIcon(rowIndicator, data) then
+		local texture = GetIndicatorIcon(data);
+		if texture then
+			local rowIndicator = row.Indicator;
+			rowIndicator:SetTexture(texture);
 			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
 			rowIndicator:Show();
 		end
