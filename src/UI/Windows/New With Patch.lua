@@ -8,9 +8,9 @@ app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
 	OnLoad = function(self, settings)
 		self.data = {
-			text = "New With Patch",
-			icon = app.asset("WindowIcon_RWP"),
-			description = "This window shows you all of the things that were added with the most recent patch.",
+			text = L.NEW_WITH_PATCH,
+			icon = app.asset("Interface_Newly_Added"),
+			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

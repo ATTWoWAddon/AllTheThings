@@ -114,6 +114,16 @@ if app.GameBuildVersion >= 70000 then
 end
 ---@diagnostic enable: deprecated
 
+-- Party APIs
+local C_PartyInfo = C_PartyInfo;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetLootMethod", C_PartyInfo and C_PartyInfo.GetLootMethod, GetLootMethod)
+AssignAPIWrapper("SetLootMethod", C_PartyInfo and C_PartyInfo.SetLootMethod, SetLootMethod)
+AssignAPIWrapper("ConvertToRaid", C_PartyInfo and C_PartyInfo.ConvertToRaid, ConvertToRaid)
+AssignAPIWrapper("InviteUnit", C_PartyInfo and C_PartyInfo.InviteUnit, InviteUnit)
+AssignAPIWrapper("LeaveParty", C_PartyInfo and C_PartyInfo.LeaveParty, LeaveParty)
+---@diagnostic enable: deprecated
+
 -- Quest APIs
 local C_QuestLog = C_QuestLog;
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",

@@ -2,8 +2,8 @@
 local _, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs
-	= ipairs, tinsert, pairs;
+local ipairs, tinsert, pairs, tostring
+	= ipairs, tinsert, pairs, tostring;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Implementation
@@ -25,12 +25,13 @@ app:CreateWindow("Maps", {
 				if #g < 1 then
 					-- Cache all maps by their ID number, starting with maps we reference in our DB.
 					local mapsByID = {};
-					for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
+					for mapID,cachedMaps in pairs(app.SearchForFieldContainer("mapID")) do
 						if not mapsByID[mapID] then
 							local mapObject = app.CreateMap(mapID, {
 								mapInfo = C_Map_GetMapInfo(mapID),
 								collectible = true,
-								collected = true
+								collected = true,
+								statistic = tostring(#cachedMaps),
 							});
 							mapObject.sym = {{ "select", "mapID", mapID }};
 							mapsByID[mapID] = mapObject;

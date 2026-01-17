@@ -335,9 +335,6 @@ function(cmd)
 			app.SetCustomWindowParam("list", "limit", 225000);
 			app:GetWindow("list"):Toggle();
 			return true;
-		elseif cmd == "harvest_achievements" then
-			app:GetWindow("AchievementHarvester"):Toggle();
-			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
 			return true;

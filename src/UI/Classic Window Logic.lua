@@ -21,6 +21,7 @@ local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePre
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local IsModifierKeyDown = IsModifierKeyDown;
+local GetIndicatorIcon = app.GetIndicatorIcon;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
@@ -151,27 +152,6 @@ local function CalculateRowIndent(data)
 	else
 		return 0;
 	end
-end
-local function CalculateRowIndicatorTexture(group)
-	-- If group is quest and is currently accepted or saved...
-	local questID = group.questID;
-	if questID and C_QuestLog_IsOnQuest(questID) then
-		return app.asset(IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
-	elseif group.saved then
-		if group.parent and group.parent.locks or group.repeatable then
-			return app.asset("known");
-		else
-			return app.asset("known_green");
-		end
-	end
-
-	if group.u then
-		local phase = L.PHASES[group.u];
-		if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
-			return L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
-		end
-	end
-	return group.e and L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
 end
 local function ExpandGroupsRecursively(group, expanded, manual)
 	if group.g and (not group.itemID or manual) then
@@ -357,7 +337,7 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Determine the Indicator Texture
-	local indicatorTexture = CalculateRowIndicatorTexture(data);
+	local indicatorTexture = GetIndicatorIcon(data);
 
 	-- Check to see what the text is currently
 	local text = data.text;
@@ -1976,12 +1956,12 @@ function app:CreateWindow(suffix, settings)
 			if settings.OnCommand then
 				onCommand = function(cmd)
 					if not settings.OnCommand(window, cmd) then
-						window:Toggle(cmd);
+						window:Toggle();
 					end
 				end
 			else
 				onCommand = function(cmd)
-					window:Toggle(cmd);
+					window:Toggle();
 				end
 			end
 

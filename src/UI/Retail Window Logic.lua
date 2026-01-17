@@ -29,7 +29,7 @@ local TryColorizeName = app.TryColorizeName
 local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-local GetUnobtainableTexture = app.GetUnobtainableTexture
+local GetIndicatorIcon = app.GetIndicatorIcon;
 local wipearray = app.wipearray
 
 app.Windows = {};
@@ -300,30 +300,6 @@ local function SetPortraitIcon(self, data)
 	self:SetTexture(QUESTION_MARK_ICON);
 	return true
 end
--- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
- local function GetIndicatorIcon(group)
-	-- Use the group's own indicator if defined
-	local groupIndicator = group.indicatorIcon
-	if groupIndicator then return groupIndicator end
-
-	-- Otherwise use some common logic
-	if group.saved then
-		if group.parent and group.parent.locks or group.repeatable then
-			return app.asset("known");
-		else
-			return app.asset("known_green");
-		end
-	end
-	return GetUnobtainableTexture(group);
-end
-app.GetIndicatorIcon = GetIndicatorIcon
-local function SetIndicatorIcon(self, data)
-	local texture = GetIndicatorIcon(data);
-	if texture then
-		self:SetTexture(texture);
-		return true;
-	end
-end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
@@ -569,9 +545,11 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 4;
 		end
-		local rowIndicator = row.Indicator;
 		-- indicator is always attached to the Texture
-		if SetIndicatorIcon(rowIndicator, data) then
+		local texture = GetIndicatorIcon(data);
+		if texture then
+			local rowIndicator = row.Indicator;
+			rowIndicator:SetTexture(texture);
 			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
 			rowIndicator:Show();
 		end
@@ -1162,7 +1140,6 @@ end
 -- TODO: Refactoring
 -- Some windows still new to be 'loaded' so they can setup their logic about when to show/hide
 app.AddEventHandler("OnReady", function()
-	app:GetWindow("AuctionData")
 	app:GetWindow("Tradeskills")
 end)
 app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
