@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						{ 61.1, 27.3, KARESH },
 						{ 61.2, 39.2, KARESH },
 						{ 62.6, 41.6, KARESH },
+						{ 64.0, 46.0, KARESH },
 						{ 64.9, 52.2, KARESH },
 						{ 64.9, 55.0, KARESH },
 						{ 66.0, 48.8, KARESH },
@@ -57,6 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						{ 74.0, 57.5, KARESH },
 						{ 75.7, 34.4, KARESH },
 						{ 76.0, 32.6, KARESH },
+						{ 76.0, 58.2, KARESH },
 						{ 77.3, 38.0, KARESH },
 						{ 78.4, 48.9, KARESH },
 						{ 34.9, 57.9, KARESH_TAZAVESH },
@@ -270,6 +272,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(240171),	-- Observer's Soul Fetters
 						i(246160),	-- Sthaarbs's Last Lunch (MOUNT!)
+						i(240213),	-- Veiling Mana Shroud
 					},
 				}),
 				n(232111, {	-- The Nightreaver
