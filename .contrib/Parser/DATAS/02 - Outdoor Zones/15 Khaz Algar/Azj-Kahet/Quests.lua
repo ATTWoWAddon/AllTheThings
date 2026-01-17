@@ -591,7 +591,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 221092 },	-- Orator Tx'itk <The Second Strand>
 					["coord"] = { 65.7, 40.1, NERUBAR },
 					["groups"] = {
-						i(219443),	-- Paralytic Draught (QI!)
+						o(439611, {	-- Paralytic Draught
+							["coord"] = { 66.5, 43.5, NERUBAR },
+							["groups"] = { i(219443) },	-- Paralytic Draught (QI!)
+						}),
 					},
 				}),
 				q(80206, {	-- Marionette Mercy
@@ -599,7 +602,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 221093 },	-- Orator Tx'itk <The Second Strand>
 					["coord"] = { 65.6, 42.3, NERUBAR },
 					["groups"] = {
-						i(219385),	-- Antiparalytic Serum (QI!)
+						o(439466, {	-- Antiparalytic Serum
+							["coord"] = { 65.7, 42.0, NERUBAR },
+							["groups"] = { i(219385) },	-- Antiparalytic Serum (QI!)
+						}),
 					},
 				}),
 				q(80205, {	-- Pulling Strings
@@ -886,6 +892,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 221842 },	-- Alchemist Talbax
 					["coord"] = { 59.9, 54.2, AZJ_KAHET },
 					["groups"] = {
+						o(441257, {	-- Crate of Alchemical Potions
+							["coords"] = {
+								{ 55.3, 53.9, AZJ_KAHET },
+								{ 55.4, 54.6, AZJ_KAHET },
+								{ 55.5, 54.7, AZJ_KAHET },
+								{ 56.0, 56.1, AZJ_KAHET },
+								{ 56.1, 53.4, AZJ_KAHET },
+								{ 56.6, 55.4, AZJ_KAHET },
+								{ 57.2, 56.7, AZJ_KAHET },
+								{ 57.6, 59.2, AZJ_KAHET },
+							},
+							["groups"] = { i(221755) },	-- Brightshade Potion (QI!)
+						}),
 						i(221755),	-- Alchemical Potions (QI!)
 					},
 				}),
@@ -1077,7 +1096,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
 				["coord"] = { 32.0, 22.5, NERUBAR },
 				["groups"] = {
-					i(215159),	-- Pillaged Trophy (QI!)
+					o(423570, {	-- Pillaged Riches
+						["coords"] = {
+							{ 28.2, 37.4, NERUBAR },
+							{ 29.4, 29.5, NERUBAR },
+							{ 29.9, 31.9, NERUBAR },
+							{ 29.9, 36.4, NERUBAR },
+							{ 32.4, 29.8, NERUBAR },
+							{ 32.4, 37.9, NERUBAR },
+							{ 32.5, 30.7, NERUBAR },
+							{ 34.0, 30.1, NERUBAR },
+							{ 34.0, 37.2, NERUBAR },
+						},
+						["groups"] = { i(215159) },	-- Pillaged Trophy (QI!)
+					}),
 				},
 			}),
 			q(79730, {	-- Dogged Pursuit

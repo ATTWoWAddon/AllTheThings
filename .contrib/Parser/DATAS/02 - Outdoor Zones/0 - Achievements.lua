@@ -2364,7 +2364,11 @@ root(ROOTS.Zones, {
 				-- #else
 				{ 75.3, 29.8, STORMWIND_CITY },
 				-- #endif
-				{ 67.3, 49.8, TANARIS },
+				-- #if ANYCLASSIC
+				{ 67.3, 49.8, TANARIS },	-- is this really the proper Classic coord?
+				-- #else
+				{ 88.4, 14.8, CAVERNS_OF_TIME },
+				-- #endif
 				-- #if BEFORE CATA
 				{ 10.4, 60.6, WETLANDS },
 				-- #endif

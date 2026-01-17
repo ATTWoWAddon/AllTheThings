@@ -1529,6 +1529,9 @@ i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
+-- #if AFTER 12.0.0
+i(64457);	-- Last Relic of Argus
+-- #endif
 i(256893);	-- Wretched Dredger's Brand
 --- UNSORTED ---
 i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
@@ -1552,12 +1555,15 @@ i(267139);	-- Hungry Black Hole
 i(264695);	-- Interdimensional Parcel Signal
 i(250320);	-- Lightgraft
 i(264414);	-- Midnight Delver's Flare Gun
+i(268717);	-- Pango Plating
 i(253629);	-- Personal Key to the Arcantina
 i(262431);	-- Pocket Mushroom Jump Pad
 i(251903);	-- Potatoad Egg
 i(264666);	-- Rod of Exanguishation
+i(268728);	-- Saptor Salve
 i(250319);	-- Shadowgraft
 i(258963);	-- Shroom Jumper's Parachute
 i(259240);	-- Sin'dorei Wine
+i(268695);	-- Test Sharing Camera
 i(263198);	-- Valdekar's Special
 i(256552);	-- Verdant Rutaani Seed

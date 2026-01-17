@@ -129,8 +129,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		------ Misc ------
 		i(248393, {	-- Blank Doomsayer's Pamphlet
 			["crs"] = {
+				-- #if AFTER 11.2.7.65299
+				248661,	-- Infernal of the End Times
+				248689,	-- Infernal of the End Times
+				-- #else
 				248660,	-- Lost Legion Infernal
 				248688,	-- Lost Legion Infernal
+				-- #endif
 			},
 			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 }
 		}),

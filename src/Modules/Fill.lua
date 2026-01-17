@@ -176,7 +176,7 @@ local FillFunctions = {
 			for craftedItemID,recipe in pairs(craftableItemIDs) do
 				craftedItemID = math_floor(craftedItemID)
 				craftedItems[craftedItemID] = true
-				skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
+				skillID = recipe ~= true and GetRelativeValue(recipe, "requireSkill") or nil
 				-- Searches for a filter-matched crafted Item
 				search = SearchForObject("itemID",craftedItemID,"field");
 				search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)

@@ -2290,6 +2290,7 @@ i(265656, 1276650);	-- Anu'shalla, Shadow's Guidance
 i(262620, 1257058);	-- Calamitous Carrion
 i(262621, 1257081);	-- Convalescent Carrion
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
+i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
 i(257504, 1261648);	-- Vicious Snaplizard [A]
@@ -2353,8 +2354,10 @@ i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(0, 1263635);	-- Spectral Hawkstrider
 i(0, 1238827);	-- Swift Spectral Dragonhawk
 i(260887, 1266980);	-- Tenebrous Harrower
+i(257144, 1261296);	-- Umbral Dragonhawk
 i(256423, 1260354);	-- Untainted Grove Crawler
 i(262705, 1269273);	-- Vicious Snapvine
+i(0, 1270673);	-- Vivacious Chloroceros
 i(263580, 1270675);	-- Vivid Chloroceros
 i(252012, 1253927);	-- Vibrant Petalwing
 i(0, 1266702);	-- Voidbound Stormray
