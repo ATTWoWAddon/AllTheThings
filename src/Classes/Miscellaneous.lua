@@ -275,14 +275,6 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 	end,
 });
 
--- Allows creating a group which is keyed based on only its 'text' field
-app.CreateRawText = app.CreateClass("RawText", "text", {
-	name = function(t)
-		return t.text
-	end,
-	isHeader = app.ReturnTrue,
-})
-
 -- Allows creating an ATT object which can be expanded to trigger an async population of the dynamic data it should contain, based on provided data in 't'
 -- Expected t-data:
 -- dynamic = The field which should be used for finding the data in this group

@@ -972,6 +972,14 @@ app.GetOrCreateCache = function(idField, className)
 	return app.CreateCache(idField, className)
 end
 
+-- Allows creating a group which is keyed based on only its 'text' field
+app.CreateRawText = app.CreateClass("RawText", "text", {
+	name = function(t)
+		return t.text
+	end,
+	isHeader = app.ReturnTrue,
+})
+
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
