@@ -6455,7 +6455,7 @@ local function InitDataCoroutine()
 		-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
 		app.ChatCommands.Add("remove-deleted-character-backups", function(args)
 			local backups = 0
-			for guid,char in pairs(accountWideData._CharacterBackups) do
+			for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
 				backups = backups + 1
 			end
 			accountWideData._CharacterBackups = nil

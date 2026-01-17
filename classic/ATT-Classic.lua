@@ -2254,7 +2254,7 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-		
+
 		-- Clean up other matching Characters with identical Name-Realm but differing GUID
 		app.CallbackHandlers.Callback(function()
 			local myGUID = app.GUID;
@@ -2325,7 +2325,7 @@ local ADDON_LOADED_HANDLERS = {
 			-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
 			app.ChatCommands.Add("remove-deleted-character-backups", function(args)
 				local backups = 0
-				for guid,char in pairs(accountWideData._CharacterBackups) do
+				for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
 					backups = backups + 1
 				end
 				accountWideData._CharacterBackups = nil
