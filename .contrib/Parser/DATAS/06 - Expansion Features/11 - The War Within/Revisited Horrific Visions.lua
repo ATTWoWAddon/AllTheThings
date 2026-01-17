@@ -36,7 +36,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(41873),	-- Incremental Progress
 				ach(41889),	-- Horrific Masquerade
 				ach(41953, {	-- Mad World
-					title(419),	-- <Name>, the Faceless One
+					["timeline"] = { ADDED_11_1_5, REMOVED_12_0_0 },
+					["groups"] =  {
+						title(419),	-- <Name>, the Faceless One
+					},
 				}),
 				ach(41857),	-- Masked Soliloquy
 				ach(41890),	-- Masked Duet
@@ -75,7 +78,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["groups"] = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
 				}),
 				ach(41971, {	-- Through the Looking Glass
-					title(631),	-- <Name> the Mad
+					["timeline"] = { ADDED_11_1_5, REMOVED_12_0_0 },
+					["groups"] =  {
+						title(631),	-- <Name> the Mad
+					},
 				}),
 				ach(41725),	-- We Have the Memories
 			}),
