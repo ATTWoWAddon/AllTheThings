@@ -184,8 +184,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 			end
 			return true;
 		end
-		local parent = t.parent
-		return parent and parent.ShouldExcludeFromTooltip
+		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)
 	end,
 },
 "Group", {

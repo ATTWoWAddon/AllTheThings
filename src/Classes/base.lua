@@ -230,6 +230,10 @@ local DefaultFields = {
 	end,
 	-- Base ShouldExcludeFromTooltip is false, so search upwards in hierarchy for a defined result
 	["ShouldExcludeFromTooltip"] = function(t)
+		-- If this t has a helper defined for exclusion
+		local helper = t.ShouldExcludeFromTooltipHelper
+		if helper and helper(t) then return true end
+
 		-- Whether or not to exclude this data from the source list in the tooltip.
 		local parent = t.parent
 		if parent then return parent.ShouldExcludeFromTooltip end
