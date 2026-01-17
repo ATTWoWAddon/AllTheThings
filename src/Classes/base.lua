@@ -358,15 +358,6 @@ or function(fields, className)
 end
 app.BaseClass = CreateClassMeta(nil, "BaseClass");
 
-app.TryGetField = function(t, field, fieldFunc, giveUpFunc)
-	local fieldVal = fieldFunc(t, field)
-	-- app.PrintDebug("TGF",t.hash,field,fieldVal)
-	if fieldVal then return fieldVal end
-	if not t.CanRetry then
-		return giveUpFunc(t, field)
-	end
-end
-
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)
@@ -718,9 +709,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 		ClassError(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
 	end
 	return classConstructor, Class;
-end
-app.CreateClassFromArray = function(arr)
-	return app.CreateClass(unpack(arr));
 end
 app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	-- Validate arguments

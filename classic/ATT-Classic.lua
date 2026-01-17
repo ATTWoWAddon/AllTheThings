@@ -746,7 +746,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-		local FilterUnobtainable, FilterCharacter, FirstParent
+		local RecursiveUnobtainableFilter, RecursiveCharacterRequirementsFilter, GetRelativeGroup
 			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
 
@@ -768,7 +768,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 
 		for _,j in ipairs(sourceGroups) do
 			parent = j.parent;
-			if parent and not FirstParent(j, "hideText") and parent.parent
+			if parent and not GetRelativeGroup(j, "hideText") and parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not HasCost(j, paramA, paramB)
 			then
@@ -778,14 +778,14 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 						text = text:gsub(source, replacement);
 					end
 					-- doesn't meet current unobtainable filters
-					if not FilterUnobtainable(parent) then
+					if not RecursiveUnobtainableFilter(parent) then
 						tinsert(unfiltered, { text, UnobtainableTexture });
 					-- from obtainable, different character source
-					elseif not FilterCharacter(parent) then
+					elseif not RecursiveCharacterRequirementsFilter(parent) then
 						tinsert(unfiltered, { text, "|T374223:0|t" });
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+						right = GetUnobtainableTexture(GetRelativeGroup(parent, "e") or GetRelativeGroup(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
 						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
 					end
 				end
