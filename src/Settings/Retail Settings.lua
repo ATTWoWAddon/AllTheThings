@@ -297,7 +297,7 @@ settings.Initialize = function(self)
 			app:GetWindow("Prime"):SetVisible(true)
 		end
 		if self:GetTooltipSetting("Auto:MiniList") then
-			app:GetWindow("CurrentInstance"):SetVisible(true)
+			app:GetWindow("MiniList"):SetVisible(true)
 		end
 		if self:GetTooltipSetting("Auto:RaidAssistant") then
 			app:GetWindow("RaidAssistant"):SetVisible(true)
@@ -425,8 +425,14 @@ settings.ApplyProfile = function()
 		SetupRawSettings()
 
 		-- apply window positions when applying a Profile
-		if RawSettings.Windows then
-			for suffix,_ in pairs(RawSettings.Windows) do
+		local windowSettings = RawSettings.Windows;
+		if windowSettings then
+			local oldCurrentInstance = windowSettings.CurrentInstance;
+			if oldCurrentInstance then
+				windowSettings.MiniList = oldCurrentInstance;
+				windowSettings.CurrentInstance = nil;
+			end
+			for suffix,_ in pairs(windowSettings) do
 				settings.SetWindowFromProfile(suffix)
 			end
 		end

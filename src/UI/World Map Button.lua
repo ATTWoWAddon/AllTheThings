@@ -33,7 +33,7 @@ local function CreateWorldMapButton()
 	texture:Show();
 	button.texture = texture;
 
-	local minilist = app:GetWindow(app.IsClassic and "MiniList" or "CurrentInstance");
+	local minilist = app:GetWindow("MiniList");
 	button:SetScript("OnEnter", function(self)
 		local mapID = WorldMapFrame:GetMapID();
 		self.mapID = mapID;

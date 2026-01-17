@@ -211,11 +211,6 @@ if app.IsClassic then return end
 
 -- Copied from Retail ATT, eventually migrate to defining windows or other related sources and using app.ChatCommands.Add() instead
 
-AddSlashCommands({"attbounty"},
-function() app:GetWindow("Bounty"):Toggle() end)
-
-AddSlashCommands({"attmaps"},
-function() app:GetWindow("CosmicInfuser"):Toggle() end)
 
 AddSlashCommands({"attra"},
 function() app:GetWindow("RaidAssistant"):Toggle() end)
@@ -225,9 +220,6 @@ function() app:GetWindow("Random"):Toggle() end)
 
 AddSlashCommands({"attwq"},
 function() app:GetWindow("WorldQuests"):Toggle() end)
-
-AddSlashCommands({"attmini","attminilist"},
-function() app:ToggleMiniListForCurrentZone() end)
 
 AddSlashCommands({"attharvest","attharvester"},
 function(cmd)
@@ -380,7 +372,7 @@ function(cmd)
 			app:ToggleMiniListForCurrentZone();
 			return true;
 		elseif cmd:sub(1, 6) == "mapid:" then
-			app:GetWindow("CurrentInstance"):SetMapID(tonumber(cmd:sub(7)), true);
+			app:GetWindow("MiniList"):SetMapID(tonumber(cmd:sub(7)), true);
 			return true;
 		else
 			if cmd == "import" then

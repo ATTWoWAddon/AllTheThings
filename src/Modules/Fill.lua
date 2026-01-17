@@ -619,7 +619,7 @@ local FillGroups = function(group, options)
 	local groupWindow = app.GetRelativeRawWithField(group, "window");
 	local fillers = options and options.Fillers
 	if not fillers then
-		local fillScope = groupWindow and (groupWindow.Suffix == "CurrentInstance" and "LIST" or "POPOUT") or "TOOLTIP"
+		local fillScope = groupWindow and (groupWindow.Suffix == "MiniList" and "LIST" or "POPOUT") or "TOOLTIP"
 		fillers = ActiveFillFunctions[fillScope]
 	end
 	-- Setup the FillData for this fill operation
@@ -629,7 +629,7 @@ local FillGroups = function(group, options)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
-		InMinilist = groupWindow and groupWindow.Suffix == "CurrentInstance" and true or nil,
+		InMinilist = groupWindow and groupWindow.Suffix == "MiniList" and true or nil,
 		-- TODO: Fillers can provide context requirements for themselves to be utilized for a given
 		-- fill operation.
 		-- i.e. provided the Root/Window/Instance/Combat -- the Filler may return that it should not be included
