@@ -52,6 +52,7 @@
 	-->
 	<!-- CRIEVE NOTE: Windows that have identical or nearly identical code to an existing Window will be named WINDOW.Retail.lua and should be revisited at a later date for consolidation once logic functions the same (or close to it) Ideally, Retail and Classic can use all the same windows after this process is done and we can delete this file and make sure Windows.xml has each of the windows included. Windows that we would like to move to external addons at that point can also be changes to addon extensions! -->
 	<Script file="Prime.Retail.lua"/>
+	<Script file="Account Management.Retail.lua"/>
 	<Script file="Added With Patch.Retail.lua"/>
 	<Script file="Bounty.Retail.lua"/>
 	<Script file="Future Unobtainables.Retail.lua"/>

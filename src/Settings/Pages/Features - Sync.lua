@@ -26,7 +26,7 @@ checkboxAutoSync:SetATTTooltip(L.AUTO_SYNC_ACC_DATA_TOOLTIP)
 checkboxAutoSync:SetPoint("TOPLEFT", headerSync, "BOTTOMLEFT", 4, 0)
 
 local function InitializeATTSyncWindow()
-	local syncWindow = app:GetWindow("Sync")
+	local syncWindow = app:GetWindow("Account Management")
 	child:RegisterObject(syncWindow)
 	syncWindow.OnRefresh = function()
 		syncWindow:SetVisible(true, true)
