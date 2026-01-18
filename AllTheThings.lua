@@ -2158,26 +2158,6 @@ app.AddCustomWindowOnUpdate = function(customName, onUpdate)
 	-- app.print("Added",customName)
 	customWindowUpdates[customName] = onUpdate
 end
-app.AddCustomWindowOnUpdate("RWP", function(self, force)
-	if not self.initialized then
-		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
-			return;
-		end
-		self.initialized = true;
-		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
-			["icon"] = app.asset("Interface_Future_Unobtainable"),
-			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
-			["visible"] = true,
-			["back"] = 1,
-			["g"] = app:BuildSearchResponse("rwp"),
-		}))
-		self:BuildData();
-		self.ExpandInfo = { Expand = true, Manual = true };
-	end
-	if self:IsVisible() then
-		self:DefaultUpdate(force);
-	end
-end)
 app.AddCustomWindowOnUpdate("Import", function(self, force)
 	if not self:IsVisible() then return end
 

@@ -338,7 +338,7 @@ function(cmd)
 			app:GetWindow("Added With Patch"):Toggle();
 			return true;
 		elseif cmd == "rwp" then
-			app:GetWindow("RWP"):Toggle();
+			app:GetWindow("Future Unobtainables"):Toggle();
 			return true;
 		elseif cmd == "wq" then
 			app:GetWindow("WorldQuests"):Toggle();
