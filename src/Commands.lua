@@ -340,9 +340,9 @@ function(cmd)
 			app:GetWindow("NWP"):Toggle();
 			return true;
 		elseif cmd == "awp" then
-			--app:GetWindow("awp"):Hide();
-			app.SetCustomWindowParam("awp", "reset", true);
-			app:GetWindow("awp"):Toggle();
+			--app:GetWindow("Added With Patch"):Hide();
+			app.SetCustomWindowParam("Added With Patch", "reset", true);
+			app:GetWindow("Added With Patch"):Toggle();
 			return true;
 		elseif cmd == "rwp" then
 			app:GetWindow("RWP"):Toggle();

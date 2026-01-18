@@ -37,7 +37,7 @@ app.Windows = {};
 -- allows resetting a given ATT window
 local function ResetWindow(suffix)
 	app.Windows[suffix] = nil;
-	if suffix ~= "awp" then	-- don't spam for this window for now
+	if suffix ~= "Added With Patch" then	-- don't spam for this window for now
 		app.print("Reset Window",suffix);
 	end
 end
