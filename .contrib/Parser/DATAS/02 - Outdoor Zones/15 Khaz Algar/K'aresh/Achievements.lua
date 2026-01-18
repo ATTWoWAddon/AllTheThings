@@ -8,8 +8,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			ach(41979, {	-- Bounty Seeker (automated)
 				i(245255),	-- Starlight (PET!)
 			}),
-			ach(41778, {	-- Brokers Don't Care How You Win (automated)
-				-- TODO: check automation? otherwise 103855 -> q:89065, 103854 -> q:85462
+			ach(41778, {	-- Brokers Don't Care How You Win
+				crit(103854, {
+					["_quests"] = { 85481 },	-- Ridge Racer
+				}),
+				crit(103855, {
+					["_quests"] = { 89065 },	-- Ray-cing for the Future
+				}),
 			}),
 			ach(42737),	-- Capstoned (automated)
 			ach(42729, {	-- Dangerous Prowlers of K'aresh (automated)
