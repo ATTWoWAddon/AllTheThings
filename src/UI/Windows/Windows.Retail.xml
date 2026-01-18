@@ -55,4 +55,5 @@
 	<Script file="Maps.Retail.lua"/>
 	<Script file="Mini List.Retail.lua"/>
 	<Script file="Item Filter.Retail.lua"/>
+	<Script file="New With Patch.Retail.lua"/>
 </Ui>
