@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pet(4514, {	-- Fallowspark Glowfly (PET!)
 					["coords"] = {
+						{ 46.3, 63.4, HALLOWFALL },
 						{ 51.6, 69.0, ISLE_OF_DORN },
 						{ 49.9, 32.5, THE_RINGING_DEEPS },
 					},
@@ -36,7 +37,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 44.3, 76.0, ISLE_OF_DORN },
 				}),
 				pet(4535, {	-- Ghostcap Menace (PET!)
-					["coord"] = { 66.0, 48.8, ISLE_OF_DORN },
+					["coords"] = {
+						{ 66.0, 48.8, ISLE_OF_DORN },
+						{ 58.5, 31.7, HALLOWFALL },
+					},
 				}),
 				pet(4539, {	-- Granite Ramolith (PET!)
 					["coord"] = { 24.2, 51.6, ISLE_OF_DORN },
@@ -51,7 +55,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 55.5, 60.3, ISLE_OF_DORN },
 				}),
 				pet(4522, {	-- Troglofrog (PET!)
-					["coord"] = { 57.7, 69.2, ISLE_OF_DORN },
+					["coords"] = {
+						{ 38.3, 54.9, HALLOWFALL },
+						{ 57.7, 69.2, ISLE_OF_DORN },
+						{ 50.0, 59.4, AZJ_KAHET },
+					},
 				}),
 			},
 		})),
