@@ -139,6 +139,7 @@ app:CreateWindow("Auctions", {
 	Commands = { "attauctions" },
 	TooltipAnchor = "ANCHOR_RIGHT",
 	IgnoreQuestUpdates = true,
+	Preload = true,
 	OnLoad = function(self, settings)
 		-- If we have left over auction data from previous, then use it.
 		if AllTheThingsAuctionData and not AllTheThingsAuctionData[1] then

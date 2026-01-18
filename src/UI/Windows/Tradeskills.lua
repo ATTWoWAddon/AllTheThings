@@ -73,14 +73,10 @@ app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
 -- Implementation
 app:CreateWindow("Tradeskills", {
+	Commands = { "attskills" },
 	AllowCompleteSound = true,
-	Commands = {
-		"attskills",
-		"atttradeskill",
-		"attprofession",
-		"attprof",
-	},
 	HideFromSettings = true,
+	Preload = true,
 	OnInit = function(self, handlers)
 		self:SetMovable(false);
 		self:SetClampedToScreen(false);

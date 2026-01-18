@@ -75,12 +75,13 @@ app.AddEventRegistration("SKILL_LINES_CHANGED", function()
 end)
 end -- TradeSkill Functionality
 
-app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
-	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
-		return;
-	end
-	if not self.initialized then
-		self.initialized = true;
+
+app:CreateWindow("Tradeskills", {
+	Commands = { "attskills" },
+	AllowCompleteSound = true,
+	HideFromSettings = true,
+	Preload = true,
+	OnInit = function(self, handlers)
 		local C_TradeSkillUI_IsTradeSkillLinked, C_TradeSkillUI_IsTradeSkillGuild
 			= C_TradeSkillUI.IsTradeSkillLinked, C_TradeSkillUI.IsTradeSkillGuild
 		self.SkillsInit = {};
@@ -88,10 +89,6 @@ app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
-		self:RegisterEvent("TRADE_SKILL_SHOW");
-		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-		self:RegisterEvent("TRADE_SKILL_CLOSE");
-		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
 		self:SetData(app.CreateRawText(L.PROFESSION_LIST, {
 			icon = 134940,
 			description = L.PROFESSION_LIST_DESC,
@@ -446,48 +443,40 @@ app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
 			end
 			app.CallbackHandlers.AfterCombatCallback(self.Update, self);
 		end
+		
 		-- Setup Event Handlers and register for events
-		local EventHandlers = {
-			TRADE_SKILL_SHOW = function(self)
-				-- If it's not yours, don't take credit for it.
-				if C_TradeSkillUI_IsTradeSkillLinked() or C_TradeSkillUI_IsTradeSkillGuild() then
-					self:SetVisible(false)
-					return false
-				end
-
-				-- Check to see if ATT has information about this profession.
-				local tradeSkillID = app.GetTradeSkillLine()
-				if not tradeSkillID or #app.SearchForField("professionID", tradeSkillID) < 1 then
-					self:SetVisible(false)
-					return false
-				end
-
-				if self.TSMCraftingVisible == nil then
-					self:SetTSMCraftingVisible(false)
-				end
-				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-					self:SetVisible(true)
-				end
-				self:RefreshRecipes(true)
-			end,
-			TRADE_SKILL_CLOSE = function(self)
+		self:RegisterEvent("TRADE_SKILL_SHOW");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
+		handlers.TRADE_SKILL_SHOW = function(self)
+			-- If it's not yours, don't take credit for it.
+			if C_TradeSkillUI_IsTradeSkillLinked() or C_TradeSkillUI_IsTradeSkillGuild() then
 				self:SetVisible(false)
-			end,
-		}
-		EventHandlers.GARRISON_TRADESKILL_NPC_CLOSED = EventHandlers.TRADE_SKILL_CLOSE
+				return false
+			end
 
-		self:SetScript("OnEvent", function(self, e, ...)
-			-- app.PrintDebug("Tradeskills.event",e,...)
-			local handler = EventHandlers[e]
-			if not handler then return end
+			-- Check to see if ATT has information about this profession.
+			local tradeSkillID = app.GetTradeSkillLine()
+			if not tradeSkillID or #app.SearchForField("professionID", tradeSkillID) < 1 then
+				self:SetVisible(false)
+				return false
+			end
 
-			-- app.PrintDebug("Tradeskills.event.handle",e)
-			handler(self, e, ...)
-			-- app.PrintDebugPrior("Tradeskills.event.done")
-		end)
-		return
-	end
-	if self:IsVisible() then
+			if self.TSMCraftingVisible == nil then
+				self:SetTSMCraftingVisible(false)
+			end
+			if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+				self:SetVisible(true)
+			end
+			self:RefreshRecipes(true)
+		end
+		handlers.TRADE_SKILL_CLOSE = function(self)
+			self:SetVisible(false)
+		end
+		handlers.GARRISON_TRADESKILL_NPC_CLOSED = handlers.TRADE_SKILL_CLOSE
+	end,
+	OnUpdate = function(self, ...)
 		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
 				for i,child in ipairs({UIParent:GetChildren()}) do
@@ -573,12 +562,7 @@ app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		self:DefaultUpdate(force or self.force, got);
+		self:DefaultUpdate(force or self.force);
 		self.force = nil;
-	end
-end)
-
-app.AddEventHandler("OnReady", function()
-	-- This window still needs to be loaded right away
-	app:GetWindow("Tradeskills")
-end)
+	end,
+});

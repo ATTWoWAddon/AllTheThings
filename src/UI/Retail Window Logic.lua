@@ -36,7 +36,12 @@ app.Windows = {};
 
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
+local customWindowInits = {};
 local customWindowUpdates = { params = {} };
+-- Returns the Custom Update function based on the Window suffix if existing
+function app:CustomWindowInit(suffix)
+	return customWindowInits[suffix];
+end
 -- Returns the Custom Update function based on the Window suffix if existing
 function app:CustomWindowUpdate(suffix)
 	return customWindowUpdates[suffix];
@@ -58,6 +63,14 @@ end
 app.ResetCustomWindowParam = function(suffix)
 	customWindowUpdates.params[suffix] = nil;
 	-- app.PrintDebug("ResetCustomWindowParam",suffix)
+end
+-- Allows externally adding custom window init logic which doesn't exist already
+app.AddCustomWindowOnInit = function(customName, onInit)
+	if customWindowInits[customName] then
+		app.print("Cannot replace Custom Window: "..customName)
+	end
+	-- app.print("Added",customName)
+	customWindowInits[customName] = onInit
 end
 -- Allows externally adding custom window update logic which doesn't exist already
 app.AddCustomWindowOnUpdate = function(customName, onUpdate)
@@ -1143,7 +1156,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Container = container;
 	container.rows = NewWindowRowContainer(container)
 	container:Show();
-
+	
 	window.AddEventHandler = AddEventHandler
 	window.RemoveEventHandlers = RemoveEventHandlers
 
@@ -1158,6 +1171,20 @@ function app:GetWindow(suffix, parent, onUpdate)
 	-- Ensure the window updates itself when opened for the first time
 	window.HasPendingUpdate = true;
 	window.HightlightDatas = {}
+	
+	-- Setup the Event Handlers
+	local handlers = {};
+	window:SetScript("OnEvent", function(o, e, ...)
+		local handler = handlers[e];
+		if handler then
+			handler(window, ...);
+		else
+			window:Update();
+		end
+	end);
+	local OnInit = app:CustomWindowInit(suffix);
+	if OnInit then OnInit(window, handlers); end
+	
 	-- TODO: eventually remove this when Windows are re-designed to have an OnInit/OnUpdate distinction for Retail
 	window:Update();
 	return window;
@@ -1165,11 +1192,40 @@ end
 function app:CreateWindow(suffix, settings)
 	-- TODO: Properly implement or use the classic version of CreateWindow.
 	if settings then
+		if settings.OnInit then
+			app.AddCustomWindowOnInit(suffix, settings.OnInit);
+		end
 		if settings.OnUpdate then
 			app.AddCustomWindowOnUpdate(suffix, settings.OnUpdate);
 		end
+		if settings.Commands then
+			local onCommand;
+			if settings.OnCommand then
+				onCommand = function(cmd)
+					if not settings.OnCommand(window, cmd) then
+						app:GetWindow(suffix):Toggle();
+					end
+				end
+			else
+				onCommand = function(cmd)
+					app:GetWindow(suffix):Toggle();
+				end
+			end
+			app.AddSlashCommands(settings.Commands, onCommand)
+			local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
+			app.ChatCommands.Help[primaryCommand:lower()] = {
+				settings.UsageText or ("Usage: " .. primaryCommand),
+				settings.HelpText or ("Toggles the " .. (settings.SettingsName or suffix) .. " Window.")
+			};
+		end
+		if settings.Preload then
+			-- This window still needs to be loaded right away
+			app.AddEventHandler("OnReady", function()
+				app:GetWindow(suffix)
+			end)
+		end
 	end
-	return app:GetWindow(suffix);
+	--return app:GetWindow(suffix);
 end
 
 app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
