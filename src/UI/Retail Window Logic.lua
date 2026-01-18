@@ -34,6 +34,41 @@ local wipearray = app.wipearray
 
 app.Windows = {};
 
+-- Store the Custom Windows Update functions which are required by specific Windows
+(function()
+local customWindowUpdates = { params = {} };
+-- Returns the Custom Update function based on the Window suffix if existing
+function app:CustomWindowUpdate(suffix)
+	return customWindowUpdates[suffix];
+end
+-- Retrieves the value of the specific attribute for the given window suffix
+app.GetCustomWindowParam = function(suffix, name)
+	local params = customWindowUpdates.params[suffix];
+	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
+	return params and params[name] or nil;
+end
+-- Defines the value of the specific attribute for the given window suffix
+app.SetCustomWindowParam = function(suffix, name, value)
+	local params = customWindowUpdates.params;
+	if params[suffix] then params[suffix][name] = value;
+	else params[suffix] = { [name] = value } end
+	-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
+end
+-- Removes the custom attributes for a given window suffix
+app.ResetCustomWindowParam = function(suffix)
+	customWindowUpdates.params[suffix] = nil;
+	-- app.PrintDebug("ResetCustomWindowParam",suffix)
+end
+-- Allows externally adding custom window update logic which doesn't exist already
+app.AddCustomWindowOnUpdate = function(customName, onUpdate)
+	if customWindowUpdates[customName] then
+		app.print("Cannot replace Custom Window: "..customName)
+	end
+	-- app.print("Added",customName)
+	customWindowUpdates[customName] = onUpdate
+end
+end)();
+
 -- allows resetting a given ATT window
 local function ResetWindow(suffix)
 	app.Windows[suffix] = nil;
