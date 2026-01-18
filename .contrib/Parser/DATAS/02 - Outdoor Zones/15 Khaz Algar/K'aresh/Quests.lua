@@ -1509,6 +1509,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				q(88974, {	-- Eco-Stability
+					["sourceQuests"] = { 88672 },	-- Snakelets!
 					["qg"] = 231820,	-- Ve'nari
 					["coord"] = { 75.9, 34.2, KARESH },
 				}),

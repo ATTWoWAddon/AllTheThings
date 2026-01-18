@@ -228,8 +228,6 @@ app.AddEventHandler("OnRecalculate_NewSettings", function()
 	FilterFilterID_IgnoredTypes.Heirloom = app.Settings.Collectibles.Heirlooms
 	FilterFilterID_IgnoredTypes.HeirloomAndAppearance = app.Settings.Collectibles.Heirlooms
 end)
--- Kind of want to get rid of this Filter. It's misleading and causes stuff to be hidden that people don't expect
--- especially when 'nested' under an Item marked with some FilterID completely unrelated
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
