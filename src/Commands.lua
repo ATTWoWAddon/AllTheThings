@@ -211,9 +211,6 @@ if app.IsClassic then return end
 
 -- Copied from Retail ATT, eventually migrate to defining windows or other related sources and using app.ChatCommands.Add() instead
 
-AddSlashCommands({"attran","attrandom"},
-function() app:GetWindow("Random"):Toggle() end)
-
 AddSlashCommands({"attwq"},
 function() app:GetWindow("WorldQuests"):Toggle() end)
 

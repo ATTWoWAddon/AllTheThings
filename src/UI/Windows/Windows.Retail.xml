@@ -59,4 +59,5 @@
 	<Script file="Item Filter.Retail.lua"/>
 	<Script file="New With Patch.Retail.lua"/>
 	<Script file="Raid Assistant.Retail.lua"/>
+	<Script file="Random.Retail.lua"/>
 </Ui>
