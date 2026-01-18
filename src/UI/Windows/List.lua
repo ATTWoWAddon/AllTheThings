@@ -370,3 +370,20 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
 end)
+
+app.AddSlashCommands({"attharvest","attharvester"},
+function(cmd)
+	app.print("Force Debug Mode");
+	app.Debugging = true
+	app.Settings:ForceRefreshFromToggle();
+	app.Settings:SetDebugMode(true);
+	app.SetCustomWindowParam("list", "reset", true);
+	app.SetCustomWindowParam("list", "type", "cache:item");
+	app.SetCustomWindowParam("list", "harvesting", true);
+	local args = { (","):split(cmd:lower()) };
+	app.SetCustomWindowParam("list", "min", args[1]);
+	app.SetCustomWindowParam("list", "limit", args[2] or 999999);
+	-- reduce the re-try duration when harvesting
+	app.SetCAN_RETRY_DURATION_SEC(1)
+	app:GetWindow("list"):Toggle();
+end)

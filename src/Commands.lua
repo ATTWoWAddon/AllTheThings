@@ -86,6 +86,18 @@ function app:WaypointLink(mapID, x, y, text)
 	return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
 		.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 end
+-- Add a simple way for other addons to pull a standalone ATT group derived from a link
+app.GetLinkReference = function(link)
+	-- don't try searching for an invalid link
+	if app.Modules.RetrievingData.IsRetrieving(link) then
+		return
+	end
+	-- Search for the Link in the database
+	app.SetSkipLevel(2)
+	local group = app.GetCachedSearchResults(app.SearchForLink, link, nil, {ShortCache=true})
+	app.SetSkipLevel(0)
+	return group
+end
 
 -- Define Chat Commands handling
 app.ChatCommands = { Help = {} }
@@ -210,26 +222,6 @@ if app.IsClassic then return end
 
 
 -- Copied from Retail ATT, eventually migrate to defining windows or other related sources and using app.ChatCommands.Add() instead
-
-
-
-AddSlashCommands({"attharvest","attharvester"},
-function(cmd)
-	app.print("Force Debug Mode");
-	app.Debugging = true
-	app.Settings:ForceRefreshFromToggle();
-	app.Settings:SetDebugMode(true);
-	app.SetCustomWindowParam("list", "reset", true);
-	app.SetCustomWindowParam("list", "type", "cache:item");
-	app.SetCustomWindowParam("list", "harvesting", true);
-	local args = { (","):split(cmd:lower()) };
-	app.SetCustomWindowParam("list", "min", args[1]);
-	app.SetCustomWindowParam("list", "limit", args[2] or 999999);
-	-- reduce the re-try duration when harvesting
-	app.SetCAN_RETRY_DURATION_SEC(1)
-	app:GetWindow("list"):Toggle();
-end)
-
 local function ParseCommand(msg)
 	local itemLinks = {}
 	local function StoreLinks(link)
@@ -383,16 +375,3 @@ function(cmd)
 		app.ToggleMainList();
 	end
 end)
-
--- Add a simple way for other addons to pull a standalone ATT group derived from a link
-app.GetLinkReference = function(link)
-	-- don't try searching for an invalid link
-	if app.Modules.RetrievingData.IsRetrieving(link) then
-		return
-	end
-	-- Search for the Link in the database
-	app.SetSkipLevel(2)
-	local group = app.GetCachedSearchResults(app.SearchForLink, link, nil, {ShortCache=true})
-	app.SetSkipLevel(0)
-	return group
-end
