@@ -6,7 +6,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		petbattle(filter(BATTLE_PETS, {
 			["groups"] = {
 				pet(4498, {	-- Ebon Ploughworm (PET!)
-					["coord"] = { 43.4, 27.6, THE_RINGING_DEEPS },
+					["coords"] = {
+						{ 43.4, 27.6, THE_RINGING_DEEPS },
+						{ 44.7, 57.8, HALLOWFALL },
+					},
 				}),
 				pet(3547, {	-- Jade Cragviper (PET!)
 					["description"] = "Backline pet only.",

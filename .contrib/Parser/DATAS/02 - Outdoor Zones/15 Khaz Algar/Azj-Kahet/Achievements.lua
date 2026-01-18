@@ -93,14 +93,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["description"] = "One of your shades escaped to The Faerin's Advance, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
-					["coord"] = { 58.7, 20.1, AZJ_KAHET },
+					["coords"] = {
+						{ 58.7, 20.1, AZJ_KAHET },
+						{ 58.9, 18.4, AZJ_KAHET },
+					},
 				}),
 				q(83744, {	-- Step 2D: Find Another You in Wildcamp Or'lay
 					["name"] = "|cFFFFFFFFStep 2D|r: Find Another You in Wildcamp Or'lay",
 					["description"] = "One of your shades escaped to Wildcamp Or'lay, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
-					["coord"] = { 24.1, 52.6, AZJ_KAHET },
+					["coords"] = {
+						{ 23.0, 49.7, AZJ_KAHET },
+						{ 24.1, 52.6, AZJ_KAHET },
+					},
 				}),
 				q(83724, {	-- Step 3: Return to the Grimoire
 					["name"] = "|cFFFFFFFFStep 3|r: Return to the Grimoire",

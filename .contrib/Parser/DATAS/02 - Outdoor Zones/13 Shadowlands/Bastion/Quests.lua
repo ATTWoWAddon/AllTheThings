@@ -359,7 +359,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 54.7, 64.1, BASTION },
 					["groups"] = {
 						i(178092),	-- Battered Scroll (QI!)
-						i(178046),	-- Locus Manual (QI!)
+						o_repeated({
+							i(178046),	-- Locus Manual (QI!)
+							o(350064),	-- Battered Scrollcase
+							o(350065),	-- Creased Scroll
+							o(350066),	-- Dusty Scroll Bundle
+							o(350067),	-- Tattered Scroll
+						}),
 					},
 				}),
 				q(58799, {	-- The Prime's Directive
@@ -410,8 +416,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 57.2, 55.2, BASTION },
 					["groups"] = {
-						i(178146),	-- Carved Kyrian Idol (QI!)
-						i(178145),	-- Ceremonial Offering (QI!)
+						o(350889, {	-- Cache of the Archon
+							["coord"] = { 60.6, 61.9, BASTION },
+							["g"] = { i(178146) },	-- Carved Kyrian Idol (QI!)
+						}),
+						o(350888, {	-- Cache of the Paragons
+							["coord"] = { 59.9, 58.2, BASTION },
+							["g"] = { i(178145) },	-- Ceremonial Offering (QI!)
+						}),
 					},
 				}),
 				q(58843, {	-- The Vault of the Archon

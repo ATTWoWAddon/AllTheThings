@@ -974,7 +974,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["groups"] = {
-							i(84762),	-- Highly Explosive Yaungol Oil (QI!)
+							o(212877, {	-- Highly Explosive Yaungol Oil Barrel
+								["coords"] = {
+									{ 61.4, 41.0, TOWNLONG_STEPPES },
+									{ 61.4, 42.4, TOWNLONG_STEPPES },
+									{ 61.4, 43.0, TOWNLONG_STEPPES },
+									{ 61.4, 43.8, TOWNLONG_STEPPES },
+									{ 61.7, 43.8, TOWNLONG_STEPPES },
+									{ 62.3, 40.4, TOWNLONG_STEPPES },
+									{ 62.3, 40.6, TOWNLONG_STEPPES },
+									{ 62.4, 43.3, TOWNLONG_STEPPES },
+									{ 63.0, 40.8, TOWNLONG_STEPPES },
+									{ 63.4, 43.4, TOWNLONG_STEPPES },
+									{ 63.5, 43.3, TOWNLONG_STEPPES },
+									{ 63.5, 43.5, TOWNLONG_STEPPES },
+									{ 63.8, 41.9, TOWNLONG_STEPPES },
+								},
+								["g"] = { i(84762) },	-- Highly Explosive Yaungol Oil (QI!)
+							}),
 						},
 					}),
 					q(30775, {	-- The Exile

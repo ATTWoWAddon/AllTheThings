@@ -708,7 +708,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			-- Lightforged Draenei Starter Quests
 			q(49772, {	-- For the Alliance
 				["provider"] = { "n", 130993 },	-- Captain Fareeya
-				["coord"] = { 42.96, 24.16, 940 },
+				["coord"] = { 49.5, 44.9, 940 },
 				["races"] = { LIGHTFORGED },
 				["lvl"] = 20,
 				["groups"] = {
