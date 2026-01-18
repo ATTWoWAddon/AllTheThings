@@ -1160,10 +1160,6 @@ app.AddEventHandler("OnReady", function()
 	app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger)
 end)
 
-app.ToggleMainList = function()
-	app:GetWindow("Prime"):Toggle();
-end
-
 -- probably temporary function to fix Retail Lua errors when using AH
 app.TrySearchAHForGroup = function(group)
 	-- nothing works. AH frame is weird
