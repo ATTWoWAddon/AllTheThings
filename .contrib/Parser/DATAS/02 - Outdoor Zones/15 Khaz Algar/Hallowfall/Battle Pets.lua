@@ -17,7 +17,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pet(4456, {	-- Arachnoid Hatchling (PET!)
 					["description"] = "Found commonly in groups around the Ringing Deeps and as backline in all 3 main underground zones.",
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 62.0, 42.6, THE_RINGING_DEEPS },
+					},
 				}),
 				pet(4460, {	-- Arathi Chicken (PET!)
 					["description"] = "Found around farms in Hallowfall, frontline & backline.",
@@ -25,14 +28,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pet(4515, {	-- Azure Flickerfly (PET!)
 					["description"] = "Found most commonly between the Coreway and Hallowfall gates, or around Mereldar and The Weaver's Lair.",
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 43.2, 37.9, THE_RINGING_DEEPS },
+					},
 				}),
 				pet(4457, {	-- Chitin Burrower (PET!)
 					["description"] = "Found commonly in small groups around the 3 main underground zones.",
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 59.4, 41.9, THE_RINGING_DEEPS },
+					},
 				}),
 				pet(4499, {	-- Common Ploughworm (PET!)
-					["coord"] = { 43.8, 49.4, HALLOWFALL },
+					["coords"] = {
+						{ 43.8, 49.4, HALLOWFALL },
+						{ 40.6, 27.9, THE_RINGING_DEEPS },
+					},
 				}),
 				pet(4461, {	-- Greenlands Chicken (PET!)
 					["description"] = "Likely a Rare spawn of Arathi Chicken, can be found frontline & backline. Coords are some confirmed repeat spawn spots.",
@@ -42,10 +54,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				pet(4533, {	-- Meek Bloodlasher (PET!)
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 42.2, 36.9, THE_RINGING_DEEPS },
+						{ 52.6, 68.3, ISLE_OF_DORN },
+					},
 				}),
 				pet(4521, {	-- Subterranean Dartswog (PET!)
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 72.7, 44.2, ISLE_OF_DORN },
+					},
 				}),
 				pet(4544, {	-- Umbral Amalgam (PET!)
 					["description"] = "Only spawns during Beledar's void state. Found around cliffs overlooking water.",
@@ -63,7 +82,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				pet(4516, {	-- Vibrant Glowfly (PET!)
-					-- ["coord"] = { X, Y, HALLOWFALL },
+					["coords"] = {
+						-- { X, Y, HALLOWFALL },
+						{ 57.2, 47.9, THE_RINGING_DEEPS },
+					},
 				}),
 				pet(4510, {	-- Winged Arachnoid (PET!)
 					-- ["coord"] = { X, Y, HALLOWFALL },
