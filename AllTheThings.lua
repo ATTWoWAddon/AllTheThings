@@ -7,9 +7,6 @@
 local appName, app = ...;
 local L = app.L;
 
-local AssignChildren, GetRelativeValue, IsQuestFlaggedCompleted, GetRelativeGroup
-	= app.AssignChildren, app.GetRelativeValue, app.IsQuestFlaggedCompleted, app.GetRelativeGroup
-
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
 
@@ -43,26 +40,15 @@ local print,rawget,rawset,tostring,ipairs,pairs,tonumber,wipe,select,setmetatabl
 
 -- Global WoW API Cache
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
-local InCombatLockdown = _G.InCombatLockdown;
-
--- WoW API Cache;
-local GetSpellName = app.WOWAPI.GetSpellName;
-local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
-
-local C_TradeSkillUI = C_TradeSkillUI;
-local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
-	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
 
 -- App & Module locals
-local ArrayAppend = app.ArrayAppend
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local GetProgressColorText = app.Modules.Color.GetProgressColorText;
-local CleanLink = app.Modules.Item.CleanLink
 local TryColorizeName = app.TryColorizeName;
 local MergeProperties = app.MergeProperties
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
+local GetRelativeValue = app.GetRelativeValue
 local ATTAccountWideData;
 
 local
@@ -80,84 +66,18 @@ app.MergeObjects,
 app.NestObjects,
 app.PriorityNestObjects
 
--- Color Lib;
-local Colorize = app.Modules.Color.Colorize;
-
 -- Coroutine Helper Functions
-local Push = app.Push;
 local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
-local DelayedCallback = app.CallbackHandlers.DelayedCallback;
-local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
 app.FillRunner = app.CreateRunner("fill");
 local LocalizeGlobal = app.LocalizeGlobal
 local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
-local indexOf = app.indexOf;
 
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
 
-do -- TradeSkill Functionality
-local tradeSkillSpecializationMap = app.SkillDB.Specializations
-local specializationTradeSkillMap = app.SkillDB.BaseSkills
-local tradeSkillMap = app.SkillDB.Conversion
-local function GetBaseTradeSkillID(skillID)
-	return tradeSkillMap[skillID] or skillID;
-end
-local function GetTradeSkillSpecialization(skillID)
-	return tradeSkillSpecializationMap[skillID];
-end
-app.GetTradeSkillLine = function()
-	local profInfo = C_TradeSkillUI.GetBaseProfessionInfo();
-	return GetBaseTradeSkillID(profInfo.professionID);
-end
-app.GetSpecializationBaseTradeSkill = function(specializationID)
-	return specializationTradeSkillMap[specializationID];
-end
--- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
-local function RefreshTradeSkillCache()
-	local cache = app.CurrentCharacter.Professions;
-	wipe(cache);
-	-- "Professions" that anyone can "know"
-	for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
-		cache[skillID] = true
-	end
-	-- app.PrintDebug("RefreshTradeSkillCache");
-	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
-	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
-		if j ~= 0 then
-			local prof = select(7, GetProfessionInfo(j));
-			cache[GetBaseTradeSkillID(prof)] = true;
-			-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
-			local specializations = GetTradeSkillSpecialization(prof);
-			if specializations ~= nil then
-				for _,spellID in pairs(specializations) do
-					if spellID and app.IsSpellKnownHelper(spellID) then
-						cache[spellID] = true;
-					end
-				end
-			end
-		end
-	end
-end
-app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
-app.AddEventHandler("OnStartup", function()
-	local conversions = app.Settings.InformationTypeConversionMethods;
-	conversions.professionName = function(skillID)
-		local texture = GetTradeSkillTexture(skillID or 0)
-		local name = GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
-		return texture and "|T"..texture..":0|t "..name or name
-	end;
-end);
-app.AddEventRegistration("SKILL_LINES_CHANGED", function()
-	-- app.PrintDebug("SKILL_LINES_CHANGED")
-	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	DelayedCallback(RefreshTradeSkillCache, 2);
-end)
-end -- TradeSkill Functionality
-
-local GetSpecsString, GetGroupItemIDWithModID, GroupMatchesParams, GetClassesString
-	= app.GetSpecsString, app.GetGroupItemIDWithModID, app.GroupMatchesParams, app.GetClassesString
+local GetGroupItemIDWithModID, GroupMatchesParams
+	= app.GetGroupItemIDWithModID, app.GroupMatchesParams
 
 do
 local ContainsLimit, ContainsExceeded;
@@ -286,11 +206,11 @@ local function AddContainsData(group, tooltipInfo)
 				right = item.right;
 				local specs = entry.specs;
 				if specs and #specs > 0 then
-					right = GetSpecsString(specs, false, false) .. right;
+					right = app.GetSpecsString(specs, false, false) .. right;
 				else
 					local c = entry.c;
 					if c and #c > 0 then
-						right = GetClassesString(c, false, false) .. right;
+						right = app.GetClassesString(c, false, false) .. right;
 					end
 				end
 
@@ -637,7 +557,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 
 	-- Determine if this is a cache for an item
 	if rawlink and not paramB then
-		local itemString = CleanLink(rawlink)
+		local itemString = app.Modules.Item.CleanLink(rawlink)
 		if itemString:match("item") then
 			-- app.PrintDebug("Rawlink SourceID",sourceID,rawlink)
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
@@ -904,7 +824,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 		end
 
 		-- Only need to build groups from the top level
-		AssignChildren(group);
+		app.AssignChildren(group);
 	-- delete sub-groups if there are none
 	elseif #group.g == 0 then
 		group.g = nil;
@@ -1264,10 +1184,10 @@ function app:GetDataCache()
 			if not rawget(t,"TLUG") and app.CurrentCharacter then
 				local primeData = app.CurrentCharacter.PrimeData
 				if primeData then
-					return GetProgressColorText(primeData.progress, primeData.total)
+					return app.Modules.Color.GetProgressColorText(primeData.progress, primeData.total)
 				end
 			end
-			return GetProgressColorText(t.progress, t.total)
+			return app.Modules.Color.GetProgressColorText(t.progress, t.total)
 		end,
 		modeString = function(t)
 			return app.Settings:GetModeString()
@@ -1286,6 +1206,7 @@ function app:GetDataCache()
 	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
+	local g = {};
 	local rootData = setmetatable({
 		key = "ROOT",
 		text = L.TITLE,
@@ -1294,7 +1215,7 @@ function app:GetDataCache()
 		description = L.DESCRIPTION,
 		font = "GameFontNormalLarge",
 		expanded = true,
-		g = {},
+		g = g,
 	}, {
 		__index = function(t, key)
 			local defaultKeyFunc = DefaultRootKeys[key]
@@ -1315,16 +1236,15 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	local g, db = rootData.g, nil;
 
 	-----------------------------------------
 	-- P R I M A R Y   C A T E G O R I E S --
 	-----------------------------------------
 	-- Dungeons & Raids
-	db = app.CreateRawText(GROUP_FINDER);
-	db.g = app.Categories.Instances;
-	db.icon = app.asset("Category_D&R");
-	tinsert(g, db);
+	tinsert(g, app.CreateRawText(GROUP_FINDER, {
+		icon = app.asset("Category_D&R"),
+		g = app.Categories.Instances,
+	}));
 
 	-- Delves
 	if app.Categories.Delves then
@@ -1333,99 +1253,97 @@ function app:GetDataCache()
 
 	-- Zones
 	if app.Categories.Zones then
-		db = app.CreateRawText(BUG_CATEGORY2);
-		db.g = app.Categories.Zones;
-		db.icon = app.asset("Category_Zones")
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
+			icon = app.asset("Category_Zones"),
+			g = app.Categories.Zones,
+		}));
 	end
 
 	-- World Drops
 	if app.Categories.WorldDrops then
-		db = app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, app.Categories.WorldDrops)
-		db.isWorldDropCategory = true;
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
+			isWorldDropCategory = true,
+			g = app.Categories.WorldDrops,
+		}));
 	end
 
 	-- Group Finder
 	if app.Categories.GroupFinder then
-		db = app.CreateRawText(DUNGEONS_BUTTON);
-		db.g = app.Categories.GroupFinder;
-		db.icon = app.asset("Category_GroupFinder")
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
+			icon = app.asset("Category_GroupFinder"),
+			g = app.Categories.GroupFinder,
+		}));
 	end
 
 	-- Expansion Features
 	if app.Categories.ExpansionFeatures then
-		local text = GetCategoryInfo(15301)
-		db = app.CreateRawText(text);
-		db.g = app.Categories.ExpansionFeatures;
-		db.lvl = 10;
-		db.description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.";
-		db.icon = app.asset("Category_ExpansionFeatures");
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(GetCategoryInfo(15301), {
+			icon = app.asset("Category_ExpansionFeatures"),
+			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
+			g = app.Categories.ExpansionFeatures,
+			lvl = 10,
+		}));
 	end
 
 	-- Holidays
 	if app.Categories.Holidays then
-		db = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, app.Categories.Holidays);
-		db.isHolidayCategory = true;
-		db.difficultyID = 19	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
-		db.SortType = "EventStart";
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
+			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
+			isHolidayCategory = true,
+			SortType = "EventStart",
+			g = app.Categories.Holidays,
+		}));
 	end
 
 	-- Events
 	if app.Categories.WorldEvents then
-		db = app.CreateRawText(BATTLE_PET_SOURCE_7);
-		db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
-		db.icon = app.asset("Category_Event");
-		db.g = app.Categories.WorldEvents;
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
+			icon = app.asset("Category_Event"),
+			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
+			g = app.Categories.WorldEvents,
+		}));
 	end
 
 	-- Promotions
 	if app.Categories.Promotions then
-		db = app.CreateRawText(BATTLE_PET_SOURCE_8);
-		db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
-		db.icon = app.asset("Category_Promo");
-		db.g = app.Categories.Promotions;
-		db.isPromotionCategory = true;
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
+			icon = app.asset("Category_Promo"),
+			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+			isPromotionCategory = true,
+			g = app.Categories.Promotions,
+		}));
 	end
 
 	-- Pet Battles
 	if app.Categories.PetBattles then
-		db = app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES);
-		db.g = app.Categories.PetBattles;
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, app.Categories.PetBattles));
 	end
 
 	-- PvP
 	if app.Categories.PVP then
-		db = app.CreateCustomHeader(app.HeaderConstants.PVP, app.Categories.PVP);
-		db.isPVPCategory = true;
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
+			isPVPCategory = true,
+			g = app.Categories.PVP,
+		}));
 	end
 
 	-- Craftables
 	if app.Categories.Craftables then
-		db = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM);
-		db.g = app.Categories.Craftables;
-		db.DontEnforceSkillRequirements = true;
-		db.icon = app.asset("Category_Crafting");
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+			icon = app.asset("Category_Crafting"),
+			DontEnforceSkillRequirements = true,
+			g = app.Categories.Craftables,
+		}));
 	end
 
 	-- Professions
 	if app.Categories.Professions then
-		db = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, app.Categories.Professions);
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, app.Categories.Professions));
 	end
 
 	-- Secrets
 	if app.Categories.Secrets then
-		db = app.CreateCustomHeader(app.HeaderConstants.SECRETS, app.Categories.Secrets);
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, app.Categories.Secrets));
 	end
 
 	-- Housing
@@ -1438,10 +1356,10 @@ function app:GetDataCache()
 	-----------------------------------------
 	-- Character
 	if app.Categories.Character then
-		db = app.CreateRawText(CHARACTER);
-		db.g = app.Categories.Character;
-		db.icon = app.asset("Category_ItemSets");
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(CHARACTER, {
+			icon = app.asset("Category_ItemSets"),
+			g = app.Categories.Character,
+		}));
 	end
 
 	---------------------------------------
@@ -1452,16 +1370,15 @@ function app:GetDataCache()
 
 	-- In-Game Store
 	if app.Categories.InGameShop then
-		db = app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop);
-		tinsert(g, db);
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
 	end
 
 	-- Trading Post
 	if app.Categories.TradingPost then
-		db = app.CreateRawText(TRANSMOG_SOURCE_7);
-		db.g = app.Categories.TradingPost;
-		db.icon = app.asset("Category_TradingPost");
-		tinsert(g, db);
+		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
+			icon = app.asset("Category_TradingPost"),
+			app.Categories.TradingPost
+		}));
 	end
 
 	-- Track Deaths!
@@ -1496,7 +1413,7 @@ function app:GetDataCache()
 
 	-- Achievements
 	if app.Categories.Achievements then
-		db = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, app.Categories.Achievements);
+		local db = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, app.Categories.Achievements);
 		db.sourceIgnored = 1;	-- everything in this category is now cloned!
 		for _, o in ipairs(db.g) do
 			o.sourceIgnored = nil
@@ -1704,7 +1621,7 @@ function app:GetDataCache()
 	local function BuildHiddenWindowData(name, icon, description, category, flags)
 		if not app.Categories[category] then return end
 
-		local windowData = app.CreateRawText(Colorize(name, flags and flags.Color or app.Colors.ChatLinkError), app.Categories[category])
+		local windowData = app.CreateRawText(app.Modules.Color.Colorize(name, flags and flags.Color or app.Colors.ChatLinkError), app.Categories[category])
 		windowData.title = name .. DESCRIPTION_SEPARATOR .. app.Version
 		windowData.icon = app.asset(icon)
 		windowData.description = description
@@ -1744,7 +1661,7 @@ function app:GetDataCache()
 
 		-- local allHiddenSearch = app:BuildTargettedSearchResponse(AllUnsortedGroups, "_nosearch", true, nil, {ParentInclusionCriteria={},SearchCriteria={},SearchValueCriteria={}})
 
-		local windowData = app.CreateRawText(Colorize("All-Hidden", app.Colors.ChatLinkError), {
+		local windowData = app.CreateRawText(app.Modules.Color.Colorize("All-Hidden", app.Colors.ChatLinkError), {
 			-- clone all unhidden groups into this window
 			g = CreateObject(AllHiddenWindows),
 			title = "All-Hidden" .. DESCRIPTION_SEPARATOR .. app.Version,
@@ -1827,7 +1744,7 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 				end
 			end
 			wipe(self.data.g)
-			ArrayAppend(self.data.g, fixed)
+			app.ArrayAppend(self.data.g, fixed)
 		end
 
 		local function ParseIDs(str)
@@ -1941,7 +1858,7 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 				end,
 			})
 			tinsert(self.data.g, resetButton)
-			ArrayAppend(self.data.g, importedRows)
+			app.ArrayAppend(self.data.g, importedRows)
 			self:Rebuild()
 		end
 
@@ -2032,7 +1949,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 				app.PrintDebug("no g?",parent.text)
 				return;
 			end
-			local i = indexOf(og, o) or (o.__dlo and indexOf(og, o.__dlo));
+			local i = app.indexOf(og, o) or (o.__dlo and app.indexOf(og, o.__dlo));
 			if i and i > 0 then
 				-- app.PrintDebug("RemoveSelf",#og,i,o.text)
 				tremove(og, i);
@@ -2319,506 +2236,6 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		app.Modules.Filter.Set.Visible(filterVisible);
 	end
 end)
-app.AddCustomWindowOnUpdate("Tradeskills", function(self, force, got)
-	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
-		return;
-	end
-	if not self.initialized then
-		self.initialized = true;
-		self.SkillsInit = {};
-		self.force = true;
-		self:SetMovable(false);
-		self:SetUserPlaced(false);
-		self:SetClampedToScreen(false);
-		self:RegisterEvent("TRADE_SKILL_SHOW");
-		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-		self:RegisterEvent("TRADE_SKILL_CLOSE");
-		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
-		self:SetData(app.CreateRawText(L.PROFESSION_LIST, {
-			icon = 134940,
-			description = L.PROFESSION_LIST_DESC,
-			visible = true,
-			indent = 0,
-			back = 1,
-			g = { },
-		}))
-
-		local MissingRecipes = {}
-		-- Adds the pertinent information about a given recipeID to the reagentcache
-		local function CacheRecipeSchematic(recipeID)
-			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
-			local craftedItemID = schematic.outputItemID;
-			if not craftedItemID then return end
-			local cachedRecipe = SearchForObject("recipeID",recipeID,"key")
-			local recipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID)
-			if not cachedRecipe then
-				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
-				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
-				-- app.PrintDebug(missing)
-				MissingRecipes[#MissingRecipes + 1] = missing
-			elseif cachedRecipe.u == app.PhaseConstants.NEVER_IMPLEMENTED then
-				-- learned NYI recipe?
-				if recipeInfo and recipeInfo.learned then
-					-- known NYI recipes
-					app.PrintDebug("Learned NYI Recipe",app:SearchLink(cachedRecipe))
-				else
-					-- don't cache reagents for unknown NYI recipes
-					-- app.PrintDebug("Skip NYI Recipe",app:SearchLink(cachedRecipe))
-					return
-				end
-			end
-
-			local reagentCache = app.ReagentsDB
-			local itemRecipes, reagentCount, reagentItemID;
-
-			-- handle other types of recipes maybe
-			if recipeInfo then
-				if recipeInfo.craftable then
-					-- Salvage Recipe harvest
-					if recipeInfo.isSalvageRecipe then
-						-- craftedItemID from salvage...
-						-- in some cases this is the 'actual' ouput of the salvage (TWW Cooking)
-						-- but in many other cases this is a 'fake item' representing 'multiple possible item outputs'
-						-- theoretically we could list this 'fake item' under Profession > Crafted > with all possible outputs
-						-- to allow driving crafting chains
-
-						-- Not really a great way to utilize this output currently, since typically the input drives the output through
-						-- the same Recipe, and it can be variable depending on skill or reagent qualities
-						-- local salvageItems = C_TradeSkillUI_GetSalvagableItemIDs(recipeID)
-						-- for _,salvageItemID in ipairs(salvageItems) do
-						-- 	reagentItemID = salvageItemID
-						-- 	-- only requirement is Reagent -> Recipe -> Crafted | Reagent Count
-						-- 	-- Minimum Structure
-						-- 	-- reagentCache[reagentItemID][<recipeID>] = { craftedItemID, reagentCount }
-						-- 	if reagentItemID then
-						-- 		itemRecipes = reagentCache[reagentItemID];
-						-- 		if not itemRecipes then
-						-- 			itemRecipes = { };
-						-- 			reagentCache[reagentItemID] = itemRecipes;
-						-- 		end
-						-- 		-- app.PrintDebug("Reagent",reagentItemID,"x 5 =>",craftedItemID,"via",app:SearchLink(cachedRecipe))
-						-- 		-- Salvage recipes are always '5' per
-						-- 		itemRecipes[recipeID] = { craftedItemID, 5 };
-						-- 	end
-						-- end
-						return
-					end
-				end
-			end
-			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
-			-- Recipes now have Slots for available Regeants...
-			if #schematic.reagentSlotSchematics == 0 and schematic.hasCraftingOperationInfo then
-				-- Milling Recipes...
-				app.PrintDebug("EMPTY SCHEMATICS",app:SearchLink(cachedRecipe or CreateObject({recipeID=recipeID})))
-				return;
-			end
-
-			-- Typical Recipe harvest
-			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
-				-- reagentType: 0 = sparks?, 1 = required, 2 = optional
-				if reagentSlot.required then
-					reagentCount = reagentSlot.quantityRequired;
-					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
-					for _,reagentSlotSchematic in ipairs(reagentSlot.reagents) do
-						reagentItemID = reagentSlotSchematic.itemID;
-						-- only requirement is Reagent -> Recipe -> Crafted | Reagent Count
-						-- Minimum Structure
-						-- reagentCache[reagentItemID][<recipeID>] = { craftedItemID, reagentCount }
-						if reagentItemID then
-							itemRecipes = reagentCache[reagentItemID];
-							if not itemRecipes then
-								itemRecipes = { };
-								reagentCache[reagentItemID] = itemRecipes;
-							end
-							-- app.PrintDebug("Reagent",reagentItemID,"x",reagentCount,"=>",craftedItemID,"via",recipeID)
-							itemRecipes[recipeID] = { craftedItemID, reagentCount };
-						end
-					end
-				end
-			end
-		end
-		app.HarvestRecipes = function()
-			local reagentsDB = LocalizeGlobal("AllTheThingsHarvestItems", true)
-			reagentsDB.ReagentsDB = app.ReagentsDB
-			local Runner = self:GetRunner()
-			Runner.SetPerFrame(100);
-			local Run = Runner.Run;
-			for spellID,data in pairs(SearchForFieldContainer("spellID")) do
-				Run(CacheRecipeSchematic, spellID);
-			end
-			Runner.OnEnd(function()
-				app.print("Harvested all Sourced Recipes & Reagents => [Reagents]")
-			end);
-		end
-		local function UpdateLocalizedCategories(self, updates)
-			if not updates.Categories then
-				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
-				local categories = AllTheThingsAD.LocalizedCategoryNames;
-				updates.Categories = true;
-				local currentCategoryID;
-				local categoryData = {};
-				local categoryIDs = { C_TradeSkillUI_GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					if not categories[currentCategoryID] then
-						C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
-						if categoryData.name then
-							categories[currentCategoryID] = categoryData.name;
-						end
-					end
-				end
-			end
-		end
-		local function UpdateLearnedRecipes(self, updates)
-			-- Cache learned recipes
-			if not updates.Recipes then
-				-- app.PrintDebug("UpdateLearnedRecipes",self.lastTradeSkillID)
-				if app.Debugging then
-					local reagentsDB = LocalizeGlobal("AllTheThingsHarvestItems", true)
-					reagentsDB.ReagentsDB = app.ReagentsDB
-				end
-				updates.Recipes = true;
-				wipe(MissingRecipes)
-				local categoryData = {};
-				local learned, recipeID = {}, nil;
-				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local spellRecipeInfo, currentCategoryID;
-				local categories = AllTheThingsAD.LocalizedCategoryNames;
-				-- app.PrintDebug("Scanning recipes",#recipeIDs)
-				for i = 1,#recipeIDs do
-					spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
-					-- app.PrintDebug("Recipe",recipeIDs[i])
-					if spellRecipeInfo then
-						recipeID = spellRecipeInfo.recipeID;
-						local cachedRecipe = SearchForObject("recipeID",recipeID,"key")
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
-							if categoryData.name then
-								categories[currentCategoryID] = categoryData.name;
-							end
-						end
-						-- recipe is learned, so cache that it's learned regardless of being craftable
-						if spellRecipeInfo.learned then
-							-- Shadowlands recipes are weird...
-							local rank = spellRecipeInfo.unlockedRecipeLevel or 0;
-							if rank > 0 then
-								-- when the recipeID specifically is available, it will show as available for ALL possible ranks
-								-- so we can check if the next known rank is also considered available for this recipeID
-								spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID, rank + 1);
-								-- app.PrintDebug("NextRankCheck",recipeID,rank + 1, spellRecipeInfo.learned)
-							end
-						end
-						-- recipe is learned, so cache that it's learned regardless of being craftable
-						if spellRecipeInfo and spellRecipeInfo.learned then
-							-- only disabled & enable-type recipes should be un-cached when considered learned
-							if spellRecipeInfo.disabled and cachedRecipe and cachedRecipe.isEnableTypeRecipe then
-								-- disabled learned enable-type recipes shouldn't be marked as known by the character (they require an 'unlock' typically to become usable)
-								if charSpells[recipeID] then
-									charSpells[recipeID] = nil;
-									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:recipeID:"..recipeID);
-									-- app.PrintDebug("Unlearned Disabled Recipe", link);
-								end
-							else
-								charSpells[recipeID] = 1;
-								if not acctSpells[recipeID] then
-									acctSpells[recipeID] = 1;
-									tinsert(learned, recipeID);
-								end
-							end
-						else
-							if spellRecipeInfo.disabled then
-								-- disabled & unlearned recipes shouldn't be marked as known by the character
-								if charSpells[recipeID] then
-									charSpells[recipeID] = nil;
-									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
-									-- app.PrintDebug("Unlearned Disabled Recipe", link);
-								end
-							else
-								-- ignore removal of enable-type recipes when considered unlearned and not disabled
-								if cachedRecipe and cachedRecipe.isEnableTypeRecipe then
-									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:recipeID:"..recipeID);
-									-- app.PrintDebug("Unlearned Enable-Type Recipe", link);
-								else
-									-- non-disabled, unlearned recipes shouldn't be marked as known by the character
-									if charSpells[recipeID] then
-										charSpells[recipeID] = nil;
-										-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
-										-- app.PrintDebug("Unlearned Recipe", link);
-									end
-								end
-							end
-						end
-
-						-- moved to stand-alone on-demand function across all known professions, or called if DEBUG_PRINT is enabled to harvest un-sourced recipes
-						if app.Debugging then
-							CacheRecipeSchematic(recipeID);
-						end
-					end
-				end
-				-- If something new was "learned", then refresh the data.
-				-- app.PrintDebug("Done. learned",#learned)
-				app.UpdateRawIDs("spellID", learned);
-				if #learned > 0 then
-					app.HandleEvent("OnThingCollected", "Recipes")
-					self.force = true;
-				end
-				-- In Debugging, pop a dialog of all found missing recipes
-				if app.Debugging then
-					if #MissingRecipes > 0 then
-						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, "Missing Recipes")
-					else
-						app.PrintDebug("No Missing Recipes!")
-					end
-				end
-			end
-		end
-		-- Custom SearchValueCriteria for requireSkill searches
-		local criteria = {
-			SearchValueCriteria = {
-				-- Include if the field of the group matches the desired value (or via translated requireSkill value matches)
-				-- and if it filters for the current character
-				function(o, field, value)
-					local v = o[field]
-					return v and (v == value or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)
-						and app.CurrentCharacterFilters(o)
-				end
-			}
-		}
-		local function UpdateData(self, updates)
-			-- Open the Tradeskill list for this Profession
-			local data = updates.Data;
-			if not data then
-				-- app.PrintDebug("UpdateData",self.lastTradeSkillID)
-				data = app.CreateProfession(self.lastTradeSkillID);
-				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-				NestObjects(data, app:BuildSearchResponse("requireSkill", data.requireSkill, nil, criteria));
-				-- Profession headers use 'professionID' and don't actually convey a requirement on knowing the skill
-				-- but in a Profession window for that skill it's nice to see what that skill can craft...
-				NestObjects(data, app:BuildSearchResponse("professionID", data.requireSkill));
-				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
-				data.indent = 0;
-				data.visible = true;
-				AssignChildren(data);
-				updates.Data = data;
-				-- only expand the list if this is the first time it is being generated
-				self.ExpandInfo = { Expand = true };
-				self.force = true;
-			end
-			self:SetData(data);
-			self:Update(self.force);
-		end
-		-- Can trigger multiple times quickly, but will only run once per profession in a row
-		self.RefreshRecipes = function(self, doUpdate)
-			-- If it's not yours, don't take credit for it.
-			if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then return; end
-
-			if app.Settings.Collectibles.Recipes then
-				-- app.PrintDebug("RefreshRecipes")
-				-- Cache Learned Spells
-				local skillCache = app.GetRawFieldContainer("spellID");
-				if not skillCache then return; end
-
-				local tradeSkillID = app.GetTradeSkillLine();
-				self.lastTradeSkillID = tradeSkillID;
-				local updates = self.SkillsInit[tradeSkillID] or {};
-				self.SkillsInit[tradeSkillID] = updates;
-
-				if doUpdate then
-					-- allow re-scanning learned Recipes
-					-- app.PrintDebug("Allow Rescan of Recipes")
-					updates.Recipes = nil;
-				end
-
-				local Runner = self:GetRunner()
-				Runner.Run(UpdateLocalizedCategories, self, updates);
-				Runner.Run(UpdateLearnedRecipes, self, updates);
-				Runner.Run(UpdateData, self, updates);
-			end
-		end
-
-		-- TSM Shenanigans
-		self.TSMCraftingVisible = nil;
-		self.SetTSMCraftingVisible = function(self, visible)
-			visible = not not visible;
-			if visible == self.TSMCraftingVisible then
-				return;
-			end
-			self.TSMCraftingVisible = visible;
-			self:SetMovable(true);
-			self:ClearAllPoints();
-			if visible and self.cachedTSMFrame then
-				---@diagnostic disable-next-line: undefined-field
-				local queue = self.cachedTSMFrame.queue;
-				if queue and queue:IsShown() then
-					self:SetPoint("TOPLEFT", queue, "TOPRIGHT", 0, 0);
-					self:SetPoint("BOTTOMLEFT", queue, "BOTTOMRIGHT", 0, 0);
-				else
-					self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
-					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
-				end
-				self:SetMovable(false);
-			-- Skillet compatibility
-			elseif SkilletFrame then
-				self:SetPoint("TOPLEFT", SkilletFrame, "TOPRIGHT", 0, 0);
-				self:SetPoint("BOTTOMLEFT", SkilletFrame, "BOTTOMRIGHT", 0, 0);
-				self:SetMovable(true);
-			elseif TradeSkillFrame then
-				-- Default Alignment on the WoW UI.
-				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-				self:SetMovable(false);
-			elseif ProfessionsFrame then
-				-- Default Alignment on the 10.0 WoW UI
-				self:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT", 0, 0);
-				self:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT", 0, 0);
-				self:SetMovable(false);
-			else
-				self:SetMovable(false);
-				StartCoroutine("TSMWHY", function()
-					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
-					StartCoroutine("TSMWHYPT2", function()
-						local thing = self.TSMCraftingVisible;
-						self.TSMCraftingVisible = nil;
-						self:SetTSMCraftingVisible(thing);
-					end);
-				end);
-				return;
-			end
-			AfterCombatCallback(self.Update, self);
-		end
-		-- Setup Event Handlers and register for events
-		local EventHandlers = {
-			TRADE_SKILL_SHOW = function(self)
-				-- If it's not yours, don't take credit for it.
-				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-					self:SetVisible(false)
-					return false
-				end
-
-				-- Check to see if ATT has information about this profession.
-				local tradeSkillID = app.GetTradeSkillLine()
-				if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
-					self:SetVisible(false)
-					return false
-				end
-
-				if self.TSMCraftingVisible == nil then
-					self:SetTSMCraftingVisible(false)
-				end
-				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-					self:SetVisible(true)
-				end
-				self:RefreshRecipes(true)
-			end,
-			TRADE_SKILL_CLOSE = function(self)
-				self:SetVisible(false)
-			end,
-		}
-		EventHandlers.GARRISON_TRADESKILL_NPC_CLOSED = EventHandlers.TRADE_SKILL_CLOSE
-
-		self:SetScript("OnEvent", function(self, e, ...)
-			-- app.PrintDebug("Tradeskills.event",e,...)
-			local handler = EventHandlers[e]
-			if not handler then return end
-
-			-- app.PrintDebug("Tradeskills.event.handle",e)
-			handler(self, e, ...)
-			-- app.PrintDebugPrior("Tradeskills.event.done")
-		end)
-		return
-	end
-	if self:IsVisible() then
-		if TSM_API and TSMAPI_FOUR then
-			if not self.cachedTSMFrame then
-				for i,child in ipairs({UIParent:GetChildren()}) do
-					---@class ATTChildFrameTemplate: Frame
-					---@field headerBgCenter any
-					local f = child;
-					if f.headerBgCenter then
-						self.cachedTSMFrame = f;
-						local oldSetVisible = f.SetVisible;
-						local oldShow = f.Show;
-						local oldHide = f.Hide;
-						f.SetVisible = function(frame, visible)
-							oldSetVisible(frame, visible);
-							self:SetTSMCraftingVisible(visible);
-						end
-						f.Hide = function(frame)
-							oldHide(frame);
-							self:SetTSMCraftingVisible(false);
-						end
-						f.Show = function(frame)
-							oldShow(frame);
-							self:SetTSMCraftingVisible(true);
-						end
-						if self.gettinMadAtDumbNamingConventions then
-							TSMAPI_FOUR.UI.NewElement = self.OldNewElement;
-							self.gettinMadAtDumbNamingConventions = nil;
-							self.OldNewElement = nil;
-						end
-						self:SetTSMCraftingVisible(f:IsShown());
-						return;
-					end
-				end
-				if not self.gettinMadAtDumbNamingConventions then
-					self.gettinMadAtDumbNamingConventions = true;
-					self.OldNewElement = TSMAPI_FOUR.UI.NewElement;
-					---@diagnostic disable-next-line: duplicate-set-field
-					TSMAPI_FOUR.UI.NewElement = function(...)
-						AfterCombatCallback(self.Update, self);
-						return self.OldNewElement(...);
-					end
-				end
-			end
-		elseif TSMCraftingTradeSkillFrame then
-			-- print("TSMCraftingTradeSkillFrame")
-			if not self.cachedTSMFrame then
-				local f = TSMCraftingTradeSkillFrame;
-				self.cachedTSMFrame = f;
-				local oldSetVisible = f.SetVisible;
-				local oldShow = f.Show;
-				local oldHide = f.Hide;
-				f.SetVisible = function(frame, visible)
-					oldSetVisible(frame, visible);
-					self:SetTSMCraftingVisible(visible);
-				end
-				f.Hide = function(frame)
-					oldHide(frame);
-					self:SetTSMCraftingVisible(false);
-				end
-				f.Show = function(frame)
-					oldShow(frame);
-					self:SetTSMCraftingVisible(true);
-				end
-				if f.queueBtn then
-					local setScript = f.queueBtn.SetScript;
-					f.queueBtn.SetScript = function(frame, e, callback)
-						if e == "OnClick" then
-							setScript(frame, e, function(...)
-								if callback then callback(...); end
-
-								local thing = self.TSMCraftingVisible;
-								self.TSMCraftingVisible = nil;
-								self:SetTSMCraftingVisible(thing);
-							end);
-						else
-							setScript(frame, e, callback);
-						end
-					end
-					f.queueBtn:SetScript("OnClick", f.queueBtn:GetScript("OnClick"));
-				end
-				self:SetTSMCraftingVisible(f:IsShown());
-				return;
-			end
-		end
-
-		-- Update the window and all of its row data
-		self:DefaultUpdate(force or self.force, got);
-		self.force = nil;
-	end
-end)
 app.AddCustomWindowOnUpdate("WorldQuests", function(self, force, got)
 	-- localize some APIs
 	local C_TaskQuest_GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsOnMap;
@@ -2840,7 +2257,7 @@ app.AddCustomWindowOnUpdate("WorldQuests", function(self, force, got)
 				["description"] = L.UPDATE_WORLD_QUESTS_DESC,
 				["hash"] = "funUpdateWorldQuests",
 				["OnClick"] = function(data, button)
-					Push(self, "WorldQuests-Rebuild", self.Rebuild);
+					app.Push(self, "WorldQuests-Rebuild", self.Rebuild);
 					return true;
 				end,
 				["OnUpdate"] = app.AlwaysShowUpdate,
@@ -3157,7 +2574,7 @@ app.AddCustomWindowOnUpdate("WorldQuests", function(self, force, got)
 					['description'] = L.CLEAR_WORLD_QUESTS_DESC,
 					['hash'] = "funClearWorldQuests",
 					['OnClick'] = function(data, button)
-						Push(self, "WorldQuests-Clear", self.Clear);
+						app.Push(self, "WorldQuests-Clear", self.Clear);
 						return true;
 					end,
 					['OnUpdate'] = app.AlwaysShowUpdate,
@@ -3215,7 +2632,7 @@ app.AddCustomWindowOnUpdate("WorldQuests", function(self, force, got)
 				end
 
 				-- Heroic Deeds
-				if self.includePermanent and not (IsQuestFlaggedCompleted(32900) or IsQuestFlaggedCompleted(32901)) then
+				if self.includePermanent and not (app.IsQuestFlaggedCompleted(32900) or app.IsQuestFlaggedCompleted(32901)) then
 					local mapObject = app.CreateMapWithStyle(424);
 					NestObject(mapObject, GetPopulatedQuestObject(app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901));
 					MergeObject(temp, mapObject);
@@ -3561,7 +2978,7 @@ local function InitDataCoroutine()
 	end
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
-	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
+	if not AllTheThingsProfiles then app.CallbackHandlers.DelayedCallback(app.SetupProfiles, 5); end
 
 	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
 	app.Settings:ApplyProfile();
