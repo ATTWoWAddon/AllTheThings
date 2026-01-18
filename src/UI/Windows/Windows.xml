@@ -47,4 +47,5 @@
 	<Script file="Toys.lua"/>
 	<Script file="Tradeskills.lua"/>
 	<Script file="Unsorted.lua"/>
+	<Script file="World Quests.lua"/>
 </Ui>

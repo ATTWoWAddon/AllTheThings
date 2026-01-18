@@ -63,4 +63,5 @@
 	<Script file="Raid Assistant.Retail.lua"/>
 	<Script file="Random.Retail.lua"/>
 	<Script file="Tradeskills.Retail.lua"/>
+	<Script file="World Quests.lua"/>
 </Ui>

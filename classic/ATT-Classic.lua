@@ -7,8 +7,6 @@
 local appName, app = ...;
 local L = app.L;
 
-local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
-
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
 
@@ -38,8 +36,6 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Global API cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_DateAndTime_GetServerTimeLocal
-	= C_DateAndTime.GetServerTimeLocal;
 local ipairs, pairs, rawset, rawget, select, tinsert, tremove
 	= ipairs, pairs, rawset, rawget, select, tinsert, tremove;
 local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
@@ -61,16 +57,16 @@ local GetSpellLink = app.WOWAPI.GetSpellLink;
 -- App & Module locals
 local contains = app.contains;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local CloneClassInstance, GetRelativeValue
+	= app.CloneClassInstance, app.GetRelativeValue;
+local SearchForField = app.SearchForField;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local Colorize = app.Modules.Color.Colorize;
 local HexToARGB = app.Modules.Color.HexToARGB;
 local RGBToHex = app.Modules.Color.RGBToHex;
 local GetUnobtainableTexture
-app.IsSpellKnownHelper
-	= IsSpellKnown;
+app.IsSpellKnownHelper = IsSpellKnown;
 
 -- Locals from future-loaded Modules
 app.AddEventHandler("OnLoad", function()
@@ -1178,7 +1174,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if isTopLevelSearch and group.g then
 		group.total = 0;
 		group.progress = 0;
-		--AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
+		--app.AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
 		app.UpdateGroups(group, group.g);
 		if group.collectible then
 			group.total = group.total + 1;
@@ -1741,14 +1737,14 @@ function app:GetDataCache()
 		}));
 
 		-- Now assign the parent hierarchy for this cache.
-		AssignChildren(rootData);
+		app.AssignChildren(rootData);
 
 		-- Now that we have all of the root data, cache it.
 		app.CacheFields(rootData);
 
 		-- Determine how many expansionID instances could be found
 		local expansionCounter = 0;
-		local expansionCache = SearchForFieldContainer("expansionID");
+		local expansionCache = app.SearchForFieldContainer("expansionID");
 		for key,value in pairs(expansionCache) do
 			expansionCounter = expansionCounter + 1;
 		end
@@ -2025,7 +2021,7 @@ app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 		for specID,spellID in pairs(app.SkillDB.SpecializationSpells) do
 			app.GetSpellName(spellID);
 		end
-		for spellID,g in pairs(SearchForFieldContainer("spellID")) do
+		for spellID,g in pairs(app.SearchForFieldContainer("spellID")) do
 			local rank;
 			for i,o in ipairs(g) do
 				if o.rank then
