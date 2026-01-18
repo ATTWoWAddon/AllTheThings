@@ -57,6 +57,7 @@
 	<Script file="Bounty.Retail.lua"/>
 	<Script file="Future Unobtainables.Retail.lua"/>
 	<Script file="Import.lua"/>
+	<Script file="List.lua"/>
 	<Script file="Maps.Retail.lua"/>
 	<Script file="Mini List.Retail.lua"/>
 	<Script file="Item Filter.Retail.lua"/>
