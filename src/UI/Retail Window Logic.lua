@@ -793,7 +793,7 @@ local function Refresh(self)
 		end
 	end
 end
-local StoreWindowPosition = function(self)
+local function RecordSettingsForWindow(self)
 	if AllTheThingsProfiles then
 		local key = app.Settings:GetProfile();
 		local profile = AllTheThingsProfiles.Profiles[key];
@@ -864,7 +864,7 @@ local function StopMovingOrSizing(self)
 	self.isMoving = nil;
 	-- store the window position if the window is visible (this is called on new popouts prior to becoming visible for some reason)
 	if self:IsVisible() then
-		self:StorePosition();
+		self:RecordSettings();
 	end
 end
 local function StartMovingOrSizing(self, fromChild)
@@ -1021,7 +1021,7 @@ local function StopATTMoving(self)
 	self.isMoving = nil;
 	-- store the window position if the window is visible (this is called on new popouts prior to becoming visible for some reason)
 	if self:IsVisible() then
-		self:StorePosition()
+		self:RecordSettings()
 	end
 end
 local function SelfMoveRefresher(self)
@@ -1076,7 +1076,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Refresh = function(...) return Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
-	window.StorePosition = StoreWindowPosition;
+	window.RecordSettings = RecordSettingsForWindow;
 	window.SetData = SetData;
 	window.BuildData = BuildData;
 	window.GetRunner = GetRunner;
@@ -1515,8 +1515,8 @@ app.AddEventHandler("RowOnClick", function(self, button)
 			return true;
 		end
 
-		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
+		local window = self:GetParent():GetParent();
 		if button == "RightButton" then
 			if IsAltKeyDown() then
 				app.AddTomTomWaypoint(reference);
@@ -1674,29 +1674,32 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					return true;
 				end
 			end
+			
 			if self.index > 0 then
 				reference.expanded = not reference.expanded;
 				window:Update();
-			elseif not reference.expanded then
-				reference.expanded = true;
-				window:Update();
 			else
-				-- Allow the First Frame to move the parent.
-				-- Toggle lock/unlock by holding Alt when clicking the header of a Window if it is movable
-				if IsAltKeyDown() and window:IsMovable() then
-					local locked = not window.isLocked;
-					window.isLocked = locked;
-					window:StorePosition();
+				if not reference.expanded then
+					reference.expanded = true;
+					window:Update();
+				end
+				if window:IsMovable() then
+					-- Allow the First Frame to move the parent.
+					if IsAltKeyDown() then
+						-- Toggle lock/unlock by holding Alt when clicking the header of a Window if it is movable
+						window.isLocked = not window.isLocked;
+						window:RecordSettings();
 
-					-- force tooltip to refresh since locked state drives tooltip content
-					self:GetScript("OnLeave")(self)
-					self:GetScript("OnEnter")(self)
-				else
-					self:SetScript("OnMouseUp", function(self)
-						self:SetScript("OnMouseUp", nil);
-						window:StopATTMoving()
-					end);
-					window:ToggleATTMoving()
+						-- force tooltip to refresh since locked state drives tooltip content
+						self:GetScript("OnLeave")(self)
+						self:GetScript("OnEnter")(self)
+					else
+						self:SetScript("OnMouseUp", function(self)
+							self:SetScript("OnMouseUp", nil);
+							window:StopATTMoving()
+						end);
+						window:ToggleATTMoving()
+					end
 				end
 			end
 		end

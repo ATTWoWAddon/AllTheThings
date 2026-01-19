@@ -1731,7 +1731,7 @@ app.SetupProfiles = function()
 
 	-- pull in window data for the default profile
 	for _,window in pairs(app.Windows) do
-		window:StorePosition();
+		window:RecordSettings();
 	end
 
 	app.print("Initialized ATT Profiles!");

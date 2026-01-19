@@ -525,8 +525,8 @@ local function RowOnClick(self, button)
 			return true;
 		end
 
-		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
+		local window = self:GetParent():GetParent();
 		if button == "RightButton" then
 			if IsAltKeyDown() then
 				app.AddTomTomWaypoint(reference, false);
@@ -1594,16 +1594,16 @@ function app:CreateWindow(suffix, settings)
 		
 		-- Replace some functions to allow settings to be recorded.
 		local oldSetBackdropColor = window.SetBackdropColor;
+		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
+		local oldStopMovingOrSizing = window.StopMovingOrSizing;
 		window.SetBackdropColor = function(self, ...)
 			oldSetBackdropColor(self, ...);
 			self:RecordSettings();
 		end
-		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
 		window.SetBackdropBorderColor = function(self, ...)
 			oldSetBackdropBorderColor(self, ...);
 			self:RecordSettings();
 		end
-		local oldStopMovingOrSizing = window.StopMovingOrSizing;
 		window.StopMovingOrSizing = function(self, ...)
 			oldStopMovingOrSizing(self, ...);
 			self:RecordSettings();
