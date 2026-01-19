@@ -1425,7 +1425,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}),
 				{
 					i(24243, {	-- Adamantite Powder
-						["provider"] = { "i", 23425 },	-- Adamantite Ore
+						["cost"] = {{ "i", 23425, 5 }},	-- Adamantite Ore
 					}),
 				}
 			),
