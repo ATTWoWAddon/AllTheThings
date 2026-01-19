@@ -469,7 +469,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Dust:
 			i(34054, {	-- Infinite Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills at ilvl 130 (unscaled).",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
 				-- #endif
@@ -477,14 +477,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Essences:
 			i(34055, {	-- Greater Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons at ilvl 130 (unscaled), except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(34056, {	-- Lesser Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons at ilvl 130 (unscaled), except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
 				-- #endif
@@ -492,14 +492,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Shards and crystals:
 			i(34057, {	-- Abyss Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear at ilvl 150 (unscaled).",
+				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
 				-- #endif
 			}),
 			i(34052, {	-- Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear at ilvl 140 (unscaled).",
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
 				-- #endif

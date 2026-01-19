@@ -443,7 +443,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Dust:
 			i(22445, {	-- Arcane Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills at ilvl 130 (unscaled).",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
 				-- #endif
@@ -451,14 +451,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Essences:
 			i(22446, {	-- Greater Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(22447, {	-- Lesser Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
 				-- #endif
@@ -466,21 +466,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Shards and crystals:
 			i(22449, {	-- Large Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled).",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
 				-- #endif
 			}),
 			i(22448, {	-- Small Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled). This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
 				-- #endif
 			}),
 			i(22450, {	-- Void Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear at ilvl 142 (unscaled).",
+				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
 				-- #endif

@@ -361,7 +361,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- Dust:
 			i(52555, {	-- Hypnotic Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 35-36.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
 				-- #endif
@@ -369,14 +369,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- Essences:
 			i(52719, {	-- Greater Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 36-37, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(52718, {	-- Lesser Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 35-36, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
 				-- #endif
@@ -384,21 +384,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- Shards and crystals:
 			i(52721, {	-- Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 37.",
+				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
 				-- #endif
 			}),
 			i(52722, {	-- Maelstrom Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear at ilvl 37.",
+				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
 				-- #endif
 			}),
 			i(52720, {	-- Small Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 36.",
+				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
 				-- #endif
