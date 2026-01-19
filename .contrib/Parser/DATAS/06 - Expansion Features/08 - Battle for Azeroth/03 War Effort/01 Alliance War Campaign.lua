@@ -1788,14 +1788,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	n(WAR_EFFORT, {
 		n(WAR_CAMPAIGN_ALLIANCE, {
 			n(QUESTS, {
-				q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
-							-- 58013 triggered randomly during a Black Empire assault in uldum
-							-- 58013 triggered when looting the "Grimoire of the Other Side" as Horde during "Spirits' belongings"
-							-- 58013 triggered when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
-							-- 58013 triggered after first time killing Honey Smasher, but that also popped while doing the Alliance war campaign "This Ain't Mine."
-							-- 58013 triggered while killing mobs for Dog Bone's Bone in Maldraxxus (05/11/22)
-							-- 58013 triggered while killing first pack of the mobs in Freehold (02/01/25)
-							-- 58013 triggered while killing mobs for wq "Against the Storm" in Tirigarde Sound (19/06/25)
 				q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
 				q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
 				q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted

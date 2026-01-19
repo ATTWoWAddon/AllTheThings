@@ -659,6 +659,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(53206),	-- Alliance Arathi Warfront unlock
 		q(53220),	-- Horde Arathi Warfront unlock
 		q(54410),	-- Horde Darkshore Warfront unlock
+
+		-- Unknown
+		q(58013),	-- Triggers literally anywhere and everywhere. No direct source was ever found for more than 7 years.
 	})),
 
 	------------------
