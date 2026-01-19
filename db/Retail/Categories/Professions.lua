@@ -1462,7 +1462,9 @@ q(39346,{awp=70003,coords={a[343]},cost={{"i",127845,10},{"i",127844,10},{"i",12
 q(39347,{awp=70003,coords={a[343]},lvl=45,qgs=a[518],requireSkill=171,sourceQuests={39346}}),
 q(39349,{awp=70003,coords={a[365]},cost={{"i",127849,1}},description="The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",lvl=45,maps={751,752,753,754,755,756},qgs=a[513],requireSkill=171,sourceQuests=a[294]}),
 q(39348,{awp=70003,coords={a[365]},cost={{"i",127850,1}},description="The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",lvl=45,maps=a[481],qgs=a[513],requireSkill=171,sourceQuests=a[294]}),
-q(39350,{awp=70003,coords={a[365]},cost={{"i",127847,1}},description="The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",lvl=45,maps=a[482],qgs=a[513],requireSkill=171,sourceQuests=a[294]}),
+q(39350,{awp=70003,coords={a[365]},cost={{"i",127847,1}},description="The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",lvl=45,maps=a[482],qgs=a[513],requireSkill=171,sourceQuests=a[294],g={
+o(249462,{requireSkill=171,g={
+i(136819,{requireSkill=171})}})}}),
 q(39351,{awp=70003,coords={a[365]},lvl=45,maps=a[504],qgs=a[513],requireSkill=171,sourceQuests={39348,39349,39350},g={
 i(136820,{requireSkill=171})}}),
 q(42081,{awp=70003,coords={a[365]},lvl=45,qgs=a[513],requireSkill=171,sourceQuests={39351}}),
@@ -1754,7 +1756,10 @@ r(183279,{requireSkill=164,u=5}),
 r(183281,{requireSkill=164,u=5}),
 r(183283,{requireSkill=164,u=5}),
 i(124051,{requireSkill=164}),
+i(128777,{requireSkill=164}),
 i(124007,{requireSkill=164}),
+i(124009,{requireSkill=164}),
+i(124010,{requireSkill=164}),
 i(124008,{requireSkill=164}),
 i(124005,{requireSkill=164})}}),
 q(38563,{awp=70003,coords={a[365]},lvl=10,qgs=a[537],requireSkill=164,sourceQuests={38500}}),
@@ -5853,9 +5858,10 @@ i(146952,{requireSkill=197,spellID=240094}),
 i(147437,{requireSkill=197,spellID=103583}),
 i(146710,{b=1,requireSkill=197}),
 i(146711,{b=1,requireSkill=197})}}),
-q(48074,{awp=70300,lvl=45,requireSkill=197,sourceQuests=a[381],g={
+q(48074,{awp=70300,coords={{42.8,61.8,884}},lvl=45,requireSkill=197,sourceQuests=a[381],g={
 r(247807,{learnedAt=90,requireSkill=197,skillID=2534}),
-i(151874,{requireSkill=197})}})}}),
+o(272745,{coords={{53.8,23.2,882}},requireSkill=197,g={
+i(151874,{requireSkill=197})}})}})}}),
 x(8,{requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18774,{providers={{"s",292946}},requireSkill=197}),
