@@ -32,8 +32,6 @@ local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local GetIndicatorIcon = app.GetIndicatorIcon;
 local wipearray = app.wipearray
 
-app.Windows = {};
-
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
 local customWindowInits = {};
@@ -233,6 +231,7 @@ local function UpdateWindow(self, force, got)
 				-- print("any data",#self.Container,#rowData,#data)
 				if #rowData < 2 and not app.ThingKeys[data.key] then
 					rowData[#rowData + 1] = app.CreateRawText(L.NO_ENTRIES, {
+						preview = app.asset("Discord_2_128"),
 						description = L.NO_ENTRIES_DESC,
 						collectible = 1,
 						collected = 1,
@@ -1220,9 +1219,13 @@ function app:CreateWindow(suffix, settings)
 		end
 		if settings.Preload then
 			-- This window still needs to be loaded right away
-			app.AddEventHandler("OnReady", function()
-				app:GetWindow(suffix)
-			end)
+			if app.IsReady then
+				return app:GetWindow(suffix);
+			else
+				app.AddEventHandler("OnReady", function()
+					app:GetWindow(suffix)
+				end)
+			end
 		end
 	end
 	--return app:GetWindow(suffix);

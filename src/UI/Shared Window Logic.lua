@@ -93,3 +93,6 @@ local function GetIndicatorIcon(group)
 	return GetUnobtainableTexture(group);
 end
 app.GetIndicatorIcon = GetIndicatorIcon
+
+-- Window Creation
+app.Windows = {};

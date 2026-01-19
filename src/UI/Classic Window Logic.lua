@@ -1001,22 +1001,17 @@ CreateRow = function(self)
 end
 
 -- Window Creation
-app.Windows = {};
-local defaultBackdrop = {
-	bgFile = 137056,
-	edgeFile = 137057,
-	tile = true, tileSize = 16, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-local defaultNoEntriesRow = {
-	text = "No data was found.",
+local defaultNoEntriesRow = app.CreateRawText(L.NO_ENTRIES, {
+	OnClick = app.UI.OnClick.IgnoreRightClick,
 	preview = app.asset("Discord_2_128"),
-	description = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
-};
+	description = L.NO_ENTRIES_DESC,
+});
 local AllWindowSettings;
 local function ApplySettingsForWindow(self, windowSettings)
 	local oldRecordSettings = self.RecordSettings;
 	self.RecordSettings = app.EmptyFunction;
+	self:SetMovable(windowSettings.movable);
+	self:SetResizable(windowSettings.resizable);
 	if windowSettings.scale then self:SetScale(windowSettings.scale); end
 	if windowSettings.movable then
 		self:ClearAllPoints();
@@ -1031,65 +1026,73 @@ local function ApplySettingsForWindow(self, windowSettings)
 	if windowSettings.width then
 		self:SetSize(windowSettings.width, windowSettings.height);
 	end
-	self:SetMovable(windowSettings.movable);
-	self:SetResizable(windowSettings.resizable);
-	self:SetVisible(windowSettings.visible);
 	if windowSettings.backdrop then
 		self:SetBackdrop(windowSettings.backdrop);
 	end
 	if windowSettings.backdropColor then
 		local r, g, b, a = unpack(windowSettings.backdropColor);
-		self:SetBackdropColor(r or 0, g or 0, b or 0, a or 1);
+		self:SetBackdropColor(r or 0, g or 0, b or 0, a or 0);
 	end
 	if windowSettings.borderColor then
 		local r, g, b, a = unpack(windowSettings.borderColor);
-		self:SetBackdropBorderColor(r or 0, g or 0, b or 0, a or 1);
+		self:SetBackdropBorderColor(r or 0, g or 0, b or 0, a or 0);
 	end
 	if windowSettings.Progress and self.data then
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
 	end
+	self:SetVisible(windowSettings.visible);
+	self:SetFrameLevel(9999);
 	self.RecordSettings = oldRecordSettings;
 end
-local function BuildSettingsForWindow(self, windowSettings, isForDefaults)
-	local scale = self:GetScale();
-	if scale then
-		windowSettings.scale = scale;
-		local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
-		if xOfs then
-			windowSettings.width = self:GetWidth();
-			windowSettings.height = self:GetHeight();
-			windowSettings.x = xOfs;
-			windowSettings.y = yOfs;
-			windowSettings.point = point;
-			windowSettings.relativePoint = relativePoint;
-			windowSettings.relativeTo = relativeTo and relativeTo:GetName();
-		end
+local function BuildDefaultsForWindow(self)
+	local defaults = {
+		backdrop = {
+			bgFile = 137056,
+			edgeFile = 137057,
+			tile = true, tileSize = 16, edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 }
+		},
+		resizable = true,
+		visible = false,
+		movable = true,
+		x = 0,
+		y = 0,
+		width = 300,
+		height = 300,
+	};
+	if app.Settings._Initialize then
+		defaults.scale = app.Settings and app.Settings._Initialize and (app.Settings:GetTooltipSetting(self.Suffix == "Prime" and "MainListScale" or "MiniListScale")) or 1;
+		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
+		defaults.backdropColor = { rBg, gBg, bBg, aBg };
+		defaults.borderColor = { rBd, gBd, bBd, aBd };
 	else
-		windowSettings.scale = 1;
-		windowSettings.x = 0;
-		windowSettings.y = 0;
+		defaults.scale = 1;
+		defaults.backdropColor = { 0, 0, 0, 1 };
+		defaults.borderColor = { 1, 1, 1, 1 };
 	end
+	return defaults;
+end
+local function BuildSettingsForWindow(self, windowSettings)
+	local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
+	if xOfs then
+		windowSettings.width = self:GetWidth();
+		windowSettings.height = self:GetHeight();
+		windowSettings.x = xOfs;
+		windowSettings.y = yOfs;
+		windowSettings.point = point;
+		windowSettings.relativePoint = relativePoint;
+		windowSettings.relativeTo = relativeTo and relativeTo:GetName();
+	end
+	windowSettings.scale = self:GetScale();
 	windowSettings.visible = not not self:IsVisible();
 	windowSettings.movable = not not self:IsMovable();
 	windowSettings.resizable = not not self:IsResizable();
-	if isForDefaults then
-		windowSettings.backdrop = defaultBackdrop;
-		if app.IsReady and app.Settings.GetWindowColors then
-			local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
-			windowSettings.backdropColor = { rBg, gBg, bBg, aBg };
-			windowSettings.borderColor = { rBd, gBd, bBd, aBd };
-		else
-			windowSettings.backdropColor = { 0, 0, 0, 1 };
-			windowSettings.borderColor = { 1, 1, 1, 1 };
-		end
-	else
-		windowSettings.backdrop = self:GetBackdrop();
-		local r, g, b, a = self:GetBackdropColor();
-		windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
-		r, g, b, a = self:GetBackdropBorderColor();
-		windowSettings.borderColor = { r or 0, g or 0, b or 0, a or 1 };
-	end
+	windowSettings.backdrop = self:GetBackdrop();
+	local r, g, b, a = self:GetBackdropColor();
+	windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
+	r, g, b, a = self:GetBackdropBorderColor();
+	windowSettings.borderColor = { r or 0, g or 0, b or 0, a or 1 };
 	if self.data then
 		windowSettings.Progress = self.data.progress;
 		windowSettings.Total = self.data.total;
@@ -1512,83 +1515,62 @@ function app:CreateWindow(suffix, settings)
 		-- Create the window instance.
 		---@class ATTWindow: BackdropTemplate, ATTFrameClass
 		window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		app.Windows[suffix] = window;
-		window.data = nil;
-		window.Settings = nil;
-		window.Suffix = suffix;
-		window.SetData = SetWindowData;
-		window.BuildCategory = BuildCategory;
-		window.AllowCompleteSound = settings.AllowCompleteSound;
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
 		window:SetScript("OnMouseUp", StopMovingOrSizing);
 		window:SetScript("OnHide", StopMovingOrSizing);
-		window:SetBackdrop(defaultBackdrop);
-		window:SetBackdropBorderColor(1, 1, 1, 1);
-		window:SetBackdropColor(0, 0, 0, 1);
 		window:SetClampedToScreen(true);
 		window:SetToplevel(true);
 		window:EnableMouse(true);
-		window:SetMovable(true);
-		window:SetResizable(true);
 		if window.SetResizeBounds then
 			window:SetResizeBounds(96, 32);
 		else
 			---@diagnostic disable-next-line: undefined-field
 			window:SetMinResize(96, 32);
 		end
-		window:SetSize(300, 300);
-		window:Hide();
+		window.SetVisible = SetWindowVisible;
+		window.Toggle = ToggleWindow;
+		window.Suffix = suffix;
+		app.Windows[suffix] = window;
 		
-		if app.IsReady then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
-
-		-- Whether or not to debug things
-		local debugging = settings.Debugging;
-
 		-- Load / Save, which allows windows to keep track of key pieces of information.
-		window.ClearSettings = ClearSettingsForWindow;
-		if not settings.IgnoreSettings then
-			local defaults = {};
-			BuildSettingsForWindow(window, defaults, true);
-			if settings.Defaults then
-				for key,value in pairs(settings.Defaults) do
-					defaults[key] = value;
-				end
+		local defaults = BuildDefaultsForWindow(window);
+		if settings.Defaults then
+			for key,value in pairs(settings.Defaults) do
+				defaults[key] = value;
 			end
-			function window:Load()
-				local windowSettings = self.Settings;
-				if not windowSettings then
-					return;
-				end
-				setmetatable(windowSettings, { __index = defaults });
-				if settings.OnLoad then
-					settings.OnLoad(self, windowSettings);
-				end
-				ApplySettingsForWindow(self, windowSettings);
-			end
-			function window:RecordSettings()
-				local windowSettings = self.Settings;
-				if windowSettings then
-					BuildSettingsForWindow(self, windowSettings);
-				end
-				return windowSettings;
-			end
-			function window:Save()
-				local windowSettings = self:RecordSettings();
-				if windowSettings and settings.OnSave then
-					settings.OnSave(self, windowSettings);
-				end
-			end
-		else
-			window.Load = settings.OnLoad or app.EmptyFunction;
-			window.RecordSettings = app.EmptyFunction;
-			window.Save = settings.OnSave or app.EmptyFunction;
 		end
+		ApplySettingsForWindow(window, defaults);
+		function window:Load()
+			local windowSettings = self.Settings;
+			if not windowSettings then
+				return;
+			end
+			setmetatable(windowSettings, { __index = defaults });
+			if settings.OnLoad then
+				settings.OnLoad(self, windowSettings);
+			end
+			ApplySettingsForWindow(self, windowSettings);
+		end
+		function window:RecordSettings()
+			local windowSettings = self.Settings;
+			if windowSettings then
+				BuildSettingsForWindow(self, windowSettings);
+			end
+			return windowSettings;
+		end
+		function window:Save()
+			local windowSettings = self:RecordSettings();
+			if windowSettings and settings.OnSave then
+				settings.OnSave(self, windowSettings);
+			end
+		end
+
+		
+		window.data = nil;
+		window.Settings = nil;
+		window.SetData = SetWindowData;
+		window.BuildCategory = BuildCategory;
+		window.AllowCompleteSound = settings.AllowCompleteSound;
 
 
 
@@ -1619,8 +1601,9 @@ function app:CreateWindow(suffix, settings)
 				self:RecordSettings();
 			end
 		end
-		window.SetVisible = SetWindowVisible;
-		window.Toggle = ToggleWindow;
+		
+		-- Whether or not to debug things
+		local debugging = settings.Debugging;
 
 		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
@@ -2607,7 +2590,7 @@ function app:CreateMiniListForGroup(group)
 		end,
 		OnSave = function(self, settings)
 			if not settings.visible then
-				self:ClearSettings();
+				ClearSettingsForWindow(self);
 			end
 		end,
 	});

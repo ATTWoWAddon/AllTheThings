@@ -288,7 +288,8 @@ settings.Initialize = function(self)
 		self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	end
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-
+	settings._Initialize = true
+	
 	-- TODO: need to properly use other libraries to create minimap button if delayed...
 	-- but other addons only handle pre-existing minimap buttons when they load, so for now move back to the order it was
 	app.SetMinimapButtonSettings(
