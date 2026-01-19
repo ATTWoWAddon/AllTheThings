@@ -1,18 +1,18 @@
 -- App locals
-local appName, app = ...;
-local L = app.L
+local _, app = ...;
+local L = app.L;
 
-local wipe,pairs,math,pcall,type,rawget,tostring,select,tremove,CreateFrame,GetCursorPosition,SetPortraitTexture,math_floor
-	= wipe,pairs,math,pcall,type,rawget,tostring,select,tremove,CreateFrame,GetCursorPosition,SetPortraitTexture,math.floor
+-- Global locals
+local rawget,tostring
+	= rawget,tostring;
+local ipairs,pairs,pcall,math,select,tremove,wipe
+	= ipairs,pairs,pcall,math,select,tremove,wipe;
+local CreateFrame,GetCursorPosition,IsModifierKeyDown
+	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
 ---@class ATTGameTooltip: GameTooltip
-local GameTooltip = GameTooltip
-local RETRIEVING_DATA = RETRIEVING_DATA
-local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID
-
-local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture
-local GetSpellIcon = app.WOWAPI.GetSpellIcon
-local GetFactionName = app.WOWAPI.GetFactionName
+local GameTooltip = GameTooltip;
+local RETRIEVING_DATA = RETRIEVING_DATA;
 local Callback = app.CallbackHandlers.Callback
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
@@ -20,19 +20,161 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 local GetProgressColorText = app.Modules.Color.GetProgressColorText
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros
 local GetProgressColor = app.Modules.Color.GetProgressColor
-local GetDisplayID = app.GetDisplayID
-local Push = app.Push
-local GetSpecsString = app.GetSpecsString
-local GetClassesString = app.GetClassesString
-local TryColorizeName = app.TryColorizeName
-local GetRelativeValue = app.GetRelativeValue
-local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
-local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
-local GetIndicatorIcon = app.GetIndicatorIcon;
-local wipearray = app.wipearray;
+
+-- Row Helper Functions
+local function CalculateRowBack(data)
+	if data.back then return data.back; end
+	if data.parent then
+		return CalculateRowBack(data.parent) * 0.5;
+	else
+		return 0;
+	end
+end
+local function CalculateRowIndent(data)
+	if data.indent then return data.indent; end
+	if data.parent then
+		return CalculateRowIndent(data.parent) + 1;
+	else
+		return 0;
+	end
+end
+
+-- Expand / Collapse Functions
+local SkipAutoExpands = {
+	-- Specific HeaderID values should not expand
+	headerID = {
+		[app.HeaderConstants.ZONE_DROPS] = true,
+		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+		[app.HeaderConstants.HOLIDAYS] = true,
+	},
+	objectID = {
+		[375368] = true,	-- Creation Catalyst Console
+		[382621] = true,	-- Revival Catalyst Console
+		[456208] = true,	-- The Catalyst
+	},
+	-- Item/Difficulty as Headers should not expand
+	itemID = true,
+	difficultyID = true,
+}
+local function IsAutoExpandSkippedForGroup(group)
+	local key = group.key;
+	local skipKey = SkipAutoExpands[key];
+	if not skipKey then return; end
+	return skipKey == true or skipKey[group[key]];
+end
+local function IsFullyCollapsed(group)
+	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+	if group then
+		local g = group.g
+		if g then
+			for i=1,#g do
+				-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+				if g[i].expanded then
+					return true;
+				end
+			end
+		end
+	end
+end
+local function ExpandGroupsRecursively(group, expanded, manual)
+	local g = group.g
+	if g then
+		if manual or (not IsAutoExpandSkippedForGroup(group) and
+			-- incomplete things actually exist below itself
+			((group.total or 0) > (group.progress or 0)) and
+			-- account/debug mode is active or it is not a 'saved' thing for this character
+			(app.MODE_DEBUG_OR_ACCOUNT or not group.saved)) then
+			group.expanded = expanded;
+			for i=1,#g do
+				ExpandGroupsRecursively(g[i], expanded, manual);
+			end
+		end
+	end
+end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively;
+
+-- Portrait Functions
+local SetPortraitTexture = SetPortraitTexture;
+local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
+local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
+local function SetPortraitIcon(self, data)
+	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
+		local displayID = app.GetDisplayID(data);
+		if displayID then
+			SetPortraitTextureFromDisplayID(self, displayID);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		elseif data.unit and not data.icon then
+			SetPortraitTexture(self, data.unit);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		end
+	end
+
+	-- Fallback to a traditional icon.
+	if data.atlas then
+		self:SetAtlas(data.atlas);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		if data["atlas-background"] then
+			self.Background:SetAtlas(data["atlas-background"]);
+			self.Background:SetWidth(self:GetHeight());
+			self.Background:Show();
+		end
+		if data["atlas-border"] then
+			self.Border:SetAtlas(data["atlas-border"]);
+			self.Border:SetWidth(self:GetHeight());
+			self.Border:Show();
+			if data["atlas-color"] then
+				local swatches = data["atlas-color"] or app.EmptyTable;
+				self.Border:SetVertexColor(swatches[1] or 0, swatches[2] or 0, swatches[3] or 0, swatches[4] or 1);
+			else
+				self.Border:SetVertexColor(1, 1, 1, 1);
+			end
+		end
+		return true;
+	elseif data.icon then
+		self:SetWidth(self:GetHeight());
+		self:SetTexture(data.icon);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
+		return true;
+	end
+	-- anything without an icon ends up with weird spacing in lists
+	self:SetTexture(QUESTION_MARK_ICON);
+	return true
+end
+local function CachePortraitSettings()
+	PortaitSettingsCache.ALL = app.Settings:GetTooltipSetting("IconPortraits");
+	PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests");
+end
+app.AddEventHandler("OnStartup", CachePortraitSettings);
+app.AddEventHandler("OnRenderDirty", CachePortraitSettings);
+
+-- Window Functions
+local function AssignChildrenForWindow(self)
+	app.AssignChildren(self.data);
+end
+local function SetVisibleForWindow(self, show)
+	if show then
+		self:Show();
+	else
+		self:Hide();
+	end
+end
+local function ToggleForWindow(self)
+	SetVisibleForWindow(self, not self:IsVisible());
+end
+
 
 -- Store the Custom Windows Update functions which are required by specific Windows
-(function()
+do
 local customWindowInits = {};
 local customWindowUpdates = { params = {} };
 -- Returns the Custom Update function based on the Window suffix if existing
@@ -77,25 +219,9 @@ app.AddCustomWindowOnUpdate = function(customName, onUpdate)
 	-- app.print("Added",customName)
 	customWindowUpdates[customName] = onUpdate
 end
-end)();
+end
 
-local function AssignChildrenForWindow(self)
-	app.AssignChildren(self.data);
-end
-local function SetVisibleForWindow(self, show)
-	-- app.PrintDebug("SetVisibleForWindow",self.Suffix,show)
-	if show then
-		self:Show();
-		-- apply window position from profile
-		app.Settings.SetWindowFromProfile(self.Suffix);
-		self:Update();
-	else
-		self:Hide();
-	end
-end
-local function ToggleForWindow(self)
-	return SetVisibleForWindow(self, not self:IsVisible());
-end
+
 
 -- allows resetting a given ATT window
 local function ResetWindow(suffix)
@@ -105,51 +231,7 @@ local function ResetWindow(suffix)
 	end
 end
 
-local SkipAutoExpands = {
-	-- Specific HeaderID values should not expand
-	headerID = {
-		[app.HeaderConstants.ZONE_DROPS] = true,
-		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		[app.HeaderConstants.HOLIDAYS] = true,
-	},
-	objectID = {
-		[375368] = true,	-- Creation Catalyst Console
-		[382621] = true,	-- Revival Catalyst Console
-		[456208] = true,	-- The Catalyst
-	},
-	-- Item/Difficulty as Headers should not expand
-	itemID = true,
-	difficultyID = true,
-}
-local function SkipAutoExpand(group)
-	local key = group.key;
-	local skipKey = SkipAutoExpands[key];
-	if not skipKey then return; end
-	return skipKey == true or skipKey[group[key]];
-end
-local function ExpandGroupsRecursively(group, expanded, manual)
-	-- expand if there is any sub-group
-	local g = group.g
-	if g then
-		-- app.PrintDebug("EGR",group.hash,expanded,manual);
-		-- if manually expanding
-		if (manual or (
-				-- not a skipped group for auto-expansion
-				not SkipAutoExpand(group) and
-				-- incomplete things actually exist below itself
-				((group.total or 0) > (group.progress or 0)) and
-				-- account/debug mode is active or it is not a 'saved' thing for this character
-				(app.MODE_DEBUG_OR_ACCOUNT or not group.saved))
-			) then
-			-- app.PrintDebug("EGR:expand");
-			group.expanded = expanded;
-			for i=1,#g do
-				ExpandGroupsRecursively(g[i], expanded, manual);
-			end
-		end
-	end
-end
-app.ExpandGroupsRecursively = ExpandGroupsRecursively
+
 local VisibilityFilter, SortGroup
 local function ProcessGroup(data, object)
 	if not VisibilityFilter(object) then return end
@@ -274,80 +356,6 @@ local function ClearRowData(self)
 	self.Label:Hide();
 	self:SetHighlightLocked(false)
 end
-local function CalculateRowIndent(data)
-	if data.indent then return data.indent; end
-	if data.parent then
-		return CalculateRowIndent(data.parent) + 1;
-	else
-		return 0;
-	end
-end
-local function CalculateRowBack(data)
-	if data.back then return data.back; end
-	if data.parent then
-		return CalculateRowBack(data.parent) * 0.5;
-	else
-		return 0;
-	end
-end
-local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue })
-do
-	local function CachePortraitSettings()
-		PortaitSettingsCache.ALL = app.Settings:GetTooltipSetting("IconPortraits")
-		PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests")
-	end
-	app.AddEventHandler("OnStartup", CachePortraitSettings)
-	app.AddEventHandler("OnRenderDirty", CachePortraitSettings)
-end
-local function SetPortraitIcon(self, data)
-	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
-		local displayID = GetDisplayID(data);
-		if displayID then
-			SetPortraitTextureFromDisplayID(self, displayID);
-			self:SetTexCoord(0, 1, 0, 1);
-			return true;
-		elseif data.unit and not data.icon then
-			SetPortraitTexture(self, data.unit);
-			self:SetTexCoord(0, 1, 0, 1);
-			return true;
-		end
-	end
-
-	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
-			self.Background:SetWidth(self:GetHeight());
-			self.Background:Show();
-		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"] or app.EmptyTable;
-				self.Border:SetVertexColor(swatches[1] or 1, swatches[2] or 1, swatches[3] or 1, swatches[4] or 1);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1.0);
-			end
-		end
-		return true;
-	elseif data.icon then
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
-		return true;
-	end
-	-- anything without an icon ends up with weird spacing in lists
-	self:SetTexture(QUESTION_MARK_ICON);
-	return true
-end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
@@ -412,7 +420,7 @@ local function GetProgressTextForRow(data, forceTracking)
 	-- build the row text from left to right with possible info
 	-- Reagent (show reagent icon)
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	wipearray(__Text)
+	app.wipearray(__Text)
 	local icon = GetReagentIcon(data, true);
 	if icon then
 		__Text[#__Text + 1] = icon
@@ -476,7 +484,7 @@ app.GetProgressTextForRow = GetProgressTextForRow;
 local function GetProgressTextForTooltip(data)
 	-- build the row text from left to right with possible info
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	wipearray(__Text)
+	app.wipearray(__Text)
 	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	-- Reagent (show reagent icon)
 	local icon = GetReagentIcon(data, iconOnly);
@@ -531,10 +539,10 @@ app.GetProgressTextForTooltip = GetProgressTextForTooltip
 local __Summary = {}
 local function BuildDataSummary(data)
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	wipearray(__Summary)
+	app.wipearray(__Summary)
 	local requireSkill = data.requireSkill
 	if requireSkill then
-		local profIcon = GetTradeSkillTexture(requireSkill) or GetSpellIcon(requireSkill)
+		local profIcon = app.WOWAPI.GetTradeSkillTexture(requireSkill) or app.WOWAPI.GetSpellIcon(requireSkill)
 		if profIcon then
 			__Summary[#__Summary + 1] = "|T"
 			__Summary[#__Summary + 1] = profIcon
@@ -544,14 +552,14 @@ local function BuildDataSummary(data)
 	-- TODO: races
 	local specs = data.specs;
 	if specs and #specs > 0 then
-		__Summary[#__Summary + 1] = GetSpecsString(specs, false, false)
+		__Summary[#__Summary + 1] = app.GetSpecsString(specs, false, false)
 	else
 		local classes = data.c
 		if classes and #classes > 0 then
-			__Summary[#__Summary + 1] = GetClassesString(classes, false, false)
+			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
 		end
 	end
-	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or "---"
+	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or "---"
 	return app.TableConcat(__Summary, nil, "", "")
 end
 local function SetRowData(self, row, data)
@@ -594,7 +602,7 @@ local function SetRowData(self, row, data)
 			x = rowPad / 4;
 		end
 		-- indicator is always attached to the Texture
-		local texture = GetIndicatorIcon(data);
+		local texture = app.GetIndicatorIcon(data);
 		if texture then
 			local rowIndicator = row.Indicator;
 			rowIndicator:SetTexture(texture);
@@ -609,7 +617,7 @@ local function SetRowData(self, row, data)
 		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
 		-- rowSummary:SetPoint("RIGHT", iconAdjust, 0);
 		rowSummary:Show();
-		rowLabel:SetText(TryColorizeName(data, text));
+		rowLabel:SetText(app.TryColorizeName(data, text));
 		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
 		rowLabel:SetPoint("RIGHT");
 		rowLabel:Show();
@@ -877,7 +885,7 @@ local function StartMovingOrSizing(self, fromChild)
 		self.isMoving = true;
 		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
-			Push(self, "StartMovingOrSizing (Sizing)", function()
+			app.Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
 					-- keeps the rows within the window fitting to the window as it resizes
 					self:Refresh();
@@ -1031,7 +1039,7 @@ local function ToggleATTMoving(self)
 	if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 		self:StartSizing()
 		self.isMoving = true
-		Push(self, "StartMovingOrSizing (Sizing)", SelfMoveRefresher)
+		app.Push(self, "StartMovingOrSizing (Sizing)", SelfMoveRefresher)
 	elseif self:IsMovable() then
 		self:StartMoving()
 		self.isMoving = true
@@ -1068,11 +1076,38 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.GetRunner = GetRunner;
 	window.ToggleExtraFilters = ToggleExtraFilters
 	window.ScrollTo = ScrollTo
+	window:Hide();
 
+	-- Register events to allow settings to be recorded.
 	window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
 	window:SetScript("OnMouseUp", StopMovingOrSizing);
-	window:SetScript("OnHide", StopMovingOrSizing);
+	window:SetScript("OnHide", function(self)
+		StopMovingOrSizing(self);
+		--[[
+		if settings.OnHide then
+			settings.OnHide(self);
+		end
+		]]--
+		self:RecordSettings();
+	end);
+	window:SetScript("OnShow", function(self)
+		--[[
+		if not self.data then
+			self:Rebuild();
+		else
+			self:Update();
+		end
+		if settings.OnShow then
+			settings.OnShow(self);
+		end
+		]]--
+		-- apply window position from profile
+		app.Settings.SetWindowFromProfile(self.Suffix);
+		self:Update();
+		self:RecordSettings();
+	end);
+	
 	window:SetBackdrop(backdrop);
 	window:SetBackdropBorderColor(1, 1, 1, 1);
 	window:SetBackdropColor(0, 0, 0, 1);
@@ -1095,8 +1130,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	if suffix == "Prime" or suffix == "MiniList" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
 		window.lockPersistable = true;
 	end
-
-	window:Hide();
 
 	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
@@ -1244,53 +1277,6 @@ app.AddEventHandler("OnReady", function()
 	app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger)
 end)
 
--- probably temporary function to fix Retail Lua errors when using AH
-app.TrySearchAHForGroup = function(group)
-	-- nothing works. AH frame is weird
-
-	-- local itemID = group.itemID
-	-- if itemID then
-	local name, link = group.name, group.link or group.silentLink
-	if name and app.HandleModifiedItemClick(link) then
-		local AH = app.AH
-		if not AH then AH = {} app.AH = AH end
-		-- AuctionFrameBrowse_Search();	-- doesn't exist
-		-- local itemKey = C_AuctionHouse.MakeItemKey(itemID)
-		-- local itemKeys = {itemKey}
-		local query = AH.query
-		if not query then
-			local sorts = {
-				-- {sortOrder = Enum.AuctionHouseSortOrder.Name, reverseSort = false},
-				{sortOrder = Enum.AuctionHouseSortOrder.Price, reverseSort = false},
-				-- {sortOrder = Enum.AuctionHouseSortOrder.Buyout, reverseSort = false},
-			}
-			local filters = {
-				-- Enum.AuctionHouseFilter.None
-			}
-			-- local itemClassFilters = {
-			-- 	classID = LE_ITEM_CLASS_CONTAINER,
-			-- 	subClassID = nil,
-			-- 	inventoryType = nil
-			-- }
-			query = {
-				sorts = sorts,
-				filters = filters,
-				-- itemClassFilters = itemClassFilters,
-			}
-			-- cache the query for future use to only change the search
-			AH.query = query
-		end
-		query.searchString = name
-		-- app.PrintDebug("search")
-		-- app.PrintTable(query)
-		-- local result = C_AuctionHouse.GetItemSearchResultInfo(itemKey, 0) -- always nil
-		-- app.PrintTable(result)
-		-- C_AuctionHouse.SearchForItemKeys(itemKeys,sorts) -- always Lua error
-		C_AuctionHouse.SendBrowseQuery(query)
-		return true;
-	end
-end
-
 function app:CreateMiniListForGroup(group, forceFresh)
 	-- Criteria now show their Source Achievement properly
 	-- Achievements already fill out their Criteria information automatically, don't think this is necessary now - Runaway
@@ -1298,7 +1284,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 	-- local achievementID = not group.criteriaID and group.achievementID;
 	-- if achievementID and not group.g then
 	-- 	app.PrintDebug("Finding better achievement data...",achievementID)
-	-- 	local searchResults = SearchForField("achievementID", achievementID);
+	-- 	local searchResults = app.SearchForField("achievementID", achievementID);
 	-- 	if #searchResults > 0 then
 	-- 		local bestResult;
 	-- 		for i=1,#searchResults,1 do
@@ -1486,20 +1472,6 @@ local function AddQuestInfoToTooltip(info, quests, reference)
 	end
 end
 
--- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
-local function HasExpandedSubgroup(group)
-	if not group then return end
-
-	local g = group.g
-	if not g then return end
-
-	for i=1,#g do
-		-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
-		if g[i].expanded then
-			return true;
-		end
-	end
-end
 
 app.AddEventHandler("RowOnClick", function(self, button)
 	local reference = self.ref;
@@ -1619,8 +1591,30 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					end
 
 					-- Attempt to search manually with the link.
-					local searched = app.TrySearchAHForGroup(reference);
-					if searched then return true end
+					local name, link = group.name, reference.link or reference.silentLink;
+					if name and HandleModifiedItemClick(link) then
+						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
+							local query = app.AuctionHouseQuery;
+							if not query then
+								query = {
+									sorts = {
+										-- {sortOrder = Enum.AuctionHouseSortOrder.Name, reverseSort = false},
+										{sortOrder = Enum.AuctionHouseSortOrder.Price, reverseSort = false},
+										-- {sortOrder = Enum.AuctionHouseSortOrder.Buyout, reverseSort = false},
+									},
+									filters = {},
+								};
+								app.AuctionHouseQuery = query
+							end
+							query.searchString = name
+							C_AuctionHouse.SendBrowseQuery(query)
+						elseif AuctionHouseFrame.SearchBar then
+							AuctionHouseFrame.SearchBar:StartSearch();
+						else
+							AuctionFrameBrowse_Search();
+						end
+						return true;
+					end
 				else
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
@@ -1660,7 +1654,7 @@ app.AddEventHandler("RowOnClick", function(self, button)
 				if reference.g then
 					-- mark the window if it is being fully-collapsed
 					if self.index < 1 then
-						window.fullCollapsed = HasExpandedSubgroup(reference);
+						window.fullCollapsed = IsFullyCollapsed(reference);
 					end
 					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
 					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
@@ -1860,7 +1854,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
 			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.ITEM_GIVES_REP .. (GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+				left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. reference.factionID)) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
 			}
@@ -1881,16 +1875,16 @@ app.AddEventHandler("RowOnEnter", function(self)
 	if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
 		local numSpecializations = GetNumSpecializations();
 		if numSpecializations and numSpecializations > 0 then
-			local encounterID = GetRelativeValue(reference.parent, "encounterID");
+			local encounterID = app.GetRelativeValue(reference.parent, "encounterID");
 			if encounterID then
-				local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
-				local encounterCache = SearchForField("encounterID", encounterID);
+				local difficultyID = app.GetRelativeValue(reference.parent, "difficultyID");
+				local encounterCache = app.SearchForField("encounterID", encounterID);
 				if #encounterCache > 0 then
 					local itemList = {};
 					local encounter
 					for i=1,#encounterCache do
 						encounter = encounterCache[i]
-						if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
+						if encounter.g and app.GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
 							app.SearchForRelativeItems(encounter, itemList);
 						end
 					end
@@ -1958,7 +1952,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 							chance = 100 / least;
 							color = GetProgressColor(chance / 100);
 							-- print out the specs with min items
-							local specString = GetSpecsString(rollSpec, true, true) or "???";
+							local specString = app.GetSpecsString(rollSpec, true, true) or "???";
 							tooltipInfo[#tooltipInfo + 1] = {
 								left = legacyLoot and L.BEST_BONUS_ROLL_CHANCE or L.BEST_PERSONAL_LOOT_CHANCE,
 								right = specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r",
@@ -2030,14 +2024,14 @@ app.AddEventHandler("RowOnEnter", function(self)
 		local sourceQuestID, sq
 		for i=1,#sourceQuests do
 			sourceQuestID = sourceQuests[i]
-			if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-				sqs = SearchForField("questID", sourceQuestID);
+			if sourceQuestID > 0 and (isDebugMode or not app.IsQuestFlaggedCompleted(sourceQuestID)) then
+				sqs = app.SearchForField("questID", sourceQuestID);
 				if #sqs > 0 then
 					bestMatch = nil;
 					for j=1,#sqs do
 						sq = sqs[j]
 						if sq.questID == sourceQuestID then
-							if isDebugMode or (not IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
+							if isDebugMode or (not app.IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
 								if sq.sourceQuests then
 									-- Always prefer the source quest with additional source quest data.
 									bestMatch = sq;
@@ -2089,14 +2083,14 @@ app.AddEventHandler("RowOnEnter", function(self)
 			for i=1,#nextQuests do
 				nextQuestID = nextQuests[i]
 				if nextQuestID > 0 then
-					nq = SearchForObject("questID", nextQuestID, "field");
+					nq = app.SearchForObject("questID", nextQuestID, "field");
 					-- existing quest group
 					if nq then
 						nextq[#nextq + 1] = nq
 					else
 						nextq[#nextq + 1] = app.CreateQuest(nextQuestID)
 					end
-					if IsQuestFlaggedCompleted(nextQuestID) then
+					if app.IsQuestFlaggedCompleted(nextQuestID) then
 						isBreadcrumbAvailable = false;
 					end
 				end

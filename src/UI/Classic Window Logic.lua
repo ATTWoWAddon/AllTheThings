@@ -1,30 +1,171 @@
 -- App locals
 local _, app = ...;
-local contains = app.contains;
-local CloneClassInstance, CloneReference, wipearray
-	= app.CloneClassInstance, app.CloneReference, app.wipearray;
-local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
-local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
-local GetProgressTextForRow = app.GetProgressTextForRow;
-local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local ResolveSymbolicLink = app.ResolveSymbolicLink;
-local SearchForField = app.SearchForField;
-local MergeObject = app.MergeObject;
-local MergeObjects = app.MergeObjects;
 local L = app.L;
 
 -- Global locals
-local ipairs, pairs, pcall, tinsert, tremove, math_floor
-	= ipairs, pairs, pcall, tinsert, tremove, math.floor;
-local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePreciseSec;
-local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
-local IsModifierKeyDown = IsModifierKeyDown;
-local GetIndicatorIcon = app.GetIndicatorIcon;
+local tinsert
+	= tinsert;
+local ipairs,pairs,pcall,math,select,tremove,wipe
+	= ipairs,pairs,pcall,math,select,tremove,wipe;
+local CreateFrame,GetCursorPosition,IsModifierKeyDown
+	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
+local RETRIEVING_DATA = RETRIEVING_DATA;
+local GetTimePreciseSec = GetTimePreciseSec;
+
+-- Row Helper Functions
+local function CalculateRowBack(data)
+	if data.back then return data.back; end
+	if data.parent then
+		return CalculateRowBack(data.parent) * 0.5;
+	else
+		return 0;
+	end
+end
+local function CalculateRowIndent(data)
+	if data.indent then return data.indent; end
+	if data.parent then
+		return CalculateRowIndent(data.parent) + 1;
+	else
+		return 0;
+	end
+end
+
+-- Expand / Collapse Functions
+local SkipAutoExpands = {
+	-- Specific HeaderID values should not expand
+	headerID = {
+		[app.HeaderConstants.ZONE_DROPS] = true,
+		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+		[app.HeaderConstants.HOLIDAYS] = true,
+	},
+	objectID = {
+		[375368] = true,	-- Creation Catalyst Console
+		[382621] = true,	-- Revival Catalyst Console
+		[456208] = true,	-- The Catalyst
+	},
+	-- Item/Difficulty as Headers should not expand
+	itemID = true,
+	difficultyID = true,
+}
+local function IsAutoExpandSkippedForGroup(group)
+	local key = group.key;
+	local skipKey = SkipAutoExpands[key];
+	if not skipKey then return; end
+	return skipKey == true or skipKey[group[key]];
+end
+local function IsFullyCollapsed(group)
+	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+	if group then
+		local g = group.g
+		if g then
+			for i=1,#g do
+				-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+				if g[i].expanded then
+					return true;
+				end
+			end
+		end
+	end
+end
+local function ExpandGroupsRecursively(group, expanded, manual)
+	local g = group.g
+	if g then
+		if manual or (not IsAutoExpandSkippedForGroup(group) and
+			-- incomplete things actually exist below itself
+			((group.total or 0) > (group.progress or 0)) and
+			-- account/debug mode is active or it is not a 'saved' thing for this character
+			(app.MODE_DEBUG_OR_ACCOUNT or not group.saved)) then
+			group.expanded = expanded;
+			for i=1,#g do
+				ExpandGroupsRecursively(g[i], expanded, manual);
+			end
+		end
+	end
+end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively;
+
+-- Portrait Functions
+local SetPortraitTexture = SetPortraitTexture;
+local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
+local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
+local function SetPortraitIcon(self, data)
+	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
+		local displayID = app.GetDisplayID(data);
+		if displayID then
+			SetPortraitTextureFromDisplayID(self, displayID);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		elseif data.unit and not data.icon then
+			SetPortraitTexture(self, data.unit);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		end
+	end
+
+	-- Fallback to a traditional icon.
+	if data.atlas then
+		self:SetAtlas(data.atlas);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		if data["atlas-background"] then
+			self.Background:SetAtlas(data["atlas-background"]);
+			self.Background:SetWidth(self:GetHeight());
+			self.Background:Show();
+		end
+		if data["atlas-border"] then
+			self.Border:SetAtlas(data["atlas-border"]);
+			self.Border:SetWidth(self:GetHeight());
+			self.Border:Show();
+			if data["atlas-color"] then
+				local swatches = data["atlas-color"] or app.EmptyTable;
+				self.Border:SetVertexColor(swatches[1] or 0, swatches[2] or 0, swatches[3] or 0, swatches[4] or 1);
+			else
+				self.Border:SetVertexColor(1, 1, 1, 1);
+			end
+		end
+		return true;
+	elseif data.icon then
+		self:SetWidth(self:GetHeight());
+		self:SetTexture(data.icon);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
+		return true;
+	end
+	-- anything without an icon ends up with weird spacing in lists
+	self:SetTexture(QUESTION_MARK_ICON);
+	return true
+end
+local function CachePortraitSettings()
+	PortaitSettingsCache.ALL = app.Settings:GetTooltipSetting("IconPortraits");
+	PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests");
+end
+app.AddEventHandler("OnStartup", CachePortraitSettings);
+app.AddEventHandler("OnRenderDirty", CachePortraitSettings);
+
+-- Window Functions
+local function AssignChildrenForWindow(self)
+	app.AssignChildren(self.data);
+end
+local function SetVisibleForWindow(self, show)
+	if show then
+		self:Show();
+	else
+		self:Hide();
+	end
+end
+local function ToggleForWindow(self)
+	SetVisibleForWindow(self, not self:IsVisible());
+end
+
 
 -- Implementation
 -- Processing Functions (Coroutines)
@@ -129,57 +270,16 @@ UpdateGroups = function(parent, g)
 		return visible;
 	end
 end
-
 app.UpdateGroups = UpdateGroups;
 
-
-
-
--- Row Helper Functions
-local function CalculateRowBack(data)
-	if data.back then return data.back; end
-	if data.parent then
-		return CalculateRowBack(data.parent) * 0.5;
-	else
-		return 0;
-	end
-end
-local function CalculateRowIndent(data)
-	if data.indent then return data.indent; end
-	if data.parent then
-		return CalculateRowIndent(data.parent) + 1;
-	else
-		return 0;
-	end
-end
-local function ExpandGroupsRecursively(group, expanded, manual)
-	if group.g and (not group.itemID or manual) then
-		group.expanded = expanded;
-		for i, subgroup in ipairs(group.g) do
-			ExpandGroupsRecursively(subgroup, expanded, manual);
-		end
-	end
-end
-local function HasExpandedSubgroup(group)
-	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
-	if group and group.g then
-		for _,subgroup in ipairs(group.g) do
-			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
-			if subgroup.expanded then
-				return true;
-			end
-		end
-	end
-end
-app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
 local __Summary = {}
 local function BuildDataSummary(data)
 	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	wipearray(__Summary)
+	app.wipearray(__Summary)
 	local requireSkill = data.requireSkill
 	if requireSkill then
-		local profIcon = GetTradeSkillTexture(requireSkill) or GetSpellIcon(requireSkill)
+		local profIcon = app.WOWAPI.GetTradeSkillTexture(requireSkill) or app.WOWAPI.GetSpellIcon(requireSkill)
 		if profIcon then
 			__Summary[#__Summary + 1] = "|T"
 			__Summary[#__Summary + 1] = profIcon
@@ -196,68 +296,11 @@ local function BuildDataSummary(data)
 			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
 		end
 	end
-	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or "---"
+	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or "---"
 	return app.TableConcat(__Summary, nil, "", "")
 end
 
-local IconPortraitTooltipExtraSettings = {
-	questID = "IconPortraitsForQuests",
-};
-local SetPortraitTexture = _G["SetPortraitTexture"];
-local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
-local function SetPortraitIcon(self, data, x)
-	if app.Settings:GetTooltipSetting("IconPortraits") then
-		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
-		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
-			local displayID = app.GetDisplayID(data);
-			if displayID then
-				SetPortraitTextureFromDisplayID(self, displayID);
-				self:SetWidth(self:GetHeight());
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			elseif data.unit and not data.icon then
-				SetPortraitTexture(self, data.unit);
-				self:SetWidth(self:GetHeight());
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			end
-		end
-	end
 
-	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
-			self.Background:SetWidth(self:GetHeight());
-			self.Background:Show();
-		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1.0);
-			end
-		end
-		return true;
-	elseif data.icon then
-		self:SetWidth(self:GetHeight());
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
-		return true;
-	end
-end
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
@@ -336,7 +379,7 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Determine the Indicator Texture
-	local indicatorTexture = GetIndicatorIcon(data);
+	local indicatorTexture = app.GetIndicatorIcon(data);
 
 	-- Check to see what the text is currently
 	local text = data.text;
@@ -606,15 +649,30 @@ local function RowOnClick(self, button)
 					end
 
 					-- Attempt to search manually with the link.
-					local link = reference.link or reference.silentLink;
-					if link and HandleModifiedItemClick(link) then
-						if AuctionHouseFrame.SearchBar then
+					local name, link = group.name, reference.link or reference.silentLink;
+					if name and HandleModifiedItemClick(link) then
+						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
+							local query = app.AuctionHouseQuery;
+							if not query then
+								query = {
+									sorts = {
+										-- {sortOrder = Enum.AuctionHouseSortOrder.Name, reverseSort = false},
+										{sortOrder = Enum.AuctionHouseSortOrder.Price, reverseSort = false},
+										-- {sortOrder = Enum.AuctionHouseSortOrder.Buyout, reverseSort = false},
+									},
+									filters = {},
+								};
+								app.AuctionHouseQuery = query
+							end
+							query.searchString = name
+							C_AuctionHouse.SendBrowseQuery(query)
+						elseif AuctionHouseFrame.SearchBar then
 							AuctionHouseFrame.SearchBar:StartSearch();
 						else
 							AuctionFrameBrowse_Search();
 						end
+						return true;
 					end
-					return true;
 				else
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
@@ -654,7 +712,7 @@ local function RowOnClick(self, button)
 				if reference.g then
 					-- mark the window if it is being fully-collapsed
 					if self.index < 1 then
-						window.fullCollapsed = HasExpandedSubgroup(reference);
+						window.fullCollapsed = IsFullyCollapsed(reference);
 					end
 					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
 					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
@@ -766,7 +824,7 @@ local function RowOnEnter(self)
 
 	local title = reference.title;
 	if title then
-		local left, right = DESCRIPTION_SEPARATOR:split(title);
+		local left, right = app.DESCRIPTION_SEPARATOR:split(title);
 		if right then
 			tinsert(tooltipInfo, {
 				left = left,
@@ -788,6 +846,14 @@ local function RowOnEnter(self)
 
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
+		-- an item used for a faction which is repeatable
+		if reference.itemID and reference.factionID and reference.repeatable then
+			tinsert(tooltipInfo, {
+				left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. reference.factionID)) .. "'",
+				color = app.Colors.TooltipDescription,
+				wrap = true,
+			});
+		end
 		app.ProcessInformationTypes(tooltipInfo, reference);
 	end
 
@@ -799,13 +865,13 @@ local function RowOnEnter(self)
 	if reference.sourceQuests and (isDebugMode or not reference.saved) then
 		local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
 		for i,sourceQuestID in ipairs(reference.sourceQuests) do
-			if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-				local sqs = SearchForField("questID", sourceQuestID);
+			if sourceQuestID > 0 and (isDebugMode or not app.IsQuestFlaggedCompleted(sourceQuestID)) then
+				local sqs = app.SearchForField("questID", sourceQuestID);
 				if #sqs > 0 then
 					local bestMatch = nil;
 					for j,sq in ipairs(sqs) do
 						if sq.questID == sourceQuestID and not sq.objectiveID then
-							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sq) and not app.IsQuestFlaggedCompleted(sourceQuestID)) then
 								if sq.sourceQuests then
 									-- Always prefer the source quest with additional source quest data.
 									bestMatch = sq;
@@ -840,7 +906,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(app.IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -855,7 +921,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(app.IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -864,7 +930,7 @@ local function RowOnEnter(self)
 		local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
 		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
 			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
-				local sas = SearchForField("achievementID", sourceAchievementID);
+				local sas = app.SearchForField("achievementID", sourceAchievementID);
 				if #sas > 0 then
 					local bestMatch = nil;
 					for j,sa in ipairs(sas) do
@@ -1204,19 +1270,7 @@ app.events.PLAYER_LOGOUT = function()
 	end
 end;
 
-local function AssignChildrenForWindow(self)
-	app.AssignChildren(self.data);
-end
-local function SetVisibleForWindow(self, show)
-	if show then
-		self:Show();
-	else
-		self:Hide();
-	end
-end
-local function ToggleForWindow(self)
-	SetVisibleForWindow(self, not self:IsVisible());
-end
+
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
@@ -1402,22 +1456,22 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	end
 	local mostAccessibleSource = searchResults[1];
 	inst.sourceParent = mostAccessibleSource;
-	local u = GetRelativeValue(mostAccessibleSource, "u");
+	local u = app.GetRelativeValue(mostAccessibleSource, "u");
 	if u then
 		if u == 1 then return inst; end
 		inst.u = u;
 	end
-	local e = GetRelativeValue(mostAccessibleSource, "e");
+	local e = app.GetRelativeValue(mostAccessibleSource, "e");
 	if e then inst.e = e; end
-	local awp = GetRelativeValue(mostAccessibleSource, "awp");
+	local awp = app.GetRelativeValue(mostAccessibleSource, "awp");
 	if awp then inst.awp = awp; end
-	local rwp = GetRelativeValue(mostAccessibleSource, "rwp");
+	local rwp = app.GetRelativeValue(mostAccessibleSource, "rwp");
 	if rwp then inst.rwp = rwp; end
-	local r = GetRelativeValue(mostAccessibleSource, "r");
+	local r = app.GetRelativeValue(mostAccessibleSource, "r");
 	if r then inst.r = r; end
-	local c = GetRelativeValue(mostAccessibleSource, "c");
+	local c = app.GetRelativeValue(mostAccessibleSource, "c");
 	if c then inst.c = c; end
-	local races = GetRelativeValue(mostAccessibleSource, "races");
+	local races = app.GetRelativeValue(mostAccessibleSource, "races");
 	if races then inst.races = races; end
 	for key,value in pairs(mostAccessibleSource) do
 		inst[key] = value;
@@ -1427,16 +1481,16 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	for j,o in ipairs(searchResults) do
 		if o.parent then
 			if not o.sourceQuests then
-				local questID = GetRelativeValue(o, "questID");
+				local questID = app.GetRelativeValue(o, "questID");
 				if questID then
 					if not inst.sourceQuests then
 						inst.sourceQuests = {};
 					end
-					if not contains(inst.sourceQuests, questID) then
+					if not app.contains(inst.sourceQuests, questID) then
 						tinsert(inst.sourceQuests, questID);
 					end
 				else
-					local sourceQuests = GetRelativeValue(o, "sourceQuests");
+					local sourceQuests = app.GetRelativeValue(o, "sourceQuests");
 					if sourceQuests then
 						if not inst.sourceQuests then
 							inst.sourceQuests = {};
@@ -1445,7 +1499,7 @@ local BuildCategory = function(self, headers, searchResults, inst)
 							end
 						else
 							for k,questID in ipairs(sourceQuests) do
-								if not contains(inst.sourceQuests, questID) then
+								if not app.contains(inst.sourceQuests, questID) then
 									tinsert(inst.sourceQuests, questID);
 								end
 							end
@@ -1454,35 +1508,35 @@ local BuildCategory = function(self, headers, searchResults, inst)
 				end
 			end
 
-			if GetRelativeValue(o, "isHolidayCategory") then
+			if app.GetRelativeValue(o, "isHolidayCategory") then
 				headerType = "holiday";
-			elseif GetRelativeValue(o, "isPromotionCategory") then
+			elseif app.GetRelativeValue(o, "isPromotionCategory") then
 				headerType = "promo";
-			elseif GetRelativeValue(o, "isPVPCategory") or o.pvp then
+			elseif app.GetRelativeValue(o, "isPVPCategory") or o.pvp then
 				headerType = "pvp";
-			elseif GetRelativeValue(o, "isEventCategory") then
+			elseif app.GetRelativeValue(o, "isEventCategory") then
 				headerType = "event";
-			elseif GetRelativeValue(o, "isCraftedCategory") then
+			elseif app.GetRelativeValue(o, "isCraftedCategory") then
 				headerType = "crafted";
 			elseif o.parent.achievementID then
 				headerType = app.HeaderConstants.ACHIEVEMENTS;
-			elseif GetRelativeValue(o, "instanceID") then
+			elseif app.GetRelativeValue(o, "instanceID") then
 				headerType = "raid";
-			elseif GetRelativeValue(o, "isWorldDropCategory") or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+			elseif app.GetRelativeValue(o, "isWorldDropCategory") or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
 				headerType = "drop";
 			elseif o.parent.questID then
 				headerType = app.HeaderConstants.QUESTS;
-			elseif GetRelativeField(o.parent, "headerID", app.HeaderConstants.VENDORS) then
+			elseif app.GetRelativeField(o.parent, "headerID", app.HeaderConstants.VENDORS) then
 				headerType = app.HeaderConstants.VENDORS;
 			elseif o.parent.npcID then
-				headerType = GetDeepestRelativeValue(o, "headerID") or "drop";
+				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
 			else
-				headerType = GetDeepestRelativeValue(o, "headerID") or "drop";
+				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
 				if headerType == true then	-- Seriously don't do this...
 					headerType = "drop";
 				end
 			end
-			local coords = GetRelativeValue(o, "coords");
+			local coords = app.GetRelativeValue(o, "coords");
 			if coords then
 				if not inst.coords then
 					inst.coords = { unpack(coords) };
@@ -1541,7 +1595,7 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	inst.progress = nil;
 	inst.total = nil;
 	inst.g = nil;
-	MergeObject(header.g, inst);
+	app.MergeObject(header.g, inst);
 	return inst;
 end
 function app:CreateWindow(suffix, settings)
@@ -1565,6 +1619,7 @@ function app:CreateWindow(suffix, settings)
 	window.Toggle = ToggleForWindow;
 	window.Suffix = suffix;
 	app.Windows[suffix] = window;
+	window:Hide();
 	
 	-- Load / Save, which allows windows to keep track of key pieces of information.
 	local defaults = BuildDefaultsForWindow(window);
@@ -1591,7 +1646,24 @@ function app:CreateWindow(suffix, settings)
 	-- Register events to allow settings to be recorded.
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
 	window:SetScript("OnMouseUp", StopMovingOrSizing);
-	window:SetScript("OnHide", StopMovingOrSizing);
+	window:SetScript("OnHide", function(self)
+		StopMovingOrSizing(self);
+		if settings.OnHide then
+			settings.OnHide(self);
+		end
+		self:RecordSettings();
+	end);
+	window:SetScript("OnShow", function(self)
+		if not self.data then
+			self:Rebuild();
+		else
+			self:Update();
+		end
+		if settings.OnShow then
+			settings.OnShow(self);
+		end
+		self:RecordSettings();
+	end);
 	
 	-- Replace some functions to allow settings to be recorded.
 	local oldSetBackdropColor = window.SetBackdropColor;
@@ -1616,36 +1688,6 @@ function app:CreateWindow(suffix, settings)
 	window.SetData = SetWindowData;
 	window.BuildCategory = BuildCategory;
 	window.AllowCompleteSound = settings.AllowCompleteSound;
-
-
-
-	-- Visible, which overrides the default functions and gives the addon the ability to receive information about it.
-	local visible, oldShow, oldHide = false, window.Show, window.Hide;
-	function window:Show()
-		if not visible then
-			visible = true;
-			oldShow(self);
-			if not self.data then
-				self:Rebuild();
-			else
-				self:Update();
-			end
-			if settings.OnShow then
-				settings.OnShow(self);
-			end
-			self:RecordSettings();
-		end
-	end
-	function window:Hide()
-		if visible then
-			visible = false;
-			oldHide(self);
-			if settings.OnHide then
-				settings.OnHide(self);
-			end
-			self:RecordSettings();
-		end
-	end
 	
 	-- Whether or not to debug things
 	local debugging = settings.Debugging;
@@ -2135,7 +2177,7 @@ end
 -- Dynamic Popouts for Quest Chains and other Groups
 local function OnInitForPopout(self, questID, group)
 	if group.questID or group.sourceQuests then
-		local mainQuest = CloneReference(group);
+		local mainQuest = app.CloneReference(group);
 		if group.parent then mainQuest.sourceParent = group.parent; end
 		if mainQuest.sym then
 			mainQuest.collectible = true;
@@ -2143,17 +2185,17 @@ local function OnInitForPopout(self, questID, group)
 			mainQuest.progress = 0;
 			mainQuest.total = 0;
 			if not mainQuest.g then
-				local resolved = ResolveSymbolicLink(group);
+				local resolved = app.ResolveSymbolicLink(group);
 				if resolved then
 					for i=#resolved,1,-1 do
-						resolved[i] = CloneClassInstance(resolved[i]);
+						resolved[i] = app.CloneClassInstance(resolved[i]);
 					end
 					mainQuest.g = resolved;
 				end
 			else
-				local resolved = ResolveSymbolicLink(group);
+				local resolved = app.ResolveSymbolicLink(group);
 				if resolved then
-					MergeObjects(mainQuest.g, resolved);
+					app.MergeObjects(mainQuest.g, resolved);
 				end
 			end
 		end
@@ -2163,12 +2205,12 @@ local function OnInitForPopout(self, questID, group)
 
 		-- Check to see if Source Quests are listed elsewhere.
 		if questID and not group.sourceQuests then
-			local searchResults = SearchForField("questID", questID);
+			local searchResults = app.SearchForField("questID", questID);
 			if #searchResults > 1 then
 				for i=1,#searchResults,1 do
 					local searchResult = searchResults[i];
 					if searchResult.questID == questID and searchResult.sourceQuests then
-						searchResult = CloneReference(searchResult);
+						searchResult = app.CloneReference(searchResult);
 						searchResult.collectible = true;
 						searchResult.g = g;
 						mainQuest = searchResult;
@@ -2186,7 +2228,7 @@ local function OnInitForPopout(self, questID, group)
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
 				for i,sourceQuestID in ipairs(sourceQuests) do
-					sourceQuest = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+					sourceQuest = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
 					if #sourceQuest > 0 then
 						local found = nil;
 						for i=1,#sourceQuest,1 do
@@ -2207,7 +2249,7 @@ local function OnInitForPopout(self, questID, group)
 							end
 						end
 						if found then
-							sourceQuest = CloneReference(found);
+							sourceQuest = app.CloneReference(found);
 							sourceQuest.collectible = true;
 							sourceQuest.visible = true;
 							sourceQuest.hideText = true;
@@ -2316,23 +2358,23 @@ local function OnInitForPopout(self, questID, group)
 			g = g,
 		};
 	elseif group.sym then
-		self.data = CloneReference(group);
+		self.data = app.CloneReference(group);
 		self.data.collectible = true;
 		self.data.visible = true;
 		self.data.progress = 0;
 		self.data.total = 0;
 		if not self.data.g then
-			local resolved = ResolveSymbolicLink(group);
+			local resolved = app.ResolveSymbolicLink(group);
 			if resolved then
 				for i=#resolved,1,-1 do
-					resolved[i] = CloneClassInstance(resolved[i]);
+					resolved[i] = app.CloneClassInstance(resolved[i]);
 				end
 				self.data.g = resolved;
 			end
 		else
-			local resolved = ResolveSymbolicLink(group);
+			local resolved = app.ResolveSymbolicLink(group);
 			if resolved then
-				MergeObjects(self.data.g, resolved);
+				app.MergeObjects(self.data.g, resolved);
 			end
 		end
 	elseif group.g then
@@ -2349,7 +2391,7 @@ local function OnInitForPopout(self, questID, group)
 	end
 
 	-- Clone the data and then insert it into the Raw Data table.
-	self.data = CloneReference(self.data);
+	self.data = app.CloneReference(self.data);
 	self.data.hideText = true;
 	self.data.visible = true;
 	self.data.indent = 0;
@@ -2364,7 +2406,7 @@ local function OnInitForPopout(self, questID, group)
 	--[[
 	local currencyID = group.currencyID;
 	if currencyID and not self.data.usedtobuy then
-		local searchResults = SearchForField("currencyIDAsCost", currencyID);
+		local searchResults = app.SearchForField("currencyIDAsCost", currencyID);
 		if #searchResults > 0 then
 			local usedtobuy = {};
 			usedtobuy.g = {};
@@ -2396,7 +2438,7 @@ local function OnInitForPopout(self, questID, group)
 					right = total
 				};
 			end
-			MergeObjects(usedtobuy.g, searchResults);
+			app.MergeObjects(usedtobuy.g, searchResults);
 			if not self.data.g then self.data.g = {}; end
 			tinsert(self.data.g, usedtobuy);
 			self.data.usedtobuy = usedtobuy;
@@ -2405,7 +2447,7 @@ local function OnInitForPopout(self, questID, group)
 
 	local itemID = group.itemID;
 	if itemID and not self.data.tradedin then
-		local searchResults = SearchForField("itemIDAsCost", itemID);
+		local searchResults = app.SearchForField("itemIDAsCost", itemID);
 		if #searchResults > 0 then
 			local tradedin = {};
 			tradedin.g = {};
@@ -2437,7 +2479,7 @@ local function OnInitForPopout(self, questID, group)
 					right = total
 				};
 			end
-			MergeObjects(tradedin.g, searchResults);
+			app.MergeObjects(tradedin.g, searchResults);
 			if not self.data.g then self.data.g = {}; end
 			tinsert(self.data.g, tradedin);
 			self.data.tradedin = tradedin;
@@ -2463,15 +2505,15 @@ local function OnInitForPopout(self, questID, group)
 					costItem = app.CreateItem(c[2]);
 				end
 				if costItem then
-					costItem = CloneReference(costItem);
+					costItem = app.CloneReference(costItem);
 					costItem.visible = true;
 					costItem.OnUpdate = app.AlwaysShowUpdate;
-					MergeObject(costGroup.g, costItem);
+					app.MergeObject(costGroup.g, costItem);
 				end
 			end
 			if #costGroup.g > 0 then
 				if not self.data.g then self.data.g = {}; end
-				MergeObject(self.data.g, costGroup, 1);
+				app.MergeObject(self.data.g, costGroup, 1);
 			end
 		end
 
@@ -2497,7 +2539,7 @@ local function OnInitForPopout(self, questID, group)
 					if sourceItem then
 						sourceItem.visible = true;
 						sourceItem.OnUpdate = app.AlwaysShowUpdate;
-						MergeObject(sourceGroup.g, sourceItem);
+						app.MergeObject(sourceGroup.g, sourceItem);
 					end
 				end
 			end
@@ -2506,7 +2548,7 @@ local function OnInitForPopout(self, questID, group)
 					sourceItem = app.CreateNPC(creatureID);
 					sourceItem.visible = true;
 					sourceItem.OnUpdate = app.AlwaysShowUpdate;
-					MergeObject(sourceGroup.g, sourceItem);
+					app.MergeObject(sourceGroup.g, sourceItem);
 				end
 			end
 			if group.qgs then
@@ -2514,12 +2556,12 @@ local function OnInitForPopout(self, questID, group)
 					sourceItem = app.CreateNPC(qg);
 					sourceItem.visible = true;
 					sourceItem.OnUpdate = app.AlwaysShowUpdate;
-					MergeObject(sourceGroup.g, sourceItem);
+					app.MergeObject(sourceGroup.g, sourceItem);
 				end
 			end
 			if #sourceGroup.g > 0 then
 				if not self.data.g then self.data.g = {}; end
-				MergeObject(self.data.g, sourceGroup, 1);
+				app.MergeObject(self.data.g, sourceGroup, 1);
 			end
 		end
 
@@ -2539,13 +2581,13 @@ local function OnInitForPopout(self, questID, group)
 			-- If this is an achievement, build the criteria within it if possible.
 			local achievementID = group.achievementID;
 			if achievementID then
-				local searchResults = SearchForField("achievementID", achievementID);
+				local searchResults = app.SearchForField("achievementID", achievementID);
 				if #searchResults > 0 then
 					for i=1,#searchResults,1 do
 						local searchResult = searchResults[i];
 						if searchResult.achievementID == achievementID and searchResult.criteriaID then
 							if not self.data.g then self.data.g = {}; end
-							MergeObject(self.data.g, CloneReference(searchResult));
+							app.MergeObject(self.data.g, app.CloneReference(searchResult));
 						end
 					end
 				end
@@ -2562,11 +2604,11 @@ local function OnInitForPopout(self, questID, group)
 		local relatedThings = {};
 		group.GetRelatedThings(group, relatedThings);
 		for i,o in ipairs(relatedThings) do
-			MergeObject(relatedThingsGroup.g, CloneReference(o));
+			app.MergeObject(relatedThingsGroup.g, app.CloneReference(o));
 		end
 		if #relatedThingsGroup.g > 0 then
 			if not self.data.g then self.data.g = {}; end
-			MergeObject(self.data.g, relatedThingsGroup);
+			app.MergeObject(self.data.g, relatedThingsGroup);
 		end
 	end
 
@@ -2577,7 +2619,7 @@ function app:CreateMiniListForGroup(group)
 	-- Is this an achievement criteria or lacking some achievement information?
 	local achievementID = group.achievementID;
 	if achievementID and group.criteriaID then
-		local searchResults = SearchForField("achievementID", achievementID);
+		local searchResults = app.SearchForField("achievementID", achievementID);
 		if #searchResults > 0 then
 			local bestResult;
 			for i=1,#searchResults,1 do
@@ -2648,7 +2690,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	if key and id then
 		if sourcePath then
 			-- Try to find an exact match.
-			local searchResults = SearchForField(key, id);
+			local searchResults = app.SearchForField(key, id);
 			if #searchResults > 0 then
 				for i,ref in ipairs(searchResults) do
 					if app.GenerateSourceHash(ref) == sourcePath then
@@ -2671,7 +2713,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 		local t = {};
 		app:BuildFlatSearchResponse(app:GetDataCache().g, key, id, t);
 		if t and #t > 0 then
-			local ref = #t == 1 and t[1] or CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
+			local ref = #t == 1 and t[1] or app.CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
 			if ref then
 				app:CreateMiniListForGroup(ref);
 				return;
