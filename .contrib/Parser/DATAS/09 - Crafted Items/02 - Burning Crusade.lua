@@ -1422,7 +1422,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(23439),	-- Noble Topaz
 					i(23438),	-- Star of Elune
 					i(23437),	-- Talasite
-				})
+				}),
+				{
+					i(24243, {	-- Adamantite Powder
+						["provider"] = { "i", 23425 },	-- Adamantite Ore
+					}),
+				}
 			),
 		}),
 		n(ARMOR, {
@@ -2162,27 +2167,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			-- Not Ore
-			--[[	No need to list Tradegoods w/ many other sources
-			i(23117),	-- Azure Moonstone
-			i(23077),	-- Blood Garnet
-			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
-			i(23440),	-- Dawnstone
-			i(23079),	-- Deep Peridot
-			i(32228, {["timeline"] = {ADDED_2_1_0}}),	-- Empyrean Sapphire
-			i(21929),	-- Flame Spessarite
-			i(23112),	-- Golden Draenite
-			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
-			i(23436),	-- Living Ruby
-			i(23441),	-- Nightseye
-			i(23439),	-- Noble Topaz
-			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone
-			i(32249, {["timeline"] = {ADDED_2_1_0}}),	-- Seaspray Emerald
-			i(23107),	-- Shadow Draenite
-			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
-			i(23438),	-- Star of Elune
-			i(23437),	-- Talasite
-			--]]
 		}),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(23446, {	-- Adamantite Bar
