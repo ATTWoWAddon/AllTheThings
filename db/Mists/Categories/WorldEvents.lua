@@ -4,10 +4,10 @@ local ach,crit,faction,flt,h,heir,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.Crea
 _.Categories.WorldEvents={
 h(-103,{
 x(2,{
-h(-482,{lvl=55,maps={17},rwp=20001,u=2,g={
-q(10259,{coords={{58.25,55.05,17}},lvl=55,qgs={19942},rwp=20001,u=2,g={
-ach(2079,{providers={{"i",28788}},rwp=20001,u=2}),
-s(139134,28788,{b=1,f=9,q=1,rwp=20001,u=2})}})}})}),
+h(-482,{lvl=55,maps={17},rwp=20506,u=2,g={
+q(10259,{coords={{58.25,55.05,17}},lvl=55,qgs={19942},rwp=20506,u=2,g={
+ach(2079,{providers={{"i",28788}},rwp=20506,u=2}),
+s(139134,28788,{b=1,f=9,q=1,rwp=20506,u=2})}})}})}),
 x(3,{
 h(-484,{maps={17,23,36,71,76,83,111},rwp=30003,u=2,g={
 h(-12,{rwp=30003,u=2,g={
