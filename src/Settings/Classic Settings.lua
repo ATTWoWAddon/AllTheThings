@@ -298,6 +298,7 @@ settings.Initialize = function(self)
 
 	app.AddEventHandler("OnStartup", function()
 		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+		settings.ApplyAllWindowColors()
 	end)
 
 	self:UpdateMode();
