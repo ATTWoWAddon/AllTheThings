@@ -87,7 +87,6 @@ app:CreateWindow("Tradeskills", {
 		self.SkillsInit = {};
 		self.force = true;
 		self:SetMovable(false);
-		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
 		self:SetData(app.CreateRawText(L.PROFESSION_LIST, {
 			icon = 134940,

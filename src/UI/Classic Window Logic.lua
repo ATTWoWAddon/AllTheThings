@@ -136,7 +136,6 @@ app.UpdateGroups = UpdateGroups;
 
 
 -- Row Helper Functions
-local CreateRow;
 local function CalculateRowBack(data)
 	if data.back then return data.back; end
 	if data.parent then
@@ -421,7 +420,7 @@ local function UpdateVisibleRowData(self)
 	if totalRowCount > 0 then
 		-- Ensure that the first row doesn't move out of position.
 		local container = self.Container;
-		local row = container.rows[1] or CreateRow(container);
+		local row = container.rows[1];
 		SetRowData(self, row, self.rowData[1]);
 
 		-- Fill the remaining rows up to the (visible) row count.
@@ -429,7 +428,7 @@ local function UpdateVisibleRowData(self)
 			math.max(1, math.min(self.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
 
 		for i=2,totalRowCount do
-			row = container.rows[i] or CreateRow(container);
+			row = container.rows[i];
 			SetRowData(self, row, self.rowData[current]);
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > containerHeight then
@@ -953,20 +952,21 @@ local function RowOnLeave(self)
 	GameTooltip:ClearLines();
 	GameTooltip:Hide();
 end
-CreateRow = function(self)
+local function CreateRow(container, rows, i)
 	---@class ATTRowClass: ATTButtonClass
-	local row = CreateFrame("Button", nil, self);
-	row.index = #self.rows;
+	local row = CreateFrame("Button", nil, container);
+	row.index = i - 1;
+	rows[i] = row;
 	if row.index == 0 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
 	else
 		-- This means relative to the row above this one.
-		row:SetPoint("TOPLEFT", self.rows[row.index], "BOTTOMLEFT");
-		row:SetPoint("TOPRIGHT", self.rows[row.index], "BOTTOMRIGHT");
+		local aboveRow = rows[row.index];
+		row:SetPoint("TOPLEFT", aboveRow, "BOTTOMLEFT");
+		row:SetPoint("TOPRIGHT", aboveRow, "BOTTOMRIGHT");
 	end
-	tinsert(self.rows, row);
 
 	-- Setup highlighting and event handling
 	row:SetHighlightTexture(136810, "ADD");
@@ -1019,11 +1019,8 @@ CreateRow = function(self)
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(row:GetHeight());
 
-	-- Forced/External Update of a Tooltip produced by an ATT row to use the same function which created it
-	row.UpdateTooltip = RowOnEnter;
-
 	-- Clear the Row Data Initially
-	SetRowData(self, row, nil);
+	SetRowData(container, row, nil);
 	return row;
 end
 
@@ -1219,6 +1216,9 @@ local function SetVisibleForWindow(self, show)
 end
 local function ToggleForWindow(self)
 	SetVisibleForWindow(self, not self:IsVisible());
+end
+local function OnCloseButtonPressed(self)
+	self:GetParent():Hide();
 end
 local function SetWindowData(self, data)
 	if self.data ~= data then
@@ -1546,470 +1546,470 @@ local BuildCategory = function(self, headers, searchResults, inst)
 end
 function app:CreateWindow(suffix, settings)
 	local window = app.Windows[suffix];
-	if not window and settings then
-		-- Create the window instance.
-		---@class ATTWindow: BackdropTemplate, ATTFrameClass
-		window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		window:SetClampedToScreen(true);
-		window:SetToplevel(true);
-		window:EnableMouse(true);
-		if window.SetResizeBounds then
-			window:SetResizeBounds(96, 32);
-		else
-			---@diagnostic disable-next-line: undefined-field
-			window:SetMinResize(96, 32);
+	if window then return window; end
+	
+	-- Create the window instance.
+	---@class ATTWindow: BackdropTemplate, ATTFrameClass
+	window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	window:SetClampedToScreen(true);
+	window:SetToplevel(true);
+	window:EnableMouse(true);
+	if window.SetResizeBounds then
+		window:SetResizeBounds(96, 32);
+	else
+		---@diagnostic disable-next-line: undefined-field
+		window:SetMinResize(96, 32);
+	end
+	window.RecordSettings = RecordSettingsForWindow;
+	window.SetVisible = SetVisibleForWindow;
+	window.Toggle = ToggleForWindow;
+	window.Suffix = suffix;
+	app.Windows[suffix] = window;
+	
+	-- Load / Save, which allows windows to keep track of key pieces of information.
+	local defaults = BuildDefaultsForWindow(window);
+	if settings.Defaults then
+		for key,value in pairs(settings.Defaults) do
+			defaults[key] = value;
 		end
-		window.RecordSettings = RecordSettingsForWindow;
-		window.SetVisible = SetVisibleForWindow;
-		window.Toggle = ToggleForWindow;
-		window.Suffix = suffix;
-		app.Windows[suffix] = window;
-		
-		-- Load / Save, which allows windows to keep track of key pieces of information.
-		local defaults = BuildDefaultsForWindow(window);
-		if settings.Defaults then
-			for key,value in pairs(settings.Defaults) do
-				defaults[key] = value;
-			end
+	end
+	ApplySettingsForWindow(window, defaults);
+	function window:Load(windowSettings)
+		setmetatable(windowSettings, { __index = defaults });
+		if settings.OnLoad then
+			settings.OnLoad(self, windowSettings);
 		end
-		ApplySettingsForWindow(window, defaults);
-		function window:Load(windowSettings)
-			setmetatable(windowSettings, { __index = defaults });
-			if settings.OnLoad then
-				settings.OnLoad(self, windowSettings);
-			end
-			ApplySettingsForWindow(self, windowSettings);
+		ApplySettingsForWindow(self, windowSettings);
+	end
+	function window:Save()
+		local windowSettings = self:RecordSettings();
+		if windowSettings and settings.OnSave then
+			settings.OnSave(self, windowSettings);
 		end
-		function window:Save()
-			local windowSettings = self:RecordSettings();
-			if windowSettings and settings.OnSave then
-				settings.OnSave(self, windowSettings);
-			end
-		end
-		
-		-- Register events to allow settings to be recorded.
-		window:SetScript("OnMouseDown", StartMovingOrSizing);
-		window:SetScript("OnMouseUp", StopMovingOrSizing);
-		window:SetScript("OnHide", StopMovingOrSizing);
-		
-		-- Replace some functions to allow settings to be recorded.
-		local oldSetBackdropColor = window.SetBackdropColor;
-		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
-		local oldStopMovingOrSizing = window.StopMovingOrSizing;
-		window.SetBackdropColor = function(self, ...)
-			oldSetBackdropColor(self, ...);
-			self:RecordSettings();
-		end
-		window.SetBackdropBorderColor = function(self, ...)
-			oldSetBackdropBorderColor(self, ...);
-			self:RecordSettings();
-		end
-		window.StopMovingOrSizing = function(self, ...)
-			oldStopMovingOrSizing(self, ...);
-			self:RecordSettings();
-		end
-		
-		
-		window.data = nil;
-		window.Settings = nil;
-		window.SetData = SetWindowData;
-		window.BuildCategory = BuildCategory;
-		window.AllowCompleteSound = settings.AllowCompleteSound;
+	end
+	
+	-- Register events to allow settings to be recorded.
+	window:SetScript("OnMouseDown", StartMovingOrSizing);
+	window:SetScript("OnMouseUp", StopMovingOrSizing);
+	window:SetScript("OnHide", StopMovingOrSizing);
+	
+	-- Replace some functions to allow settings to be recorded.
+	local oldSetBackdropColor = window.SetBackdropColor;
+	local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
+	local oldStopMovingOrSizing = window.StopMovingOrSizing;
+	window.SetBackdropColor = function(self, ...)
+		oldSetBackdropColor(self, ...);
+		self:RecordSettings();
+	end
+	window.SetBackdropBorderColor = function(self, ...)
+		oldSetBackdropBorderColor(self, ...);
+		self:RecordSettings();
+	end
+	window.StopMovingOrSizing = function(self, ...)
+		oldStopMovingOrSizing(self, ...);
+		self:RecordSettings();
+	end
+	
+	
+	window.data = nil;
+	window.Settings = nil;
+	window.SetData = SetWindowData;
+	window.BuildCategory = BuildCategory;
+	window.AllowCompleteSound = settings.AllowCompleteSound;
 
 
 
-		-- Visible, which overrides the default functions and gives the addon the ability to receive information about it.
-		local visible, oldShow, oldHide = false, window.Show, window.Hide;
-		function window:Show()
-			if not visible then
-				visible = true;
-				oldShow(self);
-				if not self.data then
-					self:Rebuild();
+	-- Visible, which overrides the default functions and gives the addon the ability to receive information about it.
+	local visible, oldShow, oldHide = false, window.Show, window.Hide;
+	function window:Show()
+		if not visible then
+			visible = true;
+			oldShow(self);
+			if not self.data then
+				self:Rebuild();
+			else
+				self:Update();
+			end
+			if settings.OnShow then
+				settings.OnShow(self);
+			end
+			self:RecordSettings();
+		end
+	end
+	function window:Hide()
+		if visible then
+			visible = false;
+			oldHide(self);
+			if settings.OnHide then
+				settings.OnHide(self);
+			end
+			self:RecordSettings();
+		end
+	end
+	
+	-- Whether or not to debug things
+	local debugging = settings.Debugging;
+
+	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
+	-- NOTE: You can return true from the rebuild function to call the default on your new group data.
+	window.AssignChildren = AssignChildrenForWindow;
+	function window:ExpandData(expanded)
+		ExpandGroupsRecursively(self.data, expanded, true);
+	end
+	local onRebuild = settings.OnRebuild;
+	if onRebuild then
+		if debugging then
+			function window:ForceRebuild()
+				print("ForceRebuild: " .. suffix);
+				local lastUpdate = GetTimePreciseSec();
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+					self.data.window = window;
+					self:ForceUpdate(true);
 				else
-					self:Update();
+					print("ForceRebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
-				if settings.OnShow then
-					settings.OnShow(self);
+			end
+			function window:Rebuild()
+				print("Rebuild: " .. suffix);
+				local lastUpdate = GetTimePreciseSec();
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+					self.data.window = self;
+					self:Update(true);
+				else
+					print("Rebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
-				self:RecordSettings();
+			end
+		else
+			function window:ForceRebuild()
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					self.data.window = self;
+					self:ForceUpdate(true);
+				end
+			end
+			function window:Rebuild()
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					self.data.window = self;
+					self:Update(true);
+				end
 			end
 		end
-		function window:Hide()
-			if visible then
-				visible = false;
-				oldHide(self);
-				if settings.OnHide then
-					settings.OnHide(self);
-				end
-				self:RecordSettings();
-			end
-		end
-		
-		-- Whether or not to debug things
-		local debugging = settings.Debugging;
-
-		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
-		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		window.AssignChildren = AssignChildrenForWindow;
-		function window:ExpandData(expanded)
-			ExpandGroupsRecursively(self.data, expanded, true);
-		end
-		local onRebuild = settings.OnRebuild;
-		if onRebuild then
-			if debugging then
-				function window:ForceRebuild()
+	else
+		if debugging then
+			function window:ForceRebuild()
+				if self.data then
 					print("ForceRebuild: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
-					local response = onRebuild(self);
-					if self.data then
-						if response then self:AssignChildren(); end
-						print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self.data.window = window;
-						self:ForceUpdate(true);
-					else
-						print("ForceRebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					end
+					self.data.window = self;
+					self:AssignChildren();
+					print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+					self.data.window = self;
+					self:ForceUpdate(true);
 				end
-				function window:Rebuild()
+			end
+			function window:Rebuild()
+				if self.data then
 					print("Rebuild: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
-					local response = onRebuild(self);
-					if self.data then
-						if response then self:AssignChildren(); end
-						print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self.data.window = self;
-						self:Update(true);
-					else
-						print("Rebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					end
-				end
-			else
-				function window:ForceRebuild()
-					local response = onRebuild(self);
-					if self.data then
-						if response then self:AssignChildren(); end
-						self.data.window = self;
-						self:ForceUpdate(true);
-					end
-				end
-				function window:Rebuild()
-					local response = onRebuild(self);
-					if self.data then
-						if response then self:AssignChildren(); end
-						self.data.window = self;
-						self:Update(true);
-					end
+					self:AssignChildren();
+					print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+					self.data.window = self;
+					self:Update(true);
 				end
 			end
 		else
-			if debugging then
-				function window:ForceRebuild()
-					if self.data then
-						print("ForceRebuild: " .. suffix);
-						local lastUpdate = GetTimePreciseSec();
-						self.data.window = self;
-						self:AssignChildren();
-						print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self.data.window = self;
-						self:ForceUpdate(true);
-					end
+			function window:ForceRebuild()
+				if self.data then
+					self:AssignChildren();
+					self.data.window = self;
+					self:ForceUpdate(true);
 				end
-				function window:Rebuild()
-					if self.data then
-						print("Rebuild: " .. suffix);
-						local lastUpdate = GetTimePreciseSec();
-						self:AssignChildren();
-						print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-						self.data.window = self;
-						self:Update(true);
-					end
-				end
-			else
-				function window:ForceRebuild()
-					if self.data then
-						self:AssignChildren();
-						self.data.window = self;
-						self:ForceUpdate(true);
-					end
-				end
-				function window:Rebuild()
-					if self.data then
-						self:AssignChildren();
-						self.data.window = self;
-						self:Update(true);
-					end
+			end
+			function window:Rebuild()
+				if self.data then
+					self:AssignChildren();
+					self.data.window = self;
+					self:Update(true);
 				end
 			end
 		end
+	end
 
-		-- Phase 2: Update, which takes the prepared data and revalidates it.
-		local OnUpdate = settings.OnUpdate or UpdateWindow;
-		window.DefaultUpdate = UpdateWindow;
-		if debugging then
-			function window:ForceUpdate(force, trigger)
-				print("ForceUpdate: " .. suffix, force, trigger);
+	-- Phase 2: Update, which takes the prepared data and revalidates it.
+	local OnUpdate = settings.OnUpdate or UpdateWindow;
+	window.DefaultUpdate = UpdateWindow;
+	if debugging then
+		function window:ForceUpdate(force, trigger)
+			print("ForceUpdate: " .. suffix, force, trigger);
+			local lastUpdate = GetTimePreciseSec();
+			local result = OnUpdate(self, force, trigger);
+			print("ForceUpdate: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+			self:Refresh();
+			return result;
+		end
+		function window:Update(force, trigger)
+			if self:IsShown() then
+				print("UpdateWindow: " .. suffix, force, trigger);
 				local lastUpdate = GetTimePreciseSec();
 				local result = OnUpdate(self, force, trigger);
-				print("ForceUpdate: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+				print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				self:Refresh();
 				return result;
+			else
+				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 			end
-			function window:Update(force, trigger)
-				if self:IsShown() then
-					print("UpdateWindow: " .. suffix, force, trigger);
-					local lastUpdate = GetTimePreciseSec();
-					local result = OnUpdate(self, force, trigger);
-					print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self:Refresh();
-					return result;
-				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-				end
-			end
-		else
-			function window:ForceUpdate(force, trigger)
+		end
+	else
+		function window:ForceUpdate(force, trigger)
+			local result = OnUpdate(self, force, trigger);
+			self:Refresh();
+			return result;
+		end
+		function window:Update(force, trigger)
+			if self:IsShown() then
 				local result = OnUpdate(self, force, trigger);
 				self:Refresh();
 				return result;
-			end
-			function window:Update(force, trigger)
-				if self:IsShown() then
-					local result = OnUpdate(self, force, trigger);
-					self:Refresh();
-					return result;
-				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-				end
+			else
+				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 			end
 		end
+	end
 
-		-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
-		local defaultOnRefresh = UpdateVisibleRowData;
-		local onRefresh = settings.OnRefresh;
-		if onRefresh then
-			if debugging then
-				function window:Refresh()
-					if self:IsShown() then
-						print("Refresh: " .. suffix);
-						local lastUpdate = GetTimePreciseSec();
-						if onRefresh(self) then defaultOnRefresh(self); end
-						print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					end
-				end
-			else
-				function window:Refresh()
-					if self:IsShown() and onRefresh(self) then defaultOnRefresh(self); end
+	-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
+	local defaultOnRefresh = UpdateVisibleRowData;
+	local onRefresh = settings.OnRefresh;
+	if onRefresh then
+		if debugging then
+			function window:Refresh()
+				if self:IsShown() then
+					print("Refresh: " .. suffix);
+					local lastUpdate = GetTimePreciseSec();
+					if onRefresh(self) then defaultOnRefresh(self); end
+					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
 			end
 		else
-			if debugging then
-				function window:Refresh()
-					if self:IsShown() then
-						print("Refresh: " .. suffix);
-						local lastUpdate = GetTimePreciseSec();
-						defaultOnRefresh(self);
-						print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					end
-				end
-			else
-				--window.Refresh = defaultOnRefresh;
-				function window:Refresh()
-					if self:IsShown() then defaultOnRefresh(self); end
-				end
+			function window:Refresh()
+				if self:IsShown() and onRefresh(self) then defaultOnRefresh(self); end
 			end
 		end
+	else
+		if debugging then
+			function window:Refresh()
+				if self:IsShown() then
+					print("Refresh: " .. suffix);
+					local lastUpdate = GetTimePreciseSec();
+					defaultOnRefresh(self);
+					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
+				end
+			end
+		else
+			--window.Refresh = defaultOnRefresh;
+			function window:Refresh()
+				if self:IsShown() then defaultOnRefresh(self); end
+			end
+		end
+	end
 
-		-- Phase 4: Redraw, which only updates the rows that already have row data visually.
-		function window:Redraw()
-			if self:IsShown() then
-				RedrawVisibleRowData(self);
-			end
+	-- Phase 4: Redraw, which only updates the rows that already have row data visually.
+	function window:Redraw()
+		if self:IsShown() then
+			RedrawVisibleRowData(self);
 		end
-		
-		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
-		-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
-		local delays = {};
-		window.DelayedCall = function(self, method, delay, force)
-			delays[method] = delay or 60;
-			window:StartATTCoroutine("DelayedCall::" .. method, function()
-				while delays[method] > 0 or InCombatLockdown() do
-					delays[method] = delays[method] - 1;
-					coroutine.yield();
-				end
-				window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
-					coroutine.yield();
-					window[method](window, force);
-				end);
+	end
+	
+	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
+	-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
+	local delays = {};
+	window.DelayedCall = function(self, method, delay, force)
+		delays[method] = delay or 60;
+		window:StartATTCoroutine("DelayedCall::" .. method, function()
+			while delays[method] > 0 or InCombatLockdown() do
+				delays[method] = delays[method] - 1;
+				coroutine.yield();
+			end
+			window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
+				coroutine.yield();
+				window[method](window, force);
 			end);
-		end
-		function window:DelayedRebuild()
-			self:DelayedCall("Rebuild", 1);
-		end
-		function window:DelayedRefresh()
-			self:DelayedCall("Refresh", 5);
-		end
-		function window:DelayedUpdate(force)
-			self:DelayedCall("Update", 60, force);
-		end
+		end);
+	end
+	function window:DelayedRebuild()
+		self:DelayedCall("Rebuild", 1);
+	end
+	function window:DelayedRefresh()
+		self:DelayedCall("Refresh", 5);
+	end
+	function window:DelayedUpdate(force)
+		self:DelayedCall("Update", 60, force);
+	end
 
-		-- The Row Container. This contains all of the row frames.
-		---@class ATTRowContainer: Frame
-		local container = CreateFrame("Frame", nil, window);
-		container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
-		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-		window.Container = container;
-		container.rows = {};
-		container:Show();
-
-		local topright = window:CreateTexture(nil, "OVERLAY")
-		topright:SetTexture(251963)
-		topright:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
-		topright:SetTexCoord(0.7, 0.745, 0.04, 0.4)
-		topright:SetSize(20, 20);
-		window.TopRight = topright;
-
-		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-		local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+	closeButton:SetScript("OnClick", OnCloseButtonPressed);
+	window.CloseButton = closeButton;
+	if app.isRetail then
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+		closeButton:SetSize(20, 20);
+	else
 		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
-		closeButton:SetScript("OnClick", function() window:Toggle(); end);
 		closeButton:SetSize(24, 24);
-		window.CloseButton = closeButton;
+	end
 
-		-- The Scroll Bar.
-		window.CurrentIndex = 0;
-		---@class ATTWindowScrollBar: Slider
-		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-		container:SetPoint("RIGHT", scrollbar, "LEFT", -2, 0);
-		scrollbar:SetPoint("TOP", window, "TOP", 0, -40);
-		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-		scrollbar:SetScript("OnValueChanged", function(o, value)
-			if window.CurrentIndex ~= value then
-				window.CurrentIndex = value;
-				window:Refresh();
-			end
-		end);
-		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
-		scrollbar.back:SetAllPoints(scrollbar);
-		scrollbar:SetMinMaxValues(1, 1);
-		scrollbar:SetValueStep(1);
-		scrollbar:SetValue(1);
-		scrollbar:SetObeyStepOnDrag(true);
-		scrollbar:SetWidth(16);
-		scrollbar:EnableMouseWheel(true);
-		window:SetScript("OnMouseWheel", function(o, delta)
-			scrollbar:SetValue(window.CurrentIndex - delta);
-		end);
-		window.SetMinMaxValues = function(o, displayedValue, totalValue)
-			scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
+	-- The Scroll Bar.
+	window.CurrentIndex = 1;
+	---@class ATTWindowScrollBar: Slider
+	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
+	scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15);
+	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
+	scrollbar:SetScript("OnValueChanged", function(o, value)
+		if window.CurrentIndex ~= value then
+			window.CurrentIndex = value;
+			window:Refresh();
 		end
+	end);
+	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
+	scrollbar.back:SetAllPoints(scrollbar);
+	scrollbar:SetMinMaxValues(1, 1);
+	scrollbar:SetValueStep(1);
+	scrollbar:SetValue(1);
+	scrollbar:SetObeyStepOnDrag(true);
+	scrollbar:SetWidth(16);
+	scrollbar:EnableMouseWheel(true);
+	window:EnableMouseWheel(true);
+	window.ScrollBar = scrollbar;
+	window:SetScript("OnMouseWheel", function(o, delta)
+		scrollbar:SetValue(window.CurrentIndex - delta);
+	end);
+	window.SetMinMaxValues = function(o, displayedValue, totalValue)
+		scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
+	end
 
-		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture(app.asset("grip"));
-		grip:SetSize(16, 16);
-		grip:SetTexCoord(0,1,0,1);
-		grip:SetPoint("BOTTOMRIGHT", -5, 5);
-		window:EnableMouseWheel(true);
-		window.ScrollBar = scrollbar;
+	-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
+	local grip = window:CreateTexture(nil, "ARTWORK");
+	grip:SetTexture(app.asset("grip"));
+	grip:SetSize(16, 16);
+	grip:SetTexCoord(0,1,0,1);
+	grip:SetPoint("BOTTOMRIGHT", -5, 5);
 
-		-- Setup the Event Handlers
-		local handlers = {};
-		window:SetScript("OnEvent", function(o, e, ...)
-			if debugging then print(e, ...); end
-			local handler = handlers[e];
-			if handler then
-				handler(window, ...);
+	-- The Row Container. This contains all of the row frames.
+	---@class ATTRowContainer: Frame
+	local container = CreateFrame("Frame", nil, window);
+	container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
+	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
+	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+	window.Container = container;
+	container.rows = setmetatable({}, {
+		__index = function(rows, i)
+			return CreateRow(container, rows, i);
+		end,
+	});
+	container:Show();
+
+	-- Setup the Event Handlers
+	local handlers = {};
+	window:SetScript("OnEvent", function(o, e, ...)
+		if debugging then print(e, ...); end
+		local handler = handlers[e];
+		if handler then
+			handler(window, ...);
+		else
+			window:Update();
+		end
+	end);
+	if not settings.IgnoreQuestUpdates then
+		local delayedRefresh = function()
+			window:DelayedRefresh();
+		end;
+		handlers.BAG_UPDATE_DELAYED = delayedRefresh;
+		handlers.QUEST_WATCH_UPDATE = delayedRefresh;
+		handlers.QUEST_ITEM_UPDATE = delayedRefresh;
+		window:RegisterEvent("QUEST_WATCH_UPDATE");
+		window:RegisterEvent("QUEST_ITEM_UPDATE");
+		window:RegisterEvent("BAG_UPDATE_DELAYED");
+		local delayedUpdateWithTrigger = function()
+			window:Redraw();
+			window:DelayedUpdate(true);
+		end;
+		handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
+		handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
+		handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
+		window:RegisterEvent("QUEST_ACCEPTED");
+		window:RegisterEvent("QUEST_REMOVED");
+		window:RegisterEvent("QUEST_TURNED_IN");
+		local delayedUpdate = function()
+			window:DelayedUpdate();
+		end;
+		handlers.QUEST_LOG_UPDATE = delayedUpdate;
+		window:RegisterEvent("QUEST_LOG_UPDATE");
+	end
+	if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
+		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
+		local WasHiddenByPetBattle;
+		handlers.PET_BATTLE_OPENING_START = function()
+			if window:IsVisible() then
+				WasHiddenByPetBattle = true;
+				window:Hide();
 			else
-				window:Update();
+				WasHiddenByPetBattle = nil;
 			end
-		end);
-		if not settings.IgnoreQuestUpdates then
-			local delayedRefresh = function()
-				window:DelayedRefresh();
-			end;
-			handlers.BAG_UPDATE_DELAYED = delayedRefresh;
-			handlers.QUEST_WATCH_UPDATE = delayedRefresh;
-			handlers.QUEST_ITEM_UPDATE = delayedRefresh;
-			window:RegisterEvent("QUEST_WATCH_UPDATE");
-			window:RegisterEvent("QUEST_ITEM_UPDATE");
-			window:RegisterEvent("BAG_UPDATE_DELAYED");
-			local delayedUpdateWithTrigger = function()
-				window:Redraw();
-				window:DelayedUpdate(true);
-			end;
-			handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
-			handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
-			handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
-			window:RegisterEvent("QUEST_ACCEPTED");
-			window:RegisterEvent("QUEST_REMOVED");
-			window:RegisterEvent("QUEST_TURNED_IN");
-			local delayedUpdate = function()
-				window:DelayedUpdate();
-			end;
-			handlers.QUEST_LOG_UPDATE = delayedUpdate;
-			window:RegisterEvent("QUEST_LOG_UPDATE");
 		end
-		if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
-			-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
-			local WasHiddenByPetBattle;
-			handlers.PET_BATTLE_OPENING_START = function()
-				if window:IsVisible() then
-					WasHiddenByPetBattle = true;
-					window:Hide();
-				else
-					WasHiddenByPetBattle = nil;
-				end
+		handlers.PET_BATTLE_CLOSE = function()
+			if WasHiddenByPetBattle then
+				WasHiddenByPetBattle = nil;
+				window:Show();
 			end
-			handlers.PET_BATTLE_CLOSE = function()
-				if WasHiddenByPetBattle then
-					WasHiddenByPetBattle = nil;
-					window:Show();
-				end
-			end
-			window:RegisterEvent("PET_BATTLE_OPENING_START");
-			window:RegisterEvent("PET_BATTLE_CLOSE");
 		end
-		window.IsDynamicCategory = settings.IsDynamicCategory;
-		window.DynamicCategoryHeader = settings.DynamicCategoryHeader;
-		window.DynamicProfessionID = settings.DynamicProfessionID;
-		window.IsTopLevel = settings.IsTopLevel;
-		if settings.OnInit then
-			settings.OnInit(window, handlers);
-		end
-		if settings.Commands then
-			local onCommand;
-			if settings.OnCommand then
-				onCommand = function(cmd)
-					if not settings.OnCommand(window, cmd) then
-						window:Toggle();
-					end
-				end
-			else
-				onCommand = function(cmd)
+		window:RegisterEvent("PET_BATTLE_OPENING_START");
+		window:RegisterEvent("PET_BATTLE_CLOSE");
+	end
+	window.IsDynamicCategory = settings.IsDynamicCategory;
+	window.DynamicCategoryHeader = settings.DynamicCategoryHeader;
+	window.DynamicProfessionID = settings.DynamicProfessionID;
+	window.IsTopLevel = settings.IsTopLevel;
+	if settings.TooltipAnchor then
+		window.TooltipAnchor = settings.TooltipAnchor;
+	end
+	if settings.OnInit then
+		settings.OnInit(window, handlers);
+	end
+	if settings.Commands then
+		local onCommand;
+		if settings.OnCommand then
+			onCommand = function(cmd)
+				if not settings.OnCommand(window, cmd) then
 					window:Toggle();
 				end
 			end
-
-			window.Commands = settings.Commands;
-			window.HideFromSettings = settings.HideFromSettings;
-			window.SettingsName = settings.SettingsName or window.Suffix;
-			settings.Commands.RootCommandIndex = settings.RootCommandIndex
-			app.AddSlashCommands(settings.Commands, onCommand)
-			local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
-			app.ChatCommands.Help[primaryCommand:lower()] = {
-				settings.UsageText or ("Usage: " .. primaryCommand),
-				settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
-			};
+		else
+			onCommand = function(cmd)
+				window:Toggle();
+			end
 		end
-		if settings.TooltipAnchor then
-			window.TooltipAnchor = settings.TooltipAnchor;
-		end
-		LoadSettingsForWindow(window);
 
-		
+		window.Commands = settings.Commands;
+		window.HideFromSettings = settings.HideFromSettings;
+		window.SettingsName = settings.SettingsName or window.Suffix;
+		settings.Commands.RootCommandIndex = settings.RootCommandIndex
+		app.AddSlashCommands(settings.Commands, onCommand)
+		local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
+		app.ChatCommands.Help[primaryCommand:lower()] = {
+			settings.UsageText or ("Usage: " .. primaryCommand),
+			settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
+		};
 	end
+	LoadSettingsForWindow(window);
 	return window;
 end
 function app:GetWindow(suffix)

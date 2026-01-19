@@ -907,31 +907,27 @@ local function OnScrollBarValueChanged(self, value)
 	end
 end
 
-local NewWindowRowContainer
-do
-local HandleEvent = app.HandleEvent
 local function RowOnClick(self, button)
-	HandleEvent("RowOnClick", self, button)
+	app.HandleEvent("RowOnClick", self, button)
 end
 local function RowOnEnter(self)
-	HandleEvent("RowOnEnter", self)
+	app.HandleEvent("RowOnEnter", self)
 end
 local function RowOnLeave(self)
-	HandleEvent("RowOnLeave", self)
+	app.HandleEvent("RowOnLeave", self)
 end
-local function CreateRow(rows, i)
-	local container, index = rows.__container, i - 1
+local function CreateRow(container, rows, i)
 	---@class ATTRowButtonClass: Button
 	local row = CreateFrame("Button", nil, container);
-	row.index = index
+	row.index = i - 1
 	rows[i] = row
-	if index == 0 then
+	if i == 1 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
 	else
 		-- This means relative to the row above this one.
-		local aboveRow = rows[index] or CreateRow(rows, index)
+		local aboveRow = rows[row.index];
 		row:SetPoint("TOPLEFT", aboveRow, "BOTTOMLEFT");
 		row:SetPoint("TOPRIGHT", aboveRow, "BOTTOMRIGHT");
 	end
@@ -986,18 +982,9 @@ local function CreateRow(rows, i)
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(rowHeight);
 
-	-- Forced/External Update of a Tooltip produced by an ATT row to use the same function which created it
-	row.UpdateTooltip = RowOnEnter;
-
 	-- Clear the Row Data Initially
 	ClearRowData(row);
 	return row;
-end
-NewWindowRowContainer = function(container)
-	return setmetatable({__container=container}, { __index = function(t,i)
-		return CreateRow(t,i)
-	end})
-end
 end
 
 -- allows a window to keep track of any specific custom handler functions it creates
@@ -1061,9 +1048,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 	if window then return window end
 
 	-- Create the window instance.
-	-- app.PrintDebug("GetWindow",suffix)
 	---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
-	window = CreateFrame("Frame", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	window = CreateFrame("Frame", nil, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	app.Windows[suffix] = window;
 	window.Suffix = suffix;
 	window.Toggle = ToggleForWindow;
@@ -1102,8 +1088,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	-- set the scaling for the new window if settings have been initialized
 	local scale = app.Settings and app.Settings._Initialize and (suffix == "Prime" and app.Settings:GetTooltipSetting("MainListScale") or app.Settings:GetTooltipSetting("MiniListScale")) or 1;
 	window:SetScale(scale);
-
-	window:SetUserPlaced(true);
+	
 	window.data = {}
 
 	-- set whether this window lock is persistable between sessions
@@ -1114,15 +1099,21 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:Hide();
 
 	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-	window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-	window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
-	window.CloseButton:SetSize(20, 20);
-	window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
+	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+	closeButton:SetScript("OnClick", OnCloseButtonPressed);
+	window.CloseButton = closeButton;
+	if app.isRetail then
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+		closeButton:SetSize(20, 20);
+	else
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
+		closeButton:SetSize(24, 24);
+	end
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
 	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-	scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -15);
+	scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15);
 	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
@@ -1152,9 +1143,12 @@ function app:GetWindow(suffix, parent, onUpdate)
 	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
 	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
 	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-	-- container:SetClipsChildren(true);
 	window.Container = container;
-	container.rows = NewWindowRowContainer(container)
+	container.rows = setmetatable({}, {
+		__index = function(rows, i)
+			return CreateRow(container, rows, i);
+		end,
+	});
 	container:Show();
 	
 	window.AddEventHandler = AddEventHandler
