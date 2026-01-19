@@ -972,10 +972,10 @@ app.GetOrCreateCache = function(idField, className)
 	return app.CreateCache(idField, className)
 end
 
--- Allows creating a group which is keyed based on only its 'text' field
-app.CreateRawText = app.CreateClass("RawText", "text", {
+-- Allows creating a group which is keyed based on only its 'name' field
+app.CreateRawText = app.CreateClass("RawText", "strKey", {
 	name = function(t)
-		return t.text
+		return t.strKey;
 	end,
 	isHeader = app.ReturnTrue,
 })
