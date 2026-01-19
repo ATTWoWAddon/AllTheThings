@@ -20,7 +20,6 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 local GetProgressColorText = app.Modules.Color.GetProgressColorText
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros
 local GetProgressColor = app.Modules.Color.GetProgressColor
-local AssignChildren = app.AssignChildren
 local GetDisplayID = app.GetDisplayID
 local Push = app.Push
 local GetSpecsString = app.GetSpecsString
@@ -30,7 +29,7 @@ local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local GetIndicatorIcon = app.GetIndicatorIcon;
-local wipearray = app.wipearray
+local wipearray = app.wipearray;
 
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
@@ -80,26 +79,30 @@ app.AddCustomWindowOnUpdate = function(customName, onUpdate)
 end
 end)();
 
+local function AssignChildrenForWindow(self)
+	app.AssignChildren(self.data);
+end
+local function SetVisibleForWindow(self, show)
+	-- app.PrintDebug("SetVisibleForWindow",self.Suffix,show)
+	if show then
+		self:Show();
+		-- apply window position from profile
+		app.Settings.SetWindowFromProfile(self.Suffix);
+		self:Update();
+	else
+		self:Hide();
+	end
+end
+local function ToggleForWindow(self)
+	return SetVisibleForWindow(self, not self:IsVisible());
+end
+
 -- allows resetting a given ATT window
 local function ResetWindow(suffix)
 	app.Windows[suffix] = nil;
 	if suffix ~= "Added With Patch" then	-- don't spam for this window for now
 		app.print("Reset Window",suffix);
 	end
-end
-local function SetVisible(self, show, forceUpdate)
-	-- app.PrintDebug("SetVisible",self.Suffix,show,forceUpdate)
-	if show then
-		self:Show();
-		-- apply window position from profile
-		app.Settings.SetWindowFromProfile(self.Suffix);
-		self:Update(forceUpdate);
-	else
-		self:Hide();
-	end
-end
-local function Toggle(self, forceUpdate)
-	return SetVisible(self, not self:IsVisible(), forceUpdate);
 end
 
 local SkipAutoExpands = {
@@ -161,9 +164,7 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
-local function AssignChildrenForWindow(self)
-	AssignChildren(self.data);
-end
+
 -- TODO: instead of requiring 'got' parameter to indicate something was collected
 -- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
 -- and clear on update
@@ -809,7 +810,7 @@ local StoreWindowPosition = function(self)
 			end
 			points.Width = math.floor(self:GetWidth());
 			points.Height = math.floor(self:GetHeight());
-			points.Locked = self.isLocked or nil;
+			points.isLocked = self.isLocked;
 			-- print("saved window",self.Suffix)
 			-- app.PrintTable(points)
 		else
@@ -834,7 +835,7 @@ local function BuildData(self)
 	local data = self.data;
 	if data then
 		-- app.PrintDebug("Window:BuildData",self.Suffix,data.text)
-		AssignChildren(data);
+		app.AssignChildren(data);
 	end
 end
 -- returns a Runner specific to the 'self' window
@@ -1065,7 +1066,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window = CreateFrame("Frame", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	app.Windows[suffix] = window;
 	window.Suffix = suffix;
-	window.Toggle = Toggle;
+	window.Toggle = ToggleForWindow;
+	window.SetVisible = SetVisibleForWindow;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
 	local onUpdateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.AssignChildren = AssignChildrenForWindow;
@@ -1074,7 +1076,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Refresh = function(...) return Refresh(...) end;
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
-	window.SetVisible = SetVisible;
 	window.StorePosition = StoreWindowPosition;
 	window.SetData = SetData;
 	window.BuildData = BuildData;
@@ -1459,50 +1460,12 @@ function app:CreateMiniListForGroup(group, forceFresh)
 			DelayedCallback(popout.Update, 0.25, popout);
 		end
 	end
-	popout:Toggle(true);
+	popout.HasPendingUpdate = true;
+	popout:Toggle();
 	return popout;
 end
 
-if not C_ContentTracking then
-	app.AddContentTracking = function(group)
-		app.print("Content Tracking is not supported in this game version!")
-	end
-else
-	local IsTracking, StartTracking, StopTracking
-		= C_ContentTracking.IsTracking, C_ContentTracking.StartTracking, C_ContentTracking.StopTracking
-	app.AddContentTracking = function(group)
-		-- if this group is currently tracked
-		local sourceID, mountID, achievementID, questID = group.sourceID, group.mountJournalID, group.achievementID, group.questID
-		local type = sourceID and 0
-					or mountID and 1
-					or achievementID and 2
-					or nil
-		if type then
-			local id = type == 1 and mountID
-					or type == 2 and achievementID
-					or sourceID
-			if IsTracking(type,id) then
-				-- app.PrintDebug("StopTracking",type,id)
-				StopTracking(type, id, Enum.ContentTrackingStopType.Manual)
-			else
-				-- app.PrintDebug("StartTracking",type,id)
-				StartTracking(type, id)
-			end
-			return true
-		end
-		-- Quests can be tracked using another API
-		if questID then
-			-- Add tracking
-			if C_QuestLog.AddQuestWatch(questID) or C_QuestLog.AddWorldQuestWatch(questID) then
-				return true
-			end
-			-- Remove tracking
-			if C_QuestLog.RemoveQuestWatch(questID) or C_QuestLog.RemoveWorldQuestWatch(questID) then
-				return true
-			end
-		end
-	end
-end
+
 -- Adds ATT information about the list of Quests into the provided tooltip
 local function AddQuestInfoToTooltip(info, quests, reference)
 	if not quests then return end

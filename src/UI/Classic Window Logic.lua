@@ -1,8 +1,8 @@
 -- App locals
 local _, app = ...;
 local contains = app.contains;
-local AssignChildren, CloneClassInstance, CloneReference, wipearray
-	= app.AssignChildren, app.CloneClassInstance, app.CloneReference, app.wipearray;
+local CloneClassInstance, CloneReference, wipearray
+	= app.CloneClassInstance, app.CloneReference, app.wipearray;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
@@ -488,10 +488,6 @@ local function UpdateVisibleRowData(self)
 		self:Hide();
 	end
 end
-local function IsSelfOrChild(self, focus)
-	-- This function helps validate that the focus is within the local hierarchy.
-	return focus and (self == focus or IsSelfOrChild(self, focus:GetParent()));
-end
 local function StopMovingOrSizing(self)
 	if self.isMoving then
 		self:StopMovingOrSizing();
@@ -506,7 +502,6 @@ local function StartMovingOrSizing(self)
 	if self.isMoving then
 		StopMovingOrSizing(self);
 	else
-		self.isMoving = true;
 		self.isMoving = true;
 		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
@@ -531,8 +526,11 @@ local function RowOnClick(self, button)
 		end
 
 		local window = self:GetParent():GetParent();
-		if IsShiftKeyDown() then
-			if button == "RightButton" then
+		-- All non-Shift Right Clicks open a mini list or the settings.
+		if button == "RightButton" then
+			if IsAltKeyDown() then
+				app.AddTomTomWaypoint(reference, false);
+			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
 					app:StartATTCoroutine("Sorting", function()
@@ -549,134 +547,150 @@ local function RowOnClick(self, button)
 					end);
 				end
 				return true;
-			end
-
-			-- If we're at the Auction House
-			local isTSMOpen = TSM_API and TSM_API.IsUIVisible("AUCTION");
-			if isTSMOpen or (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				local missingItems = {};
-				app.Search.SearchForMissingItemsRecursively(reference, missingItems);
-				local count = #missingItems;
-				if count < 1 then
-					app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
-					return true;
-				end
-				if isTSMOpen then
-					-- This is the new, unusable POS API that I don't understand. lol
-					local dict, path, itemString = {}, nil, nil;
-					for i,group in ipairs(missingItems) do
-						path = app.GenerateSourcePathForTSM(group, 0);
-						if path then
-							itemString = dict[path];
-							if itemString then
-								dict[path] = itemString .. ",i:" .. group.itemID;
-							else
-								dict[path] = "i:" .. group.itemID;
-							end
-						end
-					end
-					local search,first = "",true;
-					for path,itemString in pairs(dict) do
-						if first then
-							first = false;
-						else
-							search = search .. ",";
-						end
-						search = search .. "group:" .. path .. "," .. itemString;
-					end
-					app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
-					return true;
-				elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
-					-- Auctionator needs unique Item Names. Nothing else.
-					local uniqueNames = {};
-					for i,group in ipairs(missingItems) do
-						local name = group.name;
-						if name then uniqueNames[name] = 1; end
-					end
-
-					-- Build the array of names.
-					local arr = {};
-					for key,value in pairs(uniqueNames) do
-						tinsert(arr, key);
-					end
-					Auctionator.API.v1.MultiSearch(L["TITLE"], arr);
-					return;
-				end
-
-				-- Attempt to search manually with the link.
-				local link = reference.link or reference.silentLink;
-				if link and HandleModifiedItemClick(link) then
-					if AuctionHouseFrame.SearchBar then
-						AuctionHouseFrame.SearchBar:StartSearch();
-					else
-						AuctionFrameBrowse_Search();
-					end
-				end
-				return true;
-			else
-				-- Not at the Auction House
-				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
-				local link = reference.link or reference.silentLink;
-				if link then
-					if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
-					local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
-					if dialog then dialog.editBox:SetText(link); return true; end
-				end
-				if button == "LeftButton" then app.RefreshCollections(); end
-				return true;
-			end
-		end
-
-		-- Control Click Expands the Groups
-		if IsControlKeyDown() then
-			-- If this reference has a link, then attempt to preview the appearance.
-			if reference.illusionID then
-				-- Illusions are a nasty animal that need to be displayed a special way.
-				DressUpVisual(reference.illusionLink);
-				return true;
-			else
-				local link = reference.link or reference.silentLink;
-				if link and HandleModifiedItemClick(link) then
-					return true;
-				end
-			end
-
-			-- If this reference is anything else, expand the groups.
-			if reference.g then
-				-- mark the window if it is being fully-collapsed
-				if self.index < 1 then
-					window.fullCollapsed = HasExpandedSubgroup(reference);
-				end
-				-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
-				ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
-				window:Update();
-				return true;
-			end
-		end
-
-		-- All non-Shift Right Clicks open a mini list or the settings.
-		if button == "RightButton" then
-			if IsAltKeyDown() then
-				app.AddTomTomWaypoint(reference, false);
 			elseif self.index > 0 then
 				app:CreateMiniListForGroup(self.ref);
 			else
 				app.Settings:Open();
 			end
-		elseif self.index > 0 then
-			reference.expanded = not reference.expanded;
-			window:Update();
-		elseif not reference.expanded then
-			reference.expanded = true;
-			window:Update();
 		else
-			-- Allow the First Frame to move the parent.
-			if window:IsMovable() then
-				self:SetScript("OnMouseUp", function(self)
-					self:SetScript("OnMouseUp", nil);
-					StopMovingOrSizing(window);
-				end);
-				StartMovingOrSizing(window);
+			if IsShiftKeyDown() then
+				-- If we're at the Auction House
+				local isTSMOpen = TSM_API and TSM_API.IsUIVisible("AUCTION");
+				if isTSMOpen or (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+					local missingItems = {};
+					app.Search.SearchForMissingItemsRecursively(reference, missingItems);
+					local count = #missingItems;
+					if count < 1 then
+						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
+						return true;
+					end
+					if isTSMOpen then
+						-- This is the new, unusable POS API that I don't understand. lol
+						local dict, path, itemString = {}, nil, nil;
+						for i,group in ipairs(missingItems) do
+							path = app.GenerateSourcePathForTSM(group, 0);
+							if path then
+								itemString = dict[path];
+								if itemString then
+									dict[path] = itemString .. ",i:" .. group.itemID;
+								else
+									dict[path] = "i:" .. group.itemID;
+								end
+							end
+						end
+						local search,first = "",true;
+						for path,itemString in pairs(dict) do
+							if first then
+								first = false;
+							else
+								search = search .. ",";
+							end
+							search = search .. "group:" .. path .. "," .. itemString;
+						end
+						app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
+						return true;
+					elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
+						-- Auctionator needs unique Item Names. Nothing else.
+						local uniqueNames = {};
+						for i,group in ipairs(missingItems) do
+							local name = group.name;
+							if name then uniqueNames[name] = 1; end
+						end
+
+						-- Build the array of names.
+						local arr = {};
+						for key,value in pairs(uniqueNames) do
+							tinsert(arr, key);
+						end
+						Auctionator.API.v1.MultiSearch(L["TITLE"], arr);
+						return;
+					end
+
+					-- Attempt to search manually with the link.
+					local link = reference.link or reference.silentLink;
+					if link and HandleModifiedItemClick(link) then
+						if AuctionHouseFrame.SearchBar then
+							AuctionHouseFrame.SearchBar:StartSearch();
+						else
+							AuctionFrameBrowse_Search();
+						end
+					end
+					return true;
+				else
+					-- Not at the Auction House
+					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
+					local link = reference.link or reference.silentLink;
+					if link then
+						if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
+						local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
+						if dialog then dialog.editBox:SetText(link); return true; end
+					end
+					if button == "LeftButton" then app.RefreshCollections(); end
+					return true;
+				end
+			end
+			
+			-- Alt Click on a data row attempts to (un)track the group/nested groups, not from window header unless a popout window
+			if IsAltKeyDown() and (self.index > 0 or window.ExpireTime) then
+				if app.AddContentTracking(reference) then
+					return true
+				end
+			end
+			
+			-- Control Click Expands the Groups
+			if IsControlKeyDown() then
+				-- If this reference has a link, then attempt to preview the appearance.
+				if reference.illusionID then
+					-- Illusions are a nasty animal that need to be displayed a special way.
+					DressUpVisual(reference.illusionLink);
+					return true;
+				else
+					local link = reference.link or reference.silentLink;
+					if link and HandleModifiedItemClick(link) then
+						return true;
+					end
+				end
+
+				-- If this reference is anything else, expand the groups.
+				if reference.g then
+					-- mark the window if it is being fully-collapsed
+					if self.index < 1 then
+						window.fullCollapsed = HasExpandedSubgroup(reference);
+					end
+					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
+					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
+					window:Update();
+					return true;
+				end
+			end
+			
+			if self.index > 0 then
+				reference.expanded = not reference.expanded;
+				window:Update();
+			else
+				if not reference.expanded then
+					reference.expanded = true;
+					window:Update();
+				end
+				if window:IsMovable() then
+					-- Allow the First Frame to move the parent.
+					if IsAltKeyDown() then
+						-- Toggle lock/unlock by holding Alt when clicking the header of a Window if it is movable
+						window.isLocked = not window.isLocked;
+						window:RecordSettings();
+
+						-- force tooltip to refresh since locked state drives tooltip content
+						self:GetScript("OnLeave")(self)
+						self:GetScript("OnEnter")(self)
+					else
+						-- Allow the First Frame to move the parent.
+						self:SetScript("OnMouseUp", function(self)
+							self:SetScript("OnMouseUp", nil);
+							StopMovingOrSizing(window);
+						end);
+						StartMovingOrSizing(window);
+					end
+				end
 			end
 		end
 	end
@@ -714,7 +728,8 @@ local function RowOnEnter(self)
 	local tooltipInfo = {};
 	tooltip:ClearLines();
 	app.ActiveRowReference = reference;
-	local anchor = self:GetParent():GetParent().TooltipAnchor;
+	local window = self:GetParent():GetParent();
+	local anchor = window.TooltipAnchor;
 	if not anchor then
 		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 			anchor = "ANCHOR_LEFT";
@@ -902,6 +917,18 @@ local function RowOnEnter(self)
 			end
 		end
 	end
+	-- Add info in tooltip for the header of a Window for whether it is locked or not
+	if self.index == 0 then
+		if window.isLocked then
+			tinsert(tooltipInfo, {
+				left = L.TOP_ROW_TO_UNLOCK,
+			})
+		elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+			tinsert(tooltipInfo, {
+				left = L.TOP_ROW_TO_LOCK,
+			})
+		end
+	end
 
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
@@ -1001,17 +1028,13 @@ CreateRow = function(self)
 end
 
 -- Window Creation
-local defaultNoEntriesRow = app.CreateRawText(L.NO_ENTRIES, {
-	OnClick = app.UI.OnClick.IgnoreRightClick,
-	preview = app.asset("Discord_2_128"),
-	description = L.NO_ENTRIES_DESC,
-});
 local AllWindowSettings;
 local function ApplySettingsForWindow(self, windowSettings)
 	local oldRecordSettings = self.RecordSettings;
 	self.RecordSettings = app.EmptyFunction;
 	self:SetMovable(windowSettings.movable);
 	self:SetResizable(windowSettings.resizable);
+	self.isLocked = windowSettings.isLocked;
 	if windowSettings.scale then self:SetScale(windowSettings.scale); end
 	if windowSettings.movable then
 		self:ClearAllPoints();
@@ -1084,6 +1107,7 @@ local function BuildSettingsForWindow(self, windowSettings)
 		windowSettings.relativePoint = relativePoint;
 		windowSettings.relativeTo = relativeTo and relativeTo:GetName();
 	end
+	windowSettings.isLocked = self.isLocked;
 	windowSettings.scale = self:GetScale();
 	windowSettings.visible = not not self:IsVisible();
 	windowSettings.movable = not not self:IsMovable();
@@ -1102,6 +1126,13 @@ local function ClearSettingsForWindow(self)
 	if not AllWindowSettings then return; end
 	AllWindowSettings[self.Suffix] = nil;
 end
+local function RecordSettingsForWindow(self)
+	local windowSettings = self.Settings;
+	if windowSettings then
+		BuildSettingsForWindow(self, windowSettings);
+	end
+	return windowSettings;
+end
 local function LoadSettingsForWindow(self)
 	if not AllWindowSettings then return; end
 	local name = self.Suffix;
@@ -1111,7 +1142,7 @@ local function LoadSettingsForWindow(self)
 		AllWindowSettings[name] = settings;
 	end
 	self.Settings = settings;
-	self:Load();
+	self:Load(settings);
 end
 app.AddEventHandler("OnStartup", function()
 	-- Setup the Saved Variables if they aren't already.
@@ -1176,21 +1207,24 @@ app.events.PLAYER_LOGOUT = function()
 	end
 end;
 
-local function SetWindowData(self, data)
-	if self.data ~= data then
-		self.data = data;
-		self:DelayedRebuild();
-	end
+local function AssignChildrenForWindow(self)
+	app.AssignChildren(self.data);
 end
-local function SetWindowVisible(self, show)
+local function SetVisibleForWindow(self, show)
 	if show then
 		self:Show();
 	else
 		self:Hide();
 	end
 end
-local function ToggleWindow(self)
-	self:SetVisible(not self:IsVisible());
+local function ToggleForWindow(self)
+	SetVisibleForWindow(self, not self:IsVisible());
+end
+local function SetWindowData(self, data)
+	if self.data ~= data then
+		self.data = data;
+		self:DelayedRebuild();
+	end
 end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
@@ -1205,9 +1239,6 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
-local function AssignChildrenForWindow(self)
-	AssignChildren(self.data);
-end
 local function UpdateWindow(self, force, trigger)
 	-- If this window doesn't have data, do nothing.
 	local data = self.data;
@@ -1220,10 +1251,10 @@ local function UpdateWindow(self, force, trigger)
 	else
 		wipe(self.rowData);
 	end
-	self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
+	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 	if force or self:IsShown() then
 		data.expanded = true;
-		if self.forceFullDataRefresh then
+		if self.HasPendingUpdate then
 			local rows = self.Container.rows;
 			for i=1,#rows,1 do
 				SetRowData(self, rows[i], nil);
@@ -1234,7 +1265,7 @@ local function UpdateWindow(self, force, trigger)
 			if not (data.OnUpdate and data:OnUpdate()) then
 				UpdateGroups(data, data.g);
 			end
-			self.forceFullDataRefresh = nil;
+			self.HasPendingUpdate = nil;
 			--print("UpdateGroups RESULT", (GetTimePreciseSec() - lastUpdate) * 10000);
 		end
 		ProcessGroup(self.rowData, data);
@@ -1255,7 +1286,11 @@ local function UpdateWindow(self, force, trigger)
 					end
 				end
 				if not self.ignoreNoEntries then
-					local noentries = self.noEntriesRow or defaultNoEntriesRow;
+					local noentries = self.noEntriesRow or app.CreateRawText(L.NO_ENTRIES, {
+						OnClick = app.UI.OnClick.IgnoreRightClick,
+						preview = app.asset("Discord_2_128"),
+						description = L.NO_ENTRIES_DESC,
+					});
 					noentries.parent = self.data;
 					tinsert(self.rowData, noentries);
 				end
@@ -1330,8 +1365,8 @@ local function RefreshData(source, trigger)
 		app.HandleEvent("OnRecalculate");
 
 		-- Send an Update to the Windows to Rebuild their Row Data
-		if app.forceFullDataRefresh then
-			app.forceFullDataRefresh = nil;
+		if app.HasPendingUpdate then
+			app.HasPendingUpdate = nil;
 
 			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 				LastSettingsChangeUpdate = app._SettingsRefresh;
@@ -1351,7 +1386,7 @@ local function RefreshData(source, trigger)
 	end);
 end
 function app:RefreshDataCompletely(source, trigger)
-	app.forceFullDataRefresh = true;
+	app.HasPendingUpdate = true;
 	RefreshData("RefreshDataCompletely:" .. source, trigger);
 end
 function app:RefreshDataQuietly(source, trigger)
@@ -1515,9 +1550,6 @@ function app:CreateWindow(suffix, settings)
 		-- Create the window instance.
 		---@class ATTWindow: BackdropTemplate, ATTFrameClass
 		window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		window:SetScript("OnMouseDown", StartMovingOrSizing);
-		window:SetScript("OnMouseUp", StopMovingOrSizing);
-		window:SetScript("OnHide", StopMovingOrSizing);
 		window:SetClampedToScreen(true);
 		window:SetToplevel(true);
 		window:EnableMouse(true);
@@ -1527,8 +1559,9 @@ function app:CreateWindow(suffix, settings)
 			---@diagnostic disable-next-line: undefined-field
 			window:SetMinResize(96, 32);
 		end
-		window.SetVisible = SetWindowVisible;
-		window.Toggle = ToggleWindow;
+		window.RecordSettings = RecordSettingsForWindow;
+		window.SetVisible = SetVisibleForWindow;
+		window.Toggle = ToggleForWindow;
 		window.Suffix = suffix;
 		app.Windows[suffix] = window;
 		
@@ -1540,23 +1573,12 @@ function app:CreateWindow(suffix, settings)
 			end
 		end
 		ApplySettingsForWindow(window, defaults);
-		function window:Load()
-			local windowSettings = self.Settings;
-			if not windowSettings then
-				return;
-			end
+		function window:Load(windowSettings)
 			setmetatable(windowSettings, { __index = defaults });
 			if settings.OnLoad then
 				settings.OnLoad(self, windowSettings);
 			end
 			ApplySettingsForWindow(self, windowSettings);
-		end
-		function window:RecordSettings()
-			local windowSettings = self.Settings;
-			if windowSettings then
-				BuildSettingsForWindow(self, windowSettings);
-			end
-			return windowSettings;
 		end
 		function window:Save()
 			local windowSettings = self:RecordSettings();
@@ -1564,7 +1586,29 @@ function app:CreateWindow(suffix, settings)
 				settings.OnSave(self, windowSettings);
 			end
 		end
-
+		
+		-- Register events to allow settings to be recorded.
+		window:SetScript("OnMouseDown", StartMovingOrSizing);
+		window:SetScript("OnMouseUp", StopMovingOrSizing);
+		window:SetScript("OnHide", StopMovingOrSizing);
+		
+		-- Replace some functions to allow settings to be recorded.
+		local oldSetBackdropColor = window.SetBackdropColor;
+		window.SetBackdropColor = function(self, ...)
+			oldSetBackdropColor(self, ...);
+			self:RecordSettings();
+		end
+		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
+		window.SetBackdropBorderColor = function(self, ...)
+			oldSetBackdropBorderColor(self, ...);
+			self:RecordSettings();
+		end
+		local oldStopMovingOrSizing = window.StopMovingOrSizing;
+		window.StopMovingOrSizing = function(self, ...)
+			oldStopMovingOrSizing(self, ...);
+			self:RecordSettings();
+		end
+		
 		
 		window.data = nil;
 		window.Settings = nil;
@@ -1720,7 +1764,7 @@ function app:CreateWindow(suffix, settings)
 					self:Refresh();
 					return result;
 				else
-					self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 				end
 			end
 		else
@@ -1735,7 +1779,7 @@ function app:CreateWindow(suffix, settings)
 					self:Refresh();
 					return result;
 				else
-					self.forceFullDataRefresh = self.forceFullDataRefresh or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 				end
 			end
 		end
@@ -1964,22 +2008,7 @@ function app:CreateWindow(suffix, settings)
 		end
 		LoadSettingsForWindow(window);
 
-		-- Replace some functions.
-		local oldSetBackdropColor = window.SetBackdropColor;
-		window.SetBackdropColor = function(self, ...)
-			oldSetBackdropColor(self, ...);
-			self:RecordSettings();
-		end
-		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
-		window.SetBackdropBorderColor = function(self, ...)
-			oldSetBackdropBorderColor(self, ...);
-			self:RecordSettings();
-		end
-		local oldStopMovingOrSizing = window.StopMovingOrSizing;
-		window.StopMovingOrSizing = function(self, ...)
-			oldStopMovingOrSizing(self, ...);
-			self:RecordSettings();
-		end
+		
 	end
 	return window;
 end

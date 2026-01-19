@@ -31,7 +31,7 @@ local function UpdateButtonText(self, window)
 end
 local function OnTooltipForWindowButton(self, tooltipInfo)
 	local window = self.Window;
-	if window.forceFullDataRefresh and not window.CachedTotalsForSettings then
+	if window.HasPendingUpdate and not window.CachedTotalsForSettings then
 		window.CachedTotalsForSettings = true;
 		if IsShiftKeyDown() then
 			window:ForceRebuild();
@@ -59,7 +59,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		end
 		tinsert(tooltipInfo, { left = "Commands: |cffcccccc" .. commands .. "|r" });
 	end
-	if window.forceFullDataRefresh then
+	if window.HasPendingUpdate then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
 			left = L["UPDATES_PAUSED"],

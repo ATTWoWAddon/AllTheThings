@@ -29,7 +29,8 @@ local function InitializeATTSyncWindow()
 	local syncWindow = app:GetWindow("Account Management")
 	child:RegisterObject(syncWindow)
 	syncWindow.OnRefresh = function()
-		syncWindow:SetVisible(true, true)
+		syncWindow.HasPendingUpdate = true;
+		syncWindow:SetVisible(true)
 	end
 	syncWindow.CloseButton:Disable()
 	syncWindow:ClearAllPoints()

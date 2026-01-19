@@ -490,7 +490,7 @@ settings.SetWindowFromProfile = function(suffix)
 					window:SetHeight(points.Height)
 					-- print("SetHeight",suffix,points.Height)
 				end
-				window.isLocked = points.Locked
+				window.isLocked = points.isLocked
 			else
 				-- if positions were stored accidentally for un-movable windows, clear them
 				app.print("Removed Anchors for un-movable ATT window",suffix)
