@@ -13161,3 +13161,7 @@
 8649@@@Conjured Illusory Adornment - Blooming Light
 8650@@@Conjured Illusory Adornment - Nature's Embrace
 8651@@@Conjured Illusory Adornment - Voidtouched
+12.0.1.65337
+7968@@@Enchant Ring - Zul'jin's Mastery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7969@@@Enchant Ring - Zul'jin's Mastery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8675@@@Fishing Lure (+$1284999s1 Fishing Skill)

@@ -24193,3 +24193,33 @@
 260198@@@Arator
 12.0.1.64914
 253164@@@Guard
+12.0.1.65337
+234064@@@Dreadful Voidwalker
+237502@@@Arator
+239904@@@Void Mistlurker
+240857@@@Darkspawn
+242417@@@Fleeing Citizen
+242582@@@Eitrigg
+250786@@@Darkspawn
+250980@@@Silvermoon Resident
+256107@@@Fidoficus
+260311@@@Blightclaw
+260312@@@Harrower
+260313@@@Siphoid
+260316@@@T'era
+260358@@@Scout Captain Daelin
+260360@@@Silvermoon Guard
+260376@@@Generic Bunny - PRK
+260377@@@Generic Bunny - PRK
+260381@@@Generic Bunny - PRK
+260384@@@Generic Bunny - PRK
+260421@@@Hurried Courier
+260465@@@Bloomrotten Corpse
+260489@@@Bloomrotten Corpse
+260493@@@Har'athir Dweller
+260506@@@Cascade Drifter
+260507@@@Violet Chloroceros
+260899@@@Sootpaw
+260957@@@Vaeli
+260958@@@Vaeli
+260977@@@Flyer
