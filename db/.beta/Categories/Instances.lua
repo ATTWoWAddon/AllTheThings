@@ -19305,7 +19305,7 @@ s(32698,65125,{b=1,f=6,lvl=32}),
 s(32701,65128,{b=1,f=5,lvl=32}),
 i(65123,{b=1,f=52,lvl=32}),
 i(65124,{b=1,f=53,lvl=32,spellID=92333})}}),
-e(168,{npcID=45213,g={
+e(168,{description="This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",npcID=45213,g={
 ach(5313,{u=2}),
 ach(5121,{
 title(186)}),
