@@ -70,7 +70,6 @@ local CachedLocalMapData = setmetatable({}, {
 -- Implementation
 app:CreateWindow("Local List", {
 	AllowCompleteSound = true,
-	IsTopLevel = true,
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
