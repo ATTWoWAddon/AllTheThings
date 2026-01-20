@@ -545,6 +545,8 @@
 1266866@@@Reins of the Starshard Netherdrake
 5.5.3.64530
 1280068@@@[PH] Lunar Horse Mount
+5.5.3.65302
+1280068@@@Scorching Courage
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
