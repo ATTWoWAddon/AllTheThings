@@ -308,6 +308,10 @@ local function SetRowData(self, row, data)
 			row:Hide();
 			return;
 		end
+		
+		if not data.__type or getmetatable(data) == nil then
+			print(data.text, " does not have a metatable! This is NOT allowed!");
+		end
 
 		local font = data.font or "GameFontNormal";
 		if font ~= row.lastFont then
@@ -1659,13 +1663,13 @@ function app:CreateWindow(suffix, settings)
 	window.SetData = SetDataForWindow;
 	window.BuildCategory = BuildCategory;
 	window.AllowCompleteSound = settings.AllowCompleteSound;
-	
-	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
-	-- NOTE: You can return true from the rebuild function to call the default on your new group data.
 	window.AssignChildren = AssignChildrenForWindow;
 	function window:ExpandData(expanded)
 		ExpandGroupsRecursively(self.data, expanded, true);
 	end
+	
+	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
+	-- NOTE: You can return true from the rebuild function to call the default on your new group data.
 	local onRebuild = settings.OnRebuild;
 	if onRebuild then
 		if debugging then
@@ -1796,7 +1800,6 @@ function app:CreateWindow(suffix, settings)
 	end
 
 	-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
-	local defaultOnRefresh = UpdateVisibleRowData;
 	local onRefresh = settings.OnRefresh;
 	if onRefresh then
 		if debugging then
@@ -1804,13 +1807,13 @@ function app:CreateWindow(suffix, settings)
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
-					if onRefresh(self) then defaultOnRefresh(self); end
+					if onRefresh(self) then UpdateVisibleRowData(self); end
 					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
 			end
 		else
 			function window:Refresh()
-				if self:IsShown() and onRefresh(self) then defaultOnRefresh(self); end
+				if self:IsShown() and onRefresh(self) then UpdateVisibleRowData(self); end
 			end
 		end
 	else
@@ -1819,14 +1822,13 @@ function app:CreateWindow(suffix, settings)
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
 					local lastUpdate = GetTimePreciseSec();
-					defaultOnRefresh(self);
+					UpdateVisibleRowData(self);
 					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
 				end
 			end
 		else
-			--window.Refresh = defaultOnRefresh;
 			function window:Refresh()
-				if self:IsShown() then defaultOnRefresh(self); end
+				if self:IsShown() then UpdateVisibleRowData(self); end
 			end
 		end
 	end

@@ -386,9 +386,9 @@ local function AdjustRowIndent(row, indentAdjust)
 	row.Texture:SetPoint("LEFT", row, "LEFT", offset, 0);
 end
 
-local function Refresh(self)
+local function UpdateVisibleRowData(self)
 	if not self:IsVisible() then return; end
-	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
+	-- app.PrintDebug(app.Modules.Color.Colorize("UpdateVisibleRowData:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
 	local rowData = self.rowData;
 	if not rowData then return; end
@@ -505,17 +505,17 @@ local function Refresh(self)
 		self.ScrollInfo = nil
 	end
 
-	-- If this window has an UpdateDone method which should process after the Refresh is complete
+	-- If this window has an UpdateDone method which should process after the UpdateVisibleRowData is complete
 	if self.UpdateDone then
-		-- print("Refresh-UpdateDone",self.Suffix)
+		-- print("UpdateVisibleRowData-UpdateDone",self.Suffix)
 		Callback(self.UpdateDone, self);
 	-- If the rows need to be processed again, do so next update.
 	-- elseif self.processingLinks then
-		-- print("Refresh-processingLinks",self.Suffix)
+		-- print("UpdateVisibleRowData-processingLinks",self.Suffix)
 		-- Callback(self.Refresh, self);
 		-- self.processingLinks = nil;
 	end
-	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
+	-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
 	if GameTooltip and GameTooltip:IsVisible() then
 		local row = GameTooltip:GetOwner()
 		if row and row.__ref ~= row.ref then
@@ -893,7 +893,9 @@ function app:GetWindow(suffix)
 	window.AssignChildren = AssignChildrenForWindow;
 	window.DefaultUpdate = function(...) return UpdateWindow(...) end;
 	window.Update = function(...) return onUpdateFunc(...) end;
-	window.Refresh = function(...) return Refresh(...) end;
+	function window:Refresh()
+		if self:IsShown() then UpdateVisibleRowData(self); end
+	end
 	window.StopATTMoving = StopATTMoving
 	window.ToggleATTMoving = ToggleATTMoving
 	window.RecordSettings = RecordSettingsForWindow;
