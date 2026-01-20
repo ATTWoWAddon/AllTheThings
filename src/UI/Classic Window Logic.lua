@@ -32,6 +32,20 @@ local function CalculateRowIndent(data)
 		return 0;
 	end
 end
+local function ProcessGroup(data, object)
+	if app.VisibilityFilter(object) then
+		data[#data + 1] = object;
+		local g = object.g;
+		if g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
+			for i=1,#g,1 do
+				ProcessGroup(data, g[i]);
+			end
+		end
+	end
+end
 
 -- Expand / Collapse Functions
 local SkipAutoExpands = {
@@ -165,7 +179,6 @@ end
 local function ToggleForWindow(self)
 	SetVisibleForWindow(self, not self:IsVisible());
 end
-
 
 -- Implementation
 -- Processing Functions (Coroutines)
@@ -650,7 +663,7 @@ local function RowOnClick(self, button)
 
 					-- Attempt to search manually with the link.
 					local name, link = group.name, reference.link or reference.silentLink;
-					if name and HandleModifiedItemClick(link) then
+					if name and link and HandleModifiedItemClick(link) then
 						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
 							local query = app.AuctionHouseQuery;
 							if not query then
@@ -1280,19 +1293,7 @@ local function SetWindowData(self, data)
 		self:DelayedRebuild();
 	end
 end
-local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		data[#data + 1] = object;
-		if object.g and object.expanded then
-			-- Delayed sort operation for this group prior to being shown
-			local sortType = object.SortType;
-			if sortType then app.SortGroup(object, sortType); end
-			for i=1,#object.g,1 do
-				ProcessGroup(data, object.g[i]);
-			end
-		end
-	end
-end
+
 local function UpdateWindow(self, force, trigger)
 	-- If this window doesn't have data, do nothing.
 	local data = self.data;

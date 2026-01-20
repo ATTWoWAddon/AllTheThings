@@ -38,6 +38,20 @@ local function CalculateRowIndent(data)
 		return 0;
 	end
 end
+local function ProcessGroup(data, object)
+	if app.VisibilityFilter(object) then
+		data[#data + 1] = object;
+		local g = object.g;
+		if g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
+			for i=1,#g do
+				ProcessGroup(data, g[i]);
+			end
+		end
+	end
+end
 
 -- Expand / Collapse Functions
 local SkipAutoExpands = {
@@ -232,20 +246,7 @@ local function ResetWindow(suffix)
 end
 
 
-local VisibilityFilter, SortGroup
-local function ProcessGroup(data, object)
-	if not VisibilityFilter(object) then return end
-	data[#data + 1] = object
-	local g = object.g
-	if g and object.expanded then
-		-- Delayed sort operation for this group prior to being shown
-		local sortType = object.SortType;
-		if sortType then SortGroup(object, sortType); end
-		for i=1,#g do
-			ProcessGroup(data, g[i]);
-		end
-	end
-end
+
 
 -- TODO: instead of requiring 'got' parameter to indicate something was collected
 -- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
@@ -292,9 +293,7 @@ local function UpdateWindow(self, force, got)
 			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
 			self.ExpandInfo = nil;
 		end
-
-		-- cache a couple heavily referenced functions within ProcessGroup
-		VisibilityFilter, SortGroup = app.VisibilityFilter, app.SortGroup
+		
 		ProcessGroup(rowData, data);
 		-- app.PrintDebug("Update:RowData",#rowData)
 
@@ -1592,7 +1591,7 @@ app.AddEventHandler("RowOnClick", function(self, button)
 
 					-- Attempt to search manually with the link.
 					local name, link = group.name, reference.link or reference.silentLink;
-					if name and HandleModifiedItemClick(link) then
+					if name and link and HandleModifiedItemClick(link) then
 						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
 							local query = app.AuctionHouseQuery;
 							if not query then
