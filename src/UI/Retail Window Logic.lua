@@ -17,7 +17,6 @@ local Callback = app.CallbackHandlers.Callback
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
-local GetProgressColorText = app.Modules.Color.GetProgressColorText
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros
 local GetProgressColor = app.Modules.Color.GetProgressColor
 
@@ -238,187 +237,17 @@ end
 
 
 
-local function GetReagentIcon(data, iconOnly)
-	if data.filledReagent then
-		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
-	end
-end
-local function GetUpgradeIconForRow(data, iconOnly)
-	-- upgrade only for filled groups, or if itself is an upgrade
-	if data.isUpgrade or (data.progress == data.total and data.upgradeTotal > 0) then
-		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
-	end
-end
-local function GetUpgradeIconForTooltip(data, iconOnly)
-	-- upgrade only if itself has an upgrade
-	if data.collectibleAsUpgrade then
-		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
-	end
-end
-local function GetCatalystIcon(data, iconOnly)
-	if data.filledCatalyst then
-		return L[iconOnly and "CATALYST_ICON" or "CATALYST_TEXT"];
-	end
-end
-local function GetCostIconForRow(data, iconOnly)
-	-- cost only if itself is a cost
-	if data.isCost or data.isOwnedCost or (data.progress == data.total and data.costTotal > 0) then
-		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
-	end
-end
-local function GetCostIconForTooltip(data, iconOnly)
-	-- cost only if itself is a cost
-	if data.isCost or data.isOwnedCost then
-		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
-	end
-end
-local function GetCollectibleIcon(data, iconOnly)
-	if data.collectible then
-		local collected = data.collected
-		if not collected and data.collectedwarband then
-			return iconOnly and L.COLLECTED_WARBAND_ICON or L.COLLECTED_WARBAND;
-		end
-		return iconOnly and app.GetCollectionIcon(collected) or app.GetCollectionText(collected);
-	end
-end
-local function GetTrackableIcon(data, iconOnly, forSaved)
-	if data.trackable then
-		local saved = data.saved;
-		-- only show if the data is saved, or is not repeatable
-		if saved or not rawget(data, "repeatable") then
-			if forSaved then
-				-- if for saved, we ignore if it is un-saved for less clutter
-				if saved then
-					return iconOnly and app.GetCompletionIcon(saved) or app.GetSavedText(saved);
-				end
-			else
-				return iconOnly and app.GetCompletionIcon(saved) or app.GetCompletionText(saved);
-			end
-		end
-	end
-end
-local __Text = {}
-local function GetProgressTextForRow(data, forceTracking)
-	-- build the row text from left to right with possible info
-	-- Reagent (show reagent icon)
-	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	app.wipearray(__Text)
-	local icon = GetReagentIcon(data, true);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Cost (show cost icon)
-	icon = GetCostIconForRow(data, true);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Upgrade (show upgrade icon)
-	icon = GetUpgradeIconForRow(data, true);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Upgrade (show upgrade icon)
-	icon = GetCatalystIcon(data, true);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Progress Achievement
-	local statistic = data.statistic
-	if statistic then
-		__Text[#__Text + 1] = "["..statistic.."]"
-	end
-	-- Collectible
-	local stateIcon = GetCollectibleIcon(data, true)
-	if stateIcon then
-		__Text[#__Text + 1] = stateIcon
-		-- don't need to force tracking icon since it's a collectible Thing directly
-		forceTracking = nil
-	end
-	-- Container
-	local isContainer = data.isContainer
-	if isContainer then
-		__Text[#__Text + 1] = GetProgressColorText(data.progress or 0, data.total)
-	end
-	-- Non-collectible/total Container (only contains visible, non-collectibles...)
-	if not stateIcon and not isContainer then
-		local g = data.g;
-		if g and #g > 0 then
-			local headerText;
-			if data.expanded then
-				headerText = "---";
-			else
-				headerText = "+++";
-			end
-			__Text[#__Text + 1] = headerText
-		end
-	end
 
-	-- Trackable (Only if no other text available)
-	if #__Text == 0 or forceTracking then
-		stateIcon = GetTrackableIcon(data, true)
-		if stateIcon then
-			__Text[#__Text + 1] = stateIcon
-		end
-	end
 
-	return app.TableConcat(__Text, nil, "", " ");
-end
-app.GetProgressTextForRow = GetProgressTextForRow;
 
-local function GetProgressTextForTooltip(data)
-	-- build the row text from left to right with possible info
-	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	app.wipearray(__Text)
-	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
-	-- Reagent (show reagent icon)
-	local icon = GetReagentIcon(data, iconOnly);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Cost (show cost icon)
-	icon = GetCostIconForTooltip(data, iconOnly);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Upgrade (show upgrade icon)
-	icon = GetUpgradeIconForTooltip(data, iconOnly);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Catalyst (show catalyst icon)
-	icon = GetCatalystIcon(data, iconOnly);
-	if icon then
-		__Text[#__Text + 1] = icon
-	end
-	-- Collectible
-	local stateIcon = GetCollectibleIcon(data, iconOnly)
-	if stateIcon then
-		__Text[#__Text + 1] = stateIcon
-	end
-	-- Saved (only certain data types)
-	if data.npcID then
-		stateIcon = GetTrackableIcon(data, iconOnly, true)
-		if stateIcon then
-			__Text[#__Text + 1] = stateIcon
-		end
-	end
-	-- Container
-	local isContainer = data.isContainer
-	if isContainer then
-		__Text[#__Text + 1] = GetProgressColorText(data.progress or 0, data.total)
-	end
 
-	-- Trackable (Only if no other text available)
-	if #__Text == 0 then
-		stateIcon = GetTrackableIcon(data, iconOnly)
-		if stateIcon then
-			__Text[#__Text + 1] = stateIcon
-		end
-	end
 
-	return app.TableConcat(__Text, nil, "", " ");
-end
-app.GetProgressTextForTooltip = GetProgressTextForTooltip
+
+
+
+
+
+
 
 
 local function SetRowData(self, row, data)

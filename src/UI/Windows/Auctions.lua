@@ -613,7 +613,7 @@ app:CreateWindow("Auctions", {
 				end
 			end,
 		});
-		if app.HeaderConstants.MOUNT_MODS then
+		if rawget(app.HeaderConstants, "MOUNT_MODS") then
 			tinsert(self.data.options, app.CreateCustomHeader(app.HeaderConstants.MOUNT_MODS, {	-- Mount Mods
 				Metas = { "MountMod" },
 				description = "All mount mods that you have not collected yet are displayed here.",

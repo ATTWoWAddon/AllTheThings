@@ -76,32 +76,6 @@ end)
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
 
--- Color Lib
-local function GetProgressTextForRow(data)
-	local total = data.total;
-	if total and (total > 1 or (total > 0 and not data.collectible)) then
-		return GetProgressColorText(data.progress or 0, total);
-	elseif data.collectible then
-		return app.GetCollectionIcon(data.collected);
-	elseif data.trackable then
-		return app.GetCompletionIcon(data.saved);
-	end
-end
-local function GetProgressTextForTooltip(data)
-	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
-	if iconOnly then return GetProgressTextForRow(data); end
-
-	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
-		return GetProgressColorText(data.progress or 0, data.total);
-	elseif data.collectible or (data.spellID and data.itemID and data.trackable) then
-		return app.GetCollectionText(data.collected);
-	elseif data.trackable then
-		return app.GetCompletionText(data.saved);
-	end
-end
-app.GetProgressTextForRow = GetProgressTextForRow;
-app.GetProgressTextForTooltip = GetProgressTextForTooltip;
-
 -- Keys for groups which are in-game 'Things'
 -- Copied from Retail since it's used in UI/Waypoints.lua
 app.ThingKeys = {

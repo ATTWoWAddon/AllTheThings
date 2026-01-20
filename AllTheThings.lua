@@ -81,10 +81,9 @@ local GetGroupItemIDWithModID, GroupMatchesParams
 
 do
 local ContainsLimit, ContainsExceeded;
-local Indicator, GetProgressTextForRow, GetUnobtainableTexture
+local GetProgressTextForRow, GetUnobtainableTexture
 app.AddEventHandler("OnLoad", function()
 	GetProgressTextForRow = app.GetProgressTextForRow
-	Indicator = app.GetIndicatorIcon
 	GetUnobtainableTexture = app.GetUnobtainableTexture
 end)
 
@@ -115,7 +114,7 @@ local function BuildContainsInfo(root, entries, indent, layer)
 					-- Insert into the display.
 					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 					local o = { group = group, right = GetProgressTextForRow(group, true) };
-					local indicator = ContainsTypesIndicators[group.filledType] or Indicator(group);
+					local indicator = ContainsTypesIndicators[group.filledType] or app.GetIndicatorIcon(group);
 					o.prefix = indicator and (Indents[indent]:sub(3) .. "|T" .. indicator .. ":0|t ") or Indents[indent]
 					entries[#entries + 1] = o
 				end

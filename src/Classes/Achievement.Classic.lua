@@ -352,6 +352,35 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	end
 	local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
 	local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
+	local InvalidStatistics = setmetatable({
+		["0"] = 1,
+		["1"] = 1,
+		["2"] = 1,
+		["3"] = 1,
+		["4"] = 1,
+		["5"] = 1,
+		["6"] = 1,
+		["7"] = 1,
+		["8"] = 1,
+		["9"] = 1,
+		[""] = 1,
+	}, { __index=function(t,key)
+		if not key or key:match("%W") or not key:match(" %/ ") then return 1 end
+	end})
+	fields.statistic = function(t)
+		local achievementID = t.achievementID;
+		if achievementID then
+			if GetAchievementNumCriteria(achievementID) == 1 then
+				local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(achievementID, 1));
+				if quantity and reqQuantity and reqQuantity > 1 then
+					return tostring(quantity) .. " / " .. tostring(reqQuantity);
+				end
+			end
+			---@diagnostic disable-next-line: missing-parameter
+			local stat = GetStatistic(achievementID);
+			if stat and not InvalidStatistics[stat] then return stat; end
+		end
+	end
 	local onTooltipForAchievement = function(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID and IsShiftKeyDown() then
