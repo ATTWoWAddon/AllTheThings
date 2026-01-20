@@ -123,6 +123,7 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Auto:AuctionList"] = true,
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Auto:Sync"] = true,

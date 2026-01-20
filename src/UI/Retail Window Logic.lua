@@ -187,6 +187,7 @@ local function ToggleForWindow(self)
 end
 
 
+-- Old Implementation
 -- Store the Custom Windows Update functions which are required by specific Windows
 do
 local customWindowInits = {};
@@ -237,112 +238,6 @@ end
 
 
 
--- allows resetting a given ATT window
-local function ResetWindow(suffix)
-	app.Windows[suffix] = nil;
-	if suffix ~= "Added With Patch" then	-- don't spam for this window for now
-		app.print("Reset Window",suffix);
-	end
-end
-
-
-
-
--- TODO: instead of requiring 'got' parameter to indicate something was collected
--- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
--- and clear on update
-local function UpdateWindow(self, force, got)
-	local data = self.data;
-	-- TODO: remove IsReady check when Windows have OnInit capability
-	if not data or not app.IsReady then return end
-	local visible = self:IsVisible();
-	-- either by Setting or by special windows apply ad-hoc logic
-	local adhoc = self.AdHoc or app.Settings:GetTooltipSetting("Updates:AdHoc")
-	force = force or self.HasPendingUpdate;
-	-- hidden adhoc window is set for pending update instead of forced
-	if adhoc and force and not visible then
-		self.HasPendingUpdate = true;
-		force = nil;
-	end
-	-- app.PrintDebug(app.Modules.Color.Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
-	-- 	force and "FORCE" or "SOFT",
-	-- 	visible and "VISIBLE" or "HIDDEN",
-	-- 	got and "COLLECTED" or "PASSIVE",
-	-- 	self.HasPendingUpdate and "PENDING" or "")
-	if force or visible then
-		-- clear existing row data for the update
-		local rowData = self.rowData
-		if not rowData then rowData = {} self.rowData = rowData end
-		wipe(rowData)
-
-		data.expanded = true;
-		local didUpdate
-		if not self.doesOwnUpdate and force then
-			self:ToggleExtraFilters(true)
-			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
-			app.TopLevelUpdateGroup(data);
-			self.HasPendingUpdate = nil;
-			-- app.PrintDebugPrior("Done")
-			self:ToggleExtraFilters()
-			didUpdate = true
-		end
-
-		-- Should the groups in this window be expanded prior to processing the rows for display
-		if self.ExpandInfo then
-			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
-			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
-			self.ExpandInfo = nil;
-		end
-		
-		ProcessGroup(rowData, data);
-		-- app.PrintDebug("Update:RowData",#rowData)
-
-		-- Does this user have everything?
-		if data.total then
-			if data.total <= data.progress then
-				if #rowData < 1 then
-					data.back = 1;
-					rowData[#rowData + 1] = data
-				end
-				if self.missingData then
-					if got and visible then app.Audio:PlayCompleteSound(); end
-					self.missingData = nil;
-				end
-				-- only add this info row if there is actually nothing visible in the list
-				-- always a header row
-				-- print("any data",#self.Container,#rowData,#data)
-				if #rowData < 2 and not app.ThingKeys[data.key] then
-					rowData[#rowData + 1] = app.CreateRawText(L.NO_ENTRIES, {
-						preview = app.asset("Discord_2_128"),
-						description = L.NO_ENTRIES_DESC,
-						collectible = 1,
-						collected = 1,
-						back = 0.7,
-						OnClick = app.UI.OnClick.IgnoreRightClick
-					})
-				end
-			else
-				self.missingData = true;
-			end
-		else
-			self.missingData = nil;
-		end
-
-		self:Refresh();
-		-- app.PrintDebugPrior("Update:Done")
-		app.HandleEvent("OnWindowUpdated", self, didUpdate)
-		return true;
-	else
-		local expireTime = self.ExpireTime;
-		-- print("check ExpireTime",self.Suffix,expireTime)
-		if expireTime and expireTime > 0 and expireTime < time() then
-			-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
-			self:RemoveEventHandlers()
-			app.Windows[self.Suffix] = nil;
-		end
-	end
-	-- app.PrintDebugPrior("Update:None")
-end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
@@ -873,12 +768,9 @@ end
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = nil;
-	-- store the window position if the window is visible (this is called on new popouts prior to becoming visible for some reason)
-	if self:IsVisible() then
-		self:RecordSettings();
-	end
+	self:RecordSettings();
 end
-local function StartMovingOrSizing(self, fromChild)
+local function StartMovingOrSizing(self)
 	if not (self:IsMovable() or self:IsResizable()) or self.isLocked then
 		return
 	end
@@ -1051,22 +943,124 @@ end
 local function ScrollTo(self, field, value)
 	self.ScrollInfo = { field, value }
 end
-function app:GetWindow(suffix, parent, onUpdate)
+
+
+-- TODO: instead of requiring 'got' parameter to indicate something was collected
+-- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
+-- and clear on update
+local function UpdateWindow(self, force, got)
+	local data = self.data;
+	-- TODO: remove IsReady check when Windows have OnInit capability
+	if not data or not app.IsReady then return end
+	local visible = self:IsVisible();
+	-- either by Setting or by special windows apply ad-hoc logic
+	local adhoc = self.AdHoc or app.Settings:GetTooltipSetting("Updates:AdHoc")
+	force = force or self.HasPendingUpdate;
+	-- hidden adhoc window is set for pending update instead of forced
+	if adhoc and force and not visible then
+		self.HasPendingUpdate = true;
+		force = nil;
+	end
+	-- app.PrintDebug(app.Modules.Color.Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
+	-- 	force and "FORCE" or "SOFT",
+	-- 	visible and "VISIBLE" or "HIDDEN",
+	-- 	got and "COLLECTED" or "PASSIVE",
+	-- 	self.HasPendingUpdate and "PENDING" or "")
+	if force or visible then
+		-- clear existing row data for the update
+		local rowData = self.rowData
+		if not rowData then rowData = {} self.rowData = rowData end
+		wipe(rowData)
+
+		data.expanded = true;
+		local didUpdate
+		if not self.doesOwnUpdate and force then
+			self:ToggleExtraFilters(true)
+			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
+			app.TopLevelUpdateGroup(data);
+			self.HasPendingUpdate = nil;
+			-- app.PrintDebugPrior("Done")
+			self:ToggleExtraFilters()
+			didUpdate = true
+		end
+
+		-- Should the groups in this window be expanded prior to processing the rows for display
+		if self.ExpandInfo then
+			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
+			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+			self.ExpandInfo = nil;
+		end
+		
+		ProcessGroup(rowData, data);
+		-- app.PrintDebug("Update:RowData",#rowData)
+
+		-- Does this user have everything?
+		if data.total then
+			if data.total <= data.progress then
+				if #rowData < 1 then
+					data.back = 1;
+					rowData[#rowData + 1] = data
+				end
+				if self.missingData then
+					if got and visible then app.Audio:PlayCompleteSound(); end
+					self.missingData = nil;
+				end
+				-- only add this info row if there is actually nothing visible in the list
+				-- always a header row
+				-- print("any data",#self.Container,#rowData,#data)
+				if #rowData < 2 and not app.ThingKeys[data.key] then
+					rowData[#rowData + 1] = app.CreateRawText(L.NO_ENTRIES, {
+						preview = app.asset("Discord_2_128"),
+						description = L.NO_ENTRIES_DESC,
+						collectible = 1,
+						collected = 1,
+						back = 0.7,
+						OnClick = app.UI.OnClick.IgnoreRightClick
+					})
+				end
+			else
+				self.missingData = true;
+			end
+		else
+			self.missingData = nil;
+		end
+
+		self:Refresh();
+		-- app.PrintDebugPrior("Update:Done")
+		app.HandleEvent("OnWindowUpdated", self, didUpdate)
+		return true;
+	else
+		local expireTime = self.ExpireTime;
+		-- print("check ExpireTime",self.Suffix,expireTime)
+		if expireTime and expireTime > 0 and expireTime < time() then
+			-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
+			self:RemoveEventHandlers()
+			app.Windows[self.Suffix] = nil;
+		end
+	end
+	-- app.PrintDebugPrior("Update:None")
+end
+
+function app:GetWindow(suffix)
 	if app.GetCustomWindowParam(suffix, "reset") then
 		ResetWindow(suffix);
+		app.Windows[suffix] = nil;
+		if suffix ~= "Added With Patch" then	-- don't spam for this window for now
+			app.print("Reset Window",suffix);
+		end
 	end
 	local window = app.Windows[suffix];
 	if window then return window end
 
 	-- Create the window instance.
 	---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
-	window = CreateFrame("Frame", nil, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	window = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	app.Windows[suffix] = window;
 	window.Suffix = suffix;
 	window.Toggle = ToggleForWindow;
 	window.SetVisible = SetVisibleForWindow;
 	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
-	local onUpdateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+	local onUpdateFunc = app:CustomWindowUpdate(suffix) or UpdateWindow;
 	window.AssignChildren = AssignChildrenForWindow;
 	window.DefaultUpdate = function(...) return UpdateWindow(...) end;
 	window.Update = function(...) return onUpdateFunc(...) end;
@@ -1222,11 +1216,18 @@ end
 function app:CreateWindow(suffix, settings)
 	-- TODO: Properly implement or use the classic version of CreateWindow.
 	if settings then
+		local onUpdate = settings.OnUpdate;
+		if onUpdate then
+			app.AddCustomWindowOnUpdate(suffix, function(self, ...)
+				if self:IsShown() then onUpdate(self, ...); end
+			end);
+		else
+			app.AddCustomWindowOnUpdate(suffix, function(self, ...)
+				if self:IsShown() then self:DefaultUpdate(...); end
+			end);
+		end
 		if settings.OnInit then
 			app.AddCustomWindowOnInit(suffix, settings.OnInit);
-		end
-		if settings.OnUpdate then
-			app.AddCustomWindowOnUpdate(suffix, settings.OnUpdate);
 		end
 		if settings.Commands then
 			local onCommand;
@@ -1594,7 +1595,7 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					end
 
 					-- Attempt to search manually with the link.
-					local name, link = group.name, reference.link or reference.silentLink;
+					local name, link = reference.name, reference.link or reference.silentLink;
 					if name and link and HandleModifiedItemClick(link) then
 						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
 							local query = app.AuctionHouseQuery;

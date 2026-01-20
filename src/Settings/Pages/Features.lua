@@ -205,6 +205,7 @@ else
 	checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
 end
 
+local checkboxAutomaticallyOpenWorldQuestList;
 if app.IsRetail then
 -- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
 local checkboxAutomaticallyOpenRaidAssistant = child:CreateCheckBox(L.AUTO_RAID_ASSISTANT_CHECKBOX,
@@ -217,7 +218,7 @@ end)
 checkboxAutomaticallyOpenRaidAssistant:SetATTTooltip(L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenRaidAssistant:AlignBelow(checkboxAutomaticallyOpenProfessionList)
 
-local checkboxAutomaticallyOpenWorldQuestList = child:CreateCheckBox(L.AUTO_WQ_LIST_CHECKBOX,
+checkboxAutomaticallyOpenWorldQuestList = child:CreateCheckBox(L.AUTO_WQ_LIST_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"))
 end,
@@ -226,7 +227,8 @@ function(self)
 end)
 checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
-else
+end
+
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
@@ -240,5 +242,4 @@ function(self)
 	end
 end);
 OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
-OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
-end
+OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)

@@ -7,7 +7,9 @@
 	<Script file="Account Management.lua"/>
 	<Script file="Added With Patch.lua"/>
 	<Script file="Attunements.lua"/>
+	-->
 	<Script file="Auctions.lua"/>
+	<!--
 	<Script file="Battle Pets.lua"/>
 	<Script file="Bounty.lua"/>
 	<Script file="Breadcrumbs.lua"/>

@@ -180,7 +180,10 @@ local function ToggleForWindow(self)
 	SetVisibleForWindow(self, not self:IsVisible());
 end
 
--- Implementation
+
+
+
+-- Old Implementation
 -- Processing Functions (Coroutines)
 local UpdateGroups;
 local function UpdateGroup(group, parent)
@@ -506,11 +509,9 @@ local function UpdateVisibleRowData(self)
 	end
 end
 local function StopMovingOrSizing(self)
-	if self.isMoving then
-		self:StopMovingOrSizing();
-		self.isMoving = false;
-		self:RecordSettings();
-	end
+	self:StopMovingOrSizing();
+	self.isMoving = false;
+	self:RecordSettings();
 end
 local function StartMovingOrSizing(self)
 	if not (self:IsMovable() or self:IsResizable()) or self.isLocked then
@@ -1065,7 +1066,7 @@ local function CreateRow(container, rows, i)
 end
 
 -- Window Creation
-local AllWindowSettings;
+local AllWindowSettings, AllWindowSettingsLoaded;
 local function ApplySettingsForWindow(self, windowSettings)
 	local oldRecordSettings = self.RecordSettings;
 	self.RecordSettings = app.EmptyFunction;
@@ -1182,17 +1183,24 @@ local function LoadSettingsForWindow(self)
 	self:Load(settings);
 end
 app.AddEventHandler("OnStartup", function()
+	if AllWindowSettings then
+		return;
+	end
+	
 	-- Setup the Saved Variables if they aren't already.
 	local savedVariables = AllTheThingsSavedVariables;
-	if not AllTheThingsSavedVariables then
+	if not savedVariables then
 		savedVariables = {};
 		AllTheThingsSavedVariables = savedVariables;
 	end
+	
+	-- Load the Window Settings
 	local windowSettings = savedVariables.Windows;
 	if not windowSettings then
 		windowSettings = {};
 		savedVariables.Windows = windowSettings;
 	end
+	AllWindowSettings = windowSettings;
 
 	-- Rename the old mini list settings container.
 	local oldMiniListData = windowSettings.CurrentInstance;
@@ -1201,12 +1209,8 @@ app.AddEventHandler("OnStartup", function()
 		windowSettings.CurrentInstance = nil;
 		windowSettings.MiniList = oldMiniListData;
 	end
-
-	-- Load the Window Settings
-	if AllWindowSettings then
-		return;
-	end
-	AllWindowSettings = windowSettings;
+	
+	-- Clean out non-visible dynamic windows and cache the rest
 	local dynamicWindows = {};
 	for name, settings in pairs(windowSettings) do
 		if settings.dynamic then
@@ -1229,26 +1233,21 @@ app.AddEventHandler("OnStartup", function()
 	-- Okay, now load Prime last.
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
-	dynamicWindows.Prime = nil;
 
+	-- Regenerate the Dynamic Windows
 	for name,settings in pairs(dynamicWindows) do
 		settings.visible = false;
 		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
 	end
+	
+	-- Mark Windows as loaded.
+	AllWindowSettingsLoaded = true;
 end);
-
-app:RegisterEvent("PLAYER_LOGOUT");
-app.events.PLAYER_LOGOUT = function()
-	for _, window in pairs(app.Windows) do
-		window:Save();
-	end
-end;
-
 
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
-local function SetWindowData(self, data)
+local function SetDataForWindow(self, data)
 	if self.data ~= data then
 		self.data = data;
 		self:DelayedRebuild();
@@ -1319,17 +1318,21 @@ local function UpdateWindow(self, force, trigger)
 		return true;
 	end
 end
+
+-- When settings that affect the display of a window change, we want to redraw the windows.
 local function RedrawWindows()
 	for name, window in pairs(app.Windows) do
 		window:Redraw();
 	end
 end
-function app:RefreshWindows()
-	for name, window in pairs(app.Windows) do
-		window:Refresh();
-	end
-end
-function app:UpdateWindows(source, force, trigger)
+app.AddEventHandler("OnRenderDirty", RedrawWindows);
+app.AddEventHandler("OnSavesUpdated", RedrawWindows);
+
+local refreshDataCooldown = 5;
+local refreshFromTrigger;
+local currentlyRefreshingData = false;
+local LastSettingsChangeUpdate;
+local function UpdateWindows(source, force, trigger)
 	if trigger then trigger = source; end
 	for name, window in pairs(app.Windows) do
 		local window_oldUpdate = window.Update;
@@ -1347,15 +1350,6 @@ function app:UpdateWindows(source, force, trigger)
 		end
 	end
 end
-
--- When settings that affect the display of a window change, we want to redraw the windows.
-app.AddEventHandler("OnRenderDirty", RedrawWindows);
-app.AddEventHandler("OnSavesUpdated", RedrawWindows);
-
-local refreshDataCooldown = 5;
-local refreshFromTrigger;
-local currentlyRefreshingData = false;
-local LastSettingsChangeUpdate;
 local function RefreshData(source, trigger)
 	app.WipeSearchCache();
 	refreshDataCooldown = 5;
@@ -1390,9 +1384,9 @@ local function RefreshData(source, trigger)
 				app.HandleEvent("OnRecalculate_NewSettings")
 			end
 
-			app:UpdateWindows(source, true, refreshFromTrigger);
+			UpdateWindows(source, true, refreshFromTrigger);
 		else
-			app:UpdateWindows(source, nil, refreshFromTrigger);
+			UpdateWindows(source, nil, refreshFromTrigger);
 		end
 		refreshFromTrigger = nil;
 		currentlyRefreshingData = false;
@@ -1583,6 +1577,19 @@ function app:CreateWindow(suffix, settings)
 	app.Windows[suffix] = window;
 	window:Hide();
 	
+	-- Setup the Event Handlers
+	local handlers = {};
+	local debugging = settings.Debugging;
+	window:SetScript("OnEvent", function(o, e, ...)
+		if debugging then print(e, ...); end
+		local handler = handlers[e];
+		if handler then
+			handler(window, ...);
+		else
+			window:Update();
+		end
+	end);
+	
 	-- Load / Save, which allows windows to keep track of key pieces of information.
 	local defaults = BuildDefaultsForWindow(window);
 	if settings.Defaults then
@@ -1591,18 +1598,20 @@ function app:CreateWindow(suffix, settings)
 		end
 	end
 	ApplySettingsForWindow(window, defaults);
+	window:RegisterEvent("PLAYER_LOGOUT");
+	handlers.PLAYER_LOGOUT = function()
+		-- Save Settings on Logout
+		local windowSettings = window:RecordSettings();
+		if windowSettings and settings.OnSave then
+			settings.OnSave(window, windowSettings);
+		end
+	end
 	function window:Load(windowSettings)
 		setmetatable(windowSettings, { __index = defaults });
 		if settings.OnLoad then
 			settings.OnLoad(self, windowSettings);
 		end
 		ApplySettingsForWindow(self, windowSettings);
-	end
-	function window:Save()
-		local windowSettings = self:RecordSettings();
-		if windowSettings and settings.OnSave then
-			settings.OnSave(self, windowSettings);
-		end
 	end
 	
 	-- Register events to allow settings to be recorded.
@@ -1647,13 +1656,10 @@ function app:CreateWindow(suffix, settings)
 	
 	window.data = nil;
 	window.Settings = nil;
-	window.SetData = SetWindowData;
+	window.SetData = SetDataForWindow;
 	window.BuildCategory = BuildCategory;
 	window.AllowCompleteSound = settings.AllowCompleteSound;
 	
-	-- Whether or not to debug things
-	local debugging = settings.Debugging;
-
 	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 	-- NOTE: You can return true from the rebuild function to call the default on your new group data.
 	window.AssignChildren = AssignChildrenForWindow;
@@ -1920,18 +1926,7 @@ function app:CreateWindow(suffix, settings)
 		end,
 	});
 	container:Show();
-
-	-- Setup the Event Handlers
-	local handlers = {};
-	window:SetScript("OnEvent", function(o, e, ...)
-		if debugging then print(e, ...); end
-		local handler = handlers[e];
-		if handler then
-			handler(window, ...);
-		else
-			window:Update();
-		end
-	end);
+	
 	if not settings.IgnoreQuestUpdates then
 		local delayedRefresh = function()
 			window:DelayedRefresh();
@@ -2013,7 +2008,12 @@ function app:CreateWindow(suffix, settings)
 			settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
 		};
 	end
-	LoadSettingsForWindow(window);
+	
+	-- If window settings were already loaded, then load this window's settings now
+	-- Windows created after startup would otherwise fail to load their settings.
+	if AllWindowSettingsLoaded then
+		LoadSettingsForWindow(window);
+	end
 	return window;
 end
 function app:GetWindow(suffix)

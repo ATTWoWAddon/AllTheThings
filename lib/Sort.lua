@@ -58,7 +58,7 @@ local function defaultComparison(a,b)
 	-- SortPriority
 	acomp = a.SortPriority or 0
 	bcomp = b.SortPriority or 0
-	if acomp ~= 0 or bcomp ~= 0 then
+	if acomp ~= bcomp then
 		return acomp < bcomp
 	end
 	-- Maps
@@ -356,7 +356,7 @@ app.SortDefaults = setmetatable({
 		-- SortPriority
 		local acomp = a.SortPriority or 0
 		local bcomp = b.SortPriority or 0
-		if acomp ~= 0 or bcomp ~= 0 then
+		if acomp ~= bcomp then
 			return acomp < bcomp
 		end
 		-- Any two similar-type groups with text

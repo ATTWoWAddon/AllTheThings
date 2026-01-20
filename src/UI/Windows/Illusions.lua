@@ -13,8 +13,8 @@ app:CreateWindow("Illusions", {
 	IsDynamicCategory = true,
 	Commands = { "attillusions" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText(L.FILTER_ID_TYPES[103], {
-			icon = 132853,
+		self.data = app.CreateFilter(103, {	-- Illusions
+			--icon = 132853,
 			description = "This list shows you all of the illusions that you can collect.",
 			visible = true,
 			expanded = true,
