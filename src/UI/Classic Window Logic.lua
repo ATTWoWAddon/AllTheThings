@@ -625,7 +625,7 @@ local function RowOnClick(self, button)
 					end
 
 					-- Attempt to search manually with the link.
-					local name, link = group.name, reference.link or reference.silentLink;
+					local name, link = reference.name, reference.link or reference.silentLink;
 					if name and link and HandleModifiedItemClick(link) then
 						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
 							local query = app.AuctionHouseQuery;
