@@ -1,8 +1,13 @@
 3.80.0.64393
 i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+3.80.0.65301
+i(46779),	-- of Cenarius \\ Path of Cenarius
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
-i(46779),	-- of Cenarius \\ Path of Cenarius
+12.0.1.65337
+i(268695),	-- Test Sharing Camera
+i(268717),	-- Pango Plating
+i(268728),	-- Saptor Salve
 
 
 
@@ -11,6 +16,7 @@ Missing in ToyDB.lua
 
 3.80.0.64393
 i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+3.80.0.65301
+i(46779),	-- of Cenarius \\ Path of Cenarius
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
-i(46779),	-- of Cenarius \\ Path of Cenarius

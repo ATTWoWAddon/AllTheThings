@@ -63,7 +63,7 @@ r(1237544),	-- Forest Hunter's Armor Kit
 r(1237545),	-- Blood Knight's Armor Kit
 r(1237546),	-- Thalassian Scout Armor Kit
 r(1237547),	-- Void-touched Drums
-r(1237548),	-- Chemists's Cap
+r(1237548),	-- Chemist's Cap \\ Chemists's Cap
 r(1237549),	-- Sin'dorei Alchemist's Hat
 r(1237550),	-- Thalassian Alchemist's Mixcap
 r(1237551),	-- Apprentice Smith's Apron
@@ -182,7 +182,7 @@ r(1237544),	-- Forest Hunter's Armor Kit
 r(1237545),	-- Blood Knight's Armor Kit
 r(1237546),	-- Thalassian Scout Armor Kit
 r(1237547),	-- Void-touched Drums
-r(1237548),	-- Chemists's Cap
+r(1237548),	-- Chemist's Cap \\ Chemists's Cap
 r(1237549),	-- Sin'dorei Alchemist's Hat
 r(1237550),	-- Thalassian Alchemist's Mixcap
 r(1237551),	-- Apprentice Smith's Apron

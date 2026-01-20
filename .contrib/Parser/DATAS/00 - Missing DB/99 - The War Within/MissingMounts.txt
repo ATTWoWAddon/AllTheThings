@@ -20,6 +20,9 @@ mount(1261391),	-- Relinquished Scarlet Charger
 mount(1266703),	-- Lab-grown Stormray
 12.0.1.64889
 mount(1261298),	-- Crimson Dragonhawk
+12.0.1.65337
+mount(1261296),	-- Umbral Dragonhawk
+mount(1270673),	-- Vivacious Chloroceros
 
 
 

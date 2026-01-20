@@ -26858,7 +26858,6 @@ s(58164)/i(107637),	--
 s(58165)/i(107638),	--
 s(58167)/i(107646),	--
 s(58169)/i(107652),	--
-s(58170)/i(107658),	-- Thunderlord Longspear \\ derlord Longspear
 s(58173)/i(107666),	--
 s(58174)/i(107667),	--
 s(58175)/i(107668),	--
@@ -37667,18 +37666,18 @@ s(297298)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class S
 s(297299)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297300)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297301)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
-s(297302)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297303)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297304)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297305)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297306)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297307)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297308)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297309)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297310)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297311)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297312)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297313)/i(250024),	-- Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297302)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297303)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297304)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297305)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297306)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297307)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297308)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297309)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297310)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297311)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297312)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
+s(297313)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
 s(297314)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297315)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297316)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
@@ -38223,13 +38222,13 @@ s(298100)/i(251095),	-- Hurricane's Heart \\ Item - Bows - Ranged
 s(298101)/i(251097),	-- Spaulders of Arrow's Flight \\ Item - Mail - Shoulder
 s(298102)/i(251098),	-- Fletcher's Faded Faceplate \\ Item - Plate - Head
 s(298103)/i(251099),	-- Vest of the Howling Gale \\ Item - Leather - Chest
-s(298104)/i(251100),	-- Item - Mace1H - Str - Weapon
+s(298104)/i(251100),	-- Malfeasance Mallet \\ Item - Mace1H - Str - Weapon
 s(298105)/i(251101),	-- Arcane Guardian's Shell \\ Item - Plate - Chest
 s(298106)/i(251102),	-- Clasp of Compliance \\ Item - Cloth - Waist
 s(298107)/i(251103),	-- Custodial Cuffs \\ Item - Leather - Wrist
 s(298108)/i(251104),	-- Leggings of Orderly Conduct \\ Item - Mail - Legs
 s(298109)/i(251105),	-- Ward of the Spellbreaker \\ Item - Shield - Off-Hand Weapon
-s(298110)/i(251106),	-- Item - Warglaives - Agi - Weapon
+s(298110)/i(251106),	-- Resolute Runeglaive \\ Item - Warglaives - Agi - Weapon
 s(298111)/i(251107),	-- Oathsworn Stompers \\ Item - Plate - Feet
 s(298112)/i(251108),	-- Wraps of Watchful Wrath \\ Item - Cloth - Wrist
 s(298113)/i(251109),	-- Spellsnap Shadowmask \\ Item - Leather - Head
@@ -38275,7 +38274,7 @@ s(298152)/i(251153),	-- Arctic Explorer's Legwraps \\ Item - Leather - Feet
 s(298153)/i(251154),	-- Winter's Embrace Bracers \\ Item - Cloth - Wrist
 s(298154)/i(251155),	-- Tribal Defender's Cord \\ Item - Mail - Waist
 s(298155)/i(251156),	-- Fallen Speaker's Staff \\ Item - Staff - Int - 2 Hand
-s(298156)/i(251157),	-- Item - Plate - Shoulder
+s(298156)/i(251157),	-- Searing Spaulders \\ Item - Plate - Shoulder
 s(298157)/i(251158),	-- Nalorakk's Nightmare \\ Item - Mail - Head
 s(298158)/i(251159),	-- War Trial Vestments \\ Item - Leather - Chest
 s(298159)/i(251160),	-- Forest Dream Leg-guards \\ Item - Cloth - Legs
@@ -38283,7 +38282,7 @@ s(298160)/i(251161),	-- Soulhunter's Mask \\ Item - Cloth - Cloak
 s(298161)/i(251162),	-- Traitor's Talon \\ Item - Polearms - Agi - 2 Hand
 s(298162)/i(251163),	-- Berserker's Hexclaws \\ Item - FistWeapon - Int - Weapon
 s(298163)/i(251164),	-- Amalgamation's Harness \\ Item - Plate - Shoulder \\ Item - Plate - Wrist
-s(298164)/i(251165),	-- Item - Mail - Hand
+s(298164)/i(251165),	-- Pulverizing Pads \\ Item - Mail - Hand
 s(298165)/i(251166),	-- Falconer's Cinch \\ Item - Leather - Waist
 s(298166)/i(251167),	-- Nightprey Stalkers \\ Item - Cloth - Feet
 s(298167)/i(251168),	-- Liferipper's Cutlass \\ Item - Sword2H - Str - 2 Hand
@@ -38297,59 +38296,59 @@ s(298174)/i(251176),	-- Reanimator's Weight \\ Item - Mail - Shoulder \\ Item - 
 s(298175)/i(251177),	-- Fetid Vilecrown \\ Item - Leather - Head
 s(298176)/i(251178),	-- Ceremonial Hexblade \\ Item - Dagger - Int - Weapon
 s(298177)/i(251179),	-- Decaying Cuirass \\ Item - Mail - Chest
-s(298178)/i(251180),	-- Item - Dagger - Agi - Weapon
-s(298179)/i(251181),	-- Item - Polearm - Str - 2 Hand
-s(298180)/i(251182),	-- Item - Plate - Legs
-s(298181)/i(251183),	-- Item - Leather - Wrist
-s(298182)/i(251184),	-- Item - Mail - Shoulder
-s(298183)/i(251185),	-- Item - Cloth - Waist
-s(298184)/i(251186),	-- Item - FistWeapon - Agi - Weapon
-s(298185)/i(251187),	-- Item - Crossbow - RangedRight
-s(298186)/i(251188),	-- Item - Wand - Int - RangedRight
-s(298187)/i(251189),	-- Item - Leather - Waist
-s(298188)/i(251190),	-- Item - Cloth - Cloak
-s(298189)/i(251191),	-- Item - Offhand - Holdable
-s(298190)/i(251192),	-- Item - Staff - Agi - 2 Hand
-s(298191)/i(251193),	-- Item - Plate - Chest
-s(298192)/i(251195),	-- Item - Sword1H - Str - Weapon
-s(298193)/i(251196),	-- Item - Shield - Off-Hand Weapon
-s(298194)/i(251197),	-- Item - Plate - Hand
-s(298195)/i(251198),	-- Item - Leather - Legs
-s(298196)/i(251199),	-- Item - Cloth - Head
-s(298197)/i(251200),	-- Item - Mail - Wrist
-s(298198)/i(251201),	-- Item - Staff - Int - 2 Hand
-s(298199)/i(251202),	-- Item - Shield - Off-Hand Weapon
-s(298200)/i(251203),	-- Item - Plate - Wrist
-s(298201)/i(251204),	-- Item - Leather - Hand
-s(298202)/i(251205),	-- Item - Cloth - Legs
-s(298203)/i(251206),	-- Item - Cloth - Cloak
-s(298204)/i(251207),	-- Item - Mace1H - Agi - Weapon
-s(298205)/i(251208),	-- Item - Plate - Legs
-s(298206)/i(251209),	-- Item - Mail - Wrist
-s(298207)/i(251210),	-- Item - Leather - Feet
-s(298208)/i(251211),	-- Item - Cloth - Hand
-s(298209)/i(251212),	-- Item - Dagger - Agi - Weapon
-s(298210)/i(251213),	-- Item - Cloth - Shoulder
+s(298178)/i(251180),	-- Thornblade \\ Item - Dagger - Agi - Weapon
+s(298179)/i(251181),	-- Pruning Lance \\ Item - Polearm - Str - 2 Hand
+s(298180)/i(251182),	-- Bedrock Breeches \\ Item - Plate - Legs
+s(298181)/i(251183),	-- Rootwarden Wraps \\ Item - Leather - Wrist
+s(298182)/i(251184),	-- Ironroot Collar \\ Item - Mail - Shoulder
+s(298183)/i(251185),	-- Lightblossom Cinch \\ Item - Cloth - Waist
+s(298184)/i(251186),	-- Thorntalon Edge \\ Item - FistWeapon - Agi - Weapon
+s(298185)/i(251187),	-- Amirdrassil's Reach \\ Item - Crossbow - RangedRight
+s(298186)/i(251188),	-- Doompetal \\ Item - Wand - Int - RangedRight
+s(298187)/i(251189),	-- Rootwalker Harness \\ Item - Leather - Waist
+s(298188)/i(251190),	-- Bloodthorn Burnous \\ Item - Cloth - Cloak
+s(298189)/i(251191),	-- Luminescent Sprout \\ Item - Offhand - Holdable
+s(298190)/i(251192),	-- Branch of Pride \\ Item - Staff - Agi - 2 Hand
+s(298191)/i(251193),	-- Taproot Ribs \\ Item - Plate - Chest
+s(298192)/i(251195),	-- Thorned Reply \\ Item - Sword1H - Str - Weapon
+s(298193)/i(251196),	-- Teldrassil's Sacrifice \\ Item - Shield - Off-Hand Weapon
+s(298194)/i(251197),	-- Thornspike Gauntlets \\ Item - Plate - Hand
+s(298195)/i(251198),	-- Lightspore Leggings \\ Item - Leather - Legs
+s(298196)/i(251199),	-- Worldroot Canopy \\ Item - Cloth - Head
+s(298197)/i(251200),	-- Saptorbane Guards \\ Item - Mail - Wrist
+s(298198)/i(251201),	-- Corespark Multitool \\ Item - Staff - Int - 2 Hand
+s(298199)/i(251202),	-- Reflux Reflector \\ Item - Shield - Off-Hand Weapon
+s(298200)/i(251203),	-- Kasreth's Bindings \\ Item - Plate - Wrist
+s(298201)/i(251204),	-- Corewright's Zappers \\ Item - Leather - Hand
+s(298202)/i(251205),	-- Leyline Leggings \\ Item - Cloth - Legs
+s(298203)/i(251206),	-- Fluxweave Cloak \\ Item - Cloth - Cloak
+s(298204)/i(251207),	-- Dreadflail Bludgeon \\ Item - Mace1H - Agi - Weapon
+s(298205)/i(251208),	-- Lightscarred Cuisses \\ Item - Plate - Legs
+s(298206)/i(251209),	-- Corewarden Cuffs \\ Item - Mail - Wrist
+s(298207)/i(251210),	-- Eclipse Espadrilles \\ Item - Leather - Feet
+s(298208)/i(251211),	-- Fractured Fingerguards \\ Item - Cloth - Hand
+s(298209)/i(251212),	-- Radiant Slicer \\ Item - Dagger - Agi - Weapon
+s(298210)/i(251213),	-- Nysarra's Mantle \\ Item - Cloth - Shoulder
 s(298211)/i(251214),	-- Bonds of the Hash'ura \\ Item - Plate - Hand
-s(298212)/i(251215),	-- Item - Mail - Legs
-s(298213)/i(251216),	-- Item - Leather - Chest
-s(298214)/i(251218),	-- Item - Sword1H - Str - Weapon
-s(298215)/i(251219),	-- Item - Cloth - Feet
-s(298216)/i(251220),	-- Item - Mail - Head
-s(298217)/i(251221),	-- Item - Plate - Hand
-s(298218)/i(251222),	-- Item - Cloth - Waist
-s(298219)/i(251223),	-- Item - Leather - Shoulder
-s(298220)/i(251224),	-- Item - Axe1H - Agi - Weapon
-s(298221)/i(251225),	-- Item - Dagger - Int - Weapon
-s(298222)/i(251226),	-- Item - Leather - Chest
-s(298223)/i(251227),	-- Item - Cloth - Shoulder
-s(298224)/i(251228),	-- Item - Mail - Waist
-s(298225)/i(251229),	-- Item - Plate - Head
-s(298226)/i(251230),	-- Item - Polearms - Str - 2 Hand
-s(298227)/i(251231),	-- Item - Warglaives - Agi - Weapon
-s(298228)/i(251232),	-- Item - Cloth - Head
-s(298229)/i(251233),	-- Item - Mail - Chest
-s(298230)/i(251235),	-- Item - Leather - Waist
+s(298212)/i(251215),	-- Greaves of the Divine Guile \\ Item - Mail - Legs
+s(298213)/i(251216),	-- Maledict Vest \\ Item - Leather - Chest
+s(298214)/i(251218),	-- Taz'Rah's Cosmic Edge \\ Item - Sword1H - Str - Weapon
+s(298215)/i(251219),	-- Riftworn Stompers \\ Item - Cloth - Feet
+s(298216)/i(251220),	-- Voidscarred Crown \\ Item - Mail - Head
+s(298217)/i(251221),	-- Despondent's Gauntlets \\ Item - Plate - Hand
+s(298218)/i(251222),	-- Ethereal Netherwrap \\ Item - Cloth - Waist
+s(298219)/i(251223),	-- Somber Spaulders \\ Item - Leather - Shoulder
+s(298220)/i(251224),	-- Hulking Handaxe \\ Item - Axe1H - Agi - Weapon
+s(298221)/i(251225),	-- Fang of Contagion \\ Item - Dagger - Int - Weapon
+s(298222)/i(251226),	-- Hide of Pestilence \\ Item - Leather - Chest
+s(298223)/i(251227),	-- Poisoner's Pauldrons \\ Item - Cloth - Shoulder
+s(298224)/i(251228),	-- Behemoth Waistband \\ Item - Mail - Waist
+s(298225)/i(251229),	-- Visor of the Predator \\ Item - Plate - Head
+s(298226)/i(251230),	-- Charonic Crescent \\ Item - Polearms - Str - 2 Hand
+s(298227)/i(251231),	-- Singularity Slicer \\ Item - Warglaives - Agi - Weapon
+s(298228)/i(251232),	-- Overseer's Diadem \\ Item - Cloth - Head
+s(298229)/i(251233),	-- Manipulator's Vest \\ Item - Mail - Chest
+s(298230)/i(251235),	-- Gravitic Girdle \\ Item - Leather - Waist
 s(298231)/i(251250),	-- Recovered Sanctum Hacker
 s(298232)/i(251251),	-- Recovered Sanctum Hatchet
 s(298233)/i(251252),	-- Recovered Sanctum Axe
@@ -38490,31 +38489,31 @@ s(298508)/i(252705),	-- Pilfered Socialite's Slacks
 s(298509)/i(252706),	-- Pilfered Socialite's Buckle
 s(298510)/i(252707),	-- Pilfered Socialite's Vest
 s(298511)/i(252708),	-- Pilfered Socialite's Treads
-s(298518)/i(252716),	--
-s(298519)/i(252717),	--
-s(298520)/i(252718),	--
-s(298521)/i(252719),	--
-s(298522)/i(252720),	--
-s(298523)/i(252721),	--
-s(298524)/i(252722),	--
-s(298525)/i(252723),	--
-s(298526)/i(252724),	--
-s(298527)/i(252725),	--
-s(298528)/i(252726),	--
-s(298529)/i(252727),	--
-s(298530)/i(252728),	--
-s(298531)/i(252729),	--
-s(298532)/i(252730),	--
-s(298533)/i(252731),	--
-s(298534)/i(252732),	--
-s(298535)/i(252733),	--
-s(298536)/i(252734),	--
-s(298537)/i(252735),	--
-s(298538)/i(252736),	--
-s(298539)/i(252737),	--
-s(298540)/i(252738),	--
-s(298541)/i(252739),	--
-s(298542)/i(252740),	--
+s(298518)/i(252716),	-- Courtier's Umbral Wristchains
+s(298519)/i(252717),	-- Courtier's Umbral Robe
+s(298520)/i(252718),	-- Courtier's Umbral Girdle
+s(298521)/i(252719),	-- Courtier's Umbral Chain
+s(298522)/i(252720),	-- Courtier's Umbral Anklewraps
+s(298523)/i(252721),	-- Courtier's Azure Wristchains
+s(298524)/i(252722),	-- Courtier's Azure Robe
+s(298525)/i(252723),	-- Courtier's Azure Girdle
+s(298526)/i(252724),	-- Courtier's Azure Chain
+s(298527)/i(252725),	-- Courtier's Azure Anklewraps
+s(298528)/i(252726),	-- Courtier's Viridian Wristchains
+s(298529)/i(252727),	-- Courtier's Viridian Robe
+s(298530)/i(252728),	-- Courtier's Viridian Girdle
+s(298531)/i(252729),	-- Courtier's Viridian Chain
+s(298532)/i(252730),	-- Courtier's Viridian Anklewraps
+s(298533)/i(252731),	-- Courtier's Crimson Wristchains
+s(298534)/i(252732),	-- Courtier's Crimson Robe
+s(298535)/i(252733),	-- Courtier's Crimson Girdle
+s(298536)/i(252734),	-- Courtier's Crimson Chain
+s(298537)/i(252735),	-- Courtier's Crimson Anklewraps
+s(298538)/i(252736),	-- Courtier's Lucent Wristchains
+s(298539)/i(252737),	-- Courtier's Lucent Robe
+s(298540)/i(252738),	-- Courtier's Lucent Girdle
+s(298541)/i(252739),	-- Courtier's Lucent Chain
+s(298542)/i(252740),	-- Courtier's Lucent Anklewraps
 s(298595)/i(253041),	--
 s(298855)/i(253388),	-- Tyrannus's Runeblade
 s(298856)/i(253389),	-- Manaforge Raider's Umbral Ward (MAIN HAND SLOT)
@@ -38697,46 +38696,46 @@ s(299131)/i(254500),	-- Pilfered Elegant Leggings
 s(299132)/i(254501),	-- Pilfered Elegant Clasp
 s(299133)/i(254502),	-- Pilfered Elegant Robe
 s(299134)/i(254503),	-- Pilfered Elegant Slippers
-s(299135)/i(254505),	--
-s(299136)/i(254506),	--
-s(299137)/i(254507),	--
-s(299138)/i(254508),	--
-s(299139)/i(254509),	--
-s(299140)/i(254510),	--
-s(299141)/i(254511),	--
-s(299142)/i(254512),	--
-s(299143)/i(254513),	--
-s(299144)/i(254514),	--
-s(299145)/i(254515),	--
-s(299146)/i(254516),	--
-s(299147)/i(254517),	--
-s(299148)/i(254518),	--
-s(299149)/i(254519),	--
-s(299150)/i(254520),	--
-s(299151)/i(254521),	--
-s(299152)/i(254522),	--
-s(299153)/i(254523),	--
-s(299154)/i(254524),	--
-s(299155)/i(254525),	--
-s(299156)/i(254526),	--
-s(299157)/i(254527),	--
-s(299158)/i(254528),	--
-s(299159)/i(254529),	--
-s(299160)/i(254530),	--
-s(299161)/i(254531),	--
-s(299162)/i(254532),	--
-s(299163)/i(254533),	--
-s(299164)/i(254534),	--
-s(299165)/i(254535),	--
-s(299166)/i(254536),	--
-s(299167)/i(254537),	--
-s(299168)/i(254538),	--
-s(299169)/i(254539),	--
-s(299170)/i(254540),	--
-s(299171)/i(254541),	--
-s(299172)/i(254542),	--
-s(299173)/i(254543),	--
-s(299174)/i(254544),	--
+s(299135)/i(254505),	-- Augur's Umbral Wristchains
+s(299136)/i(254506),	-- Augur's Umbral Robe
+s(299137)/i(254507),	-- Augur's Umbral Girdle
+s(299138)/i(254508),	-- Augur's Umbral Chain
+s(299139)/i(254509),	-- Augur's Umbral Anklewraps
+s(299140)/i(254510),	-- Augur's Azure Wristchains
+s(299141)/i(254511),	-- Augur's Azure Robe
+s(299142)/i(254512),	-- Augur's Azure Girdle
+s(299143)/i(254513),	-- Augur's Azure Chain
+s(299144)/i(254514),	-- Augur's Azure Anklewraps
+s(299145)/i(254515),	-- Augur's Viridian Wristchains
+s(299146)/i(254516),	-- Augur's Viridian Robe
+s(299147)/i(254517),	-- Augur's Viridian Girdle
+s(299148)/i(254518),	-- Augur's Viridian Chain
+s(299149)/i(254519),	-- Augur's Viridian Anklewraps
+s(299150)/i(254520),	-- Augur's Crimson Wristchains
+s(299151)/i(254521),	-- Augur's Crimson Robe
+s(299152)/i(254522),	-- Augur's Crimson Girdle
+s(299153)/i(254523),	-- Augur's Crimson Chain
+s(299154)/i(254524),	-- Augur's Crimson Anklewraps
+s(299155)/i(254525),	-- Augur's Lucent Wristchains
+s(299156)/i(254526),	-- Augur's Lucent Robe
+s(299157)/i(254527),	-- Augur's Lucent Girdle
+s(299158)/i(254528),	-- Augur's Lucent Chain
+s(299159)/i(254529),	-- Augur's Lucent Anklewraps
+s(299160)/i(254530),	-- Augur's Lucent Helmet
+s(299161)/i(254531),	-- Augur's Crimson Helmet
+s(299162)/i(254532),	-- Augur's Viridian Helmet
+s(299163)/i(254533),	-- Augur's Azure Helmet
+s(299164)/i(254534),	-- Augur's Umbral Helmet
+s(299165)/i(254535),	-- Augur's Umbral Shoulderpads
+s(299166)/i(254536),	-- Augur's Azure Shoulderpads
+s(299167)/i(254537),	-- Augur's Viridian Shoulderpads
+s(299168)/i(254538),	-- Augur's Crimson Shoulderpads
+s(299169)/i(254539),	-- Augur's Lucent Shoulderpads
+s(299170)/i(254540),	-- Augur's Umbral Bracers
+s(299171)/i(254541),	-- Augur's Azure Bracers
+s(299172)/i(254542),	-- Augur's Viridian Bracers
+s(299173)/i(254543),	-- Augur's Crimson Bracers
+s(299174)/i(254544),	-- Augur's Lucent Bracers
 s(299175)/i(254555),	--
 s(299202)/i(254591),	--
 s(299203)/i(254592),	--
@@ -39975,7 +39974,7 @@ s(300751)/i(256193),	-- Worn Harandar Greatbelt
 s(300752)/i(256194),	-- Keem's Blooming Pauldrons
 s(300753)/i(256195),	-- Light-Blighted Legguards
 s(300754)/i(256196),	-- Greathelm of Scorched Fronds
-s(300755)/i(256197),	-- Gauntlets of the Innoculated
+s(300755)/i(256197),	-- Gauntlets of the Inoculated \\ Gauntlets of the Innoculated
 s(300756)/i(256198),	-- Warboots of the Colossal Behemoths \\ Warbots of the Colossal Behemoths \\ [DNT] Plate Feet Gear \\ World-Root Boots
 s(300757)/i(256199),	-- Alndust-Coated Carapace
 s(300758)/i(256200),	-- Hardened Lash'ra Cuffs
@@ -41295,7 +41294,7 @@ s(303287)/i(264301),	-- Viral Coagulation Girdle \\ [DNT] Mail Belt
 s(303288)/i(264302),	-- Viral Coagulation Cinch \\ [DNT] Plate Belt
 s(303289)/i(264304),	-- Robes of Darkened Deceit \\ [DNT] Cloth Chest
 s(303290)/i(264305),	-- Vest of Darkened Deceit \\ [DNT] Leather Chest
-s(303291)/i(264306),	-- Mail of Darkened Deciet \\ [DNT] Mail Chest
+s(303291)/i(264306),	-- Mail of Darkened Deceit \\ Mail of Darkened Deciet \\ [DNT] Mail Chest
 s(303292)/i(264307),	-- Breastplate of Darkened Deceit \\ [DNT] Plate Chest
 s(303293)/i(264308),	-- Mask of Awakened Shadows \\ [DNT] Cloth Mask
 s(303294)/i(264309),	-- Helmet of Awakened Shadows \\ [DNT] Leather Mask
@@ -42034,3 +42033,8 @@ s(304623)/i(268640),	--
 s(304624)/i(268641),	--
 s(304625)/i(268642),	--
 s(304626)/i(268643),	--
+12.0.1.65337
+s(304732)/i(268921),	-- Staff of the Great Dark
+s(304733)/i(268960),	--
+s(304734)/i(268971),	--
+s(304735)/i(269014),	--

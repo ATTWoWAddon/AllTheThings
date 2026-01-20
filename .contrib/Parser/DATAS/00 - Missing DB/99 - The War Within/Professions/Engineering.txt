@@ -29,7 +29,7 @@ r(1229880),	-- Aetherlume Clonkers
 r(1229881),	-- Aetherlume Stompers
 r(1229882),	-- Quel'dorei Cloth Goggles
 r(1229883),	-- Quel'dorei Leather Optics
-r(1229884),	-- Quel'dorei Mail Shroid
+r(1229884),	-- Quel'dorei Mail Shroud \\ Quel'dorei Mail Shroid
 r(1229885),	-- Quel'dorei Visor
 r(1229886),	-- Quel'dorei Silken Cuffs
 r(1229887),	-- Quel'dorei Bands
@@ -154,7 +154,7 @@ r(1229880),	-- Aetherlume Clonkers
 r(1229881),	-- Aetherlume Stompers
 r(1229882),	-- Quel'dorei Cloth Goggles
 r(1229883),	-- Quel'dorei Leather Optics
-r(1229884),	-- Quel'dorei Mail Shroid
+r(1229884),	-- Quel'dorei Mail Shroud \\ Quel'dorei Mail Shroid
 r(1229885),	-- Quel'dorei Visor
 r(1229886),	-- Quel'dorei Silken Cuffs
 r(1229887),	-- Quel'dorei Bands
