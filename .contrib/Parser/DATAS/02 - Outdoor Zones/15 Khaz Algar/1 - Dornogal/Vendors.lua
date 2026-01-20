@@ -716,6 +716,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(246487, {	-- Gnomish Tesla Coil (DECOR!)
 						["sourceQuest"] = 92580,	-- Spare A Chair
 					}),
+					i(248934, {	-- Golden Cloud Serpent Treasure Chest (DECOR!)
+						["sourceQuest"] = 93042,	-- Frederick the Fabulous looted
+					}),
 					i(253173, {	-- Meadery Storage Barrel (DECOR!)
 						["sourceQuest"] = 92572,	-- Furniture Favor
 					}),

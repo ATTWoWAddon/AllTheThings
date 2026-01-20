@@ -266,9 +266,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["description"] = "This quest apparently makes you unable to see/obtain the container while it is true.",
 								["isDaily"] = true,
 							}),
-							i(139580, {	-- Burning Plate of the Worldbreaker
-								artifact(159),	-- Scale of the Earth-Warder
-								-- artifact(159),	-- Scaleshard
+							o(257392, {	-- Burning Plate of the Worldbreaker
+								["coord"] = { 51.7, 18.4, 657 },	-- Path of Huln
+								["groups"] = {
+									i(139580, {	-- Burning Plate of the Worldbreaker
+										artifact(159),	-- Scale of the Earth-Warder
+										-- artifact(159),	-- Scaleshard
+									}),
+								},
 							}),
 						},
 					}),

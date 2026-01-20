@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 				o(251124, {	-- Glimmering Treasure Chest
 					["description"] = "On a ledge inside Neltharion's Vault. Use a teleporter or flying mount to reach it, then click the brazier. The chest will spawn after waves of enemies are defeated.",
 					["questID"] = 39606,
-					["coord"] = { 59.6, 40.9, 657 },
+					["coord"] = { 59.6, 40.9, 657 },	-- Path of Huln
 				}),
 				o(257290, {	-- Highmountain Clan Chest
 					["description"] = "These repeatable chests spawn all over the map in Highmountain."
@@ -105,7 +105,7 @@ root(ROOTS.Zones, {
 				}),
 				o(245601, {	-- Small Treasure Chest
 					["questID"] = 40508,
-					["coord"] = { 60.5, 54.7, 657 },
+					["coord"] = { 60.5, 54.7, 657 },	-- Path of Huln
 				}),
 				o(245603, {	-- Small Treasure Chest
 					["questID"] = 40510,
@@ -195,7 +195,7 @@ root(ROOTS.Zones, {
 				}),
 				o(245602, {	-- Treasure Chest
 					["questID"] = 40509,
-					["coord"] = { 40.3, 50.0, 657 },
+					["coord"] = { 40.3, 50.0, 657 },	-- Path of Huln
 				}),
 				o(245543, {	-- Treasure Chest
 					["description"] = "On the upper level of Bitestone Enclave, all the way at the back. Cave entrance is at |cFFFFFFFF41, 73|r.",

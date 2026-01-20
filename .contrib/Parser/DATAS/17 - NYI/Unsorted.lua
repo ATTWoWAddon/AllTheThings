@@ -6048,7 +6048,6 @@ root(ROOTS.Unsorted, {
 				i(263504),	-- Skymaster's Blood Pauldrons
 			}),
 			n(DECOR, {
-				i(248934),	-- Golden Cloud Serpent Treasure Chest
 				i(263021),	-- Brumewood Hollow Grassy Patch
 				i(263022),	-- Brumewood Hollow Grassy Spread
 				i(263023),	-- Founder's Point Grassy Patch

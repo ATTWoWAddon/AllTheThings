@@ -147,8 +147,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 									["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
 									["sourceQuest"] = 44384,	-- Daily Portal Event Roll
 									["groups"] = {
-										i(139560, {	-- Everburning Crystal
-											artifact(180),	-- Ebonchill
+										o(255953, {	-- Everburning Crystal
+											["coord"] = { 70.0, 38.1, FROSTFIRE_RIDGE },
+											["groups"] = {
+												i(139560, {	-- Everburning Crystal
+													artifact(180),	-- Ebonchill
+												}),
+											},
 										}),
 									},
 								}),

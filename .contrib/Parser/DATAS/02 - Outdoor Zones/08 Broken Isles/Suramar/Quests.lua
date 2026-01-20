@@ -466,7 +466,10 @@ root(ROOTS.Zones, {
 				}),
 				q(43314, {	-- Court of Stars: Beware the Fury of a Patient Elf
 					["sourceQuest"] = 44053,	-- Friends With Benefits
-					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- First Arcanist Thalyssra
+						115736,	-- First Arcanist Thalyssra
+					},
 					["coord"] = { 36.5, 46.7, SURAMAR },
 					["groups"] = { i(140757 ) },	-- Melandrus' Spellstone (QI!)
 				}),
@@ -1874,7 +1877,10 @@ root(ROOTS.Zones, {
 				}),
 				q(42491, {	-- The Arcway: Long Buried Knowledge
 					["sourceQuest"] = 44053,	-- Friends With Benefits
-					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["qgs"] = {
+						103155,	--Arcanist Valtrois
+						115371,	-- Arcanist Valtrois
+					},
 					["coord"] = { 37.0, 46.2, SURAMAR },
 					["groups"] = { i(138394) },	-- Suramar Leyline Map (QI!)
 				}),

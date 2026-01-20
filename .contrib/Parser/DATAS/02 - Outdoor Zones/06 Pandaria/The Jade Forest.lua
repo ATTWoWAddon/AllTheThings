@@ -3800,6 +3800,15 @@ root(ROOTS.Zones, {
 						["questID"] = 31864,
 						["coord"] = { 24.6, 53.2, THE_JADE_FOREST },
 					}),
+					-- TODO: Find objectid
+					n(253602, {	-- Frederick the Fabulous
+						["description"] = "Found underwater in a ship, click the chest floating inside the slime.",
+						["sourceQuest"] = 92581,	-- Last Light
+						["questID"] = 93042,
+						["coord"] = { 57.6, 15.7, THE_JADE_FOREST },
+						["timeline"] = { ADDED_11_2_7 },
+						["groups"] = { i(248934) },	-- Golden Cloud Serpent Treasure Chest (DECOR!)
+					}),
 					o(213742, {	-- Hammer of Ten Thunders
 						["questID"] = 31403,
 						["coords"] = {
