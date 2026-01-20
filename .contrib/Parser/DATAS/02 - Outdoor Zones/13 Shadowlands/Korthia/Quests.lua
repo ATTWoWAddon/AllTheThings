@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				q(64007, {	-- Charge of the Covenants
 					["sourceQuests"] = { 63665 },	-- Opening to Oribos
 					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
+					["coord"] = { 39.5, 36.5, ORIBOS_RING },
 				}),
 				q(64555, {	-- Surveying Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

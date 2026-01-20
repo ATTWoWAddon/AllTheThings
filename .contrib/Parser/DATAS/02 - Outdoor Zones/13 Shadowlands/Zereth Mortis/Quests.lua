@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(66170,{	-- Silent Vigil
 					["sourceQuests"] = { 65297 },	-- Penance and Renewal
 					["provider"] = { "n", 187436 },	-- Dori'thur <Tyrande's Companion>
-					["coord"] = { 46.6, 55.9, 1671 },
+					["coord"] = { 46.6, 55.9, ORIBOS_RING },
 					["timeline"] = { ADDED_9_2_5 },
 				}),
 				------ The End ------
