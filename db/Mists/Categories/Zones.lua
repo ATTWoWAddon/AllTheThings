@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-local ach,ah,artifact,cat,cl,crit,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCategory,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy;
+local ach,ah,cat,cl,crit,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy;
 _.Categories.Zones={
 h(-12,{
 ach(973,{awp=30002}),
@@ -28203,7 +28203,7 @@ i(89125,{awp=50004,b=1,f=55,pb=1,q=1})}}),
 crit(21385,{achID=6613,awp=50004,id=16,pb=1}),
 crit(21550,{achID=6560,awp=50004,id=24,pb=1})}}),
 h(-45,{
-q(124,{coords={{31,47.4,49}},lvl=15,qgs={415},r=2,rwp=40003,u=2,g={
+q(124,{coords={{31,47.4,49}},lvl=15,qgs={415},r=2,rwp=40003,sourceQuests={119},u=2,g={
 qo(1,{providers={{"n",426}},rwp=40003,u=2}),
 qo(2,{providers={{"n",430}},rwp=40003,u=2})}}),
 q(129,{coords={{26.7,44.3,49}},lvl=12,providers={{"i",5534}},qgs={379},r=2,rwp=40003,u=2}),
@@ -28284,7 +28284,7 @@ s(207149,60709,{awp=40003,b=1,f=5,q=2})}}),
 q(2358,{awp=30002,c={4},coords={{28.4,52.4,49}},lvl=16,qgs={7009},r=2,rwp=40003,u=2,g={
 qo(1,{awp=30002,coords={{41,38.8,49}},crs={437,440,485,615,4065},providers={{"i",7906}},rwp=40003,u=2}),
 i(7676,{awp=30002,c={4},f=55,lvl=5,q=1,rwp=40003,u=2})}}),
-q(126,{coords={{31,47.4,49}},lvl=15,qgs={415},r=2,rwp=40003,u=2,g={
+q(126,{coords={{31,47.4,49}},lvl=15,qgs={415},r=2,rwp=40003,sourceQuests={124},u=2,g={
 qo(1,{coords={{28.8,23.2,49}},crs={518},providers={{"i",3614}},rwp=40003,u=2}),
 i(1319,{b=1,f=52,q=2,rwp=40003,u=2}),
 s(118347,2910,{b=1,f=6,filterForRWP=7,q=2,rwp=40003,u=2})}}),
@@ -28341,7 +28341,7 @@ q(26570,{awp=40003,coords={{29.7,44.5,49}},qgs={382},r=2,sourceQuests={26568},g=
 qo(1,{awp=40003,coords={{28.2,13,49}},providers={{"n",437},{"n",615},{"n",4064},{"n",4463},{"n",43327},{"n",43329},{"n",43350}}})}}),
 q(347,{coords={{32.2,48.6,49}},cost={{"i",2798,5}},lvl=20,qgs={341},r=2,rwp=40003,sourceQuests={345},u=2}),
 q(26563,{awp=40003,coords={{28.3,17,49}},qgs={43302},r=2,sourceQuests={26562}}),
-q(119,{coords={{41.7,65.5,37}},lvl=13,providers={{"i",1284}},qgs={514},r=2,rwp=40003,u=2}),
+q(119,{coords={{41.7,65.5,37}},lvl=13,providers={{"i",1284}},qgs={514},r=2,rwp=40003,sourceQuests={118},u=2}),
 q(26520,{awp=40003,coords={{17.8,18.6,49}},providers={{"o",204351}},r=2,sourceQuests={26519},g={
 qo(1,{awp=40003,coords={{24,33.4,49},{31.6,44.6,49}},crs={43094},providers={{"i",58895},{"n",341}}}),
 s(207141,60701,{awp=40003,b=1,f=5,q=2}),
@@ -28414,7 +28414,7 @@ s(207167,60727,{awp=40003,b=1,f=32,q=3}),
 s(207166,60726,{awp=40003,b=1,f=20,q=3}),
 i(60730,{awp=40003,b=1,f=52,q=3})}}),
 q(26512,{awp=40003,coords={{28.9,41.1,49}},qgs={344},r=2,sourceQuests={26510}}),
-q(122,{coords={{31,47.4,49}},lvl=14,qgs={415},r=2,rwp=40003,u=2,g={
+q(122,{coords={{31,47.4,49}},lvl=14,qgs={415},r=2,rwp=40003,sourceQuests={119},u=2,g={
 qo(1,{crs={441,14272},providers={{"i",1221}},rwp=40003,u=2}),
 s(120942,6092,{b=1,f=5,q=2,rwp=40003,u=2}),
 s(117242,1302,{b=1,f=5,q=2,rwp=40003,u=2})}}),
@@ -28498,7 +28498,7 @@ s(117298,1406,{awp=100107,coords={{80.4,58.4,49},{81,70,49}},crs={544},f=29,lvl=
 r(2548,{description="Has a chance to drop from any creature in Redridge Mountains.",itemID=2700,learnedAt=110,q=1,requireSkill=185}),
 s(117207,1219,{awp=100107,coords={{32.2,82.6,49},{44,72.8,49}},crs={424},f=25,lvl=11,q=2,rwp=40003,u=2}),
 i(2798,{description="Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",providers={{"n",580},{"o",2054}},q=1}),
-i(1462,{awp=100107,coords={{76.6,43.6,49},{80,49.6,49},{82.4,55.2,49}},crs={429},f=52,lvl=20,q=2,rwp=40003,u=2}),
+i(1462,{coords={{76.6,43.6,49},{80,49.6,49},{82.4,55.2,49}},crs={429},f=52,lvl=20,q=2,rwp=40003,u=2}),
 s(117349,1473,{awp=100107,coords={{56.4,49,49},{81,63.6,49}},crs={545},f=28,lvl=14,q=2,rwp=40003,u=2}),
 s(118057,2566,{awp=100107,coords={{80,49.6,49}},crs={397},f=4,lvl=22,q=2,rwp=40003,u=2}),
 s(117347,1469,{awp=100107,coords={{36.4,43.8,49},{37.8,41.4,49}},crs={578},f=25,lvl=14,q=2,rwp=40003,u=2}),
@@ -51611,19 +51611,57 @@ q(32505,{awp=50200,isWeekly=1,providers={{"o",218072}},u=52,g={
 ach(8105,{awp=50200,u=52,g={
 crit(22849,{achID=8121,awp=50200,id=4,u=52})}}),
 i(94221,{awp=50200,b=1,q=3,u=52})}}),
-q(32296,{awp=50200,coords={{51.5,46,504}},cost={{"i",94222,1}},isWeekly=1,qgs={70316},u=52,g={
-m(518,{awp=50200,u=52,g={
+q(32296,{awp=50200,coords={{51.5,46,504}},cost={{"i",94222,1}},isWeekly=1,maps={518},qgs={70316},u=52,g={
 ach(8106,{awp=50200,u=52,g={
 crit(22910,{achID=8106,awp=50200,providers={{"i",95342}},u=52}),
-crit(23207,{achID=8106,awp=50200,providers={{"s",139578}},u=52}),
-crit(22981,{achID=8106,awp=50200,providers={{"n",70400}},u=52}),
-crit(22980,{achID=8106,awp=50200,providers={{"s",139303}},u=52}),
 crit(22850,{achID=8121,awp=50200,id=5,u=52})}}),
-i(95497,{awp=50200,b=1,description="Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",q=1,u=52,g={
-i(139571,{awp=50200,u=52,g={
-artifact(891,{awp=50200,u=52})}})}}),
+n(70400,{awp=50200,coords={{53.6,19.2,518}},u=52,g={
+i(95497,{awp=50200,b=1,description="You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",q=1,u=52}),
+i(95491,{awp=50200,b=1,q=1,u=52}),
+crit(22981,{achID=8106,awp=50200,u=52})}}),
+n(70321,{awp=50200,coords={{52.6,10.2,518}},description="Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",u=52,g={
+crit(22980,{achID=8106,awp=50200,providers={{"s",139303}},u=52})}}),
+h(-56,{awp=50200,u=52,g={
+o(218772,{awp=50200,coords={{26.7,45.7,518},{30.6,58.1,518},{33.2,17.5,518}},u=52,g={
+i(94221,{awp=50200,b=1,q=3,u=52}),
+i(95497,{awp=50200,b=1,q=1,u=52}),
+i(95491,{awp=50200,b=1,q=1,u=52}),
+crit(23207,{achID=8106,awp=50200,providers={{"s",139578}},u=52})}}),
+o(218757,{awp=50200,coords={{26.7,45.7,518},{30.6,58.1,518},{33.2,17.5,518}},u=52,g={
+i(94221,{awp=50200,b=1,q=3,u=52}),
+i(95497,{awp=50200,b=1,q=1,u=52}),
+i(95491,{awp=50200,b=1,q=1,u=52})}}),
+o(218949,{awp=50200,coords={{46.6,78.2,518}},cost={{"i",95497,1}},u=52,g={
 i(95496,{awp=50200,b=1,f=55,q=3,u=52}),
-i(95491,{awp=50200,b=1,description="These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.",q=1,u=52})}})}})}}),
+i(94221,{awp=50200,b=1,q=3,u=52}),
+i(95491,{awp=50200,b=1,q=1,u=52}),
+s(277703,95972,{awp=50200,b=1,f=6,lvl=90,q=4,u=52}),
+s(277707,95976,{awp=50200,b=1,f=7,lvl=90,q=4,u=52}),
+s(277694,95961,{awp=50200,b=1,f=4,lvl=90,q=4,u=52}),
+s(277706,95975,{awp=50200,b=1,f=7,lvl=90,q=4,u=52}),
+s(277705,95974,{awp=50200,b=1,f=7,lvl=90,q=4,u=52}),
+s(277702,95971,{awp=50200,b=1,f=5,lvl=90,q=4,u=52}),
+s(277695,95962,{awp=50200,b=1,f=4,lvl=90,q=4,u=52}),
+s(277701,95970,{awp=50200,b=1,f=5,lvl=90,q=4,u=52}),
+s(277704,95973,{awp=50200,b=1,f=6,lvl=90,q=4,u=52}),
+s(277709,95979,{awp=50200,b=1,f=7,lvl=90,q=4,u=52}),
+s(277698,95966,{awp=50200,b=1,f=5,lvl=90,q=4,u=52}),
+s(277697,95965,{awp=50200,b=1,f=4,lvl=90,q=4,u=52}),
+s(277708,95978,{awp=50200,b=1,f=7,lvl=90,q=4,u=52}),
+i(95958,{awp=50200,b=1,f=51,lvl=90,q=4,u=52}),
+i(95964,{awp=50200,b=1,f=51,lvl=90,q=4,u=52}),
+i(95969,{awp=50200,b=1,f=51,lvl=90,q=4,u=52}),
+i(95980,{awp=50200,b=1,f=51,lvl=90,q=4,u=52}),
+i(95977,{awp=50200,b=1,f=51,lvl=90,q=4,u=52}),
+s(277693,95960,{awp=50200,b=1,f=6,lvl=90,q=4,u=52}),
+s(277696,95963,{awp=50200,b=1,f=4,lvl=90,q=4,u=52}),
+s(277692,95959,{awp=50200,b=1,f=5,lvl=90,q=4,u=52}),
+s(277699,95967,{awp=50200,b=1,f=6,lvl=90,q=4,u=52}),
+s(277700,95968,{awp=50200,b=1,f=7,lvl=90,q=4,u=52})}})}}),
+h(-63,{awp=50200,crs={70414},u=52,g={
+i(95497,{awp=50200,b=1,q=1,u=52}),
+i(95491,{awp=50200,b=1,q=1,u=52}),
+i(95342,{awp=50200,b=1,u=52})}})}})}}),
 h(-46,{awp=50200,u=52,g={
 h(-19,{awp=50200,u=52,g={
 i(94566,{awp=50200,b=1,crs={69800,69809,69961},q=2,sym={{"select","itemID",95409,95410,95411,95412,95408}},u=52,g={
@@ -56611,7 +56649,8 @@ s(270007,83704,{awp=50004,b=1,f=6,q=2}),
 s(270008,83705,{awp=50004,b=1,f=7,q=2}),
 s(270009,83706,{awp=50004,b=1,f=7,q=2})}}),
 q(31119,{awp=50004,coords={{49.5,70.5,388}},isDaily=1,qgs={63009},g={
-i(84762,{awp=50004,q=1}),
+o(212877,{awp=50004,coords={{61.4,41,388},{61.4,42.4,388},{61.4,43,388},{61.4,43.8,388},{61.7,43.8,388},{62.3,40.4,388},{62.3,40.6,388},{62.4,43.3,388},{63,40.8,388},{63.4,43.4,388},{63.5,43.3,388},{63.5,43.5,388},{63.8,41.9,388}},g={
+i(84762,{awp=50004,q=1})}}),
 crit(21208,{achID=7308,awp=50004,id=5})}}),
 q(30775,{awp=50004,coords={{66.9,51.4,388}},qgs={60735},sourceQuests={30769,30770,30771}}),
 q(30963,{awp=50004,coords={{49.1,71.3,388}},qgs={61625},g={

@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63924 },	-- Gorak Claw Fetish
 				}),
 			}),
-			ach(15069, {	-- The Archivist's Codex
+			ach(15069, {	-- The Archivists' Codex
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 6 },
 			}),
 			ach(15099, {	-- Treasures of Korthia

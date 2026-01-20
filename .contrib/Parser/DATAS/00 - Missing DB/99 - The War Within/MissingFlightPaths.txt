@@ -51,3 +51,10 @@ fp(3232),	-- Quest Path 10760: 12.0 Z1 - Local Story 09 - How to Train Your Prot
 fp(3233),	-- Quest Path 10761: 12.0 Z1 - Local Story 02c - How to Train Your Protegee Q02c - Teleport Down - Missle Teleport Curve Down (RRN)
 fp(3234),	-- Quest Path 10393: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport to Top - Missile Teleport Curve Up (RRN)
 fp(3235),	-- Quest Path 10398: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport Down - Missle Teleport Curve Down (RRN)
+12.0.1.65337
+fp(3236),	-- Quest Path 11400: 12.0 Z1 - Eversong - Teleporters - Dawning Lane > Rookery - Going Up - Force Taxi - SJC
+fp(3237),	-- Quest Path 11401: 12.0 Z1 - Eversong - Teleporters - Dawning Lane > Rookery - Going Down - Force Taxi - SJC
+fp(3238),	-- Quest Path 11402: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Up - Force Taxi - SJC
+fp(3239),	-- Quest Path 11403: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Down - Force Taxi - SJC
+fp(3240),	-- Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
+fp(3241),	-- Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC

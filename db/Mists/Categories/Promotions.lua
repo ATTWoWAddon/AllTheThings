@@ -85,8 +85,8 @@ p(92,{awp=11101,b=1,itemID=13583,npcID=11325,q=3,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,npcID=11327,q=3,spellID=17709,u=3})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
-p(131,{awp=20001,b=1,itemID=25535,npcID=18381,q=3,rwp=30002,spellID=32298,u=2}),
-p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,rwp=30002,spellID=24988,u=2})}}),
+p(131,{awp=20001,b=1,itemID=25535,npcID=18381,q=3,rwp=30002,spellID=32298,u=2}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=2,g={
 h(-45,{awp=20501,rwp=30400,u=2,g={
 q(63450,{altQuests={63448},awp=20501,coords={{28,75.8,224}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={84,85,87,88,103,110,998},qgs={17249},rwp=30400,u=2,g={
@@ -103,13 +103,13 @@ x(3,{description="These rewards were made available to anyone who purchased a Co
 ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{awp=20403,b=1,itemID=39286,npcID=28883,q=3,rwp=30305,spellID=52615,u=2,g={
 crit(69844,{achID=683,awp=20403,id=3,rwp=30305,u=2})}})}}),
-h(-525,{awp=20504,rwp=40001,u=2,g={
-h(-522,{awp=20504,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=2,g={
-p(4234,{awp=20504,b=1,itemID=198665,npcID=194870,q=4,rwp=40001,spellID=384796,u=2}),
-toy(198647,{awp=20504,b=1,q=4,rwp=40001,u=2}),
-ach(16332,{awp=20504,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},rwp=40001,u=2})}}),
-h(-523,{awp=20504,description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=2,g={
-mnt(372677,{awp=20504,b=1,itemID=192455,lvl=20,q=4,rwp=40001,u=2})}})}}),
+h(-525,{awp=30400,rwp=40001,u=2,g={
+h(-522,{awp=30400,description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=2,g={
+p(4234,{awp=30400,b=1,itemID=198665,npcID=194870,q=4,rwp=40001,spellID=384796,u=2}),
+toy(198647,{awp=30400,b=1,q=4,rwp=40001,u=2}),
+ach(16332,{awp=30400,cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},rwp=40001,u=2})}}),
+h(-523,{awp=30400,description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=2,g={
+mnt(372677,{awp=30400,b=1,itemID=192455,lvl=20,q=4,rwp=40001,u=2})}})}}),
 x(4,{description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),
 p(268,{awp=40001,b=1,itemID=62540,npcID=46896,q=3,rwp=40302,spellID=87344,u=2,g={
@@ -198,8 +198,8 @@ h(-550,{awp=20403,rwp=30002,u=2,g={
 ach(1637,{awp=20403,providers={{"i",37297}},rwp=30002,u=2}),
 p(179,{awp=20403,b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,npcID=27217,q=3,rwp=30002,spellID=48406,u=2}),
 ach(1636,{awp=20403,providers={{"i",36941}},rwp=30002,u=2}),
-s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002,u=2}),
-p(180,{awp=20403,b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,q=3,rwp=30002,spellID=48408,u=2})}}),
+s(145354,36941,{awp=20403,b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2;else	t.u=nil;end	end	end,q=3,rwp=30002,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(180,{awp=20403,b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,q=3,rwp=30002,spellID=48408,u=2}))}}),
 h(-551,{awp=20001,u=2,g={
 flt(101,{awp=20001,u=2,g={
 i(50301,{awp=30300,b=1,f=101,q=1,u=2,g={

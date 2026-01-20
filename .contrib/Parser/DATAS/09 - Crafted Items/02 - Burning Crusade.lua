@@ -443,7 +443,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Dust:
 			i(22445, {	-- Arcane Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills at ilvl 130 (unscaled).",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
 				-- #endif
@@ -451,14 +451,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Essences:
 			i(22446, {	-- Greater Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(22447, {	-- Lesser Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons at ilvl 130 (unscaled), except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
 				-- #endif
@@ -466,21 +466,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Shards and crystals:
 			i(22449, {	-- Large Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled).",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
 				-- #endif
 			}),
 			i(22448, {	-- Small Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear at ilvl 140 (unscaled). This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
 				-- #endif
 			}),
 			i(22450, {	-- Void Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear at ilvl 142 (unscaled).",
+				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
 				-- #endif
@@ -1422,7 +1422,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(23439),	-- Noble Topaz
 					i(23438),	-- Star of Elune
 					i(23437),	-- Talasite
-				})
+				}),
+				{
+					i(24243, {	-- Adamantite Powder
+						["cost"] = {{ "i", 23425, 5 }},	-- Adamantite Ore
+					}),
+				}
 			),
 		}),
 		n(ARMOR, {
@@ -2162,27 +2167,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}
 			}),
 			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			-- Not Ore
-			--[[	No need to list Tradegoods w/ many other sources
-			i(23117),	-- Azure Moonstone
-			i(23077),	-- Blood Garnet
-			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
-			i(23440),	-- Dawnstone
-			i(23079),	-- Deep Peridot
-			i(32228, {["timeline"] = {ADDED_2_1_0}}),	-- Empyrean Sapphire
-			i(21929),	-- Flame Spessarite
-			i(23112),	-- Golden Draenite
-			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
-			i(23436),	-- Living Ruby
-			i(23441),	-- Nightseye
-			i(23439),	-- Noble Topaz
-			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone
-			i(32249, {["timeline"] = {ADDED_2_1_0}}),	-- Seaspray Emerald
-			i(23107),	-- Shadow Draenite
-			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
-			i(23438),	-- Star of Elune
-			i(23437),	-- Talasite
-			--]]
 		}),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(23446, {	-- Adamantite Bar

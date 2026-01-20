@@ -469,7 +469,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Dust:
 			i(34054, {	-- Infinite Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 32-35.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
 				-- #endif
@@ -477,14 +477,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Essences:
 			i(34055, {	-- Greater Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 33-35, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(34056, {	-- Lesser Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 32-33, except shields and off-hand frills.",
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
 				-- #endif
@@ -492,21 +492,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Shards and crystals:
 			i(34057, {	-- Abyss Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear at ilvl 35.",
+				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
 				-- #endif
 			}),
 			i(34052, {	-- Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 34-35.",
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
 				-- #endif
 			}),
 			i(34053, {	-- Small Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 32-34.",
+				["description"] = "Seemingly no longer obtainable but from niche means, there never was any use for them but to convert into Dream Shards.",
 				-- #elseif BEFORE WOD
 				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
 				-- #endif
@@ -2180,7 +2180,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		filter(MISC, {
 			i(41367),	-- Dark Jade Focusing Lens
-			i(44943, {["timeline"] = {ADDED_3_0_8}}),	-- Icy Prism
+			i(44943, {	-- Icy Prism
+				["timeline"] = { ADDED_3_0_8 },
+				["groups"] = {
+					i(36921),	-- Autumn's Glow
+					i(42225),	-- Dragon's Eye
+					i(36933),	-- Forest Emerald
+					i(36930),	-- Monarch Topaz
+					i(36918),	-- Scarlet Ruby
+					i(36924),	-- Sky Sapphire
+					i(36927),	-- Twilight Opal
+				},
+			}),
 			i(42420),	-- Shadow Crystal Focusing Lens
 			i(42421),	-- Shadow Jade Focusing Lens
 		}),

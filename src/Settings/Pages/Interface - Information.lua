@@ -699,10 +699,13 @@ local InformationTypes = {
 					});
 					j = j + 1;
 					if j >= maxCoords then
-						tinsert(tooltipInfo, {
-							right = (L.AND_MORE):format(coordCount - maxCoords),
-							r = 1, g = 1, b = 1
-						});
+						local remainingCoords = coordCount - maxCoords
+						if remainingCoords > 0 then
+							tinsert(tooltipInfo, {
+								right = (L.AND_MORE):format(remainingCoords),
+								r = 1, g = 1, b = 1
+							});
+						end
 						break;
 					end
 				end
@@ -726,10 +729,13 @@ local InformationTypes = {
 					});
 					j = j + 1;
 					if j >= maxCoords then
-						tinsert(tooltipInfo, {
-							right = (L.AND_MORE):format(coordCount - maxCoords),
-							r = 1, g = 1, b = 1
-						});
+						local remainingCoords = coordCount - maxCoords
+						if remainingCoords > 0 then
+							tinsert(tooltipInfo, {
+								right = (L.AND_MORE):format(remainingCoords),
+								r = 1, g = 1, b = 1
+							});
+						end
 						break;
 					end
 				end

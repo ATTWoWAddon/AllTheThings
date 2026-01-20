@@ -311,9 +311,6 @@ decor(16754),	-- Draenei Holo-Junction \\ [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES01
 decor(17609),	-- High-Mounted Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier03.M2
 decor(17610),	-- Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier04.M2
 decor(17611),	-- Low-Hanging Razorwind Bowl Chandelier \\ [DNT] [AUTOGEN] 12PH_Durotar_Lighting_HangingBrazier05.M2
-11.2.7.64978
-decor(12247),	-- Hatred's Wolfpelt Rug
-decor(12248),	-- Prime Evil's Chest
 12.0.0.63534
 decor(669),	-- [DNT] 12PH_Opulent_INE01_Partition_Pillar.wmo - DO NOT USE - unfinished \\ NYI 12PH_Opulent_INE01_Partition_Pillar.wmo
 decor(670),	-- [DNT] 12PH_Opulent_INE01_Partition_W_L.wmo  - DO NOT USE - unfinished \\ NYI 12PH_Opulent_INE01_Partition_W_L.wmo
@@ -417,7 +414,7 @@ decor(2223),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd02.m2
 decor(2224),	-- Stoppered Spring Water Gourd \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_BottleGourd03.m2
 decor(2225),	-- Haranir Herb Rack \\ [DNT] [AUTOGEN] 11WE_WildElves_Decor_HangingHerbs01.m2
 decor(2232),	-- Ruddy Haranir Pigment Bowl \\ [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl01.m2
-decor(2233),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl02.m2
+decor(2233),	-- Waterlogged Haranir Pigment Bowl \\ [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl02.m2
 decor(2234),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl03.m2
 decor(2235),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_PaintBowl04.m2
 decor(2295),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_Mortar01.m2
@@ -745,7 +742,7 @@ decor(14352),	-- Visage of Jan'alai, Loa of Fire \\ Visage of Jan'alai \\ [DNT] 
 decor(14353),	-- [DNT] [AUTOGEN] 12PH_Leg_6HU_BLACKSMITH_FORGE03.m2
 decor(14432),	-- Alliance Doormat \\ [DNT] [AUTOGEN] 12PH_Misc_AllianceDoorMat01.m2
 decor(14433),	-- Horde Doormat \\ [DNT] [AUTOGEN] 12PH_Misc_HordeDoorMat01.m2
-decor(14467),	-- The Dark Portal \\ [DNT] [AUTOGEN] 12PH_Misc_TBCDarkPortal01.m2
+decor(14467),	-- Miniature Replica Dark Portal \\ The Dark Portal \\ [DNT] [AUTOGEN] 12PH_Misc_TBCDarkPortal01.m2
 decor(14554),	-- Ornate Cosmic Rug \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs01.m2
 decor(14555),	-- Lush Telogrus Carpet \\ [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs02.m2
 decor(14556),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Decor_Rugs03.m2
@@ -796,7 +793,7 @@ decor(14631),	-- Smoldering Energy Forge \\ [DNT] [AUTOGEN] 12VE_VoidElf_Craftin
 decor(14632),	-- Void Elf Throne \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_Chair01.m2
 decor(14633),	-- Void Elf Stool \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_Stool01.m2
 decor(14634),	-- Void Elf Floating Lantern \\ [DNT] [AUTOGEN] 12VE_VoidElf_Lighting_FloatingLantern01.m2
-decor(14635),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Ritual_MagicObject01.m2
+decor(14635),	-- Swirling Ritual Pedestal \\ [DNT] [AUTOGEN] 12VE_VoidElf_Ritual_MagicObject01.m2
 decor(14636),	-- Voidstrider Saddlebag \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Satchel01.m2
 decor(14637),	-- Sturdy Ren'dorei Cask \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Barrel02.m2
 decor(14638),	-- Replica Haranir Mural \\ [DNT] [AUTOGEN] 11WE_WildElves_Special_Mural05.m2
@@ -980,7 +977,7 @@ decor(15497),	-- Haranir Whistling Arrow \\ [DNT] [AUTOGEN] 11WE_WildElves_Defen
 decor(15498),	-- [DNT] [AUTOGEN] 12ESW_main_tree_cypressRed_a02.m2
 decor(15499),	-- Gilded Vigil Post \\ [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_FenceLampPost03.m2
 decor(15500),	-- Sanctified Flame Lantern \\ [DNT] [AUTOGEN] 12BE_BloodElf_Lighting_HolyLanternFloating01.m2
-decor(15501),	-- [DNT] [AUTOGEN] 12RU_Rutaani_Decor_Rug_Large_Lightbloom01.m2
+decor(15501),	-- Lightbloom Moss Mound \\ [DNT] [AUTOGEN] 12RU_Rutaani_Decor_Rug_Large_Lightbloom01.m2
 decor(15502),	-- Rutaani Birdfeeder \\ [DNT] [AUTOGEN] 12RU_Rutaani_Birdkit_BirdFeeder01.m2
 decor(15503),	-- Rutaani Birdbath \\ [DNT] [AUTOGEN] 12RU_Rutaani_BirdKit_BirdBath01.m2
 decor(15504),	-- Rutaani Bird Perch \\ [DNT] [AUTOGEN] 12RU_Rutaani_BirdKit_Perch01.m2
@@ -1023,7 +1020,7 @@ decor(15753),	-- [DNT] [AUTOGEN] 12VDL_Arid_Plant_GlowShrub_A03.m2
 decor(15754),	-- [DNT] [AUTOGEN] 12VDL_Arid_Plant_VoidFingers_B01.m2
 decor(15755),	-- Voidbound Holding Cell \\ [DNT] [AUTOGEN] 12VD_Void_Structure_Cage01.m2
 decor(15756),	-- Chaotic Void Maw \\ Devouring Host Ritual Portal \\ [DNT] [AUTOGEN] 12VD_Void_Ritual_SummoningPortal01.m2
-decor(15757),	-- [DNT] [AUTOGEN] 12VD_Void_Storage_SmallCrate01.m2
+decor(15757),	-- Opened Domanaar Storage Crate \\ [DNT] [AUTOGEN] 12VD_Void_Storage_SmallCrate01.m2
 decor(15758),	-- Banded Domanaar Storage Crate \\ [DNT] [AUTOGEN] 12VD_Void_Storage_SmallCrate02.m2
 decor(15759),	-- [DNT] [AUTOGEN] 12XP_Generic_BearTotem_Ice01.m2
 decor(15760),	-- [DNT] [AUTOGEN] 12XP_Generic_ElementalFloatingRocks01.m2
@@ -1040,7 +1037,7 @@ decor(15890),	-- Void Elf Weapon Rack \\ [DNT] [AUTOGEN] 12VE_VoidElf_Defense_We
 decor(15891),	-- Open Sturdy Void Elf Trunk \\ Sturdy Void Elf Trunk Open \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate02.m2
 decor(15893),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Crate04.m2
 decor(15894),	-- Cosmic Traveler's Satchel \\ [DNT] [AUTOGEN] 12VE_VoidElf_Storage_Satchel02.m2
-decor(15895),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent01.m2
+decor(15895),	-- Ren'dorei Spired Tent \\ [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent01.m2
 decor(15896),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent02.m2
 12.0.0.64124
 decor(15339),	-- DO NOT USE - new asset coming - Well-Lit Incontinental Couch
@@ -1215,3 +1212,7 @@ decor(19234),	-- Endless Codex of the Voidtouched
 decor(19252),	-- Voidspire Vanquisher's Argent Trophy \\ [DNT] [AUTOGEN] 12PH_Special_Trophy_VoidAlleria01_Silver.M2
 12.0.0.64975
 decor(20172),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
+12.0.1.65337
+decor(20162),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
+decor(20163),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
+decor(20632),	-- [DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2

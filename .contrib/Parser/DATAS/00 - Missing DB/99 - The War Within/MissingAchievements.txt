@@ -76,7 +76,7 @@ ach(61558),	-- Skyriding Glyphs: Gnawing Reach
 ach(61559),	-- Skyriding Glyphs: The Gorging Pit
 ach(61560),	-- Skyriding Glyphs: Shadowguard Point
 ach(61561),	-- Skyriding Glyphs: Obscurion Citadel
-ach(61562),	-- Skyriding Glyphs: Master's Perch
+ach(61562),	-- Skyriding Glyphs: Masters' Perch \\ Skyriding Glyphs: Master's Perch
 ach(61563),	-- Skyriding Glyphs: Ethereum Refinery
 ach(61564),	-- Skyriding Glyphs: Hanaar Outpost
 ach(61565),	-- War Within Dungeon Hero
@@ -449,3 +449,7 @@ ach(62376),	-- Extreme Couponing
 ach(62377),	-- A Fist Full of Coupons
 ach(62378),	-- A Few Coupons More
 ach(62383),	-- Gotta Hunt Them All
+12.0.1.65337
+ach(62385),	-- Staring Into The Void
+ach(62386),	-- Light Up the Night
+ach(62388),	-- Illicit Rain: Five Stars

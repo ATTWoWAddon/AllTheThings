@@ -72,7 +72,7 @@ r(1236482),	-- Gleeful Glamour - Void Elf
 r(1236483),	-- Gleeful Glamour - Vulpera
 r(1236484),	-- Gleeful Glamour - Worgen
 r(1236485),	-- Gleeful Glamour - Zandalari Troll
-r(1236486),	-- Runed Gleaming Copper Rod
+r(1236486),	-- Runed Refulgent Copper Rod \\ Runed Gleaming Copper Rod
 r(1236487),	-- Runed Brilliant Silver Rod
 r(1236488),	-- Runed Dazzling Thorium Rod
 r(1236489),	-- Thalassian Spellweaver's Wand
@@ -185,7 +185,7 @@ r(1236482),	-- Gleeful Glamour - Void Elf
 r(1236483),	-- Gleeful Glamour - Vulpera
 r(1236484),	-- Gleeful Glamour - Worgen
 r(1236485),	-- Gleeful Glamour - Zandalari Troll
-r(1236486),	-- Runed Gleaming Copper Rod
+r(1236486),	-- Runed Refulgent Copper Rod \\ Runed Gleaming Copper Rod
 r(1236487),	-- Runed Brilliant Silver Rod
 r(1236488),	-- Runed Dazzling Thorium Rod
 r(1236489),	-- Thalassian Spellweaver's Wand

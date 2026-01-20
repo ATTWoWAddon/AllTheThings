@@ -618,32 +618,107 @@ root(ROOTS.Zones, {
 						["qg"] = 70316,	-- Taoshi
 						["coord"] = { 51.5, 46.0, ISLE_OF_THUNDER },
 						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
+						["maps"] = { 518 },	-- Thunder King's Citadel
 						["isWeekly"] = true,
 						["_drop"] = { "g" },	-- unnecessary API data
 						["groups"] = {
-							m(518, {	-- Thunder King's Citadel
-								ach(8106, {				-- In the Hall of the Thunder King
-									["groups"] = {
-										crit(22910),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
-										crit(23207),			-- Loot 10 Golden Treasure Chests in one run
-										crit(22981),			-- Slay God-Hulk Gulkan
-										crit(22980),			-- Reach Tenwu of the Red Smoke
-									},
-									-- removed 'classes' since I've found no evidence this is restricted to Rogues...
+							ach(8106, {	-- In the Hall of the Thunder King
+								crit(22910, {	-- Obtain a Handful of Stolen Gems from the Treasure Saurok
+									["provider"] = { "i", 95342 },	-- Handful of Stolen Gems
 								}),
-								i(95497, {	-- Burial Trove Key
-									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
+								crit(23207, {	-- Loot 10 Golden Treasure Chests in one run
+									["_objects"] = { 218772 },	-- Golden Treasure Chest
+								}),
+								crit(22981),	-- Slay God-Hulk Gulkan
+								crit(22980, {	-- Reach Tenwu of the Red Smoke
+									["_npcs"] = { 70321 },	-- Tenwu of the Red Smoke
+								}),
+							}),
+							n(70400, {	-- God-Hulk Gulkan
+								["coord"] = { 53.6, 19.2, 518 },	-- Thunder King's Citadel
+								["groups"] = {
+									i(95497, {	-- Burial Trove Key
+										["description"] = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+									}),
+									i(95491),	-- Tattered Historical Parchments
+								},
+							}),
+							n(70321, {	-- Tenwu of the Red Smoke
+								["description"] = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+								["coord"] = { 52.6, 10.2, 518 },	-- Thunder King's Citadel
+							}),
+							n(TREASURES, {
+								o(218772, {	-- Golden Treasure Chest
+									["coords"] = {
+										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
+										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
+										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
+									},
 									["groups"] = {
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95497),	-- Burial Trove Key
+										i(95491),	-- Tattered Historical Parchments
+									},
+								}),
+								o(218757, {	-- Mogu Treasure Chest
+									["coords"] = {
+										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
+										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
+										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
+									},
+									["groups"] = {
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95497),	-- Burial Trove Key
+										i(95491),	-- Tattered Historical Parchments
+									},
+								}),
+								o(218949, {	-- Lei Shen's Burial Trove
+									["coord"] = { 46.6, 78.2, 518 },	-- Thunder King's Citadel
+									["cost"] = {{ "i", 95497, 1 }},	-- Burial Trove Key
+									["groups"] = {
+										i(95496),	-- Shado-Pan Assault Insignia
+										i(94221),	-- Shan'ze Ritual Stone
+										i(95491),	-- Tattered Historical Parchments
 										i(139571, {	-- Tome of Otherworldly Venoms
-											artifact(891),	-- Fangs of the Devourer [Main Hand]
-											-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+											["timeline"] = { ADDED_7_0_3 },
+											["groups"] = {
+												artifact(891),	-- Fangs of the Devourer [Main Hand]
+												-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+											},
 										}),
+										i(95972),	-- Abandoned Zandalari Arrowlinks
+										i(95976),	-- Abandoned Zandalari Bucklebreaker
+										i(95961),	-- Abandoned Zandalari Firecord
+										i(95975),	-- Abandoned Zandalari Goreplate
+										i(95974),	-- Abandoned Zandalari Greatbelt
+										i(95971),	-- Abandoned Zandalari Moonstrap
+										i(95962),	-- Abandoned Zandalari Shadowgirdle
+										i(95970),	-- Abandoned Zandalari Silentbelt
+										i(95973),	-- Abandoned Zandalari Waterchain
+										i(95979),	-- Columnbreaker Stompers
+										i(95966),	-- Deeproot Treads
+										i(95965),	-- Home-Warding Slippers
+										i(95978),	-- Locksmasher Greaves
+										i(95958),	-- Necklace of the Terra-Cotta Archer
+										i(95964),	-- Necklace of the Terra-Cotta Invoker
+										i(95969),	-- Necklace of the Terra-Cotta Mender
+										i(95980),	-- Necklace of the Terra-Cotta Protector
+										i(95977),	-- Necklace of the Terra-Cotta Vanquisher
+										i(95960),	-- Scalehide Spurs
+										i(95963),	-- Silentflame Sandals
+										i(95959),	-- Spiderweb Tabi
+										i(95967),	-- Spiritbound Boots
+										i(95968),	-- Vaultwalker Sabatons
 									},
 								}),
-								i(95496),	-- Shado-Pan Assault Insignia
-								i(95491, {	-- Tattered Historical Parchments
-									["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.",
-								}),
+							}),
+							n(ZONE_DROPS, {
+								["cr"] = 70414,	-- Skumblade Pillager
+								["groups"] = {
+									i(95497),	-- Burial Trove Key
+									i(95491),	-- Tattered Historical Parchments
+									i(95342),	-- Handful of Stolen Gems
+								},
 							}),
 						},
 					}),

@@ -3040,3 +3040,13 @@
 17516@@@Fungarian Vine Fence
 17886@@@Altar of the Shul'ka
 18800@@@Open Void Elf Bedroll
+12.0.1.65337
+2233@@@Waterlogged Haranir Pigment Bowl
+14467@@@Miniature Replica Dark Portal
+14635@@@Swirling Ritual Pedestal
+15501@@@Lightbloom Moss Mound
+15757@@@Opened Domanaar Storage Crate
+15895@@@Ren'dorei Spired Tent
+20162@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
+20163@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
+20632@@@[DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2

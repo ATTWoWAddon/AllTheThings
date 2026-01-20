@@ -239,6 +239,12 @@
 257025@@@Star Fragment
 3.80.0.64859
 54730@@@Gregarious Grell
+3.80.0.65301
+52697@@@Greedy Kobold
+68267@@@Cinder Kitten
+253791@@@Fortune's Waving Cat
+260685@@@Auspicious Pixiu
+260686@@@Lil' Coalee
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -343,7 +349,6 @@
 51657@@@Bush Chicken
 51677@@@Winterspring Cub
 52367@@@Dragon Kite
-52697@@@Greedy Kobold
 53453@@@Green Balloon
 53454@@@Yellow Balloon
 53455@@@Horde Balloon
@@ -1581,7 +1586,6 @@
 68214@@@Jinyu Construction Site
 68235@@@Genn Greymane
 68263@@@Pandaren Fireworks
-68267@@@Cinder Kitten
 68278@@@Lor'themar Theron
 68287@@@Baine Bloodhoof
 68289@@@Xi'ri
@@ -2053,6 +2057,9 @@
 5.5.3.64530
 259419@@@Xuen
 259429@@@[PH] Charity Construction Dog
+5.5.3.65302
+149596@@@Ethereal Transmorpher
+255051@@@Gilded Fountain
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -13156,7 +13163,6 @@
 144248@@@Head Machinist Sparkflux
 145185@@@Gnomercy 4.U.
 148404@@@Mechagon - Critters
-149596@@@Ethereal Transmorpher
 149752@@@Spell Bunny
 149765@@@Deepsea Pearl
 150087@@@Genn Greymane
@@ -24187,3 +24193,33 @@
 260198@@@Arator
 12.0.1.64914
 253164@@@Guard
+12.0.1.65337
+234064@@@Dreadful Voidwalker
+237502@@@Arator
+239904@@@Void Mistlurker
+240857@@@Darkspawn
+242417@@@Fleeing Citizen
+242582@@@Eitrigg
+250786@@@Darkspawn
+250980@@@Silvermoon Resident
+256107@@@Fidoficus
+260311@@@Blightclaw
+260312@@@Harrower
+260313@@@Siphoid
+260316@@@T'era
+260358@@@Scout Captain Daelin
+260360@@@Silvermoon Guard
+260376@@@Generic Bunny - PRK
+260377@@@Generic Bunny - PRK
+260381@@@Generic Bunny - PRK
+260384@@@Generic Bunny - PRK
+260421@@@Hurried Courier
+260465@@@Bloomrotten Corpse
+260489@@@Bloomrotten Corpse
+260493@@@Har'athir Dweller
+260506@@@Cascade Drifter
+260507@@@Violet Chloroceros
+260899@@@Sootpaw
+260957@@@Vaeli
+260958@@@Vaeli
+260977@@@Flyer

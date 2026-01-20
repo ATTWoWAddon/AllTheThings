@@ -3838,7 +3838,6 @@ i(24235),	-- ium Powder \\ Thorium Powder
 i(24237),	-- en's Journal \\ Galaen's Journal
 i(24239),	-- e of Materials \\ Crate of Materials
 i(24242),	-- Iron Powder \\ Fel Iron Powder
-i(24243),	-- antite Powder \\ Adamantite Powder
 i(24265),	-- Old Spellstrike Hood
 i(24269),	-- y Netherweave Net \\ Heavy Netherweave Net
 i(24277),	-- s for Magister Astalor Bloodsworn \\ Items for Magister Astalor Bloodsworn
@@ -18594,7 +18593,6 @@ i(95072),	-- Weapon -  Sword_1H_MantidArch_C_01 - Green
 i(95073),	-- Weapon -  Sword_1H_MantidArch_C_01 - Red
 i(95094),	-- ath's Book of Incantations \\ Rommath's Book of Incantations
 i(95340),	-- a's Weathered Spellbook \\ Jaina's Weathered Spellbook
-i(95342),	-- ful of Stolen Gems \\ Handful of Stolen Gems
 i(95348),	-- nnical Primal Diamond \\ Tyrannical Primal Diamond
 i(95349),	-- ant Weapon - Glorious Tyranny \\ Enchant Weapon - Glorious Tyranny
 i(95351),	-- t Iron Pins \\ Ghost Iron Pins
@@ -19994,7 +19992,6 @@ i(107642),	-- Skullchief Mask \\ lchief Mask
 i(107647),	-- Goliath Prototype Instruction Manual \\ ath Prototype Instruction Manual
 i(107648),	-- Remote Firing Plunger \\ te Firing Plunger
 i(107656),	-- Kaz's Disturbing Crate \\ s Disturbing Crate
-i(107658),	-- Thunderlord Longspear \\ derlord Longspear
 i(107659),	-- Ice Stone \\ Stone
 i(107663),	-- Ogre Toe Ring \\ Toe Ring
 i(107664),	-- Blizzcon Boss Basher's Bombastic Blasters \\ zcon Boss Basher's Bombastic Blasters
@@ -20464,7 +20461,6 @@ i(112628),	-- Fire Ammonite Egg \\ Ammonite Egg
 i(112629),	-- Blind Lake Sturgeon Egg \\ d Lake Sturgeon Egg
 i(112630),	-- Jawless Skulker Egg \\ ess Skulker Egg
 i(112631),	-- Fat Sleeper Egg \\ Sleeper Egg
-i(112634),	-- Serviceable Gear \\ iceable Gear
 i(112640),	-- Skulltaker Skull \\ ltaker Skull
 i(112655),	-- Book of Alchemical Secrets \\ of Alchemical Secrets
 i(112658),	-- Signal Flare \\ al Flare
@@ -20476,7 +20472,6 @@ i(112684),	-- Damaged Weaponry \\ ged Weaponry
 i(112692),	-- Auchenai Spirit Shard \\ enai Spirit Shard
 i(112693),	-- Frostweed Seed \\ tweed Seed
 i(112694),	-- Fireweed Seed \\ weed Seed
-i(112698),	-- G-14 Buster Rocket \\ Buster Rocket
 i(112738),	-- Crystallized Goren Scale \\ tallized Goren Scale
 i(112848),	-- Contract: Daleera Moonfang \\ ract: Daleera Moonfang
 i(112905),	-- Waters of Utrophis \\ rs of Utrophis
@@ -21036,7 +21031,6 @@ i(115466),	-- Elemental Fragment \\ ental Fragment
 i(115467),	-- Barkskin Tome \\ skin Tome
 i(115470),	-- Lingering Time Bubble \\ ering Time Bubble
 i(115471),	-- NC-17 Sonic "Boom" Box \\ 7 Sonic "Boom" Box
-i(115475),	-- Vial of Untested Serum \\ of Untested Serum
 i(115476),	-- Heart of Kuruk \\ t of Kuruk
 i(115477),	-- Trunk of Autuk \\ k of Autuk
 i(115478),	-- Twig of Loruk \\ of Loruk
@@ -21054,7 +21048,6 @@ i(115525),	-- Scary Ogre Face \\ y Ogre Face
 i(115530),	-- N.U.K.U.L.A.R. Target Painter \\ K.U.L.A.R. Target Painter
 i(115531),	-- Swirling Ashran Potion \\ ling Ashran Potion
 i(115532),	-- Flimsy X-Ray Goggles \\ sy X-Ray Goggles
-i(115533),	-- Vial of Refined Serum \\ of Refined Serum
 i(115534),	-- Penny's Flare Gun \\ y's Flare Gun
 i(115590),	-- Damaged Hexweave \\ ged Hexweave
 i(115591),	-- Woven Fur \\ n Fur
@@ -21294,9 +21287,7 @@ i(118428),	-- Legion Chili \\ on Chili
 i(118468),	-- Fresh Bread \\ h Bread
 i(118469),	-- Black Claw of Sethe \\ k Claw of Sethe
 i(118470),	-- Garn-Tooth Necklace \\ -Tooth Necklace
-i(118471),	-- Salvaged Parts \\ aged Parts
 i(118472),	-- Savage Blood \\ ge Blood
-i(118473),	-- Small Sack of Salvaged Goods \\ l Sack of Salvaged Goods
 i(118544),	-- Test Flask \\ Flask
 i(118545),	-- Tormmok's Sword \\ mok's Sword
 i(118546),	-- Light of Exodus \\ t of Exodus
@@ -21671,8 +21662,6 @@ i(123979),	-- Leysmithing Guide \\ mithing Guide
 i(123980),	-- Lunarwing Egg \\ rwing Egg
 i(124003),	-- Barm's Recipes \\ 's Recipes
 i(124004),	-- Grayheft, Ancient Hammer of the Highmountain Tauren \\ heft, Ancient Hammer of the Highmountain Tauren
-i(124009),	-- Leystone Cuffplate \\ tone Cuffplate
-i(124010),	-- Leystone Fingerguard \\ tone Fingerguard
 i(124023),	-- Leystone Armor Set \\ tone Armor Set
 i(124024),	-- Leystone Armor Stand \\ tone Armor Stand
 i(124036),	-- Juicy Apple \\ y Apple
@@ -21734,9 +21723,6 @@ i(124428),	-- Leystone Heelguard \\ tone Heelguard
 i(124429),	-- Leystone Footguard \\ tone Footguard
 i(124430),	-- Leystone Soleplate \\ tone Soleplate
 i(124433),	-- Handmade Leystone Boots \\ made Leystone Boots
-i(124437),	-- Shal'dorei Silk \\ 'dorei Silk
-i(124438),	-- Unbroken Claw \\ oken Claw
-i(124439),	-- Unbroken Tooth \\ oken Tooth
 i(124452),	-- Brimstone Slag \\ stone Slag
 i(124453),	-- Brimstone-Covered Armguards \\ stone-Covered Armguards
 i(124505),	-- Ashildir's Skull \\ ldir's Skull
@@ -22035,7 +22021,6 @@ i(128771),	-- Amberblight Antler \\ rblight Antler
 i(128773),	-- Bear Sirloin \\ Sirloin
 i(128774),	-- Blackcraw's Tail \\ kcraw's Tail
 i(128775),	-- Mark of Cenarius \\ of Cenarius
-i(128777),	-- Heated Leystone Bar \\ ed Leystone Bar
 i(128778),	-- Mightstone Crystal \\ tstone Crystal
 i(128779),	-- Northshire Rations \\ hshire Rations
 i(128780),	-- Shadowglen Rations \\ owglen Rations
@@ -22835,7 +22820,6 @@ i(136806),	-- Glass of Arcwine \\ s of Arcwine
 i(136810),	-- New Recruit \\ Recruit
 i(136811),	-- Piscine Pigment \\ ine Pigment
 i(136812),	-- Sabelite Sulfate \\ lite Sulfate
-i(136819),	-- Dragur Dust \\ ur Dust
 i(136821),	-- Ley Pigment \\ Pigment
 i(136823),	-- Deucus' Conduit List \\ us' Conduit List
 i(136825),	-- Glyph of the Feral Chameleon \\ h of the Feral Chameleon
@@ -22981,9 +22965,6 @@ i(137594),	-- Pile of Gems \\ of Gems
 i(137595),	-- Viscous Transmutagen \\ ous Transmutagen
 i(137596),	-- Black Transmutagen \\ k Transmutagen
 i(137597),	-- Oily Transmutagen \\ Transmutagen
-i(137609),	-- Wood \\ 
-i(137612),	-- Raw Meat \\ Meat
-i(137613),	-- Hearty Steak \\ ty Steak
 i(137617),	-- Researcher's Notes \\ archer's Notes
 i(137618),	-- Mountain Berries \\ tain Berries
 i(137620),	-- Neqistia Seed Pods \\ stia Seed Pods
@@ -23969,7 +23950,6 @@ i(143846),	-- Glowing Rock \\ ing Rock
 i(143849),	-- Summon Royal Guard \\ on Royal Guard
 i(143852),	-- Lucky Rabbit's Foot \\ y Rabbit's Foot
 i(143853),	-- Unlucky Rabbit \\ cky Rabbit
-i(143856),	-- Bolt of Felsilk \\ of Felsilk
 i(143861),	-- Tower Key \\ r Key
 i(143862),	-- Set of Rusty Keys \\ of Rusty Keys
 i(143868),	-- Accolade of Achievement \\ lade of Achievement
@@ -24768,8 +24748,6 @@ i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset
 i(268368),	-- Fragmented Memento of Epoch Challenges
 11.2.7.64978
 i(252650),	-- Heartglow Listener
-i(259055),	-- Hatred's Wolfpelt Rug
-i(259056),	-- Prime Evil's Chest
 12.0.0.63534
 i(248210),	-- Weathered Twilight Cultist's Sword
 i(248211),	-- Weathered Twilight Cultist's Axe
@@ -24786,8 +24764,11 @@ i(249436),	-- Well-Worn Twilight Cultist's Robe
 i(250755),	-- Pouch of Mystic Grindings
 i(250807),	-- Selune's Stormarion Core
 12.0.0.63724
-i(251100),	-- Item - Mace1H - Str - Weapon
-i(251106),	-- Item - Warglaives - Agi - Weapon
+i(251100),	-- Malfeasance Mallet \\ Item - Mace1H - Str - Weapon
+i(251106),	-- Resolute Runeglaive \\ Item - Warglaives - Agi - Weapon
+12.0.0.64499
+i(266443),	-- Granite Cobblestone Long Path \\ Granite Cobblestone Path
+i(266444),	-- Granite Cobblestone Path \\ Granite Cobblestone Long Path
 12.0.0.64975
 i(262354),	-- Riftstone
 i(262356),	-- Haranir Preserving Agents
@@ -24796,6 +24777,18 @@ i(262590),	-- Rootflame Campfire
 i(262617),	-- Ren'dorei Crafting Framework
 i(262618),	-- Ren'dorei Void Projector
 i(264717),	-- Amani Warding Hex
+i(266234),	-- Saltfang Shoals Large Garden Cluster
+i(266235),	-- Razorwind Cactus Large Garden Cluster
+i(266236),	-- Razorwind Blooms Large Garden Cluster
+i(266237),	-- Runetotem's Bounty Large Garden Cluster
+i(266238),	-- Cragthorn Highlands Large Garden Cluster
+i(266239),	-- Outer Banks Large Garden Cluster
+i(266240),	-- Founder's Point Large Garden Cluster
+i(266241),	-- Brumewood Hollow Large Garden Cluster
+i(266242),	-- Gilded Oaks Large Garden Cluster
+i(266243),	-- Stoneveil Ridge Large Garden Cluster
+i(266244),	-- Granite Cobblestone Path Corner
+i(266245),	-- Granite Cobblestone Path Arc
 12.0.1.64889
 i(257145),	-- Crimson Dragonhawk
 12.0.1.64914
@@ -24855,3 +24848,103 @@ i(267082),	-- Ornate Cosmic Table
 i(267209),	-- Open Void Elf Bedroll
 i(268679),	-- Hearty Impossibly Royal Roast
 i(268680),	-- Hearty Flora Frenzy
+12.0.1.65337
+i(246416),	-- Waterlogged Haranir Pigment Bowl
+i(246458),	-- Grand Aethercharged Crystal
+i(250793),	-- Lush Garden Trellis
+i(250794),	-- Colorful White Noblegarden Egg
+i(250795),	-- Colorful Blue Noblegarden Egg
+i(250796),	-- Colorful Purple Noblegarden Egg
+i(251914),	-- Sumptuous Berry Pie
+i(252419),	-- Lush Garden Fungal Basin
+i(252716),	-- Courtier's Umbral Wristchains
+i(252717),	-- Courtier's Umbral Robe
+i(252718),	-- Courtier's Umbral Girdle
+i(252719),	-- Courtier's Umbral Chain
+i(252720),	-- Courtier's Umbral Anklewraps
+i(252721),	-- Courtier's Azure Wristchains
+i(252722),	-- Courtier's Azure Robe
+i(252723),	-- Courtier's Azure Girdle
+i(252724),	-- Courtier's Azure Chain
+i(252725),	-- Courtier's Azure Anklewraps
+i(252726),	-- Courtier's Viridian Wristchains
+i(252727),	-- Courtier's Viridian Robe
+i(252728),	-- Courtier's Viridian Girdle
+i(252729),	-- Courtier's Viridian Chain
+i(252730),	-- Courtier's Viridian Anklewraps
+i(252731),	-- Courtier's Crimson Wristchains
+i(252732),	-- Courtier's Crimson Robe
+i(252733),	-- Courtier's Crimson Girdle
+i(252734),	-- Courtier's Crimson Chain
+i(252735),	-- Courtier's Crimson Anklewraps
+i(252736),	-- Courtier's Lucent Wristchains
+i(252737),	-- Courtier's Lucent Robe
+i(252738),	-- Courtier's Lucent Girdle
+i(252739),	-- Courtier's Lucent Chain
+i(252740),	-- Courtier's Lucent Anklewraps
+i(253546),	-- Lush Garden Butterfly Sconce
+i(253547),	-- Spring Blossom Wreath
+i(254417),	-- Spring Blossom Hanging Chair
+i(254505),	-- Augur's Umbral Wristchains
+i(254506),	-- Augur's Umbral Robe
+i(254507),	-- Augur's Umbral Girdle
+i(254508),	-- Augur's Umbral Chain
+i(254509),	-- Augur's Umbral Anklewraps
+i(254510),	-- Augur's Azure Wristchains
+i(254511),	-- Augur's Azure Robe
+i(254512),	-- Augur's Azure Girdle
+i(254513),	-- Augur's Azure Chain
+i(254514),	-- Augur's Azure Anklewraps
+i(254515),	-- Augur's Viridian Wristchains
+i(254516),	-- Augur's Viridian Robe
+i(254517),	-- Augur's Viridian Girdle
+i(254518),	-- Augur's Viridian Chain
+i(254519),	-- Augur's Viridian Anklewraps
+i(254520),	-- Augur's Crimson Wristchains
+i(254521),	-- Augur's Crimson Robe
+i(254522),	-- Augur's Crimson Girdle
+i(254523),	-- Augur's Crimson Chain
+i(254524),	-- Augur's Crimson Anklewraps
+i(254525),	-- Augur's Lucent Wristchains
+i(254526),	-- Augur's Lucent Robe
+i(254527),	-- Augur's Lucent Girdle
+i(254528),	-- Augur's Lucent Chain
+i(254529),	-- Augur's Lucent Anklewraps
+i(254530),	-- Augur's Lucent Helmet
+i(254531),	-- Augur's Crimson Helmet
+i(254532),	-- Augur's Viridian Helmet
+i(254533),	-- Augur's Azure Helmet
+i(254534),	-- Augur's Umbral Helmet
+i(254535),	-- Augur's Umbral Shoulderpads
+i(254536),	-- Augur's Azure Shoulderpads
+i(254537),	-- Augur's Viridian Shoulderpads
+i(254538),	-- Augur's Crimson Shoulderpads
+i(254539),	-- Augur's Lucent Shoulderpads
+i(254540),	-- Augur's Umbral Bracers
+i(254541),	-- Augur's Azure Bracers
+i(254542),	-- Augur's Viridian Bracers
+i(254543),	-- Augur's Crimson Bracers
+i(254544),	-- Augur's Lucent Bracers
+i(257144),	-- Umbral Dragonhawk
+i(258294),	-- Lush Garden Gnome-Like Statue
+i(258567),	-- Lush Garden Fungal Chair
+i(258888),	-- Lush Garden Fungal Fountain
+i(259182),	-- Schematic: Giga-Gem Grippers
+i(262610),	-- Swirling Ritual Pedestal
+i(262790),	-- Restful Bronze Bench
+i(264266),	-- Lightbloom Moss Mound
+i(264493),	-- Opened Domanaar Storage Crate
+i(268695),	-- Test Sharing Camera
+i(268717),	-- Pango Plating
+i(268728),	-- Saptor Salve
+i(268730),	-- Void-Touched Egg
+i(268921),	-- Staff of the Great Dark
+i(268954),	-- Entropic Extract
+i(268955),	-- Entropic Extract
+i(269005),	-- Preyseeker's Glinting Coin Pouch
+i(269006),	-- Preyseeker's Gleaming Coin Pouch
+i(269007),	-- Preyseeker's Glittering Coin Pouch
+i(269010),	-- Essence of Lumber
+i(269022),	-- Healing Waters of Ahl'ua
+i(269023),	-- Phytogenic Poison Part
+i(269028),	-- Sootpaw
