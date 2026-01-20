@@ -358,6 +358,12 @@
 1272988@@@Inarius' Charger
 3.80.0.64859
 1280400@@@Titan-Reforged Invincible
+3.80.0.65301
+124659@@@Imperial Quilen
+1283471@@@Golden Ashened Cataclysm
+1284042@@@Thunderhoof Celestial
+1284043@@@Stormgilded Celestial
+1284044@@@Scorching Imperial Quilen
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -421,7 +427,6 @@
 123993@@@Golden Cloud Serpent
 124408@@@Thundering Jade Cloud Serpent
 124550@@@Cataclysmic Gladiator's Twilight Drake
-124659@@@Imperial Quilen
 126507@@@Depleted-Kyparium Rocket
 126508@@@Geosynchronous World Spinner
 127154@@@Onyx Cloud Serpent

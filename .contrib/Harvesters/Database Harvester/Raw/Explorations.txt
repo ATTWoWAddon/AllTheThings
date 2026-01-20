@@ -2551,6 +2551,8 @@
 14483@@@Wintergrasp Boundary
 3.4.0.45102
 14483@@@Uncharted Territory
+3.80.0.65301
+1221@@@Ruins of Eldarath
 4.4.0.53627
 17@@@Northern Barrens
 33@@@Northern Stranglethorn

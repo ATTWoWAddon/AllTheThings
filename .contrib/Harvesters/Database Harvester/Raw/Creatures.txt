@@ -239,6 +239,12 @@
 257025@@@Star Fragment
 3.80.0.64859
 54730@@@Gregarious Grell
+3.80.0.65301
+52697@@@Greedy Kobold
+68267@@@Cinder Kitten
+253791@@@Fortune's Waving Cat
+260685@@@Auspicious Pixiu
+260686@@@Lil' Coalee
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -343,7 +349,6 @@
 51657@@@Bush Chicken
 51677@@@Winterspring Cub
 52367@@@Dragon Kite
-52697@@@Greedy Kobold
 53453@@@Green Balloon
 53454@@@Yellow Balloon
 53455@@@Horde Balloon
@@ -1581,7 +1586,6 @@
 68214@@@Jinyu Construction Site
 68235@@@Genn Greymane
 68263@@@Pandaren Fireworks
-68267@@@Cinder Kitten
 68278@@@Lor'themar Theron
 68287@@@Baine Bloodhoof
 68289@@@Xi'ri
