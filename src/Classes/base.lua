@@ -356,6 +356,18 @@ or function(fields, className)
 end
 app.BaseClass = CreateClassMeta(nil, "BaseClass");
 
+-- Extend the existing classes with a new field function handler.
+app.ExtendBaseClassHandler = function(field, handler)
+	if not DefaultFields[field] then
+		DefaultFields[field] = handler;
+		for key,class in pairs(classDefinitions) do
+			if rawget(class, field) == nil then
+				class[field] = handler;
+			end
+		end
+	end
+end
+
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)
