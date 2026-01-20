@@ -387,63 +387,58 @@ app:CreateWindow("Auctions", {
 					end,
 				}),
 				app.CreateRawText(L.ACHIEVEMENT, {	-- Achievements
-					Meta = "AchievementCriteria",
+					Metas = { "Achievement", "AchievementCriteria" },
 					icon = app.asset("Category_Achievements"),
 					description = "All items that could be used for an achievement.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Appearances", {	-- Appearances
-					Meta = "ItemWithAppearance",
+					Metas = { "ItemWithAppearance", "ItemAsTransmog", "SimpleItemAsTransmog" },
 					icon = 135349,
 					description = "All items that could be learned for transmog are listed here.",
 					SortPriority = 2,
 				}),
 				app.CreateFilter(101, {	-- Battle Pets
-					Meta = "BattlePetWithItem",
+					Metas = { "BattlePetWithItem", "Species" },
 					description = "All battle pets that you have not collected yet are displayed here.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText(L.FACTIONS, {	-- Factions
-					Meta = "ItemWithFaction",
+					Metas = { "ItemWithFaction" },
 					icon = app.asset("Category_Factions"),
 					description = "All items that can be used to increase reputation for a faction that you have not collected yet are displayed here.",
 					SortPriority = 2,
 				}),
-				app.CreateFilter(103, {	-- Illusions
-					Meta = "IllusionWithItem",
-					description = "All illusions that you have not collected yet are displayed here.",
-					SortPriority = 2,
-				}),
 				app.CreateFilter(100, {	-- Mounts
-					Meta = "MountWithItem",
+					Metas = { "MountWithItem" },
 					description = "All mounts that you have not collected yet are displayed here.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Materials", {	-- Materials
-					Meta = "Material",
+					Metas = { "Material" },
 					icon = 132856,
 					description = "All items that can be used to craft an item using a profession on your account.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Miscellaneous", {	-- Miscellaneous
-					Meta = "Item",
+					Metas = { "Item", "SimpleItem" },
 					icon = 132595,
 					description = "All items that could be used for some non-transmog related purpose such as for an achievement are displayed here.",
 					SortPriority = 2,
 				}),
 				app.CreateFilter(200, {	-- Recipes
-					Meta = "RecipeWithItem",
+					Metas = { "RecipeWithItem" },
 					description = "All recipes that you have not collected yet are displayed here.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Toys", {	-- Toys
-					Meta = "Toy",
+					Metas = { "Toy" },
 					icon = 133015,
 					description = "All items that are classified as Toys either by ATT for the future or by the game presently.",
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Legacy", {	-- Legacy
-					Meta = "legacyID",
+					Metas = { "legacyID" },
 					icon = 135331,
 					description = "All items that were removed from game that you could probably still collect for a... nominal fee.\n\nAlso if you have found something here, feel free to post about it on the ATT Discord's #classic-general channel! I'm sure some folks might want to find these.",
 					SortPriority = 100000,
@@ -466,8 +461,10 @@ app:CreateWindow("Auctions", {
 				if #g < 1 then
 					for i,option in ipairs(data.options) do
 						tinsert(g, option);
-						if option.Meta then
-							data.metas[option.Meta] = option;
+						if option.Metas then
+							for j,meta in ipairs(option.Metas) do
+								data.metas[meta] = option;
+							end
 						end
 					end
 
@@ -495,12 +492,13 @@ app:CreateWindow("Auctions", {
 									key = "sourceID";
 								end
 								value = searchResult[key];
-								if searchResult.u and (searchResult.u == 1 or searchResult.u == 2) then
-									key = "legacyID";
-									value = value .. "_" .. searchResult.u;
-								end
 								
 								local __type = searchResult.__type or searchResult.key;
+								if searchResult.u and (searchResult.u == 1 or searchResult.u == 2) then
+									value = value .. "_" .. searchResult.u;
+									key = "legacyID";
+									__type = key;
+								end
 								keys = searchResultsByKey[__type];
 
 								-- Make sure that the key type is represented.
@@ -583,7 +581,7 @@ app:CreateWindow("Auctions", {
 							if not subdata then
 								subdata = app.CreateRawText(key, {
 									text = key,
-									Meta = key,
+									Metas = { key },
 									description = "Container for '" .. key .. "' object types.",
 									SortPriority = 2,
 								});
@@ -604,9 +602,16 @@ app:CreateWindow("Auctions", {
 				end
 			end,
 		});
+		if app.GameBuildVersion >= 70000 then
+			app.CreateFilter(103, {	-- Illusions
+				Metas = { "IllusionWithItem" },
+				description = "All illusions that you have not collected yet are displayed here.",
+				SortPriority = 2,
+			});
+		end
 		if app.GameBuildVersion > 110000 then
 			tinsert(self.data.options, app.CreateRawText(L.DECOR, {	-- Decor
-				Meta = "Decor",
+				Metas = { "Decor" },
 				icon = app.asset("Category_Housing"),
 				description = "All decor that you have not collected yet are displayed here.",
 				SortPriority = 2,
