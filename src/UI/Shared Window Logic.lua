@@ -94,6 +94,35 @@ local function GetIndicatorIcon(group)
 end
 app.GetIndicatorIcon = GetIndicatorIcon
 
+-- Generates a summary string containing race, class, and progress text
+local __Summary = {}
+local function BuildDataSummary(data)
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	app.wipearray(__Summary)
+	local requireSkill = data.requireSkill
+	if requireSkill then
+		local profIcon = app.WOWAPI.GetTradeSkillTexture(requireSkill) or app.WOWAPI.GetSpellIcon(requireSkill)
+		if profIcon then
+			__Summary[#__Summary + 1] = "|T"
+			__Summary[#__Summary + 1] = profIcon
+			__Summary[#__Summary + 1] = ":0|t "
+		end
+	end
+	-- TODO: races
+	local specs = data.specs;
+	if specs and #specs > 0 then
+		__Summary[#__Summary + 1] = app.GetSpecsString(specs, false, false)
+	else
+		local classes = data.c
+		if classes and #classes > 0 then
+			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
+		end
+	end
+	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or ((data.g and not data.expanded and #data.g > 0 and "+++") or "---");
+	return app.TableConcat(__Summary, nil, "", "")
+end
+app.ExtendBaseClassHandler("summaryText", BuildDataSummary);
+
 if not C_ContentTracking then
 	app.AddContentTracking = function(group)
 		app.print("Content Tracking is not supported in this game version!")

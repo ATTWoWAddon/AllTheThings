@@ -36,7 +36,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 		GameTooltip:SetATTReferenceForTexture(reference);
 
 		local left, right = DESCRIPTION_SEPARATOR:split(reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
+		GameTooltip:AddDoubleLine(reference.text, reference.summaryText, 1, 1, 1);
 		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 
 		local prime = app:GetWindow("Prime");

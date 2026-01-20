@@ -1180,7 +1180,7 @@ function app:GetDataCache()
 		title = function(t)
 			return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage
 		end,
-		progressText = function(t)
+		summaryText = function(t)
 			if not rawget(t,"TLUG") and app.CurrentCharacter then
 				local primeData = app.CurrentCharacter.PrimeData
 				if primeData then

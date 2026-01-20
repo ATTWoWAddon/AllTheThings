@@ -1502,7 +1502,7 @@ function app:GetDataCache()
 			__index = function(t, key)
 				if key == "title" then
 					return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage;
-				elseif key == "progressText" then
+				elseif key == "summaryText" then
 					if t.total < 1 then
 						local primeData = app.CurrentCharacter.PrimeData;
 						if primeData then

@@ -72,12 +72,6 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	["total"] = function(t)
 		return t.dynamicWindowData.total;
 	end,
-	["summary"] = function(t)
-		local total = t.total;
-		if not total or total < 1 then
-			return "[Click to Cache]";
-		end
-	end,
 	["OnClick"] = function(t)
 		return onClickForDynamicCategory;
 	end,

@@ -93,11 +93,11 @@ local function AlertForVignetteInfo(info)
 	elseif not SettingsCache.IncludeCompleted and (not group.visible or app.IsComplete(group)) then
 		return false
 	else
-		local progressText = group.progressText
+		local summaryText = group.summaryText
 			or GetProgressColorText(group.progress or 0, group.total or 0)
 			or (group.collectible and app.GetCollectionIcon(group.collected))
 			or (group.trackable and app.GetCompletionIcon(group.saved))
-		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText
+		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. summaryText
 	end
 	-- app.PrintDebug("Vignette.Alert",link)
 

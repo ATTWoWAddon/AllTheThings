@@ -286,39 +286,13 @@ end
 app.UpdateGroups = UpdateGroups;
 
 
-local __Summary = {}
-local function BuildDataSummary(data)
-	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	app.wipearray(__Summary)
-	local requireSkill = data.requireSkill
-	if requireSkill then
-		local profIcon = app.WOWAPI.GetTradeSkillTexture(requireSkill) or app.WOWAPI.GetSpellIcon(requireSkill)
-		if profIcon then
-			__Summary[#__Summary + 1] = "|T"
-			__Summary[#__Summary + 1] = profIcon
-			__Summary[#__Summary + 1] = ":0|t "
-		end
-	end
-	-- TODO: races
-	local specs = data.specs;
-	if specs and #specs > 0 then
-		__Summary[#__Summary + 1] = app.GetSpecsString(specs, false, false)
-	else
-		local classes = data.c
-		if classes and #classes > 0 then
-			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
-		end
-	end
-	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or "---"
-	return app.TableConcat(__Summary, nil, "", "")
-end
 
 
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
+		row.__ref = row.ref;
 		row.ref = data;
-		row.summaryText = nil;
 		if not data then
 			row.Background:SetAlpha(0);
 			row.Background:Hide();
@@ -368,32 +342,13 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Update the Summary Text (this will be the thing that updates the most)
-	local summary = data.summary or BuildDataSummary(data);
-	local oldSummary = row.summaryText;
-	if oldSummary then
-		if summary then
-			if oldSummary ~= summary then
-				row.Summary:SetText(summary);
-				row.summaryText = summary;
-				self.smudged = true;	-- Mark this as smudged, so that it knowns to Update the rows completely. (this means that something changed its state)
-			end
-		else
-			row.Summary:SetText((data.g and not data.expanded and #data.g > 0 and "+++") or "---");
-			row.summaryText = nil;
-			self.smudged = true;	-- Mark this as smudged, so that it knowns to Update the rows completely. (this means that something changed its state)
-		end
-	else
-		if summary then
-			row.Summary:SetText(summary);
-			row.summaryText = summary;
-		else
-			row.Summary:SetText((data.g and not data.expanded and #data.g > 0 and "+++") or "---");
-		end
+	local summaryText = data.summaryText or "";
+	local oldSummary = row.summaryText or "";
+	if oldSummary ~= summaryText then
+		row.Summary:SetText(summaryText);
+		row.summaryText = summaryText;
 	end
-
-	-- Determine the Indicator Texture
-	local indicatorTexture = app.GetIndicatorIcon(data);
-
+	
 	-- Check to see what the text is currently
 	local text = data.text;
 	if text ~= row.text then
@@ -411,6 +366,7 @@ local function SetRowData(self, row, data)
 	end
 
 	-- If the data has a texture, assign it.
+	local indicatorTexture = app.GetIndicatorIcon(data);
 	if SetPortraitIcon(row.Texture, data) and row.Texture:GetTextureFilePath() then
 		row.Texture:Show();
 		row.Label:SetPoint("LEFT", row.Texture, "RIGHT", 2, 0);
@@ -467,25 +423,37 @@ local function RedrawVisibleRowData(self)
 	end
 end
 local function UpdateVisibleRowData(self)
+	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
-	if not self.rowData then return; end
-	if self:GetHeight() > 48 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
+	local rowData = self.rowData;
+	if not rowData then return; end
+	local height = self:GetHeight();
+	if height > 80 then
+		self.ScrollBar:Show();
+		self.CloseButton:Show();
+	elseif height > 40 then
+		self.ScrollBar:Hide();
+		self.CloseButton:Show();
+	else
+		self.ScrollBar:Hide();
+		self.CloseButton:Hide();
+	end
 
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local totalRowCount = #self.rowData;
+	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Ensure that the first row doesn't move out of position.
 		local container = self.Container;
-		local row = container.rows[1];
-		SetRowData(self, row, self.rowData[1]);
+		local rows = container.rows;
+		local row = rows[1];
+		SetRowData(self, row, rowData[1]);
 
 		-- Fill the remaining rows up to the (visible) row count.
 		local current, rowCount, containerHeight, totalHeight =
 			math.max(1, math.min(self.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
-
 		for i=2,totalRowCount do
-			row = container.rows[i];
-			SetRowData(self, row, self.rowData[current]);
+			row = rows[i];
+			SetRowData(self, row, rowData[current]);
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > containerHeight then
 				break;
@@ -496,8 +464,8 @@ local function UpdateVisibleRowData(self)
 		end
 
 		-- Hide the extra rows if any exist
-		for i=math.max(2, rowCount + 1),#container.rows do
-			local row = container.rows[i];
+		for i=math.max(2, rowCount + 1),#rows do
+			local row = rows[i];
 			if row.ref then
 				SetRowData(self, row, nil);
 			else
@@ -505,12 +473,6 @@ local function UpdateVisibleRowData(self)
 			end
 		end
 		self:SetMinMaxValues(rowCount, totalRowCount + 1);
-
-		-- The data is smudged, meaning it needs to be Updated.
-		if self.smudged then
-			self.smudged = nil;
-			self:Update(true);
-		end
 
 		-- If the rows need to be processed again, do so next update.
 		if self.processingLinks then
@@ -1061,6 +1023,7 @@ local function CreateRow(container, rows, i)
 	row.Label:SetPoint("BOTTOM");
 	row.Label:SetPoint("TOP");
 	row:SetHeight(select(2, row.Label:GetFont()) + 4);
+	local rowHeight = row:GetHeight();
 
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -1071,32 +1034,30 @@ local function CreateRow(container, rows, i)
 
 	-- Background is used by the Map Highlight functionality.
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
+	row.Background:SetAllPoints();
 	row.Background:SetPoint("LEFT", 4, 0);
-	row.Background:SetPoint("BOTTOM");
-	row.Background:SetPoint("RIGHT");
-	row.Background:SetPoint("TOP");
 	row.Background:SetTexture(136810);
 
 	-- Indicator is used by the Instance Saves functionality.
 	row.Indicator = row:CreateTexture(nil, "ARTWORK");
 	row.Indicator:SetPoint("BOTTOM");
 	row.Indicator:SetPoint("TOP");
-	row.Indicator:SetWidth(row:GetHeight());
+	row.Indicator:SetWidth(rowHeight);
 
 	-- Texture is the icon.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("BOTTOM");
 	row.Texture:SetPoint("TOP");
-	row.Texture:SetWidth(row:GetHeight());
+	row.Texture:SetWidth(rowHeight);
 	row.Texture.Background = row:CreateTexture(nil, "BACKGROUND");
 	row.Texture.Background:SetPoint("BOTTOM");
 	row.Texture.Background:SetPoint("TOP");
-	row.Texture.Background:SetWidth(row:GetHeight());
+	row.Texture.Background:SetWidth(rowHeight);
 	row.Texture.Border = row:CreateTexture(nil, "BORDER");
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
-	row.Texture.Border:SetWidth(row:GetHeight());
+	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Clear the Row Data Initially
 	SetRowData(container, row, nil);

@@ -1272,7 +1272,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 		end
 		return text;
 	end,
-	["summary"] = function(t)
+	["summaryText"] = function(t)
 		return t.roll;
 	end,
 	["OnClick"] = function(t)

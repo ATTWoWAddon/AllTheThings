@@ -343,18 +343,6 @@ local function UpdateWindow(self, force, got)
 	end
 	-- app.PrintDebugPrior("Update:None")
 end
-local function ClearRowData(self)
-	self.__ref = self.ref
-	self.ref = nil;
-	self.Background:Hide();
-	self.Texture:Hide();
-	self.Texture.Background:Hide();
-	self.Texture.Border:Hide();
-	self.Indicator:Hide();
-	self.Summary:Hide();
-	self.Label:Hide();
-	self:SetHighlightLocked(false)
-end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
@@ -457,15 +445,17 @@ local function GetProgressTextForRow(data, forceTracking)
 		__Text[#__Text + 1] = GetProgressColorText(data.progress or 0, data.total)
 	end
 	-- Non-collectible/total Container (only contains visible, non-collectibles...)
-	local g = data.g;
-	if not stateIcon and not isContainer and g and #g > 0 then
-		local headerText;
-		if data.expanded then
-			headerText = "---";
-		else
-			headerText = "+++";
+	if not stateIcon and not isContainer then
+		local g = data.g;
+		if g and #g > 0 then
+			local headerText;
+			if data.expanded then
+				headerText = "---";
+			else
+				headerText = "+++";
+			end
+			__Text[#__Text + 1] = headerText
 		end
-		__Text[#__Text + 1] = headerText
 	end
 
 	-- Trackable (Only if no other text available)
@@ -535,105 +525,132 @@ local function GetProgressTextForTooltip(data)
 end
 app.GetProgressTextForTooltip = GetProgressTextForTooltip
 
-local __Summary = {}
-local function BuildDataSummary(data)
-	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
-	app.wipearray(__Summary)
-	local requireSkill = data.requireSkill
-	if requireSkill then
-		local profIcon = app.WOWAPI.GetTradeSkillTexture(requireSkill) or app.WOWAPI.GetSpellIcon(requireSkill)
-		if profIcon then
-			__Summary[#__Summary + 1] = "|T"
-			__Summary[#__Summary + 1] = profIcon
-			__Summary[#__Summary + 1] = ":0|t "
-		end
-	end
-	-- TODO: races
-	local specs = data.specs;
-	if specs and #specs > 0 then
-		__Summary[#__Summary + 1] = app.GetSpecsString(specs, false, false)
-	else
-		local classes = data.c
-		if classes and #classes > 0 then
-			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
-		end
-	end
-	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or "---"
-	return app.TableConcat(__Summary, nil, "", "")
-end
-local function SetRowData(self, row, data)
-	ClearRowData(row);
-	if data then
-		-- temp debug check to ensure we aren't assigning any non-objects into windows
-		-- if not data.key then
-		-- 	app.PrintDebug(app.Modules.Color.Colorize("Non-Object "..(data.text or "?").." assigned to Row "..self.Suffix,app.Colors.LockedWarning))
-		-- end
-		local text = data.text;
-		if IsRetrieving(text) then
-			text = RETRIEVING_DATA;
 
-			local AsyncRefreshFunc = data.AsyncRefreshFunc
-			if AsyncRefreshFunc then
-				AsyncRefreshFunc(data)
+local function SetRowData(self, row, data)
+	if row.ref ~= data then
+		-- New data, update everything
+		row.__ref = row.ref;
+		row.ref = data;
+		if not data then
+			row.Background:SetAlpha(0);
+			row.Background:Hide();
+			row.Texture:Hide();
+			row.Texture.Background:Hide();
+			row.Texture.Border:Hide();
+			row.Indicator:Hide();
+			row.Summary:Hide();
+			row.Label:Hide();
+			row:Hide();
+			return;
+		end
+		
+		if not data.__type or getmetatable(data) == nil then
+			print(data.text, " does not have a metatable! This is NOT allowed!");
+		end
+
+		local font = data.font or "GameFontNormal";
+		if font ~= row.lastFont then
+			row.Label:SetFontObject(font);
+			row.Summary:SetFontObject(font);
+			row.lastFont = font;
+		end
+
+		-- Every valid row has a summary and label
+		row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
+		row.Summary:Show();
+		row.Label:Show();
+		row:Show();
+
+		-- Calculate the indent
+		local indent = ((CalculateRowIndent(data) or 0) + 1) * 8;
+		row.Texture.Background:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.Texture.Border:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.Texture:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.indent = indent;
+
+		-- Calculate the back color
+		local back = CalculateRowBack(data);
+		if back then
+			row.back = back;
+			if back > 0 then
+				row.Background:SetAlpha(back);
+				row.Background:Show();
 			else
-				-- app.PrintDebug("No Async Refresh Func for Type!",data.__type)
-				Callback(self.Update, self)
+				row.Background:Hide();
 			end
 		end
-		local leftmost, relative, rowPad = row, "LEFT", 8;
-		local x = CalculateRowIndent(data) * rowPad + rowPad;
-		row.indent = x;
-		local back = CalculateRowBack(data);
-		row.ref = data;
-		if back then
-			row.Background:SetAlpha(back or 0.2);
-			row.Background:Show();
-		end
-		local rowTexture = row.Texture;
-		-- this will always be true due to question mark fallback
-		if SetPortraitIcon(rowTexture, data) then
-			rowTexture.Background:SetPoint("TOPLEFT", rowTexture);
-			rowTexture.Border:SetPoint("TOPLEFT", rowTexture);
-			rowTexture:SetPoint("LEFT", leftmost, relative, x, 0);
-			rowTexture:Show();
-			leftmost = rowTexture;
-			relative = "RIGHT";
-			x = rowPad / 4;
-		end
-		-- indicator is always attached to the Texture
-		local texture = app.GetIndicatorIcon(data);
-		if texture then
-			local rowIndicator = row.Indicator;
-			rowIndicator:SetTexture(texture);
-			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
-			rowIndicator:Show();
-		end
-		local rowSummary = row.Summary;
-		local rowLabel = row.Label;
-		rowSummary:SetText(BuildDataSummary(data));
-		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
-		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
-		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
-		-- rowSummary:SetPoint("RIGHT", iconAdjust, 0);
-		rowSummary:Show();
-		rowLabel:SetText(app.TryColorizeName(data, text));
-		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
-		rowLabel:SetPoint("RIGHT");
-		rowLabel:Show();
-		rowLabel:SetPoint("RIGHT", rowSummary, "LEFT");
-		if data.font then
-			rowLabel:SetFontObject(data.font);
-			rowSummary:SetFontObject(data.font);
+	elseif not data then
+		return;	-- Already cleared
+	end
+	
+	-- Update the Summary Text (this will be the thing that updates the most)
+	local summaryText = data.summaryText or "";
+	local oldSummary = row.summaryText or "";
+	if oldSummary ~= summaryText then
+		row.Summary:SetText(summaryText);
+		row.summaryText = summaryText;
+	end
+	
+	-- Check to see what the text is currently
+	local text = data.text;
+	if IsRetrieving(text) then
+		text = RETRIEVING_DATA;
+
+		local AsyncRefreshFunc = data.AsyncRefreshFunc
+		if AsyncRefreshFunc then
+			AsyncRefreshFunc(data)
 		else
-			rowLabel:SetFontObject("GameFontNormal");
-			rowSummary:SetFontObject("GameFontNormal");
+			-- app.PrintDebug("No Async Refresh Func for Type!",data.__type)
+			Callback(self.Update, self)
 		end
-		if self.HightlightDatas[data] then
-			row:SetHighlightLocked(true)
-		end
-		row:Show();
+	end
+	local leftmost, relative, rowPad = row, "LEFT", 8;
+	local x = ((CalculateRowIndent(data) or 0) + 1) * 8;
+	row.indent = x;
+	local back = CalculateRowBack(data);
+	if back then
+		row.Background:SetAlpha(back or 0.2);
+		row.Background:Show();
 	else
-		row:Hide();
+		row.Background:Hide();
+	end
+	-- this will always be true due to question mark fallback
+	local rowTexture = row.Texture;
+	if SetPortraitIcon(rowTexture, data) then
+		rowTexture.Background:SetPoint("TOPLEFT", rowTexture);
+		rowTexture.Border:SetPoint("TOPLEFT", rowTexture);
+		rowTexture:SetPoint("LEFT", leftmost, relative, x, 0);
+		rowTexture:Show();
+		leftmost = rowTexture;
+		relative = "RIGHT";
+		x = 2;
+	end
+	-- indicator is always attached to the Texture
+	local rowIndicator = row.Indicator;
+	local texture = app.GetIndicatorIcon(data);
+	if texture then
+		rowIndicator:SetTexture(texture);
+		rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
+		rowIndicator:Show();
+	else
+		rowIndicator:Hide();
+	end
+	
+	local rowLabel = row.Label;
+	rowLabel:SetText(app.TryColorizeName(data, text));
+	rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
+	rowLabel:SetPoint("RIGHT");
+	rowLabel:Show();
+	rowLabel:SetPoint("RIGHT", row.Summary, "LEFT");
+	if data.font then
+		rowLabel:SetFontObject(data.font);
+		row.Summary:SetFontObject(data.font);
+	else
+		rowLabel:SetFontObject("GameFontNormal");
+		row.Summary:SetFontObject("GameFontNormal");
+	end
+	if self.HightlightDatas[data] then
+		row:SetHighlightLocked(true)
 	end
 end
 local function AdjustRowIndent(row, indentAdjust)
@@ -644,20 +661,13 @@ local function AdjustRowIndent(row, indentAdjust)
 	-- app.PrintDebug("row texture at",x,indentAdjust,offset)
 	row.Texture:SetPoint("LEFT", row, "LEFT", offset, 0);
 end
-local function ClearRowData(self)
-	self.__ref = self.ref
-	self.ref = nil;
-	self.Background:Hide();
-	self.Texture:Hide();
-	self.Texture.Background:Hide();
-	self.Texture.Border:Hide();
-	self.Indicator:Hide();
-	self.Summary:Hide();
-	self.Label:Hide();
-end
+
 local function Refresh(self)
 	if not self:IsVisible() then return; end
 	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
+	-- If there is no raw data, then return immediately.
+	local rowData = self.rowData;
+	if not rowData then return; end
 	local height = self:GetHeight();
 	if height > 80 then
 		self.ScrollBar:Show();
@@ -669,27 +679,10 @@ local function Refresh(self)
 		self.ScrollBar:Hide();
 		self.CloseButton:Hide();
 	end
-
-	-- If there is no raw data, then return immediately.
-	local rowData = self.rowData;
-	if not rowData then return; end
-
+	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
 	if totalRowCount <= 0 then return; end
-
-	-- Fill the remaining rows up to the (visible) row count.
-	local container, windowPad, minIndent = self.Container, 0, nil;
-	local rows = container.rows
-	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount)) + 1
-
-	-- Ensure that the first row doesn't move out of position.
-	local row = rows[1]
-	SetRowData(self, row, rowData[1]);
-
-	local containerHeight = container:GetHeight();
-	local rowHeight = row:GetHeight()
-	local rowCount = math.floor(containerHeight / rowHeight)
 
 	-- Should this window attempt to scroll to specific data?
 	if self.ScrollInfo then
@@ -710,15 +703,31 @@ local function Refresh(self)
 		end
 	end
 
-	for i=2,rowCount do
+	-- Ensure that the first row doesn't move out of position.
+	local container, windowPad, minIndent = self.Container, 0, nil;
+	local rows = container.rows;
+	local row = rows[1];
+	SetRowData(self, row, rowData[1]);
+	
+	-- Fill the remaining rows up to the (visible) row count.
+	local current, rowCount, containerHeight, totalHeight
+		= math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
+	for i=2,totalRowCount do
 		row = rows[i]
 		SetRowData(self, row, rowData[current]);
-		-- track the minimum indentation within the set of rows so they can be adjusted later
-		if row.indent and (not minIndent or row.indent < minIndent) then
-			minIndent = row.indent;
-			-- print("new minIndent",minIndent)
+		totalHeight = totalHeight + row:GetHeight();
+		if totalHeight > containerHeight then
+			break;
+		else
+			current = current + 1;
+			rowCount = rowCount + 1;
+			
+			-- track the minimum indentation within the set of rows so they can be adjusted later
+			if row.indent and (not minIndent or row.indent < minIndent) then
+				minIndent = row.indent;
+				-- print("new minIndent",minIndent)
+			end
 		end
-		current = current + 1;
 	end
 
 	-- Readjust the indent of visible rows
@@ -731,29 +740,24 @@ local function Refresh(self)
 	else
 		windowPad = windowPad + 4;
 	end
-	-- local headerAdjust = 0;
-	-- if startIndent ~= 8 then
-	-- 	-- header only adjust
-	-- 	headerAdjust = startIndent - 8;
-	-- 	print("header adjust",headerAdjust)
-	-- 	row = rows[1];
-	-- 	AdjustRowIndent(row, headerAdjust);
-	-- end
+	
 	-- adjust remaining rows to align on the left
 	if minIndent and minIndent ~= windowPad then
 		-- print("minIndent",minIndent,windowPad)
 		local adjust = minIndent - windowPad;
 		for i=2,rowCount do
-			row = rows[i];
-			AdjustRowIndent(row, adjust);
+			AdjustRowIndent(rows[i], adjust);
 		end
 	end
 
 	-- Hide the extra rows if any exist
 	for i=math.max(2, rowCount + 1),#rows do
-		row = rows[i];
-		ClearRowData(row);
-		row:Hide();
+		local row = rows[i];
+		if row.ref then
+			SetRowData(self, row, nil);
+		else
+			break;
+		end
 	end
 
 	-- Every possible row is visible
@@ -926,8 +930,8 @@ end
 local function CreateRow(container, rows, i)
 	---@class ATTRowButtonClass: Button
 	local row = CreateFrame("Button", nil, container);
-	row.index = i - 1
-	rows[i] = row
+	row.index = i - 1;
+	rows[i] = row;
 	if i == 1 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
@@ -953,11 +957,11 @@ local function CreateRow(container, rows, i)
 	row.Label:SetPoint("BOTTOM");
 	row.Label:SetPoint("TOP");
 	row:SetHeight(select(2, row.Label:GetFont()) + 4);
-	local rowHeight = row:GetHeight()
+	local rowHeight = row:GetHeight();
 
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-	row.Summary:SetJustifyH("RIGHT");
+	row.Summary:SetJustifyH("CENTER");
 	row.Summary:SetPoint("BOTTOM");
 	row.Summary:SetPoint("RIGHT");
 	row.Summary:SetPoint("TOP");
@@ -990,7 +994,7 @@ local function CreateRow(container, rows, i)
 	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Clear the Row Data Initially
-	ClearRowData(row);
+	SetRowData(container, row, nil);
 	return row;
 end
 
