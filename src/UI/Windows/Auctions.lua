@@ -471,7 +471,7 @@ app:CreateWindow("Auctions", {
 				local g = data.g;
 				if #g < 1 then
 					for i,option in ipairs(data.options) do
-						if not option.g then option.g = {}; end
+						option.g = {};
 						tinsert(g, option);
 						if option.Metas then
 							for j,meta in ipairs(option.Metas) do
