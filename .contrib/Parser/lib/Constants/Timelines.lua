@@ -660,16 +660,16 @@ REMOVED_LEGION_REMIX_END = "removed 11.2.7.65299";		-- Legion Remix ends on Janu
 --------------
 -- MIDNIGHT --
 --------------
-CREATED_12_0_0 = "created 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
-ADDED_12_0_0 = "added 12.0.0";							-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
-REMOVED_12_0_0 = "removed 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+CREATED_12_0_0 = "created 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+ADDED_12_0_0 = "added 12.0.0.65459";					-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+REMOVED_12_0_0 = "removed 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
 REMOVED_MID_LAUNCH = "removed 12.0.1";					-- Midnight 12.0.1/Pre-Patch ends on TODO
-CREATED_12_0_0_LAUNCH = "created 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
-ADDED_12_0_0_LAUNCH = "added 12.0.0";					-- Midnight 12.0.0 Launch on March 2nd, 2026
-REMOVED_12_0_0_LAUNCH = "removed 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
-CREATED_12_0_0_SEASONSTART = "created 12.0.0";			-- Midnight 12 Seasonstart
-ADDED_12_0_0_SEASONSTART = "added 12.0.0";				-- Midnight 12.Seasonstart
-REMOVED_12_0_0_SEASONSTART = "removed 12.0.0";			-- Midnight 12.Seasonstart
+CREATED_12_0_0_LAUNCH = "created 12.0.1";				-- Midnight 12.0.1 Launch on March 2nd, 2026
+ADDED_12_0_0_LAUNCH = "added 12.0.1";					-- Midnight 12.0.1 Launch on March 2nd, 2026
+REMOVED_12_0_0_LAUNCH = "removed 12.0.1";				-- Midnight 12.0.1 Launch on March 2nd, 2026
+CREATED_12_0_0_SEASONSTART = "created 12.0.1";			-- Midnight 12 Seasonstart
+ADDED_12_0_0_SEASONSTART = "added 12.0.1";				-- Midnight 12.Seasonstart
+REMOVED_12_0_0_SEASONSTART = "removed 12.0.1";			-- Midnight 12.Seasonstart
 CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5
 ADDED_12_0_5 = "added 12.0.5";							-- Midnight 12.0.5
 REMOVED_12_0_5 = "removed 12.0.5";						-- Midnight 12.0.5
