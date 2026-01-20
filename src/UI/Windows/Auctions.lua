@@ -471,6 +471,7 @@ app:CreateWindow("Auctions", {
 				local g = data.g;
 				if #g < 1 then
 					for i,option in ipairs(data.options) do
+						if not option.g then option.g = {}; end
 						tinsert(g, option);
 						if option.Metas then
 							for j,meta in ipairs(option.Metas) do
@@ -494,25 +495,22 @@ app:CreateWindow("Auctions", {
 								app.Sort(searchResults, app.SortDefaults.Accessibility);
 								searchResult = searchResults[1];
 								key = searchResult.key;
-								if key == "npcID" then
-									if searchResult.itemID then
-										key = "itemID";
-									end
+								local __type = searchResult.__type or key;
+								if key == "npcID" and searchResult.itemID then
+									key = "itemID";
 								end
 								if key == "itemID" and searchResult.sourceID then
 									key = "sourceID";
 								end
 								value = searchResult[key];
 								
-								local __type = searchResult.__type or searchResult.key;
 								if searchResult.u and (searchResult.u == 1 or searchResult.u == 2) then
 									value = value .. "_" .. searchResult.u;
-									key = "legacyID";
-									__type = key;
+									__type = "legacyID";
 								end
-								keys = searchResultsByKey[__type];
 
 								-- Make sure that the key type is represented.
+								keys = searchResultsByKey[__type];
 								if not keys then
 									keys = {};
 									searchResultsByKey[__type] = keys;
@@ -522,39 +520,17 @@ app:CreateWindow("Auctions", {
 								data = keys[value];
 								if not data then
 									data = app.CloneClassInstance(searchResult);
-									if data.key == "npcID" then app.CreateItem(itemID, data); end
+									if data.key == "npcID" then app.CreateItem(data.itemID, data); end
+									keys[value] = data;
 									data.indent = 1;
 									if price and price > 0 then
 										data.price = price;
 										data.cost = price;
 										data.summaryText = SummaryForAuctionItem(data);
 										data.OnClick = OnClickForAuctionItem;
-									else
 									end
-									keys[value] = data;
 								end
 							end
-						end
-
-						-- Apply a sub-filter to items with spellID-based identifiers.
-						if searchResultsByKey.spellID then
-							local filteredItems = {};
-							for key,entry in pairs(searchResultsByKey.spellID) do
-								if entry.f then
-									local filterData = filteredItems[entry.f];
-									if not filterData then
-										filterData = {};
-										filteredItems[entry.f] = filterData;
-									end
-									filterData[key] = entry;
-								else
-									print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or RETRIEVING_DATA) .. " is missing a filterID?");
-								end
-							end
-
-							if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
-							if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
-							searchResultsByKey.spellID = nil;
 						end
 
 						-- Process the Non-Collectible Items for Materials (Reagents)
@@ -563,9 +539,9 @@ app:CreateWindow("Auctions", {
 							reagentCache = {};
 							AllTheThingsAD.Reagents = reagentCache;
 						end
-						if reagentCache and searchResultsByKey.Item then
-							local cachedItems = searchResultsByKey.Item;
-							searchResultsByKey.Item = {};
+						if reagentCache and searchResultsByKey.SimpleItem then
+							local cachedItems = searchResultsByKey.SimpleItem;
+							searchResultsByKey.SimpleItem = {};
 							searchResultsByKey.Material = {};
 							for itemID,entry in pairs(cachedItems) do
 								if reagentCache[itemID] then
@@ -575,13 +551,14 @@ app:CreateWindow("Auctions", {
 										local searchResults = app.SearchForField("itemID", itemID2);
 										if searchResults and #searchResults > 0 then
 											local craftedItem = app.CloneClassInstance(searchResults[1]);
+											craftedItem.OnClick = OnClickForAuctionItem;
 											craftedItem.indent = 2;
 											tinsert(entry.g, craftedItem);
 										end
 									end
 								else
 									-- Push it back into the itemID table
-									searchResultsByKey.Item[itemID] = entry;
+									searchResultsByKey.SimpleItem[itemID] = entry;
 								end
 							end
 						end
@@ -595,15 +572,18 @@ app:CreateWindow("Auctions", {
 									Metas = { key },
 									description = "Container for '" .. key .. "' object types.",
 									SortPriority = 2,
+									g = {},
 								});
 								self.data.metas[key] = subdata;
 								tinsert(g, subdata);
 							end
-							subdata.g = {};
 							for i,j in pairs(searchResults) do
 								tinsert(subdata.g, j);
 							end
-							table.sort(subdata.g, SortByPrice);
+						end
+						
+						for i,option in ipairs(g) do
+							if option.g then table.sort(option.g, SortByPrice); end
 						end
 					else
 						tinsert(g, app.CreateRawText("No auctions cached. Waiting on Auction data.", {
