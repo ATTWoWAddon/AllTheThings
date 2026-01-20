@@ -9,15 +9,14 @@ app:CreateWindow("Hiddent Achievement Triggers", {
 	OnLoad = function(self, settings)
 		local hat = app.Categories.HiddenAchievementTriggers;
 		if hat then
-			self.data = app.CacheFields({
-				text = L.HIDDEN_ACHIEVEMENT_TRIGGERS,
+			self.data = app.CacheFields(app.CreateRawText(L.HIDDEN_ACHIEVEMENT_TRIGGERS, {
 				icon = app.asset("Category_Achievements"),
 				description = L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC,
 				font = "GameFontNormalLarge",
 				visible = true,
 				g = hat,
 				_hqt = true,
-			}, true);
+			}), true);
 			self:AssignChildren();
 		end
 	end,

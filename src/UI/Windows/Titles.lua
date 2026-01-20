@@ -11,8 +11,7 @@ app:CreateWindow("Titles", {
 	IsDynamicCategory = true,
 	Commands = { "atttitles" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = PAPERDOLL_SIDEBAR_TITLES,
+		self.data = app.CreateRawText(PAPERDOLL_SIDEBAR_TITLES, {
 			icon = app.asset("Category_Titles"),
 			description = "This list shows you all of the titles that you can collect.",
 			visible = true,
@@ -54,6 +53,6 @@ app:CreateWindow("Titles", {
 					data.SortType = "text";
 				end
 			end
-		};
+		});
 	end,
 });

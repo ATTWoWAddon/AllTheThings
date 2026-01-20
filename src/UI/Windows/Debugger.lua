@@ -45,8 +45,7 @@ app:CreateWindow("Debugger", {
 			MergeObject(self.rawData, info);
 			self:Update();
 		end
-		self.data = {
-			['text'] = "Session History",
+		self.data = app.CreateRawText("Session History", {
 			['icon'] = app.asset("WindowIcon_RaidAssistant"),
 			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 			['visible'] = true,
@@ -95,7 +94,7 @@ app:CreateWindow("Debugger", {
 				},
 			},
 			['g'] = {},
-		};
+		});
 		self.rawData = {};
 
 		-- Setup Event Handlers and register for events

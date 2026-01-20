@@ -164,8 +164,7 @@ app:CreateWindow("Random", {
 		settings.SearchFilter = SearchFilter;
 	end,
 	OnInit = function(self, handlers)
-		self.defaultHeader = {
-			text = L.GO_GO_RANDOM,
+		self.defaultHeader = app.CreateRawText(L.GO_GO_RANDOM, {
 			icon = app.asset("WindowIcon_Random"),
 			description = L.GO_GO_RANDOM_DESC,
 			expanded = true,
@@ -210,7 +209,7 @@ app:CreateWindow("Random", {
 					Reroll(self);
 				end
 			end
-		};
+		});
 		self.filterOptions = {
 			text = L.APPLY_SEARCH_FILTER,
 			icon = app.asset("Button_Search"),

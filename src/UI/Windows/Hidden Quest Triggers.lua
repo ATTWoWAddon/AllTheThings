@@ -9,15 +9,14 @@ app:CreateWindow("Hiddent Quest Triggers", {
 	OnLoad = function(self, settings)
 		local hqt = app.Categories.HiddenQuestTriggers;
 		if hqt then
-			self.data = app.CacheFields({
-				text = L.HIDDEN_QUEST_TRIGGERS,
+			self.data = app.CacheFields(app.CreateRawText(L.HIDDEN_QUEST_TRIGGERS, {
 				icon = app.asset("Interface_Quest"),
 				description = L.HIDDEN_QUEST_TRIGGERS_DESC,
 				font = "GameFontNormalLarge",
 				visible = true,
 				g = hqt,
 				_hqt = true,
-			}, true);
+			}), true);
 			self:AssignChildren();
 		end
 	end,

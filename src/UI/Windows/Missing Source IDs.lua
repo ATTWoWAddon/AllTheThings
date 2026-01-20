@@ -6,8 +6,7 @@ local tinsert = tinsert;
 app:CreateWindow("Missing Source IDs", {
 	Commands = { "attmissingsourceids" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Missing Source IDs",
+		self.data = app.CreateRawText("Missing Source IDs", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things that are currently missing sourceIDs that should have them in ATT.",
 			visible = true,
@@ -29,7 +28,7 @@ app:CreateWindow("Missing Source IDs", {
 					end
 				end
 			end,
-		};
+		});
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.

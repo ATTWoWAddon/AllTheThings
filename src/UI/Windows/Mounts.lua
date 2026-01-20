@@ -11,8 +11,7 @@ app:CreateWindow("Mounts", {
 	IsDynamicCategory = true,
 	Commands = { "attmounts" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = MOUNTS,
+		self.data = app.CreateRawText(MOUNTS, {
 			icon = app.asset("Category_Mounts"),
 			description = "This list shows you all of the mounts that you can collect.",
 			visible = true,
@@ -53,6 +52,6 @@ app:CreateWindow("Mounts", {
 					data.SortType = "text";
 				end
 			end
-		};
+		});
 	end,
 });

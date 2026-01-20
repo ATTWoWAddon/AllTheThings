@@ -82,8 +82,7 @@ app:CreateWindow("Tradeskills", {
 		self:SetClampedToScreen(false);
 		self.wait = 5;
 		self.cache = {};
-		self.header = {
-			['text'] = "Profession List",
+		self.header = app.CreateRawText("Profession List", {
 			['icon'] = 134940,
 			["description"] = "Open your professions to cache them.",
 			['visible'] = true,
@@ -91,7 +90,7 @@ app:CreateWindow("Tradeskills", {
 			["indent"] = 0,
 			['back'] = 1,
 			['g'] = { },
-		};
+		});
 		self.data = self.header;
 		self.previousCraftSkillID = 0;
 		self.previousTradeSkillID = 0;

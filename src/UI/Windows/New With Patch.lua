@@ -7,8 +7,7 @@ local L = app.L;
 app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
 	OnLoad = function(self, settings)
-		self.data = {
-			text = L.NEW_WITH_PATCH,
+		self.data = app.CreateRawText(L.NEW_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -61,6 +60,6 @@ app:CreateWindow("New With Patch", {
 					end
 				end
 			end,
-		};
+		});
 	end,
 });

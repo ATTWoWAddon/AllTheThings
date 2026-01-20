@@ -10,8 +10,7 @@ app:CreateWindow("Breadcrumbs", {
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Follow the Breadcrumbs",
+		self.data = app.CreateRawText("Follow the Breadcrumbs", {
 			icon = 133968,
 			description = "This window shows you all of the breadcrumbs tracked by ATT. Go get 'em!",
 			visible = true,
@@ -33,6 +32,6 @@ app:CreateWindow("Breadcrumbs", {
 					end
 				end
 			end,
-		};
+		});
 	end
 });

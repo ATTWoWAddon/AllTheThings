@@ -10,8 +10,7 @@ app:CreateWindow("Locked", {
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Locked Out",
+		self.data = app.CreateRawText("Locked Out", {
 			icon = 134236,
 			description = "This window shows you all of the quests and other things that you missed while leveling up. (Such as breadcrumbs or quests that have the choice between one or another)\n\nNOTE: With Party Sync you could go back and do some of these later. (Introduced in patch 8.2.5 during BFA)",
 			visible = true,
@@ -33,7 +32,7 @@ app:CreateWindow("Locked", {
 					end
 				end
 			end,
-		};
+		});
 	end,
 	OnRebuild = function(self, ...)
 		self.data.g = {};

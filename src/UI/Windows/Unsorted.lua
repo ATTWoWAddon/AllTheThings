@@ -21,15 +21,14 @@ app:CreateWindow("Unsorted", {
 			tinsert(achievementHeader.g, achievement);
 			self:Update();
 		end
-		self.data = {
-			text = L.UNSORTED,
+		self.data = app.CreateRawText(L.UNSORTED, {
 			title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.UNSORTED_DESC_2,
 			font = "GameFontNormalLarge",
 			expanded = true,
 			visible = true,
-		};
+		});
 	end,
 	OnUpdate = function(self, ...)
 		if not self.data.g or #self.data.g < 1 then

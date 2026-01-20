@@ -13,8 +13,7 @@ app:CreateWindow("Heirlooms", {
 	IsDynamicCategory = true,
 	Commands = { "attheirlooms" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = HEIRLOOMS,
+		self.data = app.CreateRawText(HEIRLOOMS, {
 			icon = app.asset("Weapon_Type_Heirloom"),
 			description = "This list shows you all of the heirlooms that you can collect.",
 			visible = true,
@@ -44,6 +43,6 @@ app:CreateWindow("Heirlooms", {
 					end
 				end
 			end
-		};
+		});
 	end,
 });

@@ -134,8 +134,7 @@ app:CreateWindow("Future Unobtainables", {
 				end,
 			},
 		};
-		self.data = {
-			text = L.FUTURE_UNOBTAINABLE,
+		self.data = app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
 			icon = app.asset("Interface_Future_Unobtainable"),
 			description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			visible = true,
@@ -159,6 +158,6 @@ app:CreateWindow("Future Unobtainables", {
 					end
 				end
 			end,
-		};
+		});
 	end,
 });

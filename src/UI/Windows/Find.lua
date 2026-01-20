@@ -239,8 +239,7 @@ app:CreateWindow("ItemFinder", {
 					return true;
 				end,
 			};
-			self.data = {
-				text = "Item Finder",
+			self.data = app.CreateRawText("Item Finder", {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -252,7 +251,7 @@ app:CreateWindow("ItemFinder", {
 				minItemID = 1,
 				step = 1000,
 				g = { ClearButton, StartButton }
-			};
+			});
 		end
 	end,
 	OnUpdate = function(self, ...)
@@ -322,8 +321,7 @@ app:CreateWindow("QuestFinder", {
 			function(t)
 				return #SearchForField("questID", t.questID) == 0;
 			end);
-			self.data = {
-				text = "Quest Finder",
+			self.data = app.CreateRawText("Quest Finder", {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -356,7 +354,7 @@ app:CreateWindow("QuestFinder", {
 						end
 					end
 				end
-			};
+			});
 		end
 	end,
 	OnUpdate = function(self, ...)

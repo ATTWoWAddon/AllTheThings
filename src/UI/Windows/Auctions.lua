@@ -222,8 +222,7 @@ app:CreateWindow("Auctions", {
 
 		end
 		self:SetMovable(false);
-		self.data = {
-			text = "Auction Module",
+		self.data = app.CreateRawText("Auction Module", {
 			icon = 133784,
 			description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 			SortType = "Global",
@@ -605,7 +604,7 @@ app:CreateWindow("Auctions", {
 					end
 				end
 			end,
-		};
+		});
 	end,
 	OnRebuild = function(self, ...)
 		self:UpdatePosition();

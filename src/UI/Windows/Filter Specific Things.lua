@@ -6,8 +6,7 @@ local tinsert = tinsert;
 app:CreateWindow("Filter Specific Things", {
 	Commands = { "attfiltertypes" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Filter Specific Things",
+		self.data = app.CreateRawText("Filter Specific Things", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the filter specific things.",
 			visible = true,
@@ -18,10 +17,15 @@ app:CreateWindow("Filter Specific Things", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
+					local filteredG = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+						if group.f then
+							return true;
+						end
+					end);
 					for filterID,_ in pairs(app.L.FILTER_ID_TYPES) do
 						local obj = app.CreateFilter(filterID);
 						tinsert(g, obj);
-						obj.g = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+						obj.g = app:BuildSearchFilteredResponse(filteredG, function(group)
 							if group.f == filterID then
 								return true;
 							end
@@ -32,7 +36,7 @@ app:CreateWindow("Filter Specific Things", {
 					self:ExpandData(true);
 				end
 			end,
-		};
+		});
 	end,
 	OnUpdate = function(self, ...)
 		-- Prevent Quests and Achievements from being collectible within this context.

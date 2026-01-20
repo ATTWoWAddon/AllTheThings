@@ -225,8 +225,7 @@ app:CreateWindow("Attunements", {
 			end
 			attunement.OnUpdate = OnUpdateForAttunement;
 		end
-		local attunementsHeader = {
-			text = "Attunements",
+		local attunementsHeader = app.CreateRawText("Attunements", {
 			icon = 135817,
 			description = "This window shows you your current character's attunement progress.",
 			visible = true,
@@ -243,7 +242,7 @@ app:CreateWindow("Attunements", {
 				end
 				data.visible = true;
 			end
-		};
+		});
 		self.data = attunementsHeader;
 		self.Reset = function()
 			self.data = attunementsHeader;

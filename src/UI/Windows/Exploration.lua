@@ -6,8 +6,7 @@ app:CreateWindow("Exploration", {
 	AllowCompleteSound = true,
 	Commands = { "attexploration" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Exploration",
+		self.data = app.CreateRawText("Exploration", {
 			icon = app.asset("Category_Exploration"),
 			description = "This window shows you all of the exploration locations that you can complete. You may need to Shift+Left Click any header in ATT and also relog for these to be detected perfectly.",
 			visible = true,
@@ -35,6 +34,6 @@ app:CreateWindow("Exploration", {
 					self:ExpandData(true);
 				end
 			end
-		};
+		});
 	end,
 });

@@ -18,8 +18,7 @@ app:CreateWindow("Battle Pets", {
 		"attbattlepets",
 	},
 	OnInit = function(self, handlers)
-		self.data = {
-			text = AUCTION_CATEGORY_BATTLE_PETS,
+		self.data = app.CreateRawText(AUCTION_CATEGORY_BATTLE_PETS, {
 			icon = app.asset("Category_PetJournal"),
 			description = "This list shows you all of the battle pets that you can collect listed by type.",
 			visible = true,
@@ -107,6 +106,6 @@ app:CreateWindow("Battle Pets", {
 					data.SortType = "name";
 				end
 			end
-		};
+		});
 	end,
 });

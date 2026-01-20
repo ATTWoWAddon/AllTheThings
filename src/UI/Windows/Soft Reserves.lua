@@ -953,8 +953,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 					return true;
 				end,
 			},
-			{	-- Guild Members Header
-				text = "Guild Members",
+			app.CreateRawText("Guild Members", {
 				icon = 132333,
 				description = "These active characters are in your guild.\n\nOnly showing characters logged in the last 2 months.",
 				priority = 10,
@@ -970,14 +969,13 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 					local numRanks = GuildControlGetNumRanks();
 					if numRanks > 0 then
 						for rankIndex = #g + 1, numRanks, 1 do
-							tinsert(g, {
-								text = GuildControlGetRankName(rankIndex),
+							tinsert(g, app.CreateRawText(GuildControlGetRankName(rankIndex), {
 								icon = ("interface/PvPRankBadges\\PvPRank%02d"):format(15 - rankIndex),
 								--OnUpdate = app.AlwaysShowUpdate,
 								parent = data,
 								visible = true,
 								g = {},
-							});
+							}));
 						end
 
 						local debugMode = app.MODE_DEBUG;
@@ -1009,9 +1007,8 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						end
 					end
 				end,
-			},
-			{	-- Non-Group Members Header
-				text = "Non-Group Members",
+			}),
+			app.CreateRawText("Non-Group Members", {	-- Non-Group Members Header
 				icon = 134153,
 				description = "These are players that have Soft Reserved something in your raid, but are not currently in your group.",
 				visible = true,
@@ -1020,7 +1017,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				OnUpdate = function(data)
 					data.visible = #data.g > 0 and not app.Settings:GetTooltipSetting("SoftReservesLocked");
 				end,
-			}
+			})
 		};
 
 		-- If Loot Method is supported, then give the Raid Leader the option of selecting master loot.
@@ -1044,8 +1041,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				end,
 			});
 		end
-		self.data = {
-			text = L.SOFT_RESERVES,
+		self.data = app.CreateRawText(L.SOFT_RESERVES, {
 			icon = app.asset("WindowIcon_SoftReserves"),
 			description = L.SOFT_RESERVES_DESCRIPTION,
 			visible = true,
@@ -1095,7 +1091,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				end
 				app.Sort(g, SortByTextAndPriority);
 			end,
-		};
+		});
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

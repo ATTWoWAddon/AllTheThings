@@ -68,8 +68,7 @@ app:CreateWindow("Removed With Patch Drops", {
 	OnRebuild = function(self)
 		if self.data then return true; end
 		local options = {
-			{	-- Exclude Added With Patch Button
-				text = "Exclude Items Added With Patch",
+			app.CreateRawText("Exclude Items Added With Patch", {
 				icon = 134941,
 				description = "Press this button to toggle excluding Items added back to the game after they are initially removed from the game.\n\nNOTE: This might be misleading: if an item has multiple sources and only one of the sources was added back, specific sources of that item that aren't currently marked with AWP will still be shown. The tooltip may show Added With Patch, but it might only apply to a different hidden source. (For example, Pattern: Black Silk Pack)",
 				visible = true,
@@ -84,9 +83,8 @@ app:CreateWindow("Removed With Patch Drops", {
 					data.saved = ExcludeAddedWithPatch;
 					return true;
 				end,
-			},
-			{	-- Exclude Recipes Button
-				text = "Exclude Recipes",
+			}),
+			app.CreateRawText("Exclude Recipes", {
 				icon = 134941,
 				description = "Press this button to toggle excluding Recipes.",
 				visible = true,
@@ -101,9 +99,8 @@ app:CreateWindow("Removed With Patch Drops", {
 					data.saved = ExcludeRecipes;
 					return true;
 				end,
-			},
-			{	-- Exclude Removed Maps Button
-				text = "Exclude Removed Maps",
+			}),
+			app.CreateRawText("Exclude Removed Maps", {
 				icon = 237381,
 				description = "Press this button to toggle excluding Maps that get Removed in the future.",
 				visible = true,
@@ -118,9 +115,8 @@ app:CreateWindow("Removed With Patch Drops", {
 					data.saved = ExcludeRemovedMaps;
 					return true;
 				end,
-			},
-			{	-- Exclude Removed Rares Button
-				text = "Exclude Removed Rares",
+			}),
+			app.CreateRawText("Exclude Removed Rares", {
 				icon = app.asset("Interface_Rare"),
 				description = "Press this button to toggle excluding Rares that get Removed in the future.",
 				visible = true,
@@ -135,7 +131,7 @@ app:CreateWindow("Removed With Patch Drops", {
 					data.saved = ExcludeRemovedRares;
 					return true;
 				end,
-			},
+			}),
 			{	-- Export Data Button
 				text = "Export Data",
 				icon = 136169,
@@ -169,8 +165,7 @@ app:CreateWindow("Removed With Patch Drops", {
 			end
 		end);
 
-		self.data = {
-			text = "Removed With Patch Drops",
+		self.data = app.CreateRawText("Removed With Patch Drops", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things excluding recipes that get removed in a future patch from zone drop, rare, and world drop sources.",
 			visible = true,
@@ -226,7 +221,7 @@ app:CreateWindow("Removed With Patch Drops", {
 					self.oldG = results;
 				end
 			end,
-		};
+		});
 		return true;
 	end,
 });

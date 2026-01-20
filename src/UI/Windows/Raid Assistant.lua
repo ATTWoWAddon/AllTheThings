@@ -325,6 +325,7 @@ app:CreateWindow("RaidAssistant", {
 				local dungeondifficulty = app.CreateDifficulty(1, {
 					text = "Dungeon Difficulty",
 					description = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
+					trackable = false,
 					back = 1,
 					g = {},
 					OnClick = function(row, button)
@@ -340,6 +341,7 @@ app:CreateWindow("RaidAssistant", {
 										description = "Click to change now. (if available)",
 										OnClick = setDungeonDifficulty,
 										OnUpdate = app.AlwaysShowUpdate,
+										trackable = false,
 										parent = data,
 									}));
 								end
@@ -351,6 +353,7 @@ app:CreateWindow("RaidAssistant", {
 				tinsert(options, app.CreateDifficulty(1, {
 					title = "Dungeon Difficulty",
 					description = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
+					trackable = false,
 					priority = 10,
 					OnClick = function(row, button)
 						if IsInInstance() then return true; end
@@ -417,6 +420,7 @@ app:CreateWindow("RaidAssistant", {
 						local legacyraiddifficulty = app.CreateDifficulty(highestDifficultyID, {
 							text = "Legacy Raid Difficulty",
 							description = "This setting allows you to customize the difficulty of a legacy raid.\n\nClick this row to go back to the Raid Assistant.",
+							trackable = false,
 							back = 1,
 							g = {},
 							OnClick = function(row, button)
@@ -432,6 +436,7 @@ app:CreateWindow("RaidAssistant", {
 												description = "Click to change now. (if available)",
 												OnClick = setLegacyRaidDifficulty,
 												OnUpdate = app.AlwaysShowUpdate,
+												trackable = false,
 												parent = data,
 											}));
 										end
@@ -443,6 +448,7 @@ app:CreateWindow("RaidAssistant", {
 						tinsert(options, app.CreateDifficulty(highestDifficultyID, {
 							title = "Legacy Raid Difficulty",
 							description = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
+							trackable = false,
 							priority = 11,
 							OnClick = function(row, button)
 								-- Don't allow you to change difficulties when you're in LFR / Raid Finder
@@ -505,6 +511,7 @@ app:CreateWindow("RaidAssistant", {
 				local raiddifficulty = app.CreateDifficulty(highestDifficultyID, {
 					text = "Raid Difficulty",
 					description = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
+					trackable = false,
 					back = 1,
 					g = {},
 					OnClick = function(row, button)
@@ -520,6 +527,7 @@ app:CreateWindow("RaidAssistant", {
 										description = "Click to change now. (if available)",
 										OnClick = setRaidDifficulty,
 										OnUpdate = app.AlwaysShowUpdate,
+										trackable = false,
 										parent = data,
 									}));
 								end
@@ -531,6 +539,7 @@ app:CreateWindow("RaidAssistant", {
 				tinsert(options, app.CreateDifficulty(highestDifficultyID, {
 					title = "Raid Difficulty",
 					description = "The difficulty setting for raids.\n\nClick this row to change it now!",
+					trackable = false,
 					priority = 12,
 					OnClick = function(row, button)
 						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
