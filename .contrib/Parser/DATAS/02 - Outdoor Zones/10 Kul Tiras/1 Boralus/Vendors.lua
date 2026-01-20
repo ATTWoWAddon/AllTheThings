@@ -312,6 +312,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 			}),
 			n(246721, {	-- Janey Forrest
 				["coord"] = { 56.3, 45.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(252390, {	-- Small Hull'n'Home Table (DECOR!)
