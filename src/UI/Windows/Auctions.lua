@@ -403,6 +403,12 @@ app:CreateWindow("Auctions", {
 					description = "All battle pets that you have not collected yet are displayed here.",
 					SortPriority = 2,
 				}),
+				app.CreateRawText(CHARACTER, {	-- Character
+					icon = app.asset("Category_ItemSets"),
+					Metas = { "CharacterUnlockQuestItem", "CharacterUnlockSpellItem" },
+					description = "All spells or quests than can be learned by your character are displayed here.",
+					SortPriority = 2,
+				}),
 				app.CreateRawText(L.FACTIONS, {	-- Factions
 					Metas = { "ItemWithFaction" },
 					icon = app.asset("Category_Factions"),
@@ -424,6 +430,11 @@ app:CreateWindow("Auctions", {
 					Metas = { "Item", "SimpleItem" },
 					icon = 132595,
 					description = "All items that could be used for some non-transmog related purpose such as for an achievement are displayed here.",
+					SortPriority = 2,
+				}),
+				app.CreateCustomHeader(app.HeaderConstants.QUESTS, {	-- Quest
+					Metas = { "ItemAsHQT" },
+					description = "All items that trigger a non-character unlock quest.",
 					SortPriority = 2,
 				}),
 				app.CreateFilter(200, {	-- Recipes
@@ -602,12 +613,19 @@ app:CreateWindow("Auctions", {
 				end
 			end,
 		});
+		if app.HeaderConstants.MOUNT_MODS then
+			tinsert(self.data.options, app.CreateCustomHeader(app.HeaderConstants.MOUNT_MODS, {	-- Mount Mods
+				Metas = { "MountMod" },
+				description = "All mount mods that you have not collected yet are displayed here.",
+				SortPriority = 2,
+			}));
+		end
 		if app.GameBuildVersion >= 70000 then
-			app.CreateFilter(103, {	-- Illusions
+			tinsert(self.data.options, app.CreateFilter(103, {	-- Illusions
 				Metas = { "IllusionWithItem" },
 				description = "All illusions that you have not collected yet are displayed here.",
 				SortPriority = 2,
-			});
+			}));
 		end
 		if app.GameBuildVersion > 110000 then
 			tinsert(self.data.options, app.CreateRawText(L.DECOR, {	-- Decor
