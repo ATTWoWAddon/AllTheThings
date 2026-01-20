@@ -1,8 +1,8 @@
 -- App locals
 local _, app = ...;
 local contains, containsValue = app.contains, app.containsValue;
-local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeValue, MergeObject, SearchForField
-	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeValue, app.MergeObject, app.SearchForField;
+local AssignChildren, ExpandGroupsRecursively, GetRelativeValue, MergeObject, SearchForField
+	= app.AssignChildren, app.ExpandGroupsRecursively, app.GetRelativeValue, app.MergeObject, app.SearchForField;
 local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Global locals
@@ -127,7 +127,7 @@ local CachedMapData = setmetatable({}, {
 						elseif key == "g" then
 							local g = {};
 							for i,o in ipairs(value) do
-								o = CloneReference(o);
+								o = app.CloneClassInstance(o);
 								ExpandGroupsRecursively(o, false);
 								tinsert(g, o);
 							end

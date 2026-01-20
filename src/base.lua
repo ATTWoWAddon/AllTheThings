@@ -156,20 +156,6 @@ local function CloneDictionary(data, clone)
 		return clone
 	end
 end
-local function CloneReference(group)
-	local clone = {};
-	local gg = group.g
-	if gg then
-		local g = {};
-		for i=1,#gg do
-			local child = CloneReference(gg[i]);
-			child.parent = clone;
-			g[#g + 1] = child
-		end
-		clone.g = g;
-	end
-	return setmetatable(clone, { __index = group });
-end
 app.distance = function( x1, y1, x2, y2 )
 	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
@@ -262,7 +248,6 @@ app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
 app.CloneDictionary = CloneDictionary;
-app.CloneReference = CloneReference;
 app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeFunc = GetDeepestRelativeFunc;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;

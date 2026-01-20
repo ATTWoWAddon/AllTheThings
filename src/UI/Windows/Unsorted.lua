@@ -1,6 +1,6 @@
 -- App locals
 local _, app = ...;
-local L, CloneReference = app.L, app.CloneReference;
+local L = app.L;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 
 -- Global locals
@@ -16,7 +16,7 @@ app:CreateWindow("Unsorted", {
 
 		-- Make a function to add a new unsorted achievement.
 		self.AddUnsortedAchievement = function(self, achievement)
-			achievement = CloneReference(achievement);
+			achievement = app.CloneClassInstance(achievement);
 			achievement.parent = achievementHeader;
 			tinsert(achievementHeader.g, achievement);
 			self:Update();

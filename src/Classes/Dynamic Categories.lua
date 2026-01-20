@@ -12,7 +12,7 @@ local onClickForDynamicCategory = function(row, button)
 			local primeData = prime.data;
 			if primeData then
 				local progress, total = window.data.progress or 0, window.data.total or 0;
-				local g = app.CloneReference(window.data).g;
+				local g = app.CloneClassInstance(window.data).g;
 				for i,o in ipairs(g) do
 					o.parent = row.ref;
 				end

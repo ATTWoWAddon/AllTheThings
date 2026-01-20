@@ -1,6 +1,5 @@
 -- App locals
 local _, app = ...;
-local CloneReference = app.CloneReference;
 
 -- Global locals
 local tinsert = tinsert;
@@ -20,7 +19,7 @@ local function GetAttunementRequirement(t)
 					break;
 				end
 			end
-			if bestMatch then return CloneReference(bestMatch); end
+			if bestMatch then return app.CloneClassInstance(bestMatch); end
 		end
 		return app.CreateQuest(questID);
 	else
@@ -35,7 +34,7 @@ local function GetAttunementRequirement(t)
 						if item.key == "itemID" and item.itemID == itemID then
 							if item.OnUpdate then item:OnUpdate(); end
 							if item.GetItemCount and item:GetItemCount() > 0 then
-								item = CloneReference(item);
+								item = app.CloneClassInstance(item);
 								item.saved = true;
 								return item;
 							else
@@ -50,7 +49,7 @@ local function GetAttunementRequirement(t)
 				end
 			end
 			if not bestMatch then bestMatch = anyMatch; end
-			return bestMatch and CloneReference(bestMatch) or app.CreateItem(itemID);
+			return bestMatch and app.CloneClassInstance(bestMatch) or app.CreateItem(itemID);
 		end
 	end
 
@@ -117,7 +116,7 @@ app:CreateWindow("Attunements", {
 								break;
 							end
 						end
-						return bestMatch and CloneReference(bestMatch);
+						return bestMatch and app.CloneClassInstance(bestMatch);
 					else
 						return app.CreateQuest(specificQuestID);
 					end

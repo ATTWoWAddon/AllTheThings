@@ -566,7 +566,7 @@ ResolveSymbolicLink = function(o)
 						for k,result in ipairs(cache) do
 							local ref = ResolveSymbolicLink(result);
 							if ref then
-								local cs = app.CloneReference(result);
+								local cs = app.CloneClassInstance(result);
 								if not cs.g then cs.g = {}; end
 								for i,m in ipairs(ref) do
 									tinsert(cs.g, m);

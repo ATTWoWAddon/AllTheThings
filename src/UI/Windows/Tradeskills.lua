@@ -1,7 +1,7 @@
 -- App locals
 local _, app = ...;
-local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
-	= app.CloneReference, app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
+local ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
+	= app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
 
 -- Global locals
 local ipairs, pairs, tinsert =
@@ -287,7 +287,7 @@ app:CreateWindow("Tradeskills", {
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
 							local cache = self.cache[group.spellID];
 							if not cache then
-								cache = CloneReference(group);
+								cache = app.CloneClassInstance(group);
 								self.cache[group.spellID] = cache;
 								local searchResults = ResolveSymbolicLink(group);
 								if searchResults and #searchResults then

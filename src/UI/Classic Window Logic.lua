@@ -1036,7 +1036,7 @@ local function CreateRow(container, rows, i)
 	local row = CreateFrame("Button", nil, container);
 	row.index = i - 1;
 	rows[i] = row;
-	if row.index == 0 then
+	if i == 1 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
@@ -1557,29 +1557,29 @@ local BuildCategory = function(self, headers, searchResults, inst)
 		if headerType == "holiday" then
 			header = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS);
 		elseif headerType == "raid" then
-			header = {};
-			header.text = GROUP_FINDER;
-			header.icon = app.asset("Category_D&R");
+			header = app.CreateRawText(GROUP_FINDER, {
+				icon = app.asset("Category_D&R"),
+			});
 		elseif headerType == "promo" then
-			header = {};
-			header.text = BATTLE_PET_SOURCE_8;
-			header.icon = app.asset("Category_Promo");
+			header = app.CreateRawText(BATTLE_PET_SOURCE_8, {
+				icon = app.asset("Category_Promo"),
+			});
 		elseif headerType == "pvp" then
-			header = {};
-			header.text = PVP;
-			header.icon = app.asset("Category_PvP");
+			header = app.CreateRawText(PVP, {
+				icon = app.asset("Category_PvP"),
+			});
 		elseif headerType == "event" then
-			header = {};
-			header.text = BATTLE_PET_SOURCE_7;
-			header.icon = app.asset("Category_Event");
+			header = app.CreateRawText(BATTLE_PET_SOURCE_7, {
+				icon = app.asset("Category_Event"),
+			});
 		elseif headerType == "drop" then
-			header = {};
-			header.text = BATTLE_PET_SOURCE_1;
-			header.icon = app.asset("Category_WorldDrops");
+			header = app.CreateRawText(BATTLE_PET_SOURCE_1, {
+				icon = app.asset("Category_WorldDrops"),
+			});
 		elseif headerType == "crafted" then
-			header = {};
-			header.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
-			header.icon = app.asset("Category_Crafting");
+			header = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+				icon = app.asset("Category_Crafting"),
+			});
 		elseif type(headerType) == "number" then
 			header = app.CreateCustomHeader(headerType);
 		else
@@ -2058,27 +2058,12 @@ end
 function app:GetWindow(suffix)
 	return app.Windows[suffix];
 end
-local function CloneReferenceForBuildRequests(group)
-	local clone = {};
-	if group.g then
-		local g = {};
-		for i,group in ipairs(group.g) do
-			if not group.IgnoreBuildRequests then
-				local child = CloneReferenceForBuildRequests(group);
-				child.parent = clone;
-				tinsert(g, child);
-			end
-		end
-		clone.g = g;
-	end
-	return setmetatable(clone, { __index = group });
-end
 function app:BuildFlatSearchFilteredResponse(groups, filter, t)
 	if groups then
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				if filter(group) then
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				elseif group.g then
 					app:BuildFlatSearchFilteredResponse(group.g, filter, t);
 				end
@@ -2092,7 +2077,7 @@ function app:BuildFlatSearchResponse(groups, field, value, t)
 			if not group.IgnoreBuildRequests then
 				local v = group[field];
 				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				elseif group.g then
 					app:BuildFlatSearchResponse(group.g, field, value, t);
 				end
@@ -2105,7 +2090,7 @@ function app:BuildFlatSearchResponseForField(groups, field, t)
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				if group[field] then
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				elseif group.g then
 					app:BuildFlatSearchResponseForField(group.g, field, t);
 				end
@@ -2120,12 +2105,14 @@ function app:BuildSearchFilteredResponse(groups, filter)
 			if not group.IgnoreBuildRequests then
 				if filter(group) then
 					if not t then t = {}; end
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				else
 					local response = app:BuildSearchFilteredResponse(group.g, filter);
 					if response then
 						if not t then t = {}; end
-						tinsert(t, setmetatable({g=response}, { __index = group }));
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
 					end
 				end
 			end
@@ -2141,12 +2128,14 @@ function app:BuildSearchResponse(groups, field, value)
 				local v = group[field];
 				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
 					if not t then t = {}; end
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				else
 					local response = app:BuildSearchResponse(group.g, field, value);
 					if response then
 						if not t then t = {}; end
-						tinsert(t, setmetatable({g=response}, { __index = group }));
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
 					end
 				end
 			end
@@ -2161,12 +2150,14 @@ function app:BuildSearchResponseForField(groups, field)
 			if not group.IgnoreBuildRequests then
 				if group[field] then
 					if not t then t = {}; end
-					tinsert(t, CloneReferenceForBuildRequests(group));
+					tinsert(t, app.CloneClassInstance(group));
 				else
 					local response = app:BuildSearchResponseForField(group.g, field);
 					if response then
 						if not t then t = {}; end
-						tinsert(t, setmetatable({g=response}, { __index = group }));
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
 					end
 				end
 			end
@@ -2178,7 +2169,7 @@ end
 -- Dynamic Popouts for Quest Chains and other Groups
 local function OnInitForPopout(self, questID, group)
 	if group.questID or group.sourceQuests then
-		local mainQuest = app.CloneReference(group);
+		local mainQuest = app.CloneClassInstance(group);
 		if group.parent then mainQuest.sourceParent = group.parent; end
 		if mainQuest.sym then
 			mainQuest.collectible = true;
@@ -2211,7 +2202,7 @@ local function OnInitForPopout(self, questID, group)
 				for i=1,#searchResults,1 do
 					local searchResult = searchResults[i];
 					if searchResult.questID == questID and searchResult.sourceQuests then
-						searchResult = app.CloneReference(searchResult);
+						searchResult = app.CloneClassInstance(searchResult);
 						searchResult.collectible = true;
 						searchResult.g = g;
 						mainQuest = searchResult;
@@ -2250,7 +2241,7 @@ local function OnInitForPopout(self, questID, group)
 							end
 						end
 						if found then
-							sourceQuest = app.CloneReference(found);
+							sourceQuest = app.CloneClassInstance(found);
 							sourceQuest.collectible = true;
 							sourceQuest.visible = true;
 							sourceQuest.hideText = true;
@@ -2359,7 +2350,7 @@ local function OnInitForPopout(self, questID, group)
 			g = g,
 		};
 	elseif group.sym then
-		self.data = app.CloneReference(group);
+		self.data = app.CloneClassInstance(group);
 		self.data.collectible = true;
 		self.data.visible = true;
 		self.data.progress = 0;
@@ -2392,7 +2383,7 @@ local function OnInitForPopout(self, questID, group)
 	end
 
 	-- Clone the data and then insert it into the Raw Data table.
-	self.data = app.CloneReference(self.data);
+	self.data = app.CloneClassInstance(self.data);
 	self.data.hideText = true;
 	self.data.visible = true;
 	self.data.indent = 0;
@@ -2506,7 +2497,7 @@ local function OnInitForPopout(self, questID, group)
 					costItem = app.CreateItem(c[2]);
 				end
 				if costItem then
-					costItem = app.CloneReference(costItem);
+					costItem = app.CloneClassInstance(costItem);
 					costItem.visible = true;
 					costItem.OnUpdate = app.AlwaysShowUpdate;
 					app.MergeObject(costGroup.g, costItem);
@@ -2588,7 +2579,7 @@ local function OnInitForPopout(self, questID, group)
 						local searchResult = searchResults[i];
 						if searchResult.achievementID == achievementID and searchResult.criteriaID then
 							if not self.data.g then self.data.g = {}; end
-							app.MergeObject(self.data.g, app.CloneReference(searchResult));
+							app.MergeObject(self.data.g, app.CloneClassInstance(searchResult));
 						end
 					end
 				end
@@ -2605,7 +2596,7 @@ local function OnInitForPopout(self, questID, group)
 		local relatedThings = {};
 		group.GetRelatedThings(group, relatedThings);
 		for i,o in ipairs(relatedThings) do
-			app.MergeObject(relatedThingsGroup.g, app.CloneReference(o));
+			app.MergeObject(relatedThingsGroup.g, app.CloneClassInstance(o));
 		end
 		if #relatedThingsGroup.g > 0 then
 			if not self.data.g then self.data.g = {}; end

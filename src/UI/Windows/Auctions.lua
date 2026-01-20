@@ -1,6 +1,5 @@
 -- App locals
 local _, app = ...;
-local CloneReference = app.CloneReference;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Global locals
@@ -504,26 +503,14 @@ app:CreateWindow("Auctions", {
 								-- First time this key value was used.
 								data = keys[value];
 								if not data then
-									data = CloneReference(searchResult);
+									data = app.CloneClassInstance(searchResult);
 									if data.key == "npcID" then app.CreateItem(itemID, data); end
 									data.indent = 1;
 									if price and price > 0 then
 										data.price = price;
 										data.cost = price;
-										local oldindex = getmetatable(data).__index;
-										setmetatable(data, {
-											__index = function(t,key)
-												if key == "summary" then
-													return SummaryForAuctionItem(t);
-												elseif key == "OnClick" then
-													return OnClickForAuctionItem;
-												elseif type(oldindex) == "table" then
-													return oldindex[key];
-												else
-													oldindex(t, key);
-												end
-											end
-										});
+										data.summaryText = SummaryForAuctionItem(data);
+										data.OnClick = OnClickForAuctionItem;
 									else
 									end
 									keys[value] = data;
@@ -569,7 +556,7 @@ app:CreateWindow("Auctions", {
 									for itemID2,count in pairs(reagentCache[itemID][2]) do
 										local searchResults = app.SearchForField("itemID", itemID2);
 										if searchResults and #searchResults > 0 then
-											local craftedItem = CloneReference(searchResults[1]);
+											local craftedItem = app.CloneClassInstance(searchResults[1]);
 											craftedItem.indent = 2;
 											tinsert(entry.g, craftedItem);
 										end

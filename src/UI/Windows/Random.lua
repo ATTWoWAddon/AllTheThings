@@ -1,7 +1,6 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-local CloneReference = app.CloneReference;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Global locals
@@ -134,7 +133,7 @@ local function Reroll(self)
 				end
 			end
 			if selected then
-				local o = CloneReference(selected);
+				local o = app.CloneClassInstance(selected);
 				o.parent = data;
 				tinsert(data.g, o);
 			else
