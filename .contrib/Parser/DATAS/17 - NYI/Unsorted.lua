@@ -372,26 +372,13 @@ root(ROOTS.Unsorted, {
 			i(238359),	-- Nalorakk's Totem
 
 			-- Fishing
-			i(238365),	-- Sin'dorei Swarmer
-			i(238366),	-- Lynxfish
-			i(238367),	-- Root Crab
-			i(238368),	-- Twisted Tetra
 			i(238369),	-- Bloomtail Minnow
-			i(238370),	-- Shimmer Spinefish
-			i(238371),	-- Arcane Wyrmfish
-			i(238372),	-- Restored Songfish
 			i(238373),	-- Ominous Octopus
 			i(238374),	-- Tender Lumifin
-			i(238375),	-- Fungalskin Pike
-			i(238376),	-- Lucky Loa
 			i(238377),	-- Blood Hunter
-			i(238378),	-- Shimmersiren
-			i(238379),	-- Warping Wise
 			i(238380),	-- Null Voidfish
 			i(238381),	-- Hollow Grouper
 			i(238382),	-- Gore Guppy
-			i(238383),	-- Eversong Trout
-			i(238384),	-- Sunwell Fish
 
 			-- Herb
 			i(238387),	-- Magical Mulch
@@ -415,26 +402,10 @@ root(ROOTS.Unsorted, {
 			i(238476),	-- Irritating Spores
 
 			-- Misc
-			i(238477),	-- Rotten Meat
-			i(238478),	-- Shimmering Seaweed
-			i(238479),	-- Torn Caster's Net
-			i(238480),	-- Opened Lockbox
-			i(238481),	-- Glittering Garbage
-			i(238482),	-- A Whole Lot of Nothing
-			i(238483),	-- Bottom Grass
-			i(238484),	-- Damp Washcloth
-			i(238485),	-- Grotesque Globule
-			i(238486),	-- Empty Can
-			i(238487),	-- Kickin' Can
-			i(238488),	-- Definitely a Rock
 			i(238489),	-- Definitely Not a Rock
 			i(238490),	-- Ambiguous Rock
 			i(238491),	-- Whispering Rock
-			i(238492),	-- Silent Rock
-			i(238493),	-- Screaming Rock
-			i(238494),	-- Another's Treasure
 			i(238495),	-- One Angler's Trash \\ One Man's Trash
-			i(238496),	-- Top Grass \\ Hunk O' Junk
 			i(238498),	-- [PH] Trophy Coin
 
 			-- QI
@@ -955,9 +926,7 @@ root(ROOTS.Unsorted, {
 
 			-- Fishing?
 			i(243248),	-- Anomaly Filament
-			i(243302),	-- Aquarius Bloom
 			i(243342),	-- Bloom Bauble
-			i(243343),	-- Angler's Anomaly
 
 			-- Enchanting
 			i(243434),	-- Enchant Shoulders - Nature's Embrace

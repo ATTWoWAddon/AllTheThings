@@ -4523,6 +4523,7 @@ i(250135, 4874);	-- Akil Fledgling
 i(193068, 3277);	-- Amber Treeflitter
 i(250142, 4882);	-- Azure Sporebat
 i(250148, 4879);	-- Blistercreepling
+i(260942, 4951);	-- Bubbly Snapling
 i(205017, 3519);	-- Byrn
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
@@ -4550,7 +4551,6 @@ i(265035, 4984);	-- [PH] Purple Siphoid
 i(260705, 4947);	-- Assistant Botanist Leafy
 i(0, 4945);			-- Aud'rei III
 i(263492, 4952);	-- Blitzcreek
-i(260942, 4951);	-- Bubbly Snapling
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
