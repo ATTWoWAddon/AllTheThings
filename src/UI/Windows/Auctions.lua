@@ -398,13 +398,12 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				},
-				{	-- Appearances
-					text = "Appearances",
+				app.CreateRawText("Appearances", {	-- Appearances
 					Meta = "sourceID",
 					icon = 135349,
 					description = "All items that could be learned for transmog are listed here.",
 					SortPriority = 2,
-				},
+				}),
 				app.CreateFilter(101, {	-- Battle Pets
 					Meta = "speciesID",
 					description = "All battle pets that you have not collected yet are displayed here.",
@@ -415,34 +414,30 @@ app:CreateWindow("Auctions", {
 					description = "All mounts that you have not collected yet are displayed here.",
 					SortPriority = 4,
 				}),
-				{	-- Materials
-					text = "Materials",
+				app.CreateRawText("Materials", {	-- Materials
 					Meta = "reagentID",
 					icon = 132856,
 					description = "All items that can be used to craft an item using a profession on your account.",
 					SortPriority = 5,
-				},
-				{	-- Miscellaneous
-					text = "Miscellaneous",
+				}),
+				app.CreateRawText("Miscellaneous", {	-- Miscellaneous
 					Meta = "itemID",
 					icon = 132595,
 					description = "All items that could be used for some non-transmog related purpose such as for an achievement are displayed here.",
 					SortPriority = 6,
-				},
+				}),
 				app.CreateFilter(200, {	-- Recipes
 					Meta = "recipeID",
 					description = "All recipes that you have not collected yet are displayed here.",
 					SortPriority = 7,
 				}),
-				{	-- Toys
-					text = "Toys",
+				app.CreateRawText("Toys", {	-- Toys
 					Meta = "toyID",
 					icon = 133015,
 					description = "All items that are classified as Toys either by ATT for the future or by the game presently.",
 					SortPriority = 8,
-				},
-				{	-- Legacy
-					text = "Legacy",
+				}),
+				app.CreateRawText("Legacy", {	-- Legacy
 					Meta = "legacyID",
 					icon = 135331,
 					description = "All items that were removed from game that you could probably still collect for a... nominal fee.\n\nAlso if you have found something here, feel free to post about it on the ATT Discord's #classic-general channel! I'm sure some folks might want to find these.",
@@ -452,15 +447,14 @@ app:CreateWindow("Auctions", {
 						oldLegacyFilter = rawSettings[2];
 						rawSettings[2] = true;
 					end,
-				},
-				{	-- Legacy Cleaner
-					text = "Legacy Cleaner",
+				}),
+				app.CreateRawText("Legacy Cleaner", {	-- Legacy Cleaner
 					icon = 135331,
 					SortPriority = 10.1,
 					OnUpdate = function(data)
 						app.Settings:GetRawSettings("Unobtainable")[2] = oldLegacyFilter;
 					end,
-				}
+				})
 			},
 			OnUpdate = function(data)
 				local g = data.g;

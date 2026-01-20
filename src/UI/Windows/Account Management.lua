@@ -1509,8 +1509,7 @@ app:CreateWindow("Account Management", {
 				end
 				return table[key];
 			end}),
-			{	-- Characters
-				text = "Characters",
+			app.CreateRawText("Characters", {	-- Characters
 				icon = 526421,
 				description = "This shows all of the characters on your account.",
 				expanded = true,
@@ -1552,9 +1551,8 @@ app:CreateWindow("Account Management", {
 					end
 					return app.AlwaysShowUpdate(data);
 				end,
-			},
-			{	-- Linked Characters
-				text = "Linked Characters",
+			}),
+			app.CreateRawText("Linked Characters", {	-- Linked Characters
 				icon = 526421,
 				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
 				expanded = true,
@@ -1583,9 +1581,8 @@ app:CreateWindow("Account Management", {
 					end
 					return app.AlwaysShowUpdate(data);
 				end,
-			},
-			{	-- Pending Sync Queue
-				text = "Pending Sync Queue",
+			}),
+			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
 				icon = 236681,
 				description = "This shows the contents of the sync queue.",
 				expanded = true,
@@ -1615,7 +1612,7 @@ app:CreateWindow("Account Management", {
 					data.visible = #g > 1;
 					return false;
 				end,
-			},
+			}),
 		};
 		self.data = {
 			text = "Account Management",
