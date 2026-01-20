@@ -1039,8 +1039,10 @@ local function CreateRow(container, rows, i)
 
 	-- Background is used by the Map Highlight functionality.
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
-	row.Background:SetAllPoints();
 	row.Background:SetPoint("LEFT", 4, 0);
+	row.Background:SetPoint("BOTTOM");
+	row.Background:SetPoint("RIGHT");
+	row.Background:SetPoint("TOP");
 	row.Background:SetTexture(136810);
 
 	-- Indicator is used by the Instance Saves functionality.
