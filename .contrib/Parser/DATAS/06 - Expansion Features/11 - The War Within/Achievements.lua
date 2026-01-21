@@ -394,16 +394,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(41886, {	-- Weathered of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41887, {	-- Carved of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41888, {	-- Runed of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41892, {	-- Gilded of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(40591, {	-- Khaz Algar Diplomat
 			-- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.

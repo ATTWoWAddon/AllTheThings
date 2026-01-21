@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					i(244354, {	-- Ethereal Equipment Chest
-						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
 						["sym"] = {
 							-- All TWW Season 3 dungeons (Normal+ difficulty)
@@ -126,15 +126,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					-- Season 3
 					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
 						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 1}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
 						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 2}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(248410, {	-- Technomancer's Gift
 						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 6}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 				},
 			}),
@@ -758,19 +758,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					-- Season 3
 					i(251993, {	-- Gilded Starlight Matrix
-						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(231768, {	-- Enchanted Gilded Ethereal Crest
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(251994, {	-- Runed Starlight Matrix
-						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(231769, {	-- Enchanted Runed Ethereal Crest
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(231767, {	-- Enchanted Weathered Ethereal Crest
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 				},
 			}),
@@ -848,33 +848,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240928, {	-- Pouch of Weathered Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["cost"] = {{"c", CARVED_ETHEREAL_CREST, 15}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240927, {	-- Satchel of Carved Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = {{"c", WEATHERED_ETHEREAL_CREST, 15}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240926, {	-- Pack of Runed Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = {{"c", GILDED_ETHEREAL_CREST, 15}},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					-- Trade UP
 					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["cost"] = {{ "c", WEATHERED_ETHEREAL_CREST, 45 }},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
 						["cost"] = {{ "c", CARVED_ETHEREAL_CREST, 45 }},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(240929, {	-- Glorious Cluster of Gilded Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
 						["cost"] = {{ "c", RUNED_ETHEREAL_CREST, 45 }},
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 					}),
 				},
 			}),

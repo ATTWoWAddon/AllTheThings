@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					{ "n", 223533 },	-- Custodian Khubon
 					{ "i", 231757 },	-- Fractured Spark of Starlight
 				},
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(231757),	-- Fractured Spark of Starlight
 				},
@@ -95,13 +95,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			q(86363, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 			}),
 			q(86364, {	-- Crests from the Ether
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
