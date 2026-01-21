@@ -4121,8 +4121,8 @@ i(234126,{b=1,e=14,f=55,spellID=24707,u=2}),
 cq(81617,{b=1,e=14,itemID=219286,spellID=443161,u=2}),
 cq(86423,{b=1,e=14,itemID=234127,spellID=474688,u=2}),
 cq(81618,{b=1,e=14,itemID=219289,spellID=443164,u=2})}})}}),
-q(91041,{awp=110007,coords={a[579],{33.4,65.6,87}},description="Gift from 2025.",e=14,providers={a[106]},qis={244906},rwp=110207,g={
-toy(245580,{e=14})}}),
+q(91041,{awp=110007,coords={a[579],{33.4,65.6,87}},description="Gift from 2025.",e=14,providers={a[106]},qis={244906},rwp=110207,u=2,g={
+toy(245580,{e=14,u=2})}}),
 q(8769,{coords={a[579],{33.6,66.5,87}},e=14,isYearly=1,lvl=10,providers={{"o",180748}},qis={21327},g={
 r(21931,{e=14,itemID=17725,requireSkill=333,skillID=2494}),
 r(21943,{e=14,itemID=17722,requireSkill=165,skillID=2532}),
@@ -4218,9 +4218,9 @@ q(80685,{awp=110007,description="Gift from 2024.",e=14,lvl=10,maps=a[815],provid
 toy(218310,{b=1,e=14,u=2}),
 p(4694,{e=14,itemID=232653,npcID=233965,spellID=471751,u=2}),
 crit(66830,{achID=20510,e=14,id=3})}}),
-q(91042,{awp=110207,coords={{49.8,77.9,85},a[420]},description="Gift from 2025.",e=14,providers={a[113]},qis={244908},rwp=110207,g={
-toy(243304,{e=14}),
-p(4851,{e=14,itemID=245544,npcID=245616,spellID=1238915}),
+q(91042,{awp=110207,coords={{49.8,77.9,85},a[420]},description="Gift from 2025.",e=14,providers={a[113]},qis={244908},rwp=110207,u=2,g={
+toy(243304,{e=14,u=2}),
+p(4851,{e=14,itemID=245544,npcID=245616,spellID=1238915,u=2}),
 crit(105273,{achID=42192,e=14,id=3})}}),
 q(7022,{coords={a[418]},e=14,isYearly=1,lvl=10,qgs=a[177],r=2}),
 q(7023,{coords={{62.8,70.2,84},{55.6,49,103},{41.8,47.2,582}},e=14,isYearly=1,lvl=10,qgs={13435,23010,96304},r=2}),
@@ -4693,15 +4693,15 @@ s(223009,226455,{awp=110005,e=16,f=2,rwp=110205,u=2}),
 s(223008,226454,{awp=110005,e=16,f=2,rwp=110205,u=2}),
 p(162,{awp=20202,e=16,itemID=33154,npcID=23909,spellID=42609}),
 mnt(1245198,{awp=110205,b=1,description="While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",e=16,itemID=247721,lvl=10}),
-s(295324,247966,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295325,247967,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295329,247972,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=3}),
-s(297970,250708,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295326,247968,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295328,247971,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295322,247964,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295323,247965,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
-s(295327,247969,{awp=110205,description="The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",e=16,f=2}),
+s(295324,247966,{awp=110205,e=16,f=2}),
+s(295325,247967,{awp=110205,e=16,f=2}),
+s(295329,247972,{awp=110205,e=16,f=3}),
+s(297970,250708,{awp=110205,e=16,f=2}),
+s(295326,247968,{awp=110205,e=16,f=2}),
+s(295328,247971,{awp=110205,e=16,f=2}),
+s(295322,247964,{awp=110205,e=16,f=2}),
+s(295323,247965,{awp=110205,e=16,f=2}),
+s(295327,247969,{awp=110205,e=16,f=2}),
 s(65952,117356,{awp=60002,b=1,e=16,f=25,spellID=177944}),
 s(65951,117355,{awp=60002,b=1,e=16,f=7,spellID=43873}),
 i(208485,{e=16}),
@@ -9142,8 +9142,8 @@ ach(41056,{awp=110007,description="Each week finish 4 dungeons with Distilled Kn
 mnt(471538,{b=1,e=239,itemID=232624,lvl=10,u=2})}}),
 ach(41779,{awp=110107,description="Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",e=239,rwp=110200,u=2,g={
 mnt(1226144,{b=1,e=239,itemID=238739,lvl=10,u=2})}}),
-ach(61394,{awp=110207,description="Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",e=239,rwp=120000,g={
-i(254694,{e=239})}})}}),
+ach(61394,{awp=110207,description="Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",e=239,rwp=120000,u=2,g={
+i(254694,{e=239,u=2})}})}}),
 h(-19,{e=239,g={
 mnt(201098,{b=1,crs={639,643,644,645,646,647,1763,7267,7271,7272,7273,7275,7795,7796,7797,8127,10435,10436,10437,10438,10439,10516,10558,10808,10811,10812,10813,10997,11032,11143,11486,11487,11488,11489,11490,11492,11496,13280,14327,16807,16808,16809,17377,17380,17381,17770,17826,17879,17880,17881,17882,17941,17942,17975,17976,17977,17978,17980,17991,18105,18341,18343,18344,20870,20885,20886,20912,20923,22841,22871,22887,22898,22917,22927,22947,22948,23418,23426,23953,23954,24200,24201,24560,24664,24723,24744,26668,26687,26693,26723,26731,26763,26794,26796,26798,26861,28546,28586,28587,28684,28921,28923,29120,29304,29305,29306,29307,29308,29309,29310,29311,29932,30258,32845,32865,32867,32906,32930,33113,33118,33186,33271,33288,33293,33350,33432,33515,33651,33670,36476,36494,36497,36502,36658,39625,39665,39679,39698,39700,39705,40177,40319,40484,40586,40765,40788,42188,42333,43214,43438,43612,43614,43873,43875,43878,44566,44577,44819,45412,49045,52409,52498,52530,52558,52571,53494,53691,54123,54431,54432,54445,54544,56439,56448,56541,56589,56636,56637,56717,56719,56732,56747,56843,56877,56884,56906,58633,58664,58722,59080,59153,59184,59479,61243,61398,61442,61444,61445,61485,61567,61634,62205,74366,74475,74787,74790,75452,75509,75786,75829,75839,75927,75964,76141,76143,76177,76266,76407,77734,77803,77816,79545,79548,79852,80005,80805,80808,80816,81297,81305,81522,82682,83612,83613,83616,83846,83892,83893,83894,84550,84666,91003,91004,91005,91007,91784,91789,91797,91808,95885,95886,95887,95888,96015,96028,96512,98542,98696,98949,98965,98970,99192,99200,103344,104215,104217,104218,122963,122965,122967,122968,126832,126845,126847,126848,126969,126983,129699,130086,130099,131527,131545,131667,131823,131824,131825,131863,131864,133361,133379,133384,133389,133392,133944,134056,134058,134060,134063,134069,134828,134993,135322,135470,135472,135475,136160,136541,162058,162059,162060,162061,162099,162100,162102,162103,162133,162689,162691,162693,163077,163157,164185,164218,164255,164266,164267,164450,164555,164556,164558,164578,164967,165408,165410,166608},e=239,itemID=133543,lvl=27})}}),
 h(-22,{crs={98685,98690,101759,118828,151955,151987,180899,234555,239840,252687},e=239,g={
@@ -9166,8 +9166,8 @@ i(122340,{b=2,cost={{"c",1166,1000}},e=239,f=55,modID=22,spellID=180734}),
 i(122341,{b=2,cost={{"c",1166,1200}},e=239,f=55,modID=22,spellID=180736}),
 i(151614,{awp=70205,b=2,cost={{"c",1166,1000}},e=239,f=55,modID=22,spellID=247249}),
 i(151615,{awp=70205,b=2,cost={{"c",1166,1200}},e=239,f=55,modID=22,spellID=247251})}}),
-h(-45,{awp=110207,e=239,rwp=120000,g={
-q(92857,{e=239,providers={{"i",254694}},sym={{"select","itemID",257511,257513,257514,257516}}})}}),
+h(-45,{awp=110207,e=239,rwp=120000,u=2,g={
+q(92857,{e=239,providers={{"i",254694}},sym={{"select","itemID",257511,257513,257514,257516}},u=2})}}),
 h(-47,{e=239,g={
 ah(232877,{description="Available from the weekly Timewalking quest for characters below max level.",e=239,providers={{"i",226102},{"i",229355},{"i",229359},{"i",232877}},type="i",g={
 i(226046,{b=1,e=239,f=52,lvl=70,modID=22}),
@@ -15140,7 +15140,7 @@ s(223704,227222,{b=1,e=242,f=7,lvl=30}),
 s(223714,227232,{b=1,e=242,f=7,lvl=30})}}),
 crit(70437,{achID=40997,e=242,id=3})}})}})}}),
 h(-658,{awp=110205,e=242,g={
-ach(61406,{e=242,rwp=110207}),
+ach(61406,{e=242,rwp=110207,u=2}),
 h(-58,{e=242,g={
 n(231352,{coords={a[732]},e=242,g={
 cq(91961,{cost={{"c",1166,100}},e=242,itemID=249242,spellID=1248520,g={

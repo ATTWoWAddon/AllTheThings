@@ -1313,7 +1313,8 @@ crit(63288,{achID=19410,id=7,learnedAt=100,requireSkill=755}),
 crit(63289,{achID=19410,id=8,learnedAt=100,requireSkill=165}),
 crit(63290,{achID=19410,id=9,learnedAt=100,requireSkill=186}),
 crit(63291,{achID=19410,id=10,learnedAt=100,requireSkill=393}),
-crit(63292,{achID=19410,id=11,learnedAt=100,requireSkill=197})})}})}),
+crit(63292,{achID=19410,id=11,learnedAt=100,requireSkill=197})})}}),
+x(12)}),
 x(10,{awp=100002,g={
 h(-489,{
 h(-12,{
@@ -1682,7 +1683,21 @@ cu(2785,{requireSkill=171})}}),
 q(83253,{isWeekly=1,providers={{"i",225234}},requireSkill=171,g={
 cu(2785,{requireSkill=171})}}),
 q(83255,{isWeekly=1,providers={{"i",225235}},requireSkill=171,g={
-cu(2785,{requireSkill=171})}})}})}})}),
+cu(2785,{requireSkill=171})}})}})}}),
+x(12,{awp=120000,requireSkill=171,g={
+h(-12,{requireSkill=171,g={
+ach(42788,{requireSkill=171})}}),
+h(-45,{requireSkill=171}),
+flt(200,{description="These are learned by specialization.",requireSkill=171,g={
+r(1230891,{cost={{"c",3150,1}},learnedAt=80,requireSkill=171,skillID=2906}),
+r(1230870,{cost={{"c",3150,1}},learnedAt=60,requireSkill=171,skillID=2906}),
+r(1230858,{cost={{"c",3150,1}},learnedAt=25,requireSkill=171,skillID=2906}),
+r(1230885,{cost={{"c",3150,1}},learnedAt=75,requireSkill=171,skillID=2906}),
+r(1230874,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
+r(1230857,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
+r(1230875,{cost={{"c",3150,1}},learnedAt=30,requireSkill=171,skillID=2906}),
+r(1230867,{cost={{"c",3150,1}},learnedAt=25,requireSkill=171,skillID=2906}),
+r(1230856,{cost={{"c",3150,1}},learnedAt=90,requireSkill=171,skillID=2906})}})}})}),
 prof(164,{
 h(-12,{awp=100107,requireSkill=164,g={
 ach(18866,{providers={a[123]},requireSkill=164}),
@@ -2066,7 +2081,10 @@ h(-246,{requireSkill=164,g={
 q(83257,{isWeekly=1,providers={{"i",225232}},requireSkill=164,g={
 cu(2786,{requireSkill=164})}}),
 q(83256,{isWeekly=1,providers={{"i",225233}},requireSkill=164,g={
-cu(2786,{requireSkill=164})}})}})}})}),
+cu(2786,{requireSkill=164})}})}})}}),
+x(12,{awp=120000,requireSkill=164,g={
+h(-12,{requireSkill=164,g={
+ach(42792,{requireSkill=164})}})}})}),
 prof(185,{
 h(-12,{requireSkill=185,g={
 ach(1563,{awp=30002,requireSkill=185,g={
@@ -2081,7 +2099,7 @@ crit(6756,{achID=1563,id=9})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185}),
 ach(1796,{awp=30002,rank=50,requireSkill=185}),
 ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",43016},{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"c",402,50}},rank=50,requireSkill=185}),
@@ -2571,7 +2589,10 @@ q(72251,{coords={{47.1,82.7,2022}},description="This quest can only be picked up
 q(72250,{coords={{76.4,35.7,2022}},description="This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",lc=a[131],lvl=10,qgs={198094},requireSkill=185})}})}}),
 x(11,{awp=110002,requireSkill=185,g={
 h(-12,{requireSkill=185,g={
-ach(19414,{requireSkill=185})}})}})}),
+ach(19414,{requireSkill=185})}})}}),
+x(12,{awp=120000,requireSkill=185,g={
+h(-12,{requireSkill=185,g={
+ach(42795,{requireSkill=185})}})}})}),
 prof(333,{
 h(-12,{awp=100107,requireSkill=333,g={
 ach(18769,{requireSkill=333}),
@@ -2875,7 +2896,10 @@ cu(2787,{requireSkill=333})}}),
 q(84294,{description="Rewarded when disenchanting items.",isWeekly=1,providers={a[56]},requireSkill=333,g={
 cu(2787,{requireSkill=333})}}),
 q(84295,{description="Rewarded when disenchanting items.",isWeekly=1,providers={{"i",227661}},requireSkill=333,g={
-cu(2787,{requireSkill=333})}})}})}})}),
+cu(2787,{requireSkill=333})}})}})}}),
+x(12,{awp=120000,requireSkill=333,g={
+h(-12,{requireSkill=333,g={
+ach(42787,{requireSkill=333})}})}})}),
 prof(202,{
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18901,{requireSkill=202,g={
@@ -3330,7 +3354,10 @@ h(-246,{requireSkill=202,g={
 q(83260,{isWeekly=1,providers={{"i",225228}},requireSkill=202,g={
 cu(2788,{requireSkill=202})}}),
 q(83261,{isWeekly=1,providers={{"i",225229}},requireSkill=202,g={
-cu(2788,{requireSkill=202})}})}})}})}),
+cu(2788,{requireSkill=202})}})}})}}),
+x(12,{awp=120000,requireSkill=202,g={
+h(-12,{requireSkill=202,g={
+ach(42798,{requireSkill=202})}})}})}),
 prof(129,{rwp=80001,u=2,g={
 x(1,{awp=30002,requireSkill=129,u=2,g={
 ach(131,{requireSkill=129,u=2}),
@@ -3740,7 +3767,12 @@ s(222975,226385,{f=23,lvl=70,requireSkill=356})}}),
 flt(50,{requireSkill=356,g={
 i(226392,{f=55,requireSkill=356,spellID=458859,g={
 cu(3055,{requireSkill=356})}}),
-i(225768,{f=55,requireSkill=356,spellID=456068})}})}})}),
+i(225768,{f=55,requireSkill=356,spellID=456068})}})}}),
+x(12,{awp=120000,requireSkill=356,g={
+h(-12,{requireSkill=356,g={
+ach(42797,{requireSkill=356})}}),
+flt(101,{requireSkill=356,g={
+p(4951,{itemID=260942,npcID=256201,requireSkill=356,spellID=1267090})}})}})}),
 prof(182,{
 h(-26,{awp=30002,requireSkill=182,rwp=60002,u=2,g={
 r(81708,{awp=40003,rank=1,requireSkill=182,u=2}),
@@ -4038,7 +4070,10 @@ cu(2789,{requireSkill=182})}}),
 q(81420,{isWeekly=1,providers={a[53]},requireSkill=182,g={
 cu(2789,{requireSkill=182})}}),
 q(81421,{isWeekly=1,providers={{"i",224265}},requireSkill=182,g={
-cu(2789,{requireSkill=182})}})}})}})}),
+cu(2789,{requireSkill=182})}})}})}}),
+x(12,{awp=120000,requireSkill=182,g={
+h(-12,{requireSkill=182,g={
+ach(42793,{requireSkill=182})}})}})}),
 prof(773,{awp=30002,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18858,{r=1,requireSkill=773,g={
@@ -4331,7 +4366,9 @@ q(83264,{isWeekly=1,providers={{"i",225226}},requireSkill=773,g={
 cu(2790,{requireSkill=773})}}),
 q(83262,{isWeekly=1,providers={{"i",225227}},requireSkill=773,g={
 cu(2790,{requireSkill=773})}})}})}}),
-x(12,{requireSkill=773})}}),
+x(12,{requireSkill=773,g={
+h(-12,{awp=120000,requireSkill=773,g={
+ach(42796,{requireSkill=773})}})}})}}),
 prof(755,{
 h(-12,{awp=100107,requireSkill=755,g={
 ach(18880,{providers={a[127]},requireSkill=755}),
@@ -4598,7 +4635,10 @@ h(-246,{requireSkill=755,g={
 q(83265,{isWeekly=1,providers={{"i",225224}},requireSkill=755,g={
 cu(2791,{requireSkill=755})}}),
 q(83266,{isWeekly=1,providers={{"i",225225}},requireSkill=755,g={
-cu(2791,{requireSkill=755})}})}})}})}),
+cu(2791,{requireSkill=755})}})}})}}),
+x(12,{awp=120000,requireSkill=755,g={
+h(-12,{requireSkill=755,g={
+ach(42789,{requireSkill=755})}})}})}),
 prof(165,{
 h(-12,{awp=100107,requireSkill=165,g={
 ach(18884,{providers={a[128]},requireSkill=165}),
@@ -5052,7 +5092,10 @@ h(-246,{requireSkill=165,g={
 q(83267,{isWeekly=1,providers={{"i",225223}},requireSkill=165,g={
 cu(2792,{requireSkill=165})}}),
 q(83268,{isWeekly=1,providers={{"i",225222}},requireSkill=165,g={
-cu(2792,{requireSkill=165})}})}})}})}),
+cu(2792,{requireSkill=165})}})}})}}),
+x(12,{awp=120000,requireSkill=165,g={
+h(-12,{requireSkill=165,g={
+ach(42786,{requireSkill=165})}})}})}),
 prof(633,{description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",OnUpdate=function(t)t.DontEnforceSkillRequirements=true;end,g={
 r(1804,{c=a[309],requireSkill=921}),
 r(921,{c=a[309],requireSkill=921})}}),
@@ -5353,7 +5396,10 @@ cu(2793,{requireSkill=186})}}),
 q(83050,{isWeekly=1,providers={a[54]},requireSkill=186,g={
 cu(2793,{requireSkill=186})}}),
 q(83049,{isWeekly=1,providers={{"i",224584}},requireSkill=186,g={
-cu(2793,{requireSkill=186})}})}})}})}),
+cu(2793,{requireSkill=186})}})}})}}),
+x(12,{awp=120000,requireSkill=186,g={
+h(-12,{requireSkill=186,g={
+ach(42791,{requireSkill=186})}})}})}),
 prof(393,{
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18834,{requireSkill=393,g={
@@ -5607,7 +5653,7 @@ i(224807,{b=1,requireSkill=393,spellID=454023})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=393,g={
 r(442647,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
 r(442654,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
-r(442615,{cost={{"c",2794,1}},requireSkill=393}),
+r(442615,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
 r(442646,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
 r(442652,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
 r(442649,{cost={{"c",2794,1}},requireSkill=393,skillID=2882}),
@@ -5653,7 +5699,10 @@ cu(2794,{requireSkill=393})}}),
 q(81463,{isWeekly=1,providers={a[55]},requireSkill=393,g={
 cu(2794,{requireSkill=393})}}),
 q(81464,{isWeekly=1,providers={{"i",224781}},requireSkill=393,g={
-cu(2794,{requireSkill=393})}})}})}})}),
+cu(2794,{requireSkill=393})}})}})}}),
+x(12,{awp=120000,requireSkill=393,g={
+h(-12,{requireSkill=393,g={
+ach(42790,{requireSkill=393})}})}})}),
 prof(197,{
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18888,{providers={a[129]},requireSkill=197}),
@@ -6059,4 +6108,7 @@ h(-246,{requireSkill=197,g={
 q(83270,{isWeekly=1,providers={{"i",225220}},requireSkill=197,g={
 cu(2795,{requireSkill=197})}}),
 q(83269,{isWeekly=1,providers={{"i",225221}},requireSkill=197,g={
-cu(2795,{requireSkill=197})}})}})}})})};
+cu(2795,{requireSkill=197})}})}})}}),
+x(12,{awp=120000,requireSkill=197,g={
+h(-12,{requireSkill=197,g={
+ach(42794,{requireSkill=197})}})}})})};
