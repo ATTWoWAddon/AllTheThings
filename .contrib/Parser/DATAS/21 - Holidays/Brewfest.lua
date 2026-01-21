@@ -632,7 +632,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						},
 					}),
 				}),
-				n(QUESTS, {
+				n(QUESTS, sharedData({
+					["isYearly"] = true,
+				},{
 					q(90870, {	-- Gathering the Grub (A)
 						["qg"] = 242172,	-- Gritta Brewstone
 						["coord"] = { 56.0, 37.4, DUN_MOROGH },
@@ -695,7 +697,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { ADDED_11_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
-				}),
+				})),
 			},
 		}),
 		n(23872, {	-- Coren Direbrew
