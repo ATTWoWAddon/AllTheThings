@@ -314,20 +314,20 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "selectprofession" then
 				local requireSkill, response = sym[2], nil;
 				response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-				if response then tinsert(searchResults, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
+				if response then tinsert(searchResults, app.CreateRawText(GROUP_FINDER, {icon = app.asset("Category_D&R"),g=response})); end
 				response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-				if response then tinsert(searchResults, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
+				if response then tinsert(searchResults, app.CreateRawText(BUG_CATEGORY2, {icon = app.asset("Category_Zones"),g=response}));  end
 				response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-				if response then tinsert(searchResults, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
+				if response then tinsert(searchResults, app.CreateRawText(TRANSMOG_SOURCE_4, {icon = app.asset("Category_WorldDrops"),g=response}));  end
 				response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-				if response then tinsert(searchResults, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+				if response then tinsert(searchResults, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {icon = app.asset("Category_Crafting"),g=response}));  end
 				response = app:BuildSearchResponse(app.Categories.Holidays, "requireSkill", requireSkill);
 				if response then tinsert(searchResults, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, response));  end
 				response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill);
-				if response then tinsert(searchResults, {text=BATTLE_PET_SOURCE_7,icon = app.asset("Category_Event"),g=response});  end
+				if response then tinsert(searchResults, app.CreateRawText(BATTLE_PET_SOURCE_7, {icon = app.asset("Category_Event"),g=response}));  end
 				if app.Categories.ExpansionFeatures then
 					response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-					if response then tinsert(searchResults, {text=EXPANSION_FILTER_TEXT,icon = app.asset("Category_ExpansionFeatures"),g=response}); end
+					if response then tinsert(searchResults, app.CreateRawText(EXPANSION_FILTER_TEXT, {icon = app.asset("Category_ExpansionFeatures"),g=response})); end
 				end
 			elseif cmd == "pop" then
 				-- Instruction to "pop" all of the group values up one level.
@@ -1463,6 +1463,7 @@ function app:GetDataCache()
 		local rootData = setmetatable({
 			text = L["TITLE"],
 			hash = "ATT",
+			__type = "ROOT",
 			icon = app.asset("logo_32x32"),
 			preview = app.asset("Discord_2_128"),
 			description = L["DESCRIPTION"],

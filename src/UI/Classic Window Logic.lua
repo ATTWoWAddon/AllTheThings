@@ -1557,7 +1557,8 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	inst.progress = nil;
 	inst.total = nil;
 	inst.g = nil;
-	app.MergeObject(header.g, inst);
+	tinsert(header.g, inst);
+	--app.MergeObject(header.g, inst);
 	return inst;
 end
 function app:CreateWindow(suffix, settings)
