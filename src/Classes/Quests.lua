@@ -1577,10 +1577,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return QuestAsyncRefreshFunc
 	end,
 	CollectibleType = function() return "Quests" end,
-	text = app.IsClassic and function(t)
-		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
-		return t.name;
-	end or nil,
 	name = function(t)
 		-- TODO: need app.GetAutomaticHeaderData to provide name if not returned from server prior to using QuestNameDefault
 		return QuestNameFromID[t.questID] or RETRIEVING_DATA
@@ -1772,9 +1768,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 }, (function(t) return t.type == "hqt" end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
-	text = function(t)
-		return t.locked and Colorize(t.name, app.Colors.Locked) or Colorize(t.name, app.Colors.Breadcrumb)
-	end,
 	collectible = app.IsClassic and function(t)
 		if app.Settings.Collectibles.Quests then
 			if C_QuestLog_IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
@@ -1815,9 +1808,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 
 app.CreateQuest = createQuest;
 app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
-	text = function(t)
-		return t.name;
-	end,
 	name = function(t)
 		local questID = t.questID;
 		if questID then

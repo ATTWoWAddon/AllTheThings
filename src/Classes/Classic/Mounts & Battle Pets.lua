@@ -276,7 +276,7 @@ end
 app.CreateSpecies = app.CreateClass("Species", "speciesID", speciesFields);
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
+	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
 	end,
 	["icon"] = function(t)

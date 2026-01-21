@@ -10,6 +10,7 @@ local type,pairs,setmetatable,rawget,unpack,rawset,select
 local GetRelativeValue = app.GetRelativeValue;
 local containsValue = app.containsValue;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local TryColorizeName = app.TryColorizeName
 
 -- Lib Helpers
 local constructor = function(id, t, typeID)
@@ -123,7 +124,7 @@ local DefaultFields = {
 	end,
 	-- Default text should be a valid link or name
 	["text"] = function(t)
-		return t.link or t.name;
+		return TryColorizeName(t, t.link or t.name)
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 	["modItemID"] = function(t)
@@ -269,18 +270,6 @@ local DefaultFields = {
 		return canretry
 	end,
 };
-
-if app.IsRetail then
-	local TryColorizeName = app.TryColorizeName
-	-- Crieve doesn't see these fields being included as necessary,
-	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
-	-- Default text should be a valid link or name
-	-- In Retail, text can be colored and can be based on a variety of possible fields
-	-- trying to individually maintain variable coloring in every object class is quite absurd
-	DefaultFields.text = function(t)
-		return t.link or TryColorizeName(t)
-	end
-end
 
 
 local CloneDictionary = app.CloneDictionary

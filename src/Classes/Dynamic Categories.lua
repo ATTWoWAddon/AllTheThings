@@ -57,7 +57,7 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	["IgnoreBuildRequests"] = function(t)
 		return true;
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.dynamicWindowData.text or ("Dynamic Category: " .. t.suffix);
 	end,
 	["icon"] = function(t)

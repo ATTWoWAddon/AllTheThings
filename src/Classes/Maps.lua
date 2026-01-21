@@ -1059,9 +1059,6 @@ end, {
 
 -- Maps
 app.CreateMap = app.CreateClass("Map", "mapID", {
-	["text"] = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	["name"] = function(t)
 		return GetMapName(t.mapID);
 	end,
@@ -1155,9 +1152,6 @@ end
 
 -- Instances
 local instanceFields = {
-	["text"] = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	["name"] = function(t)
 		return GetMapName(t.mapID);
 	end,

@@ -283,7 +283,7 @@ local C_PetBattles_GetAbilityInfoByID
 	= C_PetBattles.GetAbilityInfoByID
 if C_PetBattles_GetAbilityInfoByID then
 	app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
-		["text"] = function(t)
+		["name"] = function(t)
 			return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 		end,
 		["icon"] = function(t)
@@ -298,7 +298,7 @@ else
 end
 
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
+	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
 	end,
 	["icon"] = function(t)

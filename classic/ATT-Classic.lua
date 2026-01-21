@@ -1869,7 +1869,7 @@ app.AddEventHandler("OnRecalculate", function()
 	wipe(CurrencyRequirementTotals);
 end);
 app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.info.name;
 	end,
 	["icon"] = function(t)
@@ -2054,9 +2054,6 @@ end;
 local spellFields = {
 	CACHE = function() return "Spells" end,
 	IsClassIsolated = true,
-	["text"] = function(t)
-		return t.link;
-	end,
 	["craftText"] = function(t)
 		return Colorize(t.name, CraftTypeIDToColor(t.craftTypeID));
 	end,

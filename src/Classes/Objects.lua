@@ -54,9 +54,6 @@ end
 
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
-	text = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	name = function(t)
 		return app.ObjectNames[t.objectID] or t.basename;
 	end,

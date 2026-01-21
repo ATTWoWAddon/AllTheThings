@@ -393,7 +393,7 @@ app.AddCustomWindowOnUpdate("MiniList", function(self, force, got)
 					app.report(app:Linkify(app.Version.." (Click to Report) No data found for this Location!", app.Colors.ChatLinkError, "dialog:" .. popupID));
 				end
 				self:SetData(app.CreateMap(mapID, {
-					["text"] = L.MINI_LIST .. " [" .. mapID .. "]",
+					["name"] = L.MINI_LIST .. " [" .. mapID .. "]",
 					["icon"] = 237385,
 					["description"] = L.MINI_LIST_DESC,
 					["visible"] = true,

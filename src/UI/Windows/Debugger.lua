@@ -191,7 +191,7 @@ app:CreateWindow("Debugger", {
 						npcID = tonumber(npcID);
 						--print("GOSSIP_SHOW", type, npcID);
 						if type == "GameObject" then
-							info = { ["objectID"] = npcID, ["text"] = UnitName("npc") };
+							info = { ["objectID"] = npcID, ["name"] = UnitName("npc") };
 						else
 							info = { ["npcID"] = npcID };
 							info.name = UnitName("npc");
@@ -239,7 +239,7 @@ app:CreateWindow("Debugger", {
 				if npcID then
 					npcID = tonumber(npcID);
 					if type == "GameObject" then
-						info = { ["objectID"] = npcID, ["text"] = UnitName(npc), ["g"] = { info } };
+						info = { ["objectID"] = npcID, ["name"] = UnitName(npc), ["g"] = { info } };
 					else
 						info.qgs = {npcID};
 						info.name = UnitName(npc);

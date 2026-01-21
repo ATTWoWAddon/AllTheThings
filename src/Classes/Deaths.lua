@@ -28,7 +28,7 @@ local function OnTooltipForDeathTracker(t, tooltipInfo)
 	end
 end
 local fields = {
-	["text"] = function(t)
+	["name"] = function(t)
 		return "Total Deaths";
 	end,
 	["icon"] = function(t)

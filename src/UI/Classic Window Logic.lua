@@ -2237,15 +2237,14 @@ local function OnInitForPopout(self, questID, group)
 					for sourceQuestID,i in pairs(subSourceQuests) do
 						tinsert(sourceQuests, tonumber(sourceQuestID));
 					end
-					tinsert(prereqs, {
-						["text"] = "Upon Completion",
+					tinsert(prereqs, app.CreateRawText("Upon Completion", {
 						["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
 						["icon"] = 135932,
 						["visible"] = true,
 						["expanded"] = true,
 						["hideText"] = true,
 						["g"] = g,
-					});
+					}));
 					g = prereqs;
 					breakafter = breakafter + 1;
 					if breakafter >= 100 then
@@ -2447,12 +2446,11 @@ local function OnInitForPopout(self, questID, group)
 	local dataKey = self.data.key;
 	if dataKey then
 		if group.cost and type(group.cost) == "table" then
-			local costGroup = {
-				["text"] = "Cost",
+			local costGroup = app.CreateRawText("Cost", {
 				["description"] = "The following contains all of the relevant items or currencies needed to acquire this.",
 				["icon"] = 133785,
 				["g"] = {},
-			};
+			});
 			local costItem;
 			for i,c in ipairs(group.cost) do
 				costItem = nil;
@@ -2475,13 +2473,12 @@ local function OnInitForPopout(self, questID, group)
 		end
 
 		if group.providers or group.qgs or group.crs then
-			local sourceGroup = {
-				["text"] = "Sources",
+			local sourceGroup = app.CreateRawText("Sources", {
 				["description"] = "The following contains all of the relevant sources.",
 				["icon"] = 133785,
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
-			};
+			});
 			local sourceItem;
 			if group.providers then
 				for _,p in ipairs(group.providers) do
@@ -2552,12 +2549,11 @@ local function OnInitForPopout(self, questID, group)
 		end
 	end
 	if group.GetRelatedThings then
-		local relatedThingsGroup = {
-			["text"] = "Related Things",
+		local relatedThingsGroup = app.CreateRawText("Related Things", {
 			["description"] = "The following contains things that may be related or relevant to the content.",
 			["icon"] = 133785,
 			["g"] = {},
-		};
+		});
 		local relatedThings = {};
 		group.GetRelatedThings(group, relatedThings);
 		for i,o in ipairs(relatedThings) do

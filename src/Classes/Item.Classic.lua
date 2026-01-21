@@ -154,9 +154,6 @@ local collectedAsTransmog = function(t)
 	end
 end;
 local itemFields = {
-	["text"] = function(t)
-		return t.link;
-	end,
 	["icon"] = function(t)
 		local itemID = t.itemID
 		return itemID and GetItemIcon(itemID) or 134400;
