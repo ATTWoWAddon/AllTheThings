@@ -409,6 +409,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 		}),
 		header(HEADERS.Achievement, 61916, {	-- Rage of the Ren'dorei
 			["lore"] = "The Void Elf Leona has sought the knowledge of the Illidari Demon Hunters as a novel means to harness the Void.",
+			["timeline"] = { ADDED_12_0_0 },
 			["groups"] = {
 				q(92630, {	-- The Pursuit Continues
 					["qgs"] = {

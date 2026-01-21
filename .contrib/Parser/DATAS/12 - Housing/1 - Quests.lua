@@ -61,7 +61,7 @@ root(ROOTS.Housing, n(QUESTS, {
 				255520,	-- Xiz'ro [H]
 			},
 			["coords"] = {
-				{ 51.9, 38.7, FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
+				{ 54.0 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
 				{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro [H]
 			},
 		}),

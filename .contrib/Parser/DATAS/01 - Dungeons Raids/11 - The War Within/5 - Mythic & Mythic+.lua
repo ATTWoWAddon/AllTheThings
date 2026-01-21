@@ -2,6 +2,28 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		i(234425, {	-- Forgotten Folio
+			["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
+			["sym"] = {{"select","itemID",
+				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+				223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
+				223115,	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
+				223116,	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
+				223117,	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
+				223118,	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
+				223119,	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
+				223120,	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
+				224424,	-- Pattern: Artisan Chef's Hat (RECIPE!)
+				223102,	-- Pattern: Busy Bee's Buckle (RECIPE!)
+				223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
+				223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
+				226643,	-- Plans: Beledar's Bulwark (RECIPE!)
+				-- 223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
+			}},
+		}),
+	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_TEMPERED, bubbleDownSelf({
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }
@@ -291,54 +313,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["timeline"] = { ADDED_11_2_0, REMOVED_11_2_0 },	-- Impossible to complete
 			}),
 		})),
-		n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-			i(234425, {	-- Forgotten Folio
-				["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
-				["sym"] = {{"select","itemID",
-					223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
-					223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
-					223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
-					223115,	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
-					223116,	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
-					223117,	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
-					223118,	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
-					223119,	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
-					223120,	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
-					224424,	-- Pattern: Artisan Chef's Hat (RECIPE!)
-					223102,	-- Pattern: Busy Bee's Buckle (RECIPE!)
-					223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
-					223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
-					226643,	-- Plans: Beledar's Bulwark (RECIPE!)
-					-- 223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
-				}},
-			}),
-		})),
 		n(QUESTS, {
 			q(87327, {	-- A Challenger's Resilience
 				["description"] = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
-				["qg"] = 197915,	-- Lindormi
+				["qgs"] = {
+					197711,	-- Lindormi
+					197915,	-- Lindormi
+				},
 				["coord"] = { 53.9, 39.0, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART },
 				["isYearly"] = true,	-- can be completed once per season
 			}),
 		}),
 	}),
-	--[[	-- Maybe better here than under Tazavesh?
-	d(DIFFICULTY.DUNGEON.MYTHIC, {
-		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
-			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }
-		},{
-			inst(1194, {	-- Tazavesh, the Veiled Market
-				ach(61093, {	-- Flawless Transaction
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-				}),
-				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-				}),
-			}),
-		})),
-	}),
-	--]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
