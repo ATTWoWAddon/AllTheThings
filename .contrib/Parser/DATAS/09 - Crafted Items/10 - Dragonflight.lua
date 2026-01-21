@@ -1547,7 +1547,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198205, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Brainwave Amplifier
 			i(198244, {["requireSkill"] = MINING}),	-- Khaz'gorite Delver's Helmet
 			i(198226, {["requireSkill"] = FISHING}),	-- Khaz'gorite Fisherfriend
-			i(198246, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Encased Samophlange
+			i(198246, {	-- Khaz'gorite Encased Samophlange
+				["requireSkill"] = ENGINEERING,
+				-- #if AFTER 12.0.0
+				["collectible"] = false,
+				-- #endif
+			}),
 			i(198234, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
 			i(198235, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
 			i(194125, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
@@ -3005,7 +3010,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193615, {["requireSkill"] = JEWELCRAFTING}),	-- Jeweler's Cover
 			i(193488, {["requireSkill"] = HERBALISM}),	-- Lavish Floral Pack
 			i(193492, {["requireSkill"] = LEATHERWORKING}),	-- Masterwork Smock
-			i(193485, {["requireSkill"] = ENGINEERING}),	-- Protective Gloves
+			i(193485, {	-- Protective Gloves
+				["requireSkill"] = ENGINEERING,
+				-- #if AFTER 12.0.0
+				["collectible"] = false,
+				-- #endif
+			}),
 			i(193489, {["requireSkill"] = SKINNING}),	-- Reinforced Pack
 			i(193616, {["requireSkill"] = JEWELCRAFTING}),	-- Resplendent Cover
 			i(193486, {["requireSkill"] = LEATHERWORKING}),	-- Resilient Smock
