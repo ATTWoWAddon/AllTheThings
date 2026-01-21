@@ -1226,6 +1226,7 @@ Mixin(settings, ATTSettingsPanelMixin);
 local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
+	if InCombatLockdown() then return end
 	if not openToCategory(RootCategoryID or AddOnCategoryID) then
 		openToCategory(AddOnCategoryID);
 	end
