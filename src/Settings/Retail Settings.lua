@@ -1227,9 +1227,7 @@ local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
 	if InCombatLockdown() then return end
-	if not openToCategory(RootCategoryID or AddOnCategoryID) then
-		openToCategory(AddOnCategoryID);
-	end
+	openToCategory(RootCategoryID or AddOnCategoryID)
 end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
 	---@class ATTOptionsPageForRetail: Frame
