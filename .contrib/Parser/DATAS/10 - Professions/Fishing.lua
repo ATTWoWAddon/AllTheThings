@@ -890,5 +890,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			}),
 		}),
+		filter(BATTLE_PETS, {
+			i(260942),	-- Bubbly Snapling (PET!)
+		}),
 	})),
 })));

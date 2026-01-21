@@ -2599,26 +2599,41 @@ i(243216);	-- Snapped Antennae
 ------------------
 -- PATCH 12.0.0 --
 ------------------
+i(238482);	-- A Whole Lot of Nothing
+i(238494);	-- Another's Treasure
 i(260664);	-- Bioluminescent Flower Petals
 i(260670);	-- Bloody Broken Beak
+i(238483);	-- Bottom Grass
 i(260652);	-- Broken Wildfire Claw
 i(244041);	-- Budding Seed
 i(260669);	-- Colorless Pebbles
+i(238484);	-- Damp Washcloth
 i(260687);	-- Decaying Leather
+i(238488);	-- Definitely a Rock
 i(260647);	-- Digested Human Hand
 i(220262);	-- Elongated Proboscis
+i(238486);	-- Empty Can
 i(247672);	-- Eversong Fizz
 i(260672);	-- Fetid Eye
 i(260689);	-- Fine Bioluminescent Powder
 i(260642);	-- Fossilized Wildlife
+i(238481);	-- Glittering Garbage
 i(260661);	-- Glowing Shrub
+i(238485);	-- Grotesque Globule
+i(238496);	-- Hunk O' Junk
+i(238487);	-- Kickin' Can
 i(260606);	-- Light and Shaggy Fur
 i(260693);	-- Mossy Lump of Dirt
+i(238480);	-- Opened Lockbox
 i(243845);	-- Petalwrap Sack
 i(243844);	-- Petalwrap Bag
 i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
+i(238477);	-- Rotten Meat
 i(244040);	-- Sack of Seeds
+i(238493);	-- Screaming Rock
+i(238478);	-- Shimmering Seaweed
+i(238492);	-- Silent Rock
 i(247673);	-- Silvermoon Sin'gria
 i(260665);	-- Sizable Tusk
 i(260616);	-- Soft Marine Fungi
@@ -2627,6 +2642,7 @@ i(260659);	-- Stellar Vortex Residue
 i(262786);	-- Suntouched Special Reserve
 i(260648);	-- Tattered Clothes
 i(238944);	-- Torn Material
+i(238479);	-- Torn Caster's Net
 i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
 i(260645);	-- Water Filled Organ

@@ -77,10 +77,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 28.3, 56.2, HALLOWFALL },
 						["groups"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, {
 							{		-- RENOWN 1 --
-								i(245293, {	-- Collection of Arathi Scripture (DECOR!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 1200 }},
-									["timeline"] = { ADDED_11_2_7 },
-								}),
 							}, {	-- RENOWN 2 --
 								i(238850, {	-- Arathi Entertainer's Flame (TOY!)
 									["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
@@ -106,6 +102,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									["cost"] = {{ "c", RESONANCE_CRYSTALS, 3250 }},
 								}),
 							}, {	-- RENOWN 8 --
+								i(245293, {	-- Collection of Arathi Scripture (DECOR!)
+									["cost"] = {{ "c", RESONANCE_CRYSTALS, 1200 }},
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 								i(238837, {	-- Delver's Dirigible Schematic: Pale Paint (MM!)
 									["cost"] = {{ "c", RESONANCE_CRYSTALS, 3250 }},
 								}),

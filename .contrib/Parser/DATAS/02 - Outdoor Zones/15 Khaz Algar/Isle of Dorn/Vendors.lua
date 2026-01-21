@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					i(228424),	-- Recipe: Cinder Nectar (RECIPE!)
 					i(223153, {	-- Soaring Meaderbee (MOUNT!)
-						["cost"] = { {"i", 225557, 900 } },	-- 900x Sizzling Cinderpollen
+						["cost"] = { { "i", 225557, 900 } },	-- 900x Sizzling Cinderpollen
 					}),
 				},
 			}),
@@ -22,13 +22,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(253021, {	-- Freywold Bench (DECOR!)
-						["cost"] = { {"i", RESONANCE_CRYSTALS, 400 } },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 400 } },
 					}),
 					i(253166, {	-- Freywold Fountain (DECOR!)
-						["cost"] = { {"i", RESONANCE_CRYSTALS, 1100 } },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 1100 } },
 					}),
 					i(253035, {	-- Freywold Seat (DECOR!)
-						["cost"] = { {"i", RESONANCE_CRYSTALS, 300 } },
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 300 } },
 					}),
 				},
 			}),

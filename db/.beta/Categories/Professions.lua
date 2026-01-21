@@ -3774,7 +3774,9 @@ cu(3055,{requireSkill=356})}}),
 i(225768,{f=55,requireSkill=356,spellID=456068})}})}}),
 x(12,{awp=120000,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
-ach(42797,{requireSkill=356})}})}})}),
+ach(42797,{requireSkill=356})}}),
+flt(101,{requireSkill=356,g={
+p(4951,{itemID=260942,npcID=256201,requireSkill=356,spellID=1267090})}})}})}),
 prof(182,{
 h(-26,{awp=30002,requireSkill=182,rwp=60002,u=2,g={
 r(81708,{awp=40003,rank=1,requireSkill=182,u=2}),

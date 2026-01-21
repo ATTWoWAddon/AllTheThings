@@ -346,7 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			q(58793, {	-- Faith Through the Darkness
 				["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
 				["provider"] = { "n", 162542 },	-- Kleia
-				["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
+				["coord"] = { 43.6, 51.6, ORIBOS_RING },
 			}),
 			q(57117, {	-- Fallen to Their Vices
 				["sourceQuests"] = {

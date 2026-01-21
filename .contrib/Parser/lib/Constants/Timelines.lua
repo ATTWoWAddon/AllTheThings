@@ -649,28 +649,27 @@ CREATED_11_2_0_SEASONSTART = "created 11.2.0.62493";	-- The War Within 11.2.0 Se
 ADDED_11_2_0_SEASONSTART = "added 11.2.0.62493";		-- The War Within 11.2.0 Season 3 launch on August 12th, 2025
 REMOVED_11_2_0_SEASONSTART = "removed 11.2.0.62493";	-- The War Within 11.2.0 Season 3 launch on August 12th, 2025
 ADDED_LEGION_REMIX = "added 11.2.5.63660";				-- Legion Remix launch on October 7th, 2025
--- Temporarely naming this 12.0.0 as ingame it displays as removed with 11.2.7, which happens ~6 weeks before it actually ends
-REMOVED_LEGION_REMIX_END = "removed 12.0.0.99999";		-- Legion Remix ends on January 19th, 2026
 CREATED_11_2_5 = "created 11.2.5.63660";				-- The War Within 11.2.5 launch on October 7th, 2025
 ADDED_11_2_5 = "added 11.2.5.63660";					-- The War Within 11.2.5 launch on October 7th, 2025
 REMOVED_11_2_5 = "removed 11.2.5.63660";				-- The War Within 11.2.5 launch on October 7th, 2025
 CREATED_11_2_7 = "created 11.2.7.64704";				-- The War Within 11.2.7 launch on December 2nd, 2025
 ADDED_11_2_7 = "added 11.2.7.64704";					-- The War Within 11.2.7 launch on December 2nd, 2025
 REMOVED_11_2_7 = "removed 11.2.7.64704";				-- The War Within 11.2.7 launch on December 2nd, 2025
+REMOVED_LEGION_REMIX_END = "removed 11.2.7.65299";		-- Legion Remix ends on January 19th, 2026
 
 --------------
 -- MIDNIGHT --
 --------------
-CREATED_12_0_0 = "created 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
-ADDED_12_0_0 = "added 12.0.0";							-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
-REMOVED_12_0_0 = "removed 12.0.0";						-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+CREATED_12_0_0 = "created 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+ADDED_12_0_0 = "added 12.0.0.65459";					-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+REMOVED_12_0_0 = "removed 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
 REMOVED_MID_LAUNCH = "removed 12.0.1";					-- Midnight 12.0.1/Pre-Patch ends on TODO
-CREATED_12_0_0_LAUNCH = "created 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
-ADDED_12_0_0_LAUNCH = "added 12.0.0";					-- Midnight 12.0.0 Launch on March 2nd, 2026
-REMOVED_12_0_0_LAUNCH = "removed 12.0.0";				-- Midnight 12.0.0 Launch on March 2nd, 2026
-CREATED_12_0_0_SEASONSTART = "created 12.0.0";			-- Midnight 12 Seasonstart
-ADDED_12_0_0_SEASONSTART = "added 12.0.0";				-- Midnight 12.Seasonstart
-REMOVED_12_0_0_SEASONSTART = "removed 12.0.0";			-- Midnight 12.Seasonstart
+CREATED_12_0_0_LAUNCH = "created 12.0.1";				-- Midnight 12.0.1 Launch on March 2nd, 2026
+ADDED_12_0_0_LAUNCH = "added 12.0.1";					-- Midnight 12.0.1 Launch on March 2nd, 2026
+REMOVED_12_0_0_LAUNCH = "removed 12.0.1";				-- Midnight 12.0.1 Launch on March 2nd, 2026
+CREATED_12_0_0_SEASONSTART = "created 12.0.1";			-- Midnight 12 Seasonstart
+ADDED_12_0_0_SEASONSTART = "added 12.0.1";				-- Midnight 12.Seasonstart
+REMOVED_12_0_0_SEASONSTART = "removed 12.0.1";			-- Midnight 12.Seasonstart
 CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5
 ADDED_12_0_5 = "added 12.0.5";							-- Midnight 12.0.5
 REMOVED_12_0_5 = "removed 12.0.5";						-- Midnight 12.0.5

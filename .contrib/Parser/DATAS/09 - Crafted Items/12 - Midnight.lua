@@ -92,10 +92,58 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 	prof(ENCHANTING, {
 	}),
 	prof(ENGINEERING, {
-	}),
+	}),]]--
 	prof(FISHING, {
+		n(DISCOVERY, {
+			r(1225283),	-- Eversong Trout
+			r(1225276),	-- Fungalskin Pike
+			r(1225284),	-- Lucky Loa
+			r(1225270),	-- Lynxfish
+			r(1225277),	-- Restored Songfish
+			r(1225269),	-- Root Crab
+			r(1225271),	-- Shimmersiren
+			r(1225272),	-- Shimmer Spinefish
+			r(1225245),	-- Sin'dorei Swarmer
+			r(1225278),	-- Sunwell Fish
+			r(1225280),	-- Twisted Tetra
+			r(1225279),	-- Warping Wise
+			r(1225282),	-- Wyrmfish
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = FISHING,
+		},{
+			FirstCraft(88620, 1225283),	-- Eversong Trout
+			FirstCraft(88612, 1225276),	-- Fungalskin Pike
+			FirstCraft(88613, 1225284),	-- Lucky Loa
+			FirstCraft(88603, 1225270),	-- Lynxfish
+			FirstCraft(88609, 1225277),	-- Restored Songfish
+			FirstCraft(88604, 1225269),	-- Root Crab
+			FirstCraft(88615, 1225271),	-- Shimmersiren
+			FirstCraft(88607, 1225272),	-- Shimmer Spinefish
+			FirstCraft(88602, 1225245),	-- Sin'dorei Swarmer
+			FirstCraft(88621, 1225278),	-- Sunwell Fish
+			FirstCraft(88605, 1225280),	-- Twisted Tetra
+			FirstCraft(88616, 1225279),	-- Warping Wise
+			FirstCraft(88608, 1225282),	-- Wyrmfish
+		})),
+		i(243343),	-- Angler's Anomaly
+		i(238371),	-- Arcane Wyrmfish
+		i(243302),	-- Aquarius Bloom
+		i(238383),	-- Eversong Trout
+		i(238375),	-- Fungalskin Pike
+		i(238376),	-- Lucky Loa
+		i(238366),	-- Lynxfish
+		i(238372),	-- Restored Songfish
+		i(238367),	-- Root Crab
+		i(238378),	-- Shimmersiren
+		i(238370),	-- Shimmer Spinefish
+		i(262797),	-- Shredded Glimmerline (TODO: probably need to move out)
+		i(238365),	-- Sin'dorei Swarmer
+		i(238384),	-- Sunwell Fish
+		i(238368),	-- Twisted Tetra
+		i(238379),	-- Warping Wise
 	}),
-	prof(HERBALISM, {
+	--[[prof(HERBALISM, {
 	}),
 	prof(INSCRIPTION, {
 	}),

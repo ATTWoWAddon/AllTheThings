@@ -98,13 +98,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(SADANA, {
-					ach(9083, {	-- Militaristic, Expansionist
-						["crs"] = {
-							83026,	-- Siegemaster Olugar
-							84520,	-- Pitwarden Gwarnok
-							81603,	-- Champion Druna
-						},
-					}),
 					ach(9018),	-- What's Your Sign?
 				}),
 				BossOnly(NHALLISH, {
