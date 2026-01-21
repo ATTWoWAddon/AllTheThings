@@ -1477,16 +1477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(11491, {	-- Old Ironbark
 						["description"] = "Talk to him for him to break down the door.",
 					}),
-					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16097,	-- Isalien
-					-- #if BEFORE 4.0.3
-					bubbleDown({
-						["timeline"] = { REMOVED_4_0_3 },
-						-- #if NOT ANYCLASSIC
-						["u"] = CONDITIONALLY_AVAILABLE,
-						-- #endif
-					},
-					-- #endif
-					{
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
@@ -1496,6 +1487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 						-- #endif
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
@@ -1525,11 +1517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { DELETED_5_0_4 },
 							}),
 						},
-					}
-					-- #if BEFORE 4.0.3
-					)
-					-- #endif
-					)),
+					})),
 					e(405, {	-- Alzzin the Wildshaper
 						["creatureID"] = 11492,
 						["groups"] = {
@@ -2290,14 +2278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							})),
 						},
 					}),
-					n(14506,	-- Lord Hel'nurath
-						bubbleDown({
-							-- #if BEFORE 4.0.3
-							["timeline"] = { REMOVED_4_0_3 },
-							-- #else
-							["u"] = CONDITIONALLY_AVAILABLE,
-							-- #endif
-						}, {
+					n_conditional(14506, {	-- Lord Hel'nurath
 						["description"] =
 							-- #if AFTER CATA
 							"|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
@@ -2310,6 +2291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							{ "i", 18629, 1 },	-- Black Lodestone
 							{ "i", 18663, 1 },	-- J'eevee's Jar
 						},
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228475, {	-- Diabolic Mantle
@@ -2325,7 +2307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18756),	-- Dreadguard Protector
 							i(18754),	-- Fel Hardened Bracers
 						},
-					})),
+					}),
 					e(410, {	-- Prince Tortheldrin
 						["creatureID"] = 11486,
 						["groups"] = {
