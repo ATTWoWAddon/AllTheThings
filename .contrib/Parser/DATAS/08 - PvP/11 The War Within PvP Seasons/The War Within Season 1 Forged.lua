@@ -77,7 +77,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
-			ach(40728, { ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1 } }),	-- Forged Finery
+			ach(40728, { ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1_LAUNCH } }),	-- Forged Finery
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			i(223511, {	-- Vicious Skyflayer [A] (MOUNT!)
@@ -90,7 +90,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 					-- #if AFTER MID
 					moh(80, iensemble(251020)),	-- Arsenal: Forged Warmonger's Weapons
 					moh(12, iensemble(251016)),	-- Ensemble: Forged Warmonger's Cloth Armor
@@ -171,11 +171,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					moh(80, iensemble(232864)),	-- Arsenal: Forged Aspirant's Weapons
 					moh(12, iensemble(232664)),	-- Ensemble: Forged Aspirant's Cloth Armor
@@ -305,13 +305,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
@@ -834,7 +834,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				cl(DEATHKNIGHT, {
 					i(218650),	-- Forged Gladiator's Chestguard
@@ -985,7 +985,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232866, {	-- Arsenal: Elite Forged Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},

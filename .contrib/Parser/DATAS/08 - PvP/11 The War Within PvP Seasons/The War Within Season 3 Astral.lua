@@ -91,7 +91,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 					-- #if AFTER MID
 					moh(80, iensemble(251247)),	-- Arsenal: Astral Warmonger's Weapons
 					moh(12, iensemble(251243)),	-- Ensemble: Astral Warmonger's Cloth Armor
@@ -172,11 +172,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					moh(80, iensemble(232870)),	-- Arsenal: Astral Aspirant's Weapons
 					moh(12, iensemble(232808)),	-- Ensemble: Astral Aspirant's Cloth Armor
@@ -307,13 +307,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232871, {	-- Arsenal: Astral Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
@@ -848,7 +848,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 				cl(DEATHKNIGHT, {
 					i(230591),	-- Astral Gladiator's Cloak
@@ -999,7 +999,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
-					["timeline"] = { ADDED_12_0_1 },
+					["timeline"] = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232872, {	-- Arsenal: Elite Astral Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
