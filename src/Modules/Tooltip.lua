@@ -868,6 +868,10 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
 		end
 	end
+	-- Sometimes ttType is a secret value so wrap this in a function to not blow up
+	local function secret_CheckIgnoredTooltipType(ttType)
+		return IgnoredTypes[ttType]
+	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
@@ -875,9 +879,10 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		if ttType then
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
-			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId)
+			local ok, res = pcall(secret_CheckIgnoredTooltipType, ttType)
+			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId,ok,res)
 			-- app.PrintTable(ttdata)
-			if IgnoredTypes[ttType] then
+			if not ok or res then
 				return true
 			end
 		end
