@@ -523,11 +523,11 @@ app:CreateWindow("Auctions", {
 									if data.key == "npcID" then app.CreateItem(data.itemID, data); end
 									keys[value] = data;
 									data.indent = 1;
+									data.OnClick = OnClickForAuctionItem;
 									if price and price > 0 then
 										data.price = price;
 										data.cost = price;
 										data.summaryText = SummaryForAuctionItem(data);
-										data.OnClick = OnClickForAuctionItem;
 									end
 								end
 							end
