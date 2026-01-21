@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 						}),
 						i(247820, {	-- Cache of K'areshi Treasures (H)
-							["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+							["timeline"] = { ADDED_11_2_0 }, -- TODO: Not removed yet
 						}),
 					},
 				}),
