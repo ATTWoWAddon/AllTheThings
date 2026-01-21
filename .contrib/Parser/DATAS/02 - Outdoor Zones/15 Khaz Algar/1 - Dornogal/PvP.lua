@@ -25,10 +25,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(85229, {	-- Rallying All Rapscallions!
 					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					["groups"] = {
 						i(230287, {	-- Astral Gladiator's Heraldry x9
-							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 						}),
 					},
 				}),
@@ -165,15 +165,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						filter(REAGENTS, {
 							i(230286, {	-- Astral Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(230285, {	-- Astral Combatant's Heraldry
 								["cost"] = {{"c", HONOR, 350}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(230287, {	-- Astral Gladiator's Heraldry
 								["cost"] = {{"c", CONQUEST, 175}},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(210232, {	-- Forged Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},

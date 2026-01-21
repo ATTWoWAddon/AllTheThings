@@ -1,9 +1,9 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
 	n(SEASON_GALACTIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			ach(61443, {	-- Galactic Weapons of Conquest
 				i(255671),	-- Galactic Gladiator's Weapon Token
 			}),
@@ -73,7 +73,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			-- Fashion
 		--	ach(42800),	-- Galactic Attire
 		})),
-		--[[filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 } }, {
+		--[[filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -81,7 +81,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		--]]n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 } }, {
+		--]]n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
 				["coord"] = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				--[[["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},]]--
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
 				["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				--[[ ["groups"] = {
@@ -279,7 +279,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},]]--
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>
 				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["ItemAppearanceModifierID"] = 159,
@@ -651,7 +651,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				-- TODO: Only 9 pieces will be obtainable, move rest to NYI Sets when confirmed
 				cl(DEATHKNIGHT, {
@@ -711,7 +711,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		})),
 		n(REWARDS, {
 			i(257194, {	-- Artisan's Consortium Flyer (QS!/QI!)
-				["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["description"] = "Rewarded within the first few wins in queued PvP Content.",
 			}),
 		}),

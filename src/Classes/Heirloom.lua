@@ -274,10 +274,12 @@ do
 		local token
 		for i,item in ipairs(armorTokens) do
 			token = SearchForObject("headerID", item.itemID, "field")
-			for _,heirloom in ipairs(item.g) do
-				NestObject(token, heirloom, true)
+			if token then
+				for _,heirloom in ipairs(item.g) do
+					NestObject(token, heirloom, true)
+				end
+				AssignChildren(token)
 			end
-			AssignChildren(token)
 
 			-- ensure the tokens do not have a modID attached
 			for _,token in ipairs(SearchForObject("itemID", item.itemID, "field", true)) do
@@ -287,10 +289,12 @@ do
 		end
 		for i,item in ipairs(weaponTokens) do
 			token = SearchForObject("headerID", item.itemID, "field")
-			for _,heirloom in ipairs(item.g) do
-				NestObject(token, heirloom, true)
+			if token then
+				for _,heirloom in ipairs(item.g) do
+					NestObject(token, heirloom, true)
+				end
+				AssignChildren(token)
 			end
-			AssignChildren(token)
 
 			-- ensure the tokens do not have a modID attached
 			for _,token in ipairs(SearchForObject("itemID", item.itemID, "field", true)) do

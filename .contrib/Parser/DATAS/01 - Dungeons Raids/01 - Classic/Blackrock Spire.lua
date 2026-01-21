@@ -1816,16 +1816,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				},
 			}),
-			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16080,	-- Mor Grayhoof
-			-- #if BEFORE 4.0.3
-			bubbleDown({
-				["timeline"] = { REMOVED_4_0_3 },
-				-- #if NOT ANYCLASSIC
-				["u"] = CONDITIONALLY_AVAILABLE,
-				-- #endif
-			},
-			-- #endif
-			{
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16080, {	-- Mor Grayhoof
 				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
@@ -1835,6 +1826,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- This init function unmarks the removed from game flag for folks with the brazier.
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 				-- #endif
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 						["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
@@ -1870,11 +1862,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
-			}
-			-- #if BEFORE 4.0.3
-			)
-			-- #endif
-			)),
+			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
 				["coords"] = {
 					{ 53.0, 67.0, LBRS_TAZZALOR },
@@ -2917,7 +2905,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16042, {	-- Lord Valthalak
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16042, {	-- Lord Valthalak
 					-- #if BEFORE 6.0.2
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
@@ -2930,9 +2918,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
-					-- #if NOT ANYCLASSIC
-					["u"] = CONDITIONALLY_AVAILABLE,
-					-- #endif
 					["groups"] = {
 						i(22336, {	-- Draconian Aegis of the Legion
 							["timeline"] = { REMOVED_6_0_2 },

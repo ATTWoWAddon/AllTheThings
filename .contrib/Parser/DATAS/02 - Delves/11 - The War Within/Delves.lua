@@ -239,7 +239,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		})),
 	})),
 	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0 } }, {	-- Includes Voidrazor Sanctuary
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 			mapped(ach(42779, {	-- A Flash in the Void
 				["cr"] = 245938,	-- Flickergate
 				["groups"] = { title(598) },	-- Flickering %s
@@ -1065,7 +1065,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
 				}),
 				i(251543, {	-- Cracked Keystone (QS!/QI!/CI!)
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 			}),
 			filter(NECK_F, {
@@ -1162,8 +1162,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235426),	-- Nitroclad Wrap
 							i(235421),	-- Noxious Injector Sheen
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
-						})),
 					}),
 					filter(CLOTH, {
 						n(DELVES_TWW_S1, bubbleDown({ ["timeline"] = { REMOVED_11_1_0_SEASONSTART } }, {
@@ -1186,7 +1184,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235437),	-- Noxious Injector Tube
 							i(235438),	-- Noxious Injector Manacles
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237972),	-- Void-Scarred Seer's Bands
 							i(237971),	-- Void-Scarred Seer's Cord
 							i(237968),	-- Void-Scarred Seer's Crown
@@ -1237,7 +1235,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235445),	-- Nitroclad Strap
 							i(235446),	-- Nitroclad Armguards
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237979),	-- Void-Scarred Blade's Belt
 							i(237980),	-- Void-Scarred Blade's Bracers
 							i(237977),	-- Void-Scarred Blade's Breeches
@@ -1269,7 +1267,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235453),	-- Blastborne Links
 							i(235454),	-- Blastborne Vambraces
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237988),	-- Void-Scarred Striker's Armguards
 							i(237982),	-- Void-Scarred Striker's Boots
 							i(237981),	-- Void-Scarred Striker's Brigandine
@@ -1315,7 +1313,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235462),	-- Junkreaver's Girdle
 							i(235463),	-- Junkreaver's Coils
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
 							i(237989),	-- Void-Scarred Captain's Breastplate
 							i(237994),	-- Void-Scarred Captain's Epaulettes
 							i(237995),	-- Void-Scarred Captain's Greatbelt
@@ -1687,7 +1685,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(239502, { ["timeline"]={ ADDED_11_1_5 } }),	-- Big Wheel of Cheese (Hidden Cache)
 			i(227784, { ["timeline"]={ REMOVED_11_1_0_SEASONSTART } }),	-- Delver's Bounty
 			i(233071, { ["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
-			i(235628, { ["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }),	-- Delver's Bounty (Delve reward UI)
+			i(235628, { ["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }),	-- Delver's Bounty (Delve reward UI)
 			i(248142, { ["timeline"]={ ADDED_11_2_0_SEASONSTART },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
 			i(226132),	-- Deployable Recovery Keg
 			i(226110),	-- Elemental Fusion Bomb
@@ -2448,22 +2446,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 				n(ARMOR, {
+					-- #if AFTER 12.0.1
 					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
-						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["timeline"] = { ADDED_12_0_0 },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 					}),
 					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
-						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["timeline"] = { ADDED_12_0_0 },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 					}),
 					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
-						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["timeline"] = { ADDED_12_0_0 },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 					}),
 					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
-						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["timeline"] = { ADDED_12_0_0 },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 					}),
+					-- #endif
 					filter(BACK_F, {
 						i(225414, {	-- Cave Topographer's Drape
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
@@ -2584,10 +2584,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 				}),
 				n(WEAPONS, {
+					-- #if AFTER 12.0.1
 					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
-						["timeline"] = { ADDED_12_0_0_LAUNCH },
+						["timeline"] = { ADDED_12_0_0 },
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 					}),
+					-- #endif
 					i(225500, {	-- Bedrock Breaker
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
 					}),
@@ -3033,8 +3035,32 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 						["cost"] = {{"c", UNDERCOIN, 625}},
 					}),
+					-- #if BEFORE 12.0.1
+					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = {{"c", UNDERCOIN, 5000}},
+					}),
+					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = {{"c", UNDERCOIN, 5000}},
+					}),
+					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = {{"c", UNDERCOIN, 5000}},
+					}),
+					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = {{"c", UNDERCOIN, 5000}},
+					}),
+					-- #endif
 				}),
 				n(WEAPONS, {
+					-- #if BEFORE 12.0.1
+					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
+						["timeline"] = { ADDED_12_0_0 },
+						["cost"] = {{"c", UNDERCOIN, 5000}},
+					}),
+					-- #endif
 					i(219355, {	-- Bedrock Breaker
 						["cost"] = {{"c", UNDERCOIN, 1250}},
 					}),

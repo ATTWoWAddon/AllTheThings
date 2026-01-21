@@ -4,10 +4,10 @@ local ach,h,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.Create
 _.Categories.WorldEvents={
 h(-103,{
 x(2,{
-h(-482,{lvl=55,maps={1419},rwp=20001,u=2,g={
-q(10259,{coords={{58.25,55.05,1419}},lvl=55,qgs={19942},rwp=20001,u=2,g={
-ach(2079,{providers={{"i",28788}},rwp=20001,u=2}),
-s(139134,28788,{b=1,f=9,q=1,rwp=20001,u=2})}})}})}),
+h(-482,{lvl=55,maps={1419},rwp=20506,u=2,g={
+q(10259,{coords={{58.25,55.05,1419}},lvl=55,qgs={19942},rwp=20506,u=2,g={
+ach(2079,{providers={{"i",28788}},rwp=20506,u=2}),
+s(139134,28788,{b=1,f=9,q=1,rwp=20506,u=2})}})}})}),
 x(3,{
 h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},rwp=30003,u=2,g={
 h(-12,{rwp=30003,u=2,g={

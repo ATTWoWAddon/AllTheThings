@@ -1358,6 +1358,14 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 	return struct(id > 0 and "npcID" or "headerID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
+n_conditional = function(id, t)							-- Create an NPC Object which is Conditional (assign u = CONDITIONALLY_AVAILABLE for Retail)
+	t = n(id, t);
+	-- #if NOT ANYCLASSIC
+	t.u = CONDITIONALLY_AVAILABLE
+	bubbleDown({u=CONDITIONALLY_AVAILABLE}, t)
+	-- #endif
+	return t;
+end
 obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
 	return struct("objectID", id, t);
 end

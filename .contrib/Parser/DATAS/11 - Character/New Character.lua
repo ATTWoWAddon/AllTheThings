@@ -5,7 +5,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
 		ach(40147, {	-- War Within Epic [The War Within]
-			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0_SEASONSTART },
+			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_SEASONSTART },
 		}),
 		ach(18977, {	-- Draconically Epic [Dragonflight]
 			["timeline"] = { ADDED_10_1_5 },
@@ -36,7 +36,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		------ Superior ------
 		ach(40146, {	-- War Within Superior [The War Within]
-			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0_SEASONSTART },
+			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_1_SEASONSTART },
 		}),
 		ach(18976, {	-- Draconically Superior [Dragonflight]
 			["timeline"] = { ADDED_10_1_5 },
