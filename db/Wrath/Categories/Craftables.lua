@@ -2709,7 +2709,8 @@ i(23436,{awp=20005,description="This gem is most reliably obtained from prospect
 i(23441,{awp=20005,description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",providers={{"i",23424},{"i",23425}},q=3,u=17}),
 i(23439,{awp=20005,description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",providers={{"i",23424},{"i",23425}},q=3,u=17}),
 i(23438,{awp=20005,description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",providers={{"i",23424},{"i",23425}},q=3,u=17}),
-i(23437,{awp=20005,description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",providers={{"i",23424},{"i",23425}},q=3,u=17})}}),
+i(23437,{awp=20005,description="This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",providers={{"i",23424},{"i",23425}},q=3,u=17}),
+i(24243,{awp=20005,cost={{"i",23425,5}},q=1,u=17})}}),
 h(-88,{awp=20005,u=17,g={
 s(134501,24123,{awp=20005,f=4,lvl=70,q=4,u=17}),
 s(134500,24122,{awp=20005,f=4,lvl=70,q=4,u=17}),
@@ -4160,7 +4161,14 @@ i(40166,{awp=30003,q=4,u=32}),
 i(40156,{awp=30200,q=4,rwp=40003,u=32})}})}}),
 flt(50,{awp=30003,u=30,g={
 i(41367,{awp=30003,f=55,q=2,u=30}),
-i(44943,{awp=30008,f=55,q=3,u=30}),
+i(44943,{awp=30008,f=55,q=3,u=30,g={
+i(36921,{awp=30003,q=3,u=30}),
+i(42225,{awp=30003,q=3,requireSkill=755,u=30}),
+i(36933,{awp=30003,q=3,u=30}),
+i(36930,{awp=30003,q=3,u=30}),
+i(36918,{awp=30003,q=3,u=30}),
+i(36924,{awp=30003,q=3,u=30}),
+i(36927,{awp=30003,q=3,u=30})}}),
 i(42420,{awp=30003,f=55,q=2,u=30}),
 i(42421,{awp=30003,f=55,q=2,u=30})}}),
 flt(51,{awp=30003,u=30,g={

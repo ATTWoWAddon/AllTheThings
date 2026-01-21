@@ -29,8 +29,8 @@ p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=3}),
 p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=3})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-p(131,{awp=20001,b=1,itemID=25535,petTypeID=2,q=3,rwp=30002,spellID=32298,u=3}),
-p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,rwp=30002,spellID=24988,u=3})}}),
+p(131,{awp=20001,b=1,itemID=25535,petTypeID=2,q=3,rwp=30002,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
+p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,rwp=30002,spellID=24988,u=3}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=3,g={
 h(-45,{awp=20501,rwp=30400,u=3,g={
 q(63450,{altQuests={63448},awp=20501,coords={{28,75.8,1434}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={1453,1454,1455,1456,1458,1947,1954},qgs={17249},rwp=30400,u=3,g={

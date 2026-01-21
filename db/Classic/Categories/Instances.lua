@@ -3243,7 +3243,7 @@ ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1
 ach(644,{awp=10200,maps={235,236,237,238,239},u=1101})}}),
 h(-31,{awp=10200,u=1101,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000);end	end,rwp=40003,u=1101,g={
-crit(8825,{achID=2336,id=5,u=13})}}),
+crit(8825,{achID=2336,id=1,u=13})}}),
 faction(169,{awp=10200,icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000);end	end,u=1101})}}),
 h(-45,{awp=10200,u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),

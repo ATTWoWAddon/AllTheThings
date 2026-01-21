@@ -27887,7 +27887,7 @@ for key,value in pairs({
 	[522] = "Eleva una reputación a Exaltado.",
 	[523] = "Eleva 5 reputaciones a Exaltado.",
 	[524] = "Eleva 10 reputaciones a Exaltado.",
-	[546] = "Compra 7 ranuras adicionales en el banco.",
+	[546] = "Compra 6 ranuras adicionales en el banco.",
 	[627] = "Explora Dun Morogh y descubre todas las zonas cubiertas del mapa del mundo.",
 	[628] = "Derrota a Edwin VanCleef.",
 	[629] = "Derrota a Taragaman el Hambriento.",
