@@ -4522,18 +4522,29 @@ namespace ATT
 
             // Set unobtainable status on the data object
             long u;
+            List<string> inheritedFields;
             switch (adaptedTimeline.RemovedStatus)
             {
                 case RemovedStatus.NEVER_IMPLEMENTED:
-                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs
-                    if (!data.TryGetValue("u", out u) || u != 6)
+                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs, but only when timeline is inherited!
+                    if (!data.TryGetValue("_inherited", out inheritedFields)
+                        || !inheritedFields.Contains("timeline")
+                        || !data.TryGetValue("u", out u)
+                        || u != 6)
+                    {
                         data["u"] = 1;
+                    }
                     break;
                 case RemovedStatus.REMOVED_FROM_GAME:
                 case RemovedStatus.DELETED_FROM_GAME:
-                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs
-                    if (!data.TryGetValue("u", out u) || u != 6)
+                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs, but only when timeline is inherited!
+                    if (!data.TryGetValue("_inherited", out inheritedFields)
+                        || !inheritedFields.Contains("timeline")
+                        || !data.TryGetValue("u", out u)
+                        || u != 6)
+                    {
                         data["u"] = 2;
+                    }
                     break;
                 default:
                     // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
@@ -4544,7 +4555,7 @@ namespace ATT
                         break;
 
                     // or inherited a 'timeline' to itself
-                    if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
+                    if (data.TryGetValue("_inherited", out inheritedFields) && inheritedFields.Contains("timeline"))
                         break;
 
                     // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
