@@ -335,7 +335,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			currency(2123),	-- Bloody Tokens
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0_LAUNCH } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(61234),	-- Hunt in the Night
 				-- ["maps"] = { AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS, UNDERMINE },

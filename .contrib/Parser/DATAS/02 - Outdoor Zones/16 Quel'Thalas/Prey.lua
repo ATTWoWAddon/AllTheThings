@@ -8,7 +8,7 @@ PREY = createHeader({
 		en = "Prey",
 	},
 });
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_0_LAUNCH } }, {
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
 			ach(61387),	-- Prey: Normal Mode I
