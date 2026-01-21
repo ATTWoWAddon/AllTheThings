@@ -663,6 +663,7 @@ REMOVED_LEGION_REMIX_END = "removed 11.2.7.65299";		-- Legion Remix ends on Janu
 CREATED_12_0_0 = "created 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
 ADDED_12_0_0 = "added 12.0.0.65459";					-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
 REMOVED_12_0_0 = "removed 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
+DELETED_12_0_0 = "deleted 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch on January 20th, 2026
 REMOVED_MID_LAUNCH = "removed 12.0.1";					-- Midnight 12.0.1/Pre-Patch ends on TODO
 CREATED_12_0_0_LAUNCH = "created 12.0.1";				-- Midnight 12.0.1 Launch on March 2nd, 2026
 ADDED_12_0_0_LAUNCH = "added 12.0.1";					-- Midnight 12.0.1 Launch on March 2nd, 2026
