@@ -823,6 +823,38 @@ or
 	end
 end
 
+local function TryShowUnitTooltipInfo(self, guid)
+	if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
+	local t, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
+	-- print(target, t, npc_id);
+	if t == "Player" then
+		local method = PLAYER_TOOLTIPS[guid];
+		if method then method(self, GetPlayerInfoByGUID(guid)); end
+		local version = app.PlayerProgressCacheByGUID[guid];
+		if version and app.Settings:GetTooltipSetting("SocialProgress") then
+			self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
+		end
+	elseif t == "Creature" or t == "Vehicle" then
+		if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
+		if spawn_uid then
+			local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+			local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+			if showAliveTime or showSpawnTime then
+				local serverTime = GetServerTime();
+				local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+				if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+				if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+				if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+			end
+		end
+		if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
+			self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
+		end
+		AttachTypicalSearchResults(self, "npcID", npc_id)
+	end
+	return true;
+end
+
 -- Tooltip API Differences between Modern and Legacy APIs.
 if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- 10.0.2
@@ -996,35 +1028,16 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, id) end
-			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(id);
-			-- print(target, type, npc_id);
-			if type == "Player" then
-				local method = PLAYER_TOOLTIPS[id];
-				if method then method(self, GetPlayerInfoByGUID(id)); end
-				local version = app.PlayerProgressCacheByGUID[id];
-				if version and app.Settings:GetTooltipSetting("SocialProgress") then
-					self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
+			local ok, res = pcall(TryShowUnitTooltipInfo, self, id);
+			if not ok then
+				if app.Settings:GetTooltipSetting("creatureID") then
+					self:AddDoubleLine(L.CREATURE_ID, "<secret value???>");
+					self:AddLine("Blizzard says you aren't allowed to know what CreatureID this unit has. If you want ATT tooltips to ever appear on hostile npcs ever again, please yell at your local Blizzard Developer and tell them to allow UnitGUID and UnitCreatureID to be less secret while not in combat.\n \n -Crieve", 0.8, 0.4, 0.4, 1);
 				end
-			elseif type == "Creature" or type == "Vehicle" then
-				if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-				if spawn_uid then
-					local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-					local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-					if showAliveTime or showSpawnTime then
-						local serverTime = GetServerTime();
-						local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-						if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-						if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-						if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
-					end
-				end
-				if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
-					self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
-				end
-				AttachTypicalSearchResults(self, "npcID", npc_id)
+				return true;
+			elseif res then
+				return true;
 			end
-			return true;
 		end
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
@@ -1149,36 +1162,7 @@ else
 				if target then
 					-- Yes.
 					local guid = UnitGUID(target);
-					if guid then
-						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
-						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
-						--print(guid, type, npcID);
-						if type == "Player" then
-							local method = PLAYER_TOOLTIPS[guid];
-							if method then method(self, GetPlayerInfoByGUID(guid)); end
-							local version = app.PlayerProgressCacheByGUID[guid];
-							if version and app.Settings:GetTooltipSetting("SocialProgress") then
-								self:AddDoubleLine(version[3], app.Modules.Color.GetProgressColorText(version[1],version[2]));
-							end
-						elseif type == "Creature" or type == "Vehicle" then
-							if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-							if spawn_uid then
-								local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-								local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-								if showAliveTime or showSpawnTime then
-									local serverTime = GetServerTime();
-									local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-									if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-									if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-									if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
-								end
-							end
-							if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
-								self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
-							end
-							AttachTooltipSearchResults(self, SearchForField, "npcID", tonumber(npcID));
-						end
-
+					if guid and TryShowUnitTooltipInfo(self, guid) then
 						return true;
 					end
 				end
