@@ -411,8 +411,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			["lore"] = "The Void Elf Leona has sought the knowledge of the Illidari Demon Hunters as a novel means to harness the Void.",
 			["groups"] = {
 				q(92630, {	-- The Pursuit Continues
-					["qg"] = 259942,	-- Messenger Aelor
-					["coord"] = { 50.5, 16.6, STORMWIND_CITY },	-- TODO: Orgrimmar and Dornogal
+					["qgs"] = {
+						259942,	-- Messenger Aelor
+						259951,	-- Messenger Aelor
+					},
+					["coords"] = {
+						{ 44.4, 50.3, DORNOGAL },
+						{ 50.5, 16.6, STORMWIND_CITY },	-- TODO: Orgrimmar
+					},
 				}),
 				q(92631, {	-- Abhorrent Gauntlet
 					["sourceQuest"] = 92630,	-- The Pursuit Continues
@@ -443,6 +449,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(89247),	-- [DNT] (spellID 1227720), after accepting questID 86837 (Meet at the Sunwell)
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
+			--q(94623),	-- Building the Voidforge -- completed with q:92630
 		}),
 	}),
 }));
