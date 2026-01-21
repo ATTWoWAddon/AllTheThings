@@ -126,6 +126,17 @@ root(ROOTS.Housing, n(QUESTS, {
 				i(265822),	-- Unstable Mechagon Re-Localizatron (QI!)
 			},
 		}),
+		q(94995, {	-- To Dye For
+			["qg"] = 255126,	-- Helmi Cooper
+			["coord"] = { 52.4, 37.8, FOUNDERS_POINT },
+			["timeline"] = { ADDED_12_0_0 },
+			["groups"] = {
+				i(259115),	-- Alliance Blue Dye
+				i(259113),	-- Horde Red Dye
+				i(259114),	-- Lush Green Dye
+				i(259126),	-- Void Violet Dye
+			},
+		}),
 		-- Repeatables
 		q(92608, {	-- Furniture Favor
 			["qg"] = 252717,	-- Corlen Hordralin

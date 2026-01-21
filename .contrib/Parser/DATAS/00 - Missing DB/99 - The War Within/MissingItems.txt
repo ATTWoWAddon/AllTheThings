@@ -24767,8 +24767,6 @@ i(250807),	-- Selune's Stormarion Core
 i(251100),	-- Malfeasance Mallet \\ Item - Mace1H - Str - Weapon
 i(251106),	-- Resolute Runeglaive \\ Item - Warglaives - Agi - Weapon
 12.0.0.64499
-i(266443),	-- Granite Cobblestone Long Path \\ Granite Cobblestone Path
-i(266444),	-- Granite Cobblestone Path \\ Granite Cobblestone Long Path
 12.0.0.64975
 i(262354),	-- Riftstone
 i(262356),	-- Haranir Preserving Agents
@@ -24782,13 +24780,6 @@ i(266235),	-- Razorwind Cactus Large Garden Cluster
 i(266236),	-- Razorwind Blooms Large Garden Cluster
 i(266237),	-- Runetotem's Bounty Large Garden Cluster
 i(266238),	-- Cragthorn Highlands Large Garden Cluster
-i(266239),	-- Outer Banks Large Garden Cluster
-i(266240),	-- Founder's Point Large Garden Cluster
-i(266241),	-- Brumewood Hollow Large Garden Cluster
-i(266242),	-- Gilded Oaks Large Garden Cluster
-i(266243),	-- Stoneveil Ridge Large Garden Cluster
-i(266244),	-- Granite Cobblestone Path Corner
-i(266245),	-- Granite Cobblestone Path Arc
 12.0.1.64889
 i(257145),	-- Crimson Dragonhawk
 12.0.1.64914

@@ -7,7 +7,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 
 			-- Decor
-			i(241623),	-- Elegant Elven Barrel
 			i(243090),	-- Sturdy Haranir Chair
 			i(245535),	-- Sturdy Haranir Handcart
 			i(246407),	-- Stoppered Spring Water Gourd
@@ -4381,18 +4380,6 @@ root(ROOTS.Unsorted, {
 			i(257252),	-- Voidbreaker's Bardiche
 			i(257534),	-- Voidbreaker's Baton
 			-- Decor
-			i(262664),	-- Complete Guide to K'areshi Wrappings, Vol. 11 \\ [DNT] [AUTOGEN] Decor 14677 Item
-			i(262665),	-- K'areshi Holo-Crystal Projector \\ [DNT] [AUTOGEN] Decor 14678 Item
-			i(262666),	-- K'areshi Incense Burner \\ [DNT] [AUTOGEN] Decor 14679 Item
-			i(262667),	-- Oath Scale \\ [DNT] [AUTOGEN] Decor 14680 Item
-			i(262884),	-- Consortium Glowpost \\ [DNT] [AUTOGEN] Decor 14793 Item
-			i(262907),	-- Tazaveshi Hookah \\ [DNT] [AUTOGEN] Decor 14800 Item
-			i(263043),	-- Consortium Energy Barrel \\ [DNT] [AUTOGEN] Decor 14829 Item
-			i(263044),	-- Empty Consortium Energy Barrel \\ [DNT] [AUTOGEN] Decor 14830 Item
-			i(263045),	-- Consortium Energy Collector \\ [DNT] [AUTOGEN] Decor 14831 Item
-			i(263046),	-- Consortium Energy Crate \\ [DNT] [AUTOGEN] Decor 14832 Item
-			i(263047),	-- Empty Consortium Energy Crate \\ [DNT] [AUTOGEN] Decor 14833 Item
-			i(263048),	-- Consortium Energy Banner \\ [DNT] [AUTOGEN] Decor 14834 Item
 
 			-- QI
 			i(263510),	-- Overflow Diverter
@@ -5365,7 +5352,6 @@ root(ROOTS.Unsorted, {
 			i(251909),	-- Eversong Feast Platter
 			i(251911),	-- Eversong Dessert Platter
 			i(251912),	-- Goldenmist Grapes
-			i(251982),	-- Gilded Silvermoon Candelabra
 
 			-- prof jc
 			i(256702),	-- Design: Thalassian Competitor's Signet

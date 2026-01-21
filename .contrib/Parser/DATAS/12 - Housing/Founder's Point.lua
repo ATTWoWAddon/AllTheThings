@@ -279,6 +279,48 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based
 		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
+			n(252605, {	-- Aeeshna
+				["coord"] = { 53.0, 38.2, FOUNDERS_POINT },
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = {
+					i(262664, {	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(263048, {	-- Consortium Energy Banner (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
+					}),
+					i(263043, {	-- Consortium Energy Barrel (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(263045, {	-- Consortium Energy Collector (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
+					}),
+					i(263046, {	-- Consortium Energy Crate (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(262884, {	-- Consortium Glowpost (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(263044, {	-- Empty Consortium Energy Barrel (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(263047, {	-- Empty Consortium Energy Crate (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(262665, {	-- K'areshi Holo-Crystal Projector (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(262666, {	-- K'areshi Incense Burner (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 2 }},
+					}),
+					i(262667, {	-- Oath Scale (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(262907, {	-- Tazaveshi Hookah (DECOR!)
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+				},
+			}),
 			n(255222, {	-- "High Tides" Ren <Decor Vendor>
 				["coord"] = { 62.4, 80.1, FOUNDERS_POINT },
 				["groups"] = {
@@ -411,6 +453,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					i(253439),	-- Elegant Carved Bench (DECOR!)
 					i(253437),	-- Elegant Covered Bench (DECOR!)
 					i(257692),	-- Elegant Curved Table (DECOR!)
+					i(241623, {	-- Elegant Elven Barrel (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 					i(244782),	-- Elven Floral Window (DECOR!)
 					i(248658),	-- Elven Wood Crate (DECOR!)
 					i(247502),	-- Elven Woodvine Trellis (DECOR!)
@@ -478,6 +523,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					i(249558),	-- Elven Standing Mirror (DECOR!)
 					i(253181, {	-- Gemmed Elven Chest (DECOR!)
 						["sourceQuest"] = 93007,	-- Decor Treasure Hunt 43
+					}),
+					i(251982, {	-- Gilded Silvermoon Candelabra (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
 					}),
 					i(253441, {	-- Grand Elven Bookcase (DECOR!)
 						["sourceQuest"] = 93005,	-- Decor Treasure Hunt 45
@@ -676,6 +724,34 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					i(248338),	-- Flat Boulder (DECOR!)
 					i(248339),	-- Hilltop Boulder (DECOR!)
 					i(248337),	-- Round-Top Boulder (DECOR!)
+					--
+					i(266241, {	-- Brumewood Hollow Large Garden Cluster (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266240, {	-- Founder's Point Large Garden Cluster (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266242, {	-- Gilded Oaks Large Garden Cluster (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266245, {	-- Granite Cobblestone Path Arc (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266244, {	-- Granite Cobblestone Path Corner (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266443, {	-- Granite Cobblestone Long Path (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266444, {	-- Granite Cobblestone Path (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266239, {	-- Outer Banks Large Garden Cluster (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(266243, {	-- Stoneveil Ridge Large Garden Cluster (DECOR!)
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 				},
 			}),
 			n(255203, {	-- Xiao Dan <Decor Vendor>
