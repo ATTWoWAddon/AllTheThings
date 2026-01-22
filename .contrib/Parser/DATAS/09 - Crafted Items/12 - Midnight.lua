@@ -3,7 +3,7 @@
 ---------------------------------------------
 root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 	i(232875),	-- Spark of Radiance
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		o(618517, {	-- Thalassian Lumber
 			i(256963),	-- Thalassian Lumber
 		}),
