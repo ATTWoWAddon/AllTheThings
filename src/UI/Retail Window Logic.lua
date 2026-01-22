@@ -521,17 +521,7 @@ local function UpdateVisibleRowData(self)
 		end
 		self.ScrollInfo = nil
 	end
-
-	-- If this window has an UpdateDone method which should process after the UpdateVisibleRowData is complete
-	if self.UpdateDone then
-		-- print("UpdateVisibleRowData-UpdateDone",self.Suffix)
-		Callback(self.UpdateDone, self);
-	-- If the rows need to be processed again, do so next update.
-	-- elseif self.processingLinks then
-		-- print("UpdateVisibleRowData-processingLinks",self.Suffix)
-		-- Callback(self.Refresh, self);
-		-- self.processingLinks = nil;
-	end
+	
 	-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
 	if GameTooltip and GameTooltip:IsVisible() then
 		local row = GameTooltip:GetOwner()

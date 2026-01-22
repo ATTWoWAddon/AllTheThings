@@ -465,23 +465,6 @@ local function UpdateVisibleRowData(self)
 					coroutine.yield();
 					self:Redraw();
 				end
-				if self.UpdateDone then
-					self:StartATTCoroutine("UpdateDone", function()
-						coroutine.yield();
-						self:StartATTCoroutine("UpdateDoneP2", function()
-							coroutine.yield();
-							self:UpdateDone();
-						end);
-					end);
-				end
-			end);
-		elseif self.UpdateDone and rowCount > 5 then
-			self:StartATTCoroutine("UpdateDone", function()
-				coroutine.yield();
-				self:StartATTCoroutine("UpdateDoneP2", function()
-					coroutine.yield();
-					self:UpdateDone();
-				end);
 			end);
 		end
 	else
