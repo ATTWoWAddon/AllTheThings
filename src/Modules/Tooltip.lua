@@ -50,7 +50,7 @@ if app.IsRetail then
 	GetBestObjectIDForName = function(name)
 		-- Account for Blizzard Shenanigans
 		if issecretvalue(name) then return; end
-		
+
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		name = name and name:trim():lower()
@@ -829,7 +829,7 @@ end
 
 local function TryShowUnitTooltipInfo(self, guid)
 	if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
-	
+
 	-- Account for Blizzard Shenanigans
 	if issecretvalue(guid) then
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -838,7 +838,7 @@ local function TryShowUnitTooltipInfo(self, guid)
 		end
 		return true;
 	end
-	
+
 	local t, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
 	-- print(target, t, npc_id);
 	if t == "Player" then
@@ -914,21 +914,21 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			GameTooltip.SetCurrencyByID(self, currencyID, 1);
 		end
 	end
-	-- Sometimes ttType is a secret value so wrap this in a function to not blow up
-	local function secret_CheckIgnoredTooltipType(ttType)
-		return IgnoredTypes[ttType]
-	end
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
 		local ttType, ttId = ttdata and ttdata.type, nil;
 		if ttType then
+			-- Account for Blizzard Shenanigans
+			if issecretvalue(ttType) then
+				self:AddLine("This tooltip is a <secret> type and Blizzard won't let any addon know what it is because that will make the game less fun and enjoyable!", 0.8, 0.4, 0.4, 1);
+				return true
+			end
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
-			local ok, res = pcall(secret_CheckIgnoredTooltipType, ttType)
 			-- app.PrintDebug("TT",SafeGetName(self),ttType,ttId,ok,res)
 			-- app.PrintTable(ttdata)
-			if not ok or res then
+			if IgnoredTypes[ttType] then
 				return true
 			end
 		end

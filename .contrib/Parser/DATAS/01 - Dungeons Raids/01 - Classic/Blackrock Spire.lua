@@ -2919,9 +2919,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						i(22336, {	-- Draconian Aegis of the Legion
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(22336),	-- Draconian Aegis of the Legion
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
 							["description"] = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
@@ -2929,7 +2927,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22335, {	-- Lord Valthalak's Staff of Command
-							["timeline"] = { REMOVED_6_0_2 },
+							-- ["timeline"] = { REMOVED_6_0_2 }, -- so is this available with summoning item?? keep time line if NOT available.
 							-- CRIEVE NOTE: They reitemized the staff, but didn't put it into the game.
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -2938,13 +2936,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22302, {	-- Ironweave Cowl
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228684, {	-- Pendant of Celerity
@@ -2952,36 +2946,22 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						})),
 						-- #endif
 						i(22340, {	-- Pendant of Celerity
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
-						i(22337, {	-- Shroud of Domination
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(22343, {	-- Handguards of Savagery
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(22342, {	-- Leggings of Torment
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(22337),	-- Shroud of Domination
+						i(22343),	-- Handguards of Savagery
+						i(22342),	-- Leggings of Torment
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228683, {	-- Rune Band of Wizardry
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
 						i(22339, {	-- Rune Band of Wizardry
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_6_0_2,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3, },
+							-- #endif
 						}),
 					},
 				})),

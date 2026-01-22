@@ -2259,9 +2259,11 @@ applyclassicphase(PHASE_SIX,
 								},
 							}),
 							n(15990, {	-- Kel'Thuzad
+								-- #if ANYCLASSIC
 								ach(15335, {	-- Survivor of the Damned (Season of Mastery)
 									["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 								}),
+								-- #endif
 								i(22520),	-- The Phylactery of Kel'Thuzad
 								i(22733, {	-- Staff Head of Atiesh
 									["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
@@ -3982,7 +3984,7 @@ applyclassicphase(PHASE_SIX,
 									i(237293),	-- Icy Scale Leggings
 								},
 							}),
-						}),						
+						}),
 						n(16135, {	-- Rayne (DRUID)
 							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 							["groups"] = {
@@ -4199,7 +4201,7 @@ applyclassicphase(PHASE_SIX,
 							i(237773, {	-- Word of Thawing
 								["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
 							}),
-						}),						
+						}),
 						n(COMMON_BOSS_DROPS, {
 							-- Helms
 							-- Thaddius Only
@@ -4339,7 +4341,7 @@ applyclassicphase(PHASE_SIX,
 									15928,	-- Thaddius
 								},
 							}),
-						}),						
+						}),
 						n(NAXX_ARACHNID_QUARTER, {
 							["icon"] = 135442,
 							["groups"] = {
@@ -4362,7 +4364,7 @@ applyclassicphase(PHASE_SIX,
 								}),
 								n(15952, {	-- Maexxna
 									i(236233),	-- Desecrated Gauntlets
-									i(236243),	-- Desecrated Gloves									
+									i(236243),	-- Desecrated Gloves
 									i(236250),	-- Desecrated Handguards
 									i(236265),	-- Wraith Blade
 									i(236266),	-- Pendant of Forgotten Names
@@ -4518,7 +4520,7 @@ applyclassicphase(PHASE_SIX,
 									},
 								}),
 							},
-						}),						
+						}),
 						n(NAXX_CONSTRUCT_QUARTER, {
 							["icon"] = 136118,
 							["groups"] = {
