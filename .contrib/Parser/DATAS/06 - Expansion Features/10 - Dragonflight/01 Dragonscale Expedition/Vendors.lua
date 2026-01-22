@@ -72,12 +72,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(245287, {	-- Long Sin'dorei Rug (DECOR!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
+							["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(245286, {	-- Rectangular Sin'dorei Rug (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
+							["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 						}),
 						i(245285, {	-- Reliquary Storage Crate (DECOR!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
