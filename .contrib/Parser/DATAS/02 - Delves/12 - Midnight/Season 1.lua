@@ -49,9 +49,9 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	n(DELVES_MID_S1, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 		})),
 		n(CURIO, {
 			--Combat
@@ -62,7 +62,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(249225),	-- Mandate of Sacred Death // alpha
 			i(249224),	-- Motionless Nulltide // alpha
 		}),
-		mapped(n(DELVE_COMPLETION,  bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		mapped(n(DELVE_COMPLETION,  bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			-- Currently unaware of objectIDs so treated just as reward
 			i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 			i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
@@ -106,7 +106,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				},
 			})),
 		}))),
-		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			--q(???),	-- Midnight Delves! (it pop on login but after cancel it -- didn't re-pop)
 			q(93501, {	-- The Season Starts: Midnight
 				--TODO: could be account wide one time quest per season, breadcrumb?
@@ -136,13 +136,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["maps"] = ALL_REGULAR_DELVES_MID,
 			}),
 		})),
-		mapped(n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		mapped(n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			o(584752, {	-- Mislaid Curiosity
 				["groups"] = {
 					-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
 					-- Alpha items (NYI?)
 					--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-					--i(254675),	-- Ancient Curio (QS!) 
+					--i(254675),	-- Ancient Curio (QS!)
 					-- Boons (Renown 1)
 					i(260884),	-- Boon of Abstinence (Rare) // alpha
 					i(260911),	-- Boon of Fortitude (Rare)
@@ -173,7 +173,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				},
 			}),
 		}))),
-		n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(242398, {	-- Naleidea Rivergleam
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
@@ -189,10 +189,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 		n(DELVES_MID_S1, {
 			-- Seasonal Delver's Journey Rewards
-			--q(),	-- 
+			--q(),	--
 		}),
 	})),
 }));

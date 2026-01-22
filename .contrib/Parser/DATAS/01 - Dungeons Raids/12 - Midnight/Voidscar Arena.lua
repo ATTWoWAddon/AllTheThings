@@ -18,7 +18,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	inst(1313, {	-- Voidscar Arena
 		["coord"] = { X, Y, MAP },
 		["maps"] = {},
@@ -44,5 +44,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	})
-}));
+})));
 --]]

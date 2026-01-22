@@ -21,7 +21,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	inst(1315, {	-- Maisara Caverns
 		["coord"] = { 44.0, 39.6, MAP.MIDNIGHT.ZULAMAN },
 		["maps"] = { 2501 },	-- Maisara Caverns
@@ -69,4 +69,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	})
-}));
+})));

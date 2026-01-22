@@ -201,7 +201,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1307, {	-- The Voidspire
 		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
 		--["maps"] = {
@@ -334,7 +334,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3156, {	-- Weapons of the Void
@@ -373,7 +373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -391,13 +391,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(EZZORAK_VAELGOR),
 				BossOnly(VANGUARD),
 				BossOnly(COSMOS, {
-					ach(61624, { ["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
+					ach(61624, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -411,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -434,8 +434,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(61377, {	-- Mythic: Crown of the Cosmos
 						--title(556),	-- Spirebane <Name> ... Using same ID as Nerubar Palace? Probably 690..
 					}),
-					ach(61625, {["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
-					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
+					ach(61625, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
+					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
 						title(676),	-- <Name>, Famed Slayer of the Voidspire
 					})),
 					ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
@@ -443,4 +443,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	}),
-}));
+})));

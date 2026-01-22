@@ -58,7 +58,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1308, {	-- March on Quel'Danas
 		--["coord"] = { X, Y, MAP.MIDNIGHT.VOIDSTORM },
 		--["maps"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3155, {	-- March on Quel'Danas
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -149,13 +149,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(BELOREN),
 				BossOnly(LURA, {
-					ach(61626, { ["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Midnight Falls
+					ach(61626, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Midnight Falls
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -184,8 +184,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(61379, {	-- Mythic: Midnight Falls
 						title(678),	-- Dawnbringer <Name>
 					}),
-					ach(61627, {["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 }}),	-- Cutting Edge: Midnight Falls
-					ach(61623, applyDataSelf({["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }, {	-- Hall of Fame: Midnight Falls
+					ach(61627, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Midnight Falls
+					ach(61623, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Midnight Falls
 						title(677),	-- <Name>, Famed Slayer of the Dark Naaru
 					})),
 					ach(61611),	-- Mythic: Midnight Falls Guild Run
@@ -200,5 +200,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	}),
-}));
+})));
 --]]

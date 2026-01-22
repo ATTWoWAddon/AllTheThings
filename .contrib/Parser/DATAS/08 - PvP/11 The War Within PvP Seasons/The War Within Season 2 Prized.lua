@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
-			ach(41595, { ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_1_LAUNCH } }),	-- Prized Guise
+			ach(41595, { ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_X_LAUNCH } }),	-- Prized Guise
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 			i(229989, {	-- Vicious Electro Eel [A] (MOUNT!)
@@ -91,7 +91,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 					-- #if AFTER MID
 					moh(80, iensemble(251240)),	-- Arsenal: Prized Warmonger's Weapons
 					moh(12, iensemble(251236)),	-- Ensemble: Prized Warmonger's Cloth Armor
@@ -172,11 +172,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_X_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					moh(80, iensemble(232867)),	-- Arsenal: Prized Aspirant's Weapons
 					moh(12, iensemble(232695)),	-- Ensemble: Prized Aspirant's Cloth Armor
@@ -306,13 +306,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_X_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232868, {	-- Arsenal: Prized Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
@@ -840,7 +840,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_X_LAUNCH }, ["bonusID"] = 7532 }, {
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
 				cl(DEATHKNIGHT, {
 					i(229731),	-- Prized Gladiator's Cloak
@@ -991,7 +991,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232869, {	-- Arsenal: Elite Prized Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},

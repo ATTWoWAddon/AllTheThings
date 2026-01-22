@@ -4,7 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, bubbleDownSelf({
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }
+			["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }
 		},{
 			ach(61254),	-- Midnight Keystone Explorer: Season One
 			ach(61255, {	-- Midnight Keystone Conqueror: Season One

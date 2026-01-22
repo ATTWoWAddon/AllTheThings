@@ -18,7 +18,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	inst(1311, {	-- Den of Nalorakk
 		["coord"] = { 30.0, 84.5, MAP.MIDNIGHT.ZULAMAN },
 		["maps"] = {
@@ -75,4 +75,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	})
-}));
+})));

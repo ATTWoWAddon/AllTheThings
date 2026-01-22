@@ -22,7 +22,7 @@ local Boss, BossWorldQuest =
 InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(WORLD_BOSSES, {
 	}),
 }));

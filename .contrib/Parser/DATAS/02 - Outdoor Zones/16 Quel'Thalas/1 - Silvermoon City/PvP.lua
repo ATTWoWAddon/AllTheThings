@@ -8,115 +8,115 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- ToDO: Add correct questID
 			--	q(85229, {	-- Rallying All Rapscallions!
 			--		["provider"] = { "i", 257194 },	-- Artisan's Consortium Flyer
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
-			--		["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--		["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--		["groups"] = {
 			--			i(256608, {	-- Galactic Gladiator's Heraldry x9
-			--				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 			--			}),
 			--		},
 			--	}),
@@ -215,21 +215,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{"i", 253307, 3},	-- Infused Heliotrope x3
 									{"c", HONOR, 5000},
 								},
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 						}),
 						filter(REAGENTS, {
 							i(256607, {	-- Galactic Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256559, {	-- Galactic Combatant's Heraldry
 								["cost"] = {{"c", HONOR, 350}},
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256608, {	-- Galactic Gladiator's Heraldry
 								["cost"] = {{"c", CONQUEST, 175}},
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(253307, {	-- Infused Heliotrope
 								["cost"] = {{"c", HONOR, 2500}},

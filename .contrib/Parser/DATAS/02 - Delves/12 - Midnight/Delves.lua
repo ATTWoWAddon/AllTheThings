@@ -66,7 +66,7 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 	}),
 	mapped(n(DELVE_COMPLETION, {
@@ -136,7 +136,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["timeline"] = { ADDED_12_0_X_LAUNCH },
 			["groups"] = {
 				-- Let's figure out if there will be some pre-seasonal IDs for experience
 				i(254756),	-- Chunk of Companion Experience (Uncommon)
@@ -149,7 +149,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		n(242398, {	-- Naleidea Rivergleam
 			["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = {
-				
+
 			},
 		}),
 		n(242399, {	-- Telemancer Astrandis
@@ -180,7 +180,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 		--n(BOUNTIFUL, sharedData({
 		--	["isDaily"] = true,
 		--},{	-- Bountiful Delve runs
@@ -193,12 +193,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--q(93275, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st (could be wrong and it is rep lockout for Unity Against the Void?)
 
 		-- Weekly summon boss questID
-		--hqt(, {	-- 
+		--hqt(, {	--
 		--	["name"] = "Seasonal delve boss lockout"
 		--	["providers"] = {
 		--		{"i",253342},	-- Beacon of Hope
 		--	},
-		--	["timeline"]={ADDED_12_0_1_SEASONSTART},
+		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
 		--	["isWeekly"] = true,
 		--}),
 	})),
