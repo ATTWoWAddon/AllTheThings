@@ -943,7 +943,7 @@ local function CreateRow(container, rows, i)
 	end
 
 	-- Setup highlighting and event handling
-	row:SetHighlightTexture(136810, "ADD");
+	row:SetHighlightAtlas("Options_List_Active");
 	row:RegisterForClicks("LeftButtonDown","RightButtonDown");
 	row:SetScript("OnClick", RowOnClick);
 	row:SetScript("OnEnter", RowOnEnter);
