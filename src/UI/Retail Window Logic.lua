@@ -168,7 +168,7 @@ local function CachePortraitSettings()
 	PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests");
 end
 app.AddEventHandler("OnStartup", CachePortraitSettings);
-app.AddEventHandler("OnRenderDirty", CachePortraitSettings);
+app.AddEventHandler("OnRedrawWindows", CachePortraitSettings);
 
 -- Window Functions
 local function AssignChildrenForWindow(self)
@@ -184,72 +184,6 @@ end
 local function ToggleForWindow(self)
 	SetVisibleForWindow(self, not self:IsVisible());
 end
-
-
--- Old Implementation
--- Store the Custom Windows Update functions which are required by specific Windows
-do
-local customWindowInits = {};
-local customWindowUpdates = { params = {} };
--- Returns the Custom Update function based on the Window suffix if existing
-function app:CustomWindowInit(suffix)
-	return customWindowInits[suffix];
-end
--- Returns the Custom Update function based on the Window suffix if existing
-function app:CustomWindowUpdate(suffix)
-	return customWindowUpdates[suffix];
-end
--- Retrieves the value of the specific attribute for the given window suffix
-app.GetCustomWindowParam = function(suffix, name)
-	local params = customWindowUpdates.params[suffix];
-	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-	return params and params[name] or nil;
-end
--- Defines the value of the specific attribute for the given window suffix
-app.SetCustomWindowParam = function(suffix, name, value)
-	local params = customWindowUpdates.params;
-	if params[suffix] then params[suffix][name] = value;
-	else params[suffix] = { [name] = value } end
-	-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
-end
--- Removes the custom attributes for a given window suffix
-app.ResetCustomWindowParam = function(suffix)
-	customWindowUpdates.params[suffix] = nil;
-	-- app.PrintDebug("ResetCustomWindowParam",suffix)
-end
--- Allows externally adding custom window init logic which doesn't exist already
-app.AddCustomWindowOnInit = function(customName, onInit)
-	if customWindowInits[customName] then
-		app.print("Cannot replace Custom Window: "..customName)
-	end
-	-- app.print("Added",customName)
-	customWindowInits[customName] = onInit
-end
--- Allows externally adding custom window update logic which doesn't exist already
-app.AddCustomWindowOnUpdate = function(customName, onUpdate)
-	if customWindowUpdates[customName] then
-		app.print("Cannot replace Custom Window: "..customName)
-	end
-	-- app.print("Added",customName)
-	customWindowUpdates[customName] = onUpdate
-end
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
@@ -361,7 +295,7 @@ local function SetRowData(self, row, data)
 	end
 	
 	local rowLabel = row.Label;
-	rowLabel:SetText(app.TryColorizeName(data, text));
+	rowLabel:SetText(text);
 	rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
 	rowLabel:SetPoint("RIGHT");
 	rowLabel:Show();
@@ -377,6 +311,89 @@ local function SetRowData(self, row, data)
 		row:SetHighlightLocked(true)
 	end
 end
+
+-- ATT Event Handlers
+local function AddEventHandler(self, event, handler)
+	-- allows a window to keep track of any specific custom handler functions it creates
+	self.Handlers = self.Handlers or {}
+	app.AddEventHandler(event, handler)
+	self.Handlers[#self.Handlers + 1] = handler
+end
+local function RemoveEventHandlers(self)
+	-- allows a window to remove all event handlers it created
+	local handlers = self.Handlers
+	if handlers then
+		for i=1,#handlers do
+			app.RemoveEventHandler(handlers[i])
+		end
+	end
+end
+
+-- Old Implementation
+-- Store the Custom Windows Update functions which are required by specific Windows
+do
+local customWindowInits = {};
+local customWindowUpdates = { params = {} };
+-- Returns the Custom Update function based on the Window suffix if existing
+function app:CustomWindowInit(suffix)
+	return customWindowInits[suffix];
+end
+-- Returns the Custom Update function based on the Window suffix if existing
+function app:CustomWindowUpdate(suffix)
+	return customWindowUpdates[suffix];
+end
+-- Retrieves the value of the specific attribute for the given window suffix
+app.GetCustomWindowParam = function(suffix, name)
+	local params = customWindowUpdates.params[suffix];
+	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
+	return params and params[name] or nil;
+end
+-- Defines the value of the specific attribute for the given window suffix
+app.SetCustomWindowParam = function(suffix, name, value)
+	local params = customWindowUpdates.params;
+	if params[suffix] then params[suffix][name] = value;
+	else params[suffix] = { [name] = value } end
+	-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
+end
+-- Removes the custom attributes for a given window suffix
+app.ResetCustomWindowParam = function(suffix)
+	customWindowUpdates.params[suffix] = nil;
+	-- app.PrintDebug("ResetCustomWindowParam",suffix)
+end
+-- Allows externally adding custom window init logic which doesn't exist already
+app.AddCustomWindowOnInit = function(customName, onInit)
+	if customWindowInits[customName] then
+		app.print("Cannot replace Custom Window: "..customName)
+	end
+	-- app.print("Added",customName)
+	customWindowInits[customName] = onInit
+end
+-- Allows externally adding custom window update logic which doesn't exist already
+app.AddCustomWindowOnUpdate = function(customName, onUpdate)
+	if customWindowUpdates[customName] then
+		app.print("Cannot replace Custom Window: "..customName)
+	end
+	-- app.print("Added",customName)
+	customWindowUpdates[customName] = onUpdate
+end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 local function AdjustRowIndent(row, indentAdjust)
 	-- only ever LEFT point set
 	if not row.Texture:IsShown() then return end
@@ -719,21 +736,7 @@ local function CreateRow(container, rows, i)
 	return row;
 end
 
--- allows a window to keep track of any specific custom handler functions it creates
-local function AddEventHandler(self, event, handler)
-	self.Handlers = self.Handlers or {}
-	app.AddEventHandler(event, handler)
-	self.Handlers[#self.Handlers + 1] = handler
-end
--- allows a window to remove all event handlers it created
-local function RemoveEventHandlers(self)
-	local handlers = self.Handlers
-	if handlers then
-		for i=1,#handlers do
-			app.RemoveEventHandler(handlers[i])
-		end
-	end
-end
+
 -- allows a window to stop being moved/resized by the cursor
 local function StopATTMoving(self)
 	self:StopMovingOrSizing();
@@ -1012,21 +1015,6 @@ function app:GetWindow(suffix)
 	});
 	container:Show();
 	
-	window.AddEventHandler = AddEventHandler
-	window.RemoveEventHandlers = RemoveEventHandlers
-
-	-- Some Window functions should be triggered from ATT events
-	window:AddEventHandler("OnUpdateWindows", function(...)
-		window:Update(...)
-	end)
-	window:AddEventHandler("OnRefreshWindows", function(...)
-		window:Refresh(...)
-	end)
-
-	-- Ensure the window updates itself when opened for the first time
-	window.HasPendingUpdate = true;
-	window.HightlightDatas = {}
-	
 	-- Setup the Event Handlers
 	local handlers = {};
 	window:SetScript("OnEvent", function(o, e, ...)
@@ -1037,6 +1025,23 @@ function app:GetWindow(suffix)
 			window:Update();
 		end
 	end);
+
+	-- Some Window functions should be triggered from ATT events
+	window.AddEventHandler = AddEventHandler
+	window.RemoveEventHandlers = RemoveEventHandlers
+	window:AddEventHandler("OnUpdateWindows", function(...)
+		window:Update(...)
+	end)
+	window:AddEventHandler("OnRefreshWindows", function(...)
+		window:Refresh(...)
+	end)
+	window:AddEventHandler("OnRedrawWindows", function()
+		window:Refresh()
+	end)
+
+	-- Ensure the window updates itself when opened for the first time
+	window.HasPendingUpdate = true;
+	window.HightlightDatas = {}
 	local OnInit = app:CustomWindowInit(suffix);
 	if OnInit then OnInit(window, handlers); end
 	
@@ -1074,7 +1079,7 @@ function app:CreateWindow(suffix, settings)
 				end
 			end
 			app.AddSlashCommands(settings.Commands, onCommand)
-			local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
+			local primaryCommand = "/" .. settings.Commands[1];
 			app.ChatCommands.Help[primaryCommand:lower()] = {
 				settings.UsageText or ("Usage: " .. primaryCommand),
 				settings.HelpText or ("Toggles the " .. (settings.SettingsName or suffix) .. " Window.")
@@ -1577,13 +1582,15 @@ app.AddEventHandler("RowOnEnter", function(self)
 	tooltip:ClearLines();
 	tooltip.ATT_AttachComplete = nil
 	app.ActiveRowReference = reference;
-	local owner;
-	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-		owner = "ANCHOR_LEFT"
-	else
-		owner = "ANCHOR_RIGHT"
+	local anchor = window.TooltipAnchor;
+	if not anchor then
+		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
+			anchor = "ANCHOR_LEFT";
+		else
+			anchor = "ANCHOR_RIGHT";
+		end
 	end
-	tooltip:SetOwner(self, owner);
+	tooltip:SetOwner(self, anchor);
 
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful

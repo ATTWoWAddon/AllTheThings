@@ -25,7 +25,7 @@ local function ShowColorPicker(callback, color)
 			newR, newG, newB = ColorPickerFrame:GetColorRGB();
 		end
 		callback({r = newR, g = newG, b = newB, a = newA});
-		app.CallbackEvent("OnRenderDirty")
+		app.CallbackEvent("OnRedrawWindows")
 	end
 	picker.func, picker.opacityFunc, picker.cancelFunc, picker.swatchFunc
 		= OnColorChanged, OnColorChanged, OnColorChanged, OnColorChanged
@@ -113,7 +113,7 @@ local buttonDefault = child:CreateButton(
 {
 	OnClick = function(self)
 		wipe(app.Colors);
-		app.CallbackEvent("OnRenderDirty")
+		app.CallbackEvent("OnRedrawWindows")
 	end,
 })
 buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)

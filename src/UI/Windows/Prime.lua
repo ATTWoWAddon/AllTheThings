@@ -17,11 +17,10 @@ app:CreateWindow("Prime", {
 		["relativePoint"] = "CENTER",
 	},
 	Commands = {
-		"att",
 		"allthethings",
+		"att",
 		"attc",
 	},
-	RootCommandIndex = 2,
 	OnCommand = function(self, cmd)
 		if cmd and cmd:len() > 0 then
 			-- Search for the Link in the database

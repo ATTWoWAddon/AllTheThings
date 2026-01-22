@@ -96,8 +96,7 @@ end;
 app:CreateWindow("Achievements", {
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
-	Commands = { "attach", "attachievements" },
-	RootCommandIndex = 2,
+	Commands = { "attachievements", "attach" },
 	OnInit = function(self, handlers)
 		self.data = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
 			description = "This list shows you all of the achievements that you can collect.",

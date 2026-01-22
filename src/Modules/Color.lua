@@ -150,7 +150,7 @@ app.AddEventHandler("Settings.OnSet", function(container, key, value)
 		local func = TooltipSettingsSwaps[key]
 		if func then
 			func(value)
-			app.CallbackEvent("OnRenderDirty")
+			app.CallbackEvent("OnRedrawWindows")
 		end
 	end
 end)

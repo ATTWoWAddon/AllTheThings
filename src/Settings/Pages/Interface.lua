@@ -816,7 +816,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraits", self:GetChecked());
-	app.CallbackEvent("OnRenderDirty")
+	app.CallbackEvent("OnRedrawWindows")
 end)
 checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
 checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty, app.IsClassic and -1 or nil)
@@ -834,7 +834,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraitsForQuests", self:GetChecked())
-	app.CallbackEvent("OnRenderDirty")
+	app.CallbackEvent("OnRedrawWindows")
 end)
 checkboxIconPortraitForQuests:SetATTTooltip(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP)
 checkboxIconPortraitForQuests:AlignBelow(checkboxIconPortrait, 1)

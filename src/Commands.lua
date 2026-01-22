@@ -198,7 +198,7 @@ local function AddSlashCommands(commands, func)
 	if not commands or type(commands) ~= "table" or not commands[1] then
 		error("Cannot add Slash Command -- Invalid command alias array provided")
 	end
-	local commandRoot = "ATT"..commands[commands.RootCommandIndex or 1]:upper()
+	local commandRoot = "ATT"..commands[1]:upper()
 	if not func or type(func) ~= "function" then
 		error(("Cannot add Slash Command for root %s -- Invalid call function provided"):format(tostring(commandRoot)))
 	end

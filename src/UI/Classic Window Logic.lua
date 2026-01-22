@@ -5,47 +5,15 @@ local L = app.L;
 -- Global locals
 local tinsert
 	= tinsert;
-local ipairs,pairs,pcall,math,select,tremove,wipe
-	= ipairs,pairs,pcall,math,select,tremove,wipe;
+local coroutine, ipairs,pairs,pcall,math,select,tremove,wipe
+	= coroutine, ipairs,pairs,pcall,math,select,tremove,wipe;
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
-local GetTimePreciseSec = GetTimePreciseSec;
-
--- Row Helper Functions
-local function CalculateRowBack(data)
-	if data.back then return data.back; end
-	if data.parent then
-		return CalculateRowBack(data.parent) * 0.5;
-	else
-		return 0;
-	end
-end
-local function CalculateRowIndent(data)
-	if data.indent then return data.indent; end
-	if data.parent then
-		return CalculateRowIndent(data.parent) + 1;
-	else
-		return 0;
-	end
-end
-local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		data[#data + 1] = object;
-		local g = object.g;
-		if g and object.expanded then
-			-- Delayed sort operation for this group prior to being shown
-			local sortType = object.SortType;
-			if sortType then app.SortGroup(object, sortType); end
-			for i=1,#g,1 do
-				ProcessGroup(data, g[i]);
-			end
-		end
-	end
-end
+local debugprofilestop = debugprofilestop;
 
 -- Expand / Collapse Functions
 local SkipAutoExpands = {
@@ -101,7 +69,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
--- Portrait Functions
+-- Portrait Behaviour Functions
 local SetPortraitTexture = SetPortraitTexture;
 local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
 local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
@@ -163,29 +131,26 @@ local function CachePortraitSettings()
 	PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests");
 end
 app.AddEventHandler("OnStartup", CachePortraitSettings);
-app.AddEventHandler("OnRenderDirty", CachePortraitSettings);
+app.AddEventHandler("OnRedrawWindows", CachePortraitSettings);
 
--- Window Functions
-local function AssignChildrenForWindow(self)
-	app.AssignChildren(self.data);
-end
-local function SetVisibleForWindow(self, show)
-	if show then
-		self:Show();
+-- Row & Group Processing Functions
+local UpdateGroups;
+local function CalculateRowBack(data)
+	if data.back then return data.back; end
+	if data.parent then
+		return CalculateRowBack(data.parent) * 0.5;
 	else
-		self:Hide();
+		return 0;
 	end
 end
-local function ToggleForWindow(self)
-	SetVisibleForWindow(self, not self:IsVisible());
+local function CalculateRowIndent(data)
+	if data.indent then return data.indent; end
+	if data.parent then
+		return CalculateRowIndent(data.parent) + 1;
+	else
+		return 0;
+	end
 end
-
-
-
-
--- Old Implementation
--- Processing Functions (Coroutines)
-local UpdateGroups;
 local function UpdateGroup(group, parent)
 	local visible = false;
 
@@ -268,11 +233,7 @@ UpdateGroups = function(parent, g)
 		for i=1,#g,1 do
 			local group = g[i];
 			if group.OnUpdate then
-				--local lastUpdate = GetTimePreciseSec();
-				local result = group:OnUpdate(parent, UpdateGroup);
-				--local duration = (GetTimePreciseSec() - lastUpdate) * 10000;
-				--if duration > 10 then print(group.text, "OnUpdate: ", duration); end
-				if not result then
+				if not group:OnUpdate(parent, UpdateGroup) then
 					if UpdateGroup(group, parent) then
 						visible = true;
 					end
@@ -287,10 +248,6 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups;
-
-
-
-
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
@@ -310,7 +267,7 @@ local function SetRowData(self, row, data)
 		end
 		
 		if not data.__type or getmetatable(data) == nil then
-			print(data.text, " does not have a metatable! This is NOT allowed!");
+			print(data.text, " does not have a metatable! This is NOT allowed!", data.__type, getmetatable(data));
 		end
 
 		local font = data.font or "GameFontNormal";
@@ -327,7 +284,7 @@ local function SetRowData(self, row, data)
 		row:Show();
 
 		-- Calculate the indent
-		local indent = ((CalculateRowIndent(data) * 8) or 0) + 8;
+		local indent = ((CalculateRowIndent(data) or 0) + 1) * 8;
 		row.Texture.Background:SetPoint("LEFT", row, "LEFT", indent, 0);
 		row.Texture.Border:SetPoint("LEFT", row, "LEFT", indent, 0);
 		row.Texture:SetPoint("LEFT", row, "LEFT", indent, 0);
@@ -347,7 +304,7 @@ local function SetRowData(self, row, data)
 	elseif not data then
 		return;	-- Already cleared
 	end
-
+	
 	-- Update the Summary Text (this will be the thing that updates the most)
 	local summaryText = data.summaryText or "";
 	local oldSummary = row.summaryText or "";
@@ -368,7 +325,7 @@ local function SetRowData(self, row, data)
 		else
 			row.text = text;
 		end
-		row.Label:SetText(app.TryColorizeName(data, text));
+		row.Label:SetText(text);
 		row:SetHeight(select(2, row.Label:GetFont()) + 4);
 	end
 
@@ -400,35 +357,6 @@ local function SetRowData(self, row, data)
 		end
 	end
 end
-local function RedrawVisibleRowData(self)
-	-- If there is no raw data, then return immediately.
-	if not self.rowData then return; end
-
-	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local totalRowCount = #self.rowData;
-	if totalRowCount > 0 then
-		-- Ensure that the first row doesn't move out of position.
-		local container = self.Container;
-		local row = container.rows[1];
-		if not row then return; end
-		SetRowData(self, row, row.ref);
-
-		-- Fill the remaining rows up to the (visible) row count.
-		local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
-		for i=2,totalRowCount do
-			row = container.rows[i];
-			if row then
-				SetRowData(self, row, row.ref);
-				totalHeight = totalHeight + row:GetHeight();
-				if totalHeight > containerHeight then
-					break;
-				end
-			else
-				break;
-			end
-		end
-	end
-end
 local function UpdateVisibleRowData(self)
 	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
@@ -457,7 +385,7 @@ local function UpdateVisibleRowData(self)
 
 		-- Fill the remaining rows up to the (visible) row count.
 		local current, rowCount, containerHeight, totalHeight =
-			math.max(1, math.min(self.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
+			math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
 		for i=2,totalRowCount do
 			row = rows[i];
 			SetRowData(self, row, rowData[current]);
@@ -1071,6 +999,155 @@ local function CreateRow(container, rows, i)
 	return row;
 end
 
+-- Refresh Coroutines (Deprecated)
+local InCombatLockdown = InCombatLockdown;
+local refreshDataCooldown = 5;
+local refreshFromTrigger;
+local currentlyRefreshingData = false;
+local LastSettingsChangeUpdate;
+local function ProcessGroup(data, object)
+	if app.VisibilityFilter(object) then
+		data[#data + 1] = object;
+		local g = object.g;
+		if g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
+			for i=1,#g do
+				ProcessGroup(data, g[i]);
+			end
+		end
+	end
+end
+local function UpdateWindow(self, force, trigger)
+	-- If this window doesn't have data, do nothing.
+	local data = self.data;
+	if not data then return; end
+	if not self.rowData then
+		self.rowData = {};
+	else
+		wipe(self.rowData);
+	end
+	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+	if force or self:IsShown() then
+		data.expanded = true;
+		if self.HasPendingUpdate then
+			local rows = self.Container.rows;
+			for i=1,#rows,1 do
+				SetRowData(self, rows[i], nil);
+			end
+			data.progress = 0;
+			data.total = 0;
+			if not (data.OnUpdate and data:OnUpdate()) then
+				UpdateGroups(data, data.g);
+			end
+			self.HasPendingUpdate = nil;
+		end
+		ProcessGroup(self.rowData, data);
+
+		-- Does this user have everything?
+		if data.total and data.total > 0 then
+			if data.total <= data.progress then
+				if #self.rowData < 1 then
+					data.back = 1;
+					tinsert(self.rowData, data);
+				end
+				if self.missingData then
+					self.missingData = nil;
+					if trigger and self.AllowCompleteSound then
+						app.Audio:PlayCompleteSound();
+					end
+				end
+				if not self.ignoreNoEntries then
+					local noentries = self.noEntriesRow or app.CreateRawText(L.NO_ENTRIES, {
+						OnClick = app.UI.OnClick.IgnoreRightClick,
+						preview = app.asset("Discord_2_128"),
+						description = L.NO_ENTRIES_DESC,
+					});
+					noentries.parent = self.data;
+					tinsert(self.rowData, noentries);
+				end
+			else
+				self.missingData = true;
+			end
+		else
+			self.missingData = nil;
+		end
+		return true;
+	end
+end
+local function UpdateWindows(source, force, trigger)
+	if trigger then trigger = source; end
+	for name, window in pairs(app.Windows) do
+		local window_oldUpdate = window.Update;
+		window.UpdatePending = true;
+		window.Update = function(self, ...)
+			local result = window_oldUpdate(self, ...);
+			self.Update = window_oldUpdate;
+			self.UpdatePending = nil;
+			return result;
+		end
+	end
+	for name, window in pairs(app.Windows) do
+		if window.UpdatePending then
+			window:Update(force, trigger);
+		end
+	end
+end
+local function RefreshData(source, trigger)
+	app.WipeSearchCache();
+	refreshDataCooldown = 5;
+	if trigger then
+		--print("REFRESH_DATA", source, trigger);
+		trigger = source;
+	end
+	refreshFromTrigger = refreshFromTrigger or trigger;
+	if currentlyRefreshingData then return; end
+	app:StartATTCoroutine("RefreshData", function()
+		currentlyRefreshingData = true;
+
+		-- While the player is in combat, wait for combat to end.
+		while InCombatLockdown() do coroutine.yield(); end
+
+		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay.
+		while refreshDataCooldown > 0 do
+			refreshDataCooldown = refreshDataCooldown - 1;
+			coroutine.yield();
+		end
+
+		-- Execute the OnRecalculate handlers.
+		app.HandleEvent("OnRecalculate");
+
+		-- Send an Update to the Windows to Rebuild their Row Data
+		if app.HasPendingUpdate then
+			app.HasPendingUpdate = nil;
+
+			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+				LastSettingsChangeUpdate = app._SettingsRefresh;
+
+				app.HandleEvent("OnRecalculate_NewSettings")
+			end
+
+			UpdateWindows(source, true, refreshFromTrigger);
+		else
+			UpdateWindows(source, nil, refreshFromTrigger);
+		end
+		refreshFromTrigger = nil;
+		currentlyRefreshingData = false;
+
+		-- Execute the OnRefreshComplete handlers.
+		app.HandleEvent("OnRefreshComplete");
+	end);
+end
+function app:RefreshDataCompletely(source, trigger)
+	app.HasPendingUpdate = true;
+	RefreshData("RefreshDataCompletely:" .. source, trigger);
+end
+function app:RefreshDataQuietly(source, trigger)
+	RefreshData("RefreshDataQuietly:" .. source, trigger);
+end
+
+
 -- Window Creation
 local AllWindowSettings, AllWindowSettingsLoaded;
 local function ApplySettingsForWindow(self, windowSettings)
@@ -1112,7 +1189,7 @@ local function ApplySettingsForWindow(self, windowSettings)
 	self:SetFrameLevel(9999);
 	self.RecordSettings = oldRecordSettings;
 end
-local function BuildDefaultsForWindow(self)
+local function BuildDefaultsForWindow(self, fromSettings)
 	local defaults = {
 		backdrop = {
 			bgFile = 137056,
@@ -1137,6 +1214,11 @@ local function BuildDefaultsForWindow(self)
 		defaults.scale = 1;
 		defaults.backdropColor = { 0, 0, 0, 1 };
 		defaults.borderColor = { 1, 1, 1, 1 };
+	end
+	if fromSettings then
+		for key,value in pairs(fromSettings) do
+			defaults[key] = value;
+		end
 	end
 	return defaults;
 end
@@ -1250,166 +1332,8 @@ app.AddEventHandler("OnStartup", function()
 	AllWindowSettingsLoaded = true;
 end);
 
-local function OnCloseButtonPressed(self)
-	self:GetParent():Hide();
-end
-local function SetDataForWindow(self, data)
-	if self.data ~= data then
-		self.data = data;
-		self:DelayedRebuild();
-	end
-end
-
-local function UpdateWindow(self, force, trigger)
-	-- If this window doesn't have data, do nothing.
-	local data = self.data;
-	if not data then
-		self:DelayedRebuild();
-		return;
-	end
-	if not self.rowData then
-		self.rowData = {};
-	else
-		wipe(self.rowData);
-	end
-	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-	if force or self:IsShown() then
-		data.expanded = true;
-		if self.HasPendingUpdate then
-			local rows = self.Container.rows;
-			for i=1,#rows,1 do
-				SetRowData(self, rows[i], nil);
-			end
-			data.progress = 0;
-			data.total = 0;
-			--local lastUpdate = GetTimePreciseSec();
-			if not (data.OnUpdate and data:OnUpdate()) then
-				UpdateGroups(data, data.g);
-			end
-			self.HasPendingUpdate = nil;
-			--print("UpdateGroups RESULT", (GetTimePreciseSec() - lastUpdate) * 10000);
-		end
-		ProcessGroup(self.rowData, data);
-
-		-- Does this user have everything?
-		if data.total and data.total > 0 then
-			if data.total <= data.progress then
-				if #self.rowData < 1 then
-					data.back = 1;
-					tinsert(self.rowData, data);
-				end
-				if self.missingData then
-					self.missingData = nil;
-					--print("UNSETTING MISSING DATA", trigger, self.AllowCompleteSound);
-					if trigger and self.AllowCompleteSound then
-						--print("PLAY COMPLETE SOUND", self.data.text);
-						app.Audio:PlayCompleteSound();
-					end
-				end
-				if not self.ignoreNoEntries then
-					local noentries = self.noEntriesRow or app.CreateRawText(L.NO_ENTRIES, {
-						OnClick = app.UI.OnClick.IgnoreRightClick,
-						preview = app.asset("Discord_2_128"),
-						description = L.NO_ENTRIES_DESC,
-					});
-					noentries.parent = self.data;
-					tinsert(self.rowData, noentries);
-				end
-			else
-				self.missingData = true;
-			end
-		else
-			self.missingData = nil;
-		end
-		return true;
-	end
-end
-
--- When settings that affect the display of a window change, we want to redraw the windows.
-local function RedrawWindows()
-	for name, window in pairs(app.Windows) do
-		window:Redraw();
-	end
-end
-app.AddEventHandler("OnRenderDirty", RedrawWindows);
-app.AddEventHandler("OnSavesUpdated", RedrawWindows);
-
-local refreshDataCooldown = 5;
-local refreshFromTrigger;
-local currentlyRefreshingData = false;
-local LastSettingsChangeUpdate;
-local function UpdateWindows(source, force, trigger)
-	if trigger then trigger = source; end
-	for name, window in pairs(app.Windows) do
-		local window_oldUpdate = window.Update;
-		window.UpdatePending = true;
-		window.Update = function(self, ...)
-			local result = window_oldUpdate(self, ...);
-			self.Update = window_oldUpdate;
-			self.UpdatePending = nil;
-			return result;
-		end
-	end
-	for name, window in pairs(app.Windows) do
-		if window.UpdatePending then
-			window:Update(force, trigger);
-		end
-	end
-end
-local function RefreshData(source, trigger)
-	app.WipeSearchCache();
-	refreshDataCooldown = 5;
-	if trigger then
-		--print("REFRESH_DATA", source, trigger);
-		trigger = source;
-	end
-	refreshFromTrigger = refreshFromTrigger or trigger;
-	if currentlyRefreshingData then return; end
-	app:StartATTCoroutine("RefreshData", function()
-		currentlyRefreshingData = true;
-
-		-- While the player is in combat, wait for combat to end.
-		while InCombatLockdown() do coroutine.yield(); end
-
-		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay.
-		while refreshDataCooldown > 0 do
-			refreshDataCooldown = refreshDataCooldown - 1;
-			coroutine.yield();
-		end
-
-		-- Execute the OnRecalculate handlers.
-		app.HandleEvent("OnRecalculate");
-
-		-- Send an Update to the Windows to Rebuild their Row Data
-		if app.HasPendingUpdate then
-			app.HasPendingUpdate = nil;
-
-			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
-				LastSettingsChangeUpdate = app._SettingsRefresh;
-
-				app.HandleEvent("OnRecalculate_NewSettings")
-			end
-
-			UpdateWindows(source, true, refreshFromTrigger);
-		else
-			UpdateWindows(source, nil, refreshFromTrigger);
-		end
-		refreshFromTrigger = nil;
-		currentlyRefreshingData = false;
-
-		-- Execute the OnRefreshComplete handlers.
-		app.HandleEvent("OnRefreshComplete");
-	end);
-end
-function app:RefreshDataCompletely(source, trigger)
-	app.HasPendingUpdate = true;
-	RefreshData("RefreshDataCompletely:" .. source, trigger);
-end
-function app:RefreshDataQuietly(source, trigger)
-	RefreshData("RefreshDataQuietly:" .. source, trigger);
-end
-
-local BuildCategory = function(self, headers, searchResults, inst)
+-- Window UI Event Handlers
+local function BuildCategory(self, headers, searchResults, inst)
 	local count = #searchResults;
 	if count == 0 then return; end
 	if count > 1 then
@@ -1561,469 +1485,6 @@ local BuildCategory = function(self, headers, searchResults, inst)
 	--app.MergeObject(header.g, inst);
 	return inst;
 end
-function app:CreateWindow(suffix, settings)
-	local window = app.Windows[suffix];
-	if window then return window; end
-	
-	-- Create the window instance.
-	---@class ATTWindow: BackdropTemplate, ATTFrameClass
-	window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-	window:SetClampedToScreen(true);
-	window:SetToplevel(true);
-	window:EnableMouse(true);
-	if window.SetResizeBounds then
-		window:SetResizeBounds(96, 32);
-	else
-		---@diagnostic disable-next-line: undefined-field
-		window:SetMinResize(96, 32);
-	end
-	window.RecordSettings = RecordSettingsForWindow;
-	window.SetVisible = SetVisibleForWindow;
-	window.Toggle = ToggleForWindow;
-	window.Suffix = suffix;
-	app.Windows[suffix] = window;
-	window:Hide();
-	
-	-- Setup the Event Handlers
-	local handlers = {};
-	local debugging = settings.Debugging;
-	window:SetScript("OnEvent", function(o, e, ...)
-		if debugging then print(e, ...); end
-		local handler = handlers[e];
-		if handler then
-			handler(window, ...);
-		else
-			window:Update();
-		end
-	end);
-	
-	-- Load / Save, which allows windows to keep track of key pieces of information.
-	local defaults = BuildDefaultsForWindow(window);
-	if settings.Defaults then
-		for key,value in pairs(settings.Defaults) do
-			defaults[key] = value;
-		end
-	end
-	ApplySettingsForWindow(window, defaults);
-	window:RegisterEvent("PLAYER_LOGOUT");
-	handlers.PLAYER_LOGOUT = function()
-		-- Save Settings on Logout
-		local windowSettings = window:RecordSettings();
-		if windowSettings and settings.OnSave then
-			settings.OnSave(window, windowSettings);
-		end
-	end
-	function window:Load(windowSettings)
-		setmetatable(windowSettings, { __index = defaults });
-		if settings.OnLoad then
-			settings.OnLoad(self, windowSettings);
-		end
-		ApplySettingsForWindow(self, windowSettings);
-	end
-	
-	-- Register events to allow settings to be recorded.
-	window:SetScript("OnMouseDown", StartMovingOrSizing);
-	window:SetScript("OnMouseUp", StopMovingOrSizing);
-	window:SetScript("OnHide", function(self)
-		StopMovingOrSizing(self);
-		if settings.OnHide then
-			settings.OnHide(self);
-		end
-		self:RecordSettings();
-	end);
-	window:SetScript("OnShow", function(self)
-		if not self.data then
-			self:Rebuild();
-		else
-			self:Update();
-		end
-		if settings.OnShow then
-			settings.OnShow(self);
-		end
-		self:RecordSettings();
-	end);
-	
-	-- Replace some functions to allow settings to be recorded.
-	local oldSetBackdropColor = window.SetBackdropColor;
-	local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
-	local oldStopMovingOrSizing = window.StopMovingOrSizing;
-	window.SetBackdropColor = function(self, ...)
-		oldSetBackdropColor(self, ...);
-		self:RecordSettings();
-	end
-	window.SetBackdropBorderColor = function(self, ...)
-		oldSetBackdropBorderColor(self, ...);
-		self:RecordSettings();
-	end
-	window.StopMovingOrSizing = function(self, ...)
-		oldStopMovingOrSizing(self, ...);
-		self:RecordSettings();
-	end
-	
-	
-	window.data = nil;
-	window.Settings = nil;
-	window.SetData = SetDataForWindow;
-	window.BuildCategory = BuildCategory;
-	window.AllowCompleteSound = settings.AllowCompleteSound;
-	window.AssignChildren = AssignChildrenForWindow;
-	function window:ExpandData(expanded)
-		ExpandGroupsRecursively(self.data, expanded, true);
-	end
-	
-	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
-	-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-	local onRebuild = settings.OnRebuild;
-	if onRebuild then
-		if debugging then
-			function window:ForceRebuild()
-				print("ForceRebuild: " .. suffix);
-				local lastUpdate = GetTimePreciseSec();
-				local response = onRebuild(self);
-				if self.data then
-					if response then self:AssignChildren(); end
-					print("ForceRebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self.data.window = window;
-					self:ForceUpdate(true);
-				else
-					print("ForceRebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				end
-			end
-			function window:Rebuild()
-				print("Rebuild: " .. suffix);
-				local lastUpdate = GetTimePreciseSec();
-				local response = onRebuild(self);
-				if self.data then
-					if response then self:AssignChildren(); end
-					print("Rebuild (DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self.data.window = self;
-					self:Update(true);
-				else
-					print("Rebuild (NO DATA): " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				end
-			end
-		else
-			function window:ForceRebuild()
-				local response = onRebuild(self);
-				if self.data then
-					if response then self:AssignChildren(); end
-					self.data.window = self;
-					self:ForceUpdate(true);
-				end
-			end
-			function window:Rebuild()
-				local response = onRebuild(self);
-				if self.data then
-					if response then self:AssignChildren(); end
-					self.data.window = self;
-					self:Update(true);
-				end
-			end
-		end
-	else
-		if debugging then
-			function window:ForceRebuild()
-				if self.data then
-					print("ForceRebuild: " .. suffix);
-					local lastUpdate = GetTimePreciseSec();
-					self.data.window = self;
-					self:AssignChildren();
-					print("ForceRebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self.data.window = self;
-					self:ForceUpdate(true);
-				end
-			end
-			function window:Rebuild()
-				if self.data then
-					print("Rebuild: " .. suffix);
-					local lastUpdate = GetTimePreciseSec();
-					self:AssignChildren();
-					print("Rebuild: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-					self.data.window = self;
-					self:Update(true);
-				end
-			end
-		else
-			function window:ForceRebuild()
-				if self.data then
-					self:AssignChildren();
-					self.data.window = self;
-					self:ForceUpdate(true);
-				end
-			end
-			function window:Rebuild()
-				if self.data then
-					self:AssignChildren();
-					self.data.window = self;
-					self:Update(true);
-				end
-			end
-		end
-	end
-
-	-- Phase 2: Update, which takes the prepared data and revalidates it.
-	local OnUpdate = settings.OnUpdate or UpdateWindow;
-	window.DefaultUpdate = UpdateWindow;
-	if debugging then
-		function window:ForceUpdate(force, trigger)
-			print("ForceUpdate: " .. suffix, force, trigger);
-			local lastUpdate = GetTimePreciseSec();
-			local result = OnUpdate(self, force, trigger);
-			print("ForceUpdate: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-			self:Refresh();
-			return result;
-		end
-		function window:Update(force, trigger)
-			if self:IsShown() then
-				print("UpdateWindow: " .. suffix, force, trigger);
-				local lastUpdate = GetTimePreciseSec();
-				local result = OnUpdate(self, force, trigger);
-				print("UpdateWindow: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				self:Refresh();
-				return result;
-			else
-				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-			end
-		end
-	else
-		function window:ForceUpdate(force, trigger)
-			local result = OnUpdate(self, force, trigger);
-			self:Refresh();
-			return result;
-		end
-		function window:Update(force, trigger)
-			if self:IsShown() then
-				local result = OnUpdate(self, force, trigger);
-				self:Refresh();
-				return result;
-			else
-				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-			end
-		end
-	end
-
-	-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
-	local onRefresh = settings.OnRefresh;
-	if onRefresh then
-		if debugging then
-			function window:Refresh()
-				if self:IsShown() then
-					print("Refresh: " .. suffix);
-					local lastUpdate = GetTimePreciseSec();
-					if onRefresh(self) then UpdateVisibleRowData(self); end
-					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				end
-			end
-		else
-			function window:Refresh()
-				if self:IsShown() and onRefresh(self) then UpdateVisibleRowData(self); end
-			end
-		end
-	else
-		if debugging then
-			function window:Refresh()
-				if self:IsShown() then
-					print("Refresh: " .. suffix);
-					local lastUpdate = GetTimePreciseSec();
-					UpdateVisibleRowData(self);
-					print("Refresh: " .. suffix, (GetTimePreciseSec() - lastUpdate) * 10000);
-				end
-			end
-		else
-			function window:Refresh()
-				if self:IsShown() then UpdateVisibleRowData(self); end
-			end
-		end
-	end
-
-	-- Phase 4: Redraw, which only updates the rows that already have row data visually.
-	function window:Redraw()
-		if self:IsShown() then
-			RedrawVisibleRowData(self);
-		end
-	end
-	
-	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
-	-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
-	local delays = {};
-	window.DelayedCall = function(self, method, delay, force)
-		delays[method] = delay or 60;
-		window:StartATTCoroutine("DelayedCall::" .. method, function()
-			while delays[method] > 0 or InCombatLockdown() do
-				delays[method] = delays[method] - 1;
-				coroutine.yield();
-			end
-			window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
-				coroutine.yield();
-				window[method](window, force);
-			end);
-		end);
-	end
-	function window:DelayedRebuild()
-		self:DelayedCall("Rebuild", 1);
-	end
-	function window:DelayedRefresh()
-		self:DelayedCall("Refresh", 5);
-	end
-	function window:DelayedUpdate(force)
-		self:DelayedCall("Update", 60, force);
-	end
-
-	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-	closeButton:SetScript("OnClick", OnCloseButtonPressed);
-	window.CloseButton = closeButton;
-	if app.isRetail then
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
-		closeButton:SetSize(20, 20);
-	else
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
-		closeButton:SetSize(24, 24);
-	end
-
-	-- The Scroll Bar.
-	window.CurrentIndex = 1;
-	---@class ATTWindowScrollBar: Slider
-	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-	scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15);
-	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-	scrollbar:SetScript("OnValueChanged", function(o, value)
-		if window.CurrentIndex ~= value then
-			window.CurrentIndex = value;
-			window:Refresh();
-		end
-	end);
-	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
-	scrollbar.back:SetAllPoints(scrollbar);
-	scrollbar:SetMinMaxValues(1, 1);
-	scrollbar:SetValueStep(1);
-	scrollbar:SetValue(1);
-	scrollbar:SetObeyStepOnDrag(true);
-	scrollbar:SetWidth(16);
-	scrollbar:EnableMouseWheel(true);
-	window:EnableMouseWheel(true);
-	window.ScrollBar = scrollbar;
-	window:SetScript("OnMouseWheel", function(o, delta)
-		scrollbar:SetValue(window.CurrentIndex - delta);
-	end);
-	window.SetMinMaxValues = function(o, displayedValue, totalValue)
-		scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
-	end
-
-	-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-	local grip = window:CreateTexture(nil, "ARTWORK");
-	grip:SetTexture(app.asset("grip"));
-	grip:SetSize(16, 16);
-	grip:SetTexCoord(0,1,0,1);
-	grip:SetPoint("BOTTOMRIGHT", -5, 5);
-
-	-- The Row Container. This contains all of the row frames.
-	---@class ATTRowContainer: Frame
-	local container = CreateFrame("Frame", nil, window);
-	container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
-	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
-	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-	window.Container = container;
-	container.rows = setmetatable({}, {
-		__index = function(rows, i)
-			return CreateRow(container, rows, i);
-		end,
-	});
-	container:Show();
-	
-	if not settings.IgnoreQuestUpdates then
-		local delayedRefresh = function()
-			window:DelayedRefresh();
-		end;
-		handlers.BAG_UPDATE_DELAYED = delayedRefresh;
-		handlers.QUEST_WATCH_UPDATE = delayedRefresh;
-		handlers.QUEST_ITEM_UPDATE = delayedRefresh;
-		window:RegisterEvent("QUEST_WATCH_UPDATE");
-		window:RegisterEvent("QUEST_ITEM_UPDATE");
-		window:RegisterEvent("BAG_UPDATE_DELAYED");
-		local delayedUpdateWithTrigger = function()
-			window:Redraw();
-			window:DelayedUpdate(true);
-		end;
-		handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
-		handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
-		handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
-		window:RegisterEvent("QUEST_ACCEPTED");
-		window:RegisterEvent("QUEST_REMOVED");
-		window:RegisterEvent("QUEST_TURNED_IN");
-		local delayedUpdate = function()
-			window:DelayedUpdate();
-		end;
-		handlers.QUEST_LOG_UPDATE = delayedUpdate;
-		window:RegisterEvent("QUEST_LOG_UPDATE");
-	end
-	if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
-		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
-		local WasHiddenByPetBattle;
-		handlers.PET_BATTLE_OPENING_START = function()
-			if window:IsVisible() then
-				WasHiddenByPetBattle = true;
-				window:Hide();
-			else
-				WasHiddenByPetBattle = nil;
-			end
-		end
-		handlers.PET_BATTLE_CLOSE = function()
-			if WasHiddenByPetBattle then
-				WasHiddenByPetBattle = nil;
-				window:Show();
-			end
-		end
-		window:RegisterEvent("PET_BATTLE_OPENING_START");
-		window:RegisterEvent("PET_BATTLE_CLOSE");
-	end
-	window.IsDynamicCategory = settings.IsDynamicCategory;
-	window.DynamicCategoryHeader = settings.DynamicCategoryHeader;
-	window.DynamicProfessionID = settings.DynamicProfessionID;
-	window.IsTopLevel = settings.IsTopLevel;
-	if settings.TooltipAnchor then
-		window.TooltipAnchor = settings.TooltipAnchor;
-	end
-	if settings.OnInit then
-		settings.OnInit(window, handlers);
-	end
-	if settings.Commands then
-		local onCommand;
-		if settings.OnCommand then
-			onCommand = function(cmd)
-				if not settings.OnCommand(window, cmd) then
-					window:Toggle();
-				end
-			end
-		else
-			onCommand = function(cmd)
-				window:Toggle();
-			end
-		end
-
-		window.Commands = settings.Commands;
-		window.HideFromSettings = settings.HideFromSettings;
-		window.SettingsName = settings.SettingsName or window.Suffix;
-		settings.Commands.RootCommandIndex = settings.RootCommandIndex
-		app.AddSlashCommands(settings.Commands, onCommand)
-		local primaryCommand = "/" .. settings.Commands[settings.RootCommandIndex or 1];
-		app.ChatCommands.Help[primaryCommand:lower()] = {
-			settings.UsageText or ("Usage: " .. primaryCommand),
-			settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
-		};
-	end
-	
-	-- If window settings were already loaded, then load this window's settings now
-	-- Windows created after startup would otherwise fail to load their settings.
-	if AllWindowSettingsLoaded then
-		LoadSettingsForWindow(window);
-	end
-	return window;
-end
-function app:GetWindow(suffix)
-	return app.Windows[suffix];
-end
 function app:BuildFlatSearchFilteredResponse(groups, filter, t)
 	if groups then
 		for i,group in ipairs(groups) do
@@ -2086,17 +1547,16 @@ function app:BuildSearchFilteredResponse(groups, filter)
 		return t;
 	end
 end
-function app:BuildSearchResponse(groups, field, value)
+function app:BuildSearchResponseForField(groups, field)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
-				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
+				if group[field] then
 					if not t then t = {}; end
 					tinsert(t, app.CloneClassInstance(group));
 				else
-					local response = app:BuildSearchResponse(group.g, field, value);
+					local response = app:BuildSearchResponseForField(group.g, field);
 					if response then
 						if not t then t = {}; end
 						local clone = app.CloneClassInstance(group, true);
@@ -2109,16 +1569,565 @@ function app:BuildSearchResponse(groups, field, value)
 		return t;
 	end
 end
-function app:BuildSearchResponseForField(groups, field)
+local function OnCloseButtonPressed(self)
+	self:GetParent():Hide();
+end
+local function OnMouseWheelForWindow(self, delta)
+	self.ScrollBar:SetValue(self.ScrollBar.CurrentIndex - delta);
+end
+local function OnScrollBarValueChanged(self, value)
+	if self.CurrentIndex ~= value then
+		self.CurrentIndex = value;
+		self:GetParent():Refresh();
+	end
+end
+local function SetVisibleForWindow(self, show)
+	if show then
+		self:Show();
+	else
+		self:Hide();
+	end
+end
+local FieldDefaults = {
+	AddEventHandler = function(self, event, handler)
+		-- allows a window to keep track of any specific custom handler functions it creates
+		self.Handlers = self.Handlers or {}
+		app.AddEventHandler(event, handler)
+		self.Handlers[#self.Handlers + 1] = handler
+	end,
+	RemoveEventHandlers = function(self)
+		-- allows a window to remove all event handlers it created
+		local handlers = self.Handlers
+		if handlers then
+			for i=1,#handlers do
+				app.RemoveEventHandler(handlers[i])
+			end
+		end
+	end,
+	RecordSettings = RecordSettingsForWindow,
+	SetVisible = SetVisibleForWindow,
+	Toggle = function(self)
+		SetVisibleForWindow(self, not self:IsVisible());
+	end,
+	SetData = function(self, data)
+		if self.data ~= data then
+			self.data = data;
+			self:Rebuild();
+		end
+	end,
+	BuildCategory = BuildCategory,
+	ExpandData = function(self, expanded)
+		ExpandGroupsRecursively(self.data, expanded, true);
+	end,
+	SetMinMaxValues = function(self, displayedValue, totalValue)
+		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
+	end,
+	
+	-- Rendering Functions
+	AssignChildren = function(self)
+		app.AssignChildren(self.data);
+	end,
+	DefaultUpdate = UpdateWindow,
+	DefaultRefresh = UpdateVisibleRowData,
+	Redraw = function(self)
+		-- If there is no raw data or we aren't visible, then ignore this action.
+		if self:IsShown() and self.rowData then
+			-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
+			local totalRowCount = #self.rowData;
+			if totalRowCount > 0 then
+				-- Ensure that the first row doesn't move out of position.
+				local container = self.Container;
+				local row = container.rows[1];
+				if not row then return; end
+				SetRowData(self, row, row.ref);
+
+				-- Fill the remaining rows up to the (visible) row count.
+				local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
+				for i=2,totalRowCount do
+					row = container.rows[i];
+					if row then
+						SetRowData(self, row, row.ref);
+						totalHeight = totalHeight + row:GetHeight();
+						if totalHeight > containerHeight then
+							break;
+						end
+					else
+						break;
+					end
+				end
+			end
+		end
+	end,
+};
+local ReservedFields = {
+	Defaults = true,
+	OnInit = true,
+	OnCommand = true,
+	OnLoad = true,
+	OnSave = true,
+	OnRebuild = true,
+	OnRefresh = true,
+	OnUpdate = true,
+	OnShow = true,
+	OnHide = true,
+	IgnoreQuestUpdates = true,
+	IgnorePetBattleEvents = true,
+};
+function app:CreateWindow(suffix, settings)
+	local window = app.Windows[suffix];
+	if window then return window; end
+	local debugging = settings.Debugging;
+	
+	-- Create the window instance.
+	---@class ATTWindow: BackdropTemplate, ATTFrameClass
+	window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	window:SetClampedToScreen(true);
+	window:SetToplevel(true);
+	window:EnableMouse(true);
+	if window.SetResizeBounds then
+		window:SetResizeBounds(96, 32);
+	else
+		---@diagnostic disable-next-line: undefined-field
+		window:SetMinResize(96, 32);
+	end
+	app.Windows[suffix] = window;
+	window.Suffix = suffix;
+	window:Hide();
+	
+	-- Apply Field Defaults
+	for field,value in pairs(FieldDefaults) do
+		window[field] = value;
+	end
+	
+	-- Copy all non-reserved fields on to the window frame.
+	for field,value in pairs(settings) do
+		if not ReservedFields[field] then
+			window[field] = value;
+		end
+	end
+	
+	-- Load / Save, which allows windows to keep track of key pieces of information.
+	local defaults = BuildDefaultsForWindow(window, settings.Defaults);
+	local onLoad, onSave = settings.OnLoad, settings.OnSave;
+	ApplySettingsForWindow(window, defaults);
+	function window:Load(windowSettings)
+		setmetatable(windowSettings, { __index = defaults });
+		if onLoad then onLoad(self, windowSettings); end
+		ApplySettingsForWindow(self, windowSettings);
+	end
+	
+	-- Setup the Event Handlers
+	local handlers = {
+		PLAYER_LOGOUT = function()
+			-- Save Settings on Logout
+			local windowSettings = window:RecordSettings();
+			if windowSettings and onSave then
+				onSave(window, window:RecordSettings());
+			end
+		end,
+	};
+	window:RegisterEvent("PLAYER_LOGOUT");
+	window:SetScript("OnEvent", function(o, e, ...)
+		if debugging then print(e, ...); end
+		local handler = handlers[e];
+		if handler then
+			handler(window, ...);
+		else
+			window:Update();
+		end
+	end);
+	
+	-- Some Window functions should be triggered from ATT events
+	window:AddEventHandler("OnUpdateWindows", function(...)
+		window:Update(...)
+	end)
+	window:AddEventHandler("OnRefreshWindows", function(...)
+		window:Refresh(...)
+	end)
+	window:AddEventHandler("OnRedrawWindows", function()
+		window:Redraw()
+	end)
+	
+	-- Register events to allow settings to be recorded.
+	local onHide, onShow = settings.OnHide, settings.OnShow;
+	window:SetScript("OnMouseDown", StartMovingOrSizing);
+	window:SetScript("OnMouseUp", StopMovingOrSizing);
+	window:SetScript("OnHide", function(self)
+		StopMovingOrSizing(self);
+		if onHide then onHide(self); end
+		self:RecordSettings();
+	end);
+	window:SetScript("OnShow", function(self)
+		if not self.data then
+			self:Rebuild();
+		else
+			self:Update();
+		end
+		if onShow then onShow(self); end
+		self:RecordSettings();
+	end);
+	
+	-- Replace some functions to allow settings to be recorded.
+	local oldSetBackdropColor = window.SetBackdropColor;
+	local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
+	local oldStopMovingOrSizing = window.StopMovingOrSizing;
+	window.SetBackdropColor = function(self, ...)
+		oldSetBackdropColor(self, ...);
+		self:RecordSettings();
+	end
+	window.SetBackdropBorderColor = function(self, ...)
+		oldSetBackdropBorderColor(self, ...);
+		self:RecordSettings();
+	end
+	window.StopMovingOrSizing = function(self, ...)
+		oldStopMovingOrSizing(self, ...);
+		self:RecordSettings();
+	end
+	
+	-- Rendering Pipeline
+	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
+	-- Phase 2: Update, which takes the prepared data and revalidates it.
+	-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
+	-- Phase 4: Redraw, which only updates the rows that already have row data visually.
+	local onRebuild = settings.OnRebuild;
+	if onRebuild then
+		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
+		if debugging then
+			function window:ForceRebuild()
+				print("ForceRebuild: " .. suffix);
+				local lastUpdate = debugprofilestop();
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					print("ForceRebuild (DATA): " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self.data.window = window;
+					self:ForceUpdate(true);
+				else
+					print("ForceRebuild (NO DATA): " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				end
+			end
+			function window:Rebuild()
+				print("Rebuild: " .. suffix);
+				local lastUpdate = debugprofilestop();
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					print("Rebuild (DATA): " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self.data.window = self;
+					self:Update(true);
+				else
+					print("Rebuild (NO DATA): " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				end
+			end
+		else
+			function window:ForceRebuild()
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					self.data.window = self;
+					self:ForceUpdate(true);
+				end
+			end
+			function window:Rebuild()
+				local response = onRebuild(self);
+				if self.data then
+					if response then self:AssignChildren(); end
+					self.data.window = self;
+					self:Update(true);
+				end
+			end
+		end
+	else
+		if debugging then
+			function window:ForceRebuild()
+				if self.data then
+					print("ForceRebuild: " .. suffix);
+					local lastUpdate = debugprofilestop();
+					self.data.window = self;
+					self:AssignChildren();
+					print("ForceRebuild: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self.data.window = self;
+					self:ForceUpdate(true);
+				end
+			end
+			function window:Rebuild()
+				if self.data then
+					print("Rebuild: " .. suffix);
+					local lastUpdate = debugprofilestop();
+					self:AssignChildren();
+					print("Rebuild: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self.data.window = self;
+					self:Update(true);
+				end
+			end
+		else
+			function window:ForceRebuild()
+				if self.data then
+					self:AssignChildren();
+					self.data.window = self;
+					self:ForceUpdate(true);
+				end
+			end
+			function window:Rebuild()
+				if self.data then
+					self:AssignChildren();
+					self.data.window = self;
+					self:Update(true);
+				end
+			end
+		end
+	end
+	
+	local OnUpdate = settings.OnUpdate or UpdateWindow;
+	if debugging then
+		function window:ForceUpdate(force, trigger)
+			print("ForceUpdate: " .. suffix, force, trigger);
+			local lastUpdate = debugprofilestop();
+			local result = OnUpdate(self, force, trigger);
+			print("ForceUpdate: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+			self:Refresh();
+			return result;
+		end
+		function window:Update(force, trigger)
+			if self:IsShown() then
+				print("UpdateWindow: " .. suffix, force, trigger);
+				local lastUpdate = debugprofilestop();
+				local result = OnUpdate(self, force, trigger);
+				print("UpdateWindow: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				self:Refresh();
+				return result;
+			else
+				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+			end
+		end
+	else
+		function window:ForceUpdate(force, trigger)
+			local result = OnUpdate(self, force, trigger);
+			self:Refresh();
+			return result;
+		end
+		function window:Update(force, trigger)
+			if self:IsShown() then
+				local result = OnUpdate(self, force, trigger);
+				self:Refresh();
+				return result;
+			else
+				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+			end
+		end
+	end
+
+	local onRefresh = settings.OnRefresh;
+	if onRefresh then
+		if debugging then
+			function window:Refresh()
+				if self:IsShown() then
+					print("Refresh: " .. suffix);
+					local lastUpdate = debugprofilestop();
+					if onRefresh(self) then self:DefaultRefresh(); end
+					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				end
+			end
+		else
+			function window:Refresh()
+				if self:IsShown() and onRefresh(self) then self:DefaultRefresh(); end
+			end
+		end
+	else
+		if debugging then
+			function window:Refresh()
+				if self:IsShown() then
+					print("Refresh: " .. suffix);
+					local lastUpdate = debugprofilestop();
+					self:DefaultRefresh();
+					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				end
+			end
+		else
+			function window:Refresh()
+				if self:IsShown() then self:DefaultRefresh(); end
+			end
+		end
+	end
+	
+	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
+	-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
+	local delays = {};
+	window.DelayedCall = function(self, method, delay, force)
+		delays[method] = delay or 60;
+		window:StartATTCoroutine("DelayedCall::" .. method, function()
+			while delays[method] > 0 or InCombatLockdown() do
+				delays[method] = delays[method] - 1;
+				coroutine.yield();
+			end
+			window:StartATTCoroutine("DelayedCall::" .. method .. "PT2", function()
+				coroutine.yield();
+				window[method](window, force);
+			end);
+		end);
+	end
+	function window:DelayedRebuild()
+		self:DelayedCall("Rebuild", 0);
+	end
+	function window:DelayedRefresh()
+		self:DelayedCall("Refresh", 0);
+	end
+	function window:DelayedUpdate(force)
+		self:DelayedCall("Update", 10, force);
+	end
+	
+	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+	closeButton:SetScript("OnClick", OnCloseButtonPressed);
+	window.CloseButton = closeButton;
+	if app.isRetail then
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+		closeButton:SetSize(20, 20);
+	else
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
+		closeButton:SetSize(24, 24);
+	end
+
+	-- The Scroll Bar.
+	---@class ATTWindowScrollBar: Slider
+	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
+	scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15);
+	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
+	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
+	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
+	scrollbar.back:SetAllPoints(scrollbar);
+	scrollbar:SetMinMaxValues(1, 1);
+	scrollbar:SetValueStep(1);
+	scrollbar:SetValue(1);
+	scrollbar:SetObeyStepOnDrag(true);
+	scrollbar:SetWidth(16);
+	scrollbar.CurrentIndex = 1;
+	scrollbar:EnableMouseWheel(true);
+	window.ScrollBar = scrollbar;
+	window:EnableMouseWheel(true);
+	window:SetScript("OnMouseWheel", OnMouseWheelForWindow);
+
+	-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
+	local grip = window:CreateTexture(nil, "ARTWORK");
+	grip:SetTexture(app.asset("grip"));
+	grip:SetSize(16, 16);
+	grip:SetTexCoord(0,1,0,1);
+	grip:SetPoint("BOTTOMRIGHT", -5, 5);
+	window.Grip = grip;
+
+	-- The Row Container. This contains all of the row frames.
+	---@class ATTRowContainer: Frame
+	local container = CreateFrame("Frame", nil, window);
+	container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
+	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
+	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+	window.Container = container;
+	container.rows = setmetatable({}, {
+		__index = function(rows, i)
+			return CreateRow(container, rows, i);
+		end,
+	});
+	container:Show();
+	
+	if not settings.IgnoreQuestUpdates and false then
+		local delayedRefresh = function()
+			window:DelayedRefresh();
+		end;
+		handlers.BAG_UPDATE_DELAYED = delayedRefresh;
+		handlers.QUEST_WATCH_UPDATE = delayedRefresh;
+		handlers.QUEST_ITEM_UPDATE = delayedRefresh;
+		window:RegisterEvent("QUEST_WATCH_UPDATE");
+		window:RegisterEvent("QUEST_ITEM_UPDATE");
+		window:RegisterEvent("BAG_UPDATE_DELAYED");
+		local delayedUpdateWithTrigger = function()
+			window:Redraw();
+			window:DelayedUpdate(true);
+		end;
+		handlers.QUEST_TURNED_IN = delayedUpdateWithTrigger;
+		handlers.QUEST_ACCEPTED = delayedUpdateWithTrigger;
+		handlers.QUEST_REMOVED = delayedUpdateWithTrigger;
+		window:RegisterEvent("QUEST_ACCEPTED");
+		window:RegisterEvent("QUEST_REMOVED");
+		window:RegisterEvent("QUEST_TURNED_IN");
+		local delayedUpdate = function()
+			window:DelayedUpdate();
+		end;
+		handlers.QUEST_LOG_UPDATE = delayedUpdate;
+		window:RegisterEvent("QUEST_LOG_UPDATE");
+	end
+	if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
+		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
+		local WasHiddenByPetBattle;
+		handlers.PET_BATTLE_OPENING_START = function()
+			if window:IsVisible() then
+				WasHiddenByPetBattle = true;
+				window:Hide();
+			else
+				WasHiddenByPetBattle = nil;
+			end
+		end
+		handlers.PET_BATTLE_CLOSE = function()
+			if WasHiddenByPetBattle then
+				WasHiddenByPetBattle = nil;
+				window:Show();
+			end
+		end
+		window:RegisterEvent("PET_BATTLE_OPENING_START");
+		window:RegisterEvent("PET_BATTLE_CLOSE");
+	end
+	
+	
+	-- Add command processing
+	local onCommand = settings.OnCommand;
+	if onCommand then
+		function window:ProcessCommand(cmd)
+			if not onCommand(self, cmd) then
+				self:Toggle();
+			end
+		end
+	else
+		window.ProcessCommand = window.Toggle;
+	end
+	if settings.OnInit then
+		settings.OnInit(window, handlers);
+	end
+	if settings.Commands then
+		if not window.SettingsName then
+			window.SettingsName = window.Suffix
+		end
+		app.AddSlashCommands(settings.Commands, function(cmd) window:ProcessCommand(cmd) end)
+		local primaryCommand = "/" .. settings.Commands[1];
+		app.ChatCommands.Help[primaryCommand:lower()] = {
+			settings.UsageText or ("Usage: " .. primaryCommand),
+			settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
+		};
+	end
+	
+	-- If window settings were already loaded, then load this window's settings now
+	-- Windows created after startup would otherwise fail to load their settings.
+	if AllWindowSettingsLoaded then
+		LoadSettingsForWindow(window);
+	end
+	return window;
+end
+function app:GetWindow(suffix)
+	return app.Windows[suffix];
+end
+
+-- Warning: This one is different in Retail for some reason.
+-- Identify why, then figure out which one we want to use.
+function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
-				if group[field] then
+				local v = group[field];
+				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
 					if not t then t = {}; end
 					tinsert(t, app.CloneClassInstance(group));
 				else
-					local response = app:BuildSearchResponseForField(group.g, field);
+					local response = app:BuildSearchResponse(group.g, field, value);
 					if response then
 						if not t then t = {}; end
 						local clone = app.CloneClassInstance(group, true);

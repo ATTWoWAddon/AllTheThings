@@ -152,16 +152,6 @@ do
 			end
 		end
 	end
-	-- This was used to update information about achievement progress following Pet Battles
-	-- This unfortunately triggers all the time and rarely actually represents useful Achievement changes
-	-- TODO: Think of another way to represent Achievement changes post Pet Battles
-	-- local function OnUpdateWindows()
-	-- 	app.HandleEvent("OnUpdateWindows")
-	-- end
-	-- local function DelayedOnUpdateWindows()
-	-- 	AfterCombatOrDelayedCallback(OnUpdateWindows, 1)
-	-- end
-	-- app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
 	app.CreateAchievement = app.CreateClass(CLASSNAME, KEY, {
 		CACHE = function() return CACHE end,
 		silentLink = function(t)
