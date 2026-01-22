@@ -3,16 +3,15 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local tinsert
-	= tinsert;
-local coroutine, ipairs,pairs,pcall,math,select,tremove,wipe
-	= coroutine, ipairs,pairs,pcall,math,select,tremove,wipe;
+local coroutine,ipairs,pairs,pcall,math,select,tremove,wipe
+	= coroutine,ipairs,pairs,pcall,math,select,tremove,wipe;
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local debugprofilestop = debugprofilestop;
 
 -- Expand / Collapse Functions
@@ -254,6 +253,7 @@ local function SetRowData(self, row, data)
 		row.__ref = row.ref;
 		row.ref = data;
 		if not data then
+			row.back = 0;
 			row:SetHighlightLocked(false);
 			row.Background:SetAlpha(0);
 			row.Background:Hide();
@@ -275,33 +275,15 @@ local function SetRowData(self, row, data)
 		if font ~= row.lastFont then
 			row.Label:SetFontObject(font);
 			row.Summary:SetFontObject(font);
+			row:SetHeight(select(2, row.Label:GetFont()) + 4);
 			row.lastFont = font;
 		end
 
-		-- Every valid row has a summary and label
-		row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
+		-- Every valid row has a summary, label, and texture
+		row.Texture:Show();
 		row.Summary:Show();
 		row.Label:Show();
 		row:Show();
-
-		-- Calculate the indent
-		local indent = ((CalculateRowIndent(data) or 0) + 1) * 8;
-		row.Texture.Background:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.Texture.Border:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.Texture:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.indent = indent;
-
-		-- Calculate the back color
-		local back = CalculateRowBack(data);
-		if back then
-			row.back = back;
-			if back > 0 then
-				row.Background:SetAlpha(back);
-				row.Background:Show();
-			else
-				row.Background:Hide();
-			end
-		end
 		
 		-- If we are searching for a given value, lock its highlight
 		if self.HightlightDatas[data] then
@@ -311,6 +293,27 @@ local function SetRowData(self, row, data)
 		end
 	elseif not data then
 		return;	-- Already cleared
+	end
+
+	-- Calculate the back color
+	local back = CalculateRowBack(data);
+	if back ~= row.back then
+		row.back = back;
+		if back > 0 then
+			row.Background:SetAlpha(back);
+			row.Background:Show();
+		else
+			row.Background:Hide();
+		end
+	end
+	
+	-- Calculate the indent
+	local indent = ((CalculateRowIndent(data) or 0) + 1) * 8;
+	if row.indent ~= indent then
+		row.Texture.Background:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.Texture.Border:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.Texture:SetPoint("LEFT", row, "LEFT", indent, 0);
+		row.indent = indent;
 	end
 	
 	-- Update the Summary Text (this will be the thing that updates the most)
@@ -327,42 +330,25 @@ local function SetRowData(self, row, data)
 		if not text then
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
-		elseif text:match(RETRIEVING_DATA) or text:find("^%[%]") or text:find("%[]") then
+		elseif IsRetrieving(text) then
 			-- This means the link is still rendering
 			self.processingLinks = true;
 		else
 			row.text = text;
 		end
 		row.Label:SetText(text);
-		row:SetHeight(select(2, row.Label:GetFont()) + 4);
 	end
 
 	-- If the data has a texture, assign it.
+	SetPortraitIcon(row.Texture, data);
+	
+	-- If we have a texture, let's assign it.
 	local indicatorTexture = app.GetIndicatorIcon(data);
-	if SetPortraitIcon(row.Texture, data) and row.Texture:GetTextureFilePath() then
-		row.Texture:Show();
-		row.Label:SetPoint("LEFT", row.Texture, "RIGHT", 2, 0);
-
-		-- If we have a texture, let's assign it.
-		if indicatorTexture then
-			row.Indicator:SetTexture(indicatorTexture);
-			row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -2, 0);
-			row.Indicator:Show();
-		else
-			row.Indicator:Hide();
-		end
+	if indicatorTexture then
+		row.Indicator:SetTexture(indicatorTexture);
+		row.Indicator:Show();
 	else
-		row.Texture:Hide();
-		row.Label:SetPoint("LEFT", row, "LEFT", row.indent, 0);
-
-		-- If we have a texture, let's assign it.
-		if indicatorTexture then
-			row.Indicator:SetTexture(indicatorTexture);
-			row.Indicator:SetPoint("RIGHT", row, "LEFT", row.indent, 0);
-			row.Indicator:Show();
-		else
-			row.Indicator:Hide();
-		end
+		row.Indicator:Hide();
 	end
 end
 local function UpdateVisibleRowData(self)
@@ -413,6 +399,7 @@ local function UpdateVisibleRowData(self)
 		-- Fill the remaining rows up to the (visible) row count.
 		local current, rowCount, containerHeight, totalHeight =
 			math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
+		local minIndent = nil;
 		for i=2,totalRowCount do
 			row = rows[i];
 			SetRowData(self, row, rowData[current]);
@@ -422,6 +409,9 @@ local function UpdateVisibleRowData(self)
 			else
 				current = current + 1;
 				rowCount = rowCount + 1;
+				if row.indent and (not minIndent or minIndent > row.indent) then
+					minIndent = row.indent;
+				end
 			end
 		end
 
@@ -476,28 +466,40 @@ local function StopMovingOrSizing(self)
 	self.isMoving = false;
 	self:RecordSettings();
 end
-local function StartMovingOrSizing(self)
-	if not (self:IsMovable() or self:IsResizable()) or self.isLocked then
-		return
+local function SelfSizeRefresher(self)
+	while self.isMoving do
+		self:Refresh();
+		coroutine.yield();
 	end
+	self:RecordSettings();
+end
+local function SelfMoveRefresher(self)
+	while self.isMoving do
+		coroutine.yield();
+		if not self:IsMouseOver() then
+			StopMovingOrSizing(self);
+		end
+	end
+	self:RecordSettings();
+end
+local function StartMovingOrSizing(self)
 	if self.isMoving then
 		StopMovingOrSizing(self);
+	elseif not (self:IsMovable() or self:IsResizable()) or self.isLocked then
+		return
 	else
 		self.isMoving = true;
 		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
-			self:StartATTCoroutine("StartMovingOrSizing (Sizing)", function()
-				while self.isMoving do
-					self:Refresh();
-					coroutine.yield();
-				end
-				self:RecordSettings();
-			end);
+			self:StartATTCoroutine("StartMovingOrSizing (Sizing)", SelfSizeRefresher);
 		elseif self:IsMovable() then
 			self:StartMoving();
+			self:StartATTCoroutine("StartMovingOrSizing (Moving)", SelfMoveRefresher);
 		end
 	end
 end
+
+local tinsert = tinsert;
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -1008,12 +1010,6 @@ local function CreateRow(container, rows, i)
 	row.Background:SetPoint("TOP");
 	row.Background:SetTexture(136810);
 
-	-- Indicator is used by the Instance Saves functionality.
-	row.Indicator = row:CreateTexture(nil, "ARTWORK");
-	row.Indicator:SetPoint("BOTTOM");
-	row.Indicator:SetPoint("TOP");
-	row.Indicator:SetWidth(rowHeight);
-
 	-- Texture is the icon.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
@@ -1028,6 +1024,17 @@ local function CreateRow(container, rows, i)
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(rowHeight);
+
+	-- Indicator is used by the Instance Saves functionality.
+	row.Indicator = row:CreateTexture(nil, "ARTWORK");
+	row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -2, 0);
+	row.Indicator:SetPoint("BOTTOM");
+	row.Indicator:SetPoint("TOP");
+	row.Indicator:SetWidth(rowHeight);
+	
+	-- The Label should be sandwiched between the summary and the texture
+	row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
+	row.Label:SetPoint("LEFT", row.Texture, "RIGHT", 2, 0);
 
 	-- Clear the Row Data Initially
 	SetRowData(container, row, nil);
@@ -1612,6 +1619,9 @@ end
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
+local function OnEventDebugging(self, ...)
+	print(self.Suffix, ...);
+end
 local function OnMouseWheelForWindow(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentIndex - delta);
 end
@@ -1619,13 +1629,6 @@ local function OnScrollBarValueChanged(self, value)
 	if self.CurrentIndex ~= value then
 		self.CurrentIndex = value;
 		self:GetParent():Refresh();
-	end
-end
-local function SetVisibleForWindow(self, show)
-	if show then
-		self:Show();
-	else
-		self:Hide();
 	end
 end
 local FieldDefaults = {
@@ -1639,15 +1642,22 @@ local FieldDefaults = {
 		-- allows a window to remove all event handlers it created
 		local handlers = self.Handlers
 		if handlers then
+			self.Handlers = nil
 			for i=1,#handlers do
 				app.RemoveEventHandler(handlers[i])
 			end
 		end
 	end,
 	RecordSettings = RecordSettingsForWindow,
-	SetVisible = SetVisibleForWindow,
+	SetVisible = function(self, show)
+		if show then
+			self:Show();
+		else
+			self:Hide();
+		end
+	end,
 	Toggle = function(self)
-		SetVisibleForWindow(self, not self:IsVisible());
+		self:SetVisible(not self:IsVisible());
 	end,
 	SetData = function(self, data)
 		if self.data ~= data then
@@ -1668,6 +1678,7 @@ local FieldDefaults = {
 	end,
 	
 	-- Rendering Functions
+	HasPendingUpdate = true,
 	AssignChildren = function(self)
 		app.AssignChildren(self.data);
 	end,
@@ -1717,14 +1728,13 @@ local ReservedFields = {
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 };
-function app:CreateWindow(suffix, settings)
-	local window = app.Windows[suffix];
-	if window then return window; end
-	local debugging = settings.Debugging;
+local WindowDefinitions = {};
+local function BuildWindow(suffix)
+	local settings = WindowDefinitions[suffix] or {};
 	
 	-- Create the window instance.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
-	window = CreateFrame("Frame", nil, settings.parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	local window = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	window:SetClampedToScreen(true);
 	window:SetToplevel(true);
 	window:EnableMouse(true);
@@ -1772,8 +1782,8 @@ function app:CreateWindow(suffix, settings)
 		end,
 	};
 	window:RegisterEvent("PLAYER_LOGOUT");
-	window:SetScript("OnEvent", function(o, e, ...)
-		if debugging then print(e, ...); end
+	if settings.Debugging then window:SetScript("OnEvent", OnEventDebugging); end
+	window:HookScript("OnEvent", function(o, e, ...)
 		local handler = handlers[e];
 		if handler then
 			handler(window, ...);
@@ -1837,7 +1847,7 @@ function app:CreateWindow(suffix, settings)
 	local onRebuild = settings.OnRebuild;
 	if onRebuild then
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		if debugging then
+		if settings.Debugging then
 			function window:ForceRebuild()
 				print("ForceRebuild: " .. suffix);
 				local lastUpdate = debugprofilestop();
@@ -1883,7 +1893,7 @@ function app:CreateWindow(suffix, settings)
 			end
 		end
 	else
-		if debugging then
+		if settings.Debugging then
 			function window:ForceRebuild()
 				if self.data then
 					print("ForceRebuild: " .. suffix);
@@ -1924,7 +1934,7 @@ function app:CreateWindow(suffix, settings)
 	end
 	
 	local OnUpdate = settings.OnUpdate or UpdateWindow;
-	if debugging then
+	if settings.Debugging then
 		function window:ForceUpdate(force, trigger)
 			print("ForceUpdate: " .. suffix, force, trigger);
 			local lastUpdate = debugprofilestop();
@@ -1964,7 +1974,7 @@ function app:CreateWindow(suffix, settings)
 
 	local onRefresh = settings.OnRefresh;
 	if onRefresh then
-		if debugging then
+		if settings.Debugging then
 			function window:Refresh()
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
@@ -1979,7 +1989,7 @@ function app:CreateWindow(suffix, settings)
 			end
 		end
 	else
-		if debugging then
+		if settings.Debugging then
 			function window:Refresh()
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
@@ -2159,8 +2169,13 @@ function app:CreateWindow(suffix, settings)
 	app.HandleEvent("OnWindowCreated", window);
 	return window;
 end
+function app:CreateWindow(suffix, settings)
+	-- TODO: Make this not immediately generate the window
+	WindowDefinitions[suffix] = settings;
+	return app.Windows[suffix] or BuildWindow(suffix);
+end
 function app:GetWindow(suffix)
-	return app.Windows[suffix];
+	return app.Windows[suffix] or BuildWindow(suffix);
 end
 
 -- Warning: This one is different in Retail for some reason.
