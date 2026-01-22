@@ -3063,9 +3063,6 @@ root(ROOTS.Unsorted, {
 			i(257600),	-- Skill Issue: Enchanting
 			i(257601),	-- Skill Issue: Tailoring
 
-			-- Cache
-			i(257603),	-- Primalist Weapon
-
 			-- Delve
 			i(257683),	-- Porcelain Blade Tip
 			-- QI
@@ -4396,44 +4393,6 @@ root(ROOTS.Unsorted, {
 
 			-- Mount
 			i(263580),	-- Vivid Chloroceros
-
-			-- Misc?
-			i(263710),	-- Primalist Plate Helm
-			i(263711),	-- Primalist Cloth Helm
-			i(263712),	-- Primalist Mail Helm
-			i(263713),	-- Primalist Leather Helm
-			i(263714),	-- Primalist Trinket
-			i(263715),	-- Primalist Plate Chestpiece
-			i(263716),	-- Primalist Cloth Chestpiece
-			i(263717),	-- Primalist Mail Chestpiece
-			i(263718),	-- Primalist Leather Chestpiece
-			i(263719),	-- Primalist Leather Leggings
-			i(263720),	-- Primalist Mail Leggings
-			i(263721),	-- Primalist Cloth Leggings
-			i(263722),	-- Primalist Plate Leggings
-			i(263724),	-- Primalist Plate Spaulders
-			i(263725),	-- Primalist Cloth Spaulders
-			i(263726),	-- Primalist Mail Spaulders
-			i(263727),	-- Primalist Leather Spaulders
-			i(263728),	-- Primalist Leather Bracers
-			i(263729),	-- Primalist Mail Bracers
-			i(263730),	-- Primalist Cloth Bracers
-			i(263731),	-- Primalist Plate Bracers
-			i(263732),	-- Primalist Plate Belt
-			i(263733),	-- Primalist Cloth Belt
-			i(263740),	-- Primalist Mail Belt
-			i(263776),	-- Primalist Leather Belt
-			i(263822),	-- Primalist Leather Boots
-			i(263859),	-- Primalist Mail Boots
-			i(263861),	-- Primalist Plate Boots
-			i(263862),	-- Primalist Cloth Boots
-			i(263863),	-- Primalist Cloth Gloves
-			i(263864),	-- Primalist Plate Gloves
-			i(263865),	-- Primalist Mail Gloves
-			i(263866),	-- Primalist Leather Gloves
-			i(263867),	-- Primalist Cloak
-			i(263868),	-- Primalist Ring
-			i(263869),	-- Primalist Necklace
 
 			-- Misc
 			i(263870),	-- Rookery Cache Key
