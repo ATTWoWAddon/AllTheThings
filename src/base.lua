@@ -9,6 +9,8 @@ local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,
 local appName, app = ...;
 app.Categories = {};
 
+-- Hey Blizzard, stop that. Thanks.
+SetCVar("taintLog","0");
 
 -- Generate the version identifier.
 ---@diagnostic disable-next-line: deprecated
