@@ -126,6 +126,7 @@ local TooltipSettingsBase = {
 		["CompletedBy"] = true,
 		["KnownBy"] = true,
 		["Locations"] = 5,
+		["InactiveWindowAlpha"] = 1,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["WorldMapButton"] = true,
@@ -287,6 +288,7 @@ settings.Initialize = function(self)
 		self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 		self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	end
+	self.sliderInactiveWindowAlpha:SetValue(self:GetTooltipSetting("InactiveWindowAlpha"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
 	settings._Initialize = true
 	

@@ -762,6 +762,59 @@ sliderMiniListScale:SetScript("OnValueChanged", function(self, newValue)
 	end
 end)
 
+local sliderInactiveWindowAlpha = CreateFrame("Slider", "ATTsliderInactiveWindowAlpha", child, "UISliderTemplate")
+sliderInactiveWindowAlpha:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, -25)
+table.insert(settings.Objects, sliderInactiveWindowAlpha)
+settings.sliderInactiveWindowAlpha = sliderInactiveWindowAlpha
+sliderInactiveWindowAlpha.tooltipText = L.INACTIVE_WINDOW_ALPHA_TOOLTIP
+sliderInactiveWindowAlpha:SetOrientation('HORIZONTAL')
+sliderInactiveWindowAlpha:SetWidth(200)
+sliderInactiveWindowAlpha:SetHeight(20)
+sliderInactiveWindowAlpha:SetValueStep(0.05)
+sliderInactiveWindowAlpha:SetMinMaxValues(0.1, 1)
+sliderInactiveWindowAlpha:SetObeyStepOnDrag(true)
+sliderInactiveWindowAlpha.Text = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+sliderInactiveWindowAlpha.Text:SetPoint("BOTTOMLEFT", sliderInactiveWindowAlpha, "TOPLEFT", 0, 0)
+sliderInactiveWindowAlpha.Text:SetText(L.INACTIVE_WINDOW_ALPHA_LABEL)
+sliderInactiveWindowAlpha.Text:SetTextColor(1, 1, 1)
+sliderInactiveWindowAlpha.LabelLow = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+sliderInactiveWindowAlpha.LabelLow:SetPoint("TOPLEFT", sliderInactiveWindowAlpha, "BOTTOMLEFT", 0, 2)
+sliderInactiveWindowAlpha.LabelLow:SetText('0.1')
+sliderInactiveWindowAlpha.LabelHigh = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+sliderInactiveWindowAlpha.LabelHigh:SetPoint("TOPRIGHT", sliderInactiveWindowAlpha, "BOTTOMRIGHT", 0, 2)
+sliderInactiveWindowAlpha.LabelHigh:SetText('1.0')
+sliderInactiveWindowAlpha.Label = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+sliderInactiveWindowAlpha.Label:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, 0)
+sliderInactiveWindowAlpha.Label:SetText(("%.2f"):format(sliderInactiveWindowAlpha:GetValue()))
+local InactiveWindowAlpha = 1;
+local function ApplyInactiveWindowAlphaForWindow(self)
+	if self:IsMouseOver() then
+		self:SetAlpha(1.0);
+	else
+		self:SetAlpha(InactiveWindowAlpha);
+	end
+end
+local function ApplyInactiveWindowAlpha(window)
+	if window:GetAlpha() == InactiveWindowAlpha then
+		return;
+	end
+	if InactiveWindowAlpha >= 1 then
+		window:SetScript("OnUpdate", nil);
+		window:SetAlpha(1.0);
+	else
+		window:SetScript("OnUpdate", ApplyInactiveWindowAlphaForWindow);
+	end
+end
+app.AddEventHandler("OnWindowCreated", ApplyInactiveWindowAlpha);
+sliderInactiveWindowAlpha:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(("%.2f"):format(newValue))
+	InactiveWindowAlpha = newValue;
+	settings:SetTooltipSetting("InactiveWindowAlpha", newValue)
+	for key,window in pairs(app.Windows) do
+		ApplyInactiveWindowAlpha(window);
+	end
+end)
+
 local checkboxDoAdHocUpdates;
 if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this.
 checkboxDoAdHocUpdates = child:CreateCheckBox(L.ADHOC_UPDATES_CHECKBOX,
@@ -773,7 +826,7 @@ function(self)
 end)
 checkboxDoAdHocUpdates:SetATTTooltip(L.ADHOC_UPDATES_CHECKBOX_TOOLTIP)
 checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
-checkboxDoAdHocUpdates:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
+checkboxDoAdHocUpdates:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
 end
 
 local checkboxExpandMiniList = child:CreateCheckBox(L.EXPAND_MINILIST_CHECKBOX,
@@ -788,7 +841,7 @@ if checkboxDoAdHocUpdates then
 	checkboxExpandMiniList:AlignBelow(checkboxDoAdHocUpdates)
 else
 	checkboxExpandMiniList:SetPoint("LEFT", headerListBehavior, 0, 0)
-	checkboxExpandMiniList:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
+	checkboxExpandMiniList:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
 end
 
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,

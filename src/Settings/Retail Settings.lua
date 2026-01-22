@@ -149,6 +149,7 @@ local TooltipSettingsBase = {
 		["KnownBy"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
+		["InactiveWindowAlpha"] = 1,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Objectives"] = false,
@@ -281,6 +282,7 @@ settings.Initialize = function(self)
 	self.sliderMaxTooltipTopLineLength:SetValue(self:GetTooltipSetting("MaxTooltipTopLineLength"))
 	self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
 	self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
+	self.sliderInactiveWindowAlpha:SetValue(self:GetTooltipSetting("InactiveWindowAlpha"))
 	self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))

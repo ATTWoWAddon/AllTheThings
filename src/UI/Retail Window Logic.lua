@@ -1045,6 +1045,9 @@ function app:GetWindow(suffix)
 	local OnInit = app:CustomWindowInit(suffix);
 	if OnInit then OnInit(window, handlers); end
 	
+	-- Inform event registers that a new window has been created.
+	app.HandleEvent("OnWindowCreated", window);
+	
 	-- TODO: eventually remove this when Windows are re-designed to have an OnInit/OnUpdate distinction for Retail
 	window:Update();
 	return window;

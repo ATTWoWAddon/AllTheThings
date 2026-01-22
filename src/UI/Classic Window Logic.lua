@@ -1170,6 +1170,9 @@ local function ApplySettingsForWindow(self, windowSettings)
 	if windowSettings.width then
 		self:SetSize(windowSettings.width, windowSettings.height);
 	end
+	if windowSettings.alpha then
+		self:SetAlpha(windowSettings.alpha);
+	end
 	if windowSettings.backdrop then
 		self:SetBackdrop(windowSettings.backdrop);
 	end
@@ -1200,6 +1203,7 @@ local function BuildDefaultsForWindow(self, fromSettings)
 		resizable = true,
 		visible = false,
 		movable = true,
+		alpha = 1,
 		x = 0,
 		y = 0,
 		width = 300,
@@ -1238,6 +1242,7 @@ local function BuildSettingsForWindow(self, windowSettings)
 	windowSettings.visible = not not self:IsVisible();
 	windowSettings.movable = not not self:IsMovable();
 	windowSettings.resizable = not not self:IsResizable();
+	windowSettings.alpha = self:GetAlpha();
 	windowSettings.backdrop = self:GetBackdrop();
 	local r, g, b, a = self:GetBackdropColor();
 	windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
@@ -2109,6 +2114,9 @@ function app:CreateWindow(suffix, settings)
 	if AllWindowSettingsLoaded then
 		LoadSettingsForWindow(window);
 	end
+	
+	-- Inform event registers that a new window has been created.
+	app.HandleEvent("OnWindowCreated", window);
 	return window;
 end
 function app:GetWindow(suffix)
