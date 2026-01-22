@@ -4,6 +4,10 @@
 root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 	n(ARMOR, {
 		filter(BACK_F, {
+			i(266216),	-- Threadbare Cloak
+			i(266221),	-- Frayed Shroud
+			i(266223),	-- Stained Drape
+			i(266224),	-- Brittle Cape
 		}),
 		filter(CLOTH, {
 			i(258863),	-- Threadbare Armbands

@@ -1525,6 +1525,7 @@ i(245580);	-- Rolling Snowball
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(264413);	-- Dominating Victory
 i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
 i(256881);	-- Steward's Bauble
@@ -1543,7 +1544,6 @@ i(251633);	-- Bursting Bounty Bundle
 i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone
 i(264672);	-- Cosmic Ritual Stone
-i(264413);	-- Dominating Victory
 i(266370);	-- Dundun's Abundant Travel Method
 i(263244);	-- Enigmatic Fountain
 i(263975);	-- Feeling Fielder Mk. 7

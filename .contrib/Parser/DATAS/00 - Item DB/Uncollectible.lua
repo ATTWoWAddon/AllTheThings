@@ -2600,13 +2600,17 @@ i(243216);	-- Snapped Antennae
 -- PATCH 12.0.0 --
 ------------------
 i(238482);	-- A Whole Lot of Nothing
+i(263517);	-- Ancient Text
 i(238494);	-- Another's Treasure
 i(260664);	-- Bioluminescent Flower Petals
 i(260670);	-- Bloody Broken Beak
 i(238483);	-- Bottom Grass
+i(263515);	-- Broken Soulstealing Mirror
 i(260652);	-- Broken Wildfire Claw
 i(244041);	-- Budding Seed
+i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
+i(263516);	-- Cosmic Ritual Bowl
 i(238484);	-- Damp Washcloth
 i(260687);	-- Decaying Leather
 i(238488);	-- Definitely a Rock
@@ -2614,25 +2618,41 @@ i(260647);	-- Digested Human Hand
 i(220262);	-- Elongated Proboscis
 i(238486);	-- Empty Can
 i(247672);	-- Eversong Fizz
+i(263518);	-- Expensive-Looking Find
 i(260672);	-- Fetid Eye
 i(260689);	-- Fine Bioluminescent Powder
+i(260638);	-- Fine Void Residue
 i(260642);	-- Fossilized Wildlife
+i(260639);	-- Fractured Bone
 i(238481);	-- Glittering Garbage
 i(260661);	-- Glowing Shrub
 i(238485);	-- Grotesque Globule
+i(260657);	-- Holey Organ
 i(238496);	-- Hunk O' Junk
+i(260604);	-- Insect Shedding
 i(238487);	-- Kickin' Can
+i(260653);	-- Large Lightbloom Fungi
 i(260606);	-- Light and Shaggy Fur
+i(260618);	-- Light-Infused Leaves
+i(260613);	-- Lightbloom Flower
+i(260663);	-- Lightbloom Residue
+i(260681);	-- Lightbloom-Infused Spores
+i(260651);	-- Lustrous Wildlife Pelt
 i(260693);	-- Mossy Lump of Dirt
 i(238480);	-- Opened Lockbox
+i(260671);	-- Oversized Gland
 i(243845);	-- Petalwrap Sack
 i(243844);	-- Petalwrap Bag
+i(260643);	-- Pile of Feathers
 i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
+i(260660);	-- Putrid Mushroom Spores
 i(238477);	-- Rotten Meat
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
+i(260684);	-- Sharp Scales
 i(238478);	-- Shimmering Seaweed
+i(263519);	-- Snake Oil
 i(238492);	-- Silent Rock
 i(247673);	-- Silvermoon Sin'gria
 i(260665);	-- Sizable Tusk
@@ -2643,6 +2663,7 @@ i(262786);	-- Suntouched Special Reserve
 i(260648);	-- Tattered Clothes
 i(238944);	-- Torn Material
 i(238479);	-- Torn Caster's Net
+i(260614);	-- Unrecognizable Organ
 i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
 i(260645);	-- Water Filled Organ

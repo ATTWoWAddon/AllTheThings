@@ -142,7 +142,6 @@ root(ROOTS.Unsorted, {
 			i(268112),	-- Argunite Beacon
 			i(268115),	-- Overbaked Donut
 			i(268116),	-- Twin-Flame Holder
-			i(268297),	-- Rattling Bag o' Gold
 			i(268551),	-- Scroll of Reflection
 			-- Special?
 			i(268274),	-- Blinky's Collar
@@ -1672,13 +1671,8 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(249219),	-- 12.0 Delves - Season 1 - Curio - Combat 1
-			i(249220),	-- Mantle of Stars \\ Mantle of Holy Light
 			i(249221),	-- Sanctum's Edict
-			i(249222),	-- Nether Entropic Kris
 			i(249223),	-- 12.0 Delves - Season 1 - Curio - Combat 5
-			i(249224),	-- Motionless Nulltide
-			i(249225),	-- Mandate of Sacred Death
-			i(249226),	-- Ebon Crown of Subjugation
 			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
 
 			-- QI
@@ -1764,13 +1758,10 @@ root(ROOTS.Unsorted, {
 			i(249616),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff INT
 			i(249617),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Sword INT
 			i(249619),	-- Sprawling Mycoshroud
-			i(249620),	-- Vibrant Wilderloop
 			i(249621),	-- Hyphae Circle
 			i(249622),	-- Wildwood Frondband
 			i(249623),	-- Blooming Leafcoil
-			i(249624),	-- Osseoclad Paledrape
 			i(249625),	-- Elder Mossveil
-			i(249626),	-- Verdant Sprigstrand
 			i(249627),	-- Arboreal Vine Collar
 			i(249628),	-- Rampant Bramblecloack
 			i(249629),	-- Sprawling Rootunic
@@ -1781,14 +1772,6 @@ root(ROOTS.Unsorted, {
 			i(249634),	-- Sprawling Fibershells
 			i(249635),	-- Sprawling Rhizomecord
 			i(249636),	-- Sprawling Wristroots
-			i(249637),	-- Osseoclad Marrowvest
-			i(249638),	-- Osseoclad Bonecrushers
-			i(249639),	-- Osseoclad Spinegrapplers
-			i(249640),	-- Osseoclad Saberteeth
-			i(249641),	-- Osseoclad Bonesteppers
-			i(249642),	-- Osseoclad Razorspaulders
-			i(249643),	-- Osseoclad Waistbone
-			i(249644),	-- Osseoclad Ivory Wrist
 			i(249645),	-- Elder Mossmail
 			i(249646),	-- Elder Mossclogs
 			i(249647),	-- Elder Mossfeelers
@@ -2188,7 +2171,6 @@ root(ROOTS.Unsorted, {
 			i(253849),	--
 
 			-- Delve
-			i(254250),	-- Bountiful Coffer
 			i(254253),	-- Spoils of Nullaeus \\ Nullaeus
 			i(254256),	-- Delver's Bounty
 			i(254257),	-- Delver's Bounty
@@ -2294,11 +2276,6 @@ root(ROOTS.Unsorted, {
 			i(254778),	-- Altered Totem
 			i(255161),	-- Callum's Belongings
 			-- Delve
-			i(254674),	-- Ancient Curio
-			i(254675),	-- Ancient Curio
-			i(254748),	-- Chunk of Companion Experience
-			i(254756),	-- Chunk of Companion Experience
-			i(254757),	-- Chunk of Companion Experience
 			i(254869),	-- Chunk of Companion Experience
 			i(254983),	-- Assassin's Subtle Tea
 			i(254984),	-- Potent Assassin's Subtle Tea
@@ -2998,14 +2975,11 @@ root(ROOTS.Unsorted, {
 			i(257347),	-- [DNT] [PH] 12.0 Armor Box
 
 			-- Delve??
-			i(257379),	-- Player Experience
 			i(257380),	-- Player Experience
 			i(257381),	-- Player Experience
-			i(257382),	-- Companion Experience
 			i(257383),	-- Companion Experience
 			i(257384),	-- Companion Experience
 			i(257386),	-- Heavy Trunk
-			i(257387),	-- Bountiful Heavy Trunk
 
 			-- Quest Armor?
 			i(257523),	-- Woven Haranir Wrappings
@@ -3567,8 +3541,6 @@ root(ROOTS.Unsorted, {
 			i(259375),	-- Formula: Self-Pouring Thalassian Sunwine
 			i(259457),	-- Pattern: Simple Haranir Table
 			i(259459),	-- Recipe: Potion of Recklessness
-			-- Wep
-			i(259462),	-- Thorneedle
 
 			-- Prey
 			i(259909),	-- Preyseeker's Refined Shawl \\ [DNT] 12.0 Prey - Accessory - CLOAK - A
@@ -3630,7 +3602,6 @@ root(ROOTS.Unsorted, {
 			i(260173),	-- Crystallized Dawnlight Manaflux
 
 			-- Wep
-			i(260187),	-- Underbrush Render
 			i(260188),	-- Savage Briaredge
 			i(260189),	-- Rootkeeper's Dancing Needle
 			i(260190),	-- Heavy Bramblebolter
@@ -3854,12 +3825,6 @@ root(ROOTS.Unsorted, {
 			i(260872),	-- Hazy Penumbral Cloak \\ [DNT] Cloak A
 			i(260873),	-- Cowl of Infinite Gravity \\ [DNT] Cloak B
 
-			-- Boon
-			i(260878),	-- Boon of Possibilities
-			i(260879),	-- Boon of Power
-			i(260882),	-- Boon of Potency
-			i(260884),	-- Boon of Abstinence
-
 			-- QI
 			i(260890),	-- Bag of Skewers
 
@@ -3880,14 +3845,8 @@ root(ROOTS.Unsorted, {
 			i(260907),	-- Lost Winter's Hunger
 			i(260908),	-- Lost Frostwolf's Stand
 
-			-- Boon
-			i(260910),	-- Boon of Vitality
-			i(260911),	-- Boon of Fortitude
-
 			-- Delve
-			i(260913),	-- Crimson Blessing \\ Crimson Feather
 			i(260924),	-- Sentinel's Blessing \\ Sentinel's Halo
-			i(262389),	-- Veiled Blessing \\ Veiled Barrier
 			-- Mount
 			i(260916),	-- Lost Nether Drake
 
@@ -3937,8 +3896,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(262584),	-- Bottomless Bag of Amulets of the Ascendant Void \\ Bottomless Bag of Voidsong Chains
-			-- QI
-			i(262586),	-- Primeval Arcane Remnant
 
 			-- Prey
 			i(262596),	-- Preyseeker's Satchel of Voidlight Marl
@@ -4290,9 +4247,6 @@ root(ROOTS.Unsorted, {
 			i(263485),	-- Eversong Battleaxe
 			i(263486),	-- Eversong Hacker
 			i(263487),	-- Eversong Training Staff
-
-			-- Delve
-			i(263488),	-- Companion Experience
 
 			-- Pet
 			i(263492),	-- Blitzcreek
@@ -4992,7 +4946,6 @@ root(ROOTS.Unsorted, {
 			i(265674),	-- Tasty Meat
 			i(265695),	-- Elementary Voidcore Shard
 			i(265710),	-- Elementary Voidcore
-			i(265714),	-- Trovehunter's Bounty
 			i(265739),	-- Amani Heartstring Pendant
 			i(265740),	-- Amani Totemstring
 			i(265746),	-- Idol of Abundance \\ [PH] Rat Loa Blessing
@@ -5110,10 +5063,6 @@ root(ROOTS.Unsorted, {
 			i(266209),	-- Tarnished Dawnlit Sentinel's Drape
 			i(266210),	-- Tarnished Dawnlit Commander's Cape
 			i(266213),	-- Incense Materials
-			i(266216),	-- Threadbare Cloak
-			i(266221),	-- Frayed Shroud
-			i(266223),	-- Stained Drape
-			i(266224),	-- Brittle Cape
 			i(266262),	-- Dawnroot Haranir Channeler
 			i(266263),	-- Wildgrove Haranir Longbow
 			i(266264),	-- Sunpetal Haranir Spire
@@ -5132,42 +5081,28 @@ root(ROOTS.Unsorted, {
 			i(253451),	-- Veilroot Fountain
 			i(257193),	-- Preyseeker's Nightmare
 			i(260603),	-- Frail and Flexible Wing
-			i(260604),	-- Insect Shedding
 			i(260605),	-- Shattered Spear Tip
 			i(260608),	-- Bloated Animal Remains
 			i(260611),	-- Large Bestial Scale
-			i(260613),	-- Lightbloom Flower
-			i(260614),	-- Unrecognizable Organ
 			i(260615),	-- Void Dust Residue
 			i(260617),	-- Large Broken Teeth
-			i(260618),	-- Light-Infused Leaves
-			i(260619),	-- Colorful Leaves
 			i(260620),	-- Stone Droppings
 			i(260621),	-- Magic Infused Bark
 			i(260636),	-- Algae Covered Stone
 			i(260637),	-- Rotting Insect Eggs
-			i(260638),	-- Fine Void Residue
-			i(260639),	-- Fractured Bone
 			i(260640),	-- Crooked Bird Talons
 			i(260641),	-- Arid Tendrils
-			i(260643),	-- Pile of Feathers
 			i(260644),	-- Lightbloom Bark
 			i(260646),	-- Glowing Gland
 			i(260649),	-- Vibrant Vortex
 			i(260650),	-- Elemental Debris
-			i(260651),	-- Lustrous Wildlife Pelt
-			i(260653),	-- Large Lightbloom Fungi
 			i(260654),	-- Abrasive Sand
 			i(260655),	-- Decaying Humanoid Flesh
 			i(260656),	-- Perforated Wing
-			i(260657),	-- Holey Organ
 			i(260658),	-- Crystal Rock Shard
-			i(260660),	-- Putrid Mushroom Spores
-			i(260663),	-- Lightbloom Residue
 			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
-			i(260671),	-- Oversized Gland
 			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
 			i(260675),	-- Luminous Seeds
@@ -5176,10 +5111,8 @@ root(ROOTS.Unsorted, {
 			i(260678),	-- Sharp Obsidian Chunk
 			i(260679),	-- Fleshless Bone
 			i(260680),	-- Nesting Materials
-			i(260681),	-- Lightbloom-Infused Spores
 			i(260682),	-- Rusty Tusk Ring
 			i(260683),	-- Fine Magenta Sand
-			i(260684),	-- Sharp Scales
 			i(260685),	-- Large Brittle Bone
 			i(260688),	-- Insect Exoskeleton
 			i(260690),	-- Gloomy Root
@@ -5342,11 +5275,6 @@ root(ROOTS.Unsorted, {
 
 			i(262432),	-- Weathered Lockbox
 			i(262559),	-- Spare Key
-			i(263515),	-- Broken Soulstealing Mirror
-			i(263516),	-- Cosmic Ritual Bowl
-			i(263517),	-- Ancient Text
-			i(263518),	-- Expensive-Looking Find
-			i(263519),	-- Snake Oil
 
 
 			-- Decor
@@ -5407,7 +5335,6 @@ root(ROOTS.Unsorted, {
 			i(267236),	-- Boon of Speed
 			i(267237),	-- Boon of Power
 			i(267238),	-- Boon of Potency
-			i(267239),	-- Boon of Possibilities
 			i(267240),	-- Boon of Fortitude
 			i(267241),	-- Boon of Abstinence
 			i(267242),	-- Boon of Speed
@@ -5536,7 +5463,6 @@ root(ROOTS.Unsorted, {
 			i(267643),	-- Worn Amani Totemstring
 
 			-- Misc Boon
-			i(267647),	-- Boon of Vigor
 			i(267648),	-- Boon of Vigor
 			i(267649),	-- Boon of Vigor
 

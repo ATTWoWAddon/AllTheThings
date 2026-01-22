@@ -130,11 +130,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93506),	-- Enshrouded in Battle
 				q(93504),	-- Enshrouded in Skirmishes
 				q(93503),	-- Enshrouded in Teamwork
+				q(93508),	-- Enshrouded in War
+				q(93426),	-- Sparks of War: Voidstorm
+				-- #IF AFTER MID
+				-- #IF BEFORE TLT
+				pvp(q(47148)),				-- Something Different
+				-- #ENDIF
+				-- #ENDIF
 			})),
 			n(VENDORS, {
 				n(243225, {	-- Mirvedon <Competitor's Recipes>
 					["coord"] = { 34.0, 81.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {	-- Alex TODO: gold on alpha
+					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
 						filter(RECIPES, {
 							i(256719),	-- Design: Midnight Competitor's Amulet
 							i(256702),	-- Design: Midnight Competitor's Signet
