@@ -739,8 +739,11 @@ local function MergeProperties(g, t, noReplace, clone)
 		end
 	end
 	-- only copy metatable to g if another hasn't been set already
-	if not getmetatable(g) and getmetatable(t) then
-		setmetatable(g, getmetatable(t))
+	if not getmetatable(g) then
+		local tmeta = getmetatable(t)
+		if tmeta then
+			setmetatable(g, tmeta)
+		end
 	end
 end
 app.MergeProperties = MergeProperties
