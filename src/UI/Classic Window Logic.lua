@@ -254,6 +254,7 @@ local function SetRowData(self, row, data)
 		row.__ref = row.ref;
 		row.ref = data;
 		if not data then
+			row:SetHighlightLocked(false);
 			row.Background:SetAlpha(0);
 			row.Background:Hide();
 			row.Texture:Hide();
@@ -300,6 +301,13 @@ local function SetRowData(self, row, data)
 			else
 				row.Background:Hide();
 			end
+		end
+		
+		-- If we are searching for a given value, lock its highlight
+		if self.HightlightDatas[data] then
+			row:SetHighlightLocked(true)
+		else
+			row:SetHighlightLocked(false)
 		end
 	elseif not data then
 		return;	-- Already cleared
@@ -377,6 +385,25 @@ local function UpdateVisibleRowData(self)
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
+		-- Should this window attempt to scroll to specific data?
+		if self.ScrollInfo then
+			local field, value = self.ScrollInfo[1], self.ScrollInfo[2]
+			-- app.PrintDebug("ScrollInfo",field,value)
+			wipe(self.HightlightDatas)
+			local foundAt, ref
+			for i=2,totalRowCount do
+				ref = rowData[i]
+				if ref and ref[field] == value then
+					if not foundAt then foundAt = i end
+					self.HightlightDatas[ref] = true
+				end
+			end
+			if foundAt then
+				-- app.PrintDebug("ScrollTo",foundAt)
+				self.ScrollInfo.ScrollTo = foundAt
+			end
+		end
+		
 		-- Ensure that the first row doesn't move out of position.
 		local container = self.Container;
 		local rows = container.rows;
@@ -409,6 +436,27 @@ local function UpdateVisibleRowData(self)
 		end
 		self:SetMinMaxValues(rowCount, totalRowCount + 1);
 
+		-- Actually do the scroll if it was determined above
+		if self.ScrollInfo then
+			if self.ScrollInfo.ScrollTo then
+				self.ScrollBar:SetValue(math.max(1, self.ScrollInfo.ScrollTo - (rowCount / 2)))
+			end
+			self.ScrollInfo = nil
+		end
+		
+		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
+		if GameTooltip and GameTooltip:IsVisible() then
+			local row = GameTooltip:GetOwner()
+			if row and row.__ref ~= row.ref then
+				-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
+				-- force tooltip to refresh since the scroll has changed but the tooltip is still visible
+				local OnLeave = row:GetScript("OnLeave")
+				local OnEnter = row:GetScript("OnEnter")
+				OnLeave(row)
+				OnEnter(row)
+			end
+		end
+		
 		-- If the rows need to be processed again, do so next update.
 		if self.processingLinks then
 			self:StartATTCoroutine("Process Links", function()
@@ -694,6 +742,10 @@ local function RowOnEnter(self)
 	tooltip:ClearLines();
 	app.ActiveRowReference = reference;
 	local window = self:GetParent():GetParent();
+	if window.HightlightDatas[reference] then
+		window.HightlightDatas[reference] = nil
+		self:SetHighlightLocked(false)
+	end
 	local anchor = window.TooltipAnchor;
 	if not anchor then
 		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
@@ -1627,6 +1679,10 @@ local FieldDefaults = {
 	SetMinMaxValues = function(self, displayedValue, totalValue)
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
 	end,
+	ScrollTo = function(self, field, value)
+		self.ScrollInfo = { field, value }
+		self:Refresh();
+	end,
 	
 	-- Rendering Functions
 	AssignChildren = function(self)
@@ -1696,6 +1752,7 @@ function app:CreateWindow(suffix, settings)
 		window:SetMinResize(96, 32);
 	end
 	app.Windows[suffix] = window;
+	window.HightlightDatas = {};
 	window.Suffix = suffix;
 	window:Hide();
 	
