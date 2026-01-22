@@ -2181,7 +2181,7 @@ app.AddCustomWindowOnUpdate("Bounty", function(self, force, got)
 		self:DefaultUpdate(force);
 		app.Modules.Filter.Set.Visible(visibleState)
 		]]--
-		
+
 		-- Force Debug Mode
 		local rawSettings = app.Settings:GetRawSettings("General");
 		local debugMode = app.MODE_DEBUG;
@@ -2944,6 +2944,7 @@ app.AddCustomWindowOnUpdate("awp", function(self, force)	-- TODO: Change this to
 	local SL = {90001,90002,90005,90100,90105,90200,90205,90207}
 	local DF = {100000,100002,100005,100007,100100,100105,100107,100200,100205,100206,100207}
 	local TWW = {110000,110002,110005,110007,110100,110105,110107,110200,110205,110207}
+	local MID = {120000, 120001}
 
 	-- Locals
 	local param = {}
@@ -2962,7 +2963,8 @@ app.AddCustomWindowOnUpdate("awp", function(self, force)	-- TODO: Change this to
 		bfa = {param = BFA, header = 8},
 		sl = {param = SL, header = 9},
 		df = {param = DF, header = 10},
-		tww = {param = TWW, header = 11}
+		tww = {param = TWW, header = 11},
+		mid = {param = MID, header = 12}
 	}
 
 	-- Function for dynamic groups
@@ -3625,7 +3627,7 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 					end
 				end
 			end
-			
+
 			local excludedZones = setmetatable({}, {
 				__index = function(t, mapID)
 					local info = C_Map_GetMapInfo(mapID);
