@@ -24,7 +24,7 @@ app:CreateWindow("Race Specific Things", {
 							return true;
 						end
 					end);
-					for raceID=1,20,1 do
+					for raceID=1,50,1 do
 						if C_CreatureInfo_GetRaceInfo(raceID) then
 							local raceObject = app.CreateRace(raceID);
 							tinsert(g, raceObject);

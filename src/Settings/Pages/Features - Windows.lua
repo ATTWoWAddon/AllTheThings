@@ -16,7 +16,7 @@ end
 local WindowButtons = {};
 local function OnClickForWindowButton(self)
 	HideUIPanel(SettingsPanel);
-	self.Window:Show();
+	app:GetWindow(self.Suffix):Show();
 end
 local function UpdateButtonText(self, window)
 	local text = window.SettingsName;
@@ -69,6 +69,14 @@ end
 
 app.AddEventHandler("OnSettingsRefreshed", function()
 	local keys,sortedList,topKeys = {},{},{};
+	for suffix,window in pairs(app.WindowDefinitions) do
+		app:GetWindow(suffix);
+		if window.IsTopLevel then
+			tinsert(topKeys, suffix);
+		else
+			keys[suffix] = window;
+		end
+	end
 	for suffix,window in pairs(app.Windows) do
 		if window.IsTopLevel then
 			tinsert(topKeys, suffix);
@@ -86,23 +94,32 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	local j = 0;
 	for i,suffix in ipairs(sortedList) do
 		local window = app.Windows[suffix];
-		if window and not window.dynamic and window.Commands and not window.HideFromSettings then
-			j = j + 1;
-			local button = WindowButtons[j];
-			if not button then
-				button = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-				button:RegisterForClicks("AnyUp");
-				button:SetScript("OnClick", OnClickForWindowButton);
-				button.OnTooltip = OnTooltipForWindowButton;
-				button:SetATTTooltip();
-				tinsert(WindowButtons, button);
-			end
-			button.Window = window;
-			button.Suffix = window.Suffix;
-			UpdateButtonText(button, window);
+		if window then
+			if not window.dynamic and window.Commands and not window.HideFromSettings then
+				j = j + 1;
+				local button = WindowButtons[j];
+				if not button then
+					button = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
+					button:RegisterForClicks("AnyUp");
+					button:SetScript("OnClick", OnClickForWindowButton);
+					button.OnTooltip = OnTooltipForWindowButton;
+					button:SetATTTooltip();
+					tinsert(WindowButtons, button);
+				end
+				button.Window = window;
+				button.Suffix = window.Suffix;
+				UpdateButtonText(button, window);
 
-			-- TODO: Preferred new style, once we get the window template designed
-			--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
+				-- TODO: Preferred new style, once we get the window template designed
+				--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
+			end
+		--[[
+		else
+			local definition = app.WindowDefinitions[suffix];
+			if definition then
+				
+			end
+		]]--
 		end
 	end
 	local parent = child.separator or child;

@@ -1412,10 +1412,8 @@ app.AddEventHandler("OnStartup", function()
 	-- Mark Windows as loaded.
 	AllWindowSettingsLoaded = true;
 	for name, definition in pairs(app.WindowDefinitions) do
-		print(name);
 		local settings = AllWindowSettings[name];
 		if settings and settings.visible then
-			print(" SUPPOSED TO BE VISIBLE, IDIOT!");
 			app:GetWindow(name);
 		end
 	end
