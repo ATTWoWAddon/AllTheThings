@@ -116,6 +116,8 @@ local GeneralSettingsBase = {
 		["ExpansionFilter:SL"] = app.GameBuildVersion >= 90000,
 		["ExpansionFilter:DF"] = app.GameBuildVersion >= 100000,
 		["ExpansionFilter:TWW"] = app.GameBuildVersion >= 110000,
+		["ExpansionFilter:MID"] = app.GameBuildVersion >= 120000,
+		["ExpansionFilter:TLT"] = app.GameBuildVersion >= 130000,
 	},
 };
 local FilterSettingsBase = {

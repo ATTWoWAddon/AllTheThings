@@ -7,7 +7,7 @@ if not app.IsRetail then return end
 -- Ideally we would use app.CURRENT_EXPANSION from Expansion.lua but it returns 0 on initial load of the game client
 -- prior to the player entering the world, so we hardcode it here for now.
 -- Would need to delay loading this settings panel content until it returned a valid value
-local CURRENT_EXPANSION = 11
+local CURRENT_EXPANSION = 12
 
 -- Settings: Expansion Filters Page
 local child = settings:CreateOptionsPage(L.EXPANSION_FILTERS_PAGE, L.GENERAL_PAGE)
@@ -36,6 +36,8 @@ local expansions = {
 	{ key = "ExpansionFilter:SL" },
 	{ key = "ExpansionFilter:DF" },
 	{ key = "ExpansionFilter:TWW" },
+	{ key = "ExpansionFilter:MID" },
+	{ key = "ExpansionFilter:TLT" },
 }
 for i = 1,CURRENT_EXPANSION do
 	expansions[i].info = app.CreateExpansion(i)
