@@ -758,8 +758,7 @@ if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cata
 
 	checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
 	function(self)
-		local _, classFilename = UnitClass("player")
-		local rPerc, gPerc, bPerc = GetClassColor(classFilename)
+		local rPerc, gPerc, bPerc = GetClassColor(app.Class)
 		self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 		self:SetChecked(settings:Get("MainOnly"))
 		if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then

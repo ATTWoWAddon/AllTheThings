@@ -299,10 +299,6 @@ settings.Initialize = function(self)
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
 
-	app.AddEventHandler("OnStartup", function()
-		settings.ApplyAllWindowColors()
-	end)
-
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)

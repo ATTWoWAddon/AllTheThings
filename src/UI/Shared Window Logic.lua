@@ -378,3 +378,23 @@ end
 -- Window Creation
 app.WindowDefinitions = {};
 app.Windows = {};
+
+-- Window Color Management
+local function ApplyAllWindowColors(...)
+	-- Apply the user-set colours
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
+
+	for suffix, window in pairs(app.Windows) do
+		window:SetBackdropColor(rBg, gBg, bBg, aBg)
+		window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+	end
+end
+app.AddEventHandler("Settings.OnSet", function(context, setting, value)
+	if (context == "General" and (setting == "Window:BackgroundColor" or setting == "Window:BorderColor"))
+		or (context == "Tooltips" and setting == "Window:UseClassForBorder") then
+		ApplyAllWindowColors();
+	end
+end)
+app.AddEventHandler("OnStartup", function()
+	ApplyAllWindowColors();
+end)
