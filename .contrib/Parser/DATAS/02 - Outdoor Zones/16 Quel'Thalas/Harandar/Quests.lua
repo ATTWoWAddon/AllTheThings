@@ -445,6 +445,49 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 61574, {	-- Legends Never Die
+				n(REWARDS, {
+					i(263467),	-- Avid Learner's Supply Pack
+				}),
+				q(89268, {	-- Lost Legends
+					--["sourceQuest"] = X,	-- 
+					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+					["isWeekly"] = true,
+				}),
+				header(HEADERS.AchCriteria, 61574.01, {	-- Wey'nan's Ward
+					q(88993, {	-- Wey'nan's Ward
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(263037),	-- Replica Wey'nan's Ward (DECOR!)
+						},
+					}),
+					q(90536, {	-- The Tale of Wey'nan's Ward
+						["description"] = "This Quest is triggered after you embark on a Vision Walk.",
+						["sourceQuest"] = 88993,	-- Wey'nan's Ward
+						["provider"] = { "n", 241117 },	-- Ancient Visionstone
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							o(531174, {	-- Fragrant Mushroom
+								["coord"] = { 41.3, 34.9, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = {
+									i(241349),	-- Fragrant Mushroom Cap (QI!)
+									i(241611),	-- Zarat's Head (QI!)
+								},
+							}),
+						},
+					}),
+				}),
+				q(89268, {	-- Lost Legends
+					["sourceQuest"] = 88993,	-- Wey'nan's Ward
+					--["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+				}),
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(86874, {	-- Culling the Light
 					["sourceQuests"] = { 86866 },	-- Can we Heal This? (It require 86867 to be picked up)
@@ -1056,6 +1099,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
@@ -1063,6 +1107,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				-- During questing
 				--q(89196),	-- Zone Choice Made (spellID 1254861), same hqt as previously.
 				q(92712),	-- after turn in questID 86929 (The Council Assembles), could be some phase swtiches or faction renown?
+				-- Legends Never Die Achievement
+				q(89266),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993)
+				--
 			}),
 		}),
 	}),

@@ -13915,7 +13915,7 @@ i(139536,{b=1,c=a[1665],f=55,spellID=220584,g={
 artifact(881,{c=a[1665]})}})}})}),
 cl(4.261,{
 gt(441,{c=a[1665],g={
-n(98100,{c=a[1665],coords={{40.8,76.8,626}},cost={{"i",94222,1}},sym={{"select","mapID",518}}})}})})}}),
+n(98100,{c=a[1665],coords={{40.8,76.8,626}},cost={{"i",94222,1}},sym={{"select","questID",32296},{"pop"}}})}})})}}),
 h(-33,{c=a[1665],g={
 follower(907,{c=a[1665],u=5}),
 follower(917,{c=a[1665],u=5}),
@@ -26626,8 +26626,8 @@ n(189226,{coords={a[2117]},g={
 i(198854,{b=1,cost={{"c",2003,10}},minReputation=a[1103],questID=70409,sourceQuests={72709},spellID=385763,type="ihqt"}),
 de(1177,{awp=110207,cost={{"c",2003,400}},itemID=245283,minReputation=a[1103],spellID=1238377}),
 de(718,{awp=110207,cost={{"c",2003,250}},itemID=245288,minReputation=a[1103],spellID=1238382}),
-de(717,{awp=110207,cost={{"c",2003,10}},itemID=245287,minReputation=a[1103],spellID=1238381}),
-de(1181,{awp=110207,cost={{"c",2003,10}},itemID=245286,minReputation=a[1103],spellID=1238380}),
+de(717,{awp=110207,cost={{"c",2003,250}},itemID=245287,minReputation=a[1103],spellID=1238381}),
+de(1181,{awp=110207,cost={{"c",2003,250}},itemID=245286,minReputation=a[1103],spellID=1238380}),
 de(716,{awp=110207,cost={{"c",2003,100}},itemID=245285,minReputation=a[1103],spellID=1238379}),
 de(720,{awp=110207,cost={{"c",2003,750}},itemID=238975,minReputation=a[1103],spellID=1226898}),
 s(181774,198718,{cost={{"i",193214,3},{"c",2003,150}},f=20,minReputation=a[1120]}),

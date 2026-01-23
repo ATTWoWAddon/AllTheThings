@@ -833,6 +833,7 @@ local function TryShowUnitTooltipInfo(self, guid)
 	-- Account for Blizzard Shenanigans
 	if issecretvalue(guid) then
 		if app.Settings:GetTooltipSetting("creatureID") then
+			if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
 			self:AddDoubleLine(L.CREATURE_ID, "<secret value???>");
 			self:AddLine("Blizzard says you aren't allowed to know what CreatureID this unit has. If you want ATT tooltips to ever appear on hostile npcs ever again, please yell at your local Blizzard Developer and tell them to allow UnitGUID and UnitCreatureID to be less secret while not in combat.\n \n -Crieve", 0.8, 0.4, 0.4, 1);
 		end

@@ -784,8 +784,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(241155),	-- Void Condenser
-			i(241349),	-- Fragrant Mushroom Cap
-			i(241611),	-- Zarat's Head
 
 			-- Eversong event?
 			i(242241),	-- Latent Arcana
@@ -836,7 +834,6 @@ root(ROOTS.Unsorted, {
 			i(242530),	-- [PH] Vegetarian Recipe
 			i(242531),	-- [PH] Vegetarian Recipe
 			i(242532),	-- [PH] Vegetarian Recipe
-			i(242640),	-- Plant Protein
 			i(242641),	-- Cooking Spirits
 			i(242642),	-- Thalassian Herbs
 			i(242643),	-- A Big Ol' Stick of Butter
@@ -2852,7 +2849,6 @@ root(ROOTS.Unsorted, {
 			i(256994),	-- Steelbark Casque \\ [PH] WQ - Armor - Plate HEAD - A
 			i(256995),	-- Rootspeaker's Headdress \\ [PH] WQ - Armor - Mail HEAD - A
 			i(256997),	-- Deepvine Collar \\ [PH] WQ - Armor - Cloth HEAD - A
-			i(256998),	-- Steelbark Shoulderguards \\ [PH] WQ - Armor - Plate SHOULDER - A
 			i(256999),	-- Rootspeaker's Canopy \\ [PH] WQ - Armor - Mail SHOULDER - A
 			i(257001),	-- Deepvine Pauldrons \\ [PH] WQ - Armor - Cloth SHOULDER - A
 			i(257002),	-- Steelbark Greaves \\ [PH] WQ - Armor - Plate LEGS - A
@@ -4095,7 +4091,6 @@ root(ROOTS.Unsorted, {
 			-- Cache
 			i(263465),	-- Surplus Bag of Party Favors
 			i(263466),	-- Overflowing Abundant Satchel
-			i(263467),	-- Avid Learner's Supply Pack
 			i(263468),	-- Stormarion Spoils
 
 			-- Quest Rewards?
@@ -4547,7 +4542,6 @@ root(ROOTS.Unsorted, {
 			i(263019),	-- Haranir Pennant
 			i(263020),	-- Ward of the Shul'ka
 			i(263036),	-- Hanging Dawnflower
-			i(263037),	-- Replica Wey'nan's Ward
 			i(263038),	-- Haranir Reclined Bed \\ Haranir Canopy Bed
 			i(263039),	-- Harandar Flowering Lamp
 			i(263041),	-- Replica Root of the World
@@ -4593,7 +4587,6 @@ root(ROOTS.Unsorted, {
 			i(264243),	-- Firm Haranir Pillow
 			i(264245),	-- Warm Haranir Blanket
 			i(264258),	-- Blossoming Forge
-			i(264259),	-- On'ohia's Call
 			i(264262),	-- Haranir Whistling Arrow
 			i(264264),	-- Gilded Vigil Post \\ [DNT] [AUTOGEN] Decor 15499 Item
 			i(264265),	-- Sanctified Flame Lantern \\ [DNT] [AUTOGEN] Decor 15500 Item
