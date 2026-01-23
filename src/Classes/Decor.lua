@@ -42,7 +42,6 @@ do
 	local function RefreshDecorCollection()
 		HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
 		HousingSearcher:SetAutoUpdateOnParamChanges(false)
-		HousingSearcher:SetIncludeMarketEntries(false)
 	   	HousingSearcher:SetResultsUpdatedCallback(function()
 			local saved, none = {}, {}
 			local added = {}
@@ -52,13 +51,13 @@ do
 		      		local info = C_HousingCatalog.GetCatalogEntryInfo(entry)
 		      		if info ~= nil then
 		          		local qty = info.numPlaced + info.numStored
-		          
+
 						-- qty can sometimes be 4294967295
 		          		if qty > 0 and qty < 1000000 then
                     		saved[entry.recordID] = true
                     		added[#added + 1] = entry
                   		else
-                    		none[entry.recordID] = true		          
+                    		none[entry.recordID] = true
 		          		end
 		      		end
 		   		end
