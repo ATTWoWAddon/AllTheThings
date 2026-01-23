@@ -921,8 +921,9 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		local ttType, ttId = ttdata and ttdata.type, nil;
 		if ttType then
 			-- Account for Blizzard Shenanigans
+			-- This seems to be only Auras in combat right now anyway, maybe it's fine to ignore it
 			if issecretvalue(ttType) then
-				self:AddLine("This tooltip is a <secret> type and Blizzard won't let any addon know what it is because that will make the game less fun and enjoyable!", 0.8, 0.4, 0.4, 1);
+				-- self:AddLine("This tooltip is a <secret> type and Blizzard won't let any addon know what it is because that will make the game less fun and enjoyable!", 0.8, 0.4, 0.4, 1);
 				return true
 			end
 			ttId = ttdata.id;
