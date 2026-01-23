@@ -957,6 +957,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 				}),
+				o(249819),	-- Firelands Portal [prevents inaccurate for matching object names]
 			},
 		})),
 	}),
