@@ -12,8 +12,8 @@ if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 	return
 end
 
-local C_HousingCatalog_GetCatalogEntryInfoByRecordID,C_HouseEditor_IsHouseEditorActive
-	= C_HousingCatalog.GetCatalogEntryInfoByRecordID,C_HouseEditor.IsHouseEditorActive
+local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive
+	= C_HousingCatalog.GetCatalogEntryInfo,C_HouseEditor.IsHouseEditorActive
 
 -- TODO: test other APIs
 -- this is non-parameterized, returns the max decor that can be owned
@@ -30,7 +30,19 @@ app.AddEventHandler("OnStartupDone", function()
 	IsAccountCached = app.IsAccountCached
 end)
 
-local HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
+local HousingSearcher
+local DecorType = Enum.HousingCatalogEntryType.Decor
+
+local function HowManyDecor(entryInfo)
+	if not entryInfo then return 0 end
+
+	local sum = (entryInfo.numPlaced or 0) + (entryInfo.quantity or 0) + (entryInfo.remainingRedeemable or 0)
+	-- if sum == 0 then
+	-- 	app.PrintDebug("NOT OWNED DECOR")
+	-- 	app.PrintTable(entryInfo)
+	-- end
+	return sum
+end
 
 -- Decor Lib [STUB -- WIP]
 do
@@ -39,54 +51,49 @@ do
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collected = function(t) return IsAccountCached(CACHE, t.decorID) and 1 end,
 	});
-	local function RefreshDecorCollection()
-		HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
-		HousingSearcher:SetAutoUpdateOnParamChanges(false)
-	   	HousingSearcher:SetResultsUpdatedCallback(function()
-			local saved, none = {}, {}
-			local added = {}
-			local entries = HousingSearcher:GetCatalogSearchResults()
-			for _, entry in pairs(entries) do
-		  		if not IsAccountCached(CACHE, entry.recordID) then
-		      		local info = C_HousingCatalog.GetCatalogEntryInfo(entry)
-		      		if info ~= nil then
-		          		local qty = info.numPlaced + info.numStored
+	local function HousingSearcherResultsCallback()
+		local saved = {}
+		-- local none = {}
+		local added = {}
+		local entry
+		local entries = HousingSearcher:GetCatalogSearchResults()
+		for i=1,#entries do
+			entry = entries[i]
+			-- only checking for new collected decor because Blizzard
+			if not IsAccountCached(CACHE, entry.recordID) then
+				local info = C_HousingCatalog_GetCatalogEntryInfo(entry)
+				if info and info.entryType == DecorType then
+					local qty = HowManyDecor(info)
 
-						-- qty can sometimes be 4294967295
-		          		if qty > 0 and qty < 1000000 then
-                    		saved[entry.recordID] = true
-                    		added[#added + 1] = entry
-                  		else
-                    		none[entry.recordID] = true
-		          		end
-		      		end
-		   		end
+					-- qty can sometimes be 4294967295
+					if qty > 0 and qty < 1000000 then
+						-- app.PrintDebug("Decor Collected",recordID,qty,info.numPlaced,info.numStored,info.quantity)
+						saved[entry.recordID] = true
+						added[#added + 1] = entry
+					-- still ignoring removing destroyed decor from cache since it continues to be inconsistent from Blizzard
+					-- else
+						-- app.PrintDebug("Decor Missing",recordID,qty)
+						-- none[entry.recordID] = true
+					end
+				end
 			end
-			app.SetBatchAccountCached(CACHE, saved, 1)
-			app.SetBatchAccountCached(CACHE, none)
-		end)
-	   HousingSearcher:RunSearch()
+		end
+		app.SetBatchAccountCached(CACHE, saved, 1)
+		-- app.SetBatchAccountCached(CACHE, none)
 	end
-	local function RefreshWithUpdate()
-		-- silently refresh any updated Decor
-		app.UpdateRawIDs(KEY, RefreshDecorCollection())
-	end
-	local function TriggerDecorCatalog()
-		-- this seems to properly cache some Decor stuff which seems to not be available in the API
-		-- we run this after the initial refresh is done (then remove it) to force-trigger a decor catalog update for proper updating
-		C_HousingCatalog.CreateCatalogSearcher()
-		app.CallbackHandlers.Callback(app.RemoveEventHandler, TriggerDecorCatalog)
+	local function RefreshDecorCollection()
+		if not HousingSearcher then
+			HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
+		end
+		HousingSearcher:SetAutoUpdateOnParamChanges(false)
+		HousingSearcher:SetResultsUpdatedCallback(HousingSearcherResultsCallback)
+		HousingSearcher:RunSearch()
 	end
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
 	app.AddEventHandler("OnRefreshCollections", RefreshDecorCollection)
-	app.AddEventHandler("OnRefreshCollectionsDone", TriggerDecorCatalog)
-	app.AddEventRegistration("HOUSING_STORAGE_UPDATED", function()
-		-- this event seems to trigger twice (of course) so add a slight delay to ATT's following refresh scan
-		app.CallbackHandlers.DelayedCallback(RefreshWithUpdate, 2)
-	end)
 	app.AddEventRegistration("HOUSE_DECOR_ADDED_TO_CHEST", function(decorUid, decorID)
 		app.SetThingCollected(KEY, decorID, true, true)
 	end)
@@ -130,7 +137,7 @@ do
 
 		-- hopefully a temp workaround until Blizzard makes their APIs work correctly
 		-- check here if the decor is collected via entryFrame and cache in ATT
-		local sum = entryInfo.numStored + entryInfo.numPlaced
+		local sum = HowManyDecor(entryInfo)
 		if sum > 0 and sum < 1000000 then	-- Sometimes API returns 4294967295
 			-- ensure this Decor is marked collected
 			app.SetThingCollected(KEY, decorID, true, true)
@@ -140,3 +147,4 @@ do
 		app.ForceAttachTooltip(tooltip, {type="decor", id=decorID})
 	end)
 end
+
