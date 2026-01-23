@@ -9,20 +9,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42586),	-- Campaign: Suramar
 					ach(60813),	-- Elusive Foes: Suramar
-					ach(42650, {	-- Elusive Foes: Suramar
-						-- Did 60813 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60812),	-- Explore Suramar
-					ach(42665, {	-- Explore Suramar
-						-- Did 60812 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60814),	-- Hidden Treasures: Suramar
-					ach(42577, {	-- Hidden Treasures: Suramar
-						-- Did 60814 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42537),	-- Insurrection
 					ach(42551, {	-- Looking for Group: Suramar
 						-- Meta Achievement

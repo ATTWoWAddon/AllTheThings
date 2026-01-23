@@ -571,6 +571,37 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 		}),
 	})),
+	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH }, ["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
+		["groups"] = {
+			q(94464, {	-- Heritage of the Haranir
+				["description"] = "Pops up when you hit level 50.",
+				["groups"] = {
+					ach(61942),	-- Heritage of the Haranir
+					-- Heritage of Harandar: Har'alnor
+					i(258817),	-- Har'alnor Bracers
+					i(258824),	-- Har'alnor Cape
+					i(258820),	-- Har'alnor Gauntlets
+					i(258814),	-- Har'alnor Girdle
+					i(258821),	-- Har'alnor Horns
+					i(258816),	-- Har'alnor Knee-High Boots
+					i(258822),	-- Har'alnor Shoulderspikes
+					i(258815),	-- Har'alnor Skirt
+					i(258812),	-- Har'alnor Vest
+					-- Heritage of Harandar: Shul'ka
+					i(258829),	-- Shul'ka Bracers
+					i(258833),	-- Shul'ka Cape
+					i(258830),	-- Shul'ka Gauntlets
+					i(258826),	-- Shul'ka Girdle
+					i(258831),	-- Shul'ka Horns
+					i(258828),	-- Shul'ka Knee-High Boots
+					i(258832),	-- Shul'ka Shoulderspikes
+					i(258827),	-- Shul'ka Skirt
+					i(258825),	-- Shul'ka Vest
+				},
+			}),
+		},
+	})),
 	race(HIGHMOUNTAIN_TAUREN, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { HIGHMOUNTAIN_TAUREN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 		["groups"] = {

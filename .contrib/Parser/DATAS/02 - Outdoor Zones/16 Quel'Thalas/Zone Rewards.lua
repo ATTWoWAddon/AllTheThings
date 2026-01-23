@@ -29,8 +29,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			filter(NECK_F, {
 			}),
 			filter(PLATE, {
+				i(257017),	-- Steelbark Girdle
 			}),
 			filter(TRINKET_F, {
+				i(251782),	-- Withered Saptor's Paw
 			}),
 		}),
 		n(WEAPONS, {

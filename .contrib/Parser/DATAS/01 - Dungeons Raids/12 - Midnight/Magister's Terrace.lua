@@ -19,7 +19,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	inst(1300, {	-- Magister's Terrace
 		["coord"] = { 63.0, 15.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 		["maps"] = {},
@@ -47,5 +47,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	})
-}));
+})));
 --]]

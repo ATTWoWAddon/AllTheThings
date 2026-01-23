@@ -11557,7 +11557,7 @@ crit(34499,{achID=11298,id=2})}}),
 q(43573,{c=a[2858],coords={a[2205]},lvl=45,qgs=a[3540],sourceQuests=a[1904]}),
 q(43928,{c=a[2858],coords={a[2205]},lvl=45,qgs=a[3540],sourceQuests=a[1904]}),
 q(44690,{c=a[2858],coords={a[2998]},cost={{"i",124124,3}},lvl=45,qgs=a[3538],sourceQuests=a[1957]}),
-q(91615,{awp=110205,c=a[2858],coords={a[2998]},qgs=a[3538],rwp=120000,sourceQuests=a[1957],u=2}),
+q(91615,{awp=110205,c=a[2858],coords={a[2998]},qgs=a[3538],rwp=110207,sourceQuests=a[1957],u=2}),
 q(43574,{c=a[2858],coords={a[1543]},lvl=45,maps=a[3199],qgs=a[330],sourceQuests={43572,43573},g={
 i(140162,{c=a[2858]})}}),
 q(44282,{c=a[2858],coords={a[2683]},lvl=45,maps=a[3226],qgs=a[3539],sourceQuests={43928},g={
@@ -11606,7 +11606,7 @@ q(46720,{c=a[2858],coords={a[2683]},lvl=45,qgs=a[3539],sourceQuests={46719}}),
 q(46812,{c=a[2858],coords={{44.7,4.4,118}},lvl=45,maps={860},sourceQuests={46720}}),
 q(46813,{c=a[2858],lvl=45,maps={860,871},sourceQuests={46812},g={
 mnt(229387,{c=a[2858]}),
-crit(108648,{achID=42565,awp=110205,e=447,id=3,rwp=120000,u=2})}}),
+crit(108648,{achID=42565,awp=110205,e=447,id=3,rwp=110207,u=2})}}),
 q(43877,{c=a[2858],coords={a[2212]},qgs=a[3565],rwp=70300,u=2}),
 q(46108,{awp=70105,c=a[2858],coords={a[2212]},qgs=a[3565],rwp=70300,sourceQuests={43877},u=2}),
 q(46125,{awp=70105,c=a[2858],coords={a[2212]},qgs=a[3565],rwp=70300,sourceQuests={46108},u=2}),
@@ -11914,13 +11914,13 @@ i(144443,{awp=70003,c=a[3509]})}}),
 q(46240,{awp=70200,c=a[3509],coords={a[1515]},lvl=45,qgs=a[385],sourceQuests=a[2091],g={
 i(144444,{awp=70003,c=a[3509]})}}),
 q(46238,{awp=70200,c=a[3509],coords={a[1515]},cost={{"i",127845,1},{"i",130175,3},{"i",123919,5}},lvl=45,qgs=a[385],sourceQuests=a[2091]}),
-q(94850,{awp=110205,c=a[3509],coords={a[1515]},qgs=a[385],rwp=120000,sourceQuests=a[2091],u=2}),
+q(94850,{awp=110205,c=a[3509],coords={a[1515]},qgs=a[385],rwp=110207,sourceQuests=a[2091],u=2}),
 q(46241,{awp=70200,c=a[3509],coords={a[1515]},lvl=45,qgs=a[385],sourceQuests={46238,46239,46240,94850},sqreq=3}),
 q(46242,{awp=70200,c=a[3509],lvl=45,maps=a[3035],sourceQuests={46241},g={
 i(144445,{awp=70003,c=a[3509]})}}),
 q(46243,{awp=70200,c=a[3509],coords={{35.6,38.4,717}},lvl=45,qgs=a[385],sourceQuests={46242},g={
 mnt(232412,{c=a[3509]}),
-crit(108657,{achID=42565,awp=110205,e=447,id=11,rwp=120000,u=2})}}),
+crit(108657,{achID=42565,awp=110205,e=447,id=11,rwp=110207,u=2})}}),
 q(43887,{c=a[3509],coords={a[2631]},qgs=a[335],rwp=70300,u=2}),
 q(46131,{awp=70105,c=a[3509],coords={a[2631]},qgs=a[335],rwp=70300,sourceQuests={43887},u=2}),
 q(46150,{awp=70105,c=a[3509],coords={a[2631]},qgs=a[335],rwp=70300,sourceQuests={46131},u=2}),
@@ -12157,7 +12157,7 @@ q(43368,{c=a[309],coords={a[1644]},lvl=45,qgs=a[3567],sourceQuests={42129,42719,
 follower(645,{c=a[309]})}}),
 q(43403,{c=a[309],coords={a[1997]},lvl=45,qgs=a[231],sourceQuests=a[1825]}),
 q(42365,{c=a[309],coords={a[1999]},lvl=45,qgs=a[230],sourceQuests=a[1826]}),
-q(91614,{awp=110205,c=a[309],coords={a[1999]},qgs=a[230],rwp=120000,sourceQuests=a[1825],u=2}),
+q(91614,{awp=110205,c=a[309],coords={a[1999]},qgs=a[230],rwp=110207,sourceQuests=a[1825],u=2}),
 q(42049,{c=a[309],coords={a[1999]},lvl=45,qgs=a[231],sourceQuests=a[1825],g={
 i(137119,{c=a[309]})}}),
 q(42051,{c=a[309],coords={a[1993]},lvl=45,maps=a[3390],qgs=a[203],sourceQuests={42049,42365,43403,91614},sqreq=3}),
@@ -12210,7 +12210,7 @@ q(46319,{c=a[309],coords={{31.1,4.2,747}},lvl=45,qgs=a[253],sourceQuests={46318}
 i(146798,{c=a[309]}),
 mnt(231437,{c=a[309]}),
 mnt(241857,{c=a[309]}),
-crit(108650,{achID=42565,awp=110205,e=447,id=8,rwp=120000,u=2})}}),
+crit(108650,{achID=42565,awp=110205,e=447,id=8,rwp=110207,u=2})}}),
 q(41413,{c=a[309],coords={{59.1,53.3,747}},lvl=10,qgs={98784}}),
 q(43879,{c=a[309],rwp=70300,u=2}),
 q(46141,{awp=70105,c=a[309],rwp=70300,u=2}),
@@ -12296,8 +12296,9 @@ cl(8.064,{
 gt(386,{c=a[3381],description="A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",g={
 h(-424,{c=a[3381],isDaily=1,questID=44384}),
 n(113513,{c=a[3381],description="If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",sourceQuests={44384},g={
+o(255953,{c=a[3381],coords={{70,38.1,525}},g={
 i(139560,{b=1,c=a[3381],f=55,spellID=220691,g={
-artifact(180,{c=a[3381]})}})}})}})})}}),
+artifact(180,{c=a[3381]})}})}})}})}})})}}),
 h(-33,{c=a[3381],g={
 follower(769,{c=a[3381],u=5}),
 follower(817,{c=a[3381],u=5}),
@@ -12512,7 +12513,7 @@ o(267181,{awp=70003,c=a[3381],coords={{53.8,47.7,627}},g={
 i(143838,{c=a[3381]})}})}}),
 q(45354,{awp=70200,c=a[3381],coords={a[2593]},lvl=45,maps={881},qgs=a[279],sourceQuests={45845,45846,45847},g={
 mnt(229376,{c=a[3381]}),
-crit(108652,{achID=42565,awp=110205,e=447,id=10,rwp=120000,u=2})}}),
+crit(108652,{achID=42565,awp=110205,e=447,id=10,rwp=110207,u=2})}}),
 q(42954,{c=a[3381],coords={{71.4,55.3,735}},lvl=45,qgs=a[266],sourceQuests=a[1840]}),
 q(42955,{c=a[3381],coords={a[1579]},lvl=45,qgs=a[299],sourceQuests={42954},g={
 i(138965,{c=a[3381],spellID=217841}),
@@ -12770,7 +12771,7 @@ q(41096,{c=a[404],coords={a[2718]},lvl=10,qgs=a[3555],sourceQuests=a[1769]}),
 q(41067,{c=a[404],coords={a[2718]},lvl=10,qgs=a[3555],sourceQuests=a[1769]}),
 q(46334,{c=a[404],coords={{60.1,50.8,720}},lvl=45,maps={861},qgs={108784},sourceQuests={46333},g={
 mnt(229417,{c=a[404]}),
-crit(108649,{achID=42565,awp=110205,e=447,id=9,rwp=120000,u=2})}}),
+crit(108649,{achID=42565,awp=110205,e=447,id=9,rwp=110207,u=2})}}),
 q(42776,{c=a[404],coords={{58.6,58.8,720}},lvl=45,qgs=a[285],sourceQuests={42775},g={
 s(80994,139722,{b=1,c=a[404],f=5,lvl=45}),
 i(139506,{b=1,f=55}),
@@ -13051,7 +13052,7 @@ q(46788,{awp=70200,c=a[2235],coords={a[2290]},lvl=45,qgs=a[303]}),
 q(45788,{c=a[2235],coords={{44.4,63.7,646}},lvl=45,qgs={118536,118537},sourceQuests={46034}}),
 q(45789,{c=a[2235],coords={{48,21.9,702},a[2252]},lvl=45,maps={839},qgs=a[219],sourceQuests={45788},g={
 mnt(229377,{c=a[2235]}),
-crit(108654,{achID=42565,awp=110205,e=447,id=12,rwp=120000,u=2})}}),
+crit(108654,{achID=42565,awp=110205,e=447,id=12,rwp=110207,u=2})}}),
 q(43375,{c=a[2235],coords={a[2704]},lvl=10,qgs=a[321],sourceQuests={43374},g={
 o(252167,{c=a[2235],coords={{49.3,37.1,630},{49.9,35.2,630},{50,36.5,630},{50.1,33.6,630},{50.7,34.7,630},{51.3,34.2,630},{51.9,33.4,630},{52.5,34.2,630}},g={
 i(139458,{c=a[2235]})}})}}),
@@ -13259,7 +13260,7 @@ q(43934,{c=a[980],coords={{48.5,71.3,24}},lvl=45,qgs={110866},sourceQuests=a[195
 q(43933,{c=a[980],coords={{71.9,24.4,24}},lvl=45,qgs={113299},sourceQuests={43934},g={
 follower(756,{c=a[980]})}}),
 q(43534,{c=a[980],coords={a[2347]},lvl=45,qgs=a[3511],sourceQuests=a[1955]}),
-q(91619,{awp=110205,c=a[980],coords={a[2347]},qgs=a[3511],rwp=120000,sourceQuests=a[1955],u=2}),
+q(91619,{awp=110205,c=a[980],coords={a[2347]},qgs=a[3511],rwp=110207,sourceQuests=a[1955],u=2}),
 q(43698,{c=a[980],coords={a[2347]},lvl=45,qgs=a[3511],sourceQuests=a[1955],g={
 i(139634,{c=a[980]})}}),
 q(43699,{c=a[980],coords={a[2347]},lvl=45,qgs=a[3511],sourceQuests=a[1955]}),
@@ -13306,10 +13307,10 @@ q(46045,{c=a[980],coords={{59.1,32.2,24}},lvl=45,qgs=a[388],sourceQuests={45148,
 follower(1000,{c=a[980]})}}),
 q(46069,{c=a[980],coords={{43.8,63,646}},lvl=45,qgs={118376},sourceQuests={46045}}),
 q(46070,{c=a[980],coords={a[2347]},cost={{"i",131746,1}},lvl=45,qgs=a[3511],sourceQuests=a[2085]}),
-q(94847,{awp=110205,c=a[980],coords={a[2347]},qgs=a[3511],rwp=120000,sourceQuests=a[2085],u=2}),
+q(94847,{awp=110205,c=a[980],coords={a[2347]},qgs=a[3511],rwp=110207,sourceQuests=a[2085],u=2}),
 q(46071,{c=a[980],coords={a[2347]},lvl=45,qgs=a[3511],sourceQuests={46070,94847},sqreq=1}),
 q(46083,{c=a[980],coords={{45,29.6,627}},cost={{"i",147768,1},{"i",123918,25}},lvl=45,qgs=a[3528],sourceQuests=a[2087]}),
-q(91618,{awp=110205,c=a[980],coords={{44.4,28.8,627}},cost={{"i",147768,1}},qgs=a[3528],rwp=120000,sourceQuests=a[2087],u=2}),
+q(91618,{awp=110205,c=a[980],coords={{44.4,28.8,627}},cost={{"i",147768,1}},qgs=a[3528],rwp=110207,sourceQuests=a[2087],u=2}),
 q(45645,{c=a[980],coords={{48.2,41,627}},lvl=45,qgs={117438},sourceQuests={45644},g={
 i(143845,{c=a[980]})}}),
 q(45566,{c=a[980],coords={a[2569]},lvl=45,qgs=a[359],sourceQuests=a[2052],g={
@@ -13333,7 +13334,7 @@ q(45770,{c=a[980],coords={a[2347]},lvl=45,qgs=a[3511],sourceQuests={46074},g={
 o(267580,{c=a[980],g={
 i(144064,{b=1,c=a[980]})}}),
 mnt(231435,{c=a[980]}),
-crit(108376,{achID=42565,awp=110205,e=447,id=1,rwp=120000,u=2})}}),
+crit(108376,{achID=42565,awp=110205,e=447,id=1,rwp=110207,u=2})}}),
 q(42377,{c=a[980],coords={a[3231]},lvl=10,qgs=a[254],sourceQuests={42231}}),
 q(45568,{c=a[980],coords={a[2569]},lvl=45,qgs=a[359],sourceQuests=a[2052],g={
 i(143840,{c=a[980]})}}),
@@ -13544,7 +13545,7 @@ q(42988,{c=a[3179],coords={a[1400]},lvl=45,qgs=a[3564],sourceQuests=a[1798]}),
 q(42997,{c=a[3179],coords={a[1400]},lvl=45,qgs=a[3564],sourceQuests=a[1798]}),
 q(42989,{c=a[3179],coords={a[1261]},lvl=45,qgs=a[302],sourceQuests={42997}}),
 q(42995,{c=a[3179],coords={a[2611]},lvl=45,qgs=a[1874],sourceQuests=a[1912]}),
-q(91621,{awp=110205,c=a[3179],coords={a[2611]},qgs=a[1874],rwp=120000,sourceQuests=a[1912],u=2}),
+q(91621,{awp=110205,c=a[3179],coords={a[2611]},qgs=a[1874],rwp=110207,sourceQuests=a[1912],u=2}),
 q(43003,{c=a[3179],coords={a[2611]},lvl=45,qgs=a[1874],sourceQuests={42995,91621},sqreq=1,g={
 i(138997,{c=a[3179]})}}),
 q(42990,{c=a[3179],coords={a[1261]},lvl=45,maps=a[3258],qgs=a[302],sourceQuests={43003},g={
@@ -13604,7 +13605,7 @@ follower(992,{c=a[3179]})}}),
 q(46791,{awp=70200,c=a[3179],coords={{44.6,61.6,646}},lvl=45,qgs={117888},sourceQuests={41746,46057,46258,47137}}),
 q(46792,{awp=70200,c=a[3179],coords={{28.4,45,726}},lvl=45,maps={857},qgs=a[256],sourceQuests={46791},g={
 mnt(231442,{c=a[3179]}),
-crit(108656,{achID=42565,awp=110205,e=447,id=5,rwp=120000,u=2})}}),
+crit(108656,{achID=42565,awp=110205,e=447,id=5,rwp=110207,u=2})}}),
 q(43886,{c=a[3179],coords={a[1361]},qgs=a[334],rwp=70300,u=2}),
 q(46147,{awp=70105,c=a[3179],coords={a[1361]},qgs=a[334],rwp=70300,sourceQuests={43886},u=2}),
 q(46158,{awp=70105,c=a[3179],coords={a[1361]},qgs=a[334],rwp=70300,sourceQuests={46147},u=2}),
@@ -13678,8 +13679,9 @@ artifact(964,{c=a[192]})}})}),
 cl(1.073,{coords={{49.6,68.5,650},{45.1,28.6,695}},description="Read the Saga of the Valajar tablet (right behind your AK research guy) in your Order Hall first.\nGo to Highmount and go forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\"(May not be seen anymore as of 9.1.0) carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",g={
 q(44311,{c=a[192],description="This quest indicates if the appearance spawns and can be looted."}),
 q(44312,{c=a[192],description="This quest apparently makes you unable to see/obtain the container while it is true.",isDaily=1}),
+o(257392,{c=a[192],coords={{51.7,18.4,657}},g={
 i(139580,{b=1,c=a[192],f=55,spellID=220734,g={
-artifact(159,{c=a[192]})}})}})}}),
+artifact(159,{c=a[192]})}})}})}})}}),
 h(-33,{c=a[192],g={
 follower(1012,{c=a[192],u=5}),
 follower(1013,{c=a[192],u=5}),
@@ -13838,7 +13840,7 @@ follower(989,{c=a[192]})}}),
 q(46208,{awp=70200,c=a[192],coords={{43.6,63.1,646}},lvl=45,qgs={119527},sourceQuests={46267,47137}}),
 q(46207,{awp=70200,c=a[192],coords={a[2693]},lvl=45,maps={829},qgs=a[3557],sourceQuests={46208},g={
 mnt(229388,{c=a[192]}),
-crit(108360,{achID=42565,awp=110205,e=447,id=2,rwp=120000,u=2})}}),
+crit(108360,{achID=42565,awp=110205,e=447,id=2,rwp=110207,u=2})}}),
 q(43888,{c=a[192],coords={a[2017]},qgs=a[336],rwp=70300,u=2}),
 q(46142,{awp=70105,c=a[192],coords={a[2017]},qgs=a[336],rwp=70300,sourceQuests={43888},u=2}),
 q(46155,{awp=70105,c=a[192],coords={a[2017]},qgs=a[336],rwp=70300,sourceQuests={46142},u=2}),
@@ -13907,7 +13909,7 @@ i(139570,{b=1,c=a[1665],f=55,spellID=220708,g={
 artifact(611,{c=a[1665]})}})}),
 cl(4.26,{
 q(43558,{c=a[1665],coords={a[1697]},cost={{"i",124444,10},{"i",139468,1},{"i",139466,1}},description="You need to first collect the two bindings and then be in Outlaw spec to get this quest.",lvl=45,qgs=a[3530],sourceQuests=a[1657]}),
-q(94932,{awp=110205,c=a[1665],coords={a[1697]},cost={{"i",139468,1},{"i",139466,1}},description="You need to first collect the two bindings and then be in Outlaw spec to get this quest.",qgs=a[3530],rwp=120000,sourceQuests=a[1657],u=2}),
+q(94932,{awp=110205,c=a[1665],coords={a[1697]},cost={{"i",139468,1},{"i",139466,1}},description="You need to first collect the two bindings and then be in Outlaw spec to get this quest.",qgs=a[3530],rwp=110207,sourceQuests=a[1657],u=2}),
 q(43560,{c=a[1665],coords={a[1697]},lvl=45,qgs=a[3530],sourceQuests={43558,94932},sqreq=1,g={
 i(139536,{b=1,c=a[1665],f=55,spellID=220584,g={
 artifact(881,{c=a[1665]})}})}})}),
@@ -14043,7 +14045,7 @@ follower(780,{c=a[1665]})}}),
 q(42684,{c=a[1665],coords={a[1696]},lvl=10,qgs=a[3571],sourceQuests=a[2003]}),
 q(42730,{c=a[1665],coords={a[1696]},lvl=10,qgs=a[3571],sourceQuests=a[2003],g={
 i(127837,{f=55,lvl=40,spellID=188019})}}),
-q(91620,{awp=110205,c=a[1665],coords={a[1696]},qgs=a[3571],rwp=120000,sourceQuests=a[2003],u=2}),
+q(91620,{awp=110205,c=a[1665],coords={a[1696]},qgs=a[3571],rwp=110207,sourceQuests=a[2003],u=2}),
 q(44178,{c=a[1665],coords={a[1306]},lvl=10,qgs=a[215],sourceQuests={42730,91620},sqreq=1,g={
 o(254254,{c=a[1665],coords={{20.1,59,76}},g={
 i(140811,{c=a[1665]})}}),
@@ -14136,10 +14138,10 @@ follower(988,{c=a[1665]})}}),
 q(46103,{awp=70200,c=a[1665],coords={{45,64,646}},lvl=45,qgs={119259},sourceQuests=a[2084]}),
 q(46089,{awp=70200,c=a[1665],coords={a[981]},lvl=45,qgs=a[3569],r=2,sourceQuests=a[2089],g={
 mnt(231434,{c=a[1665]}),
-crit(108655,{achID=42565,awp=110205,e=447,id=6,rwp=120000,u=2})}}),
+crit(108655,{achID=42565,awp=110205,e=447,id=6,rwp=110207,u=2})}}),
 q(46178,{awp=70200,c=a[1665],coords={a[981]},lvl=45,qgs=a[3569],r=1,sourceQuests=a[2089],g={
 mnt(231434,{c=a[1665]}),
-crit(108655,{achID=42565,awp=110205,e=447,id=6,rwp=120000,u=2})}}),
+crit(108655,{achID=42565,awp=110205,e=447,id=6,rwp=110207,u=2})}}),
 q(47591,{awp=70205,c=a[1665],coords={a[2023]},lvl=10,qgs=a[229],g={
 i(151180,{b=1,c=a[1665]})}}),
 q(47592,{awp=70205,c=a[1665],coords={a[2023]},lvl=10,qgs=a[229],sourceQuests={47591}}),
@@ -14486,7 +14488,7 @@ o(268813,{awp=70003,c=a[195],coords={{72.6,43.1,379},{72.7,37.4,379},{72.7,38.9,
 i(147313,{c=a[195]})}})}}),
 q(46350,{awp=70200,c=a[195],coords={{73.9,88.9,379}},lvl=45,qgs=a[410],sourceQuests={46349},g={
 mnt(229385,{c=a[195]}),
-crit(108653,{achID=42565,awp=110205,e=447,id=7,rwp=120000,u=2})}}),
+crit(108653,{achID=42565,awp=110205,e=447,id=7,rwp=110207,u=2})}}),
 q(43881,{c=a[195],coords={a[2077]},qgs=a[262],rwp=70300,u=2}),
 q(46144,{awp=70105,c=a[195],coords={a[2077]},qgs=a[262],rwp=70300,sourceQuests={43881},u=2}),
 q(46157,{awp=70105,c=a[195],coords={a[2077]},qgs=a[262],rwp=70300,sourceQuests={46144},u=2}),
@@ -14680,7 +14682,7 @@ i(138273,{c=a[1299]})}}),
 q(43182,{c=a[1299],coords={{42.9,25.4,739}},lvl=45,qgs=a[272],sourceQuests=a[1869],g={
 i(139041,{c=a[1299]})}}),
 q(42408,{c=a[1299],coords={a[2067]},lvl=45,qgs=a[281],sourceQuests=a[1869]}),
-q(91616,{awp=110205,c=a[1299],coords={a[2067]},qgs=a[281],rwp=120000,sourceQuests=a[1869],u=2}),
+q(91616,{awp=110205,c=a[1299],coords={a[2067]},qgs=a[281],rwp=110207,sourceQuests=a[1869],u=2}),
 q(44680,{c=a[1299],coords={a[1922]},lvl=45,qgs=a[273],sourceQuests=a[1869]}),
 q(42656,{c=a[1299],coords={a[1916]},lvl=45,qgs=a[282],sourceQuests={42654,42655}}),
 q(42657,{c=a[1299],coords={a[2067]},lvl=45,qgs=a[281],sourceQuests={42408,42656,91616},sqreq=2}),
@@ -14727,7 +14729,7 @@ follower(996,{c=a[1299]})}}),
 q(46336,{awp=70200,c=a[1299],coords={{43.8,63.2,646}},lvl=45,qgs={117810},sourceQuests=a[2083]}),
 q(46337,{awp=70200,c=a[1299],coords={{42.9,45.7,739}},lvl=45,maps={877},qgs={119943},sourceQuests={46336},g={
 mnt(229386,{c=a[1299]}),
-crit(108651,{achID=42565,awp=110205,e=447,id=4,rwp=120000,u=2})}}),
+crit(108651,{achID=42565,awp=110205,e=447,id=4,rwp=110207,u=2})}}),
 q(45392,{awp=70100,c=a[1299],coords={{49.4,49.7,739}},lvl=45,qgs=a[244]}),
 q(43370,{c=a[1299],coords={{44.4,45,739}},lvl=45,qgs={110424},sourceQuests=a[1766],g={
 i(139386,{c=a[1299]}),
@@ -32270,10 +32272,10 @@ ach(40943,{awp=110100,rwp=110200,u=2}),
 ach(40944,{awp=110100,rwp=110200,u=2}),
 ach(40945,{awp=110100,rwp=110200,u=2,g={
 crit(105366,{achID=40945,id=17,u=2})}}),
-ach(41886,{awp=110200,rwp=120000,u=2}),
-ach(41887,{awp=110200,rwp=120000,u=2}),
-ach(41888,{awp=110200,rwp=120000,u=2}),
-ach(41892,{awp=110200,rwp=120000,u=2}),
+ach(41886,{awp=110200,rwp=120001,u=2}),
+ach(41887,{awp=110200,rwp=120001,u=2}),
+ach(41888,{awp=110200,rwp=120001,u=2}),
+ach(41892,{awp=110200,rwp=120001,u=2}),
 ach(40591,{rwp=110007,u=2,g={
 en(219110,{b=1,questID=81528,spellID=442763,tmogSetID=3532,g={
 s(217946,218765,{f=2}),

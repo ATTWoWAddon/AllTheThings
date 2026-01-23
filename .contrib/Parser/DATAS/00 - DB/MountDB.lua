@@ -2295,6 +2295,13 @@ i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(252014, 1253929);	-- Cerulean Sporeglider
+i(246734, 1243593);	-- Fierce Grimlynx
+i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
 i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
@@ -2315,7 +2322,6 @@ i(262707, 1269279);	-- Blooded Snapvine
 i(0, 1253924);	-- Brilliant Petalwing
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(257156, 1261323);	-- Cerulean Hawkstrider
-i(252014, 1253929);	-- Cerulean Sporeglider
 i(260580, 1266579);	-- Cloudborn Razorwing
 i(257156, 1261302);	-- Cobalt Dragonhawk
 i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
@@ -2328,7 +2334,6 @@ i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(262706, 1269277);	-- Ferocious Snapvine
-i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(257448, 1261585);	-- Frenzied Shredclaw
@@ -2358,7 +2363,6 @@ i(257144, 1261296);	-- Umbral Dragonhawk
 i(256423, 1260354);	-- Untainted Grove Crawler
 i(262705, 1269273);	-- Vicious Snapvine
 i(0, 1270673);	-- Vivacious Chloroceros
-i(263580, 1270675);	-- Vivid Chloroceros
 i(252012, 1253927);	-- Vibrant Petalwing
 i(0, 1266702);	-- Voidbound Stormray
 i(257200, 1261351);	-- Witherbark Pango

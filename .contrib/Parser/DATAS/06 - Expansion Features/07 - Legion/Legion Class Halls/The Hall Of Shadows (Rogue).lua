@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							n(98100, {	-- Taoshi
 								["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
 								["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
-								["sym"] = {{"select","mapID",518}},	-- Thunder King's Citadel
+								["sym"] = {{"select","questID",32296},{"pop"}},	-- Treasures of the Thunder King
 							}),
 						}),
 					}),

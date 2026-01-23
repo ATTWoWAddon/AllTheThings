@@ -32,6 +32,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(251327),	-- Thalassian Tailor's Tote Bag
 				},
 			}),
+			--
+			q(94474, {	-- The Great Vault
+				["qg"] = 239670,	-- Vaultkeeper Elysa
+				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 		}),
 	}),
 }));

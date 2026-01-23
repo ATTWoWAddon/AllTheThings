@@ -14,20 +14,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						}),
 					}),
 					ach(60810),	-- Elusive Foes: Val'sharah
-					ach(42580, {	-- Elusive Foes: Val'sharah
-						-- Did 60810 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60809),	-- Explore Val'sharah
-					ach(42573, {	-- Explore Val'sharah
-						-- Did 60809 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60811),	-- Hidden Treasures: Val'sharah
-					ach(42668, {	-- Hidden Treasures: Val'sharah
-						-- Did 60811 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42663, {	-- Looking for Group: Val'Sharah
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",

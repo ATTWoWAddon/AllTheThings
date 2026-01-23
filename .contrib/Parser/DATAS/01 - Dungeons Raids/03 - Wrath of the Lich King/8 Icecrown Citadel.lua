@@ -368,7 +368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						}),
 					},
 				}),
-			-- Quest Chain: Path of Courage
+				-- Quest Chain: Path of Courage
 				q(24827, {	-- Path of Courage (Honored)
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -682,7 +682,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						i(52006),	-- Sack of Frosty Treasures
 					},
 				}),
-				q(24878, {	-- Residue Rendezvous[25]
+				q(24878, {	-- Residue Rendezvous [25]
 					["qg"] = 38501,	-- Alchemist Adrianna
 					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,

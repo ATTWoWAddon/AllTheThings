@@ -1302,10 +1302,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42794, {	-- Tailoring at Midnight
-				["timeline"] = { ADDED_12_0_0 },
+				["timeline"] = { ADDED_12_0_X_LAUNCH },
 				["groups"] = {
 				},
 			}),

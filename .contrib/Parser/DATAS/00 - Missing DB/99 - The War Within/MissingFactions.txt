@@ -7,7 +7,6 @@ faction(2696),	-- Amani Tribe
 faction(2698),	-- Midnight
 faction(2699),	-- The Singularity
 faction(2700),	-- DEPRECATED Fungarian Fighting Ring
-faction(2704),	-- Hara'ti
 faction(2705),	-- Amani Tribe (Paragon)
 faction(2706),	-- Witherbark Tribe
 faction(2709),	-- Vanguard of the Light

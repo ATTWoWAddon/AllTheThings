@@ -284,6 +284,7 @@ local function GetCatalysts(data)
 	local catalystID = BonusCatalysts[bonusID]
 	local upgradeInfo = C_Item_GetItemUpgradeInfo(data.link)
 	-- app.PrintDebug("Can Catalyst!",catalystID,bonusID,app:SearchLink(data))
+	-- app.PrintTable(upgradeInfo)
 	if not upgradeInfo then upgradeInfo = app.EmptyTable end
 	local upgradeTrackID = upgradeInfo.trackStringID
 	local upgradeLevel = upgradeInfo.currentLevel or 0
@@ -302,9 +303,14 @@ local function GetCatalysts(data)
 			-- app.PrintDebug("-->",bonusID)
 		end
 		-- Primalist Items, DF S1
-		if upgradeLevel == 2 and upgradeInfo.maxLevel == 3 then
-			-- Primalist converts to Normal
-			upgradeTrackID = 973
+		if upgradeInfo.maxLevel == 3 then
+			if upgradeLevel == 2 then
+				-- Primalist 2/3 converts to Normal
+				upgradeTrackID = 973
+			elseif upgradeLevel == 3 then
+				-- Primalist 3/3 converts to Heroic
+				upgradeTrackID = 974
+			end
 		-- past upgrade items (Blizz returns no upgrade info because why...?)
 		-- TODO: if Blizzard ever fixes C_Item.GetItemUpgradeInfo returning nothing useful for old season items, this can all be simplified/removed
 		elseif upgradeLevel == 0 then
@@ -336,7 +342,7 @@ local function GetCatalysts(data)
 
 	local catalystResults = app.ResolveSymbolicLink(SymlinkGroup, true)
 	if not catalystResults or #catalystResults == 0 then
-		app.PrintDebug("Catalyst Item failed to find matching catalyst output",catalystID,upgradeTrackID,slot,app:SearchLink(data))
+		app.PrintDebug("Catalyst Item failed to find matching catalyst output",catalystID,upgradeLevel,">",upgradeTrackID,slot,app:SearchLink(data))
 		return
 	end
 

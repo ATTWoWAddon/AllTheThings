@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(QUESTS, {
 		header(HEADERS.Achievement, 41805, {	-- Arator's Journey
 			header(HEADERS.AchCriteria, 41805.01, {	-- The Path of Light
@@ -418,7 +418,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 					["coords"] = {
 						{ 44.4, 50.3, DORNOGAL },
-						{ 50.5, 16.6, STORMWIND_CITY },	-- TODO: Orgrimmar
+						{ 50.5, 16.6, STORMWIND_CITY },
+						--{ XX.X, YY.Y, ORGRIMMAR },
+						{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					},
 				}),
 				q(92631, {	-- Abhorrent Gauntlet
@@ -451,6 +453,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
 			--q(94623),	-- Building the Voidforge -- completed with q:92630
+			q(95247, {["timeline"] = {ADDED_12_0_0}}),	-- when picking up q:92630 in Dornogal
 		}),
 	}),
 }));

@@ -23,7 +23,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	inst(1299, {	-- Windrunner Spire
 		["coord"] = { 35.5, 78.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["maps"] = {
@@ -88,4 +88,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	})
-}));
+})));

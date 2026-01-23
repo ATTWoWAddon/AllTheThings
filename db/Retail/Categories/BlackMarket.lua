@@ -373,8 +373,6 @@ i(110592,{awp=60002,b=1,rwp=60200,u=2}),
 i(102137,{awp=50400,b=1,rwp=60002,u=2}),
 i(97565,{awp=50300,b=1,rwp=50400,u=2}),
 h(-58,{u=9,g={
-n(219055,{coords={{64.8,52.7,2339}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
-n(100986,{coords={{71.37,17.93,628}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(94829,_.ResolveQuestData({aqd=
 {coords={{37.2,35.8,582}}},hqd=
 {coords={{44.96,50.07,590}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}))}})}})};

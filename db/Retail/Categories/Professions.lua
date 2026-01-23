@@ -1314,7 +1314,11 @@ crit(63289,{achID=19410,id=8,learnedAt=100,requireSkill=165}),
 crit(63290,{achID=19410,id=9,learnedAt=100,requireSkill=186}),
 crit(63291,{achID=19410,id=10,learnedAt=100,requireSkill=393}),
 crit(63292,{achID=19410,id=11,learnedAt=100,requireSkill=197})})}}),
-x(12)}),
+x(12,{awp=120000,g={
+ach(61438),
+ach(61439),
+ach(61440),
+ach(61441)}})}),
 x(10,{awp=100002,g={
 h(-489,{
 h(-12,{

@@ -690,7 +690,27 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-
+			ach(42575),	-- Elusive Foes: Antoran Wastes
+			ach(42646),	-- Elusive Foes: Eredath
+			ach(42579),	-- Elusive Foes: Highmountain
+			ach(42591),	-- Elusive Foes: Krokuun
+			ach(42640),	-- Elusive Foes: Stormheim
+			ach(42650),	-- Elusive Foes: Suramar
+			ach(42580),	-- Elusive Foes: Val'sharah
+			ach(42560),	-- Explore Antoran Wastes
+			ach(42535),	-- Explore Eredath
+			ach(42528),	-- Explore Highmountain
+			ach(42620),	-- Explore Krokuun
+			ach(42608),	-- Explore Stormheim
+			ach(42665),	-- Explore Suramar
+			ach(42573),	-- Explore Val'sharah
+			ach(42631),	-- Hidden Treasures: Antoran Wastes
+			ach(42626),	-- Hidden Treasures: Eredath
+			ach(42634),	-- Hidden Treasures: Highmountain
+			ach(42588),	-- Hidden Treasures: Krokuun
+			ach(42606),	-- Hidden Treasures: Stormheim
+			ach(42577),	-- Hidden Treasures: Suramar
+			ach(42668),	-- Hidden Treasures: Val'sharah
 		})),
 	}),
 	-- #endif

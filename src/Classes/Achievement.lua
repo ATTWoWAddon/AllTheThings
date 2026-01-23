@@ -500,5 +500,12 @@ do
 		end
 	end
 	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", criteriaFields)
+	if app.IsRetail then
+		app.AddEventRegistration("CRITERIA_EARNED", function(achievementID,description,achievementAlreadyEarnedOnAccount)
+			-- simply pass an update of all data linked to this achievement since we don't know specific criteriaID
+			-- app.PrintDebug("Update achievementID",achievementID,"for criteria earned:",description)
+			app.UpdateRawID("achievementID", achievementID)
+		end);
+	end
 	app.AddSimpleCollectibleSwap("AchievementCriteria", "Achievements")
 end

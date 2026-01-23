@@ -9,20 +9,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42552),	-- Campaign: Highmountain
 					ach(60804),	-- Elusive Foes: Highmountain
-					ach(42579, {	-- Elusive Foes: Highmountain
-						-- Did 60804 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60803),	-- Explore Highmountain
-					ach(42528, {	-- Explore Highmountain
-						-- Did 60803 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(60805),	-- Hidden Treasures: Highmountain
-					ach(42634, {	-- Hidden Treasures: Highmountain
-						-- Did 60805 get removed/replaced?
-						["timeline"] = { ADDED_12_0_0 },
-					}),
 					ach(42541, {	-- Highmountain
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",

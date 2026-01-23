@@ -10,6 +10,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	--	n(RARES, sharedData({ ["isDaily"] = true }, {
 	--	})),
 		n(RARES, {
+			n(250347, {	-- Ahl'ua'huhi
+				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92193,
+				["groups"] = {
+					--no loot table
+				},
+			}),
+			n(250358, {	-- Annulus the Worldshaker
+				["coord"] = { 44.2, 16.4, MAP.MIDNIGHT.HARANDAR },
+				--["questID"] = xx,
+				["groups"] = {
+					--no loot table
+				},
+			}),
+			n(249844, {	-- Chironex
+				["coord"] = { 68.5, 40.6, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92137,
+				["groups"] = {
+					--no loot table
+				},
+			}),
+			n(249997, {	-- Chlorokyll
+				["coord"] = { 64.6, 47.9, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92161,
+				["groups"] = {
+					--no loot table
+				},
+			}),
 			n(250231, {	-- Dracaena
 				["coord"] = { 40.6, 43.1, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92176,
@@ -17,23 +45,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--no loot table
 				},
 			}),
+			n(249849, {	-- Ha'kalawe
+				["coord"] = { 69.2, 63.1, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92142,
+				["groups"] = {
+					--no loot table
+				},
+			}),
 			n(250226, {	-- Mindrot
 				["coord"] = { 46.3, 32.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92172,
-				["groups"] = {
-					--no loot table
-				},
-			}),
-			n(249962, {	-- Queen Lashtongue
-				["coord"] = { 60.0, 46.6, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92154,
-				["groups"] = {
-					--no loot table
-				},
-			}),
-			n(250246, {	-- Treetop
-				["coord"] = { 36.7, 75.2, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92183,
 				["groups"] = {
 					--no loot table
 				},
@@ -52,9 +73,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--no loot table
 				},
 			}),
-			n(250347, {	-- Ahl'ua'huhi
-				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92193,
+			n(249962, {	-- Queen Lashtongue
+				["coord"] = { 60.0, 46.6, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92154,
 				["groups"] = {
 					--no loot table
 				},
@@ -63,33 +84,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 51.2, 45.5, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 91832,
 				["groups"] = {
-					--no loot table
-				},
-			}),
-			n(250358, {	-- Annulus the Worldshaker
-				["coord"] = { 44.2, 16.4, MAP.MIDNIGHT.HARANDAR },
-				--["questID"] = xx,
-				["groups"] = {
-					--no loot table
+					i(264622),	-- Grimfang Shank
 				},
 			}),
 			n(250180, {	-- Serrasa
 				["coord"] = { 56.3, 33.1, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92170,
 				["groups"] = {
-					--no loot table
+					i(264639),	-- Razorfang Hacker
 				},
 			}),
-			n(249844, {	-- Chironex
-				["coord"] = { 68.5, 40.6, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92137,
-				["groups"] = {
-					--no loot table
-				},
-			}),
-			n(249849, {	-- Ha'kalawe
-				["coord"] = { 69.2, 63.1, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92142,
+			n(250086, {	-- Stumpy
+				["coord"] = { 65.9, 31.6, MAP.MIDNIGHT.HARANDAR },	-- TODO: a bit innacurate
+				--["questID"] = xx,
 				["groups"] = {
 					--no loot table
 				},
@@ -101,19 +108,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--no loot table
 				},
 			}),
-			n(249997, {	-- Chlorokyll
-				["coord"] = { 64.6, 47.9, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 92161,
+			n(250246, {	-- Treetop
+				["coord"] = { 36.7, 75.2, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92183,
 				["groups"] = {
 					--no loot table
 				},
 			}),
-			n(250086, {	-- Stumpy
-				["coord"] = { 65.9, 31.6, MAP.MIDNIGHT.HARANDAR },	-- TODO: a bit innacurate
-				--["questID"] = xx,
-				["groups"] = {
-					--no loot table
-				},
+		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(RARES, {
+				q(94712),	-- Triggered after killing Rhazul
 			}),
 		}),
 	}),

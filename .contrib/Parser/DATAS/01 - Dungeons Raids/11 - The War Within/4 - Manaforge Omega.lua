@@ -732,7 +732,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_X_LAUNCH },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2799, {	-- Might of the Shadowguard
@@ -784,7 +784,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_X_LAUNCH },
 					}),
 				}),
 				ZoneDrops({}),
@@ -824,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_X_LAUNCH },
 					}),
 				}),
 				ZoneDrops({}),
@@ -845,7 +845,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_X_LAUNCH },
 					}),
 				}),
 				n(QUESTS, {

@@ -59,7 +59,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	inst(1314, {	-- The Dreamrift
 		--["coord"] = { X, Y, MAP.MIDNIGHT.HARANDAR },
 		--["maps"] = {
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3126, {	-- The Dreamrift
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -113,14 +113,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(CHIMAERUS, {
 					ach(61488),	-- Heroic: Chimaerus, the Undreamt God
-					ach(61491, { ["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Chimaerus, the Undreamt God
+					ach(61491, { ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Chimaerus, the Undreamt God
 					ach(61613),	-- Heroic: Chimaerus the Undreamt God Guild Run
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 },
+						["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -137,8 +137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(61489, {	-- Mythic: Chimaerus, the Undreamt God
 						title(679),	-- Dream-Eater <Name>
 					}),
-					ach(61492, {["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 }}),	-- Cutting Edge: Chimaerus, the Undreamt God
-					ach(61493, applyDataSelf({["timeline"] = { ADDED_12_0_0, REMOVED_12_1_0 } }, {	-- Hall of Fame: Chimaerus, the Undreamt God
+					ach(61492, {["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Chimaerus, the Undreamt God
+					ach(61493, applyDataSelf({["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Chimaerus, the Undreamt God
 						title(668),	-- <Name>, Famed Slayer of the Undreamt
 					})),
 					ach(61614),	-- Mythic: Chimaerus the Undreamt God Guild Run
@@ -146,4 +146,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 		},
 	}),
-}));
+})));
