@@ -245,29 +245,14 @@ ach(61939),	-- Abundance: Artisan of Floaret
 ach(61940),	-- Abundance: Artisan of Loanite
 ach(61941),	-- Abundance: Acolyte of a Glorious Entity
 ach(61943),	-- Abundance: Prosperous Plentitude!
-ach(61953),	-- Putting in the Practice
-ach(61954),	-- Putting in the Practice
-ach(61955),	-- Putting in the Practice
-ach(61956),	-- Putting in the Practice
 ach(61957),	-- Sojourner of Eversong Woods \\ Sojourner of Eversong Woods (Midnight)
-ach(61958),	-- Focused Target
-ach(61959),	-- Focused Target
 ach(61960),	-- Treasures of Eversong Woods \\ Treasures of Eversong Woods (Midnight)
 ach(61961),	-- Runestone Rush
 12.0.0.64228
 ach(62057),	-- Midnight: The Highest Peaks
 ach(62104),	-- Midnight Lore Hunter
 ach(62105),	-- Lysikas Would Be Proud
-ach(62107),	-- Mandatory Training
-ach(62108),	-- Training with Patience
-ach(62109),	-- Training with Patience
 ach(62110),	-- Loremaster of Midnight
-ach(62111),	-- Boots on the Ground: Arathi Basin
-ach(62112),	-- Boots on the Ground: Battle for Gilneas
-ach(62113),	-- Boots on the Ground: Silvershard Mines
-ach(62114),	-- Learning the Landscape: Arathi Basin
-ach(62115),	-- Learning the Landscape: Battle for Gilneas
-ach(62116),	-- Learning the Landscape: Silvershard Mines
 ach(62117),	-- Abyss Anglers: Boarhide Catch Sack \\ Abyss Anglers: Placeholder 1
 ach(62118),	-- Abyss Anglers: Amazardhide Catch Case \\ Abyss Anglers: Placeholder 2
 ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel \\ Abyss Anglers: Placeholder 3

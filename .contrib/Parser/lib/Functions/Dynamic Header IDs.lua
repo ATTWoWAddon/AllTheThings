@@ -586,6 +586,7 @@ HeaderAssignments = {
 	["Tournament Gear"] = -486,
 	["Trading Card Game"] = -551,
 	["Trading Post"] = -230,
+	["Training Grounds"] = -705,
 	["Transport Network"] = -173,
 	["Treasures"] = -56,
 	["Treasures of Azeroth"] = -691,
@@ -686,4 +687,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -705;
+NextHeaderID = -706;
