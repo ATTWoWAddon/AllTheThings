@@ -16,12 +16,14 @@ if C_CreatureInfo_GetRaceInfo then
 	end
 	local function default_icon(t)
 		local raceInfo = app.RaceDB.ID[t.raceID]
-		local icon = raceInfo.icon
-		if icon then return icon end
-		local raceGenderInfo = raceInfo.gender
-		raceGenderInfo = raceGenderInfo and raceGenderInfo[app.Gender]
-		icon = raceGenderInfo and raceGenderInfo.icon
-		return icon
+		if raceInfo then
+			local icon = raceInfo.icon
+			if icon then return icon end
+			local raceGenderInfo = raceInfo.gender
+			raceGenderInfo = raceGenderInfo and raceGenderInfo[app.Gender]
+			icon = raceGenderInfo and raceGenderInfo.icon
+			return icon
+		end
 	end
 	app.GetRaceName = GetRaceName;
 	app.CreateRace = app.CreateClass("Race", "raceID", {
