@@ -11,7 +11,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			ach(61959, {	-- Focused Target
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(62107),	-- Mandatory Training
+			ach(62107, {	-- Mandatory Training
+				["_noautomation"] = true,	-- nests criteria under Battle for Gilneas map on the same level as TRAINING_GROUNDS
+			}),
 			ach(61953),	-- Putting in the Practice 10 Wins
 			ach(61954),	-- Putting in the Practice 25 Wins
 			ach(61955),	-- Putting in the Practice 100 Wins
@@ -27,7 +29,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1169, {	-- Master of Arathi Basin 
+					ach(1169, {	-- Master of Arathi Basin
 						-- Meta Achievement should symlink the contained Achievements from Source
 						["sym"] = {{"meta_achievement",
 							155,	-- Arathi Basin Veteran
