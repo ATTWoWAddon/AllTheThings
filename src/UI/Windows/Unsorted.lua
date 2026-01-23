@@ -9,6 +9,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Unsorted", {
 	Commands = { "attunsorted" },
+	Preload = true,
 	OnInit = function(self)
 		-- Add an achievement header
 		local achievementHeader = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, { g = {} });
@@ -28,19 +29,14 @@ app:CreateWindow("Unsorted", {
 			font = "GameFontNormalLarge",
 			expanded = true,
 			visible = true,
+			-- These 3 were from Retail: Check their uses
+			_missing = true,
+			_unsorted = true,
+			_nosearch = true,
+			g = app.Categories.Unsorted,
 		});
-	end,
-	OnUpdate = function(self, ...)
-		if not self.data.g or #self.data.g < 1 then
-			local unsorted = app.Categories.Unsorted;
-			if unsorted then
-				self.data.g = unsorted;
-				app.CacheFields(self.data);
-				tinsert(unsorted, self.achievementHeader);
-				self:AssignChildren();
-			end
-		end
-		self:DefaultUpdate(...);
-		return false;
+		tinsert(self.data.g, self.achievementHeader);
+		app.CacheFields(self.data, true);
+		self:AssignChildren();
 	end,
 });
