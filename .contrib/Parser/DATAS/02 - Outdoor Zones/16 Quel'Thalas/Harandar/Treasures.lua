@@ -182,6 +182,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92204,
 			}),
 			--other zone stuff
+			header(HEADERS.Achievement, 61344, {	-- Chronicler of the Haranir
+				-- Exo: From what I can see, these can be seen and interracted with only during the quests related to the 'Legends Never Die' achievement
+				o(579233, {	-- Lament of Wey'nan--Part1: Finding Hope
+					["coord"] = { 43.2, 37.3, MAP.MIDNIGHT.HARANDAR },
+					["questID"] = 93470,
+				}),
+				o(579234, {	-- Lament of Wey'nan--Part2: Hunting Purpose
+					["coord"] = { 41.6, 35.9, MAP.MIDNIGHT.HARANDAR },
+					["questID"] = 93471,
+				}),
+				o(579235, {	-- Lament of Wey'nan--Part2: There Must Be More
+					["coord"] = { 42.3, 35.5, MAP.MIDNIGHT.HARANDAR },
+					["questID"] = 93472,
+				}),
+			}),
 			o(588966, {	-- A Tattered Ball
 				-- Exo: Didn't trigger any quest. Maybe related to something else? Maybe like those Lost and Found Mementos in Hallowfall?
 				["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
@@ -265,11 +280,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(613828, {	-- Forgotten Mural
 				["coord"] = { 68.2, 23.8, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = XXXXX,
-			}),
+			}),]]--
 			o(613818, {	-- Tarnished Mural
 				["coord"] = { 55.7, 54.0, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = XXXXX,
-			}),]]--
+				["questID"] = 93554,
+			}),
 			--repeatables
 			o(573991, {	-- Budding Barrel
 				["groups"] = {
@@ -285,6 +300,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					--there is no loot
 				},
+			}),
+		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(TREASURES, {
+				-- Temp placement, will/should move to a proper achievement header
+				q(94550),	-- Triggered after interracting with 'Vista Point' (didn't get an objectID) at 53.5, 58.6. Part of the achievement Harandar: The Highest Peaks
 			}),
 		}),
 	}),

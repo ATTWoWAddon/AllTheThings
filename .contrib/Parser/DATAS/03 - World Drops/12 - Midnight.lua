@@ -89,6 +89,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 	filter(MISC, {
 	}),
 	filter(REAGENTS, {
+		i(242640),	-- Plant Protein
 		i(242639),	-- Practically Pork
 		i(236949),	-- Mote of Light
 		i(236950),	-- Mote of Primal Energy

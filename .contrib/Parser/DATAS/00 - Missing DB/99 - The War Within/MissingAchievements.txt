@@ -11,7 +11,6 @@ ach(41805),	-- Arator's Journey
 ach(41806),	-- Breaching the Voidstorm \\ Voidstorm
 ach(42045),	-- Midnight
 ach(42117),	-- The War of Light and Shadow
-ach(42278),	-- The Empty Cradle \\ Day of the Titan
 ach(42283),	-- Abundance: Azeroth Runs on Dundun \\ Azeroth Runs on Dundun
 ach(60888),	-- Pushing My Buttons
 ach(60891),	-- The Crimson Rogue
@@ -84,7 +83,6 @@ ach(61566),	-- Glory of the War Within Hero
 ach(61567),	-- Midnight Dungeon Hero
 ach(61568),	-- Glory of the Midnight Hero
 12.0.0.63854
-ach(61574),	-- Legends Never Die
 ach(61576),	-- Eversong Woods Glyph Hunter
 ach(61581),	-- Zul'Aman Glyph Hunter \\ Zul'aman Glyph Hunter
 ach(61582),	-- Harandar Glyph Hunter

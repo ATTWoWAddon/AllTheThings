@@ -20,7 +20,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			["icon"] = 7385004,
 		--	["lore"] = "Hallowfall, situated below the Ringing Deeps and above Azj-Kahet, is an enormous cavern bordered by an endless underground sea. Light, warmth, and growth for vegetation are provided by Beledar, a massive crystal sun embedded in the cavern ceiling, creating a bright and lush environment reminiscent of the surface world.",
-			["timeline"] = { ADDED_12_0_X_LAUNCH }
+			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["maps"] = {
+				2576,	-- The Den
+			},
 		}),
 		m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 		--	["icon"] = 5901551,

@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		header(HEADERS.Faction, FACTION_HARATI, {
-			--["icon"] = 6937966,
+			["icon"] = 7505704,
 			["groups"] = {
 				faction(FACTION_HARATI),
 				n(ACHIEVEMENTS, {
