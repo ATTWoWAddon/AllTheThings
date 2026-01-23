@@ -137,11 +137,11 @@ local EventSequence = {
 	OnRecalculateDone = {
 		"OnRefreshComplete",
 	},
-	OnRenderDirty = {
-		"OnRedrawWindows"
-	},
 	OnSavesUpdated = {
 		"OnRedrawWindows"
+	},
+	OnSettingsRefreshed = {
+		"OnRefreshWindows"
 	},
 	OnCurrentMapIDChanged = {
 		"OnRefreshWindows"

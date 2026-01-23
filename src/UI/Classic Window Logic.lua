@@ -68,7 +68,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
--- Portrait Behaviour Functions
+-- Configuration Functions
+local AdjustRowIndents = false;
 local SetPortraitTexture = SetPortraitTexture;
 local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
 local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
@@ -125,12 +126,11 @@ local function SetPortraitIcon(self, data)
 	self:SetTexture(QUESTION_MARK_ICON);
 	return true
 end
-local function CachePortraitSettings()
+app.AddEventHandler("OnSettingsRefreshed", function()
+	AdjustRowIndents = app.Settings:GetTooltipSetting("Adjust:RowIndents");
 	PortaitSettingsCache.ALL = app.Settings:GetTooltipSetting("IconPortraits");
 	PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests");
-end
-app.AddEventHandler("OnStartup", CachePortraitSettings);
-app.AddEventHandler("OnRedrawWindows", CachePortraitSettings);
+end);
 
 -- Row & Group Processing Functions
 local UpdateGroups;
@@ -270,7 +270,10 @@ local function SetRowData(self, row, data)
 		if not data.__type or getmetatable(data) == nil then
 			print(data.text, " does not have a metatable! This is NOT allowed!", data.__type, getmetatable(data));
 		end
-
+		
+		-- Calculate the indent
+		row.indent = (CalculateRowIndent(data) or 0) + 1;
+		
 		local font = data.font or "GameFontNormal";
 		if font ~= row.lastFont then
 			row.Label:SetFontObject(font);
@@ -305,15 +308,6 @@ local function SetRowData(self, row, data)
 		else
 			row.Background:Hide();
 		end
-	end
-	
-	-- Calculate the indent
-	local indent = ((CalculateRowIndent(data) or 0) + 1) * 8;
-	if row.indent ~= indent then
-		row.Texture.Background:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.Texture.Border:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.Texture:SetPoint("LEFT", row, "LEFT", indent, 0);
-		row.indent = indent;
 	end
 	
 	-- Update the Summary Text (this will be the thing that updates the most)
@@ -409,9 +403,23 @@ local function UpdateVisibleRowData(self)
 			else
 				current = current + 1;
 				rowCount = rowCount + 1;
-				if row.indent and (not minIndent or minIndent > row.indent) then
-					minIndent = row.indent;
+				local indent = row.indent;
+				if indent and (not minIndent or minIndent > indent) then
+					minIndent = indent;
 				end
+			end
+		end
+		
+		-- Apply the Min Indent adjustment
+		if AdjustRowIndents then
+			for i=2,rowCount do
+				row = rows[i];
+				row.Texture:SetPoint("LEFT", row, "LEFT", (row.indent - (minIndent - 2)) * 8, 0);
+			end
+		else
+			for i=2,rowCount do
+				row = rows[i];
+				row.Texture:SetPoint("LEFT", row, "LEFT", row.indent * 8, 0);
 			end
 		end
 
@@ -784,7 +792,7 @@ local function RowOnEnter(self)
 		end
 	elseif reference.retries then
 		tinsert(tooltipInfo, {
-			left = "Failed to acquire information. This may have been removed from the game.",
+			left = L.QUEST_MAY_BE_REMOVED,
 			r = 1, g = 1, b = 1,
 		});
 	end
@@ -803,7 +811,7 @@ local function RowOnEnter(self)
 	end
 
 	-- Show Breadcrumb information
-	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest.", color = app.Colors.Breadcrumb }); end
+	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = L.THIS_IS_BREADCRUMB, color = app.Colors.Breadcrumb }); end
 
 	-- Show Quest Prereqs
 	local isDebugMode = app.MODE_DEBUG;
@@ -1013,16 +1021,17 @@ local function CreateRow(container, rows, i)
 	-- Texture is the icon.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
+	row.Texture:SetPoint("LEFT", row, "LEFT", 8, 0);
 	row.Texture:SetPoint("BOTTOM");
 	row.Texture:SetPoint("TOP");
 	row.Texture:SetWidth(rowHeight);
 	row.Texture.Background = row:CreateTexture(nil, "BACKGROUND");
 	row.Texture.Background:SetPoint("BOTTOM");
-	row.Texture.Background:SetPoint("TOP");
+	row.Texture.Background:SetPoint("TOPLEFT");
 	row.Texture.Background:SetWidth(rowHeight);
 	row.Texture.Border = row:CreateTexture(nil, "BORDER");
 	row.Texture.Border:SetPoint("BOTTOM");
-	row.Texture.Border:SetPoint("TOP");
+	row.Texture.Border:SetPoint("TOPLEFT");
 	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Indicator is used by the Instance Saves functionality.
@@ -2379,13 +2388,12 @@ local function OnInitForPopout(self, questID, group)
 				end
 			until not prereqs or #prereqs < 1;
 		end
-		self.data = {
-			text = "Quest Chain Requirements",
+		self.data = app.CreateRawText(L.QUEST_CHAIN_REQ, {
 			icon = 135932,
-			description = "The following quests need to be completed before being able to complete the final quest.",
+			description = L.QUEST_CHAIN_REQ_DESC,
 			hideText = true,
 			g = g,
-		};
+		});
 	elseif group.sym then
 		self.data = app.CloneClassInstance(group);
 		self.data.collectible = true;

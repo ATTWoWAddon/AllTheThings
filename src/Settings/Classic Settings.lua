@@ -111,6 +111,7 @@ local TransmogFilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Adjust:RowIndents"] = true,
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
 		["Celebrate"] = true,

@@ -829,6 +829,21 @@ checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
 checkboxDoAdHocUpdates:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
 end
 
+local checkboxAdjustRowIndents = child:CreateCheckBox(L.ADJUST_ROW_INDENTS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Adjust:RowIndents"))
+end,
+function(self)
+	settings:SetTooltipSetting("Adjust:RowIndents", self:GetChecked())
+end)
+checkboxAdjustRowIndents:SetATTTooltip(L.ADJUST_ROW_INDENTS_TOOLTIP)
+if checkboxDoAdHocUpdates then
+	checkboxAdjustRowIndents:AlignBelow(checkboxDoAdHocUpdates)
+else
+	checkboxAdjustRowIndents:SetPoint("LEFT", headerListBehavior, 0, 0)
+	checkboxAdjustRowIndents:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
+end
+
 local checkboxExpandMiniList = child:CreateCheckBox(L.EXPAND_MINILIST_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:MiniList"))
@@ -837,12 +852,7 @@ function(self)
 	settings:SetTooltipSetting("Expand:MiniList", self:GetChecked())
 end)
 checkboxExpandMiniList:SetATTTooltip(L.EXPAND_MINILIST_CHECKBOX_TOOLTIP)
-if checkboxDoAdHocUpdates then
-	checkboxExpandMiniList:AlignBelow(checkboxDoAdHocUpdates)
-else
-	checkboxExpandMiniList:SetPoint("LEFT", headerListBehavior, 0, 0)
-	checkboxExpandMiniList:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
-end
+checkboxExpandMiniList:AlignBelow(checkboxAdjustRowIndents)
 
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,
 function(self)
