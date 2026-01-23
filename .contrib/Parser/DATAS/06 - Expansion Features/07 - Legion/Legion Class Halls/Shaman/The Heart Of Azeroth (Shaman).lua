@@ -957,7 +957,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 				}),
-				o(249819),	-- Firelands Portal [prevents inaccurate for matching object names]
+				o(249819, {["coord"] = {31.0, 60.4, THE_HEART_OF_AZEROTH}}),	-- Firelands Portal [prevents inaccurate for matching object names]
 			},
 		})),
 	}),
