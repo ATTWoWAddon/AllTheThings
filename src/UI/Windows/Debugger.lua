@@ -521,7 +521,7 @@ app.LoadDebugger = function()
 				if info then
 					-- TODO: assign children on the created object, assign parent directly, nest to data, DGU the group
 					app.NestObject(self.data, app.__CreateObject(info));
-					self:BuildData();
+					self:AssignChildren();
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);

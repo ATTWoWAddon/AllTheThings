@@ -247,6 +247,17 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups;
+local GetTimePreciseSec = GetTimePreciseSec;
+local TopLevelUpdateGroup = function(group, forceShow)
+	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
+	group.TLUG = GetTimePreciseSec()
+	group.progress = 0;
+	group.total = 0;
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
+	end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
@@ -346,7 +357,7 @@ local function SetRowData(self, row, data)
 	end
 end
 local function UpdateVisibleRowData(self)
-	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
+	-- app.PrintDebug(app.Modules.Color.Colorize("UpdateVisibleRowData:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
 	local rowData = self.rowData;
 	if not rowData then return; end
@@ -361,7 +372,7 @@ local function UpdateVisibleRowData(self)
 		self.ScrollBar:Hide();
 		self.CloseButton:Hide();
 	end
-
+	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
@@ -389,10 +400,10 @@ local function UpdateVisibleRowData(self)
 		local rows = container.rows;
 		local row = rows[1];
 		SetRowData(self, row, rowData[1]);
-
+		
 		-- Fill the remaining rows up to the (visible) row count.
-		local current, rowCount, containerHeight, totalHeight =
-			math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
+		local current, rowCount, containerHeight, totalHeight
+			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
 		local minIndent = nil;
 		for i=2,totalRowCount do
 			row = rows[i];
@@ -414,12 +425,16 @@ local function UpdateVisibleRowData(self)
 		if AdjustRowIndents then
 			for i=2,rowCount do
 				row = rows[i];
-				row.Texture:SetPoint("LEFT", row, "LEFT", (row.indent - (minIndent - 2)) * 8, 0);
+				if row.indent then
+					row.Texture:SetPoint("LEFT", row, "LEFT", (row.indent - (minIndent - 2)) * 8, 0);
+				end
 			end
 		else
 			for i=2,rowCount do
 				row = rows[i];
-				row.Texture:SetPoint("LEFT", row, "LEFT", row.indent * 8, 0);
+				if row.indent then
+					row.Texture:SetPoint("LEFT", row, "LEFT", row.indent * 8, 0);
+				end
 			end
 		end
 
@@ -520,26 +535,26 @@ local function RowOnClick(self, button)
 		local window = self:GetParent():GetParent();
 		if button == "RightButton" then
 			if IsAltKeyDown() then
-				app.AddTomTomWaypoint(reference, false);
+				app.AddTomTomWaypoint(reference);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
 					app:StartATTCoroutine("Sorting", function()
 						app.SortGroup(reference, "progress");
-						self:GetParent():GetParent():Update();
+						window:Update();
 						app.print("Finished Sorting.");
 					end);
 				else
 					app.print("Sorting selection alphabetically...");
 					app:StartATTCoroutine("Sorting", function()
 						app.SortGroup(reference, "name");
-						self:GetParent():GetParent():Update();
+						window:Update();
 						app.print("Finished Sorting.");
 					end);
 				end
 				return true;
 			elseif self.index > 0 then
-				app:CreateMiniListForGroup(self.ref);
+				app:CreateMiniListForGroup(reference);
 			else
 				app.Settings:Open();
 			end
@@ -551,55 +566,75 @@ local function RowOnClick(self, button)
 					local missingItems = {};
 					app.Search.SearchForMissingItemsRecursively(reference, missingItems);
 					local count = #missingItems;
-					if count < 1 then
-						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
-						return true;
-					end
-					if isTSMOpen then
-						-- This is the new, unusable POS API that I don't understand. lol
-						local dict, path, itemString = {}, nil, nil;
-						for i,group in ipairs(missingItems) do
-							path = app.GenerateSourcePathForTSM(group, 0);
-							if path then
-								itemString = dict[path];
-								if itemString then
-									dict[path] = itemString .. ",i:" .. group.itemID;
-								else
-									dict[path] = "i:" .. group.itemID;
+					if count > 0 then
+						if isTSMOpen then
+							-- This is the new, unusable POS API that I don't understand. lol
+							local dict, path, itemString, group = {}, nil, nil, nil;
+							for i=1,#missingItems do
+								group = missingItems[i]
+								path = app.GenerateSourcePathForTSM(group, 0);
+								if path then
+									itemString = dict[path];
+									if itemString then
+										dict[path] = itemString .. ",i:" .. group.itemID;
+									else
+										dict[path] = "i:" .. group.itemID;
+									end
 								end
 							end
-						end
-						local search,first = "",true;
-						for path,itemString in pairs(dict) do
-							if first then
-								first = false;
-							else
-								search = search .. ",";
+							local search,first = "",true;
+							for path,itemString in pairs(dict) do
+								if first then
+									first = false;
+								else
+									search = search .. ",";
+								end
+								search = search .. "group:" .. path .. "," .. itemString;
 							end
-							search = search .. "group:" .. path .. "," .. itemString;
-						end
-						app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
-						return true;
-					elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
-						-- Auctionator needs unique Item Names. Nothing else.
-						local uniqueNames = {};
-						for i,group in ipairs(missingItems) do
-							local name = group.name;
-							if name then uniqueNames[name] = 1; end
-						end
+							app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
+							return true;
+						elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
+							-- Auctionator needs unique Item Names. Nothing else.
+							local uniqueNames = {}
+							for i=1,#missingItems do
+								local name = missingItems[i].name;
+								if name then uniqueNames[name] = 1; end
+							end
 
-						-- Build the array of names.
-						local arr = {};
-						for key,value in pairs(uniqueNames) do
-							tinsert(arr, key);
+							-- Build the array of names.
+							local arr = {};
+							for key,value in pairs(uniqueNames) do
+								arr[#arr + 1] = key
+							end
+							Auctionator.API.v1.MultiSearch(L.TITLE, arr);
+							return;
+						elseif TSMAPI and TSMAPI.Auction then
+							-- This was the old, better, TSM API that made sense.
+							local itemList, search, group = {}, nil, nil
+							for i=1,#missingItems do
+								group = missingItems[i]
+								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
+								if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
+							end
+							app:ShowPopupDialog(L.TSM_WARNING_1 .. L.TITLE .. L.TSM_WARNING_2,
+							function()
+								TSMAPI.Groups:CreatePreset(itemList);
+								app.print(L.PRESET_UPDATE_SUCCESS);
+								if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
+									print(L.SHOPPING_OP_MISSING_1);
+									print(L.SHOPPING_OP_MISSING_2);
+								end
+							end);
+							return true;
+						elseif reference.g and #reference.g > 0 and not reference.link then
+							app.print(L.AUCTIONATOR_GROUPS);
+							return true;
 						end
-						Auctionator.API.v1.MultiSearch(L["TITLE"], arr);
-						return;
 					end
-
+					
 					-- Attempt to search manually with the link.
 					local name, link = reference.name, reference.link or reference.silentLink;
-					if name and link and HandleModifiedItemClick(link) then
+					if name and link and app.HandleModifiedItemClick(link) then
 						if C_AuctionHouse and C_AuctionHouse.SendBrowseQuery then
 							local query = app.AuctionHouseQuery;
 							if not query then
@@ -627,7 +662,7 @@ local function RowOnClick(self, button)
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;
 					if link then
-						if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
+						if app.HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
 						local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
 						if dialog then dialog.editBox:SetText(link); return true; end
 					end
@@ -652,7 +687,7 @@ local function RowOnClick(self, button)
 					return true;
 				else
 					local link = reference.link or reference.silentLink;
-					if link and HandleModifiedItemClick(link) then
+					if link and app.HandleModifiedItemClick(link) then
 						return true;
 					end
 				end
@@ -679,7 +714,6 @@ local function RowOnClick(self, button)
 					window:Update();
 				end
 				if window:IsMovable() then
-					-- Allow the First Frame to move the parent.
 					if IsAltKeyDown() then
 						-- Toggle lock/unlock by holding Alt when clicking the header of a Window if it is movable
 						window.isLocked = not window.isLocked;
@@ -689,7 +723,6 @@ local function RowOnClick(self, button)
 						self:GetScript("OnLeave")(self)
 						self:GetScript("OnEnter")(self)
 					else
-						-- Allow the First Frame to move the parent.
 						self:SetScript("OnMouseUp", function(self)
 							self:SetScript("OnMouseUp", nil);
 							StopMovingOrSizing(window);
@@ -713,9 +746,7 @@ local function RowOnEnter(self)
 		local modded = not not tooltip.ATT_IsModifierKeyDown;
 		if modded ~= modifier then
 			tooltip.ATT_IsModifierKeyDown = modifier;
-			--print("Modifier change detected!");
 		elseif tooltip.ATT_AttachComplete == true then
-			--print("Ignoring refresh.");
 			return;
 		end
 	else
@@ -723,8 +754,6 @@ local function RowOnEnter(self)
 		tooltip.ATT_IsRefreshing = true;
 		tooltip:ClearATTReferenceTexture();
 	end
-	--print("RowOnEnter", "Rebuilding...");
-
 
 	-- Always display tooltip data when viewing information from our windows.
 	local wereTooltipIntegrationsDisabled = not app.Settings:GetTooltipSetting("Enabled");
@@ -759,8 +788,6 @@ local function RowOnEnter(self)
 			if success then
 				linkSuccessful = true;
 			end
-			--print("Link:", link:gsub("|","\\"));
-			--print("Link Result!", success, reference.key, reference.__type);
 		end
 
 		-- Only if the link was unsuccessful.
@@ -1012,10 +1039,8 @@ local function CreateRow(container, rows, i)
 
 	-- Background is used by the Map Highlight functionality.
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
+	row.Background:SetAllPoints();
 	row.Background:SetPoint("LEFT", 4, 0);
-	row.Background:SetPoint("BOTTOM");
-	row.Background:SetPoint("RIGHT");
-	row.Background:SetPoint("TOP");
 	row.Background:SetTexture(136810);
 
 	-- Texture is the icon.
@@ -1074,25 +1099,25 @@ local function UpdateWindow(self, force, trigger)
 	-- If this window doesn't have data, do nothing.
 	local data = self.data;
 	if not data then return; end
-	if not self.rowData then
-		self.rowData = {};
-	else
-		wipe(self.rowData);
-	end
 	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
 	if force or self:IsShown() then
+		if not self.rowData then
+			self.rowData = {};
+		else
+			wipe(self.rowData);
+		end
 		data.expanded = true;
 		if self.HasPendingUpdate then
+			--[[
 			local rows = self.Container.rows;
 			for i=1,#rows,1 do
 				SetRowData(self, rows[i], nil);
 			end
-			data.progress = 0;
-			data.total = 0;
-			if not (data.OnUpdate and data:OnUpdate()) then
-				UpdateGroups(data, data.g);
-			end
+			]]---
+			self:ToggleExtraFilters(true)
+			app.TopLevelUpdateGroup(data);
 			self.HasPendingUpdate = nil;
+			self:ToggleExtraFilters()
 		end
 		ProcessGroup(self.rowData, data);
 
@@ -1260,8 +1285,8 @@ local function BuildDefaultsForWindow(self, fromSettings)
 		width = 300,
 		height = 300,
 	};
-	if app.Settings._Initialize then
-		defaults.scale = app.Settings and app.Settings._Initialize and (app.Settings:GetTooltipSetting(self.Suffix == "Prime" and "MainListScale" or "MiniListScale")) or 1;
+	if app.Settings and app.Settings._Initialize then
+		defaults.scale = app.Settings:GetTooltipSetting(self.Suffix == "Prime" and "MainListScale" or "MiniListScale") or 1;
 		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
 		defaults.backdropColor = { rBg, gBg, bBg, aBg };
 		defaults.borderColor = { rBd, gBd, bBd, aBd };
@@ -1685,6 +1710,23 @@ local FieldDefaults = {
 		self.ScrollInfo = { field, value }
 		self:Refresh();
 	end,
+	ToggleExtraFilters = function(self, active)
+		if self.Filters then
+			local func
+			for name,_ in pairs(self.Filters) do
+				func = app.Modules.Filter.Set[name]
+				if func then func(active) end
+			end
+		end
+	end,
+	GetRunner = function(self)
+		-- returns a Runner specific to the 'self' window
+		local Runner = self.__Runner
+		if Runner then return Runner end
+		Runner = app.CreateRunner(self.Suffix)
+		self.__Runner = Runner
+		return Runner
+	end,
 	
 	-- Rendering Functions
 	HasPendingUpdate = true,
@@ -2051,6 +2093,7 @@ local function BuildWindow(suffix)
 		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
 		closeButton:SetSize(24, 24);
 	end
+	closeButton:SetFrameLevel(9999);
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
@@ -2140,7 +2183,6 @@ local function BuildWindow(suffix)
 		window:RegisterEvent("PET_BATTLE_OPENING_START");
 		window:RegisterEvent("PET_BATTLE_CLOSE");
 	end
-	
 	
 	-- Add command processing
 	local onCommand = settings.OnCommand;
@@ -2700,7 +2742,7 @@ function app:CreateMiniListForGroup(group)
 		end,
 	});
 	if IsAltKeyDown() then
-		app.AddTomTomWaypoint(popout.data, false);
+		app.AddTomTomWaypoint(popout.data);
 	else
 		if not popout.data.expanded then
 			ExpandGroupsRecursively(popout.data, true, true);

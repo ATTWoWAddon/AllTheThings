@@ -18,7 +18,7 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 		local SearchForObject = app.SearchForObject
 
 		function self:Rebuild()
-			self:BuildData()
+			self:AssignChildren()
 			self:Update(true)
 		end
 

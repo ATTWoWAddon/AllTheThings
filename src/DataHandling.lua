@@ -337,7 +337,7 @@ local function TopLevelUpdateGroup(group, forceShow)
 		group.forceShow = true
 	end
 	if group.OnUpdate then
-		if not group:OnUpdate(nil, UpdateGroup) then
+		if not group:OnUpdate() then
 			UpdateGroup(group)
 		elseif group.visible then
 			group.total = nil

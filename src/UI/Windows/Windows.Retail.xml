@@ -1,8 +1,8 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
+	<Script file="Prime.lua"/>
 	<!--
 	Copied from the Windows.xml file, uncomment one at a time once they can be tested in Retail
-	<Script file="Prime.lua"/>
 	<Script file="Achievements.lua"/>
 	<Script file="Account Management.lua"/>
 	<Script file="Added With Patch.lua"/>

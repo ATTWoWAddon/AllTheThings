@@ -113,7 +113,7 @@ app.AddCustomWindowOnUpdate("NWP", function(self, force)
 			g = CreateNWPWindow(),
 		})
 		self:SetData(NWPwindow);
-		self:BuildData();
+		self:AssignChildren();
 	end
 	if self:IsVisible() then
 		self:DefaultUpdate(force);

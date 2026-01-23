@@ -85,7 +85,7 @@ app.AddCustomWindowOnUpdate("ItemFilter", function(self, force)
 								end
 								-- maybe local table of common fields from lowercase -> match
 
-								self:BuildData();
+								self:AssignChildren();
 								self:Update(true);
 							end);
 							return true;
@@ -95,7 +95,7 @@ app.AddCustomWindowOnUpdate("ItemFilter", function(self, force)
 			});
 
 			self:SetData(data);
-			self:BuildData();
+			self:AssignChildren();
 		end
 
 		self:DefaultUpdate(force);

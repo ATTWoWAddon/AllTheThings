@@ -14,7 +14,7 @@ app.AddCustomWindowOnUpdate("Bounty", function(self, force, got)
 			["visible"] = true,
 			["g"] = app:BuildSearchResponse("isBounty"),
 		}))
-		self:BuildData();
+		self:AssignChildren();
 		self.ExpandInfo = { Expand = true, Manual = true };
 	end
 	if self:IsVisible() then

@@ -1129,7 +1129,7 @@ local function BuildSourceParent(group)
 			skipFull = true,
 			SortPriority = -3.0,
 			g = {},
-			IgnorePopout=true,
+			--IgnorePopout=true,	-- CRIEVE NOTE: WHAT THE HELL IS THIS AND WHY
 		})
 		for _,parent in ipairs(parents) do
 			-- if there's nothing nested under the parent, then force it to be visible
@@ -1613,7 +1613,7 @@ function app:GetDataCache()
 	local primeWindow = app:GetWindow("Prime");
 	primeWindow:SetData(rootData);
 	-- app.PrintMemoryUsage("Prime Window Data Building...")
-	primeWindow:BuildData();
+	primeWindow:AssignChildren();
 
 	-- Function to build a hidden window's data
 	local AllHiddenWindows = {}
@@ -1640,7 +1640,7 @@ function app:GetDataCache()
 		local window = app:GetWindow(category)
 		window.AdHoc = true
 		window:SetData(windowData)
-		window:BuildData()
+		window:AssignChildren()
 	end
 
 	-- Build all the hidden window's data
@@ -1670,7 +1670,7 @@ function app:GetDataCache()
 			AdHoc = true
 		})
 		window:SetData(windowData)
-		window:BuildData()
+		window:AssignChildren()
 		window:Toggle()
 		return true
 	end, {

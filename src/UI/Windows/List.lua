@@ -360,7 +360,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			end
 			tinsert(g, partition);
 		end
-		self:BuildData();
+		self:AssignChildren();
 	end
 	if self:IsVisible() then
 		-- requires Visibility filter to check .visibile for display of the group

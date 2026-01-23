@@ -447,7 +447,7 @@ app.AddCustomWindowOnUpdate("RaidAssistant", function(self)
 		-- Update the groups without forcing Debug Mode.
 		local visibleState = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible()
-		self:BuildData();
+		self:AssignChildren();
 		self:DefaultUpdate(true);
 		app.Modules.Filter.Set.Visible(visibleState)
 	end

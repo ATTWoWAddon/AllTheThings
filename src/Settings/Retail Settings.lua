@@ -356,7 +356,6 @@ settings.NewProfile = function(self, key)
 			Tooltips = {},
 			Unobtainable = {},
 			Filters = {},
-			Windows = {},
 		}
 		-- Use Ad-Hoc for new Profiles, to remove initial lag
 		raw.Tooltips["Updates:AdHoc"] = true
@@ -381,7 +380,6 @@ settings.CopyProfile = function(self, key, copyKey)
 				rawcopy(copy.Tooltips, raw.Tooltips)
 				rawcopy(copy.Unobtainable, raw.Unobtainable)
 				rawcopy(copy.Filters, raw.Filters)
-				rawcopy(copy.Windows, raw.Windows)
 			end
 		end
 		return raw
@@ -428,19 +426,6 @@ settings.ApplyProfile = function()
 	if RawSettings then
 		SetupRawSettings()
 
-		-- apply window positions when applying a Profile
-		local windowSettings = RawSettings.Windows;
-		if windowSettings then
-			local oldCurrentInstance = windowSettings.CurrentInstance;
-			if oldCurrentInstance then
-				windowSettings.MiniList = oldCurrentInstance;
-				windowSettings.CurrentInstance = nil;
-			end
-			for suffix,_ in pairs(windowSettings) do
-				settings.SetWindowFromProfile(suffix)
-			end
-		end
-
 		-- when applying a profile, clean out any 'false' Unobtainable keys for cleaner settings storage
 		-- for non-defaulted fields
 		local unobCopy = app.CloneDictionary(RawSettings.Unobtainable)
@@ -457,52 +442,6 @@ settings.ApplyProfile = function()
 	end
 	app.HandleEvent("Settings.OnApplyProfile", key)
 	return RawSettings and true or nil
-end
--- Allows moving an ATT window based on the position stored in the current Profile
--- This would be used when creating a Window initially during a game session
-settings.SetWindowFromProfile = function(suffix)
-	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix]
-	local window = app.Windows[suffix]
-	-- app.PrintDebug("SetWindowFromProfile",suffix,points,window)
-	if window then
-		if RawSettings then
-			if suffix == "Prime" then
-				window:SetScale(settings:GetTooltipSetting("MainListScale"))
-			else
-				window:SetScale(settings:GetTooltipSetting("MiniListScale"))
-			end
-		end
-		if points then
-			-- only allow setting positions for Windows which are inherently movable
-			if window:IsMovable() then
-				local hasClearedPoints = false
-				for _,point in ipairs(points) do
-					if point.Point then
-						if not hasClearedPoints then
-							window:ClearAllPoints()
-							hasClearedPoints = true
-						end
-						window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y)
-						-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
-					end
-				end
-				if points.Width then
-					window:SetWidth(points.Width)
-					-- print("SetWidth",suffix,points.Width)
-				end
-				if points.Height then
-					window:SetHeight(points.Height)
-					-- print("SetHeight",suffix,points.Height)
-				end
-				window.isLocked = points.isLocked
-			else
-				-- if positions were stored accidentally for un-movable windows, clear them
-				app.print("Removed Anchors for un-movable ATT window",suffix)
-				RawSettings.Windows[suffix] = nil
-			end
-		end
-		settings.ApplyWindowColors(window)
-	end
 end
 app.ChatCommands.Add("reset-window", function(args)
 	local windowSuffix = args[2]

@@ -33,7 +33,7 @@ local OnUpdate_CheckSymlinks = function(self, force)
 			local results = app:BuildSearchResponse("sym", nil, {sym=false});
 			app.NestObjects(data, results, true)
 			self:SetData(data)
-			self:BuildData()
+			self:AssignChildren()
 			self:Update(true)
 
 			app.SetDGUDelay(0)

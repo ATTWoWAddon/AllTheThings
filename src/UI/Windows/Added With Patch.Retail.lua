@@ -206,7 +206,7 @@ app.AddCustomWindowOnUpdate("Added With Patch", function(self, force)	-- TODO: C
 			},
 		})
 		self:SetData(AWPwindow);
-		self:BuildData();
+		self:AssignChildren();
 	end
 	if self:IsVisible() then
 		self:DefaultUpdate(force);

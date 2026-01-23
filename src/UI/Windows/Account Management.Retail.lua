@@ -591,7 +591,7 @@ app.AddCustomWindowOnUpdate("Account Management", function(self)
 
 		-- Update the groups without forcing Debug Mode.
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		self:BuildData();
+		self:AssignChildren();
 		for i,g in ipairs(self.data.g) do
 			if g.OnUpdate then g.OnUpdate(g, self); end
 		end
