@@ -571,7 +571,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 		}),
 	})),
-	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 }, ["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
+	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH }, ["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
 		["groups"] = {
 			q(94464, {	-- Heritage of the Haranir
