@@ -106,7 +106,6 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("WorldMapButton", self:GetChecked())
-	app.SetWorldMapButtonSettings(settings:GetTooltipSetting("WorldMapButton"));
 end)
 checkboxShowWorldMapButton:SetATTTooltip(L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP)
 checkboxShowWorldMapButton:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, -8)

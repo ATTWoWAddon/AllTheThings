@@ -300,7 +300,6 @@ settings.Initialize = function(self)
 		self:GetTooltipSetting("MinimapSize"));
 
 	app.AddEventHandler("OnStartup", function()
-		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 		settings.ApplyAllWindowColors()
 	end)
 

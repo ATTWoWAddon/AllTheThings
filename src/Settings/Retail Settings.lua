@@ -311,7 +311,6 @@ settings.Initialize = function(self)
 		if self:GetTooltipSetting("Auto:WorldQuestsList") then
 			app:GetWindow("WorldQuests"):SetVisible(true)
 		end
-		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
 	end)
 
 	if settings.RefreshActiveInformationTypes then

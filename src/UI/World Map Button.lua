@@ -65,10 +65,18 @@ local function CreateWorldMapButton()
 	return button;
 end
 
-app.SetWorldMapButtonSettings = function(visible)
+local function SetWorldMapButtonSettings(visible)
 	if visible then
 		(WorldMapButton or CreateWorldMapButton()):Show();
 	elseif WorldMapButton then
 		WorldMapButton:Hide();
 	end
 end
+app.AddEventHandler("Settings.OnSet", function(context, setting, value)
+	if context == "Tooltips" and setting == "WorldMapButton" then
+		SetWorldMapButtonSettings(value);
+	end
+end)
+app.AddEventHandler("OnStartup", function()
+	SetWorldMapButtonSettings(app.Settings:GetTooltipSetting("WorldMapButton"));
+end)
