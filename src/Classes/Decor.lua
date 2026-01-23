@@ -12,8 +12,8 @@ if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 	return
 end
 
-local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive
-	= C_HousingCatalog.GetCatalogEntryInfo,C_HouseEditor.IsHouseEditorActive
+local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive,C_TooltipInfo_GetOwnedItemByID
+	= C_HousingCatalog.GetCatalogEntryInfo,C_HouseEditor.IsHouseEditorActive,C_TooltipInfo.GetOwnedItemByID
 
 -- TODO: test other APIs
 -- this is non-parameterized, returns the max decor that can be owned
@@ -32,8 +32,9 @@ end)
 
 local HousingSearcher
 local DecorType = Enum.HousingCatalogEntryType.Decor
+local LineTypeNone = Enum.TooltipDataLineType.None
 
-local function HowManyDecor(entryInfo)
+local function HowManyDecor(entryInfo, checkItemFallback)
 	if not entryInfo then return 0 end
 
 	local sum = (entryInfo.numPlaced or 0) + (entryInfo.quantity or 0) + (entryInfo.remainingRedeemable or 0)
@@ -43,11 +44,11 @@ local function HowManyDecor(entryInfo)
 	-- end
 	-- HACK: see if we can get the tooltip data of the underlying item,
 	-- as sometimes this is different?
-	if sum == 0 and entryInfo.itemID then
-		local tooltip = C_TooltipInfo.GetOwnedItemByID(entryInfo.itemID)
+	if checkItemFallback and sum == 0 and entryInfo.itemID then
+		local tooltip = C_TooltipInfo_GetOwnedItemByID(entryInfo.itemID)
 		if tooltip and tooltip.lines then
 			for _, line in pairs(tooltip.lines) do
-				if line.type == Enum.TooltipDataLineType.None and line.leftText then
+				if line.type == LineTypeNone and line.leftText then
 					local unformattedLine = line.leftText:gsub("%d+", "%%d")
 
 					if unformattedLine == HOUSING_DECOR_OWNED_COUNT_FORMAT then
@@ -153,7 +154,7 @@ do
 
 		-- hopefully a temp workaround until Blizzard makes their APIs work correctly
 		-- check here if the decor is collected via entryFrame and cache in ATT
-		local sum = HowManyDecor(entryInfo)
+		local sum = HowManyDecor(entryInfo, true)
 		if sum > 0 and sum < 1000000 then	-- Sometimes API returns 4294967295
 			-- ensure this Decor is marked collected
 			app.SetThingCollected(KEY, decorID, true, true)
