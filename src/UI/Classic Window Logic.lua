@@ -133,7 +133,6 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 end);
 
 -- Row & Group Processing Functions
-local UpdateGroups;
 local function CalculateRowBack(data)
 	if data.back then return data.back; end
 	if data.parent then
@@ -150,114 +149,6 @@ local function CalculateRowIndent(data)
 		return 0;
 	end
 end
-local function UpdateGroup(group, parent)
-	local visible = false;
-
-	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupFilter(group) then
-		-- Check if this is a group
-		if group.g then
-			-- If this item is collectible, then mark it as such.
-			if group.collectible then
-				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			else
-				-- Default to 0 for both
-				group.progress = 0;
-				group.total = 0;
-			end
-
-			-- Update the subgroups recursively...
-			visible = UpdateGroups(group, group.g);
-
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if not group.sourceIgnored then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + group.total;
-					parent.progress = (parent.progress or 0) + group.progress;
-				end
-
-				-- If this group is trackable, then we should show it.
-				if group.total > 0 and app.GroupVisibilityFilter(group) then
-					visible = true;
-				elseif app.ShowTrackableThings(group) and not group.saved then
-					visible = true;
-				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
-					visible = true;
-				end
-			else
-				visible = false;
-			end
-		else
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if group.collectible then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + 1;
-
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.collected then
-						parent.progress = (parent.progress or 0) + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							visible = true;
-						end
-					else
-						visible = true;
-					end
-				elseif app.ShowTrackableThings(group) and not group.saved then
-					-- If this group is trackable, then we should show it.
-					visible = true;
-				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
-					visible = true;
-				elseif app.MODE_DEBUG then
-					visible = true;
-				end
-			elseif app.MODE_DEBUG then
-				visible = true;
-			else
-				visible = false;
-			end
-		end
-	end
-
-	-- Set the visibility
-	group.visible = visible;
-	return visible;
-end
-UpdateGroups = function(parent, g)
-	if g then
-		local visible = false;
-		for i=1,#g,1 do
-			local group = g[i];
-			if group.OnUpdate then
-				if not group:OnUpdate(parent, UpdateGroup) then
-					if UpdateGroup(group, parent) then
-						visible = true;
-					end
-				elseif group.visible then
-					visible = true;
-				end
-			elseif UpdateGroup(group, parent) then
-				visible = true;
-			end
-		end
-		return visible;
-	end
-end
-app.UpdateGroups = UpdateGroups;
-local GetTimePreciseSec = GetTimePreciseSec;
-local TopLevelUpdateGroup = function(group, forceShow)
-	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
-	group.TLUG = GetTimePreciseSec()
-	group.progress = 0;
-	group.total = 0;
-	if not (group.OnUpdate and group:OnUpdate()) then
-		UpdateGroups(group, group.g);
-	end
-end
-app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 local function SetRowData(self, row, data)
 	if row.ref ~= data then
 		-- New data, update everything
@@ -1265,7 +1156,6 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.total = windowSettings.Total;
 	end
 	self:SetVisible(windowSettings.visible);
-	self:SetFrameLevel(9999);
 	self.RecordSettings = oldRecordSettings;
 end
 local function BuildDefaultsForWindow(self, fromSettings)
@@ -2092,17 +1982,12 @@ local function BuildWindow(suffix)
 		self:DelayedCall("Update", 10, force);
 	end
 	
-	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
+	closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
+	closeButton:SetSize(24, 24);
 	window.CloseButton = closeButton;
-	if app.isRetail then
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
-		closeButton:SetSize(20, 20);
-	else
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
-		closeButton:SetSize(24, 24);
-	end
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
@@ -2237,6 +2122,117 @@ end
 function app:GetWindow(suffix)
 	return app.Windows[suffix] or BuildWindow(suffix);
 end
+
+-- Warning: This is different in Retail's DataHandling file
+local UpdateGroups;
+local function UpdateGroup(group, parent)
+	local visible = false;
+
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+
+			-- Update the subgroups recursively...
+			visible = UpdateGroups(group, group.g);
+
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if not group.sourceIgnored then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + group.total;
+					parent.progress = (parent.progress or 0) + group.progress;
+				end
+
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					-- If this group is trackable, then we should show it.
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				elseif app.MODE_DEBUG then
+					visible = true;
+				end
+			elseif app.MODE_DEBUG then
+				visible = true;
+			else
+				visible = false;
+			end
+		end
+	end
+
+	-- Set the visibility
+	group.visible = visible;
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for i=1,#g,1 do
+			local group = g[i];
+			if group.OnUpdate then
+				if not group:OnUpdate(parent, UpdateGroup) then
+					if UpdateGroup(group, parent) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(group, parent) then
+				visible = true;
+			end
+		end
+		return visible;
+	end
+end
+app.UpdateGroups = UpdateGroups;
+local GetTimePreciseSec = GetTimePreciseSec;
+local TopLevelUpdateGroup = function(group, forceShow)
+	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
+	group.TLUG = GetTimePreciseSec()
+	group.progress = 0;
+	group.total = 0;
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
+	end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 
 -- Warning: This one is different in Retail for some reason.
 -- Identify why, then figure out which one we want to use.

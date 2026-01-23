@@ -1378,7 +1378,6 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.total = windowSettings.Total;
 	end
 	self:SetVisible(windowSettings.visible);
-	self:SetFrameLevel(9999);
 	self.RecordSettings = oldRecordSettings;
 end
 local function BuildDefaultsForWindow(self, fromSettings)
@@ -2349,17 +2348,12 @@ local function BuildWindow(suffix)
 		self:DelayedCall("Update", 10, force);
 	end
 	
-	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
+	closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
+	closeButton:SetSize(24, 24);
 	window.CloseButton = closeButton;
-	if app.isRetail then
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
-		closeButton:SetSize(20, 20);
-	else
-		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
-		closeButton:SetSize(24, 24);
-	end
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
