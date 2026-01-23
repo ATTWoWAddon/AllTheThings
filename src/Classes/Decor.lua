@@ -41,6 +41,22 @@ local function HowManyDecor(entryInfo)
 	-- 	app.PrintDebug("NOT OWNED DECOR")
 	-- 	app.PrintTable(entryInfo)
 	-- end
+	-- HACK: see if we can get the tooltip data of the underlying item,
+	-- as sometimes this is different?
+	if sum == 0 and entryInfo.itemID then
+		local tooltip = C_TooltipInfo.GetOwnedItemByID(entryInfo.itemID)
+		if tooltip and tooltip.lines then
+			for _, line in pairs(tooltip.lines) do
+				if line.type == Enum.TooltipDataLineType.None and line.leftText then
+					local unformattedLine = line.leftText:gsub("%d+", "%%d")
+
+					if unformattedLine == HOUSING_DECOR_OWNED_COUNT_FORMAT then
+						sum = tonumber(line.leftText:match("%d+")) or 0
+					end
+				end
+			end
+		end
+	end
 	return sum
 end
 
