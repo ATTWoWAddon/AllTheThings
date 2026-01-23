@@ -453,6 +453,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(89196),	-- unflagged (???), after turn in questID 86839 (To Light's Hope)
 			--q(89247),	-- unflagged (???), after turn in questID 86903 (The Arcantina)
 			--q(94623),	-- Building the Voidforge -- completed with q:92630
+			q(95247, {["timeline"] = {ADDED_12_0_0}}),	-- when picking up q:92630 in Dornogal
 		}),
 	}),
 }));
