@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				title(665, {	-- Honorary Hara'ti <Name>
 					["minReputation"] = { FACTION_HARATI, 20 },	-- Hara'ti, Renown 20
 				}),
-				n(QUESTS, sharedData({
+				--[[n(QUESTS, sharedData({
 					["provider"] = { "n", 240407 },	-- Naynar <Renown Quartermaster>
 					["coord"] = { 50.9, 50.7, MAP.MIDNIGHT.HARANDAR },
 				}, bubbleDownRep(FACTION_HARATI, {
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 20 --
 						------ Paragon ------
 					},
-				}))),
+				}))),--]]
 				n(VENDORS, {
 					n(240407, {	-- Naynar <Renown Quartermaster>
 						["coord"] = { 50.9, 50.7, MAP.MIDNIGHT.HARANDAR },
