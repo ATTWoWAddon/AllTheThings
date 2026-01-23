@@ -462,7 +462,7 @@ do
 	end
 	local criteriaFields = {
 		achievementID = function(t)
-			local achievementID = t.achID
+			local achievementID = t.achID or t.parent and t.parent.achievementID
 			t.achievementID = achievementID;
 			return achievementID;
 		end,
