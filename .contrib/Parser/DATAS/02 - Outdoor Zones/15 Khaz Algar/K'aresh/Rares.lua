@@ -167,6 +167,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(235087, {	-- The Harvester
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
 				["coord"] = { 49.5, 64.2, KARESH },
+				["crs"] = { 235085 },	-- Devourer Attack 3 [DNT] (Vignette)
 				["questID"] = 91311,
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
