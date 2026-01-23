@@ -64,7 +64,6 @@ title(660),	-- [PH] %s
 title(661),	-- [PH] %s
 title(662),	-- [PH] %s
 title(663),	-- [PH] %s
-title(665),	-- Honorary Hara'ti %s
 title(667),	-- %s, Life of the Party
 12.0.0.63724
 title(670),	-- %s, Teacher of Strong \\ %s, Mycelial Mentor

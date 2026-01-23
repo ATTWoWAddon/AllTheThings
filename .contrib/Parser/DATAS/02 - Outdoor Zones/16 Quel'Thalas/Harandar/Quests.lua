@@ -454,12 +454,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--After campaign
 			q(93651, {	-- The Blinding Vale
 				["sourceQuests"] = { 86898 },	-- Rise of the Haranir
-				["provider"] = { "n", 255822 },	-- Orweyna
+				["providers"] = {
+					{ "n", 255822 },	-- Orweyna
+					{ "n", 255828 },	-- Orweyna
+				},
 				["coord"] = { 36.6, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(251190),	-- Bloodthorn Burnous
 					i(251194),	-- Lightwarden's Bind
 					i(251183),	-- Rootwarden Wraps
+					i(251197),	-- Thornspike Gauntlets
 				},
 			}),
 			--Delves

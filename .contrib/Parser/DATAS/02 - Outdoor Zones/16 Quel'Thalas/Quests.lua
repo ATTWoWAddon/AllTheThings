@@ -418,7 +418,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 					["coords"] = {
 						{ 44.4, 50.3, DORNOGAL },
-						{ 50.5, 16.6, STORMWIND_CITY },	-- TODO: Orgrimmar
+						{ 50.5, 16.6, STORMWIND_CITY },
+						--{ XX.X, YY.Y, ORGRIMMAR },
+						{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 					},
 				}),
 				q(92631, {	-- Abhorrent Gauntlet

@@ -2671,3 +2671,12 @@ i(260645);	-- Water Filled Organ
 -- Profession
 i(242637);	-- Recycle Potions
 i(242638);	-- Recycle Flasks
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(260641);	-- Arid Tendrils
+i(260608);	-- Bloated Animal Remains
+i(260655);	-- Decaying Humanoid Flesh
+i(260646);	-- Glowing Gland
+i(260688);	-- Insect Exoskeleton

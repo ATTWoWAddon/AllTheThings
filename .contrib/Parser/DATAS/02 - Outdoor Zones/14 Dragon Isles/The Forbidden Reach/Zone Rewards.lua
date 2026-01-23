@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				currency(2118),	-- Elemental Overflow
 				i(204276),	-- Untapped Forbidden Knowledge
 				i(202196, {	-- Zskera Vault Key
-					["cost"] = {{"c",DRAGON_SUPPLIES,50}},
+					["cost"] = { {"c", DRAGON_SUPPLIES, 50} },
 					["crs"] = {
 						-- Vendors also
 						200566,	-- Cataloger Daela

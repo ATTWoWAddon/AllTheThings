@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(TREASURES, {
 			--Renown 2 set of Glowing Moth (some of them could be wrong)
 			--Alex: there should be 120 in total, whoever do this in Blizz - was it fun to implement this?
+			--Exo: Maybe a sub-header for the moths?
 			o(571121, {	-- Glowing Moth
 				["coord"] = { 36.1, 26.4, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92197,
@@ -181,6 +182,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92204,
 			}),
 			--other zone stuff
+			o(588966, {	-- A Tattered Ball
+				-- Exo: Didn't trigger any quest. Maybe related to something else? Maybe like those Lost and Found Mementos in Hallowfall?
+				["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = { i(256882) },	-- A Tattered Ball
+			}),
 			o(572998, {	-- Burning Branch of the World Tree
 				["coord"] = { 47.1, 50.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92426,
@@ -199,7 +205,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid",
 				["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 93508,
-				["cost"] = {{"i", 260266, 1}},	-- 1x Fizzing Fluid
+				["cost"] = { { "i", 260266, 1 } },	-- 1x Fizzing Fluid
 				["groups"] = {
 					i(260730),	-- Perturbed Sporebat (PET!)
 					--
@@ -227,7 +233,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(614483, {	-- Peculiar Cauldron
 				["coord"] = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
 				--["questID"] = XXXX,
-				["cost"] = {{"i", 238511, 150}},	-- 150x Crystalized Resin Fragment
+				["cost"] = { { "i", 238511, 150 } },	-- 150x Crystalized Resin Fragment
 			}),
 			o(573095, {	-- Reliquary's Lost Paintbrush
 				["coord"] = { 62.9, 51.2, MAP.MIDNIGHT.HARANDAR },
