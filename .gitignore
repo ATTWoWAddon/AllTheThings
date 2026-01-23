@@ -27,6 +27,7 @@
 .contrib/Parser/*.txt
 .contrib/Source Code/Blizzard API Harvester/bin/
 .contrib/Source Code/Classic Item Detector/bin/
+.contrib/.wago/Debug/*
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml

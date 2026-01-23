@@ -431,10 +431,12 @@ if app.IsRetail then
 		ExpansionFilters[9] = app.Settings:Get("ExpansionFilter:SL")
 		ExpansionFilters[10] = app.Settings:Get("ExpansionFilter:DF")
 		ExpansionFilters[11] = app.Settings:Get("ExpansionFilter:TWW")
+		ExpansionFilters[12] = app.Settings:Get("ExpansionFilter:MID")
+		ExpansionFilters[13] = app.Settings:Get("ExpansionFilter:TLT")
 
 		-- Enable the filter if any expansion is disabled
 		local anyDisabled = false
-		for i = 1, 11 do
+		for i = 1, 12 do
 			if ExpansionFilters[i] == false then
 				anyDisabled = true
 				break
