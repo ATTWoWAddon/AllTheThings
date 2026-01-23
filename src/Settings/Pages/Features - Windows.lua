@@ -1,6 +1,4 @@
 local _, app = ...;
-if app.IsRetail then return; end
-
 local L, settings = app.L, app.Settings;
 
 -- Settings: Windows Page

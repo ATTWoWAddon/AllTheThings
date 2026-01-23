@@ -1524,9 +1524,251 @@ app.AddEventHandler("OnStartup", function()
 	
 	-- Mark Windows as loaded.
 	AllWindowSettingsLoaded = true;
+	for name, definition in pairs(app.WindowDefinitions) do
+		local settings = AllWindowSettings[name];
+		if settings and settings.visible then
+			app:GetWindow(name);
+		end
+	end
 end);
 
 -- Window UI Event Handlers
+local function BuildCategory(self, headers, searchResults, inst)
+	local count = #searchResults;
+	if count == 0 then return; end
+	if count > 1 then
+		-- Find the most accessible version of the thing.
+		app.Sort(searchResults, app.SortDefaults.Accessibility);
+	end
+	local mostAccessibleSource = searchResults[1];
+	inst.sourceParent = mostAccessibleSource;
+	local u = app.GetRelativeValue(mostAccessibleSource, "u");
+	if u then
+		if u == 1 then return inst; end
+		inst.u = u;
+	end
+	local e = app.GetRelativeValue(mostAccessibleSource, "e");
+	if e then inst.e = e; end
+	local awp = app.GetRelativeValue(mostAccessibleSource, "awp");
+	if awp then inst.awp = awp; end
+	local rwp = app.GetRelativeValue(mostAccessibleSource, "rwp");
+	if rwp then inst.rwp = rwp; end
+	local r = app.GetRelativeValue(mostAccessibleSource, "r");
+	if r then inst.r = r; end
+	local c = app.GetRelativeValue(mostAccessibleSource, "c");
+	if c then inst.c = c; end
+	local races = app.GetRelativeValue(mostAccessibleSource, "races");
+	if races then inst.races = races; end
+	for key,value in pairs(mostAccessibleSource) do
+		inst[key] = value;
+	end
+
+	local header, headerType = {}, self, nil;
+	for j,o in ipairs(searchResults) do
+		if o.parent then
+			if not o.sourceQuests then
+				local questID = app.GetRelativeValue(o, "questID");
+				if questID then
+					if not inst.sourceQuests then
+						inst.sourceQuests = {};
+					end
+					if not app.contains(inst.sourceQuests, questID) then
+						tinsert(inst.sourceQuests, questID);
+					end
+				else
+					local sourceQuests = app.GetRelativeValue(o, "sourceQuests");
+					if sourceQuests then
+						if not inst.sourceQuests then
+							inst.sourceQuests = {};
+							for k,questID in ipairs(sourceQuests) do
+								tinsert(inst.sourceQuests, questID);
+							end
+						else
+							for k,questID in ipairs(sourceQuests) do
+								if not app.contains(inst.sourceQuests, questID) then
+									tinsert(inst.sourceQuests, questID);
+								end
+							end
+						end
+					end
+				end
+			end
+
+			if app.GetRelativeValue(o, "isHolidayCategory") then
+				headerType = "holiday";
+			elseif app.GetRelativeValue(o, "isPromotionCategory") then
+				headerType = "promo";
+			elseif app.GetRelativeValue(o, "isPVPCategory") or o.pvp then
+				headerType = "pvp";
+			elseif app.GetRelativeValue(o, "isEventCategory") then
+				headerType = "event";
+			elseif app.GetRelativeValue(o, "isCraftedCategory") then
+				headerType = "crafted";
+			elseif o.parent.achievementID then
+				headerType = app.HeaderConstants.ACHIEVEMENTS;
+			elseif app.GetRelativeValue(o, "instanceID") then
+				headerType = "raid";
+			elseif app.GetRelativeValue(o, "isWorldDropCategory") or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+				headerType = "drop";
+			elseif o.parent.questID then
+				headerType = app.HeaderConstants.QUESTS;
+			elseif app.GetRelativeField(o.parent, "headerID", app.HeaderConstants.VENDORS) then
+				headerType = app.HeaderConstants.VENDORS;
+			elseif o.parent.npcID then
+				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
+			else
+				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
+				if headerType == true then	-- Seriously don't do this...
+					headerType = "drop";
+				end
+			end
+			local coords = app.GetRelativeValue(o, "coords");
+			if coords then
+				if not inst.coords then
+					inst.coords = { unpack(coords) };
+				else
+					for i,coord in ipairs(coords) do
+						tinsert(inst.coords, coord);
+					end
+				end
+			end
+		end
+	end
+
+	-- Determine the type of header to put the thing into.
+	if not headerType then headerType = "drop"; end
+	header = headers[headerType];
+	if not header then
+		if headerType == "holiday" then
+			header = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS);
+		elseif headerType == "raid" then
+			header = app.CreateRawText(GROUP_FINDER, {
+				icon = app.asset("Category_D&R"),
+			});
+		elseif headerType == "promo" then
+			header = app.CreateRawText(BATTLE_PET_SOURCE_8, {
+				icon = app.asset("Category_Promo"),
+			});
+		elseif headerType == "pvp" then
+			header = app.CreateRawText(PVP, {
+				icon = app.asset("Category_PvP"),
+			});
+		elseif headerType == "event" then
+			header = app.CreateRawText(BATTLE_PET_SOURCE_7, {
+				icon = app.asset("Category_Event"),
+			});
+		elseif headerType == "drop" then
+			header = app.CreateRawText(BATTLE_PET_SOURCE_1, {
+				icon = app.asset("Category_WorldDrops"),
+			});
+		elseif headerType == "crafted" then
+			header = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+				icon = app.asset("Category_Crafting"),
+			});
+		elseif type(headerType) == "number" then
+			header = app.CreateCustomHeader(headerType);
+		else
+			print("Unhandled Header Type", headerType);
+		end
+		if not headers[headerType] then
+			headers[headerType] = header;
+			tinsert(self.g, header);
+			header.parent = self;
+			header.g = {};
+		end
+	end
+	inst.parent = header;
+	inst.progress = nil;
+	inst.total = nil;
+	inst.g = nil;
+	tinsert(header.g, inst);
+	--app.MergeObject(header.g, inst);
+	return inst;
+end
+function app:BuildFlatSearchFilteredResponse(groups, filter, t)
+	if groups then
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				if filter(group) then
+					tinsert(t, app.CloneClassInstance(group));
+				elseif group.g then
+					app:BuildFlatSearchFilteredResponse(group.g, filter, t);
+				end
+			end
+		end
+	end
+end
+function app:BuildFlatSearchResponse(groups, field, value, t)
+	if groups then
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				local v = group[field];
+				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
+					tinsert(t, app.CloneClassInstance(group));
+				elseif group.g then
+					app:BuildFlatSearchResponse(group.g, field, value, t);
+				end
+			end
+		end
+	end
+end
+function app:BuildFlatSearchResponseForField(groups, field, t)
+	if groups then
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				if group[field] then
+					tinsert(t, app.CloneClassInstance(group));
+				elseif group.g then
+					app:BuildFlatSearchResponseForField(group.g, field, t);
+				end
+			end
+		end
+	end
+end
+function app:BuildSearchFilteredResponse(groups, filter)
+	if groups then
+		local t;
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				if filter(group) then
+					if not t then t = {}; end
+					tinsert(t, app.CloneClassInstance(group));
+				else
+					local response = app:BuildSearchFilteredResponse(group.g, filter);
+					if response then
+						if not t then t = {}; end
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
+					end
+				end
+			end
+		end
+		return t;
+	end
+end
+function app:BuildSearchResponseForField(groups, field)
+	if groups then
+		local t;
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				if group[field] then
+					if not t then t = {}; end
+					tinsert(t, app.CloneClassInstance(group));
+				else
+					local response = app:BuildSearchResponseForField(group.g, field);
+					if response then
+						if not t then t = {}; end
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
+					end
+				end
+			end
+		end
+		return t;
+	end
+end
 local Callback = app.CallbackHandlers.Callback
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local function OnCloseButtonPressed(self)
@@ -1685,6 +1927,7 @@ local FieldDefaults = {
 			data.window = self;
 		end
 	end,
+	BuildCategory = BuildCategory,
 	ExpandData = function(self, expanded)
 		ExpandGroupsRecursively(self.data, expanded, true);
 	end,
@@ -1742,7 +1985,6 @@ local ReservedFields = {
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 };
-local WindowDefinitions = {};
 
 -- Old Implementation
 -- Store the Custom Windows Update functions which are required by specific Windows
@@ -1794,7 +2036,7 @@ do
 end
 
 local function BuildWindow(suffix)
-	local settings = WindowDefinitions[suffix];-- or {};
+	local settings = app.WindowDefinitions[suffix];
 	if not settings then
 		local onUpdate = app:CustomWindowUpdate(suffix) or UpdateWindow;
 		settings = {
@@ -1803,7 +2045,9 @@ local function BuildWindow(suffix)
 				return onUpdate(self, ...);
 			end,
 		};
-		WindowDefinitions[suffix] = settings;
+		app.WindowDefinitions[suffix] = settings;
+	else
+		app.WindowDefinitions[suffix] = nil;
 	end
 	
 	-- Create the window instance.
@@ -2245,7 +2489,7 @@ end
 function app:CreateWindow(suffix, settings)
 	-- TODO: Properly implement or use the classic version of CreateWindow.
 	-- TODO: Make this not immediately generate the window
-	WindowDefinitions[suffix] = settings;
+	app.WindowDefinitions[suffix] = settings;
 	if settings then
 		if settings.Preload then
 			-- This window still needs to be loaded right away

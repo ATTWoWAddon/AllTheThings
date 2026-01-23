@@ -1411,6 +1411,14 @@ app.AddEventHandler("OnStartup", function()
 	
 	-- Mark Windows as loaded.
 	AllWindowSettingsLoaded = true;
+	for name, definition in pairs(app.WindowDefinitions) do
+		print(name);
+		local settings = AllWindowSettings[name];
+		if settings and settings.visible then
+			print(" SUPPOSED TO BE VISIBLE, IDIOT!");
+			app:GetWindow(name);
+		end
+	end
 end);
 
 -- Window UI Event Handlers
@@ -1779,9 +1787,13 @@ local ReservedFields = {
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 };
-local WindowDefinitions = {};
 local function BuildWindow(suffix)
-	local settings = WindowDefinitions[suffix] or {};
+	local settings = app.WindowDefinitions[suffix];
+	if not settings then
+		settings = {};
+	else
+		app.WindowDefinitions[suffix] = nil;
+	end
 	
 	-- Create the window instance.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
@@ -2093,7 +2105,6 @@ local function BuildWindow(suffix)
 		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
 		closeButton:SetSize(24, 24);
 	end
-	closeButton:SetFrameLevel(9999);
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
@@ -2222,7 +2233,7 @@ local function BuildWindow(suffix)
 end
 function app:CreateWindow(suffix, settings)
 	-- TODO: Make this not immediately generate the window
-	WindowDefinitions[suffix] = settings;
+	app.WindowDefinitions[suffix] = settings;
 	return app.Windows[suffix] or BuildWindow(suffix);
 end
 function app:GetWindow(suffix)

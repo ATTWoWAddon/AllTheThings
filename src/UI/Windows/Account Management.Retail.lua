@@ -361,240 +361,227 @@ end);
 end
 
 -- Implementation
-app.AddCustomWindowOnUpdate("Account Management", function(self)
-	if self:IsVisible() then
-		if not self.initialized then
-			self.initialized = true;
-			local C_DateAndTime_GetCalendarTimeFromEpoch = C_DateAndTime.GetCalendarTimeFromEpoch;
-			local function OnRightButtonDeleteCharacter(row, button)
-				if button == "RightButton" then
-					app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. L.CONFIRM_DELETE,
-					function()
-						ATTCharacterData[row.ref.datalink] = nil;
-						app:RecalculateAccountWideData();
-						self:Reset();
-					end);
-				end
-				return true;
+app.AddCustomWindowOnInit("Account Management", function(self)
+	local C_DateAndTime_GetCalendarTimeFromEpoch = C_DateAndTime.GetCalendarTimeFromEpoch;
+	local function OnRightButtonDeleteCharacter(row, button)
+		if button == "RightButton" then
+			app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. L.CONFIRM_DELETE,
+			function()
+				ATTCharacterData[row.ref.datalink] = nil;
+				app:RecalculateAccountWideData();
+				self:Reset();
+			end);
+		end
+		return true;
+	end
+	local function OnRightButtonDeleteLinkedAccount(row, button)
+		if button == "RightButton" then
+			app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. L.CONFIRM_DELETE,
+			function()
+				AllTheThingsAD.LinkedAccounts[row.ref.datalink] = nil;
+				app:SynchronizeWithPlayer(row.ref.datalink);
+				self:Reset();
+			end);
+		end
+		return true;
+	end
+	local function OnTooltipForCharacter(t, tooltipInfo)
+		local character = ATTCharacterData[t.unit];
+		if character then
+			-- last login info
+			local login = character.lastPlayed;
+			if login then
+				local d = C_DateAndTime_GetCalendarTimeFromEpoch(login * 1e6);
+				tinsert(tooltipInfo, {
+					left = PLAYED,
+					right = ("%d-%02d-%02d %02d:%02d"):format(d.year, d.month, d.monthDay, d.hour, d.minute),
+					r = 0.8, g = 0.8, b = 0.8
+				});
+			else
+				tinsert(tooltipInfo, {
+					left = PLAYED,
+					right = NEVER,
+					r = 0.8, g = 0.8, b = 0.8
+				});
 			end
-			local function OnRightButtonDeleteLinkedAccount(row, button)
-				if button == "RightButton" then
-					app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. L.CONFIRM_DELETE,
-					function()
-						AllTheThingsAD.LinkedAccounts[row.ref.datalink] = nil;
-						app:SynchronizeWithPlayer(row.ref.datalink);
-						self:Reset();
-					end);
-				end
-				return true;
-			end
-			local function OnTooltipForCharacter(t, tooltipInfo)
-				local character = ATTCharacterData[t.unit];
-				if character then
-					-- last login info
-					local login = character.lastPlayed;
-					if login then
-						local d = C_DateAndTime_GetCalendarTimeFromEpoch(login * 1e6);
-						tinsert(tooltipInfo, {
-							left = PLAYED,
-							right = ("%d-%02d-%02d %02d:%02d"):format(d.year, d.month, d.monthDay, d.hour, d.minute),
-							r = 0.8, g = 0.8, b = 0.8
-						});
-					else
-						tinsert(tooltipInfo, {
-							left = PLAYED,
-							right = NEVER,
-							r = 0.8, g = 0.8, b = 0.8
-						});
-					end
-					local total = 0;
-					for i,field in ipairs(app.CharacterSyncTables) do
-						local values = character[field];
-						if values then
-							local subtotal = 0;
-							for key,value in pairs(values) do
-								if value then
-									subtotal = subtotal + 1;
-								end
-							end
-							total = total + subtotal;
-							tinsert(tooltipInfo, {
-								left = field,
-								right = tostring(subtotal),
-								r = 1, g = 1, b = 1
-							});
+			local total = 0;
+			for i,field in ipairs(app.CharacterSyncTables) do
+				local values = character[field];
+				if values then
+					local subtotal = 0;
+					for key,value in pairs(values) do
+						if value then
+							subtotal = subtotal + 1;
 						end
 					end
-					tinsert(tooltipInfo, { left = " " });
+					total = total + subtotal;
 					tinsert(tooltipInfo, {
-						left = "Total",
-						right = tostring(total),
-						r = 0.8, g = 0.8, b = 1
-					});
-					tinsert(tooltipInfo, {
-						left = L.DELETE_CHARACTER,
-						r = 1, g = 0.8, b = 0.8
+						left = field,
+						right = tostring(subtotal),
+						r = 1, g = 1, b = 1
 					});
 				end
 			end
-			local function OnTooltipForLinkedAccount(t, tooltipInfo)
-				if t.unit then
-					tinsert(tooltipInfo, {
-						left = L.LINKED_ACCOUNT_TOOLTIP,
-						r = 0.8, g = 0.8, b = 1, wrap = true,
-					});
-					tinsert(tooltipInfo, {
-						left = L.DELETE_LINKED_CHARACTER,
-						r = 1, g = 0.8, b = 0.8
-					});
-				else
-					tinsert(tooltipInfo, {
-						left = L.DELETE_LINKED_ACCOUNT,
-						r = 1, g = 0.8, b = 0.8
-					});
-				end
-			end
-			
-			local syncHeader = app.CreateRawText(L.ACCOUNT_MANAGEMENT, {
-				icon = app.asset("WindowIcon_AccountManagement"),
-				description = L.ACCOUNT_MANAGEMENT_TOOLTIP,
-				visible = true,
-				back = 1,
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = app.UI.OnClick.IgnoreRightClick,
-				g = {
-					app.CreateRawText(L.ADD_LINKED_CHARACTER_ACCOUNT, {
-						icon = app.asset("Button_Add"),
-						description = L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP,
-						visible = true,
-						OnUpdate = app.AlwaysShowUpdate,
-						OnClick = function(row, button)
-							app:ShowPopupDialogWithEditBox(L.ADD_LINKED_POPUP, "", function(cmd)
-								if cmd and cmd ~= "" then
-									AllTheThingsAD.LinkedAccounts[cmd] = true;
-									self:Reset();
-								end
-							end);
-							return true;
-						end,
-					}),
-					-- Characters Section
-					app.CreateRawText(L.CHARACTERS, {
-						icon = 526421,
-						description = L.SYNC_CHARACTERS_TOOLTIP,
-						visible = true,
-						expanded = true,
-						['g'] = {},
-						OnClick = app.UI.OnClick.IgnoreRightClick,
-						OnUpdate = function(data)
-							local g = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if character then
-									tinsert(g, app.CreateUnit(guid, {
-										datalink = guid,
-										OnClick = OnRightButtonDeleteCharacter,
-										OnTooltip = OnTooltipForCharacter,
-										OnUpdate = app.AlwaysShowUpdate,
-										name = character.name,
-										lvl = character.lvl,
-										visible = true,
-									}));
-								end
-							end
-
-							if #g < 1 then
-								tinsert(g, app.CreateRawText(L.NO_CHARACTERS_FOUND, {
-									icon = 526421,
-									visible = true,
-									OnClick = app.UI.OnClick.IgnoreRightClick,
-									OnUpdate = app.AlwaysShowUpdate,
-								}));
-							else
-								data.SortType = "textAndLvl";
-							end
-							data.g = g;
-							AssignChildren(data);
-							return true;
-						end,
-					}),
-
-					-- Linked Accounts Section
-					app.CreateRawText(L.LINKED_ACCOUNTS, {
-						icon = 526421,
-						description = L.LINKED_ACCOUNTS_TOOLTIP,
-						visible = true,
-						['g'] = {},
-						OnClick = app.UI.OnClick.IgnoreRightClick,
-						OnUpdate = function(data)
-							data.g = {};
-							local charactersByName = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if character.name then
-									charactersByName[character.name] = character;
-								end
-							end
-
-							for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
-								local character = charactersByName[playerName];
-								if character then
-									tinsert(data.g, app.CreateUnit(playerName, {
-										datalink = playerName,
-										OnClick = OnRightButtonDeleteLinkedAccount,
-										OnTooltip = OnTooltipForLinkedAccount,
-										OnUpdate = app.AlwaysShowUpdate,
-										visible = true,
-									}));
-								elseif playerName:find("#") then
-									-- Garbage click handler for unsync'd account data.
-									tinsert(data.g, app.CreateRawText(playerName, {
-										datalink = playerName,
-										icon = 526421,
-										OnClick = OnRightButtonDeleteLinkedAccount,
-										OnTooltip = OnTooltipForLinkedAccount,
-										OnUpdate = app.AlwaysShowUpdate,
-										visible = true,
-									}));
-								else
-									-- Garbage click handler for unsync'd character data.
-									tinsert(data.g, app.CreateRawText(playerName, {
-										datalink = playerName,
-										icon = 374212,
-										OnClick = OnRightButtonDeleteLinkedAccount,
-										OnTooltip = OnTooltipForLinkedAccount,
-										OnUpdate = app.AlwaysShowUpdate,
-										visible = true,
-									}));
-								end
-							end
-
-							if #data.g < 1 then
-								tinsert(data.g, app.CreateRawText(L.NO_LINKED_ACCOUNTS, {
-									icon = 526421,
-									visible = true,
-									OnClick = app.UI.OnClick.IgnoreRightClick,
-									OnUpdate = app.AlwaysShowUpdate,
-								}));
-							end
-							AssignChildren(data);
-							return true;
-						end,
-					}),
-				}
+			tinsert(tooltipInfo, { left = " " });
+			tinsert(tooltipInfo, {
+				left = "Total",
+				right = tostring(total),
+				r = 0.8, g = 0.8, b = 1
 			});
-
-			self.Reset = function()
-				self:SetData(syncHeader);
-				self:Update(true);
-			end
-			self:Reset();
+			tinsert(tooltipInfo, {
+				left = L.DELETE_CHARACTER,
+				r = 1, g = 0.8, b = 0.8
+			});
 		end
-
-		-- Update the groups without forcing Debug Mode.
-		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		self:AssignChildren();
-		for i,g in ipairs(self.data.g) do
-			if g.OnUpdate then g.OnUpdate(g, self); end
-		end
-		self:DefaultUpdate(true);
 	end
+	local function OnTooltipForLinkedAccount(t, tooltipInfo)
+		if t.unit then
+			tinsert(tooltipInfo, {
+				left = L.LINKED_ACCOUNT_TOOLTIP,
+				r = 0.8, g = 0.8, b = 1, wrap = true,
+			});
+			tinsert(tooltipInfo, {
+				left = L.DELETE_LINKED_CHARACTER,
+				r = 1, g = 0.8, b = 0.8
+			});
+		else
+			tinsert(tooltipInfo, {
+				left = L.DELETE_LINKED_ACCOUNT,
+				r = 1, g = 0.8, b = 0.8
+			});
+		end
+	end
+	
+	local syncHeader = app.CreateRawText(L.ACCOUNT_MANAGEMENT, {
+		icon = app.asset("WindowIcon_AccountManagement"),
+		description = L.ACCOUNT_MANAGEMENT_TOOLTIP,
+		visible = true,
+		back = 1,
+		OnUpdate = app.AlwaysShowUpdate,
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+		g = {
+			app.CreateRawText(L.ADD_LINKED_CHARACTER_ACCOUNT, {
+				icon = app.asset("Button_Add"),
+				description = L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP,
+				visible = true,
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = function(row, button)
+					app:ShowPopupDialogWithEditBox(L.ADD_LINKED_POPUP, "", function(cmd)
+						if cmd and cmd ~= "" then
+							AllTheThingsAD.LinkedAccounts[cmd] = true;
+							self:Reset();
+						end
+					end);
+					return true;
+				end,
+			}),
+			-- Characters Section
+			app.CreateRawText(L.CHARACTERS, {
+				icon = 526421,
+				description = L.SYNC_CHARACTERS_TOOLTIP,
+				visible = true,
+				expanded = true,
+				['g'] = {},
+				OnClick = app.UI.OnClick.IgnoreRightClick,
+				OnUpdate = function(data)
+					local g = {};
+					for guid,character in pairs(ATTCharacterData) do
+						if character then
+							tinsert(g, app.CreateUnit(guid, {
+								datalink = guid,
+								OnClick = OnRightButtonDeleteCharacter,
+								OnTooltip = OnTooltipForCharacter,
+								OnUpdate = app.AlwaysShowUpdate,
+								name = character.name,
+								lvl = character.lvl,
+								visible = true,
+							}));
+						end
+					end
+
+					if #g < 1 then
+						tinsert(g, app.CreateRawText(L.NO_CHARACTERS_FOUND, {
+							icon = 526421,
+							visible = true,
+							OnClick = app.UI.OnClick.IgnoreRightClick,
+							OnUpdate = app.AlwaysShowUpdate,
+						}));
+					else
+						data.SortType = "textAndLvl";
+					end
+					data.g = g;
+					AssignChildren(data);
+					return true;
+				end,
+			}),
+
+			-- Linked Accounts Section
+			app.CreateRawText(L.LINKED_ACCOUNTS, {
+				icon = 526421,
+				description = L.LINKED_ACCOUNTS_TOOLTIP,
+				visible = true,
+				['g'] = {},
+				OnClick = app.UI.OnClick.IgnoreRightClick,
+				OnUpdate = function(data)
+					data.g = {};
+					local charactersByName = {};
+					for guid,character in pairs(ATTCharacterData) do
+						if character.name then
+							charactersByName[character.name] = character;
+						end
+					end
+
+					for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
+						local character = charactersByName[playerName];
+						if character then
+							tinsert(data.g, app.CreateUnit(playerName, {
+								datalink = playerName,
+								OnClick = OnRightButtonDeleteLinkedAccount,
+								OnTooltip = OnTooltipForLinkedAccount,
+								OnUpdate = app.AlwaysShowUpdate,
+								visible = true,
+							}));
+						elseif playerName:find("#") then
+							-- Garbage click handler for unsync'd account data.
+							tinsert(data.g, app.CreateRawText(playerName, {
+								datalink = playerName,
+								icon = 526421,
+								OnClick = OnRightButtonDeleteLinkedAccount,
+								OnTooltip = OnTooltipForLinkedAccount,
+								OnUpdate = app.AlwaysShowUpdate,
+								visible = true,
+							}));
+						else
+							-- Garbage click handler for unsync'd character data.
+							tinsert(data.g, app.CreateRawText(playerName, {
+								datalink = playerName,
+								icon = 374212,
+								OnClick = OnRightButtonDeleteLinkedAccount,
+								OnTooltip = OnTooltipForLinkedAccount,
+								OnUpdate = app.AlwaysShowUpdate,
+								visible = true,
+							}));
+						end
+					end
+
+					if #data.g < 1 then
+						tinsert(data.g, app.CreateRawText(L.NO_LINKED_ACCOUNTS, {
+							icon = 526421,
+							visible = true,
+							OnClick = app.UI.OnClick.IgnoreRightClick,
+							OnUpdate = app.AlwaysShowUpdate,
+						}));
+					end
+					AssignChildren(data);
+					return true;
+				end,
+			}),
+		}
+	});
+
+	self.Reset = function()
+		self:SetData(syncHeader);
+		self:Update(true);
+	end
+	self:Reset();
 end)

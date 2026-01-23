@@ -1,17 +1,17 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 	<Script file="Prime.lua"/>
-	<!--
-	Copied from the Windows.xml file, uncomment one at a time once they can be tested in Retail
 	<Script file="Achievements.lua"/>
+	<!--
 	<Script file="Account Management.lua"/>
 	<Script file="Added With Patch.lua"/>
-	<Script file="Attunements.lua"/>
 	-->
+	<Script file="Attunements.lua"/>
 	<Script file="Auctions.lua"/>
-	<!--
 	<Script file="Battle Pets.lua"/>
+	<!--
 	<Script file="Bounty.lua"/>
+	-->
 	<Script file="Breadcrumbs.lua"/>
 	<Script file="Class Specific Things.lua"/>
 	<Script file="Collected Sources.lua"/>
@@ -21,48 +21,60 @@
 	<Script file="Filter Specific Things.lua"/>
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
+	<!--
 	<Script file="Future Unobtainables.lua"/>
+	-->
 	<Script file="Heirlooms.lua"/>
+	<!--
 	<Script file="Hidden Achievement Triggers.lua"/>
 	<Script file="Hidden Quest Triggers.lua"/>
+	-->
 	<Script file="Illusions.lua"/>
+	<!--
 	<Script file="Item Filter.lua"/>
+	-->
 	<Script file="Local List.lua"/>
 	<Script file="Locked.lua"/>
+	<!--
 	<Script file="Maps.lua"/>
 	<Script file="Mini List.lua"/>
+	-->
 	<Script file="Missing Quests.lua"/>
 	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
+	<!--
 	<Script file="Never Implemented.lua"/>
 	<Script file="New With Patch.lua"/>
+	-->
 	<Script file="Objects.lua"/>
 	<Script file="Pet Battles.lua"/>
 	<Script file="Professions.lua"/>
 	<Script file="Quests.lua"/>
 	<Script file="Race Specific Things.lua"/>
+	<!--
 	<Script file="Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
+	-->
 	<Script file="Removed From Game.lua"/>
 	<Script file="Removed With Patch Drops.lua"/>
 	<Script file="Season of Discovery.lua"/>
 	<Script file="Soft Reserves.lua"/>
 	<Script file="Titles.lua"/>
 	<Script file="Toys.lua"/>
+	<!-- 
 	<Script file="Tradeskills.lua"/>
 	<Script file="Unsorted.lua"/>
 	-->
 	<!-- CRIEVE NOTE: Windows that have identical or nearly identical code to an existing Window will be named WINDOW.Retail.lua and should be revisited at a later date for consolidation once logic functions the same (or close to it) Ideally, Retail and Classic can use all the same windows after this process is done and we can delete this file and make sure Windows.xml has each of the windows included. Windows that we would like to move to external addons at that point can also be changes to addon extensions! -->
-	<Script file="Prime.Retail.lua"/>
 	<Script file="Account Management.Retail.lua"/>
 	<Script file="Added With Patch.Retail.lua"/>
 	<Script file="Bounty.Retail.lua"/>
 	<Script file="Future Unobtainables.Retail.lua"/>
 	<Script file="Import.lua"/>
+	<Script file="Item Filter.Retail.lua"/>
 	<Script file="List.lua"/>
 	<Script file="Maps.Retail.lua"/>
 	<Script file="Mini List.Retail.lua"/>
-	<Script file="Item Filter.Retail.lua"/>
 	<Script file="New With Patch.Retail.lua"/>
 	<Script file="Raid Assistant.Retail.lua"/>
 	<Script file="Random.Retail.lua"/>

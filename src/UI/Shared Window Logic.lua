@@ -376,4 +376,5 @@ else
 end
 
 -- Window Creation
+app.WindowDefinitions = {};
 app.Windows = {};
