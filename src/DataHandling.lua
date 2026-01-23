@@ -325,8 +325,8 @@ end
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group, forceShow)
 	group.TLUG = GetTimePreciseSec()
-	group.total = nil
-	group.progress = nil
+	group.progress = 0;
+	group.total = 0;
 	group.costTotal = nil
 	group.upgradeTotal = nil
 	-- app.PrintDebug("TLUG",group.hash)
@@ -336,6 +336,8 @@ local function TopLevelUpdateGroup(group, forceShow)
 		-- app.PrintDebug("Root Group",group.text)
 		group.forceShow = true
 	end
+	--[[
+	-- CRIEVE WAS CONFUSED
 	if group.OnUpdate then
 		if not group:OnUpdate() then
 			UpdateGroup(group)
@@ -346,6 +348,10 @@ local function TopLevelUpdateGroup(group, forceShow)
 		end
 	else
 		UpdateGroup(group)
+	end
+	]]--
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
 	end
 	-- app.PrintDebugPrior("TLUG",group.hash,group.visible)
 end
