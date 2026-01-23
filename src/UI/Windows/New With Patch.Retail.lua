@@ -57,7 +57,7 @@ app.AddCustomWindowOnUpdate("NWP", function(self, force)
 		end
 		local function CreateNWPWindow()
 			-- Fetch search results
-			local searchResults = app:BuildSearchResponse("awp", app.GameBuildVersion)
+			local searchResults = app:BuildSearchResponseRetailStyle("awp", app.GameBuildVersion)
 
 			-- Create the dynamic category
 			local dynamicCategory = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {

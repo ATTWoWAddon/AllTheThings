@@ -30,7 +30,7 @@ local OnUpdate_CheckSymlinks = function(self, force)
 				visible = true,
 			}
 
-			local results = app:BuildSearchResponse("sym", nil, {sym=false});
+			local results = app:BuildSearchResponseRetailStyle("sym", nil, {sym=false});
 			app.NestObjects(data, results, true)
 			self:SetData(data)
 			self:AssignChildren()

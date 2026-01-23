@@ -459,7 +459,7 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(field, value, drop, criteria)
+function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)
 	return app:BuildTargettedSearchResponse(app:GetDataCache(), field, value, drop, criteria)
 end
 -- Collects a cloned hierarchy of groups within the given target 'groups' which have the field and/or value within the given field. Specify 'clear' if found groups which match

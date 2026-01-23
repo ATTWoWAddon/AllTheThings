@@ -12,7 +12,7 @@ app.AddCustomWindowOnUpdate("Bounty", function(self, force, got)
 		self.initialized = true;
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 			["visible"] = true,
-			["g"] = app:BuildSearchResponse("isBounty"),
+			["g"] = app:BuildSearchResponseRetailStyle("isBounty"),
 		}))
 		self:AssignChildren();
 		self.ExpandInfo = { Expand = true, Manual = true };

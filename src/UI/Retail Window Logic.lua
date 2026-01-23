@@ -1684,6 +1684,29 @@ local function BuildCategory(self, headers, searchResults, inst)
 	--app.MergeObject(header.g, inst);
 	return inst;
 end
+function app:BuildSearchResponse(groups, field, value)
+	if groups then
+		local t;
+		for i,group in ipairs(groups) do
+			if not group.IgnoreBuildRequests then
+				local v = group[field];
+				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
+					if not t then t = {}; end
+					tinsert(t, app.CloneClassInstance(group));
+				else
+					local response = app:BuildSearchResponse(group.g, field, value);
+					if response then
+						if not t then t = {}; end
+						local clone = app.CloneClassInstance(group, true);
+						clone.g = response;
+						tinsert(t, clone);
+					end
+				end
+			end
+		end
+		return t;
+	end
+end
 function app:BuildFlatSearchFilteredResponse(groups, filter, t)
 	if groups then
 		for i,group in ipairs(groups) do

@@ -141,7 +141,7 @@ app.AddCustomWindowOnUpdate("Added With Patch", function(self, force)	-- TODO: C
 				local patchHeader = app.CreateExpansion(formattedPatch, {g={}})
 
 				-- Fetch search results
-				local searchResults = app:BuildSearchResponse("awp", patch)
+				local searchResults = app:BuildSearchResponseRetailStyle("awp", patch)
 				NestObjects(patchHeader, searchResults)
 
 				-- Create the dynamic category

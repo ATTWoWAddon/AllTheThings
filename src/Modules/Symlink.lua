@@ -165,7 +165,7 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
 	selectprofession = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponse("requireSkill", requireSkill);
+		local search = app:BuildSearchResponseRetailStyle("requireSkill", requireSkill);
 		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)

@@ -14,7 +14,7 @@ app.AddCustomWindowOnUpdate("Future Unobtainables", function(self, force)
 			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			["visible"] = true,
 			["back"] = 1,
-			["g"] = app:BuildSearchResponse("rwp"),
+			["g"] = app:BuildSearchResponseRetailStyle("rwp"),
 		}))
 		self:AssignChildren();
 		self.ExpandInfo = { Expand = true, Manual = true };

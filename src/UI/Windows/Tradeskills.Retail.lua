@@ -347,10 +347,10 @@ app:CreateWindow("Tradeskills", {
 				-- app.PrintDebug("UpdateData",self.lastTradeSkillID)
 				data = app.CreateProfession(self.lastTradeSkillID);
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-				app.NestObjects(data, app:BuildSearchResponse("requireSkill", data.requireSkill, nil, criteria));
+				app.NestObjects(data, app:BuildSearchResponseRetailStyle("requireSkill", data.requireSkill, nil, criteria));
 				-- Profession headers use 'professionID' and don't actually convey a requirement on knowing the skill
 				-- but in a Profession window for that skill it's nice to see what that skill can craft...
-				app.NestObjects(data, app:BuildSearchResponse("professionID", data.requireSkill));
+				app.NestObjects(data, app:BuildSearchResponseRetailStyle("professionID", data.requireSkill));
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;

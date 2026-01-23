@@ -489,8 +489,8 @@ function ATTtestsort()
 	local sort1 = app.SortDefaults.Global
 	local sort2 = app.SortDefaults.Accessibility
 
-	local rawdatasearch1 = app:BuildSearchResponse("u", 2)
-	local rawdatasearch2 = app:BuildSearchResponse("u", 2)
+	local rawdatasearch1 = app:BuildSearchResponseRetailStyle("u", 2)
+	local rawdatasearch2 = app:BuildSearchResponseRetailStyle("u", 2)
 
 	local function dosorts()
 		app.PrintDebug("doSorts")
