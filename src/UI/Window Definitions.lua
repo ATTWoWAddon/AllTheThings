@@ -2962,9 +2962,27 @@ end
 
 if app.IsClassic then
 	OnInitForPopout = function(self, group)
-		if group.questID or group.sourceQuests then
-			local mainQuest = app.CloneClassInstance(group);
-			if group.parent then mainQuest.sourceParent = group.parent; end
+		local questID = group.questID;
+		if questID or group.sourceQuests then
+			-- Check to see if Source Quests are listed elsewhere.
+			local mainQuest = group;
+			if not group.sourceQuests then
+				local searchResults = app.SearchForField("questID", questID);
+				if #searchResults > 1 then
+					for i=1,#searchResults,1 do
+						local searchResult = searchResults[i];
+						if searchResult.questID == questID and searchResult.sourceQuests then
+							mainQuest = searchResult;
+							break;
+						end
+					end
+				end
+			end
+			
+			local sourceParent = mainQuest.parent;
+			mainQuest = app.CloneClassInstance(mainQuest)
+			if sourceParent then mainQuest.sourceParent = sourceParent; end
+			if questID then mainQuest.collectible = true; end
 			if mainQuest.sym then
 				mainQuest.collectible = true;
 				mainQuest.visible = true;
@@ -2985,29 +3003,9 @@ if app.IsClassic then
 					end
 				end
 			end
-
-			if questID then mainQuest.collectible = true; end
-			local g = { mainQuest };
-
-			-- Check to see if Source Quests are listed elsewhere.
-			if questID and not group.sourceQuests then
-				local searchResults = app.SearchForField("questID", questID);
-				if #searchResults > 1 then
-					for i=1,#searchResults,1 do
-						local searchResult = searchResults[i];
-						if searchResult.questID == questID and searchResult.sourceQuests then
-							searchResult = app.CloneClassInstance(searchResult);
-							searchResult.collectible = true;
-							searchResult.g = g;
-							mainQuest = searchResult;
-							g = { mainQuest };
-							break;
-						end
-					end
-				end
-			end
-
+			
 			-- Show Quest Prereqs
+			local g = { mainQuest };
 			if mainQuest.sourceQuests then
 				local breakafter = 0;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests, nil, nil, nil;
@@ -3057,23 +3055,22 @@ if app.IsClassic then
 						end
 
 						-- If the quest was valid, attach it.
-						if sourceQuest then tinsert(prereqs, sourceQuest); end
+						if sourceQuest then
+							print(sourceQuest.key, sourceQuest.text);
+							prereqs[#prereqs + 1] = sourceQuest;
+						end
 					end
 
 					-- Convert the subSourceQuests table into an array
 					sourceQuests = {};
 					if #prereqs > 0 then
 						for sourceQuestID,i in pairs(subSourceQuests) do
-							tinsert(sourceQuests, tonumber(sourceQuestID));
+							sourceQuests[#sourceQuests + 1] = tonumber(sourceQuestID);
 						end
-						tinsert(prereqs, app.CreateRawText("Upon Completion", {
-							["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
-							["icon"] = 135932,
-							["visible"] = true,
-							["expanded"] = true,
-							["hideText"] = true,
+						prereqs[#prereqs + 1] = {
+							["clear"] = true,
 							["g"] = g,
-						}));
+						};
 						g = prereqs;
 						breakafter = breakafter + 1;
 						if breakafter >= 100 then
@@ -3117,7 +3114,7 @@ if app.IsClassic then
 				repeat
 					local n = #prereqs;
 					local lastprereq = prereqs[n];
-					if lastprereq.text == "Upon Completion" and n > 1 then
+					if lastprereq.clear then
 						tremove(prereqs, n);
 						local g = prereqs[n-1].g;
 						if not g then
@@ -3307,6 +3304,9 @@ if app.IsClassic then
 				if not self.data.g then self.data.g = {}; end
 				app.MergeObject(self.data.g, relatedThingsGroup);
 			end
+		end
+		if not self.data.expanded then
+			ExpandGroupsRecursively(self.data, true, true);
 		end
 		return true;
 	end
