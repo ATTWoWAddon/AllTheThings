@@ -27,9 +27,9 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_12_0_0 },
 		["groups"] = {
 			-- "Pre Season"
-			euONLY(i(264241, {	-- Crimson Bow Tie (COSMETIC!)
+			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
 				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\nThe promotion runs between January 20th through May 5th, 2026.",
-			})),
+			}),
 			-- Season 1
 
 			-- Season 2
