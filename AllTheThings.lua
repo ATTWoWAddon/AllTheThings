@@ -1373,7 +1373,7 @@ function app:GetDataCache()
 	if app.Categories.TradingPost then
 		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
 			icon = app.asset("Category_TradingPost"),
-			app.Categories.TradingPost
+			g = app.Categories.TradingPost
 		}));
 	end
 
