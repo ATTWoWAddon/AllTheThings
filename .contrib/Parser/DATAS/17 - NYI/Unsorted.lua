@@ -3420,54 +3420,7 @@ root(ROOTS.Unsorted, {
 			i(259459),	-- Recipe: Potion of Recklessness
 
 			-- Prey
-			i(259909),	-- Preyseeker's Refined Shawl \\ [DNT] 12.0 Prey - Accessory - CLOAK - A
-			i(259910),	-- Preyseeker's Sleek Capelet \\ [DNT] 12.0 Prey - Accessory - CLOAK - B
-			i(259911),	-- Preyseeker's Band \\ [DNT] 12.0 Prey - Accessory - FINGER - A
-			i(259912),	-- Preyseeker's Signet \\ [DNT] 12.0 Prey - Accessory - FINGER - B
-			i(259913),	-- Preyseeker's Ring \\ [DNT] 12.0 Prey - Accessory - FINGER - C
-			i(259914),	-- Preyseeker's Circle \\ [DNT] 12.0 Prey - Accessory - FINGER - D
-			i(259916),	-- Preyseeker's Choker \\ [DNT] 12.0 Prey - Accessory - NECK - B
-			i(259917),	-- Preyseeker's Refined Vestments \\ [DNT] 12.0 Prey - Armor - Cloth CHEST - A
-			i(259918),	-- Preyseeker's Refined Slippers \\ [DNT] 12.0 Prey - Armor - Cloth FEET - A
-			i(259919),	-- Preyseeker's Refined Gloves \\ [DNT] 12.0 Prey - Armor - Cloth HAND - A
-			i(259920),	-- Preyseeker's Refined Crown \\ [DNT] 12.0 Prey - Armor - Cloth HEAD - A
-			i(259921),	-- Preyseeker's Refined Tights \\ [DNT] 12.0 Prey - Armor - Cloth LEGS - A
-			i(259922),	-- Preyseeker's Refined Epaulet \\ [DNT] 12.0 Prey - Armor - Cloth SHOULDER - A
-			i(259923),	-- Preyseeker's Refined Cord \\ [DNT] 12.0 Prey - Armor - Cloth WAIST - A
-			i(259924),	-- Preyseeker's Refined Cuffs \\ [DNT] 12.0 Prey - Armor - Cloth WRIST - A
-			i(259933),	-- Preyseeker's Rugged Haubergeon \\ [DNT] 12.0 Prey - Armor - Mail CHEST - A
-			i(259934),	-- Preyseeker's Rugged Sabatons \\ [DNT] 12.0 Prey - Armor - Mail FEET - A
-			i(259935),	-- Preyseeker's Rugged Grips \\ [DNT] 12.0 Prey - Armor - Mail HAND - A
-			i(259936),	-- Preyseeker's Rugged Plume \\ [DNT] 12.0 Prey - Armor - Mail HEAD - A
-			i(259937),	-- Preyseeker's Rugged Legguards \\ [DNT] 12.0 Prey - Armor - Mail LEGS - A
-			i(259938),	-- Preyseeker's Rugged Shoulderguards \\ [DNT] 12.0 Prey - Armor - Mail SHOULDER - A
-			i(259939),	-- Preyseeker's Rugged Clasp \\ [DNT] 12.0 Prey - Armor - Mail WAIST - A
-			i(259940),	-- Preyseeker's Rugged Bindings \\ [DNT] 12.0 Prey - Armor - Mail WRIST - A
-			i(259941),	-- Preyseeker's Polished Brigandine \\ [DNT] 12.0 Prey - Armor - Plate CHEST - A
-			i(259942),	-- Preyseeker's Polished Greatboots \\ [DNT] 12.0 Prey - Armor - Plate FEET - A
-			i(259943),	-- Preyseeker's Polished Handguards \\ [DNT] 12.0 Prey - Armor - Plate HAND - A
-			i(259944),	-- Preyseeker's Polished Helmet \\ [DNT] 12.0 Prey - Armor - Plate HEAD - A
-			i(259945),	-- Preyseeker's Polished Tassets \\ [DNT] 12.0 Prey - Armor - Plate LEGS - A
-			i(259946),	-- Preyseeker's Polished Pauldrons \\ [DNT] 12.0 Prey - Armor - Plate SHOULDER - A
-			i(259947),	-- Preyseeker's Polished Greatbelt \\ [DNT] 12.0 Prey - Armor - Plate WAIST - A
-			i(259948),	-- Preyseeker's Polished Vambraces \\ [DNT] 12.0 Prey - Armor - Plate WRIST - A
-			i(259950),	-- Preyseeker's Kukri \\ [DNT] 12.0 Prey - Weapon - 1H Dagger AGI - A
-			i(259951),	-- Preyseeker's Shiv \\ [DNT] 12.0 Prey - Weapon - 1H Dagger AGI - B
-			i(259952),	-- Preyseeker's Cudgel \\ [DNT] 12.0 Prey - Weapon - 1H Mace AGI - A
-			i(259953),	-- Preyseeker's Scepter \\ [DNT] 12.0 Prey - Weapon - 1H Mace INT - A
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
-			i(259955),	-- Preyseeker's Hammer \\ [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
-			i(259956),	-- Preyseeker's Scimitar \\ [DNT] 12.0 Prey - Weapon - 1H Sword AGI - A
-			i(259957),	-- Preyseeker's Ritual Blade \\ [DNT] 12.0 Prey - Weapon - 1H Sword INT - A
-			i(259958),	-- Preyseeker's Longsword \\ [DNT] 12.0 Prey - Weapon - 1H Sword STR - A
-			i(259959),	-- Preyseeker's Warglaive \\ [DNT] 12.0 Prey - Weapon - 1H Warglaive - A
-			i(259960),	-- Preyseeker's Longbow \\ [DNT] 12.0 Prey - Weapon - 2H Bow AGI - A
-			i(259961),	-- Preyseeker's Spear \\ [DNT] 12.0 Prey - Weapon - 2H Polearm AGI - A
-			i(259962),	-- Preyseeker's Staff \\ [DNT] 12.0 Prey - Weapon - 2H Staff AGI - A
-			i(259963),	-- Preyseeker's Spire \\ [DNT] 12.0 Prey - Weapon - 2H Staff INT - A
-			i(259964),	-- Preyseeker's Falchion \\ [DNT] 12.0 Prey - Weapon - 2H Sword STR - A
-			i(259965),	-- Preyseeker's Lantern \\ [DNT] 12.0 Prey - Weapon - Offhand INT - A
-			i(259966),	-- Preyseeker's Tower Shield \\ [DNT] 12.0 Prey - Weapon - Shield STRINT - A
 
 			-- Pet
 			i(259991),	-- Lil' Preyseeker
@@ -4813,39 +4766,9 @@ root(ROOTS.Unsorted, {
 			i(264253),	-- Galactic Void-Scarred Barricade
 			i(264345),	-- Galactic Commander's Orb
 			i(264482),	-- Void Elf Torch
-			i(265681),	-- Preyseeker's Magister Effigy \\ Preyseeker's Magister Trophy
-			i(265682),	-- Preyseeker's Tinker Effigy \\ Preyseeker's Tinker Trophy
-			i(265683),	-- Preyseeker's Ethereal Effigy \\ Preyseeker's Ethereal Trophy
-			i(265684),	-- Preyseeker's Breaker Effigy \\ Preyseeker's Breaker Trophy
-			i(265685),	-- Preyseeker's Amani Effigy \\ Preyseeker's Amani Trophy
-			i(265686),	-- Preyseeker's Rutaani Effigy \\ Preyseeker's Rutaani Trophy
-			i(265687),	-- Preyseeker's Vindicator Effigy \\ Preyseeker's Vindicator Trophy
-			i(265688),	-- Preyseeker's Consul Effigy \\ Preyseeker's Consul Trophy
-			i(265689),	-- Preyseeker's Executor Effigy \\ Preyseeker's Executor Trophy
-			i(265690),	-- Preyseeker's Knight-Errant Effigy \\ Preyseeker's Knight-Errant Trophy
-			i(265691),	-- Preyseeker's Wretched Effigy \\ Preyseeker's Wretched Trophy
-			i(265692),	-- Preyseeker's Thornspeaker Effigy \\ Preyseeker's Thornspeaker Trophy
-			i(265694),	-- Preyseeker's Twilight Effigy \\ Preyseeker's Twilight Trophy
-			i(265696),	-- Preyseeker's Magister Bust
-			i(265697),	-- Preyseeker's Tinker Bust
-			i(265698),	-- Preyseeker's Ethereal Bust
-			i(265699),	-- Preyseeker's Breaker Bust
-			i(265700),	-- Preyseeker's Amani Bust
-			i(265701),	-- Preyseeker's Rutaani Bust
-			i(265702),	-- Preyseeker's Vindicator Bust
-			i(265703),	-- Preyseeker's Consul Bust
-			i(265704),	-- Preyseeker's Executor Bust
-			i(265705),	-- Preyseeker's Knight-Errant Bust
-			i(265706),	-- Preyseeker's Wretched Bust
-			i(265707),	-- Preyseeker's Thornspeaker Bust
-			i(265708),	-- Preyseeker's Twilight Bust
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
 			i(265794),	-- Preyseeker's Plinth
 			i(265795),	-- Preyseeker's Ornate Plinth
-			i(265796),	-- Preyseeker's Ren'dorei Effigy \\ Preyseeker's Ren'dorei Trophy
-			i(265797),	-- Preyseeker's Farstrider Effigy \\ Preyseeker's Farstrider Trophy
-			i(265798),	-- Preyseeker's Ren'dorei Bust
-			i(265799),	-- Preyseeker's Farstrider Bust
 			i(265995),	-- Quel'Thalas Adventurer's Cache
 			i(265997),	-- Blood Knight Champion's Tabard
 			i(266075),	-- Harpoon of Extirpation
@@ -4908,7 +4831,6 @@ root(ROOTS.Unsorted, {
 			i(245290),	-- Long Silvermoon Table
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
-			i(257193),	-- Preyseeker's Nightmare
 			i(260603),	-- Frail and Flexible Wing
 			i(260605),	-- Shattered Spear Tip
 			i(260611),	-- Large Bestial Scale

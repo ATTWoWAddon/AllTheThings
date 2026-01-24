@@ -261,16 +261,6 @@ ach(62126),	-- Treasures of Voidstorm
 12.0.0.64339
 ach(62130),	-- The Ultimate Predator
 ach(62133),	-- Thrill of the Chase
-ach(62134),	-- The Deadliest of Prey
-ach(62135),	-- Now It's A Party
-ach(62136),	-- I'm Good At What I Do
-ach(62137),	-- I'm Not Trapped In Here With You
-ach(62138),	-- You're Trapped In Here With Me
-ach(62139),	-- Midnight Hunter
-ach(62140),	-- Kitchen Nightmare
-ach(62141),	-- Look, I'm Just Trying To Fish Here
-ach(62142),	-- I Didn't Hear No Bell
-ach(62143),	-- Trapped In The Middle With You
 ach(62145),	-- Dungeon Unlock: Windrunner Spire
 ach(62146),	-- Dungeon Unlock: Murder Row
 ach(62147),	-- Dungeon Unlock: Den of Nalorakk
@@ -312,36 +302,6 @@ ach(62219),	-- Abyss Anglers: No Sea Can Hold Me
 ach(62220),	-- Abyss Anglers: Proper Procedure
 ach(62221),	-- Abyss Anglers: Fresh Depth Tech
 12.0.0.64499
-ach(62144),	-- Prey: Mad Magisters (Hard)
-ach(62153),	-- Prey: Insane Inventors (Hard)
-ach(62154),	-- Prey: A Different Kind of Void (Hard)
-ach(62155),	-- Prey: Ethereal Assassins (Hard)
-ach(62156),	-- Prey: Anger Management (Hard)
-ach(62157),	-- Prey: Sadistic Shamans (Hard)
-ach(62158),	-- Prey: The Fallen Farstriders (Hard)
-ach(62159),	-- Prey: Bloody Green Thumbs (Hard)
-ach(62160),	-- Prey: Blinded By The Light (Hard)
-ach(62161),	-- Prey: Outsmarting the Schemers (Hard)
-ach(62162),	-- Prey: Dominating the Void (Hard)
-ach(62163),	-- Prey: Chasing Death (Hard)
-ach(62164),	-- Prey: No Rest for the Wretched (Hard)
-ach(62165),	-- Prey: A Thorn in the Side (Hard)
-ach(62166),	-- Prey: Breaking the Blade (Hard)
-ach(62167),	-- Prey: Mad Magisters (Nightmare)
-ach(62168),	-- Prey: Insane Inventors (Nightmare)
-ach(62169),	-- Prey: A Different Kind of Void (Nightmare)
-ach(62173),	-- Prey: Ethereal Assassins (Nightmare)
-ach(62174),	-- Prey: Anger Management (Nightmare)
-ach(62175),	-- Prey: Sadistic Shamans (Nightmare)
-ach(62176),	-- Prey: The Fallen Farstriders (Nightmare)
-ach(62177),	-- Prey: Bloody Green Thumbs (Nightmare)
-ach(62178),	-- Prey: Blinded By The Light (Nightmare)
-ach(62179),	-- Prey: Outsmarting the Schemers (Nightmare)
-ach(62180),	-- Prey: Dominating the Void (Nightmare)
-ach(62181),	-- Prey: Chasing Death (Nightmare)
-ach(62182),	-- Prey: No Rest for the Wretched (Nightmare)
-ach(62183),	-- Prey: A Thorn in the Side (Nightmare)
-ach(62184),	-- Prey: Breaking the Blade (Nightmare) \\ Prey: Breaking the Blade Nightmare)
 ach(62222),	-- Abyss Anglers: The Amani Way
 ach(62223),	-- Alchemy-on-Demand
 12.0.0.64741

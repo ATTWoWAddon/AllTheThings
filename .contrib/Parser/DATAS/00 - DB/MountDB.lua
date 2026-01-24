@@ -2306,6 +2306,7 @@ i(262909, 1269556);	-- Hypo-Speed X6000
 ------------------
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(246734, 1243593);	-- Fierce Grimlynx
+i(257193, 1261338);	-- Preyseeker's Nightmare
 i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
 i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
@@ -2351,7 +2352,6 @@ i(260895, 1267002);	-- Lavender Pseudoshell
 i(260231, 1265784);	-- Lucent Hawkstrider
 i(260916, 3363);	-- Nether-Warped Drake
 i(257191, 1261336);	-- Preyseeker's Hubris
-i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
 i(257447, 1261584);	-- Prowling Shredclaw
 i(0, 1261579);	-- Ravenous Shredclaw
