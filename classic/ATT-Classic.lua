@@ -1774,8 +1774,7 @@ end
 local CurrencyInfo = {};
 local GetCurrencyCount;
 ---@diagnostic disable-next-line: undefined-global
-local GetCurrencyLink = GetCurrencyLink;
-local GetRelativeField = app.GetRelativeField;
+local GetCurrencyLink = app.WOWAPI.GetCurrencyLink;
 if C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo then
 	local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 	if C_CurrencyInfo.GetCurrencyLink then
@@ -2183,6 +2182,7 @@ local ADDON_LOADED_HANDLERS = {
 		if race then currentCharacter.race = race; end
 		if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+		if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 		if not currentCharacter.BattlePets then currentCharacter.BattlePets = {}; end
 		if not currentCharacter.Exploration then currentCharacter.Exploration = {}; end
 		if not currentCharacter.Factions then currentCharacter.Factions = {}; end

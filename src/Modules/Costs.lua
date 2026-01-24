@@ -9,8 +9,11 @@ local L = app.L
 -- Global locals
 local rawget, ipairs, pairs, type,math_min,wipe
 	= rawget, ipairs, pairs, type,math.min,wipe
-local PlayerHasToy, C_CurrencyInfo_GetCurrencyInfo
-	= PlayerHasToy, C_CurrencyInfo.GetCurrencyInfo
+local PlayerHasToy
+	= PlayerHasToy
+
+-- WoW API Cache
+local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
 local SearchForFieldContainer, GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
@@ -148,7 +151,7 @@ local function BlockedParent(group)
 	end
 end
 local CurrencyAmounts = setmetatable({}, { __index = function(t, key)
-	local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(key)
+	local currencyInfo = GetCurrencyInfo(key)
 	t[key] = (currencyInfo and currencyInfo.quantity) or 0
 	return t[key]
 end})

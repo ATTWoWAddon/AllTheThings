@@ -17,7 +17,7 @@ local ItemEventListener = ItemEventListener
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
-local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip
+local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip or app.ReturnFalse;
 
 -- Class locals
 

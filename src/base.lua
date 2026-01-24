@@ -8,6 +8,9 @@ local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
 app.Categories = {};
+if not app.ReagentsDB then
+	app.ReagentsDB = {};
+end
 
 -- Hey Blizzard, stop that. Thanks.
 SetCVar("taintLog","0");
