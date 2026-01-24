@@ -2913,17 +2913,10 @@ root(ROOTS.Unsorted, {
 			i(257386),	-- Heavy Trunk
 
 			-- Quest Armor?
-			i(257523),	-- Woven Haranir Wrappings
-			i(257524),	-- Entwined Haranir Wrappings
-			i(257525),	-- Coarse Haranir Wrappings
-			i(257526),	-- Hardened Haranir Wrappings
 			i(257527),	-- Woven Haranir Cowl
 			i(257528),	-- Entwined Haranir Cowl
 			i(257529),	-- Coarse Haranir Cowl
 			i(257530),	-- Hardened Haranir Cowl
-			i(257531),	-- Woven Haranir Thorns
-			i(257532),	-- Entwined Haranir Thorns
-			i(257533),	-- Coarse Haranir Thorns
 
 			-- PvP
 			i(257535),	-- Galactic Jeweler's Setting
@@ -2938,28 +2931,11 @@ root(ROOTS.Unsorted, {
 			i(257543),	-- Scorching Conqueror's Legguards
 			i(257544),	-- Scorching Conqueror's Mantle
 			i(257545),	-- Scorching Conqueror's Cloak
-			i(257546),	-- Hardened Haranir Thorns
 			i(257547),	-- Ensemble: Scorching Conqueror
-			i(257549),	-- Woven Haranir Soles
-			i(257550),	-- Entwined Haranir Soles
-			i(257551),	-- Coarse Haranir Soles
-			i(257552),	-- Hardened Haranir Soles
-			i(257553),	-- Woven Haranir Skirt
-			i(257554),	-- Entwined Haranir Skirt
-			i(257555),	-- Coarse Haranir Skirt
-			i(257556),	-- Hardened Haranir Skirt
 			i(257558),	-- Woven Haranir Leaves
 			i(257559),	-- Entwined Haranir Leaves
 			i(257560),	-- Coarse Haranir Leaves
 			i(257561),	-- Hardened Haranir Leaves
-			i(257562),	-- Woven Haranir Loincloth
-			i(257589),	-- Entwined Haranir Loincloth
-			i(257590),	-- Coarse Haranir Loincloth
-			i(257591),	-- Hardened Haranir Loincloth
-			i(257592),	-- Woven Haranir Vines
-			i(257593),	-- Entwined Haranir Vines
-			i(257594),	-- Coarse Haranir Vines
-			i(257595),	-- Hardened Haranir Vines
 			i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
 			i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
 			i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
@@ -4718,16 +4694,6 @@ root(ROOTS.Unsorted, {
 			i(266198),	-- Ensemble: Preyseeker's Rugged Armor
 			i(266199),	-- Ensemble: Preyseeker's Polished Armor
 			i(266213),	-- Incense Materials
-			i(266262),	-- Dawnroot Haranir Channeler
-			i(266263),	-- Wildgrove Haranir Longbow
-			i(266264),	-- Sunpetal Haranir Spire
-			i(266265),	-- Windpetal Haranir Baton
-			i(266266),	-- Moonpetal Haranir Staff
-			i(266267),	-- Thornpierce Haranir Fang
-			i(266268),	-- Rootbound Haranir Claws
-			i(266269),	-- Rootbound Haranir Aegis
-			i(266270),	-- Witherbloom Haranir Staff
-			i(266271),	-- Wildbloom Haranir Warblade
 			i(266314),	-- Novice Combatant's Necklace
 			i(266317),	-- Novice Combatant's Ring
 			i(244656),	-- Silvermoon Painter's Cushion
