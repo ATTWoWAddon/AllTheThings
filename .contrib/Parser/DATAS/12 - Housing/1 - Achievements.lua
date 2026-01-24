@@ -18,6 +18,42 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(61318, {	-- Fully Furnished				(500)
 			title(657),	-- <Name> the Furnished
 		}),
+		ach(62357, {	-- Classically Trained Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62358, {	-- Outlandish Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62359, {	-- Wrathful Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62360, {	-- Cataclysmic Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62361, {	-- Mist-Shrouded Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62362, {	-- Lumberjack Warlord
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62363, {	-- Legion Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62364, {	-- Azeroth's Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62365, {	-- Shadowy Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62366, {	-- Draconic Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62369, {	-- The Lumberjack Within
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62370, {	-- Midnight Lumberjack
+			["timeline"] = { ADDED_12_0_1 },
+		}),
 		ach(40887, {	-- Fox Friends
 			["timeline"] = { ADDED_12_0_0 },	-- TODO: probably hotfixed in earlier
 			-- i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Coffee Press (DECOR!)

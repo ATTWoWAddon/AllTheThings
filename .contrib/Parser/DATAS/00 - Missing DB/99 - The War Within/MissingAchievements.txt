@@ -409,18 +409,6 @@ ach(62342),	-- Abyss Anglers: The Finest of Fish
 ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
 ach(62351),	-- Preying For Midnight
 ach(62352),	-- Nothing to See Here
-ach(62357),	-- Classically Trained Lumberjack
-ach(62358),	-- Outlandish Lumberjack
-ach(62359),	-- Wrathful Lumberjack
-ach(62360),	-- Cataclysmic Lumberjack
-ach(62361),	-- Mist-Shrouded Lumberjack
-ach(62362),	-- Lumberjack Warlord
-ach(62363),	-- Legion Lumberjack
-ach(62364),	-- Azeroth's Lumberjack
-ach(62365),	-- Shadowy Lumberjack
-ach(62366),	-- Draconic Lumberjack
-ach(62369),	-- The Lumberjack Within
-ach(62370),	-- Midnight Lumberjack
 ach(62371),	-- Couponing for Beginners
 ach(62373),	-- Coupon Collector
 ach(62374),	-- You Get The Best Deals Anywhere
