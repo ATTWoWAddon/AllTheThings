@@ -22,3 +22,24 @@ COMMON_VENDOR_ITEMS = createHeader({
 		tw = "商人共通物品",
 	},
 });
+
+-- Expects a table with 'crs' (Vendor NPCIDs) and 'groups' (Common Vendor Items)
+n_CommonVendorItems = function(t)
+	if not t.crs then
+		print("ERROR: n_CommonVendors: No NPCs specified in 'crs'");
+		return {}
+	end
+	t = togroups(t)
+	local groups = t.groups
+	if not groups then
+		print("ERROR: n_CommonVendors: No 'groups' data specified in 't'");
+		return {}
+	end
+	-- copy the crs table to each item in the group
+	for i = 1,#groups do
+		groups[i].crs = t.crs
+	end
+	return n(COMMON_VENDOR_ITEMS, {
+		groups = groups,
+	})
+end
