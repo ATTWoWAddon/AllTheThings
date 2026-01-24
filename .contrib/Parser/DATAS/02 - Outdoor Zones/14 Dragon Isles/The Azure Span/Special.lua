@@ -5,8 +5,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_AZURE_SPAN, {
 		n(SPECIAL, {
 			n(195353, {	-- Breezebiter
-				["description"] = "Patrols the area and is not considered a rare.",
-				["coord"] = { 28.0, 48.2, THE_AZURE_SPAN },
+				["description"] = "Spawns near a cave, then patrols the area. Not considered a rare.",
+				["coords"] = {
+					{ 29.8, 46.2, THE_AZURE_SPAN }, -- spawn
+					-- some path points
+					{ 25.8, 46.7, THE_AZURE_SPAN },
+					{ 26.3, 44.9, THE_AZURE_SPAN },
+					{ 27.7, 44.4, THE_AZURE_SPAN },
+					{ 27.9, 48.1, THE_AZURE_SPAN },
+				},
 				["groups"] = {
 					i(201440),	-- Liberated Slyvern (MOUNT!)
 				},
