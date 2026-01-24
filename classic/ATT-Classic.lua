@@ -2197,7 +2197,6 @@ local ADDON_LOADED_HANDLERS = {
 		if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 		if not currentCharacter.BattlePets then currentCharacter.BattlePets = {}; end
-		if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 		if not currentCharacter.Exploration then currentCharacter.Exploration = {}; end
 		if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 		if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
@@ -2218,7 +2217,6 @@ local ADDON_LOADED_HANDLERS = {
 		local accountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 		if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 		if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
-		if not accountWideData.Deaths then accountWideData.Deaths = 0; end
 		if not accountWideData.Exploration then accountWideData.Exploration = {}; end
 		if not accountWideData.Factions then accountWideData.Factions = {}; end
 		if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
@@ -2342,7 +2340,7 @@ local ADDON_LOADED_HANDLERS = {
 		app.Settings:Initialize();
 		
 		-- Notify Event Handlers that Saved Variable Data is available.
-		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, app.Settings.AccountWide);
+		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
 		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 		

@@ -1839,7 +1839,6 @@ local ADDON_LOADED_HANDLERS = {
 		if app.Race then currentCharacter.race = app.Race; end
 		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 		if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-		if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 		if not currentCharacter.Professions then currentCharacter.Professions = {}; end
 		app.CurrentCharacter = currentCharacter;
@@ -1863,15 +1862,6 @@ local ADDON_LOADED_HANDLERS = {
 		accountWideData.TEMP_TWWSources = nil
 		currentCharacter.CommonItems = nil
 		accountWideData.CommonItems = nil
-
-		-- Update the total account wide death counter.
-		local deaths = 0;
-		for guid,character in pairs(characterData) do
-			if character and character.Deaths and character.Deaths > 0 then
-				deaths = deaths + character.Deaths;
-			end
-		end
-		accountWideData.Deaths = deaths;
 		
 		-- Clean up other matching Characters with identical Name-Realm but differing GUID
 		local myGUID = app.GUID;
@@ -1958,7 +1948,7 @@ local ADDON_LOADED_HANDLERS = {
 		app.Settings:Initialize();
 
 		-- Notify Event Handlers that Saved Variable Data is available.
-		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData);
+		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
 		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 		
