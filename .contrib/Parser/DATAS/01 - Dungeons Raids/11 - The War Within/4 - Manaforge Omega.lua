@@ -817,7 +817,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(FRACTILLUS),
 				BossOnly(SALHADAAR),
 				BossOnly(DIMENSIUS, {
-					i(246446, { ["timeline"] = { REMOVED_12_0_0 } }),	-- Mark of the Twilight Oath (QS!)
+					i(246446, { ["timeline"] = { REMOVED_12_0_X_SEASONSTART } }),	-- Mark of the Twilight Oath (QS!)
 					ach(41624, { ["timeline"] = { REMOVED_12_0_0 } }),	-- Ahead of the Curve: Dimensius, the All-Devouring
 				}),
 			}),
