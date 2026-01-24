@@ -3272,52 +3272,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(258901),	-- Waterlogged Reliquary Paintbrush
 
-			-- Armor
-			i(258908),	-- Tarnished Dawnlit Band
-			i(258909),	-- Tarnished Dawnlit Signet
-			i(258910),	-- Tarnished Dawnlit Loop
-			i(258911),	-- Tarnished Dawnlit Pendant
-			i(258912),	-- Tarnished Dawnlit Spellbinder's Robe
-			i(258913),	-- Tarnished Dawnlit Spellbinder's Slippers
-			i(258914),	-- Tarnished Dawnlit Spellbinder's Mitts
-			i(258915),	-- Tarnished Dawnlit Spellbinder's Crown
-			i(258916),	-- Tarnished Dawnlit Spellbinder's Trousers
-			i(258918),	-- Tarnished Dawnlit Spellbinder's Sash
-			i(258919),	-- Tarnished Dawnlit Spellbinder's Bands
-			i(258920),	-- Tarnished Dawnlit Corsair's Tunic
-			i(258921),	-- Tarnished Dawnlit Corsair's Boots
-			i(258922),	-- Tarnished Dawnlit Corsair's Gloves
-			i(258923),	-- Tarnished Dawnlit Corsair's Hood
-			i(258924),	-- Tarnished Dawnlit Corsair's Breeches
-			i(258925),	-- Tarnished Dawnlit Corsair's Spaulders
-			i(258926),	-- Tarnished Dawnlit Corsair's Belt
-			i(258927),	-- Tarnished Dawnlit Corsair's Bracers
-			i(258936),	-- Tarnished Dawnlit Commander's Breastplate
-			i(258937),	-- Tarnished Dawnlit Commander's Warboots
-			i(258938),	-- Tarnished Dawnlit Commander's Gauntlets
-			i(258939),	-- Tarnished Dawnlit Commander's Helmet
-			i(258940),	-- Tarnished Dawnlit Commander's Greaves
-			i(258941),	-- Tarnished Dawnlit Commander's Mantle
-			i(258943),	-- Tarnished Dawnlit Commander's Armplates
-			i(258944),	-- Tarnished Dawnlit Cleaver
-			i(258945),	-- Tarnished Dawnlit Carver
-			i(258946),	-- Tarnished Dawnlit Chopper
-			i(258947),	-- Tarnished Dawnlit Dagger
-			i(258948),	-- Tarnished Dawnlit Knife
-			i(258949),	-- Tarnished Dawnlit Mace
-			i(258950),	-- Tarnished Dawnlit Warmace
-			i(258951),	-- Tarnished Dawnlit Shortsword
-			i(258952),	-- Tarnished Dawnlit Longsword
-			i(258953),	-- Tarnished Dawnlit Longbow
-			i(258955),	-- Tarnished Dawnlit Halberd
-			i(258956),	-- Tarnished Dawnlit Scepter
-			i(258957),	-- Tarnished Dawnlit Staff
-			i(258958),	-- Tarnished Dawnlit Greatsword
-			i(258959),	-- Tarnished Dawnlit Blade
-			i(258960),	-- Tarnished Dawnlit Beacon
-			i(258961),	-- Tarnished Dawnlit Defender
-			i(258962),	-- Tarnished Dawnlit Warglaive
-
 			-- QI
 			i(258965),	-- Tome of Polymorph
 			i(259029),	-- Shadowguard Intelligence
@@ -4810,10 +4764,6 @@ root(ROOTS.Unsorted, {
 			i(266197),	-- Ensemble: Preyseeker's Sleek Armor
 			i(266198),	-- Ensemble: Preyseeker's Rugged Armor
 			i(266199),	-- Ensemble: Preyseeker's Polished Armor
-			i(266207),	-- Tarnished Dawnlit Spellbinder's Cloak
-			i(266208),	-- Tarnished Dawnlit Corsair's Shroud
-			i(266209),	-- Tarnished Dawnlit Sentinel's Drape
-			i(266210),	-- Tarnished Dawnlit Commander's Cape
 			i(266213),	-- Incense Materials
 			i(266262),	-- Dawnroot Haranir Channeler
 			i(266263),	-- Wildgrove Haranir Longbow
