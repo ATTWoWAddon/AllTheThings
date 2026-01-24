@@ -1618,6 +1618,7 @@ localize(L.HEADER_NAMES, {
 	[-705] = "Training Grounds",
 	[-706] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-707] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-708] = "Razer",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1725,6 +1726,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-691] = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
 	[-696] = "After completing The Shadow of the Sentinax quest, uncommon Sentinax Beacons can drop from mobs underneath the Sentinax. You can then use these beacons to summon portals while the Sentinax remains in the area.\n\nEach Sentinax Beacon summons mobs that can drop rare quality Sentinax Beacons of that color that can be used to empower the portals to sometimes have those portals spawn Rares that ultimately can drop the associated Portal Stone (boss).\n\nKeep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon. Rare quality Sentinax Beacons can also be acquired by interacting with Unstable Nether Portals when the Nether Disruptor is up. (Not available in Legion Remix!)",
 	[-703] = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
+	[-708] = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2295,6 +2297,7 @@ localize(L.HEADER_ICONS, {
 	[-700] = 1027879,
 	[-703] = 1529348,
 	[-705] = 136106,
+	[-708] = 132529,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -75114,6 +75117,7 @@ localize(L.HEADER_NAMES, {
 	[-696] = "虚空传送门",
 	[-706] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
 	[-707] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-708] = "雷蛇",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",

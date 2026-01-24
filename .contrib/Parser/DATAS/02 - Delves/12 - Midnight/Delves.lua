@@ -91,6 +91,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		filter(RECIPES, {
 		}),
 		n(ARMOR, {
+			-- TODO: probably doesn't exist in s1 and will be wue after it? But seems like you can also it everything from bountiful but even without key, so idk.
 			filter(BACK_F, {
 			}),
 			filter(CLOTH, {
@@ -109,8 +110,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 		}),
 		n(WEAPONS, {
-			i(259462),	-- Thorneedle
-			i(260187),	-- Underbrush Render
 		}),
 	})),
 	n(FACTIONS, {
@@ -131,7 +130,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	n(RARES, {
 		-- TODO: Alex - I don't think there any point to source them but in case there will be achievement for it or whatever
+		--n(253249),	-- Clever Saptor
 		--n(207482),	-- Invasive Sporecap // alpha
+		--n(253267),	-- Wailing Spirit
 	}),
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
@@ -149,7 +150,78 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		n(242398, {	-- Naleidea Rivergleam
 			["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = {
-
+				-- TODO: Some items looks like seasoned (e.g. keys, bags, but sorted them out later on if needed)
+				-- TODO: not sorted via name but as listed order in vendor
+				filter(BATTLE_PETS, {
+					i(262393, {	-- Kreepah'zoyd (PET!)
+						["cost"] = {{"c", UNDERCOIN, 10000 }},
+					}),
+				}),
+				filter(COSMETIC, {
+					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
+						["cost"] = {{"c", UNDERCOIN, 2500 }},
+					}),
+				}),
+				n(DECOR, {
+					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
+						["cost"] = {{"c", UNDERCOIN, 500 }},
+					}),
+					i(246779, {	-- Hanging Mana Brazier (DECOR!)
+						["cost"] = {{"c", UNDERCOIN, 500 }},
+					}),
+				}),
+				filter(MISC, {
+					i(244193, {	-- L00T RAID-R Mini
+						["cost"] = {{"c", UNDERCOIN, 1000 }},
+					}),
+					i(262963, {	-- Pious Memorial
+						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						--["questID"] = ???,
+					}),
+					i(233061, {	-- Rock-in-a-Bottle
+						["cost"] = {{"c", UNDERCOIN, 250 }},
+					}),
+					i(248755, {	-- Star-in-a-Jar
+						["cost"] = {{"c", UNDERCOIN, 250 }},
+					}),
+					i(264652, {	-- Delver's Pouch of Voidlight Marl
+						["cost"] = {{"c", UNDERCOIN, 2000 }},
+					}),
+				}),
+				filter(MOUNTS, {
+					i(262502, {	-- Elven Arcane Guardian (MOUNT!)
+						["cost"] = {{"c", UNDERCOIN, 10000 }},
+					}),
+				}),
+				filter(TOYS, {
+					i(267291, {	-- Coffer Key Glue (TOY!)
+						["cost"] = {{"c", UNDERCOIN, 250 }},
+					}),
+					i(262431, {	-- Bouncy Mushroom (TOY!)
+						["cost"] = {{"c", UNDERCOIN, 5000 }},
+					}),
+				}),
 			},
 		}),
 		n(242399, {	-- Telemancer Astrandis
@@ -159,32 +231,315 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 	}),
-	--[[m(DELVE_NAME, {
-		["icon"] = ,
-		["coord"] = { X, Y, MAPID },
+	m(ATAL_AMAN, {
+		--["icon"] = ,
+		["coord"] = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- Delves: The Waterworks
+				---q(XXXX, {	-- ??
 				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { 47.1, 31.9, MAPID },
+				---	["coord"] = { X, Y, MAPID },
 				---}),
 			}),
 			n(TREASURES, {
 			}),
+			n(REWARDS, {
+				n(DECOR, {
+					i(267009),	-- Amani Training Dummy (DECOR!)
+				}),
+				filter(MISC, {
+				}),
+			}),
 		},
-	}),]]--
+	}),
+	m(COLLEGIATE_CALAMITY, {
+		--["icon"] = ,
+		["coord"] = { 40.5, 53.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		["maps"] = {
+			2577,	-- Thalassian Library
+			2578,	-- Thalassian University
+		},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+				o(618274, {	-- Sturdy Chest
+					["coord"] = { 31.0, 12.5, COLLEGIATE_CALAMITY},
+					["questID"] = 94018,
+				}),
+				o(618285, {	-- Sturdy Chest
+					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY},	-- TODO: could be off
+					["questID"] = 94029,
+				}),
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+					i(264258),	-- Blossoming Forge (DECOR!)
+					i(263042),	-- Rootlight Lamppost (DECOR!)
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(PARHELION_PLAZA, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(SHADOWGUARD_POINT, {
+		--["icon"] = ,
+		["coord"] = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				q(93428, {	-- Delver's Call: Shadowguard Point
+					["sourceQuests"] = { 86549 },	-- No Fear of the Dark (TODO: added from alpha open world version of it)
+					["provider"] = { "o", 612364 },	-- Shadowguard Point (TODO: missing open world objectID)
+					["coords"] = {
+						{ 47.6, 79.3, SHADOWGUARD_POINT },
+						{ 37.6, 51.9, MAP.MIDNIGHT.VOIDSTORM },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618273, {	-- Sturdy Chest
+					["coord"] = { 41.8, 53.7, SHADOWGUARD_POINT },
+					["questID"] = 94017,
+					["groups"] = {
+						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
+					},
+				}),
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(SUNKILLER_SANCTUM, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(THE_DARKWAY, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(THE_GULF_OF_MEMORY, {
+		--["icon"] = ,
+		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(THE_GRUDGE_PIT, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(THE_SHADOW_ENCLAVE, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(TORMENTS_RISE, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
+	m(TWILIGHT_CRYPTS, {
+		--["icon"] = ,
+		--["coord"] = { X, Y, MAPID },
+		--["maps"] = {},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+			}),
+			n(EXPLORATION, {
+			}),
+			n(QUESTS, {
+				---q(XXXX, {	-- ??
+				---	["provider"] = { "n", ???? },	-- ????
+				---	["coord"] = { X, Y, MAPID },
+				---}),
+			}),
+			n(TREASURES, {
+			}),
+			n(REWARDS, {
+				n(DECOR, {
+				}),
+				filter(MISC, {
+				}),
+			}),
+		},
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 		--n(BOUNTIFUL, sharedData({
 		--	["isDaily"] = true,
-		--},{	-- Bountiful Delve runs
-		--	--q(),	-- delveName
+		--},{	-- Bountiful Delve runs?
+			--q(91188),	-- Atal'Aman
+			--q(91186),	-- Collegiate Calamity
+			--q(91187),	-- The Gulf of Memory
+			--q(91184),	-- Shadowguard Point
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
 		--})),

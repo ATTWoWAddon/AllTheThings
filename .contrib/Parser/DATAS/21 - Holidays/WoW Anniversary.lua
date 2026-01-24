@@ -4549,7 +4549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	n(WOW_ANNIVERSARY_TWENTYONE, {
 		["timeline"] = { ADDED_11_2_5 },
 		["groups"] = appendAllGroups({},sharedData({
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.64743" },
 		},{	-- One-Time Content
 			ach(61406),	-- WoW's 21st Anniversary
 		}),

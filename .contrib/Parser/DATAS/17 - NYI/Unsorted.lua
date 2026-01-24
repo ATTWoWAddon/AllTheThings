@@ -1672,7 +1672,6 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(249219),	-- 12.0 Delves - Season 1 - Curio - Combat 1
-			i(249221),	-- Sanctum's Edict
 			i(249223),	-- 12.0 Delves - Season 1 - Curio - Combat 5
 			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
 
@@ -1764,31 +1763,6 @@ root(ROOTS.Unsorted, {
 			i(249623),	-- Blooming Leafcoil
 			i(249625),	-- Elder Mossveil
 			i(249627),	-- Arboreal Vine Collar
-			i(249628),	-- Rampant Bramblecloack
-			i(249629),	-- Sprawling Rootunic
-			i(249630),	-- Sprawling Rootpads
-			i(249631),	-- Sprawling Tendrils
-			i(249632),	-- Sprawling Stoloncollar
-			i(249633),	-- Sprawling Rootstockings
-			i(249634),	-- Sprawling Fibershells
-			i(249635),	-- Sprawling Rhizomecord
-			i(249636),	-- Sprawling Wristroots
-			i(249645),	-- Elder Mossmail
-			i(249646),	-- Elder Mossclogs
-			i(249647),	-- Elder Mossfeelers
-			i(249648),	-- Elder Mosshorns
-			i(249649),	-- Elder Mossvein Breeches
-			i(249650),	-- Elder Mossvein Greatleaves
-			i(249651),	-- Elder Mosscinch
-			i(249652),	-- Elder Mossbands
-			i(249653),	-- Rampant Brambleplate
-			i(249654),	-- Rampant Thistlestompers
-			i(249655),	-- Rampant Creepers
-			i(249656),	-- Rampant Briarhelm
-			i(249657),	-- Rampant Bramblegreaves
-			i(249658),	-- Rampant Thornmantles
-			i(249659),	-- Rampant Thornstrap
-			i(249660),	-- Rampant Briarcuffs
 			i(249661),	-- Root Sculptor's Verdaxe \\ Root Sculpter's Verdaxe
 			i(249662),	-- Wild Fiberknife
 			i(249664),	-- Gnarled Thornmace
@@ -2062,9 +2036,6 @@ root(ROOTS.Unsorted, {
 			-- QI
 			i(252192),	-- Rune Key
 			i(252370),	-- Heartwisp Frond
-
-			-- Delve
-			i(252415),	-- Trovehunter's Bounty
 			-- Abudance
 			i(252607),	-- Abundant Beacon \\ [TUTORIAL ITEM]
 			i(252608),	-- Unalloyed Abundance \\ [OLD] Unalloyed Abundance
@@ -2269,8 +2240,6 @@ root(ROOTS.Unsorted, {
 			i(254778),	-- Altered Totem
 			i(255161),	-- Callum's Belongings
 			-- Delve
-			i(254869),	-- Chunk of Companion Experience
-			i(254983),	-- Assassin's Subtle Tea
 			i(254984),	-- Potent Assassin's Subtle Tea
 			-- Cache
 			i(254677),	-- Apex Cache
@@ -2824,19 +2793,15 @@ root(ROOTS.Unsorted, {
 			i(256761),	-- Formula: Enchant Shoulders - Voidtouched
 
 			-- World Quest
-			i(256965),	-- Steelbark Vambraces \\ [PH] WQ - Armor - Plate WRIST - A
 			i(256966),	-- Rootspeaker's Leafwraps \\ [PH] WQ - Armor - Mail WRIST - A
 			i(256968),	-- Deepvine Bracers \\ [PH] WQ - Armor - Cloth WRIST - A
 			i(256970),	-- Loa-Blessed Beads \\ [PH] WQ - Accessory - NECK - A
 			i(256971),	-- Radiant Phoenix Band \\ [PH] WQ - Accessory - FINGER - D
 			i(256972),	-- Evertwisting Swiftvine \\ [PH] WQ - Accessory - FINGER - C
-			i(256973),	-- Steelbark Sabatons \\ [PH] WQ - Armor - Plate FEET - A
 			i(256974),	-- Rootspeaker's Footwraps \\ [PH] WQ - Armor - Mail FEET - A
 			i(256976),	-- Deepvine Ankleguards \\ [PH] WQ - Armor - Cloth FEET - A
-			i(256977),	-- Steelbark Gauntlets \\ [PH] WQ - Armor - Plate HAND - A
 			i(256978),	-- Rootspeaker's Branches \\ [PH] WQ - Armor - Mail HAND - A
 			i(256980),	-- Deepvine Grips \\ [PH] WQ - Armor - Cloth HAND - A
-			i(256981),	-- Steelbark Chestguard \\ [PH] WQ - Armor - Plate CHEST - A
 			i(256982),	-- Rootspeaker's Trunk \\ [PH] WQ - Armor - Mail CHEST - A
 			i(256984),	-- Deepvine Chestwrap \\ [PH] WQ - Armor - Cloth CHEST - A
 			i(256986),	-- Circlet of Encroaching Shadow \\ [PH] WQ - Accessory - FINGER - A
@@ -2846,12 +2811,10 @@ root(ROOTS.Unsorted, {
 			i(256991),	-- Vinewrapped Mallet \\ [PH] WQ - Weapon - 1H Mace STR - A
 			i(256992),	-- Razorvine Cudgel \\ [PH] WQ - Weapon - 1H Mace AGI - A
 			i(256993),	-- Verdant Tracker's Spike \\ [PH] WQ - Weapon - 1H Dagger AGI - B
-			i(256994),	-- Steelbark Casque \\ [PH] WQ - Armor - Plate HEAD - A
 			i(256995),	-- Rootspeaker's Headdress \\ [PH] WQ - Armor - Mail HEAD - A
 			i(256997),	-- Deepvine Collar \\ [PH] WQ - Armor - Cloth HEAD - A
 			i(256999),	-- Rootspeaker's Canopy \\ [PH] WQ - Armor - Mail SHOULDER - A
 			i(257001),	-- Deepvine Pauldrons \\ [PH] WQ - Armor - Cloth SHOULDER - A
-			i(257002),	-- Steelbark Greaves \\ [PH] WQ - Armor - Plate LEGS - A
 			i(257003),	-- Rootspeaker's Leggings \\ [PH] WQ - Armor - Mail LEGS - A
 			i(257005),	-- Deepvine Britches \\ [PH] WQ - Armor - Cloth LEGS - A
 			i(257006),	-- Vine-Rending Claymore \\ [PH] WQ - Weapon - 2H Sword STR - A
@@ -3028,11 +2991,6 @@ root(ROOTS.Unsorted, {
 			i(257750),	-- Laced Zoomshots
 			i(257751),	-- Weighted Boomshots
 			i(257752),	-- Weighted Boomshots
-
-			-- Delve
-			i(257755),	-- Holy Bounding Hand Grenade
-			i(257768),	-- Time Lost Edict
-			i(257866),	-- Overflowing Voidspire
 
 			-- QI
 			i(257870),	-- Void Residue
@@ -3272,52 +3230,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(258901),	-- Waterlogged Reliquary Paintbrush
 
-			-- Armor
-			i(258908),	-- Tarnished Dawnlit Band
-			i(258909),	-- Tarnished Dawnlit Signet
-			i(258910),	-- Tarnished Dawnlit Loop
-			i(258911),	-- Tarnished Dawnlit Pendant
-			i(258912),	-- Tarnished Dawnlit Spellbinder's Robe
-			i(258913),	-- Tarnished Dawnlit Spellbinder's Slippers
-			i(258914),	-- Tarnished Dawnlit Spellbinder's Mitts
-			i(258915),	-- Tarnished Dawnlit Spellbinder's Crown
-			i(258916),	-- Tarnished Dawnlit Spellbinder's Trousers
-			i(258918),	-- Tarnished Dawnlit Spellbinder's Sash
-			i(258919),	-- Tarnished Dawnlit Spellbinder's Bands
-			i(258920),	-- Tarnished Dawnlit Corsair's Tunic
-			i(258921),	-- Tarnished Dawnlit Corsair's Boots
-			i(258922),	-- Tarnished Dawnlit Corsair's Gloves
-			i(258923),	-- Tarnished Dawnlit Corsair's Hood
-			i(258924),	-- Tarnished Dawnlit Corsair's Breeches
-			i(258925),	-- Tarnished Dawnlit Corsair's Spaulders
-			i(258926),	-- Tarnished Dawnlit Corsair's Belt
-			i(258927),	-- Tarnished Dawnlit Corsair's Bracers
-			i(258936),	-- Tarnished Dawnlit Commander's Breastplate
-			i(258937),	-- Tarnished Dawnlit Commander's Warboots
-			i(258938),	-- Tarnished Dawnlit Commander's Gauntlets
-			i(258939),	-- Tarnished Dawnlit Commander's Helmet
-			i(258940),	-- Tarnished Dawnlit Commander's Greaves
-			i(258941),	-- Tarnished Dawnlit Commander's Mantle
-			i(258943),	-- Tarnished Dawnlit Commander's Armplates
-			i(258944),	-- Tarnished Dawnlit Cleaver
-			i(258945),	-- Tarnished Dawnlit Carver
-			i(258946),	-- Tarnished Dawnlit Chopper
-			i(258947),	-- Tarnished Dawnlit Dagger
-			i(258948),	-- Tarnished Dawnlit Knife
-			i(258949),	-- Tarnished Dawnlit Mace
-			i(258950),	-- Tarnished Dawnlit Warmace
-			i(258951),	-- Tarnished Dawnlit Shortsword
-			i(258952),	-- Tarnished Dawnlit Longsword
-			i(258953),	-- Tarnished Dawnlit Longbow
-			i(258955),	-- Tarnished Dawnlit Halberd
-			i(258956),	-- Tarnished Dawnlit Scepter
-			i(258957),	-- Tarnished Dawnlit Staff
-			i(258958),	-- Tarnished Dawnlit Greatsword
-			i(258959),	-- Tarnished Dawnlit Blade
-			i(258960),	-- Tarnished Dawnlit Beacon
-			i(258961),	-- Tarnished Dawnlit Defender
-			i(258962),	-- Tarnished Dawnlit Warglaive
-
 			-- QI
 			i(258965),	-- Tome of Polymorph
 			i(259029),	-- Shadowguard Intelligence
@@ -3420,54 +3332,7 @@ root(ROOTS.Unsorted, {
 			i(259459),	-- Recipe: Potion of Recklessness
 
 			-- Prey
-			i(259909),	-- Preyseeker's Refined Shawl \\ [DNT] 12.0 Prey - Accessory - CLOAK - A
-			i(259910),	-- Preyseeker's Sleek Capelet \\ [DNT] 12.0 Prey - Accessory - CLOAK - B
-			i(259911),	-- Preyseeker's Band \\ [DNT] 12.0 Prey - Accessory - FINGER - A
-			i(259912),	-- Preyseeker's Signet \\ [DNT] 12.0 Prey - Accessory - FINGER - B
-			i(259913),	-- Preyseeker's Ring \\ [DNT] 12.0 Prey - Accessory - FINGER - C
-			i(259914),	-- Preyseeker's Circle \\ [DNT] 12.0 Prey - Accessory - FINGER - D
-			i(259916),	-- Preyseeker's Choker \\ [DNT] 12.0 Prey - Accessory - NECK - B
-			i(259917),	-- Preyseeker's Refined Vestments \\ [DNT] 12.0 Prey - Armor - Cloth CHEST - A
-			i(259918),	-- Preyseeker's Refined Slippers \\ [DNT] 12.0 Prey - Armor - Cloth FEET - A
-			i(259919),	-- Preyseeker's Refined Gloves \\ [DNT] 12.0 Prey - Armor - Cloth HAND - A
-			i(259920),	-- Preyseeker's Refined Crown \\ [DNT] 12.0 Prey - Armor - Cloth HEAD - A
-			i(259921),	-- Preyseeker's Refined Tights \\ [DNT] 12.0 Prey - Armor - Cloth LEGS - A
-			i(259922),	-- Preyseeker's Refined Epaulet \\ [DNT] 12.0 Prey - Armor - Cloth SHOULDER - A
-			i(259923),	-- Preyseeker's Refined Cord \\ [DNT] 12.0 Prey - Armor - Cloth WAIST - A
-			i(259924),	-- Preyseeker's Refined Cuffs \\ [DNT] 12.0 Prey - Armor - Cloth WRIST - A
-			i(259933),	-- Preyseeker's Rugged Haubergeon \\ [DNT] 12.0 Prey - Armor - Mail CHEST - A
-			i(259934),	-- Preyseeker's Rugged Sabatons \\ [DNT] 12.0 Prey - Armor - Mail FEET - A
-			i(259935),	-- Preyseeker's Rugged Grips \\ [DNT] 12.0 Prey - Armor - Mail HAND - A
-			i(259936),	-- Preyseeker's Rugged Plume \\ [DNT] 12.0 Prey - Armor - Mail HEAD - A
-			i(259937),	-- Preyseeker's Rugged Legguards \\ [DNT] 12.0 Prey - Armor - Mail LEGS - A
-			i(259938),	-- Preyseeker's Rugged Shoulderguards \\ [DNT] 12.0 Prey - Armor - Mail SHOULDER - A
-			i(259939),	-- Preyseeker's Rugged Clasp \\ [DNT] 12.0 Prey - Armor - Mail WAIST - A
-			i(259940),	-- Preyseeker's Rugged Bindings \\ [DNT] 12.0 Prey - Armor - Mail WRIST - A
-			i(259941),	-- Preyseeker's Polished Brigandine \\ [DNT] 12.0 Prey - Armor - Plate CHEST - A
-			i(259942),	-- Preyseeker's Polished Greatboots \\ [DNT] 12.0 Prey - Armor - Plate FEET - A
-			i(259943),	-- Preyseeker's Polished Handguards \\ [DNT] 12.0 Prey - Armor - Plate HAND - A
-			i(259944),	-- Preyseeker's Polished Helmet \\ [DNT] 12.0 Prey - Armor - Plate HEAD - A
-			i(259945),	-- Preyseeker's Polished Tassets \\ [DNT] 12.0 Prey - Armor - Plate LEGS - A
-			i(259946),	-- Preyseeker's Polished Pauldrons \\ [DNT] 12.0 Prey - Armor - Plate SHOULDER - A
-			i(259947),	-- Preyseeker's Polished Greatbelt \\ [DNT] 12.0 Prey - Armor - Plate WAIST - A
-			i(259948),	-- Preyseeker's Polished Vambraces \\ [DNT] 12.0 Prey - Armor - Plate WRIST - A
-			i(259950),	-- Preyseeker's Kukri \\ [DNT] 12.0 Prey - Weapon - 1H Dagger AGI - A
-			i(259951),	-- Preyseeker's Shiv \\ [DNT] 12.0 Prey - Weapon - 1H Dagger AGI - B
-			i(259952),	-- Preyseeker's Cudgel \\ [DNT] 12.0 Prey - Weapon - 1H Mace AGI - A
-			i(259953),	-- Preyseeker's Scepter \\ [DNT] 12.0 Prey - Weapon - 1H Mace INT - A
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
-			i(259955),	-- Preyseeker's Hammer \\ [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
-			i(259956),	-- Preyseeker's Scimitar \\ [DNT] 12.0 Prey - Weapon - 1H Sword AGI - A
-			i(259957),	-- Preyseeker's Ritual Blade \\ [DNT] 12.0 Prey - Weapon - 1H Sword INT - A
-			i(259958),	-- Preyseeker's Longsword \\ [DNT] 12.0 Prey - Weapon - 1H Sword STR - A
-			i(259959),	-- Preyseeker's Warglaive \\ [DNT] 12.0 Prey - Weapon - 1H Warglaive - A
-			i(259960),	-- Preyseeker's Longbow \\ [DNT] 12.0 Prey - Weapon - 2H Bow AGI - A
-			i(259961),	-- Preyseeker's Spear \\ [DNT] 12.0 Prey - Weapon - 2H Polearm AGI - A
-			i(259962),	-- Preyseeker's Staff \\ [DNT] 12.0 Prey - Weapon - 2H Staff AGI - A
-			i(259963),	-- Preyseeker's Spire \\ [DNT] 12.0 Prey - Weapon - 2H Staff INT - A
-			i(259964),	-- Preyseeker's Falchion \\ [DNT] 12.0 Prey - Weapon - 2H Sword STR - A
-			i(259965),	-- Preyseeker's Lantern \\ [DNT] 12.0 Prey - Weapon - Offhand INT - A
-			i(259966),	-- Preyseeker's Tower Shield \\ [DNT] 12.0 Prey - Weapon - Shield STRINT - A
 
 			-- Pet
 			i(259991),	-- Lil' Preyseeker
@@ -3721,7 +3586,7 @@ root(ROOTS.Unsorted, {
 			-- Delve
 			i(260924),	-- Sentinel's Blessing \\ Sentinel's Halo
 			-- Mount
-			i(260916),	-- Lost Nether Drake
+			i(260916),	-- Nether-Warped Drake
 
 			-- Misc
 			i(260918),	-- Zealot's Surge
@@ -3821,7 +3686,6 @@ root(ROOTS.Unsorted, {
 			i(262724),	-- Currency Wallet
 			-- Wep
 			i(262729),	-- Hand of the Rootkeeper
-			i(262731),	-- Wildthorn Razorfang
 			i(262732),	-- Heavy Bramblebolter
 
 			-- Trinket
@@ -4120,18 +3984,6 @@ root(ROOTS.Unsorted, {
 			i(248405),	-- Kafa Creamer
 			i(248406),	-- Legerdemain Lounge Sign Board
 			i(248407),	-- Dalaran Kafa Table
-			i(250627),	-- Forbidden Fork
-			i(250694),	-- Draconic Metalshaper's Anvil
-			i(250695),	-- Replica Grathardormu's Hammer
-			i(250696),	-- Green Thumb's Watering Can
-			i(250697),	-- Draconic Auctioneer's Lectern
-			i(250698),	-- Obsidian Warder Pennant
-			i(250699),	-- Dark Talon Pennant
-			i(250700),	-- Roasted Ram Leg
-			i(250701),	-- Draconic Trader's Cart
-			i(250702),	-- Artisan's Measuring Scales
-			i(250703),	-- War Creche Teaching Crystal
-			i(250704),	-- Ancient Weyrn Device
 			i(251472),	-- Pandaren Wooden Cart
 			i(251473),	-- Commander's Kafa Mug
 			i(251474),	-- Ceramic Kafa Mug
@@ -4353,10 +4205,6 @@ root(ROOTS.Unsorted, {
 			i(264672),	-- Cosmic Ritual Stone
 			-- Boon
 			i(264668),	-- Boon of Speed
-
-			-- Delve
-			i(264669),	-- Blessing of Potency \\ Explorer's Potency
-			i(264670),	-- Blessing of Zeal \\ Explorer's Zeal
 			-- Decor
 			i(264680),	-- Cuddly Sea Green Grrgle
 			i(264681),	-- Cuddly Brown Grrgle
@@ -4825,39 +4673,9 @@ root(ROOTS.Unsorted, {
 			i(264253),	-- Galactic Void-Scarred Barricade
 			i(264345),	-- Galactic Commander's Orb
 			i(264482),	-- Void Elf Torch
-			i(265681),	-- Preyseeker's Magister Effigy \\ Preyseeker's Magister Trophy
-			i(265682),	-- Preyseeker's Tinker Effigy \\ Preyseeker's Tinker Trophy
-			i(265683),	-- Preyseeker's Ethereal Effigy \\ Preyseeker's Ethereal Trophy
-			i(265684),	-- Preyseeker's Breaker Effigy \\ Preyseeker's Breaker Trophy
-			i(265685),	-- Preyseeker's Amani Effigy \\ Preyseeker's Amani Trophy
-			i(265686),	-- Preyseeker's Rutaani Effigy \\ Preyseeker's Rutaani Trophy
-			i(265687),	-- Preyseeker's Vindicator Effigy \\ Preyseeker's Vindicator Trophy
-			i(265688),	-- Preyseeker's Consul Effigy \\ Preyseeker's Consul Trophy
-			i(265689),	-- Preyseeker's Executor Effigy \\ Preyseeker's Executor Trophy
-			i(265690),	-- Preyseeker's Knight-Errant Effigy \\ Preyseeker's Knight-Errant Trophy
-			i(265691),	-- Preyseeker's Wretched Effigy \\ Preyseeker's Wretched Trophy
-			i(265692),	-- Preyseeker's Thornspeaker Effigy \\ Preyseeker's Thornspeaker Trophy
-			i(265694),	-- Preyseeker's Twilight Effigy \\ Preyseeker's Twilight Trophy
-			i(265696),	-- Preyseeker's Magister Bust
-			i(265697),	-- Preyseeker's Tinker Bust
-			i(265698),	-- Preyseeker's Ethereal Bust
-			i(265699),	-- Preyseeker's Breaker Bust
-			i(265700),	-- Preyseeker's Amani Bust
-			i(265701),	-- Preyseeker's Rutaani Bust
-			i(265702),	-- Preyseeker's Vindicator Bust
-			i(265703),	-- Preyseeker's Consul Bust
-			i(265704),	-- Preyseeker's Executor Bust
-			i(265705),	-- Preyseeker's Knight-Errant Bust
-			i(265706),	-- Preyseeker's Wretched Bust
-			i(265707),	-- Preyseeker's Thornspeaker Bust
-			i(265708),	-- Preyseeker's Twilight Bust
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
 			i(265794),	-- Preyseeker's Plinth
 			i(265795),	-- Preyseeker's Ornate Plinth
-			i(265796),	-- Preyseeker's Ren'dorei Effigy \\ Preyseeker's Ren'dorei Trophy
-			i(265797),	-- Preyseeker's Farstrider Effigy \\ Preyseeker's Farstrider Trophy
-			i(265798),	-- Preyseeker's Ren'dorei Bust
-			i(265799),	-- Preyseeker's Farstrider Bust
 			i(265995),	-- Quel'Thalas Adventurer's Cache
 			i(265997),	-- Blood Knight Champion's Tabard
 			i(266075),	-- Harpoon of Extirpation
@@ -4899,10 +4717,6 @@ root(ROOTS.Unsorted, {
 			i(266197),	-- Ensemble: Preyseeker's Sleek Armor
 			i(266198),	-- Ensemble: Preyseeker's Rugged Armor
 			i(266199),	-- Ensemble: Preyseeker's Polished Armor
-			i(266207),	-- Tarnished Dawnlit Spellbinder's Cloak
-			i(266208),	-- Tarnished Dawnlit Corsair's Shroud
-			i(266209),	-- Tarnished Dawnlit Sentinel's Drape
-			i(266210),	-- Tarnished Dawnlit Commander's Cape
 			i(266213),	-- Incense Materials
 			i(266262),	-- Dawnroot Haranir Channeler
 			i(266263),	-- Wildgrove Haranir Longbow
@@ -4920,11 +4734,8 @@ root(ROOTS.Unsorted, {
 			i(245290),	-- Long Silvermoon Table
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
-			i(257193),	-- Preyseeker's Nightmare
 			i(260603),	-- Frail and Flexible Wing
 			i(260605),	-- Shattered Spear Tip
-			i(260611),	-- Large Bestial Scale
-			i(260615),	-- Void Dust Residue
 			i(260617),	-- Large Broken Teeth
 			i(260620),	-- Stone Droppings
 			i(260621),	-- Magic Infused Bark
@@ -4933,17 +4744,13 @@ root(ROOTS.Unsorted, {
 			i(260640),	-- Crooked Bird Talons
 			i(260644),	-- Lightbloom Bark
 			i(260649),	-- Vibrant Vortex
-			i(260650),	-- Elemental Debris
 			i(260654),	-- Abrasive Sand
-			i(260656),	-- Perforated Wing
-			i(260658),	-- Crystal Rock Shard
 			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
 			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
 			i(260675),	-- Luminous Seeds
-			i(260676),	-- Unremarkable Crystal
 			i(260677),	-- Void Flakes
 			i(260678),	-- Sharp Obsidian Chunk
 			i(260679),	-- Fleshless Bone
@@ -5155,8 +4962,6 @@ root(ROOTS.Unsorted, {
 			-- Boon
 			i(267235),	-- Boon of Vitality
 			i(267236),	-- Boon of Speed
-			i(267237),	-- Boon of Power
-			i(267238),	-- Boon of Potency
 			i(267240),	-- Boon of Fortitude
 			i(267241),	-- Boon of Abstinence
 			i(267242),	-- Boon of Speed
@@ -5262,10 +5067,6 @@ root(ROOTS.Unsorted, {
 			i(267641),	-- Tarnished Silvermoon Suncrest
 			i(267642),	-- Worn Amani Heartstring Pendant
 			i(267643),	-- Worn Amani Totemstring
-
-			-- Misc Boon
-			i(267648),	-- Boon of Vigor
-			i(267649),	-- Boon of Vigor
 
 			-- Misc
 			i(267650),	-- Blood Knight Training Manual

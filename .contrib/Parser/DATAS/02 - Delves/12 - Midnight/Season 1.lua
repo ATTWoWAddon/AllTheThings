@@ -20,7 +20,7 @@ local ALL_REGULAR_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
-	-- SHADOWGUARD_POINT,	-- MAPID MISSING
+	SHADOWGUARD_POINT,
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
@@ -33,7 +33,7 @@ local ALL_THE_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
-	-- SHADOWGUARD_POINT,	-- MAPID MISSING
+	SHADOWGUARD_POINT,
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
@@ -55,53 +55,95 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		})),
 		n(CURIO, {
 			--Combat
-			i(249220),	-- Mantle of Holy Light // alpha
+			i(257755),	-- Holy Bounding Hand Grenade
+			i(249220),	-- Mantle of Stars
 			i(249222),	-- Nether Entropic Kris
+			i(249221),	-- Sanctum's Edict
 			--Utility
 			i(249226),	-- Ebon Crown of Subjugation
-			i(249225),	-- Mandate of Sacred Death // alpha
-			i(249224),	-- Motionless Nulltide // alpha
+			i(249225),	-- Mandate of Sacred Death
+			i(249224),	-- Motionless Nulltide
+			i(257866),	-- Overflowing Voidspire
+			i(257768),	-- Time Lost Edict
 		}),
 		mapped(n(DELVE_COMPLETION,  bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			-- Currently unaware of objectIDs so treated just as reward
 			i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 			i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
+			i(252415),	-- Trovehunter's Bounty
+			--Blessings
+			i(264669),	-- Blessing of Potency
+			i(264670),	-- Blessing of Zeal
 			i(260913),	-- Crimson Blessing
 			i(262389),	-- Veiled Blessing // alpha
 			--
 			n(BOUNTIFUL, bubbleDownFiltered({
 				["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
 			},FILTERFUNC_itemID,{
-				--["provider"] = { "o", XXXXX },	-- Bountiful Coffer
+				["provider"] = { "o", 584514 },	-- Bountiful Coffer
 				["groups"] = {
-					filter(BACK_F, {
-						i(249624),	-- Osseoclad Paledrape
+					n(ARMOR, {
+						filter(BACK_F, {
+							i(249624),	-- Osseoclad Paledrape
+						}),
+						filter(CLOTH, {
+							i(249634),	-- Sprawling Fibershells
+							i(249635),	-- Sprawling Rhizomecord
+							i(249630),	-- Sprawling Rootpads
+							i(249633),	-- Sprawling Rootstockings
+							i(249629),	-- Sprawling Rootunic
+							i(249632),	-- Sprawling Stoloncollar
+							i(249631),	-- Sprawling Tendrils
+							i(249636),	-- Sprawling Wristroots
+						}),
+						filter(FINGER_F, {
+							i(249620),	-- Vibrant Wilderloop // alpha
+							i(249621),	-- Voodoo Band
+						}),
+						filter(LEATHER, {
+							-- Alpha data
+							i(249638),	-- Osseoclad Bonecrushers
+							i(249641),	-- Osseoclad Bonesteppers
+							i(249644),	-- Osseoclad Ivory Wrist
+							i(249637),	-- Osseoclad Marrowvest
+							i(249642),	-- Osseoclad Razorspaulders
+							i(249640),	-- Osseoclad Saberteeth
+							i(249639),	-- Osseoclad Spinegrapplers
+							i(249643),	-- Osseoclad Waistbone
+						}),
+						filter(MAIL, {
+							i(249652),	-- Elder Mossbands
+							i(249651),	-- Elder Mosscinch
+							i(249646),	-- Elder Mossclogs
+							i(249647),	-- Elder Mossfeelers
+							i(249648),	-- Elder Mosshorns
+							i(249645),	-- Elder Mossmail
+							i(249649),	-- Elder Mossvein Breeches
+							i(249650),	-- Elder Mossvein Greatleaves
+						}),
+						filter(NECK_F, {
+							i(249626),	-- Verdant Sprigstrand // alpha
+						}),
+						filter(PLATE, {
+							i(249628),	-- Rampant Bramblecloack
+							i(249657),	-- Rampant Bramblegreaves
+							i(249653),	-- Rampant Brambleplate
+							i(249660),	-- Rampant Briarcuffs
+							i(249656),	-- Rampant Briarhelm
+							i(249655),	-- Rampant Creepers
+							i(249654),	-- Rampant Thistlestompers
+							i(249658),	-- Rampant Thornmantles
+							i(249659),	-- Rampant Thornstrap
+						}),
+						filter(TRINKET_F, {
+							--TODO: They probably gonna exist outside of season but idk?
+							i(251787),	-- Sealed Chaos Urn
+						}),
 					}),
-					filter(CLOTH, {
-					}),
-					filter(FINGER_F, {
-						i(249620),	-- Vibrant Wilderloop // alpha
-					}),
-					filter(LEATHER, {
-						-- Alpha data
-						i(249638),	-- Osseoclad Bonecrushers
-						i(249641),	-- Osseoclad Bonesteppers
-						i(249644),	-- Osseoclad Ivory Wrist
-						i(249637),	-- Osseoclad Marrowvest
-						i(249642),	-- Osseoclad Razorspaulders
-						i(249640),	-- Osseoclad Saberteeth
-						i(249639),	-- Osseoclad Spinegrapplers
-						i(249643),	-- Osseoclad Waistbone
-					}),
-					filter(MAIL, {
-					}),
-					filter(NECK_F, {
-						i(249626),	-- Verdant Sprigstrand // alpha
-					}),
-					filter(PLATE, {
-					}),
-					filter(TRINKET_F, {
-						--TODO: They probably gonna exist outside of season but idk?
+					n(WEAPONS, {
+						i(259462),	-- Thorneedle
+						i(260187),	-- Underbrush Render
+						i(262731),	-- Wildthorn Razorfang
 					}),
 				},
 			})),
@@ -144,16 +186,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
 					--i(254675),	-- Ancient Curio (QS!)
 					-- Boons (Renown 1)
-					i(260884),	-- Boon of Abstinence (Rare) // alpha
+					i(260884),	-- Boon of Abstinence (Rare)
 					i(260911),	-- Boon of Fortitude (Rare)
 					i(260878),	-- Boon of Possibilities (Rare)
 					i(267239),	-- Boon of Possibilities (Epic)
 					i(260882),	-- Boon of Potency (Rare)
+					i(267238),	-- Boon of Potency (Epic)
 					i(260879),	-- Boon of Power (Rare)
+					i(267237),	-- Boon of Power (Epic)
 					i(267647),	-- Boon of Vigor (Uncommon)
+					i(267649),	-- Boon of Vigor (Rare)
+					i(267648),	-- Boon of Vigor (Epic)
 					i(260910),	-- Boon of Vitality (Rare) // alpha
 				},
 			}),
+			--o(584515, {	-- Bountiful Heavy Trunk
+			--	["groups"] = {
+			--	},
+			--}),
 			--o(584518, {	-- Bountiful Heavy Trunk
 			--	["groups"] = {
 			--	},
@@ -166,10 +216,28 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			--	["groups"] = {
 			--	},
 			--}),
-			o(584512),	-- Nemesis Strongbox (Poor)
+			--o(584512),	-- Nemesis Strongbox (Poor)
 			o(584511, {	-- Nemesis Strongbox (Uncommon)
 				["groups"] = {
 					i(268297),	-- Rattling Bag o' Gold
+				},
+			}),
+			--o(584509),	-- Nemesis Strongbox (Rare)
+			o(584508, {	-- Nemesis Strongbox (Epic)
+				["groups"] = {
+					i(254869),	-- Chunk of Companion Experience (Epic)
+					-- TODO: Don't ask me, ask Blizzard.
+				},
+			}),
+			o(581922),	-- Hidden Trove
+			o(584503, {	-- Grand Sanctified Spoils (Rare, if it has different version of it)
+				["groups"] = {
+					i(254983),	-- Assassin's Subtle Tea
+				},
+			}),
+			o(584504, {	-- Sanctified Spoils
+				["groups"] = {
+					i(254983),	-- Assassin's Subtle Tea
 				},
 			}),
 		}))),
@@ -177,11 +245,73 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(242398, {	-- Naleidea Rivergleam
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
+					i(263178, {	-- Delver's Starter Kit
+						--["cost"] = {{"c", UNDERCOIN, 0 }},
+						--["questID"] = ???,
+					}),
+					i(263188, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						--["questID"] = ???,
+					}),
+					i(263191, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						--["questID"] = ???,
+					}),
+					i(253342, {	-- Beacon of Hope
+						["cost"] = {{"c", UNDERCOIN, 5000 }},
+						--["questID"] = ???,
+					}),
 				},
 			}),
 			n(242399, {	-- Telemancer Astrandis
 				["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
+					n(DECOR, {
+						i(263996, {	-- Twilight Tabernacle (DECOR!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							--Renown 1
+						}),
+						i(263994, {	-- Fungal Chest (DECOR!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							--Renown 2
+						}),
+						i(264175, {	-- Amani Strongbox (DECOR!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							--Renown 3
+						}),
+						i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							--Renown 4
+						}),
+						i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							--Renown 10
+						}),
+					}),
+					filter(MISC, {
+						i(263179, {	-- Delver's Cosmetic Surprise Bag
+							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							-- Renown 0?
+							--["questID"] = ???,
+						}),
+						i(262951, {	-- Sin'dorei Gravestone
+							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							-- Renown 6
+							--["questID"] = ???,
+						}),
+					}),
+					filter(MOUNTS, {
+						i(262500, {	-- Silvermoon's Arcane Defender (MOUNT!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							-- Renown 5
+						}),
+					}),
+					filter(TOYS, {
+						i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
+							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							-- Renown 7
+						}),
+					}),
 				},
 			}),
 		})),

@@ -29,8 +29,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			filter(NECK_F, {
 			}),
 			filter(PLATE, {
+				i(256994),	-- Steelbark Casque
+				i(256981),	-- Steelbark Chestguard
+				i(256977),	-- Steelbark Gauntlets
 				i(257017),	-- Steelbark Girdle
+				i(257002),	-- Steelbark Greaves
+				i(256973),	-- Steelbark Sabatons
 				i(256998),	-- Steelbark Shoulderguards
+				i(256965),	-- Steelbark Vambraces
 			}),
 			filter(TRINKET_F, {
 				i(251782),	-- Withered Saptor's Paw

@@ -159,7 +159,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(246342, {	-- Mustyfur Fel Snooter (PET!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		-- #if ANYCLASSIC
 		i(198665, {	-- Pebble's Pebble
@@ -370,7 +370,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		iensemble(246989, {	-- Ensemble: Felreaver's Arcane Attire
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 
 		------ Fireplume Set ------
@@ -426,7 +426,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		iensemble(246291, {	-- Ensemble: Lana'thel's Crimson Couture
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 
 		------ Murloc Shells Set ------
@@ -703,7 +703,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { ADDED_9_0_2 },
@@ -771,7 +771,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_0_7, },
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.99999" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238", "added 11.2.5.64395", "removed 11.2.7.64978" },	-- Removed Jan 6, 2025, Added Nov 17 2025, Removed Jan 5 2026
 		}),
 		-- #if AFTER 11.2.5
 		i(248090, {	-- Viridian Phase-Hunter (MOUNT!)
@@ -783,7 +783,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 		i(246920, {	-- Void-Razed Elekk (MOUNT!)
-			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },

@@ -1141,12 +1141,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 254765 },	-- Perodius
 				["coord"] = { 51.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 			}),
-			--Delve
-			q(93428, {	-- Delver's Call: Shadowguard Point
-				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
-				--["provider"] = { "o", XXXXX },	-- Shadowguard Point
-				["coord"] = { 37.6, 51.9, MAP.MIDNIGHT.VOIDSTORM },
-			}),
 			--Slayer's Rise
 			q(91197, {	-- Collecting Remains
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark

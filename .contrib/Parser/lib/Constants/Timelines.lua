@@ -667,7 +667,7 @@ DELETED_12_0_0 = "deleted 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch 
 REMOVED_MID_LAUNCH = "removed 12.0.1";					-- Midnight 12.0.1/Pre-Patch ends on TODO
 
 
--- Temporay using X before we know the correct number.
+-- Temporary using X before we know the correct number.
 -- We want to show everything in pre-patch already, so leave it all as 12.0.0 for now.
 CREATED_12_0_X_LAUNCH = "created 12.0.0";				-- Midnight 12.0.x Launch on March 2nd, 2026
 ADDED_12_0_X_LAUNCH = "added 12.0.0";					-- Midnight 12.0.x Launch on March 2nd, 2026

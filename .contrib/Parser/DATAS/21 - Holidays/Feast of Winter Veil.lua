@@ -1432,7 +1432,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		})),
-		q(91041, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, "removed 11.2.7.99999" } }, {	-- A Gently Shaken Gift (2025)
+		q(91041, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
 			["description"] = "Gift from 2025.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
@@ -1810,7 +1810,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(232653),	-- Portentous Present (PET!)
 			},
 		})),
-		q(91042, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, "removed 11.2.7.99999" } }, {	-- A Winter Veil Gift (2025)
+		q(91042, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
 			["description"] = "Gift from 2025.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift

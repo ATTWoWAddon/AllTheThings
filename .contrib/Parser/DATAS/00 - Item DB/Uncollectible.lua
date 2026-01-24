@@ -2611,10 +2611,12 @@ i(244041);	-- Budding Seed
 i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
 i(263516);	-- Cosmic Ritual Bowl
+i(260658);	-- Crystal Rock Shard
 i(238484);	-- Damp Washcloth
 i(260687);	-- Decaying Leather
 i(238488);	-- Definitely a Rock
 i(260647);	-- Digested Human Hand
+i(260650);	-- Elemental Debris
 i(220262);	-- Elongated Proboscis
 i(238486);	-- Empty Can
 i(247672);	-- Eversong Fizz
@@ -2631,6 +2633,8 @@ i(260657);	-- Holey Organ
 i(238496);	-- Hunk O' Junk
 i(260604);	-- Insect Shedding
 i(238487);	-- Kickin' Can
+i(260611);	-- Large Bestial Scale
+i(260617);	-- Large Broken Teeth
 i(260653);	-- Large Lightbloom Fungi
 i(260606);	-- Light and Shaggy Fur
 i(260618);	-- Light-Infused Leaves
@@ -2641,6 +2645,7 @@ i(260651);	-- Lustrous Wildlife Pelt
 i(260693);	-- Mossy Lump of Dirt
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
+i(260656);	-- Perforated Wing
 i(243845);	-- Petalwrap Sack
 i(243844);	-- Petalwrap Bag
 i(260643);	-- Pile of Feathers
@@ -2664,8 +2669,10 @@ i(260648);	-- Tattered Clothes
 i(238944);	-- Torn Material
 i(238479);	-- Torn Caster's Net
 i(260614);	-- Unrecognizable Organ
+i(260676);	-- Unremarkable Crystal
 i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
+i(260615);	-- Void Dust Residue
 i(260645);	-- Water Filled Organ
 
 -- Profession

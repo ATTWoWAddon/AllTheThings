@@ -22,12 +22,38 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 	},
 });
 
+RAZER = createHeader({
+	readable = "Razer Giveaway",
+	icon = 132529,
+	text = {
+		en = "Razer",
+		cn = "雷蛇",
+	},
+	description = {
+		en = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
+	},
+});
+
 root(ROOTS.Promotions, {
 	n(MIDNIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_12_0_0 },
 		["groups"] = {
 			-- "Pre Season"
-
+			i(263301, {	-- Cuddly Green Grrgle (DECOR!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "removed 12.0.1.99999" },	-- Removed February 17th, 2026
+			}),
+			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
+				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\nThe promotion runs between January 20th through May 5th, 2026.",
+				["timeline"] = { "removed 12.0.1.99999" },
+			}),
+			n(RAZER, sharedDataSelf({
+				["timeline"] = { "removed 12.0.1.99999" },
+			}, {
+				i(190539),	-- Coral-Stalker Waveray (MOUNT!)
+				i(107951),	-- Iron Skyreaver (MOUNT!)
+				i(232519),	-- Razeshi B. (PET!)
+			}));
 			-- Season 1
 
 			-- Season 2

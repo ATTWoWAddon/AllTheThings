@@ -57,7 +57,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(587240, {	-- Mysterious Domanaar Vessel
 				["maps"] = { MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = {
-					i(258917),	-- Tarnished Dawnlit Spellbinder's Pads // could be world drop?
 				},
 			}),
 			o(587194, {	-- Stashed Singularity Supplies

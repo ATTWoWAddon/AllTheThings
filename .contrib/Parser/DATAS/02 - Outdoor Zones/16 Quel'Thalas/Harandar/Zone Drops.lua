@@ -13,7 +13,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				filter(MAIL, {
 				}),
 				filter(PLATE, {
-					i(258942),	-- Tarnished Dawnlit Commander's Greatbelt (unsure, could be Midnight world drop greens?)
 				}),
 			}),
 		}),
