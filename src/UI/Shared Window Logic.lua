@@ -398,3 +398,6 @@ end)
 app.AddEventHandler("OnStartup", function()
 	ApplyAllWindowColors();
 end)
+app.AddEventHandler("OnRefreshComplete", function()
+	app.HandleEvent("OnUpdateWindows", true)
+end, true)

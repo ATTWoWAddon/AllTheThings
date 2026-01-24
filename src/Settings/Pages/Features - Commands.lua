@@ -1,5 +1,4 @@
 local _, app = ...;
-if app.IsClassic then return; end	-- Disable this in Classic
 local L, settings = app.L, app.Settings;
 
 -- Settings: Commands Page

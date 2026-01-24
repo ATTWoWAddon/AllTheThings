@@ -98,9 +98,9 @@ if child.separator then
 else
 	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
-app.AddEventHandler("OnSettingsRefreshed", function()
+headerMode.OnRefresh = function()
 	headerMode:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
-end);
+end
 
 local function presetStore()
 	-- Only store our settings if we haven't restored yet, not if we're swapping through presets
@@ -1107,22 +1107,11 @@ function(self)
 end)
 checkboxNoLevelFilter:SetATTTooltip(L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP)
 checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
-if app.IsClassic then
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		if settings:Get("Filter:ByLevel") then
-			settings:Refresh();
-
-			-- TODO: Investigate if this is necessary of if the above code handles that.
-			app:RefreshDataCompletely("PLAYER_LEVEL_UP");
-		end
-	end);
-else
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		if settings:Get("Filter:ByLevel") then
-			settings:Refresh();
-		end
-	end);
-end
+app.AddEventHandler("OnPlayerLevelUp", function()
+	if settings:Get("Filter:ByLevel") then
+		settings:Refresh();
+	end
+end);
 
 local checkboxNoSkillLevelFilter;
 if app.GameBuildVersion < 20000 then

@@ -1427,10 +1427,6 @@ local function RefreshData(source, trigger)
 		app.HandleEvent("OnRefreshComplete");
 	end);
 end
-function app:RefreshDataCompletely(source, trigger)
-	app.HasPendingUpdate = true;
-	RefreshData("RefreshDataCompletely:" .. source, trigger);
-end
 function app:RefreshDataQuietly(source, trigger)
 	RefreshData("RefreshDataQuietly:" .. source, trigger);
 end

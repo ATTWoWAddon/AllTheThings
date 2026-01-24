@@ -2467,9 +2467,6 @@ function app:GetWindow(suffix)
 	return app.Windows[suffix] or BuildWindow(suffix);
 end
 
-app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
-
-
 -- Dynamic Popouts for Quest Chains and other Groups
 local function OnInitForPopout(self, questID, group)
 	if group.questID or group.sourceQuests then
