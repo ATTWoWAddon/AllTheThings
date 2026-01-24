@@ -157,10 +157,7 @@ src\UI\Instance Difficulty Icon.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
 src\UI\World Map Button.lua
-
-# Window Logic Overhaul
-src\UI\Shared Window Logic.lua
-src\UI\Classic Window Logic.lua
+src\UI\Window Definitions.lua
 
 # Load expansion specific category database.
 db\Cata\Categories.xml
