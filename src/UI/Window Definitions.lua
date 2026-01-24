@@ -2278,10 +2278,9 @@ local FieldDefaults = {
 	SetData = function(self, data)
 		-- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
 		-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
-		if self.data ~= data then
+		if data then
 			data.window = self;
 			self.data = data;
-			--self:Rebuild();
 		end
 	end,
 	BuildCategory = BuildCategory,
@@ -2892,6 +2891,11 @@ function app:CreateMiniListForGroup(group)
 		OnInit = function(self)
 			OnInitForPopout(self, (group.OnPopout and group:OnPopout()) or group)
 			self:AssignChildren();
+		
+			-- always expand all groups on initial creation if enabled
+			if app.Settings:GetTooltipSetting("Expand:MiniList") then
+				self:ExpandData(true);
+			end
 			self:Update(true);
 		end,
 		OnLoad = function(self, settings)
@@ -3304,29 +3308,18 @@ if app.IsClassic then
 				app.MergeObject(self.data.g, relatedThingsGroup);
 			end
 		end
-		if not self.data.expanded then
-			ExpandGroupsRecursively(self.data, true, true);
-		end
-		return true;
 	end
 else
 	local DelayedCallback = app.CallbackHandlers.DelayedCallback
 	OnInitForPopout = function(self, group)
-		-- app.PrintDebug("group")
-		-- app.PrintTable(group)
-
 		-- being a search result means it has already received certain processing
 		if not group.isBaseSearchResult then
 			local skipFull = app.GetRelativeValue(group, "skipFull")
 			-- clone/search initially so as to not let popout operations modify the source data
-			group = app.__CreateObject(group);
+			group = app.CloneClassInstance(group);
 			self:SetData(group);
+			group.visible = true;
 			group.skipFull = skipFull
-
-			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
-			-- app.PrintTable(group)
-			-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
-			-- app.PrintTable(group.g)
 
 			-- make a search for this group if it is an item/currency/achievement and not already a container for things
 			local key = group.key;
@@ -3335,70 +3328,19 @@ else
 				app.SetSkipLevel(2);
 				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 				app.SetSkipLevel(0);
-
-				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
-				-- app.PrintTable(groupSearch)
-				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
-				-- app.PrintTable(groupSearch.g)
-				-- Sometimes we want a specific Thing (/att i:147770)
-				-- but since it is keyed by a different ID (spell 242155)
-				-- this re-search replaces with an alternate item (147580)
-				-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
 				app.MergeProperties(group, groupSearch, true)
-				-- g is not merged automatically
-				-- app.PrintDebug("Copy .g",#groupSearch.g)
-				---@diagnostic disable-next-line: need-check-nil
 				group.g = groupSearch.g
-				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
-				-- app.PrintTable(group.g)
-				-- This isn't needed for the example noted anymore...
-				-- if not group.key and key then
-				-- 	group.key = key;	-- Dunno what causes this in app.GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
-				-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
-				-- end
-
-				-- app.PrintDebug(Colorize("merge",app.Colors.ChatLink))
-				-- app.PrintTable(group)
-				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
-				-- app.PrintTable(group.g)
 			end
 		else
 			self:SetData(group);
 		end
-
-		group.isPopout = true
-
-		-- Insert the data group into the Raw Data table.
-		-- app.PrintDebug(Colorize("popout",app.Colors.ChatLink))
-		-- app.PrintTable(group)
-		-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
-		-- app.PrintTable(group.g)
-		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
-		-- if not group.isBaseSearchResult then
-		-- 	-- make a search for this group if it is an item/currency and not already a container for things
-		-- 	if not group.g and (group.itemID or group.currencyID) then
-		-- 		local cmd = group.key .. ":" .. group[group.key];
-		-- 		group = app.GetCachedSearchResults(app.SearchForLink, cmd);
-		-- 	else
-		-- 		group = CreateObject(group);
-		-- 	end
-		-- end
-
-		-- TODO: Crafting Information
-		-- TODO: Lock Criteria
-
 
 		app.HandleEvent("OnNewPopoutGroup", self.data)
 		-- Sort any content added to the Popout data by the Global sort (not for popped out difficulty groups)
 		if not (self.data.difficultyID or self.data.instanceID) then
 			app.Sort(self.data.g, app.SortDefaults.Global)
 		end
-
-		self:AssignChildren();
-		-- always expand all groups on initial creation if enabled
-		if app.Settings:GetTooltipSetting("Expand:MiniList") then
-			ExpandGroupsRecursively(self.data, true, true);
-		end
+		
 		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if self.isQuestChain then
 			local oldUpdate = self.Update;
@@ -3408,9 +3350,10 @@ else
 				local oldQuestCollection = app.Settings.Collectibles.Quests;
 				app.Settings.Collectibles.Quests = true;
 				app.Settings.AccountWide.Quests = false;
-				oldUpdate(self, ...);
+				local result = oldUpdate(self, ...);
 				app.Settings.Collectibles.Quests = oldQuestCollection;
 				app.Settings.AccountWide.Quests = oldQuestAccountWide;
+				return result;
 			end;
 			local oldRefresh = self.Refresh;
 			self.Refresh = function(self, ...)
@@ -3419,16 +3362,14 @@ else
 				local oldQuestCollection = app.Settings.Collectibles.Quests;
 				app.Settings.Collectibles.Quests = true;
 				app.Settings.AccountWide.Quests = false;
-				oldRefresh(self, ...);
+				local result = oldRefresh(self, ...);
 				app.Settings.Collectibles.Quests = oldQuestCollection;
 				app.Settings.AccountWide.Quests = oldQuestAccountWide;
+				return result;
 			end;
 			-- Populate the Quest Rewards
 			-- think this causes quest popouts to somehow break...
 			-- app.TryPopulateQuestRewards(group)
-
-			-- Then trigger a soft update of the window afterwards
-			DelayedCallback(self.Update, 0.25, self);
 		else
 			-- Non-Quest Chains should filter for Timerunning
 			local oldDefaultUpdate = self.DefaultUpdate;
