@@ -84,13 +84,13 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}, {
 				i(190539, {	-- Coral-Stalker Waveray (MOUNT!)
-					["description"] = "Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
+					["description"] = "Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
 				}),
 				i(107951, {	-- Iron Skyreaver (MOUNT!)
-					["description"] = "Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
+					["description"] = "Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
 				}),
 				i(232519, {	-- Razeshi B. (PET!)
-					["description"] = "Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
+					["description"] = "Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",
 				}),
 			}));
 			n(STEELSERIES, sharedDataSelf({
@@ -98,13 +98,13 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}, {
 				i(112327, {	-- Grinning Reaver (MOUNT!)
-					["description"] = "Aquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Editon Collection.",
+					["description"] = "Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
 				i(224576, {	-- Lil' Flameo (PET!)
-					["description"] = "Aquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Editon Collection.",
+					["description"] = "Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
 				i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
-					["description"] = "Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Editon Collection.",
+					["description"] = "Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",
 				}),
 			}));
 			n(TREASURE_OF_AZEROTH, sharedDataSelf({
