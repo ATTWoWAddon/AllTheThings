@@ -1635,7 +1635,6 @@ function app:GetDataCache()
 		end
 
 		local window = app:GetWindow(category)
-		window.AdHoc = true
 		window:SetData(windowData)
 		window:AssignChildren()
 	end
@@ -1664,7 +1663,6 @@ function app:GetDataCache()
 			icon = app.asset("status-unobtainable"),
 			description = "All Hidden ATT Content",
 			font = "GameFontNormalLarge",
-			AdHoc = true
 		})
 		window:SetData(windowData)
 		window:AssignChildren()

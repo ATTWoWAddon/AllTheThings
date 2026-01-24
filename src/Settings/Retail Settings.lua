@@ -185,7 +185,6 @@ local TooltipSettingsBase = {
 		["Currencies"] = true,
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
-		["Updates:AdHoc"] = true,
 		["SocialProgress"] = true,
 
 		-- Features: Reporting
@@ -353,8 +352,6 @@ settings.NewProfile = function(self, key)
 			Unobtainable = {},
 			Filters = {},
 		}
-		-- Use Ad-Hoc for new Profiles, to remove initial lag
-		raw.Tooltips["Updates:AdHoc"] = true
 		AllTheThingsProfiles.Profiles[key] = raw
 		return raw
 	end

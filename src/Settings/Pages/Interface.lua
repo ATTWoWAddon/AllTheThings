@@ -815,20 +815,6 @@ sliderInactiveWindowAlpha:SetScript("OnValueChanged", function(self, newValue)
 	end
 end)
 
-local checkboxDoAdHocUpdates;
-if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this.
-checkboxDoAdHocUpdates = child:CreateCheckBox(L.ADHOC_UPDATES_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"))
-end,
-function(self)
-	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked())
-end)
-checkboxDoAdHocUpdates:SetATTTooltip(L.ADHOC_UPDATES_CHECKBOX_TOOLTIP)
-checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
-checkboxDoAdHocUpdates:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
-end
-
 local checkboxAdjustRowIndents = child:CreateCheckBox(L.ADJUST_ROW_INDENTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Adjust:RowIndents"))
@@ -837,12 +823,8 @@ function(self)
 	settings:SetTooltipSetting("Adjust:RowIndents", self:GetChecked())
 end)
 checkboxAdjustRowIndents:SetATTTooltip(L.ADJUST_ROW_INDENTS_TOOLTIP)
-if checkboxDoAdHocUpdates then
-	checkboxAdjustRowIndents:AlignBelow(checkboxDoAdHocUpdates)
-else
-	checkboxAdjustRowIndents:SetPoint("LEFT", headerListBehavior, 0, 0)
-	checkboxAdjustRowIndents:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
-end
+checkboxAdjustRowIndents:SetPoint("LEFT", headerListBehavior, 0, 0)
+checkboxAdjustRowIndents:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, -10)
 
 local checkboxExpandMiniList = child:CreateCheckBox(L.EXPAND_MINILIST_CHECKBOX,
 function(self)
