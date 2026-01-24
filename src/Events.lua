@@ -119,6 +119,7 @@ local ImmediateEvents = {
 	OnUpdateWindows = true,
 	OnRefreshWindows = true,
 	OnRedrawWindows = true,
+	OnNewPopoutGroup = true,
 	["OnAddExtraMainCategories"] = true,
 	["Fill.OnAddFiller"] = true,
 	["Fill.DefinedSettings"] = true,

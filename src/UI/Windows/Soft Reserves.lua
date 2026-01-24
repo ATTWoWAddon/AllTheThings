@@ -522,7 +522,7 @@ local function CHAT_MSG_WHISPER_HANDLER(text, playerName, _, _, _, _, _, _, _, _
 end
 
 -- Implementation
-SoftReserveWindow = app:CreateWindow("SoftReserves", {
+app:CreateWindow("SoftReserves", {
 	IgnoreQuestUpdates = true,
 	SettingsName = L.SOFT_RESERVES,
 	Commands = { "attsr", "attsoftreserve" },
@@ -1105,6 +1105,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 		return false;
 	end
 });
+SoftReserveWindow = app:GetWindow("SoftReserves");
 
 -- Unit Class Extension
 local SoftReserveUnitOnClick = function(self, button)
