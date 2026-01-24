@@ -354,6 +354,23 @@ local function zoneTextHeaderIDRunner(group, value)
 	value = L.HEADER_NAMES[value]
 	if value then zoneTextNamesRunner(group, { value }); end
 end
+local IsKeyIgnoredForCoord;
+IsKeyIgnoredForCoord = setmetatable({
+	instanceID = app.ReturnTrue,
+	mapID = app.ReturnTrue,
+	objectiveID = app.ReturnTrue,
+	difficultyID = app.ReturnTrue,
+	headerID = function(group)
+		local parent = group.parent;
+		return parent and IsKeyIgnoredForCoord[parent.key](parent);
+	end,
+}, { __index = function(t, key)
+	--print("IsKeyIgnoredForCoord?", key);
+	local func = app.ReturnFalse;
+	t[key] = func;
+	return func;
+end	});
+local cacheGroupForModItemID = {}
 local fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
@@ -373,6 +390,9 @@ local fieldConverters = {
 	end,
 	["catalystID"] = function(group, value)
 		CacheField(group, "catalystID", value);
+	end,
+	["conduitID"] = function(group, id)
+		CacheField(group, "conduitID", id);
 	end,
 	["creatureID"] = cacheCreatureID,
 	["criteriaID"] = function(group, value)
@@ -413,9 +433,15 @@ local fieldConverters = {
 	end,
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
+		if group.headerID then
+			runners[#runners + 1] = function()
+				zoneTextHeaderIDRunner(group, group.headerID);
+			end
+		end
 	end,
 	["itemID"] = function(group, value)
 		CacheField(group, "itemID", value);
+		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
 	end,
 	["otherItemID"] = function(group, value)
 		CacheField(group, "itemID", value);
@@ -468,6 +494,9 @@ local fieldConverters = {
 		CacheField(group, "toyID", value);
 		CacheField(group, "itemID", value);
 	end,
+	["up"] = function(group, up)
+		CacheField(group, "up", up);
+	end,
 
 	-- Complex Converters
 	["altQuests"] = function(group, value)
@@ -497,18 +526,12 @@ local fieldConverters = {
 		return true;
 	end,
 	["coord"] = function(group, coord)
-		-- Retail used this commented out section instead, see which one is better
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
+		if not IsKeyIgnoredForCoord[group.key](group) then
 			return cacheMapID(group, coord[3]);
 		end
 	end,
 	["coords"] = function(group, coords)
-		-- Retail used this commented out section instead, see which one is better
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID or (group.headerID and group.parent and group.parent.instanceID)) then
+		if not IsKeyIgnoredForCoord[group.key](group) then
 			for i=1,#coords do
 				cacheMapID(group, coords[i][3]);
 			end
@@ -595,32 +618,45 @@ local fieldConverters = {
 	end,
 };
 
-local _converter;
-local function _CacheFields(group)
-	local n = 0;
-	local clone, mapKeys, key, value, hasG = {}, nil, nil, nil, nil;
-	for key,value in pairs(group) do
-		if key == "g" then
-			hasG = true;
-		else
-			n = n + 1
-			clone[n] = key;
+-- Item Mod ID conversion for bonus IDs
+postscripts[#postscripts + 1] = function()
+	if #cacheGroupForModItemID == 0 then return end
+	local modItemID,group
+	-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
+	for i=1,#cacheGroupForModItemID do
+		group = cacheGroupForModItemID[i]
+		modItemID = group.modItemID
+		if modItemID then
+			CacheField(group, "modItemID", modItemID)
+			if modItemID ~= group.itemID then
+				CacheField(group, "itemID", modItemID)
+			end
 		end
 	end
-	for i=1,n,1 do
-		key = clone[i];
+	wipearray(cacheGroupForModItemID)
+	-- app.PrintDebug("caching for modItemID done")
+end
+
+-- Item Key Caches
+fieldConverters.mountmodID = fieldConverters.itemID;
+fieldConverters.heirloomID = fieldConverters.itemID;
+
+local _converter;
+local function _CacheFields(group)
+	local mapKeys
+	local hasG = rawget(group, "g")
+	for key,value in pairs(group) do
 		_converter = fieldConverters[key];
 		if _converter then
-			value = group[key];
 			if _converter(group, value) then
-				if not mapKeys then mapKeys = {}; end
-				mapKeys[key] = value;
+				if mapKeys then mapKeys[key] = value
+				else mapKeys = { [key] = value }; end
 			end
 		end
 	end
 	if hasG then
-		for _,subgroup in ipairs(group.g) do
-			_CacheFields(subgroup);
+		for i=1,#hasG do
+			_CacheFields(hasG[i]);
 		end
 	end
 	if mapKeys then
@@ -635,90 +671,8 @@ if app.IsRetail then
 	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
 	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
 	-- make sure we actually get the data that we search for
+	-- CRIEVE NOTE: Gonna need to look closer into this
 	fieldConverters.altQuests = nil;
-	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
-	_CacheFields = function(group)
-		local mapKeys
-		local hasG = rawget(group, "g")
-		for key,value in pairs(group) do
-			_converter = fieldConverters[key];
-			if _converter then
-				if _converter(group, value) then
-					if mapKeys then mapKeys[key] = value
-					else mapKeys = { [key] = value }; end
-				end
-			end
-		end
-		if hasG then
-			for i=1,#hasG do
-				_CacheFields(hasG[i]);
-			end
-		end
-		if mapKeys then
-			for key,value in pairs(mapKeys) do
-				mapKeyUncachers[key](group, value);
-			end
-		end
-	end
-
-	-- Retail has this required modItemID field that complicates everything, so put that here instead.
-	local cacheGroupForModItemID = {}
-	fieldConverters.itemID = function(group, value)
-		CacheField(group, "itemID", value);
-		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
-	end
-	fieldConverters.mountmodID = fieldConverters.itemID;
-	fieldConverters.heirloomID = fieldConverters.itemID;
-	postscripts[#postscripts + 1] = function()
-		if #cacheGroupForModItemID == 0 then return end
-		local modItemID,group
-		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
-		for i=1,#cacheGroupForModItemID do
-			group = cacheGroupForModItemID[i]
-			modItemID = group.modItemID
-			if modItemID then
-				CacheField(group, "modItemID", modItemID)
-				if modItemID ~= group.itemID then
-					CacheField(group, "itemID", modItemID)
-				end
-			end
-		end
-		wipearray(cacheGroupForModItemID)
-		-- app.PrintDebug("caching for modItemID done")
-	end
-
-	-- Retail doesn't have objectives so don't bother checking for it
-	fieldConverters.coord = function(group, coord)
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
-		return cacheMapID(group, coord[3]);
-	end
-	fieldConverters.coords = function(group, coords)
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if rawget(group, "instanceID") or rawget(group, "mapID") or rawget(group, "difficultyID") or (group.headerID and group.parent and group.parent.instanceID) then return end
-		local any
-		for i=1,#coords do
-			any = cacheMapID(group, coords[i][3]) or any
-		end
-		return any;
-	end
-
-	fieldConverters.conduitID = function(group, id)
-		CacheField(group, "conduitID", id);
-	end
-	fieldConverters.up = function(group, up)
-		CacheField(group, "up", up);
-	end
-else
-	-- Classic needs a little help with instances that don't have actual maps... Thanks, SOD.
-	fieldConverters.instanceID = function(group, value)
-		CacheField(group, "instanceID", value);
-		if group.headerID then
-			runners[#runners + 1] = function()
-				zoneTextHeaderIDRunner(group, group.headerID);
-			end
-		end
-	end
 end
 
 CacheFields = function(group, skipMapCaching, cacheName)
