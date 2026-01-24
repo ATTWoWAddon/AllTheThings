@@ -1292,15 +1292,15 @@ app.AddEventHandler("OnStartup", function()
 	-- Okay, now load Prime last.
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
-
-	-- Regenerate the Dynamic Windows
-	for name,settings in pairs(dynamicWindows) do
-		settings.visible = false;
-		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
-	end
 	
 	-- Mark Windows as loaded.
 	AllWindowSettingsLoaded = true;
+
+	-- Regenerate the Dynamic Windows
+	for name,settings in pairs(dynamicWindows) do
+		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
+	end
+	
 	for name, definition in pairs(app.WindowDefinitions) do
 		local settings = AllWindowSettings[name];
 		if settings and settings.visible then
@@ -1751,7 +1751,7 @@ local function BuildWindow(suffix)
 			-- Save Settings on Logout
 			local windowSettings = window:RecordSettings();
 			if windowSettings and onSave then
-				onSave(window, window:RecordSettings());
+				onSave(window, windowSettings);
 			end
 		end,
 	};
@@ -2691,7 +2691,7 @@ local function OnInitForPopout(self, questID, group)
 	end
 
 	self:AssignChildren();
-	UpdateGroups(self.data, self.data.g);
+	app.UpdateGroups(self.data, self.data.g);
 end
 function app:CreateMiniListForGroup(group)
 	-- Is this an achievement criteria or lacking some achievement information?
@@ -2719,11 +2719,15 @@ function app:CreateMiniListForGroup(group)
 	end
 
 	-- Pop Out Functionality! :O
-	local popout = app:CreateWindow(app.GenerateSourceHash(group), {
+	app:CreateWindow(app.GenerateSourceHash(group), {
 		AllowCompleteSound = true,
 		--Debugging = true,
+		Defaults = {
+			["visible"] = true,
+		},
 		OnInit = function(self)
 			OnInitForPopout(self, questID, (group.OnPopout and group:OnPopout()) or group);
+			self:Update(true);
 		end,
 		OnLoad = function(self, settings)
 			self.dynamic = true;
@@ -2743,15 +2747,6 @@ function app:CreateMiniListForGroup(group)
 			end
 		end,
 	});
-	if IsAltKeyDown() then
-		app.AddTomTomWaypoint(popout.data);
-	else
-		if not popout.data.expanded then
-			ExpandGroupsRecursively(popout.data, true, true);
-		end
-		popout:SetVisible(true);
-	end
-	return popout;
 end
 function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.

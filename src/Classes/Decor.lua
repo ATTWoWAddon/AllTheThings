@@ -26,7 +26,7 @@ local pairs
  	= pairs
 
 local IsAccountCached = app.IsAccountCached
-app.AddEventHandler("OnStartupDone", function()
+app.AddEventHandler("OnStartup", function()
 	IsAccountCached = app.IsAccountCached
 end)
 

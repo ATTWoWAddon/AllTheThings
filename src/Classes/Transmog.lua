@@ -1360,10 +1360,10 @@ if app.IsRetail then
 	-- local function CheckForBoundSourceItems()
 	-- 	app.ScanInventory(CheckForUnknownSourceID)
 	-- end
-	local CheckForBoundSourceItems = app.EmptyFunction
+	--local CheckForBoundSourceItems = app.EmptyFunction
 
 	app.AddEventHandler("OnStartup", function()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
 		-- Add information type once ATT starts up
 		app.Settings.CreateInformationType("collectedwarband", { text = "collectedwarband", priority = 11001, HideCheckBox = true, ForceActive = true,
 			Process = function(t, reference, tooltipInfo)
@@ -1385,7 +1385,7 @@ if app.IsRetail then
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.WipeSearchCache()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
-	app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
+	--app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
 end

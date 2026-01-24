@@ -128,6 +128,15 @@ local EventSequence = {
 	OnStartup = {
 		"OnStartupDone"
 	},
+	OnStartupDone = {
+		"OnInit"
+	},
+	OnInit = {
+		"__OnIsReady"
+	},
+	__OnIsReady = {
+		"OnReady"
+	},
 	OnRefreshSettings = {
 		"OnSettingsRefreshed"
 	},
@@ -147,6 +156,10 @@ local EventSequence = {
 		"OnRefreshWindows"
 	},
 }
+app.AddEventHandler("__OnIsReady", function()
+	-- Mark that we're ready now!
+	app.IsReady = true;
+end);
 -- Allows adding an EventSequence entry, preventing any duplication
 app.LinkEventSequence = function(event, followupEvent)
 	if not (event and followupEvent) then

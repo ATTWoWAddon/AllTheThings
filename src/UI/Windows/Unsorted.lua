@@ -22,7 +22,7 @@ app:CreateWindow("Unsorted", {
 			tinsert(achievementHeader.g, achievement);
 			self:Update();
 		end
-		self.data = app.CreateRawText(L.UNSORTED, {
+		self.data = app.CreateRawText(app.Modules.Color.Colorize(L.UNSORTED, app.Colors.ChatLinkError), {
 			title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.UNSORTED_DESC_2,

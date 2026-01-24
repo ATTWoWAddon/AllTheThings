@@ -359,8 +359,6 @@ app.RefreshCollections = function()
 
 	app.CallbackHandlers.AfterCombatCallback(RefreshCollections)
 end
-app.AddEventHandler("OnReady", app.RefreshCollections)
-
 else	-- Classic
 local RefreshCollections = function()
 	if InCombatLockdown() then
@@ -388,6 +386,6 @@ app.RefreshCollections = function()
 	IsRefreshing = true
 	app:StartATTCoroutine("RefreshingCollections", RefreshCollections)
 end
--- TODO: test Classic with this as 'OnReady'
-app.AddEventHandler("OnInit", app.RefreshCollections)
 end
+
+app.AddEventHandler("OnReady", app.RefreshCollections)

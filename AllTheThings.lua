@@ -49,7 +49,6 @@ local TryColorizeName = app.TryColorizeName;
 local MergeProperties = app.MergeProperties
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetRelativeValue = app.GetRelativeValue
-local ATTAccountWideData;
 
 local
 CreateObject,
@@ -1145,8 +1144,6 @@ end)();
 
 
 
-
-
 do	-- Main Data
 -- Returns {name,icon} for a known HeaderConstants NPCID
 local function SimpleHeaderGroup(npcID, t)
@@ -1690,134 +1687,6 @@ end
 
 end	-- Dynamic/Main Data
 
-do -- Setup and Startup Functionality
--- Creates the data structures and initial 'Default' profiles for ATT
-app.SetupProfiles = function()
-	-- base profiles containers
-	local ATTProfiles = {
-		Profiles = {},
-		Assignments = {},
-	};
-	AllTheThingsProfiles = ATTProfiles;
-	local default = app.Settings:NewProfile(DEFAULT);
-	-- copy various existing settings that are now Profiled
-	if AllTheThingsSettings then
-		-- General Settings
-		if AllTheThingsSettings.General then
-			for k,v in pairs(AllTheThingsSettings.General) do
-				default.General[k] = v;
-			end
-		end
-		-- Tooltip Settings
-		if AllTheThingsSettings.Tooltips then
-			for k,v in pairs(AllTheThingsSettings.Tooltips) do
-				default.Tooltips[k] = v;
-			end
-		end
-		-- Seasonal Filters
-		if AllTheThingsSettings.Seasonal then
-			for k,v in pairs(AllTheThingsSettings.Seasonal) do
-				default.Seasonal[k] = v;
-			end
-		end
-		-- Unobtainable Filters
-		if AllTheThingsSettings.Unobtainable then
-			for k,v in pairs(AllTheThingsSettings.Unobtainable) do
-				default.Unobtainable[k] = v and true or nil;
-			end
-		end
-	end
-
-	-- pull in window data for the default profile
-	for _,window in pairs(app.Windows) do
-		window:RecordSettings();
-	end
-
-	app.print("Initialized ATT Profiles!");
-
-	-- delete old variables
-	AllTheThingsSettings = nil;
-	AllTheThingsAD.UnobtainableItemFilters = nil;
-	AllTheThingsAD.SeasonalFilters = nil;
-
-	-- initialize settings again due to profiles existing now
-	app.Settings:Initialize();
-end
-
--- Called when the Addon is loaded to process initial startup information
-app.Startup = function()
-	-- app.PrintMemoryUsage("Startup")
-	AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
-	-- Cache the Localized Category Data
-	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
-	app.CategoryNames = nil;
-
-	-- Clear some keys which got added and shouldn't have been
-	AllTheThingsAD.ExplorationDB = nil
-	AllTheThingsAD.ExplorationAreaPositionDB = nil
-
-	-- Character Data Storage
-	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
-	local currentCharacter = characterData[app.GUID];
-	if not currentCharacter then
-		currentCharacter = {};
-		characterData[app.GUID] = currentCharacter;
-	end
-	currentCharacter.build = app.GameBuildVersion;
-	local name, realm = UnitName("player");
-	if not realm then realm = GetRealmName(); end
-	if name then currentCharacter.name = name; end
-	if realm then currentCharacter.realm = realm; end
-	if app.Me then currentCharacter.text = app.Me; end
-	if app.GUID then currentCharacter.guid = app.GUID; end
-	if app.Level then currentCharacter.lvl = app.Level; end
-	if app.FactionID then currentCharacter.factionID = app.FactionID; end
-	if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
-	if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
-	if app.Class then currentCharacter.class = app.Class; end
-	if app.Race then currentCharacter.race = app.Race; end
-	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
-	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
-	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
-	if not currentCharacter.Professions then currentCharacter.Professions = {}; end
-	app.CurrentCharacter = currentCharacter;
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		currentCharacter.lvl = app.Level;
-	end);
-
-	-- Account Wide Data Storage
-	ATTAccountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
-	local accountWideData = ATTAccountWideData;
-	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
-
-	-- Old unused data
-	currentCharacter.CommonItems = nil
-	ATTAccountWideData.CommonItems = nil
-
-	-- Notify Event Handlers that Saved Variable Data is available.
-	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, ATTAccountWideData);
-	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
-	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, ATTAccountWideData);
-
-	-- Update the total account wide death counter.
-	local deaths = 0;
-	for guid,character in pairs(characterData) do
-		if character and character.Deaths and character.Deaths > 0 then
-			deaths = deaths + character.Deaths;
-		end
-	end
-	ATTAccountWideData.Deaths = deaths;
-
-	-- CRIEVE NOTE: Once the Sync Window is moved over from Classic, this can be removed.
-	if not AllTheThingsAD.LinkedAccounts then
-		AllTheThingsAD.LinkedAccounts = {};
-	end
-	-- app.PrintMemoryUsage("Startup:Done")
-end
--- This needs to be the first OnStartup event processed
-app.AddEventHandler("OnStartup", app.Startup, true)
-
 local function PrePopulateAchievementSymlinks()
 	local achCache = app.SearchForFieldContainer("achievementID")
 	-- app.PrintDebug("FillAchSym")
@@ -1842,25 +1711,89 @@ local function PrePopulateAchievementSymlinks()
 end
 app.AddEventHandler("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
 
--- Function which is triggered after Startup
-local function InitDataCoroutine()
-	local yield = coroutine.yield
-	-- app.PrintMemoryUsage("InitDataCoroutine")
-	-- if IsInInstance() then
-	-- 	app.print("cannot fully load while in an Instance due to Blizzard restrictions. Please Zone out to finish loading ATT.")
-	-- end
 
-	-- Wait for the Data Cache to return something.
-	while not app:GetDataCache() do yield(); end
-	-- Wait for the app to finish OnStartup event, somehow this can trigger out of order on some clients
-	while app.Wait_OnStartupDone do yield(); end
+app.AddEventHandler("OnReady", function()
+	-- warning about debug logging in case it sneaks in we can realize quicker
+	app.PrintDebug("NOTE: ATT debug prints enabled!")
+end);
 
-	local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
-	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
-	local currentCharacter = characterData[app.GUID];
+-- Startup Event
+local ADDON_LOADED_HANDLERS = {
+	[appName] = function()
+		-- Old Saved Variables
+		AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
+		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+		app.CategoryNames = nil;
 
-	-- Clean up other matching Characters with identical Name-Realm but differing GUID
-	Callback(function()
+		-- Clear some keys which got added and shouldn't have been
+		AllTheThingsAD.ExplorationDB = nil
+		AllTheThingsAD.ExplorationAreaPositionDB = nil
+		
+		-- CRIEVE NOTE: Once the Sync Window is moved over from Classic, this can be removed.
+		if not AllTheThingsAD.LinkedAccounts then
+			AllTheThingsAD.LinkedAccounts = {};
+		end
+
+		-- clear harvest data on load in case someone forgets
+		AllTheThingsHarvestItems = {};
+		
+		-- Character Data Storage
+		local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
+		local currentCharacter = characterData[app.GUID];
+		if not currentCharacter then
+			currentCharacter = {};
+			characterData[app.GUID] = currentCharacter;
+		end
+		currentCharacter.build = app.GameBuildVersion;
+		local name, realm = UnitName("player");
+		if not realm then realm = GetRealmName(); end
+		if name then currentCharacter.name = name; end
+		if realm then currentCharacter.realm = realm; end
+		if app.Me then currentCharacter.text = app.Me; end
+		if app.GUID then currentCharacter.guid = app.GUID; end
+		if app.Level then currentCharacter.lvl = app.Level; end
+		if app.FactionID then currentCharacter.factionID = app.FactionID; end
+		if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+		if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+		if app.Class then currentCharacter.class = app.Class; end
+		if app.Race then currentCharacter.race = app.Race; end
+		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+		if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
+		if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+		if not currentCharacter.Professions then currentCharacter.Professions = {}; end
+		app.CurrentCharacter = currentCharacter;
+		app.AddEventHandler("OnPlayerLevelUp", function()
+			currentCharacter.lvl = app.Level;
+		end);
+		
+		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
+		local currentQuestsCache = currentCharacter.Quests;
+		for questID,completion in pairs(currentQuestsCache) do
+			if completion == 2 then currentQuestsCache[questID] = nil; end
+		end
+
+		-- Account Wide Data Storage
+		local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+		if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+		
+		-- Clean up unused saved variables if they become deprecated after being pushed to Git
+		accountWideData.Campsite = nil
+		accountWideData.WarbandScene = nil
+		accountWideData.TEMP_TWWSources = nil
+		currentCharacter.CommonItems = nil
+		accountWideData.CommonItems = nil
+
+		-- Update the total account wide death counter.
+		local deaths = 0;
+		for guid,character in pairs(characterData) do
+			if character and character.Deaths and character.Deaths > 0 then
+				deaths = deaths + character.Deaths;
+			end
+		end
+		accountWideData.Deaths = deaths;
+		
+		-- Clean up other matching Characters with identical Name-Realm but differing GUID
 		local myGUID = app.GUID;
 		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
 		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
@@ -1940,79 +1873,20 @@ local function InitDataCoroutine()
 			"Allows permanently removing all deleted character backup data",
 			"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
 		})
-	end);
 
-	app.HandleEvent("OnInit")
+		-- Initialize Settings
+		app.Settings:Initialize();
 
-	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
-	local currentQuestsCache = currentCharacter.Quests;
-	for questID,completion in pairs(currentQuestsCache) do
-		if completion == 2 then currentQuestsCache[questID] = nil; end
-	end
-
-	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
-	if not AllTheThingsProfiles then app.CallbackHandlers.DelayedCallback(app.SetupProfiles, 5); end
-
-	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
-	app.Settings:ApplyProfile();
-
-	-- clear harvest data on load in case someone forgets
-	AllTheThingsHarvestItems = {};
-
-	-- warning about debug logging in case it sneaks in we can realize quicker
-	app.PrintDebug("NOTE: ATT debug prints enabled!")
-
-	-- Execute the OnReady handlers.
-	app.HandleEvent("OnReady")
-
-	-- finally can say the app is ready
-	app.IsReady = true;
-	-- app.PrintDebug("ATT is Ready!");
-
-	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
-end
-
-app:RegisterFuncEvent("PLAYER_ENTERING_WORLD", function(...)
-	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
-	app.InWorld = true;
-	app:UnregisterEventClean("PLAYER_ENTERING_WORLD")
-	StartCoroutine("InitDataCoroutine", InitDataCoroutine);
-end);
-end -- Setup and Startup Functionality
-
--- Define Event Behaviours
-app.AddonLoadedTriggers = {
-	[appName] = function()
+		-- Notify Event Handlers that Saved Variable Data is available.
+		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData);
+		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
+		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
+		
 		-- OnLoad events (saved variables are now available)
 		app.HandleEvent("OnLoad")
 	end,
 };
--- Register Event for startup
 app:RegisterFuncEvent("ADDON_LOADED", function(addonName)
-	local addonTrigger = app.AddonLoadedTriggers[addonName];
+	local addonTrigger = ADDON_LOADED_HANDLERS[addonName];
 	if addonTrigger then addonTrigger(); end
 end)
-
-app.Wait_OnStartupDone = true
-app.AddEventHandler("OnStartupDone", function() app.Wait_OnStartupDone = nil end)
-
--- Clean up unused saved variables if they become deprecated after being pushed to Git
-do
-	local function CleanupDeprecatedSavedVariables()
-		ATTAccountWideData.Campsite = nil
-		ATTAccountWideData.WarbandScene = nil
-		ATTAccountWideData.TEMP_TWWSources = nil
-		Callback(app.RemoveEventHandler, CleanupDeprecatedSavedVariables)
-	end
-	app.AddEventHandler("OnAfterSavedVariablesAvailable", CleanupDeprecatedSavedVariables)
-end
-
--- app.AddEventHandler("Addon.Memory", function(info)
--- 	app.PrintMemoryUsage(info)
--- end)
--- app.LinkEventSequence("OnLoad", "Addon.Memory")
--- app.LinkEventSequence("OnInit", "Addon.Memory")
--- app.LinkEventSequence("OnReady", "Addon.Memory")
--- app.LinkEventSequence("OnStartupDone", "Addon.Memory")
--- app.LinkEventSequence("OnWindowFillComplete", "Addon.Memory")
--- app.HandleEvent("Addon.Memory", "AllTheThings.EOF")

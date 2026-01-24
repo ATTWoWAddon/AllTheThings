@@ -1463,7 +1463,7 @@ local function LoadSettingsForWindow(self)
 	self.Settings = settings;
 	self:Load(settings);
 end
-app.AddEventHandler("OnStartup", function()
+app.AddEventHandler("OnInit", function()
 	if AllWindowSettings then
 		return;
 	end
@@ -1515,14 +1515,14 @@ app.AddEventHandler("OnStartup", function()
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
 
+	-- Mark Windows as loaded.
+	AllWindowSettingsLoaded = true;
+
 	-- Regenerate the Dynamic Windows
 	for name,settings in pairs(dynamicWindows) do
-		settings.visible = false;
 		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
 	end
 	
-	-- Mark Windows as loaded.
-	AllWindowSettingsLoaded = true;
 	for name, definition in pairs(app.WindowDefinitions) do
 		local settings = AllWindowSettings[name];
 		if settings and settings.visible then
@@ -1791,8 +1791,6 @@ function app:BuildSearchResponseForField(groups, field)
 		return t;
 	end
 end
-local Callback = app.CallbackHandlers.Callback
-local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
@@ -1828,8 +1826,7 @@ end
 -- and clear on update
 local function UpdateWindow(self, force, got)
 	local data = self.data;
-	-- TODO: remove IsReady check when Windows have OnInit capability
-	if not data or not app.IsReady then return end
+	if not data then return end
 	local visible = self:IsVisible();
 	-- either by Setting or by special windows apply ad-hoc logic
 	local adhoc = self.AdHoc or app.Settings:GetTooltipSetting("Updates:AdHoc")
@@ -1989,8 +1986,33 @@ local FieldDefaults = {
 		UpdateVisibleRowData(self, ...);
 	end,
 	Redraw = function(self)
-		-- Temporary: Retail doesn't have use Redraw yet.
-		self:Refresh();
+		-- If there is no raw data or we aren't visible, then ignore this action.
+		if self:IsShown() and self.rowData then
+			-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
+			local totalRowCount = #self.rowData;
+			if totalRowCount > 0 then
+				-- Ensure that the first row doesn't move out of position.
+				local container = self.Container;
+				local row = container.rows[1];
+				if not row then return; end
+				SetRowData(self, row, row.ref);
+
+				-- Fill the remaining rows up to the (visible) row count.
+				local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
+				for i=2,totalRowCount do
+					row = container.rows[i];
+					if row then
+						SetRowData(self, row, row.ref);
+						totalHeight = totalHeight + row:GetHeight();
+						if totalHeight > containerHeight then
+							break;
+						end
+					else
+						break;
+					end
+				end
+			end
+		end
 	end,
 };
 local ReservedFields = {
@@ -2117,7 +2139,7 @@ local function BuildWindow(suffix)
 			-- Save Settings on Logout
 			local windowSettings = window:RecordSettings();
 			if windowSettings and onSave then
-				onSave(window, window:RecordSettings());
+				onSave(window, windowSettings);
 			end
 		end,
 	};
@@ -2552,6 +2574,550 @@ end
 
 app.AddEventHandler("OnRefreshComplete", function() app.HandleEvent("OnUpdateWindows", true) end, true)
 
+
+-- Dynamic Popouts for Quest Chains and other Groups
+local function OnInitForPopout(self, questID, group)
+	if group.questID or group.sourceQuests then
+		local mainQuest = app.CloneClassInstance(group);
+		if group.parent then mainQuest.sourceParent = group.parent; end
+		if mainQuest.sym then
+			mainQuest.collectible = true;
+			mainQuest.visible = true;
+			mainQuest.progress = 0;
+			mainQuest.total = 0;
+			if not mainQuest.g then
+				local resolved = app.ResolveSymbolicLink(group);
+				if resolved then
+					for i=#resolved,1,-1 do
+						resolved[i] = app.CloneClassInstance(resolved[i]);
+					end
+					mainQuest.g = resolved;
+				end
+			else
+				local resolved = app.ResolveSymbolicLink(group);
+				if resolved then
+					app.MergeObjects(mainQuest.g, resolved);
+				end
+			end
+		end
+
+		if questID then mainQuest.collectible = true; end
+		local g = { mainQuest };
+
+		-- Check to see if Source Quests are listed elsewhere.
+		if questID and not group.sourceQuests then
+			local searchResults = app.SearchForField("questID", questID);
+			if #searchResults > 1 then
+				for i=1,#searchResults,1 do
+					local searchResult = searchResults[i];
+					if searchResult.questID == questID and searchResult.sourceQuests then
+						searchResult = app.CloneClassInstance(searchResult);
+						searchResult.collectible = true;
+						searchResult.g = g;
+						mainQuest = searchResult;
+						g = { mainQuest };
+						break;
+					end
+				end
+			end
+		end
+
+		-- Show Quest Prereqs
+		if mainQuest.sourceQuests then
+			local breakafter = 0;
+			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests, nil, nil, nil;
+			while sourceQuests and #sourceQuests > 0 do
+				subSourceQuests = {}; prereqs = {};
+				for i,sourceQuestID in ipairs(sourceQuests) do
+					sourceQuest = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
+					if #sourceQuest > 0 then
+						local found = nil;
+						for i=1,#sourceQuest,1 do
+							-- Only care about the first search result.
+							local sq = sourceQuest[i];
+							if sq and sq.questID and not sq.objectiveID then
+								questID = sq.questID;
+								if sq.parent and sq.parent.questID == questID then
+									sq = sq.parent;
+								end
+								if app.GroupFilter(sq) then
+									if app.RecursiveCharacterRequirementsFilter(sq) and questID == sourceQuestID then
+										if not found or (not found.sourceQuests and sq.sourceQuests) then
+											found = sq;
+										end
+									end
+								end
+							end
+						end
+						if found then
+							sourceQuest = app.CloneClassInstance(found);
+							sourceQuest.collectible = true;
+							sourceQuest.visible = true;
+							sourceQuest.hideText = true;
+							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+								for j, subsourceQuests in ipairs(found.sourceQuests) do
+									subSourceQuests[subsourceQuests] = true;
+								end
+							end
+						else
+							sourceQuest = nil;
+						end
+					elseif sourceQuestID > 0 then
+						-- Create a Quest Object.
+						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
+					else
+						-- Create a NPC Object.
+						sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
+					end
+
+					-- If the quest was valid, attach it.
+					if sourceQuest then tinsert(prereqs, sourceQuest); end
+				end
+
+				-- Convert the subSourceQuests table into an array
+				sourceQuests = {};
+				if #prereqs > 0 then
+					for sourceQuestID,i in pairs(subSourceQuests) do
+						tinsert(sourceQuests, tonumber(sourceQuestID));
+					end
+					tinsert(prereqs, app.CreateRawText("Upon Completion", {
+						["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
+						["icon"] = 135932,
+						["visible"] = true,
+						["expanded"] = true,
+						["hideText"] = true,
+						["g"] = g,
+					}));
+					g = prereqs;
+					breakafter = breakafter + 1;
+					if breakafter >= 100 then
+						app.print("Likely just broke out of an infinite source quest loop. Please report this to the ATT Discord!");
+						break;
+					end
+				end
+			end
+
+			-- Clean up the recursive hierarchy. (this removed duplicates)
+			sourceQuests = {};
+			prereqs = g;
+			local orig = g;
+			while prereqs and #prereqs > 0 do
+				for i=#prereqs,1,-1 do
+					local o = prereqs[i];
+					if o.key then
+						sourceQuest = o.key .. o[o.key];
+						if sourceQuests[sourceQuest] then
+							-- Already exists in the hierarchy. Uh oh.
+							tremove(prereqs, i);
+						else
+							sourceQuests[sourceQuest] = true;
+						end
+					end
+				end
+
+				if #prereqs > 1 then
+					prereqs = prereqs[#prereqs];
+					if prereqs then prereqs = prereqs.g; end
+					orig = prereqs;
+				else
+					prereqs = prereqs[#prereqs];
+					if prereqs then prereqs = prereqs.g; end
+					orig[#orig].g = prereqs;
+				end
+			end
+
+			-- Clean up standalone "Upon Completion" headers.
+			prereqs = g;
+			repeat
+				local n = #prereqs;
+				local lastprereq = prereqs[n];
+				if lastprereq.text == "Upon Completion" and n > 1 then
+					tremove(prereqs, n);
+					local g = prereqs[n-1].g;
+					if not g then
+						g = {};
+						prereqs[n-1].g = g;
+					end
+					if lastprereq.g then
+						for i,data in ipairs(lastprereq.g) do
+							tinsert(g, data);
+						end
+					end
+					prereqs = g;
+				else
+					prereqs = lastprereq.g;
+				end
+			until not prereqs or #prereqs < 1;
+		end
+		self.data = app.CreateRawText(L.QUEST_CHAIN_REQ, {
+			icon = 135932,
+			description = L.QUEST_CHAIN_REQ_DESC,
+			hideText = true,
+			g = g,
+		});
+	elseif group.sym then
+		self.data = app.CloneClassInstance(group);
+		self.data.collectible = true;
+		self.data.visible = true;
+		self.data.progress = 0;
+		self.data.total = 0;
+		if not self.data.g then
+			local resolved = app.ResolveSymbolicLink(group);
+			if resolved then
+				for i=#resolved,1,-1 do
+					resolved[i] = app.CloneClassInstance(resolved[i]);
+				end
+				self.data.g = resolved;
+			end
+		else
+			local resolved = app.ResolveSymbolicLink(group);
+			if resolved then
+				app.MergeObjects(self.data.g, resolved);
+			end
+		end
+	elseif group.g then
+		-- This is already a container with accurate numbers.
+		self.data = group;
+	else
+		-- This is a standalone item
+		group.visible = true;
+		if not group.g and (group.itemID or group.currencyID) then
+			local cmd = group.link or group.key .. ":" .. group[group.key];
+			group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+		end
+		self.data = group;
+	end
+
+	-- Clone the data and then insert it into the Raw Data table.
+	self.data = app.CloneClassInstance(self.data);
+	self.data.hideText = true;
+	self.data.visible = true;
+	self.data.indent = 0;
+	self.data.total = 0;
+	self.data.progress = 0;
+	app.HandleEvent("OnNewPopoutGroup", self.data);
+	if self.data.g then
+		-- Sort any content added to the Popout data by the Global sort
+		app.Sort(self.data.g, app.SortDefaults.Global)
+	end
+
+	--[[
+	local currencyID = group.currencyID;
+	if currencyID and not self.data.usedtobuy then
+		local searchResults = app.SearchForField("currencyIDAsCost", currencyID);
+		if #searchResults > 0 then
+			local usedtobuy = {};
+			usedtobuy.g = {};
+			usedtobuy.text = "Used to Buy";
+			usedtobuy.icon = 133784;
+			usedtobuy.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
+			usedtobuy.OnTooltip = function(t, tooltipInfo)
+				local total = 0;
+				for _,o in ipairs(t.g) do
+					if o.visible then
+						if o.cost then
+							for k,v in ipairs(o.cost) do
+								if v[1] == "c" and v[2] == currencyID then
+									total = total + (v[3] or 1);
+								end
+							end
+						end
+						if o.providers then
+							for k,v in ipairs(o.providers) do
+								if v[1] == "c" and v[2] == currencyID then
+									total = total + (v[3] or 1);
+								end
+							end
+						end
+					end
+				end
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = "Total Needed",
+					right = total
+				};
+			end
+			app.MergeObjects(usedtobuy.g, searchResults);
+			if not self.data.g then self.data.g = {}; end
+			tinsert(self.data.g, usedtobuy);
+			self.data.usedtobuy = usedtobuy;
+		end
+	end
+
+	local itemID = group.itemID;
+	if itemID and not self.data.tradedin then
+		local searchResults = app.SearchForField("itemIDAsCost", itemID);
+		if #searchResults > 0 then
+			local tradedin = {};
+			tradedin.g = {};
+			tradedin.text = "Used For";
+			tradedin.icon = 133784;
+			tradedin.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
+			tradedin.OnTooltip = function(t, tooltipInfo)
+				local total = 0;
+				for _,o in ipairs(t.g) do
+					if o.visible then
+						if o.cost then
+							for k,v in ipairs(o.cost) do
+								if v[1] == "i" and v[2] == itemID then
+									total = total + (v[3] or 1);
+								end
+							end
+						end
+						if o.providers then
+							for k,v in ipairs(o.providers) do
+								if v[1] == "i" and v[2] == itemID then
+									total = total + (v[3] or 1);
+								end
+							end
+						end
+					end
+				end
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = "Total Needed",
+					right = total
+				};
+			end
+			app.MergeObjects(tradedin.g, searchResults);
+			if not self.data.g then self.data.g = {}; end
+			tinsert(self.data.g, tradedin);
+			self.data.tradedin = tradedin;
+		end
+	end
+	]]--
+
+	local dataKey = self.data.key;
+	if dataKey then
+		if group.cost and type(group.cost) == "table" then
+			local costGroup = app.CreateRawText("Cost", {
+				["description"] = "The following contains all of the relevant items or currencies needed to acquire this.",
+				["icon"] = 133785,
+				["g"] = {},
+			});
+			local costItem;
+			for i,c in ipairs(group.cost) do
+				costItem = nil;
+				if c[1] == "c" then
+					costItem = app.CreateCurrencyClass(c[2]);
+				elseif c[1] == "i" then
+					costItem = app.CreateItem(c[2]);
+				end
+				if costItem then
+					costItem = app.CloneClassInstance(costItem);
+					costItem.visible = true;
+					costItem.OnUpdate = app.AlwaysShowUpdate;
+					app.MergeObject(costGroup.g, costItem);
+				end
+			end
+			if #costGroup.g > 0 then
+				if not self.data.g then self.data.g = {}; end
+				app.MergeObject(self.data.g, costGroup, 1);
+			end
+		end
+
+		if group.providers or group.qgs or group.crs then
+			local sourceGroup = app.CreateRawText("Sources", {
+				["description"] = "The following contains all of the relevant sources.",
+				["icon"] = 133785,
+				["OnUpdate"] = app.AlwaysShowUpdate,
+				["g"] = {},
+			});
+			local sourceItem;
+			if group.providers then
+				for _,p in ipairs(group.providers) do
+					sourceItem = nil;
+					if p[1] == "n" then
+						sourceItem = app.CreateNPC(p[2]);
+					elseif p[1] == "o" then
+						sourceItem = app.CreateObject(p[2]);
+					elseif p[1] == "i" then
+						sourceItem = app.CreateItem(p[2]);
+					end
+					if sourceItem then
+						sourceItem.visible = true;
+						sourceItem.OnUpdate = app.AlwaysShowUpdate;
+						app.MergeObject(sourceGroup.g, sourceItem);
+					end
+				end
+			end
+			if group.crs then
+				for _,creatureID in ipairs(group.crs) do
+					sourceItem = app.CreateNPC(creatureID);
+					sourceItem.visible = true;
+					sourceItem.OnUpdate = app.AlwaysShowUpdate;
+					app.MergeObject(sourceGroup.g, sourceItem);
+				end
+			end
+			if group.qgs then
+				for _,qg in ipairs(group.qgs) do
+					sourceItem = app.CreateNPC(qg);
+					sourceItem.visible = true;
+					sourceItem.OnUpdate = app.AlwaysShowUpdate;
+					app.MergeObject(sourceGroup.g, sourceItem);
+				end
+			end
+			if #sourceGroup.g > 0 then
+				if not self.data.g then self.data.g = {}; end
+				app.MergeObject(self.data.g, sourceGroup, 1);
+			end
+		end
+
+		if not self.data.ignoreSourceLookup then
+			local searchID = self.data[dataKey];
+			if self.data.sym and self.data.sym[1][1] == "partial_achievement" then
+				searchID = self.data.sym[1][2];
+			end
+			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, searchID);
+			if results and #results > 0 then
+				if not self.data.g then self.data.g = {}; end
+				for i,result in ipairs(results) do
+					tinsert(self.data.g, result);
+				end
+			end
+		else
+			-- If this is an achievement, build the criteria within it if possible.
+			local achievementID = group.achievementID;
+			if achievementID then
+				local searchResults = app.SearchForField("achievementID", achievementID);
+				if #searchResults > 0 then
+					for i=1,#searchResults,1 do
+						local searchResult = searchResults[i];
+						if searchResult.achievementID == achievementID and searchResult.criteriaID then
+							if not self.data.g then self.data.g = {}; end
+							app.MergeObject(self.data.g, app.CloneClassInstance(searchResult));
+						end
+					end
+				end
+			end
+		end
+	end
+	if group.GetRelatedThings then
+		local relatedThingsGroup = app.CreateRawText("Related Things", {
+			["description"] = "The following contains things that may be related or relevant to the content.",
+			["icon"] = 133785,
+			["g"] = {},
+		});
+		local relatedThings = {};
+		group.GetRelatedThings(group, relatedThings);
+		for i,o in ipairs(relatedThings) do
+			app.MergeObject(relatedThingsGroup.g, app.CloneClassInstance(o));
+		end
+		if #relatedThingsGroup.g > 0 then
+			if not self.data.g then self.data.g = {}; end
+			app.MergeObject(self.data.g, relatedThingsGroup);
+		end
+	end
+
+	self:AssignChildren();
+	app.UpdateGroups(self.data, self.data.g);
+end
+function app:CreateMiniListForGroup(group)
+	-- Is this an achievement criteria or lacking some achievement information?
+	local achievementID = group.achievementID;
+	if achievementID and group.criteriaID then
+		local searchResults = app.SearchForField("achievementID", achievementID);
+		if #searchResults > 0 then
+			local bestResult;
+			for i=1,#searchResults,1 do
+				local searchResult = searchResults[i];
+				if searchResult.achievementID == achievementID and not searchResult.criteriaID then
+					if not bestResult or searchResult.g then
+						bestResult = searchResult;
+					end
+				end
+			end
+			if bestResult then group = bestResult; end
+		end
+	end
+
+	-- Is this a quest object or objective?
+	local questID, parent = group.questID, group.parent;
+	if questID and parent and parent.questID == questID then
+		group = parent;
+	end
+
+	-- Pop Out Functionality! :O
+	app:CreateWindow(app.GenerateSourceHash(group), {
+		AllowCompleteSound = true,
+		--Debugging = true,
+		Preload = true,
+		Defaults = {
+			["visible"] = true,
+		},
+		OnInit = function(self)
+			OnInitForPopout(self, questID, (group.OnPopout and group:OnPopout()) or group);
+			self:AssignChildren();
+			self:Rebuild();
+		end,
+		OnLoad = function(self, settings)
+			self.dynamic = true;
+			settings.dynamic = true;
+			settings.sourcePath = self.Suffix;
+
+			-- This might be something we can rebuild
+			local key = group.key;
+			if key then
+				settings.key = key;
+				settings.id = group[key];
+			end
+		end,
+		OnSave = function(self, settings)
+			if not settings.visible then
+				ClearSettingsForWindow(self);
+			end
+		end,
+	});
+end
+function app:CreateMiniListFromSource(key, id, sourcePath)
+	-- If we provided the original source path, then we can find the exact element to popout.
+	if sourcePath then
+		local hashes = { (">"):split(sourcePath) };
+		local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+		if ref then
+			app:CreateMiniListForGroup(ref);
+			return;
+		end
+	end
+
+	-- Without this it can't be recovered. :(
+	if key and id then
+		if sourcePath then
+			-- Try to find an exact match.
+			local searchResults = app.SearchForField(key, id);
+			if #searchResults > 0 then
+				for i,ref in ipairs(searchResults) do
+					if app.GenerateSourceHash(ref) == sourcePath then
+						app:CreateMiniListForGroup(ref);
+						return;
+					end
+				end
+			end
+		end
+
+		-- Search for the Link in the database
+		local cmd = key .. ":" .. id;
+		local ref = app.GetCachedSearchResults(app.SearchForLink, cmd);
+		if ref then
+			app:CreateMiniListForGroup(ref);
+			return;
+		end
+
+		-- Search for the field/value pair everywhere in the DB.
+		local t = {};
+		app:BuildFlatSearchResponse(app:GetDataCache().g, key, id, t);
+		if t and #t > 0 then
+			local ref = #t == 1 and t[1] or app.CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
+			if ref then
+				app:CreateMiniListForGroup(ref);
+				return;
+			end
+		end
+	end
+end
+
+if true then return; end
+-- We don't want this.
+local DelayedCallback = app.CallbackHandlers.DelayedCallback
 function app:CreateMiniListForGroup(group, forceFresh)
 	-- Criteria now show their Source Achievement properly
 	-- Achievements already fill out their Criteria information automatically, don't think this is necessary now - Runaway

@@ -334,11 +334,6 @@ settings.Initialize = function(self)
 	settings._Initialize = true
 	-- app.PrintDebug("settings.Initialize:Done")
 end
--- dumb self-referencing...
-local function SettingsInitialize()
-	settings:Initialize()
-end
-app.AddEventHandler("OnLoad", SettingsInitialize)
 local function rawcopy(source, copy)
 	if source and copy then
 		for k,v in pairs(source) do
@@ -418,9 +413,57 @@ settings.SetProfile = function(self, key)
 		AllTheThingsProfiles.Assignments[app.GUID] = key
 	end
 end
+-- Creates the data structures and initial 'Default' profiles for ATT
+settings.SetupProfiles = function()
+	-- base profiles containers
+	local ATTProfiles = {
+		Profiles = {},
+		Assignments = {},
+	};
+	AllTheThingsProfiles = ATTProfiles;
+	local default = app.Settings:NewProfile(DEFAULT);
+	-- copy various existing settings that are now Profiled
+	if AllTheThingsSettings then
+		-- General Settings
+		if AllTheThingsSettings.General then
+			for k,v in pairs(AllTheThingsSettings.General) do
+				default.General[k] = v;
+			end
+		end
+		-- Tooltip Settings
+		if AllTheThingsSettings.Tooltips then
+			for k,v in pairs(AllTheThingsSettings.Tooltips) do
+				default.Tooltips[k] = v;
+			end
+		end
+		-- Seasonal Filters
+		if AllTheThingsSettings.Seasonal then
+			for k,v in pairs(AllTheThingsSettings.Seasonal) do
+				default.Seasonal[k] = v;
+			end
+		end
+		-- Unobtainable Filters
+		if AllTheThingsSettings.Unobtainable then
+			for k,v in pairs(AllTheThingsSettings.Unobtainable) do
+				default.Unobtainable[k] = v and true or nil;
+			end
+		end
+	end
+
+	-- pull in window data for the default profile
+	for _,window in pairs(app.Windows) do
+		window:RecordSettings();
+	end
+
+	app.print("Initialized ATT Profiles!");
+
+	-- delete old variables
+	AllTheThingsSettings = nil;
+end
 -- Applies the profile for the current character as the base settings table
-settings.ApplyProfile = function()
-	if not AllTheThingsProfiles then return end
+settings.ApplyProfile = function(self)
+	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
+	if not AllTheThingsProfiles then settings.SetupProfiles(); end
 
 	local key = settings:GetProfile()
 	RawSettings = AllTheThingsProfiles.Profiles[key] or settings:NewProfile(key)
