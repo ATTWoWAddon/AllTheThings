@@ -3951,27 +3951,10 @@ root(ROOTS.Unsorted, {
 			-- Pet
 			i(263492),	-- Blitzcreek
 
-			-- DEcor
-			i(246686),	-- Grummle Sleeping Bag
-			i(246741),	-- Grummle Bedroll
-			i(246838),	-- Kafa Press
-			i(248402),	-- Grummle Kafa Refinery
-			i(248403),	-- Grummle Tent
-			i(248405),	-- Kafa Creamer
-			i(248406),	-- Legerdemain Lounge Sign Board
-			i(248407),	-- Dalaran Kafa Table
-			i(251472),	-- Pandaren Wooden Cart
-			i(251473),	-- Commander's Kafa Mug
-			i(251474),	-- Ceramic Kafa Mug
-			i(251475),	-- Dalaran Kafa Grinder
-
 			-- Mount
 			i(252011),	-- Brilliant Petalwing
 
 			-- Decor
-			i(252039),	-- Open Sack of Roasted Kafa
-			i(252040),	-- Sealed Sack of Roasted Kafa
-			i(252041),	-- Dalaran Espresso Machine
 			i(253606),	-- "Brunch and a Book" Unframed Painting
 			i(253609),	-- "River's Protectors" Unframed Painting
 			i(253610),	-- "Isolation" Unframed Painting
