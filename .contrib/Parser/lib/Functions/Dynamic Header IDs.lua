@@ -440,6 +440,7 @@ HeaderAssignments = {
 	["Rated"] = -305,
 	["Rated Battlegrounds"] = -304,
 	["Razer"] = -518,
+	["Razer Giveaway"] = -708,
 	["Recruit A Friend"] = -548,
 	["Relentless Gladiator"] = -254,
 	["Relics"] = -97,
@@ -687,4 +688,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -706;
+NextHeaderID = -709;

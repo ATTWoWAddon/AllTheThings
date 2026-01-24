@@ -55995,7 +55995,7 @@ s(58566,108222,{f=7,lvl=39}),
 s(63008,114270,{b=1,f=7,lvl=35}),
 s(78291,134768,{b=1,f=7}),
 s(78323,134712,{b=1,f=7})})}}),
-i(208111,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=21,lvl=70,spellID=417973,g={
+i(208111,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=21,lvl=70,spellID=1286291,g={
 q(77597,{type="hqt"}),
 s(78395,134755,{b=1,f=21}),
 s(2022,5255,{f=21,lvl=5}),
@@ -56009,28 +56009,28 @@ s(78366,134633,{b=1,f=21}),
 s(78397,134805,{b=1,f=21}),
 s(78346,134578,{b=1,f=21}),
 s(78355,134604,{b=1,f=21})}}),
-i(208117,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=32,lvl=70,spellID=417982,g={
+i(208117,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=32,lvl=70,spellID=1286286,g={
 q(77603,{type="hqt"}),
 s(2172,5748,{f=32,lvl=5}),
-s(185703,204674,{awp=120000,b=1,f=32,lvl=40}),
+s(185703,204674,{b=1,f=32,lvl=40,rwp=110002,u=2}),
 s(146520,186414,{awp=120000,b=1,bonusID=451,c=a[697],f=32,lvl=60,spellID=353511}),
 s(146521,186414,{awp=120000,b=1,bonusID=1,c=a[697],f=32,lvl=60,spellID=353511}),
 s(145986,186414,{awp=120000,b=1,bonusID=450,c=a[697],f=32,lvl=60,spellID=353511}),
 s(64176,115294,{b=1,f=32,lvl=35}),
 s(8786,22318,{b=1,f=32,lvl=22}),
 s(78360,134608,{b=1,f=32})}}),
-i(208118,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=33,lvl=70,spellID=417983,g={
+i(208118,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=33,lvl=70,spellID=1286285,g={
 q(77604,{type="hqt"}),
 s(78401,134778,{b=1,f=33}),
 s(78354,134580,{b=1,f=33})}}),
-i(208119,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=31,lvl=70,spellID=417984,g={
+i(208119,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=31,lvl=70,spellID=1286284,g={
 q(77605,{type="hqt"}),
 s(59967,110591,{b=1,f=31,lvl=35}),
 s(78382,134720,{b=1,f=31}),
 s(78391,134749,{b=1,f=31}),
 s(27423,55853,{b=1,f=31,lvl=30,modID=1}),
 s(27696,56376,{b=1,f=31,lvl=32})}}),
-i(208125,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",lvl=70,spellID=417990,g={
+i(208125,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",lvl=70,spellID=1286279,g={
 q(77609,{type="hqt"}),
 s(91018,153641,{f=1,lvl=45,r=1}),
 s(98027,161932,{f=1,lvl=45,r=2}),
@@ -56039,7 +56039,7 @@ s(78376,134727,{b=1,f=1}),
 s(78387,134757,{b=1,f=1}),
 s(4853,13371,{b=1,f=1}),
 s(78353,134589,{b=1,f=1})}}),
-i(208113,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=22,lvl=70,spellID=417975,g={
+i(208113,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=22,lvl=70,spellID=1286289,g={
 q(77599,{type="hqt"}),
 s(58392,108046,{f=22,lvl=35}),
 s(168154,189996,{b=1,f=22,lvl=60}),
@@ -56053,10 +56053,10 @@ s(78380,134717,{b=1,f=22}),
 s(78396,134776,{b=1,f=22}),
 s(9117,23171,{b=1,f=22,lvl=8}),
 s(78349,134577,{b=1,f=22})}}),
-i(208114,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=24,lvl=70,spellID=417976,g={
+i(208114,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=24,lvl=70,spellID=1286288,g={
 q(77600,{type="hqt"}),
 s(34777,68194,{f=23,lvl=6})}}),
-i(208112,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=26,lvl=70,spellID=417974,g={
+i(208112,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=26,lvl=70,spellID=1286290,g={
 q(77598,{type="hqt"}),
 s(78394,134746,{b=1,f=26}),
 s(146670,186410,{b=1,f=26,lvl=60,modID=2,spellID=358682}),
@@ -56067,9 +56067,9 @@ s(146731,187542,{awp=120000,b=1,f=26,lvl=60,modID=5,spellID=357585}),
 s(146729,187542,{awp=120000,b=1,f=26,lvl=60,modID=6,spellID=357585}),
 s(58948,108905,{b=1,f=26}),
 s(78370,134606,{b=1,f=26})}}),
-i(208120,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=20,lvl=70,spellID=417985,g={
+i(208120,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=20,lvl=70,spellID=1286283,g={
 q(77606,{type="hqt"}),
-s(86911,147908,{awp=120000,b=1,f=20,lvl=40}),
+s(86911,147908,{b=1,f=20,lvl=40,rwp=110002,u=2}),
 s(58400,108054,{f=20,lvl=35}),
 s(58494,108150,{f=20,lvl=37}),
 s(58578,108234,{f=20,lvl=39}),
@@ -56093,20 +56093,20 @@ s(1009,2941,{b=1,f=20,lvl=10}),
 s(78362,134610,{b=1,f=20}),
 s(78403,134779,{b=1,f=20}),
 s(78347,134581,{b=1,f=20})}}),
-i(208121,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=34,lvl=70,spellID=417987,g={
+i(208121,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=34,lvl=70,spellID=1286282,g={
 q(77607,{type="hqt"}),
 s(78378,134719,{b=1,f=34}),
 s(1010,2942,{b=1,f=34,lvl=10}),
 s(8785,22317,{b=1,f=34,lvl=22}),
 s(78404,134780,{b=1,f=34})}}),
-i(208110,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=23,lvl=70,spellID=417969,g={
+i(208110,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=23,lvl=70,spellID=1286292,g={
 q(77596,{type="hqt"}),
 s(102700,166405,{b=1,f=23,lvl=40}),
 s(58404,108058,{f=23,lvl=35}),
-s(108405,174228,{awp=120000,f=23,lvl=50}),
+s(108405,174228,{f=23,lvl=50,rwp=110002,u=2}),
 s(58498,108154,{f=23,lvl=37}),
 s(99995,163930,{f=23,lvl=35}),
-s(97059,161118,{awp=120000,f=23,lvl=45}),
+s(97059,161118,{f=23,lvl=45,rwp=110002,u=2}),
 s(58076,107390,{b=1,f=23}),
 s(58582,108238,{f=23,lvl=39}),
 s(58584,108240,{f=23,lvl=39}),
@@ -56123,14 +56123,14 @@ s(78364,134611,{b=1,f=23}),
 s(78400,134789,{b=1,f=23}),
 s(78406,134781,{b=1,f=23}),
 s(78351,134588,{b=1,f=23})}}),
-i(208116,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=29,lvl=70,spellID=417979,g={
+i(208116,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=29,lvl=70,spellID=1286277,g={
 q(77602,{type="hqt"}),
 s(64179,115297,{b=1,f=29,lvl=35}),
 s(2566,6679,{b=1,f=29,lvl=13}),
 s(78390,134750,{b=1,f=29}),
 s(78361,134612,{b=1,f=29}),
 s(78402,134782,{b=1,f=29})}}),
-i(208126,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=8,lvl=70,spellID=417991,g={
+i(208126,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=8,lvl=70,spellID=1286278,g={
 q(77611,{type="hqt"}),
 s(58408,108062,{f=8,lvl=35}),
 s(58502,108158,{f=8,lvl=37}),
@@ -56147,7 +56147,7 @@ s(8796,22336,{b=1,f=8,lvl=23}),
 s(78367,134632,{b=1,f=8}),
 s(78398,134803,{b=1,f=8}),
 s(78352,134603,{b=1,f=8})}}),
-i(208115,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=28,lvl=70,spellID=417978,g={
+i(208115,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=28,lvl=70,spellID=1286287,g={
 q(77601,{type="hqt"}),
 s(64180,115298,{b=1,f=28,lvl=35}),
 s(78379,134721,{b=1,f=28}),
@@ -56158,10 +56158,10 @@ s(8795,22335,{b=1,f=28,lvl=23}),
 s(78369,134619,{b=1,f=28}),
 s(78399,134790,{b=1,f=28}),
 s(78348,134582,{b=1,f=28})}}),
-i(208109,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=25,lvl=70,spellID=417968,g={
+i(208109,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=25,lvl=70,spellID=1286293,g={
 q(77595,{type="hqt"}),
 s(78365,134613,{b=1,f=25}),
-s(102674,166364,{awp=120000,b=1,f=25,lvl=40}),
+s(102674,166364,{b=1,f=25,lvl=40,rwp=110002,u=2}),
 s(91973,155074,{b=1,f=25,lvl=50}),
 s(34778,68195,{b=1,f=25,lvl=6}),
 s(7591,19110,{b=1,f=25,lvl=24}),
@@ -56170,7 +56170,7 @@ s(78386,134758,{b=1,f=25}),
 s(5159,14145,{b=1,f=25,lvl=6}),
 s(78405,134783,{b=1,f=25}),
 s(10142,25145,{f=25,lvl=25})}}),
-i(208123,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=27,lvl=70,spellID=417989,g={
+i(208123,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=27,lvl=70,spellID=1286280,g={
 q(77610,{type="hqt"}),
 s(98225,152871,{f=27,lvl=45,r=1}),
 s(98227,161924,{f=27,lvl=45,r=2}),
@@ -56178,7 +56178,7 @@ s(98503,152873,{f=27,lvl=50,r=1}),
 s(98505,161926,{f=27,lvl=50,r=2}),
 s(78375,134728,{b=1,f=27}),
 s(78350,134590,{b=1,f=27})}}),
-i(208122,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=35,lvl=70,spellID=417988,g={
+i(208122,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=35,lvl=70,spellID=1286281,g={
 q(77608,{type="hqt"})}}),
 i(208216,{b=1,description="Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",f=50,lvl=50,spellID=418593,sym={{"select","itemID",68823,186638,13335,181819,168826,142236,159921,44151,63040,32768,63043,159842,35513,68824,160829},{"prune","u","e"}},g={
 mnt(201098,{b=1,itemID=133543,lvl=27})}})}})}}),
@@ -60102,7 +60102,7 @@ crit(103294,{achID=41599})}}),
 e(2690,{npcID=237763,g={
 crit(103295,{achID=41599})}}),
 e(2691,{crs=a[560],g={
-i(246446,{b=1,rwp=120000,u=2}),
+i(246446,{b=1,rwp=120001}),
 ach(41624,{rwp=120000,u=2}),
 crit(103296,{achID=41599})}})}}),
 d(15,{
@@ -60666,85 +60666,85 @@ ach(41735,{collectible=false,u=2}),
 ach(41736,{collectible=false,u=2}),
 ach(41737,{collectible=false,u=2}),
 ach(41738,{collectible=false,u=2})}}),
-ah(42174,{awp=110200,rwp=120000,type="a",u=2,g={
-ach(42169,{u=2}),
-ach(42170,{u=2,g={
-title(453,{u=2})}}),
-ach(41973,{u=2,g={
-mnt(1246781,{b=1,itemID=248248,lvl=30,u=2})}}),
-ach(42171,{u=2,g={
-crit(105785,{achID=42325,id=3})}}),
-ach(42172,{u=2,g={
-mnt(1245517,{b=1,itemID=247822,lvl=30,u=2})}}),
-ach(42174,{u=2,g={
+ah(42174,{awp=110200,rwp=120001,type="a",g={
+ach(42169),
+ach(42170,{
+title(453)}),
+ach(41973,{
+mnt(1246781,{b=1,itemID=248248,lvl=30})}),
+ach(42171,{
+crit(105785,{achID=42325,id=3})}),
+ach(42172,{
+mnt(1245517,{b=1,itemID=247822,lvl=30})}),
+ach(42174,{rwp=120000,u=2,g={
 title(637,{u=2})}}),
-ach(20586,{u=2,g={
-cs(445417,{u=2})}}),
-ach(42173,{u=2,g={
-cs(1237215,{u=2})}}),
-ach(15048,{u=2,g={
-cs(354465,{u=2})}}),
-ach(41348,{u=2,g={
-cs(1216786,{u=2})}}),
-ach(20581,{u=2,g={
-cs(445444,{u=2})}}),
-ach(15500,{u=2,g={
-cs(367416,{u=2}),
-crit(53264,{achID=15500,id=1,u=2}),
-crit(53266,{achID=15500,id=2,u=2})}}),
-ach(20585,{u=2,g={
-cs(445414,{u=2})}}),
-ach(61876,{awp=110205,u=2,g={
-crit(111183,{achID=61876,id=1,u=2}),
-crit(111184,{achID=61876,id=2,u=2}),
-crit(111185,{achID=61876,id=3,u=2}),
-crit(111186,{achID=61876,id=4,u=2}),
-crit(111187,{achID=61876,id=5,u=2}),
-crit(111188,{achID=61876,id=6,u=2}),
-crit(111189,{achID=61876,id=7,u=2}),
-crit(111190,{achID=61876,id=8,u=2}),
-crit(111193,{achID=61877,id=3,u=2})}}),
-ach(61877,{awp=110205,u=2,g={
-title(636,{awp=110200,u=2})}}),
-ach(61875,{awp=110205,u=2,g={
-crit(111175,{achID=61875,id=1,u=2}),
-crit(111176,{achID=61875,id=2,u=2}),
-crit(111177,{achID=61875,id=3,u=2}),
-crit(111178,{achID=61875,id=4,u=2}),
-crit(111179,{achID=61875,id=5,u=2}),
-crit(111180,{achID=61875,id=6,u=2}),
-crit(111181,{achID=61875,id=7,u=2}),
-crit(111182,{achID=61875,id=8,u=2}),
-crit(111192,{achID=61877,id=2,u=2})}}),
-ach(61874,{awp=110205,u=2,g={
-crit(111167,{achID=61874,id=1,u=2}),
-crit(111168,{achID=61874,id=2,u=2}),
-crit(111169,{achID=61874,id=3,u=2}),
-crit(111171,{achID=61874,id=4,u=2}),
-crit(111170,{achID=61874,id=5,u=2}),
-crit(111172,{achID=61874,id=6,u=2}),
-crit(111173,{achID=61874,id=7,u=2}),
-crit(111174,{achID=61874,id=8,u=2}),
-crit(111191,{achID=61877,id=1,u=2})}}),
-ach(42149,{u=2}),
-ach(42150,{u=2}),
-ach(42151,{u=2}),
-ach(42152,{u=2}),
-ach(42153,{u=2}),
-ach(42154,{u=2}),
-ach(42155,{u=2}),
-ach(42156,{u=2}),
-ach(42157,{u=2}),
-ach(42158,{u=2}),
-ach(42159,{u=2}),
-ach(42160,{rwp=110200,u=2}),
-ach(42161,{rwp=110200,u=2}),
-ach(42162,{rwp=110200,u=2}),
-ach(42802,{rwp=110200,u=2}),
-ach(42803,{rwp=110200,u=2}),
-ach(42804,{rwp=110200,u=2}),
-ach(42805,{rwp=110200,u=2}),
-ach(42806,{rwp=110200,u=2})}}),
+ach(20586,{
+cs(445417)}),
+ach(42173,{
+cs(1237215)}),
+ach(15048,{
+cs(354465)}),
+ach(41348,{
+cs(1216786)}),
+ach(20581,{
+cs(445444)}),
+ach(15500,{
+cs(367416),
+crit(53264,{achID=15500,id=1}),
+crit(53266,{achID=15500,id=2})}),
+ach(20585,{
+cs(445414)}),
+ach(61876,{awp=110205,g={
+crit(111183,{achID=61876,id=1}),
+crit(111184,{achID=61876,id=2}),
+crit(111185,{achID=61876,id=3}),
+crit(111186,{achID=61876,id=4}),
+crit(111187,{achID=61876,id=5}),
+crit(111188,{achID=61876,id=6}),
+crit(111189,{achID=61876,id=7}),
+crit(111190,{achID=61876,id=8}),
+crit(111193,{achID=61877,id=3})}}),
+ach(61877,{awp=110205,g={
+title(636,{awp=110200})}}),
+ach(61875,{awp=110205,g={
+crit(111175,{achID=61875,id=1}),
+crit(111176,{achID=61875,id=2}),
+crit(111177,{achID=61875,id=3}),
+crit(111178,{achID=61875,id=4}),
+crit(111179,{achID=61875,id=5}),
+crit(111180,{achID=61875,id=6}),
+crit(111181,{achID=61875,id=7}),
+crit(111182,{achID=61875,id=8}),
+crit(111192,{achID=61877,id=2})}}),
+ach(61874,{awp=110205,g={
+crit(111167,{achID=61874,id=1}),
+crit(111168,{achID=61874,id=2}),
+crit(111169,{achID=61874,id=3}),
+crit(111171,{achID=61874,id=4}),
+crit(111170,{achID=61874,id=5}),
+crit(111172,{achID=61874,id=6}),
+crit(111173,{achID=61874,id=7}),
+crit(111174,{achID=61874,id=8}),
+crit(111191,{achID=61877,id=1})}}),
+ach(42149),
+ach(42150),
+ach(42151),
+ach(42152),
+ach(42153),
+ach(42154),
+ach(42155),
+ach(42156),
+ach(42157),
+ach(42158),
+ach(42159),
+ach(42160),
+ach(42161),
+ach(42162),
+ach(42802),
+ach(42803),
+ach(42804),
+ach(42805),
+ach(42806)}}),
 h(-45,{
 q(87327,{awp=110100,coords={{53.9,39,2339}},description="Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",isYearly=1,lvl=80,qgs={197711,197915}})})}}),
 inst(1271,{awp=110002,coords={{52.2,45.8,2216}},maps={2357,2358},savedInstanceID=2660,g={
@@ -62446,7 +62446,7 @@ s(298148,251149,{f=29}),
 s(298153,251154,{f=4})}}),
 e(2778,{npcID=246404,g={
 ach(61638),
-i(256737,{f=200,requireSkill=2909,spellID=1236054}),
+i(256737,{f=200,spellID=1236054}),
 de(15570,{itemID=264332,spellID=1271719}),
 s(298211,251214,{f=7}),
 s(298155,251156,{f=28}),
@@ -62498,7 +62498,7 @@ d(23,{
 e(2812,{npcID=248605,g={
 ach(61645),
 gach(61616),
-i(256625,{f=200,requireSkill=2915,spellID=1237489})}})})}}),
+i(256625,{f=200,spellID=1237489})}})})}}),
 inst(1304,{awp=120000,coords={{56.8,61.1,2393}},maps={2433,2434,2435},g={
 d(101,{difficulties=a[47],g={
 e(2679,{crs={234660,252458},g={
@@ -62524,10 +62524,10 @@ s(298138,251137,{f=4}),
 s(298136,251134,{f=22})}}),
 e(2682,{npcID=237415,g={
 ach(41960),
-i(256746,{f=200,requireSkill=2909,spellID=1236493}),
-i(256640,{f=200,requireSkill=2915,spellID=1237487}),
-i(258518,{f=200,requireSkill=2907,spellID=1230768}),
-i(258487,{f=200,requireSkill=2907,spellID=1230766}),
+i(256746,{f=200,spellID=1236493}),
+i(256640,{f=200,spellID=1237487}),
+i(258518,{f=200,spellID=1230768}),
+i(258487,{f=200,spellID=1230766}),
 de(15069,{itemID=263238,spellID=1270139}),
 s(298139,251138,{f=7}),
 s(298142,251141,{f=6}),
@@ -62594,5 +62594,5 @@ ach(41288)}})}}),
 d(23,{
 e(2658,{npcID=231636,g={
 ach(41291),
-i(256653,{f=200,requireSkill=2915,spellID=1237515}),
-i(258125,{f=200,requireSkill=2918,spellID=1228987})}})})}})})};
+i(256653,{f=200,spellID=1237515}),
+i(258125,{f=200,spellID=1228987})}})})}})})};

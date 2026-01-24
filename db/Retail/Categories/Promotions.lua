@@ -49,13 +49,13 @@ toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight S
 mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=45,rwp=110200,u=2})}}),
 h(-516,{awp=110000,g={
 h(-518,{awp=110007,rwp=110105,u=2,g={
-mnt(367620,{description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
-mnt(153489,{b=1,description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=107951,lvl=10,u=2}),
-p(4690,{description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
+mnt(367620,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
+mnt(153489,{b=1,description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=107951,lvl=10,u=2}),
+p(4690,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 h(-517,{awp=110002,u=3,g={
-mnt(163025,{b=1,description="Aquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=112327,lvl=10,u=3}),
-p(4595,{b=1,description="Aquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
-mnt(453255,{description="Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=224574,lvl=10,u=3})}}),
+mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
+p(4595,{b=1,description="Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
+mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -128,9 +128,14 @@ s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
 p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
 s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2}),
-mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3}),
-de(15151,{awp=120000,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369})}}),
-h(-669,{awp=120000}),
+mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3})}}),
+h(-669,{awp=120000,g={
+de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369}),
+s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120001}),
+h(-708,{rwp=120001,g={
+mnt(367620,{itemID=190539,lvl=10}),
+mnt(153489,{b=1,itemID=107951,lvl=10}),
+p(4690,{itemID=232519,npcID=233481,spellID=470914})}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
