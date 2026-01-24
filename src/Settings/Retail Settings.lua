@@ -178,7 +178,6 @@ local TooltipSettingsBase = {
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
 		["SourceLocations:Unsorted"] = false,
-		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,

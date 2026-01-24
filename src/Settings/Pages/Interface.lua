@@ -607,23 +607,6 @@ end)
 checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
 checkboxSpecializations:AlignBelow(checkboxKnownBy)
 
-local checkboxDropChances = child:CreateCheckBox(L.DROP_CHANCES_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("DropChances"))
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("DropChances", self:GetChecked())
-end)
-checkboxDropChances:SetATTTooltip(L.DROP_CHANCES_CHECKBOX_TOOLTIP)
-checkboxDropChances:AlignBelow(checkboxSpecializations)
-
 local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"))
@@ -639,7 +622,7 @@ function(self)
 	settings:SetTooltipSetting("Currencies", self:GetChecked())
 end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
-checkboxCurrencyCalculation:AlignBelow(checkboxDropChances)
+checkboxCurrencyCalculation:AlignBelow(checkboxSpecializations)
 else
 -- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
 local checkboxShowCraftedItems = child:CreateCheckBox(L.SHOW_CRAFTED_ITEMS_CHECKBOX,
