@@ -227,11 +227,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 16, 10:00 a.m. & May 30, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				-- #ENDIF
 				-- #ENDIF
-				["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" },
+				["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.54904" },
 			}),
 			i(218128, {	-- Draconic Banner of the Aspects (TOY!)
 				["description"] = "The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",
-				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.99999" },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.55142" },
 			}),
 			i(219450, {	-- Charming Courier (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
