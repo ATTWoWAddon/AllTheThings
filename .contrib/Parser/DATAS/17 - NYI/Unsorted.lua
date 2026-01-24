@@ -14,8 +14,6 @@ root(ROOTS.Unsorted, {
 			i(247234),	-- Rustic Harandar Planter
 
 			-- QI
-			i(246112),	-- Alliance Shield
-			i(246126),	-- Horde Axe
 			i(246129),	-- Outsider's Gear
 			i(246152),	-- Saptor Frill
 			i(248814),	-- Witherbark Supplies
@@ -1577,10 +1575,6 @@ root(ROOTS.Unsorted, {
 			i(247498),	-- Recipe: Entropic Illuminant
 			i(247499),	-- Recipe: Haranir Reagent Bowl
 
-			-- Harniri
-			i(246740),	-- Tabard of the Haranir
-			i(246795),	-- Tabard of the Haranir
-
 			-- MIsc
 			i(246745),	-- Triumphant Satchel of Carved Ethereal Crests
 			i(246746),	-- Celebratory Pack of Runed Ethereal Crests
@@ -2912,12 +2906,6 @@ root(ROOTS.Unsorted, {
 			i(257384),	-- Companion Experience
 			i(257386),	-- Heavy Trunk
 
-			-- Quest Armor?
-			i(257527),	-- Woven Haranir Cowl
-			i(257528),	-- Entwined Haranir Cowl
-			i(257529),	-- Coarse Haranir Cowl
-			i(257530),	-- Hardened Haranir Cowl
-
 			-- PvP
 			i(257535),	-- Galactic Jeweler's Setting
 
@@ -2932,10 +2920,6 @@ root(ROOTS.Unsorted, {
 			i(257544),	-- Scorching Conqueror's Mantle
 			i(257545),	-- Scorching Conqueror's Cloak
 			i(257547),	-- Ensemble: Scorching Conqueror
-			i(257558),	-- Woven Haranir Leaves
-			i(257559),	-- Entwined Haranir Leaves
-			i(257560),	-- Coarse Haranir Leaves
-			i(257561),	-- Hardened Haranir Leaves
 			i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
 			i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
 			i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2

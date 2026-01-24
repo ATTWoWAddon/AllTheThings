@@ -5,6 +5,69 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(QUESTS, {
+			-- New Haranir Start here
+			q(90957, {	-- Initiation Day
+				["qg"] = 237332,	-- Hagar
+				["coord"] = { 34.8, 24.9, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(257527),	-- Woven Haranir Cowl
+					i(257528),	-- Entwined Haranir Cowl
+					i(257529),	-- Coarse Haranir Cowl
+					i(257530),	-- Hardened Haranir Cowl
+				},
+			}),
+			q(90958, {	-- Roots Above All
+				["sourceQuest"] = 90957,	-- Initiation Day
+				["qg"] = 245102,	-- Dalnir
+				["coord"] = { 35.3, 23.3, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					o(553793, {	-- Shield
+						["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = { i(246112) },	-- Alliance Shield (QI!)
+					}),
+					o(553844, {	-- Axe
+						["coord"] = { 36.6, 25.1, MAP.MIDNIGHT.HARANDAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = { i(246126) },	-- Horde Axe (QI!)
+					}),
+				},
+			}),
+			q(90959, {	-- Traditional Duties
+				["sourceQuest"] = 90958,	-- Roots Above All
+				["qg"] = 245879,	-- Orweyna
+				["coord"] = { 35.3, 23.5, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(257558),	-- Woven Haranir Leaves
+					i(257559),	-- Entwined Haranir Leaves
+					i(257560),	-- Coarse Haranir Leaves
+					i(257561),	-- Hardened Haranir Leaves
+				},
+			}),
+			q(90960, {	-- My Story, My Legacy
+				["sourceQuest"] = 90959,	-- Traditional Duties
+				["qg"] = 245096,	-- Hagar
+				["coord"] = { 34.0, 26.9, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(90961, {	-- Stranger in a New Land
+				["sourceQuest"] = 90960,	-- My Story, My Legacy
+				["qg"] = 245097,	-- Hagar
+				["coord"] = { 31.9, 27.4, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(246740, {	-- Tabard of the Haranir
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(246795, {	-- Tabard of the Haranir
+						["races"] = HORDE_ONLY,
+					}),
+				},
+			}),
+			q(94445, {	-- Choose a Path
+				["sourceQuest"] = 90961,	-- Stranger in a New Land
+				["qg"] = 133362,	-- Ambassador Moorgard
+				["coord"] = { 53.1, 15.3, STORMWIND_CITY },
+			}),
+			-- After "Choosing a Path", New Haranir choose a level up Campaign at Chromie
 			header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 				header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles
 					q(89402, {	-- Harandar

@@ -154,72 +154,72 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				-- TODO: not sorted via name but as listed order in vendor
 				filter(BATTLE_PETS, {
 					i(262393, {	-- Kreepah'zoyd (PET!)
-						["cost"] = {{"c", UNDERCOIN, 10000 }},
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
 					}),
 				}),
 				filter(COSMETIC, {
 					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
-						["cost"] = {{"c", UNDERCOIN, 2500 }},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
 				n(DECOR, {
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
-						["cost"] = {{"c", UNDERCOIN, 500 }},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(246779, {	-- Hanging Mana Brazier (DECOR!)
-						["cost"] = {{"c", UNDERCOIN, 500 }},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 				}),
 				filter(MISC, {
 					i(244193, {	-- L00T RAID-R Mini
-						["cost"] = {{"c", UNDERCOIN, 1000 }},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(262963, {	-- Pious Memorial
-						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						--["questID"] = ???,
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
-						["cost"] = {{"c", UNDERCOIN, 250 }},
+						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
 					i(248755, {	-- Star-in-a-Jar
-						["cost"] = {{"c", UNDERCOIN, 250 }},
+						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
 					i(264652, {	-- Delver's Pouch of Voidlight Marl
-						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 				}),
 				filter(MOUNTS, {
 					i(262502, {	-- Elven Arcane Guardian (MOUNT!)
-						["cost"] = {{"c", UNDERCOIN, 10000 }},
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
 					}),
 				}),
 				filter(TOYS, {
 					i(267291, {	-- Coffer Key Glue (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 250 }},
+						["cost"] = { { "c", UNDERCOIN, 250 } },
 					}),
 					i(262431, {	-- Bouncy Mushroom (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 5000 }},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 				}),
 			},
