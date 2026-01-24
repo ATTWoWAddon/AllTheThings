@@ -1460,7 +1460,7 @@ function app:GetDataCache()
 	]]--
 	
 	-- Track Deaths!
-	tinsert(g, app:CreateDeathClass());
+	tinsert(g, app.CreateDeathClass());
 	
 	-- Yourself.
 	tinsert(g, app.CreateUnit("player", {
