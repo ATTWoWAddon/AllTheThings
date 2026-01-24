@@ -12,7 +12,7 @@ local wipearray, ArrayAppend =
 	app.wipearray, app.ArrayAppend
 
 -- Module locals
-local AllCaches, AllGamePatches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
+local AllCaches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
 local fieldMeta = {
 	__index = function(t, field)
 		if field == nil then return end
@@ -452,9 +452,6 @@ local fieldConverters = {
 	["runeforgepowerID"] = function(group, value)
 		CacheField(group, "runeforgepowerID", value);
 	end,
-	["rwp"] = function(group, value)
-		CacheField(group, "rwp", value);
-	end,
 	["sourceID"] = function(group, value)
 		CacheField(group, "sourceID", value);
 	end,
@@ -596,11 +593,6 @@ local fieldConverters = {
 			zoneTextNamesRunner(group, value);
 		end
 	end,
-
-	-- Patch Helpers
-	["awp"] = function(group, value)
-		if value then AllGamePatches[value] = true; end
-	end,
 };
 
 local _converter;
@@ -644,11 +636,6 @@ if app.IsRetail then
 	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
 	-- make sure we actually get the data that we search for
 	fieldConverters.altQuests = nil;
-	-- 'awp' isn't needed for caching into 'AllGamePatches' currently... I don't really see a future where we 'pre-add' future Retail content in public releases
-	fieldConverters.awp = nil;
-	-- 'rwp' is never used as a 'search' and this breaks dynamic future removed in Simple mode
-	fieldConverters.rwp = nil;
-
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)
 		local mapKeys
@@ -1121,7 +1108,6 @@ local function VerifyCache()
 end
 
 -- External API Functions
-app.AllGamePatches = AllGamePatches;
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
