@@ -1151,8 +1151,8 @@ local function RowOnEnter(self)
 		local linkSuccessful
 		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
-			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
-			if ok and result then
+			local ok = pcall(tooltip.SetHyperlink, tooltip, link);
+			if ok and tooltip:NumLines() > 2 then
 				linkSuccessful = true;
 			else
 				-- if a link fails to render a tooltip, it clears the tooltip and the owner
@@ -3056,7 +3056,6 @@ if app.IsClassic then
 
 						-- If the quest was valid, attach it.
 						if sourceQuest then
-							print(sourceQuest.key, sourceQuest.text);
 							prereqs[#prereqs + 1] = sourceQuest;
 						end
 					end
