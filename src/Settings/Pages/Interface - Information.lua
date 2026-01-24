@@ -555,9 +555,9 @@ local InformationTypes = {
 	-- Progress Fields (top most)
 	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
-			local progressText = app.GetProgressTextForTooltip(reference);
-			if progressText then
-				tinsert(tooltipInfo, { progress = progressText });
+			local summaryText = app.GetProgressTextForTooltip(reference);
+			if summaryText then
+				tinsert(tooltipInfo, { summaryText = summaryText });
 				--[[
 				-- I don't remember what the original conditions for showing this were.
 				-- For now just disable it.

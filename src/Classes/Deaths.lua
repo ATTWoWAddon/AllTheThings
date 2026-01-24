@@ -14,6 +14,7 @@ local function OnTooltipForDeathTracker(t, tooltipInfo)
 			end
 		end
 	end
+	tooltipInfo[#tooltipInfo + 1] = { summaryText = t.summaryText };
 	if #c > 0 then
 		tooltipInfo[#tooltipInfo + 1] = { left = " " };
 		tooltipInfo[#tooltipInfo + 1] = { left = "Deaths Per Character:" };

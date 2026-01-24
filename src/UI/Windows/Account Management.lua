@@ -1214,7 +1214,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				r = 1, g = 1, b = 1
 			});
 			tinsert(tooltipInfo, {
-				progress = GetProgressColorText(primeData.progress, primeData.total),
+				summaryText = GetProgressColorText(primeData.progress, primeData.total),
 			});
 		end
 

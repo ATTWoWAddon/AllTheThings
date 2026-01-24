@@ -44,8 +44,8 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 	-- Assign the Text Label and Tooltip
 	local data = window.data;
 	if data then
-		local progressText = app.GetProgressTextForTooltip(data);
-		if progressText then tinsert(tooltipInfo, { progress = progressText }); end
+		local summaryText = app.GetProgressTextForTooltip(data);
+		if summaryText then tinsert(tooltipInfo, { summaryText = summaryText }); end
 		local description = data.description;
 		if description then tinsert(tooltipInfo, { left = "|cffffffff" .. description .. "|r\n\n", wrap = true }); end
 	end
