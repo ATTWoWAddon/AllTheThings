@@ -1459,302 +1459,326 @@ end
 
 -- TODO: Move the generation of this into Parser
 function app:GetDataCache()
-	if app.Categories then
-		local rootData = setmetatable({
-			text = L["TITLE"],
-			hash = "ATT",
-			__type = "ROOT",
-			icon = app.asset("logo_32x32"),
-			preview = app.asset("Discord_2_128"),
-			description = L["DESCRIPTION"],
-			font = "GameFontNormalLarge",
-			expanded = true,
-			visible = true,
-			progress = 0,
-			total = 0,
-			g = {},
-		}, {
-			__index = function(t, key)
-				if key == "title" then
-					return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage;
-				elseif key == "summaryText" then
-					if t.total < 1 then
-						local primeData = app.CurrentCharacter.PrimeData;
-						if primeData then
-							return GetProgressColorText(primeData.progress, primeData.total);
-						end
-					end
-					return GetProgressColorText(t.progress, t.total);
-				elseif key == "modeString" then
-					return app.Settings:GetModeString();
-				elseif key == "untilNextPercentage" then
-					if t.total < 1 then
-						local primeData = app.CurrentCharacter.PrimeData;
-						if primeData then
-							return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
-						end
-					end
-					return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
-				else
-					-- Something that isn't dynamic.
-					return table[key];
+	if not app.Categories then
+		return nil;
+	end
+
+	-- app.PrintMemoryUsage("app:GetDataCache init")
+
+	-- not really worth moving this into a Class since it's literally allowed to be used once
+	local DefaultRootKeys = {
+		__type = function(t) return "ROOT" end,
+		title = function(t)
+			return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage
+		end,
+		summaryText = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return app.Modules.Color.GetProgressColorText(primeData.progress, primeData.total)
 				end
 			end
-		});
-		local g = rootData.g;
-
-		-----------------------------------------
-		-- P R I M A R Y   C A T E G O R I E S --
-		-----------------------------------------
-		-- Dungeons & Raids
-		tinsert(g, app.CreateRawText(GROUP_FINDER, {
-			icon = app.asset("Category_D&R"),
-			g = app.Categories.Instances,
-		}));
-
-		-- Outdoor Zones
-		if app.Categories.Zones then
-			tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
-				icon = app.asset("Category_Zones"),
-				g = app.Categories.Zones,
-				mapID = 947,
-			}));
-		end
-
-		-- World Drops
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
-			g = app.Categories.WorldDrops or {},
-			isWorldDropCategory = true
-		}));
-
-		-- Crafted Items
-		if app.Categories.Craftables then
-			local craftables = app.Categories.Craftables;
-			ProcessBindOnPickupProfessions(craftables);
-			tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
-				icon = app.asset("Category_Crafting"),
-				DontEnforceSkillRequirements = true,
-				isCraftedCategory = true,
-				g = craftables,
-			}));
-		end
-
-		-- Group Finder
-		if app.Categories.GroupFinder then
-			tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
-				icon = app.asset("Category_GroupFinder"),
-				u = 33,	-- WRATH_PHASE_FOUR
-				g = app.Categories.GroupFinder,
-			}));
-		end
-
-		-- Professions
-		local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
-			g = app.Categories.Professions or {}
-		});
-		tinsert(g, ProfessionsHeader);
-
-		-- Holidays
-		if app.Categories.Holidays then
-			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
-				description = "These events occur at consistent dates around the year based on and themed around real world holiday events.",
-				difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
-				g = app.Categories.Holidays,
-				SortType = "EventStart",
-				isHolidayCategory = true,
-			}));
-		end
-
-		-- Expansion Features
-		if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
-			tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
-				icon = app.asset("Category_ExpansionFeatures"),
-				description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
-				g = app.Categories.ExpansionFeatures
-			}));
-		end
-
-		-----------------------------------------
-		-- L I M I T E D   C A T E G O R I E S --
-		-----------------------------------------
-		-- Character
-		if app.Categories.Character then
-			tinsert(g, app.CreateRawText(CHARACTER, {
-				icon = app.asset("Category_ItemSets"),
-				g = app.Categories.Character,
-			}));
-		end
-
-		-- PvP
-		if app.Categories.PVP then
-			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
-				g = app.Categories.PVP,
-				isPVPCategory = true
-			}));
-		end
-
-		-- Promotions
-		if app.Categories.Promotions then
-			tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
-				icon = app.asset("Category_Promo"),
-				description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
-				g = app.Categories.Promotions,
-				isPromotionCategory = true
-			}));
-		end
-
-		-- Season of Discovery
-		if app.Categories.SeasonOfDiscovery then
-			for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
-				tinsert(g, o);
-			end
-		end
-
-		-- Skills
-		if app.Categories.Skills then
-			tinsert(g, app.CreateRawText(SKILLS, {
-				icon = 136105,
-				g = app.Categories.Skills
-			}));
-		end
-
-		-- World Events
-		if app.Categories.WorldEvents then
-			tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
-				icon = app.asset("Category_Event"),
-				description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
-				g = app.Categories.WorldEvents,
-				isEventCategory = true,
-			}));
-		end
-
-		---------------------------------------
-		-- M A R K E T   C A T E G O R I E S --
-		---------------------------------------
-		-- Black Market
-		if app.Categories.BlackMarket then tinsert(g, app.Categories.BlackMarket[1]); end
-
-		-- In-Game Store
-		if app.Categories.InGameShop then
-			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
-		end
-
-		-----------------------------------------
-		-- D Y N A M I C   C A T E G O R I E S --
-		-----------------------------------------
-		if app.Windows then
-			local keys,sortedList = {},{};
-			for suffix,window in pairs(app.Windows) do
-				if window and window.IsDynamicCategory then
-					if window.DynamicCategoryHeader then
-						if window.DynamicProfessionID then
-							local dynamicProfessionHeader = nil;
-							for i,header in ipairs(ProfessionsHeader.g) do
-								if header.requireSkill == window.DynamicProfessionID then
-									dynamicProfessionHeader = header;
-									break;
-								end
-							end
-
-							local recipesList = app.CreateDynamicCategory(suffix);
-							recipesList.IgnoreBuildRequests = true;
-							if dynamicProfessionHeader then
-								recipesList.text = "Recipes";
-								recipesList.icon = 134939;
-								if not dynamicProfessionHeader.g then
-									dynamicProfessionHeader.g = {};
-								end
-								tinsert(dynamicProfessionHeader.g, recipesList);
-							else
-								tinsert(ProfessionsHeader.g, recipesList);
-							end
-						else
-							print("Unhandled dynamic category conditional");
-						end
-					else
-						keys[suffix] = window;
-					end
+			return app.Modules.Color.GetProgressColorText(t.progress, t.total)
+		end,
+		modeString = function(t)
+			return app.Settings:GetModeString()
+		end,
+		untilNextPercentage = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total)
 				end
 			end
-			for suffix,window in pairs(keys) do
-				tinsert(sortedList, suffix);
+			return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total)
+		end,
+		visible = app.ReturnTrue,
+	}
+	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
+	
+	-- Update the Row Data by filtering raw data (this function only runs once)
+	local g = {};
+	local rootData = setmetatable({
+		key = "ROOT",
+		text = L.TITLE,
+		icon = app.asset("logo_32x32"),
+		preview = app.asset("Discord_2_128"),
+		description = L.DESCRIPTION,
+		font = "GameFontNormalLarge",
+		expanded = true,
+		g = g,
+	}, {
+		__index = function(t, key)
+			local defaultKeyFunc = DefaultRootKeys[key]
+			if defaultKeyFunc then return defaultKeyFunc(t) end
+		end,
+		__newindex = function(t, key, val)
+			-- app.PrintDebug("Top-Root-Set",rawget(t,"TLUG"),key,val)
+			if key == "visible" then
+				return;
 			end
-			app.Sort(sortedList, app.SortDefaults.Strings);
-			for i,suffix in ipairs(sortedList) do
-				local dynamicCategory = app.CreateDynamicCategory(suffix);
-				dynamicCategory.sourceIgnored = 1;
-				tinsert(g, dynamicCategory);
-			end
-		end
-
-		-- Track Deaths!
-		tinsert(g, app:CreateDeathClass());
-
-		-- Yourself.
-		tinsert(g, app.CreateUnit("player", {
-			description = L.DEBUG_LOGIN,
-			races = { app.RaceIndex },
-			c = { app.ClassIndex },
-			r = app.FactionID,
-			collected = 1,
-			nmr = false,
-			OnUpdate = function(self)
-				self.lvl = app.Level;
-				if app.MODE_DEBUG then
-					self.collectible = true;
-				else
-					self.collectible = false;
+			-- until the Main list receives a top-level update
+			if not rawget(t,"TLUG") then
+				-- ignore setting progress/total values
+				if key == "progress" or key == "total" then
+					return;
 				end
 			end
-		}));
-
-		-- Now assign the parent hierarchy for this cache.
-		app.AssignChildren(rootData);
-
-		-- Now that we have all of the root data, cache it.
-		app.CacheFields(rootData);
-
-		-- Determine how many expansionID instances could be found
-		local expansionCounter = 0;
-		local expansionCache = app.SearchForFieldContainer("expansionID");
-		for key,value in pairs(expansionCache) do
-			expansionCounter = expansionCounter + 1;
+			rawset(t, key, val);
 		end
-		if expansionCounter == 1 then
-			-- Purge the Expansion Objects. This is the Classic Layout style.
-			for key,values in pairs(expansionCache) do
-				for j,value in ipairs(values) do
-					local parent = value.parent;
-					if parent then
-						-- Remove the expansion object reference.
-						for i=#parent.g,1,-1 do
-							if parent.g[i] == value then
-								tremove(parent.g, i);
+	});
+
+	-----------------------------------------
+	-- P R I M A R Y   C A T E G O R I E S --
+	-----------------------------------------
+	-- Dungeons & Raids
+	tinsert(g, app.CreateRawText(GROUP_FINDER, {
+		icon = app.asset("Category_D&R"),
+		g = app.Categories.Instances,
+	}));
+
+	-- Outdoor Zones
+	if app.Categories.Zones then
+		tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
+			icon = app.asset("Category_Zones"),
+			g = app.Categories.Zones,
+			mapID = 947,
+		}));
+	end
+
+	-- World Drops
+	tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
+		g = app.Categories.WorldDrops or {},
+		isWorldDropCategory = true
+	}));
+
+	-- Crafted Items
+	if app.Categories.Craftables then
+		local craftables = app.Categories.Craftables;
+		ProcessBindOnPickupProfessions(craftables);
+		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+			icon = app.asset("Category_Crafting"),
+			DontEnforceSkillRequirements = true,
+			isCraftedCategory = true,
+			g = craftables,
+		}));
+	end
+
+	-- Group Finder
+	if app.Categories.GroupFinder then
+		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
+			icon = app.asset("Category_GroupFinder"),
+			u = 33,	-- WRATH_PHASE_FOUR
+			g = app.Categories.GroupFinder,
+		}));
+	end
+
+	-- Professions
+	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
+		g = app.Categories.Professions or {}
+	});
+	tinsert(g, ProfessionsHeader);
+
+	-- Holidays
+	if app.Categories.Holidays then
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
+			description = "These events occur at consistent dates around the year based on and themed around real world holiday events.",
+			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
+			g = app.Categories.Holidays,
+			SortType = "EventStart",
+			isHolidayCategory = true,
+		}));
+	end
+
+	-- Expansion Features
+	if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
+		tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
+			icon = app.asset("Category_ExpansionFeatures"),
+			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
+			g = app.Categories.ExpansionFeatures
+		}));
+	end
+
+	-----------------------------------------
+	-- L I M I T E D   C A T E G O R I E S --
+	-----------------------------------------
+	-- Character
+	if app.Categories.Character then
+		tinsert(g, app.CreateRawText(CHARACTER, {
+			icon = app.asset("Category_ItemSets"),
+			g = app.Categories.Character,
+		}));
+	end
+
+	-- PvP
+	if app.Categories.PVP then
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
+			g = app.Categories.PVP,
+			isPVPCategory = true
+		}));
+	end
+
+	-- Promotions
+	if app.Categories.Promotions then
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
+			icon = app.asset("Category_Promo"),
+			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+			g = app.Categories.Promotions,
+			isPromotionCategory = true
+		}));
+	end
+
+	-- Season of Discovery
+	if app.Categories.SeasonOfDiscovery then
+		for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
+			tinsert(g, o);
+		end
+	end
+
+	-- Skills
+	if app.Categories.Skills then
+		tinsert(g, app.CreateRawText(SKILLS, {
+			icon = 136105,
+			g = app.Categories.Skills
+		}));
+	end
+
+	-- World Events
+	if app.Categories.WorldEvents then
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
+			icon = app.asset("Category_Event"),
+			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
+			g = app.Categories.WorldEvents,
+			isEventCategory = true,
+		}));
+	end
+
+	---------------------------------------
+	-- M A R K E T   C A T E G O R I E S --
+	---------------------------------------
+	-- Black Market
+	if app.Categories.BlackMarket then tinsert(g, app.Categories.BlackMarket[1]); end
+
+	-- In-Game Store
+	if app.Categories.InGameShop then
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
+	end
+
+	-----------------------------------------
+	-- D Y N A M I C   C A T E G O R I E S --
+	-----------------------------------------
+	if app.Windows then
+		local keys,sortedList = {},{};
+		for suffix,window in pairs(app.Windows) do
+			if window and window.IsDynamicCategory then
+				if window.DynamicCategoryHeader then
+					if window.DynamicProfessionID then
+						local dynamicProfessionHeader = nil;
+						for i,header in ipairs(ProfessionsHeader.g) do
+							if header.requireSkill == window.DynamicProfessionID then
+								dynamicProfessionHeader = header;
 								break;
 							end
 						end
 
-						-- Feed the children to its parent.
-						if value.g then
-							for i,child in ipairs(value.g) do
-								child.parent = parent;
-								tinsert(parent.g, child);
+						local recipesList = app.CreateDynamicCategory(suffix);
+						recipesList.IgnoreBuildRequests = true;
+						if dynamicProfessionHeader then
+							recipesList.text = "Recipes";
+							recipesList.icon = 134939;
+							if not dynamicProfessionHeader.g then
+								dynamicProfessionHeader.g = {};
 							end
+							tinsert(dynamicProfessionHeader.g, recipesList);
+						else
+							tinsert(ProfessionsHeader.g, recipesList);
+						end
+					else
+						print("Unhandled dynamic category conditional");
+					end
+				else
+					keys[suffix] = window;
+				end
+			end
+		end
+		for suffix,window in pairs(keys) do
+			tinsert(sortedList, suffix);
+		end
+		app.Sort(sortedList, app.SortDefaults.Strings);
+		for i,suffix in ipairs(sortedList) do
+			local dynamicCategory = app.CreateDynamicCategory(suffix);
+			dynamicCategory.sourceIgnored = 1;
+			tinsert(g, dynamicCategory);
+		end
+	end
+
+	-- Track Deaths!
+	tinsert(g, app:CreateDeathClass());
+
+	-- Yourself.
+	tinsert(g, app.CreateUnit("player", {
+		description = L.DEBUG_LOGIN,
+		races = { app.RaceIndex },
+		c = { app.ClassIndex },
+		r = app.FactionID,
+		collected = 1,
+		nmr = false,
+		OnUpdate = function(self)
+			self.lvl = app.Level;
+			if app.MODE_DEBUG then
+				self.collectible = true;
+			else
+				self.collectible = false;
+			end
+		end
+	}));
+
+	-- Now assign the parent hierarchy for this cache.
+	app.AssignChildren(rootData);
+
+	-- Now that we have all of the root data, cache it.
+	app.CacheFields(rootData);
+
+	-- Determine how many expansionID instances could be found
+	local expansionCounter = 0;
+	local expansionCache = app.SearchForFieldContainer("expansionID");
+	for key,value in pairs(expansionCache) do
+		expansionCounter = expansionCounter + 1;
+	end
+	if expansionCounter == 1 then
+		-- Purge the Expansion Objects. This is the Classic Layout style.
+		for key,values in pairs(expansionCache) do
+			for j,value in ipairs(values) do
+				local parent = value.parent;
+				if parent then
+					-- Remove the expansion object reference.
+					for i=#parent.g,1,-1 do
+						if parent.g[i] == value then
+							tremove(parent.g, i);
+							break;
+						end
+					end
+
+					-- Feed the children to its parent.
+					if value.g then
+						for i,child in ipairs(value.g) do
+							child.parent = parent;
+							tinsert(parent.g, child);
 						end
 					end
 				end
 			end
-
-			-- Wipe out the expansion object cache.
-			wipe(expansionCache);
 		end
 
-		-- All future calls to this function will return the root data.
-		app.GetDataCache = function()
-			return rootData;
-		end
+		-- Wipe out the expansion object cache.
+		wipe(expansionCache);
+	end
+
+	-- All future calls to this function will return the root data.
+	app.GetDataCache = function()
 		return rootData;
 	end
+	return rootData;
 end
 
 
