@@ -2064,6 +2064,7 @@ MobileDB.GameObject = {
 	[386108] = true,	-- Dragonscale Expedition Flag
 	[386165] = true,	-- Obsidian Coffer
 	[386166] = true,	-- Bone Pile
+	[386168] = true,	-- Farscale Cache (forbidden reach repeatable)
 	[386179] = true,	-- Spellsworn Reserves
 	[386383] = true,	-- Discarded Toy
 	[386521] = true,	-- Toxin Antidote
