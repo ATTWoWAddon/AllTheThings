@@ -826,7 +826,6 @@ end
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = false;
-	self:RecordSettings();
 end
 local function SelfSizeRefresher(self)
 	while self.isMoving do
@@ -1866,6 +1865,7 @@ app.AddEventHandler("OnInit", function()
 
 	-- Regenerate the Dynamic Windows
 	for name,settings in pairs(dynamicWindows) do
+		settings.visible = false;
 		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
 	end
 	
@@ -2814,7 +2814,7 @@ function app:CreateWindow(suffix, settings)
 	if settings then
 		if settings.Preload then
 			-- This window still needs to be loaded right away
-			if app.IsReady then
+			if AllWindowSettingsLoaded then
 				return app:GetWindow(suffix);
 			else
 				app.AddEventHandler("OnReady", function()
@@ -2881,7 +2881,7 @@ function app:CreateMiniListForGroup(group)
 	end
 
 	-- Pop Out Functionality! :O
-	app:CreateWindow(app.GenerateSourceHash(group), {
+	local popout = app:CreateWindow(app.GenerateSourceHash(group), {
 		AllowCompleteSound = true,
 		--Debugging = true,
 		Preload = true,
@@ -2898,6 +2898,7 @@ function app:CreateMiniListForGroup(group)
 			end
 			self:Update(true);
 		end,
+		OnHide = ClearSettingsForWindow,
 		OnLoad = function(self, settings)
 			self.dynamic = true;
 			settings.dynamic = true;
@@ -2916,6 +2917,7 @@ function app:CreateMiniListForGroup(group)
 			end
 		end,
 	});
+	popout:SetVisible(true);
 end
 function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
