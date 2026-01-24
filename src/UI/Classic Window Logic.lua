@@ -1286,152 +1286,6 @@ local function CreateRow(container, rows, i)
 	return row;
 end
 
--- Refresh Coroutines (Deprecated)
-local InCombatLockdown = InCombatLockdown;
-local refreshDataCooldown = 5;
-local refreshFromTrigger;
-local currentlyRefreshingData = false;
-local LastSettingsChangeUpdate;
-local tinsert = tinsert;
-local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		data[#data + 1] = object;
-		local g = object.g;
-		if g and object.expanded then
-			-- Delayed sort operation for this group prior to being shown
-			local sortType = object.SortType;
-			if sortType then app.SortGroup(object, sortType); end
-			for i=1,#g do
-				ProcessGroup(data, g[i]);
-			end
-		end
-	end
-end
-local function UpdateWindow(self, force, trigger)
-	-- If this window doesn't have data, do nothing.
-	local data = self.data;
-	if not data then return; end
-	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
-	if force or self:IsShown() then
-		if not self.rowData then
-			self.rowData = {};
-		else
-			wipe(self.rowData);
-		end
-		data.expanded = true;
-		if self.HasPendingUpdate then
-			--[[
-			local rows = self.Container.rows;
-			for i=1,#rows,1 do
-				SetRowData(self, rows[i], nil);
-			end
-			]]---
-			self:ToggleExtraFilters(true)
-			app.TopLevelUpdateGroup(data);
-			self.HasPendingUpdate = nil;
-			self:ToggleExtraFilters()
-		end
-		ProcessGroup(self.rowData, data);
-
-		-- Does this user have everything?
-		if data.total and data.total > 0 then
-			if data.total <= data.progress then
-				if #self.rowData < 1 then
-					data.back = 1;
-					tinsert(self.rowData, data);
-				end
-				if self.missingData then
-					self.missingData = nil;
-					if trigger and self.AllowCompleteSound then
-						app.Audio:PlayCompleteSound();
-					end
-				end
-				if not self.ignoreNoEntries then
-					local noentries = self.noEntriesRow or app.CreateRawText(L.NO_ENTRIES, {
-						OnClick = app.UI.OnClick.IgnoreRightClick,
-						preview = app.asset("Discord_2_128"),
-						description = L.NO_ENTRIES_DESC,
-					});
-					noentries.parent = self.data;
-					tinsert(self.rowData, noentries);
-				end
-			else
-				self.missingData = true;
-			end
-		else
-			self.missingData = nil;
-		end
-		return true;
-	end
-end
-local function UpdateWindows(source, force, trigger)
-	if trigger then trigger = source; end
-	for name, window in pairs(app.Windows) do
-		local window_oldUpdate = window.Update;
-		window.UpdatePending = true;
-		window.Update = function(self, ...)
-			local result = window_oldUpdate(self, ...);
-			self.Update = window_oldUpdate;
-			self.UpdatePending = nil;
-			return result;
-		end
-	end
-	for name, window in pairs(app.Windows) do
-		if window.UpdatePending then
-			window:Update(force, trigger);
-		end
-	end
-end
-local function RefreshData(source, trigger)
-	app.WipeSearchCache();
-	refreshDataCooldown = 5;
-	if trigger then
-		--print("REFRESH_DATA", source, trigger);
-		trigger = source;
-	end
-	refreshFromTrigger = refreshFromTrigger or trigger;
-	if currentlyRefreshingData then return; end
-	app:StartATTCoroutine("RefreshData", function()
-		currentlyRefreshingData = true;
-
-		-- While the player is in combat, wait for combat to end.
-		while InCombatLockdown() do coroutine.yield(); end
-
-		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay.
-		while refreshDataCooldown > 0 do
-			refreshDataCooldown = refreshDataCooldown - 1;
-			coroutine.yield();
-		end
-
-		-- Execute the OnRecalculate handlers.
-		app.HandleEvent("OnRecalculate");
-
-		-- Send an Update to the Windows to Rebuild their Row Data
-		if app.HasPendingUpdate then
-			app.HasPendingUpdate = nil;
-
-			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
-				LastSettingsChangeUpdate = app._SettingsRefresh;
-
-				app.HandleEvent("OnRecalculate_NewSettings")
-			end
-
-			UpdateWindows(source, true, refreshFromTrigger);
-		else
-			UpdateWindows(source, nil, refreshFromTrigger);
-		end
-		refreshFromTrigger = nil;
-		currentlyRefreshingData = false;
-
-		-- Execute the OnRefreshComplete handlers.
-		app.HandleEvent("OnRefreshComplete");
-	end);
-end
-function app:RefreshDataQuietly(source, trigger)
-	RefreshData("RefreshDataQuietly:" .. source, trigger);
-end
-
-
 -- Window Creation
 local AllWindowSettings, AllWindowSettingsLoaded;
 local function ApplySettingsForWindow(self, windowSettings)
@@ -1627,6 +1481,8 @@ app.AddEventHandler("OnInit", function()
 end);
 
 -- Window UI Event Handlers
+local tinsert = tinsert;
+local InCombatLockdown = InCombatLockdown;
 local function BuildCategory(self, headers, searchResults, inst)
 	local count = #searchResults;
 	if count == 0 then return; end
@@ -1899,6 +1755,77 @@ local function OnScrollBarValueChanged(self, value)
 	if self.CurrentIndex ~= value then
 		self.CurrentIndex = value;
 		self:GetParent():Refresh();
+	end
+end
+local function ProcessGroup(data, object)
+	if app.VisibilityFilter(object) then
+		data[#data + 1] = object;
+		local g = object.g;
+		if g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
+			for i=1,#g do
+				ProcessGroup(data, g[i]);
+			end
+		end
+	end
+end
+local function UpdateWindow(self, force, trigger)
+	-- If this window doesn't have data, do nothing.
+	local data = self.data;
+	if not data then return; end
+	self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+	if force or self:IsShown() then
+		if not self.rowData then
+			self.rowData = {};
+		else
+			wipe(self.rowData);
+		end
+		data.expanded = true;
+		if self.HasPendingUpdate then
+			--[[
+			local rows = self.Container.rows;
+			for i=1,#rows,1 do
+				SetRowData(self, rows[i], nil);
+			end
+			]]---
+			self:ToggleExtraFilters(true)
+			app.TopLevelUpdateGroup(data);
+			self.HasPendingUpdate = nil;
+			self:ToggleExtraFilters()
+		end
+		ProcessGroup(self.rowData, data);
+
+		-- Does this user have everything?
+		if data.total and data.total > 0 then
+			if data.total <= data.progress then
+				if #self.rowData < 1 then
+					data.back = 1;
+					tinsert(self.rowData, data);
+				end
+				if self.missingData then
+					self.missingData = nil;
+					if trigger and self.AllowCompleteSound then
+						app.Audio:PlayCompleteSound();
+					end
+				end
+				if not self.ignoreNoEntries then
+					local noentries = self.noEntriesRow or app.CreateRawText(L.NO_ENTRIES, {
+						OnClick = app.UI.OnClick.IgnoreRightClick,
+						preview = app.asset("Discord_2_128"),
+						description = L.NO_ENTRIES_DESC,
+					});
+					noentries.parent = self.data;
+					tinsert(self.rowData, noentries);
+				end
+			else
+				self.missingData = true;
+			end
+		else
+			self.missingData = nil;
+		end
+		return true;
 	end
 end
 local FieldDefaults = {
@@ -2470,117 +2397,6 @@ end
 function app:GetWindow(suffix)
 	return app.Windows[suffix] or BuildWindow(suffix);
 end
-
--- Warning: This is different in Retail's DataHandling file
-local UpdateGroups;
-local function UpdateGroup(group, parent)
-	local visible = false;
-
-	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupFilter(group) then
-		-- Check if this is a group
-		if group.g then
-			-- If this item is collectible, then mark it as such.
-			if group.collectible then
-				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			else
-				-- Default to 0 for both
-				group.progress = 0;
-				group.total = 0;
-			end
-
-			-- Update the subgroups recursively...
-			visible = UpdateGroups(group, group.g);
-
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if not group.sourceIgnored then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + group.total;
-					parent.progress = (parent.progress or 0) + group.progress;
-				end
-
-				-- If this group is trackable, then we should show it.
-				if group.total > 0 and app.GroupVisibilityFilter(group) then
-					visible = true;
-				elseif app.ShowTrackableThings(group) and not group.saved then
-					visible = true;
-				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
-					visible = true;
-				end
-			else
-				visible = false;
-			end
-		else
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if group.collectible then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + 1;
-
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.collected then
-						parent.progress = (parent.progress or 0) + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							visible = true;
-						end
-					else
-						visible = true;
-					end
-				elseif app.ShowTrackableThings(group) and not group.saved then
-					-- If this group is trackable, then we should show it.
-					visible = true;
-				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
-					visible = true;
-				elseif app.MODE_DEBUG then
-					visible = true;
-				end
-			elseif app.MODE_DEBUG then
-				visible = true;
-			else
-				visible = false;
-			end
-		end
-	end
-
-	-- Set the visibility
-	group.visible = visible;
-	return visible;
-end
-UpdateGroups = function(parent, g)
-	if g then
-		local visible = false;
-		for i=1,#g,1 do
-			local group = g[i];
-			if group.OnUpdate then
-				if not group:OnUpdate(parent, UpdateGroup) then
-					if UpdateGroup(group, parent) then
-						visible = true;
-					end
-				elseif group.visible then
-					visible = true;
-				end
-			elseif UpdateGroup(group, parent) then
-				visible = true;
-			end
-		end
-		return visible;
-	end
-end
-app.UpdateGroups = UpdateGroups;
-local GetTimePreciseSec = GetTimePreciseSec;
-local TopLevelUpdateGroup = function(group, forceShow)
-	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
-	group.TLUG = GetTimePreciseSec()
-	group.progress = 0;
-	group.total = 0;
-	if not (group.OnUpdate and group:OnUpdate()) then
-		UpdateGroups(group, group.g);
-	end
-end
-app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 
 -- Dynamic Popouts for Quest Chains and other Groups
 local function OnInitForPopout(self, questID, group)

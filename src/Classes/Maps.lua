@@ -497,9 +497,7 @@ local function PrintDiscordInformationForAllExplorations(o, type)
 	app.print("Found Unmapped Area (" .. type .. "):", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID))
 	app.Audio:PlayReportSound()
 end
-local RefreshExplorationData = app.IsClassic and (function(data)
-	app:RefreshDataQuietly("RefreshExploration", true);
-end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
+local function RefreshExplorationData(data) app.UpdateRawIDs("explorationID", data); end
 local function CacheAndUpdateExploration(explorationIDTable)
 	-- app.PrintTable(saved)
 	app.SetBatchCached("Exploration", explorationIDTable, 1)

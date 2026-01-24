@@ -56,7 +56,7 @@ lib\Callback.lua
 src\base.lua
 src\Commands.lua
 src\Events.lua
-# src\DataHandling.lua
+src\DataHandling.lua
 
 # Not really a lib concept...
 lib\Refresh.lua

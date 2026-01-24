@@ -288,6 +288,130 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups
+
+--[[
+-- CRIEVE NOTE: This was Classic's UpdateGroups.
+-- Keeping this here to do a deep dive later
+local UpdateGroups;
+local function UpdateGroup(group, parent)
+	local visible = false;
+
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+
+			-- Update the subgroups recursively...
+			visible = UpdateGroups(group, group.g);
+
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if not group.sourceIgnored then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + group.total;
+					parent.progress = (parent.progress or 0) + group.progress;
+				end
+
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					-- If this group is trackable, then we should show it.
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				elseif app.MODE_DEBUG then
+					visible = true;
+				end
+			elseif app.MODE_DEBUG then
+				visible = true;
+			else
+				visible = false;
+			end
+		end
+	end
+
+	-- Set the visibility
+	group.visible = visible;
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for i=1,#g,1 do
+			local group = g[i];
+			if group.OnUpdate then
+				if not group:OnUpdate(parent, UpdateGroup) then
+					if UpdateGroup(group, parent) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(group, parent) then
+				visible = true;
+			end
+		end
+		return visible;
+	end
+end
+app.UpdateGroups = UpdateGroups;
+local GetTimePreciseSec = GetTimePreciseSec;
+local TopLevelUpdateGroup = function(group, forceShow)
+	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
+	group.TLUG = GetTimePreciseSec()
+	group.progress = 0;
+	group.total = 0;
+	group.costTotal = nil
+	group.upgradeTotal = nil
+	-- app.PrintDebug("TLUG",group.hash)
+	-- Root data in Windows should ALWAYS be visible
+	-- Data can also be force-shown externally (i.e. when as a search result)
+	if group.window or forceShow then
+		-- app.PrintDebug("Root Group",group.text)
+		group.forceShow = true
+	end
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
+	end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
+]]--
+
 -- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
 local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases

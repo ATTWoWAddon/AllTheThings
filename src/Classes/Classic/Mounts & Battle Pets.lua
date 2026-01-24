@@ -200,7 +200,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
 	app.AddEventRegistration("NEW_PET_ADDED", function(...)
-		app:RefreshDataQuietly("NEW_PET_ADDED", true);
+		app.HandleEvent("OnUpdateWindows");
 	end)
 else
 	speciesFields.icon = function(t)
@@ -250,7 +250,7 @@ else
 					end
 				end
 			end
-			if anythingNew then app:RefreshDataQuietly("RefreshCompanionCollectionStatus", true); end
+			if anythingNew then app.HandleEvent("OnUpdateWindows"); end
 		end
 		local meta = { __index = function(t, spellID)
 			RefreshCompanionCollectionStatus();

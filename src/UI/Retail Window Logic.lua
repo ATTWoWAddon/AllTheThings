@@ -1481,6 +1481,8 @@ app.AddEventHandler("OnInit", function()
 end);
 
 -- Window UI Event Handlers
+local tinsert = tinsert;
+local InCombatLockdown = InCombatLockdown;
 local function BuildCategory(self, headers, searchResults, inst)
 	local count = #searchResults;
 	if count == 0 then return; end
@@ -1755,7 +1757,6 @@ local function OnScrollBarValueChanged(self, value)
 		self:GetParent():Refresh();
 	end
 end
-
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
 		data[#data + 1] = object;

@@ -893,7 +893,7 @@ if app.Debugging then
 end
 
 local RefreshAllQuestInfo, RefreshQuestInfo;
-if app.IsRetail then
+if C_QuestLog_GetAllCompletedQuestIDs then
 	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 	local MAX = 999999;
 	local UnflaggedQuests = {}
@@ -1114,7 +1114,7 @@ else
 		if any then
 			wipe(ClassicDirtyQuests);
 			app.WipeSearchCache();
-			app:RefreshDataQuietly("RefreshQuestInfo", true);
+			app.HandleEvent("OnUpdateWindows");
 		end
 	end
 	RefreshAllQuestInfo = function()
@@ -1993,17 +1993,17 @@ local softRefresh = function()
 	wipe(LockedQuestCache)
 	wipe(LockedBreadcrumbCache)
 end;
-if app.IsClassic then
-	-- Way too spammy to be used without a Callback or combat protection
-	app.AddEventRegistration("CRITERIA_UPDATE", app.WipeSearchCache)
-	-- This triggers in many situations where nothing actually changes... (like opening Quest Log)
-	app.AddEventRegistration("QUEST_LOG_UPDATE", RefreshAllQuestInfo)
-else
+if C_QuestLog_GetAllCompletedQuestIDs then
 	-- In Retail, this has a cooldown and OOC protection, plus it actually allows accurate
 	-- triggering of quest status changes without user action.
 	-- Additionally, RefreshAllQuestInfo is extremely efficient for Retail and characters with 25,000 completed
 	-- quests should not notice any FPS stutters even up to 120 FPS
 	app.AddEventRegistration("CRITERIA_UPDATE", RefreshAllQuestInfo)
+else
+	-- Way too spammy to be used without a Callback or combat protection
+	app.AddEventRegistration("CRITERIA_UPDATE", app.WipeSearchCache)
+	-- This triggers in many situations where nothing actually changes... (like opening Quest Log)
+	app.AddEventRegistration("QUEST_LOG_UPDATE", RefreshAllQuestInfo)
 end
 app.AddEventRegistration("BAG_NEW_ITEMS_UPDATED", softRefresh)
 app.AddEventRegistration("QUEST_WATCH_UPDATE", softRefresh)

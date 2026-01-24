@@ -322,7 +322,7 @@ app:CreateWindow("Tradeskills", {
 				-- If something new was "learned", then refresh the data.
 				if learned > 0 then
 					app.print("Cached " .. learned .. " known recipes!");
-					app:RefreshDataQuietly("TradeSkills::CacheRecipes", true);
+					app.HandleEvent("OnUpdateWindows", true)
 				end
 			end
 		end
@@ -462,7 +462,6 @@ app:CreateWindow("Tradeskills", {
 		local newSpellLearned = function(self, spellID)
 			if spellID then
 				app.SetThingCollected("spellID", spellID, false, true);
-				app:RefreshDataQuietly("NEW_SPELL_LEARNED", true);
 			end
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;

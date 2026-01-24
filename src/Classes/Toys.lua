@@ -75,7 +75,6 @@ app.AddEventRegistration("TOYS_UPDATED", app.IsRetail and function(itemID, new)
 end or function(toyID, new)
 	if toyID then
 		app.SetAccountCollected(app.SearchForField(KEY, toyID)[1] or app.CreateToy(toyID), CACHE, toyID, PlayerHasToy(toyID));
-		app:RefreshDataQuietly("TOYS_UPDATED", true);
 	end
 end)
 if app.IsClassic then

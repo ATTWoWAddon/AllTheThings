@@ -33,8 +33,8 @@
 	<Script file="Locked.lua"/>
 	<!--
 	<Script file="Maps.lua"/>
-	<Script file="Mini List.lua"/>
 	-->
+	<Script file="Mini List.lua"/>
 	<Script file="Missing Quests.lua"/>
 	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
@@ -67,7 +67,8 @@
 	<Script file="Import.lua"/>
 	<Script file="List.lua"/>
 	<Script file="Maps.Retail.lua"/>
-	<Script file="Mini List.Retail.lua"/>
+	<!--<Script file="Mini List.Retail.lua"/>
+	-->
 	<Script file="New With Patch.Retail.lua"/>
 	<Script file="Raid Assistant.Retail.lua"/>
 	<Script file="Random.Retail.lua"/>
