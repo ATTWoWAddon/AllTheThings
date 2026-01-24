@@ -2330,7 +2330,7 @@ translate = function(data, key)
 				-- We want to reuse this headerID for things that use the same translation data.
 				local headerID = temporaryHeaderAssignments[data.en];
 				if not headerID then
-					headerID = createHeader({ readable = data.en, temporary = true, text = data });
+					headerID = createHeader({ readable = data.en, text = data });
 					temporaryHeaderAssignments[data.en] = headerID;
 				end
 				return "~H:" .. headerID;
