@@ -3721,7 +3721,7 @@ root(ROOTS.Unsorted, {
 			-- Delve
 			i(260924),	-- Sentinel's Blessing \\ Sentinel's Halo
 			-- Mount
-			i(260916),	-- Lost Nether Drake
+			i(260916),	-- Nether-Warped Drake
 
 			-- Misc
 			i(260918),	-- Zealot's Surge

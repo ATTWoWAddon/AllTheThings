@@ -4560,12 +4560,14 @@ i(0, 4887);			-- Dundun
 i(264654, 4977);	-- Emberwing Hatchling
 i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
+i(260360, 4944);	-- Gummi the Glow Wyrm
 i(244339, 4816);	-- Hawkstrider Hatchling
 i(252650, 4894);	-- Heartglow Listener
 i(262395, 4959);	-- Hexed Bunny
 i(265030, 4983);	-- Kai
 i(262393, 4955);	-- Kreepah'zoyd
 i(259991, 4930);	-- Lil' Preyseeker
+i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
 i(262999, 4971);	-- Luma
@@ -4588,6 +4590,7 @@ i(262769, 4966);	-- Screechy Mandrake
 i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
+i(0, 4943);			-- Star the Lucky Dragon
 i(251004, 3364);	-- Striped Snakebiter
 i(267838, 5003);	-- Sunwing Hatchling
 i(259337, 4929);	-- Vermillion Grovecrawler

@@ -2295,6 +2295,11 @@ i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
+--- UNSORTED ---
+i(262438, 1268809);	-- Fantastical Goblin Waveshredder
+i(264273, 1271549);	-- Fel Spirehawk
+i(262661, 1269181);	-- Ghastropod
+i(262909, 1269556);	-- Hypo-Speed X6000
 
 ------------------
 -- PATCH 12.0.1 --
@@ -2343,8 +2348,8 @@ i(257446, 1261583);	-- Insatiable Shredclaw
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(0, 1266703);	-- Lab-grown Stormray
 i(260895, 1267002);	-- Lavender Pseudoshell
-i(260916, 3363);	-- Lost Nether Drake
 i(260231, 1265784);	-- Lucent Hawkstrider
+i(260916, 3363);	-- Nether-Warped Drake
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
