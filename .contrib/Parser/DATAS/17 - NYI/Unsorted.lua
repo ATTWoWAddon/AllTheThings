@@ -1672,7 +1672,6 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(249219),	-- 12.0 Delves - Season 1 - Curio - Combat 1
-			i(249221),	-- Sanctum's Edict
 			i(249223),	-- 12.0 Delves - Season 1 - Curio - Combat 5
 			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
 
@@ -1764,31 +1763,6 @@ root(ROOTS.Unsorted, {
 			i(249623),	-- Blooming Leafcoil
 			i(249625),	-- Elder Mossveil
 			i(249627),	-- Arboreal Vine Collar
-			i(249628),	-- Rampant Bramblecloack
-			i(249629),	-- Sprawling Rootunic
-			i(249630),	-- Sprawling Rootpads
-			i(249631),	-- Sprawling Tendrils
-			i(249632),	-- Sprawling Stoloncollar
-			i(249633),	-- Sprawling Rootstockings
-			i(249634),	-- Sprawling Fibershells
-			i(249635),	-- Sprawling Rhizomecord
-			i(249636),	-- Sprawling Wristroots
-			i(249645),	-- Elder Mossmail
-			i(249646),	-- Elder Mossclogs
-			i(249647),	-- Elder Mossfeelers
-			i(249648),	-- Elder Mosshorns
-			i(249649),	-- Elder Mossvein Breeches
-			i(249650),	-- Elder Mossvein Greatleaves
-			i(249651),	-- Elder Mosscinch
-			i(249652),	-- Elder Mossbands
-			i(249653),	-- Rampant Brambleplate
-			i(249654),	-- Rampant Thistlestompers
-			i(249655),	-- Rampant Creepers
-			i(249656),	-- Rampant Briarhelm
-			i(249657),	-- Rampant Bramblegreaves
-			i(249658),	-- Rampant Thornmantles
-			i(249659),	-- Rampant Thornstrap
-			i(249660),	-- Rampant Briarcuffs
 			i(249661),	-- Root Sculptor's Verdaxe \\ Root Sculpter's Verdaxe
 			i(249662),	-- Wild Fiberknife
 			i(249664),	-- Gnarled Thornmace
@@ -2062,9 +2036,6 @@ root(ROOTS.Unsorted, {
 			-- QI
 			i(252192),	-- Rune Key
 			i(252370),	-- Heartwisp Frond
-
-			-- Delve
-			i(252415),	-- Trovehunter's Bounty
 			-- Abudance
 			i(252607),	-- Abundant Beacon \\ [TUTORIAL ITEM]
 			i(252608),	-- Unalloyed Abundance \\ [OLD] Unalloyed Abundance
@@ -2269,8 +2240,6 @@ root(ROOTS.Unsorted, {
 			i(254778),	-- Altered Totem
 			i(255161),	-- Callum's Belongings
 			-- Delve
-			i(254869),	-- Chunk of Companion Experience
-			i(254983),	-- Assassin's Subtle Tea
 			i(254984),	-- Potent Assassin's Subtle Tea
 			-- Cache
 			i(254677),	-- Apex Cache
@@ -2824,19 +2793,15 @@ root(ROOTS.Unsorted, {
 			i(256761),	-- Formula: Enchant Shoulders - Voidtouched
 
 			-- World Quest
-			i(256965),	-- Steelbark Vambraces \\ [PH] WQ - Armor - Plate WRIST - A
 			i(256966),	-- Rootspeaker's Leafwraps \\ [PH] WQ - Armor - Mail WRIST - A
 			i(256968),	-- Deepvine Bracers \\ [PH] WQ - Armor - Cloth WRIST - A
 			i(256970),	-- Loa-Blessed Beads \\ [PH] WQ - Accessory - NECK - A
 			i(256971),	-- Radiant Phoenix Band \\ [PH] WQ - Accessory - FINGER - D
 			i(256972),	-- Evertwisting Swiftvine \\ [PH] WQ - Accessory - FINGER - C
-			i(256973),	-- Steelbark Sabatons \\ [PH] WQ - Armor - Plate FEET - A
 			i(256974),	-- Rootspeaker's Footwraps \\ [PH] WQ - Armor - Mail FEET - A
 			i(256976),	-- Deepvine Ankleguards \\ [PH] WQ - Armor - Cloth FEET - A
-			i(256977),	-- Steelbark Gauntlets \\ [PH] WQ - Armor - Plate HAND - A
 			i(256978),	-- Rootspeaker's Branches \\ [PH] WQ - Armor - Mail HAND - A
 			i(256980),	-- Deepvine Grips \\ [PH] WQ - Armor - Cloth HAND - A
-			i(256981),	-- Steelbark Chestguard \\ [PH] WQ - Armor - Plate CHEST - A
 			i(256982),	-- Rootspeaker's Trunk \\ [PH] WQ - Armor - Mail CHEST - A
 			i(256984),	-- Deepvine Chestwrap \\ [PH] WQ - Armor - Cloth CHEST - A
 			i(256986),	-- Circlet of Encroaching Shadow \\ [PH] WQ - Accessory - FINGER - A
@@ -2846,12 +2811,10 @@ root(ROOTS.Unsorted, {
 			i(256991),	-- Vinewrapped Mallet \\ [PH] WQ - Weapon - 1H Mace STR - A
 			i(256992),	-- Razorvine Cudgel \\ [PH] WQ - Weapon - 1H Mace AGI - A
 			i(256993),	-- Verdant Tracker's Spike \\ [PH] WQ - Weapon - 1H Dagger AGI - B
-			i(256994),	-- Steelbark Casque \\ [PH] WQ - Armor - Plate HEAD - A
 			i(256995),	-- Rootspeaker's Headdress \\ [PH] WQ - Armor - Mail HEAD - A
 			i(256997),	-- Deepvine Collar \\ [PH] WQ - Armor - Cloth HEAD - A
 			i(256999),	-- Rootspeaker's Canopy \\ [PH] WQ - Armor - Mail SHOULDER - A
 			i(257001),	-- Deepvine Pauldrons \\ [PH] WQ - Armor - Cloth SHOULDER - A
-			i(257002),	-- Steelbark Greaves \\ [PH] WQ - Armor - Plate LEGS - A
 			i(257003),	-- Rootspeaker's Leggings \\ [PH] WQ - Armor - Mail LEGS - A
 			i(257005),	-- Deepvine Britches \\ [PH] WQ - Armor - Cloth LEGS - A
 			i(257006),	-- Vine-Rending Claymore \\ [PH] WQ - Weapon - 2H Sword STR - A
@@ -3028,11 +2991,6 @@ root(ROOTS.Unsorted, {
 			i(257750),	-- Laced Zoomshots
 			i(257751),	-- Weighted Boomshots
 			i(257752),	-- Weighted Boomshots
-
-			-- Delve
-			i(257755),	-- Holy Bounding Hand Grenade
-			i(257768),	-- Time Lost Edict
-			i(257866),	-- Overflowing Voidspire
 
 			-- QI
 			i(257870),	-- Void Residue
@@ -3728,7 +3686,6 @@ root(ROOTS.Unsorted, {
 			i(262724),	-- Currency Wallet
 			-- Wep
 			i(262729),	-- Hand of the Rootkeeper
-			i(262731),	-- Wildthorn Razorfang
 			i(262732),	-- Heavy Bramblebolter
 
 			-- Trinket
@@ -4248,10 +4205,6 @@ root(ROOTS.Unsorted, {
 			i(264672),	-- Cosmic Ritual Stone
 			-- Boon
 			i(264668),	-- Boon of Speed
-
-			-- Delve
-			i(264669),	-- Blessing of Potency \\ Explorer's Potency
-			i(264670),	-- Blessing of Zeal \\ Explorer's Zeal
 			-- Decor
 			i(264680),	-- Cuddly Sea Green Grrgle
 			i(264681),	-- Cuddly Brown Grrgle
@@ -4783,8 +4736,6 @@ root(ROOTS.Unsorted, {
 			i(253451),	-- Veilroot Fountain
 			i(260603),	-- Frail and Flexible Wing
 			i(260605),	-- Shattered Spear Tip
-			i(260611),	-- Large Bestial Scale
-			i(260615),	-- Void Dust Residue
 			i(260617),	-- Large Broken Teeth
 			i(260620),	-- Stone Droppings
 			i(260621),	-- Magic Infused Bark
@@ -4793,17 +4744,13 @@ root(ROOTS.Unsorted, {
 			i(260640),	-- Crooked Bird Talons
 			i(260644),	-- Lightbloom Bark
 			i(260649),	-- Vibrant Vortex
-			i(260650),	-- Elemental Debris
 			i(260654),	-- Abrasive Sand
-			i(260656),	-- Perforated Wing
-			i(260658),	-- Crystal Rock Shard
 			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
 			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
 			i(260675),	-- Luminous Seeds
-			i(260676),	-- Unremarkable Crystal
 			i(260677),	-- Void Flakes
 			i(260678),	-- Sharp Obsidian Chunk
 			i(260679),	-- Fleshless Bone
@@ -5015,8 +4962,6 @@ root(ROOTS.Unsorted, {
 			-- Boon
 			i(267235),	-- Boon of Vitality
 			i(267236),	-- Boon of Speed
-			i(267237),	-- Boon of Power
-			i(267238),	-- Boon of Potency
 			i(267240),	-- Boon of Fortitude
 			i(267241),	-- Boon of Abstinence
 			i(267242),	-- Boon of Speed
@@ -5122,10 +5067,6 @@ root(ROOTS.Unsorted, {
 			i(267641),	-- Tarnished Silvermoon Suncrest
 			i(267642),	-- Worn Amani Heartstring Pendant
 			i(267643),	-- Worn Amani Totemstring
-
-			-- Misc Boon
-			i(267648),	-- Boon of Vigor
-			i(267649),	-- Boon of Vigor
 
 			-- Misc
 			i(267650),	-- Blood Knight Training Manual
