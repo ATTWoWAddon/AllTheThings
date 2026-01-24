@@ -14,6 +14,55 @@ local RETRIEVING_DATA = RETRIEVING_DATA;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local debugprofilestop = debugprofilestop;
 
+-- Old Implementation (Deprecated!)
+-- Store the Custom Windows Update functions which are required by specific Windows
+do
+	local customWindowInits = {};
+	local customWindowUpdates = { params = {} };
+	-- Returns the Custom Update function based on the Window suffix if existing
+	function app:CustomWindowInit(suffix)
+		return customWindowInits[suffix];
+	end
+	-- Returns the Custom Update function based on the Window suffix if existing
+	function app:CustomWindowUpdate(suffix)
+		return customWindowUpdates[suffix];
+	end
+	-- Retrieves the value of the specific attribute for the given window suffix
+	app.GetCustomWindowParam = function(suffix, name)
+		local params = customWindowUpdates.params[suffix];
+		-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
+		return params and params[name] or nil;
+	end
+	-- Defines the value of the specific attribute for the given window suffix
+	app.SetCustomWindowParam = function(suffix, name, value)
+		local params = customWindowUpdates.params;
+		if params[suffix] then params[suffix][name] = value;
+		else params[suffix] = { [name] = value } end
+		-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
+	end
+	-- Removes the custom attributes for a given window suffix
+	app.ResetCustomWindowParam = function(suffix)
+		customWindowUpdates.params[suffix] = nil;
+		-- app.PrintDebug("ResetCustomWindowParam",suffix)
+	end
+	-- Allows externally adding custom window init logic which doesn't exist already
+	app.AddCustomWindowOnInit = function(customName, onInit)
+		if customWindowInits[customName] then
+			app.print("Cannot replace Custom Window: "..customName)
+		end
+		-- app.print("Added",customName)
+		customWindowInits[customName] = onInit
+	end
+	-- Allows externally adding custom window update logic which doesn't exist already
+	app.AddCustomWindowOnUpdate = function(customName, onUpdate)
+		if customWindowUpdates[customName] then
+			app.print("Cannot replace Custom Window: "..customName)
+		end
+		-- app.print("Added",customName)
+		customWindowUpdates[customName] = onUpdate
+	end
+end
+
 -- Expand / Collapse Functions
 local SkipAutoExpands = {
 	-- Specific HeaderID values should not expand
@@ -415,37 +464,9 @@ local function StartMovingOrSizing(self)
 	end
 end
 
-
 -- Shared Panel Functions
 local rawget,tostring
 	= rawget,tostring;
-local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros
-local GetProgressColor = app.Modules.Color.GetProgressColor
-local function AddQuestInfoToTooltip(info, quests, reference)
-	-- Adds ATT information about the list of Quests into the provided tooltip
-	if not quests then return end
-
-	local text, mapID, q
-	for i=1,#quests do
-		q = quests[i]
-		text = q.text;
-		if IsRetrieving(text) then
-			text = RETRIEVING_DATA;
-			reference.working = true;
-		end
-		text = app.GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. text;
-		mapID = q.mapID
-			or (q.maps and q.maps[1])
-			or (q.coord and q.coord[3])
-			or (q.coords and q.coords[1] and q.coords[1][3]);
-		if mapID then
-			text = text .. " (" .. app.GetMapName(mapID) .. ")";
-		end
-		info[#info + 1] = {
-			left = text
-		}
-	end
-end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -660,9 +681,29 @@ local function RowOnClick(self, button)
 		end
 	end
 end
+local function AddQuestInfoToTooltip(info, quests, reference)
+	-- Adds ATT information about the list of Quests into the provided tooltip
+	if not quests then return end
+
+	local currentMapID = app.CurrentMapID;
+	local text, mapID, q
+	for i=1,#quests do
+		q = quests[i]
+		text = q.text;
+		if IsRetrieving(text) then
+			text = RETRIEVING_DATA;
+			reference.working = true;
+		end
+		text = app.GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. text;
+		mapID = app.GetBestMapForGroup(q, currentMapID);
+		if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
+		info[#info + 1] = { left = text }
+	end
+end
 local function RowOnEnter(self)
 	local reference = self.ref;
 	if not reference then return; end
+	reference.working = nil;
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
 	local modifier = IsModifierKeyDown();
@@ -685,7 +726,7 @@ local function RowOnEnter(self)
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", true); end
 
 	-- Build tooltip information.
-	local tooltipInfo = {};
+	local tooltipInfo, working = {}, nil;
 	tooltip:ClearLines();
 	tooltip.ATT_AttachComplete = nil
 	app.ActiveRowReference = reference;
@@ -694,7 +735,6 @@ local function RowOnEnter(self)
 		window.HightlightDatas[reference] = nil
 		self:SetHighlightLocked(false)
 	end
-	local working
 	local anchor = window.TooltipAnchor;
 	if not anchor then
 		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
@@ -706,14 +746,13 @@ local function RowOnEnter(self)
 	tooltip:SetOwner(self, anchor);
 
 	-- Attempt to show the object as a hyperlink in the tooltip
-	local linkSuccessful
-	local link = reference.link or reference.tooltipLink or reference.silentLink
-	local refkey = reference.key
 	-- Items always use their links
 	if reference.itemID
 		-- Quest links are ignored if 'Objectives' is enabled
-		or (refkey ~= (app.Settings:GetTooltipSetting("Objectives") and "questID" or "_Z_"))
+		or (reference.key ~= (app.Settings:GetTooltipSetting("Objectives") and "questID" or "_Z_"))
 	then
+		local linkSuccessful
+		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
 			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
 			if ok and result then
@@ -734,7 +773,6 @@ local function RowOnEnter(self)
 
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
-		-- sometimes text is nil
 		tooltipInfo[#tooltipInfo + 1] = { left = reference.text or RETRIEVING_DATA }
 	end
 
@@ -746,21 +784,12 @@ local function RowOnEnter(self)
 				left = left,
 				right = right,
 				r = 1, g = 1, b = 1
-			}
+			};
 		else
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = title,
 				r = 1, g = 1, b = 1
-			}
-		end
-	end
-	if reference.speciesID then
-		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
-		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
-		if total then
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = tostring(progress) .. " / " .. tostring(total) .. L.COLLECTED_STRING,
-			}
+			};
 		end
 	end
 	if reference.questID then
@@ -780,7 +809,7 @@ local function RowOnEnter(self)
 		end
 	end
 
-	-- Additional information (search will insert this information if found in search)
+	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
@@ -788,10 +817,8 @@ local function RowOnEnter(self)
 				left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. reference.factionID)) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
-			}
+			};
 		end
-
-		-- Add any ID toggle fields
 		app.ProcessInformationTypes(tooltipInfo, reference);
 	end
 
@@ -827,20 +854,19 @@ local function RowOnEnter(self)
 	end
 
 	-- Show Quest Prereqs
-	local isDebugMode, sqs, bestMatch = app.MODE_DEBUG, nil, nil;
-	local sourceQuests = reference.sourceQuests
-	if sourceQuests and (not reference.saved or isDebugMode) then
-		local prereqs, bc = {}, {};
+	local isDebugMode = app.MODE_DEBUG;
+	local sourceQuests = reference.sourceQuests;
+	if sourceQuests and (isDebugMode or not reference.saved) then
+		local prereqs, bc, bestMatch, sqs = {}, {}, nil, nil;
 		local sourceQuestID, sq
 		for i=1,#sourceQuests do
 			sourceQuestID = sourceQuests[i]
 			if sourceQuestID > 0 and (isDebugMode or not app.IsQuestFlaggedCompleted(sourceQuestID)) then
 				sqs = app.SearchForField("questID", sourceQuestID);
 				if #sqs > 0 then
-					bestMatch = nil;
 					for j=1,#sqs do
 						sq = sqs[j]
-						if sq.questID == sourceQuestID then
+						if sq.questID == sourceQuestID and not sq.objectiveID then
 							if isDebugMode or (not app.IsQuestFlaggedCompleted(sourceQuestID) and app.GroupFilter(sq)) then
 								if sq.sourceQuests then
 									-- Always prefer the source quest with additional source quest data.
@@ -854,26 +880,29 @@ local function RowOnEnter(self)
 					end
 					if bestMatch then
 						if bestMatch.isBreadcrumb then
-							bc[#bc + 1] = bestMatch
+							bc[#bc + 1] = bestMatch;
 						else
-							prereqs[#prereqs + 1] = bestMatch
+							prereqs[#prereqs + 1] = bestMatch;
 						end
+						bestMatch = nil;
 					end
 				else
-					prereqs[#prereqs + 1] = app.CreateQuest(sourceQuestID)
+					prereqs[#prereqs + 1] = app.CreateQuest(sourceQuestID);
 				end
 			end
 		end
 		if prereqs and #prereqs > 0 then
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.PREREQUISITE_QUESTS,
-			}
+				wrap = true,
+			};
 			AddQuestInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 		if bc and #bc > 0 then
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.BREADCRUMBS_WARNING,
-			}
+				wrap = true,
+			};
 			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
 		end
 	end
@@ -1007,6 +1036,44 @@ local function RowOnEnter(self)
 			}
 		end
 	end
+	if reference.sourceAchievements and (isDebugMode or not reference.collected) then
+		local prereqs, bc, bestMatch, sas = {}, {}, nil, nil;
+		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
+			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
+				sas = app.SearchForField("achievementID", sourceAchievementID);
+				if #sas > 0 then
+					for j,sa in ipairs(sas) do
+						if sa.achievementID == sourceAchievementID and sa.key == "achievementID" then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
+								bestMatch = sa;
+							end
+						end
+					end
+					if bestMatch then
+						prereqs[#prereqs + 1] = bestMatch;
+						bestMatch = nil;
+					end
+				else
+					prereqs[#prereqs + 1] = app.CreateAchievement(sourceAchievementID);
+				end
+			end
+		end
+
+		if prereqs and #prereqs > 0 then
+			tooltipInfo[#tooltipInfo + 1] = {
+				left = "This has an incomplete prerequisite achievement that you need to complete first.",
+				wrap = true,
+			};
+			for i,prereq in ipairs(prereqs) do
+				local text = "   " .. prereq.achievementID .. ": " .. (prereq.text or RETRIEVING_DATA);
+				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = text,
+					right = app.GetCompletionIcon(prereq.collected),
+				};
+			end
+		end
+	end
 
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then
@@ -1039,7 +1106,7 @@ local function RowOnEnter(self)
 			}
 		end
 	end
-
+	
 	--[[ ROW DEBUGGING ]
 	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Self",
@@ -1113,8 +1180,7 @@ local function RowOnEnter(self)
 		right = tostring(CalculateRowIndent(reference)),
 	}
 	-- END DEBUGGING]]
-
-
+	
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
@@ -1711,11 +1777,8 @@ local function UpdateWindow(self, force, got)
 	local data = self.data;
 	if not data then return end
 	local visible = self:IsVisible();
-	-- either by Setting or by special windows apply ad-hoc logic
-	local adhoc = self.AdHoc or app.Settings:GetTooltipSetting("Updates:AdHoc")
 	force = force or self.HasPendingUpdate;
-	-- hidden adhoc window is set for pending update instead of forced
-	if adhoc and force and not visible then
+	if force and not visible then
 		self.HasPendingUpdate = true;
 		force = nil;
 	end
@@ -1912,59 +1975,9 @@ local ReservedFields = {
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 };
-
--- Old Implementation
--- Store the Custom Windows Update functions which are required by specific Windows
-do
-	local customWindowInits = {};
-	local customWindowUpdates = { params = {} };
-	-- Returns the Custom Update function based on the Window suffix if existing
-	function app:CustomWindowInit(suffix)
-		return customWindowInits[suffix];
-	end
-	-- Returns the Custom Update function based on the Window suffix if existing
-	function app:CustomWindowUpdate(suffix)
-		return customWindowUpdates[suffix];
-	end
-	-- Retrieves the value of the specific attribute for the given window suffix
-	app.GetCustomWindowParam = function(suffix, name)
-		local params = customWindowUpdates.params[suffix];
-		-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-		return params and params[name] or nil;
-	end
-	-- Defines the value of the specific attribute for the given window suffix
-	app.SetCustomWindowParam = function(suffix, name, value)
-		local params = customWindowUpdates.params;
-		if params[suffix] then params[suffix][name] = value;
-		else params[suffix] = { [name] = value } end
-		-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
-	end
-	-- Removes the custom attributes for a given window suffix
-	app.ResetCustomWindowParam = function(suffix)
-		customWindowUpdates.params[suffix] = nil;
-		-- app.PrintDebug("ResetCustomWindowParam",suffix)
-	end
-	-- Allows externally adding custom window init logic which doesn't exist already
-	app.AddCustomWindowOnInit = function(customName, onInit)
-		if customWindowInits[customName] then
-			app.print("Cannot replace Custom Window: "..customName)
-		end
-		-- app.print("Added",customName)
-		customWindowInits[customName] = onInit
-	end
-	-- Allows externally adding custom window update logic which doesn't exist already
-	app.AddCustomWindowOnUpdate = function(customName, onUpdate)
-		if customWindowUpdates[customName] then
-			app.print("Cannot replace Custom Window: "..customName)
-		end
-		-- app.print("Added",customName)
-		customWindowUpdates[customName] = onUpdate
-	end
-end
-
 local function BuildWindow(suffix)
 	local settings = app.WindowDefinitions[suffix];
-	if not settings then
+	if not settings then	-- Deprecated, but supported in Retail for now.
 		local onUpdate = app:CustomWindowUpdate(suffix) or UpdateWindow;
 		settings = {
 			OnInit = app:CustomWindowInit(suffix),
@@ -1978,7 +1991,7 @@ local function BuildWindow(suffix)
 	end
 	
 	-- Create the window instance.
-	---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
+	---@class ATTWindow: BackdropTemplate, ATTFrameClass
 	local window = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	window:SetClampedToScreen(true);
 	window:SetToplevel(true);
@@ -2314,7 +2327,7 @@ local function BuildWindow(suffix)
 	-- The Row Container. This contains all of the row frames.
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
-	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
+	container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
 	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
 	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 	window.Container = container;
@@ -2409,7 +2422,6 @@ local function BuildWindow(suffix)
 	return window;
 end
 function app:CreateWindow(suffix, settings)
-	-- TODO: Properly implement or use the classic version of CreateWindow.
 	-- TODO: Make this not immediately generate the window
 	app.WindowDefinitions[suffix] = settings;
 	if settings then
@@ -2684,91 +2696,7 @@ local function OnInitForPopout(self, questID, group)
 		-- Sort any content added to the Popout data by the Global sort
 		app.Sort(self.data.g, app.SortDefaults.Global)
 	end
-
-	--[[
-	local currencyID = group.currencyID;
-	if currencyID and not self.data.usedtobuy then
-		local searchResults = app.SearchForField("currencyIDAsCost", currencyID);
-		if #searchResults > 0 then
-			local usedtobuy = {};
-			usedtobuy.g = {};
-			usedtobuy.text = "Used to Buy";
-			usedtobuy.icon = 133784;
-			usedtobuy.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
-			usedtobuy.OnTooltip = function(t, tooltipInfo)
-				local total = 0;
-				for _,o in ipairs(t.g) do
-					if o.visible then
-						if o.cost then
-							for k,v in ipairs(o.cost) do
-								if v[1] == "c" and v[2] == currencyID then
-									total = total + (v[3] or 1);
-								end
-							end
-						end
-						if o.providers then
-							for k,v in ipairs(o.providers) do
-								if v[1] == "c" and v[2] == currencyID then
-									total = total + (v[3] or 1);
-								end
-							end
-						end
-					end
-				end
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = "Total Needed",
-					right = total
-				};
-			end
-			app.MergeObjects(usedtobuy.g, searchResults);
-			if not self.data.g then self.data.g = {}; end
-			tinsert(self.data.g, usedtobuy);
-			self.data.usedtobuy = usedtobuy;
-		end
-	end
-
-	local itemID = group.itemID;
-	if itemID and not self.data.tradedin then
-		local searchResults = app.SearchForField("itemIDAsCost", itemID);
-		if #searchResults > 0 then
-			local tradedin = {};
-			tradedin.g = {};
-			tradedin.text = "Used For";
-			tradedin.icon = 133784;
-			tradedin.description = "This tooltip dynamically calculates the total number you need based on what is still visible below this header.";
-			tradedin.OnTooltip = function(t, tooltipInfo)
-				local total = 0;
-				for _,o in ipairs(t.g) do
-					if o.visible then
-						if o.cost then
-							for k,v in ipairs(o.cost) do
-								if v[1] == "i" and v[2] == itemID then
-									total = total + (v[3] or 1);
-								end
-							end
-						end
-						if o.providers then
-							for k,v in ipairs(o.providers) do
-								if v[1] == "i" and v[2] == itemID then
-									total = total + (v[3] or 1);
-								end
-							end
-						end
-					end
-				end
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = "Total Needed",
-					right = total
-				};
-			end
-			app.MergeObjects(tradedin.g, searchResults);
-			if not self.data.g then self.data.g = {}; end
-			tinsert(self.data.g, tradedin);
-			self.data.tradedin = tradedin;
-		end
-	end
-	]]--
-
+	
 	local dataKey = self.data.key;
 	if dataKey then
 		if group.cost and type(group.cost) == "table" then

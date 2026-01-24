@@ -96,8 +96,8 @@ end)
 
 -- Represents Events whose individual handlers should be processed over multiple frames to reduce potential stutter
 local RunnerEvents = {
-	OnRefreshCollections = app.IsRetail,
-	OnRecalculate = app.IsRetail,
+	OnRefreshCollections = true,
+	OnRecalculate = true,
 	OnUpdateWindows = true,
 }
 -- Represents Events which must always be run synchronously in the same frame as when they are triggered. These should be user-based triggers
