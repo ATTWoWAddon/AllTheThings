@@ -1790,6 +1790,12 @@ local function ClearSettingsForWindow(self)
 	if not AllWindowSettings then return; end
 	AllWindowSettings[self.Suffix] = nil;
 end
+local function ReclaimSettingsForWindow(self)
+	local windowSettings = self.Settings;
+	if windowSettings then
+		AllWindowSettings[self.Suffix] = windowSettings;
+	end
+end
 local function RecordSettingsForWindow(self)
 	local windowSettings = self.Settings;
 	if windowSettings then
@@ -2898,6 +2904,7 @@ function app:CreateMiniListForGroup(group)
 			end
 			self:Update(true);
 		end,
+		OnShow = ReclaimSettingsForWindow,
 		OnHide = ClearSettingsForWindow,
 		OnLoad = function(self, settings)
 			self.dynamic = true;
