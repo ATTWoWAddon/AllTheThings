@@ -185,6 +185,8 @@ local function SetRowData(self, row, data)
 		end
 
 		-- Every valid row has a summary, label, and texture
+		row.Texture.Background:Hide();
+		row.Texture.Border:Hide();
 		row.Texture:Show();
 		row.Summary:Show();
 		row.Label:Show();
@@ -942,12 +944,14 @@ local function CreateRow(container, rows, i)
 	row.Texture:SetPoint("TOP");
 	row.Texture:SetWidth(rowHeight);
 	row.Texture.Background = row:CreateTexture(nil, "BACKGROUND");
+	row.Texture.Background:SetPoint("LEFT", row.Texture);
 	row.Texture.Background:SetPoint("BOTTOM");
-	row.Texture.Background:SetPoint("TOPLEFT");
+	row.Texture.Background:SetPoint("TOP");
 	row.Texture.Background:SetWidth(rowHeight);
 	row.Texture.Border = row:CreateTexture(nil, "BORDER");
+	row.Texture.Border:SetPoint("LEFT", row.Texture);
 	row.Texture.Border:SetPoint("BOTTOM");
-	row.Texture.Border:SetPoint("TOPLEFT");
+	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Indicator is used by the Instance Saves functionality.
