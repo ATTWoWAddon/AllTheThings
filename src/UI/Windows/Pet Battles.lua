@@ -1,6 +1,9 @@
 -- App locals
 local _, app = ...;
 
+-- CRIEVE NOTE: This exists as a primary category in Retail.
+if app.IsRetail then return; end
+
 -- Global locals
 local ipairs, tinsert =
 	  ipairs, tinsert;

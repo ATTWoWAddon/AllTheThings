@@ -1247,21 +1247,20 @@ function app:GetDataCache()
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.DELVES, app.Categories.Delves));
 	end
 
-	-- Zones
+	-- Outdoor Zones
 	if app.Categories.Zones then
 		tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
 			icon = app.asset("Category_Zones"),
 			g = app.Categories.Zones,
+			mapID = 947,
 		}));
 	end
 
 	-- World Drops
-	if app.Categories.WorldDrops then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
-			isWorldDropCategory = true,
-			g = app.Categories.WorldDrops,
-		}));
-	end
+	tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
+		g = app.Categories.WorldDrops or {},
+		isWorldDropCategory = true,
+	}));
 
 	-- Group Finder
 	if app.Categories.GroupFinder then
@@ -1318,8 +1317,8 @@ function app:GetDataCache()
 	-- PvP
 	if app.Categories.PVP then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
-			isPVPCategory = true,
 			g = app.Categories.PVP,
+			isPVPCategory = true,
 		}));
 	end
 
@@ -1333,9 +1332,10 @@ function app:GetDataCache()
 	end
 
 	-- Professions
-	if app.Categories.Professions then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, app.Categories.Professions));
-	end
+	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
+		g = app.Categories.Professions or {}
+	});
+	tinsert(g, ProfessionsHeader);
 
 	-- Secrets
 	if app.Categories.Secrets then
@@ -1376,10 +1376,92 @@ function app:GetDataCache()
 			g = app.Categories.TradingPost
 		}));
 	end
+	
+	-----------------------------------------
+	-- D Y N A M I C   C A T E G O R I E S --
+	-----------------------------------------
+	--[[
+	if app.Windows then
+		local keys,sortedList = {},{};
+		for suffix,window in pairs(app.WindowDefinitions) do
+			if window and window.IsDynamicCategory then
+				if window.DynamicCategoryHeader then
+					if window.DynamicProfessionID then
+						local dynamicProfessionHeader = nil;
+						for i,header in ipairs(ProfessionsHeader.g) do
+							if header.requireSkill == window.DynamicProfessionID then
+								dynamicProfessionHeader = header;
+								break;
+							end
+						end
 
+						local recipesList = app.CreateDynamicCategory(suffix);
+						recipesList.IgnoreBuildRequests = true;
+						if dynamicProfessionHeader then
+							recipesList.text = "Recipes";
+							recipesList.icon = 134939;
+							if not dynamicProfessionHeader.g then
+								dynamicProfessionHeader.g = {};
+							end
+							tinsert(dynamicProfessionHeader.g, recipesList);
+						else
+							tinsert(ProfessionsHeader.g, recipesList);
+						end
+					else
+						print("Unhandled dynamic category conditional");
+					end
+				else
+					keys[suffix] = window;
+				end
+			end
+		end
+		for suffix,window in pairs(app.Windows) do
+			if window and window.IsDynamicCategory then
+				if window.DynamicCategoryHeader then
+					if window.DynamicProfessionID then
+						local dynamicProfessionHeader = nil;
+						for i,header in ipairs(ProfessionsHeader.g) do
+							if header.requireSkill == window.DynamicProfessionID then
+								dynamicProfessionHeader = header;
+								break;
+							end
+						end
+
+						local recipesList = app.CreateDynamicCategory(suffix);
+						recipesList.IgnoreBuildRequests = true;
+						if dynamicProfessionHeader then
+							recipesList.text = "Recipes";
+							recipesList.icon = 134939;
+							if not dynamicProfessionHeader.g then
+								dynamicProfessionHeader.g = {};
+							end
+							tinsert(dynamicProfessionHeader.g, recipesList);
+						else
+							tinsert(ProfessionsHeader.g, recipesList);
+						end
+					else
+						print("Unhandled dynamic category conditional");
+					end
+				else
+					keys[suffix] = window;
+				end
+			end
+		end
+		for suffix,window in pairs(keys) do
+			tinsert(sortedList, suffix);
+		end
+		app.Sort(sortedList, app.SortDefaults.Strings);
+		for i,suffix in ipairs(sortedList) do
+			local dynamicCategory = app.CreateDynamicCategory(suffix);
+			dynamicCategory.sourceIgnored = 1;
+			tinsert(g, dynamicCategory);
+		end
+	end
+	]]--
+	
 	-- Track Deaths!
 	tinsert(g, app:CreateDeathClass());
-
+	
 	-- Yourself.
 	tinsert(g, app.CreateUnit("player", {
 		["description"] = L.DEBUG_LOGIN,

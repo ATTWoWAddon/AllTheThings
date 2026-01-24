@@ -1507,19 +1507,17 @@ function app:GetDataCache()
 		-- P R I M A R Y   C A T E G O R I E S --
 		-----------------------------------------
 		-- Dungeons & Raids
-		if app.Categories.Instances then
-			tinsert(g, app.CreateRawText(GROUP_FINDER, {
-				icon = app.asset("Category_D&R"),
-				g = app.Categories.Instances,
-			}));
-		end
+		tinsert(g, app.CreateRawText(GROUP_FINDER, {
+			icon = app.asset("Category_D&R"),
+			g = app.Categories.Instances,
+		}));
 
 		-- Outdoor Zones
 		if app.Categories.Zones then
 			tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
 				icon = app.asset("Category_Zones"),
-				mapID = 947,
 				g = app.Categories.Zones,
+				mapID = 947,
 			}));
 		end
 
@@ -1560,6 +1558,7 @@ function app:GetDataCache()
 		if app.Categories.Holidays then
 			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
 				description = "These events occur at consistent dates around the year based on and themed around real world holiday events.",
+				difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
 				g = app.Categories.Holidays,
 				SortType = "EventStart",
 				isHolidayCategory = true,
@@ -1568,8 +1567,9 @@ function app:GetDataCache()
 
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
-			tinsert(g, app.CreateRawText(EXPANSION_FILTER_TEXT, {
+			tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
 				icon = app.asset("Category_ExpansionFeatures"),
+				description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
 				g = app.Categories.ExpansionFeatures
 			}));
 		end
@@ -1636,10 +1636,7 @@ function app:GetDataCache()
 
 		-- In-Game Store
 		if app.Categories.InGameShop then
-			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, {
-				g = app.Categories.InGameShop,
-				expanded = false
-			}));
+			tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
 		end
 
 		-----------------------------------------
