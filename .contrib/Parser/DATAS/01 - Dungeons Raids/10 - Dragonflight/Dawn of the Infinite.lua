@@ -389,7 +389,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(5748),	-- Centaur Longbow						(NYI)
 		ig(204674, {	-- Cursed Demonbone Longbow				(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			["bonusID"] = 451,
@@ -503,7 +503,7 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Knife/Dagger completed.",
 		}),
 		ig(147908, {	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
@@ -545,13 +545,13 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
-		ig(174228, {	-- Gavel of the Oasis					(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+		ig(174228, {	-- Gavel of the Oasis				(NYI)
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(108154),	-- Hardened Draenic Steel Mace			(NYI)
 		ig(163930),	-- Kovork's Rattle						(NYI)
-		ig(161118, {	-- Marrow Shatter						(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+		ig(161118, {	-- Marrow Shatter					(NYI)
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
@@ -623,8 +623,8 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Sword (One-Handed) completed.",
 		}),
 		ig(134613),	-- Scorching Quickblade					(NYI)
-		ig(166364, {	-- Song of the Fallen					(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+		ig(166364, {	-- Song of the Fallen				(NYI)
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(155074),	-- Toll Enforcer						(NYI)
 
