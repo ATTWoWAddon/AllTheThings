@@ -5,11 +5,11 @@ local L, settings = app.L, app.Settings;
 local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
 
 -- CONTENT
-local headerSync = child:CreateHeaderLabel(L.WINDOWS_PAGE)
+local WindowsPageHeader = child:CreateHeaderLabel(L.WINDOWS_PAGE)
 if child.separator then
-	headerSync:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
+	WindowsPageHeader:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
-	headerSync:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+	WindowsPageHeader:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
 -- Window Manager
@@ -66,8 +66,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		});
 	end
 end
-
-app.AddEventHandler("OnSettingsRefreshed", function()
+WindowsPageHeader.OnRefresh = function()
 	local keys,sortedList,topKeys = {},{},{};
 	for suffix,window in pairs(app.WindowDefinitions) do
 		app:GetWindow(suffix);
@@ -152,4 +151,4 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	for i=#WindowButtons,j+1,-1 do
 		WindowButtons[i]:Hide();
 	end
-end);
+end;
