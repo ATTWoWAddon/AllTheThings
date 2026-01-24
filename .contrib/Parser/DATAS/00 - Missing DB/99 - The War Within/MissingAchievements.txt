@@ -409,13 +409,6 @@ ach(62342),	-- Abyss Anglers: The Finest of Fish
 ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
 ach(62351),	-- Preying For Midnight
 ach(62352),	-- Nothing to See Here
-ach(62371),	-- Couponing for Beginners
-ach(62373),	-- Coupon Collector
-ach(62374),	-- You Get The Best Deals Anywhere
-ach(62375),	-- Buying in Bulk
-ach(62376),	-- Extreme Couponing
-ach(62377),	-- A Fist Full of Coupons
-ach(62378),	-- A Few Coupons More
 ach(62383),	-- Gotta Hunt Them All
 12.0.1.65337
 ach(62385),	-- Staring Into The Void

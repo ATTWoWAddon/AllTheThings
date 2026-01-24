@@ -18,6 +18,29 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 		ach(61318, {	-- Fully Furnished				(500)
 			title(657),	-- <Name> the Furnished
 		}),
+		-- Couponing
+		ach(62371, {	-- Couponing for Beginners
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62373, {	-- Coupon Collector
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62374, {	-- You Get The Best Deals Anywhere
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62375, {	-- Buying in Bulk
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62376, {	-- Extreme Couponing
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62377, {	-- A Fist Full of Coupons
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		ach(62378, {	-- A Few Coupons More
+			["timeline"] = { ADDED_12_0_1 },
+		}),
+		-- Harvesting
 		ach(62357, {	-- Classically Trained Lumberjack
 			["timeline"] = { ADDED_12_0_1 },
 		}),
