@@ -800,8 +800,7 @@ crit(16951,{achID=5754,id=9,providers={{"i",62672}}})}}),
 ach(892,{awp=20001,providers={{"s",34093}},rank=4,rwp=90001,spellID=34091,u=2}),
 h(-88,{awp=70003,g={
 ach(11761,{awp=70200,g={
-title(356),
-crit(110425,{achID=11761,id=72})}}),
+title(356)}}),
 ach(10694,{
 title(334)}),
 ach(10687,{

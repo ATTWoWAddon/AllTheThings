@@ -13,6 +13,7 @@ local GetQuestID,C_QuestLog_IsOnQuest
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local round = app.round
 local SearchForObject = app.SearchForObject
+local DebugPrinting
 
 local api = {};
 app.Modules.Contributor = api;
@@ -2792,7 +2793,7 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 	id = tonumber(id)
 	LastSoftInteract.GuidType = guidtype
 	LastSoftInteract.ID = id
-	-- app.PrintDebug("Interact:",guidtype,id)
+	if DebugPrinting then app.print("Contrib.Interact:",guidtype,id) end
 
 	-- only check object soft-interact (for now)
 	if guidtype ~= "GameObject" then return end
@@ -2850,10 +2851,10 @@ local SpellIDHandlers = setmetatable({
 		AddReportData(objRef.__type,objRef.keyval,reportData)
 	end
 }, { __index = function(t, key)
-	if app.Debugging then
+	if DebugPrinting then
 		return function(source, dest)
 			if dest then
-				app.PrintDebug(app.Modules.Color.Colorize("Object Interact SpellID", app.Colors.LockedWarning),key,source,dest)
+				app.print(app.Modules.Color.Colorize("Object Interact SpellID", app.Colors.LockedWarning),key,source,dest)
 			end
 		end
 	end
@@ -2934,6 +2935,15 @@ app.ChatCommands.Add("contribute", function(args)
 end, {
 	"Usage : /att contribute"
 })
+-- Allows a user to use /att debug-contrib to see more prints for contribute situations
+app.ChatCommands.Add("contribute-debug", function(args)
+	DebugPrinting = not DebugPrinting
+	AllTheThingsSavedVariables.Contributor_DebugPrinting = DebugPrinting
+	return true
+end, {
+	"Usage : /att contribute-debug"
+})
 app.AddEventHandler("OnStartup", function()
 	Contribute(AllTheThingsSavedVariables.Contributor)
+	DebugPrinting = AllTheThingsSavedVariables.Contributor_DebugPrinting
 end)

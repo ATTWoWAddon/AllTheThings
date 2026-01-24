@@ -10,22 +10,30 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			ach(61403, {	-- Galactic Combatant
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
-				["groups"] = { i(257504) },	-- Vicious Snaplizard [A] (MOUNT!)
 			}),
 			ach(61405, {	-- Galactic Combatant
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
-				["groups"] = { i(257502) },	-- Vicious Snaplizard [H] (MOUNT!)
 			}),
 			ach(61181),	-- Combatant I: Midnight Season 1
 			ach(61182),	-- Combatant II: Midnight Season 1
 			ach(61183),	-- Challenger I: Midnight Season 1
 			ach(61184),	-- Challenger II: Midnight Season 1
 			ach(61187, {	-- Duelist: Midnight Season 1
-			--	i(244234),	-- Galactic Gladiator's Prestigious Cloak
+				i(264164, {	-- Galactic Gladiator's Tabard
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(260441, {	-- Galactic Gladiator's Tabard
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			ach(61197, {	-- Elite: Midnight Season 1
-			--	i(232908),	-- Galactic Gladiator's Tabard
+				i(264010, {	-- Galactic Gladiator's Prestigious Cloak
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(260443, {	-- Galactic Gladiator's Prestigious Cloak	
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			ach(61180, {	-- Galactic Gladiator: Midnight Season 1
 				title(654),	-- Galactic Gladiator <Name>
@@ -58,30 +66,30 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["races"]= HORDE_ONLY,
 			}),
 			ach(61194, {	-- Strategist: Midnight Season 1
-			--	i(242636),	-- Galactic Legend's Pennant (TOY!)
+				i(255879),	-- Galactic Legend's Pennant (Cosmetic!)
 			}),
 			-- Solo
-			ach(61179, {	-- Legend: Midnight Season 1
-			--	i(242636),	-- Galactic Legend's Pennant (TOY!)
+			ach(61190, {	-- Legend: Midnight Season 1
+				i(255879),	-- Galactic Legend's Pennant (Cosmetic!)
 			}),
 			ach(61198, {	-- Battle Mender: Midnight Season 1
 				["classes"] = HEALERS,
 			}),
-			ach(61190, {	-- Galactic Legend: Midnight Season 1
+			ach(61179, {	-- Galactic Legend: Midnight Season 1
 				title(653),	-- Galactic Legend <Name>
 			}),
 			-- Fashion
-		--	ach(42800),	-- Galactic Attire
+			ach(61586),	-- Galactic Gala
 		})),
-		--[[filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
-			i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
+		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+			i(257504, {	-- Vicious Snaplizard [A] (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			i(243159, {	-- Vicious Void Creeper [H] (MOUNT!)
+			i(257502, {	-- Vicious Snaplizard [H] (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		--]]n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
 				["coord"] = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				--[[["groups"] = {

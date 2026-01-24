@@ -235,7 +235,7 @@ do
 		end,
 		LinkSources = function(link)
 			local cleanlink = CleanLink(link)
-			local kind, id = (":"):split(cleanlink)
+			local kind, id = cleanlink and (":"):split(cleanlink)
 			if id then id = tonumber(id) end
 			if not id or not kind then
 				-- can't search for nothing!
@@ -522,7 +522,7 @@ app.SearchAndOpen = function(search)
 		results = SourceSearcher.LinkSources(search)
 	end
 	if not results or #results == 0 then
-		app.print("No results found for",search)
+		app.print("No results found for",search or "<no search provided>")
 		return
 	end
 
@@ -572,7 +572,10 @@ app.ChatCommands.Add({"search","?"}, function(args)
 	if not search then
 		local guid = UnitGUID("target");
 		if guid then
-			search = "n:" .. select(6, ("-"):split(guid));
+			local npcID = select(6, ("-"):split(guid))
+			if npcID then
+				search = "n:" .. npcID
+			end
 		end
 	end
 
