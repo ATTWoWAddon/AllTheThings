@@ -4120,18 +4120,6 @@ root(ROOTS.Unsorted, {
 			i(248405),	-- Kafa Creamer
 			i(248406),	-- Legerdemain Lounge Sign Board
 			i(248407),	-- Dalaran Kafa Table
-			i(250627),	-- Forbidden Fork
-			i(250694),	-- Draconic Metalshaper's Anvil
-			i(250695),	-- Replica Grathardormu's Hammer
-			i(250696),	-- Green Thumb's Watering Can
-			i(250697),	-- Draconic Auctioneer's Lectern
-			i(250698),	-- Obsidian Warder Pennant
-			i(250699),	-- Dark Talon Pennant
-			i(250700),	-- Roasted Ram Leg
-			i(250701),	-- Draconic Trader's Cart
-			i(250702),	-- Artisan's Measuring Scales
-			i(250703),	-- War Creche Teaching Crystal
-			i(250704),	-- Ancient Weyrn Device
 			i(251472),	-- Pandaren Wooden Cart
 			i(251473),	-- Commander's Kafa Mug
 			i(251474),	-- Ceramic Kafa Mug

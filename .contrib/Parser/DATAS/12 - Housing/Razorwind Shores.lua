@@ -423,123 +423,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 					i(248637),	-- Sunset Aster Flowers (DECOR!)
 				},
 			}),
-			n(255520, {	-- Xiz'ro <Lumberjack>
-				["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
-				["groups"] = {
-					i(253580),	-- Harvesting Hatchet
-					i(251766, {	-- Shadowmoon Lumber
-						["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
-					}),
-				},
-			}),
-			n(255299, {	-- Lefton Farrer <Decor Vendor>
-				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
-				["groups"] = {
-					i(244780),	-- Circular Elven Table (DECOR!)
-					i(244169),	-- Elegant Almond Table (DECOR!)
-					i(253439),	-- Elegant Carved Bench (DECOR!)
-					i(253437),	-- Elegant Covered Bench (DECOR!)
-					i(257692),	-- Elegant Curved Table (DECOR!)
-					i(244782),	-- Elven Floral Window (DECOR!)
-					i(248658),	-- Elven Wood Crate (DECOR!)
-					i(247502),	-- Elven Woodvine Trellis (DECOR!)
-					i(253495),	-- Grand Elven Bench (DECOR!)
-					i(257691),	-- Open Elegant Elven Barrel (DECOR!)
-					i(244118),	-- Rectangular Elegant Table (DECOR!)
-					i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
-				},
-			}),
-			n(240465, {	-- Lonomia <Cursed Goods>
-				["coord"] = { 68.3, 75.5, RAZORWIND_SHORES },
-				["groups"] = {
-					i(245400),	-- Ceiling Cobweb (DECOR!)
-					i(245401),	-- Tented Cobweb (DECOR!)
-					i(245402),	-- Small Dangling Cobweb (DECOR!)
-					i(245403),	-- Large Dangling Cobweb (DECOR!)
-					i(245404),	-- Pillar Cobweb (DECOR!)
-				},
-			}),
-			n(255298, {	-- Jehzar Starfall <Decor Vendor>
-				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
-				["groups"] = {
-					i(246257),	-- Bel'ameth Angled Platform (DECOR!)
-					i(246254),	-- Bel'ameth Beam Platform (DECOR!)
-					i(245578),	-- Bel'ameth Interior Doorway (DECOR!)
-					i(245579),	-- Bel'ameth Interior Narrow Wall (DECOR!)
-					i(245575),	-- Bel'ameth Interior Wall (DECOR!)
-					i(246255),	-- Bel'ameth Large Platform (DECOR!)
-					i(245576),	-- Bel'ameth Round Interior Pillar (DECOR!)
-					i(246258),	-- Bel'ameth Round Platform (DECOR!)
-					i(246256),	-- Bel'ameth Small Platform (DECOR!)
-					i(253493),	-- Carved Elven Bookcase (DECOR!)
-					i(243242),	-- Circular Elven Floor Rug (DECOR!)
-					i(247501),	-- Elegant Carved Door (DECOR!)
-					i(253180),	-- Elegant Elven Canopy Bed (DECOR!)
-					i(251981),	-- Elegant Elven Chandelier (DECOR!)
-					i(253490),	-- Elegant Elven Desk (DECOR!)
-					i(241617),	-- Elegant Padded Chair (DECOR!)
-					i(257690),	-- Elegant Padded Chaise (DECOR!)
-					i(243495),	-- Elegant Padded Divan (DECOR!)
-					i(241618),	-- Elegant Padded Footstool (DECOR!)
-					i(246711),	-- Elegant Pillow Roll (DECOR!)
-					i(246961),	-- Elegant Seat Cushion (DECOR!)
-					i(255650),	-- Elegant Table Lamp (DECOR!)
-					i(246431),	-- Elegant Tied Curtain (DECOR!)
-					i(244781),	-- Elegant Wall Drape (DECOR!)
-					i(241620),	-- Elegant Wooden Dresser (DECOR!)
-					i(249558),	-- Elven Standing Mirror (DECOR!)
-					i(253181),	-- Gemmed Elven Chest (DECOR!)
-					i(253441),	-- Grand Elven Bookcase (DECOR!)
-					i(246691),	-- Grand Elven Wall Curtain (DECOR!)
-					i(264169),	-- Homestone Doormat (DECOR!)
-					i(248760),	-- Lovely Elven Shelf (DECOR!)
-					i(235994),	-- Ornate Stonework Fireplace (DECOR!)
-					i(241622),	-- Ornate Weapon Rack (DECOR!)
-					i(243243),	-- Rectangular Elven Floor Rug (DECOR!)
-					i(246252),	-- Silvermoon Angled Platform (DECOR!)
-					i(246249),	-- Silvermoon Beam Platform (DECOR!)
-					i(245649),	-- Silvermoon Interior Doorway (DECOR!)
-					i(245582),	-- Silvermoon Interior Narrow Wall (DECOR!)
-					i(245583),	-- Silvermoon Interior Wall (DECOR!)
-					i(246250),	-- Silvermoon Large Platform (DECOR!)
-					i(245581),	-- Silvermoon Round Interior Pillar (DECOR!)
-					i(246253),	-- Silvermoon Round Platform (DECOR!)
-					i(246251),	-- Silvermoon Small Platform (DECOR!)
-					i(241621),	-- Small Elegant End Table (DECOR!)
-					i(253479),	-- Small Elegant Padded Chair (DECOR!)
-				},
-			}),
-			n(255297, {	-- Shon'ja <Decor Vendor>
-				["coord"] = { 54.1, 59.0, RAZORWIND_SHORES },
-				["groups"] = {
-					i(246883),	-- Crude Banded Crate (DECOR!)
-					i(245546),	-- Durable Wooden Chest (DECOR!)
-					i(246880),	-- Horned Banded Barrel (DECOR!)
-					i(246218),	-- Iron-Reinforced Crate (DECOR!)
-					i(251638),	-- Jagged Orgrimmar Trellis (DECOR!)
-					i(254893),	-- Large Razorwind Gazebo (DECOR!)
-					i(246220),	-- Leather-Banded Wooden Bench (DECOR!)
-					i(246612),	-- Logger's Picnic Table (DECOR!)
-					i(246882),	-- Long Orgrimmar Bench (DECOR!)
-					i(246884),	-- Open Crude Banded Crate (DECOR!)
-					i(246881),	-- Open Horned Banded Barrel (DECOR!)
-					i(246616),	-- Open Iron-Reinforced Crate (DECOR!)
-					i(246615),	-- Open Spiky Banded Barrel (DECOR!)
-					i(251545),	-- Razorwind Cooking Grill (DECOR!)
-					i(257099),	-- Razorwind Covered Well (DECOR!)
-					i(246611),	-- Razorwind Fountain (DECOR!)
-					i(256357),	-- Razorwind Porch Chair (DECOR!)
-					i(245533),	-- Rugged Brazier (DECOR!)
-					i(244532),	-- Rugged Stool (DECOR!)
-					i(246217),	-- Short Orgrimmar Bench (DECOR!)
-					i(255708),	-- Small Jagged Orgrimmar Trellis (DECOR!)
-					i(246241),	-- Spiky Banded Barrel (DECOR!)
-					i(244535),	-- Tusked Gazebo (DECOR!)
-					i(251637),	-- Tusked Weapon Stand (DECOR!)
-					i(246868),	-- Wide Hide-Covered Bench (DECOR!)
-					i(249550),	-- Wind Rider Roost (DECOR!)
-				},
-			}),
 			n(255278, {	-- Gronthul <Decor Vendor>
 				["coord"] = { 54.1, 59.1, RAZORWIND_SHORES },
 				["groups"] = {
@@ -602,6 +485,165 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 					i(251975),	-- Tusked Sconce (DECOR!)
 					i(250093),	-- Tusked Weapon Rack (DECOR!)
 					i(251976),	-- Wolf Pelt Rug (DECOR!)
+				},
+			}),
+			n(250820, {	-- Hordranin <Endeavor Trader>
+				["coord"] = { 54.2, 56.0, RAZORWIND_SHORES },
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = {
+					i(250704, {	-- Ancient Weyrn Device
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
+					}),
+					i(250702, {	-- Artisan's Measuring Scales
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(250699, {	-- Dark Talon Pennant
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(250697, {	-- Draconic Auctioneer's Lectern
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(250694, {	-- Draconic Metalshaper's Anvil
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
+					}),
+					i(250701, {	-- Draconic Trader's Cart
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
+					}),
+					i(250627, {	-- Forbidden Fork
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(250696, {	-- Green Thumb's Watering Can
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(250698, {	-- Obsidian Warder Pennant
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(250695, {	-- Replica Grathardormu's Hammer
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+					i(250700, {	-- Roasted Ram Leg
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
+					}),
+					i(250703, {	-- War Creche Teaching Crystal
+						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
+					}),
+				},
+			}),
+			n(255298, {	-- Jehzar Starfall <Decor Vendor>
+				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
+				["groups"] = {
+					i(246257),	-- Bel'ameth Angled Platform (DECOR!)
+					i(246254),	-- Bel'ameth Beam Platform (DECOR!)
+					i(245578),	-- Bel'ameth Interior Doorway (DECOR!)
+					i(245579),	-- Bel'ameth Interior Narrow Wall (DECOR!)
+					i(245575),	-- Bel'ameth Interior Wall (DECOR!)
+					i(246255),	-- Bel'ameth Large Platform (DECOR!)
+					i(245576),	-- Bel'ameth Round Interior Pillar (DECOR!)
+					i(246258),	-- Bel'ameth Round Platform (DECOR!)
+					i(246256),	-- Bel'ameth Small Platform (DECOR!)
+					i(253493),	-- Carved Elven Bookcase (DECOR!)
+					i(243242),	-- Circular Elven Floor Rug (DECOR!)
+					i(247501),	-- Elegant Carved Door (DECOR!)
+					i(253180),	-- Elegant Elven Canopy Bed (DECOR!)
+					i(251981),	-- Elegant Elven Chandelier (DECOR!)
+					i(253490),	-- Elegant Elven Desk (DECOR!)
+					i(241617),	-- Elegant Padded Chair (DECOR!)
+					i(257690),	-- Elegant Padded Chaise (DECOR!)
+					i(243495),	-- Elegant Padded Divan (DECOR!)
+					i(241618),	-- Elegant Padded Footstool (DECOR!)
+					i(246711),	-- Elegant Pillow Roll (DECOR!)
+					i(246961),	-- Elegant Seat Cushion (DECOR!)
+					i(255650),	-- Elegant Table Lamp (DECOR!)
+					i(246431),	-- Elegant Tied Curtain (DECOR!)
+					i(244781),	-- Elegant Wall Drape (DECOR!)
+					i(241620),	-- Elegant Wooden Dresser (DECOR!)
+					i(249558),	-- Elven Standing Mirror (DECOR!)
+					i(253181),	-- Gemmed Elven Chest (DECOR!)
+					i(253441),	-- Grand Elven Bookcase (DECOR!)
+					i(246691),	-- Grand Elven Wall Curtain (DECOR!)
+					i(264169),	-- Homestone Doormat (DECOR!)
+					i(248760),	-- Lovely Elven Shelf (DECOR!)
+					i(235994),	-- Ornate Stonework Fireplace (DECOR!)
+					i(241622),	-- Ornate Weapon Rack (DECOR!)
+					i(243243),	-- Rectangular Elven Floor Rug (DECOR!)
+					i(246252),	-- Silvermoon Angled Platform (DECOR!)
+					i(246249),	-- Silvermoon Beam Platform (DECOR!)
+					i(245649),	-- Silvermoon Interior Doorway (DECOR!)
+					i(245582),	-- Silvermoon Interior Narrow Wall (DECOR!)
+					i(245583),	-- Silvermoon Interior Wall (DECOR!)
+					i(246250),	-- Silvermoon Large Platform (DECOR!)
+					i(245581),	-- Silvermoon Round Interior Pillar (DECOR!)
+					i(246253),	-- Silvermoon Round Platform (DECOR!)
+					i(246251),	-- Silvermoon Small Platform (DECOR!)
+					i(241621),	-- Small Elegant End Table (DECOR!)
+					i(253479),	-- Small Elegant Padded Chair (DECOR!)
+				},
+			}),
+			n(255299, {	-- Lefton Farrer <Decor Vendor>
+				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
+				["groups"] = {
+					i(244780),	-- Circular Elven Table (DECOR!)
+					i(244169),	-- Elegant Almond Table (DECOR!)
+					i(253439),	-- Elegant Carved Bench (DECOR!)
+					i(253437),	-- Elegant Covered Bench (DECOR!)
+					i(257692),	-- Elegant Curved Table (DECOR!)
+					i(244782),	-- Elven Floral Window (DECOR!)
+					i(248658),	-- Elven Wood Crate (DECOR!)
+					i(247502),	-- Elven Woodvine Trellis (DECOR!)
+					i(253495),	-- Grand Elven Bench (DECOR!)
+					i(257691),	-- Open Elegant Elven Barrel (DECOR!)
+					i(244118),	-- Rectangular Elegant Table (DECOR!)
+					i(243088),	-- Standing Ornate Weapon Rack (DECOR!)
+				},
+			}),
+			n(240465, {	-- Lonomia <Cursed Goods>
+				["coord"] = { 68.3, 75.5, RAZORWIND_SHORES },
+				["groups"] = {
+					i(245400),	-- Ceiling Cobweb (DECOR!)
+					i(245401),	-- Tented Cobweb (DECOR!)
+					i(245402),	-- Small Dangling Cobweb (DECOR!)
+					i(245403),	-- Large Dangling Cobweb (DECOR!)
+					i(245404),	-- Pillar Cobweb (DECOR!)
+				},
+			}),
+			n(255297, {	-- Shon'ja <Decor Vendor>
+				["coord"] = { 54.1, 59.0, RAZORWIND_SHORES },
+				["groups"] = {
+					i(246883),	-- Crude Banded Crate (DECOR!)
+					i(245546),	-- Durable Wooden Chest (DECOR!)
+					i(246880),	-- Horned Banded Barrel (DECOR!)
+					i(246218),	-- Iron-Reinforced Crate (DECOR!)
+					i(251638),	-- Jagged Orgrimmar Trellis (DECOR!)
+					i(254893),	-- Large Razorwind Gazebo (DECOR!)
+					i(246220),	-- Leather-Banded Wooden Bench (DECOR!)
+					i(246612),	-- Logger's Picnic Table (DECOR!)
+					i(246882),	-- Long Orgrimmar Bench (DECOR!)
+					i(246884),	-- Open Crude Banded Crate (DECOR!)
+					i(246881),	-- Open Horned Banded Barrel (DECOR!)
+					i(246616),	-- Open Iron-Reinforced Crate (DECOR!)
+					i(246615),	-- Open Spiky Banded Barrel (DECOR!)
+					i(251545),	-- Razorwind Cooking Grill (DECOR!)
+					i(257099),	-- Razorwind Covered Well (DECOR!)
+					i(246611),	-- Razorwind Fountain (DECOR!)
+					i(256357),	-- Razorwind Porch Chair (DECOR!)
+					i(245533),	-- Rugged Brazier (DECOR!)
+					i(244532),	-- Rugged Stool (DECOR!)
+					i(246217),	-- Short Orgrimmar Bench (DECOR!)
+					i(255708),	-- Small Jagged Orgrimmar Trellis (DECOR!)
+					i(246241),	-- Spiky Banded Barrel (DECOR!)
+					i(244535),	-- Tusked Gazebo (DECOR!)
+					i(251637),	-- Tusked Weapon Stand (DECOR!)
+					i(246868),	-- Wide Hide-Covered Bench (DECOR!)
+					i(249550),	-- Wind Rider Roost (DECOR!)
+				},
+			}),
+			n(255520, {	-- Xiz'ro <Lumberjack>
+				["coord"] = { 54.2, 58.0, RAZORWIND_SHORES },
+				["groups"] = {
+					i(253580),	-- Harvesting Hatchet
+					i(251766, {	-- Shadowmoon Lumber
+						["cost"] = { { "i", 242691, 1 } },	-- Olemba Lumber
+					}),
 				},
 			}),
 		}),
