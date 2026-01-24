@@ -447,7 +447,10 @@ local function RowOnClick(self, button)
 				end
 				return true;
 			elseif self.index > 0 then
-				app:CreateMiniListForGroup(reference);
+				if not reference.IgnorePopout then
+					-- clone the underlying object of the DLO and create a popout of that instead of the DLO itself
+					app:CreateMiniListForGroup(reference.__dlo and reference.__o or reference);
+				end
 			else
 				app.Settings:Open();
 			end

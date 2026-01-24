@@ -1128,7 +1128,7 @@ local function BuildSourceParent(group)
 			skipFull = true,
 			SortPriority = -3.0,
 			g = {},
-			--IgnorePopout=true,	-- CRIEVE NOTE: WHAT THE HELL IS THIS AND WHY
+			IgnorePopout=true,
 		})
 		for _,parent in ipairs(parents) do
 			-- if there's nothing nested under the parent, then force it to be visible
