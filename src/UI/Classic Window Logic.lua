@@ -1245,7 +1245,7 @@ local function LoadSettingsForWindow(self)
 	self.Settings = settings;
 	self:Load(settings);
 end
-app.AddEventHandler("OnStartup", function()
+app.AddEventHandler("OnInit", function()
 	if AllWindowSettings then
 		return;
 	end

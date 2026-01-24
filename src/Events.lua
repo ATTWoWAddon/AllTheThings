@@ -106,8 +106,23 @@ local ImmediateEvents = {
 	RowOnEnter = true,
 	RowOnLeave = true,
 	RowOnClick = true,
+	OnWindowCreated = true,
 	OnWindowUpdated = true,
+	OnLoad = true,
+	OnStartup = true,
+	OnStartupDone = true,
+	OnInit = true,
+	OnReady = true,
+	__OnIsReady = true,
+	["OnAddExtraMainCategories"] = true,
+	["Fill.OnAddFiller"] = true,
+	["Fill.DefinedSettings"] = true,
+	["Settings.OnApplyProfile"] = true,
+	["Settings.OnSet"] = true,
+	["OnSavedVariablesAvailable"] = true,
+	["OnAfterSavedVariablesAvailable"] = true,
 }
+
 -- Allows non-hardcoded assignment of Events which should ignore Runners and simply process immediately when fired
 -- This is helpful when an Event has an Event Sequence defined but also may occur during a Runner, which would lead to the
 -- Event Sequence processing multiple times in succession, whereas when running immediately we assign the Event Sequence
@@ -286,6 +301,10 @@ local function QueueSequenceEvents(eventName)
 		OnEnd(OnEndSequenceEvents)
 	end
 end
+local IgnoredEvents = {
+	OnWindowCreated = true,
+	OnWindowUpdated = true,
+}
 
 -- Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
 -- are processed in the proper sequence and timing in conjunction with other events
@@ -294,6 +313,7 @@ local function HandleEvent(eventName, ...)
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence
+	--if not IgnoredEvents[eventName] then print("EVENT:", eventName, ImmediateEvents[eventName], ...); end
 	local handlers = EventHandlers[eventName]
 	if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning()) then
 		-- DebugStartRunnerEvent(eventName,...)

@@ -283,6 +283,7 @@ app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
 	SettingsName = "Mini List",
 	IsTopLevel = true,
+	Preload = true,
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
@@ -319,6 +320,10 @@ app:CreateWindow("MiniList", {
 				self:Show();
 			end
 		end;
+		app.LocationTrigger = function(forceNewMap, fromWhere)
+			if forceNewMap then wipe(CachedMapData); end
+			self:DelayedRebuild();
+		end
 	end,
 	OnLoad = function(self, settings)
 		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
