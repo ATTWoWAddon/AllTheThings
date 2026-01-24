@@ -43,14 +43,19 @@ end
 isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
--- Ensures that 't' has a 'groups' field containing the array data of the table
+-- Ensures that 't' has a 'groups' field containing the array/'g' data of the table
 togroups = function(t)
 	if isarray(t) then
 		local groups = {};
 		for _,group in ipairs(t) do
 			table.insert(groups, group);
 		end
-		t = { ["groups"] = groups };
+		return { ["groups"] = groups }
+	end
+	if t.g then
+		t.groups = t.g
+		t.g = nil
+		return t
 	end
 	return t;
 end
