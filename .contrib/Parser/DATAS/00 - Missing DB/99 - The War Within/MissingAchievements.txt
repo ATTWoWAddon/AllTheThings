@@ -89,7 +89,6 @@ ach(61582),	-- Harandar Glyph Hunter
 ach(61583),	-- Voidstorm Glyph Hunter
 ach(61584),	-- Midnight Glyph Hunter
 ach(61585),	-- You Conduit!
-ach(61586),	-- Galactic Gala
 ach(61595),	-- Mythic: Ara-Kara, City of Echoes Guild Run
 ach(61596),	-- Mythic: Cinderbew Meadery Guild Run
 ach(61597),	-- Mythic: City of Threads Guild Run

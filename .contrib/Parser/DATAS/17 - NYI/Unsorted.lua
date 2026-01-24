@@ -3635,9 +3635,6 @@ root(ROOTS.Unsorted, {
 			i(260377),	-- Fading Dawn Sabatons
 			i(260414),	-- Amulet of the Ascendant Void \\ Voidsong Chain
 
-			-- PvP
-			i(260441),	-- Galactic Gladiator's Tabard
-			i(260443),	-- Galactic Gladiator's Prestigious Cloak
 			-- Armor
 			i(260458),	-- Helthra's Fetish
 			i(260459),	-- Gaahl's Gorget
@@ -4178,11 +4175,6 @@ root(ROOTS.Unsorted, {
 			i(254416),	-- Galvanic Storage and Maintenance Device
 			i(254766),	-- Ineffective Mechanical Privacy Screen
 
-			-- Cosmetic
-			i(255879),	-- Galactic Legend's Pennant
-			i(255968),	-- Nightfall Legend's Pennant
-			i(255969),	-- Nightfall Strategist's Pennant
-
 			-- Mount
 			i(257143),	-- Peridot Dragonhawk
 			i(257446),	-- Reins of the Insatiable Shredclaw \\ Insatiable Shredclaw
@@ -4226,9 +4218,6 @@ root(ROOTS.Unsorted, {
 			-- Crests
 			i(263976),	-- Bundle of Adventurer Dawncrests
 			i(263977),	-- Venerable Satchel of Veteran Dawncrests
-			-- pvp
-			i(264010),	-- Galactic Gladiator's Prestigious Cloak
-			i(264164),	-- Galactic Gladiator's Tabard
 
 			-- cosmetic
 			i(264184),	-- Arsenal: Heirlooms of Atal'Aman
