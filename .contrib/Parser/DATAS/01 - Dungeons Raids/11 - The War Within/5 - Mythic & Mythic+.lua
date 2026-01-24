@@ -287,35 +287,35 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			ach(42160, {	-- The War Within Season 3: Resilient Keystone 23
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Floodgate 23 not possible
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42161, {	-- The War Within Season 3: Resilient Keystone 24
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42162, {	-- The War Within Season 3: Resilient Keystone 25
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42802, {	-- The War Within Season 3: Resilient Keystone 26
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42803, {	-- The War Within Season 3: Resilient Keystone 27
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42804, {	-- The War Within Season 3: Resilient Keystone 28
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42805, {	-- The War Within Season 3: Resilient Keystone 29
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 			ach(42806, {	-- The War Within Season 3: Resilient Keystone 30
 				["_noautomation"] = true,
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },	-- Impossible to complete
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_SEASONSTART },
 			}),
 		})),
 		n(QUESTS, {
