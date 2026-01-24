@@ -2934,6 +2934,6 @@ app.ChatCommands.Add("contribute", function(args)
 end, {
 	"Usage : /att contribute"
 })
-app.AddEventHandler("OnReady", function()
+app.AddEventHandler("OnStartup", function()
 	Contribute(AllTheThingsSavedVariables.Contributor)
 end)
