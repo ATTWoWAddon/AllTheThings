@@ -2,6 +2,8 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+local BRAWLERS_GOLD = 1299;
+
 root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, {
 	["timeline"] = {
 		ADDED_5_1_0, REMOVED_6_0_2,	-- Season 1
@@ -379,6 +381,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["provider"] = { "i", 97978 },	-- Knockoff Grumplefloot
 				}),
 				q(32837, {	-- Grandpa Grumplefloot
+					["sourceQuest"] = 32836,	-- A Knockoff Grumplefloot
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -395,12 +398,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98079),	-- Floot-Tooter's Tunic
 						i(98099),	-- Giant Sack of Coins
 					},
-					["sourceQuest"] = 32836,	-- A Knockoff Grumplefloot
 				}),
 				q(32838, {	-- A Tale of Romance and Chivalry
 					["provider"] = { "i", 97979 },	-- The Bear and the Lady Fair
 				}),
 				q(32839, {	-- The Bear and the Lady Fair
+					["sourceQuest"] = 32838,	-- A Tale of Romance and Chivalry
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -416,12 +419,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98080),	-- Gorgeous Blouse
 						i(98102),	-- Overflowing Sack of Coins
 					},
-					["sourceQuest"] = 32838,	-- A Tale of Romance and Chivalry
 				}),
 				q(32840, {	-- Boom Boom's Fuse
 					["provider"] = { "i", 97980 },	-- Hozen-Fur Fuse
 				}),
 				q(32841, {	-- Master Boom Boom
+					["sourceQuest"] = 32840,	-- Boom Boom's Fuse
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -437,12 +440,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98081),	-- The Boomshirt
 						i(98099),	-- Giant Sack of Coins
 					},
-					["sourceQuest"] = 32840,	-- Boom Boom's Fuse
 				}),
 				q(32842, {	-- Teeth Like Swords
 					["provider"] = { "i", 97981 },	-- Impeccably Sharp Tooth
 				}),
 				q(32843, {	-- Razorgrin
+					["sourceQuest"] = 32842,	-- Teeth Like Swords
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -458,12 +461,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98083),	-- Sharkskin Tunic
 						i(98100),	-- Humongous Sack of Coins
 					},
-					["sourceQuest"] = 32842,	-- Teeth Like Swords
 				}),
 				q(32844, {	-- Secret of the Ooze
 					["provider"] = { "i", 97982 },	-- Vial of Reddish Ooze
 				}),
 				q(32845, {	-- Splat
+					["sourceQuest"] = 32844,	-- Secret of the Ooze
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -480,12 +483,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98084),	-- Ooze-Soaked Shirt
 						i(98100),	-- Humongous Sack of Coins
 					},
-					["sourceQuest"] = 32844,	-- Secret of the Ooze
 				}),
 				q(32846, {	-- Modified Chomping Apparatus
 					["provider"] = { "i", 97983 },	-- Modified Chomping Apparatus
 				}),
 				q(32847, {	-- Mecha-Bruce
+					["sourceQuest"] = 32846,	-- Modified Chomping Apparatus
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -501,12 +504,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98085),	-- Brucehide Jersey
 						i(98101),	-- Enormous Sack of Coins
 					},
-					["sourceQuest"] = 32846,	-- Modified Chomping Apparatus
 				}),
 				q(32848, {	-- Frost-Tipped Eggshell
 					["provider"] = { "i", 97984 },	-- Frost-Tipped Eggshell
 				}),
 				q(32849, {	-- Dippy and Doopy
+					["sourceQuest"] = 32848,	-- Frost-Tipped Eggshell
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -525,12 +528,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98086),	-- Tuxedo-Like Shirt
 						i(98100),	-- Humongous Sack of Coins
 					},
-					["sourceQuest"] = 32848,	-- Frost-Tipped Eggshell
 				}),
 				q(32850, {	-- Last Year's Model
 					["provider"] = { "i", 97985 },	-- Dusty Old Robot
 				}),
 				q(32851, {	-- Blingtron 3000
+					["sourceQuest"] = 32850,	-- Last Year's Model
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -546,12 +549,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98091),	-- Last Season's Shirt
 						i(98101),	-- Enormous Sack of Coins
 					},
-					["sourceQuest"] = 32850,	-- Last Year's Model
 				}),
 				q(32852, {	-- The Digmaster's Earthblade
 					["provider"] = { "i", 97986 },	-- Digmaster's Earthblade
 				}),
 				q(32853, {	-- Mingus Diggs
+					["sourceQuest"] = 32852,	-- The Digmaster's Earthblade
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -567,12 +570,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98103),	-- Gigantic Sack of Coins
 					},
-					["sourceQuest"] = 32852,	-- The Digmaster's Earthblade
 				}),
 				q(32854, {	-- Well-Worn Blindfold
 					["provider"] = { "i", 97987 },	-- Well-Worn Blindfold
 				}),
 				q(32855, {	-- The Blind Hero
+					["sourceQuest"] = 32854,	-- Well-Worn Blindfold
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -588,12 +591,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98093),	-- Sightless Mantle
 						i(98103),	-- Gigantic Sack of Coins
 					},
-					["sourceQuest"] = 32854,	-- Well-Worn Blindfold
 				}),
 				q(32856, {	-- Paper-Covered Rock
 					["provider"] = { "i", 97988 },	-- Paper-Covered Rock
 				}),
 				q(32857, {	-- Ro-Shambo
+					["sourceQuest"] = 32856,	-- Paper-Covered Rock
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -609,12 +612,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98087),	-- Paper Shirt
 						i(98102),	-- Overflowing Sack of Coins
 					},
-					["sourceQuest"] = 32856,	-- Paper-Covered Rock
 				}),
 				q(32858, {	-- Raptorhide Boxing Gloves
 					["provider"] = { "i", 97990 },	-- Raptorhide Boxing Gloves
 				}),
 				q(32859, {	-- Ty'thar
+					["sourceQuest"] = 32858,	-- Raptorhide Boxing Gloves
 					["aqd"] = {
 						["qg"] = 70752,	-- Card Trader Leila
 						["coord"] = { 52.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -630,7 +633,6 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(98082),	-- Undisputed Champion's Shirt
 						i(98099),	-- Giant Sack of Coins
 					},
-					["sourceQuest"] = 32858,	-- Raptorhide Boxing Gloves
 				}),
 			})),
 			-- WOD
@@ -666,7 +668,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
 					["qg"] = 150314,	-- Ann Dennyson
 					["coord"] = { 69.7, 36.7, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
+					["cost"] = { { "i", 143762, 1 } },	-- High Roller's Contract
 				}),
 				q(55006, {	-- A Favor for Your Old Chum Winifred
 					["sourceQuest"] = 55005,	-- The Financial Participation Incentive
@@ -677,7 +679,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 					["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 					["coord"] = { 63.3, 40.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
+					["cost"] = { { "i", 164935, 1 } },	-- Challenge Card: Lord Sylysthrel
 					["groups"] = {
 						i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 					},
@@ -716,7 +718,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55012,	-- Cause for Concern
 					["qg"] = 150315,	-- Saralara Fizzlesprang
 					["coord"] = { 44.4, 34.6, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
+					["cost"] = { { "i", 94178, 1 } },	-- Challenge Card: G.G. Engineering
 					["groups"] = { i(164937) },	-- 13-Tooth Gogglegear (QI!)
 				}),
 				q(55014, {	-- The Fizzlesprang Goggle Experiment
@@ -735,7 +737,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
 					["qg"] = 150313,	-- Commander Daalo
 					["coord"] = { 72.7, 68.4, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-					["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
+					["cost"] = { { "i", 143759, 1 } },	-- VIP Room Rental Form
 				}),
 				q(55017, {	-- Flaunt It If You Got It
 					["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
@@ -773,7 +775,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["qg"] = 150320,	-- Bizmo
 					["coord"] = { 31.1, 66.5, NETHERSTORM },
-					["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
+					["cost"] = { { "i", 164936, 1 } },	-- Mysterious Challenge Card
 					["groups"] = { i(166724) },	-- Bruce (MOUNT!)
 				}),
 			}),
@@ -1011,15 +1013,21 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						},
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(253515, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Glorp
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 					}),
+					i(165709, {	-- Challenge Card: Mama Stormstout
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(253575, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Renegade Swabbie
 					i(253581, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Sunny
 					i(253868, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: The Quacken
+					i(166809, {	-- Challenge Card: Thog Hammerspace
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
@@ -1050,15 +1058,21 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						},
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(253515, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Glorp
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 					}),
+					i(165709, {	-- Challenge Card: Mama Stormstout
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(253575, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Renegade Swabbie
 					i(253581, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Sunny
 					i(253868, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: The Quacken
+					i(166809, {	-- Challenge Card: Thog Hammerspace
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
@@ -1458,7 +1472,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(142319, {	-- Bag of Chipped Dice
 						-- TODO: They changed how the dice works, confirm which bosses are still available and if shirts/achievement can be obtained
 						["races"] = HORDE_ONLY,
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
 							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
@@ -1574,26 +1588,26 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142317, {	-- Blood-Soaked Angel Figurine
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 250 } },
 					}),
 					i(142314, {	-- Brawler's Potion Dispenser
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(142311, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #end
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(142318, {	-- High Roller's Contract
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							crit(35477, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
@@ -1602,7 +1616,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(114943, {	-- Grief Warden <Enmity Moose>
 								crit(35472, {	-- Grief Warden
@@ -1613,7 +1627,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(68251, {	-- Mazhareen
 								crit(35473, {	-- Mazhareen
@@ -1624,7 +1638,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(117102, {	-- Mindbreaker Gzzaj
 								crit(35474, {	-- Mindbreaker Gzzaj
@@ -1635,7 +1649,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(115185, {	-- Penguin Stampede
 								crit(35478, {	-- Penguin Stampede
@@ -1646,7 +1660,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142291, {	-- Rumble Card: Senya
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(115357, {	-- Senya
 								crit(35476, {	-- Senya
@@ -1657,7 +1671,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							crit(35475, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
@@ -1668,7 +1682,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 				},
 			}),
@@ -1680,7 +1694,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(143763, {	-- Bag of Chipped Dice
 						-- TODO: They changed how the dice works, confirm which bosses are still available and if shirts/achievement can be obtained
 						["races"] = ALLIANCE_ONLY,
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
 							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
@@ -1796,26 +1810,26 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(143761, {	-- Blood-Soaked Angel Figurine
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 250 } },
 					}),
 					i(143760, {	-- Brawler's Potion Dispenser
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
 					i(143758, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(143762, {	-- High Roller's Contract
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
-						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							crit(35477, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
@@ -1824,7 +1838,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(114943, {	-- Grief Warden <Enmity Moose>
 								crit(35472, {	-- Grief Warden
@@ -1835,7 +1849,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(68251, {	-- Mazhareen
 								crit(35473, {	-- Mazhareen
@@ -1846,7 +1860,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(117102, {	-- Mindbreaker Gzzaj
 								crit(35474, {	-- Mindbreaker Gzzaj
@@ -1857,7 +1871,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(115185, {	-- Penguin Stampede
 								crit(35478, {	-- Penguin Stampede
@@ -1868,7 +1882,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142291, {	-- Rumble Card: Senya
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							n(115357, {	-- Senya
 								crit(35476, {	-- Senya
@@ -1879,7 +1893,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 						["groups"] = {
 							crit(35475, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
@@ -1890,7 +1904,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
 						-- #endif
-						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 				},
 			}),

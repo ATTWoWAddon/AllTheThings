@@ -7249,14 +7249,12 @@ root(ROOTS.Unsorted, {
 			i(164934),	-- Super Soul Splinter
 			i(164939),	-- Overstuffed Silkweave Purse
 			i(164949),	-- Brawler's Guild Invitation
-			i(165709),	-- Challenge Card: Mama Stormstout
 			i(165786),	-- Skulls of the Honored Dead
 			i(165787),	-- Ceremonial Liquor
 			i(165788),	-- Gilded Ritual Mask
 			i(165789),	-- Zandalari Riches
 			i(166581),	-- Dorian's Note
 			i(166589),	-- Elderstone Ore
-			i(166809),	-- Challenge Card: Thog Hammerspace
 			i(166810),	-- Challenge Card: Antaen
 			i(166890),	-- The Traitor King
 			i(166891),	-- The Cursed Old Wolf
