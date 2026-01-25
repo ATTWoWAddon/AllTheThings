@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
+if not app.IsRetail then return; end
 
 -- Global locals
 local coroutine, ipairs, pairs, select, wipe

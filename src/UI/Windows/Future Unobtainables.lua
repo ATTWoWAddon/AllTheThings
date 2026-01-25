@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 local L = app.L;
 local tinsert, math_floor
 	= tinsert, math.floor;

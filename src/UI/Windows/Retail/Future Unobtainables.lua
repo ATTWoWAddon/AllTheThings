@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
+if not app.IsRetail then return; end
 
 -- Implementation
 app.AddCustomWindowOnUpdate("Future Unobtainables", function(self, force)

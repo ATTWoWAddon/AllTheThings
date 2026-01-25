@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 local ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
 	= app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
 

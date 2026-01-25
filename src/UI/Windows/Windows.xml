@@ -3,6 +3,7 @@
 	<Script file="Prime.lua"/>
 	<Script file="Achievements.lua"/>
 	<Script file="Account Management.lua"/>
+	<Script file="Retail/Account Management.lua"/>
 	<Script file="Added With Patch.lua"/>
 	<Script file="Attunements.lua"/>
 	<Script file="Auctions.lua"/>
@@ -18,6 +19,7 @@
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
 	<Script file="Future Unobtainables.lua"/>
+	<Script file="Retail/Future Unobtainables.lua"/>
 	<Script file="Heirlooms.lua"/>
 	<Script file="Hidden Achievement Triggers.lua"/>
 	<Script file="Hidden Quest Triggers.lua"/>
@@ -28,19 +30,24 @@
 	<Script file="Local List.lua"/>
 	<Script file="Locked.lua"/>
 	<Script file="Maps.lua"/>
+	<Script file="Retail/Maps.lua"/>
 	<Script file="Mini List.lua"/>
+	<!--<Script file="Retail/Mini List.lua"/> -->
 	<Script file="Missing Quests.lua"/>
 	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
 	<Script file="Never Implemented.lua"/>
 	<Script file="New With Patch.lua"/>
+	<Script file="Retail/New With Patch.lua"/>
 	<Script file="Objects.lua"/>
 	<Script file="Pet Battles.lua"/>
 	<Script file="Professions.lua"/>
 	<Script file="Quests.lua"/>
 	<Script file="Race Specific Things.lua"/>
 	<Script file="Raid Assistant.lua"/>
+	<Script file="Retail/Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
+	<Script file="Retail/Random.lua"/>
 	<Script file="Removed From Game.lua"/>
 	<Script file="Removed With Patch Drops.lua"/>
 	<Script file="Season of Discovery.lua"/>
@@ -48,6 +55,7 @@
 	<Script file="Titles.lua"/>
 	<Script file="Toys.lua"/>
 	<Script file="Tradeskills.lua"/>
+	<Script file="Retail/Tradeskills.lua"/>
 	<Script file="Unsorted.lua"/>
 	<Script file="World Quests.lua"/>
 </Ui>

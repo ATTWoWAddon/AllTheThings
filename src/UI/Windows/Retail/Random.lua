@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+if not app.IsRetail then return; end
 local L = app.L;
 
 -- Global locals

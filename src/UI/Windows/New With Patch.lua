@@ -2,6 +2,7 @@
 local _, app = ...;
 local tinsert = tinsert;
 local L = app.L;
+if app.IsRetail then return; end
 
 -- Implementation
 app:CreateWindow("New With Patch", {

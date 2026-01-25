@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals

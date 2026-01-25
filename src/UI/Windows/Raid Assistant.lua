@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 
 -- Global locals
 local ipairs, tinsert, pairs, wipe
