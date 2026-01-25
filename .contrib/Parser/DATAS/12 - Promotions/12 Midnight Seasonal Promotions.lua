@@ -44,8 +44,8 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "removed 12.0.1.99999" },	-- Removed February 17th, 2026
 			}),
 			i(264241, {	-- Crimson Bow Tie (COSMETIC!)
-				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; US players can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",
-				["timeline"] = { ADDED_12_0_0, "removed 12.0.1.99999" },
+				["description"] = "Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",
+				["timeline"] = { "removed 12.0.1.99999" },
 			}),
 			n(RAZER, sharedDataSelf({
 				["timeline"] = { "removed 12.0.1.99999" },
