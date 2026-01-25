@@ -1746,23 +1746,6 @@ root(ROOTS.Unsorted, {
 			i(249615),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff AGI
 			i(249616),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Staff INT
 			i(249617),	-- [PH] 12.0 Delves - Level-Up - Weapon - 2H Sword INT
-			i(249619),	-- Sprawling Mycoshroud
-			i(249621),	-- Hyphae Circle
-			i(249622),	-- Wildwood Frondband
-			i(249623),	-- Blooming Leafcoil
-			i(249625),	-- Elder Mossveil
-			i(249627),	-- Arboreal Vine Collar
-			i(249661),	-- Root Sculptor's Verdaxe \\ Root Sculpter's Verdaxe
-			i(249662),	-- Wild Fiberknife
-			i(249664),	-- Gnarled Thornmace
-			i(249665),	-- Blooming Seedpod
-			i(249667),	-- Barbed Rootwand
-			i(249669),	-- Organ Piercer's Briarspear
-			i(249670),	-- Elderoot Spire
-			i(249671),	-- Gnarlroot Spinecleaver
-			i(249672),	-- Elderbloom Lantern
-			i(249676),	-- Bramblebarricade
-			i(249677),	-- Twinthorn Wildglaive
 
 			-- Qi
 			i(249687),	-- Poisonous Frog Secretions \\ Poison Frog Secretions
