@@ -4,14 +4,6 @@ local L, settings = app.L, app.Settings;
 -- Settings: Windows Page
 local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
 
--- CONTENT
-local WindowsPageHeader = child:CreateHeaderLabel(L.WINDOWS_PAGE)
-if child.separator then
-	WindowsPageHeader:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	WindowsPageHeader:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
 -- Window Manager
 local WindowButtons = {};
 local function OnClickForWindowButton(self)
@@ -66,7 +58,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		});
 	end
 end
-WindowsPageHeader.OnRefresh = function()
+local function RefreshWindowManager()
 	local keys,sortedList,topKeys = {},{},{};
 	for suffix,window in pairs(app.WindowDefinitions) do
 		app:GetWindow(suffix);
@@ -152,3 +144,7 @@ WindowsPageHeader.OnRefresh = function()
 		WindowButtons[i]:Hide();
 	end
 end;
+child:SetScript("OnShow", function(self)
+	self.OnRefresh = RefreshWindowManager;
+	self:SetScript("OnShow", nil);
+end);
