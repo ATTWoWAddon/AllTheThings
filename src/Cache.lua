@@ -446,12 +446,6 @@ local fieldConverters = {
 	["otherItemID"] = function(group, value)
 		CacheField(group, "itemID", value);
 	end,
-	["mountmodID"] = function(group, value)
-		CacheField(group, "itemID", value);
-	end,
-	["heirloomID"] = function(group, value)
-		CacheField(group, "itemID", value);
-	end,
 	["mapID"] = cacheMapID,
 	["mountID"] = function(group, value)
 		CacheField(group, "mountID", value);

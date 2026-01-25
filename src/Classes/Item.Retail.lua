@@ -19,6 +19,15 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip or app.ReturnFalse;
 
+-- CRIEVE NOTE: Add this to Classic's LocalizationDB and then remove this.
+local L = app.L;
+if not rawget(L, "ITEM_NAMES") then
+	rawset(L, "ITEM_NAMES", {});
+end
+if not rawget(L, "SOURCE_NAMES") then
+	rawset(L, "SOURCE_NAMES", {});
+end
+
 -- Class locals
 
 -- Module locals
