@@ -55,6 +55,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: reset to exact commit
+        if: steps.mode.outputs.mode == 'beta'
         shell: bash
         run: |
           git reset --hard ${GITHUB_SHA}
