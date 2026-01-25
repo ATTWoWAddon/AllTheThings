@@ -84,7 +84,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["groups"] = {
 					n(ARMOR, {
 						filter(BACK_F, {
+							i(249625),	-- Elder Mossveil
 							i(249624),	-- Osseoclad Paledrape
+							i(249628),	-- Rampant Bramblecloack
+							i(249619),	-- Sprawling Mycoshroud
 						}),
 						filter(CLOTH, {
 							i(249634),	-- Sprawling Fibershells
@@ -97,11 +100,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 							i(249636),	-- Sprawling Wristroots
 						}),
 						filter(FINGER_F, {
-							i(249620),	-- Vibrant Wilderloop // alpha
+							i(249623),	-- Blooming Leafcoil
+							i(249622),	-- Spiritseal Ring
 							i(249621),	-- Voodoo Band
+							i(249620),	-- Vibrant Wilderloop
 						}),
 						filter(LEATHER, {
-							-- Alpha data
 							i(249638),	-- Osseoclad Bonecrushers
 							i(249641),	-- Osseoclad Bonesteppers
 							i(249644),	-- Osseoclad Ivory Wrist
@@ -122,10 +126,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 							i(249650),	-- Elder Mossvein Greatleaves
 						}),
 						filter(NECK_F, {
-							i(249626),	-- Verdant Sprigstrand // alpha
+							i(249627),	-- Arboreal Vine Collar
+							i(249626),	-- Nocturnal Thorncharm
 						}),
 						filter(PLATE, {
-							i(249628),	-- Rampant Bramblecloack
 							i(249657),	-- Rampant Bramblegreaves
 							i(249653),	-- Rampant Brambleplate
 							i(249660),	-- Rampant Briarcuffs
@@ -141,8 +145,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						}),
 					}),
 					n(WEAPONS, {
+						i(249667),	-- Barbed Rootwand
+						i(249665),	-- Blooming Seedpod
+						i(249676),	-- Bramblebarricade
+						i(249672),	-- Elderbloom Lantern
+						i(249670),	-- Elderoot Spire
+						i(249664),	-- Gnarled Thornmace
+						i(249671),	-- Gnarlroot Spinecleaver
+						i(249669),	-- Organ Piercer's Briarspear
+						i(249661),	-- Root Sculptor's Verdaxe
 						i(259462),	-- Thorneedle
+						i(249677),	-- Twinthorn Wildglaive
 						i(260187),	-- Underbrush Render
+						i(249662),	-- Wild Fiberknife
 						i(262731),	-- Wildthorn Razorfang
 					}),
 				},

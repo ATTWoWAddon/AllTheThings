@@ -13,7 +13,7 @@ local ResolveSymbolicLink = app.ResolveSymbolicLink;
 local SearchForField = app.SearchForField
 local SearchForObject = app.SearchForObject;
 local WaypointRunner = app.CreateRunner("waypoint");
-WaypointRunner.SetPerFrameDefault(1)
+WaypointRunner.SetPerFrameDefault(5)
 local __TomTomWaypointCacheIndexX = { __index = function(t, x)
 	local o = setmetatable({}, app.MetaTable.AutoTable);
 	t[x] = o;
@@ -195,7 +195,7 @@ local function AddTomTomParentCoord(group)
 end
 local AddTomTomProviderResults
 -- Attempt to add TomTom waypoints for all directly nested/symlinked content from the group
-local function AddNestedTomTomWaypoints(group, depth)
+local function AddNestedTomTomWaypoints(group, depth, rootOnly)
 	if group.visible or depth == 0 then
 		if group.plotting then return false; end
 		group.plotting = true;
@@ -206,18 +206,20 @@ local function AddNestedTomTomWaypoints(group, depth)
 			TryAddGroupWaypoints(group);
 		end
 		-- sub-groups coords?
-		if group.g then
-			-- app.PrintDebug("WP:SubGroups",app:SearchLink(group))
-			for _,o in ipairs(group.g) do
-				AddNestedTomTomWaypoints(o, depth + 1);
+		if not rootOnly then
+			if group.g then
+				-- app.PrintDebug("WP:SubGroups",app:SearchLink(group))
+				for _,o in ipairs(group.g) do
+					AddNestedTomTomWaypoints(o, depth + 1);
+				end
 			end
-		end
-		-- symlink of the group coords?
-		local searchResults = ResolveSymbolicLink(group);
-		if searchResults then
-			-- app.PrintDebug("WP:Sym",app:SearchLink(group))
-			for _,o in ipairs(searchResults) do
-				AddNestedTomTomWaypoints(o, depth + 1);
+			-- symlink of the group coords?
+			local searchResults = ResolveSymbolicLink(group);
+			if searchResults then
+				-- app.PrintDebug("WP:Sym",app:SearchLink(group))
+				for _,o in ipairs(searchResults) do
+					AddNestedTomTomWaypoints(o, depth + 1);
+				end
 			end
 		end
 		-- if the Thing is specifically NOT a Quest
@@ -256,7 +258,7 @@ local function AddTomTomRawSearchResultWaypoints(field, value)
 
 	for _,o in ipairs(SearchForObject(field, value, "field", true)) do
 		-- app.PrintDebug("WP:Search:",o,field,value,app:RawSearchLink(field, value))
-		AddNestedTomTomWaypoints(o, 0);
+		AddNestedTomTomWaypoints(o, 0, true);
 		AddTomTomParentCoord(o);
 	end
 end
@@ -305,6 +307,11 @@ AddTomTomProviderResults = function(group, depth)
 	if group.providers then
 		for _,p in ipairs(group.providers) do
 			WaypointRunner.Run(AddTomTomRawSearchResultWaypoints, ProviderToField[p[1]], p[2])
+		end
+	end
+	if group.crs then
+		for _,npcID in ipairs(group.crs) do
+			WaypointRunner.Run(AddTomTomRawSearchResultWaypoints, "npcID", npcID)
 		end
 	end
 	-- is Cost really something that we'd plot for a waypoint? Probably not...

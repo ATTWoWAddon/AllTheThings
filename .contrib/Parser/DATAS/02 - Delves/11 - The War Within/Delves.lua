@@ -271,10 +271,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 38.5, 51.1, KARESH_TAZAVESH },
 			["maps"] = { DELVE_ETHEREAL_KYVEZA },
 			["groups"] = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
-					ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
+				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH } }, {
+					ach(42190, bubbleDownSelf({ ["timeline"] = { REMOVED_12_0_0 } }, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
 						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
-					}),
+					})),
 					ach(42193, {	-- My Stab-Happy Nemesis
 						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
 					}),

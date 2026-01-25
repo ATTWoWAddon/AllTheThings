@@ -10,6 +10,18 @@ ENDEAVORS = createHeader({
 	},
 });
 
+local EndeavorVendorCoords = {
+	{ 53.1, 38.3, FOUNDERS_POINT },
+	{ 54.3, 56.1, RAZORWIND_SHORES },
+}
+
+local i_DecorCoupons = function(itemID, couponCost)
+	return
+	i(itemID, {
+		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
+	})
+end
+
 root(ROOTS.Housing, n(ENDEAVORS, {
 	["timeline"] = { ADDED_12_0_0 },
 	["groups"] = {
@@ -60,186 +72,96 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		}),
 		n(VENDORS, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>
-				["coords"] = {
-					{ 53.0, 38.2, FOUNDERS_POINT },
-					{ 54.4, 56.1, RAZORWIND_SHORES },
-				},
-				["timeline"] = { ADDED_12_0_0 },
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
-					i(262664, {	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(263048, {	-- Consortium Energy Banner (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(263043, {	-- Consortium Energy Barrel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(263045, {	-- Consortium Energy Collector (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
-					}),
-					i(263046, {	-- Consortium Energy Crate (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262884, {	-- Consortium Glowpost (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(263044, {	-- Empty Consortium Energy Barrel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(263047, {	-- Empty Consortium Energy Crate (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262665, {	-- K'areshi Holo-Crystal Projector (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262666, {	-- K'areshi Incense Burner (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 2 }},
-					}),
-					i(262667, {	-- Oath Scale (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262907, {	-- Tazaveshi Hookah (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
+					i_DecorCoupons(262664, 5),	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
+					i_DecorCoupons(263048, 15),	-- Consortium Energy Banner (DECOR!)
+					i_DecorCoupons(263043, 10),	-- Consortium Energy Barrel (DECOR!)
+					i_DecorCoupons(263045, 20),	-- Consortium Energy Collector (DECOR!)
+					i_DecorCoupons(263046, 5),	-- Consortium Energy Crate (DECOR!)
+					i_DecorCoupons(262884, 10),	-- Consortium Glowpost (DECOR!)
+					i_DecorCoupons(263044, 5),	-- Empty Consortium Energy Barrel (DECOR!)
+					i_DecorCoupons(263047, 5),	-- Empty Consortium Energy Crate (DECOR!)
+					i_DecorCoupons(262665, 5),	-- K'areshi Holo-Crystal Projector (DECOR!)
+					i_DecorCoupons(262666, 2),	-- K'areshi Incense Burner (DECOR!)
+					i_DecorCoupons(262667, 5),	-- Oath Scale (DECOR!)
+					i_DecorCoupons(262907, 10),	-- Tazaveshi Hookah (DECOR!)
 				},
 			}),
 			n(249684, {	-- Brother Dovetail <Endeavor Trader>
-				["coord"] = { 53.0, 38.1, FOUNDERS_POINT },
-				["timeline"] = { ADDED_12_0_0 },
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
-					i(251474, {	-- Ceramic Kafa Mug (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(251473, {	-- Commander's Kafa Mug (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(252041, {	-- Dalaran Espresso Machine (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(251475, {	-- Dalaran Kafa Grinder (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(248407, {	-- Dalaran Kafa Table (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(246741, {	-- Grummle Bedroll (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(248402, {	-- Grummle Kafa Refinery (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(246686, {	-- Grummle Sleeping Bag (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(248403, {	-- Grummle Tent (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(248405, {	-- Kafa Creamer (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(246838, {	-- Kafa Press (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(248406, {	-- Legerdemain Lounge Sign Board (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(252039, {	-- Open Sack of Roasted Kafa (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(251472, {	-- Pandaren Wooden Cart (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(252040, {	-- Sealed Sack of Roasted Kafa (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
+					i_DecorCoupons(251474, 5),	-- Ceramic Kafa Mug (DECOR!)
+					i_DecorCoupons(251473, 5),	-- Commander's Kafa Mug (DECOR!)
+					i_DecorCoupons(252041, 15),	-- Dalaran Espresso Machine (DECOR!)
+					i_DecorCoupons(251475, 10),	-- Dalaran Kafa Grinder (DECOR!)
+					i_DecorCoupons(248407, 10),	-- Dalaran Kafa Table (DECOR!)
+					i_DecorCoupons(246741, 10),	-- Grummle Bedroll (DECOR!)
+					i_DecorCoupons(248402, 15),	-- Grummle Kafa Refinery (DECOR!)
+					i_DecorCoupons(246686, 10),	-- Grummle Sleeping Bag (DECOR!)
+					i_DecorCoupons(248403, 10),	-- Grummle Tent (DECOR!)
+					i_DecorCoupons(248405, 5),	-- Kafa Creamer (DECOR!)
+					i_DecorCoupons(246838, 10),	-- Kafa Press (DECOR!)
+					i_DecorCoupons(248406, 10),	-- Legerdemain Lounge Sign Board (DECOR!)
+					i_DecorCoupons(252039, 5),	-- Open Sack of Roasted Kafa (DECOR!)
+					i_DecorCoupons(251472, 10),	-- Pandaren Wooden Cart (DECOR!)
+					i_DecorCoupons(252040, 5),	-- Sealed Sack of Roasted Kafa (DECOR!)
+				},
+			}),
+			n(257897, {	-- Harlowe Marl <Endeavor Trader>
+				["coords"] = EndeavorVendorCoords,
+				["groups"] = {
+					i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
+					i_DecorCoupons(265032, 5),	-- Hearty Niffen Grub
+					i_DecorCoupons(264917, 5),	-- Ceramic Loamm Bowl
+					i_DecorCoupons(264925, 5),	-- Kilnmaster's Bucket
+					i_DecorCoupons(264918, 2),	-- Zaralek Candles
+					i_DecorCoupons(264922, 2),	-- Strong Sniffin' Incense
+					i_DecorCoupons(264924, 10),	-- Loamm Wheelpot
+					i_DecorCoupons(265541, 1),	-- Loammy Soil
+					i_DecorCoupons(264923, 15),	-- Underdecorated Underground Table
+					i_DecorCoupons(264919, 20),	-- Loamm Archway
+					i_DecorCoupons(264915, 15),	-- Decorated Underground Table
+					i_DecorCoupons(264921, 20),	-- Zaralek Snail Cart
+					i_DecorCoupons(264916, 20),	-- Loamm Bartering Stall
 				},
 			}),
 			n(252917, {	-- Hesta Forlath <Endeavor Trader>
-				["coords"] = {
-					{ 53.1, 38.3, FOUNDERS_POINT },
-					{ 54.4, 56.0, RAZORWIND_SHORES },
-				},
-				["timeline"] = { ADDED_12_0_0 },
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
-					i(253601, {	-- 590 Quel'Lithien Red (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253523, {	-- Astalor's Hookah (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253600, {	-- Eversong Crystal Glass (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253522, {	-- Thalassian Chest (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
+					i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
+					i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
+					i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
+					i_DecorCoupons(253522, 5),	-- Thalassian Chest (DECOR!)
 					-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the endeavors as these items are locked behind them
 					-- Reach the first milestone of the endeavor
-					i(253524, {	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(254235, {	-- Sin'dori Artisan's Easel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
+					i_DecorCoupons(253524, 10),	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
+					i_DecorCoupons(254235, 5),	-- Sin'dori Artisan's Easel (DECOR!)
 					-- Reach the second milestone of the endeavor
-					i(253525, {	-- Thalassian Academy Dictation Device (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
+					i_DecorCoupons(253525, 10),	-- Thalassian Academy Dictation Device (DECOR!)
 					-- Reach the third milestone of the endeavor
-					i(253526, {	-- Sin'dorei Wine Display (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(253599, {	-- Artisanal Display Tent (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
+					i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
+					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
 					-- Exo Note: This will probably have some HQT hidden behind it. Used to buy paintings in Silvermoon Bazaar but tooltip states "you don't need to keep the deed on you".
-					i(253802, {	-- Deed of Patronage
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }},
-					}),
+					i_DecorCoupons(253802, 30),	-- Deed of Patronage
 				},
 			}),
 			n(250820, {	-- Hordranin <Endeavor Trader>
-				["coord"] = { 54.2, 56.0, RAZORWIND_SHORES },
-				["timeline"] = { ADDED_12_0_0 },
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
-					i(250704, {	-- Ancient Weyrn Device
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(250702, {	-- Artisan's Measuring Scales
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250699, {	-- Dark Talon Pennant
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250697, {	-- Draconic Auctioneer's Lectern
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250694, {	-- Draconic Metalshaper's Anvil
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(250701, {	-- Draconic Trader's Cart
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
-					}),
-					i(250627, {	-- Forbidden Fork
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250696, {	-- Green Thumb's Watering Can
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250698, {	-- Obsidian Warder Pennant
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250695, {	-- Replica Grathardormu's Hammer
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250700, {	-- Roasted Ram Leg
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250703, {	-- War Creche Teaching Crystal
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
+					i_DecorCoupons(250704, 15),	-- Ancient Weyrn Device
+					i_DecorCoupons(250702, 5),	-- Artisan's Measuring Scales
+					i_DecorCoupons(250699, 10),	-- Dark Talon Pennant
+					i_DecorCoupons(250697, 10),	-- Draconic Auctioneer's Lectern
+					i_DecorCoupons(250694, 15),	-- Draconic Metalshaper's Anvil
+					i_DecorCoupons(250701, 20),	-- Draconic Trader's Cart
+					i_DecorCoupons(250627, 5),	-- Forbidden Fork
+					i_DecorCoupons(250696, 10),	-- Green Thumb's Watering Can
+					i_DecorCoupons(250698, 10),	-- Obsidian Warder Pennant
+					i_DecorCoupons(250695, 10),	-- Replica Grathardormu's Hammer
+					i_DecorCoupons(250700, 5),	-- Roasted Ram Leg
+					i_DecorCoupons(250703, 10),	-- War Creche Teaching Crystal
 				},
 			}),
 		}),

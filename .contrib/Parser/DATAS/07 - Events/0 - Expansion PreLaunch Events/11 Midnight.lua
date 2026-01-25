@@ -6,7 +6,7 @@ local TWILIGHTS_BLADE_INSIGNIA = 3319;
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.MID, {
-		["forcetimeline"] = { ADDED_12_0_0, REMOVED_MID_LAUNCH },
+		["forcetimeline"] = { ADDED_12_0_0, REMOVED_12_0_X_LAUNCH },
 	}),
 	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
@@ -326,7 +326,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_0_0 },
 		["groups"] = {
 			n(QUESTS, {
-				
+
 			}),
 		},
 	}),
