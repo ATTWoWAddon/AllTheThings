@@ -1,59 +1,109 @@
-# This is a workflow to package and upload on CurseForge and GitHub Releases using BigWigs/Packager
+# This workflow packages and uploads to CurseForge/Wago for alpha/beta,
+# and uploads to GitHub Releases only for release tags.
 
 name: Release
 
 # Controls when the action will run.
 on:
-  # Package alpha version
-  schedule:
-    - cron: '0 6 * * *'   # at 06:00 UTC everyday
-    - cron: '0 16 * * 0'  # at 16:00 UTC every sunday
-  # Triggers the workflow on tag events
+  # Alpha: run on every commit pushed to master
   push:
-    tags: '*'
+    branches: [ master ]
+    tags:
+      - "*" # Only release tags are expected to be pushed; beta tags are local-only.
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Beta: run on a schedule (date-based version)
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC every day
+    - cron: "0 16 * * 0"  # 16:00 UTC every Sunday
+
+  # Manual trigger: allowed only on non-master branches
   workflow_dispatch:
 
 jobs:
-  # Check for changes since last tag
-  check-changes:
-    runs-on: ubuntu-slim
+  check-context:
+    # Manual trigger should be valid only on non-master branches
+    if: >
+      github.event_name != 'workflow_dispatch' ||
+      github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
     outputs:
-      changes_detected: ${{ steps.check_changes.outputs.changes_detected }}
+      mode: ${{ steps.mode.outputs.mode }}
+      proceed: ${{ steps.guard.outputs.proceed }}
+      beta_local_tag: ${{ steps.guard.outputs.beta_local_tag }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
-           fetch-depth: 300
-           fetch-tags: true
-           ref: ${{ github.ref }}
+          fetch-depth: 300
+          fetch-tags: true
+          ref: ${{ github.ref }}
+
+      - name: Determine mode
+        id: mode
+        shell: bash
+        run: |
+          MODE="alpha"
+
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            MODE="release"
+          elif [ "${GITHUB_EVENT_NAME}" = "schedule" ]; then
+            MODE="beta"
+          fi
+
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Selected mode: $MODE"
 
       - name: Check for changes since last tag
         id: check_changes
+        shell: bash
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            LAST_TAG=$(git describe --tags --abbrev=0)
-            echo "Last tag: $LAST_TAG"
-            CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
-            if [ -z "$CHANGED_FILES" ]; then
-              echo "No changes detected since last tag."
-              echo "changes_detected=false" >> $GITHUB_OUTPUT
-            else
-              echo "Changes detected since last tag:"
-              echo "$CHANGED_FILES"
-              echo "changes_detected=true" >> $GITHUB_OUTPUT
-            fi
+          MODE="${{ steps.mode.outputs.mode }}"
+          PROCEED="true"
+          BETA_TAG=""
+
+          # Find the latest *release* tag only (X.Y.Z). Beta/rc/alpha tags are excluded.
+          LAST_RELEASE_TAG=$(
+            git tag --list "*" \
+            | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' \
+            | sort -V \
+            | tail -n 1
+          )
+
+          HEAD_SHA="$(git rev-parse HEAD)"
+
+          if [ -n "$LAST_RELEASE_TAG" ]; then
+            RELEASE_SHA="$(git rev-list -n 1 "$LAST_RELEASE_TAG")"
           else
-            echo "Triggered by ${{ github.event_name }}, always proceed."
-            echo "changes_detected=true" >> $GITHUB_OUTPUT
+            RELEASE_SHA=""
           fi
+
+          if [ "$MODE" = "beta" ] && [ -n "$RELEASE_SHA" ] && [ "$HEAD_SHA" = "$RELEASE_SHA" ]; then
+            echo "Beta skipped: HEAD equals last release tag ($LAST_RELEASE_TAG)."
+            PROCEED="false"
+          fi
+
+          # Create a date-based beta tag (local only) so packager treats the build as beta.
+          if [ "$MODE" = "beta" ] && [ "$PROCEED" = "true" ]; then
+            DATE=$(date -u +"%Y%m%d")
+            BETA_TAG="v${DATE}-beta"
+
+            # Avoid collisions if the workflow runs more than once per day.
+            if git rev-parse "$BETA_TAG" >/dev/null 2>&1; then
+              N=2
+              while git rev-parse "${BETA_TAG}.${N}" >/dev/null 2>&1; do
+                N=$((N+1))
+              done
+              BETA_TAG="${BETA_TAG}.${N}"
+            fi
+          fi
+
+          echo "proceed=$PROCEED" >> "$GITHUB_OUTPUT"
+          echo "beta_local_tag=$BETA_TAG" >> "$GITHUB_OUTPUT"
 
   build-windows:
     runs-on: windows-latest
-    needs: check-changes
-    if: needs.check-changes.outputs.changes_detected == 'true'
-
+    needs: check-context
+    if: needs.check-context.outputs.proceed == 'true'
     steps:
       - uses: actions/checkout@v6
 
@@ -108,20 +158,20 @@ jobs:
 
       - uses: actions/upload-artifact@v6
         with:
-            name: db-output  # Artifact name
-            path: db/  # File path to upload
-            retention-days: 7
+          name: db-output  # Artifact name
+          path: db/  # File path to upload
+          retention-days: 7
 
   release-linux:
     runs-on: ubuntu-latest
-    needs: build-windows
-
+    needs: [check-context, build-windows]
+    if: needs.check-context.outputs.proceed == 'true'
     steps:
       - uses: actions/checkout@v6
         with:
-           fetch-depth: 300
-           fetch-tags: true
-           ref: ${{ github.ref }}
+          fetch-depth: 300
+          fetch-tags: true
+          ref: ${{ github.ref }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v7
@@ -129,11 +179,31 @@ jobs:
           name: db-output  # Name of the artifact to download
           path: db
 
-      # once cloned, we just run the GitHub Action for the packager project
-      - name: Package and release
-        uses: BigWigsMods/packager@master
+      - name: Create local beta tag (local only)
+        if: needs.check-context.outputs.mode == 'beta'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          TAG="${{ needs.check-context.outputs.beta_local_tag }}"
+          git tag -a "${TAG}" -m "Scheduled beta ${TAG}"
+          echo "Local beta tag created: ${TAG}"
+
+      # Alpha/Beta: upload to CF/Wago only (no GitHub Releases)
+      - name: Package and upload (alpha/beta)
+        if: needs.check-context.outputs.mode != 'release'
+        uses: BigWigsMods/packager@v2
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
-          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
           #WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
-          WAGO_API_TOKEN: ${{ secrets.WAGO_API_KEY }}
+
+      # Release: upload to CF/Wago + GitHub Releases
+      - name: Package and upload (release)
+        if: needs.check-context.outputs.mode == 'release'
+        uses: BigWigsMods/packager@v2
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          #WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_OAUTH }}
