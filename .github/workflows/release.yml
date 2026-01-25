@@ -173,8 +173,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 300
-          fetch-tags: true
           ref: ${{ github.sha }}
 
       - name: Debug git state
@@ -186,6 +184,12 @@ jobs:
           git tag -l | head -n 20
           echo "Describe:"
           git describe --tags --abbrev=0 --match '[0-9]*.[0-9]*.[0-9]*' 2>/dev/null || true
+          if git rev-parse --is-shallow-repository | grep -q true; then
+            DEPTH=$(git rev-list --count HEAD)
+            echo "shallow repo, current depth ~= $DEPTH"
+          else
+            echo "full clone"
+          fi
 
       - name: Fetch tags with deeper history
         shell: bash
@@ -201,6 +205,12 @@ jobs:
           git tag -l | head -n 20
           echo "Describe:"
           git describe --tags --abbrev=0 --match '[0-9]*.[0-9]*.[0-9]*' 2>/dev/null || true
+          if git rev-parse --is-shallow-repository | grep -q true; then
+            DEPTH=$(git rev-list --count HEAD)
+            echo "shallow repo, current depth ~= $DEPTH"
+          else
+            echo "full clone"
+          fi
 
       - name: Download artifacts
         uses: actions/download-artifact@v7
