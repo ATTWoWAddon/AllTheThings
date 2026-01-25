@@ -8,17 +8,6 @@ local onClickForDynamicCategory = function(row, button)
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
 			dynamicWindow:ForceRebuild();
-			local dynamicData = dynamicWindow.data;
-			if dynamicData then
-				local g = app.CloneClassInstance(dynamicData).g;
-				if g and #g > 0 then
-					local progress, total = dynamicData.progress or 0, dynamicData.total or 0;
-					row.ref.progress = progress;
-					row.ref.total = total;
-					row.ref.g = g;
-					app.AssignChildren(row.ref);
-				end
-			end
 		end
 	end
 end
@@ -27,17 +16,7 @@ local onUpdateForDynamicCategory = function(data)
 	data.progress = nil; data.total = nil;
 	if window then
 		window:ForceRebuild();
-		--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
-		local parent, total = data.parent, data.total;
-		if parent and total then
-			if not data.sourceIgnored then
-				parent.progress = parent.progress + data.progress;
-				parent.total = parent.total + total;
-			end
-			data.visible = app.GroupVisibilityFilter(data);
-		else
-			data.visible = true;
-		end
+		data.visible = app.GroupVisibilityFilter(data);
 	else
 		data.visible = false;
 	end
@@ -69,6 +48,24 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	end,
 	["total"] = function(t)
 		return t.dynamicWindowData.total;
+	end,
+	["g"] = function(t)
+		if t.expanded then
+			local lastG = t.__lastG;
+			local g = t.dynamicWindowData.g;
+			if g and lastG ~= g then
+				t.__lastG = g;
+				local newG = app.CloneClassInstance(g);
+				if newG and #newG > 0 then
+					for i,o in ipairs(newG) do
+						o.parent = t;
+					end
+					t.__clonedG = newG;
+				end
+				return newG;
+			end
+			return t.__clonedG;
+		end
 	end,
 	["OnClick"] = function(t)
 		return onClickForDynamicCategory;

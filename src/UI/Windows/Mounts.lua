@@ -22,8 +22,11 @@ app:CreateWindow("Mounts", {
 		if Flat ~= flat then
 			Flat = flat;
 			self.data.OnUpdate = flat and self.OnUpdateFlat or self.OnUpdateCategorized;
-			wipe(self.data.g);
+			self.data.g = {};
 			self:Rebuild();
+			if self.IsDynamicCategory and self:IsShown() then
+				app:GetWindow("Prime"):Update();
+			end
 		end
 	end,
 	ToggleFlat = function(self)
