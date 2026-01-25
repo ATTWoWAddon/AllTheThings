@@ -864,10 +864,6 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(242635),	-- Twilight's Blade - Armor - Tabard \\ Twilight's Blade Tabard
 
-
-			-- Misc
-			i(242693),	-- Kafaccino
-
 			-- Cooking
 			i(242744),	-- Hearty Quel'dorei Medley
 			i(242745),	-- Hearty Blooming Feast
@@ -1894,9 +1890,7 @@ root(ROOTS.Unsorted, {
 			i(251073),	-- Voidstone Shielding Array
 
 			-- QI
-			i(251273),	-- Slightly Magical Crystal
 			i(251284),	-- Anomaly Inverter
-			i(251492),	-- Slightly Magical Crystal Locator
 			-- Prof? Shadolwands?
 			i(251283),	-- Tormented Tantalum
 			-- Prof
@@ -1973,9 +1967,6 @@ root(ROOTS.Unsorted, {
 
 			-- Cooking
 			i(251630),	-- Recipe: Braised Blood Hunter
-
-			-- QI
-			i(251632),	-- Biological Vacuum
 
 			-- Toy
 			i(251633),	-- Bursting Bounty Bundle
@@ -2123,7 +2114,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(253706),	-- Junk Mail
-			i(253750),	-- Luckydo
 
 			-- Prof
 			i(253849),	--
@@ -4653,7 +4643,6 @@ root(ROOTS.Unsorted, {
 			i(266123),	-- Sisterhood's Moonlance
 			i(266124),	-- Archer's Shadow Talon
 			i(266125),	-- Priestess' Starblade
-			i(266128),	-- Aberration Part
 			i(266160),	-- Trapper's Green Slippers
 			i(266183),	-- Enigmatic Voidclarion
 			i(266196),	-- Ensemble: Preyseeker's Refined Armor
@@ -4696,16 +4685,6 @@ root(ROOTS.Unsorted, {
 			i(260692),	-- Chunk of Mystery Meat
 			i(260694),	-- Foul Kelp
 			i(260695),	-- Rancid Aquatic Remains
-			i(262957),	-- Tattered Vanguard Banner
-			i(264187),	-- Blessed Phoenix Egg
-			i(264246),	-- Eerie Iridescent Riftshroom
-			i(264332),	-- Amani Ritual Altar
-			i(264491),	-- Voidbound Holding Cell
-			i(264492),	-- Chaotic Void Maw
-			i(264494),	-- Banded Domanaar Storage Crate
-			i(264497),	-- Imperator's Torment Crystal
-			i(264498),	-- Voltaic Trigore Egg
-			i(264500),	-- Devouring Host Ritual Engine
 			i(265387),	-- Cuddly Tomato Grrgle
 			i(265388),	-- Cuddly Lemon Grrgle
 			i(265389),	-- Cuddly Cotton Candy Grrgle
@@ -4731,8 +4710,6 @@ root(ROOTS.Unsorted, {
 			i(265613),	-- Galactic Gladiator's Warglaive
 			i(265621),	-- Galactic Gladiator's Shattered Blade
 			i(265949),	-- March on Quel'Danas Vanquisher's Aureate Trophy
-			i(265950),	-- Dreamrift Vanquisher's Aureate Trophy
-			i(265951),	-- Voidspire Vanquisher's Aureate Trophy
 			i(266064),	-- Elegant Cushioned Chaise
 			i(266370),	-- Dundun's Abundant Travel Method
 			i(266384),	-- Sanctum Magister's Post
@@ -4777,7 +4754,6 @@ root(ROOTS.Unsorted, {
 			i(267004),	-- Twinblade of the Devourer
 			i(267005),	-- Rakan's Totem
 			i(267007),	-- Eye of Acherus
-			i(267008),	-- Crucible Votive Rack
 			i(267009),	-- Amani Training Dummy
 			i(267040),	-- Sea Caller
 			i(267052),	-- Thalassian Alchemy Coveralls
@@ -5193,7 +5169,6 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 			n(ARMOR, {	-- Is this gear for catch up or gear update for dracthyr or the fast pace quest thingy??
-				i(246462),	-- Draconic Polearm
 				i(254332),	-- Garden Tender's Shawl
 				i(254335),	-- Springleaf Swatch
 				i(257244),	-- Dreamfriend's Waistguard

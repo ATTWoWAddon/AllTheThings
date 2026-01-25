@@ -487,48 +487,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 					i(251976),	-- Wolf Pelt Rug (DECOR!)
 				},
 			}),
-			n(250820, {	-- Hordranin <Endeavor Trader>
-				["coord"] = { 54.2, 56.0, RAZORWIND_SHORES },
-				["timeline"] = { ADDED_12_0_0 },
-				["groups"] = {
-					i(250704, {	-- Ancient Weyrn Device
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(250702, {	-- Artisan's Measuring Scales
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250699, {	-- Dark Talon Pennant
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250697, {	-- Draconic Auctioneer's Lectern
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250694, {	-- Draconic Metalshaper's Anvil
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(250701, {	-- Draconic Trader's Cart
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
-					}),
-					i(250627, {	-- Forbidden Fork
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250696, {	-- Green Thumb's Watering Can
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250698, {	-- Obsidian Warder Pennant
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250695, {	-- Replica Grathardormu's Hammer
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(250700, {	-- Roasted Ram Leg
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(250703, {	-- War Creche Teaching Crystal
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-				},
-			}),
 			n(255298, {	-- Jehzar Starfall <Decor Vendor>
 				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
 				["groups"] = {
