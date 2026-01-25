@@ -213,19 +213,24 @@ api.CleanLink = CleanLink
 local CLASS = "Item"
 local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
-local function ItemAsyncRefreshFunc(t)
-	local _t, id = cache.GetCached(t)
-	if _t.__Retrieved then return end
+local ItemAsyncRefreshFunc
+if ItemEventListener then
+	ItemAsyncRefreshFunc = function(t)
+		local _t, id = cache.GetCached(t)
+		if _t.__Retrieved then return end
 
-	_t.__Retrieved = true
-	-- app.PrintDebug("RetrievalFunc",t.hash)
-	-- app.PrintDebug("Item Callback", id)
-	ItemEventListener:AddCallback(math_floor(id), function()
-		-- app.PrintDebug("Item Loaded", id)
-		app.DirectGroupRefresh(t, true)
-		app.ReshowGametooltip()
-	end)
-	return true
+		_t.__Retrieved = true
+		-- app.PrintDebug("RetrievalFunc",t.hash)
+		-- app.PrintDebug("Item Callback", id)
+		ItemEventListener:AddCallback(math_floor(id), function()
+			-- app.PrintDebug("Item Loaded", id)
+			app.DirectGroupRefresh(t, true)
+			app.ReshowGametooltip()
+		end)
+		return true
+	end
+else
+	ItemAsyncRefreshFunc = app.EmptyFunction;
 end
 app.AddEventRegistration("ITEM_DATA_LOAD_RESULT", function(itemID, success)
 	if not success then

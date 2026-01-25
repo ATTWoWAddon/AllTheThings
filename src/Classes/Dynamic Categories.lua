@@ -1,24 +1,23 @@
 do
 local ipairs, app = ipairs, select(2, ...);
 local onClickForDynamicCategory = function(row, button)
-	local window = row.ref.dynamicWindow;
-	if window then
+	local dynamicWindow = row.ref.dynamicWindow;
+	if dynamicWindow then
 		if button == "RightButton" then
-			window:Toggle();
+			dynamicWindow:Toggle();
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
-			print("LEFT CLICK", row.ref.text);
-			if #window.data.g < 1 then window:ForceRebuild(); end
-			if #window.data > 0 then
-				local progress, total = window.data.progress or 0, window.data.total or 0;
-				local g = app.CloneClassInstance(window.data).g;
-				for i,o in ipairs(g) do
-					o.parent = row.ref;
+			dynamicWindow:ForceRebuild();
+			local dynamicData = dynamicWindow.data;
+			if dynamicData then
+				local g = app.CloneClassInstance(dynamicData).g;
+				if g and #g > 0 then
+					local progress, total = dynamicData.progress or 0, dynamicData.total or 0;
+					row.ref.progress = progress;
+					row.ref.total = total;
+					row.ref.g = g;
+					app.AssignChildren(row.ref);
 				end
-				row.ref.g = g;
-				row.ref.progress = progress;
-				row.ref.total = total;
-				prime:Refresh();
 			end
 		end
 	end

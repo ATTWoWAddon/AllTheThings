@@ -1162,25 +1162,6 @@ local function SimpleHeaderGroup(npcID, t)
 	return t
 end
 
--- Force Bind on Pickup Items to require the profession within the craftables section.
-function ProcessBindOnPickupProfession(profession, requireSkill)
-	if profession.requireSkill then
-		requireSkill = profession.requireSkill;
-	elseif profession.b and profession.itemID then
-		profession.requireSkill = requireSkill;
-	end
-	if profession.g then
-		for i,o in ipairs(profession.g) do
-			ProcessBindOnPickupProfession(o, requireSkill);
-		end
-	end
-end
-function ProcessBindOnPickupProfessions(craftables)
-	for i,profession in ipairs(craftables) do
-		ProcessBindOnPickupProfession(profession, profession.requireSkill);
-	end
-end
-
 function app:GetDataCache()
 	if not app.Categories then
 		return nil;
@@ -1283,7 +1264,6 @@ function app:GetDataCache()
 	-- Crafted Items
 	local craftables = app.Categories.Craftables;
 	if craftables then
-		--ProcessBindOnPickupProfessions(craftables);
 		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
 			icon = app.asset("Category_Crafting"),
 			DontEnforceSkillRequirements = true,
@@ -1416,8 +1396,7 @@ function app:GetDataCache()
 	-----------------------------------------
 	-- D Y N A M I C   C A T E G O R I E S --
 	-----------------------------------------
-	--[[
-	if app.Windows then
+	if app.IsClassic and app.Windows then
 		local keys,sortedList = {},{};
 		for suffix,window in pairs(app.WindowDefinitions) do
 			if window and window.IsDynamicCategory then
@@ -1493,7 +1472,6 @@ function app:GetDataCache()
 			tinsert(g, dynamicCategory);
 		end
 	end
-	]]--
 	
 	-- Track Deaths!
 	tinsert(g, app.CreateDeathClass());
@@ -1538,7 +1516,7 @@ function app:GetDataCache()
 	
 	app.AssignChildren(rootData);
 	
-	if not app.IsClassic then
+	if app.IsRetail then
 	-- Create Dynamic Groups Button
 	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
@@ -1725,9 +1703,7 @@ function app:GetDataCache()
 
 		},
 	}));
-	end
 	
-	if not app.IsClassic then
 	-- Function to build a hidden window's data
 	local AllHiddenWindows = {}
 	local function BuildHiddenWindowData(name, icon, description, category, flags)

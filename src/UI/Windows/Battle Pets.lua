@@ -11,7 +11,7 @@ local CloneArray = app.CloneArray;
 local GetRelativeValue = app.GetRelativeValue;
 
 local function MergeClone(g, o)
-	local clone = CloneClassInstance(o);
+	local clone = app.CloneClassInstance(o);
 	local u = GetRelativeValue(o, "u");
 	if u then clone.u = u; end
 	local e = GetRelativeValue(o, "e");

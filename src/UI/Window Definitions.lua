@@ -2182,10 +2182,6 @@ local function UpdateWindow(self, force, trigger)
 	if not data then return; end
 	local visible = self:IsShown();
 	force = force or self.HasPendingUpdate;
-	if force and not visible then
-		self.HasPendingUpdate = true;
-		force = nil;
-	end
 	if force or visible then
 		local rowData = self.rowData
 		if not rowData then
@@ -2372,12 +2368,9 @@ local ReservedFields = {
 local function BuildWindow(suffix)
 	local settings = app.WindowDefinitions[suffix];
 	if not settings then	-- Deprecated, but supported in Retail for now.
-		local onUpdate = app:CustomWindowUpdate(suffix) or UpdateWindow;
 		settings = {
 			OnInit = app:CustomWindowInit(suffix),
-			OnUpdate = function(self, ...)
-				return onUpdate(self, ...);
-			end,
+			OnUpdate = app:CustomWindowUpdate(suffix),
 		};
 		app.WindowDefinitions[suffix] = settings;
 	else
@@ -2585,45 +2578,85 @@ local function BuildWindow(suffix)
 		end
 	end
 	
-	local OnUpdate = settings.OnUpdate or UpdateWindow;
-	if settings.Debugging then
-		function window:ForceUpdate(force, trigger)
-			print("ForceUpdate: " .. suffix, force, trigger);
-			local lastUpdate = debugprofilestop();
-			local result = OnUpdate(self, force, trigger);
-			print("ForceUpdate: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
-			self:Refresh();
-			return result;
-		end
-		function window:Update(force, trigger)
-			if self:IsShown() then
-				print("UpdateWindow: " .. suffix, force, trigger);
+	local OnUpdate = settings.OnUpdate;
+	if OnUpdate then
+		if settings.Debugging then
+			function window:ForceUpdate(force, trigger)
+				print("ForceUpdate: " .. suffix, force, trigger);
 				local lastUpdate = debugprofilestop();
-				local result = OnUpdate(self, force, trigger);
-				print("UpdateWindow: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+				local result = OnUpdate(self, force, trigger) or self:DefaultUpdate(force, trigger);
+				print("ForceUpdate: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
 				self:Refresh();
 				return result;
-			else
-				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+			end
+			function window:Update(force, trigger)
+				if self:IsShown() then
+					print("UpdateWindow: " .. suffix, force, trigger);
+					local lastUpdate = debugprofilestop();
+					local result = OnUpdate(self, force, trigger) or self:DefaultUpdate(force, trigger);
+					print("UpdateWindow: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self:Refresh();
+					return result;
+				else
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+				end
+			end
+		else
+			function window:ForceUpdate(force, trigger)
+				local result = OnUpdate(self, force, trigger) or self:DefaultUpdate(force, trigger);
+				self:Refresh();
+				return result;
+			end
+			function window:Update(force, trigger)
+				if self:IsShown() then
+					local result = OnUpdate(self, force, trigger) or self:DefaultUpdate(force, trigger);
+					self:Refresh();
+					return result;
+				else
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+				end
 			end
 		end
 	else
-		function window:ForceUpdate(force, trigger)
-			local result = OnUpdate(self, force, trigger);
-			self:Refresh();
-			return result;
-		end
-		function window:Update(force, trigger)
-			if self:IsShown() then
-				local result = OnUpdate(self, force, trigger);
+		if settings.Debugging then
+			function window:ForceUpdate(force, trigger)
+				print("ForceUpdate: " .. suffix, force, trigger);
+				local lastUpdate = debugprofilestop();
+				local result = self:DefaultUpdate(force, trigger);
+				print("ForceUpdate: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
 				self:Refresh();
 				return result;
-			else
-				self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+			end
+			function window:Update(force, trigger)
+				if self:IsShown() then
+					print("UpdateWindow: " .. suffix, force, trigger);
+					local lastUpdate = debugprofilestop();
+					local result = self:DefaultUpdate(force, trigger);
+					print("UpdateWindow: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					self:Refresh();
+					return result;
+				else
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+				end
+			end
+		else
+			function window:ForceUpdate(force, trigger)
+				local result = self:DefaultUpdate(force, trigger);
+				self:Refresh();
+				return result;
+			end
+			function window:Update(force, trigger)
+				if self:IsShown() then
+					local result = self:DefaultUpdate(force, trigger);
+					self:Refresh();
+					return result;
+				else
+					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+				end
 			end
 		end
 	end
-
+	
 	local onRefresh = settings.OnRefresh;
 	if onRefresh then
 		if settings.Debugging then
