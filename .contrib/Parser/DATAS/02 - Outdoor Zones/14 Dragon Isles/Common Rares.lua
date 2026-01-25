@@ -174,6 +174,9 @@ local RARE_GROUP_SUNDERING = {
 	193271,	-- Shadeslash Trakken
 	193165,	-- Sparkspitter Vrak
 	201542,	-- Tikarr Frostclaw <<The Lazy>>
+	-- #IF AFTER 10.1
+	205227,	-- Tarasek Fighter
+	-- #ENDIF
 };
 local RARE_GROUP_AZRA = {
 	193135,	-- Azra's Prized Peony
