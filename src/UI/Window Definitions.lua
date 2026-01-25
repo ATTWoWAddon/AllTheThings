@@ -895,8 +895,7 @@ local function RowOnClick(self, button)
 				return true;
 			elseif self.index > 0 then
 				if not reference.IgnorePopout then
-					-- clone the underlying object of the DLO and create a popout of that instead of the DLO itself
-					app:CreateMiniListForGroup(reference.__dlo and reference.__o or reference);
+					app:CreateMiniListForGroup(reference.__o or reference);
 				end
 			else
 				app.Settings:Open();
@@ -3095,4 +3094,285 @@ OnInitForPopout = function(self, group)
 			oldDefaultUpdate(self, ...);
 		end
 	end
+end
+
+-- Dynamic Search Function Templates
+-- TODO: Move this to a Search Module
+local table_concat
+	= table.concat
+local api = {};
+FieldDefaults.SearchAPI = api;
+
+-- Search Filter Function Templates
+-- This table stores uniquely keyed filter functions and allows users
+-- to reuse filter functions without needing to create additional ones
+-- for the same combination of class types. This will ensure the speed
+-- of code generation and prevent explosive memory use by similar logic.
+local SearchFiltersByClassTypes = {};
+local BaseSearchFilterMetatable = {
+	__index = function(t, __type)
+		if __type then t[__type] = false; end
+		return false;
+	end,
+};
+local function BuildSearchFilterForClassTypes(uniqueKey, classTypes)
+	local searchFilter = SearchFiltersByClassTypes[classTypesKey];
+	if not searchFilter then
+		local filter = {};
+		for i,__type in pairs(classTypes) do filter[__type] = true; end
+		local FilterByClassType = setmetatable(filter, BaseSearchFilterMetatable);
+		searchFilter = function(t) return FilterByClassType[t.__type]; end
+		SearchFiltersByClassTypes[uniqueKey] = searchFilter;
+	end
+	return searchFilter;
+end
+api.BuildSearchFilterForClassTypes = BuildSearchFilterForClassTypes;
+
+-- Categorized Search Function Templates
+-- This table stores uniquely keyed search functions that looks first for
+-- specified class types (__type keyed) and additionally filters results
+-- by a unique key on the instances of those results to build an OnUpdate function.
+-- This specific function builds a categorized hierarchy lookup for a dynamic category.
+local CategorizedSearchFunctionsByClassTypes = {};
+local CategorizedRelativeFields = { "u", "e", "awp", "rwp", "r", "c", "coords", "maps" };
+local CategoryByRelativeFields = {
+	-- Look for specific tags first, a PvP item will display as "vendor" or "achievement" instead, which isn't correct.
+	{ "pvp", function(o) return "pvp"; end },
+	
+	-- Root Categories
+	{ "isWorldDropCategory", function(o) return "drop"; end },
+	{ "isCraftedCategory", function(o) return "crafted"; end },
+	{ "isHolidayCategory", function(o) return "holiday"; end },
+	{ "isPromotionCategory", function(o) return "promo"; end },
+	{ "isPVPCategory", function(o) return "pvp"; end },
+	{ "isEventCategory", function(o) return "event"; end },	-- TODO: Change this to "World Event"
+	
+	-- Keys
+	{ "achievementID", function(o) return app.HeaderConstants.ACHIEVEMENTS; end },
+	{ "instanceID", function(o) return "raid"; end },	-- Determine if we want to split by raid and/or dungeon
+	{ "questID", function(o) return app.HeaderConstants.QUESTS; end },
+	{ "headerID", 
+		function(o, value)
+			if value == app.HeaderConstants.VENDORS then
+				return value;
+			end
+			if value == app.HeaderConstants.COMMON_BOSS_DROPS then
+				return "drop";
+			end
+			return app.GetDeepestRelativeValue(o, "headerID") or value;
+		end
+	},
+};
+local function AssignCategoryForResult(self, categories, result)
+	-- Cache the original object for the result in the hierarchy.
+	local o = result.__o;
+	--[[
+	for _,field in ipairs(CategorizedRelativeFields) do
+		if not rawget(result, field) then
+			result[field] = app.GetRelativeValue(o, field);
+		end
+	end
+	if not o.sourceQuests then
+		local questID = app.GetRelativeValue(o, "questID");
+		if questID then
+			if not result.sourceQuests then
+				result.sourceQuests = {};
+			end
+			if not app.contains(result.sourceQuests, questID) then
+				tinsert(result.sourceQuests, questID);
+			end
+		else
+			local sourceQuests = app.GetRelativeValue(o, "sourceQuests");
+			if sourceQuests then
+				if not result.sourceQuests then
+					result.sourceQuests = {};
+					for k,questID in ipairs(sourceQuests) do
+						tinsert(result.sourceQuests, questID);
+					end
+				else
+					for k,questID in ipairs(sourceQuests) do
+						if not app.contains(result.sourceQuests, questID) then
+							tinsert(result.sourceQuests, questID);
+						end
+					end
+				end
+			end
+		end
+	end
+	]]--
+	
+	
+	-- Find the first category type that fits our search result
+	local categoryType;
+	for i,dataSet in ipairs(CategoryByRelativeFields) do
+		local value = app.GetRelativeValue(o, dataSet[1]);
+		if value then
+			value = dataSet[2](o, value);
+			if value then
+				categoryType = value;
+				break;
+			end
+		end
+	end
+	if not categoryType then
+		print("FAILED TO FIND CATEGORY TYPE", o.text);
+		categoryType = "drop";
+	end
+
+	-- Determine the type of category to put the thing into.
+	local category = categories[categoryType];
+	if not category then
+		if categoryType == "holiday" then
+			category = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS);
+		elseif categoryType == "raid" then
+			category = app.CreateRawText(GROUP_FINDER, {
+				icon = app.asset("Category_D&R"),
+			});
+		elseif categoryType == "promo" then
+			category = app.CreateRawText(BATTLE_PET_SOURCE_8, {
+				icon = app.asset("Category_Promo"),
+			});
+		elseif categoryType == "pvp" then
+			category = app.CreateRawText(PVP, {
+				icon = app.asset("Category_PvP"),
+			});
+		elseif categoryType == "event" then
+			category = app.CreateRawText(BATTLE_PET_SOURCE_7, {
+				icon = app.asset("Category_Event"),
+			});
+		elseif categoryType == "drop" then
+			category = app.CreateRawText(BATTLE_PET_SOURCE_1, {
+				icon = app.asset("Category_WorldDrops"),
+			});
+		elseif categoryType == "crafted" then
+			category = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+				icon = app.asset("Category_Crafting"),
+			});
+		elseif type(categoryType) == "number" then
+			category = app.CreateCustomHeader(categoryType);
+		else
+			print("Unhandled Category Type", categoryType);
+		end
+		if not categories[categoryType] then
+			categories[categoryType] = category;
+			tinsert(self.g, category);
+			category.parent = self;
+			category.SortType = "name";
+			category.g = {};
+		end
+	end
+	tinsert((category or self).g, result);
+	return result;
+end
+local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ...)
+	local classTypes = {...};
+	local classTypesKey = table_concat(classTypes, "");
+	local uniqueKey = key .. classTypesKey;
+	local OnUpdate = CategorizedSearchFunctionsByClassTypes[uniqueKey];
+	if not OnUpdate then
+		local SearchForClassTypes = BuildSearchFilterForClassTypes(classTypesKey, classTypes);
+		OnUpdate = function(data)
+			local g = data.g;
+			if #g < 1 then
+				local results = {};
+				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				local headers, resultsByKey = {}, {};
+				for i,result in pairs(results) do
+					local id = result[key];
+					if id then
+						if not resultsByKey[id] then
+							resultsByKey[id] = { result };
+						else tinsert(resultsByKey[id], result); end
+					end
+				end
+				
+				-- If this object previously had categories, clear them out for reuse.
+				local categories = data.categories;
+				if categories then
+					for key,category in pairs(categories) do
+						tinsert(g, category);
+						wipe(category.g);
+					end
+				else
+					categories = {};
+					data.categories = categories;
+				end
+				
+				-- For each of the results, find the most accessible one and then assign it to a category.
+				for i,searchResults in pairs(resultsByKey) do
+					app.Sort(searchResults, app.SortDefaults.Accessibility);
+					local __o = searchResults[1];	-- This will be marked as the original source object for future popouts
+					local o = app.CloneClassInstance(__o);
+					o.sourceParent = __o.parent;
+					o.__o = __o;
+					AssignCategoryForResult(data, categories, o);
+				end
+				if #g < 1 then
+					tinsert(g, app.CreateRawText(fallbackText or UNKNOWN, {
+						OnUpdate = app.AlwaysShowUpdate,
+						IgnorePopouts = true
+					}));
+				end
+				app.AssignChildren(data);
+				data.SortType = "name";
+			end
+		end
+		CategorizedSearchFunctionsByClassTypes[uniqueKey] = OnUpdate;
+	end
+	return OnUpdate;
+end
+api.BuildCategorizedSearchFunctionForClassTypes = BuildCategorizedSearchFunctionForClassTypes;
+
+-- Flat Search Function Templates
+-- This specific function builds a flat hierarchy lookup for a dynamic category.
+local FlatSearchFunctionsByClassTypes = {};
+local function BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...)
+	local classTypes = {...};
+	local classTypesKey = table_concat(classTypes, "");
+	local uniqueKey = key .. classTypesKey;
+	local OnUpdate = FlatSearchFunctionsByClassTypes[uniqueKey];
+	if not OnUpdate then
+		local SearchForClassTypes = BuildSearchFilterForClassTypes(classTypesKey, classTypes);
+		OnUpdate = function(data)
+			local g = data.g;
+			if #g < 1 then
+				local results = {};
+				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				local headers, resultsByKey = {}, {};
+				for i,result in pairs(results) do
+					local id = result[key];
+					if id then
+						if not resultsByKey[id] then
+							resultsByKey[id] = { result };
+						else tinsert(resultsByKey[id], result); end
+					end
+				end
+				for i,searchResults in pairs(resultsByKey) do
+					app.Sort(searchResults, app.SortDefaults.Accessibility);
+					local __o = searchResults[1];	-- This will be marked as the original source object for future popouts
+					local o = app.CloneClassInstance(__o);
+					o.sourceParent = __o.parent;
+					o.__o = __o;
+					tinsert(g, o);
+				end
+				if #g < 1 then
+					tinsert(g, app.CreateRawText(fallbackText or UNKNOWN, {
+						OnUpdate = app.AlwaysShowUpdate,
+						IgnorePopouts = true
+					}));
+				end
+				app.AssignChildren(data);
+				data.SortType = "name";
+			end
+		end
+		FlatSearchFunctionsByClassTypes[uniqueKey] = OnUpdate;
+	end
+	return OnUpdate;
+end
+api.BuildFlatSearchFunctionForClassTypes = BuildFlatSearchFunctionForClassTypes;
+
+-- Helper Function for Generating Both Search Function Templates
+api.BuildCategorizedAndFlatSearchFunctionsForClassTypes = function(self, key, fallbackText, ...)
+	self.OnUpdateCategorized = BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ...);
+	self.OnUpdateFlat = BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...);
 end
