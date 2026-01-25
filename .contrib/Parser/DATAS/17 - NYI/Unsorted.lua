@@ -111,7 +111,6 @@ root(ROOTS.Unsorted, {
 			i(264477),	-- Thunder Totem Mailbox
 			i(264656),	-- Void Elf Weapon Rack
 			i(265031),	-- Consortium Translocation Portal
-			i(265541),	-- Loammy Soil
 			i(265653),	-- Elegant Storage Table
 			i(265654),	-- Elegant Elven Washbasin
 			i(265792),	-- Fungarian Vine Fence
@@ -4483,20 +4482,6 @@ root(ROOTS.Unsorted, {
 			i(264911),	-- Forest Hunter's Arc
 			i(264912),	-- Void-Channeler's Spire
 			i(264913),	-- Focused Netherslicer
-
-			-- Decor
-			i(264915),	-- Decorated Underground Table
-			i(264916),	-- Loamm Bartering Stall
-			i(264917),	-- Ceramic Loamm Bowl
-			i(264918),	-- Zaralek Candles
-			i(264919),	-- Loamm Archway
-			i(264920),	-- Gooey Niffen Jar
-			i(264921),	-- Zaralek Snail Cart
-			i(264922),	-- Strong Sniffin' Incense
-			i(264923),	-- Underdecorated Underground Table
-			i(264924),	-- Loamm Wheelpot
-			i(264925),	-- Kilnmaster's Bucket
-			i(265032),	-- Hearty Niffen Grub
 
 			-- Misc
 			i(265054),	-- Cracked Tribal Mask
