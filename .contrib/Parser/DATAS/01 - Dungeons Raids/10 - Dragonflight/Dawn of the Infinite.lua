@@ -553,7 +553,6 @@ local QUANTUM_GROUP = sharedData({
 			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
-		ig(68194),	-- Oggleflint's Inspirer				(Removed)
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
@@ -565,6 +564,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134756),	-- Covert Gavel							(Removed)
 		ig(2816),	-- Death Speaker Scepter				(Removed)
 		ig(6196),	-- Noboru's Cudgel						(Removed)
+		ig(68194),	-- Oggleflint's Inspirer				(Removed)
 		ig(134618),	-- Scorching Gavel						(Removed)
 		ig(134611),	-- Scorching Pummeler					(Removed)
 		ig(134789),	-- Seasoned Gavel						(Removed)
