@@ -4032,7 +4032,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				map_exploration(15009,{coord={34.4,25.1,THE_UNDERKEEP}}),	-- The Underkeep
 			}),
 			filter(MISC, {
-				i(217715),	-- Key Scroll (QI!)
+				o(433563, {	-- Key Scroll
+					i(217715),	-- Key Scroll (QI!)
+				}),
 				o(433705, {	-- Pheromone Bottle
 					["coord"] = { 45.6, 45.1, THE_UNDERKEEP },
 					["groups"] = {

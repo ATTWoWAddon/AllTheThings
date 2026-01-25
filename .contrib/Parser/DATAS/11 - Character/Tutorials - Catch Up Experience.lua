@@ -497,7 +497,7 @@ root(ROOTS.Character, n(TUTORIALS, {
 						}),
 						cl(MONK, {
 							i(153847),	-- Mistdancer Hood
-							i(153855),	-- Mistdancer Shoulders
+							i(153842),	-- Mistdancer Pauldrons
 						}),
 						cl(PALADIN, {
 							i(153904),	-- Sunsoul Faceguard

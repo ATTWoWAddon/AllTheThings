@@ -61,7 +61,7 @@ root(ROOTS.Housing, n(QUESTS, {
 				255520,	-- Xiz'ro [H]
 			},
 			["coords"] = {
-				{ 54.0, 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
+				{ 53.9, 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike [A]
 				{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro [H]
 			},
 		}),
@@ -127,8 +127,14 @@ root(ROOTS.Housing, n(QUESTS, {
 			},
 		}),
 		q(94995, {	-- To Dye For
-			["qg"] = 255126,	-- Helmi Cooper
-			["coord"] = { 52.4, 37.8, FOUNDERS_POINT },
+			["qgs"] = {
+				255125,	-- Haleth Turnwater
+				255126,	-- Helmi Cooper
+			},
+			["coords"] = {
+				{ 52.4, 37.8, FOUNDERS_POINT },
+				{ 53.7, 58.1, RAZORWIND_SHORES },
+			},
 			["timeline"] = { ADDED_12_0_0 },
 			["groups"] = {
 				i(259115),	-- Alliance Blue Dye
@@ -174,6 +180,7 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
 				-- q(94750),	-- Unflagged after talking to Elven Decor vendor
 				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
+				q(95166),	-- Pet the Dog (245551)
 			},
 		}),
 	})

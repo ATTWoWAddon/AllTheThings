@@ -428,6 +428,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["qg"] = 252617,	-- Allari the Souleater
 					["coord"] = { 65.0, 40.6, KARESH },
 					["groups"] = {
+						i(266128),	-- Aberration Part (QI!)
 						i(257715),	-- Dense Hide Scrap (QI!)
 						i(258295),	-- Jagged Fang (QI!)
 						i(257714),	-- Spiny Protrusion (QI!)

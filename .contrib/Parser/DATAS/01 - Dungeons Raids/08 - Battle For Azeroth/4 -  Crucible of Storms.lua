@@ -72,7 +72,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				}),
-				BossOnly(CABAL),
+				BossOnly(CABAL, {
+					i(267008, { ["timeline"] = { ADDED_12_0_0 } }),	-- Crucible Votive Rack (DECOR!)
+				}),
 				BossOnly(UUNAT, {
 					i(167864),	-- Trident of Deep Ocean
 				}),

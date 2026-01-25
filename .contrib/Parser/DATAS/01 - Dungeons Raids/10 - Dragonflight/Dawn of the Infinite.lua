@@ -466,7 +466,6 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
 		}),
-		i(68194),	-- Oggleflint's Inspirer				(Removed)
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
@@ -554,6 +553,7 @@ local QUANTUM_GROUP = sharedData({
 			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
+		ig(68194),	-- Oggleflint's Inspirer				(Removed)
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)

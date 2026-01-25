@@ -1052,6 +1052,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["timeline"] = { ADDED_11_2_7 },
 				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = { i(246462) },	-- Draconic Polearm
 			}),
 			q(87555, {	-- Home Is Where the Hearth Is
 				["sourceQuests"] = { 87547 },	-- What's Your Specialty?
@@ -1077,6 +1078,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["coord"] = { 81.2, 28.0, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
 				["races"] = HORDE_ONLY,
+				["groups"] = { i(246462) },	-- Draconic Polearm
 			}),
 			q(90842, {	-- Home Is Where the Hearth Is
 				["sourceQuests"] = { 90840 },	-- What's Your Specialty?

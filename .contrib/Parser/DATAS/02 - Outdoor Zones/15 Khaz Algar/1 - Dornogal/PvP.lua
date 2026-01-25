@@ -67,6 +67,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(90781, {	-- Sparks of War: K'aresh
 					["timeline"] = { ADDED_11_2_0 },
 				}),
+				q(84687, {	-- Against Overwhelming Odds
+					["timeline"] = { ADDED_12_0_0 },
+				}),
 			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>

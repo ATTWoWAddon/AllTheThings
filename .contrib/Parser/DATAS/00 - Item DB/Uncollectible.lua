@@ -1498,6 +1498,7 @@ i(193450);	-- Arakkoa Doll
 i(201824);	-- Arcane Fluid
 i(200836);	-- Arcane-Infused Crystals
 i(200785);	-- Argali Wool Rug
+i(200825);	-- Assorted Debris
 i(200813);	-- Assorted Fractals
 i(200768);	-- Assorted Salamanther Lures
 i(201967);	-- Autographed Skull
