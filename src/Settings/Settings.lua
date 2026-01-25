@@ -70,7 +70,7 @@ settings.RequiredForInsaneMode = {
 	AzeriteEssences = app.GameBuildVersion >= 80000,
 	BattlePets = true,
 	Campsites = app.GameBuildVersion >= 110100,
-	CharacterUnlocks = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
+	CharacterUnlocks = true,
 	Conduits = app.GameBuildVersion >= 100000,
 	Decor = app.GameBuildVersion >= 110207,
 	MountMods = app.GameBuildVersion >= 100000,
@@ -394,7 +394,7 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
-		["QuestChain:Nested"] = app.IsRetail,
+		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
 		["SocialProgress"] = true,
 

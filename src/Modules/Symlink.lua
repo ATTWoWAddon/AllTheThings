@@ -163,11 +163,6 @@ local ResolveFunctions = {
 		end
 		app.print("'selectparent' failed for",o.hash);
 	end,
-	-- Instruction to find all content marked with the specified 'requireSkill'
-	selectprofession = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponseRetailStyle("requireSkill", requireSkill);
-		ArrayAppend(searchResults, search);
-	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
 	fill = function(finalized, searchResults, o)
 		local okey = o.key

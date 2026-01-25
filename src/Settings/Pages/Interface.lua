@@ -589,7 +589,6 @@ end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
-if app.IsRetail then	-- Not sure when the APIs needed for these features is added
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
@@ -623,7 +622,8 @@ function(self)
 end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
 checkboxCurrencyCalculation:AlignBelow(checkboxSpecializations)
-else
+
+if app.IsClassic then
 -- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
 local checkboxShowCraftedItems = child:CreateCheckBox(L.SHOW_CRAFTED_ITEMS_CHECKBOX,
 function(self)
@@ -640,7 +640,7 @@ function(self)
 	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
 end)
 checkboxShowCraftedItems:SetATTTooltip(L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP)
-checkboxShowCraftedItems:AlignBelow(checkboxKnownBy)
+checkboxShowCraftedItems:AlignBelow(checkboxSpecializations)
 
 local checkboxShowRecipes = child:CreateCheckBox(L.SHOW_RECIPES_CHECKBOX,
 function(self)
@@ -877,8 +877,6 @@ end)
 checkboxModelPreview:SetATTTooltip(L.SHOW_MODELS_CHECKBOX_TOOLTIP)
 checkboxModelPreview:AlignBelow(checkboxIconPortraitForQuests, -1)
 
-local checkboxNestedQuestChains;
-if app.IsRetail then	-- CRIEVE NOTE: Classic Windows don't support this just yet.
 local checkboxFillDynamicQuests = child:CreateCheckBox(L.FILL_DYNAMIC_QUESTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
@@ -889,7 +887,7 @@ end)
 checkboxFillDynamicQuests:SetATTTooltip(L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP)
 checkboxFillDynamicQuests:AlignBelow(checkboxModelPreview)
 
-checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
+local checkboxNestedQuestChains = child:CreateCheckBox(L.NESTED_QUEST_CHAIN_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"))
 end,
@@ -898,7 +896,6 @@ function(self)
 end)
 checkboxNestedQuestChains:SetATTTooltip(L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP)
 checkboxNestedQuestChains:AlignBelow(checkboxFillDynamicQuests)
-end
 
 local checkboxSortByProgress = child:CreateCheckBox(L.SORT_BY_PROGRESS_CHECKBOX,
 function(self)
@@ -908,7 +905,7 @@ function(self)
 	settings:SetTooltipSetting("Sort:Progress", self:GetChecked())
 end)
 checkboxSortByProgress:SetATTTooltip(L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP)
-checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains or checkboxModelPreview)
+checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains)
 
 local checkboxShowRemainingCount = child:CreateCheckBox(L.SHOW_REMAINING_CHECKBOX,
 function(self)

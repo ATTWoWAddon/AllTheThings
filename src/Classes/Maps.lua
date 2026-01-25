@@ -281,26 +281,7 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Exploration and t.coords and #t.coords > 0;
 	end,
-	["collected"] = app.IsClassic and function(t)
-		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
-
-		local coords = t.coords;
-		if coords and #coords > 0 then
-			local c = coords[1];
-			local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(c[3], CreateVector2D(c[1] / 100, c[2] / 100));
-			if explored then
-				for _,areaID in ipairs(explored) do
-					if areaID == t.explorationID then
-						app.SetCollected(nil, "Exploration", areaID, true);
-						return 1;
-					end
-				end
-			end
-		end
-		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
-	end
-	-- Retail: only check cached data on collected checks
-	or function(t)
+	["collected"] = function(t)
 		return app.TypicalCharacterCollected(CACHE, t.explorationID)
 	end,
 	["saved"] = function(t)
@@ -647,11 +628,7 @@ end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
 -- Event Handling
-if app.IsClassic then
-	app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
-else
-	app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
-end
+app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
 app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLocation)
 local MapExplorationEventIDs = {
 	[372] = true,

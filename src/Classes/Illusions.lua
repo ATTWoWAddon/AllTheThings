@@ -63,7 +63,7 @@ end
 app.CreateIllusion = app.CreateClass(CLASSNAME, KEY, illusionFields,
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = app.IsRetail and { "name", "link", "icon", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "icon", "tsm" },
+	ImportFields = { "name", "link", "icon", "tsm", "costCollectibles", "AsyncRefreshFunc" },
 	text = function(t)
 		return Colorize("["..(t.name or RETRIEVING_DATA).."]", app.Colors.Illusion)
 	end

@@ -609,20 +609,6 @@ local function AppendVariantConditionals(conditionals, class)
 		end
 	end
 end
-local GenerateSimpleMetaClass = app.EmptyFunction
--- Only Classic utilizes this 'simplemeta' since the cost logic works completely different than in Retail
-if app.IsClassic then
-GenerateSimpleMetaClass = function(fields,name,subname)
-	if fields.collectibleAsCost then
-		local simpleclass = CloneDictionary(fields, {
-			collectibleAsCost = app.ReturnFalse
-		})
-		simpleclass.collectedAsCost = nil
-		local simplemeta = CreateClassMeta(simpleclass, "Simple" .. name .. (subname or ""))
-		fields.simplemeta = function(t) return simplemeta end
-	end
-end
-end
 
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
@@ -656,9 +642,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 		ImportClassFunctions(fields, fields.ImportFrom, unpack(fields.ImportFields))
 	end
 
-	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
-	GenerateSimpleMetaClass(fields, className)
-
 	local args = { ... };
 	local total = #args;
 	local Class = CreateClassMeta(fields, className);
@@ -678,7 +661,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 					if subfields.ImportFrom then
 						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
 					end
-					GenerateSimpleMetaClass(subfields, className, subclassName)
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
 					GenerateVariantClasses(subclass)
 					AppendVariantConditionals(conditionals, subclass)

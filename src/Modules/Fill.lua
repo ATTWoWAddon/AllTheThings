@@ -24,10 +24,6 @@ app.SetSkipLevel = function(level)
 	CurrentSkipLevel = level or 0
 end
 
--- Currently, Classic does not use any of the following Fill logic but the above
--- SkipLevel functions are referenced within Classic files
-if app.IsClassic then return end
-
 
 
 

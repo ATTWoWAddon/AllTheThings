@@ -288,14 +288,32 @@ app:CreateWindow("Tradeskills", {
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
 							local cache = self.cache[group.spellID];
 							if not cache then
-								cache = app.CloneClassInstance(group);
+								cache = app.CloneClassInstance(group, true);
 								self.cache[group.spellID] = cache;
-								local searchResults = ResolveSymbolicLink(group);
-								if searchResults and #searchResults then
-									for j,o in ipairs(searchResults) do
-										tinsert(cache.g, o);
+								cache.g = {};
+								local dynamicSuffix;
+								local requireSkill = group.requireSkill;
+								for suffix,window in pairs(app.Windows) do
+									if window and window.DynamicProfessionID and requireSkill == window.DynamicProfessionID then
+										dynamicSuffix = suffix;
+										break;
 									end
 								end
+								for suffix,window in pairs(app.WindowDefinitions) do
+									if window and window.DynamicProfessionID and requireSkill == window.DynamicProfessionID then
+										dynamicSuffix = suffix;
+										break;
+									end
+								end
+								if dynamicSuffix then
+									local recipesList = app.CreateDynamicCategory(dynamicSuffix);
+									recipesList.IgnoreBuildRequests = true;
+									recipesList.text = "All Recipes";
+									recipesList.icon = 134939;
+									tinsert(cache.g, 1, recipesList);
+								end
+								local response = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+								if response then app.ArrayAppend(cache.g, response); end
 							end
 							tinsert(g, cache);
 						end

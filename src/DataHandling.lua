@@ -135,7 +135,7 @@ local function CacheFilterFunctions()
 		end
 	end
 end
-app.AddEventHandler("OnInit", function()
+app.AddEventHandler("OnStartup", function()
 	CacheFilterFunctions()
 	app.AddEventHandler("OnSettingsRefreshed", CacheFilterFunctions)
 end)

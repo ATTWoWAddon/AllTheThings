@@ -2990,7 +2990,7 @@ app.CreatePopoutForSearch = function(search)
 	end
 end
 
-if app.IsClassic then
+if app.IsClassic and false then
 	OnInitForPopout = function(self, group)
 		local questID = group.questID;
 		if questID or group.sourceQuests then

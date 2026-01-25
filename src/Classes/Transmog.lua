@@ -884,13 +884,13 @@ do
 		-- this is swapped based on settings
 		collectible = AndAppearance.collectible,
 		collected = AndAppearance.collected,
-		collectedwarband = app.IsClassic and app.EmptyFunction or
+		collectedwarband = app.GameBuildVersion >= 100000 and app.EmptyFunction or
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t[KEY])
 		end,
 		visualID = AndAppearance.visualID,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		itemID = app.IsRetail and function(t)
+		itemID = function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped

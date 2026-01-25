@@ -43,9 +43,6 @@ local mountFields = {
 	["link"] = function(t)
 		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
 	end,
-	["f"] = function(t)
-		return app.FilterConstants.MOUNTS;
-	end,
 	RefreshCollectionOnly = true,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Mounts;
@@ -121,10 +118,16 @@ else
 end
 
 app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
-	"WithItem", {	-- This is a conditional contructor.
-		link = mountFields.linkForItem;
-		tsm = mountFields.tsmForItem
-	}, function(t) return t.itemID; end);
+"WithItem", {	-- This is a conditional contructor.
+	link = mountFields.linkForItem;
+	tsm = mountFields.tsmForItem
+}, function(t) return t.itemID; end);
+
+
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter.Mounts then currentCharacter.Mounts = {} end
+	if not accountWideData.Mounts then accountWideData.Mounts = {} end
+end);
 
 -- Battle Pets are done in the Battle Pets lib for MOP Classic
 if app.GameBuildVersion > 50000 then return; end
@@ -138,9 +141,6 @@ local function IsBattlePetCollected(t)
 end
 local speciesFields = {
 	CACHE = function() return "BattlePets" end,
-	["f"] = function(t)
-		return app.FilterConstants.BATTLE_PETS;
-	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.BattlePets;
 	end,

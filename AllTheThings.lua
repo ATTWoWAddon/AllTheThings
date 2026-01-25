@@ -66,11 +66,8 @@ app.NestObjects,
 app.PriorityNestObjects
 
 -- Coroutine Helper Functions
-local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
 app.FillRunner = app.CreateRunner("fill");
-local LocalizeGlobal = app.LocalizeGlobal
-local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
 
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
@@ -894,9 +891,11 @@ local SpecificSources = {
 	headerID = {
 		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
-		[app.HeaderConstants.DROPS] = true,
 	},
 }
+if rawget(app.HeaderConstants, "DROPS") then
+	SpecificSources.headerID[app.HeaderConstants.DROPS] = true
+end
 local KeepSourced = {
 	criteriaID = true
 }
@@ -1163,6 +1162,25 @@ local function SimpleHeaderGroup(npcID, t)
 	return t
 end
 
+-- Force Bind on Pickup Items to require the profession within the craftables section.
+function ProcessBindOnPickupProfession(profession, requireSkill)
+	if profession.requireSkill then
+		requireSkill = profession.requireSkill;
+	elseif profession.b and profession.itemID then
+		profession.requireSkill = requireSkill;
+	end
+	if profession.g then
+		for i,o in ipairs(profession.g) do
+			ProcessBindOnPickupProfession(o, requireSkill);
+		end
+	end
+end
+function ProcessBindOnPickupProfessions(craftables)
+	for i,profession in ipairs(craftables) do
+		ProcessBindOnPickupProfession(profession, profession.requireSkill);
+	end
+end
+
 function app:GetDataCache()
 	if not app.Categories then
 		return nil;
@@ -1262,50 +1280,64 @@ function app:GetDataCache()
 		isWorldDropCategory = true,
 	}));
 
-	-- Group Finder
-	if app.Categories.GroupFinder then
-		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
-			icon = app.asset("Category_GroupFinder"),
-			g = app.Categories.GroupFinder,
+	-- Crafted Items
+	local craftables = app.Categories.Craftables;
+	if craftables then
+		--ProcessBindOnPickupProfessions(craftables);
+		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
+			icon = app.asset("Category_Crafting"),
+			DontEnforceSkillRequirements = true,
+			isCraftedCategory = true,
+			g = craftables,
 		}));
 	end
 
-	-- Expansion Features
-	if app.Categories.ExpansionFeatures then
-		tinsert(g, app.CreateRawText(GetCategoryInfo(15301), {
-			icon = app.asset("Category_ExpansionFeatures"),
-			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
-			g = app.Categories.ExpansionFeatures,
-			lvl = 10,
-		}));
-	end
+	-- Professions
+	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
+		g = app.Categories.Professions or {}
+	});
+	tinsert(g, ProfessionsHeader);
 
 	-- Holidays
 	if app.Categories.Holidays then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
 			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
-			isHolidayCategory = true,
 			SortType = "EventStart",
+			isHolidayCategory = true,
 			g = app.Categories.Holidays,
 		}));
 	end
 
-	-- Events
-	if app.Categories.WorldEvents then
-		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
-			icon = app.asset("Category_Event"),
-			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
-			g = app.Categories.WorldEvents,
+	-- Expansion Features
+	if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
+		tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
+			icon = app.asset("Category_ExpansionFeatures"),
+			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
+			g = app.Categories.ExpansionFeatures,
 		}));
 	end
 
-	-- Promotions
-	if app.Categories.Promotions then
-		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
-			icon = app.asset("Category_Promo"),
-			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
-			isPromotionCategory = true,
-			g = app.Categories.Promotions,
+	-----------------------------------------
+	-- L I M I T E D   C A T E G O R I E S --
+	-----------------------------------------
+	-- Character
+	if app.Categories.Character then
+		tinsert(g, app.CreateRawText(CHARACTER, {
+			icon = app.asset("Category_ItemSets"),
+			g = app.Categories.Character,
+		}));
+	end
+
+	-- Housing
+	if app.Categories.Housing then
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, app.Categories.Housing));
+	end
+
+	-- Group Finder
+	if app.Categories.GroupFinder then
+		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
+			icon = app.asset("Category_GroupFinder"),
+			g = app.Categories.GroupFinder,
 		}));
 	end
 
@@ -1322,39 +1354,33 @@ function app:GetDataCache()
 		}));
 	end
 
-	-- Craftables
-	if app.Categories.Craftables then
-		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
-			icon = app.asset("Category_Crafting"),
-			DontEnforceSkillRequirements = true,
-			g = app.Categories.Craftables,
-		}));
+	-- Season of Discovery
+	if app.Categories.SeasonOfDiscovery then
+		for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
+			tinsert(g, o);
+		end
 	end
-
-	-- Professions
-	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
-		g = app.Categories.Professions or {}
-	});
-	tinsert(g, ProfessionsHeader);
 
 	-- Secrets
 	if app.Categories.Secrets then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, app.Categories.Secrets));
 	end
 
-	-- Housing
-	if app.Categories.Housing then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, app.Categories.Housing));
+	-- Skills
+	if app.Categories.Skills then
+		tinsert(g, app.CreateRawText(SKILLS, {
+			icon = 136105,
+			g = app.Categories.Skills
+		}));
 	end
 
-	-----------------------------------------
-	-- L I M I T E D   C A T E G O R I E S --
-	-----------------------------------------
-	-- Character
-	if app.Categories.Character then
-		tinsert(g, app.CreateRawText(CHARACTER, {
-			icon = app.asset("Category_ItemSets"),
-			g = app.Categories.Character,
+	-- World Events
+	if app.Categories.WorldEvents then
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
+			icon = app.asset("Category_Event"),
+			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
+			g = app.Categories.WorldEvents,
+			isEventCategory = true,
 		}));
 	end
 
@@ -1368,7 +1394,17 @@ function app:GetDataCache()
 	if app.Categories.InGameShop then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
 	end
-
+	
+	-- Promotions
+	if app.Categories.Promotions then
+		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
+			icon = app.asset("Category_Promo"),
+			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+			isPromotionCategory = true,
+			g = app.Categories.Promotions,
+		}));
+	end
+	
 	-- Trading Post
 	if app.Categories.TradingPost then
 		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
@@ -1464,13 +1500,13 @@ function app:GetDataCache()
 	
 	-- Yourself.
 	tinsert(g, app.CreateUnit("player", {
-		["description"] = L.DEBUG_LOGIN,
-		["races"] = { app.RaceIndex },
-		["c"] = { app.ClassIndex },
-		["r"] = app.FactionID,
-		["collected"] = 1,
-		["nmr"] = false,
-		["OnUpdate"] = function(self)
+		description = L.DEBUG_LOGIN,
+		races = { app.RaceIndex },
+		c = { app.ClassIndex },
+		r = app.FactionID,
+		collected = 1,
+		nmr = false,
+		OnUpdate = function(self)
 			self.lvl = app.Level;
 			if app.MODE_DEBUG then
 				self.collectible = true;
@@ -1499,7 +1535,8 @@ function app:GetDataCache()
 		CacheFields(db, true, "Achievements")
 		tinsert(g, db);
 	end
-
+	
+	if not app.IsClassic then
 	-- Create Dynamic Groups Button
 	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
@@ -1686,6 +1723,7 @@ function app:GetDataCache()
 
 		},
 	}));
+	end
 
 	-- The Main Window's Data
 	-- app.PrintMemoryUsage("Prime.Data Ready")
@@ -1693,7 +1731,8 @@ function app:GetDataCache()
 	primeWindow:SetData(rootData);
 	-- app.PrintMemoryUsage("Prime Window Data Building...")
 	primeWindow:AssignChildren();
-
+	
+	if not app.IsClassic then
 	-- Function to build a hidden window's data
 	local AllHiddenWindows = {}
 	local function BuildHiddenWindowData(name, icon, description, category, flags)
@@ -1754,8 +1793,7 @@ function app:GetDataCache()
 		"Usage : /att all-hidden",
 		"Provides a single command to open all Hidden content in a single window",
 	})
-
-	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
+	end
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
@@ -1801,7 +1839,9 @@ end);
 local ADDON_LOADED_HANDLERS = {
 	[appName] = function()
 		-- Old Saved Variables
-		AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
+		AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
+
+		-- Cache the Localized Category Data
 		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 		app.CategoryNames = nil;
 
@@ -1818,7 +1858,7 @@ local ADDON_LOADED_HANDLERS = {
 		AllTheThingsHarvestItems = {};
 		
 		-- Character Data Storage
-		local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
+		local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
 		local currentCharacter = characterData[app.GUID];
 		if not currentCharacter then
 			currentCharacter = {};
@@ -1837,9 +1877,11 @@ local ADDON_LOADED_HANDLERS = {
 		if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 		if app.Class then currentCharacter.class = app.Class; end
 		if app.Race then currentCharacter.race = app.Race; end
+		if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 		if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+		if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 		if not currentCharacter.Professions then currentCharacter.Professions = {}; end
 		app.CurrentCharacter = currentCharacter;
 		app.AddEventHandler("OnPlayerLevelUp", function()
@@ -1853,8 +1895,19 @@ local ADDON_LOADED_HANDLERS = {
 		end
 
 		-- Account Wide Data Storage
-		local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+		local accountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+		if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+		if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
+		if not accountWideData.Exploration then accountWideData.Exploration = {}; end
+		if not accountWideData.Factions then accountWideData.Factions = {}; end
+		if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
+		if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 		if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+		if not accountWideData.Quests then accountWideData.Quests = {}; end
+		if not accountWideData.Spells then accountWideData.Spells = {}; end
+		if not accountWideData.Titles then accountWideData.Titles = {}; end
+		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
+		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 		
 		-- Clean up unused saved variables if they become deprecated after being pushed to Git
 		accountWideData.Campsite = nil

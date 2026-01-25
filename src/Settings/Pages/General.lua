@@ -461,7 +461,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- General Things
 			settings:Set("Thing:Achievements", true)
-			settings:Set("Thing:CharacterUnlocks", app.IsRetail)
+			settings:Set("Thing:CharacterUnlocks", true)
 			settings:Set("Thing:Exploration", app.IsClassic)
 			settings:Set("Thing:FlightPaths", true)
 			settings:Set("Thing:Quests", true)
@@ -915,19 +915,15 @@ child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements", app.GameBuildVersio
 	:AlignAfter(accwideCheckboxAchievements)
 accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
 
-local accwideCheckboxCharacterUnlocks;
-if app.IsRetail then
--- Crieve doesn't like this class and thinks the functionality should remain on the Quest, Item, or Spell classes.
-accwideCheckboxCharacterUnlocks =
+local accwideCheckboxCharacterUnlocks =
 child:CreateAccountWideCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
 	:AlignBelow(accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks", true)
 	:AlignAfter(accwideCheckboxCharacterUnlocks)
-end
 
 local accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
-	:AlignBelow(accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+	:AlignBelow(accwideCheckboxCharacterUnlocks)
 local explorationCheckbox = child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
 	:AlignAfter(accwideCheckboxExploration)
 if app.IsRetail then
@@ -949,10 +945,8 @@ child:CreateTrackingCheckbox("QUESTS", "Quests", true)
 local checkboxQuestsLocked =
 child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked", true)
 	:AlignAfter(checkboxQuests)
-if app.IsRetail then
 	child:CreateTrackingCheckbox("QUESTS_HIDDEN_TRACKER", "QuestsHidden", true)
 		:AlignAfter(checkboxQuestsLocked)
-end
 
 local accwideCheckboxRecipes =
 child:CreateAccountWideCheckbox("RECIPES", "Recipes")

@@ -10,6 +10,8 @@ local wipe, setmetatable, rawget, select,pairs
 -- Module
 
 -- App
+-- Battle Pets are handled in Mounts & Battle Pets for Classic pre-MOP
+if app.GameBuildVersion < 50000 then return; end
 
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"
@@ -143,7 +145,7 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 },
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = app.IsRetail and { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "tsm" },
+	ImportFields = { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" }
 },
 function(t) return t.itemID end);
 

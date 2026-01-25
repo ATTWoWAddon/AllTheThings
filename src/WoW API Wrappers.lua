@@ -1,6 +1,6 @@
 local app = select(2, ...);
 app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsRetail = app.GameBuildVersion >= 100000;
+app.IsRetail = app.GameBuildVersion >= 110000;
 app.AfterCata = app.GameBuildVersion >= 40000;
 app.IsClassic = not app.IsRetail;
 

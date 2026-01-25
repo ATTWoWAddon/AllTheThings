@@ -11,6 +11,9 @@ app.Categories = {};
 if not app.ReagentsDB then
 	app.ReagentsDB = {};
 end
+if not app.ForceFillDB then
+	app.ForceFillDB = {};
+end
 
 -- Hey Blizzard, stop that. Thanks.
 SetCVar("taintLog","0");

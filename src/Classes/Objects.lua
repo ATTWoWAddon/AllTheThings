@@ -161,14 +161,8 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 function(t) return t.type == "AsGenericObjectContainer" end,
 "AsSubGenericObjectWithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = function(t)
 		-- raw repeatable quests can't really be tracked since they immediately unflag
@@ -188,14 +182,8 @@ function(t) return t.questID and t.type == "AsSubGenericObject" end,
 },
 function(t) return t.type == "AsSubGenericObject" end,
 "WithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = function(t)
 		-- raw repeatable quests can't really be tracked since they immediately unflag

@@ -29,7 +29,7 @@
 ## X-Interface: 120000, 120001
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
 ## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
@@ -107,7 +107,6 @@ src\Classes\Factions.lua
 src\Classes\Guild Achievements.lua
 src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
-# src\Classes\Item.Classic.lua
 src\Classes\BattlePet.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua

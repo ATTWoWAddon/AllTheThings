@@ -214,7 +214,7 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 -- Known By / Completed By
 -- Types which have an ID which can be 'known' or 'completed' but is typically spammy to show when account-wide
 local KnownByIgnoredTypes = {
-	Achievement = app.IsRetail,
+	Achievement = true,
 	BattlePet = true,
 	BattlePetWithItem = true,
 	Illusion = true,

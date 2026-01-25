@@ -814,16 +814,11 @@ do
 		npcID = NPCSearchOptions,
 		objectID = NPCSearchOptions,
 	}, { __index = function() return DefaultSearchOptions end})
-
-	AttachTypicalSearchResults = app.IsRetail and
+	
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
-	function(self, field, id)
+	AttachTypicalSearchResults = function(self, field, id)
 		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
-	end
-or
-	function(self, field, id)
-		AttachTooltipSearchResults(self, SearchForField, field, tonumber(id))
 	end
 end
 

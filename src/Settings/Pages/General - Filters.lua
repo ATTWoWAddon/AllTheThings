@@ -204,16 +204,14 @@ buttonNone.OnRefresh = function(self)
 	end
 end
 
-if app.IsRetail then
-	local checkboxStoreInProfile = child:CreateCheckBox(L.STORE_IN_PROFILE_BUTTON,
-	function(self)
-		self:SetChecked(settings:Get("Profile:StoreFilters"))
-	end,
-	function(self)
-		settings:Set("Profile:StoreFilters", self:GetChecked())
-		app.HandleEvent("OnSettingChanged", "Profile:StoreFilters");
-		settings:UpdateMode(1)
-	end)
-	checkboxStoreInProfile:SetATTTooltip(L.STORE_IN_PROFILE_BUTTON_TOOLTIP)
-	checkboxStoreInProfile:AlignAfter(buttonNone, 8)
-end
+local checkboxStoreInProfile = child:CreateCheckBox(L.STORE_IN_PROFILE_BUTTON,
+function(self)
+	self:SetChecked(settings:Get("Profile:StoreFilters"))
+end,
+function(self)
+	settings:Set("Profile:StoreFilters", self:GetChecked())
+	app.HandleEvent("OnSettingChanged", "Profile:StoreFilters");
+	settings:UpdateMode(1)
+end)
+checkboxStoreInProfile:SetATTTooltip(L.STORE_IN_PROFILE_BUTTON_TOOLTIP)
+checkboxStoreInProfile:AlignAfter(buttonNone, 8)

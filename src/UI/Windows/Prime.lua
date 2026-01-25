@@ -164,7 +164,7 @@ app:CreateWindow("Prime", {
 	end,
 	OnRebuild = function(self)
 		-- Prime's data is built elsewhere.
-		self.data = app:GetDataCache();
+		self:SetData(app:GetDataCache());
 		return false;
 	end,
 	OnUpdate = function(self, ...)

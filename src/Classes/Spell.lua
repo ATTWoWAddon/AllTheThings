@@ -72,6 +72,7 @@ else
 	end
 end
 app.IsSpellKnownHelper = IsSpellKnownHelper;
+app.IsSpellKnown = IsSpellKnownHelper;
 
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;

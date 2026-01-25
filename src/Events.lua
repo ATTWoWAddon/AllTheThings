@@ -203,19 +203,11 @@ app.LinkEventSequence = function(event, followupEvent)
 
 	triggerEventSequence[#triggerEventSequence + 1] = followupEvent
 end
--- Classic has some convoluted refresh sequence handling with coroutines and manual calls to events and data refreshes, so
--- I don't wanna mess with all that. We just won't link the OnRecalculate to the OnRefreshCollections for Classic --Runaway
-if app.IsRetail then
-	EventSequence.OnRefreshCollections = {
-		"OnBeforeRecalculate",
-		"OnRecalculate",
-		"OnRefreshCollectionsDone",
-	}
-else
-	EventSequence.OnRefreshCollections = {
-		"OnRefreshCollectionsDone",
-	}
-end
+EventSequence.OnRefreshCollections = {
+	"OnBeforeRecalculate",
+	"OnRecalculate",
+	"OnRefreshCollectionsDone",
+}
 
 local Runner = app.CreateRunner("events")
 local Run = Runner.Run

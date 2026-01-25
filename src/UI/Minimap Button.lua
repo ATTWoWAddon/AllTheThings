@@ -40,7 +40,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 
 		local prime = app:GetWindow("Prime");
-		if prime and (prime.HasPendingUpdate or (app.IsRetail and (not prime.data or not prime.data.TLUG))) then	-- NOTE: Retail uses TLUG.
+		if prime and (prime.HasPendingUpdate or (not prime.data or not prime.data.TLUG)) then
 			GameTooltip:AddDoubleLine(L["UPDATES_PAUSED"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
 		else
 			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
