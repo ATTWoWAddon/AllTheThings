@@ -1264,8 +1264,7 @@ function app:GetDataCache()
 	-- Crafted Items
 	local craftables = app.Categories.Craftables;
 	if craftables then
-		tinsert(g, app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
-			icon = app.asset("Category_Crafting"),
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.CRAFTED_ITEMS, {
 			DontEnforceSkillRequirements = true,
 			isCraftedCategory = true,
 			g = craftables,

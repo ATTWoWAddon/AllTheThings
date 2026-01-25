@@ -3146,7 +3146,7 @@ local CategoryByRelativeFields = {
 	
 	-- Root Categories
 	{ "isWorldDropCategory", function(o) return "drop"; end },
-	{ "isCraftedCategory", function(o) return "crafted"; end },
+	{ "isCraftedCategory", function(o) return app.HeaderConstants.CRAFTED_ITEMS; end },
 	{ "isHolidayCategory", function(o) return "holiday"; end },
 	{ "isPromotionCategory", function(o) return "promo"; end },
 	{ "isPVPCategory", function(o) return "pvp"; end },
