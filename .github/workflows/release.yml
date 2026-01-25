@@ -53,8 +53,17 @@ jobs:
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Selected mode: $MODE"
 
+      - name: Default proceed for non-beta modes
+        id: proceed_default
+        if: steps.mode.outputs.mode != 'beta'
+        shell: bash
+        run: |
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+          echo "beta_local_tag=" >> "$GITHUB_OUTPUT"
+
       - name: Check for changes since last tag
         id: check_changes
+        if: steps.mode.outputs.mode == 'beta'
         shell: bash
         run: |
           MODE="${{ steps.mode.outputs.mode }}"
@@ -103,7 +112,7 @@ jobs:
   build-windows:
     runs-on: windows-latest
     needs: check-context
-    if: needs.check-context.outputs.proceed == 'true'
+    if: needs.check-context.outputs.mode != 'beta' || needs.check-context.outputs.proceed == 'true'
     steps:
       - uses: actions/checkout@v6
 
