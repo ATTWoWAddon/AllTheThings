@@ -194,8 +194,7 @@ jobs:
       - name: Fetch tags with deeper history
         shell: bash
         run: |
-          git config remote.origin.tagOpt --tags
-          git fetch --deepen=300
+          git fetch --shallow-since="1 weeks ago"
 
       - name: Debug git state 2
         shell: bash
