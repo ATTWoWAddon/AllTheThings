@@ -1322,7 +1322,8 @@ function app:GetDataCache()
 	end
 
 	-- Pet Battles
-	if app.Categories.PetBattles then
+	-- In Classic, this is a dynamic category
+	if not app.IsClassic and app.Categories.PetBattles then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, app.Categories.PetBattles));
 	end
 

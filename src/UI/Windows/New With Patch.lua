@@ -20,7 +20,7 @@ app:CreateWindow("New With Patch", {
 				local g = t.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponse(app:GetDataCache().g, "awp", app.GameBuildVersion);
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
@@ -52,7 +52,7 @@ app:CreateWindow("New With Patch", {
 						-- Fallback to the default behaviour
 						results = app:BuildSearchResponse(app:GetDataCache().g, "awp", currentPatch);
 					end
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end

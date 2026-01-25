@@ -4,6 +4,7 @@ local _, app = ...;
 -- Global locals
 local tinsert = tinsert;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
+local GetItemCount = app.WOWAPI.GetItemCount;
 
 -- Module locals
 local function GetAttunementRequirement(t)
@@ -32,9 +33,9 @@ local function GetAttunementRequirement(t)
 					for i=1,#searchResults,1 do
 						local item = searchResults[i];
 						if item.key == "itemID" and item.itemID == itemID then
+							item = app.CloneClassInstance(searchResults[i]);
 							if item.OnUpdate then item:OnUpdate(); end
-							if item.GetItemCount and item:GetItemCount() > 0 then
-								item = app.CloneClassInstance(item);
+							if GetItemCount(itemID, true) > 0 then
 								item.saved = true;
 								return item;
 							else
@@ -49,7 +50,7 @@ local function GetAttunementRequirement(t)
 				end
 			end
 			if not bestMatch then bestMatch = anyMatch; end
-			return bestMatch and app.CloneClassInstance(bestMatch) or app.CreateItem(itemID);
+			return bestMatch and bestMatch or app.CreateItem(itemID);
 		end
 	end
 

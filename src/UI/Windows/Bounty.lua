@@ -20,7 +20,7 @@ app:CreateWindow("Bounty", {
 				local g = t.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBounty");
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
