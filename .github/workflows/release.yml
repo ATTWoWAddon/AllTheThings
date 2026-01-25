@@ -173,7 +173,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: ${{ github.sha }}
+          fetch-depth: 300
+          fetch-tags: true
+          ref: ${{ github.ref }}
 
       - name: Debug git state
         shell: bash
