@@ -10,7 +10,12 @@ ENDEAVORS = createHeader({
 	},
 });
 
-i_DecorCoupons = function(itemID, couponCost)
+local EndeavorVendorCoords = {
+	{ 53.1, 38.3, FOUNDERS_POINT },
+	{ 54.3, 56.1, RAZORWIND_SHORES },
+}
+
+local i_DecorCoupons = function(itemID, couponCost)
 	return
 	i(itemID, {
 		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
@@ -67,10 +72,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		}),
 		n(VENDORS, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>
-				["coords"] = {
-					{ 53.0, 38.2, FOUNDERS_POINT },
-					{ 54.4, 56.1, RAZORWIND_SHORES },
-				},
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(262664, 5),	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
 					i_DecorCoupons(263048, 15),	-- Consortium Energy Banner (DECOR!)
@@ -87,10 +89,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(249684, {	-- Brother Dovetail <Endeavor Trader>
-				["coords"] = {
-					-- Razorwind Shores
-					{ 53.0, 38.1, FOUNDERS_POINT },
-				},
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(251474, 5),	-- Ceramic Kafa Mug (DECOR!)
 					i_DecorCoupons(251473, 5),	-- Commander's Kafa Mug (DECOR!)
@@ -110,19 +109,25 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(257897, {	-- Harlowe Marl <Endeavor Trader>
-				["coords"] = {
-					-- Founder's Point
-					{ 54.4, 56.1, RAZORWIND_SHORES },
-				},
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
-					-- TODO:
+					i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
+					i_DecorCoupons(265032, 5),	-- Hearty Niffen Grub
+					i_DecorCoupons(264917, 5),	-- Ceramic Loamm Bowl
+					i_DecorCoupons(264925, 5),	-- Kilnmaster's Bucket
+					i_DecorCoupons(264918, 2),	-- Zaralek Candles
+					i_DecorCoupons(264922, 2),	-- Strong Sniffin' Incense
+					i_DecorCoupons(264924, 10),	-- Loamm Wheelpot
+					i_DecorCoupons(265541, 1),	-- Loammy Soil
+					i_DecorCoupons(264923, 15),	-- Underdecorated Underground Table
+					i_DecorCoupons(264919, 20),	-- Loamm Archway
+					i_DecorCoupons(264915, 15),	-- Decorated Underground Table
+					i_DecorCoupons(264921, 20),	-- Zaralek Snail Cart
+					i_DecorCoupons(264916, 20),	-- Loamm Bartering Stall
 				},
 			}),
 			n(252917, {	-- Hesta Forlath <Endeavor Trader>
-				["coords"] = {
-					{ 53.1, 38.3, FOUNDERS_POINT },
-					{ 54.4, 56.0, RAZORWIND_SHORES },
-				},
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
 					i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
@@ -143,10 +148,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(250820, {	-- Hordranin <Endeavor Trader>
-				["coords"] = {
-					{ 54.2, 56.0, RAZORWIND_SHORES },
-					-- Founder's Point
-				},
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(250704, 15),	-- Ancient Weyrn Device
 					i_DecorCoupons(250702, 5),	-- Artisan's Measuring Scales
