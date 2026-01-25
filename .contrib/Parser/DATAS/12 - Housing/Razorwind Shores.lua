@@ -266,7 +266,6 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(241621) },	-- Small Elegant End Table (DECOR!)
 			}),
 		}));
-		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based
 		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
 			n(255325, {	-- "High Tides" Ren <Decor Vendor>
