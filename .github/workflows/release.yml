@@ -193,10 +193,10 @@ jobs:
             echo "full clone"
           fi
 
-      - name: Fetch tags with deeper history
+      - name: reset to exact commit
         shell: bash
         run: |
-          git fetch --shallow-since="1 weeks ago"
+          git reset --hard ${GITHUB_SHA}
 
       - name: Debug git state 2
         shell: bash
