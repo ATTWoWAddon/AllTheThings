@@ -717,6 +717,40 @@ settings.ApplyProfile = function(self)
 	app.HandleEvent("Settings.OnApplyProfile", key)
 	return RawSettings and true or nil
 end
+local OldSuffixConversion = {
+	MiniList = "CurrentInstance"
+}
+settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
+	local profileWindows = RawSettings and RawSettings.Windows
+	if not profileWindows then return end
+
+	-- need to allow some suffixes from old Retail to new common ones
+	local points = profileWindows[suffix] or profileWindows[OldSuffixConversion[suffix]]
+	local window = app.Windows[suffix]
+	-- app.PrintDebug("GetWindowSettingsFromProfile",suffix,OldSuffixConversion[suffix],points,window)
+	if window then
+		if RawSettings then
+			windowSettings.scale = settings:GetTooltipSetting(suffix == "Prime" and "MainListScale" or "MiniListScale") or 1
+		end
+		if points then
+			-- TODO: this is only 1 point
+			for _,point in ipairs(points) do
+				windowSettings.point = point.Point
+				windowSettings.relativeTo = nil
+				windowSettings.relativePoint = point.PointRef
+				windowSettings.x = point.X
+				windowSettings.y = point.Y
+				windowSettings.width = points.Width
+				windowSettings.height = points.Height
+			end
+			windowSettings.isLocked = points.Locked
+			-- app.PrintTable(windowSettings)
+		end
+		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
+		windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
+		windowSettings.borderColor = { rBd, gBd, bBd, aBd }
+	end
+end
 settings.Get = function(self, setting)
 	return RawSettings.General[setting];
 end
@@ -1668,7 +1702,7 @@ settings.UpdateMode = function(self, doRefresh)
 		self.OnlyNotTrash = self:Get("Only:NotTrash");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
-	
+
 	if self:Get("Show:CompletedGroups") then
 		filterSet.CompletedGroups()
 	else

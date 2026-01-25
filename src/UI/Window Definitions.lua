@@ -1747,6 +1747,8 @@ local function BuildDefaultsForWindow(self, fromSettings)
 		defaults.backdropColor = { rBg, gBg, bBg, aBg };
 		defaults.borderColor = { rBd, gBd, bBd, aBd };
 	else
+		-- TODO: this shouldn't be possible or allowed!
+		app.PrintDebug(self.Suffix, "window is being created before Settings are initialized!! Using hardcoded defaults.");
 		defaults.scale = 1;
 		defaults.backdropColor = { 0, 0, 0, 1 };
 		defaults.borderColor = { 1, 1, 1, 1 };
@@ -1810,6 +1812,8 @@ local function LoadSettingsForWindow(self)
 		settings = {};
 		AllWindowSettings[name] = settings;
 	end
+	-- try to load settings from the Profile since Retail allows per-Profile window management
+	app.Settings.GetWindowSettingsFromProfile(name, settings)
 	self.Settings = settings;
 	self:Load(settings);
 end
