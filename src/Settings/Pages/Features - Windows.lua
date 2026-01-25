@@ -21,14 +21,6 @@ local function UpdateButtonText(self, window)
 end
 local function OnTooltipForWindowButton(self, tooltipInfo)
 	local window = self.Window;
-	if window.HasPendingUpdate and not window.CachedTotalsForSettings then
-		window.CachedTotalsForSettings = true;
-		if IsShiftKeyDown() then
-			window:ForceRebuild();
-		else
-			window:ForceUpdate();
-		end
-	end
 	UpdateButtonText(self, window);
 	tinsert(tooltipInfo, { left = self:GetText() });
 	tinsert(tooltipInfo, { left = " " });
@@ -104,13 +96,6 @@ local function RefreshWindowManager()
 				-- TODO: Preferred new style, once we get the window template designed
 				--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
 			end
-		--[[
-		else
-			local definition = app.WindowDefinitions[suffix];
-			if definition then
-				
-			end
-		]]--
 		end
 	end
 	local parent = child.separator or child;
