@@ -83,7 +83,7 @@ app:CreateWindow("Local List", {
 		"attlocal",
 	},
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText("Local List", {
+		self:SetData(app.CreateRawText("Local List", {
 			icon = app.asset("Category_Zones"),
 			description = "This window shows you all of the content for the local map.\n\nThis is more a debugging tool than anything else.",
 			visible = true,
@@ -99,7 +99,7 @@ app:CreateWindow("Local List", {
 					t.g = data;
 				end
 			end,
-		});
+		}));
 		self.SetMapID = function(self, mapID, show)
 			if mapID and mapID ~= self.mapID then
 				self.mapID = mapID;

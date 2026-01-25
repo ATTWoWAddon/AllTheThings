@@ -242,9 +242,9 @@ app:CreateWindow("Attunements", {
 				data.visible = true;
 			end
 		});
-		self.data = attunementsHeader;
+		self:SetData(attunementsHeader);
 		self.Reset = function()
-			self.data = attunementsHeader;
+			self:SetData(attunementsHeader);
 			self:Update(true);
 		end
 	end,

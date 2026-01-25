@@ -112,7 +112,7 @@ end
 local function Reroll(self)
 	-- Rebuild all the datas
 	local data = self.defaultHeader;
-	self.data = data;
+	self:SetData(data);
 	wipe(data.g);
 	for i,o in ipairs(data.options) do
 		o.parent = data;
@@ -285,6 +285,6 @@ app:CreateWindow("Random", {
 				},
 			},
 		};
-		self.data = self.defaultHeader;
+		self:SetData(self.defaultHeader);
 	end,
 });

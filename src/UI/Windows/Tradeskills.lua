@@ -92,7 +92,7 @@ app:CreateWindow("Tradeskills", {
 			['back'] = 1,
 			['g'] = { },
 		});
-		self.data = self.header;
+		self:SetData(self.header);
 		self.previousCraftSkillID = 0;
 		self.previousTradeSkillID = 0;
 		self.CacheRecipes = function(self)
@@ -320,9 +320,9 @@ app:CreateWindow("Tradeskills", {
 					end
 					if #g > 0 then
 						if #g == 1 then
-							self.data = g[1];
+							self:SetData(g[1]);
 						else
-							self.data = self.header;
+							self:SetData(self.header);
 							self.data.g = g;
 							for i,entry in ipairs(g) do
 								entry.indent = nil;

@@ -1041,7 +1041,7 @@ app:CreateWindow("SoftReserves", {
 				end,
 			});
 		end
-		self.data = app.CreateRawText(L.SOFT_RESERVES, {
+		self:SetData(app.CreateRawText(L.SOFT_RESERVES, {
 			icon = app.asset("WindowIcon_SoftReserves"),
 			description = L.SOFT_RESERVES_DESCRIPTION,
 			visible = true,
@@ -1091,7 +1091,7 @@ app:CreateWindow("SoftReserves", {
 				end
 				app.Sort(g, SortByTextAndPriority);
 			end,
-		});
+		}));
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

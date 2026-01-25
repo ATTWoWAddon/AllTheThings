@@ -23,7 +23,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 					return true;
 				end
 			end
-			self.data = app.CreateProfession(professionID, {
+			self:SetData(app.CreateProfession(professionID, {
 				description = "This list shows you all of the recipes you can collect for your profession.",
 				requireSkill = professionID,
 				visible = true,
@@ -160,7 +160,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 						end
 					end
 				end
-			});
+			}));
 		end,
 	});
 end

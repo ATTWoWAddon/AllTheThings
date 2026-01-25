@@ -10,7 +10,7 @@ app:CreateWindow("Bounty", {
 	AllowCompleteSound = true,
 	Commands = { "attbounty" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -30,7 +30,7 @@ app:CreateWindow("Bounty", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 	OnUpdate = function(self, ...)
 		-- Force Debug Mode

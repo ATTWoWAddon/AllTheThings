@@ -73,7 +73,7 @@ app:CreateWindow("Item Filter", {
 				end,
 			},
 		};
-		self.data = app.CreateRawText(L.ITEM_FILTER_TEXT, {
+		self:SetData(app.CreateRawText(L.ITEM_FILTER_TEXT, {
 			icon = app.asset("Category_ItemSets"),
 			description = L.ITEM_FILTER_DESCRIPTION,
 			visible = true,
@@ -101,6 +101,6 @@ app:CreateWindow("Item Filter", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 });

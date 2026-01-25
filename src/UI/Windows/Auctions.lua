@@ -217,7 +217,7 @@ app:CreateWindow("Auctions", {
 			end
 		end
 		self:SetMovable(false);
-		self.data = app.CreateRawText("Auction Module", {
+		self:SetData(app.CreateRawText("Auction Module", {
 			icon = 133784,
 			description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 			SortType = "name",
@@ -592,7 +592,7 @@ app:CreateWindow("Auctions", {
 					end
 				end
 			end,
-		});
+		}));
 		if rawget(app.HeaderConstants, "MOUNT_MODS") then
 			tinsert(self.data.options, app.CreateCustomHeader(app.HeaderConstants.MOUNT_MODS, {	-- Mount Mods
 				Metas = { "MountMod" },

@@ -188,7 +188,7 @@ app:CreateWindow("Added With Patch", {
 				end,
 			}),
 		};
-		self.data = app.CreateRawText(L.ADDED_WITH_PATCH, {
+		self:SetData(app.CreateRawText(L.ADDED_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -231,6 +231,6 @@ app:CreateWindow("Added With Patch", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 });

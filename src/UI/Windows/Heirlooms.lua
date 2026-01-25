@@ -14,7 +14,7 @@ app:CreateWindow("Heirlooms", {
 	Commands = { "attheirlooms" },
 	OnInit = function(self, handlers)
 		local function SearchForHeirlooms(t) return t.heirloomID; end
-		self.data = app.CreateRawText(HEIRLOOMS, {
+		self:SetData(app.CreateRawText(HEIRLOOMS, {
 			icon = app.asset("Weapon_Type_Heirloom"),
 			description = "This list shows you all of the heirlooms that you can collect.",
 			visible = true,
@@ -49,6 +49,6 @@ app:CreateWindow("Heirlooms", {
 					end
 				end
 			end
-		});
+		}));
 	end,
 });

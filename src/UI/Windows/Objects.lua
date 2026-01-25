@@ -158,7 +158,7 @@ app:CreateWindow("Objects", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnLoad = function(self, settings)
-		self.data = app.CreateRawText("Object Debugger", {
+		self:SetData(app.CreateRawText("Object Debugger", {
 			icon = app.asset("WindowIcon_RaidAssistant"),
 			description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
 			back = 1,
@@ -223,6 +223,6 @@ app:CreateWindow("Objects", {
 					end
 				end
 			end
-		});
+		}));
 	end,
 });

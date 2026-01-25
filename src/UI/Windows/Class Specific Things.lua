@@ -7,7 +7,7 @@ local tinsert = tinsert;
 app:CreateWindow("Class Specific Things", {
 	Commands = { "attclasses" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText("Class Specific Things", {
+		self:SetData(app.CreateRawText("Class Specific Things", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the class specific things for all classes.",
 			visible = true,
@@ -39,6 +39,6 @@ app:CreateWindow("Class Specific Things", {
 					self:ExpandData(true);
 				end
 			end,
-		});
+		}));
 	end,
 });

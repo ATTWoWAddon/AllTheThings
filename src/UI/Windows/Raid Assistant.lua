@@ -358,7 +358,7 @@ app:CreateWindow("RaidAssistant", {
 					priority = 10,
 					OnClick = function(row, button)
 						if IsInInstance() then return true; end
-						self.data = dungeondifficulty;
+						self:SetData(dungeondifficulty);
 						self:Update(true);
 						return true;
 					end,
@@ -454,7 +454,7 @@ app:CreateWindow("RaidAssistant", {
 							OnClick = function(row, button)
 								-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 								if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
-								self.data = legacyraiddifficulty;
+								self:SetData(legacyraiddifficulty);
 								self:Update(true);
 								return true;
 							end,
@@ -545,7 +545,7 @@ app:CreateWindow("RaidAssistant", {
 					OnClick = function(row, button)
 						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 						if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
-						self.data = raiddifficulty;
+						self:SetData(raiddifficulty);
 						self:Update(true);
 						return true;
 					end,
@@ -598,7 +598,7 @@ app:CreateWindow("RaidAssistant", {
 				priority = 1,
 				OnClick = function(row, button)
 					if IsRaidLeader() then
-						self.data = lootmethod;
+						self:SetData(lootmethod);
 						self:Update(true);
 					end
 					return true;
@@ -666,7 +666,7 @@ app:CreateWindow("RaidAssistant", {
 				description = "This player is currently the Master Looter.",
 				OnClick = function(row, button)
 					if IsRaidLeader() then
-						self.data = lootmasters;
+						self:SetData(lootmasters);
 						self:Update(true);
 					end
 					return true;
@@ -739,7 +739,7 @@ app:CreateWindow("RaidAssistant", {
 				visible = true,
 				OnClick = function(row, button)
 					if IsRaidLeader() then
-						self.data = lootthreshold;
+						self:SetData(lootthreshold);
 						self:Update(true);
 					end
 					return true;
@@ -862,7 +862,7 @@ app:CreateWindow("RaidAssistant", {
 					description = "In dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
 					priority = 4,
 					OnClick = function(row, button)
-						self.data = lootspecialization;
+						self:SetData(lootspecialization);
 						self:Update(true);
 						return true;
 					end,
@@ -973,9 +973,9 @@ app:CreateWindow("RaidAssistant", {
 				data.visible = true;
 			end
 		};
-		self.data = raidassistant;
+		self:SetData(raidassistant);
 		self.Reset = function()
-			self.data = raidassistant;
+			self:SetData(raidassistant);
 			self:Update(true);
 		end
 	end,

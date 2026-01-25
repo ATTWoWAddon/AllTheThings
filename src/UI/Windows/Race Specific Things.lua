@@ -8,7 +8,7 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 app:CreateWindow("Race Specific Things", {
 	Commands = { "attraces" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText("Race Specific Things", {
+		self:SetData(app.CreateRawText("Race Specific Things", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the race specific things for all races.",
 			visible = true,
@@ -40,6 +40,6 @@ app:CreateWindow("Race Specific Things", {
 					self:ExpandData(true);
 				end
 			end,
-		});
+		}));
 	end,
 });

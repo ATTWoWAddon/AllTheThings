@@ -11,7 +11,7 @@ app:CreateWindow("Toys", {
 	IsDynamicCategory = true,
 	Commands = { "atttoys" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText(TOY_BOX, {
+		self:SetData(app.CreateRawText(TOY_BOX, {
 			icon = app.asset("Category_ToyBox"),
 			description = "This list shows you all of the toys that you can collect.",
 			visible = true,
@@ -37,6 +37,6 @@ app:CreateWindow("Toys", {
 					data.SortType = "text";
 				end
 			end
-		});
+		}));
 	end,
 });

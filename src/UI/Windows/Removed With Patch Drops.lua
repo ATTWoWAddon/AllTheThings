@@ -165,7 +165,7 @@ app:CreateWindow("Removed With Patch Drops", {
 			end
 		end);
 
-		self.data = app.CreateRawText("Removed With Patch Drops", {
+		self:SetData(app.CreateRawText("Removed With Patch Drops", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things excluding recipes that get removed in a future patch from zone drop, rare, and world drop sources.",
 			visible = true,
@@ -221,7 +221,7 @@ app:CreateWindow("Removed With Patch Drops", {
 					self.oldG = results;
 				end
 			end,
-		});
+		}));
 		return true;
 	end,
 });

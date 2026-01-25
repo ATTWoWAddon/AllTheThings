@@ -1388,6 +1388,193 @@ app:CreateWindow("Account Management", {
 			if prefix ~= AddonMessagePrefix or not datastring or channel ~= "WHISPER" then return; end
 			ProcessAddonMessageMethod(self, SendAddonMessage, sender, datastring);
 		end
+		
+		local options = {
+			app.CreateRawText("Add Linked Character", {
+				icon = app.asset("Button_Add"),
+				description = "Click here to link a character to your account.\n\nOnce Linked, click on the Linked Character in the list below to initiate a sync with that character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = function(row, button)
+					app:ShowPopupDialogWithEditBox("Please type the name of the character to link to.", "", function(cmd)
+						if cmd and cmd ~= "" then
+							-- Prevent server names.
+							cmd = ("-"):split(cmd);
+							LinkedCharacters[cmd] = true;
+							SendAddonMessage(cmd, "Link " .. cmd, "link," .. CurrentCharacter.battleTag);
+							self:Rebuild();
+						end
+					end);
+					return true;
+				end,
+			}),
+			app.CreateRawText("Merge Transferred Character Data", {
+				icon = 132996,
+				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = function(row, button)
+					MergeTransferredCharacterData(row);
+					return true;
+				end,
+			}),
+			app.CreateRawText("Recalculate Account Wide Data", {
+				icon = 132996,
+				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = function(row, button)
+					RecalculateAccountWideData();
+					return true;
+				end,
+			}),
+			app.CreateRawText("Sync All Characters", {
+				icon = app.asset("Button_Sync"),
+				description = "Click here to sync all of your characters.\n\nAlt+Click to toggle automatically syncing characters with your other accounts.\n\nYou must initially have the character stored on this account by Linking a Character and manually initiating a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
+				OnUpdate = function(t)
+					t.saved = self.Settings.AutoSync;
+					return app.AlwaysShowUpdate(t);
+				end,
+				OnClick = function(row, button)
+					if IsAltKeyDown() then
+						self.Settings.AutoSync = not self.Settings.AutoSync;
+						self:Redraw();
+					else
+						BroadcastMessage(row.ref.text, "check," .. CurrentCharacter.battleTag);
+					end
+					return true;
+				end,
+			}),
+			app.CreateRawText("Enable Battle.net", {
+				icon = 526421,
+				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
+				OnUpdate = function(t)
+					t.saved = EnableBattleNet;
+					return app.AlwaysShowUpdate(t);
+				end,
+				OnClick = function(row, button)
+					EnableBattleNet = not EnableBattleNet;
+					self.Settings.EnableBattleNet = EnableBattleNet;
+					self:Redraw();
+					return true;
+				end,
+				OnUpdate = BNGetInfo and app.AlwaysShowUpdate or nil,
+			}),
+			app.CreateRawText("Characters", {
+				icon = 526421,
+				description = "This shows all of the characters on your account.",
+				expanded = true,
+				characters = {},
+				g = {},
+				OnUpdate = function(data)
+					local g, characters = data.g, data.characters;
+					wipe(g);
+					for guid,characterData in pairs(CharacterData) do
+						if characterData then
+							local character = characters[guid];
+							if not character then
+								character = app.CreateUnit(guid, {
+									OnClick = OnClickForCharacter,
+									OnTooltip = OnTooltipForCharacter,
+									OnUpdate = app.AlwaysShowUpdate,
+									name = characterData.name,
+									lvl = characterData.lvl,
+									trackable = true,
+									visible = true,
+									parent = data,
+								});
+								characters[guid] = character;
+							end
+							character.saved = not characterData.ignored and 1;
+							tinsert(g, character);
+						end
+					end
+
+					if #g < 1 then
+						tinsert(g, app.CreateRawText("No characters found.", {
+							OnUpdate = app.AlwaysShowUpdate,
+							icon = 526421,
+							parent = data,
+						}));
+					else
+						data.SortType = "textAndLvl";
+					end
+					return app.AlwaysShowUpdate(data);
+				end,
+			}),
+			app.CreateRawText("Linked Characters", {	-- Linked Characters
+				icon = 526421,
+				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
+				expanded = true,
+				g = {},
+				OnUpdate = function(data)
+					local g = data.g;
+					wipe(g);
+					for playerName,allowed in pairs(LinkedCharacters) do
+						tinsert(g, app.CreateUnit(playerName, {
+							datalink = playerName,
+							OnClick = OnClickForLinkedAccount,
+							OnTooltip = OnTooltipForLinkedAccount,
+							OnUpdate = app.AlwaysShowUpdate,
+							parent = data,
+						}));
+					end
+
+					if #g < 1 then
+						tinsert(g, app.CreateRawText("No linked accounts found.", {
+							OnUpdate = app.AlwaysShowUpdate,
+							icon = 526421,
+							parent = data,
+						}));
+					end
+					return app.AlwaysShowUpdate(data);
+				end,
+			}),
+			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
+				icon = 236681,
+				description = "This shows the contents of the sync queue.",
+				expanded = true,
+				g = {},
+				OnUpdate = function(data)
+					local g = data.g;
+					wipe(g);
+					local senders = {};
+					for sender,_ in pairs(pendingReceiveChunksForUser) do
+						senders[sender] = 1;
+					end
+					for sender,_ in pairs(pendingSendChunksForUser) do
+						senders[sender] = 1;
+					end
+					for sender,_ in pairs(senders) do
+						tinsert(g, app.CreateRawText(sender, {
+							OnClick = OnClickForSyncQueue,
+							OnTooltip = OnTooltipForSyncQueue,
+							OnUpdate = OnUpdateForSyncQueue,
+							icon = 526421,
+							parent = data,
+						}));
+					end
+
+					data.visible = #g > 1;
+					return false;
+				end,
+			}),
+		};
+		self:SetData(app.CreateRawText("Account Management", {
+			icon = app.asset("WindowIcon_AccountManagement"),
+			description = "This list shows you all of the functionality related to managing your account data.",
+			visible = true,
+			expanded = true,
+			indent = 0,
+			back = 1,
+			g = {},
+			OnUpdate = function(data)
+				local g = data.g;
+				if #g < 1 then
+					for i,option in ipairs(options) do
+						option.parent = data;
+						tinsert(g, option);
+					end
+				end
+			end,
+		}));
 	end,
 	OnLoad = function(self, settings)
 		-- Cache some globals SavedVariables!
@@ -1433,206 +1620,5 @@ app:CreateWindow("Account Management", {
 			UpdateBattleTags();
 			UpdateOnlineAccounts();
 		end
-
-		local options = {
-			{	-- Add Linked Character
-				text = "Add Linked Character",
-				icon = app.asset("Button_Add"),
-				description = "Click here to link a character to your account.\n\nOnce Linked, click on the Linked Character in the list below to initiate a sync with that character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please type the name of the character to link to.", "", function(cmd)
-						if cmd and cmd ~= "" then
-							-- Prevent server names.
-							cmd = ("-"):split(cmd);
-							LinkedCharacters[cmd] = true;
-							SendAddonMessage(cmd, "Link " .. cmd, "link," .. CurrentCharacter.battleTag);
-							self:Rebuild();
-						end
-					end);
-					return true;
-				end,
-			},
-			{	-- Merge Transferred Character Data
-				text = "Merge Transferred Character Data",
-				icon = 132996,
-				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = function(row, button)
-					MergeTransferredCharacterData(row);
-					return true;
-				end,
-			},
-			{	-- Recalculate Account Wide Data
-				text = "Recalculate Account Wide Data",
-				icon = 132996,
-				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = function(row, button)
-					RecalculateAccountWideData();
-					return true;
-				end,
-			},
-			setmetatable({	-- Sync All Characters
-				text = "Sync All Characters",
-				icon = app.asset("Button_Sync"),
-				description = "Click here to sync all of your characters.\n\nAlt+Click to toggle automatically syncing characters with your other accounts.\n\nYou must initially have the character stored on this account by Linking a Character and manually initiating a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = function(row, button)
-					if IsAltKeyDown() then
-						self.Settings.AutoSync = not self.Settings.AutoSync;
-						self:Redraw();
-					else
-						BroadcastMessage(row.ref.text, "check," .. CurrentCharacter.battleTag);
-					end
-					return true;
-				end,
-			}, { __index = function(t, key)
-				if key == "saved" then
-					return self.Settings.AutoSync;
-				end
-				return table[key];
-			end}),
-			setmetatable({	-- Enable Battle.net
-				text = "Enable Battle.net",
-				icon = 526421,
-				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
-				OnClick = function(row, button)
-					EnableBattleNet = not EnableBattleNet;
-					self.Settings.EnableBattleNet = EnableBattleNet;
-					self:Redraw();
-					return true;
-				end,
-				OnUpdate = BNGetInfo and app.AlwaysShowUpdate or nil,
-			}, { __index = function(t, key)
-				if key == "saved" then
-					return EnableBattleNet;
-				end
-				return table[key];
-			end}),
-			app.CreateRawText("Characters", {	-- Characters
-				icon = 526421,
-				description = "This shows all of the characters on your account.",
-				expanded = true,
-				characters = {},
-				g = {},
-				OnUpdate = function(data)
-					local g, characters = data.g, data.characters;
-					wipe(g);
-					for guid,characterData in pairs(CharacterData) do
-						if characterData then
-							local character = characters[guid];
-							if not character then
-								character = app.CreateUnit(guid, {
-									OnClick = OnClickForCharacter,
-									OnTooltip = OnTooltipForCharacter,
-									OnUpdate = app.AlwaysShowUpdate,
-									name = characterData.name,
-									lvl = characterData.lvl,
-									trackable = true,
-									visible = true,
-									parent = data,
-								});
-								characters[guid] = character;
-							end
-							character.saved = not characterData.ignored and 1;
-							tinsert(g, character);
-						end
-					end
-
-					if #g < 1 then
-						tinsert(g, {
-							text = "No characters found.",
-							icon = 526421,
-							visible = true,
-							parent = data,
-						});
-					else
-						data.SortType = "textAndLvl";
-					end
-					return app.AlwaysShowUpdate(data);
-				end,
-			}),
-			app.CreateRawText("Linked Characters", {	-- Linked Characters
-				icon = 526421,
-				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
-				expanded = true,
-				g = {},
-				OnUpdate = function(data)
-					local g = data.g;
-					wipe(g);
-					for playerName,allowed in pairs(LinkedCharacters) do
-						tinsert(g, app.CreateUnit(playerName, {
-							datalink = playerName,
-							OnClick = OnClickForLinkedAccount,
-							OnTooltip = OnTooltipForLinkedAccount,
-							OnUpdate = app.AlwaysShowUpdate,
-							visible = true,
-							parent = data,
-						}));
-					end
-
-					if #g < 1 then
-						tinsert(g, {
-							text = "No linked accounts found.",
-							icon = 526421,
-							visible = true,
-							parent = data,
-						});
-					end
-					return app.AlwaysShowUpdate(data);
-				end,
-			}),
-			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
-				icon = 236681,
-				description = "This shows the contents of the sync queue.",
-				expanded = true,
-				g = {},
-				OnUpdate = function(data)
-					local g = data.g;
-					wipe(g);
-					local senders = {};
-					for sender,_ in pairs(pendingReceiveChunksForUser) do
-						senders[sender] = 1;
-					end
-					for sender,_ in pairs(pendingSendChunksForUser) do
-						senders[sender] = 1;
-					end
-					for sender,_ in pairs(senders) do
-						tinsert(g, {
-							OnClick = OnClickForSyncQueue,
-							OnTooltip = OnTooltipForSyncQueue,
-							OnUpdate = OnUpdateForSyncQueue,
-							text = sender,
-							icon = 526421,
-							visible = true,
-							parent = data,
-						});
-					end
-
-					data.visible = #g > 1;
-					return false;
-				end,
-			}),
-		};
-		self.data = {
-			text = "Account Management",
-			icon = app.asset("WindowIcon_AccountManagement"),
-			description = "This list shows you all of the functionality related to managing your account data.",
-			visible = true,
-			expanded = true,
-			indent = 0,
-			back = 1,
-			g = {},
-			OnUpdate = function(data)
-				local g = data.g;
-				if #g < 1 then
-					for i,option in ipairs(options) do
-						option.parent = data;
-						tinsert(g, option);
-					end
-				end
-			end,
-		};
 	end,
 });

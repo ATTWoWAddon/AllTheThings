@@ -337,7 +337,7 @@ app:CreateWindow("MiniList", {
 	end,
 	OnRebuild = function(self)
 		if self.mapID then
-			self.data = CachedMapData[self.mapID];
+			self:SetData(CachedMapData[self.mapID]);
 		end
 	end,
 });

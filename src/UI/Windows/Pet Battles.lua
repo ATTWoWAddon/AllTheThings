@@ -14,7 +14,7 @@ app:CreateWindow("Pet Battles", {
 	IsDynamicCategory = true,
 	Commands = { "attpetbattles" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
 			description = "This list shows you all of the pet battle content as well as where to acquire battle pets in the ATT database.",
 			visible = true,
 			expanded = true,
@@ -31,7 +31,7 @@ app:CreateWindow("Pet Battles", {
 				end
 				data.OnUpdate = nil;
 			end
-		});
+		}));
 		self:AssignChildren();
 		app.CacheFields(self.data);
 	end,

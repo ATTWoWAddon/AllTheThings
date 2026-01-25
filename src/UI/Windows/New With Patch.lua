@@ -8,7 +8,7 @@ if app.IsRetail then return; end
 app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
 	OnLoad = function(self, settings)
-		self.data = app.CreateRawText(L.NEW_WITH_PATCH, {
+		self:SetData(app.CreateRawText(L.NEW_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -61,6 +61,6 @@ app:CreateWindow("New With Patch", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 });

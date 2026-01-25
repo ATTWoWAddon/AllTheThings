@@ -11,7 +11,7 @@ app:CreateWindow("Factions", {
 	IsDynamicCategory = true,
 	Commands = { "attfactions" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
 			description = "This list shows you all of the factions that you can collect.",
 			visible = true,
 			expanded = true,
@@ -39,6 +39,6 @@ app:CreateWindow("Factions", {
 					data.SortType = "name";
 				end
 			end
-		});
+		}));
 	end,
 });

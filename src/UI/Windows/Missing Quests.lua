@@ -13,7 +13,7 @@ app:CreateWindow("Missing Quests", {
 	},
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
-		self.data = app.CreateRawText("Missing Quests", {
+		self:SetData(app.CreateRawText("Missing Quests", {
 			icon = app.asset("Interface_Quest"),
 			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
 			visible = true,
@@ -161,7 +161,7 @@ app:CreateWindow("Missing Quests", {
 				self:AssignChildren();
 				data.OnUpdate = nil;
 			end,
-		});
+		}));
 		app:StartATTCoroutine("Waiting For Questie...", function()
 			coroutine.yield();
 			local waiter = 200;
