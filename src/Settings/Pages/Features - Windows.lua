@@ -148,3 +148,76 @@ child:SetScript("OnShow", function(self)
 	self.OnRefresh = RefreshWindowManager;
 	self:SetScript("OnShow", nil);
 end);
+
+
+-- Settings: Windows Style Page
+local PageTitle = "Style";
+local ConfigurationStyles = {
+	SetFlat = {
+		Title = "Category & Flat Options",
+	},
+};
+local WindowStyleButtons = {};
+local function OnClickForWindowStyleButton(self)
+	local window = app:GetWindow(self.Suffix);
+	window:ToggleFlat();
+	window:Show();
+end
+local function RefreshWindowStyles(self)
+	local lastChild, lastXOffset, lastYOffset = self.separator, 8, -8;
+	for configKey,config in pairs(ConfigurationStyles) do
+		local windows = config.windows;
+		if not windows then
+			windows = {};
+			config.windows = windows;
+		end
+		for suffix,window in pairs(app.WindowDefinitions) do
+			if window[configKey] then
+				windows[window.Suffix] = window;
+			end
+		end
+		for suffix,window in pairs(app.Windows) do
+			if window[configKey] then
+				windows[window.Suffix] = window;
+			end
+		end
+		local styleHeader = config.styleHeader;
+		if not styleHeader then
+			styleHeader = self:CreateHeaderLabel(config.Title)
+			styleHeader:SetPoint("TOPLEFT", lastChild, "BOTTOMLEFT", lastXOffset, lastYOffset);
+			config.styleHeader = styleHeader;
+		end
+		lastChild = styleHeader;
+		lastXOffset = 0;
+		
+		local buttons = config.buttons;
+		if not buttons then
+			buttons = {};
+			config.buttons = buttons;
+		end
+		
+		local buttonIndex = 1;
+		for suffix,window in pairs(windows) do
+			local button = buttons[buttonIndex];
+			if not button then
+				button = CreateFrame("Button", nil, self, "UIPanelButtonTemplate");
+				button:RegisterForClicks("AnyUp");
+				button:SetScript("OnClick", OnClickForWindowStyleButton);
+				button.OnTooltip = OnTooltipForWindowButton;
+				button:SetATTTooltip();
+				buttons[buttonIndex] = button;
+				button:SetPoint("TOPLEFT", lastChild, "BOTTOMLEFT", lastXOffset, lastYOffset);
+				button:SetWidth(120);
+				button:SetHeight(30);
+			end
+			button.Window = window;
+			button.Suffix = window.Suffix;
+			UpdateButtonText(button, window)
+			lastChild = button;
+		end
+	end
+end
+settings:CreateOptionsPage(PageTitle, L.WINDOWS_PAGE):SetScript("OnShow", function(self)
+	self.OnRefresh = RefreshWindowStyles;
+	self:SetScript("OnShow", nil);
+end);

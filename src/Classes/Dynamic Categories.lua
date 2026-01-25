@@ -16,7 +16,7 @@ local onUpdateForDynamicCategory = function(data)
 	data.progress = nil; data.total = nil;
 	if window then
 		window:ForceRebuild();
-		data.visible = app.GroupVisibilityFilter(data);
+		data.visible = app.GroupVisibilityFilter(window.data);
 	else
 		data.visible = false;
 	end

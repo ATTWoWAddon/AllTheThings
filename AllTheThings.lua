@@ -1400,67 +1400,13 @@ function app:GetDataCache()
 	if app.IsClassic and app.Windows then
 		local keys,sortedList = {},{};
 		for suffix,window in pairs(app.WindowDefinitions) do
-			if window and window.IsDynamicCategory then
-				if window.DynamicCategoryHeader then
-					if window.DynamicProfessionID then
-						local dynamicProfessionHeader = nil;
-						for i,header in ipairs(ProfessionsHeader.g) do
-							if header.requireSkill == window.DynamicProfessionID then
-								dynamicProfessionHeader = header;
-								break;
-							end
-						end
-
-						local recipesList = app.CreateDynamicCategory(suffix);
-						recipesList.IgnoreBuildRequests = true;
-						if dynamicProfessionHeader then
-							recipesList.text = "Recipes";
-							recipesList.icon = 134939;
-							if not dynamicProfessionHeader.g then
-								dynamicProfessionHeader.g = {};
-							end
-							tinsert(dynamicProfessionHeader.g, recipesList);
-						else
-							tinsert(ProfessionsHeader.g, recipesList);
-						end
-					else
-						print("Unhandled dynamic category conditional");
-					end
-				else
-					keys[suffix] = window;
-				end
+			if window and window.IsDynamicCategory and not window.DynamicCategoryHeader then
+				keys[suffix] = window;
 			end
 		end
 		for suffix,window in pairs(app.Windows) do
-			if window and window.IsDynamicCategory then
-				if window.DynamicCategoryHeader then
-					if window.DynamicProfessionID then
-						local dynamicProfessionHeader = nil;
-						for i,header in ipairs(ProfessionsHeader.g) do
-							if header.requireSkill == window.DynamicProfessionID then
-								dynamicProfessionHeader = header;
-								break;
-							end
-						end
-
-						local recipesList = app.CreateDynamicCategory(suffix);
-						recipesList.IgnoreBuildRequests = true;
-						if dynamicProfessionHeader then
-							recipesList.text = "Recipes";
-							recipesList.icon = 134939;
-							if not dynamicProfessionHeader.g then
-								dynamicProfessionHeader.g = {};
-							end
-							tinsert(dynamicProfessionHeader.g, recipesList);
-						else
-							tinsert(ProfessionsHeader.g, recipesList);
-						end
-					else
-						print("Unhandled dynamic category conditional");
-					end
-				else
-					keys[suffix] = window;
-				end
+			if window and window.IsDynamicCategory and not window.DynamicCategoryHeader then
+				keys[suffix] = window;
 			end
 		end
 		for suffix,window in pairs(keys) do

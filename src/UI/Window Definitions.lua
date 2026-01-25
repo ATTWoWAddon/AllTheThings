@@ -1721,7 +1721,7 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
 	end
-	self:SetVisible(windowSettings.visible);
+	if AllWindowSettingsLoaded then self:SetVisible(windowSettings.visible); end
 	self.RecordSettings = oldRecordSettings;
 end
 local function BuildDefaultsForWindow(self, fromSettings)
@@ -1871,6 +1871,11 @@ app.AddEventHandler("OnInit", function()
 
 	-- Mark Windows as loaded.
 	AllWindowSettingsLoaded = true;
+	
+	-- Okay, NOW apply visible
+	for name, window in pairs(app.Windows) do
+		window:SetVisible(window.Settings.visible);
+	end
 
 	-- Regenerate the Dynamic Windows
 	for name,settings in pairs(dynamicWindows) do
@@ -2861,10 +2866,6 @@ function app:CreateWindow(suffix, settings)
 			-- This window still needs to be loaded right away
 			if AllWindowSettingsLoaded then
 				return app:GetWindow(suffix);
-			else
-				app.AddEventHandler("OnReady", function()
-					app:GetWindow(suffix)
-				end)
 			end
 		elseif settings.Commands then
 			local onCommand;
