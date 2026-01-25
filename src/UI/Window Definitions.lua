@@ -1894,158 +1894,6 @@ end);
 -- Window UI Event Handlers
 local tinsert = tinsert;
 local InCombatLockdown = InCombatLockdown;
-local function BuildCategory(self, headers, searchResults, inst)
-	local count = #searchResults;
-	if count == 0 then return; end
-	if count > 1 then
-		-- Find the most accessible version of the thing.
-		app.Sort(searchResults, app.SortDefaults.Accessibility);
-	end
-	local mostAccessibleSource = searchResults[1];
-	inst.sourceParent = mostAccessibleSource;
-	local u = app.GetRelativeValue(mostAccessibleSource, "u");
-	if u then
-		if u == 1 then return inst; end
-		inst.u = u;
-	end
-	local e = app.GetRelativeValue(mostAccessibleSource, "e");
-	if e then inst.e = e; end
-	local awp = app.GetRelativeValue(mostAccessibleSource, "awp");
-	if awp then inst.awp = awp; end
-	local rwp = app.GetRelativeValue(mostAccessibleSource, "rwp");
-	if rwp then inst.rwp = rwp; end
-	local r = app.GetRelativeValue(mostAccessibleSource, "r");
-	if r then inst.r = r; end
-	local c = app.GetRelativeValue(mostAccessibleSource, "c");
-	if c then inst.c = c; end
-	local races = app.GetRelativeValue(mostAccessibleSource, "races");
-	if races then inst.races = races; end
-	for key,value in pairs(mostAccessibleSource) do
-		inst[key] = value;
-	end
-
-	local header, headerType = {}, self, nil;
-	for j,o in ipairs(searchResults) do
-		if o.parent then
-			if not o.sourceQuests then
-				local questID = app.GetRelativeValue(o, "questID");
-				if questID then
-					if not inst.sourceQuests then
-						inst.sourceQuests = {};
-					end
-					if not app.contains(inst.sourceQuests, questID) then
-						tinsert(inst.sourceQuests, questID);
-					end
-				else
-					local sourceQuests = app.GetRelativeValue(o, "sourceQuests");
-					if sourceQuests then
-						if not inst.sourceQuests then
-							inst.sourceQuests = {};
-							for k,questID in ipairs(sourceQuests) do
-								tinsert(inst.sourceQuests, questID);
-							end
-						else
-							for k,questID in ipairs(sourceQuests) do
-								if not app.contains(inst.sourceQuests, questID) then
-									tinsert(inst.sourceQuests, questID);
-								end
-							end
-						end
-					end
-				end
-			end
-
-			if app.GetRelativeValue(o, "isHolidayCategory") then
-				headerType = "holiday";
-			elseif app.GetRelativeValue(o, "isPromotionCategory") then
-				headerType = "promo";
-			elseif app.GetRelativeValue(o, "isPVPCategory") or o.pvp then
-				headerType = "pvp";
-			elseif app.GetRelativeValue(o, "isEventCategory") then
-				headerType = "event";
-			elseif app.GetRelativeValue(o, "isCraftedCategory") then
-				headerType = "crafted";
-			elseif o.parent.achievementID then
-				headerType = app.HeaderConstants.ACHIEVEMENTS;
-			elseif app.GetRelativeValue(o, "instanceID") then
-				headerType = "raid";
-			elseif app.GetRelativeValue(o, "isWorldDropCategory") or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
-				headerType = "drop";
-			elseif o.parent.questID then
-				headerType = app.HeaderConstants.QUESTS;
-			elseif app.GetRelativeField(o.parent, "headerID", app.HeaderConstants.VENDORS) then
-				headerType = app.HeaderConstants.VENDORS;
-			elseif o.parent.npcID then
-				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
-			else
-				headerType = app.GetDeepestRelativeValue(o, "headerID") or "drop";
-				if headerType == true then	-- Seriously don't do this...
-					headerType = "drop";
-				end
-			end
-			local coords = app.GetRelativeValue(o, "coords");
-			if coords then
-				if not inst.coords then
-					inst.coords = { unpack(coords) };
-				else
-					for i,coord in ipairs(coords) do
-						tinsert(inst.coords, coord);
-					end
-				end
-			end
-		end
-	end
-
-	-- Determine the type of header to put the thing into.
-	if not headerType then headerType = "drop"; end
-	header = headers[headerType];
-	if not header then
-		if headerType == "holiday" then
-			header = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS);
-		elseif headerType == "raid" then
-			header = app.CreateRawText(GROUP_FINDER, {
-				icon = app.asset("Category_D&R"),
-			});
-		elseif headerType == "promo" then
-			header = app.CreateRawText(BATTLE_PET_SOURCE_8, {
-				icon = app.asset("Category_Promo"),
-			});
-		elseif headerType == "pvp" then
-			header = app.CreateRawText(PVP, {
-				icon = app.asset("Category_PvP"),
-			});
-		elseif headerType == "event" then
-			header = app.CreateRawText(BATTLE_PET_SOURCE_7, {
-				icon = app.asset("Category_Event"),
-			});
-		elseif headerType == "drop" then
-			header = app.CreateRawText(BATTLE_PET_SOURCE_1, {
-				icon = app.asset("Category_WorldDrops"),
-			});
-		elseif headerType == "crafted" then
-			header = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
-				icon = app.asset("Category_Crafting"),
-			});
-		elseif type(headerType) == "number" then
-			header = app.CreateCustomHeader(headerType);
-		else
-			print("Unhandled Header Type", headerType);
-		end
-		if not headers[headerType] then
-			headers[headerType] = header;
-			tinsert(self.g, header);
-			header.parent = self;
-			header.g = {};
-		end
-	end
-	inst.parent = header;
-	inst.progress = nil;
-	inst.total = nil;
-	inst.g = nil;
-	tinsert(header.g, inst);
-	--app.MergeObject(header.g, inst);
-	return inst;
-end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
@@ -2293,7 +2141,6 @@ local FieldDefaults = {
 			self.data = data;
 		end
 	end,
-	BuildCategory = BuildCategory,
 	ExpandData = function(self, expanded)
 		ExpandGroupsRecursively(self.data, expanded, true);
 	end,
@@ -3145,28 +2992,84 @@ local CategoryByRelativeFields = {
 	{ "pvp", function(o) return "pvp"; end },
 	
 	-- Root Categories
-	{ "isWorldDropCategory", function(o) return "drop"; end },
-	{ "isCraftedCategory", function(o) return app.HeaderConstants.CRAFTED_ITEMS; end },
-	{ "isHolidayCategory", function(o) return "holiday"; end },
-	{ "isPromotionCategory", function(o) return "promo"; end },
-	{ "isPVPCategory", function(o) return "pvp"; end },
-	{ "isEventCategory", function(o) return "event"; end },	-- TODO: Change this to "World Event"
+	{ "RootCategory",
+		function(o, value, categories, self)
+			local rootCategory = app.GetRelativeGroup(o, "RootCategory", true);
+			local hash = rootCategory.headerID or rootCategory.hash;
+			local category = categories[hash];
+			if not category then
+				category = app.CloneClassInstance(rootCategory);
+				category.SortType = "name";
+				category.parent = self;
+				category.g = {};
+				tinsert(self.g, category);
+				categories[hash] = category;
+			end
+			return hash;
+		end
+	},
 	
 	-- Keys
 	{ "achievementID", function(o) return app.HeaderConstants.ACHIEVEMENTS; end },
 	{ "instanceID", function(o) return "raid"; end },	-- Determine if we want to split by raid and/or dungeon
-	{ "questID", function(o) return app.HeaderConstants.QUESTS; end },
 	{ "headerID", 
-		function(o, value)
-			if value == app.HeaderConstants.VENDORS then
+		function(o, value, categories, self)
+			if value == app.HeaderConstants.VENDORS or value == app.HeaderConstants.QUESTS or value == app.HeaderConstants.FACTIONS then
 				return value;
 			end
-			if value == app.HeaderConstants.COMMON_BOSS_DROPS then
+			if value == app.HeaderConstants.COMMON_BOSS_DROPS or value == app.HeaderConstants.RARES then
 				return "drop";
 			end
-			return app.GetDeepestRelativeValue(o, "headerID") or value;
+			local group = app.GetRelativeGroup(o, "headerID", true);
+			if group.type then
+				if group.type == "fa" then
+					return app.HeaderConstants.FACTIONS;
+				elseif app.GetRelativeField(o, "headerID", app.HeaderConstants.QUESTS) then
+					return app.HeaderConstants.QUESTS;
+				end
+				local hash = group.hash;
+				local category = categories[hash];
+				if not category then
+					local clone = {};
+					for key,value in pairs(group) do
+						clone[key] = value;
+					end
+					category = app.CreateHeader(group[group.key], clone);
+					category.SortType = "name";
+					category.parent = self;
+					category.g = {};
+					tinsert(self.g, category);
+					categories[hash] = category;
+				end
+				return hash;
+			end
+			group = app.GetDeepestRelativeGroup(o, "headerID", true);
+			if group.type then
+				if group.type == "fa" then
+					return app.HeaderConstants.FACTIONS;
+				elseif app.GetRelativeField(o, "headerID", app.HeaderConstants.QUESTS) then
+					return app.HeaderConstants.QUESTS;
+				end
+				local hash = group.hash;
+				local category = categories[hash];
+				if not category then
+					local clone = {};
+					for key,value in pairs(group) do
+						clone[key] = value;
+					end
+					category = app.CreateHeader(group[group.key], clone);
+					category.SortType = "name";
+					category.parent = self;
+					category.g = {};
+					tinsert(self.g, category);
+					categories[hash] = category;
+				end
+				return hash;
+			end
+			return value;
 		end
 	},
+	{ "questID", function(o) return app.HeaderConstants.QUESTS; end },
 };
 local function AssignCategoryForResult(self, categories, result)
 	-- Cache the original object for the result in the hierarchy.
@@ -3212,7 +3115,7 @@ local function AssignCategoryForResult(self, categories, result)
 	for i,dataSet in ipairs(CategoryByRelativeFields) do
 		local value = app.GetRelativeValue(o, dataSet[1]);
 		if value then
-			value = dataSet[2](o, value);
+			value = dataSet[2](o, value, categories, self);
 			if value then
 				categoryType = value;
 				break;
@@ -3227,32 +3130,16 @@ local function AssignCategoryForResult(self, categories, result)
 	-- Determine the type of category to put the thing into.
 	local category = categories[categoryType];
 	if not category then
-		if categoryType == "holiday" then
-			category = app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS);
-		elseif categoryType == "raid" then
-			category = app.CreateRawText(GROUP_FINDER, {
-				icon = app.asset("Category_D&R"),
-			});
-		elseif categoryType == "promo" then
-			category = app.CreateRawText(BATTLE_PET_SOURCE_8, {
-				icon = app.asset("Category_Promo"),
-			});
-		elseif categoryType == "pvp" then
-			category = app.CreateRawText(PVP, {
-				icon = app.asset("Category_PvP"),
-			});
-		elseif categoryType == "event" then
-			category = app.CreateRawText(BATTLE_PET_SOURCE_7, {
-				icon = app.asset("Category_Event"),
-			});
-		elseif categoryType == "drop" then
-			category = app.CreateRawText(BATTLE_PET_SOURCE_1, {
-				icon = app.asset("Category_WorldDrops"),
-			});
-		elseif categoryType == "crafted" then
-			category = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM, {
-				icon = app.asset("Category_Crafting"),
-			});
+		if categoryType == "raid" then
+            category = app.CreateRawText(GROUP_FINDER, {
+                icon = app.asset("Category_D&R"),
+            });
+        elseif categoryType == "pvp" then
+            category = app.CreateCustomHeader(app.HeaderConstants.PVP);
+        elseif categoryType == "drop" then
+            category = app.CreateRawText(BATTLE_PET_SOURCE_1, {
+                icon = app.asset("Category_WorldDrops"),
+            });
 		elseif type(categoryType) == "number" then
 			category = app.CreateCustomHeader(categoryType);
 		else

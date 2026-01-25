@@ -1258,7 +1258,7 @@ function app:GetDataCache()
 	-- World Drops
 	tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
 		g = app.Categories.WorldDrops or {},
-		isWorldDropCategory = true,
+		RootCategory = "World Drops",
 	}));
 
 	-- Crafted Items
@@ -1266,14 +1266,15 @@ function app:GetDataCache()
 	if craftables then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.CRAFTED_ITEMS, {
 			DontEnforceSkillRequirements = true,
-			isCraftedCategory = true,
+			RootCategory = "Crafted Items",
 			g = craftables,
 		}));
 	end
 
 	-- Professions
 	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
-		g = app.Categories.Professions or {}
+		g = app.Categories.Professions or {},
+		RootCategory = "Professions",
 	});
 	tinsert(g, ProfessionsHeader);
 
@@ -1282,8 +1283,8 @@ function app:GetDataCache()
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
 			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
 			SortType = "EventStart",
-			isHolidayCategory = true,
 			g = app.Categories.Holidays,
+			RootCategory = "Holidays",
 		}));
 	end
 
@@ -1293,6 +1294,7 @@ function app:GetDataCache()
 			icon = app.asset("Category_ExpansionFeatures"),
 			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
 			g = app.Categories.ExpansionFeatures,
+			RootCategory = "Expansion Features",
 		}));
 	end
 
@@ -1304,12 +1306,16 @@ function app:GetDataCache()
 		tinsert(g, app.CreateRawText(CHARACTER, {
 			icon = app.asset("Category_ItemSets"),
 			g = app.Categories.Character,
+			RootCategory = "Character",
 		}));
 	end
 
 	-- Housing
 	if app.Categories.Housing then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, app.Categories.Housing));
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, {
+			g = app.Categories.Housing,
+			RootCategory = "Housing",
+		}));
 	end
 
 	-- Group Finder
@@ -1317,20 +1323,24 @@ function app:GetDataCache()
 		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
 			icon = app.asset("Category_GroupFinder"),
 			g = app.Categories.GroupFinder,
+			RootCategory = "Group Finder",
 		}));
 	end
 
 	-- Pet Battles
 	-- In Classic, this is a dynamic category
 	if not app.IsClassic and app.Categories.PetBattles then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, app.Categories.PetBattles));
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
+			g = app.Categories.PetBattles,
+			RootCategory = "Pet Battles",
+		}));
 	end
 
 	-- PvP
 	if app.Categories.PVP then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
 			g = app.Categories.PVP,
-			isPVPCategory = true,
+			RootCategory = "PvP",
 		}));
 	end
 
@@ -1343,14 +1353,18 @@ function app:GetDataCache()
 
 	-- Secrets
 	if app.Categories.Secrets then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, app.Categories.Secrets));
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, {
+			g = app.Categories.Secrets,
+			RootCategory = "Secrets",
+		}));
 	end
 
 	-- Skills
 	if app.Categories.Skills then
 		tinsert(g, app.CreateRawText(SKILLS, {
 			icon = 136105,
-			g = app.Categories.Skills
+			g = app.Categories.Skills,
+			RootCategory = "Skills",
 		}));
 	end
 
@@ -1360,7 +1374,7 @@ function app:GetDataCache()
 			icon = app.asset("Category_Event"),
 			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
 			g = app.Categories.WorldEvents,
-			isEventCategory = true,
+			RootCategory = "World Events",
 		}));
 	end
 
@@ -1368,11 +1382,18 @@ function app:GetDataCache()
 	-- M A R K E T   C A T E G O R I E S --
 	---------------------------------------
 	-- Black Market
-	if app.Categories.BlackMarket then tinsert(g, app.Categories.BlackMarket[1]); end
+	if app.Categories.BlackMarket then
+		local blackMarket = app.Categories.BlackMarket[1];
+		blackMarket.RootCategory = "Black Market";
+		tinsert(g, blackMarket);
+	end
 
 	-- In-Game Store
 	if app.Categories.InGameShop then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop));
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, {
+			g = app.Categories.InGameShop,
+			RootCategory = "In-Game Shop",
+		}));
 	end
 	
 	-- Promotions
@@ -1380,8 +1401,8 @@ function app:GetDataCache()
 		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
 			icon = app.asset("Category_Promo"),
 			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
-			isPromotionCategory = true,
 			g = app.Categories.Promotions,
+			RootCategory = "Promotions",
 		}));
 	end
 	
@@ -1389,7 +1410,8 @@ function app:GetDataCache()
 	if app.Categories.TradingPost then
 		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
 			icon = app.asset("Category_TradingPost"),
-			g = app.Categories.TradingPost
+			g = app.Categories.TradingPost,
+			RootCategory = "Trading Post",
 		}));
 	end
 	

@@ -213,6 +213,13 @@ local function GetDeepestRelativeFunc(group, func)
 		return GetDeepestRelativeFunc(group.sourceParent or group.parent, func) or func(group);
 	end
 end
+-- Returns the first matching relative group from the "oldest" parent in the hierarchy where you need to go recursively deeper in the hierarchy to find the value from the top down. (meaning if you're 4 headerIDs deep and looking for "headerID", it'll return the root category's headerID rather than the immediate parent or grandparent's headerID)
+local function GetDeepestRelativeGroup(group, field)
+	if group then
+		return GetDeepestRelativeGroup(group.sourceParent or group.parent, field) or (group[field] and group);
+	end
+end
+app.GetDeepestRelativeGroup = GetDeepestRelativeGroup;
 local function GetRelativeField(group, field, value)
 	if group then
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
