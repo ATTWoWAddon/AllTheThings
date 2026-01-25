@@ -36,7 +36,7 @@ jobs:
         with:
           fetch-depth: 300
           fetch-tags: true
-          ref: ${{ github.ref }}
+          ref: ${{ github.sha }}
 
       - name: Determine mode
         id: mode
@@ -115,6 +115,8 @@ jobs:
     if: needs.check-context.outputs.mode != 'beta' || needs.check-context.outputs.proceed == 'true'
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
 
       - name: Database Parser for Retail
         timeout-minutes: 5
@@ -179,7 +181,7 @@ jobs:
         with:
           fetch-depth: 300
           fetch-tags: true
-          ref: ${{ github.ref }}
+          ref: ${{ github.sha }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v7
