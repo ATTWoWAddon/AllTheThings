@@ -28,8 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       mode: ${{ steps.mode.outputs.mode }}
-      proceed: ${{ steps.guard.outputs.proceed }}
-      beta_local_tag: ${{ steps.guard.outputs.beta_local_tag }}
+      proceed: ${{ steps.check_changes.outputs.proceed }}
+      beta_local_tag: ${{ steps.check_changes.outputs.beta_local_tag }}
     steps:
       - name: Determine mode
         id: mode
@@ -52,8 +52,12 @@ jobs:
         with:
           fetch-depth: 300
           fetch-tags: true
-          ref: ${{ github.sha }}
+          ref: ${{ github.ref }}
 
+      - name: reset to exact commit
+        shell: bash
+        run: |
+          git reset --hard ${GITHUB_SHA}
 
       - name: Check for changes since last tag
         id: check_changes
@@ -64,25 +68,17 @@ jobs:
           PROCEED="true"
           BETA_TAG=""
 
-          # Find the latest *release* tag only (X.Y.Z). Beta/rc/alpha tags are excluded.
-          LAST_RELEASE_TAG=$(
-            git tag --list "*" \
-            | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' \
-            | sort -V \
-            | tail -n 1
-          )
-
-          HEAD_SHA="$(git rev-parse HEAD)"
-
-          if [ -n "$LAST_RELEASE_TAG" ]; then
-            RELEASE_SHA="$(git rev-list -n 1 "$LAST_RELEASE_TAG")"
-          else
-            RELEASE_SHA=""
-          fi
-
-          if [ "$MODE" = "beta" ] && [ -n "$RELEASE_SHA" ] && [ "$HEAD_SHA" = "$RELEASE_SHA" ]; then
-            echo "Beta skipped: HEAD equals last release tag ($LAST_RELEASE_TAG)."
+          LAST_TAG=$(git describe --tags --abbrev=0)
+          echo "Last tag: $LAST_TAG"
+          CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No changes detected since last tag."
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
             PROCEED="false"
+          else
+            echo "Changes detected since last tag:"
+            echo "$CHANGED_FILES"
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
           fi
 
           # Create a date-based beta tag (local only) so packager treats the build as beta.
