@@ -1536,6 +1536,8 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 	
+	app.AssignChildren(rootData);
+	
 	if not app.IsClassic then
 	-- Create Dynamic Groups Button
 	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
@@ -1724,13 +1726,6 @@ function app:GetDataCache()
 		},
 	}));
 	end
-
-	-- The Main Window's Data
-	-- app.PrintMemoryUsage("Prime.Data Ready")
-	local primeWindow = app:GetWindow("Prime");
-	primeWindow:SetData(rootData);
-	-- app.PrintMemoryUsage("Prime Window Data Building...")
-	primeWindow:AssignChildren();
 	
 	if not app.IsClassic then
 	-- Function to build a hidden window's data

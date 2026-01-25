@@ -7,10 +7,9 @@ local onClickForDynamicCategory = function(row, button)
 			window:Toggle();
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
+			print("LEFT CLICK", row.ref.text);
 			if #window.data.g < 1 then window:ForceRebuild(); end
-			local prime = app:GetWindow("Prime");
-			local primeData = prime.data;
-			if primeData then
+			if #window.data > 0 then
 				local progress, total = window.data.progress or 0, window.data.total or 0;
 				local g = app.CloneClassInstance(window.data).g;
 				for i,o in ipairs(g) do
