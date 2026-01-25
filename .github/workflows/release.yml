@@ -54,13 +54,6 @@ jobs:
           fetch-tags: true
           ref: ${{ github.sha }}
 
-      - name: Default proceed for non-beta modes
-        id: proceed_default
-        if: steps.mode.outputs.mode != 'beta'
-        shell: bash
-        run: |
-          echo "proceed=true" >> "$GITHUB_OUTPUT"
-          echo "beta_local_tag=" >> "$GITHUB_OUTPUT"
 
       - name: Check for changes since last tag
         id: check_changes
