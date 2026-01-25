@@ -2891,7 +2891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						o(344604, {	-- Fearbreaker
 							["coord"] = { 87.6, 35.1, STORMWIND_CITY },
-							["g"] = { i(175151) },	-- Fearbreaker (QI!)
+							["groups"] = { i(175151) },	-- Fearbreaker (QI!)
 						}),
 					},
 				}),

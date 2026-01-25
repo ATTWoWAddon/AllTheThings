@@ -78,7 +78,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262389),	-- Veiled Blessing // alpha
 			--
 			n(BOUNTIFUL, bubbleDownFiltered({
-				["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
+				["cost"] = { { "c", RESTORED_COFFER_KEY, 1 } },
 			},FILTERFUNC_itemID,{
 				["provider"] = { "o", 584514 },	-- Bountiful Coffer
 				["groups"] = {
@@ -246,19 +246,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(263178, {	-- Delver's Starter Kit
-						--["cost"] = {{"c", UNDERCOIN, 0 }},
+						--["cost"] = { { "c", UNDERCOIN, 0 } },
 						--["questID"] = ???,
 					}),
 					i(263188, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						--["questID"] = ???,
 					}),
 					i(263191, {	-- Restored Coffer Key
-						["cost"] = {{"c", UNDERCOIN, 2000 }},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						--["questID"] = ???,
 					}),
 					i(253342, {	-- Beacon of Hope
-						["cost"] = {{"c", UNDERCOIN, 5000 }},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						--["questID"] = ???,
 					}),
 				},
@@ -268,47 +268,47 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["groups"] = {
 					n(DECOR, {
 						i(263996, {	-- Twilight Tabernacle (DECOR!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 1
 						}),
 						i(263994, {	-- Fungal Chest (DECOR!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 2
 						}),
 						i(264175, {	-- Amani Strongbox (DECOR!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 3
 						}),
 						i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 4
 						}),
 						i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 500 }},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 10
 						}),
 					}),
 					filter(MISC, {
 						i(263179, {	-- Delver's Cosmetic Surprise Bag
-							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 0?
 							--["questID"] = ???,
 						}),
 						i(262951, {	-- Sin'dorei Gravestone
-							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 6
 							--["questID"] = ???,
 						}),
 					}),
 					filter(MOUNTS, {
 						i(262500, {	-- Silvermoon's Arcane Defender (MOUNT!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 5
 						}),
 					}),
 					filter(TOYS, {
 						i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
-							["cost"] = {{"c", VOIDLIGHT_MARL, 10}},
+							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 7
 						}),
 					}),

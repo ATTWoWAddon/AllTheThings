@@ -1616,8 +1616,9 @@ localize(L.HEADER_NAMES, {
 	[-703] = "Diablo IV: Lord of Hatred",
 	[-704] = EJ_TUTORIALS,
 	[-705] = "Training Grounds",
-	[-706] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-708] = "Razer",
+	[-709] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1725,6 +1726,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-691] = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
 	[-696] = "After completing The Shadow of the Sentinax quest, uncommon Sentinax Beacons can drop from mobs underneath the Sentinax. You can then use these beacons to summon portals while the Sentinax remains in the area.\n\nEach Sentinax Beacon summons mobs that can drop rare quality Sentinax Beacons of that color that can be used to empower the portals to sometimes have those portals spawn Rares that ultimately can drop the associated Portal Stone (boss).\n\nKeep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon. Rare quality Sentinax Beacons can also be acquired by interacting with Unstable Nether Portals when the Nether Disruptor is up. (Not available in Legion Remix!)",
 	[-703] = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
+	[-708] = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2295,6 +2297,7 @@ localize(L.HEADER_ICONS, {
 	[-700] = 1027879,
 	[-703] = 1529348,
 	[-705] = 136106,
+	[-708] = 132529,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2506,7 +2509,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
@@ -2558,7 +2560,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -8379,6 +8382,7 @@ local ObjectNames = {
 	[249748] = "Aged Snowplum Brandy",
 	[249812] = "Titanstrike",
 	[249814] = "Aluneth",
+	[249819] = "Firelands Portal",
 	[249821] = "Skull of the Man'ari",
 	[249824] = "The Silver Hand",
 	[249997] = "Small Treasure Chest",
@@ -16994,6 +16998,7 @@ local ObjectModels = {
 	[249748] = 528633,
 	[249812] = 1346250,
 	[249814] = 1346354,
+	[249819] = 1122551,
 	[249821] = 353152,
 	[249824] = 353152,
 	[249997] = 1349620,
@@ -23274,7 +23279,7 @@ L.QUEST_NAMES = {
 	[50147] = "Step 8: Temple of Karabor",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-707],
+	[52819] = _.L.HEADER_NAMES[-710],
 	[52917] = "Grimmy Dialogue",
 	[53417] = "Lost Spawn of Krag'wa (The Shattered River)",
 	[53418] = "Lost Spawn of Krag'wa (Razorjaw River)",
@@ -24838,8 +24843,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Zwielichtzone",
 	[-662] = "Championausrüstung",
 	[-696] = "Netherportal",
-	[-706] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-707] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-709] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-710] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -28267,6 +28272,7 @@ localize(ObjectNames, {
 	[249744] = "Dose mit überhitztem Öl",
 	[249748] = "Gereifter Schneepflaumenbrandy",
 	[249812] = "Titanenblitz",
+	[249819] = "Portal in die Feuerlande",
 	[249821] = "Schädel der Man'ari",
 	[249824] = "Die Silberne Hand",
 	[249997] = "Kleine Schatztruhe",
@@ -32080,8 +32086,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Chroniques des Crépusculaires",
 	[-662] = "Équipement de champion",
 	[-696] = "Portail de Néant",
-	[-706] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-707] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-709] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-710] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -35528,6 +35534,7 @@ localize(ObjectNames, {
 	[249744] = "Bidon d’huile surchauffée",
 	[249748] = "Eau-de-vie de prune des neiges vieillie",
 	[249812] = "Choc des Titans",
+	[249819] = "Portail des terres de Feu",
 	[249821] = "Crâne du Man’ari",
 	[249824] = "Main-d’Argent",
 	[249997] = "Petit coffre au trésor",
@@ -38938,8 +38945,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Zona del Crepuscolo",
 	[-662] = "Equipaggiamento campione",
 	[-696] = "Portale Fatuo",
-	[-706] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-709] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -41964,6 +41971,7 @@ localize(ObjectNames, {
 	[249744] = "Latta d'Olio Surriscaldato",
 	[249748] = "Brandy di Geloprugna Invecchiato",
 	[249812] = "Titanassalto",
+	[249819] = "Portale delle Terre del Fuoco",
 	[249821] = "Teschio dei Man'ari",
 	[249824] = "Mano d'Argento",
 	[249997] = "Cassa del Tesoro Piccola",
@@ -45174,8 +45182,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Além da Imaginação",
 	[-662] = "Equipamento de Campeão",
 	[-696] = "Portal Etéreo",
-	[-706] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-709] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -48513,6 +48521,7 @@ localize(ObjectNames, {
 	[249744] = "Lata de Óleo Superaquecido",
 	[249748] = "Conhaque de Ameixa-da-neve Envelhecido",
 	[249812] = "Trovão Titânico",
+	[249819] = "Portal das Terras do Fogo",
 	[249821] = "Caveira dos Man'ari",
 	[249824] = "Punho de Prata",
 	[249997] = "Baú do Tesouro Pequeno",
@@ -52584,8 +52593,8 @@ localize(L.HEADER_NAMES, {
 	[-669] = "Промо Midnight",
 	[-674] = "Вылазки MID 1 сезон",
 	[-696] = "Врата Пустоты",
-	[-706] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-707] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-709] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-710] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -56054,6 +56063,7 @@ localize(ObjectNames, {
 	[249748] = "Выдержанный бренди из снежной сливы",
 	[249812] = "Мощь Титанов",
 	[249814] = "Алунет",
+	[249819] = "Портал в Огненные Просторы",
 	[249821] = "Череп Ман'ари",
 	[249824] = "Серебряная Длань",
 	[249997] = "Маленький сундук с сокровищами",
@@ -59520,8 +59530,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "황혼 지대",
 	[-662] = "용사 장비",
 	[-696] = "황천의 차원문",
-	[-706] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-709] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -62779,6 +62789,7 @@ localize(ObjectNames, {
 	[249742] = "갓 판 무덤",
 	[249744] = "달아오른 기름이 든 깡통",
 	[249748] = "숙성된 겨울자두 증류주",
+	[249819] = "불의 땅 차원문",
 	[249821] = "만아리의 해골",
 	[249997] = "작은 보물 상자",
 	[250080] = "작은 보물 상자",
@@ -66557,8 +66568,8 @@ localize(L.HEADER_NAMES, {
 	[-674] = "Profundidades MID T1",
 	[-687] = "Conversión de equipo de banda",
 	[-696] = "Portal abisal",
-	[-706] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-709] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -70015,6 +70026,7 @@ localize(ObjectNames, {
 	[249744] = "Lata de aceite sobrecalentado",
 	[249748] = "Brandy de ciruela de nieve añejado",
 	[249812] = "Furia Titánica",
+	[249819] = "Portal de las Tierras de Fuego",
 	[249821] = "Cráneo del Man'ari",
 	[249824] = "Mano de Plata",
 	[249997] = "Arqueta pequeña",
@@ -73480,7 +73492,7 @@ localize(L.HEADER_NAMES, {
 	[-654] = "Cosechando",
 	[-656] = "Gremio de luchadores",
 	[-674] = "Abismos MID T1",
-	[-707] = "|cFFFFFFFFStep 1:|rNota sospechosa",
+	[-710] = "|cFFFFFFFFStep 1:|rNota sospechosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -74845,8 +74857,9 @@ localize(L.HEADER_NAMES, {
 	[-687] = "团队装备转换",
 	[-694] = "'燃烧的远征'周年纪念版 - 外域升级",
 	[-696] = "虚空传送门",
-	[-706] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-707] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-708] = "雷蛇",
+	[-709] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-710] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",

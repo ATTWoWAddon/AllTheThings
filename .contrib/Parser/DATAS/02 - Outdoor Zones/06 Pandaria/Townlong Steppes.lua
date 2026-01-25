@@ -990,7 +990,7 @@ root(ROOTS.Zones, {
 									{ 63.5, 43.5, TOWNLONG_STEPPES },
 									{ 63.8, 41.9, TOWNLONG_STEPPES },
 								},
-								["g"] = { i(84762) },	-- Highly Explosive Yaungol Oil (QI!)
+								["groups"] = { i(84762) },	-- Highly Explosive Yaungol Oil (QI!)
 							}),
 						},
 					}),

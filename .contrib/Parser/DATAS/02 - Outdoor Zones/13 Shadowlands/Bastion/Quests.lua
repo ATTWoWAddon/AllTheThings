@@ -418,11 +418,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["groups"] = {
 						o(350889, {	-- Cache of the Archon
 							["coord"] = { 60.6, 61.9, BASTION },
-							["g"] = { i(178146) },	-- Carved Kyrian Idol (QI!)
+							["groups"] = { i(178146) },	-- Carved Kyrian Idol (QI!)
 						}),
 						o(350888, {	-- Cache of the Paragons
 							["coord"] = { 59.9, 58.2, BASTION },
-							["g"] = { i(178145) },	-- Ceremonial Offering (QI!)
+							["groups"] = { i(178145) },	-- Ceremonial Offering (QI!)
 						}),
 					},
 				}),

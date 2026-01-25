@@ -1068,7 +1068,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(194027),	-- Ancient Parchment: Top Half
 			i(193798),	-- Ancient Titan Alloy
 			i(194873),	-- Apprentice's Fluffed Quill
-			i(200825),	-- Assorted Debris
 			i(191192),	-- Assorted Parts
 			i(198141),	-- Astral Essence
 			i(192127),	-- Basilisk Eggs

@@ -703,27 +703,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(246601, {	-- Bolt Chair (DECOR!)
 						["sourceQuest"] = 92580,	-- Spare A Chair
+						["cost"] = { {"i", 166846, 10 } },	-- 10x Spare Parts
 					}),
 					i(256168, {	-- Draconic Sconce (DECOR!)
 						["sourceQuest"] = 92578,	-- Draconic Decor
+						["cost"] = { {"c", DRAGON_SUPPLIES, 10 } },
 					}),
 					i(253168, {	-- Earthen Storage Crate (DECOR!)
 						["sourceQuest"] = 92572,	-- Furniture Favor
 					}),
 					i(245655, {	-- Filigree Moon Lamp (DECOR!)
 						["sourceQuest"] = 92577,	-- Dreamy Inspiration
+						["cost"] = { {"c", DRAGON_SUPPLIES, 10 } },
 					}),
 					i(246487, {	-- Gnomish Tesla Coil (DECOR!)
 						["sourceQuest"] = 92580,	-- Spare A Chair
 					}),
 					i(248934, {	-- Golden Cloud Serpent Treasure Chest (DECOR!)
 						["sourceQuest"] = 93042,	-- Frederick the Fabulous looted
+						["cost"] = 15000000,	-- 1,500g
 					}),
 					i(253173, {	-- Meadery Storage Barrel (DECOR!)
 						["sourceQuest"] = 92572,	-- Furniture Favor
 					}),
 					i(247908, {	-- Nightborne Lantern (DECOR!)
 						["sourceQuest"] = 92581,	-- Last Light
+						["cost"] = { {"c", ORDER_RESOURCES, 50 } },
 					}),
 					i(245259, {	-- Small Val'sharah Bookcase (DECOR!)
 						["sourceQuest"] = 92577,	-- Dreamy Inspiration

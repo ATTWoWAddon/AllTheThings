@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 			ach(15082, {["timeline"] = { ADDED_9_1_0 }}),	-- Flawless: Fracture Chambers (Layer 12)
 			ach(15089, {	-- Flawless Master (Layer 12)
 				["timeline"] = { ADDED_9_1_0 },
-				["g"] = { i(186655) },	-- Mawsworn Charger (MOUNT!)
+				["groups"] = { i(186655) },	-- Mawsworn Charger (MOUNT!)
 			}),
 			ach(15320, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Upper Reaches (Layer 16)
 			ach(15319, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Mort'regar (Layer 16)
@@ -137,7 +137,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 			ach(15316, {["timeline"] = { ADDED_9_2_0 }}),	-- Flawless: Fracture Chambers (Layer 16)
 			ach(15322, {	-- Flawless Master (Layer 16)
 				["timeline"] = { ADDED_9_2_0 },
-				["g"] = { i(188736) },	-- Colossal Soulshredder Mawrat (MOUNT!)
+				["groups"] = { i(188736) },	-- Colossal Soulshredder Mawrat (MOUNT!)
 			}),
 			ach(14776),	-- For the Hoarder!
 			ach(14498, {	-- Gatekeepers of Torghast
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 			ach(15080, {["timeline"] = { ADDED_9_1_0 }}),	-- So Blessed
 			ach(15079, {	-- Many, Many Things
 				["timeline"] = { ADDED_9_1_0 },
-				["g"] = { i(186551) },	-- Mord'al Eveningstar (PET!)
+				["groups"] = { i(186551) },	-- Mord'al Eveningstar (PET!)
 			}),
 			ach(15093, {["timeline"] = { ADDED_9_1_0 }}),	-- Avenge Me!
 			ach(15095, {["timeline"] = { ADDED_9_1_0 }}),	-- No Doubt

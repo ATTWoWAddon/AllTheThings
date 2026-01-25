@@ -1058,7 +1058,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["groups"] = { i(139589) },	-- Poisoned Throwing Knives
 							}),
 							o(252267, {	-- Large Plundered Sack
-								i(141408),	-- Uncrowned Shadowcraft Cap
+								["coord"] = { 32.9, 67.5, THE_HALL_OF_SHADOWS },
+								["groups"] = { i(141408) },	-- Uncrowned Shadowcraft Cap
 							}),
 							o(252270, {	-- Mysterious Crate
 								i(139587),	-- Suspicious Crate (TOY!)

@@ -226,9 +226,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 91391 },	-- Still Scouting
 					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
-					["groups"] = {
-						i(247218),	-- Stone Guard's Badge (QI!)
-					},
+					["groups"] = { i(247218) },	-- Stone Guard's Badge (QI!)
 				}),
 				q(86826, {	-- Nagosh the Scarred
 					["sourceQuests"] = { 91391 },	-- Still Scouting
@@ -338,17 +336,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 91822 },	-- The Regent's Request
 					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(248614),	-- Quel'dorel Artifact (QI!)
-					},
+					["groups"] = { i(248614) },	-- Quel'dorel Artifact (QI!)
 				}),
 				q(91825, {	-- Dead Men Keep No Secrets
 					["sourceQuests"] = { 91822 },	-- The Regent's Request
 					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(248615),	-- Infiltrator's Cache (QI!)
-					},
+					["groups"] = { i(248615) },	-- Infiltrator's Cache (QI!)
 				}),
 				q(91826, {	-- Tripwire Tango
 					["sourceQuests"] = {
@@ -387,7 +381,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					--["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						o(2567202, {
-							 i(248928),	-- Cult Orders (QI!)
+							i(248928),	-- Cult Orders (QI!)
 						}),
 					},
 				}),
@@ -428,6 +422,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["qg"] = 252617,	-- Allari the Souleater
 					["coord"] = { 65.0, 40.6, KARESH },
 					["groups"] = {
+						i(266128),	-- Aberration Part (QI!)
 						i(257715),	-- Dense Hide Scrap (QI!)
 						i(258295),	-- Jagged Fang (QI!)
 						i(257714),	-- Spiny Protrusion (QI!)

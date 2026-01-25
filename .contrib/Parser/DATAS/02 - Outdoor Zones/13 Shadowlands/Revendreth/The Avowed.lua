@@ -233,6 +233,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						}),
 					}),
+					n(TREASURES, {
+						o(364482, {	-- Collected Sinstone Fragments
+							["coord"] = { 72.9, 52.0, REVENDRETH },
+							["isWeekly"] = true,
+							["groups"] = { currency(SINSTONE_FRAGMENTS) },
+						}),
+					}),
 					n(VENDORS, {
 						n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
 							["coord"] = { 73.0, 52.0, REVENDRETH },

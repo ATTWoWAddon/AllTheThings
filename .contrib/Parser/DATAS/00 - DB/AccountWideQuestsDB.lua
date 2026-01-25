@@ -2055,6 +2055,7 @@ local AccountWideQuestsDB = {
 	91081,	-- Hellcaller chest tracker
 	91082,	-- Hellcaller chest tracker
 	91083,	-- Hellcaller chest tracker
+	91029,	-- ??
 	91142,	-- A Tabard for the Trusted
 	91154,	-- Dissenter Tailtrek
 	91166,	-- Hellcaller chest tracker
@@ -2125,6 +2126,7 @@ local AccountWideQuestsDB = {
 	91948,	-- Ensemble: Capes of the Sudden Eclipse
 	91950,	-- Ensemble: Inquisitor's All-Seeing Madness
 	91951,	-- Ensemble: Shawls of Channeled Fury / Ensemble: Living Weapon's Capes
+	95166,	-- Pet the Dog (245551)
 	91968,	-- Welcome Home
 	91969,	-- Time to Decorate
 	92031,	-- Meet the Vandals

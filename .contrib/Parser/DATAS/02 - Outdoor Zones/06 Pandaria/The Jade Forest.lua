@@ -3807,7 +3807,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.6, 15.7, THE_JADE_FOREST },
 						["timeline"] = { ADDED_11_2_7 },
 						["cr"] = 253602,	-- Frederick the Fabulous
-						["groups"] = { i(248934) },	-- Golden Cloud Serpent Treasure Chest (DECOR!)
 					}),
 					o(213742, {	-- Hammer of Ten Thunders
 						["questID"] = 31403,

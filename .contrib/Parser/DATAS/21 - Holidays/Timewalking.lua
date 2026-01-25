@@ -99,7 +99,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(238739) },	-- Chrono Corsair (MOUNT!)
 			})),
-			ach(61394, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_0 } }, {	-- Master of the Turbulent Timeways IV (automated!)
+			ach(61394, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_MID_LAUNCH } }, {	-- Master of the Turbulent Timeways IV (automated!)
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(254694) },	-- Ta'readon's Mount Voucher
 			})),

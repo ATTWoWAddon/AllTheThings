@@ -711,6 +711,7 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(160502),	-- Chemical Blasting Cap
+					i(163203),	-- Hypersensitive Azeritometer Sensor
 					i(163569),	-- Insulated Wiring
 				},
 			}),

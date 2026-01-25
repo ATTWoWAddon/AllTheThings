@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 								o(334696, {	-- Corrupt Black Dragonscales
 									["coord"] = { 47.3, 68.6, 1539 },	-- Blackwing Descent (Scenario)
-									["g"] = { i(171219) },	-- Corrupt Black Dragonscales (QI!)
+									["groups"] = { i(171219) },	-- Corrupt Black Dragonscales (QI!)
 								}),
 								i(172072),	-- Experimental Vial
 							},
@@ -351,7 +351,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								o(324039, {	-- Petrified Dragon Scale
 									["coord"] = { 18.9, 57.8, 1472 },	-- Neltharion's Lair (Scenario)
-									["g"] = { i(167830) },	-- Petrified Ebony Scale (QI!)
+									["groups"] = { i(167830) },	-- Petrified Ebony Scale (QI!)
 								}),
 							},
 						}),
@@ -522,11 +522,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(169652),	-- Bolt of Embroidered Cloth
 								o(329645, {	-- Wrathion's Journal Page
 									["coord"] = { 75.4, 45.1, 46 }, -- Karazan Catacombs
-									["g"] = { i(170490) },	-- Torn Journal Page #58 (QI!)
+									["groups"] = { i(170490) },	-- Torn Journal Page #58 (QI!)
 								}),
 								o(332577, {	-- Burnt Journal Page
 									["coord"] = { 73.4, 48.9, 46 }, -- Karazan Catacombs
-									["g"] = { i(170491) },	-- Burnt Journal Page
+									["groups"] = { i(170491) },	-- Burnt Journal Page
 								}),
 								i(169651),	-- The Ways of the Old Gods
 							},

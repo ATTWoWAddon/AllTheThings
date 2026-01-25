@@ -14,8 +14,6 @@ root(ROOTS.Unsorted, {
 			i(247234),	-- Rustic Harandar Planter
 
 			-- QI
-			i(246112),	-- Alliance Shield
-			i(246126),	-- Horde Axe
 			i(246129),	-- Outsider's Gear
 			i(246152),	-- Saptor Frill
 			i(248814),	-- Witherbark Supplies
@@ -866,10 +864,6 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(242635),	-- Twilight's Blade - Armor - Tabard \\ Twilight's Blade Tabard
 
-
-			-- Misc
-			i(242693),	-- Kafaccino
-
 			-- Cooking
 			i(242744),	-- Hearty Quel'dorei Medley
 			i(242745),	-- Hearty Blooming Feast
@@ -1577,10 +1571,6 @@ root(ROOTS.Unsorted, {
 			i(247498),	-- Recipe: Entropic Illuminant
 			i(247499),	-- Recipe: Haranir Reagent Bowl
 
-			-- Harniri
-			i(246740),	-- Tabard of the Haranir
-			i(246795),	-- Tabard of the Haranir
-
 			-- MIsc
 			i(246745),	-- Triumphant Satchel of Carved Ethereal Crests
 			i(246746),	-- Celebratory Pack of Runed Ethereal Crests
@@ -1900,9 +1890,7 @@ root(ROOTS.Unsorted, {
 			i(251073),	-- Voidstone Shielding Array
 
 			-- QI
-			i(251273),	-- Slightly Magical Crystal
 			i(251284),	-- Anomaly Inverter
-			i(251492),	-- Slightly Magical Crystal Locator
 			-- Prof? Shadolwands?
 			i(251283),	-- Tormented Tantalum
 			-- Prof
@@ -1979,9 +1967,6 @@ root(ROOTS.Unsorted, {
 
 			-- Cooking
 			i(251630),	-- Recipe: Braised Blood Hunter
-
-			-- QI
-			i(251632),	-- Biological Vacuum
 
 			-- Toy
 			i(251633),	-- Bursting Bounty Bundle
@@ -2129,7 +2114,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(253706),	-- Junk Mail
-			i(253750),	-- Luckydo
 
 			-- Prof
 			i(253849),	--
@@ -2912,19 +2896,6 @@ root(ROOTS.Unsorted, {
 			i(257384),	-- Companion Experience
 			i(257386),	-- Heavy Trunk
 
-			-- Quest Armor?
-			i(257523),	-- Woven Haranir Wrappings
-			i(257524),	-- Entwined Haranir Wrappings
-			i(257525),	-- Coarse Haranir Wrappings
-			i(257526),	-- Hardened Haranir Wrappings
-			i(257527),	-- Woven Haranir Cowl
-			i(257528),	-- Entwined Haranir Cowl
-			i(257529),	-- Coarse Haranir Cowl
-			i(257530),	-- Hardened Haranir Cowl
-			i(257531),	-- Woven Haranir Thorns
-			i(257532),	-- Entwined Haranir Thorns
-			i(257533),	-- Coarse Haranir Thorns
-
 			-- PvP
 			i(257535),	-- Galactic Jeweler's Setting
 
@@ -2938,28 +2909,7 @@ root(ROOTS.Unsorted, {
 			i(257543),	-- Scorching Conqueror's Legguards
 			i(257544),	-- Scorching Conqueror's Mantle
 			i(257545),	-- Scorching Conqueror's Cloak
-			i(257546),	-- Hardened Haranir Thorns
 			i(257547),	-- Ensemble: Scorching Conqueror
-			i(257549),	-- Woven Haranir Soles
-			i(257550),	-- Entwined Haranir Soles
-			i(257551),	-- Coarse Haranir Soles
-			i(257552),	-- Hardened Haranir Soles
-			i(257553),	-- Woven Haranir Skirt
-			i(257554),	-- Entwined Haranir Skirt
-			i(257555),	-- Coarse Haranir Skirt
-			i(257556),	-- Hardened Haranir Skirt
-			i(257558),	-- Woven Haranir Leaves
-			i(257559),	-- Entwined Haranir Leaves
-			i(257560),	-- Coarse Haranir Leaves
-			i(257561),	-- Hardened Haranir Leaves
-			i(257562),	-- Woven Haranir Loincloth
-			i(257589),	-- Entwined Haranir Loincloth
-			i(257590),	-- Coarse Haranir Loincloth
-			i(257591),	-- Hardened Haranir Loincloth
-			i(257592),	-- Woven Haranir Vines
-			i(257593),	-- Entwined Haranir Vines
-			i(257594),	-- Coarse Haranir Vines
-			i(257595),	-- Hardened Haranir Vines
 			i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
 			i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
 			i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
@@ -3975,27 +3925,10 @@ root(ROOTS.Unsorted, {
 			-- Pet
 			i(263492),	-- Blitzcreek
 
-			-- DEcor
-			i(246686),	-- Grummle Sleeping Bag
-			i(246741),	-- Grummle Bedroll
-			i(246838),	-- Kafa Press
-			i(248402),	-- Grummle Kafa Refinery
-			i(248403),	-- Grummle Tent
-			i(248405),	-- Kafa Creamer
-			i(248406),	-- Legerdemain Lounge Sign Board
-			i(248407),	-- Dalaran Kafa Table
-			i(251472),	-- Pandaren Wooden Cart
-			i(251473),	-- Commander's Kafa Mug
-			i(251474),	-- Ceramic Kafa Mug
-			i(251475),	-- Dalaran Kafa Grinder
-
 			-- Mount
 			i(252011),	-- Brilliant Petalwing
 
 			-- Decor
-			i(252039),	-- Open Sack of Roasted Kafa
-			i(252040),	-- Sealed Sack of Roasted Kafa
-			i(252041),	-- Dalaran Espresso Machine
 			i(253606),	-- "Brunch and a Book" Unframed Painting
 			i(253609),	-- "River's Protectors" Unframed Painting
 			i(253610),	-- "Isolation" Unframed Painting
@@ -4710,7 +4643,6 @@ root(ROOTS.Unsorted, {
 			i(266123),	-- Sisterhood's Moonlance
 			i(266124),	-- Archer's Shadow Talon
 			i(266125),	-- Priestess' Starblade
-			i(266128),	-- Aberration Part
 			i(266160),	-- Trapper's Green Slippers
 			i(266183),	-- Enigmatic Voidclarion
 			i(266196),	-- Ensemble: Preyseeker's Refined Armor
@@ -4718,16 +4650,6 @@ root(ROOTS.Unsorted, {
 			i(266198),	-- Ensemble: Preyseeker's Rugged Armor
 			i(266199),	-- Ensemble: Preyseeker's Polished Armor
 			i(266213),	-- Incense Materials
-			i(266262),	-- Dawnroot Haranir Channeler
-			i(266263),	-- Wildgrove Haranir Longbow
-			i(266264),	-- Sunpetal Haranir Spire
-			i(266265),	-- Windpetal Haranir Baton
-			i(266266),	-- Moonpetal Haranir Staff
-			i(266267),	-- Thornpierce Haranir Fang
-			i(266268),	-- Rootbound Haranir Claws
-			i(266269),	-- Rootbound Haranir Aegis
-			i(266270),	-- Witherbloom Haranir Staff
-			i(266271),	-- Wildbloom Haranir Warblade
 			i(266314),	-- Novice Combatant's Necklace
 			i(266317),	-- Novice Combatant's Ring
 			i(244656),	-- Silvermoon Painter's Cushion
@@ -4763,16 +4685,6 @@ root(ROOTS.Unsorted, {
 			i(260692),	-- Chunk of Mystery Meat
 			i(260694),	-- Foul Kelp
 			i(260695),	-- Rancid Aquatic Remains
-			i(262957),	-- Tattered Vanguard Banner
-			i(264187),	-- Blessed Phoenix Egg
-			i(264246),	-- Eerie Iridescent Riftshroom
-			i(264332),	-- Amani Ritual Altar
-			i(264491),	-- Voidbound Holding Cell
-			i(264492),	-- Chaotic Void Maw
-			i(264494),	-- Banded Domanaar Storage Crate
-			i(264497),	-- Imperator's Torment Crystal
-			i(264498),	-- Voltaic Trigore Egg
-			i(264500),	-- Devouring Host Ritual Engine
 			i(265387),	-- Cuddly Tomato Grrgle
 			i(265388),	-- Cuddly Lemon Grrgle
 			i(265389),	-- Cuddly Cotton Candy Grrgle
@@ -4798,8 +4710,6 @@ root(ROOTS.Unsorted, {
 			i(265613),	-- Galactic Gladiator's Warglaive
 			i(265621),	-- Galactic Gladiator's Shattered Blade
 			i(265949),	-- March on Quel'Danas Vanquisher's Aureate Trophy
-			i(265950),	-- Dreamrift Vanquisher's Aureate Trophy
-			i(265951),	-- Voidspire Vanquisher's Aureate Trophy
 			i(266064),	-- Elegant Cushioned Chaise
 			i(266370),	-- Dundun's Abundant Travel Method
 			i(266384),	-- Sanctum Magister's Post
@@ -4844,7 +4754,6 @@ root(ROOTS.Unsorted, {
 			i(267004),	-- Twinblade of the Devourer
 			i(267005),	-- Rakan's Totem
 			i(267007),	-- Eye of Acherus
-			i(267008),	-- Crucible Votive Rack
 			i(267009),	-- Amani Training Dummy
 			i(267040),	-- Sea Caller
 			i(267052),	-- Thalassian Alchemy Coveralls
@@ -5260,7 +5169,6 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 			n(ARMOR, {	-- Is this gear for catch up or gear update for dracthyr or the fast pace quest thingy??
-				i(246462),	-- Draconic Polearm
 				i(254332),	-- Garden Tender's Shawl
 				i(254335),	-- Springleaf Swatch
 				i(257244),	-- Dreamfriend's Waistguard

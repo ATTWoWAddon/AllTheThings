@@ -279,48 +279,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 		-- TODO: De-duplicate somehow. It seems that each vendor has a counterpart in the opposing zone, but nothing is really faction-based
 		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
-			n(252605, {	-- Aeeshna
-				["coord"] = { 53.0, 38.2, FOUNDERS_POINT },
-				["timeline"] = { ADDED_12_0_0 },
-				["groups"] = {
-					i(262664, {	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(263048, {	-- Consortium Energy Banner (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(263043, {	-- Consortium Energy Barrel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(263045, {	-- Consortium Energy Collector (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 20 }},
-					}),
-					i(263046, {	-- Consortium Energy Crate (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262884, {	-- Consortium Glowpost (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(263044, {	-- Empty Consortium Energy Barrel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(263047, {	-- Empty Consortium Energy Crate (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262665, {	-- K'areshi Holo-Crystal Projector (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262666, {	-- K'areshi Incense Burner (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 2 }},
-					}),
-					i(262667, {	-- Oath Scale (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(262907, {	-- Tazaveshi Hookah (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-				},
-			}),
 			n(255222, {	-- "High Tides" Ren <Decor Vendor>
 				["coord"] = { 62.4, 80.1, FOUNDERS_POINT },
 				["groups"] = {
@@ -445,7 +403,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					i(248337),	-- Round-Top Boulder (DECOR!)
 				},
 			}),
-			n(255218, {	-- Argan Hammerfist
+			n(255218, {	-- Argan Hammerfist <Decor Vendor>
 				["coord"] = { 52.2, 37.8, FOUNDERS_POINT },
 				["groups"] = {
 					i(244780),	-- Circular Elven Table (DECOR!)
@@ -621,51 +579,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 					}),
 					i(245656),	-- Wooden Gazebo (DECOR!)
 					i(245551),	-- Worker's Wooden Desk (DECOR!)
-				},
-			}),
-			n(252917, {	-- Hesta Forlath <Endeavor Trader>
-				["coords"] = {
-					{ 53.1, 38.3,   FOUNDERS_POINT },
-					{ 54.4, 56.0, RAZORWIND_SHORES },
-				},
-				["timeline"] = { ADDED_12_0_0 },
-				["groups"] = {
-					i(253601, {	-- 590 Quel'Lithien Red (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253523, {	-- Astalor's Hookah (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253600, {	-- Eversong Crystal Glass (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					i(253522, {	-- Thalassian Chest (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the endeavors as these items are locked behind them
-					-- Reach the first milestone of the endeavor
-					i(253524, {	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					i(254235, {	-- Sin'dori Artisan's Easel (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 5 }},
-					}),
-					-- Reach the second milestone of the endeavor
-					i(253525, {	-- Thalassian Academy Dictation Device (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 10 }},
-					}),
-					-- Reach the third milestone of the endeavor
-					i(253526, {	-- Sin'dorei Wine Display (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					i(253599, {	-- Artisanal Display Tent (DECOR!)
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 15 }},
-					}),
-					-- Reach the fourth milestone of the endeavor
-					-- Exo Note: This will probably have some HQT hidden behind it. Used to buy paintings in Silvermoon Bazaar but tooltip states "you don't need to keep the deed on you".
-					i(253802, {	-- Deed of Patronage
-						["cost"] = {{ "c", COMMUNITY_COUPONS, 30 }},
-					}),
 				},
 			}),
 			n(255942, {	-- Jendry Clockson <Donut Vendor>
