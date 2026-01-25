@@ -1,9 +1,6 @@
 11.2.7.63642
 ach(61516),	-- Radiant Singer
 12.0.0.63534
-ach(41293),	-- The Restless Heart kills (Normal Windrunner Spire) \\ [PH] Restless Heart kills (Normal Windrunner Spire)
-ach(41294),	-- The Restless Heart kills (Heroic Windrunner Spire) \\ [PH] Restless Heart kills (Heroic Windrunner Spire)
-ach(41295),	-- The Restless Heart kills (Mythic Windrunner Spire) \\ [PH] Restless Heart kills (Mythic Windrunner Spire)
 ach(41802),	-- Eversong In Reprise \\ Eversong Woods
 ach(41803),	-- For Zul'Aman! \\ Living Amani Legend
 ach(41804),	-- One Does Not Simply Walk Into Harandar \\ Harandar
@@ -19,8 +16,6 @@ ach(61212),	-- Magisters' Terrace
 ach(61213),	-- Heroic: Magisters' Terrace
 ach(61214),	-- Mythic: Magisters' Terrace
 ach(61219),	-- No Time to Paws
-ach(61444),	-- Vicious Saddle (43)
-ach(61445),	-- Vicious Saddle (43)
 ach(61452),	-- Sojourner of Zul'Aman
 ach(61453),	-- Making an Amani Out of You
 ach(61455),	-- Shadowpine Scattered
@@ -31,9 +26,6 @@ ach(61507),	-- A Bloody Song
 ach(61508),	-- Voidscar Arena
 ach(61509),	-- Heroic: Voidscar Arena
 ach(61510),	-- Mythic: Voidscar Arena
-ach(61511),	-- Charonus kills (Normal Voidscar Arena)
-ach(61512),	-- Charonus kills (Heroic Voidscar Arena)
-ach(61513),	-- Charonus kills (Mythic Voidscar Arena)
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
 ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
 ach(61521),	-- Skyriding Glyphs: The Shining Span
@@ -110,18 +102,6 @@ ach(61646),	-- Heroic: Nexus-Point Xenas
 ach(61647),	-- Mythic: Nexus-Point Xenas
 ach(61648),	-- Heroic: The Blinding Vale
 ach(61649),	-- Mythic: The Blinding Vale
-ach(61650),	-- Nalorakk kills (Normal Den of Nalorakk)
-ach(61651),	-- Nalorakk kills (Heroic Den of Nalorakk)
-ach(61652),	-- Nalorakk kills (Mythic Den of Nalorakk)
-ach(61653),	-- Rak'tul, Vessel of Souls kills (Normal Maisara Caverns)
-ach(61654),	-- Rak'tul, Vessel of Souls kills (Heroic Maisara Caverns)
-ach(61655),	-- Rak'tul, Vessel of Souls kills (Mythic Maisara Caverns)
-ach(61656),	-- Lothraxion kills (Normal Nexus-Point Xenas)
-ach(61657),	-- Lothraxion kills (Heroic Nexus-Point Xenas)
-ach(61658),	-- Lothraxion kills (Mythic Nexus-Point Xenas)
-ach(61659),	-- Ziekket kills (Normal The Blinding Vale)
-ach(61660),	-- Ziekket kills (Heroic The Blinding Vale)
-ach(61661),	-- Ziekket kills (Mythic The Blinding Vale)
 ach(61678),	-- Midnight Superior
 ach(61679),	-- Midnight Epic
 ach(61681),	-- Abundance: You Should See Him in a Crown \\ You Should See Him in a Crown
@@ -157,31 +137,6 @@ ach(61733),	-- Shadowguard Point Stories \\ Shadowguard Point Stories NEED UPDAT
 ach(61734),	-- Midnight Delves: Endgame
 ach(61739),	-- Sojourner of Harandar
 ach(61741),	-- Delve Loremaster: Midnight
-ach(61767),	-- Parhelion Plaza clears
-ach(61768),	-- Sunkiller Sanctum clears
-ach(61769),	-- Shadowguard Point clears
-ach(61770),	-- Atal'Aman clears
-ach(61771),	-- Collegiate Calamity clears
-ach(61772),	-- The Grudge Pit clears
-ach(61773),	-- The Gulf of Memory clears
-ach(61774),	-- The Shadow Enclave clears
-ach(61775),	-- Twilight Crypts clears
-ach(61776),	-- The Darkway clears
-ach(61777),	-- Torment's Rise clears
-ach(61778),	-- Midnight companion levels obtained
-ach(61779),	-- Midnight Tier 1 delves completed
-ach(61780),	-- Midnight Tier 2 delves completed
-ach(61781),	-- Midnight Tier 3 delves completed
-ach(61782),	-- Midnight Tier 4 delves completed
-ach(61783),	-- Midnight Tier 5 delves completed
-ach(61784),	-- Midnight Tier 6 delves completed
-ach(61785),	-- Midnight Tier 7 delves completed
-ach(61786),	-- Midnight Tier 8 delves completed
-ach(61787),	-- Midnight Tier 9 delves completed
-ach(61788),	-- Midnight Tier 10 delves completed
-ach(61789),	-- Midnight Tier 11 delves completed
-ach(61790),	-- Midnight total delves completed
-ach(61791),	-- Midnight delve completed the most
 ach(61796),	-- Midnight: Journey's End (Season 1)
 ach(61797),	-- My Shady Nemesis
 ach(61798),	-- Lighting the Dark
@@ -346,11 +301,6 @@ ach(62288),	-- Eversong Woods: The Highest Peaks
 ach(62289),	-- Zul'Aman: The Highest Peaks
 ach(62290),	-- Harandar: The Highest Peaks
 ach(62291),	-- Voidstorm: The Highest Peaks
-ach(62292),	-- Adventurer Dawncrests earned
-ach(62293),	-- Veteran Dawncrests earned
-ach(62294),	-- Champion Dawncrests earned
-ach(62295),	-- Hero Dawncrests earned
-ach(62296),	-- Myth Dawncrests earned
 ach(62324),	-- Abundance: Loa of all Trades
 ach(62325),	-- Abundance: Treasures Aplenty
 ach(62326),	-- Abundance: Golden Opportunities
