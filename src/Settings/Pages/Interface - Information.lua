@@ -941,7 +941,7 @@ local InformationTypes = {
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3,
 		-- CRIEVE NOTE: Recursive is actually not true, some items get new sources later. The distinction for pre-Cata being non-recursive might be necessary, but since we're overriding the process function it should be fine this way.
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
-			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
+			local rwp = t.GetValue(t, reference);
 			if rwp then
 				if app.GameBuildVersion < rwp then
 					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
