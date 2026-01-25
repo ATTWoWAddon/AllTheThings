@@ -31,13 +31,6 @@ jobs:
       proceed: ${{ steps.guard.outputs.proceed }}
       beta_local_tag: ${{ steps.guard.outputs.beta_local_tag }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 300
-          fetch-tags: true
-          ref: ${{ github.sha }}
-
       - name: Determine mode
         id: mode
         shell: bash
@@ -52,6 +45,14 @@ jobs:
 
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Selected mode: $MODE"
+
+      - name: Checkout code
+        uses: actions/checkout@v6
+        if: steps.mode.outputs.mode == 'beta'
+        with:
+          fetch-depth: 300
+          fetch-tags: true
+          ref: ${{ github.sha }}
 
       - name: Default proceed for non-beta modes
         id: proceed_default
