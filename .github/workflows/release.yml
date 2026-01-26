@@ -7,7 +7,7 @@ name: Release
 on:
   # Alpha: run on every commit pushed to master
   push:
-    branches: [ master ]
+  #  branches: [ master ]
     tags:
       - "*" # Only release tags are expected to be pushed; beta tags are local-only.
 
