@@ -17,11 +17,6 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 		self.initialized = true
 		local SearchForObject = app.SearchForObject
 
-		function self:Rebuild()
-			self:AssignChildren()
-			self:Update(true)
-		end
-
 		function self:ClearResults()
 			local fixed = {}
 			for _, row in ipairs(self.data.g) do

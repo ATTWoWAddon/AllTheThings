@@ -227,7 +227,7 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 				['g'] = { },
 			})
 			self:SetData(mainHeader);
-			self.Rebuild = function(self, no)
+			self.RebuildRandom = function(self, no)
 				-- Rebuild all the datas
 				wipe(self.data.g);
 
@@ -275,7 +275,7 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
-				Push(self, "Rebuild", self.Rebuild);
+				Push(self, "Rebuild", self.RebuildRandom);
 			end
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);

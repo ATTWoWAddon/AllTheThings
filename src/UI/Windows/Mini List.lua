@@ -1,14 +1,71 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
+
+if app.IsRetail then return; end
+
 local contains, containsValue = app.contains, app.containsValue;
-local AssignChildren, ExpandGroupsRecursively, GetRelativeValue, MergeObject, SearchForField
-	= app.AssignChildren, app.ExpandGroupsRecursively, app.GetRelativeValue, app.MergeObject, app.SearchForField;
-local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
+local ExpandGroupsRecursively, GetRelativeValue, MergeObject
+	= app.ExpandGroupsRecursively, app.GetRelativeValue, app.MergeObject;
 
 -- Global locals
-local ipairs, pairs, tinsert, getmetatable, setmetatable, tostring =
-	  ipairs, pairs, tinsert, getmetatable, setmetatable, tostring;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
+local ipairs, pairs, tinsert, math_floor, getmetatable, setmetatable, tostring =
+	  ipairs, pairs, tinsert, math.floor, getmetatable, setmetatable, tostring;
+local C_Map_GetMapInfo, C_Map_GetPlayerMapPosition
+	= C_Map.GetMapInfo, C_Map.GetPlayerMapPosition;
+
+-- Discord Error Reporting
+local function BuildDiscordMapInfoTable(id, mapInfo)
+	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
+	mapInfo = mapInfo or C_Map_GetMapInfo(id)
+	local info = {
+		"### missing-map"..":"..id,
+		"```elixir",	-- discord fancy box start
+		"L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")",
+		id and ("mapID:"..id.." ("..(mapInfo.name or ("Map ID #" .. id))..")") or "mapID:??",
+		"real-name:"..(GetRealZoneText() or "?"),
+		"sub-name:"..(GetSubZoneText() or "?"),
+	};
+
+	local mapID = mapInfo.parentMapID
+	while mapID do
+		mapInfo = C_Map_GetMapInfo(mapID)
+		if mapInfo then
+			tinsert(info, "> parentMapID:"..mapID.." ("..(mapInfo.name or "??")..")")
+			mapID = mapInfo.parentMapID;
+		else break
+		end
+	end
+
+	local position, coord = id and C_Map_GetPlayerMapPosition(id, "player"), nil;
+	if position then
+		local x,y = position:GetXY();
+		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
+	end
+	tinsert(info, coord and ("coord:"..coord) or "coord:??");
+
+	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
+		local acctUnlocks = {
+			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
+			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
+			IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
+		}
+		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "/"))
+	end
+	tinsert(info, "lq:"..(app.TableConcat(app.MostRecentQuestTurnIns or app.EmptyTable, nil, nil, "<") or ""));
+
+	local inInstance, instanceType = IsInInstance()
+	tinsert(info, "instance:"..(inInstance and "true" or "false")..":"..(instanceType or ""))
+	tinsert(info, "ver:"..app.Version);
+	tinsert(info, "build:"..app.GameBuildVersion);
+	tinsert(info, "```");	-- discord fancy box end
+	return info
+end
+local function ShowDiscordReportPopupForMapID(mapID)
+	local popupID = "map-" .. mapID
+	app:SetupReportDialog(popupID, "Missing Map: " .. mapID, BuildDiscordMapInfoTable(mapID, mapInfo))
+	app.report(app:Linkify(app.Version.." (Click to Report) No data found for this Location!", app.Colors.ChatLinkError, "dialog:" .. popupID));
+end
 
 -- Local variables
 local SortTypeByHeaderID = setmetatable({
@@ -50,10 +107,11 @@ local function SortForMiniList(a,b)
 	-- Any two similar-type groups with text
 	return tostring(a.name or a.text) < tostring(b.name or b.text);
 end
-local CachedMapData = setmetatable({}, {
+local ClassicMapDataStyleMetatable = {
+	__mode = "kv",
 	__index = function(cachedMapData, mapID)
 		if mapID then
-			local results = SearchForField("mapID", mapID);
+			local results = app.SearchForField("mapID", mapID);
 			if #results > 0 then
 				-- Simplify the returned groups
 				local groups = {};
@@ -100,21 +158,7 @@ local CachedMapData = setmetatable({}, {
 					MergeObject(headers[headerID].g, o);
 				end
 
-				-- If there's a timerunning event going on...
-				local timerunningSeasonEventID = GetTimerunningSeasonEventID();
-				if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
-					local refined = {};
-					for _,j in ipairs(results) do
-						if GetRelativeValue(j, "e") == timerunningSeasonEventID then
-							tinsert(refined, j);
-						end
-					end
-					results = refined;
-				end
-
-				local header = {};
-				header.mapID = mapID;
-				header.g = groups;
+				local header = app.CreateMap(mapID, groups);
 				for i, group in ipairs(results) do
 					local clone = {};
 					for key,value in pairs(group) do
@@ -247,36 +291,28 @@ local CachedMapData = setmetatable({}, {
 				end
 
 				-- Check to see completion...
-				AssignChildren(results);
+				app.AssignChildren(results);
 				cachedMapData[mapID] = results;
 				return results;
 			else
 				-- If we don't have any map data on this area, report it to the chat window.
-				print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
-
-				local mapInfo = C_Map_GetMapInfo(mapID);
-				if mapInfo then
-					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-					mapID = mapInfo.parentMapID;
-					while mapID do
-						mapInfo = C_Map_GetMapInfo(mapID);
-						if mapInfo then
-							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
-							mapID = mapInfo.parentMapID;
-						else
-							break;
-						end
-					end
-					print("Path: ", mapPath);
-				end
-				print("Please report this to the ATT Discord! Thanks! ", app.Version);
+				ShowDiscordReportPopupForMapID(mapID);
 			end
 		end
 	end
-});
+};
+
+-- Shared Mini List Behaviours
+-- CRIEVE NOTE: I want to do some fancy Settings Menu Style thing to make it configurable, 
+-- maybe have a couple more styles or have them be extensible via an addon extension
+local CachedMapData = setmetatable({}, app.IsRetail and RetailMapDataStyleMetatable or ClassicMapDataStyleMetatable);
 app.GetCachedDataForMapID = function(mapID)
 	return CachedMapData[mapID];
 end
+app.AddEventHandler("OnSettingsNeedsRefresh", function()
+	-- if settings change that require a refresh, wipe cached maps
+	wipe(CachedMapData)
+end)
 
 -- Implementation
 app:CreateWindow("MiniList", {
@@ -284,6 +320,7 @@ app:CreateWindow("MiniList", {
 	SettingsName = "Mini List",
 	IsTopLevel = true,
 	Preload = true,
+	mapID = -1,
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
@@ -298,31 +335,75 @@ app:CreateWindow("MiniList", {
 		"attmini",
 		"attminilist",
 	},
+	SetMapID = function(self, mapID, show)
+		if mapID and mapID ~= self.mapID then
+			self.mapID = mapID;
+			self:Rebuild();
+		end
+		if show then
+			self:Show();
+		end
+	end,
 	OnInit = function(self, handlers)
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
 			wipe(CachedMapData);
 			self:Rebuild();
 		end
-		self.SetMapID = function(self, mapID, show)
-			if mapID and mapID ~= self.mapID then
-				self.mapID = mapID;
-				if show then
-					self:Rebuild();
-					self:Show();
-				end
-			end
-		end
 		app.ToggleMiniListForCurrentZone = function()
 			if self:IsVisible() then
 				self:Hide();
 			else
-				self:SetMapID(app.CurrentMapID);
-				self:Show();
+				self:SetMapID(app.CurrentMapID, true);
 			end
-		end;
+		end
 		app.LocationTrigger = function(forceNewMap, fromWhere)
 			if forceNewMap then wipe(CachedMapData); end
 			self:DelayedRebuild();
+		end
+		
+		if app.IsRetail then
+			-- CRIEVE NOTE: I don't like the expand after the fact
+			-- If there's a way to do that immediately that'd be swell
+			app.AddEventHandler("OnWindowFillComplete", function(window)
+				if window.Suffix ~= self.Suffix then return end
+				local mapData = window.data
+				local g = mapData and mapData.g
+				if not g then return end
+
+				-- app.PrintDebug("Try expand minilist",app.Settings:GetTooltipSetting("Expand:Difficulty"),app.GetCurrentDifficultyID())
+				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+					local difficultyID = app.GetCurrentDifficultyID()
+					if difficultyID and difficultyID ~= 0 then
+						local expanded, row
+						for i=1,#g do
+							row = g[i]
+							if row.difficultyID or row.difficulties then
+								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									ExpandGroupsRecursively(row, true, true)
+									expanded = true
+								elseif row.expanded then
+									ExpandGroupsRecursively(row, false, true)
+								end
+							-- Zone Drops/Common Boss Drops should also be expanded within instances
+							-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
+							end
+						end
+
+						if expanded then
+							window:Update();
+							return
+						end
+					end
+				end
+				-- check to expand groups after they have been built and updated
+				-- dont re-expand if the user has previously full-collapsed the minilist
+				-- need to force expand if so since the groups haven't been updated yet
+				if not window.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
+					window.ExpandInfo = { Expand = true };
+					window:Update();
+				end
+			end);
 		end
 	end,
 	OnLoad = function(self, settings)
@@ -337,7 +418,20 @@ app:CreateWindow("MiniList", {
 	end,
 	OnRebuild = function(self)
 		if self.mapID then
-			self:SetData(CachedMapData[self.mapID]);
+			-- Reset the minilist Runner before building new data
+			local mapData = CachedMapData[self.mapID];
+			if mapData ~= self.data then
+				self:GetRunner().Reset()
+				self:SetData(mapData);
+				
+				-- Fill up the groups that need to be filled!
+				app.SetSkipLevel(2);
+				app.FillGroups(mapData);
+				app.SetSkipLevel(0);
+				
+				-- Make sure to scroll to the top when being rebuilt
+				self.ScrollBar:SetValue(1);
+			end
 		end
 	end,
 });

@@ -814,8 +814,6 @@ local function UpdateVisibleRowData(self)
 				OnEnter(row)
 			end
 		end
-	else
-		self:Hide();
 	end
 end
 local function StopMovingOrSizing(self)
@@ -2730,8 +2728,6 @@ end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if definition then
-		definition.GetShouldAutomaticallyOpen = GetShouldAutomaticallyOpen;
-		definition.SetShouldAutomaticallyOpen = SetShouldAutomaticallyOpen;
 		if definition.Preload then
 			-- This window still needs to be loaded right away
 			if AllWindowSettingsLoaded then
