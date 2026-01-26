@@ -303,8 +303,6 @@ local ClassicMapDataStyleMetatable = {
 
 -- Retail Style Mini List
 -- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
--- Wraps a given object such that it can act as an unfiltered Header of the base group
-local CreateWrapVisualHeader = app.CreateVisualHeaderWithGroups
 -- Returns the consolidated data format for the next header level
 -- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
 local function CreateHeaderData(group, header)
@@ -312,7 +310,7 @@ local function CreateHeaderData(group, header)
 	if header then
 		-- special case for Difficulty headers, need to be actual difficulty groups to merge properly with any existing
 		if header.difficultyID then
-			header = CreateObject(header, true)
+			header = app.CloneClassInstance(header, true)
 			header.g = { group }
 			return header
 		end
@@ -320,7 +318,8 @@ local function CreateHeaderData(group, header)
 		if header.type == "m" and header.keyval == self.mapID then
 			return group
 		end
-		header = CreateWrapVisualHeader(header, {group})
+		header = app.CloneClassInstance(header, true)
+		header.g = {group};
 		header.SortType = "Global"
 		return header
 	else
@@ -401,7 +400,7 @@ local RetailMapDataStyleMetatable = {
 			-- split search results by whether they represent the 'root' of the minilist or some other mapped content
 			for i=1,#results do
 				-- do not use any raw Source groups in the final list
-				group = CreateObject(results[i]);
+				group = app.CloneClassInstance(results[i]);
 				groupmapID = group.mapID
 				groupmaps = group.maps
 				-- Instance/Map/Class/Header(of current map) groups are allowed as root of minilist
@@ -698,8 +697,13 @@ app:CreateWindow("MiniList", {
 		if self.mapID then
 			-- Reset the minilist Runner before building new data
 			local mapData = CachedMapData[self.mapID];
-			if mapData ~= self.data then
-				self:GetRunner().Reset()
+			local oldData = self.data;
+			if mapData ~= oldData then
+				if oldData then
+					-- Unassign this window as the target so that Runner doesn't update the totals
+					oldData.window = nil;
+					self:GetRunner().Reset()
+				end
 				self:SetData(mapData);
 				
 				-- Fill up the groups that need to be filled!
