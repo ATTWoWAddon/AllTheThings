@@ -156,11 +156,7 @@ app:CreateWindow("Prime", {
 		app.ToggleMainList = function()
 			self:Toggle();
 		end
-	end,
-	OnRebuild = function(self)
-		-- Prime's data is built elsewhere.
 		self:SetData(app:GetDataCache());
-		return false;
 	end,
 	OnUpdate = function(self, ...)
 		self:DefaultUpdate(...);
