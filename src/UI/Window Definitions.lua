@@ -1874,7 +1874,9 @@ app.AddEventHandler("OnInit", function()
 	
 	-- Okay, NOW apply visible
 	for name, window in pairs(app.Windows) do
-		window:SetVisible(window.Settings.visible);
+		if window.Settings and window.Settings.visible then
+			window:SetVisible(window.Settings.visible);
+		end
 	end
 
 	-- Regenerate the Dynamic Windows
