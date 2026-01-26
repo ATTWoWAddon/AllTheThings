@@ -492,6 +492,19 @@ local ShouldSkipAutoExpandForKey = setmetatable({
 		end
 		return false;
 	end,
+	KEYLESS = function(group)
+		print("ShouldSkipAutoExpandForKey - Group Missing valid 'key':");
+		for key,value in pairs(group) do
+			print(" ", key, value);
+		end
+		if group.g then
+			print("  ", "#g", #group.g);
+			for key,value in pairs(group.g[1]) do
+				print("  ", key, value);
+			end
+		end
+		return false;
+	end,
 }, {
 	__index = function(t, key)
 		t[key] = app.ReturnFalse;
@@ -523,7 +536,7 @@ local function ForceExpandGroupsRecursively(group, expanded)
 end
 local function ConditionallyExpandGroupsRecursively(group, expanded)
 	local g = group.g
-	if g and not ShouldSkipAutoExpandForKey[group.key](group) and
+	if g and not ShouldSkipAutoExpandForKey[group.key or "KEYLESS"](group) and
 		-- incomplete things actually exist below itself
 		((group.total or 0) > (group.progress or 0)) and
 		-- account/debug mode is active or it is not a 'saved' thing for this character
@@ -709,8 +722,8 @@ local function SetRowData(self, row, data)
 			if AsyncRefreshFunc then
 				AsyncRefreshFunc(data)
 			else
-				-- app.PrintDebug("No Async Refresh Func for Type!",data.__type)
-				Callback(self.Refresh, self)
+				-- app.PrintDebug("No Async Redraw Func for Type!",data.__type)
+				Callback(self.Redraw, self)
 			end
 		else
 			row.text = text;
@@ -2765,9 +2778,7 @@ function app:CreateWindow(suffix, definition)
 	if definition then
 		if definition.Preload then
 			-- This window still needs to be loaded right away
-			if AllWindowSettingsLoaded then
-				return app:GetWindow(suffix);
-			end
+			return app:GetWindow(suffix);
 		elseif definition.Commands then
 			local onCommand;
 			if definition.OnCommand then
@@ -2955,6 +2966,8 @@ OnInitForPopout = function(self, group)
 	else
 		self:SetData(group);
 	end
+	group.back = 1;
+	group.indent = 0;
 
 	app.HandleEvent("OnNewPopoutGroup", self.data)
 	-- Sort any content added to the Popout data by the Global sort (not for popped out difficulty groups)

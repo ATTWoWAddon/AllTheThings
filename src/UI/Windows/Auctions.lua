@@ -139,7 +139,6 @@ app:CreateWindow("Auctions", {
 	Commands = { "attauctions" },
 	TooltipAnchor = "ANCHOR_RIGHT",
 	IgnoreQuestUpdates = true,
-	IgnoreSettings = true,
 	Preload = true,
 	OnInit = function(self, handlers)
 		function ProcessAuctions()

@@ -229,8 +229,6 @@ if ItemEventListener then
 		end)
 		return true
 	end
-else
-	ItemAsyncRefreshFunc = app.EmptyFunction;
 end
 app.AddEventRegistration("ITEM_DATA_LOAD_RESULT", function(itemID, success)
 	if not success then

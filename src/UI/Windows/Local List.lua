@@ -1,7 +1,6 @@
 -- App locals
 local _, app = ...;
 local contains = app.contains;
-local AssignChildren = app.AssignChildren;
 
 -- Global locals
 local ipairs, setmetatable =
@@ -34,9 +33,6 @@ local CachedLocalMapData = setmetatable({}, {
 			__currentMapID = mapID;
 			local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, LocalMapFilter);
 			if results and #results > 0 then
-				local f = {g=results};
-				AssignChildren(f);
-				app.ExpandGroupsRecursively(f, true);
 				cachedLocalMapData[mapID] = results;
 				return results;
 			else
@@ -92,10 +88,9 @@ app:CreateWindow("Local List", {
 			OnUpdate = function(t)
 				local data = CachedLocalMapData[self.mapID];
 				if data and data ~= t.g then
-					for i,o in ipairs(data) do
-						o.parent = t;
-					end
 					t.g = data;
+					self:AssignChildren();
+					self:ExpandData(true);
 				end
 			end,
 		}));
