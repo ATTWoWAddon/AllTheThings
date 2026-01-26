@@ -1716,7 +1716,9 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
 	end
-	if AllWindowSettingsLoaded then self:SetVisible(windowSettings.visible); end
+	if AllWindowSettingsLoaded or self:GetShouldAutomaticallyOpen() then
+		self:SetVisible(windowSettings.visible);
+	end
 	self.RecordSettings = oldRecordSettings;
 end
 local function BuildDefaultsForWindow(self, fromSettings)
@@ -1869,8 +1871,16 @@ app.AddEventHandler("OnInit", function()
 	
 	-- Okay, NOW apply visible
 	for name, window in pairs(app.Windows) do
-		if window.Settings and window.Settings.visible then
-			window:SetVisible(window.Settings.visible);
+		local settings = window.Settings;
+		if settings and (settings.visible or settings.ShouldAutomaticallyOpen) then
+			window:Show();
+		end
+	end
+	
+	for name, definition in pairs(app.WindowDefinitions) do
+		local settings = AllWindowSettings[name];
+		if settings and (settings.visible or settings.ShouldAutomaticallyOpen) then
+			app:GetWindow(name):Show();
 		end
 	end
 
@@ -1879,14 +1889,19 @@ app.AddEventHandler("OnInit", function()
 		settings.visible = false;
 		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
 	end
-	
-	for name, definition in pairs(app.WindowDefinitions) do
-		local settings = AllWindowSettings[name];
-		if settings and settings.visible then
-			app:GetWindow(name);
-		end
-	end
 end);
+
+-- Automatic Opening Opt-In Methods
+GetShouldAutomaticallyOpen = function(self)
+	if self.Settings then
+		return self.Settings.ShouldAutomaticallyOpen;
+	end
+end
+SetShouldAutomaticallyOpen = function(self, shouldAutomaticallyOpen)
+	if self.Settings then
+		self.Settings.ShouldAutomaticallyOpen = shouldAutomaticallyOpen;
+	end
+end
 
 -- Window UI Event Handlers
 local tinsert = tinsert;
@@ -2166,6 +2181,10 @@ local FieldDefaults = {
 		return Runner
 	end,
 	
+	-- Automatic Opening Opt-In Methods
+	GetShouldAutomaticallyOpen = GetShouldAutomaticallyOpen,
+	SetShouldAutomaticallyOpen = SetShouldAutomaticallyOpen,
+	
 	-- Rendering Functions
 	HasPendingUpdate = true,
 	AssignChildren = function(self)
@@ -2216,15 +2235,18 @@ local ReservedFields = {
 	OnHide = true,
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
+	GetShouldAutomaticallyOpen = true,
+	SetShouldAutomaticallyOpen = true,
 };
 local function BuildWindow(suffix)
-	local settings = app.WindowDefinitions[suffix];
-	if not settings then	-- Deprecated, but supported in Retail for now.
-		settings = {
+	local definition = app.WindowDefinitions[suffix];
+	if not definition then
+		-- Deprecated, but supported in Retail for now.
+		definition = {
 			OnInit = app:CustomWindowInit(suffix),
 			OnUpdate = app:CustomWindowUpdate(suffix),
 		};
-		app.WindowDefinitions[suffix] = settings;
+		app.WindowDefinitions[suffix] = definition;
 	else
 		app.WindowDefinitions[suffix] = nil;
 	end
@@ -2251,16 +2273,16 @@ local function BuildWindow(suffix)
 		window[field] = value;
 	end
 	
-	-- Copy all non-reserved fields on to the window frame.
-	for field,value in pairs(settings) do
+	-- Copy all non-reserved fields on the definition to the window frame.
+	for field,value in pairs(definition) do
 		if not ReservedFields[field] then
 			window[field] = value;
 		end
 	end
 	
 	-- Load / Save, which allows windows to keep track of key pieces of information.
-	local defaults = BuildDefaultsForWindow(window, settings.Defaults);
-	local onLoad, onSave = settings.OnLoad, settings.OnSave;
+	local defaults = BuildDefaultsForWindow(window, definition.Defaults);
+	local onLoad, onSave = definition.OnLoad, definition.OnSave;
 	ApplySettingsForWindow(window, defaults);
 	function window:Load(windowSettings)
 		setmetatable(windowSettings, { __index = defaults });
@@ -2279,7 +2301,7 @@ local function BuildWindow(suffix)
 		end,
 	};
 	window:RegisterEvent("PLAYER_LOGOUT");
-	if settings.Debugging then window:SetScript("OnEvent", OnEventDebugging); end
+	if definition.Debugging then window:SetScript("OnEvent", OnEventDebugging); end
 	window:HookScript("OnEvent", function(o, e, ...)
 		local handler = handlers[e];
 		if handler then
@@ -2301,7 +2323,7 @@ local function BuildWindow(suffix)
 	end)
 
 	-- Register events to allow settings to be recorded.
-	local onHide, onShow = settings.OnHide, settings.OnShow;
+	local onHide, onShow = definition.OnHide, definition.OnShow;
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
 	window:SetScript("OnMouseUp", StopMovingOrSizing);
 	window:SetScript("OnHide", function(self)
@@ -2341,10 +2363,10 @@ local function BuildWindow(suffix)
 	-- Phase 2: Update, which takes the prepared data and revalidates it.
 	-- Phase 3: Refresh, which simply refreshes the rows as they are with the row data.
 	-- Phase 4: Redraw, which only updates the rows that already have row data visually.
-	local onRebuild = settings.OnRebuild;
+	local onRebuild = definition.OnRebuild;
 	if onRebuild then
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:ForceRebuild()
 				print("ForceRebuild: " .. suffix);
 				local lastUpdate = debugprofilestop();
@@ -2390,7 +2412,7 @@ local function BuildWindow(suffix)
 			end
 		end
 	else
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:ForceRebuild()
 				if self.data then
 					print("ForceRebuild: " .. suffix);
@@ -2430,9 +2452,9 @@ local function BuildWindow(suffix)
 		end
 	end
 	
-	local OnUpdate = settings.OnUpdate;
+	local OnUpdate = definition.OnUpdate;
 	if OnUpdate then
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:ForceUpdate(force, trigger)
 				print("ForceUpdate: " .. suffix, force, trigger);
 				local lastUpdate = debugprofilestop();
@@ -2470,7 +2492,7 @@ local function BuildWindow(suffix)
 			end
 		end
 	else
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:ForceUpdate(force, trigger)
 				print("ForceUpdate: " .. suffix, force, trigger);
 				local lastUpdate = debugprofilestop();
@@ -2509,9 +2531,9 @@ local function BuildWindow(suffix)
 		end
 	end
 	
-	local onRefresh = settings.OnRefresh;
+	local onRefresh = definition.OnRefresh;
 	if onRefresh then
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:Refresh()
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
@@ -2527,7 +2549,7 @@ local function BuildWindow(suffix)
 			end
 		end
 	else
-		if settings.Debugging then
+		if definition.Debugging then
 			function window:Refresh()
 				if self:IsShown() then
 					print("Refresh: " .. suffix);
@@ -2619,7 +2641,7 @@ local function BuildWindow(suffix)
 	});
 	container:Show();
 	
-	if not settings.IgnoreQuestUpdates and false then
+	if not definition.IgnoreQuestUpdates and false then
 		local delayedRefresh = function()
 			window:DelayedRefresh();
 		end;
@@ -2645,7 +2667,7 @@ local function BuildWindow(suffix)
 		handlers.QUEST_LOG_UPDATE = delayedUpdate;
 		window:RegisterEvent("QUEST_LOG_UPDATE");
 	end
-	if not settings.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
+	if not definition.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
 		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
 		local WasHiddenByPetBattle;
 		handlers.PET_BATTLE_OPENING_START = function()
@@ -2667,7 +2689,7 @@ local function BuildWindow(suffix)
 	end
 
 	-- Add command processing
-	local onCommand = settings.OnCommand;
+	local onCommand = definition.OnCommand;
 	if onCommand then
 		function window:ProcessCommand(cmd)
 			if not onCommand(self, cmd) then
@@ -2677,26 +2699,26 @@ local function BuildWindow(suffix)
 	else
 		window.ProcessCommand = window.Toggle;
 	end
-	if settings.OnInit then
-		settings.OnInit(window, handlers);
+	if definition.OnInit then
+		definition.OnInit(window, handlers);
 		if not (window.data and window.data.window) and not window.IsTopLevel then
 			print(window.Suffix, "OI! You forgot to use self:SetData(data) in the OnInit!");
 		end
 	end
-	if settings.Commands then
+	if definition.Commands then
 		if not window.SettingsName then
 			window.SettingsName = window.Suffix
 		end
-		app.AddSlashCommands(settings.Commands, function(cmd) window:ProcessCommand(cmd) end)
-		local primaryCommand = "/" .. settings.Commands[1];
+		app.AddSlashCommands(definition.Commands, function(cmd) window:ProcessCommand(cmd) end)
+		local primaryCommand = "/" .. definition.Commands[1];
 		app.ChatCommands.Help[primaryCommand:lower()] = {
-			settings.UsageText or ("Usage: " .. primaryCommand),
-			settings.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
+			definition.UsageText or ("Usage: " .. primaryCommand),
+			definition.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
 		};
 	end
 	
-	-- If window settings were already loaded, then load this window's settings now
-	-- Windows created after startup would otherwise fail to load their settings.
+	-- If window settings were already loaded, then load this window's definition now
+	-- Windows created after startup would otherwise fail to load their definition.
 	if AllWindowSettingsLoaded then
 		LoadSettingsForWindow(window);
 	end
@@ -2705,19 +2727,21 @@ local function BuildWindow(suffix)
 	app.HandleEvent("OnWindowCreated", window);
 	return window;
 end
-function app:CreateWindow(suffix, settings)
-	app.WindowDefinitions[suffix] = settings;
-	if settings then
-		if settings.Preload then
+function app:CreateWindow(suffix, definition)
+	app.WindowDefinitions[suffix] = definition;
+	if definition then
+		definition.GetShouldAutomaticallyOpen = GetShouldAutomaticallyOpen;
+		definition.SetShouldAutomaticallyOpen = SetShouldAutomaticallyOpen;
+		if definition.Preload then
 			-- This window still needs to be loaded right away
 			if AllWindowSettingsLoaded then
 				return app:GetWindow(suffix);
 			end
-		elseif settings.Commands then
+		elseif definition.Commands then
 			local onCommand;
-			if settings.OnCommand then
+			if definition.OnCommand then
 				onCommand = function(cmd)
-					if not settings.OnCommand(window, cmd) then
+					if not definition.OnCommand(window, cmd) then
 						app:GetWindow(suffix):Toggle();
 					end
 				end
@@ -2726,11 +2750,11 @@ function app:CreateWindow(suffix, settings)
 					app:GetWindow(suffix):Toggle();
 				end
 			end
-			app.AddSlashCommands(settings.Commands, onCommand)
-			local primaryCommand = "/" .. settings.Commands[1];
+			app.AddSlashCommands(definition.Commands, onCommand)
+			local primaryCommand = "/" .. definition.Commands[1];
 			app.ChatCommands.Help[primaryCommand:lower()] = {
-				settings.UsageText or ("Usage: " .. primaryCommand),
-				settings.HelpText or ("Toggles the " .. (settings.SettingsName or suffix) .. " Window.")
+				definition.UsageText or ("Usage: " .. primaryCommand),
+				definition.HelpText or ("Toggles the " .. (definition.SettingsName or suffix) .. " Window.")
 			};
 		end
 	end
