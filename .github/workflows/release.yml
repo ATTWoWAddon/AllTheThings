@@ -27,7 +27,6 @@ jobs:
         with:
            fetch-depth: 300
            fetch-tags: true
-           ref: ${{ github.ref }}
 
       - name: Check for changes since last tag
         id: check_changes
@@ -56,6 +55,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+
+      - name: Reset to SHA that triggered the workflow
+        run: git reset --hard ${{ github.sha }}
 
       - name: Database Parser for Retail
         timeout-minutes: 5
@@ -121,7 +123,9 @@ jobs:
         with:
            fetch-depth: 300
            fetch-tags: true
-           ref: ${{ github.ref }}
+
+      - name: Reset to SHA that triggered the workflow
+        run: git reset --hard ${{ github.sha }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v7
