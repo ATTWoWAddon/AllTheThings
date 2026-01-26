@@ -2993,16 +2993,13 @@ local CategoryByRelativeFields = {
 	
 	-- Root Categories
 	{ "RootCategory",
-		function(o, value, categories, self)
+		function(o, value, categories)
 			local rootCategory = app.GetRelativeGroup(o, "RootCategory", true);
 			local hash = rootCategory.headerID or rootCategory.hash;
 			local category = categories[hash];
 			if not category then
-				category = app.CloneClassInstance(rootCategory);
-				category.SortType = "name";
-				category.parent = self;
+				category = app.CloneClassInstance(rootCategory, true);
 				category.g = {};
-				tinsert(self.g, category);
 				categories[hash] = category;
 			end
 			return hash;
@@ -3013,7 +3010,7 @@ local CategoryByRelativeFields = {
 	{ "achievementID", function(o) return app.HeaderConstants.ACHIEVEMENTS; end },
 	{ "instanceID", function(o) return "raid"; end },	-- Determine if we want to split by raid and/or dungeon
 	{ "headerID", 
-		function(o, value, categories, self)
+		function(o, value, categories)
 			if value == app.HeaderConstants.VENDORS or value == app.HeaderConstants.QUESTS or value == app.HeaderConstants.FACTIONS then
 				return value;
 			end
@@ -3035,10 +3032,7 @@ local CategoryByRelativeFields = {
 						clone[key] = value;
 					end
 					category = app.CreateHeader(group[group.key], clone);
-					category.SortType = "name";
-					category.parent = self;
 					category.g = {};
-					tinsert(self.g, category);
 					categories[hash] = category;
 				end
 				return hash;
@@ -3058,10 +3052,7 @@ local CategoryByRelativeFields = {
 						clone[key] = value;
 					end
 					category = app.CreateHeader(group[group.key], clone);
-					category.SortType = "name";
-					category.parent = self;
 					category.g = {};
-					tinsert(self.g, category);
 					categories[hash] = category;
 				end
 				return hash;
@@ -3147,9 +3138,6 @@ local function AssignCategoryForResult(self, categories, result)
 		end
 		if not categories[categoryType] then
 			categories[categoryType] = category;
-			tinsert(self.g, category);
-			category.parent = self;
-			category.SortType = "name";
 			category.g = {};
 		end
 	end
@@ -3182,7 +3170,6 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 				local categories = data.categories;
 				if categories then
 					for key,category in pairs(categories) do
-						tinsert(g, category);
 						wipe(category.g);
 					end
 				else
@@ -3199,6 +3186,12 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 					o.__o = __o;
 					AssignCategoryForResult(data, categories, o);
 				end
+				for key,category in pairs(categories) do
+					tinsert(data.g, category);
+					category.SortType = "name";
+					category.parent = data;
+				end
+				data.SortType = "name";
 				if #g < 1 then
 					tinsert(g, app.CreateRawText(fallbackText or UNKNOWN, {
 						OnUpdate = app.AlwaysShowUpdate,
@@ -3206,7 +3199,6 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 					}));
 				end
 				app.AssignChildren(data);
-				data.SortType = "name";
 			end
 		end
 		CategorizedSearchFunctionsByClassTypes[uniqueKey] = OnUpdate;

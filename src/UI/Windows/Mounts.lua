@@ -4,9 +4,6 @@ local _, app = ...;
 -- Private Variables
 local Flat;
 
--- CRIEVE NOTE: Add this to the Settings Menu somehow
--- /script ATTC:GetWindow("Mounts"):ToggleFlat();
-
 -- Window Definition
 app:CreateWindow("Mounts", {
 	AllowCompleteSound = true,
