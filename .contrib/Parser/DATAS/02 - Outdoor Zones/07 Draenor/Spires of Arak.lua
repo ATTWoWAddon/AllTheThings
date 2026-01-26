@@ -2146,20 +2146,20 @@ root(ROOTS.Zones, {
 					n(87775, {	-- Ruuan the Seer
 						["timeline"] = { ADDED_6_0_2 },
 						["coord"] = { 46.6, 45.0, SPIRES_OF_ARAK },
-						["groups"] = { 
-							i(258741, {	-- Writings of Reshad the Outcast (Decor!)
+						["groups"] = {
+							i(258741, {	-- Writings of Reshad the Outcast (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
 								["sourceQuest"] = 35671,	-- A Gathering of Shadows
 							}),
-							i(258749, {	-- Uncorrupted Eye of Terokk (Decor!)
+							i(258749, {	-- Uncorrupted Eye of Terokk (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
 								["sourceQuest"] = 35896,	-- The Avatar of Terokk
 							}),
-							i(258745, {	-- High Arakkoan Library Shelf (Decor!)
+							i(258745, {	-- High Arakkoan Library Shelf (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
 								["sourceQuest"] = 35704,	-- When All Is Aligned
 							}),
-							i(258740, {	-- Glorious Pendant of Rukhmar (Decor!)
+							i(258740, {	-- Glorious Pendant of Rukhmar (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
 							--	achievement source: 9415 -- Secrets of Skettis
 							}),

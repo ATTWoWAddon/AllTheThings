@@ -345,8 +345,8 @@ root(ROOTS.Zones, {
 				n(256826, {	-- Mrgrgrl
 					["timeline"] = { ADDED_12_0_0 },
 					["coord"] = { 15.1, 53.3, SURAMAR },
-					["groups"] = { 
-						i(258222, {	-- Shellscale Standard (Decor!)
+					["groups"] = {
+						i(258222, {	-- Shellscale Standard (DECOR!!)
 							["sourceQuest"] = 41143,	-- Mglrgrs Of Our Grmlgrlr
 						}),
 					},

@@ -2255,7 +2255,7 @@ root(ROOTS.Zones, {
 									i(118666, {	-- Arakkoa Elixir
 										["cost"] = {{ "c", APEXIS_CRYSTAL, 1 }},
 									}),
-									i(258747, {	-- High Arakkoan Shelf (Decor!)
+									i(258747, {	-- High Arakkoan Shelf (DECOR!)
 										["timeline"] = { ADDED_12_0_0 },
 									}),
 								}, {	-- Honored

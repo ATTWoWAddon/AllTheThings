@@ -3007,7 +3007,7 @@ root(ROOTS.Zones, {
 					n(25206, {	-- Ahlurglgr <Clam Vendor>
 						["coord"] = { 43.0, 13.8, BOREAN_TUNDRA },
 						["groups"] = {
-							i(258220, {	-- Murloc Driftwood Hut (Decor!)
+							i(258220, {	-- Murloc Driftwood Hut (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
 								["sourceQuest"] = 11566,	-- Surrender... Not!
 							}),
