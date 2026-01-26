@@ -4,6 +4,10 @@ name: Parser
 on:
   # Triggers the workflow on each push event
   push:
+    branches-ignore:
+      - master  # Ignore pushes to master branch
+    tags-ignore:
+      - '*'  # Ignore all tags
     paths:
       - '.contrib/Parser/**'
       - '.github/workflows/Parser.yml'
@@ -17,7 +21,6 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    if: ${{ !startsWith(github.ref, 'refs/tags/') }}
     steps:
       - uses: actions/checkout@v6
 
