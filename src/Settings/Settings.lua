@@ -1803,3 +1803,20 @@ app.AddEventHandler("OnReady", function()
 		end
 	end)
 end)
+
+-- TODO: These old settings need to convert into new Window logic somehow, not just blanket removed
+-- app.AddEventHandler("OnInit", function()
+-- 	-- Handle conversion of deprecated auto-open settings into their respective Window settings
+-- 	if settings:GetTooltipSetting("Auto:MainList") then
+-- 		app:GetWindow("Prime"):SetShouldAutomaticallyOpen(true)
+-- 	end
+-- 	if settings:GetTooltipSetting("Auto:MiniList") then
+-- 		app:GetWindow("MiniList"):SetShouldAutomaticallyOpen(true)
+-- 	end
+-- 	if settings:GetTooltipSetting("Auto:RaidAssistant") then
+-- 		app:GetWindow("RaidAssistant"):SetShouldAutomaticallyOpen(true)
+-- 	end
+-- 	if settings:GetTooltipSetting("Auto:WorldQuestsList") then
+-- 		app:GetWindow("WorldQuests"):SetShouldAutomaticallyOpen(true)
+-- 	end
+-- end)
