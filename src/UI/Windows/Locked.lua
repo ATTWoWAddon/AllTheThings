@@ -34,7 +34,7 @@ app:CreateWindow("Locked", {
 			end,
 		}));
 	end,
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		self.data.g = {};
 		return true;
 	end,

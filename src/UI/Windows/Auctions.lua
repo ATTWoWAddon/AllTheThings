@@ -627,7 +627,7 @@ app:CreateWindow("Auctions", {
 			auctionData = AllTheThingsAuctionData;
 		end
 	end,
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		self:UpdatePosition();
 	end
 });

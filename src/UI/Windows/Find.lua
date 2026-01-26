@@ -15,7 +15,7 @@ local C_Item_GetItemInventoryTypeByID = C_Item and C_Item.GetItemInventoryTypeBy
 app:CreateWindow("ItemFinder", {
 	HideFromSettings = true,
 	Commands = { "attfinditems" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
 			ItemHarvester.AllTheThingsIgnored = true;
@@ -295,7 +295,7 @@ app:CreateWindow("ItemFinder", {
 app:CreateWindow("QuestFinder", {
 	HideFromSettings = true,
 	Commands = { "attfindquests" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local CreateQuestHarvester = app.ExtendClass("Quest", "QuestHarvester", "questID", {
 				IsClassIsolated = true,
@@ -372,7 +372,7 @@ app:CreateWindow("QuestFinder", {
 app:CreateWindow("SpellFinder", {
 	HideFromSettings = true,
 	Commands = { "attfindspells" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
 				IsClassIsolated = true,
