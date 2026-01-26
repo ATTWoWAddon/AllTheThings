@@ -10,7 +10,7 @@ app:CreateWindow("Toys", {
 	IsDynamicCategory = true,
 	Commands = { "atttoys" },
 	Defaults = {
-		Flat = true,
+		Flat = false,
 	},
 	GetFlat = function(self)
 		return Flat;

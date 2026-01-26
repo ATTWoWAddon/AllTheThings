@@ -10,7 +10,7 @@ app:CreateWindow("Mounts", {
 	IsDynamicCategory = true,
 	Commands = { "attmounts" },
 	Defaults = {
-		Flat = true,
+		Flat = false,
 	},
 	GetFlat = function(self)
 		return Flat;

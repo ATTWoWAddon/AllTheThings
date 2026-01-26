@@ -1,17 +1,17 @@
 -- App locals
 local _, app = ...;
 
--- Private Variables
-local Flat;
-
 -- Window Definition
 if app.GameBuildVersion >= 20000 then
+	-- Private Variables
+	local Flat;
+	
 	app:CreateWindow("Titles", {
 		AllowCompleteSound = true,
 		IsDynamicCategory = true,
 		Commands = { "atttitles" },
 		Defaults = {
-			Flat = true,
+			Flat = false,
 		},
 		GetFlat = function(self)
 			return Flat;
