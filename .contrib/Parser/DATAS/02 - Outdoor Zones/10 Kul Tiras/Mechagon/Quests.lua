@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-							i(257928, { ["timeline"] = { ADDED_11_2_7 } } ),	-- Gnomeregan Recyli-Kiln (DECOR!)
+							i(257928, { ["timeline"] = { ADDED_11_2_7 } }),	-- Gnomeregan Recyli-Kiln (DECOR!)
 							i(167795),	-- Paint Vial: Copper Trim
 							i(169594, {	-- Rust Covered Disc
 								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",

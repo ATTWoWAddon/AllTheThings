@@ -841,6 +841,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 232353 },	-- Overseer's Chair
 						["coord"] = { 35.5, 32.1, SPIRES_OF_ARAK },
 						["groups"] = {
+							i(258748, { ["timeline"] = { ADDED_12_0_0 } }),	-- "Rising Glory of Rukhmar" Statue (DECOR!)
 							i(114727),	-- Cragplate Legguards
 							i(114729),	-- Ravenchain Leggings
 							i(114728),	-- Shadowveil Leggings

@@ -60,7 +60,6 @@ root(ROOTS.Unsorted, {
 			i(256172),	-- Silvermoon Fence
 			i(256356),	-- Sunsmoke Censer
 			i(256925),	-- Amani Spearhunter's Spit
-			i(258748),	-- "Rising Glory of Rukhmar" Statue
 
 			-- QI
 			i(253210),	-- Soothsayer's Signet

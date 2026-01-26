@@ -618,14 +618,15 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["groups"] = {
-						i(132116),	-- Slime-Stacked Shoulderguards
+						i(258221, { ["timeline"] = { ADDED_12_0_0 } }),	-- Driftwood Junk Pile (DECOR!)
 						i(132113),	-- Pufferfish Demolition Greaves (Cloth)
-						i(132112),	-- Pufferfish Demolition Legwraps
 						i(132110),	-- Pufferfish Demolition Greaves (Plate)
 						i(132111),	-- Pufferfish Demolition Legguards
-						i(132114),	-- Slime-Stacked Shoulderplates
+						i(132112),	-- Pufferfish Demolition Legwraps
 						i(132115),	-- Slime-Stacked Mantle
+						i(132116),	-- Slime-Stacked Shoulderguards
 						i(132117),	-- Slime-Stacked Shoulderpads
+						i(132114),	-- Slime-Stacked Shoulderplates
 					},
 				}),
 				q(39491, {	-- Ormgul the Pestilent

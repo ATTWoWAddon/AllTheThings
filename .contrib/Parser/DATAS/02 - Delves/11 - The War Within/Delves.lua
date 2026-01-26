@@ -4192,7 +4192,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
 			q(85206),	-- Warbound Equipment Set (spellID 467089)
 			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-			-- q(86371, { ["timeline"] = { ADDED_11_1_7 } } ),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
+			-- q(86371, { ["timeline"] = { ADDED_11_1_7 } }),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
 			-- Underpin Invasion
 			q(87287, { ["isWeekly"] = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter

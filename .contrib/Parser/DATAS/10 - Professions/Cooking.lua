@@ -168,16 +168,16 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
 		}),
 		ach(1785, {	-- Dinner Impossible
-			crit(6626, { ["provider"] = { "i", 34753 }, ["maps"] = { ALTERAC_VALLEY, 1537 } } ),	-- Alterac Valley
-			crit(6627, { ["provider"] = { "i", 34753 }, ["maps"] = ARATHI_BASIN } ),	-- Arathi Basin
-			crit(6628, { ["provider"] = { "i", 34753 }, ["maps"] = { WARSONG_GULCH, 1339 } } ),	-- Warsong Gulch
-			crit(6630, { ["provider"] = { "i", 34753 }, ["maps"] = { EYE_OF_THE_STORM, 397 } } ),	-- Eye of the Storm
+			crit(6626, { ["provider"] = { "i", 34753 }, ["maps"] = { ALTERAC_VALLEY, 1537 } }),	-- Alterac Valley
+			crit(6627, { ["provider"] = { "i", 34753 }, ["maps"] = ARATHI_BASIN }),	-- Arathi Basin
+			crit(6628, { ["provider"] = { "i", 34753 }, ["maps"] = { WARSONG_GULCH, 1339 } }),	-- Warsong Gulch
+			crit(6630, { ["provider"] = { "i", 34753 }, ["maps"] = { EYE_OF_THE_STORM, 397 } }),	-- Eye of the Storm
 		}),
 		ach(1780, {	-- Second That Emotion
-			crit(6450, { ["provider"] = { "i", 43491 } } ),	-- Bad Clams
-			crit(6715, { ["provider"] = { "i", 43492 } } ),	-- Haunted Herring
-			crit(6738, { ["provider"] = { "i", 43488 } } ),	-- Last Week's Mammoth
-			crit(7093, { ["provider"] = { "i", 43490 } } ),	-- Tasty Cupcake
+			crit(6450, { ["provider"] = { "i", 43491 } }),	-- Bad Clams
+			crit(6715, { ["provider"] = { "i", 43492 } }),	-- Haunted Herring
+			crit(6738, { ["provider"] = { "i", 43488 } }),	-- Last Week's Mammoth
+			crit(7093, { ["provider"] = { "i", 43490 } }),	-- Tasty Cupcake
 		}),
 		achpart(1777, 1779),	-- The Northrend Gourmet (15)
 		achpart(1778, 1779),	-- The Northrend Gourmet (30)
