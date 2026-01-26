@@ -13,6 +13,7 @@ local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local debugprofilestop = debugprofilestop;
+local Callback = app.CallbackHandlers.Callback
 
 -- Some common UI functions (TBD)
 app.UI = {
@@ -671,12 +672,17 @@ local function SetRowData(self, row, data)
 	-- Check to see what the text is currently
 	local text = data.text;
 	if text ~= row.text then
-		if not text then
-			text = RETRIEVING_DATA;
-			self.processingLinks = true;
-		elseif IsRetrieving(text) then
+		if IsRetrieving(text) then
 			-- This means the link is still rendering
-			self.processingLinks = true;
+			text = RETRIEVING_DATA;
+
+			local AsyncRefreshFunc = data.AsyncRefreshFunc
+			if AsyncRefreshFunc then
+				AsyncRefreshFunc(data)
+			else
+				-- app.PrintDebug("No Async Refresh Func for Type!",data.__type)
+				Callback(self.Refresh, self)
+			end
 		else
 			row.text = text;
 		end
@@ -807,17 +813,6 @@ local function UpdateVisibleRowData(self)
 				OnLeave(row)
 				OnEnter(row)
 			end
-		end
-		
-		-- If the rows need to be processed again, do so next update.
-		if self.processingLinks then
-			self:StartATTCoroutine("Process Links", function()
-				while self.processingLinks do
-					self.processingLinks = nil;
-					coroutine.yield();
-					self:Redraw();
-				end
-			end);
 		end
 	else
 		self:Hide();
@@ -2523,11 +2518,12 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					if onRefresh(self) then self:DefaultRefresh(); end
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else
 			function window:Refresh()
-				if self:IsShown() and onRefresh(self) then self:DefaultRefresh(); end
+				if self:IsShown() and onRefresh(self) then self:DefaultRefresh(); app.HandleEvent("OnWindowRefreshed", self, self.Suffix) end
 			end
 		end
 	else
@@ -2538,11 +2534,12 @@ local function BuildWindow(suffix)
 					local lastUpdate = debugprofilestop();
 					self:DefaultRefresh();
 					print("Refresh: " .. suffix, ("%d ms"):format(debugprofilestop() - lastUpdate));
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		else
 			function window:Refresh()
-				if self:IsShown() then self:DefaultRefresh(); end
+				if self:IsShown() then self:DefaultRefresh(); app.HandleEvent("OnWindowRefreshed", self, self.Suffix) end
 			end
 		end
 	end
