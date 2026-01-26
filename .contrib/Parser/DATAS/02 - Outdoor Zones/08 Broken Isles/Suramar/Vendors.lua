@@ -342,15 +342,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 71.6, 48.8, SURAMAR },
 					["groups"] = { i(133819) },	-- Recipe: Koi-Scented Stormray [Rank 1] (RECIPE!)
 				}),
+				n(256826, {	-- Mrgrgrl
+					["timeline"] = { ADDED_12_0_0 },
+					["coord"] = { 15.1, 53.3, SURAMAR },
+					["groups"] = {
+						i(258222, {	-- Shellscale Standard (DECOR!!)
+							["sourceQuest"] = 41143,	-- Mglrgrs Of Our Grmlgrlr
+						}),
+					},
+				}),
 				n(255101, {	-- Mynde <Stone Skimmer>
 					["coord"] = { 45.6, 69.2, SURAMAR },
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(257393, {	-- Suramar Stepping Stone (DECOR!)
-							["cost"] = {{ "c", 1155, 50 }},	-- 50x SAncient Mana
+							["cost"] = {{ "c", 1155, 50 }},	-- 50x Ancient Mana
 						}),
 						i(257598, {	-- Suramar Stepping Stone Set (DECOR!)
-							["cost"] = {{ "c", 1155, 125 }},	-- 125x SAncient Mana
+							["cost"] = {{ "c", 1155, 125 }},	-- 125x Ancient Mana
 						}),
 					},
 				}),

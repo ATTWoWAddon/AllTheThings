@@ -24786,7 +24786,6 @@ i(257145),	-- Crimson Dragonhawk
 i(248723),	-- Stolen Documents
 i(248964),	-- Cosmic Void Table
 i(258219),	-- Driftwood Barrel
-i(258220),	-- Murloc Driftwood Hut
 i(258221),	-- Driftwood Junk Pile
 i(258222),	-- Shellscale Standard
 i(258223),	-- Murloc's Wind Chimes
@@ -24798,11 +24797,8 @@ i(258268),	-- Waxmaster's Candle Rack
 i(258740),	-- Glorious Pendant of Rukhmar
 i(258741),	-- Writings of Reshad the Outcast
 i(258742),	-- Scroll of the Adherent
-i(258743),	-- Arakkoan Alchemy Tools
 i(258744),	-- Skyreach Circular Table
 i(258745),	-- High Arakkoan Library Shelf
-i(258746),	-- High Arakkoan Alchemist's Shelf
-i(258747),	-- High Arakkoan Shelf
 i(258749),	-- Uncorrupted Eye of Terokk
 i(259217),	-- Ambient Aethercharged Crystal
 i(262352),	-- Lush Telogrus Carpet

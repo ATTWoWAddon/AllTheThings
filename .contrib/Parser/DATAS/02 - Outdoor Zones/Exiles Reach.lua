@@ -1050,7 +1050,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = { i(246462) },	-- Draconic Polearm
 			}),
@@ -1059,7 +1058,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(87562, {	-- Aiding the Dragon Isles
@@ -1067,7 +1065,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["provider"] = { "n", 238913 },	-- Kalecgos
 				["coord"] = { 82.0, 31.5, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_11_2_7 },
-				--["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 			}),
 

@@ -3960,7 +3960,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 			ach(42322),	-- 1st level 90 on account (DNT)
 			ach(42323),	-- 2nd level 90 on account (DNT)
 			ach(42324),	-- 3nd level 90 on account (DNT)
@@ -4051,6 +4051,69 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(61477),	-- Chimaerus, the Undreamt God (Mythic Dreamrift)
 			ach(61494),	-- Slayer's Rise battles
 			ach(61495),	-- Slayer's Rise victories
+
+			-- 12.0.0.63534
+			ach(41293),	-- The Restless Heart kills (Normal Windrunner Spire) \\ [PH] Restless Heart kills (Normal Windrunner Spire)
+			ach(41294),	-- The Restless Heart kills (Heroic Windrunner Spire) \\ [PH] Restless Heart kills (Heroic Windrunner Spire)
+			ach(41295),	-- The Restless Heart kills (Mythic Windrunner Spire) \\ [PH] Restless Heart kills (Mythic Windrunner Spire)
+			ach(61444),	-- Vicious Saddle (43)
+			ach(61445),	-- Vicious Saddle (43)
+
+			-- 12.0.0.63724
+			ach(61511),	-- Charonus kills (Normal Voidscar Arena)
+			ach(61512),	-- Charonus kills (Heroic Voidscar Arena)
+			ach(61513),	-- Charonus kills (Mythic Voidscar Arena)
+
+			-- 12.0.0.63854
+			ach(61650),	-- Nalorakk kills (Normal Den of Nalorakk)
+			ach(61651),	-- Nalorakk kills (Heroic Den of Nalorakk)
+			ach(61652),	-- Nalorakk kills (Mythic Den of Nalorakk)
+			ach(61653),	-- Rak'tul, Vessel of Souls kills (Normal Maisara Caverns)
+			ach(61654),	-- Rak'tul, Vessel of Souls kills (Heroic Maisara Caverns)
+			ach(61655),	-- Rak'tul, Vessel of Souls kills (Mythic Maisara Caverns)
+			ach(61656),	-- Lothraxion kills (Normal Nexus-Point Xenas)
+			ach(61657),	-- Lothraxion kills (Heroic Nexus-Point Xenas)
+			ach(61658),	-- Lothraxion kills (Mythic Nexus-Point Xenas)
+			ach(61659),	-- Ziekket kills (Normal The Blinding Vale)
+			ach(61660),	-- Ziekket kills (Heroic The Blinding Vale)
+			ach(61661),	-- Ziekket kills (Mythic The Blinding Vale)
+
+			-- 12.0.0.63967
+			ach(61767),	-- Parhelion Plaza clears
+			ach(61768),	-- Sunkiller Sanctum clears
+			ach(61769),	-- Shadowguard Point clears
+			ach(61770),	-- Atal'Aman clears
+			ach(61771),	-- Collegiate Calamity clears
+			ach(61772),	-- The Grudge Pit clears
+			ach(61773),	-- The Gulf of Memory clears
+			ach(61774),	-- The Shadow Enclave clears
+			ach(61775),	-- Twilight Crypts clears
+			ach(61776),	-- The Darkway clears
+			ach(61777),	-- Torment's Rise clears
+			ach(61778),	-- Midnight companion levels obtained
+			ach(61779),	-- Midnight Tier 1 delves completed
+			ach(61780),	-- Midnight Tier 2 delves completed
+			ach(61781),	-- Midnight Tier 3 delves completed
+			ach(61782),	-- Midnight Tier 4 delves completed
+			ach(61783),	-- Midnight Tier 5 delves completed
+			ach(61784),	-- Midnight Tier 6 delves completed
+			ach(61785),	-- Midnight Tier 7 delves completed
+			ach(61786),	-- Midnight Tier 8 delves completed
+			ach(61787),	-- Midnight Tier 9 delves completed
+			ach(61788),	-- Midnight Tier 10 delves completed
+			ach(61789),	-- Midnight Tier 11 delves completed
+			ach(61790),	-- Midnight total delves completed
+			ach(61791),	-- Midnight delve completed the most
+		})),
+
+		-- 12.0.1
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_X_LAUNCH } }, {
+			-- 12.0.1.64889
+			ach(62292),	-- Adventurer Dawncrests earned
+			ach(62293),	-- Veteran Dawncrests earned
+			ach(62294),	-- Champion Dawncrests earned
+			ach(62295),	-- Hero Dawncrests earned
+			ach(62296),	-- Myth Dawncrests earned
 		})),
 	}),
 });

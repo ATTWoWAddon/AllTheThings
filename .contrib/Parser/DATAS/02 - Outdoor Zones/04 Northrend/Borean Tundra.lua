@@ -3007,6 +3007,10 @@ root(ROOTS.Zones, {
 					n(25206, {	-- Ahlurglgr <Clam Vendor>
 						["coord"] = { 43.0, 13.8, BOREAN_TUNDRA },
 						["groups"] = {
+							i(258220, {	-- Murloc Driftwood Hut (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+								["sourceQuest"] = 11566,	-- Surrender... Not!
+							}),
 							i(36783, {	-- Northsea Pearl
 								["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
 							}),

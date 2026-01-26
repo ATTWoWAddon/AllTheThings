@@ -2255,11 +2255,20 @@ root(ROOTS.Zones, {
 									i(118666, {	-- Arakkoa Elixir
 										["cost"] = {{ "c", APEXIS_CRYSTAL, 1 }},
 									}),
+									i(258747, {	-- High Arakkoan Shelf (DECOR!)
+										["timeline"] = { ADDED_12_0_0 },
+									}),
 								}, {	-- Honored
+									i(258743, {	-- Arakkoan Alchemy Tools
+										["timeline"] = { ADDED_12_0_0 },
+									}),
 									i(118682, {	-- Saberon Protector
 										["cost"] = 5000000,	-- 500g
 									}),
 								}, {	-- Revered
+									i(258746, {	-- High Arakkoan Alchemist's Shelf
+										["timeline"] = { ADDED_12_0_0 },
+									}),
 									i(119143, {	-- Son of Sethe (PET!)
 										["cost"] = {
 											{ "c", APEXIS_CRYSTAL, 2000 },

@@ -4251,11 +4251,9 @@ root(ROOTS.Unsorted, {
 			i(246402),	-- Hollowed Harandar Gourds
 			i(246408),	-- Haranir Herb Rack
 			i(246692),	-- Murder Row Wine Decanter \\ [DNT] Wine Pour 01
-			i(246779),	-- Hanging Mana Brazier
 			i(246959),	-- Sealed Fungal Jar
 			i(249559),	-- Reverent Sin'dorei Statue \\ Statue of Reverent Grace \\ [DNT] BE Statue 01
 			i(249768),	-- Fungarian Barrel
-			i(250770),	-- Silvermoon Privacy Screen
 			i(250772),	-- Crimson Lightwood Privacy Screen \\ Crimson Lightwood Screen \\ [DNT] Divider Screen 01
 			i(251967),	-- Fungarian Banner
 			i(251980),	-- Fungarian Sack
@@ -4297,7 +4295,6 @@ root(ROOTS.Unsorted, {
 			i(263038),	-- Haranir Reclined Bed \\ Haranir Canopy Bed
 			i(263039),	-- Harandar Flowering Lamp
 			i(263041),	-- Replica Root of the World
-			i(263042),	-- Rootlight Lamppost \\ Rootlight Lampost
 			i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 			i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
 			i(263196),	-- Harandar Glowvine Lantern \\ Harandar Glow-vine Lantern
@@ -4316,9 +4313,6 @@ root(ROOTS.Unsorted, {
 			i(263234),	-- Turning Silvermoon Archives \\ [DNT] [AUTOGEN] Decor 15065 Item
 			i(263318),	-- Simple Amani Basket
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
-			i(263994),	-- Fungal Chest
-			i(263995),	-- Delver's Bountiful Coffer
-			i(263996),	-- Twilight Tabernacle
 			i(263997),	-- Midnight Alchemist's Shop Sign
 			i(263999),	-- Midnight Cook's Shop Sign
 			i(264000),	-- Midnight Enchanter's Shop Sign
@@ -4330,15 +4324,12 @@ root(ROOTS.Unsorted, {
 			i(264006),	-- Midnight Leatherworker's Shop Sign
 			i(264007),	-- Corewarden's Spoils
 			i(264008),	-- Root-Wrapped Reliquary
-			i(264170),	-- Ancient Kaldorei Coffer
 			i(264172),	-- Midnight Miner's Shop Sign
 			i(264173),	-- Midnight Skinner's Shop Sign
 			i(264174),	-- Midnight Tailor's Shop Sign
-			i(264175),	-- Amani Strongbox
 			i(264178),	-- Harandar Charcuterie Board
 			i(264243),	-- Firm Haranir Pillow
 			i(264245),	-- Warm Haranir Blanket
-			i(264258),	-- Blossoming Forge
 			i(264262),	-- Haranir Whistling Arrow
 			i(264264),	-- Gilded Vigil Post \\ [DNT] [AUTOGEN] Decor 15499 Item
 			i(264265),	-- Sanctified Flame Lantern \\ [DNT] [AUTOGEN] Decor 15500 Item
@@ -4722,7 +4713,6 @@ root(ROOTS.Unsorted, {
 			i(267004),	-- Twinblade of the Devourer
 			i(267005),	-- Rakan's Totem
 			i(267007),	-- Eye of Acherus
-			i(267009),	-- Amani Training Dummy
 			i(267040),	-- Sea Caller
 			i(267052),	-- Thalassian Alchemy Coveralls
 			i(267053),	-- Pattern: Thalassian Alchemy Coveralls
@@ -7249,14 +7239,12 @@ root(ROOTS.Unsorted, {
 			i(164934),	-- Super Soul Splinter
 			i(164939),	-- Overstuffed Silkweave Purse
 			i(164949),	-- Brawler's Guild Invitation
-			i(165709),	-- Challenge Card: Mama Stormstout
 			i(165786),	-- Skulls of the Honored Dead
 			i(165787),	-- Ceremonial Liquor
 			i(165788),	-- Gilded Ritual Mask
 			i(165789),	-- Zandalari Riches
 			i(166581),	-- Dorian's Note
 			i(166589),	-- Elderstone Ore
-			i(166809),	-- Challenge Card: Thog Hammerspace
 			i(166810),	-- Challenge Card: Antaen
 			i(166890),	-- The Traitor King
 			i(166891),	-- The Cursed Old Wolf
