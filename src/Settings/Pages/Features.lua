@@ -144,27 +144,6 @@ checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEF
 
 local checkboxFilterMiniListTimerunning;
 if app.IsRetail then
-	-- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
-	local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L.AUTO_MAIN_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:MainList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:MainList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenMainList:SetATTTooltip(L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenMainList:AlignBelow(checkboxAutomaticallySkipCutscenes)
-
-	local checkboxAutomaticallyOpenMiniList = child:CreateCheckBox(L.AUTO_MINI_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:MiniList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
-	checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
-
 	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
 	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()
@@ -187,7 +166,7 @@ if app.IsRetail then
 		app.HandleEvent("OnRecalculate_NewSettings")
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
-	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
+	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
 end
 
 local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,
@@ -204,30 +183,6 @@ else
 	checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
 end
 
-local checkboxAutomaticallyOpenWorldQuestList;
-if app.IsRetail then
--- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
-local checkboxAutomaticallyOpenRaidAssistant = child:CreateCheckBox(L.AUTO_RAID_ASSISTANT_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked())
-end)
-checkboxAutomaticallyOpenRaidAssistant:SetATTTooltip(L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenRaidAssistant:AlignBelow(checkboxAutomaticallyOpenProfessionList)
-
-checkboxAutomaticallyOpenWorldQuestList = child:CreateCheckBox(L.AUTO_WQ_LIST_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
-end
-
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
@@ -241,4 +196,4 @@ function(self)
 	end
 end);
 OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Auction List\n\nShortcut Command: /attauctions");
-OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)
+OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)

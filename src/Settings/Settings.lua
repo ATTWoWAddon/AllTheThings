@@ -341,7 +341,6 @@ local TooltipSettingsBase = {
 		["Adjust:RowIndents"] = true,
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
-		["Auto:MiniList"] = true,	-- TODO: Deprecate this!
 		["Auto:Sync"] = true,	-- TODO: Deprecate this!
 		["Celebrate"] = true,
 		["Channel"] = "Master",
@@ -529,21 +528,6 @@ settings.Initialize = function(self)
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
-
-	app.AddEventHandler("OnInit", function()
-		if self:GetTooltipSetting("Auto:MainList") then
-			app:GetWindow("Prime"):SetVisible(true)
-		end
-		if self:GetTooltipSetting("Auto:MiniList") then
-			app:GetWindow("MiniList"):SetVisible(true)
-		end
-		if self:GetTooltipSetting("Auto:RaidAssistant") then
-			app:GetWindow("RaidAssistant"):SetVisible(true)
-		end
-		if self:GetTooltipSetting("Auto:WorldQuestsList") then
-			app:GetWindow("WorldQuests"):SetVisible(true)
-		end
-	end)
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()
