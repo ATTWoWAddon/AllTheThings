@@ -1,8 +1,6 @@
 -- App locals
 local _, app = ...;
 if app.IsRetail then return; end
-local ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFieldContainer
-	= app.ExpandGroupsRecursively, app.ResolveSymbolicLink, app.SearchForFieldContainer;
 
 -- Global locals
 local ipairs, pairs, tinsert =
@@ -108,7 +106,7 @@ app:CreateWindow("Tradeskills", {
 			end
 
 			-- Cache Learned Spells
-			local skillCache = SearchForFieldContainer("spellID");
+			local skillCache = app.SearchForFieldContainer("spellID");
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = AllTheThingsAD.Reagents;
@@ -332,7 +330,7 @@ app:CreateWindow("Tradeskills", {
 						self.data.visible = true;
 						if not self.data.expanded then
 							self.data.expanded = true;
-							ExpandGroupsRecursively(self.data, true);
+							app.ExpandGroupsRecursively(self.data, true);
 						end
 						self:Rebuild();
 					end

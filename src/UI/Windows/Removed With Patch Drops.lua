@@ -9,14 +9,6 @@ local AllowedHeaders = {
 	[app.HeaderConstants.RARES] = true,
 	[app.HeaderConstants.ZONE_DROPS] = true,
 };
-local function ExpandGroupsRecursively(group, expanded, manual)
-	if group.g and (not group.itemID or manual) then
-		group.expanded = expanded;
-		for i, subgroup in ipairs(group.g) do
-			ExpandGroupsRecursively(subgroup, expanded, manual);
-		end
-	end
-end
 local function ReapplyExpand(g, g2)
 	for j,p in ipairs(g2) do
 		local key = p.key;

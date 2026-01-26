@@ -3,15 +3,14 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local ipairs, pairs, getmetatable, setmetatable, tostring, tinsert, math_floor, wipe
-	= ipairs, pairs, getmetatable, setmetatable, tostring, tinsert, math.floor, wipe;
+local ipairs, pairs, setmetatable, tinsert, math_floor, wipe
+	= ipairs, pairs, setmetatable, tinsert, math.floor, wipe;
 local C_Map_GetMapInfo, C_Map_GetPlayerMapPosition, GetRealZoneText, GetSubZoneText, IsInInstance
 	= C_Map.GetMapInfo, C_Map.GetPlayerMapPosition, GetRealZoneText, GetSubZoneText, IsInInstance;
 local contains, containsValue = app.contains, app.containsValue;
 local wipearray, ArrayAppend, CreateObject, MergeObject, MergeProperties, NestObjects, IsQuestFlaggedCompleted
 	= app.wipearray, app.ArrayAppend, app.__CreateObject, app.MergeObject, app.MergeProperties, app.NestObjects, app.IsQuestFlaggedCompleted
-local GetRelativeGroup, GetRelativeValue, ExpandGroupsRecursively
-	= app.GetRelativeGroup, app.GetRelativeValue, app.ExpandGroupsRecursively;
+local GetRelativeGroup = app.GetRelativeGroup;
 
 -- Discord Error Reporting
 local function BuildDiscordMapInfoTable(id, mapInfo)
@@ -65,241 +64,6 @@ local function ShowDiscordReportPopupForMapID(mapID)
 	app:SetupReportDialog(popupID, "Missing Map: " .. mapID, BuildDiscordMapInfoTable(mapID, mapInfo))
 	app.report(app:Linkify(app.Version.." (Click to Report) No data found for this Location!", app.Colors.ChatLinkError, "dialog:" .. popupID));
 end
-
--- Classic Style Mini List
-local SortTypeByHeaderID = setmetatable({
-	[app.HeaderConstants.QUESTS] = "ClassicQuestOrder",
-}, {
-	__index = function(t, key)
-		local method = "text";
-		rawset(t, key, method);
-		return method;
-	end,
-});
-local function SortForMiniList(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-
-	if a.isRaid then
-		if not b.isRaid then
-			return true;
-		end
-	elseif b.isRaid then
-		return false;
-	elseif b.maps or b.mapID then
-		if not (a.maps or a.mapID) then
-			return true;
-		end
-	elseif a.maps then
-		return false;
-	end
-
-	-- Any two similar-type groups with text
-	return tostring(a.name or a.text) < tostring(b.name or b.text);
-end
-local ClassicMapDataStyleMetatable = {
-	__mode = "kv",
-	__index = function(cachedMapData, mapID)
-		if mapID then
-			local results = app.SearchForField("mapID", mapID);
-			if #results > 0 then
-				-- Simplify the returned groups
-				local groups = {};
-				local filters = setmetatable({}, {
-					__index = function(t, f)
-						for i=1,#groups,1 do
-							local o = groups[i];
-							if o.filterID == f then
-								if not o.g then o.g = {}; end
-								t[f] = o;
-								return o;
-							end
-						end
-
-						local o = app.CreateFilter(f);
-						tinsert(groups, o);
-						t[f] = o;
-						o.g = {};
-						return o;
-					end
-				});
-				local function MergeIntoFilter(f, o)
-					MergeObject(filters[f].g, o);
-				end
-				local headers = setmetatable({}, {
-					__index = function(t, headerID)
-						for i=1,#groups,1 do
-							local o = groups[i];
-							if o.headerID == headerID then
-								if not o.g then o.g = {}; end
-								t[headerID] = o;
-								return o;
-							end
-						end
-
-						local o = app.CreateCustomHeader(headerID);
-						tinsert(groups, o);
-						t[headerID] = o;
-						o.g = {};
-						return o;
-					end
-				});
-				local function MergeIntoHeader(headerID, o)
-					MergeObject(headers[headerID].g, o);
-				end
-
-				local header = app.CreateMap(mapID, groups);
-				for i, group in ipairs(results) do
-					local clone = {};
-					for key,value in pairs(group) do
-						if key == "maps" then
-							local maps = {};
-							for i,mapID in ipairs(value) do
-								tinsert(maps, mapID);
-							end
-							clone[key] = maps;
-						elseif key == "g" then
-							local g = {};
-							for i,o in ipairs(value) do
-								o = app.CloneClassInstance(o);
-								ExpandGroupsRecursively(o, false);
-								tinsert(g, o);
-							end
-							clone[key] = g;
-						else
-							clone[key] = value;
-						end
-					end
-					local c = GetRelativeValue(group, "c");
-					if c then clone.c = c; end
-					local r = GetRelativeValue(group, "r");
-					if r then clone.r = r; end
-					local lvl = GetRelativeValue(group, "lvl");
-					if lvl then clone.lvl = lvl; end
-					setmetatable(clone, getmetatable(group));
-
-					local key = group.key;
-					if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
-						header.key = key;
-						header[key] = group[key];
-						MergeObject({header}, clone);
-					else
-						local headerConst = nil;
-						if key == "criteriaID" then
-							clone.achievementID = group.achievementID;
-							headerConst = group.pb and app.HeaderConstants.PET_BATTLES or app.HeaderConstants.ACHIEVEMENTS;
-						elseif key == "achievementID" then
-							headerConst = app.HeaderConstants.ACHIEVEMENTS;
-						elseif key == "questID" then
-							headerConst = group.pb and app.HeaderConstants.PET_BATTLES or app.HeaderConstants.QUESTS;
-						elseif key == "factionID" then
-							headerConst = app.HeaderConstants.FACTIONS;
-						elseif key == "explorationID" then
-							headerConst = app.HeaderConstants.EXPLORATION;
-						elseif key == "flightpathID" then
-							headerConst = app.HeaderConstants.FLIGHT_PATHS;
-						elseif key == "objectID" then
-							headerConst = app.HeaderConstants.TREASURES;
-						end
-
-						-- Does this involve a profession?
-						local requireSkill = GetRelativeValue(group, "requireSkill");
-						if requireSkill then
-							clone = app.CreateProfession(requireSkill, { g = { clone } });
-							headerConst = app.HeaderConstants.PROFESSIONS;
-						end
-
-						if headerConst then
-							MergeIntoHeader(headerConst, clone);
-						elseif key == "headerID" then
-							if clone.parent and clone.parent.headerID then
-								MergeIntoHeader(clone.parent.headerID, clone);
-							else
-								MergeObject(groups, clone);
-							end
-						elseif key == "speciesID" then
-							MergeIntoFilter(101, clone);	-- Pet Battles
-						else
-							local headerID = GetRelativeValue(group, "headerID");
-							if headerID then
-								-- Does this involve a holiday?
-								if group.e then headerID = app.HeaderConstants.HOLIDAYS; end
-								MergeIntoHeader(headerID, clone);
-								if group.parent and group.parent.isRaid then
-									headers[headerID].isRaid = true;
-								end
-							elseif clone.providers then
-								if clone.providers[1] == 'o' then
-									MergeIntoHeader(app.HeaderConstants.TREASURES, clone);
-								else
-									MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
-								end
-							elseif clone.crs or key == "itemID" then
-								MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
-							else
-								MergeObject(groups, clone);
-							end
-						end
-					end
-				end
-
-				-- Swap out the map data for the header.
-				results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
-				results.visible = true;
-				results.mapID = mapID;
-				results.back = 1;
-				results.indent = 0;
-
-				if app.Settings:GetTooltipSetting("Expand:MiniList") then
-					ExpandGroupsRecursively(results, true);
-					results.expanded = true;
-					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-						local difficultyID = app.GetCurrentDifficultyID();
-						if difficultyID ~= 0 then
-							for _,row in ipairs(header.g) do
-								if row.difficultyID or row.difficulties then
-									if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
-									elseif row.expanded then
-										ExpandGroupsRecursively(row, false, true);
-									end
-								end
-							end
-						end
-					end
-				end
-
-				for i,o in ipairs(header.g) do
-					if o.key == "headerID" then
-						o.SortType = SortTypeByHeaderID[o.headerID];
-					end
-				end
-
-				-- Sort the list, but not for instances.
-				if not results.instanceID and not IsInInstance() then
-					app.Sort(groups, SortForMiniList);
-				end
-
-				-- Check to see completion...
-				app.AssignChildren(results);
-				cachedMapData[mapID] = results;
-				return results;
-			else
-				-- If we don't have any map data on this area, report it to the chat window.
-				ShowDiscordReportPopupForMapID(mapID);
-			end
-		end
-	end
-};
 
 -- Retail Style Mini List
 -- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
@@ -390,11 +154,9 @@ local RetailMapDataStyleMetatable = {
 				end
 			end
 			-- Simplify the returned groups
-			groups = {};
 			wipearray(rootGroups);
 			wipearray(mapGroups);
 			local currentMaps = {[mapID] = true};
-			mapData = { mapID = mapID, g = groups }
 			isInInstance = IsInInstance();
 			headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
 			local group, groupmapID, groupmaps
@@ -414,6 +176,9 @@ local RetailMapDataStyleMetatable = {
 					mapGroups[#mapGroups + 1] = group
 				end
 			end
+			groups = {};
+			mapData = { mapID = mapID, g = groups }
+			
 			-- first merge all root groups into the list
 			local groupMaps
 			for i=1,#rootGroups do
@@ -583,7 +348,7 @@ local RetailMapDataStyleMetatable = {
 -- Shared Mini List Behaviours
 -- CRIEVE NOTE: I want to do some fancy Settings Menu Style thing to make it configurable,
 -- maybe have a couple more styles or have them be extensible via an addon extension
-local CachedMapData = setmetatable({}, app.IsRetail and RetailMapDataStyleMetatable or ClassicMapDataStyleMetatable);
+local CachedMapData = setmetatable({}, RetailMapDataStyleMetatable);
 app.GetCachedDataForMapID = function(mapID)
 	return CachedMapData[mapID];
 end
@@ -638,51 +403,21 @@ app:CreateWindow("MiniList", {
 			if forceNewMap then wipe(CachedMapData); end
 			self:DelayedRebuild();
 		end
-
-		if app.IsRetail then
-			-- CRIEVE NOTE: I don't like the expand after the fact
-			-- If there's a way to do that immediately that'd be swell
-			app.AddEventHandler("OnWindowFillComplete", function(window)
-				if window.Suffix ~= self.Suffix then return end
-				local mapData = window.data
-				local g = mapData and mapData.g
-				if not g then return end
-
-				-- app.PrintDebug("Try expand minilist",app.Settings:GetTooltipSetting("Expand:Difficulty"),app.GetCurrentDifficultyID())
-				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-					local difficultyID = app.GetCurrentDifficultyID()
-					if difficultyID and difficultyID ~= 0 then
-						local expanded, row
-						for i=1,#g do
-							row = g[i]
-							if row.difficultyID or row.difficulties then
-								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									ExpandGroupsRecursively(row, true, true)
-									expanded = true
-								elseif row.expanded then
-									ExpandGroupsRecursively(row, false, true)
-								end
-							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
-							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
-							end
-						end
-
-						if expanded then
-							window:Update();
-							return
-						end
-					end
-				end
-				-- check to expand groups after they have been built and updated
-				-- dont re-expand if the user has previously full-collapsed the minilist
-				-- need to force expand if so since the groups haven't been updated yet
-				if not window.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
-					window.ExpandInfo = { Expand = true };
-					window:Update();
-				end
-			end);
-		end
+		
+		app.AddEventHandler("OnWindowFillComplete", function(window)
+			if window.Suffix ~= self.Suffix then return end
+			local mapData = window.data
+			local g = mapData and mapData.g
+			if not g then return end
+			
+			-- check to expand groups after they have been built and updated
+			-- dont re-expand if the user has previously full-collapsed the minilist
+			-- need to force expand if so since the groups haven't been updated yet
+			if not window.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
+				window.ExpandInfo = { Expand = true };
+				window:Update();
+			end
+		end);
 	end,
 	OnLoad = function(self, settings)
 		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
@@ -706,6 +441,11 @@ app:CreateWindow("MiniList", {
 					self:GetRunner().Reset()
 				end
 				self:SetData(mapData);
+				
+				-- If the minilist is meant to be expanded, cache the expand info.
+				if app.Settings:GetTooltipSetting("Expand:MiniList") then
+					self.ExpandInfo = { Expand = true };
+				end
 
 				-- Fill up the groups that need to be filled!
 				app.SetSkipLevel(2);

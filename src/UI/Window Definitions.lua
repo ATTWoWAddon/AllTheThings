@@ -462,28 +462,42 @@ do
 end
 
 -- Expand / Collapse Functions
-local SkipAutoExpands = {
-	-- Specific HeaderID values should not expand
-	headerID = {
-		[app.HeaderConstants.ZONE_DROPS] = true,
-		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		[app.HeaderConstants.HOLIDAYS] = true,
-	},
-	objectID = {
-		[375368] = true,	-- Creation Catalyst Console
-		[382621] = true,	-- Revival Catalyst Console
-		[456208] = true,	-- The Catalyst
-	},
+local HeaderSkipKeys = {
+	[app.HeaderConstants.ZONE_DROPS] = true,
+	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+	[app.HeaderConstants.HOLIDAYS] = true,
+};
+local ObjectSkipKeys = {
+	[375368] = true,	-- Creation Catalyst Console
+	[382621] = true,	-- Revival Catalyst Console
+	[456208] = true,	-- The Catalyst
+};
+local ShouldSkipAutoExpandForKey = setmetatable({
+	headerID = function(group) return HeaderSkipKeys[group.headerID]; end,
+	objectID = function(group) return ObjectSkipKeys[group.objectID]; end,
 	-- Item/Difficulty as Headers should not expand
-	itemID = true,
-	difficultyID = true,
-}
-local function IsAutoExpandSkippedForGroup(group)
-	local key = group.key;
-	local skipKey = SkipAutoExpands[key];
-	if not skipKey then return; end
-	return skipKey == true or skipKey[group[key]];
-end
+	itemID = app.ReturnTrue,
+	difficultyID = function(group)
+		if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+			-- If we were passed in a hash table for difficulties, then run against that
+			local difficultyHash = group.difficultyHash;
+			for id,_ in pairs(app.GetCurrentDifficulties()) do
+				if difficultyHash[id] then
+					return false;
+				end
+			end
+			-- If no match, then skip and also minimize the group
+			group.expanded = false;
+			return true;
+		end
+		return false;
+	end,
+}, {
+	__index = function(t, key)
+		t[key] = app.ReturnFalse;
+		return app.ReturnFalse;
+	end,
+});
 local function IsFullyCollapsed(group)
 	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
 	if group then
@@ -498,22 +512,37 @@ local function IsFullyCollapsed(group)
 		end
 	end
 end
-local function ExpandGroupsRecursively(group, expanded, manual)
+local function ForceExpandGroupsRecursively(group, expanded)
 	local g = group.g
 	if g then
-		if manual or (not IsAutoExpandSkippedForGroup(group) and
-			-- incomplete things actually exist below itself
-			((group.total or 0) > (group.progress or 0)) and
-			-- account/debug mode is active or it is not a 'saved' thing for this character
-			(app.MODE_DEBUG_OR_ACCOUNT or not group.saved)) then
-			group.expanded = expanded;
-			for i=1,#g do
-				ExpandGroupsRecursively(g[i], expanded, manual);
-			end
+		group.expanded = expanded;
+		for i=1,#g do
+			ForceExpandGroupsRecursively(g[i], expanded);
 		end
 	end
 end
+local function ConditionallyExpandGroupsRecursively(group, expanded)
+	local g = group.g
+	if g and not ShouldSkipAutoExpandForKey[group.key](group) and
+		-- incomplete things actually exist below itself
+		((group.total or 0) > (group.progress or 0)) and
+		-- account/debug mode is active or it is not a 'saved' thing for this character
+		(app.MODE_DEBUG_OR_ACCOUNT or not group.saved) then
+		group.expanded = expanded;
+		for i=1,#g do
+			ConditionallyExpandGroupsRecursively(g[i], expanded);
+		end
+	end
+end
+local function ExpandGroupsRecursively(group, expanded, force)
+	if force then
+		ForceExpandGroupsRecursively(group, expanded);
+	else
+		ConditionallyExpandGroupsRecursively(group, expanded);
+	end
+end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
+app.ForceExpandGroupsRecursively = ForceExpandGroupsRecursively;
 
 -- Configuration Functions
 local AdjustRowIndents = false;
@@ -1034,7 +1063,7 @@ local function RowOnClick(self, button)
 						window.fullCollapsed = IsFullyCollapsed(reference);
 					end
 					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
-					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
+					ForceExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed));
 					window:Update();
 					return true;
 				end
@@ -2071,8 +2100,8 @@ local function UpdateWindow(self, force, trigger)
 
 		-- Should the groups in this window be expanded prior to processing the rows for display
 		if self.ExpandInfo then
-			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
-			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Force)
+			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Force);
 			self.ExpandInfo = nil;
 		end
 		
@@ -2152,7 +2181,7 @@ local FieldDefaults = {
 		end
 	end,
 	ExpandData = function(self, expanded)
-		ExpandGroupsRecursively(self.data, expanded, true);
+		ForceExpandGroupsRecursively(self.data, expanded);
 	end,
 	SetMinMaxValues = function(self, displayedValue, totalValue)
 		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));

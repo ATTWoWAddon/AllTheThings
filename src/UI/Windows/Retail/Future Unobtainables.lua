@@ -18,7 +18,7 @@ app.AddCustomWindowOnUpdate("Future Unobtainables", function(self, force)
 			["g"] = app:BuildSearchResponseRetailStyle("rwp"),
 		}))
 		self:AssignChildren();
-		self.ExpandInfo = { Expand = true, Manual = true };
+		self.ExpandInfo = { Expand = true };
 	end
 	if self:IsVisible() then
 		self:DefaultUpdate(force);

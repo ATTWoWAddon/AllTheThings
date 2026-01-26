@@ -1,8 +1,7 @@
 -- App locals
 local _, app = ...;
 local contains = app.contains;
-local AssignChildren, ExpandGroupsRecursively =
-	app.AssignChildren, app.ExpandGroupsRecursively;
+local AssignChildren = app.AssignChildren;
 
 -- Global locals
 local ipairs, setmetatable =
@@ -37,7 +36,7 @@ local CachedLocalMapData = setmetatable({}, {
 			if results and #results > 0 then
 				local f = {g=results};
 				AssignChildren(f);
-				ExpandGroupsRecursively(f, true, true);
+				app.ExpandGroupsRecursively(f, true);
 				cachedLocalMapData[mapID] = results;
 				return results;
 			else

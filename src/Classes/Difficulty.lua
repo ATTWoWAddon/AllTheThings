@@ -11,18 +11,7 @@ local function GetRelativeDifficulty(group, checkDifficultyID)
 	if not group then return end
 	local difficultyID = group.difficultyID
 	if difficultyID then
-		if difficultyID == checkDifficultyID then
-			return true;
-		end
-		local difficulties = group.difficulties
-		if difficulties then
-			for i=1,#difficulties do
-				if difficulties[i] == checkDifficultyID then
-					return true;
-				end
-			end
-		end
-		return false;
+		return group.difficultyHash[difficultyID];
 	end
 	local parent = group.parent
 	if parent then
@@ -138,20 +127,12 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 				return locks.shared;
 			else
 				-- Look for this difficulty's lockout.
-				for difficultyKey, lock in pairs(locks) do
-					if difficultyKey == "shared" then
-						-- ignore this one
-					elseif difficultyKey == t.difficultyID then
-						t.locks = lock;
-						return lock;
-					end
-				end
-				local difficulties = t.difficulties;
-				if difficulties then
+				local difficultyHash = t.difficultyHash;
+				if difficultyHash then
 					local diffLocks = {};
 					-- Look for matching difficulty lockouts.
 					for difficultyKey, lock in pairs(locks) do
-						if contains(difficulties, difficultyKey) then
+						if difficultyHash[difficultyKey] then
 							diffLocks[difficultyKey] = lock;
 						end
 					end
@@ -166,6 +147,17 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["difficulties"] = function(t)
 		return DifficultyMap[t.difficultyID];
 	end,
+	["difficultyHash"] = function(t)
+		local d = { [t.difficultyID] = true };
+		local ids = t.difficulties;
+		if ids then
+			for i,id in ipairs(ids) do
+				d[id] = true;
+			end
+		end
+		t.difficultyHash = d;
+		return d;
+	end,
 	["e"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
 			return 1271;	-- TIMEWALKING event constant
@@ -175,14 +167,8 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
 		if difficultyID > 0 then
-			if t.difficultyID == difficultyID then
-				return false;
-			end
-			local difficulties = t.difficulties;
-			if difficulties and containsValue(difficulties, difficultyID) then
-				return false;
-			end
-			return true;
+			print(difficultyID, t.text, t.difficultyHash[difficultyID]);
+			return not t.difficultyHash[difficultyID];
 		end
 		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)
 	end,
@@ -293,5 +279,41 @@ app.GetCurrentDifficultyID = function()
 end
 app.GetRelativeDifficultyIcon = function(t)
 	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
+end
+
+-- If Difficulties exist, this means we can use the API!
+local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
+	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
+if GetDungeonDifficultyID then
+	app.GetCurrentDifficulties = function()
+		local d = {};
+		if IsInInstance() then
+			local diff = select(3, GetInstanceInfo()) or 0
+			if diff ~= 0 then
+				d[CurrentDifficultyRemapper[diff] or diff] = true;
+				return d;
+			end
+		end
+		
+		-- While outside of a dungeon (such as at its entrance),
+		-- if the mini list shows difficulty headers, it should filter them
+		d[GetDungeonDifficultyID()] = true;
+		d[GetRaidDifficultyID()] = true;
+		d[GetLegacyRaidDifficultyID()] = true;
+		return d;
+	end
+else
+	-- No API Access to difficulty APIs
+	app.GetCurrentDifficulties = function()
+		local d = {};
+		if IsInInstance() then
+			local diff = select(3, GetInstanceInfo()) or 0
+			if diff ~= 0 then
+				d[CurrentDifficultyRemapper[diff] or diff] = true;
+				return d;
+			end
+		end
+		return d;
+	end
 end
 end
