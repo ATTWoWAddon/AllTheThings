@@ -157,11 +157,6 @@ app:CreateWindow("Prime", {
 			self:Toggle();
 		end
 	end,
-	OnLoad = function(self, settings)
-		if not settings.visible then
-			self:ForceRebuild();
-		end
-	end,
 	OnRebuild = function(self)
 		-- Prime's data is built elsewhere.
 		self:SetData(app:GetDataCache());

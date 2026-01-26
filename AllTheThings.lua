@@ -1482,8 +1482,6 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 	
-	app.AssignChildren(rootData);
-	
 	if app.IsRetail then
 	-- Create Dynamic Groups Button
 	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
@@ -1733,6 +1731,9 @@ function app:GetDataCache()
 		"Provides a single command to open all Hidden content in a single window",
 	})
 	end
+	
+	app.AssignChildren(rootData);
+	
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()

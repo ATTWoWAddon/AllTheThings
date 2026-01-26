@@ -306,10 +306,10 @@ app:CreateWindow("MiniList", {
 		self.SetMapID = function(self, mapID, show)
 			if mapID and mapID ~= self.mapID then
 				self.mapID = mapID;
-				self:Rebuild();
-			end
-			if show then
-				self:Show();
+				if show then
+					self:Rebuild();
+					self:Show();
+				end
 			end
 		end
 		app.ToggleMiniListForCurrentZone = function()
