@@ -113,7 +113,6 @@ local ImmediateEvents = {
 	OnStartupDone = true,
 	OnInit = true,
 	OnReady = true,
-	__OnIsReady = true,
 	OnRefreshSettings = true,
 	OnSettingsRefreshed = true,
 	OnUpdateWindows = true,
@@ -153,9 +152,6 @@ local EventSequence = {
 		"OnInit"
 	},
 	OnInit = {
-		"__OnIsReady"
-	},
-	__OnIsReady = {
 		"OnReady"
 	},
 	OnRefreshSettings = {
@@ -186,10 +182,8 @@ local EventSequence = {
 		"OnRefreshWindows"
 	},
 }
-app.AddEventHandler("__OnIsReady", function()
-	-- Mark that we're ready now!
-	app.IsReady = true;
-end);
+-- Mark that we're ready now! (Forced to the first event in OnReady)
+app.AddEventHandler("OnReady", function() app.IsReady = true end, true)
 -- Allows adding an EventSequence entry, preventing any duplication
 app.LinkEventSequence = function(event, followupEvent)
 	if not (event and followupEvent) then
