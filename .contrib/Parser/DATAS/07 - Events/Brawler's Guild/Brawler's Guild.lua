@@ -173,6 +173,56 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			}),
 			ach(11573, {	-- Rumble Club
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+				["groups"] = {
+					crit(35477, {	-- Battle of the Brew
+						["providers"] = {
+							{ "i", 142290 },	-- Rumble Card: Battle of the Brew
+							{ "n", 115398 },	-- Ban Lu
+							{ "n", 115399 },	-- Karang
+							{ "n", 115400 },	-- Shui Huzin
+						},
+					}),
+					crit(35472, {	-- Grief Warden
+						["providers"] = {
+							{ "i", 142288 },	-- Rumble Card: Grief Warden
+							{ "n", 114943 },	-- Grief Warden <Enmity Moose>
+						},
+					}),
+					crit(35473, {	-- Mazhareen
+						["providers"] = {
+							{ "i", 142294 },	-- Rumble Card: Mazhareen
+							{ "n",  68251 },	-- Mazhareen
+						},
+					}),
+					crit(35474, {	-- Mindbreaker Gzzaj
+						["providers"] = {
+							{ "i", 142293 },	-- Rumble Card: Mindbreaker Gzzaj
+							{ "n", 117102 },	-- Mindbreaker Gzzaj
+						},
+					}),
+					crit(35478, {	-- Penguin Stampede
+						["providers"] = {
+							{ "i", 142289 },	-- Rumble Card: Penguin Stampede
+							{ "n", 115185 },	-- Penguin Stampede
+						},
+					}),
+					crit(35476, {	-- Senya
+						["providers"] = {
+							{ "i", 142291 },	-- Rumble Card: Senya
+							{ "n", 115357 },	-- Senya
+						},
+					}),
+					crit(35475, {	-- Stranglethorn Streak
+						["providers"] = {
+							{ "i", 142292 },	-- Rumble Card: Stranglethorn Streak
+							{ "n", 115912 },	-- Elder Snapjaw Crocolisk
+							{ "n", 115910 },	-- Lashtail Raptor
+							{ "n", 115911 },	-- Mistvale Gorilla
+							{ "n", 115908 },	-- Young Panther
+							{ "n", 115909 },	-- King Bangalash
+						},
+					}),
+				},
 			}),
 			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -1608,75 +1658,30 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							crit(35477, {	-- Battle of the Brew
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(35472, {	-- Grief Warden
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(68251, {	-- Mazhareen
-								crit(35473, {	-- Mazhareen
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(117102, {	-- Mindbreaker Gzzaj
-								crit(35474, {	-- Mindbreaker Gzzaj
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(115185, {	-- Penguin Stampede
-								crit(35478, {	-- Penguin Stampede
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142291, {	-- Rumble Card: Senya
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(115357, {	-- Senya
-								crit(35476, {	-- Senya
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							crit(35475, {	-- Stranglethorn Streak
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
 					}),
 					i(143759, {	-- VIP Room Rental Form
 						-- #if BEFORE SL
@@ -1830,75 +1835,30 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							crit(35477, {	-- Battle of the Brew
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(35472, {	-- Grief Warden
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(68251, {	-- Mazhareen
-								crit(35473, {	-- Mazhareen
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(117102, {	-- Mindbreaker Gzzaj
-								crit(35474, {	-- Mindbreaker Gzzaj
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(115185, {	-- Penguin Stampede
-								crit(35478, {	-- Penguin Stampede
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142291, {	-- Rumble Card: Senya
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							n(115357, {	-- Senya
-								crit(35476, {	-- Senya
-									["achievementID"] = 11573,	-- Rumble Club
-								}),
-							}),
-						},
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
-						["groups"] = {
-							crit(35475, {	-- Stranglethorn Streak
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						},
 					}),
 					i(143759, {	-- VIP Room Rental Form
 						-- #if BEFORE SL
