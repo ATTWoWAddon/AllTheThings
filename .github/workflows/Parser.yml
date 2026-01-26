@@ -4,6 +4,8 @@ name: Parser
 on:
   # Triggers the workflow on each push event
   push:
+    tags-ignore:
+      - '*'  # Ignore all tags
     paths:
       - '.contrib/Parser/**'
       - '.github/workflows/Parser.yml'
