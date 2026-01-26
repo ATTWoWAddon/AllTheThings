@@ -198,6 +198,7 @@ local function RefreshWindowStyles(self)
 			button.Window = window;
 			button.Suffix = window.Suffix;
 			UpdateButtonText(button, window)
+			buttonIndex = buttonIndex + 1;
 			lastChild = button;
 		end
 	end

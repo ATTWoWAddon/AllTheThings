@@ -2989,7 +2989,7 @@ local CategorizedSearchFunctionsByClassTypes = {};
 local CategorizedRelativeFields = { "u", "e", "awp", "rwp", "r", "c", "coords", "maps" };
 local CategoryByRelativeFields = {
 	-- Look for specific tags first, a PvP item will display as "vendor" or "achievement" instead, which isn't correct.
-	{ "pvp", function(o) return "pvp"; end },
+	{ "pvp", function(o) return app.HeaderConstants.PVP; end },
 	
 	-- Root Categories
 	{ "RootCategory",
@@ -3015,34 +3015,22 @@ local CategoryByRelativeFields = {
 				return value;
 			end
 			if value == app.HeaderConstants.COMMON_BOSS_DROPS or value == app.HeaderConstants.RARES then
-				return "drop";
+				return app.HeaderConstants.DROPS;
 			end
 			local group = app.GetRelativeGroup(o, "headerID", true);
-			if group.type then
+			if group and group.type then
+				local parentGroup = group.parent;
+				if parentGroup and parentGroup.headerID and not parentGroup.type then
+					return parentGroup.headerID;
+				end
 				if group.type == "fa" then
 					return app.HeaderConstants.FACTIONS;
+				elseif group.type == "a" then
+					return app.HeaderConstants.ACHIEVEMENTS;
 				elseif app.GetRelativeField(o, "headerID", app.HeaderConstants.QUESTS) then
 					return app.HeaderConstants.QUESTS;
-				end
-				local hash = group.hash;
-				local category = categories[hash];
-				if not category then
-					local clone = {};
-					for key,value in pairs(group) do
-						clone[key] = value;
-					end
-					category = app.CreateHeader(group[group.key], clone);
-					category.g = {};
-					categories[hash] = category;
-				end
-				return hash;
-			end
-			group = app.GetDeepestRelativeGroup(o, "headerID", true);
-			if group.type then
-				if group.type == "fa" then
-					return app.HeaderConstants.FACTIONS;
-				elseif app.GetRelativeField(o, "headerID", app.HeaderConstants.QUESTS) then
-					return app.HeaderConstants.QUESTS;
+				--else
+				--	print(group.type);
 				end
 				local hash = group.hash;
 				local category = categories[hash];
@@ -3115,7 +3103,7 @@ local function AssignCategoryForResult(self, categories, result)
 	end
 	if not categoryType then
 		print("FAILED TO FIND CATEGORY TYPE", o.text);
-		categoryType = "drop";
+		categoryType = app.HeaderConstants.DROPS;
 	end
 
 	-- Determine the type of category to put the thing into.
@@ -3124,12 +3112,6 @@ local function AssignCategoryForResult(self, categories, result)
 		if categoryType == "raid" then
             category = app.CreateRawText(GROUP_FINDER, {
                 icon = app.asset("Category_D&R"),
-            });
-        elseif categoryType == "pvp" then
-            category = app.CreateCustomHeader(app.HeaderConstants.PVP);
-        elseif categoryType == "drop" then
-            category = app.CreateRawText(BATTLE_PET_SOURCE_1, {
-                icon = app.asset("Category_WorldDrops"),
             });
 		elseif type(categoryType) == "number" then
 			category = app.CreateCustomHeader(categoryType);
