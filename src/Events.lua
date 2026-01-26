@@ -161,11 +161,20 @@ local EventSequence = {
 	OnRefreshSettings = {
 		"OnSettingsRefreshed"
 	},
+	OnRefreshCollections = {
+		"OnBeforeRecalculate",
+	},
+	OnBeforeRecalculate = {
+		"OnRecalculate",
+	},
 	OnRecalculate = {
 		"OnRecalculateDone",
 	},
 	OnRecalculateDone = {
 		"OnRefreshComplete",
+	},
+	OnRefreshComplete = {
+		"OnRefreshCollectionsDone",
 	},
 	OnSavesUpdated = {
 		"OnRedrawWindows"
@@ -203,11 +212,6 @@ app.LinkEventSequence = function(event, followupEvent)
 
 	triggerEventSequence[#triggerEventSequence + 1] = followupEvent
 end
-EventSequence.OnRefreshCollections = {
-	"OnBeforeRecalculate",
-	"OnRecalculate",
-	"OnRefreshCollectionsDone",
-}
 
 local Runner = app.CreateRunner("events")
 local Run = Runner.Run
