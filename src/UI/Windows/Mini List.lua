@@ -303,23 +303,24 @@ local ClassicMapDataStyleMetatable = {
 
 -- Retail Style Mini List
 -- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
+-- Wraps a given object such that it can act as an unfiltered Header of the base group
+local CreateWrapVisualHeader = app.CreateVisualHeaderWithGroups
 -- Returns the consolidated data format for the next header level
 -- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
-local function CreateHeaderData(group, header)
+local function CreateHeaderData(mapID, group, header)
 	-- copy an uncollectible version of the existing header
 	if header then
 		-- special case for Difficulty headers, need to be actual difficulty groups to merge properly with any existing
 		if header.difficultyID then
-			header = app.CloneClassInstance(header, true)
+			header = CreateObject(header, true)
 			header.g = { group }
 			return header
 		end
 		-- special case for Map auto-headers, ignore re-nesting a Map header of the current Map
-		if header.type == "m" and header.keyval == self.mapID then
+		if header.type == "m" and header.keyval == mapID then
 			return group
 		end
-		header = app.CloneClassInstance(header, true)
-		header.g = {group};
+		header = CreateWrapVisualHeader(header, {group})
 		header.SortType = "Global"
 		return header
 	else
@@ -351,7 +352,7 @@ local RetailMapDataStyleMetatable = {
 	__mode = "kv",
 	__index = function(cachedMapData, mapID)
 		local mapData;
-		
+
 		-- Get all results for this map
 		local results = app.SearchForField("mapID", mapID)
 		if results and #results > 0 then
@@ -450,17 +451,17 @@ local RetailMapDataStyleMetatable = {
 					if headerID then
 						-- all Headers implicitly are allowed as visual headers in minilist unless explicitly ignored
 						if not ignoredHeaders[headerID] then
-							group = CreateHeaderData(group, nextParent);
+							group = CreateHeaderData(mapID, group, nextParent);
 							nested = true;
 						end
 					elseif nextParent.isMinilistHeader then
-						group = CreateHeaderData(group, nextParent);
+						group = CreateHeaderData(mapID, group, nextParent);
 						nested = true;
 					else
 						for i=1,#headerKeys do
 							if nextParent[headerKeys[i]] then
 								-- create the specified group Type header
-								group = CreateHeaderData(group, nextParent);
+								group = CreateHeaderData(mapID, group, nextParent);
 								nested = true;
 								break;
 							end
@@ -472,12 +473,12 @@ local RetailMapDataStyleMetatable = {
 				-- really really special cases...
 				-- Battle Pets get an additional raw Filter nesting
 				if not nested and group.key == "speciesID" then
-					group = app.CreateFilter(101, CreateHeaderData(group));
+					group = app.CreateFilter(101, CreateHeaderData(mapID, group));
 				end
 
 				-- If relative to a difficultyGroup, then merge it into one.
 				if difficultyGroup then
-					group = CreateHeaderData(group, difficultyGroup);
+					group = CreateHeaderData(mapID, group, difficultyGroup);
 					-- remove the name sorttype from the difficulty-based header
 					group.SortType = nil
 					-- link the difficulty group to the current window header so that it assumes its expected hash
@@ -538,12 +539,12 @@ local RetailMapDataStyleMetatable = {
 				-- sort top level by name if not in an instance
 				mapData.SortType = "Global";
 			end
-			
+
 			-- TODO: This is dumb, but apparently its required. (for now?)
 			mapData.visible = true;
 			mapData.back = 1;
 			mapData.indent = 0;
-			
+
 			-- Cache all of the Current Maps with the same data.
 			for id,_ in pairs(currentMaps) do
 				cachedMapData[id] = mapData;
@@ -580,7 +581,7 @@ local RetailMapDataStyleMetatable = {
 };
 
 -- Shared Mini List Behaviours
--- CRIEVE NOTE: I want to do some fancy Settings Menu Style thing to make it configurable, 
+-- CRIEVE NOTE: I want to do some fancy Settings Menu Style thing to make it configurable,
 -- maybe have a couple more styles or have them be extensible via an addon extension
 local CachedMapData = setmetatable({}, app.IsRetail and RetailMapDataStyleMetatable or ClassicMapDataStyleMetatable);
 app.GetCachedDataForMapID = function(mapID)
@@ -637,7 +638,7 @@ app:CreateWindow("MiniList", {
 			if forceNewMap then wipe(CachedMapData); end
 			self:DelayedRebuild();
 		end
-		
+
 		if app.IsRetail then
 			-- CRIEVE NOTE: I don't like the expand after the fact
 			-- If there's a way to do that immediately that'd be swell
@@ -705,12 +706,12 @@ app:CreateWindow("MiniList", {
 					self:GetRunner().Reset()
 				end
 				self:SetData(mapData);
-				
+
 				-- Fill up the groups that need to be filled!
 				app.SetSkipLevel(2);
 				app.FillGroups(mapData);
 				app.SetSkipLevel(0);
-				
+
 				-- Make sure to scroll to the top when being rebuilt
 				self.ScrollBar:SetValue(1);
 			end

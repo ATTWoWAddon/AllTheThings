@@ -313,7 +313,7 @@ app.CreateDynamicHeaderByValue = app.CreateClass("DynamicValues", "dynamicValueI
 local BaseClass__class = app.BaseClass.__class
 local VisualHeaderFields = {
 	-- back = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- 	return 0.3	-- visibility of which rows are cloned
 	-- end,
 	__type = function() return "VisualHeader" end,
 	hash = BaseClass__class.hash,
@@ -391,7 +391,7 @@ local CreateNonCollectible, CreateNonCollectible__class = app.CreateClass("NonCo
 	-- back = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
-	collectible = app.EmptyFunction,
+	collectible = Empty,
 });
 -- manually remove the 'key' field since it isn't in BaseClass
 CreateNonCollectible__class.__class.key = nil

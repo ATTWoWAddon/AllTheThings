@@ -108,6 +108,7 @@ local ImmediateEvents = {
 	RowOnClick = true,
 	OnWindowCreated = true,
 	OnWindowUpdated = true,
+	OnWindowRefreshed = true,
 	OnLoad = true,
 	OnStartup = true,
 	OnStartupDone = true,
