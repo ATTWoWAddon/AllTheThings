@@ -4098,7 +4098,6 @@ root(ROOTS.Unsorted, {
 			-- Decor
 			i(260727),	-- Alliance Doormat
 			i(260728),	-- Horde Doormat
-			i(260785),	-- The Dark Portal
 			i(263239),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle
 			i(263241),	-- Cuddly Seafoam Grrgle
 			i(263242),	-- Cuddly Saffron Grrgle

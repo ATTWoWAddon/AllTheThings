@@ -54,6 +54,10 @@ root(ROOTS.Promotions, {
 				i(107951),	-- Iron Skyreaver (MOUNT!)
 				i(232519),	-- Razeshi B. (PET!)
 			}));
+			i(260785, {	-- The Dark Portal (DECOR!)
+				["description"] = "Obtained through watching the State of Azeroth broadcast on Twitch or YouTube on January 29th at 09:00 a.m. PST.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",
+				["timeline"] = { "removed 12.0.0.99999" },
+			}),
 			-- Season 1
 
 			-- Season 2
