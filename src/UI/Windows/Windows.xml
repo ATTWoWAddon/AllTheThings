@@ -32,7 +32,6 @@
 	<Script file="Maps.lua"/>
 	<Script file="Retail/Maps.lua"/>
 	<Script file="Mini List.lua"/>
-	<!--<Script file="Retail/Mini List.lua"/> -->
 	<Script file="Missing Quests.lua"/>
 	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
