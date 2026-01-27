@@ -10,7 +10,7 @@ app:CreateWindow("Breadcrumbs", {
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Follow the Breadcrumbs", {
+		self:SetData(app.CreateRawText("Breadcrumbs", {
 			icon = 133968,
 			description = "This window shows you all of the breadcrumbs tracked by ATT. Go get 'em!",
 			visible = true,
@@ -19,17 +19,12 @@ app:CreateWindow("Breadcrumbs", {
 			indent = 0,
 			g = { },
 			OnUpdate = function(t)
-				local g = t.g;
-				if #g < 1 then
-					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBreadcrumb");
-					if #results > 0 then
-						for i,result in ipairs(results) do
-							tinsert(g, result);
-						end
-						t.OnUpdate = nil;
-						self:AssignChildren();
-						self:ExpandData(true);
-					end
+				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "isBreadcrumb");
+				if g and #g > 0 then
+					t.g = g;
+					t.OnUpdate = nil;
+					self:AssignChildren();
+					self:ExpandData(true);
 				end
 			end,
 		}));

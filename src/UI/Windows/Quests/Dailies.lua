@@ -13,7 +13,7 @@ app:CreateWindow("Dailies", {
 			expanded = true,
 			back = 1,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponse(app:GetDataCache().g, "isDaily", 1);
+				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "isDaily");
 				if g and #g > 0 then
 					t.g = g;
 					t.OnUpdate = nil;
