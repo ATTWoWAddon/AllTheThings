@@ -21,7 +21,6 @@ app:CreateWindow("RaidAssistant", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
 	OnInit = function(self, handlers)
-		self.initialized = true;
 		self.doesOwnUpdate = true;
 
 		-- Define the different window configurations that the mini list will switch to based on context.
