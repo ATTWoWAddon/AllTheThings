@@ -716,21 +716,19 @@ local function SetRowData(self, row, data)
 	
 	-- Check to see what the text is currently
 	local text = data.text;
-	if text ~= row.text then
-		if IsRetrieving(text) then
-			-- This means the link is still rendering
-			text = RETRIEVING_DATA;
+	if IsRetrieving(text) then
+		-- This means the link is still rendering
+		text = RETRIEVING_DATA;
 
-			local AsyncRefreshFunc = data.AsyncRefreshFunc
-			if AsyncRefreshFunc then
-				AsyncRefreshFunc(data)
-			else
-				-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
-				Callback(self.Redraw, self)
-			end
+		local AsyncRefreshFunc = data.AsyncRefreshFunc
+		if AsyncRefreshFunc then
+			AsyncRefreshFunc(data)
 		else
-			row.text = text;
+			-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
+			Callback(self.Redraw, self)
 		end
+	elseif text ~= row.text then
+		row.text = text;
 		row.Label:SetText(text);
 	end
 
