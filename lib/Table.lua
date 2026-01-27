@@ -99,3 +99,26 @@ app.ReverseOrder = function(a)
 	end
 	return a;
 end
+-- Returns true if the two tables have any difference in assigned keys
+app.TableKeyDiff = function(a,b)
+	if not a then
+		if b then return true end
+		return
+	elseif not b then
+		if a then return true end
+		return
+	end
+    -- Check keys in a that are missing in b
+    for k in pairs(a) do
+        if not b[k] then
+            return true
+        end
+    end
+
+    -- Check keys in b that are missing in a
+    for k in pairs(b) do
+        if not a[k] then
+            return true
+        end
+    end
+end

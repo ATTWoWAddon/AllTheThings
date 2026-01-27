@@ -178,7 +178,7 @@ local RetailMapDataStyleMetatable = {
 			end
 			groups = {};
 			mapData = { mapID = mapID, g = groups }
-			
+
 			-- first merge all root groups into the list
 			local groupMaps
 			for i=1,#rootGroups do
@@ -389,8 +389,12 @@ app:CreateWindow("MiniList", {
 	end,
 	OnInit = function(self, handlers)
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
-			wipe(CachedMapData);
-			self:Rebuild();
+			-- Only do anything if the CurrentDifficulty has actually changed (Retail fires this event for completely unrelated reasons)
+			local currentDifficulties = app.GetCurrentDifficulties()
+			if app.TableKeyDiff(self.CurrentDifficulties, currentDifficulties) then
+				wipe(CachedMapData);
+				self:Rebuild();
+			end
 		end
 		app.ToggleMiniListForCurrentZone = function()
 			if self:IsVisible() then
@@ -403,13 +407,13 @@ app:CreateWindow("MiniList", {
 			if forceNewMap then wipe(CachedMapData); end
 			self:DelayedRebuild();
 		end
-		
+
 		app.AddEventHandler("OnWindowFillComplete", function(window)
 			if window.Suffix ~= self.Suffix then return end
 			local mapData = window.data
 			local g = mapData and mapData.g
 			if not g then return end
-			
+
 			-- check to expand groups after they have been built and updated
 			-- dont re-expand if the user has previously full-collapsed the minilist
 			-- need to force expand if so since the groups haven't been updated yet
@@ -441,7 +445,7 @@ app:CreateWindow("MiniList", {
 					self:GetRunner().Reset()
 				end
 				self:SetData(mapData);
-				
+
 				-- If the minilist is meant to be expanded, cache the expand info.
 				if app.Settings:GetTooltipSetting("Expand:MiniList") then
 					self.ExpandInfo = { Expand = true };
@@ -454,6 +458,9 @@ app:CreateWindow("MiniList", {
 
 				-- Make sure to scroll to the top when being rebuilt
 				self.ScrollBar:SetValue(1);
+
+				-- Store the CurrentDifficulties for this Rebuild
+				self.CurrentDifficulties = app.GetCurrentDifficulties()
 			end
 		end
 	end,

@@ -722,7 +722,7 @@ local function SetRowData(self, row, data)
 			if AsyncRefreshFunc then
 				AsyncRefreshFunc(data)
 			else
-				-- app.PrintDebug("No Async Redraw Func for Type!",data.__type)
+				-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
 				Callback(self.Redraw, self)
 			end
 		else
