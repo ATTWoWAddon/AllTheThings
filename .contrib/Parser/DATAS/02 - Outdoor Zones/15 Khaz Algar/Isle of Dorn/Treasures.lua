@@ -15,8 +15,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o(444066, {	-- Keeper's Stash
 				["coords"] = {
-					{ 62.4, 38.3, ISLE_OF_DORN },
+					{ 20.2, 58.4, ISLE_OF_DORN },
+					{ 38.5, 82.8, ISLE_OF_DORN },
 					{ 38.8, 25.0, ISLE_OF_DORN },
+					{ 42.1, 56.5, ISLE_OF_DORN },
+					{ 44.3, 55.0, ISLE_OF_DORN },
+					{ 44.8, 31.9, ISLE_OF_DORN },
+					{ 53.6, 19.2, ISLE_OF_DORN },
+					{ 62.4, 38.4, ISLE_OF_DORN },
+					{ 63.4, 73.2, ISLE_OF_DORN },
+					{ 64.6, 42.0, ISLE_OF_DORN },
+					{ 74.4, 58.2, ISLE_OF_DORN },
+					{ 77.9, 45.4, ISLE_OF_DORN },
 				},
 			}),
 			--

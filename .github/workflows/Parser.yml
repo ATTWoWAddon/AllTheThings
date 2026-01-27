@@ -4,8 +4,6 @@ name: Parser
 on:
   # Triggers the workflow on each push event
   push:
-    branches-ignore:
-      - master  # Ignore pushes to master branch
     tags-ignore:
       - '*'  # Ignore all tags
     paths:
@@ -21,6 +19,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v6
 

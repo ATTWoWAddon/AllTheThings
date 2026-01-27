@@ -60,7 +60,6 @@ root(ROOTS.Unsorted, {
 			i(256172),	-- Silvermoon Fence
 			i(256356),	-- Sunsmoke Censer
 			i(256925),	-- Amani Spearhunter's Spit
-			i(258748),	-- "Rising Glory of Rukhmar" Statue
 
 			-- QI
 			i(253210),	-- Soothsayer's Signet
@@ -4098,7 +4097,6 @@ root(ROOTS.Unsorted, {
 			-- Decor
 			i(260727),	-- Alliance Doormat
 			i(260728),	-- Horde Doormat
-			i(260785),	-- The Dark Portal
 			i(263239),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle
 			i(263241),	-- Cuddly Seafoam Grrgle
 			i(263242),	-- Cuddly Saffron Grrgle

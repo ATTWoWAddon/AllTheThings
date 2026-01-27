@@ -312,7 +312,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(93230),	-- Grand Commendation of the Lorewalkers
-							i(122221, {	["timeline"] = { ADDED_6_1_0 } } ),	-- Music Roll: Song of Liu Lang
+							i(122221, {	["timeline"] = { ADDED_6_1_0 } }),	-- Music Roll: Song of Liu Lang
 							i(247663, {	-- Pandaren Scholar's Bookcase (DECOR!)
 								["cost"] = 16000000,	-- 1,600g
 								["timeline"] = { ADDED_11_2_7 },

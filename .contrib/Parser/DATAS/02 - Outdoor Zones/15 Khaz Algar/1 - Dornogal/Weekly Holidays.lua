@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				pvp(q(47148)),				-- Something Different
 				-- #ENDIF
 				-- #ENDIF
-				pvp(q(83358, { ["timeline"] = { ADDED_11_0_5 } } )),	-- The Arena Calls
+				pvp(q(83358, { ["timeline"] = { ADDED_11_0_5 } })),	-- The Arena Calls
 				petbattle(pvp(q(83357, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				}))),

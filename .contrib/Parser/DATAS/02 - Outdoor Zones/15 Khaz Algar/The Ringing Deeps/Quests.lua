@@ -164,6 +164,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(210882),	-- Candle Crown (QI!)
 						i(212575),	-- The Candle Keys (QI!)
+						--
 						i(219464),	-- Earthen Traveler's Boomstick
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
@@ -175,6 +176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
 						i(219459),	-- Earthen Traveler's Staff
+						i(258264, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Candle Trio (DECOR!)
 					},
 				}),
 				q(80082, {	-- Back to Gundargaz
@@ -564,6 +566,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 220220 },	-- Berrund the Gleaming
 					["coord"] = { 69.6, 40.9, THE_RINGING_DEEPS },
 					["groups"] = {
+						i(258265, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Wagon (DECOR!)
 						i(228657),	-- Scrit's Handmade Girdle
 						i(228655),	-- Scrit's Handmade Gloves
 						i(228654),	-- Scrit's Handmade Shoes
@@ -879,6 +882,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						i(217395),	-- Freshly Smithed Tools (QI!)
 						i(216681),	-- Merchant Stall Parts (QI!)
+						--
+						i(258267, { ["timeline"] = { ADDED_12_0_0 } }),	-- Candle-Festooned Wooden Awning (DECOR!)
 					},
 				}),
 			}),
@@ -981,6 +986,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						o(421735, {	-- Prooftelling Flower
 							i(219224),	-- Prooftelling Flower (QI!)
 						}),
+						--
+						i(258262, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Digger's Chair (DECOR!)
 					},
 				}),
 			}),
