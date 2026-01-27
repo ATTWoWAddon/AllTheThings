@@ -1,49 +1,48 @@
 if C_TransmogCollection and C_TransmogCollection.GetIllusions then
 -- App locals
 local _, app = ...;
-local L = app.L;
 
--- Global locals
-local ipairs, pairs, tinsert =
-	  ipairs, pairs, tinsert;
+-- Private Variables
+local Flat;
 
--- Implementation
+-- Window Definition
 app:CreateWindow("Illusions", {
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attillusions" },
+	Defaults = {
+		Flat = false,
+	},
+	GetFlat = function(self)
+		return Flat;
+	end,
+	SetFlat = function(self, flat)
+		if Flat ~= flat then
+			Flat = flat;
+			self.data.OnUpdate = flat and self.OnUpdateFlat or self.OnUpdateCategorized;
+			self.data.g = {};
+			self:Rebuild();
+			if self.IsDynamicCategory and self:IsShown() then
+				app:GetWindow("Prime"):Update();
+			end
+		end
+	end,
+	ToggleFlat = function(self)
+		self:SetFlat(not self:GetFlat());
+	end,
+	OnLoad = function(self, settings)
+		self:SetFlat(settings.Flat);
+	end,
+	OnSave = function(self, settings)
+		settings.Flat = Flat;
+	end,
 	OnInit = function(self, handlers)
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "illusionID", "No illusions found.", "Illusion", "IllusionWithItem");
 		self:SetData(app.CreateFilter(103, {	-- Illusions
-			--icon = 132853,
 			description = "This list shows you all of the illusions that you can collect.",
 			visible = true,
-			expanded = true,
 			back = 1,
 			g = {},
-			OnUpdate = function(data)
-				local g = data.g;
-				if #g < 1 then
-					local illusions = {};
-					for i,_ in pairs(app.SearchForFieldContainer("illusionID")) do
-						if not illusions[i] then
-							local illusion = {};
-							for j,o in ipairs(_) do
-								for key,value in pairs(o) do illusion[key] = value; end
-							end
-							illusion = app.CreateIllusion(tonumber(i), illusion);
-							illusions[i] = illusion;
-							illusion.g = nil;
-							illusion.parent = data;
-							tinsert(g, illusion);
-						end
-					end
-					if #g > 0 then
-						data.SortType = "name";
-					else
-						tinsert(g, { OnUpdate = app.AlwaysShowUpdate, parent = data, text = "No illusions found." });
-					end
-				end
-			end
 		}));
 	end,
 });
