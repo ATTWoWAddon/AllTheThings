@@ -62,7 +62,7 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 					end
 				end
 			end
-			
+
 			local excludedZones = setmetatable({}, {
 				__index = function(t, mapID)
 					local info = C_Map_GetMapInfo(mapID);
@@ -290,6 +290,7 @@ app.AddCustomWindowOnUpdate("Random", function(self)
 		self.data.indent = 0;
 		self:AssignChildren();
 		self:DefaultUpdate(true);
+		return true
 	end
 end)
 

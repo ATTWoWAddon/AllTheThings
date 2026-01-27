@@ -443,7 +443,7 @@ app:CreateWindow("Tradeskills", {
 			end
 			app.CallbackHandlers.AfterCombatCallback(self.Update, self);
 		end
-		
+
 		-- Setup Event Handlers and register for events
 		self:RegisterEvent("TRADE_SKILL_SHOW");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
@@ -476,7 +476,7 @@ app:CreateWindow("Tradeskills", {
 		end
 		handlers.GARRISON_TRADESKILL_NPC_CLOSED = handlers.TRADE_SKILL_CLOSE
 	end,
-	OnUpdate = function(self, ...)
+	OnUpdate = function(self, force)
 		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
 				for i,child in ipairs({UIParent:GetChildren()}) do
@@ -564,5 +564,6 @@ app:CreateWindow("Tradeskills", {
 		-- Update the window and all of its row data
 		self:DefaultUpdate(force or self.force);
 		self.force = nil;
+		return true
 	end,
 });

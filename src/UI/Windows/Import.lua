@@ -153,6 +153,4 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 
 		self:ResetToInitialButtons()
 	end
-
-	self:DefaultUpdate(force)
 end)

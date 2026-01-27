@@ -47,6 +47,6 @@ app:CreateWindow("Filter Specific Things", {
 		self:DefaultUpdate(...);
 		app.Settings.Collectibles.Quests = oldQuestCollection;
 		app.Settings.Collectibles.Achievements = oldAchievementsCollection;
-		return false;
+		return true;
 	end
 });

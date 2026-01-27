@@ -1102,7 +1102,7 @@ app:CreateWindow("SoftReserves", {
 		self:DefaultUpdate(...);
 		app.GroupFilter = groupFilter;
 		app.Modules.Filter.Set.Visible(visibilityFilter);
-		return false;
+		return true
 	end
 });
 SoftReserveWindow = app:GetWindow("SoftReserves");

@@ -170,5 +170,6 @@ app:CreateWindow("Prime", {
 				modeString = rootData.modeString,
 			};
 		end
+		return true
 	end
 });

@@ -27,6 +27,6 @@ app:CreateWindow("Never Implemented", {
 		app.Modules.Filter.Set.Unobtainable();
 		self:DefaultUpdate(...);
 		app.Modules.Filter.Set.Unobtainable(state);
-		return false;
+		return true
 	end
 });

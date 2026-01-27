@@ -578,7 +578,6 @@ app:CreateWindow("Tradeskills", {
 				return;
 			end
 		end
-		self:DefaultUpdate(...);
 	end,
 	OnSave = function(self, settings)
 		settings.visible = false;

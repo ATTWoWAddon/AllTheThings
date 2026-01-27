@@ -368,6 +368,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		app.Modules.Filter.Set.Visible(true);
 		self:DefaultUpdate(force);
 		app.Modules.Filter.Set.Visible(filterVisible);
+		return true
 	end
 end)
 

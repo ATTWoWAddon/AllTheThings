@@ -451,6 +451,7 @@ app.AddCustomWindowOnUpdate("RaidAssistant", function(self)
 		self:AssignChildren();
 		self:DefaultUpdate(true);
 		app.Modules.Filter.Set.Visible(visibleState)
+		return true
 	end
 end)
 

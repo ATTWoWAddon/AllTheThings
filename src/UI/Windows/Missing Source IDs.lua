@@ -43,6 +43,6 @@ app:CreateWindow("Missing Source IDs", {
 			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
-		return false;
+		return true
 	end
 });

@@ -37,6 +37,6 @@ app:CreateWindow("Removed From Game", {
 		rawSettings[2] = true;
 		self:DefaultUpdate(...);
 		rawSettings[2] = oldFilter;
-		return false;
+		return true
 	end
 });

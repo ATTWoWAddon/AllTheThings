@@ -261,6 +261,7 @@ app:CreateWindow("ItemFinder", {
 		UpdateGroups(data, data.g);
 		self:DefaultUpdate(...);
 		if data.OnUpdate then data.OnUpdate(data); end
+		return true
 	end,
 	--[[
 	OnRefresh = function(self, ...)
@@ -363,6 +364,7 @@ app:CreateWindow("QuestFinder", {
 		UpdateGroups(self.data, self.data.g);
 		self:DefaultUpdate(...);
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		return true
 	end,
 	OnRefresh = function(self, ...)
 		self:DelayedCall("Update", 5);
@@ -440,6 +442,7 @@ app:CreateWindow("SpellFinder", {
 		UpdateGroups(self.data, self.data.g);
 		self:DefaultUpdate(...);
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		return true
 	end,
 	OnRefresh = function(self, ...)
 		self:DelayedCall("Update", 5);

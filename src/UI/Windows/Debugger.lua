@@ -276,7 +276,6 @@ app:CreateWindow("Debugger", {
 		self.data.back = 1;
 		self.data.indent = 0;
 		self:AssignChildren();
-		self:DefaultUpdate(true);
 	end
 });
 ]]--
@@ -856,9 +855,6 @@ app.LoadDebugger = function()
 			AddObject();
 			self:AssignChildren();
 		end
-
-		-- Update the window and all of its row data
-		self:DefaultUpdate(force);
 	end);
 	local debuggerWindow = app:GetWindow("Debugger");
 	app.TopLevelUpdateGroup(debuggerWindow.data);

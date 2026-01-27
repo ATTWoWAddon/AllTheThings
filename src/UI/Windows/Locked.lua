@@ -50,6 +50,6 @@ app:CreateWindow("Locked", {
 		app.Settings:Set("Thing:QuestsLocked", oldQuestsLocked);
 		app.Settings:SetCollectedThings(oldCollectedThings);
 		app.Settings:SetCompletedGroups(oldCompletedGroups);
-		return false;
+		return true
 	end
 });

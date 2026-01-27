@@ -97,9 +97,6 @@ app.AddCustomWindowOnUpdate("Maps", function(self, force)
 
 			self:SetData(rootData);
 		end
-
-		-- Update the window and all of its row data
-		self:DefaultUpdate(force);
 	end
 end)
 

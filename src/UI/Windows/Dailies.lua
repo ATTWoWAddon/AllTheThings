@@ -29,6 +29,6 @@ app:CreateWindow("Dailies", {
 		app.Modules.Filter.Set.Trackable(true);
 		self:DefaultUpdate(...);
 		app.Modules.Filter.Set.Trackable(state);
-		return false;
+		return true;
 	end
 });

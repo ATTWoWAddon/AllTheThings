@@ -22,6 +22,7 @@ app.AddCustomWindowOnUpdate("Future Unobtainables", function(self, force)
 	end
 	if self:IsVisible() then
 		self:DefaultUpdate(force);
+		return true
 	end
 end)
 

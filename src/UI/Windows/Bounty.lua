@@ -45,6 +45,6 @@ app:CreateWindow("Bounty", {
 			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
-		return false;
+		return true;
 	end
 });
