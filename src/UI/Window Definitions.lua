@@ -2065,7 +2065,9 @@ end
 local function OnScrollBarValueChanged(self, value)
 	if self.CurrentIndex ~= value then
 		self.CurrentIndex = value;
-		self:GetParent():Refresh();
+		-- app.PrintDebug("ScrollBarValueChanged", value);
+		local window = self:GetParent()
+		Callback(window.Refresh, window)
 	end
 end
 local VisibilityFilter, SortGroup
@@ -2091,6 +2093,11 @@ local function UpdateWindow(self, force, trigger)
 	if not data then return; end
 	local visible = self:IsShown();
 	force = force or self.HasPendingUpdate;
+	-- app.PrintDebug(app.Modules.Color.Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
+	-- 	force and "FORCE" or "SOFT",
+	-- 	visible and "VISIBLE" or "HIDDEN",
+	-- 	trigger and "COLLECTED" or "PASSIVE",
+	-- 	self.HasPendingUpdate and "PENDING" or "")
 	if force or visible then
 		local rowData = self.rowData
 		if not rowData then
@@ -2236,30 +2243,33 @@ local FieldDefaults = {
 	DefaultUpdate = UpdateWindow,
 	DefaultRefresh = UpdateVisibleRowData,
 	Redraw = function(self)
+		-- app.PrintDebug(app.Modules.Color.Colorize("Redraw:", app.DefaultColors.TooltipLore),self.Suffix,
+		-- 	self.rowData and #self.rowData,
+		-- 	self:IsShown() and "VISIBLE" or "HIDDEN")
 		-- If there is no raw data or we aren't visible, then ignore this action.
-		if self:IsShown() and self.rowData then
-			-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-			local totalRowCount = #self.rowData;
-			if totalRowCount > 0 then
-				-- Ensure that the first row doesn't move out of position.
-				local container = self.Container;
-				local row = container.rows[1];
-				if not row then return; end
-				SetRowData(self, row, row.ref);
+		if not self:IsShown() or not self.rowData then return end
 
-				-- Fill the remaining rows up to the (visible) row count.
-				local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
-				for i=2,totalRowCount do
-					row = container.rows[i];
-					if row then
-						SetRowData(self, row, row.ref);
-						totalHeight = totalHeight + row:GetHeight();
-						if totalHeight > containerHeight then
-							break;
-						end
-					else
+		-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
+		local totalRowCount = #self.rowData;
+		if totalRowCount > 0 then
+			-- Ensure that the first row doesn't move out of position.
+			local container = self.Container;
+			local row = container.rows[1];
+			if not row then return; end
+			SetRowData(self, row, row.ref);
+
+			-- Fill the remaining rows up to the (visible) row count.
+			local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
+			for i=2,totalRowCount do
+				row = container.rows[i];
+				if row then
+					SetRowData(self, row, row.ref);
+					totalHeight = totalHeight + row:GetHeight();
+					if totalHeight > containerHeight then
 						break;
 					end
+				else
+					break;
 				end
 			end
 		end
