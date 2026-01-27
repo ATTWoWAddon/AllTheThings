@@ -277,8 +277,6 @@ UpdateGroups = function(parent, g)
 				if not group:OnUpdate(parent, UpdateGroup) then
 					UpdateGroup(group, parent)
 				elseif group.visible then
-					group.total = nil
-					group.progress = nil
 					UpdateGroups(group, group.g)
 				end
 			else
@@ -460,22 +458,16 @@ local function TopLevelUpdateGroup(group, forceShow)
 		-- app.PrintDebug("Root Group",group.text)
 		group.forceShow = true
 	end
-	--[[
-	-- CRIEVE WAS CONFUSED
+	-- OnUpdate returns "whether it handled the update for itself"
+	-- Recursion to .g should always persist if the group is visible
 	if group.OnUpdate then
-		if not group:OnUpdate() then
+		if not group:OnUpdate(nil, UpdateGroup) then
 			UpdateGroup(group)
 		elseif group.visible then
-			group.total = nil
-			group.progress = nil
 			UpdateGroups(group, group.g)
 		end
 	else
 		UpdateGroup(group)
-	end
-	]]--
-	if not (group.OnUpdate and group:OnUpdate()) then
-		UpdateGroups(group, group.g);
 	end
 	-- app.PrintDebugPrior("TLUG",group.hash,group.visible)
 end
