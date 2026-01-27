@@ -511,17 +511,17 @@ local ShouldSkipAutoExpandForKey = setmetatable({
 		return app.ReturnFalse;
 	end,
 });
-local function IsFullyCollapsed(group)
-	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
-	if group then
-		local g = group.g
-		if g then
-			for i=1,#g do
-				-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
-				if g[i].expanded then
-					return true;
-				end
-			end
+-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+local function HasExpandedSubgroup(group)
+	if not group then return end
+
+	local g = group.g
+	if not g then return end
+
+	for i=1,#g do
+		-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+		if g[i].expanded then
+			return true;
 		end
 	end
 end
@@ -1073,7 +1073,7 @@ local function RowOnClick(self, button)
 				if reference.g then
 					-- mark the window if it is being fully-collapsed
 					if self.index < 1 then
-						window.fullCollapsed = IsFullyCollapsed(reference);
+						window.fullCollapsed = HasExpandedSubgroup(reference);
 					end
 					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
 					ForceExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed));
