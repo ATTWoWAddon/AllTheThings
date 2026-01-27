@@ -1932,12 +1932,12 @@ app.AddEventHandler("OnInit", function()
 end);
 
 -- Automatic Opening Opt-In Methods
-GetShouldAutomaticallyOpen = function(self)
+local GetShouldAutomaticallyOpen = function(self)
 	if self.Settings then
 		return self.Settings.ShouldAutomaticallyOpen;
 	end
 end
-SetShouldAutomaticallyOpen = function(self, shouldAutomaticallyOpen)
+local SetShouldAutomaticallyOpen = function(self, shouldAutomaticallyOpen)
 	if self.Settings then
 		self.Settings.ShouldAutomaticallyOpen = shouldAutomaticallyOpen;
 	end
@@ -2068,17 +2068,18 @@ local function OnScrollBarValueChanged(self, value)
 		self:GetParent():Refresh();
 	end
 end
+local VisibilityFilter, SortGroup
 local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		data[#data + 1] = object;
+	if not VisibilityFilter(object) then return end
+	data[#data + 1] = object;
+	if object.expanded then
 		local g = object.g;
-		if g and object.expanded then
-			-- Delayed sort operation for this group prior to being shown
-			local sortType = object.SortType;
-			if sortType then app.SortGroup(object, sortType); end
-			for i=1,#g do
-				ProcessGroup(data, g[i]);
-			end
+		if not g then return; end
+		-- Delayed sort operation for this group prior to being shown
+		local sortType = object.SortType;
+		if sortType then SortGroup(object, sortType); end
+		for i=1,#g do
+			ProcessGroup(data, g[i]);
 		end
 	end
 end
@@ -2117,7 +2118,9 @@ local function UpdateWindow(self, force, trigger)
 			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Force);
 			self.ExpandInfo = nil;
 		end
-		
+
+		-- cache a couple heavily referenced functions within ProcessGroup
+		VisibilityFilter, SortGroup = app.VisibilityFilter, app.SortGroup
 		ProcessGroup(rowData, data);
 		-- app.PrintDebug("Update:RowData",#rowData)
 
