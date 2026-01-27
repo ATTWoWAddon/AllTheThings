@@ -3,8 +3,8 @@ local _, app = ...;
 local L = app.L
 
 -- Global locals
-local coroutine,ipairs,pairs,pcall,math,select,type,tremove,wipe
-	= coroutine,ipairs,pairs,pcall,math,select,type,tremove,wipe;
+local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe
+	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe;
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
@@ -566,56 +566,92 @@ local SetPortraitTexture = SetPortraitTexture;
 local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
 local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
 local function SetPortraitIcon(self, data)
+	local icon = data.icon;
 	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
 		local displayID = app.GetDisplayID(data);
 		if displayID then
-			SetPortraitTextureFromDisplayID(self, displayID);
-			self:SetWidth(self:GetHeight());
-			self:SetTexCoord(0, 1, 0, 1);
+			if self.context ~= "displayID" or self.texture ~= displayID then
+				SetPortraitTextureFromDisplayID(self, displayID);
+				self:SetWidth(self:GetHeight());
+				self:SetTexCoord(0, 1, 0, 1);
+				self.context = "displayID";
+				self.texture = displayID;
+			end
 			return true;
-		elseif data.unit and not data.icon then
-			SetPortraitTexture(self, data.unit);
-			self:SetWidth(self:GetHeight());
-			self:SetTexCoord(0, 1, 0, 1);
-			return true;
+		else
+			local unit = data.unit;
+			if unit and not icon then
+				if self.context ~= "unit" or self.texture ~= unit then
+					SetPortraitTexture(self, unit);
+					self:SetWidth(self:GetHeight());
+					self:SetTexCoord(0, 1, 0, 1);
+					self.context = "unit";
+					self.texture = unit;
+				end
+				return true;
+			end
 		end
 	end
 
 	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
+	local atlas = data.atlas;
+	if atlas then
+		-- This isn't a part of the main conditional because
+		-- an atlas can have multiple backgrounds and borders
+		if self.context ~= "atlas" or self.texture ~= atlas then
+			self:SetAtlas(data.atlas);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			self.context = "atlas";
+			self.texture = atlas;
+		end
+		atlas = data["atlas-background"];
+		if atlas and self.Background.atlas ~= atlas then
+			self.Background.atlas = atlas;
+			self.Background:SetAtlas(atlas);
 			self.Background:SetWidth(self:GetHeight());
 			self.Background:Show();
 		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"] or app.EmptyTable;
-				self.Border:SetVertexColor(swatches[1] or 0, swatches[2] or 0, swatches[3] or 0, swatches[4] or 1);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1);
+		atlas = data["atlas-border"];
+		if atlas then
+			if self.Border.atlas ~= atlas then
+				self.Border.atlas = atlas;
+				self.Border:SetAtlas(atlas);
+				self.Border:SetWidth(self:GetHeight());
+				self.Border:Show();
+			end
+			atlas = data["atlas-color"];
+			if self.Border.atlasColor ~= atlas then
+				self.Border.atlasColor = atlas;
+				if atlas then
+					self.Border:SetVertexColor(atlas[1] or 0, atlas[2] or 0, atlas[3] or 0, atlas[4] or 1);
+				else
+					self.Border:SetVertexColor(1, 1, 1, 1);
+				end
 			end
 		end
 		return true;
-	elseif data.icon then
-		self:SetWidth(self:GetHeight());
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
+	elseif icon then
+		if self.context ~= "icon" or self.texture ~= icon then
+			self:SetWidth(self:GetHeight());
+			self:SetTexture(data.icon);
+			self.context = "icon";
+			self.texture = icon;
+			local texcoord = data.texcoord;
+			if texcoord then
+				self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+			else
+				self:SetTexCoord(0, 1, 0, 1);
+			end
 		end
 		return true;
 	end
 	-- anything without an icon ends up with weird spacing in lists
-	self:SetTexture(QUESTION_MARK_ICON);
+	if self.context ~= "icon" or self.texture ~= QUESTION_MARK_ICON then
+		self:SetTexture(QUESTION_MARK_ICON);
+		self.context = "icon";
+		self.texture = QUESTION_MARK_ICON;
+	end
 	return true
 end
 app.AddEventHandler("OnSettingsRefreshed", function()
@@ -727,7 +763,8 @@ local function SetRowData(self, row, data)
 			-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
 			Callback(self.Redraw, self)
 		end
-	elseif text ~= row.text then
+	end
+	if text ~= row.text then
 		row.text = text;
 		row.Label:SetText(text);
 	end
@@ -905,8 +942,6 @@ local function StartMovingOrSizing(self)
 end
 
 -- Shared Panel Functions
-local rawget,tostring
-	= rawget,tostring;
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -2262,7 +2297,7 @@ local FieldDefaults = {
 	end,
 	DefaultUpdate = UpdateWindow,
 	DefaultRefresh = UpdateVisibleRowData,
-	Redraw = function(self)
+	DefaultRedraw = function(self)
 		-- app.PrintDebug(app.Modules.Color.Colorize("Redraw:", app.DefaultColors.TooltipLore),self.Suffix,
 		-- 	self.rowData and #self.rowData,
 		-- 	self:IsShown() and "VISIBLE" or "HIDDEN")
@@ -2643,6 +2678,9 @@ local function BuildWindow(suffix)
 				end
 			end
 		end
+	end
+	function window:Redraw()
+		window:DefaultRedraw();
 	end
 	
 	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
