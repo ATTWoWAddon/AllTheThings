@@ -1159,7 +1159,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(250291),	-- Hot and Fresh Portable Bakery
 				i(252743),	-- Lively Winter Toque
 				i(252710),	-- Midnight Winter Toque
-				i(250292),	-- Piping Hot Portable Bakery
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
 				i(252746),	-- Rosy Winter Toque
