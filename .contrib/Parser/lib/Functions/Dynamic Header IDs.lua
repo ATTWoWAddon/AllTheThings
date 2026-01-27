@@ -206,6 +206,7 @@ HeaderAssignments = {
 	["Elite Gear"] = -295,
 	["Emerald Bounty"] = -400,
 	["Emissary Quests"] = -28,
+	["Endeavors"] = -711,
 	["Eon's Fringe"] = -401,
 	["Epic"] = -217,
 	["Epic Edition"] = -523,
@@ -690,4 +691,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -711;
+NextHeaderID = -712;

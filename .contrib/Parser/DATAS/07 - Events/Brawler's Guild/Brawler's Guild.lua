@@ -171,58 +171,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 			}),
-			ach(11573, {	-- Rumble Club
+			ach(11573, {	-- Rumble Club (automated)
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
-				["groups"] = {
-					crit(35477, {	-- Battle of the Brew
-						["providers"] = {
-							{ "i", 142290 },	-- Rumble Card: Battle of the Brew
-							{ "n", 115398 },	-- Ban Lu
-							{ "n", 115399 },	-- Karang
-							{ "n", 115400 },	-- Shui Huzin
-						},
-					}),
-					crit(35472, {	-- Grief Warden
-						["providers"] = {
-							{ "i", 142288 },	-- Rumble Card: Grief Warden
-							{ "n", 114943 },	-- Grief Warden <Enmity Moose>
-						},
-					}),
-					crit(35473, {	-- Mazhareen
-						["providers"] = {
-							{ "i", 142294 },	-- Rumble Card: Mazhareen
-							{ "n",  68251 },	-- Mazhareen
-						},
-					}),
-					crit(35474, {	-- Mindbreaker Gzzaj
-						["providers"] = {
-							{ "i", 142293 },	-- Rumble Card: Mindbreaker Gzzaj
-							{ "n", 117102 },	-- Mindbreaker Gzzaj
-						},
-					}),
-					crit(35478, {	-- Penguin Stampede
-						["providers"] = {
-							{ "i", 142289 },	-- Rumble Card: Penguin Stampede
-							{ "n", 115185 },	-- Penguin Stampede
-						},
-					}),
-					crit(35476, {	-- Senya
-						["providers"] = {
-							{ "i", 142291 },	-- Rumble Card: Senya
-							{ "n", 115357 },	-- Senya
-						},
-					}),
-					crit(35475, {	-- Stranglethorn Streak
-						["providers"] = {
-							{ "i", 142292 },	-- Rumble Card: Stranglethorn Streak
-							{ "n", 115912 },	-- Elder Snapjaw Crocolisk
-							{ "n", 115910 },	-- Lashtail Raptor
-							{ "n", 115911 },	-- Mistvale Gorilla
-							{ "n", 115908 },	-- Young Panther
-							{ "n", 115909 },	-- King Bangalash
-						},
-					}),
-				},
 			}),
 			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,

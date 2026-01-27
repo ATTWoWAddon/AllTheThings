@@ -1616,9 +1616,10 @@ localize(L.HEADER_NAMES, {
 	[-703] = "Diablo IV: Lord of Hatred",
 	[-704] = EJ_TUTORIALS,
 	[-705] = "Training Grounds",
-	[-706] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 	[-708] = "Razer",
+	[-709] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-711] = "Endeavors",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2298,6 +2299,7 @@ localize(L.HEADER_ICONS, {
 	[-703] = 1529348,
 	[-705] = 136106,
 	[-708] = 132529,
+	[-711] = 134495,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2509,7 +2511,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=18,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=1,["monthDay"]=25,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
@@ -2561,7 +2562,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=12,["monthDay"]=27,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9883,6 +9885,7 @@ local ObjectNames = {
 	[360054] = "Sticky Cat",
 	[362489] = "Elysian Decree",
 	[364345] = "A Faintly Glowing Seed",
+	[364482] = "Collected Sinstone Fragments",
 	[364483] = "Empty Nightcap Cask",
 	[364498] = "Bloodhoof Mace",
 	[364560] = "Stygian Cache",
@@ -18491,6 +18494,7 @@ local ObjectModels = {
 	[360054] = 3730958,
 	[362489] = 3045977,
 	[364345] = 3486892,
+	[364482] = 3607334,
 	[364483] = 3036556,
 	[364498] = 306797,
 	[364560] = 3677216,
@@ -23279,7 +23283,7 @@ L.QUEST_NAMES = {
 	[50147] = "Step 8: Temple of Karabor",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-707],
+	[52819] = _.L.HEADER_NAMES[-710],
 	[52917] = "Grimmy Dialogue",
 	[53417] = "Lost Spawn of Krag'wa (The Shattered River)",
 	[53418] = "Lost Spawn of Krag'wa (Razorjaw River)",
@@ -24873,8 +24877,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Zwielichtzone",
 	[-662] = "Championausrüstung",
 	[-696] = "Netherportal",
-	[-706] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-707] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-709] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-710] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -29783,6 +29787,7 @@ localize(ObjectNames, {
 	[360054] = "Klebrige Katze",
 	[362489] = "Elysischer Erlass",
 	[364345] = "Ein schwach leuchtender Samen",
+	[364482] = "Gesammelte Sündensteinfragmente",
 	[364483] = "Leeres Schlummertrunkfass",
 	[364498] = "Bluthufstreitkolben",
 	[364560] = "Stygische Truhe",
@@ -32147,8 +32152,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Chroniques des Crépusculaires",
 	[-662] = "Équipement de champion",
 	[-696] = "Portail de Néant",
-	[-706] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-707] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-709] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-710] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -37075,6 +37080,7 @@ localize(ObjectNames, {
 	[360054] = "Chat collant",
 	[362489] = "Décret élyséen",
 	[364345] = "Graine faiblement luminescente",
+	[364482] = "Fragments de stèle du vice récupérée",
 	[364483] = "Fût de pousse-café vide",
 	[364498] = "Masse de Sabot-de-Sang",
 	[364560] = "Cache stygienne",
@@ -39036,8 +39042,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Zona del Crepuscolo",
 	[-662] = "Equipaggiamento campione",
 	[-696] = "Portale Fatuo",
-	[-706] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-709] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -43490,6 +43496,7 @@ localize(ObjectNames, {
 	[360054] = "Gatto Appiccicoso",
 	[362489] = "Decreto Elisio",
 	[364345] = "Seme Debolmente Luminoso",
+	[364482] = "Frammenti di Pietra del Peccato Recuperati",
 	[364483] = "Barile di Cicchetti Vuoto",
 	[364498] = "Mazza degli Zoccolo Sanguinario",
 	[364560] = "Scrigno Stigio",
@@ -45303,8 +45310,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Além da Imaginação",
 	[-662] = "Equipamento de Campeão",
 	[-696] = "Portal Etéreo",
-	[-706] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-709] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -50077,6 +50084,7 @@ localize(ObjectNames, {
 	[360054] = "Gato Grudento",
 	[362489] = "Decreto Elísio",
 	[364345] = "Semente Levemente Chamejante",
+	[364482] = "Fragmentos de Pedra de Pecado Coletados",
 	[364483] = "Barril da Saideira Esvaziado",
 	[364498] = "Maça de Casco Sangrento",
 	[364560] = "Arca Estígia",
@@ -52745,8 +52753,8 @@ localize(L.HEADER_NAMES, {
 	[-669] = "Промо Midnight",
 	[-674] = "Вылазки MID 1 сезон",
 	[-696] = "Врата Пустоты",
-	[-706] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-707] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-709] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-710] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -57705,6 +57713,7 @@ localize(ObjectNames, {
 	[360054] = "Липкая кошка",
 	[362489] = "Элизийский декрет",
 	[364345] = "Тускло мерцающее семя",
+	[364482] = "Собранные фрагменты камней грехов",
 	[364483] = "Пустой бочонок для вечернего вина",
 	[364498] = "Булава Кровавого Копыта",
 	[364560] = "Стигийский тайник",
@@ -59715,8 +59724,8 @@ localize(L.HEADER_NAMES, {
 	[-661] = "황혼 지대",
 	[-662] = "용사 장비",
 	[-696] = "황천의 차원문",
-	[-706] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-709] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -64246,6 +64255,7 @@ localize(ObjectNames, {
 	[358855] = "손상된 안전 낙하 가방",
 	[362489] = "엘리시안 칙령",
 	[364345] = "희미하게 빛나는 씨앗",
+	[364482] = "수집한 죄악석 조각",
 	[364483] = "텅 빈 취침주 통",
 	[364498] = "블러드후프 철퇴",
 	[364560] = "저승석 보관함",
@@ -66783,8 +66793,8 @@ localize(L.HEADER_NAMES, {
 	[-674] = "Profundidades MID T1",
 	[-687] = "Conversión de equipo de banda",
 	[-696] = "Portal abisal",
-	[-706] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-707] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-709] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-710] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -71707,6 +71717,7 @@ localize(ObjectNames, {
 	[360054] = "Gato pegajoso",
 	[362489] = "Decreto elisio",
 	[364345] = "Una semilla con resplandor tenue",
+	[364482] = "Fragmentos de piedra del pecado recogidos",
 	[364483] = "Tonel de trago vacío",
 	[364498] = "Maza de Pezuña de Sangre",
 	[364560] = "Alijo de estigia",
@@ -73717,7 +73728,7 @@ localize(L.HEADER_NAMES, {
 	[-654] = "Cosechando",
 	[-656] = "Gremio de luchadores",
 	[-674] = "Abismos MID T1",
-	[-707] = "|cFFFFFFFFStep 1:|rNota sospechosa",
+	[-710] = "|cFFFFFFFFStep 1:|rNota sospechosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -74102,6 +74113,7 @@ L.BREADCRUMBS = "无关紧要";
 L.BREADCRUMBS_WARNING = "完成此任务后可能无法获得无关紧要的任务：";
 L.CACHED_RECIPES_1 = "缓存 ";
 L.CACHED_RECIPES_2 = " 已知配方！";
+L.CAMPSITE_DESC = "点击此按钮以根据缺少的内容随机选择一个营地。";
 L.CAMPSITE_ID = "营地 ID";
 L.CAMPSITES_CHECKBOX_TOOLTIP = "启用此选项以追踪战团营地的完成情况。";
 L.CATALYST = "化生台";
@@ -74178,6 +74190,7 @@ L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n�
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
 L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
 L.DECOR_CHECKBOX_TOOLTIP = "启用此选项以跟踪战团装饰完成情况。";
+L.DECOR_DESC = "点击此按钮以根据缺少的内容随机选择一个装饰。";
 L.DECOR_ID = "装饰 ID";
 L.DELETE_CHARACTER = "右击删除此角色";
 L.DELETE_LINKED_ACCOUNT = "右击删除此链接帐号";
@@ -74268,11 +74281,13 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "启用此选项会忽略玩家等�
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "无技能等级限制";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "如果您只想查看游戏环境中可用的最高技能级别可用的内容，请禁用此设置。";
 L.FILTERS_PAGE = "过滤器";
+L.FLIGHT_PATH_DESC = "点击此按钮以根据缺少的内容随机选择一个飞行路径。";
 L.FLIGHT_PATH_ID = "飞行路线 ID";
 L.FLIGHT_PATHS = "飞行路线";
 L.FLIGHT_PATHS_CHECKBOX = "飞行路径";
 L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 L.FLIGHT_PATHS_DESC = "当你与每个大陆上的飞行管理员交谈时会缓存飞行路径。\n  - Crieve";
+L.FOLLOWER_DESC = "点击此按钮以根据缺少的内容随机选择一个追随者。";
 L.FOLLOWER_ID = "追随者 ID";
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追随者 & 伙伴";
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。";
@@ -74446,6 +74461,8 @@ L.OBJECT_TYPE = "目标类型";
 L.OBJECTIVES = "目标";
 L.ONLY_NOT_TRASH = "过滤垃圾物品";
 L.ONLY_NOT_TRASH_TOOLTIP = "启用此选项可忽略白色/灰色物品。暴雪尚未在经典怀旧服中提供 API。";
+L.ONLY_OBTAINABLE_CHECKBOX = "仅可获得";
+L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "如果只想查看可获得的共享外观，请启用此选项。";
 L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
 L.ONLY_RWP = "仅‘随补丁移除’";
@@ -75115,9 +75132,11 @@ localize(L.HEADER_NAMES, {
 	[-687] = "团队装备转换",
 	[-694] = "'燃烧的远征'周年纪念版 - 外域升级",
 	[-696] = "虚空传送门",
-	[-706] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-707] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-700] = "哈提的后裔",
+	[-703] = "暗黑破坏神 IV：憎恨之王",
 	[-708] = "雷蛇",
+	[-709] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-710] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -79515,6 +79534,7 @@ localize(ObjectNames, {
 	[360054] = "黏黏猫",
 	[362489] = "极乐敕令",
 	[364345] = "散发微光的种子",
+	[364482] = "收集到的罪碑碎片",
 	[364483] = "空空的睡帽酒酒桶",
 	[364498] = "血蹄之锤",
 	[364560] = "冥殇宝箱",
@@ -82061,6 +82081,7 @@ localize(ObjectNames, {
 	[234734] = "暗影視界藥劑",
 	[234735] = "暗影視界藥劑",
 	[234736] = "暗影視界藥劑",
+	[243798] = "一個煽情的珠寶盒",
 	[245479] = "破損的箱子",
 	[276623] = "豐沃的白金礦床",
 	[311218] = "薩拉塔斯，黑暗帝國之刃",
