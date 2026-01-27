@@ -37630,6 +37630,7 @@ ach(11696,{
 crit(36461,{achID=11763,id=2})})}}),
 e(1856,{npcID=116407,g={
 ach(11699,{crs={121071},g={
+de(11909,{awp=120000,itemID=258223,spellID=1262995}),
 crit(36545,{achID=11763,id=9})}})}}),
 e(1903,{crs=a[191],g={
 ach(11773,{crs={121498},g={
@@ -43659,6 +43660,7 @@ r(285925,{b=1,itemID=165735,lvl=10,requireSkill=773,skillID=2507}),
 r(285926,{b=1,itemID=165736,lvl=10,requireSkill=773,skillID=2507}),
 r(285927,{b=1,itemID=165737,lvl=10,requireSkill=773,skillID=2507})}}),
 e(2328,{crs=a[266],g={
+de(18484,{awp=120000,itemID=267008,spellID=1278998}),
 crit(44051,{achID=13414})}}),
 e(2332,{npcID=145371,g={
 s(104194,167864,{b=1,f=29,lvl=50,spellID=292650}),
@@ -50727,8 +50729,8 @@ crit(48720,{achID=14322,id=17})})}})}),
 d(24,{sym={{"sub","tw_instance",1186}}})}}),
 inst(1194,{awp=90100,coords={{88.9,44.3,2016},{36.3,12.2,2472}},maps={1989,1990,1991,1992,1993,1995,1996,1997},savedInstanceID=2441,g={
 h(-12,{
-ach(61093,{awp=110200,rwp=120000,u=2}),
-ach(61092,{awp=110200,rwp=120000,u=2}),
+ach(61093,{awp=110200,rwp=120001}),
+ach(61092,{awp=110200,rwp=120001}),
 ach(15190,{
 crit(52460,{achID=15190,coords={{39.91,38.78,1990}},id=1,providers={{"n",180817}}}),
 crit(52461,{achID=15190,coords={{36.63,33.37,1989}},id=2,providers={{"n",180818}}}),
@@ -56054,8 +56056,7 @@ s(78396,134776,{b=1,f=22}),
 s(9117,23171,{b=1,f=22,lvl=8}),
 s(78349,134577,{b=1,f=22})}}),
 i(208114,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=24,lvl=70,spellID=1286288,g={
-q(77600,{type="hqt"}),
-s(34777,68194,{f=23,lvl=6})}}),
+q(77600,{type="hqt"})}}),
 i(208112,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=26,lvl=70,spellID=1286290,g={
 q(77598,{type="hqt"}),
 s(78394,134746,{b=1,f=26}),
@@ -56118,6 +56119,7 @@ s(562,2048,{b=1,f=23}),
 s(78385,134756,{b=1,f=23}),
 s(960,2816,{b=1,f=23,lvl=13}),
 s(2290,6196,{b=1,f=23,lvl=13}),
+s(34777,68194,{f=23,lvl=6}),
 s(78368,134618,{b=1,f=23}),
 s(78364,134611,{b=1,f=23}),
 s(78400,134789,{b=1,f=23}),

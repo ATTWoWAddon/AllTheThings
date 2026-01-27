@@ -171,58 +171,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 			}),
-			ach(11573, {	-- Rumble Club
+			ach(11573, {	-- Rumble Club (automated)
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
-				["groups"] = {
-					crit(35477, {	-- Battle of the Brew
-						["providers"] = {
-							{ "i", 142290 },	-- Rumble Card: Battle of the Brew
-							{ "n", 115398 },	-- Ban Lu
-							{ "n", 115399 },	-- Karang
-							{ "n", 115400 },	-- Shui Huzin
-						},
-					}),
-					crit(35472, {	-- Grief Warden
-						["providers"] = {
-							{ "i", 142288 },	-- Rumble Card: Grief Warden
-							{ "n", 114943 },	-- Grief Warden <Enmity Moose>
-						},
-					}),
-					crit(35473, {	-- Mazhareen
-						["providers"] = {
-							{ "i", 142294 },	-- Rumble Card: Mazhareen
-							{ "n",  68251 },	-- Mazhareen
-						},
-					}),
-					crit(35474, {	-- Mindbreaker Gzzaj
-						["providers"] = {
-							{ "i", 142293 },	-- Rumble Card: Mindbreaker Gzzaj
-							{ "n", 117102 },	-- Mindbreaker Gzzaj
-						},
-					}),
-					crit(35478, {	-- Penguin Stampede
-						["providers"] = {
-							{ "i", 142289 },	-- Rumble Card: Penguin Stampede
-							{ "n", 115185 },	-- Penguin Stampede
-						},
-					}),
-					crit(35476, {	-- Senya
-						["providers"] = {
-							{ "i", 142291 },	-- Rumble Card: Senya
-							{ "n", 115357 },	-- Senya
-						},
-					}),
-					crit(35475, {	-- Stranglethorn Streak
-						["providers"] = {
-							{ "i", 142292 },	-- Rumble Card: Stranglethorn Streak
-							{ "n", 115912 },	-- Elder Snapjaw Crocolisk
-							{ "n", 115910 },	-- Lashtail Raptor
-							{ "n", 115911 },	-- Mistvale Gorilla
-							{ "n", 115908 },	-- Young Panther
-							{ "n", 115909 },	-- King Bangalash
-						},
-					}),
-				},
 			}),
 			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -1040,8 +990,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 		n(VENDORS, {
 			n(145695, {	-- "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
-				["maps"] = { BRAWLGAR_ARENA },
-				-- ["coord"] = { 0.0, 0.0, BRAWLGAR_ARENA },
+				["coord"] = { 50.8, 29.4, BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				["sym"] = { {"sub", "common_vendor", 68364} },	-- Paul North <Brawl'gar Arena Quartermaster>
@@ -1051,7 +1000,30 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
-					-- TODO: Many unsourced challenge cards
+					i(143794, {	-- Challenge Card: A Seagull
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94184, {	-- Challenge Card: Akama
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142040, {	-- Challenge Card: Ash'katzuum
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142041, {	-- Challenge Card: Bill the Janitor
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142026, {	-- Challenge Card: Blackmange
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94166, {	-- Challenge Card: Blat
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97321, {	-- Challenge Card: Blind Hero
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97445, {	-- Challenge Card: Blingtron 3000
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(93823, {	-- Challenge Card: Bruce
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH, ADDED_11_2_7 },
 						["groups"] = {
@@ -1062,21 +1034,137 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 						},
 					}),
+					i(142033, {	-- Challenge Card: Carl
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94170, {	-- Challenge Card: Crush
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94179, {	-- Challenge Card: Dark Summoner
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94173, {	-- Challenge Card: Deeken
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94162, {	-- Challenge Card: Dippy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97280, {	-- Challenge Card: Dippy & Doopy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94172, {	-- Challenge Card: Dominika
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142043, {	-- Challenge Card: Doomflipper
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94182, {	-- Challenge Card: Epicus Maximus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94175, {	-- Challenge Card: Fjoll
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94164, {	-- Challenge Card: Fran & Riddoh
+						["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
 						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
-					i(253515, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Glorp
+					i(253515, {	-- Challenge Card: Glorp
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94160, {	-- Challenge Card: Goredome
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94168, {	-- Challenge Card: Ixx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142032, {	-- Challenge Card: Johnny Awesome
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94165, {	-- Challenge Card: King Kulaka
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94163, {	-- Challenge Card: Kirrawk
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(144439, {	-- Challenge Card: Klunk
+						["timeline"] = { ADDED_7_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94171, {	-- Challenge Card: Leona
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94177, {	-- Challenge Card: Leper Gnomes
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 					}),
 					i(165709, {	-- Challenge Card: Mama Stormstout
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					i(253575, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Renegade Swabbie
-					i(253581, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Sunny
-					i(253868, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: The Quacken
+					i(94181, {	-- Challenge Card: Meatball
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97563, {	-- Challenge Card: Mecha-Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94174, {	-- Challenge Card: Millie Watt
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97283, {	-- Challenge Card: Nibbleh
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142029, {	-- Challenge Card: Ogrewatch
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142042, {	-- Challenge Card: Ooliss
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(143899, {	-- Challenge Card: Oso the Betrayer
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94176, {	-- Challenge Card: Proboskus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97566, {	-- Challenge Card: Razorgrin
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253575, {	-- Challenge Card: Renegade Swabbie
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94167, {	-- Challenge Card: Sanoriak
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142045, {	-- Challenge Card: Stitches
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253581, {	-- Challenge Card: Sunny
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(97559, {	-- Challenge Card: T440 Dual-Mode Robot
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253868, {	-- Challenge Card: The Quacken
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(166809, {	-- Challenge Card: Thog Hammerspace
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142037, {	-- Challenge Card: Topps
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94186, {	-- Challenge Card: Unguloxx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93824, {	-- Challenge Card: Vian
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94161, {	-- Challenge Card: Vishas
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94183, {	-- Challenge Card: Yikkan Izu
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
@@ -1096,7 +1184,30 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
-					-- TODO: Many unsourced challenge cards
+					i(143794, {	-- Challenge Card: A Seagull
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94184, {	-- Challenge Card: Akama
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142040, {	-- Challenge Card: Ash'katzuum
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142041, {	-- Challenge Card: Bill the Janitor
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142026, {	-- Challenge Card: Blackmange
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94166, {	-- Challenge Card: Blat
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97321, {	-- Challenge Card: Blind Hero
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97445, {	-- Challenge Card: Blingtron 3000
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(93823, {	-- Challenge Card: Bruce
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH, ADDED_11_2_7 },
 						["groups"] = {
@@ -1107,21 +1218,137 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 						},
 					}),
+					i(142033, {	-- Challenge Card: Carl
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94170, {	-- Challenge Card: Crush
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94179, {	-- Challenge Card: Dark Summoner
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94173, {	-- Challenge Card: Deeken
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94162, {	-- Challenge Card: Dippy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97280, {	-- Challenge Card: Dippy & Doopy
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94172, {	-- Challenge Card: Dominika
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142043, {	-- Challenge Card: Doomflipper
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94182, {	-- Challenge Card: Epicus Maximus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94175, {	-- Challenge Card: Fjoll
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94164, {	-- Challenge Card: Fran & Riddoh
+						["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(94178, {	-- Challenge Card: G.G. Engineering
 						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
-					i(253515, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Glorp
+					i(253515, {	-- Challenge Card: Glorp
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94160, {	-- Challenge Card: Goredome
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94168, {	-- Challenge Card: Ixx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142032, {	-- Challenge Card: Johnny Awesome
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94165, {	-- Challenge Card: King Kulaka
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94163, {	-- Challenge Card: Kirrawk
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(144439, {	-- Challenge Card: Klunk
+						["timeline"] = { ADDED_7_2_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94171, {	-- Challenge Card: Leona
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94177, {	-- Challenge Card: Leper Gnomes
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
 					i(164935, {	-- Challenge Card: Lord Sylysthrel
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 					}),
 					i(165709, {	-- Challenge Card: Mama Stormstout
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
-					i(253575, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Renegade Swabbie
-					i(253581, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: Sunny
-					i(253868, { ["timeline"] = { ADDED_11_2_7 } }),	-- Challenge Card: The Quacken
+					i(94181, {	-- Challenge Card: Meatball
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97563, {	-- Challenge Card: Mecha-Bruce
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94174, {	-- Challenge Card: Millie Watt
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97283, {	-- Challenge Card: Nibbleh
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142029, {	-- Challenge Card: Ogrewatch
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142042, {	-- Challenge Card: Ooliss
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(143899, {	-- Challenge Card: Oso the Betrayer
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94176, {	-- Challenge Card: Proboskus
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(97566, {	-- Challenge Card: Razorgrin
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253575, {	-- Challenge Card: Renegade Swabbie
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(94167, {	-- Challenge Card: Sanoriak
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142045, {	-- Challenge Card: Stitches
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253581, {	-- Challenge Card: Sunny
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(97559, {	-- Challenge Card: T440 Dual-Mode Robot
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(253868, {	-- Challenge Card: The Quacken
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(166809, {	-- Challenge Card: Thog Hammerspace
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(142037, {	-- Challenge Card: Topps
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94186, {	-- Challenge Card: Unguloxx
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(93824, {	-- Challenge Card: Vian
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94161, {	-- Challenge Card: Vishas
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
+					}),
+					i(94183, {	-- Challenge Card: Yikkan Izu
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
@@ -1150,16 +1377,14 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			}),
 			n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 				["sourceQuest"] = 55002,	-- Murder at the Brawlpub
-				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
-				-- ["coord"] = { 0.0, 0.0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+				["coord"] = { 54.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				["sym"] = { {"sub", "common_vendor", 68363} },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 			}),
 			n(70714, {	-- Harr Grayhide <Luxury Food Vendor>
-				["maps"] = { BRAWLGAR_ARENA },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0.0, 0.0, BRAWLGAR_ARENA },
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
+				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
@@ -1171,9 +1396,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #endif
 			}),
 			n(70713, {	-- Haxxil Drinkmeister <Rare and Luxury Drink Vendor>
-				["maps"] = { BRAWLGAR_ARENA },
-				-- Wouter TODO: add coords
-				-- ["coord"] = { 0.0, 0.0, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
+				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
@@ -1515,12 +1739,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				},
 			}),
 			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
-				["maps"] = { BRAWLGAR_ARENA },
+				["coord"] = { 59.6, 78.5, BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
 					i(142319, {	-- Bag of Chipped Dice
-						-- TODO: They changed how the dice works, confirm which bosses are still available and if shirts/achievement can be obtained
+						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
@@ -1653,6 +1877,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
@@ -1683,7 +1908,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 500 } },
 					}),
-					i(143759, {	-- VIP Room Rental Form
+					i(142313, {	-- Zeppelin Rental Form
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
 						-- #endif
@@ -1697,7 +1922,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				["groups"] = {
 					i(143763, {	-- Bag of Chipped Dice
-						-- TODO: They changed how the dice works, confirm which bosses are still available and if shirts/achievement can be obtained
+						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
@@ -1830,6 +2055,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #if BEFORE SL
 						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
