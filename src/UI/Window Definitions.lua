@@ -2206,8 +2206,19 @@ local FieldDefaults = {
 	ExpandData = function(self, expanded)
 		ForceExpandGroupsRecursively(self.data, expanded);
 	end,
-	SetMinMaxValues = function(self, displayedValue, totalValue)
-		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
+	SetMinMaxValues = function(self, rowCount, totalRowCount)
+		-- Every possible row is visible
+		if totalRowCount - rowCount < 1 then
+			-- app.PrintDebug("Hide scrollbar")
+			self.ScrollBar:SetMinMaxValues(1, 1);
+			self.ScrollBar:SetStepsPerPage(0);
+			self.ScrollBar:Hide();
+		else
+			-- self.ScrollBar:Show();
+			totalRowCount = totalRowCount + 1;
+			self.ScrollBar:SetMinMaxValues(1, totalRowCount - rowCount);
+			self.ScrollBar:SetStepsPerPage(rowCount - 2);
+		end
 	end,
 	ScrollTo = function(self, field, value)
 		self.ScrollInfo = { field, value }
