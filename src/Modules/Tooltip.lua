@@ -773,7 +773,7 @@ local function WipeTooltipInfoCache()
 	-- app.PrintDebug("WipeTooltipInfoCache")
 end
 app.WipeTooltipInfoCache = WipeTooltipInfoCache
--- app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnCurrentDifficultiesChanged", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnRefreshComplete", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingCollected", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);

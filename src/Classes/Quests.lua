@@ -1713,7 +1713,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 1;
 	end,
 	questID = function(t)
-		return t.parent.questID;
+		return (t.sourceParent or t.parent).questID;
 	end,
 	RefreshCollectionOnly = true,
 	collectible = function(t)

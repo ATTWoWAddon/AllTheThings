@@ -68,7 +68,7 @@ local function WipeSearchCache()
 	app.WipeTooltipInfoCache()
 end
 app.WipeSearchCache = WipeSearchCache;
-app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeSearchCache);
+app.AddEventHandler("OnCurrentDifficultiesChanged", WipeSearchCache);
 app.AddEventHandler("OnRefreshComplete", WipeSearchCache);
 app.AddEventHandler("OnThingCollected", WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", WipeSearchCache);

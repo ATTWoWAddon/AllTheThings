@@ -284,36 +284,66 @@ end
 -- If Difficulties exist, this means we can use the API!
 local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
 	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
+local CurrentDifficulties, BuildCurrentDifficulties;
+local CacheCooldownCurrentDifficulties, time = 0, time;
 if GetDungeonDifficultyID then
-	app.GetCurrentDifficulties = function()
-		local d = {};
+	BuildCurrentDifficulties = function()
 		if IsInInstance() then
 			local diff = select(3, GetInstanceInfo()) or 0
 			if diff ~= 0 then
-				d[CurrentDifficultyRemapper[diff] or diff] = true;
+				local d = { [CurrentDifficultyRemapper[diff] or diff] = true };
 				return d;
 			end
 		end
 
 		-- While outside of a dungeon (such as at its entrance),
 		-- if the mini list shows difficulty headers, it should filter them
-		d[GetDungeonDifficultyID()] = true;
-		d[GetRaidDifficultyID()] = true;
-		d[GetLegacyRaidDifficultyID()] = true;
+		local d = {
+			[GetDungeonDifficultyID()] = true,
+			[GetRaidDifficultyID()] = true,
+			[GetLegacyRaidDifficultyID()] = true,
+		};
 		return d;
 	end
 else
 	-- No API Access to difficulty APIs
-	app.GetCurrentDifficulties = function()
-		local d = {};
+	BuildCurrentDifficulties = function()
 		if IsInInstance() then
 			local diff = select(3, GetInstanceInfo()) or 0
 			if diff ~= 0 then
-				d[CurrentDifficultyRemapper[diff] or diff] = true;
+				local d = { [CurrentDifficultyRemapper[diff] or diff] = true };
 				return d;
 			end
 		end
-		return d;
+		return app.EmptyTable;
 	end
 end
+local function GetCurrentDifficulties()
+	-- Check to see if at least 1 second has passed
+	local now = time();
+	if CacheCooldownCurrentDifficulties > now then
+		-- Return the cached value instead of building the cache again.
+		return CurrentDifficulties;
+	end
+	CacheCooldownCurrentDifficulties = now + 1;
+	
+	-- Compare and Cache the Current Difficulties
+	local difficulties = BuildCurrentDifficulties()
+	if not CurrentDifficulties or app.TableKeyDiff(CurrentDifficulties, difficulties) then
+		CurrentDifficulties = difficulties;
+		app.HandleEvent("OnCurrentDifficultiesChanged", difficulties);
+	end
+	return difficulties;
+end
+app.GetCurrentDifficulties = GetCurrentDifficulties;
+app.AddEventRegistration("CHAT_MSG_SYSTEM", GetCurrentDifficulties);
+if app.IsClassic then
+	app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", GetCurrentDifficulties);
+end
+--[[
+app.AddEventHandler("OnCurrentDifficultiesChanged", function(diff)
+	print("OnCurrentDifficultiesChanged", diff);
+end);
+]]--
+GetCurrentDifficulties();
 end

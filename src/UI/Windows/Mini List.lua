@@ -388,14 +388,10 @@ app:CreateWindow("MiniList", {
 		end
 	end,
 	OnInit = function(self, handlers)
-		handlers.PLAYER_DIFFICULTY_CHANGED = function()
-			-- Only do anything if the CurrentDifficulty has actually changed (Retail fires this event for completely unrelated reasons)
-			local currentDifficulties = app.GetCurrentDifficulties()
-			if app.TableKeyDiff(self.CurrentDifficulties, currentDifficulties) then
-				wipe(CachedMapData);
-				self:Rebuild();
-			end
-		end
+		self:AddEventHandler("OnCurrentDifficultiesChanged", function(difficulties)
+			wipe(CachedMapData);
+			self:Rebuild();
+		end);
 		app.ToggleMiniListForCurrentZone = function()
 			if self:IsVisible() then
 				self:Hide();
@@ -424,9 +420,6 @@ app:CreateWindow("MiniList", {
 		end);
 	end,
 	OnLoad = function(self, settings)
-		if app.IsClassic then
-			pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
-		end
 		self:SetMapID(app.CurrentMapID or settings.mapID);
 		app.AddEventHandler("OnCurrentMapIDChanged", function()
 			self:SetMapID(app.CurrentMapID);
@@ -460,9 +453,6 @@ app:CreateWindow("MiniList", {
 
 				-- Make sure to scroll to the top when being rebuilt
 				self.ScrollBar:SetValue(1);
-
-				-- Store the CurrentDifficulties for this Rebuild
-				self.CurrentDifficulties = app.GetCurrentDifficulties()
 			end
 		end
 	end,

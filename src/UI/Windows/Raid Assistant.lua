@@ -188,7 +188,6 @@ app:CreateWindow("RaidAssistant", {
 		handlers.UPDATE_INSTANCE_INFO = updateWithTrigger;
 		handlers.ZONE_CHANGED_NEW_AREA = updateWithTrigger;
 		handlers.ACTIVE_TALENT_GROUP_CHANGED = updateWithTrigger;
-		handlers.PLAYER_DIFFICULTY_CHANGED = updateWithTrigger;
 		handlers.PLAYER_LOOT_SPEC_UPDATED = updateWithTrigger;
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
 		self:RegisterEvent("UPDATE_INSTANCE_INFO");
@@ -196,9 +195,7 @@ app:CreateWindow("RaidAssistant", {
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 
 		-- Does Difficulty have some options to change?
-		if GetDifficultyInfo and GetDifficultyInfo(1) then
-			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-		end
+		self:AddEventHandler("OnCurrentDifficultiesChanged", self.Update);
 
 		-- Does Dual Spec or Specializations exist in the API?
 		if GetActiveTalentGroup or GetSpecialization then
