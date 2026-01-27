@@ -164,6 +164,31 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 					i_DecorCoupons(250703, 10),	-- War Creche Teaching Crystal
 				},
 			}),
+			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
+				["coords"] = {
+					-- { XX, YY, FOUNDERS_POINT },
+					{ 54.1, 56.0, RAZORWIND_SHORES },
+				},
+				["groups"] = {
+					i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
+					i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
+					i_DecorCoupons(254408, 2),	-- Lively Pistons (DECOR!)
+					i_DecorCoupons(254400, 2),	-- Triple-Tested Steam Valve (DECOR!)
+					i_DecorCoupons(254410, 5),	-- Blue-Glo Lantern (DECOR!)
+					i_DecorCoupons(254409, 2),	-- Sturdy Drive Belt (DECOR!)
+					i_DecorCoupons(254401, 5),	-- Mad Science BLueprints (DECOR!)
+					i_DecorCoupons(254404, 2),	-- Sticky Lever (DECOR!)
+					i_DecorCoupons(254405, 2),	-- Dual-Action Turbo Pro Lever (DECOR!)
+					i_DecorCoupons(254412, 2),	-- Well-Oiled Machine Cog (DECOR!)
+					i_DecorCoupons(254402, 5),	-- Safety Electrical Cabling (DECOR!)
+					i_DecorCoupons(254403, 10),	-- Machagon Control Console (DECOR!)
+					i_DecorCoupons(254413, 2),	-- Jury-Rigged Electrical Couple (DECOR!)
+					i_DecorCoupons(254766, 10),	-- Ineffective Mechanical Privacy Screen (DECOR!)
+					i_DecorCoupons(254411, 10),	-- Z-205 Mechanical Device (DECOR!)
+					i_DecorCoupons(254416, 15),	-- Galvanic Storage and Maintenance Device (DECOR!)
+					i_DecorCoupons(254415, 20),	-- Miniature Charging Station (DECOR!)
+				},
+			}),
 		}),
 	},
 }));

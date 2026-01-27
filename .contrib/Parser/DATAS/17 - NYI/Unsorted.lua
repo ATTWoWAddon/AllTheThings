@@ -3923,23 +3923,6 @@ root(ROOTS.Unsorted, {
 			-- decor
 			i(253704),	-- Fresh Canvas
 			i(253705),	-- "The Light Blooms" Unframed Painting
-			i(254400),	-- Triple-Tested Steam Valve
-			i(254401),	-- Mad Science Blueprints
-			i(254402),	-- Safety Electrical Cabling
-			i(254403),	-- Mechagon Control Console
-			i(254404),	-- Sticky Lever
-			i(254405),	-- Dual-Action Turbo Pro Lever
-			i(254406),	-- Mechanical Gauge
-			i(254407),	-- Dual Mechanical Gauge
-			i(254408),	-- Lively Pistons
-			i(254409),	-- Sturdy Drive Belt
-			i(254410),	-- Blue-Glo Lantern
-			i(254411),	-- Z-205 Mechanical Device
-			i(254412),	-- Well-Oiled Machine Cog
-			i(254413),	-- Jury-Rigged Electrical Couple
-			i(254415),	-- Miniature Charging Station
-			i(254416),	-- Galvanic Storage and Maintenance Device
-			i(254766),	-- Ineffective Mechanical Privacy Screen
 
 			-- Mount
 			i(257143),	-- Peridot Dragonhawk
