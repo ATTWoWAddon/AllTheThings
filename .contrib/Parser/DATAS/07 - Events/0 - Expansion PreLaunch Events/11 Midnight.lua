@@ -292,6 +292,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(WORLD_QUESTS, sharedData({
 			["sourceQuest"] = 90768,	-- Cult It Out
+			["isWorldQuest"] = true,
 		}, {
 			q(86959, {	-- Bloodeye Prisoners
 				["coord"] = { 40.8, 66.7, TWILIGHT_HIGHLANDS },
