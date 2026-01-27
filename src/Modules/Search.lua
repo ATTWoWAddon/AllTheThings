@@ -527,7 +527,7 @@ app.SearchAndOpen = function(search)
 	end
 
 	-- expand the hierarchy to each search result
-	local DGR = app.DirectGroupRefresh
+	local DGU = app.DirectGroupUpdate
 	local GetRelative = app.GetRelativeRawWithField
 	local windows = {}
 	local window, o
@@ -547,7 +547,7 @@ app.SearchAndOpen = function(search)
 		-- force the search results to be visible
 		o.forceShow = true
 		-- DGU them to chain visibility
-		DGR(o)
+		DGU(o)
 		o = o.parent
 		while o do
 			o.expanded = true

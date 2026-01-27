@@ -764,6 +764,9 @@ local function UpdateVisibleRowData(self)
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
+		local container = self.Container;
+		local rows = container.rows;
+
 		-- Should this window attempt to scroll to specific data?
 		if self.ScrollInfo then
 			local field, value = self.ScrollInfo[1], self.ScrollInfo[2]
@@ -777,18 +780,31 @@ local function UpdateVisibleRowData(self)
 					self.HightlightDatas[ref] = true
 				end
 			end
+			self.ScrollInfo = nil
+
 			if foundAt then
-				-- app.PrintDebug("ScrollTo",foundAt)
-				self.ScrollInfo.ScrollTo = foundAt
+				-- app.PrintDebug("Index",foundAt)
+				-- Actually do the scroll if it was determined above
+				-- Estimate the expected scroll position based on row heights in the current window
+				local possibleRows = math.floor((container:GetHeight() - rows[1]:GetHeight()) / rows[2]:GetHeight())
+				-- app.PrintDebug("Possible Rows:",possibleRows)
+				local scrollIndex = foundAt - (possibleRows / 2)
+				if scrollIndex >= totalRowCount - possibleRows then
+					scrollIndex = totalRowCount - possibleRows - 1
+				end
+				-- app.PrintDebug("Scrolling to:",scrollIndex)
+				-- double scroll to ensure we force a scroll change
+				self.ScrollBar:SetValue(1)
+				self.ScrollBar:SetValue(scrollIndex)
+				-- just leave since the callback refresh will do the actual refresh
+				return
 			end
 		end
-		
+
 		-- Ensure that the first row doesn't move out of position.
-		local container = self.Container;
-		local rows = container.rows;
 		local row = rows[1];
 		SetRowData(self, row, rowData[1]);
-		
+
 		-- Fill the remaining rows up to the (visible) row count.
 		local current, rowCount, containerHeight, totalHeight
 			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
@@ -808,7 +824,7 @@ local function UpdateVisibleRowData(self)
 				end
 			end
 		end
-		
+
 		-- Apply the Min Indent adjustment
 		if AdjustRowIndents then
 			for i=2,rowCount do
@@ -835,16 +851,8 @@ local function UpdateVisibleRowData(self)
 				break;
 			end
 		end
-		self:SetMinMaxValues(rowCount, totalRowCount + 1);
+		self:SetMinMaxValues(rowCount, totalRowCount);
 
-		-- Actually do the scroll if it was determined above
-		if self.ScrollInfo then
-			if self.ScrollInfo.ScrollTo then
-				self.ScrollBar:SetValue(math.max(1, self.ScrollInfo.ScrollTo - (rowCount / 2)))
-			end
-			self.ScrollInfo = nil
-		end
-		
 		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
 		if GameTooltip and GameTooltip:IsVisible() then
 			local row = GameTooltip:GetOwner()
