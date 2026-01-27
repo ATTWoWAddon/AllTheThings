@@ -34,20 +34,34 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		n(REWARDS, {
 			currency(COMMUNITY_COUPONS),
 		}),
-		n(QUESTS, {
+		-- "Weekly" Quests (these actually reset more often but not necessarily daily)
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		},{
 			q(92429, {	-- Alternative Skinning
-				["qg"] = 254255,	-- Hera Fer
-				-- ["isWeekly"] = true, ?
+				["qgs"] = {
+					251056, -- Gerath
+					254255,	-- Hera Fer
+				},
 				["coords"] = {
-					{ 52.9, 37.6, FOUNDERS_POINT },
+					{ 52.9, 39.1, FOUNDERS_POINT },
 					{ 54.2, 56.1, RAZORWIND_SHORES },
 				},
 				["groups"] = { i(251632) },	-- Biological Vacuum (QI!)
 			}),
 			q(92417, {	-- Farm to Table
-
+				["qg"] = 250970, -- Yolan Hidor
+				["coords"] = {
+					{ 53.2, 38.0, FOUNDERS_POINT },
+					-- { X, Y, RAZORWIND_SHORES },
+				},
 			}),
 			q(92402, {	-- Magical Touch
+				["qg"] = 254536, -- Gelen Jord
+				["coords"] = {
+					{ 52.1, 38.1, FOUNDERS_POINT },
+					-- { X, Y, RAZORWIND_SHORES },
+				},
 				["groups"] = {
 					i(251273),	-- Slightly Magical Crystal (QI!)
 					i(251492),	-- Slightly Magical Crystal Locator (QI!)
@@ -55,7 +69,6 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 			}),
 			q(92443, {	-- Reverse Herb Farming
 				["qg"] = 254255,	-- Hera Fer
-				--["isWeekly"] = true, ?
 				["coords"] = {
 					{ 52.9, 37.6, FOUNDERS_POINT },
 					{ 54.2, 56.1, RAZORWIND_SHORES },
@@ -63,10 +76,12 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 			}),
 			q(92445, {	-- Smelting for Two
 				["qg"] = 251185,	-- Jaren Holdart
-				--["isWeekly"] = true, ?
-				["coord"] = { 54.1, 57.0, RAZORWIND_SHORES },
+				["coords"] = {
+					{ 52.5, 38.4, FOUNDERS_POINT },
+					{ 54.1, 57.0, RAZORWIND_SHORES },
+				},
 			}),
-		}),
+		})),
 		n(TREASURES, {
 
 		}),
