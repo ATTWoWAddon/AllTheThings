@@ -276,7 +276,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
 					})),
 					ach(42193, {	-- My Stab-Happy Nemesis
-						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+						i(245529, {		-- Hal'hadar's Phasebound Visor (COSMETIC!)
+							["timeline"] = { REMOVED_12_0_0 },
+						}),
 					}),
 					ach(42194, {	-- Pruning the Princess
 						title(639),	-- Contract Killer %s
