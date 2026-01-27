@@ -441,7 +441,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
-		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, }, {	-- The War Within Season 3: Voidborne Victor
+		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 3: Voidborne Victor
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
 		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
