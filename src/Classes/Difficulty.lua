@@ -151,8 +151,8 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		local d = { [t.difficultyID] = true };
 		local ids = t.difficulties;
 		if ids then
-			for i,id in ipairs(ids) do
-				d[id] = true;
+			for i=1,#ids do
+				d[ids[i]] = true;
 			end
 		end
 		t.difficultyHash = d;
@@ -167,7 +167,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
 		if difficultyID > 0 then
-			print(difficultyID, t.text, t.difficultyHash[difficultyID]);
+			-- print(difficultyID, t.text, t.difficultyHash[difficultyID]);
 			return not t.difficultyHash[difficultyID];
 		end
 		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)
@@ -294,7 +294,7 @@ if GetDungeonDifficultyID then
 				return d;
 			end
 		end
-		
+
 		-- While outside of a dungeon (such as at its entrance),
 		-- if the mini list shows difficulty headers, it should filter them
 		d[GetDungeonDifficultyID()] = true;

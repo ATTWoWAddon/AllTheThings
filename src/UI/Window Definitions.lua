@@ -18,6 +18,9 @@ local Callback = app.CallbackHandlers.Callback
 -- Some common UI functions (TBD)
 app.UI = {
 	OnClick = {
+		IgnoreClicks = function()
+			return true
+		end,
 		IgnoreRightClick = function(row, button)
 			return button == "RightButton"
 		end,
