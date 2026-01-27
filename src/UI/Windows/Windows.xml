@@ -37,7 +37,6 @@
 	<Script file="Mounts.lua"/>
 	<Script file="Never Implemented.lua"/>
 	<Script file="New With Patch.lua"/>
-	<Script file="Retail/New With Patch.lua"/>
 	<Script file="Objects.lua"/>
 	<Script file="Pet Battles.lua"/>
 	<Script file="Professions.lua"/>

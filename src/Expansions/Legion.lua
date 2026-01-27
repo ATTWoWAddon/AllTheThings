@@ -271,6 +271,7 @@ app.AddEventHandler("OnLoad", function()
 			end
 		end
 	})
+	app.AddDynamicCategoryHeader({ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
 end)
 
 -- Resolve Functionality

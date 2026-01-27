@@ -215,6 +215,9 @@ do
 		end);
 		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	});
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") });
+	end);
 end
 
 -- Subroutines

@@ -233,4 +233,5 @@ app.AddEventHandler("OnLoad", function()
 	app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_zonedrops", bfa_azerite_armor_chest_zonedrops);
 	app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest", bfa_azerite_armor_chest);
 	app.RegisterSymlinkSubroutine("common_island_expedition_salvage", common_island_expedition_salvage);
+	app.AddDynamicCategoryHeader({ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") });
 end);

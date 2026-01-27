@@ -2,7 +2,6 @@
 local _, app = ...;
 local tinsert = tinsert;
 local L = app.L;
-if app.IsRetail then return; end
 
 -- Implementation
 app:CreateWindow("New With Patch", {
@@ -24,6 +23,7 @@ app:CreateWindow("New With Patch", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
@@ -56,6 +56,7 @@ app:CreateWindow("New With Patch", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end

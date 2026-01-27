@@ -77,5 +77,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		accountWideData.Illusions = AccountWideIllusionData;
 	end
 end);
+app.AddEventHandler("OnLoad", function()
+	if app.L.FILTER_ID_TYPES[103] then
+		app.AddDynamicCategoryHeader({ id = "illusionID", name = app.L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") });
+	end
+end);
 
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)

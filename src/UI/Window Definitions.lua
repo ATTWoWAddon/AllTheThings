@@ -658,7 +658,7 @@ local function SetRowData(self, row, data)
 			return;
 		end
 		
-		if not data.__type or getmetatable(data) == nil then
+		if not (data.__type or data.__dlo) or getmetatable(data) == nil then
 			print(data.text, " does not have a metatable! This is NOT allowed!", data.__type, getmetatable(data));
 		end
 		
@@ -3321,4 +3321,82 @@ api.BuildFlatSearchFunctionForClassTypes = BuildFlatSearchFunctionForClassTypes;
 api.BuildCategorizedAndFlatSearchFunctionsForClassTypes = function(self, key, fallbackText, ...)
 	self.OnUpdateCategorized = BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ...);
 	self.OnUpdateFlat = BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...);
+end
+
+-- Dynamic Categories (Delayed)
+local DynamicCategoryHeaders = {
+	{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
+	{ id = "sourceID", name = "Appearances", icon = 135276 },
+	{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
+	{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
+	{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
+	{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
+	{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
+	{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
+	{ id = "mountID", name = MOUNTS, icon = app.asset("Category_Mounts") },
+	-- TODO: Add professions here using the byValue probably
+	{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
+	{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
+	{ id = "toyID", name = TOY_BOX, icon = app.asset("Category_ToyBox") },
+};
+app.AddDynamicCategoryHeader = function(header)
+	tinsert(DynamicCategoryHeaders, header);
+end
+local TypeGroupOverridesForDynamicCategoryHeader = {
+	visible = true
+};
+local function OnUpdateForDynamicCategoryHeader(t)
+	-- nothing to show so don't be visible
+	if not t.g or #t.g == 0 then
+		return
+	end
+	local o
+	for i=#t.g,1,-1 do
+		o = t.g[i]
+		if o.__empty then
+			tremove(t.g, i)
+		end
+	end
+	if #t.g == 0 then
+		return
+	end
+	t.visible = true
+	return true
+end
+local function CreateTypeGroupsForHeader(header, searchResults)
+	-- TODO: professions would be more complex since it's so many sub-groups to organize
+	-- maybe just simpler to look for the 'requireSkill' field and put all those results into one 'Professions' group?
+	-- app.PrintDebug("Creating type group header",header.name, header.id, searchResults and #searchResults)
+	local results = {};
+	app:BuildFlatSearchResponseForField(searchResults, header.id, results);
+	--app:BuildTargettedSearchResponse(searchResults, header.id, nil, {g=true})
+	-- app.PrintDebug("Found",#data,"search groups for",header.id)
+	if #results == 0 then
+		header.__empty = true
+	else
+		local g = {};
+		app.MergeObjects(g, results);
+		header.g = g;
+		app.AssignChildren(header)
+	end
+	app.DirectGroupUpdate(header)
+	return header
+end
+api.BuildDynamicCategorySummaryForSearchResults = function(searchResults)
+	local g = {};
+	local dcsRoot = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
+		icon = app.asset("Interface_CreateDynamic"),
+		OnUpdate = OnUpdateForDynamicCategoryHeader,
+		SortType = "name",
+		g = g
+	});
+	
+	-- Loop through the dynamic headers and insert them into the "g" field of dynamic category
+	for _, template in ipairs(DynamicCategoryHeaders) do
+		local header = app.CloneClassInstance(app.CreateRawText(template.name, template));
+		header.parent = dcsRoot
+		g[#g + 1] = app.DelayLoadedObject(CreateTypeGroupsForHeader, "text", 
+			TypeGroupOverridesForDynamicCategoryHeader, header, searchResults)
+	end
+	return dcsRoot;
 end

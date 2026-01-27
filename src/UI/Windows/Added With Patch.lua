@@ -46,6 +46,8 @@ local function ParsePatch(cmd)
 	local expansionKey = ExpansionKeywords[cmd];
 	if expansionKey then
 		return expansionKey[1] * 10000, expansionKey[2] * 10000;
+	elseif cmd == "current" then
+		return app.GameBuildVersion;
 	else
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
@@ -84,44 +86,6 @@ local function ParseCommand(self, cmd)
 		end
 	end
 end
-
---[[
--- Dynamic category headers
--- CRIEVE NOTE: I stole this from the Retail version of this window. I'd like to have a toggle to switch between display modes and this would be pretty cool to have.
--- It was the only difference in the file, really. The rest was the same.
--- TODO: If possible, change the creation of names and icons to SimpleHeaderGroup to take the localized names
-local headers = {
-	{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
-	{ id = "sourceID", name = "Appearances", icon = 135276 },
-	{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
-	{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
-	{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
-	{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
-	{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
-	{ id = "conduitID", name = GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 },
-	{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
-	{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
-	{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
-	{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
-	{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
-	{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
-	{ id = "heirloomID", name = HEIRLOOMS, icon = app.asset("Weapon_Type_Heirloom") },
-	{ id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
-	{ id = "mountID", name = MOUNTS, icon = app.asset("Category_Mounts") },
-	{ id = "mountmodID", name = "Mount Mods", icon = 975744 },
-	-- TODO: Add professions here using the byValue probably
-	{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
-	{ id = "runeforgepowerID", name = LOOT_JOURNAL_LEGENDARIES .. " (" .. EXPANSION_NAME8 .. ")", icon = app.asset("Weapon_Type_Legendary") },
-	{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
-	{ id = "toyID", name = TOY_BOX, icon = app.asset("Category_ToyBox") },
-}
-
--- Loop through the dynamic headers and insert them into the "g" field of dynamic category
-for _, header in ipairs(headers) do
-	header.parent = dynamicCategory
-	dynamicCategory.g[#dynamicCategory.g + 1] = app.DelayLoadedObject(CreateTypeGroupsForHeader, "text", TypeGroupOverrides, header, searchResults)
-end
-]]--
 
 -- Implementation
 app:CreateWindow("Added With Patch", {
@@ -227,6 +191,7 @@ app:CreateWindow("Added With Patch", {
 								tinsert(g, result);
 							end
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						self:AssignChildren();
 					end
 				end

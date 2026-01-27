@@ -1303,11 +1303,19 @@ function app:GetDataCache()
 	-----------------------------------------
 	-- Character
 	if app.Categories.Character then
-		tinsert(g, app.CreateRawText(CHARACTER, {
+		local characterCategory = app.CreateRawText(CHARACTER, {
 			icon = app.asset("Category_ItemSets"),
 			g = app.Categories.Character,
 			RootCategory = "Character",
-		}));
+		});
+		-- Merge Pet Battles into Character (temporary solution until this category is DEAD.)
+		if app.Categories.PetBattles then
+			tinsert(characterCategory.g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
+				g = app.Categories.PetBattles,
+			}));
+			app.Categories.PetBattles = nil;
+		end
+		tinsert(g, characterCategory);
 	end
 
 	-- Housing
@@ -1324,15 +1332,6 @@ function app:GetDataCache()
 			icon = app.asset("Category_GroupFinder"),
 			g = app.Categories.GroupFinder,
 			RootCategory = "Group Finder",
-		}));
-	end
-
-	-- Pet Battles
-	-- In Classic, this is a dynamic category
-	if not app.IsClassic and app.Categories.PetBattles then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
-			g = app.Categories.PetBattles,
-			RootCategory = "Pet Battles",
 		}));
 	end
 

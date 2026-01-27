@@ -19,4 +19,8 @@ do
 		itemID = function(t) return t.mountmodID; end,
 	});
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
+	
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "mountmodID", name = "Mount Mods", icon = 975744 });
+	end);
 end
