@@ -99,6 +99,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											for key,value in pairs(mostAccessibleSource) do
 												recipe[key] = value;
 											end
+											recipe.parent = data;
 											recipe.progress = nil;
 											recipe.total = nil;
 											recipe.itemID = nil;
@@ -107,10 +108,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											local specialization = recipe.requireSkill or professionID;
 											recipe.requireSkill = specialization;
 											if specialization ~= professionID then
-												recipe.parent = specializations[specialization];
-												if not recipe.parent then
-													recipe.parent = data;
-												end
+												recipe.parent = specializations[specialization] or data;
 											else
 												if not awp then awp = 10000 end;
 												for i=2,#sources,1 do
