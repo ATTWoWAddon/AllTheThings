@@ -17,19 +17,13 @@ app:CreateWindow("Locked", {
 			expanded = true,
 			back = 1,
 			indent = 0,
-			g = { },
 			OnUpdate = function(t)
-				local g = t.g;
-				if #g < 1 then
-					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "locked");
-					if #results > 0 then
-						for i,result in ipairs(results) do
-							tinsert(g, result);
-						end
-						t.OnUpdate = nil;
-						self:AssignChildren();
-						self:ExpandData(true);
-					end
+				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "locked");
+				if g and #g > 0 then
+					t.g = g;
+					t.OnUpdate = nil;
+					self:AssignChildren();
+					self:ExpandData(true);
 				end
 			end,
 		}));

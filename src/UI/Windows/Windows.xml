@@ -8,6 +8,9 @@
 	<Script file="Hidden/Never Implemented.lua"/>
 	<Script file="Hidden/Sourceless.lua"/>
 	<Script file="Hidden/Unsorted.lua"/>
+	<Script file="Quests/Quests.lua"/>
+	<Script file="Quests/Breadcrumbs.lua"/>
+	<Script file="Quests/Dailies.lua"/>
 	<Script file="Achievements.lua"/>
 	<Script file="Account Management.lua"/>
 	<Script file="Retail/Account Management.lua"/>
@@ -16,10 +19,8 @@
 	<Script file="Auctions.lua"/>
 	<Script file="Battle Pets.lua"/>
 	<Script file="Bounty.lua"/>
-	<Script file="Breadcrumbs.lua"/>
 	<Script file="Class Specific Things.lua"/>
 	<Script file="Collected Sources.lua"/>
-	<Script file="Dailies.lua"/>
 	<Script file="Exploration.lua"/>
 	<Script file="Factions.lua"/>
 	<Script file="Filter Specific Things.lua"/>
@@ -44,7 +45,6 @@
 	<Script file="Objects.lua"/>
 	<Script file="Pet Battles.lua"/>
 	<Script file="Professions.lua"/>
-	<Script file="Quests.lua"/>
 	<Script file="Race Specific Things.lua"/>
 	<Script file="Raid Assistant.lua"/>
 	<Script file="Retail/Raid Assistant.lua"/>
