@@ -158,12 +158,12 @@ local function RefreshWindowStyles(self)
 		end
 		for suffix,window in pairs(app.WindowDefinitions) do
 			if window[configKey] then
-				windows[window.Suffix] = window;
+				windows[suffix] = window;
 			end
 		end
 		for suffix,window in pairs(app.Windows) do
 			if window[configKey] then
-				windows[window.Suffix] = window;
+				windows[suffix] = window;
 			end
 		end
 		local styleHeader = config.styleHeader;
