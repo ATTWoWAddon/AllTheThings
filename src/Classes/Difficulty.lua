@@ -129,14 +129,15 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 				-- Look for this difficulty's lockout.
 				local difficultyHash = t.difficultyHash;
 				if difficultyHash then
-					local diffLocks = {};
+					local diffLocks,any = {},nil;
 					-- Look for matching difficulty lockouts.
 					for difficultyKey, lock in pairs(locks) do
 						if difficultyHash[difficultyKey] then
 							diffLocks[difficultyKey] = lock;
+							any = true;
 						end
 					end
-					if #diffLocks > 0 then
+					if any then
 						t.locks = diffLocks;
 						return diffLocks;
 					end
