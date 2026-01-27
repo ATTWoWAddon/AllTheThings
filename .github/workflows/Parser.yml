@@ -4,6 +4,8 @@ name: Parser
 on:
   # Triggers the workflow on each push event
   push:
+    branches:
+      - master
     tags-ignore:
       - '*'  # Ignore all tags
     paths:
