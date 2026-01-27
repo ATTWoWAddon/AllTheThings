@@ -5,9 +5,9 @@ on:
   # Triggers the workflow on each push event
   push:
     branches:
-      - master
+      - '*' # Trigger on all branches
     tags-ignore:
-      - '*'  # Ignore all tags
+      - '*' # Ignore all tags
     paths:
       - '.contrib/Parser/**'
       - '.github/workflows/Parser.yml'
