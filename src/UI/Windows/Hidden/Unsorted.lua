@@ -9,6 +9,7 @@ local tinsert = tinsert;
 -- Implementation
 app:CreateWindow("Unsorted", {
 	Commands = { "attunsorted" },
+	HideFromSettings = true,
 	Preload = true,
 	OnInit = function(self)
 		-- Add an achievement header
@@ -26,6 +27,7 @@ app:CreateWindow("Unsorted", {
 			title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.UNSORTED_DESC_2,
+			title = "Unsorted`" .. app.Version,
 			font = "GameFontNormalLarge",
 			expanded = true,
 			visible = true,
@@ -39,4 +41,12 @@ app:CreateWindow("Unsorted", {
 		app.CacheFields(self.data, true);
 		self:AssignChildren();
 	end,
+	OnUpdate = function(self, ...)
+		-- Update the groups without forcing Debug Mode.
+		local state = app.Modules.Filter.Get.Unobtainable();
+		app.Modules.Filter.Set.Unobtainable();
+		self:DefaultUpdate(...);
+		app.Modules.Filter.Set.Unobtainable(state);
+		return true
+	end
 });

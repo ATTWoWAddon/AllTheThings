@@ -1482,6 +1482,7 @@ function app:GetDataCache()
 	end
 	
 	if app.IsRetail then
+	-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
 	-- Create Dynamic Groups Button
 	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
@@ -1668,67 +1669,6 @@ function app:GetDataCache()
 
 		},
 	}));
-	
-	-- Function to build a hidden window's data
-	local AllHiddenWindows = {}
-	local function BuildHiddenWindowData(name, icon, description, category, flags)
-		if not app.Categories[category] then return end
-
-		local windowData = app.CreateRawText(app.Modules.Color.Colorize(name, flags and flags.Color or app.Colors.ChatLinkError), app.Categories[category])
-		windowData.title = name .. DESCRIPTION_SEPARATOR .. app.Version
-		windowData.icon = app.asset(icon)
-		windowData.description = description
-		windowData.font = "GameFontNormalLarge"
-		for k, v in pairs(flags or app.EmptyTable) do
-			windowData[k] = v
-		end
-
-		CacheFields(windowData, true)
-		AllHiddenWindows[#AllHiddenWindows + 1] = windowData
-
-		-- Filter for Never Implemented things
-		if category == "NeverImplemented" then
-			app.AssignFieldValue(windowData, "u", 1)
-		end
-
-		local window = app:GetWindow(category)
-		window:SetData(windowData)
-		window:AssignChildren()
-	end
-
-	-- Build all the hidden window's data
-	--BuildHiddenWindowData(L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true, _nosearch = true })
-	BuildHiddenWindowData(L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented", { _nyi = true, _nosearch = true })
-	BuildHiddenWindowData(L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
-	BuildHiddenWindowData(L.HIDDEN_CURRENCY_TRIGGERS, "Interface_Vendor", L.HIDDEN_CURRENCY_TRIGGERS_DESC, "HiddenCurrencyTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
-	BuildHiddenWindowData(L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
-	BuildHiddenWindowData(L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true, _nosearch = true, Color = app.Colors.TooltipWarning })
-	-- app.PrintMemoryUsage("Hidden Windows Data Done")
-
-	-- a single Unsorted window to collect all base Unsorted windows
-	-- TODO: migrate this logic once Window creation is revised
-	app.ChatCommands.Add("all-hidden", function(args)
-		local window = app:GetWindow("all-hidden")
-		if window and not window.HasPendingUpdate then window:Toggle() return true end
-
-		-- local allHiddenSearch = app:BuildTargettedSearchResponse(AllUnsortedGroups, "_nosearch", true, nil, {ParentInclusionCriteria={},SearchCriteria={},SearchValueCriteria={}})
-
-		local windowData = app.CreateRawText(app.Modules.Color.Colorize("All-Hidden", app.Colors.ChatLinkError), {
-			-- clone all unhidden groups into this window
-			g = CreateObject(AllHiddenWindows),
-			title = "All-Hidden" .. DESCRIPTION_SEPARATOR .. app.Version,
-			icon = app.asset("status-unobtainable"),
-			description = "All Hidden ATT Content",
-			font = "GameFontNormalLarge",
-		})
-		window:SetData(windowData)
-		window:AssignChildren()
-		window:Toggle()
-		return true
-	end, {
-		"Usage : /att all-hidden",
-		"Provides a single command to open all Hidden content in a single window",
-	})
 	end
 	
 	app.AssignChildren(rootData);
