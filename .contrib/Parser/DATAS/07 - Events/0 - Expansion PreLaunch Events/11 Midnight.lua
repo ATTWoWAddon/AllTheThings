@@ -206,9 +206,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		n(VENDORS, {
 			n(249197, {	-- Armorer Kalinovan
 				["coord"] = { 49.7, 81.3, TWILIGHT_HIGHLANDS },
-				["groups"] = sharedData({
+				["groups"] = bubbleDownFiltered({
 					["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
-				}, {
+				},FILTERFUNC_itemID,{
 					filter(CLOAKS, {
 						i(246674),	-- Ascension Arrestor's Cape
 						i(246675),	-- Ascension Arrestor's Cloak
