@@ -30,6 +30,7 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(121507),	-- Runespeaker's Crown				(NYI)
 
+			ig(63455),	-- Blinders of the Follower			(Removed)
 			ig(134787),	-- Entrenched Cowl					(Removed)
 			ig(19105),	-- Frost Runed Headdress			(Removed)
 			ig(10782),	-- Hakkari Shroud					(Removed)
@@ -91,6 +92,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(34107),	-- Tattered Shoulderpads			(NYI)
 
 			ig(134696),	-- Cascading Amice					(Removed)
+			ig(18757),	-- Diabolic Mantle					(Removed)
 			ig(134724),	-- Icyweave Amice					(Removed)
 			ig(134753),	-- Veiled Mantle					(Removed)
 		}),
@@ -114,6 +116,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114273),	-- Leafscale Spaulders				(NYI)
 			ig(4014),	-- Sterling Chain Shoulderpads		(NYI)
 
+			ig(63452),	-- Burden of Lost Humanity			(Removed)
 			ig(134734),	-- Frigidlink Spaulders				(Removed)
 			ig(134765),	-- Overgrown Shoulderguards			(Removed)
 			ig(134706),	-- Surging Spaulders				(Removed)
@@ -136,6 +139,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134737),	-- Chillplate Shoulders				(Removed)
 			ig(134769),	-- Concealment Shoulderplates		(Removed)
 			ig(134713),	-- Crushing Pauldrons				(Removed)
+			ig(63470),	-- Missing Diplomat's Pauldrons		(Removed)
 		}),
 	}),
 	i(208064, {	-- Quantum Chestpiece
@@ -204,6 +208,7 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134735),	-- Chillplate Chestpiece			(Removed)
 			ig(134767),	-- Concealment Breastplate			(Removed)
+			ig(63450),	-- Phantom Armor					(Removed)
 			ig(134799),	-- Tempered Breastplate				(Removed)
 		}),
 	}),
@@ -261,6 +266,8 @@ local QUANTUM_GROUP = sharedData({
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
 			ig(20659),	-- Abyssal Mail Handguards			(Removed)
+			ig(37686),	-- Cracked Epoch Grasps				(Removed)
+			ig(27793),	-- Earth Mantle Handwraps			(Removed)
 			ig(51980),	-- Earthbound Handgrips				(Removed)
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
@@ -292,6 +299,7 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
+			ig(27475),	-- Gauntlets of the Bold			(Removed)
 			ig(134801),	-- Tempered Gauntlets				(Removed)
 		}),
 	}),

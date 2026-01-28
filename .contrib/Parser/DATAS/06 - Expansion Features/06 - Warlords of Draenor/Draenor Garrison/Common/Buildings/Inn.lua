@@ -986,10 +986,12 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37119, {	-- The Headhunter's Harvest
 							["qg"] = 84947,	-- Lysa Serion
+							["coord"] = { 52.2, 44.5, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37046, {	-- The Headhunter's Harvest
 							["qg"] = 87305,	-- Akanja
+							["coord"] = { 51.2, 61.0, FROSTWALL },
 							["races"] = HORDE_ONLY,
 						}),
 						q(37164, {	-- The Huntresses

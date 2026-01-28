@@ -374,9 +374,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(78373, {	-- The Dream Thanks You
 						["provider"] = { "n", 211962 },	-- Melsysra
 						["maps"] = { EMERALD_DREAM },	-- follow you around
-						["groups"] = {
-							i(206960),	-- Enchanted Wyrm's Dreaming Crest
-						},
+						["groups"] = { i(206960) },	-- Enchanted Wyrm's Dreaming Crest
 					}),
 					q(78588, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn

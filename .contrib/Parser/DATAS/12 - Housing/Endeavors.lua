@@ -38,6 +38,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
+			-- TODO: Separate quests by endeavor
 			q(92429, {	-- Alternative Skinning
 				["qgs"] = {
 					251056, -- Gerath
@@ -81,9 +82,35 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 					{ 54.1, 57.0, RAZORWIND_SHORES },
 				},
 			}),
+			-- Niffin
+			q(94654),	-- Snail Mail - Apple
+			q(94660),	-- Snail Mail - Bouquet of Fungi
+			q(94662),	-- Snail Mail - Caramel
+			q(94664),	-- Snail Mail - Caviar
+			q(94641),	-- Snail Mail - Cedarwood
+			q(94663),	-- Snail Mail - Chocolatey
+			q(94645),	-- Snail Mail - Cinnamon
+			q(94646),	-- Snail Mail - Clove
+			q(94650),	-- Snail Mail - Coconut
+			q(94661),	-- Snail Mail - Crushed up Granite
+			q(94657),	-- Snail Mail - Dewy Mold
+			q(94648),	-- Snail Mail - Dreamfoil
+			q(94642),	-- Snail Mail - Fire Leaf
+			q(94644),	-- Snail Mail - Fjarnskaggl
+			q(94653),	-- Snail Mail - Foxflower
+			q(94665),	-- Snail Mail - Fresh-Cut Grass
+			q(94651),	-- Snail Mail - Honey
+			q(94652),	-- Snail Mail - Just-Rained
+			q(94659),	-- Snail Mail - Nerubian Hootch Wine
+			q(94647),	-- Snail Mail - Nutmeg
+			q(94655),	-- Snail Mail - Peachy
+			q(94643),	-- Snail Mail - Roasted Ham
+			q(94658),	-- Snail Mail - Scent of the Wind
+			q(94649),	-- Snail Mail - Seven Day Old Sweat
+			q(94656),	-- Snail Mail - Soapy
+			q(94640),	-- Snail Mail - Writhebark
 		})),
 		n(TREASURES, {
-
 		}),
 		n(VENDORS, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>

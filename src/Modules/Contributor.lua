@@ -577,6 +577,7 @@ MobileDB.Creature = {
 	[208474] = true,	-- Clarelle
 	[209681] = true,	-- Squally
 	[211444] = true,	-- Flynn Fairwind
+	[211962] = true,	-- Melsysra
 	[213560] = true,	-- Inspector Snip Snagglebolt
 	[214707] = true,	-- Detective Snap Snagglebolt
 	[214890] = true,	-- Magni Bronzebeard
@@ -2060,6 +2061,7 @@ MobileDB.GameObject = {
 	[382120] = true,	-- Dragonscale Expedition Flag
 	[382283] = true,	-- Oozing Claw Thistle [Dragon Isle Resources]
 	[382284] = true,	-- Mature Gift of the Grove [Dragon Isle Resources]
+	[382285] = true,	-- Mature Terata [Dragon Isle Resources]
 	[382286] = true,	-- Singing River Bell [Dragon Isle Resources]
 	[382287] = true,	-- Blooming Fangtooth [Dragon Isle Resources]
 	[382288] = true,	-- Ripe Winter Berries [Dragon Isle Resources]
@@ -2068,9 +2070,11 @@ MobileDB.GameObject = {
 	[382293] = true,	-- Ripe Cuppressa [Dragon Isle Resources]
 	[382294] = true,	-- Blooming Titian Orchid [Dragon Isle Resources]
 	[382295] = true,	-- Blooming Magenta Titian Orchid [Dragon Isle Resources]
+	[382296] = true,	-- Mature Vine Flower [Dragon Isle Resources]
 	[382299] = true,	-- Sundered Flame Supply Crate [Dragon Isle Resources]
 	[382300] = true,	-- Maruukai Supplies
 	[382594] = true,	-- 'Good Students' Reward Chest [Vexamus]
+	[383575] = true,	-- Rebel Supply Crate
 	[383732] = true,	-- Tuskarr Tacklebox
 	[383733] = true,	-- Disturbed Dirt
 	[383734] = true,	-- Disturbed Dirt
@@ -2619,6 +2623,7 @@ MobileDB.GameObject = {
 	[584694] = true,	-- Ironwood Lumber
 	[586651] = true,	-- Ashwood Lumber
 	[612274] = true,	-- Portal to K'aresh (q:85002)
+	[627049] = true,	-- Hearthlight Armillary
 }
 
 local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}
