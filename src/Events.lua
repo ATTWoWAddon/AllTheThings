@@ -211,7 +211,6 @@ end
 
 local Runner = app.CreateRunner("events")
 local Run = Runner.Run
-local OnEnd = Runner.OnEnd
 local IsRunning = Runner.IsRunning
 -- Runner.SetPerFrameDefault(5)
 -- Runner.ToggleDebugFrameTime()
@@ -279,20 +278,27 @@ local SequenceEventsStack = {}
 local function OnEndSequenceEvents()
 	local sequenceEventCount = #SequenceEventsStack
 	if sequenceEventCount > 0 then
-		-- DebugNextSequenceEvent(SequenceEventsStack[sequenceEventCount])
+		-- DebugNextSequenceEvent(SequenceEventsStack[sequenceEventCount],sequenceEventCount)
 		-- callback the top event in the SequenceEventsStack (Runner is reset after OnEnd in the same frame)
-		CallbackEvent(SequenceEventsStack[sequenceEventCount])
+		local nextSequenceEvent = SequenceEventsStack[sequenceEventCount]
 		SequenceEventsStack[sequenceEventCount] = nil
+		CallbackEvent(nextSequenceEvent)
+		if ImmediateEvents[nextSequenceEvent] then
+			-- if the next sequence event is immediate, then make sure to continue the sequence events next frame
+			Callback(OnEndSequenceEvents)
+		end
 	end
 end
+-- Whenever the Event Runner is Reset, make sure to queue up any Sequence Events that need to be processed
+Runner.DefaultOnReset(OnEndSequenceEvents)
 local function QueueSequenceEvents(eventName)
 	local sequenceEvents = EventSequence[eventName]
 	if sequenceEvents then
-		-- DebugQueueSequencedEvents(eventName)
+		-- DebugQueueSequencedEvents(eventName,#SequenceEventsStack,"+",#sequenceEvents)
 		if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or IsRunning()) then
 			-- add sequence events to the SequenceEventsStack if there's a Runner running
 			for i=#sequenceEvents,1,-1 do
-				-- DebugQueuedSequenceEvent(sequenceEvents[i])
+				-- DebugQueuedSequenceEvent(sequenceEvents[i],i)
 				SequenceEventsStack[#SequenceEventsStack + 1] = sequenceEvents[i]
 			end
 		else
@@ -304,9 +310,6 @@ local function QueueSequenceEvents(eventName)
 				CallbackEvent(sequenceEvents[i])
 			end
 		end
-	end
-	if #SequenceEventsStack > 0 then
-		OnEnd(OnEndSequenceEvents)
 	end
 end
 local IgnoredEvents = {
