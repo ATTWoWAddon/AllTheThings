@@ -189,7 +189,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["questID"] = 94514,
 			}),
 			n(253378, {	-- Voice of the Eclipse
-				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
+				["description"] = "This Rare has a chance to be summoned anywhere in Twilight Highlands. Watch out for Void Hooks on the ground.",
+				["maps"] = { TWILIGHT_HIGHLANDS },
+				["questID"] = 94506,
 			}),
 			n(246272, {	-- Void Zealot Devinda
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
