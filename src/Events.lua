@@ -109,6 +109,7 @@ local ImmediateEvents = {
 	OnWindowCreated = true,
 	OnWindowUpdated = true,
 	OnWindowRefreshed = true,
+	OnWindowFillComplete = true,
 	OnLoad = true,
 	OnStartup = true,
 	OnStartupDone = true,
@@ -219,6 +220,8 @@ local IgnoredDebugEvents = {
 	RowOnEnter = true,
 	RowOnLeave = true,
 	RowOnClick = true,
+	-- OnWindowUpdated = true,
+	-- OnSearchResultUpdate = true,
 }
 local function DebugEventTriggered(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
@@ -226,11 +229,19 @@ local function DebugEventTriggered(eventName,...)
 end
 local function DebugEventStart(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
-	app.PrintDebug(app.Modules.Color.Colorize(eventName,IsRunning() and app.Colors.Time or app.Colors.AddedWithPatch),...)
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.AddedWithPatch),...)
 end
 local function DebugEventDone(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
-	app.PrintDebug(app.Modules.Color.Colorize(eventName,IsRunning() and app.Colors.Horde or app.Colors.RemovedWithPatch),...)
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.RemovedWithPatch),...)
+end
+local function DebugRunnerEventStart(eventName,...)
+	if IgnoredDebugEvents[eventName] then return end
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Time),...)
+end
+local function DebugRunnerEventDone(eventName,...)
+	if IgnoredDebugEvents[eventName] then return end
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
 end
 local function DebugNextSequenceEvent(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
@@ -314,13 +325,13 @@ local function HandleEvent(eventName, ...)
 	local handlers = EventHandlers[eventName]
 	if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning()) then
 		-- DebugStartRunnerEvent(eventName,...)
-		-- Run(DebugEventStart, eventName, ...)
+		-- Run(DebugRunnerEventStart, eventName, ...)
 		for i=1,#handlers do
 			-- Run(DebugStartRunnerFunc,"Handler #",i)
 			Run(handlers[i], ...)
 			-- Run(DebugEndRunnerFunc,"Handler Done")
 		end
-		-- Run(DebugEventDone, eventName)
+		-- Run(DebugRunnerEventDone, eventName)
 	else
 		-- DebugEventTriggered(eventName, ...)
 		-- DebugEventStart(eventName, ...)
