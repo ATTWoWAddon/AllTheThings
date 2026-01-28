@@ -22,6 +22,7 @@ app:CreateWindow("Removed From Game", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 						self:ExpandData(true);
