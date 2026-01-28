@@ -212,7 +212,7 @@ local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
 			parent = c.parent
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
-				c.isCost = isCost;
+				c.isCost = isCost
 				-- PrintDebug(costID, "Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
@@ -339,7 +339,7 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 		isProv = PlayerIsMissingProviderItem(itemID)
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isProv and "IS PROV" or "NOT PROV")
 	end
-	local isOwnedCost = not isCost and owned > 0
+	local isOwnedCost = (not isCost and owned > 0) or nil
 	SetCostTotals(costs, isCost or isProv, refresh, itemID, isOwnedCost)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
