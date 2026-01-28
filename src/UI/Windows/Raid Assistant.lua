@@ -218,7 +218,7 @@ app:CreateWindow("RaidAssistant", {
 			self:SetData(raidassistant);
 			Callback(self.Update, self, true);
 		end
-		
+
 		-- Setup Event Handlers and register for events
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
@@ -228,7 +228,7 @@ app:CreateWindow("RaidAssistant", {
 		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
 			self:Update(true);
 		end);
-		
+
 		-- Dungeon Difficulty (Added with TBC)
 		if app.GameBuildVersion >= 20000 then
 			local function switchDungeonDifficulty(row, button)
@@ -335,7 +335,7 @@ app:CreateWindow("RaidAssistant", {
 						title = L.LEGACY_RAID_DIFF,
 						description = L.LEGACY_RAID_DIFF_DESC,
 						trackable = false,
-						priority = 11,
+						priority = 12,
 						OnClick = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
@@ -398,7 +398,7 @@ app:CreateWindow("RaidAssistant", {
 					title = L.RAID_DIFF,
 					description = L.RAID_DIFF_DESC_2,
 					trackable = false,
-					priority = 12,
+					priority = 11,
 					OnClick = function(row, button)
 						-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 						if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
@@ -422,7 +422,7 @@ app:CreateWindow("RaidAssistant", {
 				}));
 			end
 		end
-		
+
 		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
 		if app.CreateLootThreshold then
 			local lootthreshold = app.CreateRawText("Loot Threshold", {
@@ -610,7 +610,7 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-		
+
 		-- If Loot Spec exists, we have the ability to change the player's current loot specialization.
 		if GetLootSpecialization and SetLootSpecialization and app.GameBuildVersion >= 50000 then
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
@@ -699,7 +699,7 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-		
+
 		-- If LFG exists, we get some access to some special api functions.
 		if C_LFGList_GetActiveEntryInfo and app.GameBuildVersion >= 30000 then
 			-- For teleporting in/out... (available with Dungeon Finder itself)
@@ -738,7 +738,7 @@ app:CreateWindow("RaidAssistant", {
 				}));
 			end
 		end
-		
+
 		if app.GameBuildVersion < 30000 then
 			tinsert(options, app.CreateRawText("Create a Group", {
 				icon = 132331,
@@ -770,7 +770,7 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-		
+
 		tinsert(options, app.CreateRawText(L.LEAVE_GROUP, {
 			icon = 132331,
 			description = L.LEAVE_GROUP_DESC,
@@ -809,7 +809,7 @@ app:CreateWindow("RaidAssistant", {
 				return true;
 			end,
 		}));
-		
+
 		local function AttemptResetInstances()
 			ResetInstances();
 		end
