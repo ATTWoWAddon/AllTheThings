@@ -856,7 +856,6 @@ app:CreateWindow("RaidAssistant", {
 		end
 		
 		-- If LFG exists, we get some access to some special api functions.
-		local CreateAGroup, CreateARaid;
 		if C_LFGList_GetActiveEntryInfo and app.GameBuildVersion >= 30000 then
 			-- For teleporting in/out... (available with Dungeon Finder itself)
 			if IsInLFGDungeon and IsAllowedToUserTeleport and LFGTeleport then
@@ -908,49 +907,54 @@ app:CreateWindow("RaidAssistant", {
 					end,
 				}));
 			end
-			
-			CreateAGroup = function(row, button)
-				InviteUnit(InviteCharacterName);
-				self:Reset();
-				return true;
-			end
-			CreateARaid = function(row, button)
-				InviteUnit(InviteCharacterName);
-				C_Timer.After(0.8,function() ConvertToRaid(); end);
-				self:Reset();
-				return true;
-			end
-		else
-			CreateAGroup = function(row, button)
-				InviteUnit(InviteCharacterName);
-				self:Reset();
-				return true;
-			end
-			CreateARaid = function(row, button)
-				InviteUnit(InviteCharacterName);
-				C_Timer.After(0.8,function() ConvertToRaid(); end);
-				self:Reset();
-				return true;
-			end
 		end
 		
-		tinsert(options, app.CreateRawText("Create a Group", {	-- Create a Group
+		if app.GameBuildVersion < 30000 then
+			tinsert(options, app.CreateRawText("Create a Group", {
+				icon = 132331,
+				description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
+				priority = 20,
+				OnClick = function(row, button)
+					InviteUnit(InviteCharacterName);
+					self:Reset();
+					return true;
+				end,
+				OnUpdate = function(data)
+					data.visible = not IsInGroup();
+					return true;
+				end,
+			}));
+			tinsert(options, app.CreateRawText("Create a Raid", {
+				icon = 132331,
+				description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
+				priority = 20,
+				OnClick = function(row, button)
+					InviteUnit(InviteCharacterName);
+					C_Timer.After(0.8,function() ConvertToRaid(); end);
+					self:Reset();
+					return true;
+				end,
+				OnUpdate = function(data)
+					data.visible = not IsInGroup();
+					return true;
+				end,
+			}));
+		end
+		tinsert(options, app.CreateRawText("Port to Graveyard", {
 			icon = 132331,
-			description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
-			priority = 20,
-			OnClick = CreateAGroup,
-			OnUpdate = function(data)
-				data.visible = not IsInGroup();
+			description = "Click here to create a group and then immediately leave it. This will port you to the nearest graveyard after 1 minute.",
+			priority = 25,
+			OnClick = function(row, button)
+				InviteUnit(InviteCharacterName);
+				C_Timer.After(0.5,function()
+					LeaveParty();
+					CloseGroupFinder();
+				end);
+				self:Reset();
 				return true;
 			end,
-		}));
-		tinsert(options, app.CreateRawText("Create a Raid", {	-- Create a Raid
-			icon = 132331,
-			description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
-			priority = 20,
-			OnClick = CreateARaid,
 			OnUpdate = function(data)
-				data.visible = not IsInGroup();
+				data.visible = IsInInstance();
 				return true;
 			end,
 		}));
