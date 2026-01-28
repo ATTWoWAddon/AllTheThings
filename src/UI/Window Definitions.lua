@@ -2817,9 +2817,10 @@ local function BuildWindow(suffix)
 	end
 	if definition.OnInit then
 		definition.OnInit(window, handlers);
-		if not (window.data and window.data.window) and not window.IsTopLevel then
-			print(window.Suffix, "OI! You forgot to use self:SetData(data) in the OnInit!");
-		end
+		-- @Creive: I don't know why OnInit should add data... isn't that for Rebuild?
+		-- if not (window.data and window.data.window) and not window.IsTopLevel then
+		-- 	print(window.Suffix, "OI! You forgot to use self:SetData(data) in the OnInit!");
+		-- end
 	end
 	if definition.Commands then
 		if not window.SettingsName then
@@ -2840,7 +2841,7 @@ local function BuildWindow(suffix)
 	end
 	
 	-- Inform event registers that a new window has been created.
-	app.HandleEvent("OnWindowCreated", window);
+	app.HandleEvent("OnWindowCreated", window, suffix);
 	return window;
 end
 function app:CreateWindow(suffix, definition)
@@ -2853,6 +2854,7 @@ function app:CreateWindow(suffix, definition)
 			local onCommand;
 			if definition.OnCommand then
 				onCommand = function(cmd)
+					-- TODO: Crieve fix this 'window' param, it's not real!
 					if not definition.OnCommand(window, cmd) then
 						app:GetWindow(suffix):Toggle();
 					end
