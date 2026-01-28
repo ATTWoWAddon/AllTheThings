@@ -10,7 +10,8 @@ on:
     - cron: '0 16 * * 0'  # at 16:00 UTC every sunday
   # Triggers the workflow on tag events
   push:
-    tags: '*'
+    tags:
+      - '*.*.*'  # Matches tags like 1.2.3
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -20,38 +21,52 @@ jobs:
   check-changes:
     runs-on: ubuntu-slim
     outputs:
+      release_type: ${{ steps.release_type.outputs.release_type }}
       changes_detected: ${{ steps.check_changes.outputs.changes_detected }}
     steps:
+      - name: Determine the release type
+        id: release_type
+        shell: bash
+        run: |
+          if [ "${{ github.ref_type }}" = "tag" ] || [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            echo "Release type: release (tag)"
+            echo "release_type=release" >> $GITHUB_OUTPUT
+          else
+            echo "Release type: alpha (schedule/dispatch)"
+            echo "release_type=alpha" >> $GITHUB_OUTPUT
+          fi
+
       - name: Checkout code
+        if: steps.release_type.outputs.release_type == 'alpha'
         uses: actions/checkout@v6
         with:
            fetch-depth: 300
            fetch-tags: true
 
+      - name: Reset to SHA that triggered the workflow
+        if: steps.release_type.outputs.release_type == 'alpha'
+        run: git reset --hard ${{ github.sha }}
+
       - name: Check for changes since last tag
         id: check_changes
+        if: steps.release_type.outputs.release_type == 'alpha'
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            LAST_TAG=$(git describe --tags --abbrev=0)
-            echo "Last tag: $LAST_TAG"
-            CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
-            if [ -z "$CHANGED_FILES" ]; then
-              echo "No changes detected since last tag."
-              echo "changes_detected=false" >> $GITHUB_OUTPUT
-            else
-              echo "Changes detected since last tag:"
-              echo "$CHANGED_FILES"
-              echo "changes_detected=true" >> $GITHUB_OUTPUT
-            fi
+          LAST_TAG=$(git describe --tags --abbrev=0)
+          echo "Last tag: $LAST_TAG"
+          CHANGED_FILES=$(git diff --name-only $LAST_TAG HEAD)
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No changes detected since last tag."
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
           else
-            echo "Triggered by ${{ github.event_name }}, always proceed."
+            echo "Changes detected since last tag:"
+            echo "$CHANGED_FILES"
             echo "changes_detected=true" >> $GITHUB_OUTPUT
           fi
 
   build-windows:
     runs-on: windows-latest
     needs: check-changes
-    if: needs.check-changes.outputs.changes_detected == 'true'
+    if: needs.check-changes.outputs.release_type == 'release' || needs.check-changes.outputs.changes_detected == 'true'
 
     steps:
       - uses: actions/checkout@v6
