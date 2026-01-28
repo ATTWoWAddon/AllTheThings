@@ -8534,7 +8534,7 @@ ach(42300,{awp=120000,rwp=120001}),
 ach(42807,{awp=110205,e=447,rwp=110207,u=2}),
 ach(61339,{awp=110205,description="Earned upon completing a +49 or higher Keystone in time.",e=447,maps={703,706,710,713,731,733,749,751,761,809,845,903},rwp=110207,u=2}),
 ach(61406,{awp=110205,e=242,rwp=110207,u=2}),
-ach(61430,{awp=120000,rwp=120001})}),
+ach(61430,{awp=120000,coords={{50.3,89.4,241}},rwp=120001})}),
 achcat(15268,{
 ach(411,{awp=30002,providers={{"i",20371}},u=2}),
 ach(412,{awp=30002,providers={{"i",33079}},u=2}),

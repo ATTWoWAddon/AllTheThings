@@ -189,7 +189,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["questID"] = 94514,
 			}),
 			n(253378, {	-- Voice of the Eclipse
-				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
+				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
 			}),
 			n(246272, {	-- Void Zealot Devinda
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
