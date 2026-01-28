@@ -2266,7 +2266,6 @@ local FieldDefaults = {
 	end,
 	ScrollTo = function(self, field, value)
 		self.ScrollInfo = { field, value }
-		self:Refresh();
 	end,
 	ToggleExtraFilters = function(self, active)
 		if self.Filters then
@@ -2415,7 +2414,7 @@ local function BuildWindow(suffix)
 		if handler then
 			handler(window, ...);
 		else
-			window:Update();
+			Callback(window, window.Update)
 		end
 	end);
 
