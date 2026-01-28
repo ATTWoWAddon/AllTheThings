@@ -396,6 +396,9 @@ local fieldConverters = {
 	["factionID"] = cacheFactionID,
 	["flightpathID"] = function(group, value)
 		CacheField(group, "flightpathID", value);
+		for mapID,_ in pairs(currentMapGroup) do
+			CacheField(group, "flightPathsByMapID", mapID);
+		end
 	end,
 	["followerID"] = function(group, value)
 		CacheField(group, "followerID", value);

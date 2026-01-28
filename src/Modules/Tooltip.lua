@@ -6,7 +6,7 @@ local L = app.L;
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
-local issecretvalue = issecretvalue and issecretvalue or app.ReturnFalse;
+local issecretvalue = app.WOWAPI.issecretvalue;
 
 -- Concepts:
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
