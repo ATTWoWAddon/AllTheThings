@@ -195,7 +195,9 @@ app:CreateWindow("RaidAssistant", {
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 
 		-- Does Difficulty have some options to change?
-		self:AddEventHandler("OnCurrentDifficultiesChanged", self.Update);
+		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
+			self:Update();
+		end);
 
 		-- Does Dual Spec or Specializations exist in the API?
 		if GetActiveTalentGroup or GetSpecialization then
@@ -214,39 +216,7 @@ app:CreateWindow("RaidAssistant", {
 		
 		-- Default Raid Assistant Options
 		local options = {
-			{	-- Create a Group
-				text = "Create a Group",
-				icon = 132331,
-				description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
-				priority = 20,
-				OnClick = function(row, button)
-					InviteUnit(InviteCharacterName);
-					self:Reset();
-					return true;
-				end,
-				OnUpdate = function(data)
-					data.visible = not IsInGroup();
-					return true;
-				end,
-			},
-			{	-- Create a Raid
-				text = "Create a Raid",
-				icon = 132331,
-				description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
-				priority = 20,
-				OnClick = function(row, button)
-					InviteUnit(InviteCharacterName);
-					C_Timer.After(0.8,function() ConvertToRaid(); end);
-					self:Reset();
-					return true;
-				end,
-				OnUpdate = function(data)
-					data.visible = not IsInGroup();
-					return true;
-				end,
-			},
-			{	-- Leave Group
-				text = "Leave Group",
+			app.CreateRawText("Leave Group", {	-- Leave Group
 				icon = 132331,
 				description = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
 				priority = 19,
@@ -260,9 +230,8 @@ app:CreateWindow("RaidAssistant", {
 					data.visible = IsInGroup();
 					return true;
 				end,
-			},
-			{	-- Reset Instances
-				text = "Reset Instances",
+			}),
+			app.CreateRawText("Reset Instances", {	-- Reset Instances
 				icon = app.asset("Button_Reset"),
 				description = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
 				priority = 16,
@@ -283,11 +252,11 @@ app:CreateWindow("RaidAssistant", {
 					end
 					return true;
 				end,
-			},
+			}),
 		};
 
 		-- If Difficulties exist, this means we can use the API!
-		if GetDifficultyInfo and GetDifficultyInfo(1) then
+		if app.GameBuildVersion >= 20000 then
 			-- If Dungeon Difficulty exists, we can change that using the API!
 			if GetDungeonDifficultyID then
 				local setDungeonDifficulty = function(row, button)
@@ -376,7 +345,7 @@ app:CreateWindow("RaidAssistant", {
 			end
 
 			-- If Raid Difficulty exists, we can change that using the API!
-			if GetRaidDifficultyID then
+			if app.GameBuildVersion >= 30000 then
 				-- At some point Blizzard decided that difficulties made too much sense and scrapped them and added new ones.
 				local raidDifficultyIDs = { 3, 5, 4, 6 };
 				if GetDifficultyInfo(14) and app.GameBuildVersion > 50505 then
@@ -566,8 +535,7 @@ app:CreateWindow("RaidAssistant", {
 		-- If Loot Method exists, we can change how loot gets distributed for the raid.
 		if app.CreateLootMethod then
 			-- Allow the user to change the Loot Method
-			local lootmethod = {
-				text = LOOT_METHOD,
+			local lootmethod = app.CreateRawText(LOOT_METHOD, {
 				icon = 133784,
 				description = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
 				expanded = true,
@@ -589,7 +557,7 @@ app:CreateWindow("RaidAssistant", {
 					end
 					data.visible = true;
 				end,
-			};
+			});
 			tinsert(options, app.CreateLootMethod("group", {
 				title = LOOT_METHOD,
 				priority = 1,
@@ -610,8 +578,7 @@ app:CreateWindow("RaidAssistant", {
 			}));
 
 			-- Allow the user to select a Loot Master
-			local lootmasters = {
-				text = MASTER_LOOTER,
+			local lootmasters = app.CreateRawText(MASTER_LOOTER, {
 				icon = 133784,
 				description = "This setting allows you to select a new Master Looter.",
 				expanded = true,
@@ -656,7 +623,7 @@ app:CreateWindow("RaidAssistant", {
 					end
 					data.visible = true;
 				end,
-			};
+			});
 			tinsert(options, app.CreateUnit("player", {
 				title = MASTER_LOOTER,
 				priority = 2,
@@ -703,8 +670,7 @@ app:CreateWindow("RaidAssistant", {
 
 		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
 		if app.CreateLootThreshold then
-			local lootthreshold = {
-				text = "Loot Threshold",
+			local lootthreshold = app.CreateRawText("Loot Threshold", {
 				icon = 133784,
 				description = "Select a new loot threshold.",
 				expanded = true,
@@ -729,7 +695,7 @@ app:CreateWindow("RaidAssistant", {
 					end
 					data.visible = true;
 				end,
-			};
+			});
 			tinsert(options, app.CreateLootThreshold(2, {
 				title = LOOT_TRESHOLD,
 				priority = 3,
@@ -754,11 +720,10 @@ app:CreateWindow("RaidAssistant", {
 		end
 
 		-- If Specializations are available, that means we don't need to look up player talents.
-		if GetSpecialization and GetSpecializationInfo then
+		if app.GameBuildVersion >= 50000 then
 			-- If Loot Spec exists, we have the ability to change the player's current loot specialization.
 			if GetLootSpecialization and SetLootSpecialization then
-				local lootspecialization = {
-					text = "Loot Specialization",
+				local lootspecialization = app.CreateRawText("Loot Specialization", {
 					icon = 1499566,
 					description = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
 					visible = true,
@@ -773,8 +738,7 @@ app:CreateWindow("RaidAssistant", {
 						if #g < 1 then
 							local numSpecializations = GetNumSpecializations();
 							if numSpecializations and numSpecializations > 0 then
-								tinsert(data.g, {
-									text = "Current Specialization",
+								tinsert(data.g, app.CreateRawText("Current Specialization", {
 									icon = 1495827,
 									description = "If you switch your talents, your loot specialization changes with you.",
 									OnClick = function(row, button)
@@ -810,12 +774,11 @@ app:CreateWindow("RaidAssistant", {
 										data.visible = true;
 										return true;
 									end,
-								});
+								}));
 								for i=1,numSpecializations,1 do
 									local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
-									tinsert(data.g, {
+									tinsert(data.g, app.CreateRawText(name, {
 										id = id,
-										text = name,
 										icon = icon,
 										description = description,
 										OnClick = function(row, button)
@@ -848,14 +811,13 @@ app:CreateWindow("RaidAssistant", {
 											data.visible = true;
 											return true;
 										end,
-									});
+									}));
 								end
 							end
 						end
 					end,
-				};
-				tinsert(options, {
-					text = RETRIEVING_DATA,
+				});
+				tinsert(options, app.CreateRawText(RETRIEVING_DATA, {
 					description = "In dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
 					priority = 4,
 					OnClick = function(row, button)
@@ -884,7 +846,7 @@ app:CreateWindow("RaidAssistant", {
 						data.visible = true;
 						return true;
 					end,
-				});
+				}));
 			end
 		end
 
@@ -892,13 +854,13 @@ app:CreateWindow("RaidAssistant", {
 		if GetActiveTalentGroup then
 			--TODO: Setup Talent Swapping
 		end
-
+		
 		-- If LFG exists, we get some access to some special api functions.
-		if C_LFGList_GetActiveEntryInfo then
+		local CreateAGroup, CreateARaid;
+		if C_LFGList_GetActiveEntryInfo and app.GameBuildVersion >= 30000 then
 			-- For teleporting in/out... (available with Dungeon Finder itself)
-			if IsInLFGDungeon and IsAllowedToUserTeleport and LFGTeleport and IsInLFGDungeon then
-				tinsert(options, {
-					text = RETRIEVING_DATA,
+			if IsInLFGDungeon and IsAllowedToUserTeleport and LFGTeleport then
+				tinsert(options, app.CreateRawText(RETRIEVING_DATA, {
 					outText = "Teleport Out",
 					outDescription = "Click here to teleport out of your current instance if using LFG.",
 					toText = "Teleport to Dungeon",
@@ -925,13 +887,12 @@ app:CreateWindow("RaidAssistant", {
 						end
 						return true;
 					end,
-				});
+				}));
 			end
 
 			-- And for Delisting the group!
 			if C_LFGList_RemoveListing then
-				tinsert(options, {
-					text = "Delist Group",
+				tinsert(options, app.CreateRawText("Delist Group", {
 					icon = 252175,
 					description = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
 					priority = 18,
@@ -945,13 +906,57 @@ app:CreateWindow("RaidAssistant", {
 						data.visible = C_LFGList_GetActiveEntryInfo();
 						return true;
 					end,
-				});
+				}));
+			end
+			
+			CreateAGroup = function(row, button)
+				InviteUnit(InviteCharacterName);
+				self:Reset();
+				return true;
+			end
+			CreateARaid = function(row, button)
+				InviteUnit(InviteCharacterName);
+				C_Timer.After(0.8,function() ConvertToRaid(); end);
+				self:Reset();
+				return true;
+			end
+		else
+			CreateAGroup = function(row, button)
+				InviteUnit(InviteCharacterName);
+				self:Reset();
+				return true;
+			end
+			CreateARaid = function(row, button)
+				InviteUnit(InviteCharacterName);
+				C_Timer.After(0.8,function() ConvertToRaid(); end);
+				self:Reset();
+				return true;
 			end
 		end
 		
+		tinsert(options, app.CreateRawText("Create a Group", {	-- Create a Group
+			icon = 132331,
+			description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
+			priority = 20,
+			OnClick = CreateAGroup,
+			OnUpdate = function(data)
+				data.visible = not IsInGroup();
+				return true;
+			end,
+		}));
+		tinsert(options, app.CreateRawText("Create a Raid", {	-- Create a Raid
+			icon = 132331,
+			description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
+			priority = 20,
+			OnClick = CreateARaid,
+			OnUpdate = function(data)
+				data.visible = not IsInGroup();
+				return true;
+			end,
+		}));
+		
 		-- Raid Assistant Header
-		local raidassistant = {
-			text = "Raid Assistant",
+		local raidassistant = app.CreateRawText("Raid Assistant", {
 			icon = app.asset("WindowIcon_RaidAssistant"),
 			description = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
 			expanded = true,
@@ -969,7 +974,7 @@ app:CreateWindow("RaidAssistant", {
 				end
 				data.visible = true;
 			end
-		};
+		});
 		self:SetData(raidassistant);
 		self.Reset = function()
 			self:SetData(raidassistant);

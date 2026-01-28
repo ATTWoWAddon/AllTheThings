@@ -287,24 +287,38 @@ local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
 	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
 local CurrentDifficulties, BuildCurrentDifficulties;
 local CacheCooldownCurrentDifficulties, time = 0, time;
-if GetDungeonDifficultyID then
-	BuildCurrentDifficulties = function()
-		if IsInInstance() then
-			local diff = select(3, GetInstanceInfo()) or 0
-			if diff ~= 0 then
-				local d = { [CurrentDifficultyRemapper[diff] or diff] = true };
-				return d;
+if app.GameBuildVersion >= 20000 then
+	if app.GameBuildVersion >= 30000 then
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
 			end
-		end
 
-		-- While outside of a dungeon (such as at its entrance),
-		-- if the mini list shows difficulty headers, it should filter them
-		local d = {
-			[GetDungeonDifficultyID()] = true,
-			[GetRaidDifficultyID()] = true,
-			[GetLegacyRaidDifficultyID()] = true,
-		};
-		return d;
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			local d = {
+				[GetDungeonDifficultyID()] = true,
+				[GetRaidDifficultyID()] = true,
+				[GetLegacyRaidDifficultyID()] = true,
+			};
+			return d;
+		end
+	else
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
+			end
+
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			return { [GetDungeonDifficultyID()] = true };
+		end
 	end
 else
 	-- No API Access to difficulty APIs
@@ -312,8 +326,7 @@ else
 		if IsInInstance() then
 			local diff = select(3, GetInstanceInfo()) or 0
 			if diff ~= 0 then
-				local d = { [CurrentDifficultyRemapper[diff] or diff] = true };
-				return d;
+				return { [CurrentDifficultyRemapper[diff] or diff] = true };
 			end
 		end
 		return app.EmptyTable;

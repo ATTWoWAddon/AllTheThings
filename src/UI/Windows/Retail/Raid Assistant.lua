@@ -420,7 +420,9 @@ app:CreateWindow("RaidAssistant", {
 		self:SetData(raidassistant);
 		
 		-- Does Difficulty have some options to change?
-		self:AddEventHandler("OnCurrentDifficultiesChanged", self.Update);
+		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
+			self:Update();
+		end);
 
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...) DelayedCallback(self.Update, 0.5, self, true); end);
