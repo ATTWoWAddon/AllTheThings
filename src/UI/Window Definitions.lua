@@ -2191,7 +2191,7 @@ local function UpdateWindow(self, force, trigger)
 				-- only add this info row if there is actually nothing visible in the list
 				-- always a header row
 				-- print("any data",#self.Container,#rowData,#data)
-				if #rowData < 2 and not (app.ThingKeys[data.key] or self.ignoreNoEntries) then
+				if #rowData < 2 and not app.ThingKeys[data.key] then
 					rowData[#rowData + 1] = app.CreateRawText(L.NO_ENTRIES, {
 						OnClick = app.UI.OnClick.IgnoreRightClick,
 						preview = app.asset("Discord_2_128"),

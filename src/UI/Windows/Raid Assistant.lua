@@ -178,8 +178,6 @@ app:CreateWindow("RaidAssistant", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
 	OnInit = function(self, handlers)
-		self.ignoreNoEntries = true;
-
 		-- Setup Event Handlers and register for events
 		local updateWithTrigger = function()
 			self:Update(true);

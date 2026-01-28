@@ -533,7 +533,6 @@ app:CreateWindow("SoftReserves", {
 		end
 	end,
 	OnInit = function(self, handlers)
-		self.ignoreNoEntries = true;
 		-- Setup Event Handlers and register for events
 		handlers.CHAT_MSG_ADDON = function(self, ...)
 			CHAT_MSG_ADDON_HANDLER(...);
