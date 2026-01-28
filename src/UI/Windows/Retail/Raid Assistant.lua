@@ -109,7 +109,7 @@ app:CreateWindow("RaidAssistant", {
 			description = L.RAID_ASSISTANT_DESC,
 			visible = true,
 			back = 1,
-			OnClick = app.UI.OnClick.IgnoreClicks,
+			-- OnClick = app.UI.OnClick.IgnoreClicks,	-- too excessive!
 			g = {
 				app.CreateRawText(L.LOOT_SPEC_UNKNOWN, {
 					['title'] = L.LOOT_SPEC,
@@ -418,7 +418,7 @@ app:CreateWindow("RaidAssistant", {
 			},
 		})
 		self:SetData(raidassistant);
-		
+
 		-- Does Difficulty have some options to change?
 		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
 			self:Update();
