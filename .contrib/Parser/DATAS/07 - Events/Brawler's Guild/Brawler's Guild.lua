@@ -283,9 +283,152 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			["timeline"] = { ADDED_11_2_7 },
 		},{
 			ach(61466, {	-- The Best There Is
-				["crs"] = {
-					70751,	-- Card Trader Ami
-					70752,	-- Card Trader Leila
+				["_noautomation"] = true,
+				["groups"] = {	-- Challenge Card and Criteria/NPC names are different. Keeping the order of the Challenge Cards.
+					crit(109843, {	-- A Seagull
+						["providers"] = {
+							{ "i", 143794 },	-- Challenge Card: A Seagull
+							{ "n", 117207 },	-- A Seagull
+						},
+					}),
+					crit(109816, {	-- Akama
+						["providers"] = {
+							 { "i", 94184 },	-- Challenge Card: Akama
+							 { "n", 67588 },	-- Akama
+						},
+					}),
+					crit(109811, {	-- Blackmange
+						["providers"] = {
+							{ "i", 142026 },	-- Challenge Card: Blackmange
+							{ "n", 114902 },	-- Blackmange
+						},
+					}),
+					crit(109813, {	-- Blind Hero
+						["providers"] = {
+							 { "i", 97321 },	-- Challenge Card: Blind Hero
+							 { "n", 70794 },	-- Blind Hero
+						},
+					}),
+					crit(109834, {	-- Dark Summoner
+						["providers"] = {
+							 { "i", 97179 },	-- Challenge Card: Blind Hero
+							 { "n", 67678 },	-- Dark Summoner
+						},
+					}),
+					crit(109812, {	-- Deeken
+						["providers"] = {
+							 { "i", 94173 },	-- Challenge Card: Deeken
+							 { "n", 67451 },	-- Deeken
+						},
+					}),
+					crit(109810, {	-- Dominika
+						["providers"] = {
+							 { "i", 94172 },	-- Challenge Card: Dominika
+							 { "n", 67485 },	-- Dominika the Illusionist
+						},
+					}),
+					crit(109870, {	-- Fjoll
+						["providers"] = {
+							 { "i", 94175 },	-- Challenge Card: Fjoll
+							 { "n", 67596 },	-- Fjoll
+						},
+					}),
+					crit(109806, {	-- Fran & Riddoh
+						["providers"] = {
+							 { "i", 94164 },	-- Challenge Card: Fran & Riddoh
+							 { "n", 68297 },	-- Fran/Riddoh Controller
+						},
+					}),
+					crit(109808, {	-- Ixx
+						["providers"] = {
+							 { "i", 94168 },	-- Challenge Card: Ixx
+							 { "n", 68253 },	-- Ixx
+						},
+					}),
+					crit(109804, {	-- Johnny Awesome
+						["providers"] = {
+							{ "i", 142032 },	-- Challenge Card: Ixx
+							{ "n", 115058 },	-- Johnny Awesome
+						},
+					}),
+					crit(109800, {	-- Kirrawk
+						["providers"] = {
+							 { "i", 94163 },	-- Challenge Card: Kirrawk
+							 { "n", 67269 },	-- Kirrawk
+						},
+					}),
+					crit(109809, {	-- Leona
+						["providers"] = {
+							 { "i", 94171 },	-- Challenge Card: Leona
+							 { "n", 68377 },	-- Leona Earthwind
+						},
+					}),
+					crit(109805, {	-- Mama Stormstout
+						["providers"] = {
+							{ "i", 165709 },	-- Challenge Card: Mama Stormstout
+							{ "n", 145594 },	-- Mama Stormstout
+						},
+					}),
+					crit(109820, {	-- Millie Watt
+						["providers"] = {
+							 { "i", 94174 },	-- Challenge Card: Millie Watt
+							 { "n", 67591 },	-- Millie Watt
+						},
+					}),
+					crit(109802, {	-- Nibbleh
+						["providers"] = {
+							 { "i", 97283 },	-- Challenge Card: Nibbleh
+							 { "n", 70656 },	-- Nibbleh
+						},
+					}),
+					crit(109814, {	-- Proboskus
+						["providers"] = {
+							 { "i", 94176 },	-- Challenge Card: Proboskus
+							 { "n", 68252 },	-- Proboskus
+						},
+					}),
+					crit(109835, {	-- Sanoriak
+						["providers"] = {
+							 { "i", 94167 },	-- Challenge Card: Sanoriak
+							 { "n", 67268 },	-- Sanoriak
+						},
+					}),
+					crit(109831, {	-- T440 Dual-Mode Robot
+						["providers"] = {
+							 { "i", 97559 },	-- Challenge Card: T440 Dual-Mode Robot
+							 { "n", 70983 },	-- T440 Dual-Mode Robot
+						},
+					}),
+					crit(109803, {	-- Thog Hammerspace
+						["providers"] = {
+							{ "i", 166809 },	-- Challenge Card: Thog Hammerspace
+							{ "n", 149717 },	-- Thog Hammerspace
+						},
+					}),
+					crit(109807, {	-- Unguloxx
+						["providers"] = {
+							 { "i", 94186 },	-- Challenge Card: Unguloxx
+							 { "n", 68250 },	-- Unguloxx
+						},
+					}),
+					crit(109815, {	-- Vian
+						["providers"] = {
+							 { "i", 93824 },	-- Challenge Card: Vian
+							 { "n", 67579 },	-- Vian the Volatile
+						},
+					}),
+					crit(109807, {	-- Vishas
+						["providers"] = {
+							 { "i", 94161 },	-- Challenge Card: Vishas
+							 { "n", 67572 },	-- Dungeon Master Vishas
+						},
+					}),
+					crit(109821, {	-- Yikkan Izu
+						["providers"] = {
+							 { "i", 94183 },	-- Challenge Card: Yikkan Izu
+							 { "n", 68256 },	-- Yikkan Izu
+						},
+					}),
 				},
 			}),
 			ach(61413, {	-- The First Rule of Brawler's Guild
