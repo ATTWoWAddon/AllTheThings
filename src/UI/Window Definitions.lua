@@ -2412,9 +2412,9 @@ local function BuildWindow(suffix)
 	window:HookScript("OnEvent", function(o, e, ...)
 		local handler = handlers[e];
 		if handler then
-			handler(window, ...);
+			handler(o, ...);
 		else
-			Callback(window, window.Update)
+			Callback(o.Update, o)
 		end
 	end);
 
@@ -2851,20 +2851,9 @@ function app:CreateWindow(suffix, definition)
 			-- This window still needs to be loaded right away
 			return app:GetWindow(suffix);
 		elseif definition.Commands then
-			local onCommand;
-			if definition.OnCommand then
-				onCommand = function(cmd)
-					-- TODO: Crieve fix this 'window' param, it's not real!
-					if not definition.OnCommand(window, cmd) then
-						app:GetWindow(suffix):Toggle();
-					end
-				end
-			else
-				onCommand = function(cmd)
-					app:GetWindow(suffix):Toggle();
-				end
-			end
-			app.AddSlashCommands(definition.Commands, onCommand)
+			app.AddSlashCommands(definition.Commands, function(cmd)
+				app:GetWindow(suffix):ProcessCommand(cmd);
+			end);
 			local primaryCommand = "/" .. definition.Commands[1];
 			app.ChatCommands.Help[primaryCommand:lower()] = {
 				definition.UsageText or ("Usage: " .. primaryCommand),
