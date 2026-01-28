@@ -3435,13 +3435,14 @@ api.BuildDynamicCategorySummaryForSearchResults = function(searchResults)
 	local dcsRoot = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
 		OnUpdate = OnUpdateForDynamicCategoryHeader,
-		SortType = "name",
+		SortType = "text",
 		g = g
 	});
 	
 	-- Loop through the dynamic headers and insert them into the "g" field of dynamic category
 	for _, template in ipairs(DynamicCategoryHeaders) do
 		local header = app.CloneClassInstance(app.CreateRawText(template.name, template));
+		header.SortType = "name";
 		header.parent = dcsRoot
 		g[#g + 1] = app.DelayLoadedObject(CreateTypeGroupsForHeader, "text", 
 			TypeGroupOverridesForDynamicCategoryHeader, header, searchResults)
