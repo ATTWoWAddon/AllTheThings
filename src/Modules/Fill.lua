@@ -285,6 +285,8 @@ app.AddEventHandler("OnStartup", function()
 	end
 	app.AddEventHandler("Fill.OnActivateFiller", CheckRebuildMinilist)
 	app.AddEventHandler("Fill.OnDeactivateFiller", CheckRebuildMinilist)
+
+	SyncFillPriorityFromSettings()
 end)
 
 -- TODO: how to handle agnostic Filler priorities?
