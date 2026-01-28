@@ -311,7 +311,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					crit(109834, {	-- Dark Summoner
 						["providers"] = {
-							 { "i", 97179 },	-- Challenge Card: Blind Hero
+							 { "i", 94179 },	-- Challenge Card: Blind Hero
 							 { "n", 67678 },	-- Dark Summoner
 						},
 					}),
@@ -1110,7 +1110,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #if BFA
 				["description"] = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
 				-- #else
-				["description"] = "Awarded for winning a Brawl.",
+				["description"] = "Awarded for winning a Random Brawl.",
 				-- #endif
 			}),
 			i(164938, {	-- G.G. Gearbox
