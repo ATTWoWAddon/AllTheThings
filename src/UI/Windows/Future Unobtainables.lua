@@ -1,6 +1,5 @@
 -- App locals
 local _, app = ...;
-if app.IsRetail then return; end
 local L = app.L;
 local tinsert, math_floor
 	= tinsert, math.floor;
@@ -99,7 +98,7 @@ app:CreateWindow("Future Unobtainables", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			app.CreateRawText("Exclude Non-Collectibles", {	-- Exclude Non-Collectibles Button
+			app.CreateRawText("Exclude Non-Collectibles", {
 				icon = 134941,
 				description = "Press this button to toggle excluding non-collectible items such as Thrown weapons and Relic items.",
 				visible = true,

@@ -27,7 +27,6 @@
 	<Script file="Find.lua"/>
 	<Script file="Flight Paths.lua"/>
 	<Script file="Future Unobtainables.lua"/>
-	<Script file="Retail/Future Unobtainables.lua"/>
 	<Script file="Heirlooms.lua"/>
 	<Script file="Illusions.lua"/>
 	<Script file="Import.lua"/>
