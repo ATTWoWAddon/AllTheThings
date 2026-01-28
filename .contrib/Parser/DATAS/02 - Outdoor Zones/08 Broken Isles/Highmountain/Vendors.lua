@@ -6,6 +6,22 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(VENDORS, {
+				n(108537, {	-- Crafty Palu <Repairs>
+					["coord"] = { 41.6, 10.6, HIGHMOUNTAIN },
+					["groups"] = {
+						i(258219, {	-- Driftwood Barrel
+							["timeline"] = { ADDED_12_0_0 },
+						}),
+						i(258221, { 	-- Driftwood Junk Pile (DECOR!)
+							["sourceQuest"] = 40230,	-- Oh, the Clawdacity!
+							["timeline"] = { ADDED_12_0_0 },
+						}),
+						i(258223, { 	-- Murloc's Wind Chimes (DECOR!)
+							["sourceAchievement"] = 11699,	-- Grand Fin-ale
+							["timeline"] = { ADDED_12_0_0 },
+						}),
+					},
+				}),
 				n(93975, {	-- Leyweaver Yaphisteia
 					["coord"] = { 29.4, 26.2, HIGHMOUNTAIN },
 					["groups"] = {

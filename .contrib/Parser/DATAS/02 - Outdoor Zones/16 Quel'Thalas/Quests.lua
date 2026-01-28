@@ -401,41 +401,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		header(HEADERS.Achievement, 61916, {	-- Rage of the Ren'dorei
-			["lore"] = "The Void Elf Leona has sought the knowledge of the Illidari Demon Hunters as a novel means to harness the Void.",
-			["timeline"] = { ADDED_12_0_0 },
-			["groups"] = {
-				q(92630, {	-- The Pursuit Continues
-					["qgs"] = {
-						259942,	-- Messenger Aelor
-						259951,	-- Messenger Aelor
-					},
-					["coords"] = {
-						{ 44.4, 50.3, DORNOGAL },
-						{ 50.5, 16.6, STORMWIND_CITY },
-						--{ XX.X, YY.Y, ORGRIMMAR },
-						{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-					},
-				}),
-				q(92631, {	-- Abhorrent Gauntlet
-					["sourceQuest"] = 92630,	-- The Pursuit Continues
-					["qg"] = 252617,	-- Allari the Souleater
-					["coord"] = { 65.0, 40.6, KARESH },
-					["groups"] = {
-						i(266128),	-- Aberration Part (QI!)
-						i(257715),	-- Dense Hide Scrap (QI!)
-						i(258295),	-- Jagged Fang (QI!)
-						i(257714),	-- Spiny Protrusion (QI!)
-						i(253387),	-- Unmarred Eyeball (QI!)
-					},
-				}),
-				q(92632, {	-- Trial of Wrath
-					["sourceQuest"] = 92631,	-- Abhorrent Gauntlet
-					["qg"] = 252617,	-- Allari the Souleater
-					["coord"] = { 65.0, 40.6, KARESH },
-				}),
-			},
-		}),
 	}),
 })));
 

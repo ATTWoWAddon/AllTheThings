@@ -34,20 +34,35 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		n(REWARDS, {
 			currency(COMMUNITY_COUPONS),
 		}),
-		n(QUESTS, {
+		-- "Weekly" Quests (these actually reset more often but not necessarily daily)
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		},{
+			-- TODO: Separate quests by endeavor
 			q(92429, {	-- Alternative Skinning
-				["qg"] = 254255,	-- Hera Fer
-				-- ["isWeekly"] = true, ?
+				["qgs"] = {
+					251056, -- Gerath
+					254255,	-- Hera Fer
+				},
 				["coords"] = {
-					{ 52.9, 37.6, FOUNDERS_POINT },
+					{ 52.9, 39.1, FOUNDERS_POINT },
 					{ 54.2, 56.1, RAZORWIND_SHORES },
 				},
 				["groups"] = { i(251632) },	-- Biological Vacuum (QI!)
 			}),
 			q(92417, {	-- Farm to Table
-
+				["qg"] = 250970, -- Yolan Hidor
+				["coords"] = {
+					{ 53.2, 38.0, FOUNDERS_POINT },
+					-- { X, Y, RAZORWIND_SHORES },
+				},
 			}),
 			q(92402, {	-- Magical Touch
+				["qg"] = 254536, -- Gelen Jord
+				["coords"] = {
+					{ 52.1, 38.1, FOUNDERS_POINT },
+					-- { X, Y, RAZORWIND_SHORES },
+				},
 				["groups"] = {
 					i(251273),	-- Slightly Magical Crystal (QI!)
 					i(251492),	-- Slightly Magical Crystal Locator (QI!)
@@ -55,7 +70,6 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 			}),
 			q(92443, {	-- Reverse Herb Farming
 				["qg"] = 254255,	-- Hera Fer
-				--["isWeekly"] = true, ?
 				["coords"] = {
 					{ 52.9, 37.6, FOUNDERS_POINT },
 					{ 54.2, 56.1, RAZORWIND_SHORES },
@@ -63,12 +77,40 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 			}),
 			q(92445, {	-- Smelting for Two
 				["qg"] = 251185,	-- Jaren Holdart
-				--["isWeekly"] = true, ?
-				["coord"] = { 54.1, 57.0, RAZORWIND_SHORES },
+				["coords"] = {
+					{ 52.5, 38.4, FOUNDERS_POINT },
+					{ 54.1, 57.0, RAZORWIND_SHORES },
+				},
 			}),
-		}),
+			-- Niffin
+			q(94654),	-- Snail Mail - Apple
+			q(94660),	-- Snail Mail - Bouquet of Fungi
+			q(94662),	-- Snail Mail - Caramel
+			q(94664),	-- Snail Mail - Caviar
+			q(94641),	-- Snail Mail - Cedarwood
+			q(94663),	-- Snail Mail - Chocolatey
+			q(94645),	-- Snail Mail - Cinnamon
+			q(94646),	-- Snail Mail - Clove
+			q(94650),	-- Snail Mail - Coconut
+			q(94661),	-- Snail Mail - Crushed up Granite
+			q(94657),	-- Snail Mail - Dewy Mold
+			q(94648),	-- Snail Mail - Dreamfoil
+			q(94642),	-- Snail Mail - Fire Leaf
+			q(94644),	-- Snail Mail - Fjarnskaggl
+			q(94653),	-- Snail Mail - Foxflower
+			q(94665),	-- Snail Mail - Fresh-Cut Grass
+			q(94651),	-- Snail Mail - Honey
+			q(94652),	-- Snail Mail - Just-Rained
+			q(94659),	-- Snail Mail - Nerubian Hootch Wine
+			q(94647),	-- Snail Mail - Nutmeg
+			q(94655),	-- Snail Mail - Peachy
+			q(94643),	-- Snail Mail - Roasted Ham
+			q(94658),	-- Snail Mail - Scent of the Wind
+			q(94649),	-- Snail Mail - Seven Day Old Sweat
+			q(94656),	-- Snail Mail - Soapy
+			q(94640),	-- Snail Mail - Writhebark
+		})),
 		n(TREASURES, {
-
 		}),
 		n(VENDORS, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>
@@ -162,6 +204,31 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 					i_DecorCoupons(250695, 10),	-- Replica Grathardormu's Hammer
 					i_DecorCoupons(250700, 5),	-- Roasted Ram Leg
 					i_DecorCoupons(250703, 10),	-- War Creche Teaching Crystal
+				},
+			}),
+			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
+				["coords"] = {
+					-- { XX, YY, FOUNDERS_POINT },
+					{ 54.1, 56.0, RAZORWIND_SHORES },
+				},
+				["groups"] = {
+					i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
+					i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
+					i_DecorCoupons(254408, 2),	-- Lively Pistons (DECOR!)
+					i_DecorCoupons(254400, 2),	-- Triple-Tested Steam Valve (DECOR!)
+					i_DecorCoupons(254410, 5),	-- Blue-Glo Lantern (DECOR!)
+					i_DecorCoupons(254409, 2),	-- Sturdy Drive Belt (DECOR!)
+					i_DecorCoupons(254401, 5),	-- Mad Science BLueprints (DECOR!)
+					i_DecorCoupons(254404, 2),	-- Sticky Lever (DECOR!)
+					i_DecorCoupons(254405, 2),	-- Dual-Action Turbo Pro Lever (DECOR!)
+					i_DecorCoupons(254412, 2),	-- Well-Oiled Machine Cog (DECOR!)
+					i_DecorCoupons(254402, 5),	-- Safety Electrical Cabling (DECOR!)
+					i_DecorCoupons(254403, 10),	-- Machagon Control Console (DECOR!)
+					i_DecorCoupons(254413, 2),	-- Jury-Rigged Electrical Couple (DECOR!)
+					i_DecorCoupons(254766, 10),	-- Ineffective Mechanical Privacy Screen (DECOR!)
+					i_DecorCoupons(254411, 10),	-- Z-205 Mechanical Device (DECOR!)
+					i_DecorCoupons(254416, 15),	-- Galvanic Storage and Maintenance Device (DECOR!)
+					i_DecorCoupons(254415, 20),	-- Miniature Charging Station (DECOR!)
 				},
 			}),
 		}),

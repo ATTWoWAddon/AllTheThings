@@ -2126,12 +2126,16 @@ local AccountWideQuestsDB = {
 	91948,	-- Ensemble: Capes of the Sudden Eclipse
 	91950,	-- Ensemble: Inquisitor's All-Seeing Madness
 	91951,	-- Ensemble: Shawls of Channeled Fury / Ensemble: Living Weapon's Capes
-	95166,	-- Pet the Dog (245551)
 	91968,	-- Welcome Home
 	91969,	-- Time to Decorate
 	92031,	-- Meet the Vandals
 	92078,	-- A New Recipe!
+	92402,	-- Magical Touch
+	92417,	-- Farm to Table
+	92429,	-- Alternative Skinning
 	92437,	-- Decor Treasure Hunt
+	92443,	-- Reverse Herb Farming
+	92445,	-- Smelting for Two
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92573,	-- Sturdy Chest
@@ -2253,6 +2257,7 @@ local AccountWideQuestsDB = {
 	94415,	-- Plumbing the Void
 	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
+	95166,	-- Pet the Dog (245551)
 	-- #ENDIF
 }
 

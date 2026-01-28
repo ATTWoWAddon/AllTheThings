@@ -10,11 +10,16 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	}),
 	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
-			ach(61430),	-- Crunching for Cultists
-			ach(42300, {	-- Two Minutes to Midnight (automated)
-				title(642),	-- <Name>, Thorn of Twilight
-				i(246594),	-- Light-Forged Mechsuit (MOUNT!)
-			}),
+			["maps"] = { TWILIGHT_HIGHLANDS },
+			["groups"] = {
+				ach(61430, {	-- Crunching for Cultists
+					["coord"] = { 50.3, 89.4, TWILIGHT_HIGHLANDS },
+				}),
+				ach(42300, {	-- Two Minutes to Midnight (automated)
+					title(642),	-- <Name>, Thorn of Twilight
+					i(246594),	-- Light-Forged Mechsuit (MOUNT!)
+				}),
+			},
 		}),
 		n(QUESTS, {
 			q(90759, {	-- The Cult Within [A]
@@ -108,73 +113,91 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isRepeatable"] = true,
+				["isDaily"] = true,
 			}),
 			q(91795, {	-- Disrupt the Call
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isRepeatable"] = true,
+				["isDaily"] = true,
 			}),
 		}),
 		n(RARES, {
 			-- Several rares share Spawn Points. Location depends on which Rare is conducting the Ritual.
 			n(246462, {	-- Archbishop Benedictus
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
+				["questID"] = 91473,
 			}),
 			n(246343, {	-- Asira Dawnslayer
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 91472,
 			}),
 			n(237853, {	-- Berg the Spellfist
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
+				["questID"] = 94507,
 			}),
 			n(246478, {	-- Commander Ix'vaarha
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 94517,
 			}),
 			n(237997, {	-- Corla, Herald of Twilight
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
+				["questID"] = 91470,
 			}),
 			n(246840, {	-- Executioner Lynthelma
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
+				["questID"] = 94508,
 			}),
 			n(246549, {	-- Ez'Haadosh the Liminality
 				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
+				["questID"] = 91469,
 			}),
 			n(246565, {	-- Gustavan, Herald of the End
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
+				["questID"] = 94509,
 			}),
 			n(246471, {	-- Ix the Bloodfallen
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 94516,
 			}),
 			n(246566, {	-- Mirrorvise
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 94511,
 			}),
 			n(246577, {	-- Nedrand the Eyegorger
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 91474,
 			}),
 			n(246460, {	-- Ray of Putrescence
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
+				["questID"] = 91468,
 			}),
 			n(246572, {	-- Redeye the Skullchewer
 				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
+				["questID"] = 94513,
 			}),
 			n(246558, {	-- Saligrum the Observer
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
+				["questID"] = 94512,
 			}),
 			n(246559, {	-- Sharfadi, Bulwark of the Night
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
+				["questID"] = 94518,
 			}),
 			n(246844, {	-- T'aavihan the Unbound
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
+				["questID"] = 94513,
 			}),
 			n(253378, {	-- Voice of the Eclipse
 				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
 			}),
 			n(246272, {	-- Void Zealot Devinda
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 91471,
 			}),
 			n(246578, {	-- Voidclaw Hexathor
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
+				["questID"] = 94510,
 			}),
 		}),
 		n(REWARDS, {
@@ -292,12 +315,16 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(WORLD_QUESTS, sharedData({
 			["sourceQuest"] = 90768,	-- Cult It Out
+			["isWorldQuest"] = true,
 		}, {
 			q(86959, {	-- Bloodeye Prisoners
 				["coord"] = { 40.8, 66.7, TWILIGHT_HIGHLANDS },
 			}),
 			q(91779, {	-- Combat Training for Cultists
 				["coord"] = { 51.3, 71.3, TWILIGHT_HIGHLANDS },
+			}),
+			q(91759, {	-- Don't Bring That Here
+				["coord"] = { 58.9, 12.3, TWILIGHT_HIGHLANDS },
 			}),
 			q(86957, {	-- Drakgor's Revenge
 				["coord"] = { 40.6, 17.5, TWILIGHT_HIGHLANDS },

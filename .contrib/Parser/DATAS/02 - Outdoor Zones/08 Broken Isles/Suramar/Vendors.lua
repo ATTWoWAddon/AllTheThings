@@ -377,7 +377,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(253434, {	-- Sileas Duskvine <Irongrove Goods>
-					-- TODO ["coord"] = { ,, SURAMAR },
+					["coord"] = { 26.2, 32.2, SURAMAR },
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(245701, {	-- Elven Round Table (DECOR!)

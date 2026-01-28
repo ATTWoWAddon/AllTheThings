@@ -90,7 +90,7 @@ h(-12,{rwp=120001,g={
 ach(42190,{providers={a[6]},rwp=120000,u=2,g={
 mm(238182,{b=1,questID=88819,u=2})}}),
 ach(42193,{
-s(292831,245529,{f=2,lvl=60}),
+s(292831,245529,{f=2,lvl=60,rwp=120000,u=2}),
 crit(105274,{achID=42193,id=1,providers={a[5]}}),
 crit(105275,{achID=42193,id=2,providers={a[6]}}),
 crit(105911,{achID=40438,awp=110000,id=6})}),

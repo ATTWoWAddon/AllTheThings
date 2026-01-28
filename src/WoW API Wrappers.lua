@@ -47,6 +47,9 @@ local function AssignAPIWrapper(name, ...)
 	print("No valid function for", name)  -- If no valid function is found, print an error message.
 end
 
+-- System Level APIs
+AssignAPIWrapper("issecretvalue", issecretvalue, function() return false; end);
+
 -- ChatInfo APIs
 local C_ChatInfo = C_ChatInfo
 AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, SendChatMessage);
