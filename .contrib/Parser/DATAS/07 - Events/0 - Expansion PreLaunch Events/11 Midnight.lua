@@ -165,7 +165,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["questID"] = 94511,
 			}),
 			n(246577, {	-- Nedrand the Eyegorger
-				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
+				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
 				["questID"] = 91474,
 			}),
 			n(246460, {	-- Ray of Putrescence
