@@ -1234,7 +1234,7 @@ local function RowOnEnter(self)
 			else
 				-- if a link fails to render a tooltip, it clears the tooltip and the owner
 				-- so we have to re-assign it here for it to use :Show()
-				tooltip:SetOwner(self, owner);
+				tooltip:SetOwner(self, anchor);
 			end
 		end
 
