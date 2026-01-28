@@ -428,12 +428,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						--["provider"] = { "o", XX },	-- Agitated Tome
 						["coord"] = { 41.7, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
-					q(93372, {	-- Delver's Call: Shadow Enclave
-						--["sourceQuests"] = { xx },	-- xx
-						--["provider"] = { "o", XX },	-- The Shadow Enclave
-						["coord"] = { 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-					}),
-					---
 					q(90669, {	-- Gold is Gold
 						--["sourceQuests"] = { xx },	-- xx
 						["provider"] = { "n", 243290 },	-- Sarvi

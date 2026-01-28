@@ -2598,7 +2598,7 @@ i(243200);	-- Slightly Smooth Scales
 i(243216);	-- Snapped Antennae
 
 ------------------
--- PATCH 12.0.0 --
+-- PATCH 12.0.X --
 ------------------
 i(238482);	-- A Whole Lot of Nothing
 i(263517);	-- Ancient Text
@@ -2671,9 +2671,11 @@ i(238944);	-- Torn Material
 i(238479);	-- Torn Caster's Net
 i(260614);	-- Unrecognizable Organ
 i(260676);	-- Unremarkable Crystal
+i(260649);	-- Vibrant Vortex
 i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
 i(260615);	-- Void Dust Residue
+i(260677);	-- Void Flakes
 i(260645);	-- Water Filled Organ
 
 -- Profession

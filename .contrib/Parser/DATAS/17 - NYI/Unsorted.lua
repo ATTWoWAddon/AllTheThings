@@ -1967,7 +1967,6 @@ root(ROOTS.Unsorted, {
 			i(251788),	-- Gift of Light
 			i(251789),	-- Consecrated Chalice
 			i(251790),	-- Desecrated Chalice
-			i(251791),	-- Holy Retributor's Order
 			i(251792),	-- Glorious Crusader's Keepsake
 			i(251793),	-- Endosymbiotic Mycelium
 			i(251794),	-- Gris-gris of Confidence
@@ -2049,8 +2048,6 @@ root(ROOTS.Unsorted, {
 			-- Delve
 			i(253226),	-- Restored Coffer Key
 			i(253342),	-- Beacon of Hope \\ [DNT] Shrieking Quartz
-			-- m+
-			i(253245),	-- Cracked Keystone
 
 			-- Engi
 			i(253302),	-- Malleable Wireframe
@@ -2770,7 +2767,6 @@ root(ROOTS.Unsorted, {
 			i(256982),	-- Rootspeaker's Trunk \\ [PH] WQ - Armor - Mail CHEST - A
 			i(256984),	-- Deepvine Chestwrap \\ [PH] WQ - Armor - Cloth CHEST - A
 			i(256986),	-- Circlet of Encroaching Shadow \\ [PH] WQ - Accessory - FINGER - A
-			i(256987),	-- Ironvine Bulwark \\ [PH] WQ - Weapon - Shield STRINT - A
 			i(256988),	-- Lumenbloom Lantern \\ [PH] WQ - Weapon - Offhand INT - A
 			i(256989),	-- Bladed Rootwarden's Stave \\ [PH] WQ - Weapon - 2H Staff AGI - A
 			i(256991),	-- Vinewrapped Mallet \\ [PH] WQ - Weapon - 1H Mace STR - A
@@ -2946,9 +2942,6 @@ root(ROOTS.Unsorted, {
 			i(258030),	-- Famed Preyseeker's Knapsack
 			i(258031),	-- Vaunted Preyseeker's Knapsack
 			i(258032),	-- Ensemble: Skilled Preyseeker's Attire
-
-			-- QI
-			i(258034),	-- Unstable Arcana
 
 			-- tailoring
 			i(258033),	-- Pattern: Arcanoweave Lining
@@ -3709,7 +3702,6 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(262970),	-- Ominous Tome \\ Ominus Tome
 			i(262973),	-- Reliquary Expedition Notes \\ Relequary Expedition Notes
-			i(262983),	-- Archival Magnimace
 			i(262984),	-- Reliquary Expedition Bag \\ Relequary Expedition Bag
 			i(262989),	-- Focusight Relic Mace
 			i(262990),	-- Sin'dorei Arcane Manuscript
@@ -3824,17 +3816,6 @@ root(ROOTS.Unsorted, {
 			i(263396),	-- Ensemble: Elite Galactic Gladiator's Warrior Armor
 			i(263397),	-- Arsenal: Elite Galactic Gladiator's Weapons
 			-- Misc
-			i(263348),	-- Purple Is The New Black
-			i(263350),	-- Harbringer Fan Fiction
-			i(263354),	-- Filling the Void in Your Heart
-			i(263361),	-- Chicken Soup for the Soulless \\ Chicken Soup for the Souless
-			i(263368),	-- Armageddon and You - A Beginner's Guide to Thriving in the Apocalypse
-			i(263373),	-- You Can't Believe It's Not Void
-			i(263377),	-- Xal-a-Pal
-			i(263379),	-- Personal Advertising Platform
-			i(263380),	-- Recruitment Pamphlets
-			i(263381),	-- Xal'atath Wall Scrolls
-			i(263382),	-- Twilight Material
 
 			-- Cahce
 			i(263400),	-- Cache of Delver's Spoils
@@ -4319,7 +4300,6 @@ root(ROOTS.Unsorted, {
 			i(264269),	-- Rutaani Bird Perch
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
 			i(264329),	-- Amani Dining Table
-			i(264330),	-- Amani Hanging Brazier
 			i(264333),	-- Amani Incense Burner
 			i(264342),	-- Cosmic Void Cache
 			i(264350),	-- Carved Idol of Akil'zon, Loa of Victory \\ Carved Idol of Akil'zon
@@ -4605,7 +4585,6 @@ root(ROOTS.Unsorted, {
 			i(260637),	-- Rotting Insect Eggs
 			i(260640),	-- Crooked Bird Talons
 			i(260644),	-- Lightbloom Bark
-			i(260649),	-- Vibrant Vortex
 			i(260654),	-- Abrasive Sand
 			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs
@@ -4613,7 +4592,6 @@ root(ROOTS.Unsorted, {
 			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
 			i(260675),	-- Luminous Seeds
-			i(260677),	-- Void Flakes
 			i(260678),	-- Sharp Obsidian Chunk
 			i(260679),	-- Fleshless Bone
 			i(260680),	-- Nesting Materials
@@ -4811,7 +4789,6 @@ root(ROOTS.Unsorted, {
 			i(267235),	-- Boon of Vitality
 			i(267236),	-- Boon of Speed
 			i(267240),	-- Boon of Fortitude
-			i(267241),	-- Boon of Abstinence
 			i(267242),	-- Boon of Speed
 			i(267243),	-- Boon of Vitality
 

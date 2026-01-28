@@ -121,6 +121,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--hqt(92760),	-- Level 12 (not even sure what level she was)
 		--hqt(92761),	-- Level 13 (not even sure what level she was)
 		--hqt(92762),	-- Level 14 (She was level 13, actually, according to notes)
+		--hqt(92775),	-- Level 27 (she was actually level 27), also it seems like questIDs keep flagging but not reported in-game?
+		--hqt(92776),	-- Level 28
 	}),
 	n(QUESTS, {
 		q(93784, {	-- A Gnawing Void of Curiosity
@@ -357,22 +359,39 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	m(SUNKILLER_SANCTUM, {
 		--["icon"] = ,
 		--["coord"] = { X, Y, MAPID },
-		--["maps"] = {},
+		["maps"] = { 2571 },	-- Lower Sanctum
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93427, {	-- Delver's Call: Sunkiller Sanctum
+					["provider"] = { "o", 612354 },	-- Sunkiller Sanctum
+					["coord"] = { 63.4, 34.8, SUNKILLER_SANCTUM },
+				}),
 			}),
 			n(TREASURES, {
+				o(618280, {	-- Sturdy Chest
+					["coord"] = { 60.1, 40.8, 2571 },
+					["questID"] = 94024,
+				}),
+				o(618294, {	-- Sturdy Chest
+					["coord"] = { 49.7, 50.6, 2571 },
+					["questID"] = 94043,
+				}),
+				o(618293, {	-- Sturdy Chest
+					["coord"] = { 38.1, 49.0, SUNKILLER_SANCTUM },
+					["questID"] = 94042,
+				}),
+				---o(, {	-- Sturdy Chest
+				---	["coord"] = { x, y, SUNKILLER_SANCTUM },
+				---	["questID"] = ,
+				---}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264330),	-- Amani Hanging Brazier (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -456,25 +475,46 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	m(THE_SHADOW_ENCLAVE, {
 		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
-		--["maps"] = {},
+		["coord"] = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93372, {	-- Delver's Call: Shadow Enclave
+					["provider"] = { "o", 611933 },	-- The Shadow Enclave
+					["coords"] = {
+						{ 29.2, 73.6, THE_SHADOW_ENCLAVE },
+						{ 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },	-- alpha data / outdoor
+					},
+				}),
+				filter(MISC, {
+					i(263368),	-- Armageddon and You - A Beginner's Guide to Thriving in the Apocalypse
+					i(263361),	-- Chicken Soup for the Soulless
+					i(263350),	-- Harbringer Fan Fiction
+					i(263348),	-- Purple Is The New Black
+					i(263382),	-- Twilight Material
+					i(263377),	-- Xal-a-Pal
+					i(263381),	-- Xal'atath Wall Scrolls
+					i(263373),	-- You Can't Believe It's Not Void
+					--didn't saw it, but they probably exist here too
+					--i(263354),	-- Filling the Void in Your Heart
+					--i(263379),	-- Personal Advertising Platform
+					--i(263380),	-- Recruitment Pamphlets
+				}),
 			}),
 			n(TREASURES, {
+				o(618111, {	-- Sturdy Chest
+					["coord"] = { 54.7, 48.5, THE_SHADOW_ENCLAVE },
+					["questID"] = 94002,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
 				}),
-				filter(MISC, {
+				filter(COSMETIC, {
+					i(262983),	-- Archival Magnimace (COSMETIC!)
 				}),
 			}),
 		},

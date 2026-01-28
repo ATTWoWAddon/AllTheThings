@@ -39,11 +39,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(256965),	-- Steelbark Vambraces
 			}),
 			filter(TRINKET_F, {
+				i(251791),	-- Holy Retributor's Order
 				i(251782),	-- Withered Saptor's Paw
 			}),
 		}),
 		n(WEAPONS, {
 			i(257016),	-- Deep Forest Hacker
+			i(256987),	-- Ironvine Bulwark
 			i(256990),	-- Verdant Tracker's Edge
 		}),
 	}),
