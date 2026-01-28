@@ -186,7 +186,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			n(246844, {	-- T'aavihan the Unbound
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
-				["questID"] = 94513,
+				["questID"] = 94514,
 			}),
 			n(253378, {	-- Voice of the Eclipse
 				--["coord"] = { X, Y, TWILIGHT_HIGHLANDS },
