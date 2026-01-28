@@ -47,7 +47,6 @@
 	<Script file="Professions.lua"/>
 	<Script file="Race Specific Things.lua"/>
 	<Script file="Raid Assistant.lua"/>
-	<Script file="Retail/Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
 	<Script file="Retail/Random.lua"/>
 	<Script file="Removed From Game.lua"/>

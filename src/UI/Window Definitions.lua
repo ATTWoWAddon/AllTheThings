@@ -2284,6 +2284,9 @@ local FieldDefaults = {
 		self.__Runner = Runner
 		return Runner
 	end,
+	OnEvent = function(self, e, ...)
+		Callback(self.Update, self);
+	end,
 	
 	-- Automatic Opening Opt-In Methods
 	GetShouldAutomaticallyOpen = GetShouldAutomaticallyOpen,
@@ -2409,12 +2412,13 @@ local function BuildWindow(suffix)
 	};
 	window:RegisterEvent("PLAYER_LOGOUT");
 	if definition.Debugging then window:SetScript("OnEvent", OnEventDebugging); end
+	local onEvent = window.OnEvent;
 	window:HookScript("OnEvent", function(o, e, ...)
 		local handler = handlers[e];
 		if handler then
 			handler(o, ...);
 		else
-			Callback(o.Update, o)
+			onEvent(o, e, ...);
 		end
 	end);
 

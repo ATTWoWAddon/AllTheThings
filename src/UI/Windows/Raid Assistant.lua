@@ -1,25 +1,29 @@
 -- App locals
 local _, app = ...;
-if app.IsRetail then return; end
+local L = app.L;
 
 -- Global locals
-local ipairs, tinsert, pairs, wipe
-	= ipairs, tinsert, pairs, wipe;
-local C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo =
-	  C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo;
-local IsInGroup, IsInInstance, ResetInstances =
-	  IsInGroup, IsInInstance, ResetInstances;
-local GetInstanceInfo, ResetInstances, UnitIsGroupLeader =
-	  GetInstanceInfo, ResetInstances, UnitIsGroupLeader;
-local GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID =
-	  GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
-local GetLootSpecialization, GetNumSpecializations, GetSpecializationInfoByID =
-	  GetLootSpecialization, GetNumSpecializations, GetSpecializationInfoByID;
-local GetActiveTalentGroup, IsAllowedToUserTeleport, IsInLFGDungeon, LFGTeleport =
-	  GetActiveTalentGroup, IsAllowedToUserTeleport, IsInLFGDungeon, LFGTeleport;
+local coroutine, ipairs, pairs, select, tinsert, wipe
+	= coroutine, ipairs, pairs, select, tinsert, wipe;
+local C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo
+	= C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo;
+local GetInstanceInfo, ResetInstances, UnitIsGroupLeader, InCombatLockdown
+	= GetInstanceInfo, ResetInstances, UnitIsGroupLeader, InCombatLockdown;
+local GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
+	= GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
+local GetLootSpecialization, GetNumSpecializations, GetSpecializationInfoByID
+	= GetLootSpecialization, GetNumSpecializations, GetSpecializationInfoByID;
+local IsInGroup, IsInInstance, IsInLFGDungeon, IsAllowedToUserTeleport, LFGTeleport
+	= IsInGroup, IsInInstance, IsInLFGDungeon, IsAllowedToUserTeleport, LFGTeleport;
 local C_LFGList_GetActiveEntryInfo = C_LFGList and C_LFGList.GetActiveEntryInfo;
 local C_LFGList_RemoveListing = C_LFGList and C_LFGList.RemoveListing;
 local C_Scenario_IsInScenario = C_Scenario and C_Scenario.IsInScenario;
+
+local Callback = app.CallbackHandlers.Callback;
+local DelayedCallback = app.CallbackHandlers.DelayedCallback;
+local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
+
+-- WoW API
 local GetSpecialization = app.WOWAPI.GetSpecialization;
 local GetSpecializationInfo = app.WOWAPI.GetSpecializationInfo;
 local GetLootMethod = app.WOWAPI.GetLootMethod;
@@ -51,7 +55,7 @@ local function SortByTextAndPriority(a, b)
 		return false;
 	end
 end
-local IsRaidLeader = function()
+local function IsRaidLeader()
 	---@diagnostic disable-next-line: param-type-mismatch
 	return UnitIsGroupLeader("player");
 end
@@ -74,15 +78,15 @@ if GetLootMethod and SetLootMethod then
 		needbeforegreed = "Need Before Greed",
 		roundrobin = "Round Robin",
 	};
-	local lootMethodDescriptions = {
-		personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.",
-		group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
-		master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
+	local lootMethodLore = {
+		personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.",
+		group = "Group loot, round-robin for normal items, rolling for special ones.",
+		master = "Master looter, designated player distributes loot.",
 	};
 	if UnitLootMethod then
 		for key,value in pairs(UnitLootMethod) do
 			lootMethods[key] = value.text;
-			lootMethodDescriptions[key] = value.tooltipText;
+			lootMethodLore[key] = value.tooltipText;
 		end
 	end
 	local lootMethodIcons = {
@@ -108,7 +112,7 @@ if GetLootMethod and SetLootMethod then
 				SetLootMethod(self.ref.methodID);
 			end
 		end
-		if self then self:GetParent():GetParent():Reset(); end
+		if self then self:GetParent():GetParent():ResetWindow(); end
 		return true;
 	end;
 	app.CreateLootMethod = app.CreateClass("LootMethod", "id", {
@@ -118,8 +122,8 @@ if GetLootMethod and SetLootMethod then
 		icon = function(t)
 			return lootMethodIcons[t.id];
 		end,
-		description = function(t)
-			return lootMethodDescriptions[t.id];
+		lore = function(t)
+			return lootMethodLore[t.id];
 		end,
 		methodID = function(t)
 			return lootMethodIDs[t.id];
@@ -149,7 +153,7 @@ if GetLootThreshold and SetLootThreshold then
 		if IsInGroup() then
 			SetLootThreshold(self.ref.id);
 		end
-		if self then self:GetParent():GetParent():Reset(); end
+		if self then self:GetParent():GetParent():ResetWindow(); end
 		return true;
 	end;
 	app.CreateLootThreshold = app.CreateClass("LootThreshold", "id", {
@@ -177,310 +181,199 @@ end
 app:CreateWindow("RaidAssistant", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
+	OnEvent = function(self, e, ...)
+		Callback(self.Update, self, true);
+	end,
+	OnLoad = function(self, settings)
+		-- Only remember the setting if the Raid Assistant was visible
+		AutoReset = settings.visible and settings.AutoReset;
+	end,
+	OnSave = function(self, settings)
+		settings.AutoReset = AutoReset;
+	end,
 	OnInit = function(self, handlers)
-		-- Setup Event Handlers and register for events
-		local updateWithTrigger = function()
-			self:Update(true);
-		end;
-		handlers.GROUP_ROSTER_UPDATE = updateWithTrigger;
-		handlers.UPDATE_INSTANCE_INFO = updateWithTrigger;
-		handlers.ZONE_CHANGED_NEW_AREA = updateWithTrigger;
-		handlers.ACTIVE_TALENT_GROUP_CHANGED = updateWithTrigger;
-		handlers.PLAYER_LOOT_SPEC_UPDATED = updateWithTrigger;
-		self:RegisterEvent("CHAT_MSG_SYSTEM");
-		self:RegisterEvent("UPDATE_INSTANCE_INFO");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		self:RegisterEvent("GROUP_ROSTER_UPDATE");
-
-		-- Does Difficulty have some options to change?
-		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
-			self:Update();
-		end);
-
-		-- Does Dual Spec or Specializations exist in the API?
-		if GetActiveTalentGroup or GetSpecialization then
-			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
-		end
-
-		-- Does Loot Spec exist in the API?
-		if GetLootSpecialization then
-			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
-		end
-
-		-- Do Scenarios exist in the API?
-		if C_Scenario_IsInScenario then
-			self:RegisterEvent("SCENARIO_UPDATE");
+		-- Raid Assistant Header
+		local options = {};
+		local raidassistant = app.CreateRawText(L.RAID_ASSISTANT, {
+			icon = app.asset("WindowIcon_RaidAssistant"),
+			description = L.RAID_ASSISTANT_DESC,
+			expanded = true,
+			visible = true,
+			back = 1,
+			g = {},
+			OnUpdate = function(t)
+				local g = t.g;
+				if #g < 1 then
+					for i,option in ipairs(options) do
+						option.parent = t;
+						tinsert(g, option);
+					end
+					app.Sort(g, SortByTextAndPriority);
+					t.OnUpdate = nil;
+				end
+			end
+		});
+		self:SetData(raidassistant);
+		self.ResetWindow = function()
+			self:SetData(raidassistant);
+			Callback(self.Update, self, true);
 		end
 		
-		-- Default Raid Assistant Options
-		local options = {
-			app.CreateRawText("Leave Group", {	-- Leave Group
-				icon = 132331,
-				description = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
-				priority = 19,
-				OnClick = function(row, button)
-					LeaveParty();
-					CloseGroupFinder();
-					self:Reset();
-					return true;
-				end,
-				OnUpdate = function(data)
-					data.visible = IsInGroup();
-					return true;
-				end,
-			}),
-			app.CreateRawText("Reset Instances", {	-- Reset Instances
-				icon = app.asset("Button_Reset"),
-				description = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
-				priority = 16,
-				OnClick = function(row, button)
-					if IsAltKeyDown() then
-						AutoReset = not AutoReset;
-						self:Update(true);
-					else
-						ResetInstances();
-					end
-					return true;
-				end,
-				OnUpdate = function(data)
-					data.saved = AutoReset;
-					data.visible = not IsInGroup() or IsRaidLeader();
-					if data.visible and AutoReset and not isBusy() then
-						ResetInstances();
-					end
-					return true;
-				end,
-			}),
-		};
-
-		-- If Difficulties exist, this means we can use the API!
+		-- Setup Event Handlers and register for events
+		self:RegisterEvent("CHAT_MSG_SYSTEM");
+		self:RegisterEvent("GROUP_ROSTER_UPDATE");
+		self:AddEventHandler("OnCurrentMapIDChanged", function()
+			DelayedCallback(self.Update, 0.5, self);
+		end);
+		self:AddEventHandler("OnCurrentDifficultiesChanged", function()
+			self:Update(true);
+		end);
+		
+		-- Dungeon Difficulty (Added with TBC)
 		if app.GameBuildVersion >= 20000 then
-			-- If Dungeon Difficulty exists, we can change that using the API!
-			if GetDungeonDifficultyID then
-				local setDungeonDifficulty = function(row, button)
-					local difficultyID = row.ref.difficultyID;
-					SetDungeonDifficultyID(difficultyID);
-					if not self.swappingdungeon then
-						self.swappingdungeon = true;
-					else
-						self.swappingdungeon = nil;
-					end
-					self:StartATTCoroutine("DungeonDifficulty", function()
-						while InCombatLockdown() do coroutine.yield(); end
-						while self.swappingdungeon do
-							for i=0,10,1 do
-								if self.swappingdungeon then
-									coroutine.yield();
-								else
-									break;
-								end
-							end
-							if GetDungeonDifficultyID() == difficultyID then
-								self.swappingdungeon = nil;
-								self:Update(true);
-								break;
-							else
-								SetDungeonDifficultyID(difficultyID);
-							end
-						end
-					end);
-					self:Reset();
-					return true;
-				end
-				local dungeondifficulty = app.CreateDifficulty(1, {
-					text = "Dungeon Difficulty",
-					description = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
-					trackable = false,
-					back = 1,
-					g = {},
-					OnClick = function(row, button)
-						self:Reset();
-						return true;
-					end,
-					OnUpdate = function(data)
-						local g = data.g;
-						if #g < 1 then
-							for i,difficultyID in ipairs({1, 2, 8, 23 }) do
-								if GetDifficultyInfo(difficultyID) then
-									tinsert(g, app.CreateDifficulty(difficultyID, {
-										description = "Click to change now. (if available)",
-										OnClick = setDungeonDifficulty,
-										OnUpdate = app.AlwaysShowUpdate,
-										trackable = false,
-										parent = data,
-									}));
-								end
-							end
-						end
-						data.visible = true;
-					end,
-				});
-				tinsert(options, app.CreateDifficulty(1, {
-					title = "Dungeon Difficulty",
-					description = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
-					trackable = false,
-					priority = 10,
-					OnClick = function(row, button)
-						if IsInInstance() then return true; end
-						self:SetData(dungeondifficulty);
-						self:Update(true);
-						return true;
-					end,
-					OnUpdate = function(data)
-						local difficultyID = GetDungeonDifficultyID() or 1;
-						data.difficultyID = difficultyID;
-						local difficultyName = GetDifficultyInfo(difficultyID) or "???";
-						local instanceName, instanceType, instanceDifficulty, instanceDifficultyName = GetInstanceInfo();
-						if instanceDifficulty and difficultyID ~= instanceDifficulty and instanceType == 'party' then
-							data.name = difficultyName .. " (" .. (instanceDifficultyName or "???") .. ") (Dungeon)";
-						else
-							data.name = difficultyName .. " (Dungeon)";
-						end
-						data.visible = true;
-						return true;
-					end,
-				}));
+			local function switchDungeonDifficulty(row, button)
+				AfterCombatCallback(SetDungeonDifficultyID, row.ref.difficultyID);
+				self:ResetWindow();
+				return true;
 			end
-
-			-- If Raid Difficulty exists, we can change that using the API!
-			if app.GameBuildVersion >= 30000 then
-				-- At some point Blizzard decided that difficulties made too much sense and scrapped them and added new ones.
-				local raidDifficultyIDs = { 3, 5, 4, 6 };
-				if GetDifficultyInfo(14) and app.GameBuildVersion > 50505 then
-					if SetLegacyRaidDifficultyID then
-						-- This means we need to implement Legacy Raid Difficulties as well. :(
-						local legacyRaidDifficultyIDs = raidDifficultyIDs;
-						raidDifficultyIDs = { 14, 15, 16 };
-						local setLegacyRaidDifficulty = function(row, button)
-							local difficultyID = row.ref.difficultyID;
-							SetLegacyRaidDifficultyID(difficultyID);
-							if not self.swappinglegacy then
-								self.swappinglegacy = true;
-							else
-								self.swappinglegacy = nil;
+			local dungeondifficulty = app.CreateDifficulty(1, {
+				text = L.DUNGEON_DIFF,
+				description = L.DUNGEON_DIFF_DESC_2,
+				trackable = false,
+				back = 1,
+				g = {},
+				OnClick = function(row, button)
+					self:ResetWindow();
+					return true;
+				end,
+				OnUpdate = function(data)
+					local g = data.g;
+					if #g < 1 then
+						for i,difficultyID in ipairs({1, 2, 8, 23 }) do
+							if GetDifficultyInfo(difficultyID) then
+								tinsert(g, app.CreateDifficulty(difficultyID, {
+									description = L.CLICK_TO_CHANGE,
+									OnClick = switchDungeonDifficulty,
+									OnUpdate = app.AlwaysShowUpdate,
+									trackable = false,
+									parent = data,
+								}));
 							end
-							self:StartATTCoroutine("LegacyRaidDifficulty", function()
-								while InCombatLockdown() do coroutine.yield(); end
-								while self.swappinglegacy do
-									for i=0,10,1 do
-										if self.swappinglegacy then
-											coroutine.yield();
-										else
-											break;
-										end
-									end
-									if GetLegacyRaidDifficultyID() == difficultyID then
-										self.swappinglegacy = nil;
-										self:Update(true);
-										break;
-									else
-										SetLegacyRaidDifficultyID(difficultyID);
-									end
-								end
-							end);
-							self:Reset();
-							return true;
 						end
-						local highestDifficultyID = legacyRaidDifficultyIDs[#legacyRaidDifficultyIDs];
-						local legacyraiddifficulty = app.CreateDifficulty(highestDifficultyID, {
-							text = "Legacy Raid Difficulty",
-							description = "This setting allows you to customize the difficulty of a legacy raid.\n\nClick this row to go back to the Raid Assistant.",
-							trackable = false,
-							back = 1,
-							g = {},
-							OnClick = function(row, button)
-								self:Reset();
-								return true;
-							end,
-							OnUpdate = function(data)
-								local g = data.g;
-								if #g < 1 then
-									for i,difficultyID in ipairs(legacyRaidDifficultyIDs) do
-										if GetDifficultyInfo(difficultyID) then
-											tinsert(g, app.CreateDifficulty(difficultyID, {
-												description = "Click to change now. (if available)",
-												OnClick = setLegacyRaidDifficulty,
-												OnUpdate = app.AlwaysShowUpdate,
-												trackable = false,
-												parent = data,
-											}));
-										end
+					end
+					data.visible = true;
+				end,
+			});
+			tinsert(options, app.CreateDifficulty(1, {
+				title = L.DUNGEON_DIFF,
+				description = L.DUNGEON_DIFF_DESC,
+				trackable = false,
+				priority = 10,
+				OnClick = function(row, button)
+					if IsInInstance() then return true; end
+					self:SetData(dungeondifficulty);
+					self:Update(true);
+					return true;
+				end,
+				OnUpdate = function(data)
+					local difficultyID = GetDungeonDifficultyID() or 1;
+					data.difficultyID = difficultyID;
+					local difficultyName = GetDifficultyInfo(difficultyID) or "???";
+					local instanceName, instanceType, instanceDifficulty, instanceDifficultyName = GetInstanceInfo();
+					if instanceDifficulty and difficultyID ~= instanceDifficulty and instanceType == 'party' then
+						data.name = difficultyName .. " (" .. (instanceDifficultyName or "???") .. ") (Dungeon)";
+					else
+						data.name = difficultyName .. " (Dungeon)";
+					end
+					data.visible = true;
+					return true;
+				end,
+			}));
+
+			-- Raid Difficulty (Added with Wrath)
+			if app.GameBuildVersion >= 30000 then
+				-- Legacy Raid Difficulty (Added with SoO in MOP)
+				local raidDifficultyIDs = { 3, 5, 4, 6 };
+				if SetLegacyRaidDifficultyID and GetDifficultyInfo(14) and app.GameBuildVersion >= 50505 then
+					local switchLegacyRaidDifficulty = function(row, button)
+						AfterCombatCallback(SetLegacyRaidDifficultyID, row.ref.difficultyID);
+						self:ResetWindow();
+						return true;
+					end
+					local legacyRaidDifficultyIDs = raidDifficultyIDs;
+					raidDifficultyIDs = { 14, 15, 16 };
+					local highestDifficultyID = legacyRaidDifficultyIDs[#legacyRaidDifficultyIDs];
+					local legacyraiddifficulty = app.CreateDifficulty(highestDifficultyID, {
+						text = L.LEGACY_RAID_DIFF,
+						description = L.LEGACY_RAID_DIFF_DESC,
+						trackable = false,
+						back = 1,
+						g = {},
+						OnClick = function(row, button)
+							self:ResetWindow();
+							return true;
+						end,
+						OnUpdate = function(data)
+							local g = data.g;
+							if #g < 1 then
+								for i,difficultyID in ipairs(legacyRaidDifficultyIDs) do
+									if GetDifficultyInfo(difficultyID) then
+										tinsert(g, app.CreateDifficulty(difficultyID, {
+											description = L.CLICK_TO_CHANGE,
+											OnClick = switchLegacyRaidDifficulty,
+											OnUpdate = app.AlwaysShowUpdate,
+											trackable = false,
+											parent = data,
+										}));
 									end
 								end
-								data.visible = true;
-							end,
-						});
-						tinsert(options, app.CreateDifficulty(highestDifficultyID, {
-							title = "Legacy Raid Difficulty",
-							description = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
-							trackable = false,
-							priority = 11,
-							OnClick = function(row, button)
-								-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-								if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
-								self:SetData(legacyraiddifficulty);
-								self:Update(true);
-								return true;
-							end,
-							OnUpdate = function(data)
-								local difficultyID = GetLegacyRaidDifficultyID() or 1;
-								data.difficultyID = difficultyID;
-								local difficultyName = GetDifficultyInfo(difficultyID) or "???";
-								local instanceName, instanceType, instanceDifficulty, instanceDifficultyName = GetInstanceInfo();
-								if instanceDifficulty and difficultyID ~= instanceDifficulty and instanceType == 'raid' then
-									data.name = difficultyName .. " (" .. (instanceDifficultyName or "???") .. ") (Legacy)";
-								else
-									data.name = difficultyName .. " (Legacy)";
-								end
-								data.visible = true;
-								return true;
-							end,
-						}));
-					else
-						tinsert(raidDifficultyIDs, 1, 14);
-					end
+							end
+							data.visible = true;
+						end,
+					});
+					tinsert(options, app.CreateDifficulty(highestDifficultyID, {
+						title = L.LEGACY_RAID_DIFF,
+						description = L.LEGACY_RAID_DIFF_DESC,
+						trackable = false,
+						priority = 11,
+						OnClick = function(row, button)
+							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
+							if row.ref.difficultyID == 7 or row.ref.difficultyID == 17 then return true; end
+							self:SetData(legacyraiddifficulty);
+							self:Update(true);
+							return true;
+						end,
+						OnUpdate = function(data)
+							local difficultyID = GetLegacyRaidDifficultyID() or 1;
+							data.difficultyID = difficultyID;
+							local difficultyName = GetDifficultyInfo(difficultyID) or "???";
+							local instanceName, instanceType, instanceDifficulty, instanceDifficultyName = GetInstanceInfo();
+							if instanceDifficulty and difficultyID ~= instanceDifficulty and instanceType == 'raid' then
+								data.name = difficultyName .. " (" .. (instanceDifficultyName or "???") .. ") (Legacy)";
+							else
+								data.name = difficultyName .. " (Legacy)";
+							end
+							data.visible = true;
+							return true;
+						end,
+					}));
 				end
 
 				-- Create the normal raid difficulty header.
 				local highestDifficultyID = raidDifficultyIDs[#raidDifficultyIDs];
-				local setRaidDifficulty = function(row, button)
-					local difficultyID = row.ref.difficultyID;
-					SetRaidDifficultyID(difficultyID);
-					if not self.swappingraid then
-						self.swappingraid = true;
-					else
-						self.swappingraid = nil;
-					end
-					self:StartATTCoroutine("RaidDifficulty", function()
-						while InCombatLockdown() do coroutine.yield(); end
-						while self.swappingraid do
-							for i=0,10,1 do
-								if self.swappingraid then
-									coroutine.yield();
-								else
-									break;
-								end
-							end
-							if GetRaidDifficultyID() == difficultyID then
-								self.swappingraid = nil;
-								self:Update(true);
-								break;
-							else
-								SetRaidDifficultyID(difficultyID);
-							end
-						end
-					end);
-					self:Reset();
+				local switchRaidDifficulty = function(row, button)
+					AfterCombatCallback(SetRaidDifficultyID, row.ref.difficultyID);
+					self:ResetWindow();
 					return true;
 				end
 				local raiddifficulty = app.CreateDifficulty(highestDifficultyID, {
-					text = "Raid Difficulty",
-					description = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
+					text = L.RAID_DIFF,
+					description = L.RAID_DIFF_DESC_2,
 					trackable = false,
 					back = 1,
 					g = {},
 					OnClick = function(row, button)
-						self:Reset();
+						self:ResetWindow();
 						return true;
 					end,
 					OnUpdate = function(data)
@@ -489,8 +382,8 @@ app:CreateWindow("RaidAssistant", {
 							for i,difficultyID in ipairs(raidDifficultyIDs) do
 								if GetDifficultyInfo(difficultyID) then
 									tinsert(g, app.CreateDifficulty(difficultyID, {
-										description = "Click to change now. (if available)",
-										OnClick = setRaidDifficulty,
+										description = L.CLICK_TO_CHANGE,
+										OnClick = switchRaidDifficulty,
 										OnUpdate = app.AlwaysShowUpdate,
 										trackable = false,
 										parent = data,
@@ -502,8 +395,8 @@ app:CreateWindow("RaidAssistant", {
 					end,
 				});
 				tinsert(options, app.CreateDifficulty(highestDifficultyID, {
-					title = "Raid Difficulty",
-					description = "The difficulty setting for raids.\n\nClick this row to change it now!",
+					title = L.RAID_DIFF,
+					description = L.RAID_DIFF_DESC_2,
 					trackable = false,
 					priority = 12,
 					OnClick = function(row, button)
@@ -529,6 +422,57 @@ app:CreateWindow("RaidAssistant", {
 				}));
 			end
 		end
+		
+		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
+		if app.CreateLootThreshold then
+			local lootthreshold = app.CreateRawText("Loot Threshold", {
+				icon = 133784,
+				description = "Select a new loot threshold.",
+				expanded = true,
+				maximum = 5,
+				minimum = app.GameBuildVersion > 11403 and 2 or 0,
+				back = 1,
+				g = {},
+				OnClick = function(row, button)
+					self:ResetWindow();
+					return true;
+				end,
+				OnUpdate = function(data)
+					local g = data.g;
+					if #g < 1 then
+						local maximum, minimum = data.maximum, data.minimum;
+						for i=maximum,minimum,-1 do
+							local threshold = app.CreateLootThreshold(i);
+							threshold.OnUpdate = app.AlwaysShowUpdate;
+							threshold.parent = data;
+							tinsert(g, threshold);
+						end
+					end
+					data.visible = true;
+				end,
+			});
+			tinsert(options, app.CreateLootThreshold(2, {
+				title = LOOT_TRESHOLD,
+				priority = 3,
+				visible = true,
+				OnClick = function(row, button)
+					if IsRaidLeader() then
+						self:SetData(lootthreshold);
+						self:Update(true);
+					end
+					return true;
+				end,
+				OnUpdate = function(data)
+					if IsInGroup() then
+						data.id = GetLootThreshold();
+						data.visible = true;
+					else
+						data.visible = false;
+					end
+					return true;
+				end,
+			}));
+		end
 
 		-- If Loot Method exists, we can change how loot gets distributed for the raid.
 		if app.CreateLootMethod then
@@ -540,14 +484,15 @@ app:CreateWindow("RaidAssistant", {
 				back = 1,
 				g = {},
 				OnClick = function(row, button)
-					self:Reset();
+					self:ResetWindow();
 					return true;
 				end,
 				OnUpdate = function(data)
 					local g = data.g;
 					if #g < 1 then
-						for key,value in pairs(UnitLootMethod or { freeforall = 0, group = 1, needbeforegreed = 3, master = 2 }) do
+						for key,value in pairs(lootMethodIDs) do
 							local method = app.CreateLootMethod(key);
+							method.description = L.CLICK_TO_CHANGE;
 							method.OnUpdate = app.AlwaysShowUpdate;
 							method.parent = data;
 							tinsert(g, method);
@@ -584,7 +529,7 @@ app:CreateWindow("RaidAssistant", {
 				back = 1,
 				g = {},
 				OnClick = function(row, button)
-					self:Reset();
+					self:ResetWindow();
 					return true;
 				end,
 				OnUpdate = function(data)
@@ -607,7 +552,7 @@ app:CreateWindow("RaidAssistant", {
 										OnClick = function(row, button)
 											---@diagnostic disable-next-line: redundant-parameter
 											SetLootMethod(lootMethodIDs["master"], row.ref.ServerName);
-											self:Reset();
+											self:ResetWindow();
 											return true;
 										end,
 									});
@@ -665,223 +610,110 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-
-		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
-		if app.CreateLootThreshold then
-			local lootthreshold = app.CreateRawText("Loot Threshold", {
-				icon = 133784,
-				description = "Select a new loot threshold.",
-				expanded = true,
-				maximum = 5,
-				minimum = app.GameBuildVersion > 11403 and 2 or 0,
+		
+		-- If Loot Spec exists, we have the ability to change the player's current loot specialization.
+		if GetLootSpecialization and SetLootSpecialization and app.GameBuildVersion >= 50000 then
+			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
+			local function switchLootSpecialization(row, button)
+				SetLootSpecialization(row.ref.id);
+				self:ResetWindow();
+				return true;
+			end
+			local lootspecialization = app.CreateRawText(L.LOOT_SPEC, {
+				icon = 237585,
+				description = L.LOOT_SPEC_DESC_2,
+				visible = true,
 				back = 1,
 				g = {},
 				OnClick = function(row, button)
-					self:Reset();
+					self:ResetWindow();
 					return true;
 				end,
 				OnUpdate = function(data)
 					local g = data.g;
 					if #g < 1 then
-						local maximum, minimum = data.maximum, data.minimum;
-						for i=maximum,minimum,-1 do
-							local threshold = app.CreateLootThreshold(i);
-							threshold.OnUpdate = app.AlwaysShowUpdate;
-							threshold.parent = data;
-							tinsert(g, threshold);
-						end
-					end
-					data.visible = true;
-				end,
-			});
-			tinsert(options, app.CreateLootThreshold(2, {
-				title = LOOT_TRESHOLD,
-				priority = 3,
-				visible = true,
-				OnClick = function(row, button)
-					if IsRaidLeader() then
-						self:SetData(lootthreshold);
-						self:Update(true);
-					end
-					return true;
-				end,
-				OnUpdate = function(data)
-					if IsInGroup() then
-						data.id = GetLootThreshold();
-						data.visible = true;
-					else
-						data.visible = false;
-					end
-					return true;
-				end,
-			}));
-		end
-
-		-- If Specializations are available, that means we don't need to look up player talents.
-		if app.GameBuildVersion >= 50000 then
-			-- If Loot Spec exists, we have the ability to change the player's current loot specialization.
-			if GetLootSpecialization and SetLootSpecialization then
-				local lootspecialization = app.CreateRawText("Loot Specialization", {
-					icon = 1499566,
-					description = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
-					visible = true,
-					back = 1,
-					g = {},
-					OnClick = function(row, button)
-						self:Reset();
-						return true;
-					end,
-					OnUpdate = function(data)
-						local g = data.g;
-						if #g < 1 then
-							local numSpecializations = GetNumSpecializations();
-							if numSpecializations and numSpecializations > 0 then
-								tinsert(data.g, app.CreateRawText("Current Specialization", {
-									icon = 1495827,
-									description = "If you switch your talents, your loot specialization changes with you.",
-									OnClick = function(row, button)
-										SetLootSpecialization(0);
-										self.swappingspec = true;
-										self:StartATTCoroutine("LootSpecialization", function()
-											while InCombatLockdown() do coroutine.yield(); end
-											while self.swappingspec do
-												for i=0,10,1 do
-													if self.swappingspec then
-														coroutine.yield();
-													else
-														break;
-													end
-												end
-												if GetLootSpecialization() == 0 then
-													self.swappingspec = nil;
-													self:Update(true);
-													break;
-												else
-													SetLootSpecialization(0);
-												end
-											end
-										end);
-										self:Reset();
-										return true;
-									end,
+						local numSpecializations = GetNumSpecializations();
+						if numSpecializations and numSpecializations > 0 then
+							tinsert(g, app.CreateRawText(L.CURRENT_SPEC, {
+								description = L.CURRENT_SPEC_DESC,
+								id = 0,
+								OnClick = switchLootSpecialization,
+								OnUpdate = function(data)
+									local id, name, description, icon, role, primaryStat = GetSpecializationInfo(GetSpecialization());
+									if role then data.title = _G[role]; end
+									data.text = L.CURRENT_SPEC .. " (" .. name .. ")";
+									data.icon = icon;
+									data.description = description;
+									data.visible = true;
+									return true;
+								end,
+							}));
+							for i=1,numSpecializations,1 do
+								local id, name, description, icon, role, primaryStat = GetSpecializationInfo(i);
+								if role then role = _G[role]; end
+								tinsert(g, app.CreateRawText(name, {
+									title = role,
+									id = id,
+									icon = icon,
+									description = description,
+									OnClick = switchLootSpecialization,
 									OnUpdate = function(data)
-										local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(GetSpecialization());
-										data.text = "Current Specialization (" .. name .. ")";
-										data.icon = icon;
-										data.description = description;
 										data.visible = true;
 										return true;
 									end,
 								}));
-								for i=1,numSpecializations,1 do
-									local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
-									tinsert(data.g, app.CreateRawText(name, {
-										id = id,
-										icon = icon,
-										description = description,
-										OnClick = function(row, button)
-											local id = row.ref.id;
-											SetLootSpecialization(id);
-											self.swappingspec = true;
-											self:StartATTCoroutine("LootSpecialization", function()
-												while InCombatLockdown() do coroutine.yield(); end
-												while self.swappingspec do
-													for i=0,10,1 do
-														if self.swappingspec then
-															coroutine.yield();
-														else
-															break;
-														end
-													end
-													if GetLootSpecialization() == id then
-														self.swappingspec = nil;
-														self:Update(true);
-														break;
-													else
-														SetLootSpecialization(id);
-													end
-												end
-											end);
-											self:Reset();
-											return true;
-										end,
-										OnUpdate = function(data)
-											data.visible = true;
-											return true;
-										end,
-									}));
-								end
 							end
 						end
-					end,
-				});
-				tinsert(options, app.CreateRawText(RETRIEVING_DATA, {
-					description = "In dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
-					priority = 4,
-					OnClick = function(row, button)
-						self:SetData(lootspecialization);
-						self:Update(true);
-						return true;
-					end,
-					OnUpdate = function(data)
-						local lootSpec = GetLootSpecialization() or 0;
-						if lootSpec == 0 then
-							local id, name, description, icon, role, class = GetSpecializationInfo(GetSpecialization());
-							if name then
-								data.text = name .. " (Automatic)";
-								data.icon = icon;
-								data.description = description;
-							end
-						else
-							local id, name, description, icon, role, class = GetSpecializationInfoByID(lootSpec);
-							if name then
-								data.text = name;
-								data.icon = icon;
-								data.description = description;
-							end
+					end
+				end,
+			});
+			tinsert(options, app.CreateRawText(L.LOOT_SPEC_UNKNOWN, {
+				title = L.LOOT_SPEC,
+				description = L.LOOT_SPEC_DESC,
+				priority = 4,
+				OnClick = function(row, button)
+					self:SetData(lootspecialization);
+					self:Update(true);
+					return true;
+				end,
+				OnUpdate = function(data)
+					local lootSpec = GetLootSpecialization() or 0;
+					if lootSpec == 0 then
+						local id, name, description, icon, role, class = GetSpecializationInfo(GetSpecialization());
+						if name then
+							data.text = name .. " (Automatic)";
+							data.icon = icon;
+							data.description = description;
 						end
+					else
+						local id, name, description, icon, role, class = GetSpecializationInfoByID(lootSpec);
+						if name then
+							data.text = name;
+							data.icon = icon;
+							data.description = description;
+						end
+					end
 
-						data.visible = true;
-						return true;
-					end,
-				}));
-			end
-		end
-
-		-- If Dual Spec exists, we have the ability to confirm which specialization the player currently is.
-		if GetActiveTalentGroup then
-			--TODO: Setup Talent Swapping
+					data.visible = true;
+					return true;
+				end,
+			}));
 		end
 		
 		-- If LFG exists, we get some access to some special api functions.
 		if C_LFGList_GetActiveEntryInfo and app.GameBuildVersion >= 30000 then
 			-- For teleporting in/out... (available with Dungeon Finder itself)
 			if IsInLFGDungeon and IsAllowedToUserTeleport and LFGTeleport then
-				tinsert(options, app.CreateRawText(RETRIEVING_DATA, {
-					outText = "Teleport Out",
-					outDescription = "Click here to teleport out of your current instance if using LFG.",
-					toText = "Teleport to Dungeon",
-					toDescription = "Click here to teleport to the instance if using LFG.",
+				tinsert(options, app.CreateRawText(L.TELEPORT_TO_FROM_DUNGEON, {
 					icon = 136222,
+					description = L.TELEPORT_TO_FROM_DUNGEON_DESC,
 					priority = 17,
 					OnClick = function(row, button)
 						LFGTeleport(not not IsInLFGDungeon());
-						self:Update();
 						return true;
 					end,
 					OnUpdate = function(data)
-						if IsAllowedToUserTeleport() then
-							if IsInLFGDungeon() then
-								data.text = data.outText;
-								data.description = data.outDescription;
-							else
-								data.text = data.toText;
-								data.description = data.toDescription;
-							end
-							data.visible = true;
-						else
-							data.visible = false;
-						end
+						data.visible = IsAllowedToUserTeleport();
 						return true;
 					end,
 				}));
@@ -889,14 +721,14 @@ app:CreateWindow("RaidAssistant", {
 
 			-- And for Delisting the group!
 			if C_LFGList_RemoveListing then
-				tinsert(options, app.CreateRawText("Delist Group", {
+				tinsert(options, app.CreateRawText(L.DELIST_GROUP, {
 					icon = 252175,
-					description = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+					description = L.DELIST_GROUP_DESC,
 					priority = 18,
 					OnClick = function(row, button)
 						C_LFGList_RemoveListing();
 						CloseGroupFinder();
-						self:Update();
+						self:Update(true);
 						return true;
 					end,
 					OnUpdate = function(data)
@@ -914,7 +746,7 @@ app:CreateWindow("RaidAssistant", {
 				priority = 20,
 				OnClick = function(row, button)
 					InviteUnit(InviteCharacterName);
-					self:Reset();
+					self:ResetWindow();
 					return true;
 				end,
 				OnUpdate = function(data)
@@ -929,7 +761,7 @@ app:CreateWindow("RaidAssistant", {
 				OnClick = function(row, button)
 					InviteUnit(InviteCharacterName);
 					C_Timer.After(0.8,function() ConvertToRaid(); end);
-					self:Reset();
+					self:ResetWindow();
 					return true;
 				end,
 				OnUpdate = function(data)
@@ -938,17 +770,38 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
+		
+		tinsert(options, app.CreateRawText(L.LEAVE_GROUP, {
+			icon = 132331,
+			description = L.LEAVE_GROUP_DESC,
+			priority = 19,
+			OnClick = function(row, button)
+				LeaveParty();
+				CloseGroupFinder();
+				self:ResetWindow();
+				return true;
+			end,
+			OnUpdate = function(data)
+				data.visible = IsInGroup();
+				return true;
+			end,
+		}));
 		tinsert(options, app.CreateRawText("Port to Graveyard", {
 			icon = 132331,
 			description = "Click here to create a group and then immediately leave it. This will port you to the nearest graveyard after 1 minute.",
 			priority = 25,
 			OnClick = function(row, button)
-				InviteUnit(InviteCharacterName);
-				C_Timer.After(0.5,function()
+				if IsInGroup() then
 					LeaveParty();
 					CloseGroupFinder();
-				end);
-				self:Reset();
+				else
+					InviteUnit(InviteCharacterName);
+					C_Timer.After(0.5,function()
+						LeaveParty();
+						CloseGroupFinder();
+					end);
+				end
+				self:ResetWindow();
 				return true;
 			end,
 			OnUpdate = function(data)
@@ -957,36 +810,30 @@ app:CreateWindow("RaidAssistant", {
 			end,
 		}));
 		
-		-- Raid Assistant Header
-		local raidassistant = app.CreateRawText("Raid Assistant", {
-			icon = app.asset("WindowIcon_RaidAssistant"),
-			description = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
-			expanded = true,
-			visible = true,
-			back = 1,
-			g = {},
-			OnUpdate = function(data)
-				local g = data.g;
-				if #g < 1 then
-					for i,option in ipairs(options) do
-						option.parent = data;
-						tinsert(g, option);
-					end
-					app.Sort(g, SortByTextAndPriority);
-				end
-				data.visible = true;
-			end
-		});
-		self:SetData(raidassistant);
-		self.Reset = function()
-			self:SetData(raidassistant);
-			self:Update(true);
+		local function AttemptResetInstances()
+			ResetInstances();
 		end
-	end,
-	OnLoad = function(self, settings)
-		AutoReset = settings.AutoReset;
-	end,
-	OnSave = function(self, settings)
-		settings.AutoReset = AutoReset;
+		tinsert(options, app.CreateRawText(L.RESET_INSTANCES, {
+			icon = app.asset("Button_Reset"),
+			description = L.RESET_INSTANCES_DESC,
+			priority = 16,
+			OnClick = function(row, button)
+				if IsAltKeyDown() then
+					AutoReset = not AutoReset;
+					self:Update(true);
+				else
+					ResetInstances();
+				end
+				return true;
+			end,
+			OnUpdate = function(data)
+				data.saved = AutoReset;
+				data.visible = not IsInGroup() or IsRaidLeader();
+				if data.visible and AutoReset and not isBusy() then
+					C_Timer.After(0.5, AttemptResetInstances);
+				end
+				return true;
+			end,
+		}));
 	end,
 });
