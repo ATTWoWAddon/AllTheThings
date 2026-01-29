@@ -414,6 +414,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			q(86945, {	-- Shadowed Supplies
 				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
 			}),
+			q(86948, {	-- Twilight Bonds
+				["coord"] = { 35.3, 70.5, TWILIGHT_HIGHLANDS },
+			}),
 			q(86939, {	-- Twilight's Wedge
 				["coord"] = { 39.0, 29.2, TWILIGHT_HIGHLANDS },
 				["groups"] = { i(235663) },	-- Captured Twilight's Blade Banner (PQI!)
