@@ -107,6 +107,7 @@ settings.RequiredForInsaneMode = {
 settings.RequiredForRankedMode = {
 	Achievements = true,
 	BattlePets = true,
+	Decor = app.GameBuildVersion >= 110207,
 	Heirlooms = app.GameBuildVersion >= 30000,
 	Illusions = app.GameBuildVersion >= 70000,
 	Mounts = true,
