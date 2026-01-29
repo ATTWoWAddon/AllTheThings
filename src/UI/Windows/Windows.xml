@@ -46,7 +46,6 @@
 	<Script file="Race Specific Things.lua"/>
 	<Script file="Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
-	<Script file="Retail/Random.lua"/>
 	<Script file="Removed From Game.lua"/>
 	<Script file="Removed With Patch Drops.lua"/>
 	<Script file="Season of Discovery.lua"/>

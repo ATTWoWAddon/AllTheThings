@@ -217,6 +217,7 @@ do
 	});
 	app.AddEventHandler("OnLoad", function()
 		app.AddDynamicCategoryHeader({ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") });
+		app.AddRandomSearchCategory("Followers", "followerID", L.FOLLOWERS, L.FOLLOWER_DESC, app.asset("Category_Followers"));
 	end);
 end
 

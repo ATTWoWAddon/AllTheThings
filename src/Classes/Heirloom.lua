@@ -332,6 +332,7 @@ do
 	end)
 	app.AddEventHandler("OnLoad", function()
 		app.AddDynamicCategoryHeader({ id = "heirloomID", name = HEIRLOOMS, icon = app.asset("Weapon_Type_Heirloom") });
+		app.AddRandomSearchCategory("Heirlooms", "heirloomID", HEIRLOOMS, nil, app.asset("Weapon_Type_Heirloom"));
 	end);
 end
 

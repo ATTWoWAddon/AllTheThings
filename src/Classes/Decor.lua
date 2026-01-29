@@ -166,6 +166,7 @@ do
 	
 	app.AddEventHandler("OnLoad", function()
 		app.AddDynamicCategoryHeader({ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") });
+		app.AddRandomSearchCategory("Decor", "decorID", app.L.DECOR, app.L.DECOR_DESC, app.asset("Category_Housing"));
 	end);
 end
 
