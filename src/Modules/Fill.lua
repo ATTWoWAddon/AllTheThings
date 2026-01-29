@@ -281,7 +281,9 @@ app.AddEventHandler("OnStartup", function()
 	local function CheckRebuildMinilist(scope, name)
 		if scope ~= "LIST" then return end
 
-		app.LocationTrigger(true)
+		if app.LocationTrigger then
+			app.LocationTrigger(true)
+		end
 	end
 	app.AddEventHandler("Fill.OnActivateFiller", CheckRebuildMinilist)
 	app.AddEventHandler("Fill.OnDeactivateFiller", CheckRebuildMinilist)

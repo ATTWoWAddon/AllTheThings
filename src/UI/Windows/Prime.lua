@@ -136,7 +136,7 @@ app:CreateWindow("Prime", {
 				app:ToggleMiniListForCurrentZone();
 				return true;
 			elseif cmd:sub(1, 6) == "mapid:" then
-				app:GetWindow("MiniList"):SetMapID(tonumber(cmd:sub(7)), true);
+				app.ToggleMiniListForCurrentZone(tonumber(cmd:sub(7)), true)
 				return true;
 			else
 				if cmd == "import" then

@@ -112,9 +112,17 @@ local subGroupInstanceKeys = {
 local ignoredHeaders = app.HeaderData.IGNOREINMINILIST or app.EmptyTable;
 local groups, nested, headerKeys, difficultyGroup, nextParent, headerID, isInInstance
 local rootGroups, mapGroups = {}, {};
+-- TODO -- For now these have to be different. I don't know if __CreateObject works for all Classic scenarios due to explicit key checks
+-- but CloneClassInstance doesn't properly clone the data in a way that cleanly represents the desired Minilist data
+-- Hopefully can reconcile this more after Phase 1 of window consolidation
+local DataCloner = app.IsRetail and app.__CreateObject or app.CloneClassInstance
 local RetailMapDataStyleMetatable = {
 	__mode = "kv",
 	__index = function(cachedMapData, mapID)
+		if not mapID then
+			app.print("Invalid mapID for MiniList cache!",mapID)
+			return
+		end
 		local mapData;
 
 		-- Get all results for this map
@@ -163,7 +171,7 @@ local RetailMapDataStyleMetatable = {
 			-- split search results by whether they represent the 'root' of the minilist or some other mapped content
 			for i=1,#results do
 				-- do not use any raw Source groups in the final list
-				group = app.CloneClassInstance(results[i]);
+				group = DataCloner(results[i])
 				groupmapID = group.mapID
 				groupmaps = group.maps
 				-- Instance/Map/Class/Header(of current map) groups are allowed as root of minilist
@@ -341,6 +349,9 @@ local RetailMapDataStyleMetatable = {
 			cachedMapData[mapID] = mapData;
 		end
 		app.AssignChildren(mapData);
+		mapData._lastshown = GetTimePreciseSec()
+		mapData._firstshow = true
+		app.PrintDebug("Built new map data for",mapID)
 		return mapData;
 	end,
 };
@@ -354,16 +365,59 @@ app.GetCachedDataForMapID = function(mapID)
 end
 app.AddEventHandler("OnSettingsNeedsRefresh", function()
 	-- if settings change that require a refresh, wipe cached maps
+	-- TODO: technically, we might only need to completely wipe if the active Fillers are changed
 	wipe(CachedMapData)
 end)
+local function TrySwapFromCache(self)
+	local now = GetTimePreciseSec()
+	-- window to keep cached maps/not re-build & update them
+	local expired = now - 60
+	local mapID = self.mapID
+	if mapID == 0 then return end
+
+	local header = CachedMapData[mapID]
+	if header._firstshow then
+		header._firstshow = nil
+		-- never built, allow rebuild
+		return
+	elseif header._lastshown < expired then
+		app.PrintDebug("Do update for cached map",mapID,header._lastshown,expired)
+		-- we don't necessarily need to wipe the data, it would just need a force update if used again
+		self.HasPendingUpdate = true
+	end
+	-- Update the mapID into the data for external reference in case not a real map
+	header.mapID = self.mapID;
+	self:SetData(header)
+	app.PrintDebug("Loaded Swap Map Data",mapID)
+	-- Reset the Fill if needed
+	if not header._fillcomplete then
+		-- Reset the minilist Runner before filling again
+		self:GetRunner().Reset()
+		app.PrintDebug("Re-fill cached Map",mapID)
+		app.SetSkipLevel(2);
+		app.FillGroups(header);
+		app.SetSkipLevel(0);
+	end
+	-- If the minilist is meant to be expanded, cache the expand info.
+	self:TryAddAutoExpand()
+	app.CallbackHandlers.Callback(self.Update, self)
+	return true
+end
+local function TryAddAutoExpand(self)
+	if not self.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
+		self.ExpandInfo = { Expand = true }
+		return true
+	end
+end
 
 -- Implementation
 app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
 	SettingsName = "Mini List",
-	IsTopLevel = true,
-	Preload = true,
-	mapID = -1,
+	-- IsTopLevel = true,
+	-- Preload = true,
+	-- Debugging = true,
+	-- mapID = -1,
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
@@ -378,32 +432,100 @@ app:CreateWindow("MiniList", {
 		"attmini",
 		"attminilist",
 	},
-	SetMapID = function(self, mapID, show)
-		if mapID and mapID ~= self.mapID then
-			self.mapID = mapID;
-			self:Rebuild();
+	-- Called when the minilist should be shown with the specified mapID
+	SetMapID = function(self, mapID, force)
+		if self.mapID and self.data then
+			self.data._lastshown = GetTimePreciseSec()
 		end
-		if show then
+		-- don't allow bad values
+		mapID = tonumber(mapID) or 0
+		app.PrintDebug("SetMapID",mapID,force)
+		if force and mapID ~= 0 then
+			CachedMapData[mapID] = nil
+			self.mapID = nil
+		end
+		if mapID == self.mapID then
 			self:Show();
+			return
 		end
-	end,
-	OnInit = function(self, handlers)
-		self:AddEventHandler("OnCurrentDifficultiesChanged", function(difficulties)
-			wipe(CachedMapData);
-			self:Rebuild();
-		end);
-		app.ToggleMiniListForCurrentZone = function()
-			if self:IsVisible() then
-				self:Hide();
-			else
-				self:SetMapID(app.CurrentMapID, true);
-			end
-		end
-		app.LocationTrigger = function(forceNewMap, fromWhere)
-			if forceNewMap then wipe(CachedMapData); end
-			self:DelayedRebuild();
+		app.PrintDebug("new map",self.mapID,"=>",mapID);
+		self.mapID = mapID;
+
+		-- Swap will simply swap the data into the minilist and allow it to Refresh only, since it has already been Updated recently
+		if self:TrySwapFromCache() then return end
+
+		-- Reset the minilist Runner before building new data
+		self:GetRunner().Reset()
+		-- Detatch the Window from the previous data (just in case)
+		if self.data then
+			self.data.window = nil
 		end
 
+		-- Assign the fresh data to the Window
+		local mapData = CachedMapData[mapID];
+		self:SetData(mapData);
+		self.HasPendingUpdate = true
+
+		-- If on a valid mapID, then expand and fill
+		if mapID ~= 0 then
+			-- If the minilist is meant to be expanded, cache the expand info.
+			self:TryAddAutoExpand()
+
+			-- Fill up the groups that need to be filled!
+			mapData._fillcomplete = nil
+			app.SetSkipLevel(2);
+			app.FillGroups(mapData);
+			app.SetSkipLevel(0);
+		end
+
+		-- Make sure to scroll to the top when being rebuilt
+		self.ScrollBar:SetValue(1);
+		app.CallbackHandlers.Callback(self.Update, self)
+	end,
+	-- Visible Mini List, and needs to verify the mapID to Set
+	RefreshLocation = function(self)
+		-- Acquire the new map ID.
+		local mapID = app.CurrentMapID;
+		app.PrintDebug("RefreshLocation",mapID)
+		-- can't really do anything about this from here anymore
+		if not mapID then return end
+		-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
+		if IsInInstance() then
+			local mapInfo = app.CurrentMapInfo;
+			if mapInfo and mapInfo.parentMapID and (mapInfo.mapType or 0) < 3 then
+				-- app.PrintDebug("Don't load Large Maps in minilist")
+				return;
+			end
+		end
+
+		self:SetMapID(mapID);
+	end,
+	TrySwapFromCache = TrySwapFromCache,
+	TryAddAutoExpand = TryAddAutoExpand,
+	OnInit = function(self, handlers)
+		app.ToggleMiniListForCurrentZone = function(mapID)
+			if not mapID and self:IsVisible() then
+				self:Hide();
+			else
+				self:SetMapID(mapID or app.CurrentMapID);
+				self:Show()
+			end
+		end
+		app.LocationTrigger = function(forceNewMap)
+			app.PrintDebug("app.LocationTrigger",forceNewMap)
+			if forceNewMap then
+				wipe(CachedMapData)
+				self.mapID = nil
+			end
+			if self:IsVisible() then
+				app.CallbackHandlers.AfterCombatOrDelayedCallback(self.RefreshLocation, 0.1, self)
+			end
+		end
+
+		self:AddEventHandler("OnCurrentDifficultiesChanged", function(difficulties)
+			-- TODO: this is still excessive AF in Retail. Can't think of a situation where it would actually be needed
+			self:Rebuild();
+		end);
 		app.AddEventHandler("OnWindowFillComplete", function(window)
 			if window.Suffix ~= self.Suffix then return end
 			local mapData = window.data
@@ -413,47 +535,19 @@ app:CreateWindow("MiniList", {
 			-- check to expand groups after they have been built and updated
 			-- dont re-expand if the user has previously full-collapsed the minilist
 			-- need to force expand if so since the groups haven't been updated yet
-			if not window.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
-				window.ExpandInfo = { Expand = true };
+			if self:TryAddAutoExpand() then
 				window:Update();
 			end
 		end);
 	end,
 	OnLoad = function(self, settings)
-		self:SetMapID(app.CurrentMapID or settings.mapID);
-		app.AddEventHandler("OnCurrentMapIDChanged", function()
-			self:SetMapID(app.CurrentMapID);
-		end);
+		app.AddEventHandler("OnCurrentMapIDChanged", app.LocationTrigger)
 	end,
 	OnSave = function(self, settings)
-		settings.mapID = self.mapID;
+		settings.mapID = self.mapID;	-- is this really useful for something?
 	end,
+	-- This is called when showing the window when no data is present, or manually
 	OnRebuild = function(self)
-		if self.mapID then
-			-- Reset the minilist Runner before building new data
-			local mapData = CachedMapData[self.mapID];
-			local oldData = self.data;
-			if mapData ~= oldData then
-				if oldData then
-					-- Unassign this window as the target so that Runner doesn't update the totals
-					oldData.window = nil;
-					self:GetRunner().Reset()
-				end
-				self:SetData(mapData);
-
-				-- If the minilist is meant to be expanded, cache the expand info.
-				if app.Settings:GetTooltipSetting("Expand:MiniList") then
-					self.ExpandInfo = { Expand = true };
-				end
-
-				-- Fill up the groups that need to be filled!
-				app.SetSkipLevel(2);
-				app.FillGroups(mapData);
-				app.SetSkipLevel(0);
-
-				-- Make sure to scroll to the top when being rebuilt
-				self.ScrollBar:SetValue(1);
-			end
-		end
+		self:SetMapID(app.CurrentMapID, true)
 	end,
 });
