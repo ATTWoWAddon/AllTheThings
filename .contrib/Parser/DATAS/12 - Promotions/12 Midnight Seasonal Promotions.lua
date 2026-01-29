@@ -55,7 +55,7 @@ root(ROOTS.Promotions, {
 				i(232519),	-- Razeshi B. (PET!)
 			}));
 			ach(62387, {	-- It's Nearly Midnight
-				["description"] = "Obtained by logging in to an account with housing unlocked before the release of Midnight on March 2nd, 2026.",
+				["description"] = "Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",
 				["timeline"] = { REMOVED_12_0_X_LAUNCH },
 				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),

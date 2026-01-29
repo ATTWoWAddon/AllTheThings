@@ -1786,5 +1786,89 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
 			}),
 		})),
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(233237),	-- Lively Pack of Lunar Explosives
+			}),
+			filter(MOUNTS, {
+				traderstender(600, i(260580)),	-- Cloudborn Razorwing (MOUNT!)
+				traderstender(600, i(233023)),	-- Silvermoon Sweeper (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(350, i(234397)),	-- Fullbelly Rollingpaw (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(170, i(257712)),	-- Anubisath's Golden Blade
+				traderstender(200, i(257427)),	-- Anubisath's Golden Greatblade
+				traderstender(20, i(233180)),	-- Banded Rosy War Slippers
+				traderstender(20, i(233163)),	-- Banded Rosy War Wraps
+				traderstender(100, i(260933)),	-- Basic Pink Quiver
+				traderstender(160, i(262371)),	-- Bronze Magister's Courtstaff
+				traderstender(300, i(233232)),	-- Crimson Lunar Firewhacker
+				traderstender(250, i(233218)),	-- Crimson Lunar Lantern
+				traderstender(250, i(233236)),	-- Crimson Pack of Lunar Explosives
+				traderstender(600, iensemble(234057)),	-- Ensemble: Ornate Crimson Lunar Festival Attire
+				traderstender(100, iensemble(230177)),	-- Ensemble: Prowler's Rosy Headgear
+				traderstender(100, iensemble(242471)),	-- Ensemble: Rosy Sweatsuit
+				traderstender(100, iensemble(257997)),	-- Ensemble: Sorcerer's Rosy Garb
+				traderstender(660, iensemble(258793)),	-- Ensemble: South Guard's Golden Raiment
+				traderstender(300, i(233223)),	-- Jade Lunar Blade
+				traderstender(300, i(233228)),	-- Jade Lunar Polearm
+				traderstender(40, i(233107)),	-- Long Rosy War Skirt
+				traderstender(50, i(233146)),	-- Long Rosy War Skirt and Leg Wraps
+				traderstender(130, i(262370)),	-- Longbow of the Shattered Sun
+				traderstender(80, i(260392)),	-- Pink Wooden Shortbow
+				traderstender(160, i(262372)),	-- Quel'dorei Bladestaff
+				traderstender(160, i(262373)),	-- Quel'dorei Poleblade
+				traderstender(50, i(252746)),	-- Rosy Winter Toque
+				traderstender(40, i(233090)),	-- Short Rosy War Skirt
+				traderstender(50, i(233129)),	-- Short Rosy War Skirt and Leg Wraps
+				traderstender(130, i(262358)),	-- Sindorei Captain's Mantle
+				traderstender(130, i(262369)),	-- Sindorei Handglaive
+				traderstender(130, i(262374)),	-- Sunfury Apprentice's Wand
+				traderstender(160, i(262377)),	-- Sunfury Battlemage's Stave
+				traderstender(80, i(260396)),	-- Tranquillien Archer's Bow
+				traderstender(100, i(260935)),	-- Tranquillien Archer's Quiver
+				traderstender(50, i(235030)),	-- Vigilante's Rosy Mask
+			}),
+			n(VENDORS, {
+				n(234747, {	-- Supplier Felina <Trading Post Outlet Completionist>
+					["coord"] = { 48.16, 51.99, DORNOGAL },
+					["groups"] = {
+						filter(BATTLE_PETS, {
+						}),
+						filter(MOUNTS, {
+						}),
+						filter(COSMETIC, {
+						}),
+					},
+				}),
+				n(234746, {	-- Supplier Mizix <Trading Post Outlet Creatures and Toys>
+					["coord"] = { 48.07, 52.16, DORNOGAL },
+					["groups"] = {
+						filter(BATTLE_PETS, {
+						}),
+						filter(MOUNTS, {
+						}),
+						filter(TOYS, {
+						}),
+					},
+				}),
+				n(234744, {	-- Supplier Offa <Trading Post Outlet Wearables>
+					["coord"] = { 47.57, 52.76, DORNOGAL },
+					["groups"] = {
+						filter(COSMETIC, {
+						}),
+					},
+				}),
+				n(234742, {	-- Supplier Toffa <Trading Post Outlet Weapons>
+					["coord"] = { 47.79, 52.55, DORNOGAL },
+					["groups"] = {
+						filter(COSMETIC, {
+						}),
+					},
+				}),
+			}),
+		})),
 	}),
 }));

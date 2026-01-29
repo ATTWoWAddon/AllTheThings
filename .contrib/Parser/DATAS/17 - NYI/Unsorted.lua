@@ -5119,11 +5119,9 @@ root(ROOTS.Unsorted, {
 				i(256724),	-- Crest of Unending Pain
 				i(257425),	-- Anubisath's Green Greatblade
 				i(257426),	-- Anubisath's Red Greatblade
-				i(257427),	-- Anubisath's Golden Greatblade \\ Anubisath's Gold Greatblade
 				i(257428),	-- Anubisath's Ethereal Greatblade
 				i(257710),	-- Anubisath's Green Blade
 				i(257711),	-- Anubisath's Red Blade
-				i(257712),	-- Anubisath's Golden Blade \\ Anubisath's Gold Blade
 				i(257713),	-- Anubisath's Ethereal Blade
 				i(257759),	-- Sorcerer's Midnight Cowl
 				i(257760),	-- Sorcerer's Azure Cowl
@@ -5135,7 +5133,6 @@ root(ROOTS.Unsorted, {
 				i(257767),	-- Sorcerer's Lively Cowl
 				i(257769),	-- Sorcerer's Faded Cowl
 				i(257770),	-- Sorcerer's Carrot Cowl
-				i(257771),	-- Sorcerer's Rosy Cowl
 				i(257772),	-- Sorcerer's Plum Cowl
 				i(257773),	-- Sorcerer's Crimson Cowl
 				i(257774),	-- Sorcerer's Violet Cowl
@@ -5152,7 +5149,6 @@ root(ROOTS.Unsorted, {
 				i(257787),	-- Sorcerer's Lively Cape
 				i(257788),	-- Sorcerer's Faded Cape
 				i(257789),	-- Sorcerer's Carrot Cape
-				i(257790),	-- Sorcerer's Rosy Cape
 				i(257791),	-- Sorcerer's Plum Cape
 				i(257792),	-- Sorcerer's Crimson Cape
 				i(257793),	-- Sorcerer's Violet Cape
@@ -5169,7 +5165,6 @@ root(ROOTS.Unsorted, {
 				i(257987),	-- Ensemble: Sorcerer's Lively Garb \\ Ensemble: Sorcerer's Lively Raiment
 				i(257989),	-- Ensemble: Sorcerer's Faded Garb \\ Ensemble: Sorcerer's Faded Raiment
 				i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
-				i(257997),	-- Ensemble: Sorcerer's Rosy Garb \\ Ensemble: Sorcerer's Rosy Raiment
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
 				i(258017),	-- Ensemble: Sorcerer's Crimson Garb \\ Ensemble: Sorcerer's Crimson Raiment
 				i(258018),	-- Ensemble: Sorcerer's Violet Garb \\ Ensemble: Sorcerer's Violet Raiment
@@ -5215,15 +5210,6 @@ root(ROOTS.Unsorted, {
 				i(258782),	-- South Guard's Silver Cloak
 				i(258783),	-- South Guard's Silver Cuirass
 				i(258784),	-- Ensemble: South Guard's Silver Raiment \\ Ensemble: Silver Raiment of the South Guardian
-				i(258785),	-- South Guard's Golden Facemask
-				i(258786),	-- South Guard's Golden Mantle
-				i(258787),	-- South Guard's Golden Cinch
-				i(258788),	-- South Guard's Golden Greaves
-				i(258789),	-- South Guard's Golden Boots
-				i(258790),	-- South Guard's Golden Gauntlets
-				i(258791),	-- South Guard's Golden Cloak
-				i(258792),	-- South Guard's Golden Cuirass
-				i(258793),	-- Ensemble: South Guard's Golden Raiment \\ Ensemble: Golden Raiment of the South Guardian
 				i(258794),	-- South Guard's Copper Facemask
 				i(258795),	-- South Guard's Copper Mantle
 				i(258796),	-- South Guard's Copper Cinch
@@ -5256,10 +5242,8 @@ root(ROOTS.Unsorted, {
 				i(260389),	-- Light Blue Wooden Shortbow
 				i(260390),	-- Light Brown Wooden Shortbow
 				i(260391),	-- Pale Wooden Shortbow
-				i(260392),	-- Pink Wooden Shortbow
 				i(260393),	-- Purple Wooden Shortbow
 				i(260395),	-- Rugged Wooden Shortbow
-				i(260396),	-- Tranquillien Archer's Bow \\ White Wooden Shortbow
 				i(260397),	-- Sea Green Wooden Shortbow
 				i(260398),	-- South Guard's Iron Handwraps
 				i(260399),	-- South Guard's Copper Handwraps
@@ -5273,17 +5257,7 @@ root(ROOTS.Unsorted, {
 				i(260413),	-- Copper Chainkini
 				i(260415),	-- Silver Chainkini
 				i(260416),	-- Gold Chainkini
-				i(260933),	-- Basic Pink Quiver
-				i(260935),	-- Tranquillien Archer's Quiver \\ Basic White Quiver
 				i(260936),	-- Basic Brown Quiver
-				i(262358),	-- Sindorei Captain's Mantle \\ Crimson Plate Shoulders
-				i(262369),	-- Sindorei Handglaive \\ Crimson Wrist Blade
-				i(262370),	-- Longbow of the Shattered Sun \\ Crimson Golden Bow
-				i(262371),	-- Bronze Magister's Courtstaff \\ Crimson Magister's Staff
-				i(262372),	-- Quel'dorei Bladestaff \\ Golden Magister's Staff
-				i(262373),	-- Quel'dorei Poleblade \\ Golden Ranseur
-				i(262374),	-- Sunfury Apprentice's Wand \\ Magister's Golden Wand
-				i(262377),	-- Sunfury Battlemage's Stave \\ Sindorei Magister's Staff
 				i(263500),	-- Skymaster's Blood Mantle
 				i(263501),	-- Skymaster's Blood Cloak
 				i(263502),	-- Skymaster's Blood Tabard
@@ -5342,7 +5316,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(258488),	-- Skypaw Glimmerfur
-				i(260580),	-- Cloudborn Razorwing
 			}),
 			filter(QUEST_ITEMS, {
 				i(252952),	-- Bewitched Berries
