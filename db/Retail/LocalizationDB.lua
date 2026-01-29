@@ -974,9 +974,11 @@ _.HeaderConstants = {
 	KALIMDOR_CUP_HEADER = -570,
 	LEGENDARIES = -221,
 	LEGS = -95,
+	LEVELING_CHARACTERS = -712,
 	LOVE_IS_IN_THE_AIR_HEADER = -579,
 	LUNAR_FESTIVAL_HEADER = -580,
 	MARCH_OF_THE_TADPOLES_HEADER = -581,
+	MAX_LEVEL_CHARACTERS = -713,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -582,
 	MISSIONS = -116,
 	MOUNT_MODS = -41,
@@ -1620,6 +1622,8 @@ localize(L.HEADER_NAMES, {
 	[-709] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 	[-711] = "Endeavors",
+	[-712] = "Leveling Characters",
+	[-713] = "Max Level Characters",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1728,6 +1732,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-696] = "After completing The Shadow of the Sentinax quest, uncommon Sentinax Beacons can drop from mobs underneath the Sentinax. You can then use these beacons to summon portals while the Sentinax remains in the area.\n\nEach Sentinax Beacon summons mobs that can drop rare quality Sentinax Beacons of that color that can be used to empower the portals to sometimes have those portals spawn Rares that ultimately can drop the associated Portal Stone (boss).\n\nKeep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon. Rare quality Sentinax Beacons can also be acquired by interacting with Unstable Nether Portals when the Nether Disruptor is up. (Not available in Legion Remix!)",
 	[-703] = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
 	[-708] = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
+	[-712] = "Contains things that can be obtained only by characters that are not max level.",
+	[-713] = "Contains things that can be obtained only by max level characters.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2300,6 +2306,8 @@ localize(L.HEADER_ICONS, {
 	[-705] = 136106,
 	[-708] = 132529,
 	[-711] = 134495,
+	[-712] = 236565,
+	[-713] = 236569,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

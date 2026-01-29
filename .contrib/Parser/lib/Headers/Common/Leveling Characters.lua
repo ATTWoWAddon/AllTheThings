@@ -1,0 +1,31 @@
+LEVELING_CHARACTERS = createHeader({
+	readable = "Leveling Characters",
+	constant = "LEVELING_CHARACTERS",
+	icon = 236565,	-- Level 40 Achievement Icon. If someone has a better idea, go for it.
+	text = {
+		en = "Leveling Characters",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Contains things that can be obtained only by characters that are not max level.",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+});

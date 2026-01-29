@@ -1891,58 +1891,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(251519),	-- Key of Fused Darkness
 
-			-- Armor? Pre-patch?
-			i(251563),	-- Ascension Agitator's Warglaive
-			i(251564),	-- Ascension Agitator's Shield
-			i(251565),	-- Ascension Agitator's Censer
-			i(251566),	-- Ascension Agitator's Greatsword
-			i(251567),	-- Ascension Agitator's Staff
-			i(251568),	-- Ascension Agitator's Spear
-			i(251569),	-- Ascension Agitator's Cudgel
-			i(251570),	-- Ascension Agitator's Mace
-			i(251571),	-- Ascension Agitator's Dagger
-			i(251572),	-- Ascension Agitator's Axe
-			i(251573),	-- Ascension Agitator's Bracers
-			i(251574),	-- Ascension Agitator's Greatbelt
-			i(251575),	-- Ascension Agitator's Pauldrons
-			i(251576),	-- Ascension Agitator's Greaves
-			i(251577),	-- Ascension Agitator's Bascinet
-			i(251578),	-- Ascension Agitator's Gauntlets
-			i(251579),	-- Ascension Agitator's Sollerets
-			i(251580),	-- Ascension Agitator's Surcoat
-			i(251581),	-- Ascension Agitator's Mail Cuffs
-			i(251582),	-- Ascension Agitator's Girdle
-			i(251583),	-- Ascension Agitator's Spaulders
-			i(251584),	-- Ascension Agitator's Petticoat
-			i(251585),	-- Ascension Agitator's Helmet
-			i(251586),	-- Ascension Agitator's Grips
-			i(251587),	-- Ascension Agitator's Boots
-			i(251588),	-- Ascension Agitator's Hauberk
-			i(251589),	-- Ascension Agitator's Bindings
-			i(251590),	-- Ascension Agitator's Clasp
-			i(251591),	-- Ascension Agitator's Mantle
-			i(251592),	-- Ascension Agitator's Breeches
-			i(251593),	-- Ascension Agitator's Hood
-			i(251594),	-- Ascension Agitator's Gloves
-			i(251595),	-- Ascension Agitator's Shoes
-			i(251596),	-- Ascension Agitator's Doublet
-			i(251597),	-- Ascension Agitator's Wraps
-			i(251598),	-- Ascension Agitator's Cincture
-			i(251599),	-- Ascension Agitator's Amice
-			i(251600),	-- Ascension Agitator's Leggings
-			i(251601),	-- Ascension Agitator's Mitre
-			i(251602),	-- Ascension Agitator's Mitts
-			i(251603),	-- Ascension Agitator's Soles
-			i(251604),	-- Ascension Agitator's Robe
-			i(251605),	-- Ascension Agitator's Band
-			i(251606),	-- Ascension Agitator's Ring
-			i(251607),	-- Ascension Agitator's Cloak
-			i(251608),	-- Ascension Agitator's Pendant
-			i(251609),	-- Ascension Agitator's Choker
-			i(251610),	-- Ascension Agitator's Cape
-			i(251611),	-- Ascension Agitator's Cowl
-			i(251612),	-- Ascension Agitator's Shawl
-
 			-- Inscribe
 			i(251629),	-- Technique: Contract: The Amani Tribe
 
@@ -4192,7 +4140,6 @@ root(ROOTS.Unsorted, {
 			i(265039),	-- Silvermoon Splendor
 
 			-- Misc
-			i(265040),	-- Fractured Void Focus
 			i(265041),	-- Singed Ritual Parchment
 			i(265042),	-- Tarnished Shadow Torque
 			i(265043),	-- Dented Voidblade Pommel

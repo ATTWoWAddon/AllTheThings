@@ -2627,6 +2627,7 @@ i(260689);	-- Fine Bioluminescent Powder
 i(260638);	-- Fine Void Residue
 i(260642);	-- Fossilized Wildlife
 i(260639);	-- Fractured Bone
+i(265040);	-- Fractured Void Focus
 i(238481);	-- Glittering Garbage
 i(260661);	-- Glowing Shrub
 i(238485);	-- Grotesque Globule
