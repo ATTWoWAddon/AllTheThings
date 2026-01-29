@@ -193,7 +193,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["questID"] = 94514,
 			}),
 			n(253378, {	-- Voice of the Eclipse
-				["description"] = "This Rare has a chance to be summoned anywhere in Twilight Highlands. Watch out for Void Hooks on the ground.",
+				["description"] = "This Rare has a chance to be summoned anywhere in Twilight Highlands.\n\nDestroy Disparate Ephemera to force the Ephemeral Void to coalesce and bring forth the Voice of the Eclipse.",
+				["crs"] = {
+					253329,	-- Disparate Ephemera
+					253605,	-- Ephemeral Void
+				},
 				["maps"] = { TWILIGHT_HIGHLANDS },
 				["questID"] = 94506,
 			}),
