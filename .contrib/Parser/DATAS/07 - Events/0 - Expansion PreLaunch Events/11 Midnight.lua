@@ -130,67 +130,51 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			-- Several rares share Spawn Points. Location depends on which Rare is conducting the Ritual.
 			n(246462, {	-- Archbishop Benedictus
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
-				["questID"] = 91473,
 			}),
 			n(246343, {	-- Asira Dawnslayer
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 91472,
 			}),
 			n(237853, {	-- Berg the Spellfist
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
-				["questID"] = 94507,
 			}),
 			n(246478, {	-- Commander Ix'vaarha
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 94517,
 			}),
 			n(237997, {	-- Corla, Herald of Twilight
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
-				["questID"] = 91470,
 			}),
 			n(246840, {	-- Executioner Lynthelma
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
-				["questID"] = 94508,
 			}),
 			n(246549, {	-- Ez'Haadosh the Liminality
 				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
-				["questID"] = 91469,
 			}),
 			n(246565, {	-- Gustavan, Herald of the End
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
-				["questID"] = 94509,
 			}),
 			n(246471, {	-- Ix the Bloodfallen
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 94516,
 			}),
 			n(246566, {	-- Mirrorvise
 				["coord"] = { 45.4, 49.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 94511,
 			}),
 			n(246577, {	-- Nedrand the Eyegorger
 				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
-				["questID"] = 91474,
 			}),
 			n(246460, {	-- Ray of Putrescence
 				["coord"] = { 71.0, 30.6, TWILIGHT_HIGHLANDS },
-				["questID"] = 91468,
 			}),
 			n(246572, {	-- Redeye the Skullchewer
 				["coord"] = { 64.9, 52.5, TWILIGHT_HIGHLANDS },
-				["questID"] = 94513,
 			}),
 			n(246558, {	-- Saligrum the Observer
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
-				["questID"] = 94512,
 			}),
 			n(246559, {	-- Sharfadi, Bulwark of the Night
 				["coord"] = { 42.6, 17.2, TWILIGHT_HIGHLANDS },
-				["questID"] = 94518,
 			}),
 			n(246844, {	-- T'aavihan the Unbound
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
-				["questID"] = 94514,
 			}),
 			n(253378, {	-- Voice of the Eclipse
 				["description"] = "This Rare has a chance to be summoned anywhere in Twilight Highlands.\n\nDestroy Disparate Ephemera to force the Ephemeral Void to coalesce and bring forth the Voice of the Eclipse.",
@@ -199,15 +183,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					253605,	-- Ephemeral Void
 				},
 				["maps"] = { TWILIGHT_HIGHLANDS },
-				["questID"] = 94506,
 			}),
 			n(246272, {	-- Void Zealot Devinda
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 91471,
 			}),
 			n(246578, {	-- Voidclaw Hexathor
 				["coord"] = { 46.8, 25.1, TWILIGHT_HIGHLANDS },
-				["questID"] = 94510,
 			}),
 		}),
 		n(REWARDS, {
@@ -430,16 +411,33 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 		})),
 	}),
-}))
+}));
 
---[[
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(EXPANSION_PRELAUNCH, {
-		["timeline"] = { ADDED_12_0_0 },
+		["timeline"] = { ADDED_12_0_0, REMOVED_12_0_0 },
 		["groups"] = {
-			n(QUESTS, {
-
+			n(QUESTS, {	-- Rare questIDs were removed third day of the pre-patch to make them always drop the gear
+				q(91473),	-- Archbishop Benedictus
+				q(91472),	-- Asira Dawnslayer
+				q(94507),	-- Berg the Spellfist
+				q(94517),	-- Commander Ix'vaarha
+				q(91470),	-- Corla, Herald of Twilight
+				q(94508),	-- Executioner Lynthelma
+				q(91469),	-- Ez'Haadosh the Liminality
+				q(94509),	-- Gustavan, Herald of the End
+				q(94516),	-- Ix the Bloodfallen
+				q(94511),	-- Mirrorvise
+				q(91474),	-- Nedrand the Eyegorger
+				q(91468),	-- Ray of Putrescence
+				q(94513),	-- Redeye the Skullchewer
+				q(94512),	-- Saligrum the Observer
+				q(94518),	-- Sharfadi, Bulwark of the Night
+				q(94514),	-- T'aavihan the Unbound
+				q(94506),	-- Voice of the Eclipse
+				q(91471),	-- Void Zealot Devinda
+				q(94510),	-- Voidclaw Hexathor
 			}),
 		},
 	}),
-}))--]]
+}));
