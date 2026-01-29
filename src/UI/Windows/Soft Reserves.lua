@@ -28,15 +28,12 @@ local function SendGroupChatMessage(msg)
 	end
 end
 local function SendGroupMessage(msg)
-	print("SendGroupMessage", msg);
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "INSTANCE_CHAT")
 	elseif IsInRaid() then
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "RAID")
 	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "PARTY")
-	else
-		print("Not in a group");
 	end
 end
 local function SendGUIDWhisper(msg, guid)
