@@ -3,6 +3,12 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		filter(BACK_F, {
+			i(266224),	-- Brittle Cape
+			i(266221),	-- Frayed Shroud
+			i(266223),	-- Stained Drape
+			i(266216),	-- Threadbare Cloak
+		}),
 		filter(CLOTH, {
 			i(258863),	-- Threadbare Armbands
 			i(258858),	-- Threadbare Crown
@@ -46,14 +52,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	})),
 	n(ARMOR, {
 		filter(BACK_F, {
-			i(266224),	-- Brittle Cape
-			i(266221),	-- Frayed Shroud
-			i(266223),	-- Stained Drape
 			i(266210),	-- Tarnished Dawnlit Commander's Cape
 			i(266208),	-- Tarnished Dawnlit Corsair's Shroud
 			i(266209),	-- Tarnished Dawnlit Sentinel's Drape
 			i(266207),	-- Tarnished Dawnlit Spellbinder's Cloak
-			i(266216),	-- Threadbare Cloak
 		}),
 		filter(CLOTH, {
 			i(258919),	-- Tarnished Dawnlit Spellbinder's Bands
