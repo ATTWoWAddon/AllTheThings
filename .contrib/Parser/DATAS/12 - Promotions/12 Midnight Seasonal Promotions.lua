@@ -54,9 +54,10 @@ root(ROOTS.Promotions, {
 				i(107951),	-- Iron Skyreaver (MOUNT!)
 				i(232519),	-- Razeshi B. (PET!)
 			}));
-			i(260785, {	-- The Dark Portal (DECOR!)
+			ach(62387, {	-- It's Nearly Midnight
 				["description"] = "Obtained by logging in to an account with housing unlocked before the release of Midnight on March 2nd, 2026.",
 				["timeline"] = { REMOVED_12_0_X_LAUNCH },
+				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),
 			-- Season 1
 
