@@ -3,8 +3,8 @@ local _, app = ...;
 local L = app.L
 
 -- Global locals
-local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe
-	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe;
+local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
+	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
 
@@ -1682,6 +1682,10 @@ local function RowOnLeave(self)
 	GameTooltip:Hide();
 end
 local function CreateRow(container, rows, i)
+	-- apparently Blizzard's frame debugger doesn't index for numeric values on this table! Rude.
+	i = tonumber(i)
+	if not i then return end
+
 	---@class ATTRowClass: ATTButtonClass
 	local row = CreateFrame("Button", nil, container);
 	row.index = i - 1;
