@@ -719,15 +719,15 @@ local function SetRowData(self, row, data)
 		row.Summary:Show();
 		row.Label:Show();
 		row:Show();
-		
-		-- If we are searching for a given value, lock its highlight
-		if self.HightlightDatas[data] then
-			row:SetHighlightLocked(true)
-		else
-			row:SetHighlightLocked(false)
-		end
 	elseif not data then
-		return;	-- Already cleared
+		return true;	-- Already cleared
+	end
+
+	-- If we are searching for a given value, lock its highlight
+	if self.HightlightDatas[data] then
+		row:SetHighlightLocked(true)
+	else
+		row:SetHighlightLocked(false)
 	end
 
 	-- Calculate the back color
@@ -802,7 +802,10 @@ local function UpdateVisibleRowData(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		local container = self.Container;
+		local containerHeight = container:GetHeight()
 		local rows = container.rows;
+		local row = rows[1];
+		local firstRowHeight = row:GetHeight()
 
 		-- Should this window attempt to scroll to specific data?
 		if self.ScrollInfo then
@@ -823,70 +826,64 @@ local function UpdateVisibleRowData(self)
 				-- app.PrintDebug("Index",foundAt)
 				-- Actually do the scroll if it was determined above
 				-- Estimate the expected scroll position based on row heights in the current window
-				local possibleRows = math.floor((container:GetHeight() - rows[1]:GetHeight()) / rows[2]:GetHeight())
+				local possibleRows = math.floor((containerHeight - firstRowHeight) / rows[2]:GetHeight()) + 1
 				-- app.PrintDebug("Possible Rows:",possibleRows)
-				local scrollIndex = foundAt - (possibleRows / 2)
-				if scrollIndex >= totalRowCount - possibleRows then
-					scrollIndex = totalRowCount - possibleRows - 1
-				end
+				local scrollIndex = math.min(foundAt - (possibleRows / 2), totalRowCount - possibleRows)
 				-- app.PrintDebug("Scrolling to:",scrollIndex)
-				-- double scroll to ensure we force a scroll change
-				self.ScrollBar:SetValue(1)
 				self.ScrollBar:SetValue(scrollIndex)
-				-- just leave since the callback refresh will do the actual refresh
+				-- callback refresh from scroll or this directly will do the actual refresh
+				-- sometimes scroll won't actually move
+				Callback(self.Refresh, self)
 				return
 			end
 		end
 
 		-- Ensure that the first row doesn't move out of position.
-		local row = rows[1];
 		SetRowData(self, row, rowData[1]);
 
 		-- Fill the remaining rows up to the (visible) row count.
-		local current, rowCount, containerHeight, totalHeight
-			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, 1, container:GetHeight(), row:GetHeight();
-		local minIndent = nil;
-		for i=2,totalRowCount do
+		row = rows[2]
+		local current, rowHeight
+			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, row:GetHeight();
+		local maxRows = math.floor((containerHeight - firstRowHeight) / rowHeight) + 1
+		local rowCount = math.min(maxRows, #rowData)
+		local minIndent
+		for i=2,rowCount do
 			row = rows[i];
 			SetRowData(self, row, rowData[current]);
-			totalHeight = totalHeight + row:GetHeight();
-			if totalHeight > containerHeight then
-				break;
+			local indent = row.indent;
+			if indent and (not minIndent or minIndent > indent) then
+				minIndent = indent;
+			end
+			current = current + 1;
+		end
+
+		-- Apply the Min Indent adjustment if there are any rows to indent
+		if rowCount > 1 then
+			local shift = math.floor(rowHeight / 2 + 0.1)
+			-- TODO: testing moving this switch to a cached function assigned via settings OnSet event
+			if AdjustRowIndents then
+				local adjustBy = minIndent - 2
+				for i=2,rowCount do
+					row = rows[i];
+					if row.indent then
+						row.Texture:SetPoint("LEFT", row, "LEFT", (row.indent - adjustBy) * shift, 0);
+					end
+				end
 			else
-				current = current + 1;
-				rowCount = rowCount + 1;
-				local indent = row.indent;
-				if indent and (not minIndent or minIndent > indent) then
-					minIndent = indent;
+				for i=2,rowCount do
+					row = rows[i];
+					if row.indent then
+						row.Texture:SetPoint("LEFT", row, "LEFT", row.indent * shift, 0);
+					end
 				end
 			end
 		end
 
-		-- Apply the Min Indent adjustment
-		if AdjustRowIndents then
-			for i=2,rowCount do
-				row = rows[i];
-				if row.indent then
-					row.Texture:SetPoint("LEFT", row, "LEFT", (row.indent - (minIndent - 2)) * 8, 0);
-				end
-			end
-		else
-			for i=2,rowCount do
-				row = rows[i];
-				if row.indent then
-					row.Texture:SetPoint("LEFT", row, "LEFT", row.indent * 8, 0);
-				end
-			end
-		end
-
-		-- Hide the extra rows if any exist
+		-- Hide the extra rows if any exist in the row container
 		for i=math.max(2, rowCount + 1),#rows do
-			local row = rows[i];
-			if row.ref then
-				SetRowData(self, row, nil);
-			else
-				break;
-			end
+			-- Ignoring cleaning rows beyond already cleaned ones seems fine as long as people don't be weird
+			if SetRowData(self, rows[i], nil) then break end
 		end
 		self:SetMinMaxValues(rowCount, totalRowCount);
 
@@ -1760,6 +1757,7 @@ local function CreateRow(container, rows, i)
 	row.Label:SetPoint("LEFT", row.Texture, "RIGHT", 2, 0);
 
 	-- Clear the Row Data Initially
+	row.ref = false
 	SetRowData(container, row, nil);
 	return row;
 end
@@ -2725,7 +2723,7 @@ local function BuildWindow(suffix)
 	local container = CreateFrame("Frame", nil, window);
 	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
 	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
-	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 5);
 	window.Container = container;
 	container.rows = setmetatable({}, {
 		__index = function(rows, i)
