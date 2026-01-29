@@ -407,7 +407,7 @@ end
 local GetTimerunningSeason;
 local PlayerGetTimerunningSeasonID = PlayerGetTimerunningSeasonID;
 -- Don't add the Timerunning Filter if there's no Season active!
-local IsTimerunningActive = true
+local IsTimerunningActive = false
 if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 	-- Timerunning API is available.
 	local timerunningSeasons = L.EVENT_TIMERUNNING_SEASONS;
