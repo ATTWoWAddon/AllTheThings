@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Normalize Lua Table",
+      "type": "shell",
+      "command": "node",
+      "args": ["${workspaceFolder}/normalize-lua-table.js", "\"${file}\""],
+      "problemMatcher": [],
+      "group": "none"
+    }
+  ]
+}
