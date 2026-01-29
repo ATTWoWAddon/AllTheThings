@@ -55,8 +55,8 @@ root(ROOTS.Promotions, {
 				i(232519),	-- Razeshi B. (PET!)
 			}));
 			i(260785, {	-- The Dark Portal (DECOR!)
-				["description"] = "Obtained through watching the State of Azeroth broadcast on Twitch or YouTube on January 29th at 09:00 a.m. PST.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",
-				["timeline"] = { "removed 12.0.0.99999" },
+				["description"] = "Obtained by logging in to an account with housing unlocked before the release of Midnight on March 2nd, 2026.",
+				["timeline"] = { REMOVED_12_0_X_LAUNCH },
 			}),
 			-- Season 1
 
