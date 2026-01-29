@@ -26,7 +26,7 @@ INFINITE_BAZAAR = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "永恒集市有多个位置。",
-		-- TODO: tw = "",
+		tw = "無限市集有多個位置。",
 	},
 	-- #endif
 });

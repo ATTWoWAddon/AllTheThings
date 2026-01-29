@@ -231,7 +231,7 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "暗黑破坏神 IV：憎恨之王",
-		-- TODO: tw = "",
+		tw = "暗黑破壞神IV：憎恨之王",
 	},
 	description = {
 		en = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",

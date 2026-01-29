@@ -12,7 +12,7 @@ RAID_GEAR_CONVERSION = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "团队装备转换",
-		-- TODO: tw = "",
+		tw = "團隊裝備轉換",
 	},
 	description = {
 		en = "When transferring a Timerunner to Retail, any Normal+ raid drop in your |cffFF0000bags and bank only|R will grant the appearances for their LFR, N, H, and M difficulty Remix variants.",
