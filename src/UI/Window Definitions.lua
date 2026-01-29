@@ -1990,70 +1990,41 @@ end
 -- Window UI Event Handlers
 local tinsert = tinsert;
 local InCombatLockdown = InCombatLockdown;
-function app:BuildSearchResponse(groups, field, value)
-	if groups then
-		local t;
-		for i,group in ipairs(groups) do
-			if not group.IgnoreBuildRequests then
-				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
-					if not t then t = {}; end
-					tinsert(t, app.CloneClassInstance(group));
-				else
-					local response = app:BuildSearchResponse(group.g, field, value);
-					if response then
-						if not t then t = {}; end
-						local clone = app.CloneClassInstance(group, true);
-						clone.g = response;
-						tinsert(t, clone);
-					end
-				end
-			end
-		end
-		return t;
-	end
-end
-function app:BuildFlatSearchFilteredResponse(groups, filter, t)
+local function InternalBuildFlatSearchFilteredResponse(groups, filter, t)
 	if groups then
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				if filter(group) then
 					tinsert(t, app.CloneClassInstance(group));
 				elseif group.g then
-					app:BuildFlatSearchFilteredResponse(group.g, filter, t);
+					InternalBuildFlatSearchFilteredResponse(group.g, filter, t);
 				end
 			end
 		end
 	end
 end
+function app:BuildFlatSearchFilteredResponse(...)
+	return InternalBuildFlatSearchFilteredResponse(...);
+end
 function app:BuildFlatSearchResponse(groups, field, value, t)
-	if groups then
-		for i,group in ipairs(groups) do
-			if not group.IgnoreBuildRequests then
-				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
-					tinsert(t, app.CloneClassInstance(group));
-				elseif group.g then
-					app:BuildFlatSearchResponse(group.g, field, value, t);
-				end
-			end
-		end
+	if field == "requireSkill" then
+		InternalBuildFlatSearchFilteredResponse(groups, function(group)
+			local v = group[field];
+			return v and (v == value or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value);
+		end, t);
+	else
+		InternalBuildFlatSearchFilteredResponse(groups, function(group)
+			return group[field] == value;
+		end, t);
 	end
 end
 function app:BuildFlatSearchResponseForField(groups, field, t)
-	if groups then
-		for i,group in ipairs(groups) do
-			if not group.IgnoreBuildRequests then
-				if group[field] then
-					tinsert(t, app.CloneClassInstance(group));
-				elseif group.g then
-					app:BuildFlatSearchResponseForField(group.g, field, t);
-				end
-			end
-		end
-	end
+	InternalBuildFlatSearchFilteredResponse(groups, function(group)
+		return group[field];
+	end, t);
 end
-function app:BuildSearchFilteredResponse(groups, filter)
+
+local function InternalBuildSearchFilteredResponse(groups, filter)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
@@ -2062,7 +2033,7 @@ function app:BuildSearchFilteredResponse(groups, filter)
 					if not t then t = {}; end
 					tinsert(t, app.CloneClassInstance(group));
 				else
-					local response = app:BuildSearchFilteredResponse(group.g, filter);
+					local response = InternalBuildSearchFilteredResponse(group.g, filter);
 					if response then
 						if not t then t = {}; end
 						local clone = app.CloneClassInstance(group, true);
@@ -2075,27 +2046,25 @@ function app:BuildSearchFilteredResponse(groups, filter)
 		return t;
 	end
 end
-function app:BuildSearchResponseForField(groups, field)
-	if groups then
-		local t;
-		for i,group in ipairs(groups) do
-			if not group.IgnoreBuildRequests then
-				if group[field] then
-					if not t then t = {}; end
-					tinsert(t, app.CloneClassInstance(group));
-				else
-					local response = app:BuildSearchResponseForField(group.g, field);
-					if response then
-						if not t then t = {}; end
-						local clone = app.CloneClassInstance(group, true);
-						clone.g = response;
-						tinsert(t, clone);
-					end
-				end
-			end
-		end
-		return t;
+function app:BuildSearchFilteredResponse(...)
+	return InternalBuildSearchFilteredResponse(...);
+end
+function app:BuildSearchResponse(groups, field, value)
+	if field == "requireSkill" then
+		return InternalBuildSearchFilteredResponse(groups, function(group)
+			local v = group[field];
+			return v and (v == value or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value);
+		end);
+	else
+		return InternalBuildSearchFilteredResponse(groups, function(group)
+			return group[field] == value;
+		end);
 	end
+end
+function app:BuildSearchResponseForField(groups, field)
+	return InternalBuildSearchFilteredResponse(groups, function(group)
+		return group[field];
+	end);
 end
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
