@@ -2430,6 +2430,7 @@ MobileDB.GameObject = {
 	[507870] = true,	-- Weathered Journal Page @ 71, 59.2, 2369 (q:85571)
 	[508366] = true,	-- Pile of Unsorted Trash (q:85888)
 	[508727] = true,	-- Partially-Drained Battery
+	[509426] = true,	-- Bloodeye Cage (wq:86959)
 	[509461] = true,	-- Sealed Chest (q:84762)
 	[509463] = true,	-- Stolen Coffer (q:84762)
 	[509464] = true,	-- Sealed Chest (q:84762)
