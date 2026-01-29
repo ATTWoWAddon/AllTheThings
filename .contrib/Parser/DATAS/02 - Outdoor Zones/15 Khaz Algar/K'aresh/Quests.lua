@@ -2589,7 +2589,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coords"] = {
 							{ 44.4, 50.3, DORNOGAL },
 							{ 50.5, 16.6, STORMWIND_CITY },
-							--{ XX.X, YY.Y, ORGRIMMAR },
+							{ 64.0, 59.9, 86 },	-- Cleft of Shadow, Orgrimmar
 							{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 						},
 					}),

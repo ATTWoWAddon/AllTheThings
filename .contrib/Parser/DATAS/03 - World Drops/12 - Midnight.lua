@@ -1,7 +1,49 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		filter(CLOTH, {
+			i(258863),	-- Threadbare Armbands
+			i(258858),	-- Threadbare Crown
+			i(258860),	-- Threadbare Leggings
+			i(258856),	-- Threadbare Mantle
+			i(258859),	-- Threadbare Mitts
+			i(258857),	-- Threadbare Sash
+			i(258861),	-- Threadbare Slippers
+			i(258862),	-- Threadbare Vestments
+		}),
+		filter(LEATHER, {
+			i(258878),	-- Frayed Boots
+			i(258875),	-- Frayed Britches
+			i(258876),	-- Frayed Guise
+			i(258877),	-- Frayed Handwraps
+			i(258874),	-- Frayed Shoulderpads
+			i(258879),	-- Frayed Strap
+			i(258873),	-- Frayed Tunic
+			i(258872),	-- Frayed Wristwraps
+		}),
+		filter(MAIL, {
+			i(258855),	-- Stained Armguards
+			i(258850),	-- Stained Fistguards
+			i(258848),	-- Stained Girdle
+			i(258852),	-- Stained Greaves
+			i(258851),	-- Stained Hauberk
+			i(258849),	-- Stained Headguard
+			i(258854),	-- Stained Pauldrons
+			i(258853),	-- Stained Sabatons
+		}),
+		filter(PLATE, {
+			i(258871),	-- Brittle Armplates
+			i(258865),	-- Brittle Breastplate
+			i(258867),	-- Brittle Faceguard
+			i(258866),	-- Brittle Gauntlets
+			i(258868),	-- Brittle Legguards
+			i(258869),	-- Brittle Pauldrons
+			i(258864),	-- Brittle Waistguard
+			i(258870),	-- Brittle Warboots
+		}),
+	})),
 	n(ARMOR, {
 		filter(BACK_F, {
 			i(266224),	-- Brittle Cape
@@ -22,14 +64,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258918),	-- Tarnished Dawnlit Spellbinder's Sash
 			i(258913),	-- Tarnished Dawnlit Spellbinder's Slippers
 			i(258916),	-- Tarnished Dawnlit Spellbinder's Trousers
-			i(258863),	-- Threadbare Armbands
-			i(258858),	-- Threadbare Crown
-			i(258860),	-- Threadbare Leggings
-			i(258856),	-- Threadbare Mantle
-			i(258859),	-- Threadbare Mitts
-			i(258857),	-- Threadbare Sash
-			i(258861),	-- Threadbare Slippers
-			i(258862),	-- Threadbare Vestments
 		}),
 		filter(FINGER_F, {
 			i(258908),	-- Tarnished Dawnlit Band
@@ -37,14 +71,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258909),	-- Tarnished Dawnlit Signet
 		}),
 		filter(LEATHER, {
-			i(258878),	-- Frayed Boots
-			i(258875),	-- Frayed Britches
-			i(258876),	-- Frayed Guise
-			i(258877),	-- Frayed Handwraps
-			i(258874),	-- Frayed Shoulderpads
-			i(258879),	-- Frayed Strap
-			i(258873),	-- Frayed Tunic
-			i(258872),	-- Frayed Wristwraps
 			i(258926),	-- Tarnished Dawnlit Corsair's Belt
 			i(258921),	-- Tarnished Dawnlit Corsair's Boots
 			i(258927),	-- Tarnished Dawnlit Corsair's Bracers
@@ -55,14 +81,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258920),	-- Tarnished Dawnlit Corsair's Tunic
 		}),
 		filter(MAIL, {
-			i(258855),	-- Stained Armguards
-			i(258850),	-- Stained Fistguards
-			i(258848),	-- Stained Girdle
-			i(258852),	-- Stained Greaves
-			i(258851),	-- Stained Hauberk
-			i(258849),	-- Stained Headguard
-			i(258854),	-- Stained Pauldrons
-			i(258853),	-- Stained Sabatons
 			i(258935),	-- Tarnished Dawnlit Sentinel's Armguards
 			i(258932),	-- Tarnished Dawnlit Sentinel's Chausses
 			i(258931),	-- Tarnished Dawnlit Sentinel's Cover
@@ -76,14 +94,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258911),	-- Tarnished Dawnlit Pendant
 		}),
 		filter(PLATE, {
-			i(258871),	-- Brittle Armplates
-			i(258865),	-- Brittle Breastplate
-			i(258867),	-- Brittle Faceguard
-			i(258866),	-- Brittle Gauntlets
-			i(258868),	-- Brittle Legguards
-			i(258869),	-- Brittle Pauldrons
-			i(258864),	-- Brittle Waistguard
-			i(258870),	-- Brittle Warboots
 			i(258943),	-- Tarnished Dawnlit Commander's Armplates
 			i(258936),	-- Tarnished Dawnlit Commander's Breastplate
 			i(258938),	-- Tarnished Dawnlit Commander's Gauntlets
@@ -128,4 +138,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 	filter(RECIPES, {
 		i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)	-- Mentions "World Nullaeus Creatures"
 	}),
-}));
+})));

@@ -8,6 +8,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		--	["sourceQuests"] = {
 		--	},
 		--	["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				q(92143, {	-- Arcane Reallocation
+					["coord"] = { 37.5, 64.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						i(269606),	-- Borrowed Wand (QI!)
+						i(258034),	-- Unstable Arcana (QI!)
+					},
+				}),
+				q(92122, {	-- Beneath the Sunsails
+					["coord"] = { 37.9, 44.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92141, {	-- Classic Threats
 					["coord"] = { 38.2, 22.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
@@ -19,6 +29,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92146, {	-- Containment Zone
 					["coord"] = { 54.5, 59.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				q(92138, {	-- Mobilize! Enlist! Recruit!
+					["coord"] = { 41.7, 20.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 				q(92144, {	-- No Squatters
 					["coord"] = { 61.2, 48.7, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -51,6 +64,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
 				--q(86645),	-- Hidden Quest [DNT], when you fly into Special Assignment: The Grand Magister's Drink wq zone.
+				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA but when it wasn't up on map (@38.7, 64.1).
 			}),
 		}),
 	}),

@@ -70,6 +70,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			-- Currently unaware of objectIDs so treated just as reward
 			i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 			i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
+			i(253245),	-- Cracked Keystone (QI!/QS!)
 			i(252415),	-- Trovehunter's Bounty
 			--Blessings
 			i(264669),	-- Blessing of Potency
@@ -142,6 +143,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						filter(TRINKET_F, {
 							--TODO: They probably gonna exist outside of season but idk?
 							i(251787),	-- Sealed Chaos Urn
+							i(251791),	-- Holy Retributor's Order (also was as wq reward)
 						}),
 					}),
 					n(WEAPONS, {
@@ -192,6 +194,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["provider"] = { "i", 254674 },	-- Ancient Curio (QI!/QS!)
 				["maps"] = ALL_REGULAR_DELVES_MID,
 			}),
+			q(92600, {	-- Cracked Keystone
+				["provider"] = { "i", 253245 },	-- Cracked Keystone (QI!/QS!)
+				["maps"] = ALL_REGULAR_DELVES_MID,
+			}),
 		})),
 		mapped(n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			o(584752, {	-- Mislaid Curiosity
@@ -202,6 +208,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					--i(254675),	-- Ancient Curio (QS!)
 					-- Boons (Renown 1)
 					i(260884),	-- Boon of Abstinence (Rare)
+					i(267241),	-- Boon of Abstinence (Epic)
 					i(260911),	-- Boon of Fortitude (Rare)
 					i(260878),	-- Boon of Possibilities (Rare)
 					i(267239),	-- Boon of Possibilities (Epic)
@@ -337,7 +344,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 		n(DELVES_MID_S1, {
 			-- Seasonal Delver's Journey Rewards
-			--q(),	--
+			--q(92601),	-- pop after looting Cracked Keystone
 		}),
 	})),
 }));
