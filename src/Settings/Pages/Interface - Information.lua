@@ -222,95 +222,94 @@ local KnownByIgnoredTypes = {
 	Mount = true,
 	MountWithItem = true,
 }
+
 local knownBy = {};
 
--- Helper: Map Race IDs to Factions (Classic / TBC Era)
-local RACE_ID_TO_FACTION = {
-    [1] = "Alliance", -- Human
-    [2] = "Horde",    -- Orc
-    [3] = "Alliance", -- Dwarf
-    [4] = "Alliance", -- Night Elf
-    [5] = "Horde",    -- Undead (Scourge)
-    [6] = "Horde",    -- Tauren
-    [7] = "Alliance", -- Gnome
-    [8] = "Horde",    -- Troll
-    [10] = "Horde",   -- Blood Elf
-    [11] = "Alliance",-- Draenei
+-- Helper: Map Faction IDs to Name (1 = Horde, 2 = Alliance)
+local FACTION_ID_TO_NAME = {
+	[1] = "Horde",
+	[2] = "Alliance",
 }
+
+-- Helper: Determine Faction safely (checks Name -> ID)
+local function GetCharacterFaction(char)
+	-- 1. Check direct name (e.g. "Alliance")
+	if char.faction then return char.faction end
+	
+	-- 2. Check Faction ID (e.g. 2 matches "Alliance")
+	if char.factionID and FACTION_ID_TO_NAME[char.factionID] then
+		return FACTION_ID_TO_NAME[char.factionID]
+	end
+	
+	return "Unknown"
+end
 
 -- HELPER: Sorts and Formats the "Known By" list
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
-    if #knownBy > 0 and kind then
-        -- Pre-process: Ensure every character has a faction if possible
-        for _, char in ipairs(knownBy) do
-            if not char.faction and char.raceID then
-                char.faction = RACE_ID_TO_FACTION[char.raceID]
-            end
-        end
+	if #knownBy > 0 and kind then
+		-- 1. Sort by Realm -> Faction -> Name (Alphabetical)
+		app.Sort(knownBy, function(a, b)
+			-- Sort by Realm
+			local rA, rB = a.realm or "", b.realm or ""
+			if rA ~= rB then return rA < rB end
+			
+			-- Sort by Faction
+			local fA, fB = GetCharacterFaction(a), GetCharacterFaction(b)
+			if fA ~= fB then return fA < fB end
+			
+			-- Sort by Name (Strip color codes)
+			local nA = (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
+			local nB = (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
+			return nA < nB
+		end);
 
-        -- 1. Sort by Realm -> Faction -> Name
-        app.Sort(knownBy, function(a, b)
-            -- Sort by Realm
-            local rA, rB = a.realm or "", b.realm or ""
-            if rA ~= rB then return rA < rB end
-            
-            -- Sort by Faction
-            local fA, fB = a.faction or "", b.faction or ""
-            if fA ~= fB then return fA < fB end
-            
-            -- Sort by Name (Strip colors)
-            local nA = (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
-            local nB = (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
-            return nA < nB
-        end);
+		-- 2. Add Main Header
+		tinsert(tooltipInfo, { left = kind:format(""), color = app.Colors.TooltipDescription });
 
-        -- 2. Add Main Header
-        tinsert(tooltipInfo, { left = kind:format(""), color = app.Colors.TooltipDescription });
+		local currentHeader = nil
+		local namesInGroup = {}
 
-        local currentHeader = nil
-        local namesInGroup = {}
+		local function FlushGroup()
+			if #namesInGroup > 0 then
+				if currentHeader and currentHeader ~= "" then
+					tinsert(tooltipInfo, { left = "  " .. currentHeader, color = app.Colors.TooltipDescription })
+				end
+				tinsert(tooltipInfo, { 
+					left = "    " .. table.concat(namesInGroup, ", "), 
+					wrap = true, 
+					color = app.Colors.TooltipDescription 
+				})
+				wipearray(namesInGroup)
+			end
+		end
 
-        local function FlushGroup()
-            if #namesInGroup > 0 then
-                if currentHeader and currentHeader ~= "" then
-                    tinsert(tooltipInfo, { left = "  " .. currentHeader, color = app.Colors.TooltipDescription })
-                end
-                tinsert(tooltipInfo, { 
-                    left = "    " .. table.concat(namesInGroup, ", "), 
-                    wrap = true, 
-                    color = app.Colors.TooltipDescription 
-                })
-                wipearray(namesInGroup)
-            end
-        end
+		for i, character in ipairs(knownBy) do
+			-- Build Header: "Realm, Faction"
+			local header = character.realm or "Unknown Realm"
+			local faction = GetCharacterFaction(character)
+			
+			if faction and faction ~= "" and faction ~= "Unknown" then
+				header = header .. ", " .. faction
+			end
 
-        for i, character in ipairs(knownBy) do
-            -- Build Header: "Realm, Faction"
-            local header = character.realm or "Unknown Realm"
-            -- Use the faction we determined (or "Unknown")
-            local faction = character.faction or "Unknown Faction"
-            
-            header = header .. ", " .. faction
+			if header ~= currentHeader then
+				FlushGroup()
+				currentHeader = header
+			end
 
-            if header ~= currentHeader then
-                FlushGroup()
-                currentHeader = header
-            end
-
-            -- Clean Name
-            local name = character.text or "???"
-            if character.realm and character.realm ~= "" then
-                local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
-                name = name:gsub("%-" .. safeRealm, "")
-            end
-            table.insert(namesInGroup, name)
-        end
-        FlushGroup()
-        wipearray(knownBy);
-    end
+			-- Clean Name: Remove "-Realm"
+			local name = character.text or "???"
+			if character.realm and character.realm ~= "" then
+				local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
+				name = name:gsub("%-" .. safeRealm, "")
+			end
+			table.insert(namesInGroup, name)
+		end
+		FlushGroup()
+		wipearray(knownBy);
+	end
 end
 
--- (The rest of the file: ProcessForCompletedBy and ProcessForKnownBy remains the same as previous working versions)
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if reference.objectiveID then return end
 
