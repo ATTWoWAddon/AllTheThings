@@ -1371,13 +1371,13 @@ end
 
 -- Implementation
 app:CreateWindow("Account Management", {
+	Commands = { "attsync", "attaccount" },
 	IgnoreQuestUpdates = true,
 	Defaults = {
 		AutoSync = true,
 		EnableBattleNet = not not BNGetInfo,
 		LinkedCharacters = LinkedCharacters,
 	},
-	Commands = { "attsync", "attaccount" },
 	OnInit = function(self, handlers)
 		-- Register for Battle.net addon messaging
 		handlers.BN_CHAT_MSG_ADDON = function(self, prefix, datastring, channel, sender)
@@ -1435,7 +1435,9 @@ app:CreateWindow("Account Management", {
 				OnClick = function(row, button)
 					if IsAltKeyDown() then
 						self.Settings.AutoSync = not self.Settings.AutoSync;
-						self:Redraw();
+						--row.ref.saved = self.Settings.AutoSync;
+						--self:Redraw();
+						app.DirectGroupUpdate(row.ref);
 					else
 						BroadcastMessage(row.ref.text, "check," .. CurrentCharacter.battleTag);
 					end
@@ -1445,17 +1447,17 @@ app:CreateWindow("Account Management", {
 			app.CreateRawText("Enable Battle.net", {
 				icon = 526421,
 				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
-				OnUpdate = function(t)
+				OnUpdate = BNGetInfo and function(t)
 					t.saved = EnableBattleNet;
 					return app.AlwaysShowUpdate(t);
-				end,
+				end or nil,
 				OnClick = function(row, button)
 					EnableBattleNet = not EnableBattleNet;
-					self.Settings.EnableBattleNet = EnableBattleNet;
-					self:Redraw();
+					--row.ref.saved = EnableBattleNet;
+					app.DirectGroupUpdate(row.ref);
+					--self:Redraw();
 					return true;
 				end,
-				OnUpdate = BNGetInfo and app.AlwaysShowUpdate or nil,
 			}),
 			app.CreateRawText("Characters", {
 				icon = 526421,
@@ -1581,6 +1583,7 @@ app:CreateWindow("Account Management", {
 		AccountWideData = ATTAccountWideData;
 		CharacterData = ATTCharacterData;
 		CurrentCharacter = app.CurrentCharacter;
+		EnableBattleNet = settings.EnableBattleNet;
 
 		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
 		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
@@ -1600,7 +1603,6 @@ app:CreateWindow("Account Management", {
 		setmetatable(linked, { __index = SilentlyLinkedCharacters });
 
 		-- Cache the current character's BattleTag.
-		EnableBattleNet = settings.EnableBattleNet;
 		if BNGetInfo then
 			local battleTag = select(2, BNGetInfo());
 			if battleTag then
@@ -1620,5 +1622,8 @@ app:CreateWindow("Account Management", {
 			UpdateBattleTags();
 			UpdateOnlineAccounts();
 		end
+	end,
+	OnSave = function(self, settings)
+		settings.EnableBattleNet = EnableBattleNet;
 	end,
 });
