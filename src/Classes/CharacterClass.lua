@@ -186,7 +186,11 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 		for guid,character in pairs(ATTCharacterData) do
 			if guid == unit or character.name == unit then
 				rawset(t, "guid", character.guid);
-				rawset(t, "name", ("%s - %s"):format(character.name or UNKNOWN, character.realm or UNKNOWN));
+				if character.realm ~= GetRealmName() then
+					rawset(t, "name", ("%s - %s"):format(character.name or UNKNOWN, character.realm or UNKNOWN));
+				else
+					rawset(t, "name", character.name or UNKNOWN);
+				end
 				rawset(t, "lvl", character.lvl);
 				if character.classID then
 					rawset(t, "classID", character.classID);

@@ -2792,7 +2792,7 @@ local function BuildWindow(suffix)
 	end
 	if definition.OnInit then
 		definition.OnInit(window, handlers);
-		-- @Creive: I don't know why OnInit should add data... isn't that for Rebuild?
+		-- @Crieve: I don't know why OnInit should add data... isn't that for Rebuild?
 		-- if not (window.data and window.data.window) and not window.IsTopLevel then
 		-- 	print(window.Suffix, "OI! You forgot to use self:SetData(data) in the OnInit!");
 		-- end
