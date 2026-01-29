@@ -1729,7 +1729,7 @@ local function CreateRow(container, rows, i)
 	-- Texture is the icon.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
-	row.Texture:SetPoint("LEFT", row, "LEFT", 8, 0);
+	row.Texture:SetPoint("LEFT", row, "LEFT");
 	row.Texture:SetPoint("BOTTOM");
 	row.Texture:SetPoint("TOP");
 	row.Texture:SetWidth(rowHeight);
@@ -2684,8 +2684,8 @@ local function BuildWindow(suffix)
 	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
-	closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
-	closeButton:SetSize(24, 24);
+	closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
+	closeButton:SetSize(20, 20);
 	window.CloseButton = closeButton;
 
 	-- The Scroll Bar.
@@ -2719,7 +2719,7 @@ local function BuildWindow(suffix)
 	-- The Row Container. This contains all of the row frames.
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
-	container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
+	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
 	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
 	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 	window.Container = container;
