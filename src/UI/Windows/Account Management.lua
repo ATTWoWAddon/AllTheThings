@@ -650,7 +650,7 @@ local deserializers = setmetatable({
 		character.raceID = tonumber(data[9]);
 		character.lastPlayed = tonumber(data[10]);
 		character.Deaths = tonumber(data[11]);
-		character.build = data[12];
+		character.build = tonumber(data[12]);
 	end,
 	TimeStamps = function(field, currentValue, data)
 		if not currentValue then
@@ -733,7 +733,7 @@ local serializers = setmetatable({
 			.. ";" .. (character.factionID or "1").. ";" .. (character.lvl or "1")
 			.. ";" .. (character.classID or "1") .. ";" .. (character.class or "CLASS")
 			.. ";" .. (character.raceID or "1") .. ";" .. (character.lastPlayed or "0")
-			.. ";" .. (character.Deaths or "0") .. ";" .. (character.build or "BUILD");
+			.. ";" .. (character.Deaths or "0") .. ";" .. (character.build or "0");
 	end,
 
 	-- These are now included inside of "Summary" to compress the data package more.
@@ -1212,8 +1212,18 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 		if primeData then
 			local buildString;
 			if character.build then
-				local expansion = app.CreateExpansion(character.build * 0.0001);
-				buildString = "|T" .. expansion.icon .. ":0|t " .. expansion.text;
+				if type(character.build) == "number" then
+					local expansion = app.CreateExpansion(character.build * 0.0001);
+					if expansion then
+						if expansion.icon then
+							buildString = "|T" .. expansion.icon .. ":0|t " .. expansion.text;
+						else
+							buildString = expansion.text;
+						end
+					end
+				else
+					character.build = nil;
+				end
 			end
 			tinsert(tooltipInfo, {
 				left = primeData.modeString,
