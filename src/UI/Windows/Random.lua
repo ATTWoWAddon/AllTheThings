@@ -278,12 +278,4 @@ app:CreateWindow("Random", {
 		end
 		self:AssignChildren();
 	end,
-	OnUpdate = function(self, force, trigger)
-		-- Update the groups without forcing Debug Mode.
-		local visibleState = app.Modules.Filter.Get.Visible();
-		app.Modules.Filter.Set.Visible()
-		self:DefaultUpdate(true);
-		app.Modules.Filter.Set.Visible(visibleState)
-		return true
-	end,
 })
