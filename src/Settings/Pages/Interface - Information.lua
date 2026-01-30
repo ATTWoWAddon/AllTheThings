@@ -293,7 +293,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			if #namesInGroup > 0 then
 				if currentHeader and currentHeader ~= "" then
 					local headerText = "  " .. currentHeader .. " (" .. #namesInGroup .. ")"
-					tinsert(tooltipInfo, { left = headerText, r = 1, g = 1, b = 1 })
+					tinsert(tooltipInfo, { left = headerText, r = 0.8, g = 0.8, b = 0.8 })
 				end
 				tinsert(tooltipInfo, { left = "    " .. table.concat(namesInGroup, ", "), wrap = true, color = app.Colors.TooltipDescription })
 				wipearray(namesInGroup)
