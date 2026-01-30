@@ -573,10 +573,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			--Delves
-			q(93421, {	-- Delver's Call: The Grudge Pit
-				["provider"] = { "o", 612264 },	-- The Grudge Pit
-				["coord"] = { 71.2, 52.1, MAP.MIDNIGHT.HARANDAR },
-			}),
 			q(93416, {	-- Delver's Call: The Gulf of Memory
 				["provider"] = { "o", 612259 },	-- The Gulf of Memory
 				["coord"] = { 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },

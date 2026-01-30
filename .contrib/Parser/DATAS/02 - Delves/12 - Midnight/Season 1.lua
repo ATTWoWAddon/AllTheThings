@@ -26,7 +26,7 @@ local ALL_REGULAR_DELVES_MID = {
 	THE_GULF_OF_MEMORY,
 	THE_GRUDGE_PIT,
 	THE_SHADOW_ENCLAVE,
-	TORMENTS_RISE,
+	--TORMENTS_RISE,
 	TWILIGHT_CRYPTS,
 };
 local ALL_THE_DELVES_MID = {
@@ -58,6 +58,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(257755),	-- Holy Bounding Hand Grenade
 			i(249220),	-- Mantle of Stars
 			i(249222),	-- Nether Entropic Kris
+			i(257683),	-- Porcelain Blade Tip
 			i(249221),	-- Sanctum's Edict
 			--Utility
 			i(249226),	-- Ebon Crown of Subjugation
@@ -71,6 +72,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
 			i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
 			i(253245),	-- Cracked Keystone (QI!/QS!)
+			i(268297),	-- Rattling Bag o' Gold
 			i(252415),	-- Trovehunter's Bounty
 			--Blessings
 			i(264669),	-- Blessing of Potency
@@ -239,16 +241,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			--	},
 			--}),
 			--o(584512),	-- Nemesis Strongbox (Poor)
-			o(584511, {	-- Nemesis Strongbox (Uncommon)
-				["groups"] = {
-					i(268297),	-- Rattling Bag o' Gold
-				},
-			}),
-			--o(584509),	-- Nemesis Strongbox (Rare)
+			o(584511),	-- Nemesis Strongbox (Uncommon)
+			o(584509),	-- Nemesis Strongbox (Rare)
 			o(584508, {	-- Nemesis Strongbox (Epic)
 				["groups"] = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
 					-- TODO: Don't ask me, ask Blizzard.
+					i(264342),	-- Cosmic Void Cache (DECOR!)
+					i(262991),	-- Two Thousand and Two Nights (COSMETIC!) (TODO: it was looted from strongbox, however could be ATAL_AMAN loot table)
 				},
 			}),
 			o(581922),	-- Hidden Trove
@@ -269,7 +269,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["groups"] = {
 					i(263178, {	-- Delver's Starter Kit
 						--["cost"] = { { "c", UNDERCOIN, 0 } },
-						--["questID"] = ???,
 					}),
 					i(263188, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
@@ -312,9 +311,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					filter(MISC, {
 						i(263179, {	-- Delver's Cosmetic Surprise Bag
-							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+							-- ["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 0?
-							--["questID"] = ???,
+							-- i(264847),	-- Dozing Vinepouch (COSMETIC!)	-- I looted it from it, need to properly sorted it out to delve
 						}),
 						i(262951, {	-- Sin'dorei Gravestone
 							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
@@ -345,6 +344,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(DELVES_MID_S1, {
 			-- Seasonal Delver's Journey Rewards
 			--q(92601),	-- pop after looting Cracked Keystone
+			--automated stuff
+			--q(93880),	-- Delver's Starter Kit (itemID 263178)
+			--q(93881),	-- Delver's Cosmetic Surprise Bag (itemID 263179)
 		}),
 	})),
 }));

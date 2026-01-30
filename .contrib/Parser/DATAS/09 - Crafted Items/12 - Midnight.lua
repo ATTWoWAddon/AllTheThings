@@ -95,6 +95,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 	}),]]--
 	prof(FISHING, {
 		n(DISCOVERY, {
+			r(1225274),	-- Blood Hunter
 			r(1225283),	-- Eversong Trout
 			r(1225276),	-- Fungalskin Pike
 			r(1225284),	-- Lucky Loa
@@ -112,6 +113,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = FISHING,
 		},{
+			FirstCraft(88614, 1225274),	-- Blood Hunter
 			FirstCraft(88620, 1225283),	-- Eversong Trout
 			FirstCraft(88612, 1225276),	-- Fungalskin Pike
 			FirstCraft(88613, 1225284),	-- Lucky Loa
@@ -129,6 +131,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		i(243343),	-- Angler's Anomaly
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
+		i(238377),	-- Blood Hunter
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
 		i(238376),	-- Lucky Loa

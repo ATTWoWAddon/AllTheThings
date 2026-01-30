@@ -24,6 +24,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(258966),	-- Lynx Collar (QI!)
 					},
 				}),
+				q(92195, {	-- Come On Down
+					["coord"] = { 64.3, 32.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92149, {	-- Complex 04 (TODO: unsure if it is not a ph name?)
 					["coord"] = { 42.2, 87.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
@@ -32,6 +35,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92138, {	-- Mobilize! Enlist! Recruit!
 					["coord"] = { 41.7, 20.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						i(250440),	-- Recruitment Fliers
+					},
 				}),
 				q(92144, {	-- No Squatters
 					["coord"] = { 61.2, 48.7, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -47,6 +53,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92120, {	-- To Understand Magic
 					["coord"] = { 35.0, 59.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(255842),	-- Training Rod of Polymorph (QI!)
+						o(613517, {	-- Tome of Polymorph
+							i(258965),	-- Tome of Polymorph (QI!)
+						}),
+					},
 				}),
 				q(92140, {	-- Uprooting Efforts
 					["coord"] = { 61.6, 55.9, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -54,6 +66,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--
 				q(92145, {	-- Special Assignment: The Grand Magister's Drink
 					["coord"] = { 40.7, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						i(253521),	-- Heron's Vision of Cloudwalking
+					},
 				}),
 		--	}),
 		}),
@@ -63,8 +78,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
-				--q(86645),	-- Hidden Quest [DNT], when you fly into Special Assignment: The Grand Magister's Drink wq zone.
-				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA but when it wasn't up on map (@38.7, 64.1).
+				--q(86645),	-- Hidden Quest [DNT], when you fly into Special Assignment: The Grand Magister's Drink wq zone (@38.7, 64.1).
+				--q(94815),	-- HIDDEN QUEST - Special Assignment: The Grand Magister's Drink [DNT], pop in area for SA (@38.7, 64.1).
+				hqt(92848),	-- Special Assignment: The Grand Magister's Drink was unlocked
+				--Wine picked up in the end of SA: The Grand Magister's Drink
+				hqt(93793),	-- Heron's Vision of Cloudwalking
 			}),
 		}),
 	}),

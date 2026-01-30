@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 240521 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							o(525374, {	--
+							o(525374, {	-- Stolen Equipment
 								i(238964),	-- Stolen Equipment (QI!)
 							}),
 						},
@@ -1080,11 +1080,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--Possible Renown 2/3 quest?
 			q(93792, {	-- Blessings of the Loa
 				["provider"] = { "n", 256510 },	-- Du'gal
-				["coord"] = { 43.1, 69.2, MAP.MIDNIGHT.ZULAMAN },
-			}),
-			--Delves
-			q(93410, {	-- Delver's Call: Twilight Crypts
-				--["provider"] = { "o", XXXX },	-- Twilight Crypts
 				["coord"] = { 43.1, 69.2, MAP.MIDNIGHT.ZULAMAN },
 			}),
 			--Odd chain, could be one of criteria questID but missing it?
