@@ -1451,9 +1451,11 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4503, {	-- Sporbit [Teal] (PET!)
 				["displayID"] = 115409,
 			}),
+			-- #if BEFORE 12.0.0
 			pet(4508, {	-- Sporbit [Yellow] (PET!)
 				["displayID"] = 115404,
 			}),
+			-- #endif
 			pet(4584, {	-- Tan Stagshell (PET!)
 				["displayID"] = 119769,
 			}),

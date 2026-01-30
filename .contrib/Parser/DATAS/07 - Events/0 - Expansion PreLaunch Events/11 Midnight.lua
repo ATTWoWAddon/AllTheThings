@@ -120,13 +120,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isDaily"] = true,
+				["isWeekly"] = true,
 			}),
 			q(91795, {	-- Disrupt the Call
 				["sourceQuest"] = 90768,	-- Cult It Out
 				["qg"] = 237504,	-- Grand Magister Rommath
 				["coord"] = { 49.9, 80.7, TWILIGHT_HIGHLANDS },
-				["isDaily"] = true,
+				["isWeekly"] = true,
 			}),
 		}),
 		n(RARES, {

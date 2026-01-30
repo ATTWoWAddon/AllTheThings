@@ -1591,8 +1591,8 @@ i(250465)}})}}),
 q(90768,{coords={{52.4,70.5,241}},qgs={246025},sourceQuests={90767},g={
 s(293078,246627,{f=9}),
 title(643)}}),
-q(87308,{coords={a[324]},isDaily=1,qgs=a[181],sourceQuests=a[481]}),
-q(91795,{coords={a[324]},isDaily=1,qgs=a[181],sourceQuests=a[481]})}),
+q(87308,{coords={a[324]},isWeekly=1,qgs=a[181],sourceQuests=a[481]}),
+q(91795,{coords={a[324]},isWeekly=1,qgs=a[181],sourceQuests=a[481]})}),
 h(-46,{
 n(246462,{coords={a[280]},g={
 crit(105740,{achID=42300,id=13})}}),
