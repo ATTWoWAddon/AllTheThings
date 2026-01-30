@@ -1621,9 +1621,15 @@ localize(L.HEADER_NAMES, {
 	[-708] = "Razer",
 	[-709] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-710] = "|cFFFFFFFFStep 1:|r Conspicious Note",
-	[-711] = "Endeavors",
 	[-712] = "Leveling Characters",
 	[-713] = "Max Level Characters",
+	[-714] = "Endeavor",
+	[-715] = "K'areshi Endeavor",
+	[-716] = "Grummle Endeavor",
+	[-717] = "Niffen Endeavor",
+	[-718] = "Sin'dorei Endeavor",
+	[-719] = "Draconic Endeavor",
+	[-720] = "Mechagnome Endeavor",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2305,9 +2311,15 @@ localize(L.HEADER_ICONS, {
 	[-703] = 1529348,
 	[-705] = 136106,
 	[-708] = 132529,
-	[-711] = 134495,
 	[-712] = 236565,
 	[-713] = 236569,
+	[-714] = 134495,
+	[-715] = 134495,
+	[-716] = 134495,
+	[-717] = 134495,
+	[-718] = 134495,
+	[-719] = 134495,
+	[-720] = 134495,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
