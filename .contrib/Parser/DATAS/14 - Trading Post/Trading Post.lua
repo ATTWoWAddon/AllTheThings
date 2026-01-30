@@ -589,8 +589,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(212373)),	-- Gossamer Magenta Gown
 				traderstender(200, i(190895)),	-- Lost Crusader's Amethyst Battleaxe
 				traderstender(200, i(212381)),	-- Love's Bulwark
-				traderstender(300, i(212375)),	-- Lovely Rosy Longbow
 				traderstender(300, i(212376)),	-- Lovely Gothic Longbow
+				traderstender(300, i(212375)),	-- Lovely Rosy Longbow
 				traderstender(250, i(212379)),	-- Love Witch's Rosy Stave
 				traderstender(200, i(212377)),	-- Love Witch's Rosy Wand
 				traderstender(100, i(212372)),	-- Magenta Masquerade Gloves
@@ -618,10 +618,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			filter(COSMETIC, {
 				traderstender(500, iensemble(212577)),	-- Arsenal: Skyborn Blades
 				traderstender(150, i(212576)),	-- Blackrock Executioner
+				traderstender(250, i(190080)),	-- Catastrophe's Edge
 				traderstender(100, i(212544)),	-- Classic Aquatic Tabard
 				traderstender(50, i(190890)),	-- Chipped Warblade
 				traderstender(200, i(212530)),	-- Corroded Augari Defender
-				traderstender(250, i(190080)),	-- Catastrophe's Edge
 				traderstender(75, i(212574)),	-- Dueler's Aquatic Shoulder Cape
 				traderstender(75, i(212573)),	-- Dueler's Cloudy Shoulder Cape
 				traderstender(100, iensemble(206322)),	-- Ensemble: Vagabond's Aquatic Threads
@@ -1994,6 +1994,111 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					["coord"] = { 47.79, 52.55, DORNOGAL },
 					["groups"] = {
 						filter(COSMETIC, {
+							traderstender(60, i(226390)),	-- Aerie Battle Mace
+							traderstender(60, i(229426)),	-- Ancient Amani Longbow
+							traderstender(50, i(190859)),	-- Apprentice's Twisted Crook
+							traderstender(300, iensemble(223004)),	-- Arsenal: Blazing Felfire Armaments
+							traderstender(300, iensemble(223421)),	-- Arsenal: Fireborn Blades
+							traderstender(300, iensemble(223418)),	-- Arsenal: Seaborn Blades
+							traderstender(300, iensemble(212577)),	-- Arsenal: Skyborn Blades
+							traderstender(200, iensemble(220759)),	-- Arsenal: Stormrider's Bronze Stormhammers
+							traderstender(200, iensemble(220755)),	-- Arsenal: Stormrider's Dark Stormhammers
+							traderstender(200, iensemble(220762)),	-- Arsenal: Stormrider's Silver Stormhammers
+							traderstender(100, i(226370)),	-- Ashen Executioner
+							traderstender(60, i(226388)),	-- Battle-Tested Obsidian Warhammer
+							traderstender(60, i(226387)),	-- Battle-Tested Warhammer
+							traderstender(100, i(212576)),	-- Blackrock Executioner
+							traderstender(60, i(223185)),	-- Blade Of The Riptide
+							traderstender(60, i(229425)),	-- Bronzebeard Battle Mace
+							traderstender(175, i(190080)),	-- Catastrophe's Edge
+							traderstender(100, i(212789)),	-- Champion's Jade Cleaver
+							traderstender(100, i(229812)),	-- Chilled Axe
+							traderstender(40, i(190890)),	-- Chipped Warblade
+							traderstender(60, i(212790)),	-- Codex of Classic Conjurations
+							traderstender(40, i(223429)),	-- Conjurer's Scarlet Staff
+							traderstender(150, i(211098)),	-- Copper Scarab Bulwark
+							traderstender(150, i(212530)),	-- Corroded Augari Defender
+							traderstender(100, i(229813)),	-- Crystalline Longbow of the Heavens
+							traderstender(100, i(225993)),	-- Cursed Copper Crossbow
+							traderstender(60, i(226389)),	-- Dark Iron Battle Mace
+							traderstender(50, i(190805)),	-- Deforester's Hatchet
+							traderstender(150, i(211064)),	-- Dwarven Crown Splitter
+							traderstender(125, i(190819)),	-- Emerald Guardian's Longbow
+							traderstender(150, i(190445)),	-- Envenomed Gutripper
+							traderstender(60, i(229814)),	-- Fan of Cooling
+							traderstender(60, i(226382)),	-- Feathered Bow of the Fallen
+							traderstender(60, i(226381)),	-- Feathered Bow of the Night
+							traderstender(100, i(225978)),	-- Fel-Glade Warglaive
+							traderstender(175, i(212382)),	-- Fluorescent Splitblade
+							traderstender(50, i(190849)),	-- Forgemaster's Gavel
+							traderstender(60, i(229811)),	-- Frost Etched Dagger
+							traderstender(60, i(226386)),	-- Gentle Glow of the Naaru
+							traderstender(275, i(213106)),	-- Gladiator's Battered Greatsword
+							traderstender(275, i(213107, {	-- Gladiator's Ragged Greatsword // Previously NYI
+								-- #if BEFORE 12.0.1
+								["description"] = "This item is not a returning item, it has never actually been available before.",
+								-- #endif
+							})),
+							traderstender(250, i(226428)),	-- Harvester's Claw
+							traderstender(150, i(190854)),	-- Heavily Stitched Wallet
+							traderstender(60, i(225980)),	-- High-Grade Blade of the Forbade
+							traderstender(50, i(190860)),	-- Initiate's Bo
+							traderstender(60, i(225979)),	-- Jade Blade of the Forbade
+							traderstender(150, i(190218)),	-- Jeweled Ripper
+							traderstender(60, i(190132)),	-- Krokul Battlescythe
+							traderstender(150, i(213065)),	-- Lavish Floral Edge
+							traderstender(150, i(213068)),	-- Lavish Floral Stalk
+							traderstender(50, i(190674)),	-- Leaky Bucket
+							traderstender(150, i(190895)),	-- Lost Crusader's Amethyst Battleaxe
+							traderstender(150, i(212381)),	-- Love's Bulwark
+							traderstender(250, i(212379)),	-- Love Witch's Rosy Stave
+							traderstender(200, i(212377)),	-- Love Witch's Rosy Wand
+							traderstender(300, i(229817)),	-- Lovely Airy Longbow
+							traderstender(300, i(212376)),	-- Lovely Gothic Longbow
+							traderstender(300, i(212375)),	-- Lovely Rosy Longbow
+							traderstender(150, i(213062)),	-- Paradise's Golden Axe
+							traderstender(100, i(225990)),	-- Plunderlord's Radiant Cutlass
+							traderstender(100, i(225983)),	-- Plunderlord's Radiant Hand Cannon
+							traderstender(100, i(225992)),	-- Plunderlord's Radiant Neck-Severer
+							traderstender(100, i(225991)),	-- Plunderlord's Radiant Rapier
+							traderstender(100, i(225982)),	-- Plunderlord's Radiant Sigil
+							traderstender(50, i(190066)),	-- Primeval Maul
+							traderstender(60, i(223188)),	-- Riptide Basher
+							traderstender(75, i(223179)),	-- Riptide Dagger
+							traderstender(75, i(223176)),	-- Riptide Gut Puncher
+							traderstender(75, i(223189)),	-- Riptide Slicer
+							traderstender(100, i(223184)),	-- Riptide Staff
+							traderstender(60, i(223187)),	-- Riptide Bulwark
+							traderstender(60, i(190670)),	-- Sanguine Bouquet
+							traderstender(100, i(223415)),	-- Sapphire Axe of Asymmetry
+							traderstender(100, i(223423)),	-- Sapphire Bladed Blunderbuss
+							traderstender(100, i(223411)),	-- Sapphire Shanker
+							traderstender(100, i(223413)),	-- Sapphire Warglaive
+							traderstender(100, i(223414)),	-- Scarlet Axe of Asymmetry
+							traderstender(100, i(223422)),	-- Scarlet Bladed Blunderbuss
+							traderstender(100, i(223410)),	-- Scarlet Shanker
+							traderstender(100, i(223412)),	-- Scarlet Warglaive
+							traderstender(30, i(225994)),	-- Simple Copper Staff
+							traderstender(40, i(226383)),	-- Simple Ebony Wand
+							traderstender(40, i(223426)),	-- Simple Sapphire Wand
+							traderstender(40, i(223425)),	-- Simple Scarlet Wand
+							traderstender(250, i(229815)),	-- Sky Witch's Airy Stave
+							traderstender(200, i(229816)),	-- Sky Witch's Airy Wand
+							traderstender(150, i(213071)),	-- Sunny Floral Staff
+							traderstender(150, i(213075)),	-- Sunny Bow-quet
+							traderstender(60, i(223434)),	-- The Sapphire Thalassian Tome
+							traderstender(150, i(211072)),	-- Time Marshal's Carbine
+							traderstender(100, i(213161)),	-- Titan Thunderbow
+							traderstender(75, i(223191)),	-- Trident Of The Riptide
+							traderstender(200, i(212378)),	-- Twilight Witch's Gothic Scepter
+							traderstender(250, i(212380)),	-- Twilight Witch's Gothic Stave
+							traderstender(60, i(223433)),	-- Sunreaver's Scarlet Tome
+							traderstender(150, i(190219)),	-- Virulent Gavel
+							traderstender(40, i(226384)),	-- Wand of the Bright Shadow
+							traderstender(75, i(223190)),	-- Wand Of The Riptide
+							traderstender(150, i(190873)),	-- Warhammer of Hubris
+							traderstender(150, i(220357)),	-- Water Blaster B.L.
+							traderstender(150, i(211158)),	-- Witch Doctor's Fetish Guard
 						}),
 					},
 				}),
