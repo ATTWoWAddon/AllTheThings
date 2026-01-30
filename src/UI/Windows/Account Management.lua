@@ -11,6 +11,11 @@ local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo =
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
 
+-- Cache some globals SavedVariables!
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+	AccountWideData = accountWideData
+	CharacterData = characterData
+end)
 -- Module locals
 local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet = "ATTSYNC", {}, true;
 local uid, pendingReceiveChunksForUser, pendingSendChunksForUser, pendingSendResponsesForUser = 1, {}, {}, {};
@@ -364,6 +369,80 @@ local function DefaultAccountWideDataHandler(data, key)
 		end
 	end
 end
+-- Some cached data is stored directly in AccountWideData... we have no reason to 'sync' those tables via the Recalculate function
+local whiteListedFields = {
+	Achievements = true,
+	Artifacts = true,
+	AzeriteEssenceRanks = true,
+	BattlePets = true,
+	Exploration = true,
+	Factions = true,
+	FlightPaths = true,
+	Followers = true,
+	GarrisonBuildings = true,
+	Quests = true,
+	Spells = true,
+	Titles = true
+}
+-- Used for data which is defaulted as Account-learned, but has Character-learned exceptions
+local function PartialSyncCharacterData(data, key)
+	local characterData
+	-- wipe account data saved based on character data
+	for id,completion in pairs(data) do
+		if completion == 2 then
+			data[id] = nil
+		end
+	end
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for id,_ in pairs(characterData) do
+				-- character-based completion in account data saved as 2 for these types
+				data[id] = 2
+			end
+		end
+	end
+end
+-- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
+local function RankSyncCharacterData(data, key)
+	local characterData
+	wipe(data);
+	local oldRank;
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for index,rank in pairs(characterData) do
+				oldRank = data[index];
+				if not oldRank or oldRank < rank then
+					data[index] = rank;
+				end
+			end
+		end
+	end
+end
+local function SyncCharacterQuestData(data, key)
+	local characterData
+	-- don't completely wipe quest data, some questID are marked as 'complete' due to other restrictions on the account
+	-- so we want to maintain those even though no character actually has it completed
+	-- TODO: perhaps in the future we can instead treat these quests as 'uncollectible' for the account rather than 'complete'
+	-- TODO: once these quests are no longer assigned as completion == 2 we can then use the PartialSyncCharacterData for Quests
+	-- and make sure AccountWide quests are instead saved directly into ATTAccountWideData when completed
+	-- and cleaned from individual Character caches here during sync
+	for questID,completion in pairs(data) do
+		if completion ~= 2 then
+			data[questID] = nil
+		-- else app.PrintDebug("not-reset",questID,completion)
+		end
+	end
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for index,_ in pairs(characterData) do
+				data[index] = 1;
+			end
+		end
+	end
+end
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;
@@ -375,18 +454,24 @@ local AccountWideDataHandlers = setmetatable({
 		AccountWideData.Deaths = deaths;
 	end,
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
+	AzeriteEssenceRanks = RankSyncCharacterData,
+	Quests = SyncCharacterQuestData,
+	Mounts = PartialSyncCharacterData,
+	BattlePets = PartialSyncCharacterData,
 }, {
 	__index = function(t, key)
-		return DefaultAccountWideDataHandler;
+		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
 	end,
 });
-local function RecalculateAccountWideData()
-	app.print("Recalculating Account Data...");
+local function RecalculateAccountWideData(doPrints)
+	if doPrints then app.print("Recalculating Account Data..."); end
 	for key,data in pairs(AccountWideData) do
 		AccountWideDataHandlers[key](data, key);
 	end
-	app.print("Account Data Recalculated successfully.");
+	if doPrints then app.print("Account Data Recalculated successfully."); end
 end
+-- this step is EXTREMELY necessary for updating proper collection status of Account-Wide collectibles!
+app.AddEventHandler("OnRecalculateDone", RecalculateAccountWideData)
 local function DeserializeSequentialKeys(str)
 	local values = SplitString(":", str);
 	local keys = {};
@@ -962,7 +1047,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 	app.print("Updated " .. (character.text or "??") .. " from " .. (accountCharacter and accountCharacter.text or sender) .. "!");
 
 	-- Update the Sync Window!
-	RecalculateAccountWideData();
+	RecalculateAccountWideData(true);
 	self:Update(true);
 end
 MESSAGE_HANDLERS.request = function(self, sender, content, responses)
@@ -1059,14 +1144,14 @@ local function MergeCharacterData(character, row)
 			CurrentCharacter.Deaths = CurrentCharacter.Deaths + deaths;
 		end
 		character.ignored = true;
-		RecalculateAccountWideData();
+		RecalculateAccountWideData(true);
 		row:GetParent():GetParent():Rebuild();
 		app.print("Merged " .. character.text .. " into " .. CurrentCharacter.text);
 		C_Timer.After(0.01, function()
 			app:ShowPopupDialog("Would you also like to delete the old character data?\n\nNOTE: Any cached quest IDs that you have only completed on " .. character.text .. " will be lost. You have been warned.",
 			function()
 				CharacterData[character.guid] = nil;
-				RecalculateAccountWideData();
+				RecalculateAccountWideData(true);
 				row:GetParent():GetParent():Rebuild();
 				app.print(character.text .. " data deleted.");
 			end);
@@ -1148,7 +1233,7 @@ local function OnClickForCharacter(row, button)
 			app:ShowPopupDialog("CHARACTER DATA: " .. (character.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
 			function()
 				CharacterData[guid] = nil;
-				RecalculateAccountWideData();
+				RecalculateAccountWideData(true);
 				row:GetParent():GetParent():Rebuild();
 			end);
 		end
@@ -1408,7 +1493,7 @@ app:CreateWindow("Account Management", {
 			if prefix ~= AddonMessagePrefix or not datastring or channel ~= "WHISPER" then return; end
 			ProcessAddonMessageMethod(self, SendAddonMessage, sender, datastring);
 		end
-		
+
 		local options = {
 			app.CreateRawText("Add Linked Character", {
 				icon = app.asset("Button_Add"),
@@ -1441,7 +1526,7 @@ app:CreateWindow("Account Management", {
 				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
-					RecalculateAccountWideData();
+					RecalculateAccountWideData(true);
 					return true;
 				end,
 			}),
@@ -1597,9 +1682,6 @@ app:CreateWindow("Account Management", {
 		}));
 	end,
 	OnLoad = function(self, settings)
-		-- Cache some globals SavedVariables!
-		AccountWideData = ATTAccountWideData;
-		CharacterData = ATTCharacterData;
 		CurrentCharacter = app.CurrentCharacter;
 		EnableBattleNet = settings.EnableBattleNet;
 

@@ -87,8 +87,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	elseif not currentCharacter.Deaths then
 		currentCharacter.Deaths = 0;
 	end
-	
+
 	-- Update the total account wide death counter.
+	-- TODO: why is this here? it's also in Account Management
 	local deaths = 0;
 	for guid,character in pairs(characterData) do
 		if character and character.Deaths and character.Deaths > 0 then
