@@ -102,4 +102,18 @@ app:CreateWindow("Item Filter", {
 			end,
 		}));
 	end,
+	OnUpdate = function(self, ...)
+		-- Prevent Quests and Achievements from being collectible within this context.
+		local oldAchievementsCollection = app.Settings.Collectibles.Achievements;
+		local oldQuestCollection = app.Settings.Collectibles.Quests;
+		local oldFilder = app.Modules.Filter.Get.FilterID()
+		app.Modules.Filter.Set.FilterID(false);
+		app.Settings.Collectibles.Achievements = false;
+		app.Settings.Collectibles.Quests = false;
+		self:DefaultUpdate(...);
+		app.Modules.Filter.Set.FilterID(oldFilder);
+		app.Settings.Collectibles.Quests = oldQuestCollection;
+		app.Settings.Collectibles.Achievements = oldAchievementsCollection;
+		return true;
+	end
 });
