@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;

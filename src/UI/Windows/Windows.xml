@@ -35,7 +35,6 @@
 	<Script file="Maps.lua"/>
 	<Script file="Mini List.lua"/>
 	<Script file="Missing Quests.lua"/>
-	<Script file="Missing Source IDs.lua"/>
 	<Script file="Mounts.lua"/>
 	<Script file="New With Patch.lua"/>
 	<Script file="Objects.lua"/>
@@ -45,7 +44,6 @@
 	<Script file="Raid Assistant.lua"/>
 	<Script file="Random.lua"/>
 	<Script file="Removed From Game.lua"/>
-	<Script file="Removed With Patch Drops.lua"/>
 	<Script file="Season of Discovery.lua"/>
 	<Script file="Soft Reserves.lua"/>
 	<Script file="Titles.lua"/>

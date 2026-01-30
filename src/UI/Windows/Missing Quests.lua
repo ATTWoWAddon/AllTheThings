@@ -1,5 +1,7 @@
 -- App locals
 local _, app = ...;
+-- This window has a dependency on Questie in Classic.
+if not app.IsClassic then return; end
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
@@ -24,14 +26,17 @@ app:CreateWindow("Missing Quests", {
 					icon = app.asset("logo_32x32"),
 					preview = app.asset("Discord_2_128"),
 					description = "The following quests are missing from ATT, but were found in the Questie DB or your Saved Variables!",
+					OnUpdate = app.AlwaysShowUpdate,
 				}),
 				app.CreateRawText("From Questie", {	-- Missing Quests From Questie Header
 					icon = app.asset("Interface_Quest"),
 					description = "The following quests are missing from Questie, but were found in the ATT DB!",
+					OnUpdate = app.AlwaysShowUpdate,
 				}),
 				app.CreateRawText("From Questie (With ATT Sources)", {	-- Missing Quests From Questie (With ATT Sources) Header
 					icon = app.asset("Interface_Quest"),
 					description = "The following quests are missing from Questie, but were found in the ATT DB!",
+					OnUpdate = app.AlwaysShowUpdate,
 				}),
 			},
 			OnUpdate = function(data)
