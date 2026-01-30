@@ -1376,8 +1376,29 @@ ATTSettingsPanelMixin = {
 };
 -- All Object mixins apply to the Panels as well
 Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
-
 Mixin(settings, ATTSettingsPanelMixin);
+
+-- Some common helpers for instantiation of Settings objects
+settings.Helpers = {
+	Slider = {
+		SetScript_OnValueChanged = function(self, shortValFormat, settingKey)
+			if not shortValFormat then
+				error("Bad shortValFormat provided for SetScript_OnValueChanged!")
+			end
+			if not settingKey then
+				error("Bad settingKey provided for SetScript_OnValueChanged!")
+			end
+			self:SetScript("OnValueChanged", function(self, newValue)
+				if self.oldValue ~= newValue then
+					self.oldValue = newValue
+					local shortVal = shortValFormat:format(newValue)
+					self.Label:SetText(shortVal)
+					settings:SetTooltipSetting(settingKey, tonumber(shortVal))
+				end
+			end)
+		end,
+	},
+}
 
 local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;

@@ -248,13 +248,7 @@ sliderSummarizeThings.LabelHigh:SetText('40')
 sliderSummarizeThings.Label = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderSummarizeThings.Label:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, 2)
 sliderSummarizeThings.Label:SetText(sliderSummarizeThings:GetValue())
-sliderSummarizeThings:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("ContainsCount") then
-		return 1
-	end
-	settings:SetTooltipSetting("ContainsCount", newValue)
-end)
+settings.Helpers.Slider.SetScript_OnValueChanged(sliderSummarizeThings, "%.0f", "ContainsCount")
 sliderSummarizeThings.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
 		self:Disable()
@@ -287,10 +281,7 @@ sliderMaxTooltipTopLineLength.LabelHigh:SetPoint("TOPRIGHT", sliderMaxTooltipTop
 sliderMaxTooltipTopLineLength.LabelHigh:SetText('1000')
 sliderMaxTooltipTopLineLength.Label = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderMaxTooltipTopLineLength.Label:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, 0)
-sliderMaxTooltipTopLineLength:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.0f"):format(newValue))
-	settings:SetTooltipSetting("MaxTooltipTopLineLength", newValue)
-end)
+settings.Helpers.Slider.SetScript_OnValueChanged(sliderMaxTooltipTopLineLength, "%.0f", "MaxTooltipTopLineLength")
 
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L.TOOLTIP_SHOW_LABEL)
 textTooltipShownInfo:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, -30)
@@ -447,13 +438,7 @@ sliderSourceLocations.LabelHigh:SetText('40')
 sliderSourceLocations.Label = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderSourceLocations.Label:SetPoint("TOP", sliderSourceLocations, "BOTTOM", 0, 2)
 sliderSourceLocations.Label:SetText(sliderSourceLocations:GetValue())
-sliderSourceLocations:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("Locations") then
-		return 1
-	end
-	settings:SetTooltipSetting("Locations", newValue)
-end)
+settings.Helpers.Slider.SetScript_OnValueChanged(sliderSourceLocations, "%.0f", "Locations")
 sliderSourceLocations.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
@@ -706,10 +691,15 @@ sliderMainListScale.Label = sliderMainListScale:CreateFontString(nil, "ARTWORK",
 sliderMainListScale.Label:SetPoint("TOP", sliderMainListScale, "BOTTOM", 0, 0)
 sliderMainListScale.Label:SetText(("%.2f"):format(sliderMainListScale:GetValue()))
 sliderMainListScale:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.2f"):format(newValue))
-	settings:SetTooltipSetting("MainListScale", newValue)
-	app:GetWindow("Prime"):SetScale(newValue)
+	if sliderMainListScale.oldValue ~= newValue then
+		sliderMainListScale.oldValue = newValue
+		self.Label:SetText(("%.2f"):format(newValue))
+		settings:SetTooltipSetting("MainListScale", newValue)
+		app:GetWindow("Prime"):SetScale(newValue)
+	end
 end)
+-- settings.Helpers.Slider.SetScript_OnValueChanged(sliderSourceLocations, "%.2f", "MainListScale")
+-- TODO: hook Windows to proper settings changes
 
 local sliderMiniListScale = CreateFrame("Slider", "ATTsliderMiniListScale", child, "UISliderTemplate")
 sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)
@@ -736,14 +726,19 @@ sliderMiniListScale.Label = sliderMiniListScale:CreateFontString(nil, "ARTWORK",
 sliderMiniListScale.Label:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, 0)
 sliderMiniListScale.Label:SetText(("%.2f"):format(sliderMiniListScale:GetValue()))
 sliderMiniListScale:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.2f"):format(newValue))
-	settings:SetTooltipSetting("MiniListScale", newValue)
-	for key,window in pairs(app.Windows) do
-		if key ~= "Prime" then
-			window:SetScale(newValue)
+	if sliderMiniListScale.oldValue ~= newValue then
+		sliderMiniListScale.oldValue = newValue
+		self.Label:SetText(("%.2f"):format(newValue))
+		settings:SetTooltipSetting("MiniListScale", newValue)
+		for key,window in pairs(app.Windows) do
+			if key ~= "Prime" then
+				window:SetScale(newValue)
+			end
 		end
 	end
 end)
+-- settings.Helpers.Slider.SetScript_OnValueChanged(sliderMiniListScale, "%.2f", "MiniListScale")
+-- TODO: hook Windows to proper settings changes
 
 local sliderInactiveWindowAlpha = CreateFrame("Slider", "ATTsliderInactiveWindowAlpha", child, "UISliderTemplate")
 sliderInactiveWindowAlpha:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, -25)
@@ -790,13 +785,18 @@ local function ApplyInactiveWindowAlpha(window)
 end
 app.AddEventHandler("OnWindowCreated", ApplyInactiveWindowAlpha);
 sliderInactiveWindowAlpha:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(("%.2f"):format(newValue))
-	InactiveWindowAlpha = newValue;
-	settings:SetTooltipSetting("InactiveWindowAlpha", newValue)
-	for key,window in pairs(app.Windows) do
-		ApplyInactiveWindowAlpha(window);
+	if sliderInactiveWindowAlpha.oldValue ~= newValue then
+		sliderInactiveWindowAlpha.oldValue = newValue
+		self.Label:SetText(("%.2f"):format(newValue))
+		InactiveWindowAlpha = newValue;
+		settings:SetTooltipSetting("InactiveWindowAlpha", newValue)
+		for key,window in pairs(app.Windows) do
+			ApplyInactiveWindowAlpha(window);
+		end
 	end
 end)
+-- settings.Helpers.Slider.SetScript_OnValueChanged(sliderInactiveWindowAlpha, "%.2f", "InactiveWindowAlpha")
+-- TODO: hook Windows to proper settings changes
 
 local checkboxAdjustRowIndents = child:CreateCheckBox(L.ADJUST_ROW_INDENTS_CHECKBOX,
 function(self)
@@ -952,13 +952,7 @@ sliderPercentagePrecision.LabelHigh:SetText('8')
 sliderPercentagePrecision.Label = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderPercentagePrecision.Label:SetPoint("TOP", sliderPercentagePrecision, "BOTTOM", 0, 2)
 sliderPercentagePrecision.Label:SetText(sliderPercentagePrecision:GetValue())
-sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("Precision") then
-		return 1
-	end
-	settings:SetTooltipSetting("Precision", newValue)
-end)
+settings.Helpers.Slider.SetScript_OnValueChanged(sliderPercentagePrecision, "%.0f", "Precision")
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then
 		self:Disable()
