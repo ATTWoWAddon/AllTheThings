@@ -528,9 +528,9 @@ app:CreateWindow("SoftReserves", {
 	IgnoreQuestUpdates = true,
 	SettingsName = L.SOFT_RESERVES,
 	Commands = { "attsr", "attsoftreserve" },
-	OnCommand = function(self, cmd)
-		if cmd and cmd ~= "" then
-			ParseSoftReserve(UnitGUID("player"), cmd, true, true);
+	OnCommand = function(self, args, params)
+		if args and args[1] ~= "" then
+			ParseSoftReserve(UnitGUID("player"), args[1], true, true);
 			return true;
 		end
 	end,

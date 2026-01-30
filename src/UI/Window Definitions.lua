@@ -464,6 +464,40 @@ do
 	end
 end
 
+-- Command Processing
+local __ItemLinkCache = {}
+local function StoreLinks(link)
+	__ItemLinkCache[#__ItemLinkCache + 1] = link
+	return "\x1F" .. #__ItemLinkCache
+end
+local function ParseCommandArgsAndParams(msg)
+	wipe(__ItemLinkCache);
+
+	-- Step 1: Replace links with tokens
+	msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
+	-- app.PrintDebug("tokenized",msg)
+	-- Step 2: Split by spaces
+	local args = { (" "):split(msg) }
+
+	-- Step 3: Replace tokens with original item links
+	local customArg, customValue;
+	for i, v in ipairs(args) do
+		customArg = tonumber(v:match("\x1F(%d+)"))
+		if customArg then
+			args[i] = __ItemLinkCache[customArg];
+		end
+	end
+	
+	-- Step 4: Parse the Params
+	-- The first arg is always the command
+	local params = {};
+	for i=1,#args do
+		customArg, customValue = ("="):split(args[i]);
+		params[customArg] = customValue or true;
+	end
+	return args, params;
+end
+
 -- Expand / Collapse Functions
 local HeaderSkipKeys = {
 	[app.HeaderConstants.ZONE_DROPS] = true,
@@ -2314,6 +2348,7 @@ local ReservedFields = {
 	OnUpdate = true,
 	OnShow = true,
 	OnHide = true,
+	ParseCommandArgsAndParams = true,
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 	GetShouldAutomaticallyOpen = true,
@@ -2788,8 +2823,8 @@ local function BuildWindow(suffix)
 	-- Add command processing
 	local onCommand = definition.OnCommand;
 	if onCommand then
-		function window:ProcessCommand(cmd)
-			if not onCommand(self, cmd) then
+		function window:ProcessCommand(args, params)
+			if not onCommand(self, args, params) then
 				self:Toggle();
 			end
 		end
@@ -2807,7 +2842,13 @@ local function BuildWindow(suffix)
 		if not window.SettingsName then
 			window.SettingsName = window.Suffix
 		end
-		app.AddSlashCommands(definition.Commands, function(cmd) window:ProcessCommand(cmd) end)
+		app.AddSlashCommands(definition.Commands, function(cmd)
+			if not cmd or cmd:len() == 0 then
+				window:Toggle();
+			else
+				window:ProcessCommand(ParseCommandArgsAndParams(cmd));
+			end
+		end)
 		local primaryCommand = "/" .. definition.Commands[1];
 		app.ChatCommands.Help[primaryCommand:lower()] = {
 			definition.UsageText or ("Usage: " .. primaryCommand),
@@ -2833,7 +2874,11 @@ function app:CreateWindow(suffix, definition)
 			return app:GetWindow(suffix);
 		elseif definition.Commands then
 			app.AddSlashCommands(definition.Commands, function(cmd)
-				app:GetWindow(suffix):ProcessCommand(cmd);
+				if not cmd or cmd:len() == 0 then
+					app:GetWindow(suffix):Toggle();
+				else
+					app:GetWindow(suffix):ProcessCommand(ParseCommandArgsAndParams(cmd));
+				end
 			end);
 			local primaryCommand = "/" .. definition.Commands[1];
 			app.ChatCommands.Help[primaryCommand:lower()] = {

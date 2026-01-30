@@ -1,32 +1,7 @@
 -- App locals
 local _, app = ...;
-
-local ipairs,tonumber
-	= ipairs,tonumber
-local function ParseCommand(msg)
-	local itemLinks = {}
-	local function StoreLinks(link)
-		itemLinks[#itemLinks + 1] = link
-		return "\x1F" .. #itemLinks
-	end
-
-	-- Step 1: Replace links with tokens
-	msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
-	-- app.PrintDebug("tokenized",msg)
-	-- Step 2: Split by spaces
-	local args = { (" "):split(msg) }
-
-	-- Step 3: Replace tokens with original item links
-	local index
-	for i, v in ipairs(args) do
-		index = tonumber(v:match("\x1F(%d+)"))
-		if index then
-			args[i] = itemLinks[index]
-		end
-	end
-
-	return args
-end
+local ipairs, pairs, tremove
+	= ipairs, pairs, tremove;
 
 -- Implementation
 local Window
@@ -50,89 +25,83 @@ Window = app:CreateWindow("Prime", {
 		"att",
 		"attc",
 	},
-	OnCommand = function(self, cmd)
-		if cmd and cmd:len() > 0 then
-			-- app.PrintDebug(cmd)
-			local args = ParseCommand(cmd)
-			cmd = args[1];
-			-- app.PrintTable(args)
+	ParseCommandArgsAndParams = true,
+	OnCommand = function(self, args, params)
+		if args then
+			print("args: ");
+			for key,value in ipairs(args) do
+				print(" ", key, value);
+			end
+			print("params: ");
+			for key,value in pairs(params) do
+				print(" ", key, value);
+			end
 
 			-- Eventually will migrate known Chat Commands to their respective creators
+			local cmd = args[1];
 			local commandFunc = app.ChatCommands[cmd]
 			if commandFunc then
 				local help = args[2] == "help"
 				if help then return app.ChatCommands.PrintHelp(cmd) end
-				return commandFunc(args)
+				return commandFunc(args, params)
 			elseif cmd == "help" then
 				return app.ChatCommands.PrintHelp(args[2])
 			end
-
-			-- first arg is always the window/command to execute
-			app.ResetCustomWindowParam(cmd);
-			for k=2,#args do
-				local customArg, customValue = args[k], nil;
-				customArg, customValue = ("="):split(customArg);
-				-- app.PrintDebug("Split custom arg:",customArg,customValue)
-				app.SetCustomWindowParam(cmd, customArg, customValue or true);
-			end
-
-			if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
+			
+			-- Remove the first arg from args, within this context, it is the command and does not need to be passed to the child popups
+			tremove(args, 1);
+			if cmd == "main" or cmd == "mainlist" then
 				return false;
 			elseif cmd == "bounty" then
-				app:GetWindow("Bounty"):Toggle();
+				app:GetWindow("Bounty"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "debugger" then
 				app.LoadDebugger();
 				return true;
-			elseif cmd == "filters" then
-				app:GetWindow("ItemFilter"):Toggle();
+			elseif cmd == "filter" or cmd == "filters" then
+				app:GetWindow("Item Filter"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "finder" then
-				app.SetCustomWindowParam("list", "type", "itemharvester");
-				app.SetCustomWindowParam("list", "harvesting", true);
-				app.SetCustomWindowParam("list", "limit", 225000);
-				app:GetWindow("list"):Toggle();
+				app:GetWindow("list"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "ra" then
-				app:GetWindow("RaidAssistant"):Toggle();
+				app:GetWindow("RaidAssistant"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
-				app:GetWindow("Random"):Toggle();
+				app:GetWindow("Random"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "list" then
-				app:GetWindow("list"):Toggle();
+				app:GetWindow("list"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "nwp" then
-				app:GetWindow("NWP"):Toggle();
+				app:GetWindow("NWP"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "awp" then
-				--app:GetWindow("Added With Patch"):Hide();
-				app.SetCustomWindowParam("Added With Patch", "reset", true);
-				app:GetWindow("Added With Patch"):Toggle();
+				app:GetWindow("Added With Patch"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "rwp" then
-				app:GetWindow("Future Unobtainables"):Toggle();
+				app:GetWindow("Future Unobtainables"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "wq" then
-				app:GetWindow("WorldQuests"):Toggle();
+				app:GetWindow("WorldQuests"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "unsorted" then
-				app:GetWindow("Unsorted"):Toggle();
+				app:GetWindow("Unsorted"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "nyi" then
-				app:GetWindow("NeverImplemented"):Toggle();
+				app:GetWindow("NeverImplemented"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hat" then
-				app:GetWindow("HiddenAchievementTriggers"):Toggle();
+				app:GetWindow("HiddenAchievementTriggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hct" then
-				app:GetWindow("HiddenCurrencyTriggers"):Toggle();
+				app:GetWindow("HiddenCurrencyTriggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hqt" then
-				app:GetWindow("HiddenQuestTriggers"):Toggle();
+				app:GetWindow("HiddenQuestTriggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "sourceless" then
-				app:GetWindow("Sourceless"):Toggle();
+				app:GetWindow("Sourceless"):ProcessCommand(args, params);
 				return true;
 			elseif cmd:sub(1, 4) == "mini" then
 				app:ToggleMiniListForCurrentZone();
@@ -142,7 +111,7 @@ Window = app:CreateWindow("Prime", {
 				return true;
 			else
 				if cmd == "import" then
-					app:GetWindow("Import"):Toggle();
+					app:GetWindow("Import"):ProcessCommand(args, params);
 					return true;
 				end
 			end
@@ -151,7 +120,7 @@ Window = app:CreateWindow("Prime", {
 			if app.CreatePopoutForSearch(cmd) then
 				return true
 			end
-			app.print("Unknown Command: ", cmd);
+			app.print("Unknown Command: ", cmd, app.TableConcat(args, nil, "", " "));
 		end
 	end,
 	OnInit = function(self)

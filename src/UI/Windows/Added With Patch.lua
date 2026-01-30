@@ -90,7 +90,8 @@ end
 -- Implementation
 app:CreateWindow("Added With Patch", {
 	Commands = { "attawp" },
-	OnCommand = function(self, cmd)
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
 		if cmd and cmd ~= "" then
 			ParseCommand(self, cmd);
 			if self:IsShown() then

@@ -35,8 +35,9 @@ local function ParseCommand(self, cmd)
 end
 app:CreateWindow("Item Filter", {
 	Commands = { "attfilter" },
-	OnCommand = function(self, cmd)
-		if cmd and cmd ~= "" then
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
+		if cmd and cmd:len() > 0 then
 			ParseCommand(self, cmd);
 			if self:IsShown() then
 				return true;
