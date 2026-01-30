@@ -2301,6 +2301,8 @@ i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(264273, 1271549);	-- Fel Spirehawk
 i(262661, 1269181);	-- Ghastropod
 i(262909, 1269556);	-- Hypo-Speed X6000
+i(254736, 1258574);	-- Stormgilded Celestial
+i(254735, 1258573);	-- Thunderhoof Celestial
 
 ------------------
 -- PATCH 12.0.1 --

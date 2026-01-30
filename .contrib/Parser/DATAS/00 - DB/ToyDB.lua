@@ -1523,6 +1523,16 @@ i(243304);	-- Jubilant Snowman Costume
 i(245580);	-- Rolling Snowball
 
 ------------------
+-- PATCH 12.0.0 --
+------------------
+--- UNSORTED ---
+i(258136);	-- Azure Thunder Coil Pillar
+i(256141);	-- Fortune's Waving Cat
+i(258135);	-- Gilded Coil Spire
+i(258840);	-- Gilded Fountain
+i(258129);	-- Jade Monument
+
+------------------
 -- PATCH 12.0.1 --
 ------------------
 i(264413);	-- Dominating Victory
