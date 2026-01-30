@@ -157,30 +157,6 @@ root(ROOTS.Housing, n(Endeavor, {
 		n(TREASURES, {
 		}),
 		n(VENDORS, {
-			n(Mechagnome_Endeavor, {
-				n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
-					["coords"] = EndeavorVendorCoords,
-					["groups"] = {
-						i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
-						i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
-						i_DecorCoupons(254408, 2),	-- Lively Pistons (DECOR!)
-						i_DecorCoupons(254400, 2),	-- Triple-Tested Steam Valve (DECOR!)
-						i_DecorCoupons(254410, 5),	-- Blue-Glo Lantern (DECOR!)
-						i_DecorCoupons(254409, 2),	-- Sturdy Drive Belt (DECOR!)
-						i_DecorCoupons(254401, 5),	-- Mad Science BLueprints (DECOR!)
-						i_DecorCoupons(254404, 2),	-- Sticky Lever (DECOR!)
-						i_DecorCoupons(254405, 2),	-- Dual-Action Turbo Pro Lever (DECOR!)
-						i_DecorCoupons(254412, 2),	-- Well-Oiled Machine Cog (DECOR!)
-						i_DecorCoupons(254402, 5),	-- Safety Electrical Cabling (DECOR!)
-						i_DecorCoupons(254403, 10),	-- Machagon Control Console (DECOR!)
-						i_DecorCoupons(254413, 2),	-- Jury-Rigged Electrical Couple (DECOR!)
-						i_DecorCoupons(254766, 10),	-- Ineffective Mechanical Privacy Screen (DECOR!)
-						i_DecorCoupons(254411, 10),	-- Z-205 Mechanical Device (DECOR!)
-						i_DecorCoupons(254416, 15),	-- Galvanic Storage and Maintenance Device (DECOR!)
-						i_DecorCoupons(254415, 20),	-- Miniature Charging Station (DECOR!)
-					},
-				}),
-			}),
 			n(Draconic_Endeavor, {
 				n(250820, {	-- Hordranin <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
@@ -197,49 +173,6 @@ root(ROOTS.Housing, n(Endeavor, {
 						i_DecorCoupons(250695, 10),	-- Replica Grathardormu's Hammer
 						i_DecorCoupons(250700, 5),	-- Roasted Ram Leg
 						i_DecorCoupons(250703, 10),	-- War Creche Teaching Crystal
-					},
-				}),
-			}),
-			n(Sindorei_Endeavor, {
-				n(252917, {	-- Hesta Forlath <Endeavor Trader>
-					["coords"] = EndeavorVendorCoords,
-					["groups"] = {
-						i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
-						i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
-						i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
-						i_DecorCoupons(253522, 5),	-- Thalassian Chest (DECOR!)
-						-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the Endeavor as these items are locked behind them
-						-- Reach the first milestone of the endeavor
-						i_DecorCoupons(253524, 10),	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
-						i_DecorCoupons(254235, 5),	-- Sin'dori Artisan's Easel (DECOR!)
-						-- Reach the second milestone of the endeavor
-						i_DecorCoupons(253525, 10),	-- Thalassian Academy Dictation Device (DECOR!)
-						-- Reach the third milestone of the endeavor
-						i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
-						i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
-						-- Reach the fourth milestone of the endeavor
-						-- Exo Note: This will probably have some HQT hidden behind it. Used to buy paintings in Silvermoon Bazaar but tooltip states "you don't need to keep the deed on you".
-						i_DecorCoupons(253802, 30),	-- Deed of Patronage
-					},
-				}),
-			}),
-			n(Niffen_Endeavor, {
-				n(257897, {	-- Harlowe Marl <Endeavor Trader>
-					["coords"] = EndeavorVendorCoords,
-					["groups"] = {
-						i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
-						i_DecorCoupons(265032, 5),	-- Hearty Niffen Grub
-						i_DecorCoupons(264917, 5),	-- Ceramic Loamm Bowl
-						i_DecorCoupons(264925, 5),	-- Kilnmaster's Bucket
-						i_DecorCoupons(264918, 2),	-- Zaralek Candles
-						i_DecorCoupons(264922, 2),	-- Strong Sniffin' Incense
-						i_DecorCoupons(264924, 10),	-- Loamm Wheelpot
-						i_DecorCoupons(265541, 1),	-- Loammy Soil
-						i_DecorCoupons(264923, 15),	-- Underdecorated Underground Table
-						i_DecorCoupons(264919, 20),	-- Loamm Archway
-						i_DecorCoupons(264915, 15),	-- Decorated Underground Table
-						i_DecorCoupons(264921, 20),	-- Zaralek Snail Cart
-						i_DecorCoupons(264916, 20),	-- Loamm Bartering Stall
 					},
 				}),
 			}),
@@ -281,6 +214,73 @@ root(ROOTS.Housing, n(Endeavor, {
 						i_DecorCoupons(262666, 2),	-- K'areshi Incense Burner (DECOR!)
 						i_DecorCoupons(262667, 5),	-- Oath Scale (DECOR!)
 						i_DecorCoupons(262907, 10),	-- Tazaveshi Hookah (DECOR!)
+					},
+				}),
+			}),
+			n(Mechagnome_Endeavor, {
+				n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
+					["coords"] = EndeavorVendorCoords,
+					["groups"] = {
+						i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
+						i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
+						i_DecorCoupons(254408, 2),	-- Lively Pistons (DECOR!)
+						i_DecorCoupons(254400, 2),	-- Triple-Tested Steam Valve (DECOR!)
+						i_DecorCoupons(254410, 5),	-- Blue-Glo Lantern (DECOR!)
+						i_DecorCoupons(254409, 2),	-- Sturdy Drive Belt (DECOR!)
+						i_DecorCoupons(254401, 5),	-- Mad Science BLueprints (DECOR!)
+						i_DecorCoupons(254404, 2),	-- Sticky Lever (DECOR!)
+						i_DecorCoupons(254405, 2),	-- Dual-Action Turbo Pro Lever (DECOR!)
+						i_DecorCoupons(254412, 2),	-- Well-Oiled Machine Cog (DECOR!)
+						i_DecorCoupons(254402, 5),	-- Safety Electrical Cabling (DECOR!)
+						i_DecorCoupons(254403, 10),	-- Machagon Control Console (DECOR!)
+						i_DecorCoupons(254413, 2),	-- Jury-Rigged Electrical Couple (DECOR!)
+						i_DecorCoupons(254766, 10),	-- Ineffective Mechanical Privacy Screen (DECOR!)
+						i_DecorCoupons(254411, 10),	-- Z-205 Mechanical Device (DECOR!)
+						i_DecorCoupons(254416, 15),	-- Galvanic Storage and Maintenance Device (DECOR!)
+						i_DecorCoupons(254415, 20),	-- Miniature Charging Station (DECOR!)
+					},
+				}),
+			}),
+			n(Niffen_Endeavor, {
+				n(257897, {	-- Harlowe Marl <Endeavor Trader>
+					["coords"] = EndeavorVendorCoords,
+					["groups"] = {
+						i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
+						i_DecorCoupons(265032, 5),	-- Hearty Niffen Grub
+						i_DecorCoupons(264917, 5),	-- Ceramic Loamm Bowl
+						i_DecorCoupons(264925, 5),	-- Kilnmaster's Bucket
+						i_DecorCoupons(264918, 2),	-- Zaralek Candles
+						i_DecorCoupons(264922, 2),	-- Strong Sniffin' Incense
+						i_DecorCoupons(264924, 10),	-- Loamm Wheelpot
+						i_DecorCoupons(265541, 1),	-- Loammy Soil
+						i_DecorCoupons(264923, 15),	-- Underdecorated Underground Table
+						i_DecorCoupons(264919, 20),	-- Loamm Archway
+						i_DecorCoupons(264915, 15),	-- Decorated Underground Table
+						i_DecorCoupons(264921, 20),	-- Zaralek Snail Cart
+						i_DecorCoupons(264916, 20),	-- Loamm Bartering Stall
+					},
+				}),
+			}),
+			n(Sindorei_Endeavor, {
+				n(252917, {	-- Hesta Forlath <Endeavor Trader>
+					["coords"] = EndeavorVendorCoords,
+					["groups"] = {
+						i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
+						i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
+						i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
+						i_DecorCoupons(253522, 5),	-- Thalassian Chest (DECOR!)
+						-- Exo Note: For these, there probably be a sourceQuests or we will need a new system that tracks milestones of the Endeavor as these items are locked behind them
+						-- Reach the first milestone of the endeavor
+						i_DecorCoupons(253524, 10),	-- 590 Quel'Lithien Red Display Bottle (DECOR!)
+						i_DecorCoupons(254235, 5),	-- Sin'dori Artisan's Easel (DECOR!)
+						-- Reach the second milestone of the endeavor
+						i_DecorCoupons(253525, 10),	-- Thalassian Academy Dictation Device (DECOR!)
+						-- Reach the third milestone of the endeavor
+						i_DecorCoupons(253526, 15),	-- Sin'dorei Wine Display (DECOR!)
+						i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
+						-- Reach the fourth milestone of the endeavor
+						-- Exo Note: This will probably have some HQT hidden behind it. Used to buy paintings in Silvermoon Bazaar but tooltip states "you don't need to keep the deed on you".
+						i_DecorCoupons(253802, 30),	-- Deed of Patronage
 					},
 				}),
 			}),
