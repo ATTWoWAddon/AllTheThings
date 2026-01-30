@@ -152,6 +152,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30148, {	-- Just a Flesh Wound
+					["description"] = "Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",
 					["sourceQuest"] = 30142,	-- It's A...
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
@@ -489,6 +490,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30152, {	-- The Sky Race
+					["description"] = "This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
@@ -501,9 +503,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "n", 58530 },	-- Finish Line
 						}),
 						i(90537, {	-- Winner's Reward
+							-- #if AFTER LEGION
+							["description"] = "Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",
+							-- #else
 							["description"] = "Contains a reward of Valor Points based on how well you place in the race.",
+							-- #endif
+							["groups"] = {
+								i(90543),	-- Fifth Place Valorous Commendation
+								i(90538),	-- First Place Valorous Commendation
+								i(90541),	-- Fourth Place Valorous Commendation
+								i(90539),	-- Second Place Valorous Commendation
+								i(90544),	-- Sixth Place Valorous Commendation
+								i(90540),	-- Third Place Valorous Commendation
+							},
 						}),
-						ach(7290),	-- How To Strain Your Dragon
+						ach(7290, {	-- How To Strain Your Dragon
+							["description"] = "You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver.",
+						}),
 						ach(7291),	-- In a Trail of Smoke
 					},
 				}),
@@ -689,6 +705,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
+					["description"] = "This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
