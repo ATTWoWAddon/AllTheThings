@@ -13,7 +13,6 @@
 	<Script file="Quests/Dailies.lua"/>
 	<Script file="Achievements.lua"/>
 	<Script file="Account Management.lua"/>
-	<Script file="Retail/Account Management.lua"/>
 	<Script file="Added With Patch.lua"/>
 	<Script file="Attunements.lua"/>
 	<Script file="Auctions.lua"/>

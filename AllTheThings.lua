@@ -1727,11 +1727,6 @@ local ADDON_LOADED_HANDLERS = {
 		-- Clear some keys which got added and shouldn't have been
 		AllTheThingsAD.ExplorationDB = nil
 		AllTheThingsAD.ExplorationAreaPositionDB = nil
-		
-		-- CRIEVE NOTE: Once the Sync Window is moved over from Classic, this can be removed.
-		if not AllTheThingsAD.LinkedAccounts then
-			AllTheThingsAD.LinkedAccounts = {};
-		end
 
 		-- clear harvest data on load in case someone forgets
 		AllTheThingsHarvestItems = {};

@@ -341,7 +341,6 @@ local TooltipSettingsBase = {
 		["Adjust:RowIndents"] = true,
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
-		["Auto:Sync"] = true,	-- TODO: Deprecate this!
 		["Celebrate"] = true,
 		["Channel"] = "Master",
 		["Cost"] = true,

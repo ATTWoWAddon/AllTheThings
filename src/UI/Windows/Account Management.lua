@@ -1,14 +1,12 @@
 -- App locals
 local _, app = ...;
-if app.IsRetail then return; end
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, time, tinsert, tremove, tsort =
-	  ipairs, pairs, time, tinsert, tremove, table.sort;
+local ipairs, pairs, tonumber, time, type, tinsert, tremove, tsort =
+	  ipairs, pairs, tonumber, time, type, tinsert, tremove, table.sort;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo =
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
--- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
 
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
@@ -565,7 +563,7 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 		end
 	end
 end
-local deserializers = {
+local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
 			wipe(currentValue);
@@ -664,8 +662,12 @@ local deserializers = {
 		end
 		return currentValue;
 	end
-};
-local serializers = {
+}, {
+	__index = function(t)
+		return defaultDeserializer;
+	end,
+});
+local serializers = setmetatable({
 	ActiveSkills = function(field, value, timeStamp, lastUpdated)
 		local any, str = false, field;
 		for skillID,skill in pairs(value) do
@@ -748,7 +750,11 @@ local serializers = {
 	race = ignoreField,
 	lastPlayed = ignoreField,
 	Deaths = ignoreField,
-};
+}, {
+	__index = function(t)
+		return defaultSerializer;
+	end,
+});
 local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed, shouldPrint)
 	--print("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
 	if guid == app.GUID then return false; end
@@ -942,7 +948,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldData = SplitString(";", fieldDataString);
 		local fieldName = fieldData[1];
 		tremove(fieldData, 1);
-		local data = (deserializers[fieldName] or defaultDeserializer)(fieldName, character[fieldName], fieldData, character);
+		local data = deserializers[fieldName](fieldName, character[fieldName], fieldData, character);
 		if data then character[fieldName] = data; end
 	end
 
@@ -986,7 +992,7 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	local str = serializers.Summary(character);
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
-		local str = (serializers[field] or defaultSerializer)(field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
+		local str = serializers[field](field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
 		if str then rawData = rawData .. "," .. str; end
 	end
 	tinsert(responses, { detail = character.text, msg = rawData });
@@ -1221,6 +1227,10 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 
 		local total = 0;
 		local timestamps = character.TimeStamps;
+		if not timestamps then
+			timestamps = {};
+			character.TimeStamps = timestamps;
+		end
 		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "Spells", "Titles", "Toys", "Transmog", "Quests" }) do
 			local values = character[field];
 			if values then
@@ -1543,7 +1553,7 @@ app:CreateWindow("Account Management", {
 						senders[sender] = 1;
 					end
 					for sender,_ in pairs(senders) do
-						tinsert(g, app.CreateRawText(sender, {
+						tinsert(g, app.CreateRawText(tostring(sender), {
 							OnClick = OnClickForSyncQueue,
 							OnTooltip = OnTooltipForSyncQueue,
 							OnUpdate = OnUpdateForSyncQueue,
