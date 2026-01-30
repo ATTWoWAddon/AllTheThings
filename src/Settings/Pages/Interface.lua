@@ -690,16 +690,7 @@ sliderMainListScale.LabelHigh:SetText('4')
 sliderMainListScale.Label = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderMainListScale.Label:SetPoint("TOP", sliderMainListScale, "BOTTOM", 0, 0)
 sliderMainListScale.Label:SetText(("%.2f"):format(sliderMainListScale:GetValue()))
-sliderMainListScale:SetScript("OnValueChanged", function(self, newValue)
-	if sliderMainListScale.oldValue ~= newValue then
-		sliderMainListScale.oldValue = newValue
-		self.Label:SetText(("%.2f"):format(newValue))
-		settings:SetTooltipSetting("MainListScale", newValue)
-		app:GetWindow("Prime"):SetScale(newValue)
-	end
-end)
--- settings.Helpers.Slider.SetScript_OnValueChanged(sliderSourceLocations, "%.2f", "MainListScale")
--- TODO: hook Windows to proper settings changes
+settings.Helpers.Slider.SetScript_OnValueChanged(sliderMainListScale, "%.2f", "MainListScale")
 
 local sliderMiniListScale = CreateFrame("Slider", "ATTsliderMiniListScale", child, "UISliderTemplate")
 sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)

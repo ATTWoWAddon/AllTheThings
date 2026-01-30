@@ -29,7 +29,8 @@ local function ParseCommand(msg)
 end
 
 -- Implementation
-app:CreateWindow("Prime", {
+local Window
+Window = app:CreateWindow("Prime", {
 	AllowCompleteSound = true,
 	SettingsName = "Main List",
 	Preload = true,
@@ -172,5 +173,14 @@ app:CreateWindow("Prime", {
 			};
 		end
 		return true
-	end
+	end,
+	EventHandlers = {
+		["Settings.OnSet"] = function(container,setting,value)
+			if container ~= "Tooltips" then return end
+
+			if setting == "MainListScale" then
+				Window:SetScale(value)
+			end
+		end,
+	}
 });

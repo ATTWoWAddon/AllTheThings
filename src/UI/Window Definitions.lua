@@ -2403,6 +2403,12 @@ local function BuildWindow(suffix)
 	window:AddEventHandler("OnRedrawWindows", function()
 		window:Redraw()
 	end)
+	local eventHandlers = definition.EventHandlers
+	if eventHandlers then
+		for e,f in pairs(eventHandlers) do
+			window:AddEventHandler(e,f)
+		end
+	end
 
 	-- Register events to allow settings to be recorded.
 	local onHide, onShow = definition.OnHide, definition.OnShow;
