@@ -2563,6 +2563,7 @@ MobileDB.GameObject = {
 	[562348] = true,	-- Spoils of the Nexus-King
 	[562439] = true,	-- Fel-Touched Lumber
 	[562440] = true,	-- Bamboo Lumber
+	[564925] = true,	-- Surplus Elementium (wq:91778)
 	[566768] = true,	-- Cache of the Deathless
 	[567726] = true,	-- Bamboo Lumber
 	[567732] = true,	-- Kaja'6-Pack

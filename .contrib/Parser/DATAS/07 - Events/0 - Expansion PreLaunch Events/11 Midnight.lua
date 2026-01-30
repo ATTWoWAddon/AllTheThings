@@ -404,6 +404,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			q(86945, {	-- Shadowed Supplies
 				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
 			}),
+			q(91778, {	-- Too Deep and Too Dark
+				["coord"] = { 37.4, 89.0, TWILIGHT_HIGHLANDS },
+				["groups"] = { i(248205) },	-- Surplus Elementium (QI!)
+			}),
 			q(86948, {	-- Twilight Bonds
 				["coord"] = { 35.3, 70.5, TWILIGHT_HIGHLANDS },
 			}),

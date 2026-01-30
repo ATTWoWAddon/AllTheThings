@@ -1623,7 +1623,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(248139),	-- Aln'hara's Bloom
-			i(248205),	-- Surplus Elementium
 			i(248208),	-- Bound Journal
 			i(248608),	-- Blackrock Bulletin Message
 			i(248610),	-- Blackrock Bulletin Message

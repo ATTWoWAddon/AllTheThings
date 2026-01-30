@@ -1786,6 +1786,8 @@ q(86957,{coords={{40.6,17.5,241}},isWorldQuest=1,sourceQuests=a[481]}),
 q(86941,{coords={{57.8,31.1,241}},isWorldQuest=1,sourceQuests=a[481],g={
 i(235666)}}),
 q(86945,{coords={a[268]},isWorldQuest=1,sourceQuests=a[481]}),
+q(91778,{coords={{37.4,89,241}},isWorldQuest=1,sourceQuests=a[481],g={
+i(248205)}}),
 q(86948,{coords={{35.3,70.5,241}},isWorldQuest=1,sourceQuests=a[481]}),
 q(86939,{coords={{39,29.2,241}},isWorldQuest=1,sourceQuests=a[481],g={
 i(235663,{spellID=1218068})}}),
