@@ -2352,7 +2352,6 @@ i(211589, 430056);	-- Draconic Combatant's Jeweled Signet
 ------------------
 --- NYI ---
 i(0, 435335);		-- Apply Socket
-i(0, 434019);		-- Recraft Equipment
 i(225431, 435336);	-- Design: Vicious Jeweler's Setting
 i(223083, 0);		-- Design: Elemental Focusing Lens
 i(223084, 0);		-- Design: Prismatic Null Stone
@@ -2379,6 +2378,7 @@ i(0, 434547);	-- Masterful Onyx
 i(0, 434538);	-- Quick Amber
 i(0, 434542);	-- Quick Emerald
 i(0, 435371);	-- Radiant Loupes
+i(0, 434019);	-- Recraft Equipment
 i(0, 435375);	-- Right-Handed Magnifying Glass
 i(0, 435377);	-- Storyteller's Glasses
 i(0, 434540);	-- Versatile Amber
