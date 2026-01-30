@@ -32,6 +32,7 @@ end
 app:CreateWindow("Prime", {
 	AllowCompleteSound = true,
 	SettingsName = "Main List",
+	Preload = true,
 	IsTopLevel = true,
 	Defaults = {
 		["y"] = 20,
