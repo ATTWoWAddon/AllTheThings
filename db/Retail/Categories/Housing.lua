@@ -499,7 +499,8 @@ h(-711,{awp=120000,g={
 flt(50,{
 i(81054,{b=1,f=55,spellID=117164,type="AsSubGenericObject"}),
 i(242693,{f=55,spellID=192001}),
-i(253750)}),
+i(253750),
+i(265361,{spellID=1275652})}),
 h(-47,{
 cu(3363)}),
 h(-45,{
@@ -539,7 +540,7 @@ q(94656,{isWeekly=1}),
 q(94640,{isWeekly=1})}),
 h(-56),
 h(-58,{
-n(252605,{coords={a[28],a[22]},g={
+n(252605,{coords={a[28],a[22]},description="K'areshi Endeavor Vendor",g={
 de(14677,{cost={{"c",3363,5}},itemID=262664,spellID=1269201}),
 de(14834,{cost={{"c",3363,15}},itemID=263048,spellID=1269711}),
 de(14829,{cost={{"c",3363,10}},itemID=263043,spellID=1269705}),
@@ -552,7 +553,7 @@ de(14678,{cost={{"c",3363,5}},itemID=262665,spellID=1269202}),
 de(14679,{cost={{"c",3363,2}},itemID=262666,spellID=1269203}),
 de(14680,{cost={{"c",3363,5}},itemID=262667,spellID=1269204}),
 de(14800,{cost={{"c",3363,10}},itemID=262907,spellID=1269571})}}),
-n(249684,{coords={a[28],a[22]},g={
+n(249684,{coords={a[28],a[22]},description="Grummle Endeavor Vendor",g={
 de(8181,{cost={{"c",3363,5}},itemID=251474,spellID=1252386}),
 de(8180,{cost={{"c",3363,5}},itemID=251473,spellID=1252385}),
 de(8989,{cost={{"c",3363,15}},itemID=252041,spellID=1254106}),
@@ -568,7 +569,7 @@ de(4428,{cost={{"c",3363,10}},itemID=248406,spellID=1247074}),
 de(8987,{cost={{"c",3363,5}},itemID=252039,spellID=1254104}),
 de(8179,{cost={{"c",3363,10}},itemID=251472,spellID=1252384}),
 de(8988,{cost={{"c",3363,5}},itemID=252040,spellID=1254105})}}),
-n(257897,{coords={a[28],a[22]},g={
+n(257897,{coords={a[28],a[22]},description="Niffen Endeavor Vendor",g={
 de(16232,{cost={{"c",3363,5}},itemID=264920,spellID=1272874}),
 de(16315,{cost={{"c",3363,5}},itemID=265032,spellID=1273137}),
 de(16229,{cost={{"c",3363,5}},itemID=264917,spellID=1272871}),
@@ -582,7 +583,7 @@ de(16231,{cost={{"c",3363,20}},itemID=264919,spellID=1272873}),
 de(16227,{cost={{"c",3363,15}},itemID=264915,spellID=1272869}),
 de(16233,{cost={{"c",3363,20}},itemID=264921,spellID=1272875}),
 de(16228,{cost={{"c",3363,20}},itemID=264916,spellID=1272870})}}),
-n(252917,{coords={a[28],a[22]},g={
+n(252917,{coords={a[28],a[22]},description="Sin'dorei Endeavor Vendor",g={
 de(9478,{cost={{"c",3363,5}},itemID=253601,spellID=1256820}),
 de(9420,{cost={{"c",3363,5}},itemID=253523,spellID=1256588}),
 de(9477,{cost={{"c",3363,5}},itemID=253600,spellID=1256819}),
@@ -593,7 +594,7 @@ de(9422,{cost={{"c",3363,10}},itemID=253525,spellID=1256590}),
 de(9423,{cost={{"c",3363,15}},itemID=253526,spellID=1256591}),
 de(9476,{cost={{"c",3363,15}},itemID=253599,spellID=1256818}),
 i(253802,{cost={{"c",3363,30}},f=55,questID=92710,spellID=1257276})}}),
-n(250820,{coords={a[28],a[22]},g={
+n(250820,{coords={a[28],a[22]},description="Draconic Endeavor Vendor",g={
 de(7701,{cost={{"c",3363,15}},itemID=250704,spellID=1251193}),
 de(7699,{cost={{"c",3363,5}},itemID=250702,spellID=1251191}),
 de(7696,{cost={{"c",3363,10}},itemID=250699,spellID=1251188}),
@@ -606,7 +607,7 @@ de(7695,{cost={{"c",3363,10}},itemID=250698,spellID=1251187}),
 de(7692,{cost={{"c",3363,10}},itemID=250695,spellID=1251184}),
 de(7697,{cost={{"c",3363,5}},itemID=250700,spellID=1251189}),
 de(7700,{cost={{"c",3363,10}},itemID=250703,spellID=1251192})}}),
-n(248525,{coords={{54.1,56,2351}},g={
+n(248525,{coords={a[28],a[22]},description="Mechagnome Endeavor Vendor",g={
 de(10345,{cost={{"c",3363,2}},itemID=254406,spellID=1257957}),
 de(10346,{cost={{"c",3363,2}},itemID=254407,spellID=1257958}),
 de(10347,{cost={{"c",3363,2}},itemID=254408,spellID=1257959}),

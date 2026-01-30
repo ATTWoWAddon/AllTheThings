@@ -2570,7 +2570,7 @@ inst(228,{coords={{39.06,18.12,35}},description="The best route for a full clear
 h(-31,{
 faction(59,{maps={32},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
-q(7604,{cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=20,qgs=a[223],qis={18628},g={
+q(7604,{lvl=20,providers={{"i",18628}},g={
 r(21161,{itemID=18592,requireSkill=164,skillID=2477}),
 de(11274,{awp=110207,itemID=256673,sourceQuests={7604},spellID=1260651})}}),
 q(4264,{providers={{"i",11446}},r=2,rwp=30002,sourceQuests={4242},u=2}),
@@ -2782,6 +2782,7 @@ q(27571,{awp=40003,lvl=20,qgs={45888},r=2,sourceQuests={27569}}),
 q(27589,{awp=40003,lvl=20,qgs=a[878],r=1,sourceQuests={27585}})}),
 h(-58,{
 n(12944,{
+i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=17,minReputation={59,0}}),
 r(23799,{b=1,itemID=19444,minReputation=a[1074],requireSkill=333,skillID=2494}),
 r(20853,{b=1,itemID=17022,minReputation=a[1074],requireSkill=165,skillID=2532}),
 r(20849,{b=1,itemID=17018,minReputation=a[1074],requireSkill=197,skillID=2540}),

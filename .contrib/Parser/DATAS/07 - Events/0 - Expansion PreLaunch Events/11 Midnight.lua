@@ -261,7 +261,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						n(WEAPONS, {
 							i(251572),	-- Ascension Agitator's Axe
 							i(251565),	-- Ascension Agitator's Censer
-							i(269898),	-- Ascension Arrestor's Crossbow
+							i(269898, {["sourceID"] = 304840}),	-- Ascension Arrestor's Crossbow	-- TODO: Remove sourceID when wago updates
 							i(251569),	-- Ascension Agitator's Cudgel
 							i(251571),	-- Ascension Agitator's Dagger
 							i(251566),	-- Ascension Agitator's Greatsword
@@ -332,7 +332,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						n(WEAPONS, {
 							i(246662),	-- Ascension Arrestor's Axe
 							i(246668),	-- Ascension Arrestor's Censer
-							i(269897),	-- Ascension Arrestor's Crossbow
+							i(269897, {["sourceID"] = 304839}),	-- Ascension Arrestor's Crossbow	-- TODO: Remove sourceID when wago updates
 							i(246664),	-- Ascension Arrestor's Cudgel
 							i(246995),	-- Ascension Arrestor's Dagger
 							i(246667),	-- Ascension Arrestor's Greatsword

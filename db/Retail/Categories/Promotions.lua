@@ -136,7 +136,8 @@ h(-708,{rwp=120001,g={
 mnt(367620,{itemID=190539,lvl=10}),
 mnt(153489,{b=1,itemID=107951,lvl=10}),
 p(4690,{itemID=232519,npcID=233481,spellID=470914})}}),
-de(14467,{description="Obtained through watching the State of Azeroth broadcast on Twitch or YouTube on January 29th at 09:00 a.m. PST.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=260785,rwp=120000,spellID=1266894})}}),
+ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,g={
+de(14467,{itemID=260785,spellID=1266894})}})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
