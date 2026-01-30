@@ -4114,9 +4114,7 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(265041),	-- Singed Ritual Parchment
-			i(265042),	-- Tarnished Shadow Torque
 			i(265043),	-- Dented Voidblade Pommel
-			i(265044),	-- Frayed Twilight Sash
 			i(265045),	-- Sealed Blood Vial
 			i(265046),	-- Warped Summoning Sigil
 			i(265047),	-- Cracked Soul Phylactery
@@ -4358,7 +4356,6 @@ root(ROOTS.Unsorted, {
 			i(265097),	-- Conjured Cinnamon Roll
 			i(265098),	-- Conjured Croissant
 			i(265099),	-- Conjured Coffee
-			i(265361),	-- Pollinic Incense
 			-- Toy
 			i(265100),	-- Corewarden's Hearthstone
 

@@ -2630,6 +2630,7 @@ i(260638);	-- Fine Void Residue
 i(260642);	-- Fossilized Wildlife
 i(260639);	-- Fractured Bone
 i(265040);	-- Fractured Void Focus
+i(265044);	-- Frayed Twilight Sash
 i(238481);	-- Glittering Garbage
 i(260661);	-- Glowing Shrub
 i(238485);	-- Grotesque Globule
@@ -2674,6 +2675,7 @@ i(246376);	-- Solaarian Sintalia
 i(260659);	-- Stellar Vortex Residue
 i(260620);	-- Stone Droppings
 i(262786);	-- Suntouched Special Reserve
+i(265042);	-- Tarnished Shadow Torque
 i(260648);	-- Tattered Clothes
 i(260309);	-- Thrumming Plant Matter
 i(238944);	-- Torn Material

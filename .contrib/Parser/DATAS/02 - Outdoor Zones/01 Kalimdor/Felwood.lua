@@ -3066,6 +3066,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(48258, {	-- Willard Harrington <Blacksmithing Supplies>
 					["coord"] = { 61.6, 25.8, FELWOOD },
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)

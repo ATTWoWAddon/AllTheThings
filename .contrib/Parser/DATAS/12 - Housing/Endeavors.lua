@@ -30,6 +30,8 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 			i(81054),	-- Kafa'Kota Berry
 			i(242693),	-- Kafaccino
 			i(253750),	-- Luckydo
+			-- Niffen Endeavor
+			i(265361),	-- Pollinic Incense
 		}),
 		n(REWARDS, {
 			currency(COMMUNITY_COUPONS),
@@ -82,7 +84,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 					{ 54.1, 57.0, RAZORWIND_SHORES },
 				},
 			}),
-			-- Niffin
+			-- Niffen
 			q(94654),	-- Snail Mail - Apple
 			q(94660),	-- Snail Mail - Bouquet of Fungi
 			q(94662),	-- Snail Mail - Caramel
@@ -114,6 +116,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		}),
 		n(VENDORS, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>
+				["description"] = "K'areshi Endeavor Vendor",
 				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(262664, 5),	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
@@ -131,6 +134,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(249684, {	-- Brother Dovetail <Endeavor Trader>
+				["description"] = "Grummle Endeavor Vendor",
 				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(251474, 5),	-- Ceramic Kafa Mug (DECOR!)
@@ -151,6 +155,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(257897, {	-- Harlowe Marl <Endeavor Trader>
+				["description"] = "Niffen Endeavor Vendor",
 				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
@@ -169,6 +174,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(252917, {	-- Hesta Forlath <Endeavor Trader>
+				["description"] = "Sin'dorei Endeavor Vendor",
 				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
@@ -190,6 +196,7 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(250820, {	-- Hordranin <Endeavor Trader>
+				["description"] = "Draconic Endeavor Vendor",
 				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(250704, 15),	-- Ancient Weyrn Device
@@ -207,10 +214,8 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 				},
 			}),
 			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
-				["coords"] = {
-					-- { XX, YY, FOUNDERS_POINT },
-					{ 54.1, 56.0, RAZORWIND_SHORES },
-				},
+				["description"] = "Mechagnome Endeavor Vendor",
+				["coords"] = EndeavorVendorCoords,
 				["groups"] = {
 					i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
 					i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
@@ -234,3 +239,13 @@ root(ROOTS.Housing, n(ENDEAVORS, {
 		}),
 	},
 }));
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		n(ENDEAVORS, {
+			n(QUESTS, {
+				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
+			}),
+		}),
+	})),
+});
