@@ -1435,9 +1435,8 @@ app:CreateWindow("Account Management", {
 				OnClick = function(row, button)
 					if IsAltKeyDown() then
 						self.Settings.AutoSync = not self.Settings.AutoSync;
-						--row.ref.saved = self.Settings.AutoSync;
-						--self:Redraw();
-						app.DirectGroupUpdate(row.ref);
+						row.ref.saved = self.Settings.AutoSync;
+						self:Redraw();
 					else
 						BroadcastMessage(row.ref.text, "check," .. CurrentCharacter.battleTag);
 					end
@@ -1453,9 +1452,8 @@ app:CreateWindow("Account Management", {
 				end or nil,
 				OnClick = function(row, button)
 					EnableBattleNet = not EnableBattleNet;
-					--row.ref.saved = EnableBattleNet;
-					app.DirectGroupUpdate(row.ref);
-					--self:Redraw();
+					row.ref.saved = EnableBattleNet;
+					self:Redraw();
 					return true;
 				end,
 			}),
@@ -1554,8 +1552,8 @@ app:CreateWindow("Account Management", {
 						}));
 					end
 
-					data.visible = #g > 1;
-					return false;
+					data.visible = #g > 0;
+					return true;
 				end,
 			}),
 		};
