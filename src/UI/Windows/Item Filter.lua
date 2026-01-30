@@ -51,8 +51,7 @@ app:CreateWindow("Item Filter", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			{	-- Filter
-				text = RETRIEVING_DATA,
+			app.CreateRawText(RETRIEVING_DATA, {	-- Filter
 				icon = 134941,
 				description = "Press this button to change the filter.\n\nChanging this value will only show items that match the given filter ID.",
 				visible = true,
@@ -71,7 +70,7 @@ app:CreateWindow("Item Filter", {
 					end
 					return true;
 				end,
-			},
+			}),
 		};
 		self:SetData(app.CreateRawText(L.ITEM_FILTER_TEXT, {
 			icon = app.asset("Category_ItemSets"),
