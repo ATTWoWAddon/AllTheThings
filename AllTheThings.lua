@@ -1394,7 +1394,7 @@ function app:GetDataCache()
 			RootCategory = "In-Game Shop",
 		}));
 	end
-	
+
 	-- Promotions
 	if app.Categories.Promotions then
 		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
@@ -1404,7 +1404,7 @@ function app:GetDataCache()
 			RootCategory = "Promotions",
 		}));
 	end
-	
+
 	-- Trading Post
 	if app.Categories.TradingPost then
 		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
@@ -1413,7 +1413,7 @@ function app:GetDataCache()
 			RootCategory = "Trading Post",
 		}));
 	end
-	
+
 	-----------------------------------------
 	-- D Y N A M I C   C A T E G O R I E S --
 	-----------------------------------------
@@ -1439,10 +1439,10 @@ function app:GetDataCache()
 			tinsert(g, dynamicCategory);
 		end
 	end
-	
+
 	-- Track Deaths!
 	tinsert(g, app.CreateDeathClass());
-	
+
 	-- Yourself.
 	tinsert(g, app.CreateUnit("player", {
 		description = L.DEBUG_LOGIN,
@@ -1480,7 +1480,7 @@ function app:GetDataCache()
 		CacheFields(db, true, "Achievements")
 		tinsert(g, db);
 	end
-	
+
 	if app.IsRetail then
 	-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
 	-- Create Dynamic Groups Button
@@ -1670,9 +1670,9 @@ function app:GetDataCache()
 		},
 	}));
 	end
-	
+
 	app.AssignChildren(rootData);
-	
+
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
@@ -1703,7 +1703,7 @@ local function PrePopulateAchievementSymlinks()
 		end
 		app.FillRunner.SetPerFrame(25)
 	end
-	Callback(app.RemoveEventHandler, PrePopulateAchievementSymlinks)
+	app.FunctionRunner.Run(app.RemoveEventHandler, PrePopulateAchievementSymlinks)
 	-- app.PrintDebug("Done:FillAchSym")
 end
 app.AddEventHandler("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)
@@ -1730,7 +1730,7 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- clear harvest data on load in case someone forgets
 		AllTheThingsHarvestItems = {};
-		
+
 		-- Character Data Storage
 		local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
 		local currentCharacter = characterData[app.GUID];
@@ -1761,7 +1761,7 @@ local ADDON_LOADED_HANDLERS = {
 		app.AddEventHandler("OnPlayerLevelUp", function()
 			currentCharacter.lvl = app.Level;
 		end);
-		
+
 		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 		local currentQuestsCache = currentCharacter.Quests;
 		for questID,completion in pairs(currentQuestsCache) do
@@ -1782,14 +1782,14 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
 		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-		
+
 		-- Clean up unused saved variables if they become deprecated after being pushed to Git
 		accountWideData.Campsite = nil
 		accountWideData.WarbandScene = nil
 		accountWideData.TEMP_TWWSources = nil
 		currentCharacter.CommonItems = nil
 		accountWideData.CommonItems = nil
-		
+
 		-- Clean up other matching Characters with identical Name-Realm but differing GUID
 		local myGUID = app.GUID;
 		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
@@ -1878,7 +1878,7 @@ local ADDON_LOADED_HANDLERS = {
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
 		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
-		
+
 		-- OnLoad events (saved variables are now available)
 		app.HandleEvent("OnLoad")
 	end,

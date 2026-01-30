@@ -225,7 +225,7 @@ local function InitialVignetteScan()
 	CacheVignetteSettings()
 	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
 	-- clean up the 1 time function, needs to be callback since it's removing within the same event
-	Callback(app.RemoveEventHandler, InitialVignetteScan)
+	app.FunctionRunner.Run(app.RemoveEventHandler, InitialVignetteScan)
 end
 app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
 app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)
