@@ -2,9 +2,6 @@
 local _, app = ...;
 local L = app.L;
 
--- This window is not currently supported by Classic!
-if not app.IsRetail then return; end
-
 -- Global locals
 local coroutine, getmetatable, setmetatable, ipairs, pairs, rawget, rawset, tremove, tonumber, tostring, math_floor
 	= coroutine, getmetatable, setmetatable, ipairs, pairs, rawget, rawset, tremove, tonumber, tostring, math.floor
@@ -28,69 +25,145 @@ local function GetPopulatedQuestObject(questID)
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
-app.AddCustomWindowOnUpdate("list", function(self, force, got)
-	if not self.initialized then
-		self.VerifyGroupSourceID = function(data)
-			-- can only determine a sourceID if there is an itemID/sourceID on the group
-			if not data.itemID and not data.sourceID then return true end
-			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
-			if data._VerifyGroupSourceID > 5 then
-				-- app.PrintDebug("Cannot Harvest: No Item Info",
-				-- 	app:SearchLink(app.SearchForObject("itemID",data.modItemID,"field") or app.SearchForObject("sourceID",data.sourceID,"field")),
-				-- 	data._VerifyGroupSourceID)
-				return true
+
+local DataType, MinimumID, MaximumID, PartitionSize = "quest", 1, 1000, 1000;
+local OnlyMissing, OnlyCached, OnlyCollected, IsHarvesting;
+local DataTypeShortcuts = setmetatable({
+	source = "sourceID",
+	s = "sourceID",
+	achievementcategory = "achievementCategoryID",
+	azeriteessence = "azeriteEssenceID",
+	flightpath = "flightPathID",
+	runeforgepower = "runeforgePowerID",
+	itemharvester = "itemharvester",
+}, {
+	__index = function(t, key)
+		if not key:find("ID") then
+			key = key .. "ID";
+		end
+		t[key] = key;
+		return key;
+	end,
+});
+app:CreateWindow("list", {
+	Commands = { "attharvest","attharvester" },
+	OnCommand = function(self, args, params)
+		if params.reset then
+			-- If rest was specified, then clear all settings to default.
+			PartitionSize = 1000;
+			MaximumID = 1000;
+			MinimumID = 1
+		end
+		if params.finder then
+			-- The user used /att finder, which is for harvesting exclusively
+			params.type = "itemharvester";
+			params.harvesting = true;
+			params.limit = 225000;
+		end
+		
+		-- If new values were specified, use those new values.
+		if params.part then PartitionSize = tonumber(params.part); end
+		if params.limit then MaximumID = tonumber(params.limit); end
+		if params.min then MinimumID = tonumber(params.min); end
+		if params.type then
+			local a,b = params.type:split(":");
+			DataType = DataTypeShortcuts[b or a];
+			if b then
+				if a == "cache" then
+					-- TODO: Look into this?
+					params.cached = true;
+				end
 			end
-			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1
-			local link, source = data.link or data.silentLink, data.sourceID;
-			if not link then return; end
-			-- If it doesn't, the source ID will need to be harvested.
-			local sourceID = app.GetSourceID(link);
-			-- app.PrintDebug("SourceIDs",data.modItemID,source,app.GetSourceID(link),link)
-			if sourceID and sourceID > 0 then
-				-- only save the source if it is different than what we already have, or being forced
-				if not source or source < 1 or source ~= sourceID then
-					-- print(GetItemInfo(text))
-					if not source then
-						-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
-						data.sourceID = sourceID
-						app.SaveHarvestSource(data)
-					else
-						app.print("SourceID Diff!",link,source,"=>",sourceID)
-						-- replace the item information of the root Item (this affects the Main list)
-						-- since the inherent item information does not match the SourceID any longer
-						local mt = getmetatable(data)
-						if mt then
-							local rootData = mt.__index
-							if rootData then
-								rootData.rawlink = nil
-								rootData.itemID = nil
-								rootData.modItemID = nil
-							end
+		end
+		OnlyCollected = params.collected;
+		IsHarvesting = params.harvesting;
+		OnlyMissing = params.missing;
+		OnlyCached = params.cached;
+		if self:IsShown() then
+			self:Update(true);
+			return true;
+		end
+	end,
+	OnLoad = function(self, settings)
+		if settings.MinimumID then MinimumID = settings.MinimumID end;
+		if settings.MaximumID then MaximumID = settings.MaximumID end;
+		if settings.PartitionSize then PartitionSize = settings.PartitionSize; end
+		if settings.OnlyMissing then OnlyMissing = settings.OnlyMissing; end
+		if settings.OnlyCached then OnlyCached = settings.OnlyCached; end
+		if settings.OnlyCollected then OnlyCollected = settings.OnlyCollected; end
+		if settings.IsHarvesting then IsHarvesting = settings.IsHarvesting; end
+	end,
+	OnSave = function(self, settings)
+		settings.MinimumID = MinimumID;
+		settings.MaximumID = MaximumID;
+		settings.PartitionSize = PartitionSize;
+		settings.OnlyMissing = OnlyMissing;
+		settings.OnlyCached = OnlyCached;
+		settings.OnlyCollected = OnlyCollected;
+		settings.IsHarvesting = IsHarvesting;
+	end,
+	VerifyGroupSourceID = function(data)
+		-- can only determine a sourceID if there is an itemID/sourceID on the group
+		if not data.itemID and not data.sourceID then return true end
+		if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
+		if data._VerifyGroupSourceID > 5 then
+			-- app.PrintDebug("Cannot Harvest: No Item Info",
+			-- 	app:SearchLink(app.SearchForObject("itemID",data.modItemID,"field") or app.SearchForObject("sourceID",data.sourceID,"field")),
+			-- 	data._VerifyGroupSourceID)
+			return true
+		end
+		data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1
+		local link, source = data.link or data.silentLink, data.sourceID;
+		if not link then return; end
+		-- If it doesn't, the source ID will need to be harvested.
+		local sourceID = app.GetSourceID(link);
+		-- app.PrintDebug("SourceIDs",data.modItemID,source,app.GetSourceID(link),link)
+		if sourceID and sourceID > 0 then
+			-- only save the source if it is different than what we already have, or being forced
+			if not source or source < 1 or source ~= sourceID then
+				-- print(GetItemInfo(text))
+				if not source then
+					-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
+					data.sourceID = sourceID
+					app.SaveHarvestSource(data)
+				else
+					app.print("SourceID Diff!",link,source,"=>",sourceID)
+					-- replace the item information of the root Item (this affects the Main list)
+					-- since the inherent item information does not match the SourceID any longer
+					local mt = getmetatable(data)
+					if mt then
+						local rootData = mt.__index
+						if rootData then
+							rootData.rawlink = nil
+							rootData.itemID = nil
+							rootData.modItemID = nil
 						end
 					end
 				end
 			end
-			return true
 		end
-		self.RemoveSelf = function(o)
-			local parent = rawget(o, "parent");
-			if not parent then
-				app.PrintDebug("no parent?",o.text)
-				return;
-			end
-			local og = parent.g;
-			if not og then
-				app.PrintDebug("no g?",parent.text)
-				return;
-			end
-			local i = app.indexOf(og, o) or (o.__dlo and app.indexOf(og, o.__dlo));
-			if i and i > 0 then
-				-- app.PrintDebug("RemoveSelf",#og,i,o.text)
-				tremove(og, i);
-				-- app.PrintDebug("RemoveSelf",#og)
-			end
-			return og;
+		return true
+	end,
+	RemoveSelf = function(o)
+		local parent = rawget(o, "parent");
+		if not parent then
+			app.PrintDebug("no parent?",o.text)
+			return;
 		end
+		local og = parent.g;
+		if not og then
+			app.PrintDebug("no g?",parent.text)
+			return;
+		end
+		local i = app.indexOf(og, o) or (o.__dlo and app.indexOf(og, o.__dlo));
+		if i and i > 0 then
+			-- app.PrintDebug("RemoveSelf",#og,i,o.text)
+			tremove(og, i);
+			-- app.PrintDebug("RemoveSelf",#og)
+		end
+		return og;
+	end,
+	OnInit = function(self, handlers)
 		self.AutoHarvestFirstPartitionCoroutine = function()
 			-- app.PrintDebug("AutoExpandingPartitions")
 			local i = 10;
@@ -120,8 +193,6 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
-		self.initialized = true;
-		force = true;
 		local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
 
 		-- custom params for initialization
@@ -130,8 +201,8 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
 		local onlyCollected = app.GetCustomWindowParam("list", "collected");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
-		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
-		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
+		PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
+		MaximumID = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
 		local min = tonumber(app.GetCustomWindowParam("list", "min")) or 0
 		-- print("Quests - onlyMissing",onlyMissing)
 		local CacheFields, ItemHarvester;
@@ -165,9 +236,9 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			local cacheKeyID = cacheKey.."ID";
 			local imin, imax = 0, 999999
 			-- convert the list min/max into cache-based min/max for cache lists
-			if self.Limit ~= 1000 then
-				imax = self.Limit + 1;
-				self.Limit = 999999
+			if MaximumID ~= 1000 then
+				imax = MaximumID + 1;
+				MaximumID = 999999
 			end
 			if min ~= 0 then
 				imin = min;
@@ -194,7 +265,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		end
 
 		-- add the ID
-		dataType = dataType.."ID";
+		DataType = DataType.."ID";
 
 		local ForceVisibleFields = {
 			visible = true,
@@ -208,7 +279,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			progress = true,
 			parent = true,
 			expanded = true,
-			window = true
+			window = true,
 		};
 		local PartitionMeta = {
 			__index = ForceVisibleFields,
@@ -225,24 +296,24 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			questID = GetPopulatedQuestObject,
 		};
 		if CacheFields then
-			-- app.PrintDebug("OTF:Define",dataType)
-			ObjectTypeFuncs[dataType] = function(id)
+			-- app.PrintDebug("OTF:Define",DataType)
+			ObjectTypeFuncs[DataType] = function(id)
 				-- use the cached id in the slot of the requested id instead
 				-- app.PrintDebug("OTF",id)
 				id = CacheFields[id];
-				-- app.PrintDebug("OTF:CacheID",dataType,id)
+				-- app.PrintDebug("OTF:CacheID",DataType,id)
 				return setmetatable({ visible = true }, {
-					__index = id and (app.SearchForObject(dataType, id, "key")
-									or app.SearchForObject(dataType, id, "field")
-									or app.__CreateObject({[dataType]=id}))
+					__index = id and (app.SearchForObject(DataType, id, "key")
+									or app.SearchForObject(DataType, id, "field")
+									or app.__CreateObject({[DataType]=id}))
 								or setmetatable({name=EMPTY}, app.BaseClass)
 				});
 			end
 			-- app.PrintDebug("SetLimit",#CacheFields)
-			self.Limit = #CacheFields;
+			MaximumID = #CacheFields;
 		end
 		if ItemHarvester then
-			ObjectTypeFuncs[dataType] = ItemHarvester;
+			ObjectTypeFuncs[DataType] = ItemHarvester;
 		end
 		local function CreateTypeObject(type, id)
 			-- app.PrintDebug("DLO-Obj:",type,id)
@@ -250,7 +321,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			if func then return func(id); end
 			-- Simply a visible table whose Base will be the actual referenced object
 			return setmetatable({ visible = true }, {
-				__index = app.SearchForObject(dataType, id, "key")
+				__index = app.SearchForObject(DataType, id, "key")
 					or app.SearchForObject(type, id, "field")
 					or app.__CreateObject({[type]=id})
 			});
@@ -259,14 +330,14 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 		-- info about the Window
 		local g = {};
 		self:SetData(setmetatable({
-			text = "Full Data List - "..(dataType or "None"),
+			text = "Full Data List - "..(DataType or "None"),
 			icon = app.asset("Interface_Quest_header"),
-			description = "1 - "..self.Limit,
+			description = "1 - "..MaximumID,
 			g = g,
 		}, PartitionMeta));
 
 		local overrides = {
-			visible = not harvesting and true or nil,
+			visible = not IsHarvesting and true or nil,
 			indent = 2,
 			collectibleAsCost = false,
 			costCollectibles = false,
@@ -274,7 +345,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
-			text = harvesting and function(o, key)
+			text = IsHarvesting and function(o, key)
 				local text = o.text;
 				if not IsRetrieving(text) then
 					DGR(o);
@@ -298,7 +369,7 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 					-- 	DGR(o);
 					-- 	return "Harvesting..."
 					-- end
-					return "#"..(o[dataType] or o.keyval or "?")..": "..text;
+					return "#"..(o[DataType] or o.keyval or "?")..": "..text;
 				end
 			end,
 			OnLoad = function(o)
@@ -337,17 +408,17 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 				end
 			end
 		end
-		if harvesting then
+		if IsHarvesting then
 			app.SetDGUDelay(0);
 			app.StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
 		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math_floor(self.Limit / self.PartitionSize);
-		local groupStart = math_floor(min / self.PartitionSize);
+		local groupCount = math_floor(MaximumID / PartitionSize);
+		local groupStart = math_floor(min / PartitionSize);
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=groupStart,groupCount,1 do
-			partitionStart = j * self.PartitionSize;
+			partitionStart = j * PartitionSize;
 			partitionGroups = {};
 			-- define a sub-group for a range of things
 			partition = setmetatable({
@@ -355,22 +426,35 @@ app.AddCustomWindowOnUpdate("list", function(self, force, got)
 				icon = app.asset("Interface_Quest_header"),
 				g = partitionGroups,
 			}, PartitionMeta);
-			for i=1,self.PartitionSize,1 do
-				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, dataType, partitionStart + i));
+			for i=1,PartitionSize,1 do
+				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, DataType, partitionStart + i));
 			end
 			tinsert(g, partition);
 		end
 		self:AssignChildren();
-	end
-	if self:IsVisible() then
+	end,
+	OnUpdate = function(self, ...)
 		-- requires Visibility filter to check .visibile for display of the group
 		local filterVisible = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible(true);
-		self:DefaultUpdate(force);
+		-- Force Debug Mode
+		local rawSettings = app.Settings:GetRawSettings("General");
+		local debugMode = app.MODE_DEBUG;
+		if not debugMode then
+			rawSettings.DebugMode = true;
+			app.Settings:UpdateMode();
+		end
+		self:DefaultUpdate(...);
+		if not debugMode then
+			rawSettings.DebugMode = debugMode;
+			app.Settings:UpdateMode();
+		end
 		app.Modules.Filter.Set.Visible(filterVisible);
-		return true
+		return true;
 	end
-end)
+});
+
+if true then return; end
 
 app.AddSlashCommands({"attharvest","attharvester"},
 function(cmd)
