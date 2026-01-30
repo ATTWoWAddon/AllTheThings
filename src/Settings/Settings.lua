@@ -1051,6 +1051,7 @@ settings.GetTooltipSettingWithMod = function(self, setting)
 		return v
 	end
 end
+-- TODO: I think these settings events should just concat their full qualifier with only the value as the parameter
 settings.Set = function(self, setting, value)
 	RawSettings.General[setting] = value;
 	app.HandleEvent("Settings.OnSet","General",setting,value)
@@ -1824,19 +1825,24 @@ app.AddEventHandler("OnReady", function()
 	end)
 end)
 
--- TODO: These old settings need to convert into new Window logic somehow, not just blanket removed
--- app.AddEventHandler("OnInit", function()
--- 	-- Handle conversion of deprecated auto-open settings into their respective Window settings
--- 	if settings:GetTooltipSetting("Auto:MainList") then
--- 		app:GetWindow("Prime"):SetShouldAutomaticallyOpen(true)
--- 	end
--- 	if settings:GetTooltipSetting("Auto:MiniList") then
--- 		app:GetWindow("MiniList"):SetShouldAutomaticallyOpen(true)
--- 	end
--- 	if settings:GetTooltipSetting("Auto:RaidAssistant") then
--- 		app:GetWindow("RaidAssistant"):SetShouldAutomaticallyOpen(true)
--- 	end
--- 	if settings:GetTooltipSetting("Auto:WorldQuestsList") then
--- 		app:GetWindow("WorldQuests"):SetShouldAutomaticallyOpen(true)
--- 	end
--- end)
+-- One-time conversion of old auto-open settings into ShouldAutomaticallyOpen keys on respective windows
+local function ConvertAutoOpenSettings()
+	if settings:GetTooltipSetting("Auto:MainList") then
+		app:GetWindow("Prime"):SetShouldAutomaticallyOpen(true)
+		settings:SetTooltipSetting("Auto:MainList", nil)
+	end
+	if settings:GetTooltipSetting("Auto:MiniList") then
+		app:GetWindow("MiniList"):SetShouldAutomaticallyOpen(true)
+		settings:SetTooltipSetting("Auto:MiniList", nil)
+	end
+	if settings:GetTooltipSetting("Auto:RaidAssistant") then
+		app:GetWindow("RaidAssistant"):SetShouldAutomaticallyOpen(true)
+		settings:SetTooltipSetting("Auto:RaidAssistant", nil)
+	end
+	if settings:GetTooltipSetting("Auto:WorldQuestsList") then
+		app:GetWindow("WorldQuests"):SetShouldAutomaticallyOpen(true)
+		settings:SetTooltipSetting("Auto:WorldQuestsList", nil)
+	end
+	app.FunctionRunner.Run(app.RemoveEventHandler, ConvertAutoOpenSettings)
+end
+app.AddEventHandler("OnLoad", ConvertAutoOpenSettings)

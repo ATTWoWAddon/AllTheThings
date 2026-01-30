@@ -1797,7 +1797,7 @@ local function CreateRow(container, rows, i)
 end
 
 -- Window Creation
-local AllWindowSettings, AllWindowSettingsLoaded;
+local AllWindowSettings;
 local function ApplySettingsForWindow(self, windowSettings)
 	local oldRecordSettings = self.RecordSettings;
 	self.RecordSettings = app.EmptyFunction;
@@ -1835,9 +1835,6 @@ local function ApplySettingsForWindow(self, windowSettings)
 	if windowSettings.Progress and self.data then
 		self.data.progress = windowSettings.Progress;
 		self.data.total = windowSettings.Total;
-	end
-	if AllWindowSettingsLoaded or self:GetShouldAutomaticallyOpen() then
-		self:SetVisible(windowSettings.visible);
 	end
 	self.RecordSettings = oldRecordSettings;
 end
@@ -1930,22 +1927,25 @@ local function LoadSettingsForWindow(self)
 		AllWindowSettings[name] = settings;
 	end
 	-- try to load settings from the Profile since Retail allows per-Profile window management
+	-- TODO: in later phase make Layouts and Profiles separate such that
+	-- - Layouts only control Window positions/behaviors
+	-- - Profiles control settings as they currently do
 	app.Settings.GetWindowSettingsFromProfile(name, settings)
 	self.Settings = settings;
 	self:Load(settings);
 end
-app.AddEventHandler("OnInit", function()
+app.AddEventHandler("OnSavedVariablesAvailable", function()
 	if AllWindowSettings then
 		return;
 	end
-	
+
 	-- Setup the Saved Variables if they aren't already.
 	local savedVariables = AllTheThingsSavedVariables;
 	if not savedVariables then
 		savedVariables = {};
 		AllTheThingsSavedVariables = savedVariables;
 	end
-	
+
 	-- Load the Window Settings
 	local windowSettings = savedVariables.Windows;
 	if not windowSettings then
@@ -1957,24 +1957,25 @@ app.AddEventHandler("OnInit", function()
 	-- Rename the old mini list settings container.
 	local oldMiniListData = windowSettings.CurrentInstance;
 	if oldMiniListData then
-		print("Found old Mini List Data settings");
+		app.PrintDebug("Found old Mini List Data settings");
 		windowSettings.CurrentInstance = nil;
 		windowSettings.MiniList = oldMiniListData;
 	end
-	
+end)
+app.AddEventHandler("OnInit", function()
 	-- Clean out non-visible dynamic windows and cache the rest
 	local dynamicWindows = {};
-	for name, settings in pairs(windowSettings) do
+	for name, settings in pairs(AllWindowSettings) do
 		if settings.dynamic then
 			if settings.visible then
 				dynamicWindows[name] = settings;
 			else
-				windowSettings[name] = nil;
+				AllWindowSettings[name] = nil;
 			end
 		end
 	end
 
-	-- Load all of the windows other than Prime.
+	-- Load settings for all of the windows other than Prime.
 	local primeWindow = app.Windows.Prime;
 	app.Windows.Prime = nil;
 	for name, window in pairs(app.Windows) do
@@ -1982,25 +1983,23 @@ app.AddEventHandler("OnInit", function()
 		dynamicWindows[name] = nil;
 	end
 
-	-- Okay, now load Prime last.
+	-- Okay, now load Prime settings last.
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
 
-	-- Mark Windows as loaded.
-	AllWindowSettingsLoaded = true;
-	
-	-- Okay, NOW apply visible
+	-- Okay, NOW apply visible to any Built windows
 	for name, window in pairs(app.Windows) do
 		local settings = window.Settings;
 		if settings and (settings.visible or settings.ShouldAutomaticallyOpen) then
-			window:Show();
+			window:Show()
 		end
 	end
-	
+
+	-- Now apply visible to any Defined windows
 	for name, definition in pairs(app.WindowDefinitions) do
 		local settings = AllWindowSettings[name];
 		if settings and (settings.visible or settings.ShouldAutomaticallyOpen) then
-			app:GetWindow(name):Show();
+			app:GetWindow(name):Show()
 		end
 	end
 
@@ -2013,9 +2012,7 @@ end);
 
 -- Automatic Opening Opt-In Methods
 local GetShouldAutomaticallyOpen = function(self)
-	if self.Settings then
-		return self.Settings.ShouldAutomaticallyOpen;
-	end
+	return self.Settings and self.Settings.ShouldAutomaticallyOpen;
 end
 local SetShouldAutomaticallyOpen = function(self, shouldAutomaticallyOpen)
 	if self.Settings then
@@ -2354,6 +2351,15 @@ local ReservedFields = {
 	GetShouldAutomaticallyOpen = true,
 	SetShouldAutomaticallyOpen = true,
 };
+local PreCallShowSuffixes = {}
+local PrecallShow = true
+app.AddEventHandler("OnStartupDone", function()
+	PrecallShow = nil
+	for k in pairs(PreCallShowSuffixes) do
+		app.PrintDebug("Precall Show",k)
+		app.Windows[k]:Show()
+	end
+end)
 local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
@@ -2455,6 +2461,11 @@ local function BuildWindow(suffix)
 		self:RecordSettings();
 	end);
 	window:SetScript("OnShow", function(self)
+		if PrecallShow then
+			app.PrintDebug("Window:OnShow:Early",self.Suffix)
+			PreCallShowSuffixes[self.Suffix] = true
+			return
+		end
 		if not self.data then
 			self:Rebuild();
 		else
@@ -2858,7 +2869,7 @@ local function BuildWindow(suffix)
 	
 	-- If window settings were already loaded, then load this window's definition now
 	-- Windows created after startup would otherwise fail to load their definition.
-	if AllWindowSettingsLoaded then
+	if AllWindowSettings then
 		LoadSettingsForWindow(window);
 	end
 	

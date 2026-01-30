@@ -941,7 +941,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 	-- Retail Event Handlers
 	app.AddEventRegistration("LOOT_OPENED", RefreshAllQuestInfo)
 	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
-	app.AddEventHandler("OnInit", QueryCompletedQuests);
+	app.AddEventHandler("OnStartup", QueryCompletedQuests);
 	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
 	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 	app.AddEventHandler("OnReady", function()

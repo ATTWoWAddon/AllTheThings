@@ -13,7 +13,7 @@ local ipairs, pairs, tinsert, type, wipe
 	= ipairs, pairs, tinsert, type, wipe
 
 -- Implementation
-app:CreateWindow("World Quests", {
+app:CreateWindow("WorldQuests", {
 	AllowCompleteSound = true,
 	Commands = { "attwq" },
 	OnInit = function(self, handlers)
@@ -28,7 +28,7 @@ app:CreateWindow("World Quests", {
 		local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
 		local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo =
 			  GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
-		
+
 		-- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 		---@return table?
 		local function GetPopulatedQuestObject(questID)
@@ -46,8 +46,7 @@ app:CreateWindow("World Quests", {
 			app.TryPopulateQuestRewards(questObject);
 			return questObject;
 		end
-		
-		force = true;
+
 		local UpdateButton = app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
 			["icon"] = 134269,
 			["description"] = L.UPDATE_WORLD_QUESTS_DESC,
