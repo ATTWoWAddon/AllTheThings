@@ -14,10 +14,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			["groups"] = {
 				ach(61430, {	-- Crunching for Cultists
 					["coords"] = {
-						{ 49.4, 80.2, TWILIGHT_HIGHLANDS },
-						{ 50.3, 89.4, TWILIGHT_HIGHLANDS },
+						{ 49.4, 80.2, TWILIGHT_HIGHLANDS },	-- Blood Elf Campsite
+						{ 50.3, 89.4, TWILIGHT_HIGHLANDS },	-- Void Elf Campsite
 					},
-					["provider"] = { "o", 566765 },	-- Stolen Twilight's Blade Stratagem
+					["providers"] = {
+						{ "o", 566765 },	-- Stolen Twilight's Blade Stratagem, Blood Elf Campsite
+						{ "o", 508350 },	-- Stolen Twilight's Blade Stratagem, Void Elf Campsite
+					},
 				}),
 				ach(42300, {	-- Two Minutes to Midnight (automated)
 					title(642),	-- <Name>, Thorn of Twilight
@@ -270,7 +273,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						}),
 					})),
 					n(MAX_LEVEL_CHARACTERS, bubbleDownFiltered({
-						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 40 } },
+						["cost"] = { { "c", TWILIGHTS_BLADE_INSIGNIA, 20 } },
 					},FILTERFUNC_itemID,{
 						filter(CLOAKS, {
 							i(246674),	-- Ascension Arrestor's Cape

@@ -4529,7 +4529,6 @@ root(ROOTS.Unsorted, {
 			i(260620),	-- Stone Droppings
 			i(260621),	-- Magic Infused Bark
 			i(260636),	-- Algae Covered Stone
-			i(260637),	-- Rotting Insect Eggs
 			i(260640),	-- Crooked Bird Talons
 			i(260644),	-- Lightbloom Bark
 			i(260654),	-- Abrasive Sand

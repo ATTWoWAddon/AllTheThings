@@ -2655,6 +2655,7 @@ i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
 i(260660);	-- Putrid Mushroom Spores
 i(238477);	-- Rotten Meat
+i(260637);	-- Rotting Insect Eggs
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
 i(260684);	-- Sharp Scales
