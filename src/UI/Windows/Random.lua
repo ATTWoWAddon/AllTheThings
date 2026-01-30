@@ -7,7 +7,6 @@ local ipairs, tinsert, tremove, setmetatable, math_max, math_random, unpack, wip
 	= ipairs, tinsert, tremove, setmetatable, math.max, math.random, unpack, wipe;
 local C_Map_GetMapInfo
 	= C_Map.GetMapInfo
-local NestObject = app.NestObject
 
 -- Local Functions
 local SearchFilter;
@@ -115,7 +114,6 @@ local function AddRandomCategoryButton(text, icon, desc, category)
 		description = desc,
 		icon = icon,
 		SortPriority = 2,
-		OnUpdate = app.AlwaysShowUpdate,
 		OnClick = OnClickForSearchCategory,
 	})
 end
@@ -126,7 +124,6 @@ local RandomCategoryButtons = {
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
-		OnUpdate = app.AlwaysShowUpdate,
 		OnClick = OnClickForSearchCategory,
 	}),
 	AddRandomCategoryButton(L.ACHIEVEMENT, app.asset("Category_Achievements"), L.ACHIEVEMENT_DESC, "Achievement"),
@@ -183,7 +180,7 @@ app:CreateWindow("Random", {
 	IgnoreQuestUpdates = true,
 	OnLoad = function(self, settings)
 		SearchFilter = settings.SearchFilter or "Quest";
-		
+
 		-- For this window's options to work, Prime needs to be fully initialized.
 		local prime = app:GetWindow("Prime");
 		if not prime.data.TLUG then prime:ForceUpdate(); end
@@ -197,7 +194,7 @@ app:CreateWindow("Random", {
 		for i=#self.data.g,#self.data.options + 1,-1 do
 			tremove(self.data.g, i);
 		end
-		
+
 		-- Call to our method and build a list to draw from
 		local cache = app.GetCachedData("SEARCH::" .. SearchFilter, CreateCache);
 		local weightedTable, totalWeight = unpack(cache);
@@ -230,7 +227,6 @@ app:CreateWindow("Random", {
 		local filterOptions = app.CreateRawText(L.APPLY_SEARCH_FILTER, {
 			icon = app.asset("Button_Search"),
 			description = L.APPLY_SEARCH_FILTER_DESC,
-			OnUpdate = app.AlwaysShowUpdate,
 			SortType = "Global",
 			indent = 0,
 			back = 1,
@@ -239,7 +235,6 @@ app:CreateWindow("Random", {
 		self.defaultHeader = app.CreateRawText(L.GO_GO_RANDOM, {
 			icon = app.asset("WindowIcon_Random"),
 			description = L.GO_GO_RANDOM_DESC,
-			OnUpdate = app.AlwaysShowUpdate,
 			expanded = true,
 			visible = true,
 			back = 1,
@@ -249,7 +244,6 @@ app:CreateWindow("Random", {
 				app.CreateRawText(L.CHANGE_SEARCH_FILTER, {
 					icon = app.asset("Button_Search"),
 					description = L.CHANGE_SEARCH_FILTER_DESC,
-					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
 						app.AssignChildren(filterOptions);
 						self:SetData(filterOptions);
