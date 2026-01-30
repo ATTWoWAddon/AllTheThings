@@ -2214,11 +2214,26 @@ local function UpdateWindow(self, force, trigger)
 	-- app.PrintDebugPrior("Update:None")
 end
 local FieldDefaults = {
-	AddEventHandler = function(self, event, handler)
+	AddEventHandler = function(self, event, handler, keepGlobal)
 		-- allows a window to keep track of any specific custom handler functions it creates
 		self.Handlers = self.Handlers or {}
-		app.AddEventHandler(event, handler)
-		self.Handlers[#self.Handlers + 1] = handler
+		-- goal: self:handler(...)
+		-- event call: handler(...)
+		-- TODO: eventually reconcile window-based event handling to always have a self reference
+		if not keepGlobal then
+			-- maybe eventually a different way to trigger an event when within scope of a Window so that it is attached directly??
+			local function __handler(...)
+				-- app.PrintDebug("__handler",event,...)
+				handler(self, ...)
+			end
+			app.PrintDebug("AddEventHandler.__handler",self.Suffix,event)
+			app.AddEventHandler(event, __handler)
+			self.Handlers[#self.Handlers + 1] = __handler
+		else
+			app.PrintDebug("AddEventHandler.handler",self.Suffix,event)
+			app.AddEventHandler(event, handler)
+			self.Handlers[#self.Handlers + 1] = handler
+		end
 	end,
 	RemoveEventHandlers = function(self)
 		-- allows a window to remove all event handlers it created
@@ -2243,8 +2258,8 @@ local FieldDefaults = {
 	end,
 	SetData = function(self, data)
 		-- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
-		-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
 		if data then
+			app.PrintDebug("Window:SetData",self.Suffix,data.text)
 			data.window = self;
 			self.data = data;
 		end
@@ -2437,13 +2452,13 @@ local function BuildWindow(suffix)
 	-- Some Window functions should be triggered from ATT events
 	window:AddEventHandler("OnUpdateWindows", function(...)
 		window:Update(...)
-	end)
+	end, true)
 	window:AddEventHandler("OnRefreshWindows", function(...)
 		window:Refresh(...)
-	end)
+	end, true)
 	window:AddEventHandler("OnRedrawWindows", function()
 		window:Redraw()
-	end)
+	end, true)
 	local eventHandlers = definition.EventHandlers
 	if eventHandlers then
 		for e,f in pairs(eventHandlers) do
@@ -2681,7 +2696,7 @@ local function BuildWindow(suffix)
 			function window:Refresh()
 				if self:IsShown() and onRefresh(self) then
 					self:DefaultRefresh();
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		end
@@ -2700,7 +2715,7 @@ local function BuildWindow(suffix)
 			function window:Refresh()
 				if self:IsShown() then
 					self:DefaultRefresh();
-					-- app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
+					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
 				end
 			end
 		end

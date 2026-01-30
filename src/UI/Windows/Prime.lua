@@ -4,8 +4,7 @@ local ipairs, pairs, tremove
 	= ipairs, pairs, tremove;
 
 -- Implementation
-local Window
-Window = app:CreateWindow("Prime", {
+app:CreateWindow("Prime", {
 	AllowCompleteSound = true,
 	SettingsName = "Main List",
 	Preload = true,
@@ -144,11 +143,11 @@ Window = app:CreateWindow("Prime", {
 		return true
 	end,
 	EventHandlers = {
-		["Settings.OnSet"] = function(container,setting,value)
+		["Settings.OnSet"] = function(self,container,setting,value)
 			if container ~= "Tooltips" then return end
 
 			if setting == "MainListScale" then
-				Window:SetScale(value)
+				self:SetScale(value)
 			end
 		end,
 	}
