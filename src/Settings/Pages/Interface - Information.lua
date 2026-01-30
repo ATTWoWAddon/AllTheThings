@@ -223,6 +223,17 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 
+-- Known By / Completed By / Useful For
+local KnownByIgnoredTypes = {
+	Achievement = app.IsRetail,
+	BattlePet = true,
+	BattlePetWithItem = true,
+	Illusion = true,
+	IllusionWithItem = true,
+	Mount = true,
+	MountWithItem = true,
+}
+
 local knownBy = {};
 
 -- Helper: Map Faction IDs to Name (1 = Horde, 2 = Alliance)
@@ -231,73 +242,74 @@ local FACTION_ID_TO_NAME = {
 	[2] = "Alliance",
 }
 
--- Helper: Determine Faction safely (checks Name -> ID)
+-- Helper: Map Item SubClass IDs (for Recipes) directly to Profession Spell IDs (SavedVariables)
+local RECIPE_SUBCLASS_TO_SPELLID = {
+	[1]  = 2108,  -- Leatherworking
+	[2]  = 3908,  -- Tailoring
+	[3]  = 4036,  -- Engineering
+	[4]  = 2018,  -- Blacksmithing
+	[5]  = 2550,  -- Cooking
+	[6]  = 2259,  -- Alchemy
+	[7]  = 3273,  -- First Aid
+	[8]  = 7411,  -- Enchanting
+	[9]  = 7620,  -- Fishing
+	[10] = 25229, -- Jewelcrafting
+	[11] = 45357, -- Inscription
+}
+
+-- Helper: Fallback Map for generic Skill IDs to Spell IDs
+local SKILL_TO_SPELLID = {
+	[171] = 2259, [164] = 2018, [185] = 2550, [333] = 7411, [202] = 4036,
+	[129] = 3273, [356] = 7620, [182] = 2366, [773] = 45357, [755] = 25229,
+	[165] = 2108, [186] = 2575, [393] = 8613, [197] = 3908,
+}
+
 local function GetCharacterFaction(char)
-	-- 1. Check direct name (e.g. "Alliance")
 	if char.faction then return char.faction end
-	
-	-- 2. Check Faction ID (e.g. 2 matches "Alliance")
 	if char.factionID and FACTION_ID_TO_NAME[char.factionID] then
 		return FACTION_ID_TO_NAME[char.factionID]
 	end
-	
 	return "Unknown"
 end
 
--- HELPER: Sorts and Formats the "Known By" list
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	if #knownBy > 0 and kind then
-		-- 1. Sort by Realm -> Faction -> Name (Alphabetical)
 		app.Sort(knownBy, function(a, b)
-			-- Sort by Realm
 			local rA, rB = a.realm or "", b.realm or ""
 			if rA ~= rB then return rA < rB end
-			
-			-- Sort by Faction
 			local fA, fB = GetCharacterFaction(a), GetCharacterFaction(b)
 			if fA ~= fB then return fA < fB end
-			
-			-- Sort by Name (Strip color codes)
 			local nA = (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
 			local nB = (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
 			return nA < nB
 		end);
 
-		-- 2. Add Main Header
-		tinsert(tooltipInfo, { left = kind:format(""), color = app.Colors.TooltipDescription });
-
+		tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
+		
 		local currentHeader = nil
 		local namesInGroup = {}
-
+		
 		local function FlushGroup()
 			if #namesInGroup > 0 then
 				if currentHeader and currentHeader ~= "" then
-					tinsert(tooltipInfo, { left = "  " .. currentHeader, color = app.Colors.TooltipDescription })
+					local headerText = "  " .. currentHeader .. " (" .. #namesInGroup .. ")"
+					tinsert(tooltipInfo, { left = headerText, r = 1, g = 1, b = 1 })
 				end
-				tinsert(tooltipInfo, { 
-					left = "    " .. table.concat(namesInGroup, ", "), 
-					wrap = true, 
-					color = app.Colors.TooltipDescription 
-				})
+				tinsert(tooltipInfo, { left = "    " .. table.concat(namesInGroup, ", "), wrap = true, color = app.Colors.TooltipDescription })
 				wipearray(namesInGroup)
 			end
 		end
 
 		for i, character in ipairs(knownBy) do
-			-- Build Header: "Realm, Faction"
 			local header = character.realm or "Unknown Realm"
 			local faction = GetCharacterFaction(character)
+			if faction and faction ~= "" and faction ~= "Unknown" then header = header .. ", " .. faction end
 			
-			if faction and faction ~= "" and faction ~= "Unknown" then
-				header = header .. ", " .. faction
-			end
-
 			if header ~= currentHeader then
 				FlushGroup()
 				currentHeader = header
 			end
-
-			-- Clean Name: Remove "-Realm"
+			
 			local name = character.text or "???"
 			if character.realm and character.realm ~= "" then
 				local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
@@ -312,108 +324,69 @@ end
 
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if reference.objectiveID then return end
-
-	-- Completed By for Quests
 	local id = reference.questID;
 	if id and (not KnownByIgnoredTypes[reference.__type] or reference.perCharacter) then
 		if app.AccountWideQuestsDB[id] then
-			if IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
-			end
+			if IsQuestFlaggedCompletedOnAccount(id) then tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"}); end
 		else
 			for _,character in pairs(ATTCharacterData) do
-				if character.Quests and character.Quests[id] then
-					if not character.ignored then
-						tinsert(knownBy, character);
-					end
-				end
+				if character.Quests and character.Quests[id] and not character.ignored then tinsert(knownBy, character); end
 			end
-			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"});
-			end
+			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"}); end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 	end
-
-	-- Completed By for Exploration
 	local id = reference.explorationID;
 	if id then
 		for _,character in pairs(ATTCharacterData) do
-			if character.Exploration and character.Exploration[id] then
-				if not character.ignored then
-					tinsert(knownBy, character);
-				end
-			end
+			if character.Exploration and character.Exploration[id] and not character.ignored then tinsert(knownBy, character); end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 	end
-
-	-- Pre-WOD Known By types
 	if app.GameBuildVersion < 60000 then
 		id = reference.achievementID;
 		if id then
 			for guid,character in pairs(ATTCharacterData) do
-				if character.Achievements and character.Achievements[id] then
-					if not character.ignored then
-						tinsert(knownBy, character);
-					end
-				end
+				if character.Achievements and character.Achievements[id] and not character.ignored then tinsert(knownBy, character); end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 		end
-
 		local itemID = reference.itemID;
 		if itemID then
 			local knownByGUID = {};
 			id = reference.sourceID;
 			for guid,character in pairs(ATTCharacterData) do
 				if character.Transmog and character.Transmog[id] and not character.ignored then
-					if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then
-						character.Transmog[id] = nil;
-					else
-						knownByGUID[guid] = character;
-					end
+					if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then character.Transmog[id] = nil; else knownByGUID[guid] = character; end
 				end
 			end
 			if app.GameBuildVersion < 30000 then
 				id = reference.spellID;
 				if id and reference.filterID == 100 then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.Spells and character.Spells[id] and not character.ignored then
-							knownByGUID[guid] = character;
-						end
+						if character.Spells and character.Spells[id] and not character.ignored then knownByGUID[guid] = character; end
 					end
 				end
 				id = reference.speciesID;
 				if id then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.BattlePets and character.BattlePets[id] and not character.ignored then
-							knownByGUID[guid] = character;
-						end
+						if character.BattlePets and character.BattlePets[id] and not character.ignored then knownByGUID[guid] = character; end
 					end
 				end
 				if reference.toyID then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.Toys and character.Toys[itemID] and not character.ignored then
-							knownByGUID[guid] = character;
-						end
+						if character.Toys and character.Toys[itemID] and not character.ignored then knownByGUID[guid] = character; end
 					end
 				end
 			end
-
 			local currentCharacter = knownByGUID[app.GUID];
 			if currentCharacter then
 				local text = currentCharacter.text or "???";
 				local count = GetItemCount(itemID, true);
-				if count and count > 1 then
-					text = text .. " (x" .. count .. ")";
-				end
+				if count and count > 1 then text = text .. " (x" .. count .. ")"; end
 				knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
 			end
-
-			for guid,character in pairs(knownByGUID) do
-				tinsert(knownBy, character);
-			end
+			for guid,character in pairs(knownByGUID) do tinsert(knownBy, character); end
 			BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY);
 		end
 	end
@@ -421,8 +394,9 @@ end
 
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	local id = reference.knownByID or reference.spellID
+	local hasShownAny = false
+	
 	if id then
-		-- 1. Classic Professions
 		if reference.key == "professionID" and app.IsClassic then
 			for _,character in pairs(ATTCharacterData) do
 				if character.ActiveSkills and not character.ignored then
@@ -432,7 +406,10 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			end
 			if #knownBy > 0 then
 				app.Sort(knownBy, function(a, b) return a[2] > b[2]; end);
-				tinsert(tooltipInfo, { left = L.KNOWN_BY:format(""), color = app.Colors.TooltipDescription });
+				
+				tinsert(tooltipInfo, { left = " " });
+				tinsert(tooltipInfo, { left = L.KNOWN_BY:format(""), r = 1, g = 0.82, b = 0 });
+				
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
 					local name = character.text or "???"
@@ -440,32 +417,93 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 						local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
 						name = name:gsub("%-" .. safeRealm, "")
 					end
-					tinsert(tooltipInfo, {
-						left = "  " .. name,
-						right = data[2] .. " / " .. data[3],
-					});
+					tinsert(tooltipInfo, { left = "  " .. name, right = data[2] .. " / " .. data[3], });
 				end
 				wipearray(knownBy);
+				hasShownAny = true
 				return;
 			end
 		end
-
-		-- 2. General Things
+		
 		if not KnownByIgnoredTypes[reference.__type] or reference.perCharacter then
 			local cacheName = reference.CACHE
 			local knownByCache
 			for guid,character in pairs(ATTCharacterData) do
 				if not character.ignored then
 					knownByCache = character[cacheName] or character.Spells
-					if knownByCache and knownByCache[id] then
-						tinsert(knownBy, character);
+					if knownByCache and knownByCache[id] then tinsert(knownBy, character); end
+				end
+			end
+			if #knownBy > 0 then
+				tinsert(tooltipInfo, { left = " " });
+				hasShownAny = true
+				BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
+			end
+		end
+	end
+
+	local spellID = reference.spellID
+	local itemID = reference.itemID
+	
+	if itemID and not spellID then
+		local _, _, _, _, _, _, spellIdFromItem = GetItemSpell(itemID)
+		if spellIdFromItem then spellID = spellIdFromItem end
+	end
+
+	if spellID then
+		local profSpellID = nil
+		if itemID then
+			local _, _, _, _, _, _, _, _, _, _, _, classID, subclassID = GetItemInfo(itemID)
+			if classID == 9 and subclassID then
+				profSpellID = RECIPE_SUBCLASS_TO_SPELLID[subclassID]
+			end
+		end
+		
+		if not profSpellID then
+			local skillID = reference.skillID or reference.requireSkill
+			if skillID and SKILL_TO_SPELLID[skillID] then profSpellID = SKILL_TO_SPELLID[skillID] end
+		end
+
+		if profSpellID then
+			local reqRank = reference.learnedAt or 1
+			for guid, character in pairs(ATTCharacterData) do
+				if not character.ignored then
+					local isKnown = false
+					if character.Spells and character.Spells[spellID] then isKnown = true end
+					
+					if not isKnown then
+						local rank = 0
+						if character.ActiveSkills then
+							local skillData = character.ActiveSkills[profSpellID] or character.ActiveSkills[tostring(profSpellID)]
+							if skillData then rank = skillData[1] end
+						elseif character.Skills then
+							rank = character.Skills[profSpellID] or character.Skills[tostring(profSpellID)] or 0
+						end
+						
+						if rank >= reqRank then
+							tinsert(knownBy, character)
+						end
 					end
 				end
 			end
-			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
+			
+			if #knownBy > 0 then
+				if not hasShownAny then
+					tinsert(tooltipInfo, { left = " " });
+				else
+					tinsert(tooltipInfo, { left = " " });
+				end
+				
+				local header = L.USEFUL_FOR
+				if not header or header == "Unknown" then header = "Useful For" end
+				BuildKnownByInfoForKind(tooltipInfo, header);
+			end
 		end
 	end
 end
+
+CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
+CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
 
 -- Specialization Requirements
 local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
