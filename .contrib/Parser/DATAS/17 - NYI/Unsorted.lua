@@ -3600,8 +3600,6 @@ root(ROOTS.Unsorted, {
 			i(262871),	-- Snowy Dunecloth Vest
 			i(262872),	-- Sunny Dunecloth Vest
 
-			-- Misc
-			i(262880),	-- Vintage Purple Stuff
 
 			-- Inscr
 			i(262908),	-- Milling
@@ -7041,7 +7039,6 @@ root(ROOTS.Unsorted, {
 			i(166535),	-- Relinquished Azerite Chestpiece
 			i(166536),	-- Relinquished Azerite Chestpiece
 			i(166537),	-- Relinquished Azerite Chestpiece
-			i(166545),	-- Befuddlin' Brew
 			i(166728),	-- Carefully Removed Spleen
 			i(166741),	-- Nomi's Grocery Tote
 			i(166742),	-- Blue-Ribbon Pandaren Chili

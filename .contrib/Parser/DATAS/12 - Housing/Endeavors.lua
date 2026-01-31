@@ -11,42 +11,42 @@ ENDEAVOR = createHeader({
 });
 KARESHI_ENDEAVOR = createHeader({
 	readable = "K'areshi Endeavor",
-	icon = 134495,
+	icon = 7413585,
 	text = {
 		en = "K'areshi Endeavor",
 	},
 });
 GRUMMLE_ENDEAVOR = createHeader({
 	readable = "Grummle Endeavor",
-	icon = 134495,
+	icon = 7301740,
 	text = {
 		en = "Grummle Endeavor",
 	},
 });
 NIFFEN_ENDEAVOR = createHeader({
 	readable = "Niffen Endeavor",
-	icon = 134495,
+	icon = 7413586,
 	text = {
 		en = "Niffen Endeavor",
 	},
 });
 SINDOREI_ENDEAVOR = createHeader({
 	readable = "Sin'dorei Endeavor",
-	icon = 134495,
+	icon = 7301737,
 	text = {
 		en = "Sin'dorei Endeavor",
 	},
 });
 DRACONIC_ENDEAVOR = createHeader({
 	readable = "Draconic Endeavor",
-	icon = 134495,
+	icon = 7301738,
 	text = {
 		en = "Draconic Endeavor",
 	},
 });
 MECHAGNOME_ENDEAVOR = createHeader({
 	readable = "Mechagnome Endeavor",
-	icon = 134495,
+	icon = 7301741,
 	text = {
 		en = "Mechagnome Endeavor",
 	},
@@ -98,7 +98,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				["qg"] = 250970, -- Yolan Hidor
 				["coords"] = {
 					{ 53.2, 38.0, FOUNDERS_POINT },
-					-- { X, Y, RAZORWIND_SHORES },
+					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
 			}),
 			q(92402, {	-- Magical Touch

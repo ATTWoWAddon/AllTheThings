@@ -7470,6 +7470,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = { i(33042) },	-- Black Coffee
 				}),
+				n(261231, {	-- Tuuran <Promotional Decor Resupply>
+					["coord"] = { 48.5, 58.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_12_0_0 },
+					["groups"] = {
+						i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
+							["sourceAchievement"] = 62387,	-- It's Nearly Midnight
+							["cost"] = 14000000,	-- 1400g
+						}),
+					},
+				}),
 				n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
