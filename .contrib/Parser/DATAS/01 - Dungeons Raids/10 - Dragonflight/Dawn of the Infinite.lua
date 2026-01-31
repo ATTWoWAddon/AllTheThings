@@ -154,6 +154,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(6682),	-- Death Speaker Robes				(Removed)
 			ig(134784),	-- Entrenched Raiment				(Removed)
 			ig(134722),	-- Icyweave Robes					(Removed)
+			ig(22301),	-- Ironweave Robe					(Removed)
 			ig(21040),	-- Narain's Robe					(Removed)
 			ig(14150),	-- Robe of Evocation				(Removed)
 			ig(134751),	-- Veiled Raiment					(Removed)
@@ -371,6 +372,7 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134768),	-- Concealment Legplates			(Removed)
 			ig(134712),	-- Crushing Legguards				(Removed)
+			ig(22328),	-- Legplates of Vigilance			(Removed)
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
@@ -438,6 +440,7 @@ local QUANTUM_GROUP = sharedData({
 			["modID"] = 1,
 		}),
 		ig(56376),	-- Thundercall							(Removed)
+		ig(18755),	-- Xorothian Firestick					(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
 		hqt(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
@@ -450,6 +453,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
 		ig(134757),	-- Covert Reprieve						(Removed)
 		ig(13371),	-- Father Flame							(Removed)
+		ig(22329),	-- Scepter of Interminable Focus		(Removed)
+		ig(22319),	-- Tome of Divine Right					(Removed)
 		ig(134589),	-- Vanguard Reprieve					(Removed)
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
@@ -577,6 +582,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134611),	-- Scorching Pummeler					(Removed)
 		ig(134789),	-- Seasoned Gavel						(Removed)
 		ig(134781),	-- Seasoned Pummeler					(Removed)
+		ig(22322),	-- The Jaw Breaker						(Removed)
 		ig(134588),	-- Vanguard Gavel						(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
@@ -607,6 +613,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134741),	-- Cold-Touched Barrier					(Removed)
 		ig(134774),	-- Covert Barrier						(Removed)
 		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
+		ig(18756),	-- Dreadguard Protector					(Removed)
 		ig(134632),	-- Scorching Redoubt					(Removed)
 		ig(134803),	-- Seasoned Redoubt						(Removed)
 		ig(134603),	-- Vanguard Redoubt						(Removed)

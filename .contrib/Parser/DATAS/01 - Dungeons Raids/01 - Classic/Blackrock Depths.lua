@@ -2805,8 +2805,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = {
 								-- #if SEASON_OF_DISCOVERY
 								REMOVED_1_15_3,
-								-- #else
-								REMOVED_4_0_1,
 								-- #endif
 							},
 						}),
