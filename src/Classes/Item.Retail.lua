@@ -509,6 +509,11 @@ app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 }, (function(t) return t.factionID; end));
 
 local function OnClickCostItem(row, button)
+	-- allow default chat linking
+	if button == "LeftButton" and IsShiftKeyDown() then
+		return
+	end
+	-- block all rightclicks
 	if button ~= "RightButton" then
 		return true
 	end

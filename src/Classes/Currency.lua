@@ -73,6 +73,11 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 })
 
 local function OnClickCostItem(row, button)
+	-- allow default chat linking
+	if button == "LeftButton" and IsShiftKeyDown() then
+		return
+	end
+	-- block all rightclicks
 	if button ~= "RightButton" then
 		return true
 	end
