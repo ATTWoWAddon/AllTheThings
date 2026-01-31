@@ -5264,11 +5264,6 @@ root(ROOTS.Unsorted, {
 				i(260532),	-- Tuskarr Dinner Bell
 				i(260533),	-- Oddsight Focus
 				i(260589),	-- Flame-Blessed Beach Towel
-				-- Misc What happened??!
-				i(262562),	-- Bolt of Pressed Linen
-				i(262563),	-- Bolt of Elegant Silk
-				i(262564),	-- Bolt of Soft Wool
-				i(262565),	-- Spool of Thread
 				-- house?
 				i(249386),	-- Ghost Gear
 			}),
