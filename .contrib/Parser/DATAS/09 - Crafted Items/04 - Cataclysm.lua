@@ -1053,7 +1053,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 		}),
 		-- #if AFTER WOD
-		spell(165466, {	-- Research: Blackfallow Ink
+		header(HEADERS.Spell, 165466, {	-- Research: Blackfallow Ink
 			r(64260, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
 			r(64262, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 		}),
@@ -1166,7 +1166,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		-- #endif
 		category(106, {	-- Tarot Cards
-			sp(86615, {	-- Darkmoon Card of Destruction
+			header(HEADERS.Spell, 86615, {	-- Darkmoon Card of Destruction
 				i(61988),	-- Ace of Embers
 				i(61989),	-- Two of Embers
 				i(61990),	-- Three of Embers

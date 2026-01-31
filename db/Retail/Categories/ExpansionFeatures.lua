@@ -2344,7 +2344,7 @@ n(58244,{coords={a[3039]}})}}),
 q(30156,{coords={a[2624]},cost={{"i",79028,5}},crs={58218},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs={65669,65670,65671,65672,65673,65674,65724},qis={79027},sourceQuests=a[1316],g={
 i(79028,{coords={{68.4,26.4,371}},crs={58219},spellID=110456})}}),
 q(30147,{coords={a[2621]},crs={62596},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={79049},requireSkill=794,sourceQuests=a[1316]}),
-q(30148,{coords={a[2621]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={72985,72986},sourceQuests=a[1316],g={
+q(30148,{coords={a[2621]},description="Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={72985,72986},sourceQuests=a[1316],g={
 n(58416,{coords={{65.4,28.2,371}}})}}),
 q(31709,{coords={a[2623]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs={58508},qis={88966}}),
 q(31703,{isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2757],sourceQuests=a[1316],g={
@@ -2394,9 +2394,15 @@ o(214865,{coords={a[2995]}}),
 o(214866,{coords={a[2995]}}),
 o(214867,{coords={a[2995]}}),
 o(214868,{coords={a[2995]}})}}),
-q(30152,{coords={a[2705]},crs={58438,58530},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2739],sourceQuests=a[1317],g={
-i(90537,{b=1,description="Contains a reward of Valor Points based on how well you place in the race."}),
-ach(7290),
+q(30152,{coords={a[2705]},crs={58438,58530},description="This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2739],sourceQuests=a[1317],g={
+i(90537,{b=1,description="Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",g={
+i(90543,{b=1}),
+i(90538,{b=1}),
+i(90541,{b=1}),
+i(90539,{b=1}),
+i(90544,{b=1}),
+i(90540,{b=1})}}),
+ach(7290,{description="You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver."}),
 ach(7291)}}),
 q(31717,{coords={a[2633]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2757],sourceQuests=a[1317],g={
 n(58506,{coords={{58,43.8,371}}})}}),
@@ -2433,7 +2439,7 @@ q(30136,{coords={a[3040]},lvl=10,qgs=a[2727],qis=a[3363],sourceQuests=a[1314],g=
 n(58220,{coords={a[3039]}}),
 n(58243,{coords={a[3039]}}),
 n(58244,{coords={a[3039]}})}}),
-q(30145,{coords={a[2705]},lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests=a[1317]}),
+q(30145,{coords={a[2705]},description="This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests=a[1317]}),
 q(30187,{coords={a[2705]},crs={58438},lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests={30145}}),
 q(30144,{coords={a[2705]},crs=a[2740],lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests={30143}}),
 q(30142,{coords={a[2628]},lvl=10,qgs=a[2728],sourceQuests={30139,30140,30141}}),
@@ -8192,7 +8198,7 @@ r(190383,{b=1,cost={{"i",114931,20}},itemID=128411,requireSkill=773,skillID=2509
 r(190385,{b=1,cost={{"i",114931,20}},itemID=128413,requireSkill=773,skillID=2509}),
 r(190384,{b=1,cost={{"i",114931,20}},itemID=128412,requireSkill=773,skillID=2509}),
 r(190386,{b=1,cost={{"i",114931,20}},itemID=128414,requireSkill=773,skillID=2509}),
-i(127723,{b=1,collectible=false,cost={{"i",114931,20}},f=200,requireSkill=773,spellID=187495,u=5}),
+r(187495,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127723,requireSkill=773,u=5}),
 r(187494,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127728,requireSkill=773,u=5}),
 r(187519,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127741,requireSkill=773,u=5}),
 r(187518,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127746,requireSkill=773,u=5}),
@@ -8319,7 +8325,7 @@ r(190383,{b=1,cost={{"i",114931,20}},itemID=128411,requireSkill=773,skillID=2509
 r(190385,{b=1,cost={{"i",114931,20}},itemID=128413,requireSkill=773,skillID=2509}),
 r(190384,{b=1,cost={{"i",114931,20}},itemID=128412,requireSkill=773,skillID=2509}),
 r(190386,{b=1,cost={{"i",114931,20}},itemID=128414,requireSkill=773,skillID=2509}),
-i(127723,{b=1,collectible=false,cost={{"i",114931,20}},f=200,requireSkill=773,spellID=187495,u=5}),
+r(187495,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127723,requireSkill=773,u=5}),
 r(187494,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127728,requireSkill=773,u=5}),
 r(187519,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127741,requireSkill=773,u=5}),
 r(187518,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127746,requireSkill=773,u=5}),
