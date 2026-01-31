@@ -1411,6 +1411,7 @@ function app:GetDataCache()
 			icon = app.asset("Category_TradingPost"),
 			g = app.Categories.TradingPost,
 			RootCategory = "Trading Post",
+			isMinilistHeader = true,
 		}));
 	end
 
