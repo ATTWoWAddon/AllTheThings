@@ -841,6 +841,17 @@ local function UpdateVisibleRowData(self)
 		local row = rows[1];
 		local firstRowHeight = row:GetHeight()
 
+		-- Ensure that the first row doesn't move out of position.
+		SetRowData(self, row, rowData[1]);
+
+		-- Fill the remaining rows up to the (visible) row count.
+		row = rows[2]
+		local current, rowHeight
+			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, row:GetHeight();
+		local maxRows = math.floor((containerHeight - firstRowHeight) / rowHeight) + 1
+		local rowCount = math.min(maxRows, #rowData)
+		self:SetMinMaxValues(rowCount, totalRowCount)
+
 		-- Should this window attempt to scroll to specific data?
 		if self.ScrollInfo then
 			local field, value = self.ScrollInfo[1], self.ScrollInfo[2]
@@ -863,24 +874,15 @@ local function UpdateVisibleRowData(self)
 				local possibleRows = math.floor((containerHeight - firstRowHeight) / rows[2]:GetHeight()) + 1
 				-- app.PrintDebug("Possible Rows:",possibleRows)
 				local scrollIndex = math.min(foundAt - (possibleRows / 2), totalRowCount - possibleRows)
-				-- app.PrintDebug("Scrolling to:",scrollIndex)
-				self.ScrollBar:SetValue(scrollIndex)
-				-- callback refresh from scroll or this directly will do the actual refresh
-				-- sometimes scroll won't actually move
-				Callback(self.Refresh, self)
-				return
+				local currentScroll = self.ScrollBar.CurrentIndex
+				-- app.PrintDebug("Scrolling to:",scrollIndex,"from",currentScroll)
+				if currentScroll ~= scrollIndex then
+					self.ScrollBar:SetValue(scrollIndex)
+					return
+				end
 			end
 		end
 
-		-- Ensure that the first row doesn't move out of position.
-		SetRowData(self, row, rowData[1]);
-
-		-- Fill the remaining rows up to the (visible) row count.
-		row = rows[2]
-		local current, rowHeight
-			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, row:GetHeight();
-		local maxRows = math.floor((containerHeight - firstRowHeight) / rowHeight) + 1
-		local rowCount = math.min(maxRows, #rowData)
 		local minIndent
 		for i=2,rowCount do
 			row = rows[i];
@@ -919,7 +921,6 @@ local function UpdateVisibleRowData(self)
 			-- Ignoring cleaning rows beyond already cleaned ones seems fine as long as people don't be weird
 			if SetRowData(self, rows[i], nil) then break end
 		end
-		self:SetMinMaxValues(rowCount, totalRowCount);
 
 		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
 		if GameTooltip and GameTooltip:IsVisible() then
