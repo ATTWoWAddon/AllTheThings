@@ -2288,6 +2288,7 @@ i(258488, 1263369);	-- Skypaw Glimmerfur
 ------------------
 i(265656, 1276650);	-- Anu'shalla, Shadow's Guidance
 i(262620, 1257058);	-- Calamitous Carrion
+i(260580, 1266579);	-- Cloudborn Razorwing
 i(262621, 1257081);	-- Convalescent Carrion
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(246736, 1243598);	-- Ivory Grimlynx
@@ -2300,6 +2301,8 @@ i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(264273, 1271549);	-- Fel Spirehawk
 i(262661, 1269181);	-- Ghastropod
 i(262909, 1269556);	-- Hypo-Speed X6000
+i(254736, 1258574);	-- Stormgilded Celestial
+i(254735, 1258573);	-- Thunderhoof Celestial
 
 ------------------
 -- PATCH 12.0.1 --
@@ -2328,7 +2331,6 @@ i(262707, 1269279);	-- Blooded Snapvine
 i(0, 1253924);	-- Brilliant Petalwing
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(257156, 1261323);	-- Cerulean Hawkstrider
-i(260580, 1266579);	-- Cloudborn Razorwing
 i(257156, 1261302);	-- Cobalt Dragonhawk
 i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
 i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt

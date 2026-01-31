@@ -37,20 +37,20 @@ local ALL_REGULAR_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
-	-- SHADOWGUARD_POINT,	-- MAPID MISSING
+	SHADOWGUARD_POINT,
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
 	THE_GRUDGE_PIT,
 	THE_SHADOW_ENCLAVE,
-	TORMENTS_RISE,
+	--TORMENTS_RISE,
 	TWILIGHT_CRYPTS,
 };
 local ALL_THE_DELVES_MID = {
 	ATAL_AMAN,
 	COLLEGIATE_CALAMITY,
 	PARHELION_PLAZA,
-	-- SHADOWGUARD_POINT,	-- MAPID MISSING
+	SHADOWGUARD_POINT,
 	SUNKILLER_SANCTUM,
 	THE_DARKWAY,
 	THE_GULF_OF_MEMORY,
@@ -82,7 +82,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			--i(232371),	-- Companion Experience (Delver's Call reward) // alpha item
 			i(257382),	-- Companion Experience (Delve reward UI)
 			i(263488),	-- Companion Experience (Delver's Call reward)
-			--i(257386),	-- Heavy Trunk // alpha item
+			i(257386),	-- Heavy Trunk (Delve reward UI)
 			--i(257379),	-- Player Experience (Epic) // alpha item
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
@@ -109,6 +109,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			filter(TRINKET_F, {
 			}),
 		}),
+		--n(DECOR, {
+		--	-- TODO: based on pure specilation due to lack of data. Probably all delves decor are shared and can be looted from any delves.
+		--}),
 		n(WEAPONS, {
 		}),
 	})),
@@ -123,6 +126,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--hqt(92762),	-- Level 14 (She was level 13, actually, according to notes)
 		--hqt(92775),	-- Level 27 (she was actually level 27), also it seems like questIDs keep flagging but not reported in-game?
 		--hqt(92776),	-- Level 28
+		--hqt(92778),	-- Level 30 (automated)
+		--hqt(92786),	-- Level 38
+		--hqt(92787),	-- Level 39
 	}),
 	n(QUESTS, {
 		q(93784, {	-- A Gnawing Void of Curiosity
@@ -132,6 +138,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	n(RARES, {
 		-- TODO: Alex - I don't think there any point to source them but in case there will be achievement for it or whatever
+		--n(253257),	-- Abandoned Sentinel
 		--n(253249),	-- Clever Saptor
 		--n(207482),	-- Invasive Sporecap // alpha
 		--n(253267),	-- Wailing Spirit
@@ -252,6 +259,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(REWARDS, {
 				n(DECOR, {
 					i(267009),	-- Amani Training Dummy (DECOR!)
+					i(264258),	-- Blossoming Forge (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -288,6 +296,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
@@ -298,20 +307,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	m(PARHELION_PLAZA, {
 		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
-		--["maps"] = {},
+		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93386, {	-- Delver's Call: Parhelion Plaza
+					["provider"] = { "o", 612894 },	-- Parhelion Plaza
+					["coord"] = { 74.5, 28.0, PARHELION_PLAZA },
+				}),
 			}),
 			n(TREASURES, {
+				o(618275, {	-- Sturdy Chest
+					["coord"] = { 9.7, 50.3, PARHELION_PLAZA },
+					["questID"] = 94019,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -408,12 +420,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93385, {	-- Delver's Call: The Darkway
+					["provider"] = { "o", 612039 },	-- The Darkway
+					["coord"] = { 49.1, 18.6, THE_DARKWAY },
+				}),
 			}),
 			n(TREASURES, {
+				o(618283, {	-- Sturdy Chest
+					["coord"] = { 53.0, 43.1, THE_DARKWAY },
+					["questID"] = 94026,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -458,10 +474,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93421, {	-- Delver's Call: The Grudge Pit
+					["provider"] = { "o", 612264 },	-- The Grudge Pit
+					["coords"] = {
+						{ 39.2, 42.9, THE_GRUDGE_PIT },
+						{ 71.2, 52.1, MAP.MIDNIGHT.HARANDAR },
+					},
+				}),
 			}),
 			n(TREASURES, {
 			}),
@@ -509,6 +528,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 54.7, 48.5, THE_SHADOW_ENCLAVE },
 					["questID"] = 94002,
 				}),
+				o(617855, {	-- Sturdy Chest
+					["coord"] = { 54.7, 85.0, THE_SHADOW_ENCLAVE },
+					["questID"] = 94001,
+				}),
+				o(618112, {	-- Sturdy Chest
+					["coord"] = { 56.0, 34.6, THE_SHADOW_ENCLAVE },
+					["questID"] = 94028,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -519,9 +546,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-	m(TORMENTS_RISE, {
+	m(TORMENTS_RISE, {	-- TODO: Seasonal delve with boss
 		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
+		["coord"] = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -546,25 +573,47 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	m(TWILIGHT_CRYPTS, {
 		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
-		--["maps"] = {},
+		["coord"] = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
+		["maps"] = { 2504 },	-- Twilight Crypts
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93410, {	-- Delver's Call: Twilight Crypts
+					["provider"] = { "o", 612242 },	-- Twilight Crypts
+					["coords"] = {
+						{ 47.2, 39.6, TWILIGHT_CRYPTS },
+						{ 43.1, 69.2, MAP.MIDNIGHT.ZULAMAN },
+					},
+				}),
+				q(94909, {	-- Blessings of Pestilence (TODO: unsure if it exist only here)
+					["provider"] = { "i", 266438 },	-- Idol of Pestilence
+				}),
 			}),
 			n(TREASURES, {
+				o(618289, {	-- Sturdy Chest
+					["coord"] = { 46.9, 49.9, 2504 },
+					["questID"] = 94037,
+				}),
+				o(618276, {	-- Sturdy Chest
+					["coord"] = { 56.8, 85.9, 2504 },
+					["questID"] = 94020,
+				}),
+				o(618288, {	-- Sturdy Chest
+					["coord"] = { 21.8, 36.2, 2504 },
+					["questID"] = 94034,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
 				}),
+				filter(COSMETIC, {
+					i(262992),	-- Myth Maker's Brush (COSMETIC!)
+				}),
 				filter(MISC, {
+					i(266438),	-- Idol of Pestilence (QS!/QI!)
 				}),
 			}),
 		},
@@ -575,11 +624,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 		--n(BOUNTIFUL, sharedData({
 		--	["isDaily"] = true,
-		--},{	-- Bountiful Delve runs?
-			--q(91188),	-- Atal'Aman
-			--q(91186),	-- Collegiate Calamity
-			--q(91187),	-- The Gulf of Memory
-			--q(91184),	-- Shadowguard Point
+		--},{
+			q(91188),	-- Atal'Aman
+			q(91186),	-- Collegiate Calamity
+			q(91189),	-- Shadow Enclave
+			q(91184),	-- Shadowguard Point
+			q(91187),	-- The Gulf of Memory
+			q(91190),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
 		--})),
@@ -588,10 +639,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--q(93275, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st (could be wrong and it is rep lockout for Unity Against the Void?)
 
 		-- Weekly summon boss questID
-		--hqt(, {	--
-		--	["name"] = "Seasonal delve boss lockout"
+		--hqt(86371, {	--	// automated/use TWW questID? 
+		--	["name"] = "Seasonal delve map lockout"
 		--	["providers"] = {
 		--		{"i",253342},	-- Beacon of Hope
+		--		{"i",252415},	-- Trovehunter's Bounty
 		--	},
 		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
 		--	["isWeekly"] = true,

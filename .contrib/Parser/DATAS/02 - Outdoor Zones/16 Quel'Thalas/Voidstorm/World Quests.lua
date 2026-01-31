@@ -32,6 +32,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93397, {	-- Gnawing Hunger
 					["coord"] = { 57.7, 72.7, MAP.MIDNIGHT.VOIDSTORM },
 				}),
+				q(92549, {	-- Void From Above
+					["coord"] = { 64.6, 62.2, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 		--	}),
 		}),
 	}),

@@ -567,7 +567,7 @@ root(ROOTS.Zones, {
 					q(27123, {	-- Deepholm, Realm of Earth
 						["sourceQuest"] = 27203,	-- The Maelstrom
 						["qg"] = 45042,	-- Thrall
-						["maps"] = { 276 },	-- The Maelstrom
+						["coord"] = { 33.2, 50.2, 276 },	-- The Maelstrom
 						["isBreadcrumb"] = true,
 						["lvl"] = 82,
 					}),

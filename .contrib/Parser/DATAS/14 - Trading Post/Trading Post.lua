@@ -527,11 +527,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				i(211002),	-- Golden Mobile Timepiece
 			}),
 			filter(BATTLE_PETS, {
-				traderstender(600, i(193429)),	-- Time-Lost Salamanther
+				traderstender(600, i(193429)),	-- Time-Lost Salamanther (PET!)
 			}),
 			filter(MOUNTS, {
-				traderstender(800, i(190767)),	-- Armored Golden Pterrordax
-				traderstender(800, i(211074)),	-- Copper Resonating Crystal
+				traderstender(800, i(190767)),	-- Armored Golden Pterrordax (MOUNT!)
+				traderstender(800, i(211074)),	-- Copper Resonating Crystal (MOUNT!)
 			}),
 			filter(COSMETIC, {
 				traderstender(550, i(190447)),	-- Soulburner Bardiche
@@ -544,6 +544,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(650, iensemble(200925)),	-- Ensemble: Solemn Watchman's Garb
 				traderstender(100, iensemble(206321)),	-- Ensemble: Vagabond's Sunny Threads
 				traderstender(100, iensemble(206332)),	-- Ensemble: Wanderer's Sunny Trappings
+				traderstender(850, iensemble(211122)),	-- Ensemble: Wastewander Tracker's Kit
 				traderstender(150, i(208147)),	-- Yellow Tweed Cap
 				traderstender(100, i(210857)),	-- Trader's Carrot Sarong
 				traderstender(200, i(210866)),	-- Blademaster's Suntouched Stones
@@ -552,7 +553,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(211068)),	-- Sepia Treads of the Kalu'ak
 				traderstender(500, i(211072)),	-- Time Marshal's Carbine
 				traderstender(400, i(211098)),	-- Copper Scarab Bulwark
-				traderstender(850, iensemble(211122)),	-- Ensemble: Wastewander Tracker's Kit
 				traderstender(100, i(211129)),	-- Sand-Swept Soiree Gloves
 				traderstender(500, i(211137)),	-- Witch Doctor's Fetish Frame
 				traderstender(400, i(211158)),	-- Witch Doctor's Fetish Guard
@@ -589,8 +589,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(212373)),	-- Gossamer Magenta Gown
 				traderstender(200, i(190895)),	-- Lost Crusader's Amethyst Battleaxe
 				traderstender(200, i(212381)),	-- Love's Bulwark
-				traderstender(300, i(212375)),	-- Lovely Rosy Longbow
 				traderstender(300, i(212376)),	-- Lovely Gothic Longbow
+				traderstender(300, i(212375)),	-- Lovely Rosy Longbow
 				traderstender(250, i(212379)),	-- Love Witch's Rosy Stave
 				traderstender(200, i(212377)),	-- Love Witch's Rosy Wand
 				traderstender(100, i(212372)),	-- Magenta Masquerade Gloves
@@ -607,8 +607,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			n(FILLED_TRAVELERS_LOG, {
 				i(211432),	-- Teele (PET!)
 			}),
-			filter(BATTLE_PETS, {
-			}),
 			filter(MOUNTS, {
 				traderstender(650, a(i(207964))),	-- Alabaster Stormtalon (MOUNT!)
 				traderstender(650, h(i(207963))),	-- Alabaster Thunderwing (MOUNT!)
@@ -620,10 +618,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			filter(COSMETIC, {
 				traderstender(500, iensemble(212577)),	-- Arsenal: Skyborn Blades
 				traderstender(150, i(212576)),	-- Blackrock Executioner
+				traderstender(250, i(190080)),	-- Catastrophe's Edge
 				traderstender(100, i(212544)),	-- Classic Aquatic Tabard
 				traderstender(50, i(190890)),	-- Chipped Warblade
 				traderstender(200, i(212530)),	-- Corroded Augari Defender
-				traderstender(250, i(190080)),	-- Catastrophe's Edge
 				traderstender(75, i(212574)),	-- Dueler's Aquatic Shoulder Cape
 				traderstender(75, i(212573)),	-- Dueler's Cloudy Shoulder Cape
 				traderstender(100, iensemble(206322)),	-- Ensemble: Vagabond's Aquatic Threads
@@ -718,7 +716,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, iensemble(190377)),	-- Ensemble: Wanderer's Midnight Trappings
 				traderstender(100, i(189896)),	-- Forsaken Cresset
 				traderstender(100, i(213395)),	-- Gloves of the Midnight Soiree
-				traderstender(100, i(213393)),	-- Guise of the Golden Masquerade
+				traderstender(200, i(213393)),	-- Guise of the Golden Masquerade
 				traderstender(50, i(190070)),	-- Highborne Scholar's Gloves
 				traderstender(300, i(213065)),	-- Lavish Floral Edge
 				traderstender(300, i(213068)),	-- Lavish Floral Stalk
@@ -751,8 +749,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			filter(COSMETIC, {
 				traderstender(650, iensemble(223004)),	-- Arsenal: Blazing Felfire Armaments
 				traderstender(200, i(210866)),	-- Blademaster's Suntouched Stones
-				traderstender(60, i(221809)),	-- Churning Sands Treads
 				traderstender(60, i(221810)),	-- Churning Sands Gloves
+				traderstender(60, i(221809)),	-- Churning Sands Treads
 				traderstender(100, i(221794)),	-- Classic Carrot Tabard
 				traderstender(525, i(190689)),	-- Corrupted Bladefist
 				traderstender(75, i(212619)),	-- Dueler's Carrot Shoulder Cape
@@ -1784,6 +1782,326 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(300, i(233273)),	-- Steam-Powered Golden Cloak
 				traderstender(100, i(260934)),	-- Thalassian Archer's Quiver
 				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
+			}),
+		})),
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(233237),	-- Lively Pack of Lunar Explosives
+			}),
+			filter(MOUNTS, {
+				traderstender(600, i(260580)),	-- Cloudborn Razorwing (MOUNT!)
+				traderstender(600, i(233023)),	-- Silvermoon Sweeper (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(350, i(234397)),	-- Fullbelly Rollingpaw (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(170, i(257712)),	-- Anubisath's Golden Blade
+				traderstender(200, i(257427)),	-- Anubisath's Golden Greatblade
+				traderstender(20, i(233180)),	-- Banded Rosy War Slippers
+				traderstender(20, i(233163)),	-- Banded Rosy War Wraps
+				traderstender(100, i(260933)),	-- Basic Pink Quiver
+				traderstender(160, i(262371)),	-- Bronze Magister's Courtstaff
+				traderstender(300, i(233232)),	-- Crimson Lunar Firewhacker
+				traderstender(250, i(233218)),	-- Crimson Lunar Lantern
+				traderstender(250, i(233236)),	-- Crimson Pack of Lunar Explosives
+				traderstender(600, iensemble(234057)),	-- Ensemble: Ornate Crimson Lunar Festival Attire
+				traderstender(100, iensemble(230177)),	-- Ensemble: Prowler's Rosy Headgear
+				traderstender(100, iensemble(242471)),	-- Ensemble: Rosy Sweatsuit
+				traderstender(100, iensemble(257997)),	-- Ensemble: Sorcerer's Rosy Garb
+				traderstender(660, iensemble(258793)),	-- Ensemble: South Guard's Golden Raiment
+				traderstender(300, i(233223)),	-- Jade Lunar Blade
+				traderstender(300, i(233228)),	-- Jade Lunar Polearm
+				traderstender(40, i(233107)),	-- Long Rosy War Skirt
+				traderstender(50, i(233146)),	-- Long Rosy War Skirt and Leg Wraps
+				traderstender(130, i(262370)),	-- Longbow of the Shattered Sun
+				traderstender(80, i(260392)),	-- Pink Wooden Shortbow
+				traderstender(160, i(262372)),	-- Quel'dorei Bladestaff
+				traderstender(160, i(262373)),	-- Quel'dorei Poleblade
+				traderstender(50, i(252746)),	-- Rosy Winter Toque
+				traderstender(40, i(233090)),	-- Short Rosy War Skirt
+				traderstender(50, i(233129)),	-- Short Rosy War Skirt and Leg Wraps
+				traderstender(130, i(262358)),	-- Sindorei Captain's Mantle
+				traderstender(130, i(262369)),	-- Sindorei Handglaive
+				traderstender(130, i(262374)),	-- Sunfury Apprentice's Wand
+				traderstender(160, i(262377)),	-- Sunfury Battlemage's Stave
+				traderstender(80, i(260396)),	-- Tranquillien Archer's Bow
+				traderstender(100, i(260935)),	-- Tranquillien Archer's Quiver
+				traderstender(50, i(235030)),	-- Vigilante's Rosy Mask
+			}),
+			n(VENDORS, {
+				n(234747, {	-- Supplier Felina <Trading Post Outlet Completionist>
+					["coord"] = { 48.16, 51.99, DORNOGAL },
+					["groups"] = {
+						filter(MOUNTS, {
+							traderstender(600, i(187674)),	-- Depthstalker (MOUNT!)
+							traderstender(600, i(226040)),	-- Plunderlord's Golden Crocolisk (MOUNT!)
+						}),
+						filter(BATTLE_PETS, {
+							traderstender(350, i(210409)),	-- Aura (PET!)
+							traderstender(350, i(211432)),	-- Teele (PET!)
+							traderstender(350, i(223339)),	-- Trishi (PET!)
+						}),
+						filter(TOYS, {
+							traderstender(350, i(220692)),	-- X-treme Water Blaster Display (TOY!)
+						}),
+						filter(COSMETIC, {
+							traderstender(850, iensemble(229059)),	-- Arsenal: Crests of the Kingdom
+							traderstender(750, iensemble(212220)),	-- Ensemble: Love Witch's Attire
+							traderstender(850, iensemble(223486)),	-- Ensemble: Purple Snugglefin Murloc Romper
+							traderstender(100, i(211002)),	-- Golden Mobile Timepiece
+							traderstender(225, i(223409)),	-- The Coward's Violet Target
+							traderstender(225, i(212613)),	-- Wings of the Amber Monarch
+						}),
+					},
+				}),
+				n(234746, {	-- Supplier Mizix <Trading Post Outlet Creatures and Toys>
+					["coord"] = { 48.07, 52.16, DORNOGAL },
+					["groups"] = {
+						filter(MOUNTS, {
+							traderstender(500, i(192766)),	-- Amber Skitterfly (MOUNT!)
+							traderstender(500, i(190767)),	-- Armored Golden Pterrordax (MOUNT!)
+							traderstender(650, i(54069)),	-- Blazing Hippogryph (MOUNT!)
+							traderstender(500, i(211074)),	-- Copper Resonating Crystal (MOUNT!)
+							traderstender(750, i(226506)),	-- Hand of Reshkigaal (MOUNT!)
+							traderstender(600, i(226041)),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
+							traderstender(300, i(223449)),	-- Kor'kron Warsaber (MOUNT!)
+							traderstender(500, i(221814)),	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+							traderstender(500, i(212227)),	-- Reins of the Fur-endship Fox (MOUNT!)
+							traderstender(500, i(212630)),	-- Reins of the Majestic Azure Peafowl (MOUNT!)
+							traderstender(500, i(212229)),	-- Reins of the Twilight Sky Prowler (MOUNT!)
+							traderstender(600, i(23720)),	-- Riding Turtle (MOUNT!)
+							traderstender(300, i(212920)),	-- Savage Blue Battle Turtle (MOUNT!)
+							traderstender(300, i(223469)),	-- Sentinel War Wolf (MOUNT!)
+							traderstender(500, i(160589)),	-- The Dreadwake (MOUNT!)
+							traderstender(500, i(223285)),	-- Underlight Corrupted Behemoth (MOUNT!)
+							traderstender(100, i(54860)),	-- X-53 Touring Rocket (MOUNT!)
+						}),
+						filter(BATTLE_PETS, {
+							traderstender(200, i(206174)),	-- Blub (PET!)
+							traderstender(200, i(229993)),	-- Bluedoo (PET!)
+							traderstender(200, i(212722)),	-- Buggsy (PET!)
+							traderstender(330, i(226104)),	-- Claudius (PET!)
+							traderstender(200, i(223145)),	-- Marrlok (PET!)
+							traderstender(200, i(212700)),	-- Nelle (PET!)
+							traderstender(200, i(217043)),	-- Pokee (PET!)
+							traderstender(200, i(205148)),	-- Soot-Stained Shalewing (PET!)
+							traderstender(200, i(193429)),	-- Time-Lost Salamanther
+							traderstender(200, i(223474)),	-- Worgli the Apprehensive (PET!)
+						}),
+						filter(TOYS, {
+							traderstender(200, i(218112)),	-- Colorful Beach Chair (TOY!)
+							traderstender(200, i(212524)),	-- Delicate Crimson Parasol (TOY!)
+							traderstender(200, i(212525)),	-- Delicate Ebony Parasol (TOY!)
+							traderstender(200, i(212523)),	-- Delicate Jade Parasol (TOY!)
+							traderstender(200, i(212500)),	-- Delicate Silk Parasol (TOY!)
+							traderstender(10, i(206347)),	-- Mannequin Charm (TOY!)
+						}),
+					},
+				}),
+				n(234744, {	-- Supplier Offa <Trading Post Outlet Wearables>
+					["coord"] = { 47.57, 52.76, DORNOGAL },
+					["groups"] = {
+						filter(COSMETIC, {
+							traderstender(200, i(225975)),	-- Alchemist's Bandolier
+							traderstender(30, i(226106)),	-- Amber Scale Treads
+							traderstender(200, i(213078)),	-- Assassin's Bandolier
+							traderstender(40, i(211069)),	-- Azure Treads of the Kalu'ak
+							traderstender(175, i(212369)),	-- Battlefield Lover's Bow
+							traderstender(30, i(221810)),	-- Churning Sands Gloves
+							traderstender(30, i(221809)),	-- Churning Sands Treads
+							traderstender(30, i(223233)),	-- Copper Divers Belt
+							traderstender(100, i(223230)),	-- Copper Divers Bonnet
+							traderstender(30, i(223235)),	-- Copper Divers Boots
+							traderstender(40, i(223232)),	-- Copper Divers Corselet
+							traderstender(30, i(223236)),	-- Copper Divers Gloves
+							traderstender(40, i(223234)),	-- Copper Divers Greaves
+							traderstender(60, i(223231)),	-- Copper Divers Pauldrons
+							traderstender(100, i(223252)),	-- Copper Divers Tank
+							traderstender(10, i(223257)),	-- Copper Divers Wrist Seal
+							traderstender(175, i(229807)),	-- Crown of the Icy Blue Rose
+							traderstender(175, i(212545)),	-- Crown of the White Rose
+							traderstender(300, i(223166)),	-- Deepsea Treasure Pack
+							traderstender(150, i(213394)),	-- Ebony Crown of the Red Rose
+							traderstender(40, i(190068)),	-- Emerald Drape
+							traderstender(30, i(226105)),	-- Emerald Scale Treads
+							traderstender(350, iensemble(190725)),	-- Ensemble: Battlewraps of the Honored Valarjar
+							traderstender(850, iensemble(213158)),	-- Ensemble: Dark Ranger General's Kit
+							traderstender(800, iensemble(223244)),	-- Ensemble: Deepest Depths Diver Suit
+							traderstender(300, iensemble(217381)),	-- Ensemble: Fearless Buccaneer's Slops
+							traderstender(850, iensemble(217038)),	-- Ensemble: Gladiator's Battered Armor
+							traderstender(750, iensemble(226017)),	-- Ensemble: Plunderlord's Radiant Finery
+							traderstender(800, iensemble(226429)),	-- Ensemble: Ragged Harvest Golem
+							traderstender(350, iensemble(200925)),	-- Ensemble: Solemn Watchman's Garb
+							traderstender(200, iensemble(213084)),	-- Ensemble: Spring Reveler's Lavender Apparel
+							traderstender(300, iensemble(212940)),	-- Ensemble: Spring Reveler's Lavender Collection
+							traderstender(325, iensemble(221542)),	-- Ensemble: Sunny Tropical Beachwear
+							traderstender(325, iensemble(222961)),	-- Ensemble: Sunny Tropical Swimwear
+							traderstender(750, iensemble(212222)),	-- Ensemble: Twilight Witch's Attire
+							traderstender(400, iensemble(211122)),	-- Ensemble: Wastewander Tracker's Kit
+							traderstender(100, i(217372)),	-- Frenzied Hat of the Deep Blue
+							traderstender(100, i(217376)),	-- Frenzied Hat of the Murky Waters
+							traderstender(175, i(229720)),	-- Frostwolf Earmuffs
+							traderstender(100, i(212785)),	-- Helm of the Stout
+							traderstender(40, i(190857)),	-- Gilded Emerald Longcloak
+							traderstender(150, i(213393)),	-- Guise of the Golden Masquerade
+							traderstender(150, i(212555)),	-- Guise of the Royal Masquerade
+							traderstender(150, i(212556)),	-- Guise of the Shining Masquerade
+							traderstender(400, iensemble(208412)),	-- High Scholar's Arcana
+							traderstender(30, i(190070)),	-- Highborne Scholar's Gloves
+							traderstender(35, i(190887)),	-- Highlord's Ceremonial Drape
+							traderstender(175, i(229714)),	-- Lion's Crest Earmuffs
+							traderstender(40, i(211071)),	-- Lively Treads of the Kalu'ak
+							traderstender(100, i(190075)),	-- Mantle of the Scholarly Raven
+							traderstender(50, i(190892)),	-- Orange-Sleeved Shirt
+							traderstender(40, i(190428)),	-- Regal Warcloak
+							traderstender(60, i(210999)),	-- Ruby-Faced Mobile Timepiece
+							traderstender(60, i(211001)),	-- Sapphire-Faced Mobile Timepiece
+							traderstender(40, i(211068)),	-- Sepia Treads of the Kalu'ak
+							traderstender(40, i(190201)),	-- Sin'dorei Assassin's Shroud
+							traderstender(400, iensemble(210078)),	-- Sky-Captain's Formal Attire
+							traderstender(100, i(212708)),	-- Spring Reveler's Dandelion Attire
+							traderstender(35, i(212709)),	-- Spring Reveler's Dandelion Belt
+							traderstender(35, i(212710)),	-- Spring Reveler's Dandelion Boots
+							traderstender(100, i(212714)),	-- Spring Reveler's Dandelion Dress
+							traderstender(35, i(212988)),	-- Spring Reveler's Dandelion Pants
+							traderstender(200, i(212718)),	-- Spring Reveler's Dandelion Sun Hat
+							traderstender(60, i(225974)),	-- Swabbie's Cap
+							traderstender(70, i(190671)),	-- Tabard of Wild Might
+							traderstender(20, i(221832)),	-- Tropical Sunrise Airy Sandals
+							traderstender(20, i(221831)),	-- Tropical Sunrise Beads
+							traderstender(100, i(221829)),	-- Tropical Sunrise Halter Top
+							traderstender(110, i(221529)),	-- Tropical Sunrise Mrgl Floater
+							traderstender(20, i(221528)),	-- Tropical Sunrise Sandals
+							traderstender(30, i(221833)),	-- Tropical Sunrise Sash
+							traderstender(100, i(221525)),	-- Tropical Sunrise Shirt
+							traderstender(75, i(221830)),	-- Tropical Sunrise Skirt
+							traderstender(110, i(221834)),	-- Tropical Sunrise Sunshade
+							traderstender(75, i(221526)),	-- Tropical Sunrise Trunks
+							traderstender(20, i(221527)),	-- Tropical Sunrise Wristwraps
+							traderstender(30, i(226367)),	-- Ugly Black Boots
+							traderstender(30, i(226368)),	-- Ugly White Boots
+							traderstender(100, i(223165)),	-- Vengeful Crusaders Helm
+							traderstender(225, i(212612)),	-- Wings of the Amethyst Monarch
+							traderstender(225, i(231017)),	-- Wings of the Onyx Monarch
+							traderstender(225, i(230940)),	-- Wings of the Sapphire Monarch
+							traderstender(225, i(212611)),	-- Wings of the Tourmaline Monarch
+							traderstender(175, i(211137)),	-- Witch Doctor's Fetish Frame
+						}),
+					},
+				}),
+				n(234742, {	-- Supplier Toffa <Trading Post Outlet Weapons>
+					["coord"] = { 47.79, 52.55, DORNOGAL },
+					["groups"] = {
+						filter(COSMETIC, {
+							traderstender(60, i(226390)),	-- Aerie Battle Mace
+							traderstender(60, i(229426)),	-- Ancient Amani Longbow
+							traderstender(50, i(190859)),	-- Apprentice's Twisted Crook
+							traderstender(300, iensemble(223004)),	-- Arsenal: Blazing Felfire Armaments
+							traderstender(300, iensemble(223421)),	-- Arsenal: Fireborn Blades
+							traderstender(300, iensemble(223418)),	-- Arsenal: Seaborn Blades
+							traderstender(300, iensemble(212577)),	-- Arsenal: Skyborn Blades
+							traderstender(200, iensemble(220759)),	-- Arsenal: Stormrider's Bronze Stormhammers
+							traderstender(200, iensemble(220755)),	-- Arsenal: Stormrider's Dark Stormhammers
+							traderstender(200, iensemble(220762)),	-- Arsenal: Stormrider's Silver Stormhammers
+							traderstender(100, i(226370)),	-- Ashen Executioner
+							traderstender(60, i(226388)),	-- Battle-Tested Obsidian Warhammer
+							traderstender(60, i(226387)),	-- Battle-Tested Warhammer
+							traderstender(100, i(212576)),	-- Blackrock Executioner
+							traderstender(60, i(223185)),	-- Blade Of The Riptide
+							traderstender(60, i(229425)),	-- Bronzebeard Battle Mace
+							traderstender(175, i(190080)),	-- Catastrophe's Edge
+							traderstender(100, i(212789)),	-- Champion's Jade Cleaver
+							traderstender(100, i(229812)),	-- Chilled Axe
+							traderstender(40, i(190890)),	-- Chipped Warblade
+							traderstender(60, i(212790)),	-- Codex of Classic Conjurations
+							traderstender(40, i(223429)),	-- Conjurer's Scarlet Staff
+							traderstender(150, i(211098)),	-- Copper Scarab Bulwark
+							traderstender(150, i(212530)),	-- Corroded Augari Defender
+							traderstender(100, i(229813)),	-- Crystalline Longbow of the Heavens
+							traderstender(100, i(225993)),	-- Cursed Copper Crossbow
+							traderstender(60, i(226389)),	-- Dark Iron Battle Mace
+							traderstender(50, i(190805)),	-- Deforester's Hatchet
+							traderstender(150, i(211064)),	-- Dwarven Crown Splitter
+							traderstender(125, i(190819)),	-- Emerald Guardian's Longbow
+							traderstender(150, i(190445)),	-- Envenomed Gutripper
+							traderstender(60, i(229814)),	-- Fan of Cooling
+							traderstender(60, i(226382)),	-- Feathered Bow of the Fallen
+							traderstender(60, i(226381)),	-- Feathered Bow of the Night
+							traderstender(100, i(225978)),	-- Fel-Glade Warglaive
+							traderstender(175, i(212382)),	-- Fluorescent Splitblade
+							traderstender(50, i(190849)),	-- Forgemaster's Gavel
+							traderstender(60, i(229811)),	-- Frost Etched Dagger
+							traderstender(60, i(226386)),	-- Gentle Glow of the Naaru
+							traderstender(275, i(213106)),	-- Gladiator's Battered Greatsword
+							traderstender(275, i(213107, {	-- Gladiator's Ragged Greatsword // Previously NYI
+								-- #if BEFORE 12.0.1
+								["description"] = "This item is not a returning item, it has never actually been available before.",
+								-- #endif
+							})),
+							traderstender(250, i(226428)),	-- Harvester's Claw
+							traderstender(150, i(190854)),	-- Heavily Stitched Wallet
+							traderstender(60, i(225980)),	-- High-Grade Blade of the Forbade
+							traderstender(50, i(190860)),	-- Initiate's Bo
+							traderstender(60, i(225979)),	-- Jade Blade of the Forbade
+							traderstender(150, i(190218)),	-- Jeweled Ripper
+							traderstender(60, i(190132)),	-- Krokul Battlescythe
+							traderstender(150, i(213065)),	-- Lavish Floral Edge
+							traderstender(150, i(213068)),	-- Lavish Floral Stalk
+							traderstender(50, i(190674)),	-- Leaky Bucket
+							traderstender(150, i(190895)),	-- Lost Crusader's Amethyst Battleaxe
+							traderstender(150, i(212381)),	-- Love's Bulwark
+							traderstender(250, i(212379)),	-- Love Witch's Rosy Stave
+							traderstender(200, i(212377)),	-- Love Witch's Rosy Wand
+							traderstender(300, i(229817)),	-- Lovely Airy Longbow
+							traderstender(300, i(212376)),	-- Lovely Gothic Longbow
+							traderstender(300, i(212375)),	-- Lovely Rosy Longbow
+							traderstender(150, i(213062)),	-- Paradise's Golden Axe
+							traderstender(100, i(225990)),	-- Plunderlord's Radiant Cutlass
+							traderstender(100, i(225983)),	-- Plunderlord's Radiant Hand Cannon
+							traderstender(100, i(225992)),	-- Plunderlord's Radiant Neck-Severer
+							traderstender(100, i(225991)),	-- Plunderlord's Radiant Rapier
+							traderstender(100, i(225982)),	-- Plunderlord's Radiant Sigil
+							traderstender(50, i(190066)),	-- Primeval Maul
+							traderstender(60, i(223188)),	-- Riptide Basher
+							traderstender(75, i(223179)),	-- Riptide Dagger
+							traderstender(75, i(223176)),	-- Riptide Gut Puncher
+							traderstender(75, i(223189)),	-- Riptide Slicer
+							traderstender(100, i(223184)),	-- Riptide Staff
+							traderstender(60, i(223187)),	-- Riptide Bulwark
+							traderstender(60, i(190670)),	-- Sanguine Bouquet
+							traderstender(100, i(223415)),	-- Sapphire Axe of Asymmetry
+							traderstender(100, i(223423)),	-- Sapphire Bladed Blunderbuss
+							traderstender(100, i(223411)),	-- Sapphire Shanker
+							traderstender(100, i(223413)),	-- Sapphire Warglaive
+							traderstender(100, i(223414)),	-- Scarlet Axe of Asymmetry
+							traderstender(100, i(223422)),	-- Scarlet Bladed Blunderbuss
+							traderstender(100, i(223410)),	-- Scarlet Shanker
+							traderstender(100, i(223412)),	-- Scarlet Warglaive
+							traderstender(30, i(225994)),	-- Simple Copper Staff
+							traderstender(40, i(226383)),	-- Simple Ebony Wand
+							traderstender(40, i(223426)),	-- Simple Sapphire Wand
+							traderstender(40, i(223425)),	-- Simple Scarlet Wand
+							traderstender(250, i(229815)),	-- Sky Witch's Airy Stave
+							traderstender(200, i(229816)),	-- Sky Witch's Airy Wand
+							traderstender(150, i(213071)),	-- Sunny Floral Staff
+							traderstender(150, i(213075)),	-- Sunny Bow-quet
+							traderstender(60, i(223434)),	-- The Sapphire Thalassian Tome
+							traderstender(150, i(211072)),	-- Time Marshal's Carbine
+							traderstender(100, i(213161)),	-- Titan Thunderbow
+							traderstender(75, i(223191)),	-- Trident Of The Riptide
+							traderstender(200, i(212378)),	-- Twilight Witch's Gothic Scepter
+							traderstender(250, i(212380)),	-- Twilight Witch's Gothic Stave
+							traderstender(60, i(223433)),	-- Sunreaver's Scarlet Tome
+							traderstender(150, i(190219)),	-- Virulent Gavel
+							traderstender(40, i(226384)),	-- Wand of the Bright Shadow
+							traderstender(75, i(223190)),	-- Wand Of The Riptide
+							traderstender(150, i(190873)),	-- Warhammer of Hubris
+							traderstender(150, i(220357)),	-- Water Blaster B.L.
+							traderstender(150, i(211158)),	-- Witch Doctor's Fetish Guard
+						}),
+					},
+				}),
 			}),
 		})),
 	}),

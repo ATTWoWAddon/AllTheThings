@@ -2609,6 +2609,7 @@ i(238483);	-- Bottom Grass
 i(263515);	-- Broken Soulstealing Mirror
 i(260652);	-- Broken Wildfire Claw
 i(244041);	-- Budding Seed
+i(260692);	-- Chunk of Mystery Meat
 i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
 i(263516);	-- Cosmic Ritual Bowl
@@ -2617,6 +2618,7 @@ i(238484);	-- Damp Washcloth
 i(260687);	-- Decaying Leather
 i(238488);	-- Definitely a Rock
 i(260647);	-- Digested Human Hand
+i(260666);	-- Earthy Mushroom
 i(260650);	-- Elemental Debris
 i(220262);	-- Elongated Proboscis
 i(238486);	-- Empty Can
@@ -2628,6 +2630,7 @@ i(260638);	-- Fine Void Residue
 i(260642);	-- Fossilized Wildlife
 i(260639);	-- Fractured Bone
 i(265040);	-- Fractured Void Focus
+i(265044);	-- Frayed Twilight Sash
 i(238481);	-- Glittering Garbage
 i(260661);	-- Glowing Shrub
 i(238485);	-- Grotesque Globule
@@ -2636,6 +2639,7 @@ i(238496);	-- Hunk O' Junk
 i(260604);	-- Insect Shedding
 i(238487);	-- Kickin' Can
 i(260611);	-- Large Bestial Scale
+i(260685);	-- Large Brittle Bone
 i(260617);	-- Large Broken Teeth
 i(260653);	-- Large Lightbloom Fungi
 i(260606);	-- Light and Shaggy Fur
@@ -2644,6 +2648,7 @@ i(260613);	-- Lightbloom Flower
 i(260663);	-- Lightbloom Residue
 i(260681);	-- Lightbloom-Infused Spores
 i(260651);	-- Lustrous Wildlife Pelt
+i(260621);	-- Magic Infused Bark
 i(260693);	-- Mossy Lump of Dirt
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
@@ -2655,8 +2660,10 @@ i(244039);	-- Pitcher Plant Vase
 i(260662);	-- Polished Purple Pebble
 i(260660);	-- Putrid Mushroom Spores
 i(238477);	-- Rotten Meat
+i(260637);	-- Rotting Insect Eggs
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
+i(260678);	-- Sharp Obsidian Chunk
 i(260684);	-- Sharp Scales
 i(238478);	-- Shimmering Seaweed
 i(263519);	-- Snake Oil
@@ -2666,8 +2673,11 @@ i(260665);	-- Sizable Tusk
 i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia
 i(260659);	-- Stellar Vortex Residue
+i(260620);	-- Stone Droppings
 i(262786);	-- Suntouched Special Reserve
+i(265042);	-- Tarnished Shadow Torque
 i(260648);	-- Tattered Clothes
+i(260309);	-- Thrumming Plant Matter
 i(238944);	-- Torn Material
 i(238479);	-- Torn Caster's Net
 i(260614);	-- Unrecognizable Organ
@@ -2677,6 +2687,7 @@ i(260686);	-- Vibrant Wings
 i(244038);	-- Vinetwinted Crate
 i(260615);	-- Void Dust Residue
 i(260677);	-- Void Flakes
+i(260691);	-- Void-Tainted Pelt
 i(260645);	-- Water Filled Organ
 
 -- Profession

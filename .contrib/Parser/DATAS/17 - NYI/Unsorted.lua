@@ -364,7 +364,6 @@ root(ROOTS.Unsorted, {
 			i(238369),	-- Bloomtail Minnow
 			i(238373),	-- Ominous Octopus
 			i(238374),	-- Tender Lumifin
-			i(238377),	-- Blood Hunter
 			i(238380),	-- Null Voidfish
 			i(238381),	-- Hollow Grouper
 			i(238382),	-- Gore Guppy
@@ -1624,7 +1623,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(248139),	-- Aln'hara's Bloom
-			i(248205),	-- Surplus Elementium
 			i(248208),	-- Bound Journal
 			i(248608),	-- Blackrock Bulletin Message
 			i(248610),	-- Blackrock Bulletin Message
@@ -1788,7 +1786,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(250325),	-- Night's Embrace
-			i(250440),	-- Recruitment Fliers \\ Recruitment Flier
 			-- Prof
 			i(250360),	-- Echo of Abundance: Skinning
 			i(250443),	-- Echo of Abundance: Herbalism
@@ -1948,7 +1945,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(252192),	-- Rune Key
-			i(252370),	-- Heartwisp Frond
 			-- Abudance
 			i(252607),	-- Abundant Beacon \\ [TUTORIAL ITEM]
 			i(252608),	-- Unalloyed Abundance \\ [OLD] Unalloyed Abundance
@@ -2020,9 +2016,6 @@ root(ROOTS.Unsorted, {
 			-- Quest
 			i(253518),	-- Pathogen Antidote \\ Detoxifying Agent
 			i(253519),	-- Pathogenic Essence
-
-			-- Misc
-			i(253521),	-- Heron's Vision of Cloudwalking
 
 			-- Cosmetic
 			i(253582),	-- Fangfin Flailer
@@ -2537,9 +2530,6 @@ root(ROOTS.Unsorted, {
 			i(255680),	-- Forgotten Talon
 			i(255688),	-- Anchor of the Abyss
 
-			-- QI
-			i(255842),	-- Training Rod of Polymorph
-
 			-- Engi
 			i(255843),	-- HU5H, Nonchalant Pup
 			i(255844),	-- HU5H, Nonchalant Pup
@@ -2705,7 +2695,6 @@ root(ROOTS.Unsorted, {
 			-- World Quest
 			i(256966),	-- Rootspeaker's Leafwraps \\ [PH] WQ - Armor - Mail WRIST - A
 			i(256968),	-- Deepvine Bracers \\ [PH] WQ - Armor - Cloth WRIST - A
-			i(256970),	-- Loa-Blessed Beads \\ [PH] WQ - Accessory - NECK - A
 			i(256971),	-- Radiant Phoenix Band \\ [PH] WQ - Accessory - FINGER - D
 			i(256972),	-- Evertwisting Swiftvine \\ [PH] WQ - Accessory - FINGER - C
 			i(256974),	-- Rootspeaker's Footwraps \\ [PH] WQ - Armor - Mail FEET - A
@@ -2731,14 +2720,12 @@ root(ROOTS.Unsorted, {
 			i(257008),	-- Splinterthorn Spear \\ [PH] WQ - Weapon - 2H Polearm AGI - A
 			i(257009),	-- Deep Hunter's Arc \\ [PH] WQ - Weapon - 2H Bow AGI - A
 			i(257010),	-- Flourishing Vinescythe \\ [PH] WQ - Weapon - 1H Warglaive - A
-			i(257011),	-- Thornwood Slasher \\ [PH] WQ - Weapon - 1H Sword STR - A
 			i(257012),	-- Rootwarden's Spellblade \\ [PH] WQ - Weapon - 1H Sword INT - A
 			i(257013),	-- Viridescent Crusher \\ [PH] WQ - Weapon - 1H Mace STR - A
 			i(257014),	-- Lumenbloom Scepter \\ [PH] WQ - Weapon - 1H Mace INT - A
 			i(257015),	-- Vinebound Shank \\ [PH] WQ - Weapon - 1H Dagger AGI - A
 			i(257018),	-- Rootspeaker's Barkclasp \\ [PH] WQ - Armor - Mail WAIST - A
 			i(257020),	-- Deepvine Waistguard \\ [PH] WQ - Armor - Cloth WAIST - A
-			i(257022),	-- Deepvine Shroud \\ [PH] WQ - Accessory - CLOAK - A
 
 			-- QI
 			i(257081),	-- Bloodied Spear Tip
@@ -2819,7 +2806,6 @@ root(ROOTS.Unsorted, {
 			i(257381),	-- Player Experience
 			i(257383),	-- Companion Experience
 			i(257384),	-- Companion Experience
-			i(257386),	-- Heavy Trunk
 
 			-- PvP
 			i(257535),	-- Galactic Jeweler's Setting
@@ -2843,8 +2829,6 @@ root(ROOTS.Unsorted, {
 			i(257600),	-- Skill Issue: Enchanting
 			i(257601),	-- Skill Issue: Tailoring
 
-			-- Delve
-			i(257683),	-- Porcelain Blade Tip
 			-- QI
 			i(257727),	-- Condensed Void Reserves
 			-- Engi
@@ -2941,7 +2925,6 @@ root(ROOTS.Unsorted, {
 			i(258280),	-- [DNT] Huge Pouch of Supplies
 
 			-- QI
-			i(258321),	-- Ransacked Heirloom
 			i(258324),	-- Stolen Game Meat \\ Stolen Game
 			i(258329),	-- Carrion Essence
 
@@ -3007,9 +2990,6 @@ root(ROOTS.Unsorted, {
 
 			-- Pvp
 			i(258534),	-- Illustrious Contender's Strongbox \\ Glorious Contender's Strongbox
-
-			-- token
-			i(258556),	-- Thalassian Token of Merit
 
 			-- QI
 			i(258572),	-- Crystal Essence
@@ -3103,7 +3083,6 @@ root(ROOTS.Unsorted, {
 			i(258901),	-- Waterlogged Reliquary Paintbrush
 
 			-- QI
-			i(258965),	-- Tome of Polymorph
 			i(259029),	-- Shadowguard Intelligence
 			-- Cosmetic
 			i(259027),	-- Ensemble: Blood Knight's Elegant Regalia \\ Ensemble: Bloodknight's Elegant Regalia
@@ -3184,7 +3163,6 @@ root(ROOTS.Unsorted, {
 			i(259355),	-- Deep Hunter's Repeater \\ [PH] WQ - Weapon - 2H Crossbow AGI - A
 			i(259356),	-- Bloomweaver's Pierce \\ [PH] WQ - Weapon - 1H Dagger INT - A
 			i(259358),	-- Underbrush-Clearing Cleaver \\ [PH] WQ - Weapon - 2H Axe STR - A
-			i(259359),	-- Rootspeaker's Mantle \\ [PH] WQ - Accessory - CLOAK - C
 			i(259360),	-- Steelbark Cloak \\ [PH] WQ - Accessory - CLOAK - D
 			-- Prof
 			i(259362),	-- Pattern: Haranir Canopy Bed
@@ -3221,9 +3199,6 @@ root(ROOTS.Unsorted, {
 			i(260190),	-- Heavy Bramblebolter
 			i(260191),	-- Hand of the Rootkeeper
 			i(260192),	-- Wildthorn Razorfang
-
-			-- Cache
-			i(260193),	-- Fabled Veteran's Cache \\ [PH] Capstone WQ Loot Box
 
 			-- Mount
 			i(260231),	-- [DNT] 12.0 White Hawkstrider
@@ -3277,7 +3252,6 @@ root(ROOTS.Unsorted, {
 			i(260297),	-- Voidfarer's Respite \\ Food/Drink 90 01
 			i(260298),	-- Astral Apple Pie \\ Food/Drink 90 02
 			i(260299),	-- Roasted Abyssal Eel \\ Food/Drink 90 03
-			i(260309),	-- Thrumming Plant Matter
 			i(260311),	-- Empty Felwyrm Core
 
 			-- Pet
@@ -3653,8 +3627,6 @@ root(ROOTS.Unsorted, {
 			i(262984),	-- Reliquary Expedition Bag \\ Relequary Expedition Bag
 			i(262989),	-- Focusight Relic Mace
 			i(262990),	-- Sin'dorei Arcane Manuscript
-			i(262991),	-- Two Thousand and Two Nights
-			i(262992),	-- Myth Maker's Brush
 
 			-- Misc
 			i(262994),	-- Phial of Ritual Fluid
@@ -4141,9 +4113,7 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(265041),	-- Singed Ritual Parchment
-			i(265042),	-- Tarnished Shadow Torque
 			i(265043),	-- Dented Voidblade Pommel
-			i(265044),	-- Frayed Twilight Sash
 			i(265045),	-- Sealed Blood Vial
 			i(265046),	-- Warped Summoning Sigil
 			i(265047),	-- Cracked Soul Phylactery
@@ -4248,7 +4218,6 @@ root(ROOTS.Unsorted, {
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
 			i(264329),	-- Amani Dining Table
 			i(264333),	-- Amani Incense Burner
-			i(264342),	-- Cosmic Void Cache
 			i(264350),	-- Carved Idol of Akil'zon, Loa of Victory \\ Carved Idol of Akil'zon
 
 			-- Wonder if these are rare drops?
@@ -4386,7 +4355,6 @@ root(ROOTS.Unsorted, {
 			i(265097),	-- Conjured Cinnamon Roll
 			i(265098),	-- Conjured Croissant
 			i(265099),	-- Conjured Coffee
-			i(265361),	-- Pollinic Incense
 			-- Toy
 			i(265100),	-- Corewarden's Hearthstone
 
@@ -4526,28 +4494,20 @@ root(ROOTS.Unsorted, {
 			i(260603),	-- Frail and Flexible Wing
 			i(260605),	-- Shattered Spear Tip
 			i(260617),	-- Large Broken Teeth
-			i(260620),	-- Stone Droppings
-			i(260621),	-- Magic Infused Bark
 			i(260636),	-- Algae Covered Stone
-			i(260637),	-- Rotting Insect Eggs
 			i(260640),	-- Crooked Bird Talons
 			i(260644),	-- Lightbloom Bark
 			i(260654),	-- Abrasive Sand
-			i(260666),	-- Earthy Mushroom
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
 			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
 			i(260675),	-- Luminous Seeds
-			i(260678),	-- Sharp Obsidian Chunk
 			i(260679),	-- Fleshless Bone
 			i(260680),	-- Nesting Materials
 			i(260682),	-- Rusty Tusk Ring
 			i(260683),	-- Fine Magenta Sand
-			i(260685),	-- Large Brittle Bone
 			i(260690),	-- Gloomy Root
-			i(260691),	-- Void-Tainted Pelt
-			i(260692),	-- Chunk of Mystery Meat
 			i(260694),	-- Foul Kelp
 			i(260695),	-- Rancid Aquatic Remains
 			i(265387),	-- Cuddly Tomato Grrgle
@@ -4587,7 +4547,6 @@ root(ROOTS.Unsorted, {
 			i(266430),	-- Silvermoon Sunguard
 			i(266431),	-- Silvermoon Sunveil
 			i(266432),	-- Silvermoon Suncrest
-			i(266438),	-- Idol of Pestilence
 			i(266440),	-- Idol of Growth
 			i(266901),	-- Depthdiver's Cloak
 			i(266902),	-- Depthdiver's Tabard
@@ -4749,7 +4708,6 @@ root(ROOTS.Unsorted, {
 
 			-- Quest Armor
 			i(267267),	-- Ransacker's Netherhide Mask
-			i(267268),	-- Dripping Silk Footwraps
 			i(267270),	-- Shadow-Drenched Legguards
 			i(267271),	-- Nethersteel Deflectors
 
@@ -5119,11 +5077,9 @@ root(ROOTS.Unsorted, {
 				i(256724),	-- Crest of Unending Pain
 				i(257425),	-- Anubisath's Green Greatblade
 				i(257426),	-- Anubisath's Red Greatblade
-				i(257427),	-- Anubisath's Golden Greatblade \\ Anubisath's Gold Greatblade
 				i(257428),	-- Anubisath's Ethereal Greatblade
 				i(257710),	-- Anubisath's Green Blade
 				i(257711),	-- Anubisath's Red Blade
-				i(257712),	-- Anubisath's Golden Blade \\ Anubisath's Gold Blade
 				i(257713),	-- Anubisath's Ethereal Blade
 				i(257759),	-- Sorcerer's Midnight Cowl
 				i(257760),	-- Sorcerer's Azure Cowl
@@ -5135,7 +5091,6 @@ root(ROOTS.Unsorted, {
 				i(257767),	-- Sorcerer's Lively Cowl
 				i(257769),	-- Sorcerer's Faded Cowl
 				i(257770),	-- Sorcerer's Carrot Cowl
-				i(257771),	-- Sorcerer's Rosy Cowl
 				i(257772),	-- Sorcerer's Plum Cowl
 				i(257773),	-- Sorcerer's Crimson Cowl
 				i(257774),	-- Sorcerer's Violet Cowl
@@ -5152,7 +5107,6 @@ root(ROOTS.Unsorted, {
 				i(257787),	-- Sorcerer's Lively Cape
 				i(257788),	-- Sorcerer's Faded Cape
 				i(257789),	-- Sorcerer's Carrot Cape
-				i(257790),	-- Sorcerer's Rosy Cape
 				i(257791),	-- Sorcerer's Plum Cape
 				i(257792),	-- Sorcerer's Crimson Cape
 				i(257793),	-- Sorcerer's Violet Cape
@@ -5169,7 +5123,6 @@ root(ROOTS.Unsorted, {
 				i(257987),	-- Ensemble: Sorcerer's Lively Garb \\ Ensemble: Sorcerer's Lively Raiment
 				i(257989),	-- Ensemble: Sorcerer's Faded Garb \\ Ensemble: Sorcerer's Faded Raiment
 				i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
-				i(257997),	-- Ensemble: Sorcerer's Rosy Garb \\ Ensemble: Sorcerer's Rosy Raiment
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
 				i(258017),	-- Ensemble: Sorcerer's Crimson Garb \\ Ensemble: Sorcerer's Crimson Raiment
 				i(258018),	-- Ensemble: Sorcerer's Violet Garb \\ Ensemble: Sorcerer's Violet Raiment
@@ -5215,15 +5168,6 @@ root(ROOTS.Unsorted, {
 				i(258782),	-- South Guard's Silver Cloak
 				i(258783),	-- South Guard's Silver Cuirass
 				i(258784),	-- Ensemble: South Guard's Silver Raiment \\ Ensemble: Silver Raiment of the South Guardian
-				i(258785),	-- South Guard's Golden Facemask
-				i(258786),	-- South Guard's Golden Mantle
-				i(258787),	-- South Guard's Golden Cinch
-				i(258788),	-- South Guard's Golden Greaves
-				i(258789),	-- South Guard's Golden Boots
-				i(258790),	-- South Guard's Golden Gauntlets
-				i(258791),	-- South Guard's Golden Cloak
-				i(258792),	-- South Guard's Golden Cuirass
-				i(258793),	-- Ensemble: South Guard's Golden Raiment \\ Ensemble: Golden Raiment of the South Guardian
 				i(258794),	-- South Guard's Copper Facemask
 				i(258795),	-- South Guard's Copper Mantle
 				i(258796),	-- South Guard's Copper Cinch
@@ -5256,10 +5200,8 @@ root(ROOTS.Unsorted, {
 				i(260389),	-- Light Blue Wooden Shortbow
 				i(260390),	-- Light Brown Wooden Shortbow
 				i(260391),	-- Pale Wooden Shortbow
-				i(260392),	-- Pink Wooden Shortbow
 				i(260393),	-- Purple Wooden Shortbow
 				i(260395),	-- Rugged Wooden Shortbow
-				i(260396),	-- Tranquillien Archer's Bow \\ White Wooden Shortbow
 				i(260397),	-- Sea Green Wooden Shortbow
 				i(260398),	-- South Guard's Iron Handwraps
 				i(260399),	-- South Guard's Copper Handwraps
@@ -5273,17 +5215,7 @@ root(ROOTS.Unsorted, {
 				i(260413),	-- Copper Chainkini
 				i(260415),	-- Silver Chainkini
 				i(260416),	-- Gold Chainkini
-				i(260933),	-- Basic Pink Quiver
-				i(260935),	-- Tranquillien Archer's Quiver \\ Basic White Quiver
 				i(260936),	-- Basic Brown Quiver
-				i(262358),	-- Sindorei Captain's Mantle \\ Crimson Plate Shoulders
-				i(262369),	-- Sindorei Handglaive \\ Crimson Wrist Blade
-				i(262370),	-- Longbow of the Shattered Sun \\ Crimson Golden Bow
-				i(262371),	-- Bronze Magister's Courtstaff \\ Crimson Magister's Staff
-				i(262372),	-- Quel'dorei Bladestaff \\ Golden Magister's Staff
-				i(262373),	-- Quel'dorei Poleblade \\ Golden Ranseur
-				i(262374),	-- Sunfury Apprentice's Wand \\ Magister's Golden Wand
-				i(262377),	-- Sunfury Battlemage's Stave \\ Sindorei Magister's Staff
 				i(263500),	-- Skymaster's Blood Mantle
 				i(263501),	-- Skymaster's Blood Cloak
 				i(263502),	-- Skymaster's Blood Tabard
@@ -5342,7 +5274,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(258488),	-- Skypaw Glimmerfur
-				i(260580),	-- Cloudborn Razorwing
 			}),
 			filter(QUEST_ITEMS, {
 				i(252952),	-- Bewitched Berries

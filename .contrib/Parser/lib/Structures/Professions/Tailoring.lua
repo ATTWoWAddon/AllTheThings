@@ -999,6 +999,9 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		["collectible"] = false,
 	}),
 	r(376562),	-- Dragon Isles Unravelling
+	-- Technically, not from the trainer - you temporarily learn these when you touch the crafting table.
+	r(376563, {["u"]=TRAINING}),	-- Fiddle with Draconium Fabric Cutters
+	r(376564, {["u"]=TRAINING}),	-- Fiddle with Khaz'gorite Fabric Cutters
 	n(ARMOR, {
 		r(376509),	-- Surveyor's Cloth Bands
 		r(376507),	-- Surveyor's Cloth Robe

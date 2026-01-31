@@ -17168,6 +17168,7 @@ i(241340,{f=53,spellID=1280591}),
 i(241291,{f=53})})}),
 prof(356,{
 h(-26,{
+r(1225274,{requireSkill=356,skillID=2911}),
 r(1225283,{requireSkill=356,skillID=2911}),
 r(1225276,{requireSkill=356,skillID=2911}),
 r(1225284,{requireSkill=356,skillID=2911}),
@@ -17182,6 +17183,7 @@ r(1225280,{requireSkill=356,skillID=2911}),
 r(1225279,{requireSkill=356,skillID=2911}),
 r(1225282,{requireSkill=356,skillID=2911})}),
 h(-244,{
+q(88614,{an="s:1225274",providers={{"s",1225274}},requireSkill=356,type="hqt"}),
 q(88620,{an="s:1225283",providers={{"s",1225283}},requireSkill=356,type="hqt"}),
 q(88612,{an="s:1225276",providers={{"s",1225276}},requireSkill=356,type="hqt"}),
 q(88613,{an="s:1225284",providers={{"s",1225284}},requireSkill=356,type="hqt"}),
@@ -17198,6 +17200,7 @@ q(88608,{an="s:1225282",providers={{"s",1225282}},requireSkill=356,type="hqt"})}
 i(243343,{spellID=1235221}),
 i(238371,{spellID=1225292}),
 i(243302,{spellID=1235333}),
+i(238377,{spellID=1225292}),
 i(238383,{spellID=1225292}),
 i(238375,{spellID=1225292}),
 i(238376,{spellID=1225292}),

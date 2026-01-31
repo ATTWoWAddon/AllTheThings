@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					58631,	-- Into Dreams
 				},
 				["provider"] = { "n", 161458 },	-- Valeera Sanguinar
-				["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
+				["coord"] = { 54.7, 30.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(51465, {	-- A Load of Scrap

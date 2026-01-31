@@ -1619,6 +1619,7 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423339),	-- Khaz Algar Jewelcrafting
 	r(434018),	-- Algari Prospecting
+	r(434019),	-- Recraft Equipment
 	n(ARMOR, {
 		r(435379),	-- Malleable Band
 		r(435380),	-- Malleable Pendant

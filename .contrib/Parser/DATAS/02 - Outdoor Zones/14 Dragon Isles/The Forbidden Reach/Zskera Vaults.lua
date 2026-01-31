@@ -46,7 +46,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 					["groups"] = {
-						i(202713),	-- Scattered Supplies (QI!)
+						o_repeated({	-- Scattered Supplies
+							["coords"] = {
+								{ 35.4, 80.3, THE_FORBIDDEN_REACH },
+								{ 36.1, 79.0, THE_FORBIDDEN_REACH },
+								{ 36.3, 78.4, THE_FORBIDDEN_REACH },
+								{ 36.2, 80.7, THE_FORBIDDEN_REACH },
+							},
+							["groups"] = {
+								i(202713),	-- Scattered Supplies (QI!)
+								o(386055),	-- Scattered Supplies
+								o(386056),	-- Scattered Supplies
+							},
+						}),
 					},
 				}),
 				q(73159, {	-- Exploring Our Past

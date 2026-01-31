@@ -4550,6 +4550,7 @@ i(264892, 4981);	-- [PH] Black Baby Hawkstrider
 i(265035, 4984);	-- [PH] Purple Siphoid
 i(260705, 4947);	-- Assistant Botanist Leafy
 i(0, 4945);			-- Aud'rei III
+i(253404, 4902);	-- Auspicious Pixiu
 i(263492, 4952);	-- Blitzcreek
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake

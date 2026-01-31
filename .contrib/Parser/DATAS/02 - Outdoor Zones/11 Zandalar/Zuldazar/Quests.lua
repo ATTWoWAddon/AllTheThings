@@ -1804,9 +1804,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 				["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED },	-- Zandalari Empire, Exalted.
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(164944),	-- The Bloodied Glaive of Vol'jin (QI!)
-				},
+				["groups"] = { i(164944) },	-- The Bloodied Glaive of Vol'jin (QI!)
 			}),
 			q(50940, {	-- Wisdom of the Wingless
 				["sourceQuests"] = { 50397 },	-- Aerial Aspirations

@@ -630,9 +630,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attached
 					i(194263),	-- Pattern: Blue Dragon Rider's Robe (RECIPE!)
 					i(194264),	-- Pattern: Bronze Dragon Rider's Wraps (RECIPE!)
+					i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
+					-- Without SpellID attached
 					i(194296),	-- Pattern: Fiddle with Draconium Fabric Cutters (RECIPE!)
 					i(194297),	-- Pattern: Fiddle with Khaz'gorite Fabric Cutters (RECIPE!)
-					i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
 				})),
 
 				-- 10.1.0

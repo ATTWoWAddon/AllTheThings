@@ -530,7 +530,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(EXPANSION_PRELAUNCH, {
-		["timeline"] = { ADDED_11_0_0 },
+		["timeline"] = { ADDED_11_0_0, REMOVED_TWW_LAUNCH },
 		["groups"] = {
 			n(QUESTS, {
 				q(82687),	-- Triggered after 'Only Darkness' (questID 82689)

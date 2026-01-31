@@ -1593,8 +1593,6 @@ i(0, 376697);		-- Wisp of Tyr
 i(0, 382588);		-- Opening
 i(194263, 376498);	-- Blue Dragon Rider's Robe
 i(194264, 376499);	-- Bronze Dragon Rider's Wraps
-i(194296, 376563);	-- Fiddle with Draconium Fabric Cutters
-i(194297, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(194284, 376571);	-- Wildercloth Weapon Upholstery
 
 ------------------
@@ -1690,6 +1688,9 @@ i(0, 376517);		-- Vibrant Wildercloth Girdle
 i(0, 376518);		-- Vibrant Wildercloth Wristwraps
 --- QUEST ---
 i(0, 377986);		-- Heart in a Bottle
+--- CRAFTING TABLE ---
+i(0, 376563);		-- Fiddle with Draconium Fabric Cutters
+i(0, 376564);		-- Fiddle with Khaz'gorite Fabric Cutters
 
 ------------------
 -- PATCH 10.0.5 --

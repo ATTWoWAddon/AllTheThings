@@ -323,7 +323,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(435335),	-- Apply Socket (RECIPE!)
-					r(434019),	-- Recraft Equipment (RECIPE!)
 					-- With SpellID attached
 					i(225431),	-- Design: Vicious Jeweler's Setting (RECIPE!)
 					-- Without SpellID attached

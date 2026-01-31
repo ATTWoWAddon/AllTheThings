@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91582, {	-- Pruning the Lattice
 					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(93071, {	-- Rotten to the Core
+					["coord"] = { 46.4, 66.2, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(92062, {	-- Tending the Roots
 					["coord"] = { 35.9, 24.6, MAP.MIDNIGHT.HARANDAR },
 				}),

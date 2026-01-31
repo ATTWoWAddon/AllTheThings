@@ -351,7 +351,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190908),	-- Devourer's Skullscythe
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
-				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
 				i(213063),	-- Paradise's Ruby Axe
@@ -549,10 +548,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230047),	-- Prowler's Plum Shoulder Cape
 
 				------ Prowler's Rosy Set ------
-				i(230177),	-- Ensemble: Prowler's Rosy Headgear
-				q(85136),	-- Ensemble: Prowler's Rosy Headgear
-				i(230067),	-- Prowler's Rosy Cowl
-				i(230087),	-- Prowler's Rosy Mask
 				i(230046),	-- Prowler's Rosy Shoulder Cape
 			}),
 		})),
@@ -572,18 +567,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233155),	-- Banded Grassy War Wraps
 				i(233177),	-- Banded Lively War Slippers
 				i(233160),	-- Banded Lively War Wraps
-				i(233180),	-- Banded Rosy War Slippers
-				i(233163),	-- Banded Rosy War Wraps
 				i(234758),	-- Korkron Spaulders
-				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233100),	-- Long Cloudy War Skirt
 				i(233139),	-- Long Cloudy War Skirt and Leg Wraps
 				i(233099),	-- Long Grassy War Skirt
 				i(233138),	-- Long Grassy War Skirt and Leg Wraps
 				i(233104),	-- Long Lively War Skirt
 				i(233143),	-- Long Lively War Skirt and Leg Wraps
-				i(233107),	-- Long Rosy War Skirt
-				i(233146),	-- Long Rosy War Skirt and Leg Wraps
 				i(232924),	-- Sailor's Belt
 				i(233083),	-- Short Cloudy War Skirt
 				i(233122),	-- Short Cloudy War Skirt and Leg Wraps
@@ -591,8 +581,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233121),	-- Short Grassy War Skirt and Leg Wraps
 				i(233087),	-- Short Lively War Skirt
 				i(233126),	-- Short Lively War Skirt and Leg Wraps
-				i(233090),	-- Short Rosy War Skirt
-				i(233129),	-- Short Rosy War Skirt and Leg Wraps
 				i(234982),	-- Spare Sailor's Short-Sleeved Tunic
 				i(233272),	-- Steam-Powered Cobalt Clock Cloak
 				i(233275),	-- Steam-Powered Violet Clock Cloak
@@ -678,7 +666,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235023),	-- Vigilante's Cloudy Mask
 				i(235022),	-- Vigilante's Grassy Mask
 				i(235027),	-- Vigilante's Lively Mask
-				i(235030),	-- Vigilante's Rosy Mask
 				i(235036),	-- Vigilante's Sunny Mask
 				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
@@ -973,12 +960,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242439),	-- Grassy Sweatpants
 				i(242410),	-- Grassy Sweatshirt
 
-				------ Rosy Sweatsuit Set ------
-				i(242471),	-- Ensemble: Rosy Sweatsuit
-				q(90651),	-- Ensemble: Rosy Sweatsuit
-				i(242447),	-- Rosy Sweatpants
-				i(242418),	-- Rosy Sweatshirt
-
 				------ Sepia Sweatsuit Set ------
 				i(242457),	-- Ensemble: Sepia Sweatsuit
 				q(90641),	-- Ensemble: Sepia Sweatsuit
@@ -1161,7 +1142,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252710),	-- Midnight Winter Toque
 				i(252747),	-- Plum Winter Toque
 				i(250293),	-- Red Hot Portable Bakery
-				i(252746),	-- Rosy Winter Toque
 				i(252712),	-- Sepia Winter Toque
 				i(252751),	-- Snowy Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
