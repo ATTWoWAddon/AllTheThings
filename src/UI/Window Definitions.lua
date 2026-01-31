@@ -2369,13 +2369,15 @@ local ReservedFields = {
 };
 local PreCallShowSuffixes = {}
 local PrecallShow = true
-app.AddEventHandler("OnStartupDone", function()
+local function ShowPrecallShowWindows()
 	PrecallShow = nil
 	for k in pairs(PreCallShowSuffixes) do
-		app.PrintDebug("Precall Show",k)
+		-- app.PrintDebug("Precall Show",k)
 		app.Windows[k]:Show()
 	end
-end)
+	app.FunctionRunner.Run(app.RemoveEventHandler, ShowPrecallShowWindows)
+end
+app.AddEventHandler("OnUpdateWindows", ShowPrecallShowWindows)
 local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
@@ -2478,7 +2480,7 @@ local function BuildWindow(suffix)
 	end);
 	window:SetScript("OnShow", function(self)
 		if PrecallShow then
-			app.PrintDebug("Window:OnShow:Early",self.Suffix)
+			-- app.PrintDebug("Window:OnShow:Early",self.Suffix)
 			PreCallShowSuffixes[self.Suffix] = true
 			return
 		end
