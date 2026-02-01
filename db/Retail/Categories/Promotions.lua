@@ -147,15 +147,6 @@ mnt(46197,{itemID=49285,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.
 i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1258573,{itemID=254735})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258136)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,g={
-s(301195,257538,{f=2}),
-s(301196,257539,{f=2}),
-s(301197,257540,{f=2}),
-s(301198,257541,{f=2}),
-s(301199,257542,{f=2}),
-s(301200,257543,{f=2}),
-s(301201,257544,{f=2}),
-s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(4902,{itemID=253404,npcID=252686,spellID=1256380}))}}))}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={

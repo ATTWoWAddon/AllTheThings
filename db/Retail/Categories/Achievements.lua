@@ -8858,7 +8858,8 @@ ach(42767,{awp=120000,rwp=120100}),
 ach(42768,{awp=120000,rwp=120100}),
 ach(42769,{awp=120000,rwp=120100}),
 ach(42770,{awp=120000,rwp=120100}),
-ach(61211,{awp=110207,description="Build your own home through Housing",sourceQuests={91863,92486}})}}),
+ach(61211,{awp=110207,description="Build your own home through Housing",sourceQuests={91863,92486}}),
+ach(62189,{awp=120000,sourceQuests={94828}})}}),
 achcat(15234,{sourceIgnored=1,g={
 achcat(15446,{
 ach(10,{awp=30002,rwp=90001,u=2}),

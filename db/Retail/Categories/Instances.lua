@@ -61350,6 +61350,7 @@ ach(61627,{rwp=120100}),
 gach(61623,{rwp=120100,g={
 title(677,{collectible=false})}}),
 gach(61611),
+mnt(1242904,{itemID=246590}),
 i(249367,{modID=6,sym={{"sub","instance_tier",1307,16},{"sub","instance_tier",1314,16}}}),
 s(303907,249296,{f=22,modID=6}),
 i(250247,{f=51,modID=6}),
