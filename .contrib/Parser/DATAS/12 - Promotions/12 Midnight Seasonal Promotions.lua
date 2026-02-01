@@ -78,7 +78,7 @@ root(ROOTS.Promotions, {
 					cnONLY(i(46779)),	-- Path of Cenarius
 				},
 			})),
-			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+			--[[cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
 				--["description"] = "todo: add price",
@@ -92,7 +92,7 @@ root(ROOTS.Promotions, {
 					cnONLY(i(253402)),	-- Scorching Polearm
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 				},
-			})),
+			})),--]]
 			-- Season 1
 
 			-- Season 2
