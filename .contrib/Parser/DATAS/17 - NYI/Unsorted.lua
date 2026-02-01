@@ -134,7 +134,6 @@ root(ROOTS.Unsorted, {
 
 			-- Prof insc
 			i(268365),	-- Thalassian Competitor's Staff
-			i(268366),	-- Technique: Thalassian Competitor's Staff
 
 			-- Wep?
 			i(268475),	-- Evercore Dome Dinger
@@ -1956,9 +1955,6 @@ root(ROOTS.Unsorted, {
 			i(253302),	-- Malleable Wireframe
 			i(253303),	-- Pile of Junk
 
-			-- Pvp jc
-			i(253307),	-- Infused Heliotrope
-
 			-- Wep
 			i(253388),	-- Tyrannus's Runeblade
 
@@ -2109,101 +2105,6 @@ root(ROOTS.Unsorted, {
 			-- Pet
 			i(255151),	-- Scruffbeak \\ [DNT] Baby Amani Eagle (Grey)
 			-- PvP
-			i(255262),	-- Galactic Aspirant's Plate Helm
-			i(255263),	-- Galactic Aspirant's Silk Robe
-			i(255264),	-- Galactic Aspirant's Chestplate
-			i(255265),	-- Galactic Aspirant's Armored Vest
-			i(255266),	-- Galactic Aspirant's Leather Vest
-			i(255267),	-- Galactic Aspirant's Plate Warboots
-			i(255268),	-- Galactic Aspirant's Silk Treads
-			i(255269),	-- Galactic Aspirant's Chain Sabatons
-			i(255270),	-- Galactic Aspirant's Leather Boots
-			i(255271),	-- Galactic Aspirant's Leather Gloves
-			i(255272),	-- Galactic Aspirant's Plate Gauntlets
-			i(255273),	-- Galactic Aspirant's Silk Gloves
-			i(255274),	-- Galactic Aspirant's Chain Gauntlets
-			i(255275),	-- Galactic Aspirant's Silk Hood
-			i(255276),	-- Galactic Aspirant's Chain Helm
-			i(255277),	-- Galactic Aspirant's Leather Helm
-			i(255278),	-- Galactic Aspirant's Plate Legguards
-			i(255279),	-- Galactic Aspirant's Silk Leggings
-			i(255280),	-- Galactic Aspirant's Chain Leggings
-			i(255281),	-- Galactic Aspirant's Leather Breeches
-			i(255282),	-- Galactic Aspirant's Leather Spaulders
-			i(255283),	-- Galactic Aspirant's Plate Shoulders
-			i(255284),	-- Galactic Aspirant's Silk Mantle
-			i(255285),	-- Galactic Aspirant's Chain Spaulders
-			i(255286),	-- Galactic Aspirant's Plate Girdle
-			i(255287),	-- Galactic Aspirant's Silk Cord
-			i(255288),	-- Galactic Aspirant's Chain Belt
-			i(255289),	-- Galactic Aspirant's Leather Belt
-			i(255290),	-- Galactic Aspirant's Silk Wristwraps
-			i(255291),	-- Galactic Aspirant's Plate Cuffs
-			i(255292),	-- Galactic Aspirant's Chain Wristwraps
-			i(255293),	-- Galactic Aspirant's Leather Wristwraps
-			i(255294),	-- Galactic Aspirant's Plate Headguard
-			i(255295),	-- Galactic Aspirant's Silk Shirt
-			i(255296),	-- Galactic Aspirant's Plate Armor
-			i(255297),	-- Galactic Aspirant's Armored Tunic
-			i(255298),	-- Galactic Aspirant's Leather Tunic
-			i(255299),	-- Galactic Aspirant's Plate Stompers
-			i(255300),	-- Galactic Aspirant's Silk Footwraps
-			i(255301),	-- Galactic Aspirant's Chain Stompers
-			i(255302),	-- Galactic Aspirant's Leather Footpads
-			i(255303),	-- Galactic Aspirant's Leather Grips
-			i(255304),	-- Galactic Aspirant's Plate Handguards
-			i(255305),	-- Galactic Aspirant's Silk Handwraps
-			i(255306),	-- Galactic Aspirant's Chain Handguards
-			i(255307),	-- Galactic Aspirant's Silk Cover
-			i(255308),	-- Galactic Aspirant's Chain Headguard
-			i(255309),	-- Galactic Aspirant's Leather Mask
-			i(255310),	-- Galactic Aspirant's Plate Wargreaves
-			i(255311),	-- Galactic Aspirant's Silk Legwraps
-			i(255312),	-- Galactic Aspirant's Chain Wargreaves
-			i(255313),	-- Galactic Aspirant's Leather Leggings
-			i(255314),	-- Galactic Aspirant's Leather Mantle
-			i(255315),	-- Galactic Aspirant's Plate Pauldrons
-			i(255316),	-- Galactic Aspirant's Silk Shawl
-			i(255317),	-- Galactic Aspirant's Chain Shoulderguards
-			i(255318),	-- Galactic Aspirant's Plate Greatbelt
-			i(255319),	-- Galactic Aspirant's Silk Belt
-			i(255320),	-- Galactic Aspirant's Chain Clasp
-			i(255321),	-- Galactic Aspirant's Leather Cord
-			i(255322),	-- Galactic Aspirant's Silk Bindings
-			i(255323),	-- Galactic Aspirant's Plate Armguards
-			i(255324),	-- Galactic Aspirant's Chain Bracer
-			i(255325),	-- Galactic Aspirant's Leather Armguards
-			i(255326),	-- Galactic Aspirant's Badge of Ferocity
-			i(255327),	-- Galactic Aspirant's Medallion
-			i(255328),	-- Galactic Aspirant's Insignia of Alacrity
-			i(255329),	-- Galactic Aspirant's Emblem
-			i(255330),	-- Galactic Aspirant's Sigil of Adaptation
-			i(255331),	-- Galactic Aspirant's Ring
-			i(255332),	-- Galactic Aspirant's Band
-			i(255333),	-- Galactic Aspirant's Signet
-			i(255334),	-- Galactic Aspirant's Necklace
-			i(255335),	-- Galactic Aspirant's Choker
-			i(255336),	-- Galactic Aspirant's Pendant
-			i(255337),	-- Galactic Aspirant's Drape
-			i(255338),	-- Galactic Aspirant's Cloak
-			i(255339),	-- Galactic Aspirant's Cape
-			i(255340),	-- Galactic Aspirant's Greatcloak
-			i(255341),	-- Galactic Aspirant's Battleaxe
-			i(255342),	-- Galactic Aspirant's Dagger
-			i(255343),	-- Galactic Aspirant's Mace
-			i(255344),	-- Galactic Aspirant's Polearm
-			i(255345),	-- Galactic Aspirant's Staff
-			i(255346),	-- Galactic Aspirant's Greatsword
-			i(255347),	-- Galactic Aspirant's Censer
-			i(255348),	-- Galactic Aspirant's Warglaive
-			i(255349),	-- Galactic Aspirant's Scepter
-			i(255350),	-- Galactic Aspirant's Shield
-			i(255351),	-- Galactic Aspirant's Bow \\ Galactic Aspirant's Rifle
-			i(255352),	-- Galactic Aspirant's Halberd
-			i(255353),	-- Galactic Aspirant's Morningstar
-			i(255354),	-- Galactic Aspirant's Knife
-			i(255355),	-- Galactic Aspirant's Chopper
-			i(255356),	-- Galactic Aspirant's Wand
 			i(255357),	-- Galactic Gladiator's Silk Robe
 			i(255358),	-- Galactic Gladiator's Silk Gown
 			i(255359),	-- Galactic Gladiator's Silk Slippers
@@ -2500,68 +2401,7 @@ root(ROOTS.Unsorted, {
 			i(255848),	-- Flora Frenzy
 
 			-- PvP
-			i(255882),	-- Galactic Warmonger's Garb
-			i(255883),	-- Galactic Warmonger's Slippers
-			i(255884),	-- Galactic Warmonger's Gloves
-			i(255885),	-- Galactic Warmonger's Mask
-			i(255886),	-- Galactic Warmonger's Pants
-			i(255887),	-- Galactic Warmonger's Cord
-			i(255888),	-- Galactic Warmonger's Bindings
-			i(255889),	-- Galactic Warmonger's Mantle
-			i(255890),	-- Galactic Warmonger's Boots
-			i(255891),	-- Galactic Warmonger's Handwraps
-			i(255892),	-- Galactic Warmonger's Hood
-			i(255893),	-- Galactic Warmonger's Breeches
-			i(255894),	-- Galactic Warmonger's Belt
-			i(255895),	-- Galactic Warmonger's Wraps
-			i(255896),	-- Galactic Warmonger's Jerkin
-			i(255897),	-- Galactic Warmonger's Shoulderguard
-			i(255898),	-- Galactic Warmonger's Faceplate
-			i(255899),	-- Galactic Warmonger's Cuirass
-			i(255900),	-- Galactic Warmonger's Sabatons
-			i(255901),	-- Galactic Warmonger's Gauntlets
-			i(255902),	-- Galactic Warmonger's Legguards
-			i(255903),	-- Galactic Warmonger's Spaulders
-			i(255904),	-- Galactic Warmonger's Clasp
-			i(255905),	-- Galactic Warmonger's Bracers
-			i(255906),	-- Galactic Warmonger's Chestguard
-			i(255907),	-- Galactic Warmonger's Greaves
-			i(255908),	-- Galactic Warmonger's Grips
-			i(255909),	-- Galactic Warmonger's Helm
-			i(255910),	-- Galactic Warmonger's Leggings
-			i(255911),	-- Galactic Warmonger's Epaulets
-			i(255912),	-- Galactic Warmonger's Cinch
-			i(255913),	-- Galactic Warmonger's Armguards
-			i(255914),	-- Galactic Warmonger's Cape
-			i(255915),	-- Galactic Warmonger's Shawl
-			i(255916),	-- Galactic Warmonger's Cloak
-			i(255917),	-- Galactic Warmonger's Drape
-			i(255918),	-- Galactic Warmonger's Battleaxe
-			i(255919),	-- Galactic Warmonger's Hatchet
-			i(255920),	-- Galactic Warmonger's Carver
-			i(255921),	-- Galactic Warmonger's Longbow \\ Galactic Warmonger's Flameshot
-			i(255922),	-- Galactic Warmonger's Twinblade
-			i(255923),	-- Galactic Warmonger's Lantern
-			i(255924),	-- Galactic Warmonger's Spire
-			i(255925),	-- Galactic Warmonger's Battlestaff
-			i(255926),	-- Galactic Warmonger's Greatsword
-			i(255927),	-- Galactic Warmonger's Broadsword
-			i(255928),	-- Galactic Warmonger's Club
-			i(255929),	-- Galactic Warmonger's Hammer
-			i(255930),	-- Galactic Warmonger's Cudgel
-			i(255931),	-- Galactic Warmonger's Aegis
-			i(255932),	-- Galactic Warmonger's Impaler
-			i(255933),	-- Galactic Warmonger's Spear
-			i(255934),	-- Galactic Warmonger's Wand
-			i(255935),	-- Galactic Warmonger's Mace
-			i(255936),	-- Galactic Warmonger's Crusher
-			i(255937),	-- Galactic Warmonger's Scepter
-			i(255938),	-- Galactic Warmonger's Dagger
-			i(255939),	-- Galactic Warmonger's Dirk
 			i(256553),	-- Galactic Equipment Chest
-			i(256559),	-- Galactic Combatant's Heraldry
-			i(256607),	-- Galactic Aspirant's Heraldry
-			i(256608),	-- Galactic Gladiator's Heraldry
 
 			-- Cache
 			i(256055),	-- Overflowing Hara'ti Trove
@@ -2760,9 +2600,6 @@ root(ROOTS.Unsorted, {
 			i(257383),	-- Companion Experience
 			i(257384),	-- Companion Experience
 
-			-- PvP
-			i(257535),	-- Galactic Jeweler's Setting
-
 			-- Quest Armor
 			i(257537),	-- Voidbreaker's Wall \\ [DNT] [PH] Max Level Campaign - Weapon - Shield - STRINT
 			i(257538),	-- Scorching Conqueror's Crown
@@ -2931,9 +2768,6 @@ root(ROOTS.Unsorted, {
 			-- Prey
 			i(258532),	-- Preyseeker's Rugged Stole \\ [DNT] 12.0 Prey - Accessory - CLOAK - C
 			i(258533),	-- Preyseeker's Polished Cloak \\ [DNT] 12.0 Prey - Accessory - CLOAK - D
-
-			-- Pvp
-			i(258534),	-- Illustrious Contender's Strongbox \\ Glorious Contender's Strongbox
 
 			-- QI
 			i(258572),	-- Crystal Essence
@@ -3437,9 +3271,6 @@ root(ROOTS.Unsorted, {
 			-- Fishing
 			i(262650),	-- Writhing Wiggleworm
 			i(262651),	-- Pointed Spikesnail
-
-			-- PvP
-			i(262662),	-- Thalassian Distinguishment
 
 			-- Mount
 			i(262705),	-- Vicious Snapvine
@@ -4491,15 +4322,8 @@ root(ROOTS.Unsorted, {
 			i(251911),	-- Eversong Dessert Platter
 			i(251912),	-- Goldenmist Grapes
 
-			-- prof jc
-			i(256702),	-- Design: Thalassian Competitor's Signet
-			i(256719),	-- Design: Thalassian Competitor's Amulet
-
 			-- Mount
 			i(257176),	-- Duskbrute Harrower
-
-			-- prof alch
-			i(257417),	-- Recipe: Vicious Thalassian Flask of Honor
 
 			-- Prof
 			i(259120),	-- Bone-White Dye
@@ -4619,8 +4443,6 @@ root(ROOTS.Unsorted, {
 
 			-- PvP
 			i(267371),	-- Galactic Gladiator's Ripper
-			i(267375),	-- Galactic Aspirant's Claws
-			i(267417),	-- Galactic Aspirant's Talons
 			i(267571),	-- Conqueror's Galactic Varnish
 			i(267572),	-- Conqueror's Galactic Lacquer
 			i(267573),	-- Cracked Medal of Conquest
