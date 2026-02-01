@@ -59,7 +59,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { REMOVED_12_0_X_LAUNCH },
 				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),
-			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
+			--[[cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
 				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
@@ -78,7 +78,7 @@ root(ROOTS.Promotions, {
 					cnONLY(i(46779)),	-- Path of Cenarius
 				},
 			})),
-			--[[cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
 				--["description"] = "todo: add price",
