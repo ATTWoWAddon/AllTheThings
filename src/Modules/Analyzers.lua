@@ -16,38 +16,26 @@ local _, app = ...;
 local api = {}
 app.Modules.Analyzers = api
 
-local added = {}
-local OnUpdate_CheckSymlinks = function(self, force)
-	if self:IsVisible() then
-		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
-			return;
-		end
-		if not self.initialized then
-			self.initialized = true;
-
-			local data = {
-				text = "All Sym Groups",
-				visible = true,
-			}
-
-			local results = app:BuildSearchResponseRetailStyle("sym", nil, {sym=false});
-			app.NestObjects(data, results, true)
-			self:SetData(data)
-			self:AssignChildren()
-			self:Update(true)
-
-			app.SetDGUDelay(0)
-			app.FillGroups(data)
-		end
-
-		-- Update the window and all of its row data
-		self:DefaultUpdate(force);
-	end
-end
+local addedCheckSymlinks;
 api.CheckSymlinks = function()
-	if not added.CheckSymlinks then
-		added.CheckSymlinks = true
-		app.AddCustomWindowOnUpdate("AnalyzerCheckSymlinks", OnUpdate_CheckSymlinks)
+	if not addedCheckSymlinks then
+		addedCheckSymlinks = true
+		app:CreateWindow("AnalyzerCheckSymlinks", {
+			OnInit = function(self, handlers)
+				local data = app.CreateRawText("All Sym Groups", {
+					visible = true,
+				})
+
+				local results = app:BuildSearchResponseRetailStyle("sym", nil, {sym=false});
+				app.NestObjects(data, results, true)
+				self:SetData(data)
+				self:AssignChildren()
+				--self:Update(true)
+
+				app.SetDGUDelay(0)
+				app.FillGroups(data)
+			end,
+		});
 	end
 
 	app:GetWindow("AnalyzerCheckSymlinks"):Toggle();
