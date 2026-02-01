@@ -1536,11 +1536,13 @@ i(258129);	-- Jade Monument
 -- PATCH 12.0.1 --
 ------------------
 i(264413);	-- Dominating Victory
+i(264695);	-- Interdimensional Parcel Signal
 -- #if AFTER 12.0.1
 i(64457);	-- Last Relic of Argus
 -- #endif
 i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
+i(268717);	-- Pango Plating
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256552);	-- Verdant Rutaani Seed
@@ -1563,10 +1565,8 @@ i(259084);	-- Gift of the Cycle
 i(252265);	-- Hexed Potatoad Mucus
 i(263871);	-- Holy Pet Leash
 i(267139);	-- Hungry Black Hole
-i(264695);	-- Interdimensional Parcel Signal
 i(250320);	-- Lightgraft
 i(264414);	-- Midnight Delver's Flare Gun
-i(268717);	-- Pango Plating
 i(253629);	-- Personal Key to the Arcantina
 i(262431);	-- Pocket Mushroom Jump Pad
 i(251903);	-- Potatoad Egg

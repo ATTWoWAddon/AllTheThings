@@ -4,6 +4,9 @@
 root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
+		ach(61679, {	-- Midnight Epic
+			["timeline"] = { ADDED_12_0_X_LAUNCH },
+		}),
 		ach(40147, {	-- War Within Epic [The War Within]
 			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_X_SEASONSTART },
 		}),
@@ -35,6 +38,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		})),
 		------ Superior ------
+		ach(61678, {	-- Midnight Superior
+			["timeline"] = { ADDED_12_0_X_LAUNCH },
+		}),
 		ach(40146, {	-- War Within Superior [The War Within]
 			["timeline"] = { ADDED_11_0_2, REMOVED_12_0_X_SEASONSTART },
 		}),

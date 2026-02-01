@@ -5374,9 +5374,9 @@ de(1830,{itemID=245621,spellID=1239434})}}),
 flt(56,{
 i(61978),
 i(61981)}),
-sp(165466,{
+ah(165466,{type="s",g={
 r(64260,{awp=30100,requireSkill=773,skillID=2511}),
-r(64262,{awp=30100,learnedAt=255,requireSkill=773,rwp=70003,u=2})}),
+r(64262,{awp=30100,learnedAt=255,requireSkill=773,rwp=70003,u=2})}}),
 flt(111,{
 i(43390,{awp=30002,c=a[453],rwp=70003,u=2}),
 i(41540,{awp=30002,c=a[429],rwp=70003,u=2}),
@@ -5410,7 +5410,7 @@ s(45249,87562,{awp=50004,f=28,lvl=32}),
 s(45251,87566,{awp=50004,f=28,lvl=30}),
 s(45248,87561,{awp=50004,f=28,lvl=32})}),
 cat(106,{
-sp(86615,{
+ah(86615,{type="s",g={
 i(61988,{spellID=86043}),
 i(61989,{spellID=86043}),
 i(61990,{spellID=86043}),
@@ -5442,7 +5442,7 @@ i(62015,{spellID=86241}),
 i(62016,{spellID=86241}),
 i(62017,{spellID=86241}),
 i(62018,{spellID=86241}),
-i(62019,{spellID=86241})}),
+i(62019,{spellID=86241})}}),
 i(60838,{spellID=84193,g={
 i(60839),
 i(60840),
@@ -17168,6 +17168,7 @@ i(241340,{f=53,spellID=1280591}),
 i(241291,{f=53})})}),
 prof(356,{
 h(-26,{
+r(1225274,{requireSkill=356,skillID=2911}),
 r(1225283,{requireSkill=356,skillID=2911}),
 r(1225276,{requireSkill=356,skillID=2911}),
 r(1225284,{requireSkill=356,skillID=2911}),
@@ -17182,6 +17183,7 @@ r(1225280,{requireSkill=356,skillID=2911}),
 r(1225279,{requireSkill=356,skillID=2911}),
 r(1225282,{requireSkill=356,skillID=2911})}),
 h(-244,{
+q(88614,{an="s:1225274",providers={{"s",1225274}},requireSkill=356,type="hqt"}),
 q(88620,{an="s:1225283",providers={{"s",1225283}},requireSkill=356,type="hqt"}),
 q(88612,{an="s:1225276",providers={{"s",1225276}},requireSkill=356,type="hqt"}),
 q(88613,{an="s:1225284",providers={{"s",1225284}},requireSkill=356,type="hqt"}),
@@ -17198,6 +17200,7 @@ q(88608,{an="s:1225282",providers={{"s",1225282}},requireSkill=356,type="hqt"})}
 i(243343,{spellID=1235221}),
 i(238371,{spellID=1225292}),
 i(243302,{spellID=1235333}),
+i(238377,{spellID=1225292}),
 i(238383,{spellID=1225292}),
 i(238375,{spellID=1225292}),
 i(238376,{spellID=1225292}),

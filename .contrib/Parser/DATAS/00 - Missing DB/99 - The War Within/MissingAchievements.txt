@@ -1,33 +1,18 @@
 11.2.7.63642
 ach(61516),	-- Radiant Singer
 12.0.0.63534
-ach(41802),	-- Eversong In Reprise \\ Eversong Woods
-ach(41803),	-- For Zul'Aman! \\ Living Amani Legend
-ach(41804),	-- One Does Not Simply Walk Into Harandar \\ Harandar
-ach(41805),	-- Arator's Journey
-ach(41806),	-- Breaching the Voidstorm \\ Voidstorm
-ach(42045),	-- Midnight
-ach(42117),	-- The War of Light and Shadow
-ach(42283),	-- Abundance: Azeroth Runs on Dundun \\ Azeroth Runs on Dundun
 ach(60888),	-- Pushing My Buttons
-ach(60891),	-- The Crimson Rogue
 ach(61091),	-- Midnight Safari
 ach(61212),	-- Magisters' Terrace
 ach(61213),	-- Heroic: Magisters' Terrace
 ach(61214),	-- Mythic: Magisters' Terrace
-ach(61219),	-- No Time to Paws
-ach(61452),	-- Sojourner of Zul'Aman
-ach(61453),	-- Making an Amani Out of You
-ach(61455),	-- Shadowpine Scattered
 ach(61456),	-- Die in Lordaeron or Undercity
 ach(61490),	-- Midnight Season 1: Champion of the Dawn
 12.0.0.63724
-ach(61507),	-- A Bloody Song
 ach(61508),	-- Voidscar Arena
 ach(61509),	-- Heroic: Voidscar Arena
 ach(61510),	-- Mythic: Voidscar Arena
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
-ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
 ach(61521),	-- Skyriding Glyphs: The Shining Span
 ach(61522),	-- Skyriding Glyphs: Brightwing Estate \\ Skyriding Glyphs: Sunstrider Isle
 ach(61523),	-- Skyriding Glyphs: Silvermoon City
@@ -102,9 +87,6 @@ ach(61646),	-- Heroic: Nexus-Point Xenas
 ach(61647),	-- Mythic: Nexus-Point Xenas
 ach(61648),	-- Heroic: The Blinding Vale
 ach(61649),	-- Mythic: The Blinding Vale
-ach(61678),	-- Midnight Superior
-ach(61679),	-- Midnight Epic
-ach(61681),	-- Abundance: You Should See Him in a Crown \\ You Should See Him in a Crown
 12.0.0.63967
 ach(61706),	-- Herald of the Goddess
 ach(61707),	-- Delver of the Depths: Midnight
@@ -135,7 +117,6 @@ ach(61731),	-- The Gulf of Memory Stories \\ The Gulf of Memory Stories NEED UPD
 ach(61732),	-- Sunkiller Sanctum Stories \\ Sunkiller Sanctum Stories NEED UPDATE
 ach(61733),	-- Shadowguard Point Stories \\ Shadowguard Point Stories NEED UPDATE
 ach(61734),	-- Midnight Delves: Endgame
-ach(61739),	-- Sojourner of Harandar
 ach(61741),	-- Delve Loremaster: Midnight
 ach(61796),	-- Midnight: Journey's End (Season 1)
 ach(61797),	-- My Shady Nemesis
@@ -154,17 +135,9 @@ ach(61809),	-- Adventurer of the Dawn
 ach(61832),	-- Midnight Delves: Tier 1
 ach(61835),	-- Midnight Delves: Tier 2
 ach(61836),	-- Midnight Delves: Tier 3
-ach(61839),	-- Midnight Pathfinder
 ach(61854),	-- The Midnight Explorer
-ach(61855),	-- Explore Eversong Woods \\ Explore Eversong Woods - Placeholder
-ach(61856),	-- Explore Zul'Aman \\ Explore Zul'Aman - Placeholder
-ach(61857),	-- Explore Voidstorm \\ Explore Voidstorm - Placeholder
 ach(61858),	-- Light of the Party
-ach(61859),	-- Midnight Flight Master
-ach(61860),	-- From The Cradle to the Grave
-ach(61861),	-- Oh, No You Don't!
 ach(61863),	-- Atal'Aman Discoveries
-ach(61864),	-- Sojourner of Voidstorm
 ach(61892),	-- The Shadow Enclave Discoveries
 ach(61893),	-- Parhelion Plaza Discoveries
 ach(61894),	-- Collegiate Calamity Discoveries
@@ -176,10 +149,6 @@ ach(61899),	-- Sunkiller Sanctum Discoveries
 ach(61900),	-- Shadowguard Point Discoveries
 ach(61901),	-- Midnight: Leave No Treasure Unfound
 ach(61906),	-- Glory of the Midnight Delver
-ach(61910),	-- Mrglgrgl of Grglmrgl \\ Hero of Murlocs
-ach(61912),	-- Anchoring the Defense
-ach(61913),	-- A Singular Problem
-ach(61916),	-- Rage of the Ren'dorei \\ Void Elf Demon Hunter
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64124
 ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
@@ -190,32 +159,11 @@ ach(61591),	-- Keystone Victor: Algeth'ar Academy
 ach(61592),	-- Keystone Victor: Pit of Saron
 ach(61593),	-- Keystone Victor: Seat of the Triumvirate
 ach(61594),	-- Keystone Victor: Skyreach
-ach(61922),	-- Ninety Percent is Good Enough
-ach(61937),	-- Abundance: Artisan of Mausoloa
-ach(61938),	-- Abundance: Artisan of Loaknit
-ach(61939),	-- Abundance: Artisan of Floaret
-ach(61940),	-- Abundance: Artisan of Loanite
-ach(61941),	-- Abundance: Acolyte of a Glorious Entity
-ach(61943),	-- Abundance: Prosperous Plentitude!
-ach(61957),	-- Sojourner of Eversong Woods \\ Sojourner of Eversong Woods (Midnight)
-ach(61960),	-- Treasures of Eversong Woods \\ Treasures of Eversong Woods (Midnight)
-ach(61961),	-- Runestone Rush
 12.0.0.64228
-ach(62057),	-- Midnight: The Highest Peaks
-ach(62104),	-- Midnight Lore Hunter
-ach(62105),	-- Lysikas Would Be Proud
-ach(62110),	-- Loremaster of Midnight
 ach(62117),	-- Abyss Anglers: Boarhide Catch Sack \\ Abyss Anglers: Placeholder 1
 ach(62118),	-- Abyss Anglers: Amazardhide Catch Case \\ Abyss Anglers: Placeholder 2
 ach(62119),	-- Abyss Anglers: Loaknit-Woven Catch Satchel \\ Abyss Anglers: Placeholder 3
-ach(62120),	-- Altar of Blessings: The Penitent Troll \\ Altar of Blessings: Placeholder 1
-ach(62121),	-- Altar of Blessings: Sacred Buffet Devotee \\ Altar of Blessings: Placeholder 2
-ach(62122),	-- Tallest Tree in the Forest
-ach(62125),	-- Treasures of Zul'Aman
-ach(62126),	-- Treasures of Voidstorm
 12.0.0.64339
-ach(62130),	-- The Ultimate Predator
-ach(62133),	-- Thrill of the Chase
 ach(62145),	-- Dungeon Unlock: Windrunner Spire
 ach(62146),	-- Dungeon Unlock: Murder Row
 ach(62147),	-- Dungeon Unlock: Den of Nalorakk
@@ -224,10 +172,6 @@ ach(62149),	-- Dungeon Unlock: The Blinding Vale
 ach(62150),	-- Dungeon Unlock: Nexus-Point Xenas
 ach(62151),	-- Dungeon Unlock: Voidscar Arena
 ach(62152),	-- Dungeon Unlock: Magisters' Terrace
-ach(62185),	-- Ever Painting
-ach(62186),	-- The Party Must Go On
-ach(62187),	-- Grand Magister's Sommelier
-ach(62188),	-- More Than Just Their Roots
 ach(62189),	-- Mind-Seeker
 ach(62190),	-- Life of the Party
 ach(62191),	-- Call of the Light
@@ -236,10 +180,6 @@ ach(62193),	-- Midnight Dungeon Damage Dealer
 ach(62194),	-- Midnight Dungeon Healer
 ach(62195),	-- Midnight Dungeon Tank
 ach(62196),	-- Midnight Dungeoneer
-ach(62199),	-- Put a Pin in It
-ach(62200),	-- Gnome Alone
-ach(62201),	-- The Frog and the Princesses
-ach(62202),	-- Spiritpaw Marathon
 ach(62206),	-- Midnight Delver III
 ach(62207),	-- Abyss Anglers: Reinforced Joints
 ach(62208),	-- Abyss Anglers: Depth Grease
@@ -282,45 +222,17 @@ ach(62249),	-- Skinning-on-Demand
 ach(62250),	-- Dedicated to the Craft: Herbalism
 ach(62251),	-- Dedicated to the Craft: Mining
 ach(62252),	-- Dedicated to the Craft: Skinning
-ach(62256),	-- Yelling into the Voidstorm
-ach(62260),	-- That's Aln, Folks!
-ach(62261),	-- Forever Song
 ach(62262),	-- Silvermoon Court Champion
 ach(62263),	-- Amani Tribe Champion
 ach(62265),	-- The Singularity Champion
-ach(62266),	-- Abundance: An Acolyte no Longer
-ach(62267),	-- A Most Violent Loa
-ach(62268),	-- Abundance: Professionals Only
-ach(62269),	-- Altar of Blessings: Amani Curious
-ach(62270),	-- Altar of Blessings: One for Altar
 ach(62271),	-- Abyss Anglers: Trench Berserker
 ach(62272),	-- Abyss Anglers: Certified Depthdiver
 12.0.1.64889
 ach(62273),	-- Echoes of Midnight
-ach(62288),	-- Eversong Woods: The Highest Peaks
-ach(62289),	-- Zul'Aman: The Highest Peaks
-ach(62290),	-- Harandar: The Highest Peaks
-ach(62291),	-- Voidstorm: The Highest Peaks
-ach(62324),	-- Abundance: Loa of all Trades
-ach(62325),	-- Abundance: Treasures Aplenty
-ach(62326),	-- Abundance: Golden Opportunities
-ach(62329),	-- Abundance: Squash the Competition
-ach(62330),	-- Abundance: One Bite at a Time
-ach(62331),	-- Abundance: Drops of Prosperity
-ach(62332),	-- Abundance: Dundun's Favored
-ach(62333),	-- Abundance: Harvester
-ach(62336),	-- Abundance: Contributer
-ach(62337),	-- Abundance: Professional
-ach(62338),	-- Abundance: Artisan
-ach(62339),	-- Abundance: Gambler
-ach(62340),	-- Abundance: Investor
-ach(62341),	-- Abundance: Ain't Dun Till It's Dun
 ach(62342),	-- Abyss Anglers: The Finest of Fish
 ach(62343),	-- Abyss Anglers: Legends Lurk Beneath
 ach(62351),	-- Preying For Midnight
 ach(62352),	-- Nothing to See Here
 ach(62383),	-- Gotta Hunt Them All
 12.0.1.65337
-ach(62385),	-- Staring Into The Void
-ach(62386),	-- Light Up the Night
 ach(62388),	-- Illicit Rain: Five Stars

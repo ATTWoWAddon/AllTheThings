@@ -508,45 +508,133 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 			}),
-			header(HEADERS.Achievement, 61574, {	-- Legends Never Die
+			header(HEADERS.Achievement, 61574, bubbleDownSelf({ ["isWeekly"] = true }, {	-- Legends Never Die
 				n(REWARDS, {
-					i(263467),	-- Avid Learner's Supply Pack
+					-- Rewarded on every quest completion. Be it the first time or on the repetition.
+					i(269703),	-- Avid Learner's Supply Pack
 				}),
 				q(89268, {	-- Lost Legends
-					--["sourceQuest"] = X,	-- 
 					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-					["isWeekly"] = true,
 				}),
 				header(HEADERS.AchCriteria, 61574.01, {	-- Wey'nan's Ward
 					q(88993, {	-- Wey'nan's Ward
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(263037),	-- Replica Wey'nan's Ward (DECOR!)
-						},
+						["groups"] = { i(263037) },	-- Replica Wey'nan's Ward (DECOR!)
 					}),
 					q(90536, {	-- The Tale of Wey'nan's Ward
-						["description"] = "This Quest is triggered after you embark on a Vision Walk.",
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
 						["sourceQuest"] = 88993,	-- Wey'nan's Ward
 						["provider"] = { "n", 241117 },	-- Ancient Visionstone
-						["sourceQuest"] = 89268,	-- Lost Legends
 						["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
 							o(531174, {	-- Fragrant Mushroom
-								["coord"] = { 41.3, 34.9, MAP.MIDNIGHT.HARANDAR },
-								["groups"] = {
-									i(241349),	-- Fragrant Mushroom Cap (QI!)
-									i(241611),	-- Zarat's Head (QI!)
+								["coords"] = {
+									{ 41.1, 35.9, MAP.MIDNIGHT.HARANDAR },
+									{ 41.3, 34.9, MAP.MIDNIGHT.HARANDAR },
+									{ 41.4, 36.2, MAP.MIDNIGHT.HARANDAR },
+									{ 41.5, 35.4, MAP.MIDNIGHT.HARANDAR },
+									{ 41.7, 36.3, MAP.MIDNIGHT.HARANDAR },
+									{ 41.8, 36.5, MAP.MIDNIGHT.HARANDAR },
 								},
+								["groups"] = { i(241349) },	-- Fragrant Mushroom Cap (QI!)
+							}),
+							i(241611),	-- Zarat's Head (QI!)
+						},
+					}),
+				}),
+				header(HEADERS.AchCriteria, 61574.02, {	-- The Cauldron of Echoes
+					q(88994, {	-- The Cauldron of Echoes
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(263315),	-- Bubbling Haranir Cauldron (DECOR!)
+						},
+					}),
+					q(90889, {	-- Tale of the Echoes of Sai'alyo
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88994,	-- The Cauldron of Echoes
+						["provider"] = { "n", 245531 },	-- Ancient Visionstone
+						["coord"] = { 61.6, 20.6, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(243589),	-- Alndust (QI!)
+							i(243584),	-- Amethryl Petals (QI!)
+							i(243583),	-- Iridescent Carapace (QI!)
+						},
+					}),
+				}),
+				header(HEADERS.AchCriteria, 61574.03, {	-- Aln'hara's Bloom
+					q(88995, {	-- Aln'hara's Bloom
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(263196),	-- Harandar Glowvine Lantern (DECOR!)
+						},
+					}),
+					q(91492, {	-- The Tale of Aln'hara's Bloom
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88995,	-- Aln'hara's Bloom
+						["provider"] = { "n", 241541 },	-- Ancient Visionstone
+						["coord"] = { 54.7, 65.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							o(564560, {	-- Aln'hara's Bloom
+								i(248139),	-- Aln'hara's Bloom (QI!)
 							}),
 						},
 					}),
 				}),
-				q(89268, {	-- Lost Legends
-					["sourceQuest"] = 88993,	-- Wey'nan's Ward
-					--["sourceQuestNumRequired"] = 1,
+				header(HEADERS.AchCriteria, 61574.04, {	-- The Echoless Flame
+					q(88996, {	-- The Echoless Flame
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(264262),	-- Haranir Whistling Arrow (DECOR!)
+						},
+					}),
+					q(91506, {	-- Tale of the First Shul'ka and the Flame
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88996,	-- The Echoless Flame
+						["provider"] = { "n", 241836 },	-- Ancient Visionstone
+						["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 61574.05, {	-- Russula's Outreach
+					q(88997, {	-- Russula's Outreach
+						["sourceQuest"] = 89268,	-- Lost Legends
+						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
+						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(262906),	-- Harandar Anvil (DECOR!)
+						},
+					}),
+					q(91507, {	-- The Tale of Russula
+						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						["sourceQuest"] = 88997,	-- Russula's Outreach
+						["provider"] = { "n", 241836 },	-- Ancient Visionstone
+						["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
+					}),
+				}),
+				--header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
+				--}),
+				--header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
+				--}),
+			})),
+			header(HEADERS.Achievement, 42278, {	-- The Empty Cradle
+				-- Exo Note: Achievement has 4 criteria, hence I suspect it has 4 quests that need to be completed on the same character. They unlock by Completing the Relic quests from 'Legends Never Die'
+				q(90733, {	-- The Listener
+					["sourceQuests"] = {
+						88995,	-- Aln'hara's Bloom
+						88997,	-- Russula's Outreach
+						88994,	-- The Cauldron of Echoes
+						88996,	-- The Echoless Flame
+						88993,	-- Wey'nan's Ward
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 				}),
@@ -561,10 +649,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93651, {	-- The Blinding Vale
 				["sourceQuests"] = { 86898 },	-- Rise of the Haranir
 				["providers"] = {
-					{ "n", 255822 },	-- Orweyna
-					{ "n", 255828 },	-- Orweyna
+					{ "n", 255822 },	-- Orweyna @ Silvermoon City
+					{ "n", 255828 },	-- Orweyna @ The Den, Harandar
 				},
-				["coord"] = { 36.6, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["coords"] = {
+					{ 36.6, 68.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 50.9, 53.1, MAP.MIDNIGHT.HARANDAR },
+				},
 				["groups"] = {
 					i(251190),	-- Bloodthorn Burnous
 					i(251194),	-- Lightwarden's Bind
@@ -1155,6 +1246,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 256313 },	-- Kaleo
 				["coord"] = { 51.0, 50.9, MAP.MIDNIGHT.HARANDAR },
 			}),
+			--
+			q(91982, {	-- WANTED: Toadshade's Petals
+				--["sourceQuests"] = { X },	-- 
+				["qg"] = 249361,	-- Shul'ka Li'tya
+				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
+				["isWeekly"] = true,	-- Probably? Blue !
+				["groups"] = { i(249403) },	-- Toadshade Petals (QI!)
+			}),
 		}),
 	}),
 }));
@@ -1167,7 +1266,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(89196),	-- Zone Choice Made (spellID 1254861), same hqt as previously.
 				q(92712),	-- after turn in questID 86929 (The Council Assembles), could be some phase swtiches or faction renown?
 				-- Legends Never Die Achievement
-				q(89266),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(89266, name(HEADERS.NPC,241213)),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(91516, name(HEADERS.NPC,243540)),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
+				q(91517, name(HEADERS.NPC,243542)),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
+				q(91517, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
+				q(89284, { ["name"] = "Relic chosen" }),	-- Triggered after selecting a Relic during 'Lost Legends' (89268)
+				q(91053, name(HEADERS.Item,263037)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
+				q(91054, name(HEADERS.Item,263315)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
+				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
+				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
+				q(91512, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
 				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993)
 				--
 			}),

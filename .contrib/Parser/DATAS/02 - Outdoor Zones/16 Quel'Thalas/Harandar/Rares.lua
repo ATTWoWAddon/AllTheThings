@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 60.0, 46.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92154,
 				["groups"] = {
-					--no loot table
+					i(264566),	-- Lashtongue's Leaffroggers
 				},
 			}),
 			n(248741, {	-- Rhazul
@@ -85,6 +85,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 91832,
 				["groups"] = {
 					i(264622),	-- Grimfang Shank
+					i(264530),	-- Grimfur Mittens
 				},
 			}),
 			n(250180, {	-- Serrasa
@@ -95,7 +96,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(250086, {	-- Stumpy
-				["coord"] = { 65.9, 31.6, MAP.MIDNIGHT.HARANDAR },	-- TODO: a bit innacurate
+				["coord"] = { 65.6, 32.7, MAP.MIDNIGHT.HARANDAR },
 				--["questID"] = xx,
 				["groups"] = {
 					--no loot table
@@ -112,7 +113,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 36.7, 75.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92183,
 				["groups"] = {
-					--no loot table
+					i(264633),	-- Treetop Battlestave
 				},
 			}),
 		}),
@@ -123,7 +124,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			n(RARES, {
-				q(94712),	-- Triggered after killing Rhazul
+				q(94716, {	-- Weekly reputation: Queen Lashtongue
+					["name"] = "Queen Lashtongue weekly reputation obtained.",
+				}),
+				q(94712, {	-- Weekly reputation: Rhazul
+					["name"] = "Rhazul weekly reputation obtained.",
+				}),
+				q(94722, {	-- Weekly reputation: Treetop
+					["name"] = "Treetop weekly reputation obtained.",
+				}),
 			}),
 		}),
 	}),

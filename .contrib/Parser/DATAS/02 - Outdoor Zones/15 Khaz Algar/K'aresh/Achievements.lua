@@ -56,6 +56,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				i(247703),	-- Reshii Hood
 				i(247704),	-- Reshii Mantle
 			}),
+			ach(61916, {	-- Rage of the Ren'dorei
+				["timeline"] = { ADDED_12_0_0 },
+			}),
 			ach(42761),	-- Remnants of a Shattered World (automated)
 			ach(60890),	-- Secrets of the K'areshi (automated)
 			skyriding(ach(42717, {	-- Skyriding Glyphs: Castigaar

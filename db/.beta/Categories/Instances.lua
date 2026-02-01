@@ -2570,7 +2570,7 @@ inst(228,{coords={{39.06,18.12,35}},description="The best route for a full clear
 h(-31,{
 faction(59,{maps={32},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
-q(7604,{cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=20,qgs=a[223],qis={18628},g={
+q(7604,{lvl=20,providers={{"i",18628}},g={
 r(21161,{itemID=18592,requireSkill=164,skillID=2477}),
 de(11274,{awp=110207,itemID=256673,sourceQuests={7604},spellID=1260651})}}),
 q(4264,{providers={{"i",11446}},r=2,rwp=30002,sourceQuests={4242},u=2}),
@@ -2782,6 +2782,7 @@ q(27571,{awp=40003,lvl=20,qgs={45888},r=2,sourceQuests={27569}}),
 q(27589,{awp=40003,lvl=20,qgs=a[878],r=1,sourceQuests={27585}})}),
 h(-58,{
 n(12944,{
+i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=17,minReputation={59,0}}),
 r(23799,{b=1,itemID=19444,minReputation=a[1074],requireSkill=333,skillID=2494}),
 r(20853,{b=1,itemID=17022,minReputation=a[1074],requireSkill=165,skillID=2532}),
 r(20849,{b=1,itemID=17018,minReputation=a[1074],requireSkill=197,skillID=2540}),
@@ -2871,7 +2872,7 @@ s(4204,11627,{b=1,f=6,lvl=20}),
 s(4200,11623,{b=1,f=3,lvl=20})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil;for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil;end	end	else	t.u=6;for i,o in ipairs(t.g)do	if not o.u then	o.u=6;end	end	end	return t;end)(
 n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=2,g={
 i(22047,{spellID=27739,u=6}),
-s(8779,22305,{b=1,c=a[934],f=4,lvl=23,rwp=40001,u=2}),
+s(8779,22305,{b=1,c=a[934],f=4,lvl=23,u=6}),
 s(8785,22317,{b=1,f=34,lvl=22,u=6}),
 s(8786,22318,{b=1,f=32,lvl=22,u=6}),
 s(8792,22330,{b=1,f=3,lvl=22,u=6})}})),
@@ -37633,6 +37634,7 @@ ach(11696,{
 crit(36461,{achID=11763,id=2})})}}),
 e(1856,{npcID=116407,g={
 ach(11699,{crs={121071},g={
+de(11909,{awp=120000,itemID=258223,sourceAchievements={11699},spellID=1262995}),
 crit(36545,{achID=11763,id=9})}})}}),
 e(1903,{crs=a[191],g={
 ach(11773,{crs={121498},g={
@@ -43662,6 +43664,7 @@ r(285925,{b=1,itemID=165735,lvl=10,requireSkill=773,skillID=2507}),
 r(285926,{b=1,itemID=165736,lvl=10,requireSkill=773,skillID=2507}),
 r(285927,{b=1,itemID=165737,lvl=10,requireSkill=773,skillID=2507})}}),
 e(2328,{crs=a[266],g={
+de(18484,{awp=120000,itemID=267008,spellID=1278998}),
 crit(44051,{achID=13414})}}),
 e(2332,{npcID=145371,g={
 s(104194,167864,{b=1,f=29,lvl=50,spellID=292650}),
@@ -50730,8 +50733,8 @@ crit(48720,{achID=14322,id=17})})}})}),
 d(24,{sym={{"sub","tw_instance",1186}}})}}),
 inst(1194,{awp=90100,coords={{88.9,44.3,2016},{36.3,12.2,2472}},maps={1989,1990,1991,1992,1993,1995,1996,1997},savedInstanceID=2441,g={
 h(-12,{
-ach(61093,{awp=110200,rwp=120000,u=2}),
-ach(61092,{awp=110200,rwp=120000,u=2}),
+ach(61093,{awp=110200,rwp=120001,u=2}),
+ach(61092,{awp=110200,rwp=120001,u=2}),
 ach(15190,{
 crit(52460,{achID=15190,coords={{39.91,38.78,1990}},id=1,providers={{"n",180817}}}),
 crit(52461,{achID=15190,coords={{36.63,33.37,1989}},id=2,providers={{"n",180818}}}),
@@ -55772,6 +55775,7 @@ s(62987,114263,{b=1,f=4,lvl=35}),
 s(63191,114387,{b=1,f=4,lvl=40}),
 s(86455,147517,{awp=120000,f=4,lvl=40,modID=2}),
 s(68645,121507,{b=1,f=4}),
+s(31816,63455,{b=1,f=4,lvl=32}),
 s(78297,134787,{b=1,f=4}),
 s(7587,19105,{b=1,f=4,lvl=24}),
 s(4086,10782,{b=1,f=4}),
@@ -55813,6 +55817,7 @@ s(63011,114271,{b=1,f=4,lvl=35}),
 s(1496,3958,{f=4,lvl=26}),
 s(15753,34107,{b=1,f=4,lvl=8}),
 s(78312,134696,{b=1,f=4}),
+s(7477,18757,{b=1,f=4,lvl=24}),
 s(77869,134724,{b=1,f=4}),
 s(78280,134753,{b=1,f=4})}),
 flt(5,{
@@ -55828,6 +55833,7 @@ q(77639,{type="hqt"}),
 s(7267,18320,{b=1,f=6,lvl=17}),
 s(63017,114273,{b=1,f=6,lvl=35}),
 s(1551,4014,{f=6,lvl=26}),
+s(31813,63452,{b=1,f=6,lvl=32}),
 s(77875,134734,{b=1,f=6}),
 s(78288,134765,{b=1,f=6}),
 s(78320,134706,{b=1,f=6}),
@@ -55845,7 +55851,8 @@ s(58567,108223,{f=7,lvl=39}),
 s(63020,114274,{b=1,f=7,lvl=35}),
 s(77880,134737,{b=1,f=7}),
 s(78292,134769,{b=1,f=7}),
-s(78324,134713,{b=1,f=7})})}}),
+s(78324,134713,{b=1,f=7}),
+s(31829,63470,{b=1,f=7,lvl=32})})}}),
 i(208064,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=2,lvl=70,spellID=417965,g={
 flt(4,{
 q(77637,{type="hqt"}),
@@ -55855,6 +55862,7 @@ s(1497,3959,{f=4,lvl=25}),
 s(2569,6682,{b=1,f=4,lvl=13}),
 s(78294,134784,{b=1,f=4}),
 s(77867,134722,{b=1,f=4}),
+s(8775,22301,{b=1,c=a[934],f=4,lvl=24}),
 s(8318,21040,{b=1,f=4}),
 s(5164,14150,{b=1,f=4,lvl=6}),
 s(78278,134751,{b=1,f=4})}),
@@ -55897,6 +55905,7 @@ s(62957,114253,{b=1,f=7,lvl=35}),
 s(63059,114316,{b=1,f=7,lvl=36}),
 s(77878,134735,{b=1,f=7}),
 s(78290,134767,{b=1,f=7}),
+s(31812,63450,{b=1,f=7,lvl=32}),
 s(78306,134799,{b=1,f=7})})}}),
 i(208063,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=2,lvl=70,spellID=417964,g={
 flt(4,{
@@ -55929,6 +55938,8 @@ s(62981,114261,{b=1,f=6,lvl=35}),
 s(62191,113227,{b=1,f=6,lvl=35,modID=4}),
 s(1549,4012,{f=6,lvl=25}),
 s(8151,20659,{f=6,lvl=23}),
+s(17949,37686,{b=1,f=6,lvl=30}),
+s(12068,27793,{b=1,f=6,lvl=27}),
 s(25685,51980,{b=1,f=6}),
 s(77874,134733,{b=1,f=6}),
 s(78304,134797,{b=1,f=6}),
@@ -55950,6 +55961,7 @@ s(62984,114262,{b=1,f=7,lvl=35}),
 s(62197,113229,{b=1,f=7,lvl=35,modID=4}),
 s(8145,20653,{f=7,lvl=23}),
 s(77879,134736,{b=1,f=7}),
+s(11923,27475,{b=1,f=7,lvl=27}),
 s(78308,134801,{b=1,f=7})})}}),
 i(208065,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=2,lvl=70,spellID=417966,g={
 flt(4,{
@@ -55997,7 +56009,8 @@ s(58558,108214,{f=7,lvl=39}),
 s(58566,108222,{f=7,lvl=39}),
 s(63008,114270,{b=1,f=7,lvl=35}),
 s(78291,134768,{b=1,f=7}),
-s(78323,134712,{b=1,f=7})})}}),
+s(78323,134712,{b=1,f=7}),
+s(8790,22328,{b=1,f=7,lvl=24})})}}),
 i(208111,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=21,lvl=70,spellID=417973,g={
 q(77597,{type="hqt"}),
 s(78395,134755,{b=1,f=21}),
@@ -56032,7 +56045,8 @@ s(59967,110591,{b=1,f=31,lvl=35}),
 s(78382,134720,{b=1,f=31}),
 s(78391,134749,{b=1,f=31}),
 s(27423,55853,{b=1,f=31,lvl=30,modID=1}),
-s(27696,56376,{b=1,f=31,lvl=32})}}),
+s(27696,56376,{b=1,f=31,lvl=32}),
+s(7475,18755,{b=1,f=31,lvl=24})}}),
 i(208125,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",lvl=70,spellID=417990,g={
 q(77609,{type="hqt"}),
 s(91018,153641,{f=1,lvl=45,r=1}),
@@ -56041,6 +56055,8 @@ s(7264,18316,{b=1,f=1,lvl=40}),
 s(78376,134727,{b=1,f=1}),
 s(78387,134757,{b=1,f=1}),
 s(4853,13371,{b=1,f=1}),
+s(8791,22329,{b=1,f=1,lvl=24}),
+s(8787,22319,{b=1,f=1,lvl=23}),
 s(78353,134589,{b=1,f=1})}}),
 i(208113,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=22,lvl=70,spellID=417975,g={
 q(77599,{type="hqt"}),
@@ -56057,8 +56073,7 @@ s(78396,134776,{b=1,f=22}),
 s(9117,23171,{b=1,f=22,lvl=8}),
 s(78349,134577,{b=1,f=22})}}),
 i(208114,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=24,lvl=70,spellID=417976,g={
-q(77600,{type="hqt"}),
-s(34777,68194,{f=23,lvl=6})}}),
+q(77600,{type="hqt"})}}),
 i(208112,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=26,lvl=70,spellID=417974,g={
 q(77598,{type="hqt"}),
 s(78394,134746,{b=1,f=26}),
@@ -56121,10 +56136,12 @@ s(562,2048,{b=1,f=23}),
 s(78385,134756,{b=1,f=23}),
 s(960,2816,{b=1,f=23,lvl=13}),
 s(2290,6196,{b=1,f=23,lvl=13}),
+s(34777,68194,{f=23,lvl=6}),
 s(78368,134618,{b=1,f=23}),
 s(78364,134611,{b=1,f=23}),
 s(78400,134789,{b=1,f=23}),
 s(78406,134781,{b=1,f=23}),
+s(8788,22322,{b=1,f=23,lvl=23}),
 s(78351,134588,{b=1,f=23})}}),
 i(208116,{description="This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",f=29,lvl=70,spellID=417979,g={
 q(77602,{type="hqt"}),
@@ -56147,6 +56164,7 @@ s(1528,3991,{f=8,lvl=25}),
 s(78374,134741,{b=1,f=8}),
 s(78392,134774,{b=1,f=8}),
 s(8796,22336,{b=1,f=8,lvl=23}),
+s(7476,18756,{b=1,f=8,lvl=24}),
 s(78367,134632,{b=1,f=8}),
 s(78398,134803,{b=1,f=8}),
 s(78352,134603,{b=1,f=8})}}),
@@ -56651,7 +56669,9 @@ crit(67052,{achID=40138,id=1})}),
 ach(40140,{
 crit(67050,{achID=40138,id=2})}),
 ach(40141,{
-crit(67051,{achID=40138,id=3})})}}),
+crit(67051,{achID=40138,id=3})}),
+ach(61565,{awp=120000,g={
+p(4459,{awp=110002,b=1,itemID=221492,npcID=222081,spellID=445493})}})}}),
 h(-61,{awp=110002,isRaid=1,g={
 h(-19,{crs={220999,221067,221084,221224},g={
 s(221700,225733,{b=1,f=5,lvl=80}),
@@ -60785,7 +60805,8 @@ e(2585,{npcID=215407,g={
 s(219121,221160,{b=1,f=35,lvl=68,modID=1})}})}),
 d(104,{difficulties=a[463],g={
 e(2585,{npcID=215407,g={
-ach(40374)}})}}),
+ach(40374,{
+crit(110298,{achID=61565,awp=120000,id=1})})}})}}),
 d(23,{
 e(2585,{npcID=215407,g={
 ach(40375)}})})}}),
@@ -60830,7 +60851,8 @@ s(219012,221069,{b=1,f=7,lvl=68}),
 i(219299,{b=1,f=53,lvl=68,spellID=443393})}})}}),
 d(104,{difficulties=a[463],g={
 e(2589,{npcID=218523,g={
-ach(40363)}})}}),
+ach(40363,{
+crit(110299,{achID=61565,awp=120000,id=2})})}})}}),
 d(23,{awp=110100,g={
 e(2589,{npcID=218523,g={
 ach(40366)}})}})}}),
@@ -60879,7 +60901,8 @@ s(219149,221184,{b=1,f=29,lvl=68}),
 s(219153,221188,{b=1,f=5,lvl=68})}})}}),
 d(104,{difficulties=a[463],g={
 e(2596,{npcID=216658,g={
-ach(40377)}})}}),
+ach(40377,{
+crit(110300,{achID=61565,awp=120000,id=3})})}})}}),
 d(23,{
 e(2596,{npcID=216658,g={
 ach(40379)}})})}}),
@@ -60923,7 +60946,8 @@ i(219307,{b=1,f=53,lvl=68,spellID=443530}),
 s(219065,221114,{b=1,f=5,lvl=68})}})}}),
 d(104,{difficulties=a[463],g={
 e(2561,{npcID=208747,g={
-ach(40428)}})}}),
+ach(40428,{
+crit(110301,{achID=61565,awp=120000,id=4})})}})}}),
 d(23,{awp=110100,g={
 e(2561,{npcID=208747,g={
 ach(40429),
@@ -60958,7 +60982,8 @@ s(295644,242488,{b=1,f=6,lvl=80}),
 i(242491,{b=1,f=52,lvl=80})}})}}),
 d(104,{difficulties=a[463],g={
 e(2677,{npcID=234935,g={
-ach(42781)}})}}),
+ach(42781,{
+crit(110307,{achID=61565,awp=120000,id=10})})}})}}),
 d(23,{
 e(2677,{npcID=234935,g={
 ach(42782)}})})}}),
@@ -61003,7 +61028,8 @@ s(293026,246279,{awp=110200,b=1,f=4,lvl=68})}}),
 e(2650,{npcID=226396,g={
 s(293024,246277,{awp=110200,b=1,f=6,lvl=68})}}),
 e(2651,{npcID=236950,g={
-ach(41340),
+ach(41340,{
+crit(110306,{achID=61565,awp=120000,id=9})}),
 s(293021,246274,{awp=110200,b=1,f=5,lvl=68})}})}}),
 d(23,{
 e(2651,{npcID=236950,g={
@@ -61048,7 +61074,8 @@ d(104,{difficulties=a[463],g={
 e(2570,{npcID=207939,g={
 i(252009,{awp=110200,b=1,f=51,lvl=68})}}),
 e(2573,{npcID=207940,g={
-ach(40592)}})}}),
+ach(40592,{
+crit(110302,{achID=61565,awp=120000,id=5})})}})}}),
 d(23,{awp=110100,g={
 e(2573,{npcID=207940,g={
 ach(40596)}})}})}}),
@@ -61091,7 +61118,8 @@ s(219103,221146,{b=1,f=7,lvl=68}),
 s(219101,221144,{b=1,f=25,lvl=68})}})}}),
 d(104,{difficulties=a[463],g={
 e(2593,{npcID=213937,g={
-ach(40601)}})}}),
+ach(40601,{
+crit(110303,{achID=61565,awp=120000,id=6})})}})}}),
 d(23,{
 e(2593,{npcID=213937,g={
 ach(40604)}})})}}),
@@ -61127,7 +61155,8 @@ s(218987,221047,{b=1,f=7,lvl=68}),
 s(218984,221044,{b=1,f=20,lvl=68})}})}}),
 d(104,{difficulties=a[463],g={
 e(2568,{npcID=207207,g={
-ach(40637)}})}}),
+ach(40637,{
+crit(110304,{achID=61565,awp=120000,id=7})})}})}}),
 d(23,{awp=110100,g={
 e(2568,{npcID=207207,g={
 ach(40642)}})}})}}),
@@ -61170,7 +61199,8 @@ s(219036,221089,{b=1,f=33,lvl=68}),
 s(219041,221094,{b=1,f=5,lvl=68})}})}}),
 d(104,{difficulties=a[463],g={
 e(2582,{npcID=213119,g={
-ach(40644)}})}}),
+ach(40644,{
+crit(110305,{achID=61565,awp=120000,id=8})})}})}}),
 d(23,{
 e(2582,{npcID=213119,g={
 ach(40648),

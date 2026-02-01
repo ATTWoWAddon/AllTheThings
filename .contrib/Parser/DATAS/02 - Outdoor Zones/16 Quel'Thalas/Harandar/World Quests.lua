@@ -8,6 +8,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--	["sourceQuests"] = {
 			--	},
 			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				n(REWARDS, {
+					i(256986),	-- Circlet of Encroaching Shadow
+				}),
 				q(92086, {	-- A Taste of Accord
 					["coord"] = { 41.5, 24.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
@@ -18,6 +21,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(252234),	-- Savory Saptor Slice (QI!)
 						i(252246),	-- Sweet Beetle Wings (QI!)
 					},
+				}),
+				q(92582, {	-- Apply to Roots
+					["coord"] = { 41.4, 32.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)
+				}),
+				q(92085, {	-- Claw Enforcement
+					["coord"] = { 52.9, 52.3, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91555, {	-- Defenders of the Vale
+					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(91582, {	-- Pruning the Lattice
 					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },

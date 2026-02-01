@@ -12228,6 +12228,10 @@ q(44237,{c=a[309],coords={{43.2,63.2,747}},lvl=45,qgs={111786}})}}),
 ach(11217,{c=a[309],modelScale=2.25,npcID=98000,g={
 i(139420,{b=1,c=a[309],spellID=220184})}}),
 h(-56,{c=a[309],g={
+o(253150,{c=a[309],coords={{45.3,62.9,747}},type="AsGenericObjectContainer",g={
+o(253150,{c=a[309],type="AsSubGenericObject"}),
+o(253180,{c=a[309],type="AsSubGenericObject"}),
+i(140352,{b=1,c=a[309],f=55,lvl=40,spellID=223602,type="AsSubGenericObject"})}}),
 o(253157,{c=a[309],coords={{45.6,63.7,747}},type="AsGenericObjectContainer",g={
 o(253157,{c=a[309],type="AsSubGenericObject"}),
 o(253183,{c=a[309],type="AsSubGenericObject"}),

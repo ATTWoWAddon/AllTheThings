@@ -2307,6 +2307,7 @@ i(254735, 1258573);	-- Thunderhoof Celestial
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(252011, 1253924);	-- Brilliant Petalwing
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257193, 1261338);	-- Preyseeker's Nightmare
@@ -2328,7 +2329,6 @@ i(263222, 1268949);	-- Arcanovoid Construct
 i(246590, 1242904);	-- Ashes of Belo'ren
 i(257085, 1261155);	-- Augmented Stormray
 i(262707, 1269279);	-- Blooded Snapvine
-i(0, 1253924);	-- Brilliant Petalwing
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(257156, 1261323);	-- Cerulean Hawkstrider
 i(257156, 1261302);	-- Cobalt Dragonhawk

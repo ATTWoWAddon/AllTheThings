@@ -44,6 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(259896),	-- Bark of the Guardian Tree
 				i(248583),	-- Drum of Renewed Bonds
 				i(251791),	-- Holy Retributor's Order
+				i(251783),	-- Lost Idol of the Hash'ey
 				i(252957),	-- Tangle of Vibrant Vines
 				i(251782),	-- Withered Saptor's Paw
 			}),

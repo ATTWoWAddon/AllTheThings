@@ -4538,6 +4538,7 @@ i(250136, 4875);	-- Rootling Nester
 i(232856, 4633);	-- Scruff
 i(250147, 4886);	-- Silkcrawler
 i(258660, 4912);	-- Silvermoon Broom
+i(269028, 5012);	-- Sootpaw
 i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
@@ -4588,7 +4589,6 @@ i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
-i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(0, 4943);			-- Star the Lucky Dragon

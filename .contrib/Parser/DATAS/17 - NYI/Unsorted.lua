@@ -52,14 +52,12 @@ root(ROOTS.Unsorted, {
 			i(253543),	-- Clefthoof Hide Rug
 			i(254235),	-- Sin'dorei Artisan's Easel
 			i(254319),	-- Root-Woven Door
-			i(254773),	-- "Eversong Lantern" Painting
 			i(254878),	-- Root-Woven Window
 			i(255643),	-- Silvermoon Barrel
 			i(256042),	-- Silvermoon Bench
 			i(256043),	-- Silvermoon Fencepost
 			i(256172),	-- Silvermoon Fence
 			i(256356),	-- Sunsmoke Censer
-			i(256925),	-- Amani Spearhunter's Spit
 
 			-- QI
 			i(253210),	-- Soothsayer's Signet
@@ -101,18 +99,15 @@ root(ROOTS.Unsorted, {
 			i(263031),	-- Twisted Rope Coil
 			i(263034),	-- Magnificent Towering Bookcase
 			i(263211),	-- Gilded Eversong Cup
-			i(263315),	-- Bubbling Haranir Cauldron
 			i(264244),	-- Plush Haranir Leather Pillow
 			i(264251),	-- Depthdiver's Cooking Spit
 			i(264344),	-- Cosmic Void Orb
 			i(264352),	-- Elegant Elven Bathtub
 			i(264353),	-- Empty Elegant Elven Bathtub
 			i(264477),	-- Thunder Totem Mailbox
-			i(264656),	-- Void Elf Weapon Rack
 			i(265031),	-- Consortium Translocation Portal
 			i(265653),	-- Elegant Storage Table
 			i(265654),	-- Elegant Elven Washbasin
-			i(265792),	-- Fungarian Vine Fence
 			i(266130),	-- Gilded Silvermoon Gazebo
 			i(266259),	-- Altar of the Shul'ka
 			i(267645),	-- Dreamrift Vanquisher's Argent Trophy
@@ -928,10 +923,7 @@ root(ROOTS.Unsorted, {
 			i(243582),	-- Evercore
 
 			--Qi
-			i(243583),	-- Iridescent Carapace
-			i(243584),	-- Amethryl Petals
 			i(243588),	-- Limonite Ochre
-			i(243589),	-- Alndust
 
 			-- Enchanting
 			i(243599),	-- Eversinging Dust
@@ -1622,7 +1614,6 @@ root(ROOTS.Unsorted, {
 			i(248592),	-- B1P, Scorcher of Souls
 
 			-- QI
-			i(248139),	-- Aln'hara's Bloom
 			i(248208),	-- Bound Journal
 			i(248608),	-- Blackrock Bulletin Message
 			i(248610),	-- Blackrock Bulletin Message
@@ -1665,7 +1656,6 @@ root(ROOTS.Unsorted, {
 			i(249387),	-- Latent Shadowgraft
 			i(249401),	-- Vial of Gelatinous Ooze
 			i(249402),	-- Hellebora's Thorn
-			i(249403),	-- Toadshade Petals
 			i(249404),	-- Choking Vines
 			i(249405),	-- Luminescent Stalks
 			i(249406),	-- Gorebarb's Pincers
@@ -1905,7 +1895,6 @@ root(ROOTS.Unsorted, {
 			i(251691),	-- Embroidery Floss
 
 			-- Trinkets
-			i(251783),	-- Lost Idol of the Hash'ey \\ Fractured Amani Idol
 			i(251785),	-- Void-Reaper's Libram
 			i(251786),	-- Ever-Collapsing Void Fissure \\ Ever-collapsing Void Fissure
 			i(251787),	-- Sealed Chaos Urn
@@ -2703,7 +2692,6 @@ root(ROOTS.Unsorted, {
 			i(256980),	-- Deepvine Grips \\ [PH] WQ - Armor - Cloth HAND - A
 			i(256982),	-- Rootspeaker's Trunk \\ [PH] WQ - Armor - Mail CHEST - A
 			i(256984),	-- Deepvine Chestwrap \\ [PH] WQ - Armor - Cloth CHEST - A
-			i(256986),	-- Circlet of Encroaching Shadow \\ [PH] WQ - Accessory - FINGER - A
 			i(256988),	-- Lumenbloom Lantern \\ [PH] WQ - Weapon - Offhand INT - A
 			i(256989),	-- Bladed Rootwarden's Stave \\ [PH] WQ - Weapon - 2H Staff AGI - A
 			i(256991),	-- Vinewrapped Mallet \\ [PH] WQ - Weapon - 1H Mace STR - A
@@ -2909,7 +2897,6 @@ root(ROOTS.Unsorted, {
 			i(258134),	-- Pattern: Voidstrider Saddlebag
 
 			-- Misc
-			i(258138),	-- Potent Healing Potion
 			i(258146),	-- Rotten Carrion
 
 			-- Pet
@@ -3782,6 +3769,7 @@ root(ROOTS.Unsorted, {
 			-- Cache
 			i(263465),	-- Surplus Bag of Party Favors
 			i(263466),	-- Overflowing Abundant Satchel
+			i(263467),	-- Avid Learner's Supply Pack
 			i(263468),	-- Stormarion Spoils
 
 			-- Quest Rewards?
@@ -3804,9 +3792,6 @@ root(ROOTS.Unsorted, {
 
 			-- Pet
 			i(263492),	-- Blitzcreek
-
-			-- Mount
-			i(252011),	-- Brilliant Petalwing
 
 			-- Decor
 			i(253606),	-- "Brunch and a Book" Unframed Painting
@@ -4017,7 +4002,6 @@ root(ROOTS.Unsorted, {
 			i(264694),	-- Ultradon Cuirass
 			i(264701),	-- Cosmic Bell
 			-- Toy
-			i(264695),	-- Interdimensional Parcel Signal
 			i(264805),	-- Brann-O-Vision 3000
 
 			-- Cosmetic
@@ -4165,7 +4149,6 @@ root(ROOTS.Unsorted, {
 			-- Decor
 			i(262601),	-- Wild Hanging Scroll
 			i(262614),	-- Harandar Runestone
-			i(262906),	-- Harandar Anvil
 			i(263019),	-- Haranir Pennant
 			i(263020),	-- Ward of the Shul'ka
 			i(263036),	-- Hanging Dawnflower
@@ -4174,7 +4157,6 @@ root(ROOTS.Unsorted, {
 			i(263041),	-- Replica Root of the World
 			i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 			i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
-			i(263196),	-- Harandar Glowvine Lantern \\ Harandar Glow-vine Lantern
 			i(263203),	-- Rack of Silvermoon Arms \\ [DNT] Weapon Rack 01
 			i(263205),	-- Crimson Silvermoon Runner \\ [DNT] [AUTOGEN] Decor 14971 Item
 			i(263206),	-- Plum Eversong Rug \\ [DNT] [AUTOGEN] Decor 14972 Item
@@ -4207,7 +4189,6 @@ root(ROOTS.Unsorted, {
 			i(264178),	-- Harandar Charcuterie Board
 			i(264243),	-- Firm Haranir Pillow
 			i(264245),	-- Warm Haranir Blanket
-			i(264262),	-- Haranir Whistling Arrow
 			i(264264),	-- Gilded Vigil Post \\ [DNT] [AUTOGEN] Decor 15499 Item
 			i(264265),	-- Sanctified Flame Lantern \\ [DNT] [AUTOGEN] Decor 15500 Item
 			i(264267),	-- Rutaani Birdfeeder
@@ -4228,7 +4209,6 @@ root(ROOTS.Unsorted, {
 			i(264527),	-- Vile Hexxer's Mantle
 			i(264528),	-- Goop-Coated Leggings
 			i(264529),	-- Cover of the Furbolg Elder
-			i(264530),	-- Grimfur Mittens
 			i(264531),	-- Shadowthread Slippers
 			i(264532),	-- Robes of Flowing Truths
 			i(264533),	-- Queen's Tentacle Sash
@@ -4260,7 +4240,6 @@ root(ROOTS.Unsorted, {
 			i(264563),	-- Eruundi's Wristguards
 			i(264564),	-- Crab Wrangling Harness
 			i(264565),	-- Voidscale Shoulderpads
-			i(264566),	-- Lashtongue's Leaffroggers
 			i(264567),	-- Rockscale Hood
 			i(264568),	-- Serrated Scale Gauntlets
 			i(264571),	-- Ironleaf Wristguards
@@ -4311,7 +4290,6 @@ root(ROOTS.Unsorted, {
 			i(264630),	-- Colossal Voidsunderer
 			i(264631),	-- Harak's Skullcutter
 			i(264632),	-- Darkblossom's Crook
-			i(264633),	-- Treetop Battlestave
 			i(264634),	-- Spire of Flowing Void
 			i(264635),	-- Stumpy's Stump
 			i(264637),	-- Cosmic Hunter's Glaive
@@ -4485,7 +4463,6 @@ root(ROOTS.Unsorted, {
 			i(266213),	-- Incense Materials
 			i(266314),	-- Novice Combatant's Necklace
 			i(266317),	-- Novice Combatant's Ring
-			i(244656),	-- Silvermoon Painter's Cushion
 			i(245290),	-- Long Silvermoon Table
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
@@ -4606,6 +4583,7 @@ root(ROOTS.Unsorted, {
 			i(244783),	-- Majestic Lightwood Table
 			i(245282),	-- Silvermoon Library Bookcase
 			i(245992),	-- Ornate Silvermoon Candelabra
+			i(246416),	-- Waterlogged Haranir Pigment Bowl
 			i(246460),	-- Ambient Aethercharged Crystal
 			i(248965),	-- Resplendent Highborne Statue
 			i(250797),	-- Spring Blossom Ceiling Light
@@ -4613,7 +4591,6 @@ root(ROOTS.Unsorted, {
 			i(250868),	-- Crimson Crystal Column
 			i(250869),	-- Crimson Crystal Core
 			i(250870),	-- Crimson Crystal Fragment
-			i(251909),	-- Eversong Feast Platter
 			i(251911),	-- Eversong Dessert Platter
 			i(251912),	-- Goldenmist Grapes
 
@@ -4647,7 +4624,6 @@ root(ROOTS.Unsorted, {
 			i(255648),	-- Zul'Aman Ancestral Fountain
 			i(256923),	-- Amani Crafter's Tool Rack
 			i(256928),	-- Banner of the Amani Tribe
-			i(257367),	-- Silvermoon Energy Focus
 			i(257418),	-- Ornate Sin'dorei Sconce
 			i(258535),	-- Simple Bone-Tied Charm
 			i(258536),	-- Windmark Tribal Charm
@@ -4677,7 +4653,6 @@ root(ROOTS.Unsorted, {
 			i(264255),	-- Amani Trophy Frame
 			i(264257),	-- Zul'Aman Armament Rest
 			i(264334),	-- Amani War Drum
-			i(264335),	-- Colossal Amani Stone Visage
 			i(264479),	-- Skyweave Amani Tapestry
 			i(264480),	-- Greenvine Amani Tapestry
 			i(264481),	-- Earthhide Amani Tapestry
