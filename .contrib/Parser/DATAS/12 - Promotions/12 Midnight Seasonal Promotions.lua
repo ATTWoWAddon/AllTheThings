@@ -88,7 +88,7 @@ root(ROOTS.Promotions, {
 				["groups"] = {
 					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-				--	cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
 					cnONLY(i(253402)),	-- Scorching Polearm
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 				},
