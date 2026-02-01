@@ -2309,10 +2309,12 @@ i(254735, 1258573);	-- Thunderhoof Celestial
 ------------------
 i(252011, 1253924);	-- Brilliant Petalwing
 i(252014, 1253929);	-- Cerulean Sporeglider
+i(262502, 1268926);	-- Elven Arcane Guardian
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
+i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
 i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
@@ -2342,7 +2344,6 @@ i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
-i(262502, 1268926);	-- Elven Arcane Guardian
 i(262706, 1269277);	-- Ferocious Snapvine
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
@@ -2362,7 +2363,6 @@ i(246735, 1243597);	-- Rootstalker Grimlynx
 i(252017, 1253938);	-- Ruddy Sporeglider
 i(260635, 1266700);	-- Sanguine Harrower
 i(262708, 1269280);	-- Savage Snapvine
-i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(0, 1263635);	-- Spectral Hawkstrider
 i(0, 1238827);	-- Swift Spectral Dragonhawk
 i(260887, 1266980);	-- Tenebrous Harrower

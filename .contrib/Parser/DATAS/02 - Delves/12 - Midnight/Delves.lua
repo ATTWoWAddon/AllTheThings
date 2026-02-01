@@ -214,7 +214,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(262963, {	-- Pious Memorial
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
-						--["questID"] = ???,
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
 						["cost"] = { { "c", UNDERCOIN, 250 } },
@@ -660,9 +659,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
-		--n(BOUNTIFUL, sharedData({
-		--	["isDaily"] = true,
-		--},{
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		},{
 			q(91188),	-- Atal'Aman
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
@@ -671,7 +670,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91190),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
-		--})),
+		})),
 
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		--q(93275, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st (could be wrong and it is rep lockout for Unity Against the Void?)
@@ -686,5 +685,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
 		--	["isWeekly"] = true,
 		--}),
+		
+		--automated
+		--q(93869),	-- Pious Memorial (itemID 262963)
 	})),
 }));

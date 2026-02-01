@@ -270,20 +270,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(242398, {	-- Naleidea Rivergleam
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
+					i(253342, {	-- Beacon of Hope
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						--["questID"] = ???,
+					}),
 					i(263178, {	-- Delver's Starter Kit
 						--["cost"] = { { "c", UNDERCOIN, 0 } },
 					}),
 					i(263188, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
-						--["questID"] = ???,
 					}),
 					i(263191, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
-						--["questID"] = ???,
-					}),
-					i(253342, {	-- Beacon of Hope
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
-						--["questID"] = ???,
 					}),
 				},
 			}),
@@ -291,14 +289,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					n(DECOR, {
-						i(263996, {	-- Twilight Tabernacle (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
-							--Renown 1
-						}),
-						i(263994, {	-- Fungal Chest (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
-							--Renown 2
-						}),
 						i(264175, {	-- Amani Strongbox (DECOR!)
 							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 3
@@ -307,9 +297,25 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 4
 						}),
+						i(264007, {	-- Corewarden's Spoils (DECOR!)
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+							--Renown 8
+						}),
 						i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
 							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 							--Renown 10
+						}),
+						i(263994, {	-- Fungal Chest (DECOR!)
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+							--Renown 2
+						}),
+						i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+							--Renown 7
+						}),
+						i(263996, {	-- Twilight Tabernacle (DECOR!)
+							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+							--Renown 1
 						}),
 					}),
 					filter(MISC, {
@@ -331,6 +337,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						}),
 					}),
 					filter(TOYS, {
+						i(265100, {	-- Corewarden's Hearthstone (TOY!)
+							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+							-- Renown 10
+						}),
 						i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
 							["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 							-- Renown 7
@@ -351,6 +361,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--automated stuff
 			--q(93880),	-- Delver's Starter Kit (itemID 263178)
 			--q(93881),	-- Delver's Cosmetic Surprise Bag (itemID 263179)
+			--q(93882),	-- Restored Coffer Key (itemID 263188)
+			--q(93883),	-- Restored Coffer Key (itemID 263191)
+			--q(93859),	-- Sin'dorei Gravestone (itemID 262951)
 		}),
 	})),
 }));

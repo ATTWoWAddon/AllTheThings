@@ -3381,7 +3381,6 @@ root(ROOTS.Unsorted, {
 			i(262390),	-- Sporbie
 			i(262391),	-- Ominous Domanus \\ Ominous Dominus
 			i(262392),	-- Nibblesworth
-			i(262393),	-- Kreepah'zoyd
 			i(262394),	-- Ziorg'pharon
 			i(262395),	-- Hexed Bunny
 			i(262396),	-- Lost Star
@@ -3394,13 +3393,9 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(260948),	-- Enigmatic Voidclarion \\ Enigmatic Voidcaller
-
-			-- Toy
-			i(262431),	-- Bouncy Mushroom \\ Pocket Mushroom Jump Pad
 			-- Mount
 			i(262496),	-- Delver's Arcane Golem
 			i(262500),	-- Silvermoon's Arcane Defender
-			i(262502),	-- Elven Arcane Guardian
 
 			-- Misc Mount/Pet?
 			i(262510),	-- Hawkstrider Egg
@@ -3545,18 +3540,12 @@ root(ROOTS.Unsorted, {
 			i(262914),	-- Spectral Hawkstrider
 
 			-- Delve
-			i(262951),	-- Sin'dorei Gravestone
-			i(262963),	-- Pious Memorial
 			i(262964),	-- Death's Hope
 			i(262965),	-- Delver's Delight
 			i(262966),	-- Budget Friendly
 
 			-- Cosmetic
 			i(262970),	-- Ominous Tome \\ Ominus Tome
-			i(262973),	-- Reliquary Expedition Notes \\ Relequary Expedition Notes
-			i(262984),	-- Reliquary Expedition Bag \\ Relequary Expedition Bag
-			i(262989),	-- Focusight Relic Mace
-			i(262990),	-- Sin'dorei Arcane Manuscript
 
 			-- Misc
 			i(262994),	-- Phial of Ritual Fluid
@@ -3566,12 +3555,6 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(263009),	-- Valeera's Wicked Knife
-
-			-- DElve
-			i(263178),	-- Delver's Starter Kit
-			i(263179),	-- Delver's Cosmetic Surprise Bag
-			i(263188),	-- Restored Coffer Key
-			i(263191),	-- Restored Coffer Key
 			-- Toy
 			i(263198),	-- Valdekar's Special
 
@@ -3892,7 +3875,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(264587),	-- Ani's Trinket Bag
-			i(264652),	-- Delver's Pouch of Voidlight Marl
 			i(246383),	-- Sun-Basted Ceviche
 			-- Pet
 			i(264654),	-- Emberwing Hatchling
@@ -3947,16 +3929,12 @@ root(ROOTS.Unsorted, {
 
 			-- Cosmetic
 			i(264847),	-- Dozing Vinepouch
-			i(264849),	-- Dewy Vinepouch
 			i(264851),	-- Voidtouched Twilight Spaulder
 			i(264852),	-- Bladed Twilight Spaulder
-			i(264853),	-- Gilded Twilight Spaulder
 			i(264854),	-- Vilebranch Soulseer
 			i(264855),	-- Vilebranch Deathseer
-			i(264856),	-- Vilebranch Lifeseer
 			i(264857),	-- Twilight Fanatic's Cowl
 			i(264859),	-- Twilight Follower's Cowl
-			i(264860),	-- Twilight Magus's Cowl
 			i(264883),	-- Ensemble: Courtier's Crimson Vestments \\ Ensemble: Courtier's Crimson Garments
 			-- Trinket
 			i(264878),	-- Astalor's Anguish Agitator
@@ -4119,8 +4097,6 @@ root(ROOTS.Unsorted, {
 			i(264004),	-- Midnight Scribe's Shop Sign
 			i(264005),	-- Midnight Jewelcrafter's Shop Sign
 			i(264006),	-- Midnight Leatherworker's Shop Sign
-			i(264007),	-- Corewarden's Spoils
-			i(264008),	-- Root-Wrapped Reliquary
 			i(264172),	-- Midnight Miner's Shop Sign
 			i(264173),	-- Midnight Skinner's Shop Sign
 			i(264174),	-- Midnight Tailor's Shop Sign
@@ -4267,8 +4243,6 @@ root(ROOTS.Unsorted, {
 			i(265097),	-- Conjured Cinnamon Roll
 			i(265098),	-- Conjured Croissant
 			i(265099),	-- Conjured Coffee
-			-- Toy
-			i(265100),	-- Corewarden's Hearthstone
 
 			-- Wep
 			i(265336),	-- Faunatender's Trust \\ Farstrider's Trust
@@ -4638,9 +4612,6 @@ root(ROOTS.Unsorted, {
 			i(267447),	-- Farstrider's Embroidered Cover
 			i(267448),	-- Blood-Tempered Cape
 			i(267449),	-- Spellbreaker's Shroud
-
-			-- Toy
-			i(267291),	-- Coffer Key Glue
 
 			-- PvP?
 			i(267469),	-- Novice Combatant's Insignia of Alacrity
