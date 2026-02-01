@@ -27,6 +27,7 @@ app:CreateWindow("Prime", {
 	ParseCommandArgsAndParams = true,
 	OnCommand = function(self, args, params)
 		if args then
+			--[[
 			print("args: ");
 			for key,value in ipairs(args) do
 				print(" ", key, value);
@@ -35,6 +36,7 @@ app:CreateWindow("Prime", {
 			for key,value in pairs(params) do
 				print(" ", key, value);
 			end
+			]]--
 
 			-- Eventually will migrate known Chat Commands to their respective creators
 			local cmd = args[1];
@@ -42,7 +44,7 @@ app:CreateWindow("Prime", {
 			if commandFunc then
 				local help = args[2] == "help"
 				if help then return app.ChatCommands.PrintHelp(cmd) end
-				return commandFunc(args, params)
+				return commandFunc(args, params) or true
 			elseif cmd == "help" then
 				return app.ChatCommands.PrintHelp(args[2])
 			end
