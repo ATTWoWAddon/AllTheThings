@@ -78,6 +78,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(264669),	-- Blessing of Potency
 			i(264670),	-- Blessing of Zeal
 			i(260913),	-- Crimson Blessing
+			i(260924),	-- Sentinel's Blessing
 			i(262389),	-- Veiled Blessing // alpha
 			--
 			n(BOUNTIFUL, bubbleDownFiltered({
@@ -144,8 +145,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						}),
 						filter(TRINKET_F, {
 							--TODO: They probably gonna exist outside of season but idk?
-							i(251787),	-- Sealed Chaos Urn
+							i(251792),	-- Glorious Crusader's Keepsake
 							i(251791),	-- Holy Retributor's Order (also was as wq reward)
+							i(251787),	-- Sealed Chaos Urn
 						}),
 					}),
 					n(WEAPONS, {
@@ -157,6 +159,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(249664),	-- Gnarled Thornmace
 						i(249671),	-- Gnarlroot Spinecleaver
 						i(249669),	-- Organ Piercer's Briarspear
+						i(251885),	-- Radiant Foil
 						i(249661),	-- Root Sculptor's Verdaxe
 						i(259462),	-- Thorneedle
 						i(249677),	-- Twinthorn Wildglaive
@@ -208,6 +211,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					-- Alpha items (NYI?)
 					--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
 					--i(254675),	-- Ancient Curio (QS!)
+					--i(260910),	-- Boon of Vitality (Rare) // alpha
 					-- Boons (Renown 1)
 					i(260884),	-- Boon of Abstinence (Rare)
 					i(267241),	-- Boon of Abstinence (Epic)
@@ -221,7 +225,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(267647),	-- Boon of Vigor (Uncommon)
 					i(267649),	-- Boon of Vigor (Rare)
 					i(267648),	-- Boon of Vigor (Epic)
-					i(260910),	-- Boon of Vitality (Rare) // alpha
 				},
 			}),
 			--o(584515, {	-- Bountiful Heavy Trunk
@@ -344,6 +347,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(DELVES_MID_S1, {
 			-- Seasonal Delver's Journey Rewards
 			--q(92601),	-- pop after looting Cracked Keystone
+			--q(93742),	-- pop in first delve (Atal'Aman) after ability to loot catalyst charges was obtained (achievementID 61519 - Midnight Season 1: Catalyst Unbound)
 			--automated stuff
 			--q(93880),	-- Delver's Starter Kit (itemID 263178)
 			--q(93881),	-- Delver's Cosmetic Surprise Bag (itemID 263179)

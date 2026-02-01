@@ -1404,22 +1404,6 @@ root(ROOTS.Unsorted, {
 			i(245827),	-- Thalassian Missive of Deftness
 			i(245828),	-- Thalassian Treatise on Skinning
 			i(245829),	-- Darkmoon Deck: Hunt
-			i(245830),	-- Ace of Hunt
-			i(245831),	-- Two of Hunt
-			i(245832),	-- Three of Hunt
-			i(245833),	-- Four of Hunt
-			i(245834),	-- Five of Hunt
-			i(245835),	-- Six of Hunt
-			i(245836),	-- Seven of Hunt
-			i(245837),	-- Eight of Hunt
-			i(245838),	-- Ace of Void
-			i(245839),	-- Two of Void
-			i(245840),	-- Three of Void
-			i(245841),	-- Four of Void
-			i(245842),	-- Five of Void
-			i(245843),	-- Six of Void
-			i(245844),	-- Seven of Void
-			i(245845),	-- Eight of Void
 			i(245846),	-- Darkmoon Deck: Rot
 			i(245847),	-- Ace of Rot
 			i(245848),	-- Two of Rot
@@ -1430,14 +1414,6 @@ root(ROOTS.Unsorted, {
 			i(245853),	-- Seven of Rot
 			i(245854),	-- Eight of Rot
 			i(245855),	-- Darkmoon Deck: Blood
-			i(245856),	-- Ace of Blood
-			i(245857),	-- Two of Blood
-			i(245858),	-- Three of Blood
-			i(245859),	-- Four of Blood
-			i(245860),	-- Five of Blood
-			i(245861),	-- Six of Blood
-			i(245862),	-- Seven of Blood
-			i(245863),	-- Eight of Blood
 			i(245864),	-- Sanguithorn Pigment
 			i(245865),	-- Sanguithorn Pigment
 			i(245866),	-- Mana Lily Pigment
@@ -1862,7 +1838,6 @@ root(ROOTS.Unsorted, {
 			-- Prof? Shadolwands?
 			i(251283),	-- Tormented Tantalum
 			-- Prof
-			i(251285),	-- Petrified Root
 			i(251286),	-- Bundle of Petrified Roots
 			i(251287),	-- Generous Bundle of Petrified Roots
 			i(251324),	-- Basket of Eversong Herbs
@@ -1901,7 +1876,6 @@ root(ROOTS.Unsorted, {
 			i(251788),	-- Gift of Light
 			i(251789),	-- Consecrated Chalice
 			i(251790),	-- Desecrated Chalice
-			i(251792),	-- Glorious Crusader's Keepsake
 			i(251793),	-- Endosymbiotic Mycelium
 			i(251794),	-- Gris-gris of Confidence
 			i(251882),	-- Fragmented Light Shard
@@ -1912,7 +1886,6 @@ root(ROOTS.Unsorted, {
 			i(252421),	-- Rotting Globule
 			-- Wep
 			i(251884),	-- Abyss Sabre \\ Umbral Sabre
-			i(251885),	-- Radiant Foil
 			-- QI
 			i(251899),	-- Anasterian's Book of Law
 			i(251904),	-- Crown of the High King
@@ -1924,7 +1897,6 @@ root(ROOTS.Unsorted, {
 			i(251920),	-- Inscribe: Rot
 			i(251921),	-- Inscribe: Hunt
 			i(251922),	-- Inscribe: Void
-			i(251923),	-- Thalassian Essence of the Faire
 			i(251934),	-- Blessed Signet
 			i(251935),	-- Lightgrasp Worldroot \\ Light's Righteous Arm
 			i(251936),	-- Nullified Quarterstaff
@@ -2685,7 +2657,6 @@ root(ROOTS.Unsorted, {
 			i(256966),	-- Rootspeaker's Leafwraps \\ [PH] WQ - Armor - Mail WRIST - A
 			i(256968),	-- Deepvine Bracers \\ [PH] WQ - Armor - Cloth WRIST - A
 			i(256971),	-- Radiant Phoenix Band \\ [PH] WQ - Accessory - FINGER - D
-			i(256972),	-- Evertwisting Swiftvine \\ [PH] WQ - Accessory - FINGER - C
 			i(256974),	-- Rootspeaker's Footwraps \\ [PH] WQ - Armor - Mail FEET - A
 			i(256976),	-- Deepvine Ankleguards \\ [PH] WQ - Armor - Cloth FEET - A
 			i(256978),	-- Rootspeaker's Branches \\ [PH] WQ - Armor - Mail HAND - A
@@ -2896,9 +2867,6 @@ root(ROOTS.Unsorted, {
 			i(258133),	-- Pattern: Blood Elf Pillow
 			i(258134),	-- Pattern: Voidstrider Saddlebag
 
-			-- Misc
-			i(258146),	-- Rotten Carrion
-
 			-- Pet
 			i(258189),	-- Do, child of Filo \\ Do, child of Fi'lo
 
@@ -3069,8 +3037,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(258901),	-- Waterlogged Reliquary Paintbrush
 
-			-- QI
-			i(259029),	-- Shadowguard Intelligence
 			-- Cosmetic
 			i(259027),	-- Ensemble: Blood Knight's Elegant Regalia \\ Ensemble: Bloodknight's Elegant Regalia
 			i(259028),	-- Ensemble: Haven's Elegant Regalia
@@ -3416,8 +3382,6 @@ root(ROOTS.Unsorted, {
 			i(260907),	-- Lost Winter's Hunger
 			i(260908),	-- Lost Frostwolf's Stand
 
-			-- Delve
-			i(260924),	-- Sentinel's Blessing \\ Sentinel's Halo
 			-- Mount
 			i(260916),	-- Nether-Warped Drake
 
@@ -3593,11 +3557,6 @@ root(ROOTS.Unsorted, {
 
 			-- Mount
 			i(262914),	-- Spectral Hawkstrider
-
-			-- Prey
-			i(262928),	-- Preyseeker's Adventurer Sack
-			i(262936),	-- Preyseeker's Veteran Sack
-			i(262938),	-- Preyseeker's Champion Sack
 
 			-- Delve
 			i(262951),	-- Sin'dorei Gravestone
@@ -4001,12 +3960,9 @@ root(ROOTS.Unsorted, {
 			-- trinet
 			i(264694),	-- Ultradon Cuirass
 			i(264701),	-- Cosmic Bell
-			-- Toy
-			i(264805),	-- Brann-O-Vision 3000
 
 			-- Cosmetic
 			i(264847),	-- Dozing Vinepouch
-			i(264848),	-- Sunlit Vinepouch
 			i(264849),	-- Dewy Vinepouch
 			i(264851),	-- Voidtouched Twilight Spaulder
 			i(264852),	-- Bladed Twilight Spaulder
@@ -4116,7 +4072,6 @@ root(ROOTS.Unsorted, {
 			i(249559),	-- Reverent Sin'dorei Statue \\ Statue of Reverent Grace \\ [DNT] BE Statue 01
 			i(249768),	-- Fungarian Barrel
 			i(250772),	-- Crimson Lightwood Privacy Screen \\ Crimson Lightwood Screen \\ [DNT] Divider Screen 01
-			i(251967),	-- Fungarian Banner
 			i(251980),	-- Fungarian Sack
 			i(253443),	-- Replica Sky's Hope
 			i(256040),	-- Silvermoon Gemmed Chair
@@ -4168,7 +4123,6 @@ root(ROOTS.Unsorted, {
 			i(263228),	-- Grand Lightwood Table \\ [DNT] [AUTOGEN] Decor 15059 Item
 			i(263229),	-- Ornate Lightwood Table \\ [DNT] [AUTOGEN] Decor 15060 Item
 			i(263232),	-- Floating Spire Shelf \\ [DNT] [AUTOGEN] Decor 15063 Item
-			i(263233),	-- Sin'dorei Spinning Library
 			i(263234),	-- Turning Silvermoon Archives \\ [DNT] [AUTOGEN] Decor 15065 Item
 			i(263318),	-- Simple Amani Basket
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
@@ -4204,7 +4158,6 @@ root(ROOTS.Unsorted, {
 			i(264520),	-- Warden's Leycrook
 			i(264522),	-- Striderplume Armbands
 			i(264523),	-- Hydrafang Blade
-			i(264524),	-- Lightblighted Verdant Vest
 			i(264525),	-- Wrapped Antenna Cuffs
 			i(264527),	-- Vile Hexxer's Mantle
 			i(264528),	-- Goop-Coated Leggings
@@ -4301,7 +4254,6 @@ root(ROOTS.Unsorted, {
 			i(264644),	-- Crawler's Mindscythe
 			i(264646),	-- Specimen Sinew Longbow
 			i(264647),	-- Cre'van's Punisher
-			i(264648),	-- Verminscale Gavel
 			i(264649),	-- Mindrot Claw-Hammer
 			i(264650),	-- Truthspreader's Truth Spreader
 			i(264651),	-- Resonating Traumatizer
@@ -4467,17 +4419,10 @@ root(ROOTS.Unsorted, {
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
 			i(260603),	-- Frail and Flexible Wing
-			i(260605),	-- Shattered Spear Tip
-			i(260617),	-- Large Broken Teeth
-			i(260636),	-- Algae Covered Stone
 			i(260640),	-- Crooked Bird Talons
-			i(260644),	-- Lightbloom Bark
-			i(260654),	-- Abrasive Sand
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
-			i(260673),	-- Partially Digested Bracers
 			i(260674),	-- Fine Arcane Dust
-			i(260675),	-- Luminous Seeds
 			i(260679),	-- Fleshless Bone
 			i(260680),	-- Nesting Materials
 			i(260682),	-- Rusty Tusk Ring
@@ -4660,9 +4605,6 @@ root(ROOTS.Unsorted, {
 			i(264715),	-- Zul'Aman Flame Cradle
 			-- Decor Prof
 			i(263998),	-- Midnight Blacksmith's Shop Sign
-
-			-- Misc
-			i(266002),	-- Broken Trap Mechanism
 
 			-- Boon
 			i(267235),	-- Boon of Vitality

@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(91197, {	-- Collecting Remains
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245976 },	-- Deminos Darktrance
-				["coord"] = { 37.9, 83.2, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 38.8, 81.5, SLAYERS_RISE_OUTDOOR },
 				["isDaily"] = true,
 				["groups"] = {
 					o(554772, {	--
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(89354, {	-- Preparing for Battle
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245976 },	-- Deminos Darktrance
-				["coord"] = { 37.9, 83.2, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 38.8, 81.5, SLAYERS_RISE_OUTDOOR },
 				["isWeekly"] = true,
 				["groups"] = {
 					o(554772, {	--
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93865, {	-- Make Your Name
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245571 },	-- Sador
-				["coord"] = { 35.3, 83.2, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 36.0, 81.3, SLAYERS_RISE_OUTDOOR },
 				["isDaily"] = true,
 				["groups"] = {
 					i(262967),	-- Domanaar Dueling Flag (QI!)

@@ -89,10 +89,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(242033, {	-- Tiny Vermin
 				["coord"] = { 47.7, 34.4, MAP.MIDNIGHT.ZULAMAN },
-				["questID"] = 89580,
+				["questID"] = 89580,	-- TODO: "Waverly"
 				["groups"] = {
 					i(264597),	-- Leechtooth Band
+					i(264648),	-- Verminscale Gavel
 				},
+			}),
+		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.ZULAMAN, {
+			n(RARES, {
+				q(94704, {	-- Weekly reputation: Tiny Vermin
+					["name"] = "Tiny Vermin weekly reputation obtained.",
+				}),
 			}),
 		}),
 	}),

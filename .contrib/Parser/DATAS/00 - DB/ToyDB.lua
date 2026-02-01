@@ -1535,6 +1535,7 @@ i(258129);	-- Jade Monument
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(264805);	-- Brann-O-Vision 3000
 i(264413);	-- Dominating Victory
 i(264695);	-- Interdimensional Parcel Signal
 -- #if AFTER 12.0.1
@@ -1552,7 +1553,6 @@ i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
 i(243146);	-- [DNT] Ren'dorei Struggle
 i(250974);	-- Akil'zon's Updraft
 i(263933);	-- Astalor's Summons
-i(264805);	-- Brann-O-Vision 3000
 i(251633);	-- Bursting Bounty Bundle
 i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone

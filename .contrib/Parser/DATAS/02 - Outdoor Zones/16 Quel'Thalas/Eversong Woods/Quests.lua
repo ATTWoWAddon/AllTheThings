@@ -1121,8 +1121,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
-				-- During questing
-				q(86645),	-- Hidden Quest [DNT] (it has it's own name), when fly near "Not What I Ordered" quest chain (39.0, 61.6 / 38.8, 59.8)
 			}),
 		}),
 	}),

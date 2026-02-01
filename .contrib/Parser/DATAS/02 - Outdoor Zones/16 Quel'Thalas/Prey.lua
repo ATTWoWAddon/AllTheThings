@@ -125,8 +125,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			ach(62138),	-- You're Trapped In Here With Me
 		}),
 		n(QUESTS, {
-			q(92926, {	-- Astalor's Initiative
+			q(95114, {	-- Prey: A Crimson Summons
 				--["sourceQuests"] = { ??? },	-- ??
+				["provider"] = { "n", 259865 },	-- Image of Astalor Bloodsworn
+				["coord"] = { 47.6, 71.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isBreadcrumb"] = true,
+			}),
+			q(92926, {	-- Astalor's Initiative
+				["sourceQuests"] = { 95114 },	-- Prey: A Crimson Summons
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
@@ -166,9 +172,45 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			["coord"] = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 		}, {
+			--q(XX),	-- Prey: Crusader Luxia Maxwell (Normal)
+			--q(XX),	-- Prey: Crusader Luxia Maxwell (Hard)
+			q(91257),	-- Prey: Crusader Luxia Maxwell (Nightmare)
+			--q(XX),	-- Prey: Deliah Gloomsong (Normal)
+			q(91220),	-- Prey: Deliah Gloomsong (Hard)
+			--q(XX),	-- Prey: Deliah Gloomsong (Nightmare)
+			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Normal)
+			q(91254),	-- Prey: Grothoz, the Burning Shadow (Hard)
+			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Nightmare)
+			--q(XX),	-- Prey: Imperator Enigmalia (Normal)
+			--q(XX),	-- Prey: Imperator Enigmalia (Hard)
+			q(91261),	-- Prey: Imperator Enigmalia (Nightmare)
+			--q(XX),	-- Prey: L-N-0R the Recycler (Normal)
+			q(91216),	-- Prey: L-N-0R the Recycler (Hard)
+			--q(XX),	-- Prey: L-N-0R the Recycler (Nightmare)
+			--q(XX),	-- Prey: Lieutenant Blazewing (Normal)
+			--q(XX),	-- Prey: Lieutenant Blazewing (Hard)
+			q(91237),	-- Prey: Lieutenant Blazewing (Nightmare)
+			q(91099),	-- Prey: Mordril Shadowfell (Normal)
+			--q(XX),	-- Prey: Mordril Shadowfell (Hard)
+			--q(XX),	-- Prey: Mordril Shadowfell (Nightmare)
 			q(91096),	-- Prey: Magistrix Emberlash (Normal)
+			--q(XX),	-- Prey: Magistrix Emberlash (Hard)
+			--q(XX),	-- Prey: Magistrix Emberlash (Nightmare)
+			q(91113),	-- Prey: Praetor Singularis (Normal)
 			q(91244),	-- Prey: Praetor Singularis (Hard)
+			--q(XX),	-- Prey: Praetor Singularis (Nightmare)
+			--q(XX),	-- Prey: Ranger Swiftglade (Normal)
+			--q(XX),	-- Prey: Ranger Swiftglade (Hard)
+			q(91235),	-- Prey: Ranger Swiftglade (Nightmare)
+			--q(XX),	-- Prey: Senior Tinker Ozwold (Normal)
+			--q(XX),	-- Prey: Senior Tinker Ozwold (Hard)
 			q(91215),	-- Prey: Senior Tinker Ozwold (Nightmare)
+			q(91105),	-- Prey: The Talon of Janali (Normal)
+			--q(XX),	-- Prey: The Talon of Janali (Hard)
+			--q(XX),	-- Prey: The Talon of Janali (Nightmare)
+			--q(XX),	-- Prey: Thornspeaker Edgath (Normal)
+			q(91252),	-- Prey: Thornspeaker Edgath (Hard)
+			--q(XX),	-- Prey: Thornspeaker Edgath (Nightmare)
 		})),
 		n(REWARDS, {
 			--Currency
@@ -254,6 +296,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 				i(259959),	-- Preyseeker's Warglaive
 			}),
 			filter(MISC, {
+				i(262928),	-- Preyseeker's Adventurer Sack // alpha
+				i(262938),	-- Preyseeker's Champion Sack
+				i(262936),	-- Preyseeker's Veteran Sack // alpha
+				i(255825),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
 			}),
@@ -264,8 +310,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			q(91601, {	-- Prey: Apex Predator
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
+			q(91604, {	-- Prey: Apex Predator (TODO: fired after filling up progress during hard mode in Zul'Aman)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.ZULAMAN },
+			}),
 			q(91207, {	-- Prey: Apex Predator (TODO: probably could be wrongly flagged after fill up bar during hard mode)
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91590, {	-- Prey: Concealed Threat (TODO: (un)flagged after picked up Deliah Gloomsong (Hard))
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91590, {	-- Prey: Concealed Threat
 				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -276,8 +328,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			q(91592, {	-- Prey: Concealed Threat (TODO: probably could be wrongly flagged after fill up bar during nightmare mode)
 				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
+			q(91458, {	-- Prey: Endurance Hunter (TODO: fired after filling up progress during normal mode)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
 			q(91594, {	-- Prey: Endurance Hunter
-				["coord"] = { 59.6, 71.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["coord"] = { 60.1, 71.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91595, {	-- Prey: Endurance Hunter (TODO: rng marked completed while was gathering ore/herb)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91595, {	-- Prey: Endurance Hunter (TODO: (un)flagged after picked up L-N-0R the Recycler (Hard))
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 		}),
 	}),
@@ -287,6 +348,24 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(PREY, {
 			n(QUESTS, {
 				--q(93168),	-- after completion questID 91096 (Prey: Magistrix Emberlash (Normal)), probably end of "tutorial" or first per week?
+				--whatever that rng things are happen
+				--q(95413),	-- "Community Engagement" after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
+				--q(95485),	-- same as above but missing quest name
+				--q(95535),	-- completed/unflagged/completed/unflagged/completed (yes, 3 times), after Lost Guardian was killied during Prey in zone (hard mode)
+				--q(95536),	-- unflagged after looting Minor Coalesced Anguish
+				--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
+				--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
+				--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+
+				--related to prey bosses kill? counter for something? weekly?
+				--q(95000),	-- after Praetor Singularis (Normal) was killed / 1st per week
+				--q(95001),	-- after Deliah Gloomsong (Hard) was killed / 2nd per week
+				--q(95002),	-- after L-N-0R the Recycler (Hard) was killed / 3rd per week
+
+				--achievements? criteria?
+				--q(93168),	-- after Praetor Singularis (Normal) was killed
+				--q(93169),	-- after Deliah Gloomsong (Hard) was killed (Prey: Hard Mode I / Prey: A Different Kind of Void (Hard))
+				--q(93857),	-- after L-N-0R the Recycler (Hard) was killed (Prey : Insane Inventors (Hard))
 			}),
 		}),
 	}),

@@ -130,12 +130,39 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	filter(MISC, {
 	}),
 	filter(REAGENTS, {
+		i(251285),	-- Petrified Root (TODO: probably delves only)
 		i(242640),	-- Plant Protein
 		i(242639),	-- Practically Pork
 		i(236949),	-- Mote of Light
 		i(236950),	-- Mote of Primal Energy
 		i(236952),	-- Mote of Pure Void
 		i(236951),	-- Mote of Wild Magic
+		i(251923),	-- Thalassian Essence of the Faire
+		--Darkmoon cards (doesn't require Inscription on character)
+		i(245856),	-- Ace of Blood
+		i(245857),	-- Two of Blood
+		i(245858),	-- Three of Blood
+		i(245859),	-- Four of Blood
+		i(245860),	-- Five of Blood
+		i(245861),	-- Six of Blood
+		i(245862),	-- Seven of Blood
+		i(245863),	-- Eight of Blood
+		i(245830),	-- Ace of Hunt
+		i(245831),	-- Two of Hunt
+		i(245832),	-- Three of Hunt
+		i(245833),	-- Four of Hunt
+		i(245834),	-- Five of Hunt
+		i(245835),	-- Six of Hunt
+		i(245836),	-- Seven of Hunt
+		i(245837),	-- Eight of Hunt
+		i(245838),	-- Ace of Void
+		i(245839),	-- Two of Void
+		i(245840),	-- Three of Void
+		i(245841),	-- Four of Void
+		i(245842),	-- Five of Void
+		i(245843),	-- Six of Void
+		i(245844),	-- Seven of Void
+		i(245845),	-- Eight of Void
 	}),
 	filter(RECIPES, {
 		i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)	-- Mentions "World Nullaeus Creatures"

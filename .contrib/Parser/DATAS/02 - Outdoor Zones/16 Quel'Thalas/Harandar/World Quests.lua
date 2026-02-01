@@ -8,9 +8,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--	["sourceQuests"] = {
 			--	},
 			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
-				n(REWARDS, {
-					i(256986),	-- Circlet of Encroaching Shadow
-				}),
 				q(92086, {	-- A Taste of Accord
 					["coord"] = { 41.5, 24.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
@@ -27,7 +24,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)
 				}),
 				q(92085, {	-- Claw Enforcement
-					["coord"] = { 52.9, 52.3, MAP.MIDNIGHT.HARANDAR },
+					["coords"] = {
+						{ 52.9, 52.3, MAP.MIDNIGHT.HARANDAR },
+						{ 62.9, 70.4, 2576 },	-- The Den
+					},
 				}),
 				q(91555, {	-- Defenders of the Vale
 					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
