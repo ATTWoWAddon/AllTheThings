@@ -1535,12 +1535,21 @@ i(258129);	-- Jade Monument
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(262431);	-- Bouncy Mushroom
+i(264805);	-- Brann-O-Vision 3000
+i(267291);	-- Coffer Key Glue
+i(265100);	-- Corewarden's Hearthstone
 i(264413);	-- Dominating Victory
+i(264695);	-- Interdimensional Parcel Signal
 -- #if AFTER 12.0.1
 i(64457);	-- Last Relic of Argus
 -- #endif
 i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
+i(264414);	-- Midnight Delver's Flare Gun
+i(268717);	-- Pango Plating
+i(263933);	-- Preyseeker's Hearthstone
+i(264666);	-- Rod of Exanguishation
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256552);	-- Verdant Rutaani Seed
@@ -1549,11 +1558,7 @@ i(256893);	-- Wretched Dredger's Brand
 i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
 i(243146);	-- [DNT] Ren'dorei Struggle
 i(250974);	-- Akil'zon's Updraft
-i(263933);	-- Astalor's Summons
-i(264805);	-- Brann-O-Vision 3000
 i(251633);	-- Bursting Bounty Bundle
-i(267291);	-- Coffer Key Glue
-i(265100);	-- Corewarden's Hearthstone
 i(264672);	-- Cosmic Ritual Stone
 i(266370);	-- Dundun's Abundant Travel Method
 i(263244);	-- Enigmatic Fountain
@@ -1563,14 +1568,9 @@ i(259084);	-- Gift of the Cycle
 i(252265);	-- Hexed Potatoad Mucus
 i(263871);	-- Holy Pet Leash
 i(267139);	-- Hungry Black Hole
-i(264695);	-- Interdimensional Parcel Signal
 i(250320);	-- Lightgraft
-i(264414);	-- Midnight Delver's Flare Gun
-i(268717);	-- Pango Plating
 i(253629);	-- Personal Key to the Arcantina
-i(262431);	-- Pocket Mushroom Jump Pad
 i(251903);	-- Potatoad Egg
-i(264666);	-- Rod of Exanguishation
 i(268728);	-- Saptor Salve
 i(250319);	-- Shadowgraft
 i(258963);	-- Shroom Jumper's Parachute

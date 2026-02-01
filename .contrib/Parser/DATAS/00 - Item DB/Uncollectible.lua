@@ -2597,12 +2597,17 @@ i(243216);	-- Snapped Antennae
 -- PATCH 12.0.X --
 ------------------
 i(238482);	-- A Whole Lot of Nothing
+i(260654);	-- Abrasive Sand
+i(260636);	-- Algae Covered Stone
 i(263517);	-- Ancient Text
 i(238494);	-- Another's Treasure
+i(260641);	-- Arid Tendrils
 i(260664);	-- Bioluminescent Flower Petals
+i(260608);	-- Bloated Animal Remains
 i(260670);	-- Bloody Broken Beak
 i(238483);	-- Bottom Grass
 i(263515);	-- Broken Soulstealing Mirror
+i(266002);	-- Broken Trap Mechanism
 i(260652);	-- Broken Wildfire Claw
 i(244041);	-- Budding Seed
 i(260692);	-- Chunk of Mystery Meat
@@ -2611,6 +2616,7 @@ i(260669);	-- Colorless Pebbles
 i(263516);	-- Cosmic Ritual Bowl
 i(260658);	-- Crystal Rock Shard
 i(238484);	-- Damp Washcloth
+i(260655);	-- Decaying Humanoid Flesh
 i(260687);	-- Decaying Leather
 i(238488);	-- Definitely a Rock
 i(260647);	-- Digested Human Hand
@@ -2628,10 +2634,12 @@ i(260639);	-- Fractured Bone
 i(265040);	-- Fractured Void Focus
 i(265044);	-- Frayed Twilight Sash
 i(238481);	-- Glittering Garbage
+i(260646);	-- Glowing Gland
 i(260661);	-- Glowing Shrub
 i(238485);	-- Grotesque Globule
 i(260657);	-- Holey Organ
 i(238496);	-- Hunk O' Junk
+i(260688);	-- Insect Exoskeleton
 i(260604);	-- Insect Shedding
 i(238487);	-- Kickin' Can
 i(260611);	-- Large Bestial Scale
@@ -2640,14 +2648,17 @@ i(260617);	-- Large Broken Teeth
 i(260653);	-- Large Lightbloom Fungi
 i(260606);	-- Light and Shaggy Fur
 i(260618);	-- Light-Infused Leaves
+i(260644);	-- Lightbloom Bark
 i(260613);	-- Lightbloom Flower
 i(260663);	-- Lightbloom Residue
 i(260681);	-- Lightbloom-Infused Spores
+i(260675);	-- Luminous Seeds
 i(260651);	-- Lustrous Wildlife Pelt
 i(260621);	-- Magic Infused Bark
 i(260693);	-- Mossy Lump of Dirt
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
+i(260673);	-- Partially Digested Bracers
 i(260656);	-- Perforated Wing
 i(243845);	-- Petalwrap Sack
 i(243844);	-- Petalwrap Bag
@@ -2659,6 +2670,7 @@ i(238477);	-- Rotten Meat
 i(260637);	-- Rotting Insect Eggs
 i(244040);	-- Sack of Seeds
 i(238493);	-- Screaming Rock
+i(260605);	-- Shattered Spear Tip
 i(260678);	-- Sharp Obsidian Chunk
 i(260684);	-- Sharp Scales
 i(238478);	-- Shimmering Seaweed
@@ -2689,12 +2701,3 @@ i(260645);	-- Water Filled Organ
 -- Profession
 i(242637);	-- Recycle Potions
 i(242638);	-- Recycle Flasks
-
-------------------
--- PATCH 12.0.1 --
-------------------
-i(260641);	-- Arid Tendrils
-i(260608);	-- Bloated Animal Remains
-i(260655);	-- Decaying Humanoid Flesh
-i(260646);	-- Glowing Gland
-i(260688);	-- Insect Exoskeleton

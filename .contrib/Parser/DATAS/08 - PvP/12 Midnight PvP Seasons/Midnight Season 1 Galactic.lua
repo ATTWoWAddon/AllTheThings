@@ -92,7 +92,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
 				["coord"] = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				--[[["groups"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						bloody(525, i(255914)),	-- Galactic Warmonger's Cape
 						bloody(525, i(255916)),	-- Galactic Warmonger's Cloak
@@ -163,13 +163,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(255922)),	-- Galactic Warmonger's Twinblade
 						bloody(1225, i(255934)),	-- Galactic Warmonger's Wand
 					}),
-				},]]--
+				},
 			}),
 		})),
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
 				["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				--[[ ["groups"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						honor(525, i(255339)),	-- Galactic Aspirant's Cape
 						honor(525, i(255338)),	-- Galactic Aspirant's Cloak
@@ -267,25 +267,26 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					n(WEAPONS, {
 						honor(875, i(255341)),	-- Galactic Aspirant's Battleaxe
+						honor(1750, i(255351)),	-- Galactic Aspirant's Bow
 						honor(525, i(255347)),	-- Galactic Aspirant's Censer
 						honor(875, i(255355)),	-- Galactic Aspirant's Chopper
+						honor(1225, i(267375)),	-- Galactic Aspirant's Claws
 						honor(875, i(255342)),	-- Galactic Aspirant's Dagger
 						honor(1750, i(255346)),	-- Galactic Aspirant's Greatsword
 						honor(1750, i(255352)),	-- Galactic Aspirant's Halberd
-						--honor(875, i(229508)),	-- Galactic Aspirant's Hammer // Bad itemid
 						honor(1225, i(255354)),	-- Galactic Aspirant's Knife
 						honor(875, i(255343)),	-- Galactic Aspirant's Mace
 						honor(875, i(255353)),	-- Galactic Aspirant's Morningstar
 						honor(1750, i(255344)),	-- Galactic Aspirant's Polearm
-						honor(1750, i(255351)),	-- Galactic Aspirant's Rifle
 						honor(1225, i(255349)),	-- Galactic Aspirant's Scepter
 						honor(525, i(255350)),	-- Galactic Aspirant's Shield
 						honor(1750, i(255345)),	-- Galactic Aspirant's Staff
+						honor(875, i(267417)),	-- Galactic Aspirant's Talons
 						honor(1225, i(255356)),	-- Galactic Aspirant's Wand
 						honor(875, i(255348)),	-- Galactic Aspirant's Warglaive
 					}),
-				},]]--
-			})
+				},
+			}),
 		})),
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>

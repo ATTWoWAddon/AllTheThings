@@ -14460,6 +14460,10 @@ q(83831,{e=242,type="hqt"}),
 i(229351,{b=1,f=55,spellID=459811})}})}}),
 h(-58,{e=242,g={
 n(226766,{coords={a[734]},description="You need to get up to the quest 'A Whiff of Help' in the chain and accept it in order to buy the items.",e=242,rwp=110007,sourceQuests={84868},u=2,g={
+i(232005,{e=242,f=55,spellID=433,u=2}),
+i(232006,{e=242,f=55,spellID=104235,u=2}),
+i(232009,{e=242,f=55,spellID=433,u=2}),
+i(232007,{e=242,f=55,spellID=431,u=2}),
 i(229351,{b=1,e=242,f=55,spellID=459811,u=2}),
 i(229375,{b=1,e=242,f=55,spellID=464886,u=2})}}),
 n(230310,{coords={{33.6,63.5,210}},description="Inside the Booty Bay goblin statue behind chests in the back.",e=242,g={

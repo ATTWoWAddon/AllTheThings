@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 54.7, 60.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 92392,
 				["groups"] = {
-					--no loot table
+					i(264524),	-- Lightblighted Verdant Vest
 				},
 			}),
 			n(250876, {	-- Terrinor
@@ -146,11 +146,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94682, {	-- Weekly reputation: Harried Hawkstrider
 					["name"] = "Harried Hawkstrider weekly reputation obtained.",
 				}),
+				q(94688, {	-- Weekly reputation: Lady Liminus
+					["name"] = "Lady Liminus weekly reputation obtained.",
+				}),
 				q(94693, {	-- Weekly reputation: Lost Guardian
 					["name"] = "Lost Guardian weekly reputation obtained.",
 				}),
 				q(94695, {	-- Weekly reputation: Malfunctioning Construct
 					["name"] = "Malfunctioning Construct weekly reputation obtained.",
+				}),
+				q(94684, {	-- Weekly reputation: Overfester Hydra
+					["name"] = "Overfester Hydra weekly reputation obtained.",
 				}),
 				q(94681, {	-- Weekly reputation: Warden of Weeds
 					["name"] = "Warden of Weeds weekly reputation obtained.",

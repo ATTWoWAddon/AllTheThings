@@ -124,11 +124,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--hqt(92760),	-- Level 12 (not even sure what level she was)
 		--hqt(92761),	-- Level 13 (not even sure what level she was)
 		--hqt(92762),	-- Level 14 (She was level 13, actually, according to notes)
+		--hqt(92768),	-- Level 20 (automated)
 		--hqt(92775),	-- Level 27 (she was actually level 27), also it seems like questIDs keep flagging but not reported in-game?
 		--hqt(92776),	-- Level 28
 		--hqt(92778),	-- Level 30 (automated)
 		--hqt(92786),	-- Level 38
 		--hqt(92787),	-- Level 39
+		--hqt(92788),	-- Level 40 (automated)
+		--hqt(92789),	-- Level 41
+		--hqt(92790),	-- Level 42
+		--hqt(92791),	-- Level 43
+		--hqt(92792),	-- Level 44
+		--hqt(92794),	-- Level 46
 	}),
 	n(QUESTS, {
 		q(93784, {	-- A Gnawing Void of Curiosity
@@ -141,6 +148,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--n(253257),	-- Abandoned Sentinel
 		--n(253249),	-- Clever Saptor
 		--n(207482),	-- Invasive Sporecap // alpha
+		--n(253304),	-- Paingolin
 		--n(253267),	-- Wailing Spirit
 	}),
 	mapped(n(TREASURES, {
@@ -206,7 +214,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(262963, {	-- Pious Memorial
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
-						--["questID"] = ???,
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
 						["cost"] = { { "c", UNDERCOIN, 250 } },
@@ -255,11 +262,16 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				---}),
 			}),
 			n(TREASURES, {
+				--o(XXXX, {	-- Sturdy Chest	TODO: missing objectID
+				--	["coord"] = { 55.7, 69.9, ATAL_AMAN },
+				--	["questID"] = 94000,
+				--}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
+					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -359,9 +371,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
 					},
 				}),
+				--o(XXXX, {	-- Sturdy Chest	-- TODO: missing objectID
+				--	["coord"] = { 39.0, 41.9, SHADOWGUARD_POINT },	-- TODO: coords off, since data from delve when map was missing
+				--	["questID"] = 94025,
+				--}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(251967),	-- Fungarian Banner (DECOR!)
+				}),
+				filter(COSMETIC, {
+					i(264848),	-- Sunlit Vinepouch (COSMETIC!)
 				}),
 				filter(MISC, {
 				}),
@@ -370,7 +390,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	}),
 	m(SUNKILLER_SANCTUM, {
 		--["icon"] = ,
-		--["coord"] = { X, Y, MAPID },
+		["coord"] = { 54.8, 47.0, MAP.MIDNIGHT.VOIDSTORM },
 		["maps"] = { 2571 },	-- Lower Sanctum
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -455,9 +475,26 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				---}),
 			}),
 			n(TREASURES, {
+				o(618278, {	-- Sturdy Chest
+					["coord"] = { 54.3, 25.2, THE_GULF_OF_MEMORY },
+					["questID"] = 94023,
+				}),
+				o(618292, {	-- Sturdy Chest
+					["coord"] = { 55.5, 26.2, THE_GULF_OF_MEMORY },
+					["questID"] = 94041,
+				}),
+				o(618272, {	-- Sturdy Chest
+					["coord"] = { 39.8, 26.6, THE_GULF_OF_MEMORY },
+					["questID"] = 94016,
+					["groups"] = {
+						i(264805),	-- Brann-O-Vision 3000 (TOY!)
+					},
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264342),	-- Cosmic Void Cache (DECOR!)
+					i(263233),	-- Sin'dorei Spinning Library (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -622,9 +659,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
-		--n(BOUNTIFUL, sharedData({
-		--	["isDaily"] = true,
-		--},{
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		},{
 			q(91188),	-- Atal'Aman
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
@@ -633,7 +670,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91190),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves
 		--	--q(),	-- factionName
-		--})),
+		})),
 
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		--q(93275, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st (could be wrong and it is rep lockout for Unity Against the Void?)
@@ -648,5 +685,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
 		--	["isWeekly"] = true,
 		--}),
+		
+		--automated
+		--q(93869),	-- Pious Memorial (itemID 262963)
 	})),
 }));

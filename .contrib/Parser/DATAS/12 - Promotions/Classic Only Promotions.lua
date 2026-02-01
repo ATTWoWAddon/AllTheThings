@@ -351,6 +351,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			pet(4850, {	-- Sa'bak's Blessed
 				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
 			}),
+			-- Note: Also available in WoW Classic: Titan Reforged
 			n(TREASURE_OF_AZEROTH, sharedDataSelf({
 				["timeline"] = { ADDED_5_5_2 },
 				["u"] = REAL_MONEY,
@@ -373,6 +374,15 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					-- })),
 				},
 			}));
+			-- Note: Also available in WoW Classic: Titan Reforged
+			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+				--["description"] = "todo: add price",
+				["timeline"] = {  ADDED_5_5_2, ADDED_5_5_4 },	-- 2nd April 2026
+				["groups"] = {
+				--	cnONLY(i()),	-- Blazing Quilen mount (MOUNT!)
+					cnONLY(i(267279)),	-- Embers of Al'ar (TOY!)
+				},
+			})),
 		},
 	}),
 	-- #endif

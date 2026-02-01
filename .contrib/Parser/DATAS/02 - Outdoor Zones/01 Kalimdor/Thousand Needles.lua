@@ -3072,6 +3072,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			n(SPECIAL, {
+				hqt(53655, {	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
+					["name"] = "Speak to Wan'be underwater at Fizzle and Pozzik's Speedway",
+					["sourceQuest"] = 53654,	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 78.8, 77.0, THOUSAND_NEEDLES },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
+				}),
+			}),
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },

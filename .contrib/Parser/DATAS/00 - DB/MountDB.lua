@@ -2307,9 +2307,14 @@ i(254735, 1258573);	-- Thunderhoof Celestial
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(252011, 1253924);	-- Brilliant Petalwing
 i(252014, 1253929);	-- Cerulean Sporeglider
+i(262502, 1268926);	-- Elven Arcane Guardian
 i(246734, 1243593);	-- Fierce Grimlynx
+i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
+i(257192, 1261337);	-- Preyseeker's Wrath
+i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
 i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
@@ -2328,7 +2333,6 @@ i(263222, 1268949);	-- Arcanovoid Construct
 i(246590, 1242904);	-- Ashes of Belo'ren
 i(257085, 1261155);	-- Augmented Stormray
 i(262707, 1269279);	-- Blooded Snapvine
-i(0, 1253924);	-- Brilliant Petalwing
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(257156, 1261323);	-- Cerulean Hawkstrider
 i(257156, 1261302);	-- Cobalt Dragonhawk
@@ -2340,7 +2344,6 @@ i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
-i(262502, 1268926);	-- Elven Arcane Guardian
 i(262706, 1269277);	-- Ferocious Snapvine
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
@@ -2353,8 +2356,6 @@ i(0, 1266703);	-- Lab-grown Stormray
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(260231, 1265784);	-- Lucent Hawkstrider
 i(260916, 3363);	-- Nether-Warped Drake
-i(257191, 1261336);	-- Preyseeker's Hubris
-i(257192, 1261337);	-- Preyseeker's Wrath
 i(257447, 1261584);	-- Prowling Shredclaw
 i(0, 1261579);	-- Ravenous Shredclaw
 i(0, 1261391);	-- Relinquished Scarlet Charger
@@ -2362,7 +2363,6 @@ i(246735, 1243597);	-- Rootstalker Grimlynx
 i(252017, 1253938);	-- Ruddy Sporeglider
 i(260635, 1266700);	-- Sanguine Harrower
 i(262708, 1269280);	-- Savage Snapvine
-i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(0, 1263635);	-- Spectral Hawkstrider
 i(0, 1238827);	-- Swift Spectral Dragonhawk
 i(260887, 1266980);	-- Tenebrous Harrower

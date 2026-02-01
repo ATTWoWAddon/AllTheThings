@@ -829,9 +829,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 61782 },	-- Pursuit of Justice
 				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
-				["groups"] = {
-					i(182334),	-- Fleshshaper's Heart (QI!)
-				},
+				["groups"] = { i(182334) },	-- Fleshshaper's Heart (QI!)
 			}),
 			q(58939, {	-- The Blue Seed
 				["sourceQuests"] = {
@@ -840,9 +838,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 				["provider"] = { "n", 165110 },	-- Pelagos
 				-- no coords, is your 'pet'
-				["groups"] = {
-					i(176446),	-- Ripened Anima Seed (QI!)
-				},
+				["groups"] = { i(176446) },	-- Ripened Anima Seed (QI!)
 			}),
 			q(61770, {	-- The Butchers of Bastion
 				["sourceQuests"] = { 61769 },	-- Fight and Flight

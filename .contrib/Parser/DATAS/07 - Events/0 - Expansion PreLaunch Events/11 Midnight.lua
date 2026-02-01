@@ -385,6 +385,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			["sourceQuest"] = 90768,	-- Cult It Out
 			["isWorldQuest"] = true,
 		}, {
+			q(86951, {	-- Ascended, Descending
+				["coord"] = { 39.4, 73.8, TWILIGHT_HIGHLANDS },
+			}),
 			q(86959, {	-- Bloodeye Prisoners
 				["coord"] = { 40.8, 66.7, TWILIGHT_HIGHLANDS },
 			}),

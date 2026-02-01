@@ -189,6 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						title(677),	-- <Name>, Famed Slayer of the Dark Naaru
 					})),
 					ach(61611),	-- Mythic: Midnight Falls Guild Run
+					i(246590),	-- Ashes of Belo'ren (MOUNT!)
 					i(249367, {	-- Chiming Void Curio
 						["sym"] = {
 							{"sub", "instance_tier",1307,DIFFICULTY.RAID.MYTHIC},

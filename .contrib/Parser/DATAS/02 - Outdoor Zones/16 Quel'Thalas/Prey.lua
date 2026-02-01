@@ -125,8 +125,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			ach(62138),	-- You're Trapped In Here With Me
 		}),
 		n(QUESTS, {
-			q(92926, {	-- Astalor's Initiative
+			q(95114, {	-- Prey: A Crimson Summons
 				--["sourceQuests"] = { ??? },	-- ??
+				["provider"] = { "n", 259865 },	-- Image of Astalor Bloodsworn
+				["coord"] = { 47.6, 71.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isBreadcrumb"] = true,
+			}),
+			q(92926, {	-- Astalor's Initiative
+				["sourceQuests"] = { 95114 },	-- Prey: A Crimson Summons
 				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
@@ -166,9 +172,45 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			["coord"] = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 		}, {
+			--q(XX),	-- Prey: Crusader Luxia Maxwell (Normal)
+			--q(XX),	-- Prey: Crusader Luxia Maxwell (Hard)
+			q(91257),	-- Prey: Crusader Luxia Maxwell (Nightmare)
+			--q(XX),	-- Prey: Deliah Gloomsong (Normal)
+			q(91220),	-- Prey: Deliah Gloomsong (Hard)
+			--q(XX),	-- Prey: Deliah Gloomsong (Nightmare)
+			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Normal)
+			q(91254),	-- Prey: Grothoz, the Burning Shadow (Hard)
+			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Nightmare)
+			--q(XX),	-- Prey: Imperator Enigmalia (Normal)
+			--q(XX),	-- Prey: Imperator Enigmalia (Hard)
+			q(91261),	-- Prey: Imperator Enigmalia (Nightmare)
+			--q(XX),	-- Prey: L-N-0R the Recycler (Normal)
+			q(91216),	-- Prey: L-N-0R the Recycler (Hard)
+			--q(XX),	-- Prey: L-N-0R the Recycler (Nightmare)
+			--q(XX),	-- Prey: Lieutenant Blazewing (Normal)
+			--q(XX),	-- Prey: Lieutenant Blazewing (Hard)
+			q(91237),	-- Prey: Lieutenant Blazewing (Nightmare)
+			q(91099),	-- Prey: Mordril Shadowfell (Normal)
+			--q(XX),	-- Prey: Mordril Shadowfell (Hard)
+			--q(XX),	-- Prey: Mordril Shadowfell (Nightmare)
 			q(91096),	-- Prey: Magistrix Emberlash (Normal)
+			--q(XX),	-- Prey: Magistrix Emberlash (Hard)
+			--q(XX),	-- Prey: Magistrix Emberlash (Nightmare)
+			q(91113),	-- Prey: Praetor Singularis (Normal)
 			q(91244),	-- Prey: Praetor Singularis (Hard)
+			--q(XX),	-- Prey: Praetor Singularis (Nightmare)
+			--q(XX),	-- Prey: Ranger Swiftglade (Normal)
+			--q(XX),	-- Prey: Ranger Swiftglade (Hard)
+			q(91235),	-- Prey: Ranger Swiftglade (Nightmare)
+			--q(XX),	-- Prey: Senior Tinker Ozwold (Normal)
+			--q(XX),	-- Prey: Senior Tinker Ozwold (Hard)
 			q(91215),	-- Prey: Senior Tinker Ozwold (Nightmare)
+			q(91105),	-- Prey: The Talon of Janali (Normal)
+			--q(XX),	-- Prey: The Talon of Janali (Hard)
+			--q(XX),	-- Prey: The Talon of Janali (Nightmare)
+			--q(XX),	-- Prey: Thornspeaker Edgath (Normal)
+			q(91252),	-- Prey: Thornspeaker Edgath (Hard)
+			--q(XX),	-- Prey: Thornspeaker Edgath (Nightmare)
 		})),
 		n(REWARDS, {
 			--Currency
@@ -254,18 +296,111 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 				i(259959),	-- Preyseeker's Warglaive
 			}),
 			filter(MISC, {
+				i(262928),	-- Preyseeker's Adventurer Sack // alpha
+				i(262938),	-- Preyseeker's Champion Sack
+				i(262936),	-- Preyseeker's Veteran Sack // alpha
+				i(255825),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
 			}),
 			filter(RECIPES, {
 			}),
 		}),
+		n(VENDORS, {
+			n(258181, {	-- Construct Ali'a <Decor Specialist>
+				["coord"] = { 55.8, 66.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					anguish(800, i(265794)),	-- Preyseeker's Plinth (DECOR!)
+					anguish(1200, i(265795)),	-- Preyseeker's Ornate Plinth (DECOR!)
+					anguish(800, i(265700)),	-- Preyseeker's Amani Bust (DECOR!)
+					anguish(1200, i(265685)),	-- Preyseeker's Amani Effigy (DECOR!)
+					anguish(800, i(265699)),	-- Preyseeker's Breaker Bust (DECOR!)
+					anguish(1200, i(265684)),	-- Preyseeker's Breaker Effigy (DECOR!)
+					anguish(800, i(265703)),	-- Preyseeker's Consul Bust (DECOR!)
+					anguish(1200, i(265688)),	-- Preyseeker's Consul Effigy (DECOR!)
+					anguish(800, i(265704)),	-- Preyseeker's Executor Bust (DECOR!)
+					anguish(1200, i(265689)),	-- Preyseeker's Executor Effigy (DECOR!)
+					anguish(800, i(265698)),	-- Preyseeker's Ethereal Bust (DECOR!)
+					anguish(1200, i(265683)),	-- Preyseeker's Ethereal Effigy (DECOR!)
+					anguish(800, i(265799)),	-- Preyseeker's Farstrider Bust (DECOR!)
+					anguish(1200, i(265797)),	-- Preyseeker's Farstrider Effigy (DECOR!)
+					anguish(800, i(265705)),	-- Preyseeker's Knight-Errant Bust (DECOR!)
+					anguish(1200, i(265690)),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
+					anguish(800, i(265696)),	-- Preyseeker's Magister Bust (DECOR!)
+					anguish(1200, i(265681)),	-- Preyseeker's Magister Effigy (DECOR!)
+					anguish(800, i(265798)),	-- Preyseeker's Ren'dorei Bust (DECOR!)
+					anguish(1200, i(265796)),	-- Preyseeker's Ren'dorei Effigy (DECOR!)
+					anguish(800, i(265701)),	-- Preyseeker's Rutaani Bust (DECOR!)
+					anguish(1200, i(265686)),	-- Preyseeker's Rutaani Effigy (DECOR!)
+					anguish(800, i(265707)),	-- Preyseeker's Thornspeaker Bust (DECOR!)
+					anguish(1200, i(265692)),	-- Preyseeker's Thornspeaker Effigy (DECOR!)
+					anguish(800, i(265697)),	-- Preyseeker's Tinker Bust (DECOR!)
+					anguish(1200, i(265682)),	-- Preyseeker's Tinker Effigy (DECOR!)
+					anguish(800, i(265708)),	-- Preyseeker's Twilight Bust (DECOR!)
+					anguish(1200, i(265694)),	-- Preyseeker's Twilight Effigy (DECOR!)
+					anguish(800, i(265702)),	-- Preyseeker's Vindicator Bust (DECOR!)
+					anguish(1200, i(265687)),	-- Preyseeker's Vindicator Effigy (DECOR!)
+					anguish(800, i(265706)),	-- Preyseeker's Wretched Bust (DECOR!)
+					anguish(1200, i(265691)),	-- Preyseeker's Wretched Effigy (DECOR!)
+				},
+			}),
+			n(252956, {	-- Construct V'anore <Rewards>
+				["coord"] = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
+					anguish(800, i(264434)),	-- Voldy (PET!) (TODO: previously quest reward in voidstorm?)
+					anguish(2000, i(257191)),	-- Preyseeker's Hubris (MOUNT!)
+					anguish(2550, i(257192)),	-- Preyseeker's Wrath (MOUNT!)
+					anguish(400, i(258022)),	-- Skilled Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(400, i(258024)),	-- Skilled Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258028)),	-- Famed Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(500, i(258026)),	-- Famed Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258030)),	-- Famed Preyseeker's Knapsack (COSMETIC!)
+					anguish(1600, iensemble(266196)),	-- Ensemble: Preyseeker's Refined Armor
+					anguish(1600, iensemble(266197)),	-- Ensemble: Preyseeker's Sleek Armor
+					anguish(1600, iensemble(266198)),	-- Ensemble: Preyseeker's Rugged Armor
+					anguish(1600, iensemble(266199)),	-- Ensemble: Preyseeker's Polished Armor
+					anguish(800, i(263933)),	-- Preyseeker's Hearthstone (TOY!)
+					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
+					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+				},
+			}),
+		}),
 		n(WORLD_QUESTS, {
 			q(91601, {	-- Prey: Apex Predator
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
+			q(91604, {	-- Prey: Apex Predator (TODO: fired after filling up progress during hard mode in Zul'Aman)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.ZULAMAN },
+			}),
 			q(91207, {	-- Prey: Apex Predator (TODO: probably could be wrongly flagged after fill up bar during hard mode)
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91590, {	-- Prey: Concealed Threat (TODO: (un)flagged after picked up Deliah Gloomsong (Hard))
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91590, {	-- Prey: Concealed Threat
 				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -276,8 +411,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			q(91592, {	-- Prey: Concealed Threat (TODO: probably could be wrongly flagged after fill up bar during nightmare mode)
 				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
+			q(91458, {	-- Prey: Endurance Hunter (TODO: fired after filling up progress during normal mode)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
 			q(91594, {	-- Prey: Endurance Hunter
-				["coord"] = { 59.6, 71.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["coord"] = { 60.1, 71.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91595, {	-- Prey: Endurance Hunter (TODO: rng marked completed while was gathering ore/herb)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
+			q(91595, {	-- Prey: Endurance Hunter (TODO: (un)flagged after picked up L-N-0R the Recycler (Hard))
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 		}),
 	}),
@@ -287,6 +431,24 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(PREY, {
 			n(QUESTS, {
 				--q(93168),	-- after completion questID 91096 (Prey: Magistrix Emberlash (Normal)), probably end of "tutorial" or first per week?
+				--whatever that rng things are happen
+				--q(95413),	-- "Community Engagement" after zone (Eversong Woods) rare kill during Prey (and unflagged at same frame)
+				--q(95485),	-- same as above but missing quest name
+				--q(95535),	-- completed/unflagged/completed/unflagged/completed (yes, 3 times), after Lost Guardian was killied during Prey in zone (hard mode)
+				--q(95536),	-- unflagged after looting Minor Coalesced Anguish
+				--q(95537),	-- same as above, but after Banuran was kiiled during Prey in zone (hard mode)
+				--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
+				--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
+
+				--related to prey bosses kill? counter for something? weekly?
+				--q(95000),	-- after Praetor Singularis (Normal) was killed / 1st per week
+				--q(95001),	-- after Deliah Gloomsong (Hard) was killed / 2nd per week
+				--q(95002),	-- after L-N-0R the Recycler (Hard) was killed / 3rd per week
+
+				--achievements? criteria?
+				--q(93168),	-- after Praetor Singularis (Normal) was killed
+				--q(93169),	-- after Deliah Gloomsong (Hard) was killed (Prey: Hard Mode I / Prey: A Different Kind of Void (Hard))
+				--q(93857),	-- after L-N-0R the Recycler (Hard) was killed (Prey : Insane Inventors (Hard))
 			}),
 		}),
 	}),

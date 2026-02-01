@@ -67,9 +67,6 @@ title(663),	-- [PH] %s
 title(667),	-- %s, Life of the Party
 12.0.0.63724
 title(670),	-- %s, Teacher of Strong \\ %s, Mycelial Mentor
-12.0.0.63854
-title(671),	-- Mind-Seeker %s
-title(680),	-- %s, Chronicler of the Haranir
 12.0.0.63967
 title(681),	-- Scourgebane %s
 title(682),	-- %s, Top Student
@@ -97,6 +94,5 @@ title(750),	-- Thalassian Miner %s
 title(751),	-- Thalassian Herbalist %s
 title(752),	-- Thalassian Skinner %s
 title(753),	-- %s, the Singular
-title(754),	-- Dustlord %s
 12.0.1.64889
 title(755),	-- Preyseeker %s

@@ -4529,6 +4529,8 @@ i(250143, 4883);	-- Dragonhawk Mosswing
 i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
 i(250146, 4885);	-- Gloom Toad
+i(262393, 4955);	-- Kreepah'zoyd
+i(259991, 4930);	-- Lil' Preyseeker
 i(221492, 4459);	-- Moss Skipper
 i(250137, 4876);	-- Mud Potadpole
 i(250145, 4884);	-- Pangolil
@@ -4538,6 +4540,7 @@ i(250136, 4875);	-- Rootling Nester
 i(232856, 4633);	-- Scruff
 i(250147, 4886);	-- Silkcrawler
 i(258660, 4912);	-- Silvermoon Broom
+i(269028, 5012);	-- Sootpaw
 i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
@@ -4566,8 +4569,6 @@ i(244339, 4816);	-- Hawkstrider Hatchling
 i(252650, 4894);	-- Heartglow Listener
 i(262395, 4959);	-- Hexed Bunny
 i(265030, 4983);	-- Kai
-i(262393, 4955);	-- Kreepah'zoyd
-i(259991, 4930);	-- Lil' Preyseeker
 i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
@@ -4588,7 +4589,6 @@ i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
-i(269028, 5012);	-- Sootpaw
 i(262390, 4953);	-- Sporbie
 i(262342, 4956);	-- Spormilian
 i(0, 4943);			-- Star the Lucky Dragon

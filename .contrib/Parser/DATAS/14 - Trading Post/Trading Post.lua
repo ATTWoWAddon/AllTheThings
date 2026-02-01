@@ -1748,7 +1748,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		})),
 	}),
 	n(YEAR2026, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.0.65655" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(258266),	-- Ensemble: Vengeful Regalia of the Crusader
 			}),
@@ -1784,7 +1784,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 			}),
@@ -1941,7 +1941,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(400, iensemble(211122)),	-- Ensemble: Wastewander Tracker's Kit
 							traderstender(100, i(217372)),	-- Frenzied Hat of the Deep Blue
 							traderstender(100, i(217376)),	-- Frenzied Hat of the Murky Waters
-							traderstender(175, i(229720)),	-- Frostwolf Earmuffs
+							traderstender(170, i(229720)),	-- Frostwolf Earmuffs
 							traderstender(100, i(212785)),	-- Helm of the Stout
 							traderstender(40, i(190857)),	-- Gilded Emerald Longcloak
 							traderstender(150, i(213393)),	-- Guise of the Golden Masquerade
@@ -1950,7 +1950,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(400, iensemble(208412)),	-- High Scholar's Arcana
 							traderstender(30, i(190070)),	-- Highborne Scholar's Gloves
 							traderstender(35, i(190887)),	-- Highlord's Ceremonial Drape
-							traderstender(175, i(229714)),	-- Lion's Crest Earmuffs
+							traderstender(170, i(229714)),	-- Lion's Crest Earmuffs
 							traderstender(40, i(211071)),	-- Lively Treads of the Kalu'ak
 							traderstender(100, i(190075)),	-- Mantle of the Scholarly Raven
 							traderstender(50, i(190892)),	-- Orange-Sleeved Shirt

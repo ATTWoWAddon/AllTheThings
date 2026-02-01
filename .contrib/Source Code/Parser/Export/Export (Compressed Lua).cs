@@ -293,7 +293,7 @@ namespace ATT
             else
             {
                 // Uhh, that shouldn't happen.
-                if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
+                //if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
             }
 
             // Close the Parenthesis for the end of the constructor.

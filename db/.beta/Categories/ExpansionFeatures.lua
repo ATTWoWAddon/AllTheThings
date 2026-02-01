@@ -2344,7 +2344,7 @@ n(58244,{coords={a[3039]}})}}),
 q(30156,{coords={a[2624]},cost={{"i",79028,5}},crs={58218},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs={65669,65670,65671,65672,65673,65674,65724},qis={79027},sourceQuests=a[1316],g={
 i(79028,{coords={{68.4,26.4,371}},crs={58219},spellID=110456})}}),
 q(30147,{coords={a[2621]},crs={62596},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={79049},requireSkill=794,sourceQuests=a[1316]}),
-q(30148,{coords={a[2621]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={72985,72986},sourceQuests=a[1316],g={
+q(30148,{coords={a[2621]},description="Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2736],qis={72985,72986},sourceQuests=a[1316],g={
 n(58416,{coords={{65.4,28.2,371}}})}}),
 q(31709,{coords={a[2623]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs={58508},qis={88966}}),
 q(31703,{isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[428],qgs=a[2757],sourceQuests=a[1316],g={
@@ -2394,9 +2394,15 @@ o(214865,{coords={a[2995]}}),
 o(214866,{coords={a[2995]}}),
 o(214867,{coords={a[2995]}}),
 o(214868,{coords={a[2995]}})}}),
-q(30152,{coords={a[2705]},crs={58438,58530},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2739],sourceQuests=a[1317],g={
-i(90537,{b=1,description="Contains a reward of Valor Points based on how well you place in the race."}),
-ach(7290),
+q(30152,{coords={a[2705]},crs={58438,58530},description="This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2739],sourceQuests=a[1317],g={
+i(90537,{b=1,description="Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",g={
+i(90543,{b=1}),
+i(90538,{b=1}),
+i(90541,{b=1}),
+i(90539,{b=1}),
+i(90544,{b=1}),
+i(90540,{b=1})}}),
+ach(7290,{description="You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver."}),
 ach(7291)}}),
 q(31717,{coords={a[2633]},isDaily=1,lvl=10,maxReputation=a[427],minReputation=a[426],qgs=a[2757],sourceQuests=a[1317],g={
 n(58506,{coords={{58,43.8,371}}})}}),
@@ -2433,7 +2439,7 @@ q(30136,{coords={a[3040]},lvl=10,qgs=a[2727],qis=a[3363],sourceQuests=a[1314],g=
 n(58220,{coords={a[3039]}}),
 n(58243,{coords={a[3039]}}),
 n(58244,{coords={a[3039]}})}}),
-q(30145,{coords={a[2705]},lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests=a[1317]}),
+q(30145,{coords={a[2705]},description="This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests=a[1317]}),
 q(30187,{coords={a[2705]},crs={58438},lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests={30145}}),
 q(30144,{coords={a[2705]},crs=a[2740],lvl=10,minReputation=a[426],qgs=a[2739],sourceQuests={30143}}),
 q(30142,{coords={a[2628]},lvl=10,qgs=a[2728],sourceQuests={30139,30140,30141}}),
@@ -5576,8 +5582,8 @@ q(37234,{isDaily=1,lvl=40,maps=a[2884],qgs=a[3478],repeatable=1,sourceQuests=a[1
 o(237466,{
 i(118621,{spellID=177264})}),
 i(119037,{b=1})}}),
-q(37119,{lvl=10,qgs={84947},r=2}),
-q(37046,{lvl=10,qgs={87305},r=1}),
+q(37119,{coords={{52.2,44.5,582}},lvl=10,qgs={84947},r=2}),
+q(37046,{coords={{51.2,61,590}},lvl=10,qgs={87305},r=1}),
 q(37164,{lvl=40,maps=a[2654],qgs=a[3485],g={
 p(1567,{itemID=118923,npcID=88225,spellID=176140}),
 o(237471,{
@@ -8192,7 +8198,7 @@ r(190383,{b=1,cost={{"i",114931,20}},itemID=128411,requireSkill=773,skillID=2509
 r(190385,{b=1,cost={{"i",114931,20}},itemID=128413,requireSkill=773,skillID=2509}),
 r(190384,{b=1,cost={{"i",114931,20}},itemID=128412,requireSkill=773,skillID=2509}),
 r(190386,{b=1,cost={{"i",114931,20}},itemID=128414,requireSkill=773,skillID=2509}),
-i(127723,{b=1,collectible=false,cost={{"i",114931,20}},f=200,requireSkill=773,spellID=187495,u=5}),
+r(187495,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127723,requireSkill=773,u=5}),
 r(187494,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127728,requireSkill=773,u=5}),
 r(187519,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127741,requireSkill=773,u=5}),
 r(187518,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127746,requireSkill=773,u=5}),
@@ -8319,7 +8325,7 @@ r(190383,{b=1,cost={{"i",114931,20}},itemID=128411,requireSkill=773,skillID=2509
 r(190385,{b=1,cost={{"i",114931,20}},itemID=128413,requireSkill=773,skillID=2509}),
 r(190384,{b=1,cost={{"i",114931,20}},itemID=128412,requireSkill=773,skillID=2509}),
 r(190386,{b=1,cost={{"i",114931,20}},itemID=128414,requireSkill=773,skillID=2509}),
-i(127723,{b=1,collectible=false,cost={{"i",114931,20}},f=200,requireSkill=773,spellID=187495,u=5}),
+r(187495,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127723,requireSkill=773,u=5}),
 r(187494,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127728,requireSkill=773,u=5}),
 r(187519,{b=1,collectible=false,cost={{"i",114931,20}},itemID=127741,requireSkill=773,u=5}),
 r(187518,{awp=60200,b=1,collectible=false,cost={{"i",114931,20}},itemID=127746,requireSkill=773,u=5}),
@@ -12222,6 +12228,10 @@ q(44237,{c=a[309],coords={{43.2,63.2,747}},lvl=45,qgs={111786}})}}),
 ach(11217,{c=a[309],modelScale=2.25,npcID=98000,g={
 i(139420,{b=1,c=a[309],spellID=220184})}}),
 h(-56,{c=a[309],g={
+o(253150,{c=a[309],coords={{45.3,62.9,747}},type="AsGenericObjectContainer",g={
+o(253150,{c=a[309],type="AsSubGenericObject"}),
+o(253180,{c=a[309],type="AsSubGenericObject"}),
+i(140352,{b=1,c=a[309],f=55,lvl=40,spellID=223602,type="AsSubGenericObject"})}}),
 o(253157,{c=a[309],coords={{45.6,63.7,747}},type="AsGenericObjectContainer",g={
 o(253157,{c=a[309],type="AsSubGenericObject"}),
 o(253183,{c=a[309],type="AsSubGenericObject"}),
@@ -14174,7 +14184,7 @@ s(74661,130324,{b=1,c=a[1665],f=5,lvl=45})}}),
 h(-56,{c=a[1665],g={
 o(252273,{c=a[1665],coords={{31.7,64.7,626}},cost={{"i",139781,1}},g={
 i(139589,{b=1,c=a[1665],lvl=10,spellID=220965})}}),
-o(252267,{c=a[1665],cost={{"i",139781,1}},g={
+o(252267,{c=a[1665],coords={{32.9,67.5,626}},cost={{"i",139781,1}},g={
 s(82408,141408,{c=a[1665],f=5})}}),
 o(252270,{c=a[1665],cost={{"i",139781,1}},g={
 toy(139587,{b=1,c=a[1665],lvl=10,questID=43719})}}),
@@ -32308,8 +32318,8 @@ crit(70046,{achID=40911,u=2}),
 crit(70053,{achID=40911,u=2}),
 crit(70052,{achID=40911,u=2}),
 i(236877,{b=1,u=2})}}),
-ach(41937,{awp=110200,rwp=120000,u=2,g={
-i(240175,{b=1,u=2})}}),
+ach(41937,{awp=110200,g={
+i(240175,{b=1})}}),
 ach(42325,{awp=110200,g={
 i(246737,{b=1,questID=91521,spellID=1245440,tmogSetID=5155,type="ihqt",g={
 d(17,{
