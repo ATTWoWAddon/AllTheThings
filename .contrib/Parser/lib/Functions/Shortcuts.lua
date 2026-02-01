@@ -693,6 +693,10 @@ tokencost = function(tokenItemID, item)				-- Assign a token cost to an item.
 	applycost(item, { "i", tokenItemID, 1 });
 	return item;
 end
+anguish = function(cost, item)						-- Assign a Remnant of Anguish cost to an item.
+	if cost > 0 then applycost(item, { "c", 3392, cost }); end
+	return item;
+end
 bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;

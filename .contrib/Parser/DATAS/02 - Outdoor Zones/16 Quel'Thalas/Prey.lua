@@ -306,6 +306,89 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			filter(RECIPES, {
 			}),
 		}),
+		n(VENDORS, {
+			n(258181, {	-- Construct Ali'a <Decor Specialist>
+				["coord"] = { 55.8, 66.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					anguish(800, i(265794)),	-- Preyseeker's Plinth (DECOR!)
+					anguish(1200, i(265795)),	-- Preyseeker's Ornate Plinth (DECOR!)
+					anguish(800, i(265700)),	-- Preyseeker's Amani Bust (DECOR!)
+					anguish(1200, i(265685)),	-- Preyseeker's Amani Effigy (DECOR!)
+					anguish(800, i(265699)),	-- Preyseeker's Breaker Bust (DECOR!)
+					anguish(1200, i(265684)),	-- Preyseeker's Breaker Effigy (DECOR!)
+					anguish(800, i(265703)),	-- Preyseeker's Consul Bust (DECOR!)
+					anguish(1200, i(265688)),	-- Preyseeker's Consul Effigy (DECOR!)
+					anguish(800, i(265704)),	-- Preyseeker's Executor Bust (DECOR!)
+					anguish(1200, i(265689)),	-- Preyseeker's Executor Effigy (DECOR!)
+					anguish(800, i(265698)),	-- Preyseeker's Ethereal Bust (DECOR!)
+					anguish(1200, i(265683)),	-- Preyseeker's Ethereal Effigy (DECOR!)
+					anguish(800, i(265799)),	-- Preyseeker's Farstrider Bust (DECOR!)
+					anguish(1200, i(265797)),	-- Preyseeker's Farstrider Effigy (DECOR!)
+					anguish(800, i(265705)),	-- Preyseeker's Knight-Errant Bust (DECOR!)
+					anguish(1200, i(265690)),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
+					anguish(800, i(265696)),	-- Preyseeker's Magister Bust (DECOR!)
+					anguish(1200, i(265681)),	-- Preyseeker's Magister Effigy (DECOR!)
+					anguish(800, i(265798)),	-- Preyseeker's Ren'dorei Bust (DECOR!)
+					anguish(1200, i(265796)),	-- Preyseeker's Ren'dorei Effigy (DECOR!)
+					anguish(800, i(265701)),	-- Preyseeker's Rutaani Bust (DECOR!)
+					anguish(1200, i(265686)),	-- Preyseeker's Rutaani Effigy (DECOR!)
+					anguish(800, i(265707)),	-- Preyseeker's Thornspeaker Bust (DECOR!)
+					anguish(1200, i(265692)),	-- Preyseeker's Thornspeaker Effigy (DECOR!)
+					anguish(800, i(265697)),	-- Preyseeker's Tinker Bust (DECOR!)
+					anguish(1200, i(265682)),	-- Preyseeker's Tinker Effigy (DECOR!)
+					anguish(800, i(265708)),	-- Preyseeker's Twilight Bust (DECOR!)
+					anguish(1200, i(265694)),	-- Preyseeker's Twilight Effigy (DECOR!)
+					anguish(800, i(265702)),	-- Preyseeker's Vindicator Bust (DECOR!)
+					anguish(1200, i(265687)),	-- Preyseeker's Vindicator Effigy (DECOR!)
+					anguish(800, i(265706)),	-- Preyseeker's Wretched Bust (DECOR!)
+					anguish(1200, i(265691)),	-- Preyseeker's Wretched Effigy (DECOR!)
+				},
+			}),
+			n(252956, {	-- Construct V'anore <Rewards>
+				["coord"] = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
+					anguish(800, i(264434)),	-- Voldy (PET!) (TODO: previously quest reward in voidstorm?)
+					anguish(2000, i(257191)),	-- Preyseeker's Hubris (MOUNT!)
+					anguish(2550, i(257192)),	-- Preyseeker's Wrath (MOUNT!)
+					anguish(400, i(258022)),	-- Skilled Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(400, i(258024)),	-- Skilled Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258028)),	-- Famed Preyseeker's Plumed Helm (COSMETIC!)
+					anguish(500, i(258026)),	-- Famed Preyseeker's Shoulder-spikes (COSMETIC!)
+					anguish(500, i(258030)),	-- Famed Preyseeker's Knapsack (COSMETIC!)
+					anguish(1600, iensemble(266196)),	-- Ensemble: Preyseeker's Refined Armor
+					anguish(1600, iensemble(266197)),	-- Ensemble: Preyseeker's Sleek Armor
+					anguish(1600, iensemble(266198)),	-- Ensemble: Preyseeker's Rugged Armor
+					anguish(1600, iensemble(266199)),	-- Ensemble: Preyseeker's Polished Armor
+					anguish(800, i(263933)),	-- Preyseeker's Hearthstone (TOY!)
+					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
+					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
+						["cost"] = {
+							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", 3392, 500 },	-- Remnant of Anguish
+						},
+					}),
+				},
+			}),
+		}),
 		n(WORLD_QUESTS, {
 			q(91601, {	-- Prey: Apex Predator
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },

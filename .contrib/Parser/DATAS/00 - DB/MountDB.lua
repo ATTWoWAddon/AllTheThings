@@ -2310,7 +2310,9 @@ i(254735, 1258573);	-- Thunderhoof Celestial
 i(252011, 1253924);	-- Brilliant Petalwing
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(246734, 1243593);	-- Fierce Grimlynx
+i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
+i(257192, 1261337);	-- Preyseeker's Wrath
 i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
 i(257197, 1261348);	-- [DNT] 12.0 Amani Pangolin
@@ -2353,8 +2355,6 @@ i(0, 1266703);	-- Lab-grown Stormray
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(260231, 1265784);	-- Lucent Hawkstrider
 i(260916, 3363);	-- Nether-Warped Drake
-i(257191, 1261336);	-- Preyseeker's Hubris
-i(257192, 1261337);	-- Preyseeker's Wrath
 i(257447, 1261584);	-- Prowling Shredclaw
 i(0, 1261579);	-- Ravenous Shredclaw
 i(0, 1261391);	-- Relinquished Scarlet Charger

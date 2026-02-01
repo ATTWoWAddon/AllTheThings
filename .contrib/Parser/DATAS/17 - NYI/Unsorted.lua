@@ -2644,9 +2644,7 @@ root(ROOTS.Unsorted, {
 			i(256750),	-- Formula: Enchant Weapon - Worldsoul Cradle
 			i(256752),	-- Formula: Enchant Ring - Nature's Fury
 			i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance
-			i(256754),	-- Formula: Enchant Shoulders - Nature's Embrace
 			i(256755),	-- Formula: Enchant Chest - Mark of the Magister
-			i(256756),	-- Formula: Enchant Boots - Farstrider's Hunt
 			i(256757),	-- Formula: Enchant Weapon - Acuity of the Ren'dorei
 			i(256758),	-- Formula: Enchant Tool - Ren'dorei Ingenuity
 			i(256759),	-- Formula: Enchant Weapon - Flames of the Sin'dorei
@@ -2691,8 +2689,6 @@ root(ROOTS.Unsorted, {
 
 			-- Mount
 			i(257142),	-- Fiery Dragonhawk
-			i(257191),	-- Preyseeker's Hubris
-			i(257192),	-- Preyseeker's Wrath
 			-- Misc
 			i(257149),	-- Old Tome \\ [DNT] Old Tome
 
@@ -2822,15 +2818,10 @@ root(ROOTS.Unsorted, {
 			i(257903),	-- Ripe Tower Lettuce
 
 			-- Prey
-			i(258022),	-- Skilled Preyseeker's Plumed Helm
 			i(258023),	-- Skilled Preyseeker's Knapsack
-			i(258024),	-- Skilled Preyseeker's Shoulder-spikes
 			i(258025),	-- Pattern: Sunfire Silk Lining
-			i(258026),	-- Famed Preyseeker's Shoulder-spikes
 			i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
-			i(258028),	-- Famed Preyseeker's Plumed Helm
 			i(258029),	-- Vaunted Preyseeker's Plumed Helm
-			i(258030),	-- Famed Preyseeker's Knapsack
 			i(258031),	-- Vaunted Preyseeker's Knapsack
 			i(258032),	-- Ensemble: Skilled Preyseeker's Attire
 
@@ -3136,9 +3127,6 @@ root(ROOTS.Unsorted, {
 
 			-- Prey
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
-
-			-- Pet
-			i(259991),	-- Lil' Preyseeker
 
 			-- Cache
 			i(259996),	-- Quel'Thalas Equipment Chest
@@ -3801,7 +3789,6 @@ root(ROOTS.Unsorted, {
 			i(263897),	-- Radiant Jewelbinder
 			i(263934),	-- Chest of Gold
 			-- Toy
-			i(263933),	-- Astalor's Summons
 			i(263938),	-- Idol of Peril \\ [PH] Shark Loa Blessing
 			i(263975),	-- Feeling Fielder Mk. 7
 			-- qi
@@ -3940,7 +3927,6 @@ root(ROOTS.Unsorted, {
 			i(263303),	-- Cuddly Blue Grrgle
 
 			-- Toy
-			i(264666),	-- Rod of Exanguishation
 			i(264672),	-- Cosmic Ritual Stone
 			-- Boon
 			i(264668),	-- Boon of Speed
@@ -4370,8 +4356,6 @@ root(ROOTS.Unsorted, {
 			i(264345),	-- Galactic Commander's Orb
 			i(264482),	-- Void Elf Torch
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
-			i(265794),	-- Preyseeker's Plinth
-			i(265795),	-- Preyseeker's Ornate Plinth
 			i(265995),	-- Quel'Thalas Adventurer's Cache
 			i(265997),	-- Blood Knight Champion's Tabard
 			i(266075),	-- Harpoon of Extirpation
@@ -4408,10 +4392,6 @@ root(ROOTS.Unsorted, {
 			i(266125),	-- Priestess' Starblade
 			i(266160),	-- Trapper's Green Slippers
 			i(266183),	-- Enigmatic Voidclarion
-			i(266196),	-- Ensemble: Preyseeker's Refined Armor
-			i(266197),	-- Ensemble: Preyseeker's Sleek Armor
-			i(266198),	-- Ensemble: Preyseeker's Rugged Armor
-			i(266199),	-- Ensemble: Preyseeker's Polished Armor
 			i(266213),	-- Incense Materials
 			i(266314),	-- Novice Combatant's Necklace
 			i(266317),	-- Novice Combatant's Ring
@@ -4642,8 +4622,6 @@ root(ROOTS.Unsorted, {
 			i(267394),	-- Technique: Homely Sin'dorei Shelf
 			i(267395),	-- Technique: Homely Wall Shelves
 			i(267396),	-- Technique: Restful Bronze Bench
-			i(267399),	-- Technique: Sturdy Ren'dorei Cask
-			i(267400),	-- Technique: Wild Hanging Scroll
 			i(267401),	-- Dawn Shatter
 
 			-- Armor

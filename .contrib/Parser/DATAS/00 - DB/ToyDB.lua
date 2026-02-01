@@ -1544,6 +1544,8 @@ i(64457);	-- Last Relic of Argus
 i(267456);	-- Lil' Scoots' Pillow
 i(251491);	-- Magical Pet Clicker
 i(268717);	-- Pango Plating
+i(263933);	-- Preyseeker's Hearthstone
+i(264666);	-- Rod of Exanguishation
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256552);	-- Verdant Rutaani Seed
@@ -1552,7 +1554,6 @@ i(256893);	-- Wretched Dredger's Brand
 i(257736);	-- [DNT] [PH] 12.0 Holy Hearthstone
 i(243146);	-- [DNT] Ren'dorei Struggle
 i(250974);	-- Akil'zon's Updraft
-i(263933);	-- Astalor's Summons
 i(251633);	-- Bursting Bounty Bundle
 i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone
@@ -1570,7 +1571,6 @@ i(264414);	-- Midnight Delver's Flare Gun
 i(253629);	-- Personal Key to the Arcantina
 i(262431);	-- Pocket Mushroom Jump Pad
 i(251903);	-- Potatoad Egg
-i(264666);	-- Rod of Exanguishation
 i(268728);	-- Saptor Salve
 i(250319);	-- Shadowgraft
 i(258963);	-- Shroom Jumper's Parachute
