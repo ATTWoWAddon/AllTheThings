@@ -418,41 +418,10 @@ end, true)
 -- Old Implementation (Deprecated!)
 -- Store the Custom Windows Update functions which are required by specific Windows
 do
-	local customWindowInits = {};
-	local customWindowUpdates = { params = {} };
-	-- Returns the Custom Update function based on the Window suffix if existing
-	function app:CustomWindowInit(suffix)
-		return customWindowInits[suffix];
-	end
+	local customWindowUpdates = {};
 	-- Returns the Custom Update function based on the Window suffix if existing
 	function app:CustomWindowUpdate(suffix)
 		return customWindowUpdates[suffix];
-	end
-	-- Retrieves the value of the specific attribute for the given window suffix
-	app.GetCustomWindowParam = function(suffix, name)
-		local params = customWindowUpdates.params[suffix];
-		-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-		return params and params[name] or nil;
-	end
-	-- Defines the value of the specific attribute for the given window suffix
-	app.SetCustomWindowParam = function(suffix, name, value)
-		local params = customWindowUpdates.params;
-		if params[suffix] then params[suffix][name] = value;
-		else params[suffix] = { [name] = value } end
-		-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
-	end
-	-- Removes the custom attributes for a given window suffix
-	app.ResetCustomWindowParam = function(suffix)
-		customWindowUpdates.params[suffix] = nil;
-		-- app.PrintDebug("ResetCustomWindowParam",suffix)
-	end
-	-- Allows externally adding custom window init logic which doesn't exist already
-	app.AddCustomWindowOnInit = function(customName, onInit)
-		if customWindowInits[customName] then
-			app.print("Cannot replace Custom Window: "..customName)
-		end
-		-- app.print("Added",customName)
-		customWindowInits[customName] = onInit
 	end
 	-- Allows externally adding custom window update logic which doesn't exist already
 	app.AddCustomWindowOnUpdate = function(customName, onUpdate)
@@ -2383,7 +2352,6 @@ local function BuildWindow(suffix)
 	if not definition then
 		-- Deprecated, but supported in Retail for now.
 		definition = {
-			OnInit = app:CustomWindowInit(suffix),
 			OnUpdate = app:CustomWindowUpdate(suffix),
 		};
 		app.WindowDefinitions[suffix] = definition;
