@@ -71,14 +71,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 			}),
-			n(175574, {	-- Angler Danica
-				i(180136),	-- The Brokers Angle'r
+			n(175574, {	-- Angler Danica <Fishing Supplies>
+				["coord"] = { 49.6, 63.2, BASTION },
+				["groups"] = { i(180136) },	-- The Brokers Angle'r
 			}),
 			n(171526, {	-- Kobri <Refreshments>
 				["coord"] = { 52.6, 47.4, BASTION },
-				["groups"] = {
-					i(180788),	-- Memorial Wine
-				},
+				["groups"] = { i(180788) },	-- Memorial Wine
 			}),
 			n(158625, {	-- Trader Ta'bix
 				["coord"] = { 33.4, 36.4, BASTION },

@@ -2412,6 +2412,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 			}),
+			n(SPECIAL, {
+				hqt(53653, {	-- Speak to Wan'be at Frostsaber Rock in Winterspring
+					["name"] = "Speak to Wan'be at Frostsaber Rock in Winterspring",
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 46.4, 18.1, WINTERSPRING },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
+				}),
+			}),
 			-- #if BEFORE 3.1.0
 			prof(SKINNING, {
 				i(15422, {	-- Frostsaber Leather

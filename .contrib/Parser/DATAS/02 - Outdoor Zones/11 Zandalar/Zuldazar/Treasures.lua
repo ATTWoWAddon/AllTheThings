@@ -47,6 +47,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50949,
 				["coord"] = { 71.8, 16.7, ZULDAZAR },
 			}),
+			o(296454, {	-- Wan'be's Buried Goods
+				["sourceQuest"] = 53656,	-- Speak to Wan'be in Blackrock Mountain
+				["questID"] = 53657,
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 0.5,
+				["coord"] = { 63.6, 9.8, ZULDAZAR },
+			}),
 			o(277561, {	-- Warlord's Cache
 				["questID"] = 49257,
 				["coord"] = { 49.5, 65.3, ZULDAZAR },

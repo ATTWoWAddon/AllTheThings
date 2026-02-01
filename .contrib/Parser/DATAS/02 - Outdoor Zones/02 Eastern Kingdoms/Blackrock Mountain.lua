@@ -64,6 +64,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			n(SPECIAL, {
+				hqt(53656, {	-- Speak to Wan'be in Blackrock Mountain
+					["name"] = "Speak to Wan'be in Blackrock Mountain",
+					["sourceQuest"] = 53655,	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
+					["providers"] = {
+						{ "n", 143129 },	-- Wan'be <The Explorer>
+						{ "i", 163213 },	-- Ghostly Explorer's Skull
+					},
+					["coord"] = { 66.1, 96.6, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_0_1 },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226694, {	-- Rune of Defense Specialization
