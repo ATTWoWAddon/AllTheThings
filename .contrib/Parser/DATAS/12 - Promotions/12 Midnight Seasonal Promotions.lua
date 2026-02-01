@@ -59,6 +59,40 @@ root(ROOTS.Promotions, {
 				["timeline"] = { REMOVED_12_0_X_LAUNCH },
 				["groups"] = { i(260785) },	-- The Dark Portal (DECOR!)
 			}),
+			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
+				-- #if AFTER 12.0.0
+				-- #if BEFORE 12.1.0
+				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
+				-- #endif
+				-- #endif
+				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
+				["groups"] = {
+					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!)
+					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!)
+					-- todo: add Golden Ashened Cataclysm reskin of the Obsidian Worldbreaker
+					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
+					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
+					cnONLY(i(49285)),	-- X-51 Nether-Rocket
+				--	cnONLY(i()),	-- Azure Dragon Soaring Flame
+				--	cnONLY(i()),	-- Blazing Fire Sandbox Horse
+					cnONLY(i(46779)),	-- Path of Cenarius
+				},
+			})),
+			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+				-- #if AFTER 12.0.0
+				-- #if BEFORE 12.1.0
+				--["description"] = "todo: add price",
+				-- #endif
+				-- #endif
+				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
+				["groups"] = {
+					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
+					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(i(253402)),	-- Scorching Polearm
+					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
+				},
+			})),
 			-- Season 1
 
 			-- Season 2

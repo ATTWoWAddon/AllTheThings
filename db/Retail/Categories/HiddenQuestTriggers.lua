@@ -7181,7 +7181,6 @@ h(-45,{
 q(90806,{type="hqt"})})}),
 m(2395,{
 h(-45,{
-q(86645,{type="hqt"}),
 q(92848,{type="hqt"}),
 q(93793,{type="hqt"})}),
 h(-46,{
@@ -7192,8 +7191,10 @@ q(94686,{type="hqt"}),
 q(94696,{type="hqt"}),
 q(94694,{type="hqt"}),
 q(94682,{type="hqt"}),
+q(94688,{type="hqt"}),
 q(94693,{type="hqt"}),
 q(94695,{type="hqt"}),
+q(94684,{type="hqt"}),
 q(94681,{type="hqt"})})}),
 h(-686,{
 h(-45,{
@@ -7227,7 +7228,8 @@ q(89247,{repeatable=1,type="hqt"}),
 q(95247,{awp=120000,type="hqt"})}),
 m(2405,{maps={2526,2527},g={
 h(-45,{
-q(92633,{repeatable=1,type="hqt"})}),
+q(92633,{repeatable=1,type="hqt"}),
+q(94743,{type="hqt"})}),
 h(-681,{
 h(-45,{
 q(91464,{type="hqt"}),
@@ -7236,7 +7238,9 @@ m(2437,{maps={2536},g={
 h(-45,{
 q(91965,{repeatable=1,type="hqt"}),
 q(91964,{repeatable=1,type="hqt"}),
-q(94866,{type="hqt"})})}})}),
+q(94866,{type="hqt"})}),
+h(-46,{
+q(94704,{type="hqt"})})}})}),
 m(2541,{icon=_.asset("Arcantina"),g={
 h(-45,{
 q(92378,{type="hqt"}),

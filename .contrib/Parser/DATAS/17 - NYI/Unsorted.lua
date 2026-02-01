@@ -1519,8 +1519,6 @@ root(ROOTS.Unsorted, {
 			-- Prof
 			i(246585),	-- Artisan's Consortium Payout \\ DNT - Artisan's Consortium Payout
 
-			-- Mount
-			i(246590),	-- Ashes of Belo'ren
 			-- QI
 			i(246621),	-- Venomous Horn
 			i(246729),	-- Fang of Shadra
