@@ -2886,12 +2886,6 @@ function app:CreateWindow(suffix, definition)
 	end
 end
 function app:GetWindow(suffix)
-	if app.GetCustomWindowParam(suffix, "reset") then
-		app.Windows[suffix] = nil;
-		if suffix ~= "Added With Patch" then	-- don't spam for this window for now
-			app.print("Reset Window",suffix);
-		end
-	end
 	return app.Windows[suffix] or BuildWindow(suffix);
 end
 
