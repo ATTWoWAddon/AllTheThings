@@ -128,9 +128,9 @@ app:CreateWindow("list", {
 		IsHarvesting = params.harvesting;
 		OnlyMissing = params.missing;
 		OnlyCached = params.cached;
+		wipe(self.data.g);
+		self:Update(true);
 		if self:IsShown() then
-			wipe(self.data.g);
-			self:Update(true);
 			return true;
 		end
 	end,
