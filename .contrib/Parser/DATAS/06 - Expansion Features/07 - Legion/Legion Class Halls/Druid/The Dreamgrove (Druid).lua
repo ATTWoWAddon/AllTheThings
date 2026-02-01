@@ -1218,6 +1218,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					["modelScale"] = 2.25,
 				}),
 				n(TREASURES, {
+					o_repeated({	-- Dreamberry
+						["coord"] = { 45.3, 62.9, THE_DREAMGROVE },
+						["groups"] = {
+							o(253150),	-- Dreamberry
+							o(253180),	-- Dreamberry
+							i(140352),	-- Dreamberries
+						},
+					}),
 					o_repeated({	-- Spirit Berries
 						["coord"] = { 45.6, 63.7, THE_DREAMGROVE },
 						["groups"] = {

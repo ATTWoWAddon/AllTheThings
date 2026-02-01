@@ -769,9 +769,10 @@ i(128411, 190383);	-- Mass Mill Gorgrond Flytrap
 i(128413, 190385);	-- Mass Mill Nagrand Arrowbloom
 i(128412, 190384);	-- Mass Mill Starflower
 i(128414, 190386);	-- Mass Mill Talador Orchid
+i(127723, 187495);	-- Mighty Ensorcelled Tarot
 i(127728, 187494);	-- Mighty Weapon Crystal
-i(127746, 187518);	-- Savage Weapon Crystal
 i(127741, 187519);	-- Savage Ensorcelled Tarot
+i(127746, 187518);	-- Savage Weapon Crystal
 
 
 ----------------- Not sorted yet
@@ -782,7 +783,6 @@ i(0, 178497);	-- Warbinder's Ink
 i(0, 178550);	-- Draenic Mortar
 i(0, 165804);	-- Warmaster's Firestick
 i(0, 178248);	-- Ensorcelled Tarot
-i(0, 187495);	-- Mighty Ensorcelled Tarot
 i(0, 175392);	-- Savage Tarot
 i(0, 163294);	-- Darkmoon Card of Draenor
 i(0, 175390);	-- Laughing Tarot

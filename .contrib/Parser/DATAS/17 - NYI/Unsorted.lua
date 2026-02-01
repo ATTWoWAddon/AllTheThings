@@ -3600,8 +3600,6 @@ root(ROOTS.Unsorted, {
 			i(262871),	-- Snowy Dunecloth Vest
 			i(262872),	-- Sunny Dunecloth Vest
 
-			-- Misc
-			i(262880),	-- Vintage Purple Stuff
 
 			-- Inscr
 			i(262908),	-- Milling
@@ -5264,11 +5262,6 @@ root(ROOTS.Unsorted, {
 				i(260532),	-- Tuskarr Dinner Bell
 				i(260533),	-- Oddsight Focus
 				i(260589),	-- Flame-Blessed Beach Towel
-				-- Misc What happened??!
-				i(262562),	-- Bolt of Pressed Linen
-				i(262563),	-- Bolt of Elegant Silk
-				i(262564),	-- Bolt of Soft Wool
-				i(262565),	-- Spool of Thread
 				-- house?
 				i(249386),	-- Ghost Gear
 			}),
@@ -7046,7 +7039,6 @@ root(ROOTS.Unsorted, {
 			i(166535),	-- Relinquished Azerite Chestpiece
 			i(166536),	-- Relinquished Azerite Chestpiece
 			i(166537),	-- Relinquished Azerite Chestpiece
-			i(166545),	-- Befuddlin' Brew
 			i(166728),	-- Carefully Removed Spleen
 			i(166741),	-- Nomi's Grocery Tote
 			i(166742),	-- Blue-Ribbon Pandaren Chili

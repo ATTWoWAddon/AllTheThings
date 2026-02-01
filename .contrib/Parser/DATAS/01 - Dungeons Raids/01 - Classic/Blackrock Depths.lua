@@ -2802,13 +2802,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_4_0_1,
-								-- #endif
-							},
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { REMOVED_1_15_3 },
+							-- #endif
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow

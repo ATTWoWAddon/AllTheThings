@@ -2901,6 +2901,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(261262, {	-- Gabbi <Promotional Decor Resupply>
+					["coord"] = { 48.4, 81.0, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_12_0_0 },
+					["groups"] = {
+						i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
+							["sourceAchievement"] = 62387,	-- It's Nearly Midnight
+							["cost"] = 14000000,	-- 1400g
+						}),
+					},
+				}),
 				n(52036, pvp({	-- Galra <Honor Heirlooms>
 					["coord"] = { 38.0, 70.8, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_6 },

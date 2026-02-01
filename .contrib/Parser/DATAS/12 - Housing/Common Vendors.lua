@@ -439,4 +439,15 @@ root(ROOTS.Housing, {
 			}),
 		},
 	}),
+	n(VENDORS, {
+		n(255654, {	-- Lorisin
+			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },
+			["groups"] = {
+				i(262562),	-- Bolt of Pressed Linen
+				i(262563),	-- Bolt of Elegant Silk
+				i(262564),	-- Bolt of Soft Wool
+				i(262565),	-- Spool of Thread
+			},
+		}),
+	}),
 })

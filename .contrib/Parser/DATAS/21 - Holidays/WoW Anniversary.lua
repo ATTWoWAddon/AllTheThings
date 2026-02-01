@@ -3059,6 +3059,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							["coord"] = { 63.3, 52.4, TANARIS },
 							["timeline"] = { "removed 11.0.7.58238" },
 							["groups"] = {
+								i(232005),	-- Cryptic Crostini
+								i(232006),	-- Detective's Delight
+								i(232009),	-- Riddle Wraps
+								i(232007),	-- Sleuth's Sip
 								i(229351),	-- Spiritual Incense
 								i(229375),	-- Neural Enlarger
 							},

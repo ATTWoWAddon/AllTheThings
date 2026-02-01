@@ -888,8 +888,14 @@ L.ZONE_DESC = "Click this button to select a random zone based on what you're mi
 -- Category Database Module
 _.CategoryNames = {
 	[3] = "Tarot Decks",
+	[103] = "Off-hand",
+	[104] = "Ink",
+	[105] = "Clear Mind",
 	[106] = "Card",
 	[107] = "Scrolls",
+	[108] = "Research",
+	[114] = "Other",
+	[119] = "Shoulder Inscription",
 	[227] = AUCTION_CATEGORY_WEAPONS,
 	[251] = HEADSLOT,
 	[252] = SHOULDERSLOT,
@@ -899,11 +905,28 @@ _.CategoryNames = {
 	[256] = WAISTSLOT,
 	[257] = LEGSSLOT,
 	[258] = FEETSLOT,
+	[403] = "Merchant Orders",
+	[414] = "Reagents and Research",
+	[420] = "Tools",
+	[778] = "Staves & Off-Hands",
+	[779] = "Inks",
+	[780] = "Cards",
+	[781] = "Scrolls & Research",
+	[783] = "Toys & Pets",
+	[785] = "Inks",
+	[787] = "Scrolls & Research",
+	[788] = "Cards",
+	[789] = "Shoulder Inscription",
+	[790] = "Weapons & Off-Hands",
+	[791] = "Quest",
+	[798] = "Shoulder Inscription",
 }
 _.CategoryIcons = {
 	[3] = 134492,
+	[104] = 237070,
 	[106] = 134492,
 	[107] = 134939,
+	[108] = 134331,
 	[227] = 135580,
 	[251] = 133076,
 	[252] = 135032,
@@ -913,6 +936,12 @@ _.CategoryIcons = {
 	[256] = 132513,
 	[257] = 134592,
 	[258] = 132544,
+	[414] = 134331,
+	[779] = 237070,
+	[781] = 134331,
+	[785] = 237070,
+	[787] = 134331,
+	[790] = 135792,
 }
 
 -- Custom Header Database Module
@@ -24845,6 +24874,11 @@ L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um 
 L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch noch fehlt.";
 localize(_.CategoryNames, {
 	[3] = "Tarotkarten",
+	[104] = "Tinte",
+	[105] = "Klaren Geistes",
+	[108] = "Forschung",
+	[779] = "Tinte",
+	[785] = "Tinte",
 });
 localize(L.HEADER_NAMES, {
 	[-6] = "Verbündete Völker",
@@ -32080,7 +32114,12 @@ L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !";
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque.";
 localize(_.CategoryNames, {
 	[3] = "Jeu de tarot",
+	[104] = "Encre",
+	[105] = "L’esprit ouvert",
 	[106] = "Carte",
+	[108] = "Recherches",
+	[779] = "Encre",
+	[785] = "Encre",
 });
 localize(L.HEADER_NAMES, {
 	[-2] = "Est",
@@ -39063,7 +39102,12 @@ L.TITLES_CHECKBOX = "Titoli";
 L.TRADING_POST = "Emporio";
 localize(_.CategoryNames, {
 	[3] = "Mazzo di Tarocchi",
+	[104] = "Tinta",
+	[105] = "Vuoto Mentale",
 	[106] = "Carta",
+	[108] = "Ricerca",
+	[779] = "Tinta",
+	[785] = "Tinta",
 });
 localize(L.HEADER_NAMES, {
 	[-6] = "Razze Alleate",
@@ -45325,7 +45369,12 @@ L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar.";
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso.";
 localize(_.CategoryNames, {
 	[3] = "Baralho de Tarô",
+	[104] = "Tinta",
+	[105] = "Mente Limpa",
 	[106] = "Carta",
+	[108] = "Pesquisa",
+	[779] = "Tinta",
+	[785] = "Tinta",
 });
 localize(L.HEADER_NAMES, {
 	[-6] = "Raças Aliadas",
@@ -52639,7 +52688,12 @@ L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!";
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках.";
 localize(_.CategoryNames, {
 	[3] = "карт Таро",
+	[104] = "Чернила",
+	[105] = "ясного разума",
 	[106] = "Карты",
+	[108] = "Исследование",
+	[779] = "Чернила",
+	[785] = "Чернила",
 });
 localize(L.HEADER_NAMES, {
 	[-2] = "Восток",
@@ -59767,6 +59821,18 @@ L.TITLES_CHECKBOX = "칭호";
 L.TRADING_POST = "교역소";
 localize(_.CategoryNames, {
 	[3] = "카드 묶음",
+	[104] = "잉크",
+	[105] = "맑은 정신의",
+	[108] = "연구",
+	[114] = "다른",
+	[119] = "어깨 마법부여",
+	[414] = "재료 & 연구",
+	[420] = "장비",
+	[779] = "잉크",
+	[785] = "잉크",
+	[789] = "어깨 마법부여",
+	[790] = "무기",
+	[798] = "어깨 마법부여",
 });
 localize(L.HEADER_NAMES, {
 	[-6] = "동맹 종족",
@@ -66685,8 +66751,29 @@ L.YOU_DID_IT = "¡LO LOGRASTE! ";
 L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basado en lo que te falta.";
 localize(_.CategoryNames, {
 	[3] = "Baraja de Tarot",
+	[103] = "Mano izquierda",
+	[104] = "Tinta",
+	[105] = "Mente clara",
 	[106] = "Carta",
 	[107] = "Pergaminos",
+	[108] = "Investigación",
+	[114] = "Otro",
+	[119] = "Inscripción de hombros",
+	[403] = "Pedidos de mercader",
+	[414] = "Componentes e investigación",
+	[420] = "Herramientas",
+	[778] = "Bastones y mano izquierda",
+	[779] = "Tintas",
+	[780] = "Cartas",
+	[781] = "Pergaminos e investigación",
+	[783] = "Juguetes y mascotas",
+	[785] = "Tintas",
+	[787] = "Pergaminos e investigación",
+	[788] = "Cartas",
+	[789] = "Inscripción de hombros",
+	[790] = "Armas y mano izquierda",
+	[791] = "Misión",
+	[798] = "Inscripción de hombros",
 });
 localize(L.HEADER_NAMES, {
 	[-2] = "Este",
@@ -73856,6 +73943,7 @@ L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso";
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta.";
 localize(_.CategoryNames, {
 	[3] = "Naipe de Tarot",
+	[403] = "Ordenes de mercader",
 });
 localize(L.HEADER_NAMES, {
 	[-9] = "Armadura legada",

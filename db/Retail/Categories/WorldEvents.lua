@@ -18357,7 +18357,7 @@ s(8506,21521,{b=1,f=25,lvl=25,u=2}),
 s(8505,21520,{b=1,f=25,lvl=25,u=2})}}),
 q(8734,{coords={{37.5,47.9,57}},minReputation=a[482],qgs={15624},sourceQuests={8733},u=2}),
 q(8286,{coords={a[321]},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",qgs=a[107],u=2})}})}}),
-h(-106,{awp=110105,e=450,maps={1978,2022,2023,2024,2025,2085,2112,2133,2151,2200,2213,2214,2215,2216,2248,2255,2256,2274,2328,2339,2369},g={
+h(-106,{awp=110105,e=450,g={
 i(235054,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
 h(-88,{e=450,g={
 h(-89,{e=450,g={

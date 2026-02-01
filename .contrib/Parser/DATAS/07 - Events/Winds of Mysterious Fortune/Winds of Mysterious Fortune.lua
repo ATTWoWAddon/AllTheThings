@@ -1,4 +1,5 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+	-- #if BEFORE MID
 	["maps"] = {
 		DRAGON_ISLES,
 		EMERALD_DREAM,
@@ -22,6 +23,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 		THE_PROSCENIUM,	-- Theatre Troupe location
 		THE_RINGING_DEEPS,
 	},
+	-- #endif
 	["groups"] = {
 		i(235054, {	-- Pristine Mysterious Satchel
 			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",

@@ -2395,10 +2395,8 @@ i(228628);	-- Yawning Basket of Aspect's Awakened Crests
 ------------------
 i(232380);	-- Brivelthwerp's Sassafras Float
 i(232376);	-- Cherry Bombs
-i(232005);	-- Cryptic Crostini
 i(229830);	-- Dark Blue Balloon
 i(221485);	-- Defias Gunpowder
-i(232006);	-- Detective's Delight
 i(232385);	-- Elekk Ear
 i(224194);	-- Fashion Frenzy Ribbon
 i(232011);	-- Finder's Flare
@@ -2407,8 +2405,6 @@ i(232374);	-- Greasy Links
 i(229829);	-- Light Blue Balloon
 i(232375);	-- Moon Bread
 i(232377);	-- Pappy Thunderbrew's Cough Syrup
-i(232009);	-- Riddle Wraps
-i(232007);	-- Sleuth's Sip
 i(230283);	-- Weird Egg
 
 ------------------

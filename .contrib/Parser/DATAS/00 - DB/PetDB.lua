@@ -4166,7 +4166,6 @@ i(221764, 4519);	-- Burntram
 i(222979, 4545);	-- Clay Stonecharger
 i(0, 4484);			-- Frenzied Bloodtick
 i(221195, 4458);	-- Illskitter
-i(221492, 4459);	-- Moss Skipper
 i(221759, 4512);	-- Sceaduthax
 i(221493, 0);		-- Admiral
 i(223803, 0);		-- Blue Stagshell
@@ -4530,6 +4529,7 @@ i(250143, 4883);	-- Dragonhawk Mosswing
 i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
 i(250146, 4885);	-- Gloom Toad
+i(221492, 4459);	-- Moss Skipper
 i(250137, 4876);	-- Mud Potadpole
 i(250145, 4884);	-- Pangolil
 i(244911, 4830);	-- Rhay'Dahr

@@ -2,51 +2,51 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 
-Endeavor = createHeader({
+ENDEAVOR = createHeader({
 	readable = "Endeavor",
 	icon = 134495,
 	text = {
 		en = "Endeavor",
 	},
 });
-Kareshi_Endeavor = createHeader({
+KARESHI_ENDEAVOR = createHeader({
 	readable = "K'areshi Endeavor",
-	icon = 134495,
+	icon = 7413585,
 	text = {
 		en = "K'areshi Endeavor",
 	},
 });
-Grummle_Endeavor = createHeader({
+GRUMMLE_ENDEAVOR = createHeader({
 	readable = "Grummle Endeavor",
-	icon = 134495,
+	icon = 7301740,
 	text = {
 		en = "Grummle Endeavor",
 	},
 });
-Niffen_Endeavor = createHeader({
+NIFFEN_ENDEAVOR = createHeader({
 	readable = "Niffen Endeavor",
-	icon = 134495,
+	icon = 7413586,
 	text = {
 		en = "Niffen Endeavor",
 	},
 });
-Sindorei_Endeavor = createHeader({
+SINDOREI_ENDEAVOR = createHeader({
 	readable = "Sin'dorei Endeavor",
-	icon = 134495,
+	icon = 7301737,
 	text = {
 		en = "Sin'dorei Endeavor",
 	},
 });
-Draconic_Endeavor = createHeader({
+DRACONIC_ENDEAVOR = createHeader({
 	readable = "Draconic Endeavor",
-	icon = 134495,
+	icon = 7301738,
 	text = {
 		en = "Draconic Endeavor",
 	},
 });
-Mechagnome_Endeavor = createHeader({
+MECHAGNOME_ENDEAVOR = createHeader({
 	readable = "Mechagnome Endeavor",
-	icon = 134495,
+	icon = 7301741,
 	text = {
 		en = "Mechagnome Endeavor",
 	},
@@ -64,7 +64,7 @@ local i_DecorCoupons = function(itemID, couponCost)
 	})
 end
 
-root(ROOTS.Housing, n(Endeavor, {
+root(ROOTS.Housing, n(ENDEAVOR, {
 	["timeline"] = { ADDED_12_0_0 },
 	["groups"] = {
 		filter(MISC, {
@@ -98,7 +98,7 @@ root(ROOTS.Housing, n(Endeavor, {
 				["qg"] = 250970, -- Yolan Hidor
 				["coords"] = {
 					{ 53.2, 38.0, FOUNDERS_POINT },
-					-- { X, Y, RAZORWIND_SHORES },
+					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
 			}),
 			q(92402, {	-- Magical Touch
@@ -157,7 +157,7 @@ root(ROOTS.Housing, n(Endeavor, {
 		n(TREASURES, {
 		}),
 		n(VENDORS, {
-			n(Draconic_Endeavor, {
+			n(DRACONIC_ENDEAVOR, {
 				n(250820, {	-- Hordranin <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -176,7 +176,7 @@ root(ROOTS.Housing, n(Endeavor, {
 					},
 				}),
 			}),
-			n(Grummle_Endeavor, {
+			n(GRUMMLE_ENDEAVOR, {
 				n(249684, {	-- Brother Dovetail <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -197,8 +197,8 @@ root(ROOTS.Housing, n(Endeavor, {
 						i_DecorCoupons(252040, 5),	-- Sealed Sack of Roasted Kafa (DECOR!)
 					},
 				}),
-			}),	
-			n(Kareshi_Endeavor, {
+			}),
+			n(KARESHI_ENDEAVOR, {
 				n(252605, {	-- Aeeshna <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -217,7 +217,7 @@ root(ROOTS.Housing, n(Endeavor, {
 					},
 				}),
 			}),
-			n(Mechagnome_Endeavor, {
+			n(MECHAGNOME_ENDEAVOR, {
 				n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -241,7 +241,7 @@ root(ROOTS.Housing, n(Endeavor, {
 					},
 				}),
 			}),
-			n(Niffen_Endeavor, {
+			n(NIFFEN_ENDEAVOR, {
 				n(257897, {	-- Harlowe Marl <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -261,7 +261,7 @@ root(ROOTS.Housing, n(Endeavor, {
 					},
 				}),
 			}),
-			n(Sindorei_Endeavor, {
+			n(SINDOREI_ENDEAVOR, {
 				n(252917, {	-- Hesta Forlath <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
 					["groups"] = {
@@ -290,7 +290,7 @@ root(ROOTS.Housing, n(Endeavor, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
-		n(Endeavor, {
+		n(ENDEAVOR, {
 			n(QUESTS, {
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
 			}),

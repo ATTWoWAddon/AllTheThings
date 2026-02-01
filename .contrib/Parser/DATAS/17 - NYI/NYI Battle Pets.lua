@@ -1475,9 +1475,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(221195, {	-- Illskitter (PET!)
 				["displayID"] = 116507,
 			}),
-			i(221492, {	-- Moss Skipper (PET!)
-				["displayID"] = 114832,
-			}),
 			i(221759, {	-- Sceaduthax (PET!)
 				["displayID"] = 114510,
 			}),
