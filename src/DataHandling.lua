@@ -496,7 +496,7 @@ local function DirectGroupUpdate(group, got)
 		return
 	end
 	local prevTotal, prevProg, prevCost, prevUpgrade
-		= group.total, group.progress, group.costTotal, group.upgradeTotal
+		= group.total or 0, group.progress or 0, group.costTotal or 0, group.upgradeTotal or 0
 	TopLevelUpdateGroup(group)
 	local progChange, totalChange, costChange, upgradeChange
 		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade

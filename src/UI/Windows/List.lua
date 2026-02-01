@@ -8,6 +8,9 @@ local coroutine, getmetatable, setmetatable, ipairs, pairs, rawget, rawset, trem
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Implementation
+local DataType, MinimumID, MaximumID, PartitionSize = "questID", 1, 1000, 1000;
+local BuildFromCache, OnlyMissing, OnlyCached, OnlyCollected, IsHarvesting;
+
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 ---@return table?
 local function GetPopulatedQuestObject(questID)
@@ -25,9 +28,55 @@ local function GetPopulatedQuestObject(questID)
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
-
-local DataType, MinimumID, MaximumID, PartitionSize = "quest", 1, 1000, 1000;
-local OnlyMissing, OnlyCached, OnlyCollected, IsHarvesting;
+local BaseObjectTypeFuncs = {
+	questID = GetPopulatedQuestObject,
+};
+local ObjectTypeFuncs = setmetatable({}, {
+	__index = BaseObjectTypeFuncs
+});
+local function CreateTypeObject(type, id)
+	-- app.PrintDebug("DLO-Obj:",type,id)
+	local func = ObjectTypeFuncs[type];
+	if func then return func(id); end
+	-- Simply a visible table whose Base will be the actual referenced object
+	return setmetatable({ visible = true }, {
+		__index = app.SearchForObject(DataType, id, "key")
+			or app.SearchForObject(type, id, "field")
+			or app.__CreateObject({[type]=id})
+	});
+end
+local function BuildDataFromCache()
+	-- special data type to utilize an ATT cache instead of generating raw groups
+	-- "cache:item"
+	-- => itemID
+	-- fill all items from the cache into list, sorted by id
+	
+	-- collect valid id values
+	local ValidKeys, cacheID = {}, nil;
+	for id,groups in pairs(app.GetRawFieldContainer(DataType) or app.EmptyTable) do
+		for index,o in ipairs(groups) do
+			cacheID = tonumber(o.modItemID or o[DataType]) or 0;
+			if cacheID ~= 0 then ValidKeys[cacheID] = true; end
+		end
+	end
+	local CacheFields = {};
+	for id,_ in pairs(ValidKeys) do
+		CacheFields[#CacheFields + 1] = id
+	end
+	app.Sort(CacheFields, app.SortDefaults.Values);
+	ObjectTypeFuncs[DataType] = function(id)
+		-- use the cached id in the slot of the requested id instead
+		id = CacheFields[id];
+		return setmetatable({ visible = true }, {
+			__index = id and (app.SearchForObject(DataType, id, "key")
+							or app.SearchForObject(DataType, id, "field")
+							or app.__CreateObject({[DataType]=id}))
+						or setmetatable({name=EMPTY}, app.BaseClass)
+		});
+	end
+	MinimumID = 1;
+	MaximumID = #CacheFields;
+end
 local DataTypeShortcuts = setmetatable({
 	source = "sourceID",
 	s = "sourceID",
@@ -46,7 +95,7 @@ local DataTypeShortcuts = setmetatable({
 	end,
 });
 app:CreateWindow("list", {
-	Commands = { "attharvest","attharvester" },
+	Commands = { "attlist" },
 	OnCommand = function(self, args, params)
 		if params.reset then
 			-- If rest was specified, then clear all settings to default.
@@ -60,19 +109,19 @@ app:CreateWindow("list", {
 			params.harvesting = true;
 			params.limit = 225000;
 		end
+		-- /attlist type=quest min=1 limit=10000 part=100
+		-- /attlist type=flightpath min=1 limit=10000 part=100
 		
 		-- If new values were specified, use those new values.
 		if params.part then PartitionSize = tonumber(params.part); end
 		if params.limit then MaximumID = tonumber(params.limit); end
 		if params.min then MinimumID = tonumber(params.min); end
+		BuildFromCache = false;
 		if params.type then
-			local a,b = params.type:split(":");
+			local a,b = (":"):split(params.type);
 			DataType = DataTypeShortcuts[b or a];
-			if b then
-				if a == "cache" then
-					-- TODO: Look into this?
-					params.cached = true;
-				end
+			if b and a == "cache" then
+				BuildFromCache = true;
 			end
 		end
 		OnlyCollected = params.collected;
@@ -80,23 +129,28 @@ app:CreateWindow("list", {
 		OnlyMissing = params.missing;
 		OnlyCached = params.cached;
 		if self:IsShown() then
+			wipe(self.data.g);
 			self:Update(true);
 			return true;
 		end
 	end,
 	OnLoad = function(self, settings)
-		if settings.MinimumID then MinimumID = settings.MinimumID end;
-		if settings.MaximumID then MaximumID = settings.MaximumID end;
+		if settings.DataType then DataType = settings.DataType; end
+		if settings.MinimumID then MinimumID = settings.MinimumID end
+		if settings.MaximumID then MaximumID = settings.MaximumID end
 		if settings.PartitionSize then PartitionSize = settings.PartitionSize; end
+		if settings.BuildFromCache then BuildFromCache = settings.BuildFromCache; end
 		if settings.OnlyMissing then OnlyMissing = settings.OnlyMissing; end
 		if settings.OnlyCached then OnlyCached = settings.OnlyCached; end
 		if settings.OnlyCollected then OnlyCollected = settings.OnlyCollected; end
 		if settings.IsHarvesting then IsHarvesting = settings.IsHarvesting; end
 	end,
 	OnSave = function(self, settings)
+		settings.DataType = DataType;
 		settings.MinimumID = MinimumID;
 		settings.MaximumID = MaximumID;
 		settings.PartitionSize = PartitionSize;
+		settings.BuildFromCache = BuildFromCache;
 		settings.OnlyMissing = OnlyMissing;
 		settings.OnlyCached = OnlyCached;
 		settings.OnlyCollected = OnlyCollected;
@@ -164,6 +218,136 @@ app:CreateWindow("list", {
 		return og;
 	end,
 	OnInit = function(self, handlers)
+		self:SetData(app.CreateRawText("Full Data List", {
+			icon = app.asset("Interface_Quest_header"),
+			visible = true,
+			expanded = true,
+			progress = 0,
+			total = 0,
+			back = 1,
+			indent = 0,
+			g = {},
+			OnUpdate = function(data)
+				local g = data.g;
+				if #g < 1 then
+					data.statistic = DataType or "None";
+					data.description = (MinimumID or 1) .. " - " .. MaximumID;
+					
+					-- Wipe out the cached object type funcs from past runs this session.
+					wipe(ObjectTypeFuncs);
+					if DataType == "itemharvester" then
+						if not app.CreateItemHarvester then
+							app.print("'itemharvester' Requires 'Debugging' enabled when loading the game!")
+							return
+						end
+						ObjectTypeFuncs[DataType] = app.CreateItemHarvester;
+					elseif BuildFromCache then
+						BuildDataFromCache();
+					end
+					if IsHarvesting then
+						app.SetDGUDelay(0);
+						app.StartCoroutine("AutoHarvestFirstPartitionCoroutine", data.window.AutoHarvestFirstPartitionCoroutine);
+					end
+					
+					-- info about the Window
+					local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
+					local overrides = {
+						visible = not IsHarvesting and true or nil,
+						collectibleAsCost = false,
+						costCollectibles = false,
+						g = false,
+						text = IsHarvesting and function(o, key)
+							local text = o.text;
+							if not IsRetrieving(text) then
+								DGR(o);
+								if not self.VerifyGroupSourceID(o) then
+									return "Harvesting..."
+								end
+								local og = self.RemoveSelf(o);
+								-- app.PrintDebug(#og,"-",text)
+								if #og <= 0 then
+									self.RemoveSelf(o.parent);
+								else
+									o.visible = true;
+								end
+								return text;
+							end
+						end
+						or function(o, key)
+							local text = o.text;
+							if not IsRetrieving(text) then
+								-- if not self.VerifyGroupSourceID(o) then
+								-- 	DGR(o);
+								-- 	return "Harvesting..."
+								-- end
+								return "#"..(o[DataType] or o.keyval or "?")..": "..text;
+							end
+						end,
+						OnLoad = function(o)
+							-- app.PrintDebug("DGU-OnLoad:",o.hash)
+							DGU(o);
+						end,
+						OnUpdate = function(o)
+							o.back = o._missing and 1 or 0;
+						end,
+					};
+					if OnlyMissing then
+						app.SetDGUDelay(0);
+						if OnlyCached then
+							overrides.visible = function(o, key)
+								if o._missing then
+									local text = o.text;
+									-- app.PrintDebug("check",text)
+									return IsRetrieving(text) or
+										(not text:find("#") and text ~= UNKNOWN and not text:find("transmogappearance:"));
+								end
+							end
+						else
+							overrides.visible = function(o, key)
+								return o._missing;
+							end
+						end
+					end
+					if OnlyCollected then
+						app.SetDGUDelay(0);
+						if OnlyMissing then
+							overrides.visible = function(o, key)
+								if o._missing and o.collected then
+									return o.collected;
+								end
+							end
+						else
+							overrides.visible = function(o, key)
+								return o.collected;
+							end
+						end
+					end
+					
+					local dlo = app.DelayLoadedObject;
+					local count, partitionG = PartitionSize;
+					for index=MinimumID,MaximumID do
+						count = count + 1;
+						if count > PartitionSize then
+							-- define a sub-group for a range of things
+							partitionG = {};
+							g[#g + 1] = app.CreateRawText(index .. "+", {
+								icon = app.asset("Interface_Quest_header"),
+								OnUpdate = app.AlwaysShowUpdate,
+								progress = 0,
+								total = 0,
+								g = partitionG,
+							});
+							count = 1;
+						end
+						partitionG[#partitionG + 1] = dlo(CreateTypeObject, "text", overrides, DataType, index);
+					end
+					app.AssignChildren(data);
+				end
+				data.visible = true;
+				return true;
+			end,
+		}));
+		
 		self.AutoHarvestFirstPartitionCoroutine = function()
 			-- app.PrintDebug("AutoExpandingPartitions")
 			local i = 10;
@@ -190,248 +374,6 @@ app:CreateWindow("list", {
 				if not self:IsVisible() then return; end
 			end
 		end
-
-		-- temporarily prevent a force refresh from exploding the game if this window is open
-		self.doesOwnUpdate = true;
-		local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
-
-		-- custom params for initialization
-		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
-		local onlyMissing = app.GetCustomWindowParam("list", "missing");
-		local onlyCached = app.GetCustomWindowParam("list", "cached");
-		local onlyCollected = app.GetCustomWindowParam("list", "collected");
-		local harvesting = app.GetCustomWindowParam("list", "harvesting");
-		PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
-		MaximumID = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
-		local min = tonumber(app.GetCustomWindowParam("list", "min")) or 0
-		-- print("Quests - onlyMissing",onlyMissing)
-		local CacheFields, ItemHarvester;
-
-		-- manual type adjustments to match internal use (due to lowercase keys with non-lowercase cache keys >_<)
-		if dataType == "s" or dataType == "source" then
-			dataType = "source";
-		elseif dataType == "achievementcategory" then
-			dataType = "achievementCategory";
-		elseif dataType == "azeriteessence" then
-			dataType = "azeriteEssence";
-		elseif dataType == "flightpath" then
-			dataType = "flightPath";
-		elseif dataType == "runeforgepower" then
-			dataType = "runeforgePower";
-		elseif dataType == "itemharvester" then
-			if not app.CreateItemHarvester then
-				app.print("'itemharvester' Requires 'Debugging' enabled when loading the game!")
-				return
-			end
-			ItemHarvester = app.CreateItemHarvester;
-		elseif dataType:find("cache") then
-			-- special data type to utilize an ATT cache instead of generating raw groups
-			-- "cache:item"
-			-- => itemID
-			-- fill all items from itemID cache into list, sorted by itemID
-			local added = {};
-			CacheFields = {};
-			local cacheID;
-			local _, cacheKey = (":"):split(dataType);
-			local cacheKeyID = cacheKey.."ID";
-			local imin, imax = 0, 999999
-			-- convert the list min/max into cache-based min/max for cache lists
-			if MaximumID ~= 1000 then
-				imax = MaximumID + 1;
-				MaximumID = 999999
-			end
-			if min ~= 0 then
-				imin = min;
-				min = 0;
-			end
-			dataType = cacheKey;
-			-- collect valid id values
-			for id,groups in pairs(app.GetRawFieldContainer(cacheKey) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
-				for index,o in ipairs(groups) do
-					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]) or 0;
-					if imin <= cacheID and cacheID <= imax then
-						added[cacheID] = true;
-						-- app.PrintDebug("CacheID",cacheID,"from cache",id,"@",index,#groups)
-						-- app.PrintDebug(o.modItemID,o[dataType],o[cacheKeyID])
-					-- else app.PrintDebug("Ignored Data for Harvest due to CacheID Bounds",cacheID,app:SearchLink(o))
-					end
-				end
-			end
-			for id,_ in pairs(added) do
-				CacheFields[#CacheFields + 1] = id
-			end
-			app.Sort(CacheFields, app.SortDefaults.Values);
-			app.PrintDebug(#CacheFields,"CacheFields:Sorted",CacheFields[1],"->",CacheFields[#CacheFields])
-		end
-
-		-- add the ID
-		DataType = DataType.."ID";
-
-		local ForceVisibleFields = {
-			visible = true,
-			total = 0,
-			progress = 0,
-			costTotal = 0,
-			upgradeTotal = 0,
-		};
-		local PartitionUpdateFields = {
-			total = true,
-			progress = true,
-			parent = true,
-			expanded = true,
-			window = true,
-		};
-		local PartitionMeta = {
-			__index = ForceVisibleFields,
-			__newindex = function(t, key, val)
-				-- only allow changing existing table fields
-				if PartitionUpdateFields[key] then
-					rawset(t, key, val);
-					-- app.PrintDebug("__newindex:part",key,val)
-				end
-			end
-		};
-
-		local ObjectTypeFuncs = {
-			questID = GetPopulatedQuestObject,
-		};
-		if CacheFields then
-			-- app.PrintDebug("OTF:Define",DataType)
-			ObjectTypeFuncs[DataType] = function(id)
-				-- use the cached id in the slot of the requested id instead
-				-- app.PrintDebug("OTF",id)
-				id = CacheFields[id];
-				-- app.PrintDebug("OTF:CacheID",DataType,id)
-				return setmetatable({ visible = true }, {
-					__index = id and (app.SearchForObject(DataType, id, "key")
-									or app.SearchForObject(DataType, id, "field")
-									or app.__CreateObject({[DataType]=id}))
-								or setmetatable({name=EMPTY}, app.BaseClass)
-				});
-			end
-			-- app.PrintDebug("SetLimit",#CacheFields)
-			MaximumID = #CacheFields;
-		end
-		if ItemHarvester then
-			ObjectTypeFuncs[DataType] = ItemHarvester;
-		end
-		local function CreateTypeObject(type, id)
-			-- app.PrintDebug("DLO-Obj:",type,id)
-			local func = ObjectTypeFuncs[type];
-			if func then return func(id); end
-			-- Simply a visible table whose Base will be the actual referenced object
-			return setmetatable({ visible = true }, {
-				__index = app.SearchForObject(DataType, id, "key")
-					or app.SearchForObject(type, id, "field")
-					or app.__CreateObject({[type]=id})
-			});
-		end
-
-		-- info about the Window
-		local g = {};
-		self:SetData(setmetatable({
-			text = "Full Data List - "..(DataType or "None"),
-			icon = app.asset("Interface_Quest_header"),
-			description = "1 - "..MaximumID,
-			g = g,
-		}, PartitionMeta));
-
-		local overrides = {
-			visible = not IsHarvesting and true or nil,
-			indent = 2,
-			collectibleAsCost = false,
-			costCollectibles = false,
-			g = false,
-			back = function(o, key)
-				return o._missing and 1 or 0;
-			end,
-			text = IsHarvesting and function(o, key)
-				local text = o.text;
-				if not IsRetrieving(text) then
-					DGR(o);
-					if not self.VerifyGroupSourceID(o) then
-						return "Harvesting..."
-					end
-					local og = self.RemoveSelf(o);
-					-- app.PrintDebug(#og,"-",text)
-					if #og <= 0 then
-						self.RemoveSelf(o.parent);
-					else
-						o.visible = true;
-					end
-					return text;
-				end
-			end
-			or function(o, key)
-				local text = o.text;
-				if not IsRetrieving(text) then
-					-- if not self.VerifyGroupSourceID(o) then
-					-- 	DGR(o);
-					-- 	return "Harvesting..."
-					-- end
-					return "#"..(o[DataType] or o.keyval or "?")..": "..text;
-				end
-			end,
-			OnLoad = function(o)
-				-- app.PrintDebug("DGU-OnLoad:",o.hash)
-				DGU(o);
-			end,
-		};
-		if onlyMissing then
-			app.SetDGUDelay(0);
-			if onlyCached then
-				overrides.visible = function(o, key)
-					if o._missing then
-						local text = o.text;
-						-- app.PrintDebug("check",text)
-						return IsRetrieving(text) or
-							(not text:find("#") and text ~= UNKNOWN and not text:find("transmogappearance:"));
-					end
-				end
-			else
-				overrides.visible = function(o, key)
-					return o._missing;
-				end
-			end
-		end
-		if onlyCollected then
-			app.SetDGUDelay(0);
-			if onlyMissing then
-				overrides.visible = function(o, key)
-					if o._missing and o.collected then
-						return o.collected;
-					end
-				end
-			else
-				overrides.visible = function(o, key)
-					return o.collected;
-				end
-			end
-		end
-		if IsHarvesting then
-			app.SetDGUDelay(0);
-			app.StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
-		end
-		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math_floor(MaximumID / PartitionSize);
-		local groupStart = math_floor(min / PartitionSize);
-		local partition, partitionStart, partitionGroups;
-		local dlo = app.DelayLoadedObject;
-		for j=groupStart,groupCount,1 do
-			partitionStart = j * PartitionSize;
-			partitionGroups = {};
-			-- define a sub-group for a range of things
-			partition = setmetatable({
-				text = tostring(partitionStart + 1).."+",
-				icon = app.asset("Interface_Quest_header"),
-				g = partitionGroups,
-			}, PartitionMeta);
-			for i=1,PartitionSize,1 do
-				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, DataType, partitionStart + i));
-			end
-			tinsert(g, partition);
-		end
-		self:AssignChildren();
 	end,
 	OnUpdate = function(self, ...)
 		-- requires Visibility filter to check .visibile for display of the group
@@ -453,22 +395,3 @@ app:CreateWindow("list", {
 		return true;
 	end
 });
-
-if true then return; end
-
-app.AddSlashCommands({"attharvest","attharvester"},
-function(cmd)
-	app.print("Force Debug Mode");
-	app.Debugging = true
-	app.Settings:ForceRefreshFromToggle();
-	app.Settings:SetDebugMode(true);
-	app.SetCustomWindowParam("list", "reset", true);
-	app.SetCustomWindowParam("list", "type", "cache:item");
-	app.SetCustomWindowParam("list", "harvesting", true);
-	local args = { (","):split(cmd:lower()) };
-	app.SetCustomWindowParam("list", "min", args[1]);
-	app.SetCustomWindowParam("list", "limit", args[2] or 999999);
-	-- reduce the re-try duration when harvesting
-	app.SetCAN_RETRY_DURATION_SEC(1)
-	app:GetWindow("list"):Toggle();
-end)
