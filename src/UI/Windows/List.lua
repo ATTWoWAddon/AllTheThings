@@ -144,6 +144,7 @@ app:CreateWindow("list", {
 		if settings.OnlyCached then OnlyCached = settings.OnlyCached; end
 		if settings.OnlyCollected then OnlyCollected = settings.OnlyCollected; end
 		if settings.IsHarvesting then IsHarvesting = settings.IsHarvesting; end
+		settings.visible = false
 	end,
 	OnSave = function(self, settings)
 		settings.DataType = DataType;
