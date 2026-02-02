@@ -2568,7 +2568,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				achpart(40990, 40991, {["maps"] = {TANARIS}}),	-- Balloonist / Frequent Flyer (full)
 				ach(40984, {["maps"] = {TANARIS}}),	-- Big Fan
-				ach(41033, {["timeline"] = {ADDED_11_0_5, REMOVED_11_0_7}}),	-- Classy Dresser
+				ach(41033),	-- Classy Dresser
 				ach(40987, {["maps"] = {TANARIS}}),	-- Fashion Critic
 				ach(40991, {	-- Frequent Flyer
 					["maps"] = {TANARIS},
@@ -2618,7 +2618,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				ach(40997),	-- The Gatecrashers (automated)
 				ach(40995),	-- The Originals (automated)
 				ach(41038, {["timeline"] = {ADDED_11_0_5, REMOVED_11_0_7}}),	-- Token Collector
-				ach(41013, {["timeline"] = {ADDED_11_0_5, REMOVED_11_0_7}}),	-- Upgraded Apparel
+				ach(41013),	-- Upgraded Apparel
 				ach(40661, {	-- Zoomies!
 					["provider"] = { "i", 224157 },	-- Pet Mirror
 					["crs"] = { 227559 },	-- Zoomy Treat
