@@ -1098,7 +1098,7 @@ local function MergeObjects(g, g2, newCreate)
 		local o
 		for i=1,#g do
 			o = g[i]
-			local hash = o.hash;
+			local hash = o.hash or app.CreateHash(o);
 			if hash then
 				-- are we merging the same object multiple times from one group?
 				hashObj = hashTable[hash]
@@ -1113,7 +1113,7 @@ local function MergeObjects(g, g2, newCreate)
 		if newCreate then
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or app.CreateHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -1132,7 +1132,7 @@ local function MergeObjects(g, g2, newCreate)
 		else
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or app.CreateHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
