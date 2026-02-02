@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 				["groups"] = {
 					i(200212, {	-- Sand-Encrusted Graves
-						["description"] = "While this item can drop from almost every Dragonflight Rare, its best farmed by killing the Territorial Coastling Rare.\n\nDroprate is around 75%.\n\nThe Rare is once per Character.\n\nRequires being a Hunter, Shaman or Evoker to loot it.",
+						["description"] = "While this item can drop from almost every Dragonflight Rare, its best farmed by killing the Territorial Coastling Rare.\n\nDroprate is around 75%.\n\nThe Rare is once per Character.",
 					}),
 				},
 			}),

@@ -423,6 +423,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			q(86938, {	-- Void Perforations
 				["coord"] = { 40.6, 46.6, TWILIGHT_HIGHLANDS },
 			}),
+			q(91776, {	-- Wildhammer and Free
+				["coord"] = { 20.3, 57.8, TWILIGHT_HIGHLANDS },
+			}),
 		})),
 	}),
 }));
