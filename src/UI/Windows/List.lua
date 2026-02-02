@@ -50,7 +50,7 @@ local function BuildDataFromCache()
 	-- "cache:item"
 	-- => itemID
 	-- fill all items from the cache into list, sorted by id
-	
+
 	-- collect valid id values
 	local ValidKeys, cacheID = {}, nil;
 	for id,groups in pairs(app.GetRawFieldContainer(DataType) or app.EmptyTable) do
@@ -111,7 +111,7 @@ app:CreateWindow("list", {
 		end
 		-- /attlist type=quest min=1 limit=10000 part=100
 		-- /attlist type=flightpath min=1 limit=10000 part=100
-		
+
 		-- If new values were specified, use those new values.
 		if params.part then PartitionSize = tonumber(params.part); end
 		if params.limit then MaximumID = tonumber(params.limit); end
@@ -218,12 +218,11 @@ app:CreateWindow("list", {
 		return og;
 	end,
 	OnInit = function(self, handlers)
+		self.doesOwnUpdate = true
 		self:SetData(app.CreateRawText("Full Data List", {
 			icon = app.asset("Interface_Quest_header"),
 			visible = true,
 			expanded = true,
-			progress = 0,
-			total = 0,
 			back = 1,
 			indent = 0,
 			g = {},
@@ -232,7 +231,7 @@ app:CreateWindow("list", {
 				if #g < 1 then
 					data.statistic = DataType or "None";
 					data.description = (MinimumID or 1) .. " - " .. MaximumID;
-					
+
 					-- Wipe out the cached object type funcs from past runs this session.
 					wipe(ObjectTypeFuncs);
 					if DataType == "itemharvester" then
@@ -248,7 +247,7 @@ app:CreateWindow("list", {
 						app.SetDGUDelay(0);
 						app.StartCoroutine("AutoHarvestFirstPartitionCoroutine", data.window.AutoHarvestFirstPartitionCoroutine);
 					end
-					
+
 					-- info about the Window
 					local DGU, DGR = app.DirectGroupUpdate, app.DirectGroupRefresh;
 					local overrides = {
@@ -287,8 +286,8 @@ app:CreateWindow("list", {
 							-- app.PrintDebug("DGU-OnLoad:",o.hash)
 							DGU(o);
 						end,
-						OnUpdate = function(o)
-							o.back = o._missing and 1 or 0;
+						back = function(o, key)
+							return o._missing and 1 or 0;
 						end,
 					};
 					if OnlyMissing then
@@ -322,9 +321,10 @@ app:CreateWindow("list", {
 							end
 						end
 					end
-					
+
 					local dlo = app.DelayLoadedObject;
-					local count, partitionG = PartitionSize;
+					local count = PartitionSize
+					local partitionG
 					for index=MinimumID,MaximumID do
 						count = count + 1;
 						if count > PartitionSize then
@@ -333,8 +333,7 @@ app:CreateWindow("list", {
 							g[#g + 1] = app.CreateRawText(index .. "+", {
 								icon = app.asset("Interface_Quest_header"),
 								OnUpdate = app.AlwaysShowUpdate,
-								progress = 0,
-								total = 0,
+								visible = true,
 								g = partitionG,
 							});
 							count = 1;
@@ -347,7 +346,7 @@ app:CreateWindow("list", {
 				return true;
 			end,
 		}));
-		
+
 		self.AutoHarvestFirstPartitionCoroutine = function()
 			-- app.PrintDebug("AutoExpandingPartitions")
 			local i = 10;
@@ -376,21 +375,14 @@ app:CreateWindow("list", {
 		end
 	end,
 	OnUpdate = function(self, ...)
+		local data = self.data
+		if data and data.OnUpdate then
+			data:OnUpdate()
+		end
 		-- requires Visibility filter to check .visibile for display of the group
 		local filterVisible = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible(true);
-		-- Force Debug Mode
-		local rawSettings = app.Settings:GetRawSettings("General");
-		local debugMode = app.MODE_DEBUG;
-		if not debugMode then
-			rawSettings.DebugMode = true;
-			app.Settings:UpdateMode();
-		end
 		self:DefaultUpdate(...);
-		if not debugMode then
-			rawSettings.DebugMode = debugMode;
-			app.Settings:UpdateMode();
-		end
 		app.Modules.Filter.Set.Visible(filterVisible);
 		return true;
 	end
