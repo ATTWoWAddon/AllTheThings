@@ -18,13 +18,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 95010,
 				["groups"] = {
 					i(267268),	-- Dripping Silk Footwraps
+					i(267270),	-- Shadow-Drenched Legguards
 				},
 			}),
 			n(252465, {	-- Tarhu the Ransacker
-				["coord"] = { 55.5, 28.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },	-- Doesn't exist outside of scenario map?
-				--["questID"] = ??,	-- missing kill questID
+				["coord"] = { 55.5, 28.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
+				["questID"] = 95011,
 				["groups"] = {
-					--no loot table
+					i(267267),	-- Ransacker's Netherhide Mask
 				},
 			}),
 		}),

@@ -119,8 +119,6 @@ root(ROOTS.Unsorted, {
 			i(264472),	-- Loa Impostor's Clawguards
 			i(264473),	-- Loa Impostor's Tidegrips
 			i(264474),	-- Loa Impostor's Brinefists
-			i(268326),	-- Sin'dorei Citizen's Cloak
-			i(268327),	-- Sin'dorei Citizen's Shawl
 
 			-- Misc
 			i(268111),	-- Arkonite Beacon
@@ -1540,8 +1538,6 @@ root(ROOTS.Unsorted, {
 			i(246748),	-- Pouch of Weathered Ethereal Crests
 			i(246749),	-- Satchel of Carved Ethereal Crests
 			i(246750),	-- Pack of Runed Ethereal Crests
-			i(246751),	-- Triumphant Satchel of Champion Dawncrests \\ Triumphant Satchel of Carved Dawncrests (ilvl req?, icon, currency)
-			i(246752),	-- Celebratory Pack of Hero Dawncrests \\ Celebratory Pack of Runed Dawncrests (ilvl req?, icon, currency)
 			i(246753),	-- Glorious Cluster of Myth Dawncrests \\ Glorious Cluster of Gilded Dawncrests (ilvl req?, icon, currency)
 			i(246754),	-- Pouch of Veteran Dawncrests \\ Pouch of Weathered Dawncrests (ilvl req?, icon, currency)
 			i(246755),	-- Satchel of Champion Dawncrests \\ Satchel of Carved Dawncrests (ilvl req?, icon, currency)
@@ -3229,7 +3225,6 @@ root(ROOTS.Unsorted, {
 			i(260948),	-- Enigmatic Voidclarion \\ Enigmatic Voidcaller
 			-- Mount
 			i(262496),	-- Delver's Arcane Golem
-			i(262500),	-- Silvermoon's Arcane Defender
 
 			-- Misc Mount/Pet?
 			i(262510),	-- Hawkstrider Egg
@@ -3577,7 +3572,6 @@ root(ROOTS.Unsorted, {
 			i(257239),	-- Voidbreaker's Knife
 			i(257252),	-- Voidbreaker's Bardiche
 			i(257534),	-- Voidbreaker's Baton
-			-- Decor
 
 			-- QI
 			i(263510),	-- Overflow Diverter
@@ -3597,9 +3591,6 @@ root(ROOTS.Unsorted, {
 			i(263974),	-- Relaxing Tisane
 			i(264182),	-- Kelum'ko's Generous Aromatic Gift
 			i(264183),	-- Kelum'ko's Generous Aromatic Gift
-			-- Vault
-			i(263897),	-- Radiant Jewelbinder
-			i(263934),	-- Chest of Gold
 			-- Toy
 			i(263938),	-- Idol of Peril \\ [PH] Shark Loa Blessing
 			i(263975),	-- Feeling Fielder Mk. 7
@@ -3651,7 +3642,6 @@ root(ROOTS.Unsorted, {
 
 			-- Toy
 			i(264413),	-- Dominating Victory
-			i(264414),	-- Midnight Delver's Flare Gun
 
 			-- Rewards from what?
 			i(264415),	-- Voidcaster's Bow \\ [DNT] Agility Bow
@@ -3766,7 +3756,6 @@ root(ROOTS.Unsorted, {
 			i(264855),	-- Vilebranch Deathseer
 			i(264857),	-- Twilight Fanatic's Cowl
 			i(264859),	-- Twilight Follower's Cowl
-			i(264883),	-- Ensemble: Courtier's Crimson Vestments \\ Ensemble: Courtier's Crimson Garments
 			-- Trinket
 			i(264878),	-- Astalor's Anguish Agitator
 
@@ -3820,17 +3809,6 @@ root(ROOTS.Unsorted, {
 			i(265014),	-- Echo of Radiance
 			i(265015),	-- Echo of Radiance
 			i(265016),	-- Echo of Radiance
-
-			-- Cosmetic
-			i(265018),	-- Ensemble: Courtier's Viridian Vestments \\ Ensemble: Courtier's Viridian Garments
-			i(265019),	-- Ensemble: Courtier's Azure Vestments \\ Ensemble: Courtier's Azure Garments
-			i(265020),	-- Ensemble: Courtier's Umbral Vestments \\ Ensemble: Courtier's Umbral Garments
-			i(265021),	-- Ensemble: Courtier's Lucent Vestments \\ Ensemble: Courtier's Lucent Garments
-			i(265022),	-- Ensemble: Augur's Crimson Garments
-			i(265023),	-- Ensemble: Augur's Viridian Garments
-			i(265024),	-- Ensemble: Augur's Azure Garments
-			i(265025),	-- Ensemble: Augur's Umbral Garments
-			i(265026),	-- Ensemble: Augur's Lucent Garments
 
 			-- Trinket
 			i(265027),	-- Lucky Lynx Locket
@@ -4159,7 +4137,6 @@ root(ROOTS.Unsorted, {
 			i(264345),	-- Galactic Commander's Orb
 			i(264482),	-- Void Elf Torch
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
-			i(265995),	-- Quel'Thalas Adventurer's Cache
 			i(265997),	-- Blood Knight Champion's Tabard
 			i(266075),	-- Harpoon of Extirpation
 			i(266076),	-- Nether Siphoner
@@ -4398,8 +4375,6 @@ root(ROOTS.Unsorted, {
 			i(267265),	-- Counterfeit Dark Heart of Galakrond
 
 			-- Quest Armor
-			i(267267),	-- Ransacker's Netherhide Mask
-			i(267270),	-- Shadow-Drenched Legguards
 			i(267271),	-- Nethersteel Deflectors
 
 			-- Prof
@@ -4889,11 +4864,9 @@ root(ROOTS.Unsorted, {
 				i(260397),	-- Sea Green Wooden Shortbow
 				i(260398),	-- South Guard's Iron Handwraps
 				i(260399),	-- South Guard's Copper Handwraps
-				i(260400),	-- South Guard's Golden Handwraps
 				i(260401),	-- South Guard's Silver Handwraps
 				i(260402),	-- South Guard's Iron Chausses
 				i(260403),	-- South Guard's Copper Chausses
-				i(260404),	-- South Guard's Golden Chausses
 				i(260405),	-- South Guard's Silver Chausses
 				i(260412),	-- Rusty Chainkini
 				i(260413),	-- Copper Chainkini

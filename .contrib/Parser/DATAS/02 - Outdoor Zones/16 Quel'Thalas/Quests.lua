@@ -3,6 +3,10 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(QUESTS, {
+		q(94993, {	-- Adventuring in Midnight
+			["description"] = "Pops up the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
+			["coord"] = { 45.7, 67.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+		}),
 		header(HEADERS.Achievement, 41805, {	-- Arator's Journey
 			header(HEADERS.AchCriteria, 41805.01, {	-- The Path of Light
 				q(89193, {	-- Arator

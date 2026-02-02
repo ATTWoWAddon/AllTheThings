@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(QUESTS, {
@@ -2583,13 +2584,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					q(92630, {	-- The Pursuit Continues
 						["qgs"] = {
-							259942,	-- Messenger Aelor
-							259951,	-- Messenger Aelor
+							259942,	-- Messenger Aelor @ Stormwind City
+							259941,	-- Messenger Aelor @ Orgrimmar
+							259951,	-- Messenger Aelor @ Dornogal
+							257544,	-- Messenger Aelor @ Silvermoon City
 						},
 						["coords"] = {
-							{ 44.4, 50.3, DORNOGAL },
 							{ 50.5, 16.6, STORMWIND_CITY },
 							{ 64.0, 59.9, 86 },	-- Cleft of Shadow, Orgrimmar
+							{ 44.4, 50.3, DORNOGAL },
 							{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 						},
 					}),

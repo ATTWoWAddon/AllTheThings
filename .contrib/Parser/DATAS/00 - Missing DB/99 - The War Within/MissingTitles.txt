@@ -78,7 +78,6 @@ title(687),	-- Terrace Terror %s
 title(688),	-- %s the Ominous
 title(689),	-- %s, Fabled Vanquisher of Nullaeus
 title(690),	-- Spirebane %s \\ [PH] VoidspireRaid %s
-title(691),	-- Treasure Seeker %s
 12.0.0.64499
 title(740),	-- Loa-Speaker %s \\ Loa-speaker %s
 12.0.0.64741

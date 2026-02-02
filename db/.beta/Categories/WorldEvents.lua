@@ -1779,6 +1779,7 @@ de(714,{cost={{"c",3319,50}},itemID=245284,spellID=1238378,u=2}),
 de(1227,{cost={{"c",3319,75}},itemID=251997,spellID=1253829,u=2}),
 toy(249468,{cost={{"c",3319,30}},u=2})}})}}),
 h(-62,{u=2,g={
+q(86951,{coords={{39.4,73.8,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(86959,{coords={{40.8,66.7,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(91779,{coords={{51.3,71.3,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(91759,{coords={{58.9,12.3,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),

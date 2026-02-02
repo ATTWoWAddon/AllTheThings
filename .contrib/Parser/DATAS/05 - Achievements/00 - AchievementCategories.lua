@@ -37,6 +37,7 @@ root(ROOTS.Achievements, {
 	achcat(ACHIEVEMENT_CATEGORY_HOUSING, {["timeline"] = {ADDED_12_0_X_LAUNCH}}),
 	achcat(ACHIEVEMENT_CATEGORY_DELVES, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		achcat(ACHIEVEMENT_CATEGORY_WAR_WITHIN_DELVES),
+		achcat(ACHIEVEMENT_CATEGORY_MIDNIGHT_DELVES, {["timeline"] = {ADDED_12_0_X_LAUNCH}}),
 	})),
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		achcat(ACHIEVEMENT_CATEGORY_HONOR),

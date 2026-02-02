@@ -550,9 +550,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(263315),	-- Bubbling Haranir Cauldron (DECOR!)
-						},
+						["groups"] = { i(263315) },	-- Bubbling Haranir Cauldron (DECOR!)
 					}),
 					q(90889, {	-- Tale of the Echoes of Sai'alyo
 						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
@@ -571,9 +569,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(263196),	-- Harandar Glowvine Lantern (DECOR!)
-						},
+						["groups"] = { i(263196) },	-- Harandar Glowvine Lantern (DECOR!)
 					}),
 					q(91492, {	-- The Tale of Aln'hara's Bloom
 						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
@@ -582,7 +578,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 54.7, 65.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
 							o(564560, {	-- Aln'hara's Bloom
-								i(248139),	-- Aln'hara's Bloom (QI!)
+								["coord"] = { 55.8, 67.0, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(248139) },	-- Aln'hara's Bloom (QI!)
 							}),
 						},
 					}),
@@ -592,9 +589,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(264262),	-- Haranir Whistling Arrow (DECOR!)
-						},
+						["groups"] = { i(264262) },	-- Haranir Whistling Arrow (DECOR!)
 					}),
 					q(91506, {	-- Tale of the First Shul'ka and the Flame
 						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
@@ -608,9 +603,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(262906),	-- Harandar Anvil (DECOR!)
-						},
+						["groups"] = { i(262906) },	-- Harandar Anvil (DECOR!)
 					}),
 					q(91507, {	-- The Tale of Russula
 						["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
@@ -1269,13 +1262,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(89266, name(HEADERS.NPC,241213)),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
 				q(91516, name(HEADERS.NPC,243540)),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
 				q(91517, name(HEADERS.NPC,243542)),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
-				q(91517, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
+				q(91455, name(HEADERS.NPC,243514)),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
 				q(89284, { ["name"] = "Relic chosen" }),	-- Triggered after selecting a Relic during 'Lost Legends' (89268)
 				q(91053, name(HEADERS.Item,263037)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
 				q(91054, name(HEADERS.Item,263315)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
 				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
 				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
-				q(91512, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
+				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
 				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993)
 				--
 			}),

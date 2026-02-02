@@ -5,15 +5,15 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 		n(QUESTS, {
-			-- intro stuff, unsure how much more content there will be in future
 			header(HEADERS.Achievement, 62191, {	-- Call of the Light
 				q(91281, {	-- Midnight
-					["description"] = "Requires re-logging to be accepted.",
-					--["sourceQuests"] = { ?? },	-- something from pre-patch/11.2.7?
-					--["isBreadcrumb"] = true,
-					["maps"] = {
-						STORMWIND_CITY,
-						ORGRIMMAR,
+					["description"] = "Requires re-logging to be accepted.",	-- If abandoned, it can be accepted from Image of Lady Liadrin
+					["provider"] = { "n", 241677 },	-- Image of Lady Liadrin
+					["coords"] = {
+						{ 53.0, 77.5, ORGRIMMAR },
+						{ 53.3, 54.3, STORMWIND_CITY },
+						{ 46.7, 80.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 44.2, 34.8, DORNOGAL },
 					},
 					["DisablePartySync"] = true,
 				}),
@@ -26,9 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 46.7, 80.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 						{ 44.2, 34.8, DORNOGAL },
 					},
-					["groups"] = {
-						i(239151),	-- Light's Summon (PQI!)
-					},
+					["groups"] = { i(239151) },	-- Light's Summon (PQI!)
 				}),
 				q(86769, {	-- Last Bastion of the Light
 					["sourceQuests"] = { 88719 },	-- A Voice from the Light
@@ -65,7 +63,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(248239),	-- Healing Flask (PQI!)
 						--
-						i(250352),	-- Worn Supply Bag
+						i(268326),	-- Sin'dorei Citizen's Cloak
+						i(268327),	-- Sin'dorei Citizen's Shawl
 					},
 				}),
 				q(89012, {	-- A Safe Path
@@ -94,10 +93,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91274, {	-- Severing the Void
 					["sourceQuests"] = { 86807 },	-- The Gate
 					["provider"] = { "n", 236964 },	-- Arator
-					["coord"] = { 41.4, 39.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
-					["groups"] = {
-						-- i(),	-- ??
-					},
+					["coord"] = { 49.7, 21.4, 2565 },	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 				}),
 				q(86834, {	-- Voidborn Banishing
 					["sourceQuests"] = { 86807 },	-- The Gate
@@ -105,7 +101,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						236964,	-- Arator
 						237222,	-- Arator (mobileNPC)
 					},
-					["coord"] = { 41.4, 39.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
+					["coord"] = { 49.7, 21.4, 2565 },	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 					["groups"] = {
 						i(251241),	-- Entropic Void Crystal
 						i(251242),	-- Voidbound Lieutenant's Band
@@ -127,17 +123,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(238845),	-- Staff of Disintegration (QI!)
 						i(238807),	-- Warp Slicer (QI!)
 						-- rewards --
-						i(251250),	-- Recovered Sanctum Hacker
-						i(251251),	-- Recovered Sanctum Hatchet
 						i(251252),	-- Recovered Sanctum Axe
-						i(251253),	-- Recovered Sanctum Rapier
-						i(251254),	-- Recovered Sanctum Sword
-						i(251255),	-- Recovered Sanctum Greatsword
 						i(251256),	-- Recovered Sanctum Blade
-						i(251257),	-- Recovered Sanctum Stave
-						i(251258),	-- Recovered Sanctum Pole
 						i(251259),	-- Recovered Sanctum Bow
 						i(251260),	-- Recovered Sanctum Dirk
+						i(251255),	-- Recovered Sanctum Greatsword
+						i(251250),	-- Recovered Sanctum Hacker
+						i(251251),	-- Recovered Sanctum Hatchet
+						i(251258),	-- Recovered Sanctum Pole
+						i(251253),	-- Recovered Sanctum Rapier
+						i(251257),	-- Recovered Sanctum Stave
+						i(251254),	-- Recovered Sanctum Sword
 					},
 				}),
 				q(86811, {	-- Ethereal Eradication
@@ -164,8 +160,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(86852, {	-- Light's Last Stand
 					["sourceQuests"] = { 86850 },	-- Broken Sun
 					["provider"] = { "n", 237278 },	-- Lady Liadrin
-					["coord"] = { 52.7, 50.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
-					-- TODO: seems like lockCriteria for anything that are left behind for intro?
+					["coord"] = { 51.8, 81.3, 2566 },	-- The Sunwell, Isle of Quel'Danas (Intro)
+					-- Alex TODO: seems like lockCriteria for anything that are left behind for intro?
+					-- Exo Note: If you ask me, everything before this point should be stuffed into 1 file. Quests, Bonus Objectives, Treasures and Rares. They are not accessible/available once you complete the intro.
 				}),
 			}),
 			q(86733, {	-- Silvermoon Negotiations
@@ -173,18 +170,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 236779 },	-- Lor'themar Theron
 				["coord"] = { 52.5, 88.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				["groups"] = {
-					i(248059),	--
-					i(248061),	-- Golden City Hatchet
 					i(248062),	-- Golden City Axe
-					i(248063),	--
-					i(248067),	--
-					i(248068),	-- Golden City Shortsword
-					i(248070),	--
-					i(248071),	--
-					i(248075),	-- Golden City Staff
 					i(248076),	-- Golden City Baton
-					i(248078),	--
-					-- spell(1261718),	-- Silvermoon Court Unlocked
+					i(248067),	-- Golden City Blade
+					i(248070),	-- Golden City Claymore
+					i(248063),	-- Golden City Cleaver
+					i(248059),	-- Golden City Dagger
+					i(248071),	-- Golden City Greatsword
+					i(248061),	-- Golden City Hatchet
+					i(248078),	-- Golden City Longbow
+					i(248068),	-- Golden City Shortsword
+					i(248075),	-- Golden City Staff
 				},
 			}),
 			q(86734, {	-- Diplomacy
@@ -201,6 +197,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(248042),	-- Reluctant Diplomat's Cuffs
 					i(248043),	-- Reluctant Diplomat's Vambraces
 					i(248045),	-- Reluctant Diplomat's Wraps
+					i(250352),	-- Worn Supply Bag
 				},
 			}),
 			-- due to hqt after this quest, I currently treat this as end of all intro part for Midnight
@@ -231,7 +228,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 			n(QUESTS, {
 				-- During questing
-				q(92714),	-- Flag Midnight Promotional (spellID 1257590), after turn in questID 86735 (Paved in Ash)
+				q(92714),	-- Flag Midnight Promotional (spellID 1257590), after turning in 'Paved in Ash' (86735)
+				q(95535),	-- Triggered after turning in 'Paved in Ash' (86735)
+				q(83817),	-- Triggered after turning in 'Silvermoon Negotiations' (86733)
 			}),
 		}),
 	}),

@@ -89,35 +89,6 @@ ach(61648),	-- Heroic: The Blinding Vale
 ach(61649),	-- Mythic: The Blinding Vale
 12.0.0.63967
 ach(61706),	-- Herald of the Goddess
-ach(61707),	-- Delver of the Depths: Midnight
-ach(61708),	-- Delver of the Depths II: Midnight
-ach(61709),	-- Delver of the Depths III: Midnight
-ach(61710),	-- Delver of the Depths IV: Midnight
-ach(61711),	-- Midnight Delver Damage Dealer
-ach(61712),	-- Midnight Delver Damage Dealer II
-ach(61713),	-- Midnight Delver Damage Dealer III
-ach(61714),	-- Midnight Delver Healer
-ach(61715),	-- Midnight Delver Healer II
-ach(61716),	-- Midnight Delver Healer III
-ach(61717),	-- Midnight Delver Tank
-ach(61718),	-- Midnight Delver Tank II
-ach(61719),	-- Midnight Delver Tank III
-ach(61720),	-- Midnight Delver
-ach(61721),	-- Midnight Delver II
-ach(61722),	-- Curio Enthusiast: Midnight
-ach(61723),	-- Curio Fanatic: Midnight
-ach(61724),	-- The Grudge Pit Stories \\ The Grudge Pit Stories NEED UPDATE
-ach(61725),	-- Parhelion Plaza Stories \\ Parhelion Plaza Stories NEED UPDATE
-ach(61726),	-- Collegiate Calamity Stories \\ Collegiate Calamity Stories NEED UPDATE
-ach(61727),	-- The Shadow Enclave Stories \\ The Shadow Enclave Stories NEED UPDATE
-ach(61728),	-- The Darkway Stories \\ The Darkway Stories NEED UPDATE
-ach(61729),	-- Atal'Aman Stories \\ Atal'Aman Stories NEED UPDATE
-ach(61730),	-- Twilight Crypts Stories \\ Twilight Crypts Stories NEED UPDATE
-ach(61731),	-- The Gulf of Memory Stories \\ The Gulf of Memory Stories NEED UPDATE
-ach(61732),	-- Sunkiller Sanctum Stories \\ Sunkiller Sanctum Stories NEED UPDATE
-ach(61733),	-- Shadowguard Point Stories \\ Shadowguard Point Stories NEED UPDATE
-ach(61734),	-- Midnight Delves: Endgame
-ach(61741),	-- Delve Loremaster: Midnight
 ach(61796),	-- Midnight: Journey's End (Season 1)
 ach(61797),	-- My Shady Nemesis
 ach(61798),	-- Lighting the Dark
@@ -132,23 +103,8 @@ ach(61806),	-- Midnight Delves: Tier 10 (Season 1)
 ach(61807),	-- Midnight Delves: Tier 11 (Season 1)
 ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
 ach(61809),	-- Adventurer of the Dawn
-ach(61832),	-- Midnight Delves: Tier 1
-ach(61835),	-- Midnight Delves: Tier 2
-ach(61836),	-- Midnight Delves: Tier 3
 ach(61854),	-- The Midnight Explorer
 ach(61858),	-- Light of the Party
-ach(61863),	-- Atal'Aman Discoveries
-ach(61892),	-- The Shadow Enclave Discoveries
-ach(61893),	-- Parhelion Plaza Discoveries
-ach(61894),	-- Collegiate Calamity Discoveries
-ach(61895),	-- The Darkway Discoveries
-ach(61896),	-- Twilight Crypts Discoveries
-ach(61897),	-- The Grudge Pit Discoveries
-ach(61898),	-- The Gulf of Memory Discoveries
-ach(61899),	-- Sunkiller Sanctum Discoveries
-ach(61900),	-- Shadowguard Point Discoveries
-ach(61901),	-- Midnight: Leave No Treasure Unfound
-ach(61906),	-- Glory of the Midnight Delver
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64124
 ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
@@ -175,12 +131,6 @@ ach(62152),	-- Dungeon Unlock: Magisters' Terrace
 ach(62189),	-- Mind-Seeker
 ach(62190),	-- Life of the Party
 ach(62191),	-- Call of the Light
-ach(62192),	-- Midnight Diplomat
-ach(62193),	-- Midnight Dungeon Damage Dealer
-ach(62194),	-- Midnight Dungeon Healer
-ach(62195),	-- Midnight Dungeon Tank
-ach(62196),	-- Midnight Dungeoneer
-ach(62206),	-- Midnight Delver III
 ach(62207),	-- Abyss Anglers: Reinforced Joints
 ach(62208),	-- Abyss Anglers: Depth Grease
 ach(62209),	-- Abyss Anglers: Pahk Trench Fins
