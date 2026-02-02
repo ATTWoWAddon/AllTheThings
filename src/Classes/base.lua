@@ -964,6 +964,9 @@ app.CreateRawText = app.CreateClass("RawText", "strKey", {
 	isHeader = app.ReturnTrue,
 })
 
+local DLOBaseOverrides = {
+	visible = true,
+}
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
@@ -984,7 +987,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, "__o", o);
 				-- allow the object to reference the DLO if needed
 				o.__dlo = t;
-				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
+				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash,"visible:",o.visible,t.visible)
 				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
 				if overrides.OnLoad then overrides.OnLoad(o); end
 			end
@@ -998,19 +1001,16 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 					if o then
 						return override(o, key);
 					end
-					-- functions retrieved prior to o generation should return nil
-					return
+					-- functions retrieved prior to o generation should pass to other defaults
 				else
 					return override;
 				end
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
-			-- otherwise ensure visible
-			elseif key == "visible" then
-				-- app.PrintDebug("dlo.visible",unpack(params))
-				return true;
 			end
+			local basedef = DLOBaseOverrides[key]
+			if basedef ~= nil then return basedef end
 			-- return any default value
 			return def[key]
 		end,
