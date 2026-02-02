@@ -992,10 +992,14 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- override for the object
 			local override = overrides and overrides[key];
 			if override ~= nil then
-				-- app.PrintDebug("DLO:override",key,":",override)
+				-- app.PrintDebug("DLO:override",o,key,":",override)
 				-- overrides can also be a function which will execute once the object has been created
-				if o and type(override) == "function" then
-					return override(o, key);
+				if type(override) == "function" then
+					if o then
+						return override(o, key);
+					end
+					-- functions retrieved prior to o generation should return nil
+					return
 				else
 					return override;
 				end
