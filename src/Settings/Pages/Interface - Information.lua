@@ -1209,7 +1209,7 @@ local InformationTypes = {
 							end
 							name = (icon and ("|T" .. icon .. ":0|t") or "") .. name;
 							_ = (v[3] or 1);
-							if _ > 1 then
+							if _ > 0 then
 								name = _ .. "x  " .. name;
 							end
 							tooltipInfo[#tooltipInfo + 1] = {
