@@ -86,8 +86,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			crit(33141),		-- Stormstruck Beaver (Stormheim)
 		})),
 		ach(42114, {	-- Broken Memories
-			["timeline"] = { CREATED_11_1_7 },
-			-- TODO: No criteria yet, ingame description implies there will be
+			["timeline"] = { ADDED_11_2_7 },
+			["sym"] = {{"meta_achievement",
+				11157,	-- Loremaster of Legion
+				11124,	-- Good Suramaritan
+				11256,	-- Treasures of Azsuna
+				11258,	-- Treasures of Val'sharah
+				11257,	-- Treasures of Highmountain
+				11259,	-- Treasures of Stormheim
+				11260,	-- Treasures of Suramar
+			}},
 		}),
 		header(HEADERS.Achievement, 9696, {	-- Family Familiar
 			petbattle(ach(9696, {	-- Family Familiar
@@ -104,9 +112,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					9694,	-- Roboteer
 					9695,	-- The Lil' Necromancer
 				}},
-				["groups"] = {
-					i(140761),	-- Nightmare Treant (PET!)
-				},
+				["groups"] = { i(140761) },	-- Nightmare Treant (PET!)
 			})),
 			petbattle(ach(9686, {	-- Aquatic Acquiescence
 				crit(32483, {	-- Nightwatcher Merayl (Azsuna)

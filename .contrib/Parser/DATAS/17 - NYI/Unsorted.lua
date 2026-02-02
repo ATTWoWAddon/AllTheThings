@@ -4735,10 +4735,8 @@ root(ROOTS.Unsorted, {
 				i(256723),	-- Crest of Unending Grief
 				i(256724),	-- Crest of Unending Pain
 				i(257425),	-- Anubisath's Green Greatblade
-				i(257426),	-- Anubisath's Red Greatblade
 				i(257428),	-- Anubisath's Ethereal Greatblade
 				i(257710),	-- Anubisath's Green Blade
-				i(257711),	-- Anubisath's Red Blade
 				i(257713),	-- Anubisath's Ethereal Blade
 				i(257759),	-- Sorcerer's Midnight Cowl
 				i(257760),	-- Sorcerer's Azure Cowl
@@ -4827,15 +4825,6 @@ root(ROOTS.Unsorted, {
 				i(258782),	-- South Guard's Silver Cloak
 				i(258783),	-- South Guard's Silver Cuirass
 				i(258784),	-- Ensemble: South Guard's Silver Raiment \\ Ensemble: Silver Raiment of the South Guardian
-				i(258794),	-- South Guard's Copper Facemask
-				i(258795),	-- South Guard's Copper Mantle
-				i(258796),	-- South Guard's Copper Cinch
-				i(258797),	-- South Guard's Copper Greaves
-				i(258798),	-- South Guard's Copper Boots
-				i(258799),	-- South Guard's Copper Gauntlets
-				i(258800),	-- South Guard's Copper Cloak
-				i(258801),	-- South Guard's Copper Cuirass
-				i(258802),	-- Ensemble: South Guard's Copper Raiment \\ Ensemble: Copper Raiment of the South Guardian
 				i(258803),	-- South Guard's Iron Facemask
 				i(258804),	-- South Guard's Iron Mantle
 				i(258805),	-- South Guard's Iron Cinch

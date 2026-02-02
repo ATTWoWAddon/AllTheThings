@@ -1481,9 +1481,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(221495, {	-- Waddles (PET!)
 				["displayID"] = 114829,
 			}),
-			i(222967, {	-- Webbers (PET!)
-				["displayID"] = 114051,
-			}),
 			-- Without SpeciesID Attached
 			i(221493, {	-- Admiral (PET!)
 				["displayID"] = 114830,
