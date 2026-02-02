@@ -70,6 +70,19 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 	end
 	return "";
 end
+-- Concats all the key/value pairs in the table into a string
+app.StringifyTable = function(tbl, sep)
+	if tbl then
+		local tostring = tostring
+		sep = sep or ""
+		local tblvals = {};
+		for k,v in pairs(tbl) do
+			tblvals[#tblvals + 1] = k..":"..tostring(tbl[k])
+		end
+		return table_concat(tblvals, sep)
+	end
+	return "";
+end
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 app.ArrayAppend = function(a1, ...)
 	local arrs = select("#", ...);
