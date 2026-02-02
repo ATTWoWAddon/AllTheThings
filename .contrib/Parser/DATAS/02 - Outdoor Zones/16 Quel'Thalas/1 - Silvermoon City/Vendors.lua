@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(257939, {	-- Enchanter Erodin <Heirloom Vendor>
 				["coord"] = { 41.8, 66.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_12_0_0 },
+					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
 						-- Base
@@ -270,6 +270,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					}),
 				}),
+			}),
+			n(258550, {	-- Farstrider Aerieminder
+				["coord"] = { 24.8, 69.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(265674, {	-- Tasty Meat
+						["description"] = "If you feed a nearby Mischevious Chick, you'll get a reward.",
+					}),
+				},
 			}),
 			n(239670, {	-- Vaultkeeper Elysa <Token of Merit Exchange>
 				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },

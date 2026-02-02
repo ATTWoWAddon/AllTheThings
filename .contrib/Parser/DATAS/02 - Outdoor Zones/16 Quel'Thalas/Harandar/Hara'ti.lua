@@ -75,87 +75,87 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 5 --
 								i(256700, {	-- Design: Signet of Azerothian Blessings (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3262, 150 },	-- Artisan Jewelcrafter's Moxie
 									},
 								}),
 								i(256745, {	-- Formula: Enchant Chest - Mark of the Rootwarden (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
 									},
 								}),
 								i(256749, {	-- Formula: Enchant Tool - Haranir Multicrafting (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
 									},
 								}),
 								i(256751, {	-- Formula: Enchant Weapon - Worldsoul Tenacity (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
 									},
 								}),
 								i(256743, {	-- Formula: Gleeful Glamour - Haranir (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
 									},
 								}),
 								i(259457, {	-- Pattern: Simple Haranir Table (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3263, 150 },	-- Artisan Leatherworker's Moxie
 									},
 								}),
 								i(256639, {	-- Pattern: World Tree Rootwraps (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3263, 150 },	-- Artisan Leatherworker's Moxie
 									},
 								}),
 								i(258141, {	-- Recipe: Haranir Phial of Perception (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3256, 150 },	-- Artisan Alchemist's Moxie
 									},
 								}),
 								i(247500, {	-- Recipe: Rootbound Vat (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3256, 150 },	-- Artisan Alchemist's Moxie
 									},
 								}),
 								i(263443, {	-- Technique: Contract: The Hara'ti (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3261, 150 },	-- Artisan Scribe's Moxie
 									},
 								}),
 								i(258509, {	-- Technique: Harandar Signpost (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3261, 150 },	-- Artisan Scribe's Moxie
 									},
 								}),
 								i(258510, {	-- Technique: Magnificent Towering Bookcase (RECIPE!)
 									["cost"] = {
+										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
-										{ "c", 3261, 150 },	-- Artisan Scribe's Moxie
 									},
 								}),
 							}, {	-- RENOWN 6 --
-								i(258410, {	-- Traditions of the Haranir: Herbalism
+								i(258410, {	-- Traditions of the Haranir: Herbalism (CI!)
 									["cost"] = {
+										{ "c", ARTISAN_HERBALISTS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
-										{ "c", 3260, 150 },	-- Artisan Herbalist's Moxie
 									},
 								}),
-								i(258411, {	-- Traditions of the Haranir: Inscription
+								i(258411, {	-- Traditions of the Haranir: Inscription (CI!)
 									["cost"] = {
+										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
-										{ "c", 3261, 150 },	-- Artisan Scribe's Moxie
 									},
 								}),
 							}, {	-- RENOWN 7 --
@@ -184,9 +184,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 6000 } },
 								}),
 							}, {	-- RENOWN 17 --
-								iensemble(259073, {	-- Arsenal: Arms of the Hara'ti
-									["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
-								}),
 								i(256614, {	-- Shoulderguards of the Hara'ti Elder
 									["cost"] = { { "c", VOIDLIGHT_MARL, 3000 } },
 								}),
@@ -195,6 +192,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 								i(267260, {	-- Shoulderguards of the Hara'ti Seer
 									["cost"] = { { "c", VOIDLIGHT_MARL, 3000 } },
+								}),
+								iensemble(259073, {	-- Arsenal: Arms of the Hara'ti
+									["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
 								}),
 							}, {	-- RENOWN 18 --
 							}, {	-- RENOWN 19 --

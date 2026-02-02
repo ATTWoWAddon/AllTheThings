@@ -1910,33 +1910,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(252658),	-- Set Keystone Map: Windrunner Spire
 
-			-- Eversong event?
-			i(252684),	-- Blood Knight Socialite's Gloves \\ Bloodknight Socialite's Gloves
-			i(252685),	-- Blood Knight Socialite's Slacks \\ Bloodknight Socialite's Slacks
-			i(252686),	-- Blood Knight Socialite's Buckle \\ Bloodknight Socialite's Buckle
-			i(252687),	-- Blood Knight Socialite's Vest \\ Bloodknight Socialite's Vest
-			i(252688),	-- Blood Knight Socialite's Treads \\ Bloodknight Socialite's Treads
-			i(252689),	-- Magister Socialite's Gloves
-			i(252690),	-- Magister Socialite's Slacks
-			i(252691),	-- Magister Socialite's Buckle
-			i(252692),	-- Magister Socialite's Vest
-			i(252693),	-- Magister Socialite's Treads
-			i(252694),	-- Farstrider Socialite's Gloves
-			i(252695),	-- Farstrider Socialite's Slacks
-			i(252696),	-- Farstrider Socialite's Buckle
-			i(252697),	-- Farstrider Socialite's Vest
-			i(252698),	-- Farstrider Socialite's Treads
-			i(252699),	-- Haven Socialite's Gloves
-			i(252700),	-- Haven Socialite's Slacks
-			i(252701),	-- Haven Socialite's Buckle
-			i(252702),	-- Haven Socialite's Vest
-			i(252703),	-- Haven Socialite's Treads
-			i(252704),	-- Pilfered Socialite's Gloves
-			i(252705),	-- Pilfered Socialite's Slacks
-			i(252706),	-- Pilfered Socialite's Buckle
-			i(252707),	-- Pilfered Socialite's Vest
-			i(252708),	-- Pilfered Socialite's Treads
-
 			-- Misc
 			i(252951),	-- Set Keystone Map: Maisara Caverns
 			i(253009),	-- Set Keystone Map: Pit of Saron
@@ -2026,61 +1999,6 @@ root(ROOTS.Unsorted, {
 			i(254390),	-- Sheri's Laughing Rose
 			i(254391),	-- Vehn's Shimmerveil Blanc
 			i(254394),	-- Zalene's Twilight Claret
-			i(254448),	-- Blood Knight Dignitary's Gloves \\ Bloodknight Dignitary's Gloves
-			i(254449),	-- Blood Knight Dignitary's Chaps \\ Bloodknight Dignitary's Chaps
-			i(254450),	-- Blood Knight Dignitary's Sash \\ Bloodknight Dignitary's Sash
-			i(254451),	-- Blood Knight Dignitary's Tunic \\ Bloodknight Dignitary's Tunic
-			i(254452),	-- Blood Knight Dignitary's Boots \\ Bloodknight Dignitary's Boots
-			i(254453),	-- Magister Dignitary's Gloves
-			i(254454),	-- Magister Dignitary's Chaps
-			i(254455),	-- Magister Dignitary's Sash
-			i(254456),	-- Magister Dignitary's Tunic
-			i(254457),	-- Magister Dignitary's Boots
-			i(254458),	-- Farstrider Dignitary's Gloves
-			i(254459),	-- Farstrider Dignitary's Chaps
-			i(254460),	-- Farstrider Dignitary's Sash
-			i(254461),	-- Farstrider Dignitary's Tunic
-			i(254462),	-- Farstrider Dignitary's Boots
-			i(254463),	-- Haven Dignitary's Gloves
-			i(254464),	-- Haven Dignitary's Chaps
-			i(254465),	-- Haven Dignitary's Sash
-			i(254466),	-- Haven Dignitary's Tunic
-			i(254467),	-- Haven Dignitary's Boots
-			i(254468),	-- Pilfered Dignitary's Gloves
-			i(254469),	-- Pilfered Dignitary's Chaps
-			i(254470),	-- Pilfered Dignitary's Sash
-			i(254471),	-- Pilfered Dignitary's Tunic
-			i(254472),	-- Pilfered Dignitary's Boots
-			i(254474),	-- Pilfered Dignitary's Mask
-			i(254475),	-- Haven Dignitary's Mask
-			i(254476),	-- Farstrider Dignitary's Mask
-			i(254477),	-- Magister Dignitary's Mask
-			i(254478),	-- Blood Knight Dignitary's Mask \\ Bloodknight Dignitary's Mask
-			i(254479),	-- Blood Knight's Elegant Mantle \\ Bloodknight's Elegant Mantle
-			i(254480),	-- Blood Knight's Elegant Leggings \\ Bloodknight's Elegant Leggings
-			i(254481),	-- Blood Knight's Elegant Clasp \\ Bloodknight's Elegant Clasp
-			i(254482),	-- Blood Knight's Elegant Robe \\ Bloodknight's Elegant Robe
-			i(254483),	-- Blood Knight's Elegant Slippers \\ Bloodknight's Elegant Slippers
-			i(254484),	-- Magister's Elegant Mantle
-			i(254485),	-- Magister's Elegant Leggings
-			i(254486),	-- Magister's Elegant Clasp
-			i(254487),	-- Magister's Elegant Robe
-			i(254488),	-- Magister's Elegant Slippers
-			i(254489),	-- Farstrider's Elegant Mantle
-			i(254490),	-- Farstrider's Elegant Leggings
-			i(254491),	-- Farstrider's Elegant Clasp
-			i(254492),	-- Farstrider's Elegant Robe
-			i(254493),	-- Farstrider's Elegant Slippers
-			i(254494),	-- Haven's Elegant Mantle
-			i(254495),	-- Haven's Elegant Leggings
-			i(254496),	-- Haven's Elegant Clasp
-			i(254497),	-- Haven's Elegant Robe
-			i(254498),	-- Haven's Elegant Slippers
-			i(254499),	-- Pilfered Elegant Mantle
-			i(254500),	-- Pilfered Elegant Leggings
-			i(254501),	-- Pilfered Elegant Clasp
-			i(254502),	-- Pilfered Elegant Robe
-			i(254503),	-- Pilfered Elegant Slippers
 
 			-- Misc
 			i(254554),	-- Amani Hex Stick
@@ -2419,7 +2337,6 @@ root(ROOTS.Unsorted, {
 
 			-- Proff
 			i(256625),	-- Pattern: Hexwoven Strand
-			i(256636),	-- Pattern: Row Walker's Deflectors
 			i(256637),	-- Pattern: Axe-Flingin' Bands
 			i(256638),	-- Pattern: Row Walker's Swiftgrips
 			i(256640),	-- Pattern: Row Walker's Insurance
@@ -2482,7 +2399,6 @@ root(ROOTS.Unsorted, {
 			i(256757),	-- Formula: Enchant Weapon - Acuity of the Ren'dorei
 			i(256758),	-- Formula: Enchant Tool - Ren'dorei Ingenuity
 			i(256759),	-- Formula: Enchant Weapon - Flames of the Sin'dorei
-			i(256760),	-- Formula: Enchant Ring - Silvermoon's Tenacity
 			i(256761),	-- Formula: Enchant Shoulders - Voidtouched
 
 			-- World Quest
@@ -2521,13 +2437,10 @@ root(ROOTS.Unsorted, {
 			-- QI
 			i(257081),	-- Bloodied Spear Tip
 
-			-- Mount
-			i(257142),	-- Fiery Dragonhawk
 			-- Misc
 			i(257149),	-- Old Tome \\ [DNT] Old Tome
 
 			-- Mount
-			i(257154),	-- Crimson Silvermoon Hawkstrider
 			i(257157),	-- [DNT] 12.0 Black Hawkstrider
 
 			-- Armor QUest
@@ -2610,10 +2523,6 @@ root(ROOTS.Unsorted, {
 			i(257686),	-- Voidbreaker's Kukri \\ [DNT] [PH] Max Level Campaign - Weapon - Dagger - AGI - 2
 			i(257687),	-- Voidbreaker's Basher \\ [DNT] [PH] Max Level Campaign - Weapon - Mace1H - STR - 2
 			i(257688),	-- Voidbreaker's Warbow \\ [DNT] [PH] Max Level Campaign - Weapon - Bows - AGI - 2
-			-- Prof
-			i(257599),	-- Skill Issue: Jewelcrafting
-			i(257600),	-- Skill Issue: Enchanting
-			i(257601),	-- Skill Issue: Tailoring
 
 			-- QI
 			i(257727),	-- Condensed Void Reserves
@@ -2680,7 +2589,6 @@ root(ROOTS.Unsorted, {
 
 			--Tailoring
 			i(258123),	-- Pattern: Sunfire Silk Spellthread
-			i(258124),	-- Pattern: Arcanoweave Spellthread
 			i(258125),	-- Pattern: Sunfire Sash
 			i(258126),	-- Pattern: Arcanoweave Cord
 			i(258128),	-- Pattern: Void Elf Rug
@@ -2739,7 +2647,6 @@ root(ROOTS.Unsorted, {
 			i(258502),	-- Technique: Lively Songwriter's Quill
 			i(258503),	-- Technique: Sin'dorei Opened Scroll
 			i(258504),	-- Technique: Gilded Eversong Book
-			i(258505),	-- Technique: Sin'dorei Phoenix Quill
 			i(258506),	-- Technique: Homely Wall Shelves
 			i(258507),	-- Technique: Wild Hanging Scroll
 			i(258508),	-- Technique: Harandar Runestone
@@ -2856,20 +2763,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(258901),	-- Waterlogged Reliquary Paintbrush
 
-			-- Cosmetic
-			i(259027),	-- Ensemble: Blood Knight's Elegant Regalia \\ Ensemble: Bloodknight's Elegant Regalia
-			i(259028),	-- Ensemble: Haven's Elegant Regalia
-
-			-- Eversong?
-			i(259074),	-- Ensemble: Magister's Elegant Regalia
-			i(259075),	-- Ensemble: Pilfered Elegant Regalia
-			i(259076),	-- Ensemble: Farstrider's Elegant Regalia
-			i(259079),	-- Ensemble: Farstrider Dignitary's Trappings
-			i(259080),	-- Ensemble: Magister Dignitary's Trappings
-			i(259081),	-- Ensemble: Blood Knight Dignitary's Trappings \\ Ensemble: Bloodknight Dignitary's Trappings
-			i(259082),	-- Ensemble: Haven Dignitary's Trappings
-			i(259083),	-- Ensemble: Pilfered Dignitary's Trappings
-
 			-- Toy
 			i(259084),	-- Gift of the Cycle
 
@@ -2877,14 +2770,7 @@ root(ROOTS.Unsorted, {
 			i(259085),	-- Void-Touched Augment Rune
 			i(259086),	-- Void-Touched Satchel of Cooperation
 
-			-- Eversong
-			i(259087),	-- Ensemble: Pilfered Socialite's Attire
-			i(259088),	-- Ensemble: Blood Knight Socialite's Attire \\ Ensemble: Bloodknight Socialite's Attire
-			i(259089),	-- Ensemble: Magister Socialite's Attire
-			i(259090),	-- Ensemble: Farstrider Socialite's Attire
-			i(259091),	-- Ensemble: Haven Socialite's Attire
-
-			-- SLayer
+			-- Slayer
 			i(259092),	-- Void-Tinged Free Action Potion
 
 			-- Prof
@@ -2918,10 +2804,7 @@ root(ROOTS.Unsorted, {
 			i(259232),	-- Sunforged Leatherworker's Toolset
 			i(259234),	-- Sunforged Needle Set
 			-- Pet
-			i(259224),	-- Dragonhawk Munchkin
 			i(259337),	-- Munchy \\ Vermillion Grovecrawler
-			-- Toy
-			i(259240),	-- Sin'dorei Wine
 
 			-- Slayer
 			i(259245),	-- Void Phase Potion
@@ -2938,19 +2821,14 @@ root(ROOTS.Unsorted, {
 			i(259360),	-- Steelbark Cloak \\ [PH] WQ - Accessory - CLOAK - D
 			-- Prof
 			i(259362),	-- Pattern: Haranir Canopy Bed
-			i(259363),	-- Design: Bejeweled Sin'dorei Lyre
-			i(259364),	-- Formula: Animated Sin'dorei Hammer
 			i(259365),	-- Pattern: Plush Haranir Leather Pillow
 			i(259366),	-- Design: Miniature Replica Haranir Mural
-			i(259367),	-- Formula: Enchanted Sin'dorei Pick
 			i(259368),	-- Pattern: Sturdy Haranir Chair
 			i(259369),	-- Design: Resplendent Highborne Statue
 			i(259370),	-- Formula: Rootflame Campfire
 			i(259371),	-- Pattern: Stitched Haranir Rug
 			i(259372),	-- Design: Shining Sin'dorei Hourglass
 			i(259373),	-- Formula: Ren'dorei Postage Repository
-			i(259374),	-- Formula: Spellbound Tome of Thalassian Magics
-			i(259375),	-- Formula: Self-Pouring Thalassian Sunwine
 			i(259459),	-- Recipe: Potion of Recklessness
 
 			-- Prey
@@ -3495,7 +3373,6 @@ root(ROOTS.Unsorted, {
 			i(263433),	-- Overflowing Silvermoon Trove
 
 			-- Inscri
-			i(263444),	-- Technique: Contract: The Silvermoon Court
 			i(263445),	-- Technique: Contract: The Singularity
 
 			-- QI
@@ -3587,7 +3464,6 @@ root(ROOTS.Unsorted, {
 			i(263723),	-- Shawl of the Gilded Collapsed Star \\ Cape of the Collapsed Star
 
 			-- Misc
-			i(263870),	-- Rookery Cache Key
 			i(263974),	-- Relaxing Tisane
 			i(264182),	-- Kelum'ko's Generous Aromatic Gift
 			i(264183),	-- Kelum'ko's Generous Aromatic Gift
@@ -3771,12 +3647,6 @@ root(ROOTS.Unsorted, {
 			i(264899),	-- [DNT] [AUTOGEN] AK_ALCHEMYBOTTLE01.M2 \\ Arakkoan Alchemist's Concoction
 			i(264900),	-- Arakkoan Alchemist's Bottle
 
-			-- Cosmetc
-			i(264907),	-- Blood Knight Recruit's Shield \\ [DNT] BE Shield
-
-			-- Pet
-			i(264909),	-- Flicker \\ [DNT] Baby Eversong Lynx (Black)
-
 			-- Trinket
 			i(264968),	-- Telluric Leyblossom
 
@@ -3784,8 +3654,6 @@ root(ROOTS.Unsorted, {
 			i(264969),	-- Extinction Voulge
 			i(264970),	-- Oblivion's Edge
 			i(264971),	-- Annihilation Rod
-			i(264996),	-- Gilded Sunlance \\ [DNT] BE Polearm
-			i(264997),	-- Farstriders Quiver \\ [DNT] BE Quiver
 			-- Cache
 			i(264972),	-- Voidstorm Victuals
 			i(264988),	-- Endgame Essentials
@@ -3834,25 +3702,17 @@ root(ROOTS.Unsorted, {
 			i(265053),	-- Gnarled Bark Shard
 
 			-- Decor
-			i(245941),	-- Silvermoon Sanctum Focus \\ Silvermoon Sanctum Teleporter \\ [DNT] [AUTOGEN] Decor 1896 Item
-			i(245985),	-- Floating Azure Lantern \\ [DNT] [AUTOGEN] Decor 1901 Item
 			i(246402),	-- Hollowed Harandar Gourds
 			i(246408),	-- Haranir Herb Rack
-			i(246692),	-- Murder Row Wine Decanter \\ [DNT] Wine Pour 01
 			i(246959),	-- Sealed Fungal Jar
-			i(249559),	-- Reverent Sin'dorei Statue \\ Statue of Reverent Grace \\ [DNT] BE Statue 01
 			i(249768),	-- Fungarian Barrel
-			i(250772),	-- Crimson Lightwood Privacy Screen \\ Crimson Lightwood Screen \\ [DNT] Divider Screen 01
 			i(251980),	-- Fungarian Sack
 			i(253443),	-- Replica Sky's Hope
-			i(256040),	-- Silvermoon Gemmed Chair
 			i(256924),	-- Hash'ey Heartbroth Cauldron
 			i(256926),	-- Empty Amani Cauldron
 			i(256927),	-- Carved Idol of Nalorakk, Loa of War \\ Carved Idol of Nalorakk
 			i(256933),	-- Carved Idol of Jan'alai, Loa of Fire \\ Carved Idol of Jan'alai
 			i(256934),	-- Boiling Amani Cauldron
-			i(257421),	-- Bejeweled Silvermoon Chandelier
-			i(257422),	-- Gilded Sunfury Chair
 			i(258290),	-- Carved Idol of Halazzi, Loa of the Hunt \\ Carved Idol of Halazzi
 			i(258549),	-- Burning Amani Pinecone
 			i(260202),	-- Visage of Akil'zon, Loa of Victory \\ Visage of Akil'zon
@@ -3883,18 +3743,6 @@ root(ROOTS.Unsorted, {
 			i(263041),	-- Replica Root of the World
 			i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 			i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
-			i(263203),	-- Rack of Silvermoon Arms \\ [DNT] Weapon Rack 01
-			i(263205),	-- Crimson Silvermoon Runner \\ [DNT] [AUTOGEN] Decor 14971 Item
-			i(263206),	-- Plum Eversong Rug \\ [DNT] [AUTOGEN] Decor 14972 Item
-			i(263212),	-- Farstrider's Comfy Cushion \\ [DNT] Bean Bag 01
-			i(263216),	-- Gilded Lightwood Wardrobe \\ [DNT] [AUTOGEN] Decor 14979 Item
-			i(263223),	-- Gilded Sky-Blue Drapery \\ [DNT] [AUTOGEN] Decor 14985 Item
-			i(263224),	-- Gentle Floating Planter \\ [DNT] Floating Planter 01
-			i(263225),	-- Sunlit Glass Mirror \\ [DNT] Mirror 01
-			i(263228),	-- Grand Lightwood Table \\ [DNT] [AUTOGEN] Decor 15059 Item
-			i(263229),	-- Ornate Lightwood Table \\ [DNT] [AUTOGEN] Decor 15060 Item
-			i(263232),	-- Floating Spire Shelf \\ [DNT] [AUTOGEN] Decor 15063 Item
-			i(263234),	-- Turning Silvermoon Archives \\ [DNT] [AUTOGEN] Decor 15065 Item
 			i(263318),	-- Simple Amani Basket
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
 			i(263997),	-- Midnight Alchemist's Shop Sign
@@ -3912,8 +3760,6 @@ root(ROOTS.Unsorted, {
 			i(264178),	-- Harandar Charcuterie Board
 			i(264243),	-- Firm Haranir Pillow
 			i(264245),	-- Warm Haranir Blanket
-			i(264264),	-- Gilded Vigil Post \\ [DNT] [AUTOGEN] Decor 15499 Item
-			i(264265),	-- Sanctified Flame Lantern \\ [DNT] [AUTOGEN] Decor 15500 Item
 			i(264267),	-- Rutaani Birdfeeder
 			i(264268),	-- Rutaani Birdbath
 			i(264269),	-- Rutaani Bird Perch
@@ -4089,16 +3935,12 @@ root(ROOTS.Unsorted, {
 
 			i(265655),	-- Ritual Components
 			i(265657),	-- Fiber of Living Agony
-			i(265658),	-- Silvermoon Court Cloak
-			i(265659),	-- Silvermoon Court Epaulets
-			i(265663),	-- Silvermoon Court Tabard
 			i(265664),	-- Budding Light
 			i(265665),	-- Chanterelle Shandy
 			i(265666),	-- World Root Beer
 			i(265667),	-- Bright Claw
 			i(265668),	-- Har'kuai Mai Tai
 			i(265669),	-- Fermented Rift Water
-			i(265674),	-- Tasty Meat
 			i(265695),	-- Elementary Voidcore Shard
 			i(265710),	-- Elementary Voidcore
 			i(265739),	-- Amani Heartstring Pendant
@@ -4125,7 +3967,6 @@ root(ROOTS.Unsorted, {
 			i(265819),	-- Ruia's Musings, Part 2
 			i(265820),	-- Ruia's Musings, Part 3
 			i(265824),	-- The Rootwarden's Notes
-			i(265828),	-- Gilded Armillary Sphere
 			i(265832),	-- Incomplete Booklet of Sonnets
 			i(265833),	-- Page 1 of a Book of Sonnets
 			i(265834),	-- Page 2 of a Book of Sonnets
@@ -4137,7 +3978,6 @@ root(ROOTS.Unsorted, {
 			i(264345),	-- Galactic Commander's Orb
 			i(264482),	-- Void Elf Torch
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
-			i(265997),	-- Blood Knight Champion's Tabard
 			i(266075),	-- Harpoon of Extirpation
 			i(266076),	-- Nether Siphoner
 			i(266077),	-- Basic Black Quiver
@@ -4175,7 +4015,6 @@ root(ROOTS.Unsorted, {
 			i(266213),	-- Incense Materials
 			i(266314),	-- Novice Combatant's Necklace
 			i(266317),	-- Novice Combatant's Ring
-			i(245290),	-- Long Silvermoon Table
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
 			i(260603),	-- Frail and Flexible Wing
@@ -4450,10 +4289,6 @@ root(ROOTS.Unsorted, {
 			i(267628),	-- Historian's Tome
 
 			-- Armor
-			i(267638),	-- Tarnished Silvermoon Sunspire
-			i(267639),	-- Tarnished Silvermoon Sunguard
-			i(267640),	-- Tarnished Silvermoon Sunveil
-			i(267641),	-- Tarnished Silvermoon Suncrest
 			i(267642),	-- Worn Amani Heartstring Pendant
 			i(267643),	-- Worn Amani Totemstring
 
@@ -4466,9 +4301,6 @@ root(ROOTS.Unsorted, {
 			i(267654),	-- Swirling Arcane Essence
 			i(267655),	-- Brimming Mana Shard
 
-			-- Pet
-			i(267838),	-- Sunwing Hatchling
-
 			-- Enchatning
 			i(268032),	-- Conjured Illusory Adornment - Blooming Light
 			i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
@@ -4476,7 +4308,6 @@ root(ROOTS.Unsorted, {
 			i(268038),	-- Endless Codex of Blooming Light
 			i(268039),	-- Endless Codex of Nature's Grace
 			i(268041),	-- Endless Codex of the Voidtouched
-			i(268042),	-- Formula: Endless Codex of Blooming Light
 			i(268043),	-- Formula: Endless Codex of Nature's Grace
 			i(268044),	-- Formula: Endless Codex of the Voidtouched
 

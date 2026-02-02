@@ -41,6 +41,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 44.6, 45.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 94740,
 				["groups"] = {
+					i(265828),	-- Gilded Armillary Sphere (750g JUNK!)
 					i(262453),	-- Heathlight Armillary (DECOR!)
 				},
 			}),

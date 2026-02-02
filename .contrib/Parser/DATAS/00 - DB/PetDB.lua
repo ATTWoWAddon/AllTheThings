@@ -4526,8 +4526,10 @@ i(260942, 4951);	-- Bubbly Snapling
 i(205017, 3519);	-- Byrn
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
+i(259224, 4928);	-- Dragonhawk Munchkin
 i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
+i(264909, 4982);	-- Flicker
 i(250146, 4885);	-- Gloom Toad
 i(262393, 4955);	-- Kreepah'zoyd
 i(259991, 4930);	-- Lil' Preyseeker
@@ -4549,7 +4551,6 @@ i(222967, 4475);	-- Webbers
 --- UNSORTED ---
 i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
-i(264909, 4982);	-- [DNT] Baby Eversong Lynx (Black)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
 i(265035, 4984);	-- [PH] Purple Siphoid
 i(260705, 4947);	-- Assistant Botanist Leafy
@@ -4560,7 +4561,6 @@ i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
 i(258189, 4910);	-- Do, child of Fi'lo
-i(259224, 4928);	-- Dragonhawk Munchkin
 i(0, 4887);			-- Dundun
 i(264654, 4977);	-- Emberwing Hatchling
 i(262774, 4967);	-- Gortham

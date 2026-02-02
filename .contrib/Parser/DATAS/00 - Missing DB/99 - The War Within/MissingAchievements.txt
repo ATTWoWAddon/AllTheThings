@@ -129,7 +129,6 @@ ach(62150),	-- Dungeon Unlock: Nexus-Point Xenas
 ach(62151),	-- Dungeon Unlock: Voidscar Arena
 ach(62152),	-- Dungeon Unlock: Magisters' Terrace
 ach(62189),	-- Mind-Seeker
-ach(62190),	-- Life of the Party
 ach(62191),	-- Call of the Light
 ach(62207),	-- Abyss Anglers: Reinforced Joints
 ach(62208),	-- Abyss Anglers: Depth Grease
@@ -172,7 +171,6 @@ ach(62249),	-- Skinning-on-Demand
 ach(62250),	-- Dedicated to the Craft: Herbalism
 ach(62251),	-- Dedicated to the Craft: Mining
 ach(62252),	-- Dedicated to the Craft: Skinning
-ach(62262),	-- Silvermoon Court Champion
 ach(62263),	-- Amani Tribe Champion
 ach(62265),	-- The Singularity Champion
 ach(62271),	-- Abyss Anglers: Trench Berserker
