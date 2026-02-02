@@ -16,7 +16,7 @@ DREAM_INFUSION = createHeader({
 		-- TODO: pt = "",
 		ru = "Настой Сна",
 		cn = "梦境注能",
-		-- TODO: tw = "",
+		tw = "夢境灌注",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Может быть выполнено еженедельно.",
 		-- TODO: ko = "",
 		cn = "可以每周完成",
-		-- TODO: tw = "",
+		tw = "可以每週完成",
 	},
 })

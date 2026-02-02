@@ -15,7 +15,7 @@ FYRAKK_ASSAULTS = createHeader({
 		pt = "Ofensivas de Fyrakk",
 		ru = "Налеты Фиракка",
 		cn = "菲莱克突袭",
-		-- TODO: tw = "",
+		tw = "菲拉卡的突襲",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {

@@ -12,6 +12,6 @@ WEEKLY_PROFESSION_KNOWLEDGE = createHeader({
 		-- TODO: pt = "",
 		ru = "Еженедельные Очки Знаний Профессий",
 		cn = "每周专业知识",
-		-- TODO: tw = "",
+		tw = "每週專業知識",
 	},
 });
