@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(252915, {	-- Corlen Hordralin <Master Painter>
 				["coord"] = { 44.2, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = sharedData({
-					["cost"] = { { "g", 50000000 } },		-- 5,000g
+					["cost"] = { { "g", 50000000 } },	-- 5,000g
 					-- Requires completion of 12.0 patch meta achievement [PH]. TODO: Which achievement?
 				}, {
 					i(253604),	-- "A Bridge Over Calm Waters" Painting (DECOR!)
@@ -50,30 +50,226 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 50.8, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(252668, {	-- "The Harbinger" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },		-- 10,000g
+						["cost"] = { { "g", 100000000 } },	-- 10,000g
 					}),
 					i(252666, {	-- "The High Exarch" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },		-- 10,000g
+						["cost"] = { { "g", 100000000 } },	-- 10,000g
 					}),
 					i(252667, {	-- "The Ranger of the Void" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },		-- 10,000g
+						["cost"] = { { "g", 100000000 } },	-- 10,000g
 					}),
 					i(252669, {	-- "The Redeemer" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },		-- 10,000g
+						["cost"] = { { "g", 100000000 } },	-- 10,000g
 					}),
 					i(244668, {	-- Light-Infused Fountain (DECOR!)
-						["cost"] = { { "g", 250000000 } },		-- 25,000g
+						["cost"] = { { "g", 250000000 } },	-- 25,000g
 					}),
 					i(246414, {	-- Light-Infused Rotunda (DECOR!)
-						["cost"] = { { "g", 250000000 } },		-- 25,000g
+						["cost"] = { { "g", 250000000 } },	-- 25,000g
 					}),
 					i(245939, {	-- Void-Corrupted Fountain (DECOR!)
-						["cost"] = { { "g", 250000000 } },		-- 25,000g
+						["cost"] = { { "g", 250000000 } },	-- 25,000g
 					}),
 					i(248809, {	-- Void-Corrupted Rotunda (DECOR!)
-						["cost"] = { { "g", 250000000 } },		-- 25,000g
+						["cost"] = { { "g", 250000000 } },	-- 25,000g
 					}),
 				},
+			}),
+			n(257939, {	-- Enchanter Erodin <Heirloom Vendor>
+				["coord"] = { 41.8, 66.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_12_0_0 },
+				},FILTERFUNC_itemID,{
+					filter(CLOTH, {
+						-- Base
+						i(42985, {	-- Tattered Dreadmist Mantle
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(48691, {	-- Tattered Dreadmist Robe
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						-- "Upgrade"
+						i(93859, {	-- Bloodstained Dreadmist Mantle
+							["cost"] = { { "i", 42985, 1 } },	-- Tattered Dreadmist Mantle
+						}),
+						i(93860, {	-- Bloodstained Dreadmist Robe
+							["cost"] = { { "i", 48691, 1 } },	-- Tattered Dreadmist Robe
+						}),
+					}),
+					filter(LEATHER, {
+						-- Base
+						i(48687, {	-- Preened Ironfeather Breastplate
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(42984, {	-- Preened Ironfeather Shoulders
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(42952, {	-- Stained Shadowcraft Spaulders
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(48689, {	-- Stained Shadowcraft Tunic
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						-- "Upgrade"
+						i(93865, {	-- Majestic Ironfeather Breastplate
+							["cost"] = { { "i", 48687, 1 } },	-- Preened Ironfeather Breastplate
+						}),
+						i(93864, {	-- Majestic Ironfeather Shoulders
+							["cost"] = { { "i", 42984, 1 } },	-- Preened Ironfeather Shoulders
+						}),
+						i(93862, {	-- Supple Shadowcraft Spaulders
+							["cost"] = { { "i", 42952, 1 } },	-- Stained Shadowcraft Spaulders
+						}),
+						i(93863, {	-- Supple Shadowcraft Tunic
+							["cost"] = { { "i", 48689, 1 } },	-- Stained Shadowcraft Tunic
+						}),
+					}),
+					filter(MAIL, {
+						-- Base
+						i(42950, {	-- Champion Herod's Shoulder
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(48677, {	-- Champion's Deathdealer Breastplate
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(42951, {	-- Mystical Pauldrons of Elements
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(48683, {	-- Mystical Vest of Elements
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						-- "Upgrade"
+						i(93888, {	-- Furious Deathdealer Breastplate
+							["cost"] = { { "i", 48677, 1 } },	-- Champion's Deathdealer Breastplate
+						}),
+						i(93887, {	-- Grand Champion Herod's Shoulder
+							["cost"] = { { "i", 42950, 1 } },	-- Champion Herod's Shoulder
+						}),
+						i(93876, {	-- Awakened Pauldrons of Elements
+							["cost"] = { { "i", 42951, 1 } },	-- Mystical Pauldrons of Elements
+						}),
+						i(93885, {	-- Awakened Vest of Elements
+							["cost"] = { { "i", 48683, 1 } },	-- Mystical Vest of Elements
+						}),
+					}),
+					filter(PLATE, {
+						-- Base
+						i(69889, {	-- Burnished Breastplate of Might
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(69890, {	-- Burnished Pauldrons of Might
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						i(48685, {	-- Polished Breastplate of Valor
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(42949, {	-- Polished Spaulders of Valor
+							["cost"] = { { "g", 8000000 } },	-- 800g
+						}),
+						-- "Upgrade"
+						i(93892, {	-- Brushed Breastplate of Might
+							["cost"] = { { "i", 69889, 1 } },	-- Burnished Breastplate of Might
+						}),
+						i(93893, {	-- Brushed Pauldrons of Might
+							["cost"] = { { "i", 69890, 1 } },	-- Burnished Pauldrons of Might
+						}),
+						i(93891, {	-- Gleaming Breastplate of Valor
+							["cost"] = { { "i", 48685, 1 } },	-- Polished Breastplate of Valor
+						}),
+						i(93890, {	-- Gleaming Spaulders of Valor
+							["cost"] = { { "i", 42949, 1 } },	-- Polished Spaulders of Valor
+						}),
+					}),
+					filter(TRINKET_F, {
+						-- Base
+						i(42992, {	-- Discerning Eye of the Beast
+							["cost"] = { { "g", 7500000 } },	-- 750g
+						}),
+						i(42991, {	-- Swift Hand of Justice
+							["cost"] = { { "g", 7500000 } },	-- 750g
+						}),
+						-- "Upgrade"
+						i(93896, {	-- Forceful Hand of Justice
+							["cost"] = { { "i", 42991, 1 } },	-- Swift Hand of Justice
+						}),
+						i(93897, {	-- Piercing Eye of the Beast
+							["cost"] = { { "i", 42992, 1 } },	-- Discerning Eye of the Beast
+						}),
+					}),
+					n(WEAPONS, {
+						-- Base
+						i(42944, {	-- Balanced Heartseeker
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(42943, {	-- Bloodied Arcanite Reaper
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(69893, {	-- Bloodsoaked Skullforge Reaver
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(79131, {	-- Burnished Warden Staff
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(42946, {	-- Charmed Ancient Bone Bow
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(42948, {	-- Devout Aurastone Hammer
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(42947, {	-- Dignified Headmaster's Charge
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(93902, {	-- Flamescarred Draconian Deflector
+							["cost"] = { { "g", 5000000 } },	-- 500g
+						}),
+						i(93904, {	-- Musty Tome of the Lost
+							["cost"] = { { "g", 12500000 } },	-- 1,250g
+						}),
+						i(48718, {	-- Repurposed Lava Dredger
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
+						}),
+						i(42945, {	-- Venerable Dal'Rend's Sacred Charge
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(48716, {	-- Venerable Mass of McGowan
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
+						}),
+						i(93903, {	-- Weathered Observer's Shield
+							["cost"] = { { "g", 5000000 } },	-- 500g
+						}),
+						-- "Upgrade"
+						i(93847, {	-- Crushing Mass of McGowan
+							["cost"] = { { "i", 48716, 1 } },	-- Venerable Mass of McGowan
+						}),
+						i(93845, {	-- Gore-Steeped Skullforge Reaver
+							["cost"] = { { "i", 69893, 1 } },	-- Bloodsoaked Skullforge Reaver
+						}),
+						i(93843, {	-- Hardened Arcanite Reaper
+							["cost"] = { { "i", 42943, 1 } },	-- Bloodied Arcanite Reaper
+						}),
+						i(93856, {	-- Noble Dal'Rend's Sacred Charge
+							["cost"] = { { "i", 42945, 1 } },	-- Venerable Dal'Rend's Sacred Charge
+						}),
+						i(93853, {	-- Pious Aurastone Hammer
+							["cost"] = { { "i", 42948, 1 } },	-- Devout Aurastone Hammer
+						}),
+						i(93846, {	-- Re-Engineered Lava Dredger
+							["cost"] = { { "i", 48718, 1 } },	-- Repurposed Lava Dredger
+						}),
+						i(93844, {	-- Refinished Warden Staff
+							["cost"] = { { "i", 79131, 1 } },	-- Burnished Warden Staff
+						}),
+						i(93854, {	-- Scholarly Headmaster's Charge
+							["cost"] = { { "i", 42947, 1 } },	-- Dignified Headmaster's Charge
+						}),
+						i(93857, {	-- Vengeful Heartseeker
+							["cost"] = { { "i", 42944, 1 } },	-- Balanced Heartseeker
+						}),
+						i(93855, {	-- War-Torn Ancient Bone Bow
+							["cost"] = { { "i", 42946, 1 } },	-- Charmed Ancient Bone Bow
+						}),
+					}),
+				}),
 			}),
 			n(239670, {	-- Vaultkeeper Elysa <Token of Merit Exchange>
 				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },
