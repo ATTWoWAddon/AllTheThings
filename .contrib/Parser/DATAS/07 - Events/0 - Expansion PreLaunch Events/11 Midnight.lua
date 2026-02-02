@@ -16,10 +16,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["coords"] = {
 						{ 49.4, 80.2, TWILIGHT_HIGHLANDS },	-- Blood Elf Campsite
 						{ 50.3, 89.4, TWILIGHT_HIGHLANDS },	-- Void Elf Campsite
+						{ 58.7, 51.9, TWILIGHT_HIGHLANDS },	-- Floating in the sky!
 					},
 					["providers"] = {
 						{ "o", 566765 },	-- Stolen Twilight's Blade Stratagem, Blood Elf Campsite
-						{ "o", 508350 },	-- Stolen Twilight's Blade Stratagem, Void Elf Campsite
+						-- The below is Portal to Stormwind and no other object is showing in wowhead
+						-- { "o", 508350 },	-- Stolen Twilight's Blade Stratagem, Void Elf Campsite
 					},
 				}),
 				ach(42300, {	-- Two Minutes to Midnight (automated)
