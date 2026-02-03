@@ -285,6 +285,16 @@ app:CreateWindow("Debugger", {
 				end
 			end
 		end
+		local GetMerchantItemInfoX = C_MerchantFrame.GetItemInfo;
+		if not GetMerchantItemInfoX then
+			GetMerchantItemInfoX = function(i)
+				local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
+				return {
+					price = cost,
+					hasExtendedCost = extendedCost
+				};
+			end
+		end
 		handlers.MERCHANT_SHOW = function(self)
 			if SetMerchantFilter then
 				SetMerchantFilter(LE_LOOT_FILTER_ALL)
@@ -309,8 +319,9 @@ app:CreateWindow("Debugger", {
 					for i=1,numItems,1 do
 						local link = GetMerchantItemLink(i);
 						if link then
-							local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-							if extendedCost then
+							local merchItemInfo = GetMerchantItemInfoX(i);
+							local cost = merchItemInfo.price;
+							if merchItemInfo.hasExtendedCost then
 								cost = {};
 								local itemCount = GetMerchantItemCostInfo(i);
 								for j=1,itemCount,1 do
@@ -330,7 +341,7 @@ app:CreateWindow("Debugger", {
 							end
 
 							-- Parse as an ITEM LINK.
-							tinsert(rawGroups, { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
+							tinsert(rawGroups, { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost });
 						end
 					end
 					
