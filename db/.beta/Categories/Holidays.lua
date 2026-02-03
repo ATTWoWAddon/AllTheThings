@@ -1114,8 +1114,8 @@ crit(27722,{achID=6031,e=1,id=5,providers={a[82],a[9]},r=1}),
 crit(27721,{achID=6031,e=1,id=4,providers={a[82],a[9]},r=1}),
 crit(27723,{achID=6031,e=1,id=6,providers={a[82],a[9]},r=1})}})}}),
 flt(101,{awp=50004,e=1,pb=1,g={
-p(1068,{awp=50100,e=1,npcID=67443,pb=1}),
-p(1062,{awp=50100,e=1,npcID=67329,pb=1})}}),
+p(1068,{awp=50100,description="Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",e=1,npcID=67443,pb=1}),
+p(1062,{awp=50100,coords={{34.4,74.6,407},{34.8,36.4,407},{43.8,58.4,407},{45,24.8,407},{45.4,50.6,407},{53,23.6,407},{58.6,69.6,407},{59.6,64.6,407},{61.6,43.6,407},{62.6,77.6,407},{63.6,58.6,407},{70.6,77.4,407},{70.8,58.4,407},{71.4,68.6,407}},e=1,npcID=67329,pb=1})}}),
 h(-27,{awp=40300,description="The following can drop from instanced content when a Darkmoon Adventurer's Guide is in your bags or purchased from the auction house.",e=1,providers={{"i",71634}},g={
 i(71715,{description="Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=7}),
 i(71635,{description="Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=7}),
