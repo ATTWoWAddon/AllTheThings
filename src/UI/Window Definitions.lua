@@ -1866,6 +1866,10 @@ local function RecordSettingsForWindow(self)
 	local windowSettings = self.Settings;
 	if windowSettings then
 		BuildSettingsForWindow(self, windowSettings);
+		if self.OnRecordSettings then
+			self:OnRecordSettings(windowSettings)
+		end
+		app.Settings.SetWindowSettingsToProfile(self.Suffix, windowSettings)
 	end
 	return windowSettings;
 end

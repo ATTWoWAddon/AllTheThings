@@ -704,6 +704,8 @@ end
 local OldSuffixConversion = {
 	MiniList = "CurrentInstance"
 }
+-- TEMP function to ensure profile is referenced for any custom window layouts which already exist in a Profile
+-- Eventually moving to a Layout system
 settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 	local profileWindows = RawSettings and RawSettings.Windows
 	if not profileWindows then return end
@@ -734,6 +736,40 @@ settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 		windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
 		windowSettings.borderColor = { rBd, gBd, bBd, aBd }
 	end
+end
+-- TEMP function to ensure profile is updated with any changed window layouts which already exist in a Profile
+-- Eventually moving to a Layout system
+settings.SetWindowSettingsToProfile = function(suffix, windowSettings)
+	local profileWindows = RawSettings and RawSettings.Windows
+	if not profileWindows then return end
+
+	local points = profileWindows[suffix]
+	if not points then
+		-- is the profile saved with old window suffix?
+		-- if so, then swap it to the new suffix
+		points = profileWindows[OldSuffixConversion[suffix]]
+		if points then
+			profileWindows[suffix] = points
+			profileWindows[OldSuffixConversion[suffix]] = nil
+		end
+	end
+
+	local point = points and points[1]
+
+	-- don't add/update Profile settings if there currently are none
+	if not point then
+		-- clear out if there's any unused data leftover
+		profileWindows[suffix] = nil
+		return
+	end
+
+	point.Point       = windowSettings.point
+	point.PointRef    = windowSettings.relativePoint
+	point.X           = windowSettings.x
+	point.Y           = windowSettings.y
+	points.Width      = windowSettings.width
+	points.Height     = windowSettings.height
+	points.Locked     = windowSettings.isLocked
 end
 settings.Get = function(self, setting)
 	return RawSettings.General[setting];
