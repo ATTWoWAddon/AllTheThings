@@ -24233,3 +24233,19 @@
 260957@@@Vaeli
 260958@@@Vaeli
 260977@@@Flyer
+12.0.1.65448
+260992@@@Boost
+260997@@@Twilight Ogre Directional Sound Cue
+261003@@@Twilight Ogre Directional Sound Cue
+261032@@@Twilight Ogre Directional Sound Cue
+261035@@@Twilight Ogre Directional Sound Cue
+261036@@@Twilight Ogre Directional Sound Cue
+261037@@@Twilight Ogre Directional Sound Cue
+261038@@@Twilight Ogre Directional Sound Cue
+261040@@@Twilight Ogre Directional Sound Cue
+261064@@@Light's Vanguard
+261065@@@Siphoid
+261066@@@Void Mistlurker
+261068@@@Harrower
+261069@@@Blightclaw
+261081@@@Twilight Voidchurner

@@ -2890,3 +2890,5 @@
 3239@@@Quest Path 11403: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Down - Force Taxi - SJC
 3240@@@Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
 3241@@@Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
+12.0.1.65448
+3123@@@Masters' Perch, Voidstorm

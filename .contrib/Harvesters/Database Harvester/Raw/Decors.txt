@@ -3063,3 +3063,5 @@
 20162@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
 20163@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
 20632@@@[DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2
+12.0.1.65448
+20632@@@Devouring Ritual Spire
