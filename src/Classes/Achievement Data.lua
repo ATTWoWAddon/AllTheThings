@@ -612,4 +612,22 @@ if app.GameBuildVersion < 30000 then
 	app:RegisterEvent("PLAYERBANKSLOTS_CHANGED");
 	app.events.PLAYERBANKSLOTS_CHANGED = RefreshAchievementData;
 end
+app.AddEventHandler("OnNewPopoutGroup", function(group)
+	if group.GetRelatedThings then
+		local relatedThingsGroup = app.CreateRawText("Related Things", {
+			["description"] = "The following contains things that may be related or relevant to the content.",
+			["icon"] = 133785,
+			["g"] = {},
+		});
+		local relatedThings = {};
+		group.GetRelatedThings(group, relatedThings);
+		for i,o in ipairs(relatedThings) do
+			app.MergeObject(relatedThingsGroup.g, app.CloneClassInstance(o));
+		end
+		if #relatedThingsGroup.g > 0 then
+			if not group.g then group.g = {}; end
+			app.MergeObject(group.g, relatedThingsGroup);
+		end
+	end
+end);
 end
