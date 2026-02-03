@@ -220,7 +220,8 @@ app:CreateWindow("list", {
 					data.total = nil
 					data.progress = nil
 
-					if app.Debugging and DataType == "sourceID" then
+					-- don't need this currently, checking sourceIDs is behaving normally now
+					if false and app.Debugging and DataType == "sourceID" then
 						app.print("Turn off Debugging (/att debug-print) to use sourceID lists. Excessive SourceID checking for ItemLinks will cause too much lag in this window!")
 						return true
 					end

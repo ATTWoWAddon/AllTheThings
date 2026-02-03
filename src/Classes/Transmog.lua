@@ -153,6 +153,9 @@ app.GetGroupSourceID = function(group)
 	if sourceID then group.sourceID = sourceID; end
 end
 
+-- caches for mod/bonus which have successfully been used to find valid appearances
+local UsedModIDs = {}
+local UsedBonusIDs = {}
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
 	local link;
@@ -210,16 +213,37 @@ app.DetermineItemLink = function(sourceID)
 		-- end
 	end
 
+	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
+	for m in pairs(UsedModIDs) do
+		link = itemFormat:format(m)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
+	itemFormat = "item:"..itemID.."::::::::::::1:%d";
+	for b in pairs(UsedBonusIDs) do
+		link = itemFormat:format(b)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
 	-- Check ModIDs
 	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,299,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(m);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedModIDs[m] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(m);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedModIDs[m] = true
+				return link
+			end
+		end
 	end
 
 	-- Only try to manually scan for a bonusID-based sourceID if we are Debugging (save regular users from unnecessary lookups)
@@ -229,11 +253,16 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,15999,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(b);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedBonusIDs[b] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(b);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedBonusIDs[b] = true
+				return link
+			end
+		end
 	end
 	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
