@@ -1,6 +1,11 @@
 -- Companion Lib
 local _, app = ...
 
+-- Use the Mounts Lib for Wrath+
+if app.GameBuildVersion > 30000 then
+	return;
+end
+
 -- Global locals
 local ipairs, rawset, rawget, select
 	= ipairs, rawset, rawget, select;
@@ -91,8 +96,8 @@ if C_MountJournal and app.GameBuildVersion > 30000 then
 			return rawget(t, id);
 		end
 	end });
-	mountFields.mountID = function(t)
-		return SpellIDToMountID[t.spellID];
+	mountFields.spellID = function(t)
+		return t.mountID;
 	end
 	mountFields.name = function(t)
 		local mountID = t.mountID;
@@ -115,9 +120,12 @@ else
 	mountFields.name = function(t)
 		return GetSpellName(t.spellID) or RETRIEVING_DATA;
 	end
+	mountFields.spellID = function(t)
+		return t.mountID;
+	end
 end
 
-app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
+app.CreateMount = app.CreateClass("Mount", "mountID", mountFields,
 "WithItem", {	-- This is a conditional contructor.
 	link = mountFields.linkForItem;
 	tsm = mountFields.tsmForItem

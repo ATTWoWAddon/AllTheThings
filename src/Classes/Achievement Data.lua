@@ -81,13 +81,10 @@ local function GetRelatedThingsForOwnItem(t, objects)
 	if searchResults then tinsert(objects, searchResults[1]); end
 end
 local function GetRelatedThingsForMounts(t, objects)
-	for spellID,spells in pairs(SearchForFieldContainer("spellID")) do
+	for spellID,spells in pairs(SearchForFieldContainer("mountID")) do
 		for i,spell in ipairs(spells) do
-			if ((spell.f and spell.f == app.FilterConstants.MOUNTS)
-			or (spell.filterID and spell.filterID == app.FilterConstants.MOUNTS)) then
-				tinsert(objects, spell);
-				break;
-			end
+			tinsert(objects, spell);
+			break;
 		end
 	end
 end
@@ -157,16 +154,13 @@ local AchievementCriteriaCommands = {
 	end,
 	CriteriaTypeForMounts = function()
 		local count = 0;
-		for i,g in pairs(SearchForFieldContainer("spellID")) do
+		for i,g in pairs(SearchForFieldContainer("mountID")) do
 			for j,o in ipairs(g) do
-				if ((o.f and o.f == app.FilterConstants.MOUNTS)
-				or (o.filterID and o.filterID == app.FilterConstants.MOUNTS)) then
-					if o.collected then count = count + 1; end
-					break;
-				end
+				if o.collected then count = count + 1; end
+				break;
 			end
 		end
-		--print("Currently " .. count .. " Total Mounts!");
+		print("Currently " .. count .. " Total Mounts!");
 		return count;
 	end,
 	CriteriaTypeForPets = function()

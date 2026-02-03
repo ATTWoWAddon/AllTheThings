@@ -115,7 +115,7 @@ src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
 src\Classes\Header.lua
 src\Classes\Maps.lua
-# src\Classes\Mount.lua
+src\Classes\Mount.lua
 src\Classes\NPC.lua
 src\Classes\Objects.lua
 src\Classes\Profession.lua

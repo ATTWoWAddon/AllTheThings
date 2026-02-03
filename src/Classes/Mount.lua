@@ -1,6 +1,11 @@
 
 local app = select(2, ...);
 
+-- Use the Mounts & Battle Pets Lib for pre-Wrath Content
+if app.GameBuildVersion <= 30000 then
+	return;
+end
+
 -- Global locals
 local ipairs, pairs, rawset, rawget, math_floor, select, tonumber
 	= ipairs, pairs, rawset, rawget, math.floor, select, tonumber;
