@@ -1019,10 +1019,11 @@ local function CreateObject(t, rootOnly)
 					result[k] = v;
 				end
 				t = result;
-			else
-				-- app.PrintDebug("metatable copy of",t.text)
-				t = setmetatable({}, { __index = t });
 			end
+			-- assign a couple base fields and base class to ensure proper data functionality
+			if not t.__type then t.__type = UNKNOWN end
+			if not t.text then t.text = EMPTY end
+			t = setmetatable({}, { __index = setmetatable(t, app.BaseClass) });
 		end
 		-- app.PrintDebug("CO.field","=>",t);
 	end
