@@ -20,8 +20,6 @@ local GetItemID = app.WOWAPI.GetItemID;
 
 local CloneArray, CloneClassInstance, GetRelativeValue, MergeObject
 	= app.CloneArray, app.CloneClassInstance, app.GetRelativeValue, app.MergeObject;
-local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback
-local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local CleanLink = app.Modules.Item.CleanLink
 
 -- Implementation
@@ -60,41 +58,40 @@ local IgnoredNPCs = {
 	[32642] = 1,	-- Mojodishu (Mammoth)
 	[32641] = 1,	-- Drix Blackwrench (Mammoth)
 };
-local KeyMaps = setmetatable({
-	a = "achievementID",
-	achievement = "achievementID",
-	azessence = "azeriteessenceID",
-	battlepet = "speciesID",
-	c = "currencyID",
-	creature = "npcID",
-	currency = "currencyID",
-	enchant = "spellID",
-	fp = "flightpathID",
-	follower = "followerID",
-	gameobject = "objectID",
-	garrbuilding = "garrisonbuildingID",
-	garrfollower = "followerID",
-	i = "itemID",
-	item = "itemID",
-	itemid = "itemID",
-	mount = "spellID",
-	mountid = "spellID",
-	n = "npcID",
-	npc = "npcID",
-	npcid = "npcID",
-	o = "objectID",
-	object = "objectID",
-	r = "spellID",
-	recipe = "spellID",
-	rfp = "runeforgepowerID",
-	s = "sourceID",
-	source = "sourceID",
-	species = "speciesID",
-	spell = "spellID",
-	talent = "spellID",
-	q = "questID",
-	quest = "questID",
-}, { __index = function(t,key) return key:gsub("id", "ID") end})
+local CleanFields = {
+	parent = 1,
+	sourceParent = 1,
+	total = 1,
+	text = 1,
+	forceShow = 1,
+	progress = 1,
+	OnUpdate = 1,
+	expanded = 1,
+	hash = 1,
+	rawlink = 1,
+	modItemID = 1,
+	f = 1,
+	key = 1,
+	visible = 1,
+	displayInfo = 1,
+	displayID = 1,
+	fetchedDisplayID = 1,
+	nmr = 1,
+	nmc = 1,
+	TLUG = 1,
+	locked = 1,
+	collectibleAsCost = 1,
+	costTotal = 1,
+	upgradeTotal = 1,
+	icon = 1,
+	HasRetried = 1,
+	_OnUpdate = 1,
+	_SettingsRefresh = 1,
+	_coord = 1,
+	_missing = 1,
+	__merge = 1,
+	__canretry = 1,
+};
 
 -- Uncomment this section if you need to enable Debugger:
 -- Retail Currently uses [/att debugger] as defined below
@@ -103,10 +100,9 @@ app:CreateWindow("Debugger", {
 	Commands = { "attdebugger" },
 	AddObject = function(self, info)
 		MergeObject(self.data.g, CloneObject(info));
-		MergeObject(self.rawData, info);
-		self:ApplyForcedVisibility(self.data);
 		self:AssignChildren();
-		self:Update(true);
+		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.Update, 1, self, true)
+		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.BackupData, 15, self)
 	end,
 	AddObjectWithHeader = function(self, headerID, info)
 		local header = { key = "headerID", headerID = headerID, g = { info }};
@@ -129,48 +125,48 @@ app:CreateWindow("Debugger", {
 		end
 		self:AddObject(header);
 	end,
-	ApplyForcedVisibility = function(self, group)
-		if group then
-			group.OnUpdate = app.AlwaysShowUpdate;
-			local g = group.g;
-			if g then
-				for i=1,#g do
-					self:ApplyForcedVisibility(g[i]);
+	CleanObject = function(self, obj)
+		if obj == nil then return end
+		if type(obj) == "table" then
+			local clean = {};
+			if obj[1] then
+				for _,o in ipairs(obj) do
+					clean[#clean + 1] = self:CleanObject(o)
+				end
+			else
+				for k,v in pairs(obj) do
+					if not CleanFields[k] then
+						clean[k] = self:CleanObject(v)
+					end
 				end
 			end
-		end
-		return group;
-	end,
-	CleanGroups = function(self, g)
-		if g then
-			for i=1,#g do
-				self:CleanObject(g[i]);
-			end
-		end
-	end,
-	CleanObject = function(self, group)
-		if group then
-			group.__merge = nil;
-			group.hash = nil;
-			self:CleanGroups(group.g);
+			return clean
+		elseif type(obj) == "number" then
+			return obj
+		else
+			return tostring(obj)
 		end
 	end,
 	OnLoad = function(self, settings)
-		if not AllTheThingsDebugData then
-			AllTheThingsDebugData = {};
-		end
-		self.rawData = AllTheThingsDebugData;
-		self:CleanGroups(self.rawData);
+		self.rawData = app.LocalizeGlobal("AllTheThingsDebugData", true);
 		self.data.g = CloneClassInstance(self.rawData);
 		for i=#self.data.options,1,-1 do
 			tinsert(self.data.g, 1, self.data.options[i]);
 		end
-		self:ApplyForcedVisibility(self.data);
 		self:AssignChildren();
 	end,
 	OnSave = function(self, settings)
-		self:CleanGroups(self.rawData);
-		AllTheThingsDebugData = self.rawData;
+		self:BackupData()
+	end,
+	BackupData = function(self)
+		wipe(self.rawData);
+		-- skip clickable rows
+		for _,o in ipairs(self.data.g) do
+			if not o.OnClick then
+				tinsert(self.rawData, self:CleanObject(o));
+			end
+		end
+		app.print("Debugger Data Saved");
 	end,
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText("Session History", {
@@ -237,7 +233,7 @@ app:CreateWindow("Debugger", {
 				self:AddObject(info);
 			end
 		end);
-		
+
 		-- Capture Gossip, Merchant, & Flight Master interactions
 		handlers.GOSSIP_SHOW = function(self)
 			local guid = UnitGUID("npc");
@@ -363,7 +359,7 @@ app:CreateWindow("Debugger", {
 		self:RegisterEvent("TAXIMAP_OPENED");
 		self:RegisterEvent("MERCHANT_SHOW");
 		self:RegisterEvent("MERCHANT_UPDATE");
-		
+
 		-- Capture various party loot received
 		handlers.CHAT_MSG_LOOT = function(self, msg, player, a, b, c, d, e, f, g, h, i, guid, k, l)
 			-- don't store loot for the player since that is captured by source
@@ -383,7 +379,7 @@ app:CreateWindow("Debugger", {
 			end
 		end
 		self:RegisterEvent("CHAT_MSG_LOOT");
-		
+
 		-- Capture personal loot sources
 		handlers.LOOT_CLOSED = function(self)
 			self:RegisterEvent("LOOT_READY");
@@ -420,7 +416,7 @@ app:CreateWindow("Debugger", {
 								ot, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
 							end
 							ot = app.Modules.Search.GetKeyField(ot)
-							app.print("Add",kind,"Loot",loot,"from",ot,id)
+							app.print("Add",kind,"Loot",lootID,"from",ot,id)
 							if ot == "objectID" then
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
 								info.basename = GameTooltipTextLeft1:GetText() or UNKNOWN
@@ -442,7 +438,7 @@ app:CreateWindow("Debugger", {
 			end
 		end
 		self:RegisterEvent("LOOT_READY");
-		
+
 		-- Capture quest NPC dialogs
 		handlers.QUEST_DETAIL = function(self, questStartItemID)
 			local questID = GetQuestID();
@@ -527,7 +523,7 @@ app:CreateWindow("Debugger", {
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("QUEST_COMPLETE");
 		self:RegisterEvent("QUEST_PROGRESS");
-		
+
 		-- Capture quest loot push sources
 		handlers.QUEST_LOOT_RECEIVED = function(self, questID, itemLink)
 			if questID and itemLink then
@@ -541,7 +537,7 @@ app:CreateWindow("Debugger", {
 			end
 		end
 		pcall(self.RegisterEvent, self, "QUEST_LOOT_RECEIVED");
-		
+
 		-- Capture accepted quests which skip NPC dialog windows (addons, auto-accepted)
 		handlers.QUEST_ACCEPTED = function(self, questID)
 			if questID then
@@ -551,7 +547,7 @@ app:CreateWindow("Debugger", {
 			end
 		end
 		self:RegisterEvent("QUEST_ACCEPTED");
-		
+
 		-- Capture Tradeskill sources
 		if C_TradeSkillUI_GetCategories then
 			-- This version of the tradeskill UI is only compatible with Retail.
@@ -647,5 +643,13 @@ app:CreateWindow("Debugger", {
 			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 			self:RegisterEvent("TRADE_SKILL_SHOW");
 		end
+	end,
+	OnUpdate = function(self, ...)
+		-- turn off the Visibility filter for the Debugger update
+		local filterVisible = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible();
+		self:DefaultUpdate(...);
+		app.Modules.Filter.Set.Visible(filterVisible);
+		return true;
 	end,
 });
