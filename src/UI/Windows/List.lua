@@ -82,7 +82,7 @@ local DataTypeShortcuts = setmetatable({
 	s = "sourceID",
 	achievementcategory = "achievementCategoryID",
 	azeriteessence = "azeriteEssenceID",
-	flightpath = "flightPathID",
+	flightpath = "flightpathID",
 	runeforgepower = "runeforgePowerID",
 	itemharvester = "itemharvester",
 }, {
