@@ -2478,6 +2478,8 @@
 12.0.0.65560
 1258573@@@Thunderhoof Celestial
 1258574@@@Stormgilded Celestial
+12.0.0.65699
+1284640@@@Golden Ashened Cataclysm
 12.0.1.64889
 1261298@@@Crimson Dragonhawk
 12.0.1.65337

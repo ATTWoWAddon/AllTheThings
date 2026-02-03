@@ -3028,6 +3028,8 @@
 15654@@@Zapmaster Viewer 3000
 15668@@@Naturally Elegant Doormat
 15669@@@Simply Adorned Vase and Flowers
+12.0.0.65699
+14467@@@Miniature Replica Dark Portal
 12.0.1.64889
 1147@@@Rutaani Sporepod
 1159@@@Sin'dorei Honor Stone
@@ -3054,7 +3056,6 @@
 18800@@@Open Void Elf Bedroll
 12.0.1.65337
 2233@@@Waterlogged Haranir Pigment Bowl
-14467@@@Miniature Replica Dark Portal
 14635@@@Swirling Ritual Pedestal
 15501@@@Lightbloom Moss Mound
 15757@@@Opened Domanaar Storage Crate

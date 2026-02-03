@@ -17753,6 +17753,8 @@
 62272@@@Abyss Anglers: Certified Depthdiver
 12.0.0.65560
 62415@@@[DNT] Trading Post - Jan26 - Make Good
+12.0.0.65699
+62387@@@It's Nearly Midnight
 12.0.1.64889
 61238@@@Midnight Bounty
 62184@@@Prey: Breaking the Blade (Nightmare)
