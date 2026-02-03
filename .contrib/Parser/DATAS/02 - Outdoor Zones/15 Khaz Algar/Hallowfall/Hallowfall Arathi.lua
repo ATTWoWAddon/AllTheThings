@@ -863,9 +863,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 								["coord"] = { 66.8, 25.3, HALLOWFALL },
 								["provider"] = {"i", 218107},	-- Sparkbug Jar
-								["groups"] = {
-									i(220771),	-- Hallowed Glowfly (PET!)
-								},
+								["groups"] = { i(220771) },	-- Hallowed Glowfly (PET!)
 							}),
 							o(452005, {	-- Lil Piggy
 								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
@@ -875,9 +873,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									{ 64.8, 27.4, HALLOWFALL },
 									{ 64.8, 26.7, HALLOWFALL },
 								},
-								["groups"] = {
-									i(224457),	-- Lil Piggy (QS!/QI!)
-								},
+								["questID"] = 83217,
+								["groups"] = { i(224457) },	-- Lil Piggy (QS!/QI!)
 							}),
 							o(451993, {	-- Nerubian Device
 								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",

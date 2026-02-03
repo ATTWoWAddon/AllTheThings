@@ -1550,6 +1550,7 @@ i(264414);	-- Midnight Delver's Flare Gun
 i(268717);	-- Pango Plating
 i(263933);	-- Preyseeker's Hearthstone
 i(264666);	-- Rod of Exanguishation
+i(259240);	-- Sin'dorei Wine
 i(256881);	-- Steward's Bauble
 i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
 i(256552);	-- Verdant Rutaani Seed
@@ -1574,6 +1575,5 @@ i(251903);	-- Potatoad Egg
 i(268728);	-- Saptor Salve
 i(250319);	-- Shadowgraft
 i(258963);	-- Shroom Jumper's Parachute
-i(259240);	-- Sin'dorei Wine
 i(268695);	-- Test Sharing Camera
 i(263198);	-- Valdekar's Special

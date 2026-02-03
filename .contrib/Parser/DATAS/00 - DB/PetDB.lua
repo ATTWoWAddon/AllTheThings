@@ -4526,11 +4526,14 @@ i(260942, 4951);	-- Bubbly Snapling
 i(205017, 3519);	-- Byrn
 i(238793, 4790);	-- Devouring Runt
 i(250143, 4883);	-- Dragonhawk Mosswing
+i(259224, 4928);	-- Dragonhawk Munchkin
 i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
+i(264909, 4982);	-- Flicker
 i(250146, 4885);	-- Gloom Toad
 i(262393, 4955);	-- Kreepah'zoyd
 i(259991, 4930);	-- Lil' Preyseeker
+i(258737, 4913);	-- Moon Darter
 i(221492, 4459);	-- Moss Skipper
 i(250137, 4876);	-- Mud Potadpole
 i(250145, 4884);	-- Pangolil
@@ -4548,7 +4551,6 @@ i(222967, 4475);	-- Webbers
 --- UNSORTED ---
 i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
-i(264909, 4982);	-- [DNT] Baby Eversong Lynx (Black)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
 i(265035, 4984);	-- [PH] Purple Siphoid
 i(260705, 4947);	-- Assistant Botanist Leafy
@@ -4559,7 +4561,6 @@ i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
 i(258189, 4910);	-- Do, child of Fi'lo
-i(259224, 4928);	-- Dragonhawk Munchkin
 i(0, 4887);			-- Dundun
 i(264654, 4977);	-- Emberwing Hatchling
 i(262774, 4967);	-- Gortham
@@ -4573,7 +4574,6 @@ i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
 i(262999, 4971);	-- Luma
-i(258737, 4913);	-- Moon Darter
 i(250863, 4888);	-- Naloki
 i(251002, 4889);	-- Nether Familia
 i(262392, 4961);	-- Nibblesworth

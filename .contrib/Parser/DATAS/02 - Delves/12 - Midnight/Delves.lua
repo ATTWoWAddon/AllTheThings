@@ -68,6 +68,37 @@ local mapped = function(t)
 end
 root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(61722),	-- Curio Enthusiast: Midnight
+		ach(61723),	-- Curio Fanatic: Midnight
+		ach(61741),	-- Delve Loremaster: Midnight
+		ach(61707),	-- Delver of the Depths: Midnight
+		ach(61708),	-- Delver of the Depths II: Midnight
+		ach(61709),	-- Delver of the Depths III: Midnight
+		ach(61710),	-- Delver of the Depths IV: Midnight
+		ach(61906, {	-- Glory of the Midnight Delver
+			--i(257199),	-- Giganto Manis (MOUNT!)
+		}),
+		ach(61720),	-- Midnight Delver
+		ach(61721, {	-- Midnight Delver II
+			i(FINERY_FUNDS),
+		}),
+		ach(62206),	-- Midnight Delver III
+		ach(61711),	-- Midnight Delver Damage Dealer
+		ach(61712),	-- Midnight Delver Damage Dealer II
+		ach(61713),	-- Midnight Delver Damage Dealer III
+		ach(61714),	-- Midnight Delver Healer
+		ach(61715),	-- Midnight Delver Healer II
+		ach(61716),	-- Midnight Delver Healer III
+		ach(61717),	-- Midnight Delver Tank
+		ach(61718),	-- Midnight Delver Tank II
+		ach(61719),	-- Midnight Delver Tank III
+		ach(61832),	-- Midnight Delves: Tier 1
+		ach(61835),	-- Midnight Delves: Tier 2
+		ach(61836),	-- Midnight Delves: Tier 3
+		ach(61734),	-- Midnight Delves: Endgame
+		ach(61901, {	-- Midnight: Leave No Treasure Unfound
+			title(691),	-- Treasure Seeker <Name>
+		}),
 	}),
 	mapped(n(DELVE_COMPLETION, {
 		filter(CONSUMABLES, {
@@ -252,6 +283,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["coord"] = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61863),	-- Atal'Aman Discoveries
+				ach(61729),	-- Atal'Aman Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -287,22 +320,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61894),	-- Collegiate Calamity Discoveries
+				ach(61726),	-- Collegiate Calamity Stories
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93384, {	-- Delver's Call: Collegiate Calamity
+					["provider"] = { "o", 612038 },	-- Agitated Tome
+					["coord"] = { 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
 			}),
 			n(TREASURES, {
 				o(618274, {	-- Sturdy Chest
-					["coord"] = { 31.0, 12.5, COLLEGIATE_CALAMITY},
+					["coord"] = { 31.0, 12.5, COLLEGIATE_CALAMITY },
 					["questID"] = 94018,
 				}),
 				o(618285, {	-- Sturdy Chest
-					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY},	-- TODO: could be off
+					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY },	-- TODO: could be off
 					["questID"] = 94029,
 				}),
 			}),
@@ -322,13 +357,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61893),	-- Parhelion Plaza Discoveries
+				ach(61725),	-- Parhelion Plaza Stories
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93386, {	-- Delver's Call: Parhelion Plaza
 					["provider"] = { "o", 612894 },	-- Parhelion Plaza
-					["coord"] = { 74.5, 28.0, PARHELION_PLAZA },
+					["coords"] = {
+						{ 52.3, 77.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 74.5, 28.0, PARHELION_PLAZA },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -350,6 +390,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["coord"] = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61900),	-- Shadowguard Point Discoveries
+				ach(61733),	-- Shadowguard Point Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -394,6 +436,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["maps"] = { 2571 },	-- Lower Sanctum
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61899),	-- Sunkiller Sanctum Discoveries
+				ach(61732),	-- Sunkiller Sanctum Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -436,13 +480,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61895),	-- The Darkway Discoveries
+				ach(61728),	-- The Darkway Stories
 			}),
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
 				q(93385, {	-- Delver's Call: The Darkway
 					["provider"] = { "o", 612039 },	-- The Darkway
-					["coord"] = { 49.1, 18.6, THE_DARKWAY },
+					["coords"] = {
+						{ 52.1, 78.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 49.1, 18.6, THE_DARKWAY },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -465,6 +514,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61898),	-- The Gulf of Memory Discoveries
+				ach(61731),	-- The Gulf of Memory Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -507,6 +558,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		--["maps"] = {},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61897),	-- The Grudge Pit Discoveries
+				ach(61724),	-- The Grudge Pit Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -520,6 +573,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(TREASURES, {
+				o(618291, {	-- Sturdy Chest
+					["coord"] = { 37.2, 28.7, THE_GRUDGE_PIT },
+					["questID"] = 94039,
+				}),
+				o(618279, {	-- Sturdy Chest
+					["coord"] = { 69.9, 31.7, THE_GRUDGE_PIT },
+					["questID"] = 94022,
+				}),
+				o(618277, {	-- Sturdy Chest
+					["coord"] = { 67.6, 59.5, THE_GRUDGE_PIT },
+					["questID"] = 94021,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -534,6 +599,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["coord"] = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61892),	-- The Shadow Enclave Discoveries
+				ach(61727),	-- The Shadow Enclave Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -614,6 +681,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		["maps"] = { 2504 },	-- Twilight Crypts
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61896),	-- Twilight Crypts Discoveries
+				ach(61730),	-- Twilight Crypts Stories
 			}),
 			n(EXPLORATION, {
 			}),
@@ -666,6 +735,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
 			q(91184),	-- Shadowguard Point
+			q(91185),	-- The Grudge Pit
 			q(91187),	-- The Gulf of Memory
 			q(91190),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves

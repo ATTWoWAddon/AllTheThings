@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				e(131, {	-- General Umbriss
 					["crs"] = { 39625 },	-- General Umbriss
 					["groups"] = {
-						ach(5297),	-- Umbrage for Umbriss
+						ach(5297, {["timeline"] = { ADDED_4_0_3, REMOVED_11_1_0_SEASONSTART }}),	-- Umbrage for Umbriss
 					},
 				}),
 				e(134, {	-- Erudax

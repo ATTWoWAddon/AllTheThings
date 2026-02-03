@@ -12,8 +12,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62386, {	-- Light Up the Night
 				i(252011),	-- Brilliant Petalwing (MOUNT)
 			}),
-			ach(62110),	-- Loremaster of Midnight
+			ach(62110, {	-- Loremaster of Midnight
+				i(FINERY_FUNDS),
+			}),
 			ach(42045),	-- Midnight
+			ach(62192, {	-- Midnight Diplomat
+				i(FINERY_FUNDS),
+			}),
 			ach(61859),	-- Midnight Flight Master
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839),	-- Midnight Pathfinder

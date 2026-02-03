@@ -7,7 +7,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(WORLD_QUESTS, {
 		--	["sourceQuests"] = {
 		--	},
-		--	["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				q(92150, {	-- A Breeze through Fairbreeze
+					["coord"] = { 46.5, 45.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92143, {	-- Arcane Reallocation
 					["coord"] = { 37.5, 64.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
@@ -73,7 +76,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(253521),	-- Heron's Vision of Cloudwalking
 					},
 				}),
-		--	}),
+			}),
 		}),
 	}),
 }));

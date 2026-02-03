@@ -18,6 +18,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(248045),	-- Reluctant Diplomat's Wraps
 						},
 					}),
+					------ Stay awhile and listen ------
+					--hqt(XXXXX, {	-- Stay awhile and listen: Lady Liadrin
+					--	["name"] = "Stay awhile and listen: Lady Liadrin",
+					--	["description"] = "Dialogue becomes available after accepting 'Fair Breeze, Light Bloom' (86737).",
+					--	["sourceQuests"] = { 86737 },	-- Fair Breeze, Light Bloom
+					--	["provider"] = { "n", 252822 },	-- Lady Liadrin
+					--	["coord"] = { 45.5, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					--}),
+					--
 					q(86740, {	-- Displaced Denizens
 						["sourceQuests"] = { 86737 },	-- Fair Breeze, Light Bloom
 						["provider"] = { "n", 236743 },	-- Orweyna

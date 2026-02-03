@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "全局 ID",
-		-- TODO: tw = "",
+		tw = "全域 ID",
 	},
 })

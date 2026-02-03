@@ -1566,7 +1566,7 @@ s(218249,219237,{b=1,cost={{"c",3089,8000}},f=28,lvl=70,u=2}),
 s(218259,219247,{b=1,cost={{"c",3089,5000}},f=27,lvl=70,u=2})}})}})}})}}),
 x(12,{awp=120000,rwp=120001,u=2,g={
 h(-12,{maps=a[183],u=2,g={
-ach(61430,{coords={{49.4,80.2,241},{50.3,89.4,241}},providers={{"o",508350},{"o",566765},{"s",1242516}},u=2}),
+ach(61430,{coords={{49.4,80.2,241},{50.3,89.4,241},{58.7,51.9,241}},providers={{"o",566765},{"s",1242516}},u=2}),
 ach(42300,{u=2,g={
 title(642,{u=2}),
 mnt(1243003,{itemID=246594,u=2})}})}}),
@@ -1779,6 +1779,7 @@ de(714,{cost={{"c",3319,50}},itemID=245284,spellID=1238378,u=2}),
 de(1227,{cost={{"c",3319,75}},itemID=251997,spellID=1253829,u=2}),
 toy(249468,{cost={{"c",3319,30}},u=2})}})}}),
 h(-62,{u=2,g={
+q(86951,{coords={{39.4,73.8,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(86959,{coords={{40.8,66.7,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(91779,{coords={{51.3,71.3,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(91759,{coords={{58.9,12.3,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
@@ -1791,7 +1792,8 @@ i(248205,{u=2})}}),
 q(86948,{coords={{35.3,70.5,241}},isWorldQuest=1,sourceQuests=a[481],u=2}),
 q(86939,{coords={{39,29.2,241}},isWorldQuest=1,sourceQuests=a[481],u=2,g={
 i(235663,{spellID=1218068,u=2})}}),
-q(86938,{coords={a[268]},isWorldQuest=1,sourceQuests=a[481],u=2})}})}})}),
+q(86938,{coords={a[268]},isWorldQuest=1,sourceQuests=a[481],u=2}),
+q(91776,{coords={{20.3,57.8,241}},isWorldQuest=1,sourceQuests=a[481],u=2})}})}})}),
 h(-656,{awp=110207,maps={499,500,503},g={
 h(-12,{
 ach(7944,{providers={{"s",136314}}}),
@@ -18369,7 +18371,7 @@ s(8505,21520,{b=1,f=25,lvl=25,u=2})}}),
 q(8734,{coords={{37.5,47.9,57}},minReputation=a[482],qgs={15624},sourceQuests={8733},u=2}),
 q(8286,{coords={a[321]},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",qgs=a[107],u=2})}})}}),
 h(-106,{awp=110105,e=450,g={
-i(235054,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
+i(235054,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
 h(-88,{e=450,g={
 h(-89,{e=450,g={
 s(284490,235974,{b=1,e=450,f=3,lvl=70}),

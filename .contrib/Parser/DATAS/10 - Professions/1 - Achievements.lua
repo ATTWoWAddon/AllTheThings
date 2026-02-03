@@ -302,6 +302,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 		}),
 		ach(61440, {	-- Thalassian Polymath				-- 5 Primary Professions at Max
 			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["groups"] = { i(FINERY_FUNDS) },
 		}),
 		ach(61441, {	-- Working WAY Past Midnight		-- ALL Primary Professions at Max
 			["timeline"] = { ADDED_12_0_X_LAUNCH },

@@ -2459,9 +2459,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-					["description"] = "Has a chance to drop from any creature in Redridge Mountains.",
-				}),
 				i(1219, {	-- Redridge Machete
 					["cr"] = 424,	-- Redridge Poacher
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

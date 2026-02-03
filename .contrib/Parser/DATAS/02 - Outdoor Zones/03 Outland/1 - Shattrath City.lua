@@ -1668,6 +1668,7 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35416)),	-- Crusader's Scaled Shoulders
 								i(33155, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Kailee's Rose (RECIPE!)
 								i(30826),	-- Design: Ring of Arcane Shielding (RECIPE!)
+								i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
 								i(29195, {	-- Glyph of Arcane Warding
 									["timeline"] = { REMOVED_5_0_4 },
 								}),
@@ -1692,7 +1693,6 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
 								applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
 								applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
-								i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
 								i(22537, {	-- Formula: Enchant Ring - Healing Power (RECIPE!)
 									-- #IF AFTER 5.0.4
 									["u"] = UNLEARNABLE,

@@ -1,6 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+local LATENT_ARCANA = 3394;
+local BRIMMING_ARCANA = 3379;
+
 SALTHERILS_HAVEN = createHeader({
 	readable = "Saltheril's Soiree",
 	--icon = ,
@@ -8,10 +12,20 @@ SALTHERILS_HAVEN = createHeader({
 		en = "Saltheril's Soiree",
 	},
 });
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 		n(SALTHERILS_HAVEN, {
 			n(ACHIEVEMENTS, {
+				ach(62190, {	-- Life of the Party
+					i(257144),	-- Umbral Dragonhawk (MOUNT!)
+				}),
+			}),
+			n(FACTIONS, {
+				faction(FACTION_BLOOD_KNIGHTS),
+				faction(FACTION_FARSTRIDERS),
+				faction(FACTION_MAGISTERS),
+				faction(FACTION_SHADES_OF_THE_ROW),
 			}),
 			n(QUESTS, {
 				q(91627, {	-- Saltheril's Haven
@@ -113,21 +127,157 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(REWARDS, {
 				--Currency
-				currency(3394),	-- Latent Arcana
-				currency(3379),	-- Brimming Arcana (from runestones elite kill (244142 - Commander Viskaj))
+				currency(LATENT_ARCANA),
+				currency(BRIMMING_ARCANA),
 				--It was a bad idea to not add it right away, it could be Midnight wqs rewards
 				i(256969),	-- Farstrider's Pendant (neck)
 			}),
-			--[[n(VENDORS, {
-				n(xx, {	--
-					["coord"] = { x, y, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(, {
-							["costs"] = {{"c", XX, XXX }},
-						}),
-					},
+			n(VENDORS, {
+				n(242723, {	-- Apprentice Diell <Magister Vendor>
+					["coord"] = { 43.5, 47.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = bubbleDownRep(FACTION_MAGISTERS, {
+						{		-- Interloper
+						}, {	-- Guest
+							iensemble(259074, {	-- Ensemble: Magister's Elegant Regalia
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Socialite
+							i(263225, {	-- Sunlit Glass Mirror (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Trendsetter
+							iensemble(259080, {	-- Ensemble: Magister Dignitary's Trappings
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Host
+							i(259367, {	-- Formula: Enchanted Sin'dorei Pick (RECIPE!)
+								["cost"] = {
+									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", BRIMMING_ARCANA, 200 },
+								},
+							}),
+							i(263224, {	-- Gentle Floating Planter (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Luminary
+							i(264909, {	-- Flicker (PET!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 200 } },
+							}),
+							iensemble(259089, {	-- Ensemble: Magister Socialite's Attire
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						},
+					}),
 				}),
-			}),]]--
+				n(242725, {	-- Armorer Goldcrest <Blood Knight Vendor>
+					["coord"] = { 43.5, 47.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = bubbleDownRep(FACTION_BLOOD_KNIGHTS, {
+						{		-- Interloper
+						}, {	-- Guest
+							iensemble(259027, {	-- Ensemble: Blood Knight's Elegant Regalia
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Socialite
+							i(263203, {	-- Rack of Silvermoon Arms (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Trendsetter
+							iensemble(259081, {	-- Ensemble: Blood Knight Dignitary's Trappings
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Host
+							i(265997, {	-- Blood Knight Champion's Tabard (COSMETIC!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+							i(259364, {	-- Formula: Animated Sin'dorei Hammer (RECIPE!)
+								["cost"] = {
+									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", BRIMMING_ARCANA, 200 },
+								},
+							}),
+						}, {	-- Luminary
+							i(264907, {	-- Blood Knight Recruit's Shield (COSMETIC!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 200 } },
+							}),
+							iensemble(259088, {	-- Ensemble: Blood Knight Socialite's Attire
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						},
+					}),
+				}),
+				n(242726, {	-- Neriv <Row Vendor>
+					["coord"] = { 43.5, 47.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = bubbleDownRep(FACTION_SHADES_OF_THE_ROW, {
+						{		-- Interloper
+						}, {	-- Guest
+							iensemble(259075, {	-- Ensemble: Pilfered Elegant Regalia
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Socialite
+							i(250772, {	-- Crimson Lightwood Privacy Screen (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Trendsetter
+							iensemble(259083, {	-- Ensemble: Pilfered Dignitary's Trappings
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Host
+							i(259375, {	-- Formula: Self-Pouring Thalassian Sunwine (RECIPE!)
+								["cost"] = {
+									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", BRIMMING_ARCANA, 200 },
+								},
+							}),
+							i(246692, {	-- Murder Row Wine Decanter (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Luminary
+							i(264996, {	-- Gilded Sunlance (COSMETIC!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 200 } },
+							}),
+							iensemble(259087, {	-- Ensemble: Pilfered Socialite's Attire
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						},
+					}),
+				}),
+				n(242724, {	-- Ranger Allorn <Farstrider Vendor>
+					["coord"] = { 43.4, 47.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = bubbleDownRep(FACTION_FARSTRIDERS, {
+						{		-- Interloper
+						}, {	-- Guest
+							iensemble(259076, {	-- Ensemble: Farstrider's Elegant Regalia
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Socialite
+							i(263212, {	-- Farstrider's Comfy Cushion (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+						}, {	-- Trendsetter
+							iensemble(259079, {	-- Ensemble: Farstrider Dignitary's Trappings
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						}, {	-- Host
+							i(263216, {	-- Gilded Lightwood Wardrobe (DECOR!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 150 } },
+							}),
+							i(258505, {	-- Technique: Sin'dorei Phoenix Quill (RECIPE!)
+								["cost"] = {
+									{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+									{ "c", BRIMMING_ARCANA, 200 },
+								},
+							}),
+						}, {	-- Luminary
+							i(264997, {	-- Farstriders Quiver (COSMETIC!)
+								["cost"] = { { "c", BRIMMING_ARCANA, 200 } },
+							}),
+							iensemble(259090, {	-- Ensemble: Farstrider Socialite's Attire
+								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
+							}),
+						},
+					}),
+				}),
+			}),
 		}),
 	}),
 }));

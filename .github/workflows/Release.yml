@@ -138,6 +138,7 @@ jobs:
         with:
            fetch-depth: 300
            fetch-tags: true
+           ref: ${{ github.ref }}  # https://github.com/actions/checkout/issues/1467
 
       - name: Reset to SHA that triggered the workflow
         run: git reset --hard ${{ github.sha }}

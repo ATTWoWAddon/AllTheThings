@@ -428,20 +428,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
             },
 		}),
         -- INFO: Verified 2024-10-04, only shows one criteria without achraw
-		achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 1: Spelunker Supreme
+		achraw(40660, {	-- The War Within Season 1: Spelunker Supreme
 			crit(67375),	-- Attained 1600+ Rated PVP rating
 			crit(66890),	-- Attained 2000+ Mythic Plus rating
 			crit(67597),	-- Defeated Queen Ansurek on Heroic or Mythic difficulty
 			i(226206),	-- Mark of the Spelunker Supreme
-		})),
+		}),
 		-- INFO: Verified 2025-01-12, shows no criteria without achraw
-		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
+		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
 			crit(70046),	-- Attained 1600+ Rated PVP rating
 			crit(70053),	-- Attained 2000+ Mythic Plus rating
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
-		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 3: Voidborne Victor
+		achraw(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 3: Voidborne Victor
+			crit(70694),	-- Attained 1600+ Rated PVP rating
+			crit(104328),	-- Attained 2000+ Mythic Plus rating
+			crit(103332),	-- Defeated Dimensius on Heroic or Mythic difficulty
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
 		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)

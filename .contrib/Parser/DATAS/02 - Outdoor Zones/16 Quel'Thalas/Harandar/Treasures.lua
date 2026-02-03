@@ -8,7 +8,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			header(HEADERS.Achievement, 61052, {	-- Dust 'Em Off
 				--Renown 2 set of Glowing Moth (some of them could be wrong)
 				--Alex: there should be 120 in total, whoever do this in Blizz - was it fun to implement this?
-				--Exo: Maybe a sub-header for the moths?
 				o(571121, {	-- Glowing Moth
 					["coord"] = { 36.1, 26.4, MAP.MIDNIGHT.HARANDAR },
 					["questID"] = 92197,

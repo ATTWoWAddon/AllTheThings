@@ -231,7 +231,7 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "暗黑破坏神 IV：憎恨之王",
-		-- TODO: tw = "",
+		tw = "暗黑破壞神IV：憎恨之王",
 	},
 	description = {
 		en = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
@@ -1124,7 +1124,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
-	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
+	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2, REMOVED_11_0_7 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
 		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)

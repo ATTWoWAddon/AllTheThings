@@ -96,10 +96,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 	prof(FISHING, {
 		n(DISCOVERY, {
 			r(1225274),	-- Blood Hunter
+			r(1225266),	-- Bloomtail Minnow
 			r(1225283),	-- Eversong Trout
 			r(1225276),	-- Fungalskin Pike
 			r(1225284),	-- Lucky Loa
 			r(1225270),	-- Lynxfish
+			r(1225268),	-- Null Voidfish
 			r(1225277),	-- Restored Songfish
 			r(1225269),	-- Root Crab
 			r(1225271),	-- Shimmersiren
@@ -114,10 +116,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			["requireSkill"] = FISHING,
 		},{
 			FirstCraft(88614, 1225274),	-- Blood Hunter
+			FirstCraft(88606, 1225266),	-- Bloomtail Minnow
 			FirstCraft(88620, 1225283),	-- Eversong Trout
 			FirstCraft(88612, 1225276),	-- Fungalskin Pike
 			FirstCraft(88613, 1225284),	-- Lucky Loa
 			FirstCraft(88603, 1225270),	-- Lynxfish
+			FirstCraft(88617, 1225268),	-- Null Voidfish
 			FirstCraft(88609, 1225277),	-- Restored Songfish
 			FirstCraft(88604, 1225269),	-- Root Crab
 			FirstCraft(88615, 1225271),	-- Shimmersiren
@@ -132,10 +136,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
 		i(238377),	-- Blood Hunter
+		i(238369),	-- Bloomtail Minnow
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
+		i(238380),	-- Null Voidfish
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren

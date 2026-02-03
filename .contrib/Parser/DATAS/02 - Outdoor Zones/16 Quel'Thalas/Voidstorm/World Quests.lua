@@ -23,6 +23,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				pvp(q(89377, {	-- Undercover Hunt
 					["coord"] = { 45.7, 36.6, SLAYERS_RISE_OUTDOOR },
 				})),
+				q(92731, {	-- Artificing Aggression
+					["coord"] = { 51.6, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 				q(93577, {	-- Captured Instinct
 					["coord"] = { 36.5, 49.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
@@ -52,6 +55,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(259029),	-- Shadowguard Intelligence (QI!)
 					},
 				}),
+				q(93579, {	-- Path of Purgation
+					["coord"] = { 30.8, 47.3, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 				q(93438, {	-- Special Assignment: Precision Excision
 					["coord"] = { 35.8, 70.4, MAP.MIDNIGHT.VOIDSTORM },
 				}),
@@ -60,6 +66,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92549, {	-- Void From Above
 					["coord"] = { 64.6, 62.2, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(93578, {	-- Where Shadows Gather
+					["coord"] = { 44.0, 75.0, SLAYERS_RISE_OUTDOOR },
 				}),
 			}),
 		}),

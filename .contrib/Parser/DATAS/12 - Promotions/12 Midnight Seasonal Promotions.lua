@@ -62,7 +62,7 @@ root(ROOTS.Promotions, {
 			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
-				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
+				["description"] = "Can be bought for ¥200 RMB (~$27 USD) in the In-game Shop for a limited time.",
 				-- #endif
 				-- #endif
 				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
@@ -88,7 +88,7 @@ root(ROOTS.Promotions, {
 				["groups"] = {
 					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-				--	cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
 					cnONLY(i(253402)),	-- Scorching Polearm
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 				},

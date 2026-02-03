@@ -5,6 +5,14 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(QUESTS, {
+			q(95468, {	-- Hope in the Darkest Corners
+				["qg"] = 256210,	-- Halduron Brightwing
+				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,	-- Presumed
+				["groups"] = {
+					i(265995),	-- Quel'Thalas Adventurer's Cache
+				},
+			}),
 			-- Battle Pet
 			q(94012, {	-- Lost Lil' Strider
 				--["sourceQuests"] = { ??? },	-- ??
