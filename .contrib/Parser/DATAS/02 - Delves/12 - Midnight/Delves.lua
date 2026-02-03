@@ -120,6 +120,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)
 		}),
 		filter(RECIPES, {
+			i(247425),	-- Recipe: Riftstone (RECIPE!)
+			i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
 		}),
 		n(ARMOR, {
 			-- TODO: probably doesn't exist in s1 and will be wue after it? But seems like you can also it everything from bountiful but even without key, so idk.
@@ -746,7 +748,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--q(93275, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st (could be wrong and it is rep lockout for Unity Against the Void?)
 
 		-- Weekly summon boss questID
-		--hqt(86371, {	--	// automated/use TWW questID? 
+		--hqt(86371, {	--	// automated/use TWW questID?
 		--	["name"] = "Seasonal delve map lockout"
 		--	["providers"] = {
 		--		{"i",253342},	-- Beacon of Hope
@@ -755,7 +757,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		--	["timeline"]={ADDED_12_0_X_SEASONSTART},
 		--	["isWeekly"] = true,
 		--}),
-		
+
 		--automated
 		--q(93869),	-- Pious Memorial (itemID 262963)
 	})),

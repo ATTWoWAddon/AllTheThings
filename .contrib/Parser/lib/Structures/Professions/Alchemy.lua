@@ -620,6 +620,7 @@ MID_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	r(1265659),	-- Sparks
 	filter(CONSUMABLES, {
 		r(1230886),	-- Enlightenment Tonic
+		r(1230854),	-- Entropic Extract
 		r(1230866),	-- Midnight Healing Potion
 		r(1230868),	-- Refreshing Serum
 	}),

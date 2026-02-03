@@ -12,54 +12,58 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		filter(CONSUMABLES, {
 			i(241299),	-- Amani Extract+
 			i(241298),	-- Amani Extract++
+			i(241319),	-- Cauldron of Sin'dorei Flasks+
+			i(241318),	-- Cauldron of Sin'dorei Flasks++
 			i(241293),	-- Draught of Rampant Abandon+ [Missing Next Rank]
 			i(241339),	-- Enlightenment Tonic+
 			i(241338),	-- Enlightenment Tonic++
+			i(268954),	-- Entropic Extract+
+			i(268955),	-- Entropic Extract++
+			i(241321),	-- Flask of Thalassian Resistance+
+			i(241320),	-- Flask of Thalassian Resistance++
+			i(241325),	-- Flask of the Blood Knights+
+			i(241324),	-- Flask of the Blood Knights++
+			i(241323),	-- Flask of the Magisters+
+			i(241322),	-- Flask of the Magisters++
+			i(241327),	-- Flask of the Shattered Sun+
+			i(241326),	-- Flask of the Shattered Sun++
+			i(241311),	-- Haranir Phial of Finesse+
+			i(241310),	-- Haranir Phial of Finesse++
+			i(241313),	-- Haranir Phial of Ingenuity+
+			i(241312),	-- Haranir Phial of Ingenuity++
+			i(241317),	-- Haranir Phial of Perception+
+			i(241316),	-- Haranir Phial of Perception++
 			i(241309),	-- Light's Potential+
 			i(241308),	-- Light's Potential++
 			i(241287),	-- Light's Preservation+
 			i(241286),	-- Light's Preservation++
-			i(241327),	-- Flask of the Shattered Sun+
-			i(241326),	-- Flask of the Shattered Sun++
-			i(241319),	-- Cauldron of Sin'dorei Flasks+
-			i(241318),	-- Cauldron of Sin'dorei Flasks++
-			i(241325),	-- Flask of the Blood Knights+
-			i(241324),	-- Flask of the Blood Knights++
-			i(241305),	-- Silvermoon Health Potion+
-			i(241304),	-- Silvermoon Health Potion++
 			i(241301),	-- Lightfused Mana Potion+
 			i(241300),	-- Lightfused Mana Potion++
-			i(241323),	-- Flask of the Magisters+
-			i(241322),	-- Flask of the Magisters++
-			i(241311),	-- Midnight Phial of Finesse+
-			i(241310),	-- Midnight Phial of Finesse++
-			i(241313),	-- Midnight Phial of Ingenuity+
-			i(241312),	-- Midnight Phial of Ingenuity++
-			i(241317),	-- Midnight Phial of Perception+
-			i(241316),	-- Midnight Phial of Perception++
-			i(241285),	-- Voidlight Potion Cauldron+
-			i(241284),	-- Voidlight Potion Cauldron++
-			i(241321),	-- Flask of Thalassian Resistance+
-			i(241320),	-- Flask of Thalassian Resistance++
 			i(241295),	-- Potion of Devoured Dreams+
 			i(241294),	-- Potion of Devoured Dreams++
+			i(241289),	-- Potion of Recklessness+
+			i(241288),	-- Potion of Recklessness++
 			i(241297),	-- Potion of Zealotry+
 			i(241296),	-- Potion of Zealotry++
 			i(241307),	-- Refreshing Serum+
 			i(241306),	-- Refreshing Serum++
+			i(241305),	-- Silvermoon Health Potion+
+			i(241304),	-- Silvermoon Health Potion++
+			i(241334),	-- Vicious Thalassian Flask of Honor+
+			i(241335),	-- Vicious Thalassian Flask of Honor++
 			i(241303),	-- Void-Shrouded Tincture+
 			i(241302),	-- Void-Shrouded Tincture++
+			i(241285),	-- Voidlight Potion Cauldron+
+			i(241284),	-- Voidlight Potion Cauldron++
 		}),
 		n(DECOR, {
+			i(262355),	-- Entropic Illuminant (DECOR!)
+			i(262356),	-- Haranir Preserving Agents (DECOR!)
+			i(262354),	-- Riftstone (DECOR!)
+			i(253506),	-- Rootbound Vat (DECOR!)
 			i(257420),	-- Silvermoon Spire Fountain (DECOR!)
+			i(256356),	-- Sunsmoke Censer (DECOR!)
 		}),
-		--[[
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
-		},{
-			-- Currently no QuestID trigger on Beta
-		})),
-		--]]
 		filter(MISC, {
 			i(245650),	-- Bouquet of Herbs+
 			i(245651),	-- Bouquet of Herbs++
@@ -73,11 +77,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			i(241280),	-- Composite Flora++
 			i(236949),	-- Mote of Light
 			i(236950),	-- Mote of Primal Energy
-			i(236951),	-- Mote of Wild Magic
 			i(236952),	-- Mote of Pure Void
+			i(236951),	-- Mote of Wild Magic
 			i(242651),	-- Stabilized Derivate
-			i(241282),	-- Wondrous Synergist++
 			i(241283),	-- Wondrous Synergist+
+			i(241282),	-- Wondrous Synergist++
 		}),
 		filter(TRINKET_F, {
 			i(241340),	-- Magister's Alchemist Stone

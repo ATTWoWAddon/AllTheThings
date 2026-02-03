@@ -6,6 +6,17 @@ local ALCHEMISTS_MOXIE = 3256;
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(PROFESSIONS, {
+			n(243286, {	-- Lyrendal <Artisan's Consortium Quartermaster>
+				["coord"] = { 45.0, 55.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(247499, {	-- Recipe: Haranir Preserving Agents (RECIPE!)
+						["cost"] = {{ "c", ALCHEMISTS_MOXIE, 150}},
+					}),
+					i(246671, {	-- Recipe: Sunsmoke Censer (RECIPE!)
+						["cost"] = {{ "c", ALCHEMISTS_MOXIE, 150}},
+					}),
+				},
+			}),
 			prof(ALCHEMY, {
 				n(243357, {	-- Camberon <Alchemy Trainer>
 					["coord"] = { 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
