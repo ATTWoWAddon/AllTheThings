@@ -754,11 +754,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = LFR_LAST2,
 						}),
-						FatedItem(modItemId(183895,LFR_LAST2), FATED_LFR),	-- Apogee Anima Bead (Fated)
+						FatedItem(modItemId(183895,LFR_LAST2), FATED_LFR_LAST2),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
 							["modID"] = LFR_LAST2,
 						}),
-						FatedItem(modItemId(183894,LFR_LAST2), FATED_LFR),	-- Thaumaturgic Anima Bead (Fated)
+						FatedItem(modItemId(183894,LFR_LAST2), FATED_LFR_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 					}),
 				}),
 				n(AUDIENCE_WITH_ARROGANCE_HEADER, {
@@ -848,11 +848,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = NORMAL_LAST2,
 					}),
-					FatedItem(modItemId(183895,NORMAL_LAST2), FATED_NORMAL),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = NORMAL_LAST2,
 					}),
-					FatedItem(modItemId(183894,NORMAL_LAST2), FATED_NORMAL),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
@@ -922,11 +922,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183895, {	-- Apogee Anima Bead
 						["modID"] = HEROIC_LAST2,
 					}),
-					FatedItem(modItemId(183895,HEROIC_LAST2), FATED_HEROIC),	-- Apogee Anima Bead (Fated)
+					FatedItem(modItemId(183895,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
 						["modID"] = HEROIC_LAST2,
 					}),
-					FatedItem(modItemId(183894,HEROIC_LAST2), FATED_HEROIC),	-- Thaumaturgic Anima Bead (Fated)
+					FatedItem(modItemId(183894,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
@@ -990,7 +990,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(GENERALS, {
 					ach(14364),	-- Mythic: Stone Legion Generals
 					i(183895, {	-- Apogee Anima Bead
-						["modID"] = MYTHIC,
+						["modID"] = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183895,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
