@@ -24175,6 +24175,8 @@
 255736@@@Star the Lucky Dragon
 255750@@@Gummi the Glow Wyrm
 256663@@@Lil' Staropod
+12.0.0.65560
+252686@@@Auspicious Pixiu
 12.0.1.64889
 236594@@@Zul'jan
 236604@@@Lady Liadrin
