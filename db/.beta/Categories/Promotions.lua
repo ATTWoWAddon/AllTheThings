@@ -528,9 +528,9 @@ h(-531,{awp=50402,description="These rewards are available to anyone who purchas
 ach(8795,{providers={{"i",106256}},u=3}),
 p(1365,{itemID=106256,npcID=74413,spellID=149810,u=3,g={
 crit(34640,{achID=8795,id=3,u=3})}})}}),
-h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",u=3,g={
-mnt(369476,{b=1,itemID=191114,u=3}),
-ach(15640,{providers={{"i",191114}},u=3})}}),
+h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",rwp=110007,u=2,g={
+mnt(369476,{b=1,itemID=191114,u=2}),
+ach(15640,{providers={{"i",191114}},u=2})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
 de(12247,{itemID=259055,spellID=1264380,u=3}),

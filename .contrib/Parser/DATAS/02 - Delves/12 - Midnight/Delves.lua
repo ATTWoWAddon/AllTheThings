@@ -573,6 +573,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(TREASURES, {
+				o(618291, {	-- Sturdy Chest
+					["coord"] = { 37.2, 28.7, THE_GRUDGE_PIT },
+					["questID"] = 94039,
+				}),
+				o(618279, {	-- Sturdy Chest
+					["coord"] = { 69.9, 31.7, THE_GRUDGE_PIT },
+					["questID"] = 94022,
+				}),
+				o(618277, {	-- Sturdy Chest
+					["coord"] = { 67.6, 59.5, THE_GRUDGE_PIT },
+					["questID"] = 94021,
+				}),
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -723,6 +735,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
 			q(91184),	-- Shadowguard Point
+			q(91185),	-- The Grudge Pit
 			q(91187),	-- The Gulf of Memory
 			q(91190),	-- Twilight Crypts
 		--	-- One time rep bonus from Bountiful Delves

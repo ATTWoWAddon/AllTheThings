@@ -353,10 +353,8 @@ root(ROOTS.Unsorted, {
 			i(238359),	-- Nalorakk's Totem
 
 			-- Fishing
-			i(238369),	-- Bloomtail Minnow
 			i(238373),	-- Ominous Octopus
 			i(238374),	-- Tender Lumifin
-			i(238380),	-- Null Voidfish
 			i(238381),	-- Hollow Grouper
 			i(238382),	-- Gore Guppy
 
@@ -2323,11 +2321,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(256136),	-- Professor Instructaur's Brain Pertaining to Midnight
 			i(256342),	-- Griftah's Fool-Proof Embellishing Powder
-			-- QI
-			i(256138),	-- Har'old
-			i(256143),	-- Wooden Spoon
-			i(256144),	-- Bone Comb
-			i(256145),	-- Bird Whistle
 
 			-- Trinket
 			i(256326),	-- Fetid Dartfrog Idol
@@ -2610,7 +2603,6 @@ root(ROOTS.Unsorted, {
 			i(258280),	-- [DNT] Huge Pouch of Supplies
 
 			-- QI
-			i(258324),	-- Stolen Game Meat \\ Stolen Game
 			i(258329),	-- Carrion Essence
 
 			-- Cosmetic
@@ -2981,7 +2973,6 @@ root(ROOTS.Unsorted, {
 			-- QI
 			i(260363),	-- Ancient Rubble \\ Ancient Predecean Rubble
 			i(260368),	-- Dirt
-			i(260453),	-- Leech Tick
 			-- Raid Might be bOE?
 			i(260370),	-- Visage of Unseen Truths
 			i(260371),	-- Infernal Greatlock Girdle

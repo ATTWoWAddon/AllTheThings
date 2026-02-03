@@ -23,6 +23,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 41.4, 32.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)
 				}),
+				q(91806, {	-- Big Game Hunting
+					["coord"] = { 29.3, 37.7, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(258324),	-- Stolen Game Meat (QI!)
+						o(612282),	-- Stolen Meat
+					},
+				}),
+				q(92119, {	-- Bitterbloom Burn Down
+					["coord"] = { 32.1, 69.5, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(92085, {	-- Claw Enforcement
 					["coords"] = {
 						{ 52.9, 52.3, MAP.MIDNIGHT.HARANDAR },
@@ -32,6 +42,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91555, {	-- Defenders of the Vale
 					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(93046, {	-- Nestled Belongings
+					["coord"] = { 31.3, 85.5, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(256145),	-- Bird Whistle (QI!)
+						i(256144),	-- Bone Comb (QI!)
+						i(256138),	-- Har'old (QI!)
+						i(256143),	-- Wooden Spoon (QI!)
+					},
+				}),
 				q(91582, {	-- Pruning the Lattice
 					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },
 				}),
@@ -40,6 +59,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92062, {	-- Tending the Roots
 					["coord"] = { 35.9, 24.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91802, {	-- The Best Bites are Bog Bugs
+					["coord"] = { 43.2, 61.3, MAP.MIDNIGHT.HARANDAR },
+					["groups"] = {
+						i(260453),	-- Leech Tick (QI!)
+					},
+				}),
+				q(91799, {	-- Trial of Flight
+					["coord"] = { 51.5, 76.8, MAP.MIDNIGHT.HARANDAR },
 				}),
 			}),
 		}),
