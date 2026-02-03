@@ -5,8 +5,8 @@ i(46779),	-- of Cenarius \\ Path of Cenarius
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
 12.0.1.65337
-i(268695),	-- Test Sharing Camera
-i(268717),	-- Pango Plating
+i(64457),	-- Last Relic of Argus \\ The Last Relic of Argus
+i(268695),	-- Camera \\ Pin-o-Matic Camera \\ Test Sharing Camera
 i(268728),	-- Saptor Salve
 
 

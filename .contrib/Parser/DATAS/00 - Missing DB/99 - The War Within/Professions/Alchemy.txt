@@ -1,20 +1,12 @@
 12.0.0.63534
 r(1230772),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1230854),	-- [DNT] Midnight Catalyst \\ Midnight Catalyst
-r(1230859),	-- Potion of Recklessness
 r(1230871),	-- [DNT] Alchemy Recipe - Reuse Me
 r(1230879),	-- [DNT] Midnight Stacking Heals Flask \\ Midnight Stacking Heals Flask
 r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball \\ Midnight Vicious Flask of the Wrecking Ball
 r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury \\ Midnight Vicious Flask of Manifested Fury
 r(1230882),	-- [DNT] Midnight Vicious Flask of Determination \\ Midnight Vicious Flask of Determination
-r(1230883),	-- Vicious Thalassian Flask of Honor \\ Midnight Vicious Flask of Honor
 r(1230884),	-- [DNT] Midnight Vicious Flask of Classical Spirits \\ Midnight Vicious Flask of Classical Spirits
 r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1233132),	-- Entropic Illuminant
-r(1233133),	-- Rootbound Vat
-r(1233135),	-- Sunsmoke Censer
-r(1233136),	-- Riftstone \\ Void Elf KnickKnack
-r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 12.0.0.64124
 r(1273064),	-- Arakkoan Alchemist's Bottle
@@ -27,21 +19,13 @@ Missing in Alchemy
 
 12.0.0.63534
 r(1230772),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1230854),	-- [DNT] Midnight Catalyst \\ Midnight Catalyst
-r(1230859),	-- Potion of Recklessness
 r(1230871),	-- [DNT] Alchemy Recipe - Reuse Me
 r(1230879),	-- [DNT] Midnight Stacking Heals Flask \\ Midnight Stacking Heals Flask
 r(1230880),	-- [DNT] Midnight Vicious Flask of the Wrecking Ball \\ Midnight Vicious Flask of the Wrecking Ball
 r(1230881),	-- [DNT] Midnight Vicious Flask of Manifested Fury \\ Midnight Vicious Flask of Manifested Fury
 r(1230882),	-- [DNT] Midnight Vicious Flask of Determination \\ Midnight Vicious Flask of Determination
-r(1230883),	-- Vicious Thalassian Flask of Honor \\ Midnight Vicious Flask of Honor
 r(1230884),	-- [DNT] Midnight Vicious Flask of Classical Spirits \\ Midnight Vicious Flask of Classical Spirits
 r(1233131),	-- [DNT] 12.0 Alchemy Recipe Spell Template
-r(1233132),	-- Entropic Illuminant
-r(1233133),	-- Rootbound Vat
-r(1233135),	-- Sunsmoke Censer
-r(1233136),	-- Riftstone \\ Void Elf KnickKnack
-r(1233137),	-- Haranir Preserving Agents \\ Haranir Reagent Bowl
 r(1233139),	-- [DNT] 12.0 Alchemy Recipe Spell Template
 12.0.0.64124
 r(1273064),	-- Arakkoan Alchemist's Bottle

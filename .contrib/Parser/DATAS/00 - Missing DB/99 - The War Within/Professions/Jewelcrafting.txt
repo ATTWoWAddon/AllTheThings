@@ -69,7 +69,7 @@ r(1230485),	-- Masterwork Sin'dorei Band
 r(1230486),	-- Masterwork Sin'dorei Amulet
 r(1230487),	-- Signet of Azerothian Blessings
 r(1230488),	-- Thalassian Phoenix Torque
-r(1230489),	-- Gleaming Copper Ring
+r(1230489),	-- Gleaming Copper Band \\ Gleaming Copper Ring
 r(1230490),	-- Nocturnal Charm
 r(1230491),	-- Silvermoon Focusing Shard
 r(1230492),	-- Silvermoon Loupes
@@ -94,7 +94,7 @@ r(1242464),	-- Attuned Thalassian Rune-Prism
 r(1246889),	-- Tenebrous Ren'dorei Armillary \\ Gilded Thalassian Armillary
 r(1246891),	-- Bejeweled Sin'dorei Lyre
 r(1246892),	-- Resplendent Highborne Statue
-r(1246893),	-- Miniature Replica Haranir Mural
+r(1246893),	-- Replica Haranir Mural \\ Miniature Replica Haranir Mural
 r(1246894),	-- Shining Sin'dorei Hourglass
 r(1246895),	-- Brilliant Phoenix Harp
 r(1251983),	-- Voidstone Shielding Array
@@ -187,7 +187,7 @@ r(1230485),	-- Masterwork Sin'dorei Band
 r(1230486),	-- Masterwork Sin'dorei Amulet
 r(1230487),	-- Signet of Azerothian Blessings
 r(1230488),	-- Thalassian Phoenix Torque
-r(1230489),	-- Gleaming Copper Ring
+r(1230489),	-- Gleaming Copper Band \\ Gleaming Copper Ring
 r(1230490),	-- Nocturnal Charm
 r(1230491),	-- Silvermoon Focusing Shard
 r(1230492),	-- Silvermoon Loupes
@@ -212,7 +212,7 @@ r(1242464),	-- Attuned Thalassian Rune-Prism
 r(1246889),	-- Tenebrous Ren'dorei Armillary \\ Gilded Thalassian Armillary
 r(1246891),	-- Bejeweled Sin'dorei Lyre
 r(1246892),	-- Resplendent Highborne Statue
-r(1246893),	-- Miniature Replica Haranir Mural
+r(1246893),	-- Replica Haranir Mural \\ Miniature Replica Haranir Mural
 r(1246894),	-- Shining Sin'dorei Hourglass
 r(1246895),	-- Brilliant Phoenix Harp
 r(1251983),	-- Voidstone Shielding Array

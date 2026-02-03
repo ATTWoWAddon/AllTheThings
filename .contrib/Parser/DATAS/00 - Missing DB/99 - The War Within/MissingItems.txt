@@ -2864,7 +2864,6 @@ i(18599),	-- QAEnchant 2H Weapon +25 Agility
 i(18601),	-- ing Crystal Prison \\ Glowing Crystal Prison
 i(18607),	-- e Battle Standard \\ Horde Battle Standard
 i(18627),	-- Gong of Dethmoora
-i(18628),	-- ium Brotherhood Contract \\ Thorium Brotherhood Contract
 i(18630),	-- Doomsday Flare
 i(18632),	-- brook Riot Taffy \\ Moonbrook Riot Taffy
 i(18633),	-- een's Sour Suckerpop \\ Styleen's Sour Suckerpop
@@ -7155,7 +7154,7 @@ i(42739),	-- Charred Glyph \\ red Glyph \\ Glyph of Combustion \\ Glyph of Fireb
 i(42740),	-- red Glyph \\ Charred Glyph \\ Glyph of Fire Blast
 i(42741),	-- Charred Glyph \\ red Glyph \\ Glyph of Frost Nova
 i(42742),	-- d Glyph \\ Faded Glyph \\ Glyph of Frostbolt
-i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Ice Lance
+i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Frozen Orb \\ Glyph of Ice Lance
 i(42746),	-- Charred Glyph \\ red Glyph \\ Glyph of Cone of Cold \\ Glyph of Icy Veins
 i(42747),	-- red Glyph \\ Charred Glyph \\ Glyph of Scorch
 i(42748),	-- Charred Glyph \\ red Glyph \\ Glyph of Rapid Displacement \\ Glyph of Invisibility
@@ -17375,12 +17374,6 @@ i(90533),	-- Monster - Axe_2h_PandariaQuest_B_01
 i(90534),	-- Monster - Axe_2h_PandariaQuest_B_01 - Purple
 i(90535),	-- Monster - Axe_2h_PandariaQuest_B_01 - Red
 i(90536),	-- Monster - Axe_2h_PandariaQuest_B_01 - Yellow
-i(90538),	-- t Place Valorous Commendation \\ First Place Valorous Commendation
-i(90539),	-- nd Place Valorous Commendation \\ Second Place Valorous Commendation
-i(90540),	-- d Place Valorous Commendation \\ Third Place Valorous Commendation
-i(90541),	-- th Place Valorous Commendation \\ Fourth Place Valorous Commendation
-i(90543),	-- h Place Valorous Commendation \\ Fifth Place Valorous Commendation
-i(90544),	-- h Place Valorous Commendation \\ Sixth Place Valorous Commendation
 i(90548),	-- hclaw Imprint \\ Deathclaw Imprint
 i(90549),	-- Monster - Shield_PanProg_B_02 - Blue
 i(90550),	-- itive Electron Collider \\ Primitive Electron Collider
@@ -18236,7 +18229,6 @@ i(93819),	-- Art Template Plate Head - Plate_RaidWarrior_M_01 - Dark
 i(93820),	-- Art Template Plate Legs - Plate_RaidWarrior_M_01 - Dark
 i(93821),	-- Art Template Plate Shoulder - Plate_RaidWarrior_M_01 - Dark
 i(93822),	-- Art Template Plate Wrist - Plate_RaidWarrior_M_01 - Dark
-i(93824),	-- lenge Card: Vian \\ Challenge Card: Vian
 i(93825),	-- Art Template Plate Belt - Plate_PVPWarrior_F_01 - Copper
 i(93826),	-- Art Template Plate Boot - Plate_PVPWarrior_F_01 - Copper
 i(93827),	-- Art Template Plate Chest - Plate_PVPWarrior_F_01 - Copper
@@ -18351,32 +18343,9 @@ i(94154),	-- ivor's Bag of Coins \\ Survivor's Bag of Coins
 i(94155),	-- f of Antonidas \\ Staff of Antonidas
 i(94156),	-- Monster - Sword_2h_PandaRaid_D_01 - Blue (1h Variant)
 i(94157),	-- Weapon - Sword_1H_PVPPandariaS2_C_01 - Brown (Lei Shen Lightning Enchanted)
-i(94160),	-- lenge Card: Goredome \\ Challenge Card: Goredome
-i(94161),	-- lenge Card: Vishas \\ Challenge Card: Vishas
-i(94162),	-- lenge Card: Dippy \\ Challenge Card: Dippy
-i(94163),	-- lenge Card: Kirrawk \\ Challenge Card: Kirrawk
-i(94164),	-- lenge Card: Fran & Riddoh \\ Challenge Card: Fran & Riddoh
-i(94165),	-- lenge Card: King Kulaka \\ Challenge Card: King Kulaka
-i(94166),	-- lenge Card: Blat \\ Challenge Card: Blat
-i(94167),	-- lenge Card: Sanoriak \\ Challenge Card: Sanoriak
-i(94168),	-- lenge Card: Ixx \\ Challenge Card: Ixx
 i(94169),	-- lenge Card: Mazhareen \\ Challenge Card: Mazhareen
-i(94170),	-- lenge Card: Crush \\ Challenge Card: Crush
-i(94171),	-- lenge Card: Leona \\ Challenge Card: Leona
-i(94172),	-- lenge Card: Dominika \\ Challenge Card: Dominika
-i(94173),	-- lenge Card: Deeken \\ Challenge Card: Deeken
-i(94174),	-- lenge Card: Millie Watt \\ Challenge Card: Millie Watt
-i(94175),	-- lenge Card: Fjoll \\ Challenge Card: Fjoll
-i(94176),	-- lenge Card: Proboskus \\ Challenge Card: Proboskus
-i(94177),	-- lenge Card: Leper Gnomes \\ Challenge Card: Leper Gnomes
-i(94179),	-- lenge Card: Dark Summoner \\ Challenge Card: Dark Summoner
 i(94180),	-- lenge Card: Battletron \\ Challenge Card: Battletron
-i(94181),	-- lenge Card: Meatball \\ Challenge Card: Meatball
-i(94182),	-- lenge Card: Epicus Maximus \\ Challenge Card: Epicus Maximus
-i(94183),	-- lenge Card: Yikkan Izu \\ Challenge Card: Yikkan Izu
-i(94184),	-- lenge Card: Akama \\ Challenge Card: Akama
 i(94185),	-- Challenge Card: Smash Hoofstomp \\ lenge Card: Smash Hoofstomp \\ Challenge Card: Smash
-i(94186),	-- lenge Card: Unguloxx \\ Challenge Card: Unguloxx
 i(94187),	-- lenge Card: Disruptron \\ Challenge Card: Disruptron
 i(94188),	-- lenge Card: Millhouse Manastorm \\ Challenge Card: Millhouse Manastorm
 i(94189),	-- lenge Card: Zen'shar \\ Challenge Card: Zen'shar
@@ -18739,10 +18708,8 @@ i(97265),	-- Weapon - Hand_1h_PVPPandariaS3_C_01 (left hand) - Red
 i(97266),	-- Weapon - Hand_1h_PVPPandariaS3_C_01 (left hand) - Yellow
 i(97278),	-- lenge Card: Ahoo'ru \\ Challenge Card: Ahoo'ru
 i(97279),	-- lenge Card: Mingus Diggs \\ Challenge Card: Mingus Diggs
-i(97280),	-- lenge Card: Dippy & Doopy \\ Challenge Card: Dippy & Doopy
 i(97281),	-- lenge Card: Hexos \\ Challenge Card: Hexos
 i(97282),	-- lenge Card: Ty'thar \\ Challenge Card: Ty'thar
-i(97283),	-- lenge Card: Nibbleh \\ Challenge Card: Nibbleh
 i(97284),	-- lenge Card: Master Boom Boom \\ Challenge Card: Master Boom Boom
 i(97285),	-- lenge Card: Grandpa Grumplefloot \\ Challenge Card: Grandpa Grumplefloot
 i(97286),	-- lenge Card: Big Badda Boom \\ Challenge Card: Big Badda Boom
@@ -18776,8 +18743,6 @@ i(97314),	-- Weapon - Sword_1H_PVPPandariaS3_C_02 - Blue
 i(97315),	-- Weapon - Sword_1H_PVPPandariaS3_C_02 - Green
 i(97316),	-- Weapon - Sword_1H_PVPPandariaS3_C_02 - Orange
 i(97317),	-- Weapon - Sword_1H_PVPPandariaS3_C_02 - Purple
-i(97321),	-- lenge Card: Blind Hero \\ Challenge Card: Blind Hero
-i(97445),	-- lenge Card: Blingtron 3000 \\ Challenge Card: Blingtron 3000
 i(97446),	-- Weapon - Wand_1h_PVPPandariaS3_C_01 - Blue
 i(97447),	-- Weapon - Wand_1h_PVPPandariaS3_C_01 - Green
 i(97448),	-- Weapon - Wand_1h_PVPPandariaS3_C_01 - Orange
@@ -18843,11 +18808,8 @@ i(97543),	-- kron Stone \\ Kor'kron Stone
 i(97544),	-- kron Oil \\ Kor'kron Oil
 i(97545),	-- kron Meat \\ Kor'kron Meat
 i(97547),	-- Mysterious Imperial Amethyst
-i(97559),	-- lenge Card: T440 Dual-Mode Robot \\ Challenge Card: T440 Dual-Mode Robot
 i(97560),	-- lenge Card: Ro-Shambo \\ Challenge Card: Ro-Shambo
 i(97561),	-- lenge Card: Bao'za \\ Challenge Card: Bao'za
-i(97563),	-- lenge Card: Mecha-Bruce \\ Challenge Card: Mecha-Bruce
-i(97566),	-- lenge Card: Razorgrin \\ Challenge Card: Razorgrin
 i(97567),	-- Art Template Plate Belt - Plate_PVPPaladin_G_01 - Red
 i(97568),	-- Art Template Plate Boot - Plate_PVPPaladin_G_01 - Red
 i(97569),	-- Art Template Plate Chest - Plate_PVPPaladin_G_01 - Red
@@ -23394,7 +23356,6 @@ i(140342),	-- Lean - Mok'Nathal Shortribs \\ - Mok'Nathal Shortribs
 i(140343),	-- Exotic Squirmy Delight \\ ic Squirmy Delight
 i(140344),	-- Preserved Pickled Egg \\ erved Pickled Egg
 i(140346),	-- Flask of Arcflame \\ k of Arcflame
-i(140352),	-- Dreamberries \\ mberries
 i(140355),	-- Laden Apple \\ n Apple
 i(140356),	-- Demonic Scribblings \\ nic Scribblings
 i(140357),	-- Fel Lava Rock \\ Lava Rock
@@ -23774,25 +23735,15 @@ i(141998),	-- Honor \\ r
 i(142005),	-- Vial of Diluted Nightwell Liquid \\ of Diluted Nightwell Liquid
 i(142006),	-- Ceremonial Warden Glaive \\ monial Warden Glaive
 i(142007),	-- Omnibus: The Schools of Arcane Magic \\ bus: The Schools of Arcane Magic
-i(142026),	-- Challenge Card: Blackmange \\ lenge Card: Blackmange
 i(142028),	-- Challenge Card: Thwack U \\ lenge Card: Thwack U
-i(142029),	-- Challenge Card: Ogrewatch \\ lenge Card: Ogrewatch
 i(142030),	-- Challenge Card: Burnstachio \\ lenge Card: Burnstachio
 i(142031),	-- Challenge Card: Ray D. Tear \\ lenge Card: Ray D. Tear
-i(142032),	-- Challenge Card: Johnny Awesome \\ lenge Card: Johnny Awesome
-i(142033),	-- Challenge Card: Carl \\ lenge Card: Carl
 i(142034),	-- Challenge Card: Beat Box \\ lenge Card: Beat Box
 i(142035),	-- Challenge Card: Warhammer Council \\ lenge Card: Warhammer Council
 i(142036),	-- Challenge Card: Master Paku \\ lenge Card: Master Paku
-i(142037),	-- Challenge Card: Topps \\ lenge Card: Topps
 i(142038),	-- Challenge Card: Serpent of Old \\ lenge Card: Serpent of Old
 i(142039),	-- Challenge Card: Shadowmaster Aameen \\ lenge Card: Shadowmaster Aameen
-i(142040),	-- Challenge Card: Ash'katzuum \\ lenge Card: Ash'katzuum
-i(142041),	-- Challenge Card: Bill the Janitor \\ lenge Card: Bill the Janitor
-i(142042),	-- Challenge Card: Ooliss \\ lenge Card: Ooliss
-i(142043),	-- Challenge Card: Doomflipper \\ lenge Card: Doomflipper
 i(142044),	-- Challenge Card: Strange Thing \\ lenge Card: Strange Thing
-i(142045),	-- Challenge Card: Stitches \\ lenge Card: Stitches
 i(142049),	-- Legacy of the Mountain King \\ cy of the Mountain King
 i(142051),	-- Torment of the Worgen \\ ent of the Worgen
 i(142052),	-- Redemption of the Fallen \\ mption of the Fallen
@@ -23820,7 +23771,6 @@ i(142259),	-- Spectral Feather \\ tral Feather
 i(142275),	-- Master's Bell \\ er's Bell
 i(142278),	-- Grizzleweald Totem \\ zleweald Totem
 i(142295),	-- Rumble Card: Rumble 08 \\ le Card: Rumble 08
-i(142313),	-- Zeppelin Rental Form \\ elin Rental Form
 i(142315),	-- Helya's Horn \\ a's Horn
 i(142322),	-- Knockout \\ kout
 i(142323),	-- Puncher's Punch \\ her's Punch
@@ -23913,7 +23863,6 @@ i(143735),	-- Ancient Mana Shards \\ ent Mana Shards
 i(143750),	-- Glyph of Twilight Bloom \\ h of Twilight Bloom
 i(143772),	-- Challenge Card: Oolis \\ lenge Card: Oolis
 i(143786),	-- Player Experience \\ er Experience
-i(143794),	-- Challenge Card: A Seagull \\ lenge Card: A Seagull
 i(143796),	-- Clarity of Conviction \\ ity of Conviction
 i(143797),	-- Reactive Intuition \\ tive Intuition
 i(143798),	-- Grisly Souvenir \\ ly Souvenir
@@ -23956,7 +23905,6 @@ i(143868),	-- Accolade of Achievement \\ lade of Achievement
 i(143869),	-- Accolade of Victory \\ lade of Victory
 i(143870),	-- Accolade of Heroism \\ lade of Heroism
 i(143871),	-- Accolade of Myth \\ lade of Myth
-i(143899),	-- Challenge Card: Oso the Betrayer \\ lenge Card: Oso the Betrayer
 i(143900),	-- Letter from Maximillian \\ er from Maximillian
 i(143911),	-- Scraps of Padding \\ ps of Padding
 i(144077),	-- Submarine Tar \\ arine Tar
@@ -24038,7 +23986,6 @@ i(144431),	-- Artifact Research Compendium: Volumes I-III \\ fact Research Compe
 i(144433),	-- Artifact Research Compendium: Volume I \\ fact Research Compendium: Volume I
 i(144434),	-- Artifact Research Compendium: Volumes I & II \\ fact Research Compendium: Volumes I & II
 i(144435),	-- Artifact Research Compendium: Volumes I-IV \\ fact Research Compendium: Volumes I-IV
-i(144439),	-- Challenge Card: Klunk \\ lenge Card: Klunk
 i(144442),	-- A Single Jack \\ ngle Jack
 i(145272),	-- Sparkling Snowplum Brandy \\ kling Snowplum Brandy
 i(145275),	-- Icecrown and the Frozen Throne \\ rown and the Frozen Throne
@@ -24726,22 +24673,6 @@ i(172224),	-- Winter Veil Gift
 i(172225),	-- Gently Shaken Gift
 11.2.0.61624
 i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-11.2.5.62554
-i(251016),	-- Ensemble: Forged Warmonger's Cloth Armor
-i(251017),	-- Ensemble: Forged Warmonger's Leather Armor
-i(251018),	-- Ensemble: Forged Warmonger's Mail Armor
-i(251019),	-- Ensemble: Forged Warmonger's Plate Armor
-i(251020),	-- Arsenal: Forged Warmonger's Weapons
-i(251236),	-- Ensemble: Prized Warmonger's Cloth Armor
-i(251237),	-- Ensemble: Prized Warmonger's Leather Armor
-i(251238),	-- Ensemble: Prized Warmonger's Mail Armor
-i(251239),	-- Ensemble: Prized Warmonger's Plate Armor
-i(251240),	-- Arsenal: Prized Warmonger's Weapons
-i(251243),	-- Ensemble: Astral Warmonger's Cloth Armor
-i(251244),	-- Ensemble: Astral Warmonger's Leather Armor
-i(251245),	-- Ensemble: Astral Warmonger's Mail Armor
-i(251246),	-- Ensemble: Astral Warmonger's Plate Armor
-i(251247),	-- Arsenal: Astral Warmonger's Weapons
 11.2.7.64011
 i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset
 11.2.7.64877
@@ -24749,60 +24680,143 @@ i(268368),	-- Fragmented Memento of Epoch Challenges
 11.2.7.64978
 i(252650),	-- Heartglow Listener
 12.0.0.63534
-i(248210),	-- Weathered Twilight Cultist's Sword
-i(248211),	-- Weathered Twilight Cultist's Axe
-i(248212),	-- Weathered Twilight Cultist's Greataxe
-i(248213),	-- Weathered Twilight Cultist's Longbow
-i(248214),	-- Weathered Twilight Cultist's Ritual Knife
-i(248215),	-- Weathered Twilight Cultist's Rifle
-i(248216),	-- Weathered Twilight Cultist's Hammer
-i(248217),	-- Weathered Twilight Cultist's Greatmace
 i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
-i(249434),	-- Well-Worn Twilight Cultist's Cowl
-i(249435),	-- Well-Worn Twilight Cultist's Mantle
-i(249436),	-- Well-Worn Twilight Cultist's Robe
 i(250755),	-- Pouch of Mystic Grindings
 i(250807),	-- Selune's Stormarion Core
+i(255269),	-- Galactic Aspirant's Chain Sabatons
+i(255288),	-- Galactic Aspirant's Chain Belt
+i(257379),	-- Player Experience
 12.0.0.63724
-i(251100),	-- Malfeasance Mallet \\ Item - Mace1H - Str - Weapon
-i(251106),	-- Resolute Runeglaive \\ Item - Warglaives - Agi - Weapon
-12.0.0.64499
+i(260910),	-- Boon of Vitality
+12.0.0.63854
+i(263354),	-- Filling the Void in Your Heart
+i(263379),	-- Personal Advertising Platform
+i(263380),	-- Recruitment Pamphlets
 12.0.0.64975
-i(262354),	-- Riftstone
-i(262356),	-- Haranir Preserving Agents
+i(243090),	-- Sturdy Haranir Chair
+i(246129),	-- Outsider's Gear
+i(246152),	-- Saptor Frill
+i(246693),	-- Self-Pouring Thalassian Sunwine
+i(253457),	-- Leather-Bound Haranir Wall Shelf
+i(253497),	-- Embroidered Sunfury Chair
+i(253508),	-- Harandar Signpost
+i(255643),	-- Silvermoon Barrel
+i(256042),	-- Silvermoon Bench
+i(256043),	-- Silvermoon Fencepost
+i(256172),	-- Silvermoon Fence
+i(256232),	-- Bunch of Ripe Grapes
+i(256397),	-- Packet of Instant Yeast
+i(257054),	-- A Rolled-Up Pillow
+i(258768),	-- Battered Safebox Key
+i(258769),	-- Worn Safebox Key
+i(258770),	-- Tarnished Safebox Key
+i(262450),	-- Ensorcelled Broom
+i(262451),	-- Gilded Silvermoon Anvil
+i(262454),	-- Shining Sin'dorei Hourglass
+i(262455),	-- Font of Gleaming Water
+i(262456),	-- Ornamental Silvermoon Hanger
+i(262457),	-- Gilded Silvermoon Hanger
 i(262460),	-- Ren'dorei Anvil
+i(262468),	-- Ren'dorei Postal Repository
+i(262469),	-- Brilliant Phoenix Harp
+i(262470),	-- Spellbound Tome of Thalassian Magics
+i(262471),	-- Bejeweled Sin'dorei Lyre
 i(262590),	-- Rootflame Campfire
+i(262591),	-- Luxurious Silvermoon Lounge Cushion
+i(262592),	-- Plush Silvermoon Bed
+i(262594),	-- Homely Sin'dorei Shelf
+i(262595),	-- Homely Wall Shelves
+i(262597),	-- Gilded Eversong Book
+i(262599),	-- Silvermoon Curtains
+i(262607),	-- Void Elf Throne
+i(262608),	-- Void Elf Stool
+i(262609),	-- Void Elf Floating Lantern
+i(262616),	-- Lively Songwriter's Quill
 i(262617),	-- Ren'dorei Crafting Framework
 i(262618),	-- Ren'dorei Void Projector
+i(263031),	-- Twisted Rope Coil
+i(263034),	-- Magnificent Towering Bookcase
+i(263211),	-- Gilded Eversong Cup
+i(264244),	-- Plush Haranir Leather Pillow
+i(264344),	-- Cosmic Void Orb
+i(264352),	-- Elegant Elven Bathtub
+i(264353),	-- Empty Elegant Elven Bathtub
+i(264477),	-- Thunder Totem Mailbox
 i(264717),	-- Amani Warding Hex
+i(265031),	-- Consortium Translocation Portal
+i(265653),	-- Elegant Storage Table
+i(265654),	-- Elegant Elven Washbasin
+i(266130),	-- Gilded Silvermoon Gazebo
 i(266234),	-- Saltfang Shoals Large Garden Cluster
 i(266235),	-- Razorwind Cactus Large Garden Cluster
 i(266236),	-- Razorwind Blooms Large Garden Cluster
 i(266237),	-- Runetotem's Bounty Large Garden Cluster
 i(266238),	-- Cragthorn Highlands Large Garden Cluster
+i(267645),	-- Dreamrift Vanquisher's Argent Trophy
+i(267646),	-- March on Quel'Danas Vanquisher's Argent Trophy
+i(268049),	-- Voidspire Vanquisher's Argent Trophy
+i(268111),	-- Arkonite Beacon
+i(268112),	-- Argunite Beacon
+i(268115),	-- Overbaked Donut
+i(268116),	-- Twin-Flame Holder
+i(268551),	-- Scroll of Reflection
+12.0.0.65512
+i(260341),	-- Star the Lucky Dragon
+i(260360),	-- Gummi the Glow Wyrm
+i(262438),	-- Fantastical Goblin Waveshredder
+i(262585),	-- Pristine Lunch Bag
+i(262587),	-- Brown Lunch Bag
+i(262588),	-- Sack Lunch
+i(262660),	-- Egg Farmer's Backpack
+i(262661),	-- Ghastropod
+i(262881),	-- Lil' Staropod
+i(262909),	-- Hypo-Speed X6000
+i(263383),	-- Corked Bottle of Liquid Mystery
+i(264273),	-- Fel Spirehawk
+i(264278),	-- Sturdy Portable Ice Chest
+i(264279),	-- Tall Corked Bottle of Liquid Mystery
+i(264280),	-- Short Corked Bottle of Liquid Mystery
+i(264281),	-- Preserved Gift of Gilneas
+i(264282),	-- Bluebird's Golden Cage
+i(264283),	-- Backboard and Hoop Playset
+i(264384),	-- Zapmaster Viewer 3000
+i(264396),	-- Naturally Elegant Doormat
+i(264397),	-- Simply Adorned Vase and Flowers
+12.0.0.65560
+i(253297),	-- Lunar Celebrant's Vase with Maple Branch
+12.0.0.65614
+i(258742),	-- Scroll of the Adherent
 12.0.1.64889
+i(248814),	-- Witherbark Supplies
+i(249775),	-- Bright Berry
+i(249779),	-- Discordant Tune
+i(253210),	-- Soothsayer's Signet
+i(253211),	-- Smuggler's Signet
+i(257024),	-- A Lost Hunting Knife
 i(257145),	-- Crimson Dragonhawk
+i(259219),	-- Bear Tooth
+i(259220),	-- Dragonhawk Feather
+i(259223),	-- Lynx Claw
+i(264251),	-- Depthdiver's Cooking Spit
+i(268274),	-- Blinky's Collar
+i(268365),	-- Thalassian Competitor's Staff
+i(268475),	-- Evercore Dome Dinger
+i(268477),	-- P.O.W. x3
+i(268479),	-- Thalassian Competitor's Rifle
+i(268485),	-- Victorious Stormarion Pinnacle Cache
+i(268487),	-- Avid Learner's Supply Pack
+i(268488),	-- Overflowing Abundant Satchel
+i(268489),	-- Surplus Bag of Party Favors
+i(268490),	-- Apex Cache
+i(268534),	-- Sanctum's Decree
+i(268545),	-- Aspiring Preyseeker's Chest \\ Preyseeker's Adventurer Chest
 12.0.1.64914
 i(248723),	-- Stolen Documents
 i(248964),	-- Cosmic Void Table
-i(258219),	-- Driftwood Barrel
-i(258221),	-- Driftwood Junk Pile
-i(258222),	-- Shellscale Standard
-i(258223),	-- Murloc's Wind Chimes
-i(258262),	-- Kobold Digger's Chair
-i(258264),	-- Kobold Candle Trio
-i(258265),	-- Kobold Wagon
-i(258267),	-- Candle-Festooned Wooden Awning
 i(258268),	-- Waxmaster's Candle Rack
-i(258740),	-- Glorious Pendant of Rukhmar
-i(258741),	-- Writings of Reshad the Outcast
-i(258742),	-- Scroll of the Adherent
 i(258744),	-- Skyreach Circular Table
-i(258745),	-- High Arakkoan Library Shelf
-i(258749),	-- Uncorrupted Eye of Terokk
 i(259217),	-- Ambient Aethercharged Crystal
 i(262352),	-- Lush Telogrus Carpet
-i(262355),	-- Entropic Illuminant
 i(262462),	-- Dark Void Inkwell
 i(262463),	-- Cosmic Void Ashwell
 i(262464),	-- Floating Void-Touched Tome
@@ -24818,14 +24832,12 @@ i(262612),	-- Sturdy Ren'dorei Cask
 i(263049),	-- Ren'dorei Lightpost
 i(263240),	-- Sturdy Void Elf Crate
 i(263499),	-- Sturdy Void Elf Trunk
-i(264336),	-- Voidlight Brazier
 i(264337),	-- Cosmic Void Training Dummy
-i(264338),	-- Domanaar Control Console
 i(264339),	-- Cosmic Void Summoning Crystal
 i(264340),	-- Cosmic Barrel
 i(264341),	-- Cosmic Void Crate
 i(264343),	-- Cosmic Void Gravitational Orb
-i(264351),	-- Ornate Cosmic Banner
+i(264351),	-- Ornate Void Elf Banner \\ Ornate Cosmic Banner
 i(264483),	-- Cosmic Void Campfire
 i(264508),	-- Sturdy Void Elf Barricade
 i(264509),	-- Void Elf Barrel
@@ -24836,7 +24848,6 @@ i(267209),	-- Open Void Elf Bedroll
 i(268679),	-- Hearty Impossibly Royal Roast
 i(268680),	-- Hearty Flora Frenzy
 12.0.1.65337
-i(246416),	-- Waterlogged Haranir Pigment Bowl
 i(246458),	-- Grand Aethercharged Crystal
 i(250793),	-- Lush Garden Trellis
 i(250794),	-- Colorful White Noblegarden Egg
@@ -24844,94 +24855,60 @@ i(250795),	-- Colorful Blue Noblegarden Egg
 i(250796),	-- Colorful Purple Noblegarden Egg
 i(251914),	-- Sumptuous Berry Pie
 i(252419),	-- Lush Garden Fungal Basin
-i(252716),	-- Courtier's Umbral Wristchains
-i(252717),	-- Courtier's Umbral Robe
-i(252718),	-- Courtier's Umbral Girdle
-i(252719),	-- Courtier's Umbral Chain
-i(252720),	-- Courtier's Umbral Anklewraps
-i(252721),	-- Courtier's Azure Wristchains
-i(252722),	-- Courtier's Azure Robe
-i(252723),	-- Courtier's Azure Girdle
-i(252724),	-- Courtier's Azure Chain
-i(252725),	-- Courtier's Azure Anklewraps
-i(252726),	-- Courtier's Viridian Wristchains
-i(252727),	-- Courtier's Viridian Robe
-i(252728),	-- Courtier's Viridian Girdle
-i(252729),	-- Courtier's Viridian Chain
-i(252730),	-- Courtier's Viridian Anklewraps
-i(252731),	-- Courtier's Crimson Wristchains
-i(252732),	-- Courtier's Crimson Robe
-i(252733),	-- Courtier's Crimson Girdle
-i(252734),	-- Courtier's Crimson Chain
-i(252735),	-- Courtier's Crimson Anklewraps
-i(252736),	-- Courtier's Lucent Wristchains
-i(252737),	-- Courtier's Lucent Robe
-i(252738),	-- Courtier's Lucent Girdle
-i(252739),	-- Courtier's Lucent Chain
-i(252740),	-- Courtier's Lucent Anklewraps
 i(253546),	-- Lush Garden Butterfly Sconce
 i(253547),	-- Spring Blossom Wreath
 i(254417),	-- Spring Blossom Hanging Chair
-i(254505),	-- Augur's Umbral Wristchains
-i(254506),	-- Augur's Umbral Robe
-i(254507),	-- Augur's Umbral Girdle
-i(254508),	-- Augur's Umbral Chain
-i(254509),	-- Augur's Umbral Anklewraps
-i(254510),	-- Augur's Azure Wristchains
-i(254511),	-- Augur's Azure Robe
-i(254512),	-- Augur's Azure Girdle
-i(254513),	-- Augur's Azure Chain
-i(254514),	-- Augur's Azure Anklewraps
-i(254515),	-- Augur's Viridian Wristchains
-i(254516),	-- Augur's Viridian Robe
-i(254517),	-- Augur's Viridian Girdle
-i(254518),	-- Augur's Viridian Chain
-i(254519),	-- Augur's Viridian Anklewraps
-i(254520),	-- Augur's Crimson Wristchains
-i(254521),	-- Augur's Crimson Robe
-i(254522),	-- Augur's Crimson Girdle
-i(254523),	-- Augur's Crimson Chain
-i(254524),	-- Augur's Crimson Anklewraps
-i(254525),	-- Augur's Lucent Wristchains
-i(254526),	-- Augur's Lucent Robe
-i(254527),	-- Augur's Lucent Girdle
-i(254528),	-- Augur's Lucent Chain
-i(254529),	-- Augur's Lucent Anklewraps
-i(254530),	-- Augur's Lucent Helmet
-i(254531),	-- Augur's Crimson Helmet
-i(254532),	-- Augur's Viridian Helmet
-i(254533),	-- Augur's Azure Helmet
-i(254534),	-- Augur's Umbral Helmet
-i(254535),	-- Augur's Umbral Shoulderpads
-i(254536),	-- Augur's Azure Shoulderpads
-i(254537),	-- Augur's Viridian Shoulderpads
-i(254538),	-- Augur's Crimson Shoulderpads
-i(254539),	-- Augur's Lucent Shoulderpads
-i(254540),	-- Augur's Umbral Bracers
-i(254541),	-- Augur's Azure Bracers
-i(254542),	-- Augur's Viridian Bracers
-i(254543),	-- Augur's Crimson Bracers
-i(254544),	-- Augur's Lucent Bracers
-i(257144),	-- Umbral Dragonhawk
 i(258294),	-- Lush Garden Gnome-Like Statue
 i(258567),	-- Lush Garden Fungal Chair
 i(258888),	-- Lush Garden Fungal Fountain
 i(259182),	-- Schematic: Giga-Gem Grippers
 i(262610),	-- Swirling Ritual Pedestal
 i(262790),	-- Restful Bronze Bench
-i(264266),	-- Lightbloom Moss Mound
-i(264493),	-- Opened Domanaar Storage Crate
-i(268695),	-- Test Sharing Camera
-i(268717),	-- Pango Plating
+i(268695),	-- Camera \\ Pin-o-Matic Camera \\ Test Sharing Camera
 i(268728),	-- Saptor Salve
-i(268730),	-- Void-Touched Egg
+i(268730),	-- Nether-Warped Egg \\ Void-Touched Egg
 i(268921),	-- Staff of the Great Dark
-i(268954),	-- Entropic Extract
-i(268955),	-- Entropic Extract
 i(269005),	-- Preyseeker's Glinting Coin Pouch
 i(269006),	-- Preyseeker's Gleaming Coin Pouch
 i(269007),	-- Preyseeker's Glittering Coin Pouch
 i(269010),	-- Essence of Lumber
 i(269022),	-- Healing Waters of Ahl'ua
 i(269023),	-- Phytogenic Poison Part
-i(269028),	-- Sootpaw
+12.0.1.65448
+i(246857),	-- "Shu'halo Perspective" Painting
+i(259172),	-- Schematic: Head-Mounted Beam Bummer
+i(259174),	-- Schematic: Rock Bonkin' Hardhat
+i(259176),	-- Schematic: Heavy-Duty Rock Assister
+i(259178),	-- Schematic: Self-Sharpening Sin'dorei Snippers
+i(259180),	-- Schematic: Sin'dorei Reeler's Rod
+i(259184),	-- Schematic: Turbo-Junker's Multitool v9
+i(259206),	-- Technique: Gilded Alchemist's Mixing Rod
+i(259208),	-- Technique: Gilded Sin'dorei Rolling Pin
+i(259210),	-- Technique: Gilded Sin'dorei Quill
+i(259231),	-- Plans: Sunforged Blacksmith's Toolbox
+i(259233),	-- Plans: Sunforged Leatherworker's Toolset
+i(259235),	-- Plans: Sunforged Needle Set
+i(259237),	-- Plans: Sunforged Blacksmith's Hammer
+i(259317),	-- Plans: Sunforged Sickle
+i(259318),	-- Plans: Sunforged Leatherworker's Knife
+i(259319),	-- Plans: Sunforged Pickaxe
+i(259322),	-- Plans: Sunforged Skinning Knife
+i(259354),	-- Brown Paper Sack
+i(262351),	-- Ornate Cosmic Rug
+i(262589),	-- Simple Haranir Table
+i(264660),	-- Ren'dorei Spired Tent
+i(265528),	-- Plans: Gilded Silvermoon Anvil
+i(265530),	-- Plans: Ornamental Silvermoon Hanger
+i(265532),	-- Plans: Gilded Silvermoon Hanger
+i(265534),	-- Plans: Ren'dorei Anvil
+i(265536),	-- Plans: Masterwork Crafting Hammer
+i(265538),	-- Plans: Ornate Crafter's Tongs
+i(269269),	-- Devouring Host Ritual Spire
+i(269586),	-- Emergency Soul Link
+12.0.1.65617
+i(248137),	-- M3DDY
+i(262789),	-- Small Telogrus Lamp
+i(269701),	-- Surplus Bag of Party Favors
+i(269702),	-- Overflowing Abundant Satchel
+i(269704),	-- Victorious Stormarion Cache
+i(269743),	-- Landro's Golden Loot Box

@@ -10,13 +10,6 @@ r(45383),	--
 r(48118),	--
 r(48121),	-- Glyph of Entangling Roots
 3.0.1.8622
-r(50602),	-- Scroll of Intellect VI
-r(50603),	-- Scroll of Intellect VII
-r(50604),	-- Scroll of Intellect VIII
-r(50610),	-- Scroll of Versatility VII \\ Scroll of Spirit VII
-r(50611),	-- Scroll of Versatility VIII \\ Scroll of Spirit VIII
-r(50619),	-- Scroll of Stamina VII
-r(50620),	-- Scroll of Stamina VIII
 r(52175),	-- Decipher
 r(52183),	--
 3.1.0.9767
@@ -51,7 +44,7 @@ r(56976),	-- Glyph of Frost Nova
 r(56977),	-- Glyph of Frostbolt
 r(56978),	-- Glyph of Pyroblast \\ Glyph of Ice Armor
 r(56979),	-- Glyph of Ice Block
-r(56980),	-- Glyph of Ice Lance
+r(56980),	-- Glyph of Frozen Orb \\ Glyph of Ice Lance
 r(56981),	-- Glyph of Icy Veins
 r(56982),	-- Glyph of Scorch
 r(56983),	-- Glyph of Invisibility
@@ -233,10 +226,6 @@ r(57274),	-- Glyph of Soulstone
 r(57275),	-- Glyph of Seduction \\ Glyph of Succubus
 r(57276),	-- Glyph of Unstable Affliction
 r(57277),	-- Glyph of Voidwalker
-r(57713),	-- Ethereal Ink
-r(57714),	-- Darkflame Ink
-r(57715),	-- Ink of the Sea
-r(57716),	-- Snowfall Ink
 r(57719),	-- Glyph of Fire Blast
 r(58286),	-- Glyph of Aquatic Form
 r(58287),	-- Glyph of the Ursol Chameleon \\ Glyph of Challenging Roar
@@ -290,37 +279,16 @@ r(58344),	-- Glyph of Long Charge \\ Glyph of Charge
 r(58345),	-- Glyph of Gushing Wound \\ Glyph of Demoralizing Shout \\ Glyph of Mocking Blow
 r(58346),	-- Glyph of Thunder Clap
 r(58347),	-- Glyph of Mighty Victory \\ Glyph of Enduring Victory
-r(58481),	-- Scroll of Agility VI
-r(58482),	-- Scroll of Agility VII
-r(58483),	-- Scroll of Agility VIII
-r(58489),	-- Scroll of Strength VI
-r(58490),	-- Scroll of Strength VII
-r(58491),	-- Scroll of Strength VIII
 r(59315),	-- Glyph of Dash
 r(59326),	-- Glyph of Ghost Wolf
 r(59338),	-- Glyph of Rune Tap
 r(59339),	-- Glyph of Blood Boil \\ Glyph of Blood Strike
 r(59340),	-- Glyph of Death Strike
-r(59495),	-- Hellfire Tome
-r(59496),	-- Book of Clever Tricks
-r(59497),	-- Iron-bound Tome
-r(59498),	-- Faces of Doom
-r(59500),	-- Armor Vellum III
-r(59501),	-- Weapon Vellum III
-r(59503),	-- Greater Darkmoon Card
-r(59504),	-- Darkmoon Card of the North
 r(59559),	-- Glyph of Holy Wrath
 r(59560),	-- Glyph of Dazing Shield \\ Glyph of Seal of Righteousness
 r(59561),	-- Glyph of Seal of Truth \\ Glyph of Seal of Vengeance
-r(60337),	-- Scroll of Recall III
-r(61117),	-- Master's Inscription of the Axe
-r(61118),	-- Master's Inscription of the Crag
-r(61119),	-- Master's Inscription of the Pinnacle
-r(61120),	-- Master's Inscription of the Storm
-r(61177),	-- Northrend Inscription Research
 r(61677),	-- Glyph of Frostfire
 r(62162),	-- Glyph of Focus
-r(64053),	-- Twilight Tome
 r(64246),	-- Glyph of Raptor Strike
 r(64247),	-- Glyph of Stoneclaw Totem
 r(64248),	-- Glyph of Life Tap
@@ -386,44 +354,14 @@ r(65245),	-- Glyph of Survival Instincts
 3.3.5.12340
 r(67600),	-- Glyph of Ferocious Bite \\ Glyph of Claw
 r(68166),	-- Glyph of Thunder Strike \\ Glyph of Command
-r(69385),	-- Runescroll of Fortitude
 r(71015),	-- Glyph of Rapid Rejuvenation
 r(71101),	-- Glyph of Mana Shield \\ Glyph of Eternal Water
 r(71102),	-- Glyph of Lash of Pain \\ Glyph of Quick Decay
 4.0.1.12911
-r(85785),	-- Runescroll of Fortitude II
-r(86004),	-- Blackfallow Ink
-r(86005),	-- Inferno Ink
-r(86008),	-- Inscription
-r(86654),	-- Forged Documents
-r(89244),	-- Forged Documents
 r(89815),	-- Glyph of Colossus Smash
 4.3.4.15595
-r(86375),	-- Swiftsteel Inscription
-r(86401),	-- Lionsmane Inscription
-r(86402),	-- Inscription of the Earth Prince
-r(86403),	-- Felfire Inscription
-r(86609),	-- Mysterious Fortune Card
-r(86615),	-- Darkmoon Card of Destruction
-r(86616),	-- Book of Blood
-r(86640),	-- Lord Rottington's Pressed Wisp Book
-r(86641),	-- Dungeoneering Guide
-r(86642),	-- Divine Companion
-r(86643),	-- Battle Tome
 r(86647),	-- Etched Horn
-r(86648),	-- Key to the Planes \\ Manual of the Planes
-r(86649),	-- Runed Staff \\ Runed Dragonscale
 r(86650),	-- Notched Jawbone
-r(86652),	-- Rosethorn Staff \\ Tattooed Eyeball
-r(86653),	-- Silver Inlaid Staff \\ Silver Inlaid Leaf
-r(89367),	-- Adventurer's Journal
-r(89368),	-- Scroll of Intellect IX
-r(89369),	-- Scroll of Strength IX
-r(89370),	-- Scroll of Agility IX
-r(89371),	-- Scroll of Versatility IX \\ Scroll of Spirit IX
-r(89372),	-- Scroll of Stamina IX
-r(89373),	-- Scroll of Protection IX
-r(92027),	-- Dust of Disappearance
 r(92579),	-- Glyph of Blind
 r(94000),	-- Glyph of Living Bomb
 r(94401),	-- Glyph of Tiger's Fury
@@ -447,18 +385,7 @@ r(107907),	-- Glyph of Shadow
 r(57037),	-- Unused
 r(58309),	-- Glyph of the Bear Cub
 r(110417),	-- Inscription
-r(111645),	-- Ink of Dreams
-r(111646),	-- Starlight Ink
 r(111830),	-- Darkmoon Card of Mists
-r(111908),	-- Inscribed Fan
-r(111909),	-- Inscribed Jade Fan
-r(111910),	-- Inscribed Red Fan
-r(111917),	-- Rain Poppy Staff
-r(111918),	-- Inscribed Crane Staff
-r(111919),	-- Inscribed Serpent Staff
-r(111920),	-- Ghost Iron Staff
-r(111921),	-- Inscribed Tiger Staff
-r(112045),	-- Runescroll of Fortitude III
 r(112264),	--
 r(112265),	--
 r(112266),	--
@@ -483,8 +410,6 @@ r(112465),	--
 r(112466),	-- Glyph of Rising Tiger Kick
 r(112468),	--
 r(112469),	-- Glyph of Fighting Pose
-r(112883),	--
-r(112996),	-- Scroll of Wisdom
 r(119481),	--
 r(122015),	--
 r(122030),	--
@@ -517,24 +442,7 @@ r(126701),	--
 r(126704),	--
 r(126800),	-- Glyph of Shadowy Friends
 r(126801),	--
-r(126988),	-- Origami Crane
-r(126989),	-- Origami Frog
-r(126994),	-- Greater Ox Horn Inscription
-r(126995),	-- Greater Crane Wing Inscription
-r(126996),	-- Greater Tiger Claw Inscription
-r(126997),	-- Greater Tiger Fang Inscription
-r(127007),	-- Yu'lon Kite
-r(127009),	-- Chi-ji Kite
-r(127016),	-- Tiger Fang Inscription
-r(127017),	-- Tiger Claw Inscription
-r(127018),	-- Crane Wing Inscription
-r(127019),	-- Ox Horn Inscription
-r(127020),	-- Secret Tiger Fang Inscription
-r(127021),	-- Secret Tiger Claw Inscription
-r(127023),	-- Secret Crane Wing Inscription
-r(127024),	-- Secret Ox Horn Inscription
 r(127625),	--
-r(130407),	-- Mystery of the Mists
 r(131152),	-- Glyph of the Cheetah
 5.5.0.60481
 r(132167),	--
@@ -542,16 +450,10 @@ r(135561),	--
 6.0.1.18179
 r(158748),	-- Inscription
 7.3.0.24473
-r(165464),	-- Research: Ethereal Ink
 r(165465),	-- Research: Ink of the Sea
-r(165466),	-- Research: Blackfallow Ink
 r(165467),	-- Research: Ink of Dreams
-r(176513),	-- Draenor Merchant Order
-r(178240),	-- War Paints
-r(178550),	-- Borrow Draenic Mortar \\ Draenic Mortar
 r(182158),	-- Glyph of the Sun
 r(186239),	--
-r(187495),	-- Mighty Ensorcelled Tarot
 r(192848),	-- Glyph of the Wraith Walker
 r(225523),	-- Glyph of the Blood Wraith
 r(225526),	-- Glyph of the Unholy Wraith

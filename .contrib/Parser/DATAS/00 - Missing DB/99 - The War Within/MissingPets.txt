@@ -7,8 +7,10 @@ pet(4887),	-- Dundun
 pet(4905),	-- [DNT] Baby Amazard (Red)
 12.0.0.63724
 pet(4945),	-- Aud'rei III
-12.0.1.65337
-pet(5012),	-- Sootpaw
+12.0.0.65512
+pet(4943),	-- Star the Lucky Dragon
+pet(4944),	-- Gummi the Glow Wyrm
+pet(4968),	-- Lil' Staropod
 
 
 

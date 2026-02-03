@@ -73,7 +73,7 @@ r(1237554),	-- Tinker's Handguard
 r(1237555),	-- Sin'dorei Engineer's Gloves
 r(1237556),	-- Thalassian Scrapmaster's Gauntlets
 r(1237557),	-- Eversong Botanist's Satchel
-r(1237558),	-- Silvermoon Herbalist's Backpack
+r(1237558),	-- Sin'dorei Herbalist's Backpack \\ Silvermoon Herbalist's Backpack
 r(1237559),	-- Thalassian Herbtender's Cradle
 r(1237560),	-- Apprentice Jeweler's Apron
 r(1237561),	-- Sin'dorei Jeweler's Cover
@@ -192,7 +192,7 @@ r(1237554),	-- Tinker's Handguard
 r(1237555),	-- Sin'dorei Engineer's Gloves
 r(1237556),	-- Thalassian Scrapmaster's Gauntlets
 r(1237557),	-- Eversong Botanist's Satchel
-r(1237558),	-- Silvermoon Herbalist's Backpack
+r(1237558),	-- Sin'dorei Herbalist's Backpack \\ Silvermoon Herbalist's Backpack
 r(1237559),	-- Thalassian Herbtender's Cradle
 r(1237560),	-- Apprentice Jeweler's Apron
 r(1237561),	-- Sin'dorei Jeweler's Cover
