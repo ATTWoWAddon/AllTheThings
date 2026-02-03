@@ -971,7 +971,7 @@ local DLOBaseOverrides = {
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local o;
-	local def = {}
+	local def
 	local params = {...};
 	local loader = {
 		__index = function(t, key)
@@ -1012,7 +1012,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			local basedef = DLOBaseOverrides[key]
 			if basedef ~= nil then return basedef end
 			-- return any default value
-			return def[key]
+			if def then return def[key] end
 		end,
 		-- transfer field sets to the underlying object if the field does not have an override for the object
 		__newindex = function(t, key, val)
@@ -1025,7 +1025,8 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, key, val);
 			else
 				-- allow direct assignment prior to o creation to the set of default fields
-				def[key] = val
+				if not def then def = {[key]=val}
+				else def[key] = val end
 			end
 		end,
 	};
