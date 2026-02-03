@@ -81,9 +81,9 @@ local DataTypeShortcuts = setmetatable({
 	source = "sourceID",
 	s = "sourceID",
 	achievementcategory = "achievementCategoryID",
-	azeriteessence = "azeriteEssenceID",
+	azeriteessence = "azeriteessenceID",
 	flightpath = "flightpathID",
-	runeforgepower = "runeforgePowerID",
+	runeforgepower = "runeforgepowerID",
 	itemharvester = "itemharvester",
 }, {
 	__index = function(t, key)
@@ -156,6 +156,8 @@ app:CreateWindow("list", {
 		settings.OnlyCached = OnlyCached;
 		settings.OnlyCollected = OnlyCollected;
 		settings.IsHarvesting = IsHarvesting;
+		-- don't let list re-show itself on loads
+		settings.visible = nil
 	end,
 	VerifyGroupSourceID = function(data)
 		-- can only determine a sourceID if there is an itemID/sourceID on the group
