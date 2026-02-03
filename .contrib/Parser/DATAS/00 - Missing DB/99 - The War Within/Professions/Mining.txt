@@ -33,6 +33,8 @@ r(1265722),	-- Finesse
 r(1265726),	-- Perception
 r(1265729),	-- Deftness
 r(1265815),	-- Artisan Miner's Moxie
+12.0.1.65448
+r(1285705),	-- Dazzling Thorium
 
 
 
@@ -74,3 +76,5 @@ r(1265722),	-- Finesse
 r(1265726),	-- Perception
 r(1265729),	-- Deftness
 r(1265815),	-- Artisan Miner's Moxie
+12.0.1.65448
+r(1285705),	-- Dazzling Thorium

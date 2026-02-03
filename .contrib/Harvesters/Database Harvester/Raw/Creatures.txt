@@ -2060,6 +2060,11 @@
 5.5.3.65302
 149596@@@Ethereal Transmorpher
 255051@@@Gilded Fountain
+5.5.3.65703
+254356@@@Lil' Coalee
+259428@@@Smoldering Courage
+261152@@@Auspicious Pixiu
+261184@@@Lu'lin
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -23003,7 +23008,6 @@
 244145@@@Hopeflutter
 244146@@@Doomfeathers
 11.2.0.63163
-254356@@@Lil' Coalee
 11.2.5.62554
 241740@@@Archmage Khadgar
 241743@@@Archmage Khadgar
@@ -24167,6 +24171,12 @@
 246417@@@Commander Koruth Mountainfist
 257161@@@Blazing Pyromancer
 259847@@@Misha
+12.0.0.65512
+255736@@@Star the Lucky Dragon
+255750@@@Gummi the Glow Wyrm
+256663@@@Lil' Staropod
+12.0.0.65560
+252686@@@Auspicious Pixiu
 12.0.1.64889
 236594@@@Zul'jan
 236604@@@Lady Liadrin
@@ -24223,3 +24233,21 @@
 260957@@@Vaeli
 260958@@@Vaeli
 260977@@@Flyer
+12.0.1.65448
+260992@@@Boost
+260997@@@Twilight Ogre Directional Sound Cue
+261003@@@Twilight Ogre Directional Sound Cue
+261032@@@Twilight Ogre Directional Sound Cue
+261035@@@Twilight Ogre Directional Sound Cue
+261036@@@Twilight Ogre Directional Sound Cue
+261037@@@Twilight Ogre Directional Sound Cue
+261038@@@Twilight Ogre Directional Sound Cue
+261040@@@Twilight Ogre Directional Sound Cue
+261064@@@Light's Vanguard
+261065@@@Siphoid
+261066@@@Void Mistlurker
+261068@@@Harrower
+261069@@@Blightclaw
+261081@@@Twilight Voidchurner
+12.0.1.65617
+254689@@@Do, Child of Filo

@@ -3016,6 +3016,20 @@
 19198@@@March on Quel'Danas Vanquisher's Argent Trophy
 19252@@@Voidspire Vanquisher's Argent Trophy
 20172@@@[DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
+12.0.0.65512
+12300@@@Brown Paper Sack
+15229@@@Corked Bottle of Liquid Mystery
+15550@@@Sturdy Portable Ice Chest
+15551@@@Tall Corked Bottle of Liquid Mystery
+15552@@@Short Corked Bottle of Liquid Mystery
+15553@@@Preserved Gift of Gilneas
+15554@@@Bluebird's Golden Cage
+15555@@@Backboard and Hoop Playset
+15654@@@Zapmaster Viewer 3000
+15668@@@Naturally Elegant Doormat
+15669@@@Simply Adorned Vase and Flowers
+12.0.0.65699
+14467@@@Miniature Replica Dark Portal
 12.0.1.64889
 1147@@@Rutaani Sporepod
 1159@@@Sin'dorei Honor Stone
@@ -3042,7 +3056,6 @@
 18800@@@Open Void Elf Bedroll
 12.0.1.65337
 2233@@@Waterlogged Haranir Pigment Bowl
-14467@@@Miniature Replica Dark Portal
 14635@@@Swirling Ritual Pedestal
 15501@@@Lightbloom Moss Mound
 15757@@@Opened Domanaar Storage Crate
@@ -3050,3 +3063,5 @@
 20162@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
 20163@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
 20632@@@[DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2
+12.0.1.65448
+20632@@@Devouring Ritual Spire

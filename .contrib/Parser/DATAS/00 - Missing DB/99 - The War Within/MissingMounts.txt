@@ -7,8 +7,6 @@ mount(1261579),	-- Ravenous Shredclaw \\ Red Kaiju Stalker
 mount(1266702),	-- Voidbound Stormray \\ Purple Cosmic Flyer
 12.0.0.63854
 mount(1263635),	-- Spectral Hawkstrider
-12.0.0.63967
-mount(1253924),	-- Brilliant Petalwing
 12.0.0.64124
 mount(1261323),	-- Cerulean Hawkstrider
 mount(1261334),	-- Contained Stormarion Defender
@@ -18,10 +16,16 @@ mount(1261349),	-- Giganto Manis
 mount(1261391),	-- Relinquished Scarlet Charger
 12.0.0.64741
 mount(1266703),	-- Lab-grown Stormray
+12.0.0.65512
+mount(1268809),	-- Fantastical Goblin Waveshredder
+mount(1269181),	-- Ghastropod
+mount(1269556),	-- Hypo-Speed X6000
+mount(1271549),	-- Fel Spirehawk
+12.0.0.65699
+mount(1284640),	-- Golden Ashened Cataclysm
 12.0.1.64889
 mount(1261298),	-- Crimson Dragonhawk
 12.0.1.65337
-mount(1261296),	-- Umbral Dragonhawk
 mount(1270673),	-- Vivacious Chloroceros
 
 
@@ -31,3 +35,5 @@ Missing in MountDB.lua
 
 12.0.0.63534
 mount(1251665),	-- Amani Blessed Bear
+12.0.0.65699
+mount(1284640),	-- Golden Ashened Cataclysm

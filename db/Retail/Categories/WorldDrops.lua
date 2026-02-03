@@ -8945,9 +8945,7 @@ i(236949),
 i(242639),
 i(242640),
 i(245844,{spellID=1253220}),
-i(245845,{spellID=1253220})}),
-flt(200,{
-r(1233138,{itemID=247423,requireSkill=171,skillID=2906})})}}),
+i(245845,{spellID=1253220})})}}),
 h(-215,{awp=100005,sharedDescription="This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this.",g={
 h(-88,{
 flt(3),

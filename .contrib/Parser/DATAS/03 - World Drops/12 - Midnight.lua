@@ -164,7 +164,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(245844),	-- Seven of Void
 		i(245845),	-- Eight of Void
 	}),
-	filter(RECIPES, {
-		i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)	-- Mentions "World Nullaeus Creatures"
-	}),
 })));

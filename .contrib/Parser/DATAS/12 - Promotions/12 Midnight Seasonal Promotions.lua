@@ -67,18 +67,28 @@ root(ROOTS.Promotions, {
 				-- #endif
 				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
 				["groups"] = {
-					cnONLY(i(254736)),	-- Stormgilded Celestial (MOUNT!)
-					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!)
-					-- todo: add Golden Ashened Cataclysm reskin of the Obsidian Worldbreaker
-					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
-					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
-					cnONLY(i(49285)),	-- X-51 Nether-Rocket
-				--	cnONLY(i()),	-- Azure Dragon Soaring Flame
-				--	cnONLY(i()),	-- Blazing Fire Sandbox Horse
-					cnONLY(i(46779)),	-- Path of Cenarius
+				--	-- todo: add cnONLY(i()),	-- Azure Dragon Soaring Flame
+					cnONLY(i(258136)), -- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
+				--	-- todo: add cnONLY(i()),	-- Blazing Fire Sandbox Horse
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(i(256141)), -- Fortune's Waving Cat (TOY!) 		MAYBE OTHER BOX
+					cnONLY(i(258840)), -- Gilded Fountain (TOY!) 			MAYBE OTHER BOX
+					cnONLY(i(253244)), -- Lunar Celebrants Aquarium
+					cnONLY(i(253254)), -- Lunar Celebrants Cradle
+					cnONLY(i(253255)), -- Lunar Celebrants Wide Pillow Roll
+					cnONLY(i(253256)), -- Lunar Celebrants Pillow Roll
+					cnONLY(i(253257)), -- Lunar Celebrants Privacy Screen
+					cnONLY(i(253290)), -- Lunar Celebrants Ornate Vanity
+					cnONLY(i(253291)), -- Lunar Celebrants Compact
+					cnONLY(i(253292)), -- Lunar Celebrants Bamboo Canister
+					cnONLY(i(253293)), -- Lunar Celebrants Tea Tray
+					cnONLY(i(253294)), -- Lunar Celebrants Teacup
+					cnONLY(i(253295)), -- Lunar Celebrants Teapot
+					cnONLY(i(253296)), -- Lunar Celebrants Tea Set	
+					cnONLY(i(253402)),	-- Scorching Polearm
 				},
 			})),
-			cnONLY(i(235378, {	-- todo: add new mystery box (CN Only)
+			cnONLY(i(235378, {	-- Landro’s Golden Gift Box (CN Only) todo: add new ID 
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
 				--["description"] = "todo: add price",
@@ -86,11 +96,17 @@ root(ROOTS.Promotions, {
 				-- #endif
 				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
 				["groups"] = {
-					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
-					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
-					cnONLY(i(253402)),	-- Scorching Polearm
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
+					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
+					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!)
+					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!)
+					cnONLY(i(254736)), -- Stormgilded Celestial (MOUNT!)
+					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
+					-- Old Loot
+					cnONLY(i(46779)),	-- Path of Cenarius
+					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
+					cnONLY(i(49286)),	-- X-51 Nether-Rocket X-TREME
+					cnONLY(i(49285)),	-- X-51 Nether-Rocket	
 				},
 			})),
 			-- Season 1

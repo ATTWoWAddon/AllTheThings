@@ -47,7 +47,7 @@ root(ROOTS.Unsorted, {
 			i(253457),	-- Leather-Bound Haranir Wall Shelf
 			i(253467),	-- Rutaani Sporepod
 			i(253497),	-- Embroidered Sunfury Chair
-			i(253506),	-- Rootbound Vat
+
 			i(253508),	-- Harandar Signpost
 			i(253543),	-- Clefthoof Hide Rug
 			i(254235),	-- Sin'dorei Artisan's Easel
@@ -57,7 +57,7 @@ root(ROOTS.Unsorted, {
 			i(256042),	-- Silvermoon Bench
 			i(256043),	-- Silvermoon Fencepost
 			i(256172),	-- Silvermoon Fence
-			i(256356),	-- Sunsmoke Censer
+
 
 			-- QI
 			i(253210),	-- Soothsayer's Signet
@@ -155,8 +155,7 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					i(241279),	-- Midnight Catalyst
-					i(241288),	-- Potion of Recklessness++
-					i(241289),	-- Potion of Recklessness+
+
 					i(241290),	-- Midnight Void Potion 3
 					i(241314),	-- Haranir Phial of Concentrated Ingenuity++
 					i(241315),	-- Haranir Phial of Concentrated Ingenuity+
@@ -1524,10 +1523,9 @@ root(ROOTS.Unsorted, {
 			i(246726),	-- Greatsword of Returning Light
 
 			-- Alch
-			i(246671),	-- Recipe: Sunsmoke Censer
-			i(247425),	-- Recipe: Void Elf KnickKnack
-			i(247498),	-- Recipe: Entropic Illuminant
-			i(247499),	-- Recipe: Haranir Reagent Bowl
+
+
+
 
 			-- MIsc
 			i(246745),	-- Triumphant Satchel of Carved Ethereal Crests
@@ -2821,7 +2819,7 @@ root(ROOTS.Unsorted, {
 			i(259371),	-- Pattern: Stitched Haranir Rug
 			i(259372),	-- Design: Shining Sin'dorei Hourglass
 			i(259373),	-- Formula: Ren'dorei Postage Repository
-			i(259459),	-- Recipe: Potion of Recklessness
+
 
 			-- Prey
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
@@ -4106,8 +4104,7 @@ root(ROOTS.Unsorted, {
 
 			-- Alchemy
 			i(241292),	-- Draught of Rampant Abandon
-			i(241334),	-- Vicious Thalassian Flask of Honor
-			i(241335),	-- Vicious Thalassian Flask of Honor
+
 
 			-- Prof Cooking
 			i(242644),	-- Mana-Wyrm Essence

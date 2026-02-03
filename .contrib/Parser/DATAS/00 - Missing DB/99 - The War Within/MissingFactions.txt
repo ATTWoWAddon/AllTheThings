@@ -10,11 +10,6 @@ faction(2700),	-- DEPRECATED Fungarian Fighting Ring
 faction(2705),	-- Amani Tribe (Paragon)
 faction(2706),	-- Witherbark Tribe
 faction(2709),	-- Vanguard of the Light
-faction(2710),	-- Silvermoon Court
-faction(2711),	-- Magisters
-faction(2712),	-- Blood Knights
-faction(2713),	-- Farstriders
-faction(2714),	-- Shades of the Row \\ Shadow of the Row \\ Shadow of the Spire
 faction(2715),	-- Magisters (Paragon)
 faction(2716),	-- Blood Knights (Paragon)
 faction(2717),	-- Farstriders (Paragon)

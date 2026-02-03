@@ -138,17 +138,41 @@ mnt(153489,{b=1,itemID=107951,lvl=10}),
 p(4690,{itemID=232519,npcID=233481,spellID=470914})}}),
 ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,g={
 de(14467,{itemID=260785,sourceAchievements={62387},spellID=1266894})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(235378,{b=1,description="Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",rwp=120100,spellID=1216746,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(235378,{b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the In-game Shop for a limited time.",rwp=120100,spellID=1216746,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258136)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,g={
+s(301195,257538,{f=2}),
+s(301196,257539,{f=2}),
+s(301197,257540,{f=2}),
+s(301198,257541,{f=2}),
+s(301199,257542,{f=2}),
+s(301200,257543,{f=2}),
+s(301201,257544,{f=2}),
+s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9265,{itemID=253244,spellID=1255878})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9270,{itemID=253254,spellID=1255904})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9271,{itemID=253255,spellID=1255905})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9272,{itemID=253256,spellID=1255906})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9273,{itemID=253257,spellID=1255907})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9274,{itemID=253290,spellID=1255991})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9275,{itemID=253291,spellID=1255992})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9276,{itemID=253292,spellID=1255993})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9277,{itemID=253293,spellID=1255994})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9278,{itemID=253294,spellID=1255995})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9279,{itemID=253295,spellID=1255996})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9280,{itemID=253296,spellID=1255997})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4902,{itemID=253404,npcID=252686,spellID=1256380})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269009)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(1258573,{itemID=254735})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(46197,{itemID=49285,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1258573,{itemID=254735})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258136)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(4902,{itemID=253404,npcID=252686,spellID=1256380}))}}))}}),
+mnt(46197,{itemID=49285,lvl=10}))}}))}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -527,9 +551,9 @@ h(-531,{awp=50402,description="These rewards are available to anyone who purchas
 ach(8795,{providers={{"i",106256}},u=3}),
 p(1365,{itemID=106256,npcID=74413,spellID=149810,u=3,g={
 crit(34640,{achID=8795,id=3,u=3})}})}}),
-h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",u=3,g={
-mnt(369476,{b=1,itemID=191114,u=3}),
-ach(15640,{providers={{"i",191114}},u=3})}}),
+h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",rwp=110007,u=2,g={
+mnt(369476,{b=1,itemID=191114,u=2}),
+ach(15640,{providers={{"i",191114}},u=2})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
 de(12247,{itemID=259055,spellID=1264380,u=3}),

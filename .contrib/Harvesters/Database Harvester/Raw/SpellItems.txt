@@ -13165,3 +13165,7 @@
 7968@@@Enchant Ring - Zul'jin's Mastery |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
 7969@@@Enchant Ring - Zul'jin's Mastery |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
 8675@@@Fishing Lure (+$1284999s1 Fishing Skill)
+12.0.1.65617
+7972@@@Enchant Shoulders - Akil'zon's Swiftness |A:Professions-ChatIcon-Quality-12-Tier1:20:20|a
+7973@@@Enchant Shoulders - Akil'zon's Swiftness |A:Professions-ChatIcon-Quality-12-Tier2:20:20|a
+8675@@@Fishing Lure (+$1284998s1 Fishing Skill)

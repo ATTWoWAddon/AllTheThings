@@ -5,6 +5,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(TREASURES, {
+			-- From Voidstorm Treasures
+			i(247498),	-- Recipe: Entropic Illuminant (RECIPE)
 			--Treasures
 			o(613351, {	-- Discarded Energy Pike
 				["coord"] = { 35.8, 41.4, MAP.MIDNIGHT.VOIDSTORM },

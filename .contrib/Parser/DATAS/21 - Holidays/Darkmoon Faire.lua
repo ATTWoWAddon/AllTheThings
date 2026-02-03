@@ -305,9 +305,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		battlepets({
 			pet(1068, {	-- Crow (PET!)
 				["timeline"] = { ADDED_5_1_0 },
+				["description"] = "Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",
 			}),
 			pet(1062, {	-- Darkmoon Glowfly (PET!)
 				["timeline"] = { ADDED_5_1_0 },
+				["coords"] = {
+					{ 34.8, 36.4, DARKMOON_ISLAND },
+					{ 45.0, 24.8, DARKMOON_ISLAND },
+					{ 53.0, 23.6, DARKMOON_ISLAND },
+					{ 45.4, 50.6, DARKMOON_ISLAND },
+					{ 43.8, 58.4, DARKMOON_ISLAND },
+					{ 61.6, 43.6, DARKMOON_ISLAND },
+					{ 63.6, 58.6, DARKMOON_ISLAND },
+					{ 59.6, 64.6, DARKMOON_ISLAND },
+					{ 58.6, 69.6, DARKMOON_ISLAND },
+					{ 62.6, 77.6, DARKMOON_ISLAND },
+					{ 70.6, 77.4, DARKMOON_ISLAND },
+					{ 71.4, 68.6, DARKMOON_ISLAND },
+					{ 70.8, 58.4, DARKMOON_ISLAND },
+					{ 34.4, 74.6, DARKMOON_ISLAND }
+				}
 			}),
 		}),
 		-- #endif

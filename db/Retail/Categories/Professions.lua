@@ -1317,7 +1317,8 @@ crit(63292,{achID=19410,id=11,learnedAt=100,requireSkill=197})})}}),
 x(12,{awp=120000,g={
 ach(61438),
 ach(61439),
-ach(61440),
+ach(61440,{
+i(264882,{f=55})}),
 ach(61441)}})}),
 x(10,{awp=100002,g={
 h(-489,{
@@ -1694,13 +1695,13 @@ ach(42788,{requireSkill=171})}}),
 h(-45,{requireSkill=171}),
 flt(200,{description="These are learned by specialization.",requireSkill=171,g={
 r(1230891,{cost={{"c",3150,1}},learnedAt=80,requireSkill=171,skillID=2906}),
+r(1230874,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
+r(1230875,{cost={{"c",3150,1}},learnedAt=30,requireSkill=171,skillID=2906}),
 r(1230870,{cost={{"c",3150,1}},learnedAt=60,requireSkill=171,skillID=2906}),
 r(1230858,{cost={{"c",3150,1}},learnedAt=25,requireSkill=171,skillID=2906}),
 r(1230885,{cost={{"c",3150,1}},learnedAt=75,requireSkill=171,skillID=2906}),
-r(1230874,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
-r(1230857,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
-r(1230875,{cost={{"c",3150,1}},learnedAt=30,requireSkill=171,skillID=2906}),
 r(1230867,{cost={{"c",3150,1}},learnedAt=25,requireSkill=171,skillID=2906}),
+r(1230857,{cost={{"c",3150,1}},learnedAt=100,requireSkill=171,skillID=2906}),
 r(1230856,{cost={{"c",3150,1}},learnedAt=90,requireSkill=171,skillID=2906})}})}})}),
 prof(164,{
 h(-12,{awp=100107,requireSkill=164,g={

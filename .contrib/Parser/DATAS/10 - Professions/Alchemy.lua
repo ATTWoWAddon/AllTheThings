@@ -1169,13 +1169,13 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", MID_ALCHEMY_KNOWLEDGE, 1 }} }, {
 				r(1230891),	-- Box of Rocks
+				r(1230874),	-- Cauldron of Sin'dorei Flasks
+				r(1230875),	-- Flask of Thalassian Resistance
 				r(1230870),	-- Haranir Phial of Finesse
 				r(1230858),	-- Light's Preservation
 				r(1230885),	-- Midnight Alchemist Stone
-				r(1230874),	-- Cauldron of Sin'dorei Flasks
-				r(1230857),	-- Voidlight Potion Cauldron
-				r(1230875),	-- Flask of Thalassian Resistance
 				r(1230867),	-- Void-Shrouded Tincture
+				r(1230857),	-- Voidlight Potion Cauldron
 				r(1230856),	-- Wondrous Synergist
 			}),
 		}),

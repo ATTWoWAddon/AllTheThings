@@ -9,7 +9,7 @@ r(1226171),	-- Royal Roast
 r(1226172),	-- Braised Blood Hunter
 r(1226173),	-- Crimson Calamari
 r(1226174),	-- Tasty Smoked Tetra
-r(1226175),	-- Rootland Celebration
+r(1226175),	-- Harandar Celebration \\ Rootland Celebration
 r(1226176),	-- Buttered Root Crab
 r(1226177),	-- Glitter Skewers
 r(1226178),	-- Null and Void Plate
@@ -64,7 +64,7 @@ r(1226171),	-- Royal Roast
 r(1226172),	-- Braised Blood Hunter
 r(1226173),	-- Crimson Calamari
 r(1226174),	-- Tasty Smoked Tetra
-r(1226175),	-- Rootland Celebration
+r(1226175),	-- Harandar Celebration \\ Rootland Celebration
 r(1226176),	-- Buttered Root Crab
 r(1226177),	-- Glitter Skewers
 r(1226178),	-- Null and Void Plate

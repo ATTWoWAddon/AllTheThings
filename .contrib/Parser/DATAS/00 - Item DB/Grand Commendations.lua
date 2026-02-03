@@ -1,9 +1,7 @@
 local Items = ItemDBConditional;
 local i = function(itemID, factionID, unlock)
 	local o = { ["factionID"] = factionID };
-	-- #if NOT ANYCLASSIC
 	if not unlock then o.repeatable = true; end
-	-- #endif
 	Items[itemID] = o;
 	-- ItemDBConditional uses an internal table when making new assignments into the DB, so we can't return the table used to set the key
 	return Items[itemID];

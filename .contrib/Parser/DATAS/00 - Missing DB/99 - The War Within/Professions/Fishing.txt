@@ -1,25 +1,9 @@
 12.0.0.63534
 r(471008),	-- Midnight Fishing
-r(1225245),	-- Sin'dorei Swarmer
-r(1225266),	-- Bloomtail Minnow
 r(1225267),	-- Hollow Grouper
-r(1225268),	-- Null Voidfish
-r(1225269),	-- Root Crab
-r(1225270),	-- Lynxfish
-r(1225271),	-- Shimmersiren
-r(1225272),	-- Shimmer Spinefish
 r(1225273),	-- Ominous Octopus
-r(1225274),	-- Blood Hunter
 r(1225275),	-- Gore Guppy
-r(1225276),	-- Fungalskin Pike
-r(1225277),	-- Restored Songfish
-r(1225278),	-- Sunwell Fish
-r(1225279),	-- Warping Wise
-r(1225280),	-- Twisted Tetra
 r(1225281),	-- Tender Lumifin
-r(1225282),	-- Wyrmfish \\ Arcane Wyrmfish
-r(1225283),	-- Eversong Trout
-r(1225284),	-- Lucky Loa
 r(1225322),	-- Eversong Woods \\ Quel'Thalas \\ Quel'thalas
 r(1225335),	-- Zul'Aman
 r(1225336),	-- Voidstorm

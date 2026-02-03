@@ -986,6 +986,17 @@ iq(249242, 91961);				-- Bronze Celebration Titles: Khaz Algar Enthusiast
 ihqt(248127, 91783);				-- Delver's Cosmetic Surprise Bag
 ihqt(248126, 91784);				-- Delver's Starter Kit
 
+------------------
+-- PATCH 12.0.0 --
+------------------
+is(0, 1254559);	-- Path of Cavernous Depths
+is(0, 1254563);	-- Path of the Fractured Core
+is(0, 1254572);	-- Path of Devoted Magistry
+is(0, 1254400);	-- Path of the Windrunners
+is(0, 1254551);	-- Path of Dark Dereliction
+is(0, 1254555);	-- Path of Unyielding Blight
+is(0, 1254557);	-- Path of the Crowning Pinnacle
+
 ------------
 -- UNUSED --
 ------------
