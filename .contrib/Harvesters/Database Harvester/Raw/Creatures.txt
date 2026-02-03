@@ -24171,6 +24171,10 @@
 246417@@@Commander Koruth Mountainfist
 257161@@@Blazing Pyromancer
 259847@@@Misha
+12.0.0.65512
+255736@@@Star the Lucky Dragon
+255750@@@Gummi the Glow Wyrm
+256663@@@Lil' Staropod
 12.0.1.64889
 236594@@@Zul'jan
 236604@@@Lady Liadrin

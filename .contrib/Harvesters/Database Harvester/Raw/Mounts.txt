@@ -2470,6 +2470,11 @@
 1266703@@@Lab-grown Stormray
 1270522@@@Comfy Bel'ameth Flying Quilt
 1270523@@@Comfy Silvermoon Flying Quilt
+12.0.0.65512
+1268809@@@Fantastical Goblin Waveshredder
+1269181@@@Ghastropod
+1269556@@@Hypo-Speed X6000
+1271549@@@Fel Spirehawk
 12.0.1.64889
 1261298@@@Crimson Dragonhawk
 12.0.1.65337
