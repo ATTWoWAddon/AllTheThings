@@ -2060,6 +2060,11 @@
 5.5.3.65302
 149596@@@Ethereal Transmorpher
 255051@@@Gilded Fountain
+5.5.3.65703
+254356@@@Lil' Coalee
+259428@@@Smoldering Courage
+261152@@@Auspicious Pixiu
+261184@@@Lu'lin
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -23003,7 +23008,6 @@
 244145@@@Hopeflutter
 244146@@@Doomfeathers
 11.2.0.63163
-254356@@@Lil' Coalee
 11.2.5.62554
 241740@@@Archmage Khadgar
 241743@@@Archmage Khadgar

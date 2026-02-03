@@ -5313,6 +5313,8 @@
 62060@@@Heir to the Mist
 5.5.3.64857
 62350@@@Hidden - Mistwalker
+5.5.3.65703
+62399@@@The Mistwalker
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus

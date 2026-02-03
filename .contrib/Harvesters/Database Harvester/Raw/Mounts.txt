@@ -548,6 +548,10 @@
 1280068@@@[PH] Lunar Horse Mount
 5.5.3.65302
 1280068@@@Scorching Courage
+5.5.3.65703
+1257516@@@Lana'thel's Sanguine Cascade
+1285724@@@Stormgilded Celestial
+1285725@@@Thunderhoof Celestial
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
