@@ -99,7 +99,7 @@ root(ROOTS.Promotions, {
 					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
 					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
 					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!)
-					-- todo: add Golden Ashened Cataclysm reskin of the Obsidian Worldbreaker
+					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!)
 					cnONLY(i(254736)), -- Stormgilded Celestial (MOUNT!)
 					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
 					-- Old Loot
