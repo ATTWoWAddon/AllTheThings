@@ -233,6 +233,11 @@ app:CreateWindow("list", {
 					data.statistic = DataType or "None";
 					data.description = (MinimumID or 1) .. " - " .. MaximumID;
 
+					if app.Debugging and DataType == "sourceID" then
+						app.print("Turn off Debugging (/att debug-print) to use sourceID lists. Excessive SourceID checking for ItemLinks will cause too much lag in this window!")
+						return true
+					end
+
 					-- Wipe out the cached object type funcs from past runs this session.
 					wipe(ObjectTypeFuncs);
 					if DataType == "itemharvester" then
