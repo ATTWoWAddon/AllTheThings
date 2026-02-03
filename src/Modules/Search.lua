@@ -92,7 +92,10 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
-api.KeyMaps = KeyMaps
+-- For external use of obtaining the proper Key field
+api.GetKeyField = function(kind)
+	return KeyMaps[kind:lower():gsub("id", "")]
+end
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.

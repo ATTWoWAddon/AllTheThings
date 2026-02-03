@@ -77,7 +77,6 @@ local function BuildDataFromCache()
 	MinimumID = 1;
 	MaximumID = #CacheFields;
 end
-local DataTypeShortcuts = app.Modules.Search.KeyMaps
 app:CreateWindow("list", {
 	Commands = { "attlist" },
 	OnCommand = function(self, args, params)
@@ -102,8 +101,8 @@ app:CreateWindow("list", {
 		if params.min then MinimumID = tonumber(params.min); end
 		BuildFromCache = false;
 		if params.type then
-			local a,b = (":"):split(params.type:lower():gsub("id", ""));
-			DataType = DataTypeShortcuts[b or a];
+			local a,b = (":"):split(params.type);
+			DataType = app.Modules.Search.GetKeyField(b or a)
 			if b and a == "cache" then
 				BuildFromCache = true;
 			end
