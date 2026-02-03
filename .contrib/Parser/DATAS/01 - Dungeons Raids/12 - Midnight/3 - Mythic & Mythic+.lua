@@ -24,10 +24,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				spell(393273),	-- Path of the Draconic Diploma
 			}),
 			ach(61269, {	-- Keystone Hero: Maisara Caverns
-			--	spell(445417),	-- Path of the Ruined City
+				spell(1254559),	-- Path of Cavernous Depths
 			}),
 			ach(61268, {	-- Keystone Hero: Nexus-Point Xenas
-			--	spell(445416),	-- Path of Nerubian Ascension
+				spell(1254563),	-- Path of the Fractured Core
 			}),
 			ach(61267, {	-- Keystone Hero: Magisters' Terrace
 				spell(1254572),	-- Path of Devoted Magistry
