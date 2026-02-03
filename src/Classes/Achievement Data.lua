@@ -265,10 +265,10 @@ local ForOwnItemFields = {	-- Type 36
 	["current"] = function(t)
 		return GetItemCount(t.asset, true);
 	end,
-	["provider"] = function(t)
-		local provider = {"i",t.asset};
-		t.provider = provider;
-		return provider;
+	["providers"] = function(t)
+		local providers = {{"i",t.asset}};
+		t.providers = providers;
+		return providers;
 	end,
 	["GetRelatedThings"] = function(t)
 		return GetRelatedThingsForOwnItem;

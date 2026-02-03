@@ -20,6 +20,7 @@
 	<Script file="Bounty.lua"/>
 	<Script file="Class Specific Things.lua"/>
 	<Script file="Collected Sources.lua"/>
+	<Script file="Debugger.lua"/>
 	<Script file="Exploration.lua"/>
 	<Script file="Factions.lua"/>
 	<Script file="Find.lua"/>

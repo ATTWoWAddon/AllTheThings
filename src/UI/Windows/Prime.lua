@@ -57,7 +57,7 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Bounty"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "debugger" then
-				app.LoadDebugger();
+				app:GetWindow("Debugger"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "filter" or cmd == "filters" then
 				app:GetWindow("Item Filter"):ProcessCommand(args, params);
