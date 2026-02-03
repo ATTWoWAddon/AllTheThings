@@ -71,7 +71,7 @@ local function BuildDataFromCache()
 			__index = id and (app.SearchForObject(DataType, id, "key")
 							or app.SearchForObject(DataType, id, "field")
 							or app.__CreateObject({[DataType]=id}))
-						or setmetatable({name=EMPTY}, app.BaseClass)
+						or setmetatable({text=EMPTY}, app.BaseClass)
 		});
 	end
 	MinimumID = 1;
@@ -218,6 +218,8 @@ app:CreateWindow("list", {
 				if #g < 1 then
 					data.statistic = DataType or "None";
 					data.description = (MinimumID or 1) .. " - " .. MaximumID;
+					data.total = nil
+					data.progress = nil
 
 					if app.Debugging and DataType == "sourceID" then
 						app.print("Turn off Debugging (/att debug-print) to use sourceID lists. Excessive SourceID checking for ItemLinks will cause too much lag in this window!")
