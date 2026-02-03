@@ -295,67 +295,68 @@ app:CreateWindow("Debugger", {
 				};
 			end
 		end
+		local function LoadMerchant(self)
+			local guid = UnitGUID("npc");
+			local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
+			if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
+			if npcID then
+				npcID = tonumber(npcID);
+
+				-- Ignore vendor mounts...
+				if IgnoredNPCs[npcID] then
+					return true;
+				end
+
+				local numItems = GetMerchantNumItems();
+				--print("MERCHANT DETAILS", ty, npcID, numItems);
+
+				local rawGroups = {};
+				for i=1,numItems,1 do
+					local link = GetMerchantItemLink(i);
+					if link then
+						local merchItemInfo = GetMerchantItemInfoX(i);
+						local cost = merchItemInfo.price;
+						if merchItemInfo.hasExtendedCost then
+							cost = {};
+							local itemCount = GetMerchantItemCostInfo(i);
+							for j=1,itemCount,1 do
+								local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
+								if itemLink then
+									-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
+									local m = itemLink:match("currency:(%d+)");
+									if m then
+										-- Parse as a CURRENCY.
+										tinsert(cost, {"c", tonumber(m), itemValue});
+									else
+										-- Parse as an ITEM.
+										tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
+									end
+								end
+							end
+						end
+
+						-- Parse as an ITEM LINK.
+						tinsert(rawGroups, { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost });
+					end
+				end
+
+				local key = app.Modules.Search.GetKeyField(ty)
+				local info = { [key] = npcID, key = key };
+				local faction = UnitFactionGroup("npc");
+				if faction then
+					info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+				end
+				info.name = UnitName("npc");
+				info.g = rawGroups;
+				self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
+			end
+		end
 		handlers.MERCHANT_SHOW = function(self)
 			if SetMerchantFilter then
 				SetMerchantFilter(LE_LOOT_FILTER_ALL)
 				MerchantFrame_Update()
 			end
-			C_Timer.After(0.6, function()
-				local guid = UnitGUID("npc");
-				local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
-				if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
-				if npcID then
-					npcID = tonumber(npcID);
-					
-					-- Ignore vendor mounts...
-					if IgnoredNPCs[npcID] then
-						return true;
-					end
-
-					local numItems = GetMerchantNumItems();
-					--print("MERCHANT DETAILS", ty, npcID, numItems);
-
-					local rawGroups = {};
-					for i=1,numItems,1 do
-						local link = GetMerchantItemLink(i);
-						if link then
-							local merchItemInfo = GetMerchantItemInfoX(i);
-							local cost = merchItemInfo.price;
-							if merchItemInfo.hasExtendedCost then
-								cost = {};
-								local itemCount = GetMerchantItemCostInfo(i);
-								for j=1,itemCount,1 do
-									local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
-									if itemLink then
-										-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
-										local m = itemLink:match("currency:(%d+)");
-										if m then
-											-- Parse as a CURRENCY.
-											tinsert(cost, {"c", tonumber(m), itemValue});
-										else
-											-- Parse as an ITEM.
-											tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
-										end
-									end
-								end
-							end
-
-							-- Parse as an ITEM LINK.
-							tinsert(rawGroups, { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost });
-						end
-					end
-					
-					local key = (ty == "GameObject") and "objectID" or "npcID";
-					local info = { [key] = npcID, key = key };
-					local faction = UnitFactionGroup("npc");
-					if faction then
-						info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
-					end
-					info.name = UnitName("npc");
-					info.g = rawGroups;
-					self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
-				end
-			end);
+			app.CallbackHandlers.DelayedCallback(LoadMerchant, 0.6, self)
 		end
 		handlers.MERCHANT_UPDATE = handlers.MERCHANT_SHOW;
 		self:RegisterEvent("GOSSIP_SHOW");
@@ -393,7 +394,7 @@ app:CreateWindow("Debugger", {
 			-- Need to use LOOT_READY since addons can receive loot before the LOOT_OPENED event
 			self:UnregisterEvent("LOOT_READY");
 			self:RegisterEvent("LOOT_CLOSED");
-			local loot, source, kind, lootID;
+			local loot, source, kind, lootID, info, dropLink
 			local ot, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 			local slots = GetNumLootItems();
 			for i=1,slots,1 do
@@ -402,7 +403,7 @@ app:CreateWindow("Debugger", {
 					-- app.PrintDebug("Loot @",i,":",loot)
 					loot = CleanLink(loot)
 					kind, lootID = (":"):split(loot);
-					kind = KeyMaps[kind]
+					kind = app.Modules.Search.GetKeyField(kind)
 					if lootID then lootID = tonumber(select(1, ("|["):split(lootID)) or lootID); end
 					-- app.PrintDebug("Loot @",i,kind,lootID)
 					if lootID and kind then
@@ -418,8 +419,8 @@ app:CreateWindow("Debugger", {
 								-- app.PrintDebug("item:droplink",dropLink)
 								ot, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
 							end
-							ot = KeyMaps[ot]
-							--app.print("Add",kind,"Loot",loot,"from",ot,id)
+							ot = app.Modules.Search.GetKeyField(ot)
+							app.print("Add",kind,"Loot",loot,"from",ot,id)
 							if ot == "objectID" then
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
 								info.basename = GameTooltipTextLeft1:GetText() or UNKNOWN

@@ -102,7 +102,7 @@ app:CreateWindow("list", {
 		BuildFromCache = false;
 		if params.type then
 			local a,b = (":"):split(params.type);
-			DataType = app.Modules.Search.GetKeyField(b or a)
+			DataType = app.Modules.Search.GetSearchKeyField(b or a)
 			if b and a == "cache" then
 				BuildFromCache = true;
 			end

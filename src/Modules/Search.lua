@@ -66,6 +66,7 @@ local KeyMaps = setmetatable({
 	enchant = "spellID",
 	fp = "flightpathID",
 	follower = "followerID",
+	gameobject = "objectID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
 	["journal:0"] = "instanceID",
@@ -92,9 +93,17 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
--- For external use of obtaining the proper Key field
-api.GetKeyField = function(kind)
+-- For external use of obtaining the proper Search Key field
+api.GetSearchKeyField = function(kind)
 	return KeyMaps[kind:lower():gsub("id", "")]
+end
+-- For external use of obtaining the proper Search Key field
+api.GetKeyField = function(kind)
+	local key = KeyMaps[kind:lower():gsub("id", "")]
+	if key == "modItemID" then
+		return "itemID"
+	end
+	return key
 end
 
 local function SearchByItemLink(link)
