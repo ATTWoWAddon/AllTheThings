@@ -1053,7 +1053,7 @@ local function RowOnClick(self, button)
 							end
 							query.searchString = name
 							C_AuctionHouse.SendBrowseQuery(query)
-						elseif AuctionHouseFrame.SearchBar then
+						elseif AuctionHouseFrame and AuctionHouseFrame.SearchBar then
 							AuctionHouseFrame.SearchBar:StartSearch();
 						else
 							AuctionFrameBrowse_Search();
