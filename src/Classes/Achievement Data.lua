@@ -160,7 +160,7 @@ local AchievementCriteriaCommands = {
 				break;
 			end
 		end
-		print("Currently " .. count .. " Total Mounts!");
+		--print("Currently " .. count .. " Total Mounts!");
 		return count;
 	end,
 	CriteriaTypeForPets = function()
