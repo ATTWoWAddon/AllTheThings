@@ -414,25 +414,6 @@ app.AddEventHandler("OnRefreshComplete", function()
 	app.HandleEvent("OnUpdateWindows", true)
 end, true)
 
-
--- Old Implementation (Deprecated!)
--- Store the Custom Windows Update functions which are required by specific Windows
-do
-	local customWindowUpdates = {};
-	-- Returns the Custom Update function based on the Window suffix if existing
-	function app:CustomWindowUpdate(suffix)
-		return customWindowUpdates[suffix];
-	end
-	-- Allows externally adding custom window update logic which doesn't exist already
-	app.AddCustomWindowOnUpdate = function(customName, onUpdate)
-		if customWindowUpdates[customName] then
-			app.print("Cannot replace Custom Window: "..customName)
-		end
-		-- app.print("Added",customName)
-		customWindowUpdates[customName] = onUpdate
-	end
-end
-
 -- Command Processing
 local __ItemLinkCache = {}
 local function StoreLinks(link)
@@ -2350,11 +2331,7 @@ app.AddEventHandler("OnUpdateWindows", ShowPrecallShowWindows)
 local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
-		-- Deprecated, but supported in Retail for now.
-		definition = {
-			OnUpdate = app:CustomWindowUpdate(suffix),
-		};
-		app.WindowDefinitions[suffix] = definition;
+		print("No Window Definition Found for " .. suffix);
 	else
 		app.WindowDefinitions[suffix] = nil;
 	end

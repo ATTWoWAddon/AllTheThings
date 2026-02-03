@@ -10,11 +10,8 @@ local ipairs, setmetatable, tonumber, tinsert, wipe
 	= ipairs, setmetatable, tonumber, tinsert, wipe
 
 -- Implementation
-app.AddCustomWindowOnUpdate("Import", function(self, force)
-	if not self:IsVisible() then return end
-
-	if not self.initialized then
-		self.initialized = true
+app:CreateWindow("Import", {
+	OnInit = function(self, handlers)
 		local SearchForObject = app.SearchForObject
 
 		function self:ClearResults()
@@ -152,5 +149,5 @@ app.AddCustomWindowOnUpdate("Import", function(self, force)
 		}))
 
 		self:ResetToInitialButtons()
-	end
-end)
+	end,
+});
