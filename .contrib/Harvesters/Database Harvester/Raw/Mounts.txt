@@ -364,6 +364,10 @@
 1284042@@@Thunderhoof Celestial
 1284043@@@Stormgilded Celestial
 1284044@@@Scorching Imperial Quilen
+3.80.0.65586
+110051@@@Heart of the Aspects
+1266345@@@Cerulean Phase-Hunter
+1266866@@@Reins of the Starshard Netherdrake
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -407,7 +411,6 @@
 103195@@@Mountain Horse
 103196@@@Swift Mountain Horse
 107844@@@Twilight Harbinger
-110051@@@Heart of the Aspects
 113120@@@Feldrake
 5.5.0.60481
 113199@@@Jade Cloud Serpent
@@ -541,8 +544,6 @@
 1229670@@@Prophet's Great Crow
 1229672@@@Archmage's Great Crow
 5.5.2.63832
-1266345@@@Cerulean Phase-Hunter
-1266866@@@Reins of the Starshard Netherdrake
 5.5.3.64530
 1280068@@@[PH] Lunar Horse Mount
 5.5.3.65302
