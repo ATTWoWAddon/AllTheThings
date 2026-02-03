@@ -92,6 +92,7 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
+api.KeyMaps = KeyMaps
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
