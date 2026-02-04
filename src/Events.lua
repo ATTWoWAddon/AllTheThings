@@ -212,7 +212,11 @@ end
 local Runner = app.CreateRunner("events")
 local Run = Runner.Run
 local IsRunning = Runner.IsRunning
--- Runner.SetPerFrameDefault(5)
+if app.Debugging then
+-- When debugging, let's run 3 events on the Runner per frame since it will do [Start / (handler) / End] as 3 individual handlers
+-- Typically, with Debug prints commented out, it will simply do a (handler) every frame
+Runner.SetPerFrameDefault(3)
+end
 -- Runner.ToggleDebugFrameTime()
 local Callback = app.CallbackHandlers.Callback
 local IgnoredDebugEvents = {
