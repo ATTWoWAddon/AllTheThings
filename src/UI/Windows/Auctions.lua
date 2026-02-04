@@ -135,6 +135,32 @@ else
 end
 
 -- Implementation
+local GoldCap = 99999999999;
+local MaximumPrice,LastCmd;
+local function ParseCommand(self, cmd, skipUpdate)
+	if cmd and cmd ~= "" then
+		cmd = cmd:lower();
+		LastCmd = cmd;
+		local price;
+		if cmd == "cap" or cmd == "goldcap" or cmd == "default" then
+			price = GoldCap;
+		elseif cmd == "all" then
+			price = GetMoney();
+		elseif cmd == "warband" and app.GameBuildVersion >= 110000 then
+			price = C_Bank.FetchDepositedMoney(Enum.BankType.Account) + GetMoney();
+		else
+			price = (tonumber(cmd) or 0) * 10000;
+		end
+		if price > 0 and MaximumPrice ~= price then
+			MaximumPrice = price;
+			if not skipUpdate then
+				wipe(self.data.g);
+				collectgarbage();
+				self:Rebuild();
+			end
+		end
+	end
+end
 app:CreateWindow("Auctions", {
 	Commands = { "attauctions" },
 	TooltipAnchor = "ANCHOR_RIGHT",
@@ -385,6 +411,22 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				}),
+				app.CreateRawText("Maximum Price", {
+					icon = 133784,
+					description = "Press this button to change the maximum price of auctions displayed.\n\nChanging this value will filter out items that exceed this amount.",
+					visible = true,
+					SortPriority = 1.5,
+					OnClick = function(row, button)
+						app:ShowPopupDialogWithEditBox("Please enter a new maximum price", tostring(MaximumPrice * 0.0001), function(cmd)
+							ParseCommand(self, cmd);
+						end);
+						return true;
+					end,
+					OnUpdate = function(data)
+						data.summaryText = MaximumPrice == GoldCap and "NO LIMIT" or GetCoinTextureString(MaximumPrice);
+						return app.AlwaysShowUpdate(data);
+					end,
+				}),
 				app.CreateRawText(L.ACHIEVEMENT, {	-- Achievements
 					Metas = { "Achievement", "AchievementCriteria" },
 					icon = app.asset("Category_Achievements"),
@@ -478,7 +520,7 @@ app:CreateWindow("Auctions", {
 							end
 						end
 					end
-
+					
 					-- Determine if anything is cached in the Auction Data.
 					local any = false;
 					for itemID,price in pairs(auctionData) do
@@ -577,7 +619,9 @@ app:CreateWindow("Auctions", {
 								tinsert(g, subdata);
 							end
 							for i,j in pairs(searchResults) do
-								tinsert(subdata.g, j);
+								if j.price and j.price <= MaximumPrice then
+									tinsert(subdata.g, j);
+								end
 							end
 						end
 						
@@ -620,13 +664,26 @@ app:CreateWindow("Auctions", {
 		end
 		self:UpdatePosition();
 	end,
-	OnLoad = function(self)
+	OnLoad = function(self, settings)
 		-- If we have left over auction data from previous, then use it.
 		if AllTheThingsAuctionData then
 			auctionData = AllTheThingsAuctionData;
 		end
+		if settings.LastCmd then
+			LastCmd = settings.LastCmd;
+			ParseCommand(self, LastCmd, true);
+		else
+			MaximumPrice = GoldCap;
+			LastCmd = "cap";
+		end
+	end,
+	OnSave = function(self, settings)
+		settings.LastCmd = LastCmd;
 	end,
 	OnRebuild = function(self)
 		self:UpdatePosition();
-	end
+	end,
+	OnShow = function(self)
+		ParseCommand(self, LastCmd);
+	end,
 });
