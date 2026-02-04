@@ -1,4 +1,9 @@
 ID,Type,Asset,Modifier_tree_ID,Start_event,Start_asset,Start_timer,Fail_event,Fail_asset,Flags,Eligibility_world_state_ID,Eligibility_world_state_value
+58452,46,369,0,0,0,0,0,0,0,0,0
+58453,46,470,0,0,0,0,0,0,0,0,0
+58454,46,21,0,0,0,0,0,0,0,0,0
+58455,46,577,0,0,0,0,0,0,0,0,0
+58456,46,87,0,0,0,0,0,0,0,0,0
 100000001,40,148,0,0,0,0,0,0,0,0,0
 100000002,40,713,0,0,0,0,0,0,0,0,0
 100000003,40,553,0,0,0,0,0,0,0,0,0

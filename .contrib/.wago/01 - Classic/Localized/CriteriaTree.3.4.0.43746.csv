@@ -1,4 +1,12 @@
 ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
+143661,"[DNT] Exalted with Gadgetzan",143660,42000,0,58452,0,2
+143662,"[DNT] Exalted with Ratchet",143660,42000,0,58453,1,2
+143663,"[DNT] Exalted with Booty Bay",143660,42000,0,58454,2,2
+143664,"[DNT] Exalted with Ravenholdt",143660,42000,0,8824,3,2
+143665,"[DNT] Exalted with Shen'dralar",143660,42000,0,8825,4,2
+143666,"[DNT] Exalted with Everlook",143660,42000,0,58455,5,2
+143667,"[DNT] Honored with Bloodsail Buccaneers",143660,9000,0,58456,6,2
+143668,"[DNT] Exalted with Darkmoon Faire",143660,42000,0,8823,7,2
 127039,"Purchase 6 bank slots",127038,6,0,2002,0,1
 127038,,0,0,4,0,0,0
 123652,,0,0,8,0,0,0

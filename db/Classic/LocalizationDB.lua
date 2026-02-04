@@ -10295,28 +10295,33 @@ local achievementCriterias = {
 	},
 	[58452] = {
 		name = "[DNT] Exalted with Gadgetzan",
-		type = 8,
-		asset = 17522,
+		amount = 42000,
+		type = 46,
+		asset = 369,
 	},
 	[58453] = {
 		name = "[DNT] Exalted with Ratchet",
-		type = 8,
-		asset = 17521,
+		amount = 42000,
+		type = 46,
+		asset = 470,
 	},
 	[58454] = {
 		name = "[DNT] Exalted with Booty Bay",
-		type = 8,
-		asset = 17518,
+		amount = 42000,
+		type = 46,
+		asset = 21,
 	},
 	[58455] = {
 		name = "[DNT] Exalted with Everlook",
-		type = 8,
-		asset = 17520,
+		amount = 42000,
+		type = 46,
+		asset = 577,
 	},
 	[58456] = {
 		name = "[DNT] Honored with Bloodsail Buccaneers",
-		type = 8,
-		asset = 17523,
+		amount = 9000,
+		type = 46,
+		asset = 87,
 	},
 };
 L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
