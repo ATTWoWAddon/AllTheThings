@@ -42,7 +42,6 @@ jobs:
         with:
            fetch-depth: 100
            fetch-tags: true
-           ref: ${{ github.ref }}  # https://github.com/actions/checkout/issues/1467
 
       - name: Reset to SHA that triggered the workflow
         if: steps.release_type.outputs.release_type == 'alpha'
