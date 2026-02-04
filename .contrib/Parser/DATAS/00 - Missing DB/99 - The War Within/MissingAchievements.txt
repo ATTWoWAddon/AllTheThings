@@ -91,7 +91,6 @@ ach(61854),	-- The Midnight Explorer
 ach(61855),	-- Explore Eversong Woods \\ Explore Eversong Woods - Placeholder
 ach(61856),	-- Explore Zul'Aman \\ Explore Zul'Aman - Placeholder
 ach(61857),	-- Explore Voidstorm \\ Explore Voidstorm - Placeholder
-ach(61858),	-- Light of the Party
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64124
 ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)

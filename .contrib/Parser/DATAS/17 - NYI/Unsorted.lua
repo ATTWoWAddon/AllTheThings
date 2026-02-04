@@ -3876,9 +3876,6 @@ root(ROOTS.Unsorted, {
 			i(265061),	-- Whispering Rift Residue
 			i(265062),	-- Nullflare Residue
 
-			-- Important Misc
-			i(265071),	-- Gleaming Sunmote
-
 			-- Cosmetic
 			i(265072),	-- Amani Fangstitch Quiver
 
