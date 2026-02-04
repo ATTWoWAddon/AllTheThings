@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #else
 		["icon"] = 462671,
 		-- #endif
+		["maps"] = { 218 },	-- Ruins of Gilneas City
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			explorationHeader({

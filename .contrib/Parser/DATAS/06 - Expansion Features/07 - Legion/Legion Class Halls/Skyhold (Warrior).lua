@@ -969,7 +969,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(249458, {	-- Replica Forge of Odyn (DECOR!)
 								["sourceAchievement"] = 60973,	-- Legendary Research of the Valarjar
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 2500 } },
 							}),
 							i(257396, {	-- Replica Saga of the Valarjar (DECOR!)
 								["sourceAchievement"] = 60992,	-- Raise an Army for Skyhold

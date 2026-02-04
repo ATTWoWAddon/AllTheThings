@@ -133,6 +133,7 @@ root(ROOTS.Housing, {
 		["groups"] = {
 			i(248631),	-- Azsharan Firespear Tree (DECOR!)
 			i(248630),	-- Barrens Hosta Bush (DECOR!)
+			i(266238, { ["timeline"] = { ADDED_12_0_0 } }),	-- Cragthorn Highlands Large Garden Cluster (DECOR!)
 			i(260702),	-- Dry Razorwind Grass Patch (DECOR!)
 			i(248338),	-- Flat Boulder (DECOR!)
 			i(248633),	-- Flowering Durotar Cactus (DECOR!)

@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(75026, {	-- Up to the Highest Height!
 				["provider"] = { "n", 200558 },	-- Tukkaraq
-				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["coord"] = { 34.4, 58.6, THE_FORBIDDEN_REACH },
 			}),
 		})),
 	}),

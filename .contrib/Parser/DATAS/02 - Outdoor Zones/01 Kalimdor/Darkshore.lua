@@ -3179,21 +3179,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				o(319226, {	-- Darkshore Cache
-					["coords"] = {
-						{ 31.6, 85.4, DARKSHORE },
-						{ 37.3, 76.9, DARKSHORE },
-						{ 37.7, 61.7, DARKSHORE },
-						{ 37.9, 84.1, DARKSHORE },
-						{ 38.4, 60.6, DARKSHORE },
-						{ 39.6, 62.2, DARKSHORE },
-						{ 40.2, 73.7, DARKSHORE },
-						{ 41.8, 84.4, DARKSHORE },
-						{ 43.6, 81.2, DARKSHORE },
-						{ 44.2, 60.0, DARKSHORE },
-					},
-					["timeline"] = { ADDED_8_1_0 },
-				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
 					["provider"] = { "o", 408802 },	-- Gnarled Harpoon
