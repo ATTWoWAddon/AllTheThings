@@ -540,7 +540,7 @@ app.SearchAndOpen = function(search)
 	end
 
 	-- expand the hierarchy to each search result
-	local DGU = app.DirectGroupUpdate
+	local DGU = app.DirectGroupRefresh
 	local GetRelative = app.GetRelativeRawWithField
 	local windows = {}
 	local window, o

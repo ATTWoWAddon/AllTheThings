@@ -552,10 +552,10 @@ local function DirectGroupRefresh(group, immediate)
 	if window then
 		if immediate then
 			-- app.PrintDebug("DGR:Refresh:Now",group.hash,window.Suffix)
-			Callback(window.Refresh, window)
+			Callback(window.Update, window)
 		else
 			-- app.PrintDebug("DGR:Refresh:Delay",group.hash,window.Suffix)
-			DelayedCallback(window.Refresh, DGUDelay, window)
+			DelayedCallback(window.Update, DGUDelay, window)
 		end
 	else
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!")
@@ -566,7 +566,7 @@ local function DirectGroupRefresh(group, immediate)
 		-- in this situation
 		local window = app.Windows.list
 		if window then
-			DelayedCallback(window.Refresh, DGUDelay, window)
+			DelayedCallback(window.Update, DGUDelay, window)
 		end
 	end
 end
