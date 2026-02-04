@@ -68,6 +68,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(42024, {	-- Strategist: The War Within Season 3
 				i(242636),	-- Astral Legend's Pennant (TOY!)
+				title(539, {	-- Strategist <Name>
+					["collectible"] = false,
+				}),
 			}),
 			-- Solo
 			ach(42023, {	-- Legend: The War Within Season 3

@@ -67,6 +67,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(61194, {	-- Strategist: Midnight Season 1
 				i(255879),	-- Galactic Legend's Pennant (Cosmetic!)
+				title(539, {	-- Strategist <Name>
+					["collectible"] = false,
+				}),
 			}),
 			-- Solo
 			ach(61190, {	-- Legend: Midnight Season 1

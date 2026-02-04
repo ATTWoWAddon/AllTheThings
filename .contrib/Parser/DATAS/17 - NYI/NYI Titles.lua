@@ -73,9 +73,11 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		})),
 
 		-- 10.2.7
+		-- #if BEFORE 11.0.0
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			title(539),	-- Mistrunner
+			title(539),	-- Mistrunner <Name>
 		})),
+		-- #endif
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.1.5
