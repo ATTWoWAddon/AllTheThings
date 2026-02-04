@@ -93,7 +93,7 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Never Implemented"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hat" then
-				app:GetWindow("Hiddent Achievement Triggers"):ProcessCommand(args, params);
+				app:GetWindow("Hidden Achievement Triggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hct" then
 				app:GetWindow("Hidden Currency Triggers"):ProcessCommand(args, params);

@@ -3,9 +3,9 @@ local _, app = ...;
 
 -- Implementation
 local HiddenWindowSuffixes = {
-	"Hiddent Achievement Triggers",
-	"Hiddent Currency Triggers",
-	"Hiddent Quest Triggers",
+	"Hidden Achievement Triggers",
+	"Hidden Currency Triggers",
+	"Hidden Quest Triggers",
 	"Never Implemented",
 	"Sourceless",
 	"Unsorted",

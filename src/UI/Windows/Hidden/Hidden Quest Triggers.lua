@@ -3,7 +3,7 @@ local _, app = ...;
 local L = app.L;
 
 -- Implementation
-app:CreateWindow("Hiddent Quest Triggers", {
+app:CreateWindow("Hidden Quest Triggers", {
 	Commands = { "atthqt", "atthqts" },
 	HideFromSettings = true,
 	Preload = true,

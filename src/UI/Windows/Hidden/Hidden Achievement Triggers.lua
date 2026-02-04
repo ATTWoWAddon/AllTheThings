@@ -3,7 +3,7 @@ local _, app = ...;
 local L = app.L;
 
 -- Implementation
-app:CreateWindow("Hiddent Achievement Triggers", {
+app:CreateWindow("Hidden Achievement Triggers", {
 	Commands = { "atthat", "atthats" },
 	HideFromSettings = true,
 	Preload = true,
