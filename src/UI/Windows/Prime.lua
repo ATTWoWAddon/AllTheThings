@@ -128,6 +128,11 @@ app:CreateWindow("Prime", {
 		app.ToggleMainList = function()
 			self:Toggle();
 		end
+	end,
+	OnLoad = function(self)
+		self:Rebuild();
+	end,
+	OnRebuild = function(self)
 		self:SetData(app:GetDataCache());
 	end,
 	OnUpdate = function(self, ...)
