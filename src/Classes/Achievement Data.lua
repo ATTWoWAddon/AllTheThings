@@ -615,9 +615,11 @@ end
 app.AddEventHandler("OnNewPopoutGroup", function(group)
 	if group.GetRelatedThings then
 		local relatedThingsGroup = app.CreateRawText("Related Things", {
-			["description"] = "The following contains things that may be related or relevant to the content.",
-			["icon"] = 133785,
-			["g"] = {},
+			description = "The following contains things that may be related or relevant to the content.",
+			sourceIgnored = true,
+			skipFull = true,
+			icon = 133785,
+			g = {},
 		});
 		local relatedThings = {};
 		group.GetRelatedThings(group, relatedThings);
