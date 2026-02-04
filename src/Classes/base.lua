@@ -124,7 +124,7 @@ local DefaultFields = {
 	end,
 	-- Default text should be a valid link or name
 	["text"] = function(t)
-		return TryColorizeName(t, t.link or t.name)
+		return t.link or TryColorizeName(t, t.name)
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 	["modItemID"] = function(t)
