@@ -1748,7 +1748,7 @@ local function CreateRow(container, rows, i)
 end
 
 -- Window Creation
-local AllWindowSettings;
+local AllWindowSettings, AllSettingsApplied;
 local function ApplySettingsForWindow(self, windowSettings)
 	local oldRecordSettings = self.RecordSettings;
 	self.RecordSettings = app.EmptyFunction;
@@ -1941,6 +1941,7 @@ app.AddEventHandler("OnInit", function()
 	-- Okay, now load Prime settings last.
 	app.Windows.Prime = primeWindow;
 	LoadSettingsForWindow(primeWindow);
+	AllSettingsApplied = true;
 
 	-- Okay, NOW apply visible to any Built windows
 	for name, window in pairs(app.Windows) do
@@ -2836,7 +2837,7 @@ local function BuildWindow(suffix)
 
 	-- If window settings were already loaded, then load this window's definition now
 	-- Windows created after startup would otherwise fail to load their definition.
-	if AllWindowSettings then
+	if AllWindowSettings and AllSettingsApplied then
 		LoadSettingsForWindow(window);
 	end
 
