@@ -39,13 +39,12 @@ jobs:
       - name: Checkout code
         if: steps.release_type.outputs.release_type == 'alpha'
         uses: actions/checkout@v6
-        with:
-           fetch-depth: 100
-           fetch-tags: true
 
       - name: Reset to SHA that triggered the workflow
         if: steps.release_type.outputs.release_type == 'alpha'
-        run: git reset --hard ${{ github.sha }}
+        run: |
+            git fetch --depth=300
+            git reset --hard ${{ github.sha }}
 
       - name: Check for changes since last tag
         id: check_changes
@@ -135,13 +134,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-           fetch-depth: 100
-           fetch-tags: true
-           ref: ${{ github.ref }}  # https://github.com/actions/checkout/issues/1467
 
       - name: Reset to SHA that triggered the workflow
-        run: git reset --hard ${{ github.sha }}
+        run: |
+            git fetch --depth=300
+            git reset --hard ${{ github.sha }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v7
