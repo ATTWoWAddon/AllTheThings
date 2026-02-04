@@ -90,16 +90,16 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Unsorted"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "nyi" then
-				app:GetWindow("NeverImplemented"):ProcessCommand(args, params);
+				app:GetWindow("Never Implemented"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hat" then
-				app:GetWindow("HiddenAchievementTriggers"):ProcessCommand(args, params);
+				app:GetWindow("Hiddent Achievement Triggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hct" then
-				app:GetWindow("HiddenCurrencyTriggers"):ProcessCommand(args, params);
+				app:GetWindow("Hidden Currency Triggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "hqt" then
-				app:GetWindow("HiddenQuestTriggers"):ProcessCommand(args, params);
+				app:GetWindow("Hidden Quest Triggers"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "sourceless" then
 				app:GetWindow("Sourceless"):ProcessCommand(args, params);
