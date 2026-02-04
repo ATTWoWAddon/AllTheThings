@@ -75,7 +75,7 @@ app:CreateWindow("Prime", {
 				app:GetWindow("list"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "nwp" then
-				app:GetWindow("NWP"):ProcessCommand(args, params);
+				app:GetWindow("New With Patch"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "awp" then
 				app:GetWindow("Added With Patch"):ProcessCommand(args, params);
