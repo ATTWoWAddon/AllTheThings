@@ -39,6 +39,8 @@ jobs:
       - name: Checkout code
         if: steps.release_type.outputs.release_type == 'alpha'
         uses: actions/checkout@v6
+        with:
+           fetch-depth: 300
 
       - name: Reset to SHA that triggered the workflow
         if: steps.release_type.outputs.release_type == 'alpha'
@@ -69,6 +71,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+           fetch-depth: 300
 
       - name: Reset to SHA that triggered the workflow
         run: git reset --hard ${{ github.sha }}
