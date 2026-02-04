@@ -2312,7 +2312,7 @@ local FieldDefaults = {
 		end
 	end,
 	OnInactiveAlphaChanged = function(self, value)
-		value = tonumber(value) or app.Settings:GetTooltipSetting("InactiveWindowAlpha")
+		value = tonumber(value)
 		if value >= 1 then
 			self.__ALPHA = 1
 			self:SetScript("OnUpdate", nil);
@@ -2442,7 +2442,10 @@ local function BuildWindow(suffix)
 		window:Redraw()
 	end, true)
 	window:AddEventHandler("OnWindowCreated", function()
-		window:OnInactiveAlphaChanged()
+		-- ugh the sequencing of things is still so wacky. windows being created before settings exist is still happening
+		if app.Settings._Initialize then
+			window:OnInactiveAlphaChanged(app.Settings:GetTooltipSetting("InactiveWindowAlpha"))
+		end
 	end, true)
 	local eventHandlers = definition.EventHandlers or DefaultEventHandlers
 	if eventHandlers then
