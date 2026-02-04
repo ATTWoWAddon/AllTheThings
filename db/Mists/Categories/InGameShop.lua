@@ -2,14 +2,14 @@
 local appName, _ = ...;
 local ach,crit,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
 _.Categories.InGameShop={
-h(-12,{u=3,g={
-ach(6849,{awp=80300,providers={{"i",85870}},rwp=50407,u=2}),
-ach(6848,{awp=80300,providers={{"i",85871}},rwp=50407,u=2})}}),
+h(-12,{awp=80300,u=3,g={
+ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
+ach(6848,{providers={{"i",85871}},rwp=50407,u=2})}}),
 flt(101,{u=3,g={
 p(1363,{b=1,itemID=106240,npcID=74402,q=3,spellID=149787,u=1}),
 p(1248,{b=1,itemID=98550,npcID=71488,q=3,spellID=142880,u=1}),
-p(1117,{b=1,itemID=92707,npcID=68267,q=3,spellID=134538,u=1,g={
-crit(23596,{achID=8397,awp=50400,id=6,pb=1})}}),
+p(1117,{awp=50400,b=1,itemID=92707,npcID=68267,pb=1,q=3,spellID=134538,u=1,g={
+crit(23596,{achID=8397,id=6,pb=1})}}),
 p(4273,{awp=50500,b=1,itemID=209877,npcID=211012,q=3,spellID=423843,u=3}),
 p(4236,{awp=50500,b=1,itemID=204982,npcID=200900,q=3,spellID=407786,u=3}),
 p(4235,{awp=50500,b=1,itemID=200060,npcID=196534,q=3,spellID=388541,u=3}),
@@ -20,7 +20,7 @@ p(4585,{awp=50500,b=1,itemID=224002,npcID=224065,q=3,u=3}),
 p(4685,{awp=50500,b=1,itemID=231312,npcID=232536,q=3,u=3}),
 p(316,{awp=40100,b=1,itemID=70099,npcID=53623,q=3,rwp=80300,spellID=99578,u=2}),
 i(69847,{awp=40100,b=1,f=101,q=3,rwp=40200,u=2}),
-p(311,{awp=40200,itemID=72068,npcID=53283,q=3,rwp=50407,spellID=98736,u=2,g={
+p(311,{awp=40200,itemID=72068,npcID=53283,pb=1,q=3,rwp=50407,spellID=98736,u=2,g={
 crit(23740,{achID=8397,awp=50400,id=11,pb=1})}}),
 p(245,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49662,npcID=36908,q=3,rwp=80300,spellID=69535,u=2}),
 p(249,{awp=30202,b=1,itemID=49693,npcID=36979,q=3,rwp=100002,spellID=69677,u=2}),
@@ -30,10 +30,10 @@ p(296,{awp=40003,b=1,itemID=68618,npcID=51601,q=3,r=2,rwp=80300,spellID=95786,u=
 p(298,{awp=40003,b=1,itemID=68619,npcID=51649,q=3,r=1,rwp=80300,spellID=95909,u=2}),
 p(248,{awp=30202,b=1,itemID=49665,npcID=36911,q=3,rwp=100002,spellID=69541,u=2}),
 p(246,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49663,npcID=36909,q=3,rwp=80300,spellID=69536,u=2})}}),
-flt(55,{description="Only available in the Asian In-Game Shop.",u=3,g={
-i(103557,{awp=50400,b=1,f=55,q=4,rwp=60002,u=3}),
-i(105911,{awp=50400,b=1,q=4,rwp=60002,u=3}),
-i(105912,{awp=50400,b=1,q=4,rwp=60002,u=3})}}),
+flt(55,{awp=50400,description="Only available in the Asian In-Game Shop.",u=3,g={
+i(103557,{b=1,f=55,q=4,rwp=60002,u=3}),
+i(105911,{b=1,q=4,rwp=60002,u=3}),
+i(105912,{b=1,q=4,rwp=60002,u=3})}}),
 flt(2,{u=3,g={
 s(134092,23705,{awp=50500,b=1,f=9,q=4,u=3}),
 s(278684,97213,{b=1,f=2,q=4,u=1}),
@@ -57,9 +57,9 @@ mnt(466977,{awp=40401,rwp=40402,u=2}),
 mnt(153489,{awp=50402,b=1,itemID=107951,lvl=20,q=4,rwp=100107,u=2}),
 mnt(134573,{awp=50100,b=1,itemID=92724,lvl=20,q=4,rwp=80100,u=2}),
 mnt(98727,{awp=40100,b=1,itemID=69846,lvl=20,q=4,rwp=100002,u=2})}}),
-flt(102,{u=3,g={
-toy(184871,{awp=50500,b=1,q=3,u=3}),
-toy(198647,{awp=50500,b=1,q=4,u=3}),
-toy(33219,{awp=50500,b=1,q=3,u=3}),
-toy(32542,{awp=50500,b=1,q=3,u=3}),
-toy(38233,{awp=50500,b=1,q=3,u=3})}})};
+flt(102,{awp=50500,u=3,g={
+toy(184871,{b=1,q=3,u=3}),
+toy(198647,{b=1,q=4,u=3}),
+toy(33219,{b=1,q=3,u=3}),
+toy(32542,{b=1,q=3,u=3}),
+toy(38233,{b=1,q=3,u=3})}})};

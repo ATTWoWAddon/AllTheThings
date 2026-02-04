@@ -924,8 +924,8 @@ o(180164,{maps={337},rwp=40003}),
 o(1623,{description="Can be found on uneven terrain and mountain sides.",maps={1417,1434,1437,1441,1442}})}}),
 flt(50,{
 i(11020,{b=1,cost={{"i",11022,1},{"i",11018,2}},q=1,rwp=40003,g={
-i(11024,{b=1,q=1,rwp=40003,g={
-i(11040,{q=1,rwp=40003})}})}})})}}),
+i(11024,{b=1,q=1,g={
+i(11040,{q=1})}})}})})}}),
 prof(165,{
 h(-22,{
 i(4289,{description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",q=1}),
@@ -1268,26 +1268,26 @@ i(3576,{cost={{"i",2771,1}},q=1}),
 i(6037,{cost={{"i",7911,1}},q=2})}})}}),
 prof(40,{c={4},rwp=30002,g={
 i(5530,{c={4},q=1,rwp=20001}),
-i(3775,{c={4},f=55,lvl=20,q=1,rwp=30002}),
-i(3776,{c={4},f=55,lvl=50,q=1,rwp=30002}),
-i(2892,{c={4},f=55,lvl=30,q=1,rwp=30002}),
-i(2893,{c={4},f=55,lvl=38,q=1,rwp=30002}),
-i(8984,{c={4},f=55,lvl=46,q=1,rwp=30002}),
-i(8985,{c={4},f=55,lvl=54,q=1,rwp=30002}),
-i(20844,{c={4},f=55,lvl=60,q=1,rwp=30002,u=15}),
-i(6947,{c={4},f=55,lvl=20,q=1,rwp=30002}),
-i(6949,{c={4},f=55,lvl=28,q=1,rwp=30002}),
-i(6950,{c={4},f=55,lvl=36,q=1,rwp=30002}),
-i(8926,{c={4},f=55,lvl=44,q=1,rwp=30002}),
-i(8927,{c={4},f=55,lvl=52,q=1,rwp=30002}),
-i(8928,{c={4},f=55,lvl=60,q=1,rwp=30002}),
-i(5237,{c={4},f=55,lvl=24,q=1,rwp=30002}),
-i(6951,{c={4},f=55,lvl=38,q=1,rwp=30002}),
-i(9186,{c={4},f=55,lvl=52,q=1,rwp=30002}),
-i(10918,{c={4},f=55,lvl=32,q=1,rwp=30002}),
-i(10920,{c={4},f=55,lvl=40,q=1,rwp=30002}),
-i(10921,{c={4},f=55,lvl=48,q=1,rwp=30002}),
-i(10922,{c={4},f=55,lvl=56,q=1,rwp=30002})}}),
+i(3775,{c={4},f=55,lvl=20,q=1}),
+i(3776,{c={4},f=55,lvl=50,q=1}),
+i(2892,{c={4},f=55,lvl=30,q=1}),
+i(2893,{c={4},f=55,lvl=38,q=1}),
+i(8984,{c={4},f=55,lvl=46,q=1}),
+i(8985,{c={4},f=55,lvl=54,q=1}),
+i(20844,{c={4},f=55,lvl=60,q=1,u=15}),
+i(6947,{c={4},f=55,lvl=20,q=1}),
+i(6949,{c={4},f=55,lvl=28,q=1}),
+i(6950,{c={4},f=55,lvl=36,q=1}),
+i(8926,{c={4},f=55,lvl=44,q=1}),
+i(8927,{c={4},f=55,lvl=52,q=1}),
+i(8928,{c={4},f=55,lvl=60,q=1}),
+i(5237,{c={4},f=55,lvl=24,q=1}),
+i(6951,{c={4},f=55,lvl=38,q=1}),
+i(9186,{c={4},f=55,lvl=52,q=1}),
+i(10918,{c={4},f=55,lvl=32,q=1}),
+i(10920,{c={4},f=55,lvl=40,q=1}),
+i(10921,{c={4},f=55,lvl=48,q=1}),
+i(10922,{c={4},f=55,lvl=56,q=1})}}),
 prof(393,{description="The following items can be gathered by skinning creatures out in the world.",g={
 h(-22,{
 s(158751,7005,{collectible=false,description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=57,q=1})}),
@@ -1571,8 +1571,8 @@ i(2324,{description="Can be bought from Tailoring Suppliers, as well as some Tra
 i(6261,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
-flt(50,{
-i(18258,{awp=100105,f=55,lvl=55,q=2,rwp=40003,u=1101})}),
+flt(50,{awp=100105,g={
+i(18258,{f=55,lvl=55,q=2,rwp=40003,u=1101})}}),
 flt(56,{
 i(2996,{q=1}),
 i(4339,{q=1}),

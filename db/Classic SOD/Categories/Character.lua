@@ -9,7 +9,7 @@ ach(524),
 ach(521),
 ach(520),
 ach(2358,{c={2},rwp=40003,sourceQuests={7647},g={
-crit(8907,{achID=2358,id=1,questID=9737,rwp=40003,u=1})}}),
+crit(8907,{achID=2358,id=1,questID=9737,u=1})}}),
 ach(2336,{description="Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",u=1609}),
 ach(6),
 ach(7),
@@ -24,11 +24,11 @@ flt(100,{
 ach(2142),
 ach(2141)})}),
 h(-17),
-h(-31,{
-faction(469,{collectible=false,r=2,sharedDescription="This is a hidden reputation. It might not count towards reputation achievements."}),
-faction(891,{collectible=false,r=2,sharedDescription="This is a hidden reputation. It might not count towards reputation achievements."}),
-faction(67,{collectible=false,r=1,sharedDescription="This is a hidden reputation. It might not count towards reputation achievements."}),
-faction(892,{collectible=false,r=1,sharedDescription="This is a hidden reputation. It might not count towards reputation achievements."})}),
+h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
+faction(469,{collectible=false,r=2}),
+faction(891,{collectible=false,r=2}),
+faction(67,{collectible=false,r=1}),
+faction(892,{collectible=false,r=1})}}),
 h(-11,{
 h(-12,{
 ach(891),

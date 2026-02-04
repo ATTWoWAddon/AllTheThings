@@ -3292,14 +3292,14 @@ r(19800,{itemID=16051,learnedAt=285,q=2,requireSkill=202,rwp=20003,u=2})}),
 prof(129,{
 r(7935,{itemID=6454,learnedAt=130,q=2,requireSkill=129,rwp=80001})}),
 prof(755,{awp=20005,u=17,g={
-r(25622,{awp=20005,b=1,itemID=20976,learnedAt=190,q=2,requireSkill=755,u=17}),
-r(26909,{awp=20005,itemID=21953,learnedAt=285,q=2,requireSkill=755,u=17}),
-r(26896,{awp=20005,itemID=21947,learnedAt=250,q=2,requireSkill=755,u=17}),
-r(26873,{awp=20005,itemID=21940,learnedAt=200,q=2,requireSkill=755,u=17}),
-r(25618,{awp=20005,itemID=20974,learnedAt=160,q=2,requireSkill=755,u=17}),
-r(26900,{awp=20005,itemID=21949,learnedAt=260,q=2,requireSkill=755,u=17}),
-r(26887,{awp=20005,itemID=21945,learnedAt=245,q=2,requireSkill=755,u=17}),
-r(26882,{awp=20005,itemID=21944,learnedAt=235,q=2,requireSkill=755,u=17})}}),
+r(25622,{b=1,itemID=20976,learnedAt=190,q=2,requireSkill=755,u=17}),
+r(26909,{itemID=21953,learnedAt=285,q=2,requireSkill=755,u=17}),
+r(26896,{itemID=21947,learnedAt=250,q=2,requireSkill=755,u=17}),
+r(26873,{itemID=21940,learnedAt=200,q=2,requireSkill=755,u=17}),
+r(25618,{itemID=20974,learnedAt=160,q=2,requireSkill=755,u=17}),
+r(26900,{itemID=21949,learnedAt=260,q=2,requireSkill=755,u=17}),
+r(26887,{itemID=21945,learnedAt=245,q=2,requireSkill=755,u=17}),
+r(26882,{itemID=21944,learnedAt=235,q=2,requireSkill=755,u=17})}}),
 prof(165,{
 r(3779,{itemID=4301,learnedAt=200,q=3,requireSkill=165}),
 r(3771,{itemID=4297,learnedAt=150,q=2,requireSkill=165}),
@@ -5721,9 +5721,9 @@ i(31952,{awp=20100,q=2}),
 i(5758,{q=2}),
 i(4632,{q=2}),
 i(43575,{awp=30002,q=1,g={
-s(174858,43611,{awp=30002,f=25,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11}}),
-i(43612,{awp=30002,f=36,lvl=80,q=4,rwp=50004}),
-s(174860,43613,{awp=30002,f=20,lvl=80,q=4})}}),
+s(174858,43611,{f=25,lvl=80,q=4,races={1,2,3,4,5,6,7,8,10,11}}),
+i(43612,{f=36,lvl=80,q=4,rwp=50004}),
+s(174860,43613,{f=20,lvl=80,q=4})}}),
 i(4638,{q=2,sym={{"select","itemID",21947,21945,16215,11225,16218,11208,8390,8387,8389,14467,10320,10302,10315,7993,7990,7989,12683,9295,3395}}}),
 i(4637,{q=2,sym={{"select","itemID",11204,11202,8387,8386,10312,10300,8385,10301,7992,7975,7976,3874,8029,9295,10603,10606}}}),
 i(4636,{q=2,sym={{"select","itemID",11167,11165,7085,7086,5974,4300,10300,4353,8385,10301,3874,3869,3830,3831,10601,4416,4417,10606,4414}}}),
@@ -5739,6 +5739,6 @@ x(3,{
 i(37674,{coords={{47.8,49.4,115}},crs={27539},description="If only they would have read this."}),
 flt(55,{
 i(40202,{f=55,lvl=75,q=1})}),
-flt(102,{
-toy(36863,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1}),
-toy(36862,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1})})})}})};
+flt(102,{awp=30002,g={
+toy(36863,{description="Can be pickpocketed from Northrend humanoids.",q=1}),
+toy(36862,{description="Can be pickpocketed from Northrend humanoids.",q=1})}})})}})};

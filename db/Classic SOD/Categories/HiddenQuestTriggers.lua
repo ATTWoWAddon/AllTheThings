@@ -10,12 +10,12 @@ m(1414,{maps={1464},g={
 m(1413,{
 q(55296,{type="hqt"})})}}),
 m(1415,{awp=11101,maps={1463},g={
-m(1434,{awp=11101,g={
+m(1434,{
 q(7908,{awp=11201,type="hqt"}),
-q(618,{awp=11101,type="hqt"}),
-q(614,{awp=11101,type="hqt"}),
+q(618,{type="hqt"}),
+q(614,{type="hqt"}),
 q(615,{awp=11201,type="hqt"}),
-q(620,{awp=11201,type="hqt"})}})}}),
+q(620,{awp=11201,type="hqt"})})}}),
 q(6842,{type="hqt"}),
 q(9611,{type="hqt"}),
 q(236,{type="hqt"})}),

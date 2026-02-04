@@ -52,6 +52,8 @@ L.ADDITIONAL_LABEL = "Additional Information";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
+L.ADJUST_ROW_INDENTS_CHECKBOX = "Adjust Row Indents";
+L.ADJUST_ROW_INDENTS_TOOLTIP = "Set whether or not to adjust the indent for rows based on the non-header row with the lowest indent.\n\nDefault: True";
 L.AFTER_REFRESH = "After Refresh";
 L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
@@ -196,7 +198,7 @@ L.COORDINATES = "Coordinates";
 L.COST = "Cost";
 L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
 L.COST_ICON = "|T" .. _.asset("Currency") .. ":0|t";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeCurrency|r";
+L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedade" .. BONUS_ROLL_REWARD_CURRENCY .. "|r";
 L.COST_TOTAL = "Total Cost";
 L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
 L.CREATURE_ID = "Creature ID";
@@ -375,6 +377,8 @@ L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Enable this setting if you want to
 L.ILLUSION_ID = "Illusion ID";
 L.ILLUSIONS_CHECKBOX = "Illusions";
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
+L.INACTIVE_WINDOW_ALPHA_LABEL = "Inactive Window Alpha";
+L.INACTIVE_WINDOW_ALPHA_TOOLTIP = "Set an alpha to use for inactive windows.\n\nDefault: 1";
 L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "Incomplete|r";
@@ -505,7 +509,7 @@ L.NOT_COLLECTED_ICON = "|T" .. _.asset("unknown") .. ":0|t";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Except NPCs";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Enable this option to ignore rendering NPC tooltips while in combat.";
 L.NOT_TRADEABLE = "Not Tradeable";
-L.NOTHING_TO_SELECT_FROM = "There was nothing collectible (according to current Settings) to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
+L.NOTHING_TO_SELECT_FROM = "There was nothing collectible (according to current Settings) to randomly select from.";
 L.NPC = "NPC";
 L.NPC_ID = "NPC ID";
 L.OBJECT = "Object";
@@ -608,6 +612,7 @@ L.QUESTS_HIDDEN_TRACKER_CHECKBOX = "+HQT";
 L.QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "Enable this option to specifically include Hidden Quest Tracking (HQT) completion.\n\nHQT are those QuestID's which are invisible to Players and used behind-the-scenes to monitor character/account progress or status in various situations.\n\nYou probably don't care to track these. Right? I mean you're not crazy, I'm sure ...";
 L.QUESTS_LOCKED_CHECKBOX = "+Locked";
 L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
+L.RACE_ID = "Race ID";
 L.RACE_LOCKED = "Race Locked";
 L.RAID = RAID;
 L.RAID_ASSISTANT = "Raid Assistant";
@@ -773,7 +778,7 @@ L.SYMLINK = "Sym-Link";
 L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
 L.SYNC_PAGE = "Sync";
 L.TELEPORT_TO_FROM_DUNGEON = "Teleport to/from Dungeon";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.";
+L.TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance when using Dungeon Group Finder.";
 L.THING_UNTIL = " THING UNTIL ";
 L.THINGS_UNTIL = " THINGS UNTIL ";
 L.THIS_IS_BREADCRUMB = "This is a breadcrumb quest.";
@@ -950,6 +955,7 @@ _.HeaderConstants = {
 	COMMON_VENDOR_ITEMS = -22,
 	CRAFTED_ITEMS = -23,
 	DARKMOON_FAIRE_HEADER = -37,
+	DROPS = -27,
 	EXPANSION_PRELAUNCH = -103,
 	EXPLORATION = -30,
 	FACTIONS = -31,
@@ -987,7 +993,7 @@ _.HeaderConstants = {
 	ZONE_DROPS = -63,
 };
 _.HeaderData = {
-	FILLNPCS = {[-698]=1,[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-22]=1,[-19]=1},
+	FILLNPCS = {[-698]=1,[-98]=1,[-95]=1,[-94]=1,[-93]=1,[-90]=1,[-63]=1,[-47]=1,[-27]=1,[-22]=1,[-19]=1},
 };
 localize(L.HEADER_NAMES, {
 	[-11] = "New Character",
@@ -998,6 +1004,7 @@ localize(L.HEADER_NAMES, {
 	[-22] = "Common Vendor Items",
 	[-23] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,
 	[-25] = "Demon Trainer",
+	[-27] = "Drops",
 	[-30] = "Exploration",
 	[-31] = FACTION,
 	[-32] = "Flight Paths",
@@ -1135,6 +1142,7 @@ localize(L.HEADER_ICONS, {
 	[-22] = 133785,
 	[-23] = _.asset("category_crafting"),
 	[-25] = 133738,
+	[-27] = _.asset("category_worlddrops"),
 	[-30] = _.asset("category_exploration"),
 	[-31] = _.asset("category_factions"),
 	[-32] = _.asset("category_flightpaths"),
@@ -1305,17 +1313,17 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=2,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=9,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=6,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=13,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=5,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=3,["weekday"]=1,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=7,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=14,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["remappedID"]=374})
 });
 
 -- Filter Database Module
@@ -4630,7 +4638,7 @@ local achievements = {
 		description = "Raise your reputation to Honored with the Bloodsail Buccaneers, and Exalted with Booty Bay, Everlook, Gadgetzan, Ratchet, Darkmoon Faire, Ravenholdt, and Shen'dralar.",
 		icon = 236206,
 		category = 81,
-		criteria = {8818,8821,8822,8823,8824,8825,8820,8819},
+		criteria = {58452,58453,58454,8824,8825,58455,58456,8823},
 	},
 	[2357] = {
 		name = "Dreadsteed of Xoroth",
@@ -10072,50 +10080,20 @@ local achievementCriterias = {
 		type = 43,
 		asset = 1557,
 	},
-	[8818] = {
-		name = "Honored with Bloodsail Buccaneers",
-		amount = 9000,
-		type = 46,
-		asset = 87,
-	},
-	[8819] = {
-		name = "Exalted with Booty Bay",
-		amount = 42000,
-		type = 46,
-		asset = 21,
-	},
-	[8820] = {
-		name = "Exalted with Everlook",
-		amount = 42000,
-		type = 46,
-		asset = 577,
-	},
-	[8821] = {
-		name = "Exalted with Gadgetzan",
-		amount = 42000,
-		type = 46,
-		asset = 369,
-	},
-	[8822] = {
-		name = "Exalted with Ratchet",
-		amount = 42000,
-		type = 46,
-		asset = 470,
-	},
 	[8823] = {
-		name = "Exalted with Darkmoon Faire",
+		name = "[DNT] Exalted with Darkmoon Faire",
 		amount = 42000,
 		type = 46,
 		asset = 909,
 	},
 	[8824] = {
-		name = "Exalted with Ravenholdt",
+		name = "[DNT] Exalted with Ravenholdt",
 		amount = 42000,
 		type = 46,
 		asset = 349,
 	},
 	[8825] = {
-		name = "Exalted with Shen'dralar",
+		name = "[DNT] Exalted with Shen'dralar",
 		amount = 42000,
 		type = 46,
 		asset = 809,
@@ -10314,6 +10292,31 @@ local achievementCriterias = {
 		name = "Onyxia",
 		type = 0,
 		asset = 10184,
+	},
+	[58452] = {
+		name = "[DNT] Exalted with Gadgetzan",
+		type = 8,
+		asset = 17522,
+	},
+	[58453] = {
+		name = "[DNT] Exalted with Ratchet",
+		type = 8,
+		asset = 17521,
+	},
+	[58454] = {
+		name = "[DNT] Exalted with Booty Bay",
+		type = 8,
+		asset = 17518,
+	},
+	[58455] = {
+		name = "[DNT] Exalted with Everlook",
+		type = 8,
+		asset = 17520,
+	},
+	[58456] = {
+		name = "[DNT] Honored with Bloodsail Buccaneers",
+		type = 8,
+		asset = 17523,
 	},
 };
 L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
@@ -10845,6 +10848,295 @@ local worldMapOverlayData = {
 };
 L.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData;
 
+-- Automatic Types
+if (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then
+L.ITEM_NAMES = {
+	[20946] = "Tactical Task Briefing III",
+	[21246] = "Combat Task Briefing I",
+	[21247] = "Combat Task Briefing II",
+}
+L.QUEST_NAMES = {
+	[1] = "The \"Chow\" Quest (123)aa",
+	[73] = "<TXT> No Reward",
+	[137] = "<NYI> <TXT> Stormwind Commendation",
+	[241] = "<TEST> HEY MISTER WILSON!",
+	[242] = "<UNUSED>",
+	[259] = "<UNUSED>",
+	[260] = "<UNUSED>",
+	[352] = "<UNUSED>",
+	[402] = "Sirra is Busy",
+	[406] = "<UNUSED>",
+	[462] = "<UNUSED>",
+	[490] = "<UNUSED>",
+	[497] = "<UNUSED>",
+	[534] = "<UNUSED>",
+	[548] = "[DEPRECATED] <NYI> <TXT> Bloodstone Pendant",
+	[612] = "<UNUSED>",
+	[636] = "Legends of the Earth <NYI>",
+	[708] = "The Black Box",
+	[774] = "<UNUSED>",
+	[785] = "A Strategic Alliance",
+	[787] = "The New Horde",
+	[807] = "<UNUSED>",
+	[810] = "<UNUSED>",
+	[811] = "<UNUSED>",
+	[814] = "<UNUSED>",
+	[820] = "<UNUSED>",
+	[839] = "<UNUSED>",
+	[856] = "<UNUSED>",
+	[912] = "Stonesplinter Trogg Disguise",
+	[946] = "<UNUSED>",
+	[988] = "<UNUSED>",
+	[989] = "<UNUSED>",
+	[999] = "When Dreams Turn to Nightmares",
+	[1005] = "What Lurks Beyond",
+	[1006] = "What Lies Beyond",
+	[1099] = "Goblins Win!",
+	[1127] = "Fool's Stout",
+	[1155] = "<NYI> <TXT> bug crystal side quest",
+	[1156] = "<NYI> <TXT> speak to alchemist pestlezugg",
+	[1157] = "<NYI> <TXT> pestlezugg needs items",
+	[1158] = "<NYI> <TXT> speak to rabine saturna",
+	[1161] = "<NYI> <TXT> gossip shade of ambermoon",
+	[1162] = "<NYI> <TXT> speak to hamuul runetotem",
+	[1163] = "<NYI> <TXT> speak to tyrande whisperwind",
+	[1174] = "Gnomes Win!",
+	[1263] = "The Burning Inn <CHANGE TO GOSSIP>",
+	[1272] = "Finding Reethe <CHANGE INTO GOSSIP>",
+	[1277] = "<nyi> <TXT> The Centaur Hoofprints",
+	[1278] = "<nyi> <TXT> The Grim Totem Clan",
+	[1279] = "<nyi> <TXT>The Centaur Hoofprints",
+	[1280] = "<nyi> <TXT>The Centaur Hoofprints",
+	[1281] = "Jim's Song <CHANGE TO GOSSIP>",
+	[1283] = "Fire at the Shady Rest <CHANGE TO GOSSIP>",
+	[1288] = "<nyi> Vimes's Report",
+	[1289] = "<nyi> Vimes's Report",
+	[1290] = "<nyi> Investigating Mosarn",
+	[1291] = "<nyi> <TXT> Centaur Hoofprints",
+	[1292] = "<nyi><TXT> Centaur Hoofprints",
+	[1293] = "<nyi> <TXT> Centaur Hoofprints",
+	[1294] = "<nyi> <TXT>Centaur Sympathies",
+	[1295] = "<nyi> <TXT> Course of Action",
+	[1296] = "<nyi> <TXT> Course of Action",
+	[1297] = "<nyi> <TXT> Course of Action",
+	[1298] = "<nyi> <TXT> Thrall's Dirty Work",
+	[1299] = "<nyi> <TXT> Thrall's Dirty Work",
+	[1300] = "<nyi> <TXT> Lorn Grim Totem",
+	[1318] = "Unfinished Gordok Business",
+	[1390] = "<nyi> Oops, We Killed Them Again.",
+	[1397] = "<nyi> Saved!",
+	[1441] = "<UNUSED>",
+	[1443] = "<nyi> The Shakedown",
+	[1460] = "<UNUSED>",
+	[1461] = "<UNUSED>",
+	[1500] = "Waking Naralex",
+	[1533] = "<NYI> Call of Air",
+	[1537] = "<NYI> Call of Air",
+	[1538] = "<NYI> Call of Air",
+	[1659] = "<UNUSED>",
+	[1660] = "<UNUSED>",
+	[1662] = "<UNUSED>",
+	[1663] = "<UNUSED>",
+	[1664] = "<UNUSED>",
+	[2000] = "Rokar Bladeshadow",
+	[2018] = "Rokar's Test",
+	[2019] = "Tools of the Trade",
+	[2020] = "<UNUSED>",
+	[2058] = "<UNUSED>",
+	[2059] = "<UNUSED>",
+	[2868] = "<TXT> The Shriveled Heart",
+	[2971] = "<UNUSED>",
+	[3023] = "<UNUSED>",
+	[3064] = "<NYI> <TXT> Pirate Hats",
+	[3111] = "<UNUSED> [DEPRECATED]",
+	[3241] = "<NYI> <TXT><redux> Dreadmist Peak",
+	[3383] = "<UNUSED>",
+	[3384] = "<UNUSED>",
+	[3401] = "<UNUSED>",
+	[3403] = "<UNUSED>",
+	[3404] = "<UNUSED>",
+	[3405] = "<UNUSED>",
+	[3422] = "<UNUSED>",
+	[3423] = "<UNUSED>",
+	[3424] = "<UNUSED>",
+	[3425] = "<UNUSED>",
+	[3482] = "<NYI> <TXT> The Pocked Black Box",
+	[3515] = "<UNUSED>",
+	[3516] = "<UNUSED>",
+	[3529] = "<UNUSED>",
+	[3530] = "<UNUSED>",
+	[3531] = "<UNUSED>",
+	[3622] = "<UNUSED>",
+	[3623] = "<UNUSED>",
+	[3624] = "<UNUSED>",
+	[3885] = "<NYI> <TXT> The Gadgetzan Run",
+	[3910] = "<NYI> <TXT> The Un'Goro Run",
+	[4299] = "<NYI> <TXT>The Tomb of the Seven",
+	[4323] = "<NYI> <TXT> Get those Hyenas!!!",
+	[4541] = "<NYI> <TXT>",
+	[4905] = "<UNUSED>",
+	[5101] = "Lee's Ultimate Test Quest... of Doom!",
+	[5205] = "<UNUSED>",
+	[5207] = "<NYI> <TXT> The True Summoner",
+	[5208] = "<NYI> <TXT> The Blessing of Evil",
+	[5209] = "<UNUSED>",
+	[5303] = "<UNUSED>",
+	[5304] = "<UNUSED>",
+	[5383] = "Krastinov's Bag of Horrors",
+	[5506] = "<UNUSED>",
+	[5512] = "<UNUSED>",
+	[5516] = "<UNUSED>",
+	[5520] = "<UNUSED>",
+	[5523] = "<UNUSED>",
+	[5530] = "<NYI> <TXT> Necklace of the Dawn",
+	[5532] = "<NYI> <TXT> Ring of the Dawn ",
+	[5653] = "<NYI> Hex of Weakness",
+	[5659] = "<NYI> Touch of Weakness",
+	[5664] = "<UNUSED>",
+	[5665] = "<UNUSED>",
+	[5666] = "<UNUSED>",
+	[5667] = "<UNUSED>",
+	[5668] = "<NYI> A Blessing of Light",
+	[5669] = "<NYI> A Blessing of Light",
+	[5670] = "<NYI> A Blessing of Light",
+	[5671] = "<NYI> A Blessing of Light",
+	[5674] = "Elune's Grace",
+	[5681] = "<UNUSED>",
+	[5682] = "<UNUSED>",
+	[5683] = "<UNUSED>",
+	[5684] = "<UNUSED>",
+	[5685] = "<NYI> <TXT> The Light Protects You",
+	[5686] = "<NYI> The Light Protects You",
+	[5687] = "<NYI> The Light Protects You",
+	[5688] = "<NYI> <TXT> A Touch of Voodoo",
+	[5689] = "<NYI> A Touch of Voodoo",
+	[5690] = "<NYI> <TXT> A Touch of Voodoo",
+	[5691] = "<NYI> <TXT> In the Dark it was Created",
+	[5692] = "<NYI> In the Dark It was Created",
+	[5693] = "<NYI> In the Dark It was Created",
+	[5694] = "<UNUSED>",
+	[5695] = "<UNUSED>",
+	[5696] = "<UNUSED>",
+	[5697] = "<UNUSED>",
+	[5698] = "<NYI> <TXT> A Small Amount of Hope",
+	[5699] = "<NYI> A Small Amount of Hope",
+	[5700] = "<NYI> A Small Amount of Hope",
+	[5701] = "<NYI> <TXT> The Rites of Old",
+	[5702] = "<NYI> The Rites of Old",
+	[5703] = "<NYI> The Rites of Old",
+	[5704] = "<NYI> <TXT> Undead Priest Robe",
+	[5705] = "<NYI> No Longer a Shadow",
+	[5706] = "<NYI> No Longer a Shadow",
+	[5707] = "<NYI> <TXT> Flirting With Darkness",
+	[5708] = "<NYI> Flirting With Darkness",
+	[5709] = "<NYI> Flirting With Darkness",
+	[5710] = "<NYI> <TXT> Troll Priest Robe",
+	[5711] = "<NYI> The Lost Ways",
+	[5712] = "<NYI> The Lost Ways",
+	[6003] = "<nyi> <txt> Green With Envy",
+	[6165] = "<NYI> <TXT> Archmage Timolain's Remains",
+	[6201] = "<UNUSED> The Legacy of the Ashbringer",
+	[6202] = "<UNUSED> Good and Evil",
+	[6606] = "A Little Luck",
+	[6702] = "[DEPRECATED] <TXT> SF, RFK, GNOMER, BF",
+	[6704] = "[DEPRECATED] <TXT> SM, RFD, ULD",
+	[6706] = "[DEPRECATED] <TXT> ZUL, ST, MAR",
+	[6708] = "[DEPRECATED] <TXT> BRD, DM, BRS",
+	[6710] = "[DEPRECATED] <TXT> UBRS, STRATH, SCHOL",
+	[6841] = "<UNUSED>",
+	[6843] = "Da Foo",
+	[7221] = "Speak with Prospector Stonehewer",
+	[7222] = "Speak with Voggah Deathgrip",
+	[7384] = "<nyi> <txt> The Scale Crafters",
+	[7462] = "The Treasure of the Shen'dralar",
+	[7478] = "Libram of Rapidity",
+	[7479] = "Libram of Focus",
+	[7480] = "Libram of Protection",
+	[7521] = "Thunderaan the Windseeker",
+	[7522] = "Examine the Vessel",
+	[7561] = "Rise, Thunderfury!",
+	[7681] = "Hunter test quest",
+	[7682] = "Hunter test quest2",
+	[7741] = "Praise from the Emerald Circle <NYI> <TXT>",
+	[7788] = "Vanquish the Invaders!",
+	[7789] = "Quell the Silverwing Usurpers",
+	[7790] = "The Written Word",
+	[7869] = "test quest - do not use",
+	[7870] = "test quest2 - do not use",
+	[7871] = "Vanquish the Invaders!",
+	[7872] = "Vanquish the Invaders!",
+	[7873] = "Vanquish the Invaders!",
+	[7874] = "Quell the Silverwing Usurpers",
+	[7875] = "Quell the Silverwing Usurpers",
+	[7876] = "Quell the Silverwing Usurpers",
+	[7904] = "<UNUSED>",
+	[7906] = "Darkmoon Cards - Beast",
+	[7961] = "Waskily Wabbits!",
+	[7962] = "Wabbit Pelts",
+	[8080] = "Arathi Basin Resources!",
+	[8081] = "More Resource Crates",
+	[8123] = "Cut Arathor Supply Lines",
+	[8124] = "More Resource Crates",
+	[8152] = "REUSE",
+	[8154] = "Arathi Basin Resources!",
+	[8155] = "Arathi Basin Resources!",
+	[8156] = "Arathi Basin Resources!",
+	[8157] = "More Resource Crates",
+	[8158] = "More Resource Crates",
+	[8159] = "More Resource Crates",
+	[8160] = "Cut Arathor Supply Lines",
+	[8161] = "Cut Arathor Supply Lines",
+	[8162] = "Cut Arathor Supply Lines",
+	[8163] = "More Resource Crates",
+	[8164] = "More Resource Crates",
+	[8165] = "More Resource Crates",
+	[8230] = "Collin's Test Quest",
+	[8247] = "<UNUSED>",
+	[8248] = "<UNUSED>",
+	[8290] = "Vanquish the Invaders!",
+	[8291] = "Vanquish the Invaders!",
+	[8294] = "Quell the Silverwing Usurpers",
+	[8295] = "Quell the Silverwing Usurpers",
+	[8297] = "Arathi Basin Resources!",
+	[8298] = "More Resource Crates",
+	[8299] = "Cut Arathor Supply Lines",
+	[8300] = "More Resource Crates",
+	[8337] = "<UNUSED>",
+	[8339] = "Royalty of the Council <NYI> <TXT> UNUSED",
+	[8340] = "Twilight Signet Ring <NYI> <TXT>",
+	[8411] = "Mastering the Elements",
+	[8444] = "<NYI> <TXT> gossip shade of ambermoon",
+	[8445] = "<NYI> <TXT> gossip shade of ambermoon",
+	[8459] = "<UNUSED>",
+	[8478] = "Choose Your Weapon",
+	[8489] = "An Intact Converter",
+	[8530] = "The Alliance Needs Singed Corestones!",
+	[8531] = "The Alliance Needs More Singed Corestones!",
+	[8565] = "Past Victories in Arathi",
+	[8566] = "Past Victories in Arathi",
+	[8567] = "Past Victories in Warsong Gulch",
+	[8568] = "Past Victories in Warsong Gulch",
+	[8569] = "Past Efforts in Warsong Gulch",
+	[8570] = "Past Efforts in Warsong Gulch",
+	[8571] = "<UNUSED> Armor Kits",
+	[8617] = "The Horde Needs Singed Corestones!",
+	[8618] = "The Horde Needs More Singed Corestones!",
+	[8869] = "Sweet Serenity",
+	[8896] = "The Dwarven Spy",
+	[8973] = "REUSE",
+	[9065] = "The \"Chow\" Quest (123)aa",
+	[9296] = "reuse",
+	[9297] = "reuse",
+	[9298] = "reuse",
+	[9411] = "<UNUSED>Infused Bandages",
+	[9412] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge",
+	[9413] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge",
+	[9414] = "<UNUSED>Infused Bandages",
+	[9556] = "To The Victor...",
+	[9695] = "The Sun King's Command",
+}
+end
+
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "de" then
@@ -10928,7 +11220,6 @@ L.CONTAINS = "Enthält:";
 L.COORDINATES = "Koordinaten";
 L.COST = "Kosten";
 L.COST_DESC = "Dies zeigt eine visuelle Aufschlüsselung dessen, was benötigt wird um dieses Ding zu erhalten oder zu kaufen";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeWährung|r";
 L.CRITERIA_FOR = "Kriterium für";
 L.CURRENCY_FOR = "Währung für";
 L.CURRENCY_NEEDED_TO_BUY = "Geschätzter Betrag, der benötigt wird, um die verbleibenden Dinge zu erhalten";
@@ -11050,7 +11341,7 @@ L.NO_SEARCH_METHOD = "Keine Suchmethode festgelegt.";
 L.NOT_AVAILABLE_IN_PL = "Nicht vorhanden im Persönlicher Beute Modus.";
 L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Nicht gesammelt|r";
 L.NOT_TRADEABLE = "Nicht Handelbar";
-L.NOTHING_TO_SELECT_FROM = "Es wurde nichts für die zufällige Auswahl gefunden. Wenn 'Ad-Hoc Updates' in den Einstellungen aktiviert ist, muss die Hauptliste zuerst aktualisiert werden, (/att) bevor Ihr dieses Fenster benutzt.";
+L.NOTHING_TO_SELECT_FROM = "Es wurde nichts für die zufällige Auswahl gefunden.";
 L.OPEN_AUTOMATICALLY = "Automatisch öffnen";
 L.OPPOSITE_FACTION_EQ = "Äquivalent der gegnerischen Fraktion: ";
 L.PATREON_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Patreon zu kopieren.\n\nHier könnt Ihr sehen, wie Ihr das Addon Finanziell unterstützen könnt!";
@@ -11143,7 +11434,6 @@ L.SPLIT = "Pro Schwierigkeitsgrad";
 L.STRANGER_THINGS_LABEL = "Fremde Dinge";
 L.SYNC_CHARACTERS_TOOLTIP = "Dies zeigt alle Charaktere auf diesem Account.";
 L.TELEPORT_TO_FROM_DUNGEON = "Teleportiert zu/von Instanz";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Klicke hier um Euch von/zu Eurer derzeitigen Instanz zu teleportieren.\n\nIhr könnt die Mists of Pandaria Szenarien nutzen, um Euch auf diese Weise schnell aus Eurer aktuellen Instanz zu teleportieren.";
 L.THING_UNTIL = " DING BIS ";
 L.THINGS_UNTIL = " DINGE BIS ";
 L.THIS_IS_BREADCRUMB = "Dies ist eine Brotkrümelquest.";
@@ -13370,14 +13660,9 @@ for key,value in pairs({
 	[8740] = "Insigne der Horde",
 	[8741] = "Insigne der Allianz",
 	[8749] = "Ruinen der Scharlachroten Enklave",
-	[8818] = "Wohlwollend bei den Blutsegelbukanieren",
-	[8819] = "Ehrfürchtig in der Beutebucht",
-	[8820] = "Ehrfürchtig in der Ewigen Warte",
-	[8821] = "Ehrfürchtig in Gadgetzan",
-	[8822] = "Ehrfürchtig in Ratschet",
-	[8823] = "Ehrfürchtig auf dem Dunkelmond-Jahrmarkt",
-	[8824] = "Ehrfürchtig in Rabenholdt",
-	[8825] = "Ehrfürchtig bei den Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essenz des Feuerfürsten",
 	[8894] = "Brustplatte des Eroberers",
 	[8895] = "Brustplatte des Rächers",
@@ -13411,6 +13696,11 @@ for key,value in pairs({
 	[13371] = "Medaillon der Allianz",
 	[17023] = "Ehrfürchtig bei den Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -13483,7 +13773,6 @@ L.CONFIRM_DELETE = "\n\nÊtes-vous sûr de vouloir supprimer ce personnage ?";
 L.CONTAINS = "Contient :";
 L.COORDINATES = "Coordonnées";
 L.COST = "Coût";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeMonnaie|r";
 L.CRITERIA_FOR = "Critères de";
 L.CURRENT_SPEC = "Spécialisation actuelle";
 L.CURRENT_SPEC_DESC = "Si vous changez de talent, votre spécialisation en matière de butin change également.";
@@ -15907,14 +16196,9 @@ for key,value in pairs({
 	[8740] = "Insigne de la Horde",
 	[8741] = "Insigne de l’Alliance",
 	[8749] = "Ruines de l’enclave Écarlate",
-	[8818] = "Honoré auprès de la Voile sanglante",
-	[8819] = "Exalté auprès de Baie-du-Butin",
-	[8820] = "Exalté auprès de Long-Guet",
-	[8821] = "Exalté auprès de Gadgetzan",
-	[8822] = "Exalté auprès de Cabestan",
-	[8823] = "Exalté auprès de la foire de Sombrelune",
-	[8824] = "Exalté auprès de Ravenholdt",
-	[8825] = "Exalté auprès des Shen’dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence du seigneur du Feu",
 	[8894] = "Cuirasse de conquérant",
 	[8895] = "Cuirasse de vengeur",
@@ -15948,6 +16232,11 @@ for key,value in pairs({
 	[13371] = "Médaillon de l’Alliance",
 	[17023] = "Exalté auprès des Shen’dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -17433,14 +17722,9 @@ for key,value in pairs({
 	[8740] = "Insignia of the Horde",
 	[8741] = "Insignia of the Alliance",
 	[8749] = "Ruins of the Scarlet Enclave",
-	[8818] = "Honored with Bloodsail Buccaneers",
-	[8819] = "Exalted with Booty Bay",
-	[8820] = "Exalted with Everlook",
-	[8821] = "Exalted with Gadgetzan",
-	[8822] = "Exalted with Ratchet",
-	[8823] = "Exalted with Darkmoon Faire",
-	[8824] = "Exalted with Ravenholdt",
-	[8825] = "Exalted with Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essence of the Firelord",
 	[8894] = "Conqueror's Breastplate",
 	[8895] = "Avenger's Breastplate",
@@ -17474,6 +17758,11 @@ for key,value in pairs({
 	[13371] = "Medallion of the Alliance",
 	[17023] = "Exalted with the Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -19640,14 +19929,9 @@ for key,value in pairs({
 	[8740] = "Insígnia da Horda",
 	[8741] = "Insígnia da Aliança",
 	[8749] = "Ruínas do Enclave Escarlate",
-	[8818] = "Honrado pelos Bucaneiros da Vela Sangrenta",
-	[8819] = "Exaltado pela Angra do Butim",
-	[8820] = "Exaltado por Visteterna",
-	[8821] = "Exaltado por Geringontzan",
-	[8822] = "Exaltado pela Vila Catraca.",
-	[8823] = "Exaltado pela Feira de Negraluna",
-	[8824] = "Exaltado por Corvoforte",
-	[8825] = "Exaltado por Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Essência do Senhor do Fogo",
 	[8894] = "Peitoral do Conquistador",
 	[8895] = "Peitoral do Vingador",
@@ -19681,6 +19965,11 @@ for key,value in pairs({
 	[13371] = "Medalhão da Aliança",
 	[17023] = "Exaltado com os Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -19826,7 +20115,6 @@ L.CONTAINS_SLIDER_TOOLTIP = "Используйте для изменения ч
 L.COORDINATES = "Координаты";
 L.COST = "Стоимость";
 L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeВалюта|r";
 L.COST_TOTAL = "Полная Стоимость";
 L.COST_TOTAL_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения всех Штучек в группе.\n\nЗаметка: На данный момент без учёта Реагентов/Рецептов!";
 L.CREATURES_COUNT = "[%s Существ]";
@@ -20259,7 +20547,6 @@ L.SYMLINK = "Симлинк";
 L.SYNC_CHARACTERS_TOOLTIP = "Здесь отображаются все персонажи на Вашей учётной записи.";
 L.SYNC_PAGE = "Синхронизация";
 L.TELEPORT_TO_FROM_DUNGEON = "Телепортировать в/из Подземелья";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Нажмите здесь, чтобы телепортировать в/из Вашего текущего подземелья.\n\nВы можете использовать Сценарии Пандарии, чтобы таким образом быстро телепортироваться из текущего подземелья.";
 L.THING_UNTIL = " ШТУЧКА ДО ";
 L.THINGS_UNTIL = " ШТУЧЕК ДО ";
 L.THIS_IS_BREADCRUMB = "Это задание-\"хлебная кроха\".";
@@ -20353,6 +20640,7 @@ localize(L.HEADER_NAMES, {
 	[-19] = "Общая добыча с боссов",
 	[-22] = "Обычные предметы у Торговцев",
 	[-25] = "Наставник демонов",
+	[-27] = BATTLE_PET_SOURCE_1,
 	[-30] = "Исследование",
 	[-32] = "Точка полета",
 	[-36] = "Праздники",
@@ -21396,7 +21684,7 @@ for key,value in pairs({
 	[522] = "Добейтесь того, чтобы вас превозносила какая-либо фракция.",
 	[523] = "Добейтесь того, чтобы вас превозносили 5 фракций.",
 	[524] = "Добейтесь того, чтобы вас превозносили 10 фракций.",
-	[546] = "Купите 7 дополнительных ячеек в банке.",
+	[546] = "Купите 6 дополнительных ячеек в банке.",
 	[627] = "Исследуйте Дун Морог, открыв все его области на карте.",
 	[628] = "Победите Эдвина ван Клифа.",
 	[629] = "Победите Баззалана.",
@@ -22550,14 +22838,9 @@ for key,value in pairs({
 	[8740] = "Знак различия Орды",
 	[8741] = "Знак различия Альянса",
 	[8749] = "Руины анклава Алого ордена",
-	[8818] = "Уважение среди Пиратов Кровавого Паруса",
-	[8819] = "Превознесение в Пиратской Бухте",
-	[8820] = "Превознесение в Круговзоре",
-	[8821] = "Превознесение в Прибамбасске",
-	[8822] = "Превознесение в Кабестане",
-	[8823] = "Превознесение у ярмарки Новолуния",
-	[8824] = "Превознесение у Черного Ворона",
-	[8825] = "Превознесение у Шен'драларов",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Сущность повелителя огня",
 	[8894] = "Кираса завоевателя",
 	[8895] = "Кираса Мстителя",
@@ -22591,6 +22874,11 @@ for key,value in pairs({
 	[13371] = "Медальон Альянса",
 	[17023] = "Превознесение у шен'дралар",
 	[54579] = "Ониксия",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -24738,14 +25026,9 @@ for key,value in pairs({
 	[8740] = "호드 계급장",
 	[8741] = "얼라이언스 계급장",
 	[8749] = "붉은십자군 폐허",
-	[8818] = "붉은해적단 우호적",
-	[8819] = "무법항 확고한 동맹",
-	[8820] = "눈망루 마을 확고한 동맹",
-	[8821] = "가젯잔 확고한 동맹",
-	[8822] = "톱니항 확고한 동맹",
-	[8823] = "다크문 유랑단 확고한 동맹",
-	[8824] = "라벤홀트 암살단 확고한 동맹",
-	[8825] = "셴드랄라 확고한 동맹",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "불의 군주의 정수",
 	[8894] = "정복자의 가슴보호갑",
 	[8895] = "응징의 가슴보호갑",
@@ -24779,6 +25062,11 @@ for key,value in pairs({
 	[13371] = "얼라이언스의 메달",
 	[17023] = "셴드랄라 확고한 동맹",
 	[54579] = "오닉시아",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -25217,7 +25505,7 @@ L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No adquirido|r";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Excepto PNJ";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Habilite esta opción para ignorar la presentación de la información sobre ventanas emergentes de los NPC durante el combate.";
 L.NOT_TRADEABLE = "No comerciable";
-L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la Lista Principal se tiene que actualizar (/att) antes de usar esta ventana.";
+L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente.";
 L.NPC = "PNJ";
 L.NPC_ID = "Pnj ID";
 L.OBJECT_ID = "Objeto ID";
@@ -25465,7 +25753,6 @@ L.SYMLINK = "Enlace simbólico";
 L.SYNC_CHARACTERS_TOOLTIP = "Muestra todos los personajes en tu cuenta.";
 L.SYNC_PAGE = "Sincronización";
 L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde la mazmorra";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Haz clic aquí para teletransportarte a/desde tu instancia actual.\n\nPuedes utilizar los escenarios de Mist of Pandaria para teletransportarte fuera de la instancia en la que te encuentras.";
 L.THING_UNTIL = " COSAS HASTA ";
 L.THINGS_UNTIL = " COSAS HASTA ";
 L.THIS_IS_BREADCRUMB = "Esto es una cadena de misiones.";
@@ -25574,6 +25861,7 @@ localize(L.HEADER_NAMES, {
 	[-19] = "Botín común de jefe",
 	[-22] = "Objetos comunes entre vendedores",
 	[-25] = "Instructor de demonios",
+	[-27] = "Botín",
 	[-30] = "Exploración",
 	[-32] = "Rutas de vuelo",
 	[-36] = "Festividades",
@@ -26644,7 +26932,7 @@ for key,value in pairs({
 	[522] = "Eleva una reputación a Exaltado.",
 	[523] = "Eleva 5 reputaciones a Exaltado.",
 	[524] = "Eleva 10 reputaciones a Exaltado.",
-	[546] = "Compra 6 ranuras adicionales en el banco.",
+	[546] = "Compra 7 ranuras adicionales en el banco.",
 	[627] = "Explora Dun Morogh y descubre todas las zonas cubiertas del mapa del mundo.",
 	[628] = "Derrota a Edwin VanCleef.",
 	[629] = "Derrota a Taragaman el Hambriento.",
@@ -27798,14 +28086,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -27839,6 +28122,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -27987,7 +28275,6 @@ L.MUSIC_ROLLS_DESC = "Estos se desbloquean por personaje y actualmente no se com
 L.MUSIC_ROLLS_DESC_2 = "\n\nPrimero debes desbloquear los Rollos musicales completando la misión Poniendo el ritmo en tu fortaleza para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.";
 L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.";
 L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r";
-L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la lista principal se tiene que actualizar (/att) antes de usar esta ventana.";
 L.NPC_ID = "ID de Pnj";
 L.OBJECT_ID = "ID de objeto";
 L.ONLY_RWP = "Sólo Removido con el parche";
@@ -28056,7 +28343,6 @@ L.SPECIES_ID = "ID de las Especies";
 L.SPELL_ID = "ID del Hechizo";
 L.SYM_ROW_INFORMATION = "click derecho para ver contenido adicional que su fuente está en otra zona";
 L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde el calabozo";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "Haz click aquí para teletransportarte a/desde tu instancia actual.\n\nPuedes utilizar los escenarios de Mist of Pandaria para teletransportarte fuera de la instancia en la que te encuentras.";
 L.THIS_IS_BREADCRUMB = "Esta es una misión de exploración optativa.";
 L.TITLE_CORE = "Tropa ";
 L.TITLE_ID = "ID del Titulo";
@@ -28098,6 +28384,7 @@ localize(_.CategoryNames, {
 });
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín compartido entre los jefes",
+	[-27] = "Botin",
 	[-36] = "Fiestas",
 	[-59] = "Maestro de armas",
 	[-63] = "Botín de la zona",
@@ -29187,14 +29474,9 @@ for key,value in pairs({
 	[8740] = "Insignia de la Horda",
 	[8741] = "Insignia de la Alianza",
 	[8749] = "Ruinas de El Enclave Escarlata",
-	[8818] = "Honorable con Bucaneros Velasangre",
-	[8819] = "Exaltado con Bahía del Botín",
-	[8820] = "Exaltado con Vista Eterna",
-	[8821] = "Exaltado con Gadgetzan",
-	[8822] = "Exaltado con Trinquete",
-	[8823] = "Exaltado con la Feria de la Luna Negra",
-	[8824] = "Exaltado con Ravenholdt",
-	[8825] = "Exaltado con los Shen'dralar",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "Esencia del Señor del Fuego",
 	[8894] = "Coraza de conquistador",
 	[8895] = "Coraza del Vengador",
@@ -29228,6 +29510,11 @@ for key,value in pairs({
 	[13371] = "Medallón de la Alianza",
 	[17023] = "Exaltado con los Shen'dralar.",
 	[54579] = "Onyxia",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
@@ -29344,6 +29631,7 @@ L.BREADCRUMBS = "无关紧要";
 L.BREADCRUMBS_WARNING = "完成此任务后可能无法获得无关紧要的任务：";
 L.CACHED_RECIPES_1 = "缓存 ";
 L.CACHED_RECIPES_2 = " 已知配方！";
+L.CAMPSITE_DESC = "点击此按钮以根据缺少的内容随机选择一个营地。";
 L.CAMPSITE_ID = "营地 ID";
 L.CAMPSITES_CHECKBOX_TOOLTIP = "启用此选项以追踪战团营地的完成情况。";
 L.CATALYST = "化生台";
@@ -29396,7 +29684,6 @@ L.CONTAINS_SLIDER_TOOLTIP = "使用该功能可以自定义鼠标提示中显示
 L.COORDINATES = "坐标";
 L.COST = "花费";
 L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedade货币|r";
 L.COST_TOTAL = "总花费";
 L.COST_TOTAL_DESC = "其中包含获取或购买顶级分组内所有物品所需的直观分类。\n\n注意：目前不包括药剂/配方需求！";
 L.CREATURE_ID = "生物 ID";
@@ -29421,6 +29708,7 @@ L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n�
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
 L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
 L.DECOR_CHECKBOX_TOOLTIP = "启用此选项以跟踪战团装饰完成情况。";
+L.DECOR_DESC = "点击此按钮以根据缺少的内容随机选择一个装饰。";
 L.DECOR_ID = "装饰 ID";
 L.DELETE_CHARACTER = "右击删除此角色";
 L.DELETE_LINKED_ACCOUNT = "右击删除此链接帐号";
@@ -29511,11 +29799,13 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "启用此选项会忽略玩家等�
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "无技能等级限制";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "如果您只想查看游戏环境中可用的最高技能级别可用的内容，请禁用此设置。";
 L.FILTERS_PAGE = "过滤器";
+L.FLIGHT_PATH_DESC = "点击此按钮以根据缺少的内容随机选择一个飞行路径。";
 L.FLIGHT_PATH_ID = "飞行路线 ID";
 L.FLIGHT_PATHS = "飞行路线";
 L.FLIGHT_PATHS_CHECKBOX = "飞行路径";
 L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 L.FLIGHT_PATHS_DESC = "当你与每个大陆上的飞行管理员交谈时会缓存飞行路径。\n  - Crieve";
+L.FOLLOWER_DESC = "点击此按钮以根据缺少的内容随机选择一个追随者。";
 L.FOLLOWER_ID = "追随者 ID";
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追随者 & 伙伴";
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。";
@@ -29689,6 +29979,8 @@ L.OBJECT_TYPE = "目标类型";
 L.OBJECTIVES = "目标";
 L.ONLY_NOT_TRASH = "过滤垃圾物品";
 L.ONLY_NOT_TRASH_TOOLTIP = "启用此选项可忽略白色/灰色物品。暴雪尚未在经典怀旧服中提供 API。";
+L.ONLY_OBTAINABLE_CHECKBOX = "仅可获得";
+L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "如果只想查看可获得的共享外观，请启用此选项。";
 L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
 L.ONLY_RWP = "仅‘随补丁移除’";
@@ -29930,7 +30222,6 @@ L.SYMLINK = "符号链接";
 L.SYNC_CHARACTERS_TOOLTIP = "这会显示您帐号中的所有角色。";
 L.SYNC_PAGE = "同步";
 L.TELEPORT_TO_FROM_DUNGEON = "传送到/从地下城传送";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "点击此处传送到当前副本或从当前副本传送。\n\n潘达利亚之谜以这种方式快速传送到当前副本之外。";
 L.THING_UNTIL = " 事物到 ";
 L.THINGS_UNTIL = " 事物到 ";
 L.THIS_IS_BREADCRUMB = "这是个无关紧要的任务。";
@@ -30032,6 +30323,7 @@ localize(L.HEADER_NAMES, {
 	[-19] = "首领共同掉落",
 	[-22] = "商人共同物品",
 	[-25] = "恶魔训练师",
+	[-27] = "掉落",
 	[-30] = "探索",
 	[-32] = "飞行路线",
 	[-36] = "节日",
@@ -32134,14 +32426,9 @@ for key,value in pairs({
 	[8740] = "部落徽记",
 	[8741] = "联盟徽记",
 	[8749] = "血色领地废墟",
-	[8818] = "在血帆海盗的声望达到尊敬",
-	[8819] = "藏宝海湾崇拜",
-	[8820] = "永望镇崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齿城崇拜",
-	[8823] = "暗月马戏团崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "火焰之王的精华",
 	[8894] = "胜利者胸甲",
 	[8895] = "复仇者的胸甲",
@@ -32175,6 +32462,11 @@ for key,value in pairs({
 	[13371] = "联盟勋章",
 	[17023] = "辛德拉崇拜",
 	[54579] = "奥妮克希亚",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -32234,7 +32526,9 @@ L.APPEARANCES_CHECKBOX = "外觀";
 L.APPEARANCES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤外觀獲得。\n\n注意: 停用此選項也會停用所有採集邏輯，你可以使用此切換來防止在執行重要組內容時出現延遲，請牢記，重新啟用後將需要進行計算。";
 L.APPLY_SEARCH_FILTER = "套用搜尋篩選";
 L.APPLY_SEARCH_FILTER_DESC = "請選擇一個搜尋篩選選項。";
+L.ART_ID = "美術 ID";
 L.ARTIFACT_CACHE_OUT_OF_DATE = "考古學快取已過時/不準確，將在登錄每個角色時重新快取！";
+L.ARTIFACT_ID = "神兵武器 ID";
 L.ARTIFACT_INTRO_REWARD = "完成該神器的介紹任務後獲得。";
 L.ARTIFACT_RELIC_CACHE = "打開所有神器武器的用戶介面以快取這是否是升級。這對於確定您是否可以將此物品交易給小伙伴很有用。 ";
 L.ARTIFACT_RELIC_COMPLETION = "神器聖物完成度";
@@ -32274,6 +32568,7 @@ L.BREADCRUMB_PARTYSYNC_4 = "如果嘗試通過隊伍同步獲得此任務，請�
 L.BREADCRUMBS = "無關緊要";
 L.BREADCRUMBS_WARNING = "完成此任務後可能無法獲得無關緊要的任務：";
 L.CACHED_RECIPES_1 = "快取 ";
+L.CAMPSITE_ID = "營地 ID";
 L.CAMPSITES_CHECKBOX_TOOLTIP = "啟用此選項來追蹤戰隊營區的完成情況。";
 L.CATALYST = "催化器";
 L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物觸發慶祝音效";
@@ -32308,10 +32603,10 @@ L.CONTAINS_SLIDER_TOOLTIP = "使用該功能可以自訂指標提示中顯示的
 L.COORDINATES = "座標";
 L.COST = "花費";
 L.COST_DESC = "這裡面包含了獲得或購買這個物品所需要的物品";
-L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedade貨幣|r";
 L.COST_TOTAL = "總花費";
 L.COST_TOTAL_DESC = "其中包含獲得或購買頂級分組內所有物品所需的直觀分類。\n\n注意：目前不包括藥劑/配方需求！";
 L.CRITERIA_FOR = "準則";
+L.CRITERIA_ID = "條件 ID";
 L.CURRENCY_FOR = "貨幣";
 L.CURRENCY_ID = "貨幣 ID";
 L.CURRENCY_NEEDED_TO_BUY = "需要購買物品未收藏的事物";
@@ -32325,6 +32620,7 @@ L.DEATHS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤您的角色每次死亡的
 L.DEBUG_LOGIN = "登錄後獲得的獎勵。\n\n幹得好！你做到了！\n\n僅在偵錯模式下可見。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "偵錯模式|cffffffff（顯示所有）|r|r";
 L.DEBUG_MODE_TOOLTIP = "就字面意思…遊戲中的所有事情。時間。點滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、試劑等也會出現在列表中。（甚至你自己！不，是真的。看。）\n\n這僅用於偵錯目的。不用於完成追蹤。\n\n此模式將忽略所有篩選，包括無法獲得的。";
+L.DECOR_ID = "裝飾 ID";
 L.DELETE_CHARACTER = "右擊刪除此角色";
 L.DELETE_LINKED_ACCOUNT = "右擊刪除此連接帳號";
 L.DELETE_LINKED_CHARACTER = "右擊刪除此連接角色";
@@ -32334,6 +32630,7 @@ L.DESCRIPTION = "\"你愚昧地尋求自我毀滅，大膽地無視了那些超�
 L.DIFFICULTY_ID = "難度 ID";
 L.DISABLE_PARTYSYNC = "即使使用隊伍同步，這個角色也可能無法完成。如果您以其他方式管理，請在 Discord 上告訴我們！";
 L.DISCORD_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到All The Things Discord 伺服器。\n\n可以與其他收藏家分享進步/挫折！";
+L.DISPLAY_ID = "顯示 ID";
 L.DISPLAY_IN_COMBAT_CHECKBOX = "在戰鬥中";
 L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在戰鬥中呈現指標提示資訊，請啟用此選項。\n\n如果你正在同你的公會進行史詩/大秘境活動，你可能應該關閉這個設定以盡可能節省性能。\n\n當你在單刷時它可以很有用，可以立即知道你需要從首領那裡得到什麼。";
 L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207該組及其內容不參與此視窗的進度，因為它來自另一個位置！|r";
@@ -32421,6 +32718,7 @@ L.GENERAL_PAGE = "共通";
 L.GENERAL_THINGS_LABEL = "共通事物";
 L.GO_GO_RANDOM = "隨機 - 去看看！";
 L.GO_GO_RANDOM_DESC = "此視窗允許隨機選擇要獲得的地點或物品。去吧！";
+L.GUID = "全域 ID";
 L.HEADER_ID = "標頭 ID";
 L.HEIRLOOM_TEXT = "解鎖傳家寶";
 L.HEIRLOOM_TEXT_DESC = "顯示你是否已經獲得或購買了傳家寶。";
@@ -32438,6 +32736,7 @@ L.ICON_LEGEND_STATUS_LABEL = "圖標圖例";
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. _.DefaultColors.White .. "|T" .. _.asset("status-unobtainable") .. ":0|t 無法獲得\n|T" .. _.asset("status-prerequisites") .. ":0|t 僅在滿足先決條件的情況下獲得\n|T" .. _.asset("status-seasonal-available") .. ":0|t 季節性內容\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t 季節性內容\n|T374225:0|t 當前角色不可用\n|T" .. _.asset("status-unsorted") .. ":0|t Unsorted in ATT|r";
 L.ICON_ONLY_CHECKBOX = "僅圖標";
 L.ICON_ONLY_CHECKBOX_TOOLTIP = "如果只想在右上角看到圖標而不是圖標和已收藏/未收藏的文字，請啟用此選項。\n\n有些人喜歡更小的指標提示…";
+L.ICON_PATH = "圖示路徑";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略裝備綁定/拾取綁定的篩選";
 L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略裝備綁定/拾取綁定物品的裝備、武器、種族、等級或職業要求，請啟用此設定。\n\n如果你正試圖通過拍賣行掃描收藏你的物品，此模式可能對你有用。";
 L.ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤幻象。\n\n這些看起來很酷的塑形效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
@@ -32745,6 +33044,7 @@ L.SPEC_CHECKBOX = "專精";
 L.SPEC_CHECKBOX_TOOLTIP = "啟用該選項，可以在遊戲客戶端提供的物品指標提示中顯示物品的戰利品專精資訊。\n\n注意：無論該設定如何，這些圖標仍將出現在 ATT 小列表中。";
 L.SPECIES_ID = "品種 ID";
 L.SPELL_ID = "法術 ID";
+L.SPELL_NAME = "法術名稱";
 L.SPLIT = "按難度";
 L.STORE_IN_PROFILE_BUTTON = "儲存在設定檔中";
 L.STORE_IN_PROFILE_BUTTON_TOOLTIP = "預設情況下，ATT 會依角色儲存這些篩選器。\n\n勾選此選項可將這些篩選器儲存在目前的設定檔，而不是依角色儲存。";
@@ -32754,7 +33054,6 @@ L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容"
 L.SYMLINK = "符號連結";
 L.SYNC_CHARACTERS_TOOLTIP = "這會顯示您帳號中的所有角色。";
 L.TELEPORT_TO_FROM_DUNGEON = "傳送至/出地城";
-L.TELEPORT_TO_FROM_DUNGEON_DESC = "點擊此處傳送到當前地城或從當前地城傳送出去。\n\n潘達利亞之謎可以這種方式快速傳送到當前副本之外。";
 L.THIS_IS_BREADCRUMB = "這是個無關緊要的任務。";
 L.TITLE_ACCOUNT = "|c" .. _.DefaultColors.Account .. "帳號 |r";
 L.TITLE_COMPLETIONIST = "完美主義者 ";
@@ -32904,6 +33203,7 @@ localize(ObjectNames, {
 	[180248] = "可口魚魚群",
 	[180456] = "次級風石",
 	[180461] = "風石",
+	[100000000] = "考古學家的推車",
 });
 for key,value in pairs({
 	[1] = "從未實裝 [NYI]",
@@ -34259,14 +34559,9 @@ for key,value in pairs({
 	[8740] = "部落徽記",
 	[8741] = "聯盟徽記",
 	[8749] = "血色領區廢墟",
-	[8818] = "血帆海盜尊敬",
-	[8819] = "藏寶海灣崇拜",
-	[8820] = "永望鎮崇拜",
-	[8821] = "加基森崇拜",
-	[8822] = "棘齒城崇拜",
-	[8823] = "暗月馬戲團崇拜",
-	[8824] = "拉文霍德崇拜",
-	[8825] = "辛德拉崇拜",
+	[8823] = "[DNT] Exalted with Darkmoon Faire",
+	[8824] = "[DNT] Exalted with Ravenholdt",
+	[8825] = "[DNT] Exalted with Shen'dralar",
 	[8893] = "炎魔的精華",
 	[8894] = "征服者的胸甲",
 	[8895] = "復仇者的胸甲",
@@ -34300,6 +34595,11 @@ for key,value in pairs({
 	[13371] = "聯盟勳章",
 	[17023] = "辛德拉崇拜。",
 	[54579] = "奧妮克希亞",
+	[58452] = "[DNT] Exalted with Gadgetzan",
+	[58453] = "[DNT] Exalted with Ratchet",
+	[58454] = "[DNT] Exalted with Booty Bay",
+	[58455] = "[DNT] Exalted with Everlook",
+	[58456] = "[DNT] Honored with Bloodsail Buccaneers",
 })
 do achievementCriterias[key].name = value; end
 end
