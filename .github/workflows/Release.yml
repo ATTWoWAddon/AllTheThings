@@ -40,7 +40,7 @@ jobs:
         if: steps.release_type.outputs.release_type == 'alpha'
         uses: actions/checkout@v6
         with:
-           fetch-depth: 300
+           fetch-depth: 100
            fetch-tags: true
            ref: ${{ github.ref }}  # https://github.com/actions/checkout/issues/1467
 
@@ -137,7 +137,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-           fetch-depth: 300
+           fetch-depth: 100
            fetch-tags: true
            ref: ${{ github.ref }}  # https://github.com/actions/checkout/issues/1467
 
