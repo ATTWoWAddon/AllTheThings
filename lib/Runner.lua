@@ -233,7 +233,7 @@ local function CreateRunner(name)
 					end
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
-						-- app.PrintDebug("FRC.Yield."..name)
+						-- app.PrintDebug("FRC.Yield."..name,"Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
 						if frameStartTime then
 							local diff = math.floor(100000 * (GetTimePreciseSec() - frameStartTime)) / 100
 							app.PrintDebug("FRC",name,"FrameTime","#",Config.PerFrame,diff,"ms Stutter @", math.ceil(1000 / diff))

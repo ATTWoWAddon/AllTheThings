@@ -437,7 +437,7 @@ local function ParseCommandArgsAndParams(msg)
 			args[i] = __ItemLinkCache[customArg];
 		end
 	end
-	
+
 	-- Step 4: Parse the Params
 	-- The first arg is always the command
 	local params = {};
@@ -680,14 +680,14 @@ local function SetRowData(self, row, data)
 			row:Hide();
 			return;
 		end
-		
+
 		if not (data.__type or data.__dlo) or getmetatable(data) == nil then
 			print(data.text, " does not have a metatable! This is NOT allowed!", data.__type, getmetatable(data));
 		end
-		
+
 		-- Calculate the indent
 		row.indent = (CalculateRowIndent(data) or 0) + 1;
-		
+
 		local font = data.font or "GameFontNormal";
 		if font ~= row.lastFont then
 			row.Label:SetFontObject(font);
@@ -725,7 +725,7 @@ local function SetRowData(self, row, data)
 			row.Background:Hide();
 		end
 	end
-	
+
 	-- Update the Summary Text (this will be the thing that updates the most)
 	local summaryText = data.summaryText or "";
 	local oldSummary = row.summaryText or "";
@@ -733,7 +733,7 @@ local function SetRowData(self, row, data)
 		row.Summary:SetText(summaryText);
 		row.summaryText = summaryText;
 	end
-	
+
 	-- Check to see what the text is currently
 	local text = data.text;
 	if IsRetrieving(text) then
@@ -755,7 +755,7 @@ local function SetRowData(self, row, data)
 
 	-- If the data has a texture, assign it.
 	SetPortraitIcon(row.Texture, data);
-	
+
 	-- If we have a texture, let's assign it.
 	local indicatorTexture = app.GetIndicatorIcon(data);
 	if indicatorTexture then
@@ -781,7 +781,7 @@ local function UpdateVisibleRowData(self)
 		self.ScrollBar:Hide();
 		self.CloseButton:Hide();
 	end
-	
+
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
@@ -872,7 +872,7 @@ local function UpdateVisibleRowData(self)
 			if SetRowData(self, rows[i], nil) then break end
 		end
 
-		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix)
+		-- app.PrintDebugPrior("UpdateVisibleRowDataComplete:",self.Suffix,rowCount,"/",#rows)
 		if GameTooltip and GameTooltip:IsVisible() then
 			local row = GameTooltip:GetOwner()
 			if row and row.__ref ~= row.ref then
@@ -1034,7 +1034,7 @@ local function RowOnClick(self, button)
 							return true;
 						end
 					end
-					
+
 					-- Attempt to search manually with the link.
 					local name, link = reference.name, reference.link or reference.silentLink;
 					if name and link and app.HandleModifiedItemClick(link) then
@@ -1107,7 +1107,7 @@ local function RowOnClick(self, button)
 					return true;
 				end
 			end
-			
+
 			if self.index > 0 then
 				reference.expanded = not reference.expanded;
 				window:Update();
@@ -1562,7 +1562,7 @@ local function RowOnEnter(self)
 			}
 		end
 	end
-	
+
 	--[[ ROW DEBUGGING ]
 	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Self",
@@ -1636,7 +1636,7 @@ local function RowOnEnter(self)
 		right = tostring(CalculateRowIndent(reference)),
 	}
 	-- END DEBUGGING]]
-	
+
 	-- Attach all of the Information to the tooltip.
 	app.Modules.Tooltip.AttachTooltipInformation(tooltip, tooltipInfo);
 	if not IsRefreshing then tooltip:SetATTReferenceForTexture(reference); end
@@ -1736,7 +1736,7 @@ local function CreateRow(container, rows, i)
 	row.Indicator:SetPoint("BOTTOM");
 	row.Indicator:SetPoint("TOP");
 	row.Indicator:SetWidth(rowHeight);
-	
+
 	-- The Label should be sandwiched between the summary and the texture
 	row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
 	row.Label:SetPoint("LEFT", row.Texture, "RIGHT", 2, 0);
@@ -2058,7 +2058,7 @@ local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
 local function OnEventDebugging(self, ...)
-	print(self.Suffix, ...);
+	-- app.PrintDebug(self.Suffix, ...);
 end
 local function OnMouseWheelForWindow(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentIndex - delta);
@@ -2066,7 +2066,7 @@ end
 local function OnScrollBarValueChanged(self, value)
 	if self.CurrentIndex ~= value then
 		self.CurrentIndex = value;
-		-- app.PrintDebug("ScrollBarValueChanged", value);
+		-- app.PrintDebug("ScrollBarValueChanged:", value);
 		local window = self:GetParent()
 		Callback(window.Refresh, window)
 	end
@@ -2107,12 +2107,12 @@ local function UpdateWindow(self, force, trigger)
 		else
 			wipe(rowData)
 		end
-		
+
 		local didUpdate
 		data.expanded = true;
 		if not self.doesOwnUpdate and force then
 			self:ToggleExtraFilters(true)
-			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
+			-- app.PrintDebug(app.Modules.Color.Colorize("TLUG", app.Colors.Time),self.Suffix)
 			app.TopLevelUpdateGroup(data);
 			self.HasPendingUpdate = nil;
 			-- app.PrintDebugPrior("Done")
@@ -2122,7 +2122,7 @@ local function UpdateWindow(self, force, trigger)
 
 		-- Should the groups in this window be expanded prior to processing the rows for display
 		if self.ExpandInfo then
-			-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Force)
+			-- app.PrintDebug("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Force)
 			ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Force);
 			self.ExpandInfo = nil;
 		end
@@ -2161,7 +2161,7 @@ local function UpdateWindow(self, force, trigger)
 		else
 			self.missingData = nil;
 		end
-		
+
 		-- app.PrintDebugPrior("Update:Done")
 		app.HandleEvent("OnWindowUpdated", self, didUpdate)
 		return true;
@@ -2259,11 +2259,11 @@ local FieldDefaults = {
 	OnEvent = function(self, e, ...)
 		Callback(self.Update, self);
 	end,
-	
+
 	-- Automatic Opening Opt-In Methods
 	GetShouldAutomaticallyOpen = GetShouldAutomaticallyOpen,
 	SetShouldAutomaticallyOpen = SetShouldAutomaticallyOpen,
-	
+
 	-- Rendering Functions
 	HasPendingUpdate = true,
 	AssignChildren = function(self)
@@ -2339,7 +2339,7 @@ local function BuildWindow(suffix)
 	else
 		app.WindowDefinitions[suffix] = nil;
 	end
-	
+
 	-- Create the window instance.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
 	local window = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
@@ -2356,19 +2356,19 @@ local function BuildWindow(suffix)
 	window.HightlightDatas = {};
 	window.Suffix = suffix;
 	window:Hide();
-	
+
 	-- Apply Field Defaults
 	for field,value in pairs(FieldDefaults) do
 		window[field] = value;
 	end
-	
+
 	-- Copy all non-reserved fields on the definition to the window frame.
 	for field,value in pairs(definition) do
 		if not ReservedFields[field] then
 			window[field] = value;
 		end
 	end
-	
+
 	-- Load / Save, which allows windows to keep track of key pieces of information.
 	local defaults = BuildDefaultsForWindow(window, definition.Defaults);
 	local onLoad, onSave = definition.OnLoad, definition.OnSave;
@@ -2378,7 +2378,7 @@ local function BuildWindow(suffix)
 		if onLoad then onLoad(self, windowSettings); end
 		ApplySettingsForWindow(self, windowSettings);
 	end
-	
+
 	-- Setup the Event Handlers
 	local handlers = {
 		PLAYER_LOGOUT = function()
@@ -2441,7 +2441,7 @@ local function BuildWindow(suffix)
 		if onShow then onShow(self); end
 		self:RecordSettings();
 	end);
-	
+
 	-- Replace some functions to allow settings to be recorded.
 	local oldSetBackdropColor = window.SetBackdropColor;
 	local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
@@ -2458,7 +2458,7 @@ local function BuildWindow(suffix)
 		oldStopMovingOrSizing(self, ...);
 		self:RecordSettings();
 	end
-	
+
 	-- Rendering Pipeline
 	-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 	-- Phase 2: Update, which takes the prepared data and revalidates it.
@@ -2552,7 +2552,7 @@ local function BuildWindow(suffix)
 			end
 		end
 	end
-	
+
 	local OnUpdate = definition.OnUpdate;
 	if OnUpdate then
 		if definition.Debugging then
@@ -2631,7 +2631,7 @@ local function BuildWindow(suffix)
 			end
 		end
 	end
-	
+
 	local onRefresh = definition.OnRefresh;
 	if onRefresh then
 		if definition.Debugging then
@@ -2675,7 +2675,7 @@ local function BuildWindow(suffix)
 	function window:Redraw()
 		window:DefaultRedraw();
 	end
-	
+
 	-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
 	-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
 	local delays = {};
@@ -2701,7 +2701,7 @@ local function BuildWindow(suffix)
 	function window:DelayedUpdate(force)
 		self:DelayedCall("Update", 10, force);
 	end
-	
+
 	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
@@ -2750,7 +2750,7 @@ local function BuildWindow(suffix)
 		end,
 	});
 	container:Show();
-	
+
 	if not definition.IgnoreQuestUpdates and false then
 		local delayedRefresh = function()
 			window:DelayedRefresh();
@@ -2833,13 +2833,13 @@ local function BuildWindow(suffix)
 			definition.HelpText or ("Toggles the " .. window.SettingsName .. " Window.")
 		};
 	end
-	
+
 	-- If window settings were already loaded, then load this window's definition now
 	-- Windows created after startup would otherwise fail to load their definition.
 	if AllWindowSettings then
 		LoadSettingsForWindow(window);
 	end
-	
+
 	-- Inform event registers that a new window has been created.
 	app.HandleEvent("OnWindowCreated", window, suffix);
 	return window;
@@ -2908,7 +2908,7 @@ function app:CreateMiniListForGroup(group)
 		OnInit = function(self)
 			OnInitForPopout(self, (group.OnPopout and group:OnPopout()) or group)
 			self:AssignChildren();
-		
+
 			-- always expand all groups on initial creation if enabled
 			if app.Settings:GetTooltipSetting("Expand:MiniList") then
 				self:ExpandData(true);
@@ -3033,7 +3033,7 @@ OnInitForPopout = function(self, group)
 	if not (self.data.difficultyID or self.data.instanceID) then
 		app.Sort(self.data.g, app.SortDefaults.Global)
 	end
-	
+
 	-- Adjust some update/refresh logic if this is a Quest Chain window
 	if self.isQuestChain then
 		local oldUpdate = self.Update;
@@ -3116,7 +3116,7 @@ local CategorizedRelativeFields = { "u", "e", "awp", "rwp", "r", "c", "coords", 
 local CategoryByRelativeFields = {
 	-- Look for specific tags first, a PvP item will display as "vendor" or "achievement" instead, which isn't correct.
 	{ "pvp", function(o) return app.HeaderConstants.PVP; end },
-	
+
 	-- Root Categories
 	{ "RootCategory",
 		function(o, value, categories)
@@ -3131,11 +3131,11 @@ local CategoryByRelativeFields = {
 			return hash;
 		end
 	},
-	
+
 	-- Keys
 	{ "achievementID", function(o) return app.HeaderConstants.ACHIEVEMENTS; end },
 	{ "instanceID", function(o) return "raid"; end },	-- Determine if we want to split by raid and/or dungeon
-	{ "headerID", 
+	{ "headerID",
 		function(o, value, categories)
 			if value == app.HeaderConstants.VENDORS or value == app.HeaderConstants.QUESTS or value == app.HeaderConstants.FACTIONS then
 				return value;
@@ -3213,8 +3213,8 @@ local function AssignCategoryForResult(self, categories, result)
 		end
 	end
 	]]--
-	
-	
+
+
 	-- Find the first category type that fits our search result
 	local categoryType;
 	for i,dataSet in ipairs(CategoryByRelativeFields) do
@@ -3273,7 +3273,7 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 						else tinsert(resultsByKey[id], result); end
 					end
 				end
-				
+
 				-- If this object previously had categories, clear them out for reuse.
 				local categories = data.categories;
 				if categories then
@@ -3284,7 +3284,7 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 					categories = {};
 					data.categories = categories;
 				end
-				
+
 				-- For each of the results, find the most accessible one and then assign it to a category.
 				for i,searchResults in pairs(resultsByKey) do
 					app.Sort(searchResults, app.SortDefaults.Accessibility);
@@ -3369,6 +3369,7 @@ api.BuildCategorizedAndFlatSearchFunctionsForClassTypes = function(self, key, fa
 	self.OnUpdateFlat = BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...);
 end
 
+
 -- Dynamic Categories (Delayed)
 local DynamicCategoryHeaders = {
 	{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
@@ -3436,13 +3437,13 @@ api.BuildDynamicCategorySummaryForSearchResults = function(searchResults)
 		SortType = "text",
 		g = g
 	});
-	
+
 	-- Loop through the dynamic headers and insert them into the "g" field of dynamic category
 	for _, template in ipairs(DynamicCategoryHeaders) do
 		local header = app.CloneClassInstance(app.CreateRawText(template.name, template));
 		header.SortType = "name";
 		header.parent = dcsRoot
-		g[#g + 1] = app.DelayLoadedObject(CreateTypeGroupsForHeader, "text", 
+		g[#g + 1] = app.DelayLoadedObject(CreateTypeGroupsForHeader, "text",
 			TypeGroupOverridesForDynamicCategoryHeader, header, searchResults)
 	end
 	return dcsRoot;
