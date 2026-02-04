@@ -6,8 +6,7 @@ local tinsert = tinsert;
 app:CreateWindow("Removed From Game", {
 	Commands = { "attrfg" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Removed From Game",
+		self:SetData(app.CreateRawText("Removed From Game", {
 			icon = app.asset("WindowIcon_RWP"),
 			description = "This window shows you all of the things that have been removed from the game.",
 			visible = true,
@@ -23,13 +22,14 @@ app:CreateWindow("Removed From Game", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 						self:ExpandData(true);
 					end
 				end
 			end,
-		};
+		}));
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.
@@ -38,6 +38,6 @@ app:CreateWindow("Removed From Game", {
 		rawSettings[2] = true;
 		self:DefaultUpdate(...);
 		rawSettings[2] = oldFilter;
-		return false;
+		return true
 	end
 });

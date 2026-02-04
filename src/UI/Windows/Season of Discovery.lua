@@ -15,7 +15,7 @@ end
 app:CreateWindow("Season of Discovery", {
 	Commands = { "attsod" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -34,6 +34,6 @@ app:CreateWindow("Season of Discovery", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 });

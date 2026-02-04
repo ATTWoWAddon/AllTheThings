@@ -58,4 +58,8 @@ do
 		app.SetBatchAccountCached(CACHE, saved, 1)
 		app.SetBatchAccountCached(CACHE, none)
 	end)
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") });
+		app.AddRandomSearchCategory("Campsites", "campsiteID", app.L.CAMPSITES, app.L.CAMPSITE_DESC, app.asset("Category_Campsites"));
+	end);
 end

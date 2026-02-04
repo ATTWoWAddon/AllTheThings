@@ -76,7 +76,8 @@ end
 -- Implementation
 app:CreateWindow("Future Unobtainables", {
 	Commands = { "attrwp" },
-	OnCommand = function(self, cmd)
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
 		if cmd and cmd ~= "" then
 			ParseCommand(self, cmd);
 			if self:IsShown() then
@@ -98,8 +99,7 @@ app:CreateWindow("Future Unobtainables", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			{	-- Exclude Non-Collectibles Button
-				text = "Exclude Non-Collectibles",
+			app.CreateRawText("Exclude Non-Collectibles", {
 				icon = 134941,
 				description = "Press this button to toggle excluding non-collectible items such as Thrown weapons and Relic items.",
 				visible = true,
@@ -114,10 +114,8 @@ app:CreateWindow("Future Unobtainables", {
 					data.saved = ExcludeNonCollectibles;
 					return true;
 				end,
-			},
-			{	-- Maximum Patch
-				prefix = "Maximum Patch: ",
-				text = RETRIEVING_DATA,
+			}),
+			app.CreateRawText("Maximum Patch", {
 				icon = 134941,
 				description = "Press this button to change the maximum removed with patch value.\n\nChanging this value will filter out items that get removed after the given patch.",
 				visible = true,
@@ -129,13 +127,12 @@ app:CreateWindow("Future Unobtainables", {
 					return true;
 				end,
 				OnUpdate = function(data)
-					data.text = data.prefix .. Colorize(GetPatchString(MaximumRWP), app.Colors.RemovedWithPatch);
+					data.summaryText = Colorize(GetPatchString(MaximumRWP), app.Colors.RemovedWithPatch);
 					return true;
 				end,
-			},
+			}),
 		};
-		self.data = {
-			text = L.FUTURE_UNOBTAINABLE,
+		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
 			icon = app.asset("Interface_Future_Unobtainable"),
 			description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			visible = true,
@@ -155,10 +152,11 @@ app:CreateWindow("Future Unobtainables", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						self:AssignChildren();
 					end
 				end
 			end,
-		};
+		}));
 	end,
 });

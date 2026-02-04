@@ -4,15 +4,25 @@ local _, app = ...;
 -- Global locals
 local ipairs, tinsert, pairs, tostring
 	= ipairs, tinsert, pairs, tostring;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
+local C_Map_GetMapInfo
+	= C_Map.GetMapInfo;
 
 -- Implementation
 app:CreateWindow("Maps", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attmaps" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "All The Maps!",
+		local function SortBySizeAndName(a, b)
+			local aSize, bSize = #a.g, #b.g;
+			if aSize > bSize then
+				return true;
+			elseif bSize == aSize then
+				return b.name > a.name;
+			else
+				return false;
+			end
+		end
+		self:SetData(app.CreateRawText("Maps", {
 			icon = app.asset("Category_Zones"),
 			description = "This window helps debug when we're missing map IDs in the addon.",
 			back = 1,
@@ -75,16 +85,7 @@ app:CreateWindow("Maps", {
 					end
 
 					-- Sort the maps by number of relative maps, then by name if matching.
-					app.Sort(g, function(a, b)
-						local aSize, bSize = #a.g, #b.g;
-						if aSize > bSize then
-							return true;
-						elseif bSize == aSize then
-							return b.name > a.name;
-						else
-							return false;
-						end
-					end, true);
+					app.Sort(g, SortBySizeAndName, true);
 
 					-- Now finally, clear out unused gs.
 					for i,mapObject in ipairs(g) do
@@ -95,6 +96,6 @@ app:CreateWindow("Maps", {
 					t.OnUpdate = nil;
 				end
 			end
-		};
+		}));
 	end,
 });

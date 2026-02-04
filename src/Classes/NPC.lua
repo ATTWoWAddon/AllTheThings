@@ -118,9 +118,7 @@ do
 		end,
 	},
 	"WithQuest", {
-		CollectibleType = app.IsClassic and function() return "Quests" end
-		-- Retail: NPCs tracked as HQT
-		or function() return "QuestsHidden" end,
+		CollectibleType = function() return "QuestsHidden" end,
 		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
 		locked = app.GlobalVariants.AndLockCriteria.locked,
 		collected = IsQuestFlaggedCompletedForObject,

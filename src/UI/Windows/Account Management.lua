@@ -3,15 +3,19 @@ local _, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, time, tinsert, tremove, tsort =
-	  ipairs, pairs, time, tinsert, tremove, table.sort;
+local ipairs, pairs, tonumber, time, type, tinsert, tremove, tsort =
+	  ipairs, pairs, tonumber, time, type, tinsert, tremove, table.sort;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo =
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
--- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
 
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
 
+-- Cache some globals SavedVariables!
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+	AccountWideData = accountWideData
+	CharacterData = characterData
+end)
 -- Module locals
 local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet = "ATTSYNC", {}, true;
 local uid, pendingReceiveChunksForUser, pendingSendChunksForUser, pendingSendResponsesForUser = 1, {}, {}, {};
@@ -365,6 +369,80 @@ local function DefaultAccountWideDataHandler(data, key)
 		end
 	end
 end
+-- Some cached data is stored directly in AccountWideData... we have no reason to 'sync' those tables via the Recalculate function
+local whiteListedFields = {
+	Achievements = true,
+	Artifacts = true,
+	AzeriteEssenceRanks = true,
+	BattlePets = true,
+	Exploration = true,
+	Factions = true,
+	FlightPaths = true,
+	Followers = true,
+	GarrisonBuildings = true,
+	Quests = true,
+	Spells = true,
+	Titles = true
+}
+-- Used for data which is defaulted as Account-learned, but has Character-learned exceptions
+local function PartialSyncCharacterData(data, key)
+	local characterData
+	-- wipe account data saved based on character data
+	for id,completion in pairs(data) do
+		if completion == 2 then
+			data[id] = nil
+		end
+	end
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for id,_ in pairs(characterData) do
+				-- character-based completion in account data saved as 2 for these types
+				data[id] = 2
+			end
+		end
+	end
+end
+-- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
+local function RankSyncCharacterData(data, key)
+	local characterData
+	wipe(data);
+	local oldRank;
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for index,rank in pairs(characterData) do
+				oldRank = data[index];
+				if not oldRank or oldRank < rank then
+					data[index] = rank;
+				end
+			end
+		end
+	end
+end
+local function SyncCharacterQuestData(data, key)
+	local characterData
+	-- don't completely wipe quest data, some questID are marked as 'complete' due to other restrictions on the account
+	-- so we want to maintain those even though no character actually has it completed
+	-- TODO: perhaps in the future we can instead treat these quests as 'uncollectible' for the account rather than 'complete'
+	-- TODO: once these quests are no longer assigned as completion == 2 we can then use the PartialSyncCharacterData for Quests
+	-- and make sure AccountWide quests are instead saved directly into ATTAccountWideData when completed
+	-- and cleaned from individual Character caches here during sync
+	for questID,completion in pairs(data) do
+		if completion ~= 2 then
+			data[questID] = nil
+		-- else app.PrintDebug("not-reset",questID,completion)
+		end
+	end
+	for guid,character in pairs(CharacterData) do
+		characterData = character[key];
+		if characterData then
+			for index,_ in pairs(characterData) do
+				data[index] = 1;
+			end
+		end
+	end
+end
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;
@@ -376,18 +454,24 @@ local AccountWideDataHandlers = setmetatable({
 		AccountWideData.Deaths = deaths;
 	end,
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
+	AzeriteEssenceRanks = RankSyncCharacterData,
+	Quests = SyncCharacterQuestData,
+	Mounts = PartialSyncCharacterData,
+	BattlePets = PartialSyncCharacterData,
 }, {
 	__index = function(t, key)
-		return DefaultAccountWideDataHandler;
+		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
 	end,
 });
-local function RecalculateAccountWideData()
-	app.print("Recalculating Account Data...");
+local function RecalculateAccountWideData(doPrints)
+	if doPrints then app.print("Recalculating Account Data..."); end
 	for key,data in pairs(AccountWideData) do
 		AccountWideDataHandlers[key](data, key);
 	end
-	app.print("Account Data Recalculated successfully.");
+	if doPrints then app.print("Account Data Recalculated successfully."); end
 end
+-- this step is EXTREMELY necessary for updating proper collection status of Account-Wide collectibles!
+app.AddEventHandler("OnRecalculateDone", RecalculateAccountWideData)
 local function DeserializeSequentialKeys(str)
 	local values = SplitString(":", str);
 	local keys = {};
@@ -564,7 +648,7 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 		end
 	end
 end
-local deserializers = {
+local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
 			wipe(currentValue);
@@ -651,7 +735,7 @@ local deserializers = {
 		character.raceID = tonumber(data[9]);
 		character.lastPlayed = tonumber(data[10]);
 		character.Deaths = tonumber(data[11]);
-		character.build = data[12];
+		character.build = tonumber(data[12]);
 	end,
 	TimeStamps = function(field, currentValue, data)
 		if not currentValue then
@@ -663,8 +747,12 @@ local deserializers = {
 		end
 		return currentValue;
 	end
-};
-local serializers = {
+}, {
+	__index = function(t)
+		return defaultDeserializer;
+	end,
+});
+local serializers = setmetatable({
 	ActiveSkills = function(field, value, timeStamp, lastUpdated)
 		local any, str = false, field;
 		for skillID,skill in pairs(value) do
@@ -730,7 +818,7 @@ local serializers = {
 			.. ";" .. (character.factionID or "1").. ";" .. (character.lvl or "1")
 			.. ";" .. (character.classID or "1") .. ";" .. (character.class or "CLASS")
 			.. ";" .. (character.raceID or "1") .. ";" .. (character.lastPlayed or "0")
-			.. ";" .. (character.Deaths or "0") .. ";" .. (character.build or "BUILD");
+			.. ";" .. (character.Deaths or "0") .. ";" .. (character.build or "0");
 	end,
 
 	-- These are now included inside of "Summary" to compress the data package more.
@@ -747,7 +835,11 @@ local serializers = {
 	race = ignoreField,
 	lastPlayed = ignoreField,
 	Deaths = ignoreField,
-};
+}, {
+	__index = function(t)
+		return defaultSerializer;
+	end,
+});
 local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed, shouldPrint)
 	--print("ReceiveCharacterSummary", guid, lastPlayed, shouldPrint);
 	if guid == app.GUID then return false; end
@@ -941,7 +1033,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldData = SplitString(";", fieldDataString);
 		local fieldName = fieldData[1];
 		tremove(fieldData, 1);
-		local data = (deserializers[fieldName] or defaultDeserializer)(fieldName, character[fieldName], fieldData, character);
+		local data = deserializers[fieldName](fieldName, character[fieldName], fieldData, character);
 		if data then character[fieldName] = data; end
 	end
 
@@ -955,7 +1047,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 	app.print("Updated " .. (character.text or "??") .. " from " .. (accountCharacter and accountCharacter.text or sender) .. "!");
 
 	-- Update the Sync Window!
-	RecalculateAccountWideData();
+	RecalculateAccountWideData(true);
 	self:Update(true);
 end
 MESSAGE_HANDLERS.request = function(self, sender, content, responses)
@@ -985,7 +1077,7 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 	local str = serializers.Summary(character);
 	if str then rawData = rawData .. "," .. str; end
 	for field,value in pairs(character) do
-		local str = (serializers[field] or defaultSerializer)(field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
+		local str = serializers[field](field, value, timeStamps[field] or maxTimeStamp, lastUpdated);
 		if str then rawData = rawData .. "," .. str; end
 	end
 	tinsert(responses, { detail = character.text, msg = rawData });
@@ -1052,14 +1144,14 @@ local function MergeCharacterData(character, row)
 			CurrentCharacter.Deaths = CurrentCharacter.Deaths + deaths;
 		end
 		character.ignored = true;
-		RecalculateAccountWideData();
+		RecalculateAccountWideData(true);
 		row:GetParent():GetParent():Rebuild();
 		app.print("Merged " .. character.text .. " into " .. CurrentCharacter.text);
 		C_Timer.After(0.01, function()
 			app:ShowPopupDialog("Would you also like to delete the old character data?\n\nNOTE: Any cached quest IDs that you have only completed on " .. character.text .. " will be lost. You have been warned.",
 			function()
 				CharacterData[character.guid] = nil;
-				RecalculateAccountWideData();
+				RecalculateAccountWideData(true);
 				row:GetParent():GetParent():Rebuild();
 				app.print(character.text .. " data deleted.");
 			end);
@@ -1141,7 +1233,7 @@ local function OnClickForCharacter(row, button)
 			app:ShowPopupDialog("CHARACTER DATA: " .. (character.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
 			function()
 				CharacterData[guid] = nil;
-				RecalculateAccountWideData();
+				RecalculateAccountWideData(true);
 				row:GetParent():GetParent():Rebuild();
 			end);
 		end
@@ -1205,8 +1297,18 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 		if primeData then
 			local buildString;
 			if character.build then
-				local expansion = app.CreateExpansion(character.build * 0.0001);
-				buildString = "|T" .. expansion.icon .. ":0|t " .. expansion.text;
+				if type(character.build) == "number" then
+					local expansion = app.CreateExpansion(character.build * 0.0001);
+					if expansion then
+						if expansion.icon then
+							buildString = "|T" .. expansion.icon .. ":0|t " .. expansion.text;
+						else
+							buildString = expansion.text;
+						end
+					end
+				else
+					character.build = nil;
+				end
 			end
 			tinsert(tooltipInfo, {
 				left = primeData.modeString,
@@ -1214,12 +1316,16 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				r = 1, g = 1, b = 1
 			});
 			tinsert(tooltipInfo, {
-				progress = GetProgressColorText(primeData.progress, primeData.total),
+				summaryText = GetProgressColorText(primeData.progress, primeData.total),
 			});
 		end
 
 		local total = 0;
 		local timestamps = character.TimeStamps;
+		if not timestamps then
+			timestamps = {};
+			character.TimeStamps = timestamps;
+		end
 		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "Spells", "Titles", "Toys", "Transmog", "Quests" }) do
 			local values = character[field];
 			if values then
@@ -1370,13 +1476,13 @@ end
 
 -- Implementation
 app:CreateWindow("Account Management", {
+	Commands = { "attsync", "attaccount" },
 	IgnoreQuestUpdates = true,
 	Defaults = {
 		AutoSync = true,
 		EnableBattleNet = not not BNGetInfo,
 		LinkedCharacters = LinkedCharacters,
 	},
-	Commands = { "attsync", "attaccount" },
 	OnInit = function(self, handlers)
 		-- Register for Battle.net addon messaging
 		handlers.BN_CHAT_MSG_ADDON = function(self, prefix, datastring, channel, sender)
@@ -1387,55 +1493,9 @@ app:CreateWindow("Account Management", {
 			if prefix ~= AddonMessagePrefix or not datastring or channel ~= "WHISPER" then return; end
 			ProcessAddonMessageMethod(self, SendAddonMessage, sender, datastring);
 		end
-	end,
-	OnLoad = function(self, settings)
-		-- Cache some globals SavedVariables!
-		AccountWideData = ATTAccountWideData;
-		CharacterData = ATTCharacterData;
-		CurrentCharacter = app.CurrentCharacter;
-
-		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
-		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
-		for guid,character in pairs(CharacterData) do
-			character.bnetAccountID = nil;
-			character.gameAccountID = nil;
-		end
-
-		-- Setup the saved variable for Linked Characters
-		local linked = settings.LinkedCharacters;
-		if not linked then
-			linked = LinkedCharacters;
-		else
-			LinkedCharacters = linked;
-		end
-		settings.LinkedCharacters = linked;
-		setmetatable(linked, { __index = SilentlyLinkedCharacters });
-
-		-- Cache the current character's BattleTag.
-		EnableBattleNet = settings.EnableBattleNet;
-		if BNGetInfo then
-			local battleTag = select(2, BNGetInfo());
-			if battleTag then
-				SilentlyLinkedCharacters[battleTag] = true;
-				CurrentCharacter.battleTag = battleTag;
-			end
-		end
-
-		-- Register for Addon Messaging
-		C_ChatInfo.RegisterAddonMessagePrefix(AddonMessagePrefix);
-		pcall(self.RegisterEvent, self, "BN_CHAT_MSG_ADDON");
-		self:RegisterEvent("CHAT_MSG_ADDON");
-		if settings.AutoSync then
-			BroadcastMessage("AutoSync", "check," .. CurrentCharacter.battleTag);
-		else
-			-- Cache some things related to BattleNet. (this happens in the BroadcastMessage function already)
-			UpdateBattleTags();
-			UpdateOnlineAccounts();
-		end
 
 		local options = {
-			{	-- Add Linked Character
-				text = "Add Linked Character",
+			app.CreateRawText("Add Linked Character", {
 				icon = app.asset("Button_Add"),
 				description = "Click here to link a character to your account.\n\nOnce Linked, click on the Linked Character in the list below to initiate a sync with that character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
 				OnUpdate = app.AlwaysShowUpdate,
@@ -1451,9 +1511,8 @@ app:CreateWindow("Account Management", {
 					end);
 					return true;
 				end,
-			},
-			{	-- Merge Transferred Character Data
-				text = "Merge Transferred Character Data",
+			}),
+			app.CreateRawText("Merge Transferred Character Data", {
 				icon = 132996,
 				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
 				OnUpdate = app.AlwaysShowUpdate,
@@ -1461,56 +1520,49 @@ app:CreateWindow("Account Management", {
 					MergeTransferredCharacterData(row);
 					return true;
 				end,
-			},
-			{	-- Recalculate Account Wide Data
-				text = "Recalculate Account Wide Data",
+			}),
+			app.CreateRawText("Recalculate Account Wide Data", {
 				icon = 132996,
 				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
-					RecalculateAccountWideData();
+					RecalculateAccountWideData(true);
 					return true;
 				end,
-			},
-			setmetatable({	-- Sync All Characters
-				text = "Sync All Characters",
+			}),
+			app.CreateRawText("Sync All Characters", {
 				icon = app.asset("Button_Sync"),
 				description = "Click here to sync all of your characters.\n\nAlt+Click to toggle automatically syncing characters with your other accounts.\n\nYou must initially have the character stored on this account by Linking a Character and manually initiating a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
-				OnUpdate = app.AlwaysShowUpdate,
+				OnUpdate = function(t)
+					t.saved = self.Settings.AutoSync;
+					return app.AlwaysShowUpdate(t);
+				end,
 				OnClick = function(row, button)
 					if IsAltKeyDown() then
 						self.Settings.AutoSync = not self.Settings.AutoSync;
+						row.ref.saved = self.Settings.AutoSync;
 						self:Redraw();
 					else
 						BroadcastMessage(row.ref.text, "check," .. CurrentCharacter.battleTag);
 					end
 					return true;
 				end,
-			}, { __index = function(t, key)
-				if key == "saved" then
-					return self.Settings.AutoSync;
-				end
-				return table[key];
-			end}),
-			setmetatable({	-- Enable Battle.net
-				text = "Enable Battle.net",
+			}),
+			app.CreateRawText("Enable Battle.net", {
 				icon = 526421,
 				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
+				OnUpdate = BNGetInfo and function(t)
+					t.saved = EnableBattleNet;
+					return app.AlwaysShowUpdate(t);
+				end or nil,
 				OnClick = function(row, button)
 					EnableBattleNet = not EnableBattleNet;
-					self.Settings.EnableBattleNet = EnableBattleNet;
+					row.ref.saved = EnableBattleNet;
 					self:Redraw();
 					return true;
 				end,
-				OnUpdate = BNGetInfo and app.AlwaysShowUpdate or nil,
-			}, { __index = function(t, key)
-				if key == "saved" then
-					return EnableBattleNet;
-				end
-				return table[key];
-			end}),
-			{	-- Characters
-				text = "Characters",
+			}),
+			app.CreateRawText("Characters", {
 				icon = 526421,
 				description = "This shows all of the characters on your account.",
 				expanded = true,
@@ -1541,20 +1593,18 @@ app:CreateWindow("Account Management", {
 					end
 
 					if #g < 1 then
-						tinsert(g, {
-							text = "No characters found.",
+						tinsert(g, app.CreateRawText("No characters found.", {
+							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
-							visible = true,
 							parent = data,
-						});
+						}));
 					else
 						data.SortType = "textAndLvl";
 					end
 					return app.AlwaysShowUpdate(data);
 				end,
-			},
-			{	-- Linked Characters
-				text = "Linked Characters",
+			}),
+			app.CreateRawText("Linked Characters", {	-- Linked Characters
 				icon = 526421,
 				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
 				expanded = true,
@@ -1568,24 +1618,21 @@ app:CreateWindow("Account Management", {
 							OnClick = OnClickForLinkedAccount,
 							OnTooltip = OnTooltipForLinkedAccount,
 							OnUpdate = app.AlwaysShowUpdate,
-							visible = true,
 							parent = data,
 						}));
 					end
 
 					if #g < 1 then
-						tinsert(g, {
-							text = "No linked accounts found.",
+						tinsert(g, app.CreateRawText("No linked accounts found.", {
+							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
-							visible = true,
 							parent = data,
-						});
+						}));
 					end
 					return app.AlwaysShowUpdate(data);
 				end,
-			},
-			{	-- Pending Sync Queue
-				text = "Pending Sync Queue",
+			}),
+			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
 				icon = 236681,
 				description = "This shows the contents of the sync queue.",
 				expanded = true,
@@ -1601,24 +1648,21 @@ app:CreateWindow("Account Management", {
 						senders[sender] = 1;
 					end
 					for sender,_ in pairs(senders) do
-						tinsert(g, {
+						tinsert(g, app.CreateRawText(tostring(sender), {
 							OnClick = OnClickForSyncQueue,
 							OnTooltip = OnTooltipForSyncQueue,
 							OnUpdate = OnUpdateForSyncQueue,
-							text = sender,
 							icon = 526421,
-							visible = true,
 							parent = data,
-						});
+						}));
 					end
 
-					data.visible = #g > 1;
-					return false;
+					data.visible = #g > 0;
+					return true;
 				end,
-			},
+			}),
 		};
-		self.data = {
-			text = "Account Management",
+		self:SetData(app.CreateRawText("Account Management", {
 			icon = app.asset("WindowIcon_AccountManagement"),
 			description = "This list shows you all of the functionality related to managing your account data.",
 			visible = true,
@@ -1635,6 +1679,51 @@ app:CreateWindow("Account Management", {
 					end
 				end
 			end,
-		};
+		}));
+	end,
+	OnLoad = function(self, settings)
+		CurrentCharacter = app.CurrentCharacter;
+		EnableBattleNet = settings.EnableBattleNet;
+
+		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
+		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
+		for guid,character in pairs(CharacterData) do
+			character.bnetAccountID = nil;
+			character.gameAccountID = nil;
+		end
+
+		-- Setup the saved variable for Linked Characters
+		local linked = settings.LinkedCharacters;
+		if not linked then
+			linked = LinkedCharacters;
+		else
+			LinkedCharacters = linked;
+		end
+		settings.LinkedCharacters = linked;
+		setmetatable(linked, { __index = SilentlyLinkedCharacters });
+
+		-- Cache the current character's BattleTag.
+		if BNGetInfo then
+			local battleTag = select(2, BNGetInfo());
+			if battleTag then
+				SilentlyLinkedCharacters[battleTag] = true;
+				CurrentCharacter.battleTag = battleTag;
+			end
+		end
+
+		-- Register for Addon Messaging
+		C_ChatInfo.RegisterAddonMessagePrefix(AddonMessagePrefix);
+		pcall(self.RegisterEvent, self, "BN_CHAT_MSG_ADDON");
+		self:RegisterEvent("CHAT_MSG_ADDON");
+		if settings.AutoSync then
+			BroadcastMessage("AutoSync", "check," .. CurrentCharacter.battleTag);
+		else
+			-- Cache some things related to BattleNet. (this happens in the BroadcastMessage function already)
+			UpdateBattleTags();
+			UpdateOnlineAccounts();
+		end
+	end,
+	OnSave = function(self, settings)
+		settings.EnableBattleNet = EnableBattleNet;
 	end,
 });

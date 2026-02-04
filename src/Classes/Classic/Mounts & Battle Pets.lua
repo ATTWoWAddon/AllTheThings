@@ -1,6 +1,11 @@
 -- Companion Lib
 local _, app = ...
 
+-- Use the Mounts Lib for Wrath+
+if app.GameBuildVersion > 30000 then
+	return;
+end
+
 -- Global locals
 local ipairs, rawset, rawget, select
 	= ipairs, rawset, rawget, select;
@@ -42,9 +47,6 @@ local mountFields = {
 	end,
 	["link"] = function(t)
 		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
-	end,
-	["f"] = function(t)
-		return app.FilterConstants.MOUNTS;
 	end,
 	RefreshCollectionOnly = true,
 	["collectible"] = function(t)
@@ -94,8 +96,8 @@ if C_MountJournal and app.GameBuildVersion > 30000 then
 			return rawget(t, id);
 		end
 	end });
-	mountFields.mountID = function(t)
-		return SpellIDToMountID[t.spellID];
+	mountFields.spellID = function(t)
+		return t.mountID;
 	end
 	mountFields.name = function(t)
 		local mountID = t.mountID;
@@ -118,13 +120,22 @@ else
 	mountFields.name = function(t)
 		return GetSpellName(t.spellID) or RETRIEVING_DATA;
 	end
+	mountFields.spellID = function(t)
+		return t.mountID;
+	end
 end
 
-app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
-	"WithItem", {	-- This is a conditional contructor.
-		link = mountFields.linkForItem;
-		tsm = mountFields.tsmForItem
-	}, function(t) return t.itemID; end);
+app.CreateMount = app.CreateClass("Mount", "mountID", mountFields,
+"WithItem", {	-- This is a conditional contructor.
+	link = mountFields.linkForItem;
+	tsm = mountFields.tsmForItem
+}, function(t) return t.itemID; end);
+
+
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter.Mounts then currentCharacter.Mounts = {} end
+	if not accountWideData.Mounts then accountWideData.Mounts = {} end
+end);
 
 -- Battle Pets are done in the Battle Pets lib for MOP Classic
 if app.GameBuildVersion > 50000 then return; end
@@ -138,9 +149,6 @@ local function IsBattlePetCollected(t)
 end
 local speciesFields = {
 	CACHE = function() return "BattlePets" end,
-	["f"] = function(t)
-		return app.FilterConstants.BATTLE_PETS;
-	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.BattlePets;
 	end,
@@ -200,7 +208,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
 	app.AddEventRegistration("NEW_PET_ADDED", function(...)
-		app:RefreshDataQuietly("NEW_PET_ADDED", true);
+		app.HandleEvent("OnUpdateWindows");
 	end)
 else
 	speciesFields.icon = function(t)
@@ -250,7 +258,7 @@ else
 					end
 				end
 			end
-			if anythingNew then app:RefreshDataQuietly("RefreshCompanionCollectionStatus", true); end
+			if anythingNew then app.HandleEvent("OnUpdateWindows"); end
 		end
 		local meta = { __index = function(t, spellID)
 			RefreshCompanionCollectionStatus();
@@ -276,7 +284,7 @@ end
 app.CreateSpecies = app.CreateClass("Species", "speciesID", speciesFields);
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
+	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
 	end,
 	["icon"] = function(t)

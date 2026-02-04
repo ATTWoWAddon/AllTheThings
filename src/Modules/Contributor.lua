@@ -3019,7 +3019,7 @@ app.ChatCommands.Add("contribute-debug", function(args)
 end, {
 	"Usage : /att contribute-debug"
 })
-app.AddEventHandler("OnReady", function()
+app.AddEventHandler("OnStartup", function()
 	Contribute(AllTheThingsSavedVariables.Contributor)
 	DebugPrinting = AllTheThingsSavedVariables.Contributor_DebugPrinting
 end)

@@ -281,26 +281,7 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Exploration and t.coords and #t.coords > 0;
 	end,
-	["collected"] = app.IsClassic and function(t)
-		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
-
-		local coords = t.coords;
-		if coords and #coords > 0 then
-			local c = coords[1];
-			local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(c[3], CreateVector2D(c[1] / 100, c[2] / 100));
-			if explored then
-				for _,areaID in ipairs(explored) do
-					if areaID == t.explorationID then
-						app.SetCollected(nil, "Exploration", areaID, true);
-						return 1;
-					end
-				end
-			end
-		end
-		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
-	end
-	-- Retail: only check cached data on collected checks
-	or function(t)
+	["collected"] = function(t)
 		return app.TypicalCharacterCollected(CACHE, t.explorationID)
 	end,
 	["saved"] = function(t)
@@ -497,9 +478,7 @@ local function PrintDiscordInformationForAllExplorations(o, type)
 	app.print("Found Unmapped Area (" .. type .. "):", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID))
 	app.Audio:PlayReportSound()
 end
-local RefreshExplorationData = app.IsClassic and (function(data)
-	app:RefreshDataQuietly("RefreshExploration", true);
-end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
+local function RefreshExplorationData(data) app.UpdateRawIDs("explorationID", data); end
 local function CacheAndUpdateExploration(explorationIDTable)
 	-- app.PrintTable(saved)
 	app.SetBatchCached("Exploration", explorationIDTable, 1)
@@ -649,11 +628,7 @@ end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
 -- Event Handling
-if app.IsClassic then
-	app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
-else
-	app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
-end
+app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
 app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLocation)
 local MapExplorationEventIDs = {
 	[372] = true,
@@ -1059,9 +1034,6 @@ end, {
 
 -- Maps
 app.CreateMap = app.CreateClass("Map", "mapID", {
-	["text"] = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	["name"] = function(t)
 		return GetMapName(t.mapID);
 	end,
@@ -1155,9 +1127,6 @@ end
 
 -- Instances
 local instanceFields = {
-	["text"] = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	["name"] = function(t)
 		return GetMapName(t.mapID);
 	end,

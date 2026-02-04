@@ -1,1 +1,0 @@
-"Parser.exe" debug baseconfig=".config/classic/01 - Classic SOD.config" config=".config/classic/Debug Mode.config"

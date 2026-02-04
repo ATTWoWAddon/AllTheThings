@@ -32,7 +32,4 @@ app.CreateProfession = app.CreateClass(CLASS, KEY, {
 		return t[KEY];
 	end,
 	ignoreSourceLookup = app.ReturnTrue,
-	sym = app.IsClassic and function(t)
-		return {{"selectprofession", t.professionID}};
-	end
 })

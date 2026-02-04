@@ -93,11 +93,11 @@ local function AlertForVignetteInfo(info)
 	elseif not SettingsCache.IncludeCompleted and (not group.visible or app.IsComplete(group)) then
 		return false
 	else
-		local progressText = group.progressText
+		local summaryText = group.summaryText
 			or GetProgressColorText(group.progress or 0, group.total or 0)
 			or (group.collectible and app.GetCollectionIcon(group.collected))
 			or (group.trackable and app.GetCompletionIcon(group.saved))
-		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText
+		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. summaryText
 	end
 	-- app.PrintDebug("Vignette.Alert",link)
 
@@ -225,7 +225,7 @@ local function InitialVignetteScan()
 	CacheVignetteSettings()
 	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
 	-- clean up the 1 time function, needs to be callback since it's removing within the same event
-	Callback(app.RemoveEventHandler, InitialVignetteScan)
+	app.FunctionRunner.Run(app.RemoveEventHandler, InitialVignetteScan)
 end
 app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
 app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)

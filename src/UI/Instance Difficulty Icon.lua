@@ -1,5 +1,6 @@
 local _, app = ...
 
+-- CRIEVE NOTE: I'm not sure what patch this will become usable
 if not app.IsRetail then return end
 
 -- Returns the Texture name to be swapped based on the DifficultyID. Defaults to "NormalTexture"

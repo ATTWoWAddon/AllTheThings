@@ -1,26 +1,13 @@
 do
 local ipairs, app = ipairs, select(2, ...);
 local onClickForDynamicCategory = function(row, button)
-	local window = row.ref.dynamicWindow;
-	if window then
+	local dynamicWindow = row.ref.dynamicWindow;
+	if dynamicWindow then
 		if button == "RightButton" then
-			window:Toggle();
+			dynamicWindow:Toggle();
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
-			if #window.data.g < 1 then window:ForceRebuild(); end
-			local prime = app:GetWindow("Prime");
-			local primeData = prime.data;
-			if primeData then
-				local progress, total = window.data.progress or 0, window.data.total or 0;
-				local g = app.CloneReference(window.data).g;
-				for i,o in ipairs(g) do
-					o.parent = row.ref;
-				end
-				row.ref.g = g;
-				row.ref.progress = progress;
-				row.ref.total = total;
-				prime:Refresh();
-			end
+			dynamicWindow:ForceRebuild();
 		end
 	end
 end
@@ -28,18 +15,7 @@ local onUpdateForDynamicCategory = function(data)
 	local window = data.dynamicWindow;
 	data.progress = nil; data.total = nil;
 	if window then
-		window:ForceRebuild();
-		--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
-		local parent, total = data.parent, data.total;
-		if parent and total then
-			if not data.sourceIgnored then
-				parent.progress = parent.progress + data.progress;
-				parent.total = parent.total + total;
-			end
-			data.visible = app.GroupVisibilityFilter(data);
-		else
-			data.visible = true;
-		end
+		data.visible = app.GroupVisibilityFilter(window.data);
 	else
 		data.visible = false;
 	end
@@ -57,7 +33,7 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	["IgnoreBuildRequests"] = function(t)
 		return true;
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.dynamicWindowData.text or ("Dynamic Category: " .. t.suffix);
 	end,
 	["icon"] = function(t)
@@ -72,10 +48,22 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	["total"] = function(t)
 		return t.dynamicWindowData.total;
 	end,
-	["summary"] = function(t)
-		local total = t.total;
-		if not total or total < 1 then
-			return "[Click to Cache]";
+	["g"] = function(t)
+		if t.expanded then
+			local lastG = t.__lastG;
+			local g = t.dynamicWindowData.g;
+			if g and lastG ~= g then
+				t.__lastG = g;
+				local newG = app.CloneClassInstance(g);
+				if newG and #newG > 0 then
+					for i,o in ipairs(newG) do
+						o.parent = t;
+					end
+					t.__clonedG = newG;
+				end
+				return newG;
+			end
+			return t.__clonedG;
 		end
 	end,
 	["OnClick"] = function(t)

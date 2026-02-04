@@ -7,8 +7,7 @@ local L = app.L;
 app:CreateWindow("New With Patch", {
 	Commands = { "attnwp" },
 	OnLoad = function(self, settings)
-		self.data = {
-			text = L.NEW_WITH_PATCH,
+		self:SetData(app.CreateRawText(L.NEW_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.NEW_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -20,10 +19,11 @@ app:CreateWindow("New With Patch", {
 				local g = t.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponse(app:GetDataCache().g, "awp", app.GameBuildVersion);
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
@@ -52,15 +52,16 @@ app:CreateWindow("New With Patch", {
 						-- Fallback to the default behaviour
 						results = app:BuildSearchResponse(app:GetDataCache().g, "awp", currentPatch);
 					end
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
 				end
 			end,
-		};
+		}));
 	end,
 });

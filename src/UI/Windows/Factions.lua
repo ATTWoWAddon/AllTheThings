@@ -1,44 +1,47 @@
 -- App locals
 local _, app = ...;
 
--- Global locals
-local ipairs, pairs, tinsert =
-	  ipairs, pairs, tinsert;
+-- Private Variables
+local Flat;
 
--- Implementation
+-- Window Definition
 app:CreateWindow("Factions", {
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attfactions" },
+	Defaults = {
+		Flat = false,
+	},
+	GetFlat = function(self)
+		return Flat;
+	end,
+	SetFlat = function(self, flat)
+		if Flat ~= flat then
+			Flat = flat;
+			self.data.OnUpdate = flat and self.OnUpdateFlat or self.OnUpdateCategorized;
+			self.data.g = {};
+			self:Rebuild();
+			if self.IsDynamicCategory and self:IsShown() then
+				app:GetWindow("Prime"):Update();
+			end
+		end
+	end,
+	ToggleFlat = function(self)
+		self:SetFlat(not self:GetFlat());
+	end,
+	OnLoad = function(self, settings)
+		self:SetFlat(settings.Flat);
+	end,
+	OnSave = function(self, settings)
+		settings.Flat = Flat;
+	end,
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "factionID", "No factions found.", "Faction", "FactionAsFriend", "FactionWithRenown");
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
 			description = "This list shows you all of the factions that you can collect.",
 			visible = true,
-			expanded = true,
 			back = 1,
 			g = {},
-			OnUpdate = function(data)
-				local g = data.g;
-				if #g < 1 then
-					for factionID,matches in pairs(app.SearchForFieldContainer("factionID")) do
-						local faction = app.CreateFaction(factionID);
-						for j,o in ipairs(matches) do
-							if o.key == "factionID" and o.factionID == factionID then
-								for key,value in pairs(o) do faction[key] = value; end
-								break;
-							end
-						end
-						if not faction.u or faction.u ~= 1 then
-							faction.progress = nil;
-							faction.total = nil;
-							faction.g = nil;
-							faction.parent = data;
-							tinsert(g, faction);
-						end
-					end
-					data.SortType = "name";
-				end
-			end
-		});
+		}));
 	end,
 });

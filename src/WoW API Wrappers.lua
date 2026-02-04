@@ -1,6 +1,6 @@
 local app = select(2, ...);
 app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsRetail = app.GameBuildVersion >= 100000;
+app.IsRetail = app.GameBuildVersion >= 110000;
 app.AfterCata = app.GameBuildVersion >= 40000;
 app.IsClassic = not app.IsRetail;
 
@@ -8,7 +8,7 @@ app.EmptyFunction = function() end;
 app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
--- In the future, ATT will reference all its global APIs provided by Blizzard through out WOWAPI lib.
+-- In the future, ATT will reference all its global APIs provided by Blizzard through our WOWAPI lib.
 
 -- Currently, there are three flavors of World of Warcraft in operation: the Retail flavor, the Cataclysm Classic flavor, and the Classic flavor.
 -- Blizzard often restructures APIs in the Retail flavor of World of Warcraft first, and then introduces these changes to other flavors.
@@ -52,8 +52,13 @@ AssignAPIWrapper("issecretvalue", issecretvalue, function() return false; end);
 
 -- ChatInfo APIs
 local C_ChatInfo = C_ChatInfo
-AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage , SendChatMessage);
-AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage , SendAddonMessage);
+AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, SendChatMessage);
+AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage, SendAddonMessage);
+
+-- Currency APIs
+local C_CurrencyInfo = C_CurrencyInfo;
+AssignAPIWrapper("GetCurrencyInfo", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo, GetCurrencyInfo);
+AssignAPIWrapper("GetCurrencyLink", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyLink, GetCurrencyLink);
 
 -- Faction APIs
 local C_Reputation = C_Reputation;

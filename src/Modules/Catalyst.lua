@@ -1,19 +1,6 @@
 -- Catalyst Module
 local _, app = ...;
 
--- Globals
-local setmetatable,tonumber,ipairs,tremove,unpack,string_match
-	= setmetatable,tonumber,ipairs,tremove,unpack,string.match
-local GameTooltip = GameTooltip
-
--- WOWAPI
-local C_Item_GetItemInfoInstant,C_Item_GetItemUpgradeInfo
-	= C_Item.GetItemInfoInstant,C_Item.GetItemUpgradeInfo
-
--- App
-local containsAnyKey
-	= app.containsAnyKey
-
 -- Catalyst API Implementation
 -- Access via AllTheThings.Modules.Catalyst
 local api = {}
@@ -28,9 +15,23 @@ app.Modules.Catalyst = api
 -- Blizzard likely has some other meaning for the value I've used for 'catalystID' but it seems to correlate to this purpose
 local PossibleCatalystBonusIDLookups = app.ItemConversionDB
 if not PossibleCatalystBonusIDLookups then
-	app.print("Catalyst Module missing ItemConversionDB! Cannot load!")
+	-- CRIEVE NOTE: This is expected to be nil in Classic, plz no throw error!
 	return
 end
+
+-- Globals
+local tonumber,tremove,unpack
+	= tonumber,tremove,unpack
+local GameTooltip = GameTooltip
+
+-- WOWAPI
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
+local C_Item_GetItemUpgradeInfo
+	= C_Item.GetItemUpgradeInfo
+
+-- App
+local containsAnyKey
+	= app.containsAnyKey
 local BonusCatalysts = PossibleCatalystBonusIDLookups.BonusCatalysts
 
 local BonusIDUpgradeTiers = {
@@ -231,7 +232,7 @@ local function CheckGameTooltipForUpgradeLevel()
 	local text
 	for i=1,3 do
 		text = tooltipData[i]
-		level = string_match(text and text.leftText or "", ItemUpgradeLevelMatch)
+		level = (text and text.leftText or ""):match(ItemUpgradeLevelMatch)
 		if level then return tonumber(level) end
 	end
 end
@@ -240,7 +241,7 @@ local function GetCatalystSlot(data)
 	local link = data.link
 	if not link then return end
 
-	local itemID, _, _, itemEquipLoc, _, classID, subclassID = C_Item_GetItemInfoInstant(link)
+	local itemID, _, _, itemEquipLoc, _, classID, subclassID = GetItemInfoInstant(link)
 	if not itemID then return end
 
 	-- Armor only / Slot
@@ -421,7 +422,7 @@ local function catalyst_select_proper_tier_item(ResolveFunctions)
 			-- app.PrintDebug("Class group contains",#searchResults,"items")
 		else
 			-- get the Armor type of the Item
-			local _, _, _, itemEquipLoc, _, _, armorType = C_Item_GetItemInfoInstant(baseItem.link)
+			local _, _, _, itemEquipLoc, _, _, armorType = GetItemInfoInstant(baseItem.link)
 			-- popout all the matching Armor Type items (if not a cloak)
 			if itemEquipLoc ~= "INVTYPE_CLOAK" then
 				contains(finalized, searchResults, o, "contains", "c", unpack(SharedArmorTypeClasses[armorType]))

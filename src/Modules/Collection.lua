@@ -140,41 +140,18 @@ local function HandleCollectionChange(t, isadd)
 		RemovalTypeHandlers[ttype](t)
 	end
 end
-local DoCollection
--- Ok we need Classic (and a couple remaining Retail classes) to stop using
--- collection assignment within the .collected field reference. This is terrible
--- for performance and also makes it extremely difficult to use a consolidated function
--- to handle the collection logic
-if app.IsClassic then
-	-- We cannot check collected within this function since it's called within the .collected field via
-	-- Set/Collected
-	DoCollection = function(group, isadd)
-		if not group then return; end
-		-- Only if it's something collectible...
-		-- TODO: Settings option to allow reporting even when not considered collectible
-		if not group.collectible then return end
+local function DoCollection(group, isadd)
+	if not group then return; end
+	-- Only if it's something collectible...
+	-- TODO: Settings option to allow reporting even when not considered collectible
+	if not group.collectible then return end
 
-		if isadd then
-			-- TODO: Settings option to allow reporting even when already considered collected
-			-- if group.collected then return end
-		end
-
-		Runner.Run(HandleCollectionChange, group, isadd)
+	if isadd then
+		-- TODO: Settings option to allow reporting even when already considered collected
+		if group.collected then return end
 	end
-elseif app.IsRetail then
-	DoCollection = function(group, isadd)
-		if not group then return; end
-		-- Only if it's something collectible...
-		-- TODO: Settings option to allow reporting even when not considered collectible
-		if not group.collectible then return end
 
-		if isadd then
-			-- TODO: Settings option to allow reporting even when already considered collected
-			if group.collected then return end
-		end
-
-		Runner.Run(HandleCollectionChange, group, isadd)
-	end
+	Runner.Run(HandleCollectionChange, group, isadd)
 end
 
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)

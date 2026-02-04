@@ -3,12 +3,12 @@
 local _, app = ...
 
 -- Globals
-local setmetatable, rawget, select,tostring
-	= setmetatable, rawget, select,tostring
-local C_CurrencyInfo_GetCurrencyInfo,C_CurrencyInfo_GetCurrencyLink
-	= C_CurrencyInfo.GetCurrencyInfo,C_CurrencyInfo.GetCurrencyLink;
+local tostring
+	= tostring
 
 -- WoW API Cache
+local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
+local GetCurrencyLink = app.WOWAPI.GetCurrencyLink;
 
 -- Module
 
@@ -18,10 +18,10 @@ local SearchForField
 
 local cache = app.CreateCache("currencyID");
 local function default_info(t)
-	return C_CurrencyInfo_GetCurrencyInfo(t.currencyID);
+	return GetCurrencyInfo(t.currencyID);
 end
 local function default_link(t)
-	return C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1);
+	return GetCurrencyLink(t.currencyID, 1);
 end
 local function default_costCollectibles(t)
 	local id = t.currencyID;
@@ -61,7 +61,7 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 	end,
 	collectibleAsCost = app.CollectibleAsCost,
 	statistic = function(t)
-		local info = C_CurrencyInfo_GetCurrencyInfo(t.currencyID)
+		local info = GetCurrencyInfo(t.currencyID)
 		if not info then return end
 		local quantity, maxQuantity = info.quantity, info.maxQuantity
 		if maxQuantity and maxQuantity > 0 then
@@ -73,6 +73,11 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 })
 
 local function OnClickCostItem(row, button)
+	-- allow default chat linking
+	if button == "LeftButton" and IsShiftKeyDown() then
+		return
+	end
+	-- block all rightclicks
 	if button ~= "RightButton" then
 		return true
 	end
@@ -92,7 +97,7 @@ local CreateCostCurrency = app.CreateClass("CostCurrency", KEY, {
 	end,
 	-- progress is how much you have
 	progress = function(t)
-		return C_CurrencyInfo_GetCurrencyInfo(t.currencyID).quantity or 0;
+		return GetCurrencyInfo(t.currencyID).quantity or 0;
 	end,
 	collectible = app.ReturnFalse,
 	trackable = app.ReturnTrue,

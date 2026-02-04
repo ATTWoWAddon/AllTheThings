@@ -214,7 +214,7 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 -- Known By / Completed By
 -- Types which have an ID which can be 'known' or 'completed' but is typically spammy to show when account-wide
 local KnownByIgnoredTypes = {
-	Achievement = app.IsRetail,
+	Achievement = true,
 	BattlePet = true,
 	BattlePetWithItem = true,
 	Illusion = true,
@@ -555,9 +555,9 @@ local InformationTypes = {
 	-- Progress Fields (top most)
 	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
-			local progressText = app.GetProgressTextForTooltip(reference);
-			if progressText then
-				tinsert(tooltipInfo, { progress = progressText });
+			local summaryText = app.GetProgressTextForTooltip(reference);
+			if summaryText then
+				tinsert(tooltipInfo, { summaryText = summaryText });
 				--[[
 				-- I don't remember what the original conditions for showing this were.
 				-- For now just disable it.
@@ -941,7 +941,7 @@ local InformationTypes = {
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3,
 		-- CRIEVE NOTE: Recursive is actually not true, some items get new sources later. The distinction for pre-Cata being non-recursive might be necessary, but since we're overriding the process function it should be fine this way.
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
-			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
+			local rwp = t.GetValue(t, reference);
 			if rwp then
 				if app.GameBuildVersion < rwp then
 					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
@@ -1077,6 +1077,7 @@ local InformationTypes = {
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
+	CreateInformationType("raceID", { text = L.RACE_ID }),
 	CreateInformationType("runeforgepowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),

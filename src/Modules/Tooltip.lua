@@ -680,23 +680,23 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 			end
 		end
 	else
-		local progressText = entry.progress;
-		if progressText and progressText ~= "" and progressText ~= "---" then
+		local summaryText = entry.summaryText;
+		if summaryText and summaryText ~= "" and summaryText ~= "---" then
 			local prefix = SafeGetName(tooltip) .. "Text";
 			local leftText = _G[prefix .. "Left1"];
 			if leftText then
 				local rightText = _G[prefix .. "Right1"];
 				if rightText then
-					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. progressText);
+					local strippedText = StripColorAndTextureData((leftText:GetText() or "  ") .. summaryText);
 					if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
 						if tooltip.CloseButton then
 							-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-							progressText = progressText .. "     ";
+							summaryText = summaryText .. "     ";
 						end
-						rightText:SetText(progressText);
+						rightText:SetText(summaryText);
 						rightText:Show();
 					else
-						tooltip:AddDoubleLine(L.PROGRESS, progressText);
+						tooltip:AddDoubleLine(L.PROGRESS, summaryText);
 					end
 				end
 			end
@@ -773,7 +773,7 @@ local function WipeTooltipInfoCache()
 	-- app.PrintDebug("WipeTooltipInfoCache")
 end
 app.WipeTooltipInfoCache = WipeTooltipInfoCache
--- app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnCurrentDifficultiesChanged", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnRefreshComplete", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingCollected", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);
@@ -814,16 +814,11 @@ do
 		npcID = NPCSearchOptions,
 		objectID = NPCSearchOptions,
 	}, { __index = function() return DefaultSearchOptions end})
-
-	AttachTypicalSearchResults = app.IsRetail and
+	
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
-	function(self, field, id)
+	AttachTypicalSearchResults = function(self, field, id)
 		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
-	end
-or
-	function(self, field, id)
-		AttachTooltipSearchResults(self, SearchForField, field, tonumber(id))
 	end
 end
 

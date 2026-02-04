@@ -11,18 +11,7 @@ local function GetRelativeDifficulty(group, checkDifficultyID)
 	if not group then return end
 	local difficultyID = group.difficultyID
 	if difficultyID then
-		if difficultyID == checkDifficultyID then
-			return true;
-		end
-		local difficulties = group.difficulties
-		if difficulties then
-			for i=1,#difficulties do
-				if difficulties[i] == checkDifficultyID then
-					return true;
-				end
-			end
-		end
-		return false;
+		return group.difficultyHash[difficultyID];
 	end
 	local parent = group.parent
 	if parent then
@@ -138,24 +127,17 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 				return locks.shared;
 			else
 				-- Look for this difficulty's lockout.
-				for difficultyKey, lock in pairs(locks) do
-					if difficultyKey == "shared" then
-						-- ignore this one
-					elseif difficultyKey == t.difficultyID then
-						t.locks = lock;
-						return lock;
-					end
-				end
-				local difficulties = t.difficulties;
-				if difficulties then
-					local diffLocks = {};
+				local difficultyHash = t.difficultyHash;
+				if difficultyHash then
+					local diffLocks,any = {},nil;
 					-- Look for matching difficulty lockouts.
 					for difficultyKey, lock in pairs(locks) do
-						if contains(difficulties, difficultyKey) then
+						if difficultyHash[difficultyKey] then
 							diffLocks[difficultyKey] = lock;
+							any = true;
 						end
 					end
-					if #diffLocks > 0 then
+					if any then
 						t.locks = diffLocks;
 						return diffLocks;
 					end
@@ -166,6 +148,17 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["difficulties"] = function(t)
 		return DifficultyMap[t.difficultyID];
 	end,
+	["difficultyHash"] = function(t)
+		local d = { [t.difficultyID] = true };
+		local ids = t.difficulties;
+		if ids then
+			for i=1,#ids do
+				d[ids[i]] = true;
+			end
+		end
+		t.difficultyHash = d;
+		return d;
+	end,
 	["e"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
 			return 1271;	-- TIMEWALKING event constant
@@ -175,14 +168,8 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
 		if difficultyID > 0 then
-			if t.difficultyID == difficultyID then
-				return false;
-			end
-			local difficulties = t.difficulties;
-			if difficulties and containsValue(difficulties, difficultyID) then
-				return false;
-			end
-			return true;
+			-- print(difficultyID, t.text, t.difficultyHash[difficultyID]);
+			return not t.difficultyHash[difficultyID];
 		end
 		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)
 	end,
@@ -294,4 +281,83 @@ end
 app.GetRelativeDifficultyIcon = function(t)
 	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 end
+
+-- If Difficulties exist, this means we can use the API!
+local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
+	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
+local CurrentDifficulties, BuildCurrentDifficulties;
+local CacheCooldownCurrentDifficulties, time = 0, time;
+if app.GameBuildVersion >= 20000 then
+	if app.GameBuildVersion >= 30000 then
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
+			end
+
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			local d = {
+				[GetDungeonDifficultyID()] = true,
+				[GetRaidDifficultyID()] = true,
+				[GetLegacyRaidDifficultyID()] = true,
+			};
+			return d;
+		end
+	else
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
+			end
+
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			return { [GetDungeonDifficultyID()] = true };
+		end
+	end
+else
+	-- No API Access to difficulty APIs
+	BuildCurrentDifficulties = function()
+		if IsInInstance() then
+			local diff = select(3, GetInstanceInfo()) or 0
+			if diff ~= 0 then
+				return { [CurrentDifficultyRemapper[diff] or diff] = true };
+			end
+		end
+		return app.EmptyTable;
+	end
+end
+local function GetCurrentDifficulties()
+	-- Check to see if at least 1 second has passed
+	local now = time();
+	if CacheCooldownCurrentDifficulties > now then
+		-- Return the cached value instead of building the cache again.
+		return CurrentDifficulties;
+	end
+	CacheCooldownCurrentDifficulties = now + 1;
+	
+	-- Compare and Cache the Current Difficulties
+	local difficulties = BuildCurrentDifficulties()
+	if not CurrentDifficulties or app.TableKeyDiff(CurrentDifficulties, difficulties) then
+		CurrentDifficulties = difficulties;
+		app.HandleEvent("OnCurrentDifficultiesChanged", difficulties);
+	end
+	return difficulties;
+end
+app.GetCurrentDifficulties = GetCurrentDifficulties;
+app.AddEventRegistration("CHAT_MSG_SYSTEM", GetCurrentDifficulties);
+if app.IsClassic then
+	app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", GetCurrentDifficulties);
+end
+--[[
+app.AddEventHandler("OnCurrentDifficultiesChanged", function(diff)
+	print("OnCurrentDifficultiesChanged", diff);
+end);
+]]--
+GetCurrentDifficulties();
 end

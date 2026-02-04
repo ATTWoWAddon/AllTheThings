@@ -11,25 +11,31 @@ app:CreateWindow("Pet Battles", {
 	IsDynamicCategory = true,
 	Commands = { "attpetbattles" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
 			description = "This list shows you all of the pet battle content as well as where to acquire battle pets in the ATT database.",
 			visible = true,
 			expanded = true,
+			indent = 0,
 			back = 1,
-			g = app.Categories.PetBattles or {},
-			OnUpdate = function(data)
-				local results = app:BuildSearchResponseForField(app:GetDataCache().g, "pb");
-				if results and #results > 0 then
-					for i,result in ipairs(results) do
-						tinsert(data.g, result);
+			g = {},
+			OnUpdate = function(t)
+				local g = t.g;
+				if g and #g < 1 then
+					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "pb");
+					if results and #results > 0 then
+						t.g = results;
+						t.OnUpdate = nil;
+						self:AssignChildren();
 					end
-					self:AssignChildren();
-					self:ExpandData(true);
 				end
-				data.OnUpdate = nil;
-			end
-		});
-		self:AssignChildren();
-		app.CacheFields(self.data);
+			end,
+			OnTooltip = function(t, tooltipInfo)
+				if not app.Settings:Get("Show:PetBattles") then
+					tinsert(tooltipInfo, {
+						left = app.Modules.Color.Colorize("WARNING: You have Pet Battles disabled in the Settings!\n\nThis window will likely be empty as a result.", app.Colors.TooltipWarning),
+					});
+				end
+			end,
+		}));
 	end,
 });

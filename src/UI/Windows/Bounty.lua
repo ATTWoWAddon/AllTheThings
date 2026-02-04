@@ -10,7 +10,7 @@ app:CreateWindow("Bounty", {
 	AllowCompleteSound = true,
 	Commands = { "attbounty" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -20,7 +20,7 @@ app:CreateWindow("Bounty", {
 				local g = t.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBounty");
-					if #results > 0 then
+					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
@@ -30,7 +30,7 @@ app:CreateWindow("Bounty", {
 					end
 				end
 			end,
-		});
+		}));
 	end,
 	OnUpdate = function(self, ...)
 		-- Force Debug Mode
@@ -45,6 +45,6 @@ app:CreateWindow("Bounty", {
 			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
-		return false;
+		return true;
 	end
 });

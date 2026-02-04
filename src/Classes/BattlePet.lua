@@ -10,6 +10,8 @@ local wipe, setmetatable, rawget, select,pairs
 -- Module
 
 -- App
+-- Battle Pets are handled in Mounts & Battle Pets for Classic pre-MOP
+if app.GameBuildVersion < 50000 then return; end
 
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"
@@ -143,7 +145,7 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 },
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = app.IsRetail and { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "tsm" },
+	ImportFields = { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" }
 },
 function(t) return t.itemID end);
 
@@ -283,7 +285,7 @@ local C_PetBattles_GetAbilityInfoByID
 	= C_PetBattles.GetAbilityInfoByID
 if C_PetBattles_GetAbilityInfoByID then
 	app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
-		["text"] = function(t)
+		["name"] = function(t)
 			return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 		end,
 		["icon"] = function(t)
@@ -298,7 +300,7 @@ else
 end
 
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["text"] = function(t)
+	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
 	end,
 	["icon"] = function(t)

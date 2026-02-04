@@ -56,7 +56,7 @@ lib\Callback.lua
 src\base.lua
 src\Commands.lua
 src\Events.lua
-# src\DataHandling.lua
+src\DataHandling.lua
 
 # Not really a lib concept...
 lib\Refresh.lua
@@ -69,22 +69,28 @@ locales\Default Locale.lua
 src\Cache.lua
 
 # Helper Modules
+#src\Modules\Analyzers.lua
 src\Modules\RetrievingData.lua
+src\Modules\Catalyst.lua
 src\Modules\Collection.lua
+src\Modules\CustomCollect.lua
 src\Modules\FactionData.lua
 src\Modules\Fill.lua
 src\Modules\Color.lua
-# src\Modules\Costs.lua
+src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
-# src\Modules\Inventory.lua
+src\Modules\Inventory.lua
 src\Modules\Model.lua
-# src\Modules\Search.lua
+src\Modules\Reagent.lua
+src\Modules\Search.lua
 src\Modules\Social.lua
+src\Modules\Symlink.lua
 src\Modules\Tooltip.lua
-# src\Modules\Upgrade.lua
+src\Modules\Upgrade.lua
 src\Modules\Vignette.lua
 src\Modules\Contributor.lua
+#src\__test.lua
 
 # Expansion specific localization files
 db\Mists\LocalizationDB.lua
@@ -96,20 +102,19 @@ src\Classes\Achievement Data.lua
 src\Classes\Achievement.Classic.lua
 # src\Classes\Achievement.lua
 src\Classes\CharacterClass.lua
-# src\Classes\Currency.lua
+src\Classes\Currency.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
 src\Classes\Guild Achievements.lua
 src\Classes\Quests.lua
-# src\Classes\Item.Retail.lua
-src\Classes\Item.Classic.lua
+src\Classes\Item.Retail.lua
 src\Classes\BattlePet.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
 src\Classes\Header.lua
 src\Classes\Maps.lua
-# src\Classes\Mount.lua
+src\Classes\Mount.lua
 src\Classes\NPC.lua
 src\Classes\Objects.lua
 src\Classes\Profession.lua
@@ -120,18 +125,18 @@ src\Classes\Filter Types.lua
 src\Classes\Gear Sets.lua
 src\Classes\Glyphs.lua
 src\Classes\Illusions.lua
-# src\Classes\Miscellaneous.lua
+src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
 src\Classes\Races.lua
 src\Classes\Title.lua
 src\Classes\Transmog.lua
-# src\Classes\Spell.lua
-# src\Classes\Ensemble.lua
-# src\Classes\CharacterUnlock.lua
+src\Classes\Spell.lua
+src\Classes\Ensemble.lua
+src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
 src\Classes\Decor.lua
-# src\Classes\Heirloom.lua
+src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
 # Expansion specific source files
@@ -143,11 +148,10 @@ src\Expansions\Dragonflight.lua
 src\Expansions\The War Within.lua
 
 # Load the Settings Menu
-src\Settings\Classic Settings.xml
+src\Settings\Settings.xml
 
 # Load primary addon source files
-# AllTheThings.lua
-classic\ATT-Classic.lua
+AllTheThings.lua
 
 # Classic Specific Modules
 src\Classes\Classic\Mounts & Battle Pets.lua
@@ -157,10 +161,7 @@ src\UI\Instance Difficulty Icon.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
 src\UI\World Map Button.lua
-
-# Window Logic Overhaul
-src\UI\Shared Window Logic.lua
-src\UI\Classic Window Logic.lua
+src\UI\Window Definitions.lua
 
 # Load expansion specific category database.
 db\Mists\Categories.xml

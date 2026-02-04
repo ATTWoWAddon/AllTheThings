@@ -135,7 +135,7 @@ local function CacheFilterFunctions()
 		end
 	end
 end
-app.AddEventHandler("OnInit", function()
+app.AddEventHandler("OnStartup", function()
 	CacheFilterFunctions()
 	app.AddEventHandler("OnSettingsRefreshed", CacheFilterFunctions)
 end)
@@ -277,8 +277,6 @@ UpdateGroups = function(parent, g)
 				if not group:OnUpdate(parent, UpdateGroup) then
 					UpdateGroup(group, parent)
 				elseif group.visible then
-					group.total = nil
-					group.progress = nil
 					UpdateGroups(group, group.g)
 				end
 			else
@@ -288,6 +286,130 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups
+
+--[[
+-- CRIEVE NOTE: This was Classic's UpdateGroups.
+-- Keeping this here to do a deep dive later
+local UpdateGroups;
+local function UpdateGroup(group, parent)
+	local visible = false;
+
+	-- Determine if this user can enter the instance or acquire the item.
+	if app.GroupFilter(group) then
+		-- Check if this is a group
+		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
+			else
+				-- Default to 0 for both
+				group.progress = 0;
+				group.total = 0;
+			end
+
+			-- Update the subgroups recursively...
+			visible = UpdateGroups(group, group.g);
+
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if not group.sourceIgnored then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + group.total;
+					parent.progress = (parent.progress or 0) + group.progress;
+				end
+
+				-- If this group is trackable, then we should show it.
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
+					visible = true;
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				end
+			else
+				visible = false;
+			end
+		else
+			-- If the 'can equip' filter says true
+			if app.GroupFilter(group) then
+				if group.collectible then
+					-- Increment the parent group's totals.
+					parent.total = (parent.total or 0) + 1;
+
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.collected then
+						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
+					else
+						visible = true;
+					end
+				elseif app.ShowTrackableThings(group) and not group.saved then
+					-- If this group is trackable, then we should show it.
+					visible = true;
+				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
+					visible = true;
+				elseif app.MODE_DEBUG then
+					visible = true;
+				end
+			elseif app.MODE_DEBUG then
+				visible = true;
+			else
+				visible = false;
+			end
+		end
+	end
+
+	-- Set the visibility
+	group.visible = visible;
+	return visible;
+end
+UpdateGroups = function(parent, g)
+	if g then
+		local visible = false;
+		for i=1,#g,1 do
+			local group = g[i];
+			if group.OnUpdate then
+				if not group:OnUpdate(parent, UpdateGroup) then
+					if UpdateGroup(group, parent) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(group, parent) then
+				visible = true;
+			end
+		end
+		return visible;
+	end
+end
+app.UpdateGroups = UpdateGroups;
+local GetTimePreciseSec = GetTimePreciseSec;
+local TopLevelUpdateGroup = function(group, forceShow)
+	-- TODO: Switch to using the DataHandling function "TopLevelUpdateGroup"
+	group.TLUG = GetTimePreciseSec()
+	group.progress = 0;
+	group.total = 0;
+	group.costTotal = nil
+	group.upgradeTotal = nil
+	-- app.PrintDebug("TLUG",group.hash)
+	-- Root data in Windows should ALWAYS be visible
+	-- Data can also be force-shown externally (i.e. when as a search result)
+	if group.window or forceShow then
+		-- app.PrintDebug("Root Group",group.text)
+		group.forceShow = true
+	end
+	if not (group.OnUpdate and group:OnUpdate()) then
+		UpdateGroups(group, group.g);
+	end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
+]]--
+
 -- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
 local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases
@@ -325,8 +447,8 @@ end
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group, forceShow)
 	group.TLUG = GetTimePreciseSec()
-	group.total = nil
-	group.progress = nil
+	group.progress = 0;
+	group.total = 0;
 	group.costTotal = nil
 	group.upgradeTotal = nil
 	-- app.PrintDebug("TLUG",group.hash)
@@ -336,12 +458,12 @@ local function TopLevelUpdateGroup(group, forceShow)
 		-- app.PrintDebug("Root Group",group.text)
 		group.forceShow = true
 	end
+	-- OnUpdate returns "whether it handled the update for itself"
+	-- Recursion to .g should always persist if the group is visible
 	if group.OnUpdate then
 		if not group:OnUpdate(nil, UpdateGroup) then
 			UpdateGroup(group)
 		elseif group.visible then
-			group.total = nil
-			group.progress = nil
 			UpdateGroups(group, group.g)
 		end
 	else
@@ -430,10 +552,10 @@ local function DirectGroupRefresh(group, immediate)
 	if window then
 		if immediate then
 			-- app.PrintDebug("DGR:Refresh:Now",group.hash,window.Suffix)
-			Callback(window.Update, window)
+			Callback(window.Refresh, window)
 		else
 			-- app.PrintDebug("DGR:Refresh:Delay",group.hash,window.Suffix)
-			DelayedCallback(window.Update, DGUDelay, window)
+			DelayedCallback(window.Refresh, DGUDelay, window)
 		end
 	else
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!")
@@ -444,7 +566,7 @@ local function DirectGroupRefresh(group, immediate)
 		-- in this situation
 		local window = app.Windows.list
 		if window then
-			DelayedCallback(window.Update, DGUDelay, window)
+			DelayedCallback(window.Refresh, DGUDelay, window)
 		end
 	end
 end
@@ -897,10 +1019,11 @@ local function CreateObject(t, rootOnly)
 					result[k] = v;
 				end
 				t = result;
-			else
-				-- app.PrintDebug("metatable copy of",t.text)
-				t = setmetatable({}, { __index = t });
 			end
+			-- assign a couple base fields and base class to ensure proper data functionality
+			if not t.__type then t.__type = UNKNOWN end
+			if not t.text then t.text = EMPTY end
+			t = setmetatable({}, { __index = setmetatable(t, app.BaseClass) });
 		end
 		-- app.PrintDebug("CO.field","=>",t);
 	end
@@ -976,7 +1099,7 @@ local function MergeObjects(g, g2, newCreate)
 		local o
 		for i=1,#g do
 			o = g[i]
-			local hash = o.hash;
+			local hash = o.hash or GetHash(o);
 			if hash then
 				-- are we merging the same object multiple times from one group?
 				hashObj = hashTable[hash]
@@ -991,7 +1114,7 @@ local function MergeObjects(g, g2, newCreate)
 		if newCreate then
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or GetHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -1010,7 +1133,7 @@ local function MergeObjects(g, g2, newCreate)
 		else
 			for i=1,#g2 do
 				o = g2[i]
-				hash = o.hash;
+				hash = o.hash or GetHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];

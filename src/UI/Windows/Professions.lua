@@ -23,7 +23,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 					return true;
 				end
 			end
-			self.data = app.CreateProfession(professionID, {
+			self:SetData(app.CreateProfession(professionID, {
 				description = "This list shows you all of the recipes you can collect for your profession.",
 				requireSkill = professionID,
 				visible = true,
@@ -99,6 +99,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											for key,value in pairs(mostAccessibleSource) do
 												recipe[key] = value;
 											end
+											recipe.parent = data;
 											recipe.progress = nil;
 											recipe.total = nil;
 											recipe.itemID = nil;
@@ -107,10 +108,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											local specialization = recipe.requireSkill or professionID;
 											recipe.requireSkill = specialization;
 											if specialization ~= professionID then
-												recipe.parent = specializations[specialization];
-												if not recipe.parent then
-													recipe.parent = data;
-												end
+												recipe.parent = specializations[specialization] or data;
 											else
 												if not awp then awp = 10000 end;
 												for i=2,#sources,1 do
@@ -160,7 +158,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 						end
 					end
 				end
-			});
+			}));
 		end,
 	});
 end

@@ -63,15 +63,16 @@ else
 	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
 		if IsPlayerSpell(spellID)
 			or IsSpellKnown(spellID)
-			or IsSpellKnown(spellID, true)
-			or IsSpellKnownOrOverridesKnown(spellID)
-			or IsSpellKnownOrOverridesKnown(spellID, true)
+			or IsSpellKnown(spellID, 1)
+			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
+			or IsSpellKnownOrOverridesKnown(spellID, 1, true)
 			or SpellQuestOverrides[spellID] then
 			return true
 		end
 	end
 end
 app.IsSpellKnownHelper = IsSpellKnownHelper;
+app.IsSpellKnown = IsSpellKnownHelper;
 
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;

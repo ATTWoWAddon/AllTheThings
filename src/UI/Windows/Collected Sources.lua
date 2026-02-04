@@ -22,8 +22,7 @@ end
 app:CreateWindow("Collected Sources", {
 	Commands = { "attcollectedsources" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Collected Sources",
+		self:SetData(app.CreateRawText("Collected Sources", {
 			icon = 134941,
 			description = "This window shows you all of the collected sources (according to Blizzard) tracked by ATT. Go get 'em!",
 			visible = true,
@@ -51,7 +50,7 @@ app:CreateWindow("Collected Sources", {
 					end
 				end
 			end,
-		};
+		}));
 	end
 });
 end

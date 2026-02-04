@@ -54,9 +54,6 @@ end
 
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
-	text = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
 	name = function(t)
 		return app.ObjectNames[t.objectID] or t.basename;
 	end,
@@ -164,14 +161,8 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 function(t) return t.type == "AsGenericObjectContainer" end,
 "AsSubGenericObjectWithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = function(t)
 		-- raw repeatable quests can't really be tracked since they immediately unflag
@@ -191,14 +182,8 @@ function(t) return t.questID and t.type == "AsSubGenericObject" end,
 },
 function(t) return t.type == "AsSubGenericObject" end,
 "WithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: objects tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end
-	-- Retail: typical object collectibility matches Lockable Quest collectibility
-	or app.GlobalVariants.AndLockCriteria.collectible,
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = function(t)
 		-- raw repeatable quests can't really be tracked since they immediately unflag

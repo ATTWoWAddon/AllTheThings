@@ -10,32 +10,25 @@ app:CreateWindow("Locked", {
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Locked Out",
+		self:SetData(app.CreateRawText("Locked Out", {
 			icon = 134236,
 			description = "This window shows you all of the quests and other things that you missed while leveling up. (Such as breadcrumbs or quests that have the choice between one or another)\n\nNOTE: With Party Sync you could go back and do some of these later. (Introduced in patch 8.2.5 during BFA)",
 			visible = true,
 			expanded = true,
 			back = 1,
 			indent = 0,
-			g = { },
 			OnUpdate = function(t)
-				local g = t.g;
-				if #g < 1 then
-					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "locked");
-					if #results > 0 then
-						for i,result in ipairs(results) do
-							tinsert(g, result);
-						end
-						t.OnUpdate = nil;
-						self:AssignChildren();
-						self:ExpandData(true);
-					end
+				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "locked");
+				if g and #g > 0 then
+					t.g = g;
+					t.OnUpdate = nil;
+					self:AssignChildren();
+					self:ExpandData(true);
 				end
 			end,
-		};
+		}));
 	end,
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		self.data.g = {};
 		return true;
 	end,
@@ -51,6 +44,6 @@ app:CreateWindow("Locked", {
 		app.Settings:Set("Thing:QuestsLocked", oldQuestsLocked);
 		app.Settings:SetCollectedThings(oldCollectedThings);
 		app.Settings:SetCompletedGroups(oldCompletedGroups);
-		return false;
+		return true
 	end
 });

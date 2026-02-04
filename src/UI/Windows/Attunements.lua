@@ -1,10 +1,10 @@
 -- App locals
 local _, app = ...;
-local CloneReference = app.CloneReference;
 
 -- Global locals
 local tinsert = tinsert;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
+local GetItemCount = app.WOWAPI.GetItemCount;
 
 -- Module locals
 local function GetAttunementRequirement(t)
@@ -20,7 +20,7 @@ local function GetAttunementRequirement(t)
 					break;
 				end
 			end
-			if bestMatch then return CloneReference(bestMatch); end
+			if bestMatch then return app.CloneClassInstance(bestMatch); end
 		end
 		return app.CreateQuest(questID);
 	else
@@ -33,9 +33,9 @@ local function GetAttunementRequirement(t)
 					for i=1,#searchResults,1 do
 						local item = searchResults[i];
 						if item.key == "itemID" and item.itemID == itemID then
+							item = app.CloneClassInstance(searchResults[i]);
 							if item.OnUpdate then item:OnUpdate(); end
-							if item.GetItemCount and item:GetItemCount() > 0 then
-								item = CloneReference(item);
+							if GetItemCount(itemID, true) > 0 then
 								item.saved = true;
 								return item;
 							else
@@ -50,7 +50,7 @@ local function GetAttunementRequirement(t)
 				end
 			end
 			if not bestMatch then bestMatch = anyMatch; end
-			return bestMatch and CloneReference(bestMatch) or app.CreateItem(itemID);
+			return bestMatch and bestMatch or app.CreateItem(itemID);
 		end
 	end
 
@@ -117,7 +117,7 @@ app:CreateWindow("Attunements", {
 								break;
 							end
 						end
-						return bestMatch and CloneReference(bestMatch);
+						return bestMatch and app.CloneClassInstance(bestMatch);
 					else
 						return app.CreateQuest(specificQuestID);
 					end
@@ -225,8 +225,7 @@ app:CreateWindow("Attunements", {
 			end
 			attunement.OnUpdate = OnUpdateForAttunement;
 		end
-		local attunementsHeader = {
-			text = "Attunements",
+		local attunementsHeader = app.CreateRawText("Attunements", {
 			icon = 135817,
 			description = "This window shows you your current character's attunement progress.",
 			visible = true,
@@ -243,10 +242,10 @@ app:CreateWindow("Attunements", {
 				end
 				data.visible = true;
 			end
-		};
-		self.data = attunementsHeader;
+		});
+		self:SetData(attunementsHeader);
 		self.Reset = function()
-			self.data = attunementsHeader;
+			self:SetData(attunementsHeader);
 			self:Update(true);
 		end
 	end,

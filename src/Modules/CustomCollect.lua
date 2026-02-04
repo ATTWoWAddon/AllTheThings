@@ -139,7 +139,7 @@ local function RefreshCustomCollectibility()
 		SetCustomCollectibility(CCKey, CCfunc)
 	end
 end
-app.AddEventHandler("OnReady", RefreshCustomCollectibility)
+app.AddEventHandler("OnStartup", RefreshCustomCollectibility)
 app.AddEventHandler("OnRecalculate", RefreshCustomCollectibility)
 -- Add if needed
 -- app.AddEventHandler("OnAdd_CustomCollect", function() Callback(RefreshCustomCollectibility) end)

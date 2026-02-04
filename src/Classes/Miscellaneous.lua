@@ -49,7 +49,7 @@ end
 local DynamicCategory_Nested = function(self)
 	-- app.PrintDebug("DC:N",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups,self.dynamic_searchcriteria)
 	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, {g=not self.dynamic_withsubgroups}, self.dynamic_searchcriteria);
+	local groups = app:BuildSearchResponseRetailStyle(self.dynamic, self.dynamic_value, {g=not self.dynamic_withsubgroups}, self.dynamic_searchcriteria);
 	NestObjects(self, groups);
 	-- reset indents and such
 	AssignChildren(self);
@@ -99,7 +99,7 @@ end
 local DynamicCategory_Simple = function(self)
 	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
-		local rootATT = app:GetWindow("Prime").data;
+		local rootATT = app:GetDataCache();
 		local top, thing;
 		local topHeaders, dynamicValue, clearSubgroups = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups;
 		if dynamicValue then
@@ -313,7 +313,7 @@ app.CreateDynamicHeaderByValue = app.CreateClass("DynamicValues", "dynamicValueI
 local BaseClass__class = app.BaseClass.__class
 local VisualHeaderFields = {
 	-- back = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- 	return 0.3	-- visibility of which rows are cloned
 	-- end,
 	__type = function() return "VisualHeader" end,
 	hash = BaseClass__class.hash,
@@ -391,7 +391,7 @@ local CreateNonCollectible, CreateNonCollectible__class = app.CreateClass("NonCo
 	-- back = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
-	collectible = app.EmptyFunction,
+	collectible = Empty,
 });
 -- manually remove the 'key' field since it isn't in BaseClass
 CreateNonCollectible__class.__class.key = nil

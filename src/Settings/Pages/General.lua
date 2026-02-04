@@ -98,9 +98,9 @@ if child.separator then
 else
 	headerMode:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
-app.AddEventHandler("OnSettingsRefreshed", function()
+headerMode.OnRefresh = function()
 	headerMode:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
-end);
+end
 
 local function presetStore()
 	-- Only store our settings if we haven't restored yet, not if we're swapping through presets
@@ -126,7 +126,6 @@ local function presetStore()
 		-- General Things
 		["Thing:Achievements"] = settings:Get("Thing:Achievements"),
 		["Thing:CharacterUnlocks"] = settings:Get("Thing:CharacterUnlocks"),
-		["Thing:DeathTracker"] = settings:Get("Thing:DeathTracker"),
 		["Thing:Exploration"] = settings:Get("Thing:Exploration"),
 		["Thing:FlightPaths"] = settings:Get("Thing:FlightPaths"),
 		["Thing:Quests"] = settings:Get("Thing:Quests"),
@@ -164,7 +163,6 @@ local function presetStore()
 		["AccountMode"] = settings:Get("AccountMode"),
 		["AccountWide:Achievements"] = settings:Get("AccountWide:Achievements"),
 		["AccountWide:CharacterUnlocks"] = settings:Get("AccountWide:CharacterUnlocks"),
-		["AccountWide:DeathTracker"] = settings:Get("AccountWide:DeathTracker"),
 		["AccountWide:Quests"] = settings:Get("AccountWide:Quests"),
 		["AccountWide:Recipes"] = settings:Get("AccountWide:Recipes"),
 		["AccountWide:Reputations"] = settings:Get("AccountWide:Reputations"),
@@ -210,7 +208,6 @@ modeButton:SetScript("OnClick", function()
 				-- General Things
 				settings:Set("Thing:Achievements", settings:Get("PresetRestore")["Thing:Achievements"])
 				settings:Set("Thing:CharacterUnlocks", settings:Get("PresetRestore")["Thing:CharacterUnlocks"])
-				settings:Set("Thing:DeathTracker", settings:Get("PresetRestore")["Thing:DeathTracker"])
 				settings:Set("Thing:Exploration", settings:Get("PresetRestore")["Thing:Exploration"])
 				settings:Set("Thing:FlightPaths", settings:Get("PresetRestore")["Thing:FlightPaths"])
 				settings:Set("Thing:Quests", settings:Get("PresetRestore")["Thing:Quests"])
@@ -248,7 +245,6 @@ modeButton:SetScript("OnClick", function()
 				settings:Set("AccountMode", settings:Get("PresetRestore")["AccountMode"])
 				settings:Set("AccountWide:Achievements", settings:Get("PresetRestore")["AccountWide:Achievements"])
 				settings:Set("AccountWide:CharacterUnlocks", settings:Get("PresetRestore")["AccountWide:CharacterUnlocks"])
-				settings:Set("AccountWide:DeathTracker", settings:Get("PresetRestore")["AccountWide:DeathTracker"])
 				settings:Set("AccountWide:Quests", settings:Get("PresetRestore")["AccountWide:Quests"])
 				settings:Set("AccountWide:Recipes", settings:Get("PresetRestore")["AccountWide:Recipes"])
 				settings:Set("AccountWide:Reputations", settings:Get("PresetRestore")["AccountWide:Reputations"])
@@ -292,7 +288,6 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("Thing:Achievements", false)
 			settings:Set("Thing:CharacterUnlocks", false)
-			settings:Set("Thing:DeathTracker", false)
 			settings:Set("Thing:Exploration", false)
 			settings:Set("Thing:FlightPaths", false)
 			settings:Set("Thing:Quests", false)
@@ -351,7 +346,6 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("Thing:Achievements", false)
 			settings:Set("Thing:CharacterUnlocks", false)
-			settings:Set("Thing:DeathTracker", false)
 			settings:Set("Thing:Exploration", false)
 			settings:Set("Thing:FlightPaths", false)
 			settings:Set("Thing:Quests", false)
@@ -410,7 +404,6 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("Thing:Achievements", true)
 			settings:Set("Thing:CharacterUnlocks", false)
-			settings:Set("Thing:DeathTracker", false)
 			settings:Set("Thing:Exploration", false)
 			settings:Set("Thing:FlightPaths", false)
 			settings:Set("Thing:Quests", true)
@@ -468,18 +461,8 @@ modeButton:SetScript("OnClick", function()
 
 			-- General Things
 			settings:Set("Thing:Achievements", true)
-			if app.IsRetail then
-				settings:Set("Thing:CharacterUnlocks", true)
-			else
-				settings:Set("Thing:CharacterUnlocks", false)
-			end
-			if app.IsClassic then
-				settings:Set("Thing:DeathTracker", true)
-				settings:Set("Thing:Exploration", true)
-			else
-				settings:Set("Thing:DeathTracker", false)
-				settings:Set("Thing:Exploration", false)
-			end
+			settings:Set("Thing:CharacterUnlocks", true)
+			settings:Set("Thing:Exploration", app.IsClassic)
 			settings:Set("Thing:FlightPaths", true)
 			settings:Set("Thing:Quests", true)
 			settings:Set("Thing:QuestsLocked", false)
@@ -532,7 +515,6 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("AccountWide:Achievements", true)
 			settings:Set("AccountWide:CharacterUnlocks", true)
-			settings:Set("AccountWide:DeathTracker", true)
 			settings:Set("AccountWide:Quests", true)
 			settings:Set("AccountWide:Recipes", true)
 			settings:Set("AccountWide:Reputations", true)
@@ -563,7 +545,6 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("AccountWide:Achievements", false)
 			settings:Set("AccountWide:CharacterUnlocks", false)
-			settings:Set("AccountWide:DeathTracker", false)
 			settings:Set("AccountWide:Quests", false)
 			settings:Set("AccountWide:Recipes", false)
 			settings:Set("AccountWide:Reputations", false)
@@ -758,8 +739,7 @@ if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cata
 
 	checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
 	function(self)
-		local _, classFilename = UnitClass("player")
-		local rPerc, gPerc, bPerc = GetClassColor(classFilename)
+		local rPerc, gPerc, bPerc = GetClassColor(app.Class)
 		self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 		self:SetChecked(settings:Get("MainOnly"))
 		if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
@@ -935,29 +915,15 @@ child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements", app.GameBuildVersio
 	:AlignAfter(accwideCheckboxAchievements)
 accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
 
-local accwideCheckboxCharacterUnlocks;
-if app.IsRetail then
--- Crieve doesn't like this class and thinks the functionality should remain on the Quest, Item, or Spell classes.
-accwideCheckboxCharacterUnlocks =
+local accwideCheckboxCharacterUnlocks =
 child:CreateAccountWideCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
 	:AlignBelow(accwideCheckboxAchievements)
 child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks", true)
 	:AlignAfter(accwideCheckboxCharacterUnlocks)
-end
-
-local accwideCheckboxDeaths;
-if app.IsClassic then
--- Classic wants you to collect these, but Retail doesn't yet.
-accwideCheckboxDeaths =
-child:CreateAccountWideCheckbox("DEATHS", "DeathTracker")
-	:AlignBelow(accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
-child:CreateTrackingCheckbox("DEATHS", "DeathTracker", true)
-	:AlignAfter(accwideCheckboxDeaths)
-end
 
 local accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
-	:AlignBelow(accwideCheckboxDeaths or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
+	:AlignBelow(accwideCheckboxCharacterUnlocks)
 local explorationCheckbox = child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
 	:AlignAfter(accwideCheckboxExploration)
 if app.IsRetail then
@@ -979,10 +945,8 @@ child:CreateTrackingCheckbox("QUESTS", "Quests", true)
 local checkboxQuestsLocked =
 child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked", true)
 	:AlignAfter(checkboxQuests)
-if app.IsRetail then
 	child:CreateTrackingCheckbox("QUESTS_HIDDEN_TRACKER", "QuestsHidden", true)
 		:AlignAfter(checkboxQuestsLocked)
-end
 
 local accwideCheckboxRecipes =
 child:CreateAccountWideCheckbox("RECIPES", "Recipes")
@@ -1108,22 +1072,11 @@ function(self)
 end)
 checkboxNoLevelFilter:SetATTTooltip(L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP)
 checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
-if app.IsClassic then
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		if settings:Get("Filter:ByLevel") then
-			settings:Refresh();
-
-			-- TODO: Investigate if this is necessary of if the above code handles that.
-			app:RefreshDataCompletely("PLAYER_LEVEL_UP");
-		end
-	end);
-else
-	app.AddEventHandler("OnPlayerLevelUp", function()
-		if settings:Get("Filter:ByLevel") then
-			settings:Refresh();
-		end
-	end);
-end
+app.AddEventHandler("OnPlayerLevelUp", function()
+	if settings:Get("Filter:ByLevel") then
+		settings:Refresh();
+	end
+end);
 
 local checkboxNoSkillLevelFilter;
 if app.GameBuildVersion < 20000 then

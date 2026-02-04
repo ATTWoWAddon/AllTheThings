@@ -46,6 +46,8 @@ local function ParsePatch(cmd)
 	local expansionKey = ExpansionKeywords[cmd];
 	if expansionKey then
 		return expansionKey[1] * 10000, expansionKey[2] * 10000;
+	elseif cmd == "current" then
+		return app.GameBuildVersion;
 	else
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
@@ -85,11 +87,11 @@ local function ParseCommand(self, cmd)
 	end
 end
 
-
 -- Implementation
 app:CreateWindow("Added With Patch", {
 	Commands = { "attawp" },
-	OnCommand = function(self, cmd)
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
 		if cmd and cmd ~= "" then
 			ParseCommand(self, cmd);
 			if self:IsShown() then
@@ -107,9 +109,8 @@ app:CreateWindow("Added With Patch", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			{	-- Patch
+			app.CreateRawText(RETRIEVING_DATA, {	-- Patch
 				prefix = "Patch: ",
-				text = RETRIEVING_DATA,
 				icon = 134941,
 				description = "Press this button to change the patch.\n\nChanging this value will filter out items that get added during the given patch.",
 				visible = true,
@@ -126,7 +127,7 @@ app:CreateWindow("Added With Patch", {
 							str = "0-" .. GetPatchString(MaxPatch);
 						end
 					end
-					app:ShowPopupDialogWithEditBox("Please enter a new patch", str, function(cmd)
+					app:ShowPopupDialogWithEditBox("Please enter a new patch", str or app.GameBuildVersion, function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;
@@ -144,16 +145,15 @@ app:CreateWindow("Added With Patch", {
 						end
 					end
 					if str then
-						data.text = data.prefix .. Colorize(str, app.Colors.AddedWithPatch);
+						data.strKey = data.prefix .. Colorize(str, app.Colors.AddedWithPatch);
 					else
-						data.text = data.prefix;
+						data.strKey = data.prefix;
 					end
-					return true;
+					return app.AlwaysShowUpdate(data);
 				end,
-			},
+			}),
 		};
-		self.data = {
-			text = L.ADDED_WITH_PATCH,
+		self:SetData(app.CreateRawText(L.ADDED_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -192,10 +192,11 @@ app:CreateWindow("Added With Patch", {
 								tinsert(g, result);
 							end
 						end
+						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						self:AssignChildren();
 					end
 				end
 			end,
-		};
+		}));
 	end,
 });

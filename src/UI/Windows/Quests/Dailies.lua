@@ -6,15 +6,14 @@ app:CreateWindow("Dailies", {
 	AllowCompleteSound = true,
 	Commands = { "attdailies" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Dailies",
+		self:SetData(app.CreateRawText("Dailies", {
 			icon = app.asset("Interface_Questd"),
 			description = "You can search the ATT Database for all Dailies. All quests displayed are 'incomplete', despite ATT sometimes showing completion for them. If you have a daily 'completed' in ATT, that simply means that you've reached Exalted with the associated reputation if there is one.",
 			visible = true,
 			expanded = true,
 			back = 1,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponse(app:GetDataCache().g, "isDaily", 1);
+				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "isDaily");
 				if g and #g > 0 then
 					t.g = g;
 					t.OnUpdate = nil;
@@ -22,7 +21,7 @@ app:CreateWindow("Dailies", {
 					self:ExpandData(true);
 				end
 			end
-		};
+		}));
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
@@ -30,6 +29,6 @@ app:CreateWindow("Dailies", {
 		app.Modules.Filter.Set.Trackable(true);
 		self:DefaultUpdate(...);
 		app.Modules.Filter.Set.Trackable(state);
-		return false;
+		return true;
 	end
 });

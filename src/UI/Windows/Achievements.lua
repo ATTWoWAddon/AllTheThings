@@ -96,10 +96,9 @@ end;
 app:CreateWindow("Achievements", {
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
-	Commands = { "attach", "attachievements" },
-	RootCommandIndex = 2,
+	Commands = { "attachievements", "attach" },
 	OnInit = function(self, handlers)
-		self.data = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
 			description = "This list shows you all of the achievements that you can collect.",
 			IgnoreBuildRequests = true,
 			visible = true,
@@ -216,7 +215,7 @@ app:CreateWindow("Achievements", {
 				app.Sort(data.g, achievementSort, true);
 				data.OnUpdate = nil;
 			end
-		});
+		}));
 		if not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
 			self.data.description = "This section isn't a thing until Wrath, but by popular demand and my own insanity, I've added this section so you can track your progress for at least one of the big ticket achievements if you have the stomach for it.";
 		end

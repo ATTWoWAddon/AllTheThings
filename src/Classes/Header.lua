@@ -104,15 +104,18 @@ end
 
 -- Automatic Type Header
 do
-	local KEY = "headerID"
-	app.CreateHeader = app.CreateClass("AutoHeader", KEY, {
+	app.CreateHeader = app.CreateClass("AutoHeader", "autoHeaderID", {
 		IsClassIsolated = true,
 		headerCode = function(t)
 			if t.type then
-				return t.type..t.headerID;
+				return t.type..t.autoHeaderID;
 			else
-				return t.headerID;
+				return t.autoHeaderID;
 			end
+		end,
+		headerID = function(t)
+			-- CRIEVE NOTE: This is because there's mini list logic that sorts by this.
+			return t.autoHeaderID;
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);

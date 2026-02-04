@@ -273,9 +273,9 @@ end or function(item)
 		return true;
 	end
 end);
-app.AddEventHandler("OnStartup", function()
-	Professions = app.CurrentCharacter.Professions
-	ActiveSkills = app.CurrentCharacter.ActiveSkills
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter)
+	Professions = currentCharacter.Professions
+	ActiveSkills = currentCharacter.ActiveSkills
 end)
 
 -- Class

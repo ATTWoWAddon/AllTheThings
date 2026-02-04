@@ -9,8 +9,11 @@ local L = app.L
 -- Global locals
 local rawget, ipairs, pairs, type,math_min,wipe
 	= rawget, ipairs, pairs, type,math.min,wipe
-local PlayerHasToy, C_CurrencyInfo_GetCurrencyInfo
-	= PlayerHasToy, C_CurrencyInfo.GetCurrencyInfo
+local PlayerHasToy
+	= PlayerHasToy
+
+-- WoW API Cache
+local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
 local SearchForFieldContainer, GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
@@ -148,7 +151,7 @@ local function BlockedParent(group)
 	end
 end
 local CurrencyAmounts = setmetatable({}, { __index = function(t, key)
-	local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(key)
+	local currencyInfo = GetCurrencyInfo(key)
 	t[key] = (currencyInfo and currencyInfo.quantity) or 0
 	return t[key]
 end})
@@ -209,7 +212,7 @@ local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
 			parent = c.parent
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
-				c.isCost = isCost;
+				c.isCost = isCost
 				-- PrintDebug(costID, "Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
@@ -336,7 +339,7 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 		isProv = PlayerIsMissingProviderItem(itemID)
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isProv and "IS PROV" or "NOT PROV")
 	end
-	local isOwnedCost = not isCost and owned > 0
+	local isOwnedCost = (not isCost and owned > 0) or nil
 	SetCostTotals(costs, isCost or isProv, refresh, itemID, isOwnedCost)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
@@ -437,11 +440,18 @@ local function CostCalcComplete()
 	if app.Debugging then
 		app.print("Cost Updates Done")
 	end
-	for suffix,window in pairs(app.Windows) do
-		if suffix ~= "Prime" then
-			-- TODO: I don't like this, find a way to make it not necessary when Cost updates are performed
-			-- app.PrintDebug("Refresh after Costs",window.Suffix)
+	if app.IsClassic then
+		-- There isn't a lot of data, LET 'ER RIP!
+		for suffix,window in pairs(app.Windows) do
 			app.UpdateRunner.Run(window.Update, window, true)
+		end
+	else
+		for suffix,window in pairs(app.Windows) do
+			if suffix ~= "Prime" then
+				-- TODO: I don't like this, find a way to make it not necessary when Cost updates are performed
+				-- app.PrintDebug("Refresh after Costs",window.Suffix)
+				app.UpdateRunner.Run(window.Update, window, true)
+			end
 		end
 	end
 end

@@ -158,8 +158,7 @@ app:CreateWindow("Objects", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnLoad = function(self, settings)
-		self.data = {
-			text = "Object Debugger",
+		self:SetData(app.CreateRawText("Object Debugger", {
 			icon = app.asset("WindowIcon_RaidAssistant"),
 			description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
 			back = 1,
@@ -170,8 +169,7 @@ app:CreateWindow("Objects", {
 			OnUpdate = function(data)
 				local g = data.g;
 				if #g < 1 then
-					tinsert(g, {	-- Check Icons
-						text = "Check Icons",
+					tinsert(g, app.CreateRawText("Check Icons", {
 						icon = 135468,
 						description = "Click this row to toggle icon checking",
 						collectible = true,
@@ -188,9 +186,8 @@ app:CreateWindow("Objects", {
 							data.visible = true;
 							return true;
 						end,
-					});
-					tinsert(g, {	-- Check Models
-						text = "Check Models",
+					}));
+					tinsert(g, app.CreateRawText("Check Models", {
 						icon = 135468,
 						description = "Click this row to toggle model checking",
 						collectible = true,
@@ -207,7 +204,7 @@ app:CreateWindow("Objects", {
 							data.visible = true;
 							return true;
 						end,
-					});
+					}));
 
 					-- Cache and sort all of the objectIDs we reference in our DB.
 					local objectIDs = {};
@@ -226,6 +223,6 @@ app:CreateWindow("Objects", {
 					end
 				end
 			end
-		};
+		}));
 	end,
 });

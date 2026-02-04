@@ -14,11 +14,7 @@ local toyFields = {
 	collectible = function(t)
 		return app.Settings.Collectibles[CACHE];
 	end,
-	collected = app.IsClassic and function(t)
-		-- really don't want the evaluation of whether something is collected to be forcibly executed on EVERY check
-		-- should be a cached check with a re-evaluation if not cached state
-		return app.SetCollected(t, CACHE, t[KEY], GetItemCount(t[KEY], true) > 0);
-	end or function(t)
+	collected = function(t)
 		return app.TypicalAccountCollected(CACHE, t[KEY])
 	end,
 	itemID = function(t)
@@ -51,15 +47,7 @@ local IsToyBNETCollectible = setmetatable({}, {
 		end
 	end
 });
-toyFields.collected = app.IsClassic and function(t)
-	local toyID = t[KEY];
-	if IsToyBNETCollectible[t[KEY]] then
-		if AccountWideToyData[toyID] then return 1; end	-- Once acquired, you can't unaquire them.
-		return app.SetAccountCollected(t, CACHE, toyID, PlayerHasToy(toyID));
-	else
-		return app.SetCollected(t, CACHE, toyID, GetItemCount(toyID, true) > 0);
-	end
-end or function(t)
+toyFields.collected = function(t)
 	return app.TypicalAccountCollected(CACHE, t[KEY])
 end;
 toyFields.description = function(t)
@@ -75,35 +63,22 @@ app.AddEventRegistration("TOYS_UPDATED", app.IsRetail and function(itemID, new)
 end or function(toyID, new)
 	if toyID then
 		app.SetAccountCollected(app.SearchForField(KEY, toyID)[1] or app.CreateToy(toyID), CACHE, toyID, PlayerHasToy(toyID));
-		app:RefreshDataQuietly("TOYS_UPDATED", true);
 	end
 end)
-if app.IsClassic then
-	app.AddEventHandler("OnRefreshCollections", function()
-		-- Refresh Toys
-		local collected;
-		for id,t in pairs(app.GetRawFieldContainer("toyID")) do
-			if #t > 0 then
-				collected = t[1].collected;	-- Run the collected field's code.
-			end
+app.AddEventHandler("OnRefreshCollections", function()
+	local saved, none = {}, {}
+	for id,_ in pairs(app.GetRawFieldContainer("toyID")) do
+		if PlayerHasToy(id) then
+			saved[id] = true
+		else
+			none[id] = true
 		end
-	end);
-else
-	app.AddEventHandler("OnRefreshCollections", function()
-		local saved, none = {}, {}
-		for id,_ in pairs(app.GetRawFieldContainer("toyID")) do
-			if PlayerHasToy(id) then
-				saved[id] = true
-			else
-				none[id] = true
-			end
-		end
+	end
 
-		-- Account Cache
-		app.SetBatchAccountCached(CACHE, saved, 1)
-		app.SetBatchAccountCached(CACHE, none)
-	end)
-end
+	-- Account Cache
+	app.SetBatchAccountCached(CACHE, saved, 1)
+	app.SetBatchAccountCached(CACHE, none)
+end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end

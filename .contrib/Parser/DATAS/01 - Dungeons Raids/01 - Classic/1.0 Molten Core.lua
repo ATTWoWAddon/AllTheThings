@@ -105,9 +105,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
-						-- #if ANYCLASSIC
+						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
 						["classes"] = SWORD_CLASSES,
 						-- #endif
 						["lvl"] = 60,
@@ -123,16 +123,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						-- #if NOT ANYCLASSIC
+						-- #if NOT OBJECTIVES
 						["cost"] = {
 							{ "i", 17771, 10 },	-- Elementium Bar x10
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
 						-- #endif
-						-- #if ANYCLASSIC
+						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
 						["classes"] = SWORD_CLASSES,
 						-- #endif
 						["lvl"] = 60,
@@ -142,14 +142,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #if SEASON_OF_DISCOVERY
 								-- #if BEFORE 1.15.4
 								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
-								-- #endif
-								-- #endif
 								["cost"] = {
 									{ "i", 18562,  10 },	-- Elementium Ore
 									{ "i", 12360, 100 },	-- Arcanite Bar
 									{ "i", 17010,  10 },	-- Fiery Core
 									{ "i", 18567,  30 },	-- Elemental Flex
 								},
+								-- #endif
+								-- #endif
 							}),
 							objective(2, {	-- 0/1 Essence of the Firelord
 								["provider"] = { "i", 19017 },	-- Essence of the Firelord
@@ -162,7 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							n(14435, {	-- Prince Thunderaan <The Wind Seeker>
 								["description"] = "This is a 40-man raid boss.",
-								-- #if ANYCLASSIC
+								-- #if BEFORE MOP
 								["modelScale"] = 20,
 								-- #endif
 								["groups"] = { i(19018) },	-- Dormant Wind Kissed Blade
@@ -174,16 +174,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 						["coord"] = { 21.7, 8.6, SILITHUS },
-						-- #if ANYCLASSIC
+						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
 						["classes"] = SWORD_CLASSES,
 						-- #endif
 						["lvl"] = 60,
 						["groups"] = {
 							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 								["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
-								["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
+								["classes"] = SWORD_CLASSES,
 							}),
 							i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 						},

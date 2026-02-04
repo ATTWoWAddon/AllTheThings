@@ -19,7 +19,7 @@ local api = {};
 app.Modules.Symlink = api;
 
 -- Module locals
-local ResolveSymbolicLink, FinalizeModID, PruneFinalized, FillFinalized, SelectMod, CreateObject, NestObject, NestObjects, MergeProperties, ExpandGroupsRecursively, MergeObjects, PriorityNestObjects, GetGroupItemIDWithModID, GetItemIDAndModID, FillGroups, NPCExpandHeaders
+local ResolveSymbolicLink, FinalizeModID, PruneFinalized, FillFinalized, SelectMod, CreateObject, NestObject, NestObjects, MergeProperties, MergeObjects, PriorityNestObjects, GetGroupItemIDWithModID, GetItemIDAndModID, FillGroups, NPCExpandHeaders
 
 app.AddEventHandler("OnLoad", function()
 	CreateObject = app.__CreateObject
@@ -46,10 +46,6 @@ app.AddEventHandler("OnLoad", function()
 	MergeProperties = app.MergeProperties
 	if not MergeProperties then
 		error("Symlink Module requires app.MergeProperties definition!")
-	end
-	ExpandGroupsRecursively = app.ExpandGroupsRecursively
-	if not ExpandGroupsRecursively then
-		error("Symlink Module requires app.ExpandGroupsRecursively definition!")
 	end
 	GetGroupItemIDWithModID = app.GetGroupItemIDWithModID
 	if not GetGroupItemIDWithModID then
@@ -162,11 +158,6 @@ local ResolveFunctions = {
 			end
 		end
 		app.print("'selectparent' failed for",o.hash);
-	end,
-	-- Instruction to find all content marked with the specified 'requireSkill'
-	selectprofession = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponse("requireSkill", requireSkill);
-		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
 	fill = function(finalized, searchResults, o)
@@ -964,7 +955,7 @@ local function ResolveSymlinkGroupAsync(group)
 		app.FillGroups(group);
 		AssignChildren(group);
 		-- auto-expand the symlink group
-		ExpandGroupsRecursively(group, true);
+		app.ExpandGroupsRecursively(group, true);
 		app.DirectGroupUpdate(group);
 	end
 end

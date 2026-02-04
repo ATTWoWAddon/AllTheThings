@@ -10,6 +10,7 @@ local type,pairs,setmetatable,rawget,unpack,rawset,select
 local GetRelativeValue = app.GetRelativeValue;
 local containsValue = app.containsValue;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local TryColorizeName = app.TryColorizeName
 
 -- Lib Helpers
 local constructor = function(id, t, typeID)
@@ -123,7 +124,7 @@ local DefaultFields = {
 	end,
 	-- Default text should be a valid link or name
 	["text"] = function(t)
-		return t.link or t.name;
+		return t.link or TryColorizeName(t, t.name)
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 	["modItemID"] = function(t)
@@ -270,18 +271,6 @@ local DefaultFields = {
 	end,
 };
 
-if app.IsRetail then
-	local TryColorizeName = app.TryColorizeName
-	-- Crieve doesn't see these fields being included as necessary,
-	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
-	-- Default text should be a valid link or name
-	-- In Retail, text can be colored and can be based on a variety of possible fields
-	-- trying to individually maintain variable coloring in every object class is quite absurd
-	DefaultFields.text = function(t)
-		return t.link or TryColorizeName(t)
-	end
-end
-
 
 local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -355,6 +344,18 @@ or function(fields, className)
 	}
 end
 app.BaseClass = CreateClassMeta(nil, "BaseClass");
+
+-- Extend the existing classes with a new field function handler.
+app.ExtendBaseClassHandler = function(field, handler)
+	if not DefaultFields[field] then
+		DefaultFields[field] = handler;
+		for key,class in pairs(classDefinitions) do
+			if rawget(class, field) == nil then
+				class[field] = handler;
+			end
+		end
+	end
+end
 
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
@@ -608,20 +609,6 @@ local function AppendVariantConditionals(conditionals, class)
 		end
 	end
 end
-local GenerateSimpleMetaClass = app.EmptyFunction
--- Only Classic utilizes this 'simplemeta' since the cost logic works completely different than in Retail
-if app.IsClassic then
-GenerateSimpleMetaClass = function(fields,name,subname)
-	if fields.collectibleAsCost then
-		local simpleclass = CloneDictionary(fields, {
-			collectibleAsCost = app.ReturnFalse
-		})
-		simpleclass.collectedAsCost = nil
-		local simplemeta = CreateClassMeta(simpleclass, "Simple" .. name .. (subname or ""))
-		fields.simplemeta = function(t) return simplemeta end
-	end
-end
-end
 
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
@@ -655,9 +642,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 		ImportClassFunctions(fields, fields.ImportFrom, unpack(fields.ImportFields))
 	end
 
-	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
-	GenerateSimpleMetaClass(fields, className)
-
 	local args = { ... };
 	local total = #args;
 	local Class = CreateClassMeta(fields, className);
@@ -677,7 +661,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 					if subfields.ImportFrom then
 						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
 					end
-					GenerateSimpleMetaClass(subfields, className, subclassName)
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
 					GenerateVariantClasses(subclass)
 					AppendVariantConditionals(conditionals, subclass)
@@ -837,6 +820,7 @@ local OverrideBaseClassFields = {
 	isContainer = true,
 	costTotal = true,
 	upgradeTotal = true,
+	summaryText = true,
 }
 -- Allows wrapping one Type Object with another Type Object. This allows for fall-through field logic
 -- without requiring a full copied definition of identical field functions and raw Object content
@@ -972,19 +956,22 @@ app.GetOrCreateCache = function(idField, className)
 	return app.CreateCache(idField, className)
 end
 
--- Allows creating a group which is keyed based on only its 'text' field
-app.CreateRawText = app.CreateClass("RawText", "text", {
+-- Allows creating a group which is keyed based on only its 'name' field
+app.CreateRawText = app.CreateClass("RawText", "strKey", {
 	name = function(t)
-		return t.text
+		return t.strKey;
 	end,
 	isHeader = app.ReturnTrue,
 })
 
+local DLOBaseOverrides = {
+	visible = true,
+}
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local o;
-	local def = {}
+	local def
 	local params = {...};
 	local loader = {
 		__index = function(t, key)
@@ -1000,7 +987,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, "__o", o);
 				-- allow the object to reference the DLO if needed
 				o.__dlo = t;
-				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
+				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash,"visible:",o.visible,t.visible)
 				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
 				if overrides.OnLoad then overrides.OnLoad(o); end
 			end
@@ -1008,23 +995,24 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- override for the object
 			local override = overrides and overrides[key];
 			if override ~= nil then
-				-- app.PrintDebug("DLO:override",key,":",override)
+				-- app.PrintDebug("DLO:override",o,key,":",override)
 				-- overrides can also be a function which will execute once the object has been created
-				if o and type(override) == "function" then
-					return override(o, key);
+				if type(override) == "function" then
+					if o then
+						return override(o, key);
+					end
+					-- functions retrieved prior to o generation should pass to other defaults
 				else
 					return override;
 				end
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
-			-- otherwise ensure visible
-			elseif key == "visible" then
-				-- app.PrintDebug("dlo.visible",unpack(params))
-				return true;
 			end
+			local basedef = DLOBaseOverrides[key]
+			if basedef ~= nil then return basedef end
 			-- return any default value
-			return def[key]
+			if def then return def[key] end
 		end,
 		-- transfer field sets to the underlying object if the field does not have an override for the object
 		__newindex = function(t, key, val)
@@ -1037,7 +1025,8 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, key, val);
 			else
 				-- allow direct assignment prior to o creation to the set of default fields
-				def[key] = val
+				if not def then def = {[key]=val}
+				else def[key] = val end
 			end
 		end,
 	};

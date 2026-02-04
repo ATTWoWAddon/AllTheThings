@@ -6,9 +6,7 @@ app:CreateWindow("Quests", {
 	AllowCompleteSound = true,
 	Commands = { "attquests" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Quests",
-			icon = 132049,
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.QUESTS, {
 			description = "This window shows you all of the quests (based on filters) that you can complete. Go get 'em!\n\nNOTE: This window will not include quest items used to complete quests, but will show all of the associated quest rewards.",
 			visible = true,
 			expanded = true,
@@ -22,6 +20,6 @@ app:CreateWindow("Quests", {
 					self:ExpandData(true);
 				end
 			end
-		};
+		}));
 	end,
 });

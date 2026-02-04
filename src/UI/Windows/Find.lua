@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+if app.IsRetail then return; end
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -15,7 +16,7 @@ local C_Item_GetItemInventoryTypeByID = C_Item and C_Item.GetItemInventoryTypeBy
 app:CreateWindow("ItemFinder", {
 	HideFromSettings = true,
 	Commands = { "attfinditems" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
 			ItemHarvester.AllTheThingsIgnored = true;
@@ -239,8 +240,7 @@ app:CreateWindow("ItemFinder", {
 					return true;
 				end,
 			};
-			self.data = {
-				text = "Item Finder",
+			self:SetData(app.CreateRawText("Item Finder", {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -252,7 +252,7 @@ app:CreateWindow("ItemFinder", {
 				minItemID = 1,
 				step = 1000,
 				g = { ClearButton, StartButton }
-			};
+			}));
 		end
 	end,
 	OnUpdate = function(self, ...)
@@ -262,6 +262,7 @@ app:CreateWindow("ItemFinder", {
 		UpdateGroups(data, data.g);
 		self:DefaultUpdate(...);
 		if data.OnUpdate then data.OnUpdate(data); end
+		return true
 	end,
 	--[[
 	OnRefresh = function(self, ...)
@@ -296,7 +297,7 @@ app:CreateWindow("ItemFinder", {
 app:CreateWindow("QuestFinder", {
 	HideFromSettings = true,
 	Commands = { "attfindquests" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local CreateQuestHarvester = app.ExtendClass("Quest", "QuestHarvester", "questID", {
 				IsClassIsolated = true,
@@ -322,8 +323,7 @@ app:CreateWindow("QuestFinder", {
 			function(t)
 				return #SearchForField("questID", t.questID) == 0;
 			end);
-			self.data = {
-				text = "Quest Finder",
+			self:SetData(app.CreateRawText("Quest Finder", {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -356,7 +356,7 @@ app:CreateWindow("QuestFinder", {
 						end
 					end
 				end
-			};
+			}));
 		end
 	end,
 	OnUpdate = function(self, ...)
@@ -365,6 +365,7 @@ app:CreateWindow("QuestFinder", {
 		UpdateGroups(self.data, self.data.g);
 		self:DefaultUpdate(...);
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		return true
 	end,
 	OnRefresh = function(self, ...)
 		self:DelayedCall("Update", 5);
@@ -374,7 +375,7 @@ app:CreateWindow("QuestFinder", {
 app:CreateWindow("SpellFinder", {
 	HideFromSettings = true,
 	Commands = { "attfindspells" },
-	OnRebuild = function(self, ...)
+	OnRebuild = function(self)
 		if not self.data then
 			local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
 				IsClassIsolated = true,
@@ -400,8 +401,7 @@ app:CreateWindow("SpellFinder", {
 			function(t)
 				return #SearchForField("spellID", t.spellID) == 0;
 			end);
-			self.data = {
-				text = "Spell Finder",
+			self:SetData(app.CreateRawText("Spell Finder", {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -434,7 +434,7 @@ app:CreateWindow("SpellFinder", {
 						end
 					end
 				end
-			};
+			}));
 		end
 	end,
 	OnUpdate = function(self, ...)
@@ -443,6 +443,7 @@ app:CreateWindow("SpellFinder", {
 		UpdateGroups(self.data, self.data.g);
 		self:DefaultUpdate(...);
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		return true
 	end,
 	OnRefresh = function(self, ...)
 		self:DelayedCall("Update", 5);

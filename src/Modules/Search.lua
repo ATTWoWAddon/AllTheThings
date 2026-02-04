@@ -66,6 +66,7 @@ local KeyMaps = setmetatable({
 	enchant = "spellID",
 	fp = "flightpathID",
 	follower = "followerID",
+	gameobject = "objectID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
 	["journal:0"] = "instanceID",
@@ -92,6 +93,18 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
+-- For external use of obtaining the proper Search Key field
+api.GetSearchKeyField = function(kind)
+	return KeyMaps[kind:lower():gsub("id", "")]
+end
+-- For external use of obtaining the proper Search Key field
+api.GetKeyField = function(kind)
+	local key = KeyMaps[kind:lower():gsub("id", "")]
+	if key == "modItemID" then
+		return "itemID"
+	end
+	return key
+end
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
@@ -459,7 +472,7 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(field, value, drop, criteria)
+function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)
 	return app:BuildTargettedSearchResponse(app:GetDataCache(), field, value, drop, criteria)
 end
 -- Collects a cloned hierarchy of groups within the given target 'groups' which have the field and/or value within the given field. Specify 'clear' if found groups which match
@@ -527,7 +540,7 @@ app.SearchAndOpen = function(search)
 	end
 
 	-- expand the hierarchy to each search result
-	local DGR = app.DirectGroupRefresh
+	local DGU = app.DirectGroupUpdate
 	local GetRelative = app.GetRelativeRawWithField
 	local windows = {}
 	local window, o
@@ -542,12 +555,12 @@ app.SearchAndOpen = function(search)
 			window:SetVisible(true)
 
 			-- collapse all the groups
-			app.ExpandGroupsRecursively(window.data, false, true)
+			app.ForceExpandGroupsRecursively(window.data, false)
 		end
 		-- force the search results to be visible
 		o.forceShow = true
 		-- DGU them to chain visibility
-		DGR(o)
+		DGU(o)
 		o = o.parent
 		while o do
 			o.expanded = true

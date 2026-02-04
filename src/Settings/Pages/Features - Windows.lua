@@ -1,24 +1,14 @@
 local _, app = ...;
-if app.IsRetail then return; end
-
 local L, settings = app.L, app.Settings;
 
 -- Settings: Windows Page
 local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
 
--- CONTENT
-local headerSync = child:CreateHeaderLabel(L.WINDOWS_PAGE)
-if child.separator then
-	headerSync:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerSync:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
 -- Window Manager
 local WindowButtons = {};
 local function OnClickForWindowButton(self)
 	HideUIPanel(SettingsPanel);
-	self.Window:Show();
+	app:GetWindow(self.Suffix):Show();
 end
 local function UpdateButtonText(self, window)
 	local text = window.SettingsName;
@@ -31,14 +21,6 @@ local function UpdateButtonText(self, window)
 end
 local function OnTooltipForWindowButton(self, tooltipInfo)
 	local window = self.Window;
-	if window.forceFullDataRefresh and not window.CachedTotalsForSettings then
-		window.CachedTotalsForSettings = true;
-		if IsShiftKeyDown() then
-			window:ForceRebuild();
-		else
-			window:ForceUpdate();
-		end
-	end
 	UpdateButtonText(self, window);
 	tinsert(tooltipInfo, { left = self:GetText() });
 	tinsert(tooltipInfo, { left = " " });
@@ -46,8 +28,8 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 	-- Assign the Text Label and Tooltip
 	local data = window.data;
 	if data then
-		local progressText = app.GetProgressTextForTooltip(data);
-		if progressText then tinsert(tooltipInfo, { progress = progressText }); end
+		local summaryText = app.GetProgressTextForTooltip(data);
+		if summaryText then tinsert(tooltipInfo, { summaryText = summaryText }); end
 		local description = data.description;
 		if description then tinsert(tooltipInfo, { left = "|cffffffff" .. description .. "|r\n\n", wrap = true }); end
 	end
@@ -59,7 +41,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		end
 		tinsert(tooltipInfo, { left = "Commands: |cffcccccc" .. commands .. "|r" });
 	end
-	if window.forceFullDataRefresh then
+	if window.HasPendingUpdate then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
 			left = L["UPDATES_PAUSED"],
@@ -68,9 +50,16 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		});
 	end
 end
-
-app.AddEventHandler("OnSettingsRefreshed", function()
+local function RefreshWindowManager()
 	local keys,sortedList,topKeys = {},{},{};
+	for suffix,window in pairs(app.WindowDefinitions) do
+		app:GetWindow(suffix);
+		if window.IsTopLevel then
+			tinsert(topKeys, suffix);
+		else
+			keys[suffix] = window;
+		end
+	end
 	for suffix,window in pairs(app.Windows) do
 		if window.IsTopLevel then
 			tinsert(topKeys, suffix);
@@ -88,23 +77,25 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	local j = 0;
 	for i,suffix in ipairs(sortedList) do
 		local window = app.Windows[suffix];
-		if window and not window.dynamic and window.Commands and not window.HideFromSettings then
-			j = j + 1;
-			local button = WindowButtons[j];
-			if not button then
-				button = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-				button:RegisterForClicks("AnyUp");
-				button:SetScript("OnClick", OnClickForWindowButton);
-				button.OnTooltip = OnTooltipForWindowButton;
-				button:SetATTTooltip();
-				tinsert(WindowButtons, button);
-			end
-			button.Window = window;
-			button.Suffix = window.Suffix;
-			UpdateButtonText(button, window);
+		if window then
+			if not window.dynamic and window.Commands and not window.HideFromSettings then
+				j = j + 1;
+				local button = WindowButtons[j];
+				if not button then
+					button = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
+					button:RegisterForClicks("AnyUp");
+					button:SetScript("OnClick", OnClickForWindowButton);
+					button.OnTooltip = OnTooltipForWindowButton;
+					button:SetATTTooltip();
+					tinsert(WindowButtons, button);
+				end
+				button.Window = window;
+				button.Suffix = window.Suffix;
+				UpdateButtonText(button, window);
 
-			-- TODO: Preferred new style, once we get the window template designed
-			--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
+				-- TODO: Preferred new style, once we get the window template designed
+				--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
+			end
 		end
 	end
 	local parent = child.separator or child;
@@ -137,4 +128,82 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	for i=#WindowButtons,j+1,-1 do
 		WindowButtons[i]:Hide();
 	end
+end;
+child:SetScript("OnShow", function(self)
+	self.OnRefresh = RefreshWindowManager;
+	self:SetScript("OnShow", nil);
+end);
+
+
+-- Settings: Windows Style Page
+local PageTitle = "Style";
+local ConfigurationStyles = {
+	SetFlat = {
+		Title = "Category & Flat Options",
+	},
+};
+local WindowStyleButtons = {};
+local function OnClickForWindowStyleButton(self)
+	local window = app:GetWindow(self.Suffix);
+	window:ToggleFlat();
+	window:Show();
+end
+local function RefreshWindowStyles(self)
+	local lastChild, lastXOffset, lastYOffset = self.separator, 8, -8;
+	for configKey,config in pairs(ConfigurationStyles) do
+		local windows = config.windows;
+		if not windows then
+			windows = {};
+			config.windows = windows;
+		end
+		for suffix,window in pairs(app.WindowDefinitions) do
+			if window[configKey] then
+				windows[suffix] = window;
+			end
+		end
+		for suffix,window in pairs(app.Windows) do
+			if window[configKey] then
+				windows[suffix] = window;
+			end
+		end
+		local styleHeader = config.styleHeader;
+		if not styleHeader then
+			styleHeader = self:CreateHeaderLabel(config.Title)
+			styleHeader:SetPoint("TOPLEFT", lastChild, "BOTTOMLEFT", lastXOffset, lastYOffset);
+			config.styleHeader = styleHeader;
+		end
+		lastChild = styleHeader;
+		lastXOffset = 0;
+		
+		local buttons = config.buttons;
+		if not buttons then
+			buttons = {};
+			config.buttons = buttons;
+		end
+		
+		local buttonIndex = 1;
+		for suffix,window in pairs(windows) do
+			local button = buttons[buttonIndex];
+			if not button then
+				button = CreateFrame("Button", nil, self, "UIPanelButtonTemplate");
+				button:RegisterForClicks("AnyUp");
+				button:SetScript("OnClick", OnClickForWindowStyleButton);
+				button.OnTooltip = OnTooltipForWindowButton;
+				button:SetATTTooltip();
+				buttons[buttonIndex] = button;
+				button:SetPoint("TOPLEFT", lastChild, "BOTTOMLEFT", lastXOffset, lastYOffset);
+				button:SetWidth(120);
+				button:SetHeight(30);
+			end
+			button.Window = window;
+			button.Suffix = window.Suffix;
+			UpdateButtonText(button, window)
+			buttonIndex = buttonIndex + 1;
+			lastChild = button;
+		end
+	end
+end
+settings:CreateOptionsPage(PageTitle, L.WINDOWS_PAGE):SetScript("OnShow", function(self)
+	self.OnRefresh = RefreshWindowStyles;
+	self:SetScript("OnShow", nil);
 end);

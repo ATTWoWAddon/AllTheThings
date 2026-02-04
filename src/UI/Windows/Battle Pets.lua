@@ -1,13 +1,42 @@
 -- App locals
 local _, app = ...;
-local contains, MergeClone = app.contains, app.MergeClone;
+local contains = app.contains;
 
 -- Global locals
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 
 -- App locals
+local CloneArray = app.CloneArray;
 local GetRelativeValue = app.GetRelativeValue;
+
+local function MergeClone(g, o)
+	local clone = app.CloneClassInstance(o);
+	local u = GetRelativeValue(o, "u");
+	if u then clone.u = u; end
+	local e = GetRelativeValue(o, "e");
+	if e then clone.e = e; end
+	local lvl = GetRelativeValue(o, "lvl");
+	if lvl then clone.lvl = lvl; end
+	if not o.itemID or o.b == 1 then
+		local races = o.races;
+		if races then
+			clone.races = CloneArray(races);
+		else
+			local r = GetRelativeValue(o, "r");
+			if r then
+				clone.r = r;
+				clone.races = nil;
+			else
+				races = GetRelativeValue(o, "races");
+				if races then clone.races = CloneArray(races); end
+			end
+		end
+		local c = GetRelativeValue(o, "c");
+		if c then clone.c = CloneArray(c); end
+	end
+	return app.MergeObject(g, clone);
+end
 
 -- Implementation
 app:CreateWindow("Battle Pets", {
@@ -18,8 +47,7 @@ app:CreateWindow("Battle Pets", {
 		"attbattlepets",
 	},
 	OnInit = function(self, handlers)
-		self.data = {
-			text = AUCTION_CATEGORY_BATTLE_PETS,
+		self:SetData(app.CreateRawText(AUCTION_CATEGORY_BATTLE_PETS, {
 			icon = app.asset("Category_PetJournal"),
 			description = "This list shows you all of the battle pets that you can collect listed by type.",
 			visible = true,
@@ -107,6 +135,6 @@ app:CreateWindow("Battle Pets", {
 					data.SortType = "name";
 				end
 			end
-		};
+		}));
 	end,
 });

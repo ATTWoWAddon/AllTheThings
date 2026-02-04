@@ -33,7 +33,6 @@ local function CreateWorldMapButton()
 	texture:Show();
 	button.texture = texture;
 
-	local minilist = app:GetWindow(app.IsClassic and "MiniList" or "CurrentInstance");
 	button:SetScript("OnEnter", function(self)
 		local mapID = WorldMapFrame:GetMapID();
 		self.mapID = mapID;
@@ -59,16 +58,24 @@ local function CreateWorldMapButton()
 	button:SetScript("OnClick", function(self)
 		local mapID = self.mapID;
 		if mapID and mapID > 0 then
-			minilist:SetMapID(mapID, true);
+			app.ToggleMiniListForCurrentZone(mapID);
 		end
 	end);
 	return button;
 end
 
-app.SetWorldMapButtonSettings = function(visible)
+local function SetWorldMapButtonSettings(visible)
 	if visible then
 		(WorldMapButton or CreateWorldMapButton()):Show();
 	elseif WorldMapButton then
 		WorldMapButton:Hide();
 	end
 end
+app.AddEventHandler("Settings.OnSet", function(context, setting, value)
+	if context == "Tooltips" and setting == "WorldMapButton" then
+		SetWorldMapButtonSettings(value);
+	end
+end)
+app.AddEventHandler("OnStartup", function()
+	SetWorldMapButtonSettings(app.Settings:GetTooltipSetting("WorldMapButton"));
+end)
