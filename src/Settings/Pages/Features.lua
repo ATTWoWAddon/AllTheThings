@@ -79,26 +79,22 @@ sliderMinimapButtonSize.LabelHigh:SetText('48')
 sliderMinimapButtonSize.Label = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
 sliderMinimapButtonSize.Label:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, 2)
 sliderMinimapButtonSize.Label:SetText(sliderMinimapButtonSize:GetValue())
-sliderMinimapButtonSize:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue)
-	if newValue == settings:GetTooltipSetting("MinimapSize") then
-		return 1
-	end
-	settings:SetTooltipSetting("MinimapSize", newValue)
-	app.SetMinimapButtonSettings(
-		settings:GetTooltipSetting("MinimapButton"),
-		settings:GetTooltipSetting("MinimapSize"));
-end)
-sliderMinimapButtonSize.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("MinimapButton") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
-
+settings.Helpers.Slider.SetupDefaults(sliderMinimapButtonSize, {
+	SETTING="MinimapSize",
+	FORMAT="%.0f",
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("MinimapButton") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	OnValueChanged=function(self)
+		app.SetMinimapButtonSettings(settings:GetTooltipSetting("MinimapButton"),settings:GetTooltipSetting("MinimapSize"));
+	end,
+})
 
 local checkboxShowWorldMapButton = child:CreateCheckBox(L.WORLDMAP_BUTTON_CHECKBOX,
 function(self)

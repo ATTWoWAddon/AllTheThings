@@ -48,7 +48,7 @@ app:CreateWindow("Prime", {
 			elseif cmd == "help" then
 				return app.ChatCommands.PrintHelp(args[2])
 			end
-			
+
 			-- Remove the first arg from args, within this context, it is the command and does not need to be passed to the child popups
 			tremove(args, 1);
 			if cmd == "main" or cmd == "mainlist" then
@@ -155,6 +155,8 @@ app:CreateWindow("Prime", {
 
 			if setting == "MainListScale" then
 				self:SetScale(value)
+			elseif setting == "InactiveWindowAlpha" then
+				self:OnInactiveAlphaChanged(value)
 			end
 		end,
 	}

@@ -513,15 +513,6 @@ settings.Initialize = function(self)
 		end
 	end
 
-	self.sliderMaxTooltipTopLineLength:SetValue(self:GetTooltipSetting("MaxTooltipTopLineLength"))
-	self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
-	self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
-	self.sliderInactiveWindowAlpha:SetValue(self:GetTooltipSetting("InactiveWindowAlpha"))
-	self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))
-	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
-	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
-	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-
 	self:UpdateMode()
 	-- TODO: need to properly use other libraries to create minimap button if delayed...
 	-- but other addons only handle pre-existing minimap buttons when they load, so for now move back to the order it was
@@ -1418,21 +1409,34 @@ Mixin(settings, ATTSettingsPanelMixin);
 -- Some common helpers for instantiation of Settings objects
 settings.Helpers = {
 	Slider = {
-		SetScript_OnValueChanged = function(self, shortValFormat, settingKey)
-			if not shortValFormat then
-				error("Bad shortValFormat provided for SetScript_OnValueChanged!")
-			end
-			if not settingKey then
-				error("Bad settingKey provided for SetScript_OnValueChanged!")
-			end
+		SetupDefaults = function(slider, setup)
+			slider.__KEY = setup and setup.SETTING
+			slider.__FORMAT = setup and setup.FORMAT
+			slider.__OnRefresh = setup and setup.OnRefresh
+			slider.__OnValueChanged = setup and setup.OnValueChanged
+			settings.Helpers.Slider.SetScript_OnValueChanged(slider)
+			slider.OnRefresh = settings.Helpers.Slider.OnRefresh
+		end,
+		SetScript_OnValueChanged = function(self)
 			self:SetScript("OnValueChanged", function(self, newValue)
 				if self.oldValue ~= newValue then
 					self.oldValue = newValue
-					local shortVal = shortValFormat:format(newValue)
+					local shortVal = self.__FORMAT:format(newValue)
 					self.Label:SetText(shortVal)
-					settings:SetTooltipSetting(settingKey, tonumber(shortVal))
+					settings:SetTooltipSetting(self.__KEY, tonumber(shortVal))
+					if self.__OnValueChanged then
+						self:__OnValueChanged()
+					end
 				end
 			end)
+		end,
+		OnRefresh = function(self)
+			if self.__OnRefresh then
+				self:__OnRefresh()
+			end
+			local val = settings:GetTooltipSetting(self.__KEY)
+			self:SetValue(val)
+			self.Label:SetText((self.__FORMAT):format(val))
 		end,
 	},
 }

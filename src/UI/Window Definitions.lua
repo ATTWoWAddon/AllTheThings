@@ -2169,6 +2169,13 @@ local function UpdateWindow(self, force, trigger)
 	end
 	-- app.PrintDebugPrior("Update:None")
 end
+local function ApplyAlphaForWindow(self)
+	if self:IsMouseOver() then
+		self:SetAlpha(1.0);
+	else
+		self:SetAlpha(self.__ALPHA);
+	end
+end
 local FieldDefaults = {
 	AddEventHandler = function(self, event, handler, keepGlobal)
 		-- allows a window to keep track of any specific custom handler functions it creates
@@ -2304,7 +2311,29 @@ local FieldDefaults = {
 			end
 		end
 	end,
+	OnInactiveAlphaChanged = function(self, value)
+		value = tonumber(value) or app.Settings:GetTooltipSetting("InactiveWindowAlpha")
+		if value >= 1 then
+			self.__ALPHA = 1
+			self:SetScript("OnUpdate", nil);
+			self:SetAlpha(1.0);
+		else
+			self.__ALPHA = value
+			self:SetScript("OnUpdate", ApplyAlphaForWindow);
+		end
+	end
 };
+local DefaultEventHandlers = {
+	["Settings.OnSet"] = function(self,container,setting,value)
+		if container ~= "Tooltips" then return end
+
+		if setting == "MiniListScale" then
+			self:SetScale(value)
+		elseif setting == "InactiveWindowAlpha" then
+			self:OnInactiveAlphaChanged(value)
+		end
+	end,
+}
 local ReservedFields = {
 	Defaults = true,
 	OnInit = true,
@@ -2412,7 +2441,10 @@ local function BuildWindow(suffix)
 	window:AddEventHandler("OnRedrawWindows", function()
 		window:Redraw()
 	end, true)
-	local eventHandlers = definition.EventHandlers
+	window:AddEventHandler("OnWindowCreated", function()
+		window:OnInactiveAlphaChanged()
+	end, true)
+	local eventHandlers = definition.EventHandlers or DefaultEventHandlers
 	if eventHandlers then
 		for e,f in pairs(eventHandlers) do
 			window:AddEventHandler(e,f)
