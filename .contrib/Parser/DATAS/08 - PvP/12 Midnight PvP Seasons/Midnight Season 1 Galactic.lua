@@ -31,7 +31,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				i(264010, {	-- Galactic Gladiator's Prestigious Cloak
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(260443, {	-- Galactic Gladiator's Prestigious Cloak	
+				i(260443, {	-- Galactic Gladiator's Prestigious Cloak
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -628,35 +628,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 				["coord"] = { 40.3, 65.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
-			--	["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
-				["groups"] = bubbleDown({ ["modID"] = 14 }, {
-					cl(DEATHKNIGHT, {
-					}),
-					cl(DEMONHUNTER, {
-					}),
-					cl(DRUID, {
-					}),
-					cl(EVOKER, {
-					}),
-					cl(HUNTER, {
-					}),
-					cl(MAGE, {
-					}),
-					cl(MONK, {
-					}),
-					cl(PALADIN, {
-					}),
-					cl(PRIEST, {
-					}),
-					cl(ROGUE, {
-					}),
-					cl(SHAMAN, {
-					}),
-					cl(WARLOCK, {
-					}),
-					cl(WARRIOR, {
-					}),
-					-- Elite catalyst gear is not obtainable this season
+				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
+				["groups"] = bubbleDown({ ["modID"] = 14, }, {
+					-- Blizzard removed all Gladiator and Elite pieces for this Catalyst version during Midnight beta.
+					-- Keep this Catalyst here in case gear can be converted into different pieces than in previous seasons.
 				}),
 			}),
 		})),

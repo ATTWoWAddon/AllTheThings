@@ -106,6 +106,45 @@ local BonusIDUpgradeTiers = {
 	[11996] = 11998,
 	[12375] = 11998,
 	[12376] = 11998,
+--[[
+	-- TWW:S3
+	-- Veteran
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Champion
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Hero
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Myth
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+]]--
 }
 
 -- apparently Blizzard decided that removing all Upgrade info from old season items was beneficial to someone, so now we have to add all this
@@ -139,6 +178,16 @@ BonusIDReMappers[11965] = BonusIDReMappers.PastUpgrade
 BonusIDReMappers[11966] = BonusIDReMappers.PastUpgrade
 -- Hero
 BonusIDReMappers[11967] = BonusIDReMappers.PastUpgrade
+--[[
+-- TWW:S3
+-- Veteran
+BonusIDReMappers[12239] = BonusIDReMappers.PastUpgrade
+BonusIDReMappers[12240] = BonusIDReMappers.PastUpgrade
+-- Champion
+BonusIDReMappers[12241] = BonusIDReMappers.PastUpgrade
+-- Hero
+BonusIDReMappers[12242] = BonusIDReMappers.PastUpgrade
+]]--
 
 local CatalystArmorSlots = {
 	["INVTYPE_HEAD"] = true,
