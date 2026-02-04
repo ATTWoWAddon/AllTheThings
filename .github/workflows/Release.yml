@@ -88,42 +88,42 @@ jobs:
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic Era.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic Era.config"
         shell: cmd
 
       - name: Database Parser for Season of Discovery
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic SOD.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic SOD.config"
         shell: cmd
 
       - name: Database Parser for The Burning Crusade
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/02 - TBC.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/02 - TBC.config"
         shell: cmd
 
       - name: Database Parser for Wrath of the Lich King
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/03 - Wrath.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/03 - Wrath.config"
         shell: cmd
 
       - name: Database Parser for Cataclysm
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/04 - Cataclysm.config"
         shell: cmd
 
       - name: Database Parser for Mists of Pandaria
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
+          "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
       - uses: actions/upload-artifact@v6
