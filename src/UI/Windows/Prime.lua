@@ -63,7 +63,7 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Item Filter"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "finder" then
-				app:GetWindow("list"):ProcessCommand(args, params);
+				app:GetWindow("List"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "ra" then
 				app:GetWindow("RaidAssistant"):ProcessCommand(args, params);
@@ -72,7 +72,7 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Random"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "list" then
-				app:GetWindow("list"):ProcessCommand(args, params);
+				app:GetWindow("List"):ProcessCommand(args, params);
 				return true;
 			elseif cmd == "nwp" then
 				app:GetWindow("New With Patch"):ProcessCommand(args, params);

@@ -77,7 +77,7 @@ local function BuildDataFromCache()
 	MinimumID = 1;
 	MaximumID = #CacheFields;
 end
-app:CreateWindow("list", {
+app:CreateWindow("List", {
 	Commands = { "attlist" },
 	OnCommand = function(self, args, params)
 		if params.reset then
