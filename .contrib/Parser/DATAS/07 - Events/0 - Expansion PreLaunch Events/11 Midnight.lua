@@ -384,7 +384,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 		}),
 		n(WORLD_QUESTS, sharedData({
-			["sourceQuest"] = 90768,	-- Cult It Out
 			["isWorldQuest"] = true,
 		}, {
 			q(86951, {	-- Ascended, Descending
