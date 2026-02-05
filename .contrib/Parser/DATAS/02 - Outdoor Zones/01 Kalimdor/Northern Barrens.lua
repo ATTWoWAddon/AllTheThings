@@ -2661,6 +2661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.3, 17.4, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(5088) },	-- Control Console Operating Manual (QI!)
 				}),
 				q(29022, {	-- Samophlange (2/4)
 					["sourceQuest"] = 29021,	-- Samophlange (1/4)

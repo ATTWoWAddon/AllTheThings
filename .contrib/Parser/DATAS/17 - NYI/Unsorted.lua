@@ -4668,10 +4668,8 @@ root(ROOTS.Unsorted, {
 				i(260395),	-- Rugged Wooden Shortbow
 				i(260397),	-- Sea Green Wooden Shortbow
 				i(260398),	-- South Guard's Iron Handwraps
-				i(260399),	-- South Guard's Copper Handwraps
 				i(260401),	-- South Guard's Silver Handwraps
 				i(260402),	-- South Guard's Iron Chausses
-				i(260403),	-- South Guard's Copper Chausses
 				i(260405),	-- South Guard's Silver Chausses
 				i(260412),	-- Rusty Chainkini
 				i(260413),	-- Copper Chainkini

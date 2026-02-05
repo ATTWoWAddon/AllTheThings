@@ -292,6 +292,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 		n(ENDEAVOR, {
 			n(QUESTS, {
+				q(94450),	-- Twenty Five Percent Completed
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
 			}),
 		}),
