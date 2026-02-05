@@ -25,6 +25,7 @@ local ExpansionKeywords = {
 	df = { 10, 11 },
 	tww = { 11, 12 },
 	midnight = { 12, 13 },
+	mid = { 12, 13 },
 	tlt = { 13, 14 },
 };
 function AddedWithPatchFilter(group)
