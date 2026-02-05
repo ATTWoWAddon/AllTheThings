@@ -62,46 +62,56 @@ root(ROOTS.Promotions, {
 			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
-				["description"] = "Can be bought for ¥200 RMB (~$27 USD) in the In-game Shop for a limited time.",
+				["description"] = "The first lottery draw costs ¥1, and the price increases progressively with each subsequent draw. A total of 13 draws costing ¥1,271 will allow you to obtain all prizes. ",
 				-- #endif
 				-- #endif
-				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
+				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 13th March 2026
 				["groups"] = {
-				--	-- todo: add cnONLY(i()),	-- Azure Dragon Soaring Flame
-					cnONLY(i(258136)), -- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
-				--	-- todo: add cnONLY(i()),	-- Blazing Fire Sandbox Horse
-					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
-					cnONLY(i(256141)), -- Fortune's Waving Cat (TOY!) 		MAYBE OTHER BOX
-					cnONLY(i(258840)), -- Gilded Fountain (TOY!) 			MAYBE OTHER BOX
+					-- 3rd Price
+					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
+					cnONLY(i(251542)),	-- Azure Drakefire
+					cnONLY(i(256141)), -- Fortune's Waving Cat (TOY!)
 					cnONLY(i(253244)), -- Lunar Celebrants Aquarium
+					cnONLY(i(253257)), -- Lunar Celebrants Privacy Screen
+					cnONLY(i(253296)), -- Lunar Celebrants Tea Set	
+					cnONLY(i(269743)), -- Landro's Golden Loot Box (2nd Price as well)
+					-- 2nd Price
+					cnONLY(i(258840)), -- Gilded Fountain (TOY!)
+					cnONLY(i(253402)),	-- Scorching Polearm
+				--	cnONLY(i(269743)), -- Landro's Golden Loot Box 
+					-- 1st Price
+					cnONLY(iensemble(257547)),	-- Ensemble: Scorching Conqueror
+					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
+					
+					--[[
+				--	add cnONLY(i()),	-- Azure Dragon Soaring Flame
+					cnONLY(i(258136)), -- Azure Thunder Coil Pillar (TOY!) 	MAYBE OTHER BOX
+				--	add cnONLY(i()),	-- Blazing Fire Sandbox Horse
+					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
 					cnONLY(i(253254)), -- Lunar Celebrants Cradle
 					cnONLY(i(253255)), -- Lunar Celebrants Wide Pillow Roll
 					cnONLY(i(253256)), -- Lunar Celebrants Pillow Roll
-					cnONLY(i(253257)), -- Lunar Celebrants Privacy Screen
 					cnONLY(i(253290)), -- Lunar Celebrants Ornate Vanity
 					cnONLY(i(253291)), -- Lunar Celebrants Compact
 					cnONLY(i(253292)), -- Lunar Celebrants Bamboo Canister
 					cnONLY(i(253293)), -- Lunar Celebrants Tea Tray
 					cnONLY(i(253294)), -- Lunar Celebrants Teacup
-					cnONLY(i(253295)), -- Lunar Celebrants Teapot
-					cnONLY(i(253296)), -- Lunar Celebrants Tea Set	
-					cnONLY(i(253402)),	-- Scorching Polearm
+					cnONLY(i(253295)), -- Lunar Celebrants Teapot--]]
 				},
 			})),
-			cnONLY(i(235378, {	-- Landro’s Golden Gift Box (CN Only) todo: add new ID 
+			cnONLY(i(269743, {	-- Landro's Golden Loot Box
 				-- #if AFTER 12.0.0
 				-- #if BEFORE 12.1.0
-				--["description"] = "todo: add price",
+				["description"] = "Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",
 				-- #endif
 				-- #endif
-				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 2nd April 2026
+				["timeline"] = { "added 12.0.0", "removed 12.1.0" },	-- 13th March 2026
 				["groups"] = {
-					cnONLY(i(253404)),	-- Auspicious Pixiu (PET!)
-					cnONLY(i(258136)),	-- Azure Thunder Coil Pillar (TOY!)
-					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!)
-					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!)
-					cnONLY(i(254736)), -- Stormgilded Celestial (MOUNT!)
-					cnONLY(i(254735)),	-- Thunderhoof Celestial (MOUNT!)
+					cnONLY(i(251542)),	-- Azure Drakefire
+					cnONLY(i(258135)),	-- Gilded Coil Spire (TOY!) (BOE)
+					cnONLY(i(269009)),	-- Golden Ashened Cataclysm (MOUNT!) (BOE)
+					cnONLY(i(254736)), -- Stormgilded Celestial (MOUNT!) (BOE)
+					cnONLY(i(255973)),	-- Sandbox Horse
 					-- Old Loot
 					cnONLY(i(46779)),	-- Path of Cenarius
 					cnONLY(i(49283)),	-- Reins of the Spectral Tiger
