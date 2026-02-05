@@ -13,12 +13,12 @@ local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
+local errorID = 0
 local function PrintError(err, source, co)
-	app.print(app.Modules.Color.Colorize("ERROR:",app.Colors.ChatLinkError),source,":",err)
-	if co then
-		local instanceTrace = debugstack(co);
-		print(instanceTrace)
-	end
+	errorID = errorID + 1;
+	local title, popupID = "Stack Trace #" .. errorID, "runner-error-" .. errorID;
+	app:SetupReportDialog(popupID, title, {"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack()});
+	app.print(app:Linkify("ERROR "..title, app.Colors.ChatLinkError, "dialog:" .. popupID));
 end
 
 local function wipearray(t, max)
@@ -147,7 +147,7 @@ local PushQueue = setmetatable({}, {
 						-- app.PrintDebug("PUSH.Run.Yielded",co)
 						return true;
 					end
-				else PrintError(err, "PUSH.Run", co) end
+				else PrintError(err, "CO:resume", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
