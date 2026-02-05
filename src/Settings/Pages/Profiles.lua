@@ -58,7 +58,7 @@ local buttonInitializeProfiles = child:CreateButton(
 	OnClick = function(self)
 		app:ShowPopupDialog(L.PROFILE_INITIALIZE_CONFIRM,
 		function()
-			app.SetupProfiles()
+			settings.SetupProfiles()
 			Callback(InitProfilesButton_Disable, self)
 		end)
 	end,
