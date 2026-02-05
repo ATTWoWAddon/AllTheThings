@@ -138,6 +138,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+           fetch-depth: 300
 
       - name: Reset to SHA that triggered the workflow
         run: |
