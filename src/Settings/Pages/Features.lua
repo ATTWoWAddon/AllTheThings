@@ -55,31 +55,10 @@ end)
 checkboxShowMinimapButton:SetATTTooltip(L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP)
 checkboxShowMinimapButton:SetPoint("TOPLEFT", headerMinimapButton, "BOTTOMLEFT", -2, 0)
 
-local sliderMinimapButtonSize = CreateFrame("Slider", "ATTsliderMinimapButtonSize", child, "UISliderTemplate")
-sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
-table.insert(settings.Objects, sliderMinimapButtonSize)
-settings.sliderMinimapButtonSize = sliderMinimapButtonSize
-sliderMinimapButtonSize.tooltipText = L.MINIMAP_SLIDER_TOOLTIP
-sliderMinimapButtonSize:SetOrientation('HORIZONTAL')
-sliderMinimapButtonSize:SetWidth(200)
-sliderMinimapButtonSize:SetHeight(20)
-sliderMinimapButtonSize:SetValueStep(1)
-sliderMinimapButtonSize:SetMinMaxValues(18, 48)
-sliderMinimapButtonSize:SetObeyStepOnDrag(true)
-sliderMinimapButtonSize.Text = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMinimapButtonSize.Text:SetPoint("BOTTOMLEFT", sliderMinimapButtonSize, "TOPLEFT", 0, 0)
-sliderMinimapButtonSize.Text:SetText(L.MINIMAP_SLIDER)
-sliderMinimapButtonSize.Text:SetTextColor(1, 1, 1)
-sliderMinimapButtonSize.LabelLow = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.LabelLow:SetPoint("TOPLEFT", sliderMinimapButtonSize, "BOTTOMLEFT", 0, 2)
-sliderMinimapButtonSize.LabelLow:SetText('18')
-sliderMinimapButtonSize.LabelHigh = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.LabelHigh:SetPoint("TOPRIGHT", sliderMinimapButtonSize, "BOTTOMRIGHT", 0, 2)
-sliderMinimapButtonSize.LabelHigh:SetText('48')
-sliderMinimapButtonSize.Label = sliderMinimapButtonSize:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMinimapButtonSize.Label:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, 2)
-sliderMinimapButtonSize.Label:SetText(sliderMinimapButtonSize:GetValue())
-settings.Helpers.Slider.SetupDefaults(sliderMinimapButtonSize, {
+local sliderMinimapButtonSize = child:CreateSlider("ATTsliderMinimapButtonSize", {
+	TEXT=L.MINIMAP_SLIDER,
+	TOOLTIP=L.MINIMAP_SLIDER_TOOLTIP,
+	MIN=18, MAX=48, STEP=1,
 	SETTING="MinimapSize",
 	FORMAT="%.0f",
 	OnRefresh=function(self)
@@ -95,6 +74,9 @@ settings.Helpers.Slider.SetupDefaults(sliderMinimapButtonSize, {
 		app.SetMinimapButtonSettings(settings:GetTooltipSetting("MinimapButton"),settings:GetTooltipSetting("MinimapSize"));
 	end,
 })
+sliderMinimapButtonSize:SetWidth(200)
+sliderMinimapButtonSize:SetHeight(20)
+sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
 
 local checkboxShowWorldMapButton = child:CreateCheckBox(L.WORLDMAP_BUTTON_CHECKBOX,
 function(self)

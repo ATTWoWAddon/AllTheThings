@@ -227,30 +227,11 @@ end)
 checkboxSummarizeThings:SetATTTooltip(L.SUMMARIZE_CHECKBOX_TOOLTIP)
 checkboxSummarizeThings:AlignBelow(checkboxDisplayInCombat)
 
-local sliderSummarizeThings = CreateFrame("Slider", "ATTSummarizeThingsSlider", child, "UISliderTemplate")
-sliderSummarizeThings:SetPoint("TOP", checkboxSummarizeThings.Text, "BOTTOM", 0, -4)
-sliderSummarizeThings:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 10, 0)
-table.insert(settings.Objects, sliderSummarizeThings)
-settings.sliderSummarizeThings = sliderSummarizeThings
-sliderSummarizeThings.tooltipText = L.CONTAINS_SLIDER_TOOLTIP
-sliderSummarizeThings:SetOrientation('HORIZONTAL')
-sliderSummarizeThings:SetWidth(200)
-sliderSummarizeThings:SetHeight(20)
-sliderSummarizeThings:SetValueStep(1)
-sliderSummarizeThings:SetMinMaxValues(1, 40)
-sliderSummarizeThings:SetObeyStepOnDrag(true)
-sliderSummarizeThings.LabelLow = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.LabelLow:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, 2)
-sliderSummarizeThings.LabelLow:SetText('1')
-sliderSummarizeThings.LabelHigh = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.LabelHigh:SetPoint("TOPRIGHT", sliderSummarizeThings, "BOTTOMRIGHT", 0, 2)
-sliderSummarizeThings.LabelHigh:SetText('40')
-sliderSummarizeThings.Label = sliderSummarizeThings:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSummarizeThings.Label:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, 2)
-sliderSummarizeThings.Label:SetText(sliderSummarizeThings:GetValue())
-settings.Helpers.Slider.SetupDefaults(sliderSummarizeThings, {
+local sliderSummarizeThings = child:CreateSlider("ATTSummarizeThingsSlider", {
+	TOOLTIP=L.CONTAINS_SLIDER_TOOLTIP,
 	SETTING="ContainsCount",
 	FORMAT="%.0f",
+	MIN=1, MAX=40, STEP=1,
 	OnRefresh=function(self)
 		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
 			self:Disable()
@@ -261,33 +242,30 @@ settings.Helpers.Slider.SetupDefaults(sliderSummarizeThings, {
 		end
 	end,
 })
+sliderSummarizeThings:SetWidth(200)
+sliderSummarizeThings:SetHeight(20)
+sliderSummarizeThings:SetPoint("TOP", checkboxSummarizeThings.Text, "BOTTOM", 0, -4)
+sliderSummarizeThings:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 10, 0)
 
-local sliderMaxTooltipTopLineLength = CreateFrame("Slider", "ATTSliderMaxTooltipFirstLineLength", child, "UISliderTemplate")
-sliderMaxTooltipTopLineLength:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, -25)
-table.insert(settings.Objects, sliderMaxTooltipTopLineLength)
-settings.sliderMaxTooltipTopLineLength = sliderMaxTooltipTopLineLength
-sliderMaxTooltipTopLineLength:SetOrientation('HORIZONTAL')
-sliderMaxTooltipTopLineLength:SetWidth(200)
-sliderMaxTooltipTopLineLength:SetHeight(20)
-sliderMaxTooltipTopLineLength:SetValueStep(10)
-sliderMaxTooltipTopLineLength:SetMinMaxValues(80, 1000)
-sliderMaxTooltipTopLineLength:SetObeyStepOnDrag(true)
-sliderMaxTooltipTopLineLength.Text = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMaxTooltipTopLineLength.Text:SetPoint("BOTTOMLEFT", sliderMaxTooltipTopLineLength, "TOPLEFT", 0, 0)
-sliderMaxTooltipTopLineLength.Text:SetText(L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL)
-sliderMaxTooltipTopLineLength.Text:SetTextColor(1, 1, 1)
-sliderMaxTooltipTopLineLength.LabelLow = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.LabelLow:SetPoint("TOPLEFT", sliderMaxTooltipTopLineLength, "BOTTOMLEFT", 0, 2)
-sliderMaxTooltipTopLineLength.LabelLow:SetText('80')
-sliderMaxTooltipTopLineLength.LabelHigh = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.LabelHigh:SetPoint("TOPRIGHT", sliderMaxTooltipTopLineLength, "BOTTOMRIGHT", 0, 2)
-sliderMaxTooltipTopLineLength.LabelHigh:SetText('1000')
-sliderMaxTooltipTopLineLength.Label = sliderMaxTooltipTopLineLength:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMaxTooltipTopLineLength.Label:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, 0)
-settings.Helpers.Slider.SetupDefaults(sliderMaxTooltipTopLineLength, {
+local sliderMaxTooltipTopLineLength = child:CreateSlider("ATTSliderMaxTooltipFirstLineLength", {
+	TEXT=L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL,
+	TOOLTIP=L.CONTAINS_SLIDER_TOOLTIP,
 	SETTING="MaxTooltipTopLineLength",
 	FORMAT="%.0f",
+	MIN=80, MAX=1000, STEP=20,
+	OnRefresh=function(self)
+		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
 })
+sliderMaxTooltipTopLineLength:SetWidth(200)
+sliderMaxTooltipTopLineLength:SetHeight(20)
+sliderMaxTooltipTopLineLength:SetPoint("TOPLEFT", sliderSummarizeThings, "BOTTOMLEFT", 0, -25)
 
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L.TOOLTIP_SHOW_LABEL)
 textTooltipShownInfo:SetPoint("TOP", sliderMaxTooltipTopLineLength, "BOTTOM", 0, -30)
@@ -423,30 +401,11 @@ end)
 checkboxSourceLocations:SetATTTooltip(L.SOURCE_LOCATIONS_CHECKBOX_TOOLTIP)
 checkboxSourceLocations:AlignBelow(checkboxOnlyRelevant or checkboxProgressIconOnly, -1)
 
-local sliderSourceLocations = CreateFrame("Slider", "ATTsliderSourceLocations", child, "UISliderTemplate")
-sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
-sliderSourceLocations:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 10, 0)
-table.insert(settings.Objects, sliderSourceLocations)
-settings.sliderSourceLocations = sliderSourceLocations
-sliderSourceLocations.tooltipText = L.LOCATIONS_SLIDER_TOOLTIP
-sliderSourceLocations:SetOrientation('HORIZONTAL')
-sliderSourceLocations:SetWidth(140)
-sliderSourceLocations:SetHeight(20)
-sliderSourceLocations:SetValueStep(1)
-sliderSourceLocations:SetMinMaxValues(1, 40)
-sliderSourceLocations:SetObeyStepOnDrag(true)
-sliderSourceLocations.LabelLow = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.LabelLow:SetPoint("TOPLEFT", sliderSourceLocations, "BOTTOMLEFT", 0, 2)
-sliderSourceLocations.LabelLow:SetText('1')
-sliderSourceLocations.LabelHigh = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.LabelHigh:SetPoint("TOPRIGHT", sliderSourceLocations, "BOTTOMRIGHT", 0, 2)
-sliderSourceLocations.LabelHigh:SetText('40')
-sliderSourceLocations.Label = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderSourceLocations.Label:SetPoint("TOP", sliderSourceLocations, "BOTTOM", 0, 2)
-sliderSourceLocations.Label:SetText(sliderSourceLocations:GetValue())
-settings.Helpers.Slider.SetupDefaults(sliderSourceLocations, {
+local sliderSourceLocations = child:CreateSlider("ATTsliderSourceLocations", {
+	TOOLTIP=L.LOCATIONS_SLIDER_TOOLTIP,
 	SETTING="Locations",
 	FORMAT="%.0f",
+	MIN=1, MAX=40, STEP=1,
 	OnRefresh=function(self)
 		if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 			self:Disable()
@@ -457,6 +416,10 @@ settings.Helpers.Slider.SetupDefaults(sliderSourceLocations, {
 		end
 	end,
 })
+sliderSourceLocations:SetWidth(140)
+sliderSourceLocations:SetHeight(20)
+sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
+sliderSourceLocations:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 10, 0)
 
 local checkboxCompleted = child:CreateCheckBox(L.COMPLETED_SOURCES_CHECKBOX,
 function(self)
@@ -675,92 +638,38 @@ end
 local headerListBehavior = child:CreateHeaderLabel(L.BEHAVIOR_LABEL)
 headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 380, 0)
 
-local sliderMainListScale = CreateFrame("Slider", "ATTsliderMainListScale", child, "UISliderTemplate")
-sliderMainListScale:SetPoint("TOPLEFT", headerListBehavior, "BOTTOMLEFT", 4, -15)
-table.insert(settings.Objects, sliderMainListScale)
-settings.sliderMainListScale = sliderMainListScale
-sliderMainListScale.tooltipText = L.MAIN_LIST_SCALE_TOOLTIP
-sliderMainListScale:SetOrientation('HORIZONTAL')
-sliderMainListScale:SetWidth(200)
-sliderMainListScale:SetHeight(20)
-sliderMainListScale:SetValueStep(0.1)
-sliderMainListScale:SetMinMaxValues(0.1, 4)
-sliderMainListScale:SetObeyStepOnDrag(true)
-sliderMainListScale.Text = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMainListScale.Text:SetPoint("BOTTOMLEFT", sliderMainListScale, "TOPLEFT", 0, 0)
-sliderMainListScale.Text:SetText(L.MAIN_LIST_SLIDER_LABEL)
-sliderMainListScale.Text:SetTextColor(1, 1, 1)
-sliderMainListScale.LabelLow = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.LabelLow:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, 2)
-sliderMainListScale.LabelLow:SetText('0.1')
-sliderMainListScale.LabelHigh = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.LabelHigh:SetPoint("TOPRIGHT", sliderMainListScale, "BOTTOMRIGHT", 0, 2)
-sliderMainListScale.LabelHigh:SetText('4')
-sliderMainListScale.Label = sliderMainListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMainListScale.Label:SetPoint("TOP", sliderMainListScale, "BOTTOM", 0, 0)
-sliderMainListScale.Label:SetText(("%.2f"):format(sliderMainListScale:GetValue()))
-settings.Helpers.Slider.SetupDefaults(sliderMainListScale, {
+local sliderMainListScale = child:CreateSlider("ATTsliderMainListScale", {
+	TEXT=L.MAIN_LIST_SLIDER_LABEL,
+	TOOLTIP=L.MAIN_LIST_SCALE_TOOLTIP,
 	SETTING="MainListScale",
 	FORMAT="%.2f",
+	MIN=0.1, MAX=4, STEP=0.1,
 })
+sliderMainListScale:SetWidth(200)
+sliderMainListScale:SetHeight(20)
+sliderMainListScale:SetPoint("TOPLEFT", headerListBehavior, "BOTTOMLEFT", 4, -15)
 
-local sliderMiniListScale = CreateFrame("Slider", "ATTsliderMiniListScale", child, "UISliderTemplate")
-sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)
-table.insert(settings.Objects, sliderMiniListScale)
-settings.sliderMiniListScale = sliderMiniListScale
-sliderMiniListScale.tooltipText = L.MINI_LIST_SCALE_TOOLTIP
-sliderMiniListScale:SetOrientation('HORIZONTAL')
-sliderMiniListScale:SetWidth(200)
-sliderMiniListScale:SetHeight(20)
-sliderMiniListScale:SetValueStep(0.1)
-sliderMiniListScale:SetMinMaxValues(0.1, 4)
-sliderMiniListScale:SetObeyStepOnDrag(true)
-sliderMiniListScale.Text = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderMiniListScale.Text:SetPoint("BOTTOMLEFT", sliderMiniListScale, "TOPLEFT", 0, 0)
-sliderMiniListScale.Text:SetText(L.MINI_LIST_SLIDER_LABEL)
-sliderMiniListScale.Text:SetTextColor(1, 1, 1)
-sliderMiniListScale.LabelLow = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.LabelLow:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, 2)
-sliderMiniListScale.LabelLow:SetText('0.1')
-sliderMiniListScale.LabelHigh = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.LabelHigh:SetPoint("TOPRIGHT", sliderMiniListScale, "BOTTOMRIGHT", 0, 2)
-sliderMiniListScale.LabelHigh:SetText('4')
-sliderMiniListScale.Label = sliderMiniListScale:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderMiniListScale.Label:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, 0)
-sliderMiniListScale.Label:SetText(("%.2f"):format(sliderMiniListScale:GetValue()))
-settings.Helpers.Slider.SetupDefaults(sliderMiniListScale, {
+local sliderMiniListScale = child:CreateSlider("ATTsliderMiniListScale", {
+	TEXT=L.MINI_LIST_SLIDER_LABEL,
+	TOOLTIP=L.MINI_LIST_SCALE_TOOLTIP,
 	SETTING="MiniListScale",
 	FORMAT="%.2f",
+	MIN=0.1, MAX=4, STEP=0.1,
 })
+sliderMiniListScale:SetWidth(200)
+sliderMiniListScale:SetHeight(20)
+sliderMiniListScale:SetPoint("TOPLEFT", sliderMainListScale, "BOTTOMLEFT", 0, -25)
 
-local sliderInactiveWindowAlpha = CreateFrame("Slider", "ATTsliderInactiveWindowAlpha", child, "UISliderTemplate")
-sliderInactiveWindowAlpha:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, -25)
-table.insert(settings.Objects, sliderInactiveWindowAlpha)
-settings.sliderInactiveWindowAlpha = sliderInactiveWindowAlpha
-sliderInactiveWindowAlpha.tooltipText = L.INACTIVE_WINDOW_ALPHA_TOOLTIP
-sliderInactiveWindowAlpha:SetOrientation('HORIZONTAL')
-sliderInactiveWindowAlpha:SetWidth(200)
-sliderInactiveWindowAlpha:SetHeight(20)
-sliderInactiveWindowAlpha:SetValueStep(0.05)
-sliderInactiveWindowAlpha:SetMinMaxValues(0.1, 1)
-sliderInactiveWindowAlpha:SetObeyStepOnDrag(true)
-sliderInactiveWindowAlpha.Text = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderInactiveWindowAlpha.Text:SetPoint("BOTTOMLEFT", sliderInactiveWindowAlpha, "TOPLEFT", 0, 0)
-sliderInactiveWindowAlpha.Text:SetText(L.INACTIVE_WINDOW_ALPHA_LABEL)
-sliderInactiveWindowAlpha.Text:SetTextColor(1, 1, 1)
-sliderInactiveWindowAlpha.LabelLow = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderInactiveWindowAlpha.LabelLow:SetPoint("TOPLEFT", sliderInactiveWindowAlpha, "BOTTOMLEFT", 0, 2)
-sliderInactiveWindowAlpha.LabelLow:SetText('0.1')
-sliderInactiveWindowAlpha.LabelHigh = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderInactiveWindowAlpha.LabelHigh:SetPoint("TOPRIGHT", sliderInactiveWindowAlpha, "BOTTOMRIGHT", 0, 2)
-sliderInactiveWindowAlpha.LabelHigh:SetText('1.0')
-sliderInactiveWindowAlpha.Label = sliderInactiveWindowAlpha:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderInactiveWindowAlpha.Label:SetPoint("TOP", sliderInactiveWindowAlpha, "BOTTOM", 0, 0)
-sliderInactiveWindowAlpha.Label:SetText(("%.2f"):format(sliderInactiveWindowAlpha:GetValue()))
-settings.Helpers.Slider.SetupDefaults(sliderInactiveWindowAlpha, {
+local sliderInactiveWindowAlpha = child:CreateSlider("ATTsliderInactiveWindowAlpha", {
+	TEXT=L.INACTIVE_WINDOW_ALPHA_LABEL,
+	TOOLTIP=L.INACTIVE_WINDOW_ALPHA_TOOLTIP,
 	SETTING="InactiveWindowAlpha",
 	FORMAT="%.2f",
+	MIN=0.1, MAX=1, STEP=0.05,
 })
+sliderInactiveWindowAlpha:SetWidth(200)
+sliderInactiveWindowAlpha:SetHeight(20)
+sliderInactiveWindowAlpha:SetPoint("TOPLEFT", sliderMiniListScale, "BOTTOMLEFT", 0, -25)
 
 local checkboxAdjustRowIndents = child:CreateCheckBox(L.ADJUST_ROW_INDENTS_CHECKBOX,
 function(self)
@@ -891,32 +800,10 @@ end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
 
-local sliderPercentagePrecision = CreateFrame("Slider", "ATTsliderPercentagePrecision", child, "UISliderTemplate")
-sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
-sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
-table.insert(settings.Objects, sliderPercentagePrecision)
-settings.sliderPercentagePrecision = sliderPercentagePrecision
-sliderPercentagePrecision.tooltipText = L.PRECISION_SLIDER_TOOLTIP
-sliderPercentagePrecision:SetOrientation('HORIZONTAL')
-sliderPercentagePrecision:SetWidth(200)
-sliderPercentagePrecision:SetHeight(20)
-sliderPercentagePrecision:SetValueStep(1)
-sliderPercentagePrecision:SetMinMaxValues(0, 8)
-sliderPercentagePrecision:SetObeyStepOnDrag(true)
-sliderPercentagePrecision.Text = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-sliderPercentagePrecision.Text:SetPoint("BOTTOMLEFT", sliderPercentagePrecision, "TOPLEFT", 0, 0)
-sliderPercentagePrecision.Text:SetText(L.PRECISION_SLIDER)
-sliderPercentagePrecision.Text:SetTextColor(1, 1, 1)
-sliderPercentagePrecision.LabelLow = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.LabelLow:SetPoint("TOPLEFT", sliderPercentagePrecision, "BOTTOMLEFT", 0, 2)
-sliderPercentagePrecision.LabelLow:SetText('0')
-sliderPercentagePrecision.LabelHigh = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.LabelHigh:SetPoint("TOPRIGHT", sliderPercentagePrecision, "BOTTOMRIGHT", 0, 2)
-sliderPercentagePrecision.LabelHigh:SetText('8')
-sliderPercentagePrecision.Label = sliderPercentagePrecision:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-sliderPercentagePrecision.Label:SetPoint("TOP", sliderPercentagePrecision, "BOTTOM", 0, 2)
-sliderPercentagePrecision.Label:SetText(sliderPercentagePrecision:GetValue())
-settings.Helpers.Slider.SetupDefaults(sliderPercentagePrecision, {
+local sliderPercentagePrecision = child:CreateSlider("ATTsliderPercentagePrecision", {
+	TEXT=L.PRECISION_SLIDER,
+	TOOLTIP=L.PRECISION_SLIDER_TOOLTIP,
+	MIN=0, MAX=8, STEP=1,
 	SETTING="Precision",
 	FORMAT="%.0f",
 	OnRefresh=function(self)
@@ -929,6 +816,10 @@ settings.Helpers.Slider.SetupDefaults(sliderPercentagePrecision, {
 		end
 	end,
 })
+sliderPercentagePrecision:SetWidth(200)
+sliderPercentagePrecision:SetHeight(20)
+sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
+sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
 
 if app.IsRetail then	-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
 -- Dynamic Category Toggles

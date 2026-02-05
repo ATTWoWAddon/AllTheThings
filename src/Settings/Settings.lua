@@ -1083,6 +1083,7 @@ end
 settings.Set = function(self, setting, value)
 	RawSettings.General[setting] = value;
 	app.HandleEvent("Settings.OnSet","General",setting,value)
+	-- app.HandleEvent("Settings.OnSet.General."..setting,value)
 	self:Refresh();
 end
 settings.SetValue = function(self, container, setting, value)
@@ -1093,11 +1094,13 @@ settings.SetValue = function(self, container, setting, value)
 	end
 	settingscontainer[setting] = value
 	app.HandleEvent("Settings.OnSet",container,setting,value)
+	-- app.HandleEvent("Settings.OnSet."..container.."."..setting,value)
 	self:Refresh()
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	RawSettings.Tooltips[setting] = value;
 	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
+	-- app.HandleEvent("Settings.OnSet.Tooltips."..setting,value)
 	app.WipeSearchCache();
 	self:Refresh();
 end
@@ -1252,7 +1255,7 @@ ATTSettingsPanelMixin = {
 	end,
 	CreateCheckBox = function(self, text, OnRefresh, OnClick)
 		if not text then
-			print("Invalid Checkbox Info")
+			app.print("Invalid Checkbox Info")
 			text = "INVALID CHECKBOX"
 		end
 		---@class ATTSettingsCheckButton: CheckButton
@@ -1401,6 +1404,50 @@ ATTSettingsPanelMixin = {
 		self.ATT.CB_Count = count
 		return box
 	end,
+	CreateSlider = function(self, name, setup)
+		if not name or not setup then
+			app.print("Invalid Slider Info")
+			name = "INVALID SLIDER"
+			setup = {}
+		end
+		local slider = CreateFrame("Slider", self:GetName() .. "-SL-" .. name, self, "UISliderTemplate")
+		Mixin(slider, ATTSettingsObjectMixin)
+		slider:SetParent(self)
+		self:RegisterObject(slider)
+		slider:SetOrientation("HORIZONTAL")
+		slider:SetValueStep(setup.STEP or 1)
+		local min = setup.MIN or 1
+		local max = setup.MAX or 100
+		slider:SetMinMaxValues(min, max)
+		slider:SetObeyStepOnDrag(true)
+		slider.LabelLow = slider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+		slider.LabelLow:SetPoint("TOPLEFT", slider, "BOTTOMLEFT", 0, 2)
+		slider.LabelLow:SetText(tostring(min))
+		slider.LabelHigh = slider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+		slider.LabelHigh:SetPoint("TOPRIGHT", slider, "BOTTOMRIGHT", 0, 2)
+		slider.LabelHigh:SetText(tostring(max))
+		slider.Label = slider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+		slider.Label:SetPoint("TOP", slider, "BOTTOM", 0, 2)
+		slider.Label:SetText(slider:GetValue())
+
+		if setup.TEXT then
+			slider.Text = slider:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+			slider.Text:SetPoint("BOTTOMLEFT", slider, "TOPLEFT", 0, 0)
+			slider.Text:SetText(setup.TEXT)
+			slider.Text:SetTextColor(1, 1, 1)
+		end
+		if setup.TOOLTIP then
+			slider:SetATTTooltip(setup.TOOLTIP)
+		end
+
+		slider.__KEY = setup.SETTING
+		slider.__FORMAT = setup.FORMAT
+		slider.__OnRefresh = setup.OnRefresh
+		slider.__OnValueChanged = setup.OnValueChanged
+		settings.Helpers.Slider.SetScript_OnValueChanged(slider)
+		slider.OnRefresh = settings.Helpers.Slider.OnRefresh
+		return slider
+	end,
 };
 -- All Object mixins apply to the Panels as well
 Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
@@ -1409,14 +1456,6 @@ Mixin(settings, ATTSettingsPanelMixin);
 -- Some common helpers for instantiation of Settings objects
 settings.Helpers = {
 	Slider = {
-		SetupDefaults = function(slider, setup)
-			slider.__KEY = setup and setup.SETTING
-			slider.__FORMAT = setup and setup.FORMAT
-			slider.__OnRefresh = setup and setup.OnRefresh
-			slider.__OnValueChanged = setup and setup.OnValueChanged
-			settings.Helpers.Slider.SetScript_OnValueChanged(slider)
-			slider.OnRefresh = settings.Helpers.Slider.OnRefresh
-		end,
 		SetScript_OnValueChanged = function(self)
 			self:SetScript("OnValueChanged", function(self, newValue)
 				if self.oldValue ~= newValue then

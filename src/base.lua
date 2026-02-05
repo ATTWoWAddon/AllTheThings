@@ -554,6 +554,12 @@ local editbox = CreateFrame("EditBox", nil, frame);
 local editBoxClass = getmetatable(editbox).__index;
 editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
+
+local slider = CreateFrame("Slider", nil, frame);
+---@class ATTEditBoxClass: Slider
+local sliderClass = getmetatable(slider).__index;
+sliderClass.SetATTTooltip = SetATTTooltip;
+slider:Hide();
 end
 
 function app:ShowPopupDialog(msg, callback)
