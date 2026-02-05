@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 
 -- Implementation
 app:CreateWindow("Never Implemented", {
@@ -11,7 +12,7 @@ app:CreateWindow("Never Implemented", {
 		self:SetData(app.CacheFields(app.CreateRawText(L.NEVER_IMPLEMENTED, {
 			icon = app.asset("Interface_Tchest"),
 			description = L.NEVER_IMPLEMENTED_DESC,
-			title = "NYI`" .. app.Version,
+			title = L.NEVER_IMPLEMENTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			font = "GameFontNormalLarge",
 			_nosearch = true,
 			visible = true,

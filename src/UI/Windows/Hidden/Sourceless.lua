@@ -15,7 +15,7 @@ app:CreateWindow("Sourceless", {
 		self:SetData(app.CacheFields(app.CreateRawText(app.Modules.Color.Colorize(L.SOURCELESS, app.Colors.TooltipWarning), {
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.NEVER_IMPLEMENTED_DESC,
-			title = "NYI`" .. app.Version,
+			title = L.SOURCELESS .. DESCRIPTION_SEPARATOR .. app.Version,
 			font = "GameFontNormalLarge",
 			_nosearch = true,
 			_unsorted = true,

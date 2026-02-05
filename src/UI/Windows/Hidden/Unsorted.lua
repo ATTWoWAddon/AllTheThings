@@ -24,10 +24,9 @@ app:CreateWindow("Unsorted", {
 			self:Update();
 		end
 		self:SetData(app.CreateRawText(app.Modules.Color.Colorize(L.UNSORTED, app.Colors.ChatLinkError), {
-			title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.UNSORTED_DESC_2,
-			title = "Unsorted`" .. app.Version,
+			title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 			font = "GameFontNormalLarge",
 			expanded = true,
 			visible = true,
