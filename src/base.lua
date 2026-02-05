@@ -525,21 +525,15 @@ end
 local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
 frameClass.StartATTCoroutine = StartATTCoroutine;
-if app.IsRetail then
-	local StartCoroutine = app.StartCoroutine
-	app.StartATTCoroutine = function(self, ...)
-		StartCoroutine(...);
-	end
-else
-	app.StartATTCoroutine = function(self, ...)
-		StartATTCoroutine(frame, ...);
-	end
+-- app-based coroutine calls are unique on app, but we only ever call them in global context
+app.StartATTCoroutine = function(self, ...)
+	app.StartCoroutine(...);
 end
 
 local button = CreateFrame("Button", nil, frame);
 ---@class ATTButtonClass: Button
 local buttonClass = getmetatable(button).__index;
-buttonClass.StartATTCoroutine = StartATTCoroutine;
+buttonClass.StartATTCoroutine = StartATTCoroutine;	-- don't think this is used...
 buttonClass.SetATTTooltip = SetATTTooltip;
 button:Hide();
 
