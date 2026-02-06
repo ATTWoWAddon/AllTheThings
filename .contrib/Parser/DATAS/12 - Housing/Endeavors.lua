@@ -264,6 +264,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			n(SINDOREI_ENDEAVOR, {
 				n(252917, {	-- Hesta Forlath <Endeavor Trader>
 					["coords"] = EndeavorVendorCoords,
+					["timeline"] = { ADDED_12_0_X_LAUNCH },
 					["groups"] = {
 						i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
 						i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
