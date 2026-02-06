@@ -2049,13 +2049,13 @@ local AccountWideQuestsDB = {
 	90969,	-- Titan Consoles
 	90970,	-- Titan Disc-Count
 	90971,	-- Overcharged Console
+	91029,	-- ??
 	91038,	-- Hellhunters Wanted
 	91079,	-- Hellcaller chest tracker
 	91080,	-- Hellcaller chest tracker
 	91081,	-- Hellcaller chest tracker
 	91082,	-- Hellcaller chest tracker
 	91083,	-- Hellcaller chest tracker
-	91029,	-- ??
 	91142,	-- A Tabard for the Trusted
 	91154,	-- Dissenter Tailtrek
 	91166,	-- Hellcaller chest tracker
@@ -2129,6 +2129,9 @@ local AccountWideQuestsDB = {
 	91968,	-- Welcome Home
 	91969,	-- Time to Decorate
 	92031,	-- Meet the Vandals
+	92071,	-- Deal: Cartel Zo
+	92072,	-- Deal: Cartel Ba
+	92073,	-- Deal: Cartel Om
 	92078,	-- A New Recipe!
 	92402,	-- Magical Touch
 	92417,	-- Farm to Table
