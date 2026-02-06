@@ -1641,7 +1641,6 @@ local function RowOnEnter(self)
 
 	-- Reactivate the original tooltip integrations setting.
 	if wereTooltipIntegrationsDisabled then app.Settings:SetTooltipSetting("Enabled", false); end
-	app.ActiveRowReference = nil;
 
 	-- Tooltip for something which was not attached via search, so mark it as complete here
 	working = working or reference.working
