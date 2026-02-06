@@ -241,6 +241,10 @@ local RetailMapDataStyleMetatable = {
 						end
 					end
 					nextParent = nextParent.parent;
+					-- skip the difficultyGroup we found if any
+					if difficultyGroup and nextParent == difficultyGroup then
+						nextParent = nextParent.parent
+					end
 				end
 
 				-- really really special cases...
