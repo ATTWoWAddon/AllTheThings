@@ -496,9 +496,8 @@ settings.Initialize = function(self)
 	app.SetCustomColors(colors)
 
 	-- Assign the preset filters for your character class as the default states
-	local PerCharacter = _G["AllTheThingsSettingsPerCharacter"];
+	local PerCharacter = app.LocalizeGlobal("AllTheThingsSettingsPerCharacter", true)
 	if PerCharacter then AllTheThingsSettingsPerCharacter = PerCharacter; end
-	_G["AllTheThingsSettingsPerCharacter"] = PerCharacter;
 	if not PerCharacter.Filters then PerCharacter.Filters = {}; end
 	if not PerCharacter.TransmogFilters then PerCharacter.TransmogFilters = {}; end
 	setmetatable(PerCharacter.Filters, FilterSettingsBase);
