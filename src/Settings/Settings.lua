@@ -414,6 +414,7 @@ local TooltipSettingsBase = {
 		["RareFind"] = true,
 
 		-- Information Type Behaviours
+		["ContainsCount"] = 25,
 		["MaxTooltipTopLineLength"] = 999,
 
 		-- Information Types
