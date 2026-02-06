@@ -3,8 +3,8 @@
 local _, app = ...;
 
 -- Global locals
-local type,pairs,setmetatable,rawget,unpack,rawset,select
-	= type,pairs,setmetatable,rawget,unpack,rawset,select
+local type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
+	= type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -366,7 +366,70 @@ local classesByKey = setmetatable({}, {
 		rawset(t, key, value);
 	end,
 });
+local ClassPriorityLookup = {
+"mapID",
+"explorationID",
+"sourceID",
+"encounterID",
+"instanceID",
+"currencyID",
+"speciesID",
+"objectID",
+"flightpathID",
+"followerID",
+"illusionID",
+"professionID",
+"categoryID",
+"criteriaID",
+"achID",
+"achievementID",
+"recipeID",
+"factionID",
+"heirloomID",
+"azeriteessenceID",
+"artifactID",
+"titleID",
+"runeforgepowerID",
+"conduitID",
+"decorID",
+"mountmodID",
+"toyID",
+"modItemID",
+"itemID",
+"npcID",
+"campsiteID",
+"unit",
+"classID",
+"raceID",
+"headerID",
+"expansionID",
+"difficultyID",
+"spellID",
+"f",
+"filterID",
+"objectiveID",
+"questID",
+"text",
+}
+app.AddEventHandler("OnLoad", function()
+	-- assign any special class creator alternate functions which do not match their key, or require special handling
+	ClassPriorityLookup["achID"] = app.CreateAchievement
+	ClassPriorityLookup["f"] = app.CreateFilter
+	if app.GetItemIDAndModID then
+		ClassPriorityLookup["modItemID"] = function(modItemID, t)
+			local itemID, modID, bonusID = app.GetItemIDAndModID(modItemID)
+			t.modID = t.modID or modID
+			t.bonusID = t.bonusID or bonusID
+			return app.CreateItem(itemID, t)
+		end
+	end
+end)
 local function CreateClassInstance(key, id, t)
+	if t and t.__type and getmetatable(t) then
+		-- already has a metatable, so assume someone is calling this method unexpectedly
+		app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Used on existing object!",app.Colors.ChatLinkError),key,id,t.__type)
+		return t
+	end
 	if key then
 		if key == "creatureID" then
 			key = "npcID";
@@ -377,20 +440,25 @@ local function CreateClassInstance(key, id, t)
 		end
 		local classConstructor = classesByKey[key];
 		if classConstructor then return classConstructor(id, t); end
-	elseif not key then
-		local classConstructor;
-		for key,value in pairs(t) do
-			classConstructor = classesByKey[key];
-			if classConstructor then return classConstructor(value, t); end
+	end
+	-- perform a priority-based check on what object to create from this table
+	local keyVal, classConstructor
+	for i=1,#ClassPriorityLookup do
+		key = ClassPriorityLookup[i]
+		keyVal = t[key]
+		if keyVal then
+			classConstructor = ClassPriorityLookup[key] or classesByKey[key]
+			if classConstructor then
+				-- app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Created via constructor",app.Colors.ChatLinkError),key,keyVal)
+				return classConstructor(keyVal, t)
+			end
 		end
 	end
-	--[[
-	print("CreateClassInstance::Failed to Find Class Constructor for", key, id);
-	for key,value in pairs(t) do
-		print(" ", key, value);
-	end
-	]]--
-	return t;
+	app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Failed to Find Class Constructor for",app.Colors.ChatLinkError),key,id)
+	app.PrintTable(t)
+	-- if the t has absolutely no useable data to become a valid object, then just use the BaseClass to ensure it at least has some
+	-- proper handling if sent into a row
+	return setmetatable(t, app.BaseClass)
 end
 local function CloneClassInstance(object, ignoreChildren)
 	local clone = {}
