@@ -33,6 +33,21 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end)
 if not C_ToyBox or app.GameBuildVersion < 30000 then
 	app.CreateToy = app.ExtendClass("Item", CLASSNAME, "toyID", toyFields);
+	local GetItemCount = app.WOWAPI.GetItemCount;
+	app.AddEventHandler("OnRefreshCollections", function()
+		local saved, none = {}, {}
+		for id,_ in pairs(app.GetRawFieldContainer("toyID")) do
+			if GetItemCount(id, true) > 0 then
+				saved[id] = true
+			else
+				none[id] = true
+			end
+		end
+
+		-- Account Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, none)
+	end)
 	return
 end
 

@@ -457,13 +457,19 @@ local AccountWideDataHandlers = setmetatable({
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
 	AzeriteEssenceRanks = RankSyncCharacterData,
 	Quests = SyncCharacterQuestData,
-	Mounts = PartialSyncCharacterData,
-	BattlePets = PartialSyncCharacterData,
 }, {
 	__index = function(t, key)
 		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
 	end,
 });
+if app.GameBuildVersion > 30000 then
+	AccountWideDataHandlers.BattlePets = PartialSyncCharacterData;
+	AccountWideDataHandlers.Mounts = PartialSyncCharacterData;
+else
+	whiteListedFields.BattlePets = true;
+	whiteListedFields.Mounts = true;
+	whiteListedFields.Toys = true;
+end
 local function RecalculateAccountWideData(doPrints)
 	if doPrints then app.print("Recalculating Account Data..."); end
 	for key,data in pairs(AccountWideData) do
