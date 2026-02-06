@@ -2364,7 +2364,7 @@ local function ShowPrecallShowWindows()
 	end
 	app.FunctionRunner.Run(app.RemoveEventHandler, ShowPrecallShowWindows)
 end
-app.AddEventHandler("OnUpdateWindows", ShowPrecallShowWindows)
+app.AddEventHandler("OnRefreshCollectionsDone", ShowPrecallShowWindows)
 local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
@@ -2470,8 +2470,10 @@ local function BuildWindow(suffix)
 		if PrecallShow then
 			-- app.PrintDebug("Window:OnShow:Early",self.Suffix)
 			PreCallShowSuffixes[self.Suffix] = true
+			self:Hide()
 			return
 		end
+		-- app.PrintDebug(self.Suffix,":OnShow",self.data)
 		if not self.data then
 			self:Rebuild();
 		else
@@ -2583,6 +2585,7 @@ local function BuildWindow(suffix)
 				end
 			end
 			function window:Rebuild()
+				-- app.PrintDebug(self.Suffix,":Rebuild",self.data)
 				if self.data then
 					self:AssignChildren();
 					self.data.window = self;
@@ -2622,6 +2625,7 @@ local function BuildWindow(suffix)
 				return result;
 			end
 			function window:Update(force, trigger)
+				-- app.PrintDebug(self.Suffix,":Update+OnUpdate",self:IsShown(),self.HasPendingUpdate,force,trigger)
 				if self:IsShown() then
 					local result = OnUpdate(self, force, trigger) or self:DefaultUpdate(force, trigger);
 					self:Refresh();
@@ -2660,6 +2664,7 @@ local function BuildWindow(suffix)
 				return result;
 			end
 			function window:Update(force, trigger)
+				-- app.PrintDebug(self.Suffix,":Update",self:IsShown(),self.HasPendingUpdate,force,trigger)
 				if self:IsShown() then
 					local result = self:DefaultUpdate(force, trigger);
 					self:Refresh();
@@ -2704,6 +2709,7 @@ local function BuildWindow(suffix)
 			end
 		else
 			function window:Refresh()
+				-- app.PrintDebug(self.Suffix,":Refresh",self:IsShown())
 				if self:IsShown() then
 					self:DefaultRefresh();
 					app.HandleEvent("OnWindowRefreshed", self, self.Suffix)
@@ -2712,6 +2718,7 @@ local function BuildWindow(suffix)
 		end
 	end
 	function window:Redraw()
+		-- app.PrintDebug(self.Suffix,":Redraw")
 		window:DefaultRedraw();
 	end
 
