@@ -382,6 +382,7 @@ local fieldConverters = {
 	["artifactID"] = function(group, value)
 		CacheField(group, "artifactID", value);
 	end,
+	autoHeaderID = cacheHeaderID,
 	["azeriteessenceID"] = function(group, value)
 		CacheField(group, "azeriteessenceID", value);
 	end,
