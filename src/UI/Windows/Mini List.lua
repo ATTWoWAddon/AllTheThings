@@ -110,7 +110,7 @@ local subGroupInstanceKeys = {
 };
 -- Headers possible in a hierarchy that should just be ignored
 local ignoredHeaders = app.HeaderData.IGNOREINMINILIST or app.EmptyTable;
-local groups, nested, headerKeys, difficultyGroup, nextParent, headerID, isInInstance
+local groups, nested, headerKeys, difficultyGroup, nextParent, headerID, isInInstance, instanceType
 local rootGroups, mapGroups = {}, {};
 -- TODO -- For now these have to be different. I don't know if __CreateObject works for all Classic scenarios due to explicit key checks
 -- but CloneClassInstance doesn't properly clone the data in a way that cleanly represents the desired Minilist data
@@ -165,7 +165,11 @@ local RetailMapDataStyleMetatable = {
 			wipearray(rootGroups);
 			wipearray(mapGroups);
 			local currentMaps = {[mapID] = true};
-			isInInstance = IsInInstance();
+			isInInstance, instanceType = IsInInstance();
+			-- don't act like an Instance Minilist in Neighborhood or Player housing
+			if isInInstance and (instanceType == "neighborhood" or instanceType == "interior") then
+				isInInstance = nil
+			end
 			headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
 			local group, groupmapID, groupmaps
 			-- split search results by whether they represent the 'root' of the minilist or some other mapped content
