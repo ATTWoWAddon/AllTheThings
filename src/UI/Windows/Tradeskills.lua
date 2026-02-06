@@ -187,7 +187,6 @@ app:CreateWindow("Tradeskills", {
 								if spellID == 44153 then spellID = 44155;	-- Fix the Flying Machine spellID.
 								elseif spellID == 44151 then spellID = 44157;	-- Fix the Turbo Flying Machine spellID.
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
-								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and craftType and CraftTypeToCraftTypeID[craftType] or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
 									app.SetThingCollected("spellID", spellID, false, true);
 									learned = learned + 1;
@@ -247,7 +246,6 @@ app:CreateWindow("Tradeskills", {
 								elseif spellID == 61309 then spellID = 60971;	-- Fix the Magnificent Flying Carpet spellID.
 								elseif spellID == 75596 then spellID = 75597;	-- Fix the Frosty Flying Carpet spellID.
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
-								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and skillType and CraftTypeToCraftTypeID[skillType] or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
 									app.SetThingCollected("spellID", spellID, false, true);
 									learned = learned + 1;
