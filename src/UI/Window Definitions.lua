@@ -2794,7 +2794,7 @@ local function BuildWindow(suffix)
 	});
 	container:Show();
 
-	if not definition.IgnoreQuestUpdates and false then
+	if not definition.IgnoreQuestUpdates and app.IsClassic then
 		local delayedRefresh = function()
 			window:DelayedRefresh();
 		end;
