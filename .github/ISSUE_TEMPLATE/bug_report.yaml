@@ -17,7 +17,6 @@ body:
         - "Hardcore"
         - "Season of Discovery"
         - "Anniversary Realms"
-        - "Hardcore Anniversary Realms"
     validations:
       required: true
 
