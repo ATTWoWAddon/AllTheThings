@@ -900,9 +900,6 @@ end
 local function SelfMoveRefresher(self)
 	while self.isMoving do
 		coroutine.yield();
-		if not self:IsMouseOver() then
-			StopMovingOrSizing(self);
-		end
 	end
 	self:RecordSettings();
 end
