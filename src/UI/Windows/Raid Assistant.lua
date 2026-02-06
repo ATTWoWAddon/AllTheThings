@@ -182,7 +182,8 @@ app:CreateWindow("RaidAssistant", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
 	OnEvent = function(self, e, ...)
-		Callback(self.Update, self, true);
+		-- this is so spammy for TLUG even on a tiny window, 1 sec delay will help a lot
+		DelayedCallback(self.Update, 1, self, true);
 	end,
 	OnLoad = function(self, settings)
 		-- Only remember the setting if the Raid Assistant was visible
