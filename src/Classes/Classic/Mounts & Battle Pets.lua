@@ -131,10 +131,11 @@ app.CreateMount = app.CreateClass("Mount", "mountID", mountFields,
 	tsm = mountFields.tsmForItem
 }, function(t) return t.itemID; end);
 
-
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter.Mounts then currentCharacter.Mounts = {} end
 	if not accountWideData.Mounts then accountWideData.Mounts = {} end
+	if not currentCharacter.BattlePets then currentCharacter.BattlePets = {} end
+	if not accountWideData.BattlePets then accountWideData.BattlePets = {} end
 end);
 
 -- Battle Pets are done in the Battle Pets lib for MOP Classic
