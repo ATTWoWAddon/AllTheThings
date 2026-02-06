@@ -1943,6 +1943,13 @@ app.AddEventHandler("OnInit", function()
 	LoadSettingsForWindow(primeWindow);
 	AllSettingsApplied = true;
 
+	-- Setup a method to load all window settings for when Profiles are changed after windows are loaded
+	app.LoadSettingsForAllWindows = function()
+		for name, window in pairs(app.Windows) do
+			LoadSettingsForWindow(window)
+		end
+	end
+
 	-- Okay, NOW apply visible to any Built windows
 	for name, window in pairs(app.Windows) do
 		local settings = window.Settings;

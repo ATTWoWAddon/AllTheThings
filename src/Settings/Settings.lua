@@ -689,6 +689,11 @@ settings.ApplyProfile = function(self)
 		-- 'Seasonal' set of filters is no longer used
 		RawSettings.Seasonal = nil
 	end
+
+	-- Ensure the window settings of this Profile are loaded
+	if app.LoadSettingsForAllWindows then
+		app.LoadSettingsForAllWindows()
+	end
 	app.HandleEvent("Settings.OnApplyProfile", key)
 	return RawSettings and true or nil
 end
