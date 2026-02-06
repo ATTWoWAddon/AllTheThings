@@ -176,6 +176,7 @@ root(ROOTS.Character, n(createHeader({
 		}),
 		ach(5028, {	-- Skinnin' for a Livin'
 			["timeline"] = { ADDED_4_0_3, REMOVED_10_0_2 },
+			["isGuild"] = true,	-- achievement data deleted for this achieve post-mop
 		}),
 		ach(5457),	-- The Pen is Mightier
 		ach(5466),	-- Time to Open a Restaurant
