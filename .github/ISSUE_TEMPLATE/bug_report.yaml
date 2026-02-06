@@ -9,7 +9,7 @@ body:
       label: "Which flavo(u)r of WoW are you using?"
       description: "Select the versions of World of Warcraft."
       options:
-        - "beta"
+        - "Beta"
         - "PTR"
         - "Retail"
         - "MoP Classic"
