@@ -1458,6 +1458,10 @@ if IsQuestReplayable then
 		-- check if we are in a Party Sync session when loading in
 		IsPartySyncActive = C_QuestSession.Exists();
 	end);
+else
+	OnSetVisibilityForNestedQuest = function(data)
+		return not IsQuestFlaggedCompleted(data.questID)
+	end
 end
 
 -- Quest Lib
