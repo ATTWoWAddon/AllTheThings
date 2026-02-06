@@ -6,7 +6,9 @@ local i = GetRecipeHelperForProfession(COOKING);
 --- TRAINER ---
 i(0, 2550);			-- Cooking (Apprentice) [REMOVED: 8.0.1]
 i(0, 3102);			-- Cooking (Journeyman) [REMOVED: 8.0.1]
+-- #IF BEFORE 8.0.1
 i(16072, 3413);		-- Cooking (Expert) [TRAINER: 3.1.0, REMOVED: 8.0.1]
+-- #ENDIF
 i(0, 18260);		-- Cooking (Artisan) [REMOVED: 8.0.1]
 i(0, 818);			-- Cooking Fire / Basic Campfire
 i(0, 6499);			-- Boiled Clams

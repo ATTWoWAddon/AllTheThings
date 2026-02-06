@@ -659,44 +659,48 @@ i(0, 128922);	-- Portrait of Madam Goya (Quest?)
 -----------------
 i(102534, 146638);	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 i(104228, 148275);	-- Glyph of Angels
+i(104224, 148271);	-- Glyph of Evaporation
+i(104231, 148278);	-- Glyph of Inspired Hymns
+i(104235, 148282);	-- Glyph of Lingering Ancestors
+i(104227, 148274);	-- Glyph of Pillar of Light
+i(104234, 148281);	-- Glyph of Spirit Raptors
+i(104229, 148276);	-- Glyph of the Sha
+i(104219, 148266);	-- Glyph of Skeleton
+i(104245, 148292);	-- Glyph of the Weaponmaster
+i(104223, 148270);	-- Glyph of the Unbound Elemental
+-- #IF BEFORE 7.0.3
 i(104240, 148287);	-- Glyph of Astral Fixation
 i(104225, 148272);	-- Glyph of Condensation
 i(104212, 148259);	-- Glyph of Divine Shield
 i(104239, 148286);	-- Glyph of Elemental Familiars
 i(104281, 148489);	-- Glyph of Enduring Deceit
-i(104215, 148262);	-- Glyph of Eternal Earth
-i(104224, 148271);	-- Glyph of Evaporation
 i(104211, 148258);	-- Glyph of Festering Blood
 i(104237, 148284);	-- Glyph of Flaming Serpent
 i(104213, 148260);	-- Glyph of Hand of Sacrifice
 i(104232, 148279);	-- Glyph of Headhunting
-i(104217, 148264);	-- Glyph of Impaling Throws
 i(104233, 148280);	-- Glyph of Improved Distraction
-i(104231, 148278);	-- Glyph of Inspired Hymns
-i(104235, 148282);	-- Glyph of Lingering Ancestors
-i(104209, 148256);	-- Glyph of Loud Horn
 i(104222, 148269);	-- Glyph of One with Nature
-i(104227, 148274);	-- Glyph of Pillar of Light
 i(104214, 148261);	-- Glyph of Purging
 i(104241, 148288);	-- Glyph of Rain of Frogs
 i(104210, 148257);	-- Glyph of Regenerative Magic
-i(104230, 148277);	-- Glyph of Shifted Appearances
-i(104234, 148281);	-- Glyph of Spirit Raptors
 i(104236, 148283);	-- Glyph of Spirit Wolf
 i(104197, 148255);	-- Glyph of Swift Death
 i(104238, 148285);	-- Glyph of the Compy
-i(104218, 148265);	-- Glyph of the Executor
 i(104226, 148273);	-- Glyph of the Exorcist
 i(104279, 148487);	-- Glyph of the Lean Pack
-i(104220, 148267);	-- Glyph of the Long Winter
 i(104242, 148289);	-- Glyph of the Raging Whirlwind
-i(104229, 148276);	-- Glyph of the Sha
-i(104219, 148266);	-- Glyph of the Skeleton
 i(104221, 148268);	-- Glyph of the Sprouting Mushroom
 i(104243, 148290);	-- Glyph of the Subtle Defender
 i(104244, 148291);	-- Glyph of the Watchful Eye
-i(104245, 148292);	-- Glyph of the Weaponmaster
-i(104223, 148270);	-- Glyph of the Unbound Elemental
+-- #IF BEFORE 6.0.2
+i(104215, 148262);	-- Glyph of Eternal Earth
+i(104217, 148264);	-- Glyph of Impaling Throws
+i(104209, 148256);	-- Glyph of Loud Horn
+i(104230, 148277);	-- Glyph of Shifted Appearances
+i(104218, 148265);	-- Glyph of the Executor
+i(104220, 148267);	-- Glyph of the Long Winter
+-- #ENDIF
+-- #ENDIF
 --- NYI ---
 i(104282, 148490);	-- Glyph of Chameleon
 i(104280, 148488);	-- Glyph of Focused Fire
