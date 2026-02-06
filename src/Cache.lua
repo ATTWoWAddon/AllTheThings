@@ -163,21 +163,25 @@ local mapKeyUncachers = {
 -- Map Remapping
 -- This feature takes the original mapID and allows modifications on it to
 -- change the displayed name and the content of the mini list.
-local MapRemapping = {};
+local SubTableMetatable = {
+	__index = function(t, key)
+		local s = {};
+		t[key] = s;
+		return s;
+	end
+};
+local MapRemapping = setmetatable({}, {
+	__index = function(t, id)
+		local remap = setmetatable({}, SubTableMetatable);
+		t[id] = remap;
+		return remap;
+	end,
+});
 app.MapRemapping = MapRemapping;
 local nextCustomMapID = -2;
 local function assignZoneAreaIDs(originalMapID, mapID, ids)
 	if originalMapID then
-		local remap = MapRemapping[originalMapID];
-		if not remap then
-			remap = {};
-			MapRemapping[originalMapID] = remap;
-		end
-		local areaIDs = remap.areaIDs;
-		if not areaIDs then
-			areaIDs = {};
-			remap.areaIDs = areaIDs;
-		end
+		local areaIDs = MapRemapping[originalMapID].areaIDs;
 		for i=1,#ids do
 			areaIDs[ids[i]] = mapID;
 		end
@@ -208,16 +212,7 @@ local function zoneArtIDRunner(group, value)
 		L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text
 
 		-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
-		local remap = MapRemapping[originalMapID];
-		if not remap then
-			remap = {};
-			MapRemapping[originalMapID] = remap;
-		end
-		local artIDs = remap.artIDs;
-		if not artIDs then
-			artIDs = {};
-			remap.artIDs = artIDs;
-		end
+		local artIDs = MapRemapping[originalMapID].artIDs;
 		for i=1,#value do
 			artIDs[value[i]] = mapID;
 		end
@@ -301,15 +296,7 @@ end
 local function zoneTextContinentRunner(group, value)
 	local mapID = group.mapID;
 	if mapID then
-		local remap = MapRemapping[mapID];
-		if not remap then
-			remap = {};
-			MapRemapping[mapID] = remap;
-		end
-		remap.isContinent = true;
-
-		--local info = C_Map_GetMapInfo(mapID);
-		--print("MapRemapping (continent): ", mapID, info and info.name);
+		MapRemapping[mapID].isContinent = true;
 	end
 end
 local function zoneTextNamesRunner(group, value)
@@ -329,17 +316,8 @@ local function zoneTextNamesRunner(group, value)
 			-- Manually assign the name of this map since it is not a real mapID.
 			CacheField(group, "mapID", mapID);
 		end
-
-		local remap = MapRemapping[originalMapID];
-		if not remap then
-			remap = {};
-			MapRemapping[originalMapID] = remap;
-		end
-		local names = remap.names;
-		if not names then
-			names = {};
-			remap.names = names;
-		end
+		
+		local names = MapRemapping[originalMapID].names;
 		for i=1,#value do
 			names[value[i]] = mapID;
 		end

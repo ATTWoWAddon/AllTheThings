@@ -6,8 +6,8 @@ local contains = app.contains;
 local distance = app.distance;
 
 -- Global locals
-local coroutine, ipairs, pairs, pcall, tinsert, tonumber, math_floor
-	= coroutine, ipairs, pairs, pcall, tinsert, tonumber, math.floor;
+local coroutine, ipairs, pairs, pcall, rawget, tinsert, tonumber, math_floor
+	= coroutine, ipairs, pairs, pcall, rawget, tinsert, tonumber, math.floor;
 local CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown, IsInInstance
 	= CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, GetZoneText, InCombatLockdown, IsInInstance
 local C_Map_GetMapInfo, C_Map_GetAreaInfo, C_Map_GetMapArtID, C_Map_GetMapLevels, C_Map_GetBestMapForUnit
@@ -27,7 +27,7 @@ local function GetCurrentMapID()
 	app.RealMapID = originalMapID
 	-- app.PrintDebug("RealMapID",originalMapID)
 	if originalMapID then
-		local remap = app.MapRemapping[originalMapID];
+		local remap = rawget(app.MapRemapping, originalMapID);
 		if not remap then return originalMapID; end
 
 		-- local info = C_Map_GetMapInfo(originalMapID);
@@ -145,24 +145,18 @@ local function GetCurrentMapID()
 		if instanceType and instanceType ~= "none" then
 			zoneTexts[instanceName] = 1;
 		end
-		for mapID,remap in pairs(app.MapRemapping) do
-			substitutions = remap.areaIDs;
-			if substitutions then
-				for areaID,mapID in pairs(substitutions) do
-					local info = C_Map_GetAreaInfo(areaID);
-					if info and zoneTexts[info] then
-						-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
-						return mapID;
-					end
+		for _,remap in pairs(app.MapRemapping) do
+			for areaID,mapID in pairs(remap.areaIDs) do
+				local info = C_Map_GetAreaInfo(areaID);
+				if info and zoneTexts[info] then
+					-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
+					return mapID;
 				end
 			end
-			substitutions = remap.names;
-			if substitutions then
-				for name,mapID in pairs(substitutions) do
-					if zoneTexts[name] then
-						-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
-						return mapID;
-					end
+			for name,mapID in pairs(remap.names) do
+				if zoneTexts[name] then
+					-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
+					return mapID;
 				end
 			end
 		end

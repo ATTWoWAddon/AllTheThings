@@ -1465,6 +1465,7 @@ function app:GetDataCache()
 
 	-- app.PrintMemoryUsage()
 	-- app.PrintDebug("Begin Cache Prime")
+	app.AssignChildren(rootData);
 	CacheFields(rootData);
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
@@ -1476,201 +1477,204 @@ function app:GetDataCache()
 		for _, o in ipairs(db.g) do
 			o.sourceIgnored = nil
 		end
-		CacheFields(db, true, "Achievements")
 		tinsert(g, db);
+		CacheFields(db, true, "Achievements")
+		app.AssignChildren(db);
+		db.parent = rootData;
 	end
 
 	if app.IsRetail then
-	-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
-	-- Create Dynamic Groups Button
-	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
-		icon = app.asset("Interface_CreateDynamic"),
-		OnUpdate = app.AlwaysShowUpdate,
-		sourceIgnored = true,
-		-- ["OnClick"] = function(row, button)
-			-- could implement logic to auto-populate all dynamic groups like before... will see if people complain about individual generation
-		-- end,
-		-- Top-Level Dynamic Categories
-		g = {
-			-- Future Unobtainable
-			app.CreateDynamicHeader("rwp", {
-				dynamic_withsubgroups = true,
-				dynamic_value = app.GameBuildVersion,
-				dynamic_searchcriteria = {
-					SearchValueCriteria = {
-						-- only include 'rwp' search results where the value is >= the current game version
-						function(o,field,value)
-							local rwp = o[field]
-							if not rwp then return end
-							return rwp >= value
-						end
+		-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
+		-- Create Dynamic Groups Button
+		local dynamicHeader = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
+			icon = app.asset("Interface_CreateDynamic"),
+			OnUpdate = app.AlwaysShowUpdate,
+			sourceIgnored = true,
+			-- ["OnClick"] = function(row, button)
+				-- could implement logic to auto-populate all dynamic groups like before... will see if people complain about individual generation
+			-- end,
+			-- Top-Level Dynamic Categories
+			g = {
+				-- Future Unobtainable
+				app.CreateDynamicHeader("rwp", {
+					dynamic_withsubgroups = true,
+					dynamic_value = app.GameBuildVersion,
+					dynamic_searchcriteria = {
+						SearchValueCriteria = {
+							-- only include 'rwp' search results where the value is >= the current game version
+							function(o,field,value)
+								local rwp = o[field]
+								if not rwp then return end
+								return rwp >= value
+							end
+						}
+					},
+					name = L.FUTURE_UNOBTAINABLE,
+					description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
+					icon = app.asset("Interface_Future_Unobtainable")
+				}),
+
+				-- Recently Added
+				app.CreateDynamicHeader("awp", {
+					dynamic_value = app.GameBuildVersion,
+					dynamic_withsubgroups = true,
+					name = L.NEW_WITH_PATCH,
+					description = L.NEW_WITH_PATCH_TOOLTIP,
+					icon = app.asset("Interface_Newly_Added")
+				}),
+
+				-- Achievements
+				app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS)),
+
+				-- Artifacts
+				app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
+
+				-- Azerite Essences
+				app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES)),
+
+				-- Battle Pets
+				app.CreateDynamicHeader("speciesID", {
+					name = AUCTION_CATEGORY_BATTLE_PETS,
+					icon = app.asset("Category_PetJournal")
+				}),
+
+				-- Campsites
+				app.CreateDynamicHeader("campsiteID", {
+					name = WARBAND_SCENES,
+					icon = app.asset("Category_Campsites")
+				}),
+
+				-- Character Unlocks
+				app.CreateDynamicHeader("characterUnlock", {
+					name = L.CHARACTERUNLOCKS_CHECKBOX,
+					icon = app.asset("Category_ItemSets")
+				}),
+
+				-- Conduits
+				app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {suffix=EXPANSION_NAME8})),
+
+				-- Currencies
+				app.CreateDynamicHeaderByValue("currencyID", {
+					dynamic_withsubgroups = true,
+					name = CURRENCY,
+					icon = app.asset("Interface_Vendor")
+				}),
+
+				-- Decor
+				app.CreateDynamicHeader("decorID", {
+					name = CATALOG_SHOP_TYPE_DECOR,
+					icon = app.asset("Category_Housing")
+				}),
+
+				-- Factions
+				app.CreateDynamicHeaderByValue("factionID", {
+					dynamic_withsubgroups = true,
+					name = L.FACTIONS,
+					icon = app.asset("Category_Factions")
+				}),
+
+				-- Flight Paths
+				app.CreateDynamicHeader("flightpathID", {
+					name = L.FLIGHT_PATHS,
+					icon = app.asset("Category_FlightPaths")
+				}),
+
+				-- Followers
+				app.CreateDynamicHeader("followerID", SimpleHeaderGroup(app.HeaderConstants.FOLLOWERS)),
+
+				-- Garrison Buildings
+				-- TODO: doesn't seem to work...
+				-- app.CreateDynamicHeader("garrisonbuildingID", SimpleHeaderGroup(app.HeaderConstants.BUILDINGS)),
+
+				-- Heirlooms
+				app.CreateDynamicHeader("heirloomID", SimpleHeaderGroup(app.HeaderConstants.HEIRLOOMS)),
+
+				-- Illusions
+				app.CreateDynamicHeader("illusionID", {
+					name = L.FILTER_ID_TYPES[103],
+					icon = app.asset("Category_Illusions")
+				}),
+
+				-- Mounts
+				app.CreateDynamicHeader("mountID", {
+					name = MOUNTS,
+					icon = app.asset("Category_Mounts")
+				}),
+
+				-- Mount Mods
+				app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS)),
+
+				-- Pet Battles
+				app.CreateDynamicHeader("pb", SimpleHeaderGroup(app.HeaderConstants.PET_BATTLES, {dynamic_withsubgroups = true})),
+
+				-- Professions
+				app.CreateDynamicHeaderByValue("professionID", {
+					dynamic_withsubgroups = true,
+					dynamic_valueField = "requireSkill",
+					name = TRADE_SKILLS,
+					icon = app.asset("Category_Professions")
+				}),
+
+				-- Runeforge Powers
+				app.CreateDynamicHeader("runeforgepowerID", SimpleHeaderGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
+
+				-- Titles
+				app.CreateDynamicHeader("titleID", {
+					name = PAPERDOLL_SIDEBAR_TITLES,
+					icon = app.asset("Category_Titles")
+				}),
+
+				-- Toys
+				app.CreateDynamicHeader("toyID", {
+					name = TOY_BOX,
+					icon = app.asset("Category_ToyBox")
+				}),
+
+				-- Various Quest groups
+				app.CreateCustomHeader(app.HeaderConstants.QUESTS, {
+					visible = true,
+					OnUpdate = app.AlwaysShowUpdate,
+					g = {
+						-- Breadcrumbs
+						app.CreateDynamicHeader("isBreadcrumb", {
+							name = L.BREADCRUMBS,
+							icon = 134051
+						}),
+
+						-- Dailies
+						app.CreateDynamicHeader("isDaily", {
+							name = DAILY,
+							icon = app.asset("Interface_Questd")
+						}),
+
+						-- Weeklies
+						app.CreateDynamicHeader("isWeekly", {
+							name = CALENDAR_REPEAT_WEEKLY,
+							icon = app.asset("Interface_Questw")
+						}),
+
+						-- HQTs
+						app.CreateDynamicHeader("isHQT", {
+							name = MINIMAP_TRACKING_HIDDEN_QUESTS,
+							icon = app.asset("Interface_Quest"),
+						}),
+
+						-- All Quests
+						-- this works but..... bad idea instead use /att list type=quest limit=79000
+						-- app.CreateDynamicHeaderByValue("questID", {
+						-- 	dynamic_withsubgroups = true,
+						-- 	name = QUESTS_LABEL,
+						-- 	icon = app.asset("Interface_Quest_header")
+						-- }),
 					}
-				},
-				name = L.FUTURE_UNOBTAINABLE,
-				description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
-				icon = app.asset("Interface_Future_Unobtainable")
-			}),
+				}),
 
-			-- Recently Added
-			app.CreateDynamicHeader("awp", {
-				dynamic_value = app.GameBuildVersion,
-				dynamic_withsubgroups = true,
-				name = L.NEW_WITH_PATCH,
-				description = L.NEW_WITH_PATCH_TOOLTIP,
-				icon = app.asset("Interface_Newly_Added")
-			}),
-
-			-- Achievements
-			app.CreateDynamicHeader("achievementID", SimpleHeaderGroup(app.HeaderConstants.ACHIEVEMENTS)),
-
-			-- Artifacts
-			app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
-
-			-- Azerite Essences
-			app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES)),
-
-			-- Battle Pets
-			app.CreateDynamicHeader("speciesID", {
-				name = AUCTION_CATEGORY_BATTLE_PETS,
-				icon = app.asset("Category_PetJournal")
-			}),
-
-			-- Campsites
-			app.CreateDynamicHeader("campsiteID", {
-				name = WARBAND_SCENES,
-				icon = app.asset("Category_Campsites")
-			}),
-
-			-- Character Unlocks
-			app.CreateDynamicHeader("characterUnlock", {
-				name = L.CHARACTERUNLOCKS_CHECKBOX,
-				icon = app.asset("Category_ItemSets")
-			}),
-
-			-- Conduits
-			app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {suffix=EXPANSION_NAME8})),
-
-			-- Currencies
-			app.CreateDynamicHeaderByValue("currencyID", {
-				dynamic_withsubgroups = true,
-				name = CURRENCY,
-				icon = app.asset("Interface_Vendor")
-			}),
-
-			-- Decor
-			app.CreateDynamicHeader("decorID", {
-				name = CATALOG_SHOP_TYPE_DECOR,
-				icon = app.asset("Category_Housing")
-			}),
-
-			-- Factions
-			app.CreateDynamicHeaderByValue("factionID", {
-				dynamic_withsubgroups = true,
-				name = L.FACTIONS,
-				icon = app.asset("Category_Factions")
-			}),
-
-			-- Flight Paths
-			app.CreateDynamicHeader("flightpathID", {
-				name = L.FLIGHT_PATHS,
-				icon = app.asset("Category_FlightPaths")
-			}),
-
-			-- Followers
-			app.CreateDynamicHeader("followerID", SimpleHeaderGroup(app.HeaderConstants.FOLLOWERS)),
-
-			-- Garrison Buildings
-			-- TODO: doesn't seem to work...
-			-- app.CreateDynamicHeader("garrisonbuildingID", SimpleHeaderGroup(app.HeaderConstants.BUILDINGS)),
-
-			-- Heirlooms
-			app.CreateDynamicHeader("heirloomID", SimpleHeaderGroup(app.HeaderConstants.HEIRLOOMS)),
-
-			-- Illusions
-			app.CreateDynamicHeader("illusionID", {
-				name = L.FILTER_ID_TYPES[103],
-				icon = app.asset("Category_Illusions")
-			}),
-
-			-- Mounts
-			app.CreateDynamicHeader("mountID", {
-				name = MOUNTS,
-				icon = app.asset("Category_Mounts")
-			}),
-
-			-- Mount Mods
-			app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS)),
-
-			-- Pet Battles
-			app.CreateDynamicHeader("pb", SimpleHeaderGroup(app.HeaderConstants.PET_BATTLES, {dynamic_withsubgroups = true})),
-
-			-- Professions
-			app.CreateDynamicHeaderByValue("professionID", {
-				dynamic_withsubgroups = true,
-				dynamic_valueField = "requireSkill",
-				name = TRADE_SKILLS,
-				icon = app.asset("Category_Professions")
-			}),
-
-			-- Runeforge Powers
-			app.CreateDynamicHeader("runeforgepowerID", SimpleHeaderGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
-
-			-- Titles
-			app.CreateDynamicHeader("titleID", {
-				name = PAPERDOLL_SIDEBAR_TITLES,
-				icon = app.asset("Category_Titles")
-			}),
-
-			-- Toys
-			app.CreateDynamicHeader("toyID", {
-				name = TOY_BOX,
-				icon = app.asset("Category_ToyBox")
-			}),
-
-			-- Various Quest groups
-			app.CreateCustomHeader(app.HeaderConstants.QUESTS, {
-				visible = true,
-				OnUpdate = app.AlwaysShowUpdate,
-				g = {
-					-- Breadcrumbs
-					app.CreateDynamicHeader("isBreadcrumb", {
-						name = L.BREADCRUMBS,
-						icon = 134051
-					}),
-
-					-- Dailies
-					app.CreateDynamicHeader("isDaily", {
-						name = DAILY,
-						icon = app.asset("Interface_Questd")
-					}),
-
-					-- Weeklies
-					app.CreateDynamicHeader("isWeekly", {
-						name = CALENDAR_REPEAT_WEEKLY,
-						icon = app.asset("Interface_Questw")
-					}),
-
-					-- HQTs
-					app.CreateDynamicHeader("isHQT", {
-						name = MINIMAP_TRACKING_HIDDEN_QUESTS,
-						icon = app.asset("Interface_Quest"),
-					}),
-
-					-- All Quests
-					-- this works but..... bad idea instead use /att list type=quest limit=79000
-					-- app.CreateDynamicHeaderByValue("questID", {
-					-- 	dynamic_withsubgroups = true,
-					-- 	name = QUESTS_LABEL,
-					-- 	icon = app.asset("Interface_Quest_header")
-					-- }),
-				}
-			}),
-
-		},
-	}));
+			},
+		});
+		tinsert(g, dynamicHeader);
+		dynamicHeader.parent = rootData;
+		app.AssignChildren(dynamicHeader);
 	end
-
-	app.AssignChildren(rootData);
 
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
