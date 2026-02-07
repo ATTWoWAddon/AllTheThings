@@ -768,6 +768,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		--hqt(86534),	-- temporary until 11.2.7 to prevent a parser warning due to bad blizz data
 		q(94708, { ["isDaily"] = true, ["timeline"] = { ADDED_12_0_0 } }),	-- Triggers after completing Blingtron 6000 (40753), and possibly other blingtrons too?
 		q(94710, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
+		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
 		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
