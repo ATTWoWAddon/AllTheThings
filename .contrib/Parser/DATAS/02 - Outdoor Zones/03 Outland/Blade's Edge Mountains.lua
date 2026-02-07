@@ -2561,6 +2561,31 @@ root(ROOTS.Zones, {
 							},
 						}),
 					})),
+					n(22266, {	-- Ogri'la Grubgiver
+						["coord"] = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
+						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["groups"] = {
+							i(32686),	-- Mingo's Fortune Giblets
+							i(32685),	-- Ogri'la Chicken Fingers
+							i(29453),	-- Sporeggar Mushroom
+							i(27859),	-- Zangar Caps
+						},
+					}),
+					n(23110, {	-- Ogri'la Keg King
+						["coord"] = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
+						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["groups"] = {
+							i(32667),	-- Bash Ale
+							i(32668),	-- Dos Ogris
+						},
+					}),
+					n(22270, {	-- Ogri'la Merchant
+						["coord"] = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
+						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["groups"] = {
+							i(32758),	-- Brute Cologne
+						},
+					}),
 					n(19473, {	-- Raiza
 						["coord"] = { 53.0, 59.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,

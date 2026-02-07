@@ -4503,8 +4503,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						},
 					["groups"] = {
+						i(4593),	-- Bristle Whisker Catfish
+						i(4592),	-- Longjaw Mud Snapper
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(4594),	-- Rockscale Cod
+						i(787),		-- Slitherskin Mackerel
+						i(8957),	-- Spinefin Halibut
+						i(21552),	-- Striped Yellowtail
 					},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
