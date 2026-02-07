@@ -766,7 +766,7 @@ local function CacheExplorationForAllKnownExploration()
 	for explorationID,explorations in pairs(app.SearchForFieldContainer("explorationID")) do
 		-- only ever 1 cached
 		exploration = explorations[1]
-		if exploration.coords then
+		if exploration and exploration.coords then
 			local grid = {}
 			local mapID
 			-- convert the coords into a grid for our common method
