@@ -700,7 +700,7 @@ do
 		local providers = o.providers;
 		if not cost and not providers then return; end
 
-		amount = amount or 1
+		amount = amount or o.objectiveCost or 1
 		-- app.PrintDebug("AGC.Needed",
 		-- 	o.visible and "VISIBLE",
 		-- 	o.saved and "SAVED",
