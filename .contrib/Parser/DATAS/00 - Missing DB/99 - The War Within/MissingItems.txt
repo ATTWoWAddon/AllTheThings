@@ -24747,10 +24747,7 @@ i(265031),	-- Consortium Translocation Portal
 i(265653),	-- Elegant Storage Table
 i(265654),	-- Elegant Elven Washbasin
 i(266130),	-- Gilded Silvermoon Gazebo
-i(266234),	-- Saltfang Shoals Large Garden Cluster
 i(266235),	-- Razorwind Cactus Large Garden Cluster
-i(266236),	-- Razorwind Blooms Large Garden Cluster
-i(266237),	-- Runetotem's Bounty Large Garden Cluster
 i(266238),	-- Cragthorn Highlands Large Garden Cluster
 i(267645),	-- Dreamrift Vanquisher's Argent Trophy
 i(267646),	-- March on Quel'Danas Vanquisher's Argent Trophy
