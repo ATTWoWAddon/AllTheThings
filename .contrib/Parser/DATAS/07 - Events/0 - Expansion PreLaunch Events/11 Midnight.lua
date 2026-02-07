@@ -431,9 +431,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(EXPANSION_PRELAUNCH, {
-		["timeline"] = { ADDED_12_0_0, REMOVED_12_0_0 },
 		["groups"] = {
-			n(QUESTS, {	-- Rare questIDs were removed third day of the pre-patch to make them always drop the gear
+			n(QUESTS, {
+				q(95669, { ["isDaily"] = true }),	-- [DNT] Bonus Exp, Triggers Randomly. First Rare kill of the day, completing WQ objectives, etc.
+			}),
+			n(RARES, bubbleDownSelf({
+				["timeline"] = { ADDED_12_0_0, REMOVED_12_0_0 },	-- Rare questIDs were removed third day of the pre-patch to make them always drop the gear
+			}, {
 				q(91473),	-- Archbishop Benedictus
 				q(91472),	-- Asira Dawnslayer
 				q(94507),	-- Berg the Spellfist
@@ -453,7 +457,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94506),	-- Voice of the Eclipse
 				q(91471),	-- Void Zealot Devinda
 				q(94510),	-- Voidclaw Hexathor
-			}),
+			})),
 		},
 	}),
 }));
