@@ -17,6 +17,7 @@ local GetNumLootItems, GetLootSlotLink, GetLootSourceInfo, GetTaxiMapID, C_TaxiM
 local C_TradeSkillUI_GetCategories
 	= C_TradeSkillUI.GetCategories;
 local GetItemID = app.WOWAPI.GetItemID;
+local issecretvalue = app.WOWAPI.issecretvalue;
 
 local CloneArray, CloneClassInstance, GetRelativeValue, MergeObject
 	= app.CloneArray, app.CloneClassInstance, app.GetRelativeValue, app.MergeObject;
@@ -363,7 +364,7 @@ app:CreateWindow("Debugger", {
 		-- Capture various party loot received
 		handlers.CHAT_MSG_LOOT = function(self, msg, player, a, b, c, d, e, f, g, h, i, guid, k, l)
 			-- don't store loot for the player since that is captured by source
-			if not guid or guid == app.GUID then return end
+			if not guid or issecretvalue(guid) or guid == app.GUID then return end
 
 			-- "You receive item: item:###" will break the match
 			msg = msg:gsub("item: ", "");
