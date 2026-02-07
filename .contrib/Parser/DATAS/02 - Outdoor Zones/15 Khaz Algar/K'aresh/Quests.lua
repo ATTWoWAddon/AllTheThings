@@ -2582,7 +2582,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["lore"] = "The Void Elf Leona has sought the knowledge of the Illidari Demon Hunters as a novel means to harness the Void.",
 				["timeline"] = { ADDED_12_0_0 },
 				["groups"] = {
-					q(92630, {	-- The Pursuit Continues
+					q(94933, {	-- Lessons in the Void
 						["qgs"] = {
 							259942,	-- Messenger Aelor @ Stormwind City
 							259941,	-- Messenger Aelor @ Orgrimmar
@@ -2595,9 +2595,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{ 44.4, 50.3, DORNOGAL },
 							{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 						},
+						["lockCriteria"] = { 1, "questID", 90972 },	-- A Common Cause
+					}),
+					q(92630, {	-- The Pursuit Continues
+						["qgs"] = {
+							259942,	-- Messenger Aelor @ Stormwind City
+							259941,	-- Messenger Aelor @ Orgrimmar
+							259951,	-- Messenger Aelor @ Dornogal
+							257544,	-- Messenger Aelor @ Silvermoon City
+							248153,	-- Magister Umbric @ K'aresh
+						},
+						["coords"] = {
+							{ 50.5, 16.6, STORMWIND_CITY },
+							{ 64.0, 59.9, 86 },	-- Cleft of Shadow, Orgrimmar
+							{ 44.4, 50.3, DORNOGAL },
+							{ 53.6, 65.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+							{ 60.9, 27.7, KARESH },
+						},
 					}),
 					q(92631, {	-- Abhorrent Gauntlet
-						["sourceQuest"] = 92630,	-- The Pursuit Continues
+						["sourceQuests"] = {
+							91044,	-- Hunger of the Void
+							92630,	-- The Pursuit Continues
+						},
 						["qg"] = 252617,	-- Allari the Souleater
 						["coord"] = { 65.0, 40.6, KARESH },
 						["groups"] = {
