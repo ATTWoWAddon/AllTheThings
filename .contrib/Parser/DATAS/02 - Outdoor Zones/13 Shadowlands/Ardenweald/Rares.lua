@@ -148,6 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(164415, {	-- Skuld Vit
+				["description"] = "Use soulshape to cross the barrier.",
 				["coord"] = { 37.4, 59.6, ARDENWEALD },
 				["questID"] = 59220,
 				["groups"] = {
