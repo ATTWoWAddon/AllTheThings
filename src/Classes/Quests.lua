@@ -1861,9 +1861,9 @@ end);
 
 -- Game Events that trigger visual updates, but no computation updates.
 local softRefresh = function()
-	app.WipeSearchCache();
 	wipe(LockedQuestCache)
 	wipe(LockedBreadcrumbCache)
+	app.CallbackHandlers.AfterCombatOrDelayedCallback(app.WipeSearchCache, 1)
 end;
 if C_QuestLog_GetAllCompletedQuestIDs then
 	-- In Retail, this has a cooldown and OOC protection, plus it actually allows accurate
