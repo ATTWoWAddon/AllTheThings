@@ -48,7 +48,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "removed 12.0.1.99999" },
 			}),
 			n(RAZER, sharedDataSelf({
-				["timeline"] = { "removed 12.0.1.99999" },
+				["timeline"] = { "removed 12.0.0.65655" },
 			}, {
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 				i(107951),	-- Iron Skyreaver (MOUNT!)
