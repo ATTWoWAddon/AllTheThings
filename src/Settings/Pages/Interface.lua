@@ -249,7 +249,7 @@ sliderSummarizeThings:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 10, 0)
 
 local sliderMaxTooltipTopLineLength = child:CreateSlider("ATTSliderMaxTooltipFirstLineLength", {
 	TEXT=L.MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL,
-	TOOLTIP=L.CONTAINS_SLIDER_TOOLTIP,
+	-- TOOLTIP=, -- No tooltip?
 	SETTING="MaxTooltipTopLineLength",
 	FORMAT="%.0f",
 	MIN=80, MAX=1000, STEP=20,
