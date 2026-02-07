@@ -112,7 +112,7 @@ local buttonDeleteProfile = child:CreateButton(
 		end
 	end
 })
-buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1)
+buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 15, -1)
 
 -- Switch Button
 local buttonSwitchProfile = child:CreateButton(
