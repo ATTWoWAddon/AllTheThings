@@ -53,18 +53,22 @@ end
 local function RefreshWindowManager()
 	local keys,sortedList,topKeys = {},{},{};
 	for suffix,window in pairs(app.WindowDefinitions) do
-		app:GetWindow(suffix);
-		if window.IsTopLevel then
-			tinsert(topKeys, suffix);
-		else
-			keys[suffix] = window;
+		if not window.HideFromSettings then
+			app:GetWindow(suffix);
+			if window.IsTopLevel then
+				tinsert(topKeys, suffix);
+			else
+				keys[suffix] = window;
+			end
 		end
 	end
 	for suffix,window in pairs(app.Windows) do
-		if window.IsTopLevel then
-			tinsert(topKeys, suffix);
-		else
-			keys[suffix] = window;
+		if not window.HideFromSettings then
+			if window.IsTopLevel then
+				tinsert(topKeys, suffix);
+			else
+				keys[suffix] = window;
+			end
 		end
 	end
 	for suffix,window in pairs(keys) do
