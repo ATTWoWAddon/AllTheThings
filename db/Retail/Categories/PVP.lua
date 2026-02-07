@@ -38686,7 +38686,8 @@ title(555,{pvp=1,u=2})}}),
 ach(40234,{pvp=1,r=1,u=2,g={
 title(554,{pvp=1,u=2})}}),
 ach(40233,{pvp=1,u=2,g={
-toy(225933,{b=1,lvl=80,pvp=1,u=2})}}),
+toy(225933,{b=1,lvl=80,pvp=1,u=2}),
+title(539,{collectible=false,pvp=1,u=2})}}),
 ach(40395,{pvp=1,u=2,g={
 toy(225933,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(40381,{pvp=1,u=2,g={
@@ -40430,7 +40431,8 @@ title(610,{pvp=1,u=2})}}),
 ach(41356,{pvp=1,r=1,u=2,g={
 title(609,{pvp=1,u=2})}}),
 ach(41363,{pvp=1,u=2,g={
-toy(235519,{b=1,lvl=80,pvp=1,u=2})}}),
+toy(235519,{b=1,lvl=80,pvp=1,u=2}),
+title(539,{collectible=false,pvp=1,u=2})}}),
 ach(41358,{pvp=1,u=2,g={
 toy(235519,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(41355,{pvp=1,u=2,g={
@@ -41947,7 +41949,8 @@ title(632,{pvp=1})}}),
 ach(42038,{pvp=1,r=2}),
 ach(42037,{pvp=1,r=1}),
 ach(42024,{pvp=1,g={
-toy(242636,{b=1,lvl=80,pvp=1})}}),
+toy(242636,{b=1,lvl=80,pvp=1}),
+title(539,{collectible=false,pvp=1})}}),
 ach(42023,{pvp=1,g={
 toy(242636,{b=1,lvl=80,pvp=1})}}),
 ach(42044,{pvp=1}),
@@ -43022,7 +43025,8 @@ s(302180,260441,{f=9,pvp=1,r=1}),
 crit(109688,{achID=2092,awp=30002,id=33,pvp=1})}}),
 ach(61197,{pvp=1,g={
 s(303228,264010,{f=3,pvp=1,r=2}),
-s(302182,260443,{f=3,pvp=1,r=1})}}),
+s(302182,260443,{f=3,pvp=1,r=1}),
+crit(111102,{achID=61858,id=2})}}),
 ach(61180,{pvp=1,g={
 title(654,{pvp=1})}}),
 ach(61188,{pvp=1,g={
@@ -43039,7 +43043,8 @@ title(652,{pvp=1})}}),
 ach(61195,{pvp=1,r=2}),
 ach(61196,{pvp=1,r=1}),
 ach(61194,{pvp=1,g={
-s(300603,255879,{f=3,pvp=1})}}),
+s(300603,255879,{f=3,pvp=1}),
+title(539,{collectible=false,pvp=1})}}),
 ach(61190,{pvp=1,g={
 s(300603,255879,{f=3,pvp=1})}}),
 ach(61198,{c=a[113],pvp=1}),
@@ -43224,20 +43229,7 @@ s(299583,255356,{cost={{"c",1792,1225}},f=27,pvp=1}),
 s(299575,255348,{cost={{"c",1792,875}},f=35,pvp=1})}})}})}}),
 h(-296,{pvp=1,rwp=120100,g={
 n(243220,{coords={{34.1,80.4,2393}},pvp=1}),
-o(456208,{coords={{40.3,65.1,2393}},description="Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",modelScale=4,pvp=1,g={
-cl(6,{pvp=1}),
-cl(12,{pvp=1}),
-cl(11,{pvp=1}),
-cl(13,{pvp=1}),
-cl(3,{pvp=1}),
-cl(8,{pvp=1}),
-cl(10,{pvp=1}),
-cl(2,{pvp=1}),
-cl(5,{pvp=1}),
-cl(4,{pvp=1}),
-cl(7,{pvp=1}),
-cl(9,{pvp=1}),
-cl(1,{pvp=1})}})}}),
+o(456208,{catalystID=12,coords={{40.3,65.1,2393}},description="Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",modelScale=4,pvp=1})}}),
 h(-295,{pvp=1,rwp=120100,g={
 h(-18,{pvp=1,g={
 cl(6,{pvp=1}),

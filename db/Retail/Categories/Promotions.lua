@@ -132,14 +132,22 @@ mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subsc
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369}),
 s(303274,264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",f=2,rwp=120001}),
-h(-708,{rwp=120001,g={
-mnt(367620,{itemID=190539,lvl=10}),
-mnt(153489,{b=1,itemID=107951,lvl=10}),
-p(4690,{itemID=232519,npcID=233481,spellID=470914})}}),
+h(-708,{rwp=120000,u=2,g={
+mnt(367620,{itemID=190539,lvl=10,u=2}),
+mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
+p(4690,{itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,g={
 de(14467,{itemID=260785,sourceAchievements={62387},spellID=1266894})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(235378,{b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the In-game Shop for a limited time.",rwp=120100,spellID=1216746,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258136)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(235378,{b=1,description="The first lottery draw costs ¥1, and the price increases progressively with each subsequent draw. A total of 13 draws costing ¥1,271 will allow you to obtain all prizes. ",rwp=120100,spellID=1216746,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4902,{itemID=253404,npcID=252686,spellID=1256380})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(251542,{f=55,spellID=1252638})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9265,{itemID=253244,spellID=1255878})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9273,{itemID=253257,spellID=1255907})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+de(9280,{itemID=253296,spellID=1255997})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,g={
 s(301195,257538,{f=2}),
 s(301196,257539,{f=2}),
@@ -149,26 +157,13 @@ s(301199,257542,{f=2}),
 s(301200,257543,{f=2}),
 s(301201,257544,{f=2}),
 s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9265,{itemID=253244,spellID=1255878})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9270,{itemID=253254,spellID=1255904})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9271,{itemID=253255,spellID=1255905})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9272,{itemID=253256,spellID=1255906})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9273,{itemID=253257,spellID=1255907})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9274,{itemID=253290,spellID=1255991})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9275,{itemID=253291,spellID=1255992})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9276,{itemID=253292,spellID=1255993})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9277,{itemID=253293,spellID=1255994})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9278,{itemID=253294,spellID=1255995})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9279,{itemID=253295,spellID=1255996})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-de(9280,{itemID=253296,spellID=1255997})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-p(4902,{itemID=253404,npcID=252686,spellID=1256380})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(251542,{f=55,spellID=1252638})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269009)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269009,{f=100,spellID=1284640})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1258573,{itemID=254735})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(255973,{f=106,spellID=1259687})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
