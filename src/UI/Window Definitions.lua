@@ -727,9 +727,20 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Update the Summary Text (this will be the thing that updates the most)
-	local summaryText = data.summaryText or "";
-	local oldSummary = row.summaryText or "";
-	if oldSummary ~= summaryText then
+	local summaryText = data.summaryText or ""
+	if summaryText ~= "" and IsRetrieving(summaryText) then
+		-- This means the link is still rendering
+		summaryText = RETRIEVING_DATA;
+
+		local AsyncRefreshFunc = data.AsyncRefreshFunc
+		if AsyncRefreshFunc then
+			AsyncRefreshFunc(data)
+		else
+			-- app.PrintDebug("No Async Redraw Func for Type!",data.__type,data.hash)
+			Callback(self.Redraw, self)
+		end
+	end
+	if summaryText ~= (row.summaryText or "") then
 		row.Summary:SetText(summaryText);
 		row.summaryText = summaryText;
 	end
