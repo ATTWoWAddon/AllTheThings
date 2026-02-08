@@ -371,6 +371,7 @@ local function DefaultAccountWideDataHandler(data, key)
 end
 -- Some cached data is stored directly in AccountWideData... we have no reason to 'sync' those tables via the Recalculate function
 local whiteListedFields = {
+	Achievements = app.GameBuildVersion < 30000,
 	Artifacts = true,
 	AzeriteEssenceRanks = true,
 	BattlePets = true,
