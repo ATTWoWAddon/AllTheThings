@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber
-	= type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber
+local type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber, math_floor
+	= type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber, math.floor
 
 -- WoW API Cache
 local C_Map_GetPlayerMapPosition, C_Map_GetMapInfo
@@ -92,7 +92,181 @@ local CleanFields = {
 	_missing = 1,
 	__merge = 1,
 	__canretry = 1,
+	SortType = 1,
+	OnClick = 1,
 };
+local function CleanObject(obj)
+	if obj == nil then return end
+	if type(obj) == "table" then
+		local clean = {};
+		if obj[1] then
+			for _,o in ipairs(obj) do
+				clean[#clean + 1] = CleanObject(o)
+			end
+		else
+			for k,v in pairs(obj) do
+				if not CleanFields[k] then
+					clean[k] = CleanObject(v)
+				end
+			end
+		end
+		return clean
+	elseif type(obj) == "number" then
+		return obj
+	else
+		return tostring(obj)
+	end
+end
+
+-- Exporting Data
+local DefaultParsing = {};
+local function CalculateIndent(indent)
+	local str = "";
+	for i=0,indent do
+		str = str .. "\t";
+	end
+	return str;
+end
+local function GetMoneyString(amount)
+	if amount > 0 then
+		local formatted
+		local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
+			math_floor(amount % 100)
+		if gold > 0 then
+			formatted = app.formatNumericWithCommas(gold) .. "g"
+		end
+		if silver > 0 then
+			if formatted then
+				formatted = formatted .. " " .. silver .. "s";
+			else
+				formatted = silver .. "s";
+			end
+		end
+		if copper > 0 then
+			if formatted then
+				formatted = formatted .. " " .. copper .. "c";
+			else
+				formatted = copper .. "c";
+			end
+		end
+		return formatted
+	end
+	return amount
+end
+local function GetNameFromCost(costType, id, count)
+	if costType == "g" then
+		return GetMoneyString(amount or id);
+	elseif costType == "c" then
+		return (count > 1 and ("x" .. count .. " ") or "") .. (app.CreateCurrencyClass(id).name or UNKNOWN);
+	else
+		return (count > 1 and ("x" .. count .. " ") or "") .. (app.GetNameFromProvider(costType, id) or UNKNOWN);
+	end
+end
+local function ExportKeyValue(key, value)
+	local str = key .. " = ";
+	if key == "providers" then
+		str = str .. "{\n";
+		for i,o in ipairs(value) do
+			str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN) .. "\n";
+		end
+		str = str .. "},";
+	elseif key == "provider" then
+		str = str .. "{ \"" .. value[1] .. "\", " .. value[2] .. " },\t-- " .. (app.GetNameFromProvider(value[1], value[2]) or UNKNOWN);
+	elseif key == "crs" or key == "qgs" then
+		str = str .. "{\n";
+		for i,id in ipairs(value) do
+			str = str .. "\t" .. id .. ",\t-- " .. app.NPCNameFromID[id] .. "\n";
+		end
+		str = str .. "},";
+	elseif key == "coords" then
+		str = str .. "{\n";
+		for i,o in ipairs(value) do
+			str = str .. "\t{ " .. o[1] .. ", " .. o[2] .. ", " .. o[3] .. " },\n";
+		end
+		str = str .. "},";
+	elseif key == "coord" then
+		str = str .. "{ " .. value[1] .. ", " .. value[2] .. ", " .. value[3] .. " },";
+	elseif key == "cost" then
+		if type(value) == "number" then
+			-- This is simply a gold value
+			str = str .. value .. ",\t-- " .. GetMoneyString(value);
+		else
+			-- This is the traditional cost format.
+			str = str .. "{\n";
+			for i,o in ipairs(value) do
+				str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]) .. "\n";
+			end
+			str = str .. "},";
+		end
+	elseif key == "r" then
+		-- "r" is a shortcut for "races", where the whole of the faction can do a thing
+		str = "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
+	else
+		if not DefaultParsing[key] then
+			print("DEFAULT PARSING FOR KEY", key);
+			DefaultParsing[key] = true;
+		end
+		if type(value) == "string" then
+			str = str .. "\"" .. value .. "\",";
+		else
+			str = str .. value .. ",";
+		end
+	end
+	return str;
+end
+local function ExportDataToString(data)
+	if data then
+		local str = "{";
+		local hasG = data.g;
+		if hasG then data.g = nil; end
+		--[[
+		local hasKey = data.key;
+		if hasKey then
+			
+		end
+		]]--
+		
+		local anyOtherKeys;
+		for key,value in pairs(data) do
+			if not CleanFields[key] then
+				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
+				anyOtherKeys = true;
+			end
+		end
+		
+		-- Assign the groups back
+		if hasG then
+			data.g = hasG;
+			if #hasG > 0 then
+				if anyOtherKeys then
+					str = str .. "\n\tg = {";
+					for i,o in ipairs(hasG) do
+						str = str .. "\n\t\t" .. (ExportDataToString(o):gsub("\n", "\n\t\t"));
+					end
+					str = str .. "\n\t}";
+				else
+					for i,o in ipairs(hasG) do
+						str = str .. "\n\t" .. (ExportDataToString(o):gsub("\n", "\n\t"));
+					end
+				end
+			end
+		end
+		return str .. "\n},";
+	end
+	return "nil,";
+end
+local function OnClick_ExportData(row, button)
+	-- TODO: It would be neat to be able to export singular objects
+	if button == "LeftButton" and IsAltKeyDown() then
+		local str = ExportDataToString(row.ref);
+		if str then
+			app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
+		else
+			app.print("Nothing to export");
+		end
+		return true;
+	end
+end
 
 -- Uncomment this section if you need to enable Debugger:
 -- Retail Currently uses [/att debugger] as defined below
@@ -126,28 +300,6 @@ app:CreateWindow("Debugger", {
 		end
 		self:AddObject(header);
 	end,
-	CleanObject = function(self, obj)
-		if obj == nil then return end
-		if type(obj) == "table" then
-			local clean = {};
-			if obj[1] then
-				for _,o in ipairs(obj) do
-					clean[#clean + 1] = self:CleanObject(o)
-				end
-			else
-				for k,v in pairs(obj) do
-					if not CleanFields[k] then
-						clean[k] = self:CleanObject(v)
-					end
-				end
-			end
-			return clean
-		elseif type(obj) == "number" then
-			return obj
-		else
-			return tostring(obj)
-		end
-	end,
 	OnLoad = function(self, settings)
 		self.rawData = app.LocalizeGlobal("AllTheThingsDebugData", true);
 		self.data.g = CloneClassInstance(self.rawData);
@@ -164,7 +316,7 @@ app:CreateWindow("Debugger", {
 		-- skip clickable rows
 		for _,o in ipairs(self.data.g) do
 			if not o.OnClick then
-				tinsert(self.rawData, self:CleanObject(o));
+				tinsert(self.rawData, CleanObject(o));
 			end
 		end
 		app.print("Debugger Data Saved");
@@ -213,6 +365,33 @@ app:CreateWindow("Debugger", {
 						end
 						self:AssignChildren();
 						self:Update(true);
+						return true;
+					end,
+				}),
+				app.CreateRawText("Export All Data", {
+					icon = 135468,
+					description = "Click this to export all of the data.",
+					visible = true,
+					count = 0,
+					OnClick = function(row, button)
+						local str;
+						for i,o in ipairs(self.data.g) do
+							if o.key ~= "strKey" then
+								local substr = ExportDataToString(o);
+								if substr then
+									if str then
+										str = str .. "\n" .. substr;
+									else
+										str = substr;
+									end
+								end
+							end
+						end
+						if str then
+							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
+						else
+							app.print("Nothing to export");
+						end
 						return true;
 					end,
 				}),
