@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber, math_floor
-	= type,wipe,ipairs,pairs,select,tinsert,tremove,tonumber, math.floor
+local type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math_floor
+	= type,wipe,ipairs,pairs,rawget,select,tinsert,tremove,tonumber, math.floor
 
 -- WoW API Cache
 local C_Map_GetPlayerMapPosition, C_Map_GetMapInfo
@@ -207,24 +207,22 @@ local function ExportKeyValue(key, value)
 			DefaultParsing[key] = true;
 		end
 		if type(value) == "string" then
-			str = str .. "\"" .. value .. "\",";
+			if value:find("\"") or value:find("\n") then
+				str = str .. "[[" .. value .. "]],";
+			else
+				str = str .. "\"" .. value .. "\",";
+			end
 		else
 			str = str .. value .. ",";
 		end
 	end
 	return str;
 end
-local function ExportDataToString(data)
+local function ExportRawDataToString(data)
 	if data then
 		local str = "{";
 		local hasG = data.g;
 		if hasG then data.g = nil; end
-		--[[
-		local hasKey = data.key;
-		if hasKey then
-			
-		end
-		]]--
 		
 		local anyOtherKeys;
 		for key,value in pairs(data) do
@@ -241,17 +239,145 @@ local function ExportDataToString(data)
 				if anyOtherKeys then
 					str = str .. "\n\tg = {";
 					for i,o in ipairs(hasG) do
-						str = str .. "\n\t\t" .. (ExportDataToString(o):gsub("\n", "\n\t\t"));
+						str = str .. "\n\t\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t\t"));
 					end
 					str = str .. "\n\t}";
 				else
 					for i,o in ipairs(hasG) do
-						str = str .. "\n\t" .. (ExportDataToString(o):gsub("\n", "\n\t"));
+						str = str .. "\n\t" .. (ExportRawDataToString(o):gsub("\n", "\n\t"));
 					end
 				end
 			end
 		end
 		return str .. "\n},";
+	end
+	return "nil,";
+end
+local function ExportDataToString(data)
+	if data then
+		local id, name;
+		local restore = {};
+		if rawget(data, "basename") then
+			name = data.basename;
+			restore.basename = name;
+			data.basename = nil;
+		else
+			name = rawget(data, "name");
+			if name then
+				restore.name = name;
+				data.name = nil;
+			else
+				name = rawget(data, "text")
+				if name then
+					restore.text = name;
+					data.text = nil;
+				end
+			end
+		end
+		
+		local hasKey = data.key;
+		if hasKey then
+			id = data[hasKey];
+			restore[hasKey] = id;
+			
+			-- Some classes have 2 parameters and will need to rip out some data to restore later
+			-- Export the shortcut used by the key
+			if hasKey == "npcID" then
+				hasKey = "n(" .. id;
+			elseif hasKey == "itemID" then
+				hasKey = "i(" .. id;
+			elseif hasKey == "mapID" then
+				hasKey = "m(" .. id;
+			elseif hasKey == "questID" then
+				hasKey = "q(" .. id;
+			elseif hasKey == "objectiveID" then
+				hasKey = "objective(" .. id;
+			elseif hasKey == "headerID" then
+				for k,i in pairs(app.HeaderConstants) do
+					if i == id then
+						id = k;
+						break;
+					end
+				end
+				hasKey = "n(" .. id;
+			else
+				-- Unhandled key, just inject it raw.
+				for key,value in pairs(restore) do
+					data[key] = value;
+				end
+				restore = {};
+				hasKey = nil;
+			end
+			if hasKey then
+				if not name then name = data.name; end
+				data[data.key] = nil;
+			end
+		end
+		
+		-- Build the string for non-keyed fields
+		local str = "";
+		local anyKeys;
+		local hasG = data.g;
+		if hasG then
+			restore.g = hasG;
+			data.g = nil;
+		end
+		for key,value in pairs(data) do
+			if not CleanFields[key] then
+				str = str .. "\n\t" .. ExportKeyValue(key,value):gsub("\n", "\n\t");
+				anyKeys = true;
+			end
+		end
+		
+		-- Assign the groups back and export relative groups
+		if hasG and #hasG > 0 then
+			if anyKeys then
+				str = str .. "\n\tgroups = {";
+				for i,o in ipairs(hasG) do
+					str = str .. "\n\t\t" .. (ExportDataToString(o):gsub("\n", "\n\t\t"));
+				end
+				str = str .. "\n\t},";
+			else
+				anyKeys = true;
+				for i,o in ipairs(hasG) do
+					str = str .. "\n\t" .. (ExportDataToString(o):gsub("\n", "\n\t"));
+				end
+			end
+		end
+		
+		-- Restore the silenced fields back to their original values.
+		for key,value in pairs(restore) do
+			data[key] = value;
+		end
+		if anyKeys then
+			if hasKey then
+				if name then
+					return hasKey .. ", {\t-- " .. name .. str .. "\n}),";
+				else
+					return hasKey .. ", {" .. str .. "\n}),";
+				end
+			else
+				if name then
+					return "{\t-- " .. name .. str .. "\n},";
+				else
+					return "{" .. str .. "\n},";
+				end
+			end
+		else
+			if hasKey then
+				if name then
+					return hasKey .. "),\t-- " .. name .. str;
+				else
+					return hasKey .. ")," .. str;
+				end
+			else
+				if name then
+					return "{\t-- " .. name .. str .. "\n},";
+				else
+					return "{" .. str .. "\n},";
+				end
+			end
+		end
 	end
 	return "nil,";
 end
@@ -368,16 +494,43 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Export All Data", {
+				app.CreateRawText("Export Raw Data", {
 					icon = 135468,
-					description = "Click this to export all of the data.",
+					description = "Click this to export all of the data in raw string format.",
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
 						local str;
 						for i,o in ipairs(self.data.g) do
 							if o.key ~= "strKey" then
-								local substr = ExportDataToString(o);
+								local substr = ExportRawDataToString(CloneObject(o));
+								if substr then
+									if str then
+										str = str .. "\n" .. substr;
+									else
+										str = substr;
+									end
+								end
+							end
+						end
+						if str then
+							app:ShowPopupDialogWithMultiLineEditBox(str, nil, "Export Results");
+						else
+							app.print("Nothing to export");
+						end
+						return true;
+					end,
+				}),
+				app.CreateRawText("Export Readable Data", {
+					icon = 135468,
+					description = "Click this to export all of the data in readable string format.",
+					visible = true,
+					count = 0,
+					OnClick = function(row, button)
+						local str;
+						for i,o in ipairs(self.data.g) do
+							if o.key ~= "strKey" then
+								local substr = ExportDataToString(CloneObject(o));
 								if substr then
 									if str then
 										str = str .. "\n" .. substr;
