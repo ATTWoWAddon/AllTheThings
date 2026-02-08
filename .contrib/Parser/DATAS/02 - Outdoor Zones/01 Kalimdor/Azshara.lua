@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(AZSHARA, {
 		-- #if BEFORE CATA
@@ -423,7 +424,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  10714 },	-- Crystallized Azsharite
 								{ "o", 152622 },	-- Azsharite Formation
 							},
-							["cost"] = {{ "i", 10831, 1 }},	-- Fel Orb
+							["cost"] = { { "i", 10831, 1 } },	-- Fel Orb
 						}),
 						i(10839),	-- Crystallized Note
 						i(10840),	-- Crystallized Note
@@ -2044,7 +2045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 7972, 1 }},	-- Ichor of Undeath
+					["cost"] = { { "i", 7972, 1 } },	-- Ichor of Undeath
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["groups"] = {

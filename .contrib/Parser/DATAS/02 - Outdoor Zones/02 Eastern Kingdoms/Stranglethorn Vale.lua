@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE CATA
 local OnUpdateForBloodsail = [[function(t)
 	if t.collectible then
@@ -83,6 +84,7 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
+
 -- #if SEASON_OF_DISCOVERY
 local bloodicon = function(item)	-- Assign an Atal'ai Blood Icon cost to an item.
 	applycost(item, { "i", 220636, 1 });
@@ -124,6 +126,7 @@ local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to a
 	return item;
 end
 -- #endif
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(STRANGLETHORN_VALE, {
 		["lore"] = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
@@ -937,7 +940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
+							["cost"] = { { "i", 4457, 10 } },	-- Barbecued Buzzard Wing
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -3445,12 +3448,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(224409, {	-- Serpent's Striker (2.6 speed)
-							["cost"] = {{ "i", 220589, 1 }},	-- Serpent's Striker (1.5 speed)
+							["cost"] = { { "i", 220589, 1 } },	-- Serpent's Striker (1.5 speed)
 						}),
 						--[[
 						-- CRIEVE NOTE: Yeah, this is on the vendor, but also causes a stack overflow. Let's not.
 						i(220589, {	-- Serpent's Striker (1.5 speed)
-							["cost"] = {{ "i", 224409, 1 }},	-- Serpent's Striker (2.6 speed)
+							["cost"] = { { "i", 224409, 1 } },	-- Serpent's Striker (2.6 speed)
 						}),
 						]]
 						bloodicon(i(220642)),	-- Banished Martyr's Plate Armor

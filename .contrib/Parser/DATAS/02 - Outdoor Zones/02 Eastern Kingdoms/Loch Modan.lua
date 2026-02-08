@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(LOCH_MODAN, {
 		["lore"] = "Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",
@@ -586,7 +587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/5 Crocolisk Meat
-							["cost"] = {{ "i", 2924, 5 }},	-- Crocolisk Meat
+							["cost"] = { { "i", 2924, 5 } },	-- Crocolisk Meat
 							["crs"] = {
 								5053,	-- Deviate Crocolisk
 								2476,	-- Large Loch Crocolisk
@@ -1940,7 +1941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
 					["coord"] = { 36.6, 20.8, LOCH_MODAN },
-					["cost"] = {{ "i", 208823, 1 }},	-- Offering Coin
+					["cost"] = { { "i", 208823, 1 } },	-- Offering Coin
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(425215),	-- Engrave Chest - Twisted Faith
@@ -2063,7 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 						i(246422, {	-- Thelsamar Hanging Lantern (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "g", 2850000 }},	-- 285g
+							["cost"] = { { "g", 2850000 } },	-- 285g
 						}),
 					},
 				}),

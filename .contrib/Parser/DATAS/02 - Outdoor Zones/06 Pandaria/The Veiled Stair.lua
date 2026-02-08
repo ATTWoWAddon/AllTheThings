@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(THE_VEILED_STAIR, {
@@ -137,7 +138,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDown({
 								["sourceQuest"] = 32595,	-- The Crown of Heaven
 								["timeline"] = { ADDED_5_2_0 },
-								["cost"] = {{ "i", 76132, 5 }},	-- Primal Diamond
+								["cost"] = { { "i", 76132, 5 } },	-- Primal Diamond
 								-- #if AFTER WOD
 								["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
 								-- #endif

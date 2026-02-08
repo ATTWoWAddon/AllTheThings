@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(TWILIGHT_HIGHLANDS, {
 		["lore"] = "Twilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!",
@@ -3243,20 +3244,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(246427, {	-- Dilapidated Wildhammer Well (DECOR!)
-							["sourceQuest"] = 28244,	-- Eye Spy
-							["cost"] = {{ "g", 10000000 }},	-- 1,000g
+							["cost"] = { { "g", 10000000 } },	-- 1,000g
 						}),
 						i(246108, {	-- Embellished Dwarven Tome (DECOR!)
 							["minReputation"] = { FACTION_WILDHAMMER_CLAN, HONORED },	-- Wildhammer Clan, Honored
-							["cost"] = {{ "g", 20000000 }},	-- 2,000g
+							["cost"] = { { "g", 20000000 } },	-- 2,000g
 						}),
 						i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
-							["sourceQuest"] = 28655,	-- Wild, Wild, Wildhammer Wedding
-							["cost"] = {{ "g", 15000000 }},	-- 1,500g
+							["cost"] = { { "g", 15000000 } },	-- 1,500g
 						}),
 						i(246425, {	-- Round Dwarven Table (DECOR!)
 							["minReputation"] = { FACTION_WILDHAMMER_CLAN, FRIENDLY },	-- Wildhammer Clan, Friendly
-							["cost"] = {{ "g", 4000000 }},	-- 400g
+							["cost"] = { { "g", 4000000 } },	-- 400g
 						}),
 					},
 				}),
@@ -3298,14 +3297,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{	-- Friendly
 							i(246425, {	-- Round Dwarven Table (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 4000000 }},	-- 400g
+								["cost"] = { { "g", 4000000 } },	-- 400g
 							}),
 							i(65908),	-- Tabard of the Wildhammer Clan
 						},
 						{	-- Honored
 							i(246108, {	-- Embellished Dwarven Tome (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 20000000 }},	-- 2,000g
+								["cost"] = { { "g", 20000000 } },	-- 2,000g
 							}),
 							i(62423),	-- Helm of the Skyborne
 							i(62426),	-- Mantle of Wild Feathers

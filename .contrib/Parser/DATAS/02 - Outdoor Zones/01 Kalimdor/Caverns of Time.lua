@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
@@ -207,11 +208,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["timeline"] = { ADDED_8_2_0 },
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 10 } },
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
 							["timeline"] = { ADDED_8_2_0 },
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 					},
 				}),

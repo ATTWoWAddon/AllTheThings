@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local PRIESTESS_OF_THE_MOON_RACES = ALLIANCE_ONLY;
 -- #if BEFORE 7.2.5
 PRIESTESS_OF_THE_MOON_RACES = { NIGHTELF };
@@ -2560,7 +2561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 48.3, 31.4, TELDRASSIL },
-					["cost"] = {{ "i", 208608, 1 }},	-- Teldrassil Bird Meat
+					["cost"] = { { "i", 208608, 1 } },	-- Teldrassil Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -2594,7 +2595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 208760 },	-- Glade Crown
 					},
 					["coord"] = { 66.8, 58.0, TELDRASSIL },
-					["cost"] = { { "i", 208609, 3 }},	-- Glade Flower
+					["cost"] = { { "i", 208609, 3 } },	-- Glade Flower
 					["groups"] = {
 						i(206963, {	-- Rune of Natural Potential
 							["classes"] = { DRUID },
@@ -2706,7 +2707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407352 },	-- Gnarlpine Stash
 					["coord"] = { 37.9, 82.5, TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208749, 1 }},	-- Gnarlpine Stash Key
+					["cost"] = { { "i", 208749, 1 } },	-- Gnarlpine Stash Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2716,7 +2717,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 55.3, 90.8, TELDRASSIL },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208605, 1 }},	-- Teldrassil Treasure Map
+					["cost"] = { { "i", 208605, 1 } },	-- Teldrassil Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw

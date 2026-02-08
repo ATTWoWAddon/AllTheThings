@@ -45,38 +45,30 @@ root(ROOTS.Zones, {
 				n(QUESTS, {
 					q(32613, {	-- Giant Dinosaur Bone
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-						["cost"] = {{ "i", 94288, 1 }},	-- Giant Dinosaur Bone
+						["cost"] = { { "i", 94288, 1 } },	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 					}),
 					q(32614, {	-- More Giant Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-						["cost"] = {{ "i", 94288, 9 }},	-- Giant Dinosaur Bone
+						["cost"] = { { "i", 94288, 9 } },	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["_drop"] = { "g" },
-						["groups"] = {
-							-- i(89112),	-- Mote of Harmony	-- Doesnt need sourcing from a Quest
-						},
 					}),
 					q(32615, {	-- Many More Giant Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-						["cost"] = {{ "i", 94288, 99 }},	-- Giant Dinosaur Bone
+						["cost"] = { { "i", 94288, 99 } },	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["_drop"] = { "g" },
-						["groups"] = {
-							-- i(76061),	-- Spirit of Harmony	-- Doesnt need sourcing from a Quest
-						},
 					}),
 					q(32616, {	-- A Large Pile of Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-						["cost"] = {{ "i", 94288, 999 }},	-- Giant Dinosaur Bone
+						["cost"] = { { "i", 94288, 999 } },	-- Giant Dinosaur Bone
 						["repeatable"] = true,
-						["groups"] = {
-							i(94190),	-- Spectral Porcupette (PET!)
-						},
+						["groups"] = { i(94190) },	-- Spectral Porcupette (PET!)
 					}),
 					q(32617, {	-- A Mountain of Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-						["cost"] = {{ "i", 94288, 9999 }},	-- Giant Dinosaur Bone
+						["cost"] = { { "i", 94288, 9999 } },	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["groups"] = {
 							ach(8092, {	-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One

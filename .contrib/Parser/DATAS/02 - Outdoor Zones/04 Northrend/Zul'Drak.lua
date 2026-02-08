@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(ZULDRAK, {

@@ -268,13 +268,13 @@ root(ROOTS.Zones, {
 							["isEnableTypeRecipe"] = true,
 						},{
 							r(187634, {	-- Immaculate Critical Strike Taladite
-								["cost"] = {{ "i", 127771, 1 }},	-- Gemcutter Module: Critical Strike
+								["cost"] = { { "i", 127771, 1 } },	-- Gemcutter Module: Critical Strike
 							}),
 							r(187635, {	-- Immaculate Haste Taladite
-								["cost"] = {{ "i", 127772, 1 }},	-- Gemcutter Module: Haste
+								["cost"] = { { "i", 127772, 1 } },	-- Gemcutter Module: Haste
 							}),
 							r(187636, {	-- Immaculate Mastery Taladite
-								["cost"] = {{ "i", 127773, 1 }},	-- Gemcutter Module: Mastery
+								["cost"] = { { "i", 127773, 1 } },	-- Gemcutter Module: Mastery
 								["timeline"] = {
 									ADDED_6_2_0, REMOVED_7_0_3_LAUNCH,
 									ADDED_7_1_5, REMOVED_8_0_1_LAUNCH,
@@ -283,11 +283,11 @@ root(ROOTS.Zones, {
 								},
 							}),
 							r(187637, {	-- Immaculate Multistrike Taladite
-								["cost"] = {{ "i", 127774, 1 }},	-- Gemcutter Module: Multistrike
+								["cost"] = { { "i", 127774, 1 } },	-- Gemcutter Module: Multistrike
 								["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
 							}),
 							r(187640, {	-- Immaculate Stamina Taladite
-								["cost"] = {{ "i", 127775, 1 }},	-- Gemcutter Module: Stamina
+								["cost"] = { { "i", 127775, 1 } },	-- Gemcutter Module: Stamina
 							}),
 						}),
 					}),
@@ -1816,16 +1816,16 @@ root(ROOTS.Zones, {
 							}, {	-- Friendly
 								i(128454),	-- Order of the Awakened Battle Standard
 								i(123974, {	-- Reins of the Corrupted Dreadwing (MOUNT!)
-									["cost"] = {{ "c", APEXIS_CRYSTAL, 150000 }},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 150000 } },
 								}),
 							}, {	-- Honored
 								i(128441, {	-- Contract: Solar Priest Vayx
-									["cost"] = {{ "c", APEXIS_CRYSTAL, 1000 }},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
 									["groups"] = { follower(582) },	-- Solar Priest Vayx
 								}),
 								i(127774, {	-- Gemcutter Module: Multistrike
 									["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
-									["cost"] = {{ "c", APEXIS_CRYSTAL, 3000 }},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 3000 } },
 								}),
 								i(128502, {	-- Hunter's Seeking Crystal
 									["cost"] = 10000000,	-- 1,000g
@@ -1838,11 +1838,11 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(122283, {	-- Rukhmar's Sacred Memory (TOY!)
-									["cost"] = {{ "c", APEXIS_CRYSTAL, 50000 }},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 50000 } },
 								}),
 							}, {	-- Exalted
 								i(128478, {	-- Blazing Firehawk (PET!)
-									["cost"] = {{ "c", APEXIS_CRYSTAL, 2000 }},
+									["cost"] = { { "c", APEXIS_CRYSTAL, 2000 } },
 								}),
 								i(128450),	-- Order of the Awakened Tabard
 								i(128487, {	-- Ship: The Awakener
@@ -1861,46 +1861,46 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = {
 							i(124562, {	-- Baleful Armament
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 10000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 10000 } },
 							}),
 							i(124550, {	-- Baleful Bracers
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124559, {	-- Baleful Choker
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124560, {	-- Baleful Cloak
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124553, {	-- Baleful Gauntlets
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124557, {	-- Baleful Girdle
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124554, {	-- Baleful Hood
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124555, {	-- Baleful Leggings
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124558, {	-- Baleful Ring
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124556, {	-- Baleful Spaulders
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124552, {	-- Baleful Treads
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124561, {	-- Baleful Trinket
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(124551, {	-- Baleful Tunic
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 5000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 5000 } },
 							}),
 							i(128225, {	-- Empowered Apexis Fragment
-								["cost"] = {{ "c", APEXIS_CRYSTAL, 20000 }},
+								["cost"] = { { "c", APEXIS_CRYSTAL, 20000 } },
 							}),
 						},
 					}),
@@ -2021,22 +2021,22 @@ root(ROOTS.Zones, {
 								i(128453),	-- Saberstalkers Battle Standard
 							}, {	-- Honored
 								i(128439, {	-- Contract: Pallas
-									["cost"] = {{ "i", 124099, 100 }},	-- 100x Blackfang Claw
+									["cost"] = { { "i", 124099, 100 } },	-- 100x Blackfang Claw
 									["groups"] = { follower(580) },	-- Pallas
 								}),
 								i(116671, {	-- Wild Goretusk (MOUNT!)
-									["cost"] = {{ "i", 124099, 1000 }},	-- 1,000x Blackfang Claw
+									["cost"] = { { "i", 124099, 1000 } },	-- 1,000x Blackfang Claw
 								}),
 							}, {	-- Revered
 								i(128446, {	-- Saberstalker Teachings: Trailblazer (CI!)
 									["cost"] = 7000000,	-- 700g
 								}),
 								i(128477, {	-- Savage Cub (PET!)
-									["cost"] = {{ "i", 124099, 1500 }},	-- 1,500x Blackfang Claw
+									["cost"] = { { "i", 124099, 1500 } },	-- 1,500x Blackfang Claw
 								}),
 							}, {	-- Exalted
 								i(128481, {	-- Bristling Hellboar (MOUNT!)
-									["cost"] = {{ "i", 124099, 5000 }},	-- 5,000x Blackfang Claw
+									["cost"] = { { "i", 124099, 5000 } },	-- 5,000x Blackfang Claw
 								}),
 								i(128449),	-- Saberstalkers Tabard
 							},

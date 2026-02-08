@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {

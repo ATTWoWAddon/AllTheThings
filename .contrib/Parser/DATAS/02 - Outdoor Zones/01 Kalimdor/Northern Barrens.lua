@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --         Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER 4.0.3
 ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -12,6 +13,7 @@ ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(NORTHERN_BARRENS, {
 		["lore"] = "Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",
@@ -956,7 +958,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5770, 1 }},	-- Robes of Arcana
+					["cost"] = { { "i", 5770, 1 } },	-- Robes of Arcana
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
@@ -965,7 +967,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 3577, 1 }},	-- Gold Bar
+					["cost"] = { { "i", 3577, 1 } },	-- Gold Bar
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
@@ -1436,7 +1438,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3448,	-- Tonga Runetotem
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 2449, 5 }},	-- Earthroot
+					["cost"] = { { "i", 2449, 5 } },	-- Earthroot
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -1861,33 +1863,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Visit Red Raptor Nest
 							["provider"] = { "o", 6906 },	-- Red Raptor Nest
 							["coord"] = { 49.67, 75.14, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(2, {	-- Visit Yellow Raptor Nest
 							["provider"] = { "o", 6908 },	-- Yellow Raptor Nest
 							["coord"] = { 48.02, 76.13, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(3, {	-- Visit Blue Raptor Nest
 							["provider"] = { "o", 6907 },	-- Blue Raptor Nest
 							["coord"] = { 48.57, 74.82, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						-- #else
 						objective(1, {	-- Visit Blue Raptor Nest
 							["provider"] = { "o", 6907 },	-- Blue Raptor Nest
 							["coord"] = { 52.59, 46.10, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(2, {	-- Visit Yellow Raptor Nest
 							["provider"] = { "o", 6908 },	-- Yellow Raptor Nest
 							["coord"] = { 52.46, 46.57, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(3, {	-- Visit Red Raptor Nest
 							["provider"] = { "o", 6906 },	-- Red Raptor Nest
 							["coord"] = { 52.03, 46.48, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						-- #endif
 						i(5165, {	-- Sunscale Feather
@@ -2240,7 +2242,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8073 },	-- Cache of Zanzil's Altered Mixture
 								{ "o", 129127 },	-- Gallywix's Lockbox
 							},
-							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
+							["cost"] = { { "i", 8072, 1 } },	-- Silixiz's Tower Key
 						}),
 						i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { REMOVED_1_3_0 },

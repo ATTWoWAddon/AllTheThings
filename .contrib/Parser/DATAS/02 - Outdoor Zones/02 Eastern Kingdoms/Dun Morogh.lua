@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUN_MOROGH, {
 		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
@@ -4472,7 +4473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 37.78, 42.55, DUN_MOROGH },
-					["cost"] = {{ "i", 208192, 1 }},	-- Dun Morogh Pig Meat
+					["cost"] = { { "i", 208192, 1 } },	-- Dun Morogh Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -4659,7 +4660,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 46.96, 43.73, DUN_MOROGH },
-					["cost"] = {{ "i", 208220, 1 }},	-- Dun Morogh Treasure Map
+					["cost"] = { { "i", 208220, 1 } },	-- Dun Morogh Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4701,7 +4702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 208205, 1 }},	-- Blackrat's Note
+							["cost"] = { { "i", 208205, 1 } },	-- Blackrat's Note
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -4804,7 +4805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
 					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
 					["coord"] = { 63.6, 50.2, DUN_MOROGH },
-					["cost"] = {{ "i", 208180, 1 }},	-- Rabbit Musk
+					["cost"] = { { "i", 208180, 1 } },	-- Rabbit Musk
 					["crs"] = { 721 },	-- Rabbit
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

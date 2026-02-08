@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER CATA
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(NORTHERN_STRANGLETHORN, {
@@ -738,7 +739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 20691 },	-- Cozzle's Footlocker
 							},
 							["coord"] = { 55.8, 37.3, NORTHERN_STRANGLETHORN },
-							["cost"] = {{ "i", 5851, 1 }},	-- Cozzle's Key
+							["cost"] = { { "i", 5851, 1 } },	-- Cozzle's Key
 						}),
 						objective(2, {	-- 0/1 Cozzle's Key
 							["provider"] = { "i", 5851 },	-- Cozzle's Key
@@ -3186,7 +3187,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(248808, {	-- Nesingwary Elk Trophy (DECOR!)
-							["sourceAchievement"] = 940,	-- The Green Hills of Stranglethorn
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 4500000,	-- 450g
 						}),

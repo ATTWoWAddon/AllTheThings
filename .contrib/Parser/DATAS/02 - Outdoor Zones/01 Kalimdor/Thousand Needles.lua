@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THOUSAND_NEEDLES, {
 		["lore"] =
@@ -160,7 +161,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Thalanaar Moonwell Water
 							["provider"] = { "i", 23670 },	-- Thalanaar Moonwell Water
-							["cost"] = {{ "i", 23675, 1 }},	-- Robotron Control Unit
+							["cost"] = { { "i", 23675, 1 } },	-- Robotron Control Unit
 							["coord"] = { 9.45, 18.71, THOUSAND_NEEDLES },
 						}),
 					},
@@ -1098,7 +1099,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 20691 },	-- Cozzle's Footlocker
 							},
 							["coord"] = { 43.33, 20.33, STRANGLETHORN_VALE },
-							["cost"] = {{ "i", 5851, 1 }},	-- Cozzle's Key
+							["cost"] = { { "i", 5851, 1 } },	-- Cozzle's Key
 						}),
 						-- #if BEFORE 4.0.3
 						i(5851, {	-- Cozzle's Key
@@ -1460,7 +1461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4630,	-- Pozzik
 					["coord"] = { 80.0, 75.8, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5833, 4 }},	-- Indurium Ore
+					["cost"] = { { "i", 5833, 4 } },	-- Indurium Ore
 					["repeatable"] = true,
 					["lvl"] = 29,
 				}),

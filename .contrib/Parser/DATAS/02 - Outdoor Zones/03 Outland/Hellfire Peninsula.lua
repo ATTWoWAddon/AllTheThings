@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BLOOD_FOR_BLOOD_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 	i(30809),	-- Mark of Sargeras
 	i(30810),	-- Sunfury Signet
@@ -70,6 +71,7 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -1224,9 +1226,7 @@ root(ROOTS.Zones, {
 							{ "o", 185302 },	-- Fei Fei's Cache
 						},
 						["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31799, 1 },	-- Fei Fei Doggy Treat
-						},
+						["cost"] = { { "i", 31799, 1 } },	-- Fei Fei Doggy Treat
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1351,9 +1351,7 @@ root(ROOTS.Zones, {
 					q(9563, {	-- Gaining Mirren's Trust
 						["qg"] = 16851,	-- Mirren Longbeard
 						["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23848, 1 },	-- Nethergarde Bitter
-						},
+						["cost"] = { { "i", 23848, 1 } },	-- Nethergarde Bitter
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
@@ -1794,9 +1792,7 @@ root(ROOTS.Zones, {
 						["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 						["qg"] = 17226,	-- Viera Sunwhisper
 						["coord"] = { 27.2, 62.0, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29112, 1 },	-- Cenarion Spirits
-						},
+						["cost"] = { { "i", 29112, 1 } },	-- Cenarion Spirits
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -3133,26 +3129,26 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = pvp({
 							i(27832, {	-- Band of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(63697, {	-- Bold Blood Garnet
 								["timeline"] = { ADDED_4_0_1 },
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27777, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27830, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 15 } },	-- 15x Mark of Thrallmar
 							}),
 							i(28360, {	-- Delicate Blood Garnet (Cata+) / Mighty Blood Garnet (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(27786, {	-- Jagged Deep Peridot (Cata+) / Barbed Deep Peridot (TBC)
-								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 10 } },	-- 10x Mark of Thrallmar
 							}),
 							i(24522, {	-- Thrallmar Favor
-								["cost"] = { { "i", 24581, 5 }, },	-- 5x Mark of Thrallmar
+								["cost"] = { { "i", 24581, 5 } },	-- 5x Mark of Thrallmar
 							}),
 						}),
 					}),
@@ -3548,26 +3544,26 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = pvp({
 							i(27833, {	-- Band of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(63696, {	-- Bold Blood Garnet
 								["timeline"] = { ADDED_4_0_1 },
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27812, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27834, {	-- Circlet of the Victor
-								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 15 } },	-- 15x Mark of Honor Hold
 							}),
 							i(28361, {	-- Delicate Blood Garnet (Cata+) / Mighty Blood Garnet (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(27809, {	-- Jagged Deep Peridot (Cata+) / Notched Deep Peridot (TBC)
-								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 10 } },	-- 10x Mark of Honor Hold
 							}),
 							i(24520, {	-- Honor Hold Favor
-								["cost"] = { { "i", 24579, 5 }, },	-- 5x Mark of Honor Hold
+								["cost"] = { { "i", 24579, 5 } },	-- 5x Mark of Honor Hold
 							}),
 							i(31799, {	-- Fei Fei Doggy Treat
 								["cost"] = {
@@ -3601,9 +3597,7 @@ root(ROOTS.Zones, {
 					}),
 					i(31346, {	-- Burning Bleeding Hollow Torch
 						["coord"] = { 69.0, 69.0, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31347, 1 },	-- Bleeding Hollow Torch
-						},
+						["cost"] = { { "i", 31347, 1 } },	-- Bleeding Hollow Torch
 					}),
 					i(29588, {	-- Burning Legion Missive [Alliance]
 						["coord"] = { 53.0, 26.7, HELLFIRE_PENINSULA },

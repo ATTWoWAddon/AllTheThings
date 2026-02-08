@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(ASHENVALE, {
 		["lore"] = "Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",
@@ -1698,7 +1699,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 178227 },	-- Murgut's Totem Basket
 							},
 							["coord"] = { 56.5, 63.5, ASHENVALE },
-							["cost"] = {{ "i", 16972, 1 }},	-- Karang's Banner
+							["cost"] = { { "i", 16972, 1 } },	-- Karang's Banner
 							["cr"] = 12918,	-- Chief Murgut
 						}),
 						i(17005),	-- Boorguard Tunic
@@ -2176,7 +2177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 19022 },	-- Worn Chest
 							},
 							["coord"] = { 54.4, 35.3, ASHENVALE },
-							["cost"] = {{ "i", 5475, 1 }},	-- Wooden Key
+							["cost"] = { { "i", 5475, 1 } },	-- Wooden Key
 							["crs"] = {
 								3834,	-- Crazed Ancient
 								3919,	-- Withered Ancient
@@ -2829,7 +2830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["questID"] = 78907,	-- Dead Twilight Cultist HQT
 					["qg"] = 212334,	-- Dead Twilight Cultist
 					["coord"] = { 17.3, 26.7, ASHENVALE },
-					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
+					["cost"] = { { "i", 210708, 1 } },	-- Elixir of Coalesced Regret
 					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 				})),
@@ -3739,7 +3740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 12724,	-- Pixel
 							["coord"] = { 73.0, 61.4, ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = {{ "i", 4369, 1 }},	-- Deadly Blunderbuss
+							["cost"] = { { "i", 4369, 1 } },	-- Deadly Blunderbuss
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 22,

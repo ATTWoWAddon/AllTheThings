@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(RUINS_OF_GILNEAS, {
 		-- #if AFTER 8.3.0
@@ -424,7 +425,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 750000,	-- 75g
 						}),
 						i(245520, {	-- Gilnean Celebration Keg (DECOR!)
-							["sourceAchievement"] = 19719,	-- Reclamation of Gilneas
 							["races"] = WORGEN,
 							["cost"] = 1500000,	-- 150g
 						}),
@@ -453,7 +453,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 750000,	-- 75g
 						}),
 						i(245520, {	-- Gilnean Celebration Keg (DECOR!)
-							["sourceAchievement"] = 19719,	-- Reclamation of Gilneas
 							["cost"] = 1500000,	-- 150g
 						}),
 						i(245617, {	-- Gilnean Stocks (DECOR!)

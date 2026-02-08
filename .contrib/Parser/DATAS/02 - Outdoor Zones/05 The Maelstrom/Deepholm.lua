@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -50,6 +51,7 @@ ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", total, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(THE_MAELSTROM, {
 		m(DEEPHOLM, {

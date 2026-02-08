@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WESTERN_PLAGUELANDS, {
 		-- #if AFTER CATA
@@ -40,7 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206358, {	-- Imported Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206363, 1 }},	-- The Road Ahead
+									["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
 								}),
 							},
 						}),
@@ -51,7 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206354, {	-- Stinky Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206359, 1 }},	-- Caer Darrow Fountain Water
+									["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
 								}),
 							},
 						}),
@@ -64,7 +65,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206357, {	-- Authentic Andorhal Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206362, 1 }},	-- The Deed to Andorhal
+									["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 								}),
 							},
 						}),
@@ -77,7 +78,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206355, {	-- Tobacco-Filled Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206360, 1 }},	-- Undelivered Shipment of Smokes
+									["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
 								}),
 							},
 						}),
@@ -90,7 +91,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(206356, {	-- Ghost-Warding Candle
 									["timeline"] = { ADDED_10_1_5 },
-									["cost"] = {{ "i", 206361, 1 }},	-- Trampled Doll
+									["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
 								}),
 							},
 						}),

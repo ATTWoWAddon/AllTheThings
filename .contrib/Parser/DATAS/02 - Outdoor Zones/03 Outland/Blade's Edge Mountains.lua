@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForOgrila = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -34,6 +35,7 @@ ExportDB.OnTooltipDB.ForOgrila = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", repPerDay, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -218,9 +220,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Grulloc's Sack
 								["provider"] = { "i", 31349 },	-- Grulloc's Sack
 								["coord"] = { 60.6, 48.6, BLADES_EDGE_MOUNTAINS },
-								["cost"] = {
-									{ "i", 31350, 1 },	-- Huffer's Whistle (Provided)
-								},
+								["cost"] = { { "i", 31350, 1 } },	-- Huffer's Whistle (Provided)
 								["cr"] = 20216,	-- Grulloc
 							}),
 						},
@@ -229,21 +229,13 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["timeline"] = {
-							ADDED_3_3_0,
-							REMOVED_4_1_0,
-						},
-						["cost"] = {
-							{ "i", 32643, 1 },	-- Darkrune
-						},
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
+						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							i(32602, {	-- Crystalforged Darkrune
-								["timeline"] = {
-									ADDED_3_3_0,
-									REMOVED_4_1_0,
-								},
+								["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
 							}),
 						},
 					})),
@@ -299,9 +291,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 						["qg"] = 23316,	-- Torkus
 						["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32601, 1 },	-- Unstable Flask of the Sorcerer
-						},
+						["cost"] = { { "i", 32601, 1 } },	-- Unstable Flask of the Sorcerer
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11079, {	-- A Fel Whip For Gahk
@@ -355,9 +345,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["cost"] = {
-							{ "i", 32696, 1 },	-- Banishing Crystal
-						},
+						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
@@ -369,9 +357,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["cost"] = {
-							{ "i", 32696, 1 },	-- Banishing Crystal
-						},
+						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							i(32569),	-- Apexis Shard
@@ -389,9 +375,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10715,	-- Into the Churning Gulch
 						["qg"] = 22103,	-- Baron Sablemane
 						["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 31135, 1 },	-- Baron Sablemane's Poison
-						},
+						["cost"] = { { "i", 31135, 1 } },	-- Baron Sablemane's Poison
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
@@ -1270,9 +1254,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 						["qg"] = 22919,	-- Image of Commander Ameer
 						["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 29460, 5 },	-- Ethereum Prison Key
-						},
+						["cost"] = { { "i", 29460, 5 } },	-- Ethereum Prison Key
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
@@ -1285,9 +1267,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { ZANGARMARSH },
-						["cost"] = {
-							{ "i", 32359, 1 },	-- Arthorn's Package (Provided)
-						},
+						["cost"] = { { "i", 32359, 1 } },	-- Arthorn's Package (Provided)
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
@@ -1649,9 +1629,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = {
-							{ "i", 32244, 1 },	-- Seer's Stone (Provided)
-						},
+						["cost"] = { { "i", 32244, 1 } },	-- Seer's Stone (Provided)
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
@@ -1768,9 +1746,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 						["qg"] = 22919,	-- Image of Commander Ameer
 						["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 31941, 1 },	-- Mark of the Nexus-King
-						},
+						["cost"] = { { "i", 31941, 1 } },	-- Mark of the Nexus-King
 						["lvl"] = lvlsquish(70, 70, 20),
 					}),
 					q(9795, {	-- The Ogre Threat
@@ -2172,13 +2148,8 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["timeline"] = {
-							ADDED_3_3_0,
-							REMOVED_4_1_0,
-						},
-						["cost"] = {
-							{ "i", 32643, 1 },	-- Darkrune
-						},
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
+						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
@@ -2186,10 +2157,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 19963 },	-- Doomcryer
 							}),
 							i(32602, {	-- Crystalforged Darkrune
-								["timeline"] = {
-									ADDED_3_3_0,
-									REMOVED_4_1_0,
-								},
+								["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
 							}),
 						},
 					})),
@@ -2200,9 +2168,7 @@ root(ROOTS.Zones, {
 							{ 52.8, 13.0, BLADES_EDGE_MOUNTAINS },
 							{ 53.6, 16.6, BLADES_EDGE_MOUNTAINS },
 						},
-						["cost"] = {
-							{ "i", 32759, 1 },	-- Accelerator Module
-						},
+						["cost"] = { { "i", 32759, 1 } },	-- Accelerator Module
 						["groups"] = {
 							i(32572),	-- Apexis Crystal
 						},
@@ -2212,9 +2178,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 13.6, BLADES_EDGE_MOUNTAINS },
 							{ 53.0, 13.0, BLADES_EDGE_MOUNTAINS },
 						},
-						["cost"] = {
-							{ "i", 32759, 1 },	-- Accelerator Module
-						},
+						["cost"] = { { "i", 32759, 1 } },	-- Accelerator Module
 						["groups"] = {
 							i(32572),	-- Apexis Crystal
 							i(32773),	-- Bash'ir's Skeleton Key
@@ -2222,9 +2186,7 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23261, {	-- Furywing
 						["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32569, 35 },	-- Apexis Shard
-						},
+						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32683),	-- Jet Scale of Furywing
@@ -2256,9 +2218,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23281, {	-- Insidio
 						["coord"] = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32569, 35 },	-- Apexis Shard
-						},
+						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32684),	-- Insidion's Ebony Scale
@@ -2282,9 +2242,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23282, {	-- Obsidia
 						["coord"] = { 34.0, 54.7, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32569, 35 },	-- Apexis Shard
-						},
+						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32682),	-- Obsidia Scale
@@ -2292,9 +2250,7 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23061, {	-- Rivendark
 						["coord"] = { 27.2, 64.9, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32569, 35 },	-- Apexis Shard
-						},
+						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32681),	-- Onyx Scale of Rivendark
@@ -2302,26 +2258,15 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23230, {	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
 						["coord"] = { 31.85, 46.68, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32602, 1 },	-- Crystalforged Darkrune
-						},
+						["cost"] = { { "i", 32602, 1 } },	-- Crystalforged Darkrune
 						["isDaily"] = true,
-						["timeline"] = {
-							ADDED_2_2_0,
-							REMOVED_4_1_0,
-						},
+						["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
 						["groups"] = {
 							i(32941, {	-- Corruptor's Signet
-								["timeline"] = {
-									ADDED_2_2_0,
-									REMOVED_4_1_0,
-								},
+								["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
 							}),
 							i(32942, {	-- Ring of the Overseer
-								["timeline"] = {
-									ADDED_2_2_0,
-									REMOVED_4_1_0,
-								},
+								["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
 							}),
 						},
 					})),
@@ -2361,28 +2306,18 @@ root(ROOTS.Zones, {
 				}),
 				n(REWARDS, {
 					i(32643, {	-- Darkrune
-						["timeline"] = {
-							ADDED_2_2_0,
-							REMOVED_4_1_0,
-						},
-						["cost"] = {
-							{ "i", 33784, 5 },	-- Darkrune Fragment
-						},
+						["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+						["cost"] = { { "i", 33784, 5 } },	-- Darkrune Fragment
 					}),
 					i(32777, {	-- Kronk's Grab Bag
 						i(32569),	-- Apexis Shard
 						i(33784, {	-- Darkrune Fragment
-							["timeline"] = {
-								ADDED_2_2_0,
-								REMOVED_4_1_0,
-							},
+							["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
 						}),
 					}),
 					i(32601, {	-- Unstable Flask of the Sorcerer
 						["coord"] = { 54.0, 11.0, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32569, 10 },	-- Apexis Shard
-						},
+						["cost"] = { { "i", 32569, 10 } },	-- Apexis Shard
 					}),
 				}),
 				n(VENDORS, {
@@ -2391,58 +2326,58 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
 							i(32759, {	-- Accelerator Module
-								["cost"] = { { "i", 32569, 35 }, },	-- Apexis Shard
+								["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 							}),
 							i(32641, {	-- Imbued Unstable Diamond
-								["cost"] = { { "i", 32569, 160 }, },	-- Apexis Shard
+								["cost"] = { { "i", 32569, 160 } },	-- Apexis Shard
 							}),
 							i(32640, {	-- Potent Unstable Diamond
-								["cost"] = { { "i", 32569, 160 }, },	-- Apexis Shard
+								["cost"] = { { "i", 32569, 160 } },	-- Apexis Shard
 							}),
 							i(32626, {	-- Large Copper Metamorphosis Geode
-								["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
+								["cost"] = { { "i", 32572, 4 } },	-- 4x Apexis Crystal
 								["groups"] = {
 									i(31568),	-- Mistshoud Helm
 								},
 							}),
 							i(32629, {	-- Large Gold Metamorphosis Geode
-								["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
+								["cost"] = { { "i", 32572, 4 } },	-- 4x Apexis Crystal
 								["groups"] = {
 									i(31552),	-- Windchanneller's Miter
 								},
 							}),
 							i(32624, {	-- Large Iron Metamorphosis Geode
-								["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
+								["cost"] = { { "i", 32572, 4 } },	-- 4x Apexis Crystal
 								["groups"] = {
 									i(31576),	-- Slatesteel Helm
 								},
 							}),
 							i(32628, {	-- Large Silver Metamorphosis Geode
-								["cost"] = { { "i", 32572, 4 }, },	-- 4x Apexis Crystal
+								["cost"] = { { "i", 32572, 4 } },	-- 4x Apexis Crystal
 								["groups"] = {
 									i(31560),	-- Skystalker's Shroud
 								},
 							}),
 							i(32627, {	-- Small Copper Metamorphosis Geode
-								["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
+								["cost"] = { { "i", 32572, 3 } },	-- 3x Apexis Crystal
 								["groups"] = {
 									i(31575),	-- Mistshroud Gauntlets
 								},
 							}),
 							i(32630, {	-- Small Gold Metamorphosis Geode
-								["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
+								["cost"] = { { "i", 32572, 3 } },	-- 3x Apexis Crystal
 								["groups"] = {
 									i(31559),	-- Windchanneller's Gloves
 								},
 							}),
 							i(32625, {	-- Small Iron Metamorphosis Geode
-								["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
+								["cost"] = { { "i", 32572, 3 } },	-- 3x Apexis Crystal
 								["groups"] = {
 									i(31583),	-- Slatesteel Gauntlets
 								},
 							}),
 							i(32631, {	-- Small Silver Metamorphosis Geode
-								["cost"] = { { "i", 32572, 3 }, },	-- 3x Apexis Crystal
+								["cost"] = { { "i", 32572, 3 } },	-- 3x Apexis Crystal
 								["groups"] = {
 									i(31567),	-- Skystalker's Gloves
 								},
@@ -2544,7 +2479,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(32828, {	-- Ogri'la Tabard
-									["cost"] = { { "i", 32569, 10 }, },	-- 10x Apexis Shard
+									["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
 								}),
 								i(32647, {	-- Shard-Bound Bracers
 									["cost"] = {
@@ -2614,9 +2549,7 @@ root(ROOTS.Zones, {
 					n(22099, {	-- Wyrmcult Provisioner
 						["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.",
 						["coord"] = { 33.8, 34.6, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 31122, 1 },	-- Overseer Disguise
-						},
+						["cost"] = { { "i", 31122, 1 } },	-- Overseer Disguise
 						["groups"] = {
 							i(31337),	-- Orb of the Blackwhelp
 							i(31341),	-- Wyrmcultist's Cloak
@@ -3141,9 +3074,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(31122, {	-- Overseer Disguise
-						["cost"] = {
-							{ "i", 31121, 5 },	-- Costume Scraps
-						},
+						["cost"] = { { "i", 31121, 5 } },	-- Costume Scraps
 					}),
 					i(23612, {	-- Plans: Ragesteel Helm (RECIPE!)
 						["coords"] = {

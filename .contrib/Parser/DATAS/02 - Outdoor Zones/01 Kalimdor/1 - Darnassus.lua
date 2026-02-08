@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DARNASSUS, {
 		["lore"] = "The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",
@@ -1030,7 +1031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -1601,11 +1602,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
 						{		-- Neutral
 							i(245620, {	-- Little Wolf's Loo (DECOR!)
-								["sourceQuest"] = 14402,	-- Ready to Go
 								["cost"] = 4500000,	-- 450g
 							}),
 							i(245518, {	-- Worgen's Chicken Coop (DECOR!)
-								["sourceQuest"] = 24675,	-- Last Meal
 								["cost"] = 1500000,	-- 150g
 							}),
 						}, {	-- Friendly
@@ -1614,12 +1613,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}, {	-- Honored
 							i(245605, {	-- Gilnean Stone Wall (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 3000000,	-- 300g
 							}),
 						}, {	-- Revered
 							i(245603, {	-- Gilnean Noble's Trellis (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 3500000,	-- 350g
 							}),
 							i(67532, {	-- Gilnean Satchel
@@ -1788,7 +1785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
 					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
 					["coord"] = { 39.8, 9.2, DARNASSUS },
-					["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+					["cost"] = { { "i", 208607, 1 } },	-- Deer Musk
 					["maps"] = { TELDRASSIL },
 					["crs"] = { 883 },	-- Deer
 					["races"] = ALLIANCE_ONLY,

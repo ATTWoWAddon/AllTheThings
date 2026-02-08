@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BILL_BUCKLER = {
 	["crs"] = { 65656 },
 	["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
@@ -49,6 +50,7 @@ local STEVEN_LISBANE = {
 	["crs"] = { 63194 },
 	["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 };
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	n(ACHIEVEMENTS, {
 		header(HEADERS.Achievement, 61040, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Eastern Kingdoms

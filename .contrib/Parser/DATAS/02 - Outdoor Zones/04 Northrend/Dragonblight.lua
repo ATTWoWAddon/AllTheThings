@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -27,6 +28,7 @@ ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", preparingRep + puppyRep + heartRep, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
@@ -2960,7 +2962,7 @@ root(ROOTS.Zones, {
 				n(SPECIAL, {
 					applyclassicphase(WRATH_PHASE_TWO, o(194238, {	-- Blade of Drak'Mar
 						["coord"] = { 93.0, 26.0, DRAGONBLIGHT },
-						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
+						["cost"] = { { "i", 45000, 4 } },	-- Winter Hyacinth
 						["cr"] = 33273,	-- Maiden of Drak'Mar
 						["groups"] = { i(44978) },	-- Blade of Drak'Mar
 					})),

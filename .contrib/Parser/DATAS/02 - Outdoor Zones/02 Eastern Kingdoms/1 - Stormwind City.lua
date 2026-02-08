@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -553,7 +554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
 							i(71949, {	-- Tome of Burning Jewels
-								["cost"] = {{"c", 361, 4}},	-- 4x Illustrious Jewelcrafter's Token
+								["cost"] = { { "c", 361, 4 } },	-- 4x Illustrious Jewelcrafter's Token
 								["filterID"] = CONSUMABLES,
 								["sym"] = {
 									{"select","npcID",56925},{"pop"},	-- this NPC
@@ -4389,7 +4390,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}) },
 							},
 							["coord"] = { 26.0, 22.0, ASHENVALE },
-							["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
+							["cost"] = { { "i", 190308, 1 } },	-- Burning Torch
 						}),
 						i(190308, {	-- 0/1 Burning Torch
 							["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
@@ -5017,85 +5018,75 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(248797, {	-- City Wanderer's Candleholder (DECOR!)
-								["sourceQuest"] = 26229,	-- "I TAKE Candle!"
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 500000 }},	-- 50g
+								["cost"] = { { "g", 500000 } },	-- 50g
 							}),
 							i(253168, {	-- Earthen Storage Crate (DECOR!)
-								["sourceQuest"] = 92572,	-- Furniture Favor
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248794, {	-- Elwynn Fence (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 500000 }},	-- 50g
+								["cost"] = { { "g", 500000 } },	-- 50g
 							}),
 							i(248795, {	-- Elwynn Fencepost (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 950000 }},	-- 95g
+								["cost"] = { { "g", 950000 } },	-- 95g
 							}),
 							i(248938, {	-- Hooded Iron Lantern (DECOR!)
-								["sourceQuest"] = 60,	-- Kobold Candles
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 							i(248662, {	-- Jewelcrafter's Tent (DECOR!)
-								["sourceQuest"] = 543,	-- The Perenolde Tiara
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 5000000 }},	-- 500g
+								["cost"] = { { "g", 5000000 } },	-- 500g
 							}),
 							i(248798, {	-- Northshire Barrel (DECOR!)
-								["sourceQuest"] = 54,	-- Report to Goldshire
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 2550000 }},	-- 255g
+								["cost"] = { { "g", 2550000 } },	-- 255g
 							}),
 							i(248621, {	-- Stormwind Arched Trellis (DECOR!)
-								["sourceQuest"] = 26390,	-- Ending the Invasion!
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3800000 }},	-- 380g
+								["cost"] = { { "g", 3800000 } },	-- 380g
 							}),
 							i(256673, {	-- Stormwind Forge (DECOR!)
-								["sourceQuest"] = 7604,	-- A Binding Contract
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 10000000 }},	-- 1000g
+								["cost"] = { { "g", 10000000 } },	-- 1000g
 							}),
 							i(45574, {	-- Stormwind Tabard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(248801, {	-- Stormwind Weapon Rack (DECOR!)
-								["sourceQuest"] = 26297,	-- The Dawning of a New Day
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1000000 }},	-- 100g
+								["cost"] = { { "g", 1000000 } },	-- 100g
 							}),
 							i(248336, {	-- Stormwind Wooden Table (DECOR!)
-								["sourceQuest"] = 59583,	-- Welcome to Stormwind
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3800000 }},	-- 380g
+								["cost"] = { { "g", 3800000 } },	-- 380g
 							}),
 							i(248618, {	-- Westfall Woven Basket (DECOR!)
-								["sourceQuest"] = 26270,	-- You Have Our Thanks
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 2550000 }},	-- 255g
+								["cost"] = { { "g", 2550000 } },	-- 255g
 							}),
 						}, {	-- Honored
 							i(248939, {	-- Stormwind Lamppost (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1300000 }},	-- 130g
+								["cost"] = { { "g", 1300000 } },	-- 130g
 							}),
 							i(248333, {	-- Stormwind Large Wooden Table (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1300000 }},	-- 130g
+								["cost"] = { { "g", 1300000 } },	-- 130g
 							}),
 						}, {	-- Revered
 							i(248617, {	-- Stormwind Keg Stand (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 							i(67531, {	-- Stormwind Satchel
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(248620, {	-- Stormwind Trellis and Basin (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 1900000 }},	-- 190g
+								["cost"] = { { "g", 1900000 } },	-- 190g
 							}),
 						}, {	-- Exalted
 							i(64902, {	-- Cape of Stormwind
@@ -5109,11 +5100,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							i(248619, {	-- Stormwind Gazebo (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3150000 }},	-- 315g
+								["cost"] = { { "g", 3150000 } },	-- 315g
 							}),
 							i(248665, {	-- Stormwind Peddler's Cart (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{ "g", 3150000 }},	-- 315g
+								["cost"] = { { "g", 3150000 } },	-- 315g
 							}),
 						},
 					}),
@@ -5698,7 +5689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
-							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["cost"] = { { "i", 205183, 1 } },	-- Fel-Powered Artifact
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416009),	-- Engrave Chest - Demonic Tactics
@@ -5898,7 +5889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+							["cost"] = { { "i", 52555, 20 } },	-- 20x Hypnotic Dust
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
@@ -7086,78 +7077,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
-						i(247757, {	-- Alliance Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 158,	-- Me and the Cappin' Makin' It Happen
-							["cost"] = {{ "c", HONOR, 600 }},
-						}),
-						i(247744, {	-- Alliance Dueling Flag (DECOR!)
-							["sourceAchievement"] = 231,	-- Wrecking Ball
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247763, {	-- Berserker's Empowerment (DECOR!)
-							["sourceAchievement"] = 61683,	-- Entering Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247756, {	-- Challenger's Dueling Flag (DECOR!)
-							["sourceAchievement"] = 1157,	-- Duel-icious
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247769, {	-- Chaotic Empowerment (DECOR!)
-							["sourceAchievement"] = 61685,	-- Proficient in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247750, {	-- Deephaul Crystal (DECOR!)
-							["sourceAchievement"] = 40612,	-- Sprinting in the Ravine
-							["cost"] = {{ "c", HONOR, 2500 }},
-						}),
-						i(253170, {	-- Earthen Contender's Target (DECOR!)
-							["sourceAchievement"] = 40210,	-- Deephaul Ravine Victory
-							["cost"] = {{ "c", HONOR, 750 }},
-						}),
-						i(247758, {	-- Fortified Alliance Banner (DECOR!)
-							["sourceAchievement"] = 221,	-- Alterac Grave Robber
-							["cost"] = {{ "c", HONOR, 1200 }},
-						}),
-						i(247768, {	-- Guardian's Empowerment (DECOR!)
-							["sourceAchievement"] = 61684,	-- Progressing in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247765, {	-- Healer's Empowerment (DECOR!)
-							["sourceAchievement"] = 61687,	-- Champion in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247741, {	-- Kotmogu Orb of Power (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247740, {	-- Kotmogu Pedestal (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 2000 }},
-						}),
-						i(247770, {	-- Mysterious Empowerment (DECOR!)
-							["sourceAchievement"] = 61686,	-- Expert in Battle
-							["cost"] = {{ "i", 137642, 2 }},	-- 2x Mark of Honor
-						}),
-						i(247762, {	-- Netherstorm Battlefield Flag (DECOR!)
-							["sourceAchievement"] = 213,	-- Stormtrooper
-							["cost"] = {{ "c", HONOR, 300 }},
-						}),
-						i(247766, {	-- Runner's Empowerment (DECOR!)
-							["sourceAchievement"] = 61688,	-- Master in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247746, {	-- Silverwing Sentinels Flag (DECOR!)
-							["sourceAchievement"] = 200,	-- Persistent Defender
-							["cost"] = {{ "c", HONOR, 800 }},
-						}),
-						i(256896, {	-- Smoke Lamppost (DECOR!)
-							["sourceAchievement"] = 5245,	-- Battle for Gilneas Victory
-							["cost"] = {{ "c", HONOR, 450 }},
-						}),
-						i(247761, {	-- Uncontested Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 212,	-- Storm Capper
-							["cost"] = {{ "c", HONOR, 400 }},
-						}),
+						-- Honor
+						honor(600, i(247757)),	-- Alliance Battlefield Banner (DECOR!)
+						honor(1000, i(247744)),	-- Alliance Dueling Flag (DECOR!)
+						honor(1000, i(247756)),	-- Challenger's Dueling Flag (DECOR!)
+						honor(2500, i(247750)),	-- Deephaul Crystal (DECOR!)
+						honor(750, i(253170)),	-- Earthen Contender's Target (DECOR!)
+						honor(1200, i(247758)),	-- Fortified Alliance Banner (DECOR!)
+						honor(1000, i(247741)),	-- Kotmogu Orb of Power (DECOR!)
+						honor(2000, i(247740)),	-- Kotmogu Pedestal (DECOR!)
+						honor(300, i(247762)),	-- Netherstorm Battlefield Flag (DECOR!)
+						honor(800, i(247746)),	-- Silverwing Sentinels Flag (DECOR!)
+						honor(450, i(256896)),	-- Smoke Lamppost (DECOR!)
+						honor(400, i(247761)),	-- Uncontested Battlefield Banner (DECOR!)
+						-- Mark of Honor
+						moh(5, i(247763)),	-- Berserker's Empowerment (DECOR!)
+						moh(5, i(247769)),	-- Chaotic Empowerment (DECOR!)
+						moh(5, i(247768)),	-- Guardian's Empowerment (DECOR!)
+						moh(5, i(247765)),	-- Healer's Empowerment (DECOR!)
+						moh(2, i(247770)),	-- Mysterious Empowerment (DECOR!)
+						moh(5, i(247766)),	-- Runner's Empowerment (DECOR!)
 					}),
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
@@ -7476,7 +7415,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_12_0_0 },
 					["groups"] = {
 						i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
-							["sourceAchievement"] = 62387,	-- It's Nearly Midnight
 							["cost"] = 14000000,	-- 1400g
 						}),
 					},

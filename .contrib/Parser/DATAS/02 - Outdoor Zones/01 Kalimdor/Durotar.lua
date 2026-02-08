@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DUROTAR, {
 		-- #if AFTER CATA
@@ -3101,7 +3102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 7,
 							["groups"] = {
 								objective(1, {	-- 0/4 Venomtail Poison Sac
-									["cost"] = {{ "i", 4886, 4 }},	-- Venomtail Poison Sac
+									["cost"] = { { "i", 4886, 4 } },	-- Venomtail Poison Sac
 									["crs"] = {
 										3226,	-- Corrupted Scorpid
 										5823,	-- Death Flayer
@@ -3563,7 +3564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 59.3, 57.7, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4882, 1 }},	-- Benedict's Key
+					["cost"] = { { "i", 4882, 1 } },	-- Benedict's Key
 					["races"] = HORDE_ONLY,
 				}),
 				q(831, {	-- The Admiral's Orders (2/2)
@@ -3693,7 +3694,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(139916),	-- Black Rose Amice
 						i(139925),	-- Black Rose Wristwraps
-						i(253251, {["timeline"] = { ADDED_11_2_7 }}),	-- Blightfire Candle (DECOR!)
+						i(253251, {	-- Blightfire Candle (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(139974),	-- Dark Ranger Shoulderguards
 						i(139987),	-- Dark Ranger Wristguards
 						i(140012),	-- Deathstalker Shoulderplates
@@ -4003,7 +4006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 69.1, 71.5, DUROTAR },
-					["cost"] = {{ "i", 207590, 1 }},	-- Durotar Pig Meat
+					["cost"] = { { "i", 207590, 1 } },	-- Durotar Pig Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -4175,7 +4178,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 62.1, 94.8, DUROTAR },
-					["cost"] = {{ "i", 207110, 1 }},	-- Durotar Treasure Map
+					["cost"] = { { "i", 207110, 1 } },	-- Durotar Treasure Map
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
@@ -4191,7 +4194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 207098, 1 }},	-- Note from Ba'so
+							["cost"] = { { "i", 207098, 1 } },	-- Note from Ba'so
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -4240,7 +4243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
 					["description"] = "Use the pheromone and tame an adder and then bring it to Razzil.",
 					["coord"] = { 52.2, 44.0, DUROTAR },
-					["cost"] = {{ "i", 207631, 1 }},	-- Adder Pheromone
+					["cost"] = { { "i", 207631, 1 } },	-- Adder Pheromone
 					["crs"] = { 3300 },	-- Adder
 					["races"] = HORDE_ONLY,
 					["groups"] = {

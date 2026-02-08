@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WETLANDS, {
 		["lore"] =
@@ -661,7 +662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  41410 },	-- Captured Mosshide
 								{ "o", 203282 },	-- Gnoll Cage
 							},
-							["cost"] = {{ "i", 56081, 6 }},	-- Trapper's Key
+							["cost"] = { { "i", 56081, 6 } },	-- Trapper's Key
 							["cr"] = 41409,	-- Dark Iron Trapper
 						}),
 					},
@@ -1497,7 +1498,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 Flagon of Dwarven Honeymead
-							["cost"] = {{ "i", 2594, 1 }},	-- Flagon of Dwarven Honeymead
+							["cost"] = { { "i", 2594, 1 } },	-- Flagon of Dwarven Honeymead
 							["coord"] = { 10.6, 60.8, WETLANDS },
 							["cr"] = 1464,	-- Innkeeper Helbrek <Innkeeper>
 						}),
@@ -2225,7 +2226,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(257405, {	["timeline"] = { ADDED_11_2_7 } }),	-- Baradin Bay Fishing Rack (DECOR!)
+						i(257405, {	-- Baradin Bay Fishing Rack (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)

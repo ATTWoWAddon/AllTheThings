@@ -1055,20 +1055,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.8, 30.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["groups"] = sharedData({
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "g", 20000000 }},		-- 2,000g
+							["cost"] = { { "g", 20000000 } },		-- 2,000g
 						}, {
-							i(257354, {	-- Scroll of K'aresh's Fall (DECOR!)
-								["sourceAchievement"] = 42187,	-- Lorewalking: Ethereal Wisdom
-							}),
-							i(257351, {	-- Tale of the Penultimate Lich King (DECOR!)
-								["sourceAchievement"] = 42189,	-- Lorewalking: The Lich King
-							}),
-							i(245332, {	-- Tome of Silvermoon Intrigue (DECOR!)
-								["sourceAchievement"] = 61467,	-- Lorewalking: The Elves of Quel'thalas
-							}),
-							i(257355, {	-- Tome of the Survivor (DECOR!)
-								["sourceAchievement"] = 42188,	-- Lorewalking: Blade's Bane
-							}),
+							i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
+							i(257351),	-- Tale of the Penultimate Lich King (DECOR!)
+							i(245332),	-- Tome of Silvermoon Intrigue (DECOR!)
+							i(257355),	-- Tome of the Survivor (DECOR!)
 						}),
 					}),
 					n(65172, {	-- Len at Arms <Adventuring Supplies>
@@ -1198,7 +1190,7 @@ root(ROOTS.Zones, {
 					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
-						["cost"] = {{ "i", 86547, 10 }},	-- 10x Skyshard
+						["cost"] = { { "i", 86547, 10 } },	-- 10x Skyshard
 					}),
 				}),
 			},

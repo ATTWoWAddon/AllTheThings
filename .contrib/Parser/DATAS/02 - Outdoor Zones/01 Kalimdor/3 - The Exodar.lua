@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local GORNII_GROUPS, PHEA_GROUPS = {}, {};
 local EGOMIS_GROUPS = {
 	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
@@ -13,6 +14,7 @@ local EGOMIS_GROUPS = {
 		["isLimited"] = true,
 	}),
 };
+
 local REDEMPTION = recipe(7328);	-- Redemption
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -203,9 +205,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						BLOODMYST_ISLE,
 						-- #endif
 					},
-					["cost"] = {
-						{ "i", 23903, 1 },	-- Nurguni's Supplies
-					},
+					["cost"] = { { "i", 23903, 1 } },	-- Nurguni's Supplies
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 5, 1),
 				}),
@@ -254,9 +254,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 23926, 1 },	-- Tome of Divinity
-					},
+					["cost"] = { { "i", 23926, 1 } },	-- Tome of Divinity
 					["classes"] = { PALADIN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(12, 12, 10),
@@ -292,9 +290,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						BLOODMYST_ISLE,
 						-- #endif
 					},
-					["cost"] = {
-						{ "i", 23903, 1 },	-- Nurguni's Supplies
-					},
+					["cost"] = { { "i", 23903, 1 } },	-- Nurguni's Supplies
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 5, 1),
 				}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(BLASTED_LANDS, {
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
@@ -1276,7 +1277,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59401, {	-- Surwich Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(244777, { ["timeline"] = { ADDED_11_2_7 } }),	-- Surwich Peddler's Wagon (DECOR!)
+						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(59399, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1305,7 +1308,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59440, {	-- Sunveil Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(244777, { ["timeline"] = { ADDED_11_2_7 } }),	-- Surwich Peddler's Wagon (DECOR!)
+						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(59437, {	-- Wormthorn Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1850,7 +1855,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(244777, { 	-- Surwich Peddler's Wagon (DECOR!)
-							["sourceQuest"] = 26187,	-- The Downfall of Marl Wormthorn (A)
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 8800000,	-- 880g
 						}),
@@ -1904,9 +1908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57181, {	-- Crushed Nightstalker Leg
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57178, 1 },	-- Nightstalker Leg
-					},
+					["cost"] = { { "i", 57178, 1 } },	-- Nightstalker Leg
 				}),
 				i(57183, {	-- Demoniac Commixture
 					["timeline"] = { ADDED_4_0_3 },
@@ -1962,9 +1964,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57182, {	-- Screecher Brain Paste
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57179, 1 },	-- Screecher Brain
-					},
+					["cost"] = { { "i", 57179, 1 } },	-- Screecher Brain
 				}),
 				i(57179, {	-- Screecher Brain
 					["timeline"] = { ADDED_4_0_3 },
@@ -1980,9 +1980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(57180, {	-- Tainted Hide Pouch
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {
-						{ "i", 57177, 4 },	-- Tainted Hide
-					},
+					["cost"] = { { "i", 57177, 4 } },	-- Tainted Hide
 				}),
 				i(57177, {	-- Tainted Hide
 					["timeline"] = { ADDED_4_0_3 },

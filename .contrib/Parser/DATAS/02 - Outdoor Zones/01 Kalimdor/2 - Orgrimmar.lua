@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -579,7 +580,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_EPIC_JEWELCRAFTING_RECIPES, {
 							i(71949, {	-- Tome of Burning Jewels
-								["cost"] = {{"c", 361, 4}},	-- 4x Illustrious Jewelcrafter's Token
+								["cost"] = { { "c", 361, 4 } },	-- 4x Illustrious Jewelcrafter's Token
 								["filterID"] = CONSUMABLES,
 								["sym"] = {
 									{"select","npcID",57922},{"pop"},	-- this NPC
@@ -3305,82 +3306,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
-						i(247763, {	-- Berserker's Empowerment (DECOR!)
-							["sourceAchievement"] = 61683,	-- Entering Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247756, {	-- Challenger's Dueling Flag (DECOR!)
-							["sourceAchievement"] = 1157,	-- Duel-icious
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247769, {	-- Chaotic Empowerment (DECOR!)
-							["sourceAchievement"] = 61685,	-- Proficient in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247750, {	-- Deephaul Crystal (DECOR!)
-							["sourceAchievement"] = 40612,	-- Sprinting in the Ravine
-							["cost"] = {{ "c", HONOR, 2500 }},
-						}),
-						i(253170, {	-- Earthen Contender's Target (DECOR!)
-							["sourceAchievement"] = 40210,	-- Deephaul Ravine Victory
-							["cost"] = {{ "c", HONOR, 750 }},
-						}),
-						i(247760, {	-- Fortified Horde Banner (DECOR!)
-							["sourceAchievement"] = 222,	-- Tower Defense
-							["cost"] = {{ "c", HONOR, 1200 }},
-						}),
-						i(247768, {	-- Guardian's Empowerment (DECOR!)
-							["sourceAchievement"] = 61684,	-- Progressing in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247765, {	-- Healer's Empowerment (DECOR!)
-							["sourceAchievement"] = 61687,	-- Champion in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(247759, {	-- Horde Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 1153,	-- Overly Defensive
-							["cost"] = {{ "c", HONOR, 600 }},
-						}),
-						i(247745, {	-- Horde Dueling Flag (DECOR!)
-							["sourceAchievement"] = 229,	-- The Grim Reaper
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247727, {	-- Iron Dragonmaw Gate (DECOR!)
-							["sourceAchievement"] = 5223,	-- Master of Twin Peaks
-							["cost"] = {{ "c", HONOR, 5000 }},
-						}),
-						i(247741, {	-- Kotmogu Orb of Power (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 1000 }},
-						}),
-						i(247740, {	-- Kotmogu Pedestal (DECOR!)
-							["sourceAchievement"] = 6981,	-- Master of Temple of Kotmogu
-							["cost"] = {{ "c", HONOR, 2000 }},
-						}),
-						i(247770, {	-- Mysterious Empowerment (DECOR!)
-							["sourceAchievement"] = 61686,	-- Expert in Battle
-							["cost"] = {{ "i", 137642, 2 }},	-- 2x Mark of Honor
-						}),
-						i(247762, {	-- Netherstorm Battlefield Flag (DECOR!)
-							["sourceAchievement"] = 213,	-- Stormtrooper
-							["cost"] = {{ "c", HONOR, 300 }},
-						}),
-						i(247766, {	-- Runner's Empowerment (DECOR!)
-							["sourceAchievement"] = 61688,	-- Master in Battle
-							["cost"] = {{ "i", 137642, 5 }},	-- 5x Mark of Honor
-						}),
-						i(256896, {	-- Smoke Lamppost (DECOR!)
-							["sourceAchievement"] = 5245,	-- Battle for Gilneas Victory
-							["cost"] = {{ "c", HONOR, 450 }},
-						}),
-						i(247761, {	-- Uncontested Battlefield Banner (DECOR!)
-							["sourceAchievement"] = 212,	-- Storm Capper
-							["cost"] = {{ "c", HONOR, 400 }},
-						}),
-						i(247747, {	-- Warsong Outriders Flag (DECOR!)
-							["sourceAchievement"] = 167,	-- Warsong Gulch Veteran
-							["cost"] = {{ "c", HONOR, 800 }},
-						}),
+						-- Honor
+						honor(1000, i(247756)),	-- Challenger's Dueling Flag (DECOR!)
+						honor(2500, i(247750)),	-- Deephaul Crystal (DECOR!)
+						honor(750, i(253170)),	-- Earthen Contender's Target (DECOR!)
+						honor(1200, i(247760)),	-- Fortified Horde Banner (DECOR!)
+						honor(600, i(247759)),	-- Horde Battlefield Banner (DECOR!)
+						honor(1000, i(247745)),	-- Horde Dueling Flag (DECOR!)
+						honor(5000, i(247727)),	-- Iron Dragonmaw Gate (DECOR!)
+						honor(1000, i(247741)),	-- Kotmogu Orb of Power (DECOR!)
+						honor(2000, i(247740)),	-- Kotmogu Pedestal (DECOR!)
+						honor(300, i(247762)),	-- Netherstorm Battlefield Flag (DECOR!)
+						honor(450, i(256896)),	-- Smoke Lamppost (DECOR!)
+						honor(400, i(247761)),	-- Uncontested Battlefield Banner (DECOR!)
+						honor(800, i(247747)),	-- Warsong Outriders Flag (DECOR!)
+						-- Mark of Honor
+						moh(5, i(247763)),	-- Berserker's Empowerment (DECOR!)
+						moh(5, i(247769)),	-- Chaotic Empowerment (DECOR!)
+						moh(5, i(247768)),	-- Guardian's Empowerment (DECOR!)
+						moh(5, i(247765)),	-- Healer's Empowerment (DECOR!)
+						moh(2, i(247770)),	-- Mysterious Empowerment (DECOR!)
+						moh(5, i(247766)),	-- Runner's Empowerment (DECOR!)
 					}),
 				}),
 				n(3322, {	-- Kaja <Bow & Rifle Vendor>
@@ -4417,7 +4363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
-						i(140565, {	-- Technique: Songs of the Horde
+						i(140565, {	-- Technique: Songs of the Horde (RECIPE!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},

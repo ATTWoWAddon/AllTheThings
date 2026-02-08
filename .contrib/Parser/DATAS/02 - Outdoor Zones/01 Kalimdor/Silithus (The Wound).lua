@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 SILITHUS_THE_WOUND = createHeader({
 	readable = "Silithus (The Wound)",
 	icon = 236829,
@@ -8,6 +9,7 @@ SILITHUS_THE_WOUND = createHeader({
 		en = [[~C_Map.GetAreaInfo(9310)]],
 	},
 });
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(SILITHUS_THE_WOUND, {
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
@@ -94,21 +96,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+							["cost"] = { { "i", 171176, 20 } },	-- 20x Shred of Insanity
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(57276, {	-- Maintaining Focus (H)
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+							["cost"] = { { "i", 171176, 20 } },	-- 20x Shred of Insanity
 							["races"] = HORDE_ONLY,
 						}),
 						q(57462, {	-- Dream Catcher
 							["sourceQuests"] = { 57276, 57464 },	-- Maintaining Focus (A, H)
 							["qg"] = 155496,	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
-							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
+							["cost"] = { { "i", 171176, 200 } },	-- 200x Shred of Insanity
 						}),
 					})),
 					n(QUESTS, {
@@ -1076,17 +1078,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_8_3_0 },
 							}, {
 								i(247667, {	-- MOTHER's Titanic Brazier (DECOR!)
-									["sourceAchievement"] = 40953,	-- A Farewell to Arms
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = { { "c", 1803, 10000 }, },	-- 10,000x Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 10000 } },	-- 10,000x Echoes of Ny'alotha
 								}),
 								i(247668, {	-- N'Zoth's Captured Eye (DECOR!)
-									["sourceAchievement"] = 40953,	-- A Farewell to Arms
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = { { "c", 1803, 10000 }, },	-- 10,000x Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 10000 } },	-- 10,000x Echoes of Ny'alotha
 								}),
 								i(173363, {	-- Vessel of Horrific Visions
-									["cost"] = { { "c", 1803, 1750 }, },	-- 1750 Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 1750 } },	-- 1750 Echoes of Ny'alotha
 								}),
 								i(175062, {	-- Malefic Core
 									["cost"] = { { "c", 1803, 2000 } },	-- 2000 Echoes of Ny'alotha
@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["modID"] = 14,
 								}),
 								i(168568, {	-- Null Force Nullifier
-									["cost"] = { { "c", 1803, 2500 }, },	-- 2500 Echoes of Ny'alotha
+									["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
 									["modID"] = 14,
 								}),
 								i(168860, {	-- Enhanced Purification Protocols
@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 							["groups"] = {
 								i(173363, {	-- Vessel of Horrific Visions
-									["cost"] = { { "c", 1755, 10000 }, },	-- 10,000 Coalescing Visions
+									["cost"] = { { "c", 1755, 10000 } },	-- 10,000 Coalescing Visions
 								}),
 								i(173291, {	-- Luminous Azerite Geode (Rank 4)
 									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
@@ -1230,13 +1230,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["classes"] = HEALERS,
 								}),
 								i(174876, {	-- Gouged Eye of N'Zoth
-									["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 25000 } },	-- 25,000 Corrupted Mementos
 								}),
 								i(174361, {	-- Black Dragonscale Backpack
-									["cost"] = { { "c", 1719, 5000 }, },	-- 5,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 5000 } },	-- 5,000 Corrupted Mementos
 								}),
 								i(174770, {	-- Wicked Swarmer (MOUNT!)
-									["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos
+									["cost"] = { { "c", 1719, 100000 } },	-- 100,000 Corrupted Mementos
 									["modelScale"] = 1.5,
 								}),
 							},

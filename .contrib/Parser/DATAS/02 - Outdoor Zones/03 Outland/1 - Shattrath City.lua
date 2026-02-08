@@ -1,575 +1,576 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 	cl(WARRIOR, {
 		-- DPS
 		i(29021, {	-- Warbringer Battle-Helm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29019, {	-- Warbringer Breastplate
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29023, {	-- Warbringer Shoulderplates
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29020, {	-- Warbringer Gauntlets
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29022, {	-- Warbringer Greaves
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		-- Protection
 		i(29011, {	-- Warbringer Greathelm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29016, {	-- Warbringer Shoulderguards
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29012, {	-- Warbringer Chestguard
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29017, {	-- Warbringer Handguards
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29015, {	-- Warbringer Legguards
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 	cl(PALADIN, {
 		-- DPS
 		i(29073, {	-- Justicar Crown
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29075, {	-- Justicar Shoulderplates
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29071, {	-- Justicar Breastplate
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29072, {	-- Justicar Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29074, {	-- Justicar Greaves
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		-- Holy
 		i(29061, {	-- Justicar Diadem
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29064, {	-- Justicar Pauldrons
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29062, {	-- Justicar Chestpiece
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29065, {	-- Justicar Gloves
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29063, {	-- Justicar Leggings
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		-- Protection
 		i(29068, {	-- Justicar Faceguard
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29070, {	-- Justicar Shoulderguards
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29066, {	-- Justicar Chestguard
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29067, {	-- Justicar Handguards
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29069, {	-- Justicar Legguards
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(HUNTER, {
 		i(29081, {	-- Demon Stalker Greathelm
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(29084, {	-- Demon Stalker Shoulderguards
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(29082, {	-- Demon Stalker Harness
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(29085, {	-- Demon Stalker Gauntlets
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(29083, {	-- Demon Stalker Greaves
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(ROGUE, {
 		i(29044, {	-- Netherblade Facemask
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29047, {	-- Netherblade Shoulderpads
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29045, {	-- Netherblade Chestpiece
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29048, {	-- Netherblade Gloves
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29046, {	-- Netherblade Breeches
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(PRIEST, {
 		-- DPS
 		i(29058, {	-- Soul-Collar of the Incarnate
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29060, {	-- Soul-Mantle of the Incarnate
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29056, {	-- Shroud of the Incarnate
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29057, {	-- Gloves of the Incarnate
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29059, {	-- Leggings of the Incarnate
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		-- Holy
 		i(29049, {	-- Light-Collar of the Incarnate
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29054, {	-- Light-Mantle of the Incarnate
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29050, {	-- Robes of the Incarnate
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29055, {	-- Handwraps of the Incarnate
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29053, {	-- Trousers of the Incarnate
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 	cl(SHAMAN, {
 		-- Enhance
 		i(29040, {	-- Cyclone Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29043, {	-- Cyclone Shoulderplates
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29038, {	-- Cyclone Breastplate
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29039, {	-- Cyclone Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29042, {	-- Cyclone War-Kilt
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		-- Elemental
 		i(29035, {	-- Cyclone Faceguard
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29037, {	-- Cyclone Shoulderguards
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29033, {	-- Cyclone Chestguard
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29034, {	-- Cyclone Handguards
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29036, {	-- Cyclone Legguards
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		-- Restoration
 		i(29028, {	-- Cyclone Headdress
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(29031, {	-- Cyclone Shoulderpads
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(29029, {	-- Cyclone Hauberk
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(29032, {	-- Cyclone Gloves
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(29030, {	-- Cyclone Kilt
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(MAGE, {
 		i(29076, {	-- Collar of the Aldor
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(29079, {	-- Pauldrons of the Aldor
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(29077, {	-- Vestments of the Aldor
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(29080, {	-- Gloves of the Aldor
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(29078, {	-- Legwraps of the Aldor
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(WARLOCK, {
 		i(28963, {	-- Voidheart Crown
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(28967, {	-- Voidheart Mantle
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(28964, {	-- Voidheart Robe
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(28968, {	-- Voidheart Gloves
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(28966, {	-- Voidheart Leggings
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(DRUID, {
 		-- Boomkin
 		i(29093, {	-- Antlers of Malorne
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29095, {	-- Pauldrons of Malorne
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29091, {	-- Chestpiece of Malorne
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29092, {	-- Gloves of Malorne
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29094, {	-- Britches of Malorne
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		-- Feral
 		i(29098, {	-- Stag-Helm of Malorne
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29100, {	-- Mantle of Malorne
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29096, {	-- Breastplate of Malorne
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29097, {	-- Gauntlets of Malorne
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29099, {	-- Greaves of Malorne
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		-- Restoration
 		i(29086, {	-- Crown of Malorne
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(29089, {	-- Shoulderguards of Malorne
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(29087, {	-- Chestguard of Malorne
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(29090, {	-- Handguards of Malorne
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(29088, {	-- Legguards of Malorne
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 });
 local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 	cl(WARRIOR, {
 		i(30120, {	-- Destroyer Battle-Helm
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30118, {	-- Destroyer Breastplate
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30113, {	-- Destroyer Chestguard
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30119, {	-- Destroyer Gauntlets
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30115, {	-- Destroyer Greathelm
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30121, {	-- Destroyer Greaves
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 		i(30114, {	-- Destroyer Handguards
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30116, {	-- Destroyer Legguards
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 		i(30122, {	-- Destroyer Shoulderblades
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 		i(30117, {	-- Destroyer Shoulderguards
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 	}),
 	cl(PALADIN, {
 		i(30129, {	-- Crystalforge Breastplate
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30123, {	-- Crystalforge Chestguard
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30134, {	-- Crystalforge Chestpiece
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30125, {	-- Crystalforge Faceguard
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30130, {	-- Crystalforge Gauntlets
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30135, {	-- Crystalforge Gloves
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30136, {	-- Crystalforge Greathelm
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30132, {	-- Crystalforge Greaves
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30124, {	-- Crystalforge Handguards
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30137, {	-- Crystalforge Leggings
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30126, {	-- Crystalforge Legguards
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30138, {	-- Crystalforge Pauldrons
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30133, {	-- Crystalforge Shoulderbraces
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30127, {	-- Crystalforge Shoulderguards
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30131, {	-- Crystalforge War-Helm
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 	}),
 	cl(HUNTER, {
 		i(30141, {	-- Rift Stalker Helm
-			["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+			["cost"] = { { "i", 30244, 1 } },	-- Helm of the Vanquished Hero
 		}),
 		i(30143, {	-- Rift Stalker Mantle
-			["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+			["cost"] = { { "i", 30250, 1 } },	-- Pauldrons of the Vanquished Hero
 		}),
 		i(30139, {	-- Rift Stalker Hauberk
-			["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+			["cost"] = { { "i", 30238, 1 } },	-- Chestguard of the Vanquished Hero
 		}),
 		i(30140, {	-- Rift Stalker Gauntlets
-			["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+			["cost"] = { { "i", 30241, 1 } },	-- Gloves of the Vanquished Hero
 		}),
 		i(30142, {	-- Rift Stalker Leggings
-			["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+			["cost"] = { { "i", 30247, 1 } },	-- Leggings of the Vanquished Hero
 		}),
 	}),
 	cl(ROGUE, {
 		i(30146, {	-- Deathmantle Helm
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30149, {	-- Deathmantle Shoulderpads
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30144, {	-- Deathmantle Chestguard
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30145, {	-- Deathmantle Handguards
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30148, {	-- Deathmantle Legguards
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 	}),
 	cl(PRIEST, {
 		i(30161, {	-- Hood of the Avatar
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30152, {	-- Cowl of the Avatar
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30151, {	-- Gloves of the Avatar
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30153, {	-- Breeches of the Avatar
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 
 		i(30154, {	-- Mantle of the Avatar
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 		i(30160, {	-- Handguards of the Avatar
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30159, {	-- Shroud of the Avatar
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30150, {	-- Vestments of the Avatar
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30163, {	-- Wings of the Avatar
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 		i(30162, {	-- Leggings of the Avatar
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 	}),
 	cl(SHAMAN, {
 		i(30164, {	-- Cataclysm Chestguard
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30169, {	-- Cataclysm Chestpiece
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30185, {	-- Cataclysm Chestplate
-			["cost"] = { { "i", 30236, 1 }, },	-- Chestguard of the Vanquished Champion
+			["cost"] = { { "i", 30236, 1 } },	-- Chestguard of the Vanquished Champion
 		}),
 		i(30189, {	-- Cataclysm Gauntlets
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30165, {	-- Cataclysm Gloves
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30170, {	-- Cataclysm Handgrips
-			["cost"] = { { "i", 30239, 1 }, },	-- Gloves of the Vanquished Champion
+			["cost"] = { { "i", 30239, 1 } },	-- Gloves of the Vanquished Champion
 		}),
 		i(30166, {	-- Cataclysm Headguard
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30171, {	-- Cataclysm Headpiece
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30190, {	-- Cataclysm Helm
-			["cost"] = { { "i", 30242, 1 }, },	-- Helm of the Vanquished Champion
+			["cost"] = { { "i", 30242, 1 } },	-- Helm of the Vanquished Champion
 		}),
 		i(30172, {	-- Cataclysm Leggings
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30167, {	-- Cataclysm Legguards
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30192, {	-- Cataclysm Legplates
-			["cost"] = { { "i", 30245, 1 }, },	-- Leggings of the Vanquished Champion
+			["cost"] = { { "i", 30245, 1 } },	-- Leggings of the Vanquished Champion
 		}),
 		i(30168, {	-- Cataclysm Shoulderguards
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30173, {	-- Cataclysm Shoulderpads
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 		i(30194, {	-- Cataclysm Shoulderplates
-			["cost"] = { { "i", 30248, 1 }, },	-- Pauldrons of the Vanquished Champion
+			["cost"] = { { "i", 30248, 1 } },	-- Pauldrons of the Vanquished Champion
 		}),
 	}),
 	cl(MAGE, {
 		i(30206, {	-- Cowl of Tirisfal
-			["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+			["cost"] = { { "i", 30244, 1 } },	-- Helm of the Vanquished Hero
 		}),
 		i(30210, {	-- Mantle of Tirisfal
-			["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+			["cost"] = { { "i", 30250, 1 } },	-- Pauldrons of the Vanquished Hero
 		}),
 		i(30196, {	-- Robes of Tirisfal
-			["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+			["cost"] = { { "i", 30238, 1 } },	-- Chestguard of the Vanquished Hero
 		}),
 		i(30205, {	-- Gloves of Tirisfal
-			["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+			["cost"] = { { "i", 30241, 1 } },	-- Gloves of the Vanquished Hero
 		}),
 		i(30207, {	-- Leggings of Tirisfal
-			["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+			["cost"] = { { "i", 30247, 1 } },	-- Leggings of the Vanquished Hero
 		}),
 	}),
 	cl(WARLOCK, {
 		i(30212, {	-- Hood of the Corruptor
-			["cost"] = { { "i", 30244, 1 }, },	-- Helm of the Vanquished Hero
+			["cost"] = { { "i", 30244, 1 } },	-- Helm of the Vanquished Hero
 		}),
 		i(30215, {	-- Mantle of the Corruptor
-			["cost"] = { { "i", 30250, 1 }, },	-- Pauldrons of the Vanquished Hero
+			["cost"] = { { "i", 30250, 1 } },	-- Pauldrons of the Vanquished Hero
 		}),
 		i(30214, {	-- Robe of the Corruptor
-			["cost"] = { { "i", 30238, 1 }, },	-- Chestguard of the Vanquished Hero
+			["cost"] = { { "i", 30238, 1 } },	-- Chestguard of the Vanquished Hero
 		}),
 		i(30211, {	-- Gloves of the Corruptor
-			["cost"] = { { "i", 30241, 1 }, },	-- Gloves of the Vanquished Hero
+			["cost"] = { { "i", 30241, 1 } },	-- Gloves of the Vanquished Hero
 		}),
 		i(30213, {	-- Leggings of the Corruptor
-			["cost"] = { { "i", 30247, 1 }, },	-- Leggings of the Vanquished Hero
+			["cost"] = { { "i", 30247, 1 } },	-- Leggings of the Vanquished Hero
 		}),
 	}),
 	cl(DRUID, {
 		i(30216, {	-- Nordrassil Chestguard
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30231, {	-- Nordrassil Chestpiece
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30222, {	-- Nordrassil Chestplate
-			["cost"] = { { "i", 30237, 1 }, },	-- Chestguard of the Vanquished Defender
+			["cost"] = { { "i", 30237, 1 } },	-- Chestguard of the Vanquished Defender
 		}),
 		i(30229, {	-- Nordrassil Feral-Kilt
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 		i(30230, {	-- Nordrassil Feral-Mantle
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 		i(30232, {	-- Nordrassil Gauntlets
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30217, {	-- Nordrassil Gloves
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30223, {	-- Nordrassil Handgrips
-			["cost"] = { { "i", 30240, 1 }, },	-- Gloves of the Vanquished Defender
+			["cost"] = { { "i", 30240, 1 } },	-- Gloves of the Vanquished Defender
 		}),
 		i(30228, {	-- Nordrassil Headdress
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30219, {	-- Nordrassil Headguard
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30233, {	-- Nordrassil Headpiece
-			["cost"] = { { "i", 30243, 1 }, },	-- Helm of the Vanquished Defender
+			["cost"] = { { "i", 30243, 1 } },	-- Helm of the Vanquished Defender
 		}),
 		i(30220, {	-- Nordrassil Life-Kilt
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 		i(30221, {	-- Nordrassil Life-Mantle
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 		i(30234, {	-- Nordrassil Wrath-Kilt
-			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
+			["cost"] = { { "i", 30246, 1 } },	-- Leggings of the Vanquished Defender
 		}),
 		i(30235, {	-- Nordrassil Wrath-Mantle
-			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
+			["cost"] = { { "i", 30249, 1 } },	-- Pauldrons of the Vanquished Defender
 		}),
 	}),
 });
@@ -597,6 +598,7 @@ local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
 -- #else
 local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 -- #endif
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -1803,22 +1805,22 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(35717, {	-- Shattrath Flask of Blinding Light
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 							i(32898, {	-- Shattrath Flask of Fortification
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 							i(32899, {	-- Shattrath Flask of Mighty Restoration
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 							i(35716, {	-- Shattrath Flask of Pure Death
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 							i(32901, {	-- Shattrath Flask of Relentless Assault
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 							i(32900, {	-- Shattrath Flask of Supreme Power
-								["cost"] = { { "i", 32897, 1 }, },	-- 1x Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
 							}),
 						},
 					}),
@@ -2119,22 +2121,22 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(35717, {	-- Shattrath Flask of Blinding Light
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 							i(32898, {	-- Shattrath Flask of Fortification
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 							i(32899, {	-- Shattrath Flask of Mighty Restoration
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 							i(35716, {	-- Shattrath Flask of Pure Death
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 							i(32901, {	-- Shattrath Flask of Relentless Assault
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 							i(32900, {	-- Shattrath Flask of Supreme Power
-								["cost"] = { { "i", 32897, 1 }, },	-- Mark of the Illidari
+								["cost"] = { { "i", 32897, 1 } },	-- Mark of the Illidari
 							}),
 						},
 					}),
@@ -2545,30 +2547,30 @@ root(ROOTS.Zones, {
 							}, {	-- Friendly
 							}, {	-- Honored
 								i(28881, {	-- Inscription of Discipline
-									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									["cost"] = { { "i", 29735, 2 } },	-- 2x Holy Dust
 								}),
 								i(28878, {	-- Inscription of Faith
-									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									["cost"] = { { "i", 29735, 2 } },	-- 2x Holy Dust
 								}),
 								i(28885, {	-- Inscription of Vengeance
-									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									["cost"] = { { "i", 29735, 2 } },	-- 2x Holy Dust
 								}),
 								i(28882, {	-- Inscription of Warding
-									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+									["cost"] = { { "i", 29735, 2 } },	-- 2x Holy Dust
 								}),
 							}, {	-- Revered
 							}, {	-- Exalted
 								i(28886, {	-- Greater Inscription of Discipline
-									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									["cost"] = { { "i", 29735, 8 } },	-- 8x Holy Dust
 								}),
 								i(28887, {	-- Greater Inscription of Faith
-									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									["cost"] = { { "i", 29735, 8 } },	-- 8x Holy Dust
 								}),
 								i(28888, {	-- Greater Inscription of Vengeance
-									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									["cost"] = { { "i", 29735, 8 } },	-- 8x Holy Dust
 								}),
 								i(28889, {	-- Greater Inscription of Warding
-									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+									["cost"] = { { "i", 29735, 8 } },	-- 8x Holy Dust
 								}),
 							},
 						}),
@@ -2580,30 +2582,30 @@ root(ROOTS.Zones, {
 							}, {	-- Friendly
 							}, {	-- Honored
 								i(28907, {	-- Inscription of the Blade
-									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									["cost"] = { { "i", 29736, 2 } },	-- 2x Arcane Rune
 								}),
 								i(28908, {	-- Inscription of the Knight
-									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									["cost"] = { { "i", 29736, 2 } },	-- 2x Arcane Rune
 								}),
 								i(28904, {	-- Inscription of the Oracle
-									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									["cost"] = { { "i", 29736, 2 } },	-- 2x Arcane Rune
 								}),
 								i(28903, {	-- Inscription of the Orb
-									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+									["cost"] = { { "i", 29736, 2 } },	-- 2x Arcane Rune
 								}),
 							}, {	-- Revered
 							}, {	-- Exalted
 								i(28910, {	-- Greater Inscription of the Blade
-									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									["cost"] = { { "i", 29736, 8 } },	-- 8x Arcane Rune
 								}),
 								i(28911, {	-- Greater Inscription of the Knight
-									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									["cost"] = { { "i", 29736, 8 } },	-- 8x Arcane Rune
 								}),
 								i(28912, {	-- Greater Inscription of the Oracle
-									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									["cost"] = { { "i", 29736, 8 } },	-- 8x Arcane Rune
 								}),
 								i(28909, {	-- Greater Inscription of the Orb
-									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+									["cost"] = { { "i", 29736, 8 } },	-- 8x Arcane Rune
 								}),
 							},
 						}),
@@ -2717,283 +2719,283 @@ root(ROOTS.Zones, {
 local KARYNNA_GROUPS = {
 	cl(WARRIOR, {
 		i(24545, {	-- Gladiator's Plate Helm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(24546, {	-- Gladiator's Plate Shoulders
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(24544, {	-- Gladiator's Plate Chestpiece
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(24549, {	-- Gladiator's Plate Gauntlets
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(24547, {	-- Gladiator's Plate Legguards
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 	cl(PALADIN, {
 		i(27704, {	-- Gladiator's Lamellar Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(27706, {	-- Gladiator's Lamellar Shoulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(27702, {	-- Gladiator's Lamellar Chestpiece
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(27703, {	-- Gladiator's Lamellar Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(27705, {	-- Gladiator's Lamellar Legguards
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		i(31616, {	-- Gladiator's Ornamented Headcover
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(31619, {	-- Gladiator's Ornamented Spaulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(31613, {	-- Gladiator's Ornamented Chestguard
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(31614, {	-- Gladiator's Ornamented Gloves
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(31618, {	-- Gladiator's Ornamented Legplates
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		i(27881, {	-- Gladiator's Scaled Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(27883, {	-- Gladiator's Scaled Shoulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(27879, {	-- Gladiator's Scaled Chestpiece
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(27880, {	-- Gladiator's Scaled Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(27882, {	-- Gladiator's Scaled Legguards
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(HUNTER, {
 		i(28331, {	-- Gladiator's Chain Helm
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(28333, {	-- Gladiator's Chain Spaulders
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(28334, {	-- Gladiator's Chain Armor
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(28335, {	-- Gladiator's Chain Gauntlets
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(28332, {	-- Gladiator's Chain Leggings
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(ROGUE, {
 		i(25830, {	-- Gladiator's Leather Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(25832, {	-- Gladiator's Leather Spaulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(25831, {	-- Gladiator's Leather Tunic
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(25834, {	-- Gladiator's Leather Gloves
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(25833, {	-- Gladiator's Leather Legguards
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(PRIEST, {
 		i(31410, {	-- Gladiator's Mooncloth Hood
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(31412, {	-- Gladiator's Mooncloth Mantle
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(31413, {	-- Gladiator's Mooncloth Robe
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(31409, {	-- Gladiator's Mooncloth Gloves
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(31411, {	-- Gladiator's Mooncloth Leggings
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		i(27708, {	-- Gladiator's Satin Hood
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(27710, {	-- Gladiator's Satin Mantle
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(27711, {	-- Gladiator's Satin Robe
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(27707, {	-- Gladiator's Satin Gloves
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(27709, {	-- Gladiator's Satin Leggings
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 	cl(SHAMAN, {
 		i(25998, {	-- Gladiator's Linked Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(25999, {	-- Gladiator's Linked Spaulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(25997, {	-- Gladiator's Linked Armor
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(26000, {	-- Gladiator's Linked Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(26001, {	-- Gladiator's Linked Leggings
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		i(27471, {	-- Gladiator's Mail Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(27473, {	-- Gladiator's Mail Spaulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(27469, {	-- Gladiator's Mail Armor
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(27470, {	-- Gladiator's Mail Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(27472, {	-- Gladiator's Mail Leggings
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 
 		i(31400, {	-- Gladiator's Ringmail Helm
-			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+			["cost"] = { { "i", 29760, 1 } },	-- Helm of the Fallen Champion
 		}),
 		i(31407, {	-- Gladiator's Ringmail Spaulders
-			["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+			["cost"] = { { "i", 29763, 1 } },	-- Pauldrons of the Fallen Champion
 		}),
 		i(31396, {	-- Gladiator's Ringmail Armor
-			["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+			["cost"] = { { "i", 29754, 1 } },	-- Chestguard of the Fallen Champion
 		}),
 		i(31397, {	-- Gladiator's Ringmail Gauntlets
-			["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+			["cost"] = { { "i", 29757, 1 } },	-- Gloves of the Fallen Champion
 		}),
 		i(31406, {	-- Gladiator's Ringmail Leggings
-			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+			["cost"] = { { "i", 29766, 1 } },	-- Leggings of the Fallen Champion
 		}),
 	}),
 	cl(MAGE, {
 		i(25855, {	-- Gladiator's Silk Cowl
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(25854, {	-- Gladiator's Silk Amice
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(25856, {	-- Gladiator's Silk Raiment
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(25857, {	-- Gladiator's Silk Handguards
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(25858, {	-- Gladiator's Silk Trousers
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(WARLOCK, {
 		i(24553, {	-- Gladiator's Dreadweave Hood
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(24554, {	-- Gladiator's Dreadweave Mantle
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(24552, {	-- Gladiator's Dreadweave Robe
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(24556, {	-- Gladiator's Dreadweave Gloves
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(24555, {	-- Gladiator's Dreadweave Leggings
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 
 		i(30187, {	-- Gladiator's Felweave Cowl
-			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+			["cost"] = { { "i", 29759, 1 } },	-- Helm of the Fallen Hero
 		}),
 		i(30186, {	-- Gladiator's Felweave Amice
-			["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+			["cost"] = { { "i", 29762, 1 } },	-- Pauldrons of the Fallen Hero
 		}),
 		i(30200, {	-- Gladiator's Felweave Raiment
-			["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+			["cost"] = { { "i", 29755, 1 } },	-- Chestguard of the Fallen Hero
 		}),
 		i(30188, {	-- Gladiator's Felweave Handguards
-			["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+			["cost"] = { { "i", 29756, 1 } },	-- Gloves of the Fallen Hero
 		}),
 		i(30201, {	-- Gladiator's Felweave Trousers
-			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+			["cost"] = { { "i", 29765, 1 } },	-- Leggings of the Fallen Hero
 		}),
 	}),
 	cl(DRUID, {
 		i(28127, {	-- Gladiator's Dragonhide Helm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(28129, {	-- Gladiator's Dragonhide Spaulders
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(28130, {	-- Gladiator's Dragonhide Tunic
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(28126, {	-- Gladiator's Dragonhide Gloves
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(28128, {	-- Gladiator's Dragonhide Legguards
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		i(31376, {	-- Gladiator's Kodohide Helm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(31378, {	-- Gladiator's Kodohide Spaulders
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(31379, {	-- Gladiator's Kodohide Tunic
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(31375, {	-- Gladiator's Kodohide Gloves
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(31377, {	-- Gladiator's Kodohide Legguards
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 
 		i(28137, {	-- Gladiator's Wyrmhide Helm
-			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+			["cost"] = { { "i", 29761, 1 } },	-- Helm of the Fallen Defender
 		}),
 		i(28136, {	-- Gladiator's Wyrmhide Gloves
-			["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+			["cost"] = { { "i", 29758, 1 } },	-- Gloves of the Fallen Defender
 		}),
 		i(28139, {	-- Gladiator's Wyrmhide Spaulders
-			["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+			["cost"] = { { "i", 29764, 1 } },	-- Pauldrons of the Fallen Defender
 		}),
 		i(28140, {	-- Gladiator's Wyrmhide Tunic
-			["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+			["cost"] = { { "i", 29753, 1 } },	-- Chestguard of the Fallen Defender
 		}),
 		i(28138, {	-- Gladiator's Wyrmhide Legguards
-			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+			["cost"] = { { "i", 29767, 1 } },	-- Leggings of the Fallen Defender
 		}),
 	}),
 };
@@ -3007,283 +3009,283 @@ end
 local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 	cl(WARRIOR, {
 		i(30488, {	-- Merciless Gladiator's Plate Helm
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(30490, {	-- Merciless Gladiator's Plate Shoulders
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(30486, {	-- Merciless Gladiator's Plate Chestpiece
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(30487, {	-- Merciless Gladiator's Plate Gauntlets
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(30489, {	-- Merciless Gladiator's Plate Legguards
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 	}),
 	cl(PALADIN, {
 		i(31997, {	-- Merciless Gladiator's Lamellar Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(31993, {	-- Merciless Gladiator's Lamellar Gauntlets
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(31995, {	-- Merciless Gladiator's Lamellar Legguards
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 
 		i(32022, {	-- Merciless Gladiator's Ornamented Headcover
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32020, {	-- Merciless Gladiator's Ornamented Chestguard
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32021, {	-- Merciless Gladiator's Ornamented Gloves
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32023, {	-- Merciless Gladiator's Ornamented Legplates
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 
 		i(32041, {	-- Merciless Gladiator's Scaled Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32043, {	-- Merciless Gladiator's Scaled Shoulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32039, {	-- Merciless Gladiator's Scaled Chestpiece
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32040, {	-- Merciless Gladiator's Scaled Gauntlets
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32042, {	-- Merciless Gladiator's Scaled Legguards
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 	}),
 	cl(HUNTER, {
 		i(31962, {	-- Merciless Gladiator's Chain Helm
-			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30244, 1 } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31964, {	-- Merciless Gladiator's Chain Spaulders
-			["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30250, 1 } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31960, {	-- Merciless Gladiator's Chain Armor
-			["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30238, 1 } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31961, {	-- Merciless Gladiator's Chain Gauntlets
-			["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30241, 1 } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31963, {	-- Merciless Gladiator's Chain Leggings
-			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30247, 1 } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 	}),
 	cl(ROGUE, {
 		i(31999, {	-- Merciless Gladiator's Leather Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32001, {	-- Merciless Gladiator's Leather Spaulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32002, {	-- Merciless Gladiator's Leather Tunic
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(31998, {	-- Merciless Gladiator's Leather Gloves
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32000, {	-- Merciless Gladiator's Leather Legguards
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 	}),
 	cl(PRIEST, {
 		i(32016, {	-- Merciless Gladiator's Mooncloth Hood
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32018, {	-- Merciless Gladiator's Mooncloth Mantle
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32019, {	-- Merciless Gladiator's Mooncloth Robe
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 
 		i(32035, {	-- Merciless Gladiator's Satin Hood
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32037, {	-- Merciless Gladiator's Satin Mantle
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32038, {	-- Merciless Gladiator's Satin Robe
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32034, {	-- Merciless Gladiator's Satin Gloves
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32036, {	-- Merciless Gladiator's Satin Leggings
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 	}),
 	cl(SHAMAN, {
 		i(32006, {	-- Merciless Gladiator's Linked Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32008, {	-- Merciless Gladiator's Linked Spaulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32004, {	-- Merciless Gladiator's Linked Armor
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32005, {	-- Merciless Gladiator's Linked Gauntlets
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32007, {	-- Merciless Gladiator's Linked Leggings
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 
 		i(32011, {	-- Merciless Gladiator's Mail Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32013, {	-- Merciless Gladiator's Mail Spaulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32009, {	-- Merciless Gladiator's Mail Armor
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32010, {	-- Merciless Gladiator's Mail Gauntlets
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32012, {	-- Merciless Gladiator's Mail Leggings
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 
 		i(32031, {	-- Merciless Gladiator's Ringmail Helm
-			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30242, 1 } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
-			["cost"] = { { "i", 30248, 1, } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30248, 1 } },	-- 1x Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32029, {	-- Merciless Gladiator's Ringmail Armor
-			["cost"] = { { "i", 30236, 1, } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30236, 1 } },	-- 1x Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32030, {	-- Merciless Gladiator's Ringmail Gauntlets
-			["cost"] = { { "i", 30239, 1, } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30239, 1 } },	-- 1x Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 		i(32032, {	-- Merciless Gladiator's Ringmail Leggings
-			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+			["cost"] = { { "i", 30245, 1 } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
 	}),
 	cl(MAGE, {
 		i(32048, {	-- Merciless Gladiator's Silk Cowl
-			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30244, 1 } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(32047, {	-- Merciless Gladiator's Silk Amice
-			["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30250, 1 } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(32050, {	-- Merciless Gladiator's Silk Raiment
-			["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30238, 1 } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(32049, {	-- Merciless Gladiator's Silk Handguards
-			["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30241, 1 } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(32051, {	-- Merciless Gladiator's Silk Trousers
-			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30247, 1 } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 	}),
 	cl(WARLOCK, {
 		i(31974, {	-- Merciless Gladiator's Dreadweave Hood
-			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30244, 1 } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31976, {	-- Merciless Gladiator's Dreadweave Mantle
-			["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30250, 1 } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31977, {	-- Merciless Gladiator's Dreadweave Robe
-			["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30238, 1 } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
-			["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30241, 1 } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
-			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30247, 1 } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 
 		i(31980, {	-- Merciless Gladiator's Felweave Cowl
-			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30244, 1 } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31979, {	-- Merciless Gladiator's Felweave Amice
-			["cost"] = { { "i", 30250, 1, } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30250, 1 } },	-- 1x Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31982, {	-- Merciless Gladiator's Felweave Raiment
-			["cost"] = { { "i", 30238, 1, } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30238, 1 } },	-- 1x Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31981, {	-- Merciless Gladiator's Felweave Handguards
-			["cost"] = { { "i", 30241, 1, } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30241, 1 } },	-- 1x Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 		i(31983, {	-- Merciless Gladiator's Felweave Trousers
-			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+			["cost"] = { { "i", 30247, 1 } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
 	}),
 	cl(DRUID, {
 		i(31968, {	-- Merciless Gladiator's Dragonhide Helm
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31971, {	-- Merciless Gladiator's Dragonhide Spaulders
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31972, {	-- Merciless Gladiator's Dragonhide Tunic
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 
 		i(31988, {	-- Merciless Gladiator's Kodohide Helm
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31990, {	-- Merciless Gladiator's Kodohide Spaulders
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31991, {	-- Merciless Gladiator's Kodohide Tunic
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31987, {	-- Merciless Gladiator's Kodohide Gloves
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(31989, {	-- Merciless Gladiator's Kodohide Legguards
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 
 		i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
-			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30243, 1 } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32059, {	-- Merciless Gladiator's Wyrmhide Spaulders
-			["cost"] = { { "i", 30249, 1, } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30249, 1 } },	-- 1x Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32060, {	-- Merciless Gladiator's Wyrmhide Tunic
-			["cost"] = { { "i", 30237, 1, } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30237, 1 } },	-- 1x Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
-			["cost"] = { { "i", 30240, 1, } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30240, 1 } },	-- 1x Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 		i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
-			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+			["cost"] = { { "i", 30246, 1 } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
 	}),
 };

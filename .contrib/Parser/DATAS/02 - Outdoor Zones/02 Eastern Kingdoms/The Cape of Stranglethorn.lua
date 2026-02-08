@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER CATA
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
@@ -806,7 +807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2542,	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_6_2_0 },
-					["cost"] = {{ "i", 90561, 1 }},	-- Eternium Rose
+					["cost"] = { { "i", 90561, 1 } },	-- Eternium Rose
 					["requireSkill"] = ENGINEERING,
 					["isDaily"] = true,
 					["groups"] = {

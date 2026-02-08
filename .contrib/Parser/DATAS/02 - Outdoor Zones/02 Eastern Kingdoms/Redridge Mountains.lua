@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(REDRIDGE_MOUNTAINS, {
 		["lore"] =
@@ -976,9 +977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 381,	-- Dockmaster Baren
 					["coord"] = { 27.7, 47.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 1468, 8 },	-- Murloc Fin
-					},
+					["cost"] = { { "i", 1468, 8 } },	-- Murloc Fin
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {

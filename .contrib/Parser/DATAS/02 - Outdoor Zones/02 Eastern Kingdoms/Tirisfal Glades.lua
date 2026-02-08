@@ -1,11 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ZidormiTravelArtID1136 = [[~function(t, tooltipInfo)
 					if t.parent.artID == 1136 then
 						tinsert(tooltipInfo, { left = "You need to speak to Zidormi to travel back to the past in order to collect these." });
 					end
 				end]]
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(TIRISFAL_GLADES, {
 		["lore"] = "On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",
@@ -908,7 +910,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(77644,{	-- The Scarlet Key
 						["coord"] = { 48.0, 56.3, SCARLET_MONASTERY_ENTRANCE },
 						["timeline"] = { ADDED_10_1_7 },
-						["cost"] = { {"i", 208485, 1} },	-- The Scarlet Key
+						["cost"] = { { "i", 208485, 1 } },	-- The Scarlet Key
 					}),
 				}),
 				n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
@@ -2588,7 +2590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(205183, {	-- Fel-Powered Artifact
 							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
-							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -2818,7 +2820,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 405201 },	-- Shipwreck Cache
 					["coord"] = { 66.7, 24.6, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208007, 1 }},	-- Shipwreck Cache Key
+					["cost"] = { { "i", 208007, 1 } },	-- Shipwreck Cache Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2828,7 +2830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 52.9, 54.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208034, 1 }},	-- Tirisfal Treasure Map
+					["cost"] = { { "i", 208034, 1 } },	-- Tirisfal Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -2838,7 +2840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 404941 },	-- Relic Coffer
 					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 208005, 1 }},	-- Agamand Relic Coffer Key
+					["cost"] = { { "i", 208005, 1 } },	-- Agamand Relic Coffer Key
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
@@ -2899,7 +2901,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 208086, 1 }},	-- Forged Scarlet Memorandum
+							["cost"] = { { "i", 208086, 1 } },	-- Forged Scarlet Memorandum
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -2922,7 +2924,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["cost"] = { { "i", 205181, 1 } },	-- Unidentified Artifact
 							["classes"] = { WARLOCK },
 						})),
 					},
@@ -2994,7 +2996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["classes"] = { MAGE },
 				["groups"] = {
 					i(203749, {	-- Spell Notes: Enlightenment
-						["cost"] = {{ "i", 208183, 6 }},	-- Apothecary Notes
+						["cost"] = { { "i", 208183, 6 } },	-- Apothecary Notes
 						["classes"] = { MAGE },
 						["groups"] = {
 							recipe(415942),	-- Engrave Chest - Enlightenment

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THUNDER_BLUFF, {
 		["lore"] = "Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",
@@ -663,7 +664,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 206345 },	-- Fish Chunks
 								{ "i", 206344 },	-- Knife Set
 							},
-							["cost"] = {{ "i", 6291, 1 }},	-- Raw Brilliant Smallfish
+							["cost"] = { { "i", 6291, 1 } },	-- Raw Brilliant Smallfish
 							["coord"] = { 53.48, 9.37, THUNDER_BLUFF },
 						}),
 						recipe(674, {	-- Dual Wield
@@ -759,7 +760,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Etched Phial
 							["provider"] = { "i", 5868 },	-- Filled Etched Phial
 							["coord"] = { 60.0, 72.0, ASHENVALE },
-							["cost"] = {{ "i", 5867, 1 }},	-- Etched Phial
+							["cost"] = { { "i", 5867, 1 } },	-- Etched Phial
 						}),
 						-- #if BEFORE 4.0.3
 						i(5867, {	-- Etched Phial
@@ -788,9 +789,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 5869, 1 },	-- Cloven Hoof
-					},
+					["cost"] = { { "i", 5869, 1 } },	-- Cloven Hoof
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -843,7 +842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -926,7 +925,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["races"] = { TAUREN },
 							}),
 							i(243335, {	-- Tauren Bluff Rug (DECOR!)
-								["sourceQuest"] = 26397,	-- Walk With The Earth Mother
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(45584, {	-- Thunder Bluff Tabard

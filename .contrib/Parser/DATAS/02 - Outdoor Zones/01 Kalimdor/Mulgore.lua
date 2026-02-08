@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MULGORE, {
 		["lore"] = "A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",
@@ -979,7 +980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Broken Tools
 							["provider"] = { "i", 4703 },	-- Broken Tools
-							["cost"] = {{ "i", 4702, 1 }},	-- Prospector's Pick
+							["cost"] = { { "i", 4702, 1 } },	-- Prospector's Pick
 							["coord"] = { 34.0, 46.0, MULGORE },
 							["crs"] = {
 								2990,	-- Bael'dun Appraiser
@@ -2032,7 +2033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
 					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 36.0, 57.0, MULGORE },
-					["cost"] = {{ "i", 205961, 1 }},	-- Mulgore Bird Meat
+					["cost"] = { { "i", 205961, 1 } },	-- Mulgore Bird Meat
 					["groups"] = {
 						i(205979, {	-- Rune of Flanking
 							["classes"] = { HUNTER },
@@ -2106,7 +2107,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 206466 },	-- Prairie Crown
 					},
 					["coord"] = { 37.8, 49.6, MULGORE },
-					["cost"] = { { "i", 206469, 3 }},	-- Prairie Flower
+					["cost"] = { { "i", 206469, 3 } },	-- Prairie Flower
 					["groups"] = {
 						i(206963, {	-- Rune of Natural Potential
 							["classes"] = { DRUID },
@@ -2286,7 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
 					["description"] = "Use the musk and tame a prairie dog and then bring it to Takoda.",
 					["coord"] = { 46.2, 60.6, MULGORE },
-					["cost"] = {{ "i", 205995, 1 }},	-- Prairie Dog Musk
+					["cost"] = { { "i", 205995, 1 } },	-- Prairie Dog Musk
 					["crs"] = { 2620 },	-- Prairie Dog
 					["races"] = HORDE_ONLY,
 					["groups"] = {

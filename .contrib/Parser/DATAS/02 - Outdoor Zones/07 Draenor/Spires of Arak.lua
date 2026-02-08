@@ -549,6 +549,11 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 81770,	-- Reshad
 						["coord"] = { 48.5, 44.4, SPIRES_OF_ARAK },
+						["groups"] = {
+							i(258741, {	-- Writings of Reshad the Outcast (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
+						},
 					}),
 					q(37296, {	-- A Lack of Wasps
 						["sourceQuests"] = {
@@ -841,7 +846,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 232353 },	-- Overseer's Chair
 						["coord"] = { 35.5, 32.1, SPIRES_OF_ARAK },
 						["groups"] = {
-							i(258748, { ["timeline"] = { ADDED_12_0_0 } }),	-- "Rising Glory of Rukhmar" Statue (DECOR!)
+							i(258748, {	-- "Rising Glory of Rukhmar" Statue (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
 							i(114727),	-- Cragplate Legguards
 							i(114729),	-- Ravenchain Leggings
 							i(114728),	-- Shadowveil Leggings
@@ -1246,6 +1253,9 @@ root(ROOTS.Zones, {
 							i(118069),	-- Talon Guard Bloodsworn Ring
 							i(119065),	-- Talon Guard Bloodsworn Seal
 							i(118068),	-- Talon Guard Bloodsworn Signet
+							i(258749, {	-- Uncorrupted Eye of Terokk (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
 						},
 					}),
 					q(34923, {  -- The Bloodmane
@@ -1436,6 +1446,9 @@ root(ROOTS.Zones, {
 						["qg"] = 84262,	-- Reshad
 						["coord"] = { 46.5, 54.3, SPIRES_OF_ARAK },
 						["groups"] = {
+							i(258745, {	-- High Arakkoan Library Shelf (DECOR!)
+								["timeline"] = { ADDED_12_0_0 },
+							}),
 							i(114905),	-- Talon Guard Bow
 							i(114910),	-- Talon Guard Cudgel
 							i(114906),	-- Talon Guard Dagger
@@ -2149,24 +2162,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.6, 45.0, SPIRES_OF_ARAK },
 						["groups"] = {
 							i(258748, {	-- "Rising Glory of Rukhmar" Statue (DECOR!)
-								["sourceQuest"] = 35273,	-- Hot Seat
 								["timeline"] = { ADDED_12_0_0 },
 							}),
 							i(258741, {	-- Writings of Reshad the Outcast (DECOR!)
-								["sourceQuest"] = 35671,	-- A Gathering of Shadows
 								["timeline"] = { ADDED_12_0_0 },
 							}),
 							i(258749, {	-- Uncorrupted Eye of Terokk (DECOR!)
-								["sourceQuest"] = 35896,	-- The Avatar of Terokk
 								["timeline"] = { ADDED_12_0_0 },
 							}),
 							i(258745, {	-- High Arakkoan Library Shelf (DECOR!)
-								["sourceQuest"] = 35704,	-- When All Is Aligned
 								["timeline"] = { ADDED_12_0_0 },
 							}),
 							i(258740, {	-- Glorious Pendant of Rukhmar (DECOR!)
 								["timeline"] = { ADDED_12_0_0 },
-							--	achievement source: 9415 -- Secrets of Skettis
 							}),
 						},
 					}),

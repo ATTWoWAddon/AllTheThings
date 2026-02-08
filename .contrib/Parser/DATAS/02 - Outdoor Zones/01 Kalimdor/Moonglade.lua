@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOONGLADE, {
 		["lore"] = "Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",
@@ -151,7 +152,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
-							["cost"] = {{ "i", 15208, 1 }},	-- Cenarion Moondust
+							["cost"] = { { "i", 15208, 1 } },	-- Cenarion Moondust
 							["coord"] = { 43.0, 45.0, DARKSHORE },
 						}),
 						-- #if BEFORE 4.0.3
@@ -187,7 +188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 							["provider"] = { "n", 12138 },	-- Lunaclaw
-							["cost"] = {{ "i", 15710, 1 }},	-- Cenarion Lunardust
+							["cost"] = { { "i", 15710, 1 } },	-- Cenarion Lunardust
 							["coord"] = { 42.0, 60.0, THE_BARRENS },
 						}),
 						-- #if BEFORE 4.0.3
@@ -572,7 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
 							["provider"] = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
-							["cost"] = {{ "i", 15844, 1 }},	-- Empty Cliffspring Falls Sampler
+							["cost"] = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
 							["coord"] = { 54.9, 33.3, DARKSHORE },
 						}),
 					},
@@ -589,7 +590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
 							["provider"] = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
-							["cost"] = {{ "i", 15842, 1 }},	-- Empty Dreadmist Falls Sampler
+							["cost"] = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
 							["coord"] = { 47.0, 18.0, THE_BARRENS },
 						}),
 					},

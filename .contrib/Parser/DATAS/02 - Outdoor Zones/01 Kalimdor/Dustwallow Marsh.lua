@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ALCAZ_ISLAND = createHeader({
 	readable = "Alcaz Island",
 	icon = 132996,
@@ -31,6 +32,7 @@ ALCAZ_ISLAND = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DUSTWALLOW_MARSH, {
 		["lore"] = "A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",
@@ -703,7 +705,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Grimtotem Battle Plan
 							["provider"] = { "i", 33051 },	-- Grimtotem Battle Plan
-							["cost"] = {{ "i", 33050, 4 }},	-- Grimtotem Note
+							["cost"] = { { "i", 33050, 4 } },	-- Grimtotem Note
 							["cr"] = 23714,	-- Grimtotem Elder
 						}),
 					},
@@ -1279,7 +1281,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					-- #if BEFORE TBC
-					["cost"] = {{ "i", 3853, 1 }},	-- Moonsteel Broadsword
+					["cost"] = { { "i", 3853, 1 } },	-- Moonsteel Broadsword
 					-- #endif
 					["lvl"] = 30,
 					["groups"] = {
@@ -1299,7 +1301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_1_15_1 },
-					["cost"] = {{ "i", 217281, 1 }},	-- Moonsteel Broadsword
+					["cost"] = { { "i", 217281, 1 } },	-- Moonsteel Broadsword
 					["lvl"] = 30,
 					["groups"] = {
 						i(5016),	-- Artisan's Trousers
@@ -2382,11 +2384,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 3713, 3 }},	-- Soothing Spices
+					["cost"] = { { "i", 3713, 3 } },	-- Soothing Spices
 					["lvl"] = 30,
-					["groups"] = {
-						i(6807),	-- Frog Leg Stew
-					},
+					["groups"] = { i(6807) },	-- Frog Leg Stew
 				}),
 				-- #endif
 				{	-- Stinky's Escape
@@ -2925,7 +2925,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Grimtotem Battle Plan
 							["provider"] = { "i", 33051 },	-- Grimtotem Battle Plan
-							["cost"] = {{ "i", 33050, 4 }},	-- Grimtotem Note
+							["cost"] = { { "i", 33050, 4 } },	-- Grimtotem Note
 							["cr"] = 23714,	-- Grimtotem Elder
 						}),
 					},
@@ -3711,7 +3711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_2_3_0 },
 					["groups"] = {
 						i(256554, {	-- Definitely Real, Not At All Fake Head of the Broodmother (DECOR!)
-							["sourceAchievement"] = 4405,	-- More Dots! (25 player)
+							["sourceAchievement"] = 4405,	-- More Dots! (25 player)	// This one remains because Achievement awards i:244852 (Head of the Broodmother)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},

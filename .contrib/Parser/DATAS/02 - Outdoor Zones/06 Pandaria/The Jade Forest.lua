@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
@@ -1472,7 +1473,7 @@ root(ROOTS.Zones, {
 									{ "o", 209586 },	-- Hozen Cage
 								},
 								["coord"] = { 54.2, 82.6, THE_JADE_FOREST },
-								["cost"] = {{ "i", 74260, 6 }},	-- Bamboo Key (QI!)
+								["cost"] = { { "i", 74260, 6 } },	-- Bamboo Key (QI!)
 							}),
 							i(74260, {	-- Bamboo Key (QI!)
 								["coord"] = { 54.6, 81.4, THE_JADE_FOREST },
@@ -1782,7 +1783,7 @@ root(ROOTS.Zones, {
 									{ "n", 59454 },	-- Sha Remnant
 								},
 								["coord"] = { 48.8, 61.8, THE_JADE_FOREST },
-								["cost"] = {{ "i", 80074, 6 }},	-- Celestial Jade (QI!)
+								["cost"] = { { "i", 80074, 6 } },	-- Celestial Jade (QI!)
 							}),
 							o(210921, {	-- Celestial Jade
 								["coord"] = { 48.4, 60.6, THE_JADE_FOREST },
@@ -2969,7 +2970,9 @@ root(ROOTS.Zones, {
 							i(80691),	-- Deepwoods Helm
 							i(80692),	-- Fox Grove Helm
 							i(80689),	-- Glass Lake Headcover
-							i(264362, { ["timeline"] = { ADDED_11_2_7 } }),	-- Golden Pandaren Privacy Screen (DECOR!)
+							i(264362, {	-- Golden Pandaren Privacy Screen (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(80694),	-- Jade Tiger Helm
 							i(80688),	-- Jade Witch Helm
 							i(80690),	-- Silkwood Cowl
@@ -3522,7 +3525,9 @@ root(ROOTS.Zones, {
 								["coord"] = { 47.0, 46.0, THE_JADE_FOREST },
 							}),
 							--
-							i(247729, { ["timeline"] = { ADDED_11_2_7 } }),	-- Pandaren Stone Lamppost (DECOR!)
+							i(247729, {	-- Pandaren Stone Lamppost (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					q(31734, {	-- Welcome Wagons

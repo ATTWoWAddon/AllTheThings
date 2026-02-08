@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 	return applyclassicphase(PHASE_SIX, q(id, {	-- Craftsman's Writ - Quest
 		["provider"] = { "i", itemID },	-- Craftsman's Writ - Item
@@ -20,6 +21,7 @@ local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 		-- #endif
 	}));
 end
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(EASTERN_PLAGUELANDS, {
 		["lore"] =
@@ -1163,7 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 76290,	-- Omarion's Second Handbook
 								["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 								["groups"] = sharedData({
-									["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
+									["cost"] = { { "i", 12844, 3 } },	-- 3x Argent Dawn Valor Token
 									["timeline"] = { ADDED_10_1_5 },
 								}, {
 									i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
@@ -1269,11 +1271,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(76268, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Corruptor's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							["coord"] = { 75.8, 53.8, EASTERN_PLAGUELANDS },
-							["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+							["cost"] = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(76270, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Invader's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1284,11 +1284,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206374, 10 }},	-- 10x Corruptor's Scourgestone
+							["cost"] = { { "i", 206374, 10 } },	-- 10x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1299,11 +1297,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+							["cost"] = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 						q(77242, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Invader's Scourgestones
 							["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
@@ -1314,11 +1310,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
-							["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+							["cost"] = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
 							["repeatable"] = true,
-							["groups"] = {
-								i(12844),	-- Argent Dawn Valor Token
-							},
+							["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 						})),
 					}),
 					n(VENDORS, {
@@ -4661,7 +4655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 15448 },	-- Coagulated Rot
 								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = {{ "i", 15447, 7 }},	-- Living Rot
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
 							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 							["crs"] = {
 								8526,	-- Dark Caster
@@ -4685,7 +4679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 15448 },	-- Coagulated Rot
 								{ "i", 15454 },	-- Mortar and Pestle
 							},
-							["cost"] = {{ "i", 15447, 7 }},	-- Living Rot
+							["cost"] = { { "i", 15447, 7 } },	-- Living Rot
 							["crs"] = {
 								8526,	-- Dark Caster
 								8531,	-- Gibbering Ghoul
@@ -5584,7 +5578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
 								["timeline"] = { ADDED_1_15_3 },
-								["cost"] = {{ "i", 13180, 1 }},	-- Stratholme Holy Water
+								["cost"] = { { "i", 13180, 1 } },	-- Stratholme Holy Water
 							})),
 							-- EPIC CRAFTED ITEMS UPGRADES
 							applyclassicphase(SOD_PHASE_FOUR, i(227816, {	-- Argent Elite Boots

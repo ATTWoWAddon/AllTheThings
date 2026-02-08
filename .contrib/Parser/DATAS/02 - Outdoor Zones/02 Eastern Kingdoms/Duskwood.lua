@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUSKWOOD, {
 		["lore"] = "Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",
@@ -431,7 +432,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60930, {	-- Shield of Darkshire
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(245624, { ["timeline"] = { ADDED_11_2_7 } }),	-- Waning Wood Fence (DECOR!)
+						i(245624, {	-- Waning Wood Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(157, {	-- Deliver the Thread
@@ -889,7 +892,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60940, {	-- Felbane Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(256905, { ["timeline"] = { ADDED_11_2_7 } }),	-- Small Gilnean Table (DECOR!)
+						i(256905, {	-- Small Gilnean Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(60938, {	-- Yorgen's Boon
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2470,11 +2475,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(256905, { 	-- Small Gilnean Table (DECOR!)
-							["sourceQuest"] = 26754,	-- Morbent's Bane
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(245624, { 	-- Waning Wood Fence (DECOR!)
-							["sourceQuest"] = 26760,	-- Cry For The Moon
 							["timeline"] = { ADDED_11_2_7 }
 						}),
 					},

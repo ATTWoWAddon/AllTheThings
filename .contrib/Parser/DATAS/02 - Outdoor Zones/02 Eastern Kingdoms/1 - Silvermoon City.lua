@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local REDEMPTION = recipe(7328);	-- Redemption
 local SUMMON_VOIDWALKER = recipe(697);	-- Summon Voidwalker
 local ANDRA_ZYANDREL_GROUPS, QUELIS_GROUPS = {}, {};
@@ -15,6 +16,7 @@ local LYNA_GROUPS = {
 		["isLimited"] = true,
 	}),
 };
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",

@@ -146,7 +146,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", APEXIS_CRYSTAL, 500 }},
+						["cost"] = { { "c", APEXIS_CRYSTAL, 500 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -160,7 +160,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", HONOR, 1000 }},
+						["cost"] = { { "c", HONOR, 1000 } },
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -173,7 +173,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+						["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -200,7 +200,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", APEXIS_CRYSTAL, 1000 }},
+						["cost"] = { { "c", APEXIS_CRYSTAL, 1000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", HONOR, 500 }},
+						["cost"] = { { "c", HONOR, 500 } },
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -241,7 +241,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", HONOR, 2000 }},	-- 2000x Honor
+						["cost"] = { { "c", HONOR, 2000 } },	-- 2000x Honor
 						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -255,7 +255,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", APEXIS_CRYSTAL, 2000 }},
+						["cost"] = { { "c", APEXIS_CRYSTAL, 2000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -283,7 +283,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", GARRISON_RESOURCES, 2000 }},
+						["cost"] = { { "c", GARRISON_RESOURCES, 2000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -297,7 +297,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
-						["cost"] = {{ "c", GARRISON_RESOURCES, 4000 }},
+						["cost"] = { { "c", GARRISON_RESOURCES, 4000 } },
 						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
@@ -1002,7 +1002,7 @@ root(ROOTS.Zones, {
 								}, {	-- Revered
 								}, {	-- Exalted
 									moh(100, i(116776, {	-- Pale Thorngrazer (MOUNT!)
-										["cost"] = {{ "g", 50000000 }},		-- 5,000g
+										["cost"] = { { "g", 50000000 } },		-- 5,000g
 									})),
 									i(115517),	-- Wrynn's Vanguard Tabard
 								},
@@ -1379,28 +1379,28 @@ root(ROOTS.Zones, {
 							["coord"] = { 48.6, 33.5, STORMSHIELD },
 							["groups"] = {
 								i(122606, {	-- Explorer's Notebook
-									["cost"] = {{ "i", 87399, 5 }},	-- 5x  Restored Artifact
+									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
 								}),
 								i(117389, {	-- Draenor Archaeologist's Lodestone
-									["cost"] = {{ "i", 87399, 1 }},	-- 1x  Restored Artifact
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
 								i(117390, {	-- Draenor Archaeologist's Map
-									["cost"] = {{ "i", 87399, 1 }},	-- 1x  Restored Artifact
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
 								i(118729, {	-- Gorgrond Treasure Map (CI!)
-									["cost"] = {{ "g", 1000000 }},	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118732, {	-- Nagrand Treasure Map (CI!)
-									["cost"] = {{ "g", 1000000 }},	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118728, {	-- Shadowmoon Valley Treasure Map (CI!)
-									["cost"] = {{ "g", 1000000 }},	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118731, {	-- Spires of Arak Treasure Map (CI!)
-									["cost"] = {{ "g", 1000000 }},	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 								i(118730, {	-- Talador Treasure Map (CI!)
-									["cost"] = {{ "g", 1000000 }},	-- 100g
+									["cost"] = { { "g", 1000000 } },	-- 100g
 								}),
 							},
 						}),
@@ -1409,7 +1409,7 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								moh(100, i(116776, {	-- Pale Thorngrazer (MOUNT!)
-									["cost"] = {{ "g", 50000000 }},	-- 5,000g
+									["cost"] = { { "g", 50000000 } },	-- 5,000g
 								})),
 								elitepvp(moh(10, i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 									["timeline"] = { ADDED_6_0_2 },
@@ -1928,61 +1928,61 @@ root(ROOTS.Zones, {
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
 								}),
 								i(118605, {	-- Technique: Crystalfire Spellstaff (RECIPE!)
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118606, {	-- Technique: Darkmoon Card of Draenor (RECIPE!)
-									["cost"] = {{ "i", 119297, 5 }},	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
 								i(120265, {	-- Technique: Ensorcelled Tarot (RECIPE!)
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = {{ "i", 119297, 5 }},	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,
 								}),
 								i(118607, {	-- Technique: Etched-Blade Warstaff (RECIPE!)
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(257025, {	-- Technique: Frostwall Elevated Brazier (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(202236, {	-- Technique: Impressive Weapon Crystal (RECIPE!)
 									["timeline"] = { ADDED_10_0_5 },
-									["cost"] = {{ "i", 119297, 5 }},	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
 								i(257028, {	-- Technique: Orcish Banded Barrel (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(262809, {	-- Technique: Orcish Fence (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(262810, {	-- Technique: Orcish Fencepost (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(202237, {	-- Technique: Remarkable Weapon Crystal (RECIPE!)
 									["timeline"] = { ADDED_10_0_5 },
-									["cost"] = {{ "i", 119297, 5 }},	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
 								i(118613, {	-- Technique: Shadowtome (RECIPE!)
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118614, {	-- Technique: Volatile Crystal (RECIPE!)
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118615, {	-- Technique: Warmaster's Firestick (RECIPE!)
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118610, {	-- Technique: Weapon Crystal (RECIPE!)
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["timeline"] = { ADDED_6_0_2, REMOVED_10_0_5 },
-									["cost"] = {{ "i", 119297, 5 }},	-- 5x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,
 								}),
 								i(257027, {	-- Technique: Wooden Shipping Crate (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "i", 119297, 1 }},	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal (RECIPE!)
 								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot (RECIPE!)
@@ -1994,64 +1994,64 @@ root(ROOTS.Zones, {
 							["coord"] = { 29.7, 52.9, STORMSHIELD },
 							["groups"] = {
 								i(111929, {	-- Alchemy Lab, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111968, {	-- Barn, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111970, {	-- Barracks, Level 2
-									["cost"] = {{ "i", 116395, 1 }},	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111966, {	-- Dwarven Bunker, Level 2
-									["cost"] = {{ "i", 116395, 1 }},	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111972, {	-- Enchanter's Study, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(109256, {	-- Engineering Works, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111974, {	-- Gem Boutique, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111980, {	-- Gladiator's Sanctum, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111984, {	-- Gnomish Gearworks, Level 2
-									["cost"] = {{ "i", 116395, 1 }},	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(109254, {	-- Lumber Mill, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(107694, {	-- Lunarfall Inn, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(109062, {	-- Mage Tower, Level 2
-									["cost"] = {{ "i", 116395, 1 }},	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111976, {	-- Salvage Yard, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111978, {	-- Scribe's Quarters, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(112002, {	-- Stables, Level 2
-									["cost"] = {{ "i", 116395, 1 }},	-- Comprehensive Outpost Construction Guide
+									["cost"] = { { "i", 116395, 1 } },	-- Comprehensive Outpost Construction Guide
 								}),
 								i(111982, {	-- Storehouse, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111992, {	-- Tailoring Emporium, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111990, {	-- The Forge, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111988, {	-- The Tannery, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 								i(111986, {	-- Trading Post, Level 2
-									["cost"] = {{ "i", 116394, 1 }},	-- Outpost Building Assembly Notes
+									["cost"] = { { "i", 116394, 1 } },	-- Outpost Building Assembly Notes
 								}),
 							},
 						}),
@@ -2253,7 +2253,7 @@ root(ROOTS.Zones, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(118666, {	-- Arakkoa Elixir
-										["cost"] = {{ "c", APEXIS_CRYSTAL, 1 }},
+										["cost"] = { { "c", APEXIS_CRYSTAL, 1 } },
 									}),
 									i(258747, {	-- High Arakkoan Shelf (DECOR!)
 										["timeline"] = { ADDED_12_0_0 },
@@ -2483,53 +2483,45 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_11_2_7 }
 							},{
 								i(251653, {	-- Draenethyst Lamppost (DECOR!)
-									["sourceQuest"] = 35685,	-- Socrethar's Demise
 									["cost"] = {
 										{ "c", GARRISON_RESOURCES, 1000 },
 										{ "g", 5000000 },	-- 500g
 									},
 								}),
 								i(251548, {	-- Draenic Fence (DECOR!)
-									["sourceQuest"] = 34792,	-- The Traitor's True Name
 									["cost"] = {
 										{ "c", APEXIS_CRYSTAL, 500 },
 										{ "g", 3000000 },	-- 300g
 									},
 								}),
 								i(251330, {	-- Draenic Fencepost (DECOR!)
-									["sourceQuest"] = 34792,	-- The Traitor's True Name
 									["cost"] = {
 										{ "c", APEXIS_CRYSTAL, 300 },
 										{ "g", 1000000 },	-- 100g
 									},
 								}),
 								i(251640, {	-- Draenic Forge (DECOR!)
-									["sourceQuest"] = 34099,	-- The Battle for Shattrath
 									["cost"] = {
 										{ "c", APEXIS_CRYSTAL, 1000 },
 										{ "g", 5000000 },	-- 500g
 									},
 								}),
 								i(251477, {	-- Draenic Wooden Table (DECOR!)
-									["sourceQuest"] = 36169,	-- The Trial of Champions
 									["cost"] = {
 										{ "c", GARRISON_RESOURCES, 1000 },
 										{ "g", 5000000 },	-- 500g
 									},
 								}),
 								i(251549, {	-- Emblem of the Naaru's Blessing (DECOR!)
-									["sourceQuest"] = 37322,	-- The Prophet's Final Message
-									["cost"] = {{ "c", GARRISON_RESOURCES, 2000 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 2000 } },
 								}),
 								i(245425, {	-- Hanging Draenethyst Light (DECOR!)
-									["sourceQuest"] = 35396,	-- The Dark Heart of Oshu'gun
 									["cost"] = {
 										{ "c", APEXIS_CRYSTAL, 500 },
 										{ "g", 3000000 },	-- 300g
 									},
 								}),
 								i(251654, {	-- Large Karabor Fountain (DECOR!)
-									["sourceQuest"] = 33256,	-- The Defense of Karabor
 									["cost"] = {
 										{ "c", APEXIS_CRYSTAL, 2000 },
 										{ "g", 8000000 },	-- 800g
@@ -2544,26 +2536,26 @@ root(ROOTS.Zones, {
 								}, {	-- Friendly
 									i(251483, {	-- Draenethyst Lantern (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 250 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 									}),
 									i(118665, {	-- Exarch Elixir
-										["cost"] = {{ "c", APEXIS_CRYSTAL, 1 }},
+										["cost"] = { { "c", APEXIS_CRYSTAL, 1 } },
 									}),
 									i(245423, {	-- Spherical Draenic Topiary (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 250 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 									}),
 								}, {	-- Honored
 									i(251481, {	-- Elodor Armory Rack (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 									}),
 									i(115472, {	-- Permanent Time Bubble (TOY!)
 										["cost"] = 10000000,	-- 1,000g
 									}),
 									i(251493, {	-- Small Karabor Fountain (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 									}),
 									i(118680, {	-- Tranquility of the Exarchs
 										["cost"] = 5000000,	-- 500g
@@ -2571,7 +2563,7 @@ root(ROOTS.Zones, {
 								}, {	-- Revered
 									i(251484, {	-- "Dawning Hope" Mosaic (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(119162, {	-- Contract: Cleric Maluuf
 										["cost"] = 50000000,	-- 5,000g
@@ -2585,7 +2577,7 @@ root(ROOTS.Zones, {
 									}),
 									i(251476, {	-- Embroidered Embaari Tent (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(118663, {	-- Relic of Karabor
 										["cost"] = 25000000,	-- 2,500g
@@ -2600,11 +2592,11 @@ root(ROOTS.Zones, {
 									}),
 									i(251551, {	-- Grand Draenethyst Lamp (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1500 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
 									}),
 									i(251479, {	-- Shadowmoon Greenhouse (DECOR!)
 										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1500 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
 									}),
 								},
 							}),

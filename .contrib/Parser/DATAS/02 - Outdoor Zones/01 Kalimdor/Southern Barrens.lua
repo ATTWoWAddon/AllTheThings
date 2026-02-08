@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --         Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER 4.0.3
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(SOUTHERN_BARRENS, {
@@ -339,7 +340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -349,7 +350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -520,7 +521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 1 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 1 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -1140,7 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ishamuhale's Fang
 							["provider"] = { "i", 5101 },	-- Ishamuhale's Fang
 							["coord"] = { 59.8, 30.6, THE_BARRENS },
-							["cost"] = {{ "i", 10338, 1 }},	-- Fresh Zhevra Carcass
+							["cost"] = { { "i", 10338, 1 } },	-- Fresh Zhevra Carcass
 							["cr"] = 3257,	-- Ishamuhale
 						}),
 						-- #if BEFORE 4.0.3
@@ -1552,7 +1553,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -1681,7 +1682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -1908,7 +1909,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 10 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 10 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -2308,7 +2309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,

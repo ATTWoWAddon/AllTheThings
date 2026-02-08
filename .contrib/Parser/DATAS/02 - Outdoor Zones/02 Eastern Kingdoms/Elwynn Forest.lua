@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ELWYNN_FOREST, {
 		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
@@ -2639,7 +2640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(16, {	-- Give Gerard a Drink
 					["qg"] = 255,	-- Gerard Tiller
 					["coord"] = { 43.0, 85.6, ELWYNN_FOREST },
-					["cost"] = { { "i", 159, 1 }, },	-- Refreshing Spring Water
+					["cost"] = { { "i", 159, 1 } },	-- Refreshing Spring Water
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -3224,7 +3225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(205183, {	-- Fel-Powered Artifact
 							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
-							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -3501,7 +3502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 80.3, 79.1, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = {{ "i", 203750, 1 }},	-- Elwynn Treasure Map
+					["cost"] = { { "i", 203750, 1 } },	-- Elwynn Treasure Map
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -3627,7 +3628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(203990, {	-- Rune of Mutilation
-							["cost"] = {{ "i", 203723, 1 }},	-- Cutty's Note
+							["cost"] = { { "i", 203723, 1 } },	-- Cutty's Note
 							["classes"] = { ROGUE },
 							["groups"] = {
 								recipe(400094),	-- Engrave Gloves - Mutilate
@@ -3711,7 +3712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["cost"] = { { "i", 205181, 1 } },	-- Unidentified Artifact
 							["classes"] = { WARLOCK },
 						})),
 					},
@@ -3756,7 +3757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(203749, {	-- Spell Notes: Enlightenment
-						["cost"] = {{ "i", 204864, 6 }},	-- Azora Apprentice Notes
+						["cost"] = { { "i", 204864, 6 } },	-- Azora Apprentice Notes
 						["classes"] = { MAGE },
 						["groups"] = {
 							recipe(415942),	-- Engrave Chest - Enlightenment

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(HILLSBRAD_FOOTHILLS, {
 		-- #if AFTER CATA
@@ -3162,7 +3163,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211951, {	-- Koartul
 					["coord"] = { 61.0, 32.8, HILLSBRAD_FOOTHILLS },
-					["cost"] = {{ "i", 210410, 1 }},	-- Freshwater Snapper Bait
+					["cost"] = { { "i", 210410, 1 } },	-- Freshwater Snapper Bait
 					["groups"] = {
 						i(210596, {	-- Rune of Cobra Strikes
 							["classes"] = { HUNTER },
@@ -3654,7 +3655,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, o(414658, {	-- Rubble
 					["coord"] = { 79.7, 40.9, HILLSBRAD_FOOTHILLS },
-					["cost"] = {{ "i", 211487, 1 }},	-- Demolition Explosives
+					["cost"] = { { "i", 211487, 1 } },	-- Demolition Explosives
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(211476, {	-- Rune of Fires Wake
 							["provider"] = { "o", 414713 },	-- Storage Locker

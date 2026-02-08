@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- Crieve NOTE: I have my eyes on this file. I don't like how disconnected everything is. Sorta feels like the subzones are pointless. and only make it so that parts and pieces are split up unnecessarily. When Cata Classic comes out I'll think about rearranging things.
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(VASHJIR, {
 		["lore"] = "Vashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.",
@@ -3096,11 +3097,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(SPECIAL, {
 						o(373438, {	-- Coilclutch Vine
 							["coord"] = { 34.7, 75.0, VASHJIR_SHIMMERING_EXPANSE },
-							["cost"] = {{"i",187662,1}},	-- Strange Goop
+							["cost"] = { { "i", 187662, 1 } },	-- Strange Goop
 							["timeline"] = { ADDED_9_2_5 },
-							["groups"] = {
-								i(187916),	-- Coilclutch Vine
-							},
+							["groups"] = { i(187916) },	-- Coilclutch Vine
 						}),
 					}),
 					-- #endif

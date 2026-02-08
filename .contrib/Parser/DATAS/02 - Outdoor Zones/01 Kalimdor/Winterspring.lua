@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -10,6 +11,7 @@ ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
+
 -- #if BEFORE CATA
 -- Crieve NOTE: This is done by completing the 'They Grow Up So Fast' quest for Cata+.
 local OnTooltipForWintersaberTrainers = [[function(t, tooltipInfo)
@@ -37,6 +39,7 @@ local OnTooltipForWintersaberTrainers = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(WINTERSPRING, {
 		["lore"] = "Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",
@@ -570,7 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4804, 3 }},	-- Chillwind E'ko
+					["cost"] = { { "i", 4804, 3 } },	-- Chillwind E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -879,7 +882,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12436, 3 }},	-- Frostmaul E'ko
+					["cost"] = { { "i", 12436, 3 } },	-- Frostmaul E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -893,7 +896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12430, 3 }},	-- Frostsaber E'ko
+					["cost"] = { { "i", 12430, 3 } },	-- Frostsaber E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1056,7 +1059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12435, 3 }},	-- Ice Thistle E'ko
+					["cost"] = { { "i", 12435, 3 } },	-- Ice Thistle E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1381,7 +1384,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12432, 3 }},	-- Shardtooth E'ko
+					["cost"] = { { "i", 12432, 3 } },	-- Shardtooth E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1432,7 +1435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 177684 },	-- Stone of Shy-Rotam
 							},
 							["coord"] = { 49.8, 9.8, WINTERSPRING },
-							["cost"] = {{ "i", 12733, 1 }},	-- Sacred Frostsaber Meat
+							["cost"] = { { "i", 12733, 1 } },	-- Sacred Frostsaber Meat
 						}),
 						-- #if BEFORE 4.0.3
 						i(12733, {	-- Sacred Frostsaber Meat
@@ -2026,7 +2029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12433, 3 }},	-- Wildkin E'ko
+					["cost"] = { { "i", 12433, 3 } },	-- Wildkin E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2040,7 +2043,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coord"] = { 61.8, 38.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 12431, 3 }},	-- Winterfall E'ko
+					["cost"] = { { "i", 12431, 3 } },	-- Winterfall E'ko
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {

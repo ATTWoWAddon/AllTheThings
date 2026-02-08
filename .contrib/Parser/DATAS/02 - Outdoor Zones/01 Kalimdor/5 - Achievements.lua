@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ANALYNN = {
 	["crs"] = { 66136 },
 	["coord"] = { 20.2, 29.6, ASHENVALE },
@@ -49,6 +50,7 @@ local ZONYA_THE_SADIST = {
 	["crs"] = { 66137 },
 	["coord"] = { 20.2, 29.5, ASHENVALE },
 };
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(ACHIEVEMENTS, {
 		header(HEADERS.Achievement, 61051, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Kalimdor

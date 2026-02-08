@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE 4.0.3
 ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -12,6 +13,7 @@ ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THE_BARRENS, {
 		["lore"] = "The Barrens is a vast, arid savannah. Dust devils swirl across the dry land and canyons cut the earth. Despite its inhospitable nature, numerous trade routes, including the major Gold Road, cross the Barrens. Centaur raiding parties are a constant threat, as are lions and thunder lizards. The orcs and tauren drove the quilboar tribes out of their lands, and the creatures now lair in the Barrens.\n\nIronforge dwarves have discovered a great Titan ruin in this region, and an enormous dig site and settlement has sprung up around it. Called Bael Modan, this fortified city is a common stop for the caravans that trundle across the dusty landscape. The goblin city of Ratchet, full of clanging coins, shining lights and debauchery, sprawls on the Barrens' eastern coast.",
@@ -152,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -162,7 +164,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -270,7 +272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 1 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 1 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -806,7 +808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5770, 1 }},	-- Robes of Arcana
+					["cost"] = { { "i", 5770, 1 } },	-- Robes of Arcana
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
@@ -815,7 +817,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 3577, 1 }},	-- Gold Bar
+					["cost"] = { { "i", 3577, 1 } },	-- Gold Bar
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
@@ -1342,7 +1344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3448,	-- Tonga Runetotem
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 2449, 5 }},	-- Earthroot
+					["cost"] = { { "i", 2449, 5 } },	-- Earthroot
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -1595,7 +1597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ishamuhale's Fang
 							["provider"] = { "i", 5101 },	-- Ishamuhale's Fang
 							["coord"] = { 59.8, 30.6, THE_BARRENS },
-							["cost"] = {{ "i", 10338, 1 }},	-- Fresh Zhevra Carcass
+							["cost"] = { { "i", 10338, 1 } },	-- Fresh Zhevra Carcass
 							["cr"] = 3257,	-- Ishamuhale
 						}),
 						-- #if BEFORE 4.0.3
@@ -1863,7 +1865,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",   8073 },	-- Cache of Zanzil's Altered Mixture
 								{ "o", 129127 },	-- Gallywix's Lockbox
 							},
-							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
+							["cost"] = { { "i", 8072, 1 } },	-- Silixiz's Tower Key
 						}),
 						i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { REMOVED_1_3_0 },
@@ -2150,7 +2152,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -2276,7 +2278,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -2718,7 +2720,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 10 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 10 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -2921,33 +2923,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Visit Red Raptor Nest
 							["provider"] = { "o", 6906 },	-- Red Raptor Nest
 							["coord"] = { 49.67, 75.14, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(2, {	-- Visit Yellow Raptor Nest
 							["provider"] = { "o", 6908 },	-- Yellow Raptor Nest
 							["coord"] = { 48.02, 76.13, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(3, {	-- Visit Blue Raptor Nest
 							["provider"] = { "o", 6907 },	-- Blue Raptor Nest
 							["coord"] = { 48.57, 74.82, NORTHERN_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						-- #else
 						objective(1, {	-- Visit Blue Raptor Nest
 							["provider"] = { "o", 6907 },	-- Blue Raptor Nest
 							["coord"] = { 52.59, 46.10, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(2, {	-- Visit Yellow Raptor Nest
 							["provider"] = { "o", 6908 },	-- Yellow Raptor Nest
 							["coord"] = { 52.46, 46.57, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						objective(3, {	-- Visit Red Raptor Nest
 							["provider"] = { "o", 6906 },	-- Red Raptor Nest
 							["coord"] = { 52.03, 46.48, THE_BARRENS },
-							["cost"] = {{ "i", 5165, 1 }},	-- Sunscale Feather
+							["cost"] = { { "i", 5165, 1 } },	-- Sunscale Feather
 						}),
 						-- #endif
 						i(5165, {	-- Sunscale Feather
@@ -3740,7 +3742,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
+					["cost"] = { { "i", 5075, 4 } },	-- Blood Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 14,
@@ -3856,7 +3858,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209797, {	-- Bruuz
 					["coord"] = { 64.8, 39.8, THE_BARRENS },
-					["cost"] = {{ "i", 208773, 1 }},	-- Fishing Harpoon
+					["cost"] = { { "i", 208773, 1 } },	-- Fishing Harpoon
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 					["groups"] = {
@@ -4401,7 +4403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 52.8, 41.8, THE_BARRENS },
 						{ 44.3, 37.7, THE_BARRENS },
 					},
-					["cost"] = {{ "i", 5020, 1 }},	-- Kolkar Booty Key
+					["cost"] = { { "i", 5020, 1 } },	-- Kolkar Booty Key
 					-- #if SEASON_OF_DISCOVERY
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol

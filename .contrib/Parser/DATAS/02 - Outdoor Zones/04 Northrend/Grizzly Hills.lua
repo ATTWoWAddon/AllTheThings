@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(GRIZZLY_HILLS, {
@@ -493,7 +494,9 @@ root(ROOTS.Zones, {
 							i(38745),	-- Fetid Loop
 							i(38747),	-- Mildly Tarnished Ring
 							i(38746),	-- Rancid Signet
-							i(248622, {	["timeline"] = { ADDED_11_2_7 } }),	-- Wooden Outhouse (DECOR!)
+							i(248622, {		-- Wooden Outhouse (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 						},
 					}),
 					pvp(q(12314, {	-- Down With Captain Zorna!
@@ -2163,7 +2166,6 @@ root(ROOTS.Zones, {
 							["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 							["groups"] = {
 								i(248622, {		-- Wooden Outhouse (DECOR!)
-									["sourceQuest"] = 12227,	-- Doing Your Duty
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 							},

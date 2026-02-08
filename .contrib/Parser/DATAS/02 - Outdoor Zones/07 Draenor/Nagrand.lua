@@ -205,7 +205,7 @@ root(ROOTS.Zones, {
 								q(37125, {	-- A Rare Find
 									["qg"] = 87393,	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["cost"] = {{ "i", 118100, 1 }},	-- Highmaul Relic
+									["cost"] = { { "i", 118100, 1 } },	-- Highmaul Relic
 									["repeatable"] = true,
 								}),
 								q(37210, {	-- Aogexon's Fang
@@ -243,7 +243,7 @@ root(ROOTS.Zones, {
 								q(35147, {	-- Fragments of the Past
 									["qg"] = 87393,	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["cost"] = {{ "i", 118099, 20 }},	-- Gorian Artifact Fragment
+									["cost"] = { { "i", 118099, 20 } },	-- Gorian Artifact Fragment
 									["isDaily"] = true,
 								}),
 								q(37223, {	-- Gagrog's Skull
@@ -1377,7 +1377,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.0, 32.7, 553 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(245425, { ["timeline"] = { ADDED_11_2_7 } }),	-- Hanging Draenethyst Light (DECOR!)
+							i(245425, {	-- Hanging Draenethyst Light (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
 							i(118125),	-- Void-Warped Oshu'gun Greatmaul

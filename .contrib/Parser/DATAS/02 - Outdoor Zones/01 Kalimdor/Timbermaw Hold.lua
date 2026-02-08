@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 TIMBERMAW_HOLD = createHeader({
 	readable = "Timbermaw Hold",
 	icon = 236696,
@@ -11,6 +12,7 @@ TIMBERMAW_HOLD = createHeader({
 		en = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 	},
 });
+
 ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -72,6 +74,7 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 		-- #endif
 	end
 end]];
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
 		["zone-text-areaID"] = 1769,
@@ -170,7 +173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -183,7 +186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -193,7 +196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_1_15_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				})),
@@ -210,7 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						REMOVED_4_0_3,
 						-- #endif
 					},
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -233,7 +236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14047, 30 }},	-- Runecloth
+					["cost"] = { { "i", 14047, 30 } },	-- Runecloth
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						i(15822),	-- Shadowskin Spaulders
@@ -250,7 +253,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14342, 2 }},	-- Mooncloth
+					["cost"] = { { "i", 14342, 2 } },	-- Mooncloth
 					["requireSkill"] = TAILORING,
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
@@ -389,7 +392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11556,	-- Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
+					["cost"] = { { "i", 21383, 10 } },	-- Winterfall Spirit Beads
 					["groups"] = {
 						i(21318),	-- Earth Warder's Gloves
 						i(21319),	-- Gloves of the Pathfinder

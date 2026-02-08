@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(FELWOOD, {
 		["lore"] = "Once a wooded paradise, Felwood bears a ten-thousand-year-old curse. The trees, land and creatures are twisted and evil, violent and wild. Cursed ancients and furbolg maul any who come close, and satyrs hold depraved court near tainted moonwells. The animals within are mad and brutal and have no fear of humanoids. The undead and demons that survived the Third War fled here as well, and hide in the deep tangles. Felwood is a chaos of battling creatures, and blood soaks the ground. The infamous Shadow Council, a group of orc warlocks loyal to the Burning Legion, hides somewhere within.\n\nAlliance heroes, particularly druids, make forays into the cursed wood in attempts to destroy some of the larger menaces, root out the Shadow Council, and perhaps, some day, restore the land to its former legacy.",
@@ -551,9 +552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11952),	-- Night Dragon's Breath
-					},
+					["groups"] = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4447, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 173324 },	-- Corrupted Night Dragon
@@ -562,9 +561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11952),	-- Night Dragon's Breath
-					},
+					["groups"] = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4448, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 174608 },	-- Corrupted Night Dragon
@@ -573,9 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11952),	-- Night Dragon's Breath
-					},
+					["groups"] = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4462, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 174684 },	-- Corrupted Night Dragon
@@ -584,9 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11952),	-- Night Dragon's Breath
-					},
+					["groups"] = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4506, {	-- Corrupted Sabers
 					["sourceQuest"] = 4504,	-- Well of Corruption
@@ -693,9 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4443, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 173284 },	-- Corrupted Whipper Root
@@ -704,9 +695,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4444, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174605 },	-- Corrupted Whipper Root
@@ -715,9 +704,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4445, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174606 },	-- Corrupted Whipper Root
@@ -726,9 +713,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4446, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174607 },	-- Corrupted Whipper Root
@@ -737,9 +722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4461, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 174686 },	-- Corrupted Whipper Root
@@ -748,9 +731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11951),	-- Whipper Root Tuber
-					},
+					["groups"] = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(996, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174600 },	-- Corrupted Windblossom
@@ -759,9 +740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(998, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174599 },	-- Corrupted Windblossom
@@ -770,9 +749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(1514, {	-- Corrupted Windblossom
 					["provider"] = { "o", 173327 },	-- Corrupted Windblossom
@@ -781,9 +758,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4115, {	-- Corrupted Windblossom
 					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
@@ -792,9 +767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4221, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
@@ -803,9 +776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4222, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174603 },	-- Corrupted Windblossom
@@ -814,9 +785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4343, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174602 },	-- Corrupted Windblossom
@@ -825,9 +794,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4403, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174601 },	-- Corrupted Windblossom
@@ -836,9 +803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4466, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174708 },	-- Corrupted Windblossom
@@ -847,9 +812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4467, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174709 },	-- Corrupted Windblossom
@@ -858,9 +821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
 					["repeatable"] = true,
 					["lvl"] = 48,
-					["groups"] = {
-						i(11950),	-- Windblossom Berries
-					},
+					["groups"] = { i(11950) },	-- Windblossom Berries
 				}),
 				q(28116, {	-- Crying Violet
 					["sourceQuest"] = 28152,	-- Jaedenar Awaits
@@ -1071,7 +1032,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 80.4, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
 				q(28342, {	-- Fel To Pieces
@@ -1702,7 +1663,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
+					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1717,7 +1678,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
+					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1733,7 +1694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
+					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1748,7 +1709,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11174, 1 }},	-- Lesser Nether Essence
+					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1764,7 +1725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
+					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1779,7 +1740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
+					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1795,7 +1756,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
+					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1810,7 +1771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
+					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1826,7 +1787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
+					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1840,7 +1801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
+					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1855,7 +1816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
+					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -1869,7 +1830,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11515, 6 }},	-- Corrupted Soul Shard
+					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 48,
@@ -1884,7 +1845,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
+					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1899,7 +1860,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
+					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1915,7 +1876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
+					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1930,7 +1891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11513, 4 }},	-- Tainted Vitriol
+					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
 					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1946,7 +1907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
+					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1961,7 +1922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9528,	-- Arathandris Silversky
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
+					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1977,7 +1938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
+					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1992,7 +1953,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["coord"] = { 46.8, 83.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11512, 5 }},	-- Patch of Tainted Skin
+					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -2367,7 +2328,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/9 Irontree Shredder slain
 							["provider"] = { "n", 48259 },	-- Irontree Shredder
 						}),
-						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
+						i(256903, {	-- Gilnean Banded Crate (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(28256, {	-- The Skull of Gul'dan
@@ -2400,7 +2363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 82.0, FELWOOD },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { THE_HINTERLANDS, RAZORFEN_DOWNS },
-					["cost"] = {{ "i", 221261, 1 }},	-- Wildwhisper Draught
+					["cost"] = { { "i", 221261, 1 } },	-- Wildwhisper Draught
 					["lvl"] = 40,
 					["groups"] = {
 						i(221418),	-- Agamaggan's Roar
@@ -2549,7 +2512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9516,	-- Lord Banehollow
 					["coord"] = { 36.0, 44.6, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 18802, 1 }},	-- Shadowy Potion
+					["cost"] = { { "i", 18802, 1 } },	-- Shadowy Potion
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["groups"] = {
@@ -2999,7 +2962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(221491, {	-- Shadowtooth Bag
 							["description"] = "Random non-Ace card from the new DMF decks.",
-							["cost"] = {{ "i", 221262, 10 }},	-- 10x Wild Offering
+							["cost"] = { { "i", 221262, 10 } },	-- 10x Wild Offering
 							["sym"] = {{ "select", "itemID",
 								221291,	-- Two of Dunes
 								221292,	-- Three of Dunes
@@ -3032,22 +2995,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}},
 						}),
 						i(223197, {	-- Defender of the Wilds
-							["cost"] = {{ "i", 221262, 15 }},	-- 12x Wild Offering
+							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223193, {	-- Crown of the Dreamweaver
-							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223192, {	-- Cord of the Untamed
-							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223196, {	-- Godslayer's Greaves
-							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223194, {	-- Band of the Wilds
-							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+							["cost"] = { { "i", 221262, 12 } },	-- 12x Wild Offering
 						}),
 						i(223195, {	-- Breadth of the Beast
-							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+							["cost"] = { { "i", 221262, 12 } },	-- 12x Wild Offering
 						}),
 					},
 				})),
@@ -3069,7 +3032,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(256903, {["timeline"] = { ADDED_11_2_7 }}),	-- Gilnean Banded Crate (DECOR!)
+						i(256903, {	-- Gilnean Banded Crate (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 			}),

@@ -346,7 +346,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 50.6, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(251478, {["timeline"] = { ADDED_11_2_7 }}),	-- Square Draenic Table (DECOR!)
+						i(251478, {	-- Square Draenic Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(35197, {	-- Forging Ahead
@@ -710,7 +712,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(251477, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenic Wooden Table (DECOR!)
+						i(251477, {	-- Draenic Wooden Table (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(119144, {	-- Touch of the Naaru (TOY!)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -791,7 +795,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 49.8, 48.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(251653, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenethyst Lamppost (DECOR!)
+						i(251653, {	-- Draenethyst Lamppost (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}
 				}),
 				q(35687, {	-- Socrethar's Demise
@@ -3165,7 +3171,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["groups"] = {
-					i(241043, { ["timeline"] = { ADDED_11_2_7 } }),	-- Elodor Barrel (DECOR!)
+					i(241043, {	-- Elodor Barrel (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 			q(38200, {	-- Missive: Assault on Skettis
@@ -3178,7 +3186,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["groups"] = {
-					i(251329, { ["timeline"] = { ADDED_11_2_7 } }),	-- Shadowmoon Open-Air Shed (DECOR!)
+					i(251329, {	-- Shadowmoon Open-Air Shed (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 			q(38189, {	-- Missive: Assault on Stonefury Cliffs
@@ -3191,7 +3201,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["groups"] = {
-					i(251547, { ["timeline"] = { ADDED_11_2_7 } }),	-- Draenei Farmer's Trellis (DECOR!)
+					i(251547, {	-- Draenei Farmer's Trellis (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 			q(40942, {	-- Missive: Assault on the Pit

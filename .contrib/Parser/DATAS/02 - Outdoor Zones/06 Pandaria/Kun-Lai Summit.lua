@@ -1097,11 +1097,13 @@ root(ROOTS.Zones, {
 						["qg"] = 70980,	-- Seer Hao Pham Roo
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
-							i(247858, { ["timeline"] = {ADDED_11_2_7 } }),	-- Shaohao Ceremonial Bell (DECOR!)
 							i(98140),	-- Boots of Boundless Patience
 							i(98142),	-- Modest Sandals
 							i(98141),	-- Sabatons of the Humble
 							i(98145),	-- Self-Effacing Boots
+							i(247858, {	-- Shaohao Ceremonial Bell (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
+							}),
 							i(98143),	-- Subservient Greatboots
 							i(98137),	-- Treads of Reticence
 							i(98139),	-- Treads of Respect

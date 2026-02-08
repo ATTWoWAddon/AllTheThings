@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DESOLACE, {
 		["lore"] =
@@ -452,7 +453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 177673 },	-- Serpent Statue
 							},
 							["coord"] = { 28.2, 6.4, DESOLACE },
-							["cost"] = {{ "i", 15766, 1 }},	-- Gem of the Serpent
+							["cost"] = { { "i", 15766, 1 } },	-- Gem of the Serpent
 							["cr"] = 12369,	-- Lord Kragaru
 						}),
 						i(16791, {	-- Silkstream Cuffs
@@ -535,7 +536,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11259,	-- Nataka Longhorn
 					["coord"] = { 55.4, 55.8, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 13546, 2 }},	-- Bloodbelly Fish
+					["cost"] = { { "i", 13546, 2 } },	-- Bloodbelly Fish
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					-- #if BEFORE 4.0.3
@@ -960,7 +961,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["description"] = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
 					-- #endif
-					["cost"] = {{ "i", 13545, 5 }},	-- Shellfish
+					["cost"] = { { "i", 13545, 5 } },	-- Shellfish
 					["repeatable"] = true,
 					-- #endif
 					["qg"] = 11317,	-- Jinar'Zillen
@@ -1041,7 +1042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Ghost-o-plasm
 							["provider"] = { "i", 15849 },	-- Ghost-o-plasm
 							["coord"] = { 65.0, 91.0, DESOLACE },
-							["cost"] = {{ "i", 15848, 1 }},	-- Crate of Ghost Magnets
+							["cost"] = { { "i", 15848, 1 } },	-- Crate of Ghost Magnets
 							["cr"] = 11560,	-- Magrami Spectre
 						}),
 						i(15864),	-- Condor Bracers
@@ -1071,7 +1072,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 4392, 1 }},	-- Advanced Target Dummy
+					["cost"] = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 					["lvl"] = 30,
 				}),
 				q(14260, {	-- Going Deep
@@ -2166,7 +2167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/15 Infused Burning Gem
 							["provider"] = { "i", 6435 },	-- Infused Burning Gem
 							["coord"] = { 55.0, 26.7, DESOLACE },
-							["cost"] = {{ "i", 6436, 1 }},	-- Burning Gem
+							["cost"] = { { "i", 6436, 1 } },	-- Burning Gem
 							["crs"] = {
 								4665,	-- Burning Blade Adept
 								4663,	-- Burning Blade Augur

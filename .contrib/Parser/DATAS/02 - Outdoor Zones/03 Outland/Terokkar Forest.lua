@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local HUNGRY_NETHER_RAYS_GROUPS = {
 	objective(1, {	-- 0/10 Nether Ray Meal
 		["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
@@ -10,6 +11,7 @@ local HUNGRY_NETHER_RAYS_GROUPS = {
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
+
 ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -21,6 +23,7 @@ ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Dust", 150, 42000, 6);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -383,7 +386,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
-						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
+						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
 						["repeatable"] = true,
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
@@ -443,7 +446,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
+						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
@@ -1615,9 +1618,7 @@ root(ROOTS.Zones, {
 							{ 61.4, 78.1, TEROKKAR_FOREST },
 							{ 62.0, 74.7, TEROKKAR_FOREST },
 						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
+						["cost"] = { { "i", 32620, 10 } },	-- Time-Lost Scroll
 						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
@@ -1660,9 +1661,7 @@ root(ROOTS.Zones, {
 						["description"] = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
 						["provider"] = { "o", 185928 },	-- Ancient Skull Pile
 						["coord"] = { 66.2, 77.5, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32720, 1 },	-- Time-Lost Offering
-						},
+						["cost"] = { { "i", 32720, 1 } },	-- Time-Lost Offering
 						["groups"] = {
 							i(32535),	-- Gift of the Talonpriests
 							i(32534),	-- Brooch of the Immortal King
@@ -1925,9 +1924,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(32620, {	-- Time-Lost Scroll
-						["cost"] = {
-							{ "i", 32446, 1 },	-- Elixir of Shadows
-						},
+						["cost"] = { { "i", 32446, 1 } },	-- Elixir of Shadows
 						["crs"] = {
 							23066,	-- Talonpriest Ishaal
 							23068,	-- Talonpriest Zellek

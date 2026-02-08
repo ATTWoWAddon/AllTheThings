@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local BEEGLE_BLASTFUSE = {
 	["crs"] = { 66635 },
 	["coord"] = { 28.6, 33.8, HOWLING_FJORD },
@@ -21,6 +22,7 @@ local OKRUT_DRAGONWASTE = {
 	["crs"] = { 66638 },
 	["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 };
+
 root(ROOTS.Zones, m(NORTHREND, {
 	n(ACHIEVEMENTS, {
 		header(HEADERS.Achievement, 60956, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Northrend

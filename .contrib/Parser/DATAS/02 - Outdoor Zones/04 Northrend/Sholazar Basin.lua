@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
@@ -99,6 +100,7 @@ ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(SHOLAZAR_BASIN, {
@@ -796,7 +798,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							ach(938, {	-- The Snows of Northrend
-								i(248807, {["timeline"] = { ADDED_11_2_7 }}),	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
+								i(248807, {	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
+									["timeline"] = { ADDED_11_2_7 },
+								}),
 							}),
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun
@@ -1266,7 +1270,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.8, 59.3, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(248807, {	-- Nesingwary Mounted Shoveltusk Head (DECOR!)
-								["sourceAchievement"] = 938,	-- The Snows of Northrend
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 5000000,	-- 500g
 							}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CENARION_COMBAT_BADGE = i(20802, {	-- Cenarion Combat Badge
 	["timeline"] = { REMOVED_4_0_3 },
 });
@@ -28,6 +29,7 @@ local LOGISTICS_ASSIGNMENT_H = i(21266, {	-- Logistics Assignment (H)
 local TACTICAL_ASSIGNMENT = i(20809, {	-- Tactical Assignment
 	["timeline"] = { REMOVED_4_0_3 },
 });
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(SILITHUS, {
 		["lore"] = "Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",
@@ -202,7 +204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20515, 1 }},	-- Abyssal Scepter
+					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					["lvl"] = 58,
 					["groups"] = {
 						i(22725, {	-- Band of Cenarius
@@ -239,7 +241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20513, 1 }},	-- Abyssal Crest
+					["cost"] = { { "i", 20513, 1 } },	-- Abyssal Crest
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
@@ -263,7 +265,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20513, 3 }},	-- Abyssal Crest
+					["cost"] = { { "i", 20513, 3 } },	-- Abyssal Crest
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -289,7 +291,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20515, 3 }},	-- Abyssal Scepter
+					["cost"] = { { "i", 20515, 3 } },	-- Abyssal Scepter
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
@@ -315,7 +317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20514, 3 }},	-- Abyssal Signet
+					["cost"] = { { "i", 20514, 3 } },	-- Abyssal Signet
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
@@ -512,7 +514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8781, {	-- Arms for the Field (A)
 					["provider"] = { "i", 21260 },	-- Logistics Task Briefing VI (A)
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 3853, 2 }},	-- Moonsteel Broadsword
+					["cost"] = { { "i", 3853, 2 } },	-- Moonsteel Broadsword
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -524,7 +526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8786, {	-- Arms for the Field (H)
 					["provider"] = { "i", 21261 },	-- Logistics Task Briefing VI (H)
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 3855, 3 }},	-- Massive Iron Axe
+					["cost"] = { { "i", 3855, 3 } },	-- Massive Iron Axe
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -589,7 +591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8540, {	-- Boots for the Guard (A)
 					["provider"] = { "i", 20939 },	-- Logistics Task Briefing II (A)
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
+					["cost"] = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -601,7 +603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8805, {	-- Boots for the Guard (H)
 					["provider"] = { "i", 21379 },	-- Logistics Task Briefing II (H)
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
+					["cost"] = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -918,7 +920,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
-					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
+					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(57, 57, 15),
 				})),
@@ -1224,7 +1226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.8, 39.0, SILITHUS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 20452, 10 }},	-- Smoked Desert Dumplings
+					["cost"] = { { "i", 20452, 10 } },	-- Smoked Desert Dumplings
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1350,7 +1352,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20515, 1 }},	-- Abyssal Scepter
+					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
@@ -1456,7 +1458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.6, 37.8, SILITHUS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
+					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
 					["lvl"] = lvlsquish(57, 57, 15),
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8280, {	-- Securing the Supply Lines
@@ -1512,7 +1514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 20514, 1 }},	-- Abyssal Signet
+					["cost"] = { { "i", 20514, 1 } },	-- Abyssal Signet
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
@@ -1590,7 +1592,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 67.0, 69.6, SILITHUS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
+					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
@@ -1978,7 +1980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 67.0, 69.6, SILITHUS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
+					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8498, {	-- Twilight Battle Orders
@@ -2250,7 +2252,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15211, {	-- Azure Templar <Abyssal Council>
-							["cost"] = {{ "i", 20420, 1 }},	-- Crest of Beckoning: Water
+							["cost"] = { { "i", 20420, 1 } },	-- Crest of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20654, {	-- Amethyst War Staff
@@ -2265,7 +2267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15209, {	-- Crimson Templar <Abyssal Council>
-							["cost"] = {{ "i", 20416, 1 }},	-- Crest of Beckoning: Fire
+							["cost"] = { { "i", 20416, 1 } },	-- Crest of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20657, {	-- Crystal Tipped Stiletto
@@ -2280,7 +2282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15307, {	-- Earthen Templar <Abyssal Council>
-							["cost"] = {{ "i", 20419, 1 }},	-- Crest of Beckoning: Stone
+							["cost"] = { { "i", 20419, 1 } },	-- Crest of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20663, {	-- Deep Strike Bow
@@ -2295,7 +2297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15212, {	-- Hoary Templar <Abyssal Council>
-							["cost"] = {{ "i", 20418, 1 }},	-- Crest of Beckoning: Thunder
+							["cost"] = { { "i", 20418, 1 } },	-- Crest of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20660, {	-- Stonecutting Glaive
@@ -2346,7 +2348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15206, {	-- The Duke of Cynders <Abyssal Council>
-							["cost"] = {{ "i", 20432, 1 }},	-- Signet of Beckoning: Fire
+							["cost"] = { { "i", 20432, 1 } },	-- Signet of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989, {	-- Cinder of Cynders
@@ -2364,7 +2366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15207, {	-- The Duke of Fathoms <Abyssal Council>
-							["cost"] = {{ "i", 20436, 1 }},	-- Signet of Beckoning: Water
+							["cost"] = { { "i", 20436, 1 } },	-- Signet of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20669, {	-- Darkstone Claymore
@@ -2379,7 +2381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15208, {	-- The Duke of Shards <Abyssal Council>
-							["cost"] = {{ "i", 20435, 1 }},	-- Signet of Beckoning: Stone
+							["cost"] = { { "i", 20435, 1 } },	-- Signet of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20672, {	-- Sparkling Crystal Wand
@@ -2394,7 +2396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15220, {	-- The Duke of Zephyrs <Abyssal Council>
-							["cost"] = {{ "i", 20433, 1 }},	-- Signet of Beckoning: Thunder
+							["cost"] = { { "i", 20433, 1 } },	-- Signet of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20675, {	-- Soulrender
@@ -2446,7 +2448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15205, {	-- Baron Kazum <Abyssal High Council>
-							["cost"] = {{ "i", 20449, 1 }},	-- Scepter of Beckoning: Stone
+							["cost"] = { { "i", 20449, 1 } },	-- Scepter of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20688, {	-- Earthen Guard
@@ -2461,7 +2463,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
-							["cost"] = {{ "i", 20448, 1 }},	-- Scepter of Beckoning: Thunder
+							["cost"] = { { "i", 20448, 1 } },	-- Scepter of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20691, {	-- Windshear Cape
@@ -2476,7 +2478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15305, {	-- Lord Skwol <Abyssal High Council>
-							["cost"] = {{ "i", 20450, 1 }},	-- Scepter of Beckoning: Water
+							["cost"] = { { "i", 20450, 1 } },	-- Scepter of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20685, {	-- Wavefront Necklace
@@ -2491,7 +2493,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
-							["cost"] = {{ "i", 20447, 1 }},	-- Scepter of Beckoning: Fire
+							["cost"] = { { "i", 20447, 1 } },	-- Scepter of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(20682, {	-- Elemental Focus Band
@@ -2864,7 +2866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							8324,	-- Still Believing
 							8323,	-- True Believers
 						},
-						["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
+						["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 						["groups"] = {
 							i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
 							i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)

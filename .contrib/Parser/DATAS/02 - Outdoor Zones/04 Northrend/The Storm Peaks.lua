@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
@@ -119,6 +120,7 @@ ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Relics", repPerTurnIn, 42000, 10);
 	end
 end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(THE_STORM_PEAKS, {
@@ -362,7 +364,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32540,	-- Lillehoff
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["repeatable"] = true,
 					}),
 					q(13011, {	-- Culling Jorcuttar
@@ -373,7 +375,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Jorcuttar slain
 								["provider"] = { "n", 30340 },	-- Jorcuttar
 								["coord"] = { 54.6, 60.8, THE_STORM_PEAKS },
-								["cost"] = {{ "i", 42733, 1 }},	-- Icemaw Bear Flank
+								["cost"] = { { "i", 42733, 1 } },	-- Icemaw Bear Flank
 							}),
 							i(42733, {	-- Icemaw Bear Flank
 								["providers"] = {
@@ -529,13 +531,13 @@ root(ROOTS.Zones, {
 					q(12870, {	-- Ancient Relics (A)
 						["qg"] = 29744,	-- Rork Sharpchin
 						["coord"] = { 28.8, 74.0, THE_STORM_PEAKS },
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12882, {	-- Ancient Relics (H)
 						["qg"] = 30472,	-- Olut Alegut
 						["coord"] = { 36.9, 49.5, THE_STORM_PEAKS },
-						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 						["races"] = HORDE_ONLY,
 					}),
 					q(12875, {	-- An Experienced Guide
@@ -1756,7 +1758,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43499, {	-- Iron Boot Flask (TOY!)
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 						},
 					}),
@@ -1765,19 +1767,19 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(43462, {	-- Airy Pale Ale
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43473, {	-- Drakefire Chile Ale
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43499, {	-- Iron Boot Flask (TOY!)
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43472, {	-- Snowfall Lager
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 							i(43470, {	-- Worg Tooth Oatmeal Stout
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+								["cost"] = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 							}),
 						},
 					}),

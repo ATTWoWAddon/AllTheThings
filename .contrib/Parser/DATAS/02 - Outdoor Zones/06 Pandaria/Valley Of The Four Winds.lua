@@ -2544,35 +2544,35 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(74853, {	-- 100 Year Soy Sauce
-								["cost"] = { { "c", 402, 1 }, },	-- 1x Ironpaw Token
+								["cost"] = { { "c", 402, 1 } },	-- 1x Ironpaw Token
 							}),
 							i(86468, {	-- Apron
 								["sourceQuest"] = 31820,	-- A Present for Teacher (Nomi)
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(86425, {	-- Cooking School Bell
 								["sourceQuest"] = 31521,	-- To Be a Master
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(88801, {	-- Flippable Table (TOY!)
-								["cost"] = { { "c", 402, 40 }, },	-- 40x Ironpaw Token
+								["cost"] = { { "c", 402, 40 } },	-- 40x Ironpaw Token
 							}),
 							i(86559, {	-- Frying Pan
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(92748, {	-- Portable Refrigerator
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75017, {	-- Recipe: Great Pandaren Banquet (RECIPE!)
 								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75013, {	-- Recipe: Pandaren Banquet (RECIPE!)
 								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 }, },	-- 10x Ironpaw Token
+								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(86558, {	-- Rolling Pin
-								["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
+								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 						},
 					}),

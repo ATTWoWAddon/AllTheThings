@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WESTFALL, {
 		["lore"] =
@@ -1857,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210533, {	-- Silverspur
 					["coord"] = { 32.8, 35.9, WESTFALL },
-					["cost"] = {{ "i", 209059, 1 }},	-- Goretusk Haunch
+					["cost"] = { { "i", 209059, 1 } },	-- Goretusk Haunch
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(208701, {	-- Rune of Beast Mastery

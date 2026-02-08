@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if BEFORE CATA
 -- TODO: Fully implement this for Retail's faction tooltips, also look at cape of stranglethorn.
 local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
@@ -14,6 +15,7 @@ local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 local BLOODTHIRSTY_GROUPS = {
 	cl(DEATHKNIGHT, {
 		moh(12, iensemble(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -1071,7 +1073,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8646, 1 }},	-- Bad Egg
+					["cost"] = { { "i", 8646, 1 } },	-- Bad Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 				}),
@@ -1120,7 +1122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8644, 1 }},	-- Fine Egg
+					["cost"] = { { "i", 8644, 1 } },	-- Fine Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1169,7 +1171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8643, 1 }},	-- Extraordinary Egg
+					["cost"] = { { "i", 8643, 1 } },	-- Extraordinary Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1181,7 +1183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8645, 1 }},	-- Ordinary Egg
+					["cost"] = { { "i", 8645, 1 } },	-- Ordinary Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1247,7 +1249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 10 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 10 } },	-- Wastewander Water Pouch
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 38,
@@ -1959,9 +1961,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -1976,9 +1976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 40 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -1993,9 +1991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2010,9 +2006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 60 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2027,9 +2021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 50 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2044,9 +2036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 60 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2061,9 +2051,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 12359, 20 },	-- Thorium Bar
-					},
+					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2644,7 +2632,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -3037,7 +3025,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
+					["cost"] = { { "i", 8564, 1 } },	-- Hippogryph Egg
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
@@ -3064,7 +3052,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
+					["cost"] = { { "i", 8564, 1 } },	-- Hippogryph Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -3365,7 +3353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["lvl"] = 40,
 					["groups"] = {
 						i(8484),	-- Gadgetzan Water Co. Care Package
@@ -3376,7 +3364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
+					["cost"] = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 					["repeatable"] = true,
 					["lvl"] = 40,
 					["groups"] = {
@@ -3650,7 +3638,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 75.3, 45.9, TANARIS },
 						-- #endif
 					},
-					["cost"] = {{ "i", 9249, 1 }},	-- 1x Captain's Key
+					["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
 					["groups"] = {
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
 							["description"] =

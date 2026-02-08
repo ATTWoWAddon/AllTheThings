@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(UNGORO_CRATER, {
 		["lore"] = "Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",
@@ -410,7 +411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9623,	-- A-Me 01
 					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 10561, 1 }},	-- Mithril Casing
+					["cost"] = { { "i", 10561, 1 } },	-- Mithril Casing
 					["lvl"] = 48,
 				}),
 				q(4245, {	-- Chasing A-Me 01 (3/3)
@@ -677,7 +678,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 43.6, 7.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11315, 15 }},	-- Bloodpetal Sprout
+					["cost"] = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
@@ -871,7 +872,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202135 },	-- Dadanga's Grave
 					["coord"] = { 45.5, 7.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = {{ "i", 11315, 10 }},	-- Bloodpetal Sprout
+					["cost"] = { { "i", 11315, 10 } },	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
 				heroscall(q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
@@ -1174,7 +1175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 11243, 1 }},	-- Videre Elixir
+					["cost"] = { { "i", 11243, 1 } },	-- Videre Elixir
 					["lvl"] = 47,
 				}),
 				q(24693, {	-- Mossy Pile

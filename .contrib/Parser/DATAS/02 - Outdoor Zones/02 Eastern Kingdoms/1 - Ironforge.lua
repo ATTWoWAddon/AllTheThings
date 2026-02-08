@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(IRONFORGE, {
 		["lore"] =
@@ -1619,11 +1620,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(245426, {	-- Dark Iron Brazier (DECOR!)
-							["sourceAchievement"] = 4859,	-- Kings Under the Mountain
 							["cost"] = 7000000,	-- 700g
 						}),
 						i(245427, {	-- Dark Iron Expedition Tent (DECOR!)
-							["sourceQuest"] = 53566,	-- Dark Iron Dwarves
 							["cost"] = 12000000,	-- 1,200g
 						}),
 						i(246491, {	-- Ironforge Fence (DECOR!)
@@ -1647,7 +1646,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 6000000,	-- 600g
 						}),
 						i(256425, {	-- Shadowforge Stone Chair (DECOR!)
-							["sourceAchievement"] = 8316,	-- Blood in the Snow
 							["cost"] = 3500000,	-- 350g
 						}),
 					},
@@ -1858,10 +1856,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(246411, {	-- Ironforge Bookcase (DECOR!)
-							["cost"] = {{ "g", 7000000 }},	-- 700g
+							["cost"] = { { "g", 7000000 } },	-- 700g
 						}),
 						i(246412, {	-- Small Ironforge Bookcase (DECOR!)
-							["cost"] = {{ "g", 4500000 }},	-- 450g
+							["cost"] = { { "g", 4500000 } },	-- 450g
 						}),
 					},
 				}),

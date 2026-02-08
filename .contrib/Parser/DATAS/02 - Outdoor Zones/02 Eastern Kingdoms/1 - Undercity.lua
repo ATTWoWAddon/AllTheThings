@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(UNDERCITY, {
 		["lore"] = "The Undercity is the capital city of the Forsaken undead of the Horde.\n\nFar beneath the ruined Capital City of the kingdom of Lordaeron, its royal crypts were turned into a bastion of evil and undeath. Originally intended by Prince Arthas to be the Scourge's seat of power, the budding \"Undercity\" was abandoned when Arthas was recalled to aid the Lich King in the distant Northrend. In Arthas' absence, the Dark Lady, Sylvanas Windrunner, led the rebel Forsaken to the Undercity, and claimed it for her own. Since taking up residence, the Forsaken worked to complete the Undercity's construction by dredging the twisted maze of catacombs, tombs, and dungeons that Arthas began.",
@@ -395,7 +396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
 							["provider"] = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone
-							["cost"] = {{ "i", 7131, 1 }},	-- Dragonmaw Shinbone
+							["cost"] = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone
 							["crs"] = {
 								2091,	-- Chieftain Nek'rosh
 								1037,	-- Dragonmaw Battlemaster
@@ -1493,11 +1494,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = bubbleDownClassicRep(FACTION_UNDERCITY, {
 						{		-- Neutral
 							i(245504, {	-- Lordaeron Fence (DECOR!)
-								["sourceQuest"] = 27098,	-- Lordaeron
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(245505, {	-- Lordaeron Fencepost (DECOR!)
-								["sourceQuest"] = 27098,	-- Lordaeron
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(45583, {	-- Undercity Tabard
@@ -1528,7 +1527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
-							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["cost"] = { { "i", 205183, 1 } },	-- Fel-Powered Artifact
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416009),	-- Engrave Chest - Demonic Tactics

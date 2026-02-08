@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, m(ISLE_OF_THUNDER, {
@@ -123,11 +124,11 @@ root(ROOTS.Zones, {
 										i(80433),	-- Blood Spirit
 										i(97207),	-- Cloak of the Immortal Guardian
 										i(95490, {	-- Greater Kirin Tor Offensive Insignia
-											["cost"] = {{"i",95491,10}},	-- Tattered Historical Parchments
+											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(95567),	-- Kirin Tor Beacon (TOY!)
 										i(95489, {	-- Kirin Tor Offensive Insignia
-											["cost"] = {{"i",95491,1}},	-- Tattered Historical Parchments
+											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97187),	-- Refurbished Band of Jin
 										i(97190),	-- Refurbished Seal of Jin
@@ -336,7 +337,7 @@ root(ROOTS.Zones, {
 										i(80433),	-- Blood Spirit
 										i(97212),	-- Cloak of the Immortal Guardian
 										i(95488, {	-- Greater Sunreaver Onslaught Insignia
-											["cost"] = {{"i",95491,10}},	-- Tattered Historical Patchments
+											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(97192),	-- Refurbished Band of Jin
 										i(97195),	-- Refurbished Seal of Jin
@@ -346,7 +347,7 @@ root(ROOTS.Zones, {
 										i(97209),	-- Static-Collecting Cloak
 										i(95568),	-- Sunreaver Beacon (TOY!)
 										i(95487, {	-- Sunreaver Onslaught Insignia
-											["cost"] = {{"i",95491,1}},	-- Tattered Historical Patchments
+											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97208),	-- Thunder-Chaser Cloak
 									}, {	-- Friendly
@@ -617,7 +618,7 @@ root(ROOTS.Zones, {
 					q(32296, {	-- Treasures of the Thunder King
 						["qg"] = 70316,	-- Taoshi
 						["coord"] = { 51.5, 46.0, ISLE_OF_THUNDER },
-						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
+						["cost"] = { { "i", 94222, 1 } },	-- 1x Key to the Palace of Lei Shen
 						["maps"] = { 518 },	-- Thunder King's Citadel
 						["isWeekly"] = true,
 						["_drop"] = { "g" },	-- unnecessary API data
@@ -674,7 +675,7 @@ root(ROOTS.Zones, {
 								}),
 								o(218949, {	-- Lei Shen's Burial Trove
 									["coord"] = { 46.6, 78.2, 518 },	-- Thunder King's Citadel
-									["cost"] = {{ "i", 95497, 1 }},	-- Burial Trove Key
+									["cost"] = { { "i", 95497, 1 } },	-- Burial Trove Key
 									["groups"] = {
 										i(95496),	-- Shado-Pan Assault Insignia
 										i(94221),	-- Shan'ze Ritual Stone
@@ -911,7 +912,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(RARES, sharedData({
-					["cost"] = {{"i",94221,3}},	-- Shan'ze Ritual Stone
+					["cost"] = { { "i", 94221, 3} },	-- Shan'ze Ritual Stone
 				},{
 					n(69767, {	-- Ancient Mogu Guardian
 						["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },
