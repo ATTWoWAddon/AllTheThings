@@ -294,6 +294,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(ENDEAVOR, {
 			n(QUESTS, {
 				q(94450),	-- Twenty Five Percent Completed
+				q(94451),	-- Fifty Percent Completed
+				q(94452),	-- Seventy Five Percent Completed
+				q(94453),	-- One Hundred Percent Completed
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
 			}),
 		}),

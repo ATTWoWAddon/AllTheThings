@@ -263,7 +263,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						n(WEAPONS, {
 							i(251572),	-- Ascension Agitator's Axe
 							i(251565),	-- Ascension Agitator's Censer
-							i(269898),	-- Ascension Arrestor's Crossbow
+							i(269898),	-- Ascension Agitator's Crossbow
 							i(251569),	-- Ascension Agitator's Cudgel
 							i(251571),	-- Ascension Agitator's Dagger
 							i(251566),	-- Ascension Agitator's Greatsword
