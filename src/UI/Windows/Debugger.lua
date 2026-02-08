@@ -558,7 +558,6 @@ app:CreateWindow("Debugger", {
 							if txt then
 								if txt:sub(-1) ~= "," then txt = txt .. ","; end
 								local func,err = loadstring("return " .. txt .. "true");
-								print(func, err);
 								if not err and func then
 									local data,success = func();
 									if data and success then
