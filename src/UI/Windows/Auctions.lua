@@ -520,7 +520,7 @@ app:CreateWindow("Auctions", {
 							end
 						end
 					end
-					
+
 					-- Determine if anything is cached in the Auction Data.
 					local any = false;
 					for itemID,price in pairs(auctionData) do
@@ -531,9 +531,8 @@ app:CreateWindow("Auctions", {
 						-- Search the ATT Database for information related to the auction links (items, species, etc)
 						local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {}, nil, nil, nil, nil, nil, nil;
 						for itemID,price in pairs(auctionData) do
-							searchResults = app.SearchForField("itemID", itemID);
+							searchResults = app.SearchForObject("itemID", itemID, nil, true);
 							if searchResults and #searchResults > 0 then
-								app.Sort(searchResults, app.SortDefaults.Accessibility);
 								searchResult = searchResults[1];
 								key = searchResult.key;
 								local __type = searchResult.__type or key;
@@ -544,7 +543,7 @@ app:CreateWindow("Auctions", {
 									key = "sourceID";
 								end
 								value = searchResult[key];
-								
+
 								if searchResult.u and (searchResult.u == 1 or searchResult.u == 2) then
 									value = value .. "_" .. searchResult.u;
 									__type = "legacyID";
@@ -624,7 +623,7 @@ app:CreateWindow("Auctions", {
 								end
 							end
 						end
-						
+
 						for i,option in ipairs(g) do
 							if option.g then table.sort(option.g, SortByPrice); end
 						end
@@ -633,6 +632,7 @@ app:CreateWindow("Auctions", {
 							SortPriority = 99999,
 						}));
 					end
+					app.AssignChildren(self.data)
 				end
 			end,
 		}));
