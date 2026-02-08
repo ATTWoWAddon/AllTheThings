@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(QUESTS, {
@@ -57,7 +58,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(130019),	-- Armplates of Unrelenting Anguish
 						i(130000),	-- Bands of Unrelenting Anguish
 						i(129992),	-- Cuffs of Unrelenting Anguish
-						i(245698, { ["timeline"] = { ADDED_11_2_7 } }),	-- Kaldorei Stone Fence (DECOR!)
+						i(245698, {	-- Kaldorei Stone Fence (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 						i(121643),	-- Thaon's Grief
 					},
 				}),
@@ -732,6 +735,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					},
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
 					["coord"] = { 59.4, 84.2, VALSHARAH },
+					["groups"] = {
+						i(245258, {	-- Val'sharah Bookcase (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				-- Andutalah Side Quests --
 				q(38671, {	-- Lost in Retreat

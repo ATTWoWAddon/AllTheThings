@@ -64,7 +64,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 29.0, 46.0, AZSUNA },
 					["groups"] = {
 						i(127023, {	-- Pattern: Imbued Silkweave Epaulets [Rank 1] (RECIPE!)
-							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 					},
 				}),

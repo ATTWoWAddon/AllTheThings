@@ -508,7 +508,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.5, 48.4, LEGION_DALARAN },
 					["groups"] = {
 						i(141348, {	-- Wondrous Wisdomball (PET!)
-							["cost"] = {{"i",141349,1}},	-- Strange Humming Crystal
+							["cost"] = { { "i", 141349, 1 } },	-- Strange Humming Crystal
 							-- added cost of original quest chain start item
 						}),
 					},

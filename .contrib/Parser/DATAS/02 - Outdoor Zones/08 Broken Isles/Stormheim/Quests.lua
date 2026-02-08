@@ -90,7 +90,9 @@ root(ROOTS.Zones, {
 						i(129343),	-- Plaguebringer's Mask
 						i(129344),	-- Dark Ranger's Coif
 						i(129345),	-- Blightcaller's Braincage
-						i(245411, {["timeline"] = { ADDED_11_2_7 }}),	-- Dark Ship's Lantern (DECOR!)
+						i(245411, {	-- Dark Ship's Lantern (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(39792, {	-- A Stack of Racks

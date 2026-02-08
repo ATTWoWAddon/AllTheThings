@@ -5,7 +5,9 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
+			n(WORLD_QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				q(42119, {	-- A Cleansing Cocktail
 					i(136859),	-- Fat Bear Liver (QI!)
 					o(249704, {	-- Cliffwing Hippogryph Egg

@@ -800,6 +800,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(245504, {	-- Lordaeron Fence (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
+						i(245505, {	-- Lordaeron Fencepost (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					},
 				}),
 				q(428, {	-- Lost Deathstalkers

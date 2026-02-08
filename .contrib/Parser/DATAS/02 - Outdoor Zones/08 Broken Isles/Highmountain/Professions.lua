@@ -17,25 +17,25 @@ root(ROOTS.Zones, {
 								-- extra info for the item can go here
 							}),
 							i(147310, {	-- Crate of Bobbers: Floating Totem (TOY!)
-								["cost"] = { { "i", 146960, 100 }, },	-- 100x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 100 } },	-- 100x Ancient Totem Fragment
 							}),
 							i(152556, {	-- Trawler Totem (TOY!)
-								["cost"] = { { "i", 146960, 50 }, },	-- 50x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 50 } },	-- 50x Ancient Totem Fragment
 							}),
 							i(133709, {	-- Funky Sea Snail
-								["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 25 } },	-- 25x Ancient Totem Fragment
 								["sym"] = {{"fill"}},
 							}),
 							i(133711, {	-- Swollen Murloc Egg
-								["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 25 } },	-- 25x Ancient Totem Fragment
 								["sym"] = {{"fill"}},
 							}),
 							i(133712, {	-- Frost Worm
-								["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 25 } },	-- 25x Ancient Totem Fragment
 								["sym"] = {{"fill"}},
 							}),
 							i(124109, {	-- Highmountain Salmon
-								["cost"] = { { "i", 146960, 10 }, },	-- 10x Ancient Totem Fragment
+								["cost"] = { { "i", 146960, 10 } },	-- 10x Ancient Totem Fragment
 							}),
 						},
 					}),

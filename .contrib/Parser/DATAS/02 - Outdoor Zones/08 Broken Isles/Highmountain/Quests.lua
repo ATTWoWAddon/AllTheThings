@@ -618,7 +618,9 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["groups"] = {
-						i(258221, { ["timeline"] = { ADDED_12_0_0 } }),	-- Driftwood Junk Pile (DECOR!)
+						i(258221, {	-- Driftwood Junk Pile (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 						i(132113),	-- Pufferfish Demolition Greaves (Cloth)
 						i(132110),	-- Pufferfish Demolition Greaves (Plate)
 						i(132111),	-- Pufferfish Demolition Legguards

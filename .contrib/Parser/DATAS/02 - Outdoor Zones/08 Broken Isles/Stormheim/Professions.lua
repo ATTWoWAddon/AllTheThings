@@ -17,25 +17,25 @@ root(ROOTS.Zones, {
 								-- extra info for the item can go here
 							}),
 							i(147307, {	-- Crate of Bobbers: Carved Wooden Helm (TOY!)
-								["cost"] = { { "i", 146961, 100 }, },	-- 100x Shiny Bauble
+								["cost"] = { { "i", 146961, 100 } },	-- 100x Shiny Bauble
 							}),
 							i(152574, {	-- Corbyn's Beacon (TOY!)
-								["cost"] = { { "i", 146961, 50 }, },	-- 50x Shiny Bauble
+								["cost"] = { { "i", 146961, 50 } },	-- 50x Shiny Bauble
 							}),
 							i(133713, {	-- Moosehorn Hook
-								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+								["cost"] = { { "i", 146961, 25 } },	-- 25x Shiny Bauble
 								["sym"] = {{"fill"}},
 							}),
 							i(133715, {	-- Ancient Vrykul Ring
-								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+								["cost"] = { { "i", 146961, 25 } },	-- 25x Shiny Bauble
 								["sym"] = {{"fill"}},
 							}),
 							i(133716, {	-- Soggy Drakescale
-								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+								["cost"] = { { "i", 146961, 25 } },	-- 25x Shiny Bauble
 								["sym"] = {{"fill"}},
 							}),
 							i(124110, {	-- Stormray
-								["cost"] = { { "i", 146961, 10 }, },	-- 10x Shiny Bauble
+								["cost"] = { { "i", 146961, 10 } },	-- 10x Shiny Bauble
 							}),
 						},
 					}),

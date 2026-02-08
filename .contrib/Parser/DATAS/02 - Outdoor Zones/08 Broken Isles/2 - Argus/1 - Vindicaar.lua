@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local VEILED_ARGUNITE = 1508;
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
@@ -550,7 +552,7 @@ root(ROOTS.Zones, {
 							},
 							["groups"] = appendAllGroups(
 								sharedData({
-									["cost"] = {{"i",151568,1}},	-- Primal Sargerite
+									["cost"] = { { "i", 151568, 1 } },	-- Primal Sargerite
 								},{
 									i(151565),	-- Astral Glory
 									i(151564),	-- Empyrium
@@ -558,7 +560,7 @@ root(ROOTS.Zones, {
 									i(151567),	-- Lightweave Cloth
 								}),
 								sharedData({
-									["cost"] = {{"i",151568,10}},	-- Primal Sargerite
+									["cost"] = { { "i", 151568, 10 } },	-- Primal Sargerite
 								},{
 									i(151718),	-- Argulite
 									i(151720),	-- Chemirine
@@ -644,7 +646,9 @@ root(ROOTS.Zones, {
 								{ 46.1, 65.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 61.6, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							},
-							["groups"] = sharedData({ ["cost"] = { { "c", VEILED_ARGUNITE, 650 } } }, {
+							["groups"] = sharedData({
+								["cost"] = { { "c", VEILED_ARGUNITE, 650 } },
+							}, {
 								i(153211, {	-- Relinquished Hood
 									["sym"] = {
 										{"sub", "legion_relinquished", {"INVTYPE_HEAD"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
@@ -664,7 +668,9 @@ root(ROOTS.Zones, {
 									["sym"] = {
 										{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 									},
-									["groups"] = sharedData({["modID"] = 43},{	-- Relinquished modID
+									["groups"] = sharedData({
+										["modID"] = 43,	-- Relinquished modID
+									}, {
 										i(152778),	-- Conservatory Ward's Drape (Confirmed in Errors 18 Jan 2022)
 										i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
 										i(146794),	-- Sargerei Herald's Cloak (reported in #errors on November 21, 2020)

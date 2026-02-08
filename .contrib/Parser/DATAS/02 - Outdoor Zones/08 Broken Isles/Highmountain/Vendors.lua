@@ -13,11 +13,9 @@ root(ROOTS.Zones, {
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(258221, { 	-- Driftwood Junk Pile (DECOR!)
-							["sourceQuest"] = 40230,	-- Oh, the Clawdacity!
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(258223, { 	-- Murloc's Wind Chimes (DECOR!)
-							["sourceAchievement"] = 11699,	-- Grand Fin-ale
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 					},
@@ -26,7 +24,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 29.4, 26.2, HIGHMOUNTAIN },
 					["groups"] = {
 						i(127027, {	-- Pattern: Imbued Silkweave Slippers (Rank 1)
-							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
+							["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 						}),
 					},
 				}),
@@ -177,98 +175,84 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_11_2_7 },
 					}, {
 						i(245409, {	-- Dried Whitewash Corn (DECOR!)
-							["sourceQuest"] = 39496,	-- The Flow of the River
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(257722, {	-- Hanging Arrow Kite (DECOR!)
-							["sourceQuest"] = 39426,	-- Blood Debt
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(260698, {	-- Kobold Trassure Pile (DECOR!)
-							["sourceQuest"] = 39772,	-- Can't Hold a Candle To You
 							["cost"] = {
 								{ "g", 1000000 },	-- 100g
 								{ "c", ORDER_RESOURCES, 200 },
 							},
 						}),
 						i(245405, {	-- Large Highmountain Drum (DECOR!)
-							["sourceQuest"] = 42622,	-- Ceremonial Drums
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(245457, {	-- Riverbend Netting (DECOR!)
-							["sourceQuest"] = 39614,	-- Fish Out of Water
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(257721, {	-- Skyhorn Arrow Kite (DECOR!)
-							["sourceAchievement"] = 10398,	-- Drum Circle
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(257401, {	-- Skyhorn Banner (DECOR!)
-							["sourceQuest"] = 39387,	-- The Skies of Highmountain
 							["cost"] = {
 								{ "g", 7000000 },	-- 700g
 								{ "c", ORDER_RESOURCES, 1000 },
 							},
 						}),
 						i(257723, {	-- Skyhorn Eagle Kite (DECOR!)
-							["sourceQuest"] = 39305,	-- Empty Nest
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
 								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(245460, {	-- Skyhorn Storage Chest (DECOR!)
-							["sourceAchievement"] = 11257,	-- Treasures of Highmountain
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
 								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(256913, {	-- Tauren Jeweler's Roller (DECOR!)
-							["sourceAchievement"] = 10996,	-- Got to Ketchum All
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },
 							},
 						}),
 						i(257397, {	-- Tauren Storyteller's Frame (DECOR!)
-							["sourceQuest"] = 39992,	-- Huln's War - The Nathrezim
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
 								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(245461, {	-- Tauren Vertical Windmill (DECOR!)
-							["sourceQuest"] = 39780,	-- The Underking
 							["cost"] = {
 								{ "g", 7000000 },	-- 700g
 								{ "c", ORDER_RESOURCES, 1000 },
 							},
 						}),
 						i(245456, {	-- Warbrave's Brazier (DECOR!)
-							["sourceQuest"] = 39579,	-- The Backdoor
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
 								{ "c", ORDER_RESOURCES, 750 },
 							},
 						}),
 						i(245453, {	-- Whitewash River Basket (DECOR!)
-							["sourceQuest"] = 42590,	-- Moozy's Reunion
 							["cost"] = {
 								{ "g", 3000000 },	-- 300g
 								{ "c", ORDER_RESOURCES, 500 },

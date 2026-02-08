@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(VENDORS, {
@@ -37,7 +38,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["coord"] = { 70.4, 46.6, VALSHARAH },
 				["groups"] = {
 					i(127022, {	-- Pattern: Imbued Silkweave Cinch [Rank 1] (RECIPE!)
-						["cost"] = {{ "i", 124437, 100 }},	-- 100x Shal'dorei Silk
+						["cost"] = { { "i", 124437, 100 } },	-- 100x Shal'dorei Silk
 					}),
 				},
 			}),
@@ -45,11 +46,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["coord"] = { 60.2, 84.9, VALSHARAH },
 				["groups"] = {
 					i(245698, {	-- Kaldorei Stone Fence (DECOR!)
-						["sourceQuest"] = 40573,	-- The Nightmare Lord
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 					}),
 					i(245699, {	-- Kaldorei Stone Fencepost (DECOR!)
+						["sourceQuest"] = 40573,	-- The Nightmare Lord	// Not rewarded by the quest but simply unlocked for buying at the vendor
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", ORDER_RESOURCES, 75 } },
 					}),
@@ -73,26 +74,22 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				}},
 				["groups"] = {
 					i(245739, {	-- Crescent Moon Lamppost (DECOR!)
-						["sourceQuest"] = 40890,	-- The Tears of Elune
 						["cost"] = { { "c", ORDER_RESOURCES, 600 } },
 					}),
 					i(238860, {	-- Deluxe Val'sharah Bed (DECOR!)
+						["sourceAchievement"] = 10698,	-- That's Val'sharah Folks!	// Not rewarded by the achievement but simply unlocked for buying at the vendor
 						["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 					}),
 					i(245700, {	-- Kaldorei Cushioned Seat (DECOR!)
-						["sourceQuest"] = 38663,	-- The Die is Cast
 						["cost"] = { { "c", ORDER_RESOURCES, 250 } },
 					}),
 					i(245703, {	-- Kaldorei Treasure Trove (DECOR!)
-						["sourceAchievement"] = 11258,	-- Treasures of Val'sharah
 						["cost"] = { { "c", ORDER_RESOURCES, 750 } },
 					}),
 					i(245702, {	-- Kaldorei Wall Shelf (DECOR!)
-						["sourceQuest"] = 38147,	-- Entangled Dreams
 						["cost"] = { { "c", ORDER_RESOURCES, 450 } },
 					}),
 					i(245697, {	-- Shala'nir Feather Bed (DECOR!)
-						["sourceAchievement"] = 10698,	-- That's Val'sharah Folks!
 						["cost"] = { { "c", ORDER_RESOURCES, 950 } },
 					}),
 				},

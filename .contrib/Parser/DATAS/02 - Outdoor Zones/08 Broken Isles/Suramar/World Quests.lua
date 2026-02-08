@@ -5,7 +5,9 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
+			n(WORLD_QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				q(42859),	-- A Draught of Hope
 				q(42969),	-- A Spy in Our Midst
 				q(42111),	-- Aggressive Reconnaisance

@@ -9,7 +9,7 @@ root(ROOTS.Zones, {
 			["lore"] = "The Broken Shore was introduced to the campaign in Patch 7.2 with World Quests, Armies of Legionfall reputation, Nethershards, and a new dungeon and raid.",
 			["timeline"] = { ADDED_7_0_3_LAUNCH },
 			["maps"] = { 676 },	-- Broken Shore (Opening Warrior OH map)
-			["groups"] = bubbleDown({ ["timeline"] = { ADDED_7_2_0 }, }, {
+			["groups"] = bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 				n(ACHIEVEMENTS, {
 					ach(11731),	-- A Magic Contribution
 					ach(11732),	-- A Magnificent Contribution
@@ -270,9 +270,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 46774,	-- The Nether Disruptor
 							["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 							["coord"] = { 41.1, 59.3, BROKEN_SHORE },
-							["cost"] = {
-								{ "i", 147451, 1 },	-- Armorcrafter's Commendation
-							},
+							["cost"] = { { "i", 147451, 1 } },	-- Armorcrafter's Commendation
 							["repeatable"] = true,
 						}),
 					}),
@@ -306,7 +304,7 @@ root(ROOTS.Zones, {
 							{ 66.0, 32.5, BROKEN_SHORE },
 							{ 74.0, 30.6, BROKEN_SHORE },
 						},
-						["cost"] = { { "i", 147775, 1 }, },		-- 1x Nether Portal Disruptor
+						["cost"] = { { "i", 147775, 1 } },		-- 1x Nether Portal Disruptor
 						["crs"] = {
 							121092,	-- Anomalous Observer
 							121049,	-- Baleful Knight-Captain
@@ -493,7 +491,7 @@ root(ROOTS.Zones, {
 								i(146905, { ["_drop"] = { "spellID" }, }),	-- Sentinax Beacon of the Firestorm
 								spell(240302, {	-- Carnage Portal (Red)
 									["icon"] = 133250,
-									["cost"] = {{ "i", 146906, 1 }},	-- Sentinax Beacon of Carnage
+									["cost"] = { { "i", 146906, 1 } },	-- Sentinax Beacon of Carnage
 									["groups"] = {
 										i(146912, {	-- Sentinax Beacon of Greater Carnage
 											["crs"] = {
@@ -508,7 +506,7 @@ root(ROOTS.Zones, {
 								}),
 								spell(240123, {	-- Domination Portal (Blue)
 									["icon"] = 133267,
-									["cost"] = {{ "i", 146903, 1 }},	-- Sentinax Beacon of Domination
+									["cost"] = { { "i", 146903, 1 } },	-- Sentinax Beacon of Domination
 									["groups"] = {
 										i(146910, {	-- Sentinax Beacon of Greater Domination
 											["crs"] = {
@@ -525,7 +523,7 @@ root(ROOTS.Zones, {
 								}),
 								spell(240308, {	-- Engineering Portal (Orange)
 									["icon"] = 133257,
-									["cost"] = {{ "i", 146908, 1 }},	-- Sentinax Beacon of Engineering
+									["cost"] = { { "i", 146908, 1 } },	-- Sentinax Beacon of Engineering
 									["groups"] = {
 										i(146914, {	-- Sentinax Beacon of Greater Engineering
 											["crs"] = {
@@ -539,7 +537,7 @@ root(ROOTS.Zones, {
 								}),
 								spell(240299, {	-- Firestorm Portal (Green)
 									["icon"] = 133270,
-									["cost"] = {{ "i", 146905, 1 }},	-- Sentinax Beacon of the Firestorm
+									["cost"] = { { "i", 146905, 1 } },	-- Sentinax Beacon of the Firestorm
 									["groups"] = {
 										i(146911, {	-- Sentinax Beacon of the Greater Firestorm
 											["crs"] = {
@@ -553,7 +551,7 @@ root(ROOTS.Zones, {
 								}),
 								spell(240311, {	-- Torment Portal (Purple)
 									["icon"] = 133254,
-									["cost"] = {{ "i", 146909, 1 }},	-- Sentinax Beacon of Torment
+									["cost"] = { { "i", 146909, 1 } },	-- Sentinax Beacon of Torment
 									["groups"] = {
 										i(146915, {	-- Sentinax Beacon of Greater Torment
 											["crs"] = {
@@ -567,7 +565,7 @@ root(ROOTS.Zones, {
 								}),
 								spell(240305, {	-- Warbeast Portal (Yellow)
 									["icon"] = 133249,
-									["cost"] = {{ "i", 146907, 1 }},	-- Sentinax Beacon of Warbeasts
+									["cost"] = { { "i", 146907, 1 } },	-- Sentinax Beacon of Warbeasts
 									["groups"] = {
 										i(146913, {	-- Sentinax Beacon of Greater Warbeasts
 											["crs"] = {
@@ -1376,7 +1374,7 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(268551, {	-- Curious Wyrmtongue Cache [Used first one out of many]
-						["cost"] = {{ "i", 143559, 1 }},	-- Wyrmtongue's Cache Key
+						["cost"] = { { "i", 143559, 1 } },	-- Wyrmtongue's Cache Key
 						["groups"] = {
 							i(147867),	-- Pilfered Sweeper (TOY!)
 							i(146953),	-- Scraps (PET!)
@@ -1457,10 +1455,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.8, 67.4, BROKEN_SHORE },
 						["groups"] = {
 							i(142452, {	-- Lingering Wyrmtongue Essence (TOY!)
-								["cost"] = { { "c", 1226, 50000 }, },	-- 50,000x Nethershard
+								["cost"] = { { "c", 1226, 50000 } },	-- 50,000x Nethershard
 							}),
 							i(143559, {	-- Wyrmtongue's Cache Key
-								["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
+								["cost"] = { { "c", 1226, 2000 } },	-- 2,000x Nethershard
 							}),
 						},
 					}),
@@ -1469,19 +1467,19 @@ root(ROOTS.Zones, {
 						["groups"] = bubbleDownClassicRep(FACTION_ARMIES_OF_LEGIONFALL, {
 							{		-- Neutral
 								i(147451, {	-- Armorcrafter's Commendation
-									["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
+									["cost"] = { { "c", 1226, 1000 } },	-- 1,000x Nethershard
 								}),
 								iensemble(141372, {	-- Arsenal: Armaments of the Ebon Blade
-									["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
+									["cost"] = { { "c", 1226, 2000 } },	-- 2,000x Nethershard
 								}),
 								iensemble(141371, {	-- Arsenal: Armaments of the Silver Hand
-									["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
+									["cost"] = { { "c", 1226, 1000 } },	-- 1,000x Nethershard
 								}),
 								i(139879, {	-- Crate of Champion Equipment
-									["cost"] = { { "c", 1226, 250 }, },		-- 250x Nethershard
+									["cost"] = { { "c", 1226, 250 } },		-- 250x Nethershard
 								}),
 								i(147212, {	-- Dauntless Bracers
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147226),	-- Fel-Treated Bracers
 										i(147227),	-- Galvanized Stormscale Bracers
@@ -1490,19 +1488,19 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147221, {	-- Dauntless Choker
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147263),	-- Animus Pendant
 									},
 								}),
 								i(147222, {	-- Dauntless Cloak
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147269) -- Unifying Drape
 									},
 								}),
 								i(147215, {	-- Dauntless Gauntlets
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147238),	-- Fel-Treated Gauntlets
 										i(147239),	-- Galvanized Stormscale Gauntlets
@@ -1511,7 +1509,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147219, {	-- Dauntless Girdle
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147254),	-- Fel-Treated Belt
 										i(147255),	-- Galvanized Stormscale Belt
@@ -1520,7 +1518,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147216, {	-- Dauntless Hood
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147242),	-- Fel-Treated Hood
 										i(147243),	-- Galvanized Stormscale Helm
@@ -1529,7 +1527,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147217, {	-- Dauntless Leggings
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147246),	-- Fel-Treated Legguards
 										i(147247),	-- Galvanized Stormscale Legguards
@@ -1538,13 +1536,13 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147220, {	-- Dauntless Ring
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147257),	-- Avenging Band
 									},
 								}),
 								i(147218, {	-- Dauntless Spaulders
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147250),	-- Fel-Treated Spaulders
 										i(147251),	-- Galvanized Stormscale Spaulders
@@ -1553,7 +1551,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147214, {	-- Dauntless Treads
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147234),	-- Fel-Treated Boots
 										i(147235),	-- Galvanized Stormscale Boots
@@ -1562,7 +1560,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147223, {	-- Dauntless Trinket
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147275),	-- Beguiler's Talisman
 										i(147276),	-- Spellbinder's Seal
@@ -1570,7 +1568,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(147213, {	-- Dauntless Tunic
-									["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
+									["cost"] = { { "c", 1226, 400 } },	-- 400x Nethershard
 									["groups"] = {
 										i(147229),	-- Fel-Treated Chestguard
 										i(147230),	-- Galvanized Stormscale Chestguard
@@ -1579,47 +1577,47 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(153006, {	-- Grimoire of Lost Knowledge
-									["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+									["cost"] = { { "c", 1226, 2500 } },	-- 2,500x Nethershard
 								}),
 								i(147775, {	-- Nether Portal Disruptor
 									["description"] = "Can be used to summon rare elite mobs from Unstable Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
-									["cost"] = { { "c", 1226, 250 }, },		-- 250x Nethershard
+									["cost"] = { { "c", 1226, 250 } },		-- 250x Nethershard
 								}),
 								i(146659, {	-- Nethershard Essence
-									["cost"] = { { "c", 1226, 8000 }, },	-- 8,000x Nethershard
+									["cost"] = { { "c", 1226, 8000 } },	-- 8,000x Nethershard
 								}),
 								i(156630, {	-- Relinquished Armor Set
-									["cost"] = { { "c", 1226, 400 }, },		-- 1,000x Nethershard
+									["cost"] = { { "c", 1226, 400 } },		-- 1,000x Nethershard
 								}),
 								i(151541, {	-- Technique: Glyph of Floating Shards (RECIPE!)
 									["timeline"] = { ADDED_7_2_5 },
-									["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+									["cost"] = { { "c", 1226, 2500 } },	-- 2,500x Nethershard
 								}),
 								i(141067, {	-- Technique: Grimoire of the Wrathguard (RECIPE!)
 									["timeline"] = { ADDED_7_2_0 },
-									["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+									["cost"] = { { "c", 1226, 2500 } },	-- 2,500x Nethershard
 								}),
 							}, {	-- Friendly
 							}, {	-- Honored
 								i(147698, {	-- Cauterizing Void Shard
-									["cost"] = { { "c", 1226, 5000 }, },	-- 5,000x Nethershard
+									["cost"] = { { "c", 1226, 5000 } },	-- 5,000x Nethershard
 								}),
 								i(147864, {	-- Legionfall Banner
-									["cost"] = { { "c", 1226, 4000 }, },	-- 4,000x Nethershard
+									["cost"] = { { "c", 1226, 4000 } },	-- 4,000x Nethershard
 								}),
 							}, {	-- Revered
 								i(130199, {	-- Legion Pocket Portal (TOY!)
-									["cost"] = { { "c", 1226, 7500 }, },	-- 7,500x Nethershard
+									["cost"] = { { "c", 1226, 7500 } },	-- 7,500x Nethershard
 								}),
 								i(147707, {	-- Repurposed Fel Focuser
-									["cost"] = { { "c", 1226, 7500 }, },	-- 7,500x Nethershard
+									["cost"] = { { "c", 1226, 7500 } },	-- 7,500x Nethershard
 								}),
 							}, {	-- Exalted
 								i(147708, {	-- Legion Invasion Simulator (TOY!)
-									["cost"] = { { "c", 1226, 25000 }, },	-- 25,000x Nethershard
+									["cost"] = { { "c", 1226, 25000 } },	-- 25,000x Nethershard
 								}),
 								i(147205, {	-- Legionfall Tabard
-									["cost"] = { { "c", 1226, 10000 }, },	-- 10,000x Nethershard
+									["cost"] = { { "c", 1226, 10000 } },	-- 10,000x Nethershard
 								}),
 							},
 						}),
@@ -1630,7 +1628,7 @@ root(ROOTS.Zones, {
 					-- #if BEFORE DF
 					["lvl"] = lvlsquish(110, 110, 45),
 					-- #endif
-				},{
+				}, {
 					q(46209, {	-- A Flare In The Dark
 						["classes"] = { HUNTER },
 					}),

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local SIGHTLESS_EYE = 1149;
-local VEILED_ARGUNITE = 1508;	-- Exo Note: Temp placement until it gets added to currencies
+local VEILED_ARGUNITE = 1508;
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {

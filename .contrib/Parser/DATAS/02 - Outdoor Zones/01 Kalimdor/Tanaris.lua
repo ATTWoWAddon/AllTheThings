@@ -1976,7 +1976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
+					["cost"] = { { "i", 12359, 40 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2006,7 +2006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
+					["cost"] = { { "i", 12359, 60 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2021,7 +2021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
+					["cost"] = { { "i", 12359, 50 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2036,7 +2036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 12359, 20 } },	-- Thorium Bar
+					["cost"] = { { "i", 12359, 60 } },	-- Thorium Bar
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,

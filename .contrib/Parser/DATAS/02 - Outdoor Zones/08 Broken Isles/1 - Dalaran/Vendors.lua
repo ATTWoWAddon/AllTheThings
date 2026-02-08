@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132459),	-- Perseverance of the Ebon Martyr
@@ -114,7 +114,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147301, {	-- Coffer of Twin Faiths [Priest]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(144244),	-- Kam Xi'raff
@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
@@ -176,7 +176,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147295, {	-- Demonslayer's Soul-Sealed Satchel [Demon Hunter]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137061),	-- Raddon's Cascading Eyes
@@ -202,7 +202,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147303, {	-- Giant Elemental's Close Stone Fist [Shaman]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(143732),	-- Uncertain Reminder
@@ -231,7 +231,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147299, {	-- Hand-Carved Jade Puzzle Box [Monk]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137063),	-- Fundamental Observation
@@ -266,7 +266,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147302, {	-- Hollow Skeleton Key [Rogue]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(151815),	-- The Empty Crown
@@ -291,7 +291,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147300, {	-- Light-Bound Relinquary [Paladin]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137065),	-- Justice Gaze
@@ -322,7 +322,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147296, {	-- Living Root-Bound Cache [Druid]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(151801),	-- Behemoth Headdress
@@ -360,7 +360,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132394),	-- Hood of Eternal Disdain
@@ -388,7 +388,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147298, {	-- Spell-Secured Pocket of Infinite Depths [Mage]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(132863),	-- Darckli's Dragonfire Diadem
@@ -416,7 +416,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147305, {	-- Stalwart Champion's War Chest [Warrior]
-							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
+							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
 							["groups"] = {
 								i(137088),	-- Ceann-Ar Charger
@@ -645,11 +645,9 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(253251, {	-- Blightfire Candle (DECOR!)
-							["sourceQuest"] = 39801,	-- The Splintered Fleet
 							["cost"] = 2000000,	-- 200g
 						}),
 						i(245411, {	-- Dark Ship's Lantern (DECOR!)
-							["sourceQuest"] = 38882,	-- A New Life for Undeath
 							["cost"] = 20000000,	-- 2,000g
 						}),
 					},
@@ -1249,7 +1247,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 43.1, 49.1, LEGION_DALARAN },
 					["groups"] = {
 						i(246851, {	-- "Raising Your Eyes" Painting (DECOR!)
-							["sourceQuest"] = 84996,	-- Vereesa's Tale
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 150000000,	-- 15,000g
 						}),
@@ -1648,28 +1645,28 @@ root(ROOTS.Zones, {
 					["coord"] = { 48.8, 13.5, LEGION_DALARAN },
 					["groups"] = {
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
-							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
+							["cost"] = { { "c", 1275, 150 } },	-- 150x Curious Coin
 						}),
 						i(136702, {	-- Formula: Soul Fibril (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(141860, {	-- Ingram's Puzzle
-							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
+							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
-							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
+							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(136699, {	-- Plans: Flamespike (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(136706, {	-- Technique: Straszan Mark (RECIPE!)
-							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 					},
 				}),

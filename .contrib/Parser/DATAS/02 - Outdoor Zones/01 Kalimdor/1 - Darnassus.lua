@@ -1613,10 +1613,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}, {	-- Honored
 							i(245605, {	-- Gilnean Stone Wall (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 3000000,	-- 300g
 							}),
 						}, {	-- Revered
 							i(245603, {	-- Gilnean Noble's Trellis (DECOR!)
+								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 3500000,	-- 350g
 							}),
 							i(67532, {	-- Gilnean Satchel
