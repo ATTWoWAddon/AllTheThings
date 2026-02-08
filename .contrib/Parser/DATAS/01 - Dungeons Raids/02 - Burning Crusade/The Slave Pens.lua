@@ -43,7 +43,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					["lvl"] = lvlsquish(62, 62, 10),
-					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						objective(1, {	-- Earthbinder Rayge Discovered
 							["provider"] = { "n", 17885 },	-- Earthbinder Rayge
@@ -66,7 +65,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
-					-- #endif
 				}),
 				q(29563, {	-- Lost in Action
 					["qg"] = 54667,	-- Watcher Jhang

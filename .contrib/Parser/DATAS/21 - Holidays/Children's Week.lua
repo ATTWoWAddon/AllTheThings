@@ -828,14 +828,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
-			-- #if BEFORE CATA
 			["groups"] = {
 				objective(1, {	-- Go to the docks of Ratchet in the Barrens.
 					["provider"] = { "n", 9558 },	-- Grimble <Shipmaster>
 					["coord"] = { 63.0, 38.0, THE_BARRENS },
 				}),
 			},
-			-- #endif
 		}),
 		q(911, {	-- Gateway to the Frontier [Horde - Orc] (removed)
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]

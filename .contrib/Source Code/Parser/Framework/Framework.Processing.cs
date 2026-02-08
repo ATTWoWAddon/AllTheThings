@@ -4657,8 +4657,13 @@ namespace ATT
                             if (!TryGetSOURCED("npcID", pID, out _) && coords != null)
                             {
                                 // When adding an NPC under the Quest, we will ignore it as being Sourced there for further Parser logic
-                                providerData = new Dictionary<string, object> { { "npcID", pID }, { Coords.Field, coords }, { "_ignoreSourced", true } };
-                                parentg.Add(providerData);
+                                // TODO: perhaps revisit this another time. just because the only use for an NPC is a removed quest objective doesn't mean the NPC should only
+                                // exist under that removed quest as a Sourced NPC. this leads to many false-removed tags on in-game NPCs.
+                                if (!parentData.ContainsKey("u"))
+                                {
+                                    providerData = new Dictionary<string, object> { { "npcID", pID }, { Coords.Field, coords }, { "_ignoreSourced", true } };
+                                    parentg.Add(providerData);
+                                }
                             }
                             else
                             {
