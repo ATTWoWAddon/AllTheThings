@@ -245,11 +245,11 @@ app:CreateWindow("Debugger", {
 					npcID = tonumber(npcID);
 					--print("GOSSIP_SHOW", type, npcID);
 					if type == "GameObject" then
-						info = { key = "objectID", ["objectID"] = npcID, ["name"] = UnitName("npc") };
+						info = { key = "objectID", ["objectID"] = npcID };
 					else
 						info = { key = "npcID", ["npcID"] = npcID };
-						info.name = UnitName("npc");
 					end
+					info.name = UnitName("npc");
 					local faction = UnitFactionGroup("npc");
 					if faction then
 						info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
@@ -421,6 +421,7 @@ app:CreateWindow("Debugger", {
 							if ot == "objectID" then
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
 								info.basename = GameTooltipTextLeft1:GetText() or UNKNOWN
+								app.print('ObjectID: '..info.objectID.. ' || ' .. 'Name: ' .. info.basename)
 								self:AddObjectWithHeader(app.HeaderConstants.TREASURES, info);
 							else
 								info = { key = ot, [ot] = tonumber(id), g = { info }};
