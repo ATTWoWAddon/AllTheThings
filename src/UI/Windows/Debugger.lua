@@ -556,13 +556,16 @@ app:CreateWindow("Debugger", {
 					OnClick = function(row, button)
 						app:ShowPopupDialogWithMultiLineEditBox("", function(txt)
 							if txt then
-								if txt:sub(-1) ~= "," then txt = txt .. ","; end
-								local func,err = loadstring("return " .. txt .. "true");
+								txt = txt:gsub("groups", "g");
+								local lastChar = txt:sub(-1);
+								if lastChar == "," or lastChar == ";" then txt = txt:sub(1, -2); end
+								local func,err = loadstring("local data = " .. txt .. ";return data,true");
 								if not err and func then
 									local data,success = func();
 									if data and success then
 										MergeObject(self.data.g, CloneObject(data));
 										MergeObject(self.rawData, data);
+										self:Update(true);
 									else
 										app.print("Something went wrong importing the raw data...");
 									end
