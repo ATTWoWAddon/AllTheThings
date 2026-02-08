@@ -1429,36 +1429,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							i(175059),	-- Otherworldly Saddle (QI!)
 						},
 					}),
-					q(58879, {	-- Alpaca It Up
-						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
-						["provider"] = { "n", 162765 },	-- Friendly Alpaca
-						["coords"] = {
-							{ 15.0, 62.0, NZOTH_ASSAULT_ULDUM },
-							{ 24.0, 9.0, NZOTH_ASSAULT_ULDUM },
-							{ 28.0, 49.0, NZOTH_ASSAULT_ULDUM },
-							{ 30.0, 29.0, NZOTH_ASSAULT_ULDUM },
-							{ 39.0, 10.0, NZOTH_ASSAULT_ULDUM },
-							{ 42.0, 70.0, NZOTH_ASSAULT_ULDUM },
-							{ 46.0, 48.0, NZOTH_ASSAULT_ULDUM },
-							{ 53.0, 19.0, NZOTH_ASSAULT_ULDUM },
-							{ 55.0, 69.0, NZOTH_ASSAULT_ULDUM },
-							{ 63.0, 53.0, NZOTH_ASSAULT_ULDUM },
-							{ 63.0, 14.0, NZOTH_ASSAULT_ULDUM },
-							{ 70.0, 39.0, NZOTH_ASSAULT_ULDUM },
-							{ 76.0, 68.0, NZOTH_ASSAULT_ULDUM },
-						},
-						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
-						["isDaily"] = true,
-						["groups"] = {
-							q(58887, {	-- Alpaca It In
-								["sourceQuest"] = 58879,	-- Alpaca It Up
-								["provider"] = { "n", 162765 },	-- Friendly Alpaca
-								["groups"] = {
-									i(174859),	-- Springfur Alpaca (MOUNT!)
-								},
-							}),
-						},
-					}),
 					q(56377, {	-- Forging Onward
 						["description"] = "Granted upon entering the Seat of Ramkahen.",
 						["sourceQuest"] = 56376,	-- Surfacing Threats
@@ -1702,6 +1672,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 57.6, 43.6, NZOTH_ASSAULT_ULDUM },
 					})),
 				})),
+			}),
+			n(SPECIAL, {
+				header(HEADERS.Spell, 316802, {	-- Springfur Alpaca (MOUNT!)
+					q(58879, {	-- Alpaca It Up
+						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
+						["provider"] = { "n", 162765 },	-- Friendly Alpaca
+						["coords"] = {
+							{ 15.0, 62.0, NZOTH_ASSAULT_ULDUM },
+							{ 24.0, 9.0, NZOTH_ASSAULT_ULDUM },
+							{ 28.0, 49.0, NZOTH_ASSAULT_ULDUM },
+							{ 30.0, 29.0, NZOTH_ASSAULT_ULDUM },
+							{ 39.0, 10.0, NZOTH_ASSAULT_ULDUM },
+							{ 42.0, 70.0, NZOTH_ASSAULT_ULDUM },
+							{ 46.0, 48.0, NZOTH_ASSAULT_ULDUM },
+							{ 53.0, 19.0, NZOTH_ASSAULT_ULDUM },
+							{ 55.0, 69.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.0, 53.0, NZOTH_ASSAULT_ULDUM },
+							{ 63.0, 14.0, NZOTH_ASSAULT_ULDUM },
+							{ 70.0, 39.0, NZOTH_ASSAULT_ULDUM },
+							{ 76.0, 68.0, NZOTH_ASSAULT_ULDUM },
+						},
+						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
+						["isDaily"] = true,
+						["groups"] = {
+							q(58887, {	-- Alpaca It In
+								["sourceQuest"] = 58879,	-- Alpaca It Up
+								["provider"] = { "n", 162765 },	-- Friendly Alpaca
+								["groups"] = {
+									i(174859),	-- Springfur Alpaca (MOUNT!)
+								},
+							}),
+						},
+					}),
+					o(341808, {	-- Gersahl Shrub
+						["description"] = "Can be located along the river banks in present / N'Zoth assault timeline.",
+						["g"] = { i(174858) },	-- Gersahl Greens
+					}),
+				}),
 			}),
 			n(ZONE_REWARDS, {
 				i(173376),	-- Uldum Accord Insignia
