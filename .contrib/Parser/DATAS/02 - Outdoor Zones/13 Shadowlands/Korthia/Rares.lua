@@ -1,9 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(179769, {	-- Consumption
 				["description"] = "Only gives daily kill and achievement credit when it is in Rare or Rare Elite form.\n\nWhen it spawns, there is a zonewide announcement: |cFFf73f3fMawsworn Ruiner yells: Soon it shall feed off the Maw Walkers!|r",
 				["crs"] = {

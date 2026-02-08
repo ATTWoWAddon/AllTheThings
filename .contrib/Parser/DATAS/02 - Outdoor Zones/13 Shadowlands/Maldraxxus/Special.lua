@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(SPECIAL, {
@@ -11,10 +12,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "Step 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.\n\nObtained each week for free after the first time.",
 						["timeline"] = { ADDED_9_2_0 },
 						["cost"] = {
-							{"i",187662,1},	-- Strange Goop
-							{"i",187916,1},	-- Coilclutch Vine
-							{"i",187922,1},	-- Flipper Fish
-							{"i",187915,1},	-- Pungent Blobfish
+							{ "i", 187662, 1 },	-- Strange Goop
+							{ "i", 187916, 1 },	-- Coilclutch Vine
+							{ "i", 187922, 1 },	-- Flipper Fish
+							{ "i", 187915, 1 },	-- Pungent Blobfish
 						},
 					}),
 				},

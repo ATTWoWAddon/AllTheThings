@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
 			["lvl"] = { 50 },
-		},{
+		}, {
 			q(51131, {	-- Absolutely Barbaric (A)
 				["races"] = ALLIANCE_ONLY,
 			}),

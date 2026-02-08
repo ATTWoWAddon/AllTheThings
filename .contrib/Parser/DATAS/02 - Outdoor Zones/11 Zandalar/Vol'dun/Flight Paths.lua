@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(VOLDUN, {
 		n(FLIGHT_PATHS, {
 			fp(2144, {	-- Goldtusk Inn, Vol'dun
-				["description"] = "Becomes available after completing |cFFFFD700The Best Kill is Overkill|r during the Goldtusk Inn quest chain.",
+				["sourceQuest"] = 48320,	-- The Best Kill is Overkill
 				["races"] = HORDE_ONLY,
 				["coord"] = { 42.7, 61.1, VOLDUN },
 			}),
@@ -41,12 +41,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			fp(2112, {	-- Vulture's Nest, Vol'dun [Alliance]
-				["description"] = "Requires completion of Mission Report: Vulture's Nest and related quest line to unlock.",
+				["sourceQuest"] = 53044,	-- Vulture's Nest
 				["coord"] = { 53.6, 37.6, VOLDUN },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			-- This FlightPath is not collectible, but is faked on the map by Blizzard
-			fp(2162, {["collectible"] = false}),	-- Devoted Sanctuary, Vol'dun
+			fp(2162, { ["collectible"] = false }),	-- Devoted Sanctuary, Vol'dun
 		}),
 	}),
 })));

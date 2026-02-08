@@ -46,40 +46,40 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["timeline"] = { ADDED_8_1_0 },
 				["groups"] = {
 					i(166491, {	-- Albino Duskwatcher (PET!)
-						["cost"] = { { "c", 1710, 200 }, },	-- 200x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 200 } },	-- 200x Seaferer's Dubloon
 					}),
 					i(160286, {	-- Blue Tricorne Hat
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166662, {	-- Cranky Crab (TOY!)
-						["cost"] = { { "c", 1710, 200 }, },	-- 200x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 200 } },	-- 200x Seaferer's Dubloon
 					}),
 					i(166500, {	-- Crimson Octopode (PET!)
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166461, {	-- Gnarlwood Waveboard (TOY!)
-						["cost"] = { { "c", 1710, 300 }, },	-- 300x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 300 } },	-- 300x Seaferer's Dubloon
 					}),
 					i(163619, {	-- Golden Beetle
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(160289, {	-- Grey Tricorne Hat
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166663, {	-- Hand Anchor (TOY!)
-						["cost"] = { { "c", 1710, 150 }, },	-- 150x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 150 } },	-- 150x Seaferer's Dubloon
 					}),
 					i(167855, {	-- Island Expedition Belt
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(167850, {	-- Island Expedition Boots
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(167848, {	-- Island Expedition Bracers
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(167858, {	-- Island Expedition Cloak
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 						["groups"] = {
 							i(160332, {	-- Mud-Slicked Capote -- Opening on Alliance
 								["races"] = ALLIANCE_ONLY,
@@ -90,35 +90,35 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(167851, {	-- Island Expedition Gloves
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(167853, {	-- Island Expedition Legwear
-						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(163620, {	-- Island Flotsam
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166749, {	-- Lyrics: Song of the Sea (CI!)
-						["cost"] = { { "c", 1710, 25 }, },	-- 25x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 25 } },	-- 25x Seaferer's Dubloon
 					}),
 					i(160290, {	-- Red Tricorne Hat
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166471, {	-- Saltwater Seahorse (MOUNT!)
-						["cost"] = { { "c", 1710, 500 }, },	-- 500x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 500 } },	-- 500x Seaferer's Dubloon
 					}),
 					i(163618, {	-- Shimmering Shell
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(166745, {	-- Siltwing Albatross (MOUNT!)
-						["cost"] = { { "c", 1710, 1000 }, },	-- 1,000x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 1000 } },	-- 1,000x Seaferer's Dubloon
 					}),
 					i(166501, {	-- Soggy Page
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(245482, {	-- Undercity Spiked Chest (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1710, 250 }, },	-- 250x Seaferer's Dubloon
+						["cost"] = { { "c", 1710, 250 } },	-- 250x Seaferer's Dubloon
 					}),
 				},
 			}),
@@ -129,55 +129,55 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["modID"] = 14,
 				},{
 					i(173950, {	-- Crestfall Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173949, {	-- Dread Chain Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173988, {	-- Havenswood Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173989, {	-- Jorundall Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173991, {	-- Rotting Mire Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173992, {	-- Skittering Hollow Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173993, {	-- Snowblossom Salvage
-						["cost"] = {{ "c", 1710, 175 }},	-- 175x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 175 } },	-- 175x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173990, {	-- Molten Cay Salvage
-						["cost"] = {{ "c", 1710, 120 }},	-- 120x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 120 } },	-- 120x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173994, {	-- Un'gol Ruins Salvage
-						["cost"] = {{ "c", 1710, 120 }},	-- 120x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 120 } },	-- 120x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173996, {	-- Verdant Wilds Salvage
-						["cost"] = {{ "c", 1710, 120 }},	-- 120x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 120 } },	-- 120x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173997, {	-- Whispering Reef Salvage
-						["cost"] = {{ "c", 1710, 120 }},	-- 120x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 120 } },	-- 120x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MOUNTS,BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173987, {	-- Elemental Salvage
-						["cost"] = {{ "c", 1710, 75 }},	-- 75x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 75 } },	-- 75x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",BATTLE_PETS,MISC},{"fill"}},
 					}),
 					i(173995, {	-- Venture Co 'Salvage'
-						["cost"] = {{ "c", 1710, 50 }},	-- 50x Seafarer's Dubloons
+						["cost"] = { { "c", 1710, 50 } },	-- 50x Seafarer's Dubloons
 						["sym"] = {{"sub","common_island_expedition_salvage",MISC},{"fill"}},
 					}),
 				}),
@@ -269,46 +269,46 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.0, 32.2, DAZARALOR },
 				["groups"] = {
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163504, {	-- Child of Jani (PET!)
 						["description"] = "Complete the \"Get Hek'd\" achievement for this item to appear on the vendor.",
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163705, {	-- Imaginary Gun (TOY!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 					}),
 					i(165840, {	-- Shattered Pet Portal (CI!)
 						["timeline"] = { REMOVED_9_1_0 },
 						-- #if BEFORE 9.0.2
-						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 } },
 						-- #endif
 					}),
 					i(163502, {	-- Lil' Ben'fon (PET!)
 						["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
-						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde. Alliance can use it so we don't mark the actual species.
 					}),
 					i(161016, {	-- Lil' Tika (PET!)
 						["sourceQuests"] = { 49681 },	-- Lil' Tika
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde. Alliance can use it so we don't mark the actual species.
 					}),
 					i(139003, {	-- Pocket Pet Portal (CI!)
 						["timeline"] = { REMOVED_9_1_0 },
-						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 } },
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 					i(163498, {	-- Tiny Direhorn (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 					}),
 				},
 			}),
@@ -448,22 +448,22 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),
 					i(163493, {	-- Frenzied Cottontail (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 					}),
 					i(163492, {	-- Drustvar Piglet (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),
 					i(163495, {	-- Greatwing Macaw (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(163496, {	-- Mechanical Prarie Dog (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),
 					i(163494, {	-- Bilefang Skitterer (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 				},
 			}),
@@ -495,75 +495,75 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(166743, {	-- Blight Bomber (TOY!)
-						["cost"] = { { "c", 1716, 125 }, },	-- 125x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 125 } },	-- 125x Honorbound Service Medal
 					}),
 					i(166469, {	-- Bloodthirsty Dreadwing (MOUNT!)
-						["cost"] = { { "c", 1716, 750 }, },	-- 750x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 750 } },	-- 750x Honorbound Service Medal
 					}),
 					i(166559, {	-- Commander's Signet of Battle
-						["cost"] = { { "c", 1716, 300 }, },	-- 300x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 300 } },	-- 300x Honorbound Service Medal
 					}),
 					i(166755, {	-- Deathstalkers' Gloaming Powder
-						["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 75 } },	-- 75x Honorbound Service Medal
 					}),
 					i(166751, {	-- Draught of Ten Lands
-						["cost"] = { { "c", 1716, 5 }, },	-- 5x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 5 } },	-- 5x Honorbound Service Medal
 					}),
 					i(166549, {	-- Fine Crimson Cloak
-						["cost"] = { { "c", 1716, 125 }, },	-- 125x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 125 } },	-- 125x Honorbound Service Medal
 					}),
 					i(166756, {	-- Loa-Touched Warscroll
-						["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 75 } },	-- 75x Honorbound Service Medal
 					}),
 					i(166753, {	-- Orcish War Horn
-						["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 75 } },	-- 75x Honorbound Service Medal
 					}),
 					i(166464, {	-- Rubyshell Krolusk (MOUNT!)
-						["cost"] = { { "c", 1716, 200 }, },	-- 200x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 200 } },	-- 200x Honorbound Service Medal
 					}),
 					i(174373, {	-- Sandy Nightsaber (H) (MOUNT!)
 						["sourceQuest"] = 57959,	-- Heroic Warfront: The Battle for Darkshore
-						["cost"] = { { "c", 1716, 350 }, },	-- 350x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 350 } },	-- 350x Honorbound Service Medal
 					}),
 					i(166752, {	-- Stone Guard's Bladed Cloak
-						["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 75 } },	-- 75x Honorbound Service Medal
 					}),
 					i(166347, {	-- Tanzil (PET!)
-						["cost"] = { { "c", 1716, 100 }, },	-- 100x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 100 } },	-- 100x Honorbound Service Medal
 					}),
 					i(166754, {	-- Tome of Thalassian Hymns
-						["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 75 } },	-- 75x Honorbound Service Medal
 					}),
 					i(166547, {	-- War-Torn Crimson Cloak
-						["cost"] = { { "c", 1716, 50 }, },	-- 50x Honorbound Service Medal
+						["cost"] = { { "c", 1716, 50 } },	-- 50x Honorbound Service Medal
 					}),
 					i(245472, {	-- Blightfire Hanging Lantern (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 150 }, },	-- 150x War Resources
+						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 					}),
 					i(245471, {	-- Blightfire Lantern (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 150 }, },	-- 150x War Resources
+						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 					}),
 					i(245474, {	-- Forsaken War Planning Table (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 300 }, },	-- 300x War Resources
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
 					}),
 					i(245464, {	-- Inert Blight Canister (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 					}),
 					i(241067, {	-- Large Forsaken Spiked Brazier (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 					}),
 					i(245476, {	-- Large Forsaken War Tent (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 300 }, },	-- 300x War Resources
+						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
 					}),
 					i(245477, {	-- Small Forsaken War Tent (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 					}),
 				},
 			}),
@@ -600,14 +600,14 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(166444),	-- Honorbound Scouting Map (CI!)
 					i(163779, {	-- Lil' War Machine (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(161550, {	-- Lustful Warbringer's Legplates
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(165719, {	-- Monelite Whetstone
-						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 					}),
 					i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -722,81 +722,64 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = bubbleDownClassicRep(FACTION_ZANDALARI_EMPIRE, {
 					{		-- Neutral
 						i(245417, {	-- Akunda the Tapestry (DECOR!)
-							["sourceQuest"] = 47874,	-- Clearing the Fog
-							["cost"] = {{ "c", 1560, 400 }},	-- 400x War Resources
+							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
 						}),
 						i(245487, {	-- Bookcase of Gonk (DECOR!)
-							["sourceAchievement"] = 13038,	-- Raptari Rider
-							["cost"] = {{ "c", 1560, 500 }},	-- 500x War Resources
+							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						}),
 						i(245491, {	-- Bwonsamdi's Golden Gong (DECOR!)
-							["sourceQuest"] = 50808,	-- Halting the Empire's Fall
-							["cost"] = {{ "c", 1560, 600 }},	-- 600x War Resources
+							["cost"] = { { "c", 1560, 600 } },	-- 600x War Resources
 						}),
 						i(245490, {	-- Dazar'alor Forge (DECOR!)
-							["sourceAchievement"] = 12733,	-- Professional Zandalari Master
-							["cost"] = {{ "c", 1560, 600 }},	-- 600x War Resources
+							["cost"] = { { "c", 1560, 600 } },	-- 600x War Resources
 						}),
 						i(245497, {	-- Golden Loa's Altar (DECOR!)
-							["sourceAchievement"] = 12614,	-- Loa Expectations
-							["cost"] = {{ "c", 1560, 500 }},	-- 500x War Resources
+							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						}),
 						i(245485, {	-- Golden Zandalari Bed (DECOR!)
-							["sourceQuest"] = 50963,	-- Of Dark Deeds and Dark Days
-							["cost"] = {{ "c", 1560, 1000 }},	-- 1,000x War Resources
+							["cost"] = { { "c", 1560, 1000 } },	-- 1,000x War Resources
 						}),
 						i(245522, {	-- Grand Mask of Bwonsamdi, Loa of Graves (DECOR!)
-							["sourceAchievement"] = 12479,	-- Zandalar Forever!
-							["cost"] = {{ "c", 1560, 1200 }},	-- 1,200x War Resources
+							["cost"] = { { "c", 1560, 1200 } },	-- 1,200x War Resources
 						}),
 						i(245494, {	-- Idol of Pa'ku, Master of Winds (DECOR!)
-							["sourceAchievement"] = 13039,	-- Paku'ai
-							["cost"] = {{ "c", 1560, 200 }},	-- 200x War Resources
+							["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 						}),
 						i(245493, {	-- Idol of Rezan, Loa of Kings (DECOR!)
-							["sourceQuest"] = 47741,	-- To Sacrifice a Loa
-							["cost"] = {{ "c", 1560, 200 }},	-- 200x War Resources
+							["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 						}),
 						i(245486, {	-- Tired Troll's Bench (DECOR!)
-							["sourceQuests"] = {
-								47432,	-- The Bargain is Struck (Paku)
-								48897,	-- The Bargain is Struck (Gonk)
-							},
-							["cost"] = {{ "c", 1560, 150 }},	-- 150x War Resources
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 						i(244326, {	-- Zandalari Wall Shelf (DECOR!)
-							["sourceAchievement"] = 13018,	-- Dune Rider
-							["cost"] = {{ "c", 1560, 150 }},	-- 150x War Resources
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 						i(245263, {	-- Zocalo Drinks (DECOR!)
-							["sourceQuest"] = 48554,	-- The Source of the Problem
-							["cost"] = {{ "c", 1560, 150 }},	-- 150x War Resources
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 						i(244325, {	-- Zuldazar Cook's Griddle (DECOR!)
-							["sourceAchievement"] = 12746,	-- The Zandalari Menu
-							["cost"] = {{ "c", 1560, 400 }},	-- 400x War Resources
+							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
 						}),
 						i(245489, {	-- Zuldazar Stool (DECOR!)
-							["sourceQuest"] = 47250,	-- We'll Meet Again
-							["cost"] = {{ "c", 1560, 150 }},	-- 150x War Resources
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 					}, {	-- Friendly
 						i(245521, {	-- Stone Zandalari Lamp (DECOR!)
-							["cost"] = {{ "c", 1560, 100 }},	-- 100x War Resources
+							["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						}),
 					}, {	-- Honored
 						i(243113, {	-- Blue Dazar'alor Rug (DECOR!)
-							["cost"] = {{ "c", 1560, 150 }},	-- 150x War Resources
+							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
 						}),
 						i(243130, {	-- Zandalari Weapon Rack (DECOR!)
-							["cost"] = {{ "c", 1560, 300 }},	-- 300x War Resources
+							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
 						}),
 					}, {	-- Revered
 						i(257399, {	-- Zandalari War Brazier (DECOR!)
-							["cost"] = {{ "c", 1560, 300 }},	-- 300x War Resources
+							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
 						}),
 						i(256919, {	-- Zandalari War Chandelier (DECOR!)
-							["cost"] = {{ "c", 1560, 300 }},	-- 300x War Resources
+							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
 						}),
 					}, {	-- Exalted
 					},
@@ -823,18 +806,18 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
-						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
-						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["classes"] = TANKS,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
-						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["classes"] = HEALERS,
 						["u"] = REMOVED_FROM_GAME,
 					}),

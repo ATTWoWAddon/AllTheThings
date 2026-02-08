@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ARDENWEALD, {
 		n(VENDORS, {
@@ -15,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					r(360545, {	-- Mark of the Shimmering Ardenmoth (RECIPE!)
 						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
-						["cost"] = { { "i", 187943, 1}, },	-- 1x Fae Net
+						["cost"] = { { "i", 187943, 1 } },	-- 1x Fae Net
 						["timeline"] = { ADDED_9_1_5 },
 					}),
 				},

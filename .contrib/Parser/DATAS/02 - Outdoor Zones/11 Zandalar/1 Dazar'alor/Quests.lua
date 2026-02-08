@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
 					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,
 						["groups"] = {
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162533, {	-- Scouting Report: Hillcrest Pasture
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162535, {	-- Scouting Report: Mudfisher Cove
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162531, {	-- Scouting Report: Stonefist Watch
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162534, {	-- Scouting Report: Stonetusk Watch
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162536, {	-- Scouting Report: Swiftwind Post
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162532, {	-- Scouting Report: Windfall Cavern
-						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(162530, {	-- Scouting Report: Wolf's Den
-						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
 						["races"] = HORDE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {

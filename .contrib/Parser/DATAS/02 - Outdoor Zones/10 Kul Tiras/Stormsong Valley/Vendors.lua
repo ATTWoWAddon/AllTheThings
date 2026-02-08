@@ -126,31 +126,31 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(252396, {	-- Admiralty's Copper Lantern (DECOR!)
 						["minReputation"] = { FACTION_STORMS_WAKE, FRIENDLY },	-- Storm's Wake, Friendly
-						["cost"] = {{ "c", 1560, 125 }},	-- 125x War Resources
+						["cost"] = { { "c", 1560, 125 } },	-- 125x War Resources
 					}),
 					i(252394, {	-- Bowhull Bookcase (DECOR!)
 						["minReputation"] = { FACTION_STORMS_WAKE, REVERED },	-- Storm's Wake, Revered
-						["cost"] = {{ "c", 1560, 550 }},	-- 550x War Resources
+						["cost"] = { { "c", 1560, 550 } },	-- 550x War Resources
 					}),
 					i(252395, {	-- Brennadam Coop (DECOR!)
 						["sourceQuest"] = 51401,	-- Carry On
-						["cost"] = {{ "c", 1560, 450 }},	-- 450x War Resources
+						["cost"] = { { "c", 1560, 450 } },	-- 450x War Resources
 					}),
 					i(252652, {	-- Copper Stormsong Well (DECOR!)
 						["minReputation"] = { FACTION_STORMS_WAKE, REVERED },	-- Storm's Wake, Revered
-						["cost"] = {{ "c", 1560, 800 }},	-- 800x War Resources
+						["cost"] = { { "c", 1560, 800 } },	-- 800x War Resources
 					}),
 					i(252655, {	-- Copper Tidesage's Sconce (DECOR!)
 						["sourceQuest"] = 50611,	-- Storm's Vengeance
-						["cost"] = {{ "c", 1560, 175 }},	-- 175x War Resources
+						["cost"] = { { "c", 1560, 175 } },	-- 175x War Resources
 					}),
 					i(245984, {	-- Sagehold Window (DECOR!)
 						["sourceQuest"] = 50783,	-- The Abyssal Council
-						["cost"] = {{ "c", 1560, 350 }},	-- 350x War Resources
+						["cost"] = { { "c", 1560, 350 } },	-- 350x War Resources
 					}),
 					i(252398, {	-- Stormsong Water Pump (DECOR!)
 						["minReputation"] = { FACTION_STORMS_WAKE, HONORED },	-- Storm's Wake, Honored
-						["cost"] = {{ "c", 1560, 200 }},	-- 200x War Resources
+						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
 					}),
 				},
 			}),
@@ -159,19 +159,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162000, {	-- Pig Nose
-						["cost"] = { { "i", 155838, 25 }, },	-- 25x Briarback Quill
+						["cost"] = { { "i", 155838, 25 } },	-- 25x Briarback Quill
 					}),
 					i(155820, {	-- Quillbomb
-						["cost"] = { { "i", 155838, 10 }, },	-- 10x Briarback Quill
+						["cost"] = { { "i", 155838, 10 } },	-- 10x Briarback Quill
 					}),
 					i(155822, {	-- Sedative Quill
-						["cost"] = { { "i", 155838, 10 }, },	-- 10x Briarback Quill
+						["cost"] = { { "i", 155838, 10 } },	-- 10x Briarback Quill
 					}),
 					i(155819, {	-- Thrice-Pickled Threshadon Omelet
-						["cost"] = { { "i", 155838, 10 }, },	-- 10x Briarback Quill
+						["cost"] = { { "i", 155838, 10 } },	-- 10x Briarback Quill
 					}),
 					i(155821, {	-- Vial of Viscous Goo
-						["cost"] = { { "i", 155838, 10 }, },	-- 10x Briarback Quill
+						["cost"] = { { "i", 155838, 10 } },	-- 10x Briarback Quill
 					}),
 				},
 			}),
@@ -180,41 +180,41 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 					}),
 					i(163509, {	-- Freshwater Pincher (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 					}),
 					i(163705, {	-- Imaginary Gun (TOY!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 					}),
 					i(165840, {	-- Shattered Pet Portal (CI!)
 						["timeline"] = { REMOVED_9_1_0 },
 						-- #if BEFORE 9.0.2
-						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 } },
 						-- #endif
 					}),
 					i(139003, {	-- Pocket Pet Portal (CI!)
 						["timeline"] = { REMOVED_9_1_0 },
-						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 } },
 					}),
 					i(163512, {	-- Sandstinger Wasp (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 					}),
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 					}),
 					i(163514, {	-- Carnivorous Lasher (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 150 }, },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 150 } },
 					}),
 				},
 			}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.8, 33.6, STORMSONG_VALLEY },
 				["groups"] = {
 					i(162000, {	-- Pig Nose
-						["cost"] = { { "i", 155838, 25 }, },	-- 25x Briarback Quill
+						["cost"] = { { "i", 155838, 25 } },	-- 25x Briarback Quill
 					}),
 				},
 			}),
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(163490, {	-- Pair of Bee Wings (PET!)
-							["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g

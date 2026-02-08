@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(162681, {	-- Elusive Quickhoof
 				["description"] = "Feed it Seaside Leafy Greens Mix to get the mount.",
-				["cost"] = {{ "i", 161128, 1 }},	-- Seaside Leafy Greens
+				["cost"] = { { "i", 161128, 1 } },	-- Seaside Leafy Greens
 				["coords"] = {
 					{ 54.2, 51.0, VOLDUN },
 					{ 54.6, 53.0, VOLDUN },

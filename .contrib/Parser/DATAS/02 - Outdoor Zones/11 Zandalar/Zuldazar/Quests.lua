@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 	["sym"] = {
 		{ "sub", "pvp_gear_base", EXPANSION.BFA, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
@@ -9,6 +10,7 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 		{ "modID", 47 },	-- blue. still the wrong iLvl because i can't also apply 2, but it looks better
 	},
 })
+
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(QUESTS, {
@@ -610,7 +612,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(159146, {	-- Kua'fon (MOUNT!)
-						["cost"] = {{"i",157782,1}},	-- Pterrordax Egg
+						["cost"] = { { "i", 157782, 1 } },	-- Pterrordax Egg
 						-- using cost here to show the quest chain starting item
 					}),
 				},
@@ -1372,7 +1374,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 55253 },	-- A Show of Faith
 				["provider"] = { "n", 151286 },	-- Child of Torcali
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
-				["cost"] = { { "i", 157779, 3 }, },	-- 3x Infant Dino Kibble
+				["cost"] = { { "i", 157779, 3 } },	-- 3x Infant Dino Kibble
 				["races"] = HORDE_ONLY,
 			}),
 			q(49146, {	-- Spirits' Belongings

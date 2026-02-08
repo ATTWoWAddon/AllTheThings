@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(TREASURES, {
@@ -58,7 +59,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "The mob Mawsworn Inquisitor has a 1-2% drop chance for the key.",
 				["coord"] = { 60.0, 18.0, ZERETH_MORTIS },
 				["questID"] = 65465,
-				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
+				["cost"] = { { "i", 189704, 1 } },	-- 1x Dominance Key
 				["groups"] = {
 					i(189863),	-- Spatial Opener
 					i(190638),	-- Tormented Mawsteel Greatsword
@@ -70,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["questID"] = 65346,
 				["groups"] = sharedData({
 					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
-					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
+					["cost"] = { { "i", 189863, 1 } },	-- 1x Spatial Opener
 					["sharedDescription"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 					["crs"] = {
 						184329,	-- Locus Shift (Gravid Repose)
@@ -194,7 +195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Inside the cave. Need to collect 5xLost Ovoids around Zereth Mortis.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
-				["cost"] = { { "i", 190239, 5 } },	-- 5xLost Ovoid
+				["cost"] = { { "i", 190239, 5 } },	-- 5x Lost Ovoid
 				["groups"] = {
 					i(189435),	-- Schematic: Multichicken
 				},
@@ -627,7 +628,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 66.0, 26.9, ZERETH_MORTIS },
 				},
 				["questID"] = 65611,
-				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
+				["cost"] = { { "i", 190197, 1 } },	-- 1x Sandworn Chest Key
 				["groups"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
@@ -681,7 +682,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
 				["coord"] = { 42.0, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
-				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["cost"] = { { "i", 188231, 1 } },	-- 1x Provis Cache Key
 				["groups"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
 						["questID"] = 65474,

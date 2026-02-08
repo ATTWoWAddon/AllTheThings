@@ -3,7 +3,10 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
-		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 } }, {
+		n(WORLD_QUESTS, sharedData({
+			["sourceQuest"] = 64230,	-- Cyphers of the First Ones
+			["isWorldQuest"] = true,
+		}, {
 			q(65081, {	-- An Apple A Day
 				["coord"] = { 47.9, 88.7, ZERETH_MORTIS },
 				["groups"] = {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(RARES, {
@@ -220,7 +221,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
-				["cost"] = {{"i",187923,1}},	-- Aurelid Lure
+				["cost"] = { { "i", 187923, 1 } },	-- Aurelid Lure
 				["questID"] = 65548,
 				["groups"] = {
 					i(187676, {	-- Deepstar Polyp (MOUNT!)

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(SPECIAL, {
@@ -12,7 +13,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(187813),	-- Chicken Soul
 				},
 			})),
-			header(HEADERS.Item, 182614, sharedDataSelf({ ["lockCriteria"] = { 1, "spellID", 339588 }, ["DisablePartySync"] = true }, {	-- Sinrunner Blanchy
+			header(HEADERS.Item, 182614, sharedDataSelf({	-- Sinrunner Blanchy
+				["lockCriteria"] = { 1, "spellID", 339588 },
+				["DisablePartySync"] = true,
+			}, {
 				["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days. On each day, you must have a specific item. You can gather all the items in advance. You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth. Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
 				["crs"] = { 173468 },	-- Dead Blanchy
 				["coord"] = { 63.1, 43.1, REVENDRETH },
@@ -47,14 +51,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 59.2, 18.9, WESTFALL },
 						},
 						["questID"] = 62038,
-						["cost"] = { { "i", 182581, 8 }, },	-- 8x Handful of Oats
+						["cost"] = { { "i", 182581, 8 } },	-- 8x Handful of Oats
 					}),
 					header(HEADERS.Item, 182585, {	-- Grooming Brush
 						["description"] = "Day 2: Borrow 1 |cFFFFFFFFGrooming Brush|r from Snickersnee in Darkhaven.",
 						["sourceQuests"] = { 62038 },	-- Handful of Oats
 						["coord"] = { 63.4, 61.8, REVENDRETH },
 						["questID"] = 62042,
-						["cost"] = { { "i", 182581, 1 }, },	-- 1x Grooming Brush
+						["cost"] = { { "i", 182581, 1 } },	-- 1x Grooming Brush
 					}),
 					header(HEADERS.Item, 182595, {	-- Sturdy Horseshoe
 						["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r. They can be found scattered around roads in Revendreth. Unlike the Sacks of Oats, these sparkle.",
@@ -69,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 74.5, 57.8, REVENDRETH },
 						},
 						["questID"] = 62047,
-						["cost"] = { { "i", 182595, 1 }, },	-- 4x Sturdy Horseshoe
+						["cost"] = { { "i", 182595, 1 } },	-- 4x Sturdy Horseshoe
 					}),
 					header(HEADERS.Item, 182599, {	-- Bucket of Clean Water
 						["description"] = "Day 4: Pick up the |cFFFFFFFFEmpty Water Bucket|r in Revendreth, and fill it in either Bastion or Ardenweald.",

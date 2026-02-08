@@ -16,15 +16,27 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			["groups"] = {
 				ach(12869, {	-- Azeroth at War: After Lordaron
 					["_doautomation"] = true,
-					["groups"] = { i(245467, {["timeline"] = { ADDED_11_2_7 }}),},	-- Lordaeron Banded Crate (DECOR!)
+					["groups"] = {
+						i(245467, {	-- Lordaeron Banded Crate (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				ach(12870, {	-- Azeroth at War: Kalimdor on Fire
 					["_doautomation"] = true,
-					["groups"] = { i(245483, {["timeline"] = { ADDED_11_2_7 }}),},	-- Lordaeron Spiked Weapon Rack (DECOR!)
+					["groups"] = {
+						i(245483, {	-- Lordaeron Spiked Weapon Rack (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				ach(12867, {	-- Azeroth at War: The Barrens
 					["_doautomation"] = true,
-					["groups"] = { i(245463, {["timeline"] = { ADDED_11_2_7 }}),},	-- Lordaeron Banded Barrel (DECOR!)
+					["groups"] = {
+						i(245463, {	-- Lordaeron Banded Barrel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
+					},
 				}),
 				i(163036, {["races"]=IGNORED_VALUE}),	-- Polished Pet Charm
 				i(149503, {["races"]=IGNORED_VALUE}),	-- Stolen Gift

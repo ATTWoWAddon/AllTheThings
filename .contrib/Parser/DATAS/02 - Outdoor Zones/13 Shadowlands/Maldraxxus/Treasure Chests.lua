@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(TREASURES, {
@@ -296,8 +297,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 47.4, 62.1, MALDRAXXUS },
 				["questID"] = 62318,
 				["cost"] = {
-					{"i",183111,1},	-- Animated Ulna
-					{"i",183112,1},	-- Animated Radius
+					{ "i", 183111, 1 },	-- Animated Ulna
+					{ "i", 183112, 1 },	-- Animated Radius
 				},
 				["groups"] = {
 					i(183113),	-- Flexing Phalanges
@@ -406,6 +407,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {

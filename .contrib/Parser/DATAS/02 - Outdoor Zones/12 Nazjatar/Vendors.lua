@@ -14,31 +14,31 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170277, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Pearling Reinforcement
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169480, {	-- Benthic Chestguard
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169481, {	-- Benthic Cloak
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169485, {	-- Benthic Gauntlets
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169477, {	-- Benthic Girdle
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169479, {	-- Benthic Helm
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169482, {	-- Benthic Leggings
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169484, {	-- Benthic Spaulders
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169483, {	-- Benthic Treads
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 			},
 		}),
@@ -47,19 +47,19 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(171247, {	-- Abyssal Shard
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(167167, {	-- Ankoan Waveray (MOUNT!)
-					["cost"] = { { "c", 1721, 250 }, },	-- 250x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 250 } },	-- 250x Prismatic Manapearl
 				}),
 				i(169885, {	-- Budding Deepcoral
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
-					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 150 } },	-- 150x Prismatic Manapearl
 				}),
 				i(170204, {	-- Symbol of Gral (TOY!)
-					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 				}),
 			},
 		}),
@@ -70,11 +70,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
 						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 						["u"] = REMOVED_FROM_GAME,
 					}),
 				}, {	-- Friendly
@@ -82,26 +82,26 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = 5000000,	-- 500g
 					}),
 					i(168837, {	-- Depth Forged Aegis (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 					i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 				}, {	-- Honored
 					i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 					i(171151, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
 					}),
 					i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 					i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 				}, {	-- Revered
 					i(169604, {	-- Formula: Accord of Critical Strike [Rank 3] (RECIPE!)
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(169600, {	-- Recipe: Potion of Empowered Proximity [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -126,16 +126,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(169549, {	-- Technique: Contract: Unshackled (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168930, {	-- Tome of the Quickening Tides (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168479, {	-- Troop Requisition (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
-						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 20 } },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
 					i(169603, {	-- Recipe: Greater Mystical Cauldron [Rank 3] (RECIPE!)
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento (Rank 2)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
-					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 20 } },	-- 20x Nazjatar Battle Commendation
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
 					["cost"] = {
@@ -172,20 +172,20 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
 					["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
-					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 5 } },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(169275, {	-- Alliance War Banner (TOY!)
-					["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 10 } },	-- 10x Nazjatar Battle Commendation
 				}),
 				i(169278, {	-- Alliance War Standard (TOY!)
-					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 30 } },	-- 30x Nazjatar Battle Commendation
 				}),
 				i(169357, {	-- Chitterspine Devourer (PET!)
-					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 30 } },	-- 30x Nazjatar Battle Commendation
 				}),
 				i(169203, {	-- Inkscale Deepseeker (MOUNT!)
-					["cost"] = { { "i", 168802, 150 }, },	-- 150x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 150 } },	-- 150x Nazjatar Battle Commendation
 				}),
 			}),
 		})),
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento [Rank 2] (RECIPE!)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
-					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 20 } },	-- 20x Nazjatar Battle Commendation
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
 					["cost"] = {
@@ -204,20 +204,20 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					},
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
-					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 5 } },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(169357, {	-- Chitterspine Devourer (PET!)
-					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 30 } },	-- 30x Nazjatar Battle Commendation
 				}),
 				i(169276, {	-- Horde War Banner (TOY!)
-					["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 10 } },	-- 10x Nazjatar Battle Commendation
 				}),
 				i(169277, {	-- Horde War Standard (TOY!)
-					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 30 } },	-- 30x Nazjatar Battle Commendation
 				}),
 				i(169203, {	-- Inkscale Deepseeker (MOUNT!)
-					["cost"] = { { "i", 168802, 150 }, },	-- 150x Nazjatar Battle Commendation
+					["cost"] = { { "i", 168802, 150 } },	-- 150x Nazjatar Battle Commendation
 				}),
 			}),
 		})),
@@ -225,7 +225,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 73.6, 46.0, NAZJATAR },
 			["groups"] = {
 				i(169377, {	-- Drowned Hatchling (PET!)
-					["cost"] = { { "c", 1721, 40 }, },	-- 40x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 40 } },	-- 40x Prismatic Manapearl
 				}),
 			},
 		}),
@@ -239,31 +239,31 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170277, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Pearling Reinforcement
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169480, {	-- Benthic Chestguard
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169481, {	-- Benthic Cloak
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169485, {	-- Benthic Gauntlets
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169477, {	-- Benthic Girdle
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169479, {	-- Benthic Helm
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169482, {	-- Benthic Leggings
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169484, {	-- Benthic Spaulders
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169483, {	-- Benthic Treads
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 			},
 		}),
@@ -272,19 +272,19 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(171247, {	-- Abyssal Shard
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169885, {	-- Budding Deepcoral
-					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 				}),
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
-					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 150 } },	-- 150x Prismatic Manapearl
 				}),
 				i(170204, {	-- Symbol of Gral (TOY!)
-					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 				}),
 				i(167170, {	-- Unshackled Waveray (MOUNT!)
-					["cost"] = { { "c", 1721, 250 }, },	-- 250x Prismatic Manapearl
+					["cost"] = { { "c", 1721, 250 } },	-- 250x Prismatic Manapearl
 				}),
 			},
 		}),
@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["groups"] = {
 				i(167903, {	-- Disintegrating Sand Sculpture
-					["cost"] = {{"i",167915,4}},	-- Sweet Sea Vegetable
+					["cost"] = { { "i", 167915, 4 } },	-- Sweet Sea Vegetable
 				}),
 			},
 		}),
@@ -450,38 +450,38 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
 						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 						["u"] = REMOVED_FROM_GAME,
 					}),
 				}, {	-- Friendly
 					i(168837, {	-- Depth Forged Aegis (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 					i(169364, {	-- Prismatic Softshell (PET!)
 						["cost"] = 5000000,	-- 500g
 					}),
 					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 					i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 10 } },	-- 10x Prismatic Manapearl
 					}),
 				}, {	-- Honored
 					i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 					i(163073, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
 					}),
 					i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 					i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 30 } },	-- 30x Prismatic Manapearl
 					}),
 				}, {	-- Revered
 					i(169530, {	-- Formula: Accord of Critical Strike [Rank 3] (RECIPE!)
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(169492, {	-- Recipe: Potion of Empowered Proximity [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -506,16 +506,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(169548, {	-- Technique: Contract: Ankoan (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168930, {	-- Tome of the Quickening Tides (Rank 3)
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168480, {	-- Troop Requisition (CI!)
-						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
-						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
+						["cost"] = { { "c", 1721, 20 } },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
 					i(169504, {	-- Recipe: Greater Mystical Cauldron [Rank 3] (RECIPE!)

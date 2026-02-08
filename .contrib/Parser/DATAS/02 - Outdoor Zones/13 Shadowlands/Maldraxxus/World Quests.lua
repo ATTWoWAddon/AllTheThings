@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(WORLD_QUESTS, {
@@ -16,7 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
-		},{
+		}, {
 			q(57205),	-- A Few Bumps Along the Way
 			q(59703),	-- Abombing Run
 			q(61605, {	-- Alchemy: Draught of Grotesque Strength

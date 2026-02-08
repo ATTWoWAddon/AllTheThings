@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
@@ -1016,37 +1017,37 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65727 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	172053, 30 } },	-- 30xTenebrous Ribs
+					["cost"] = { { "i",	172053, 30 } },	-- 30x Tenebrous Ribs
 				}),
 				q(65726, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65725 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	173202, 200 } },	-- 200xShrouded Cloth
+					["cost"] = { { "i",	173202, 200 } },	-- 200x Shrouded Cloth
 				}),
 				q(65728, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65726 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	173037, 10 } },	-- 10xElysian Thade
+					["cost"] = { { "i",	173037, 10 } },	-- 10x Elysian Thade
 				}),
 				q(65729, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65728 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	187704, 5 } },	-- 5xProtoflesh
+					["cost"] = { { "i",	187704, 5 } },	-- 5x Protoflesh
 				}),
 				q(65730, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65729 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	190880, 5 } },	-- 5xCatalyzed Apple Pie
+					["cost"] = { { "i",	190880, 5 } },	-- 5x Catalyzed Apple Pie
 				}),
 				q(65731, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65730 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["cost"] = { { "i",	187171, 1 } },	-- 1xOrganic Melon
+					["cost"] = { { "i",	187171, 1 } },	-- 1x Organic Melon
 				}),
 				q(65732, {	-- The Patient Bufonid
 					["sourceQuests"] = { 65731 },	-- The Burrowed Bufonid

@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CYPHER = 1979;
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
@@ -587,26 +589,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
 					["groups"] = {
 						i(189986, {	-- Armadillo Soul (SOUL!)
-							["cost"] = { { "c", CYPHER, 500 }, },
+							["cost"] = { { "c", CYPHER, 500 } },
 						}),
 						i(187421, {	-- Ashen Liniment
 							["timeline"] = {  ADDED_9_2_7 },
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(188793, {	-- Improvised Cypher Analysis Tool (CI!)
-							["cost"] = { { "c", CYPHER, 150 }, },
+							["cost"] = { { "c", CYPHER, 150 } },
 						}),
 						i(189980, {	-- Brutosaur Soul (SOUL!)
-							["cost"] = { { "c", CYPHER, 1000 }, },
+							["cost"] = { { "c", CYPHER, 1000 } },
 						}),
 						i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(190333, {	-- Jiro Circle of Song (TOY!)
-							["cost"] = { { "c", CYPHER, 100 }, },
+							["cost"] = { { "c", CYPHER, 100 } },
 						}),
 						i(187781, {	-- Olea Cache
-							["cost"] = { { "c", CYPHER, 700 }, },
+							["cost"] = { { "c", CYPHER, 700 } },
 							["sym"] = {
 								{"select", "itemID",
 									188957,	-- Genesis Mote
@@ -666,14 +668,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							},
 						}),
 						i(191039, {	-- Pocopoc Traveler (PET!)
-							["cost"] = { { "c", CYPHER, 500 }, },
+							["cost"] = { { "c", CYPHER, 500 } },
 						}),
 						i(190739, {	-- Provis Wax
 							["timeline"] = { ADDED_9_2_7 },
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
-							["cost"] = { { "c", CYPHER, 25 }, },
+							["cost"] = { { "c", CYPHER, 25 } },
 						}),
 					},
 				}),

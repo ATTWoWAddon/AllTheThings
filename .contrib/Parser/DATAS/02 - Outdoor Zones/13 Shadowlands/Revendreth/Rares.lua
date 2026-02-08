@@ -1,9 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(166393, {	-- Amalgamation of Filth
 				["description"] = "Click on the sparkling Rubbish Box and throw rubbish into the water. Kill the oozes, and eventually the rare will spawn.",
 				["coord"] = { 53.8, 72.5, REVENDRETH },
@@ -203,7 +206,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "To summon Worldedge Gorger, you need to use |cff1eff00Enticing Anima|r to light Worldedge Braziers. |cff1eff00Enticing Anima|r drops from the aberrations that spawn along the river.",
 				["coord"] = { 38.6, 72.0, REVENDRETH },
 				["questID"] = 58259,
-				["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
+				["cost"] = { { "i", 173939, 1 } },	-- Enticing Anima
 				["groups"] = {
 					i(180583, {	-- Impressionable Gorger Spawn
 						["description"] = "To have a chance for this item to drop, you may need to complete the The Endmire Quest (/ATT quest:60480). Better safe than sorry, the Quest only takes 1 minute to do.",

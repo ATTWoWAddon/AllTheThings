@@ -43,9 +43,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["groups"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {
 					{		-- Neutral
 						i(246601, {	-- Bolt Chair (DECOR!)
-							--["sourceQuest"] = XXXXX,	--  XXXXX
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "i", SPARE_PARTS, 10 }},
+							["cost"] = { { "i", SPARE_PARTS, 10 } },
 						}),
 						i(246703, {	-- Double-Sprocket Table (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
@@ -55,9 +54,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							},
 						}),
 						i(246603, {	-- Gnomish Cog Stack (DECOR!)
-							["sourceAchievement"] = 13475,	--  Junkyard Scavenger
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "i", SPARE_PARTS, 50 }},
+							["cost"] = { { "i", SPARE_PARTS, 50 } },
 						}),
 						i(246701, {	-- Gnomish Sprocket Table (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
@@ -67,12 +65,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							},
 						}),
 						i(246479, {	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
-							["sourceAchievement"] = 13723,	--  M.C., Hammered
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "i", SPARE_PARTS, 100 }},
+							["cost"] = { { "i", SPARE_PARTS, 100 } },
 						}),
 						i(246483, {	-- Redundant Reclamation Rig (DECOR!)
-							["sourceAchievement"] = 13473,	--  Diversed Investments
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = {
 								{ "g", 4000000 },	-- 400g
@@ -81,9 +77,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							},
 						}),
 						i(246598, {	-- Screw-Sealed Stembarrel (DECOR!)
-							["sourceAchievement"] = 13477,	--  Junkyard Apprentice
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "i", SPARE_CRATE, 1 }},
+							["cost"] = { { "i", SPARE_CRATE, 1 } },
 						}),
 					}, {	-- Friendly
 						i(246484, {	-- Mechagon Hanging Floodlight (DECOR!)

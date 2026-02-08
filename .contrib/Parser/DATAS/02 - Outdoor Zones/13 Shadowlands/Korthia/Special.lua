@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(SPECIAL, {
@@ -42,12 +43,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["questID"] = 64298,
 				["isDaily"] = true,
 				["groups"] = {
-					q(64293, {["name"] = "Day 1"}),	-- Day 1
-					q(64294, {["name"] = "Day 2"}),	-- Day 2
-					q(64295, {["name"] = "Day 3"}),	-- Day 3
-					q(64296, {["name"] = "Day 4"}),	-- Day 4
-					q(64297, {["name"] = "Day 5"}),	-- Day 5
-					q(64299, {["name"] = "Day 6"}),	-- Day 6
+					q(64293, { ["name"] = "Day 1: Maelie found" }),	-- Day 1
+					q(64294, { ["name"] = "Day 2: Maelie found" }),	-- Day 2
+					q(64295, { ["name"] = "Day 3: Maelie found" }),	-- Day 3
+					q(64296, { ["name"] = "Day 4: Maelie found" }),	-- Day 4
+					q(64297, { ["name"] = "Day 5: Maelie found" }),	-- Day 5
+					q(64299, { ["name"] = "Day 6: Maelie found" }),	-- Day 6
 					q(64292, {	-- Maelie, The Wanderer
 						["description"] = "After you find Maelie 6 times, return to Tinybell and accept responsibility for the wayward unicorn.",
 						["provider"] = { "n", 179930 },	-- Tinybell

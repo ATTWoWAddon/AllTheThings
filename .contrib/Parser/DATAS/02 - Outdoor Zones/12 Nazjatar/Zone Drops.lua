@@ -1,9 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(ZONE_DROPS, {
-	-- Benthic Items
+		-- Benthic Items
 		i(169478),	-- Benthic Bracers
 		i(169480),	-- Benthic Chestguard
 		i(169481),	-- Benthic Cloak
@@ -13,7 +14,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		i(169482),	-- Benthic Leggings
 		i(169484),	-- Benthic Spaulders
 		i(169483),	-- Benthic Treads
-	-- Other Items
+		-- Other Items
 		i(170186, {	-- Abyss Pearl
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152122,	-- Abyssal Defiler

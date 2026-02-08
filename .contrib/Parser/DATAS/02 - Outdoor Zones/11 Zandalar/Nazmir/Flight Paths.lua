@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			fp(2080, {	-- Grimwatt's Crash, Nazmir [Alliance] (Confirmed by Vandiel)
-				["description"] = "Requires completion of Mission Report: Grimwatt's Crash and related quest line to unlock.",
+				["sourceQuest"] = 53007,	-- Grimwatt's Crash
 				["coord"] = { 34.2, 63.2, NAZMIR },
 				["races"] = ALLIANCE_ONLY,
 			}),

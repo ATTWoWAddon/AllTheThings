@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(WORLD_QUESTS, sharedData({
 				["lvl"] = { 50 },
 				["isWorldQuest"] = true,
-		},{
+		}, {
 			--[[	raw quest list to check against
 			q(53283, {	-- Flourishing Sea Stalks
 			}),

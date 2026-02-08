@@ -60,20 +60,32 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					}),
 					i(167870),	-- G99.99 Landshark
 					i(168832),	-- Galvanic Oscillator
-					i(246596, {["timeline"]={ADDED_11_2_7}}),	-- Gnomish Fence (DECOR!)
-					i(246595, {["timeline"]={ADDED_11_2_7}}),	-- Gnomish Fencepost (DECOR!)
+					i(246596, {	-- Gnomish Fence (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(246595, {	-- Gnomish Fencepost (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(169648),	-- Green Spraybot
 					i(168907),	-- Holographic Digitalization Hearthstone (TOY!)
 					i(167649),	-- Hundred-Fathom Lure
-					i(246485, {["timeline"]={ADDED_11_2_7}}),	-- Mechagnome Sustenance Distributor (DECOR!)
-					i(246606, {["timeline"]={ADDED_11_2_7}}),	-- Mechagon Armory Rack (DECOR!)
-					i(246482, {["timeline"]={ADDED_11_2_7}}),	-- Mechanical Gnomish Lamppost (DECOR!)
+					i(246485, {	-- Mechagnome Sustenance Distributor (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(246606, {	-- Mechagon Armory Rack (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(246482, {	-- Mechanical Gnomish Lamppost (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(167751),	-- X-995 Mechanocat (MOUNT!)
 					i(167071),	-- Mechano-Treat
 					i(169384),	-- Microbot XD (PET!)
 					i(169647),	-- Orange Spraybot
 					i(168843),	-- Perfectly Timed Differential
-					i(246597, {["timeline"]={ADDED_11_2_7}}),	-- Perpetual Motion Crate (DECOR!)
+					i(246597, {	-- Perpetual Motion Crate (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(169114),	-- Personal Time Displacer
 					i(168483),	-- Protocol Transference Device
 					i(170065),	-- Re-Procedurally Generated Punchcard

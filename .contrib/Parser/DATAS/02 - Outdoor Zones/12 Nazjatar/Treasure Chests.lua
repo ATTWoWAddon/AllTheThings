@@ -1,13 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(TREASURES, {
-		--[[
-		void cache: locked chest, unknown pre-reqs. 56.3, 15.1
-		arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3
-		reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
-		]]--
 		o_repeated({	-- Arcane Chest
 			["sourceQuests"] = {
 				56156,	-- A Tempered Blade (A)
@@ -167,7 +163,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		o(322413, {	-- Glimmering Chest
-			["cost"] = {{"i",167077,1}},	-- Scrying Stone
+			["cost"] = { { "i", 167077, 1 } },	-- Scrying Stone
 			-- Symlink in other Zone Drops instead of Sourcing again
 			["sym"] = {{"select","itemID",
 				168161,	-- Molted Shell

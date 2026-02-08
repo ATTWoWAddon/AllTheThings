@@ -862,22 +862,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53430, {	-- Order Of Embers Crossbow
 				["provider"] = { "o", 297939 },	-- Order Of Embers Crossbow
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163749,1}},	-- Old Crossbow
+				["cost"] = { { "i", 163749, 1 } },	-- Old Crossbow
 			}),
 			q(53431, {	-- Order Of Embers Flask
 				["provider"] = { "o", 297942 },	-- Order Of Embers Flask
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163746,1}},	-- Old Flask
+				["cost"] = { { "i", 163746, 1 } },	-- Old Flask
 			}),
 			q(53433, {	-- Order Of Embers Hat
 				["provider"] = { "o", 297941 },	-- Order Of Embers Hat
 				["coord"] = { 42.6, 25.1, DRUSTVAR },
-				["cost"] = {{"i",163748,1}},	-- Old Hat
+				["cost"] = { { "i", 163748, 1 } },	-- Old Hat
 			}),
 			q(53432, {	-- Order Of Embers Knife
 				["provider"] = { "o", 297940 },	-- Order Of Embers Knife
 				["coord"] = { 42.6, 25.2, DRUSTVAR },
-				["cost"] = {{"i",163747,1}},	-- Old Knife
+				["cost"] = { { "i", 163747, 1 } },	-- Old Knife
 			}),
 			q(50758, {	-- Painful Memories
 				["sourceQuests"] = { 50754 },	-- To Have Loved and Lost

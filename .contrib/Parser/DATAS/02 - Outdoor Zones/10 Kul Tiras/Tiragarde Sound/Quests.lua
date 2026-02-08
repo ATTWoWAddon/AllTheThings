@@ -844,7 +844,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(252392, { ["timeline"] = { ADDED_11_2_7 } }), 	-- Admiral's Chandelier (DECOR!)
+					i(252392, { 	-- Admiral's Chandelier (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(153357),	-- Battlehorn of the Mountain (PQI!)
 				},
 			}),

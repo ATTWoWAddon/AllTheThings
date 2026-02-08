@@ -1,10 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CATALOGED_RESEARCH = 1931;
 local STYGIA = 1767;
 local SOUL_ASH = 1828;
 local SOUL_CINDERS = 1906;
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(VENDORS, {

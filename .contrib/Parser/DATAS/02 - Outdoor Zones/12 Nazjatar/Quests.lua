@@ -253,9 +253,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
 			},
-			["cost"] = {
-				{"i",170184,1},	-- Ancient Reefwalker Bark
-			},
+			["cost"] = { { "i", 170184, 1 } },	-- Ancient Reefwalker Bark
 			["repeatable"] = true,
 		}),
 		q(56346, {	-- Ancient Technology
@@ -1545,9 +1543,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
 			},
-			["cost"] = {
-				{"i",170183,1},	-- Reefwalker Bark
-			},
+			["cost"] = { { "i", 170183, 1 } },	-- Reefwalker Bark
 			["repeatable"] = true,
 		}),
 		q(56788, {	-- Reclaimed Treasure

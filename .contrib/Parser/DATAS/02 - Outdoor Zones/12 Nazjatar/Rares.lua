@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
@@ -214,7 +215,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["isDaily"] = true,
 			["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
-			["cost"] = {{"i",167893,1}},	-- Prismatic Crystal
+			["cost"] = { { "i", 167893, 1 } },	-- Prismatic Crystal
 			["sym"] = {{"select","itemID",
 				170184,	-- Ancient Reefwalker Bark
 				170183,	-- Reefwalker Bark

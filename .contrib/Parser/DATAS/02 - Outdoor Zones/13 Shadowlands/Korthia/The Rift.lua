@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
 			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.",
 			["cost"] = {
-				{"i",186969,1},	-- Collapsing Riftstone
-				{"i",186731,1},	-- Repaired Riftkey
+				{ "i", 186969, 1 },	-- Collapsing Riftstone
+				{ "i", 186731, 1 },	-- Repaired Riftkey
 			},
 			["groups"] = {
 				n(QUESTS, {
@@ -35,16 +36,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i am sure i have not captured all of myself
 					o_repeated({	-- Riftbound Cache
 						-- Contains
-							-- Epics
-							i(187251),	-- Shaded Skull Shoulderguards
-							i(187243),	-- Shadehunter's Crescent
-							-- Blues
-							i(187421),	-- Ashen Liniment
-							i(187276),	-- Stolen Korthian Supplies
-							-- Greens
-							i(185050),	-- Spider Soul
-							-- Whites
-							i(186994),	-- Design: Shaded Stone Statue (RECIPE!)
+						-- Epics
+						i(187251),	-- Shaded Skull Shoulderguards
+						i(187243),	-- Shadehunter's Crescent
+						-- Blues
+						i(187421),	-- Ashen Liniment
+						i(187276),	-- Stolen Korthian Supplies
+						-- Greens
+						i(185050),	-- Spider Soul
+						-- Whites
+						i(186994),	-- Design: Shaded Stone Statue (RECIPE!)
 						-- Objects
 						o(369437, {	-- Riftbound Cache
 							["coords"] = {

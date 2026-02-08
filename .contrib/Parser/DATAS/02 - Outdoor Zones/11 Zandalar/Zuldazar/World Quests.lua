@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
 			["lvl"] = { 50 },
-		},{
+		}, {
 			petbattle(q(52923, {	-- Add More to the Collection
 				["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 			})),

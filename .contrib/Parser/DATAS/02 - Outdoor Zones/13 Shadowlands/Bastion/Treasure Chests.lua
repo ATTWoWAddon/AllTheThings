@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(TREASURES, {
@@ -11,9 +12,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61006,
 			}),
 			o_repeated({
-			-- Rewards
+				-- Rewards
 				i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
-			-- Objects
+				-- Objects
 				o(353687, {	-- Broken Bell
 					["coord"] = { 58.3, 66.2, BASTION },
 					["questID"] = 60795,
@@ -182,19 +183,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 53.5, 80.4, BASTION },	-- Treasure
 				},
 				["questID"] = 58298,	-- triggers 58292, 58293 and 58294 too
-				["cost"] = {{"i", 173973, 2}},	-- 2x Purian
+				["cost"] = { { "i", 173973, 2 } },	-- 2x Purian
 				["groups"] = {
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
 			o_repeated({	-- Silver Strongbox
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-				["cost"] = {
-					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
-				},
+				["cost"] = { { "i", 180049, 1 } },	-- 1x Steward's Silver Key
 				["groups"] = sharedData({
 					["isDaily"] = true,
-				},{
+				}, {
 					-- Rewards
 					i(184418),	-- Acrobatic Steward (TOY!)
 					-- Objects
@@ -260,9 +259,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60779,
 				["isDaily"] = true,
 				["crs"] = { 170284 },	-- Elios
-				["cost"] = {
-					{ "i", 180285, 1 },	-- 1x Steward's Golden Key
-				},
+				["cost"] = { { "i", 180285, 1 } },	-- 1x Steward's Golden Key
 			}),
 			o(354208, {	-- Stolen Equipment
 				["coord"] = { 40.5, 49.8, BASTION },
@@ -304,6 +301,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(BASTION, {
