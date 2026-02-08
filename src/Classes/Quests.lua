@@ -1465,13 +1465,6 @@ else
 end
 
 -- Quest Lib
-local FactionCache = setmetatable({}, {
-	__index = function(t, factionID)
-		local faction = app.CreateFaction(factionID);
-		t[factionID] = faction;
-		return faction;
-	end,
-});
 local QuestWithReputationCostCollectibles = setmetatable({}, {
 	__index = function(t, quest)
 		if NotInGame(quest) then
@@ -1482,7 +1475,15 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 		local costCollectibles
 		-- TODO: adjust when givesReputation exists
 		local maxReputation = quest.maxReputation
-		costCollectibles = maxReputation and { FactionCache[maxReputation[1]] } or app.EmptyTable
+		if maxReputation then
+			local faction = app.CreateFaction(maxReputation[1]);
+			faction.minReputation = quest.minReputation;
+			faction.maxReputation = maxReputation;
+			faction.r = quest.r;
+			costCollectibles = { faction }
+		else
+			costCollectibles = app.EmptyTable;
+		end
 		t[quest.questID] = costCollectibles
 		return costCollectibles
 	end,
