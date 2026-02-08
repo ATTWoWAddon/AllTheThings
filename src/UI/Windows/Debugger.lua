@@ -548,6 +548,33 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
+				app.CreateRawText("Import Raw Data", {
+					icon = 135468,
+					description = "Click this to import raw data into the debugger. Do NOT import readable data.",
+					visible = true,
+					count = 0,
+					OnClick = function(row, button)
+						app:ShowPopupDialogWithMultiLineEditBox("", function(txt)
+							if txt then
+								if txt:sub(-1) ~= "," then txt = txt .. ","; end
+								local func,err = loadstring("return " .. txt .. "true");
+								print(func, err);
+								if not err and func then
+									local data,success = func();
+									if data and success then
+										MergeObject(self.data.g, CloneObject(data));
+										MergeObject(self.rawData, data);
+									else
+										app.print("Something went wrong importing the raw data...");
+									end
+								else
+									app.print(err);
+								end
+							end
+						end, "Paste Raw Data Below");
+						return true;
+					end,
+				}),
 			},
 			g = {},
 		}));
