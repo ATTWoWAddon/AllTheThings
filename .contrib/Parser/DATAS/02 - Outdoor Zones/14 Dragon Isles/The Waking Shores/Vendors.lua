@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(VENDORS, {
@@ -58,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					i(246863, {	-- Open Tome of the Dragon's Dedication (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 					}),
 				},
 			}),

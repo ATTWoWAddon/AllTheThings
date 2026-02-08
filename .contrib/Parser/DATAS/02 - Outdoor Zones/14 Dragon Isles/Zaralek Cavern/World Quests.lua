@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(WORLD_QUESTS, {
@@ -10,7 +11,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				75145,	-- In the Wake of the Ashes
 			},
 			["groups"] = {
-				n(QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
+				n(QUESTS, sharedData({
+					["isWorldQuest"] = true,
+				}, {
 					q(73221, {	-- A Clear State of Mind
 						["coord"] = { 51.9, 59.6, ZARALEK_CAVERN },
 						["groups"] = {

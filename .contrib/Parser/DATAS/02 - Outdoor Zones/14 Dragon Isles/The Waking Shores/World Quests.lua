@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(WORLD_QUESTS, {
@@ -8,12 +9,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-				--[[
-				q(QUEST, {	-- NAME
-					["coord"] = { XX, YY, THE_WAKING_SHORES }
-				}),
-				]]--
+			["groups"] = sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				q(70150, {	-- 'Many Whelps, Handle It'
 					["coord"] = { 57.8, 68.0, THE_WAKING_SHORES },
 				}),

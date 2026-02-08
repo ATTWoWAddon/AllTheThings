@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -145,7 +147,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
 				},
 				["questID"] = 74085,
-				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
+				["cost"] = { { "i", 200949, 1 } },	-- 1x Case of Fresh Gleamfish
 				["groups"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
 				},
@@ -176,6 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {

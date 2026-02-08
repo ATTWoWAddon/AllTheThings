@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		pvp(n(PVP, {
@@ -184,25 +185,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
 						bloody(750, i(201464)),	-- Flesh Parachute
 						i(198076, {	-- Pest Fogger
-							["cost"] = {
-								{ "i", ROUSING_IRE, 10 },
-							},
+							["cost"] = { { "i", ROUSING_IRE, 10 } },
 						}),
 						bloody(1000, i(201414)),	-- Qalashi Wingshredder
 						i(202064, {	-- Warbanner of Ire
-							["cost"] = {
-								{ "i", ROUSING_IRE, 10 },
-							},
+							["cost"] = { { "i", ROUSING_IRE, 10 } },
 						}),
 						i(200953, {	-- Wild Dragon Fruit
-							["cost"] = {
-								{ "i", ROUSING_IRE, 10 },
-							},
+							["cost"] = { { "i", ROUSING_IRE, 10 } },
 						}),
 						i(200966, {	-- Wild Truffle
-							["cost"] = {
-								{ "i", ROUSING_IRE, 10 },
-							},
+							["cost"] = { { "i", ROUSING_IRE, 10 } },
 						}),
 					}),
 				}),
@@ -219,7 +212,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- #endif
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
-							["cost"] = {{"c", HONOR, 5000}},
+							["cost"] = { { "c", HONOR, 5000 } },
 							["groups"] = {
 								------ Season 1 ------
 								i(201254, {	-- Cracked Medal of Honor [A]

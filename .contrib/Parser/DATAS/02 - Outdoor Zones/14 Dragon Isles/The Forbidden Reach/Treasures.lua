@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(TREASURES, {
@@ -121,21 +122,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			spell(399307, {	-- [DNT] Get Token
 				["coord"] = { 53.6, 36.1, THE_FORBIDDEN_REACH },
-				["cost"] = { { "i", 202667, 1 }, },	-- 1x Sealed Artifact Scroll
+				["cost"] = { { "i", 202667, 1 } },	-- 1x Sealed Artifact Scroll
 				["groups"]= {
 					i(202871),	-- Draconic Artifact
 				}
 			}),
 			n(201006, {	-- Spirit of Blessing
 				["coord"] = { 38.2, 36.9, THE_FORBIDDEN_REACH },
-				["cost"] = { { "i", 202668, 1 }, },	-- 1x Sealed Spirit Scroll
+				["cost"] = { { "i", 202668, 1 } },	-- 1x Sealed Spirit Scroll
 				["groups"]= {
 					i(202872),	-- Token of Blessing
 				}
 			}),
 			n(200958, {	-- Wondrous Fish
 				["coord"] = { 45.1, 53.7, THE_FORBIDDEN_REACH },
-				["cost"] = { { "i", 202669, 1 }, },	-- 1x Sealed Fish Scroll
+				["cost"] = { { "i", 202669, 1 } },	-- 1x Sealed Fish Scroll
 				["groups"]= {
 					i(202854),	-- Wondrous Fish
 				}

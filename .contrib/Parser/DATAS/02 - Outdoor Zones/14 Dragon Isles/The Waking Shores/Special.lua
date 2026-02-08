@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(SPECIAL, {
@@ -21,11 +22,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(192362, {	-- Possessive Hornswog
 				["coord"] = { 64.9, 69.6, THE_WAKING_SHORES },
 				["questID"] = 70864,
-				["cost"] = { { "i", 200063, 1 }, },	-- 1x Observant Riddle "Treat"
+				["cost"] = { { "i", 200063, 1 } },	-- 1x Observant Riddle "Treat"
 			}),
 			i(192777, {	-- Magmashell (MOUNT!)
 				["description"] = "Farm Lavaslurpers and Basalt Shells for Empty Magma Shell in the area around the first waypoint. Go to the second waypoint and click on the Empowered Snail to get the Magmashell mount. You will need to survive the lava.",
-				["cost"] = { { "i", 201883, 1 }, },	-- 1x Empty Magma Shell
+				["cost"] = { { "i", 201883, 1 } },	-- 1x Empty Magma Shell
 				["crs"] = {
 					193138,	-- Lavaslurper
 					193139,	-- Basalt Shell
@@ -46,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["crs"] = {
 					187494,	-- Rampaging Wind
 				},
-				["cost"] = { { "i", 198047, 1 }, },	-- 1x Kul Tiran Red
+				["cost"] = { { "i", 198047, 1 } },	-- 1x Kul Tiran Red
 			}),
 			i(200638, {	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
 				["description"] = "Found inside a secret fish bubble while dead. Wonder what its for?",

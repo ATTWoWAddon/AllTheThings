@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(17560, {	-- Ancient Stones of the Dragon Isles
@@ -690,7 +691,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}},
 		}),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
-			["cost"] = {{"i", 199216, 50 }},	-- 50x A Box of Rocks
+			["cost"] = { {"i", 199216, 50 } },	-- 50x A Box of Rocks
 			["groups"] = {
 				i(207099),	-- Tiny Box of Tiny Rocks (TOY!)
 			},

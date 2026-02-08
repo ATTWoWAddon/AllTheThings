@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		prof(SUPPLY_SHIPMENTS, bubbleDownSelf({ ["requireSkill"] = SUPPLY_SHIPMENTS }, {
@@ -36,11 +37,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							77887,	-- 'World Quest Unlock' (spellID 421687)
 						},
 						["sourceQuestNumRequired"] = 1,
-						["cost"] = {{ "i", 210041, 1 }},	-- Shipment of Goods
+						["cost"] = { { "i", 210041, 1 } },	-- Shipment of Goods
 					}),
 					q(78428, {	-- Crate of the Art
 						["sourceQuests"] = { 78427 },	-- Great Crates!
-						["cost"] = {{ "i", 210041, 5 }},	-- Shipment of Goods
+						["cost"] = { { "i", 210041, 5 } },	-- Shipment of Goods
 					}),
 				})),
 			},

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SPECIAL, {
@@ -19,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
-				["cost"] = { { "i", 204872, 30 }, },	-- 30x Ripped Recipe Scrap
+				["cost"] = { { "i", 204872, 30 } },	-- 30x Ripped Recipe Scrap
 			}),
 			o(398698, {	-- Squeaking Swiss
 				["coord"] = { 52.4, 26.8, ZARALEK_CAVERN },

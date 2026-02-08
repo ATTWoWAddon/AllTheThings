@@ -1,11 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ASPECTS_TOKEN_OF_MERIT_S1 = 201836;
 local ASPECTS_TOKEN_OF_MERIT_S2 = 205225;
 local ASPECTS_TOKEN_OF_MERIT_S3 = 208821;
 local ASPECTS_TOKEN_OF_MERIT_S4 = 217409;
 local ANTIQUE_BRONZE = 213089;
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
@@ -13,27 +15,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 30.8, 60.8, VALDRAKKEN },
 				["groups"] = {
 					i(211522, {	-- Nascent Aspect's Awakened Crest
-						["cost"] = {{"c", ASPECTS_AWAKENED_CREST, 45}},
+						["cost"] = { { "c", ASPECTS_AWAKENED_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 					}),
 					i(208393, {	-- Nascent Aspect's Dreaming Crest
-						["cost"] = {{"c", ASPECTS_DREAMING_CREST, 45}},
+						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(211523, {	-- Nascent Whelpling's Awakened Crest
-						["cost"] = {{"c", WHELPLINGS_AWAKENED_CREST, 45}},
+						["cost"] = { { "c", WHELPLINGS_AWAKENED_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 					}),
 					i(208395, {	-- Nascent Whelpling's Dreaming Crest
-						["cost"] = {{"c", WHELPLINGS_DREAMING_CREST, 45}},
+						["cost"] = { { "c", WHELPLINGS_DREAMING_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(211521, {	-- Nascent Wyrm's Awakened Crest
-						["cost"] = {{"c", WYRMS_AWAKENED_CREST, 45}},
+						["cost"] = { { "c", WYRMS_AWAKENED_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 					}),
 					i(208394, {	-- Nascent Wyrm's Dreaming Crest
-						["cost"] = {{"c", WYRMS_DREAMING_CREST, 45}},
+						["cost"] = { { "c", WYRMS_DREAMING_CREST, 45 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(201584),	-- Serevite Rod
@@ -77,7 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 58.6, 57.6, VALDRAKKEN },
 				["groups"] = {
 					i(199197, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Bottled Essence
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 } },
 						["groups"] = {
 							i(190453),	-- Spark of Ingenuity
 						},
@@ -95,74 +97,73 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["timeline"] = { ADDED_10_1_0, REMOVED_TWW_LAUNCH },
 					}),
 					i(204195, {	-- Drake's Shadowflame Crest
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 } },
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 					i(218114, {	-- Eye of Awakening
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 3 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 3 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
 					}),
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
 					}),
 					i(210436, {	-- Nature's Cradle
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 } },
 						["groups"] = {
 							i(190454),	-- Depleted Primal Chaos
 						},
 					})),
 					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
 					}),
 					i(206037, {	-- Ruby Flightstone
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 } },
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
 					i(210726, {	-- Ruby Flightstone
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(217382, {	-- Ruby Flightstone
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
 					}),
 					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(211515, {	-- Splintered Spark of Awakening
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 6 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 6 } },
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
 					}),
 					i(208396, {	-- Splintered Spark of Dreams
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 } },
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(202152, {	-- Storm-Charged Manipulator
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 6 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 6 } },
 						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
 					}),
 					i(248124, {	-- The Great Hoard (DECOR!)
-						["sourceAchievement"] = 19458,	-- A World Awoken
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 7500 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 7500 } },
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 					i(205999, {	-- Volcanic Sculptor
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 6 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S2, 6 } },
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
 					i(204196, {	-- Wyrm's Shadowflame Crest
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 }},
+						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 } },
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
 				},
@@ -199,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216231, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Dream Distribtuion>
 				["coord"] = { 73.7, 47.4, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
 					i(217700, {	-- Scale of Awakening
 						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
@@ -245,7 +246,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216226, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Scale Associate>
 				["coord"] = { 73.7, 47.1, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
 					i(217698, {	-- Scale of Awakening
 						["classes"] = { EVOKER },
@@ -291,7 +292,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216224, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszy <Vault Vendor>
 				["coord"] = { 73.8, 46.7, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
 					i(194306),	-- All-Totem of the Master
 					i(195483),	-- Awak'mani, Grimtotem's Legacy
@@ -370,7 +371,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 1 } },
 					["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 				}, {
 					i(217601),	-- Crucible Raider's Bronzed Beacon
@@ -439,7 +440,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 1 } },
 					["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 				}, {
 					i(217602),	-- Crucible Raider's Shadowed Beacon
@@ -507,7 +508,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 1 } },
 					["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 				}, {
 					i(217603),	-- Crucible Raider's Molten Beacon
@@ -575,7 +576,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 1 } },
 					["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 				}, {
 					i(217604),	-- Crucible Raider's Corrupted Beacon
@@ -640,10 +641,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["cost"] = { { "i", ANTIQUE_BRONZE, 1 } },
 				}, {
 					i(190170, {	-- Jigglesworth, Sr. (MOUNT!)
-						["cost"] = {{ "i", ANTIQUE_BRONZE, 3 }},
+						["cost"] = { { "i", ANTIQUE_BRONZE, 3 } },
 					}),
 					i(217493),	-- Vault Raider's Primal Greatstaff
 					i(217660),	-- Dream Raider's Replica Dreambinder
@@ -701,48 +702,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(248651, {	-- Draconic Memorial Stone (DECOR!)
-						["sourceQuest"] = 72935,	-- Archives Return
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
 					}),
 					i(248103, {	-- Draconic Stone Table (DECOR!)
 						["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 14 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 300 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 					}),
 					i(248652, {	-- Dragon's Grand Mirror (DECOR!)
 						["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 20 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 250 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
 					i(246706, {	-- Elegant Dracthyr's Tea Cup (DECOR!)
-						["sourceQuest"] = 67047,	-- Warm Away These Shivers
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 					}),
 					i(248655, {	-- Elegant Dracthyr's Tea Set (DECOR!)
-						["sourceQuest"] = 70880,	-- To Cook With Finery
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
 					}),
 					i(248104, {	-- Pentagonal Stone Table (DECOR!)
-						["sourceAchievement"] = 17773,	-- A Blue Dawn
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 					}),
 					i(247223, {	-- Roast Riverbeast Platter (DECOR!)
-						["sourceQuest"] = 67063,	-- 10,000 Years of Roasting
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 175 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 175 } },
 					}),
 					i(248112, {	-- Valdrakken Garden Fountain (DECOR!)
 						["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 6 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 400 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 					}),
 					i(256429, {	-- Valdrakken Lamppost (DECOR!)
-						["sourceQuest"] = 70745,	-- Enforced Relaxation
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
 					}),
 					i(256169, {	-- Valdrakken Oven (DECOR!)
 						["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 3 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 					}),
 					i(248653, {	-- Valdrakken Stone Stool (DECOR!)
-						["sourceQuest"] = 71097,	-- A Helping Claw
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+						["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 					}),
 				},
 			}),
@@ -760,15 +754,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					198810,	-- Swift Armored Vorquin (MOUNT!)
 				}},
 				["groups"] = {
-					i(249548, { ["timeline"] = { ADDED_11_2_7 } }),	-- Augmenter's Opal Banner (DECOR!)
-					i(249824, { ["timeline"] = { ADDED_11_2_7 } }),	-- Devastator's Brazier (DECOR!)
-					i(249549, {	-- Draconic Crafter's Table (DECOR!)
-						["sourceQuest"] = 72515,	-- Augmenting a Dragon
+					i(249548, {	-- Augmenter's Opal Banner (DECOR!)
+						["sourceQuest"] = 72515,	-- Augmenting a Dragon	// Not rewarded by the quest but simply unlocked for buying at the vendor
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
 					}),
-					i(249547, { ["timeline"] = { ADDED_11_2_7 } }),	-- Evoker's Elegant Rug (DECOR!)
-					i(249545, { ["timeline"] = { ADDED_11_2_7 } }),	-- Preserver's Censer (DECOR!)
+					i(249824, {	-- Devastator's Brazier (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(249549, {	-- Draconic Crafter's Table (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+						["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
+					}),
+					i(249547, {	-- Evoker's Elegant Rug (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+					i(249545, {	-- Preserver's Censer (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 			n(185562, {	-- Tithris
@@ -788,38 +790,38 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					-- Trade Up
 					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
-						["cost"] = {{ "c", 2807, 90 }},	-- Drake's Awakened Crests x90
+						["cost"] = { { "c", 2807, 90 } },	-- 90x Drake's Awakened Crests
 						["groups"] = {
 							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
 					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
-						["cost"] = {{ "c", 2806, 90 }},	-- Whelpling's Awakened Crest x90
+						["cost"] = { { "c", 2806, 90 } },	-- 90x Whelpling's Awakened Crest
 						["groups"] = {
 							currency(2807),	-- Drake's Awakened Crest
 						},
 					}),
 					i(212383, {	-- Yawning Basket of Aspect's Awakened Crests
-						["cost"] = {{ "c", 2809, 90 }},	-- Wyrm's Awakened Crests x90
+						["cost"] = { { "c", 2809, 90 } },	-- 90x Wyrm's Awakened Crests
 						["groups"] = {
 							currency(2812),	-- Aspect's Awakened Crest
 						},
 					}),
 					-- Trade Down
 					i(212367, {	-- Clutch of Wyrm's Awakened Crests
-						["cost"] = {{ "c", 2812, 15 }},	-- Aspect's Awakened Crests x15
+						["cost"] = { { "c", 2812, 15 } },	-- 15x Aspect's Awakened Crests
 						["groups"] = {
 							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
 					i(211951, {	-- Pouch of Whelpling's Awakened Crests
-						["cost"] = {{ "c", 2807, 15 }},	-- Drake's Awakened Crests x15
+						["cost"] = { { "c", 2807, 15 } },	-- 15x Drake's Awakened Crests
 						["groups"] = {
 							currency(2806),	-- Whelpling's Awakened Crest
 						},
 					}),
 					i(211952, {	-- Satchel of Drake's Awakened Crests
-						["cost"] = {{ "c", 2809, 15 }},	-- Wyrm's Awakened Crests x15
+						["cost"] = { { "c", 2809, 15 } },	-- 15x Wyrm's Awakened Crests
 						["groups"] = {
 							currency(2807),	-- Drake's Awakened Crest
 						},

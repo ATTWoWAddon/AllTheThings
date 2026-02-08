@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(ZONE_DROPS, {
 			i(199216),	-- A Box of Rocks
 			i(202062, {	-- Ash Feather
 				["description"] = "Can be collected in <10 minutes inside the Neltharus dungeon, by staying near the entrance. They spawn very quickly here for some reason.",
-				["cost"] = {{"i",199177,1}},	-- Ash Feather Amulet
+				["cost"] = { { "i", 199177, 1 } },	-- Ash Feather Amulet
 				["crs"] = {
 					195759,	-- Ash Feather
 				},

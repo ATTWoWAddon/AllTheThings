@@ -940,7 +940,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					title(511),	-- Ama'shan <Name>
 					iensemble(208879),	-- Ensemble: Kaldorei Protector's Adornment
 					iensemble(208785),	-- Traditionalist's Kaldorei Blades
-					i(248401, { ["timeline"] = { ADDED_11_2_7 } }),	-- Ornamental Kaldorei Glaive (DECOR!)
+					i(248401, {	-- Ornamental Kaldorei Glaive (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 				},
 			}),
 		},

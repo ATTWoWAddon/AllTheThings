@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	m(THE_FORBIDDEN_REACH_DRACTHYR, bubbleDownSelf({ ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(TREASURES, {
@@ -59,7 +60,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 				["questID"] = 66932,
 				["groups"] = {
 					i(194037, {	-- Heavy Chest
-						["cost"] = { { "i", 194074, 1 }, },	-- 1xGilded Key
+						["cost"] = { { "i", 194074, 1 } },	-- 1x Gilded Key
 						["groups"] = {
 							i(194072),	-- Sack of Gold
 						},

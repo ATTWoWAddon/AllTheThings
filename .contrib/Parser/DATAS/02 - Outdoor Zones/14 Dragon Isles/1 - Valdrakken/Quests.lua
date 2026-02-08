@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
@@ -221,7 +222,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
-				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197769, 1 } },	-- 1x Tasty Hatchling's Treat
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
@@ -233,7 +234,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197769, 1 } },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -246,7 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197766, 1 }, },	-- 1x Snow in a Cone
+				["cost"] = { { "i", 197766, 1 } },	-- 1x Snow in a Cone
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -259,7 +260,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197767, 1 }, },	-- 1x Blubbery Muffin
+				["cost"] = { { "i", 197767, 1 } },	-- 1x Blubbery Muffin
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
@@ -272,7 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["timeline"] = { ADDED_10_0_5 },
-				["cost"] = { { "i", 197768, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["cost"] = { { "i", 197768, 1 } },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad

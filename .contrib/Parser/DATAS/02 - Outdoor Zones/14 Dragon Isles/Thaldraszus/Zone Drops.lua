@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(ZONE_DROPS, {
@@ -72,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			i(197733, {	-- Unsustainable Containment Core
-				["cost"] = {{"i",197708,5}},	-- 5x Unstable Matrix Core
+				["cost"] = { { "i", 197708, 5 } },	-- 5x Unstable Matrix Core
 			}),
 		}),
 	}),

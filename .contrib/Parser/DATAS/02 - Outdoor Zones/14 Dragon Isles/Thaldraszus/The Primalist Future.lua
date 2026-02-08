@@ -1,8 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ESSENCE_OF_THE_STORM = 202039;
 local ELEMENTAL_OVERFLOW = 2118;
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		m(THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
@@ -166,9 +168,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						-- Cache?
 						i(203681, {	-- Stormed Primalist Cache
-							["cost"] = {
-								{ "i", ESSENCE_OF_THE_STORM, 30 },
-							},
+							["cost"] = { { "i", ESSENCE_OF_THE_STORM, 30 } },
 						}),
 						-- Collect?
 						i(202020, {	-- Chasing Storm (TOY!)
@@ -229,6 +229,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5} }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {

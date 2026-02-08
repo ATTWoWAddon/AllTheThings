@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(QUESTS, {
@@ -648,7 +649,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 					["provider"] = { "n", 190025 },	-- Scout Watu
 					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 193890, 1 }, },	-- Diced Meat
+					["cost"] = { { "i", 193890, 1 } },	-- 1x Diced Meat
 					["groups"] = {
 						i(193892),	-- Wish's Whistle
 					},
@@ -951,9 +952,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190022 },	-- Godoloto
 					["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
 					["cost"] = {
-						{ "i", 201929, 3 },	-- 3xStolen Breath of Ohn'ahra
-						{ "i", 201323, 1 },	-- 1xEssence of Awakening
-						{ "i", 191507, 1 },	-- 1xExultant Incense+++
+						{ "i", 201929, 3 },	-- 3x Stolen Breath of Ohn'ahra
+						{ "i", 201323, 1 },	-- 1x Essence of Awakening
+						{ "i", 191507, 1 },	-- 1x Exultant Incense+++
 					},
 					["groups"] = {
 						mount(395644),	-- Divine Kiss of Ohn'ahra (MOUNT!)
@@ -970,7 +971,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
 					["cost"] = {
 						{ "c", DRAGON_SUPPLIES, 150 },
-						{ "i", 192615, 20 },	-- 20xFluorescent Fluid
+						{ "i", 192615, 20 },	-- 20x Fluorescent Fluid
 					},
 				}),
 				q(71197, {	-- To Tame A Thunderspine
@@ -979,7 +980,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
 					["cost"] = {
 						{ "c", DRAGON_SUPPLIES, 150 },
-						{ "i", 192658, 20 },	-- 20xHigh-Fiber Leaf
+						{ "i", 192658, 20 },	-- 20x High-Fiber Leaf
 					},
 				}),
 				q(71198, {	-- To Tame A Thunderspine
@@ -988,7 +989,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
 					["cost"] = {
 						{ "c", DRAGON_SUPPLIES, 150 },
-						{ "i", 194966, 10 },	-- 10xThousandbite Piranha
+						{ "i", 194966, 10 },	-- 10x Thousandbite Piranha
 					},
 				}),
 				q(71199, {	-- To Tame A Thunderspine
@@ -997,7 +998,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
 					["cost"] = {
 						{ "c", DRAGON_SUPPLIES, 150 },
-						{ "i", 192636, 20 },	-- 10xWoolly Mountain Pelt
+						{ "i", 192636, 20 },	-- 10x Woolly Mountain Pelt
 					},
 				}),
 				q(71195, {	-- To Tame A Thunderspine
@@ -1006,7 +1007,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
 					["cost"] = {
 						{ "c", DRAGON_SUPPLIES, 150 },
-						{ "i", 200598, 1 },	-- 1xMeluun's Green Curry
+						{ "i", 200598, 1 },	-- 1x Meluun's Green Curry
 					},
 				}),
 				q(71209, {	-- Beast of the Plains
@@ -1036,7 +1037,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65806 },	-- Maruukai
 					["provider"] = { "n", 190192 },	-- Windsage Dawa
 					["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 199919, 1 }, },	-- 1x Yak Milk Pudding
+					["cost"] = { { "i", 199919, 1 } },	-- 1x Yak Milk Pudding
 					["groups"] = {
 						i(200258),	-- Arbhog's Horns (QI!)
 						i(199919),	-- Yak Milk Pudding (QI!)

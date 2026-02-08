@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
@@ -14,8 +15,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-- we can't track the required "skill" increase as a collectible to grant this achievement
 					-- so for now at least show the items are needed until this achievement is earned
 					["cost"] = {
-						{ "i", 202017, 500 },	-- Liberated Furbolg Artifacts
-						{ "i", 202018, 100 },	-- Intact Scribe Stick
+						{ "i", 202017, 500 },	-- 500x Liberated Furbolg Artifacts
+						{ "i", 202018, 100 },	-- 100x Intact Scribe Stick
 					},
 				}),
 			}),
@@ -252,61 +253,61 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{		-- Neutral
 						}, {	-- Friendly
 							i(202314, {	-- Big Chunk o' Meat
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 15 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 15 } },
 							}),
 							i(202315, {	-- Frozen Solid Tea
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 15 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 15 } },
 							}),
 						}, {	-- Honored
 							i(197006, {	-- Cliffside Wylderdrake: Plated Nose (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(197129, {	-- Highland Drake: Sleek Horns (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(204354, {	-- Hollowed Furbolg Food Pack
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 							}),
 							i(203995, {	-- Winter Pelt Cloak
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 75 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 75 } },
 							}),
 							i(202282, {	-- Winterpelt Mending Totem
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 							i(202273, {	-- Renewed Proto-Drake: Stubby Snout (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 						}, {	-- Revered
 							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 							i(197102, {	-- Highland Drake: Horned Chin (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 							i(204355, {	-- Hollowed Winterpelt Food Pack
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 							}),
 							i(204678, {	-- Pattern: Paw-Made Winterpelt Reagent Bag (RECIPE!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 750 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 							}),
 							i(202289, {	-- Recipe: Firewater Sorbet (RECIPE!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 750 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 							}),
 							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 							i(203734, {	-- Snow Blanket (TOY!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
 							}),
 							i(197629, {	-- Windborne Velocidrake: Spiked Neck (MM!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 						}, {	-- Exalted
 							i(202255, {	-- Driftling (PET!)
-								["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 						},
 					}),
@@ -335,6 +336,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {
 		m(THE_AZURE_SPAN, {

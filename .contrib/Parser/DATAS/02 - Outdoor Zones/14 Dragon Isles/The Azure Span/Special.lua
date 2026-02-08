@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(SPECIAL, {
@@ -45,8 +46,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					i(201838, {	-- Snowclaw Cub (PET!)
 						["cost"] = {
-							{ "i", 197744, 3 },	-- 3xHornswog Hunk
-							{ "i", 198356, 1 },	-- 1xHoney Snack
+							{ "i", 197744, 3 },	-- 3x Hornswog Hunk
+							{ "i", 198356, 1 },	-- 1x Honey Snack
 						},
 					}),
 				},
@@ -58,9 +59,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["groups"] = {
 					i(201454, {	-- Temperamental Skyclaw (MOUNT!)
 						["cost"] = {
-							{ "i", 201422, 20 },	-- 20xFlash Frozen Meat
-							{ "i", 201421, 20 },	-- 20xTuskarr Jerky
-							{ "i", 201420, 20 },	-- 20xGnolan's House Special
+							{ "i", 201422, 20 },	-- 20x Flash Frozen Meat
+							{ "i", 201421, 20 },	-- 20x Tuskarr Jerky
+							{ "i", 201420, 20 },	-- 20x Gnolan's House Special
 						},
 					}),
 				},

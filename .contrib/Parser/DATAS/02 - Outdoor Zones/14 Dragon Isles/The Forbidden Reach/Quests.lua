@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
@@ -295,20 +296,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			-- Augmentation Evoker questline
 			q(72513, {	-- Our Destiny
 				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72514, {	-- The High Creche
 				["sourceQuests"] = { 72513 },	-- Our Destiny
 				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
 				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72515, {	-- Augmenting a Dragon
 				["sourceQuests"] = { 72514 },	-- The High Creche
 				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
 				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_10_1_5 },
 				["groups"] = {
+					i(249549, {	-- Draconic Crafter's Table (DECOR!)
+						["timeline"] = { ADDED_11_2_7 },
+					}),
 					i(205162),	-- Nelthara (PET!)
 				},
 			}),

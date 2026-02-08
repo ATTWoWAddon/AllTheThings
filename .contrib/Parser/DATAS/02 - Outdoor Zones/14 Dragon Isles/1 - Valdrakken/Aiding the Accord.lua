@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		header(HEADERS.Quest, 70750, {	-- Aiding the Accord
@@ -17,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
 				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR },
-			},{
+			}, {
 				q(70750),	-- Aiding the Accord
 				q(72068),	-- Aiding the Accord: A Feast For All
 				q(72374),	-- Aiding the Accord: Dragonbane Keep

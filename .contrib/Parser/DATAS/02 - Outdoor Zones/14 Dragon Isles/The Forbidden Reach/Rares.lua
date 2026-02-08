@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
 	return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(RARES, sharedData({
@@ -36,7 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200740, {	-- Agni Blazehoof
 				["coord"] = { 56.0, 39.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73166,
-				["cost"] = { { "i", 203407, 1 }, },	-- 1x Draconic Suppression Powder
+				["cost"] = { { "i", 203407, 1 } },	-- 1x Draconic Suppression Powder
 				["groups"] = {
 					bo(74331, true),
 					i(204226),	-- Blazehoof Ashes
@@ -45,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200743, {	-- Amephyst
 				["coord"] = { 31.0, 60.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73168,
-				["cost"] = { { "i", 203413, 1 }, },	-- 1x Crystal Tuning Fork
+				["cost"] = { { "i", 203413, 1 } },	-- 1x Crystal Tuning Fork
 				["groups"] = {
 					bo(74333, true),
 					i(204222),	-- Conductive Ametrine Shard
@@ -55,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200737, {	-- Arcantrix
 				["coord"] = { 49.2, 41.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73163,
-				["cost"] = { { "i", 203412, 1 }, },	-- 1x Arcane Dispelling Rune
+				["cost"] = { { "i", 203412, 1 } },	-- 1x Arcane Dispelling Rune
 				["groups"] = {
 					bo(74328, true),
 					i(204229),	-- Glimmering Rune of Arcantrix
@@ -80,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200725, {	-- Faunos <Lord of Fleece>
 				["coord"] = { 45.6, 37.2, THE_FORBIDDEN_REACH },
 				["questID"] = 73158,
-				["cost"] = { { "i", 203417, 1 }, },	-- 1x Razor-Sharp Animal Bone
+				["cost"] = { { "i", 203417, 1 } },	-- 1x Razor-Sharp Animal Bone
 				["groups"] = {
 					bo(74322, true),
 					i(204231),	-- Kingly Sheepskin Pelt
@@ -89,7 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200739, {	-- Fimbol
 				["coord"] = { 61.2, 26.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73165,
-				["cost"] = { { "i", 203411, 1 }, },	-- 1x Gnomish Voicebox
+				["cost"] = { { "i", 203411, 1 } },	-- 1x Gnomish Voicebox
 				["groups"] = {
 					bo(74330, true),
 					i(204227),	-- Everflowing Antifreeze
@@ -116,7 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200722, {	-- Gareed
 				["coord"] = { 31.2, 53.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73153,
-				["cost"] = { { "i", 203415, 1 }, },	-- 1x Traditional Morqut Kite
+				["cost"] = { { "i", 203415, 1 } },	-- 1x Traditional Morqut Kite
 				["groups"] = {
 					bo(74321, true),
 					i(204225),	-- Perfect Windfeather
@@ -139,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200738, {	-- Kangalo
 				["coord"] = { 56.6, 59.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73164,
-				["cost"] = { { "i", 203416, 1 }, },	-- 1x Dormant Lifebloom Seeds
+				["cost"] = { { "i", 203416, 1 } },	-- 1x Dormant Lifebloom Seeds
 				["groups"] = {
 					bo(74329, true),
 					i(204228),	-- Undigested Hochenblume Petal
@@ -164,7 +166,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200742, {	-- Luttrok
 				["coord"] = { 56.0, 51.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73167,
-				["cost"] = { { "i", 203409, 1 }, },	-- 1x Sparkling Spice Pouch
+				["cost"] = { { "i", 203409, 1 } },	-- 1x Sparkling Spice Pouch
 				["groups"] = {
 					bo(74332, true),
 					i(193235),	-- Luvvy (PET!)
@@ -184,7 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200621, {	-- Manathema
 				["coord"] = { 55.4, 36.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73136,
-				["cost"] = { { "i", 203410, 1 }, },	-- 1x Glowing Crystal Bookmark
+				["cost"] = { { "i", 203410, 1 } },	-- 1x Glowing Crystal Bookmark
 				["groups"] = {
 					bo(74306, true),
 					i(204224),	-- Speck of Arcane Awareness
@@ -218,7 +220,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200620, {	-- Sir Pinchalot
 				["coord"] = { 23.6, 66.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73129,
-				["cost"] = { { "i", 203419, 1 }, },	-- 1x Elusive Croaking Crab
+				["cost"] = { { "i", 203419, 1 } },	-- 1x Elusive Croaking Crab
 				["groups"] = {
 					bo(74305, true),
 				},
@@ -226,7 +228,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200622, {	-- Snarfang
 				["coord"] = { 37.0, 47.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73138,
-				["cost"] = { { "i", 203414, 1 }, },	-- 1x Reinforced Pristine Leather
+				["cost"] = { { "i", 203414, 1 } },	-- 1x Reinforced Pristine Leather
 				["groups"] = {
 					bo(74307, true),
 					i(204232),	-- Slyvern Alpha Claw
@@ -236,7 +238,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200619, {	-- Tectonus
 				["coord"] = { 43.2, 49.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73127,
-				["cost"] = { { "i", 203418, 1 }, },	-- 1x Amplified Quaking Stone
+				["cost"] = { { "i", 203418, 1 } },	-- 1x Amplified Quaking Stone
 				["groups"] = {
 					bo(74300, true),
 					i(204233),	-- Impenetrable Elemental Core
@@ -245,7 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200730, {	-- Tidesmith Zarviss
 				["coord"] = { 80.0, 59.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73161,
-				["cost"] = { { "i", 203408, 1 }, },	-- 1x Ancient Ceremonial Trident
+				["cost"] = { { "i", 203408, 1 } },	-- 1x Ancient Ceremonial Trident
 				["groups"] = {
 					bo(74325, true),
 					i(204230),	-- Dense Seaforged Javelin

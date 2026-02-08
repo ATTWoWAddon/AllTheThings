@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local CatalystableItem = setmetatable({}, { __index = function(t,key)
 	return { bonusID = 8822 }	-- bonusID signifies catalystID 3 when checked via ItemConversionDB
 end})
@@ -14,6 +15,7 @@ local function i_PrimalistToken1200(itemID, t)
 	token.timeline = { ADDED_12_0_0 }
 	return token
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, {
 	m(THE_FORBIDDEN_REACH, {
 		n(ZONE_REWARDS, {
@@ -22,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				currency(2118),	-- Elemental Overflow
 				i(204276),	-- Untapped Forbidden Knowledge
 				i(202196, {	-- Zskera Vault Key
-					["cost"] = { {"c", DRAGON_SUPPLIES, 50} },
+					["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 					["crs"] = {
 						-- Vendors also
 						200566,	-- Cataloger Daela

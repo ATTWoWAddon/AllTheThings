@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 WHELP_DAYCARE = createHeader({
 	readable = "Little Scales Daycare",
 	constant = "WHELP_DAYCARE",
@@ -20,6 +21,7 @@ WHELP_DAYCARE = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(WHELP_DAYCARE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -189,7 +191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
-					["cost"] = {{ "i", 197790, 1 }},	-- Roast Duck Delight
+					["cost"] = { { "i", 197790, 1 } },	-- Roast Duck Delight
 				}),
 				q(72458, {	-- Tag, You're Anxious
 					["sourceQuests"] = { 72457 },	-- A Home-Cooked Meal
@@ -620,6 +622,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	m(DRAGON_ISLES, {
 		m(VALDRAKKEN, {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(VENDORS, {
@@ -22,7 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(213285, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Theozhaklos the Curious <Novice Explorer>
 				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 				["groups"] = bubbleDownFiltered({
-					["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
+					["cost"] = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
 					["bonusID"] = 7532,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
@@ -124,21 +125,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					-- Trade Up
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 90 }},
+						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 90 } },
 						["groups"] = {
 							currency(DRAKES_DREAMING_CREST),
 						},
 					}),
 					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 50 }},
+						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 50 } },
 						["groups"] = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210768, {	-- Viridescent Bouquet of Aspect's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 30 }},
+						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 30 } },
 						["groups"] = {
 							currency(ASPECTS_DREAMING_CREST),
 						},
@@ -146,21 +147,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					-- Trade Down
 					i(210923, {	-- Clutch of Wyrm's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},
+						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 15 } },
 						["groups"] = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210917, {	-- Pouch of Whelpling's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},
+						["cost"] = { { "c", DRAKES_DREAMING_CREST, 15 } },
 						["groups"] = {
 							currency(WHELPLINGS_DREAMING_CREST),
 						},
 					}),
 					i(210770, {	-- Satchel of Drake's Dreaming Crests
 						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},
+						["cost"] = { { "c", WYRMS_DREAMING_CREST, 15 } },
 						["groups"] = {
 							currency(DRAKES_DREAMING_CREST),
 						},

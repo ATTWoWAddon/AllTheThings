@@ -1,8 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local COVETED_BAUBLE = 204727;
 local UNEARTHED_FRAGRANT_COIN = 204715;
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
@@ -43,7 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(205676, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
 				["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
 				["groups"] = bubbleDownFiltered({
-					["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
+					["cost"] = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
 					["bonusID"] = 7532,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
@@ -216,7 +218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
 					}),
 					i(206270, {	-- Volcanic Equipment Chest
-						["cost"] = {{ "c", 2245, 250 }},
+						["cost"] = { { "c", 2245, 250 } },
 						["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
 					}),
 				},

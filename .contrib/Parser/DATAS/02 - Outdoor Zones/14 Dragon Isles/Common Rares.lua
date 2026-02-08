@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local RARE_GROUP_ONE = {
 	193664,	-- Ancient Protector
 	193220,	-- Broodweaver Araznae
@@ -228,6 +229,7 @@ local RARE_GROUP_TEMPEST = {
 	193258,	-- Tempestrian <Stormbringer>
 	201562,	-- Shardwing
 };
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(FLIGHT_PATHS, {
@@ -17,12 +18,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["cr"] = 200893,	-- Keskos
 			}),
 			-- These FlightPaths are not collectible. It's used as a transport between Dragon Isles and Zaralek Caverns.
-			fp(2866, {["collectible"] = false}),	-- Cascades Canyon, Ohn'ahran Plains
-			fp(2877, {["collectible"] = false}),	-- Lookout Breach, Azure Span
-			fp(2876, {["collectible"] = false}),	-- Lookout Breach, Zaralek Cavern
-			fp(2874, {["collectible"] = false}),	-- Old Loamm Road, Ohn'ahran Plains
-			fp(2875, {["collectible"] = false}),	-- Old Loamm Road, Zaralek Cavern
-			fp(2867, {["collectible"] = false}),	-- The Throughway, Zaralek Cavern
+			fp(2866, { ["collectible"] = false }),	-- Cascades Canyon, Ohn'ahran Plains
+			fp(2877, { ["collectible"] = false }),	-- Lookout Breach, Azure Span
+			fp(2876, { ["collectible"] = false }),	-- Lookout Breach, Zaralek Cavern
+			fp(2874, { ["collectible"] = false }),	-- Old Loamm Road, Ohn'ahran Plains
+			fp(2875, { ["collectible"] = false }),	-- Old Loamm Road, Zaralek Cavern
+			fp(2867, { ["collectible"] = false }),	-- The Throughway, Zaralek Cavern
 		}),
 	}),
 })));

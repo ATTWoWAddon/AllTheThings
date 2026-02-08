@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(AMIRDRASSIL, {
 		n(VENDORS, bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
@@ -48,7 +49,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["coord"] = { 48.2, 53.6, AMIRDRASSIL },
 				["groups"] = {
 					i(248401, { 	-- Ornamental Kaldorei Glaive (DECOR!)
-						["sourceQuest"] = 76213,	-- Honor of the Goddess
 						["races"] = NIGHTELF,
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
@@ -70,7 +70,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
 					i(251022, {	-- Bel'ameth Traveler's Pack (DECOR!)
-						["sourceQuest"] = 78864,	-- The Returning
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 					}),

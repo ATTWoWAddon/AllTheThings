@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ADAMANT_SCALES = 193214;
 local AWAKENED_EARTH = 190316;
 local AWAKENED_FIRE = 190321;
@@ -13,6 +14,7 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(WRATHION_SABELLIAN, {
@@ -110,20 +112,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuest"] = 66133,	-- Keys of Loyalty
 					["provider"] = { "n", 187284 },	-- Wrathion
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
+					["cost"] = { { "i", 191255, 1 } },	-- 1x Greater Obsidian Key
 					["isWeekly"] = true,
 				}),
 				q(72338, {	-- Greater Obsidian Key
 					["sourceQuest"] = 66805,	-- Keys of Loyalty
 					["provider"] = { "n", 187447 },	-- Sabellian
 					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
+					["cost"] = { { "i", 191255, 1 } },	-- 1x Greater Obsidian Key
 					["isWeekly"] = true,
 				}),
 				q(66126, {	-- Unlocking Our Past
 					["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 					["coord"] = { 24.9, 61.0, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 1 } },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["groups"] = {
 						i(201755),	-- Obsidian Forgemaster's Strongbox
@@ -138,7 +140,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66129, {	-- Unlocking Our Past
 					["provider"] = { "n", 187275 },	-- Igys the Believer
 					["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 1 } },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["groups"] = {
 						i(201818, {	-- Twilight Strongbox
@@ -158,7 +160,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72337 },	-- Greater Obsidian Key
 					["provider"] = { "n", 187284 },	-- Wrathion
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 1 } },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["groups"] = {
 						i(200069, {	-- Obsidian Cache
@@ -168,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66131, {	-- Unlocking Our Past
 					["provider"] = { "n", 187447 },	-- Sabellian
 					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 1 } },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["groups"] = {
 						i(200069, {	-- Obsidian Cache
@@ -489,7 +491,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
 					["questID"] = 73074,
 					["isDaily"] = true,
-					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 20 } },	-- 20x Restored Obsidian Key
 					["groups"] = {
 						i(200159),	-- Blaze Ring
 					},
@@ -499,7 +501,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
 					["isDaily"] = true,
-					["cost"] = { { "i", 191264, 10 }, },	-- 10x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 10 } },	-- 10x Restored Obsidian Key
 					["groups"] = {
 						i(200207),	-- Petrified Fungal Spores
 					},
@@ -525,7 +527,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74077,
 					["isDaily"] = true,
 					["crs"] = { 190971 },	-- pre-combat
-					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 20 } },	-- 20x Restored Obsidian Key
 				}),
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
@@ -535,7 +537,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
 					["crs"] = { 197395 },	-- Wurmling Bones
-					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
+					["cost"] = { { "i", 191211, 3 } },	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,
 					["groups"] = {
@@ -560,20 +562,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197738),	-- Flameslinger Rum
 						i(198356),	-- Honey Snack
 						i(201418, {	-- Orb of the Obsidian Scale
-							["cost"] = {
-								{ "i", 202173, 5 },		-- 5x Magmote
-							},
+							["cost"] = { { "i", 202173, 5 } },		-- 5x Magmote
 						}),
 						i(192786, {	-- Scrappy Worldsnail (MOUNT!)
-							["cost"] = {
-								{ "i", 202173, 1000 },		-- 1000x Magmote
-							},
+							["cost"] = { { "i", 202173, 1000 } },		-- 1000x Magmote
 						}),
 						i(199215, {	-- Worldbreaker Membership
 							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
-							["cost"] = {
-								{ "i", 202173, 20 },		-- 20x Magmote
-							},
+							["cost"] = { { "i", 202173, 20 } },		-- 20x Magmote
 							["groups"] = {
 								title(469, {	-- <Name> the Worldbreaker
 									["collectible"] = false,
@@ -675,9 +671,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(200970, {	-- Obsidian Collar
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (MM!)
 								["cost"] = {
@@ -700,9 +694,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(200971, {	-- Obsidian Cape
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 							i(197392, {	-- Renewed Proto-Drake: Black Scales (MM!)
 								["cost"] = {
@@ -825,9 +817,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(200970, {	-- Obsidian Collar
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (MM!)
 								["cost"] = {
@@ -850,9 +840,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(200971, {	-- Obsidian Cape
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
 							i(197392, {	-- Renewed Proto-Drake: Black Scales (MM!)
 								["cost"] = {
@@ -977,14 +965,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(191255, {	-- Greater Obsidian Key
 					["description"] = "Leaving the area will delete this Item!",
 					["cost"] = {
-						{"i",191251,30},	-- 30x Key Fragment
-						{"i",193201, 3},	-- 3x Key Framing
+						{ "i", 191251, 30 },	-- 30x Key Fragment
+						{ "i", 193201, 3 },	-- 3x Key Framing
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
 					["cost"] = {
-						{"i",191251,30},	-- 30x Key Fragment
-						{"i",193201, 3},	-- 3x Key Framing
+						{ "i", 191251, 30 },	-- 30x Key Fragment
+						{ "i", 193201, 3 },	-- 3x Key Framing
 					},
 				}),
 			}),

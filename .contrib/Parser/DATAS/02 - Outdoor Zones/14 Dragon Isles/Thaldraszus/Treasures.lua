@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(TREASURES, {
@@ -18,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380867, {	-- Amber Gem Cluster
 				["coord"] = { 52.6, 76.7, THALDRASZUS },
 				["questID"] = 70408,
-				["cost"] = { { "i", 198852, 1 }, },	-- 1x Yennu's Map
+				["cost"] = { { "i", 198852, 1 } },	-- 1x Yennu's Map
 				["groups"] = {
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
@@ -31,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "In a Cave.",
 				["coord"] = { 33.9, 76.9, THALDRASZUS },
 				["questID"] = 70607,
-				["cost"] = { { "i", 199068, 1 }, },	-- 1xTime-Lost Memo
+				["cost"] = { { "i", 199068, 1 } },	-- 1x Time-Lost Memo
 			}),
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
@@ -66,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381107, {	-- Sand Pile
 				["coord"] = { 58.2, 80.1, THALDRASZUS },
 				["questID"] = 70608,
-				["cost"] = { { "i", 199069, 1 }, },	-- 1xYennu's Map
+				["cost"] = { { "i", 199069, 1 } },	-- 1x Yennu's Map
 			}),
 			n(198604, {	-- Strange Bear Cub
 				["coord"] = { 52.5, 83.6, THALDRASZUS },

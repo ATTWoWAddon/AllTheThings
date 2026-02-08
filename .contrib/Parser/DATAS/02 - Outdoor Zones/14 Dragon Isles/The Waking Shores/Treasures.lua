@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(TREASURES, {
@@ -18,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(381071, {	-- Box of Rocks
-				["description"] = "Can almost be anywhere in the zone, wont show up via treasure tracking.",
+				["description"] = "Can almost be anywhere in the zone, won't show up via treasure tracking.",
 				["groups"] = {
 					i(199216),	-- A Box of Rocks
 				},
@@ -33,7 +34,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
 				["questID"] = 70599,
-				["cost"] = { { "i", 199061, 1 }, },	-- 1x A Guide to Rare Fish
+				["cost"] = { { "i", 199061, 1 } },	-- 1x A Guide to Rare Fish
 				["groups"] = {
 					i(193852),	-- Azure Frillfish (PET!)
 				},
@@ -142,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(376175, {	-- Fullsails Supply Chest
 				["coord"] = { 43.1, 67.4, THE_WAKING_SHORES },
 				["questID"] = 65965,
-				["cost"] = { { "i", 191122, 1 }, },	-- 1x Fullsails Supply Chest Key
+				["cost"] = { { "i", 191122, 1 } },	-- 1x Fullsails Supply Chest Key
 			}),
 			o(381483, {	-- Marmoni's Prize
 				["coord"] = { 47.7, 83.6, THE_WAKING_SHORES },
@@ -151,7 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(375668, {	-- Misty Treasure Chest
-				["description"] = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (it's very hidden behind the water).",
+				["description"] = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (It's very hidden behind the water).",
 				["coord"] = { 58.6, 53.1, THE_WAKING_SHORES },
 				["questID"] = 65646,
 				["groups"] = {
@@ -161,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381045, {	-- Golden Dragon Goblet
 				["coord"] = { 65.8, 41.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
-				["cost"] = { { "i", 198854, 1 }, },	-- 1x Archeologist Artifact Notes
+				["cost"] = { { "i", 198854, 1 } },	-- 1x Archeologist Artifact Notes
 				["groups"] = {
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
@@ -222,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381153, {	-- Ruby Gem Cluster
 				["coord"] = { 61.3, 70.8, THE_WAKING_SHORES },
 				["questID"] = 70598,
-				["cost"] = { { "i", 199062, 1 }, },	-- 1x Ruby Gem Cluster Map
+				["cost"] = { { "i", 199062, 1 } },	-- 1x Ruby Gem Cluster Map
 				["groups"] = {
 					i(194647),	-- Design: Jeweled Ruby Whelpling (RECIPE!)
 					i(200864),	-- Glimmering Alexstraszite Cluster
@@ -243,10 +244,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}
 			}),
 			o(382325, {	-- Onyx Gem Cluster
-				["description"] = "Cave Entrance at 29.4, 52.6",
-				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },
+				["description"] = "Inside the cave.",
+				["coords"] = {
+					{ 29.4, 52.6, THE_WAKING_SHORES },	-- Cave Entrance
+					{ 29.4, 47.0, THE_WAKING_SHORES },	-- Onyx Gem Cluster
+				},
 				["questID"] = 72020,
-				["cost"] = { { "i", 200738, 1 }, },	-- 1x Onyx Gem Cluster Map
+				["cost"] = { { "i", 200738, 1 } },	-- 1x Onyx Gem Cluster Map
 				["groups"] = {
 					i(194650),	-- Design: Jeweled Onyx Whelpling (RECIPE!)
 					i(200867),	-- Glimmering Neltharite Cluster

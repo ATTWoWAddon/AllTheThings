@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(QUESTS, {
@@ -1071,13 +1072,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78398 },	-- A Dash of Minerals...
 				["provider"] = { "n", 209458 },	-- Dewy Sapling
 				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
-				["cost"] = {{"i",208647,1}},	-- Primed Emerald Dream Fertilizer (QI!)
+				["cost"] = { { "i", 208647, 1 } },	-- Primed Emerald Dream Fertilizer (QI!)
 				["groups"] = {
 					i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals (QI!)
 					i(208644, {	-- Lasher Plant Matter (QI!)
 						["providers"] = {
-							{"n",210772},	-- Fenblossom Lashling
-							{"n",208750},	-- Verdant Emerald Lasher
+							{ "n", 210772 },	-- Fenblossom Lashling
+							{ "n", 208750 },	-- Verdant Emerald Lasher
 						},
 						["coord"] = { 57.7, 55.4, EMERALD_DREAM },
 					}),
@@ -1093,14 +1094,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					i(208646, {	-- Combined Fertilizer Ingredients (QI!)
 						["cost"] = {
-							{"i", 4537, 5},	-- 5x Tel'Abim Banana / @ 49.6, 61.6, 2200
-							{"i", 209416, 3},	-- 3x Turtle Eggshell Shards / @ 41.9, 76.0, 2200 from objectID 408997 (Turtle Egg)
-							{"i", 208644, 5},	-- 5x Lasher Plant Matter / @ active Emerald Frenzy from any lasher
+							{ "i", 4537, 5 },	-- 5x Tel'Abim Banana / @ 49.6, 61.6, 2200
+							{ "i", 209416, 3 },	-- 3x Turtle Eggshell Shards / @ 41.9, 76.0, 2200 from objectID 408997 (Turtle Egg)
+							{ "i", 208644, 5 },	-- 5x Lasher Plant Matter / @ active Emerald Frenzy from any lasher
 						},
 					}),
 					i(208647, {	-- Primed Emerald Dream Fertilizer (QI!)
 						["description"] = "Takes 3 days to turn into this.",
-						["cost"] = {{"i",208646,1}},	-- Combined Fertilizer Ingredients (QI!)
+						["cost"] = { { "i", 208646, 1 } },	-- Combined Fertilizer Ingredients (QI!)
 					}),
 				},
 			}),

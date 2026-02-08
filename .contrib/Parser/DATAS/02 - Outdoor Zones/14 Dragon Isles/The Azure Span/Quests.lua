@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(QUESTS, {
@@ -1272,7 +1273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65849 },	-- To Iskaara
 					["provider"] = { "n", 193877 },	-- Lukoturukk
 					["coord"] = { 14.1, 49.4, THE_AZURE_SPAN },
-					["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
+					["cost"] = { { "i", 194967, 5 } },	-- 5x Aileron Seamoth
 					["requireSkill"] = FISHING,
 				}),
 			}),
@@ -1303,7 +1304,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66218 },	-- Scampering Scamps
 					["provider"] = { "n", 187674 },	-- Neelo
 					["coord"] = { 10.6, 46.9, THE_AZURE_SPAN },
-					["cost"] = { { "i", 192153, 7 }, },	-- 7xFrigidfish
+					["cost"] = { { "i", 192153, 7 } },	-- 7x Frigidfish
 					["groups"] = {
 						i(201295),	-- Neelo's Spare Blanket
 					},
@@ -2275,6 +2276,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(THE_AZURE_SPAN, {

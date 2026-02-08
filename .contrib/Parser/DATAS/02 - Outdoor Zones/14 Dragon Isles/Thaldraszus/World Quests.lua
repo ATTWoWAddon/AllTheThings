@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(WORLD_QUESTS, {
@@ -8,12 +9,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-				--[[
-				q(QUEST, {	-- NAME
-					["coord"] = { XX, YY, THALDRASZUS },
-				}),
-				]]--
+			["groups"] = sharedData({
+				["isWorldQuest"] = true,
+			}, {
 				q(70160, {	-- Alchemical Thesis Defense
 					["coord"] = { 62.3, 36.9, THALDRASZUS },
 				}),

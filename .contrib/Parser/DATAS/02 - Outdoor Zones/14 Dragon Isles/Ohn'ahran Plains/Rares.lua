@@ -1,12 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, sharedData({ ["isDaily"] = true },{
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		}, {
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
@@ -191,7 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 20.3, 43.7, OHNAHRAN_PLAINS },	-- Rare
 				},
 				["questID"] = 74073,
-				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
+				["cost"] = { { "i", 194681, 1 } },	-- Sugarwing Cupcake
 				["groups"] = {
 					bo(69865, true),
 					i(200735),	-- Magically Magical Faerie Flower

@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 DF_RARE_ROTATION = createHeader({
 	readable = "DF Rare Rotation",
 	icon = 237274,
@@ -21,6 +23,7 @@ DF_RARE_ROTATION = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(DF_RARE_ROTATION, {

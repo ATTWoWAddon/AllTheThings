@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -62,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 40.3, 64.9, THE_WAKING_SHORES },	-- The Rare
 					{ 22.0, 64.9, THE_WAKING_SHORES },	-- Fishing Spot
 				},
-				["cost"] = {{"i",201092,1}},	-- Lava Spices
+				["cost"] = { { "i", 201092, 1 } },	-- 1x Lava Spices
 				["questID"] = 73072,
 				["groups"] = {
 					bo(72128, true),
@@ -166,7 +168,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Bring a Magical Salt Crystal from the Azure Span into the cave. If the pool is full of Unsalted Water Snails, use the Extra Action Button to summon the rare.",
 				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				["questID"] = 74079,
-				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
+				["cost"] = { { "i", 201033, 1 } },	-- 1x Magical Salt Crystal
 				["groups"] = {
 					bo(72126, true),
 					i(200189),	-- Hydroforged Shell Helm

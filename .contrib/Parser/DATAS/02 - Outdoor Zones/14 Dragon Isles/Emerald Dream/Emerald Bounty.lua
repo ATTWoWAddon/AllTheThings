@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local SEEDBLOOM = 211376;
 EMERALD_BOUNTY = createHeader({
 	readable = "Emerald Bounty",
@@ -19,6 +20,7 @@ EMERALD_BOUNTY = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(EMERALD_BOUNTY, {
@@ -174,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(REWARDS, {
 				["groups"] = {
 					i(210219, {	-- Gigantic Dreamy Bounty
-						["cost"] = {{"i", 208047, 1}},	-- Gigantic Dreamseed
+						["cost"] = { { "i", 208047, 1 } },	-- Gigantic Dreamseed
 						["sym"] = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
@@ -185,7 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(210218, {	-- Plump Dreamy Bounty
-						["cost"] = {{"i", 208067, 1}},	-- Plump Dreamseed
+						["cost"] = { { "i", 208067, 1 } },	-- Plump Dreamseed
 						["sym"] = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
@@ -207,7 +209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(210217, {	-- Small Dreamy Bounty
-						["cost"] = {{"i", 208066, 1}},	-- Small Dreamseed
+						["cost"] = { { "i", 208066, 1 } },	-- Small Dreamseed
 						-- Dont Think we should symlink this?
 					}),
 				},
@@ -216,7 +218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				n(211265, {	-- Sylvia Whisperbloom
 					["coord"] = { 59.8, 16.9, EMERALD_DREAM },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{ "i", SEEDBLOOM, 1 }},
+						["cost"] = { { "i", SEEDBLOOM, 1 } },
 					},FILTERFUNC_itemID,{
 						n(BACK, {
 							i(209979),	-- Barkbloom Cloak
