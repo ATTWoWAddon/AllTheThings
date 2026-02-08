@@ -14,15 +14,33 @@ root(ROOTS.Zones, {
 					ach(6977),	-- Explore Townlong Steppes
 					ach(7309),	-- Fire in the Yaung-hole!
 					ach(7298, {	-- Getting Around with the Shado-Pan
-						crit(20453),	-- Fei Li
-						crit(20456),	-- Taoshi
-						crit(20461),	-- Protector Yi
-						crit(20454),	-- Snow Blossom
-						crit(20457),	-- Hawkmaster Nurong
-						crit(20460),	-- Chao the Voice
-						crit(20455),	-- Yalia Sagewhisper
-						crit(20458),	-- Tenwu of the Red Smoke
-						crit(20459),	-- Lao-Chin the Iron Belly
+						crit(20453, {
+							["crs"] = 62354,	-- Fei Li
+						}),
+						crit(20456, {
+							["crs"] = 63617,	-- Taoshi
+						}),
+						crit(20461, {
+							["crs"] = 61625,	-- Protector Yi
+						}),
+						crit(20454, {
+							["crs"] = 62380,	-- Snow Blossom
+						}),
+						crit(20457, {
+							["crs"] = 63618,	-- Hawkmaster Nurong
+						}),
+						crit(20460, {
+							["crs"] = 62550,	-- Chao the Voice
+						}),
+						crit(20455, {
+							["crs"] = 62303,	-- Yalia Sagewhisper
+						}),
+						crit(20458, {
+							["crs"] = 63616,	-- Tenwu of the Red Smoke
+						}),
+						crit(20459, {
+							["crs"] = 62978,	-- Lao-Chin the Iron Belly
+						}),
 					}),
 					ach(7308),	-- Know Your Role
 					ach(7299),	-- Loner and a Rebel
