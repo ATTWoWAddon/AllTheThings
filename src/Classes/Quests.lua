@@ -1477,7 +1477,7 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 		local maxReputation = quest.maxReputation
 		if maxReputation then
 			local faction = app.CreateFaction(maxReputation[1]);
-			if faction:CompareReputation(maxReputation[2]) then
+			if faction:CompareReputation(maxReputation[2]) or not faction.collectible then
 				costCollectibles = app.EmptyTable;
 			else
 				faction.r = quest.r;
