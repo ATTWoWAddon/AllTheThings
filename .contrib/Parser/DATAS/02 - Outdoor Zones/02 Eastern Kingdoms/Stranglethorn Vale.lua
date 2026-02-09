@@ -141,36 +141,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(781),	-- Explore Stranglethorn Vale
 				ach(940),	-- The Green Hills of Stranglethorn
 			}),
-			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
-				["coords"] = {
-					-- #if AFTER CATA
-					{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					{ 30.5, 47.8, STRANGLETHORN_VALE },
-					-- #endif
-				},
-				["groups"] = {
-					ach(389),	-- Gurubashi Arena Master
-					i(18706, {	-- Arena Master
-						-- #if BEFORE WRATH
-						["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						-- #endif
-					}),
-					i(18711),	-- Arena Bands
-					i(18710),	-- Arena Bracers
-					i(18712),	-- Arena Vambraces
-					i(18709),	-- Arena Wristguards
-					i(126948, {	-- Defending Champion
-						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { ADDED_6_2_0 },
-						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
-					}),
-					i(122222, {	-- Music Roll: Angelic
-						["timeline"] = { ADDED_6_1_0 },
-					}),
-				},
-			})),
 			explorationHeader({
 				exploration(123),	-- Bal'lal Ruins
 				exploration(127),	-- Balia'mah Ruins
@@ -2675,6 +2645,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}))),
 			-- #endif
 			n(TREASURES, {
+				pvp(o(179697, {	-- Arena Treasure Chest
+					["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 30.5, 47.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["groups"] = {
+						ach(389),	-- Gurubashi Arena Master
+						i(18706, {	-- Arena Master
+							-- #if BEFORE WRATH
+							["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
+							-- #endif
+						}),
+						i(18711),	-- Arena Bands
+						i(18710),	-- Arena Bracers
+						i(18712),	-- Arena Vambraces
+						i(18709),	-- Arena Wristguards
+						i(126948, {	-- Defending Champion
+							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
+							["timeline"] = { ADDED_6_2_0 },
+							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
+						}),
+						i(122222, {	-- Music Roll: Angelic
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				})),
 				o(2744, {	-- Giant Clam
 					["coords"] = {
 						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef

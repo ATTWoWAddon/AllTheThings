@@ -37,26 +37,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
-			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
-				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				["groups"] = {
-					ach(389),	-- Gurubashi Arena Master
-					i(18706),	-- Arena Master
-					i(18711),	-- Arena Bands
-					i(18710),	-- Arena Bracers
-					i(18712),	-- Arena Vambraces
-					i(18709),	-- Arena Wristguards
-					i(126948, {	-- Defending Champion
-						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { ADDED_6_2_0 },
-						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
-					}),
-					i(122222, {	-- Music Roll: Angelic
-						["timeline"] = { ADDED_6_1_0 },
-					}),
-				},
-			})),
 			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
@@ -2674,6 +2654,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(14492, {	-- Verifonix <The Surveyor>
 					["coord"] = { 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
 				}),
+			}),
+			n(TREASURES, {
+				pvp(o(179697, {	-- Arena Treasure Chest
+					["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+					["groups"] = {
+						ach(389),	-- Gurubashi Arena Master
+						i(18706),	-- Arena Master
+						i(18711),	-- Arena Bands
+						i(18710),	-- Arena Bracers
+						i(18712),	-- Arena Vambraces
+						i(18709),	-- Arena Wristguards
+						i(126948, {	-- Defending Champion
+							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
+							["timeline"] = { ADDED_6_2_0 },
+							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
+						}),
+						i(122222, {	-- Music Roll: Angelic
+							["timeline"] = { ADDED_6_1_0 },
+						}),
+					},
+				})),
 			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>

@@ -10590,13 +10590,6 @@ ach(871,{sourceQuests={4621},u=11}),
 ach(781,{
 crit(1293,{achID=42,id=1})}),
 ach(940)}),
-o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389,{pvp=1}),
-i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
-s(163646,18711,{f=6,lvl=45,pvp=1,q=3}),
-s(163645,18710,{f=5,lvl=45,pvp=1,q=3}),
-s(163647,18712,{f=7,lvl=45,pvp=1,q=3}),
-s(163644,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 h(-30,{
 exp(123,{
 crit(1217,{achID=781,id=1})}),
@@ -10989,6 +10982,13 @@ s(156368,1604,{f=26,lvl=40,q=2,rwp=40003}),
 s(157791,4478,{f=6,lvl=40,q=2,rwp=40003})}}),
 n(14492,{coords={{36.8,56,1434}}})}),
 h(-56,{
+o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
+ach(389,{pvp=1}),
+i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
+s(163646,18711,{f=6,lvl=45,pvp=1,q=3}),
+s(163645,18710,{f=5,lvl=45,pvp=1,q=3}),
+s(163647,18712,{f=7,lvl=45,pvp=1,q=3}),
+s(163644,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 o(2744,{coords={{28.1,45.9,1434}},g={
 i(4611,{q=1}),
 i(4655,{q=1})}})}),
