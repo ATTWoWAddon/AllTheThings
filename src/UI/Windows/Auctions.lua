@@ -484,7 +484,7 @@ app:CreateWindow("Auctions", {
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Toys", {	-- Toys
-					Metas = { "Toy" },
+					Metas = { "Toy", "ToyEventually" },
 					icon = 133015,
 					description = "All items that are classified as Toys either by ATT for the future or by the game presently.",
 					SortPriority = 2,

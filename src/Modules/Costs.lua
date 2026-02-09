@@ -1037,6 +1037,7 @@ local SkipPurchases = {
 	},
 	LearnedTypes = {
 		Toy = 1,
+		ToyEventually = 1,
 		Recipe = 1,
 		RecipeWithItem = 1,
 		Mount = 1,
