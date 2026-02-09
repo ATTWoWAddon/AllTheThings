@@ -3464,6 +3464,8 @@ local function OnUpdateForDynamicCategoryHeader(t)
 	if #t.g == 0 then
 		return
 	end
+	t.progress = 0;
+	t.total = 0;
 	t.visible = true
 	return true
 end
@@ -3491,6 +3493,7 @@ api.BuildDynamicCategorySummaryForSearchResults = function(searchResults)
 	local dcsRoot = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
 		OnUpdate = OnUpdateForDynamicCategoryHeader,
+		sourceIgnored = true,
 		SortType = "text",
 		g = g
 	});
