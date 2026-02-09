@@ -1,11 +1,13 @@
 name: Feature Request
 description: See something useful that could be added?
 labels: ["Suggestion"]
+
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for filling out this feature request form. Please note that all feature requests will be reviewed and discussed among contributors before any implementation decision is made.
+
   - type: dropdown
     id: flavour
     attributes:
@@ -13,16 +15,17 @@ body:
       description: "Select all applicable versions of World of Warcraft."
       multiple: true
       options:
-        - "Midnight beta"
+        - "Beta"
+        - "PTR"
         - "Retail"
         - "MoP Classic"
         - "Classic Era"
         - "Hardcore"
         - "Season of Discovery"
         - "Anniversary Realms"
-        - "Hardcore Anniversary Realms"
     validations:
       required: true
+
   - type: textarea
     id: problem_description
     attributes:
@@ -31,6 +34,7 @@ body:
       placeholder: "Explain the problem or challenge here..."
     validations:
       required: true
+
   - type: textarea
     id: proposed_solution
     attributes:
@@ -39,12 +43,14 @@ body:
       placeholder: "Describe the desired solution here..."
     validations:
       required: true
+
   - type: textarea
     id: alternatives
     attributes:
       label: "Any alternatives you can think of?"
       description: "List any alternative solutions or approaches you have considered."
       placeholder: "Describe alternatives here..."
+
   - type: textarea
     id: additional_context
     attributes:
