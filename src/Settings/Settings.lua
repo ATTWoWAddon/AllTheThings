@@ -1793,8 +1793,8 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			filterSet.Event()
 		end
-		self.OnlyRWP = self:Get("Only:RWP");
-		self.OnlyNotTrash = self:Get("Only:NotTrash");
+		self.OnlyRWP = app.GameBuildVersion < 40000 and self:Get("Only:RWP");
+		self.OnlyNotTrash = app.IsClassic and self:Get("Only:NotTrash");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 

@@ -562,7 +562,6 @@ app:CreateWindow("Auctions", {
 									data = app.CloneClassInstance(searchResult);
 									if data.key == "npcID" then app.CreateItem(data.itemID, data); end
 									keys[value] = data;
-									data.indent = 1;
 									data.OnClick = OnClickForAuctionItem;
 									if price and price > 0 then
 										data.price = price;
@@ -592,7 +591,6 @@ app:CreateWindow("Auctions", {
 										if searchResults and #searchResults > 0 then
 											local craftedItem = app.CloneClassInstance(searchResults[1]);
 											craftedItem.OnClick = OnClickForAuctionItem;
-											craftedItem.indent = 2;
 											tinsert(entry.g, craftedItem);
 										end
 									end
