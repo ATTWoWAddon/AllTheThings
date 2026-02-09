@@ -163,6 +163,7 @@ local function RefreshWindowStyles(self)
 		for suffix,window in pairs(app.WindowDefinitions) do
 			if window[configKey] then
 				windows[suffix] = window;
+				app:GetWindow(suffix);
 			end
 		end
 		for suffix,window in pairs(app.Windows) do
