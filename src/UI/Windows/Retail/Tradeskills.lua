@@ -192,7 +192,7 @@ app:CreateWindow("Tradeskills", {
 				end
 			end
 		end
-		app.HarvestRecipes = function()
+		local function HarvestRecipes()
 			local reagentsDB = app.LocalizeGlobal("AllTheThingsHarvestItems", true)
 			reagentsDB.ReagentsDB = app.ReagentsDB
 			local Runner = self:GetRunner()
@@ -205,6 +205,14 @@ app:CreateWindow("Tradeskills", {
 				app.print("Harvested all Sourced Recipes & Reagents => [Reagents]")
 			end);
 		end
+		-- Allows using /att harvest-reagents to collect all recipe data for ReagentDB
+		app.ChatCommands.Add("harvest-reagents", function(args)
+			HarvestRecipes()
+			return true
+		end, {
+			"Usage : /att harvest-reagents",
+			"Intended for contributor use to harvest Recipe reagent information",
+		})
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates.Categories then
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
