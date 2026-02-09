@@ -641,6 +641,8 @@ L.REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
 L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
+L.REPORT_DEATH_TRACKER_CHECKBOX = "Report Deaths";
+L.REPORT_DEATH_TRACKER_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Death Tracker in the Main List.";
 L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
 L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
@@ -2565,7 +2567,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
@@ -2617,7 +2618,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=10,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=17,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9643,6 +9645,7 @@ local ObjectNames = {
 	[341445] = "Chamber of Heart Relay",
 	[341449] = "Engine of Nalak'sha Relay",
 	[341450] = "Forge of Origination Relay",
+	[341808] = "Gersahl Shrub",
 	[341827] = "Greatfeather Pepe",
 	[341951] = "Withering Hemlock",
 	[342098] = "Coifcurl's Close Shave Kit",
@@ -18399,6 +18402,7 @@ local ObjectModels = {
 	[341445] = 243958,
 	[341449] = 243958,
 	[341450] = 243958,
+	[341808] = 999433,
 	[341827] = 3209343,
 	[341951] = 1784467,
 	[342098] = 189092,
@@ -23948,12 +23952,12 @@ L.QUEST_NAMES = {
 	[64235] = "[DNT] Training Kill Quest",
 	[64280] = "Daily Drop #1",
 	[64281] = "Daily Drop #2",
-	[64293] = "Day 1",
-	[64294] = "Day 2",
-	[64295] = "Day 3",
-	[64296] = "Day 4",
-	[64297] = "Day 5",
-	[64299] = "Day 6",
+	[64293] = "Day 1: Maelie found",
+	[64294] = "Day 2: Maelie found",
+	[64295] = "Day 3: Maelie found",
+	[64296] = "Day 4: Maelie found",
+	[64297] = "Day 5: Maelie found",
+	[64299] = "Day 6: Maelie found",
 	[64305] = "The Tormentors of Torghast",
 	[64306] = "Quest Completion Criteria",
 	[64335] = "Stay awhile and listen: Alexandros",
@@ -29856,6 +29860,7 @@ localize(ObjectNames, {
 	[341445] = "Relais der Herzkammer",
 	[341449] = "Relais der Maschine von Nalak'sha",
 	[341450] = "Relais der Schmiede des Ursprungs",
+	[341808] = "Gersahlstrauch",
 	[341827] = "Altfeder Pepe",
 	[341951] = "Verdorrender Schierling",
 	[342098] = "Haubenlockes Glattrasurset",
@@ -37173,6 +37178,7 @@ localize(ObjectNames, {
 	[341445] = "Relais de la chambre du Cœur",
 	[341449] = "Relais du moteur de Nalak’sha",
 	[341450] = "Relais de la forge des Origines",
+	[341808] = "Buisson de Gersahl",
 	[341827] = "Pépé Plume-Prodigieuse",
 	[341951] = "Ciguë flétrie",
 	[342098] = "Nécessaire de rasage de précision de Coiffeboucle",
@@ -43625,6 +43631,7 @@ localize(ObjectNames, {
 	[341445] = "Ripetitore della Sala del Cuore",
 	[341449] = "Ripetitore del Generatore di Nalak'sha",
 	[341450] = "Ripetitore della Forgia della Creazione",
+	[341808] = "Arbusto di Gersahl",
 	[341827] = "Pepe Piumaregale",
 	[341951] = "Cicuta Secca",
 	[342366] = "Bocciolo del Velo",
@@ -50224,6 +50231,7 @@ localize(ObjectNames, {
 	[341445] = "Retransmissor da Câmara do Coração",
 	[341449] = "Retransmissor do Engenho de Nalak'sha",
 	[341450] = "Retransmissor da Forja Primordial",
+	[341808] = "Arbusto Gersahl",
 	[341827] = "Pepe Pena Grande",
 	[341951] = "Cicuta Murcha",
 	[342098] = "Kit Barba-rente de Cortacacho",
@@ -57869,6 +57877,7 @@ localize(ObjectNames, {
 	[341445] = "Передатчик Зала Сердца",
 	[341449] = "Передатчик двигателя Налак'ша",
 	[341450] = "Передатчик Кузни Созидания",
+	[341808] = "Куст герсали",
 	[341827] = "Пепе Большое Перо",
 	[341951] = "Иссохший болиголов",
 	[342098] = "Набор для бритья Кудрешлем",
@@ -64456,6 +64465,7 @@ localize(ObjectNames, {
 	[341445] = "심장의 방 중계기",
 	[341449] = "나락샤의 동력장치 중계기",
 	[341450] = "시초의 용광로 중계기",
+	[341808] = "게샬 덤불",
 	[341827] = "겨울 할아버지 피프",
 	[341951] = "메마른 독미나리",
 	[342366] = "장막꽃",
@@ -71939,6 +71949,7 @@ localize(ObjectNames, {
 	[341445] = "Repetidor de la Cámara del Corazón",
 	[341449] = "Repetidor del Motor de Nalak'sha",
 	[341450] = "Repetidor de la Forja de los Orígenes",
+	[341808] = "Arbusto Gersahl",
 	[341827] = "Pepe Plumagrande",
 	[341951] = "Cicuta marchita",
 	[342098] = "Equipo de afeitado de Ricitos",
@@ -79783,6 +79794,7 @@ localize(ObjectNames, {
 	[341445] = "心之秘室中继器",
 	[341449] = "纳拉克煞引擎中继器",
 	[341450] = "起源熔炉中继器",
+	[341808] = "基萨尔灌木丛",
 	[341827] = "佩佩爷爷",
 	[341951] = "枯萎的毒芹",
 	[342366] = "帷幕花",
@@ -81684,7 +81696,7 @@ L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "如果任一角色已經收集了角�
 L.ACCOUNT_WIDE_DEATHS_TOOLTIP = "死亡追蹤實際上只存在於巫妖王之怒懷舊服之前，當時沒有統計資料來了解這些資訊。成就系統實裝後，此功能將直接從統計 API 獲得資料。您可以使用死亡追蹤器上的提示來查看";
 L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "地圖探索追蹤僅對每個角色都非常有用，但你真的想在所有50個角色上收藏它們嗎？";
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飛行路線追蹤對每個角色都非常有用，但是你真的想要在所有50個角色上收藏它們嗎？";
-L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每周1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
+L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每週1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任務完成通常是每個角色的，但是如果任何一個角色完成了特定的任務，這個任務就會被認為是已完成。";
 L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被整個帳號追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以賦予你的小號和他們的專業以意義。";
 L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤整個帳號，所以開啟這個功能可能是個好主意。";
@@ -81792,6 +81804,7 @@ L.COMPLETED_BY_CHECKBOX_TOOLTIP = "如果你想在指標提示中查看所有伺
 L.COMPLETED_MULTIPLE = "可以重複多次";
 L.COMPLETED_SOURCES_CHECKBOX = "對已完成";
 L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在指標提示中看到已完成的來源位置，請啟用此選項。\n\n舉個例子，如果你在梣谷完成了任務“巴斯蘭的頭髮”，當你指標懸停在艾芙娜·寂語身上時，他的指標提示就不會再顯示這個任務了。";
+L.COMPLETED_WEEKLY = "可以每週完成";
 L.COMPLETIONIST_MODE = "+來源";
 L.COMPLETIONIST_MODE_TOOLTIP = "啟用該模式，只有當特定物品已被解鎖為給定外觀時才將物品視為已收藏。\n\n這意味著你需要收藏每一個共享外觀的物品。\n\n注意：預設情況下一旦你收藏了共享來源，遊戲就會停止告訴你未收藏的物品，這將確保未收藏的物品會被追蹤。";
 L.CONFIRM_DELETE = "\n \n確定刪除此項？";
@@ -82102,6 +82115,7 @@ L.PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一
 L.PROFILES_PAGE = "設定檔";
 L.PROGRESS = "進度";
 L.PROVIDERS = "供應商";
+L.PVP_RANK_DESCRIPTION = "雙方陣營共有14個軍銜等級。每週會根據玩家在伺服器中的排名情況，通過評定戰點數來劃分軍銜——每個軍銜都設有對應的最低戰點數要求。\n\n不同軍銜將解鎖相應獎勵：從 PvP 消耗品、無需高級騎術即可騎乘的史詩坐騎，到最高軍銜專屬的史詩級裝備。所有軍銜都會以稱號形式永久附加在角色名稱上。";
 L.QUEST_CHAIN_REQ = "任務鏈要求";
 L.QUEST_CHAIN_REQ_DESC = "在能夠完成最終任務之前需要完成以下任務。";
 L.QUEST_DESC = "點擊此按鈕可依據缺少的內容選擇隨機任務。";
@@ -82115,7 +82129,7 @@ L.QUEST_OBJECTIVE_INVALID = "無效的任務目標";
 L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏無關緊要的任務 '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
-L.QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每周、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
+L.QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每週、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
 L.QUESTS_DESC = "按數字升序顯示遊戲中所有可能的任務 ID。";
 L.QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "啟用此選項將包含隱藏任務追蹤（HQT）的完成情況。\n\nHQT 是對玩家不可見的任務 ID，遊戲在後台用於監控角色/帳號在各種情況下的進度或狀態。\n\n你大概並不關心追蹤這些，對吧？我想你應該沒問題的。";
 L.QUESTS_LOCKED_CHECKBOX = "+已鎖定";
@@ -82398,6 +82412,7 @@ localize(L.HEADER_NAMES, {
 	[-225] = "T3套裝",
 	[-228] = "戰鑄",
 	[-243] = "護甲附魔",
+	[-246] = "每週專業知識",
 	[-247] = select(2,GetAchievementInfo(2091)).."：第1賽季",
 	[-248] = select(2,GetAchievementInfo(418)).."：第2賽季",
 	[-249] = select(2,GetAchievementInfo(419)).."：第3賽季",
@@ -82449,6 +82464,8 @@ localize(L.HEADER_NAMES, {
 	[-417] = "傳奇：黑龍王子",
 	[-422] = "要塞戰役",
 	[-423] = "鋼鐵入侵",
+	[-468] = "夢境灌注",
+	[-470] = "菲拉卡的突襲",
 	[-471] = "故事漫遊",
 	[-472] = "重返恐怖幻象",
 	[-474] = "元素入侵",

@@ -800,7 +800,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -7088,6 +7088,7 @@ q(95166,{isDaily=1,type="hqt"})}}),
 q(94708,{awp=120000,isDaily=1,type="hqt"}),
 q(94710,{awp=120000,type="hqt"}),
 q(94711,{awp=120000,type="hqt"}),
+q(94713,{awp=120000,type="hqt"}),
 q(95270,{awp=110207,isDaily=1,type="hqt"}),
 h(-557,{awp=110200,e=7,g={
 q(90118,{e=7,type="hqt"}),
@@ -7256,8 +7257,10 @@ q(92378,{type="hqt"}),
 q(92385,{type="hqt"}),
 q(92381,{type="hqt"}),
 q(92384,{type="hqt"})})}}),
-h(-103,{awp=120000,rwp=120000,u=2,g={
-h(-45,{u=2,g={
+h(-103,{
+h(-45,{
+q(95669,{isDaily=1,type="hqt"})}),
+h(-46,{awp=120000,rwp=120000,u=2,g={
 q(91473,{type="hqt",u=2}),
 q(91472,{type="hqt",u=2}),
 q(94507,{type="hqt",u=2}),
@@ -7276,12 +7279,15 @@ q(94518,{type="hqt",u=2}),
 q(94514,{type="hqt",u=2}),
 q(94506,{type="hqt",u=2}),
 q(91471,{type="hqt",u=2}),
-q(94510,{type="hqt",u=2})}})}}),
+q(94510,{type="hqt",u=2})}})}),
 h(-682,{awp=120000,g={
 q(94905,{type="hqt"})}}),
 h(-714,{awp=120000,g={
 h(-45,{
 q(94450,{type="hqt"}),
+q(94451,{type="hqt"}),
+q(94452,{type="hqt"}),
+q(94453,{type="hqt"}),
 q(95040,{type="hqt"})})}})}),
 h(-521,{awp=110000,u=3,g={
 x(11,{u=3,g={

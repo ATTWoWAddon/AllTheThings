@@ -589,8 +589,8 @@ mnt(23338,{b=1,itemID=18902,lvl=40,q=4,r=2}),
 mnt(16056,{b=1,itemID=12302,lvl=40,q=4,r=2,rwp=10400,u=2}),
 mnt(16055,{b=1,itemID=12303,lvl=40,q=4,r=2,rwp=10400,u=2})}})),
 n(50307,{awp=40003,coords={{37.1,47.4,1457}},r=2,g={
-i(245620,{cost=4500000,minReputation={1134,0},sourceQuests={14402}}),
-i(245518,{cost=1500000,minReputation={1134,0},sourceQuests={24675}}),
+i(245620,{cost=4500000,minReputation={1134,0}}),
+i(245518,{cost=1500000,minReputation={1134,0}}),
 s(209331,64882,{b=1,f=9,minReputation={1134,3000},q=1,r=2}),
 i(67532,{b=1,f=113,minReputation={1134,21000},q=2}),
 s(209341,64893,{b=1,f=3,lvl=35,minReputation={1134,42000},q=3,r=2}),
@@ -10495,7 +10495,8 @@ q(3923,{coords={{49,11.2,1413}},lvl=10,providers={{"i",11146}},qgs={9316},r=1,rw
 q(866,{coords={{67.9,71.5,1413}},description="To access this quest, you must have at least 40 skill in Herbalism.",lvl=9,qgs={3446},requireSkill=182,g={
 qo(1,{providers={{"i",5056}}}),
 s(120387,5341,{b=1,f=5,q=2})}}),
-q(29021,{altQuests={902},awp=40006,coords={{62.3,17.4,1413}},qgs={3442},r=1}),
+q(29021,{altQuests={902},awp=40006,coords={{62.3,17.4,1413}},qgs={3442},r=1,g={
+i(5088,{q=1})}}),
 q(29022,{altQuests={902},awp=40006,coords={{50.3,25.6,1413}},providers={{"o",4141}},r=1,sourceQuests={29021},g={
 qo(1,{providers={{"o",4072}}}),
 qo(2,{providers={{"o",61936}}}),
@@ -10746,8 +10747,14 @@ s(200878,4782,{f=4,isLimited=1,lvl=13,q=2,u=2}),
 s(119904,4781,{f=4,isLimited=1,lvl=15,q=2,u=2}),
 s(119909,4786,{f=4,isLimited=1,lvl=15,q=2,u=2})}}),
 n(3497,{coords={{68.6,72.6,1413}},g={
+i(4593,{f=55,lvl=15,q=1}),
+i(4592,{f=55,lvl=5,q=1}),
 r(7755,{itemID=6330,learnedAt=100,q=1,requireSkill=185}),
-r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185})}}),
+r(7827,{itemID=6368,learnedAt=50,q=1,requireSkill=185}),
+i(4594,{f=55,lvl=25,q=1}),
+i(787,{f=55,q=1}),
+i(8957,{f=55,lvl=45,q=1}),
+i(21552,{f=55,lvl=35,q=1})}}),
 n(3658,{coords={{50.2,59.2,1413},{66.8,72.6,1413}},description="Travels on the road between Ratchet and The Crossroads.",g={
 s(119890,4765,{f=25,isLimited=1,lvl=9,q=2}),
 s(119891,4766,{f=25,isLimited=1,lvl=8,q=2}),
@@ -26264,7 +26271,7 @@ s(117339,1459,{awp=100107,coords={{79.2,40.6,1433},{80.6,48.8,1433}},crs={579},f
 s(117340,1460,{awp=100107,coords={{72.6,51.2,1433},{74.2,44.6,1433}},crs={434},f=26,lvl=15,q=2,rwp=40003,u=2}),
 s(117341,1461,{awp=100107,coords={{78.4,38.2,1433},{81.6,48.6,1433}},crs={431},f=22,lvl=20,q=2,rwp=40003,u=2}),
 i(1080,{coords={{22.2,64.5,1433}},crs={428},description="Only drops from Dire Condors in Redridge Mountains.",q=1})})}}),
-m(217,{awp=40003,icon=462671,g={
+m(217,{awp=40003,icon=462671,maps={218},g={
 h(-30,{
 exp(5442),
 exp(5440),
@@ -33296,6 +33303,16 @@ s(142990,32645,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=33,lvl=70,minReputati
 s(143172,32828,{b=1,cost={{"i",32569,10}},f=9,minReputation={1038,42000},q=1,u=1801}),
 s(142992,32647,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=5,lvl=70,minReputation={1038,42000},q=4,u=1801}),
 s(142993,32648,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=7,lvl=70,minReputation={1038,42000},q=4,u=1801})}}),
+n(22266,{coords={{27.8,58.2,1949}},minReputation={1038,0},u=17,g={
+i(32686,{f=55,lvl=65,q=1,u=17}),
+i(32685,{f=55,lvl=65,q=1,u=17}),
+i(29453,{f=55,lvl=65,q=1,u=17}),
+i(27859,{f=55,lvl=55,q=1,u=17})}}),
+n(23110,{coords={{27.9,57.6,1949}},minReputation={1038,0},u=17,g={
+i(32667,{f=55,lvl=65,q=1,u=17}),
+i(32668,{f=55,lvl=65,q=1,u=17})}}),
+n(22270,{coords={{27.8,58.5,1949}},minReputation={1038,0},u=17,g={
+i(32758,{q=1,u=17})}}),
 n(19473,{coords={{53,59,1949}},r=1,u=17,g={
 s(141104,30758,{f=31,lvl=60,q=1,u=17}),
 s(141103,30757,{f=33,lvl=60,q=1,u=17}),

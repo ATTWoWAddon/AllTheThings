@@ -2572,7 +2572,7 @@ faction(59,{maps={32},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
 q(7604,{lvl=20,providers={{"i",18628}},g={
 r(21161,{itemID=18592,requireSkill=164,skillID=2477}),
-de(11274,{awp=110207,itemID=256673,sourceQuests={7604},spellID=1260651})}}),
+de(11274,{awp=110207,itemID=256673,spellID=1260651})}}),
 q(4264,{providers={{"i",11446}},r=2,rwp=30002,sourceQuests={4242},u=2}),
 q(4282,{qgs=a[1344],qis={11464,11465},r=2,rwp=30002,sourceQuests={4264},u=2}),
 q(4022,{altQuests={4023},coords={a[1369]},cost={{"i",10575,1}},qgs=a[1367],rwp=40003,sourceQuests={3481},u=2}),
@@ -2707,8 +2707,7 @@ q(4184,{coords={a[698]},qgs=a[744],qis={11367},r=2,rwp=30002,sourceQuests={4183}
 q(4185,{coords={a[1247]},crs={1749},qgs=a[388],r=2,rwp=30002,sourceQuests={4184},u=2}),
 q(4186,{coords={a[1247]},qgs=a[388],qis=a[158],r=2,rwp=30002,sourceQuests={4185},u=2}),
 q(4223,{coords={a[698]},qgs=a[744],r=2,rwp=30002,sourceQuests={4186},u=2}),
-q(4224,{coords={a[1307]},qgs=a[1370],r=2,rwp=30002,sourceQuests={4223},u=2,g={
-n(9563,{coords={{65,23.8,36}}})}}),
+q(4224,{coords={a[1307]},qgs=a[1370],r=2,rwp=30002,sourceQuests={4223},u=2}),
 q(4133,{coords={{50.1,68,90}},isBreadcrumb=1,nextQuests={4134},qgs=a[969],r=1,rwp=40003,u=2}),
 q(28405,{awp=40003,c=a[486],coords={a[1257]},lvl=20,qgs=a[352],r=2,sourceQuests={28268},g={
 s(33079,65623,{b=1,f=7,r=2}),
@@ -3825,8 +3824,7 @@ o(175124)}}),
 q(4734,{coords={a[1144]},qgs=a[96],qis={12286},rwp=40003,sourceQuests={4907},u=2,g={
 i(12144,{b=1,u=2}),
 o(175124)}}),
-q(4941,{coords={a[937]},maps=a[1316],qgs=a[1347],r=1,rwp=40003,sourceQuests={4903},u=2,g={
-n(3144,{coords={{34.4,38.4,85}}})}}),
+q(4941,{coords={a[937]},maps=a[1316],qgs=a[1347],r=1,rwp=40003,sourceQuests={4903},u=2}),
 q(6570,{coords={a[945]},maps=a[1187],qgs=a[193],qis={16787},r=1,rwp=40003,sourceQuests=a[1151],u=2,g={
 i(16787,{f=51,spellID=19937,u=2})}}),
 q(4862,{coords={a[1147]},qgs=a[95],qis={12530},rwp=40003,u=2,g={
@@ -9710,7 +9708,10 @@ h(-45,{
 q(29564,{awp=40300,crs={17941},lvl=10,qgs={54668}}),
 q(29566,{awp=40300,coords={a[1249]},lvl=10,qgs=a[399]}),
 q(9876,{coords={a[1249]},isBreadcrumb=1,nextQuests={9738},qgs=a[399],rwp=40300,sourceQuests={9732},u=2}),
-q(9738,{coords={a[961]},maps={262},qgs=a[404],rwp=40300,sourceQuests={9876},u=2}),
+q(9738,{coords={a[961]},crs={17827},maps={262},qgs=a[404],rwp=40300,sourceQuests={9876},u=2,g={
+i(25541,{b=1,f=52}),
+s(12226,28029,{b=1,f=4}),
+s(10444,25540,{b=1,f=3})}}),
 q(29563,{awp=40300,lvl=10,qgs=a[1006],g={
 n(17890,{coords={{48.8,83,265}}}),
 n(17893,{coords={{95,65.4,265}}})}}),
@@ -37631,7 +37632,7 @@ ach(11696,{
 crit(36461,{achID=11763,id=2})})}}),
 e(1856,{npcID=116407,g={
 ach(11699,{crs={121071},g={
-de(11909,{awp=120000,itemID=258223,sourceAchievements={11699},spellID=1262995}),
+de(11909,{awp=120000,itemID=258223,spellID=1262995}),
 crit(36545,{achID=11763,id=9})}})}}),
 e(1903,{crs=a[191],g={
 ach(11773,{crs={121498},g={
@@ -41310,7 +41311,7 @@ crit(31792,{achID=10996,description="Racing around a stone pillar after killing 
 crit(31793,{achID=10996,description="Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",id=5,providers={{"n",111861}}}),
 crit(31794,{achID=10996,description="Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",id=6,providers={{"n",111864}}}),
 crit(32888,{achID=10996,description="After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",id=7,providers={{"n",113204}}}),
-de(11315,{awp=110207,itemID=256913,sourceAchievements={10996},spellID=1260911}),
+de(11315,{awp=110207,itemID=256913,spellID=1260911}),
 crit(32126,{achID=11163,awp=70003,id=6})}})}}),
 h(-45,{
 q(42454,{lvl=10,providers={{"o",250548}},sourceQuests={39781},g={
@@ -45735,7 +45736,7 @@ i(169156,{b=1,f=52,modID=23,spellID=300123})}})}}),
 h(-375,{
 e(2336,{crs=a[260],g={
 ach(13723,{
-de(2322,{awp=110207,itemID=246479,sourceAchievements={13723},spellID=1242327})}),
+de(2322,{awp=110207,itemID=246479,spellID=1242327})}),
 s(104810,168962,{b=1,f=20,modID=23}),
 s(104803,168955,{b=1,f=23,modID=23}),
 s(104814,168967,{b=1,f=6,modID=23,spellID=300143}),

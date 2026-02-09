@@ -913,7 +913,7 @@ q(51474,{coords={a[216]},lvl=40,qgs=a[77],r=2,sourceQuests={53352}}),
 q(53566,{coords={a[245]},lvl=40,maps=a[58],qgs=a[83],r=2,sourceQuests={51474},g={
 ach(12515),
 mnt(271646,{b=1,itemID=161331,lvl=10,r=2}),
-de(1118,{awp=110207,itemID=245427,sourceQuests={53566},spellID=1238559})}}),
+de(1118,{awp=110207,itemID=245427,spellID=1238559})}}),
 q(51486,{coords={a[243]},lvl=10,qgs=a[86],races=a[173],g={
 s(97209,161329,{b=1,f=9,races=a[173]}),
 i(157022,{b=1,spellID=262222})}}),
@@ -1156,7 +1156,7 @@ q(54735,{coords={{66.5,44.3,942}},lvl=40,qgs=a[103],r=2,sourceQuests={54734}}),
 q(54851,{coords={{67.5,44.7,942}},lvl=40,qgs=a[103],r=2,sourceQuests={54735}}),
 q(53720,{coords={{71.1,43.9,942}},lvl=40,qgs=a[103],r=2,sourceQuests={54851},g={
 ach(13163),
-de(9052,{awp=110207,itemID=252403,sourceQuests={53720},spellID=1254619}),
+de(9052,{awp=110207,itemID=252403,spellID=1254619}),
 mnt(282682,{b=1,itemID=164762,lvl=10,r=2})}}),
 q(55142,{c=a[49],coords={a[272]},lvl=10,qgs=a[110],races=a[170],g={
 s(101206,165010,{b=1,f=9,races=a[170]}),
@@ -7137,7 +7137,7 @@ en(208785,{questID=77783,races=a[183],spellID=421070,tmogSetID=3119,g={
 s(190113,208759,{f=25}),
 s(190114,208761,{f=25}),
 s(190115,208762,{f=25})}}),
-de(4423,{awp=110207,itemID=248401,races=a[183],sourceQuests={76213},spellID=1247069})}})}}),
+de(4423,{awp=110207,itemID=248401,races=a[183],spellID=1247069})}})}}),
 ra(27,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",races=a[161],g={
 q(49784,{coords={a[255]},lvl=50,qgs={131326},races=a[161],g={
 ach(12413,{races=a[161]}),

@@ -404,6 +404,7 @@ local TooltipSettingsBase = {
 		["Report:Collected"] = true,
 		["Report:CompletedQuests"] = true,
 		["Report:UnsortedQuests"] = true,
+		["Report:DeathTracker"] = true,
 
 		-- Nearby Content
 		["Nearby:ReportContent"] = false,

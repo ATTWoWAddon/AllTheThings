@@ -30,10 +30,6 @@ local function OnTooltipForDeathTracker(t, tooltipInfo)
 		end
 	end
 end
-local function OnUpdateForDeathTracker(t)
-	t.visible = app.MODE_DEBUG or app.IsClassic;
-	return true;
-end
 local fields = {
 	sourceIgnored = app.ReturnTrue,
 	deathCert = function(t)
@@ -51,9 +47,7 @@ local fields = {
 	deathCount = function(t)
 		return ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths or 0;
 	end,
-	OnUpdate = function(t)
-		return OnUpdateForDeathTracker;
-	end,
+	OnUpdate = app.EmptyFunction,
 	OnTooltip = function()
 		return OnTooltipForDeathTracker;
 	end,
@@ -100,3 +94,13 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	ATTAccountWideData = accountWideData
 	ATTCharacterData = characterData;
 end)
+
+local function AssignOnUpdateFunction()
+	if app.Settings:GetTooltipSetting("Report:DeathTracker") or app.MODE_DEBUG then
+		app.SwapClassDefinitionMethod("DeathTracker","OnUpdate",function() return app.AlwaysShowUpdate end)
+	else
+		app.SwapClassDefinitionMethod("DeathTracker","OnUpdate",function() return app.ReturnFalse end)
+	end
+end
+app.AddEventHandler("OnSettingsNeedsRefresh", AssignOnUpdateFunction);
+app.AddEventHandler("OnStartup", AssignOnUpdateFunction);

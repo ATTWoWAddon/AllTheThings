@@ -54,7 +54,7 @@ L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 L.ADJUST_ROW_INDENTS_CHECKBOX = "Adjust Row Indents";
 L.ADJUST_ROW_INDENTS_TOOLTIP = "Set whether or not to adjust the indent for rows based on the non-header row with the lowest indent.\n\nDefault: True";
-L.AFTER_REFRESH = "After Refresh";
+L.AFTER_REFRESH = "After Refresh ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 L.AH_SEARCH_BOE_ONLY = "Only Bind on Equip items can be found using this search.";
@@ -642,6 +642,8 @@ L.REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
 L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
+L.REPORT_DEATH_TRACKER_CHECKBOX = "Report Deaths";
+L.REPORT_DEATH_TRACKER_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Death Tracker in the Main List.";
 L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
 L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
@@ -1402,7 +1404,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=26,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
@@ -1428,7 +1429,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=21,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=28,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=4,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=11,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=18,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=25,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=1,["weekday"]=2,["year"]=2027},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=25,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=1,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=8,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
 });
 
 -- Filter Database Module
@@ -2920,6 +2922,7 @@ local ObjectIcons = {
 	[181687] = 135437,
 	[190483] = 134943,
 	[190484] = 134943,
+	[100000000] = 607513,
 	[100000001] = 135434,
 }; _.ObjectIcons = ObjectIcons;
 local ObjectModels = {
@@ -10677,28 +10680,33 @@ local achievementCriterias = {
 	},
 	[58452] = {
 		name = "[DNT] Exalted with Gadgetzan",
-		type = 8,
-		asset = 17522,
+		amount = 42000,
+		type = 46,
+		asset = 369,
 	},
 	[58453] = {
 		name = "[DNT] Exalted with Ratchet",
-		type = 8,
-		asset = 17521,
+		amount = 42000,
+		type = 46,
+		asset = 470,
 	},
 	[58454] = {
 		name = "[DNT] Exalted with Booty Bay",
-		type = 8,
-		asset = 17518,
+		amount = 42000,
+		type = 46,
+		asset = 21,
 	},
 	[58455] = {
 		name = "[DNT] Exalted with Everlook",
-		type = 8,
-		asset = 17520,
+		amount = 42000,
+		type = 46,
+		asset = 577,
 	},
 	[58456] = {
 		name = "[DNT] Honored with Bloodsail Buccaneers",
-		type = 8,
-		asset = 17523,
+		amount = 9000,
+		type = 46,
+		asset = 87,
 	},
 };
 L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
@@ -11534,7 +11542,7 @@ L.ADD_LINKED_CHARACTER_ACCOUNT = "Verknüpften Charakter / Account hinzufügen";
 L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Klick hier, um einen Charakter oder Account mit Eurem Account zu verknüpfen.";
 L.ADD_LINKED_POPUP = "Bitte geben Sie den Namen des Charakters oder Bnet Kontos ein, zu dem Sie eine Verknüpfung erstellen möchten.";
 L.ADDITIONAL_LABEL = "Zusätzliche Information";
-L.AFTER_REFRESH = "Nach Aktualisierung";
+L.AFTER_REFRESH = "Nach Aktualisierung ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Erfolgreich gescanned ";
 L.AH_SCAN_SUCCESSFUL_2 = " Gegenstände.";
 L.AH_SEARCH_BOE_ONLY = "Nur Gegenstände des 'Wird beim Anlegen gebunden' Types werden mit dieser Suche gefunden.";
@@ -14278,7 +14286,7 @@ L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Cliquez ici pour lier un compte ou un 
 L.ADD_LINKED_POPUP = "Veuillez saisir le nom du personnage ou du compte Battle.net vers lequel vous souhaitez établir un lien.";
 L.ADDED_WITH_PATCH_FORMAT = "Ceci a été ajouté au patch %s";
 L.ADDITIONAL_LABEL = "Informations complémentaires";
-L.AFTER_REFRESH = "Après l’actualisation";
+L.AFTER_REFRESH = "Après l’actualisation ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Analyser avec succès ";
 L.AH_SCAN_SUCCESSFUL_2 = " objet(s).";
 L.ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour activer toutes les options en même temps.";
@@ -20851,7 +20859,7 @@ L.ADDITIONAL_LABEL = "Дополнительная Информация";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
 L.ADHOC_UPDATES_CHECKBOX = "Обновлять только видимые окна";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите обновлять только открытые окна ATT.\n\nЭта опция может серьёзно ускорить загрузку и предотвратить фризы в некоторых ситуациях.";
-L.AFTER_REFRESH = "После Обновления";
+L.AFTER_REFRESH = "После Обновления ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Успешно сканировано ";
 L.AH_SCAN_SUCCESSFUL_2 = " предмет(ов).";
 L.AH_SEARCH_BOE_ONLY = "Только Персональные при Надевании предметы будут найдены при использовании данного поиска.";
@@ -26234,7 +26242,7 @@ L.ADDITIONAL_LABEL = "Información adicional";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de un refresco Forzado.";
 L.ADHOC_UPDATES_CHECKBOX = "Actualizaciones de ventanas Ad Hoc";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que sólo se actualicen las ventanas de ATT visibles.\n\nEsto puede reducir drásticamente los tiempos de carga y prevenir picos grandes de reducción de tasa de refresco en algunas situaciones.";
-L.AFTER_REFRESH = "Después de refrescar";
+L.AFTER_REFRESH = "Después de refrescar ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Escaneado exitoso";
 L.AH_SCAN_SUCCESSFUL_2 = " objeto(s).";
 L.AH_SEARCH_BOE_ONLY = "Solo se buscaran objetos ligados al equipar con esta búsqueda.";
@@ -29385,7 +29393,7 @@ L.ACHIEVEMENT_ID = "ID de logro";
 L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Haz click aquí para conectar un personaje o cuenta a tu cuenta.";
 L.ADDED_BACK_WITH_PATCH_FORMAT = "Re agregado en el parche %s";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de una actualización forzada.";
-L.AFTER_REFRESH = "Después de actualizar";
+L.AFTER_REFRESH = "Después de actualizar ";
 L.AH_SCAN_SUCCESSFUL_1 = ": Escaneo exitoso";
 L.ALL_BUTTON_TOOLTIP = "Haz click en este botón para activar todas las opciones a la vez.";
 L.APPLY_SEARCH_FILTER_DESC = "Por favor seleccione una opción de filtro de búsqueda.";
@@ -30821,7 +30829,7 @@ L.ADDITIONAL_LABEL = "附加信息";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由于缺少暴雪 API 信息而未能检测到。\n\n将在下次强制刷新后修复。";
 L.ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的 ATT 窗口请启用此选项。\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧。";
-L.AFTER_REFRESH = "刷新后";
+L.AFTER_REFRESH = "刷新后 ";
 L.AH_SCAN_SUCCESSFUL_1 = "：成功扫描 ";
 L.AH_SCAN_SUCCESSFUL_2 = " 物品。";
 L.AH_SEARCH_BOE_ONLY = "使用此搜索只能找到装备绑定物品。";
@@ -33846,7 +33854,7 @@ L.ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "如果任一角色已經收集了角�
 L.ACCOUNT_WIDE_DEATHS_TOOLTIP = "死亡追蹤實際上只存在於巫妖王之怒懷舊服之前，當時沒有統計資料來了解這些資訊。成就系統實裝後，此功能將直接從統計 API 獲得資料。您可以使用死亡追蹤器上的提示來查看";
 L.ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "地圖探索追蹤僅對每個角色都非常有用，但你真的想在所有50個角色上收藏它們嗎？";
 L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飛行路線追蹤對每個角色都非常有用，但是你真的想要在所有50個角色上收藏它們嗎？";
-L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每周1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
+L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每週1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
 L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任務完成通常是每個角色的，但是如果任何一個角色完成了特定的任務，這個任務就會被認為是已完成。";
 L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被整個帳號追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以賦予你的小號和他們的專業以意義。";
 L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤整個帳號，所以開啟這個功能可能是個好主意。";
@@ -33866,7 +33874,7 @@ L.ADDITIONAL_LABEL = "附加資訊";
 L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由於缺少暴雪 API 資訊而未能檢測到。\n\n將在下次強制刷新後修復。";
 L.ADHOC_UPDATES_CHECKBOX = "使用臨時視窗更新";
 L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可見的 ATT 視窗請啟用此選項。\n\n這可以大大減少載入時間並防止在某些情況下出現瘋狂掉幀。";
-L.AFTER_REFRESH = "刷新後";
+L.AFTER_REFRESH = "刷新後 ";
 L.AH_SCAN_SUCCESSFUL_1 = "：掃描成功 ";
 L.AH_SEARCH_BOE_ONLY = "使用此搜尋只能找到裝備綁定物品。";
 L.AH_SEARCH_NO_ITEMS_FOUND = "搜尋中找不到快取的物品。展開組並查看物品快取名稱，然後重試。使用此搜尋只能找到裝備綁定物品。";
@@ -33954,6 +33962,7 @@ L.COMPLETED_BY_CHECKBOX_TOOLTIP = "如果你想在指標提示中查看所有伺
 L.COMPLETED_MULTIPLE = "可以重複多次";
 L.COMPLETED_SOURCES_CHECKBOX = "對已完成";
 L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在指標提示中看到已完成的來源位置，請啟用此選項。\n\n舉個例子，如果你在梣谷完成了任務“巴斯蘭的頭髮”，當你指標懸停在艾芙娜·寂語身上時，他的指標提示就不會再顯示這個任務了。";
+L.COMPLETED_WEEKLY = "可以每週完成";
 L.COMPLETIONIST_MODE = "+來源";
 L.COMPLETIONIST_MODE_TOOLTIP = "啟用該模式，只有當特定物品已被解鎖為給定外觀時才將物品視為已收藏。\n\n這意味著你需要收藏每一個共享外觀的物品。\n\n注意：預設情況下一旦你收藏了共享來源，遊戲就會停止告訴你未收藏的物品，這將確保未收藏的物品會被追蹤。";
 L.CONFIRM_DELETE = "\n \n確定刪除此項？";
@@ -34264,6 +34273,7 @@ L.PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一
 L.PROFILES_PAGE = "設定檔";
 L.PROGRESS = "進度";
 L.PROVIDERS = "供應商";
+L.PVP_RANK_DESCRIPTION = "雙方陣營共有14個軍銜等級。每週會根據玩家在伺服器中的排名情況，通過評定戰點數來劃分軍銜——每個軍銜都設有對應的最低戰點數要求。\n\n不同軍銜將解鎖相應獎勵：從 PvP 消耗品、無需高級騎術即可騎乘的史詩坐騎，到最高軍銜專屬的史詩級裝備。所有軍銜都會以稱號形式永久附加在角色名稱上。";
 L.QUEST_CHAIN_REQ = "任務鏈要求";
 L.QUEST_CHAIN_REQ_DESC = "在能夠完成最終任務之前需要完成以下任務。";
 L.QUEST_DESC = "點擊此按鈕可依據缺少的內容選擇隨機任務。";
@@ -34277,7 +34287,7 @@ L.QUEST_OBJECTIVE_INVALID = "無效的任務目標";
 L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏無關緊要的任務 '%s' %s";
 L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
-L.QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每周、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
+L.QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每週、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
 L.QUESTS_DESC = "按數字升序顯示遊戲中所有可能的任務 ID。";
 L.QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "啟用此選項將包含隱藏任務追蹤（HQT）的完成情況。\n\nHQT 是對玩家不可見的任務 ID，遊戲在後台用於監控角色/帳號在各種情況下的進度或狀態。\n\n你大概並不關心追蹤這些，對吧？我想你應該沒問題的。";
 L.QUESTS_LOCKED_CHECKBOX = "+已鎖定";
@@ -34573,16 +34583,12 @@ localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
 });
 localize(ObjectNames, {
-	[103711] = "錫礦脈",
-	[103713] = "銅礦",
-	[105569] = "銀礦",
 	[176785] = "彈藥箱",
 	[179697] = "競技場寶箱",
 	[180248] = "可口魚魚群",
 	[180456] = "次級風石",
 	[180461] = "風石",
 	[405633] = "石齶置物箱",
-	[410779] = "祭品盒",
 	[100000000] = "考古學家的推車",
 });
 for key,value in pairs({

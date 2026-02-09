@@ -21,6 +21,18 @@ end)
 checkboxReportCollectedThings:SetATTTooltip(L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP)
 checkboxReportCollectedThings:SetPoint("TOPLEFT", headerReporting, "BOTTOMLEFT", -2, 0)
 
+
+local checkboxReportDeathTracker = child:CreateCheckBox(L.REPORT_DEATH_TRACKER_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:DeathTracker"))
+end,
+function(self)
+	settings:SetTooltipSetting("Report:DeathTracker", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxReportDeathTracker:SetATTTooltip(L.REPORT_DEATH_TRACKER_CHECKBOX_TOOLTIP)
+checkboxReportDeathTracker:AlignBelow(checkboxReportCollectedThings)
+
 local checkboxReportQuests = child:CreateCheckBox(L.REPORT_COMPLETED_QUESTS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"))
@@ -29,7 +41,7 @@ function(self)
 	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked())
 end)
 checkboxReportQuests:SetATTTooltip(L.REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP)
-checkboxReportQuests:AlignBelow(checkboxReportCollectedThings)
+checkboxReportQuests:AlignBelow(checkboxReportDeathTracker)
 
 local checkboxReportUnsourced = child:CreateCheckBox(L.REPORT_UNSORTED_CHECKBOX,
 function(self)
