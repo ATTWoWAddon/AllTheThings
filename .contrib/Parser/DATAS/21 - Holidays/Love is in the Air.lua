@@ -2536,7 +2536,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						["cost"] = {{"i", LOVE_TOKEN, 40}},
 					}),
 					iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
-						["cost"] = {{"i", LOVE_TOKEN, 40}},
+						["cost"] = {{"i", LOVE_TOKEN, 100}},
 						["timeline"] = { ADDED_12_0_0 },
 					}),
 					i(235653, {	-- Spring Butterfly Longbow
