@@ -280,7 +280,7 @@ local RetailMapDataStyleMetatable = {
 
 			-- Nest our external maps into a special header to reduce minilist header spam
 			if #externalMaps > 0 then
-				local externalMapHeader = app.CreateRawText(TRACKER_FILTER_REMOTE_ZONES, {icon=450908,description=L.REMOTE_ZONES_DESCRIPTION,external=true})
+				local externalMapHeader = app.CreateCustomHeader(app.HeaderConstants.REMOTE_ZONES, {external=true})
 				externalMapHeader.SortType = "Global";
 				NestObjects(externalMapHeader, externalMaps)
 				MergeObject(groups, externalMapHeader)

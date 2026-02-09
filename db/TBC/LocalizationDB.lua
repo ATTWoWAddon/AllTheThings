@@ -632,7 +632,6 @@ L.RECIPES_CHECKBOX = "Recipes";
 L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 L.REFRESHING_COLLECTION = "Refreshing collection ...";
 L.RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-L.REMOTE_ZONES_DESCRIPTION = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.";
 L.REMOVED_WITH_PATCH = "Removed With Patch";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 L.REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
@@ -966,6 +965,7 @@ _.HeaderConstants = {
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
 	RARES = -46,
+	REMOTE_ZONES = -721,
 	REWARDS = -47,
 	SHARED_APPEARANCES = -341,
 	SHOULDER = -98,
@@ -1116,6 +1116,7 @@ localize(L.HEADER_NAMES, {
 	[-611] = "Silithid Royalty",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
+	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1143,6 +1144,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-547] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-550] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	[-610] = "If the following are sorted somewhere, please delete them from this list. Thanks.",
+	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -30428,7 +30430,6 @@ L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000Чем больше информац
 L.RECIPES_CHECKBOX = "Рецепты";
 L.RECIPES_CHECKBOX_TOOLTIP = "Включите для отслеживания рецептов для Ваших профессий\n\nПримечание: Вы должны открыть Ваши профессии, чтобы кэшировать известные рецепты.";
 L.REFRESHING_COLLECTION = "Обновление коллекции ...";
-L.REMOTE_ZONES_DESCRIPTION = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.";
 L.REMOVED_WITH_PATCH = "Убрано в патче";
 L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
@@ -30701,6 +30702,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 	[-342] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
+	[-721] = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
@@ -38190,7 +38192,6 @@ L.RECIPES_CHECKBOX = "Recetas";
 L.RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.";
 L.REFRESHING_COLLECTION = "Refrescando colección ...";
 L.RELOG_REQUIRED = "Después de usar esto, normalmente es necesario cerrar sesión e iniciar sesión para recolectar todos los elementos correctamente en los servidores del juego.";
-L.REMOTE_ZONES_DESCRIPTION = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.";
 L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "Esto se elimina con un parche %s";
 L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en el parche %s";
@@ -38522,6 +38523,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-342] = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 	[-343] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
 	[-550] = "Este es un evento basado en Campos de batalla que coincide con el inicio de los Juegos Olímpicos de Verano. La única vez que se celebró fue en 2008 para coincidir con los Juegos Olímpicos de Pekín, y aunque parecía haber intención de repetirlo, nunca regresó.",
+	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -44709,7 +44711,6 @@ L.RECIPES_CHECKBOX = "配方";
 L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 L.REFRESHING_COLLECTION = "刷新收藏…";
 L.RELOG_REQUIRED = "使用此功能后，通常需要注销并重新登录，以便在游戏服务器上正确领取所有物品。";
-L.REMOTE_ZONES_DESCRIPTION = "包含当前区域可用但实际源自其他区域的内容。";
 L.REMOVED_WITH_PATCH = "随补丁移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
@@ -45036,6 +45037,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-356] = "该副本的此部分可从最北侧的入口进入。",
 	[-357] = "该副本的此部分可从最西侧的入口进入。（左侧）",
 	[-550] = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
+	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -48818,7 +48820,6 @@ L.REAGENT_CACHE_OUT_OF_DATE = "快取已過期，打開專業技能介面後會�
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
 L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000提供越多資訊越好，謝謝！|r";
 L.RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
-L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接來自另一個區域的內容。";
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
@@ -49086,6 +49087,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-355] = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
+	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",

@@ -633,7 +633,6 @@ L.RECIPES_CHECKBOX = "Recipes";
 L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 L.REFRESHING_COLLECTION = "Refreshing collection ...";
 L.RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-L.REMOTE_ZONES_DESCRIPTION = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.";
 L.REMOVED_WITH_PATCH = "Removed With Patch";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 L.REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
@@ -980,6 +979,7 @@ _.HeaderConstants = {
 	PVP = -303,
 	QUESTS = -45,
 	RARES = -46,
+	REMOTE_ZONES = -721,
 	REWARDS = -47,
 	SEASON_OF_DISCOVERY = -632,
 	SHARED_APPEARANCES = -341,
@@ -1145,6 +1145,7 @@ localize(L.HEADER_NAMES, {
 	[-688] = "Blood Moon",
 	[-697] = "Zul'Gurub Hakkar Hardmode",
 	[-698] = TRANSMOG_SOURCE_4,
+	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1183,6 +1184,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-642] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
 	[-645] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
 	[-688] = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
+	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1332,6 +1334,7 @@ localize(L.HEADER_ICONS, {
 	[-688] = 237513,
 	[-697] = 237211,
 	[-698] = _.asset("category_worlddrops"),
+	[-721] = 237382,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -21288,7 +21291,6 @@ L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000Чем больше информац
 L.RECIPES_CHECKBOX = "Рецепты";
 L.RECIPES_CHECKBOX_TOOLTIP = "Включите для отслеживания рецептов для Ваших профессий\n\nПримечание: Вы должны открыть Ваши профессии, чтобы кэшировать известные рецепты.";
 L.REFRESHING_COLLECTION = "Обновление коллекции ...";
-L.REMOTE_ZONES_DESCRIPTION = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.";
 L.REMOVED_WITH_PATCH = "Убрано в патче";
 L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
@@ -21577,6 +21579,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-632] = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
 	[-639] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
 	[-645] = "Квестовые предметы Перехват припасов падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
+	[-721] = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
@@ -26746,7 +26749,6 @@ L.RECIPES_CHECKBOX = "Recetas";
 L.RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.";
 L.REFRESHING_COLLECTION = "Refrescando colección ...";
 L.RELOG_REQUIRED = "Después de usar esto, normalmente es necesario cerrar sesión e iniciar sesión para recolectar todos los elementos correctamente en los servidores del juego.";
-L.REMOTE_ZONES_DESCRIPTION = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.";
 L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "Esto se elimina con un parche %s";
 L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en el parche %s";
@@ -27087,6 +27089,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-642] = "Después de recibir a tu escudero, invócalo usando la Reliquia y luego súbelo de nivel entrando en combate y manteniéndolo con vida.",
 	[-645] = "Los objetos de misión de Suministros saqueados caen de criaturas de nivel 6 o superior en todo Azeroth. Estas misiones requieren la entrega de Suministros saqueados a un representante de organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-688] = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
+	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -31352,7 +31355,6 @@ L.RECIPES_CHECKBOX = "配方";
 L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 L.REFRESHING_COLLECTION = "刷新收藏…";
 L.RELOG_REQUIRED = "使用此功能后，通常需要注销并重新登录，以便在游戏服务器上正确领取所有物品。";
-L.REMOTE_ZONES_DESCRIPTION = "包含当前区域可用但实际源自其他区域的内容。";
 L.REMOVED_WITH_PATCH = "随补丁移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
@@ -31694,6 +31696,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-639] = "铭刻是最近在发现季节宣布的一个新系统。它允许每个职业通过解锁新的独特能力来定制他们的游戏体验！",
 	[-645] = "'遭劫货物'任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将'遭劫货物'交付给组织代表，以换取一些银币、经验和声望。当然，货物中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 	[-688] = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
+	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -34305,7 +34308,6 @@ L.REAGENT_CACHE_OUT_OF_DATE = "快取已過期，打開專業技能介面後會�
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
 L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000提供越多資訊越好，謝謝！|r";
 L.RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
-L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接來自另一個區域的內容。";
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
@@ -34579,6 +34581,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-632] = "這個賽季起初將會有 25 級的上限，還會帶來全新的 25 級終局內容，包括帶有全新機制的 10 人玩家黑澗深淵副本、全新設計的首領來挑戰玩家的戰術實力，同時還會給予新獎勵。",
 	[-639] = "紋刻是最近在探索賽季實現的一個新系統，它允許每個職業通過解鎖新的獨特能力來自訂他們的遊戲體驗！",
 	[-645] = "'遭攔截的物資'任務物品會從艾澤拉斯各地6級及以上的怪物掉落。這些任務要求將'遭攔截的物資'交付給某個組織的代表，以換取少量銀幣、經驗值和聲望。當然，物資運送中有一些物品遺失，你可以補充這些物品以獲得更多的聲望獎勵。",
+	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",

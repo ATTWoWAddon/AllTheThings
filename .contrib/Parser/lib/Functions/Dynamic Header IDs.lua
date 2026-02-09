@@ -458,6 +458,7 @@ HeaderAssignments = {
 	["Reliquary of Opulence"] = -377,
 	["Remix: Legion"] = -104,
 	["Remix: Mists of Pandaria"] = -105,
+	["Remote Zones"] = -721,
 	["Renown"] = -170,
 	["Rewards"] = -47,
 	["Riding Trainer"] = -48,
@@ -700,4 +701,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -721;
+NextHeaderID = -722;

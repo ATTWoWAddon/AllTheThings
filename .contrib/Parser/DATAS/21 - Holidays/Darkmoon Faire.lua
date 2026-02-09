@@ -2771,7 +2771,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #else
 					{ 52.2, 66.0, ORGRIMMAR },
 					-- #endif
+					-- #if AFTER TBC
 					{ 74.6, 82.0, SILVERMOON_CITY },
+					-- #endif
 				},
 				-- #if BEFORE 4.3.0
 				["lvl"] = 6,

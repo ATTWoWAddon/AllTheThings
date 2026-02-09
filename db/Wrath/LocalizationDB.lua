@@ -632,7 +632,6 @@ L.RECIPES_CHECKBOX = "Recipes";
 L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 L.REFRESHING_COLLECTION = "Refreshing collection ...";
 L.RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-L.REMOTE_ZONES_DESCRIPTION = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.";
 L.REMOVED_WITH_PATCH = "Removed With Patch";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 L.REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
@@ -1045,6 +1044,7 @@ _.HeaderConstants = {
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
 	RARES = -46,
+	REMOTE_ZONES = -721,
 	REWARDS = -47,
 	SHARED_APPEARANCES = -341,
 	SHOULDER = -98,
@@ -1232,6 +1232,7 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Twilight Zone",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
+	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1265,6 +1266,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-659] = "Engage Sartharion with at least 1 of the 3 drakes alive and then defeat Sartharion.",
 	[-660] = "Engage Sartharion with at least 2 of the 3 drakes alive and then defeat Sartharion.",
 	[-661] = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
+	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1441,6 +1443,7 @@ localize(L.HEADER_ICONS, {
 	[-661] = 236471,
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
+	[-721] = 237382,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -3445,6 +3448,8 @@ local ObjectNames = {
 	[202082] = "Ravasaur Matriarch's Nest",
 	[202083] = "Razormaw Matriarch's Nest",
 	[202180] = "Gunship Armory",
+	[202947] = "Cologne Neutralizer",
+	[202948] = "Perfume Neutralizer",
 	[207724] = "Shipwreck Debris",
 	[253069] = "Blacker Lotus",
 	[375544] = "Wooden Figurine",
@@ -5356,6 +5361,8 @@ local ObjectModels = {
 	[202082] = 199226,
 	[202083] = 199226,
 	[202180] = 341746,
+	[202947] = 243413,
+	[202948] = 243417,
 	[207724] = 219411,
 	[253069] = 219437,
 	[375544] = 201094,
@@ -8030,6 +8037,8 @@ localize(ObjectNames, {
 	[202082] = "Nest der Ravasaurusmatriarchin",
 	[202083] = "Nest der Scharfzahnmatriarchin",
 	[202180] = "Truhe des Kanonenboots",
+	[202947] = "Neutralisierungsstoff für Duftwasser",
+	[202948] = "Neutralisierungsstoff für Parfüm",
 	[207724] = "Schiffswracktrümmer",
 	[253069] = "Schwärzerer Lotus",
 	[375544] = "Holzstatuette",
@@ -9842,6 +9851,8 @@ localize(ObjectNames, {
 	[202082] = "Œuf de matriarche ravasaure",
 	[202083] = "Œuf de matriarche tranchegueule",
 	[202180] = "Armurerie de la canonnière",
+	[202947] = "Neutraliseur d'eau de Cologne",
+	[202948] = "Neutraliseur de parfum",
 	[207724] = "Débris d’épave",
 	[253069] = "Lotus encore plus noir",
 	[375544] = "Figurine en bois",
@@ -10904,6 +10915,8 @@ localize(ObjectNames, {
 	[202082] = "Nido della Matriarca Devasauro",
 	[202083] = "Nido della Matriarca Boccaguzza",
 	[202180] = "Armeria della Cannoniera",
+	[202947] = "Neutralizzatore Colonia",
+	[202948] = "Neutralizzatore di Profumo",
 	[207724] = "Pezzi del Relitto",
 	[253069] = "Loto Nerissimo",
 });
@@ -12348,6 +12361,8 @@ localize(ObjectNames, {
 	[202082] = "Ninho da Matriarca Ravassauro",
 	[202083] = "Ninho da Matriarca Rasgaqueixo",
 	[202180] = "Arsenal da Belonave",
+	[202947] = "Neutralizador de Colônia",
+	[202948] = "Neutralizador de Perfume",
 	[207724] = "Destroços do Naufrágio",
 	[253069] = "Lótus Mais Preto",
 	[375544] = "Estatueta de Madeira",
@@ -12854,7 +12869,6 @@ L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000Чем больше информац
 L.RECIPES_CHECKBOX = "Рецепты";
 L.RECIPES_CHECKBOX_TOOLTIP = "Включите для отслеживания рецептов для Ваших профессий\n\nПримечание: Вы должны открыть Ваши профессии, чтобы кэшировать известные рецепты.";
 L.REFRESHING_COLLECTION = "Обновление коллекции ...";
-L.REMOTE_ZONES_DESCRIPTION = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.";
 L.REMOVED_WITH_PATCH = "Убрано в патче";
 L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
@@ -13149,6 +13163,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 	[-342] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
+	[-721] = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
@@ -14524,6 +14539,8 @@ localize(ObjectNames, {
 	[202082] = "Гнездо равазавра-матриарха",
 	[202083] = "Гнездо острозуба-матриарха",
 	[202180] = "Оружейная боевого корабля",
+	[202947] = "Нейтрализатор запаха одеколона",
+	[202948] = "Нейтрализатор запаха духов",
 	[207724] = "Обломки кораблекрушения",
 	[253069] = "Чернейший лотос",
 	[375544] = "Деревянная статуэтка",
@@ -15959,6 +15976,8 @@ localize(ObjectNames, {
 	[202082] = "우두머리 라바사우루스의 둥지",
 	[202083] = "무쇠턱 우두머리랩터의 둥지",
 	[202180] = "비행포격선 장비함",
+	[202947] = "은은한 향수 중화제",
+	[202948] = "매혹적인 향수 중화제",
 	[207724] = "난파선 파편",
 	[253069] = "더 검은 연꽃",
 	[100000001] = "불을 붙이지 않은 횃불",
@@ -16547,7 +16566,6 @@ L.RECIPES_CHECKBOX = "Recetas";
 L.RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.";
 L.REFRESHING_COLLECTION = "Refrescando colección ...";
 L.RELOG_REQUIRED = "Después de usar esto, normalmente es necesario cerrar sesión e iniciar sesión para recolectar todos los elementos correctamente en los servidores del juego.";
-L.REMOTE_ZONES_DESCRIPTION = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.";
 L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "Esto se elimina con un parche %s";
 L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en el parche %s";
@@ -16924,6 +16942,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-343] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
 	[-550] = "Este es un evento basado en Campos de batalla que coincide con el inicio de los Juegos Olímpicos de Verano. La única vez que se celebró fue en 2008 para coincidir con los Juegos Olímpicos de Pekín, y aunque parecía haber intención de repetirlo, nunca regresó.",
 	[-592] = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -18283,6 +18302,8 @@ localize(ObjectNames, {
 	[202082] = "Nido de matriarca ravasaurio",
 	[202083] = "Nido de matriarca Tajobuche",
 	[202180] = "Arsenal de la nave de guerra",
+	[202947] = "Neutralizador de colonia",
+	[202948] = "Neutralizador de perfume",
 	[207724] = "Restos de naufragio",
 	[253069] = "Loto renegrido",
 	[375544] = "Figurilla de madera",
@@ -19285,7 +19306,6 @@ L.RECIPES_CHECKBOX = "配方";
 L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 L.REFRESHING_COLLECTION = "刷新收藏…";
 L.RELOG_REQUIRED = "使用此功能后，通常需要注销并重新登录，以便在游戏服务器上正确领取所有物品。";
-L.REMOTE_ZONES_DESCRIPTION = "包含当前区域可用但实际源自其他区域的内容。";
 L.REMOVED_WITH_PATCH = "随补丁移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
@@ -19642,6 +19662,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-357] = "该副本的此部分可从最西侧的入口进入。（左侧）",
 	[-550] = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
 	[-592] = "这是一个每年重现的活动，发生在十一月初到年底之间。",
+	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -20815,6 +20836,8 @@ localize(ObjectNames, {
 	[202081] = "塔克的卵",
 	[202082] = "暴掠龙女王的卵",
 	[202083] = "刺喉雌龙的卵",
+	[202947] = "古龙水中和剂",
+	[202948] = "香水中和剂",
 	[207724] = "船只残骸",
 	[100000000] = "考古学家的车",
 	[100000001] = "未点燃的火把",
@@ -21341,7 +21364,6 @@ L.REAGENT_CACHE_OUT_OF_DATE = "快取已過期，打開專業技能介面後會�
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
 L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000提供越多資訊越好，謝謝！|r";
 L.RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
-L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接來自另一個區域的內容。";
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
@@ -21632,6 +21654,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	[-592] = "這是一個每年重複的活動，發生在十一月初到年底之間。",
+	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",

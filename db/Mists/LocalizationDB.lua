@@ -632,7 +632,6 @@ L.RECIPES_CHECKBOX = "Recipes";
 L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 L.REFRESHING_COLLECTION = "Refreshing collection ...";
 L.RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-L.REMOTE_ZONES_DESCRIPTION = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.";
 L.REMOVED_WITH_PATCH = "Removed With Patch";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 L.REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
@@ -1110,6 +1109,7 @@ _.HeaderConstants = {
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
 	RARES = -46,
+	REMOTE_ZONES = -721,
 	REWARDS = -47,
 	SCENARIO_COMPLETION = -49,
 	SCENARIOS = -420,
@@ -1360,6 +1360,7 @@ localize(L.HEADER_NAMES, {
 	[-691] = "Treasures of Azeroth",
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
+	[-721] = TRACKER_FILTER_REMOTE_ZONES,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1412,6 +1413,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-660] = "Engage Sartharion with at least 2 of the 3 drakes alive and then defeat Sartharion.",
 	[-661] = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
 	[-691] = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
+	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1650,6 +1652,7 @@ localize(L.HEADER_ICONS, {
 	[-691] = 7259806,
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
+	[-721] = 450908,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -4669,6 +4672,8 @@ local ObjectNames = {
 	[202871] = "Sunken Crate",
 	[202884] = "Scorched Soil",
 	[202902] = "Flameward",
+	[202947] = "Cologne Neutralizer",
+	[202948] = "Perfume Neutralizer",
 	[202952] = "Darkwhisper Lodestone",
 	[202954] = "Rod of Subjugation",
 	[202955] = "Rod of Subjugation",
@@ -7966,6 +7971,8 @@ local ObjectModels = {
 	[202846] = 199754,
 	[202871] = 200961,
 	[202884] = 201030,
+	[202947] = 243413,
+	[202948] = 243417,
 	[202952] = 189103,
 	[202954] = 326711,
 	[202955] = 326711,
@@ -12318,6 +12325,8 @@ localize(ObjectNames, {
 	[202846] = "Verkohlte Stabfragmente",
 	[202871] = "Versunkene Kiste",
 	[202884] = "Versengte Erde",
+	[202947] = "Neutralisierungsstoff für Duftwasser",
+	[202948] = "Neutralisierungsstoff für Parfüm",
 	[202952] = "Flüsterleitstein",
 	[202956] = "Raketenwagenteile",
 	[202957] = "Raketenwagenteile",
@@ -15374,6 +15383,8 @@ localize(ObjectNames, {
 	[202846] = "Fragment de bâton carbonisé",
 	[202871] = "Caisse engloutie",
 	[202884] = "Sol calciné",
+	[202947] = "Neutraliseur d'eau de Cologne",
+	[202948] = "Neutraliseur de parfum",
 	[202952] = "Magnétite du Sombre murmure",
 	[202956] = "Pièces de chariot explosif",
 	[202957] = "Pièces de chariot explosif",
@@ -17674,6 +17685,8 @@ localize(ObjectNames, {
 	[202846] = "Frammento di Bastone Carbonizzato",
 	[202871] = "Cassa Affondata",
 	[202884] = "Suolo Bruciato",
+	[202947] = "Neutralizzatore Colonia",
+	[202948] = "Neutralizzatore di Profumo",
 	[202952] = "Magnetite di Mormoscuro",
 	[202956] = "Parti di Razzomacchina",
 	[202957] = "Parti di Razzomacchina",
@@ -20351,6 +20364,8 @@ localize(ObjectNames, {
 	[202846] = "Fragmento de Cajado de Osso",
 	[202871] = "Caixote Submerso",
 	[202884] = "Terra Calcinada",
+	[202947] = "Neutralizador de Colônia",
+	[202948] = "Neutralizador de Perfume",
 	[202952] = "Magnetita do Sussurro Sombrio",
 	[202956] = "Peças de Carro-foguete",
 	[202957] = "Peças de Carro-foguete",
@@ -21856,7 +21871,6 @@ L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000Чем больше информац
 L.RECIPES_CHECKBOX = "Рецепты";
 L.RECIPES_CHECKBOX_TOOLTIP = "Включите для отслеживания рецептов для Ваших профессий\n\nПримечание: Вы должны открыть Ваши профессии, чтобы кэшировать известные рецепты.";
 L.REFRESHING_COLLECTION = "Обновление коллекции ...";
-L.REMOTE_ZONES_DESCRIPTION = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.";
 L.REMOVED_WITH_PATCH = "Убрано в патче";
 L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
@@ -22181,6 +22195,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 	[-342] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-343] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
+	[-721] = "Контент, который доступен в текущей зоне, но формально заимствован из другой зоны.",
 });
 localize(L.HEADER_LORE, {
 	[-389] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
@@ -23772,6 +23787,8 @@ localize(ObjectNames, {
 	[202846] = "Обугленный фрагмент посоха",
 	[202871] = "Затонувший ящик",
 	[202884] = "Выжженная земля",
+	[202947] = "Нейтрализатор запаха одеколона",
+	[202948] = "Нейтрализатор запаха духов",
 	[202952] = "Магнит Зловещего Шепота",
 	[202956] = "Детали болида",
 	[202957] = "Детали болида",
@@ -26445,6 +26462,8 @@ localize(ObjectNames, {
 	[202846] = "까맣게 탄 지팡이 조각",
 	[202871] = "가라앉은 상자",
 	[202884] = "불타버린 흙",
+	[202947] = "은은한 향수 중화제",
+	[202948] = "매혹적인 향수 중화제",
 	[202952] = "검은속삭임 자철광",
 	[202956] = "로켓 자동차 부품",
 	[202957] = "로켓 자동차 부품",
@@ -28024,7 +28043,6 @@ L.RECIPES_CHECKBOX = "Recetas";
 L.RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.";
 L.REFRESHING_COLLECTION = "Refrescando colección ...";
 L.RELOG_REQUIRED = "Después de usar esto, normalmente es necesario cerrar sesión e iniciar sesión para recolectar todos los elementos correctamente en los servidores del juego.";
-L.REMOTE_ZONES_DESCRIPTION = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.";
 L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "Esto se elimina con un parche %s";
 L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en el parche %s";
@@ -28473,6 +28491,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-563] = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
 	[-564] = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
 	[-592] = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -30046,6 +30065,8 @@ localize(ObjectNames, {
 	[202846] = "Fragmento de bastón carbonizado",
 	[202871] = "Cajón hundido",
 	[202884] = "Suelo agostado",
+	[202947] = "Neutralizador de colonia",
+	[202948] = "Neutralizador de perfume",
 	[202952] = "Magnetita Negro Rumor",
 	[202956] = "Piezas de coche cohete",
 	[202957] = "Piezas de coche cohete",
@@ -32068,7 +32089,6 @@ L.RECIPES_CHECKBOX = "配方";
 L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 L.REFRESHING_COLLECTION = "刷新收藏…";
 L.RELOG_REQUIRED = "使用此功能后，通常需要注销并重新登录，以便在游戏服务器上正确领取所有物品。";
-L.REMOTE_ZONES_DESCRIPTION = "包含当前区域可用但实际源自其他区域的内容。";
 L.REMOVED_WITH_PATCH = "随补丁移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
@@ -32467,6 +32487,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-564] = "位于入口附近，游客们会收到一个大锤，用来敲打从该区域的九个桶中弹出的填充豺狼人。玩家将有60秒的时间来获得30分。豺狼人有三种类型：普通的、霍格和婴儿，分别奖励1分、3分或一次击倒。",
 	[-592] = "这是一个每年重现的活动，发生在十一月初到年底之间。",
 	[-652] = "赞达拉部族对潘达利亚大陆的入侵始于雷神岛的开放。战争使者遍布整个大陆，拥有难度各异的单人挑战机制及可获取的坐骑！与好友一同刷取这些奖励吧。",
+	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -33815,6 +33836,8 @@ localize(ObjectNames, {
 	[202846] = "被烧焦的法杖碎片",
 	[202871] = "沉没的箱子",
 	[202884] = "焦黑的土壤",
+	[202947] = "古龙水中和剂",
+	[202948] = "香水中和剂",
 	[202952] = "暗语磁石",
 	[202956] = "火箭车零件",
 	[202957] = "火箭车零件",
@@ -35246,7 +35269,6 @@ L.REAGENT_CACHE_OUT_OF_DATE = "快取已過期，打開專業技能介面後會�
 L.RECENTLY_MADE_OBTAINABLE = "|cFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
 L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000提供越多資訊越好，謝謝！|r";
 L.RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
-L.REMOTE_ZONES_DESCRIPTION = "包含在當前區域可取得，但來源直接來自另一個區域的內容。";
 L.REMOVED_WITH_PATCH = "隨更新移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
@@ -35568,6 +35590,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-356] = "副本的這部分可以從最北邊的傳送門進入。",
 	[-357] = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	[-592] = "這是一個每年重複的活動，發生在十一月初到年底之間。",
+	[-721] = "包含在當前區域可取得，但來源直接來自另一個區域的內容。",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "這些龍中的一隻會在艾澤拉斯的相關座標隨機生成。",
