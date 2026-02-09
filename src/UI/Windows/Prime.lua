@@ -122,6 +122,8 @@ app:CreateWindow("Prime", {
 				return true
 			end
 			app.print("Unknown Command: ", cmd, app.TableConcat(args, nil, "", " "));
+			-- don't open Main list if an unknown command was handled
+			return true
 		end
 	end,
 	OnInit = function(self)
