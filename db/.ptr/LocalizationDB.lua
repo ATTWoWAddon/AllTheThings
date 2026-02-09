@@ -840,6 +840,7 @@ L.TOP_ROW_TO_LOCK = "|cff3399ff" .. ALT_KEY_TEXT .. " click to Lock this Window|
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " click to Unlock this Window|r";
 L.TOY = TOY;
 L.TOY_DESC = "Click this button to select a random toy based on what you're missing.";
+L.TOY_EVENTUALLY_DESC = "This is not officially a Toy yet, but it is something that SHOULD be a Toy! Keep this in your inventory until Blizzard makes it so!";
 L.TOY_ID = "Toy ID";
 L.TOYS_CHECKBOX = TOY_BOX;
 L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects ... Nice!";

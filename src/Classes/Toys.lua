@@ -34,7 +34,7 @@ app.CreateToy = app.ExtendClass("Item", CLASSNAME, "toyID", {
 },
 "Eventually", {
 	description = function(t)
-		return "This is not a Toy as classified by Blizzard, but it is something that SHOULD be a Toy! Keep this in your inventory somewhere on an alt until Blizzard fixes it.";
+		return app.L.TOY_EVENTUALLY_DESC;
 	end,
 	collected = function(t)
 		return app.TypicalCharacterCollected(CACHE, t[KEY])
