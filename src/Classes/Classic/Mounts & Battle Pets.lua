@@ -34,7 +34,7 @@ app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 });
 
 do	-- Mounts
-local KEY, CACHE = "mountID", "Spells"
+local KEY, CACHE = "mountID", "Mounts"
 app.CreateMount = app.CreateClass("Mount", KEY, {
 	IsClassIsolated = true,
 	CACHE = function() return CACHE end,

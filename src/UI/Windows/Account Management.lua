@@ -371,7 +371,6 @@ local function DefaultAccountWideDataHandler(data, key)
 end
 -- Some cached data is stored directly in AccountWideData... we have no reason to 'sync' those tables via the Recalculate function
 local whiteListedFields = {
-	Achievements = app.GameBuildVersion < 30000,
 	Artifacts = true,
 	AzeriteEssenceRanks = true,
 	BattlePets = true,
@@ -466,6 +465,7 @@ if app.GameBuildVersion > 30000 then
 	AccountWideDataHandlers.BattlePets = PartialSyncCharacterData;
 	AccountWideDataHandlers.Mounts = PartialSyncCharacterData;
 else
+	whiteListedFields.Achievements = true;
 	whiteListedFields.BattlePets = true;
 	whiteListedFields.Mounts = true;
 	whiteListedFields.Toys = true;
@@ -1052,6 +1052,12 @@ end
 
 
 -- Merging
+local BlacklistedTooltipFields = {
+	ActiveSkills = true,
+	Lockouts = true,
+	PrimeData = true,
+	TimeStamps = true,
+};
 local eligibleFields = { "Buildings","GarrisonBuildings","Factions","FlightPaths","Exploration","Spells" };
 local function SortByCharacterLevel(a,b)
   return (a.lvl or 0) > (b.lvl or 0);
@@ -1285,7 +1291,14 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 			timestamps = {};
 			character.TimeStamps = timestamps;
 		end
-		for i,field in ipairs({ "Achievements", "BattlePets", "Exploration", "Factions", "FlightPaths", "Spells", "Titles", "Toys", "Transmog", "Quests" }) do
+		local sortedFields = {};
+		for field,d in pairs(character) do
+			if not BlacklistedTooltipFields[field] and type(d) == "table" then
+				tinsert(sortedFields, field);
+			end
+		end
+		tsort(sortedFields);
+		for i,field in ipairs(sortedFields) do
 			local values = character[field];
 			if values then
 				local subtotal = 0;
