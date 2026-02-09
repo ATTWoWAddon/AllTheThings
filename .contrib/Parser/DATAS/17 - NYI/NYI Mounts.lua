@@ -966,9 +966,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
 				["displayID"] = 126061,
 			}),
-			i(235658, {	-- Spring Butterfly (MOUNT!)
-				["displayID"] = 126174,
-			}),
 		})),
 
 		-- 11.1.5

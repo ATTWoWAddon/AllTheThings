@@ -705,13 +705,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235153),	-- Midnight Butterfly Helm
 				i(235155),	-- Midnight Butterfly Pauldrons
 
-				------ Spring Butterfly Set ------
-				i(235227),	-- Ensemble: Ornaments of the Spring Butterfly
-				q(86726),	-- Ensemble: Ornaments of the Spring Butterfly
-				i(235214),	-- Spring Butterfly Belt
-				i(235150),	-- Spring Butterfly Helm
-				i(235212),	-- Spring Butterfly Pauldrons
-
 				------ Topsy Turvy Mask Set ------
 				i(235340),	-- Topsy Turvy Fool's Mask
 
@@ -779,11 +772,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(234378),	-- Radiant Steelglaives
 				i(234367),	-- Sanctifier's Startierce
 				i(234372),	-- Shooting Starquebus
-				i(235653),	-- Spring Butterfly Longbow
-				i(235269),	-- Spring Butterfly Mace
-				i(235399),	-- Spring Butterfly Polearm
-				i(235289),	-- Spring Butterfly Sword
-				i(235293),	-- Spring Butterfly Wand
 				i(234572),	-- Topsy Turvy Fool's Blade
 				i(234727),	-- Topsy Turvy Fool's Cleaver
 				i(235640),	-- Topsy Turvy Fool's Die

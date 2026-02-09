@@ -2198,6 +2198,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
 						["cost"] = {{"i", LOVE_TOKEN, 40}},
 					}),
+					iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
+						["cost"] = {{"i", LOVE_TOKEN, 100}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235653, {	-- Spring Butterfly Longbow
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235269, {	-- Spring Butterfly Mace
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235399, {	-- Spring Butterfly Polearm
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235289, {	-- Spring Butterfly Sword
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235293, {	-- Spring Butterfly Wand
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 				})),
 			},
 		})),
@@ -2510,6 +2534,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 					iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
 						["cost"] = {{"i", LOVE_TOKEN, 40}},
+					}),
+					iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
+						["cost"] = {{"i", LOVE_TOKEN, 40}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235653, {	-- Spring Butterfly Longbow
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235269, {	-- Spring Butterfly Mace
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235399, {	-- Spring Butterfly Polearm
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235289, {	-- Spring Butterfly Sword
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
+					}),
+					i(235293, {	-- Spring Butterfly Wand
+						["cost"] = {{"i", LOVE_TOKEN, 30}},
+						["timeline"] = { ADDED_12_0_0 },
 					}),
 				})),
 			},
@@ -3215,6 +3263,7 @@ for i,o in ipairs({
 						["timeline"] = { ADDED_11_0_7 },
 						["isDaily"] = true,
 					}),
+					--q(93466), -- TODO confirm spring butterfly HQT
 					hqt(79104, {	-- Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)
 						["name"] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
@@ -3240,6 +3289,9 @@ for i,o in ipairs({
 					}),
 					i(232926, {	-- Love Witch's Sweeper (MOUNT!)
 						["timeline"] = { ADDED_11_0_7 },
+					}),
+					i(235658, {	-- Spring Butterfly (MOUNT!)
+						["timeline"] = { ADDED_12_0_0 },
 					}),
 				},
 			}),

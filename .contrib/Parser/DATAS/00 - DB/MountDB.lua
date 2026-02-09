@@ -2090,7 +2090,6 @@ i(232523, 460013);	-- G-99 Breakneck
 i(235659, 1218014);	-- Midnight Butterfly
 i(235554, 1217340);	-- Midnight Darkmoon Charger
 i(235557, 1217343);	-- Snowy Darkmoon Charger
-i(235658, 1218013);	-- Spring Butterfly
 
 ------------------
 -- PATCH 11.1.5 --
@@ -2317,6 +2316,7 @@ i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
 i(262500, 1268924);	-- Silvermoon's Arcane Defender
+i(235658, 1218013);	-- Spring Butterfly
 i(257144, 1261296);	-- Umbral Dragonhawk
 i(263580, 1270675);	-- Vivid Chloroceros
 --- UNSORTED ---
