@@ -57,6 +57,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(250854),	-- Sun's Focus (QI!)
 					},
 				}),
+				q(92121, {	-- The Great Outdoors
+					["coord"] = { 58.7, 68.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92153, {	-- The Moon at Twilight
 					["coord"] = { 43.3, 69.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),

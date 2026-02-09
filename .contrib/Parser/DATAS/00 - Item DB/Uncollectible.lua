@@ -2613,6 +2613,7 @@ i(260692);	-- Chunk of Mystery Meat
 i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
 i(263516);	-- Cosmic Ritual Bowl
+i(260640);	-- Crooked Bird Talons
 i(260658);	-- Crystal Rock Shard
 i(238484);	-- Damp Washcloth
 i(260655);	-- Decaying Humanoid Flesh

@@ -45,6 +45,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91490, {	-- Dousing Teldrassil
 					["coord"] = { 37.8, 29.1, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(91785, {	-- Ensporcelled
+					["coord"] = { 41.1, 66.0, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(92583, {	-- Fungicide
 					["coord"] = { 71.8, 64.4, MAP.MIDNIGHT.HARANDAR },
 				}),

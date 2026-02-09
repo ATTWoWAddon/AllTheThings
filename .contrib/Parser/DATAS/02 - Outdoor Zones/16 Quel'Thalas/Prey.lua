@@ -165,52 +165,137 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 					--spell(1270744),	-- Prey: Hard Difficulty
 				},
 			}),
-			--TODO: there should be quest for nightmare unlock but it is not up on alpha?
+			-- Renown 3 (but it "technically" just one big chain but unsure if there will be kind of rep boost and it could be skipped, gonna figure out)
+			q(92179, {	-- Dark Mending
+				["sourceQuests"] = { 92178 },	-- Practical Magic
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(92180, {	-- Precious Jewels
+				["sourceQuests"] = { 92179 },	-- Dark Mending
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(258023),	-- Skilled Preyseeker's Knapsack (COSMETIC!)
+				},
+			}),
+			-- Renown 4 / Nightmare mode
+			q(92181, {	-- Garden Variety Sacrifices
+				["sourceQuests"] = { 92180 },	-- Precious Jewels
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(92182, {	-- The Sheep or the Wolf
+				["sourceQuests"] = { 92181 },	-- Garden Variety Sacrifices
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			-- Weekly, up after r4 chain
+			q(94446, {	-- A Nightmarish Task
+				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(253342),	-- Beacon of Hope
+				},
+			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 245824 },	-- Hunt Table
 			["coord"] = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 		}, {
-			--q(XX),	-- Prey: Crusader Luxia Maxwell (Normal)
-			--q(XX),	-- Prey: Crusader Luxia Maxwell (Hard)
+			q(91114),	-- Prey: Consul Nebulor (Normal)
+			q(91245),	-- Prey: Consul Nebulor (Hard)
+			q(91259),	-- Prey: Consul Nebulor (Nightmare)
+			q(91112),	-- Prey: Crusader Luxia Maxwell (Normal)
+			q(91243),	-- Prey: Crusader Luxia Maxwell (Hard)
 			q(91257),	-- Prey: Crusader Luxia Maxwell (Nightmare)
-			--q(XX),	-- Prey: Deliah Gloomsong (Normal)
+			q(91100),	-- Prey: Deliah Gloomsong (Normal)
 			q(91220),	-- Prey: Deliah Gloomsong (Hard)
-			--q(XX),	-- Prey: Deliah Gloomsong (Nightmare)
-			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Normal)
+			q(91221),	-- Prey: Deliah Gloomsong (Nightmare)
+			q(91124),	-- Prey: Dengzag, the Darkened Blaze (Normal)
+			q(91255),	-- Prey: Dengzag, the Darkened Blaze (Hard)
+			q(91269),	-- Prey: Dengzag, the Darkened Blaze (Nightmare)
+			q(91115),	-- Prey: Executor Kaenius (Normal)
+			q(91246),	-- Prey: Executor Kaenius (Hard)
+			q(91260),	-- Prey: Executor Kaenius (Nightmare)
+			q(91123),	-- Prey: Grothoz, the Burning Shadow (Normal)
 			q(91254),	-- Prey: Grothoz, the Burning Shadow (Hard)
-			--q(XX),	-- Prey: Grothoz, the Burning Shadow (Nightmare)
-			--q(XX),	-- Prey: Imperator Enigmalia (Normal)
-			--q(XX),	-- Prey: Imperator Enigmalia (Hard)
+			q(91268),	-- Prey: Grothoz, the Burning Shadow (Nightmare)
+			q(91111),	-- Prey: High Vindicator Vureem (Normal)
+			q(91242),	-- Prey: High Vindicator Vureem (Hard)
+			q(91256),	-- Prey: High Vindicator Vureem (Nightmare)
+			q(91116),	-- Prey: Imperator Enigmalia (Normal)
+			q(91247),	-- Prey: Imperator Enigmalia (Hard)
 			q(91261),	-- Prey: Imperator Enigmalia (Nightmare)
-			--q(XX),	-- Prey: L-N-0R the Recycler (Normal)
+			q(91103),	-- Prey: Jo'zolo the Breaker (Normal)
+			q(91226),	-- Prey: Jo'zolo the Breaker (Hard)
+			q(91227),	-- Prey: Jo'zolo the Breaker (Nightmare)
+			q(91117),	-- Prey: Knight-Errant Bloodshatter (Normal)
+			q(91248),	-- Prey: Knight-Errant Bloodshatter (Hard)
+			q(91262),	-- Prey: Knight-Errant Bloodshatter (Nightmare)
+			q(91098),	-- Prey: L-N-0R the Recycler (Normal)
 			q(91216),	-- Prey: L-N-0R the Recycler (Hard)
-			--q(XX),	-- Prey: L-N-0R the Recycler (Nightmare)
-			--q(XX),	-- Prey: Lieutenant Blazewing (Normal)
-			--q(XX),	-- Prey: Lieutenant Blazewing (Hard)
+			q(91217),	-- Prey: L-N-0R the Recycler (Nightmare)
+			q(91110),	-- Prey: Lamyne of the Undercroft (Normal)
+			q(91240),	-- Prey: Lamyne of the Undercroft (Hard)
+			q(91241),	-- Prey: Lamyne of the Undercroft (Nightmare)
+			q(91108),	-- Prey: Lieutenant Blazewing (Normal)
+			q(91236),	-- Prey: Lieutenant Blazewing (Hard)
 			q(91237),	-- Prey: Lieutenant Blazewing (Nightmare)
-			q(91099),	-- Prey: Mordril Shadowfell (Normal)
-			--q(XX),	-- Prey: Mordril Shadowfell (Hard)
-			--q(XX),	-- Prey: Mordril Shadowfell (Nightmare)
+			q(91119),	-- Prey: Lost Theldrin (Normal)
+			q(91250),	-- Prey: Lost Theldrin (Hard)
+			q(91264),	-- Prey: Lost Theldrin (Nightmare)
+			q(91095),	-- Prey: Magister Sunbreaker (Normal)
+			q(91210),	-- Prey: Magister Sunbreaker (Hard)
+			q(91211),	-- Prey: Magister Sunbreaker (Nightmare)
 			q(91096),	-- Prey: Magistrix Emberlash (Normal)
-			--q(XX),	-- Prey: Magistrix Emberlash (Hard)
-			--q(XX),	-- Prey: Magistrix Emberlash (Nightmare)
+			q(91212),	-- Prey: Magistrix Emberlash (Hard)
+			q(91213),	-- Prey: Magistrix Emberlash (Nightmare)
+			q(91099),	-- Prey: Mordril Shadowfell (Normal)
+			q(91218),	-- Prey: Mordril Shadowfell (Hard)
+			q(91219),	-- Prey: Mordril Shadowfell (Nightmare)
+			q(91102),	-- Prey: Nexus-Edge Hadim (Normal)
+			q(91224),	-- Prey: Nexus-Edge Hadim (Hard)
+			q(91225),	-- Prey: Nexus-Edge Hadim (Nightmare)
+			q(91120),	-- Prey: Neydra the Starving (Normal)
+			q(91251),	-- Prey: Neydra the Starving (Hard)
+			q(91265),	-- Prey: Neydra the Starving (Nightmare)
+			q(91109),	-- Prey: Petyoll the Razorleaf (Normal)
+			q(91238),	-- Prey: Petyoll the Razorleaf (Hard)
+			q(91239),	-- Prey: Petyoll the Razorleaf (Nightmare)
+			q(91101),	-- Prey: Phaseblade Talasha (Normal)
+			q(91222),	-- Prey: Phaseblade Talasha (Hard)
+			q(91223),	-- Prey: Phaseblade Talasha (Nightmare)
 			q(91113),	-- Prey: Praetor Singularis (Normal)
 			q(91244),	-- Prey: Praetor Singularis (Hard)
-			--q(XX),	-- Prey: Praetor Singularis (Nightmare)
-			--q(XX),	-- Prey: Ranger Swiftglade (Normal)
-			--q(XX),	-- Prey: Ranger Swiftglade (Hard)
+			q(91258),	-- Prey: Praetor Singularis (Nightmare)
+			q(91107),	-- Prey: Ranger Swiftglade (Normal)
+			q(91234),	-- Prey: Ranger Swiftglade (Hard)
 			q(91235),	-- Prey: Ranger Swiftglade (Nightmare)
-			--q(XX),	-- Prey: Senior Tinker Ozwold (Normal)
-			--q(XX),	-- Prey: Senior Tinker Ozwold (Hard)
+			q(91097),	-- Prey: Senior Tinker Ozwold (Normal)
+			q(91214),	-- Prey: Senior Tinker Ozwold (Hard)
 			q(91215),	-- Prey: Senior Tinker Ozwold (Nightmare)
 			q(91105),	-- Prey: The Talon of Janali (Normal)
-			--q(XX),	-- Prey: The Talon of Janali (Hard)
-			--q(XX),	-- Prey: The Talon of Janali (Nightmare)
-			--q(XX),	-- Prey: Thornspeaker Edgath (Normal)
+			q(91230),	-- Prey: The Talon of Janali (Hard)
+			q(91231),	-- Prey: The Talon of Janali (Nightmare)
+			q(91106),	-- Prey: The Wing of Akil'zon (Normal)
+			q(91232),	-- Prey: The Wing of Akil'zon (Hard)
+			q(91233),	-- Prey: The Wing of Akil'zon (Nightmare)
+			q(91122),	-- Prey: Thorn-Witch Liset (Normal)
+			q(91253),	-- Prey: Thorn-Witch Liset (Hard)
+			q(91267),	-- Prey: Thorn-Witch Liset (Nightmare)
+			q(91121),	-- Prey: Thornspeaker Edgath (Normal)
 			q(91252),	-- Prey: Thornspeaker Edgath (Hard)
-			--q(XX),	-- Prey: Thornspeaker Edgath (Nightmare)
+			q(91266),	-- Prey: Thornspeaker Edgath (Nightmare)
+			q(91118),	-- Prey: Vylenna the Defector (Normal)
+			q(91249),	-- Prey: Vylenna the Defector (Hard)
+			q(91263),	-- Prey: Vylenna the Defector (Nightmare)
+			q(91104),	-- Prey: Zadu, Fist of Nalorakk (Normal)
+			q(91228),	-- Prey: Zadu, Fist of Nalorakk (Hard)
+			q(91229),	-- Prey: Zadu, Fist of Nalorakk (Nightmare)
 		})),
 		n(REWARDS, {
 			--Currency
@@ -223,6 +308,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			n(ARMOR, {
 				filter(BACK_F, {
 					i(259909),	-- Preyseeker's Refined Shawl
+					i(258532),	-- Preyseeker's Rugged Stole
 					i(259910),	-- Preyseeker's Sleek Capelet
 				}),
 				filter(CLOTH, {
@@ -296,9 +382,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 				i(259959),	-- Preyseeker's Warglaive
 			}),
 			filter(MISC, {
-				i(262928),	-- Preyseeker's Adventurer Sack // alpha
+				i(262928),	-- Preyseeker's Adventurer Sack
 				i(262938),	-- Preyseeker's Champion Sack
-				i(262936),	-- Preyseeker's Veteran Sack // alpha
+				i(262936),	-- Preyseeker's Veteran Sack
 				i(255825),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
@@ -395,14 +481,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 			q(91601, {	-- Prey: Apex Predator
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
+			q(91602, {	-- Prey: Apex Predator (TODO: (un)flagged after filling up bar in Zul'Aman zone)
+				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			}),
 			q(91604, {	-- Prey: Apex Predator (TODO: fired after filling up progress during hard mode in Zul'Aman)
 				--["coord"] = { X, Y, MAP.MIDNIGHT.ZULAMAN },
 			}),
 			q(91207, {	-- Prey: Apex Predator (TODO: probably could be wrongly flagged after fill up bar during hard mode)
 				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
-			q(91590, {	-- Prey: Concealed Threat (TODO: (un)flagged after picked up Deliah Gloomsong (Hard))
-				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+			q(91523, {	-- Prey: Concealed Threat (TODO: (un)flagged after picked up Deliah Gloomsong (Hard))
+				["coord"] = { 33.3, 45.5, MAP.MIDNIGHT.VOIDSTORM },
 			}),
 			q(91590, {	-- Prey: Concealed Threat
 				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -420,9 +509,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 				["coord"] = { 60.1, 71.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91595, {	-- Prey: Endurance Hunter (TODO: rng marked completed while was gathering ore/herb)
-				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["coord"] = { 41.2, 30.0, MAP.MIDNIGHT.ZULAMAN },
 			}),
-			q(91595, {	-- Prey: Endurance Hunter (TODO: (un)flagged after picked up L-N-0R the Recycler (Hard))
+			q(91596, {	-- Prey: Endurance Hunter (TODO: (un)flagged after picked up L-N-0R the Recycler (Hard))
 				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 		}),
@@ -442,15 +531,21 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(95538),	-- unflagged when looted some ore in zone during prey (hard mode)
 				--q(95539), -- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 
-				--related to prey bosses kill? counter for something? weekly?
-				--q(95000),	-- after Praetor Singularis (Normal) was killed / 1st per week
-				--q(95001),	-- after Deliah Gloomsong (Hard) was killed / 2nd per week
-				--q(95002),	-- after L-N-0R the Recycler (Hard) was killed / 3rd per week
+				--related to prey bosses kill - counter for something?
+				--doesn't matter on difficulty or whatever boss it was, weekly
+				--q(95000),	-- 1st per week
+				--q(95001),	-- 2nd per week
+				--q(95002),	-- 3rd per week
+				--q(95003),	-- 4th per week
 
-				--achievements? criteria?
+				--Seems like lockout for rewards? Weekly
+				--- Veteran
+				--q(93169),	-- Veteran chest lockout (Hard mode), 1st
+				--q(93857),	-- Veteran chest lockout (Hard mode), 2nd (after it - Veteran Sack as reward)
+				--q(93858),	-- Veteran Sack was looted, 1st after chest
+				--q(93860),	-- Veteran Sack was looted, 2nd after chest
+				--- Adventures
 				--q(93168),	-- after Praetor Singularis (Normal) was killed
-				--q(93169),	-- after Deliah Gloomsong (Hard) was killed (Prey: Hard Mode I / Prey: A Different Kind of Void (Hard))
-				--q(93857),	-- after L-N-0R the Recycler (Hard) was killed (Prey : Insane Inventors (Hard))
 			}),
 		}),
 	}),

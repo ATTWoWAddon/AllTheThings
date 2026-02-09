@@ -83,6 +83,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 239670,	-- Vaultkeeper Elysa
 				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
+			q(95245, {	-- Midnight: World Tour
+				["provider"] = { "n", 235787 },	-- Lor'themar Theron
+				["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			-- Dungeons
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 256210 },	-- Halduron Brightwing
+				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+			}, {
+				q(93757),	-- Voidscar Arena
+			})),
 		}),
 	}),
 }));
@@ -90,7 +102,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 			n(QUESTS, {
-				--q(93067), <stay a while and listen> o? | In Memoriam @ 35.2, 70.3. Since it fire with big delay -- gonna leave it like that
+				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
 				q(90806),	-- Midnight adventure mode // World Quests & Adventure Mode (spellID 1234841) & Unlock Content Scaling (spellID 1234839)
 				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 			}),

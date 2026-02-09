@@ -11,6 +11,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91811, {	-- A Scorched Mirror
 					["coord"] = { 52.0, 19.8, MAP.MIDNIGHT.ZULAMAN },
 				}),
+				q(91810, {	-- Blistereel Boar Buffet
+					["coord"] = { 45.3, 28.5, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = {
+						i(260890),	-- Bag of Skewers (QI!)
+					},
+				}),
 				q(91805, {	-- Boughs in the Burrows
 					["coord"] = { 42.2, 47.8, MAP.MIDNIGHT.ZULAMAN },
 					["groups"] = {
@@ -71,6 +77,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.ZULAMAN, {
 			n(QUESTS, {
 				hqt(94866),	-- Special Assignment: Ours Once More! was unlocked
+				hqt(94865),	-- Special Assignment: What Remains of a Temple Broken was unlocked
 			}),
 		}),
 	}),

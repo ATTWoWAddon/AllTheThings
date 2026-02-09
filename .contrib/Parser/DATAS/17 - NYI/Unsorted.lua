@@ -1697,10 +1697,6 @@ root(ROOTS.Unsorted, {
 			i(249689),	-- Ghostflower Tea with Sunfruit
 			i(250096),	-- Worm Bait
 
-			-- Cache
-			i(250116),	-- Cache of Quel'Thalas Treasures
-			i(250117),	-- Cache of Quel'Thalas Treasures
-
 			-- PET
 			i(250135),	-- Akil Fledgling
 			i(250141),	-- Purple Swamp Leech
@@ -1897,7 +1893,6 @@ root(ROOTS.Unsorted, {
 
 			-- Delve
 			i(253226),	-- Restored Coffer Key
-			i(253342),	-- Beacon of Hope \\ [DNT] Shrieking Quartz
 
 			-- Engi
 			i(253302),	-- Malleable Wireframe
@@ -2475,7 +2470,6 @@ root(ROOTS.Unsorted, {
 			i(257903),	-- Ripe Tower Lettuce
 
 			-- Prey
-			i(258023),	-- Skilled Preyseeker's Knapsack
 			i(258025),	-- Pattern: Sunfire Silk Lining
 			i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
 			i(258029),	-- Vaunted Preyseeker's Plumed Helm
@@ -2566,7 +2560,6 @@ root(ROOTS.Unsorted, {
 			i(258531),	-- Crawth's Scaleguard
 
 			-- Prey
-			i(258532),	-- Preyseeker's Rugged Stole \\ [DNT] 12.0 Prey - Accessory - CLOAK - C
 			i(258533),	-- Preyseeker's Polished Cloak \\ [DNT] 12.0 Prey - Accessory - CLOAK - D
 
 			-- QI
@@ -2662,10 +2655,6 @@ root(ROOTS.Unsorted, {
 
 			-- Toy
 			i(259084),	-- Gift of the Cycle
-
-			-- Augment rune
-			i(259085),	-- Void-Touched Augment Rune
-			i(259086),	-- Void-Touched Satchel of Cooperation
 
 			-- Slayer
 			i(259092),	-- Void-Tinged Free Action Potion
@@ -2935,9 +2924,6 @@ root(ROOTS.Unsorted, {
 			i(260871),	-- [DNT] Cloth Feet Gear
 			i(260872),	-- Hazy Penumbral Cloak \\ [DNT] Cloak A
 			i(260873),	-- Cowl of Infinite Gravity \\ [DNT] Cloak B
-
-			-- QI
-			i(260890),	-- Bag of Skewers
 
 			-- Mount
 			i(260893),	-- Arboreal Pseudoshell \\ [PH] Green Garden Snail
@@ -3850,7 +3836,6 @@ root(ROOTS.Unsorted, {
 			i(247785),	-- Galactic Void-Scarred Banner
 			i(253451),	-- Veilroot Fountain
 			i(260603),	-- Frail and Flexible Wing
-			i(260640),	-- Crooked Bird Talons
 			i(260667),	-- Tainted Organs
 			i(260668),	-- Cloudy Purple Gem
 			i(260674),	-- Fine Arcane Dust

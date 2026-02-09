@@ -7184,6 +7184,7 @@ h(-674)}}),
 m(2537,{
 m(2393,{
 h(-45,{
+q(93067,{type="hqt"}),
 q(90806,{type="hqt"}),
 q(94419,{awp=120000,rwp=120100,type="hqt"})})}),
 m(2395,{
@@ -7262,7 +7263,8 @@ m(2437,{maps={2536},g={
 h(-45,{
 q(91965,{repeatable=1,type="hqt"}),
 q(91964,{repeatable=1,type="hqt"}),
-q(94866,{type="hqt"})}),
+q(94866,{type="hqt"}),
+q(94865,{type="hqt"})}),
 h(-46,{
 q(94704,{type="hqt"})})}})}),
 m(2541,{icon=_.asset("Arcantina"),g={
