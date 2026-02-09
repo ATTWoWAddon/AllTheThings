@@ -888,11 +888,35 @@ do
 
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
-
+	
+	local AndAppearanceCollectible = app.IsRetail and app.ReturnTrue or function(t)
+		if not t.rwp and app.Settings.OnlyRWP then
+			return false;
+		end
+		if (t.q or 0) < 2 and app.Settings.OnlyNotTrash then
+			return false;
+		end
+		return true;
+	end
+	local function AddAppearanceCollectibleSwap(classname, setting)
+		local function AssignCollectibleFunction()
+			-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
+			if app.Settings.Collectibles[setting] then
+				app.SwapClassDefinitionMethod(classname,"collectible",AndAppearanceCollectible)
+			else
+				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
+			end
+		end
+		app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
+		app.AddEventHandler("OnStartup", AssignCollectibleFunction);
+	end
+	
 	local AndAppearance = {
 		__name = "AndAppearance",
 		CACHE = function() return CACHE end,
-		collectible = function(t) return app.Settings.Collectibles.Transmog end,
+		collectible = app.IsRetail and function(t)
+			return app.Settings.Collectibles.Transmog
+		end or AndAppearanceCollectible,
 		collected = collected_Completionist,
 		visualID = function(t)
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(t[KEY])
@@ -902,7 +926,7 @@ do
 		__onclassgenerated = function(variantName)
 			AppearanceVariantClasses[#AppearanceVariantClasses + 1] = variantName
 			-- any appearance-based variant is tracked based on 'Transmog' setting
-			app.AddSimpleCollectibleSwap(variantName, SETTING)
+			AddAppearanceCollectibleSwap(variantName, SETTING)
 		end,
 	}
 	app.GlobalVariants.AndAppearance = AndAppearance
@@ -934,31 +958,7 @@ do
 			return BuildAppearanceLink(t.sourceID)
 		end,
 	});
-	app.CreateItemSource = app.GameBuildVersion < 60000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
-		if t and ((not t.q or t.q < 2) or not (t.f and ITEM_FILTERS_WITH_APPEARANCES[t.f])) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
-		if t and (not t.q or t.q < 2) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		-- Shared Appearances may attempt to create an Item Source without an ItemID
-		-- so quickly try to derive one since the Classic Item class doesn't protect against
-		-- various situations where a nil itemID can cause problems and createItemWithAppearance
-		-- extends from Item
-		if not itemID then
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-			itemID = sourceInfo and sourceInfo.itemID or -1
-		end
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
+	app.CreateItemSource = function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		-- TEMPORARY
 		if itemID and itemID > 0 then
@@ -966,7 +966,7 @@ do
 		end
 		return t;
 	end
-	app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
+	AddAppearanceCollectibleSwap(CLASSNAME, SETTING)
 
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)

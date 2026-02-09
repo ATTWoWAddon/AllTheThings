@@ -1726,6 +1726,7 @@ settings.UpdateMode = function(self, doRefresh)
 			-- Modules
 			app.Modules.PVPRanks.SetCollectible(true);
 			self.OnlyRWP = false;
+			self.OnlyNotTrash = false;
 		end
 	else
 		app.MODE_DEBUG = nil;
