@@ -316,6 +316,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92431,
 				["groups"] = {
 					i(263287),	-- Reliquary-Keeper's Lost Shortbow (COSMETIC!)
+					i(246416),	-- Waterlogged Haranir Pigment Bowl (DECOR!) (TODO: could be zone drop rng?)
 				},
 			}),
 			o(573050, {	-- Sporelord's Fight Prize
@@ -325,23 +326,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(263289),	-- Sporelord's Authority (COSMETIC!)
 				},
 			}),
-			--[[--Lore?
-			o(613829, {	-- A Frayed Scroll
-				["coord"] = { 47.6, 47.3, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = XXXXX,
-			}),
-			o(613823, {	-- Ancient Moon Runestone
+			--Lore?
+			--o(613829, {	-- A Frayed Scroll
+			--	["coord"] = { 47.6, 47.3, MAP.MIDNIGHT.HARANDAR },
+			--	["questID"] = XXXXX,
+			--}),
+			o(613823, {	-- Ancient Runestone
 				["coord"] = { 33.3, 60.9, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = XXXXX,
+				["questID"] = 93556,
 			}),
 			o(613827, {	-- Derelict Mural
 				["coord"] = { 72.4, 38.1, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = XXXXX,
+				["questID"] = 93557,
 			}),
 			o(613828, {	-- Forgotten Mural
 				["coord"] = { 68.2, 23.8, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = XXXXX,
-			}),]]--
+				["questID"] = 93558,
+			}),
 			o(613818, {	-- Tarnished Mural
 				["coord"] = { 55.7, 54.0, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 93554,

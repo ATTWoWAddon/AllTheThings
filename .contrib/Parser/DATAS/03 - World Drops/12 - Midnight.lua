@@ -155,6 +155,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(245835),	-- Six of Hunt
 		i(245836),	-- Seven of Hunt
 		i(245837),	-- Eight of Hunt
+		i(245847),	-- Ace of Rot
+		i(245848),	-- Two of Rot
+		i(245849),	-- Three of Rot
+		i(245850),	-- Four of Rot
+		i(245851),	-- Five of Rot
+		i(245852),	-- Six of Rot
+		i(245853),	-- Seven of Rot
+		i(245854),	-- Eight of Rot
 		i(245838),	-- Ace of Void
 		i(245839),	-- Two of Void
 		i(245840),	-- Three of Void

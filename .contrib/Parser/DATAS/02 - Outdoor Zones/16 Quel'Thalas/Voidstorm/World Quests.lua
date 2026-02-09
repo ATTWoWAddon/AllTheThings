@@ -23,6 +23,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				pvp(q(89377, {	-- Undercover Hunt
 					["coord"] = { 45.7, 36.6, SLAYERS_RISE_OUTDOOR },
 				})),
+				q(92571, {	-- Armies of Darkness
+					["coord"] = { 23.4, 54.3, SLAYERS_RISE_OUTDOOR },
+					--["races"] = HORDE_ONLY,	-- speculation due to zone
+				}),
 				q(92731, {	-- Artificing Aggression
 					["coord"] = { 51.6, 70.2, MAP.MIDNIGHT.VOIDSTORM },
 				}),
@@ -34,6 +38,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(93904, {	-- Defying Gravity
 					["coord"] = { 48.0, 78.4, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(93507, {	-- Disrupting the Void
+					["coord"] = { 38.8, 45.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(92546, {	-- Encroaching Predators
 					["coord"] = { 36.1, 60.3, MAP.MIDNIGHT.VOIDSTORM },
@@ -49,6 +56,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
+				q(93905, {	-- Ongoing Stoppage
+					["coord"] = { 37.4, 75.1, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 				q(93517, {	-- Otherworldly Intelligence
 					["coord"] = { 47.3, 70.3, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
@@ -63,6 +73,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92746, {	-- The Twist of the Stormfields
 					["coord"] = { 40.3, 59.4, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(93524, {	-- Trench Run
+					["coord"] = { 51.2, 67.2, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(92549, {	-- Void From Above
 					["coord"] = { 64.6, 62.2, MAP.MIDNIGHT.VOIDSTORM },

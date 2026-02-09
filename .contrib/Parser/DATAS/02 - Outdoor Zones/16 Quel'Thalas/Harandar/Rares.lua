@@ -14,14 +14,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92193,
 				["groups"] = {
-					--no loot table
+					i(264540),	-- Mirevine Wristguards
 				},
 			}),
 			n(250358, {	-- Annulus the Worldshaker
 				["coord"] = { 44.2, 16.4, MAP.MIDNIGHT.HARANDAR },
-				--["questID"] = xx,
+				["questID"] = 92194,
 				["groups"] = {
-					--no loot table
+					i(264614),	-- Fungal Cap Guard
 				},
 			}),
 			n(249844, {	-- Chironex
@@ -35,42 +35,42 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 64.6, 47.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92161,
 				["groups"] = {
-					--no loot table
+					i(264968),	-- Telluric Leyblossom
 				},
 			}),
 			n(250231, {	-- Dracaena
 				["coord"] = { 40.6, 43.1, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92176,
 				["groups"] = {
-					--no loot table
+					i(264644),	-- Crawler's Mindscythe
 				},
 			}),
 			n(249849, {	-- Ha'kalawe
 				["coord"] = { 69.2, 63.1, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92142,
 				["groups"] = {
-					--no loot table
+					i(264553),	-- Deepspore Leather Galoshes
 				},
 			}),
 			n(250226, {	-- Mindrot
-				["coord"] = { 46.3, 32.9, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 46.0, 31.3, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92172,
 				["groups"] = {
-					--no loot table
+					i(251782),	-- Withered Saptor's Paw (midnight zone reward)
 				},
 			}),
 			n(250317, {	-- Oro'ohna
 				["coord"] = { 28.2, 81.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92190,
 				["groups"] = {
-					--no loot table
+					i(264591),	-- Radiant Petalwing's Feather
 				},
 			}),
 			n(250321, {	-- Pterrock
 				["coord"] = { 27.2, 70.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92191,
 				["groups"] = {
-					--no loot table
+					i(264576),	-- Slatescale Grips
 				},
 			}),
 			n(249962, {	-- Queen Lashtongue
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(248741, {	-- Rhazul
-				["coord"] = { 51.2, 45.5, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 51.2, 45.3, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 91832,
 				["groups"] = {
 					i(264622),	-- Grimfang Shank
@@ -89,24 +89,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(250180, {	-- Serrasa
-				["coord"] = { 56.3, 33.1, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 56.7, 33.6, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92170,
 				["groups"] = {
 					i(264639),	-- Razorfang Hacker
+					--i(252957),	-- Tangle of Vibrant Vines (TODO: idk if you really want that much source for it, since already midnight zone reward?)
 				},
 			}),
 			n(250086, {	-- Stumpy
-				["coord"] = { 65.6, 32.7, MAP.MIDNIGHT.HARANDAR },
-				--["questID"] = xx,
+				["coord"] = { 65.8, 32.4, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 92168,
 				["groups"] = {
-					--no loot table
+					i(264635),	-- Stumpy's Stump
 				},
 			}),
 			n(249902, {	-- Tallcap the Truthspreader
 				["coord"] = { 72.6, 69.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92148,
 				["groups"] = {
-					--no loot table
+					i(264650),	-- Truthspreader's Truth Spreader
 				},
 			}),
 			n(250246, {	-- Treetop
@@ -119,16 +120,51 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
-
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			n(RARES, {
+				q(94725, {	-- Weekly reputation: Ahl'ua'huhi
+					["name"] = "Ahl'ua'huhi weekly reputation obtained.",
+				}),
+				q(94726, {	-- Weekly reputation: Annulus the Worldshaker
+					["name"] = "Annulus the Worldshaker weekly reputation obtained.",
+				}),
+				q(94713, {	-- Weekly reputation: Chironex
+					["name"] = "Chironex weekly reputation obtained.",
+				}),
+				q(94717, {	-- Weekly reputation: Chlorokyll
+					["name"] = "Chlorokyll weekly reputation obtained.",
+				}),
+				q(94721, {	-- Weekly reputation: Dracaena
+					["name"] = "Dracaena weekly reputation obtained.",
+				}),
+				q(94714, {	-- Weekly reputation: Ha'kalawe
+					["name"] = "Ha'kalawe weekly reputation obtained.",
+				}),
+				q(94720, {	-- Weekly reputation: Mindrot
+					["name"] = "Mindrot weekly reputation obtained.",
+				}),
+				q(94723, {	-- Weekly reputation: Oro'ohna
+					["name"] = "Oro'ohna weekly reputation obtained.",
+				}),
+				q(94724, {	-- Weekly reputation: Pterrock
+					["name"] = "Pterrock weekly reputation obtained.",
+				}),
 				q(94716, {	-- Weekly reputation: Queen Lashtongue
 					["name"] = "Queen Lashtongue weekly reputation obtained.",
 				}),
 				q(94712, {	-- Weekly reputation: Rhazul
 					["name"] = "Rhazul weekly reputation obtained.",
+				}),
+				q(94719, {	-- Weekly reputation: Serrasa
+					["name"] = "Serrasa weekly reputation obtained.",
+				}),
+				q(94718, {	-- Weekly reputation: Stumpy
+					["name"] = "Stumpy weekly reputation obtained.",
+				}),
+				q(94715, {	-- Weekly reputation: Tallcap the Truthspreader
+					["name"] = "Tallcap the Truthspreader weekly reputation obtained.",
 				}),
 				q(94722, {	-- Weekly reputation: Treetop
 					["name"] = "Treetop weekly reputation obtained.",

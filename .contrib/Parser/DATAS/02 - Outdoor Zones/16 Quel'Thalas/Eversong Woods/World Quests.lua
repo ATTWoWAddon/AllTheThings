@@ -36,6 +36,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(92146, {	-- Containment Zone
 					["coord"] = { 54.5, 59.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
+				q(92160, {	-- Hatchling Havoc
+					["coord"] = { 56.8, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(92138, {	-- Mobilize! Enlist! Recruit!
 					["coord"] = { 41.7, 20.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {

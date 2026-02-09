@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93502),	-- Enshrouded Solo
 				q(93503),	-- Enshrouded in Teamwork
 				q(93505),	-- Enshrouded in War
+				q(93425),	-- Sparks of War: Harandar
 				q(93424),	-- Sparks of War: Zul'Aman
 				q(93426),	-- Sparks of War: Voidstorm
 				-- #IF AFTER MID

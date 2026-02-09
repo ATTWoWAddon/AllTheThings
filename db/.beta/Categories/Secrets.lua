@@ -647,7 +647,7 @@ o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss 
 i(249711)}}),
 o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation=a[28],questID=92081,g={
 i(249712)}}),
-o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.",maps={2463},minReputation=a[28],questID=92079,g={
+o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation=a[28],questID=92079,g={
 i(249710)}}),
 q(92082,{coords={{42,22.1,2371}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
 toy(249713,{b=1}),

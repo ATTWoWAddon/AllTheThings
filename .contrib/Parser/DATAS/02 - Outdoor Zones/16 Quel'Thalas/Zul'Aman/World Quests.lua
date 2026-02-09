@@ -39,6 +39,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					},
 				}),
+				q(91803, {	-- Marsh Menace
+					["coord"] = { 48.3, 63.5, MAP.MIDNIGHT.ZULAMAN },
+					["groups"] = {
+						o(574750, {	-- Stolen Supplies
+							i(249498),	-- Stolen Supplies (QI!)
+						}),
+					},
+				}),
 				q(91808, {	-- Resource Recovery
 					["coord"] = { 30.0, 30.0, MAP.MIDNIGHT.ZULAMAN },
 					["groups"] = {

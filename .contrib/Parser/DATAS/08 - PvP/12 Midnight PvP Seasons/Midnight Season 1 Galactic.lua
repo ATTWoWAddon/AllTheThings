@@ -295,8 +295,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>
 				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["ItemAppearanceModifierID"] = 159,
-				--[[ ["groups"] = {
-					n(CLASSES, {
+				["groups"] = {
+					--[[ n(CLASSES, {						
 						cl(DEATHKNIGHT, {
 							conquest(875, i(255549)),	-- Galactic Gladiator's Chestguard
 							conquest(875, i(255550)),	-- Galactic Gladiator's Chestplate
@@ -570,20 +570,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255605)),	-- Galactic Gladiator's Drape
 							conquest(525, i(255606)),	-- Galactic Gladiator's Shawl
 						}),
-					}),
+					}),]]--
 					filter(FINGER_F, {
 						conquest(525, i(255608)),	-- Galactic Gladiator's Band
 						conquest(525, i(255607)),	-- Galactic Gladiator's Ring
 						conquest(525, i(255609)),	-- Galactic Gladiator's Signet
 					}),
-					filter(MISC, {
-						i(254308, {	-- Conqueror's Galactic Lacquer
+					filter(REAGENTS, {
+						i(267572, {	-- Conqueror's Galactic Lacquer
 							["cost"] = {{ "c", CONQUEST, 700 }},
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
-						i(254307, {	-- Conqueror's Galactic Varnish
+						i(267571, {	-- Conqueror's Galactic Varnish
 							["cost"] = {{ "c", CONQUEST, 875 }},
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+							--["timeline"] = { ADDED_11_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 					}),
 					filter(NECK_F, {
@@ -599,33 +599,34 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(255617)),	-- Galactic Gladiator's Sigil of Adaptation
 					}),
 					n(WEAPONS, {
-						conquest(875, i(255618)),	-- Galactic Gladiator's Splitter
-						conquest(875, i(255619)),	-- Galactic Gladiator's Dagger
-						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
-						conquest(1750, i(255621)),	-- Galactic Gladiator's Spear
-						conquest(1750, i(255622)),	-- Galactic Gladiator's Staff
-						conquest(1750, i(255623)),	-- Galactic Gladiator's Bow
-						conquest(1225, i(255624)),	-- Galactic Gladiator's Scepter
-						conquest(525, i(255625)),	-- Galactic Gladiator's Censer
-						conquest(525, i(255626)),	-- Galactic Gladiator's Shield
-						conquest(875, i(255627)),	-- Galactic Gladiator's Axe
-						conquest(1225, i(255628)),	-- Galactic Gladiator's Cinquedea
-						conquest(875, i(255629)),	-- Galactic Gladiator's Claws
-						conquest(1750, i(255630)),	-- Galactic Gladiator's Crossbow
-						conquest(1750, i(255631)),	-- Galactic Gladiator's Greatstaff
-						conquest(525, i(255632)),	-- Galactic Gladiator's Bulwark
-						conquest(1750, i(255633)),	-- Galactic Gladiator's Greatsword
-						conquest(1750, i(255634)),	-- Galactic Gladiator's Pulverizer
-						conquest(875, i(255635)),	-- Galactic Gladiator's Sword
-						conquest(875, i(255636)),	-- Galactic Gladiator's Skewer
 						conquest(1750, i(255637)),	-- Galactic Gladiator's Battlestaff
+						conquest(1750, i(255630)),	-- Galactic Gladiator's Blaster
+						conquest(1750, i(255623)),	-- Galactic Gladiator's Bow
+						conquest(525, i(255632)),	-- Galactic Gladiator's Bulwark
+						conquest(875, i(255619)),	-- Galactic Gladiator's Dagger
 						conquest(525, i(255638)),	-- Galactic Gladiator's Focus
+						conquest(875, i(255636)),	-- Galactic Gladiator's Gladius
+						conquest(1750, i(265601)),	-- Galactic Gladiator's Greataxe
+						conquest(1750, i(255631)),	-- Galactic Gladiator's Greatstaff
+						conquest(1750, i(255633)),	-- Galactic Gladiator's Greatsword
+						conquest(875, i(255627)),	-- Galactic Gladiator's Hammer
 						conquest(1225, i(255639)),	-- Galactic Gladiator's Mace
+						conquest(1750, i(255634)),	-- Galactic Gladiator's Morningstar
+						conquest(1750, i(255621)),	-- Galactic Gladiator's Polearm
+						conquest(1225, i(267371)),	-- Galactic Gladiator's Ripper
+						conquest(1225, i(255624)),	-- Galactic Gladiator's Scepter
+						conquest(1225, i(255628)),	-- Galactic Gladiator's Shattered Blade
+						conquest(525, i(255626)),	-- Galactic Gladiator's Shield
+						conquest(875, i(255629)),	-- Galactic Gladiator's Slicer
+						conquest(1750, i(255622)),	-- Galactic Gladiator's Staff
+						conquest(875, i(255635)),	-- Galactic Gladiator's Sword
+						conquest(525, i(255625)),	-- Galactic Gladiator's Tome
+						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
 					}),
-					i(256553, {	-- Galactic Equipment Chest
-						["timeline"] = { ADDED_12_0_5 },
-					}),
-				},]]--
+					--i(256553, {	-- Galactic Equipment Chest
+					--	["timeline"] = { ADDED_12_0_5 },
+					--}),
+				},
 			}),
 			o(456208, {	-- The Catalyst
 				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
@@ -671,28 +672,26 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-				--[[honor(100, i(264164, {	-- Galactic Gladiator's Tabard
+				honor(100, i(260441, {	-- Galactic Gladiator's Tabard
 						["sourceAchievements"] = { 41027 },	-- Elite: Midnight Season 1
 					})),
-					moh(5, i(248364)),	-- Galactic Gladiator's Axe
-					moh(10, i(248349)),	-- Galactic Gladiator's Battlestaff
-					moh(10, i(248356)),	-- Galactic Gladiator's Bow
-					moh(5, i(248367)),	-- Galactic Gladiator's Censer
-					moh(5, i(248365)),	-- Galactic Gladiator's Cinquedea
-					moh(5, i(248355)),	-- Galactic Gladiator's Claws
-					moh(10, i(248350)),	-- Galactic Gladiator's Crossbow
-					moh(5, i(248343)),	-- Galactic Gladiator's Dagger
-					moh(5, i(248352)),	-- Galactic Gladiator's Focus
-					moh(10, i(248348)),	-- Galactic Gladiator's Greatsword
-					moh(5, i(248366)),	-- Galactic Gladiator's Mace
-					moh(10, i(248358)),	-- Galactic Gladiator's Pulverizer
-					moh(5, i(248351)),	-- Galactic Gladiator's Scepter
-					moh(5, i(248353)),	-- Galactic Gladiator's Shield
-					moh(10, i(248346)),	-- Galactic Gladiator's Spear
-					moh(10, i(248347)),	-- Galactic Gladiator's Staff
-					moh(5, i(248359)),	-- Galactic Gladiator's Sword
-					moh(5, i(248345)),	-- Galactic Gladiator's Warglaive
-				--]]
+					moh(10, i(265630)),	-- Galactic Gladiator's Battlestaff
+					moh(10, i(265625)),	-- Galactic Gladiator's Blaster
+					moh(10, i(265616)),	-- Galactic Gladiator's Bow
+					moh(5, i(265612)),	-- Galactic Gladiator's Dagger
+					moh(10, i(265638)),	-- Galactic Gladiator's Greataxe
+					moh(10, i(265627)),	-- Galactic Gladiator's Greatsword
+					moh(5, i(265632)),	-- Galactic Gladiator's Hammer
+					moh(10, i(265628)),	-- Galactic Gladiator's Morningstar
+					moh(10, i(265614)),	-- Galactic Gladiator's Polearm
+					moh(5, i(265617)),	-- Galactic Gladiator's Scepter
+					moh(5, i(265621)),	-- Galactic Gladiator's Shattered Blade
+					moh(5, i(265619)),	-- Galactic Gladiator's Shield
+					moh(5, i(265623)),	-- Galactic Gladiator's Slicer
+					moh(10, i(265615)),	-- Galactic Gladiator's Staff
+					moh(5, i(265629)),	-- Galactic Gladiator's Sword
+					moh(5, i(265618)),	-- Galactic Gladiator's Tome
+					moh(5, i(265613)),	-- Galactic Gladiator's Warglaive
 				},
 			}),
 		})),

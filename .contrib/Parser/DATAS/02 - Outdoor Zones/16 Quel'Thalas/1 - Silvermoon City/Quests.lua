@@ -30,6 +30,38 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(263871),	-- Holy Pet Leash (QI!)
 				},
 			}),
+			-- Catalyst
+			q(93687, {	-- Taste True Power
+				--["sourceQuests"] = { ??? },	-- ??
+				["provider"] = { "n", 243229 },	-- Eldara Dawnrunner
+				["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			-- Crests
+			q(94430, {	-- Adventuring Gear
+				--["sourceQuests"] = { ??? },	-- ??
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(94417, {	-- Crests of the Dawn
+				["sourceQuests"] = { 94430 },	-- Adventuring Gear
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(94432, {	-- Veteran Equipment
+				["sourceQuests"] = { 94417 },	-- Crests of the Dawn
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
+			q(94418, {	-- Crest Transmutation
+				["sourceQuests"] = { 94432 },	-- Veteran Equipment
+				["provider"] = { "n", 239676 },	-- Vaskarn
+				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			-- Profession(s)
 			q(93723, {	-- Crafters Needed
 				["qg"] = 243283,	-- Captain Flaresworn
@@ -39,6 +71,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(251322),	-- Thalassian Leatherworker's Duffel
 					i(251327),	-- Thalassian Tailor's Tote Bag
 				},
+			}),
+			-- Sparks
+			q(93942, {	-- Spark of Radiance
+				["provider"] = { "i", 232875 },	-- Spark of Radiance
+				["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				["coord"] = { 40.2, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			--
 			q(94474, {	-- The Great Vault
@@ -54,6 +92,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				--q(93067), <stay a while and listen> o? | In Memoriam @ 35.2, 70.3. Since it fire with big delay -- gonna leave it like that
 				q(90806),	-- Midnight adventure mode // World Quests & Adventure Mode (spellID 1234841) & Unlock Content Scaling (spellID 1234839)
+				q(94419, {["timeline"]={ADDED_12_0_X_SEASONSTART,REMOVED_12_1_0}}),	-- player recieve 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 			}),
 		}),
 	}),

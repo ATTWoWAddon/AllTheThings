@@ -5,15 +5,8 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(ZONE_DROPS, {
-			n(ARMOR, {
-				filter(CLOTH, {
-				}),
-				filter(LEATHER, {
-				}),
-				filter(MAIL, {
-				}),
-				filter(PLATE, {
-				}),
+			filter(REAGENTS, {
+				i(265800),	-- Earthy Garnish
 			}),
 		}),
 	}),

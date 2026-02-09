@@ -42,6 +42,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91555, {	-- Defenders of the Vale
 					["coord"] = { 58.7, 52.8, MAP.MIDNIGHT.HARANDAR },
 				}),
+				q(91490, {	-- Dousing Teldrassil
+					["coord"] = { 37.8, 29.1, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(92583, {	-- Fungicide
+					["coord"] = { 71.8, 64.4, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(93046, {	-- Nestled Belongings
 					["coord"] = { 31.3, 85.5, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {
@@ -51,11 +57,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(256143),	-- Wooden Spoon (QI!)
 					},
 				}),
+				q(91927, {	-- Ooze Booting
+					["coord"] = { 61.2, 56.6, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(91937, {	-- Portraits in the Vale
+					["coord"] = { 63.4, 49.6, MAP.MIDNIGHT.HARANDAR },
+				}),
 				q(91582, {	-- Pruning the Lattice
 					["coord"] = { 55.0, 29.3, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(93071, {	-- Rotten to the Core
 					["coord"] = { 46.4, 66.2, MAP.MIDNIGHT.HARANDAR },
+				}),
+				q(93013, {	-- Special Assignment: Push Back the Light
+					["coord"] = { 32.7, 77.4, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(92062, {	-- Tending the Roots
 					["coord"] = { 35.9, 24.6, MAP.MIDNIGHT.HARANDAR },
@@ -69,6 +84,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91799, {	-- Trial of Flight
 					["coord"] = { 51.5, 76.8, MAP.MIDNIGHT.HARANDAR },
 				}),
+			}),
+		}),
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(QUESTS, {
+				hqt(94391),	-- Special Assignment: Push Back the Light was unlocked
 			}),
 		}),
 	}),

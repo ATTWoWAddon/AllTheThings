@@ -2600,7 +2600,6 @@ i(238482);	-- A Whole Lot of Nothing
 i(260654);	-- Abrasive Sand
 i(260636);	-- Algae Covered Stone
 i(263517);	-- Ancient Text
-i(238494);	-- Another's Treasure
 i(260641);	-- Arid Tendrils
 i(260664);	-- Bioluminescent Flower Petals
 i(260608);	-- Bloated Animal Remains
@@ -2628,6 +2627,7 @@ i(247672);	-- Eversong Fizz
 i(263518);	-- Expensive-Looking Find
 i(260672);	-- Fetid Eye
 i(260689);	-- Fine Bioluminescent Powder
+i(260683);	-- Fine Magenta Sand
 i(260638);	-- Fine Void Residue
 i(260642);	-- Fossilized Wildlife
 i(260639);	-- Fractured Bone

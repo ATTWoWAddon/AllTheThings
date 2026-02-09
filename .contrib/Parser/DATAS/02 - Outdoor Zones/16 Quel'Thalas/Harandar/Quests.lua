@@ -1239,7 +1239,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 256313 },	-- Kaleo
 				["coord"] = { 51.0, 50.9, MAP.MIDNIGHT.HARANDAR },
 			}),
-			--
+			-- WANTED
+			q(91998, {	-- WANTED: Muckmire's Choking Vines
+				--["sourceQuests"] = { X },	-- 
+				["qg"] = 249361,	-- Shul'ka Li'tya
+				["coord"] = { 51.8, 74.2, MAP.MIDNIGHT.HARANDAR },
+				["isWeekly"] = true,	-- Probably? Blue !
+				["groups"] = { i(249404) },	-- Choking Vines (QI!)
+			}),
 			q(91982, {	-- WANTED: Toadshade's Petals
 				--["sourceQuests"] = { X },	-- 
 				["qg"] = 249361,	-- Shul'ka Li'tya
@@ -1269,7 +1276,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
 				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
 				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
-				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993)
+				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993) / Alex: after Special Assignment: Push Back the Light
 				--
 			}),
 		}),

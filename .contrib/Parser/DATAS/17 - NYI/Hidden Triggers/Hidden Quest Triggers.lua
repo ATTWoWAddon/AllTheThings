@@ -769,7 +769,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(94708, { ["isDaily"] = true, ["timeline"] = { ADDED_12_0_0 } }),	-- Triggers after completing Blingtron 6000 (40753), and possibly other blingtrons too?
 		q(94710, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
 		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
-		q(94713, { ["timeline"] = { ADDED_12_0_0 } }),						-- Sometimes triggers when completing Blingtron 6000 (40753), and possibly other blingtrons too?
+		q(94713, { ["timeline"] = { ADDED_12_0_0 } }),						-- Alex: Weekly reputation: Chironex, Blizzard at their best as always. TODO - remove with Midnight launch from here.
 		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 

@@ -151,24 +151,65 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	n(FACTIONS, {
 	}),
 	n(HIDDEN_QUESTS, {
-		-- Valeera didn't fire hqts on leveling during beta, but have them on alpha. Did they change tech for it?
-		--hqt(92093),	-- Unlock Ability 7 - Level 8 (pop when Valeera obtain level 9 on alpha)
-		--hqt(92758),	-- Level 10 (not even sure what level she was)
-		--hqt(92760),	-- Level 12 (not even sure what level she was)
-		--hqt(92761),	-- Level 13 (not even sure what level she was)
-		--hqt(92762),	-- Level 14 (She was level 13, actually, according to notes)
+		hqt(92087),	-- Unlock Ability 1 - Level 2
+		hqt(92088),	-- Unlock Ability 2 - Level 3
+		hqt(92089),	-- Unlock Ability 3 - Level 4
+		hqt(92090),	-- Unlock Ability 4 - Level 5
+		hqt(92091),	-- Unlock Ability 5 - Level 6
+		hqt(92092),	-- Unlock Ability 6 - Level 7
+		hqt(92093),	-- Unlock Ability 7 - Level 8
+		hqt(92756),	-- Level 9
+		--hqt(92758),	-- Level 10 (automated)
+		hqt(92759),	-- Level 11
+		hqt(92760),	-- Level 12
+		hqt(92761),	-- Level 13
+		hqt(92762),	-- Level 14
+		hqt(92763),	-- Level 15
+		hqt(92764),	-- Level 16
+		hqt(92765),	-- Level 17
+		hqt(92766),	-- Level 18
+		hqt(92767),	-- Level 19
 		--hqt(92768),	-- Level 20 (automated)
-		--hqt(92775),	-- Level 27 (she was actually level 27), also it seems like questIDs keep flagging but not reported in-game?
-		--hqt(92776),	-- Level 28
+		hqt(92769),	-- Level 21
+		hqt(92770),	-- Level 22
+		hqt(92771),	-- Level 23
+		hqt(92772),	-- Level 24
+		hqt(92773),	-- Level 25
+		hqt(92774),	-- Level 26
+		hqt(92775),	-- Level 27
+		hqt(92776),	-- Level 28
+		hqt(92777),	-- Level 29
 		--hqt(92778),	-- Level 30 (automated)
-		--hqt(92786),	-- Level 38
-		--hqt(92787),	-- Level 39
+		hqt(92779),	-- Level 31
+		hqt(92780),	-- Level 32
+		hqt(92781),	-- Level 33
+		hqt(92782),	-- Level 34
+		hqt(92783),	-- Level 35
+		hqt(92784),	-- Level 36
+		hqt(92785),	-- Level 37
+		hqt(92786),	-- Level 38
+		hqt(92787),	-- Level 39
 		--hqt(92788),	-- Level 40 (automated)
-		--hqt(92789),	-- Level 41
-		--hqt(92790),	-- Level 42
-		--hqt(92791),	-- Level 43
-		--hqt(92792),	-- Level 44
-		--hqt(92794),	-- Level 46
+		hqt(92789),	-- Level 41
+		hqt(92790),	-- Level 42
+		hqt(92791),	-- Level 43
+		hqt(92792),	-- Level 44
+		hqt(92793),	-- Level 45
+		hqt(92794),	-- Level 46
+		hqt(92795),	-- Level 47
+		hqt(92796),	-- Level 48
+		hqt(92797),	-- Level 49
+		--hqt(92798),	-- Level 50 (automated?)
+		hqt(92799),	-- Level 51
+		hqt(92800),	-- Level 52
+		hqt(92801),	-- Level 53
+		hqt(92803),	-- Level 54
+		hqt(92804),	-- Level 55
+		hqt(92805),	-- Level 56
+		hqt(92806),	-- Level 57
+		hqt(92807),	-- Level 58
+		hqt(92808),	-- Level 59
+		--hqt(92809),	-- Level 60 (automated?)
 	}),
 	n(QUESTS, {
 		q(93784, {	-- A Gnawing Void of Curiosity
@@ -291,16 +332,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(EXPLORATION, {
 			}),
 			n(QUESTS, {
-				---q(XXXX, {	-- ??
-				---	["provider"] = { "n", ???? },	-- ????
-				---	["coord"] = { X, Y, MAPID },
-				---}),
+				q(93409, {	-- Delver's Call: Atal'Aman
+					["provider"] = { "n", 254726 },	-- Fallen Amani Scout
+					["coord"] = { 24.9, 43.3, ATAL_AMAN },
+				}),
 			}),
 			n(TREASURES, {
-				--o(XXXX, {	-- Sturdy Chest	TODO: missing objectID
+				--o(XXXXXX, {	-- Sturdy Chest
 				--	["coord"] = { 55.7, 69.9, ATAL_AMAN },
 				--	["questID"] = 94000,
 				--}),
+				o(618270, {	-- Sturdy Chest
+					["coord"] = { 48.3, 50.5, ATAL_AMAN },
+					--["questID"] = XXXXXX,
+					["groups"] = {
+						i(252265),	-- Hexed Potatoad Mucus (TOY!)
+					},
+				}),
+					
 			}),
 			n(REWARDS, {
 				n(DECOR, {
@@ -345,6 +394,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264330),	-- Amani Hanging Brazier (DECOR!)
 					i(267009),	-- Amani Training Dummy (DECOR!)
 					i(264258),	-- Blossoming Forge (DECOR!)
 					i(263042),	-- Rootlight Lamppost (DECOR!)
@@ -471,7 +521,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				n(DECOR, {
 					i(264330),	-- Amani Hanging Brazier (DECOR!)
 				}),
-				filter(MISC, {
+				filter(COSMETIC, {
+					i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)
 				}),
 			}),
 		},
@@ -549,7 +600,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(264342),	-- Cosmic Void Cache (DECOR!)
 					i(263233),	-- Sin'dorei Spinning Library (DECOR!)
 				}),
-				filter(MISC, {
+				filter(COSMETIC, {
+					i(262970),	-- Ominous Tome (COSMETIC!)
 				}),
 			}),
 		},
@@ -736,7 +788,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91188),	-- Atal'Aman
 			q(91186),	-- Collegiate Calamity
 			q(91189),	-- Shadow Enclave
-			q(91184),	-- Shadowguard Point
+			q(91184),	-- Shadowguard Point / Sunkiller Sanctum
 			q(91185),	-- The Grudge Pit
 			q(91187),	-- The Gulf of Memory
 			q(91190),	-- Twilight Crypts

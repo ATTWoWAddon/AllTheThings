@@ -177,7 +177,7 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94706),	-- Triggered after skipping tutorial
 				q(94707),	-- Triggered after completing 'This Old Hearth' (94379)
 				q(94709),	-- Triggered after entering house (tutorial?)
-				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210)
+				q(94714),	-- Triggered after completing 'Feathering the Nest' (94210) / Alex: Weekly reputation: Ha'kalawe (blame Blizzard for it)
 				-- q(94750),	-- Unflagged after talking to Elven Decor vendor
 				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
 				q(95166,{isDaily=true}),	-- Pet the Dog (245551)

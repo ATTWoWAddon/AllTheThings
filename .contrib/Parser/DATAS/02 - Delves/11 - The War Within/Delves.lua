@@ -4224,7 +4224,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			-- q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
-		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve / also pop in Midnight delves (first per day/week/bountiful?)
+		q(85719),	-- Bonus experience for companion on first delve completion of day
 
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st

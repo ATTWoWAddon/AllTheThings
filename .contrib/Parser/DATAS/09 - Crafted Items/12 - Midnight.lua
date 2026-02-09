@@ -137,10 +137,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			FirstCraft(88608, 1225282),	-- Wyrmfish
 		})),
 		i(243343),	-- Angler's Anomaly
+		i(238494),	-- Another's Treasure
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
 		i(238377),	-- Blood Hunter
 		i(238369),	-- Bloomtail Minnow
+		i(238489),	-- Definitely Not a Rock
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
 		i(238376),	-- Lucky Loa
