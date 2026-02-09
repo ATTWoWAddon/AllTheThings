@@ -17,8 +17,10 @@ app:CreateWindow("Hidden Achievement Triggers", {
 			_nosearch = true,
 			visible = true,
 			_hqt = true,
-			g = app.Categories.HiddenAchievementTriggers,
 		}), true));
-		self:AssignChildren();
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			self.data.g = categories.HiddenAchievementTriggers;
+			self:AssignChildren();
+		end);
 	end,
 });

@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,h,i,p,s,title,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
-_.Categories.GroupFinder={
+categories.GroupFinder={
 h(-12,{u=33,g={
 ach(4476,{rank=10,u=33}),
 ach(4477,{rank=50,u=33,g={
@@ -61,3 +62,4 @@ s(179820,51975,{b=1,f=6,q=3,u=33}),
 s(179814,51969,{b=1,f=4,q=3,u=33}),
 s(179828,51983,{b=1,f=7,q=3,u=33}),
 s(179806,51961,{b=1,f=5,q=3,u=33})}})}})};
+end);

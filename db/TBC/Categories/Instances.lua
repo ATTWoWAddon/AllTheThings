@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cl,crit,cs,d,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-_.Categories.Instances={
+categories.Instances={
 x(1,{
 h(-318,{rwp=40003,u=15,g={
 cl(11,{u=15,g={
@@ -8354,3 +8355,4 @@ i(27896,{b=1,f=53,lvl=70,q=3,u=17}),
 i(27770,{b=1,f=53,lvl=70,q=3,u=17}),
 i(23572,{b=1,q=3,u=17}),
 i(33826,{q=1,u=17})}})}})}})}})};
+end);

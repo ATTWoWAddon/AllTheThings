@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,flt,h,i,mnt,n,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
-_.Categories.Craftables={
+categories.Craftables={
 x(1,{
 prof(171,{
 h(-22,{
@@ -2640,3 +2641,4 @@ i(21844,{q=1,u=17}),
 i(21845,{coords={{60,72,1440},{21,53,1453},{43.1,80.27,1457},{13.13,26.23,1942},{45.02,23.54,1952}},description="Coordinates are for select Moonwells around the world.",q=3,u=17}),
 i(24272,{coords={{58.3,70.9,1948}},q=3,u=17}),
 i(24271,{maps={1953},q=3,u=17})}})}})}})};
+end);

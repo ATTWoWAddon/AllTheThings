@@ -34,11 +34,13 @@ app:CreateWindow("Unsorted", {
 			_missing = true,
 			_unsorted = true,
 			_nosearch = true,
-			g = app.Categories.Unsorted,
 		}));
-		tinsert(self.data.g, self.achievementHeader);
-		app.CacheFields(self.data, true);
-		self:AssignChildren();
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			self.data.g = categories.Unsorted;
+			tinsert(self.data.g, self.achievementHeader);
+			app.CacheFields(self.data, true);
+			self:AssignChildren();
+		end);
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

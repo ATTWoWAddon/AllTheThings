@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,h,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"n",221427},{"n",225204},{"n",234168},{"n",236626},{"n",244752},{"n",244753},{"o",455716},{"s",453139},{"s",464820},{206017},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484,2502,2503,2505,2510,2525,2528,2535,2545,2547,16596},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},{2249,2250,2277,2310,2347,2420},{2249},{2250},{2251},{225401},{2259},{2269},{2277},{2299},{2301},{2302},{2310},{2312},{2347},{235490},{2396},{2420},{242381},{245191},{245938},{249592},{2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},{2570,12},{47.4,44.4,2339},{48,43.4,2339},{52.2,12.2,2301},{52.5,78.3,2393},{52.5,78.9,2393},{52.8,77.9,2393},{53.1,17.2,2259},{55.3,55.9,2248},{68},{70},{85242},{90969}};
-_.Categories.Delves={
+categories.Delves={
 x(11,{
 h(-383,{
 h(-12,{awp=110002,rwp=110100,u=2,g={
@@ -2548,3 +2549,4 @@ mnt(1268924,{cost={{"c",3316,10}},itemID=262500})}),
 flt(102,{
 toy(265100,{cost={{"c",3316,10}}}),
 toy(264414,{cost={{"c",3316,10}}})})}})}})})})};
+end);

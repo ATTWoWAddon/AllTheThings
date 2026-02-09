@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,h,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-_.Categories.WorldEvents={
+categories.WorldEvents={
 h(-103,{
 x(2,{
 h(-482,{lvl=55,maps={1419},rwp=20506,u=2,g={
@@ -693,3 +694,4 @@ s(131958,21521,{b=1,f=25,lvl=60,q=4,u=2}),
 s(131957,21520,{b=1,f=25,lvl=60,q=4,u=2})}}),
 q(8734,{coords={{37.5,47.9,1438}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733},u=2}),
 q(8286,{coords={{49.5,36.4,1451}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=2})}})}})};
+end);

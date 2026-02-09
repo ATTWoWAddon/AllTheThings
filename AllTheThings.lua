@@ -1161,10 +1161,6 @@ local function SimpleHeaderGroup(npcID, t)
 end
 
 function app:GetDataCache()
-	if not app.Categories then
-		return nil;
-	end
-
 	-- app.PrintMemoryUsage("app:GetDataCache init")
 
 	-- not really worth moving this into a Class since it's literally allowed to be used once
@@ -1229,6 +1225,15 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
+	
+	local AllCategories = {};
+	app.HandleEvent("OnGetDataCache", AllCategories, g);
+	app.RemoveAllEventHandlers("OnGetDataCache");
+	--[[
+	for key,category in pairs(AllCategories) do
+		print(key, "LOADED");
+	end
+	]]--
 
 	-----------------------------------------
 	-- P R I M A R Y   C A T E G O R I E S --
@@ -1236,31 +1241,31 @@ function app:GetDataCache()
 	-- Dungeons & Raids
 	tinsert(g, app.CreateRawText(GROUP_FINDER, {
 		icon = app.asset("Category_D&R"),
-		g = app.Categories.Instances,
+		g = AllCategories.Instances,
 	}));
 
 	-- Delves
-	if app.Categories.Delves then
-		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.DELVES, app.Categories.Delves));
+	if AllCategories.Delves then
+		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.DELVES, AllCategories.Delves));
 	end
 
 	-- Outdoor Zones
-	if app.Categories.Zones then
+	if AllCategories.Zones then
 		tinsert(g, app.CreateRawText(BUG_CATEGORY2, {
 			icon = app.asset("Category_Zones"),
-			g = app.Categories.Zones,
+			g = AllCategories.Zones,
 			mapID = 947,
 		}));
 	end
 
 	-- World Drops
 	tinsert(g, app.CreateCustomHeader(app.HeaderConstants.WORLD_DROPS, {
-		g = app.Categories.WorldDrops or {},
+		g = AllCategories.WorldDrops or {},
 		RootCategory = "World Drops",
 	}));
 
 	-- Crafted Items
-	local craftables = app.Categories.Craftables;
+	local craftables = AllCategories.Craftables;
 	if craftables then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.CRAFTED_ITEMS, {
 			DontEnforceSkillRequirements = true,
@@ -1271,27 +1276,27 @@ function app:GetDataCache()
 
 	-- Professions
 	local ProfessionsHeader = app.CreateCustomHeader(app.HeaderConstants.PROFESSIONS, {
-		g = app.Categories.Professions or {},
+		g = AllCategories.Professions or {},
 		RootCategory = "Professions",
 	});
 	tinsert(g, ProfessionsHeader);
 
 	-- Holidays
-	if app.Categories.Holidays then
+	if AllCategories.Holidays then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOLIDAYS, {
 			difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
 			SortType = "EventStart",
-			g = app.Categories.Holidays,
+			g = AllCategories.Holidays,
 			RootCategory = "Holidays",
 		}));
 	end
 
 	-- Expansion Features
-	if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
+	if AllCategories.ExpansionFeatures and #AllCategories.ExpansionFeatures > 0 then
 		tinsert(g, app.CreateRawText(GetCategoryInfo(15301) or EXPANSION_FILTER_TEXT, {
 			icon = app.asset("Category_ExpansionFeatures"),
 			description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.",
-			g = app.Categories.ExpansionFeatures,
+			g = AllCategories.ExpansionFeatures,
 			RootCategory = "Expansion Features",
 		}));
 	end
@@ -1300,77 +1305,77 @@ function app:GetDataCache()
 	-- L I M I T E D   C A T E G O R I E S --
 	-----------------------------------------
 	-- Character
-	if app.Categories.Character then
+	if AllCategories.Character then
 		local characterCategory = app.CreateRawText(CHARACTER, {
 			icon = app.asset("Category_ItemSets"),
-			g = app.Categories.Character,
+			g = AllCategories.Character,
 			RootCategory = "Character",
 		});
 		-- Merge Pet Battles into Character (temporary solution until this category is DEAD.)
-		if app.Categories.PetBattles then
+		if AllCategories.PetBattles then
 			tinsert(characterCategory.g, app.CreateCustomHeader(app.HeaderConstants.PET_BATTLES, {
-				g = app.Categories.PetBattles,
+				g = AllCategories.PetBattles,
 			}));
-			app.Categories.PetBattles = nil;
+			AllCategories.PetBattles = nil;
 		end
 		tinsert(g, characterCategory);
 	end
 
 	-- Housing
-	if app.Categories.Housing then
+	if AllCategories.Housing then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.HOUSING, {
-			g = app.Categories.Housing,
+			g = AllCategories.Housing,
 			RootCategory = "Housing",
 		}));
 	end
 
 	-- Group Finder
-	if app.Categories.GroupFinder then
+	if AllCategories.GroupFinder then
 		tinsert(g, app.CreateRawText(DUNGEONS_BUTTON, {
 			icon = app.asset("Category_GroupFinder"),
-			g = app.Categories.GroupFinder,
+			g = AllCategories.GroupFinder,
 			RootCategory = "Group Finder",
 		}));
 	end
 
 	-- PvP
-	if app.Categories.PVP then
+	if AllCategories.PVP then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.PVP, {
-			g = app.Categories.PVP,
+			g = AllCategories.PVP,
 			RootCategory = "PvP",
 		}));
 	end
 
 	-- Season of Discovery
-	if app.Categories.SeasonOfDiscovery then
-		for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
+	if AllCategories.SeasonOfDiscovery then
+		for i,o in ipairs(AllCategories.SeasonOfDiscovery) do
 			tinsert(g, o);
 		end
 	end
 
 	-- Secrets
-	if app.Categories.Secrets then
+	if AllCategories.Secrets then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.SECRETS, {
-			g = app.Categories.Secrets,
+			g = AllCategories.Secrets,
 			RootCategory = "Secrets",
 		}));
 	end
 
 	-- Skills
-	if app.Categories.Skills then
+	if AllCategories.Skills then
 		tinsert(g, app.CreateRawText(SKILLS, {
 			icon = 136105,
-			g = app.Categories.Skills,
+			g = AllCategories.Skills,
 			RootCategory = "Skills",
 		}));
 	end
 
 	-- World Events
-	if app.Categories.WorldEvents then
+	if AllCategories.WorldEvents then
 		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_7, {
 			icon = app.asset("Category_Event"),
 			description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
-			g = app.Categories.WorldEvents,
+			g = AllCategories.WorldEvents,
 			RootCategory = "World Events",
 		}));
 	end
@@ -1379,35 +1384,35 @@ function app:GetDataCache()
 	-- M A R K E T   C A T E G O R I E S --
 	---------------------------------------
 	-- Black Market
-	if app.Categories.BlackMarket then
-		local blackMarket = app.Categories.BlackMarket[1];
+	if AllCategories.BlackMarket then
+		local blackMarket = AllCategories.BlackMarket[1];
 		blackMarket.RootCategory = "Black Market";
 		tinsert(g, blackMarket);
 	end
 
 	-- In-Game Store
-	if app.Categories.InGameShop then
+	if AllCategories.InGameShop then
 		tinsert(g, app.CreateCustomHeader(app.HeaderConstants.IN_GAME_SHOP, {
-			g = app.Categories.InGameShop,
+			g = AllCategories.InGameShop,
 			RootCategory = "In-Game Shop",
 		}));
 	end
 
 	-- Promotions
-	if app.Categories.Promotions then
+	if AllCategories.Promotions then
 		tinsert(g, app.CreateRawText(BATTLE_PET_SOURCE_8, {
 			icon = app.asset("Category_Promo"),
 			description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
-			g = app.Categories.Promotions,
+			g = AllCategories.Promotions,
 			RootCategory = "Promotions",
 		}));
 	end
 
 	-- Trading Post
-	if app.Categories.TradingPost then
+	if AllCategories.TradingPost then
 		tinsert(g, app.CreateRawText(TRANSMOG_SOURCE_7, {
 			icon = app.asset("Category_TradingPost"),
-			g = app.Categories.TradingPost,
+			g = AllCategories.TradingPost,
 			RootCategory = "Trading Post",
 			isMinilistHeader = true,
 		}));
@@ -1471,8 +1476,8 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage()
 
 	-- Achievements
-	if app.Categories.Achievements then
-		local db = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, app.Categories.Achievements);
+	if AllCategories.Achievements then
+		local db = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, AllCategories.Achievements);
 		db.sourceIgnored = 1;	-- everything in this category is now cloned!
 		for _, o in ipairs(db.g) do
 			o.sourceIgnored = nil
@@ -1675,13 +1680,16 @@ function app:GetDataCache()
 		dynamicHeader.parent = rootData;
 		app.AssignChildren(dynamicHeader);
 	end
-
+	
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
 		-- app.PrintDebug("Cached data cache")
 		return rootData;
 	end
+	app.HandleEvent("OnDataCached", AllCategories, rootData);
+	app.RemoveAllEventHandlers("OnDataCached");
+	AllCategories = nil;
 	return rootData;
 end
 
@@ -1718,175 +1726,173 @@ app.AddEventHandler("OnReady", function()
 end);
 
 -- Startup Event
-local ADDON_LOADED_HANDLERS = {
-	[appName] = function()
-		-- Old Saved Variables
-		AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
+app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
+	-- Old Saved Variables
+	AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 
-		-- Cache the Localized Category Data
-		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
-		app.CategoryNames = nil;
+	-- Cache the Localized Category Data
+	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	app.CategoryNames = nil;
 
-		-- Clear some keys which got added and shouldn't have been
-		AllTheThingsAD.ExplorationDB = nil
-		AllTheThingsAD.ExplorationAreaPositionDB = nil
+	-- Clear some keys which got added and shouldn't have been
+	AllTheThingsAD.ExplorationDB = nil
+	AllTheThingsAD.ExplorationAreaPositionDB = nil
 
-		-- clear harvest data on load in case someone forgets
-		AllTheThingsHarvestItems = {};
+	-- clear harvest data on load in case someone forgets
+	AllTheThingsHarvestItems = {};
 
-		-- Character Data Storage
-		local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
-		local currentCharacter = characterData[app.GUID];
-		if not currentCharacter then
-			currentCharacter = {};
-			characterData[app.GUID] = currentCharacter;
-		end
-		currentCharacter.build = app.GameBuildVersion;
-		local name, realm = UnitName("player");
-		if not realm then realm = GetRealmName(); end
-		if name then currentCharacter.name = name; end
-		if realm then currentCharacter.realm = realm; end
-		if app.Me then currentCharacter.text = app.Me; end
-		if app.GUID then currentCharacter.guid = app.GUID; end
-		if app.Level then currentCharacter.lvl = app.Level; end
-		if app.FactionID then currentCharacter.factionID = app.FactionID; end
-		if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
-		if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
-		if app.Class then currentCharacter.class = app.Class; end
-		if app.Race then currentCharacter.race = app.Race; end
-		if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
-		if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
-		if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-		if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
-		if not currentCharacter.Quests then currentCharacter.Quests = {}; end
-		if not currentCharacter.Professions then currentCharacter.Professions = {}; end
-		app.CurrentCharacter = currentCharacter;
-		app.AddEventHandler("OnPlayerLevelUp", function()
-			currentCharacter.lvl = app.Level;
-		end);
+	-- Character Data Storage
+	local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+	local currentCharacter = characterData[app.GUID];
+	if not currentCharacter then
+		currentCharacter = {};
+		characterData[app.GUID] = currentCharacter;
+	end
+	currentCharacter.build = app.GameBuildVersion;
+	local name, realm = UnitName("player");
+	if not realm then realm = GetRealmName(); end
+	if name then currentCharacter.name = name; end
+	if realm then currentCharacter.realm = realm; end
+	if app.Me then currentCharacter.text = app.Me; end
+	if app.GUID then currentCharacter.guid = app.GUID; end
+	if app.Level then currentCharacter.lvl = app.Level; end
+	if app.FactionID then currentCharacter.factionID = app.FactionID; end
+	if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+	if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+	if app.Class then currentCharacter.class = app.Class; end
+	if app.Race then currentCharacter.race = app.Race; end
+	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
+	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
+	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Professions then currentCharacter.Professions = {}; end
+	app.CurrentCharacter = currentCharacter;
+	app.AddEventHandler("OnPlayerLevelUp", function()
+		currentCharacter.lvl = app.Level;
+	end);
 
-		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
-		local currentQuestsCache = currentCharacter.Quests;
-		for questID,completion in pairs(currentQuestsCache) do
-			if completion == 2 then currentQuestsCache[questID] = nil; end
-		end
+	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
+	local currentQuestsCache = currentCharacter.Quests;
+	for questID,completion in pairs(currentQuestsCache) do
+		if completion == 2 then currentQuestsCache[questID] = nil; end
+	end
 
-		-- Account Wide Data Storage
-		local accountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
-		if not accountWideData.Achievements then accountWideData.Achievements = {}; end
-		if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
-		if not accountWideData.Exploration then accountWideData.Exploration = {}; end
-		if not accountWideData.Factions then accountWideData.Factions = {}; end
-		if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
-		if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
-		if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
-		if not accountWideData.Quests then accountWideData.Quests = {}; end
-		if not accountWideData.Spells then accountWideData.Spells = {}; end
-		if not accountWideData.Titles then accountWideData.Titles = {}; end
-		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
-		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
+	-- Account Wide Data Storage
+	local accountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
+	if not accountWideData.Exploration then accountWideData.Exploration = {}; end
+	if not accountWideData.Factions then accountWideData.Factions = {}; end
+	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
+	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	if not accountWideData.Titles then accountWideData.Titles = {}; end
+	if not accountWideData.Transmog then accountWideData.Transmog = {}; end
+	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
-		-- Clean up unused saved variables if they become deprecated after being pushed to Git
-		accountWideData.Campsite = nil
-		accountWideData.WarbandScene = nil
-		accountWideData.TEMP_TWWSources = nil
-		currentCharacter.CommonItems = nil
-		accountWideData.CommonItems = nil
+	-- Clean up unused saved variables if they become deprecated after being pushed to Git
+	accountWideData.Campsite = nil
+	accountWideData.WarbandScene = nil
+	accountWideData.TEMP_TWWSources = nil
+	currentCharacter.CommonItems = nil
+	accountWideData.CommonItems = nil
 
-		-- Clean up other matching Characters with identical Name-Realm but differing GUID
-		local myGUID = app.GUID;
-		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
-		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
-		local otherName, otherRealm, otherText;
-		local toClean;
-		for guid,character in pairs(characterData) do
-			-- simple check on name/realm first
-			otherName = character.name;
-			otherRealm = character.realm;
-			otherText = character.text;
-			if guid ~= myGUID then
-				if otherName == myName and otherRealm == myRealm then
-					if toClean then tinsert(toClean, guid)
-					else toClean = { guid }; end
-				elseif otherText and otherText:match(myRegex) then
-					if toClean then tinsert(toClean, guid)
-					else toClean = { guid }; end
-				end
+	-- Clean up other matching Characters with identical Name-Realm but differing GUID
+	local myGUID = app.GUID;
+	local myName, myRealm = currentCharacter.name, currentCharacter.realm;
+	local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
+	local otherName, otherRealm, otherText;
+	local toClean;
+	for guid,character in pairs(characterData) do
+		-- simple check on name/realm first
+		otherName = character.name;
+		otherRealm = character.realm;
+		otherText = character.text;
+		if guid ~= myGUID then
+			if otherName == myName and otherRealm == myRealm then
+				if toClean then tinsert(toClean, guid)
+				else toClean = { guid }; end
+			elseif otherText and otherText:match(myRegex) then
+				if toClean then tinsert(toClean, guid)
+				else toClean = { guid }; end
 			end
 		end
-		if toClean then
-			local copyTables = { "Buildings","GarrisonBuildings","Factions","FlightPaths" };
-			local cleanCharacterFunc = function(guid)
-				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
-				local character = characterData[guid];
-				for _,tableName in ipairs(copyTables) do
-					local copyTable = character[tableName];
-					if copyTable then
-						-- app.PrintDebug("Copying Dupe",tableName)
-						local currentTable = currentCharacter[tableName];
-						if not currentTable then
-							-- old/restored character missing copied data
-							currentTable = {}
-							currentCharacter[tableName] = currentTable
-						end
-						for ID,complete in pairs(copyTable) do
-							-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
-							if complete and not currentTable[ID] then
-								-- app.PrintDebug("Copied Completed",ID)
-								currentTable[ID] = complete;
-							end
+	end
+	if toClean then
+		local copyTables = { "Buildings","GarrisonBuildings","Factions","FlightPaths" };
+		local cleanCharacterFunc = function(guid)
+			-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
+			local character = characterData[guid];
+			for _,tableName in ipairs(copyTables) do
+				local copyTable = character[tableName];
+				if copyTable then
+					-- app.PrintDebug("Copying Dupe",tableName)
+					local currentTable = currentCharacter[tableName];
+					if not currentTable then
+						-- old/restored character missing copied data
+						currentTable = {}
+						currentCharacter[tableName] = currentTable
+					end
+					for ID,complete in pairs(copyTable) do
+						-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
+						if complete and not currentTable[ID] then
+							-- app.PrintDebug("Copied Completed",ID)
+							currentTable[ID] = complete;
 						end
 					end
 				end
-				-- Remove the actual dupe data afterwards
-				-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
-				local backups = accountWideData._CharacterBackups;
-				if not backups then
-					backups = {};
-					accountWideData._CharacterBackups = backups;
-				end
-				backups[guid] = character;
-				characterData[guid] = nil;
-				local count = 0
-				for guid,char in pairs(backups) do
-					count = count + 1
-				end
-				app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
-				app.print("Use '/att remove-deleted-character-backups help' for more info")
 			end
-			for _,guid in ipairs(toClean) do
-				app.FunctionRunner.Run(cleanCharacterFunc, guid);
+			-- Remove the actual dupe data afterwards
+			-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
+			local backups = accountWideData._CharacterBackups;
+			if not backups then
+				backups = {};
+				accountWideData._CharacterBackups = backups;
 			end
+			backups[guid] = character;
+			characterData[guid] = nil;
+			local count = 0
+			for guid,char in pairs(backups) do
+				count = count + 1
+			end
+			app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
+			app.print("Use '/att remove-deleted-character-backups help' for more info")
 		end
+		for _,guid in ipairs(toClean) do
+			app.FunctionRunner.Run(cleanCharacterFunc, guid);
+		end
+	end
 
-		-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
-		app.ChatCommands.Add("remove-deleted-character-backups", function(args)
-			local backups = 0
-			for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
-				backups = backups + 1
-			end
-			accountWideData._CharacterBackups = nil
-			app.print("Cleaned up",backups,"character backups!")
-			return true
-		end, {
-			"Usage : /att remove-deleted-character-backups",
-			"Allows permanently removing all deleted character backup data",
-			"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
-		})
+	-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
+	app.ChatCommands.Add("remove-deleted-character-backups", function(args)
+		local backups = 0
+		for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
+			backups = backups + 1
+		end
+		accountWideData._CharacterBackups = nil
+		app.print("Cleaned up",backups,"character backups!")
+		return true
+	end, {
+		"Usage : /att remove-deleted-character-backups",
+		"Allows permanently removing all deleted character backup data",
+		"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
+	})
 
-		-- Initialize Settings
-		app.Settings:Initialize();
+	-- Initialize Settings
+	app.Settings:Initialize();
 
-		-- Notify Event Handlers that Saved Variable Data is available.
-		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
-		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
-		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
+	-- Notify Event Handlers that Saved Variable Data is available.
+	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
+	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
+	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
+	
+	-- Cache the data for the first time
+	-- TODO: Move the logic here rather than in GetDataCache itself. (this will prevent windows from killing things)
+	app:GetDataCache();
 
-		-- OnLoad events (saved variables are now available)
-		app.HandleEvent("OnLoad")
-	end,
-};
-app:RegisterFuncEvent("ADDON_LOADED", function(addonName)
-	local addonTrigger = ADDON_LOADED_HANDLERS[addonName];
-	if addonTrigger then addonTrigger(); end
+	-- OnLoad events (saved variables are now available)
+	app.HandleEvent("OnLoad")
 end)

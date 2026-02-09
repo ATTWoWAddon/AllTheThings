@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,crit,faction,flt,h,i,mnt,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateItemSource;
-_.Categories.Character={
+categories.Character={
 h(-12,{
 ach(523),
 ach(524),
@@ -134,3 +135,4 @@ h(-101,{
 s(156773,2361,{f=24,q=1,rwp=90001}),
 s(156042,37,{awp=11100,f=21,q=1,rwp=30002})}),
 i(6948,{b=1,q=1})})};
+end);

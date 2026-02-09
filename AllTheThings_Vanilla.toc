@@ -94,7 +94,9 @@ src\Modules\Contributor.lua
 
 # Expansion specific localization files
 db\Classic\LocalizationDB.lua
+db\Classic\Categories.xml
 db\Classic SOD\LocalizationDB.lua
+db\Classic SOD\Categories.xml
 
 # Load object class templates
 src\Classes\base.lua
@@ -164,12 +166,5 @@ src\UI\Waypoints.lua
 src\UI\World Map Button.lua
 src\UI\Window Definitions.lua
 
-# Load expansion specific category database.
-db\Classic\Categories.xml
-db\Classic SOD\Categories.xml
-
 # Window Definitions
 src\UI\Windows\Windows.xml
-
-# Finally, prepare the Data Cache
-src\Root.lua

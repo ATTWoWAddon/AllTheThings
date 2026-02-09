@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,crit,cu,faction,flt,h,i,m,mnt,n,pvprank,q,qo,s,settings,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateExpansion;
-_.Categories.PVP={
+categories.PVP={
 h(-12,{pvp=1,g={
 ach(238,{pvp=1,u=12}),
 ach(513,{pvp=1,u=12}),
@@ -6196,3 +6197,4 @@ i(74783,{b=1,c={2,6},lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilte
 i(74785,{b=1,c={2,7,11},lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2;t.rwp=nil;else	t.u=42;t.rwp=50004;end	end,pvp=1,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=4}),
 i(74784,{b=1,c={2,7,11},lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2;t.rwp=nil;else	t.u=42;t.rwp=50004;end	end,pvp=1,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=4}),
 i(74786,{b=1,c={7,11},lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2;t.rwp=nil;else	t.u=42;t.rwp=50004;end	end,pvp=1,q=4,races={1,2,3,4,5,6,7,8,9,10,11,22},u=4})}})}})}})}})};
+end);

@@ -17,8 +17,10 @@ app:CreateWindow("Hidden Currency Triggers", {
 			_nosearch = true,
 			visible = true,
 			_hqt = true,
-			g = app.Categories.HiddenCurrencyTriggers,
 		}), true));
-		self:AssignChildren();
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			self.data.g = categories.HiddenCurrencyTriggers;
+			self:AssignChildren();
+		end);
 	end,
 });

@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,campsite,cu,de,exp,faction,flt,fp,h,i,m,n,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
 local a={{233063,233708},{2351,2352},{240465,256750},{248854},{252312},{253596},{255203,255222,255278,255325},{255203,255325},{255213,255326},{255216,255298},{255218,255299},{255221,255230,255301},{255221,255319},{255222,255278},{255228,255297},{255230,255301},{255519,255520},{52.2,37.8,2352},{52.7,37.5,2352},{52.9,68,2339},{52.9,89,85},{53.1,38.3,2352},{53.1,40.1,2352},{53.5,58.5,2351},{53.7,57.4,2351},{54.2,56.1,2351},{54.2,58,2351},{54.3,56.1,2351},{55.3,57.6,2351},{56.1,77.1,84},{91863}};
-_.Categories.Housing={
+categories.Housing={
 h(-12,{awp=110207,g={
 ach(61308),
 ach(61309),
@@ -910,3 +911,4 @@ n(255299,{coords={a[24]}}),
 n(240465,{coords={{68.3,75.5,2351}}}),
 n(255297,{coords={{54.1,59,2351}}}),
 n(255520,{coords={a[27]}})})}})};
+end);

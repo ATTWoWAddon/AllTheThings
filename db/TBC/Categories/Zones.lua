@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cl,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy;
-_.Categories.Zones={
+categories.Zones={
 h(-12,{
 ach(942,{maps={1448,1946,1951},r=2,u=17}),
 ach(943,{maps={1448,1946,1951},r=1,u=17})}),
@@ -13481,13 +13482,6 @@ ach(871,{sourceQuests={4621},u=11}),
 ach(781,{
 crit(1293,{achID=42,id=1})}),
 ach(940)}),
-o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389,{pvp=1}),
-i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
-s(129615,18711,{f=6,lvl=45,pvp=1,q=3}),
-s(129614,18710,{f=5,lvl=45,pvp=1,q=3}),
-s(129616,18712,{f=7,lvl=45,pvp=1,q=3}),
-s(129613,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 h(-30,{
 exp(123,{
 crit(1217,{achID=781,id=1})}),
@@ -13880,6 +13874,13 @@ s(117408,1604,{f=26,lvl=40,q=2,rwp=40003}),
 s(119633,4478,{f=6,lvl=40,q=2,rwp=40003})}}),
 n(14492,{coords={{36.8,56,1434}}})}),
 h(-56,{
+o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
+ach(389,{pvp=1}),
+i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
+s(129615,18711,{f=6,lvl=45,pvp=1,q=3}),
+s(129614,18710,{f=5,lvl=45,pvp=1,q=3}),
+s(129616,18712,{f=7,lvl=45,pvp=1,q=3}),
+s(129613,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 o(2744,{coords={{28.1,45.9,1434}},g={
 i(4611,{q=1}),
 i(4655,{q=1})}})}),
@@ -21411,3 +21412,4 @@ i(24291,{crs={18124,18125,18127,19402,19519},q=1,u=17}),
 p(146,{awp=20100,crs={20197},description="Teaches you how to summon the pet Firefly. This is an extremely rare drop.",itemID=29960,petTypeID=3,q=1,spellID=36034,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}})};
+end);

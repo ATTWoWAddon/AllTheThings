@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,crit,faction,flt,h,i,mnt,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
-_.Categories.Character={
+categories.Character={
 h(-12,{
 ach(4784,{awp=30303,r=2,rwp=40001}),
 ach(4785,{awp=30303,r=1,rwp=40001}),
@@ -1100,3 +1101,4 @@ s(133744,23346,{awp=20001,f=26,q=1,rwp=90001}),
 s(117900,2361,{f=24,q=1,rwp=90001}),
 s(116885,37,{awp=40001,f=21,q=1,rwp=30002,u=2})}),
 i(6948,{b=1,q=1})})};
+end);

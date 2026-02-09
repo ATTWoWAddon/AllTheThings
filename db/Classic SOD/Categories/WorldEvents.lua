@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,h,i,mnt,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
-_.Categories.WorldEvents={
+categories.WorldEvents={
 h(-103),
 h(-481,{maps={1454,1455},rwp=20001,u=1610,g={
 h(-210,{r=2,u=1610,g={
@@ -336,3 +337,4 @@ s(164644,21521,{b=1,f=25,lvl=60,q=4,u=1610}),
 s(164643,21520,{b=1,f=25,lvl=60,q=4,u=1610})}}),
 q(8734,{coords={{37.5,47.9,1438}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733},u=1610}),
 q(8286,{coords={{49.5,36.4,1451}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=1610})}})}})};
+end);

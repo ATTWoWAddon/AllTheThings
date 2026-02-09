@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-_.Categories.Instances={
+categories.Instances={
 x(1,{
 h(-12,{awp=30002,g={
 ach(1283),
@@ -20299,3 +20300,4 @@ s(212371,69621,{b=1,f=20,lvl=85,q=4,u=4001}),
 s(212373,69623,{b=1,f=5,lvl=85,q=4,u=4001}),
 s(212377,69627,{b=1,f=8,lvl=85,q=4,u=4001}),
 n(52167,{description="|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'.",u=4001})}})}})}})}})};
+end);

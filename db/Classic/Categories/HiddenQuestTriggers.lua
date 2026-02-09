@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local h,inst,m,q,x=_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateQuest,_.CreateExpansion;
-_.Categories.HiddenQuestTriggers={
+categories.HiddenQuestTriggers={
 x(1,{
 inst(760,{isRaid=1,savedInstanceID=249,g={
 q(76175,{type="hqt"})}}),
@@ -254,3 +255,4 @@ q(47465,{type="hqt"}),
 q(47464,{type="hqt"}),
 q(47466,{type="hqt"}),
 q(28997,{type="hqt"})})};
+end);

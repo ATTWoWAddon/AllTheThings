@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cat,crit,flt,h,i,mnt,n,o,p,prof,q,r,s,sp,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
-_.Categories.Craftables={
+categories.Craftables={
 x(1,{
 prof(171,{
 h(-22,{
@@ -7521,3 +7522,4 @@ i(86623,{b=1,q=2,sym={{"select","itemID",87250,87251,41508,44413,15996,11826,440
 i(97985,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53}),
 p(1320,{b=1,itemID=103670,npcID=73011,q=3,spellID=147124}),
 i(90561)}})}})})}})};
+end);

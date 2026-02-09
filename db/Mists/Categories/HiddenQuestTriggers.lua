@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,cl,faction,h,inst,m,q,settings,x=_.CreateHeader,_.CreateCharacterClass,_.CreateFaction,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateQuest,_.Settings,_.CreateExpansion;
-_.Categories.HiddenQuestTriggers={
+categories.HiddenQuestTriggers={
 x(1,{
 inst(760,{isRaid=1,savedInstanceID=249,g={
 q(76175,{type="hqt"})}}),
@@ -816,3 +817,4 @@ q(47465,{type="hqt"}),
 q(47464,{type="hqt"}),
 q(47466,{type="hqt"}),
 q(28997,{type="hqt"})})};
+end);

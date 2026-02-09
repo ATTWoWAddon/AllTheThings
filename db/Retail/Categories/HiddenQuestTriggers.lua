@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,cl,cu,faction,gb,h,inst,m,n,o,prof,q,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateExpansion;
 local a={{"n",192298},{"SL_COV_KYR"},{"SL_COV_NEC"},{"SL_COV_NFA"},{"SL_COV_VEN"},{1},{10},{1009},{11},{115,898,899,900,901,902},{1173,1174,1176,1177},{12},{1499,1500,1524,1528},{2},{228950},{2375},{3,4,5,6},{3},{4},{419,420,421},{46,81.5,2022},{5},{544,545,546,547,548,549},{6},{629},{66213},{66846},{676},{69900,69901},{7},{8},{9}};
-_.Categories.HiddenQuestTriggers={
+categories.HiddenQuestTriggers={
 x(1,{
 m(13,{awp=11101,g={
 m(210,{petBattleLvl=9,lvl=10,g={
@@ -7184,7 +7185,9 @@ h(-674)}}),
 m(2537,{
 m(2393,{
 h(-45,{
-q(90806,{type="hqt"})})}),
+q(93067,{type="hqt"}),
+q(90806,{type="hqt"}),
+q(94419,{awp=120000,rwp=120100,type="hqt"})})}),
 m(2395,{
 h(-45,{
 q(92848,{type="hqt"}),
@@ -7219,10 +7222,23 @@ q(91054,{an="i:263315",type="hqt"}),
 q(91511,{an="i:264262",type="hqt"}),
 q(91512,{an="i:262906",type="hqt"}),
 q(91456,{an="i:263196",type="hqt"}),
-q(93790,{type="hqt"})}),
+q(93790,{type="hqt"}),
+q(94391,{type="hqt"})}),
 h(-46,{
+q(94725,{type="hqt"}),
+q(94726,{type="hqt"}),
+q(94713,{type="hqt"}),
+q(94717,{type="hqt"}),
+q(94721,{type="hqt"}),
+q(94714,{type="hqt"}),
+q(94720,{type="hqt"}),
+q(94723,{type="hqt"}),
+q(94724,{type="hqt"}),
 q(94716,{type="hqt"}),
 q(94712,{type="hqt"}),
+q(94719,{type="hqt"}),
+q(94718,{type="hqt"}),
+q(94715,{type="hqt"}),
 q(94722,{type="hqt"})}),
 h(-56,{
 q(94550,{type="hqt"})})}}),
@@ -7248,7 +7264,8 @@ m(2437,{maps={2536},g={
 h(-45,{
 q(91965,{repeatable=1,type="hqt"}),
 q(91964,{repeatable=1,type="hqt"}),
-q(94866,{type="hqt"})}),
+q(94866,{type="hqt"}),
+q(94865,{type="hqt"})}),
 h(-46,{
 q(94704,{type="hqt"})})}})}),
 m(2541,{icon=_.asset("Arcantina"),g={
@@ -7547,3 +7564,4 @@ q(47465,{type="hqt"}),
 q(47464,{type="hqt"}),
 q(47466,{type="hqt"}),
 q(28997,{type="hqt"})})};
+end);

@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,h,i,p,s,title,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
-_.Categories.GroupFinder={
+categories.GroupFinder={
 h(-12,{u=33,g={
 ach(4476,{rank=10,u=33}),
 ach(4477,{rank=50,u=33,g={
@@ -64,3 +65,4 @@ s(179806,51961,{b=1,f=5,q=3,u=33})}})}}),
 x(5,{u=33,g={
 i(69903,{awp=40100,b=2,q=7,rwp=60100,sym={{"select","itemID",44984,34535,10360,8491,54436,8485,10394,46398,8496,8486,10392,10822,48114,44970,44973,67282,44974,44982,29960,64403,43698,29953,8492,48116,48118,45002,44980,48120,8487,35504,44721,48124,48126,8495,45606,69992,8490,8488,44965,8499,69991,44971,8489,13335,43953,44151,44707,32768,43962,35513}},u=33}),
 i(90818,{awp=50004,b=2,q=7,rwp=60100,sym={{"select","itemID",69903},{"pop"}},u=33})}})};
+end);

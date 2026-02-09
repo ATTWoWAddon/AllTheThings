@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,crit,en,flt,h,mnt,n,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
 local a={{"i",190921},{"i",202167},{"i",202170},{"i",202178},{"i",202179},{"i",204888},{1,2,4,5,6,7,10,11,13},{1,2,6},{2339},{3,7,13},{4,10,11,12},{47.57,52.76,2339},{47.79,52.55,2339},{48.07,52.16,2339},{48.16,51.99,2339},{5,8,9},{50},{6,28},{60},{70},{84,85}};
-_.Categories.TradingPost={
+categories.TradingPost={
 h(-12,{awp=100005,u=7,g={
 ach(17334,{u=7,g={
 en(203431,{questID=78712,spellID=428081,tmogSetID=3305,u=7,g={
@@ -2839,3 +2840,4 @@ s(219716,223190,{cost={{"c",2032,75}},f=27,u=2}),
 s(169082,190873,{cost={{"c",2032,150}},f=24,u=2}),
 s(218527,220357,{cost={{"c",2032,150}},f=31,lvl=27,u=2}),
 s(194005,211158,{cost={{"c",2032,150}},f=8,u=2})}})}})}})}})}})};
+end);

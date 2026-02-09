@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cat,flt,h,i,prof,q,qo,r,x=_.CreateAchievement,_.CreateCategory,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateExpansion;
-_.Categories.Professions={
+categories.Professions={
 h(-12,{
 x(1,{
 ach(732),
@@ -695,3 +696,4 @@ r(26801,{requireSkill=197,u=17})}}),
 q(10832,{altQuests={10831,10833},coords={{66.6,68.4,1955}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={1953},qgs={22213},requireSkill=197,u=17,g={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=17}),
 r(26797,{requireSkill=197,u=17})}})}})}})}})};
+end);

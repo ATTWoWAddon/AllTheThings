@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local cl,faction,h,i,n,q,qo,r,s=_.CreateCharacterClass,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
-_.Categories.SeasonOfDiscovery={
+categories.SeasonOfDiscovery={
 h(-632,{rwp=20001,u=1605,g={
 h(-31,{u=1605,g={
 faction(2586,{maps={1453,1455,1457},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<3000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Crafted]",450,3000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Gathered]",300,3000);tinsert(tooltipInfo,{left="PROTIP: Save higher iLvl Supply Shipments until later!",r=1,g=0.1,b=0.1,wrap=true});elseif reputation<9000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 2)]",800,9000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 1)]",650,9000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Gathered]",500,9000);elseif reputation<21000 and _.GameBuildVersion>=11501 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 4)]",1000,21000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 3)]",850,21000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Gathered]",700,21000);elseif reputation<42000 and _.GameBuildVersion>=11502 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 6)]",1850,42000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 5)]",1300,42000);addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Gathered]",950,42000);end	end	end,OnUpdate=function(t)t.minReputation={t.factionID,(_.GameBuildVersion==11500 and 9000)or(_.GameBuildVersion==11501 and 21000)or 42000;};end,r=2,u=1605}),
@@ -1477,3 +1478,4 @@ i(220924,{b=1,cost={{"i",6037,12}},q=2,u=1607,g={
 i(221008,{b=1,q=2,u=1607})}}),
 i(220918,{b=1,cost={{"i",16766,16}},q=2,u=1607,g={
 i(221008,{b=1,q=2,u=1607})}})}})}})))}})};
+end);

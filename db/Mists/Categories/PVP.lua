@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,crit,cu,faction,flt,h,i,m,mnt,n,pvprank,q,qo,s,settings,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateExpansion;
-_.Categories.PVP={
+categories.PVP={
 h(-12,{pvp=1,g={
 ach(238,{pvp=1,u=12}),
 ach(513,{pvp=1,u=12}),
@@ -9761,3 +9762,4 @@ h(-89,{pvp=1,rwp=60002,u=54,g={
 s(282909,103635,{b=1,f=3,pvp=1,q=4,u=54})}}),
 flt(9,{pvp=1,rwp=60002,u=54,g={
 s(282910,103636,{b=1,f=9,pvp=1,q=4,u=54})}})}})}})}})};
+end);

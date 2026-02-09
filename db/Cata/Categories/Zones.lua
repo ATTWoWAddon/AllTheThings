@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cat,cl,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy;
-_.Categories.Zones={
+categories.Zones={
 h(-12,{
 ach(973,{awp=30002}),
 ach(974,{awp=30002}),
@@ -27265,13 +27266,6 @@ crit(5935,{achID=1676,awp=30002,id=1,r=2}),
 crit(5935,{achID=1677,id=1,r=1,rwp=50004})}}),
 ach(4995,{awp=40003,g={
 crit(1277,{achID=42,awp=30002,id=1})}})}),
-o(179697,{coords={{46.6,26.1,210}},description="WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",pvp=1,g={
-ach(389,{pvp=1}),
-i(18706,{b=1,f=53,lvl=35,pvp=1,q=2}),
-s(129615,18711,{f=6,lvl=45,pvp=1,q=3}),
-s(129614,18710,{f=5,lvl=45,pvp=1,q=3}),
-s(129616,18712,{f=7,lvl=45,pvp=1,q=3}),
-s(129613,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 h(-30,{
 exp(35,{awp=40003,g={
 crit(14050,{achID=4995,id=1})}}),
@@ -27703,6 +27697,14 @@ n(1552,{awp=70305,coords={{67.8,25.4,210}},description="Found inside Crystalvein
 s(117408,1604,{f=26,lvl=40,q=2,rwp=40003,u=2}),
 s(119633,4478,{f=6,lvl=40,q=2,rwp=40003,u=2})}}),
 n(14492,{coords={{53.2,27.6,210}}})}),
+h(-56,{pvp=1,g={
+o(179697,{coords={{46.6,26.1,210}},description="WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",pvp=1,g={
+ach(389,{pvp=1}),
+i(18706,{b=1,f=53,lvl=35,pvp=1,q=2}),
+s(129615,18711,{f=6,lvl=45,pvp=1,q=3}),
+s(129614,18710,{f=5,lvl=45,pvp=1,q=3}),
+s(129616,18712,{f=7,lvl=45,pvp=1,q=3}),
+s(129613,18709,{f=4,lvl=45,pvp=1,q=3})}})}}),
 h(-58,{
 n(2846,{coords={{42.8,74.1,210}},g={
 r(6705,{isLimited=1,itemID=5789,learnedAt=190,q=2,requireSkill=165}),
@@ -47708,3 +47710,4 @@ s(202321,49245,{f=4,q=1}),
 s(202322,49246,{f=4,q=1}),
 s(202319,49243,{f=4,q=1,r=1}),
 s(202317,49241,{f=4,q=1})}})})}})}})};
+end);

@@ -95,6 +95,10 @@ app:CreateWindow("Tradeskills", {
 			['back'] = 1,
 			['g'] = { },
 		});
+		local ProfessionsCategory;
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			ProfessionsCategory = categories.Professions;
+		end);
 		self:SetData(self.header);
 		self.previousCraftSkillID = 0;
 		self.previousTradeSkillID = 0;
@@ -280,12 +284,12 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				-- Open the Tradeskill list for this Profession
-				if app.Categories.Professions and (craftSkillID ~= 0 or tradeSkillID ~= 0)
+				if ProfessionsCategory and (craftSkillID ~= 0 or tradeSkillID ~= 0)
 					and (craftSkillID ~= self.previousCraftSkillID or tradeSkillID ~= self.previousTradeSkillID) then
 					self.previousCraftSkillID = craftSkillID;
 					self.previousTradeSkillID = tradeSkillID;
 					local g = {};
-					for i,group in ipairs(app.Categories.Professions) do
+					for i,group in ipairs(ProfessionsCategory) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
 							local cache = self.cache[group.spellID];
 							if not cache then

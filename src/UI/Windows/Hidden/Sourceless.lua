@@ -22,9 +22,11 @@ app:CreateWindow("Sourceless", {
 			_missing = true,
 			visible = true,
 			_nyi = true,
-			g = app.Categories.Sourceless,
 		})));
-		self:AssignChildren();
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			self.data.g = categories.Sourceless;
+			self:AssignChildren();
+		end);
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

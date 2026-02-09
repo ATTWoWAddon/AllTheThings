@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,x=_.CreateAchievement,_.CreateExpansion;
-_.Categories.HiddenAchievementTriggers={
+categories.HiddenAchievementTriggers={
 x(1,{
 ach(15329),
 ach(15578),
@@ -30,3 +31,4 @@ ach(41010),
 ach(41011),
 ach(42133),
 ach(42186)})};
+end);

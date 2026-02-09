@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,flt,h,i,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
-_.Categories.Craftables={
+categories.Craftables={
 x(1,{
 prof(171,{
 h(-22,{
@@ -1580,3 +1581,4 @@ i(14048,{q=1}),
 i(4305,{q=1}),
 i(2997,{q=1}),
 i(14342,{coords={{60,72,1440},{21,53,1453},{43.1,80.27,1457}},description="Coordinates are for select Moonwells around the world.",q=1})})})})};
+end);

@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,h,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"n",221427},{"n",225204},{"n",234168},{"n",236626},{"n",244752},{"n",244753},{"o",455716},{"s",453139},{"s",464820},{206017},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484,2502,2503,2505,2510,2525,2528,2535,2545,2547,16596},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},{2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},{2249,2250,2277,2310,2347,2420},{2249},{2250},{2251},{225401},{2259},{2269},{2277},{2299},{2301},{2302},{2310},{2312},{2347},{235490},{2396},{2420},{242381},{245191},{245938},{249592},{2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},{2570,12},{47.4,44.4,2339},{48,43.4,2339},{52.2,12.2,2301},{52.5,78.3,2393},{52.5,78.9,2393},{52.8,77.9,2393},{53.1,17.2,2259},{55.3,55.9,2248},{68},{70},{85242},{90969}};
-_.Categories.Delves={
+categories.Delves={
 x(11,{
 h(-383,{
 h(-12,{awp=110002,rwp=110100,u=2,g={
@@ -2033,7 +2034,60 @@ flt(7),
 flt(53)}),
 h(-101)}}),
 h(-31),
-h(-35),
+h(-35,{
+q(92087,{type="hqt"}),
+q(92088,{type="hqt"}),
+q(92089,{type="hqt"}),
+q(92090,{type="hqt"}),
+q(92091,{type="hqt"}),
+q(92092,{type="hqt"}),
+q(92093,{type="hqt"}),
+q(92756,{type="hqt"}),
+q(92759,{type="hqt"}),
+q(92760,{type="hqt"}),
+q(92761,{type="hqt"}),
+q(92762,{type="hqt"}),
+q(92763,{type="hqt"}),
+q(92764,{type="hqt"}),
+q(92765,{type="hqt"}),
+q(92766,{type="hqt"}),
+q(92767,{type="hqt"}),
+q(92769,{type="hqt"}),
+q(92770,{type="hqt"}),
+q(92771,{type="hqt"}),
+q(92772,{type="hqt"}),
+q(92773,{type="hqt"}),
+q(92774,{type="hqt"}),
+q(92775,{type="hqt"}),
+q(92776,{type="hqt"}),
+q(92777,{type="hqt"}),
+q(92779,{type="hqt"}),
+q(92780,{type="hqt"}),
+q(92781,{type="hqt"}),
+q(92782,{type="hqt"}),
+q(92783,{type="hqt"}),
+q(92784,{type="hqt"}),
+q(92785,{type="hqt"}),
+q(92786,{type="hqt"}),
+q(92787,{type="hqt"}),
+q(92789,{type="hqt"}),
+q(92790,{type="hqt"}),
+q(92791,{type="hqt"}),
+q(92792,{type="hqt"}),
+q(92793,{type="hqt"}),
+q(92794,{type="hqt"}),
+q(92795,{type="hqt"}),
+q(92796,{type="hqt"}),
+q(92797,{type="hqt"}),
+q(92799,{type="hqt"}),
+q(92800,{type="hqt"}),
+q(92801,{type="hqt"}),
+q(92803,{type="hqt"}),
+q(92804,{type="hqt"}),
+q(92805,{type="hqt"}),
+q(92806,{type="hqt"}),
+q(92807,{type="hqt"}),
+q(92808,{type="hqt"})}),
 h(-45,{
 q(93784,{isWeekly=1,providers={{"i",262586}}})}),
 h(-46),
@@ -2079,6 +2133,11 @@ crit(111250,{achID=61863,id=3,questID=94014,u=1}),
 crit(111280,{achID=61901,id=1})}),
 ach(61729,{
 crit(111026,{achID=61741,id=6})})}}),
+h(-45,{
+q(93409,{coords={{24.9,43.3,2535}},qgs={254726}})}),
+h(-56,{
+o(618270,{coords={{48.3,50.5,2535}},g={
+toy(252265)}})}),
 h(-47,{
 h(-679,{
 de(18485,{itemID=267009,spellID=1278999}),
@@ -2101,6 +2160,7 @@ o(618285,{coords={{81.3,32,2547}},questID=94029,g={
 crit(111257,{achID=61894,id=2})}})}}),
 h(-47,{
 h(-679,{
+de(15568,{itemID=264330,spellID=1271717}),
 de(18485,{itemID=267009,spellID=1278999}),
 de(15493,{itemID=264258,spellID=1271503}),
 de(14828,{itemID=263042,spellID=1269704})}),
@@ -2159,7 +2219,8 @@ crit(111278,{achID=61899,id=2})}})}}),
 h(-47,{
 h(-679,{
 de(15568,{itemID=264330,spellID=1271717})}),
-flt(50)})}}),
+flt(2,{
+s(303517,264851,{f=2})})})}}),
 m(2525,{
 h(-12,{awp=120000,g={
 ach(61895,{
@@ -2194,7 +2255,8 @@ h(-47,{
 h(-679,{
 de(15582,{itemID=264342,spellID=1271731}),
 de(15064,{itemID=263233,spellID=1270134})}),
-flt(50)})}}),
+flt(2,{
+s(302599,262970,{f=1})})})}}),
 m(2510,{
 h(-12,{awp=120000,g={
 ach(61897,{
@@ -2343,6 +2405,7 @@ s(300821,249654,{cost={{"c",3028,1}},f=7}),
 s(300825,249658,{cost={{"c",3028,1}},f=7}),
 s(300826,249659,{cost={{"c",3028,1}},f=7})}),
 flt(53,{
+i(251790,{cost={{"c",3028,1}},f=53,spellID=1253118}),
 i(251792,{cost={{"c",3028,1}},f=53,spellID=1253120}),
 i(251791,{cost={{"c",3028,1}},f=53,spellID=1253119}),
 i(251787,{cost={{"c",3028,1}},f=53,spellID=1253115})})}),
@@ -2418,3 +2481,4 @@ mnt(1268924,{cost={{"c",3316,10}},itemID=262500})}),
 flt(102,{
 toy(265100,{cost={{"c",3316,10}}}),
 toy(264414,{cost={{"c",3316,10}}})})}})}})})})};
+end);

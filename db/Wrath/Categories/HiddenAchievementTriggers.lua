@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,x=_.CreateAchievement,_.CreateExpansion;
-_.Categories.HiddenAchievementTriggers={
+categories.HiddenAchievementTriggers={
 x(1,{
 ach(15330,{u=1604}),
 ach(15332,{u=1604}),
@@ -453,3 +454,4 @@ ach(18375),
 ach(18376),
 ach(40821),
 ach(40841)}})};
+end);

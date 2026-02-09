@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local flt,prof,r,x=_.CreateFilter,_.CreateProfession,_.CreateRecipe,_.CreateExpansion;
-_.Categories.Unsorted={
+categories.Unsorted={
 x(1,{
 flt(200,{
 prof(171,{
@@ -20,3 +21,4 @@ flt(200,{
 prof(165,{
 r(1226689,{itemID=238925,lvl={60},requireSkill=165}),
 r(1226690,{itemID=238926,lvl={60},requireSkill=165})})})})};
+end);

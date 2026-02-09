@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,crit,h,i,n,p,q,r,s,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy;
 local a={{116781},{119390},{147070},{147641},{147645},{150987},{161782},{33.1,23.1,35},{38.8,68.2,10},{41.6,71.2,52},{50.3,46.9,1161},{54185},{56.3,30.8,1165},{58457},{59.2,39.6,627}};
-_.Categories.PetBattles={
+categories.PetBattles={
 h(-12,{pb=1,g={
 h(-303,{awp=50004,pb=1,pvp=1,g={
 ach(12290,{awp=70305,pb=1,pvp=1,g={
@@ -341,3 +342,4 @@ i(116416,{f=55,spellID=171517}),
 i(116422,{f=55,spellID=171521}),
 i(116417,{f=55,spellID=171523}),
 i(116423,{f=55,spellID=171519})})}})};
+end);

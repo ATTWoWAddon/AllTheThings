@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,crit,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
-_.Categories.Promotions={
+categories.Promotions={
 h(-520,{
 ach(411,{awp=30002,providers={{"i",20371}},u=2}),
 p(107,{awp=11101,b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
@@ -204,3 +205,4 @@ i(23714,{awp=20203,b=1,f=53,q=4,u=2}),
 toy(49703,{awp=30202,b=1,q=4,u=2}),
 toy(32566,{awp=20100,b=1,q=3,u=2}),
 toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}})};
+end);

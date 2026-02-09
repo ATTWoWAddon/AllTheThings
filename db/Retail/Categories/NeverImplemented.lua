@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{1,2,3,4,5,6,7,8,9,10,11,12},{1,2,4,5,6,7,8,9,10,11,12},{1,2,6},{1,2},{1,3,4,7,11,22,24,25,29,30,32,34,37,52,85},{1,3,4,7,11,22,25,29,30,32,34,37,52,85},{1,3,7,10},{1,5,8,9},{1},{10,11},{10},{11},{12},{1204,9000},{13},{151763},{154208},{2,5,6,8,9,10,26,27,28,31,35,36,70,84},{2,5,9},{2},{3,7,13},{3},{35},{37.7,55.3,1355},{4,10,11,12},{4,10,11},{4,6,8,11},{4},{5,8,9},{5},{50.5,66.2,1355},{52,70},{6},{7},{8,10,12,13},{8},{9}};
-_.Categories.NeverImplemented={
+categories.NeverImplemented={
 h(-12,{
 x(1,{
 ach(15329),
@@ -51100,3 +51101,4 @@ s(167490,189556,{b=1,f=24,lvl=58}),
 s(167491,189557,{b=1,f=24,lvl=58}),
 s(167492,189558,{b=1,f=24,lvl=58}),
 s(167493,189559,{b=1,f=24,lvl=58})})})})})};
+end);

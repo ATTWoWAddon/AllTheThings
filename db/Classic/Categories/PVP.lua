@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,crit,exp,faction,h,i,m,mnt,n,pvprank,q,qo,s,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
-_.Categories.PVP={
+categories.PVP={
 h(-12,{pvp=1,g={
 ach(238,{pvp=1,u=12}),
 ach(513,{pvp=1,u=12}),
@@ -1009,3 +1010,4 @@ q(8371,{coords={{39.4,82.2,1416},{45.6,45.8,1417},{61.8,83.8,1440},{79.4,18,1453
 q(8385,{coords={{39.4,82.2,1416},{45.6,45.8,1417},{61.8,83.8,1440},{79.4,18,1453},{69.8,90,1455},{57.8,34.6,1457}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,pvp=1,qgs={15351},r=2,repeatable=1,rwp=30303,sourceQuests={8371}}),
 q(8367,{coords={{46.7,8.4,1413},{62.6,59.1,1416},{73.5,29.7,1417},{79.8,30.4,1454},{56,76.7,1456},{60.7,87.7,1458}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,pvp=1,qgs={15350},r=1,rwp=30303}),
 q(8388,{coords={{46.7,8.4,1413},{62.6,59.1,1416},{73.5,29.7,1417},{79.8,30.4,1454},{56,76.7,1456},{60.7,87.7,1458}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,pvp=1,qgs={15350},r=1,repeatable=1,rwp=30303,sourceQuests={8367}})}})}})};
+end);

@@ -27,6 +27,9 @@ app.AddEventHandler = function(eventName, handler, forceStart)
 	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
+app.RemoveAllEventHandlers = function(eventName)
+	wipe(EventHandlers[eventName]);
+end
 app.RemoveEventHandler = function(handler)
 	if type(handler) ~= "function" then
 		app.print("RemoveEventHandler was provided a non-function",handler)
@@ -117,6 +120,8 @@ local ImmediateEvents = {
 	OnReady = true,
 	OnRefreshSettings = true,
 	OnNewPopoutGroup = true,
+	OnGetDataCache = true,
+	OnDataCached = true,
 	["OnAddExtraMainCategories"] = true,
 	["Fill.OnAddFiller"] = true,
 	["Fill.DefinedSettings"] = true,

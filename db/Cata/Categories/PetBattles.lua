@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,h,p=_.CreateAchievement,_.CreateCustomHeader,_.CreateSpecies;
-_.Categories.PetBattles={
+categories.PetBattles={
 h(-12,{pb=1,g={
 ach(5875,{awp=40200,pb=1,g={
 p(255,{b=1,itemID=54810,npcID=40624,pb=1,petTypeID=2,q=3,spellID=75613})}}),
@@ -16,3 +17,4 @@ p(160,{b=1,itemID=40653,npcID=23274,pb=1,petTypeID=5,q=3,spellID=40990,u=17})}})
 ach(1248,{pb=1}),
 ach(15,{pb=1}),
 ach(1017,{pb=1})}})};
+end);

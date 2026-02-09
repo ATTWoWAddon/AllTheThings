@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
-_.Categories.Promotions={
+categories.Promotions={
 h(-514,{awp=90005,g={
 mnt(348162,{description="Granted to players by logging in on character of at least level 20.",itemID=258430,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
@@ -49,13 +50,13 @@ toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight S
 mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=45,rwp=110200,u=2})}}),
 h(-516,{awp=110000,g={
 h(-518,{awp=110007,rwp=110105,u=2,g={
-mnt(367620,{description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
-mnt(153489,{b=1,description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=107951,lvl=10,u=2}),
-p(4690,{description="Aquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
+mnt(367620,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
+mnt(153489,{b=1,description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=107951,lvl=10,u=2}),
+p(4690,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 h(-517,{awp=110002,u=3,g={
-mnt(163025,{b=1,description="Aquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=112327,lvl=10,u=3}),
-p(4595,{b=1,description="Aquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
-mnt(453255,{description="Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Editon Collection.",itemID=224574,lvl=10,u=3})}}),
+mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
+p(4595,{b=1,description="Acquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224576,npcID=225354,spellID=453266,u=3}),
+mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -88,8 +89,8 @@ p(4617,{awp=110005,b=1,description="Available to redeem for 400 points at Dorito
 mnt(428067,{awp=110005,b=1,description="Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=211087,lvl=45,rwp=110007,u=2}),
 p(297,{awp=110005,b=1,itemID=68385,npcID=51600,rwp=110007,spellID=95787,u=2}),
 p(4629,{awp=110005,description="Available with the purchase of an Ice Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229366,npcID=198987,spellID=464798,u=3}),
-mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/Youtube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=45,u=2}),
-mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/Youtube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=45,u=2}),
+mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=45,u=2}),
+mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=45,u=2}),
 p(4630,{awp=110005,description="Available with the purchase of a Murloc Thrall plushie from the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229368,npcID=230834,spellID=464808,u=3}),
 mnt(139595,{awp=110007,b=1,itemID=95341,lvl=10,rwp=110105,u=2}),
 s(230822,233207,{awp=110007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110007,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -128,9 +129,38 @@ s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
 p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
 s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2}),
-mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3}),
-de(15151,{awp=120000,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369})}}),
-h(-669,{awp=120000}),
+mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3})}}),
+h(-669,{awp=120000,g={
+de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369}),
+i(264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",rwp=120001}),
+h(-708,{rwp=120000,u=2,g={
+mnt(367620,{itemID=190539,lvl=10,u=2}),
+mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
+p(4690,{itemID=232519,npcID=233481,spellID=470914,u=2})}}),
+ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,g={
+de(14467,{itemID=260785,sourceAchievements={62387},spellID=1266894})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(235378,{b=1,description="The first lottery draw costs ¥1, and the price increases progressively with each subsequent draw. A total of 13 draws costing ¥1,271 will allow you to obtain all prizes. ",rwp=120100,spellID=1216746,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4902,{itemID=253404})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(251542)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(253244)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(253257)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(253296)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(253402)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+en(257547)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(251542)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269009)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(255973)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(42776,{itemID=49283,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(46199,{itemID=49286,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(46197,{itemID=49285,lvl=10}))}}))}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -509,9 +539,9 @@ h(-531,{awp=50402,description="These rewards are available to anyone who purchas
 ach(8795,{providers={{"i",106256}},u=3}),
 p(1365,{itemID=106256,npcID=74413,spellID=149810,u=3,g={
 crit(34640,{achID=8795,id=3,u=3})}})}}),
-h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",u=3,g={
-mnt(369476,{b=1,itemID=191114,u=3}),
-ach(15640,{providers={{"i",191114}},u=3})}}),
+h(-532,{awp=100002,description="These rewards are available to anyone who purchases Diablo 4 Standard Edition.",rwp=110007,u=2,g={
+mnt(369476,{b=1,itemID=191114,u=2}),
+ach(15640,{providers={{"i",191114}},u=2})}}),
 h(-703,{awp=110207,description="These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",u=3,g={
 i(265804,{spellID=1277191,u=3,g={
 de(12247,{itemID=259055,spellID=1264380,u=3}),
@@ -800,7 +830,8 @@ s(187933,206276,{f=24,u=2}),
 s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
 s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,rwp=110005,u=2}),
-p(4615,{description="In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",itemID=228758,npcID=229846,spellID=463079,u=2})}}),
+p(4615,{description="In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",itemID=228758,npcID=229846,spellID=463079,u=2}),
+s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2})}}),
 h(-542,{awp=50300,u=3,g={
 ach(8345,{providers={{"s",142073}},u=3}),
 mnt(142073,{b=1,itemID=98618,lvl=10,u=3})}}),
@@ -1556,3 +1587,4 @@ o(405587,{coords={a[22]},questID=75041,type="AsSubGenericObject"}),
 o(392032,{coords={{57.4,37.7,2024}},questID=75037,type="AsSubGenericObject"}),
 o(405584,{coords={a[17]},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={{57,66.7,2025}},questID=74852,type="AsSubGenericObject"})}})})}})};
+end);

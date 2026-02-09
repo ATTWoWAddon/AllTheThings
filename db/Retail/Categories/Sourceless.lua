@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
-_.Categories.Sourceless={
+categories.Sourceless={
 h(-88,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(4,{awp=40003,g={
 x(4.0003,{
@@ -418,3 +419,4 @@ x(11,{awp=110002,g={
 x(11.0002,{
 q(84255),
 i(228580,{b=1,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",spellID=456550})})}})})};
+end);

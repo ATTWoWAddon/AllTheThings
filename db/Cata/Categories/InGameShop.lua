@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local flt,i,mnt,p=_.CreateFilter,_.CreateItem,_.CreateMount,_.CreateSpecies;
-_.Categories.InGameShop={
+categories.InGameShop={
 flt(101,{u=3,g={
 p(297,{b=1,itemID=68385,npcID=51600,petTypeID=7,q=3,spellID=95787,u=1}),
 p(347,{b=1,itemID=78916,npcID=58163,petTypeID=2,q=3,spellID=110029,u=1}),
@@ -27,3 +28,4 @@ mnt(466983,{awp=40401,rwp=40402,u=2}),
 mnt(466980,{awp=40401,rwp=40402,u=2}),
 mnt(466977,{awp=40401,rwp=40402,u=2}),
 mnt(98727,{awp=40100,b=1,itemID=69846,lvl=20,q=4,rwp=100002,u=2})}})};
+end);

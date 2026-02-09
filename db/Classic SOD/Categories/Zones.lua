@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cl,crit,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,toy=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy;
-_.Categories.Zones={
+categories.Zones={
 h(-12),
 m(1414,{icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},["zone-text-continent"]=1,g={
 h(-12,{
@@ -11914,13 +11915,6 @@ ach(871,{sourceQuests={4621},u=11}),
 ach(781,{
 crit(1293,{achID=42,id=1})}),
 ach(940)}),
-o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389,{pvp=1}),
-i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
-s(163646,18711,{f=6,lvl=45,pvp=1,q=3}),
-s(163645,18710,{f=5,lvl=45,pvp=1,q=3}),
-s(163647,18712,{f=7,lvl=45,pvp=1,q=3}),
-s(163644,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 h(-30,{
 exp(123,{
 crit(1217,{achID=781,id=1})}),
@@ -12326,6 +12320,13 @@ i(221365,{b=1,cost={{"i",221364,100}},pvp=1,q=3,u=1607}),
 i(221366,{b=1,cost={{"i",221365,100}},pvp=1,q=4,u=1607}),
 s(198740,216884,{b=1,crs={218690},description="This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",f=26,lvl=125,pvp=1,q=4,u=1606})}}),
 h(-56,{
+o(179697,{coords={{30.5,47.8,1434}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
+ach(389,{pvp=1}),
+i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
+s(163646,18711,{f=6,lvl=45,pvp=1,q=3}),
+s(163645,18710,{f=5,lvl=45,pvp=1,q=3}),
+s(163647,18712,{f=7,lvl=45,pvp=1,q=3}),
+s(163644,18709,{f=4,lvl=45,pvp=1,q=3})}}),
 o(2744,{coords={{28.1,45.9,1434}},g={
 i(4611,{q=1}),
 i(4655,{q=1})}})}),
@@ -14199,3 +14200,4 @@ s(157125,3072,{awp=100107,coords={{63.8,33.6,1437},{66.4,40.4,1437},{71.8,47.6,1
 s(158411,6315,{awp=100107,coords={{48.8,17.6,1437},{48.9,17.6,1437}},crs={6523},f=33,lvl=22,q=2,rwp=40003}),
 p(58,{crs={1042,1044,1069},itemID=8499,petTypeID=2,q=1,spellID=10697}),
 s(156103,756,{awp=100107,coords={{48,18.6,1437},{61.2,25.4,1437}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}})};
+end);

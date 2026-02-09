@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,cat,cl,flt,h,i,o,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
-_.Categories.WorldDrops={
+categories.WorldDrops={
 x(1,{
 flt(3,{
 s(123297,9938,{f=3,lvl=43,q=2}),
@@ -7082,3 +7083,4 @@ toy(36862,{description="Can be pickpocketed from Northrend humanoids.",q=1})}})}
 x(4,{awp=40001,g={
 flt(102,{
 toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})};
+end);

@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local crit,flt,gs,h,i,mnt,n,p,r,s,toy=_.CreateAchievementCriteria,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
-_.Categories.BlackMarket={
+categories.BlackMarket={
 h(-554,{awp=50004,maps={433},u=3,g={
 h(-88,{u=3,g={
 s(272086,86993,{description="Only available on the BMAH for a limited time!",f=4,lvl=90,q=4,rwp=60002,u=3}),
@@ -220,3 +221,4 @@ i(102137,{awp=50400,b=1,q=4,rwp=60002,skipFill=1,sym={{"select","headerID",-554}
 i(97565,{awp=50300,b=1,q=4,rwp=50400,u=2}),
 h(-58,{u=3,g={
 n(62943,{coords={{63.8,75.8,433}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=3})}})}})};
+end);

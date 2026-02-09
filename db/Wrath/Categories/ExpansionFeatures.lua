@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,crit,cu,faction,fp,h,heir,i,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-_.Categories.ExpansionFeatures={
+categories.ExpansionFeatures={
 x(2,{awp=20100,g={
 ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
@@ -1363,3 +1364,4 @@ s(176407,47055,{b=1,cost={{"c",2711,30}},f=5,lvl=80,q=4,r=2,u=33}),
 s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,lvl=80,q=4,r=2,u=33}),
 s(176420,47073,{b=1,cost={{"c",2711,30}},f=6,lvl=80,q=4,r=2,u=33}),
 s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,lvl=80,q=4,r=2,u=33})}})}})}})})};
+end);

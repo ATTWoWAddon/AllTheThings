@@ -430,18 +430,19 @@ namespace ATT
         {
             // Export the Category
             var builder = new Exporter(name);
-            builder.Append("_.Categories.").Append(name).Append("={");
+            builder.Append("categories.").Append(name).Append("={");
             foreach (var group in category)
             {
                 ExportCompressedLua(builder, group);
                 builder.Append(",");
             }
-            builder.Remove(builder.Length - 1, 1).AppendLine("};");
+            builder.Remove(builder.Length - 1, 1).AppendLine("};").AppendLine("end);");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
-                .AppendLine("local appName, _ = ...;"));
+                .AppendLine("local appName, _ = ...;")
+                .AppendLine("_.AddEventHandler(\"OnGetDataCache\", function(categories)"));
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }

@@ -17,10 +17,12 @@ app:CreateWindow("Never Implemented", {
 			_nosearch = true,
 			visible = true,
 			_nyi = true,
-			g = app.Categories.NeverImplemented,
 		})));
-		app.AssignFieldValue(self.data, "u", 1);
-		self:AssignChildren();
+		self:AddEventHandler("OnDataCached", function(self, categories)
+			self.data.g = categories.NeverImplemented;
+			app.AssignFieldValue(self.data, "u", 1);
+			self:AssignChildren();
+		end);
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.

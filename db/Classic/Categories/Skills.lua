@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local cl,h,i=_.CreateCharacterClass,_.CreateCustomHeader,_.CreateItem;
-_.Categories.Skills={
+categories.Skills={
 cl(9,{
 h(-25,{c={9},crs={5520,5749,5750,5753,5815,6027,6328,6373,6374,6376,6382,12776,12807},maps={1453,1454,1455,1458},rwp=30002,g={
 i(16321,{b=1,c={9},f=200,lvl=4,q=1,rank=1,spellID=6307}),
@@ -64,3 +65,4 @@ i(16347,{b=1,c={9},f=200,lvl=30,q=1,rank=3,spellID=7810}),
 i(16348,{b=1,c={9},f=200,lvl=40,q=1,rank=4,spellID=7811}),
 i(16349,{b=1,c={9},f=200,lvl=50,q=1,rank=5,spellID=11774}),
 i(16350,{b=1,c={9},f=200,lvl=60,q=1,rank=6,spellID=11775})}})})};
+end);

@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ah,cl,cu,faction,gb,h,inst,m,n,o,prof,q,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateExpansion;
 local a={{"n",192298},{"SL_COV_KYR"},{"SL_COV_NEC"},{"SL_COV_NFA"},{"SL_COV_VEN"},{1},{10},{1009},{11},{115,898,899,900,901,902},{1173,1174,1176,1177},{12},{1499,1500,1524,1528},{2},{228950},{2375},{3,4,5,6},{3},{4},{419,420,421},{46,81.5,2022},{5},{544,545,546,547,548,549},{6},{629},{66213},{66846},{676},{69900,69901},{7},{8},{9}};
-_.Categories.HiddenQuestTriggers={
+categories.HiddenQuestTriggers={
 x(1,{
 m(13,{awp=11101,g={
 m(210,{petBattleLvl=9,lvl=10,g={
@@ -800,7 +801,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -7563,3 +7564,4 @@ q(47465,{type="hqt"}),
 q(47464,{type="hqt"}),
 q(47466,{type="hqt"}),
 q(28997,{type="hqt"})})};
+end);

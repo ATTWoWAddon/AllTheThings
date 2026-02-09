@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cat,crit,cs,d,faction,flt,h,heir,i,inst,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-_.Categories.Holidays={
+categories.Holidays={
 h(-12,{awp=30002,g={
 ach(2144,{r=2,sym={{"meta_achievement",913,1693,2798,1793,1038,1683,1656,1691}},u=30,g={
 mnt(60024,{b=1,itemID=44177,lvl=70,q=4,u=30})}}),
@@ -2803,3 +2804,4 @@ p(202,{b=1,e=242,itemID=44819,petTypeID=8,q=1,spellID=61855,u=1})}}),
 h(-594,{e=242,u=1,g={
 ach(4400,{e=242,u=1}),
 p(243,{b=1,e=242,itemID=49362,petTypeID=2,q=1,spellID=69002,u=1})}})}})};
+end);

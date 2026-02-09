@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,faction,h,i,mnt,n,prof,q,qo,s,x=_.CreateAchievement,_.CreateHeader,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
-_.Categories.ExpansionFeatures={
+categories.ExpansionFeatures={
 x(2,{awp=20100,g={
 ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
@@ -117,3 +118,4 @@ i(32506,{b=1,crs={23169,23264,23269,23285,23286,23324,23326,23501},providers={{"
 i(32621,{b=1,coords={{74.6,86.5,1948}},crs={23267},lvl=70,minReputation={1015,0},q=1,u=1901}),
 i(32724,{b=1,coords={{69.4,86,1948}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
 i(32726,{b=1,lvl=70,q=1,u=1901})}})}})}})}})};
+end);

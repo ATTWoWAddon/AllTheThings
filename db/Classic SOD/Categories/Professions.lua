@@ -1,8 +1,9 @@
 ﻿if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
-_.Categories.Professions={
+categories.Professions={
 h(-12,{
 x(1,{
 ach(732),
@@ -430,3 +431,4 @@ q(90116,{coords={{94.6,83.6,1423}},qgs={240631},requireSkill=197,u=1612,g={
 r(1227723,{itemID=239149,learnedAt=260,requireSkill=197,u=1612})}}),
 q(90120,{coords={{94.6,83.6,1423}},qgs={240631},requireSkill=197,u=1612,g={
 r(1227724,{itemID=239150,learnedAt=300,requireSkill=197,u=1612})}})}})}})};
+end);

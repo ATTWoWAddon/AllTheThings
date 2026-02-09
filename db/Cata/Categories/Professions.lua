@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cat,crit,flt,h,i,p,prof,q,qo,r,s,settings,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
-_.Categories.Professions={
+categories.Professions={
 h(-12,{
 x(1,{
 ach(732),
@@ -2112,3 +2113,4 @@ r(26797,{requireSkill=197,u=2})}})}})}}),
 x(3,{requireSkill=197}),
 x(4,{awp=40003,requireSkill=197,g={
 h(-12,{requireSkill=197})}})})};
+end);

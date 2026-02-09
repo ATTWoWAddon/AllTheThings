@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,cq,crit,de,en,h,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",207730},{"i",208092},{"i",228966},{"i",228996},{"n",185556},{"n",97128},{"o",408976},{"o",409166},{1,"questID",77308},{1,"questID",77520},{1,"questID",77521},{1,"questID",77522},{1,"questID",77524},{1,"questID",77578},{1,"questID",77579},{1,"questID",77580},{169414},{169415},{17.1,93.8,116},{17.8,93.2,116},{179566},{185562},{20,40,2022},{206864},{207696},{207697},{24.5,60.7,2022},{2736,8},{31.4,51.3,2248},{33.63,58.45,114},{337},{39.5,58.9,2023},{39.9,77.6,204},{44.6,20.2,205},{46.5,46.2,2112},{47.4,48.1,2112},{47.5,46.2,2112},{47.9,46.8,2112},{48,74.8,115},{50098},{52918},{54.9,28.9,2339},{55.1,19,2255},{56.4,17.5,2255},{58.5,39.1,627},{60.2,58.7,2025},{60.6,60,201},{62.8,72.8,2112},{63611},{65.9,43.2,204},{70},{71.8,62.5,680},{710,711,712},{72676},{73.2,74.9,790},{76504},{77203},{84677},{96479}};
-_.Categories.Secrets={
+categories.Secrets={
 x(8,{awp=80001,g={
 ah(277461,{description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
 q(52819,{coords={{51.8,59,863}},description="|cFFFFFFFFStep 1:|r Head to Nazmir. The note is high up on the side of the temple in the middle of the zone. If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",providers={{"o",293849}}}),
@@ -230,6 +231,18 @@ o(272181,{coords={{66,36.5,641}},description="|cFFFFFFFFStep 8:|r This step requ
 o(272220,{coords={{53.4,49,379}},description="|cFFFFFFFFStep 9:|r This step requires visiting |cFFFFD700Kun-Lai Summit|r. Head to |cFFFFFFFF53.4, 49.0|r. This is the entrance to the |cFFFFD700Tomb of Secrets|r. At the very back of the tomb, there will be an |cFFFFD700Urn|r at the base of a tall Mogu statue. Click it.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer. There is no way to tell what will happen. Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r, which will help you with the endless maze by generating a map of the rooms as you go and letting you notate special things in each one.\n2. Each room in the Endless Halls is identical, but some doorways will be blocked by stones. \r3. Each room has an altar in the middle. The runes spawn on the altar and the orbs spawn on the torches to either side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset. It could easily take a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset it, you need to leave the area for one hour.|r\n\nOnce you match all the orbs and runes, walk through any doorway. In the next room, there will be another |cFFFFD700Inconspicuous Note|r on an altar. Click it. After you read it, turn around and walk up the stairs to exit the maze. The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r\n",model=1661948,questID=47881,sourceQuests={47863}}),
 o(272270,{coords={{39.8,73.6,42}},description="|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r. Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r. Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",model=942865,questID=47885,sourceQuests={47881},g={
 mnt(247402,{b=1,itemID=151623,lvl=10})}})}}),
+ah(62189,{awp=120000,coords={{15,90,204}},description="Swim out to the coordinates then further out south just until fatigue kicks in, then retreat.\nSwim down until fatigue kicks in again then mad dash towards the glowing orb by the skeleton.\n\nYou will want the Vash'jir seahorse and water breathing to make it in time.",type="a",g={
+n(256536,{description="Around the room are displays tracking various 'secret' activities you may or may not have completed. If you've completed enough (17+), speak to Anakron to become a Mind Seeker.",g={
+q(94828,{type="hqt"}),
+ach(62189,{sourceQuests={94828},g={
+title(671)}})}}),
+n(256667,{
+i(166545,{b=1,f=55,spellID=11629}),
+i(232005,{f=55,spellID=433}),
+i(232006,{f=55,spellID=104235}),
+i(232009,{f=55,spellID=433}),
+i(232007,{f=55,spellID=431}),
+i(262880,{f=55,spellID=11629})})}}),
 ah(40967,{awp=110005,description="***Using Debug Mode is recommended.***\n",type="a",g={
 o(182030,{coords={{44.5,8,78}},description="Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",providers={a[2]},g={
 i(228941,{b=1,spellID=420213})}}),
@@ -635,7 +648,7 @@ o(555609,{cost={{"i",249702,1}},description="To the right of the first miniboss 
 i(249711)}}),
 o(555611,{cost={{"i",249704,1}},description="On a rock past Fractillus near the edge of the map.",maps={2465},minReputation=a[28],questID=92081,g={
 i(249712)}}),
-o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.",maps={2463},minReputation=a[28],questID=92079,g={
+o(555610,{cost={{"i",249700,1}},description="On top of a pipe in Mana-Vent Aphis before Forgeweaver Araz.\n\nThis cannot be looted in a cleared instance!",maps={2463},minReputation=a[28],questID=92079,g={
 i(249710)}}),
 q(92082,{coords={{42,22.1,2371}},lvl=70,qgs={245344},sourceQuests={92079,92080,92081},g={
 toy(249713,{b=1}),
@@ -696,3 +709,4 @@ o(294315,{description="After selecting Grimmy's dialogue, a new note appears by 
 o(294335,{coords={{88.4,69.2,14}},description="Go outside and find the Rotten Potato. You will need to get exactly 144 stacks of Rotten Potato by clicking the potato. After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialogue option\"How do I smell?\"\n\nGrimmy's new dialogue says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",model=2020463,modelScale=0.5,questID=52921,sourceQuests={52920}}),
 o(294703,{coords={{85.1,73.3,14}},description="After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",questID=52922,sourceQuests={52921},g={
 s(98614,162690,{f=2,lvl=45})}})}})};
+end);

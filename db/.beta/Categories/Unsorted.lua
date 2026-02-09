@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local de,en,flt,h,i,mnt,p,prof,q,r,s,toy,x=_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 local a={{1,2,3,4,5,6,7,8,9,10,11,12,14},{1},{10},{11},{12},{13},{2},{3},{4,11},{4},{5},{6},{7},{8},{9}};
-_.Categories.Unsorted={
+categories.Unsorted={
 x(12,{
 x(12.0001,{awp=120001,g={
 de(1157,{awp=120000,itemID=243090,spellID=1234623}),
@@ -6028,3 +6029,4 @@ q(90119),
 q(90661,{description="Area: |cFFf09f26Isle of Dorn|r"}),
 q(91768,{
 i(247927)})})};
+end);

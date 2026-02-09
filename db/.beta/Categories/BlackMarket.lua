@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,crit,cu,en,flt,gs,h,heir,i,ill,mnt,n,p,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 local a={{7}};
-_.Categories.BlackMarket={
+categories.BlackMarket={
 h(-554,{awp=50004,u=9,g={
 h(-88,{u=9,g={
 ah(72057,{awp=80205,type="n",u=9,g={
@@ -376,3 +377,4 @@ h(-58,{u=9,g={
 n(94829,_.ResolveQuestData({aqd=
 {coords={{37.2,35.8,582}}},hqd=
 {coords={{44.96,50.07,590}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=9}))}})}})};
+end);

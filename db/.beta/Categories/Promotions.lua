@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
-_.Categories.Promotions={
+categories.Promotions={
 h(-514,{awp=90005,g={
 mnt(348162,{description="Granted to players by logging in on character of at least level 20.",itemID=258430,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
@@ -1586,3 +1587,4 @@ o(405587,{coords={a[22]},questID=75041,type="AsSubGenericObject"}),
 o(392032,{coords={{57.4,37.7,2024}},questID=75037,type="AsSubGenericObject"}),
 o(405584,{coords={a[17]},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={{57,66.7,2025}},questID=74852,type="AsSubGenericObject"})}})})}})};
+end);

@@ -1,8 +1,9 @@
 ﻿if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return; end 
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
-_.Categories.Zones={
+categories.Zones={
 h(-12),
 m(1414,{icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},["zone-text-continent"]=1,g={
 h(-12,{
@@ -12407,3 +12408,4 @@ s(157125,3072,{awp=100107,coords={{63.8,33.6,1437},{66.4,40.4,1437},{71.8,47.6,1
 s(158411,6315,{awp=100107,coords={{48.8,17.6,1437},{48.9,17.6,1437}},crs={6523},f=33,lvl=22,q=2,rwp=40003}),
 p(58,{crs={1042,1044,1069},itemID=8499,petTypeID=2,q=1,spellID=10697}),
 s(156103,756,{awp=100107,coords={{48,18.6,1437},{61.2,25.4,1437}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}})};
+end);

@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local cu,x=_.CreateCurrencyClass,_.CreateExpansion;
-_.Categories.HiddenCurrencyTriggers={
+categories.HiddenCurrencyTriggers={
 x(11,{
 x(11.0002,{awp=110002,g={
 cu(3002),
@@ -111,3 +112,4 @@ cu(2875),
 cu(2876),
 cu(3000),
 cu(3001)}})})};
+end);

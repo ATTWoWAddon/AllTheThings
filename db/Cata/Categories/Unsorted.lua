@@ -1,7 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
+_.AddEventHandler("OnGetDataCache", function(categories)
 local flt,prof,r,s,x=_.CreateFilter,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
-_.Categories.Unsorted={
+categories.Unsorted={
 x(1,{
 flt(200,{
 prof(333,{
@@ -29,3 +30,4 @@ prof(185,{
 r(6417,{b=1,itemID=44977,q=1,requireSkill=185})}),
 prof(773,{
 r(71015,{itemID=50167,requireSkill=773})})})})};
+end);
