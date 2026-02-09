@@ -1318,6 +1318,8 @@ i(256938, 1260985);	-- Wine Barrel
 ------------------
 --- TRAINER ---
 i(0, 471003);		-- Midnight Alchemy
+i(0, 1273064);		-- Arakkoan Alchemist's Bottle
+i(0, 1273070);		-- Arakkoan Alchemist's Concoction
 i(0, 1265667);		-- Artisan Alchemist's Moxie
 i(0, 1230855);		-- Composite Flora
 i(0, 1265675);		-- Concentration

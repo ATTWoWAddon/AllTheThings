@@ -3492,10 +3492,6 @@ root(ROOTS.Unsorted, {
 			-- HUNTER
 			i(264895),	-- Trials of the Florafaun Hunter
 
-			-- Decor
-			i(264899),	-- [DNT] [AUTOGEN] AK_ALCHEMYBOTTLE01.M2 \\ Arakkoan Alchemist's Concoction
-			i(264900),	-- Arakkoan Alchemist's Bottle
-
 			-- Cosmetic
 			i(264969),	-- Extinction Voulge
 			i(264970),	-- Oblivion's Edge

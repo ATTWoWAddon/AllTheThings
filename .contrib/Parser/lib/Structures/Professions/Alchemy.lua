@@ -156,6 +156,8 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 			r(33732),	-- Volatile Healing Potion
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			r(1273064, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Bottle
+			r(1273070, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Concoction
 			r(1272712),	-- Glazed Sin'dorei Vial
 			r(1272723),	-- Shadow Council Torch
 			r(1272715),	-- Stranglekelp Sack

@@ -118,6 +118,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(28100),	-- Volatile Healing Potion
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(264900, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Bottle (DECOR!)
+			i(264899, {["timeline"] = { ADDED_12_0_0 }}),	-- Arakkoan Alchemist's Concoction (DECOR!)
 			i(264705),	-- Glazed Sin'dorei Vial (DECOR!)
 			i(264706),	-- Shadow Council Torch (DECOR!)
 			i(264709),	-- Stranglekelp Sack (DECOR!)
