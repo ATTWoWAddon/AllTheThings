@@ -100,6 +100,18 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					{ 53.2, 38.0, FOUNDERS_POINT },
 					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
+				["groups"] = {
+					-- Founder's Point
+					i(257886),	-- Ripe Apple (QI!)
+					i(257889),	-- Ripe Carrot (QI!)
+					i(257888),	-- Ripe Grapes (QI!)
+					-- Razorwind Shores
+					i(257890),	-- Ripe Cabbage (QI!)
+					i(257892),	-- Ripe Coconut (QI!)
+					i(257893),	-- Ripe Bananas (QI!)
+					-- ??
+					i(257903),	-- Ripe Tower Lettuce (QI!)
+				},
 			}),
 			q(92402, {	-- Magical Touch
 				["qg"] = 254536, -- Gelen Jord

@@ -2460,14 +2460,7 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(257870),	-- Void Residue
-			i(257886),	-- Ripe Apple
-			i(257888),	-- Ripe Grapes
-			i(257889),	-- Ripe Carrot
-			i(257890),	-- Ripe Cabbage
-			i(257892),	-- Ripe Coconut
-			i(257893),	-- Ripe Bananas
 			i(257894),	-- Pine Apple
-			i(257903),	-- Ripe Tower Lettuce
 
 			-- Prey
 			i(258025),	-- Pattern: Sunfire Silk Lining
