@@ -55,8 +55,8 @@ crit(1896,{achID=907,id=1,pvp=1,r=2,u=12})}}),
 ach(706,{providers={{"i",19029}},pvp=1,r=1}),
 ach(707,{providers={{"i",19030}},pvp=1,r=2})}}),
 h(-31,{pvp=1,g={
-faction(729,{icon=133287,OnTooltip=_.OnTooltipDB.ForAlteracValley,pvp=1,r=1}),
-faction(730,{icon=133433,OnTooltip=_.OnTooltipDB.ForAlteracValley,pvp=1,r=2})}}),
+faction(729,{OnTooltip=_.OnTooltipDB.ForAlteracValley,pvp=1,r=1}),
+faction(730,{OnTooltip=_.OnTooltipDB.ForAlteracValley,pvp=1,r=2})}}),
 h(-45,{pvp=1,g={
 q(7385,{coords={{50.1,85.1,1459}},cost={{"i",17306,5}},maxReputation={729,42000},pvp=1,qgs={13236},r=1,repeatable=1}),
 q(7362,{awp=10500,pvp=1,qgs={14186},r=1,rwp=11000,u=2}),
@@ -278,15 +278,15 @@ i(17327,{b=1,pvp=1,q=1}),
 i(17306,{b=1,pvp=1,q=1}),
 i(17326,{b=1,pvp=1,q=1}),
 s(129191,18231,{f=10,filterForRWP=2,pvp=1,q=0})}})}}),
-m(1461,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
+m(1461,{lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(711,{minReputation={509,42000},pvp=1,r=2,u=12,g={
 crit(1899,{achID=907,id=1,pvp=1,r=2,u=12})}}),
 ach(710,{minReputation={510,42000},pvp=1,r=1,u=12,g={
 crit(646,{achID=714,id=1,pvp=1,r=1,u=12})}})}}),
 h(-31,{pvp=1,g={
-faction(510,{icon=237568,OnTooltip=_.OnTooltipDB.ForArathiBasin,pvp=1,r=1}),
-faction(509,{icon=132351,OnTooltip=_.OnTooltipDB.ForArathiBasin,pvp=1,r=2})}}),
+faction(510,{OnTooltip=_.OnTooltipDB.ForArathiBasin,pvp=1,r=1}),
+faction(509,{OnTooltip=_.OnTooltipDB.ForArathiBasin,pvp=1,r=2})}}),
 h(-45,{pvp=1,g={
 q(8262,{coords={{46,45.2,1417}},lvl=45,minReputation={509,3000},pvp=1,qgs={15127},r=2,g={
 i(20231,{b=1,f=55,pvp=1,q=1})}}),
@@ -483,15 +483,15 @@ i(21119,{b=1,f=53,lvl=28,pvp=1,q=3})}})}})}}),
 m(1956,{pvp=1,u=17,g={
 h(-47,{awp=20003,pvp=1,u=17,g={
 i(29024,{b=1,f=55,pvp=1,q=2,rwp=30303,u=17})}})}}),
-m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
+m(1460,{lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(713,{maps={1440},minReputation={890,42000},pvp=1,r=2,u=12,g={
 crit(1901,{achID=907,id=1,pvp=1,r=2,u=12})}}),
 ach(712,{maps={1440},minReputation={889,42000},pvp=1,r=1,u=12,g={
 crit(648,{achID=714,id=1,pvp=1,r=1,u=12})}})}}),
 h(-31,{pvp=1,g={
-faction(890,{icon=132279,maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,pvp=1,r=2}),
-faction(889,{icon=132366,maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,pvp=1,r=1})}}),
+faction(890,{maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,pvp=1,r=2}),
+faction(889,{maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,pvp=1,r=1})}}),
 h(-45,{pvp=1,g={
 q(8368,{altQuests={8426,8427,8428,8429,8430},cost={{"i",20558,3}},lvl={10,19},pvp=1,qgs={15350},r=1,rwp=20001,u=2}),
 q(8426,{altQuests={8368,8427,8428,8429,8430},cost={{"i",20558,3}},lvl={20,29},pvp=1,qgs={15350},r=1,rwp=20001,u=2}),

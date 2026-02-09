@@ -44,12 +44,6 @@ namespace ATT
                             }
                             break;
                         }
-                    case "IllusionDB":
-                        {
-                            LogError("IllusionDB not supported. Please use 'ItemDBConditional' and parser.config to assign Illusion objects.");
-                            Log(CurrentFileName);
-                            break;
-                        }
                     case "ItemDB":
                         {
                             // The format of the Item DB is a dictionary of item ID -> Values.
@@ -175,12 +169,6 @@ namespace ATT
                             {
                                 ThrowBadFormatDB("ItemSpeciesDB");
                             }
-                            break;
-                        }
-                    case "ItemToyDB":
-                        {
-                            LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
-                            Log(CurrentFileName);
                             break;
                         }
                     case "AchievementData":
@@ -311,6 +299,18 @@ namespace ATT
                             }
                             break;
                         }
+                    case "AssetDB":
+                        {
+                            // The format of the Asset DB is a dictionary of Asset ID <-> Valid pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    AssetDB[keyValuePair.Key] = Convert.ToBoolean(keyValuePair.Value);
+                                }
+                            }
+                            break;
+                        }
                     case "CategoryDB":
                         {
                             // The format of the Category DB is a dictionary of Category ID <-> Category pairs.
@@ -364,71 +364,6 @@ namespace ATT
                             else
                             {
                                 ThrowBadFormatDB("CategoryDB");
-                            }
-                            break;
-                        }
-                    case "CategoryIcons":   // Deprecated
-                        {
-                            // The format of the Category Icons DB is a dictionary of Category ID <-> Icon pairs.
-                            if (pair.Value is Dictionary<long, object> CategoryIcons)
-                            {
-                                foreach (var categoryPair in CategoryIcons)
-                                {
-                                    // KEY: Category ID, VALUE: Icon
-                                    if (categoryPair.Value is string icon)
-                                    {
-                                        if (CategoryDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> categoryData))
-                                        {
-                                            categoryData["icon"] = icon;
-                                        }
-                                        else CategoryDB[categoryPair.Key] = new Dictionary<string, object>
-                                        {
-                                            { "icon", icon }
-                                        };
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "CategoryNames":   // Deprecated
-                        {
-                            // The format of the Category Names DB is a dictionary of Category ID <-> Name pairs.
-                            if (pair.Value is Dictionary<long, object> CategoryNames)
-                            {
-                                foreach (var categoryPair in CategoryNames)
-                                {
-                                    // KEY: Category ID, VALUE: Text
-                                    if (categoryPair.Value is string name)
-                                    {
-                                        if (CategoryDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> categoryData))
-                                        {
-                                            if (!categoryData.ContainsKey("readable")) categoryData["readable"] = name;
-                                            if (categoryData.TryGetValue("text", out object textObject))
-                                            {
-                                                if (textObject is Dictionary<string, object> locale && !locale.ContainsKey("en"))
-                                                {
-                                                    locale["en"] = name;
-                                                }
-                                            }
-                                            else
-                                            {
-                                                categoryData["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", name }
-                                                };
-                                            }
-                                        }
-                                        else CategoryDB[categoryPair.Key] = new Dictionary<string, object>
-                                        {
-                                            { "readable", name },
-                                            { "text",
-                                                new Dictionary<string, object> {
-                                                    { "en", name }
-                                                }
-                                            }
-                                        };
-                                    }
-                                }
                             }
                             break;
                         }
@@ -639,140 +574,6 @@ namespace ATT
                             else
                             {
                                 ThrowBadFormatDB("ObjectDB");
-                            }
-                            break;
-                        }
-                    case "ObjectIcons":   // Deprecated
-                        {
-                            // The format of the Object Icons DB is a dictionary of Object ID <-> Icon pairs.
-                            if (pair.Value is Dictionary<long, object> ObjectIcons)
-                            {
-                                foreach (var categoryPair in ObjectIcons)
-                                {
-                                    // KEY: Object ID, VALUE: Icon
-                                    if (categoryPair.Value is string name)
-                                    {
-                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
-                                        {
-                                            objectData["icon"] = name;
-                                        }
-                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
-                                        {
-                                            { "icon", name }
-                                        };
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "ObjectModels":   // Deprecated
-                        {
-                            // The format of the Object Models DB is a dictionary of Object ID <-> Model ID pairs.
-                            if (pair.Value is Dictionary<long, object> ObjectModels)
-                            {
-                                foreach (var categoryPair in ObjectModels)
-                                {
-                                    // KEY: Object ID, VALUE: Model ID
-                                    if (categoryPair.Value is long modelID)
-                                    {
-                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
-                                        {
-                                            objectData["model"] = modelID;
-                                        }
-                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
-                                        {
-                                            { "model", modelID }
-                                        };
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "ObjectNames":   // Deprecated
-                        {
-                            // The format of the Object Names DB is a dictionary of Object ID <-> Name pairs.
-                            if (pair.Value is Dictionary<long, object> ObjectNames)
-                            {
-                                foreach (var categoryPair in ObjectNames)
-                                {
-                                    // KEY: Object ID, VALUE: Name
-                                    if (categoryPair.Value is string name)
-                                    {
-                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
-                                        {
-                                            if (!objectData.ContainsKey("readable")) objectData["readable"] = name;
-                                            if (objectData.TryGetValue("text", out object textObject))
-                                            {
-                                                if (textObject is Dictionary<string, object> locale && !locale.ContainsKey("en"))
-                                                {
-                                                    locale["en"] = name;
-                                                }
-                                            }
-                                            else
-                                            {
-                                                objectData["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", name }
-                                                };
-                                            }
-                                        }
-                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
-                                        {
-                                            { "readable", name },
-                                            { "text",
-                                                new Dictionary<string, object> {
-                                                    { "en", name }
-                                                }
-                                            }
-                                        };
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "ObjectNamesForLocales":   // Deprecated
-                        {
-                            // The format of the Object Names DB is a dictionary of Locale <-> { Object ID <-> Name pairs }.
-                            if (pair.Value is Dictionary<string, object> ObjectNamesForLocales)
-                            {
-                                foreach (var localePair in ObjectNamesForLocales)
-                                {
-                                    if (localePair.Value is Dictionary<long, object> ObjectNames)
-                                    {
-                                        foreach (var categoryPair in ObjectNames)
-                                        {
-                                            // KEY: Object ID, VALUE: Name
-                                            if (categoryPair.Value is string name)
-                                            {
-                                                if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
-                                                {
-                                                    if (objectData.TryGetValue("text", out object textObject))
-                                                    {
-                                                        if (textObject is Dictionary<string, object> locale && !locale.ContainsKey(localePair.Key))
-                                                        {
-                                                            locale[localePair.Key] = name;
-                                                        }
-                                                    }
-                                                    else
-                                                    {
-                                                        objectData["text"] = new Dictionary<string, object>
-                                                        {
-                                                            { localePair.Key, name }
-                                                        };
-                                                    }
-                                                }
-                                                else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
-                                                {
-                                                    { "text",
-                                                        new Dictionary<string, object> {
-                                                            { localePair.Key, name }
-                                                        }
-                                                    }
-                                                };
-                                            }
-                                        }
-                                    }
-                                }
                             }
                             break;
                         }

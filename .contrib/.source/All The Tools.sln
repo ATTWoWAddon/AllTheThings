@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconID Converter", "IconID 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization Converter", "Localization Converter\Localization Converter.csproj", "{C64289F2-448E-4369-8995-F1C18180569D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDB Builder", "AssetDB Builder\AssetDB Builder.csproj", "{94069991-F504-4657-822A-1E446CF37361}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Classic Era|Any CPU = Classic Era|Any CPU
@@ -126,6 +128,20 @@ Global
 		{C64289F2-448E-4369-8995-F1C18180569D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.ActiveCfg = Debug|Any CPU
 		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.Build.0 = Debug|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic Era|Any CPU.ActiveCfg = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic Era|Any CPU.Build.0 = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic TBC|Any CPU.ActiveCfg = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic TBC|Any CPU.Build.0 = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic Wrath|Any CPU.ActiveCfg = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic Wrath|Any CPU.Build.0 = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic|Any CPU.ActiveCfg = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Classic|Any CPU.Build.0 = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Retail|Any CPU.ActiveCfg = Debug|Any CPU
+		{94069991-F504-4657-822A-1E446CF37361}.Retail|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

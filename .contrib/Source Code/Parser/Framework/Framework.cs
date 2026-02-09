@@ -111,6 +111,8 @@ namespace ATT
 
         public static HashSet<string> AUTO_LOCALIZE_TYPES { get; set; }
 
+        public static bool BLIZZ_ICONS_ARE_HARD { get; set; }
+
         /// <summary>
         /// Represents the function to use when performing a processing pass against the data
         /// </summary>
@@ -622,6 +624,11 @@ namespace ATT
         internal static Dictionary<long, Dictionary<string, object>> AchievementCriteriaData { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
+        /// All of the assets that have been made available in the game database. (Not relevant unless flagged for it in the Config file)
+        /// </summary>
+        internal static Dictionary<long, bool> AssetDB { get; private set; } = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the categories that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> CategoryDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
@@ -787,6 +794,7 @@ namespace ATT
             DATA_REQUIREMENTS = Config["DataRequirements"] ?? null;
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
             CURRENT_SHORT_RELEASE_VERSION = CURRENT_RELEASE_VERSION.ConvertToGameVersion();
+            BLIZZ_ICONS_ARE_HARD = PreProcessorTags.Contains("BLIZZ_ICONS_ARE_HARD");
             if (PreProcessorTags.Contains("ANYCLASSIC"))
             {
                 MAX_PHASE_ID = LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
@@ -1661,9 +1669,30 @@ namespace ATT
         }
         #endregion
         #region Lua Conversion
-        static StringBuilder ExportIconValue(StringBuilder builder, object iconValue)
+        static bool IsIconValid(long assetID)
         {
-            string icon = iconValue.ToString().ToLower().Replace("\\", "/");
+            // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
+            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            {
+                return AssetDB.ContainsKey(assetID);
+            }
+            return true;
+        }
+        static bool IsIconValid(string icon)
+        {
+            // If Blizzard isn't being friendly to a game flavor (TBC!), we need to check the validity of icons before exporting them.
+            if (Framework.BLIZZ_ICONS_ARE_HARD)
+            {
+                if (long.TryParse(icon, out long assetID))
+                {
+                    return AssetDB.ContainsKey(assetID);
+                }
+            }
+            return true;
+        }
+        static StringBuilder ExportIconValue(StringBuilder builder, string iconValue)
+        {
+            string icon = iconValue.ToLower().Replace("\\", "/");
             if (long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
             else
             {
@@ -1673,11 +1702,15 @@ namespace ATT
             return builder;
         }
 
-        static StringBuilder ExportIconKeyValue(StringBuilder builder, object key, object iconValue)
+        static StringBuilder ExportIconKeyValue(StringBuilder builder, object key, string iconValue)
         {
-            builder.Append("\t[").Append(key).Append("] = ");
-            ExportIconValue(builder, iconValue);
-            return builder.Append(",");
+            if (IsIconValid(iconValue))
+            {
+                builder.Append("\t[").Append(key).Append("] = ");
+                ExportIconValue(builder, iconValue);
+                return builder.Append(",").AppendLine();
+            }
+            return builder;
         }
 
 
@@ -2043,10 +2076,10 @@ namespace ATT
                                 }
 
                                 // Export the "icon" field.
-                                if (categoryData.TryGetValue("icon", out string icon))
+                                if (categoryData.TryGetValue("icon", out string icon) && IsIconValid(icon))
                                 {
                                     builder.Append("\t\ticon = ");
-                                    ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                    ExportIconValue(builder, icon).AppendLine(",");
                                 }
 
                                 // Export the complex "text" locales field.
@@ -2105,7 +2138,7 @@ namespace ATT
                                         filepath = value.ToString();
 
                                     }
-                                    if (header.TryGetValue("icon", out value))
+                                    if (header.TryGetValue("icon", out value) && IsIconValid(value.ToString()))
                                     {
                                         icon = value.ToString().Replace("\\", "/");
                                     }
@@ -2252,7 +2285,7 @@ namespace ATT
                                 }
 
                                 // Export the "icon" field.
-                                if (filterData.TryGetValue("icon", out string icon))
+                                if (filterData.TryGetValue("icon", out string icon) && IsIconValid(icon))
                                 {
                                     builder.Append("\t\ticon = ");
                                     ExportIconValue(builder, icon).AppendLine(",");
@@ -2349,7 +2382,7 @@ namespace ATT
                                 }
 
                                 // Export the "icon" field.
-                                if (objectData.TryGetValue("icon", out string icon))
+                                if (objectData.TryGetValue("icon", out string icon) && IsIconValid(icon))
                                 {
                                     builder.Append("\t\ticon = ");
                                     ExportIconValue(builder, icon).AppendLine(",");
@@ -2459,7 +2492,7 @@ namespace ATT
                                     }
 
                                     // Export the "icon" field.
-                                    if (phaseData.TryGetValue("icon", out string icon))
+                                    if (phaseData.TryGetValue("icon", out string icon) && IsIconValid(icon))
                                     {
                                         builder.Append("\t\ticon = ");
                                         ExportIconValue(builder, icon).AppendLine(",");
@@ -2708,7 +2741,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportIconKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon);
                         }
                     }
                     builder.AppendLine("}");
@@ -2905,7 +2938,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportIconKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon);
                         }
                     }
                     builder.AppendLine("});");
@@ -3095,7 +3128,7 @@ namespace ATT
                         {
                             if (icons.TryGetValue(key, out string icon))
                             {
-                                ExportIconKeyValue(builder, key, icon).AppendLine();
+                                ExportIconKeyValue(builder, key, icon);
                             }
                         }
                         builder.AppendLine("}");
@@ -3328,7 +3361,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportIconKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon);
                         }
                     }
                     builder.AppendLine("}; _.ObjectIcons = ObjectIcons;");
@@ -3361,7 +3394,7 @@ namespace ATT
                                     builder.Append("\tObjectNames[objectID] = ");
                                     ExportStringValue(builder, name).AppendLine(";");
                                 }
-                                if (icons.TryGetValue(firstObjectID, out string icon))
+                                if (icons.TryGetValue(firstObjectID, out string icon) && IsIconValid(icon))
                                 {
                                     builder.Append("\tObjectIcons[objectID] = ");
                                     ExportIconValue(builder, icon).AppendLine(";");
@@ -3459,7 +3492,7 @@ namespace ATT
                                 builder.Append("\t\tlore = ");
                                 ExportStringValue(builder, name).AppendLine(",");
                             }
-                            if (phase.TryGetValue("icon", out string icon))
+                            if (phase.TryGetValue("icon", out string icon) && IsIconValid(icon))
                             {
                                 builder.Append("\t\ticon = ");
                                 ExportIconValue(builder, icon).AppendLine(",");
@@ -3603,7 +3636,7 @@ namespace ATT
                                     builder.Append("\t\tlore = ");
                                     ExportStringValue(builder, name).AppendLine(",");
                                 }
-                                if (achievement.TryGetValue("icon", out var icon))
+                                if (achievement.TryGetValue("icon", out var icon) && IsIconValid(icon.ToString()))
                                 {
                                     builder.Append("\t\ticon = ");
                                     if (icon is string iconString) ExportStringValue(builder, iconString);

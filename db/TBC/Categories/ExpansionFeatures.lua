@@ -3,11 +3,11 @@ local appName, _ = ...;
 local ach,ah,faction,h,i,mnt,n,prof,q,qo,s,x=_.CreateAchievement,_.CreateHeader,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateExpansion;
 _.Categories.ExpansionFeatures={
 x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
+ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
 ach(898,{minReputation={1015,42000},u=1901})}}),
 h(-31,{u=1901,g={
-faction(1015,{icon=132250,OnTooltip=_.OnTooltipDB.ForNetherwing,u=1901})}}),
+faction(1015,{OnTooltip=_.OnTooltipDB.ForNetherwing,u=1901})}}),
 prof(182,{u=1901,g={
 i(32468,{providers={{"o",185881}},q=1,u=1901})}}),
 prof(186,{u=1901,g={

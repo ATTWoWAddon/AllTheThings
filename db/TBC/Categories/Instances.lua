@@ -434,7 +434,7 @@ s(129845,19019,{b=1,f=25,lvl=60,q=5,u=13})}})}}),
 h(-12,{
 ach(955,{maps={1447},minReputation={749,42000}})}),
 h(-31,{
-faction(749,{coords={{79.2,73.6,1447}},icon=135861,qgs={13278}})}),
+faction(749,{coords={{79.2,73.6,1447}},qgs={13278}})}),
 h(-45,{
 q(7486,{awp=10001,coords={{79.2,73.6,1447}},lvl=55,providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},g={
 i(18399,{b=1,f=52,q=3}),
@@ -972,7 +972,7 @@ inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubas
 h(-12,{u=14,g={
 ach(957,{maps={1434},minReputation={270,42000},u=14})}}),
 h(-31,{u=14,g={
-faction(270,{icon=135727,maps={1434},u=14})}}),
+faction(270,{maps={1434},u=14})}}),
 h(-45,{u=14,g={
 cl(11,{u=14,g={
 q(8192,{c={11},cost={{"i",19821,1},{"i",22637,1}},lvl=58,qgs={15042},repeatable=1,u=14,g={
@@ -1380,7 +1380,7 @@ s(130843,20257,{b=1,f=6,lvl=60,q=4,u=14}),
 s(130472,19855,{b=1,f=7,lvl=60,q=4,u=14})}})}}),
 inst(743,{awp=10900,coords={{58.93,14.26,327}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,["zone-text-areaID"]=3429,g={
 h(-31,{u=15,g={
-faction(609,{icon=132136,maps={1451},u=15,g={
+faction(609,{maps={1451},u=15,g={
 crit(2045,{achID=953,awp=20001,id=1,u=17})}})}}),
 h(-45,{u=15,g={
 cl(11,{u=15,g={
@@ -1612,7 +1612,7 @@ h(-12,{u=15,g={
 ach(956,{maps={75,1451},minReputation={910,42000},u=15}),
 ach(424,{providers={{"i",21321}},u=15})}}),
 h(-31,{u=15,g={
-faction(910,{icon=134156,maps={75,1451},u=15})}}),
+faction(910,{maps={75,1451},u=15})}}),
 h(-45,{u=15,g={
 cl(11,{u=15,g={
 q(8667,{c={11},cost={{"i",20863,5},{"i",20859,5},{"i",20879,2},{"i",20930,1}},minReputation={910,3000},qgs={15502},repeatable=1,u=15,g={
@@ -2227,7 +2227,7 @@ i(22365,{b=1,c={2,3,7,11},crs={15932,16060,16061},lvl=60,q=4,u=16}),
 i(22358,{b=1,c={1,4},crs={15932,16060,16061},lvl=60,q=4,u=16}),
 i(22372,{b=1,c={5,8,9},crs={15932,16060,16061},lvl=60,q=4,u=16}),
 i(22726,{b=1,c={5,8,9,11},crs={15928,15931,15932,15936,15952,15953,15954,15956,16011,16028,16060,16061,16062},lvl=60,q=5,u=16})}}),
-h(-78,{icon=135442,u=16,g={
+h(-78,{u=16,g={
 n(15956,{u=16,g={
 s(133336,22937,{b=1,f=1,lvl=60,q=4,u=16}),
 i(22935,{b=1,f=51,lvl=60,q=4,u=16}),
@@ -2249,7 +2249,7 @@ s(133206,22807,{b=1,f=25,lvl=60,q=4,u=16}),
 i(22947,{b=1,f=51,lvl=60,q=4,u=16}),
 s(133619,23220,{b=1,f=4,lvl=60,q=4,u=16}),
 i(22954,{b=1,f=53,lvl=60,q=4,u=16})}})}}),
-h(-81,{icon=136182,u=16,g={
+h(-81,{u=16,g={
 n(15954,{u=16,g={
 s(133215,22816,{b=1,f=21,lvl=60,q=4,u=16}),
 s(133428,23029,{b=1,f=1,lvl=60,q=4,u=16}),
@@ -2273,7 +2273,7 @@ s(133438,23039,{b=1,f=29,lvl=60,q=4,u=16}),
 i(23038,{b=1,f=52,lvl=60,q=4,u=16}),
 i(23037,{b=1,f=52,lvl=60,q=4,u=16}),
 i(23042,{b=1,f=53,lvl=60,q=4,u=16})}})}}),
-h(-80,{icon=136225,u=16,g={
+h(-80,{u=16,g={
 n(16365,{awp=11101,lore="Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",u=16,g={
 i(22719,{awp=11100,b=1,description="Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",lvl=60,minReputation={529,21000},q=1,rwp=30002,u=16}),
 r(28208,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=197,rwp=30002,u=16}),
@@ -2313,7 +2313,7 @@ s(133210,22811,{b=1,f=32,lvl=60,q=4,u=16}),
 s(133470,23071,{b=1,f=5,lvl=60,q=4,u=16}),
 i(23025,{b=1,f=52,lvl=60,q=4,u=16}),
 i(23027,{b=1,f=53,lvl=60,q=4,u=16})}})}}),
-h(-79,{icon=136118,u=16,g={
+h(-79,{u=16,g={
 n(16028,{modelScale=2,u=16,g={
 s(133214,22815,{b=1,f=22,lvl=60,q=4,u=16}),
 s(133217,22818,{b=1,f=8,lvl=60,q=4,u=16}),
@@ -2341,7 +2341,7 @@ s(133207,22808,{b=1,f=23,lvl=60,q=4,u=16}),
 s(133399,23000,{b=1,f=7,lvl=60,q=4,u=16}),
 s(133469,23070,{b=1,f=4,lvl=60,q=4,u=16}),
 i(23001,{b=1,f=53,lvl=60,q=4,u=16})}})}}),
-h(-82,{icon=134155,u=16,g={
+h(-82,{u=16,g={
 n(15989,{modelScale=2,u=16,g={
 s(133641,23242,{b=1,f=34,lvl=60,q=4,u=16}),
 s(133442,23043,{b=1,f=8,lvl=60,q=4,u=16}),
@@ -3271,12 +3271,12 @@ i(13098,{b=1,f=52,lvl=58,q=3}),
 i(22268,{b=1,f=53,lvl=58,q=3,u=15})})}})}}),
 inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},savedInstanceID=429,u=1101,["zone-text-areas"]={2557,3217},g={
 h(-12,{u=1101,g={
-ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
+ach(5788,{maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
 ach(644,{maps={235,236,237,238,239},u=1101})}}),
 h(-31,{u=1101,g={
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",500,42000);end	end,rwp=40003,u=1101,g={
 crit(8825,{achID=2336,id=5,u=13})}}),
-faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000);end	end,u=1101})}}),
+faction(169,{maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true});local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1});addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999);addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999);end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000);addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000);addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000);end	end,u=1101})}}),
 h(-45,{u=1101,g={
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003,u=1101}),
 q(7463,{c={8},lvl=60,maps={236,237,238,239},qgs={14368},rwp=40003,u=1101,g={

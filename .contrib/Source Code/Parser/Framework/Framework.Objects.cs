@@ -1795,7 +1795,11 @@ end");
                             {
                                 item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             }
-                            else item[field] = Convert.ToInt64(value);
+                            else
+                            {
+                                var icon = Convert.ToInt64(value);
+                                if (Framework.IsIconValid(icon)) item[field] = icon;
+                            }
                             break;
                         }
 
