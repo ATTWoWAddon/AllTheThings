@@ -1770,7 +1770,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 					q(41193, {	-- Laying to Rest
 						["sourceQuests"] = { 41192 },	-- The Right Path
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["coord"] = { 45.8, 44.6, 750 },	-- Thunder Totem
 						["groups"] = {
 							i(131734),	-- Spirit of Eche'ro (MOUNT!)
 							i(134095),	-- Bone Fragment of Eche'ro (QI!)

@@ -253,7 +253,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
 					["sourceQuest"] = 27484,	-- Only One May Enter
-					["qg"] = 45631,	-- High Warlord Cromush
+					["qgs"] = {
+						45631,	-- High Warlord Cromush
+						-- #if AFTER SL
+						176567,	-- High Warlord Cromush
+						-- #endif
+					},
 					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

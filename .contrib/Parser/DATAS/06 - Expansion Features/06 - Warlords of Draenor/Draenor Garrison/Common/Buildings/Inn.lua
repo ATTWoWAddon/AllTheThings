@@ -986,7 +986,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37119, {	-- The Headhunter's Harvest
 							["qg"] = 84947,	-- Lysa Serion
-							["coord"] = { 52.2, 44.5, LUNARFALL },
+							["coords"] = {
+								{ 33.9, 50.0, LUNARFALL },
+								{ 52.2, 44.5, LUNARFALL },
+							},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37046, {	-- The Headhunter's Harvest

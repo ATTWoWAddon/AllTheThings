@@ -2765,10 +2765,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 					{ "i", 19338 },	-- Free Ticket Voucher
 				},
-				-- #if AFTER 4.3.0
-				["coord"] = { 48.0, 62.0, ORGRIMMAR },
-				-- #else
-				["coord"] = { 52.2, 66.0, ORGRIMMAR },
+				["coords"] = {
+					-- #if AFTER 4.3.0
+					{ 48.0, 62.0, ORGRIMMAR },
+					-- #else
+					{ 52.2, 66.0, ORGRIMMAR },
+					-- #endif
+					{ 74.6, 82.0, SILVERMOON_CITY },
+				},
+				-- #if BEFORE 4.3.0
 				["lvl"] = 6,
 				-- #endif
 				["races"] = HORDE_ONLY,

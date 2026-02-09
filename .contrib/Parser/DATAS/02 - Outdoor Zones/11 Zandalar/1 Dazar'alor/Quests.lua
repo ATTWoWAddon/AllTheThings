@@ -380,6 +380,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
+			pvp(n(PVP, {
+				q(54979, {	-- Against Overwhelming Odds
+					["qg"] = 138708,	-- Garona Halforcen
+					["coord"] = { 51.6, 99.7, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
+				}),
+			})),
 			q(58672, {	-- A Gathering of Champions
 				["sourceQuests"] = {
 					58631,	-- Into Dreams

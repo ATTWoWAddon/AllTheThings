@@ -1674,7 +1674,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				})),
 			}),
 			n(SPECIAL, {
-				header(HEADERS.Spell, 316802, {	-- Springfur Alpaca (MOUNT!)
+				header(HEADERS.Item, 174859, {	-- Springfur Alpaca (MOUNT!)
 					q(58879, {	-- Alpaca It Up
 						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
 						["provider"] = { "n", 162765 },	-- Friendly Alpaca
@@ -1699,9 +1699,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							q(58887, {	-- Alpaca It In
 								["sourceQuest"] = 58879,	-- Alpaca It Up
 								["provider"] = { "n", 162765 },	-- Friendly Alpaca
-								["groups"] = {
-									i(174859),	-- Springfur Alpaca (MOUNT!)
-								},
+								["groups"] = { i(174859) },	-- Springfur Alpaca (MOUNT!)
 							}),
 						},
 					}),

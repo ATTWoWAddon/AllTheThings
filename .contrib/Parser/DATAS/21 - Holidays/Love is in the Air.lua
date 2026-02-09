@@ -1412,6 +1412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				215197,	-- Gabbo Blinkwink
 				-- #if AFTER TWW
 				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
 			["coords"] = {
@@ -3144,6 +3145,12 @@ for i,o in ipairs({
 		["groups"] = {
 			ach(4624, {	-- Tough Love (Shadowfang Keep)
 				["timeline"] = { ADDED_3_0_2 },
+			}),
+			o(202947, {	-- Cologne Neutralizer
+				i(49352),	-- Cologne Neutralizer
+			}),
+			o(202948, {	-- Perfume Neutralizer
+				i(49351),	-- Perfume Neutralizer
 			}),
 			i(50320, {	-- Faded Lovely Greeting Card [A]
 				["timeline"] = { ADDED_3_3_2 },

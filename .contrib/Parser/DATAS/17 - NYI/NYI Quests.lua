@@ -4703,11 +4703,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(54748, {
 			}),
-			q(54979, {
-				["description"] = "Category: |cFFf09f26World PvP|r",
-				["lvl"] = 50,
-				["races"] = HORDE_ONLY,
-			}),
 			-- tools
 			-- 8.1.0.27826
 			q(53718),	--

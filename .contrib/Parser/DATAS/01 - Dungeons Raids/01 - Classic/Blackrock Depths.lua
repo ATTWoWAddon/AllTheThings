@@ -1735,7 +1735,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28473, {	-- Weapons of Darkness (Blood Elf)
 					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
-					["qg"] = 23128,	-- Master Pyreanor
+					["qgs"] = {
+						23128,	-- Master Pyreanor
+						-- #if AFTER SL
+						168597,	-- Avaros Dawnglaive <Paladin Trainer>
+						-- #endif
+					},
 					["coord"] = { 49.2, 71.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },

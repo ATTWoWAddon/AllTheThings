@@ -928,6 +928,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 58.0, 62.8, ZULDAZAR },	-- Nathanos Blightcaller
 						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
 						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
+						{ 62.5, 60.8, SILVERMOON_CITY },
 					},
 					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,

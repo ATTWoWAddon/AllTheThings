@@ -195,13 +195,12 @@ root(ROOTS.Secrets, {
 				["description"] = "|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque. Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.",
 			}),
 			o(272487, {	-- Step 14: Oddly-Colored Egg
+				["coord"] = { 50.9, 2.3, WINTERSPRING },
 				["modelScale"] = 2,
 				["questID"] = 48022,
 				["isWeekly"] = true,
 				["description"] = "|cFFFFFFFFSTEP 14:|r DO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water. Walk across the water and loot the egg.\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",
-				["groups"] = {
-					i(142223),	-- Sun Darter Hatchling (PET!)
-				},
+				["groups"] = { i(142223) },	-- Sun Darter Hatchling (PET!)
 			}),
 		},
 	}),
