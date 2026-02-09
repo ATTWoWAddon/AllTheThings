@@ -101,15 +101,13 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
 				["groups"] = {
-					-- Founder's Point
 					i(257886),	-- Ripe Apple (QI!)
 					i(257889),	-- Ripe Carrot (QI!)
 					i(257888),	-- Ripe Grapes (QI!)
-					-- Razorwind Shores
 					i(257890),	-- Ripe Cabbage (QI!)
 					i(257892),	-- Ripe Coconut (QI!)
 					i(257893),	-- Ripe Bananas (QI!)
-					-- ??
+					i(257894),	-- Pine Apple (QI!)
 					i(257903),	-- Ripe Tower Lettuce (QI!)
 				},
 			}),

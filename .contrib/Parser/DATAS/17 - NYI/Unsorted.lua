@@ -2460,7 +2460,6 @@ root(ROOTS.Unsorted, {
 
 			-- QI
 			i(257870),	-- Void Residue
-			i(257894),	-- Pine Apple
 
 			-- Prey
 			i(258025),	-- Pattern: Sunfire Silk Lining
