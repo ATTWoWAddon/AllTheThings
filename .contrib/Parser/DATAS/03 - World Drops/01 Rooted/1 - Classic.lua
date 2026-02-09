@@ -5528,13 +5528,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
+			-- #if AFTER 4.0.3
 			["coords"] = {
-				-- #if AFTER 4.0.3
 				{ 34.6, 44.6, DUROTAR },	-- Southfury riverside
 				{ 69.5, 55.9, NORTHERN_BARRENS },	-- Southfury southern riverside
 				{ 64.8, 41.1, NORTHERN_BARRENS },	-- Southfury northern riverside
-				-- #endif
 			},
+			-- #endif
 			["crs"] = {
 				-- #if BEFORE 4.0.3
 				2322,	-- Foreststrider

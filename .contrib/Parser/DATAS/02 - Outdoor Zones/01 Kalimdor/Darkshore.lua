@@ -3412,7 +3412,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2157,	-- Stone Behemoth
 					},
 				}),
-				i(5469),	-- Strider Meat
 				-- #endif
 			}),
 		},
