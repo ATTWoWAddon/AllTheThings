@@ -94,6 +94,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 					i(236959),	-- Empty Mysterious Potion
 					i(240995),	-- Fortuitous Satchel
 					i(200886),	-- Lemon Silverleaf Tea
+					-- #if AFTER MID
+					i(225378),	-- Mohawk Grenade
+					-- #endif
 					i(235803),	-- Potion of Mysterious Celerity
 					i(236854),	-- Potion of Mysterious Conflagration
 					i(236857),	-- Potion of Mysterious Frostbound
