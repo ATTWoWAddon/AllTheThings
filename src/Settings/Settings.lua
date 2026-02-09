@@ -100,6 +100,7 @@ settings.RequiredForInsaneMode = {
 	SL = app.GameBuildVersion >= 90000,
 	DF = app.GameBuildVersion >= 100000,
 	TWW = app.GameBuildVersion >= 110000,
+	MID = app.GameBuildVersion >= 120000,
 }
 
 -- RANKED MODE
@@ -128,6 +129,7 @@ settings.RequiredForRankedMode = {
 	SL = app.GameBuildVersion >= 90000,
 	DF = app.GameBuildVersion >= 100000,
 	TWW = app.GameBuildVersion >= 110000,
+	MID = app.GameBuildVersion >= 120000,
 }
 
 -- CORE MODE
@@ -152,6 +154,7 @@ settings.RequiredForCoreMode = {
 	SL = app.GameBuildVersion >= 90000,
 	DF = app.GameBuildVersion >= 100000,
 	TWW = app.GameBuildVersion >= 110000,
+	MID = app.GameBuildVersion >= 120000,
 }
 
 if app.GameBuildVersion >= 90000 then

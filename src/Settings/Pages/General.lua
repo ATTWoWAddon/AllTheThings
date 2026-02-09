@@ -718,86 +718,47 @@ end
 checkboxTransmog:SetATTTooltip(tooltip)
 checkboxTransmog:AlignAfter(accwideCheckboxTransmog)
 
-local checkboxMainOnlyMode;
-if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cataclysm.
-	local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,
-	function(self)
-		self:SetChecked(settings:Get("Completionist"))
-		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:SetCompletionistMode(self:GetChecked())
-	end)
-	checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
-	checkboxSources:AlignAfter(checkboxTransmog)
-
-	checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
-	function(self)
-		local rPerc, gPerc, bPerc = GetClassColor(app.Class)
-		self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
-		self:SetChecked(settings:Get("MainOnly"))
-		if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
-			self:SetChecked(false)
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:SetChecked(settings:Get("MainOnly"))
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:SetMainOnlyMode(self:GetChecked())
-	end)
-	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
-	checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
-
-	if app.IsClassic then
-		local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
-		function(self)
-			self:SetChecked(settings:Get("Only:NotTrash"))
-			if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
-		end,
-		function(self)
-			settings:Set("Only:NotTrash", self:GetChecked());
-			settings:UpdateMode(1);
-		end)
-		checkboxQualityFilter:SetATTTooltip(L.ONLY_NOT_TRASH_TOOLTIP)
-		checkboxQualityFilter:AlignAfter(checkboxMainOnlyMode)
-		checkboxQualityFilter:SetScale(0.8);
+local checkboxSources = child:CreateCheckBox(L.COMPLETIONIST_MODE,
+function(self)
+	self:SetChecked(settings:Get("Completionist"))
+	if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
 	end
-else
-	local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
-	function(self)
-		self:SetChecked(settings:Get("Only:RWP"))
-		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
-		end
-	end,
-	function(self)
-		settings:Set("Only:RWP", self:GetChecked());
-		settings:UpdateMode(1);
-	end)
-	checkboxOnlyRWP:SetATTTooltip(L.ONLY_RWP_TOOLTIP)
-	checkboxOnlyRWP:AlignAfter(checkboxTransmog)
-	checkboxOnlyRWP:SetScale(0.8);
+end,
+function(self)
+	settings:SetCompletionistMode(self:GetChecked())
+end)
+checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
+checkboxSources:AlignAfter(checkboxTransmog)
+checkboxSources:SetScale(0.8);
 
+local checkboxMainOnlyMode = child:CreateCheckBox(L.MAIN_ONLY,
+function(self)
+	local rPerc, gPerc, bPerc = GetClassColor(app.Class)
+	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
+	self:SetChecked(settings:Get("MainOnly"))
+	if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
+		self:SetChecked(false)
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:SetChecked(settings:Get("MainOnly"))
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetMainOnlyMode(self:GetChecked())
+end)
+checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
+checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
+checkboxMainOnlyMode:SetScale(0.6);
+
+if app.IsClassic then
 	local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
 	function(self)
 		self:SetChecked(settings:Get("Only:NotTrash"))
@@ -814,8 +775,29 @@ else
 		settings:UpdateMode(1);
 	end)
 	checkboxQualityFilter:SetATTTooltip(L.ONLY_NOT_TRASH_TOOLTIP)
-	checkboxQualityFilter:AlignBelow(checkboxOnlyRWP)
-	checkboxQualityFilter:SetScale(0.8);
+	checkboxQualityFilter:AlignAfter(checkboxMainOnlyMode)
+	checkboxQualityFilter:SetScale(0.6);
+	
+	if app.GameBuildVersion < 40000 then	-- Transmog officially supported with Cataclysm.
+		local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
+		function(self)
+			self:SetChecked(settings:Get("Only:RWP"))
+			if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
+		end,
+		function(self)
+			settings:Set("Only:RWP", self:GetChecked());
+			settings:UpdateMode(1);
+		end)
+		checkboxOnlyRWP:SetATTTooltip(L.ONLY_RWP_TOOLTIP)
+		checkboxOnlyRWP:AlignAfter(checkboxQualityFilter)
+		checkboxOnlyRWP:SetScale(0.6);
+	end
 end
 
 -- Heirlooms aren't in the game until late Wrath Classic.
@@ -845,7 +827,7 @@ end
 
 local accwideCheckboxMounts =
 child:CreateAccountWideCheckbox("MOUNTS", "Mounts")
-	:AlignBelow(accwideCheckboxIllusions or accwideCheckboxHeirlooms or accwideCheckboxTransmog)
+	:AlignBelow(accwideCheckboxIllusions or accwideCheckboxHeirlooms or checkboxMainOnlyMode or accwideCheckboxTransmog, checkboxMainOnlyMode and accwideCheckboxTransmog)
 child:CreateTrackingCheckbox("MOUNTS", "Mounts", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxMounts)
 
