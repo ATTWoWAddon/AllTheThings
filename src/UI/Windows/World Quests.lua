@@ -46,6 +46,20 @@ app:CreateWindow("WorldQuests", {
 			app.TryPopulateQuestRewards(questObject);
 			return questObject;
 		end
+		local function CreateMapWithStyle(id)
+			local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
+			for _,data in ipairs(app.SearchForField("mapID", id)) do
+				if data.mapID and data.icon then
+					mapObject.name = data.name;
+					mapObject.icon = data.icon;
+					mapObject.lvl = data.lvl;
+					mapObject.lore = data.lore;
+					mapObject.description = data.description;
+					break;
+				end
+			end
+			return mapObject;
+		end
 
 		local UpdateButton = app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
 			["icon"] = 134269,
@@ -339,7 +353,7 @@ app:CreateWindow("WorldQuests", {
 				for _,mapInfo in ipairs(mapChildInfos) do
 					-- start fetching the data while other stuff is setup
 					C_QuestLine_RequestQuestLinesForMap(mapInfo.mapID);
-					local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
+					local subMapObject = CreateMapWithStyle(mapInfo.mapID);
 
 					-- Build the children maps
 					self:BuildMapAndChildren(subMapObject);
@@ -387,7 +401,7 @@ app:CreateWindow("WorldQuests", {
 				-- app.PrintDebug("WQ.WorldMapIDs.", mapID)
 				-- start fetching the data while other stuff is setup
 				C_QuestLine_RequestQuestLinesForMap(mapID);
-				local mapObject = app.CreateMapWithStyle(mapID);
+				local mapObject = CreateMapWithStyle(mapID);
 
 				-- Build top-level maps all the way down
 				self:BuildMapAndChildren(mapObject);
@@ -397,7 +411,7 @@ app:CreateWindow("WorldQuests", {
 				if additionalMapIDs then
 					for i=1,#additionalMapIDs do
 						-- Basic Sub-map
-						local subMap = app.CreateMapWithStyle(additionalMapIDs[i])
+						local subMap = CreateMapWithStyle(additionalMapIDs[i])
 
 						-- Build top-level maps all the way down for the sub-map
 						self:BuildMapAndChildren(subMap);
@@ -415,7 +429,7 @@ app:CreateWindow("WorldQuests", {
 			for _,pair in ipairs(emissaryMapIDs) do
 				local mapID = pair[1];
 				-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
-				local mapObject = app.CreateMapWithStyle(mapID);
+				local mapObject = CreateMapWithStyle(mapID);
 				local bounties = C_QuestLog_GetBountiesForMapID(pair[2]);
 				if bounties and #bounties > 0 then
 					for _,bounty in ipairs(bounties) do
@@ -429,7 +443,7 @@ app:CreateWindow("WorldQuests", {
 
 			-- Heroic Deeds
 			if self.includePermanent and not (app.IsQuestFlaggedCompleted(32900) or app.IsQuestFlaggedCompleted(32901)) then
-				local mapObject = app.CreateMapWithStyle(424);
+				local mapObject = CreateMapWithStyle(424);
 				NestObject(mapObject, GetPopulatedQuestObject(app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901));
 				MergeObject(temp, mapObject);
 			end

@@ -245,8 +245,7 @@ app.AddEventRegistration("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", UpdateLocation
 
 -- Exploration
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
-local KEY, CACHE = "explorationID", "Exploration"
-local CLASSNAME = "Exploration"
+local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
 app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
 	["name"] = function(t)
@@ -272,25 +271,37 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	["mapID"] = function(t)
 		return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
 	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Exploration and t.coords and #t.coords > 0;
-	end,
+	["collectible"] = app.ReturnTrue,
 	["collected"] = function(t)
 		return app.TypicalCharacterCollected(CACHE, t.explorationID)
 	end,
 	["saved"] = function(t)
-		return app.IsCached("Exploration", t.explorationID)
+		return app.IsCached(CACHE, t.explorationID)
 	end,
 	["coords"] = function(t)
 		return ExplorationAreaPositionDB[t.explorationID];
 	end,
 });
+local function CollectibleForExploration(t)
+	return t.coords and #t.coords > 0;
+end
+local function AssignExplorationMethods()
+	if app.Settings.Collectibles[CLASSNAME] then
+		app.SwapClassDefinitionMethod(CLASSNAME,"collectible",CollectibleForExploration)
+	else
+		app.SwapClassDefinitionMethod(CLASSNAME,"collectible",app.ReturnFalse)
+	end
+end
+app.AddEventHandler("OnSettingsNeedsRefresh", AssignExplorationMethods);
+app.AddEventHandler("OnStartup", AssignExplorationMethods);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 end)
 
 -- Reporting
+local ReportedAreas = {};
+app.AddEventHandler("OnReportReset", function() wipe(ReportedAreas) end)
 local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
 	local id = #t + 1
 	local keyid = tonumber(key)
@@ -337,8 +348,6 @@ local AreaIDNameMapperBackwards = setmetatable({}, {__index = function(t,key)
 		id = id - 1
 	end
 end})
-local ReportedAreas = {};
-app.AddEventHandler("OnReportReset", function() wipe(ReportedAreas) end)
 local function PrintDiscordInformationForExploration(o, type)
 	-- Temporarily disabled reports for users until we have most areas sorted.
 	-- We can't rely on the ID guessing based on the area name when we miss so many still.
@@ -475,7 +484,7 @@ end
 local function RefreshExplorationData(data) app.UpdateRawIDs("explorationID", data); end
 local function CacheAndUpdateExploration(explorationIDTable)
 	-- app.PrintTable(saved)
-	app.SetBatchCached("Exploration", explorationIDTable, 1)
+	app.SetBatchCached(CACHE, explorationIDTable, 1)
 	-- Trigger updates for these exploration areas
 	local rawAreaIDdata = {}
 	for areaID,_ in pairs(explorationIDTable) do
@@ -693,7 +702,7 @@ local function CheckHitsForMap(grid, mapID, hits)
 	end
 	return hits
 end
-local OnClickForExplorationHeader = function(row, button)
+local function OnClickForExplorationHeader(row, button)
 	if button == "RightButton" and IsControlKeyDown() then
 		local info = {};
 		for i,exploration in ipairs(row.ref.g) do
@@ -1097,27 +1106,6 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		return true;
 	end
 end));
-app.CreateMapWithStyle = function(id)
-	local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
-	for _,data in ipairs(app.SearchForField("mapID", id)) do
-		if data.mapID and data.icon then
-			mapObject.text = data.text;
-			mapObject.icon = data.icon;
-			mapObject.lvl = data.lvl;
-			mapObject.lore = data.lore;
-			mapObject.description = data.description;
-			break;
-		end
-	end
-
-	if not mapObject.text then
-		local mapInfo = C_Map_GetMapInfo(id);
-		if mapInfo then
-			mapObject.text = mapInfo.name;
-		end
-	end
-	return mapObject;
-end
 
 -- Instances
 local instanceFields = {
