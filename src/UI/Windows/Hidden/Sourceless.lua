@@ -12,7 +12,7 @@ app:CreateWindow("Sourceless", {
 	HideFromSettings = true,
 	Preload = true,
 	OnInit = function(self)
-		self:SetData(app.CacheFields(app.CreateRawText(app.Modules.Color.Colorize(L.SOURCELESS, app.Colors.TooltipWarning), {
+		self:SetData(app.CreateRawText(app.Modules.Color.Colorize(L.SOURCELESS, app.Colors.TooltipWarning), {
 			icon = app.asset("WindowIcon_Unsorted"),
 			description = L.NEVER_IMPLEMENTED_DESC,
 			title = L.SOURCELESS .. DESCRIPTION_SEPARATOR .. app.Version,
@@ -22,9 +22,10 @@ app:CreateWindow("Sourceless", {
 			_missing = true,
 			visible = true,
 			_nyi = true,
-		})));
+		}));
 		self:AddEventHandler("OnDataCached", function(self, categories)
 			self.data.g = categories.Sourceless;
+			app.CacheFields(self.data, true);
 			self:AssignChildren();
 		end);
 	end,

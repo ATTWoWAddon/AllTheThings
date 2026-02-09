@@ -9,7 +9,7 @@ app:CreateWindow("Hidden Achievement Triggers", {
 	HideFromSettings = true,
 	Preload = true,
 	OnInit = function(self)
-		self:SetData(app.CacheFields(app.CreateRawText(app.Modules.Color.Colorize(L.HIDDEN_ACHIEVEMENT_TRIGGERS, app.Colors.ChatLinkHQT), {
+		self:SetData(app.CreateRawText(app.Modules.Color.Colorize(L.HIDDEN_ACHIEVEMENT_TRIGGERS, app.Colors.ChatLinkHQT), {
 			icon = app.asset("Category_Achievements"),
 			description = L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC,
 			title = L.HIDDEN_ACHIEVEMENT_TRIGGERS .. DESCRIPTION_SEPARATOR .. app.Version,
@@ -17,9 +17,10 @@ app:CreateWindow("Hidden Achievement Triggers", {
 			_nosearch = true,
 			visible = true,
 			_hqt = true,
-		}), true));
+		}));
 		self:AddEventHandler("OnDataCached", function(self, categories)
 			self.data.g = categories.HiddenAchievementTriggers;
+			app.CacheFields(self.data, true);
 			self:AssignChildren();
 		end);
 	end,

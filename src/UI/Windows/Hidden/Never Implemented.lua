@@ -9,7 +9,7 @@ app:CreateWindow("Never Implemented", {
 	HideFromSettings = true,
 	Preload = true,
 	OnInit = function(self)
-		self:SetData(app.CacheFields(app.CreateRawText(L.NEVER_IMPLEMENTED, {
+		self:SetData(app.CreateRawText(L.NEVER_IMPLEMENTED, {
 			icon = app.asset("Interface_Tchest"),
 			description = L.NEVER_IMPLEMENTED_DESC,
 			title = L.NEVER_IMPLEMENTED .. DESCRIPTION_SEPARATOR .. app.Version,
@@ -17,9 +17,10 @@ app:CreateWindow("Never Implemented", {
 			_nosearch = true,
 			visible = true,
 			_nyi = true,
-		})));
+		}));
 		self:AddEventHandler("OnDataCached", function(self, categories)
 			self.data.g = categories.NeverImplemented;
+			app.CacheFields(self.data, true);
 			app.AssignFieldValue(self.data, "u", 1);
 			self:AssignChildren();
 		end);
