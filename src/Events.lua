@@ -213,11 +213,6 @@ end
 local Runner = app.CreateRunner("events")
 local Run = Runner.Run
 local IsRunning = Runner.IsRunning
-if app.Debugging then
--- When debugging, let's run 3 events on the Runner per frame since it will do [Start / (handler) / End] as 3 individual handlers
--- Typically, with Debug prints commented out, it will simply do a (handler) every frame
-Runner.SetPerFrameDefault(3)
-end
 -- Runner.ToggleDebugFrameTime()
 local Callback = app.CallbackHandlers.Callback
 local IgnoredDebugEvents = {
@@ -225,6 +220,7 @@ local IgnoredDebugEvents = {
 	RowOnLeave = true,
 	RowOnClick = true,
 	-- OnWindowUpdated = true,
+	-- OnWindowRefreshed = true,
 	-- OnSearchResultUpdate = true,
 }
 local function DebugEventTriggered(eventName,...)
@@ -237,7 +233,7 @@ local function DebugEventStart(eventName,...)
 end
 local function DebugEventDone(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
-	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.RemovedWithPatch),...)
+	app.PrintDebugPrior(app.Modules.Color.Colorize(eventName,app.Colors.RemovedWithPatch),...)
 end
 local function DebugRunnerEventStart(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
@@ -269,7 +265,7 @@ local function DebugStartRunnerFunc(eventName,...)
 end
 local function DebugEndRunnerFunc(eventName,...)
 	if IgnoredDebugEvents[eventName] then return end
-	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.TimeUnder2Hr),...)
+	app.PrintDebugPrior(app.Modules.Color.Colorize(eventName,app.Colors.TimeUnder2Hr),...)
 end
 local function DebugCallbackEvent(eventName)
 	if IgnoredDebugEvents[eventName] then return end
@@ -335,7 +331,9 @@ local function HandleEvent(eventName, ...)
 		-- DebugStartRunnerEvent(eventName,...)
 		-- Run(DebugRunnerEventStart, eventName, ...)
 		for i=1,#handlers do
-			-- Run(DebugStartRunnerFunc,"Handler #",i)
+			-- Debug ONLY
+			-- Run(function(...)DebugStartRunnerFunc("Handler #",i) handlers[i](...) DebugEndRunnerFunc("Handler Done") end, ...)
+			-- Live
 			Run(handlers[i], ...)
 			-- Run(DebugEndRunnerFunc,"Handler Done")
 		end
