@@ -1914,7 +1914,6 @@ app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 	end
 	RefreshQuestInfo(questID);
 end)
-app.AddEventHandler("OnRefreshCollections", RefreshAllQuestInfo);
 
 -- popout handler for Quest Items group
 local function AddQuestItems(group)
