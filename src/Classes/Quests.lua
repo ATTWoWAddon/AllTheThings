@@ -1145,7 +1145,7 @@ local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
 	-- The achievement functions would be cached more efficiently in that file and be able to version properly.
 	achID = function(achievementID)
-		return app.CurrentCharacter.Achievements[achievementID];
+		return select(4, GetAchievementInfo(achievementID))
 	end,
 	label_achID = ACHIEVEMENT_UNLOCKED or "Achievement Earned",
 	text_achID = function(achievementID)
