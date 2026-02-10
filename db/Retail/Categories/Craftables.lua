@@ -2498,6 +2498,8 @@ i(22850,{f=55,lvl=10,spellID=28517}),
 i(28101,{f=55,lvl=23,spellID=17531}),
 i(28100,{f=55,lvl=23,spellID=17534})}),
 h(-679,{awp=110207,g={
+de(16220,{awp=120000,itemID=264900,spellID=1272806}),
+de(16219,{awp=120000,itemID=264899,spellID=1272805}),
 de(16082,{itemID=264705,spellID=1272499}),
 de(16083,{itemID=264706,spellID=1272500}),
 de(16086,{itemID=264709,spellID=1272504})}}),

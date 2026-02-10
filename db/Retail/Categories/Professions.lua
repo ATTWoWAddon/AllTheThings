@@ -219,7 +219,7 @@ heir(131733,{f=29,requireSkill=794,sourceID=77338}),
 crit(29968,{achID=10603,id=3,requireSkill=794})}})}}),
 ah(131734,{requireSkill=794,type="i",g={
 q(41192,{coords={a[311]},isWeekly=1,lvl=45,qgs=a[526],requireSkill=794}),
-q(41193,{coords={a[368]},isWeekly=1,lvl=45,qgs=a[145],requireSkill=794,sourceQuests={41192},g={
+q(41193,{coords={{45.8,44.6,750}},isWeekly=1,lvl=45,qgs=a[145],requireSkill=794,sourceQuests={41192},g={
 mnt(196681,{b=1,itemID=131734,lvl=17,requireSkill=794}),
 i(134095,{requireSkill=794}),
 crit(29978,{achID=10603,id=13,requireSkill=794})}})}}),

@@ -1905,8 +1905,7 @@ h(-63,{
 i(3173,{q=1}),
 i(5839,{crs={3660},rwp=40003}),
 r(6692,{crs={2337},itemID=5773,learnedAt=150,q=2,requireSkill=197,rwp=40003}),
-i(5568,{crs={2156,2157},f=37,lvl=13,q=1,rwp=40001}),
-i(5469,{q=1})})}}),
+i(5568,{crs={2156,2157},f=37,lvl=13,q=1,rwp=40001})})}}),
 m(1443,{icon=236742,lore="Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",g={
 h(-12,{
 ach(848,{
