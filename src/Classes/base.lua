@@ -1195,3 +1195,4 @@ app.IsAccountCached = function() NotInitialized("IsAccountCached") end;
 app.IsAccountTracked = function() NotInitialized("IsAccountTracked") end;
 app.SetBatchAccountCached = function() NotInitialized("SetBatchAccountCached") end;
 app.SetBatchCached = function() NotInitialized("SetBatchCached") end;
+app.SetBatchCachedAndTrackChanges = function() NotInitialized("SetBatchCachedAndTrackChanges") end;

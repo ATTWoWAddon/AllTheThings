@@ -226,6 +226,22 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 		if anyNew then UpdateTimestampForField(field); end
 	end
+	local function SetBatchCachedAndTrackChanges(field, ids, changes, state)
+		-- app.PrintDebug("SBC",field,state)
+		local container = currentCharacter[field]
+		local anyChanges = false;
+		for id,_ in pairs(ids) do
+			if container[id] ~= state then
+				container[id] = state;
+				changes[#changes + 1] = id;
+				anyChanges = true;
+			end
+		end
+		if anyChanges then
+			UpdateTimestampForField(field);
+			return true;
+		end
+	end
 	-- TODO: replace uses with SetThingCollected
 	local function SetAccountCollected(t, field, id, collected, settingKey)
 		-- app.PrintDebug("SC:A",app:SearchLink(t),t and t.collectible,field,id,collected)
@@ -339,6 +355,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	app.IsAccountTracked = IsAccountTracked
 	app.SetBatchAccountCached = SetBatchAccountCached
 	app.SetBatchCached = SetBatchCached
+	app.SetBatchCachedAndTrackChanges = SetBatchCachedAndTrackChanges;
 	-- Consolidated Functions
 	app.TypicalCharacterCollected = function(CACHE, id, SETTING)
 		-- character collected

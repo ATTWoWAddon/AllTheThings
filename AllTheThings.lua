@@ -1764,7 +1764,6 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Professions then currentCharacter.Professions = {}; end
 	app.CurrentCharacter = currentCharacter;
