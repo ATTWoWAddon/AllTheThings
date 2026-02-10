@@ -1,8 +1,8 @@
 -- Chat and Print functionality
 local appName, app = ...;
 
-local print, tostring, ipairs, pairs, type
-	= print, tostring, ipairs, pairs, type
+local print, tostring, ipairs, pairs, type,math_floor
+	= print, tostring, ipairs, pairs, type,math.floor
 
 app.print = function(...)
 	print(app.L.SHORTTITLE, ...);
@@ -30,8 +30,8 @@ app.PrintDebugPrior = function(...)
 	if app.Debugging then
 		local now = GetTimePreciseSec();
 		if DEBUG_PRINT_LAST then
-			local diff = now - DEBUG_PRINT_LAST;
-			print(now,"<>",diff,"Stutter @", math.ceil(1 / diff), ...)
+			local diff = now - DEBUG_PRINT_LAST
+			print(now,"<>",math_floor(diff * 10000 / 10),"ms @", math.ceil(1 / diff),"FPS", ...)
 		else
 			print(now,0,...)
 		end
