@@ -8549,7 +8549,7 @@ local achievementCriterias = {
 	},
 	[3225] = {
 		name = "Arena Master obtained",
-		type = 36,
+		type = 0,
 		asset = 18706,
 	},
 	[3226] = {
