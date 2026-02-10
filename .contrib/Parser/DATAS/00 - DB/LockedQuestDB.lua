@@ -45,3 +45,43 @@ for _,achLockData in ipairs(LockedQuestsByAchievement) do
 		quest.lockCriteria = {1,"achID",achID}
 	end
 end
+
+-- These are groups of character-specific Quests wherein only 1 quest in the batch can be completed across the entire account
+-- Essentially, each quest in the batch should have a lockCriteria of the other quests in the same batch
+-- NOTE: For simplicity the logic expects only 2 quests per batch. If this needs to change, adjust below
+local AccountWideMutualExclusiveQuests = {
+	{
+		53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
+		53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
+	},
+	{
+		53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+		53062,	-- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
+	},
+	{
+		53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+		53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+	},
+	{
+		53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+		53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+	},
+	{
+		31977,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
+		31975,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
+	},
+	{
+		31980,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
+		31976,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
+	},
+}
+
+-- Add Quest-based LockCriteria
+for _,batch in ipairs(AccountWideMutualExclusiveQuests) do
+	local questID1 = batch[1]
+	local questID2 = batch[2]
+	local quest1 = QuestDB[questID1]
+	quest1.lockCriteria = {1,"questID",questID2}
+	local quest2 = QuestDB[questID2]
+	quest2.lockCriteria = {1,"questID",questID1}
+end

@@ -112,58 +112,6 @@ local function CacheAccountWideMiscQuests()
 		end
 	end
 end
-local function CacheAccountWideSharedQuests()
-	local acctQuests = ATTAccountWideData.Quests;
-	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
-	local anyComplete;
-	-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
-	for _,questGroup in ipairs({
-		{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
-		{
-			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
-			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
-		},
-		{
-			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
-			53062,	-- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
-		},
-		{
-			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
-			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-		},
-		{
-			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
-			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
-		},
-		{
-			31977,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
-			31975,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
-		},
-		{
-			31980,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
-			31976,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
-		},
-	}) do
-		for _,questID in ipairs(questGroup) do
-			-- If this Character has the Quest completed
-			if IsQuestFlaggedCompleted(questID) then
-				-- Mark the quest as completed for the Account
-				acctQuests[questID] = 1;
-				anyComplete = true;
-			end
-		end
-		-- if any of the quest group is considered complete, then the rest need to be considered 'complete' as well since they can never be actually completed on the account
-		if anyComplete then
-			for _,questID in ipairs(questGroup) do
-				-- Mark the quest completion since it's not 'really' completed
-				if not acctQuests[questID] then
-					acctQuests[questID] = 2;
-				end
-			end
-		end
-		anyComplete = nil;
-	end
-end
 local function FixNonOneTimeQuests()
 	local oneTimeQuests = ATTAccountWideData.OneTimeQuests;
 
@@ -255,7 +203,6 @@ local function CheckOncePerAccountQuestsForCharacter()
 end
 
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
-app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
 app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
