@@ -269,7 +269,16 @@ local ForOwnItemFields = {	-- Type 36
 	end,
 };
 local ForQuestFields = {	-- Type 27
-	["collectible"] = app.ReturnTrue,
+	["collectible"] = function(t)
+		local quests = app.SearchForField("questID", t.asset);
+		if quests and #quests > 0 then
+			-- Only non-repeatable quests can be tracked this way.
+			local collectible = not quests[1].repeatable;
+			t.collectible = collectible;
+			return collectible;
+		end
+		return true;
+	end,
 	["amount"] = function(t) return 1; end,
 	["collected"] = function(t)
 		return t.current >= t.amount;
