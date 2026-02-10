@@ -173,3 +173,15 @@ ExportDB.OPAQDB = {
 	88947,	-- Undermined Delves
 	91780,	-- Ethereal Delves
 }
+
+-- This is a set of quest which mistakenly were added as OPA quests but were later determined to be inaccurately-assigned
+-- due to unknown lockCriteria or other situation which is now represented accurately in the data
+ExportDB._Compressed.NonOPAQDB = true
+ExportDB.NonOPAQDB = {
+	62038,	-- Handful of Oats
+	62042,	-- Grooming Brush
+	62047,	-- Sturdy Horseshoe
+	62049,	-- Bucket of Clean Water
+	62048,	-- Comfortable Saddle Blanket
+	62050,	-- Dredhollow Apple
+}

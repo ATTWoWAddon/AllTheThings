@@ -30,19 +30,10 @@ local function FixNonOneTimeQuests()
 	local oneTimeQuests = ATTAccountWideData.OneTimeQuests;
 
 	-- if we ever erroneously add an account-wide quest and find out it isn't put it here so it reverts back to being handled as a normal quest
-	-- quests in AccountWideQuestsDB will automatically be removed from OneTimeQuests
-	for _,questID in ipairs({
-		32008,	-- Audrey Burnhep (A)
-		32009,	-- Varzok (H)
-		62038,	-- Handful of Oats
-		62042,	-- Grooming Brush
-		62047,	-- Sturdy Horseshoe
-		62049,	-- Bucket of Clean Water
-		62048,	-- Comfortable Saddle Blanket
-		62050,	-- Dredhollow Apple
-	}) do
+	for _,questID in ipairs(app.NonOPAQDB or app.EmptyTable) do
 		oneTimeQuests[questID] = nil;
 	end
+	-- quests in AccountWideQuestsDB will automatically be removed from OneTimeQuests
 	for questID,_ in pairs(app.AccountWideQuestsDB) do
 		oneTimeQuests[questID] = nil;
 	end
@@ -98,7 +89,7 @@ local function OneTimeFixes()
 end
 local function CheckOncePerAccountQuestsForCharacter()
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
+	local oneTimeQuests = ATTAccountWideData.OneTimeQuests
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	local charGuid = app.GUID;
 	for questID,questGuid in pairs(oneTimeQuests) do
@@ -108,8 +99,6 @@ local function CheckOncePerAccountQuestsForCharacter()
 			if questGuid and questGuid ~= charGuid then
 				app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
 			end
-			-- Mark the quest as completed for the Account
-			acctQuests[questID] = 1;
 			-- Mark the character which completed the Quest
 			oneTimeQuests[questID] = charGuid;
 		end
