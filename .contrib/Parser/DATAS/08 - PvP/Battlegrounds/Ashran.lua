@@ -260,17 +260,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35872, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35690, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35868, {	-- A Bunch of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36031, {	-- A Bunch of Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -281,17 +278,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36064, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36067, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36026, {	-- A Bunch of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35638, {	-- A Few Artifact Fragments (A)
 					["provider"] = { "n", 81870 },	-- Anenga
@@ -302,17 +296,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35867, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35871, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35689, {	-- A Few Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36030, {	-- A Few Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -323,17 +314,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36063, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36024, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36066, {	-- A Few Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35639, {	-- A TON of Artifact Fragments (A)
 					["provider"] = { "n", 81870 },	-- Anenga
@@ -344,17 +332,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(35873, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35691, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35869, {	-- A TON of Artifact Fragments (A)
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36032, {	-- A TON of Artifact Fragments (H)
 					["provider"] = { "n", 82204 },	-- Atomik
@@ -365,12 +350,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36025, {	-- A TON of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36068, {	-- A TON of Artifact Fragments (H)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36065, {	-- A TON of Artifact Fragments (H)
 					["provider"] = { "n", 83995 },	-- Fura
