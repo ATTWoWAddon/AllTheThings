@@ -2055,6 +2055,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							gold(500, i(122390)),	-- Musty Tome of the Lost
 							gold(750, i(122365)),	-- Reforged Truesilver Champion
 							gold(750, i(122386)),	-- Repurposed Lava Dredger
+							gold(650, i(269992, {	-- Sharpened Arcanite Warglaive
+								["timeline"] = { ADDED_12_0_0 },
+							})),
 							gold(650, i(122364)),	-- Sharpened Scarlet Kris
 							gold(650, i(122367)),	-- The Blessed Hammer of Grace
 							gold(750, i(122366)),	-- Upgraded Dwarven Hand Cannon

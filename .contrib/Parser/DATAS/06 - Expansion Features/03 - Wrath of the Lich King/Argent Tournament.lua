@@ -4439,6 +4439,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						champ(95, i(48718, {	-- Repurposed Lava Dredger
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
+						champ(25, i(269992, {	-- Sharpened Arcanite Warglaive
+							["timeline"] = { ADDED_12_0_0 },
+						})),
 						champ(60, i(42952, {	-- Stained Shadowcraft Spaulders
 							["timeline"] = { REMOVED_6_1_0 },
 						})),

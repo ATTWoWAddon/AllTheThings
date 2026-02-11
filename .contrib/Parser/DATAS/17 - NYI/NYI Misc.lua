@@ -730,7 +730,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178086),	-- Revendreth Rare Treasure
 			i(178085),	-- Revendreth Uncommon Treasure
 			i(178091),	-- Revendreth Unique Loot
-			i(180354),	-- Ripped Stuffing
 			i(175048),	-- Root Structure
 			i(176093),	-- RSVP: Alexandros Mograine
 			i(176058),	-- RSVP: Baroness Vashj
