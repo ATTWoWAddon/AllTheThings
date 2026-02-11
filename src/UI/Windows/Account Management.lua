@@ -441,6 +441,7 @@ local AccountWideDataHandlers = setmetatable({
 	end,
 });
 if app.GameBuildVersion > 30000 then
+	AccountWideDataHandlers.Achievements = PartialSyncCharacterData;
 	AccountWideDataHandlers.BattlePets = PartialSyncCharacterData;
 	AccountWideDataHandlers.Mounts = PartialSyncCharacterData;
 else

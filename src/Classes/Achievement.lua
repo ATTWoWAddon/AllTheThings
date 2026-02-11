@@ -40,7 +40,23 @@ local CollectionCacheFunctions = {
 			end
 		end
 		return achs
-	end
+	end,
+	AccountWideAchievements = function()
+		local achs = {}
+		local FlagsUtil_IsSet = FlagsUtil.IsSet
+		if not FlagsUtil_IsSet then return achs end
+
+		local maxid = CollectionCache.MaxAchievementID
+		local flags
+		local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
+		for id=1,maxid do
+			flags = select(9,GetAchievementInfo(id))
+			if FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide) then
+				achs[id] = true
+			end
+		end
+		return achs
+	end,
 }
 CollectionCache = setmetatable({}, { __index = function(t, key)
 	local func = CollectionCacheFunctions[key]
@@ -67,21 +83,20 @@ do
 		= GetStatistic
 
 	local cache = app.CreateCache(KEY);
-	local FLAG_AccountWide = ACHIEVEMENT_FLAGS_ACCOUNT
-	local FlagsUtil_IsSet,string_len,string_sub
-		= FlagsUtil.IsSet,string.len,string.sub
+	local string_len,string_sub
+		= string.len,string.sub
 	local Colorize = app.Modules.Color.Colorize
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
 		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t[KEY]);
-		local _, name, _, _, _, _, _, _, flags, icon = GetAchievementInfo(id);
+		local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
 		local silentLink = GetAchievementLink(id)
 		if not silentLink then
 			app.PrintDebug(Colorize("Achievement with no Link",app.Colors.ChatLinkError),id)
 			silentLink = name or "achievementID:"..id
 		end
 		_t.silentLink = silentLink
-		local accountWide = FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide)
+		local accountWide = CollectionCache.AccountWideAchievements[id]
 		_t.accountWide = accountWide
 		if accountWide then
 			local len = string_len(silentLink)
@@ -175,8 +190,8 @@ do
 		end,
 		saved = function(t)
 			local id = t[KEY];
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1; end
+			-- character collected or direct account-wide
+			if app.IsCached(CACHE, id) or app.IsAccountCached(CACHE, id) == 1 then return 1; end
 		end,
 		parentCategoryID = function(t)
 			return GetAchievementCategory(t[KEY]) or -1;
@@ -219,21 +234,24 @@ do
 		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
 		local mine, acct, none = {}, {}, {}
-		for _,id in ipairs(CollectionCache.RealAchievementIDs) do
+		local allIds = CollectionCache.RealAchievementIDs
+		local id
+		for i=1,#allIds do
+			id = allIds[i]
 			completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
-			if me then
-				mine[id] = true
-			elseif completed then	-- any character has completed it, we can cache for account directly
+			if completed and CollectionCache.AccountWideAchievements[id] then
 				acct[id] = true
+			elseif me then
+				mine[id] = true
 			else
 				none[id] = true
 			end
 		end
 		-- Character Cache
 		app.SetBatchCached(CACHE, mine, 1)
+		app.SetBatchCached(CACHE, acct)	-- remove acct achieves from character cache
 		app.SetBatchCached(CACHE, none)
 		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, mine, 1)
 		app.SetBatchAccountCached(CACHE, acct, 1)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
