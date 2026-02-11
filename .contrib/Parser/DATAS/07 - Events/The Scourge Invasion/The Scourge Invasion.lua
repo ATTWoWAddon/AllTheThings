@@ -138,7 +138,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 30 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -194,7 +199,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -234,7 +244,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
@@ -263,7 +278,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -576,7 +596,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -604,7 +629,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -710,7 +740,12 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
 					},
 				}),
-				["sourceQuest"] = 9153,	-- Under the Shadow
+				["sourceQuest"] = 
+					-- #if SEASON_OF_DISCOVERY
+					88744,	-- Under the Shadow
+					-- #else
+					9153,	-- Under the Shadow
+					-- #endif
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
 				["repeatable"] = true,
