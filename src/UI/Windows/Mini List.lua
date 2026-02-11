@@ -412,9 +412,12 @@ local function TrySwapFromCache(self)
 	return true
 end
 local function TryAddAutoExpand(self)
-	if not self.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
-		self.ExpandInfo = { Expand = true }
-		return true
+	if not self.fullCollapsed then
+		if app.Settings:GetTooltipSetting("Expand:MiniList")
+			or (IsInInstance() and app.Settings:GetTooltipSetting("Expand:Difficulty")) then
+			self.ExpandInfo = { Expand = true }
+			return true
+		end
 	end
 end
 

@@ -459,25 +459,32 @@ local ObjectSkipKeys = {
 	[382621] = true,	-- Revival Catalyst Console
 	[456208] = true,	-- The Catalyst
 };
+local DoExpansion
+local function DefaultSkipExpand(group)
+	-- never skip expansion from the root group
+	if group.window then return end
+
+	return not DoExpansion and true
+end
 local ShouldSkipAutoExpandForKey = setmetatable({
-	headerID = function(group) return HeaderSkipKeys[group.headerID]; end,
-	objectID = function(group) return ObjectSkipKeys[group.objectID]; end,
+	def_headerID = function(group) return HeaderSkipKeys[group.headerID]; end,
+	def_objectID = function(group) return ObjectSkipKeys[group.objectID]; end,
 	-- Item/Difficulty as Headers should not expand
 	itemID = app.ReturnTrue,
-	difficultyID = function(group)
-		if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-			-- If we were passed in a hash table for difficulties, then run against that
-			local difficultyHash = group.difficultyHash;
-			for id,_ in pairs(app.GetCurrentDifficulties()) do
-				if difficultyHash[id] then
-					return false;
-				end
+	def_difficultyID = function(group)
+		-- If we were passed in a hash table for difficulties, then run against that
+		local difficultyHash = group.difficultyHash;
+		-- app.PrintDebug("check diff expand",group.difficultyID)
+		-- app.PrintTable(app.GetCurrentDifficulties())
+		-- app.PrintTable(difficultyHash)
+		for id,_ in pairs(app.GetCurrentDifficulties()) do
+			if difficultyHash[id] then
+				return false;
 			end
-			-- If no match, then skip and also minimize the group
-			group.expanded = false;
-			return true;
 		end
-		return false;
+		-- If no match, then skip and also minimize the group
+		group.expanded = false;
+		return true;
 	end,
 	KEYLESS = function(group)
 		print("ShouldSkipAutoExpandForKey - Group Missing valid 'key':");
@@ -494,10 +501,28 @@ local ShouldSkipAutoExpandForKey = setmetatable({
 	end,
 }, {
 	__index = function(t, key)
-		t[key] = app.ReturnFalse;
-		return app.ReturnFalse;
+		return DefaultSkipExpand
 	end,
 });
+app.AddEventHandler("Settings.OnSet", function(container,key,val)
+	if container ~= "Tooltip" then return end
+
+	if key == "Expand:Difficulty" then
+		ShouldSkipAutoExpandForKey.difficultyID = val and ShouldSkipAutoExpandForKey.def_difficultyID or nil
+	elseif key == "Expand:MiniList" then
+		ShouldSkipAutoExpandForKey.headerID = val and ShouldSkipAutoExpandForKey.def_headerID or nil
+		ShouldSkipAutoExpandForKey.objectID = val and ShouldSkipAutoExpandForKey.def_objectID or nil
+	end
+end)
+app.AddEventHandler("OnLoad", function()
+	local doDiffExpand = app.Settings:GetTooltipSetting("Expand:Difficulty")
+	ShouldSkipAutoExpandForKey.difficultyID = doDiffExpand and ShouldSkipAutoExpandForKey.def_difficultyID or nil
+
+	DoExpansion = app.Settings:GetTooltipSetting("Expand:MiniList")
+	ShouldSkipAutoExpandForKey.headerID = DoExpansion and ShouldSkipAutoExpandForKey.def_headerID or nil
+	ShouldSkipAutoExpandForKey.objectID = DoExpansion and ShouldSkipAutoExpandForKey.def_objectID or nil
+end)
+app.TEST = ShouldSkipAutoExpandForKey
 -- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
 local function HasExpandedSubgroup(group)
 	if not group then return end
