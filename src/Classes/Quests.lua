@@ -98,7 +98,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	end
 
 	-- ATT is hooked into the QUEST_DATA_LOAD_RESULT event, and some addons LOVE to request the existing quest data a bazillion times
-	-- we can try our best to ignore IDs which we've already successfully acquired a valid server name
+	-- we can try our best to ignore IDs which have already successfully acquired a valid server name
 	local ValidQuestDataLoads = {}
 	-- only used to prevent some weird issue where a huge number causes C_QuestLog.RequestLoadQuestByID to throw an error
 	local MAX_QUEST_ID = 9999999
@@ -130,13 +130,9 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			end
 		end
 
-		if ValidQuestDataLoads[questID] then
-			-- since ATT is specifically requesting a questID, we will make sure not to ignore it in the event handler
-			ValidQuestDataLoads[questID] = nil
-			Runner.Run(C_QuestLog_RequestLoadQuestByID, questID)
-		else
-			Runner.Run(C_QuestLog_RequestLoadQuestByID, questID)
-		end
+		-- since ATT is specifically requesting a questID, we will make sure not to ignore it in the event handler
+		ValidQuestDataLoads[questID] = nil
+		Runner.Run(C_QuestLog_RequestLoadQuestByID, questID)
 	end
 	if app.Debugging then
 		app.RequestLoadQuestByID = RequestLoadQuestByID
