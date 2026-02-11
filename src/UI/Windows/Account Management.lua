@@ -397,8 +397,10 @@ local function PartialSyncCharacterData(data, key)
 		characterData = character[key];
 		if characterData then
 			for id,_ in pairs(characterData) do
-				-- character-based completion in account data saved as 2 for these types
-				data[id] = 2
+				-- character-based completion in account data saved as 2 for these types, if not already saved
+				if not data[id] then
+					data[id] = 2
+				end
 			end
 		end
 	end
