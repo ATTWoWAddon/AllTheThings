@@ -1,7 +1,7 @@
 @echo off
 
 @REM Download Midnight Classic database
-SET BUILD=12.0.0.65699
+SET BUILD=12.0.1.65867
 call :downloadlocalized HolidayNames
 exit /b
 
