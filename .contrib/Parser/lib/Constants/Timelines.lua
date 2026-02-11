@@ -670,11 +670,11 @@ DELETED_12_0_0 = "deleted 12.0.0.65459";				-- Midnight 12.0.0/Pre-Patch launch 
 -- We want to show everything in pre-patch already, so leave it all as 12.0.0 for now.
 CREATED_12_0_X_LAUNCH = "created 12.0.0";				-- Midnight 12.0.x Launch on March 2nd, 2026
 ADDED_12_0_X_LAUNCH = "added 12.0.0";					-- Midnight 12.0.x Launch on March 2nd, 2026
-REMOVED_12_0_X_LAUNCH = "removed 12.0.1";				-- Midnight 12.0.x Launch on March 2nd, 2026
-DELETED_12_0_X_LAUNCH = "deleted 12.0.1";				-- Midnight 12.0.x Launch on March 2nd, 2026
-CREATED_12_0_X_SEASONSTART = "created 12.0.0";			-- Midnight 12.0.x Season 1 launch on TODO
-ADDED_12_0_X_SEASONSTART = "added 12.0.0";				-- Midnight 12.0.x Season 1 launch on TODO
-REMOVED_12_0_X_SEASONSTART = "removed 12.0.1";			-- Midnight 12.0.x Season 1 launch on TODO
+REMOVED_12_0_X_LAUNCH = "removed 12.0.1.99999";			-- Midnight 12.0.x Launch on March 2nd, 2026
+DELETED_12_0_X_LAUNCH = "deleted 12.0.1.99999";			-- Midnight 12.0.x Launch on March 2nd, 2026
+CREATED_12_0_X_SEASONSTART = "created 12.0.0";			-- Midnight 12.0.x Season 1 launch on March 17th, 2026
+ADDED_12_0_X_SEASONSTART = "added 12.0.0";				-- Midnight 12.0.x Season 1 launch on March 17th, 2026
+REMOVED_12_0_X_SEASONSTART = "removed 12.0.1.99999";	-- Midnight 12.0.x Season 1 launch on March 17th, 2026
 
 
 CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5
