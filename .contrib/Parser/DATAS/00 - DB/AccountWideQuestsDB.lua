@@ -476,6 +476,18 @@ local AccountWideQuestsDB = {
 	37031,	-- Sigil of the Black Hand [M]
 	-- #ENDIF
 
+	-- #IF AFTER MOP
+	-- unknown Classic quests saved on new character
+	91567,
+	91572,
+	91573,
+	91574,
+	91575,
+	91576,
+	91577,
+	91578,
+	-- #ENDIF
+
 	-- Manual scrape from a brand new character & 86000 scan of C_QuestLog.IsAccountQuest
 	-- Nothing in this section was in the game prior to MOP that I can tell
 	-- #IF AFTER MOP
