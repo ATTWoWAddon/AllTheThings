@@ -67,6 +67,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 243283,	-- Captain Flaresworn
 				["coord"] = { 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
+					i(251324),	-- Basket of Eversong Herbs (TODO: Blizzard bug - you see on accept but not in reward)
 					i(251321),	-- Collection of Eversong Minerals
 					i(251322),	-- Thalassian Leatherworker's Duffel
 					i(251327),	-- Thalassian Tailor's Tote Bag

@@ -158,17 +158,165 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		i(238368),	-- Twisted Tetra
 		i(238379),	-- Warping Wise
 	}),
-	--[[prof(HERBALISM, {
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			-- Section I - Peacebloom
+			r(1224883),	-- Lightfused Tranquility Bloom
+			r(1223148),	-- Lush Tranquility Bloom
+			r(1224888),	-- Primal Tranquility Bloom
+			r(1223099),	-- Tranquility Bloom
+			r(1224898),	-- Voidbound Tranquility Bloom
+			r(1224893),	-- Wild Tranquility Bloom
+			-- Section II - Sanguithorn
+			r(1224886),	-- Lightfused Sanguithorn
+			r(1223151),	-- Lush Sanguithorn
+			r(1224891),	-- Primal Sanguithorn
+			r(1223135),	-- Sanguithorn
+			r(1224901),	-- Voidbound Sanguithorn
+			--r(),	-- Wild Sanguithorn
+			-- Section III - Azeroot
+			r(1223137),	-- Azeroot
+			r(1224885),	-- Lightfused Azeroot
+			r(1223150),	-- Lush Azeroot
+			r(1224890),	-- Primal Azeroot
+			r(1224900),	-- Voidbound Azeroot
+			r(1224895),	-- Wild Azeroot
+			-- Section IV - Argentleaf
+			r(1223138),	-- Argentleaf
+			r(1224882),	-- Lightfused Argentleaf
+			r(1223146),	-- Lush Argentleaf
+			r(1224887),	-- Primal Argentleaf
+			--r(),	-- Voidbound Argentleaf
+			--r(),	-- Wild Argentleaf
+			-- Section V - Mana Lily
+			r(1223139),	-- Mana Lily
+			r(1224884),	-- Lightfused Mana Lily
+			r(1223149),	-- Lush Mana Lily
+			r(1224889),	-- Primal Mana Lily
+			--r(),	-- Voidbound Mana Lily
+			--r(),	-- Wild Mana Lily
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+		},{
+			FirstCraft(87731, 1224883),	-- Lightfused Tranquility Bloom
+			--FirstCraft(XXXXX, 1223148),	-- Lush Tranquility Bloom
+			FirstCraft(87733, 1224888),	-- Primal Tranquility Bloom
+			FirstCraft(87729, 1223099),	-- Tranquility Bloom
+			FirstCraft(87734, 1224898),	-- Voidbound Tranquility Bloom
+			FirstCraft(87732, 1224893),	-- Wild Tranquility Bloom
+			FirstCraft(87737, 1224886),	-- Lightfused Sanguithorn
+			FirstCraft(87736, 1223151),	-- Lush Sanguithorn
+			FirstCraft(87739, 1224891),	-- Primal Sanguithorn
+			FirstCraft(87735, 1223135),	-- Sanguithorn
+			FirstCraft(87740, 1224901),	-- Voidbound Sanguithorn
+			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Sanguithorn
+			FirstCraft(87741, 1223137),	-- Azeroot
+			FirstCraft(87743, 1224885),	-- Lightfused Azeroot
+			FirstCraft(87742, 1223150),	-- Lush Azeroot
+			FirstCraft(87745, 1224890),	-- Primal Azeroot
+			FirstCraft(87746, 1224900),	-- Voidbound Azeroot
+			FirstCraft(87744, 1224895),	-- Wild Azeroot
+			FirstCraft(87747, 1223138),	-- Argentleaf
+			FirstCraft(87749, 1224882),	-- Lightfused Argentleaf
+			FirstCraft(87748, 1223146),	-- Lush Argentleaf
+			FirstCraft(87751, 1224887),	-- Primal Argentleaf
+			--FirstCraft(XXXXX, YYYYYYY),	-- Voidbound Argentleaf
+			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Argentleaf
+			FirstCraft(87753, 1223139),	-- Mana Lily
+			FirstCraft(87755, 1224884),	-- Lightfused Mana Lily
+			FirstCraft(87754, 1223149),	-- Lush Mana Lily
+			FirstCraft(87757, 1224889),	-- Primal Mana Lily
+			--FirstCraft(XXXXX, YYYYYYY),	-- Voidbound Mana Lily
+			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Mana Lily
+		})),
+		i(236776),	-- Argentleaf+
+		i(236777),	-- Argentleaf++
+		i(236774),	-- Azeroot+
+		i(236775),	-- Azeroot++
+		i(238387),	-- Magical Mulch
+		i(236778),	-- Mana Lily+
+		i(236779),	-- Mana Lily++
+		i(236780),	-- Nocturnal Lotus
+		i(237497),	-- Resilient Seed
+		i(236770),	-- Sanguithorn+
+		i(236771),	-- Sanguithorn++
+		i(238465),	-- Thalassian Phoenix Plume
+		i(238466),	-- Thalassian Phoenix Tail
+		i(236761),	-- Tranquility Bloom+
+		i(236767),	-- Tranquility Bloom++
+		
 	}),
-	prof(INSCRIPTION, {
+	--[[prof(INSCRIPTION, {
 	}),
 	prof(JEWELCRAFTING, {
 	}),
 	prof(LEATHERWORKING, {
 	}),
+	--]]
 	prof(MINING, {
+		n(DISCOVERY, {
+			-- Section I - Refulgent Copper
+			r(1225351),	-- Lightfused Refulgent Copper
+			r(1225354),	-- Primal Refulgent Copper
+			r(1225343),	-- Refulgent Copper
+			r(1225350),	-- Refulgent Copper Seam
+			r(1225349),	-- Rich Refulgent Copper
+			r(1225352),	-- Voidbound Refulgent Copper
+			r(1225353),	-- Wild Refulgent Copper
+			-- Section II - Brilliant Silver
+			r(1225348),	-- Brilliant Silver
+			r(1225357),	-- Brilliant Silver Seam
+			r(1225359),	-- Lightfused Brilliant Silver
+			r(1225361),	-- Primal Brilliant Silver
+			r(1225355),	-- Rich Brilliant Silver
+			r(1225362),	-- Voidbound Brilliant Silver
+			r(1225363),	-- Wild Brilliant Silver
+			-- Section III - Umbral Tin
+			r(1225367),	-- Lightfused Umbral Tin
+			r(1225369),	-- Primal Umbral Tin
+			r(1225365),	-- Rich Umbral Tin
+			r(1225347),	-- Umbral Tin
+			r(1225366),	-- Umbral Tin Seam
+			r(1225370),	-- Voidbound Umbral Tin
+			r(1225368),	-- Wild Umbral Tin
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = MINING,
+		},{
+			FirstCraft(88487, 1225351),	-- Lightfused Refulgent Copper
+			FirstCraft(88479, 1225354),	-- Primal Refulgent Copper
+			FirstCraft(88475, 1225343),	-- Refulgent Copper
+			FirstCraft(88480, 1225350),	-- Refulgent Copper Seam
+			FirstCraft(88476, 1225349),	-- Rich Refulgent Copper
+			FirstCraft(88463, 1225352),	-- Voidbound Refulgent Copper
+			FirstCraft(88486, 1225353),	-- Wild Refulgent Copper
+			FirstCraft(88471, 1225348),	-- Brilliant Silver
+			FirstCraft(88466, 1225357),	-- Brilliant Silver Seam
+			FirstCraft(88484, 1225359),	-- Lightfused Brilliant Silver
+			FirstCraft(88490, 1225361),	-- Primal Brilliant Silver
+			FirstCraft(88491, 1225355),	-- Rich Brilliant Silver
+			FirstCraft(88465, 1225362),	-- Voidbound Brilliant Silver
+			FirstCraft(88472, 1225363),	-- Wild Brilliant Silver
+			FirstCraft(88488, 1225367),	-- Lightfused Umbral Tin
+			FirstCraft(88469, 1225369),	-- Primal Umbral Tin
+			FirstCraft(88478, 1225365),	-- Rich Umbral Tin
+			FirstCraft(88477, 1225347),	-- Umbral Tin
+			FirstCraft(88481, 1225366),	-- Umbral Tin Seam
+			FirstCraft(88470, 1225370),	-- Voidbound Umbral Tin
+			FirstCraft(88485, 1225368),	-- Wild Umbral Tin
+		})),
+		i(237364),	-- Brilliant Silver Ore+
+		i(237365),	-- Brilliant Silver Ore++
+		i(237366),	-- Dazzling Thorium
+		i(237496),	-- Igneous Rock Specimen
+		i(237359),	-- Refulgent Copper Ore+
+		i(237361),	-- Refulgent Copper Ore++
+		i(237506),	-- Septarian Nodule
+		i(237362),	-- Umbral Tin Ore+
+		i(237363),	-- Umbral Tin Ore++
 	}),
-	prof(SKINNING, {
+	--[[prof(SKINNING, {
 	}),
 	prof(TAILORING, {
 	}),

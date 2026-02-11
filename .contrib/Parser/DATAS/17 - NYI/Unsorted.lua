@@ -194,19 +194,6 @@ root(ROOTS.Unsorted, {
 			i(236381),	-- Sargle's Fortune #12
 			i(236387),	-- Sargle's Fortune #13
 
-			-- Herb
-			i(236761),	-- Tranquility Bloom
-			i(236767),	-- Tranquility Bloom
-			i(236770),	-- Sanguithorn
-			i(236771),	-- Sanguithorn
-			i(236774),	-- Azeroot
-			i(236775),	-- Azeroot
-			i(236776),	-- Argentleaf
-			i(236777),	-- Argentleaf
-			i(236778),	-- Mana Lily
-			i(236779),	-- Mana Lily
-			i(236780),	-- Nocturnal Lotus
-
 			-- tailoring
 			i(236963),	-- Bright Linen
 			i(236965),	-- Bright Linen
@@ -214,15 +201,6 @@ root(ROOTS.Unsorted, {
 			i(237016),	-- Sunfire Silk
 			i(237017),	-- Arcanoweave
 			i(237018),	-- Arcanoweave
-
-			-- Mining
-			i(237359),	-- Refulgent Copper Ore
-			i(237361),	-- Refulgent Copper Ore
-			i(237362),	-- Umbral Tin Ore
-			i(237363),	-- Umbral Tin Ore
-			i(237364),	-- Brilliant Silver Ore
-			i(237365),	-- Brilliant Silver Ore
-			i(237366),	-- Dazzling Thorium
 
 			-- Blacksmithing
 			i(237367),	-- Refulgent Weightstone
@@ -233,11 +211,8 @@ root(ROOTS.Unsorted, {
 			i(237373),	-- Refulgent Razorstone
 
 			-- Minig Knowledge
-			i(237496),	-- Igneous Rock Specimen
-			i(237506),	-- Septarian Nodule
 			i(237507),	-- Cloudy Quartz
 			-- Herb
-			i(237497),	-- Resilient Seed
 			i(237498),	-- Glowing Resilient Seed
 			i(237499),	-- Wild Resilient Seed
 			i(237500),	-- Primal Resilient Seed
@@ -358,13 +333,10 @@ root(ROOTS.Unsorted, {
 			i(238382),	-- Gore Guppy
 
 			-- Herb
-			i(238387),	-- Magical Mulch
 			i(238388),	-- Imbued Mulch
 			i(238389),	-- Empowered Mulch
 
 			-- Herb Knowledge
-			i(238465),	-- Thalassian Phoenix Plume
-			i(238466),	-- Thalassian Phoenix Tail
 			i(238467),	-- Thalassian Phoenix Ember
 			i(238468),	-- Bloomed Bud
 			i(238469),	-- Sweeping Harvester's Scythe
@@ -1811,7 +1783,6 @@ root(ROOTS.Unsorted, {
 			-- Prof
 			i(251286),	-- Bundle of Petrified Roots
 			i(251287),	-- Generous Bundle of Petrified Roots
-			i(251324),	-- Basket of Eversong Herbs
 			i(251326),	-- Thalassian Enchanter's Purse
 			i(251487),	-- Prismatic Focusing Iris
 			i(251488),	-- Prismatic Focusing Iris
@@ -3248,8 +3219,6 @@ root(ROOTS.Unsorted, {
 			i(263459),	-- Thalassian Leatherworker's Journal
 			i(263460),	-- Thalassian Tailor's Notebook
 			i(263461),	-- Thalassian Skinner's Notes
-			i(263462),	-- Thalassian Herbalist's Notes
-			i(263463),	-- Thalassian Miner's Notes
 			i(263464),	-- Thalassian Enchanter's Folio
 
 			-- Cache

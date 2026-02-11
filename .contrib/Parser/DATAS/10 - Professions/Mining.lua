@@ -1419,23 +1419,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 		}),
-		--[[
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
-			["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
-			["coord"] = { 52.6, 52.6, DORNOGAL },
+			["provider"] = { "n", 241455 },	-- Belil <Mining Trainer>
+			["coord"] = { 42.6, 52.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 			["groups"] = {
-				i(224818),	-- Algari Mining Notes
+				i(263463),	-- Thalassian Miner's Notes
 			},
 		},{
-			q(83103),	-- Acquiring Aqirite
-			q(83102),	-- Bismuth is Business
-			q(83104),	-- Identifying Ironclaw
-			q(83106),	-- Null Pebble Excavation
-			q(83105),	-- Rush-order Requisition
+			q(93709),	-- Stocking the Staples
 		})),
-		filter(RECIPES, {
+		--[[filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_MINING_KNOWLEDGE, 1 }} }, {
 				r(442330),	-- Refine Aqirite++
@@ -1446,18 +1441,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				r(442333),	-- Refine Ironclaw Ore+++
 			}),
 		}),
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(224818),	-- Algari Mining Notes
-			},
-		},{
-			q(83103, {	-- Acquiring Aqirite
-				["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
-				["coord"] = { 52.6, 52.6, DORNOGAL },
-			}),
-		})),
 		n(QUESTS, {
 			q(91420, {	-- Swap Meet
 				["description"] = "Obtained the first time you harvest Desolate Deposit.",
@@ -1468,95 +1451,46 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 				["timeline"] = { ADDED_11_2_0 },
 			}),
-		}),
+		}),--]]
 		n(TREASURES, {
-			o(455957, {	-- Arathi Precision Drill
-				["coord"] = { 46.1, 64.4, HALLOWFALL },
-				["questID"] = 83910,
+			o(525906, {	-- Spare Expedition Torch
+				["coord"] = { 38.8, 65.9, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89151,
 				["groups"] = {
-					i(226336),	-- Arathi Precision Drill
-				},
-			}),
-			o(455956, {	-- Devout Archaeologist's Excavator
-				["coord"] = { 43.1, 56.8, HALLOWFALL },
-				["questID"] = 83911,
-				["groups"] = {
-					i(226337),	-- Devout Archaeologist's Excavator
-				},
-			}),
-			o(455960, {	-- Dornogal Chisel
-				["coord"] = { 36.6, 79.3, DORNOGAL },
-				["questID"] = 83907,
-				["groups"] = {
-					i(226333),	-- Dornogal Chisel
-				},
-			}),
-			o(455959, {	-- Earthen Excavator's Shovel
-				["coord"] = { 49.4, 27.5, THE_RINGING_DEEPS },
-				["questID"] = 83908,
-				["groups"] = {
-					i(226334),	-- Earthen Excavator's Shovel
-				},
-			}),
-			o(455961, {	-- Earthen Miner's Gavel
-				["coord"] = { 58.2, 62.0, ISLE_OF_DORN },
-				["questID"] = 83906,
-				["groups"] = {
-					i(226332),	-- Earthen Miner's Gavel
-				},
-			}),
-			o(455955, {	-- Heavy Spider Crusher
-				["coord"] = { 46.8, 21.7, NERUBAR },
-				["questID"] = 83912,
-				["groups"] = {
-					i(226338),	-- Heavy Spider Crusher
-				},
-			}),
-			o(455954, {	-- Nerubian Mining Supplies
-				["coord"] = { 48.0, 40.6, NERUBAR_LOWER },
-				["questID"] = 83913,
-				["groups"] = {
-					i(226339),	-- Nerubian Mining Supplies
-				},
-			}),
-			o(455958, {	-- Regenerating Ore
-				["coord"] = { 66.2, 66.2, THE_RINGING_DEEPS },
-				["questID"] = 83909,
-				["groups"] = {
-					i(226335),	-- Regenerating Ore
+					i(238603),	-- Spare Expedition Torch
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
+			["isWeekly"] = true,	-- TODO: Blizzard bug, it is not
 			["groups"] = {
-				currency(MID_MINING_KNOWLEDGE),
+				--currency(MID_MINING_KNOWLEDGE),
 			},
 		},{
-			q(83054, {	-- TWW Weekly Mining Knowledgepoint #1
-				["name"] = "TWW Weekly Mining Knowledgepoint #1",
-				["provider"] = { "i", 224583 },	-- Slab of Slate
+			q(88673, {	-- Midnight Weekly Mining Knowledgepoint #1
+				["name"] = "Midnight Weekly Mining Knowledgepoint #1",
+				["provider"] = { "i", 237496 },	-- Igneous Rock Specimen
 			}),
-			q(83053, {	-- TWW Weekly Mining Knowledgepoint #2
-				["name"] = "TWW Weekly Mining Knowledgepoint #2",
-				["provider"] = { "i", 224583 },	-- Slab of Slate
+			q(88674, {	-- Midnight Weekly Mining Knowledgepoint #2
+				["name"] = "Midnight Weekly Mining Knowledgepoint #2",
+				["provider"] = { "i", 237496 },	-- Igneous Rock Specimen
 			}),
-			q(83052, {	-- TWW Weekly Mining Knowledgepoint #3
-				["name"] = "TWW Weekly Mining Knowledgepoint #3",
-				["provider"] = { "i", 224583 },	-- Slab of Slate
+			q(88675, {	-- Midnight Weekly Mining Knowledgepoint #3
+				["name"] = "Midnight Weekly Mining Knowledgepoint #3",
+				["provider"] = { "i", 237496 },	-- Igneous Rock Specimen
 			}),
-			q(83051, {	-- TWW Weekly Mining Knowledgepoint #4
-				["name"] = "TWW Weekly Mining Knowledgepoint #4",
-				["provider"] = { "i", 224583 },	-- Slab of Slate
+			q(88676, {	-- Midnight Weekly Mining Knowledgepoint #4
+				["name"] = "Midnight Weekly Mining Knowledgepoint #4",
+				["provider"] = { "i", 237496 },	-- Igneous Rock Specimen
 			}),
-			q(83050, {	-- TWW Weekly Mining Knowledgepoint #5
-				["name"] = "TWW Weekly Mining Knowledgepoint #5",
-				["provider"] = { "i", 224583 },	-- Slab of Slate
+			q(88677, {	-- Midnight Weekly Mining Knowledgepoint #5
+				["name"] = "Midnight Weekly Mining Knowledgepoint #5",
+				["provider"] = { "i", 237496 },	-- Igneous Rock Specimen
 			}),
-			q(83049, {	-- TWW Weekly Mining Knowledgepoint #6
-				["name"] = "TWW Weekly Mining Knowledgepoint #6",
-				["provider"] = { "i", 224584 },	-- Erosion Polished Slate
+			q(88678, {	-- Midnight Weekly Mining Knowledgepoint #6
+				["name"] = "Midnight Weekly Mining Knowledgepoint #6",
+				["provider"] = { "i", 237506 },	-- Septarian Nodule
 			}),
-		})),--]]
+		})),
 	})),
 })));

@@ -5536,7 +5536,7 @@ q(37234,{isDaily=1,lvl=40,maps=a[2886],qgs=a[3481],repeatable=1,sourceQuests=a[1
 o(237466,{
 i(118621,{spellID=177264})}),
 i(119037,{b=1})}}),
-q(37119,{coords={{52.2,44.5,582}},lvl=10,qgs={84947},r=2}),
+q(37119,{coords={{33.9,50,582},{52.2,44.5,582}},lvl=10,qgs={84947},r=2}),
 q(37046,{coords={{51.2,61,590}},lvl=10,qgs={87305},r=1}),
 q(37164,{lvl=40,maps=a[2654],qgs=a[3488],g={
 p(1567,{itemID=118923,npcID=88225,spellID=176140}),
@@ -15584,8 +15584,8 @@ q(51903,{altQuests=a[2336],lvl=40,r=2,sourceQuests={53061}}),
 q(51904,{altQuests=a[2336],lvl=40,maps=a[211],r=2,sourceQuests=a[2333]}),
 q(51870,{altQuests=a[2336],lvl=40,r=1,sourceQuests={53062}}),
 q(51888,{altQuests=a[2336],lvl=40,maps=a[211],r=1,sourceQuests=a[2332]}),
-q(53061,{altQuests=a[2336],DisablePartySync=1,isBreadcrumb=1,lvl=35,nextQuests=a[2333],r=2}),
-q(53062,{altQuests=a[2336],DisablePartySync=1,isBreadcrumb=1,lvl=35,nextQuests=a[2332],r=1}),
+q(53061,{altQuests=a[2336],DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53062},lvl=35,nextQuests=a[2333],r=2}),
+q(53062,{altQuests=a[2336],DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53061},lvl=35,nextQuests=a[2332],r=1}),
 q(53436,{coords={{66.6,35.5,1161}},isWeekly=1,qgs={131290},r=2,g={
 i(168615,{b=1,f=55,lvl=50,spellID=298606}),
 i(166883),
@@ -16554,7 +16554,7 @@ q(51570,{coords={a[3166]},lvl=35,r=2,sourceQuests=a[2324]}),
 q(51308,{coords={a[3167]},lvl=35,qgs=a[467],r=2,sourceQuests={51570}}),
 q(53583,{coords={{70.5,27.3,1161}},description="To get this quest and continue the campaign, you must complete one foothold of your choice.",lvl=35,qgs={143846},r=2}),
 q(51961,{coords={a[3167]},description="To get this quest and continue the campaign, you must complete one foothold of your choice.",lvl=35,qgs=a[467],r=2,sourceQuests={51967,53052},sqreq=1}),
-q(53055,{description="Automatically starts when you finish your second Foothold in Zandalar.",DisablePartySync=1,isBreadcrumb=1,lvl=35,r=2}),
+q(53055,{description="Automatically starts when you finish your second Foothold in Zandalar.",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53056},lvl=35,r=2}),
 q(52443,{coords={a[3167]},description="To get this quest and continue the campaign, you must complete two footholds of your choice.",lvl=40,qgs=a[467],r=2,sourceQuests=a[2334]}),
 q(51129,{coords={a[2965]},lvl=35,qgs=a[477],r=2,sourceQuests={51088}}),
 q(51167,{coords={a[1327]},lvl=35,qgs=a[481],r=2,sourceQuests=a[2315]}),
@@ -16607,7 +16607,7 @@ q(52003,{coords={a[1696]},lvl=35,qgs=a[469],r=2,sourceQuests={51359},g={
 follower(1068)}}),
 q(51968,{coords={a[1696]},lvl=35,qgs=a[469],r=2,sourceQuests={52003},g={
 crit(40203,{achID=12510,id=3,r=2})}}),
-q(53063,{DisablePartySync=1,isBreadcrumb=1,lvl=50,qgs=a[467],r=2,sourceQuests={51967,51968,51969}}),
+q(53063,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53064},lvl=50,qgs=a[467],r=2,sourceQuests={51967,51968,51969}}),
 q(51918,{altQuests={52450},coords={a[3167]},lvl=50,qgs=a[467],r=2,sourceQuests=a[2403],g={
 sp(273746),
 toy(141605,{b=1})}}),
@@ -16883,7 +16883,7 @@ q(53079,{coords={a[2702]},lvl=35,qgs=a[527],r=1,sourceQuests=a[2328]}),
 q(51803,{coords={a[2702]},lvl=35,qgs=a[470],r=1}),
 q(53050,{description="Automatically starts when you finish your first Foothold in Kul Tiras.",isBreadcrumb=1,lvl=35,r=1}),
 q(51979,{coords={a[2702]},lvl=35,qgs=a[470],r=1,sourceQuests=a[2328]}),
-q(53056,{description="Automatically starts when you finish your second Foothold in Kul Tiras.",DisablePartySync=1,isBreadcrumb=1,lvl=35,nextQuests=a[2391],r=1}),
+q(53056,{description="Automatically starts when you finish your second Foothold in Kul Tiras.",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53055},lvl=35,nextQuests=a[2391],r=1}),
 q(52444,{coords={a[2702]},lvl=40,qgs=a[470],r=1,sourceQuests={53056}}),
 ah(12509.01,{type="crit",g={
 q(51801,{coords={a[2702]},lvl=35,qgs=a[580],r=1}),
@@ -16930,7 +16930,7 @@ q(51975,{coords={a[3472]},lvl=35,qgs=a[516],r=1,sourceQuests={51438},g={
 follower(1072)}}),
 q(51984,{coords={a[3472]},lvl=35,qgs=a[516],r=1,sourceQuests={51975},g={
 crit(40453,{achID=12509,id=2,r=1})}})}}),
-q(53064,{DisablePartySync=1,isBreadcrumb=1,lvl=50,nextQuests={51916},qgs=a[470],r=1,sourceQuests=a[2335]}),
+q(53064,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53063},lvl=50,nextQuests={51916},qgs=a[470],r=1,sourceQuests=a[2335]}),
 q(51916,{coords={a[2702]},description="This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",lvl=50,qgs=a[470],r=1,sourceQuests={51984,51985,51986,53064},g={
 toy(141605,{b=1})}}),
 q(52451,{coords={a[2702]},description="This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",lvl=50,qgs=a[470],r=1,g={
@@ -18436,7 +18436,7 @@ i(169197,{b=1,g={
 h(-89,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-210},{"pop"},{"whereany","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
 h(-88,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-210},{"pop"},{"whereany","headerID",-88},{"extract","sourceID"},{"modID",23}}}),
 h(-101,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-210},{"pop"},{"whereany","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
-q(53175,{DisablePartySync=1,isBreadcrumb=1,lc=a[173],lvl=50,nextQuests=a[2451],r=2}),
+q(53175,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53207},lvl=50,nextQuests=a[2451],r=2}),
 q(53194,{coords={{65.89,26.03,1161}},lc=a[173],lvl=50,qgs=a[558],r=2,sourceQuests={53175}}),
 q(53414,{coords={a[3063]},isWeekly=1,lvl=50,qgs=a[558],r=2,g={
 i(164578,{b=1,modID=6,g={
@@ -18519,7 +18519,7 @@ i(169196,{b=1,g={
 h(-89,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-211},{"pop"},{"whereany","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
 h(-88,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-211},{"pop"},{"whereany","headerID",-88},{"extract","sourceID"},{"modID",23}}}),
 h(-101,{sym={{"select","headerID",-148},{"find","mapID",14},{"find","headerID",-19},{"find","headerID",-211},{"pop"},{"whereany","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
-q(53207,{coords={a[2369]},description="Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",DisablePartySync=1,isBreadcrumb=1,lc=a[174],lvl=50,nextQuests=a[2453],qgs=a[529],r=1,sourceQuests={52451}}),
+q(53207,{coords={a[2369]},description="Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53175},lvl=50,nextQuests=a[2453],qgs=a[529],r=1,sourceQuests={52451}}),
 q(53208,{coords={{52.9,94.4,1165}},lc=a[174],lvl=50,qgs=a[529],r=1,sourceQuests={53207}}),
 q(53416,{coords={a[2369]},isWeekly=1,lvl=50,qgs=a[529],r=1,sourceQuests=a[2454],g={
 i(164577,{b=1,modID=6,g={
@@ -19550,7 +19550,7 @@ q(58744,{coords={{61.7,54.4,1527}},isWorldQuest=1,pb=1}),
 q(58742,{coords={{62,31.9,1527}},isWorldQuest=1,pb=1}),
 q(58745,{coords={{57.6,43.6,1527}},isWorldQuest=1,pb=1})}})}),
 h(-55,{
-ah(316802,{type="s",g={
+ah(174859,{type="i",g={
 q(58879,{coords={{15,62,1527},{24,9,1527},{28,49,1527},{30,29,1527},{39,10,1527},{42,70,1527},{46,48,1527},{53,19,1527},{55,69,1527},{63,14,1527},{63,53,1527},{70,39,1527},{76,68,1527}},cost={{"i",174858,7}},description="Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",isDaily=1,lvl=50,qgs=a[737],g={
 q(58887,{lvl=50,qgs=a[737],sourceQuests={58879},g={
 mnt(316802,{b=1,itemID=174859})}})}}),

@@ -1554,22 +1554,18 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 			}),
 		}),
-		--[[
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
-			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
-			["coord"] = { 44.8, 69.3, DORNOGAL },
+			["provider"] = { "n", 243355 },	-- Botanist Nathera <Herbalism Trainer>
+			["coord"] = { 48.3, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["isWeekly"] = true,
 			["groups"] = {
-				i(224817),	-- Algari Herbalism Notes
+				i(263462),	-- Thalassian Herbalist's Notes
 			},
 		},{
-			q(82970),	-- A Bloom and A Blossom
-			q(82962),	-- A handful of Luredrops
-			q(82965),	-- Light and Shadow
-			q(82916),	-- When Fungi Bloom
+			q(93702),	-- The Root of Life
 		})),
-		filter(RECIPES, {
+		--[[filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
 				r(442990),	-- Empowered Mulch
@@ -1601,96 +1597,74 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["timeline"] = { ADDED_11_2_0 },
 				["groups"] = { i(246582) },	-- Inscrutable Flora (QS!)
 			}),
-		}),
+		}),]]--
 		n(TREASURES, {
-			o(455993, {	-- Ancient Flower
-				["coord"] = { 57.5, 61.5, ISLE_OF_DORN },
-				["questID"] = 83874,
+			o(525970, {	-- Bloomed Bud
+				["coord"] = { 38.3, 67.0, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89162,
 				["groups"] = {
-					i(226300),	-- Ancient Flower
+					i(238468),	-- Bloomed Bud
 				},
 			}),
-			o(455989, {	-- Arathi Garden Trowel
-				["coord"] = { 47.7, 63.3, HALLOWFALL },
-				["questID"] = 83878,
+			o(525975, {	-- Harvester's Sickle
+				["coord"] = { 76.1, 51.1, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89157,
 				["groups"] = {
-					i(226304),	-- Arathi Garden Trowel
+					i(238473),	-- Harvester's Sickle
 				},
 			}),
-			o(455988, {	-- Arathi Herb Pruner
-				["coord"] = { 36.0, 55.0, HALLOWFALL },
-				["questID"] = 83879,
+			o(525973, {	-- Lightbloom Root
+				["coord"] = { 36.7, 25.1, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89159,
 				["groups"] = {
-					i(226305),	-- Arathi Herb Pruner
+					i(238471),	-- Lightbloom Root
 				},
 			}),
-			o(455992, {	-- Dornogal Gardening Scythe
-				["coord"] = { 59.2, 23.5, DORNOGAL },
-				["questID"] = 83875,
+			o(525977, {	-- Planting Shovel
+				["coord"] = { 51.1, 55.7, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89155,
 				["groups"] = {
-					i(226301),	-- Dornogal Gardening Scythe
+					i(238475),	-- Planting Shovel
 				},
 			}),
-			o(455991, {	-- Earthen Digging Fork
-				["coord"] = { 48.2, 35.0, THE_RINGING_DEEPS },
-				["questID"] = 83876,
+			o(525972, {	-- Simple Leaf Pruners
+				["coord"] = { 49.0, 75.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89160,
 				["groups"] = {
-					i(226302),	-- Earthen Digging Fork
-				},
-			}),
-			o(455990, {	-- Fungarian Slicer's Knife
-				["coord"] = { 52.8, 65.8, THE_RINGING_DEEPS },
-				["questID"] = 83877,
-				["groups"] = {
-					i(226303),	-- Fungarian Slicer's Knife
-				},
-			}),
-			o(455986, {	-- Tunneler's Shovel
-				["coord"] = { 46.8, 16.1, NERUBAR },
-				["questID"] = 83881,
-				["groups"] = {
-					i(226307),	-- Tunneler's Shovel
-				},
-			}),
-			o(455987, {	-- Web-Entangled Lotus
-				["coord"] = { 54.6, 20.9, NERUBAR },
-				["questID"] = 83880,
-				["groups"] = {
-					i(226306),	-- Web-Entangled Lotus
+					i(238470),	-- Simple Leaf Pruners
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
+			["isWeekly"] = true,	-- TODO: Blizzard bug - it is not
 			["groups"] = {
-				currency(MID_HERBALISM_KNOWLEDGE),
+				--currency(MID_HERBALISM_KNOWLEDGE),
 			},
 		},{
-			i(224817),	-- Algari Herbalism Notes
-			q(81416, {	-- TWW Weekly Herbalism Knowledgepoint #1
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #1",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81425, {	-- Midnight Weekly Herbalism Knowledgepoint #1
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #1",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81417, {	-- TWW Weekly Herbalism Knowledgepoint #2
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #2",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81426, {	-- Midnight Weekly Herbalism Knowledgepoint #2
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #2",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81418, {	-- TWW Weekly Herbalism Knowledgepoint #3
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #3",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81427, {	-- Midnight Weekly Herbalism Knowledgepoint #3
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #3",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81419, {	-- TWW Weekly Herbalism Knowledgepoint #4
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #4",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81428, {	-- Midnight Weekly Herbalism Knowledgepoint #4
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #4",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81420, {	-- TWW Weekly Herbalism Knowledgepoint #5
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #5",
-				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			q(81429, {	-- Midnight Weekly Herbalism Knowledgepoint #5
+				["name"] = "Midnight Weekly Herbalism Knowledgepoint #5",
+				["provider"] = { "i", 238465 },	-- Thalassian Phoenix Plume
 			}),
-			q(81421, {	-- TWW Weekly Herbalism Knowledgepoint #6
-				["name"] = "TWW Weekly Herbalism Knowledgepoint #6",
-				["provider"] = { "i", 224265 },	-- Deepgrove Rose
-			}),
-		})),--]]
+			--q(81421, {	-- Midnight Weekly Herbalism Knowledgepoint #6	-- TODO: Blizzard bug, it re-use TWW questID for it and only it is on weekly
+			--	["name"] = "Midnight Weekly Herbalism Knowledgepoint #6",
+			--	["provider"] = { "i", 238466 },	-- Thalassian Phoenix Tail
+			--}),
+		})),
 	})),
 })));
