@@ -100,8 +100,6 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	-- ATT is hooked into the QUEST_DATA_LOAD_RESULT event, and some addons LOVE to request the existing quest data a bazillion times
 	-- we can try our best to ignore IDs which have already successfully acquired a valid server name
 	local ValidQuestDataLoads = {}
-	-- only used to prevent some weird issue where a huge number causes C_QuestLog.RequestLoadQuestByID to throw an error
-	local MAX_QUEST_ID = 9999999
 
 	-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 	-- Passing in the data(table) will cause the data to have quest rewards populated once the data is retrieved
@@ -109,12 +107,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	-- will be called with the QuestID and Success of the data lookup event. Additional params will be provided as a
 	-- 3rd parameter table to the callback
 	RequestLoadQuestByID = function(questID, questObjectRef, ...)
-		if type(questID) ~= "number" or questID < 0 or questID > MAX_QUEST_ID then
-			app.PrintDebug("RequestLoadQuestByID: INVALID QUESTID",questID,questObjectRef,...)
-			app.PrintDebug(debugstack())
-			return
-		end
-		-- only allow requests once per frame until received
+		-- only allow requests once per questID until received
 		if QuestsRequested[questID] then return end
 
 		QuestsRequested[questID] = true;
