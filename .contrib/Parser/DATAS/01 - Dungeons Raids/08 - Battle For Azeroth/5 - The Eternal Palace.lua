@@ -2,6 +2,189 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local SIVARA = 2352;
+local BEHEMOTH = 2347;
+local RADIANCE = 2353;
+local ASHVANE = 2354;
+local ORGOZOA = 2351;
+local COURT = 2359;
+local ZAQUL = 2349;
+local QUEEN = 2361;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[SIVARA] = { 151881 },	-- Abyssal Commander Sivara
+	[BEHEMOTH] = { 150653 },	-- Blackwater Behemoth
+	[RADIANCE] = { 152364 },	-- Radiance of Azshara
+	[ASHVANE] = { 152236 },	-- Lady Ashvane
+	[ORGOZOA] = { 152128 },	-- Orgozoa
+	[COURT] = {
+		152852,	-- Pashmar the Fanatical
+		152853,	-- Silivaz the Zealous
+	},
+	[ZAQUL] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
+	[QUEEN] = { 152910 },	-- Queen Azshara
+};
+
+------ EncounterToLoot ------
+local EncounterToLoot = {
+	[SIVARA] = {
+		i(168359),	-- Abyssal Commander's Mantle
+		i(168276),	-- Claw of the Myrmidon
+		i(168386),	-- Gauntlets of Overflowing Chill
+		i(168345),	-- Helm of the Inexorable Tide
+		i(168361),	-- Naga Centaur's Shellplate
+		i(168387),	-- Palace Sentinel Vambraces
+		i(168901),	-- Royal Scaleguard's Battleaxe
+		i(168390),	-- Sabatons of the Stalwart
+		i(168903),	-- Scepter of the Azsh'ari
+		i(168371),	-- Seawrath Legwraps
+		i(168273),	-- Shiver Venom Crossbow
+		i(168306),	-- Shiver Venom Lance
+		i(168905),	-- Shiver Venom Relic
+		i(168341),	-- Siren Mystic's Vestments
+		i(168818),	-- Sivar's Slitherblade
+		i(168477),	-- Tidebinder's Driftglobe
+		i(168377),	-- Tideblood Bracers
+		i(168384),	-- Wavespine Clutch
+	};
+	[BEHEMOTH] = {
+		i(168376),	-- Anglerfish Feelers
+		i(168343),	-- Blackwater Shimmerscale Vest
+		i(168900),	-- Diver's Folly
+		i(168373),	-- Eelskin Flippers
+		i(168397),	-- Fang of the Behemoth
+		i(168342),	-- Fathom-Feeder's Mantle
+		i(168389),	-- Fleetwrecker's Greaves
+		i(168353),	-- Hood of Lightless Depths
+		i(169304),	-- Leviathan's Lure
+		i(169312),	-- Luminous Jellyweed
+		i(168383),	-- Pelagos Predator's Legguards
+		i(168379),	-- Ship Swallower's Belt
+		i(168385),	-- Slipstreamer's Saltwalkers
+		i(168362),	-- Trench Tyrant's Shoulderplates
+		i(168885),	-- Undercove Crushers
+	};
+	[RADIANCE] = {
+		i(168380), -- Ancient Tempest Striders
+		i(168382), -- Arcanamental Bindings
+		i(168374), -- Belt of Blind Devotion
+		i(168475), -- Bulwark of the Seaborn Avatar
+		i(168375), -- Gloves of Unschackled Arcana
+		i(168381), -- Grips of the Scaled Arcanist
+		i(168336), -- Handmaiden's Cowl of Sacrifice
+		i(168378), -- Leggings of the Stormborn
+		i(168478), -- Monstrosity's Shipbreaker
+		i(169313), -- Phial of the Frigid Tempest
+		i(168372), -- Sea Sculptor's Cuffs
+		i(168355), -- Servitor's Heartguard
+		i(168348), -- Shoulderpads of Frothing Rage
+		i(168388), -- Storm-Tempered Girdle
+		i(168360), -- Warhelm of Dread Waters
+	};
+	[ASHVANE] = {
+		i(169305),	-- Aquipotent Nautilus
+		i(169311),	-- Arcing Razor Coral
+		i(169310),	-- Ashvane's Bloodthirsty Coral
+		i(168367),	-- Barnacle-Crusted Breastplate
+		i(168889),	-- Boralus Noble's Seal
+		i(168877),	-- Coralshell Warboots
+		i(168883),	-- Cultured Pearl Armbands
+		i(168904),	-- Current-Weaver's Gavel
+		i(168347),	-- Helm of Hideous Transformation
+		i(168876),	-- Priscilla's Fishnets
+		i(168335),	-- Robes of Sunken Nobility
+		i(168354),	-- Shoulderguards of Crushing Depths
+		i(168870),	-- Tanglekelp Waistwrap
+	};
+	[ORGOZOA] = {
+		i(168274),	-- Aqua-Pulse Trident
+		i(168872),	-- Cephalid's Sash
+		i(168604),	-- Drape of the Hatcher
+		i(169319),	-- Dribbling Inkpod
+		i(168875),	-- Formcrafter's Pants
+		i(168476),	-- Great Reef Barrier
+		i(168365),	-- Greathelm of the Tender
+		i(168893),	-- Hatchery Scraper
+		i(168339),	-- Incubator's Bellcap
+		i(168899),	-- Orgozoa's Paralytic Barb
+		i(168352),	-- Scalemail of Unnatural Selection
+		i(168894),	-- Squidhunter Speargun
+		i(168897),	-- Tentacle Crusher
+		i(168346),	-- Tidal Drifter's Shoulders
+		i(169309),	-- Zoatroid Egg Sac
+	};
+	[COURT] = {
+		i(168338),	-- Amice of the Reef Witch
+		i(168879),	-- Ardent Worshipper's Boots
+		i(168892),	-- Court Dagger of Sentencing
+		i(169315),	-- Edicts of the Faithless
+		i(168886),	-- Hands of the Fanatic
+		i(168881),	-- Naga Executor's Greatbelt
+		i(168898),	-- Pashmar's Finial
+		i(168364),	-- Pauldrons of Fanatical Might
+		i(168890),	-- Ring of the Highborne Courtier
+		i(168357),	-- Silivaz's Skullguard
+		i(169316),	-- Stay of Execution
+		i(168896),	-- Stormtamer's Orb
+		i(168350),	-- Tunic of the Sycophant
+	};
+	[ZAQUL] = {
+		i(168884),	-- Bindings of the Herald
+		i(169308),	-- Chain of Suffering
+		i(168391),	-- Cloak of Ill Tidings
+		i(168363),	-- Dark Passenger's Breastplate
+		i(168902),	-- Dream's End
+		i(169588),	-- Gardbrace of Fractured Reality
+		i(168301),	-- Sever, Edge of Madness
+		i(168882),	-- Shackles of Dissonance
+		i(168349),	-- Shroud of Unmooring Whispers
+		i(168337),	-- Vestments of Creeping Terror
+		i(169307),	-- Vision of Demise
+		i(169306),	-- Za'qul's Portal Key
+	};
+	[QUEEN] = {
+		i(168854),	-- Animated Elemental Heart
+		i(168275),	-- Anu-Azshara, Staff of the Eternal
+		i(169314),	-- Azshara's Font of Power
+		i(168871),	-- Beloved Monarch's Waistwrap
+		i(168874),	-- Cherished Empress's Leggings
+		i(168891),	-- Cursed Lover's Ring
+		i(168869),	-- Eternity Keeper's Greatbelt
+		i(168887),	-- Gloves of Incomparable Beauty
+		i(168888),	-- Handguards of the Highest-Born
+		i(168880),	-- Slippers of the Sorceress-Queen
+		i(168873),	-- Tide Goddess's Wargreaves
+		i(168878),	-- Vethan's Icewalkers
+		i(168941),	-- Vitality Redistribution Lattice
+	};
+};
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+	i(169933),	-- Abyssal Bubbler's Bracers
+	i(169932),	-- Brineweaver Guardian's Gloves
+	i(169935),	-- Brutish Myrmidon's Vambraces
+	i(168602),	-- Cloak of Blessed Depths
+	i(169929),	-- Cuffs of Soothing Currents
+	i(169934),	-- Deepcrawler's Handguards
+	i(169936),	-- Gauntlets of Crashing Tides
+	i(169930),	-- Handwraps of Unhindered Resonance
+	i(169931),	-- Skulker's Blackwater Bands
+	i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
+		["crs"] = {
+			155920,	-- Azsh'ari Galeblade
+			155619,	-- Zanj'ir Honor Guard
+		},
+	}),
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	inst(1179, {	-- The Eternal Palace
 		["coord"] = { 50.5, 11.9, NAZJATAR },
@@ -20,32 +203,32 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
 					crit(45786, {	-- Abyssal Commander Sivara
-						["_encounter"] = { 2352, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { SIVARA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45787, {	-- Blackwater Behemoth
-						["_encounter"] = { 2347, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { BEHEMOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45788, {	-- Radiance of Azshara
-						["_encounter"] = { 2353, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { RADIANCE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(13719, {	-- Depths of the Devoted
 					crit(45794, {	-- Lady Ashvane
-						["_encounter"] = { 2354, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { ASHVANE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45795, {	-- Orgozoa
-						["_encounter"] = { 2351, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { ORGOZOA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45796, {	-- The Queen's Court
-						["_encounter"] = { 2359, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { COURT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(13725, {	-- The Circle of Stars
 					crit(45797, {	-- Za'qul, Harbinger of Ny'alotha
-						["_encounter"] = { 2349, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { ZAQUL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45798, {	-- Queen Azshara
-						["_encounter"] = { 2361, DIFFICULTY.RAID.LFR },
+						["_encounter"] = { QUEEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40962, {	-- The Eternal Palace
@@ -111,26 +294,37 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				pet(2658),	-- Chitterspine Deepstalker (PET!)
 				pet(2659),	-- Trench Slug (PET!)
 			})),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					151881,	-- Abyssal Commander Sivara
-					150653,	-- Blackwater Behemoth
-					152364,	-- Radiance of Azshara
-					152236,	-- Lady Ashvane
-					152128,	-- Orgozoa
-					152852,	-- Pashmar the Fanatical
-					152853,	-- Silivaz the Zealous
-					150859,	-- Za'qul, Harbinger of Ny'alotha
-					152910,	-- Queen Azshara
-				},
-				["groups"] = {
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+				CommonBossDrops({
 					i(169329),	-- Eternal Ornament (QI!)
 					i(168625),	-- Vantus Rune Technique: The Eternal Palace [Rank 1] (RECIPE!)
 					i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 					i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
-				},
+				}),
+				BossOnly(SIVARA),
+				BossOnly(BEHEMOTH, {
+					i(169360),	-- Mindlost Bloodfrenzy (PET!)
+				}),
+				BossOnly(RADIANCE, {
+					i(169694),	-- Aqueous Reliquary
+					i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
+				}),
+				BossOnly(ASHVANE, {
+					i(169358),	-- Lightless Ambusher (PET!)
+				}),
+				BossOnly(ORGOZOA),
+				BossOnly(COURT, {
+					i(169694),	-- Aqueous Reliquary
+				}),
+				BossOnly(ZAQUL, {
+					i(169362),	-- Nameless Octopode (PET!)
+				}),
+				BossOnly(QUEEN, {
+					i(169694),	-- Aqueous Reliquary
+					i(169348),	-- Zanj'ir Poker (PET!)
+				}),
 			}),
-			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -140,807 +334,128 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(DIFFICULTY.RAID.LFR, {
-				n(ZONE_DROPS, {
-					i(169930),	-- Handwraps of Unhindered Resonance
-					i(169929),	-- Cuffs of Soothing Currents
-					i(169932),	-- Brineweaver Guardian's Gloves
-					i(169931),	-- Skulker's Blackwater Bands
-					i(169934),	-- Deepcrawler's Handguards
-					i(169933),	-- Abyssal Bubbler's Bracers
-					i(169936),	-- Gauntlets of Crashing Tides
-					i(169935),	-- Brutish Myrmidon's Vambraces
-					i(168602),	-- Cloak of Blessed Depths
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
+				ZoneDrops({}),
+				header(HEADERS.LFGDungeon, 2009, {	-- The Grand Reception
+					Boss(SIVARA),
+					Boss(BEHEMOTH),
+					Boss(RADIANCE),
 				}),
-				header(HEADERS.Achievement, 13718, {	-- The Grand Reception
-					e(2352, {	-- Abyssal Commander Sivara
-						["crs"] = { 151881 },	-- Abyssal Commander Sivara
-						["groups"] = {
-							i(168306),	-- Shiver Venom Lance
-							i(168276),	-- Claw of the Myrmidon
-							i(168901),	-- Royal Scaleguard's Battleaxe
-							i(168903),	-- Scepter of the Azsh'ari
-							i(168818),	-- Sivar's Slitherblade
-							i(168273),	-- Shiver Venom Crossbow
-							i(168477),	-- Tidebinder's Driftglobe
-							i(168345),	-- Helm of the Inexorable Tide
-							i(168359),	-- Abyssal Commander's Mantle
-							i(168361),	-- Naga Centaur's Shellplate
-							i(168341),	-- Siren Mystic's Vestments
-							i(168387),	-- Palace Sentinel Vambraces
-							i(168377),	-- Tideblood Bracers
-							i(168386),	-- Gauntlets of Overflowing Chill
-							i(168384),	-- Wavespine Clutch
-							i(168371),	-- Seawrath Legwraps
-							i(168390),	-- Sabatons of the Stalwart
-							i(168905),	-- Shiver Venom Relic
-						},
-					}),
-					e(2347, {	-- Blackwater Behemoth
-						["crs"] = { 150653 },	-- Blackwater Behemoth
-						["groups"] = {
-							i(168900),	-- Diver's Folly
-							i(168397),	-- Fang of the Behemoth
-							i(168353),	-- Hood of Lightless Depths
-							i(168342),	-- Fathom-Feeder's Mantle
-							i(168362),	-- Trench Tyrant's Shoulderplates
-							i(168343),	-- Blackwater Shimmerscale Vest
-							i(168376),	-- Anglerfish Feelers
-							i(168885),	-- Undercove Crushers
-							i(168379),	-- Ship Swallower's Belt
-							i(168389),	-- Fleetwrecker's Greaves
-							i(168383),	-- Pelagos Predator's Legguards
-							i(168373),	-- Eelskin Flippers
-							i(168385),	-- Slipstreamer's Saltwalkers
-							i(169304),	-- Leviathan's Lure
-							i(169312),	-- Luminous Jellyweed
-							i(169360),	-- Mindlost Bloodfrenzy (PET!)
-						},
-					}),
-					e(2353, {	-- Radiance of Azshara
-						["crs"] = { 152364 },	-- Radiance of Azshara
-						["groups"] = {
-							i(168478),	-- Monstrosity's Shipbreaker
-							i(168475),	-- Bulwark of the Seaborn Avatar
-							i(168336),	-- Handmaiden's Cowl of Sacrifice
-							i(168360),	-- Warhelm of Dread Waters
-							i(168348),	-- Shoulderpads of Frothing Rage
-							i(168355),	-- Servitor's Heartguard
-							i(168382),	-- Arcanamental Bindings
-							i(168372),	-- Sea Sculptor's Cuffs
-							i(168375),	-- Gloves of Unschackled Arcana
-							i(168381),	-- Grips of the Scaled Arcanist
-							i(168374),	-- Belt of Blind Devotion
-							i(168388),	-- Storm-Tempered Girdle
-							i(168378),	-- Leggings of the Stormborn
-							i(168380),	-- Ancient Tempest Striders
-							i(169313),	-- Phial of the Frigid Tempest
-							i(169694),	-- Aqueous Reliquary
-							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
-						},
-					}),
+				header(HEADERS.LFGDungeon, 2010, {	-- Depths of the Devoted
+					Boss(ASHVANE),
+					Boss(ORGOZOA),
+					Boss(COURT),
 				}),
-				header(HEADERS.Achievement, 13719, {	-- Depths of the Devoted
-					e(2354, {	-- Lady Ashvane
-						["crs"] = { 152236 },	-- Lady Ashvane
-						["groups"] = {
-							i(168904),	-- Current-Weaver's Gavel
-							i(168347),	-- Helm of Hideous Transformation
-							i(168354),	-- Shoulderguards of Crushing Depths
-							i(168367),	-- Barnacle-Crusted Breastplate
-							i(168335),	-- Robes of Sunken Nobility
-							i(168883),	-- Cultured Pearl Armbands
-							i(168870),	-- Tanglekelp Waistwrap
-							i(168876),	-- Priscilla's Fishnets
-							i(168877),	-- Coralshell Warboots
-							i(168889),	-- Boralus Noble's Seal
-							i(169305),	-- Aquipotent Nautilus
-							i(169311),	-- Arcing Razor Coral
-							i(169310),	-- Ashvane's Bloodthirsty Coral
-							i(169358),	-- Lightless Ambusher (PET!)
-						},
-					}),
-					e(2351, {	-- Orgozoa
-						["crs"] = { 152128 },	-- Orgozoa
-						["groups"] = {
-							i(168274),	-- Aqua-Pulse Trident
-							i(168897),	-- Tentacle Crusher
-							i(168893),	-- Hatchery Scraper
-							i(168899),	-- Orgozoa's Paralytic Barb
-							i(168894),	-- Squidhunter Speargun
-							i(168476),	-- Great Reef Barrier
-							i(168365),	-- Greathelm of the Tender
-							i(168339),	-- Incubator's Bellcap
-							i(168346),	-- Tidal Drifter's Shoulders
-							i(168604),	-- Drape of the Hatcher
-							i(168352),	-- Scalemail of Unnatural Selection
-							i(168872),	-- Cephalid's Sash
-							i(168875),	-- Formcrafter's Pants
-							i(169319),	-- Dribbling Inkpod
-							i(169309),	-- Zoatroid Egg Sac
-						},
-					}),
-					e(2359, {	-- The Queen's Court
-						["crs"] = {
-							152852,	-- Pashmar the Fanatical
-							152853,	-- Silivaz the Zealous
-						},
-						["groups"] = {
-							i(168892),	-- Court Dagger of Sentencing
-							i(168898),	-- Pashmar's Finial
-							i(168896),	-- Stormtamer's Orb
-							i(168357),	-- Silivaz's Skullguard
-							i(168338),	-- Amice of the Reef Witch
-							i(168364),	-- Pauldrons of Fanatical Might
-							i(168350),	-- Tunic of the Sycophant
-							i(168881),	-- Naga Executor's Greatbelt
-							i(168886),	-- Hands of the Fanatic
-							i(168879),	-- Ardent Worshipper's Boots
-							i(168890),	-- Ring of the Highborne Courtier
-							i(169315),	-- Edicts of the Faithless
-							i(169316),	-- Stay of Execution
-							i(169694),	-- Aqueous Reliquary
-						},
-					}),
-				}),
-				header(HEADERS.Achievement, 13725, {	-- The Circle of Stars
-					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-						["groups"] = {
-							i(168902),	-- Dream's End
-							i(168301),	-- Sever, Edge of Madness
-							i(168349),	-- Shroud of Unmooring Whispers
-							i(169588),	-- Gardbrace of Fractured Reality
-							i(168391),	-- Cloak of Ill Tidings
-							i(168363),	-- Dark Passenger's Breastplate
-							i(168337),	-- Vestments of Creeping Terror
-							i(168884),	-- Bindings of the Herald
-							i(168882),	-- Shackles of Dissonance
-							i(169308),	-- Chain of Suffering
-							i(169307),	-- Vision of Demise
-							i(169306),	-- Za'qul's Portal Key
-							i(169362),	-- Nameless Octopode (PET!)
-						},
-					}),
-					e(2361, {	-- Queen Azshara
-						["crs"] = { 152910 },	-- Queen Azshara
-						["groups"] = {
-							i(168854),	-- Animated Elemental Heart
-							i(168941),	-- Vitality Redistribution Lattice
-							i(168275),	-- Anu-Azshara, Staff of the Eternal
-							i(168887),	-- Gloves of Incomparable Beauty
-							i(168888),	-- Handguards of the Highest-Born
-							i(168871),	-- Beloved Monarch's Waistwrap
-							i(168869),	-- Eternity Keeper's Greatbelt
-							i(168874),	-- Cherished Empress's Leggings
-							i(168873),	-- Tide Goddess's Wargreaves
-							i(168880),	-- Slippers of the Sorceress-Queen
-							i(168878),	-- Vethan's Icewalkers
-							i(168891),	-- Cursed Lover's Ring
-							i(169314),	-- Azshara's Font of Power
-							i(169694),	-- Aqueous Reliquary
-							i(169348),	-- Zanj'ir Poker (PET!)
-						},
-					}),
+				header(HEADERS.LFGDungeon, 2011, {	-- The Circle of Stars
+					Boss(ZAQUL),
+					Boss(QUEEN),
 				}),
 			}),
-			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
-				["groups"] = {
-					e(2352, {	-- Abyssal Commander Sivara
-						["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara
-						["groups"] = {
-							ach(13684),	-- You and What Army?
-						},
-					}),
-					e(2347, {	-- Blackwater Behemoth
-						["crs"] = { 150653 },	-- Blackwater Behemoth
-						["groups"] = {
-							ach(13628),	-- Intro to Marine Biology
-							i(169360),	-- Mindlost Bloodfrenzy (PET!)
-						},
-					}),
-					e(2353, {	-- Radiance of Azshara
-						["crs"] = { 152364 },	-- Radiance of Azshara
-						["groups"] = {
-							ach(13767),	-- Fun Run
-							i(169694),	-- Aqueous Reliquary
-							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
-						},
-					}),
-					e(2354, {	-- Lady Ashvane
-						["crs"] = { 152236 },	-- Lady Ashvane
-						["groups"] = {
-							ach(13629),	-- Simple Geometry
-							i(169358),	-- Lightless Ambusher (PET!)
-						},
-					}),
-					e(2351, {	-- Orgozoa
-						["crs"] = { 152128 },	-- Orgozoa
-						["groups"] = {
-							ach(13724),	-- A Smack of Jellyfish
-						},
-					}),
-					e(2359, {	-- The Queen's Court
-						["crs"] = {
-							152852,	-- Pashmar the Fanatical
-							152853,	-- Silivaz the Zealous
-						},
-						["groups"] = {
-							ach(13633),	-- If It Please the Court
-							i(169694),	-- Aqueous Reliquary
-						},
-					}),
-					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-						["groups"] = {
-							ach(13716),	-- Lactose Intolerant
-							i(169362),	-- Nameless Octopode (PET!)
-						},
-					}),
-					e(2361, {	-- Queen Azshara
-						["crs"] = { 152910 },	-- Queen Azshara
-						["groups"] = {
-							ach(13768),	-- The Best of Us
-							i(169694),	-- Aqueous Reliquary
-							i(169348),	-- Zanj'ir Poker (PET!)
-						},
-					}),
-				},
-			}),
-			d(DIFFICULTY.RAID.NORMAL, {
-				n(ZONE_DROPS, {
-					i(169930),	-- Handwraps of Unhindered Resonance
-					i(169929),	-- Cuffs of Soothing Currents
-					i(169932),	-- Brineweaver Guardian's Gloves
-					i(169931),	-- Skulker's Blackwater Bands
-					i(169934),	-- Deepcrawler's Handguards
-					i(169933),	-- Abyssal Bubbler's Bracers
-					i(169936),	-- Gauntlets of Crashing Tides
-					i(169935),	-- Brutish Myrmidon's Vambraces
-					i(168602),	-- Cloak of Blessed Depths
-					i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
-						["crs"] = {
-							155920,	-- Azsh'ari Galeblade
-							155619,	-- Zanj'ir Honor Guard
-						},
-					}),
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
+				BossOnly(SIVARA, {
+					ach(13684),	-- You and What Army?
 				}),
-				e(2352, {	-- Abyssal Commander Sivara
-					["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara
-					["groups"] = {
-						i(168306),	-- Shiver Venom Lance
-						i(168276),	-- Claw of the Myrmidon
-						i(168901),	-- Royal Scaleguard's Battleaxe
-						i(168903),	-- Scepter of the Azsh'ari
-						i(168818),	-- Sivar's Slitherblade
-						i(168273),	-- Shiver Venom Crossbow
-						i(168477),	-- Tidebinder's Driftglobe
-						i(168345),	-- Helm of the Inexorable Tide
-						i(168359),	-- Abyssal Commander's Mantle
-						i(168361),	-- Naga Centaur's Shellplate
-						i(168341),	-- Siren Mystic's Vestments
-						i(168387),	-- Palace Sentinel Vambraces
-						i(168377),	-- Tideblood Bracers
-						i(168386),	-- Gauntlets of Overflowing Chill
-						i(168384),	-- Wavespine Clutch
-						i(168371),	-- Seawrath Legwraps
-						i(168390),	-- Sabatons of the Stalwart
-						i(168905),	-- Shiver Venom Relic
-					},
+				BossOnly(BEHEMOTH, {
+					ach(13628),	-- Intro to Marine Biology
 				}),
-				e(2347, {	-- Blackwater Behemoth
-					["crs"] = { 150653 },	-- Blackwater Behemoth
-					["groups"] = {
-						i(168900),	-- Diver's Folly
-						i(168397),	-- Fang of the Behemoth
-						i(168353),	-- Hood of Lightless Depths
-						i(168342),	-- Fathom-Feeder's Mantle
-						i(168362),	-- Trench Tyrant's Shoulderplates
-						i(168343),	-- Blackwater Shimmerscale Vest
-						i(168376),	-- Anglerfish Feelers
-						i(168885),	-- Undercove Crushers
-						i(168379),	-- Ship Swallower's Belt
-						i(168389),	-- Fleetwrecker's Greaves
-						i(168383),	-- Pelagos Predator's Legguards
-						i(168373),	-- Eelskin Flippers
-						i(168385),	-- Slipstreamer's Saltwalkers
-						i(169304),	-- Leviathan's Lure
-						i(169312),	-- Luminous Jellyweed
-					},
+				BossOnly(RADIANCE, {
+					ach(13767),	-- Fun Run
 				}),
-				e(2353, {	-- Radiance of Azshara
-					["crs"] = { 152364 },	-- Radiance of Azshara
-					["groups"] = {
-						i(168478),	-- Monstrosity's Shipbreaker
-						i(168475),	-- Bulwark of the Seaborn Avatar
-						i(168336),	-- Handmaiden's Cowl of Sacrifice
-						i(168360),	-- Warhelm of Dread Waters
-						i(168348),	-- Shoulderpads of Frothing Rage
-						i(168355),	-- Servitor's Heartguard
-						i(168382),	-- Arcanamental Bindings
-						i(168372),	-- Sea Sculptor's Cuffs
-						i(168375),	-- Gloves of Unschackled Arcana
-						i(168381),	-- Grips of the Scaled Arcanist
-						i(168374),	-- Belt of Blind Devotion
-						i(168388),	-- Storm-Tempered Girdle
-						i(168378),	-- Leggings of the Stormborn
-						i(168380),	-- Ancient Tempest Striders
-						i(169313),	-- Phial of the Frigid Tempest
-					},
+				BossOnly(ASHVANE, {
+					ach(13629),	-- Simple Geometry
 				}),
-				e(2354, {	-- Lady Ashvane
-					["crs"] = { 152236 },	-- Lady Ashvane
-					["groups"] = {
-						i(168904),	-- Current-Weaver's Gavel
-						i(168347),	-- Helm of Hideous Transformation
-						i(168354),	-- Shoulderguards of Crushing Depths
-						i(168367),	-- Barnacle-Crusted Breastplate
-						i(168335),	-- Robes of Sunken Nobility
-						i(168883),	-- Cultured Pearl Armbands
-						i(168870),	-- Tanglekelp Waistwrap
-						i(168876),	-- Priscilla's Fishnets
-						i(168877),	-- Coralshell Warboots
-						i(168889),	-- Boralus Noble's Seal
-						i(169305),	-- Aquipotent Nautilus
-						i(169311),	-- Arcing Razor Coral
-						i(169310),	-- Ashvane's Bloodthirsty Coral
-					},
+				BossOnly(ORGOZOA, {
+					ach(13724),	-- A Smack of Jellyfish
 				}),
-				e(2351, {	-- Orgozoa
-					["crs"] = { 152128 },	-- Orgozoa
-					["groups"] = {
-						i(168274),	-- Aqua-Pulse Trident
-						i(168897),	-- Tentacle Crusher
-						i(168893),	-- Hatchery Scraper
-						i(168899),	-- Orgozoa's Paralytic Barb
-						i(168894),	-- Squidhunter Speargun
-						i(168476),	-- Great Reef Barrier
-						i(168365),	-- Greathelm of the Tender
-						i(168339),	-- Incubator's Bellcap
-						i(168346),	-- Tidal Drifter's Shoulders
-						i(168604),	-- Drape of the Hatcher
-						i(168352),	-- Scalemail of Unnatural Selection
-						i(168872),	-- Cephalid's Sash
-						i(168875),	-- Formcrafter's Pants
-						i(169319),	-- Dribbling Inkpod
-						i(169309),	-- Zoatroid Egg Sac
-					},
+				BossOnly(COURT, {
+					ach(13633),	-- If It Please the Court
 				}),
-				e(2359, {	-- The Queen's Court
-					["crs"] = {
-						152852,	-- Pashmar the Fanatical
-						152853,	-- Silivaz the Zealous
-					},
-					["groups"] = {
-						i(168892),	-- Court Dagger of Sentencing
-						i(168898),	-- Pashmar's Finial
-						i(168896),	-- Stormtamer's Orb
-						i(168357),	-- Silivaz's Skullguard
-						i(168338),	-- Amice of the Reef Witch
-						i(168364),	-- Pauldrons of Fanatical Might
-						i(168350),	-- Tunic of the Sycophant
-						i(168881),	-- Naga Executor's Greatbelt
-						i(168886),	-- Hands of the Fanatic
-						i(168879),	-- Ardent Worshipper's Boots
-						i(168890),	-- Ring of the H ighborne Courtier
-						i(169315),	-- Edicts of the Faithless
-						i(169316),	-- Stay of Execution
-					},
+				BossOnly(ZAQUL, {
+					ach(13716),	-- Lactose Intolerant
 				}),
-				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-					["groups"] = {
-						i(168902),	-- Dream's End
-						i(168301),	-- Sever, Edge of Madness
-						i(168349),	-- Shroud of Unmooring Whispers
-						i(169588),	-- Gardbrace of Fractured Reality
-						i(168391),	-- Cloak of Ill Tidings
-						i(168363),	-- Dark Passenger's Breastplate
-						i(168337),	-- Vestments of Creeping Terror
-						i(168884),	-- Bindings of the Herald
-						i(168882),	-- Shackles of Dissonance
-						i(169308),	-- Chain of Suffering
-						i(169307),	-- Vision of Demise
-						i(169306),	-- Za'qul's Portal Key
-					},
-				}),
-				e(2361, {	-- Queen Azshara
-					["crs"] = { 152910 },	-- Queen Azshara
-					["groups"] = {
-						i(168854),	-- Animated Elemental Heart
-						i(168941),	-- Vitality Redistribution Lattice
-						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168887),	-- Gloves of Incomparable Beauty
-						i(168888),	-- Handguards of the Highest-Born
-						i(168871),	-- Beloved Monarch's Waistwrap
-						i(168869),	-- Eternity Keeper's Greatbelt
-						i(168874),	-- Cherished Empress's Leggings
-						i(168873),	-- Tide Goddess's Wargreaves
-						i(168880),	-- Slippers of the Sorceress-Queen
-						i(168878),	-- Vethan's Icewalkers
-						i(168891),	-- Cursed Lover's Ring
-						i(169314),	-- Azshara's Font of Power
-					},
+				BossOnly(QUEEN, {
+					ach(13768),	-- The Best of Us
 				}),
 			}),
-			d(DIFFICULTY.RAID.MULTI.HEROIC_PLUS, {
-				cr(150859, e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
+				ZoneDrops({}),
+				Boss(SIVARA),
+				Boss(BEHEMOTH),
+				Boss(RADIANCE),
+				Boss(ASHVANE),
+				Boss(ORGOZOA),
+				Boss(COURT),
+				Boss(ZAQUL),
+				Boss(QUEEN),
+			}),
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(ZAQUL, {
 					i(168868),	-- Pauldrons of Za'qul
-				})),
-			}),
-			d(DIFFICULTY.RAID.HEROIC, {
-				n(ZONE_DROPS, {
-					i(169930),	-- Handwraps of Unhindered Resonance
-					i(169929),	-- Cuffs of Soothing Currents
-					i(169932),	-- Brineweaver Guardian's Gloves
-					i(169931),	-- Skulker's Blackwater Bands
-					i(169934),	-- Deepcrawler's Handguards
-					i(169933),	-- Abyssal Bubbler's Bracers
-					i(169936),	-- Gauntlets of Crashing Tides
-					i(169935),	-- Brutish Myrmidon's Vambraces
-					i(168602),	-- Cloak of Blessed Depths
 				}),
-				e(2352, {	-- Abyssal Commander Sivara
-					["crs"] = { 151881 },	-- Abyssal Commander Sivara
-					["groups"] = {
-						i(168306),	-- Shiver Venom Lance
-						i(168276),	-- Claw of the Myrmidon
-						i(168901),	-- Royal Scaleguard's Battleaxe
-						i(168903),	-- Scepter of the Azsh'ari
-						i(168818),	-- Sivar's Slitherblade
-						i(168273),	-- Shiver Venom Crossbow
-						i(168477),	-- Tidebinder's Driftglobe
-						i(168345),	-- Helm of the Inexorable Tide
-						i(168359),	-- Abyssal Commander's Mantle
-						i(168361),	-- Naga Centaur's Shellplate
-						i(168341),	-- Siren Mystic's Vestments
-						i(168387),	-- Palace Sentinel Vambraces
-						i(168377),	-- Tideblood Bracers
-						i(168386),	-- Gauntlets of Overflowing Chill
-						i(168384),	-- Wavespine Clutch
-						i(168371),	-- Seawrath Legwraps
-						i(168390),	-- Sabatons of the Stalwart
-						i(168905),	-- Shiver Venom Relic
-					},
-				}),
-				e(2347, {	-- Blackwater Behemoth
-					["crs"] = { 150653 },	-- Blackwater Behemoth
-					["groups"] = {
-						i(168900),	-- Diver's Folly
-						i(168397),	-- Fang of the Behemoth
-						i(168353),	-- Hood of Lightless Depths
-						i(168342),	-- Fathom-Feeder's Mantle
-						i(168362),	-- Trench Tyrant's Shoulderplates
-						i(168343),	-- Blackwater Shimmerscale Vest
-						i(168376),	-- Anglerfish Feelers
-						i(168885),	-- Undercove Crushers
-						i(168379),	-- Ship Swallower's Belt
-						i(168389),	-- Fleetwrecker's Greaves
-						i(168383),	-- Pelagos Predator's Legguards
-						i(168373),	-- Eelskin Flippers
-						i(168385),	-- Slipstreamer's Saltwalkers
-						i(169304),	-- Leviathan's Lure
-						i(169312),	-- Luminous Jellyweed
-					},
-				}),
-				e(2353, {	-- Radiance of Azshara
-					["crs"] = { 152364 },	-- Radiance of Azshara
-					["groups"] = {
-						i(168478),	-- Monstrosity's Shipbreaker
-						i(168475),	-- Bulwark of the Seaborn Avatar
-						i(168336),	-- Handmaiden's Cowl of Sacrifice
-						i(168360),	-- Warhelm of Dread Waters
-						i(168348),	-- Shoulderpads of Frothing Rage
-						i(168355),	-- Servitor's Heartguard
-						i(168382),	-- Arcanamental Bindings
-						i(168372),	-- Sea Sculptor's Cuffs
-						i(168375),	-- Gloves of Unschackled Arcana
-						i(168381),	-- Grips of the Scaled Arcanist
-						i(168374),	-- Belt of Blind Devotion
-						i(168388),	-- Storm-Tempered Girdle
-						i(168378),	-- Leggings of the Stormborn
-						i(168380),	-- Ancient Tempest Striders
-						i(169313),	-- Phial of the Frigid Tempest
-					},
-				}),
-				e(2354, {	-- Lady Ashvane
-					["crs"] = { 152236 },	-- Lady Ashvane
-					["groups"] = {
-						i(168904),	-- Current-Weaver's Gavel
-						i(168347),	-- Helm of Hideous Transformation
-						i(168354),	-- Shoulderguards of Crushing Depths
-						i(168367),	-- Barnacle-Crusted Breastplate
-						i(168335),	-- Robes of Sunken Nobility
-						i(168883),	-- Cultured Pearl Armbands
-						i(168870),	-- Tanglekelp Waistwrap
-						i(168876),	-- Priscilla's Fishnets
-						i(168877),	-- Coralshell Warboots
-						i(168889),	-- Boralus Noble's Seal
-						i(169305),	-- Aquipotent Nautilus
-						i(169311),	-- Arcing Razor Coral
-						i(169310),	-- Ashvane's Bloodthirsty Coral
-					},
-				}),
-				e(2351, {	-- Orgozoa
-					["crs"] = { 152128 },	-- Orgozoa
-					["groups"] = {
-						i(168274),	-- Aqua-Pulse Trident
-						i(168897),	-- Tentacle Crusher
-						i(168893),	-- Hatchery Scraper
-						i(168899),	-- Orgozoa's Paralytic Barb
-						i(168894),	-- Squidhunter Speargun
-						i(168476),	-- Great Reef Barrier
-						i(168365),	-- Greathelm of the Tender
-						i(168339),	-- Incubator's Bellcap
-						i(168346),	-- Tidal Drifter's Shoulders
-						i(168604),	-- Drape of the Hatcher
-						i(168352),	-- Scalemail of Unnatural Selection
-						i(168872),	-- Cephalid's Sash
-						i(168875),	-- Formcrafter's Pants
-						i(169319),	-- Dribbling Inkpod
-						i(169309),	-- Zoatroid Egg Sac
-					},
-				}),
-				e(2359, {	-- The Queen's Court
-					["crs"] = {
-						152852,	-- Pashmar the Fanatical
-						152853,	-- Silivaz the Zealous
-					},
-					["groups"] = {
-						i(168892),	-- Court Dagger of Sentencing
-						i(168898),	-- Pashmar's Finial
-						i(168896),	-- Stormtamer's Orb
-						i(168357),	-- Silivaz's Skullguard
-						i(168338),	-- Amice of the Reef Witch
-						i(168364),	-- Pauldrons of Fanatical Might
-						i(168350),	-- Tunic of the Sycophant
-						i(168881),	-- Naga Executor's Greatbelt
-						i(168886),	-- Hands of the Fanatic
-						i(168879),	-- Ardent Worshipper's Boots
-						i(168890),	-- Ring of the H ighborne Courtier
-						i(169315),	-- Edicts of the Faithless
-						i(169316),	-- Stay of Execution
-					},
-				}),
-				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-					["groups"] = {
-						i(168902),	-- Dream's End
-						i(168301),	-- Sever, Edge of Madness
-						i(168349),	-- Shroud of Unmooring Whispers
-						i(169588),	-- Gardbrace of Fractured Reality
-						i(168391),	-- Cloak of Ill Tidings
-						i(168363),	-- Dark Passenger's Breastplate
-						i(168337),	-- Vestments of Creeping Terror
-						i(168884),	-- Bindings of the Herald
-						i(168882),	-- Shackles of Dissonance
-						i(169308),	-- Chain of Suffering
-						i(169307),	-- Vision of Demise
-						i(169306),	-- Za'qul's Portal Key
-					},
-				}),
-				e(2361, {	-- Queen Azshara
-					["crs"] = { 152910 },	-- Queen Azshara
-					["groups"] = {
-						ach(13784, {	-- Ahead of the Curve: Queen
-							["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
-						}),
-						i(168942),	-- Mesh of Expanding Vitality
-						i(168855),	-- Pulsing Elemental Hearth
-						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168887),	-- Gloves of Incomparable Beauty
-						i(168888),	-- Handguards of the Highest-Born
-						i(168871),	-- Beloved Monarch's Waistwrap
-						i(168869),	-- Eternity Keeper's Greatbelt
-						i(168874),	-- Cherished Empress's Leggings
-						i(168873),	-- Tide Goddess's Wargreaves
-						i(168880),	-- Slippers of the Sorceress-Queen
-						i(168878),	-- Vethan's Icewalkers
-						i(168891),	-- Cursed Lover's Ring
-						i(169314),	-- Azshara's Font of Power
-					},
+				BossOnly(QUEEN, {
+					ach(13784, {	-- Ahead of the Curve: Queen
+						["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
+					}),
 				}),
 			}),
-			d(DIFFICULTY.RAID.MYTHIC, {
-				n(ZONE_DROPS, {
-					i(169930),	-- Handwraps of Unhindered Resonance
-					i(169929),	-- Cuffs of Soothing Currents
-					i(169932),	-- Brineweaver Guardian's Gloves
-					i(169931),	-- Skulker's Blackwater Bands
-					i(169934),	-- Deepcrawler's Handguards
-					i(169933),	-- Abyssal Bubbler's Bracers
-					i(169936),	-- Gauntlets of Crashing Tides
-					i(169935),	-- Brutish Myrmidon's Vambraces
-					i(168602),	-- Cloak of Blessed Depths
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
+				ZoneDrops({}),
+				Boss(SIVARA),
+				Boss(BEHEMOTH),
+				Boss(RADIANCE),
+				Boss(ASHVANE),
+				Boss(ORGOZOA),
+				Boss(COURT),
+				Boss(ZAQUL),
+				Boss(QUEEN),
+			}),
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				ZoneDrops({}),
+				Boss(SIVARA, {
+					ach(13726),	-- Mythic: Abyssal Commander Sivara
 				}),
-				e(2352, {	-- Abyssal Commander Sivara
-					["crs"] = { 151881 },	-- Abyssal Commander Sivara
-					["groups"] = {
-						ach(13726),	-- Mythic: Abyssal Commander Sivara
-						i(168306),	-- Shiver Venom Lance
-						i(168276),	-- Claw of the Myrmidon
-						i(168901),	-- Royal Scaleguard's Battleaxe
-						i(168903),	-- Scepter of the Azsh'ari
-						i(168818),	-- Sivar's Slitherblade
-						i(168273),	-- Shiver Venom Crossbow
-						i(168477),	-- Tidebinder's Driftglobe
-						i(168345),	-- Helm of the Inexorable Tide
-						i(168359),	-- Abyssal Commander's Mantle
-						i(168361),	-- Naga Centaur's Shellplate
-						i(168341),	-- Siren Mystic's Vestments
-						i(168387),	-- Palace Sentinel Vambraces
-						i(168377),	-- Tideblood Bracers
-						i(168386),	-- Gauntlets of Overflowing Chill
-						i(168384),	-- Wavespine Clutch
-						i(168371),	-- Seawrath Legwraps
-						i(168390),	-- Sabatons of the Stalwart
-						i(168905),	-- Shiver Venom Relic
-					},
+				Boss(BEHEMOTH, {
+					ach(13728),	-- Mythic: Blackwater Behemoth
 				}),
-				e(2347, {	-- Blackwater Behemoth
-					["crs"] = { 150653 },	-- Blackwater Behemoth
-					["groups"] = {
-						ach(13728),	-- Mythic: Blackwater Behemoth
-						i(168900),	-- Diver's Folly
-						i(168397),	-- Fang of the Behemoth
-						i(168353),	-- Hood of Lightless Depths
-						i(168342),	-- Fathom-Feeder's Mantle
-						i(168362),	-- Trench Tyrant's Shoulderplates
-						i(168343),	-- Blackwater Shimmerscale Vest
-						i(168376),	-- Anglerfish Feelers
-						i(168885),	-- Undercove Crushers
-						i(168379),	-- Ship Swallower's Belt
-						i(168389),	-- Fleetwrecker's Greaves
-						i(168383),	-- Pelagos Predator's Legguards
-						i(168373),	-- Eelskin Flippers
-						i(168385),	-- Slipstreamer's Saltwalkers
-						i(169304),	-- Leviathan's Lure
-						i(169312),	-- Luminous Jellyweed
-					},
+				Boss(RADIANCE, {
+					ach(13727),	-- Mythic: Radiance of Azshara
 				}),
-				e(2353, {	-- Radiance of Azshara
-					["crs"] = { 152364 },	-- Radiance of Azshara
-					["groups"] = {
-						ach(13727),	-- Mythic: Radiance of Azshara
-						i(168478),	-- Monstrosity's Shipbreaker
-						i(168475),	-- Bulwark of the Seaborn Avatar
-						i(168336),	-- Handmaiden's Cowl of Sacrifice
-						i(168360),	-- Warhelm of Dread Waters
-						i(168348),	-- Shoulderpads of Frothing Rage
-						i(168355),	-- Servitor's Heartguard
-						i(168382),	-- Arcanamental Bindings
-						i(168372),	-- Sea Sculptor's Cuffs
-						i(168375),	-- Gloves of Unschackled Arcana
-						i(168381),	-- Grips of the Scaled Arcanist
-						i(168374),	-- Belt of Blind Devotion
-						i(168388),	-- Storm-Tempered Girdle
-						i(168378),	-- Leggings of the Stormborn
-						i(168380),	-- Ancient Tempest Striders
-						i(169313),	-- Phial of the Frigid Tempest
-					},
+				Boss(ASHVANE, {
+					ach(13729),	-- Mythic: Lady Ashvane
 				}),
-				e(2354, {	-- Lady Ashvane
-					["crs"] = { 152236 },	-- Lady Ashvane
-					["groups"] = {
-						ach(13729),	-- Mythic: Lady Ashvane
-						i(168904),	-- Current-Weaver's Gavel
-						i(168347),	-- Helm of Hideous Transformation
-						i(168354),	-- Shoulderguards of Crushing Depths
-						i(168367),	-- Barnacle-Crusted Breastplate
-						i(168335),	-- Robes of Sunken Nobility
-						i(168883),	-- Cultured Pearl Armbands
-						i(168870),	-- Tanglekelp Waistwrap
-						i(168876),	-- Priscilla's Fishnets
-						i(168877),	-- Coralshell Warboots
-						i(168889),	-- Boralus Noble's Seal
-						i(169305),	-- Aquipotent Nautilus
-						i(169311),	-- Arcing Razor Coral
-						i(169310),	-- Ashvane's Bloodthirsty Coral
-					},
+				Boss(ORGOZOA, {
+					ach(13730),	-- Mythic: Orgozoa
 				}),
-				e(2351, {	-- Orgozoa
-					["crs"] = { 152128 },	-- Orgozoa
-					["groups"] = {
-						ach(13730),	-- Mythic: Orgozoa
-						i(168274),	-- Aqua-Pulse Trident
-						i(168897),	-- Tentacle Crusher
-						i(168893),	-- Hatchery Scraper
-						i(168899),	-- Orgozoa's Paralytic Barb
-						i(168894),	-- Squidhunter Speargun
-						i(168476),	-- Great Reef Barrier
-						i(168365),	-- Greathelm of the Tender
-						i(168339),	-- Incubator's Bellcap
-						i(168346),	-- Tidal Drifter's Shoulders
-						i(168604),	-- Drape of the Hatcher
-						i(168352),	-- Scalemail of Unnatural Selection
-						i(168872),	-- Cephalid's Sash
-						i(168875),	-- Formcrafter's Pants
-						i(169319),	-- Dribbling Inkpod
-						i(169309),	-- Zoatroid Egg Sac
-					},
+				Boss(COURT, {
+					ach(13731),	-- Mythic:The Queen's Court
 				}),
-				e(2359, {	-- The Queen's Court
-					["crs"] = {
-						152852,	-- Pashmar the Fanatical
-						152853,	-- Silivaz the Zealous
-					},
-					["groups"] = {
-						ach(13731),	-- Mythic:The Queen's Court
-						i(168892),	-- Court Dagger of Sentencing
-						i(168898),	-- Pashmar's Finial
-						i(168896),	-- Stormtamer's Orb
-						i(168357),	-- Silivaz's Skullguard
-						i(168338),	-- Amice of the Reef Witch
-						i(168364),	-- Pauldrons of Fanatical Might
-						i(168350),	-- Tunic of the Sycophant
-						i(168881),	-- Naga Executor's Greatbelt
-						i(168886),	-- Hands of the Fanatic
-						i(168879),	-- Ardent Worshipper's Boots
-						i(168890),	-- Ring of the H ighborne Courtier
-						i(169315),	-- Edicts of the Faithless
-						i(169316),	-- Stay of Execution
-					},
+				Boss(ZAQUL, {
+					ach(13732),	-- Mythic: Za'qul
 				}),
-				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-					["groups"] = {
-						ach(13732),	-- Mythic: Za'qul
-						i(168902),	-- Dream's End
-						i(168301),	-- Sever, Edge of Madness
-						i(168349),	-- Shroud of Unmooring Whispers
-						i(169588),	-- Gardbrace of Fractured Reality
-						i(168391),	-- Cloak of Ill Tidings
-						i(168363),	-- Dark Passenger's Breastplate
-						i(168337),	-- Vestments of Creeping Terror
-						i(168884),	-- Bindings of the Herald
-						i(168882),	-- Shackles of Dissonance
-						i(169308),	-- Chain of Suffering
-						i(169307),	-- Vision of Demise
-						i(169306),	-- Za'qul's Portal Key
-					},
-				}),
-				e(2361, {	-- Queen Azshara
-					["crs"] = { 152910 },	-- Queen Azshara
-					["groups"] = {
-						ach(13733, {	-- Mythic: Queen Azshara
-							title(404),	-- the Eternal
-						}),
-						ach(13740),	-- Mythic: Queen Azshara Guild Run
-						ach(13785, {	-- Cutting Edge: Queen Azshara
-							["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
-						}),
-						ach(13787, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (A)
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
-								title(409),	-- <Name>, Famed Slayer of Azshara
-							},
-						})),
-						ach(13788, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (H)
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								title(409),	-- <Name>, Famed Slayer of Azshara
-							},
-						})),
-						i(168538, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
-							["classes"] = TANKS,
-						})),
-						i(168857, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
-						})),
-						i(168944, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
-							["classes"] = HEALERS,
-						})),
-						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						i(168887),	-- Gloves of Incomparable Beauty
-						i(168888),	-- Handguards of the Highest-Born
-						i(168871),	-- Beloved Monarch's Waistwrap
-						i(168869),	-- Eternity Keeper's Greatbelt
-						i(168874),	-- Cherished Empress's Leggings
-						i(168873),	-- Tide Goddess's Wargreaves
-						i(168880),	-- Slippers of the Sorceress-Queen
-						i(168878),	-- Vethan's Icewalkers
-						i(168891),	-- Cursed Lover's Ring
-						i(169314),	-- Azshara's Font of Power
-					},
+				Boss(QUEEN, {
+					ach(13785, {	-- Cutting Edge: Queen Azshara
+						["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
+					}),
+					ach(13733, {	-- Mythic: Queen Azshara
+						title(404),	-- the Eternal
+					}),
+					ach(13740),	-- Mythic: Queen Azshara Guild Run
+					ach(13787, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (A)
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = { title(409) },	-- <Name>, Famed Slayer of Azshara
+					})),
+					ach(13788, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (H)
+						["races"] = HORDE_ONLY,
+						["groups"] = { title(409) },	-- <Name>, Famed Slayer of Azshara
+					})),
+					i(168538, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
+						["classes"] = TANKS,
+					})),
+					i(168857, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
+					})),
+					i(168944, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
+						["classes"] = HEALERS,
+					})),
 				}),
 			}),
 		},
