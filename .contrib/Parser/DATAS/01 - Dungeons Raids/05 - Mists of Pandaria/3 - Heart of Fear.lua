@@ -67,6 +67,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	applyclassicphase(MOP_PHASE_ONE_HEART_OF_FEAR, inst(330, {	-- Heart of Fear
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear

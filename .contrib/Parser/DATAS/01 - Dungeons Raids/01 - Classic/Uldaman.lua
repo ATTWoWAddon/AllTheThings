@@ -1,12 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- These are for the outdoor section of Uldaman before the instance. (rather than listing them in Badlands...)
 local OUTDOOR_ULDAMAN_CRS = {
 	4846,	-- Shadowforge Digger
 	4845,	-- Shadowforge Ruffian
 	4844,	-- Shadowforge Surveyor
 };
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(239, {	-- Uldaman
 		-- #if BEFORE MOP

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Shattered Halls
 		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
@@ -10,9 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["mapID"] = HELLFIRE_CITADEL_SHATTERED_HALLS,
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		-- #if BEFORE CATA
-		["cost"] = {
-			{ "i", 28395, 1 },	-- Shattered Halls Key
-		},
+		["cost"] = { { "i", 28395, 1 } },	-- Shattered Halls Key
 		-- #endif
 		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
@@ -401,9 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27519),	-- Cloak of Malice
 						i(23726, {	-- Fel Ember
 							["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-							["cost"] = {
-								{ "i", 23735, 1 },	-- Grand Warlock's Amulet
-							},
+							["cost"] = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
 						}),
 						i(23735),	-- Grand Warlock's Amulet
 						i(27520),	-- Greathelm of the Unbreakable
@@ -501,9 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27519),	-- Cloak of Malice
 							i(23726, {	-- Fel Ember
 								["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-								["cost"] = {
-									{ "i", 23735, 1 },	-- Grand Warlock's Amulet
-								},
+								["cost"] = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
 							}),
 							i(23735),	-- Grand Warlock's Amulet
 							i(27520),	-- Greathelm of the Unbreakable

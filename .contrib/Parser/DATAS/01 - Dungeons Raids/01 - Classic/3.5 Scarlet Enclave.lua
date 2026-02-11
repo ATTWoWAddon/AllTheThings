@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_EIGHT, inst(2856, bubbleDownSelf({["timeline"] = { ADDED_1_15_7 }}, {	-- Scarlet Enclave
 		-- ["description"] = "[TBC] \nThis is a new raid added in SoD Phase 8.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.",
@@ -22,9 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- https://www.wowhead.com/classic/guide/season-of-discovery/ashbringer-unlock-questline
 							header(HEADERS.Item, 239196, {	-- Ruined Lightforged Blade
 								q(89445, {	-- Blades of Light
-									["cost"] = {
-										{ "i", 239196, 1 },	-- Ruined Lightforged Blade
-									},
+									["cost"] = { { "i", 239196, 1 } },	-- Ruined Lightforged Blade
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["lvl"] = 60,
 								}),
@@ -37,18 +36,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								q(89447, {	-- Extravagant Tastes
 									["sourceQuest"] = 89446,	-- The Lost Craftsman
 									["qg"] = 16365,	-- Master Craftsman Omarion
-									["cost"] = {
-										{ "i", 21023, 10 },	-- Dirge's Kickin' Chimaerok Chops
-									},
+									["cost"] = { { "i", 21023, 10 } },	-- Dirge's Kickin' Chimaerok Chops
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["maps"] = { NAXXRAMAS },
 								}),
 								q(89448, {	-- Gathering Light
 									["sourceQuest"] = 89447,	-- Extravagant Tastes
 									["qg"] = 16365,	-- Master Craftsman Omarion
-									["cost"] = {
-										{ "i", 239216, 12 },	-- Lightforged Iron
-									},
+									["cost"] = { { "i", 239216, 12 } },	-- Lightforged Iron
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["maps"] = { NAXXRAMAS },
 								}),
@@ -185,9 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["groups"] = {
 										i(241653),	-- Heated Blade
 										i(241657, {	-- Tempered Blade
-											["cost"] = {
-												{ "i", 241653, 1 },	-- Heated Blade
-											},
+											["cost"] = { { "i", 241653, 1 } },	-- Heated Blade
 										}),
 										i(241081),	-- Corrupted Ashbringer
 									},

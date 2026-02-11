@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 APPRENTICE = createHeader({
 	readable = "Apprentice",
 	text = {
@@ -21,7 +22,6 @@ APPRENTICE = createHeader({
 		en = "Only 1 of 3 Apprentices can be chosen to challenge.",
 	},
 });
-
 OPERA_OF_MALEDICTION = createHeader({
 	readable = "Opera of Malediction",
 	text = {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
@@ -14,9 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			271,	-- Containment Core
 		},
 		-- #if BEFORE CATA
-		["cost"] = {
-			{ "i", 31084, 1 },	-- Key to the Arcatraz
-		},
+		["cost"] = { { "i", 31084, 1 } },	-- Key to the Arcatraz
 		-- #endif
 		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
@@ -248,9 +247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30634, 1 },	-- Warpforged Key
-				},
+				["cost"] = { { "i", 30634, 1 } },	-- Warpforged Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

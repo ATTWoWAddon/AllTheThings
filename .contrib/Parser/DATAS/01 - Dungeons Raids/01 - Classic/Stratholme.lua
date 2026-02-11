@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 MAIN_GATE = createHeader({
 	readable = "Main Gate",
 	icon = 134503,
@@ -49,6 +50,7 @@ SERVICE_ENTRANCE = createHeader({
 		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(236, {	-- Stratholme
 		-- #if BEFORE MOP

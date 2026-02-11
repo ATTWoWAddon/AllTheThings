@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
@@ -84,6 +85,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, inst(362, {	-- Throne of Thunder
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder

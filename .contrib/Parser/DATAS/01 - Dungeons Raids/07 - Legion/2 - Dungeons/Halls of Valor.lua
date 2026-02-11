@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(721, {	-- Halls of Valor
 		["coord"] = { 70.4, 69.4, STORMHEIM },

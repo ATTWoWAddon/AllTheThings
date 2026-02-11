@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache of Madness.
 	readable = "Cache of Madness",
 	icon = 441139,
@@ -25,6 +26,7 @@ CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache
 		-- #endif
 	},
 });
+
 local BLOODSCALP_COIN = 19706;
 local GURUBASHI_COIN = 19701;
 local HAKKARI_COIN = 19700;
@@ -44,6 +46,7 @@ local RED_HAKKARI_BIJOU = 203771;
 local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,

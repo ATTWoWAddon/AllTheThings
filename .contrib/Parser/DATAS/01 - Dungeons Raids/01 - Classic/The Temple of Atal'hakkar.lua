@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
 	icon = 134177,
@@ -21,6 +22,7 @@ local ATALAI_DEFENDERS = createHeader({
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 	},
 });
+
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and _.IsQuestFlaggedCompleted(3373) and ]] .. WOWAPI_GetItemCount(10455) .. [[ < 1 then
 		if not _.Settings.AccountWide.Quests then
@@ -41,6 +43,7 @@ local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 		t.description = "|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";
 	end
 end]];
+
 local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 	i(11318, {	-- Atal'ai Haze
 		["crs"] = {
@@ -85,6 +88,7 @@ local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 	i(10629),	-- Mistwalker Boots
 	i(10634),	-- Mindseye Circle
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP

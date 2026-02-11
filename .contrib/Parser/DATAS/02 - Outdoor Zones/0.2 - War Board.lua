@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if AFTER 7.3.5
 root(ROOTS.Zones, {
 	header(HEADERS.Object, 206109, sharedDataSelf({	-- Warchief's Command Board

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 DETENTION_BLOCK = createHeader({
 	readable = "Detention Block",
 	icon = 236718,
@@ -15,7 +16,9 @@ SHADOWFORGE_CITY = createHeader({
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
 	},
 });
+
 local REPUTATION_FROM_CORES, REPUTATION_FROM_LEATHER, REPUTATION_FROM_DARKIRON = 500, 350, 75;	-- These are the reputation values after TBC, other than for Classic.
+
 -- #if BEFORE TBC
 -- Reputation in Classic
 REPUTATION_FROM_CORES = 200;
@@ -32,6 +35,7 @@ REPUTATION_FROM_DARKIRON = 300;
 -- #endif
 -- #endif
 -- #endif
+
 ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -41,6 +45,7 @@ ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",]] .. REPUTATION_FROM_DARKIRON .. [[, 42000);
 	end
 end]];
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
@@ -2957,7 +2962,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(223265, {	-- Delirious Ancient
 					["description"] = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
-					["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+					["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 					["groups"] = {
 						i(221271),	-- Ace of Wilds
 						i(221262),	-- Wild Offering
@@ -3131,7 +3136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #else
 								"Was used to turn in Librams prior to Cataclysm, is now without any purpose.",
 								-- #endif
-							["cost"] = {{ "i", 11197, 1 }},	-- Dark Keeper Key
+							["cost"] = { { "i", 11197, 1 } },	-- Dark Keeper Key
 							["groups"] = {
 								i(11752),	-- Black Blood of the Tormented
 								i(11751),	-- Burning Essence

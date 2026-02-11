@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- #if ANYCLASSIC
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
@@ -12,6 +13,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,

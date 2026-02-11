@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(800, {	-- Court of Stars
 		["coord"] = { 51.0, 65.6, SURAMAR },

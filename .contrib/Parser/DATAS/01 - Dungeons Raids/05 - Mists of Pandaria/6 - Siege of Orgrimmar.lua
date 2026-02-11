@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
@@ -107,6 +108,7 @@ local TOKENS = {
 		},
 	},
 };
+
 -- This header represents the shared drops and achievements that can be earned in all current difficulties.
 local CURRENT_ALL_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.ALL_PLUS_FLEX;
 local CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC_PLUS_FLEX;
@@ -207,6 +209,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, inst(369, {	-- Siege of Orgrimmar
 		["mapID"] = 556,
@@ -326,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					["timeline"] = { ADDED_5_4_0 },
-					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+					["cost"] = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
 					["repeatable"] = true,
 					["groups"] = {
 						currency(776),	-- Warforged Seal

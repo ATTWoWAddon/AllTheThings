@@ -663,7 +663,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					["coord"] = { 22.0, 38.0, 2061 },
 					["questID"] = 66285,
-					["cost"] = {{ "i", 190727, 1 }},	-- 1 Security Override Orb
+					["cost"] = { { "i", 190727, 1 } },	-- 1x Security Override Orb
 					["isWeekly"] = true,
 					["groups"] = {
 						i(189175),	-- Mawforged Bridle (PS!)
@@ -693,7 +693,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["catalystID"] = 2,	-- ItemBonus.Value_0 SL:S4
 				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
-						sharedData({["cost"] = {{"i",190189,2070}}},	-- 2070 Sandworn Relic, Full set cost from Vendor
+						sharedData({
+							["cost"] = { { "i", 190189, 2070 } },	-- 2070 Sandworn Relic, Full set cost from Vendor
+						},
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
 					),
 					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(

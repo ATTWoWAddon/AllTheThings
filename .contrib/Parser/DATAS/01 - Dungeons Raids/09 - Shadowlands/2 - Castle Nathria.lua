@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 LEECHING_VAULTS_HEADER = createHeader({
 	readable = "Leeching Vaults",
 	icon = 3614361,

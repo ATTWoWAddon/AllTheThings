@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
 	icon = 135743,
@@ -30,6 +31,7 @@ WICKED_GROTTO = createHeader({
 		-- #endif
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(232, {	-- Maraudon
 		-- #if BEFORE MOP
@@ -548,7 +550,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, n(223264, {	-- Delirious Ancient
 						["description"] = "Spawns after killing Princess and the surrounding trash.",
-						["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+						["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 						["groups"] = {
 							i(221271),	-- Ace of Wilds
 							i(221262),	-- Wild Offering

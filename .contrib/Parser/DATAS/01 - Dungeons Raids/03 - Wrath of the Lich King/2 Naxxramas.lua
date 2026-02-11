@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- Blizzard removed the 10 man Quest / Quest Item, but not the necks themselves in Wrath Classic.
 -- They were instead moved to Heroic+ dungeon bosses.
 -- #if ANYCLASSIC
@@ -32,6 +33,7 @@ ExportDB.OnUpdateDB.DEDICATED_25M = [[~function(t)
 	end
 end]];
 -- #endif
+
 local CLASSIC_ONLY_DB_FUNC = function(func)
 	-- #IF ANYCLASSIC
 	return func
@@ -93,7 +95,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 			n(206712, {	-- Valiance
 				["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
 				["questID"] = 76378,
-				["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
+				["cost"] = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
 				["groups"] = {
 					i(206585),	-- Valiance (MOUNT!)
 				},
@@ -388,6 +390,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 		}),
 	},
 });
+
 -- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 	n(ZONE_DROPS, {
@@ -898,6 +901,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 		}),
 	},
 });
+
 local NAXX_25MAN_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL;
 -- #if NAXX_10MAN_DROPS_25MAN_LOOT
 -- In Wrath Classic, Blizzard decided it would be a good idea to make 25 man loot drop in 10 man after Ulduar was released. Really stupid idea, but here we are.
@@ -1538,14 +1542,14 @@ inst(754, {	-- Naxxramas
 								["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 								["groups"] = {
 									i(206573, {	-- Dented Raider's Belt
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206609),	-- Lamented Crusader's Belt
 										},
 									}),
 									i(206575, {	-- Dented Raider's Boots
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(10402),	-- Blackened Defias Boots
@@ -1555,14 +1559,14 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206571, {	-- Dented Raider's Bracers
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206607),	-- Lamented Crusader's Bracers
 										},
 									}),
 									i(206570, {	-- Dented Raider's Chestpiece
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206606),	-- Lamented Crusader's Chestpiece
@@ -1570,7 +1574,7 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206572, {	-- Dented Raider's Gauntlets
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206608),	-- Lamented Crusader's Gauntlets
@@ -1579,14 +1583,14 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206568, {	-- Dented Raider's Helmet
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206604),	-- Lamented Crusader's Helmet
 										},
 									}),
 									i(206574, {	-- Dented Raider's Leggings
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											-- i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
@@ -1595,7 +1599,7 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206569, {	-- Dented Raider's Spaulders
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
 										["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206605),	-- Lamented Crusader's Spaulders
@@ -1603,32 +1607,32 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206772, {	-- Pattern: Languished Leather (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206773, {	-- Pattern: Scourged Scales (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206774, {	-- Plans: Undeath Metal (RECIPE!)
 										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206579, {	-- Phylacterweave
 										-- Dont symlink it Dented tokens, makes it too spammy
 										["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
 									}),
 									i(206565, {	-- Plagued Grain (TOY!)
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 15 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 15 } },
 									}),
 									i(208068, {	-- Rotten Delicious
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 30 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 30 } },
 									}),
 									i(206577, {	-- Slime-Covered Scroll
-										["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 12 }},
+										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 12 } },
 										["groups"] = {
 											i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
 											i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
@@ -1671,7 +1675,7 @@ inst(754, {	-- Naxxramas
 								q(76395, {	-- Corruptor's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+									["cost"] = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -1697,7 +1701,7 @@ inst(754, {	-- Naxxramas
 								q(76396, {	-- Invader's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206374, 10 }},	-- 10x Invader's Scourgestone
+									["cost"] = { { "i", 206374, 10 } },	-- 10x Invader's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -1706,7 +1710,7 @@ inst(754, {	-- Naxxramas
 								q(77244, {	-- Many Corruptor's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+									["cost"] = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),
@@ -1715,7 +1719,7 @@ inst(754, {	-- Naxxramas
 								q(77245, {	-- Many Invader's Scourgestones
 									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+									["cost"] = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
 									["repeatable"] = true,
 									["groups"] = {
 										i(DEATHS_BARGAINING_CHIP),

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		ig(182173),	-- Hyena Soul
@@ -11,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		}),
 		header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
 			["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
-		},{
+		}, {
 			ach(14662,	{	-- Realm First! Shadowlands Keystone Master
 				["u"] = REMOVED_FROM_GAME,
 			}),
@@ -27,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		})),
 		header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
 			["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
-		},{
+		}, {
 			ach(15073),		-- Shadowlands Keystone Explorer: Season Two
 			ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
 				title(446),	-- <Name> the Tormented
@@ -66,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		})),
 		header(HEADERS.Achievement, SEASON_CRYPTIC, bubbleDownSelf({
 			["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
-		},{
+		}, {
 			ach(15496),		-- Shadowlands Keystone Explorer: Season Three
 			ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
 				title(457),	-- <Name> the Cryptic
@@ -111,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		})),
 		header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
 			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
-		},{
+		}, {
 			ach(15688),		-- Shadowlands Keystone Explorer: Season Four
 			ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
 				title(465),	-- <Name> the Shrouded

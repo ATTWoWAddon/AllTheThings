@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local GNARLROOT = 2564;
 local IGIRA = 2554;
@@ -1339,7 +1340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
 					["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
+						["cost"] = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {

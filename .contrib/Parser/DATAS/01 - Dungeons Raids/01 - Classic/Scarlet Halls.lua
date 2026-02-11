@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },

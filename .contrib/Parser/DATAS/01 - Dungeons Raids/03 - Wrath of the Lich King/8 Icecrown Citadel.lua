@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 STORMING_THE_CITADEL = createHeader({
 	readable = "Storming the Citadel",
 	icon = 343640,
@@ -912,66 +913,66 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				n(37687, {	-- Alchemist Finklestein
 					i(49959, {	-- Pattern: Bladeborn Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49958, {	-- Pattern: Blessed Cenarion Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49954, {	-- Pattern: Deathfrost Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49963, {	-- Pattern: Earthsoul Boots (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49961, {	-- Pattern: Footpads of Impending Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49953, {	-- Pattern: Leggings of Woven Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49957, {	-- Pattern: Legwraps of Unleashed Nature (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49962, {	-- Pattern: Lightning-Infused Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49955, {	-- Pattern: Lightweave Leggings (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49966, {	-- Pattern: Rock-Steady Treads (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49956, {	-- Pattern: Sandals of Consecration (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(52023, {	-- Plans: Iceblade Arrow (RECIPE!)
 						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49973, {	-- Plans: Pillars of Might (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49970, {	-- Plans: Protectors of Life (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 					i(52022, {	-- Plans: Shatter Rounds (RECIPE!)
 						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["cost"] = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>

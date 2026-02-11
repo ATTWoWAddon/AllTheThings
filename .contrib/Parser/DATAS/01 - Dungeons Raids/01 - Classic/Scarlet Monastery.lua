@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 	readable = "Graveyard",
 	icon = 133730,
@@ -69,6 +70,7 @@ SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 		tw = "修道院",
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(316, {	-- Scarlet Monastery
 		-- #if BEFORE MOP

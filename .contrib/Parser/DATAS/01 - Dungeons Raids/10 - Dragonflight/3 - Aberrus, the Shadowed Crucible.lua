@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local KAZZARA = 2522;
 local AMALGAMATION = 2529;
@@ -597,7 +598,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				n(205676, {	-- Norzko the Proud
 					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
+						["cost"] = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {

@@ -1,7 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { REMOVED_7_1_0 };
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
@@ -30,9 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			366,	-- Netherspace
 		},
 		-- #if BEFORE 4.2.0
-		["cost"] = {
-			{ "i", 24490, 1 },	-- The Master's Key
-		},
+		["cost"] = { { "i", 24490, 1 } },	-- The Master's Key
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -491,9 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29287, 1 },	-- Violet Signet of the Archmage
-							},
+							["cost"] = { { "i", 29287, 1 } },	-- Violet Signet of the Archmage
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
@@ -507,9 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
-							},
+							["cost"] = { { "i", 29283, 1 } },	-- Violet Signet of the Master Assassin
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
@@ -594,9 +590,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
-							},
+							["cost"] = { { "i", 29279, 1 } },	-- Violet Signet of the Great Protector
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
@@ -610,9 +604,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
 							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["cost"] = {
-								{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
-							},
+							["cost"] = { { "i", 29290, 1 } },	-- Violet Signet of the Grand Restorer
 							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {

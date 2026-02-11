@@ -62,9 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					n(VENDORS, {
 						-- #if BEFORE 4.1.0
 						n(52915, {	-- Harald
-							["cost"] = {
-								{ "i", 33865, 1 },	-- Amani Hex Stick
-							},
+							["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 							["groups"] = {
 								i(33926, {	-- Sealed Scroll Case
 									["description"] = "Can contain profession recipes.",	-- Only applies for the TBC version of Zul'Aman.
@@ -157,9 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					}),
 					n(24396, {	-- Forest Frog
 						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to get vendors and bags of gold, as well as have Mojo spawn and hop into your bags.",
-						["cost"] = {
-							{ "i", 33865, 1 },	-- Amani Hex Stick
-						},
+						["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 						["groups"] = {
 							i(33993, {	-- Mojo (PET!)
 								["timeline"] = { ADDED_2_3_0 },

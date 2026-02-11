@@ -2,6 +2,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local ESKHANDERS_LEFT_CLAW = i(18202);	-- Eskhandar's Left Claw [Note: For whatever reason, Blizzard moved this weapon to Magmadar after the boss was removed.]
 local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
 	["classes"] = { HUNTER },
@@ -9,6 +10,7 @@ local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
 local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
 	["classes"] = { PRIEST },
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,

@@ -1,11 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local TOME_OF_POLYMORPH_TURTLE = i(22739);
 local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 	["timeline"] = { ADDED_3_2_0 },
 	["cr"] = 14821,	-- Razzashi Raptor
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
 	inst(76, bubbleDownSelf({ ["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 } }, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",

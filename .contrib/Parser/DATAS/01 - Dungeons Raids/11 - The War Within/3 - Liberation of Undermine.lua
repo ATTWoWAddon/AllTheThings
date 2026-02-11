@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 ------ Encounter Constants ------
 local VEXIE = 2639;
 local CARNAGE = 2640;
@@ -516,7 +517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
 							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
@@ -541,7 +542,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
 							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
@@ -566,7 +567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
 							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
@@ -591,7 +592,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
 							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
@@ -616,7 +617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
-							["cost"] = { {"i", 237578, 1 }},	-- 1x Counterfeit Dealer's Chip
+							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 						}, {
 							i(238774),	-- Gallagio Raider's Knuckle Dusters
 							i(238761),	-- Gallagio Raider's Bootleg Lever

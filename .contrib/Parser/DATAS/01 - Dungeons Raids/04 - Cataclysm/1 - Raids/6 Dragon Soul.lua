@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Dragon Soul
 		["mapID"] = 409,	-- Wyrmrest Temple [Starting Area]
@@ -30,9 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 29801,	-- Proving Your Worth
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
-						["cost"] = {
-							{ "i", 74752, 1 },	-- Solved Cipher
-						},
+						["cost"] = { { "i", 74752, 1 } },	-- Solved Cipher
 						["groups"] = {
 							i(74749, {	-- Charging Decoder Ring
 								["description"] = "Just log out for 12 hours. Read a book or something!",
@@ -55,9 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(74750, {	-- Singed Cipher
 								["qg"] = 55488,	-- Corastrasza
 								["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
-								["cost"] = {
-									{ "i", 74748, 1 },	-- Charged Decoder Ring
-								},
+								["cost"] = { { "i", 74748, 1 } },	-- Charged Decoder Ring
 								["groups"] = {
 									i(74752),	-- Solved Cipher
 								},
@@ -86,9 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 30106,	-- The Deed is Done
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = {
-							{ "i", 77951, 333 },	-- Shadowy Gem
-						},
+						["cost"] = { { "i", 77951, 333 } },	-- Shadowy Gem
 					}),
 					q(30092, {	-- Our Man in Gilneas
 						["sourceQuest"] = 29847,	-- To Catch a Thief
@@ -119,9 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["sourceQuest"] = 30113,	-- Victory in the Depths
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = {
-							{ "i", 77952, 60 },	-- Elementium Gem Cluster
-						},
+						["cost"] = { { "i", 77952, 60 } },	-- Elementium Gem Cluster
 					}),
 					q(30106, {	-- The Deed is Done
 						["sourceQuest"] = 30093,	-- Assassinate Creed
@@ -224,10 +217,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890, {	-- Crystalline Geode
 						["description"] = "Contains random uncut Cataclysm gems.",
-						["cost"] = {{ "c", 614, 1 }},	-- Mote of Darkness
+						["cost"] = { { "c", 614, 1 } },	-- Mote of Darkness
 					}),
 					i(78891, {	-- Elementium-coated Geode
-						["cost"] = {{ "c", 615, 1 }},	-- Essence of Corrupted Deathwing
+						["cost"] = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing
 					}),
 				}),
 			}),

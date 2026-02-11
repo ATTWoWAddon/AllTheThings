@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
 	icon = 236292,
@@ -91,6 +92,7 @@ CAPITAL_GARDENS = createHeader({
 		tw = "副本的這部分可以從最西邊的傳送門進入。（左側）",
 	},
 });
+
 local DIREMAUL_SUBMAP = function(mapID, headerID, t)
 	t.headerID = headerID;
 	local oldMaps = t.maps;
@@ -169,6 +171,7 @@ local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, bubbleDown({ ["timeline"] = { ADDED_1_2_0 } }, {
 	inst(230, {	-- Dire Maul
 		-- #if BEFORE MOP
@@ -1608,9 +1611,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						q(77194, {	-- Free Knot!
 							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel whitout lowering your reputation with the Bloodsail Buccaneers.",
 							["qg"] = 14338,	-- Knot Thimblejack
-							["cost"] = {
-								{ "i", 18250, 1 },	-- Gordok Shackle Key
-							},
+							["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 							["repeatable"] = true,
 							["groups"] = {
 								i(208028, {	-- Knot Thimblejack's Cache

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	["description"] = "This is located outside of the instance just to the north of both the elevator or the transporter.",
 	["timeline"] = { REMOVED_5_0_4 },	-- guessed from WH comments
@@ -48,6 +49,7 @@ local MATRIX_PUNCHOGRAPH_E = o(251048, {	-- Matrix Punchograph 3005-E
 		}),
 	},
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(231, {	-- Gnomeregan
 		-- #if BEFORE MOP
@@ -1478,83 +1480,83 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 								-- Plate
 								i(213316, {	-- H.A.Z.A.R.D. Breastplate
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213330, {	-- H.A.Z.A.R.D. Legplates
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213335, {	-- H.A.Z.A.R.D. Boots
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								i(216485, {	-- Shockforged Breastplate
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(216486, {	-- Shockforged Legplates
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(216484, {	-- Shockforged Battleboots
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								-- Mail
 								i(213314, {	-- Electromantic Chainmail
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213315, {	-- Electromantic Chainshirt
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213333, {	-- Electromantic Chausses
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213334, {	-- Electromantic Gambeson
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213338, {	-- Electromantic Grounding Boots
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								i(213339, {	-- Electromantic Grounding Sabatons
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								-- Leather
 								i(213312, {	-- Insulated Apron
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213331, {	-- Insulated Leggings
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213342, {	-- Insulated Galoshes
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								i(213313, {	-- Insulated Chestguard
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213332, {	-- Insulated Legguards
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213341, {	-- Insulated Workboots
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								-- Cloth
 								i(213311, {	-- Hyperconductive Robe
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213328, {	-- Hyperconductive Pantaloons
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213337, {	-- Hyperconductive Sandals
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								i(213310, {	-- Hyperconductive Shimmershirt
-									["cost"] = {{ "i", 217008, 1 }},	-- Power Depleted Chest
+									["cost"] = { { "i", 217008, 1 } },	-- Power Depleted Chest
 								}),
 								i(213329, {	-- Hyperconductive Skirt
-									["cost"] = {{ "i", 217009, 1 }},	-- Power Depleted Legs
+									["cost"] = { { "i", 217009, 1 } },	-- Power Depleted Legs
 								}),
 								i(213336, {	-- Hyperconductive Walkers
-									["cost"] = {{ "i", 217007, 1 }},	-- Power Depleted Boots
+									["cost"] = { { "i", 217007, 1 } },	-- Power Depleted Boots
 								}),
 								i(216646, {	-- Ziri's Mystery Crate
 									["description"] = "Contains random reagents and world drops within. Can also contain epics!",
-									["cost"] = {{ "i", 216637, 3 }},	-- A Pile of Random Parts
+									["cost"] = { { "i", 216637, 3 } },	-- A Pile of Random Parts
 								}),
 							},
 						}),

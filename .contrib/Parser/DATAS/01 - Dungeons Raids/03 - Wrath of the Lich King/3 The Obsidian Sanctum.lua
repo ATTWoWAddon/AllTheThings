@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 TWILIGHT_ASSIST = createHeader({
 	readable = "Twilight Assist",
 	icon = 236469,
@@ -61,6 +62,7 @@ TWILIGHT_ZONE = createHeader({
 		en = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
 	},
 });
+
 -- 10 Man Exclusive Content
 local SARTH_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 	n(ACHIEVEMENTS, {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
@@ -245,9 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30623, 1 },	-- Reservoir Key
-				},
+				["cost"] = { { "i", 30623, 1 } },	-- Reservoir Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

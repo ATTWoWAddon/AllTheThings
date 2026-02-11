@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
@@ -219,9 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30623, 1 },	-- Reservoir Key
-				},
+				["cost"] = { { "i", 30623, 1 } },	-- Reservoir Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

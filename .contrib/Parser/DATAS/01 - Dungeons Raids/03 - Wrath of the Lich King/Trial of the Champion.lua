@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 -- #if ANYCLASSIC
 -- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 local COLOSOS_CRITERIA_UID_HEROIC_HORDE = 12312;
@@ -9,6 +10,7 @@ local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12312;
 local COLOSOS_CRITERIA_UID_HEROIC_HORDE = 12320;
 local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12320;
 -- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	inst(284, {	-- Trial of the Champion
 		["mapID"] = TRIAL_OF_THE_CHAMPION,

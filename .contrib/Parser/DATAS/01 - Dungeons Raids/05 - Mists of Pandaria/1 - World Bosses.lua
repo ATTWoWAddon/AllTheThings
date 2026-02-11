@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = sharedData({
 			["isRaid"] = true,
 			["isWeekly"] = true,
-		},{
+		}, {
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
 				["crs"] = { 69099 },	-- Nalak, the Storm Lord
 				["questID"] = 32518,

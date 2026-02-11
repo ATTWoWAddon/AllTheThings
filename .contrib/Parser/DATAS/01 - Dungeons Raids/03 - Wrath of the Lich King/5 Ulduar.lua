@@ -1,12 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 local revampAch = function(id, t)
 	-- Crieve NOTE: Didn't feel like indenting and stuff. :)
 	t = ach(id, t);
 	t.timeline = { ADDED_3_1_0, REMOVED_7_3_5 };
 	return t;
 end
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {	-- Ulduar
 		["mapID"] = ULDUAR,

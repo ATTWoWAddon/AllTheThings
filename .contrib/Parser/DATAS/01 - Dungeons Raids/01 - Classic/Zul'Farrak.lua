@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(241, {	-- Zul'Farrak
 		-- #if BEFORE MOP
@@ -324,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
 				["description"] = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
-				["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+				["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 				["groups"] = {
 					i(221290),	-- Ace of Dunes
 					i(221271),	-- Ace of Wilds
@@ -533,9 +534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE 3.0.8
 				["description"] = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
 				["provider"] = { "o", 141832 },	-- Gong of Zul'Farrak
-				["cost"] = {
-					{ "i", 9240, 1 },	-- Mallet of Zul'Farrak
-				},
+				["cost"] = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
 				-- #endif
 				["groups"] = {
 					i(204406, {	-- Ancient Design: Square Holders (RECIPE!)

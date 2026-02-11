@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(252, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Sethekk Halls
 		["lore"] = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
@@ -84,9 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18933,	-- Isfar
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { REMOVED_4_3_0 },
-					["cost"] = {
-						{ "i", 32888, 1 },	-- The Relics of Terokk
-					},
+					["cost"] = { { "i", 32888, 1 } },	-- The Relics of Terokk
 					["groups"] = {
 						objective(1, {	-- 0/1 The Saga of Terokk
 							["provider"] = { "i", 27634 },	-- The Saga of Terokk
@@ -233,9 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30633, 1 },	-- Auchenai Key
-				},
+				["cost"] = { { "i", 30633, 1 } },	-- Auchenai Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
@@ -280,9 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if BEFORE 4.0.1
 						["description"] = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
 						["sourceQuest"] = 11001,	-- Vanquish the Raven God
-						["cost"] = {
-							{ "i", 32449, 1 },	-- Essence-Infused Moonstone
-						},
+						["cost"] = { { "i", 32449, 1 } },	-- Essence-Infused Moonstone
 						-- #endif
 						["creatureID"] = 23035,
 						["groups"] = {
