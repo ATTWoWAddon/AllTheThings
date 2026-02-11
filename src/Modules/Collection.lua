@@ -360,6 +360,8 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	app.TypicalCharacterCollected = function(CACHE, id, SETTING)
 		-- character collected
 		if IsCached(CACHE, id) then return 1; end
+		-- account-wide direct
+		if IsAccountCached(CACHE, id) == 1 then return 1; end
 		-- account-wide collected
 		if IsAccountTracked(CACHE, id, SETTING) then return 2; end
 	end
