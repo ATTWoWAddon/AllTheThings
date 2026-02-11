@@ -37,7 +37,7 @@ if app.GameBuildVersion >= 20000 then
 			settings.Flat = Flat;
 		end,
 		OnInit = function(self, handlers)
-			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", "No titles found.", "Title", "TitleWithGender");
+			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", "No titles found.", "Title", "TitleWithGender", "PVPRank");
 			self:SetData(app.CreateRawText(PAPERDOLL_SIDEBAR_TITLES, {
 				icon = app.asset("Category_Titles"),
 				description = "This list shows you all of the titles that you can collect.",
@@ -59,7 +59,7 @@ else
 				visible = true,
 				back = 1,
 				g = {},
-				OnUpdate = self.SearchAPI.BuildFlatSearchFunctionForClassTypes("pvpRankID", "No titles found.", "PVPRank");
+				OnUpdate = self.SearchAPI.BuildFlatSearchFunctionForClassTypes("pvprankID", "No titles found.", "PVPRank");
 			}));
 		end,
 	});

@@ -379,6 +379,7 @@ local whiteListedFields = {
 	FlightPaths = true,
 	Followers = true,
 	GarrisonBuildings = true,
+	PVPRanks = true,
 	Quests = true,
 	Spells = true,
 	Titles = true

@@ -81,6 +81,7 @@ local KeyMaps = setmetatable({
 	npc = "npcID",
 	o = "objectID",
 	object = "objectID",
+	pvprank = "pvprankID",
 	r = "spellID",
 	recipe = "spellID",
 	rfp = "runeforgepowerID",

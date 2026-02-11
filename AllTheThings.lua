@@ -884,6 +884,7 @@ app.ThingKeys = {
 	creatureID = 1,
 	encounterID = 1,
 	explorationID = 1,
+	pvprankID = 1,
 };
 local SpecificSources = {
 	headerID = {

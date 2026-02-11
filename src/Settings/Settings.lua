@@ -19,7 +19,6 @@ settings.AccountWide = setmetatable({
 	Heirlooms = true,
 	Illusions = true,
 	Mounts = true,
-	PVPRanks = true,
 	Quests = true,
 	Recipes = true,
 	Reputations = true,
@@ -236,7 +235,6 @@ local Things = {
 	"Quests",
 	"QuestsLocked",
 	"QuestsHidden",
-	"PVPRanks",
 	"Recipes",
 	"Reputations",
 	"RuneforgeLegendaries",
@@ -263,7 +261,6 @@ local GeneralSettingsBase = {
 		["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		["AccountWide:Mounts"] = true,
-		["AccountWide:PVPRanks"] = false,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = app.GameBuildVersion >= 40000,
@@ -285,7 +282,6 @@ local GeneralSettingsBase = {
 		["Thing:HeirloomUpgrades"] = app.GameBuildVersion >= 60000,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
-		--["Thing:PVPRanks"] = app.GameBuildVersion < 20000,	-- CRIEVE NOTE: Maybe someday? Classic Era project.
 		["Thing:Quests"] = true,
 		["Thing:QuestsLocked"] = false,
 		["Thing:QuestsHidden"] = false,
@@ -1728,7 +1724,6 @@ settings.UpdateMode = function(self, doRefresh)
 		settings:SetThingTracking("Debug");
 		if app.IsClassic then
 			-- Modules
-			app.Modules.PVPRanks.SetCollectible(true);
 			self.OnlyRWP = false;
 			self.OnlyNotTrash = false;
 		end
@@ -1783,10 +1778,6 @@ settings.UpdateMode = function(self, doRefresh)
 			filterSet.CustomCollect(true)
 
 			settings:SetThingTracking()
-		end
-		if app.IsClassic then
-			-- Modules
-			app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
 		end
 		if self:Get("Show:OnlyActiveEvents") then
 			filterSet.Event(true)

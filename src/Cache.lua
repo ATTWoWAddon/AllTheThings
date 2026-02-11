@@ -438,6 +438,9 @@ local fieldConverters = {
 	["professionID"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
+	["pvprankID"] = function(group, value)
+		CacheField(group, "pvprankID", value);
+	end,
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,

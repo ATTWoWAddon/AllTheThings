@@ -409,6 +409,7 @@ local ClassPriorityLookup = {
 "filterID",
 "objectiveID",
 "questID",
+"pvprankID",
 "text",
 }
 app.AddEventHandler("OnLoad", function()
