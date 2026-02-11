@@ -1,9 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local ALGARI_TOKEN_OF_MERIT_S1 = 220769;
 local ALGARI_TOKEN_OF_MERIT_S2 = 230793;
 local ALGARI_TOKEN_OF_MERIT_S3 = 248242;
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		n(VENDORS, {
@@ -12,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(225948, {	-- Harbinger's Equipment Chest
 						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
-						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["cost"] = { { "c", 3008, 350 } },	-- 350x Valorstones
 						["sym"] = {
 							-- All TWW Season 1 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
@@ -33,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					i(229422, {	-- Undermine Equipment Chest
 						["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
-						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["cost"] = { { "c", 3008, 350 } },	-- 350x Valorstones
 						["sym"] = {
 							-- All TWW Season 2 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
@@ -54,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					i(244354, {	-- Ethereal Equipment Chest
 						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_X_LAUNCH },
-						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["cost"] = { { "c", 3008, 350 } },	-- 350x Valorstones
 						["sym"] = {
 							-- All TWW Season 3 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
@@ -81,59 +83,59 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(226814, {	-- Chest of Gold
 						["cost"] = {
 							-- #if AFTER 11.2.0
-							{"i", ALGARI_TOKEN_OF_MERIT_S3, 2},
+							{ "i", ALGARI_TOKEN_OF_MERIT_S3, 2 },
 							-- #elseif AFTER 11.1
-							{"i", ALGARI_TOKEN_OF_MERIT_S2, 2},
+							{ "i", ALGARI_TOKEN_OF_MERIT_S2, 2 },
 							-- #else
-							{"i", ALGARI_TOKEN_OF_MERIT_S1, 2},
+							{ "i", ALGARI_TOKEN_OF_MERIT_S1, 2 },
 							-- #endif
 						},
 					}),
 					-- Season 1
 					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 2}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S1, 2 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(226813, {	-- Golden Valorstone
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S1, 1 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(226505, {	-- Nerubian Gemweaver
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 6}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S1, 6 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S1, 1 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					-- Season 2
 					i(232382, {	-- Golden Valorstone
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 1}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S2, 1 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231153, {	-- Triumphant Satchel of Carved Undermine Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S2, 2 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231154, {	-- Celebratory Pack of Runed Undermine Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S2, 2 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(232386, {	-- S.A.D.
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 6}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S2, 6 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
 					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 1}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S3, 1 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 2}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S3, 2 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(248410, {	-- Technomancer's Gift
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 6}},
+						["cost"] = { { "i", ALGARI_TOKEN_OF_MERIT_S3, 6 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 				},
@@ -143,7 +145,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
 				["groups"] = appendAllGroups(
 					sharedData({	-- Mythic
-						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+						["cost"] = { { "i", 237502, 3 } },	-- 3x Puzzling Cartel Chip
 						["modID"] = 6,
 					},{
 						-- Vexie
@@ -197,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(228889),	-- Titan of Industry
 					}),
 					sharedData({	-- Heroic
-						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+						["cost"] = { { "i", 237502, 3 } },	-- 3x Puzzling Cartel Chip
 						["modID"] = 5,
 					},{
 						-- Vexie
@@ -248,7 +250,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(228889),	-- Titan of Industry
 					}),
 					sharedData({	-- M+ Stuff
-						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+						["cost"] = { { "i", 237502, 3 } },	-- 3x Puzzling Cartel Chip
 					},{
 						-- Motherlode
 						i(159612),	-- Azerokk's Resonating Heart
@@ -307,19 +309,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 58.5, 64.9, DORNOGAL },
 				["groups"] = {
 					i(224101, {	-- Brown Leafbug (PET!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(222978, {	-- Sandstone Ramolith (PET!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(221494, {	-- Skippy (PET!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(221811, {	-- Starkstripe Hopper (PET!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 					i(221761, {	-- Venomwing (PET!)
-						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
 				},
 			}),
@@ -328,31 +330,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(252757, {	-- Boulder Springs Recliner (DECOR!)
-						["sourceAchievement"] = 20595,	-- Sojourner of Isle of Dorn
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 900 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 900 } },
 					}),
 					i(253037, {	-- Dornogal Brazier (DECOR!)
-						["sourceAchievement"] = 40859,	-- We're Here All Night
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 600 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 600 } },
 					}),
 					i(253038, {	-- Dornogal Hanging Lantern (DECOR!)
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 500 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 					i(253034, {	-- Fallside Lantern (DECOR!)
-						["sourceQuest"] = 82895,	-- The Weight of Duty
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 450 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 450 } },
 					}),
 					i(253163, {	-- Fallside Storage Tent (DECOR!)
-						["sourceAchievement"] = 19408,	-- Professional Algari Master
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 900 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 900 } },
 					}),
 					i(253023, {	-- Rambleshire Resting Platform (DECOR!)
-						["sourceAchievement"] = 40504,	-- Rocked to Sleep
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 					}),
 					i(252756, {	-- Stonelight Countertop (DECOR!)
-						["sourceQuest"] = 79530,	-- Bad Business
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 800 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 					}),
 				},
 			}),
@@ -368,9 +364,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 57.3, 60.6, DORNOGAL },
 				["groups"] = {
 					i(246867, {	-- Tome of Earthen Directives (DECOR!)
-						["sourceAchievement"] = 41186,	-- Slate of the Union
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 750 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 750 } },
 					}),
 				},
 			}),
@@ -378,13 +373,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 47.3, 64.8, DORNOGAL },
 				["groups"] = {
 					i(227699, {	-- Earthen Ceremonial Chopper
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 					i(227701, {	-- Preserved Defender's Kris
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 					i(227700, {	-- Preserved Defender's Spear
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 				},
 			}),
@@ -396,259 +391,259 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 59.8, 56.4, DORNOGAL },
 				["groups"] = {
 					i(228379, {	-- Design: Captured Starlight (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223090, {	-- Design: Enchanter's Crystal (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223089, {	-- Design: Extravagant Loupes (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223091, {	-- Design: Forger's Font Inspector (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223092, {	-- Design: Novelist's Specs (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(228329, {	-- Design: Remembrance Stone (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223129, {	-- Formula: Enchant Tool - Algari Deftness (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223130, {	-- Formula: Enchant Tool - Algari Finesse (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223131, {	-- Formula: Enchant Tool - Algari Perception (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223132, {	-- Formula: Enchant Tool - Algari Resourcefulness (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223113, {	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223110, {	-- Pattern: Arathi Leatherworker's Smock (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(224422, {	-- Pattern: Artisan Enchanter's Hat (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(224421, {	-- Pattern: Artisan Fishing Cap (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(224420, {	-- Pattern: Artisan Gardening Hat (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223107, {	-- Pattern: Charged Scrapmaster's Gauntlets (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223104, {	-- Pattern: Defender's Armor Kit (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223106, {	-- Pattern: Earthen Forgemaster's Apron (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223109, {	-- Pattern: Earthen Jeweler's Cover (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223108, {	-- Pattern: Stonebound Herbalist's Pack (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223053, {	-- Plans: Artisan Leatherworker's Knife (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223054, {	-- Plans: Artisan Leatherworker's Toolset (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223052, {	-- Plans: Artisan Needle Set (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223050, {	-- Plans: Artisan Pickaxe (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223049, {	-- Plans: Artisan Sickle (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223037, {	-- Plans: Charged Facesmasher (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223068, {	-- Technique: Algari Missive of Crafting Speed (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223071, {	-- Technique: Algari Missive of Deftness (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223069, {	-- Technique: Algari Missive of Finesse (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223065, {	-- Technique: Algari Missive of Ingenuity (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223067, {	-- Technique: Algari Missive of Multicraft (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223070, {	-- Technique: Algari Missive of Perception (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(223066, {	-- Technique: Algari Missive of Resourcefulness (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 					}),
 					i(243052, {	-- Technique: Glyph of the Strix (RECIPE!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 						["timeline"] = { ADDED_11_1_7 },
 					}),
 					-- Profession Books
 					i(227420, {	-- Exceptional Alchemist's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = ALCHEMY,
 					}),
 					i(227418, {	-- Exceptional Blacksmith's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227422, {	-- Exceptional Enchanter's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = ENCHANTING,
 					}),
 					i(227423, {	-- Exceptional Engineer's Scribblings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = ENGINEERING,
 					}),
 					i(227426, {	-- Exceptional Herbalist's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = HERBALISM,
 					}),
 					i(227424, {	-- Exceptional Jeweler's Illustrations (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227425, {	-- Exceptional Leatherworker's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227427, {	-- Exceptional Miner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = MINING,
 					}),
 					i(227419, {	-- Exceptional Scribe's Runic Drawings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227428, {	-- Exceptional Skinner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = SKINNING,
 					}),
 					i(227421, {	-- Exceptional Tailor's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 300 } },
 						["requireSkill"] = TAILORING,
 					}),
 					i(227409, {	-- Faded Alchemist's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = ALCHEMY,
 					}),
 					i(227407, {	-- Faded Blacksmith's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227411, {	-- Faded Enchanter's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = ENCHANTING,
 					}),
 					i(227412, {	-- Faded Engineer's Scribblings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = ENGINEERING,
 					}),
 					i(227415, {	-- Faded Herbalist's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = HERBALISM,
 					}),
 					i(227413, {	-- Faded Jeweler's Illustrations (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227414, {	-- Faded Leatherworker's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227416, {	-- Faded Miner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = MINING,
 					}),
 					i(227408, {	-- Faded Scribe's Runic Drawings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227417, {	-- Faded Skinner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = SKINNING,
 					}),
 					i(227410, {	-- Faded Tailor's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 200 } },
 						["requireSkill"] = TAILORING,
 					}),
 					i(227431, {	-- Pristine Alchemist's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = ALCHEMY,
 					}),
 					i(227429, {	-- Pristine Blacksmith's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227433, {	-- Pristine Enchanter's Research (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = ENCHANTING,
 					}),
 					i(227434, {	-- Pristine Engineer's Scribblings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = ENGINEERING,
 					}),
 					i(227437, {	-- Pristine Herbalist's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = HERBALISM,
 					}),
 					i(227435, {	-- Pristine Jeweler's Illustrations (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227436, {	-- Pristine Leatherworker's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227438, {	-- Pristine Miner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = MINING,
 					}),
 					i(227430, {	-- Pristine Scribe's Runic Drawings (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227439, {	-- Pristine Skinner's Notes (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = SKINNING,
 					}),
 					i(227432, {	-- Pristine Tailor's Diagrams (CI!)
-						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 400 } },
 						["requireSkill"] = TAILORING,
 					}),
 					-- Surplus Bags
 					i(227682, {	-- Satchel of Surplus Cloth
-						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 600 } },
 					}),
 					i(228337, {	-- Satchel of Surplus Dust
-						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 600 } },
 					}),
 					i(227675, {	-- Satchel of Surplus Herbs
-						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 600 } },
 					}),
 					i(227681, {	-- Satchel of Surplus Leather
-						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 600 } },
 					}),
 					i(227676, {	-- Satchel of Surplus Ore
-						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+						["cost"] = { { "i", ARTISANS_ACUITY, 600 } },
 					}),
 				},
 			}),
@@ -657,8 +652,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 57.3, 60.8, DORNOGAL },
 				["groups"] = sharedData({
 					["cost"] = {
-						{"i", 223951, 1},	-- 1x Earth-Encrusted Gem
-						{"c", RESONANCE_CRYSTALS, 9750},
+						{ "i", 223951, 1 },	-- 1x Earth-Encrusted Gem
+						{ "c", RESONANCE_CRYSTALS, 9750 },
 					},
 				}, {
 					iensemble(219116),	-- Arcane Peddler's Trinkets
@@ -703,18 +698,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(246601, {	-- Bolt Chair (DECOR!)
 						["sourceQuest"] = 92580,	-- Spare A Chair
-						["cost"] = { {"i", 166846, 10 } },	-- 10x Spare Parts
+						["cost"] = { { "i", 166846, 10 } },	-- 10x Spare Parts
 					}),
 					i(256168, {	-- Draconic Sconce (DECOR!)
 						["sourceQuest"] = 92578,	-- Draconic Decor
-						["cost"] = { {"c", DRAGON_SUPPLIES, 10 } },
+						["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
 					}),
 					i(253168, {	-- Earthen Storage Crate (DECOR!)
 						["sourceQuest"] = 92572,	-- Furniture Favor
 					}),
 					i(245655, {	-- Filigree Moon Lamp (DECOR!)
 						["sourceQuest"] = 92577,	-- Dreamy Inspiration
-						["cost"] = { {"c", DRAGON_SUPPLIES, 10 } },
+						["cost"] = { { "c", DRAGON_SUPPLIES, 10 } },
 					}),
 					i(246487, {	-- Gnomish Tesla Coil (DECOR!)
 						["sourceQuest"] = 92580,	-- Spare A Chair
@@ -728,7 +723,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					i(247908, {	-- Nightborne Lantern (DECOR!)
 						["sourceQuest"] = 92581,	-- Last Light
-						["cost"] = { {"c", ORDER_RESOURCES, 50 } },
+						["cost"] = { { "c", ORDER_RESOURCES, 50 } },
 					}),
 					i(245259, {	-- Small Val'sharah Bookcase (DECOR!)
 						["sourceQuest"] = 92577,	-- Dreamy Inspiration
@@ -786,99 +781,99 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					-- Trade DOWN
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
-						["cost"] = {{"c", CARVED_HARBINGER_CREST, 15}},
+						["cost"] = { { "c", CARVED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
-						["cost"] = {{"c", RUNED_HARBINGER_CREST, 15}},
+						["cost"] = { { "c", RUNED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
-						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
+						["cost"] = { { "c", GILDED_HARBINGER_CREST, 15 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					-- Trade UP
 					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
-						["cost"] = {{ "c", WEATHERED_HARBINGER_CREST, 90 }},
+						["cost"] = { { "c", WEATHERED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
-						["cost"] = {{ "c", CARVED_HARBINGER_CREST, 90 }},
+						["cost"] = { { "c", CARVED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					i(220776, {	-- Glorious Cluster of Gilded Harbinger Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
-						["cost"] = {{ "c", RUNED_HARBINGER_CREST, 90 }},
+						["cost"] = { { "c", RUNED_HARBINGER_CREST, 90 } },
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 					-- Season 2
 					-- Trade DOWN
 					i(231267, {	-- Pouch of Weathered Undermine Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
-						["cost"] = {{"c", CARVED_UNDERMINE_CREST, 15}},
+						["cost"] = { { "c", CARVED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231269, {	-- Satchel of Carved Undermine Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
-						["cost"] = {{"c", RUNED_UNDERMINE_CREST, 15}},
+						["cost"] = { { "c", RUNED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231270, {	-- Pack of Runed Undermine Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
-						["cost"] = {{"c", GILDED_UNDERMINE_CREST, 15}},
+						["cost"] = { { "c", GILDED_UNDERMINE_CREST, 15 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Trade UP
 					i(231153, {	-- Triumphant Satchel of Carved Undermine Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
-						["cost"] = {{ "c", WEATHERED_UNDERMINE_CREST, 45 }},
+						["cost"] = { { "c", WEATHERED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231154, {	-- Celebratory Pack of Runed Undermine Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
-						["cost"] = {{ "c", CARVED_UNDERMINE_CREST, 45 }},
+						["cost"] = { { "c", CARVED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231264, {	-- Glorious Cluster of Gilded Undermine Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
-						["cost"] = {{ "c", RUNED_UNDERMINE_CREST, 45 }},
+						["cost"] = { { "c", RUNED_UNDERMINE_CREST, 45 } },
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
 					-- Trade DOWN
 					i(240928, {	-- Pouch of Weathered Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
-						["cost"] = {{"c", CARVED_ETHEREAL_CREST, 15}},
+						["cost"] = { { "c", CARVED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(240927, {	-- Satchel of Carved Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
-						["cost"] = {{"c", WEATHERED_ETHEREAL_CREST, 15}},
+						["cost"] = { { "c", WEATHERED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(240926, {	-- Pack of Runed Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
-						["cost"] = {{"c", GILDED_ETHEREAL_CREST, 15}},
+						["cost"] = { { "c", GILDED_ETHEREAL_CREST, 15 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					-- Trade UP
 					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
-						["cost"] = {{ "c", WEATHERED_ETHEREAL_CREST, 45 }},
+						["cost"] = { { "c", WEATHERED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
-						["cost"] = {{ "c", CARVED_ETHEREAL_CREST, 45 }},
+						["cost"] = { { "c", CARVED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 					i(240929, {	-- Glorious Cluster of Gilded Ethereal Crests
 						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
-						["cost"] = {{ "c", RUNED_ETHEREAL_CREST, 45 }},
+						["cost"] = { { "c", RUNED_ETHEREAL_CREST, 45 } },
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_X_LAUNCH },
 					}),
 				},

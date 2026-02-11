@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local DERBY_MARK = 3055;
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
@@ -14,7 +16,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(223286),	-- Kah, Legend of the Deep (MOUNT!)
 					}),
 				}),
-				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+				n(QUESTS, sharedData({
+					["isWeekly"] = true,
+				}, {
 					q(82778, {	-- Hallowfall Fishing Derby
 						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
@@ -59,7 +63,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				header(HEADERS.Quest, 82778, sharedData({	-- Hallowfall Fishing Derby
 					["collectible"] = false,
 					["isWeekly"] = true,
-				},{
+				}, {
 					q(82928, {	-- Arathor Hammerfish
 						["name"] = "Arathor Hammerfish Derby Bonus Mark",
 					}),
@@ -126,49 +130,49 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
 							i(225770, {	-- Algari Anglerthread
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(225771, {	-- Algari Seekerthread
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(224727, {	-- Dasher's Trophy Fish
-								["cost"] = {{"c", DERBY_MARK, 250}}
+								["cost"] = { { "c", DERBY_MARK, 250 } },
 							}),
 							i(226376, {	-- Dasher's Violet Rucksack
-								["cost"] = {{"c", DERBY_MARK, 50}}
+								["cost"] = { { "c", DERBY_MARK, 50 } },
 							}),
 							iensemble(224717, {	-- Ensemble: Cerulean Dredger
-								["cost"] = {{"c", DERBY_MARK, 500}}
+								["cost"] = { { "c", DERBY_MARK, 500 } },
 							}),
 							i(225763, {	-- Fallen Dalaran Defender
-								["cost"] = {{"c", DERBY_MARK, 50}}
+								["cost"] = { { "c", DERBY_MARK, 50 } },
 							}),
 							i(217375, {	-- Frenzied Hat of the Crimson Seas
-								["cost"] = {{"c", DERBY_MARK, 100}}
+								["cost"] = { { "c", DERBY_MARK, 100 } },
 							}),
 							i(225758, {	-- Hallowfall Harvester's Pitchfork
-								["cost"] = {{"c", DERBY_MARK, 50}}
+								["cost"] = { { "c", DERBY_MARK, 50 } },
 							}),
 							i(226379, {	-- Keen-eye 'Noculars
-								["cost"] = {{"c", DERBY_MARK, 50}}
+								["cost"] = { { "c", DERBY_MARK, 50 } },
 							}),
 							i(226378, {	-- Mereldar Artisan's Shoulderbag
-								["cost"] = {{"c", DERBY_MARK, 50}}
+								["cost"] = { { "c", DERBY_MARK, 50 } },
 							}),
 							i(228422, {	-- Recipe: Ghoulfish Delight (RECIPE!)
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(228421, {	-- Recipe: Melted Candlebar (RECIPE!)
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(228423, {	-- Recipe: Pep-In-Your-Step (RECIPE!)
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(225892, {	-- Recipe: Rockslide Shake (RECIPE!)
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = { { "c", DERBY_MARK, 10 } },
 							}),
 							i(224752, {	-- Soaked Journal Entry
-								["cost"] = {{"c", DERBY_MARK, 5}}
+								["cost"] = { { "c", DERBY_MARK, 5 } },
 							}),
 						},
 					}),

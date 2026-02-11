@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 CHETT = createHeader({
 	readable = "C.H.E.T.T.",
 	constant = "CHETT",
@@ -60,7 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				})),
 				n(REWARDS, {
 					i(235053, {	-- Completed C.H.E.T.T. List
-						["cost"] = {{ "i", 236682, 1 }},	-- C.H.E.T.T. List
+						["cost"] = { { "i", 236682, 1 } },	-- C.H.E.T.T. List
 					}),
 				}),
 				n(VENDORS, {
@@ -69,11 +70,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = {
 							i(236682, {	-- C.H.E.T.T. List
 								["description"] = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
-								["cost"] = {{ "i", 236668, 40 }},	-- C.H.E.T.T. Card
+								["cost"] = { { "i", 236668, 40 } },	-- C.H.E.T.T. Card
 							}),
 							i(237900, {	-- C.H.E.T.T. Pack (COSMETIC!)
 								["sourceAchievement"] = 41629,	-- C.H.E.T.T.mate
-								["cost"] = {{ "c", RESONANCE_CRYSTALS, 1000 }},
+								["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 							}),
 						},
 					}),

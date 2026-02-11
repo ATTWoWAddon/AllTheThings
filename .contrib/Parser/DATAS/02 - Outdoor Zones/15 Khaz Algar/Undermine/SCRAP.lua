@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 SCRAP = createHeader({
 	readable = "S.C.R.A.P.",
 	constant = "SCRAP",
@@ -9,6 +10,7 @@ SCRAP = createHeader({
 		en = "S.C.R.A.P.",
 	},
 });
+
 local function FromSCRAP(t)
 	t.crs = {
 		234344,	-- S.C.R.A.P. Heap
@@ -21,6 +23,7 @@ local function FromSCRAP(t)
 	}
 	return t
 end
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SCRAP, {
@@ -32,7 +35,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					ach(41592),	-- Absolutely Zero Littering
 					ach(41593),	-- Cleanin' the Streets
 				})),
-				FromSCRAP(n(TREASURES, sharedData({ ["repeatable"] = true, }, {
+				FromSCRAP(n(TREASURES, sharedData({
+					["repeatable"] = true,
+				}, {
 					o(516167, {	-- Half-Empty Bag (Blackwater Marina)
 						["coord"] = { 67.4, 29.3, UNDERMINE },
 						["questID"] = 87282,
@@ -159,7 +164,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				FromSCRAP(n(REWARDS, {
 					n(EVENT_COMPLETION, {	-- Can drop from the reward chests but would be obtuse to list under each one.
 						currency(3226),	-- Market Research
-						i(245315, { ["timeline"] = { ADDED_11_2_7 } }),	-- Trashfire Barrel (DECOR!)
+						i(245315, {	-- Trashfire Barrel (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+						}),
 					}),
 					currency(3218),	-- Empty Kaja'Cola Can
 					currency(3220, {	-- Vintage Kaja'Cola Can
@@ -188,29 +195,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 25.8, 38.1, UNDERMINE },
 						["groups"] = {
 							i(233557, {	-- Sifted Pile of Scrap
-								["cost"] = {{ "c", 3218, 333 }},	-- Empty Kaja'Cola Can
+								["cost"] = { { "c", 3218, 333 } },	-- Empty Kaja'Cola Can
 								["groups"] = {
 									i(229949),	-- Personalized Goblin S.C.R.A.Per (MOUNT!)
 									i(232838),	-- Viridian Mechasaur (PET!)
 								},
 							}),
 							i(237382, {	-- Undermine Supply Crate (TOY!)
-								["cost"] = {{ "c", 3218, 999 }},	-- Empty Kaja'Cola Can
+								["cost"] = { { "c", 3218, 999 } },	-- Empty Kaja'Cola Can
 							}),
 							-- i(233557, {	-- Sifted Pile of Scrap
-							-- 	["cost"] = {{ "c", 3220, 1 }},	-- Vintage Kaja'Cola Can (TODO: it doesn't change with renown, leave whatever cost is better)
+							-- 	["cost"] = { { "c", 3220, 1 } },	-- Vintage Kaja'Cola Can (TODO: it doesn't change with renown, leave whatever cost is better)
 							-- }),
 							i(232858, {	-- Cruncher (PET!)
-								["cost"] = {{ "c", 3220, 1 }},	-- Vintage Kaja'Cola Can
+								["cost"] = { { "c", 3220, 1 } },	-- Vintage Kaja'Cola Can
 							}),
 							i(232859, {	-- Lab Rat (PET!)
-								["cost"] = {{ "c", 3220, 3 }},	-- Vintage Kaja'Cola Can
+								["cost"] = { { "c", 3220, 3 } },	-- Vintage Kaja'Cola Can
 							}),
 							i(232986, {	-- GE86 Advance (MM!)
-								["cost"] = {{ "c", 3218, 2000 }},	-- Empty Kaja'Cola Can
+								["cost"] = { { "c", 3218, 2000 } },	-- Empty Kaja'Cola Can
 							}),
 							i(233558, {	-- S.C.R.A.P. Scrubber Deluxe
-								["cost"] = {{ "i", 233246, 1 }},	-- Gunk-Covered Thingy
+								["cost"] = { { "i", 233246, 1 } },	-- Gunk-Covered Thingy
 								["groups"] = {
 									filter(CLOTH, {
 										i(233263),	-- Laundered Cowl

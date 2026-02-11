@@ -1,19 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local FIRELIGHT_RUBY = 224642;
+
 AWAKENING_THE_MACHINE = createHeader({
 	readable = "Awakening The Machine",
 	icon = 5768149,
 	text = {
 		en = "Awakening The Machine",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
+		de = "Erweckung der Maschine",
+		es = "Despertar la máquina",
+		mx = "Despertar de la Máquina",
+		fr = "L’éveil de la machine",
+		it = "Risveglio della Macchina",
+		ko = "기계의 각성",
+		pt = "Despertando a Máquina",
 		ru = "Пробуждение Машины",
 		cn = "主机觉醒",
 		tw = "甦醒機械",
@@ -24,18 +26,19 @@ SNUFFLING = createHeader({
 	icon = 648644,
 	text = {
 		en = "Snuffling",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		de = "Schnüffeln",
+		es = "Olfatear",
+		mx = "Husmeo",
+		fr = "Flair",
+		it = "Fiuta e Scruta",
+		ko = "냄새맡기",
+		pt = "Fuçar",
+		ru = "Разнюхивание",
 		cn = "嗅探",
-		-- TODO: tw = "",
+		tw = "嗅聞",
 	},
 });
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		header(HEADERS.Faction, FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
@@ -165,19 +168,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}, {	-- RENOWN 6 --
 									}, {	-- RENOWN 7 --
 										i(225778, {	-- Awakening Power: Edict of Alacrity
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 										}),
 										i(225779, {	-- Awakening Power: Edict of Haste
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 										}),
 										i(225782, {	-- Awakening Power: Edict of Rage
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 										}),
 										i(225780, {	-- Awakening Power: Edict of Regeneration
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 										}),
 										i(225781, {	-- Awakening Power: Edict of Stamina
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 										}),
 									}, {	-- RENOWN 8 --
 									}, {	-- RENOWN 9 --
@@ -188,16 +191,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}, {	-- RENOWN 14 --
 									}, {	-- RENOWN 15 --
 										i(225773, {	-- Awakening Power: Grace of the Machine
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 										}),
 										i(225774, {	-- Awakening Power: Inner Forge
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 										}),
 										i(225775, {	-- Awakening Power: Steam Vent
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 										}),
 										i(225769, {	-- Awakening Power: Urgent Repairs
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 										}),
 									}, {	-- RENOWN 16 --
 									}, {	-- RENOWN 17 --
@@ -207,10 +210,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}, {	-- RENOWN 21 --
 									}, {	-- RENOWN 22 --
 										i(225777, {	-- Awakening Power: Cogwalker Support
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 975}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 975 } },
 										}),
 										i(225776, {	-- Awakening Power: Ironstrider Support
-											["cost"] = {{"c", RESONANCE_CRYSTALS, 975}},
+											["cost"] = { { "c", RESONANCE_CRYSTALS, 975 } },
 										}),
 									}, {	-- RENOWN 23 --
 									}, {	-- RENOWN 24 --
@@ -365,40 +368,40 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 							["groups"] = {
 								i(224726, {	-- Waxy Box of Rocks
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224724, {	-- Waxy Bundle of Dust
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224725, {	-- Waxy Bundle of Herbs
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224723, {	-- Waxy Bundle of Leather
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224722, {	-- Waxy Bundle of Resonant Crystals
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224646, {	-- Coppers (PET!)
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224643, {	-- Pet-Sized Candle (TOY!)
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224761, {	-- Quickwick Candle Kit
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224649, {	-- Wax Arsenal
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224721, {	-- Wax-Sealed Box
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(224760, {	-- Wobbles (PET!)
-									["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+									["cost"] = { { "i", FIRELIGHT_RUBY, 1 } },
 								}),
 								i(228220, {	-- Waxy Bundle
-									["cost"] = {{"i", 228210, 1}},	-- Firelight Ruby Chip
+									["cost"] = { { "i", 228210, 1 } },	-- Firelight Ruby Chip
 								}),
 							},
 						}),
@@ -411,99 +414,99 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{		-- RENOWN 1 --
 								i(253162, {	-- Earthen Chain Wall Shelf (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 600 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 600  } },
 									-- Exo Note: Unknown which Renown rank
 								}),
 								i(228418, {	-- Noncandescent Smithing Choker
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 							}, {	-- RENOWN 2 --
 								i(223063, {	-- Technique: Contract: Assembly of the Deeps (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 							}, {	-- RENOWN 3 --
 								i(225995, {	-- Pattern: Hideseeker's Tote (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(218342, {	-- Shawl of the Assembly
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1625 } },
 								}),
 							}, {	-- RENOWN 4 --
 								i(224418, {	-- Recipe: Everything Stew (RECIPE!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 							}, {	-- RENOWN 5 --
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 							}, {	-- RENOWN 8 --
 								i(212107, {	-- Inflammable Forging Goggles
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223294, {	-- Noncandescent Smithing Hood
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223295, {	-- Slag-Accruing Mask
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223293, {	-- Unmelting Ironworker Helmet
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
 								i(224172, {	-- Restored Coffer Key
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 								}),
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(224653, {	-- Machine-Learned Engineering Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ENGINEERING,
 								}),
 								i(224654, {	-- Machine-Learned Inscription Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = INSCRIPTION,
 								}),
 								i(224651, {	-- Machine-Learned Mining Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = MINING,
 								}),
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 								i(218341, {	-- Shoulderguards of the Assembly
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 							}, {	-- RENOWN 15 --
 							}, {	-- RENOWN 16 --
 							}, {	-- RENOWN 17 --
 								i(223623, {	-- Guacamole (PET!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 6500 } },
 								}),
 							}, {	-- RENOWN 18 --
 								i(228698, {	-- Candleflexer's Dumbbell (TOY!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 								i(223306, {	-- Inflammable Forging Cinch
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223305, {	-- Noncandescent Smithing Cord
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223304, {	-- Slag-Accruing Waistguard
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223307, {	-- Unmelting Ironworker Clasp
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 19 --
 								i(223505, {	-- Crimson Mudnose (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 8125 } },
 								}),
 							}, {	-- RENOWN 20 --
 							}, {	-- RENOWN 21 --
 							}, {	-- RENOWN 22 --
 							}, {	-- RENOWN 23 --
 								i(222989, {	-- Cyan Glowmite (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 11375 } },
 								}),
 							}, {	-- RENOWN 24 --
 							}, {	-- RENOWN 25 --

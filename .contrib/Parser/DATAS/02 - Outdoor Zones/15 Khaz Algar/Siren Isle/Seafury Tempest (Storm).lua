@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		header(HEADERS.Spell, 458069, {	-- Seafury Tempest (Storm)
@@ -25,23 +26,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- Birdy (move to special?)
 				hqt(85802, {	-- Use the Whirling Runekey in The Forgotten Vault
 					["name"] = "Use the Whirling Runekey in The Forgotten Vault (Storm Phase)",
-					["cost"] = {{"i",232571,1}},	-- Whirling Runekey
+					["cost"] = { { "i", 232571, 1 } },	-- Whirling Runekey
 				}),
 				hqt(85801, {	-- Use the Torrential Runekey in The Forgotten Vault
 					["name"] = "Use the Torrential Runekey in The Forgotten Vault (Storm Phase)",
-					["cost"] = {{"i",232572,1}},	-- Torrential Runekey
+					["cost"] = { { "i", 232572, 1 } },	-- Torrential Runekey
 				}),
 				hqt(85799, {	-- Use the Turbulent Runekey in The Forgotten Vault
 					["name"] = "Use the Turbulent Runekey in The Forgotten Vault (Storm Phase)",
-					["cost"] = {{"i",232570,1}},	-- Turbulent Runekey
+					["cost"] = { { "i", 232570, 1 } },	-- Turbulent Runekey
 				}),
 				hqt(85803, {	-- Use the Thunderous Runekey in The Forgotten Vault
 					["name"] = "Use the Thunderous Runekey in The Forgotten Vault (Storm Phase)",
-					["cost"] = {{"i",232573,1}},	-- Thunderous Runekey
+					["cost"] = { { "i", 232573, 1 } },	-- Thunderous Runekey
 				}),
 				hqt(85800, {	-- Use the Cyclonic Runekey in The Forgotten Vault
 					["name"] = "Use the Cyclonic Runekey in The Forgotten Vault (Storm Phase)",
-					["cost"] = {{"i",232569,1}},	-- Cyclonic Runekey
+					["cost"] = { { "i", 232569, 1 } },	-- Cyclonic Runekey
 				}),
 				q(85811, {	-- Thrayir, Eyes of the Siren
 					["sourceQuests"] = {
@@ -60,7 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(RARES, sharedData({
 				["isDaily"] = true,
-			},{
+			}, {
 				n(231356, {	-- Brinebough
 					["coord"] = { 56.1, 84.5, SIREN_ISLE },
 					["questID"] = 85404,
@@ -123,13 +124,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(232570, {	-- Turbulent Runekey
-					["cost"] = {{"i", 234327, 3 }},
+					["cost"] = { { "i", 234327, 3 } },
 				}),
 				i(232605, {	-- Thunderous Fragment
 					["description"] = "Found in chests and treasures during a storm.",
 				}),
 				i(232573, {	-- Thunderous Runekey
-					["cost"] = {{"i", 232605, 5 }},
+					["cost"] = { { "i", 232605, 5 } },
 				}),
 			}),
 			n(WORLD_QUESTS, {
@@ -137,7 +138,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 					84725,	-- The Circlet Calls
 				},
-				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				["groups"] = bubbleDownFiltered({
+					["isWorldQuest"] = true,
+				},FILTERFUNC_questID,{
 					n(SPECIAL, {
 						q(86174),	-- Special Assignment: Storm's a Brewin (TODO: seems to be unlock tracker)
 						q(85113, {	-- Special Assignment: Storm's a Brewin
@@ -176,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["description"] = "Drops rarely from any enemies on the island during a storm.",
 				}),
 				i(232572, {	-- Torrential Runekey
-					["cost"] = {{"i", 234328, 7 }},
+					["cost"] = { { "i", 234328, 7 } },
 				}),
 			}),
 		}),

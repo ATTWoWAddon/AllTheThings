@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(ZONE_DROPS, {
@@ -8,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Shards can drop from any mob, but rare mobs have an increased chance.\n\nBest Route is killing the following rare mobs:\nBloodmaw\nEmperor Pitfang\nRustul Titancap\nSandres\nSpringbubble\nWarphorn\n\nShards continue to drop even when you already killed the rare for the day.",
 				["groups"] = {
 					i(224026, {	-- Storm Vessel (CI!)
-						["cost"] = {{"i", 224025, 10}},	-- 10x Crackling Shard
+						["cost"] = { { "i", 224025, 10 } },	-- 10x Crackling Shard
 					}),
 				},
 			}),

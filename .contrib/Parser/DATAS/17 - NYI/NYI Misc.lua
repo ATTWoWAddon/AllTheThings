@@ -1942,6 +1942,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(246818),	-- A Steamy Romance Novel: Waves of Desire
 			i(249235),	-- Bottomless Bag of Entropy
 			i(238921),	-- Containment Canister
+			i(248955),	-- Ethereal Seam Ripper
 			i(243580),	-- Etheric Pylon
 			i(250975),	-- Hellcaller Chest
 			i(247927),	-- Humming Mana-Stone

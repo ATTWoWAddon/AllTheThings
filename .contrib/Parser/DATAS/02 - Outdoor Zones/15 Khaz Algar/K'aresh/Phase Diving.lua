@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		header(HEADERS.Spell, 1214374, {	-- Phase Diving
@@ -10,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					Alex TODO: is there a better way?
 					Exo write-up:
 					This one will be tricky. You find orbs while Phase Diving and when you go through them, you get the item. Orb can't be targeted, no WoWhead data so far... We don't know if an Orb is an object or NPC.
-					Reshii Wraps Level 2 upgrade "Secrets of the Depths" is required for this as IT is the one unlocking this feature. "You may now find phase orbs ... Phase orbs have a chance to recover a Phase-Lost appearance.
+					Reshii Wraps Level 2 upgrade "Secrets of the Depths" is required for this as IT is the one unlocking this feature. "You may now find phase orbs ... Phase orbs have a chance to recover a Phase-Lost appearance."
 					So... When adventuring, you can find Orbs with Fixed coordinate and you can "go through" it multiple times on a same character. Example, { 50.1, 36.2, KARESH }, behind Hashim.
 					You either get a junk item 250305, [Phase-Lost Detritus] OR a Phase-Lost cosmetic. (Level 3) Upgrade "Orbs of Power" messes with the concept of coordinates.
 					"Enemies Killed while Phase Diving now have a chance to phase orb ... Phase orbs have a chance to recover a Phase-Lost appearance." + You can ride ground mount.
@@ -170,7 +171,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(RARES, sharedData({
 				["isDaily"] = true,
-			},{
+			}, {
 				n(232128, {	-- Ixthar the Unblinking
 					["coord"] = { 64.0, 43.6, KARESH },
 					["questID"] = 90596,
@@ -448,7 +449,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(WORLD_QUESTS, {
 				-- ["sourceQuests"] = {},
-				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				["groups"] = bubbleDownFiltered({
+					["isWorldQuest"] = true,
+				},FILTERFUNC_questID,{
 					q(86872, {	-- Phase Diving: Experimental Extermination
 						["coord"] = { 52.8, 61.7, KARESH },
 					}),

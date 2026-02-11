@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(QUESTS, {
@@ -1134,55 +1135,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuests"] = { 80678 },	-- Time Lost
 					["provider"] = { "n", 215527 },	-- Keyrra Flamestonge <Expedition Scout>
 					["coord"] = { 65.4, 32.2, HALLOWFALL },
-					["cost"] = {{"i", 219810, 1}},	-- 1x Broken Bracelet
+					["cost"] = { { "i", 219810, 1 } },	-- 1x Broken Bracelet
 				}),
 				q(82835, {	-- Calcified Journal
 					["sourceQuests"] = { 82813 },	-- Time Borrowed
 					["provider"] = { "n", 222813 },	-- Lorel Ironglen
 					["coord"] = { 48.4, 38.9, HALLOWFALL },
-					["cost"] = {{"i", 224272, 1}},	-- 1x Calcified Journal
+					["cost"] = { { "i", 224272, 1 } },	-- 1x Calcified Journal
 				}),
 				q(82846, {	-- Dented Spearhead
 					["sourceQuests"] = { 82810 },	-- Time Found
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
-					["cost"] = {{"i", 224267, 1}},	-- 1x Dented Spearhead
+					["cost"] = { { "i", 224267, 1 } },	-- 1x Dented Spearhead
 				}),
 				q(82849, {	-- Filigreed Cleric
 					["sourceQuests"] = { 82810 },	-- Time Found
 					["provider"] = { "n", 217813 },	-- Kiera Horth
 					["coord"] = { 44.0, 49.7, HALLOWFALL },
-					["cost"] = {{"i", 224268, 1}},	-- 1x Filigreed Cleric
+					["cost"] = { { "i", 224268, 1 } },	-- 1x Filigreed Cleric
 				}),
 				q(82845, {	-- Ivory Tinderbox
 					["sourceQuests"] = { 82810 },	-- Time Found
 					["provider"] = { "n", 226051 },	-- Haverd Sunhart
 					["coord"] = { 41.6, 34.8, HALLOWFALL },
-					["cost"] = {{"i", 224266, 1}},	-- 1x Ivory Tinderbox
+					["cost"] = { { "i", 224266, 1 } },	-- 1x Ivory Tinderbox
 				}),
 				q(80679, {	-- Stuffed Lynx Toy
 					["sourceQuests"] = { 80678 },	-- Time Lost
 					["provider"] = { "n", 218486 },	-- Phillip Taversil <Leatherworking>
 					["coord"] = { 43.3, 55.4, HALLOWFALL },
-					["cost"] = {{"i", 219809, 1}},	-- 1x Plush Lynx
+					["cost"] = { { "i", 219809, 1 } },	-- 1x Plush Lynx
 				}),
 				q(82815, {	-- Sturdy Locket
 					["sourceQuests"] = { 82813 },	-- Time Borrowed
 					["provider"] = { "n", 220859 },	-- Amy Lychenstone
 					["coord"] = { 42.1, 49.5, HALLOWFALL },
-					["cost"] = {{"i", 224274, 1}},	-- 1x Sturdy Locket
+					["cost"] = { { "i", 224274, 1 } },	-- 1x Sturdy Locket
 				}),
 				q(80680, {	-- Tarnished Compass
 					["sourceQuests"] = { 80678 },	-- Time Lost
 					["provider"] = { "o", 439890 },	-- Grave Offering Location
 					["coord"] = { 43.5, 51.7, HALLOWFALL },
-					["cost"] = {{"i", 219524, 1}},	-- 1x Tarnished Compass
+					["cost"] = { { "i", 219524, 1 } },	-- 1x Tarnished Compass
 				}),
 				q(82832, {	-- Wooden Figure
 					["sourceQuests"] = { 82813 },	-- Time Borrowed
 					["provider"] = { "n", 217609 },	-- Barahl Lynflayme
 					["coord"] = { 69.3, 43.8, HALLOWFALL },
-					["cost"] = {{"i", 224273, 1}},	-- 1x Wooden Figure
+					["cost"] = { { "i", 224273, 1 } },	-- 1x Wooden Figure
 				}),
 			}),
 			hqt(82025, {	-- Talk with Sky-Captain Aerthin

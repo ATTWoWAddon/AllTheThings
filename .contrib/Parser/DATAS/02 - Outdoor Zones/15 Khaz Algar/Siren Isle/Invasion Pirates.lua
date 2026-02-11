@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_PIRATE, {
@@ -132,7 +133,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["description"] = "Key drops from First Mate Shellshock\n/att n:228582",
 						["coord"] = { 62.4, 90.8, SIREN_ISLE },
 						["questID"] = 84529,
-						["cost"] = {{ "i", 228621, 1 }},	-- Bilge Rat Supply Key
+						["cost"] = { { "i", 228621, 1 } },	-- Bilge Rat Supply Key
 						["isWeekly"] = true,
 					}),
 				}),

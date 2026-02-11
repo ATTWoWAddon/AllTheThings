@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(TREASURES, {
@@ -106,20 +107,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 49.0, 31.6, THE_RINGING_DEEPS },
 				["questID"] = 82464,
 				["cost"] = {
-					{"i", 223880, 1},	-- Rough Deepamethyst Shard
-					{"i", 223882, 1},	-- Rough Deepdiamond Shard
-					{"i", 223881, 1},	-- Rough Deepemerald Shard
-					{"i", 223878, 1},	-- Rough Deepruby Shard
-					{"i", 223879, 1},	-- Rough Deeptopaz Shard
+					{ "i", 223880, 1 },	-- Rough Deepamethyst Shard
+					{ "i", 223882, 1 },	-- Rough Deepdiamond Shard
+					{ "i", 223881, 1 },	-- Rough Deepemerald Shard
+					{ "i", 223878, 1 },	-- Rough Deepruby Shard
+					{ "i", 223879, 1 },	-- Rough Deeptopaz Shard
 				},
 			}),
 			o(433733, {	-- Forgotten Treasure
 				["description"] = "Key to this chest can be found in nearest Buried Treasure.",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
-				["cost"] = {
-					{"i", 217960, 1},	-- Forgotten Key
-				},
+				["cost"] = { { "i", 217960, 1 } },	-- Forgotten Key
 				["groups"] = {
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local COLLECTOR_DYNA = {
 	["crs"] = { 223446 },
 	["coord"] = { 38.2, 78.8, ISLE_OF_DORN },
@@ -17,6 +18,7 @@ local ZIRIAK = {
 	["crs"] = { 223443 },
 	["coord"] = { 61.4, 36.8, NERUBAR_LOWER },
 };
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ACHIEVEMENTS, {
 		ach(41555, {	-- All That Khaz

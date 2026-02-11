@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			header(HEADERS.Achievement, 41970, {	-- The Knife's Edge
 				header(HEADERS.AchCriteria, 41970.01, {	-- Chapter 1: A Shadowy Invitation
 					q(84956, {	-- A Shadowy Invitation
-						-- ["sourceQuests"] = { xx },	-- TODO: does it exist?
+						-- ["sourceQuests"] = { xx },	-- TODO: completing level up campaign?
 						["qg"] = 227758,	-- Alleria Windrunner
 						["coord"] = { 42.4, 26.9, DORNOGAL },
 					}),

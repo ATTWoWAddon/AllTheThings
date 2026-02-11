@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(WORLD_QUESTS, {
@@ -8,7 +9,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				petbattle(q(82293, {	-- The Power of Friendship
 					["provider"] = { "n", 223444 },	-- Friendhaver Grem
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
@@ -27,7 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(225948, {	-- Caesper
 				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
 				["coord"] = { 41.8, 58.3, HALLOWFALL },	-- Caesper
-				["cost"] = {{ "i", 225238, 1 }},	-- Meaty Haunch
+				["cost"] = { { "i", 225238, 1 } },	-- Meaty Haunch
 				["groups"] = {
 					o(453167, {	-- Disturbed Lyns Treasure
 						["questID"] = 83263,

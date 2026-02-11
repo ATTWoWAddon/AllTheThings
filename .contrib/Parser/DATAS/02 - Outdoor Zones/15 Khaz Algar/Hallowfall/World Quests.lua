@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(WORLD_QUESTS, {
@@ -8,7 +9,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				petbattle(q(82294, {	-- Miniature Army
 					["provider"] = { "n", 223442 },	-- Kyrie
 					["coord"] = { 57.4, 62.8, HALLOWFALL },

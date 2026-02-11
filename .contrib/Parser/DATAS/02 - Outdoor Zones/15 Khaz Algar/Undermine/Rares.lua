@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(RARES, {
@@ -118,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					231329,	-- De-Pollution Station X1119
 					231336,	-- Vignette Bunny [DNT]
 				},
-				["cost"] = {{"i", 229823, 1}},	-- Canister of Darkfuse Solution
+				["cost"] = { { "i", 229823, 1 } },	-- Canister of Darkfuse Solution
 				["coord"] = { 41.2, 91.4, UNDERMINE },
 				["questID"] = 90492,
 				["isWeekly"] = true,

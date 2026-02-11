@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
@@ -176,7 +177,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
 						i(219459),	-- Earthen Traveler's Staff
-						i(258264, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Candle Trio (DECOR!)
+						i(258264, {	-- Kobold Candle Trio (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 					},
 				}),
 				q(80082, {	-- Back to Gundargaz
@@ -566,7 +569,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "n", 220220 },	-- Berrund the Gleaming
 					["coord"] = { 69.6, 40.9, THE_RINGING_DEEPS },
 					["groups"] = {
-						i(258265, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Wagon (DECOR!)
+						i(258265, {	-- Kobold Wagon (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 						i(228657),	-- Scrit's Handmade Girdle
 						i(228655),	-- Scrit's Handmade Gloves
 						i(228654),	-- Scrit's Handmade Shoes
@@ -883,7 +888,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(217395),	-- Freshly Smithed Tools (QI!)
 						i(216681),	-- Merchant Stall Parts (QI!)
 						--
-						i(258267, { ["timeline"] = { ADDED_12_0_0 } }),	-- Candle-Festooned Wooden Awning (DECOR!)
+						i(258267, {	-- Candle-Festooned Wooden Awning (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 					},
 				}),
 			}),
@@ -987,7 +994,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							i(219224),	-- Prooftelling Flower (QI!)
 						}),
 						--
-						i(258262, { ["timeline"] = { ADDED_12_0_0 } }),	-- Kobold Digger's Chair (DECOR!)
+						i(258262, {	-- Kobold Digger's Chair (DECOR!)
+							["timeline"] = { ADDED_12_0_0 },
+						}),
 					},
 				}),
 			}),
@@ -1224,19 +1233,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["sourceQuest"] = 84020,	-- A Mech in Need
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219301, 1 }, },	-- 1x Overclocked Gear-a-Rang Launcher
+					["cost"] = { { "i", 219301, 1 } },	-- 1x Overclocked Gear-a-Rang Launcher
 				}),
 				q(84023, {	-- Orienting Ourselves
 					["sourceQuest"] = 84021,	-- Machine Without Cogs
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219299, 1 }, },	-- 1x Synergistic Brewterializer
+					["cost"] = { { "i", 219299, 1 } },	-- 1x Synergistic Brewterializer
 				}),
 				q(84024, {	-- Clutching Control
 					["sourceQuest"] = 84023,	-- Orienting Ourselves
 					["provider"] = { "n", 213875  },	-- Speaker Jurlax
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-					["cost"] = { { "i", 219306, 1 }, },	-- 1x Burin of the Candle King
+					["cost"] = { { "i", 219306, 1 } },	-- 1x Burin of the Candle King
 				}),
 				q(84025, {	-- Repurposed, Restored
 					["sourceQuest"] = 84024,	-- Clutching Control

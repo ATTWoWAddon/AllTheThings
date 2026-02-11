@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(RARES, sharedData({
 			["isDaily"] = true,
-		},{
+		}, {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					230137,	-- Asbjorn the Bloodsoaked

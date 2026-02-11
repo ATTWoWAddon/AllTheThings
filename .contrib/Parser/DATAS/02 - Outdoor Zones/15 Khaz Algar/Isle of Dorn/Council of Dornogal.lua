@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		header(HEADERS.Faction, FACTION_COUNCIL_OF_DORNOGAL, {
@@ -166,7 +167,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 											-- #endif
 										},
 										["groups"] = {
-											i(245294, { ["timeline"] = { ADDED_11_2_7 } }),	-- Councilward's Jeweled Goblet (DECOR!)
+											i(245294, {	-- Councilward's Jeweled Goblet (DECOR!)
+												["timeline"] = { ADDED_11_2_7 },
+											}),
 											i(228320),	-- Design: Binding of Binding (RECIPE!)
 											i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 											i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
@@ -188,7 +191,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									}),
 									i(235151, {	-- Distinguished Actor's Chest
 										["timeline"] = { ADDED_11_1_0 },
-										["groups"] = { i(245294, { ["timeline"] = { ADDED_11_2_7 } }) },	-- Councilward's Jeweled Goblet (DECOR!)
+										["groups"] = {
+											i(245294, {	-- Councilward's Jeweled Goblet (DECOR!)
+												["timeline"] = { ADDED_11_2_7 },
+											}),
+										},
 									}),
 								},
 							}),
@@ -214,59 +221,59 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{		-- RENOWN 1 --
 								i(248013, {	-- Recipe: Dornic Mine and Cheese Platter (RECIPE!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3000 } },
 								}),
 								i(253168, {	-- Earthen Storage Crate (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 								i(245295, {	-- Literature of Dornogal (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 								i(245297, {	-- Literature of Gundargaz (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 								i(245296, {	-- Literature of Taelloch (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 								i(245561, {	-- Ornate Ochre Window (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 650}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 650 } },
 								}),
 							}, {	-- RENOWN 2 --
 								i(228419, {	-- Mineral-Sparkled Cape
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 								i(218345, {	-- Honorary Councilmember's Cloak
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1625 } },
 								}),
 							}, {	-- RENOWN 3 --
 								i(223127, {	-- Formula: Enchant Chest - Council's Intellect (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(223103, {	-- Pattern: Stormbound Armor Kit (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(223062, {	-- Technique: Contract: Council of Dornogal (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 							}, {	-- RENOWN 4 --
 							}, {	-- RENOWN 5 --
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 								i(223290, {	-- Chiseled Boulder Pauldrons
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223292, {	-- Gem-Waded Shoulderpads
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223289, {	-- Mineral-Sparkled Mantle
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223291, {	-- Ore-namental Spaulders
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -274,50 +281,50 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(224645, {	-- Jewel-Etched Alchemy Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ALCHEMY,
 								}),
 								i(224647, {	-- Jewel-Etched Blacksmithing Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = BLACKSMITHING,
 								}),
 								i(224652, {	-- Jewel-Etched Enchanting Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = ENCHANTING,
 								}),
 								i(224648, {	-- Jewel-Etched Tailoring Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = TAILORING,
 								}),
 							}, {	-- RENOWN 13 --
 								i(222965, {	-- Loamy (PET!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 6500 } },
 								}),
 							}, {	-- RENOWN 14 --
 								i(228706, {	-- Rockslidomancer's Stone (TOY!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 							}, {	-- RENOWN 15 --
 								i(218344, {	-- Honorary Councilmember's Spaulders
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 							}, {	-- RENOWN 16 --
 								i(223301, {	-- Chiseled Boulder Crushers
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223303, {	-- Gem-Waded Footwraps
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223300, {	-- Mineral-Sparkled Sandals
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223302, {	-- Ore-namental Sabatons
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 17 --
 							}, {	-- RENOWN 18 --
 								i(223571, {	-- Shale Ramolith (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 8125 } },
 								}),
 							}, {	-- RENOWN 19 --
 							}, {	-- RENOWN 20 --
@@ -325,7 +332,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 22 --
 							}, {	-- RENOWN 23 --
 								i(221753, {	-- Smoldering Cinderbee (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 11375 } },
 								}),
 							}, {	-- RENOWN 24 --
 							}, {	-- RENOWN 25 --

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(QUESTS, {
@@ -423,7 +424,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),--
 			hqt(86240, {	-- Give Marmaduke the well loved squeky toy
 				["name"] = "Give Marmaduke the Well Loved Squeaky Toy",
-				["cost"] = {{ "i", 233027, 1 }},	-- Well Loved Squeaky Toy
+				["cost"] = { { "i", 233027, 1 } },	-- Well Loved Squeaky Toy
 				["provider"] = { "n", 234172 },	-- Marmaduke
 				["coords"] = {
 					{ 42.5, 47.4, SIREN_ISLE },

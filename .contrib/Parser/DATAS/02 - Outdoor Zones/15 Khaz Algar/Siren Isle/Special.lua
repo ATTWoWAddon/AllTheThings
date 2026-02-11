@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(SPECIAL, {
 			header(HEADERS.Spell, 474086, sharedData({	-- Prismatic Snapdragon Alternate Colors
 				type = "characterUnlockQuestID",
 				sourceQuest = 86485,	-- A Loyal Friend
-			},{
+			}, {
 				-- Teal is unlocked via 86485	-- A Loyal Friend
 				-- Item drop unlocks the 'character unlock'
 				-- but the Item itself retains a separate repeatable questID which determines which color

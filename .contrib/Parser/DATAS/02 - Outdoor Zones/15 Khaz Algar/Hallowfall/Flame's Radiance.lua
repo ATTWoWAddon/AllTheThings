@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		header(HEADERS.Faction, FACTION_FLAMES_RADIANCE, {
@@ -79,46 +80,46 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 								i(238850, {	-- Arathi Entertainer's Flame (TOY!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 							}, {	-- RENOWN 3 --
 								i(238986, {	-- Mister Mans (PET!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 6500 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 6500 } },
 								}),
 							}, {	-- RENOWN 4 --
 								i(238852, {	-- Flame's Radiance Banner (TOY!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 							}, {	-- RENOWN 5 --
 							}, {	-- RENOWN 6 --
 								i(241188, {	-- Swiftpaw (PET!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 6500 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 6500 } },
 								}),
 								i(239693, {	-- Radiant Lynx Whistle (TOY!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 5000 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 							}, {	-- RENOWN 7 --
 								i(238824, {	-- Radiant Traveler's Backpack (COSMETIC!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 3250 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 							}, {	-- RENOWN 8 --
 								i(245293, {	-- Collection of Arathi Scripture (DECOR!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 1200 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1200 } },
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 								i(238837, {	-- Delver's Dirigible Schematic: Pale Paint (MM!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 3250 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 								i(238839, {	-- Delver's Dirigible Schematic: Arathi Decal (MM!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 2600 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 9 --
 								i(238829, {	-- Radiant Imperial Lynx (MOUNT!)
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 8125 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 8125 } },
 								}),
 							}, {	-- RENOWN 10 --
 								i(237433, {	-- Necklace of the Devout
-									["cost"] = {{ "c", RESONANCE_CRYSTALS, 3900 }},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							},
 						}),

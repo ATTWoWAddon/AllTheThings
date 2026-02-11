@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
@@ -49,8 +50,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 40.9, 73.8, ISLE_OF_DORN },
 				["questID"] = 79586,
 				["cost"] = {
-					{"i", 220143, 5},	-- 5x Dornish Pike
-					{"i", 222533, 1},	-- 1x Goldengill Trout
+					{ "i", 220143, 5 },	-- 5x Dornish Pike
+					{ "i", 222533, 1 },	-- 1x Goldengill Trout
 				},
 			}),
 			o(443754, {	-- Earthen Coffer
@@ -164,7 +165,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["crs"] = { 223159 },	-- Plump Snapcrab
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 				["questID"] = 82212,	-- Weak Lionfish
-				["cost"] = {{"i", 222906, 5}},	-- 5x Plump Snapcrab
+				["cost"] = { { "i", 222906, 5 } },	-- 5x Plump Snapcrab
 				["groups"] = {
 					o(444022, {	-- Magical Treasure Chest
 						["coord"] = { 40.7, 59.7, ISLE_OF_DORN },
@@ -257,7 +258,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
 				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
-				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
+				["cost"] = { { "i", 221550, 1 } },	-- 1x Boskroot Cap
 				["groups"] = {
 					o(444233, {	-- Mushroom Cap
 						["questID"] = 83245,
@@ -293,7 +294,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(222847, {	-- Weary Water Elemental
 				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },
 				["questID"] = 82134,
-				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
+				["cost"] = { { "i", 221504, 1 } },	-- 1x Elemental Pearl
 				["groups"] = {
 					o(444215, {	-- Mysterious Orb
 						["questID"] = 83244,

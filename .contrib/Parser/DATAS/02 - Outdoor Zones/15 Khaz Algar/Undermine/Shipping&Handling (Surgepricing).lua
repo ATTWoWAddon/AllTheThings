@@ -1,22 +1,23 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 SHIPPING_AND_HANDLING = createHeader({
 	readable = "Shipping & Handling",
 	constant = "SHIPPING_AND_HANDLING",
 	icon = 6383558,
 	text = {
 		en = "Shipping & Handling",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		de = "Versand & Logistik",
+		es = "Envíos y Portes",
+		mx = "Envíos y Manipulación",
+		fr = "Service d’expédition",
+		it = "Spedizione e Gestione",
+		ko = "운송 및 취급소",
+		pt = "Fretes e Remessas",
+		ru = "Доставка и разгрузка",
 		cn = "货运与接收",
-		-- TODO: tw = "",
+		tw = "運送和搬運",
 	},
 });
 
@@ -47,7 +48,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 				}),
-				n(QUESTS, sharedData({["repeatable"]=true,}, {
+				n(QUESTS, sharedData({
+					["repeatable"]=true,
+				}, {
 					q(85888),	-- Artistic License
 					q(87588),	-- Bash that Trash
 					q(86317),	-- Black Blood by Sea
@@ -96,7 +99,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					filter(COSMETIC, {
 						i(231556),	-- Breakneck Cabbie's Coat
 					}),
-					n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+					n(DECOR, sharedDataSelf({
+						["timeline"] = { ADDED_11_2_7 },
+					}, {
 						i(245320),	-- Very Reliable Undermine Lamppost (DECOR!)
 					})),
 					n(ARMOR, {

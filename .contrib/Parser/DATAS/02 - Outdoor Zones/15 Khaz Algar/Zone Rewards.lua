@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ZONE_DROPS, {
 		i(228963, {	-- Unfamiliar Emblem (QS!)

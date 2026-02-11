@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(WORLD_QUESTS, {
@@ -8,7 +9,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				petbattle(q(82292, {	-- Rock Collector
 					["provider"] = { "n", 223446 },	-- Collector Dyna
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },

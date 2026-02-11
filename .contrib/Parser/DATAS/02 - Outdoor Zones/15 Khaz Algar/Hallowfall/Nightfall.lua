@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 NIGHTFALL = createHeader({
 	readable = "Nightfall",
 	icon = 6694197,
@@ -20,6 +21,7 @@ NIGHTFALL = createHeader({
 });
 
 local RADIANT_EMBLEM = 238920;
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(NIGHTFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
@@ -43,12 +45,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			n(QUESTS, sharedData({
-					["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
-					["coord"] = { 28.3, 56.1, HALLOWFALL },
-					["isWeekly"] = true,
-					["groups"] = {
-						i(239546),	-- Confiscated Cultist's Bag
-					},
+				["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
+				["coord"] = { 28.3, 56.1, HALLOWFALL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(239546),	-- Confiscated Cultist's Bag
+				},
 			}, {
 				q(88945),	-- Radiant Incursion: Rak-Zakaz
 				q(88916),	-- Radiant Incursion: Sureki's End
@@ -559,7 +561,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(VENDORS, {
 				n(243253, {	-- Layne Pontelle
 					["coord"] = { 28.3, 56.1, HALLOWFALL },
-					["groups"] = sharedData({ ["cost"] = {{"c", RESONANCE_CRYSTALS, 500}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+					}, {
 						i(241278),	-- Stalwart's Waistcoat
 						i(241269),	-- Aeroknight's Undercoat
 						i(241268),	-- Sentry's Padded Doublet
@@ -568,7 +572,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(240979, {	-- Vesper Churnmoat
 					["coord"] = { 28.2, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+					["groups"] = bubbleDownFiltered({
+						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					},FILTERFUNC_itemID,{
 						filter(FINGER_F, {
 							i(237471),	-- Band of the Voidmancer
 							i(237472),	-- Seal of Cosmic Embrace
@@ -603,7 +609,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(227797, {	-- Raen Dawncavalyr
 					["coord"] = { 28.3, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+					["groups"] = bubbleDownFiltered({
+						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					},FILTERFUNC_itemID,{
 						filter(CLOAKS, {
 							i(237394),	-- Arathi Abbot's Cloak
 							i(237403),	-- Arathi Zealot's Cape

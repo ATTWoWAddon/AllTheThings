@@ -1,7 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local RADIANT_REMNANT = 206350;
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI, {
@@ -196,14 +198,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						n(ACHIEVEMENTS, {
 							ach(40308),		-- Beacon of Hope (automated)
 							ach(40313, {	-- Igniting the Keyflames
-								["cost"] = {{"i", RADIANT_REMNANT, 100}},
+								["cost"] = { { "i", RADIANT_REMNANT, 100 } },
 							}),
 							ach(40311),		-- Sharing the Light (automated)
 							ach(40312, {	-- Starting the Flames
-								["cost"] = {{"i", RADIANT_REMNANT, 10}},
+								["cost"] = { { "i", RADIANT_REMNANT, 10 } },
 							}),
 						}),
-						n(BONUS_OBJECTIVES, sharedData({ ["isWeekly"] = true }, {
+						n(BONUS_OBJECTIVES, sharedData({
+							["isWeekly"] = true,
+						}, {
 							q(76338, {	-- A Better Cabbage Smacker
 								["description"] = "Whirring Field Keyflame.",
 								["coord"] = { 65.0, 29.3, HALLOWFALL },
@@ -623,7 +627,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["description"] = "Bring 10x Shadowblind Grouper (buy or fish up) and feed him",
 								["coord"] = { 67.3, 23.5, HALLOWFALL },
 								["questID"] = 82560,
-								["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
+								["cost"] = { { "i", 211474, 10 } },	-- 10x Shadowblind Grouper
 								["groups"] = {
 									i(221247),	-- Cavernous Critter Shooter
 									i(223938),	-- Marsh Hopper's Spaulders
@@ -857,7 +861,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["description"] = "The key drops rarely from Drowned Arathi nearby.",
 								["coord"] = { 61.8, 17.5, HALLOWFALL },
 								["questID"] = 79964,
-								["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
+								["cost"] = { { "i", 216528, 1 } },	-- 1x Faded Supply Chest Key
 							}),
 							o(441795, {	-- Hallowfall Sparkfly
 								["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
@@ -928,7 +932,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}),
 							o(423971, {	-- Coral-Fused Clam
 								["coord"] = { 64.0, 6.2, HALLOWFALL },
-								["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
+								["cost"] = { { "i", 218354, 1 } },	-- 1x Clammer's Pry Bar
 								["groups"] = {
 									i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 								},
@@ -1249,13 +1253,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 64.5, 18.8, HALLOWFALL },
 								["groups"] = {
 									i(217342, {	-- Dauntless Draught
-										["cost"] = {{"i", RADIANT_REMNANT, 2}},
+										["cost"] = { { "i", RADIANT_REMNANT, 2 } },
 									}),
 									i(216851, {	-- Dauntless Strike Flare
-										["cost"] = {{"i", RADIANT_REMNANT, 30}},
+										["cost"] = { { "i", RADIANT_REMNANT, 30 } },
 									}),
 									i(217344, {	-- Sentry Flare Launcher
-										["cost"] = {{"i", RADIANT_REMNANT, 6}},
+										["cost"] = { { "i", RADIANT_REMNANT, 6 } },
 									}),
 								},
 							}),
@@ -1263,14 +1267,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 65.2, 28.1, HALLOWFALL },
 								["groups"] = {
 									i(210632, {	-- Auebry's Farshooter
-										["cost"] = {{"i", RADIANT_REMNANT, 3}},
+										["cost"] = { { "i", RADIANT_REMNANT, 3 } },
 									}),
 									i(210827, {	-- Ezgi's Gizmo
-										["cost"] = {{"i", RADIANT_REMNANT, 30}},
+										["cost"] = { { "i", RADIANT_REMNANT, 30 } },
 										["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
 									}),
 									i(210826, {	-- Harvestbot Repair Kit (CI!)
-										["cost"] = {{"i", RADIANT_REMNANT, 1}},
+										["cost"] = { { "i", RADIANT_REMNANT, 1 } },
 									}),
 								},
 							}),
@@ -1278,10 +1282,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 64.5, 31.1, HALLOWFALL },
 								["groups"] = {
 									i(206670, {	-- Darkroot Grippers
-										["cost"] = {{"i", RADIANT_REMNANT, 5}},
+										["cost"] = { { "i", RADIANT_REMNANT, 5 } },
 									}),
 									i(215448, {	-- Darkstem Stew
-										["cost"] = {{"i", RADIANT_REMNANT, 5}},
+										["cost"] = { { "i", RADIANT_REMNANT, 5 } },
 									}),
 								},
 							}),
@@ -1289,14 +1293,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 63.2, 29.4, HALLOWFALL },
 								["groups"] = {
 									i(224813, {	-- Big Cat Whistle
-										["cost"] = {{"i", RADIANT_REMNANT, 5}},
+										["cost"] = { { "i", RADIANT_REMNANT, 5 } },
 										["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
 									}),
 									i(212329, {	-- Lynx Leash
-										["cost"] = {{"i", RADIANT_REMNANT, 1}},
+										["cost"] = { { "i", RADIANT_REMNANT, 1 } },
 									}),
 									i(207591, {	-- Spare Harvest Torch
-										["cost"] = {{"i", RADIANT_REMNANT, 1}},
+										["cost"] = { { "i", RADIANT_REMNANT, 1 } },
 									}),
 								},
 							}),
@@ -1304,13 +1308,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 63.7, 33.9, HALLOWFALL },
 								["groups"] = {
 									i(224256, {	-- Bag of Angry Fungus
-										["cost"] = {{"i", RADIANT_REMNANT, 3}},
+										["cost"] = { { "i", RADIANT_REMNANT, 3 } },
 									}),
 									i(218042, {	-- Remy Controller
-										["cost"] = {{"i", RADIANT_REMNANT, 3}},
+										["cost"] = { { "i", RADIANT_REMNANT, 3 } },
 									}),
 									i(224811, {	-- Sugar Shrooms
-										["cost"] = {{"i", RADIANT_REMNANT, 1}},
+										["cost"] = { { "i", RADIANT_REMNANT, 1 } },
 										["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 									}),
 								},
@@ -1319,10 +1323,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 65.8, 24.4, HALLOWFALL },
 								["groups"] = {
 									i(218107, {	-- Sparkbug Jar
-										["cost"] = {{"i", RADIANT_REMNANT, 2}},
+										["cost"] = { { "i", RADIANT_REMNANT, 2 } },
 									}),
 									i(218106, {	-- Stillstone Frog Trap
-										["cost"] = {{"i", RADIANT_REMNANT, 2}},
+										["cost"] = { { "i", RADIANT_REMNANT, 2 } },
 									}),
 								},
 							}),
@@ -1330,19 +1334,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["coord"] = { 64.6, 30.7, HALLOWFALL },
 								["groups"] = {
 									i(224815, {	-- Charm of the Flame
-										["cost"] = {{"i", RADIANT_REMNANT, 5}},
+										["cost"] = { { "i", RADIANT_REMNANT, 5 } },
 										["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 14 },
 									}),
 									i(225253, {	-- Flickering Flame Holder
-										["cost"] = {{"i", RADIANT_REMNANT, 2}},
+										["cost"] = { { "i", RADIANT_REMNANT, 2 } },
 									}),
 									i(219148, {	-- Patrol Torch
-										["cost"] = {{"i", RADIANT_REMNANT, 5}},
+										["cost"] = { { "i", RADIANT_REMNANT, 5 } },
 									}),
 								},
 							}),
 						}),
-						n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
+						n(WORLD_QUESTS, sharedData({
+							["isWorldQuest"] = true,
+						}, {
 							q(76586, {	-- Spreading The Light
 								["coord"] = { 55.3, 14.5, HALLOWFALL },
 								["groups"] = {
@@ -1393,45 +1399,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 								i(218351, {	-- Expeditionary Cape
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1625 } },
 								}),
 								i(228428, {	-- Gauntlets of Dimming Fluorescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 								i(228426, {	-- Gloves of Irradiating Imprisonment
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 								i(228425, {	-- Grips of Fading Luminescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 								i(228427, {	-- Wraps of Depleting Brilliance
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 250 } },
 								}),
 							}, {	-- RENOWN 3 --
 							}, {	-- RENOWN 4 --
 								i(223114, {	-- Formula: Enchant Boots - Scout's March (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(223038, {	-- Plans: Charged Claymore (RECIPE!)	-- Doesn't show on vendor unless you have the profession on the current character
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 								i(223064, {	-- Technique: Contract: Hallowfall Arathi (RECIPE!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 150 } },
 								}),
 							}, {	-- RENOWN 5 --
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 								i(223296, {	-- Battleplate of Dimming Fluorescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223298, {	-- Chainmail of Depleting Brilliance
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223297, {	-- Vest of Fading Luminescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 								i(223299, {	-- Tunic of Irradiating Imprisonment
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 								}),
 							}, {	-- RENOWN 8 --
 							}, {	-- RENOWN 9 --
@@ -1440,65 +1446,65 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							}, {	-- RENOWN 12 --
 							}, {	-- RENOWN 13 --
 								i(218350, {	-- Expeditionary Spaulders
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 								}),
 							}, {	-- RENOWN 14 --
 								i(224656, {	-- Void-Lit Herbalism Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = HERBALISM,
 								}),
 								i(224655, {	-- Void-Lit Jewelcrafting Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = JEWELCRAFTING,
 								}),
 								i(224658, {	-- Void-Lit Leatherworking Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = LEATHERWORKING,
 								}),
 								i(224657, {	-- Void-Lit Skinning Notes (CI!)
-									["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+									["cost"] = { { "i", ARTISANS_ACUITY, 50 } },
 									["requireSkill"] = SKINNING,
 								}),
 							}, {	-- RENOWN 15 --
 								i(221848, {	-- Tiberius (PET!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 6500 } },
 								}),
 							}, {	-- RENOWN 16 --
 							}, {	-- RENOWN 17 --
 								i(228707, {	-- Trial of Burning Light (TOY!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 								}),
 							}, {	-- RENOWN 18 --
 								i(223311, {	-- Armguards of Dimming Fluorescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223309, {	-- Bindings of Irradiating Imprisonment
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223308, {	-- Bracers of Depleting Brilliance
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 								i(223310, {	-- Wristwraps of Fading Luminescence
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 3900 } },
 								}),
 							}, {	-- RENOWN 19 --
 							}, {	-- RENOWN 20 --
 							}, {	-- RENOWN 21 --
 								i(223317, {	-- Vermillion Imperial Lynx (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 8125 } },
 								}),
 							}, {	-- RENOWN 22 --
 							}, {	-- RENOWN 23 --
 								i(223314, {	-- Shackled Shadow (MOUNT!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 11375 } },
 								}),
 								i(224553, {	-- Beledar's Attunement (CI!)
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
 								}),
 							}, {	-- RENOWN 24 --
 							}, {	-- RENOWN 25 --
 								i(206350, {	-- Radiant Remnant
-									["cost"] = {{"c", RESONANCE_CRYSTALS, 325}},
+									["cost"] = { { "c", RESONANCE_CRYSTALS, 325 } },
 								}),
 							},
 						}),

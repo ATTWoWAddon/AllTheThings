@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local UNTETHERED_COIN = 3303;
 
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
@@ -42,7 +43,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(238039),	-- Chronomatic Fiber
 					i(238041),	-- Dexterous Fiber
 					i(238037),	-- Energizing Fiber
-					-- i(248955),	-- Ethereal Seam Ripper (Looks like this was deleted from the game. You can remove (un-socket) the fibers from the Reshii Wraps manually)
 					i(238040),	-- Precise Fiber
 				},
 			}),
@@ -50,53 +50,53 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 50.4, 36.3, KARESH },
 				["groups"] = {
 					i(242730, {	-- Acidic Void Creeper (MOUNT!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 7 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 7 } },
 					}),
 					i(246907, {	-- Broker Supply Crate (TOY!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 3 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 3 } },
 					}),
 					i(250722, {	-- Ethereal Stall (TOY!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 3 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 3 } },
 					}),
 					i(246903, {	-- Guise of the Phase Diver (TOY!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 3 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 3 } },
 					}),
 					i(244336, {	-- K'aresh Box of Resonance Crystals
-						["cost"] = {{ "c", UNTETHERED_COIN, 1 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 1 } },
 					}),
 					i(244335, {	-- K'aresh Box of Valorstones
-						["cost"] = {{ "c", UNTETHERED_COIN, 1 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 1 } },
 					}),
 					i(246908, {	-- K'areshi Supply Crate (TOY!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 3 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 3 } },
 					}),
 					i(242717, {	-- Lavender K'arroc (MOUNT!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 10 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 10 } },
 					}),
 					i(246905, {	-- Overtuned K'areshi Goggles (TOY!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 3 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 3 } },
 					}),
 					i(244910, {	-- Penumbral Terror (PET!)
-						["cost"] = {{ "c", UNTETHERED_COIN, 4 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 4 } },
 					}),
 					i(247882),	-- Phase Regulator
 					iensemble(250442, {	-- Ensemble: Ancient Capes of the Reshii
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 					iensemble(250441, {	-- Ensemble: Shoulderguards of the Wastelander Seer
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 					iensemble(248996, {	-- Ensemble: Untethered Blade's Garb
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 					iensemble(248998, {	-- Ensemble: Untethered Captain's Full-Plate
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 					iensemble(248995, {	-- Ensemble: Untethered Seer's Vestiture
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 					iensemble(248997, {	-- Ensemble: Untethered Striker's Gear
-						["cost"] = {{ "c", UNTETHERED_COIN, 5 }},
+						["cost"] = { { "c", UNTETHERED_COIN, 5 } },
 					}),
 				},
 			}),
@@ -114,9 +114,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 43.3, 35.5, KARESH_TAZAVESH },
 				["groups"] = {
 					i(260582, {	-- Cartel Collector's Cage (DECOR!)
-						["sourceQuest"] = 86820,	-- Manaforge Omega: Dimensius Looms
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", RESONANCE_CRYSTALS, 500 }},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}),
 					i(247686),	-- Crystalized Nightshade (JUNK!)
 					i(247688),	-- K'arroc Feather Quill (JUNK!)
@@ -141,7 +140,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 					i(128983),	-- A Steamy Romance Novel: Waves of Desire
 					i(246811, {	-- Technique: Inspired Writer's Quill (RECIPE!)
-						["cost"] = {{ "g", 5000000 }},	-- 500g
+						["cost"] = { { "g", 5000000 } },	-- 500g
 						["requireSkill"] = INSCRIPTION,
 					}),
 				},

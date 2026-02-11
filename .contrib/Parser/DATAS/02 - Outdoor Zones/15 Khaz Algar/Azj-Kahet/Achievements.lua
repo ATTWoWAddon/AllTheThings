@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(ACHIEVEMENTS, {
@@ -171,7 +172,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 65.4, 51.7, AZJ_KAHET },
 			})),
 			ach(40542, {	-- Smelling History (automated)
-				i(246866, {["timeline"] = { ADDED_11_2_7 }}),	-- Kaheti Scribe's Records (DECOR!)
+				i(246866, {	-- Kaheti Scribe's Records (DECOR!)
+					["timeline"] = { ADDED_11_2_7 },
+				}),
 			}),
 			ach(40636),		-- Sojourner of Azj-Kahet (automated)
 			ach(40633, {	-- The Unseeming

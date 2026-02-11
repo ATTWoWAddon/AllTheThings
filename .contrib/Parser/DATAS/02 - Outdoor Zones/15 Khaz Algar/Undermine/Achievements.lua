@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local PRECISION_POWERDRILL = {
 	["crs"] = { 237701 },
 	["coord"] = { 55.2, 69.8, UNDERMINE },
@@ -17,6 +18,7 @@ local CREECH = {
 	["crs"] = { 237718 },
 	["coord"] = { 32.2, 82.2, UNDERMINE },
 };
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(ACHIEVEMENTS, {

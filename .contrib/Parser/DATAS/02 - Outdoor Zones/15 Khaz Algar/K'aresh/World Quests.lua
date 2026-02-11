@@ -1,10 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(WORLD_QUESTS, {
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				header(HEADERS.Achievement, 42737, {	-- Capstoned
 					q(89294, {	-- Special Assignment: Aligned Views
 						["coord"] = { 77.2, 48.9, KARESH },
