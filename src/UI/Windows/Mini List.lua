@@ -550,6 +550,17 @@ app:CreateWindow("MiniList", {
 				window:Update();
 			end
 		end);
+		app.AddEventHandler("Settings.OnSet", function(container,key,val)
+			if container ~= "Tooltips" then return end
+
+			if key == "Expand:Difficulty" then
+				if IsInInstance() then
+					self:Rebuild()
+				end
+			elseif key == "Expand:MiniList" then
+				self:Rebuild()
+			end
+		end)
 	end,
 	OnLoad = function(self, settings)
 		app.AddEventHandler("OnCurrentMapIDChanged", app.LocationTrigger)

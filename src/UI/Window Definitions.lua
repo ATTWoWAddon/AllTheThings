@@ -505,7 +505,7 @@ local ShouldSkipAutoExpandForKey = setmetatable({
 	end,
 });
 app.AddEventHandler("Settings.OnSet", function(container,key,val)
-	if container ~= "Tooltip" then return end
+	if container ~= "Tooltips" then return end
 
 	if key == "Expand:Difficulty" then
 		ShouldSkipAutoExpandForKey.difficultyID = val and ShouldSkipAutoExpandForKey.def_difficultyID or nil
