@@ -1145,7 +1145,7 @@ applyclassicphase(TBC_PHASE_FIVE_SCOURGE_INVASION, invasion);
 -- #else
 applyclassicphase(PHASE_SIX_SCOURGE_INVASION, invasion);
 -- #endif
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.WRATH, { invasion })}));
+root(ROOTS.WorldEvents, invasion);
 
 -- Wipe out the unobtainable states.
 MAJOR_HEALING_POTION.OnUpdate = nil;
