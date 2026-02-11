@@ -544,7 +544,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							["timeline"] = { ADDED_11_2_0 },
 							["groups"] = { i(242728) },	-- The Bone Freezer (MOUNT!)
 						}),
-						title(640),	-- Star Savior <Name>
+						title(640, {	-- Star Savior <Name>
+							["provider"] = IGNORED_VALUE,
+							["coord"] = IGNORED_VALUE,
+						}),
 					}, {	-- RENOWN 15 --
 						q(91480, { ["timeline"] = { ADDED_11_2_0 } }),	-- Behind Enemy Lines V
 						spell(1239155),	-- Path of the All-Devouring
