@@ -573,3 +573,6 @@ app:CreateWindow("MiniList", {
 		self:SetMapID(app.CurrentMapID, true)
 	end,
 });
+app.ToggleMiniListForCurrentZone = function(mapID)
+	app:GetWindow("MiniList"):SetVisible(true);
+end

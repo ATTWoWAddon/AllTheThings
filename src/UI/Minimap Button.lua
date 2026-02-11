@@ -20,7 +20,7 @@ function AllTheThings_MinimapButtonOnClick(self, button)
 		-- Left Button
 		if IsShiftKeyDown() then
 			app.RefreshCollections();
-		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
+		elseif IsAltKeyDown() or IsControlKeyDown() then
 			app.ToggleMiniListForCurrentZone();
 		else
 			app.ToggleMainList();
