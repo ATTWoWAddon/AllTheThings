@@ -938,21 +938,12 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 			app:RegisterEvent("CRITERIA_UPDATE");
 		end
 	end)
-else
+else	-- no C_QuestLog_GetAllCompletedQuestIDs
 	---@diagnostic disable-next-line: undefined-global
 	local GetQuestsCompleted = GetQuestsCompleted;
 	local QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
-		if C_QuestLog_GetAllCompletedQuestIDs then
-			local completedQuests = C_QuestLog_GetAllCompletedQuestIDs();
-			if completedQuests and #completedQuests > 0 then
-				for i,questID in ipairs(completedQuests) do
-					CompletedQuests[questID] = true;
-				end
-			end
-		else
-			GetQuestsCompleted(CompletedQuests);
-		end
+		GetQuestsCompleted(CompletedQuests);
 		wipe(ClassicDirtyQuests);
 	end
 	local function UpdateParentProgress(group)
