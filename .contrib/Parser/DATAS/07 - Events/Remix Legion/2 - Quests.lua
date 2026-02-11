@@ -496,7 +496,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
 			["lvl"] = 20,
 		}),
-		q(91844, {	-- Infinite Research: Honorary Chronographer
+		q(91844, {	-- Infinite Research Promotion: Honorary Chronographer
 			["description"] = "Quest becomes available after you complete 20 'Infinite Research' quests.",
 			["qg"] = 241748,	-- Eternus
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },

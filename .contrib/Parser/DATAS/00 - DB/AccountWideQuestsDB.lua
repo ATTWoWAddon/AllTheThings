@@ -863,6 +863,7 @@ local AccountWideQuestsDB = {
 	59120,
 	60490,
 	60511,
+	61160,	-- Gargon Training Manual
 	61225,
 	61235,
 	61236,
@@ -984,6 +985,7 @@ local AccountWideQuestsDB = {
 	70335,
 	70541,
 	70550,	-- Welcome to the Assembly
+	70609,	-- Elegant Canvas Brush
 	70647,
 	70697,
 	70702,
@@ -1173,6 +1175,7 @@ local AccountWideQuestsDB = {
 	73952,
 	74286,
 	74287,
+	74399,	-- Forgotten Dragon Treasure
 	74730,	-- Ensemble: Bloodtinged Cloth
 	74732,	-- Ensemble: Blooddrenched Leather
 	74733,	-- Ensemble: Bloodstained Mail
@@ -1249,6 +1252,7 @@ local AccountWideQuestsDB = {
 	76265,
 	76290,
 	76307,	-- Makeshift Grappling Hook [206473]
+	76377,	-- Orb of the Fel Temptress
 	76390,	-- Inconvenience Fee [Naxxramas]
 	76573,
 	76574,
@@ -1338,12 +1342,16 @@ local AccountWideQuestsDB = {
 	76713,
 	76714,
 	76715,
+	76740,	-- Grimoire of the Void-Touched Fel Imp
 	76741,
 	76742,
+	76745,	-- Grimoire of the Netherbound Imp
 	76747,
 	77179,
 	77180,	-- Grimoire of the Antoran Felhunter
 	77181,	-- Grimoire of the Voracious Felmaw
+	77182,	-- Ritual of the Voidmaw Felhunter
+	77183,	-- Grimoire of the Xorothian Felhunter
 	77213,	-- Doan's Strongbox
 	77221,
 	77236,
@@ -1364,6 +1372,7 @@ local AccountWideQuestsDB = {
 	77297,
 	77298,
 	77299,
+	77300,	-- Loose Dirt Mound
 	77301,	-- Loose Dirt Mound
 	77302,	-- Loose Dirt Mound
 	77572,
@@ -1388,6 +1397,7 @@ local AccountWideQuestsDB = {
 	77735,	-- Level 18 (Brann)
 	77736,	-- Level 19 (Brann)
 	77737,	-- Level 20 (Brann)
+	77775,	-- Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)
 	77799,
 	77800,
 	77804,
@@ -1448,6 +1458,7 @@ local AccountWideQuestsDB = {
 	78882,
 	78883,
 	78884,
+	78885,	-- Napps
 	78886,
 	78887,
 	78888,
@@ -1463,7 +1474,12 @@ local AccountWideQuestsDB = {
 	79189,
 	79351,	-- Level 25 (Brann)
 	79352,	-- Level 24 (Brann)
+	79359,	-- Grimoire of the Ancient Observer
+	79373,	-- Grimoire of the Vile Tyrant
 	79374,	-- Grimoire of the Bloodrage Tyrant
+	79374,	-- Grimoire of the Bloodrage Tyrant
+	79375,	-- Grimoire of the Felbrute Tyrant
+	79376,	-- Grimoire of the Netherwalk Tyrant
 	79384,
 	79385,
 	79387,
@@ -1505,12 +1521,22 @@ local AccountWideQuestsDB = {
 	79431,
 	79441,
 	79443,	-- Grimoire of the Blasted Observer
+	79443,	-- Grimoire of the Blasted Observer
 	79444,	-- Grimoire of the Zealous Observer
+	79444,	-- Grimoire of the Zealous Observer
+	79446,	-- Grimoire of the Mana-Gorged Observer
+	79447,	-- Grimoire of the Dire Observer
+	79449,	-- Grimoire of the Plagued Observer
 	79449,	-- Grimoire of the Plagued Observer
 	79450,	-- Grimoire of the Whispering Observer
+	79450,	-- Grimoire of the Whispering Observer
+	79455,	-- Grimoire of the Xorothian Darkglare
 	79455,	-- Grimoire of the Xorothian Darkglare
 	79456,	-- Grimoire of Eredathian Darkglare
+	79456,	-- Grimoire of the Eredathian Darkglare
 	79457,	-- Grimoire of the Abyssal Darkglare
+	79457,	-- Grimoire of the Abyssal Darkglare
+	79458,	-- Grimoire of the Riftsmolder Darkglare
 	79459,
 	79460,
 	79462,
@@ -1528,6 +1554,7 @@ local AccountWideQuestsDB = {
 	79693,
 	79694,
 	79702,
+	79881,	-- Ensemble: Battlegear of the Lightning Emperor
 	79965,
 	79992,
 	79994,
@@ -1552,6 +1579,19 @@ local AccountWideQuestsDB = {
 	81507,	-- Level 23 (Brann)
 	81508,	-- Level 22 (Brann)
 	81509,	-- Level 21 (Brann)
+	81597,	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
+	81598,	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
+	81599,	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
+	81600,	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
+	81601,	-- [DNT] General - Level 1 Unlock (spellID 443677)
+	81602,	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	81603,	-- [DNT] General - Level 3 Unlock (spellID 443680)
+	81604,	-- [DNT] General - Level 4 Unlock (spellID 443681)
+	81605,	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+	81606,	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
+	81607,	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+	81626,	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
+	81627,	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
 	81657,
 	81676,
 	81677,
@@ -1599,6 +1639,16 @@ local AccountWideQuestsDB = {
 	82079,	-- Forgotten Shadecaster
 	82082,	-- Weathered Shadecaster
 	82085,	-- Neglected Shadecaster
+	82117,	-- Delver's Dirigible Schematic: Blue Paint
+	82169,	-- Delver's Dirigible Schematic: Harpoon
+	82174,	-- Delver's Dirigible Schematic: Fan
+	82177,	-- Delver's Dirigible Schematic: Thrusters
+	82186,	-- Delver's Dirigible Schematic: Kite
+	82189,	-- Delver's Dirigible Schematic: Red Paint
+	82191,	-- Delver's Dirigible Schematic: Yellow Paint
+	82192,	-- Delver's Dirigible Schematic: Alliance Decal
+	82193,	-- Delver's Dirigible Schematic: Explorer Decal
+	82194,	-- Delver's Dirigible Schematic: Horde Decal
 	82195,
 	82296,	-- The Power of Creation
 	82335,	-- Crystals
@@ -1613,6 +1663,7 @@ local AccountWideQuestsDB = {
 	82374,	-- A Shining Candle
 	82376,	-- A Large Bundle of Goods
 	82379,
+	82381,	-- A Scintillating Candle
 	82391,	-- Precious Stones
 	82393,	-- Resonating Crystals
 	82395,	-- Flame-touched Tabard
@@ -1628,6 +1679,7 @@ local AccountWideQuestsDB = {
 	82782,	-- Authenticity in Dress
 	82784,	-- Resonant Performance
 	82809,
+	82998,	-- Beledar's Attunement
 	83024,	-- The Stormrider's Bond
 	83025,	-- A Sacred Connection
 	83134,	-- Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)
@@ -1662,6 +1714,7 @@ local AccountWideQuestsDB = {
 	83454,	-- Sturdy Chest
 	83455,	-- Sturdy Chest
 	83456,	-- Sturdy Chest
+	83488,	-- Rak-Ush Stagshell World Quests unlocked
 	83492,
 	83493,
 	83494,
@@ -1700,6 +1753,7 @@ local AccountWideQuestsDB = {
 	83687,	-- Sturdy Chest
 	83688,	-- Sturdy Chest
 	83689,	-- Sturdy Chest
+	83690,	-- Sturdy Chest
 	83691,	-- Sturdy Chest
 	83692,	-- Sturdy Chest
 	83696,	-- Sturdy Chest
@@ -1782,6 +1836,18 @@ local AccountWideQuestsDB = {
 	84490,	-- The Great Vault
 	84519,	-- Ancient Curiosity: Combat
 	84520,	-- Ancient Curiosity: Utility
+	84530,	-- [DNT] General - Level 5 Unlock (spellID 462466)
+	84531,	-- [DNT] General - Level 6 Unlock (spellID 462468)
+	84532,	-- [DNT] General - Level 7 Unlock (spellID 462470)
+	84533,	-- [DNT] General - Level 8 Unlock (spellID 462471)
+	84534,	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
+	84535,	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
+	84536,	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
+	84537,	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
+	84538,	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
+	84539,	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
+	84540,	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
+	84541,	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
 	84542,	-- A Radiant Echo
 	84562,	-- The Finer Things: #1
 	84597,	-- Bronze Celebration Token (Queen Ansurek [H])
@@ -1792,13 +1858,39 @@ local AccountWideQuestsDB = {
 	84629,	-- Bronze Celebration Token Lockout [from #84254]
 	84630,	-- Bronze Celebration Token Lockout [from #84489]
 	84681,	-- Triggered after turn in questID 84682 (Of Pacts and Patrons) (spellID 463432 - [DNT] Choice Complete Credit)
+	84689,	-- Spymaster's Severed Thread
+	84690,	-- Crypt Lord's Severed Thread
+	84691,	-- Executor's Severed Thread
 	84693,	-- Weaver's Lair Profession Table flag?, shown on i(228946)
 	84948,
 	84951,	-- Bilgewater Cartel Weekly Contract
 	84952,	-- Steamwheedle Cartel Weekly Contract
 	84953,	-- Venture Co. Weekly Contract
 	84954,	-- Blackwater Cartel Weekly Contract
+	85014,	-- Bronze Celebration Titles: Plaguelands Survivor
+	85015,	-- Bronze Celebration Titles: Grizzly Hills Hiker
+	85159,	-- Zovex weekly reputation
+	85160,	-- Kereke weekly reputation
+	85161,	-- Rotfist weekly reputation
+	85162,	-- Deepflayer Broodmother weekly reputation
+	85163,	-- Lurker of the Deeps weekly reputation
+	85165,	-- Deathtide weekly reputation
+	85166,	-- Tka'ktath weekly reputation
+	85167,	-- The One Left weekly reputation
+	85218,	-- Bronze Celebration Titles: Classic Enthusiast
+	85219,	-- Bronze Celebration Titles: Outland Enthusiast
+	85220,	-- Bronze Celebration Titles: Northrend Enthusiast
+	85221,	-- Bronze Celebration Titles: Cataclysm Enthusiast
+	85222,	-- Bronze Celebration Titles: Pandaria Enthusiast
+	85223,	-- Bronze Celebration Titles: Draenor Enthusiast
+	85224,	-- Bronze Celebration Titles: Broken Isles Enthusiast
+	85225,	-- Bronze Celebration Titles: Zuldazar Enthusiast
+	85226,	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+	85227,	-- Bronze Celebration Titles: Shadowlands Enthusiast
+	85228,	-- Bronze Celebration Titles: Dragon Isles Enthusiast
 	85463,	-- [DNT] The Cartels of Undermine Renown Unlock
+	85516,	-- Bronze Celebration Titles: Molten Core Prospector
+	85517,	-- Bronze Celebration Titles: Karazhan Graduate
 	85531,	-- Earth-Encrusted Gem
 	85532,	-- The Wealth of a Kingdom
 	85533,	-- Kej
@@ -1810,7 +1902,12 @@ local AccountWideQuestsDB = {
 	85539,	-- Take Candle!
 	85540,	-- Take Big Candle!
 	85541,	-- Here's a Shiny!
+	85542,	-- Take Really Big Candle!
+	85543,	-- More Shinies!
+	85544,	-- Many Little Shinies!
 	85545,	-- Resonance Crystals
+	85546,	-- Resonance Crystals
+	85661,	-- Upgraded Apparel
 	85718,	-- A Shining Stone
 	85757,
 	85776,	-- GNZ Airmaster 9000
@@ -1833,6 +1930,7 @@ local AccountWideQuestsDB = {
 	85811,	-- Thrayir, Eyes of the Siren
 	85815,
 	85818,
+	85828,	-- Classy Dresser
 	86151,	-- Faceless Mask of the Burned Bridge
 	86152,	-- Faceless Mask of the Daredevil
 	86153,	-- Faceless Mask of the Dark Imagination
@@ -1859,8 +1957,17 @@ local AccountWideQuestsDB = {
 	86252,	-- Purchased Plunderlord's Stormridden Cinch
 	86256,	-- Purchased Plunderlord's Stormridden Trousers
 	86260,	-- Purchased Plunderlord's Stormridden Trousers
+	86296,	-- Delver's Gob-Trotter Schematic: Gold
+	86299,	-- Looted Breakneck Cabbie's Coat
+	86300,	-- Looted Violet Goblin Shredder
+	86302,	-- Looted Mutt
+	86303,	-- Looted Personal-Use Sapper
 	86328,	-- Delver's Starter Kit [TWW:S2]
 	86329,	-- Delver's Cosmetic Surprise Bag [TWW:S2]
+	86343,	-- Sturdy Chest
+	86345,	-- Sturdy Chest
+	86346,	-- Sturdy Chest
+	86347,	-- Sturdy Chest
 	86374,	-- Muddy Snapdragon Treat
 	86375,	-- Inky Snapdragon Treat
 	86376,	-- Kaja'Cola-braised Snapdragon Treat
@@ -1919,6 +2026,7 @@ local AccountWideQuestsDB = {
 	86789,	-- Sturdy Chest
 	86790,	-- Sturdy Chest
 	86801,	-- Faceless Mask of Multitudes
+	86873,	-- The War Within: Journey's End (Season 2)
 	86878,	-- Nightfall Sanctum Campsite
 	86931,	-- triggered after turn in of any of the pact weeklies?
 	86961,	-- Diversified Investments
@@ -1942,6 +2050,7 @@ local AccountWideQuestsDB = {
 	86991,	-- Level 78 (Brann)
 	86992,	-- Level 79 (Brann)
 	86993,	-- Level 80 (Brann)
+	87055,	-- Ensemble: Battleplate of the Highlord
 	87284,	-- A Radiant Echo
 	87328,	-- Truly Horrific to Behold
 	87329,	-- Into the Darkest Memories
@@ -1952,9 +2061,22 @@ local AccountWideQuestsDB = {
 	87353,	-- Gallagio Highroller's Boomstone
 	87374,	-- C.H.E.T.T.ing In
 	87445,	-- Smartest in Town's Attire
+	87448,	-- Craftiest in Town's Attire
 	87496,	-- Benefit Packages
+	87550,	-- Week 2: We're Really Taking Off
+	87551,	-- Week 3: Spread the Word
+	87552,	-- Week 4: They've Heard of You
+	87553,	-- Week 5: Another Amazing Week!
+	87554,	-- Week 6: It's the Finale!
 	88652,	-- Faceless Mask of the Nemesis
+	88773,	-- Arsenal: Undermine Weaponry
 	88803,	-- Timely Assistance
+	88814,	-- Delver's Mana-Skimmer Schematic: Canister
+	88815,	-- Delver's Mana-Skimmer Schematic: Quad Glider
+	88816,	-- Delver's Mana-Skimmer Schematic: Emitter
+	88817,	-- Delver's Mana-Skimmer Schematic: Void Paint
+	88819,	-- Delver's Mana-Skimmer Schematic: Hyperdrive
+	88820,	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
 	88870,	-- Honored with the Bilgewater Cartel
 	88871,	-- Revered with the Bilgewater Cartel
 	88872,	-- Exalted with the Bilgewater Cartel
@@ -1968,6 +2090,26 @@ local AccountWideQuestsDB = {
 	88880,	-- Revered with the Venture Co
 	88881,	-- Exalted with the Venture Co
 	88903,	-- Faceless Mask of Vengeance
+	88948,	-- Level 81
+	88949,	-- Level 82
+	88950,	-- Level 83
+	88951,	-- Level 84
+	88952,	-- Level 85
+	88953,	-- Level 86
+	88954,	-- Level 87
+	88955,	-- Level 88
+	88956,	-- Level 89
+	88957,	-- Level 90
+	88958,	-- Level 91
+	88959,	-- Level 92
+	88960,	-- Level 93
+	88961,	-- Level 94
+	88962,	-- Level 95
+	88963,	-- Level 96
+	88964,	-- Level 97
+	88965,	-- Level 98
+	88966,	-- Level 99
+	88967,	-- Buddy System X
 	89016,	-- Members Only
 	89017,	-- Triggered with Members Only (89016)
 	89018,	-- Loyal Customer: Silver
@@ -1980,6 +2122,10 @@ local AccountWideQuestsDB = {
 	89025,	-- Time is Money!!
 	89026,	-- Time is Money!!!
 	89027,	-- Fast Food
+	89188,	-- Ensemble: Noxious Injector Apparatus
+	89189,	-- Ensemble: Nitroclad Kit
+	89190,	-- Ensemble: Blastborne Loadout
+	89191,	-- Ensemble: Junkreaver's Plates
 	89250,	-- Burning Rubber
 	89251,	-- Running Hot!
 	89252,	-- Need a Jump?
@@ -2032,11 +2178,14 @@ local AccountWideQuestsDB = {
 	90683,	-- Weekly reputation: Maw of the Sands
 	90684,	-- Weekly reputation: Orith the Dreadful
 	90685,	-- Weekly reputation: Ixthar the Unblinking
+	90688,	-- Shatterpulse weekly reputation
+	90691,	-- Hollowbane weekly reputation
 	90693,	-- Weekly reputation: Purple Peat
 	90695,	-- Weekly reputation: Xy'vox the Twisted
 	90697,	-- Weekly reputation: "Arcana-Monger So'zer"
 	90699,	-- Weekly reputation: Grubber
 	90701,	-- Cowardly Cheery Bombs
+	90703,	-- Unraveling Sands
 	90719,	-- Borrowing Corruption
 	90731,	-- Enhancing Corruption
 	90775,
@@ -2046,6 +2195,7 @@ local AccountWideQuestsDB = {
 	90815,	-- ??
 	90816,
 	90839,	-- Sturdy Chest
+	90864,	-- Remixing Time
 	90903,	-- Contract: The K'aresh Trust [R1]
 	90904,	-- Contract: The K'aresh Trust [R2]
 	90905,	-- Contract: The K'aresh Trust [R3]
@@ -2111,6 +2261,7 @@ local AccountWideQuestsDB = {
 	91529,	-- Head Hunting: Nexus-King Salhadaar
 	91530,	-- Seeing Eye to Eye
 	91539,	-- A Radiant Echo
+	91613,	-- Infinite Research Promotion: Timely Assistant
 	91640,	-- A Dog-eared Book
 	91642,	-- Mysterious Notebook
 	91643,	-- Multiversal Energy Dynamics and the Murmuration Paradox
@@ -2123,9 +2274,20 @@ local AccountWideQuestsDB = {
 	91687,	-- Checklist of Minor Pleasures
 	91783,	-- Delver's Cosmetic Surprise Bag [TWW:S3]
 	91784,	-- Delver's Starter Kit [TWW:S3]
+	91788,	-- Arsenal: Weathered Twilight's Hammer Armaments
 	91812,	--
+	91844,	-- Infinite Research Promotion: Honorary Chronographer
+	91845,	-- Infinite Research Promotion: Senior Executive Chronographer
+	91846,	-- Infinite Research Promotion: Principal Chronoquery Investigator
 	91863,	-- My First Home
+	91890,	-- Ensemble: Untethered Seer's Vestiture
+	91891,	-- Ensemble: Untethered Blade's Garb
+	91892,	-- Ensemble: Untethered Striker's Gear
+	91893,	-- Ensemble: Untethered Captain's Full-Plate
 	91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
+	91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
+	91914,	-- Ensemble: Bundle of Ethereal Cloaks
+	91915,	-- K'areshi Ribbon Stash
 	91939,	-- Ensemble: Hollow Sentinel's Wingdrapes
 	91940,	-- Ensemble: Plumes of the Mother Eagle
 	91941,	-- Ensemble: Vicious Charhound's Felcovers
@@ -2138,13 +2300,20 @@ local AccountWideQuestsDB = {
 	91948,	-- Ensemble: Capes of the Sudden Eclipse
 	91950,	-- Ensemble: Inquisitor's All-Seeing Madness
 	91951,	-- Ensemble: Shawls of Channeled Fury / Ensemble: Living Weapon's Capes
+	91954,	-- Freezing Over
+	91961,	-- Bronze Celebration Titles: Khaz Algar Enthusiast
 	91968,	-- Welcome Home
 	91969,	-- Time to Decorate
+	92019,	-- Ensemble: Well-Worn Twilight Cultist's Attire
 	92031,	-- Meet the Vandals
 	92071,	-- Deal: Cartel Zo
 	92072,	-- Deal: Cartel Ba
 	92073,	-- Deal: Cartel Om
 	92078,	-- A New Recipe!
+	92079,	-- Cartel Zo Dead Drop
+	92080,	-- Cartel Ba Dead Drop
+	92173,	-- Ensemble: Shoulderguards of the Wastelander Seer
+	92175,	-- Ensemble: Ancient Capes of the Reshii
 	92402,	-- Magical Touch
 	92417,	-- Farm to Table
 	92429,	-- Alternative Skinning
@@ -2153,18 +2322,31 @@ local AccountWideQuestsDB = {
 	92445,	-- Smelting for Two
 	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
+	92572,	-- Furniture Favor
 	92573,	-- Sturdy Chest
 	92577,	-- Furniture Favor
 	92578,	-- Draconic Decor
+	92580,	-- Spare a Chair
+	92581,	-- Last Light
+	92586,	-- Felscorned Scythe of the Unmaker
 	92588,	-- Fallen King's Corrupted Blades
+	92599,	-- Scythe of the Unmaker
+	92611,	-- Illusion: Felshatter
 	92626,	-- ??
+	92627,	-- An Arrested Development
 	92628,	-- ??
+	92630,	-- The Pursuit Continues
+	92631,	-- Abhorrent Gauntlet
+	92632,	-- Trial of Wrath
+	92638,	-- Feldruid's Scornwing Idol
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
 	92733,	-- Triggered after entering house
+	92857,	-- Ta'readon's Mount Voucher
 	92861,	-- Ensemble: Eredath Lightseeker's Regalia
 	92862,	-- Ensemble: Forgotten Conservatory Clothes
 	92863,	-- Ensemble: Triumvirate High Guard's Battlegear
+	92886,	-- Taeshalach
 	92889,	-- Arsenal: Odyn's Spears
 	92961,	-- Decor Treasure Hunt
 	92962,	-- Decor Treasure Hunt
@@ -2267,12 +2449,21 @@ local AccountWideQuestsDB = {
 	93150,	-- Decor Treasure Hunt
 	93151,	-- Decor Treasure Hunt
 	93152,	-- Decor Treasure Hunt
+	93154,	-- Ensemble: Sargerei Commander's Voidscarred Regalia
 	94210,	-- Feathering the Nest
+	94377,	-- Warden's Companion
+	94378,	-- Duskytooth Fel Snooter
 	94379,	-- This Old Hearth
 	94415,	-- Plumbing the Void
 	94416,	-- Rehoming Technology
 	94455,	-- Home at Last
+	94995,	-- To Dye For
 	95166,	-- Pet the Dog (245551)
+
+	-- Weird partial cases... ??
+	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)
+	-- 79882,	-- Ensemble: Vestments of Winged Triumph (Only flags complete for Paladins)
+	-- 79877,	-- Ensemble: White Tiger Battlegear (Only flags complete for Paladins)
 	-- #ENDIF
 }
 
