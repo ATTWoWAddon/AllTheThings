@@ -385,6 +385,55 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		"          Will allow Quest 12345 flagging to be reported in chat"
 	})
 end)
+local CacheQuestsByScope, CacheQuestByScope
+if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
+	local AccountWide = app.AccountWideQuestsDB
+	local acctQuests = {}
+	local charQuests = {}
+	CacheQuestsByScope = function(quests, flag)
+		wipe(acctQuests)
+		wipe(charQuests)
+		flag = flag and 1 or nil
+		-- incoming quests variable is actually meant to be preserved for character state
+		-- so build 2 tables instead of clearing keys
+		for questID in pairs(quests) do
+			if AccountWide[questID] then
+				acctQuests[questID] = true
+			else
+				charQuests[questID] = true
+			end
+		end
+		-- app.PrintDebug("ACCT")
+		-- app.PrintTable(acctQuests)
+		-- app.PrintDebug("CHAR")
+		-- app.PrintTable(charQuests)
+		app.SetBatchAccountCached(CACHE, acctQuests, flag)
+		-- account quests are wiped from character cache
+		-- TODO: repeatable account-wide quests are not currently handled if they are now unflagged
+		-- determine what to do with those to maintain best history and accuracy, perhaps in sync
+		app.SetBatchCached(CACHE, acctQuests)
+		app.SetBatchCached(CACHE, charQuests, flag)
+	end
+	CacheQuestByScope = function(questID, flag)
+		flag = flag and 1 or nil
+		if AccountWide[questID] then
+			app.SetAccountCached(CACHE, questID, flag)
+			-- account quests are wiped from character cache
+			app.SetCached(CACHE, questID)
+		else
+			app.SetCached(CACHE, questID, flag)
+		end
+	end
+else
+	CacheQuestsByScope = function(quests, flag)
+		flag = flag and 1 or nil
+		app.SetBatchCached(CACHE, quests, flag)
+	end
+	CacheQuestByScope = function(questID, flag)
+		flag = flag and 1 or nil
+		app.SetCached(CACHE, questID, flag)
+	end
+end
 local BatchRefresh
 -- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
 -- when we can have the original method of using 'CompletedQuests' as a pass-thru to the Raw data
@@ -412,7 +461,7 @@ local CompletedQuests = setmetatable({}, {
 		RetailDirtyQuests[#RetailDirtyQuests + 1] = questID
 		-- Way too much overhead to assume this should be done every time a key is changed
 		if not BatchRefresh then
-			app.SetCached("Quests", questID, state)
+			CacheQuestByScope(questID, state)
 			app.UpdateRawID("questID", questID)
 		end
 	end
@@ -851,6 +900,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		if manyQuests then
 			DoQuestPrints = nil
 		end
+		wipe(UnflaggedQuests)
 
 		-- Dual Step tracking method
 		-- app.PrintDebug("DualStep")
@@ -882,9 +932,8 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		-- app.__CQS = CompleteQuestSequence
 
 		if #RetailDirtyQuests > 0 then
-			app.SetBatchCached("Quests", RetailRawQuests, 1)
-			app.SetBatchCached("Quests", UnflaggedQuests)
-			wipe(UnflaggedQuests)
+			CacheQuestsByScope(RetailRawQuests,1)
+			CacheQuestsByScope(UnflaggedQuests)
 		end
 
 		if manyQuests then

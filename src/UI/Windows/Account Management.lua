@@ -383,7 +383,7 @@ local whiteListedFields = {
 	Spells = true,
 	Titles = true
 }
--- Used for data which is defaulted as Account-learned, but has Character-learned exceptions
+-- Used for data which can be directly-cached as Account-learned or Character-learned
 local function PartialSyncCharacterData(data, key)
 	local characterData
 	-- wipe account data saved based on character data
@@ -402,7 +402,6 @@ local function PartialSyncCharacterData(data, key)
 		end
 	end
 end
--- TODO: eventually move pure account-wide collectibles into a separate function which additionally clears out the cache for all characters. character data 'should' be only collectibles at the character-scope eventually
 -- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
 local function RankSyncCharacterData(data, key)
 	local characterData
@@ -420,29 +419,6 @@ local function RankSyncCharacterData(data, key)
 		end
 	end
 end
-local function SyncCharacterQuestData(data, key)
-	local characterData
-	-- don't completely wipe quest data, some questID are marked as 'complete' due to other restrictions on the account
-	-- so we want to maintain those even though no character actually has it completed
-	-- TODO: perhaps in the future we can instead treat these quests as 'uncollectible' for the account rather than 'complete'
-	-- TODO: once these quests are no longer assigned as completion == 2 we can then use the PartialSyncCharacterData for Quests
-	-- and make sure AccountWide quests are instead saved directly into ATTAccountWideData when completed
-	-- and cleaned from individual Character caches here during sync
-	for questID,completion in pairs(data) do
-		if completion ~= 2 then
-			data[questID] = nil
-		-- else app.PrintDebug("not-reset",questID,completion)
-		end
-	end
-	for guid,character in pairs(CharacterData) do
-		characterData = character[key];
-		if characterData then
-			for index,_ in pairs(characterData) do
-				data[index] = 1;
-			end
-		end
-	end
-end
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;
@@ -455,7 +431,7 @@ local AccountWideDataHandlers = setmetatable({
 	end,
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
 	AzeriteEssenceRanks = RankSyncCharacterData,
-	Quests = SyncCharacterQuestData,
+	Quests = PartialSyncCharacterData,
 }, {
 	__index = function(t, key)
 		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
