@@ -130,6 +130,7 @@ app:CreateWindow("Import", {
 				visible = true,
 				isButton = true,
 				OnUpdate = app.AlwaysShowUpdate,
+				SortPriority = -1,
 				OnClick = function()
 					self:ResetToInitialButtons()
 					return true
