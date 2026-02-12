@@ -436,8 +436,10 @@ app:CreateWindow("Tradeskills", {
 					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
 					app:StartATTCoroutine("TSMWHYPT2", function()
 						local thing = self.TSMCraftingVisible;
-						self.TSMCraftingVisible = nil;
-						self:SetTSMCraftingVisible(thing);
+						if thing then
+							self.TSMCraftingVisible = nil;
+							self:SetTSMCraftingVisible(thing);
+						end
 					end);
 				end);
 			end
