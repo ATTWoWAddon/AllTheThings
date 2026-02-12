@@ -231,7 +231,7 @@ end)
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
-	if f and not item.g then
+	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
 		if SettingsFilterIDs[f] then
 			return true;
@@ -239,6 +239,16 @@ function(item)
 		-- don't filter Types by their FilterID in some cases
 		if FilterFilterID_IgnoredTypes[item.__type or 0] then
 			return true;
+		end
+		local itemg = item.g
+		if itemg then
+			for i=1,#itemg do
+				if itemg[i].visible then
+					-- app.PrintDebug("filterID ignored",f,app:SearchLink(item))
+					return true
+				end
+			end
+			-- app.PrintDebug("filterID included after",#itemg,f,app:SearchLink(item))
 		end
 	else
 		return true;
