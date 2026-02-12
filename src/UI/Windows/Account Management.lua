@@ -3,18 +3,31 @@ local _, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, tonumber, time, type, tinsert, tremove, tsort =
-	  ipairs, pairs, tonumber, time, type, tinsert, tremove, table.sort;
-local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo =
-	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
+local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort =
+	  ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, table.sort;
+local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed =
+	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
 
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
 
 -- Cache some globals SavedVariables!
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+	CurrentCharacter = currentCharacter
 	AccountWideData = accountWideData
 	CharacterData = characterData
+	if not currentCharacter.totalTimePlayed then
+		currentCharacter.lastTimePlayedRecorded = 0;
+		currentCharacter.totalTimePlayed = 0;
+	end
+	app.AddEventRegistration("TIME_PLAYED_MSG", function(totalTimePlayed)
+		currentCharacter.totalTimePlayed = totalTimePlayed;
+		currentCharacter.lastTimePlayedRecorded = time();
+	end);
+	local now = time();
+	if (now - (currentCharacter.lastTimePlayedRecorded or 0)) > 3600 then
+		RequestTimePlayed();
+	end
 end)
 -- Module locals
 local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet = "ATTSYNC", {}, true;
@@ -1238,6 +1251,32 @@ end
 local function OnTooltipForCharacter(t, tooltipInfo)
 	local character = CharacterData[t.unit];
 	if character then
+		local totalTimePlayed = character.totalTimePlayed;
+		if totalTimePlayed then
+			if character == CurrentCharacter then
+				local now = time();
+				if (now - (character.lastTimePlayedRecorded or 0)) > 3600 then
+					RequestTimePlayed();
+				end
+			end
+			local data = { left = "Time Played" };
+			local m = totalTimePlayed / 60;
+			local h = math_floor(m / 60);
+			local d = math_floor(h / 24)
+			local y = math_floor(d / 365)
+			if y > 0 then
+				data.right = ("%dy %dd %dh"):format(y, d % 365, h % 24);
+			elseif d > 0 then
+				data.right = ("%dd %dh %dm"):format(d, h % 24, m % 60);
+			elseif h > 0 then
+				data.right = ("%dh %dm"):format(h, m % 60)
+			elseif m > 0 then
+				data.right = ("%dm %ds"):format(m, totalTimePlayed % 60)
+			else
+				data.right = ("%ds"):format(totalTimePlayed)
+			end
+			tinsert(tooltipInfo, data);
+		end
 		local primeData = character.PrimeData;
 		if primeData then
 			local buildString;
@@ -1532,14 +1571,15 @@ app:CreateWindow("Account Management", {
 									OnTooltip = OnTooltipForCharacter,
 									OnUpdate = app.AlwaysShowUpdate,
 									name = characterData.name,
-									lvl = characterData.lvl,
 									trackable = true,
 									visible = true,
 									parent = data,
 								});
 								characters[guid] = character;
 							end
+							character.totalTimePlayed = characterData.totalTimePlayed;
 							character.saved = not characterData.ignored and 1;
+							character.lvl = characterData.lvl;
 							tinsert(g, character);
 						end
 					end
