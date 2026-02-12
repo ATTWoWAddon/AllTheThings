@@ -972,6 +972,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3377, {	-- Prayer to Elune (1/2)
 					["qg"] = 8436,	-- Zamael Lunthistle
+					["coord"] = { 29.6, 26.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -979,6 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3378, {	-- Prayer to Elune (2/2)
 					["sourceQuest"] = 3377,	-- Prayer to Elune (1/2)
 					["qg"] = 8436,	-- Zamael Lunthistle
+					["coord"] = { 29.6, 26.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
