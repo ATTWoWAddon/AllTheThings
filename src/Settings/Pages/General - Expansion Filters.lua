@@ -4,8 +4,9 @@ local L, settings = app.L, app.Settings;
 -- Only load for Retail
 if not app.IsRetail then return end
 
--- Ideally we would use app.CURRENT_EXPANSION from Expansion.lua but it returns 0 on initial load of the game client
--- prior to the player entering the world, so we hardcode it here for now.
+-- Get Current Expansion Number by in-game API.
+-- This returns 0 on initial load of the game client prior to the player entering the world
+-- local CURRENT_EXPANSION = GetServerExpansionLevel() + 1
 -- Would need to delay loading this settings panel content until it returned a valid value
 local CURRENT_EXPANSION = 12
 

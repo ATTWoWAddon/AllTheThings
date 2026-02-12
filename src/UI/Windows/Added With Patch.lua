@@ -185,7 +185,9 @@ app:CreateWindow("Added With Patch", {
 									end
 								end);
 								if cache and #cache > 0 then
-									tinsert(g, app.CreateExpansion(patch * 0.0001, {g=cache}));
+									local patchHeader = app.CreateExpansion(patch * 0.0001, {g=cache});
+									if patchHeader.patchString then patchHeader.name = patchHeader.patchString; end
+									tinsert(g, patchHeader);
 								end
 							end
 						else
