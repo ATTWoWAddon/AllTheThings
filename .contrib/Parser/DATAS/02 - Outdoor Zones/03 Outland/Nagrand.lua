@@ -849,20 +849,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
-						-- TODO: Investigate if this is necessary, we have maxReputation already.
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 					}),
 					q(9886, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25424),	-- Gem-Stuffed Envelope
@@ -873,10 +869,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25419),	-- Unmarked Bag of Gems
@@ -898,10 +892,8 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9885, {	-- Membership Benefits
@@ -909,10 +901,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
-						-- #endif
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25422),	-- Bulging Sack of Gems
@@ -933,10 +923,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9915, {	-- More Heads Full of Ivory
@@ -945,10 +933,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(9892, {	-- More Obsidian Warbeads
@@ -958,10 +944,8 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(10478, {	-- More Warbeads!
@@ -971,10 +955,8 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
 						["cost"] = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 						["races"] = HORDE_ONLY,
-						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
-						-- #endif
 						["repeatable"] = true,
 					}),
 					q(10479, {	-- Proving Your Strength
@@ -994,6 +976,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906, {	-- Message in a Battle
