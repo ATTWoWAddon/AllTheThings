@@ -12,19 +12,27 @@ local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed =
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}
 
 -- Cache some globals SavedVariables!
+local cachedTotalTimePlayed;
+app:RegisterFuncEvent("TIME_PLAYED_MSG", function(totalTimePlayed)
+	if CurrentCharacter then
+		CurrentCharacter.totalTimePlayed = totalTimePlayed;
+		CurrentCharacter.lastTimePlayedRecorded = time();
+	else
+		cachedTotalTimePlayed = totalTimePlayed;
+	end
+end);
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 	CurrentCharacter = currentCharacter
 	AccountWideData = accountWideData
 	CharacterData = characterData
-	if not currentCharacter.totalTimePlayed then
+	local now = time();
+	if cachedTotalTimePlayed then
+		currentCharacter.totalTimePlayed = cachedTotalTimePlayed;
+		currentCharacter.lastTimePlayedRecorded = now;
+	elseif not currentCharacter.totalTimePlayed then
 		currentCharacter.lastTimePlayedRecorded = 0;
 		currentCharacter.totalTimePlayed = 0;
 	end
-	app.AddEventRegistration("TIME_PLAYED_MSG", function(totalTimePlayed)
-		currentCharacter.totalTimePlayed = totalTimePlayed;
-		currentCharacter.lastTimePlayedRecorded = time();
-	end);
-	local now = time();
 	if (now - (currentCharacter.lastTimePlayedRecorded or 0)) > 3600 then
 		RequestTimePlayed();
 	end
@@ -1178,6 +1186,28 @@ local function MergeTransferredCharacterData(row)
 end
 
 -- Helper Functions
+local DefaultZeroMeta = {
+	__index = function() return 0; end,
+};
+local function GetTimePlayedString(totalTimePlayed)
+	if totalTimePlayed then
+		local m = totalTimePlayed / 60;
+		local h = math_floor(m / 60);
+		local d = math_floor(h / 24)
+		local y = math_floor(d / 365)
+		if y > 0 then
+			return ("%dy %dd %dh"):format(y, d % 365, h % 24);
+		elseif d > 0 then
+			return ("%dd %dh %dm"):format(d, h % 24, m % 60);
+		elseif h > 0 then
+			return ("%dh %dm"):format(h, m % 60)
+		elseif m > 0 then
+			return ("%dm %ds"):format(m, totalTimePlayed % 60)
+		else
+			return ("%ds"):format(totalTimePlayed)
+		end
+	end
+end
 local function OnClickForCharacter(row, button)
 	local guid = row.ref.guid;
 	if not guid then return true; end
@@ -1259,23 +1289,10 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 					RequestTimePlayed();
 				end
 			end
-			local data = { left = "Time Played" };
-			local m = totalTimePlayed / 60;
-			local h = math_floor(m / 60);
-			local d = math_floor(h / 24)
-			local y = math_floor(d / 365)
-			if y > 0 then
-				data.right = ("%dy %dd %dh"):format(y, d % 365, h % 24);
-			elseif d > 0 then
-				data.right = ("%dd %dh %dm"):format(d, h % 24, m % 60);
-			elseif h > 0 then
-				data.right = ("%dh %dm"):format(h, m % 60)
-			elseif m > 0 then
-				data.right = ("%dm %ds"):format(m, totalTimePlayed % 60)
-			else
-				data.right = ("%ds"):format(totalTimePlayed)
-			end
-			tinsert(tooltipInfo, data);
+			tinsert(tooltipInfo, {
+				left = "Time Played",
+				right = GetTimePlayedString(totalTimePlayed)
+			});
 		end
 		local primeData = character.PrimeData;
 		if primeData then
@@ -1365,6 +1382,42 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				r = 1, g = 0.8, b = 0.8
 			});
 		end
+	end
+end
+local function OnTooltipForCharacterHeader(t, tooltipInfo)
+	local AccountTotalTimePlayed = 0;
+	local ByClass = setmetatable({}, DefaultZeroMeta);
+	local ByRace = setmetatable({}, DefaultZeroMeta);
+	for guid,characterData in pairs(CharacterData) do
+		if characterData then
+			local totalTimePlayed = characterData.totalTimePlayed;
+			if totalTimePlayed then
+				AccountTotalTimePlayed = AccountTotalTimePlayed + totalTimePlayed;
+				local c = characterData.classID;
+				if c then ByClass[c] = ByClass[c] + totalTimePlayed; end
+				local r = characterData.raceID;
+				if r then ByRace[r] = ByRace[r] + totalTimePlayed; end
+			end
+		end
+	end
+	tinsert(tooltipInfo, { left = " " });
+	tinsert(tooltipInfo, {
+		left = "Total Time Played (Account)",
+		right = GetTimePlayedString(AccountTotalTimePlayed)
+	});
+	tinsert(tooltipInfo, { left = "By Class:" });
+	for class,total in pairs(ByClass) do
+		tinsert(tooltipInfo, {
+			left = "  " .. app.CreateCharacterClass(class).text,
+			right = GetTimePlayedString(total)
+		});
+	end
+	tinsert(tooltipInfo, { left = "By Race:" });
+	for race,total in pairs(ByRace) do
+		tinsert(tooltipInfo, {
+			left = "  " .. app.CreateRace(race).text,
+			right = GetTimePlayedString(total)
+		});
 	end
 end
 local function OnTooltipForLinkedAccount(t, tooltipInfo)
@@ -1559,6 +1612,7 @@ app:CreateWindow("Account Management", {
 				expanded = true,
 				characters = {},
 				g = {},
+				OnTooltip = OnTooltipForCharacterHeader,
 				OnUpdate = function(data)
 					local g, characters = data.g, data.characters;
 					wipe(g);
