@@ -890,6 +890,7 @@ local OverrideBaseClassFields = {
 	costTotal = true,
 	upgradeTotal = true,
 	summaryText = true,
+	__type = true,
 }
 -- Allows wrapping one Type Object with another Type Object. This allows for fall-through field logic
 -- without requiring a full copied definition of identical field functions and raw Object content
