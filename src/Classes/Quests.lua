@@ -1982,7 +1982,8 @@ local CreateNestedQuest = app.ExtendClass("Quest", "QuestNested", "questID", {
 		if t.saved then return true end
 		-- don't consider incomplete quest collectible if it has a parent which has become saved (perhaps a skipped breadcrumb)
 		local parent = t.parent
-		if parent and parent.questID and parent.saved then
+		if parent and (parent.nestedSkipped or parent.questID and parent.saved) then
+			t.nestedSkipped = true
 			return
 		end
 		-- force collectible for normally un-collectible but trackable (repeatable) Quests to make sure it shows in list if the quest needs to be completed to progess
