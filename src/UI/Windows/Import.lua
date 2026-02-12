@@ -55,7 +55,7 @@ app:CreateWindow("Import", {
 		end
 
 		local function SearchTypeObject(typeKey, id)
-			local o = setmetatable({ OnUpdate = app.ForceShowUpdate }, {
+			local o = setmetatable({ OnUpdate = app.ForceShowUpdate, g = app.EmptyTable }, {
 					__index = id and (SearchForObject(typeKey, id, "key")
 									or SearchForObject(typeKey, id, "field")
 									or app.__CreateObject({[typeKey]=id}))
