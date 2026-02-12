@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- #if ANYCLASSIC
 local AUGUST_STONE_FRAGMENT = 3350;	-- August Stone Fragment (Season 1)
 local AUGUST_STONE_SHARD = 3414;	-- August Stone Shard (Season 2)

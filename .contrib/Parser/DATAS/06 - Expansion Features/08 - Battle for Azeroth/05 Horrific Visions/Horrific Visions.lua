@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 HORRIFIC_VISIONS = createHeader({
 	readable = "Horrific Visions",
 	icon = [[~_.asset("Feature_Horrific Visions")]],
@@ -42,9 +43,11 @@ CORRUPTED_AREA = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 local HORRIFIC_ORGRIMMAR = 1469;
 local HORRIFIC_STORMWIND = 1470;
 local SPARK_OF_UNWAVERING_STRENGTH = 174287;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	n(HORRIFIC_VISIONS, {
 		["maps"] = {
@@ -90,7 +93,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				ach(14061),	-- We Have the Technology
 			}),
 			n(AZERITE_ESSENCES, sharedData({
-				["cost"] = {{ "i", SPARK_OF_UNWAVERING_STRENGTH, 45 }},
+				["cost"] = { { "i", SPARK_OF_UNWAVERING_STRENGTH, 45 } },
 			}, {
 				i(173310),	-- Manual of Unbalanced Tactics [Rank 3]
 				i(173290),	-- Quickening Azerite Geode [Rank 3]

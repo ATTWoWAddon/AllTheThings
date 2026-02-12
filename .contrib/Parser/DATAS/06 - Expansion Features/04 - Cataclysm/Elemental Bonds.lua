@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 ELEMENTAL_BONDS = createHeader({
 	readable = "Elemental Bonds",
 	icon = 516313,
@@ -21,6 +22,7 @@ ELEMENTAL_BONDS = createHeader({
 		en = "The Elemental Bonds questline is an epic series of quests to restore Thrall to his former self after Majordomo Staghelm splits him into 4 essences of elements.",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 	n(ELEMENTAL_BONDS, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
 		["lvl"] = lvlsquish(85, 32, 32),

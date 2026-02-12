@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 -- #if MOP
 -- TODO: https://wowpedia.fandom.com/wiki/The_Ruins_of_Guo-Lai_(daily)
 -- Look at the Golden Lotus daileis table at the "Progression" section at the bottom.

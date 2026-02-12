@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local function TolBaradDailyQuest(questID, t)
 	local quest = q(questID, t);
 	quest.isDaily = true;
@@ -17,6 +18,7 @@ local function TolBaradDailyQuest(questID, t)
 	t.maxReputation = { t.races == ALLIANCE_ONLY and FACTION_BARADINS_WARDENS or FACTION_HELLSCREAMS_REACH, EXALTED };
 	return t;
 end
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD_PENINSULA, {
 		-- #if BEFORE 8.0.3

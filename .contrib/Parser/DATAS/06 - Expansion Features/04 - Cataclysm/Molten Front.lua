@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+local MARK_OF_THE_WORLD_TREE = 416;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_MOLTEN_FRONT, m(THE_MOLTEN_FRONT, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
 		["provider"] = { "o", 208900 },	-- Portal to the Firelands
@@ -325,7 +328,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 47.8, 48.6, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29244, {	-- A Lieutenant of Flame
@@ -363,7 +365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 					["qg"] = 53214,	-- Damek Bloombeard
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
+					["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 125 } },
 				}),
 				q(29139, {	-- Aggressive Growth
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -378,7 +380,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53107 },	-- Smothervine
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29284, {	-- Aid of the Ancients
@@ -399,7 +400,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 41.6, 56.0, MOUNT_HYJAL },
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29137, {	-- Breach in the Defenses
@@ -416,7 +416,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53129 },	-- Lava Dweller
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29138, {	-- Burn Victims
@@ -434,7 +433,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 52834 },	-- Wounded Hyjal Defender
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29297, {	-- Bye Bye Burdy
@@ -452,7 +450,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 52661 },	-- Druid of the Flame
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29147, {	-- Call the Flock
@@ -479,7 +476,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "i", 69234 },	-- Quill of the Bird-Queen
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29199, {	-- Calling for Reinforcements
@@ -494,7 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 					["qg"] = 53882,	-- Varlan Highbough
 					["coord"] = { 44.4, 88.4, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
+					["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 125 } },
 				}),
 				q(29197, {	-- Caught Unawares
 					["sourceQuest"] = 29196,	-- To the Sanctuary!
@@ -506,7 +502,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["maps"] = { MOUNT_HYJAL },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
+					["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 150 } },
 				}),
 				q(29160, {	-- Egg-stinction
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
@@ -522,7 +518,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 65.7, 45.7, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29122, {	-- Echoes of Nemesis
@@ -536,7 +531,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "n", 52383 },	-- Nemesis <Echo of the Usurper>
 							["coord"] = { 24.4, 55.6, MOUNT_HYJAL },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29255, {	-- Embergris
@@ -552,7 +546,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								52503,	-- Charred Vanquisher
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29210, {	-- Enduring the Heat
@@ -590,7 +583,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								52885,	-- Flame Protection Rune [66.3, 52.2]
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29275, {	-- Fandral's Methods
@@ -632,7 +624,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["coord"] = { 64.1, 60.4, THE_MOLTEN_FRONT },
 							["cr"] = 52662,	-- Unstable Flamerager
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29279, {	-- Filling the Moonwell
@@ -642,7 +633,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 					["qg"] = 53881,	-- Ayla Shadowstorm
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
+					["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 125 } },
 				}),
 				q(29265, {	-- Fire Flowers
 					["sourceQuest"] = 29206,	-- Into the Fire
@@ -657,7 +648,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 50.6, 46.5, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29290, {	-- Fire in the Skies
@@ -682,7 +672,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(3, {	-- 0/3 Molten Lords slain
 							["provider"] = { "n", 53310 },	-- Molten Lord
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29264, {	-- Flamewakers of the Molten Flow
@@ -698,7 +687,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53143 },	-- Flamewaker Hunter
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29182, {	-- Flight of the Storm Crows
@@ -757,7 +745,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 52503 },	-- Charred Vanquisher
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29274, {	-- Hounds of Shannox
@@ -773,7 +760,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								54339,	-- Ancient Charhound
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29273, {	-- How Hot
@@ -794,7 +780,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
 							["coord"] = { 23.0, 40.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29203, {	-- Into the Depths
@@ -824,7 +809,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53355 },	-- Windcaller Nordrala
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29200, {	-- Leyara
@@ -836,9 +820,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["sourceQuest"] = 29249,	-- Planting Season
 					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
-					["groups"] = {
-						currency(416),	-- Mark of the World Tree (x5)
-					},
 				}),
 				q(29278, {	-- Living Obsidium
 					["sourceQuest"] = 29281,	-- Additional Armaments
@@ -855,7 +836,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 51.0, 50.6, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29289, {	-- Mother's Malice
@@ -870,7 +850,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(1, {	-- Druid of the Talon Windcaller protected
 							["provider"] = { "n", 53249 },	-- Fire Hawk Matriarch
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29162, {	-- Nature's Blessing
@@ -886,7 +865,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "i", 69232 },	-- Emerald of Aessina
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29272, {	-- Need... Water... Badly...
@@ -898,7 +876,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(1, {	-- Escort Anren to the front of the cave
 							["provider"] = { "n", 53234 },	-- Anren Shadowseeker
 						}),
-						currency(416),	-- Mark of the World Tree (x5)
 					},
 				}),
 				q(29280, {	-- Nourishing Waters
@@ -934,7 +911,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29164, {	-- Perfecting Your Howl
@@ -946,26 +922,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(1, {	-- 0/10 Howl atop an invader's corpse
 							["providers"] = {
 								{ "i", 69235 },	-- Fang of the Wolf
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 52816 },	-- Charred Invader
+								{ "n", 52219 },	-- Flame Terror
+								{ "n", 52300 },	-- Seething Pyrelord
+								{ "n", 52383 },	-- Nemesis
+								{ "n", 52399 },	-- Galenges
+								{ "n", 52649 },	-- Millagazor
+								{ "n", 52749 },	-- Pyrachnis
+								{ "n", 52766 },	-- Lylagar
+								{ "n", 52791 },	-- Charred Flamewaker
+								{ "n", 52794 },	-- Brimstone Destroyer
+								{ "n", 52795 },	-- Brimstone Hound
+								{ "n", 53264 },	-- Searris
+								{ "n", 53265 },	-- Kelbnar
+								{ "n", 53267 },	-- Andrazor
+								{ "n", 53271 },	-- Fah Jarakk
+								{ "n", 54362 },	-- Scarred Acolyte
+								{ "n", 52289 },	-- Fiery Behemoth
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29249, {	-- Planting Season
@@ -990,11 +965,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Child of Tortolla punted into water
 							["providers"] = {
-								{ "n", 52177},	-- Child of Tortolla
-								{ "n", 52218},	-- Child of Tortolla
+								{ "n", 52177 },	-- Child of Tortolla
+								{ "n", 52218 },	-- Child of Tortolla
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29159, {	-- Pyrorachnophobia
@@ -1010,7 +984,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 66.4, 56.8, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29123, {	-- Rage Against the Flames
@@ -1021,26 +994,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Invader from the Firelands slain
 							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 52816 },	-- Charred Invader
+								{ "n", 52219 },	-- Flame Terror
+								{ "n", 52300 },	-- Seething Pyrelord
+								{ "n", 52383 },	-- Nemesis
+								{ "n", 52399 },	-- Galenges
+								{ "n", 52649 },	-- Millagazor
+								{ "n", 52749 },	-- Pyrachnis
+								{ "n", 52766 },	-- Lylagar
+								{ "n", 52791 },	-- Charred Flamewaker
+								{ "n", 52794 },	-- Brimstone Destroyer
+								{ "n", 52795 },	-- Brimstone Hound
+								{ "n", 53264 },	-- Searris
+								{ "n", 53265 },	-- Kelbnar
+								{ "n", 53267 },	-- Andrazor
+								{ "n", 53271 },	-- Fah Jarakk
+								{ "n", 54362 },	-- Scarred Acolyte
+								{ "n", 52289 },	-- Fiery Behemoth
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29127, {	-- Rage Against the Flames
@@ -1051,26 +1023,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Invader from the Firelands slain
 							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 52816 },	-- Charred Invader
+								{ "n", 52219 },	-- Flame Terror
+								{ "n", 52300 },	-- Seething Pyrelord
+								{ "n", 52383 },	-- Nemesis
+								{ "n", 52399 },	-- Galenges
+								{ "n", 52649 },	-- Millagazor
+								{ "n", 52749 },	-- Pyrachnis
+								{ "n", 52766 },	-- Lylagar
+								{ "n", 52791 },	-- Charred Flamewaker
+								{ "n", 52794 },	-- Brimstone Destroyer
+								{ "n", 52795 },	-- Brimstone Hound
+								{ "n", 53264 },	-- Searris
+								{ "n", 53265 },	-- Kelbnar
+								{ "n", 53267 },	-- Andrazor
+								{ "n", 53271 },	-- Fah Jarakk
+								{ "n", 54362 },	-- Scarred Acolyte
+								{ "n", 52289 },	-- Fiery Behemoth
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29149, {	-- Rage Against the Flames
@@ -1081,26 +1052,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/7 Invader from the Firelands slain
 							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 52816 },	-- Charred Invader
+								{ "n", 52219 },	-- Flame Terror
+								{ "n", 52300 },	-- Seething Pyrelord
+								{ "n", 52383 },	-- Nemesis
+								{ "n", 52399 },	-- Galenges
+								{ "n", 52649 },	-- Millagazor
+								{ "n", 52749 },	-- Pyrachnis
+								{ "n", 52766 },	-- Lylagar
+								{ "n", 52791 },	-- Charred Flamewaker
+								{ "n", 52794 },	-- Brimstone Destroyer
+								{ "n", 52795 },	-- Brimstone Hound
+								{ "n", 53264 },	-- Searris
+								{ "n", 53265 },	-- Kelbnar
+								{ "n", 53267 },	-- Andrazor
+								{ "n", 53271 },	-- Fah Jarakk
+								{ "n", 54362 },	-- Scarred Acolyte
+								{ "n", 52289 },	-- Fiery Behemoth
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29163, {	-- Rage Against the Flames
@@ -1111,26 +1081,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["groups"] = {
 						objective(1, {	-- 0/9 Invader from the Firelands slain
 							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 52816 },	-- Charred Invader
+								{ "n", 52219 },	-- Flame Terror
+								{ "n", 52300 },	-- Seething Pyrelord
+								{ "n", 52383 },	-- Nemesis
+								{ "n", 52399 },	-- Galenges
+								{ "n", 52649 },	-- Millagazor
+								{ "n", 52749 },	-- Pyrachnis
+								{ "n", 52766 },	-- Lylagar
+								{ "n", 52791 },	-- Charred Flamewaker
+								{ "n", 52794 },	-- Brimstone Destroyer
+								{ "n", 52795 },	-- Brimstone Hound
+								{ "n", 53264 },	-- Searris
+								{ "n", 53265 },	-- Kelbnar
+								{ "n", 53267 },	-- Andrazor
+								{ "n", 53271 },	-- Fah Jarakk
+								{ "n", 54362 },	-- Scarred Acolyte
+								{ "n", 52289 },	-- Fiery Behemoth
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29248, {	-- Releasing the Pressure
@@ -1143,7 +1112,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "i", 69679 },	-- Flamewaker Scale
 							["cr"] = 52791,	-- Charred Flamewaker
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29246, {	-- Relieving the Pain
@@ -1159,7 +1127,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								53264,	-- Searris
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29293, {	-- Singed Wings
@@ -1175,7 +1142,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 26.0, 36.4, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29211, {	-- Solar Core Destruction
@@ -1188,7 +1154,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "o", 208474 },	-- Solar Core
 							["coord"] = { 71.0, 38.5, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29299, {	-- Some Like It Hot
@@ -1200,7 +1165,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(1, {	-- 0/6 Help the Crimson Lasher Drink from Ember Pools
 							["provider"] = { "n", 53013 },	-- Crimson Lasher
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29288, {	-- Starting Young
@@ -1216,7 +1180,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 23.6, 42.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29257, {	-- Steal Magmolias
@@ -1233,7 +1196,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["coord"] = { 49.5, 50.2, THE_MOLTEN_FRONT },
 							["cr"] = 53090,	-- Lava Burster
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29243, {	-- Strike at the Heart (Stage 2: The Forlorn Spire)
@@ -1266,7 +1228,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x3)
 					},
 				}),
 				q(29305, {	-- Strike at the Heart (Stage 2: Into the Fire)
@@ -1292,7 +1253,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x3)
 					},
 				}),
 				q(29166, {	-- Supplies for the Other Side
@@ -1307,7 +1267,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "o", 208442 },	-- Blueroot Vine
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29296, {	-- Territorial Birds
@@ -1323,7 +1282,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 25.8, 37.6, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29295, {	-- The Bigger They Are
@@ -1342,7 +1300,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 31.6, 47.8, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29165, {	-- The Call of the Pack
@@ -1358,7 +1315,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 41.6, 56.0, MOUNT_HYJAL },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29304, {	-- The Dogs of War
@@ -1374,7 +1330,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 48.4, 72.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29202, {	-- The Fate of Runetotem
@@ -1405,7 +1360,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 66.6, 56.8, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29205, {	-- The Forlorn Spire
@@ -1413,9 +1367,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
-					["groups"] = {
-						currency(416),	-- Mark of the World Tree (x2)
-					},
 				}),
 				q(29141, {	-- The Harder They Fall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -1427,7 +1378,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "n", 52552 },	-- Molten Behemoth
 							["coord"] = { 48.0, 75.6, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29215, {	-- The Hunt Begins
@@ -1456,7 +1406,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 41.4, 56.2, MOUNT_HYJAL },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29128, {	-- The Protectors of Hyjal
@@ -1475,7 +1424,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 53271},	-- Fah Jarakk
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29311, {	-- The Rest is History
@@ -1499,7 +1447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["maps"] = { MOUNT_HYJAL },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
+					["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 150 } },
 				}),
 				q(29310, {	-- The Tipping Point
 					["sourceQuest"] = 29303,	-- Tragedy and Family
@@ -1525,7 +1473,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						objective(1, {	-- 0/1 Druid of the Flame captured
 							["provider"] = { "n", 52804 },	-- Shadow Warden
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29204, {	-- The Warden's Charge
@@ -1548,7 +1495,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "i", 69649 },	-- Inconspicuous Emerald
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29201, {	-- Through the Gates of Hell
@@ -1578,7 +1524,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 47.8, 73.0, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29303, {	-- Tragedy and Family
@@ -1606,7 +1551,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "i", 69677 },	-- Sulfur-Laced Wrapping
 							["cr"] = 52289,	-- Fiery Behemoth
 						}),
-						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29302, {	-- Unlocking the Secrets Within
@@ -1638,7 +1582,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 								{ "n", 52992 },	-- Cinderweb Cocoon
 							},
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29148, {	-- Wings Aflame
@@ -1655,7 +1598,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 							["coord"] = { 13.2, 44.6, MOUNT_HYJAL },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29143, {	-- Wisp Away
@@ -1668,8 +1610,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							["provider"] = { "n", 53083 },	-- Hyjal Wisp
 							["coord"] = { 42.36, 69.45, THE_MOLTEN_FRONT },
 						}),
-						currency(416),	-- Mark of the World Tree (x2)
 					},
+				}),
+				n(REWARDS, {
+					currency(416),	-- Mark of the World Tree
 				}),
 			}),
 			n(RARES, {
@@ -1814,47 +1758,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				}),
 				n(52822, {	-- Zen'Vorka <Favors of the World Tree>
 					i(71088, {	-- Bilgewater Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70145, {	-- Darnassus Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70146, {	-- Exodar Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70107),	-- Fireheart Necklace
 					i(71087, {	-- Gilneas Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70147, {	-- Gnomeregan Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70148, {	-- Ironforge Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70105),	-- Matoclaw's Band
 					i(70106),	-- Nightweaver's Amulet
 					i(70149, {	-- Orgrimmar Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70108),	-- Pyrelord Greaves
 					i(70150, {	-- Sen'jin Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70151, {	-- Silvermoon Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70152, {	-- Stormwind Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70153, {	-- Thunder Bluff Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(70154, {	-- Undercity Writ of Commendation
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 					}),
 					i(71631, {	-- Zen'Vorka's Cache
-						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
+						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 						-- Danny Donkey: Rumours about greenies from this cache being of different ilvl and/or sourceID than ordinary world drops seems to be pre-release speculations only. No reports confirms this ever being the case from back when 4.2 released on retail, and likewise with Cata Classic.
 						["description"] = "Contains a random uncommon quality Cataclysm world drop. Also have a chance of containing the pet Searing Scorchling.",
 						["groups"] = {

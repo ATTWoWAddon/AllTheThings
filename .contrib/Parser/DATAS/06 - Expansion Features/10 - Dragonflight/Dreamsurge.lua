@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 -- Most Dreambound Item only turns into a single other Item
 local function DreamboundBOA(itemID, vendorItemID)
 	local i = i(itemID);
@@ -16,6 +17,7 @@ DREAMSURGE_CHRYSALIS = 208153;
 -- #else
 DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
@@ -157,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
 				}),
 				i(192807, {	-- Renewed Magmammoth (MOUNT!)
-					["cost"] = {{ "i", 209419, 20 }},	-- Charred Elemental Remains
+					["cost"] = { { "i", 209419, 20 } },	-- 20x Charred Elemental Remains
 				}),
 			},
 		}),
@@ -170,7 +172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 45.6, 39.7, THE_AZURE_SPAN },
 				},
 				["groups"] = bubbleDownFiltered({
-					["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 100 }},
+					["cost"] = { { "i", DREAMSURGE_COALESCENCE, 100 } },
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
 						DreamboundBOA(208918, 209409),	-- Dreambound Cloth Gloves
@@ -260,22 +262,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 					i(198824, {	-- Duskwing Ohuna (MOUNT!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 1000 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 1000 } },
 					}),
 					i(205024, {	-- Cheddar (PET!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 250 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 250 } },
 					}),
 					i(205010, {	-- Crimson Swoglet (PET!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 250 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 250 } },
 					}),
 					i(209858, {	-- Dreamsurge Remnant (TOY!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
 					}),
 					i(209944, {	-- Friendsurge Defenders (TOY!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
 					}),
 					i(255673, {	-- Moonclasp Satchel (DEDOR!)
-						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
@@ -288,7 +290,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["groups"] = bubbleDownFiltered({
-					["cost"] = {{ "i", DREAMSURGE_CHRYSALIS, 1 }},
+					["cost"] = { { "i", DREAMSURGE_CHRYSALIS, 1 } },
 				},FILTERFUNC_itemID,{
 					n(BACK, {
 						i(209414),	-- Dreambound Drape

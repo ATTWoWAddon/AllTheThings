@@ -909,7 +909,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(251636, {	-- Netherlight Command Map (DECOR!)
-								["sourceAchievement"] = 60988,	-- Raise an Army for the Netherlight Temple
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
@@ -927,12 +926,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(140552),	-- Netherlight Spire
 							i(250790, {	-- Replica Altar of Light and Shadow (DECOR!)
-								["sourceAchievement"] = 42294,	-- Hidden Potential of the High Priest
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(250791, {	-- Replica Word of the Conclave (DECOR!)
-								["sourceAchievement"] = 60969,	-- Legendary Research of the Netherlight Conclave
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
@@ -940,7 +937,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250792, {	-- Scroll of the Conclave (DECOR!)
-								["sourceAchievement"] = 42277,	-- The High Priest's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),

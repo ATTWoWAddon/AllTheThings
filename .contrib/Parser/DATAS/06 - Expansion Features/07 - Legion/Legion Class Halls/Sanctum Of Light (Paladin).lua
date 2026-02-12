@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 43684,	-- Notes Read
 							["qg"] = 111123,	-- Timolain the Accursed
 							["maps"] = { WESTERN_PLAGUELANDS },
-							["cost"] = { { "i", 139623, 1 } },	-- 1xTimolain's Phylactery
+							["cost"] = { { "i", 139623, 1 } },	-- 1x Timolain's Phylactery
 						}),
 						hqt(43688, name(HEADERS.Item, 139624, {	-- Shard of Darkness
 							["description"] = "You must have the Shard of Darkness in your inventory in order to trigger this dialog.",
@@ -770,7 +770,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 44.4, 28.8, LEGION_DALARAN },
 						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-						["cost"] = {{ "i", 147768, 1 }},	-- 1x Suramarian Sapphire
+						["cost"] = { { "i", 147768, 1 } },	-- 1x Suramarian Sapphire
 					}),
 					q(45645, {	-- A Fool's Errand
 						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
@@ -1011,12 +1011,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250230, {	-- Replica Altar of Ancient Kings (DECOR!)
-								["sourceAchievement"] = 42293,	-- Hidden Potential of the Highlord
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2500 } },
 							}),
 							i(250233, {	-- Replica Libram of Ancient Kings (DECOR!)
-								["sourceAchievement"] = 60968,	-- Legendary Research of the Silver Hand
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
@@ -1024,7 +1022,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250234, {	-- Sanctum of Light Candelabra (DECOR!)
-								["sourceAchievement"] = 42276,	-- The Highlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1200 } },
 							}),
@@ -1041,7 +1038,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(250236, {	-- Silver Hand Weapon Rack (DECOR!)
-								["sourceAchievement"] = 60987,	-- Raise an Army for the Sanctum of Light
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),

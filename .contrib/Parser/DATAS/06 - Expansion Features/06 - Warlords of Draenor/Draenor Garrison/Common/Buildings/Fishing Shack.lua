@@ -41,7 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36802, {	-- Abyssal Gulper Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116818, 1 }},	-- Abyssal Gulper Lunker
+							["cost"] = { { "i", 116818, 1 } },	-- Abyssal Gulper Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -72,14 +72,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36803, {	-- Blackwater Whiptail Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116817, 1 }},	-- Blackwater Whiptail Lunker
+							["cost"] = { { "i", 116817, 1 } },	-- Blackwater Whiptail Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
 						}),
 						q(36804, {	-- Blind Lake Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116820, 1 }},	-- Blind Lake Lunker
+							["cost"] = { { "i", 116820, 1 } },	-- Blind Lake Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -122,14 +122,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36805, {	-- Fat Sleeper Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116821, 1 }},	-- Fat Sleeper Lunker
+							["cost"] = { { "i", 116821, 1 } },	-- Fat Sleeper Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
 						}),
 						q(39283, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {	-- Felmouth Frenzy Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 127994, 1 }},	-- Felmouth Frenzy Lunker
+							["cost"] = { { "i", 127994, 1 } },	-- Felmouth Frenzy Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -161,7 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36800, {	-- Fire Ammonite Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116819, 1 }},	-- Fire Ammonite Lunker
+							["cost"] = { { "i", 116819, 1 } },	-- Fire Ammonite Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -186,7 +186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36806, {	-- Jawless Skulker Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 116822, 1 }},	-- Jawless Skulker Lunker
+							["cost"] = { { "i", 116822, 1 } },	-- Jawless Skulker Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(38406, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Sea Scorpion Lunker
 							["qg"] = 85984,	-- Nat Pagle
-							["cost"] = {{ "i", 122696, 1 }},	-- Sea Scorpion Lunker
+							["cost"] = { { "i", 122696, 1 } },	-- Sea Scorpion Lunker
 							["requireSkill"] = FISHING,
 							["repeatable"] = true,
 							["groups"] = { i(NATS_LUCKY_COIN) },
@@ -279,26 +279,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						n(85984, {	-- Nat Pagle <Master Fisherman>
 							i(168416),	-- Angler's Water Striders
 							i(116825, {	-- Savage Fishing Pole
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 25 } },
 							}),
 							i(116826, {	-- Draenic Fishing Pole
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 25 } },
 							}),
 							i(117404, {	-- Land Shark (PET!)
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 50 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 50 } },
 							}),
 							i(117401),	-- Nat's Draenic Fishing Journal
 							i(117405, {	-- Nat's Drinking Hat
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 25 } },
 							}),
 							i(86596, {	-- Nat's Fishing Chair (TOY!)
 								["minReputation"] = { FACTION_NAT_PAGLE, 6 },	-- Nat Pagle, Best Friend.
 							}),
 							i(87791, {	-- Crimson Water Strider (MOUNT!)
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 100 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 100 } },
 							}),
 							i(114919, {	-- Sea Calf (PET!)
-								["cost"] = {{ "i", NATS_LUCKY_COIN, 50 }},
+								["cost"] = { { "i", NATS_LUCKY_COIN, 50 } },
 							}),
 						}),
 					}),

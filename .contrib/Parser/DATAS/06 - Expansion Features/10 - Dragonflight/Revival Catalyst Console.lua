@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local VAULT_OF_THE_INCARNATES = 2390;
 local ABERRUS_THE_SHADOWED_CRUCIBLE = 2403;
 local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
@@ -13,6 +14,7 @@ end
 local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	o(382621, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local BRIGHTSCALE_HATCHLING = i(180815);	-- Brightscale Hatchling (PET!)
 local DUSTY_SPOREFLUTTER = i(180639);	-- Dusty Sporeflutter (PET!)
 local DAUNTLESS_DUSKRUNNER = i(181317);	-- Dauntless Duskrunner (MOUNT!)
@@ -52,7 +53,7 @@ local PHIXIN_GROUP = {
 		["cost"] = { { "c", ANIMA, 1000 } },
 	}),
 	i(180962, {	-- Sterling-Silver Cudgel
-		["cost"] = { { "c", ANIMA, 1000  } },
+		["cost"] = { { "c", ANIMA, 1000 } },
 	}),
 	i(181323, {	-- Blightclutched Greatstaff
 		["cost"] = { { "c", ANIMA, 500 } },
@@ -149,6 +150,7 @@ local CHAMPIONS_PELT = 180478;
 local ELYSIAN_FEATHERS = 180477;
 local NIGHTFORGED_STEEL = 180595;
 local SOUL_MIRROR = 179378;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
@@ -433,9 +435,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									i(179378, {	-- Soul Mirror
-										["cost"] = {
-											{ "i", 178995, 5 },	-- 5xSoul Mirror Shard
-										},
+										["cost"] = { { "i", 178995, 5 } },	-- 5xSoul Mirror Shard
 									}),
 									i(181278, {	-- Soulseeker Crystal
 										["cost"] = {

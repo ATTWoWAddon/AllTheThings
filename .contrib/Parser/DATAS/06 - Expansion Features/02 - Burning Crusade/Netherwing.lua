@@ -1,12 +1,14 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 ExportDB.OnTooltipDB.ForNetherwing = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Turn in Netherwing Eggs.", 250, 42000);
 	end
 end]];
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {
 	header(HEADERS.Faction, FACTION_NETHERWING, bubbleDownSelf({ ["timeline"] = { ADDED_2_1_0 } }, {
 		["description"] = "The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",
@@ -72,7 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["groups"] = {
 						objective(1, {	-- 0/12 Dragonmaw Peon Camp Poisoned
 							["provider"] = { "i", 32503 },	-- Yarzill's Mutton
-							["cost"] = { { "i", 32502, 12 }},	-- Fel Gland
+							["cost"] = { { "i", 32502, 12 } },	-- Fel Gland
 							["coord"] = { 72.8, 81.8, SHADOWMOON_VALLEY },
 							["cr"] = 22252,	-- Dragonmaw Peon
 						}),
@@ -95,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
-					["cost"] = {{ "i", 32506, 1 }},	-- Netherwing Egg
+					["cost"] = { { "i", 32506, 1 } },	-- Netherwing Egg
 					["repeatable"] = true,
 				}),
 				q(11012, {	-- Blood Oath of the Netherwing
@@ -326,9 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					["groups"] = {
 						objective(1, {	-- 0/10 Knothide Leather
-							["cost"] = {
-								{ "i", 21887, 10 },	-- Knothide Leather
-							},
+							["cost"] = { { "i", 21887, 10 } },	-- Knothide Leather
 						}),
 						objective(2, {	-- 0/1 Hardened Hide of Tyrantus
 							["provider"] = { "i", 32666 },	-- Hardened Hide of Tyrantus
@@ -447,7 +447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["sourceQuest"] = 11019,	-- Your Friend on the Inside
 					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-					["cost"] = { { "i", 32506, 1 }, },	-- Netherwing Egg
+					["cost"] = { { "i", 32506, 1 } },	-- Netherwing Egg
 				}),
 				q(11075, {	-- The Netherwing Mines
 					["sourceQuest"] = 11053,	-- Rise, Overseer!

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 CLIMBING = createHeader({
 	readable = "Climbing",
 	icon = 4562583,
@@ -8,6 +9,7 @@ CLIMBING = createHeader({
 		en = WOWAPI_GetSpellName(365311),
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(CLIMBING, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 6 } }, {
@@ -57,8 +59,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["groups"] = {
 								i(202085, {	-- Bugbiter Tortoise (PET!)
 									["cost"] = {
-										{ "i", 202084, 1 },	-- 1xEroded Fossil
-										{ "i", 202082, 1 },	-- 1xPetrified Dragon Egg
+										{ "i", 202084, 1 },	-- 1x Eroded Fossil
+										{ "i", 202082, 1 },	-- 1x Petrified Dragon Egg
 									},
 								}),
 							},

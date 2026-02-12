@@ -529,7 +529,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(163042, {	-- Ivory Cloud Serpent
 							["coord"] = { 29.0, 53.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["description"] = "Requires a Zan-Tien Lasso to wrangle!",
-							["cost"] = {{ "i", 174927, 1 }},	-- Zan-Tien Lasso
+							["cost"] = { { "i", 174927, 1 } },	-- 1x Zan-Tien Lasso
 							["groups"] = {
 								i(174752),	-- Ivory Cloud Serpent (MOUNT!)
 							},
@@ -1054,25 +1054,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 44.5, 75.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						["groups"] = {
 							i(168573, {	-- Death-Resistant Leaf (Rank 1)
-								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+								["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Memento
 							}),
 							i(168436, {	-- Focused Star Point (Rank 1)
-								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+								["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Memento
 							}),
 							i(168440, {	-- Gleaming Star Shard (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["cost"] = { { "c", 1719, 50 } },	-- 50x Corrupted Memento
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["cost"] = { { "c", 1719, 50 } },	-- 50x Corrupted Memento
 							}),
 							i(174649, {	-- Rajani Warserpent (MOUNT!)
-								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
+								["cost"] = { { "i", 174230, 1 } },	-- Pristine Cloud Serpent Scale
 							}),
 							i(172009, {	-- Technique: Contract: Rajani (RECIPE!)
 								["cost"] = 14000000,	-- 1,400g
 							}),
 							i(174480, {	-- Windfeather Quill (PET!)
-								["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+								["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 							}),
 							i(174906, {	-- Lightning-Forged Augment Rune
 								["cost"] = 500000000,	-- 50,000g
@@ -1081,7 +1081,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								["cost"] = 2400000,	-- 240g
 							}),
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller (CI!)
-								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+								["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 								["groups"] = {
 									follower(1187, {	-- Rajani Sparkcallers
 										["collectible"] = false,

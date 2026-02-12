@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 							91020,	-- Enchantress Ismae
 							91029,	-- Rath'thul Moonvale
 						},
-						["cost"] = {{ "i", 109693, 50 }},	-- 50x Draenic Dust
+						["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 						["isDaily"] = true,
 					}),
 					q(36310, {	-- The Arakkoan Enchanter [A]
@@ -33,12 +33,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 					}),
 					q(36645, {	-- Your First Enchanting Work Order
 						["qg"] = 77354,	-- Ayada the White
-						["cost"] = {{ "i", 109693, 5 }},	-- 5x Draenic Dust
+						["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37570, {	-- Your First Enchanting Work Order
 						["qg"] = 79821,	-- Yukla Greenshadow
-						["cost"] = {{ "i", 109693, 5 }},	-- 5x Draenic Dust
+						["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 						["races"] = HORDE_ONLY,
 					}),
 				}),

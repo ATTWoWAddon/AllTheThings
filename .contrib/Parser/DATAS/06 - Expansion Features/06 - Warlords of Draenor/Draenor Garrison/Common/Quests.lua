@@ -879,7 +879,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 34284,	-- Garrison Campaign: The Search for Owynn Graddock
 					["qg"] = 78056,	-- Owynn Graddock <SI:7>
 					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
-					["cost"] = {{ "i", 110116, 1 }},	-- Bloodmaul Shackle Key
+					["cost"] = { { "i", 110116, 1 } },	-- Bloodmaul Shackle Key
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34285, {	-- Gearing Up
@@ -915,7 +915,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 34362,	-- The Shadow Gate
 					["qg"] = 78428,	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
-					["cost"] = {{ "i", 110378, 5 }},	-- Borgal's Totem
+					["cost"] = { { "i", 110378, 5 } },	-- Borgal's Totem
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34289, {	-- Soulgrinder Survivor
@@ -2729,7 +2729,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					{ 40.4, 56.2, FROSTWALL },
 					{ 34.6, 33.0, LUNARFALL },
 				},
-				["cost"] = {{ "i", 110609, 50 }},	-- 50x Raw Beast Hide
+				["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
 				["isDaily"] = true,
 			}),
 			q(37288, {	-- Resources in Ashran
@@ -2812,7 +2812,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					91034,	-- Calvo Klyne (Horde)
 					91025,	-- Dorothy "Two" (Alliance)
 				},
-				["cost"] = {{ "i", 111557, 50 }},	-- 50x Sumptuous Fur
+				["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
 				["isDaily"] = true,
 			}),
 			q(34674, {	-- Taking the Fight to Nagrand

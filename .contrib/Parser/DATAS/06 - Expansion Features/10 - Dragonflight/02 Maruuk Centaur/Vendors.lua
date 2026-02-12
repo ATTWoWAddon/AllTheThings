@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local DENSE_HIDE = 193217;
 local IRIDESCENT_PLUME = 201401;
 local OCASSIONAL_SAND = 194562;
@@ -12,6 +13,7 @@ local TALLSTRIDER_SINEW = 201404;
 local DRACONIUM_ORE = 188658;
 local RUNED_WRITHEBARK = 194863;
 local LARGE_STURDY_FEMUR = 201402;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(VENDORS, {
@@ -87,25 +89,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 5 --
 						i(197630, {	-- Windborne Velocidrake: Feathered Neck (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197596, {	-- Windborne Velocidrake: Horned Jaw (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197604, {	-- Windborne Velocidrake: Ox Horns (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197610, {	-- Windborne Velocidrake: Yellow Horns (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
@@ -201,14 +195,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 8 --
 						i(199814, {	-- Formula: Enchant Boots - Plainsrunner's Breeze (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(199813, {	-- Formula: Enchant Chest - Sustained Strength (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(193618, {	-- Hoofhelper (PET!)
 							["cost"] = {
@@ -221,61 +211,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 10 --
 					}, {	-- RENOWN 11 --
 						i(200613, {	-- Aylaag Windstone Fragment
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(200457, {	-- Ohn'ahran Plainswalker Boots
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200458, {	-- Ohn'ahran Plainswalker Greaves
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200460, {	-- Ohn'ahran Plainswalker Moccasins
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200459, {	-- Ohn'ahran Plainswalker Slippers
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
 						i(193870, {	-- Pattern: Allied Legguards of Sansok Khan (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(193878, {	-- Pattern: Ancestor's Dew Drippers (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(194480, {	-- Plans: Obsidian Halberd (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(194478, {	-- Plans: Obsidian Seared Facesmasher (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(194477, {	-- Plans: Obsidian Seared Runeaxe (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(191547, {	-- Recipe: Alacritous Alchemist Stone (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(200499, {	-- Nokhud Battle Shoulderpads
 							["cost"] = {
@@ -360,31 +328,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
 						i(198902, {	-- Technique: Windborne Velocidrake: Black Fur (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 25 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 25 } },
 						}),
 						i(197587, {	-- Windborne Velocidrake: Feathered Back (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197591, {	-- Windborne Velocidrake: Hairy Head (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197618, {	-- Windborne Velocidrake: Long Snout (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197623, {	-- Windborne Velocidrake: Spiked Tail (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
@@ -491,9 +449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(198462),	-- Pattern: Flameproof Apron (RECIPE!)
 						i(198457),	-- Pattern: Masterwork Smock (RECIPE!)
 						i(198464, {	-- Pattern: Reinforced Pack (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(194499),	-- Plans: Khaz'gorite Leatherworker's Knife (RECIPE!)
 						i(194497),	-- Plans: Khaz'gorite Skinning Knife (RECIPE!)
@@ -537,24 +493,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 23 --
 					}, {	-- RENOWN 24 --
 						i(200465, {	-- Maruuk Harrier's Hauberk
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200466, {	-- Maruuk Scout's Vest
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200467, {	-- Maruuk Spiritual Vestments
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(200464, {	-- Maruuk Warrior's Chestplate
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 25 --
 					},

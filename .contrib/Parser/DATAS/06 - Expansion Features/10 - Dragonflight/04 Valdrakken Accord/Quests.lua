@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(RENOWN, {
@@ -31,14 +32,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-						["cost"] = { { "i", 199906, 1 }, },	-- 1x Titan Relic
+						["cost"] = { { "i", 199906, 1 } },	-- 1x Titan Relic
 						["repeatable"] = true,
 					}),
 					q(70841, {	-- More Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-						["cost"] = { { "i", 199906, 5 }, },	-- 5x Titan Relic
+						["cost"] = { { "i", 199906, 5 } },	-- 5x Titan Relic
 						["repeatable"] = true,
 					}),
 					------ BoA Titan Relic ------
@@ -46,14 +47,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-						["cost"] = { { "i", 200450, 1 }, },	-- 1x Titan Relic
+						["cost"] = { { "i", 200450, 1 } },	-- 1x Titan Relic
 						["repeatable"] = true,
 					}),
 					q(71043, {	-- More Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26.0, 40.0, VALDRAKKEN },
 						["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-						["cost"] = { { "i", 200450, 5 }, },	-- 5x Titan Relic
+						["cost"] = { { "i", 200450, 5 } },	-- 5x Titan Relic
 						["repeatable"] = true,
 					}),
 				}, {	-- RENOWN 3 --

@@ -1,3 +1,7 @@
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
 	n(KRASARANG_WILDS_CAMPAIGN, {
 		["aqd"] = {
@@ -1283,12 +1287,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122211, {	-- Music Roll: War March
-							["cost"] = { { "i", 91838, 500 }, },	-- 500x Lion's Landing Commission
+							["cost"] = { { "i", 91838, 500 } },	-- 500x Lion's Landing Commission
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92527, {	-- Rodent Crate
 							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-							["cost"] = { { "i", 91838, 2000 }, },	-- 2,000x Lion's Landing Commission
+							["cost"] = { { "i", 91838, 2000 } },	-- 2,000x Lion's Landing Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)
 							},
@@ -1300,12 +1304,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122202, {	-- Music Roll: High Seas
-							["cost"] = { { "i", 91877, 500 }, },	-- 500x Domination Point Commission
+							["cost"] = { { "i", 91877, 500 } },	-- 500x Domination Point Commission
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92532, {	-- Rodent Crate
 							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-							["cost"] = { { "i", 91877, 2000 }, },	-- 2,000x Domination Point Commission
+							["cost"] = { { "i", 91877, 2000 } },	-- 2,000x Domination Point Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)
 							},

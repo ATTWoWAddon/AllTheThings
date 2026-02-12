@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local REGURGITATED_KYRIAN_WINGS = i(182749);	-- Regurgitated Kyrian Wings
 local AEGIS_OF_SALVATION = i(184365);	-- Aegis of Salvation
@@ -26,6 +27,7 @@ local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
 		AEGIS_OF_SALVATION,
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {

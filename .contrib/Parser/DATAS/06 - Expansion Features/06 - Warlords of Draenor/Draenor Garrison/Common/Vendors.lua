@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local ALCHEMICAL_CATALYST = 108996;
 local BLACKROCK_ORE = 109118;
 local CERULEAN_PIGMENT = 114931;
@@ -32,24 +33,24 @@ local COOK_TRADER = sharedData({ ["timeline"] = { ADDED_6_1_0 } }, {
 local DUST_TRADER = {
 	PRIMAL_SPIRIT,
 	i(122711, {	-- Formula: Temporal Binding (RECIPE!)
-		["cost"] = {{ "i", LUMINOUS_SHARD, 5 }},
+		["cost"] = { { "i", LUMINOUS_SHARD, 5 } },
 	}),
 };
 local FUR_TRADER = {
 	PRIMAL_SPIRIT,
 	i(122716, {	-- Pattern: Primal Weaving (RECIPE!)
-		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["cost"] = { { "i", SUMPTUOUS_FUR, 60 } },
 	}),
 	i(127724, {	-- Pattern: Mighty Hexweave Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
-		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["cost"] = { { "i", SUMPTUOUS_FUR, 60 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 	i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
-		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["cost"] = { { "i", SUMPTUOUS_FUR, 60 } },
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 	}),
 	i(127742, {	-- Pattern: Savage Hexweave Essence (RECIPE!)
@@ -57,7 +58,7 @@ local FUR_TRADER = {
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
-		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["cost"] = { { "i", SUMPTUOUS_FUR, 60 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 };
@@ -68,54 +69,54 @@ local HERB_TRADER = {
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+		["cost"] = { { "i", ALCHEMICAL_CATALYST, 10 } },
 		["timeline"] = { ADDED_6_2_0 }
 	}),
 	i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
-		["cost"] = {{ "i", STARFLOWER, 60 }},
+		["cost"] = { { "i", STARFLOWER, 60 } },
 	}),
 	i(122600, {	-- Recipe: Savage Blood (RECIPE!)
-		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+		["cost"] = { { "i", ALCHEMICAL_CATALYST, 10 } },
 	}),
 	i(128160, {	-- Recipe: Wildswater (RECIPE!)
 		-- #if AFTER 9.0.1
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+		["cost"] = { { "i", ALCHEMICAL_CATALYST, 10 } },
 		["timeline"] = { ADDED_6_2_0 }
 	}),
 	i(128410, {	-- Technique: Mass Mill Fireweed (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(128409, {	-- Technique: Mass Mill Frostweed (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(128411, {	-- Technique: Mass Mill Gorgrond Flytrap (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(128413, {	-- Technique: Mass Mill Nagrand Arrowbloom (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(128412, {	-- Technique: Mass Mill Starflower (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(128414, {	-- Technique: Mass Mill Talador Orchid (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(127723, {	-- Technique: Mighty Ensorcelled Tarot (RECIPE!)
 		-- #if AFTER 9.0.1
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(127728, {	-- Technique: Mighty Weapon Crystal (RECIPE!)
 		-- #if AFTER 9.0.1
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 	i(127741, {	-- Technique: Savage Ensorcelled Tarot (RECIPE!)
@@ -123,24 +124,24 @@ local HERB_TRADER = {
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(127746, {	-- Technique: Savage Weapon Crystal (RECIPE!)
 		-- #if AFTER 9.0.1
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #endif
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 	i(122713, {	-- Technique: The Spirit of War (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
-		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
+		["cost"] = { { "i", CERULEAN_PIGMENT, 20 } },
 	}),
 	i(122599, {	-- Tome of Sorcerous Elements (RECIPE!)
-		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+		["cost"] = { { "i", ALCHEMICAL_CATALYST, 10 } },
 		["groups"] = {
 			r(181637),	-- Transmute: Sorcerous Air to Earth
 			r(181633),	-- Transmute: Sorcerous Air to Fire
@@ -157,7 +158,7 @@ local HERB_TRADER = {
 		},
 	}),
 	i(122605, {	-- Tome of the Stones (RECIPE!)
-		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
+		["cost"] = { { "i", ALCHEMICAL_CATALYST, 10 } },
 		["groups"] = {
 			r(181650),	-- Stone of Fire
 			r(181648),	-- Stone of the Earth
@@ -173,11 +174,11 @@ local LEATHER_TRADER = {
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
-		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["cost"] = { { "i", RAW_BEAST_HIDE, 60 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 	i(122547, {	-- Pattern: Powerful Burnished Essence (RECIPE!)
-		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["cost"] = { { "i", RAW_BEAST_HIDE, 60 } },
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 	}),
 	i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
@@ -185,11 +186,11 @@ local LEATHER_TRADER = {
 		["u"] = UNLEARNABLE,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
-		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["cost"] = { { "i", RAW_BEAST_HIDE, 60 } },
 		["timeline"] = { ADDED_6_2_0 },
 	}),
 	i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
-		["cost"] = {{ "i", RAW_BEAST_HIDE, 60 }},
+		["cost"] = { { "i", RAW_BEAST_HIDE, 60 } },
 	}),
 };
 local ORE_TRADER = {
@@ -200,14 +201,14 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(122551, {	-- Design: Powerful Taladite Amplifier (RECIPE!)
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
 	}),
 	i(122714, {	-- Design: Primal Gemcutting (RECIPE!)
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(127744, {	-- Design: Savage Taladite Amplifier (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -215,7 +216,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -223,7 +224,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -231,18 +232,18 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(122550, {	-- Plans: Powerful Steelforged Essence (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(122552, {	-- Plans: Powerful Truesteel Essence (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -250,7 +251,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -258,7 +259,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(127729, {	-- Schematic: Advanced Muzzlesprocket (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -266,7 +267,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -274,7 +275,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(127739, {	-- Schematic: Infrablue-Blocker Lenses (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -282,18 +283,18 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(122554, {	-- Schematic: Precision Scope Tuning Kit (RECIPE!)
 		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 	i(122712, {	-- Schematic: Primal Welding (RECIPE!)
-		["cost"] = {{ "i", BLACKROCK_ORE, 60 }},
+		["cost"] = { { "i", BLACKROCK_ORE, 60 } },
 	}),
 	i(127747, {	-- Schematic: Taladite Firing Pin (RECIPE!)
 		-- #IF AFTER 10.0.5
@@ -301,7 +302,7 @@ local ORE_TRADER = {
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 		-- #ENDIF
 		["timeline"] = { ADDED_6_2_0 },
-		["cost"] = {{ "i", TRUE_IRON_ORE, 60 }},
+		["cost"] = { { "i", TRUE_IRON_ORE, 60 } },
 	}),
 };
 
@@ -633,127 +634,120 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(248800, {	-- Architect's Drafting Table (DECOR!)
-							["sourceQuest"] = 36615,	-- My Very Own Castle
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1500 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
 						}),
 						i(120348, {	-- Enchanted Crystal of Freezing
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120347, {	-- Enchanted Crystal of Replenishment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120349, {	-- Enduring Vial of Swiftness
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120182, {	-- Excess Potion of Accelerated Learning
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 						i(122272, {	-- Follower Ability Retraining Manual
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122273, {	-- Follower Trait Retraining Guide
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(248661, {	-- Northshire Scribe's Desk (DECOR!)
-							["sourceQuest"] = 36592,	-- Bigger is Better
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(245275, {	-- Rolled Scroll (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 						i(248810, {	-- Rough Wooden Chair (DECOR!)
-							["sourceQuest"] = 35176,	-- Keeping it Together
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 						i(122307, {	-- Rush Order: Barn
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122490, {	-- Rush Order: Dwarven Bunker
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122497, {	-- Rush Order: Garden Shipment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(122487, {	-- Rush Order: Gladiator's Sanctum
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122500, {	-- Rush Order: Gnomish Gearworks
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122503, {	-- Rush Order: Mine Shipment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(128373, {	-- Rush Order: Shipyard
-							["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 						}),
 						i(122423, {	-- Scouting Missive: Broken Precipice
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122417, {	-- Scouting Missive: Darktide Roost
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122404, {	-- Scouting Missive: Everbloom Wilds
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122414, {	-- Scouting Missive: Lost Veil Anzu
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122399, {	-- Scouting Missive: Magnarok
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122422, {	-- Scouting Missive: Mok'gol Watchpost
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122409, {	-- Scouting Missive: Pillars of Fate
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122410, {	-- Scouting Missive: Shattrath Harbor
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122407, {	-- Scouting Missive: Skettis
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122415, {	-- Scouting Missive: Socrethar's Rise
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122401, {	-- Scouting Missive: Stonefury Cliffs
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(133883, {	-- Scouting Missive: The Heart of Shattrath
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(133878, {	-- Scouting Missive: The Pit
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(248334, {	-- Stormwind Wooden Bench (DECOR!)
-							["sourceQuest"] = 36404,	-- Clearing the Garden
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(248335, {	-- Stormwind Wooden Stool (DECOR!)
-							["sourceQuest"] = 36202,	-- Anglin' In Our Garrison
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 						i(248660, {	-- Stormwind Workbench (DECOR!)
-							["sourceQuest"] = 34192,	-- Things Are Not Goren Our Way
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
-							["cost"] = {{ "i", 114931, 20 }},	-- 20x Cerulean Pigment
+							["cost"] = { { "i", 114931, 20 } },	-- 20x Cerulean Pigment
 						}),
 						i(248799, {	-- Wooden Storage Crate (DECOR!)
-							["sourceQuest"] = 34586,	-- Establish Your Garrison
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 					},
 				}),
@@ -762,115 +756,112 @@ root(ROOTS.ExpansionFeatures,
 					["cr"] = 88228,	-- LVL1 and LVL2 Quartermaster
 					["groups"] = {
 						i(120348, {	-- Enchanted Crystal of Freezing
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120347, {	-- Enchanted Crystal of Replenishment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120349, {	-- Enduring Vial of Swiftness
-							["cost"] = {{ "c", GARRISON_RESOURCES, 60 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 60 } },
 						}),
 						i(120182, {	-- Excess Potion of Accelerated Learning
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 						i(122272, {	-- Follower Ability Retraining Manual
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122273, {	-- Follower Trait Retraining Guide
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(245438, {	-- Frostwolf Bookcase (DECOR!)
-							["sourceQuest"] = 33527,	-- Last Steps
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 						}),
 						i(245443, {	-- Frostwolf Round Table (DECOR!)
-							["sourceQuest"] = 34378,	-- Establish Your Garrison
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(244653, {	-- Orcish Scribe's Drafting Table (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(244315, {	-- Orcish Warlord's Planning Table (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1500 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
 						}),
 						i(122307, {	-- Rush Order: Barn
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122496, {	-- Rush Order: Garden Shipment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(122487, {	-- Rush Order: Gladiator's Sanctum
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122501, {	-- Rush Order: Goblin Workshop
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122502, {	-- Rush Order: Mine Shipment
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(128373, {	-- Rush Order: Shipyard
-							["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 						}),
 						i(122491, {	-- Rush Order: War Mill
-							["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 						}),
 						i(122424, {	-- Scouting Missive: Broken Precipice
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122418, {	-- Scouting Missive: Darktide Roost
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122400, {	-- Scouting Missive: Everbloom Wilds
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122402, {	-- Scouting Missive: Iron Siegeworks
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122413, {	-- Scouting Missive: Lost Veil Anzu
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122403, {	-- Scouting Missive: Magnarok
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122421, {	-- Scouting Missive: Mok'gol Watchpost
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122411, {	-- Scouting Missive: Pillars of Fate
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122412, {	-- Scouting Missive: Shattrath Harbor
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122408, {	-- Scouting Missive: Skettis
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122416, {	-- Scouting Missive: Socrethar's Rise
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(122405, {	-- Scouting Missive: Stonefury Cliffs
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(133884, {	-- Scouting Missive: The Heart of Shattrath
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(133876, {	-- Scouting Missive: The Pit
-							["cost"] = {{ "c", GARRISON_RESOURCES, 200 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 200 } },
 						}),
 						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
-							["cost"] = {{ "i", 114931, 20 }},	-- 20x Cerulean Pigment
+							["cost"] = { { "i", 114931, 20 } },	-- 20x Cerulean Pigment
 						}),
 						i(244316, {	-- Warsong Workbench (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 300 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
 						}),
 						i(244320, {	-- Youngling's Courser Toys (DECOR!)
-							["sourceQuest"] = 33470,	-- Pool of Visions
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 						}),
 					},
 				}),
@@ -1038,7 +1029,7 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = {
 						i(244324, {	-- Peon's Work Bucket (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = {{ "c", GARRISON_RESOURCES, 150 }},
+							["cost"] = { { "c", GARRISON_RESOURCES, 150 } },
 						}),
 					},
 				}),

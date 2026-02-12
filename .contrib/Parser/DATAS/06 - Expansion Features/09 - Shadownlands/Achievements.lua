@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			-- #if BEFORE 10.0.2
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 			-- #endif
-		},{
+		}, {
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14715,	-- Castle Nathria
@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 		})),
 		ach(20501, bubbleDownSelf({	-- Back from the Beyond
 			["timeline"] = { ADDED_10_2_6 },
-		},{
+		}, {
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14715,	-- Castle Nathria

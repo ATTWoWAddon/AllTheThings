@@ -73,7 +73,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						gt(441, {	-- The Vault
 							n(98100, {	-- Taoshi
 								["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
-								["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
+								["cost"] = { { "i", 94222, 1 } },	-- 1x Key to the Palace of Lei Shen
 								["sym"] = {{"select","questID",32296},{"pop"}},	-- Treasures of the Thunder King
 							}),
 						}),
@@ -1223,7 +1223,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250787, {	-- Replica Crucible of the Uncrowned (DECOR!)
-								["sourceAchievement"] = 42295,	-- Hidden Potential of the Shadowblade
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
@@ -1242,7 +1241,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250788, {	-- Stolen Copy of the Blood Ledger (DECOR!)
-								["sourceAchievement"] = 60970,	-- Legendary Research of the Uncrowned
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
@@ -1259,12 +1257,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(260776, {	-- Uncrowned Market Stall (DECOR!)
-								["sourceAchievement"] = 42279,	-- The Shadowblade's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(250786, {	-- Uncrowned Planning Table (DECOR!)
-								["sourceAchievement"] = 60989,	-- Raise an Army for the Hall of Shadows
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 WORLDSOUL_MEMORY = createHeader({
 	readable = "Worldsoul Memory",
 	icon = 2967107,
@@ -8,6 +9,7 @@ WORLDSOUL_MEMORY = createHeader({
 		en = WOWAPI_GetSpellName(445256),
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
 		["providers"] = {

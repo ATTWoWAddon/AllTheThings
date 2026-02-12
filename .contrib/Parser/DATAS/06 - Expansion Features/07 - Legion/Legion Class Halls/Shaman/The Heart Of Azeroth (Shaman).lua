@@ -883,12 +883,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(140545),	-- Earthen Ring Mace
 							i(140546),	-- Earthen Ring Scepter
 							i(251014, {	-- Earthen Ring Scouting Map (DECOR!)
-								["sourceAchievement"] = 60990,	-- Raise an Army for the Maelstrom
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
 							i(250914, {	-- Elemental Altar of the Maelstrom (DECOR!)
-								["sourceAchievement"] = 42296,	-- Hidden Potential of the Farseer
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
@@ -936,7 +934,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(257403, {	-- Maelstrom Lava Lamp (DECOR!)
-								["sourceAchievement"] = 42280,	-- The Farseer's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
@@ -946,7 +943,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(136934),	-- Raging Elemental Stone (TOY!)
 							i(250915, {	-- Replica Words of Wind and Earth (DECOR!)
-								["sourceAchievement"] = 60971,	-- Legendary Research of the Maelstrom
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),

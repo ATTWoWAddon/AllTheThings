@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
-									["cost"] = {{ "c", GARRISON_RESOURCES, 250 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 								}),
 							},
 						}),
@@ -114,15 +114,15 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
-									["cost"] = {{ "c", GARRISON_RESOURCES, 250 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 								}),
 								i(245437, {	-- Orc-Forged Weaponry (DECOR!)
-									["cost"] = {{ "i", 113681, 75 }},	-- 75x Iron Horde Scraps
+									["cost"] = { { "i", 113681, 75 } },	-- 75x Iron Horde Scraps
 									["timeline"] = { ADDED_11_2_7 },
 								}),
 								i(245442, {	-- Warsong Footrest (DECOR!)
 									["timeline"] = { ADDED_11_2_7 },
-									["cost"] = {{ "c", GARRISON_RESOURCES, 100 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 								}),
 							},
 						}),

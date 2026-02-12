@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
-	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
+	["cost"] = { { "c", ANIMA, 250 } },
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
@@ -932,9 +933,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					}),
 					i(182171, {	-- Hippogryph Soul
 						["sourceQuest"] = 63682,	-- The Power of Elune
-						["cost"] = {
-							{ "c", ANIMA, 250 },
-						},
+						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 				},
 			}),

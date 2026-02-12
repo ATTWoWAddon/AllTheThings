@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
 		["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
@@ -129,7 +130,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/3 Hatchling fed
 							["provider"] = { "i", 79027 },	-- Saltback Meat (QI!)
 							["coord"] = { 66.8, 27.6, THE_JADE_FOREST },
-							["cost"] = {{ "i", 79028, 5 }},	-- Saltback Meat Scrap (QI!)
+							["cost"] = { { "i", 79028, 5 } },	-- 5x Saltback Meat Scrap (QI!)
 							["cr"] = 58218,	-- Saltback Turtle
 						}),
 						i(79028, {	-- Saltback Meat Scrap (QI!)
@@ -746,7 +747,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
-					["cost"] = {{ "i", 89155, 1 }},	-- Onyx Egg
+					["cost"] = { { "i", 89155, 1 } },	-- 1x Onyx Egg
 					["repeatable"] = true,
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(500),
 				}),

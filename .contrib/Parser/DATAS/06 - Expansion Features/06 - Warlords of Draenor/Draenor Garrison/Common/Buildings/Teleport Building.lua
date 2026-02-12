@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures,
 									77367,	-- Archmage Kem (A)
 									79836,	-- Gez'la (H)
 								},
-								["cost"] = {{ "i", 117491, 25 }},	-- 25x Ogre Waystone
+								["cost"] = { { "i", 117491, 25 } },	-- 25x Ogre Waystone
 							}),
 							q(38354, {	-- Portable Portals
 								["qg"] = 77367,	-- Archmage Kem

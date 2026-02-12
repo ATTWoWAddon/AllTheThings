@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local SHRIEKERS_VOICEBOX = i(180713);
 local DREDBATSKIN_JERKIN = i(183720);

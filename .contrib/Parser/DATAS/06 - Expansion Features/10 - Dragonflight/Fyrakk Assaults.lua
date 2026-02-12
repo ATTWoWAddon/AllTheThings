@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 FYRAKK_ASSAULTS = createHeader({
 	readable = "Fyrakk Assaults",
 	icon = 4914672,
@@ -18,6 +19,7 @@ FYRAKK_ASSAULTS = createHeader({
 		tw = "菲拉卡的突襲",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon

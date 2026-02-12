@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 GRAND_HUNTS = createHeader({
 	readable = "Grand Hunts",
 	icon = 4622465,
@@ -18,6 +19,7 @@ GRAND_HUNTS = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 5 } }, {

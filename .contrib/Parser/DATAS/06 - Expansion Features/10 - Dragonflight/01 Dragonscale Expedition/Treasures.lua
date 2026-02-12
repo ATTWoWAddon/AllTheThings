@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(TREASURES, {
@@ -64,7 +65,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			o_repeated({	-- Disturbed Dirt (all 5 of them)
-				["cost"] = {{"i",191304,1}},	-- Sturdy Expedition Shovel
+				["cost"] = { { "i", 191304, 1 } },	-- Sturdy Expedition Shovel
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["sym"] = {{"select","itemID",
 					199061,	-- A Guide to Rare Fish

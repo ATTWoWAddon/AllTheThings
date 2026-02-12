@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		n(RENOWN, {
@@ -29,7 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200071, 1 }},	-- 1x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200071, 1 } },	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(70927, {	-- More Stolen Totems
@@ -37,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200071, 5 }},	-- 5x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200071, 5 } },	-- 5x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					------ BoA Sacred Tuskarr Totem ------
@@ -46,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200449, 1 }},	-- 1x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200449, 1 } },	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(71041, {	-- More Stolen Totems
@@ -54,7 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-						["cost"] = {{ "i", 200449, 5 }},	-- 5x Sacred Tuskarr Totem
+						["cost"] = { { "i", 200449, 5 } },	-- 5x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 				}, {	-- RENOWN 3 --

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_LOREWALKERS, {
 		["description"] = "The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",
@@ -281,7 +282,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 83.4, 30.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["groups"] = {
 						i(104198, {	-- Mantid Artifact Hunter's Kit
-							["cost"] = { { "i", 87399, 2 }, },	-- 2x Restored Artifact
+							["cost"] = { { "i", 87399, 2 } },	-- 2x Restored Artifact
 						}),
 					},
 				}),
@@ -325,7 +326,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(87549),	-- Lorewalkers Map
 							i(89795),	-- Lorewalkers Tabard
 							i(104198, {	-- Mantid Artifact Hunter's Kit
-								["cost"] = { { "i", 87399, 2 }, },	-- 2x Restored Artifact
+								["cost"] = { { "i", 87399, 2 } },	-- 2x Restored Artifact
 							}),
 						},
 					}),

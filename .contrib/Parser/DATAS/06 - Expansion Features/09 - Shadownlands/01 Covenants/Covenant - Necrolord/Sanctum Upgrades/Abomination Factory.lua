@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local ATTICUS_GROUP = {
 	i(175757),	-- Construct Supply Key
 	i(180276),	-- Locked Toolbox Key
@@ -194,228 +195,224 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							ach(14833, {	-- Fashion Abomination
 								crit(50541, {	-- Chef Hat
 									["cost"] = {
-										{ "i", 184039,  1 },	-- 1 Clean White Hat
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 184039,  1 },	-- 1x Clean White Hat
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(49864, {	-- Dapper Top Hat
 									["cost"] = {
-										{ "i", 181799,  1 },	-- 1 Extra Large Hat
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 181799,  1 },	-- 1x Extra Large Hat
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(50546, {	-- Dundae's Hat
 									["cost"] = {
-										{ "i", 184036,  1 },	-- 1 Dundae's Hat
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 184036,  1 },	-- 1x Dundae's Hat
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(50550, {	-- Egg Hat
 									["cost"] = {
-										{ "i", 184040, 1 },	-- 1 Broken Egg Shells
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 184040, 1 },	-- 1x Broken Egg Shells
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49865, {	-- Flower Crown
 									["cost"] = {
-										{ "i", 183755, 1 },	-- 1 Ardenweald Wreath
-										{ "i", 170554, 5 },	-- 5 Vigil's Torch
+										{ "i", 183755, 1 },	-- 1x Ardenweald Wreath
+										{ "i", 170554, 5 },	-- 5x Vigil's Torch
 									},
 								}),
 								crit(49866, {	-- Halo of Purity
 									["cost"] = {
-										{ "i", 183756, 1 },	-- 1 Floating Circlet
-										{ "i", 173110, 3 },	-- 3 Umbryl
+										{ "i", 183756, 1 },	-- 1x Floating Circlet
+										{ "i", 173110, 3 },	-- 3x Umbryl
 									},
 								}),
 								crit(49867, {	-- Holiday Hat
 									["cost"] = {
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
-										{ "i", 2604, 1 },	-- 1 Red Dye
-										{ "i", 8343, 3 },	-- 3 Heavy Silken Thread
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
+										{ "i", 2604, 1 },	-- 1x Red Dye
+										{ "i", 8343, 3 },	-- 3x Heavy Silken Thread
 									},
 								}),
 								crit(49916, {	-- Magician's Hat
 									["cost"] = {
-										{ "i", 183826,  1 },	-- 1 Big Floppy Hat
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 183826,  1 },	-- 1x Big Floppy Hat
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(50549, {	-- Pirate Hat
 									["cost"] = {
-										{ "i", 184204,  1 },	-- 1 Otherworld Hat
-										{ "i", 173202, 20 },	-- 20 Shrouded Cloth
+										{ "i", 184204,  1 },	-- 1x Otherworld Hat
+										{ "i", 173202, 20 },	-- 20x Shrouded Cloth
 									},
 								}),
 								crit(49868, {	-- Red Eye Lens
 									["cost"] = {
-										{ "i", 183760, 1 },	-- 1 Venthyr Spectacles
-										{ "i", 180733, 5 },	-- 5 Luminous Flux
-										{ "i", 172934, 5 },	-- 5 Handful of Laestrite Bolts
+										{ "i", 183760, 1 },	-- 1x Venthyr Spectacles
+										{ "i", 180733, 5 },	-- 5x Luminous Flux
+										{ "i", 172934, 5 },	-- 5x Handful of Laestrite Bolts
 									},
 								}),
 								crit(50551, {	-- Skull Fungus
 									["cost"] = {
-										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 184203, 1 },	-- 1x Fungal Hair Tonic
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49869, {	-- Skull Protector
 									["cost"] = {
-										{ "i", 183759, 1 },	-- 1 Unusually Large Cranium
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183759, 1 },	-- 1x Unusually Large Cranium
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(50553, {	-- Unworthy Crown
 									["cost"] = {
-										{ "i", 184205, 1 },	-- 1 Long-Lost Crown
-										{ "i", 171840, 5 },	-- 5 Porous Stone
+										{ "i", 184205, 1 },	-- 1x Long-Lost Crown
+										{ "i", 171840, 5 },	-- 5x Porous Stone
 									},
 								}),
 								crit(49871, {	-- Happiness Bird
 									["cost"] = {
-										{ "i", 183786, 1 },	-- 1 Happiness Bird
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183786, 1 },	-- 1x Happiness Bird
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49926, {	-- Hitchhiker
 									["cost"] = {
-										{ "i", 184225, 1 },	-- 1 Small Posable Skeleton
-										{ "i", 178061, 5 },	-- 5 Malleable Flesh
+										{ "i", 184225, 1 },	-- 1x Small Posable Skeleton
+										{ "i", 178061, 5 },	-- 5x Malleable Flesh
 									},
 								}),
 								crit(50554, {	-- Lovely Candle Display
-									["cost"] = {
-										{ "i", 184037, 1 },	-- 1 Maldraxxus Candles
-									},
+									["cost"] = { { "i", 184037, 1 } },	-- 1x Maldraxxus Candles
 								}),
 								crit(50556, {	-- Shoulder Sprouts
 									["cost"] = {
-										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 184203, 1 },	-- 1x Fungal Hair Tonic
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49918, {	-- Sticky Cat
 									["cost"] = {
-										{ "i", 183829, 1 },	-- 1 Slime Cat
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183829, 1 },	-- 1x Slime Cat
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(50560, {	-- Trained Corpselice
 									["cost"] = {
-										{ "i", 184038, 1 },	-- 1 Trained Corpselice
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 184038, 1 },	-- 1x Trained Corpselice
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49870, {	-- Trustworthy Doll
 									["cost"] = {
-										{ "i", 181798, 1 },	-- 1 Stuffed Construct
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 181798, 1 },	-- 1x Stuffed Construct
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49922, {	-- Armor Plating
 									["cost"] = {
-										{ "i", 183827, 1 },	-- 1 Blacksteel Backplate
-										{ "i", 171840, 5 },	-- 5 Porous Stone
+										{ "i", 183827, 1 },	-- 1x Blacksteel Backplate
+										{ "i", 171840, 5 },	-- 5x Porous Stone
 									},
 								}),
 								crit(50558, {	-- Back Mushrooms
 									["cost"] = {
-										{ "i", 184224, 1 },	-- 1 Dapperling Seeds
-										{ "i", 184203, 1 },	-- 1 Fungal Hair Tonic
-										{ "i", 178061, 5 },	-- 5 Malleable Flesh
+										{ "i", 184224, 1 },	-- 1x Dapperling Seeds
+										{ "i", 184203, 1 },	-- 1x Fungal Hair Tonic
+										{ "i", 178061, 5 },	-- 5x Malleable Flesh
 									},
 								}),
 								crit(49919, {	-- Collector Kash's Pack
 									["cost"] = {
-										{ "i", 183833, 1 },	-- 1 Kash's Bag of Junk
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183833, 1 },	-- 1x Kash's Bag of Junk
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49872, {	-- Engineering Pack
 									["cost"] = {
-										{ "i", 183752,  1 },	-- 1 Empty Nightcap Cask
-										{ "i", 180733, 10 },	-- 10 Luminous Flux
-										{ "i", 172934, 10 },	-- 10 Handful of Laestrite Bolts
+										{ "i", 183752,  1 },	-- 1x Empty Nightcap Cask
+										{ "i", 180733, 10 },	-- 10x Luminous Flux
+										{ "i", 172934, 10 },	-- 10x Handful of Laestrite Bolts
 									},
 								}),
 								crit(49921, {	-- Plague Pack
 									["description"] = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
 									["cost"] = {
-										{ "i", 183744, 5 },	-- 5 Superior Parts
-										{ "i", 184156, 1 },	-- 1xPristine Containment Pack
-										{ "i", 184154, 1 },	-- 1xGrungy Containment Pack
+										{ "i", 183744, 5 },	-- 5x Superior Parts
+										{ "i", 184156, 1 },	-- 1x Pristine Containment Pack
+										{ "i", 184154, 1 },	-- 1x Grungy Containment Pack
 									},
 								}),
 								crit(49920, {	-- Safe Fall Pack
 									["cost"] = {
-										{ "i", 183831,  1 },	-- 1 Safe Fall Kit
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 183831,  1 },	-- 1x Safe Fall Kit
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(49874, {	-- Six-League Pack
 									["cost"] = {
-										{ "i", 183789, 1 },	-- 1 Six-League Pack
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183789, 1 },	-- 1x Six-League Pack
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49875, {	-- Vestigial Wings
 									["cost"] = {
-										{ "i", 183744,  3 },	-- 3 Superior Parts
-										{ "i", 178061, 10 },	-- 10 Malleable Flesh
-										{ "i", 172054, 30 },	-- 30 Raw Seraphic Wing
+										{ "i", 183744,  3 },	-- 3x Superior Parts
+										{ "i", 178061, 10 },	-- 10x Malleable Flesh
+										{ "i", 172054, 30 },	-- 30x Raw Seraphic Wing
 									},
 								}),
 								crit(49925, {	-- Barrel O' Fish
 									["description"] = "Becomes available at max Shadowlands Fishing skill.",
 									["requireSkill"] = FISHING,
 									["cost"] = {
-										{ "i", 173032, 5 },	-- 5 Lost Sole
-										{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
-										{ "i", 173034, 5 },	-- 5 Silvergill Pike
-										{ "i", 173035, 5 },	-- 5 Pocked Bonefish
-										{ "i", 173036, 5 },	-- 5 Spinefin Piranha
+										{ "i", 173032, 5 },	-- 5x Lost Sole
+										{ "i", 173033, 5 },	-- 5x Iridescent Amberjack
+										{ "i", 173034, 5 },	-- 5x Silvergill Pike
+										{ "i", 173035, 5 },	-- 5x Pocked Bonefish
+										{ "i", 173036, 5 },	-- 5x Spinefin Piranha
 									},
 								}),
 								crit(50559, {	-- Underpowered Gravity Pack
 									["description"] = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
 									["cost"] = {
-										{ "i", 169610,  3 },	-- 3 S.P.A.R.E. Crate
-										{ "i", 166970, 10 },	-- 10 Energy Cell
+										{ "i", 169610,  3 },	-- 3x S.P.A.R.E. Crate
+										{ "i", 166970, 10 },	-- 10x Energy Cell
 									},
 								}),
 								crit(49923, {	-- Butterflies
 									["cost"] = {
-										{ "i", 183828, 1 },	-- 1 Friendly Bugs
-										{ "i", 178061, 3 },	-- 3 Malleable Flesh
+										{ "i", 183828, 1 },	-- 1x Friendly Bugs
+										{ "i", 178061, 3 },	-- 3x Malleable Flesh
 									},
 								}),
 								crit(49917, {	-- Spare Weapon
-									["cost"] = {
-										{ "i", 183824, 1 },	-- 1 Cache of Spare Weapons
-									},
+									["cost"] = { { "i", 183824, 1 } },	-- 1x Cache of Spare Weapons
 								}),
 								crit(49924, {	-- Faction Flag
 									["cost"] = {
-										{ "i", 183830,  1 },	-- 1 Do It Yourself Flag Kit
-										{ "i", 173202, 10 },	-- 10 Shrouded Cloth
+										{ "i", 183830,  1 },	-- 1x Do It Yourself Flag Kit
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 									},
 								}),
 								crit(49876, {	-- Operational Instructions
 									["cost"] = {
-										{ "i", 183754, 1 },	-- 1 Stitchflesh's Design Notes
-										{ "i", 175886, 5 },	-- 5 Dark Parchment
+										{ "i", 183754, 1 },	-- 1x Stitchflesh's Design Notes
+										{ "i", 175886, 5 },	-- 5x Dark Parchment
 									},
 								}),
 								crit(49873, {	-- Outlaw Flag
 									["cost"] = {
-										{ "i", 181797,  1 },	-- 1 Strange Cloth
-										{ "i", 173202, 20 },	-- 20 Shrouded Cloth
+										{ "i", 181797,  1 },	-- 1x Strange Cloth
+										{ "i", 173202, 20 },	-- 20x Shrouded Cloth
 									},
 								}),
 							}),
 							ach(14753, {	-- It's a Wrap
-								["cost"] = { { "i", 178594, 100 } },	-- 100 Anima-bound Wraps
+								["cost"] = { { "i", 178594, 100 } },	-- 100x Anima-bound Wraps
 							}),
 							ach(14751, {	-- The Gang's All Here
 								["sym"] = {{ "achievement_criteria" }},
@@ -466,36 +463,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										q(58410, {
 											["name"] = "Construct Body: Atticus",
-											["cost"] = {
-												{ "i", 178061, 10 },	-- 10xMalleable Flesh
-											},
+											["cost"] = { { "i", 178061, 10 } },	-- 10x Malleable Flesh
 										}),
 										q(57597, {
 											["name"] = "Construct Body: Flytrap",
 											["cost"] = {
-												{ "i", 178061, 10 },	-- 10xMalleable Flesh
-												{ "i", 183744, 2 },		-- 2xSuperior Parts
+												{ "i", 178061, 10 },	-- 10x Malleable Flesh
+												{ "i", 183744, 2 },		-- 2x Superior Parts
 											},
 										}),
 										q(57611, {
 											["name"] = "Construct Body: Marz",
 											["cost"] = {
-												{ "i", 178061, 10 },	-- 10xMalleable Flesh
-												{ "i", 183744, 1 },		-- 1xSuperior Parts
+												{ "i", 178061, 10 },	-- 10x Malleable Flesh
+												{ "i", 183744, 1 },		-- 1x Superior Parts
 											},
 										}),
 										q(58415, {
 											["name"] = "Construct Body: Miru",
 											["sourceQuests"] = { 60264 },	-- Soul Survivor
-											["cost"] = {
-												{ "i", 178061, 20 },	-- 20xMalleable Flesh
-											},
+											["cost"] = { { "i", 178061, 20 } },	-- 20x Malleable Flesh
 										}),
 										q(57605, {
 											["name"] = "Construct Body: Roseboil",
 											["cost"] = {
-												{ "i", 178061, 10 },	-- 10xMalleable Flesh
-												{ "i", 183744, 1 },		-- 1xSuperior Parts
+												{ "i", 178061, 10 },	-- 10x Malleable Flesh
+												{ "i", 183744, 1 },		-- 1x Superior Parts
 											},
 										}),
 									},
@@ -651,9 +644,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
-										["cost"] = {
-											{ "i", 178061, 1 },	-- 1xMalleable Flesh
-										},
+										["cost"] = { { "i", 178061, 1 } },	-- 1x Malleable Flesh
 										["_drop"] = { "g" },
 										["groups"] = {
 											i(183743),	-- Malleable Flesh (QI!)
@@ -893,40 +884,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										i(181268, {	-- Backbone (PET!)
 											["cost"] = {
-												{ "i", 178061, 5 },		-- 5xMalleable Flesh
-												{ "i", 172092, 1 },		-- 1xPallid Bone
+												{ "i", 178061, 5 },		-- 5x Malleable Flesh
+												{ "i", 172092, 1 },		-- 1x Pallid Bone
 												{ "c", ANIMA, 750 },
 											},
 										}),
 										q(57604, {
 											["name"] = "Construct Body: Neena",
 											["sourceQuests"] = { 59615 },	-- Every Dog Has Its Day
-											["cost"] = {
-												{ "i", 178061, 20 },	-- 20xMalleable Flesh
-											},
+											["cost"] = { { "i", 178061, 20 } },	-- 20x Malleable Flesh
 										}),
 										q(57601, {
 											["name"] = "Construct Body: Professor",
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
-												{ "i", 178061, 15 },	-- 15xMalleable Flesh
-												{ "i", 183744, 3 },		-- 3xSuperior Parts
+												{ "i", 178061, 15 },	-- 15x Malleable Flesh
+												{ "i", 183744, 3 },		-- 3x Superior Parts
 											},
 										}),
 										q(57600, {
 											["name"] = "Construct Body: Sabrina",
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
-												{ "i", 178061, 15 },	-- 15xMalleable Flesh
-												{ "i", 183744, 4 },		-- 4xSuperior Parts
+												{ "i", 178061, 15 },	-- 15x Malleable Flesh
+												{ "i", 183744, 4 },		-- 4x Superior Parts
 											},
 										}),
 										q(58414, {
 											["name"] = "Construct Body: Toothpick",
 											["sourceQuests"] = { 60230 },	-- More the Merrier
 											["cost"] = {
-												{ "i", 178061, 15 },	-- 15xMalleable Flesh
-												{ "i", 183744, 4 },		-- 4xSuperior Parts
+												{ "i", 178061, 15 },	-- 15x Malleable Flesh
+												{ "i", 183744, 4 },		-- 4x Superior Parts
 											},
 										}),
 									},
@@ -1001,7 +990,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available. The key will only drop if you have tier 2 or higher Abomination Table.",
 										["provider"] = { "n", 162151 },	-- Neena
 										["coord"] = { 69.3, 40.6, MALDRAXXUS },
-										["cost"] = { { "i", 184354, 1 } },	-- 1 Soul Harvester Key (for opening Neena's Cage)
+										["cost"] = { { "i", 184354, 1 } },	-- 1x Soul Harvester Key (for opening Neena's Cage)
 									}),
 									q(62194, {	-- Fighting Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
@@ -1148,28 +1137,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["name"] = "Construct Body: Gas Bag",
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
-												{ "i", 178061, 20 },	-- 20xMalleable Flesh
-												{ "i", 183744, 5 },		-- 5xSuperior Parts
+												{ "i", 178061, 20 },	-- 20x Malleable Flesh
+												{ "i", 183744, 5 },		-- 5x Superior Parts
 											},
 										}),
 										q(58416, {
 											["name"] = "Construct Body: Guillotine",
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
-												{ "i", 178061, 20 },	-- 20xMalleable Flesh
-												{ "i", 183744, 7 },		-- 7xSuperior Parts
+												{ "i", 178061, 20 },	-- 20x Malleable Flesh
+												{ "i", 183744, 7 },		-- 7x Superior Parts
 											},
 										}),
 										q(60216, {
 											["name"] = "Construct Body: Mama Tomalin",
 											["sourceQuests"] = { 61635 },	-- Troubled Souls
 											["cost"] = {
-												{ "i", 178061, 10 },	-- 10xMalleable Flesh
-												{ "i", 183744, 1 },		-- 1xSuperior Parts
-												{ "i", 172052, 5 },		-- 5xAethereal Meat
-												{ "i", 172053, 5 },		-- 5xTenebrous Ribs
-												{ "i", 172055, 5 },		-- 5xPhantasmal Haunch
-												{ "i", 179315, 5 },		-- 5xShadowy Shank
+												{ "i", 178061, 10 },	-- 10x Malleable Flesh
+												{ "i", 183744, 1 },		-- 1x Superior Parts
+												{ "i", 172052, 5 },		-- 5x Aethereal Meat
+												{ "i", 172053, 5 },		-- 5x Tenebrous Ribs
+												{ "i", 172055, 5 },		-- 5x Phantasmal Haunch
+												{ "i", 179315, 5 },		-- 5x Shadowy Shank
 											},
 										}),
 									},
@@ -1328,9 +1317,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["groups"] = {
 										i(181282, {	-- Mu'dud (PET!)
 											["cost"] = {
-												{ "i", 178061, 10 },	-- Malleable Flesh
-												{ "i", 183744, 5 },		-- Superior Parts
-												{ "c", ANIMA, 1250 },	-- 1250 Reservoir Anima
+												{ "i", 178061, 10 },	-- 10x Malleable Flesh
+												{ "i", 183744, 5 },		-- 5x Superior Parts
+												{ "c", ANIMA, 1250 },
 											},
 										}),
 										q(58411, {
@@ -1455,7 +1444,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["sourceQuests"] = { 61638 },	-- Iron Solution
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
-										["cost"] = { { "i", 183717, 1 }, },	-- 1x Bindings of Wellbeing
+										["cost"] = { { "i", 183717, 1 } },	-- 1x Bindings of Wellbeing
 										["groups"] = {
 											header(HEADERS.Quest, 61637, {	-- Triggered after recruiting Unity
 												["questID"] = 58412,

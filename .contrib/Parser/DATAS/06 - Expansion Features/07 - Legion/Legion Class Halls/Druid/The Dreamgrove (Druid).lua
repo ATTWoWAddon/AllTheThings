@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	readable = "Daily Dreamway Event Roll",
 	standalone = true,
@@ -218,7 +219,6 @@ THE_HINTERLANDS_ACTIVATED = createHeader({
 		-- TODO: tw = "",
 	},
 });
-
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
@@ -1277,12 +1277,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(260581, {	-- Brazier of Elune (DECOR!)
-								["sourceAchievement"] = 42272,	-- The Archdruid's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(251013, {	-- Cenarion Arch (DECOR!)
-								["sourceAchievement"] = 60983,	-- Raise an Army for the Dreamgrove
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
@@ -1306,7 +1304,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(140549),	-- Pillar of the Dreamgrove
 							i(250111, {	-- Replica Tome of the Ancients (DECOR!)
-								["sourceAchievement"] = 60964,	-- Legendary Research of the Dreamgrove
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
@@ -1321,7 +1318,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(250134, {	-- Seed of Ages Cutting (DECOR!)
-								["sourceAchievement"] = 42289,	-- Hidden Potential of the Archdruid
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),

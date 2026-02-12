@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		n(ACHIEVEMENTS, {
@@ -15,8 +16,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 			ach(14795),	-- Clearing the Fog
 			ach(14773),	-- Explosive Extermination
 			ach(14778, sharedData({	-- Extremely Ravenous
-				["cost"] = {{"i",170540,1}},	-- Ravenous Anima Cell
-			},{
+				["cost"] = { { "i", 170540, 1 } },	-- Ravenous Anima Cell
+			}, {
 				crit(49974, {	-- Dark Armaments
 					["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
 					["crs"] = {

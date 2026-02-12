@@ -987,7 +987,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(264242, {	-- Dreadscar Battle Planning Map (DECOR!)
-								["sourceAchievement"] = 60991,	-- Raise an Army for the Dreadscar Rift
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
@@ -996,7 +995,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(248960, {	-- Dreadscar Dais (DECOR!)
-								["sourceAchievement"] = 42281,	-- The Netherlord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
@@ -1024,12 +1022,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(248940, {	-- Replica Felblood Altar (DECOR!)
-								["sourceAchievement"] = 42297,	-- Hidden Potential of the Netherlord
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(256907, {	-- Replica Tome of Blighted Implements (DECOR!)
-								["sourceAchievement"] = 60972,	-- Legendary Research of the Black Harvest
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),

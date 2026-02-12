@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local function GenerateRewardsSymlinkForModID(factionHeader, modID, ...)
 	local sym = {
 		{"select", "headerID", WAR_EFFORT },	-- Find the War Effort Header
@@ -165,6 +166,7 @@ local HORDE_WARFRONT_WEAPONS = {
 	i(163877),	-- Honorbound Warglaive
 	i(166337),	-- Honorbound Warhammer
 }
+
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {

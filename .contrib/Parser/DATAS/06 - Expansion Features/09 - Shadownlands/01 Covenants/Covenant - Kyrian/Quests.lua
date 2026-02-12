@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CONDUIT_GROUP = {
 	-- DK
 	i(182113),	-- Fleeting Wind
@@ -47,6 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {

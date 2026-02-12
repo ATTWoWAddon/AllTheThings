@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = 3196264,
@@ -1012,7 +1013,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}, {
 						o(339243, {	-- Infested Strongbox
 							["questID"] = 58137,
-							["cost"] = {{"i",174761,1}},	-- Aqir Relic
+							["cost"] = { { "i", 174761, 1 } },	-- Aqir Relic
 							["coords"] = {
 								{ 36.3, 23.2, NZOTH_ASSAULT_ULDUM },
 							},
@@ -1580,10 +1581,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 55.1, 32.9, NZOTH_ASSAULT_ULDUM },
 						["groups"] = {
 							i(173282, {	-- Token of Death's Glee (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["cost"] = { { "c", 1719, 50 } },	-- 50x Corrupted Memento
 							}),
 							i(174925, {	-- Void Tendril Pet Leash
-								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
+								["cost"] = { { "c", 1719, 1 } },	-- 1x Corrupted Memento
 							}),
 							i(174995, {	-- Void Tendril Pet Leash (TOY!)
 								["cost"] = {
@@ -1595,7 +1596,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								["cost"] = 13300000,	-- 1,330 gold
 							}),
 							i(174904, {	-- Troop Requisition: Ramkahen Lancer (CI!)
-								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+								["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
 								["groups"] = {
 									follower(1186, {	-- Ramkahen Lancer
 										["collectible"] = false,
@@ -1604,7 +1605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								},
 							}),
 							i(174477, {	-- Pygmy Camel (PET!)
-								["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
+								["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 							}),
 							i(174648, {	-- Uldum Accord Tabard
 								["cost"] = 2280000,	-- 228g
@@ -1693,7 +1694,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							{ 70.0, 39.0, NZOTH_ASSAULT_ULDUM },
 							{ 76.0, 68.0, NZOTH_ASSAULT_ULDUM },
 						},
-						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
+						["cost"] = { { "i", 174858, 7 } },	-- Gersahl Greens
 						["isDaily"] = true,
 						["groups"] = {
 							q(58887, {	-- Alpaca It In

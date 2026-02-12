@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local BROKEN_MIRROR_INFO = {
 	readable = "Broken Mirror",
 	icon = 3854020,
@@ -18,6 +19,7 @@ local BROKEN_MIRROR_INFO = {
 		-- TODO: tw = "",
 	},
 };
+
 local function breakAnotherMirror(suffix)
 	local data = {};
 	for key,value in pairs(BROKEN_MIRROR_INFO) do

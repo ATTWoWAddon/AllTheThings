@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 ZANDALARI_INCURSIONS = createHeader({
 	readable = "Zandalari Incursions",
 	icon = 838687,
@@ -31,6 +32,7 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, n(ZANDALARI_INCURSIONS, {
 		["coords"] = {

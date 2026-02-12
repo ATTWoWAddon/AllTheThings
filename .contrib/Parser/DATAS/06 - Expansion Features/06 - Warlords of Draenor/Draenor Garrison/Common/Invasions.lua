@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 GARRISON_INVASIONS = createHeader({
 	readable = "Garrison Invasions",
 	icon = 236351,
@@ -11,6 +12,7 @@ GARRISON_INVASIONS = createHeader({
 		en = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 	},
 });
+
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
@@ -66,7 +68,7 @@ root(ROOTS.ExpansionFeatures,
 				n(BOSSES, {
 					n(90802, {	-- Annihilon
 						["description"] = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
-						["cost"] = {{ "i", 122475, 1 }},	-- 1x Void Prison
+						["cost"] = { { "i", 122475, 1 } },	-- 1x Void Prison
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container
@@ -74,7 +76,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(90841, {	-- Commander Dro'gan
 						["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
-						["cost"] = {{ "i", 122472, 1 }},	-- 1x Bloodied Iron Horde Banner
+						["cost"] = { { "i", 122472, 1 } },	-- 1x Bloodied Iron Horde Banner
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container
@@ -82,7 +84,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(90943, {	-- Gaur
 						["description"] = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",
-						["cost"] = {{ "i", 122468, 1 }},	-- 1x Runed Greatstone
+						["cost"] = { { "i", 122468, 1 } },	-- 1x Runed Greatstone
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container
@@ -90,7 +92,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(91012, {	-- Lady Fleshear
 						["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
-						["cost"] = {{ "i", 122473, 1 }},	-- 1x Legion Beacon
+						["cost"] = { { "i", 122473, 1 } },	-- 1x Legion Beacon
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container
@@ -98,7 +100,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(90995, {	-- Mage Lord Gogg'nathog
 						["description"] = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",
-						["cost"] = {{ "i", 122474, 1 }},	-- 1x Arcane Highmaul Relic
+						["cost"] = { { "i", 122474, 1 } },	-- 1x Arcane Highmaul Relic
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container
@@ -106,7 +108,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(90946, {	-- Teluur
 						["description"] = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
-						["cost"] = {{ "i", 122466, 1 }},	-- 1x Heart of Oak
+						["cost"] = { { "i", 122466, 1 } },	-- 1x Heart of Oak
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
 							{ "pop" },							-- pop the Item container

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local BARTER_BOULDER = 205188;
 local BARTER_BRICK = 204985;
 local PONZOS_CREAM = 205452;
@@ -13,6 +14,7 @@ local function BarterCost(bricks, boulders)
 		{"i",BARTER_BOULDER,boulders},
 	};
 end
+
 BARTERING = createHeader({
 	readable = "Bartering",
 	icon = 413570,
@@ -30,6 +32,7 @@ BARTERING = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
 		n(BARTERING, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 3 } }, {
@@ -48,9 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}, {
 				q(75286, {	-- Blacksmith's Back
 					["altQuests"] = { 75288, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
-					["cost"] = {
-						{ "i", 191304, 10 },	-- 10x Sturdy Expedition Shovel
-					},
+					["cost"] = { { "i", 191304, 10 } },	-- 10x Sturdy Expedition Shovel
 				}),
 				q(75288, {	-- Enchanted Tales with Topuiz
 					["altQuests"] = { 75286, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
@@ -62,9 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75304, {	-- I Need... a Tailor
 					["altQuests"] = { 75286, 75288, 75289, 75309, 75351, 75301, 75307, 75308 },
-					["cost"] = {
-						{ "i", 193930, 75 },	-- 75x Vibrant Wildercloth Bolt++
-					},
+					["cost"] = { { "i", 193930, 75 } },	-- 75x Vibrant Wildercloth Bolt++
 				}),
 				q(75289, {	-- Ink Master
 					["altQuests"] = { 75286, 75288, 75304, 75309, 75351, 75301, 75307, 75308 },
@@ -83,9 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75351, {	-- Keep a Leather Eye Open
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75301, 75307, 75308 },
-					["cost"] = {
-						{ "i", 193470, 10 },	-- 10x Feral Hide Drums
-					},
+					["cost"] = { { "i", 193470, 10 } },	-- 10x Feral Hide Drums
 				}),
 				q(75301, {	-- Mistie's Mix Magic
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75307, 75308 },
@@ -103,9 +100,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75308, {	-- Scrybbil Engineering
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
-					["cost"] = {
-						{ "i", 198225, 2 },		-- 2x Draconium Fisherfriend
-					},
+					["cost"] = { { "i", 198225, 2 } },		-- 2x Draconium Fisherfriend
 				}),
 			})),
 			n(REWARDS, {
@@ -126,16 +121,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 55.9, 56.8, ZARALEK_CAVERN },
 					["groups"] = {
 						i(204978, {	-- Formula: Enchant Weapon - Spore Tender (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(204977, {	-- Formula: Illusory Adornment: Spores (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204976, {	-- Formula: Spore Keeper's Baton (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205263, {	-- Empowered Flightstone
-							["cost"] = { { "c", 2245, 150 } },
+							["cost"] = { { "c", 2245, 150 } },	-- 150x Flightstones
 						}),
 					},
 				}),
@@ -143,13 +138,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 56.7, 55.3, ZARALEK_CAVERN },
 					["groups"] = {
 						i(205174, {	-- Design: B.B.F. Fist (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205176, {	-- Design: Figurine of the Gathering Storm (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205175, {	-- Design: Statuette of Foreseen Power (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
 				}),
@@ -157,13 +152,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 					["groups"] = {
 						i(204970, {	-- Pattern: Adaptive Dracothyst Armguards (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204974, {	-- Pattern: Lambent Armor Kit (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204969, {	-- Pattern: Spore Colony Shoulderguards (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
 				}),
@@ -171,10 +166,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 					["groups"] = {
 						i(205137, {	-- Plans: Shadowed Alloy (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205143, {	-- Plans: Shadowed Belt Clasp (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204634),	-- Rot Resistant Cauldron
 					},
@@ -183,10 +178,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 56.0, 56.5, ZARALEK_CAVERN },
 					["groups"] = {
 						i(204984, {	-- Recipe: Stinky Bright Potion (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204631, {	-- Recipe: Transmute: Dracothyst (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
 				}),
@@ -202,7 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 58.1, 53.8, ZARALEK_CAVERN },
 					["groups"] = {
 						i(BARTER_BOULDER, {
-							["cost"] = {{"i", BARTER_BRICK, 3 }},
+							["cost"] = { { "i", BARTER_BRICK, 3 } },
 						}),
 						i(PONZOS_CREAM, {
 							["cost"] = BarterCost(25, 10),
@@ -216,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["cost"] = BarterCost(3, 1),
 						}),
 						i(225881, {	-- Big Bag of Barter Boulders
-							["cost"] = {{"i",225798,1}},	-- Intricately Carved Barter Boulder
+							["cost"] = { { "i", 225798, 1 } },	-- Intricately Carved Barter Boulder
 							["timeline"] = {ADDED_11_0_2}
 						}),
 						i(203308, {	-- Winding Slitherdrake: Hairy Brow (MM!)
@@ -326,7 +321,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
 							["description"] = "Hat appears when you click dialog options (for the best price - click it a few times)",
-							["cost"] = { { "i", BARTER_BOULDER, 249 }, },
+							["cost"] = { { "i", BARTER_BOULDER, 249 } },
 						}),
 					},
 				}),
@@ -334,10 +329,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
 					["groups"] = {
 						i(205138, {	-- Pattern: Medical Wrap Kit (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } }
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205139, {	-- Pattern: Reserve Parachute (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } }
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 					}
 				}),
@@ -345,25 +340,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },
 					["groups"] = {
 						i(205136, {	-- Technique: Contract: Loamm Niffen (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205132, {	-- Technique: Glyph of the Chosen Glaive (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205133, {	-- Technique: Glyph of the Heaved Armament (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205135, {	-- Technique: Hissing Rune (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205134, {	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205131, {	-- Technique: Winding Slitherdrake: Small Finned Throat (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205130, {	-- Technique: Winding Slitherdrake: White Hair (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 					},
 				}),
@@ -371,10 +366,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 55.8, 55.9, ZARALEK_CAVERN },
 					["groups"] = {
 						i(205178, {	-- Schematic: Mallard Mortar (RECIPE!)
-							["cost"] = {{"i", VOUCHER, 1}},
+							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204844, {	-- Schematic: Polarity Bomb (RECIPE!)
-							["cost"] = {{"i", PONZOS_CREAM, 1}},
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
 				}),

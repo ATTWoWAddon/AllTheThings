@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		q(70893, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast

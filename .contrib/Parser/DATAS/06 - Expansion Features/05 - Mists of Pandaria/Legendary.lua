@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 LEGENDARY_THE_BLACK_PRINCE = createHeader({
 	readable = "Legendary: The Black Prince",
 	icon = 656543,
@@ -18,6 +19,7 @@ LEGENDARY_THE_BLACK_PRINCE = createHeader({
 		tw = "傳奇：黑龍王子",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 	n(LEGENDARY_THE_BLACK_PRINCE, {
 		["isRaid"] = true,
@@ -167,11 +169,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["sourceQuests"] = { 32373 },	-- The Measure of a Leader (A)
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
-					-- #if ANYCLASSIC
-					["cost"] = { { "c", 396, 1600 }, },	-- 1600 Valor
-					-- #else
-					["cost"] = { { "c", 396, 3000 }, },	-- 3000 Valor
-					-- #endif
+					["cost"] = {
+						-- #if ANYCLASSIC
+						{ "c", 396, 1600 },	-- 1600 Valor
+						-- #else
+						{ "c", 396, 3000 },	-- 3000 Valor
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						ach(8030, {	-- A Test of Valor (A)
@@ -183,11 +187,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["sourceQuests"] = { 32427 },	-- The Measure of a Leader (H)
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
-					-- #if ANYCLASSIC
-					["cost"] = { { "c", 396, 1600 }, },	-- 1600 Valor
-					-- #else
-					["cost"] = { { "c", 396, 3000 }, },	-- 3000 Valor
-					-- #endif
+					["cost"] = {
+						-- #if ANYCLASSIC
+						{ "c", 396, 1600 },	-- 1600 Valor
+						-- #else
+						{ "c", 396, 3000 },	-- 3000 Valor
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						ach(8031, {	-- A Test of Valor (H)
@@ -305,7 +311,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					},
 					["provider"] = { "n", 69782 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
-					["cost"] = { { "i", 72095, 40 }, },	-- 40 Trillium Bar
+					["cost"] = { { "i", 72095, 40 } },	-- 40 Trillium Bar
 				}),
 				q(32593, {	-- The Thunder Forge
 					["sourceQuests"] = {
@@ -419,7 +425,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["sourceQuests"] = { 33088 },	-- A Timeless Discovery
 					["provider"] = { "n", 72695 },	-- Wrathion <The Black Prince>
 					["coord"] = { 34.6, 53.8, TIMELESS_ISLE },
-					["cost"] = { { "c", 777, 5000 }, },	-- 5000 Timeless Coin
+					["cost"] = { { "c", 777, 5000 } },	-- 5000 Timeless Coin
 				}),
 				q(33100, {	-- The Emperor's Way
 					["sourceQuests"] = { 33088 },	-- A Timeless Discovery

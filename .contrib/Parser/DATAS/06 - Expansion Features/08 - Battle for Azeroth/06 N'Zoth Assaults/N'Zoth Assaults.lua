@@ -496,8 +496,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(SPECIAL, {
 				i(175140, {	-- All-Seeing Eyes (TOY!)
 					["cost"] = {
-						{"i",175142,1},	-- All-Seeing Right Eye
-						{"i",175141,1},	-- All-Seeing Left Eye
+						{ "i", 175142, 1 },	-- All-Seeing Right Eye
+						{ "i", 175141, 1 },	-- All-Seeing Left Eye
 					},
 				}),
 			}),

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 	readable = "Great Odyn and the Firelord",
 	icon = 237446,
@@ -205,6 +206,7 @@ VOLUNDS_FOLLY = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
@@ -967,12 +969,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(249458, {	-- Replica Forge of Odyn (DECOR!)
-								["sourceAchievement"] = 60973,	-- Legendary Research of the Valarjar
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2500 } },
 							}),
 							i(257396, {	-- Replica Saga of the Valarjar (DECOR!)
-								["sourceAchievement"] = 60992,	-- Raise an Army for Skyhold
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
@@ -988,7 +988,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(249461, {	-- Skyhold War Table (DECOR!)
-								["sourceAchievement"] = 60992,	-- Raise an Army for Skyhold
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),
@@ -997,7 +996,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(249466, {	-- Valarjar Shield Wall (DECOR!)
-								["sourceAchievement"] = 42282,	-- The Battlelord's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),

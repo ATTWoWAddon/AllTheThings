@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local ADAMANT_SCALES = 193214;
 local AWAKENED_FIRE = 190321;
 local CONTOURED_FOWLFEATHER = 193053;
@@ -12,6 +13,7 @@ local TALLSTRIDER_SINEW = 201404;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
 local WILDERTHREAD = 192096;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(VENDORS, {
@@ -140,21 +142,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 5 --
 						i(198719, {	-- Plans: Sturdy Expedition Shovel (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 15 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 15 } },
 						}),
 						i(191294, {	-- Small Expedition Shover
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 15 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 15 } },
 						}),
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
 						i(198083, {	-- Expedition Supply Kit (CI!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 75 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 75 } },
 						}),
 						i(194102, {	-- Expedition Excavator
 							["cost"] = {
@@ -177,65 +173,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 						i(197369, {	-- Renewed Proto-Drake: Brown Hair (MM!)
-							["cost"] = {
-								{"c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 							["timeline"] = { ADDED_10_1_0 },
 						}),
 						i(197363, {	-- Renewed Proto-Drake: Maned Crest (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197360, {	-- Renewed Proto-Drake: Spined Brow (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197386, {	-- Renewed Proto-Drake: Spiked Jaw (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(199812, {	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-								},
-							}),
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+						}),
 						i(199811, {	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194606, {	-- Design: Energized Malygite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194614, {	-- Design: Keen Neltharite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194605, {	-- Design: Radiant Malygite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194613, {	-- Design: Sensei's Neltharite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(198781, {	-- Schematic: Gravitational Displacer (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(198784, {	-- Schematic: Primal Deconstruction Charge (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 					}, {	-- RENOWN 10 --
 					}, {	-- RENOWN 11 --
@@ -255,40 +227,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 12 --
 						i(198737, {	-- Relic Handler's Gauntlets
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198735, {	-- Relic Handler's Gloves
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198734, {	-- Relic Handler's Gloves
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198736, {	-- Relic Handler's Grips
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 13 --
 						i(194635, {	-- Design: Idol of the Earth Warder (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(194632, {	-- Design: Idol of the Lifebinder (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(198101, {	-- Recipe: Salad on the Side (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 					}, {	-- RENOWN 14 --
 						iensemble(198775, {	-- Ensemble: Renowned Expeditioner's Cloth Armor
@@ -318,64 +276,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 15 --
 						i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197395, {	-- Renewed Proto-Drake: Harrier Pattern (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197402, {	-- Renewed Proto-Drake: Spiked Club Tail (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197374, {	-- Renewed Proto-Drake: Swept Horns (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(194661, {	-- Design: Magnificent Margin Magnifier (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(194294, {	-- Pattern: Explorer's Banner of Herbology (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(194295, {	-- Pattern: Explorer's Banner of Geology (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(194289, {	-- Pattern: Master's Wildercloth Chef's Hat (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(194291, {	-- Pattern: Master's Wildercloth Fishing Cap (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198782, {	-- Schematic: Bottomless Mireslush Ore Satchel (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198783, {	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198901, {	-- Technique: Renewed Proto-Drake Manuscript: Spined Crest (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 25 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 25 } },
 						}),
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
@@ -401,14 +335,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						i(194281, {	-- Pattern: Cold Cushion (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(194268, {	-- Pattern: Dragonscale Expedition's Expedition Tent (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 					}, {	-- RENOWN 18 --
 					}, {	-- RENOWN 19 --
@@ -425,26 +355,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						i(194285, {	-- Pattern: Azureweave Expedition Pack (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(198788, {	-- Technique: Contract: Dragonscale Expedition (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 200 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
 						}),
 					}, {	-- RENOWN 20 --
 						i(198727, {	-- Expedition Explosives
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 15 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 15 } },
 						}),
 					}, {	-- RENOWN 21 --
 						i(198796, {	-- Quack-E Quack Modulator
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 1000 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 1000 } },
 						}),
 						i(200738, {	-- Onyx Gem Cluster Map (CI!)
 							["cost"] = {
@@ -453,19 +375,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 						i(194283, {	-- Pattern: Duck Stuffed Duck Lovie (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(198785, {	-- Schematic: Quack-E (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(198909, {	-- Technique: Illusion Parchment: Magma Missile (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 					}, {	-- RENOWN 22 --
 						i(197010, {	-- Cliffside Wylderdrake: Red Scales (MM!)
@@ -495,24 +411,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 23 --
 						i(198739, {	-- Dragonscale Expedition Breeches
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198740, {	-- Dragonscale Expedition Greaves
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198738, {	-- Dragonscale Expedition Leggings
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(198741, {	-- Dragonscale Expedition Legguards
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 24 --
 					}, {	-- RENOWN 25 --

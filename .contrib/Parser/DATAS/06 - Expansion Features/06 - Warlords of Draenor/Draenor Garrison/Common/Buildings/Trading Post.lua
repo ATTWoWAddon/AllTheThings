@@ -130,22 +130,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							i(245444, {	-- Orcish Communal Stove (DECOR!)
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{"c",GARRISON_RESOURCES,250}},
+								["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
 							}),
 							i(245445, {	-- Frostwolf Axe-Dart Board (DECOR!)
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{"c",GARRISON_RESOURCES,150}},
+								["cost"] = { { "c", GARRISON_RESOURCES, 150 } },
 							}),
 							i(244322, {	-- Frostwolf Banded Stool (DECOR!)
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{"c",GARRISON_RESOURCES,100}},
+								["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 							}),
 							i(244321, {	-- Orcish Lumberjack's Stool (DECOR!)
 								["races"] = HORDE_ONLY,
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = {{"c",GARRISON_RESOURCES,100}},
+								["cost"] = { { "c", GARRISON_RESOURCES, 100 } },
 							}),
 						},
 					}),

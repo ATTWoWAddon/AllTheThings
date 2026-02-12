@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local HARVESTING = createHeader({
 	readable = "Harvesting",
 	icon = 134427,
@@ -21,6 +22,7 @@ local HARVESTING = createHeader({
 		en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {
 		["description"] = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
@@ -178,12 +180,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}),
 					n(66175, {	-- Autumn Blossom Tree
 						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
-						["cost"] = {{ "i", 85267, 1 }},	-- Autumn Blossom Sapling
+						["cost"] = { { "i", 85267, 1 } },	-- 1x Autumn Blossom Sapling
 						["cr"] = 66172,	-- Autumn Blossom Sapling
 					}),
 					n(65916, {	-- Growing Enigma Seed
 						["description"] = "Enigma Seeds will result in a Fool's Cap, Green Tea Leaf, Rain Poppy, Silkweed, Snow Lily or a Golden Lotus being grown in the plot. As with herbing, Golden Lotus will result in only 1 received, while the rest 2-4 will be received. Unlike gathering them in the wild, however, Golden Lotuses harvested from an Enigma Seed will not give the [Luck of the Lotus] buff.",
-						["cost"] = {{ "i", 85216, 1 }},	-- Enigma Seed
+						["cost"] = { { "i", 85216, 1 } },	-- 1x Enigma Seed
 						["groups"] = {
 							i(79011, {	-- Fool's Cap
 								["provider"] = { "o", 209355 },	-- Fool's Cap
@@ -206,7 +208,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					n(65989, {	-- Magebulb
-						["cost"] = {{ "i", 85217, 1 }},	-- Magebulb Seed
+						["cost"] = { { "i", 85217, 1 } },	-- 1x Magebulb Seed
 						["cr"] = 65986,	-- Growing Magebulb
 						["groups"] = {
 							i(74250),	-- Mysterious Essence
@@ -233,7 +235,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						-- #endif
 					})),
 					applyclassicphase(MOP_PHASE_LANDFALL, n(67482, {	-- Portal Shard
-						["cost"] = {{ "i", 91806, 1 }},	-- Unstable Portal Shard
+						["cost"] = { { "i", 91806, 1 } },	-- 1x Unstable Portal Shard
 						["crs"] = { 67446 },	-- Unstable Portal Shard
 						["groups"] = {
 							i(91865, {	-- Darnassus Portal Shard
@@ -263,7 +265,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					})),
 					n(66016, {	-- Raptorleaf
-						["cost"] = {{ "i", 89202, 1 }},	-- Raptorleaf Seed
+						["cost"] = { { "i", 89202, 1 } },	-- 1x Raptorleaf Seed
 						["cr"] = 66013,	-- Growing Raptorleaf
 						["groups"] = {
 							i(72120),	-- Mist-Touched Leather
@@ -271,7 +273,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					n(65973, {	-- Snakeroot
-						["cost"] = {{ "i", 85215, 1 }},	-- Snakeroot Seed
+						["cost"] = { { "i", 85215, 1 } },	-- 1x Snakeroot Seed
 						["cr"] = 65965,	-- Growing Snakeroot
 						["groups"] = {
 							i(72094),	-- Black Trillium Ore
@@ -281,7 +283,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}),
 					n(66043, {	-- Songbell
 						["description"] = "This is the without a doubt the most efficient way to farm motes as a solo player every day. The rest of the seeds are trash in comparison.",
-						["cost"] = {{ "i", 89233, 1 }},	-- Songbell Seed
+						["cost"] = { { "i", 89233, 1 } },	-- 1x Songbell Seed
 						["cr"] = 66040,	-- Growing Songbell
 						["groups"] = {
 							i(89112),	-- Mote of Harmony
@@ -289,11 +291,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}),
 					n(66192, {	-- Spring Blossom Tree
 						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
-						["cost"] = {{ "i", 85268, 1 }},	-- Spring Blossom Sapling
+						["cost"] = { { "i", 85268, 1 } },	-- 1x Spring Blossom Sapling
 						["cr"] = 66189,	-- Spring Blossom Sapling
 					}),
 					n(66006, {	-- Windshear Cactus
-						["cost"] = {{ "i", 89197, 1 }},	-- Windshear Cactus Seed
+						["cost"] = { { "i", 89197, 1 } },	-- 1x Windshear Cactus Seed
 						["cr"] = 66003,	-- Growing Windshear Cactus
 						["groups"] = {
 							i(72988),	-- Windwool Cloth
@@ -301,7 +303,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}),
 					n(66173, {	-- Winter Blossom Tree
 						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
-						["cost"] = {{ "i", 85269, 1 }},	-- Winter Blossom Sapling
+						["cost"] = { { "i", 85269, 1 } },	-- 1x Winter Blossom Sapling
 						["cr"] = 66171,	-- Winter Blossom Sapling
 					}),
 					n(58567, {	-- Ripe Green Cabbage
@@ -310,7 +312,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							60113,	-- Plump Green Cabbage
 							58566,	-- Growing Green Cabbage
 						},
-						["cost"] = {{ "i", 79102, 1 }},	-- Green Cabbage Seeds
+						["cost"] = { { "i", 79102, 1 } },	-- 1x Green Cabbage Seeds
 						["groups"] = {
 							i(74840),	-- Green Cabbage
 						},
@@ -321,7 +323,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							66112,	-- Plump Jade Squash
 							66109,	-- Growing Jade Squash
 						},
-						["cost"] = {{ "i", 89328, 1 }},	-- Jade Squash Seeds
+						["cost"] = { { "i", 89328, 1 } },	-- 1x Jade Squash Seeds
 						["groups"] = {
 							i(74847),	-- Jade Squash
 						},
@@ -332,7 +334,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63156,	-- Plump Juicycrunch Carrot
 							63153,	-- Growing Juicycrunch Carrot
 						},
-						["cost"] = {{ "i", 80590, 1 }},	-- Juicycrunch Carrot Seeds
+						["cost"] = { { "i", 80590, 1 } },	-- 1x Juicycrunch Carrot Seeds
 						["groups"] = {
 							i(74841),	-- Juicycrunch Carrot
 						},
@@ -343,7 +345,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63184,	-- Plump Mogu Pumpkin
 							63181,	-- Growing Mogu Pumpkin
 						},
-						["cost"] = {{ "i", 80592, 1 }},	-- Mogu Pumpkin Seeds
+						["cost"] = { { "i", 80592, 1 } },	-- 1x Mogu Pumpkin Seeds
 						["groups"] = {
 							i(74842),	-- Mogu Pumpkin
 						},
@@ -354,7 +356,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63249,	-- Plump Pink Turnip
 							63246,	-- Growing Pink Turnip
 						},
-						["cost"] = {{ "i", 80594, 1 }},	-- Pink Turnip Seeds
+						["cost"] = { { "i", 80594, 1 } },	-- 1x Pink Turnip Seeds
 						["groups"] = {
 							i(74849),	-- Pink Turnip
 						},
@@ -365,7 +367,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63228,	-- Plump Red Blossom Leek
 							63224,	-- Growing Red Blossom Leek
 						},
-						["cost"] = {{ "i", 80593, 1 }},	-- Red Blossom Leek Seeds
+						["cost"] = { { "i", 80593, 1 } },	-- 1x Red Blossom Leek Seeds
 						["groups"] = {
 							i(74844),	-- Red Blossom Leek
 						},
@@ -376,7 +378,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63164,	-- Plump Scallions
 							63161,	-- Growing Scallions
 						},
-						["cost"] = {{ "i", 80591, 1 }},	-- Scallion Seeds
+						["cost"] = { { "i", 80591, 1 } },	-- 1x Scallion Seeds
 						["groups"] = {
 							i(74843),	-- Scallions
 						},
@@ -387,7 +389,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							66128,	-- Plump Striped Melon
 							66124,	-- Growing Striped Melon
 						},
-						["cost"] = {{ "i", 89329, 1 }},	-- Striped Melon Seeds
+						["cost"] = { { "i", 89329, 1 } },	-- 1x Striped Melon Seeds
 						["groups"] = {
 							i(74848),	-- Striped Melon
 						},
@@ -398,7 +400,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							63264,	-- Plump Ripe White Turnip
 							63261,	-- Growing Ripe White Turnip
 						},
-						["cost"] = {{ "i", 80595, 1 }},	-- White Turnip Seeds
+						["cost"] = { { "i", 80595, 1 } },	-- 1x White Turnip Seeds
 						["groups"] = {
 							i(74850),	-- White Turnip
 						},
@@ -409,7 +411,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							66084,	-- Plump Witchberries
 							66081,	-- Growing Witchberries
 						},
-						["cost"] = {{ "i", 89326, 1 }},	-- Witchberry Seeds
+						["cost"] = { { "i", 89326, 1 } },	-- 1x Witchberry Seeds
 						["groups"] = {
 							i(74846),	-- Witchberries
 						},
@@ -583,7 +585,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 5 },	-- Good Friend
 					["groups"] = {
 						objective(1, {	-- 0/20 Mad Brewer's Breakfast
-							["cost"] = {{ "i", 75038, 20 }},	-- Mad Brewer's Breakfast
+							["cost"] = { { "i", 75038, 20 } },	-- 20x Mad Brewer's Breakfast
 						}),
 					},
 				}),
@@ -606,7 +608,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 4 },	-- Friend
 					["groups"] = {
 						objective(1, {	-- 0/10 Jade Witch Brew
-							["cost"] = {{ "i", 75037, 10 }},	-- Jade Witch Brew
+							["cost"] = { { "i", 75037, 10 } },	-- 10x Jade Witch Brew
 						}),
 					},
 				}),
@@ -685,7 +687,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 79102, 3 }},	-- Green Cabbage Seeds
+							["cost"] = { { "i", 79102, 3 } },	-- 3x Green Cabbage Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/3 Harvest Green Cabbages
@@ -697,7 +699,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(3, {	-- 0/15 Green Cabbage
-							["cost"] = {{ "i", 74840, 15 }},	-- Green Cabbage
+							["cost"] = { { "i", 74840, 15 } },	-- 15x Green Cabbage
 						}),
 					},
 				}),
@@ -811,7 +813,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 89329, 4 }},	-- Striped Melon Seeds
+							["cost"] = { { "i", 89329, 4 } },	-- 4x Striped Melon Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/4 Harvest Striped Melons
@@ -823,7 +825,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(3, {	-- 0/20 Striped Melon
-							["cost"] = {{ "i", 74848, 20 }},	-- Striped Melon
+							["cost"] = { { "i", 74848, 20 } },	-- 20x Striped Melon
 						}),
 					},
 				}),
@@ -949,7 +951,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 80591, 1 }},	-- Scallion Seeds
+							["cost"] = { { "i", 80591, 1 } },	-- 1x Scallion Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/1 Harvest Ripe Scallions
@@ -961,7 +963,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(3, {	-- 0/5 Scallions
-							["cost"] = {{ "i", 74843, 5 }},	-- Scallions
+							["cost"] = { { "i", 74843, 5 } },	-- 5x Scallions
 						}),
 					},
 				}),
@@ -1076,7 +1078,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 80590, 2 }},	-- Juicycrunch Carrot Seeds
+							["cost"] = { { "i", 80590, 2 } },	-- 2x Juicycrunch Carrot Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/2 Harvest Juicycrunch Carrots
@@ -1088,7 +1090,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(3, {	-- 0/10 Juicycrunch Carrot
-							["cost"] = {{ "i", 74841, 10 }},	-- Juicycrunch Carrot
+							["cost"] = { { "i", 74841, 10 } },	-- 10x Juicycrunch Carrot
 						}),
 					},
 				}),
@@ -1120,7 +1122,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 89326, 3 }},	-- Witchberry Seeds
+							["cost"] = { { "i", 89326, 3 } },	-- 3x Witchberry Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/3 Harvest Witchberries
@@ -1132,7 +1134,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(3, {	-- 0/15 Witchberries
-							["cost"] = {{ "i", 74846, 15 }},	-- Witchberries
+							["cost"] = { { "i", 74846, 15 } },	-- 15x Witchberries
 						}),
 					},
 				}),
@@ -1287,7 +1289,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80592, 1 }},	-- Mogu Pumpkin Seeds
+						["cost"] = { { "i", 80592, 1 } },	-- 1x Mogu Pumpkin Seeds
 					}),
 				}),
 				q(31942, {	-- It's Melon Time
@@ -1296,7 +1298,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 89329, 1 }},	-- Striped Melon Seeds
+						["cost"] = { { "i", 89329, 1 } },	-- 1x Striped Melon Seeds
 					}),
 				}),
 				q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
@@ -1305,7 +1307,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80593, 1 }},	-- Red Blossom Leek Seeds
+						["cost"] = { { "i", 80593, 1 } },	-- 1x Red Blossom Leek Seeds
 					}),
 				}),
 				q(30337, {	-- Simian Sabotage
@@ -1344,7 +1346,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 89328, 1 }},	-- Jade Squash Seeds
+						["cost"] = { { "i", 89328, 1 } },	-- 1x Jade Squash Seeds
 					}),
 				}),
 				q(30335, {	-- Stalling the Ravage
@@ -1382,7 +1384,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80590, 1 }},	-- Juicycrunch Carrot Seeds
+						["cost"] = { { "i", 80590, 1 } },	-- 1x Juicycrunch Carrot Seeds
 					}),
 				}),
 				q(31669, {	-- The Cabbage Test
@@ -1391,7 +1393,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 79102, 1 }},	-- Green Cabbage Seeds
+						["cost"] = { { "i", 79102, 1 } },	-- 1x Green Cabbage Seeds
 					}),
 				}),
 				q(30336, {	-- The Kunzen Hunter-Chief
@@ -1418,7 +1420,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80594, 1 }},	-- Pink Turnip Seeds
+						["cost"] = { { "i", 80594, 1 } },	-- 1x Pink Turnip Seeds
 					}),
 				}),
 				q(31675, {	-- The White Turnip Treatment
@@ -1427,7 +1429,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80595, 1 }},	-- White Turnip Seeds
+						["cost"] = { { "i", 80595, 1 } },	-- 1x White Turnip Seeds
 					}),
 				}),
 				q(31943, {	-- Which Berries? Witchberries.
@@ -1436,7 +1438,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 89326, 1 }},	-- Witchberry Seeds
+						["cost"] = { { "i", 89326, 1 } },	-- 1x Witchberry Seeds
 					}),
 				}),
 				q(31671, {	-- Why Not Scallions?
@@ -1445,7 +1447,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80591, 1 }},	-- Scallion Seeds
+						["cost"] = { { "i", 80591, 1 } },	-- 1x Scallion Seeds
 					}),
 				}),
 			})),
@@ -1462,7 +1464,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 						{ 34.4, 46.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74647, 5 }},	-- Valley Stir Fry
+					["cost"] = { { "i", 74647, 5 } },	-- 5x Valley Stir Fry
 				}),
 				q(30471, {	-- A Gift For Chee Chee
 					["qg"] = 64464,	-- Andi
@@ -1503,7 +1505,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 						{ 31.6, 58.0, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74651, 5 }},	-- Shrimp Dumplings
+					["cost"] = { { "i", 74651, 5 } },	-- 5x Shrimp Dumplings
 				}),
 				q(30474, {	-- A Gift For Ella
 					["qg"] = 64464,	-- Andi
@@ -1544,7 +1546,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
 						{ 48.2, 33.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74654, 5 }},	-- Wildfowl Roast
+					["cost"] = { { "i", 74654, 5 } },	-- 5x Wildfowl Roast
 				}),
 				q(30475, {	-- A Gift For Fung
 					["qg"] = 64464,	-- Andi
@@ -1553,7 +1555,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/1 Grilled Plainshawk Leg
 							["provider"] = { "i", 80233 },	-- Grilled Plainshawk Leg (QI!)
 							["coord"] = { 53.0, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-							["cost"] = {{ "i", 80232, 1 }},	-- Bloody Plainshawk Leg (QI!)
+							["cost"] = { { "i", 80232, 1 } },	-- 1x Bloody Plainshawk Leg (QI!)
 							["cr"] = 58712,	-- Kol Ironpaw <Master of the Grill>
 						}),
 						i(80232, {	-- Bloody Plainshawk Leg (QI!)
@@ -1582,7 +1584,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 						{ 41.6, 30.0, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74655, 5 }},	-- Twin Fish Platter
+					["cost"] = { { "i", 74655, 5 } },	-- 5x Twin Fish Platter
 				}),
 				q(30473, {	-- A Gift For Fish
 					["qg"] = 64464,	-- Andi
@@ -1618,7 +1620,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}, {
 				q(30390, {	-- A Dish for Gina
 					["description"] = "This quest becomes available when you have the food in your inventory.",
-					["cost"] = {{ "i", 74644, 5 }},	-- Swirling Mist Soup
+					["cost"] = { { "i", 74644, 5 } },	-- 5x Swirling Mist Soup
 				}),
 				q(30479, {	-- A Gift For Gina
 					["qg"] = 64464,	-- Andi
@@ -1673,7 +1675,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 						{ 44.6, 34.0, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74642, 5 }},	-- Charbroiled Tiger Steak
+					["cost"] = { { "i", 74642, 5 } },	-- 5x Charbroiled Tiger Steak
 				}),
 				q(30477, {	-- A Gift For Haohan
 					["qg"] = 64464,	-- Andi
@@ -1702,7 +1704,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}, {
 				q(30439, {	-- A Dish for Jogu
 					["description"] = "This quest becomes available when you have the food in your inventory.",
-					["cost"] = {{ "i", 74643, 5 }},	-- Sauteed Carrots
+					["cost"] = { { "i", 74643, 5 } },	-- 5x Sauteed Carrots
 				}),
 				q(30478, {	-- A Gift For Jogu
 					["qg"] = 64464,	-- Andi
@@ -1712,8 +1714,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "i", 80236 },	-- Apple-Berry Hooch (QI!)
 							["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 							["cost"] = {
-								{ "i", 80234, 8 },	-- Yoon's Apple
-								{ "i", 80235, 50 },	-- Yoon's Craneberry
+								{ "i", 80234, 8 },	-- 8x Yoon's Apple
+								{ "i", 80235, 50 },	-- 50x Yoon's Craneberry
 							},
 							["cr"] = 58717,	-- Bobo Ironpaw <Master of the Brew>
 						}),
@@ -1750,7 +1752,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
 						{ 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74649, 5 }},	-- Braised Turtle
+					["cost"] = { { "i", 74649, 5 } },	-- 5x Braised Turtle
 				}),
 				q(30476, {	-- A Gift For Old Hillpaw
 					["qg"] = 64464,	-- Andi
@@ -1786,7 +1788,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 						{ 29.6, 30.6, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74645, 5 }},	-- Eternal Blossom Fish
+					["cost"] = { { "i", 74645, 5 } },	-- 5x Eternal Blossom Fish
 				}),
 				q(30472, {	-- A Gift For Sho
 					["qg"] = 64464,	-- Andi
@@ -1829,7 +1831,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 						{ 45.0, 33.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
-					["cost"] = {{ "i", 74652, 5 }},	-- Fire Spirit Salmon
+					["cost"] = { { "i", 74652, 5 } },	-- 5x Fire Spirit Salmon
 				}),
 				q(30470, {	-- A Gift For Tina
 					["qg"] = 64464,	-- Andi
@@ -1906,7 +1908,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 80593, 8 }},	-- Red Blossom Leek Seeds
+							["cost"] = { { "i", 80593, 8 } },	-- 8x Red Blossom Leek Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
@@ -1930,7 +1932,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/40 Red Blossom Leek
-							["cost"] = {{ "i", 74844, 40 }},	-- Red Blossom Leek
+							["cost"] = { { "i", 74844, 40 } },	-- 40x Red Blossom Leek
 						}),
 					},
 				}),
@@ -1941,7 +1943,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 80590, 8 }},	-- Juicycrunch Carrot Seeds
+							["cost"] = { { "i", 80590, 8 } },	-- 8x Juicycrunch Carrot Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
@@ -1965,7 +1967,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/40 Juicycrunch Carrot
-							["cost"] = {{ "i", 74841, 40 }},	-- Juicycrunch Carrot
+							["cost"] = { { "i", 74841, 40 } },	-- 40x Juicycrunch Carrot
 						}),
 					},
 				}),
@@ -1975,7 +1977,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80595, 8 }},	-- White Turnip Seeds
+						["cost"] = { { "i", 80595, 8 } },	-- 8x White Turnip Seeds
 					}),
 				}),
 				q(32648, {	-- Work Order: Golden Lotus II
@@ -1996,7 +1998,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/40 White Turnips
-							["cost"] = {{ "i", 74850, 40 }},	-- White Turnip
+							["cost"] = { { "i", 74850, 40 } },	-- 40x White Turnip
 						}),
 					},
 				}),
@@ -2007,7 +2009,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 89326, 8 }},	-- Witchberry Seeds
+							["cost"] = { { "i", 89326, 8 } },	-- 8x Witchberry Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
@@ -2031,7 +2033,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 						objective(2, {	-- 0/40 Witchberries
-							["cost"] = {{ "i", 74846, 40 }},	-- Witchberries
+							["cost"] = { { "i", 74846, 40 } },	-- 40x Witchberries
 						}),
 					},
 				}),
@@ -2041,7 +2043,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 79102, 8 }},	-- Green Cabbage Seeds
+						["cost"] = { { "i", 79102, 8 } },	-- 8x Green Cabbage Seeds
 					}),
 				}),
 				q(32650, {	-- Work Order: Shado-Pan II
@@ -2061,7 +2063,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 						}),
 						objective(2, {	-- 0/40 Green Cabbages
-							["cost"] = {{ "i", 74840, 40 }},	-- Green Cabbage
+							["cost"] = { { "i", 74840, 40 } },	-- 40x Green Cabbage
 						}),
 					},
 				}),
@@ -2072,7 +2074,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["providers"] = {
 								{ "n", 59990 },	-- Tilled Soil
 							},
-							["cost"] = {{ "i", 80591, 8 }},	-- Scallion Seeds
+							["cost"] = { { "i", 80591, 8 } },	-- 8x Scallion Seeds
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
@@ -2095,7 +2097,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 						}),
 						objective(2, {	-- 0/40 Scallions
-							["cost"] = {{ "i", 74843, 40 }},	-- Scallions
+							["cost"] = { { "i", 74843, 40 } },	-- 40x Scallions
 						}),
 					},
 				}),
@@ -2106,7 +2108,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 89329, 8 }},	-- Striped Melon Seeds
+						["cost"] = { { "i", 89329, 8 } },	-- 8x Striped Melon Seeds
 					}),
 				}),
 				q(32657, {	-- Work Order: The August Celestials II
@@ -2126,7 +2128,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 						}),
 						objective(2, {	-- 0/40 Striped Melon
-							["cost"] = {{ "i", 74848, 40 }},	-- Striped Melon
+							["cost"] = { { "i", 74848, 40 } },	-- 40x Striped Melon
 						}),
 					},
 				}),
@@ -2136,7 +2138,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							{ "n", 59990 },	-- Tilled Soil
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
-						["cost"] = {{ "i", 80592, 8 }},	-- Mogu Pumpkin Seeds
+						["cost"] = { { "i", 80592, 8 } },	-- 8x Mogu Pumpkin Seeds
 					}),
 				}),
 				q(32659, {	-- Work Order: The Klaxxi II
@@ -2156,7 +2158,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 						}),
 						objective(2, {	-- 0/40 Mogu Pumpkins
-							["cost"] = {{ "i", 74842, 40 }},	-- Mogu Pumpkin
+							["cost"] = { { "i", 74842, 40 } },	-- 40x Mogu Pumpkin
 						}),
 					},
 				}),
@@ -2171,23 +2173,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30400, {	-- A Blue Feather for Chee Chee
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30399, {	-- A Jade Cat for Chee Chee
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30398, {	-- A Lovely Apple for Chee Chee
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30401, {	-- A Marsh Lily for Chee Chee
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30397, {	-- A Ruby Shard for Chee Chee
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2202,26 +2204,26 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30382, {	-- A Blue Feather for Ella
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30381, {	-- A Jade Cat for Ella
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30189, {	-- A Lovely Apple for Ella
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 					["groups"] = {
 						i(79320),	-- Half a Lovely Apple
 					},
 				}),
 				q(30383, {	-- A Marsh Lily for Ella
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30160, {	-- A Ruby Shard for Ella
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2236,23 +2238,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30419, {	-- A Blue Feather for Farmer Fung
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30418, {	-- A Jade Cat for Farmer Fung
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30417, {	-- A Lovely Apple for Farmer Fung
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30420, {	-- A Marsh Lily for Farmer Fung
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30416, {	-- A Ruby Shard for Farmer Fung
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2267,23 +2269,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30425, {	-- A Blue Feather for Fish
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30424, {	-- A Jade Cat for Fish
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30423, {	-- A Lovely Apple for Fish
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30426, {	-- A Marsh Lily for Fish
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30422, {	-- A Ruby Shard for Fish
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2295,23 +2297,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30388, {	-- A Blue Feather for Gina
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30387, {	-- A Jade Cat for Gina
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30380, {	-- A Lovely Apple for Gina
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30389, {	-- A Marsh Lily for Gina
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30379, {	-- A Ruby Shard for Gina
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2326,23 +2328,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30412, {	-- A Blue Feather for Haohan
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30411, {	-- A Jade Cat for Haohan
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30410, {	-- A Lovely Apple for Haohan
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30413, {	-- A Marsh Lily for Haohan
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30409, {	-- A Ruby Shard for Haohan
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 			})),
@@ -2354,23 +2356,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30437, {	-- A Blue Feather for Jogu
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30436, {	-- A Jade Cat for Jogu
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30435, {	-- A Lovely Apple for Jogu
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30438, {	-- A Marsh Lily for Jogu
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30434, {	-- A Ruby Shard for Jogu
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2385,23 +2387,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30394, {	-- A Blue Feather for Old Hillpaw
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30393, {	-- A Jade Cat for Old Hillpaw
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30392, {	-- A Lovely Apple for Old Hillpaw
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30395, {	-- A Marsh Lily for Old Hillpaw
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30391, {	-- A Ruby Shard for Old Hillpaw
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2416,23 +2418,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30406, {	-- A Blue Feather for Sho
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30405, {	-- A Jade Cat for Sho
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30404, {	-- A Lovely Apple for Sho
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 				q(30407, {	-- A Marsh Lily for Sho
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30403, {	-- A Ruby Shard for Sho
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
@@ -2447,23 +2449,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["repeatable"] = true,
 			}, {
 				q(30431, {	-- A Blue Feather for Tina
-					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["cost"] = { { "i", 79265, 1 } },	-- 1x Blue Feather
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30430, {	-- A Jade Cat for Tina
-					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["cost"] = { { "i", 79266, 1 } },	-- 1x Jade Cat
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30429, {	-- A Lovely Apple for Tina
-					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["cost"] = { { "i", 79267, 1 } },	-- 1x Lovely Apple
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30432, {	-- A Marsh Lily for Tina
-					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["cost"] = { { "i", 79268, 1 } },	-- 1x Marsh Lily
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 				q(30428, {	-- A Ruby Shard for Tina
-					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["cost"] = { { "i", 79264, 1 } },	-- 1x Ruby Shard
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
 				}),
 			})),

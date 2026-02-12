@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 SCENARIOS = createHeader({
 	readable = "Scenarios",
 	constant = "SCENARIOS",
@@ -10,6 +11,7 @@ SCENARIOS = createHeader({
 		en = [[~SCENARIOS]],
 	},
 });
+
 -- #if ANYCLASSIC
 local REMOVED_WITH_LANDFALL_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
@@ -30,6 +32,7 @@ local REMOVED_WITH_ESCALATION_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	applyclassicphase(MOP_PHASE_ONE, n(SCENARIOS, {
 		-- #if AFTER 6.0.1

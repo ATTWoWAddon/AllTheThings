@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local ALEXANDROS_GROUP = {
 	i(181300),	-- Gruesome Flayedwing (MOUNT!)
 	i(181325),	-- Marrowfused Dagger
@@ -669,21 +670,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							applyevent(EVENTS.NOBLEGARDEN, q(63721, {	-- Lord Garridan's Egg
 								["qg"] = 165454,	-- Lord Garridan
 								["coord"] = { 38.6, 33.0, 1644 },	-- Ember Court
-								["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
+								["cost"] = { { "i", 185684, 1 } },	-- 1x Lord Garridan's Egg
 							})),
 							applyevent(EVENTS.NOBLEGARDEN, q(63720, {	-- Prince Renethal's Egg
 								["qg"] = 164965,	-- Prince Renathal
-								["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
+								["cost"] = { { "i", 185683, 1 } },	-- 1x Prince Renethal's Egg
 							})),
 							applyevent(EVENTS.NOBLEGARDEN, q(63718, {	-- Theotar's Egg
 								["qg"] = 165196,	-- Theotar <The Mad Duke>
 								["coord"] = { 54.8, 21.0, 1644 },	-- Ember Court
-								["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
+								["cost"] = { { "i", 185681, 1 } },	-- 1x Theotar's Egg
 							})),
 							applyevent(EVENTS.NOBLEGARDEN, q(63719, {	-- Temel's Egg
 								["qg"] = 165149,	-- Temel <The Party Herald>
 								["coord"] = { 41.0, 45.6, 1644 },	-- Ember Court
-								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
+								["cost"] = { { "i", 185682, 1 } },	-- 1x Temel's Egg
 							})),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
@@ -1706,7 +1707,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 182970, 1 } },	-- Burgleclipped Portrait
+									["cost"] = { { "i", 182970, 1 } },	-- 1x Burgleclipped Portrait
 								}),
 								q(62174, {	-- A Proper Cover
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1741,7 +1742,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 182705, 1 } },	-- Vial of Blue Muck Dye
+									["cost"] = { { "i", 182705, 1 } },	-- 1x Vial of Blue Muck Dye
 									["repeatable"] = true,
 								}),
 								q(62181, {	-- Bubbling Red Muck Dye
@@ -1775,7 +1776,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 182704, 1 } },	-- Green Muck Dye
+									["cost"] = { { "i", 182704, 1 } },	-- 1x Green Muck Dye
 									["repeatable"] = true,
 								}),
 								q(61766, {	-- Homegrown Help
@@ -1799,7 +1800,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 182971, 1 } },	-- Fabius's Portrait
+									["cost"] = { { "i", 182971, 1 } },	-- 1x Fabius's Portrait
 								}),
 								q(62208, {	-- Maldraxxi Protocols
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1810,13 +1811,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 183842, 1 } },	-- Sinrunner Pony Reins
+									["cost"] = { { "i", 183842, 1 } },	-- 1x Sinrunner Pony Reins
 								}),
 								q(61762, {	-- Making a Smarter Dredger
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
-									["cost"] = {{ "i", 182298, 1 }},	-- 1x Kaja'Extreme
+									["cost"] = { { "i", 182298, 1 } },	-- 1x Kaja'Extreme
 									["groups"] = {
 										i(184448),	-- Spicy Scorchshrooms (QI!)
 									},
@@ -1825,7 +1826,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 183843, 1 } },	-- Juvenile Dredbat Harness
+									["cost"] = { { "i", 183843, 1 } },	-- 1x Juvenile Dredbat Harness
 								}),
 								q(61851, {	-- Shades of Muck
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
@@ -1836,13 +1837,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 182712, 1 } },	-- Dredger's Short Sleeved Doublet
+									["cost"] = { { "i", 182712, 1 } },	-- 1x Dredger's Short Sleeved Doublet
 								}),
 								q(64509, {	-- Stylish Cover
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 187256, 1 } },	-- Hips' Spare Fedora
+									["cost"] = { { "i", 187256, 1 } },	-- 1x Hips' Spare Fedora
 								}),
 								q(62176, {	-- The Spikey Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1963,7 +1964,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
-											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
+											["cost"] = { { "i", 180760, 1 } },	-- 1x Crown of the Righteous
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
 										}),
@@ -1972,7 +1973,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
-											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
+											["cost"] = { { "i", 180755, 1 } },	-- 1x Fae Revel Masque
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
 										}),
@@ -1981,7 +1982,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
-											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
+											["cost"] = { { "i", 180752, 1 } },	-- 1x Pink Party Hat
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
 										}),
@@ -1990,7 +1991,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											-- initially picked up right after picking up RSVP: Rendle and Cudgelface
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
-											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
+											["cost"] = { { "i", 180751, 1 } },	-- 1x Red Noggin Candle
 											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
 											["repeatable"] = true,
 										}),
@@ -2196,7 +2197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["coord"] = { 28.5, 41.1, REVENDRETH },
 								["groups"] = {
 									i(176850, {	-- Blank Invitation
-										["cost"] = { { "c", 1820, 15 } },
+										["cost"] = { { "c", 1820, 15 } },	-- 15x Infused Ruby
 									}),
 									i(183956, {	-- Invitation: Choofa (EC!)
 										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
@@ -2351,30 +2352,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									i(181522),	-- Staff: Waiters (EC!)
 									i(181523),	-- Staff: Bouncers (EC!)
 									i(182296, {	-- Letter of Note, Premier Party Planner
-										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
+										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 									i(182973, {	-- Leather Dredger Coif
-										["cost"] = { { "c", 1820, 10 } },	-- 10 Infused Ruby
+										["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby
 									}),
 									i(183706, {	-- Mantle of Court Blades
-										["cost"] = { { "c", 1813, 1750 } },	-- 1750 Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(183842, {	-- Sinrunner Pony Reins
-										["cost"] = { { "c", 1820, 55 } },	-- 55 Infused Ruby
+										["cost"] = { { "c", 1820, 55 } },	-- 55x Infused Ruby
 									}),
 									i(183843, {	-- Juvenile Dredbat Harness
-										["cost"] = { { "c", 1820, 70 } },	-- 70 Infused Ruby
+										["cost"] = { { "c", 1820, 70 } },	-- 70x Infused Ruby
 									}),
 									i(183854, {	-- Battie (PET!)
 										["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
-										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
+										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character for personal use, or to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 									i(181443, {	-- The Party Herald's Party hat (EC!)
-										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
+										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 								},

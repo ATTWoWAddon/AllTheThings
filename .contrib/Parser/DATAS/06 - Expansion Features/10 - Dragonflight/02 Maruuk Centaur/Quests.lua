@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(RENOWN, {
@@ -30,21 +31,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200093, 1 }, },	-- 1x Centaur Hunting Trophy
+						["cost"] = { { "i", 200093, 1 } },	-- 1x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 					q(70929, {	-- More Hunting Trophies
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200093, 5 }, },	-- 5x Centaur Hunting Trophy
+						["cost"] = { { "i", 200093, 5 } },	-- 5x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 					q(72868, {	-- More Hunting Trophies
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200093, 20 }, },	-- 20x Centaur Hunting Trophy
+						["cost"] = { { "i", 200093, 20 } },	-- 20x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 					------ BoA Centaur Hunting Trophy ------
@@ -52,21 +53,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200447, 1 }, },	-- 1x Centaur Hunting Trophy
+						["cost"] = { { "i", 200447, 1 } },	-- 1x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 					q(71039, {	-- More Hunting Trophies
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200447, 5 }, },	-- 5x Centaur Hunting Trophy
+						["cost"] = { { "i", 200447, 5 } },	-- 5x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 					q(72869, {	-- More Hunting Trophies
 						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 						["maxReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-						["cost"] = { { "i", 200447, 20 }, },	-- 20x Centaur Hunting Trophy
+						["cost"] = { { "i", 200447, 20 } },	-- 20x Centaur Hunting Trophy
 						["repeatable"] = true,
 					}),
 				}, {	-- RENOWN 3 --

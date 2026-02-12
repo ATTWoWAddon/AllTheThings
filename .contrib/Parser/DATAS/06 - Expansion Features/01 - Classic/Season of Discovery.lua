@@ -15,6 +15,7 @@
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
+
 local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -165,7 +166,6 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 	end
 end]];
 
-
 local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	readable = "Season of Discovery",
 	icon = 134269,
@@ -197,6 +197,7 @@ local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 		tw = "這個賽季起初將會有 25 級的上限，還會帶來全新的 25 級終局內容，包括帶有全新機制的 10 人玩家黑澗深淵副本、全新設計的首領來挑戰玩家的戰術實力，同時還會給予新獎勵。",
 	},
 });
+
 root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
@@ -579,7 +580,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 					["groups"] = {
 						i(217496, {	-- Scroll of the Blade
-							["cost"] = {{ "i", 7714, 1 }},	-- Hypnotic Blade
+							["cost"] = { { "i", 7714, 1 } },	-- Hypnotic Blade
 							["classes"] = { MAGE },
 							["groups"] = {
 								i(217497),	-- Narpas Sword
@@ -2170,7 +2171,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
 				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = {{ "i", 219487, 10 }},	-- Starshell
+				["cost"] = { { "i", 219487, 10 } },	-- Starshell
 				["requireSkill"] = SKINNING,
 				["learnedAt"] = 250,
 				["lvl"] = 53,
@@ -2179,7 +2180,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
 				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = {{ "i", 219486, 10 }},	-- Starsilver Ore
+				["cost"] = { { "i", 219486, 10 } },	-- Starsilver Ore
 				["requireSkill"] = MINING,
 				["learnedAt"] = 250,
 				["lvl"] = 53,
@@ -2188,7 +2189,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
 				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = {{ "i", 219454, 10 }},	-- Star Lotus
+				["cost"] = { { "i", 219454, 10 } },	-- Star Lotus
 				["requireSkill"] = HERBALISM,
 				["learnedAt"] = 250,
 				["lvl"] = 53,
@@ -2483,13 +2484,13 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				},
 				{	-- Friendly
 					i(223648, {	-- Dream Imbued Arrow
-						["cost"] = {{ "i", 10513, 200 }},	-- Mithril Gyro-Shot
+						["cost"] = { { "i", 10513, 200 } },	-- Mithril Gyro-Shot
 					}),
 					i(221362, {	-- Weapon Cleaning Cloth
 						["cost"] = 2250,	-- 22s 50c
 					}),
 					i(212568, {	-- Wolfshead Trophy
-						["cost"] = {{ "i", 8345, 1 }},	-- Wolfshead Helm
+						["cost"] = { { "i", 8345, 1 } },	-- Wolfshead Helm
 					}),
 					i(221481, {	-- Nihilist Epiphany
 						["classes"] = { PRIEST },
@@ -3556,622 +3557,622 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					}),
 					applyclassicphase(SOD_PHASE_SEVEN, i(12844, {	-- Argent Dawn Valor Token
-						["cost"] = { { "i", 236397, 50 }, },	-- Remnants of Valor
+						["cost"] = { { "i", 236397, 50 } },	-- Remnants of Valor
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236869, {	-- Soulfrost Ammo Pouch
-						["cost"] = { { "i", 12844, 10 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236864, {	-- Soulfrost Quiver
-						["cost"] = { { "i", 12844, 10 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236623, {	-- Soul of Animalistic Expertise
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236427, {	-- Soul of Enmity
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236488, {	-- Soul of Echoes
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236469, {	-- Soul of the Abyssal
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236435, {	-- Soul of the Aftershock
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236484, {	-- Soul of the Alpha Tamer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236478, {	-- Soul of the Alternator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236545, {	-- Soul of the Altruist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236565, {	-- Soul of the Ancestors
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236587, {	-- Soul of the Ancestral Warden
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236546, {	-- Soul of the Arbiter
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236515, {	-- Soul of the Arcanist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236500, {	-- Soul of the Archbishop
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236462, {	-- Soul of the Arsonist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236550, {	-- Soul of the Ascendant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236620, {	-- Soul of the Astral Ascendant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236436, {	-- Soul of the Avoidant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236610, {	-- Soul of the Barbaric
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236534, {	-- Soul of the Bastion
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236419, {	-- Soul of the Battle Forecaster
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236482, {	-- Soul of the Beast Tender
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236593, {	-- Soul of the Beast
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236603, {	-- Soul of the Benevolent Seer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236451, {	-- Soul of the Black Belt
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236420, {	-- Soul of the Bloodseeker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236454, {	-- Soul of the Bloodthirsty
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236480, {	-- Soul of the Bounty Hunter
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236440, {	-- Soul of the Butcher
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236495, {	-- Soul of the Celebrant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236461, {	-- Soul of the Chaos Harbinger
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236573, {	-- Soul of the Chieftain
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236512, {	-- Soul of the Chronohealer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236608, {	-- Soul of the Claw
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236621, {	-- Soul of the Cometcaller
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236509, {	-- Soul of the Contemnor
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236525, {	-- Soul of Fiery Convergence
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236588, {	-- Soul of the Corrupt
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236520, {	-- Soul of the Cryomancer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236492, {	-- Soul of the Deadly Striker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236423, {	-- Soul of the Deathbound
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236505, {	-- Soul of the Deathdealer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236457, {	-- Soul of the Decimator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236428, {	-- Soul of the Deflective
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236465, {	-- Soul of the Demonic Exorcist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236464, {	-- Soul of the Demonlord
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236422, {	-- Soul of the Destroyer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236499, {	-- Soul of the Devotee
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236543, {	-- Soul of the Dominus
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236600, {	-- Soul of the Dreamwalker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236446, {	-- Soul of the Efficient
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236584, {	-- Soul of the Elder
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236569, {	-- Soul of the Elemental Seer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236581, {	-- Soul of the Elemental Master
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236522, {	-- Soul of the Elementalist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236585, {	-- Soul of the Elements
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236449, {	-- Soul of the Equilibrist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236516, {	-- Soul of the Eternal Caretaker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236521, {	-- Soul of the Evoker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236552, {	-- Soul of the Excommunicator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236438, {	-- Soul of the Executioner
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236540, {	-- Soul of the Exemplar
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236554, {	-- Soul of the Exile
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236612, {	-- Soul of the Exsanguinator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236496, {	-- Soul of the Faithful
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236602, {	-- Soul of the Feathered Sage
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236452, {	-- Soul of the Fencer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236578, {	-- Soul of the Flamebringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236467, {	-- Soul of the Flamewraith
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236468, {	-- Soul of the Fleshfeaster
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236622, {	-- Soul of the Forest
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236611, {	-- Soul of the Frenetic
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236595, {	-- Soul of the Furious
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236574, {	-- Soul of the Furycharged
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236434, {	-- Soul of the Gladiator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236619, {	-- Soul of the Graceful
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236519, {	-- Soul of Winter's Grasp
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236601, {	-- Soul of the Grove Tender
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236537, {	-- Soul of the Guardian
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236493, {	-- Soul of the Hastened Healer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236477, {	-- Soul of the Hazard Harrier
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236483, {	-- Soul of the Hound Master
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236485, {	-- Soul of the Huntsman
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236528, {	-- Soul of the Igniter
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236605, {	-- Soul of the Illuminator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236430, {	-- Soul of the Incessant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236463, {	-- Soul of the Infernal Shepherd
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236597, {	-- Soul of the Innervator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236541, {	-- Soul of the Inquisitor
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236606, {	-- Soul of Predatory Instincts
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236536, {	-- Soul of the Ironclad
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236549, {	-- Soul of the Judicator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236548, {	-- Soul of the Justicar
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236617, {	-- Soul of the Keepers
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236524, {	-- Soul of the Kindler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236490, {	-- Soul of the Kineticist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236447, {	-- Soul of the Knife Juggler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236594, {	-- Soul of the Lacerator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236586, {	-- Soul of the Lava Sage
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236562, {	-- Soul of the Lavawalker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236489, {	-- Soul of the Lethal Lasher
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236604, {	-- Soul of the Lifeweaver
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236553, {	-- Soul of the Lightbringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236531, {	-- Soul of the Lightwarden
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236513, {	-- Soul of Temporal Longing
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236614, {	-- Soul of the Lunatic
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236561, {	-- Soul of the Maelstrombringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236523, {	-- Soul of the Magical Armorer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236459, {	-- Soul of the Malevolent
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236596, {	-- Soul of the Mangler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236504, {	-- Soul of the Mind Breaker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236474, {	-- Soul of the Misleader
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236616, {	-- Soul of the Night
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236598, {	-- Soul of the Nurturer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236439, {	-- Soul of the Opportunist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236473, {	-- Soul of the Pain Spreader
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236466, {	-- Soul of the Pained
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236538, {	-- Soul of the Peacekeeper
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236501, {	-- Soul of the Penitent
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236526, {	-- Soul of the Perpetual Blaze
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236441, {	-- Soul of the Phantom
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236510, {	-- Soul of the Plaguebringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236450, {	-- Soul of the Poised Brawler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236514, {	-- Soul of the Precognitive
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236475, {	-- Soul of the Preyseeker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236609, {	-- Soul of the Prideful
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236425, {	-- Soul of the Pristine Blocker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236530, {	-- Soul of the Pristine Blocker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236527, {	-- Soul of the Pyromaniac
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236532, {	-- Soul of the Radiant Defender
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236580, {	-- Soul of the Raging Flame
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236535, {	-- Soul of the Reckoner
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236456, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236494, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236539, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236572, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236498, {	-- Soul of the Resonant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236487, {	-- Soul of the Retaliator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236551, {	-- Soul of the Retributor
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236429, {	-- Soul of the Revenger
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236511, {	-- Soul of the Reverberant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236607, {	-- Soul of the Ripper
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236472, {	-- Soul of the Ritualist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236458, {	-- Soul of the Rotbringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236424, {	-- Soul of the Sanguinist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236426, {	-- Soul of the Savage
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236442, {	-- Soul of the Scoundrel
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236547, {	-- Soul of the Sealbearer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236577, {	-- Soul of the Seismic Smasher
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236432, {	-- Soul of the Sentinel
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236497, {	-- Soul of the Serendipitous
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236448, {	-- Soul of the Shadow Master
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236460, {	-- Soul of the Shadowmancer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236476, {	-- Soul of the Sharpshooter
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236557, {	-- Soul of the Shield Master
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236533, {	-- Soul of the Shieldbearer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236444, {	-- Soul of the Shiv Savant
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236559, {	-- Soul of the Shock-Absorber
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236502, {	-- Soul of the Soul Warder
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236433, {	-- Soul of the Southpaw
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236542, {	-- Soul of the Sovereign
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236517, {	-- Soul of the Spellbider
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236506, {	-- Soul of the Spirit Font
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236583, {	-- Soul of the Spirit Guide
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236571, {	-- Soul of the Spirithealer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236560, {	-- Soul of the Spiritual Bulwark
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236566, {	-- Soul of the Spiritweaver
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236445, {	-- Soul of the Stalker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236615, {	-- Soul of the Starcaller
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236575, {	-- Soul of the Stormbreaker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236568, {	-- Soul of the Stormtender
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236491, {	-- Soul of the Strategist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236453, {	-- Soul of the Swashbuckler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236417, {	-- Soul of the Tactician
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236576, {	-- Soul of the Tempest
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236555, {	-- Soul of the Templar
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236592, {	-- Soul of the Territorial
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236613, {	-- Soul of the Thornkeeper
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236443, {	-- Soul of the Thrill Seeker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236431, {	-- Soul of the Thunderbringer
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236421, {	-- Soul of the Titan
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236529, {	-- Soul of the Torcher
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236558, {	-- Soul of the Totemic Protector
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236564, {	-- Soul of the Totemkeeper
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236437, {	-- Soul of the Toxicologist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236479, {	-- Soul of the Toxinologist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236599, {	-- Soul of the Tranquil
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236455, {	-- Soul of the Transfusionist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236582, {	-- Soul of the Tribesman
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236481, {	-- Soul of the Trick Shooter
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236563, {	-- Soul of the True Alpha
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236503, {	-- Soul of the Twilight Walker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236471, {	-- Soul of the Umbral Blade
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236508, {	-- Soul of the Unwavering Defiler
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236544, {	-- Soul of the Vindicator
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236570, {	-- Soul of the Vitalist
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236470, {	-- Soul of the Voidborne
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236579, {	-- Soul of the Volcano
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236418, {	-- Soul of the War Veteran
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236518, {	-- Soul of the Wardshaper
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236567, {	-- Soul of the Waterwalker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236556, {	-- Soul of the Windwalker
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236618, {	-- Soul of the Wrathful
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236507, {	-- Soul of the Zealot
-						["cost"] = { { "i", 12844, 5 }, },	-- Argent Dawn Valor Token
+						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 				},
 			}),

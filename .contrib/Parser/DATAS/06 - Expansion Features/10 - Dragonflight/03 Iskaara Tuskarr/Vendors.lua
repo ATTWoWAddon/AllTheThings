@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local ALIERON_SEAMOTH = 194967;
 local AQUATIC_MAW = 201400;
 local AWAKENED_FROST = 190329;
@@ -19,6 +20,7 @@ local TEMPORAL_DRAGONHEAD = 194969;
 local THOUSANDBITE_PIRANHA = 194966;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		n(VENDORS, {
@@ -190,25 +192,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 7 --
 						i(197101, {	-- Highland Drake: Bushy Brow (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197155, {	-- Highland Drake: Finned Neck (MM!)
 							["timeline"] = { ADDED_10_0_7 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197114, {	-- Highland Drake: Multi-Horned Head (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(197132, {	-- Highland Drake: Spiked Cheek (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
@@ -228,39 +222,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 10 --
 						i(194611, {	-- Design: Energized Ysemerald (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194726, {	-- Design: Kalu'ak Figurine (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194610, {	-- Design: Keen Ysemerald (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194603, {	-- Design: Radiant Alexstraszite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(194602, {	-- Design: Sensei's Alexstraszite (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(199816, {	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 						i(199815, {	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
@@ -279,71 +259,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 13 --
 						i(198894, {	-- Technique: Highland Drake: Black Hair (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 25 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 25 } },
 						}),
 						i(197153, {	-- Highland Drake: Bladed Tail (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197139, {	-- Highland Drake: Large Spotted Pattern (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(197123, {	-- Highland Drake: Thorn Horns (MM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 					}, {	-- RENOWN 14 --
 						i(199885, {	-- Reinforced Fisherman's Vambraces
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199884, {	-- Tuskarr Crafter's Bindings
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199886, {	-- Tuskarr Sharkguard Wristguards
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199887, {	-- Tuskarr Trapper's Bracers
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 15 --
 						i(194634, {	-- Design: Idol of the Dreamer (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(194633, {	-- Design: Idol of the Spell-Weaver (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(193875, {	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(193876, {	-- Pattern: Snowball Makers (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 						i(198102, {	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
 						}),
 					}, {	-- RENOWN 16 --
 						i(199855, {	-- Burgandy Fisherman's Pack
@@ -447,34 +401,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 18 --
 						i(194660, {	-- Design: Fine-Print Trifocals (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(194663, {	-- Design: Resonant Focus (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198465, {	-- Pattern: Expert Skinner's Cap (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198459, {	-- Pattern: Lavish Floral Pack (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198458, {	-- Pattern: Resplendent Cover (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(198461, {	-- Pattern: Shockproof Gloves (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 500 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 					}, {	-- RENOWN 19 --
 						i(197012, {	-- Cliffside Wylderdrake: Blue Scales (MM!)
@@ -506,30 +448,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 21 --
 					}, {	-- RENOWN 22 --
 						i(199889, {	-- Tuskarr Boneplate Pauldrons
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199890, {	-- Tuskarr Crafter's Mantle
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199891, {	-- Tuskarr Sharkguard Shoulderguards
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 						i(199888, {	-- Tuskarr Trapper's Spaulders
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 						}),
 					}, {	-- RENOWN 23 --
 						i(194311, {	-- Pattern: Tuskarr Bean Bag (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(199897, {	-- Blue-Covered Beanbag (TOY!)
 							["cost"] = {
@@ -583,9 +515,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 25 --
 						i(198940, {	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 200 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
 						}),
 						i(198872, {	-- Brown Scouting Ottuk (MOUNT!)
 							["cost"] = {
@@ -704,9 +634,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 29 --
 						i(197981, {	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-							},
+							["cost"] = { { "c", DRAGON_SUPPLIES, 750 } },
 						}),
 						i(198337, {	-- Azure Paw Pack
 							["cost"] = {

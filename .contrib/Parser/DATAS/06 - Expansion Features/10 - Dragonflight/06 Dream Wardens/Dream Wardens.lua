@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CURRENCY_DREAM_INFUSION = 2777;
 DREAM_INFUSION = createHeader({
 	readable = "Dream Infusion",
@@ -19,6 +20,7 @@ DREAM_INFUSION = createHeader({
 		tw = "夢境灌注",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 		faction(FACTION_DREAM_WARDENS, {
@@ -80,47 +82,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				n(211209, {	-- Elianna <Dream Infuser>
 					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 					["groups"] = bubbleDownFiltered({
-						["cost"] = {{"c", CURRENCY_DREAM_INFUSION, 1}},
+						["cost"] = { { "c", CURRENCY_DREAM_INFUSION, 1 } },
 					},FILTERFUNC_itemID,{
 						filter(BATTLE_PETS, {
 							i(210785, {	-- Snorr (PET!)
-								["cost"] = {{ "i", 210776, 1 }},	-- 1x Lesser Dream Infusion
+								["cost"] = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
 							}),
 							i(210553, {	-- Dreamborne Scarab (PET!)
-								["providers"] = {
-									{"n",203292},	-- Endmite
-								},
+								["provider"] = { "n", 203292 },	-- Endmite
 							}),
 							i(210555, {	-- Dreamhoof (PET!)
 								["providers"] = {
-									{"i",210692},	-- Juniper
-									{"n",211288},	-- Leyhart
-									{"i",210691},	-- Spruce
+									{ "i", 210692 },	-- Juniper
+									{ "n", 211288 },	-- Leyhart
+									{ "i", 210691 },	-- Spruce
 								},
 							}),
 							i(210777, {	-- Drowsey (PET!)
-								["providers"] = {
-									{"i",205121},	-- Tricky
-								},
+								["provider"] = { "i", 205121 },	-- Tricky
 							}),
 							i(210567, {	-- Memorie (PET!)
 								["providers"] = {
-									{"n",211177},	-- Fol'ya Pup
-									{"i",210570},	-- Napps
-									{"i",210571},	-- Snoozles
+									{ "n", 211177 },	-- Fol'ya Pup
+									{ "i", 210570 },	-- Napps
+									{ "i", 210571 },	-- Snoozles
 								},
 							}),
 							i(210652, {	-- Somnolet (PET!)
 								["providers"] = {
-									-- {"i",???},	-- Dustie
-									{"n",211182},	-- Sapnibbler
-									{"i",210648},	-- Seedle
+									-- { "i", ??? },	-- Dustie
+									{ "n", 211182 },	-- Sapnibbler
+									{ "i", 210648 },	-- Seedle
 								},
 							}),
 							i(210505, {	-- Reverie (PET!)
-								["providers"] = {
-									{"i",193484},	-- Pilot
-								},
+								["provider"] = { "i", 193484 },	-- Pilot
 							}),
 						}),
 						filter(MOUNTS, {

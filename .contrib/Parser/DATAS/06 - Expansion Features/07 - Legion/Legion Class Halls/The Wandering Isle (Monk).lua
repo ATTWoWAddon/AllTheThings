@@ -915,17 +915,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(136800),	-- Meditation Manual: Zen Flight (CI!)
 							i(248958, {	-- Monastery Gong (DECOR!)
-								["sourceAchievement"] = 42275,	-- The Grandmaster's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(256679, {	-- Replica Chronicle of Ages (DECOR!)
-								["sourceAchievement"] = 60967,	-- Legendary Research of Five Dawns
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
 							i(262619, {	-- Replica Forge of the Roaring Mountain (DECOR!)
-								["sourceAchievement"] = 42292,	-- Hidden Potential of the Grandmaster
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),

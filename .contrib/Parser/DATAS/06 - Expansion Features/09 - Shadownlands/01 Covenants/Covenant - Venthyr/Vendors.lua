@@ -1,9 +1,10 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 local CHRONICLE_OF_LOST_MEMORIES = ChronicleOfLostMemories({["cost"] = { { "c", GRATEFUL, 35 } }})	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
-	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
+	["cost"] = { { "c", ANIMA, 250 } },
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
@@ -981,7 +982,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						-- ["minReputation"] = { },	-- renown 65
 						["description"] = "Requires Renown 65",
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = {{ "c", ANIMA, 1500 }},
+						["cost"] = { { "c", ANIMA, 1500 } },
 					}),
 				},
 			}),

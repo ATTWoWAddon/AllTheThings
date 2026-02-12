@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 ISKAARA_FISHING = createHeader({
 	readable = "Iskaara Fishing",
 	icon = 1911518,
@@ -18,6 +19,7 @@ ISKAARA_FISHING = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		n(ISKAARA_FISHING, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 4 } }, {
@@ -243,22 +245,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}},
 			}, {
 				q(70201, {	-- Catch and Release: Aileron Seamoth
-					["cost"] = {{"i",194967,20}},	-- Aileron Seamoth
+					["cost"] = { { "i", 194967, 20 } },	-- Aileron Seamoth
 				}),
 				q(70202, {	-- Catch and Release: Cerulean Spinefish
-					["cost"] = {{"i",194968,20}},	-- Cerulean Spinefish
+					["cost"] = { { "i", 194968, 20 } },	-- Cerulean Spinefish
 				}),
 				q(70935, {	-- Catch and Release: Islefin Dorado
-					["cost"] = {{"i",194970,20}},	-- Islefin Dorado
+					["cost"] = { { "i", 194970, 20 } },	-- Islefin Dorado
 				}),
 				q(70199, {	-- Catch and Release: Scalebelly Mackerel
-					["cost"] = {{"i",194730,20}},	-- Scalebelly Mackerel
+					["cost"] = { { "i", 194730, 20 } },	-- Scalebelly Mackerel
 				}),
 				q(70203, {	-- Catch and Release: Temporal Dragonhead
-					["cost"] = {{"i",194969,20}},	-- Temporal Dragonhead
+					["cost"] = { { "i", 194969, 20 } },	-- Temporal Dragonhead
 				}),
 				q(70200, {	-- Catch and Release: Thousandbite Piranha
-					["cost"] = {{"i",194966,20}},	-- Thousandbite Piranha
+					["cost"] = { { "i", 194966, 20 } },	-- Thousandbite Piranha
 				}),
 			})),
 			n(QUESTS, sharedData({
@@ -324,27 +326,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					i(199848, {	-- Draconium Net Weights (CI!)
 						-- ["spellID"] = 388252,	-- Draconium Net Weights
-						["cost"] = {
-							{ "i", 200080, 3 },	-- 3x Draconium Nugget
-						},
+						["cost"] = { { "i", 200080, 3 } },	-- 3x Draconium Nugget
 					}),
 					i(199694, {	-- Flying Fish Bone Charm (CI!)
 						-- ["spellID"] = 387827,	-- Flying Fish Bone Charm
-						["cost"] = {
-							{ "i", 200075, 1 },	-- 1x Flying Fish Bones
-						},
+						["cost"] = { { "i", 200075, 1 } },	-- 1x Flying Fish Bones
 					}),
 					i(199850, {	-- Imbu Knot (CI!)
 						-- ["spellID"] = 388254,	-- Imbu Knot
-						["cost"] = {
-							{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
-						},
+						["cost"] = { { "i", 200082, 3 } },	-- 3x Battered Imbu-made Net
 					}),
 					i(199698, {	-- Irontree Harpoon Handle (CI!)
 						-- ["spellID"] = 387836,	-- Irontree Harpoon Handle
-						["cost"] = {
-							{ "i", 200083, 3 },	-- 3x Irontree Branch
-						},
+						["cost"] = { { "i", 200083, 3 } },	-- 3x Irontree Branch
 					}),
 					i(199695, {	-- Iskaaran Fishing Net (CI!)
 						-- ["spellID"] = 387828,	-- Iskaaran Fishing Net
@@ -363,9 +357,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					i(199696, {	-- Iskaaran Ice Axe (CI!)
 						-- ["spellID"] = 387832,	-- Iskaaran Ice Axe
-						["cost"] = {
-							{ "i", 200078, 1 },	-- 1x Pickaxe Blade
-						},
+						["cost"] = { { "i", 200078, 1 } },	-- 1x Pickaxe Blade
 					}),
 					i(199845, {	-- Jagged Serevite Harpoon Head (CI!)
 						-- ["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
@@ -376,9 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					i(199697, {	-- Polished Basalt Bracelet (CI!)
 						-- ["spellID"] = 387833,	-- Polished Basalt Bracelet
-						["cost"] = {
-							{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
-						},
+						["cost"] = { { "i", 200079, 3 } },	-- 3x Sea-Polished Basalt
 					}),
 					i(199641, {	-- Reinforced Irontree Harpoon Handle (CI!)
 						-- ["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
@@ -389,15 +379,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					i(199846, {	-- Seavine Harpoon Rope (CI!)
 						-- ["spellID"] = 388250,	-- Seavine Harpoon Rope
-						["cost"] = {
-							{ "i", 200081, 3 },	-- 3x Strong Seavine
-						},
+						["cost"] = { { "i", 200081, 3 } },	-- 3x Strong Seavine
 					}),
 					i(199844, {	-- Serevite Harpoon Head (CI!)
 						-- ["spellID"] = 387375,	-- Serevite Harpoon Head
-						["cost"] = {
-							{ "i", 200084, 3 },	-- 3x Salinated Serevite
-						},
+						["cost"] = { { "i", 200084, 3 } },	-- 3x Salinated Serevite
 					}),
 				},
 			})),
@@ -408,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["groups"] = {
 					i(200086),	-- Khaz'gorite-Infused Resin
 				},
-			},{
+			}, {
 				n(197411, {	-- Astray Splasher <Lunker>
 					["coords"] = {
 						{ 57.2, 65.6, THALDRASZUS },
@@ -542,7 +528,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(SPECIAL, sharedData({
 				["sharedDescription"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Thresher at that location.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 			},{
 				n(192919, {	-- Gigantic Thresher <Lunker>
 					["coords"] = {

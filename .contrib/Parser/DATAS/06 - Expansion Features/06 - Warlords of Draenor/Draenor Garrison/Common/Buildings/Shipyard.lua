@@ -310,13 +310,13 @@ root(ROOTS.ExpansionFeatures,
 								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["groups"] = sharedData({
-									["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 								}, {
 									i(125787),	-- Bilge Pump
 									i(127882),	-- Blast Furnace
 									i(127884),	-- Felsmoke Launcher
 									i(127895, {	-- Ghostly Spyglass
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(127881),	-- Gyroscopic Internal Stabilizer
 									i(127662),	-- High Intensity Fog Lights
@@ -331,13 +331,13 @@ root(ROOTS.ExpansionFeatures,
 								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = sharedData({
-									["cost"] = {{ "c", GARRISON_RESOURCES, 500 }},
+									["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
 								}, {
 									i(125787),	-- Bilge Pump
 									i(127882),	-- Blast Furnace
 									i(127884),	-- Felsmoke Launcher
 									i(127895, {	-- Ghostly Spyglass
-										["cost"] = {{ "c", GARRISON_RESOURCES, 1000 }},
+										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(127881),	-- Gyroscopic Internal Stabilizer
 									i(127662),	-- High Intensity Fog Lights

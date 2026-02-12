@@ -1062,12 +1062,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(136781),	-- Pet Training Manual: Fetch (CI!)
 							i(136780),	-- Pet Training Manual: Play Dead (CI!)
 							i(250125, {	-- Replica Altar of the Eternal Hunt (DECOR!)
-								["sourceAchievement"] = 42290,	-- Hidden Potential of the Huntmaster
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(250127, {	-- Replica Tales of the Hunt (DECOR!)
-								["sourceAchievement"] = 60965,	-- Legendary Research of the Unseen Path
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),
@@ -1086,12 +1084,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(248011, {	-- Trueshot Skeletal Dragon Head (DECOR!)
-								["sourceAchievement"] = 42273,	-- The Huntmaster's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
 							i(250126, {	-- Unseen Path Archer's Gallery (DECOR!)
-								["sourceAchievement"] = 60984,	-- Raise an Army for the Trueshot Lodge
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 2000 } },
 							}),

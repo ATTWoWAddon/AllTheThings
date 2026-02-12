@@ -976,7 +976,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						n(113935, {	-- Candrael Twinshadow
 							["description"] = "You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",
 							["coord"] = { 28.2, 70.2, SURAMAR },
-							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
+							["cost"] = { { "i", 141409, 1 } },	-- 1x Candrael's Charm
 							["groups"] = {
 								n(111110, {	-- Downfall
 									["description"] = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
@@ -1097,7 +1097,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(249518, {	-- Fel Hammer Scouting Map (DECOR!)
-								["sourceAchievement"] = 60982,	-- Raise an Army for the Fel Hammer
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
@@ -1112,7 +1111,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(249459, {	-- Illidari Glaiverest (DECOR!)
-								["sourceAchievement"] = 42271,	-- The Slayer's Campaign
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
 							}),
@@ -1125,12 +1123,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(249457, {	-- Replica Cursed Forge of the Nathrezim (DECOR!)
-								["sourceAchievement"] = 42288,	-- Hidden Potential of the Slayer
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
 							}),
 							i(249690, {	-- Replica Tome of Fel Secrets (DECOR!)
-								["sourceAchievement"] = 60963,	-- Legendary Research of the Illidari
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
 							}),

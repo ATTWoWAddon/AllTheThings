@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --       E X P A N S I O N   F E A T U R E S   M O D U L E       --
 -------------------------------------------------------------------
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(ACHIEVEMENTS, {
 		-- TODO: Removed in 11.1.7.60799 but I have a hunch it'll be back, they probably noticed it was broken, please don't yeet this file or data just yet please
