@@ -137,6 +137,7 @@ local ABBREVIATIONS = {
 	["The Burning Crusade"] = "BC",
 	["Burning Crusade"] = "BC",
 	["The BC"] = "BC",
+	["The TBC"] = "BC",							-- German locale issue
 	["Wrath of the Lich King"] = "WotLK",
 	["Cataclysm %>"] = "Cata >",
 	["Cataclysm "] = "Cata ",
