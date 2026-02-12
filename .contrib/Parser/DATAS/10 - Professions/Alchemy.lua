@@ -1157,9 +1157,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42788, {	-- Alchemy at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
-				["groups"] = {
-				},
+				i(263997),	-- Midnight Alchemist's Shop Sign (DECOR!)
 			}),
 		}),
 		n(QUESTS, {

@@ -1,13 +1,13 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.MID, {
+root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	i(232875),	-- Spark of Radiance
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	n(DECOR, {
 		o(618517, {	-- Thalassian Lumber
 			i(256963),	-- Thalassian Lumber
 		}),
-	})),
+	}),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(241299),	-- Amani Extract+
@@ -88,9 +88,123 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 			i(241291),	-- Primal Philosopher's Stone
 		}),
 	}),
-	--[[
 	prof(BLACKSMITHING, {
+		n(ARMOR, {
+			i(237921),	-- Blood-Tempered Basinet
+			i(237923),	-- Blood-Tempered Bracers
+			i(237920),	-- Blood-Tempered Bulwark
+			i(237918),	-- Blood-Tempered Chestplate
+			i(237925),	-- Blood-Tempered Gauntlets
+			i(237919),	-- Blood-Tempered Greatbelt
+			i(237917),	-- Blood-Tempered Greaves
+			i(237922),	-- Blood-Tempered Leggings
+			i(237924),	-- Blood-Tempered Pauldrons
+			i(244472),	-- Knight-Commander's Palisade
+			i(244463),	-- Murder Row Fleet Feet
+			i(237834),	-- Spellbreaker's Bracers
+			i(237832),	-- Spellbreaker's Cover
+			i(237830),	-- Spellbreaker's Girdle
+			i(237833),	-- Spellbreaker's Legguards
+			i(237835),	-- Spellbreaker's Mantle
+			i(237828),	-- Spellbreaker's March
+			i(237831),	-- Spellbreaker's Rebuke
+			i(237836),	-- Spellbreaker's Resolve
+			i(237829),	-- Spellbreaker's Shelter
+			i(237908),	-- Thalassian Competitor's Plate Armguards
+			i(237901),	-- Thalassian Competitor's Plate Breastplate
+			i(237903),	-- Thalassian Competitor's Plate Gauntlets
+			i(237905),	-- Thalassian Competitor's Plate Greaves
+			i(237904),	-- Thalassian Competitor's Plate Helm
+			i(237906),	-- Thalassian Competitor's Plate Pauldrons
+			i(237902),	-- Thalassian Competitor's Plate Sabatons
+			i(237907),	-- Thalassian Competitor's Plate Waistguard
+		}),
+		n(DECOR, {
+			i(262451),	-- Gilded Silvermoon Anvil (DECOR!)
+			i(262457),	-- Gilded Silvermoon Hanger (DECOR!)
+			i(262452),	-- Masterwork Crafting Hammer (DECOR!)
+			i(262456),	-- Ornamental Silvermoon Hanger (DECOR!)
+			i(262460),	-- Ren'dorei Anvil (DECOR!)
+			i(238020),	-- Thalassian Master Repair Hammer (DECOR!)
+		}),
+		filter(MISC, {
+			i(237372),	-- Refulgent Razorstone+
+			i(237373),	-- Refulgent Razorstone++
+			i(238209),	-- Refulgent Repair Hammer
+			i(237367),	-- Refulgent Weightstone+
+			i(237369),	-- Refulgent Weightstone++
+			i(237370),	-- Refulgent Whetstone+
+			i(237371),	-- Refulgent Whetstone++
+			i(260232),	-- Thalassian Skeleton Key
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(238018, {["requireSkill"] = BLACKSMITHING}),	-- Sun-Blessed Blacksmith's Hammer
+			i(237952, {["requireSkill"] = BLACKSMITHING}),	-- Sun-Blessed Blacksmith's Toolbox
+			i(246537, {["requireSkill"] = BLACKSMITHING}),	-- Sunforged Blacksmith's Hammer
+			i(259230, {["requireSkill"] = BLACKSMITHING}),	-- Sunforged Blacksmith's Toolbox
+			i(238013, {["requireSkill"] = BLACKSMITHING}),	-- Thalassian Blacksmith's Hammer
+			i(237948, {["requireSkill"] = BLACKSMITHING}),	-- Thalassian Blacksmith's Toolbox
+			i(238014, {["requireSkill"] = HERBALISM}),	-- Sun-Blessed Sickle
+			i(246533, {["requireSkill"] = HERBALISM}),	-- Sunforged Sickle
+			i(238009, {["requireSkill"] = HERBALISM}),	-- Thalassian Sickle
+			i(238017, {["requireSkill"] = LEATHERWORKING}),	-- Sun-Blessed Leatherworker's Knife
+			i(237951, {["requireSkill"] = LEATHERWORKING}),	-- Sun-Blessed Leatherworker's Toolset
+			i(246536, {["requireSkill"] = LEATHERWORKING}),	-- Sunforged Leatherworker's Knife
+			i(259232, {["requireSkill"] = LEATHERWORKING}),	-- Sunforged Leatherworker's Toolset
+			i(238012, {["requireSkill"] = LEATHERWORKING}),	-- Thalassian Leatherworker's Knife
+			i(237947, {["requireSkill"] = LEATHERWORKING}),	-- Thalassian Leatherworker's Toolset
+			i(238015, {["requireSkill"] = MINING}),	-- Sun-Blessed Pickaxe
+			i(246534, {["requireSkill"] = MINING}),	-- Sunforged Pickaxe
+			i(238010, {["requireSkill"] = MINING}),	-- Thalassian Pickaxe
+			i(238016, {["requireSkill"] = SKINNING}),	-- Sun-Blessed Skinning Knife
+			i(246535, {["requireSkill"] = SKINNING}),	-- Sunforged Skinning Knife
+			i(238011, {["requireSkill"] = SKINNING}),	-- Thalassian Skinning Knife
+			i(237950, {["requireSkill"] = TAILORING}),	-- Sun-Blessed Needle Set
+			i(259234, {["requireSkill"] = TAILORING}),	-- Sunforged Needle Set
+			i(237946, {["requireSkill"] = TAILORING}),	-- Thalassian Needle Set
+		}),
+		filter(REAGENTS, {
+			i(238202),	-- Gloaming Alloy+
+			i(238203),	-- Gloaming Alloy++
+			i(238197),	-- Refulgent Copper Ingot+
+			i(238198),	-- Refulgent Copper Ingot++
+			i(238204),	-- Sterling Alloy+
+			i(238205),	-- Sterling Alloy++
+		}),
+		n(WEAPONS, {
+			i(237847),	-- Blood Knight's Impetus
+			i(237848),	-- Blood Knight's Mercy
+			i(237846),	-- Blood Knight's Warblade
+			i(237845),	-- Bloomforged Claw
+			i(237842),	-- Bloomforged Greataxe
+			i(237927),	-- Dawnforged Edge
+			i(237928),	-- Dawnforged Long Blade
+			i(237926),	-- Dawnforged Ritual Knife
+			i(237931),	-- Dawnforged Splitter
+			i(237930),	-- Dawnforged War Mace
+			i(237850),	-- Farstrider's Chopper
+			i(237837),	-- Farstrider's Mercy
+			i(237844),	-- Magister's Cleaver
+			i(237843),	-- Magister's Mana Sword
+			i(237838),	-- Magister's Ritual Knife
+			i(237849),	-- Magister's Valediction
+			i(244679),	-- Murder Row Fishhook
+			i(237932),	-- Primalforged Heavy Axe
+			i(237929),	-- Primalforged Knuckles
+			i(237839),	-- Spellbreaker's Blade
+			i(237841),	-- Spellbreaker's Ultimatum
+			i(237840),	-- Spellbreaker's Warglaive
+			i(237912),	-- Thalassian Competitor's Bulwark
+			i(237915),	-- Thalassian Competitor's Greatsword
+			i(237910),	-- Thalassian Competitor's Knife
+			i(237911),	-- Thalassian Competitor's Maxim
+			i(237909),	-- Thalassian Competitor's Pickaxe
+			i(237914),	-- Thalassian Competitor's Skewer
+			i(237913),	-- Thalassian Competitor's Splitter
+			i(237916),	-- Thalassian Competitor's Sword
+		}),
 	}),
+	--[[
 	prof(COOKING, {
 	}),
 	prof(ENCHANTING, {
@@ -245,7 +359,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		i(238466),	-- Thalassian Phoenix Tail
 		i(236761),	-- Tranquility Bloom+
 		i(236767),	-- Tranquility Bloom++
-		
+
 	}),
 	--[[prof(INSCRIPTION, {
 	}),
@@ -315,10 +429,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, {
 		i(237506),	-- Septarian Nodule
 		i(237362),	-- Umbral Tin Ore+
 		i(237363),	-- Umbral Tin Ore++
+		i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
 	}),
 	--[[prof(SKINNING, {
 	}),
 	prof(TAILORING, {
 	}),
 	--]]
-}));
+})));

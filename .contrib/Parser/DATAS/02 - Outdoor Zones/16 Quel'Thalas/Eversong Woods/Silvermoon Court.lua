@@ -115,6 +115,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
+								i(265528, {	-- Plans: Gilded Silvermoon Anvil (RECIPE!)
+									["cost"] = {
+										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", VOIDLIGHT_MARL, 1500 },
+									},
+								}),
+								i(265532, {	-- Plans: Gilded Silvermoon Hanger (RECIPE!)
+									["cost"] = {
+										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", VOIDLIGHT_MARL, 1500 },
+									},
+								}),
 								i(263444, {	-- Technique: Contract: The Silvermoon Court (RECIPE!)
 									["cost"] = {
 										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },

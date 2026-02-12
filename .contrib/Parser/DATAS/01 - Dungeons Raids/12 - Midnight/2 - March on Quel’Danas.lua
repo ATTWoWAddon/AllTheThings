@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264187),	-- Blessed Phoenix Egg (DECOR!)
 				}),
 				BossOnly(LURA, {
-					i(258519),	-- Plans: Magister's Valediction (RECIPE!)
+					--i(258519),	-- Plans: Magister's Valediction (RECIPE!)
 					i(264492),	-- Chaotic Void Maw (DECOR!)
 				}),
 			}),

@@ -1314,7 +1314,7 @@ i(257753, 1262011);	-- Orcish Felblood Cauldron
 i(256938, 1260985);	-- Wine Barrel
 
 ------------------
--- PATCH 12.0.0 --
+-- PATCH 12.0.1 --
 ------------------
 --- TRAINER ---
 i(0, 471003);		-- Midnight Alchemy

@@ -25,6 +25,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(243359, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 47.0, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
+						i(263997, {	-- Midnight Alchemist's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42788,	-- Alchemy at Midnight
+						}),
 						i(247811),	-- Oil of Heartwood
 						i(240991),	-- Sunglass Vial+
 					},
@@ -135,19 +138,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 			}),
-			--[[
 			prof(BLACKSMITHING, {
-				n(223644, {	-- Darean <Blacksmithing Trainer>
-					["coord"] = { 49.2, 63.6, DORNOGAL },
-					["groups"] = TWW_BLACKSMITHING,
+				n(241450, {	-- Bemarrin <Blacksmithing Trainer>
+					["coord"] = { 43.7, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_BLACKSMITHING,
 				}),
-				n(223643, {	-- Borgos <Blacksmithing Supplies>
-					["coord"] = { 48.8, 62.6, DORNOGAL },
+				n(241451, {	-- Eriden <Blacksmithing Supplies>
+					["coord"] = { 43.6, 51.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(226202),	-- Echoing Flux
+						i(243060),	-- Luminant Flux
+						i(263998, {	-- Midnight Blacksmith's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42792,	-- Blacksmithing at Midnight
+						}),
 					},
 				}),
 			}),
+			--[[
 			prof(COOKING, {
 				n(219104, {	-- Athodas <Cooking Trainer>
 					["coord"] = { 44.2, 45.8, DORNOGAL },

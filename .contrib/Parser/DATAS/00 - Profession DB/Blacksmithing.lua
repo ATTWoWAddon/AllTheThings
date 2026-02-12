@@ -2497,3 +2497,116 @@ i(256940, 1260988);	-- Blackrock Weapon Rack
 i(256939, 1260987);	-- Frostwall Forge
 --- NYI ---
 i(0, 1246473);		-- [DNT] TWW Blacksmithing Decor Template
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471004);		-- Midnight Blacksmithing
+i(0, 1265668);		-- Artisan Blacksmith's Moxie
+i(0, 1229625);		-- Blood-Tempered Basinet
+i(0, 1229623);		-- Blood-Tempered Bracers
+i(0, 1229626);		-- Blood-Tempered Bulwark
+i(0, 1229628);		-- Blood-Tempered Chestplate
+i(0, 1229621);		-- Blood-Tempered Gauntlets
+i(0, 1229627);		-- Blood-Tempered Greatbelt
+i(0, 1229629);		-- Blood-Tempered Greaves
+i(0, 1229624);		-- Blood-Tempered Leggings
+i(0, 1229622);		-- Blood-Tempered Pauldrons
+i(0, 1265676);		-- Concentration
+i(0, 1229619);		-- Dawnforged Edge
+i(0, 1229618);		-- Dawnforged Long Blade
+i(0, 1229620);		-- Dawnforged Ritual Knife
+i(0, 1229615);		-- Dawnforged Splitter
+i(0, 1229616);		-- Dawnforged War Mace
+i(0, 1230762);		-- Gloaming Alloy
+i(0, 1265702);		-- Ingenuity
+i(0, 1265615);		-- Knowledge
+i(0, 1265594);		-- Multicraft
+i(0, 1229614);		-- Primalforged Heavy Axe
+i(0, 1229617);		-- Primalforged Knuckles
+i(0, 1265652);		-- Quality
+i(0, 471041);		-- Recraft Equipment
+i(0, 1230761);		-- Refulgent Copper Ingot
+i(0, 1230760);		-- Refulgent Razorstone
+i(0, 1230764);		-- Refulgent Repair Hammer
+i(0, 1230759);		-- Refulgent Weightstone
+i(0, 1230758);		-- Refulgent Whetstone
+i(0, 1265694);		-- Resourcefulness
+i(0, 1265684);		-- Skill
+i(0, 1265660);		-- Sparks
+i(0, 1230763);		-- Sterling Alloy
+i(0, 1229606);		-- Thalassian Blacksmith's Hammer
+i(0, 1229611);		-- Thalassian Blacksmith's Toolbox
+i(0, 1229607);		-- Thalassian Leatherworker's Knife
+i(0, 1229612);		-- Thalassian Leatherworker's Toolset
+i(0, 1229613);		-- Thalassian Needle Set
+i(0, 1229609);		-- Thalassian Pickaxe
+i(0, 1229610);		-- Thalassian Sickle
+i(0, 1229608);		-- Thalassian Skinning Knife
+--- ITEM ---
+i(258521, 1229653);	-- Blood Knight's Impetus
+i(267281, 1229652);	-- Blood Knight's Mercy
+i(267282, 1229648);	-- Blood Knight's Warblade
+i(267284, 1229649);	-- Bloomforged Claw
+i(258522, 1229655);	-- Bloomforged Greataxe
+i(265528, 1276108);	-- Gilded Silvermoon Anvil
+i(265532, 1276110);	-- Gilded Silvermoon Hanger
+i(258517, 1230767);	-- Knight-Commander's Palisade
+i(267285, 1229654);	-- Magister's Cleaver
+i(267286, 1229651);	-- Magister's Mana Sword
+i(267287, 1229650);	-- Magister's Ritual Knife
+i(258519, 1229647);	-- Magister's Valediction
+i(265536, 1276112);	-- Masterwork Crafting Hammer
+i(258518, 1230768);	-- Murder Row Fishhook
+i(258487, 1230766);	-- Murder Row Fleet Feet
+i(265530, 1276109);	-- Ornamental Silvermoon Hanger
+i(265534, 1276111);	-- Ren'dorei Anvil
+i(259237, 1230769);	-- Sunforged Blacksmith's Hammer
+i(259231, 1264644);	-- Sunforged Blacksmith's Toolbox
+i(259318, 1262899);	-- Sunforged Leatherworker's Knife
+i(259233, 1264645);	-- Sunforged Leatherworker's Toolset
+i(259235, 1264646);	-- Sunforged Needle Set
+i(259319, 1262919);	-- Sunforged Pickaxe
+i(259317, 1264651);	-- Sunforged Sickle
+i(259322, 1262905);	-- Sunforged Skinning Knife
+i(238229, 1229634);	-- Thalassian Competitor's Bulwark
+i(238232, 1229631);	-- Thalassian Competitor's Greatsword
+i(238227, 1229636);	-- Thalassian Competitor's Knife
+i(238228, 1229635);	-- Thalassian Competitor's Maxim
+i(238226, 1229637);	-- Thalassian Competitor's Pickaxe
+i(238225, 1229638);	-- Thalassian Competitor's Plate Armguards
+i(238218, 1229645);	-- Thalassian Competitor's Plate Breastplate
+i(238220, 1229642);	-- Thalassian Competitor's Plate Gauntlets
+i(238222, 1229644);	-- Thalassian Competitor's Plate Greaves
+i(238221, 1229641);	-- Thalassian Competitor's Plate Helm
+i(238223, 1229640);	-- Thalassian Competitor's Plate Pauldrons
+i(238219, 1229643);	-- Thalassian Competitor's Plate Sabatons
+i(238224, 1229639);	-- Thalassian Competitor's Plate Waistguard
+i(238231, 1229632);	-- Thalassian Competitor's Spelldagger [SKEWER NAME DOES NOT MATCH]
+i(238230, 1229633);	-- Thalassian Competitor's Splitter
+i(238233, 1229630);	-- Thalassian Competitor's Sword
+i(260246, 1265906);	-- Thalassian Skeleton Key
+--- SPECIALIZATION ---
+i(0, 1229646);		-- Farstrider's Chopper
+i(0, 1229659);		-- Farstrider's Mercy
+i(0, 1229658);		-- Spellbreaker's Blade
+i(0, 1229662);		-- Spellbreaker's Bracers
+i(0, 1229664);		-- Spellbreaker's Cover
+i(0, 1229666);		-- Spellbreaker's Girdle
+i(0, 1229663);		-- Spellbreaker's Legguards
+i(0, 1229661);		-- Spellbreaker's Mantle
+i(0, 1229668);		-- Spellbreaker's March
+i(0, 1229665);		-- Spellbreaker's Rebuke
+i(0, 1229660);		-- Spellbreaker's Resolve
+i(0, 1229667);		-- Spellbreaker's Shelter
+i(0, 1229656);		-- Spellbreaker's Ultimatum
+i(0, 1229657);		-- Spellbreaker's Warglaive
+i(0, 1229598);		-- Sun-Blessed Blacksmith's Hammer
+i(0, 1229603);		-- Sun-Blessed Blacksmith's Toolbox
+i(0, 1229599);		-- Sun-Blessed Leatherworker's Knife
+i(0, 1229604);		-- Sun-Blessed Leatherworker's Toolset
+i(0, 1229605);		-- Sun-Blessed Needle Set
+i(0, 1229601);		-- Sun-Blessed Pickaxe
+i(0, 1229602);		-- Sun-Blessed Sickle
+i(0, 1229600);		-- Sun-Blessed Skinning Knife

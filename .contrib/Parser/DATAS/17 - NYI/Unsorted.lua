@@ -77,11 +77,11 @@ root(ROOTS.Unsorted, {
 
 			-- Decor
 			i(262450),	-- Ensorcelled Broom
-			i(262451),	-- Gilded Silvermoon Anvil
+
 			i(262454),	-- Shining Sin'dorei Hourglass
 			i(262455),	-- Font of Gleaming Water
-			i(262456),	-- Ornamental Silvermoon Hanger
-			i(262457),	-- Gilded Silvermoon Hanger
+
+
 			i(262468),	-- Ren'dorei Postal Repository
 			i(262469),	-- Brilliant Phoenix Harp
 			i(262470),	-- Spellbound Tome of Thalassian Magics
@@ -203,12 +203,7 @@ root(ROOTS.Unsorted, {
 			i(237018),	-- Arcanoweave
 
 			-- Blacksmithing
-			i(237367),	-- Refulgent Weightstone
-			i(237369),	-- Refulgent Weightstone
-			i(237370),	-- Refulgent Whetstone
-			i(237371),	-- Refulgent Whetstone
-			i(237372),	-- Refulgent Razorstone
-			i(237373),	-- Refulgent Razorstone
+
 
 			-- Minig Knowledge
 			i(237507),	-- Cloudy Quartz
@@ -238,86 +233,23 @@ root(ROOTS.Unsorted, {
 			i(237827),	-- Fallen Vanguard's Memento
 
 			-- Blacksmithing
-			i(237828),	-- Spellbreaker's March
-			i(237829),	-- Spellbreaker's Shelter
-			i(237830),	-- Spellbreaker's Girdle
-			i(237831),	-- Spellbreaker's Rebuke
-			i(237832),	-- Spellbreaker's Cover
-			i(237833),	-- Spellbreaker's Legguards
-			i(237834),	-- Spellbreaker's Bracers
-			i(237835),	-- Spellbreaker's Mantle
-			i(237836),	-- Spellbreaker's Resolve
-			i(237837),	-- Farstrider's Mercy
-			i(237838),	-- Magister's Ritual Knife
-			i(237839),	-- Spellbreaker's Blade
-			i(237840),	-- Spellbreaker's Warglaive
-			i(237841),	-- Spellbreaker's Ultimatum
-			i(237842),	-- Bloomforged Greataxe \\ Blood Knight's Greataxe
-			i(237843),	-- Magister's Mana Sword
-			i(237844),	-- Magister's Cleaver
-			i(237845),	-- Bloomforged Claw \\ Farstrider's Strike
-			i(237846),	-- Blood Knight's Warblade
-			i(237847),	-- Blood Knight's Impetus
-			i(237848),	-- Blood Knight's Mercy
-			i(237849),	-- Magister's Valediction
-			i(237850),	-- Farstrider's Chopper
-			i(237901),	-- Thalassian Competitor's Plate Breastplate
-			i(237902),	-- Thalassian Competitor's Plate Sabatons
-			i(237903),	-- Thalassian Competitor's Plate Gauntlets
-			i(237904),	-- Thalassian Competitor's Plate Helm
-			i(237905),	-- Thalassian Competitor's Plate Greaves
-			i(237906),	-- Thalassian Competitor's Plate Pauldrons
-			i(237907),	-- Thalassian Competitor's Plate Waistguard
-			i(237908),	-- Thalassian Competitor's Plate Armguards
-			i(237909),	-- Thalassian Competitor's Pickaxe
-			i(237910),	-- Thalassian Competitor's Knife
-			i(237911),	-- Thalassian Competitor's Maxim
-			i(237912),	-- Thalassian Competitor's Bulwark
-			i(237913),	-- Thalassian Competitor's Splitter
-			i(237914),	-- Thalassian Competitor's Skewer
-			i(237915),	-- Thalassian Competitor's Greatsword
-			i(237916),	-- Thalassian Competitor's Sword
-			i(237917),	-- Blood-Tempered Greaves
-			i(237918),	-- Blood-Tempered Chestplate
-			i(237919),	-- Blood-Tempered Greatbelt
-			i(237920),	-- Blood-Tempered Bulwark
-			i(237921),	-- Blood-Tempered Basinet
-			i(237922),	-- Blood-Tempered Leggings
-			i(237923),	-- Blood-Tempered Bracers
-			i(237924),	-- Blood-Tempered Pauldrons
-			i(237925),	-- Blood-Tempered Gauntlets
-			i(237926),	-- Dawnforged Ritual Knife
-			i(237927),	-- Dawnforged Edge
-			i(237928),	-- Dawnforged Long Blade
-			i(237929),	-- Primalforged Knuckles \\ Dawnforged Knuckles
-			i(237930),	-- Dawnforged War Mace
-			i(237931),	-- Dawnforged Splitter
-			i(237932),	-- Primalforged Heavy Axe \\ Dawnforged Heavy Axe
-			i(237946),	-- Thalassian Needle Set
-			i(237947),	-- Thalassian Leatherworker's Toolset
-			i(237948),	-- Thalassian Blacksmith's Toolbox
-			i(237950),	-- Sun-Blessed Needle Set
-			i(237951),	-- Sun-Blessed Leatherworker's Toolset
-			i(237952),	-- Sun-Blessed Blacksmith's Toolbox
-			i(238009),	-- Thalassian Sickle
-			i(238010),	-- Thalassian Pickaxe
-			i(238011),	-- Thalassian Skinning Knife
-			i(238012),	-- Thalassian Leatherworker's Knife
-			i(238013),	-- Thalassian Blacksmith's Hammer
-			i(238014),	-- Sun-Blessed Sickle
-			i(238015),	-- Sun-Blessed Pickaxe
-			i(238016),	-- Sun-Blessed Skinning Knife
-			i(238017),	-- Sun-Blessed Leatherworker's Knife
-			i(238018),	-- Sun-Blessed Blacksmith's Hammer
-			i(238020),	-- Thalassian Master Repair Hammer
-			i(238197),	-- Refulgent Copper Ingot
-			i(238198),	-- Refulgent Copper Ingot
-			i(238202),	-- Gloaming Alloy
-			i(238203),	-- Gloaming Alloy
-			i(238204),	-- Sterling Alloy
-			i(238205),	-- Sterling Alloy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(238206),	-- [PH] Weightstone - Quality 1
-			i(238209),	-- Refulgent Repair Hammer
+
 
 			-- Might be prof reagent
 			i(238215),	-- Essence of Prey
@@ -1074,9 +1006,9 @@ root(ROOTS.Unsorted, {
 			i(244462),	-- Amani Orders
 
 			-- Blacksmithing
-			i(244463),	-- Murder Row Fleet Feet
-			i(244472),	-- Knight-Commander's Palisade
-			i(244679),	-- Murder Row Fishhook
+
+
+
 
 			-- LW
 			i(244553),	-- Thalassian Competitor's Leather Boots
@@ -1467,11 +1399,6 @@ root(ROOTS.Unsorted, {
 			i(246525),	-- Thalassian Scribe's Crystalline Lens
 			i(246526),	-- Mage-Eye Precision Loupes
 			i(246527),	-- Attuned Thalassian Rune-Prism
-			i(246533),	-- Sunforged Sickle
-			i(246534),	-- Sunforged Pickaxe
-			i(246535),	-- Sunforged Skinning Knife
-			i(246536),	-- Sunforged Leatherworker's Knife
-			i(246537),	-- Sunforged Blacksmith's Hammer
 
 			-- Prof
 			i(246585),	-- Artisan's Consortium Payout \\ DNT - Artisan's Consortium Payout
@@ -2495,7 +2422,7 @@ root(ROOTS.Unsorted, {
 			i(258480),	-- Pargoth's Pandemonic Pyxis
 
 			-- Prof
-			i(258487),	-- Plans: Murder Row Fleet Feet
+
 			i(258490),	-- Recipe: Argentleaf Tea \\ Recipe: Peacebloom Tea
 			i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
 			i(258498),	-- Technique: Ren'dorei Sturdy Cask
@@ -2506,11 +2433,11 @@ root(ROOTS.Unsorted, {
 			i(258507),	-- Technique: Wild Hanging Scroll
 			i(258508),	-- Technique: Harandar Runestone
 			i(258511),	-- Recipe: Sunwell Fish Lure
-			i(258517),	-- Plans: Knight-Commander's Palisade
-			i(258518),	-- Plans: Murder Row Fishhook
+
+
 			i(258520),	-- Plans: Farstrider's Strike
-			i(258521),	-- Plans: Blood Knight's Impetus
-			i(258522),	-- Plans: Bloomforged Greataxe \\ Plans: Blood Knight's Greataxe
+
+
 			-- Wep
 			i(258514),	-- Umbral Spire of Zuraal
 			i(258516),	-- Wand of Saprish's Gaze
@@ -2649,9 +2576,7 @@ root(ROOTS.Unsorted, {
 			i(259205),	-- Gilded Alchemist's Mixing Rod
 			i(259207),	-- Gilded Sin'dorei Rolling Pin
 			i(259209),	-- Gilded Sin'dorei Quill
-			i(259230),	-- Sunforged Blacksmith's Toolbox
-			i(259232),	-- Sunforged Leatherworker's Toolset
-			i(259234),	-- Sunforged Needle Set
+
 			-- Pet
 			i(259337),	-- Munchy \\ Vermillion Grovecrawler
 
@@ -2698,7 +2623,7 @@ root(ROOTS.Unsorted, {
 			i(260231),	-- [DNT] 12.0 White Hawkstrider
 
 			-- Blacksmithing
-			i(260232),	-- Thalassian Skeleton Key
+
 
 			-- Misc
 			i(260254),	-- Kale'thas Sunsalad \\ Food 80 01
@@ -3548,7 +3473,7 @@ root(ROOTS.Unsorted, {
 			i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
 			i(263318),	-- Simple Amani Basket
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
-			i(263997),	-- Midnight Alchemist's Shop Sign
+
 			i(263999),	-- Midnight Cook's Shop Sign
 			i(264000),	-- Midnight Enchanter's Shop Sign
 			i(264001),	-- Midnight Engineer's Shop Sign
@@ -3933,7 +3858,7 @@ root(ROOTS.Unsorted, {
 			i(258568),	-- Spring Blossom Window
 			i(258569),	-- Spring Blossom Gazebo
 			i(262449),	-- Embossed Sin'dorei Fur Rug
-			i(262452),	-- Masterwork Crafting Hammer
+
 			i(262458),	-- Animated Sin'dorei Pick
 			i(262459),	-- Animated Sin'dorei Hammer
 			i(262461),	-- Tenebrous Ren'dorei Armillary
@@ -3960,7 +3885,7 @@ root(ROOTS.Unsorted, {
 			i(264655),	-- Amani Slate Bench
 			i(264715),	-- Zul'Aman Flame Cradle
 			-- Decor Prof
-			i(263998),	-- Midnight Blacksmith's Shop Sign
+
 
 			-- Boon
 			i(267235),	-- Boon of Vitality
