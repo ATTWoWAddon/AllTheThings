@@ -426,7 +426,7 @@ app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
 	SettingsName = "Mini List",
 	-- IsTopLevel = true,
-	-- Preload = true,
+	Preload = true,
 	-- Debugging = true,
 	-- mapID = -1,
 	Defaults = {
