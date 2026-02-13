@@ -1397,7 +1397,9 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 		end
 		-- Now we want the children of these generic groups to be 'special' since they require 'special' logic in the addon
 		for i,group in ipairs(t.groups or t.g) do
-			group.type = "AsSubGenericObject"
+			if group.objectID then
+				group.type = "AsSubGenericObject"
+			end
 		end
 		return t
 	end
