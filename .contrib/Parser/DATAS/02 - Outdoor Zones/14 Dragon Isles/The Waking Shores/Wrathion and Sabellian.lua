@@ -429,6 +429,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
+						["cost"] = { { "i", 191264, 10 } }, -- 10x Restored Obsidian Key
 					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
@@ -915,10 +916,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["cr"] = 187813,	-- Qalashi Wallcrasher
 				}),
 				i(191251, {	-- Key Fragments
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
 				}),
 				i(193201, {	-- Key Framing
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
+					["description"] = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
 				}),
 				i(193600, {	-- Lost Battlepack
 					-- ["cr"] = creature,	-- name
@@ -970,6 +971,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
+					["description"] = "NOTE: ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!"
 					["cost"] = {
 						{ "i", 191251, 30 },	-- 30x Key Fragment
 						{ "i", 193201, 3 },	-- 3x Key Framing
