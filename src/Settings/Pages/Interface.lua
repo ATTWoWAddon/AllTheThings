@@ -597,7 +597,7 @@ function(self)
 	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
 end)
 checkboxShowCraftedItems:SetATTTooltip(L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP)
-checkboxShowCraftedItems:AlignBelow(checkboxSpecializations)
+checkboxShowCraftedItems:AlignBelow(checkboxCurrencyCalculation)
 
 local checkboxShowRecipes = child:CreateCheckBox(L.SHOW_RECIPES_CHECKBOX,
 function(self)
