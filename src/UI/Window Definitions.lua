@@ -2651,7 +2651,7 @@ local function BuildWindow(suffix)
 					self:Refresh();
 					return result;
 				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or (trigger and not self.IsTopLevel)
 				end
 			end
 		else
@@ -2667,7 +2667,7 @@ local function BuildWindow(suffix)
 					self:Refresh();
 					return result;
 				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or (trigger and not self.IsTopLevel)
 				end
 			end
 		end
@@ -2690,7 +2690,7 @@ local function BuildWindow(suffix)
 					self:Refresh();
 					return result;
 				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or (trigger and not self.IsTopLevel)
 				end
 			end
 		else
@@ -2706,7 +2706,7 @@ local function BuildWindow(suffix)
 					self:Refresh();
 					return result;
 				else
-					self.HasPendingUpdate = self.HasPendingUpdate or force or trigger;
+					self.HasPendingUpdate = self.HasPendingUpdate or force or (trigger and not self.IsTopLevel)
 				end
 			end
 		end
@@ -2893,10 +2893,6 @@ local function BuildWindow(suffix)
 	end
 	if definition.OnInit then
 		definition.OnInit(window, handlers);
-		-- @Crieve: I don't know why OnInit should add data... isn't that for Rebuild?
-		-- if not (window.data and window.data.window) and not window.IsTopLevel then
-		-- 	print(window.Suffix, "OI! You forgot to use self:SetData(data) in the OnInit!");
-		-- end
 	end
 	if definition.Commands then
 		if not window.SettingsName then
