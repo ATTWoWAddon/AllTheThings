@@ -31,9 +31,9 @@ app.PrintDebugPrior = function(...)
 		local now = GetTimePreciseSec();
 		if DEBUG_PRINT_LAST then
 			local diff = now - DEBUG_PRINT_LAST
-			print(now,"<>",math_floor(diff * 10000 / 10),"ms @", math.ceil(1 / diff),"FPS", ...)
+			print(now,...,"<>",math_floor(diff * 10000 / 10),"ms @", math.ceil(1 / diff),"FPS")
 		else
-			print(now,0,...)
+			print(now,...)
 		end
 		DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
