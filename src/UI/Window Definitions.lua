@@ -2947,7 +2947,11 @@ function app:CreateWindow(suffix, definition)
 	end
 end
 function app:CreateWindowForAddon(addonName, definition)
-	definition.Title = C_AddOns_GetAddOnMetadata(addonName, "Title");
+	local title = C_AddOns_GetAddOnMetadata(addonName, "Title");
+	if title then
+		local titleSplit = { (":"):split(title) };
+		definition.Title = titleSplit[#titleSplit]:trim();
+	end
 	definition.Notes = C_AddOns_GetAddOnMetadata(addonName, "Notes");
 	definition.IconTexture = C_AddOns_GetAddOnMetadata(addonName, "IconTexture");
 	local cmdStr = C_AddOns_GetAddOnMetadata(addonName, "X-Commands");
