@@ -2044,8 +2044,7 @@ r(403932,{u=1605})}}),
 i(208744,{b=1,c={9},coords={{52.6,33.8,1439},{57.6,26,1439}},crs={3662,10373},f=55,q=2,rwp=20001,u=1605,g={
 r(403936,{u=1605})}}),
 i(211482,{b=1,c={5},coords={{58.8,20.6,1439}},crs={2181,2182,2183},q=1,u=1605}),
-i(5568,{crs={2156,2157},f=37,lvl=13,q=1,rwp=40001}),
-i(5469,{q=1})})}}),
+i(5568,{crs={2156,2157},f=37,lvl=13,q=1,rwp=40001})})}}),
 m(1443,{icon=236742,lore="Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",g={
 h(-12,{
 ach(848,{
@@ -11609,8 +11608,8 @@ s(160371,11860,{b=1,f=27,q=2}),
 s(160372,11861,{b=1,f=6,q=2})}}),
 q(7704,{awp=30300,lvl=45,providers={{"i",18950},{"n",14636},{"o",179832}},u=1,g={
 i(18951,{b=1,f=53,q=2,u=1})}}),
-q(3377,{lvl=40,qgs={8436},r=2,rwp=40003}),
-q(3378,{lvl=40,maps={1457},qgs={8436},r=2,rwp=40003,sourceQuests={3377},g={
+q(3377,{coords={{29.6,26.6,1427}},lvl=40,qgs={8436},r=2,rwp=40003}),
+q(3378,{coords={{29.6,26.6,1427}},lvl=40,maps={1457},qgs={8436},r=2,rwp=40003,sourceQuests={3377},g={
 qo(1,{crs={5860,5861,5862,8419},providers={{"i",10458}}}),
 s(160143,10745,{b=1,f=5,q=2}),
 s(160144,10746,{b=1,f=7,q=2})}}),

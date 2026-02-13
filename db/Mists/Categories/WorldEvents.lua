@@ -9,180 +9,7 @@ h(-482,{lvl=55,maps={17},rwp=20506,u=2,g={
 q(10259,{coords={{58.25,55.05,17}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
 s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}),
-x(3,{
-h(-484,{maps={17,23,36,71,76,83,111},rwp=30003,u=2,g={
-h(-12,{u=2,g={
-ach(2116,{providers={{"i",22999}},u=2})}}),
-h(-45,{u=2,g={
-q(12753,{awp=30002,lvl=65,qgs={20102},races={3},u=2}),
-q(12772,{awp=30002,lvl=65,maps={89},qgs={19173},races={4},u=2}),
-q(12775,{awp=30002,lvl=65,maps={84},qgs={18927},races={1},u=2}),
-q(12777,{awp=30002,lvl=65,maps={84},qgs={18927},races={11},u=2}),
-q(12808,{awp=30002,lvl=65,races={7},u=2}),
-q(9094,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133483,23084,{b=1,f=4,q=3,u=2}),
-s(201226,23081,{b=1,f=5,q=3,u=2}),
-s(133481,23082,{b=1,f=6,q=3,u=2}),
-s(133477,23078,{b=1,f=7,q=3,u=2})}}),
-q(9333,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133483,23084,{b=1,f=4,q=3,u=2}),
-s(201226,23081,{b=1,f=5,q=3,u=2}),
-s(133481,23082,{b=1,f=6,q=3,u=2}),
-s(133477,23078,{b=1,f=7,q=3,u=2})}}),
-q(9318,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(9334,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
-i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
-q(9317,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(9335,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={84},providers={{"i",22949}},qgs={16431},r=2,u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(12773,{awp=30002,lvl=65,maps={89},providers={{"i",39698}},qgs={29087},races={4},sourceQuests={12753},u=2}),
-q(12783,{awp=30002,lvl=65,races={8},u=2}),
-q(12752,{awp=30002,lvl=65,races={5},u=2}),
-q(12782,{awp=30002,lvl=65,races={10},u=2}),
-q(12784,{awp=30002,lvl=65,races={6},u=2}),
-q(12811,{awp=30002,lvl=65,races={2},u=2}),
-q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},u=2}),
-q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},u=2}),
-q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={18,998},providers={{"i",22950}},qgs={16531},r=1,u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(9262,{coords={{77.7,42.7,89}},isYearly=1,maps={57},qgs={16495},r=2,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(9261,{coords={{53.2,35,27}},isYearly=1,maps={87},qgs={16484},r=2,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(9263,{coords={{51.7,83.3,85}},isYearly=1,maps={1},qgs={16493},r=1,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(9260,{coords={{63.8,75.5,84}},isYearly=1,maps={37},qgs={16478},r=2,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(9265,{coords={{66.2,21.4,998}},isYearly=1,maps={18},qgs={16494},r=1,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(9264,{coords={{33.1,59.9,88}},isYearly=1,maps={7},qgs={16490},r=1,u=2,g={
-qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
-q(12771,{awp=30002,lvl=65,maps={87},providers={{"i",39698}},qgs={29087},races={3},sourceQuests={12753},u=2}),
-q(12809,{awp=30002,lvl=65,maps={87},providers={{"i",39698}},qgs={29087},races={7},sourceQuests={12808},u=2}),
-q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},u=2}),
-q(9154,{coords={{53.1,35,27},{55,62,84},{64.1,75,84},{51.7,83.6,85},{53.1,73.6,85},{35.3,68.7,87},{32.9,60.1,88},{43.5,53.2,88},{64.5,44.2,89},{77.3,42.8,89},{49.5,32.1,998},{65.9,21.4,998}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},u=2}),
-q(9321,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,q=1,u=2})}}),
-q(9336,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,q=1,u=2})}}),
-q(9337,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,q=1,u=2})}}),
-q(9320,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,q=1,u=2})}}),
-q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},u=2}),
-q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},u=2}),
-q(12785,{awp=30002,lvl=65,maps={85},providers={{"i",40482}},qgs={28318},races={8},sourceQuests={12783},u=2}),
-q(12812,{awp=30002,lvl=65,maps={85},providers={{"i",40482}},qgs={28318},races={2},sourceQuests={12811},u=2}),
-q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},u=2}),
-q(9085,{coords={{81.1,60.6,23}},isYearly=1,lvl=50,qgs={16361},u=2,g={
-qo(1,{providers={{"n",16143}},u=2}),
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(12788,{awp=30002,lvl=65,maps={110},providers={{"i",40482}},qgs={28318},races={10},sourceQuests={12782},u=2}),
-q(12774,{awp=30002,lvl=65,maps={84},providers={{"i",39698}},qgs={29087},races={1},sourceQuests={12775},u=2}),
-q(9341,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
-q(9343,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
-q(12776,{awp=30002,lvl=65,maps={103},providers={{"i",39698}},qgs={29087},races={11},sourceQuests={12777},u=2}),
-q(9247,{coords={{81.1,60.5,23}},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,providers={{"i",22723}},qgs={16281},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
-q(12787,{awp=30002,lvl=65,maps={998},providers={{"i",40482}},qgs={28318},races={5},sourceQuests={12752},u=2}),
-q(12786,{awp=30002,lvl=65,maps={88},providers={{"i",40482}},qgs={28318},races={6},sourceQuests={12784},u=2}),
-q(9153,{coords={{81.1,60.6,23}},cost={{"i",22484,10}},isYearly=1,lvl=50,qgs={16361},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}})}}),
-n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},u=2,g={
-s(133523,23124,{b=1,f=28,lvl=55,q=3,u=2}),
-i(23125,{b=1,f=51,lvl=55,q=3,u=2}),
-s(133525,23126,{b=1,f=4,lvl=55,q=3,u=2})}}),
-n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},u=2,g={
-s(133576,23177,{b=1,f=27,lvl=36,q=3,u=2}),
-s(133577,23178,{b=1,f=3,lvl=36,q=3,u=2})}}),
-n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},u=2,g={
-s(133555,23156,{b=1,f=1,lvl=57,q=3,u=2}),
-s(133531,23132,{b=1,f=25,lvl=57,q=3,u=2}),
-s(133538,23139,{b=1,f=8,lvl=57,q=3,u=2})}}),
-n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},u=2,g={
-s(133526,23127,{b=1,f=3,lvl=58,q=3,u=2}),
-s(133528,23129,{b=1,f=4,lvl=57,q=3,u=2}),
-s(133527,23128,{b=1,f=4,lvl=57,q=3,u=2})}}),
-n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},u=2,g={
-s(133567,23168,{b=1,f=20,lvl=30,q=3,u=2}),
-i(23169,{b=1,f=51,lvl=30,q=3,u=2}),
-s(133569,23170,{b=1,f=6,lvl=30,q=3,u=2})}}),
-n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},u=2,g={
-s(133570,23171,{b=1,f=22,lvl=16,q=3,u=2}),
-s(133572,23173,{b=1,f=4,lvl=16,q=3,u=2})}}),
-n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",u=2,g={
-i(22484,{b=1,q=2,u=2}),
-s(201797,43069,{awp=30002,b=1,f=7,lvl=70,q=4,u=2}),
-s(174669,43080,{awp=30002,b=1,f=6,lvl=70,q=4,u=2}),
-s(174661,43072,{awp=30002,b=1,f=4,lvl=70,q=4,u=2}),
-s(174665,43076,{awp=30002,b=1,f=5,lvl=70,q=4,u=2}),
-s(133486,23087,{b=1,f=7,lvl=58,q=3,rwp=20001,u=2}),
-s(133487,23088,{b=1,f=6,lvl=58,q=3,rwp=20001,u=2}),
-s(133484,23085,{b=1,f=4,lvl=58,q=3,rwp=20001,u=2}),
-s(201227,23089,{b=1,f=5,lvl=58,q=3,rwp=20001,u=2})}}),
-n(28194,{awp=30002,description="Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",maps={350},u=2,g={
-ach(2456,{providers={{"i",38658}},u=2}),
-p(187,{b=1,description="Drops for everyone in the raid. Get one on all of your alts!",itemID=38658,npcID=28513,q=3,spellID=51851,u=2}),
-s(172714,39769,{b=1,description="Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",f=22,lvl=70,q=4,u=2})}}),
-h(-58,{u=2,g={
-n(16786,{coords={{80.9,59.6,23},{54.7,62.2,84},{52.5,73.7,85},{34,66.4,87},{43.7,52.6,88},{64.3,44.5,89},{49.9,29.4,998}},u=2,g={
-s(133398,22999,{b=1,cost={{"i",22484,8}},f=9,q=1,u=2}),
-s(174663,43074,{awp=30002,b=1,cost={{"i",22484,15}},f=4,lvl=70,q=4,u=2}),
-s(174662,43073,{awp=30002,b=1,cost={{"i",22484,15}},f=4,lvl=70,q=4,u=2}),
-s(174666,43077,{awp=30002,b=1,cost={{"i",22484,15}},f=5,lvl=70,q=4,u=2}),
-s(174667,43078,{awp=30002,b=1,cost={{"i",22484,15}},f=5,lvl=70,q=4,u=2}),
-s(174670,43081,{awp=30002,b=1,cost={{"i",22484,15}},f=6,lvl=70,q=4,u=2}),
-s(174671,43082,{awp=30002,b=1,cost={{"i",22484,15}},f=6,lvl=70,q=4,u=2}),
-s(174657,43068,{awp=30002,b=1,cost={{"i",22484,15}},f=7,lvl=70,q=4,u=2}),
-s(174659,43070,{awp=30002,b=1,cost={{"i",22484,15}},f=7,lvl=70,q=4,u=2}),
-i(40601,{awp=30002,b=1,cost={{"i",22484,8}},f=53,lvl=70,q=3,u=2}),
-i(40593,{awp=30002,b=1,cost={{"i",22484,30}},f=53,lvl=70,q=3,u=2}),
-i(40492,{awp=30002,b=1,cost={{"i",22484,40}},f=53,lvl=70,q=3,u=2}),
-i(23123,{b=1,cost={{"i",22484,8}},f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,cost={{"i",22484,8}},f=55,lvl=50,q=2,u=2}),
-i(43531,{awp=30002,cost={{"i",22484,20}},f=55,lvl=55,q=1,u=2}),
-i(43530,{awp=30002,cost={{"i",22484,20}},f=55,lvl=55,q=1,u=2})}})}}),
-h(-63,{crs={16141,16298,16299,16383},u=2,g={
-i(22484,{b=1,q=2,u=2}),
-i(22970,{b=1,lvl=45,q=1,u=2}),
-i(22972,{b=1,lvl=45,q=1,u=2}),
-i(22973,{b=1,lvl=45,q=1,u=2}),
-i(22974,{b=1,lvl=45,q=1,u=2}),
-i(22975,{b=1,lvl=45,q=1,u=2}),
-i(22977,{b=1,lvl=45,q=1,u=2}),
-toy(40110,{awp=30002,description="This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",q=1,u=2})}}),
-h(-46,{crs={14697,16379,16380},u=2,g={
-s(174672,43083,{awp=30002,b=1,f=6,lvl=70,q=4,u=2}),
-s(174668,43079,{awp=30002,b=1,f=5,lvl=70,q=4,u=2}),
-s(174660,43071,{awp=30002,b=1,f=7,lvl=70,q=4,u=2}),
-s(174664,43075,{awp=30002,b=1,f=4,lvl=70,q=4,u=2}),
-s(133490,23091,{f=4,lvl=58,q=3,rwp=20001,u=2}),
-s(201228,23093,{f=5,lvl=58,q=3,rwp=20001,u=2}),
-s(133491,23092,{f=6,lvl=58,q=3,rwp=20001,u=2}),
-s(133489,23090,{f=7,lvl=58,q=3,rwp=20001,u=2})}}),
-h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=2,g={
-i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=2}),
-i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=2}),
-i(23195,{b=1,crs={16433,16435},description="1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",f=55,q=1,u=2}),
-i(23008,{b=1,q=1,u=2}),
-i(23010,{b=1,q=1,u=2}),
-i(23011,{b=1,q=1,u=2}),
-i(23012,{b=1,q=1,u=2}),
-i(23013,{b=1,q=1,u=2}),
-i(23016,{b=1,q=1,u=2})}})}})}),
+x(3),
 x(4,{awp=30300,g={
 h(-474,{maps={84,85,87,88},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,rwp=40003,u=2,g={
 h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2;t.rwp=nil;else	t.u=3304;t.rwp=40003;end	end,u=2,g={
@@ -1049,5 +876,178 @@ s(131959,21522,{b=1,f=20,lvl=60,q=4,u=2}),
 s(131958,21521,{b=1,f=25,lvl=60,q=4,u=2}),
 s(131957,21520,{b=1,f=25,lvl=60,q=4,u=2})}}),
 q(8734,{coords={{37.5,47.9,57}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733},u=2}),
-q(8286,{coords={{49.5,36.4,81}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=2})}})}})};
+q(8286,{coords={{49.5,36.4,81}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=2})}})}}),
+h(-484,{maps={17,23,36,71,76,83,111},rwp=30003,u=2,g={
+h(-12,{u=2,g={
+ach(2116,{providers={{"i",22999}},u=2})}}),
+h(-45,{u=2,g={
+q(12753,{awp=30002,lvl=65,qgs={20102},races={3},u=2}),
+q(12772,{awp=30002,lvl=65,maps={89},qgs={19173},races={4},u=2}),
+q(12775,{awp=30002,lvl=65,maps={84},qgs={18927},races={1},u=2}),
+q(12777,{awp=30002,lvl=65,maps={84},qgs={18927},races={11},u=2}),
+q(12808,{awp=30002,lvl=65,races={7},u=2}),
+q(9094,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+s(133483,23084,{b=1,f=4,q=3,u=2}),
+s(201226,23081,{b=1,f=5,q=3,u=2}),
+s(133481,23082,{b=1,f=6,q=3,u=2}),
+s(133477,23078,{b=1,f=7,q=3,u=2})}}),
+q(9333,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+s(133483,23084,{b=1,f=4,q=3,u=2}),
+s(201226,23081,{b=1,f=5,q=3,u=2}),
+s(133481,23082,{b=1,f=6,q=3,u=2}),
+s(133477,23078,{b=1,f=7,q=3,u=2})}}),
+q(9318,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9334,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
+i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
+q(9317,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9335,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={84},providers={{"i",22949}},qgs={16431},r=2,u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(12773,{awp=30002,lvl=65,maps={89},providers={{"i",39698}},qgs={29087},races={4},sourceQuests={12753},u=2}),
+q(12783,{awp=30002,lvl=65,races={8},u=2}),
+q(12752,{awp=30002,lvl=65,races={5},u=2}),
+q(12782,{awp=30002,lvl=65,races={10},u=2}),
+q(12784,{awp=30002,lvl=65,races={6},u=2}),
+q(12811,{awp=30002,lvl=65,races={2},u=2}),
+q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},u=2}),
+q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},u=2}),
+q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={18,998},providers={{"i",22950}},qgs={16531},r=1,u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9262,{coords={{77.7,42.7,89}},isYearly=1,maps={57},qgs={16495},r=2,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(9261,{coords={{53.2,35,27}},isYearly=1,maps={87},qgs={16484},r=2,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(9263,{coords={{51.7,83.3,85}},isYearly=1,maps={1},qgs={16493},r=1,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(9260,{coords={{63.8,75.5,84}},isYearly=1,maps={37},qgs={16478},r=2,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(9265,{coords={{66.2,21.4,998}},isYearly=1,maps={18},qgs={16494},r=1,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(9264,{coords={{33.1,59.9,88}},isYearly=1,maps={7},qgs={16490},r=1,u=2,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
+q(12771,{awp=30002,lvl=65,maps={87},providers={{"i",39698}},qgs={29087},races={3},sourceQuests={12753},u=2}),
+q(12809,{awp=30002,lvl=65,maps={87},providers={{"i",39698}},qgs={29087},races={7},sourceQuests={12808},u=2}),
+q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},u=2}),
+q(9154,{coords={{53.1,35,27},{55,62,84},{64.1,75,84},{51.7,83.6,85},{53.1,73.6,85},{35.3,68.7,87},{32.9,60.1,88},{43.5,53.2,88},{64.5,44.2,89},{77.3,42.8,89},{49.5,32.1,998},{65.9,21.4,998}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},u=2}),
+q(9321,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(13446,{f=55,lvl=45,q=1,u=2})}}),
+q(9336,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(13446,{f=55,lvl=45,q=1,u=2})}}),
+q(9337,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(13444,{f=55,lvl=49,q=1,u=2})}}),
+q(9320,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+i(13444,{f=55,lvl=49,q=1,u=2})}}),
+q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},u=2}),
+q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},u=2}),
+q(12785,{awp=30002,lvl=65,maps={85},providers={{"i",40482}},qgs={28318},races={8},sourceQuests={12783},u=2}),
+q(12812,{awp=30002,lvl=65,maps={85},providers={{"i",40482}},qgs={28318},races={2},sourceQuests={12811},u=2}),
+q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},u=2}),
+q(9085,{coords={{81.1,60.6,23}},isYearly=1,lvl=50,qgs={16361},u=2,g={
+qo(1,{providers={{"n",16143}},u=2}),
+i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(12788,{awp=30002,lvl=65,maps={110},providers={{"i",40482}},qgs={28318},races={10},sourceQuests={12782},u=2}),
+q(12774,{awp=30002,lvl=65,maps={84},providers={{"i",39698}},qgs={29087},races={1},sourceQuests={12775},u=2}),
+q(9341,{coords={{81,59.8,23},{54.7,62.2,84},{34,66.4,87},{64.3,44.5,89}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+q(9343,{coords={{80.8,59.6,23},{52.5,73.7,85},{43.7,52.6,88},{49.9,29.4,998}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+q(12776,{awp=30002,lvl=65,maps={103},providers={{"i",39698}},qgs={29087},races={11},sourceQuests={12777},u=2}),
+q(9247,{coords={{81.1,60.5,23}},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,providers={{"i",22723}},qgs={16281},u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(12787,{awp=30002,lvl=65,maps={998},providers={{"i",40482}},qgs={28318},races={5},sourceQuests={12752},u=2}),
+q(12786,{awp=30002,lvl=65,maps={88},providers={{"i",40482}},qgs={28318},races={6},sourceQuests={12784},u=2}),
+q(9153,{coords={{81.1,60.6,23}},cost={{"i",22484,10}},isYearly=1,lvl=50,qgs={16361},u=2,g={
+i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,f=55,lvl=50,q=2,u=2})}})}}),
+n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},u=2,g={
+s(133523,23124,{b=1,f=28,lvl=55,q=3,u=2}),
+i(23125,{b=1,f=51,lvl=55,q=3,u=2}),
+s(133525,23126,{b=1,f=4,lvl=55,q=3,u=2})}}),
+n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},u=2,g={
+s(133576,23177,{b=1,f=27,lvl=36,q=3,u=2}),
+s(133577,23178,{b=1,f=3,lvl=36,q=3,u=2})}}),
+n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},u=2,g={
+s(133555,23156,{b=1,f=1,lvl=57,q=3,u=2}),
+s(133531,23132,{b=1,f=25,lvl=57,q=3,u=2}),
+s(133538,23139,{b=1,f=8,lvl=57,q=3,u=2})}}),
+n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},u=2,g={
+s(133526,23127,{b=1,f=3,lvl=58,q=3,u=2}),
+s(133528,23129,{b=1,f=4,lvl=57,q=3,u=2}),
+s(133527,23128,{b=1,f=4,lvl=57,q=3,u=2})}}),
+n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},u=2,g={
+s(133567,23168,{b=1,f=20,lvl=30,q=3,u=2}),
+i(23169,{b=1,f=51,lvl=30,q=3,u=2}),
+s(133569,23170,{b=1,f=6,lvl=30,q=3,u=2})}}),
+n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},u=2,g={
+s(133570,23171,{b=1,f=22,lvl=16,q=3,u=2}),
+s(133572,23173,{b=1,f=4,lvl=16,q=3,u=2})}}),
+n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",u=2,g={
+i(22484,{b=1,q=2,u=2}),
+s(201797,43069,{awp=30002,b=1,f=7,lvl=70,q=4,u=2}),
+s(174669,43080,{awp=30002,b=1,f=6,lvl=70,q=4,u=2}),
+s(174661,43072,{awp=30002,b=1,f=4,lvl=70,q=4,u=2}),
+s(174665,43076,{awp=30002,b=1,f=5,lvl=70,q=4,u=2}),
+s(133486,23087,{b=1,f=7,lvl=58,q=3,rwp=20001,u=2}),
+s(133487,23088,{b=1,f=6,lvl=58,q=3,rwp=20001,u=2}),
+s(133484,23085,{b=1,f=4,lvl=58,q=3,rwp=20001,u=2}),
+s(201227,23089,{b=1,f=5,lvl=58,q=3,rwp=20001,u=2})}}),
+n(28194,{awp=30002,description="Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",maps={350},u=2,g={
+ach(2456,{providers={{"i",38658}},u=2}),
+p(187,{b=1,description="Drops for everyone in the raid. Get one on all of your alts!",itemID=38658,npcID=28513,q=3,spellID=51851,u=2}),
+s(172714,39769,{b=1,description="Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",f=22,lvl=70,q=4,u=2})}}),
+h(-58,{u=2,g={
+n(16786,{coords={{80.9,59.6,23},{54.7,62.2,84},{52.5,73.7,85},{34,66.4,87},{43.7,52.6,88},{64.3,44.5,89},{49.9,29.4,998}},u=2,g={
+s(133398,22999,{b=1,cost={{"i",22484,8}},f=9,q=1,u=2}),
+s(174663,43074,{awp=30002,b=1,cost={{"i",22484,15}},f=4,lvl=70,q=4,u=2}),
+s(174662,43073,{awp=30002,b=1,cost={{"i",22484,15}},f=4,lvl=70,q=4,u=2}),
+s(174666,43077,{awp=30002,b=1,cost={{"i",22484,15}},f=5,lvl=70,q=4,u=2}),
+s(174667,43078,{awp=30002,b=1,cost={{"i",22484,15}},f=5,lvl=70,q=4,u=2}),
+s(174670,43081,{awp=30002,b=1,cost={{"i",22484,15}},f=6,lvl=70,q=4,u=2}),
+s(174671,43082,{awp=30002,b=1,cost={{"i",22484,15}},f=6,lvl=70,q=4,u=2}),
+s(174657,43068,{awp=30002,b=1,cost={{"i",22484,15}},f=7,lvl=70,q=4,u=2}),
+s(174659,43070,{awp=30002,b=1,cost={{"i",22484,15}},f=7,lvl=70,q=4,u=2}),
+i(40601,{awp=30002,b=1,cost={{"i",22484,8}},f=53,lvl=70,q=3,u=2}),
+i(40593,{awp=30002,b=1,cost={{"i",22484,30}},f=53,lvl=70,q=3,u=2}),
+i(40492,{awp=30002,b=1,cost={{"i",22484,40}},f=53,lvl=70,q=3,u=2}),
+i(23123,{b=1,cost={{"i",22484,8}},f=55,lvl=50,q=2,u=2}),
+i(23122,{b=1,cost={{"i",22484,8}},f=55,lvl=50,q=2,u=2}),
+i(43531,{awp=30002,cost={{"i",22484,20}},f=55,lvl=55,q=1,u=2}),
+i(43530,{awp=30002,cost={{"i",22484,20}},f=55,lvl=55,q=1,u=2})}})}}),
+h(-63,{crs={16141,16298,16299,16383},u=2,g={
+i(22484,{b=1,q=2,u=2}),
+i(22970,{b=1,lvl=45,q=1,u=2}),
+i(22972,{b=1,lvl=45,q=1,u=2}),
+i(22973,{b=1,lvl=45,q=1,u=2}),
+i(22974,{b=1,lvl=45,q=1,u=2}),
+i(22975,{b=1,lvl=45,q=1,u=2}),
+i(22977,{b=1,lvl=45,q=1,u=2}),
+toy(40110,{awp=30002,description="This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",q=1,u=2})}}),
+h(-46,{crs={14697,16379,16380},u=2,g={
+s(174672,43083,{awp=30002,b=1,f=6,lvl=70,q=4,u=2}),
+s(174668,43079,{awp=30002,b=1,f=5,lvl=70,q=4,u=2}),
+s(174660,43071,{awp=30002,b=1,f=7,lvl=70,q=4,u=2}),
+s(174664,43075,{awp=30002,b=1,f=4,lvl=70,q=4,u=2}),
+s(133490,23091,{f=4,lvl=58,q=3,rwp=20001,u=2}),
+s(201228,23093,{f=5,lvl=58,q=3,rwp=20001,u=2}),
+s(133491,23092,{f=6,lvl=58,q=3,rwp=20001,u=2}),
+s(133489,23090,{f=7,lvl=58,q=3,rwp=20001,u=2})}}),
+h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=2,g={
+i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=2}),
+i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=2}),
+i(23195,{b=1,crs={16433,16435},description="1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",f=55,q=1,u=2}),
+i(23008,{b=1,q=1,u=2}),
+i(23010,{b=1,q=1,u=2}),
+i(23011,{b=1,q=1,u=2}),
+i(23012,{b=1,q=1,u=2}),
+i(23013,{b=1,q=1,u=2}),
+i(23016,{b=1,q=1,u=2})}})}})};
 end);

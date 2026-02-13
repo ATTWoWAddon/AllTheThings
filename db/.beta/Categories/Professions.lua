@@ -2132,7 +2132,7 @@ crit(6756,{achID=1563,id=9})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185}),
 ach(1796,{awp=30002,rank=50,requireSkill=185}),
 ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",43016},{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"c",402,50}},rank=50,requireSkill=185}),
@@ -2932,7 +2932,23 @@ q(84295,{description="Rewarded when disenchanting items.",isWeekly=1,providers={
 cu(2787,{requireSkill=333})}})}})}}),
 x(12,{awp=120000,requireSkill=333,g={
 h(-12,{requireSkill=333,g={
-ach(42787,{requireSkill=333})}})}})}),
+ach(42787,{requireSkill=333,g={
+de(15405,{itemID=264000,requireSkill=333,sourceAchievements={42787},spellID=1271031})}})}}),
+h(-45,{requireSkill=333}),
+flt(200,{description="These are learned by specialization.",requireSkill=333,g={
+r(1236057,{cost={{"c",3152,1}},learnedAt=75,requireSkill=333,skillID=2909}),
+r(1236069,{cost={{"c",3152,1}},learnedAt=85,requireSkill=333,skillID=2909}),
+r(1236071,{cost={{"c",3152,1}},learnedAt=90,requireSkill=333,skillID=2909}),
+r(1236088,{cost={{"c",3152,1}},learnedAt=80,requireSkill=333,skillID=2909}),
+r(1236060,{cost={{"c",3152,1}},learnedAt=80,requireSkill=333,skillID=2909}),
+r(1236091,{cost={{"c",3152,1}},learnedAt=90,requireSkill=333,skillID=2909}),
+r(1236064,{cost={{"c",3152,1}},learnedAt=70,requireSkill=333,skillID=2909}),
+r(1236077,{cost={{"c",3152,1}},learnedAt=70,requireSkill=333,skillID=2909}),
+r(1236092,{cost={{"c",3152,1}},learnedAt=70,requireSkill=333,skillID=2909}),
+r(1236490,{cost={{"c",3152,1}},learnedAt=100,requireSkill=333,skillID=2909}),
+r(1236492,{cost={{"c",3152,1}},learnedAt=70,requireSkill=333,skillID=2909}),
+r(1236487,{cost={{"c",3152,1}},learnedAt=90,requireSkill=333,skillID=2909}),
+r(1235731,{cost={{"c",3152,1}},requireSkill=333,skillID=2909})}})}})}),
 prof(202,{
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18901,{requireSkill=202,g={

@@ -217,7 +217,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it i
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 L.CUSTOM_FILTERS_LABEL = "Automated Content";
 L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-L.DEATHS_CHECKBOX = "Deaths";
 L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
@@ -5873,7 +5872,7 @@ local ObjectIcons = {
 	[160845] = 132597,
 	[161495] = 132595,
 	[161505] = 132594,
-	[161521] = _.asset("icon_petfamily_mechanical"),
+	[161521] = 132594,
 	[161526] = 132594,
 	[161557] = 134014,
 	[161752] = 134063,
@@ -9133,13 +9132,6 @@ local phases = {
 		description = "|cFFAAFFAAThis was only available during Season of Mastery.|r",
 		lore = "|cFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r",
 		minimumBuildVersion = 11301,
-		state = 2,
-	},
-	[1610] = {
-		name = "Phase 6",
-		description = "|cFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, and the new Nightmare Grove raid|r",
-		minimumBuildVersion = 11500000,
 		state = 2,
 	},
 	[17] = {
@@ -13345,7 +13337,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
-	[1610] = "|cFFAAFFAADies war erst Phase 6 von Season of Discovery verfügbar.|r",
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
 	[19] = "|cFFAAFFAADies war erst Phase 3 von TBC Classic verfügbar.|r",
@@ -16400,7 +16391,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
-	[1610] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du Season of Discovery.|r",
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
 	[19] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du TBC Classic.|r",
@@ -18693,7 +18683,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
-	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
 	[19] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di TBC Classic.|r",
@@ -21382,7 +21371,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
-	[1610] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de TBC Classic.|r",
@@ -21565,7 +21553,6 @@ L.CURSEFORGE_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать
 L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в |c" .. _.DefaultColors.Account .. "Режиме Аккаунта|r.|r";
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
-L.DEATHS_CHECKBOX = "Смерти";
 L.DEBUG_LOGIN = "Награда за вход в игру.\n\nОтличная работа! ВЫ СДЕЛАЛИ ЭТО!\n\nОтображается только в Режиме Отладки.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Режим Отладки |cffffffff(Показать Всё)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Буквально ... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
@@ -24820,7 +24807,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
-	[1610] = "|cFFAAFFAAЭто было недоступно до Phase 6 из Season of Discovery.|r",
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
 	[19] = "|cFFAAFFAAЭто было недоступно до Phase 3 из TBC Classic.|r",
@@ -27471,7 +27457,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
-	[1610] = "|cFFAAFFAAPhase 6(Season of Discovery)까지 사용할 수 없습니다.|r",
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
 	[19] = "|cFFAAFFAAPhase 3(TBC Classic)까지 사용할 수 없습니다.|r",
@@ -27680,7 +27665,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.";
 L.CUSTOM_FILTERS_LABEL = "Contenido automatizado";
 L.DATA_TYPE_NOT_SUPPORTED = "Este tipo de datos no se admite en este momento.";
-L.DEATHS_CHECKBOX = "Muertes";
 L.DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
 L.DEBUG_LOGIN = "Otorgado por iniciar sesión.\n\n¡Buen trabajo! ¡LO LOGRASTE!\n\nSolo visible en modo de depuración.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Modo Depuración |cffffffff(Muestra todo)|r|r";
@@ -31091,7 +31075,6 @@ for key,value in pairs({
 	[1602] = "Silitista",
 	[1603] = "Era Clásica",
 	[1604] = "Temporada de maestría",
-	[1610] = "Fase 6",
 	[17] = "Fase 1",
 	[18] = "Fase 2",
 	[1802] = "Guardia del cielo",
@@ -31142,7 +31125,6 @@ for key,value in pairs({
 	[1602] = "|cFFAAFFAAEsto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.|r",
 	[1603] = "|cFFAAFFAAEsto solo estuvo disponible después del inicio de la Era Clásica.|r",
 	[1604] = "|cFFAAFFAAEsto solo estuvo disponible durante la Temporada de maestría.|r",
-	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de TBC Classic.|r",
 	[1801] = "|cFFAAFFAAEsto se volvió disponible con la Facción Ogri'la durante TBC Classic.|r",
@@ -31200,7 +31182,6 @@ for key,value in pairs({
 	[1602] = "|cFFFFAAAASi el evento JcJ de mundo está disponible, simplemente actívelo.|r",
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
 	[1604] = "|cFFFFAAAASi la Temporada de Maestría está activa en tu servidor, simplemente actíva esto.|r",
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
 	[17] = "|cFFFFAAAAIncluía Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
 	[18] = "|cFFFFAAAAIncluía Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
 	[1801] = "|cFFFFAAAASi la facción Ogri'la está disponible en tu servidor, simplemente activa esta opción.|r",
@@ -31520,7 +31501,6 @@ for key,value in pairs({
 })
 do phases[key].description = value; end
 for key,value in pairs({
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
 	[4001] = "|cFFFFAAAAIncluía los calabozos heroicos Zul'Aman y Zul'Gurub.|r",
 })
 do phases[key].lore = value; end
@@ -31709,7 +31689,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 L.CUSTOM_FILTERS_LABEL = "自动化内容";
 L.DATA_TYPE_NOT_SUPPORTED = "当前不支持此数据类型。";
-L.DEATHS_CHECKBOX = "死亡";
 L.DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的情况，并将其显示为插件中的收藏品部分。\n\n注意：如果您关闭此选项，我们仍会跟踪它，但除非您处于调试模式，否则我们不会显示统计信息。";
 L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
@@ -34769,7 +34748,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA该功能直到 Phase 6 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA该功能直到 Phase 1 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 Phase 2 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA该功能直到 Phase 3 的 TBC Classic 才可用。|r",
@@ -35673,7 +35651,6 @@ for key,value in pairs({
 	[5] = "不可學",
 	[7] = "貿易站",
 	[1604] = "大師賽季",
-	[1610] = "第6階段",
 	[17] = "第1階段",
 	[18] = "第2階段",
 	[19] = "第3階段",
@@ -35700,7 +35677,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA該功能直到 第6階段 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA該功能直到 第2階段 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA該功能直到 第3階段 的 TBC Classic 才可用。|r",

@@ -1952,7 +1952,7 @@ flt(50,{
 cq(90950,{awp=110107,b=1,itemID=244902,spellID=1238256}),
 i(216772,{spellID=437759}),
 o(504093,{awp=110100,type="AsGenericObjectContainer",g={
-i(234421,{spellID=1214026,type="AsSubGenericObject"}),
+i(234421,{spellID=1214026}),
 o(504093,{type="AsSubGenericObject"}),
 o(504195,{type="AsSubGenericObject"})}}),
 o(506525,{awp=110100,g={
@@ -2089,6 +2089,13 @@ i(257386),
 i(265714),
 i(262586)}),
 flt(200,{
+r(1236072,{itemID=256747,requireSkill=333,skillID=2909}),
+r(1236056,{itemID=256738,requireSkill=333,skillID=2909}),
+r(1236084,{itemID=256753,requireSkill=333,skillID=2909}),
+r(1236074,{itemID=256752,requireSkill=333,skillID=2909}),
+r(1236076,{itemID=256748,requireSkill=333,skillID=2909}),
+r(1236062,{itemID=256740,requireSkill=333,skillID=2909}),
+r(1246908,{itemID=259370,requireSkill=333,skillID=2909}),
 r(1233136,{itemID=247425,requireSkill=171,skillID=2906}),
 r(1233138,{itemID=247423,requireSkill=171,skillID=2906})}),
 h(-88,{

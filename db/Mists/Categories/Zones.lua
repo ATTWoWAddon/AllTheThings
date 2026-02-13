@@ -740,11 +740,11 @@ q(31586,{coords={{36.8,77.4,85}},pb=1,qgs={63086},r=1,sourceQuests={31585},g={
 qo(1,{coords={{40.8,80.6,85}},pb=1,providers={{"n",45789}}})}}),
 q(31589,{coords={{52.6,59.3,85}},pb=1,qgs={63626},r=1,sourceQuests={31588},g={
 qo(1,{coords={{62.6,35.6,85}},pb=1,providers={{"n",47764}}})}}),
-q(32009,{altQuests={32008},coords={{52.6,59.3,85}},description="|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",DisablePartySync=1,isBreadcrumb=1,nextQuests={31812},pb=1,qgs={63626},r=1}),
-q(31882,{altQuests={32008},coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31812},pb=1,r=1}),
-q(31883,{altQuests={32008},coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31812},pb=1,r=1}),
-q(31884,{altQuests={32008},coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31812},pb=1,r=1}),
-q(31885,{altQuests={32008},coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31812},pb=1,r=1}),
+q(32009,{coords={{52.6,59.3,85}},description="|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32008},nextQuests={31812},pb=1,qgs={63626},r=1}),
+q(31882,{coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32008},nextQuests={31812},pb=1,r=1}),
+q(31883,{coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32008},nextQuests={31812},pb=1,r=1}),
+q(31884,{coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32008},nextQuests={31812},pb=1,r=1}),
+q(31885,{coords={{52.6,59.3,85}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32008},nextQuests={31812},pb=1,r=1}),
 q(31812,{coords={{52.6,59.3,85}},maps={1},pb=1,qgs={63626},r=1,sourceQuests={31882,31883,31884,31885,32009},g={
 qo(1,{coords={{43.9,28.9,1}},pb=1,providers={{"n",66126}}}),
 i(89125,{b=1,f=55,pb=1,q=1})}}),
@@ -12296,7 +12296,6 @@ r(28480,{b=1,itemID=22774,learnedAt=300,minReputation={609,21000},q=1,requireSki
 n(15176,{coords={{55,36.5,81}},g={
 r(27585,{b=1,itemID=22209,learnedAt=300,minReputation={609,3000},q=1,requireSkill=164,u=15}),
 r(28463,{b=1,itemID=22768,learnedAt=300,minReputation={609,3000},q=1,requireSkill=164,u=1504}),
-i(234278,{awp=11505,minReputation={609,9000},u=1610}),
 r(28462,{b=1,itemID=22767,learnedAt=300,minReputation={609,9000},q=1,requireSkill=164,u=1504}),
 r(27588,{b=1,itemID=22214,learnedAt=300,minReputation={609,9000},q=1,requireSkill=164,u=15}),
 r(28461,{b=1,itemID=22766,learnedAt=300,minReputation={609,21000},q=1,requireSkill=164,u=1504})}}),
@@ -17074,11 +17073,11 @@ fp(2,{coords={{71,72.5,84}},crs={352},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(63596,{coords={{69.2,25,84}},description="Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quests might not be given until the daily reset.",pb=1,r=2,g={
 r(119467,{pb=1})}}),
-q(32008,{altQuests={32009},coords={{69.2,25,84}},description="|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,qgs={63596},r=2}),
-q(31878,{altQuests={32009},coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,r=2}),
-q(31879,{altQuests={32009},coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,r=2}),
-q(31880,{altQuests={32009},coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,r=2}),
-q(31881,{altQuests={32009},coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,nextQuests={31316},pb=1,r=2}),
+q(32008,{coords={{69.2,25,84}},description="|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32009},nextQuests={31316},pb=1,qgs={63596},r=2}),
+q(31878,{coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32009},nextQuests={31316},pb=1,r=2}),
+q(31879,{coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32009},nextQuests={31316},pb=1,r=2}),
+q(31880,{coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32009},nextQuests={31316},pb=1,r=2}),
+q(31881,{coords={{69.2,25,84}},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",32009},nextQuests={31316},pb=1,r=2}),
 q(31966,{coords={{69.2,25,84}},maps={198,207,241},pb=1,qgs={63596},r=2,sourceQuests={31984},g={
 qo(1,{coords={{61.4,32.8,198}},pb=1,providers={{"n",66819}}}),
 qo(2,{coords={{49.8,57,207}},pb=1,providers={{"n",66815}}}),
@@ -28718,8 +28717,8 @@ s(208595,63215,{b=1,f=7,q=2}),
 s(208594,63214,{b=1,f=6,q=2}),
 s(208593,63213,{b=1,f=5,q=2}),
 s(208592,63212,{b=1,f=3,q=2})}}),
-q(3377,{lvl=40,qgs={8436},r=2,rwp=40003,u=2}),
-q(3378,{lvl=40,maps={89},qgs={8436},r=2,rwp=40003,sourceQuests={3377},u=2,g={
+q(3377,{coords={{29.6,26.6,32}},lvl=40,qgs={8436},r=2,rwp=40003,u=2}),
+q(3378,{coords={{29.6,26.6,32}},lvl=40,maps={89},qgs={8436},r=2,rwp=40003,sourceQuests={3377},u=2,g={
 qo(1,{crs={5860,5861,5862,8419},providers={{"i",10458}},u=2}),
 s(123944,10745,{b=1,f=5,q=2,u=2}),
 s(123945,10746,{b=1,f=7,q=2,u=2})}}),
@@ -37429,21 +37428,21 @@ qo(3,{providers={{"i",25864},{"o",182599}},u=17}),
 qo(4,{providers={{"i",25865},{"o",182606}},u=17})}}),
 q(9925,{coords={{30.8,58.1,107}},qgs={18276},u=17,g={
 qo(1,{providers={{"n",17981}},u=17})}}),
-q(9914,{coords={{31.8,56.8,107}},maxReputation={933,3000},minReputation={933,0},qgs={18333},u=17}),
-q(9886,{coords={{31.4,57.8,107}},isMonthly=1,maxReputation={933,3000},minReputation={933,0},qgs={18265},u=17,g={
+q(9914,{coords={{31.8,56.8,107}},lc={1,"factionID",933.5},maxReputation={933,3000},minReputation={933,0},qgs={18333},u=17}),
+q(9886,{coords={{31.4,57.8,107}},isMonthly=1,lc={1,"factionID",933.5},maxReputation={933,3000},minReputation={933,0},qgs={18265},u=17,g={
 i(25424,{b=1,q=1,u=17})}}),
-q(9884,{coords={{31.4,57.8,107}},isMonthly=1,maxReputation={933,9000},minReputation={933,3000},qgs={18265},u=17,g={
+q(9884,{coords={{31.4,57.8,107}},isMonthly=1,lc={1,"factionID",933.6},maxReputation={933,9000},minReputation={933,3000},qgs={18265},u=17,g={
 i(25419,{b=1,q=1,u=17})}}),
 q(10476,{coords={{54.8,70.8,107}},cost={{"i",25433,10}},qgs={18408},r=2,u=17}),
-q(10477,{coords={{54.8,70.8,107}},cost={{"i",25433,10}},maxReputation={978,42000},qgs={18408},r=2,repeatable=1,sourceQuests={10476},u=17}),
-q(9885,{coords={{31.4,57.8,107}},isMonthly=1,maxReputation={933,21000},minReputation={933,9000},qgs={18265},u=17,g={
+q(10477,{coords={{54.8,70.8,107}},cost={{"i",25433,10}},lc={1,"factionID",978.8},maxReputation={978,42000},qgs={18408},r=2,repeatable=1,sourceQuests={10476},u=17}),
+q(9885,{coords={{31.4,57.8,107}},isMonthly=1,lc={1,"factionID",933.7},maxReputation={933,21000},minReputation={933,9000},qgs={18265},u=17,g={
 i(25422,{b=1,q=1,u=17})}}),
 q(9887,{coords={{31.4,57.8,107}},isMonthly=1,minReputation={933,21000},qgs={18265},u=17,g={
 i(25423,{b=1,q=1,u=17})}}),
-q(9883,{coords={{31.4,57.8,107}},maxReputation={933,3000},minReputation={933,0},qgs={18265},repeatable=1,sourceQuests={9882},u=17}),
-q(9915,{coords={{31.8,56.8,107}},maxReputation={933,3000},minReputation={933,0},qgs={18333},repeatable=1,sourceQuests={9914},u=17}),
-q(9892,{coords={{31.4,57.8,107}},cost={{"i",25433,10}},maxReputation={933,42000},minReputation={933,3000},qgs={18265},repeatable=1,sourceQuests={9893},u=17}),
-q(10478,{coords={{55.8,37.8,107}},cost={{"i",25433,10}},maxReputation={941,42000},qgs={18407},r=1,repeatable=1,sourceQuests={10479},u=17}),
+q(9883,{coords={{31.4,57.8,107}},lc={1,"factionID",933.5},maxReputation={933,3000},minReputation={933,0},qgs={18265},repeatable=1,sourceQuests={9882},u=17}),
+q(9915,{coords={{31.8,56.8,107}},lc={1,"factionID",933.5},maxReputation={933,3000},minReputation={933,0},qgs={18333},repeatable=1,sourceQuests={9914},u=17}),
+q(9892,{coords={{31.4,57.8,107}},cost={{"i",25433,10}},lc={1,"factionID",933.8},maxReputation={933,42000},minReputation={933,3000},qgs={18265},repeatable=1,sourceQuests={9893},u=17}),
+q(10478,{coords={{55.8,37.8,107}},cost={{"i",25433,10}},lc={1,"factionID",941.8},maxReputation={941,42000},qgs={18407},r=1,repeatable=1,sourceQuests={10479},u=17}),
 q(10479,{coords={{55.8,37.8,107}},cost={{"i",25433,10}},qgs={18407},r=1,u=17}),
 q(9893,{coords={{31.4,57.8,107}},cost={{"i",25433,10}},minReputation={933,3000},qgs={18265},u=17}),
 q(9882,{coords={{31.4,57.8,107}},lc={1,"factionID",933.5},maxReputation={933,3000},minReputation={933,0},qgs={18265},u=17}),
@@ -46338,7 +46337,7 @@ qo(2,{crs={26410},providers={{"i",36858}},u=30})}}),
 q(12130,{coords={{77,48.6,116}},qgs={26883},r=2,sourceQuests={12129},u=30,g={
 qo(1,{providers={{"i",36852},{"o",188501},{"o",188502},{"o",188503}},u=30}),
 o(188501,{type="AsGenericObjectContainer",u=30,g={
-i(36852,{q=1,type="AsSubGenericObject",u=30}),
+i(36852,{q=1,u=30}),
 o(188501,{type="AsSubGenericObject",u=30}),
 o(188502,{type="AsSubGenericObject",u=30}),
 o(188503,{type="AsSubGenericObject",u=30})}})}}),
@@ -48101,7 +48100,7 @@ q(12621,{coords={{64.5,48.6,119}},qgs={27801},sourceQuests={12620},u=30}),
 q(12572,{coords={{54.4,56.3,119}},qgs={28120},sourceQuests={12570},u=30}),
 q(12523,{coords={{25.3,58.4,119}},qgs={28033},sourceQuests={12522},u=30,g={
 o(190453,{type="AsGenericObjectContainer",u=30,g={
-i(38349,{q=1,type="AsSubGenericObject",u=30}),
+i(38349,{q=1,u=30}),
 o(190453,{type="AsSubGenericObject",u=30}),
 o(190454,{type="AsSubGenericObject",u=30}),
 o(190455,{type="AsSubGenericObject",u=30})}})}}),
@@ -50134,7 +50133,7 @@ o(202552,{type="AsGenericObjectContainer",g={
 o(202552,{type="AsSubGenericObject"}),
 o(202553,{type="AsSubGenericObject"}),
 o(202554,{type="AsSubGenericObject"}),
-i(52483,{q=1,type="AsSubGenericObject"})}})}}),
+i(52483,{q=1})}})}}),
 q(25100,{coords={{33.7,38.7,174}},qgs={39066},sourceQuests={25099}}),
 q(25125,{coords={{53.1,36.5,174}},qgs={39199},sourceQuests={25122,25123}}),
 q(14326,{coords={{11.8,62.7,174}},qgs={36145},sourceQuests={14242}}),
@@ -50206,7 +50205,7 @@ q(25201,{coords={{54.4,16.9,174}},qgs={38738},sourceQuests={25184},g={
 o(202607,{type="AsGenericObjectContainer",g={
 o(202607,{type="AsSubGenericObject"}),
 o(202608,{type="AsSubGenericObject"}),
-i(52530,{q=1,type="AsSubGenericObject"})}})}}),
+i(52530,{q=1})}})}}),
 q(14235,{coords={{37.6,78,174}},qgs={35875},sourceQuests={14234}}),
 q(25098,{coords={{37.3,41.9,174}},qgs={38387},sourceQuests={25066}}),
 q(24945,{coords={{51.8,47.1,174}},qgs={36471},sourceQuests={24940},g={
@@ -50719,7 +50718,7 @@ i(85573,{q=1})})}}),
 q(31661,{coords={{44.5,41.3,422}},providers={{"o",214562}},sourceQuests={31006}}),
 q(31176,{coords={{25.7,50.2,422}},qgs={63071},sourceQuests={31175},g={
 o(212987,{type="AsGenericObjectContainer",g={
-i(85211,{q=1,type="AsSubGenericObject"}),
+i(85211,{q=1}),
 o(212987,{type="AsSubGenericObject"}),
 o(212988,{type="AsSubGenericObject"})}})}}),
 q(31008,{coords={{55,35.5,422}},qgs={64599},sourceQuests={31006},g={
@@ -51439,7 +51438,7 @@ q(32588,{isDaily=1,r=2,u=52,g={
 i(93761,{q=1,u=52})}}),
 q(32557,{isDaily=1,r=2,u=52,g={
 o(218055,{type="AsGenericObjectContainer",u=52,g={
-i(93736,{q=1,type="AsSubGenericObject",u=52}),
+i(93736,{q=1,u=52}),
 o(218055,{type="AsSubGenericObject",u=52}),
 o(218056,{type="AsSubGenericObject",u=52})}})}}),
 q(32637,{isDaily=1,r=2,u=52}),
@@ -51607,7 +51606,7 @@ q(32493,{isDaily=1,r=1,u=52}),
 q(32206,{isDaily=1,r=1,u=52}),
 q(32233,{isDaily=1,r=1,u=52,g={
 o(218055,{type="AsGenericObjectContainer",u=52,g={
-i(93736,{q=1,type="AsSubGenericObject",u=52}),
+i(93736,{q=1,u=52}),
 o(218055,{type="AsSubGenericObject",u=52}),
 o(218056,{type="AsSubGenericObject",u=52})}})}}),
 q(32232,{isDaily=1,r=1,u=52}),
@@ -52105,7 +52104,7 @@ i(78918,{q=1}),
 i(88532,{f=55,lvl=85,q=1})}}),
 q(30081,{coords={{80.2,1,418}},qgs={56115},sourceQuests={30079,30082},g={
 o(210184,{type="AsGenericObjectContainer",g={
-i(78877,{q=1,type="AsSubGenericObject"}),
+i(78877,{q=1}),
 o(210184,{type="AsSubGenericObject"}),
 o(210186,{type="AsSubGenericObject"})}}),
 o(210188,{
@@ -52154,7 +52153,7 @@ s(268401,81510,{b=1,f=7,q=2}),
 s(268402,81511,{b=1,f=7,q=2})}}),
 q(30230,{qgs={56112},r=1,sourceQuests={30132,30464},g={
 o(210416,{type="AsGenericObjectContainer",g={
-i(79120,{q=1,type="AsSubGenericObject"}),
+i(79120,{q=1}),
 o(210416,{type="AsSubGenericObject"}),
 o(210417,{type="AsSubGenericObject"}),
 o(210418,{type="AsSubGenericObject"})}}),
@@ -52580,7 +52579,7 @@ r(124125,{learnedAt=550,requireSkill=165,u=51})}})}})})}),
 h(-45,{
 q(30581,{coords={{60.1,85.9,379}},qgs={59636},sourceQuests={30569,30570},g={
 o(211017,{type="AsGenericObjectContainer",g={
-i(80227,{q=1,type="AsSubGenericObject"}),
+i(80227,{q=1}),
 o(211017,{type="AsSubGenericObject"}),
 o(211018,{type="AsSubGenericObject"}),
 o(211019,{type="AsSubGenericObject"})}}),
@@ -52605,7 +52604,7 @@ s(269124,82503,{b=1,f=7,q=2}),
 s(269125,82504,{b=1,f=7,q=2})}}),
 q(30808,{coords={{64.7,61.7,379}},qgs={59371},g={
 o(211536,{type="AsGenericObjectContainer",g={
-i(81293,{q=1,type="AsSubGenericObject"}),
+i(81293,{q=1}),
 o(211536,{type="AsSubGenericObject"}),
 o(211537,{type="AsSubGenericObject"}),
 o(211538,{type="AsSubGenericObject"})}})}}),
@@ -52734,7 +52733,7 @@ i(81892,{q=1})})}}),
 q(30805,{coords={{60.6,21.3,379}},qgs={60785},sourceQuests={30794}}),
 q(30825,{coords={{40.3,81.5,379}},qgs={60677},g={
 o(211454,{type="AsGenericObjectContainer",g={
-i(81054,{b=1,f=55,q=1,type="AsSubGenericObject"}),
+i(81054,{b=1,f=55,q=1}),
 o(211454,{type="AsSubGenericObject"}),
 o(211480,{type="AsSubGenericObject"})}})}}),
 q(30994,{coords={{29.3,62.2,379}},qgs={61454},sourceQuests={30750,30751}}),
@@ -52807,7 +52806,7 @@ crit(23361,{achID=8307,id=3,r=1,rwp=50400,u=2})}}),
 q(30819,{coords={{60.6,21.3,379}},qgs={60785},sourceQuests={30805,30806,30807}}),
 q(30595,{coords={{59.6,78.2,379}},qgs={59821},g={
 o(211143,{type="AsGenericObjectContainer",g={
-i(80294,{q=1,type="AsSubGenericObject"}),
+i(80294,{q=1}),
 o(211143,{type="AsSubGenericObject"}),
 o(211147,{type="AsSubGenericObject"}),
 o(211148,{type="AsSubGenericObject"})}})}}),
@@ -52836,7 +52835,7 @@ s(274522,90913,{b=1,f=4,lvl=90,q=4}),
 s(274515,90906,{b=1,f=6,lvl=90,q=4})}}),
 q(30618,{coords={{57.7,61.7,379}},qgs={59695},sourceQuests={30999},g={
 o(211266,{type="AsGenericObjectContainer",g={
-i(80315,{q=1,type="AsSubGenericObject"}),
+i(80315,{q=1}),
 o(211266,{type="AsSubGenericObject"}),
 o(211268,{type="AsSubGenericObject"}),
 o(211269,{type="AsSubGenericObject"}),
@@ -56434,7 +56433,7 @@ i(83768,{q=1}),
 toy(88589,{b=1,q=1})}}),
 q(30898,{coords={{76.4,82.4,388}},qgs={61066},sourceQuests={30895},g={
 o(211871,{type="AsGenericObjectContainer",g={
-i(82723,{q=1,type="AsSubGenericObject"}),
+i(82723,{q=1}),
 o(211871,{type="AsSubGenericObject"}),
 o(211872,{type="AsSubGenericObject"}),
 o(211873,{type="AsSubGenericObject"})}})}}),
@@ -56480,7 +56479,7 @@ q(30788,{coords={{67.9,67.6,388}},qgs={60857},sourceQuests={30787},g={
 i(81319,{q=1})}}),
 q(30790,{coords={{67.9,67.6,388}},qgs={60857},sourceQuests={30815},g={
 o(211517,{type="AsGenericObjectContainer",g={
-i(81250,{q=1,type="AsSubGenericObject"}),
+i(81250,{q=1}),
 o(211517,{type="AsSubGenericObject"}),
 o(211518,{type="AsSubGenericObject"})}})}}),
 q(31048,{coords={{49,70.4,388}},isDaily=1,qgs={62304}}),
@@ -56574,7 +56573,7 @@ i(83138,{q=1})}}),
 q(30792,{coords={{67.9,67.6,388}},qgs={60857},sourceQuests={30815}}),
 q(30771,{coords={{71.1,56.6,388}},qgs={60688},sourceQuests={30814},g={
 o(211506,{type="AsGenericObjectContainer",g={
-i(81174,{q=1,type="AsSubGenericObject"}),
+i(81174,{q=1}),
 o(211506,{type="AsSubGenericObject"}),
 o(211507,{type="AsSubGenericObject"})}})}}),
 q(30930,{coords={{35.4,56.7,388}},qgs={61161},sourceQuests={30929},g={
@@ -56615,7 +56614,7 @@ q(31277,{coords={{49.5,70.5,388}},minReputation={1270,42000},qgs={63009},sourceQ
 mnt(127154,{b=1,itemID=87768,lvl=90,q=4})}}),
 q(30971,{coords={{67.3,80.6,388}},qgs={62124},sourceQuests={30901},g={
 o(212135,{type="AsGenericObjectContainer",g={
-i(83024,{q=1,type="AsSubGenericObject"}),
+i(83024,{q=1}),
 o(212135,{type="AsSubGenericObject"}),
 o(212136,{type="AsSubGenericObject"})}})}}),
 q(30981,{coords={{54,77.8,388}},qgs={62274},sourceQuests={31065}}),
@@ -56759,7 +56758,7 @@ i(84609,{b=1,f=51,q=2})}}),
 q(30924,{coords={{49.1,71.2,388}},qgs={61482},sourceQuests={30921,30923}}),
 q(30896,{coords={{70.4,86.3,388}},qgs={61881},sourceQuests={30891},g={
 o(211719,{type="AsGenericObjectContainer",g={
-i(82342,{q=1,type="AsSubGenericObject"}),
+i(82342,{q=1}),
 o(211719,{type="AsSubGenericObject"}),
 o(211721,{type="AsSubGenericObject"})}}),
 i(88487,{f=55,q=1})}}),
@@ -57902,7 +57901,7 @@ s(268664,81852,{b=1,f=20,q=2}),
 s(268665,81853,{b=1,f=23,q=2})}}),
 q(30028,{coords={{52.7,62.9,376}},qgs={57211},sourceQuests={30029,30030,30031},g={
 o(210001,{type="AsGenericObjectContainer",g={
-i(77033,{q=1,type="AsSubGenericObject"}),
+i(77033,{q=1}),
 o(210001,{type="AsSubGenericObject"}),
 o(210002,{type="AsSubGenericObject"})}})}}),
 q(29919,{coords={{75.3,35.5,376}},qgs={56133},sourceQuests={29918}}),

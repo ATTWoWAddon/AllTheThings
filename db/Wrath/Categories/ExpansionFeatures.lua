@@ -825,7 +825,7 @@ i(46069,{b=1,f=2,filterForRWP=2,lvl=77,q=1,races={1,2,3,4,5,6,7,8,10,11},u=31})}
 o(194908,{coords={{48.8,71.3,118}},maps={171},type="AsGenericObjectContainer",u=31,g={
 o(194908,{type="AsSubGenericObject",u=31}),
 o(194909,{type="AsSubGenericObject",u=31}),
-i(46106,{b=1,f=2,filterForRWP=2,lvl=75,q=1,races={1,2,3,4,5,6,7,8,10,11},type="AsSubGenericObject",u=31})}}),
+i(46106,{b=1,f=2,filterForRWP=2,lvl=75,q=1,races={1,2,3,4,5,6,7,8,10,11},u=31})}}),
 o(194622,{coords={{76,23.6,118}},r=1,u=31,g={
 i(46070,{b=1,f=2,filterForRWP=2,lvl=77,q=1,races={1,2,3,4,5,6,7,8,10,11},u=31})}})}}),
 h(-58,{u=31,g={

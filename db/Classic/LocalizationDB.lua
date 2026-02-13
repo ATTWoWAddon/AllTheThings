@@ -218,7 +218,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it i
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 L.CUSTOM_FILTERS_LABEL = "Automated Content";
 L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-L.DEATHS_CHECKBOX = "Deaths";
 L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
@@ -1086,6 +1085,7 @@ localize(L.HEADER_NAMES, {
 	[-388] = C_Map.GetAreaInfo(1769),
 	[-481] = "The Ahn'Qiraj War Effort",
 	[-483] = "The Scepter of the Shifting Sands",
+	[-484] = "The Scourge Invasion",
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-546] = "iCoke",
@@ -1127,6 +1127,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-367] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 	[-481] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
 	[-483] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+	[-484] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-546] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	[-547] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-610] = "If the following are sorted somewhere, please delete them from this list. Thanks.",
@@ -1226,6 +1227,7 @@ localize(L.HEADER_ICONS, {
 	[-388] = 236696,
 	[-481] = 132594,
 	[-483] = 133062,
+	[-484] = 135228,
 	[-520] = _.asset("promotion_blizzcon"),
 	[-521] = _.asset("promotion_collector"),
 	[-546] = 132797,
@@ -2500,7 +2502,7 @@ local ObjectIcons = {
 	[160845] = 132597,
 	[161495] = 132595,
 	[161505] = 132594,
-	[161521] = _.asset("icon_petfamily_mechanical"),
+	[161521] = 132594,
 	[161526] = 132594,
 	[161557] = 134014,
 	[161752] = 134063,
@@ -3546,6 +3548,13 @@ local phases = {
 		buildVersion = 11306,
 		state = 2,
 	},
+	[1601] = {
+		name = "Scourge Invasion",
+		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
+		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
 	[1602] = {
 		name = "Silithyst",
 		description = "|cFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r",
@@ -3560,13 +3569,6 @@ local phases = {
 		lore = "|cFFFFAAAAIf the Classic Era has begun, simply turn this on.|r",
 		minimumBuildVersion = 11301,
 		buildVersion = 11307,
-		state = 2,
-	},
-	[1610] = {
-		name = "Phase 6",
-		description = "|cFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, and the new Nightmare Grove raid|r",
-		minimumBuildVersion = 11500000,
 		state = 2,
 	},
 };
@@ -4625,6 +4627,13 @@ local achievements = {
 		operator = 5,
 		amount = 685,
 		criteria = {7898,6138,9221,9222,9243,6100,6117,6125,6127,6139,7896,6111,6113,6114,6115,6118,6121,6123,6126,7897,7899,8099,6108,6119,6134,6116,6106,6112,6102,6105,6132,6099,6101,6109,6110,6128,6129,6130,6133,6135,6137,6103,6131,6104,6107,6120,6136},
+	},
+	[2116] = {
+		name = "Tabard of the Argent Dawn",
+		description = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
+		icon = 135026,
+		category = 81,
+		criteria = {7493},
 	},
 	[2141] = {
 		name = "Stable Keeper",
@@ -9998,6 +10007,11 @@ local achievementCriterias = {
 		type = 36,
 		asset = 21110,
 	},
+	[7493] = {
+		name = "Tabard of the Argent Dawn",
+		type = 36,
+		asset = 22999,
+	},
 	[7767] = {
 		name = "Arena Grand Master item gained",
 		type = 36,
@@ -12325,7 +12339,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
-	[1610] = "|cFFAAFFAADies war erst Phase 6 von Season of Discovery verfügbar.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -12462,6 +12475,7 @@ for key,value in pairs({
 	[1677] = "Meister der Lehren der östlichen Königreiche",
 	[1678] = "Meister der Lehren in Kalimdor",
 	[1680] = "Meister der Lehren in Kalimdor",
+	[2116] = "Wappenrock der Argentumdämmerung",
 	[2141] = "Stallbesitzer",
 	[2142] = "Die Scheune wird voll",
 	[2336] = "Am Rande des Wahnsinns",
@@ -12618,6 +12632,7 @@ for key,value in pairs({
 	[1677] = "Schließt 550 Quests in den östlichen Königreichen ab.",
 	[1678] = "Schließt 700 Quests in Kalimdor ab.",
 	[1680] = "Schließt 685 Quests in Kalimdor ab.",
+	[2116] = "Einen Wappenrock der Argentumdämmerung durch das Ereignis 'Invasion der Geißel' erhalten.",
 	[2141] = "Erhaltet 10 Reittiere.",
 	[2142] = "Erhaltet 25 Reittiere.",
 	[2336] = "Erreicht bei den Blutsegelbukanieren den Status Wohlwollend und in der Beutebucht, der Ewigen Warte, Gadgetzan, Ratschet, dem Dunkelmond-Jahrmarkt, Rabenholdt und Shen'dralar den Status Ehrfürchtig.",
@@ -13656,6 +13671,7 @@ for key,value in pairs({
 	[6221] = "Schneller Kriegsschreiter",
 	[6222] = "Rotes Skelettschlachtross",
 	[7364] = "Drakonisch für Dummies",
+	[7493] = "Wappenrock der Argentumdämmerung",
 	[7767] = "Arenagroßmeister-Gegenstand erhalten",
 	[7869] = "Medaillon der Horde",
 	[7870] = "Medaillon der Allianz",
@@ -14859,7 +14875,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
-	[1610] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du Season of Discovery.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -14998,6 +15013,7 @@ for key,value in pairs({
 	[1677] = "Maître des traditions des Royaumes de l'est",
 	[1678] = "Maître des traditions de Kalimdor",
 	[1680] = "Maître des traditions de Kalimdor",
+	[2116] = "Tabard de l'Aube d'argent",
 	[2141] = "Gardien d'écuries",
 	[2142] = "L'écurie se remplit",
 	[2336] = "Tous des malades",
@@ -15154,6 +15170,7 @@ for key,value in pairs({
 	[1677] = "Achever 550 quêtes dans les Royaumes de l'est.",
 	[1678] = "Achever 700 quêtes en Kalimdor.",
 	[1680] = "Achever 685 quêtes en Kalimdor.",
+	[2116] = "Avoir obtenu un tabard de l'Aube d'argent lors de l'invasion du Fléau.",
 	[2141] = "Obtenir 10 montures.",
 	[2142] = "Obtenir 25 montures.",
 	[2336] = "Être honoré auprès de la Voile sanglante et exalté auprès de Baie-du-Butin, Long-Guet, Gadgetzan, Cabestan, la foire de Sombrelune, Ravenholdt et Shen’dralar.",
@@ -16192,6 +16209,7 @@ for key,value in pairs({
 	[6221] = "Faucon de guerre rapide",
 	[6222] = "Cheval de guerre squelette rouge",
 	[7364] = "Le draconique pour les nuls",
+	[7493] = "Tabard de l’Aube d’argent",
 	[7767] = "Objet Grand maître de l’arène obtenu",
 	[7869] = "Médaillon de la Horde",
 	[7870] = "Médaillon de l’Alliance",
@@ -16689,7 +16707,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
-	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -17718,6 +17735,7 @@ for key,value in pairs({
 	[6221] = "Swift Warstrider",
 	[6222] = "Red Skeletal Warhorse",
 	[7364] = "Draconic for Dummies",
+	[7493] = "Tabard of the Argent Dawn",
 	[7767] = "Arena Grand Master item gained",
 	[7869] = "Medallion of the Horde",
 	[7870] = "Medallion of the Alliance",
@@ -18594,7 +18612,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
-	[1610] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de Season of Discovery.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -18731,6 +18748,7 @@ for key,value in pairs({
 	[1677] = "Historiador dos Reinos do Leste",
 	[1678] = "Historiador de Kalimdor",
 	[1680] = "Historiador de Kalimdor",
+	[2116] = "Tabardo da Aurora Argêntea",
 	[2141] = "Cavalariço",
 	[2142] = "Peão de estábulo cheio",
 	[2336] = "Dormir não dá reputação",
@@ -18887,6 +18905,7 @@ for key,value in pairs({
 	[1677] = "Cumprir 550 missões nos Reinos do Leste.",
 	[1678] = "Cumprir 700 missões em Kalimdor.",
 	[1680] = "Cumprir 685 missões em Kalimdor.",
+	[2116] = "Obter um Tabardo da Aurora Argêntea no evento da Invasão do Flagelo.",
 	[2141] = "Obter 10 montarias.",
 	[2142] = "Obter 25 montarias.",
 	[2336] = "Elevar sua reputação para Honrado entre os Bucaneiros da Vela Sangrenta e Exaltado na Angra do Butim, Visteterna, Geringontzan, Vila Catraca, Feira de Negraluna, Corvoforte e Shen'dralar.",
@@ -19925,6 +19944,7 @@ for key,value in pairs({
 	[6221] = "Guerrastruz Veloz",
 	[6222] = "Cavalo de Guerra Descarnado Vermelho",
 	[7364] = "Dracônico para Leigos",
+	[7493] = "Tabardo da Aurora Argêntea",
 	[7767] = "Item do Grande Mestre da Arena obtido",
 	[7869] = "Medalhão da Horda",
 	[7870] = "Medalhão da Aliança",
@@ -20140,7 +20160,6 @@ L.CURSEFORGE_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать
 L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в |c" .. _.DefaultColors.Account .. "Режиме Аккаунта|r.|r";
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
-L.DEATHS_CHECKBOX = "Смерти";
 L.DEBUG_LOGIN = "Награда за вход в игру.\n\nОтличная работа! ВЫ СДЕЛАЛИ ЭТО!\n\nОтображается только в Режиме Отладки.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Режим Отладки |cffffffff(Показать Всё)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Буквально ... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
@@ -20684,6 +20703,7 @@ localize(L.HEADER_NAMES, {
 	[-367] = "Защитники Атал'ай",
 	[-481] = "Война в Ан'Кираже",
 	[-483] = "Скипетр Зыбучих песков",
+	[-484] = "Вторжение Плети",
 	[-521] = "Коллекционное издание",
 	[-559] = "Детская неделя",
 	[-574] = "Зимний Покров",
@@ -21497,7 +21517,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
-	[1610] = "|cFFAAFFAAЭто было недоступно до Phase 6 из Season of Discovery.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -21640,6 +21659,7 @@ for key,value in pairs({
 	[1677] = "Хранитель мудрости Восточных королевств",
 	[1678] = "Хранитель мудрости Калимдора",
 	[1680] = "Хранитель мудрости Калимдора",
+	[2116] = "Гербовая накидка Серебряного Рассвета",
 	[2141] = "Конюшенный",
 	[2142] = "Пополняя конюшню",
 	[2336] = "Чокнутый",
@@ -21796,6 +21816,7 @@ for key,value in pairs({
 	[1677] = "Выполните 550 заданий в Восточных королевствах.",
 	[1678] = "Выполните 700 заданий в Калимдоре.",
 	[1680] = "Выполните 685 заданий в Калимдоре.",
+	[2116] = "Получите Гербовую накидку Серебряного Рассвета во время вторжения Плети.",
 	[2141] = "Получите 10 средств передвижения.",
 	[2142] = "Получите 25 средств передвижения.",
 	[2336] = "Добейтесь того, чтобы пираты из шайки Кровавого Паруса начали относиться к вам с уважением, а обитатели Пиратской Бухты, Круговзора, Прибамбасска, Кабестана, ярмарки Новолуния, поместья Черного Ворона и шен'дралар начали вас превозносить.",
@@ -22834,6 +22855,7 @@ for key,value in pairs({
 	[6221] = "Стремительный боевой крылобег",
 	[6222] = "Красный боевой конь-скелет",
 	[7364] = "Драконий язык для чайников",
+	[7493] = "Гербовая накидка Серебряного Рассвета",
 	[7767] = "Получен знак великого мастера арены",
 	[7869] = "Медальон Орды",
 	[7870] = "Медальон Альянса",
@@ -23685,7 +23707,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
-	[1610] = "|cFFAAFFAAPhase 6(Season of Discovery)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -23828,6 +23849,7 @@ for key,value in pairs({
 	[1677] = "동부 왕국의 현자",
 	[1678] = "칼림도어의 현자",
 	[1680] = "칼림도어의 현자",
+	[2116] = "은빛 여명회 휘장",
 	[2141] = "마구간지기",
 	[2142] = "넘치는 마구간",
 	[2336] = "내가 미쳤어!",
@@ -23984,6 +24006,7 @@ for key,value in pairs({
 	[1677] = "동부 왕국 퀘스트 550개 완료",
 	[1678] = "칼림도어 퀘스트 700개 완료",
 	[1680] = "칼림도어 퀘스트 685개 완료",
+	[2116] = "스컬지 침공 이벤트에서 은빛 여명회 휘장 획득",
 	[2141] = "탈것 10개 획득",
 	[2142] = "탈것 25개 획득",
 	[2336] = "붉은해적단 우호적 평판을 달성하고 무법항, 눈망루 마을, 가젯잔, 톱니항, 다크문 유랑단, 라벤홀트 암살단, 셴드랄라와 확고한 동맹",
@@ -25022,6 +25045,7 @@ for key,value in pairs({
 	[6221] = "날쌘 전투 매타조",
 	[6222] = "붉은 전투해골마",
 	[7364] = "왕초보를 위한 용언 완전정복",
+	[7493] = "은빛 여명회 휘장",
 	[7767] = "최고검투사의 징표 획득",
 	[7869] = "호드의 메달",
 	[7870] = "얼라이언스의 메달",
@@ -25263,7 +25287,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.";
 L.CUSTOM_FILTERS_LABEL = "Contenido automatizado";
 L.DATA_TYPE_NOT_SUPPORTED = "Este tipo de datos no se admite en este momento.";
-L.DEATHS_CHECKBOX = "Muertes";
 L.DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
 L.DEBUG_LOGIN = "Otorgado por iniciar sesión.\n\n¡Buen trabajo! ¡LO LOGRASTE!\n\nSolo visible en modo de depuración.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Modo Depuración |cffffffff(Muestra todo)|r|r";
@@ -26708,9 +26731,9 @@ for key,value in pairs({
 	[1503] = "Guerra de 10 horas",
 	[1504] = "Ponerse al día",
 	[16] = "Fase 6",
+	[1601] = "Invasión de la Plaga",
 	[1602] = "Silitista",
 	[1603] = "Era Clásica",
-	[1610] = "Fase 6",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -26731,9 +26754,9 @@ for key,value in pairs({
 	[1503] = "|cFFAAFFAAEsto solo estaba disponible durante la Guerra de las 10 horas después de que el/los Señor(es) Escarabajo(s) tocaran el gong.|r",
 	[1504] = "|cFFAAFFAAEsto estuvo disponible cerca del final de la Fase 5 para proporcionar equipo de resistencia a la naturaleza para aquellos que todavía estaban trabajando en AQ40.|r",
 	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de WoW Classic.|r",
+	[1601] = "|cFFAAFFAAEsto solo estaba disponible durante la Invasión de la Plaga.|r",
 	[1602] = "|cFFAAFFAAEsto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.|r",
 	[1603] = "|cFFAAFFAAEsto solo estuvo disponible después del inicio de la Era Clásica.|r",
-	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de Season of Discovery.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -26749,9 +26772,9 @@ for key,value in pairs({
 	[1503] = "|cFFFFAAAASi se han abierto las Puertas de Ahn'Qiraj en tu servidor, simplemente desactiva esto.|r",
 	[1504] = "|cFFFFAAAASi el equipo de ponerse al día está disponible, simplemente actívelo|r",
 	[16] = "|cFFFFAAAASe Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.|r",
+	[1601] = "|cFFFFAAAASi la invasión de la Plaga ha finalizado en tu servidor, simplemente desactiva esta opción.|r",
 	[1602] = "|cFFFFAAAASi el evento JcJ de mundo está disponible, simplemente actívelo.|r",
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -26888,6 +26911,7 @@ for key,value in pairs({
 	[1677] = "Maestro cultural de los Reinos del Este",
 	[1678] = "Maestro cultural de Kalimdor",
 	[1680] = "Maestro cultural de Kalimdor",
+	[2116] = "Tabardo de El Alba Argenta",
 	[2141] = "Vigilante de establos",
 	[2142] = "Llenar el establo",
 	[2336] = "Demente supereminente",
@@ -27044,6 +27068,7 @@ for key,value in pairs({
 	[1677] = "Completa 550 misiones en los Reinos del Este.",
 	[1678] = "Completa 700 misiones en Kalimdor.",
 	[1680] = "Completa 685 misiones en Kalimdor.",
+	[2116] = "Has conseguido un Tabardo de El Alba Argenta del evento Invasión de la Plaga.",
 	[2141] = "Consigue 10 monturas.",
 	[2142] = "Consigue 25 monturas.",
 	[2336] = "Sube tu reputación hasta Honorable con los Bucaneros Velasangre, y hasta Exaltado con la Bahía del Botín, Vista Eterna, Gadgetzan, Trinquete, la Feria de la Luna Negra, Ravenholdt y Shen'dralar.",
@@ -28082,6 +28107,7 @@ for key,value in pairs({
 	[6221] = "Zancudo de guerra presto",
 	[6222] = "Caballo de guerra esquelético rojo",
 	[7364] = "Dracónico para torpes",
+	[7493] = "Tabardo de El Alba Argenta",
 	[7767] = "Conseguido objeto de gran maestro de arena",
 	[7869] = "Medallón de la Horda",
 	[7870] = "Medallón de la Alianza",
@@ -28418,10 +28444,6 @@ for key,value in pairs({
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto de venta|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
-})
-do phases[key].lore = value; end
 for key,value in pairs({
 	[428] = "Trueno Furioso, espada bendita del Hijo del Viento",
 	[685] = "Guarida de Alanegra",
@@ -29470,6 +29492,7 @@ for key,value in pairs({
 	[6221] = "Zancudo de guerra presto",
 	[6222] = "Caballo de guerra esquelético rojo",
 	[7364] = "Dracónico para principiantes",
+	[7493] = "Tabardo de El Alba Argenta",
 	[7767] = "Conseguido objeto de gran maestro de arena",
 	[7869] = "Medallón de la Horda",
 	[7870] = "Medallón de la Alianza",
@@ -29714,7 +29737,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 L.CUSTOM_FILTERS_LABEL = "自动化内容";
 L.DATA_TYPE_NOT_SUPPORTED = "当前不支持此数据类型。";
-L.DEATHS_CHECKBOX = "死亡";
 L.DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的情况，并将其显示为插件中的收藏品部分。\n\n注意：如果您关闭此选项，我们仍会跟踪它，但除非您处于调试模式，否则我们不会显示统计信息。";
 L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
@@ -30372,6 +30394,7 @@ localize(L.HEADER_NAMES, {
 	[-367] = "阿塔莱防御者",
 	[-481] = "安其拉之战捐献",
 	[-483] = "流沙节杖",
+	[-484] = "天灾入侵",
 	[-520] = "暴雪嘉年华",
 	[-521] = "典藏版",
 	[-546] = "可口可乐活动",
@@ -31081,7 +31104,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA该功能直到 Phase 6 的 Season of Discovery 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -31228,6 +31250,7 @@ for key,value in pairs({
 	[1677] = "东部王国的博学者",
 	[1678] = "卡利姆多的博学者",
 	[1680] = "卡利姆多的博学者",
+	[2116] = "银色黎明战袍",
 	[2141] = "马厩管理员",
 	[2142] = "坐骑满仓",
 	[2336] = "你疯了吧？！",
@@ -31384,6 +31407,7 @@ for key,value in pairs({
 	[1677] = "在东部王国完成550个任务。",
 	[1678] = "在卡利姆多完成700个任务。",
 	[1680] = "在卡利姆多完成685个任务。",
+	[2116] = "通过天灾入侵事件获得一件银色黎明战袍。",
 	[2141] = "获得10种坐骑。",
 	[2142] = "获得25种坐骑。",
 	[2336] = "将你在血帆海盗的声望提升到尊敬，藏宝海湾、永望镇、加基森、棘齿城、暗月马戏团、拉文霍德和辛德拉的声望提升到崇拜。",
@@ -32422,6 +32446,7 @@ for key,value in pairs({
 	[6221] = "迅捷作战陆行鸟",
 	[6222] = "红色骷髅战马",
 	[7364] = "龙语傻瓜教程",
+	[7493] = "银色黎明战袍",
 	[7767] = "获得竞技场大师饰物",
 	[7869] = "部落勋章",
 	[7870] = "联盟勋章",
@@ -33179,6 +33204,7 @@ localize(L.HEADER_NAMES, {
 	[-367] = "阿塔萊防衛者",
 	[-481] = "安其拉之戰捐獻",
 	[-483] = "流沙節杖",
+	[-484] = "天譴軍團入侵",
 	[-520] = "暴雪嘉年華",
 	[-546] = "可口可樂活動",
 	[-559] = "兒童週",
@@ -33223,7 +33249,6 @@ for key,value in pairs({
 	[4] = "PvP 精良/鬥士",
 	[5] = "不可學",
 	[7] = "貿易站",
-	[1610] = "第6階段",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -33239,7 +33264,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA該功能直到 第6階段 的 Season of Discovery 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -33362,6 +33386,7 @@ for key,value in pairs({
 	[1677] = "東部王國博學大師",
 	[1678] = "卡林多博學大師",
 	[1680] = "卡林多博學大師",
+	[2116] = "銀色黎明外袍",
 	[2141] = "獸欄管理者",
 	[2142] = "塞滿獸倉",
 	[2336] = "頭腦異常",
@@ -33516,6 +33541,7 @@ for key,value in pairs({
 	[1677] = "在東部王國完成550個任務。",
 	[1678] = "在卡林多完成700個任務。",
 	[1680] = "在卡林多完成685個任務。",
+	[2116] = "從天譴軍團入侵事件獲得銀色黎明外袍。",
 	[2141] = "獲得10隻坐騎。",
 	[2142] = "獲得25隻坐騎。",
 	[2336] = "將你血帆海盜的聲望提高至尊敬，藏寶海灣、永望鎮、加基森、棘齒城、暗月馬戲團、拉文霍德和辛德拉的聲望提高至崇拜。",
@@ -34554,6 +34580,7 @@ for key,value in pairs({
 	[6221] = "迅捷戰鬥陸行鷹",
 	[6222] = "紅色骷髏戰馬",
 	[7364] = "龍語傻瓜教程",
+	[7493] = "銀色黎明外袍",
 	[7767] = "取得競技場宗師飾物",
 	[7869] = "部落勳章",
 	[7870] = "聯盟勳章",

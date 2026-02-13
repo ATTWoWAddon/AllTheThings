@@ -146,7 +146,7 @@ toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)
 de(9265,{itemID=253244,spellID=1255878})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 de(9273,{itemID=253257,spellID=1255907})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 de(9280,{itemID=253296,spellID=1255997})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{spellID=1286271})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 s(298858,253402,{f=29})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 en(257547,{questID=93198,spellID=1261729,tmogSetID=5335,g={
@@ -159,7 +159,7 @@ s(301200,257543,{f=2}),
 s(301201,257544,{f=2}),
 s(301202,257545,{f=3})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,spellID=1286271,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(251542,{f=55,spellID=1252638})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(269009,{f=100,spellID=1284640})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -839,7 +839,7 @@ s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
 s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,rwp=110005,u=2}),
 p(4615,{description="In the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your pet.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until Parrlok Parrlok is yours!\n\nPromotion is available from August 23rd, 2024 until September 8th, 2024 (11:59PM UTC).",itemID=228758,npcID=229846,spellID=463079,u=2}),
-s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000})}}),
+s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2})}}),
 h(-542,{awp=50300,u=3,g={
 ach(8345,{providers={{"s",142073}},u=3}),
 mnt(142073,{b=1,itemID=98618,lvl=10,u=3})}}),
@@ -1540,7 +1540,7 @@ toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
 q(75223,{repeatable=1,g={
-i(202395,{spellID=405852,type="AsSubGenericObject"})}}),
+i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={a[2]},g={
 crit(57983,{achID=17360,id=1})}}),
 q(73389,{cost={{"i",202395,1}},providers={a[2]},g={
@@ -1571,7 +1571,7 @@ q(73393,{cost={{"i",202395,1}},providers={a[2]},g={
 crit(57994,{achID=17361,id=7})}})}),
 h(-56,{
 o(385958,{type="AsGenericObjectContainer",g={
-i(202162,{b=1,type="AsSubGenericObject"}),
+i(202162,{b=1}),
 o(385958,{coords={{45.7,47.2,2112}},questID=73180,type="AsSubGenericObject"}),
 o(387696,{coords={{31.1,37.4,84}},questID=74844,type="AsSubGenericObject"}),
 o(387697,{coords={{54.4,77.5,85}},questID=74845,type="AsSubGenericObject"}),
@@ -1580,7 +1580,7 @@ o(386138,{coords={a[8]},questID=73928,type="AsSubGenericObject"}),
 o(386139,{coords={a[22]},questID=73936,type="AsSubGenericObject"}),
 o(387695,{coords={a[17]},questID=74843,type="AsSubGenericObject"})}}),
 o(386140,{type="AsGenericObjectContainer",g={
-i(202395,{spellID=405852,type="AsSubGenericObject"}),
+i(202395,{spellID=405852}),
 o(386140,{coords={{75.3,86.1,84}},questID=73952,type="AsSubGenericObject"}),
 o(386157,{coords={{38.7,45.9,84}},questID=74286,type="AsSubGenericObject"}),
 o(387718,{coords={{54,75.3,85}},questID=74848,type="AsSubGenericObject"}),

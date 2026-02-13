@@ -710,7 +710,7 @@ s(22213,46069,{b=1,f=2,lvl=25,r=2,spellID=62853})}}),
 o(194908,{coords={{48.8,71.3,118}},maps={171},type="AsGenericObjectContainer",g={
 o(194908,{type="AsSubGenericObject"}),
 o(194909,{type="AsSubGenericObject"}),
-s(22234,46106,{b=1,f=2,lvl=25,spellID=62853,type="AsSubGenericObject"})}}),
+s(22234,46106,{b=1,f=2,lvl=25,spellID=62853})}}),
 o(194622,{coords={{76,23.6,118}},r=1,g={
 s(22214,46070,{b=1,f=2,lvl=25,r=1,spellID=62853})}})}),
 h(-58,{
@@ -11374,7 +11374,7 @@ artifact(107,{c=a[2833]})}})}})}})}),
 cl(6.251,{
 q(38990,{c=a[2833],coords={a[3198],a[2663]},lvl=10,maps={698,700,701},qgs=a[206],sourceQuests=a[1723],sqreq=1,g={
 o(251882,{c=a[2833],coords={{51.5,41.5,700},{51.6,49.6,700},{52.5,66.5,700},{60.1,54.7,700}},type="AsGenericObjectContainer",g={
-i(127009,{b=1,c=a[2833],spellID=218934,type="AsSubGenericObject"}),
+i(127009,{b=1,c=a[2833],spellID=218934}),
 o(251882,{c=a[2833],type="AsSubGenericObject"}),
 o(251884,{c=a[2833],type="AsSubGenericObject"}),
 o(251885,{c=a[2833],type="AsSubGenericObject"}),
@@ -11675,7 +11675,7 @@ q(42128,{c=a[3464],coords={a[2573],a[1581]},lvl=10,qgs=a[202],sourceQuests=a[172
 o(249748,{c=a[3464],coords={{48.6,38.5,627}},g={
 i(136987,{c=a[3464]})}}),
 o(249744,{c=a[3464],coords={{38.6,24.9,627}},type="AsGenericObjectContainer",g={
-i(136985,{c=a[3464],type="AsSubGenericObject"}),
+i(136985,{c=a[3464]}),
 o(249744,{c=a[3464],type="AsSubGenericObject"}),
 o(245661,{c=a[3464],type="AsSubGenericObject"})}}),
 o(249742,{c=a[3464],coords={{34.7,38.1,627}},g={
@@ -11744,7 +11744,7 @@ q(41769,{c=a[3464],coords={a[2444]},lvl=45,qgs=a[245],sourceQuests={41768}}),
 q(41781,{c=a[3464],coords={a[1628]},lvl=45,qgs=a[239],sourceQuests={41769}}),
 q(41780,{c=a[3464],coords={a[1628]},lvl=45,qgs=a[239],sourceQuests={41781},g={
 o(248782,{c=a[3464],coords={{60.4,70.7,641},{60.6,71.1,641},{61,73.4,641},{61.2,69.8,641},{61.8,71.7,641},{62,73.6,641},{62.2,70.8,641},{62.2,72.6,641},{62.6,71.2,641},{62.9,75.4,641},{63,73.5,641},{63.6,72.2,641},{63.8,74.3,641},{63.9,71.4,641},{64,74,641},{64.8,72.3,641},{64.9,73.1,641}},type="AsGenericObjectContainer",g={
-i(128758,{c=a[3464],type="AsSubGenericObject"}),
+i(128758,{c=a[3464]}),
 o(248782,{c=a[3464],type="AsSubGenericObject"}),
 o(248781,{c=a[3464],type="AsSubGenericObject"})}}),
 i(128330,{c=a[3464]}),
@@ -12130,12 +12130,12 @@ h(-56,{c=a[308],g={
 o(253150,{c=a[308],coords={{45.3,62.9,747}},type="AsGenericObjectContainer",g={
 o(253150,{c=a[308],type="AsSubGenericObject"}),
 o(253180,{c=a[308],type="AsSubGenericObject"}),
-i(140352,{b=1,c=a[308],f=55,lvl=40,spellID=223602,type="AsSubGenericObject"})}}),
+i(140352,{b=1,c=a[308],f=55,lvl=40,spellID=223602})}}),
 o(253157,{c=a[308],coords={{45.6,63.7,747}},type="AsGenericObjectContainer",g={
 o(253157,{c=a[308],type="AsSubGenericObject"}),
 o(253183,{c=a[308],type="AsSubGenericObject"}),
-i(140347,{c=a[308],f=55,lvl=40,spellID=223573,type="AsSubGenericObject"}),
-i(140351,{c=a[308],f=55,lvl=40,spellID=223595,type="AsSubGenericObject"})}})}}),
+i(140347,{c=a[308],f=55,lvl=40,spellID=223573}),
+i(140351,{c=a[308],f=55,lvl=40,spellID=223595})}})}}),
 h(-58,{c=a[308],g={
 n(112323,{c=a[308],coords={a[1667]},sym={{"select","itemID",143727}},g={
 s(81000,139728,{b=1,c=a[308],cost=5000000,f=5,lvl=45,minReputation=a[908]}),
@@ -14243,7 +14243,7 @@ i(138624,{c=a[195]})}})}}),
 q(42767,{c=a[195],coords={a[1753]},lvl=10,qgs=a[290],sourceQuests=a[1878],g={
 i(173704,{awp=90001,c=a[195],spellID=311857}),
 o(251422,{c=a[195],coords={{51.1,60.8,376},{51.3,63.3,376},{51.3,64.9,376},{51.7,62.5,376},{52.3,64.8,376},{52.6,63.5,376},{53.1,60.8,376}},type="AsGenericObjectContainer",g={
-i(138623,{c=a[195],type="AsSubGenericObject"}),
+i(138623,{c=a[195]}),
 o(251422,{c=a[195],type="AsSubGenericObject"}),
 o(251424,{c=a[195],type="AsSubGenericObject"})}})}}),
 q(42957,{c=a[195],lvl=10,maps=a[1594],qgs={109049},sourceQuests={42766,42767,42768},g={
@@ -16574,7 +16574,7 @@ i(161241)}}),
 o(292782,{coords={{40.7,75.4,864},{40.8,76,864}},type="AsGenericObjectContainer",g={
 o(292782,{type="AsSubGenericObject"}),
 o(292783,{type="AsSubGenericObject"}),
-i(161240,{type="AsSubGenericObject"})}})}}),
+i(161240)}})}}),
 q(52034,{coords={a[1738]},lvl=50,qgs=a[535],r=2,sourceQuests=a[2344]}),
 q(52036,{coords={a[1738]},lvl=50,qgs={139722},r=2,sourceQuests=a[2344],g={
 i(161333,{spellID=275066})}}),
@@ -16886,11 +16886,11 @@ q(51590,{coords={{87,50.5,895}},lvl=50,qgs=a[522],r=1,sourceQuests={51589}}),
 q(51591,{coords={{71.2,50.9,895}},lvl=50,qgs=a[522],r=1,sourceQuests={51590}}),
 q(51592,{coords={a[3188]},lvl=50,qgs=a[522],r=1,sourceQuests=a[2300],g={
 o(290708,{type="AsGenericObjectContainer",g={
-i(160511,{type="AsSubGenericObject"}),
+i(160511),
 o(290708,{type="AsSubGenericObject"}),
 o(290711,{type="AsSubGenericObject"})}}),
 o(290709,{type="AsGenericObjectContainer",g={
-i(160512,{type="AsSubGenericObject"}),
+i(160512),
 o(290709,{type="AsSubGenericObject"}),
 o(290710,{type="AsSubGenericObject"})}})}}),
 q(51593,{coords={a[3188]},lvl=50,qgs=a[523],r=1,sourceQuests=a[2300]}),
@@ -17379,7 +17379,7 @@ q(54825,{isWorldQuest=1,r=2}),
 q(54823,{isWorldQuest=1,r=2}),
 q(54678,{isWorldQuest=1,r=2,g={
 o(313446,{type="AsGenericObjectContainer",g={
-i(166287,{type="AsSubGenericObject"}),
+i(166287),
 o(313446,{type="AsSubGenericObject"}),
 o(313447,{type="AsSubGenericObject"}),
 o(313448,{type="AsSubGenericObject"})}})}}),
@@ -17426,7 +17426,7 @@ q(54497,{isWorldQuest=1,r=1}),
 q(54797,{isWorldQuest=1,r=1}),
 q(54795,{isWorldQuest=1,r=1}),
 q(54531,{isWorldQuest=1,r=1,g={
-i(166287,{type="AsSubGenericObject"})}}),
+i(166287)}}),
 q(54809,{isWorldQuest=1,r=1}),
 q(54793,{isWorldQuest=1,r=1}),
 q(54528,{isWorldQuest=1,r=1}),
@@ -21816,7 +21816,7 @@ i(174526,{customCollect=a[169]}),
 o(355915,{customCollect=a[169],type="AsGenericObjectContainer",g={
 o(355915,{customCollect=a[169],type="AsSubGenericObject"}),
 o(340843,{customCollect=a[169],type="AsSubGenericObject"}),
-i(174534,{customCollect=a[169],type="AsSubGenericObject"})}}),
+i(174534,{customCollect=a[169]})}}),
 o(340839,{customCollect=a[169],g={
 i(174524,{customCollect=a[169]})}})}}),
 q(60042,{coords={a[2523]},customCollect=a[169],lvl=60,qgs=a[780],sourceQuests=a[2857]}),
@@ -23964,7 +23964,7 @@ q(62144,{customCollect=a[171],isDaily=1}),
 q(62134,{customCollect=a[171],isDaily=1}),
 q(60930,{coords={{32.9,57.6,1644}},customCollect=a[171],isDaily=1,lvl=60,qgs={165500},repeatable=1,g={
 o(354079,{customCollect=a[171],type="AsGenericObjectContainer",g={
-i(180470,{b=1,customCollect=a[171],type="AsSubGenericObject"}),
+i(180470,{b=1,customCollect=a[171]}),
 o(354079,{customCollect=a[171],type="AsSubGenericObject"}),
 o(354080,{customCollect=a[171],type="AsSubGenericObject"}),
 o(354081,{customCollect=a[171],type="AsSubGenericObject"}),
@@ -26521,7 +26521,7 @@ o(376386,{type="AsSubGenericObject"}),
 o(383734,{type="AsSubGenericObject"}),
 o(383733,{type="AsSubGenericObject"}),
 o(382029,{type="AsSubGenericObject"}),
-s(183350,201388,{f=28,lvl=60,type="AsSubGenericObject"})}}),
+s(183350,201388,{f=28,lvl=60})}}),
 o(376587,{maps=a[989],sym={{"select","itemID",199061,199062,194540,198843,199065,199066,199067,199068,198852,193891,193897,192131,192132,193900,193901,193902,193903,193904,193905,193909,193907,193910,193913,193898,193899}},g={
 s(183353,201391,{f=35,lvl=60}),
 s(183349,201387,{f=29,lvl=60}),
@@ -29860,9 +29860,9 @@ s(185824,204755,{b=1,f=27,lvl=70}),
 s(185827,204737,{b=1,f=35,lvl=70})})}}),
 h(-56,{
 o(398815,{cost={{"i",203710,3}},sym={{"select","headerID",-470},{"pop"},{"where","headerID",-29},{"pop"}},type="AsGenericObjectContainer",g={
-flt(101,{type="AsSubGenericObject",g={
+flt(101,{
 p(3512,{b=1,itemID=205003,npcID=204221,spellID=407921}),
-p(3511,{b=1,itemID=205002,npcID=204217,spellID=407918})}}),
+p(3511,{b=1,itemID=205002,npcID=204217,spellID=407918})}),
 mm(196965,{b=1,questID=69165}),
 mm(197156,{b=1,questID=69357}),
 mm(197353,{b=1,questID=69554}),

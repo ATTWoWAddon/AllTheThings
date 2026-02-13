@@ -425,7 +425,7 @@ i(9313,{e=17,f=55,q=1}),
 i(9318,{e=17,f=55,q=1}),
 i(9314,{e=17,f=55,q=1}),
 i(9315,{e=17,f=55,q=1})}})}}),
-h(-579,{e=9,g={
+h(-579,{awp=11101,e=9,g={
 h(-19,{e=9,g={
 s(164851,22206,{b=1,crs={8929,10811,10901,11488},e=9,f=1,maps={234,242,317,476},q=2})}}),
 h(-45,{e=9,g={
@@ -495,11 +495,11 @@ i(22218,{e=9,f=55,q=1}),
 i(22261,{e=9,q=1}),
 s(164885,22279,{e=9,f=2,q=1,rwp=70205}),
 i(22200,{b=1,e=9,q=1}),
-p(122,{awp=11101,b=1,e=9,itemID=22235,petTypeID=1,q=1,spellID=27570}),
+p(122,{b=1,e=9,itemID=22235,petTypeID=1,q=1,spellID=27570}),
 i(22259,{b=1,e=9,f=55,q=1,rwp=30302})}}),
 h(-22,{e=9,sharedDescription="Can be purchased from innkeepers.",g={
-i(21833,{awp=80100,e=9,f=55,q=1,rwp=30302}),
-i(21829,{awp=80100,e=9,f=55,q=1,rwp=30302}),
+i(21833,{e=9,f=55,q=1,rwp=30302}),
+i(21829,{e=9,f=55,q=1,rwp=30302}),
 i(21815,{b=1,e=9,f=55,q=1,rwp=30302})}}),
 h(-63,{cost={{"i",21815,1},{"i",21829,1},{"i",21833,1}},description="Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",e=9,rwp=30302,g={
 i(22262,{cost={{"i",22131,1},{"i",22132,1},{"i",22133,1}},e=9,maps={1453,1455,1457},q=1,r=2}),
@@ -545,8 +545,7 @@ i(22298,{cost={{"i",22174,5}},e=9,f=55,maps={1458},q=1,r=1}),
 i(22299,{cost={{"i",22145,5}},e=9,f=55,maps={1458},q=1,r=1}),
 i(22145,{e=9,f=55,maps={1458},providers={{"i",22157},{"i",22163}},q=1,r=1}),
 i(22121,{e=9,f=55,maps={1458},providers={{"i",22157},{"i",22163}},q=1,r=1}),
-i(22174,{e=9,f=55,maps={1458},providers={{"i",22166},{"i",22172}},q=1,r=1})}}),
-prof(356,{e=9})}}),
+i(22174,{e=9,f=55,maps={1458},providers={{"i",22166},{"i",22172}},q=1,r=1})}})}}),
 h(-580,{e=18,g={
 h(-39,{e=18,g={
 i(21746,{b=1,e=18,f=55,q=1,g={

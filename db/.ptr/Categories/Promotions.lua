@@ -1532,7 +1532,7 @@ toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
 q(75223,{repeatable=1,g={
-i(202395,{spellID=405852,type="AsSubGenericObject"})}}),
+i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={a[2]},g={
 crit(57983,{achID=17360,id=1})}}),
 q(73389,{cost={{"i",202395,1}},providers={a[2]},g={
@@ -1563,7 +1563,7 @@ q(73393,{cost={{"i",202395,1}},providers={a[2]},g={
 crit(57994,{achID=17361,id=7})}})}),
 h(-56,{
 o(385958,{type="AsGenericObjectContainer",g={
-i(202162,{b=1,type="AsSubGenericObject"}),
+i(202162,{b=1}),
 o(385958,{coords={{45.7,47.2,2112}},questID=73180,type="AsSubGenericObject"}),
 o(387696,{coords={{31.1,37.4,84}},questID=74844,type="AsSubGenericObject"}),
 o(387697,{coords={{54.4,77.5,85}},questID=74845,type="AsSubGenericObject"}),
@@ -1572,7 +1572,7 @@ o(386138,{coords={a[8]},questID=73928,type="AsSubGenericObject"}),
 o(386139,{coords={a[22]},questID=73936,type="AsSubGenericObject"}),
 o(387695,{coords={a[17]},questID=74843,type="AsSubGenericObject"})}}),
 o(386140,{type="AsGenericObjectContainer",g={
-i(202395,{spellID=405852,type="AsSubGenericObject"}),
+i(202395,{spellID=405852}),
 o(386140,{coords={{75.3,86.1,84}},questID=73952,type="AsSubGenericObject"}),
 o(386157,{coords={{38.7,45.9,84}},questID=74286,type="AsSubGenericObject"}),
 o(387718,{coords={{54,75.3,85}},questID=74848,type="AsSubGenericObject"}),

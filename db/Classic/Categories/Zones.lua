@@ -4095,7 +4095,6 @@ r(28480,{b=1,itemID=22774,learnedAt=300,minReputation={609,21000},q=1,requireSki
 n(15176,{coords={{51.2,38.8,1451}},g={
 r(27585,{b=1,itemID=22209,learnedAt=300,minReputation={609,3000},q=1,requireSkill=164,u=15}),
 r(28463,{b=1,itemID=22768,learnedAt=300,minReputation={609,3000},q=1,requireSkill=164,u=1504}),
-i(234278,{awp=11505,b=1,f=200,minReputation={609,9000},q=2,requireSkill=186,u=1610}),
 r(28462,{b=1,itemID=22767,learnedAt=300,minReputation={609,9000},q=1,requireSkill=164,u=1504}),
 r(27588,{b=1,itemID=22214,learnedAt=300,minReputation={609,9000},q=1,requireSkill=164,u=15}),
 r(28461,{b=1,itemID=22766,learnedAt=300,minReputation={609,21000},q=1,requireSkill=164,u=1504})}}),
@@ -10322,8 +10321,8 @@ s(160371,11860,{b=1,f=27,q=2}),
 s(160372,11861,{b=1,f=6,q=2})}}),
 q(7704,{awp=30300,lvl=45,providers={{"i",18950},{"n",14636},{"o",179832}},u=1,g={
 i(18951,{b=1,f=53,q=2,u=1})}}),
-q(3377,{lvl=40,qgs={8436},r=2,rwp=40003}),
-q(3378,{lvl=40,maps={1457},qgs={8436},r=2,rwp=40003,sourceQuests={3377},g={
+q(3377,{coords={{29.6,26.6,1427}},lvl=40,qgs={8436},r=2,rwp=40003}),
+q(3378,{coords={{29.6,26.6,1427}},lvl=40,maps={1457},qgs={8436},r=2,rwp=40003,sourceQuests={3377},g={
 qo(1,{crs={5860,5861,5862,8419},providers={{"i",10458}}}),
 s(160143,10745,{b=1,f=5,q=2}),
 s(160144,10746,{b=1,f=7,q=2})}}),

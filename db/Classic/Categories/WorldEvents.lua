@@ -2,7 +2,7 @@
 ---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnGetDataCache", function(categories)
-local ach,h,i,mnt,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,h,i,mnt,n,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.WorldEvents={
 h(-103),
 h(-481,{maps={1454,1455},rwp=20001,u=1501,g={
@@ -336,5 +336,125 @@ s(164645,21522,{b=1,f=20,lvl=60,q=4,u=15}),
 s(164644,21521,{b=1,f=25,lvl=60,q=4,u=15}),
 s(164643,21520,{b=1,f=25,lvl=60,q=4,u=15})}}),
 q(8734,{coords={{37.5,47.9,1438}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733},u=15}),
-q(8286,{coords={{49.5,36.4,1451}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=15})}})}})};
+q(8286,{coords={{49.5,36.4,1451}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=15})}})}}),
+h(-484,{maps={1419,1423,1428,1446,1447,1452},rwp=30003,u=1601,g={
+h(-12,{u=1601,g={
+ach(2116,{providers={{"i",22999}},rwp=30002,u=1601})}}),
+h(-45,{u=1601,g={
+q(9094,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+s(165181,23084,{b=1,f=4,q=3,u=1601}),
+s(165179,23081,{b=1,f=5,q=3,u=1601}),
+s(165180,23082,{b=1,f=6,q=3,u=1601}),
+s(165178,23078,{b=1,f=7,q=3,u=1601})}}),
+q(9333,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+s(165181,23084,{b=1,f=4,q=3,u=1601}),
+s(165179,23081,{b=1,f=5,q=3,u=1601}),
+s(165180,23082,{b=1,f=6,q=3,u=1601}),
+s(165178,23078,{b=1,f=7,q=3,u=1601})}}),
+q(9318,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601})}}),
+q(9334,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601})}}),
+q(9317,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9335,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},providers={{"i",22949}},qgs={16431},r=2,u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601}),
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},u=1601}),
+q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},u=1601}),
+q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},providers={{"i",22950}},qgs={16531},r=1,u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601}),
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9262,{coords={{77.7,42.7,1457}},isYearly=1,maps={1438},qgs={16495},r=2,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9261,{coords={{53.2,35,1426}},isYearly=1,maps={1455},qgs={16484},r=2,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9263,{coords={{51.7,83.3,1454}},isYearly=1,maps={1411},qgs={16493},r=1,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9260,{coords={{63.8,75.5,1453}},isYearly=1,maps={1429},qgs={16478},r=2,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9265,{coords={{66.2,21.4,1458}},isYearly=1,maps={1420},qgs={16494},r=1,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9264,{coords={{33.1,59.9,1456}},isYearly=1,maps={1412},qgs={16490},r=1,u=1601,g={
+qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
+q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},u=1601}),
+q(9154,{coords={{53.1,35,1426},{55,62,1453},{64.1,75,1453},{51.7,83.6,1454},{53.1,73.6,1454},{35.3,68.7,1455},{32.9,60.1,1456},{43.5,53.2,1456},{64.5,44.2,1457},{77.3,42.8,1457},{49.5,32.1,1458},{65.9,21.4,1458}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},u=1601}),
+q(9321,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(13446,{f=55,lvl=45,q=1})}}),
+q(9336,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(13446,{f=55,lvl=45,q=1})}}),
+q(9337,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(13444,{f=55,lvl=49,q=1})}}),
+q(9320,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+i(13444,{f=55,lvl=49,q=1})}}),
+q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},u=1601}),
+q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},u=1601}),
+q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},u=1601}),
+q(9085,{coords={{81.1,60.6,1423}},isYearly=1,lvl=50,qgs={16361},u=1601,g={
+qo(1,{providers={{"n",16143}},u=1601}),
+i(23123,{b=1,lvl=50,q=2,u=1601}),
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9341,{coords={{81,59.8,1423},{54.7,62.2,1453},{34,66.4,1455},{64.3,44.5,1457}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+s(165148,22999,{b=1,f=9,q=1,u=1601})}}),
+q(9343,{coords={{80.8,59.6,1423},{52.5,73.7,1454},{43.7,52.6,1456},{49.9,29.4,1458}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
+s(165148,22999,{b=1,f=9,q=1,u=1601})}}),
+q(9247,{coords={{81.1,60.5,1423}},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,providers={{"i",22723}},qgs={16281},u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601}),
+i(23122,{b=1,lvl=50,q=2,u=1601})}}),
+q(9153,{coords={{81.1,60.6,1423}},cost={{"i",22484,10}},isYearly=1,lvl=50,qgs={16361},u=1601,g={
+i(23123,{b=1,lvl=50,q=2,u=1601}),
+i(23122,{b=1,lvl=50,q=2,u=1601})}})}}),
+n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},u=1601,g={
+s(165190,23124,{b=1,f=28,lvl=55,q=3,u=1601}),
+i(23125,{b=1,f=51,lvl=55,q=3,u=1601}),
+s(165191,23126,{b=1,f=4,lvl=55,q=3,u=1601})}}),
+n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},u=1601,g={
+s(165202,23177,{b=1,f=27,lvl=36,q=3,races={1,2,3,4,5,6,7,8},u=1601}),
+s(165203,23178,{b=1,f=3,lvl=36,q=3,u=1601})}}),
+n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},u=1601,g={
+s(165197,23156,{b=1,f=1,lvl=57,q=3,u=1601}),
+s(165195,23132,{b=1,f=25,lvl=57,q=3,u=1601}),
+s(165196,23139,{b=1,f=8,lvl=57,q=3,u=1601})}}),
+n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},u=1601,g={
+s(165192,23127,{b=1,f=3,lvl=58,q=3,u=1601}),
+s(165194,23129,{b=1,f=4,lvl=57,q=3,u=1601}),
+s(165193,23128,{b=1,f=4,lvl=57,q=3,u=1601})}}),
+n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},u=1601,g={
+s(165198,23168,{b=1,f=20,lvl=30,q=3,u=1601}),
+i(23169,{b=1,f=51,lvl=30,q=3,u=1601}),
+s(165199,23170,{b=1,f=6,lvl=30,q=3,u=1601})}}),
+n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},u=1601,g={
+s(165200,23171,{b=1,f=22,lvl=20,q=3,u=1601}),
+s(165201,23173,{b=1,f=4,lvl=20,q=3,u=1601})}}),
+n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",u=1601,g={
+i(22484,{b=1,q=2,u=1601}),
+s(165183,23087,{b=1,f=7,lvl=58,q=3,rwp=20001,u=1601}),
+s(165184,23088,{b=1,f=6,lvl=58,q=3,rwp=20001,u=1601}),
+s(165182,23085,{b=1,f=4,lvl=58,q=3,rwp=20001,u=1601}),
+s(165185,23089,{b=1,f=5,lvl=58,q=3,rwp=20001,u=1601})}}),
+h(-63,{crs={16141,16298,16299,16383},u=1601,g={
+i(22484,{b=1,q=2,u=1601}),
+i(22970,{b=1,lvl=45,q=1,u=1601}),
+i(22972,{b=1,lvl=45,q=1,u=1601}),
+i(22973,{b=1,lvl=45,q=1,u=1601}),
+i(22974,{b=1,lvl=45,q=1,u=1601}),
+i(22975,{b=1,lvl=45,q=1,u=1601}),
+i(22977,{b=1,lvl=45,q=1,u=1601})}}),
+h(-46,{crs={14697,16379,16380},u=1601,g={
+s(165187,23091,{f=4,lvl=58,q=3,rwp=20001,u=1601}),
+s(165189,23093,{f=5,lvl=58,q=3,rwp=20001,u=1601}),
+s(165188,23092,{f=6,lvl=58,q=3,rwp=20001,u=1601}),
+s(165186,23090,{f=7,lvl=58,q=3,rwp=20001,u=1601})}}),
+h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=1601,g={
+i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=1601}),
+i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=1601}),
+i(23195,{b=1,crs={16433,16435},description="1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",f=55,q=1,u=1601}),
+i(23008,{b=1,q=1,u=1601}),
+i(23010,{b=1,q=1,u=1601}),
+i(23011,{b=1,q=1,u=1601}),
+i(23012,{b=1,q=1,u=1601}),
+i(23013,{b=1,q=1,u=1601}),
+i(23016,{b=1,q=1,u=1601})}})}})};
 end);

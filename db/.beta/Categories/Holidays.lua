@@ -6516,7 +6516,7 @@ i(211922,{e=9,isDaily=1,spellID=103261}),
 i(49927,{f=106,isDaily=1,isYearly=1})}}),
 q(78565,{awp=100205,coords={a[433]},e=9,isDaily=1,lvl=10,qgs=a[299],r=2,g={
 o(411560,{e=9,isDaily=1,type="AsGenericObjectContainer",g={
-i(210719,{e=9,isDaily=1,type="AsSubGenericObject"}),
+i(210719,{e=9,isDaily=1}),
 o(411560,{e=9,isDaily=1,type="AsSubGenericObject"}),
 o(416448,{e=9,isDaily=1,type="AsSubGenericObject"}),
 o(416450,{e=9,isDaily=1,type="AsSubGenericObject"}),
@@ -6525,7 +6525,7 @@ o(411561,{e=9,isDaily=1,type="AsSubGenericObject"})}}),
 i(49927,{f=106,isDaily=1,isYearly=1})}}),
 q(78986,{awp=100205,coords={a[495]},e=9,isDaily=1,lvl=10,qgs=a[305],r=1,g={
 o(411560,{e=9,isDaily=1,type="AsGenericObjectContainer",g={
-i(210719,{e=9,isDaily=1,type="AsSubGenericObject"}),
+i(210719,{e=9,isDaily=1}),
 o(411560,{e=9,isDaily=1,type="AsSubGenericObject"}),
 o(416448,{e=9,isDaily=1,type="AsSubGenericObject"}),
 o(416450,{e=9,isDaily=1,type="AsSubGenericObject"}),
@@ -8705,7 +8705,7 @@ o(113768,{e=15,type="AsSubGenericObject"}),
 o(113769,{e=15,type="AsSubGenericObject"}),
 o(113770,{e=15,type="AsSubGenericObject"}),
 o(113771,{e=15,type="AsSubGenericObject"}),
-i(45072,{b=1,e=15,spellID=1216789,type="AsSubGenericObject",g={
+i(45072,{b=1,e=15,spellID=1216789,g={
 i(44791,{awp=30100,b=1,e=15,f=55,spellID=61874}),
 i(44806,{awp=30100,e=15,f=55}),
 i(44792,{awp=30100,b=1,e=15,f=55,spellID=61717}),

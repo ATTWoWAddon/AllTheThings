@@ -217,7 +217,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it i
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 L.CUSTOM_FILTERS_LABEL = "Automated Content";
 L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-L.DEATHS_CHECKBOX = "Deaths";
 L.DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Debug Mode |cffffffff(Show Everything)|r|r";
@@ -1091,6 +1090,7 @@ localize(L.HEADER_NAMES, {
 	[-481] = "The Ahn'Qiraj War Effort",
 	[-482] = "The Opening of the Dark Portal",
 	[-483] = "The Scepter of the Shifting Sands",
+	[-484] = "The Scourge Invasion",
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-524] = "TBC Classic Deluxe Edition",
@@ -1140,6 +1140,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-481] = "The Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj were not be immediately available with the release of Phase 5. Instead, server communities had to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
 	[-482] = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
 	[-483] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+	[-484] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-546] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	[-547] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-550] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
@@ -2709,7 +2710,6 @@ local ObjectNames = {
 }; _.ObjectNames = ObjectNames;
 local ObjectIcons = {
 	[113768] = _.asset("holiday_noblegarden"),
-	[161521] = _.asset("icon_petfamily_mechanical"),
 }; _.ObjectIcons = ObjectIcons;
 local ObjectModels = {
 	[31] = 189908,
@@ -3944,13 +3944,6 @@ local phases = {
 		buildVersion = 11307,
 		state = 2,
 	},
-	[1610] = {
-		name = "Phase 6",
-		description = "|cFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, and the new Nightmare Grove raid|r",
-		minimumBuildVersion = 11500000,
-		state = 2,
-	},
 	[17] = {
 		name = "Phase 1",
 		description = "|cFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
@@ -4085,6 +4078,13 @@ local phases = {
 		lore = "|cFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
 		buildVersion = 30400,
+		state = 2,
+	},
+	[2108] = {
+		name = "Scourge Invasion",
+		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
+		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
+		minimumBuildVersion = 20501,
 		state = 2,
 	},
 };
@@ -5903,6 +5903,12 @@ local achievements = {
 		description = "Obtained a Tabard of the Protector from the Dark Portal event.",
 		category = 81,
 		criteria = {7382},
+	},
+	[2116] = {
+		name = "Tabard of the Argent Dawn",
+		description = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
+		category = 81,
+		criteria = {7493},
 	},
 	[2141] = {
 		name = "Stable Keeper",
@@ -14659,6 +14665,11 @@ local achievementCriterias = {
 		type = 36,
 		asset = 28788,
 	},
+	[7493] = {
+		name = "Tabard of the Argent Dawn",
+		type = 36,
+		asset = 22999,
+	},
 	[7640] = {
 		name = "Master of Strand of the Ancients",
 		type = 8,
@@ -17798,7 +17809,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
-	[1610] = "|cFFAAFFAADies war erst Phase 6 von Season of Discovery verfügbar.|r",
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
 	[19] = "|cFFAAFFAADies war erst Phase 3 von TBC Classic verfügbar.|r",
@@ -18070,6 +18080,7 @@ for key,value in pairs({
 	[1837] = "Alter Eisenkiefer",
 	[1936] = "Lass die Finger von meinem Wolpertinger!",
 	[2079] = "Wappenrock des Beschützers",
+	[2116] = "Wappenrock der Argentumdämmerung",
 	[2141] = "Stallbesitzer",
 	[2142] = "Die Scheune wird voll",
 	[2143] = "Vorreiter der Kavallerie",
@@ -18381,6 +18392,7 @@ for key,value in pairs({
 	[1837] = "Angelt den alten Eisenkiefer in Eisenschmiede.",
 	[1936] = "Erhaltet ein Wolpertinger-Haustier.",
 	[2079] = "Erhaltet einen Wappenrock des Beschützers aus dem Ereignis 'Dunkles Portal'.",
+	[2116] = "Einen Wappenrock der Argentumdämmerung durch das Ereignis 'Invasion der Geißel' erhalten.",
 	[2141] = "Erhaltet 10 Reittiere.",
 	[2142] = "Erhaltet 25 Reittiere.",
 	[2143] = "Erhaltet 50 Reittiere.",
@@ -20098,6 +20110,7 @@ for key,value in pairs({
 	[7358] = "Steuerung für Krachbummflitzer",
 	[7364] = "Drakonisch für Dummies",
 	[7382] = "Wappenrock des Beschützers",
+	[7493] = "Wappenrock der Argentumdämmerung",
 	[7640] = "Meister des Strands der Uralten",
 	[7641] = "Meister des Strands der Uralten",
 	[7767] = "Arenagroßmeister-Gegenstand erhalten",
@@ -21624,7 +21637,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
-	[1610] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du Season of Discovery.|r",
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
 	[19] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du TBC Classic.|r",
@@ -21901,6 +21913,7 @@ for key,value in pairs({
 	[1837] = "Vieux gueule-de-fer",
 	[1936] = "Puisque je vous dis que je l'ai vu !",
 	[2079] = "Tabard du protecteur",
+	[2116] = "Tabard de l'Aube d'argent",
 	[2141] = "Gardien d'écuries",
 	[2142] = "L'écurie se remplit",
 	[2143] = "À la tête de la cavalerie",
@@ -22212,6 +22225,7 @@ for key,value in pairs({
 	[1837] = "Pêcher Vieux gueule-de-fer dans Forgefer.",
 	[1936] = "Obtenir un wolpertinger.",
 	[2079] = "Avoir obtenu un tabard du protecteur lors de l’ouverture de la Porte des ténèbres.",
+	[2116] = "Avoir obtenu un tabard de l'Aube d'argent lors de l'invasion du Fléau.",
 	[2141] = "Obtenir 10 montures.",
 	[2142] = "Obtenir 25 montures.",
 	[2143] = "Obtenir 50 montures.",
@@ -23929,6 +23943,7 @@ for key,value in pairs({
 	[7358] = "Commande du Cogn’Baff de course",
 	[7364] = "Le draconique pour les nuls",
 	[7382] = "Tabard du protecteur",
+	[7493] = "Tabard de l’Aube d’argent",
 	[7640] = "Maîtrise du rivage des Anciens",
 	[7641] = "Maîtrise du rivage des Anciens",
 	[7767] = "Objet Grand maître de l’arène obtenu",
@@ -24725,7 +24740,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
-	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
 	[19] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di TBC Classic.|r",
@@ -26413,6 +26427,7 @@ for key,value in pairs({
 	[7358] = "Crashin' Thrashin' Racer Controller",
 	[7364] = "Draconic for Dummies",
 	[7382] = "Tabard of the Protector",
+	[7493] = "Tabard of the Argent Dawn",
 	[7640] = "Master of Strand of the Ancients",
 	[7641] = "Master of Strand of the Ancients",
 	[7767] = "Arena Grand Master item gained",
@@ -27596,7 +27611,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
-	[1610] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de TBC Classic.|r",
@@ -27870,6 +27884,7 @@ for key,value in pairs({
 	[1837] = "Velho Ferroqueixo",
 	[1936] = "Você lebrerva como eu lebrervo?",
 	[2079] = "Tabardo do Protetor",
+	[2116] = "Tabardo da Aurora Argêntea",
 	[2141] = "Cavalariço",
 	[2142] = "Peão de estábulo cheio",
 	[2143] = "Rei do gado",
@@ -28181,6 +28196,7 @@ for key,value in pairs({
 	[1837] = "Pescar o Velho Ferroqueixo em Altaforja.",
 	[1936] = "Obter uma mascote lebrervo.",
 	[2079] = "Obter um Tabardo do Protetor no evento do Portal Negro.",
+	[2116] = "Obter um Tabardo da Aurora Argêntea no evento da Invasão do Flagelo.",
 	[2141] = "Obter 10 montarias.",
 	[2142] = "Obter 25 montarias.",
 	[2143] = "Obter 50 montarias.",
@@ -29898,6 +29914,7 @@ for key,value in pairs({
 	[7358] = "Controle-remoto do Carrinho Bate-bate",
 	[7364] = "Dracônico para Leigos",
 	[7382] = "Tabardo do Protetor",
+	[7493] = "Tabardo da Aurora Argêntea",
 	[7640] = "Mestre da Baía dos Ancestrais",
 	[7641] = "Mestre da Baía dos Ancestrais",
 	[7767] = "Item do Grande Mestre da Arena obtido",
@@ -30124,7 +30141,6 @@ L.CURSEFORGE_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать
 L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в |c" .. _.DefaultColors.Account .. "Режиме Аккаунта|r.|r";
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 L.CUSTOM_FILTERS_LABEL = "Автоматический контент";
-L.DEATHS_CHECKBOX = "Смерти";
 L.DEBUG_LOGIN = "Награда за вход в игру.\n\nОтличная работа! ВЫ СДЕЛАЛИ ЭТО!\n\nОтображается только в Режиме Отладки.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Режим Отладки |cffffffff(Показать Всё)|r|r";
 L.DEBUG_MODE_TOOLTIP = "Буквально ... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
@@ -30678,6 +30694,7 @@ localize(L.HEADER_NAMES, {
 	[-481] = "Война в Ан'Кираже",
 	[-482] = "Открытие Темного портала",
 	[-483] = "Скипетр Зыбучих песков",
+	[-484] = "Вторжение Плети",
 	[-521] = "Коллекционное издание",
 	[-557] = "Хмельной фестиваль",
 	[-559] = "Детская неделя",
@@ -31793,7 +31810,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
-	[1610] = "|cFFAAFFAAЭто было недоступно до Phase 6 из Season of Discovery.|r",
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
 	[19] = "|cFFAAFFAAЭто было недоступно до Phase 3 из TBC Classic.|r",
@@ -32075,6 +32091,7 @@ for key,value in pairs({
 	[1837] = "Старый Сталезуб",
 	[1936] = "Что лопают зайцелопы?",
 	[2079] = "Гербовая накидка Защитника",
+	[2116] = "Гербовая накидка Серебряного Рассвета",
 	[2141] = "Конюшенный",
 	[2142] = "Пополняя конюшню",
 	[2143] = "Командир кавалерии",
@@ -32386,6 +32403,7 @@ for key,value in pairs({
 	[1837] = "Выудите старого Сталезуба в Стальгорне.",
 	[1936] = "Получите спутника зайцелопа.",
 	[2079] = "Получите гербовую накидку Защитника за участие в открытии Темного портала.",
+	[2116] = "Получите Гербовую накидку Серебряного Рассвета во время вторжения Плети.",
 	[2141] = "Получите 10 средств передвижения.",
 	[2142] = "Получите 25 средств передвижения.",
 	[2143] = "Получите 50 средств передвижения.",
@@ -34103,6 +34121,7 @@ for key,value in pairs({
 	[7358] = "Пульт управления болидом \"Бей-Молоти\"",
 	[7364] = "Драконий язык для чайников",
 	[7382] = "Гербовая накидка Защитника",
+	[7493] = "Гербовая накидка Серебряного Рассвета",
 	[7640] = "Повелитель Берега Древних",
 	[7641] = "Повелитель Берега Древних",
 	[7767] = "Получен знак великого мастера арены",
@@ -35267,7 +35286,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
-	[1610] = "|cFFAAFFAAPhase 6(Season of Discovery)까지 사용할 수 없습니다.|r",
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
 	[19] = "|cFFAAFFAAPhase 3(TBC Classic)까지 사용할 수 없습니다.|r",
@@ -35549,6 +35567,7 @@ for key,value in pairs({
 	[1837] = "늙은 무쇠턱",
 	[1936] = "당신의 노루토끼는 잘 지내고 있나요?",
 	[2079] = "수호자의 휘장",
+	[2116] = "은빛 여명회 휘장",
 	[2141] = "마구간지기",
 	[2142] = "넘치는 마구간",
 	[2143] = "기병대장",
@@ -35860,6 +35879,7 @@ for key,value in pairs({
 	[1837] = "아이언포지에서 늙은 무쇠턱 낚기",
 	[1936] = "노루토끼 획득",
 	[2079] = "어둠의 문 이벤트에서 수호자의 휘장 획득",
+	[2116] = "스컬지 침공 이벤트에서 은빛 여명회 휘장 획득",
 	[2141] = "탈것 10개 획득",
 	[2142] = "탈것 25개 획득",
 	[2143] = "탈것 50개 획득",
@@ -37577,6 +37597,7 @@ for key,value in pairs({
 	[7358] = "우당탕 쿠당탕 자동차 조종기",
 	[7364] = "왕초보를 위한 용언 완전정복",
 	[7382] = "수호자의 휘장",
+	[7493] = "은빛 여명회 휘장",
 	[7640] = "고대의 해안 수호자",
 	[7641] = "고대의 해안 수호자",
 	[7767] = "최고검투사의 징표 획득",
@@ -37829,7 +37850,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.";
 L.CUSTOM_FILTERS_LABEL = "Contenido automatizado";
 L.DATA_TYPE_NOT_SUPPORTED = "Este tipo de datos no se admite en este momento.";
-L.DEATHS_CHECKBOX = "Muertes";
 L.DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
 L.DEBUG_LOGIN = "Otorgado por iniciar sesión.\n\n¡Buen trabajo! ¡LO LOGRASTE!\n\nSolo visible en modo de depuración.";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "Modo Depuración |cffffffff(Muestra todo)|r|r";
@@ -39600,7 +39620,6 @@ for key,value in pairs({
 	[16] = "Fase 6",
 	[1602] = "Silitista",
 	[1603] = "Era Clásica",
-	[1610] = "Fase 6",
 	[17] = "Fase 1",
 	[1701] = "Apertura del portal oscuro",
 	[18] = "Fase 2",
@@ -39615,6 +39634,7 @@ for key,value in pairs({
 	[2104] = "Yunque",
 	[2105] = "Puerto",
 	[2107] = "Laboratorio de alquimia",
+	[2108] = "Invasión de la Plaga",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -39635,7 +39655,6 @@ for key,value in pairs({
 	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de WoW Classic.|r",
 	[1602] = "|cFFAAFFAAEsto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.|r",
 	[1603] = "|cFFAAFFAAEsto solo estuvo disponible después del inicio de la Era Clásica.|r",
-	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de TBC Classic.|r",
 	[1701] = "|cFFAAFFAAEsto solo estuvo disponible durante el evento Apertura del Portal Oscuro antes del lanzamiento de TBC.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de TBC Classic.|r",
@@ -39653,6 +39672,7 @@ for key,value in pairs({
 	[2105] = "|cFFAAFFAAEsto no estuvo disponible hasta que se completó el puerto en la Isla de Quel'Danas.|r",
 	[2106] = "|cFFAAFFAAEsto no estuvo disponible hasta que se completó el monumento en la Isla de Quel'Danas.|r",
 	[2107] = "|cFFAAFFAAEsto no estuvo disponible hasta que se completó el laboratorio de alquimia en la Isla de Quel'Danas.|r",
+	[2108] = "|cFFAAFFAAEsto sólo estaba disponible durante la Invasión de la Plaga.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -39668,7 +39688,6 @@ for key,value in pairs({
 	[16] = "|cFFFFAAAASe Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.|r",
 	[1602] = "|cFFFFAAAASi el evento JcJ de mundo está disponible, simplemente actívelo.|r",
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
 	[17] = "|cFFFFAAAAIncluía Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
 	[1701] = "|cFFFFAAAASi se ha abierto el Portal Oscuro en tu servidor, simplemente desactíva esto.|r",
 	[18] = "|cFFFFAAAAIncluía Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
@@ -39686,6 +39705,7 @@ for key,value in pairs({
 	[2105] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.|r",
 	[2106] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el monumento en tu servidor, simplemente activa esta opción.|r",
 	[2107] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.|r",
+	[2108] = "|cFFFFAAAASi la Invasión de la Plaga ha terminado en tu servidor, simplemente desactiva esta opción.|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -39954,6 +39974,7 @@ for key,value in pairs({
 	[1837] = "El viejo Quijahierro",
 	[1936] = "¿Es persistente tu wolpertinger?",
 	[2079] = "Tabardo del protector",
+	[2116] = "Tabardo de El Alba Argenta",
 	[2141] = "Vigilante de establos",
 	[2142] = "Llenar el establo",
 	[2143] = "Liderar la caballería",
@@ -40265,6 +40286,7 @@ for key,value in pairs({
 	[1837] = "Pesca al viejo Quijahierro en Forjaz.",
 	[1936] = "Consigue una mascota wolpertinger.",
 	[2079] = "Has conseguido un Tabardo del protector del evento del Portal Oscuro.",
+	[2116] = "Has conseguido un Tabardo de El Alba Argenta del evento Invasión de la Plaga.",
 	[2141] = "Consigue 10 monturas.",
 	[2142] = "Consigue 25 monturas.",
 	[2143] = "Consigue 50 monturas.",
@@ -41982,6 +42004,7 @@ for key,value in pairs({
 	[7358] = "Mando de coche de carreras triturador",
 	[7364] = "Dracónico para torpes",
 	[7382] = "Tabardo del protector",
+	[7493] = "Tabardo de El Alba Argenta",
 	[7640] = "Maestro de la Playa de los Ancestros",
 	[7641] = "Maestro de la Playa de los Ancestros",
 	[7767] = "Conseguido objeto de gran maestro de arena",
@@ -42329,10 +42352,6 @@ for key,value in pairs({
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto de venta|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
-})
-do phases[key].lore = value; end
 for key,value in pairs({
 	[426] = "Gujas de guerra de Azzinoth",
 	[428] = "Trueno Furioso, espada bendita del Hijo del Viento",
@@ -44076,6 +44095,7 @@ for key,value in pairs({
 	[7358] = "Control del autito chocón",
 	[7364] = "Dracónico para principiantes",
 	[7382] = "Tabardo del protector",
+	[7493] = "Tabardo de El Alba Argenta",
 	[7640] = "Maestro de la Playa de los Ancestros",
 	[7641] = "Maestro de la Playa de los Ancestros",
 	[7767] = "Conseguido objeto de gran maestro de arena",
@@ -44331,7 +44351,6 @@ L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内
 L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 L.CUSTOM_FILTERS_LABEL = "自动化内容";
 L.DATA_TYPE_NOT_SUPPORTED = "当前不支持此数据类型。";
-L.DEATHS_CHECKBOX = "死亡";
 L.DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的情况，并将其显示为插件中的收藏品部分。\n\n注意：如果您关闭此选项，我们仍会跟踪它，但除非您处于调试模式，否则我们不会显示统计信息。";
 L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
 L.DEBUG_MODE = "|c" .. _.DefaultColors.Red .. "调试模式|cffffffff（显示所有）|r|r";
@@ -45001,6 +45020,7 @@ localize(L.HEADER_NAMES, {
 	[-481] = "安其拉之战捐献",
 	[-482] = "开启黑暗之门",
 	[-483] = "流沙节杖",
+	[-484] = "天灾入侵",
 	[-520] = "暴雪嘉年华",
 	[-521] = "典藏版",
 	[-524] = "'燃烧的远征'怀旧服典藏包",
@@ -45967,7 +45987,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA该功能直到 Phase 6 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA该功能直到 Phase 1 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 Phase 2 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA该功能直到 Phase 3 的 TBC Classic 才可用。|r",
@@ -46253,6 +46272,7 @@ for key,value in pairs({
 	[1837] = "老铁腭",
 	[1936] = "你的小飞兔丢了吗？",
 	[2079] = "保卫者的战袍",
+	[2116] = "银色黎明战袍",
 	[2141] = "马厩管理员",
 	[2142] = "坐骑满仓",
 	[2143] = "骑兵队长",
@@ -46564,6 +46584,7 @@ for key,value in pairs({
 	[1837] = "钓起铁炉堡的老铁腭。",
 	[1936] = "获得一只鹿角小飞兔宠物。",
 	[2079] = "通过开启黑暗之门的事件获得一件保卫者的战袍。",
+	[2116] = "通过天灾入侵事件获得一件银色黎明战袍。",
 	[2141] = "获得10种坐骑。",
 	[2142] = "获得25种坐骑。",
 	[2143] = "获得50种坐骑。",
@@ -48281,6 +48302,7 @@ for key,value in pairs({
 	[7358] = "打架赛车控制器",
 	[7364] = "龙语傻瓜教程",
 	[7382] = "保卫者的战袍",
+	[7493] = "银色黎明战袍",
 	[7640] = "远古海滩主宰",
 	[7641] = "远古海滩主宰",
 	[7767] = "获得竞技场大师饰物",
@@ -49058,6 +49080,7 @@ localize(L.HEADER_NAMES, {
 	[-367] = "阿塔萊防衛者",
 	[-481] = "安其拉之戰捐獻",
 	[-483] = "流沙節杖",
+	[-484] = "天譴軍團入侵",
 	[-520] = "暴雪嘉年華",
 	[-524] = "燃燒的遠征：經典版 - 豪華版",
 	[-546] = "可口可樂活動",
@@ -49108,7 +49131,6 @@ for key,value in pairs({
 	[4] = "PvP 精良/鬥士",
 	[5] = "不可學",
 	[7] = "貿易站",
-	[1610] = "第6階段",
 	[17] = "第1階段",
 	[18] = "第2階段",
 	[19] = "第3階段",
@@ -49129,7 +49151,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1610] = "|cFFAAFFAA該功能直到 第6階段 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA該功能直到 第2階段 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA該功能直到 第3階段 的 TBC Classic 才可用。|r",
@@ -49386,6 +49407,7 @@ for key,value in pairs({
 	[1837] = "老鐵顎",
 	[1936] = "你的鹿角兔還在嗎?",
 	[2079] = "保衛者外袍",
+	[2116] = "銀色黎明外袍",
 	[2141] = "獸欄管理者",
 	[2142] = "塞滿獸倉",
 	[2143] = "帶領騎兵隊",
@@ -49695,6 +49717,7 @@ for key,value in pairs({
 	[1837] = "在鐵爐堡釣起老鐵顎。",
 	[1936] = "獲得一個鹿角兔寵物。",
 	[2079] = "從黑暗之門事件獲得一件保衛者外袍。",
+	[2116] = "從天譴軍團入侵事件獲得銀色黎明外袍。",
 	[2141] = "獲得10隻坐騎。",
 	[2142] = "獲得25隻坐騎。",
 	[2143] = "獲得50隻坐騎。",
@@ -51412,6 +51435,7 @@ for key,value in pairs({
 	[7358] = "暴力粉碎賽車控制器",
 	[7364] = "龍語傻瓜教程",
 	[7382] = "保衛者外袍",
+	[7493] = "銀色黎明外袍",
 	[7640] = "遠祖灘頭大師",
 	[7641] = "遠祖灘頭大師",
 	[7767] = "取得競技場宗師飾物",

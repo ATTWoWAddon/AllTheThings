@@ -6783,11 +6783,11 @@ q(78068,{coords={{53,15.5,84}},lvl=50,providers={{"o",415303}},races=a[67],g={
 i(210454,{races=a[67],spellID=426620})}}),
 q(78069,{coords={a[244]},lvl=50,qgs=a[152],races=a[67],sourceQuests={78068},g={
 o(420019,{races=a[67],type="AsGenericObjectContainer",g={
-i(210167,{races=a[67],type="AsSubGenericObject"}),
+i(210167,{races=a[67]}),
 o(420019,{races=a[67],type="AsSubGenericObject"}),
 o(408934,{races=a[67],type="AsSubGenericObject"})}}),
 o(420039,{races=a[67],type="AsGenericObjectContainer",g={
-i(210168,{races=a[67],type="AsSubGenericObject"}),
+i(210168,{races=a[67]}),
 o(420039,{races=a[67],type="AsSubGenericObject"}),
 o(420040,{races=a[67],type="AsSubGenericObject"})}})}}),
 q(78070,{coords={a[244]},lvl=50,qgs=a[152],races=a[67],sourceQuests={78069},g={
