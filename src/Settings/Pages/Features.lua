@@ -126,7 +126,8 @@ if app.IsRetail then
 	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()
 		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
-		app:GetWindow("MiniList").Filters = active and { Timerunning = true } or nil
+		local minilist = app:GetWindow("MiniList", true)
+		if minilist then minilist.Filters = active and { Timerunning = true } or nil end
 	end
 	app.AddEventHandler("OnLoad", AddTimerunningToCurrentInstance)
 	checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,

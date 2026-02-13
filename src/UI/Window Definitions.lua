@@ -522,7 +522,6 @@ app.AddEventHandler("OnLoad", function()
 	ShouldSkipAutoExpandForKey.headerID = DoExpansion and ShouldSkipAutoExpandForKey.def_headerID or nil
 	ShouldSkipAutoExpandForKey.objectID = DoExpansion and ShouldSkipAutoExpandForKey.def_objectID or nil
 end)
-app.TEST = ShouldSkipAutoExpandForKey
 -- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
 local function HasExpandedSubgroup(group)
 	if not group then return end
@@ -2405,7 +2404,7 @@ app.AddEventHandler("OnRefreshCollectionsDone", ShowPrecallShowWindows)
 local function BuildWindow(suffix)
 	local definition = app.WindowDefinitions[suffix];
 	if not definition then
-		print("No Window Definition Found for " .. suffix);
+		app.print("No Window Definition Found for",suffix);
 	else
 		app.WindowDefinitions[suffix] = nil;
 	end
@@ -2945,8 +2944,8 @@ function app:CreateWindow(suffix, definition)
 		end
 	end
 end
-function app:GetWindow(suffix)
-	return app.Windows[suffix] or BuildWindow(suffix);
+function app:GetWindow(suffix, passive)
+	return app.Windows[suffix] or (not passive and BuildWindow(suffix))
 end
 
 -- Dynamic Popouts for Quest Chains and other Groups
