@@ -426,7 +426,7 @@ app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
 	SettingsName = "Mini List",
 	-- IsTopLevel = true,
-	Preload = true,
+	-- Preload = true,
 	-- Debugging = true,
 	-- mapID = -1,
 	Defaults = {
@@ -514,28 +514,6 @@ app:CreateWindow("MiniList", {
 	TrySwapFromCache = TrySwapFromCache,
 	TryAddAutoExpand = TryAddAutoExpand,
 	OnInit = function(self, handlers)
-		app.ToggleMiniListForCurrentZone = function(mapID)
-			if not mapID and self:IsVisible() then
-				self:Hide();
-			else
-				self:SetMapID(mapID or app.CurrentMapID);
-				self:Show()
-			end
-		end
-		app.LocationTrigger = function(forceNewMap)
-			app.PrintDebug("app.LocationTrigger",forceNewMap)
-			if forceNewMap then
-				wipe(CachedMapData)
-				self.mapID = nil
-			end
-			if self:IsVisible() then
-				app.CallbackHandlers.AfterCombatOrDelayedCallback(self.RefreshLocation, 0.1, self)
-			else
-				self.mapID = nil
-				self.data = nil
-			end
-		end
-
 		self:AddEventHandler("OnCurrentDifficultiesChanged", function(difficulties)
 			-- TODO: this is still excessive AF in Retail. Can't think of a situation where it would actually be needed
 			self:Rebuild();
@@ -576,3 +554,29 @@ app:CreateWindow("MiniList", {
 		self:SetMapID(app.CurrentMapID, true)
 	end,
 });
+
+app.LocationTrigger = function(forceNewMap)
+	local window = app:GetWindow("MiniList", true)
+	app.PrintDebug("app.LocationTrigger",forceNewMap,window)
+	if not window then return end
+
+	if forceNewMap then
+		wipe(CachedMapData)
+		window.mapID = nil
+	end
+	if window:IsVisible() then
+		app.CallbackHandlers.AfterCombatOrDelayedCallback(window.RefreshLocation, 0.1, window)
+	else
+		window.mapID = nil
+		window.data = nil
+	end
+end
+app.ToggleMiniListForCurrentZone = function(mapID)
+	local window = app:GetWindow("MiniList")
+	if not mapID and window:IsVisible() then
+		window:Hide();
+	else
+		window:SetMapID(mapID or app.CurrentMapID);
+		window:Show()
+	end
+end
