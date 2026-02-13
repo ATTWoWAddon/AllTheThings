@@ -22,16 +22,6 @@ local IsSpellKnown = IsSpellKnown;
 -- App & Module locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
--- Pet Abilities and Pet Types
-app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["name"] = function(t)
-		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-	end,
-	["icon"] = function(t)
-		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
-	end,
-});
-
 do	-- Mounts
 local KEY, CACHE = "mountID", "Mounts"
 app.CreateMount = app.CreateClass("Mount", KEY, {

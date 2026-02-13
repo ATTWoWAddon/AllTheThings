@@ -280,12 +280,3 @@ if C_PetJournal_GetPetStats then
 		});
 	end);
 end
-
-app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
-	["name"] = function(t)
-		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-	end,
-	["icon"] = function(t)
-		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
-	end,
-})
