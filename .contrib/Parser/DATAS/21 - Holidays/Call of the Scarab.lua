@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 CALL_OF_THE_SCARAB_HEADER = createHeader({
 	readable = "Call of the Scarab",
 	constant = "CALL_OF_THE_SCARAB_HEADER",
@@ -20,6 +21,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 		tw = "甲蟲的呼喚",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
 	["maps"] = { SILITHUS },
 	["groups"] = {

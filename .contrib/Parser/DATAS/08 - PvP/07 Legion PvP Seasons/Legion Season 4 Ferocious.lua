@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FEROCIOUS, bubbleDownSelf({
 		["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0, ADDED_7_3_0 },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 			ach(11010, {	-- Ferocious Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -768,12 +769,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["groups"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
-						["cost"] = {{"i", MOH, 50}},
+						["cost"] = { { "i", MOH, 50 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(147364),	-- Ferocious Gladiator's Cloak [A]
 						i(147339),	-- Ferocious Gladiator's Tabard [A]
@@ -942,12 +943,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["groups"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
-						["cost"] = {{"i", MOH, 50}},
+						["cost"] = { { "i", MOH, 50 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(147363),	-- Ferocious Gladiator's Cloak [H]
 						i(147338),	-- Ferocious Gladiator's Tabard [H]

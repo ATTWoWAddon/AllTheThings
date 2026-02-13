@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 CHILDRENS_WEEK_HEADER = createHeader({
 	readable = "Cgi.Children's Week",	-- Prefix with "Cgi." to prevent sorting issues.
 	constant = "CHILDRENS_WEEK_HEADER",
@@ -31,6 +32,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		-- #endif
 	},
 });
+
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	["timeline"] = { ADDED_6_0_2 },
@@ -2105,7 +2107,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(243031, {	-- Clockwork Assistant
 			["coord"] = { 55.8, 26.6, DORNOGAL },
@@ -2117,11 +2119,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		n(243032, {	-- Jepetto Joybuzz
 			["coord"] = { 55.8, 26.4, DORNOGAL },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 		n(242676, {	-- Leial Knitterton <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, ORGRIMMAR },
-			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine
 		}),
 	})),
 })));

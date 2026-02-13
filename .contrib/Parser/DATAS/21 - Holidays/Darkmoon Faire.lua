@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 MINIGAMES_HEADER = createHeader({
 	readable = "Minigames",
 	icon = 134481,
@@ -375,7 +376,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		-- #if AFTER 4.3.0
 		n(MINIGAMES_HEADER, {
-			["cost"] = {{ "i", 71083, 1 }},	-- Darkmoon Game Token
+			["cost"] = { { "i", 71083, 1 } },	-- Darkmoon Game Token
 			["groups"] = {
 				n(DARKMOON_DANCE_HEADER, {
 					["cr"] = 181097,	-- Simon Sezdans <Dance Master>
@@ -1170,7 +1171,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
-				["cost"] = { { "i", 7945, 1 }},	-- Big Black Mace
+				["cost"] = { { "i", 7945, 1 } },	-- Big Black Mace
 				["lvl"] = 30,
 				-- #endif
 				["timeline"] = { REMOVED_4_3_0 },

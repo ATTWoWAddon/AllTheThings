@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 TOURNAMENT_GEAR = createHeader({
 	readable = "Tournament Gear",
 	icon = 1582146,
@@ -8,6 +9,7 @@ TOURNAMENT_GEAR = createHeader({
 		en = [[~ITEM_TOURNAMENT_GEAR]],
 	},
 });
+
 root(ROOTS.PVP, pvp(n(TOURNAMENT_GEAR, bubbleDownSelf({["u"] = REMOVED_FROM_GAME }, {
 	["description"] = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
 	["groups"] = {

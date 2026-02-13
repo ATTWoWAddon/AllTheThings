@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(SEASON_CRIMSON, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
@@ -180,11 +181,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
 					iensemble(230899, {	-- Arsenal: Crimson Aspirant's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230869, {	-- Ensemble: Crimson Aspirant's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
@@ -328,11 +329,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
 					iensemble(230900, {	-- Arsenal: Crimson Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230873, {	-- Ensemble: Crimson Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -1020,11 +1021,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
 					iensemble(230901, {	-- Arsenal: Elite Crimson Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230886, {	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -1073,7 +1074,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(196661, {	-- Korganar Smolderforge
 				["coord"] = { 43.6, 42.7, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 3 } },
+				}, {
 			-- #endif
 					i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
 					i(194638),	-- Design: Crimson Combatant's Jeweled Signet (RECIPE!)
@@ -1120,7 +1123,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
+					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 				}, {
 					i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)

@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_COSMIC, bubbleDownSelf({
 		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 			ach(15347, {	-- Cosmic Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -58,11 +58,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
@@ -204,11 +204,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				["coord"] = { 35.0, 57.6, ORIBOS },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },

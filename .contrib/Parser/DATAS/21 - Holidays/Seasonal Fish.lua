@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 root(ROOTS.Holidays, {
 	applyevent(EVENTS.SEASONAL_FISH_SUMMER_BASS, n(createHeader({
 		readable = "Seasonal Fish: Summer Bass",

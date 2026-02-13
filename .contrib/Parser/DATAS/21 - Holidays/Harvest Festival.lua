@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 HARVEST_FESTIVAL_HEADER = createHeader({
 	readable = "Harvest Festival",
 	constant = "HARVEST_FESTIVAL_HEADER",
@@ -27,9 +28,11 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 		tw = "收穫節",
 	},
 });
+
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
+
 root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
 	n(MAILBOX, {
 		i(19697),	-- Bounty of the Harvest

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	n(SEASON_ASTRAL, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_X_LAUNCH } }, {
@@ -315,11 +316,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232871, {	-- Arsenal: Astral Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(232812, {	-- Ensemble: Astral Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -650,11 +651,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(MISC, {
 						i(254308, {	-- Conqueror's Astral Lacquer
-							["cost"] = {{ "c", CONQUEST, 700 }},
+							["cost"] = { { "c", CONQUEST, 700 } },
 							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_X_LAUNCH },
 						}),
 						i(254307, {	-- Conqueror's Astral Varnish
-							["cost"] = {{ "c", CONQUEST, 875 }},
+							["cost"] = { { "c", CONQUEST, 875 } },
 							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_X_LAUNCH },
 						}),
 					}),
@@ -1000,12 +1001,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["u"] = ELITE_PVP_REQUIREMENT,
 					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232872, {	-- Arsenal: Elite Astral Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(232825, {	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },

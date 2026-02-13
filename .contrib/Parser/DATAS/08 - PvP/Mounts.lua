@@ -1,14 +1,16 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local VICIOUS_SADDLE = 103533;
+
 root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 	n(73190, {	-- Necrolord Sipe <Combatant Mount Quartermaster>
 		["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = sharedData({
 			["races"] = ALLIANCE_ONLY,
-			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
+			["cost"] = { { "i", VICIOUS_SADDLE, 1 } },
 		}, {
 			i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
@@ -79,7 +81,7 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 		["races"] = HORDE_ONLY,
 		["groups"] = sharedData({
 			["races"] = HORDE_ONLY,
-			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
+			["cost"] = { { "i", VICIOUS_SADDLE, 1 } },
 		}, {
 			i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },

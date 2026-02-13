@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
@@ -13,6 +14,7 @@ ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " Every 200 or 150 Resources during AB Weekend.", r = 1, g = 1, b = 1 });
 	end
 end]];
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ARATHI_BASIN, {
 		-- #if AFTER 3.2.0

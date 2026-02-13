@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
@@ -805,7 +806,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						moh(100, i(116776, {	-- Pale Thorngrazer (MOUNT!)
-							["cost"] = {{ "g", 45000000 }},		-- 4500g
+							["cost"] = { { "g", 45000000 } },	-- 4500g
 						})),
 						moh(10, i(115501)),	-- Kowalski's Music Box (TOY!)
 						moh(10, i(116396)),	-- LeBlanc's Recorder (A) (TOY!)
@@ -821,7 +822,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-							["cost"] = {{ "g", 45000000 }},		-- 4500g
+							["cost"] = { { "g", 45000000 } },	-- 4500g
 						})),
 						moh(10, i(115501)),	-- Kowalski's Music Box (TOY!)
 						moh(10, i(115505)),	-- LeBlanc's Recorder (H) (TOY!)

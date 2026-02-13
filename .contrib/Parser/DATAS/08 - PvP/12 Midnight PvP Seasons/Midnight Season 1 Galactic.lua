@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART } }, {
 	n(SEASON_GALACTIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
@@ -578,11 +579,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(REAGENTS, {
 						i(267572, {	-- Conqueror's Galactic Lacquer
-							["cost"] = {{ "c", CONQUEST, 700 }},
+							["cost"] = { { "c", CONQUEST, 700 } },
 							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 						i(267571, {	-- Conqueror's Galactic Varnish
-							["cost"] = {{ "c", CONQUEST, 875 }},
+							["cost"] = { { "c", CONQUEST, 875 } },
 							--["timeline"] = { ADDED_11_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 					}),

@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_VINDICTIVE, bubbleDownSelf({
 		["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0, ADDED_7_2_0 },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 } }, {
 			ach(10998, {	-- Vindictive Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -68,7 +69,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -272,7 +275,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -478,7 +483,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -682,7 +689,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(146133, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -893,7 +902,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor [A]
@@ -1104,7 +1113,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite
 						},
-						["cost"] = {{"i", MOH, 12}},
+						["cost"] = { { "i", MOH, 12 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor [H]

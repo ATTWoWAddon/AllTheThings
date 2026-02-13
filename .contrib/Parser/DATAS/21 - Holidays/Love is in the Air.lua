@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 	readable = "Love is in the Air",
 	constant = "LOVE_IS_IN_THE_AIR_HEADER",
@@ -31,6 +32,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		-- #endif
 	},
 });
+
 local LOVE_TOKEN = 49927;
 local BOUQUET_RED = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
 local BOUQUET_EBON = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
@@ -46,6 +48,7 @@ local POUCH_OF_EBON_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188692
 	-- #endif
 }));
 local BOSS_GROUPS = {};
+
 root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
 	["timeline"] = { ADDED_1_11_1 },
 	["groups"] = {
@@ -155,7 +158,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				ach(260, {	-- Charming
 					["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
-					["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
+					["cost"] = { { "i", 49916, 12 } },	-- Lovely Charm Bracelet
 					["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 },
 				}),
 				ach(1695, {	-- Dangerous Love
@@ -517,7 +520,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 33.4, 65.8, IRONFORGE },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -525,7 +528,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 52.8, 76.8, ORGRIMMAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -533,7 +536,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 66.4, 38.2, UNDERCITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -541,7 +544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -549,7 +552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 45.2, 57.4, DARNASSUS },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -557,7 +560,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 62.4, 75.0, STORMWIND_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -565,7 +568,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 73.8, 56.8, THE_EXODAR },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -573,7 +576,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 64.2, 66.4, SILVERMOON_CITY },
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
-				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
+				["cost"] = { { "i", 49916, 1 } },	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -1966,22 +1969,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(210318, {	-- Chocolate Bon-Bomb
-						["cost"] = {{"i", LOVE_TOKEN, 1}},
+						["cost"] = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(22261, {	-- Love Fool
-						["cost"] = {{"i", LOVE_TOKEN, 10}},
+						["cost"] = { { "i", LOVE_TOKEN, 10 } },
 					}),
 					i(34258, {	-- Lovely Fireworks
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(116648, {	-- Manufactured Love Prism
-						["cost"] = {{"i", LOVE_TOKEN, 40}},
+						["cost"] = { { "i", LOVE_TOKEN, 40 } },
 					}),
 					i(211976, {	-- Pink Brightbursts
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(144339, {	-- Sturdy Love Fool (TOY!)
-						["cost"] = {{"i", LOVE_TOKEN, 100}},
+						["cost"] = { { "i", LOVE_TOKEN, 100 } },
 					}),
 				},
 			})),
@@ -2023,52 +2026,52 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211359, {	-- Eternal Black Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211358, {	-- Eternal Blue Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211357, {	-- Eternal Orange Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211355, {	-- Eternal Pink Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211354, {	-- Eternal White Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211352, {	-- Eternal Yellow Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(22218, {	-- Handful of Rose Petals
-						["cost"] = {{"i", LOVE_TOKEN, 2}},
+						["cost"] = { { "i", LOVE_TOKEN, 2 } },
 					}),
 					i(50163, {	-- Lovely Rose
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211363, {	-- Rose of Dreams Fulfilled
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211351, {	-- Rose of Friendship
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211362, {	-- Rose of Independence
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211361, {	-- Rose of Joy
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211360, {	-- Rose of Purity
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211264, {	-- Rose of Romance
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211364, {	-- Rose of Tragedy
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(210965, {	-- Single-Use Bouquet
-						["cost"] = {{"i", LOVE_TOKEN, 1}},
+						["cost"] = { { "i", LOVE_TOKEN, 1 } },
 					}),
 				},
 			})),
@@ -2085,42 +2088,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["groups"] = {
 					filter(BATTLE_PETS, {
 						i(205156, {	-- Heartseeker Moth (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(232923, {	-- Living Rose (PET!)
 							["timeline"] = { ADDED_11_0_7 },
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(116155, {	-- Lovebird Hatchling (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(22235, {	-- Peddlefeet (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 					}),
 					n(HEIRLOOMS, {
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 200}},
+							["cost"] = { { "i", LOVE_TOKEN, 200 } },
 						}),
 						i(204337, {	-- Awakened Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 					}),
 					filter(MISC, {
 						i(21813, {	-- Bag of Heart Candies
-							["cost"] = {{"i", LOVE_TOKEN, 2}},
+							["cost"] = { { "i", LOVE_TOKEN, 2 } },
 							["groups"] = {
 								i(21816),	-- Heart Candy (Be Mine!)
 								i(21817),	-- Heart Candy (I LOVE YOU)
@@ -2133,10 +2136,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							},
 						}),
 						i(22200, {	-- Silver Shafted Arrow
-							["cost"] = {{"i", LOVE_TOKEN, 5}},
+							["cost"] = { { "i", LOVE_TOKEN, 5 } },
 						}),
 						i(50160, {	-- Lovely Dress Box
-							["cost"] = {{"i", LOVE_TOKEN, 20}},
+							["cost"] = { { "i", LOVE_TOKEN, 20 } },
 							["groups"] = {
 								ach(1694, {	-- Lovely Luck Is On Your Side
 									["provider"] = { "i", 151770 },	-- Lovely Black Dress
@@ -2148,7 +2151,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							},
 						}),
 						i(50161, {	-- Dinner Suit Box
-							["cost"] = {{"i", LOVE_TOKEN, 20}},
+							["cost"] = { { "i", LOVE_TOKEN, 20 } },
 							["groups"] = {
 								i(151765),	-- Blue Dinner Suit
 								i(151764),	-- Purple Dinner Suit
@@ -2158,58 +2161,58 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					filter(MOUNTS, {
 						i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(72146, {	-- Swift Lovebird (MOUNT!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 					}),
 					filter(TOYS, {
 						i(210975, {	-- Date Simulation Modulator (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 100}},
+							["cost"] = { { "i", LOVE_TOKEN, 100 } },
 						}),
 						i(210974, {	-- Eyes For You Only (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(211864, {	-- Exquisite Love Boat (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(142341, {	-- Love Boat (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 150}},
+							["cost"] = { { "i", LOVE_TOKEN, 150 } },
 						}),
 						i(34480, {	-- Romantic Picnic Basket (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 10}},
+							["cost"] = { { "i", LOVE_TOKEN, 10 } },
 						}),
 					}),
 					filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
-							["cost"] = {{"i", LOVE_TOKEN, 100}},
+							["cost"] = { { "i", LOVE_TOKEN, 100 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235653, {	-- Spring Butterfly Longbow
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235269, {	-- Spring Butterfly Mace
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235399, {	-- Spring Butterfly Polearm
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235289, {	-- Spring Butterfly Sword
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235293, {	-- Spring Butterfly Wand
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 					})),
@@ -2422,42 +2425,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["groups"] = {
 					filter(BATTLE_PETS, {
 						i(205156, {	-- Heartseeker Moth (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(232923, {	-- Living Rose (PET!)
 							["timeline"] = { ADDED_11_0_7 },
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(116155, {	-- Lovebird Hatchling (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(22235, {	-- Peddlefeet (PET!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 					}),
 					n(HEIRLOOMS, {
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 200}},
+							["cost"] = { { "i", LOVE_TOKEN, 200 } },
 						}),
 						i(204337, {	-- Awakened Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
-							["cost"] = {{"i", LOVE_TOKEN, 450}},
+							["cost"] = { { "i", LOVE_TOKEN, 450 } },
 						}),
 					}),
 					filter(MISC, {
 						i(21813, {	-- Bag of Heart Candies
-							["cost"] = {{"i", LOVE_TOKEN, 2}},
+							["cost"] = { { "i", LOVE_TOKEN, 2 } },
 							["groups"] = {
 								i(21816),	-- Heart Candy (Be Mine!)
 								i(21817),	-- Heart Candy (I LOVE YOU)
@@ -2470,10 +2473,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							},
 						}),
 						i(22200, {	-- Silver Shafted Arrow
-							["cost"] = {{"i", LOVE_TOKEN, 5}},
+							["cost"] = { { "i", LOVE_TOKEN, 5 } },
 						}),
 						i(50160, {	-- Lovely Dress Box
-							["cost"] = {{"i", LOVE_TOKEN, 20}},
+							["cost"] = { { "i", LOVE_TOKEN, 20 } },
 							["groups"] = {
 								ach(1694, {	-- Lovely Luck Is On Your Side
 									["provider"] = { "i", 151770 },	-- Lovely Black Dress
@@ -2485,7 +2488,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							},
 						}),
 						i(50161, {	-- Dinner Suit Box
-							["cost"] = {{"i", LOVE_TOKEN, 20}},
+							["cost"] = { { "i", LOVE_TOKEN, 20 } },
 							["groups"] = {
 								i(151765),	-- Blue Dinner Suit
 								i(151764),	-- Purple Dinner Suit
@@ -2495,58 +2498,58 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					filter(MOUNTS, {
 						i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(72146, {	-- Swift Lovebird (MOUNT!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 					}),
 					filter(TOYS, {
 						i(210975, {	-- Date Simulation Modulator (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 100}},
+							["cost"] = { { "i", LOVE_TOKEN, 100 } },
 						}),
 						i(210974, {	-- Eyes For You Only (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						i(211864, {	-- Exquisite Love Boat (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(142341, {	-- Love Boat (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 270}},
+							["cost"] = { { "i", LOVE_TOKEN, 270 } },
 						}),
 						i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 150}},
+							["cost"] = { { "i", LOVE_TOKEN, 150 } },
 						}),
 						i(34480, {	-- Romantic Picnic Basket (TOY!)
-							["cost"] = {{"i", LOVE_TOKEN, 10}},
+							["cost"] = { { "i", LOVE_TOKEN, 10 } },
 						}),
 					}),
 					filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
-							["cost"] = {{"i", LOVE_TOKEN, 40}},
+							["cost"] = { { "i", LOVE_TOKEN, 40 } },
 						}),
 						iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
-							["cost"] = {{"i", LOVE_TOKEN, 100}},
+							["cost"] = { { "i", LOVE_TOKEN, 100 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235653, {	-- Spring Butterfly Longbow
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235269, {	-- Spring Butterfly Mace
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235399, {	-- Spring Butterfly Polearm
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235289, {	-- Spring Butterfly Sword
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 						i(235293, {	-- Spring Butterfly Wand
-							["cost"] = {{"i", LOVE_TOKEN, 30}},
+							["cost"] = { { "i", LOVE_TOKEN, 30 } },
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 					})),
@@ -2558,7 +2561,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["groups"] = {
 					i(210926),	-- Me, Myself, and Chocolate Package
 					i(49909, {	-- Box of Chocolates
-						["cost"] = {{"i", LOVE_TOKEN, 10}},
+						["cost"] = { { "i", LOVE_TOKEN, 10 } },
 						["groups"] = {
 							i(22236),	-- Buttermilk Delight
 							i(22237),	-- Dark Desire
@@ -2604,52 +2607,52 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211359, {	-- Eternal Black Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211358, {	-- Eternal Blue Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211357, {	-- Eternal Orange Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211355, {	-- Eternal Pink Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211354, {	-- Eternal White Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(211352, {	-- Eternal Yellow Rose
-						["cost"] = {{"i", LOVE_TOKEN, 20}},
+						["cost"] = { { "i", LOVE_TOKEN, 20 } },
 					}),
 					i(22218, {	-- Handful of Rose Petals
-						["cost"] = {{"i", LOVE_TOKEN, 2}},
+						["cost"] = { { "i", LOVE_TOKEN, 2 } },
 					}),
 					i(50163, {	-- Lovely Rose
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211363, {	-- Rose of Dreams Fulfilled
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211351, {	-- Rose of Friendship
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211362, {	-- Rose of Independence
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211361, {	-- Rose of Joy
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211360, {	-- Rose of Purity
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211264, {	-- Rose of Romance
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(211364, {	-- Rose of Tragedy
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(210965, {	-- Single-Use Bouquet
-						["cost"] = {{"i", LOVE_TOKEN, 1}},
+						["cost"] = { { "i", LOVE_TOKEN, 1 } },
 					}),
 				},
 			})),
@@ -2672,22 +2675,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(210318, {	-- Chocolate Bon-Bomb
-						["cost"] = {{"i", LOVE_TOKEN, 1}},
+						["cost"] = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(22261, {	-- Love Fool
-						["cost"] = {{"i", LOVE_TOKEN, 10}},
+						["cost"] = { { "i", LOVE_TOKEN, 10 } },
 					}),
 					i(34258, {	-- Lovely Fireworks
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(116648, {	-- Manufactured Love Prism
-						["cost"] = {{"i", LOVE_TOKEN, 40}},
+						["cost"] = { { "i", LOVE_TOKEN, 40 } },
 					}),
 					i(211976, {	-- Pink Brightbursts
-						["cost"] = {{"i", LOVE_TOKEN, 5}},
+						["cost"] = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(144339, {	-- Sturdy Love Fool (TOY!)
-						["cost"] = {{"i", LOVE_TOKEN, 100}},
+						["cost"] = { { "i", LOVE_TOKEN, 100 } },
 					}),
 				},
 			})),
@@ -2696,7 +2699,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(49909, {	-- Box of Chocolates
-						["cost"] = {{"i", LOVE_TOKEN, 10}},
+						["cost"] = { { "i", LOVE_TOKEN, 10 } },
 						["groups"] = {
 							i(22236),	-- Buttermilk Delight
 							i(22237),	-- Dark Desire

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(SEASON_FORGED, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
@@ -313,11 +314,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(232668, {	-- Ensemble: Forged Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -986,12 +987,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["u"] = ELITE_PVP_REQUIREMENT,
 					["timeline"] = { ADDED_12_0_X_LAUNCH },
 				}, {
 					iensemble(232866, {	-- Arsenal: Elite Forged Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(232681, {	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },

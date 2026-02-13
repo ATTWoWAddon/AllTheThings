@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 -- #if AFTER WRATH
 root(ROOTS.Holidays, {	-- General Holiday Content
 	n(ACHIEVEMENTS, {

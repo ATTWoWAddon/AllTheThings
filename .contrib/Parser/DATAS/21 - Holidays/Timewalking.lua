@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 -- #if BEFORE 6.2.3.20601
 if true then return end
 -- #endif
@@ -167,79 +168,79 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 			},
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
 				}),
 				i(122339, {	-- Ancient Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 900 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 900 } },
 				}),
 				i(204336, {	-- Awakened Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 					["timeline"] = { ADDED_10_0_7 },
 				}),
 				i(204337, {	-- Awakened Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 					["timeline"] = { ADDED_10_0_7 },
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
 					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
 					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
 					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
 					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(238739, {	-- Chrono Corsair (MOUNT!)
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_2_7 },
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(205208, {	-- Sandy Shalewing (MOUNT!)
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_0_7 },
 				}),
 				i(232624, {	-- Timely Buzzbee (MOUNT!)
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 					["timeline"] = { ADDED_11_1_7 },
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 				}),
 				i(122341, {	-- Timeworn Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 					["timeline"] = { ADDED_7_2_5 },
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard
-					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 					["timeline"] = { ADDED_7_2_5 },
 				}),
 			},
@@ -414,7 +415,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 							i(224856),	-- Mugthol's Helm
 							i(234862, {	-- Ogre Captains Armor
 								["modID"] = 22,
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							}),
 							i(225184),	-- Runed Golem Shackles
 						}),
@@ -3874,253 +3875,253 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(133536, {	-- Bracers of the Black Dream
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133526, {	-- Lightwarper Vestments
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133532, {	-- Vestal's Irrepressible Girdle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(FINGER_F, {
 							i(133521, {	-- Band of Reconstruction
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133523, {	-- Emergency Descent Loop
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133522, {	-- Ring of Torn Flesh
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133520, {	-- Seal of the Grand Architect
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133524, {	-- Signet of the Resolute
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(133529, {	-- Belt of Hidden Keys
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133535, {	-- Bracers of Manifold Pockets
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133528, {	-- Decaying Herbalist's Robes
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(133530, {	-- Cord of Dragon Sinew
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133534, {	-- Dragonbelly Bracers
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133527, {	-- Ghostworld Chestguard
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(133531, {	-- Blinding Girdle of Truth
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133525, {	-- Bones of the Damned
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(133533, {	-- Flashing Bracers of Warmth
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(TRINKET_F, {
 							i(133538, {	-- Bottled Wishes
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 							i(133541, {	-- Fire of the Deep
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 							i(133537, {	-- Kiroptric Sigil
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 							i(133539, {	-- Reflection of the Light
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 							i(133540, {	-- Rotting Skull
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 						}),
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						i(244540, {	-- Charred Flamewake Sprout
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244542, {	-- Chronosmith's Temporal Safeguard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244647, {	-- Crook of the White Flame
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						iensemble(234859, {	-- Ensemble: Twilight Acolyte's Regalia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						iensemble(234857, {	-- Ensemble: Twilight Hunter's Guise
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						iensemble(234856, {	-- Ensemble: Twilight Zealot's Battleplate
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						iensemble(234855, {	-- Ensemble: Vestments of the Twisted Grove
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						i(234860, {	-- Explorer's League Deepholm Expedition Tabard
 							["races"] = ALLIANCE_ONLY,
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(244651, {	-- Forest Ranger's Buckler
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244544, {	-- Forest Watcher's Rune-Axe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244546, {	-- Forgotten Bow of the Banshee
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244650, {	-- Fort Triumph Longbow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244549, {	-- Light's Dawn Cryptblade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244680, {	-- Morchie's Desynchronized Chime
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244652, {	-- Prayer Beacon of the Goddess
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244681, {	-- Pyrewood Silver Blade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(234861, {	-- Reliquary Tabard
 							["races"] = HORDE_ONLY,
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(244543, {	-- Scimitar of the Crocolisk God
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244648, {	-- Scripture of the Scarlet High Priest
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244646, {	-- Seared Root of Regrowth
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244649, {	-- Shadowforge Senator's Ledger
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244548, {	-- Shattered Highvale Staff
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244550, {	-- Sunwalker's Ashen Warmaul
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244551, {	-- Time-Lost Worldbreaker
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 						i(244541, {	-- Zin-Azshari Court Scepter
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_2_0 },
 						}),
 					})),
 					filter(MISC, {
 						ig(67414, {	-- Bag of Shiny Things
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 150 } },
 						}),
 						ig(133150, {	-- Commendation of the Dragonmaw Clan
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133159, {	-- Commendation of the Earthen Ring
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133152, {	-- Commendation of the Guardians of Hyjal
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133154, {	-- Commendation of the Ramkahen
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133151, {	-- Commendation of the Wildhammer Clan
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133160, {	-- Commendation of Therazanae
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 					filter(MOUNTS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						i(234730, {	-- Broodling of Sinestra (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 					})),
 					filter(RECIPES, {
 						i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(14493, {	-- Pattern: Robe of Winter Night
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 					}),
 					filter(TOYS, {
 						i(133511, {	-- Gurboggle's Gleaming Bauble (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(133542, {	-- Tosselwrench's Mega-Accurate Simulation Viewfinder (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 						}),
 					}),
 				},
@@ -4785,261 +4786,261 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(144054, {	-- Blackguard Cape
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144055, {	-- Sagewhisper's Wrap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(CLOTH, {
 							i(144044, {	-- Gloves of Red Feathers
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144056, {	-- Leggings of the Poisoned Soul
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144060, {	-- Mantle of the Golden Sun
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 							i(144051, {	-- Storm-Sing Sandals
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(144057, {	-- Dreadsworn Slayer Legs
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144045, {	-- Fingers of the Loneliest Monk
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144050, {	-- Tukka-Tuk's Hairy Boots
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144061, {	-- Whitepetal Shoulderguards
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(144058, {	-- Locust Swarm Legguards
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144046, {	-- Ravenmane's Gloves
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144049, {	-- Sandals of the Elder Sage
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144062, {	-- Windwalker Spaulders
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(NECK_F, {
 							i(144052, {	-- Bloodseeker's Solitaire
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144053, {	-- Choker of the Klaxxi'va
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(144059, {	-- Ambersmith Legplates
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144047, {	-- Gauntlets of Jade Sutras
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(144063, {	-- Stonetoe Spaulders
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 							i(144048, {	-- Yu'lon Guardian Boots
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(TRINKET_F, {
 							i(144070, {	-- Shado-Pan Dragon Gun
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 						})
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						i(234775, {	-- Amber Pandaren Fan
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(234763, {	-- Bloody Expeditionary Cleaver
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234783, {	-- Caravan Guard's Buckler
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234774, {	-- Crimson Amber Incubator
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234796, {	-- Embroidered Shado-Pan Kilt
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 800 } },
 						}),
 						i(234762, {	-- Embroidered Shado-Pan Robes
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(234764, {	-- Fist of Knives
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234767, {	-- Flame-Bladed Long Sword
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234765, {	-- Flame-Bladed Steel Sword
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234794, {	-- Gilded Shado-Pan Kilt
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 800 } },
 						}),
 						i(234759, {	-- Gilded Shado-Pan Robes
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(234789, {	-- Gourd-Topped Mallet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234773, {	-- Imperial Gut Render
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234768, {	-- Jungle Gourd Splitter
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(234757, {	-- Kor'kron Pauldrons
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(234756, {	-- Kor'kron Tabard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(234772, {	-- Kris of the Mogu Shaman
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234771, {	-- Mogu Lightning Spitter
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
 						i(234781, {	-- Mogu'shan Vault's Improvised Shield
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234787, {	-- Mogu'shan Warden's Crystal Spear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
 						i(234784, {	-- Pandaran Bolt Thrower
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
 						i(234770, {	-- Pandaran Guard's Halberd
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234769, {	-- Pandaren Guard's Poleaxe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234791, {	-- Reforged Harmonic Mallet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 						}),
 						i(234790, {	-- Restored Harmonic Mallet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						i(234766, {	-- Ringed Pandaran Falchion
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234776, {	-- Saurok Mystic's Voodoo Stick
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234795, {	-- Shado-Pan Guise
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(234778, {	-- Staff of the Jade Serpent
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234777, {	-- Stave-Master's Spire
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234755, {	-- Tabard of the Pandaran Elders
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 					})),
 					filter(BATTLE_PETS, {
 						i(143953, {	-- Infinite Hatchling (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
 						}),
 						i(143954, {	-- Paradox Spirit (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
 						}),
 					}),
 					filter(MISC, {
 						i(143947, {	-- Commendation of Emperor Shaohao
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143944, {	-- Commendation of Operation: Shieldwall
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143946, {	-- Commendation of The Anglers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143938, {	-- Commendation of The August Celestials
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143943, {	-- Commendation of the Dominance Offensive
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143937, {	-- Commendation of the Golden Lotus
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143940, {	-- Commendation of the Kirin Tor Offensive
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143935, {	-- Commendation of The Klaxxi
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143942, {	-- Commendation of the Order of the Cloud Serpent
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143936, {	-- Commendation of the Shado-Pan
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143945, {	-- Commendation of the Shado-Pan Assault
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143939, {	-- Commendation of the Sunreaver Onslaught
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143941, {	-- Commendation of The Tillers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						-- Quest Items
 						i(79265, {	-- Blue Feather
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(79266, {	-- Jade Cat
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(79267, {	-- Lovely Apple
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(79268, {	-- Marsh Lily
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(79264, {	-- Ruby Shard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(143948, {	-- Chilled Satchel of Vegetables
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						})
 					}),
 					filter(MOUNTS, {
 						i(234740, {	-- Copper-Maned Quilen Reins (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(87775, {	-- Yu'lei, Daughter of Jade (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 					}),
 					filter(TOYS, {
 						i(144072, {	-- Adopted Puppy Crate (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(144393, {	-- Portable Yak Wash (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 					}),
 				},
@@ -5465,213 +5466,213 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(109074, {	-- Fine Void-Chain Cinch
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116765, {	-- Positive Pantaloons
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127296, {	-- Twisted Taboo Handwraps
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116110, {	-- Zorkra's Hood
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(127304, {	-- Cave Keeper Wraps
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(113557, {	-- Dragonrider's Tinkered Leggings
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(109057, {	-- Frogskin Diving Cap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116834, {	-- Whitesea's Waistwrap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(112096, {	-- Dented Ogre Skullcap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119372, {	-- Ironstudded Scale Girdle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119370, {	-- Rattlekilt
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127311, {	-- Serpentine Gloves
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(119382, {	-- Hershak's Heavy Legguards
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127319, {	-- Krag'goth's Iron Gauntlets
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119384, {	-- Krud's Girthy Girdle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127320, {	-- Mo'gruth's Discarded Parade Helm
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						i(244734, {	-- Anchorite's Crystal Torch
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244733, {	-- Aruuna Miner's Pick
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244784, {	-- Beastmaster's Lost Hatchet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244723, {	-- Blade of the Pale Flame
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244722, {	-- Bloodied Ashran Battletome
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244721, {	-- Crystalsmith's Energy Focus
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244787, {	-- Elodor Attuning Beacon
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						iensemble(234903, {	-- Ensemble: Gorgrond Cragstalker's Hunting Gear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234901, {	-- Ensemble: Karabor Priest's Vestments
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234904, {	-- Ensemble: Shadowmoon Anchorite's Guardplate
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234902, {	-- Ensemble: Shattrath Artificer's Regalia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						i(244725, {	-- Frostwall Defender's Axe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244786, {	-- Grom'gar Hunting Spear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244728, {	-- Lunarfall Rifle
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244732, {	-- Lunarfall Scout's Shortsword
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244729, {	-- Mok'gol Howling Shield
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244731, {	-- Rangari Climbing Hooks
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244730, {	-- Razorwall of the Foundry
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234907, {	-- Tattered Iron Horde Tabard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(250777, {	-- Time-Lost Bite of the Frostwolves
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_5 },
 						}),
 						i(244726, {	-- Time-Lost Sight of the Shadowmoon
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244785, {	-- Time-Lost Wolfbite, Legacy of Garad
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244776, {	-- Truesteel Gavel
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244724, {	-- Vindicator's Taladite Warmaul
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244727, {	-- Warsong Raider's Longbow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 					})),
 					filter(MISC, {
 						i(167924, {	-- Commendation of the Arakkoa Outcasts
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167928, {	-- Commendation of the Frostwolf Orcs
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167930, {	-- Commendation of the Laughing Skull Orcs
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167925, {	-- Commendation of the Order of the Awakened
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167927, {	-- Commendation of the Saberstalkers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(168017, {	-- Commendation of Vol'jin's Headhunters
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 					filter(MOUNTS, {
 						i(167894, {	-- Beastlord's Irontusk (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(167895, {	-- Beastlord's Warwolf (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(234716, {	-- Nightfall Skyreaver's Reins (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 					}),
 					filter(TOYS, {
 						i(168012, {	-- Apexis Focusing Shard (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(168014, {	-- Banner of the Burning Blade (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
 						}),
 					}),
 					n(WEAPONS, {
 						i(119226, {	-- Blammo's Blammer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(127339, {	-- Forgotten Champion's Blade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(119396, {	-- Shadowspeaker's Shard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(113287, {	-- Shard of Scorn
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 				},
@@ -5683,217 +5684,217 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(109074, {	-- Fine Void-Chain Cinch
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116765, {	-- Positive Pantaloons
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127296, {	-- Twisted Taboo Handwraps
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116110, {	-- Zorkra's Hood
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(127304, {	-- Cave Keeper Wraps
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(113557, {	-- Dragonrider's Tinkered Leggings
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(109057, {	-- Frogskin Diving Cap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(116834, {	-- Whitesea's Waistwrap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(112096, {	-- Dented Ogre Skullcap
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119372, {	-- Ironstudded Scale Girdle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119370, {	-- Rattlekilt
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127311, {	-- Serpentine Gloves
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(119382, {	-- Hershak's Heavy Legguards
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127319, {	-- Krag'goth's Iron Gauntlets
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(119384, {	-- Krud's Girthy Girdle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(127320, {	-- Mo'gruth's Discarded Parade Helm
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 						i(244734, {	-- Anchorite's Crystal Torch
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244733, {	-- Aruuna Miner's Pick
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234906, {	-- Auchenai Tabard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 							["minReputation"] = { FACTION_COUNCIL_OF_EXARCHS, EXALTED },
 						}),
 						i(244784, {	-- Beastmaster's Lost Hatchet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244723, {	-- Blade of the Pale Flame
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244722, {	-- Bloodied Ashran Battletome
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244721, {	-- Crystalsmith's Energy Focus
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244787, {	-- Elodor Attuning Beacon
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						iensemble(234903, {	-- Ensemble: Gorgrond Cragstalker's Hunting Gear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234901, {	-- Ensemble: Karabor Priest's Vestments
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234904, {	-- Ensemble: Shadowmoon Anchorite's Guardplate
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						iensemble(234902, {	-- Ensemble: Shattrath Artificer's Regalia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 						}),
 						i(244725, {	-- Frostwall Defender's Axe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244786, {	-- Grom'gar Hunting Spear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244728, {	-- Lunarfall Rifle
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244732, {	-- Lunarfall Scout's Shortsword
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244729, {	-- Mok'gol Howling Shield
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244731, {	-- Rangari Climbing Hooks
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244730, {	-- Razorwall of the Foundry
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234907, {	-- Tattered Iron Horde Tabard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(250777, {	-- Time-Lost Bite of the Frostwolves
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_2_5 },
 						}),
 						i(244726, {	-- Time-Lost Sight of the Shadowmoon
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244785, {	-- Time-Lost Wolfbite, Legacy of Garad
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244776, {	-- Truesteel Gavel
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244724, {	-- Vindicator's Taladite Warmaul
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244727, {	-- Warsong Raider's Longbow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 					})),
 					filter(MISC, {
 						i(167924, {	-- Commendation of the Arakkoa Outcasts
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167929, {	-- Commendation of the Council of Exarchs
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(168018, {	-- Commendation of the Hand of the Prophet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167925, {	-- Commendation of the Order of the Awakened
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167927, {	-- Commendation of the Saberstalkers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167932, {	-- Commendation of the Sha'tari Defense
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 					filter(MOUNTS, {
 						i(167894, {	-- Beastlord's Irontusk (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(167895, {	-- Beastlord's Warwolf (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(234716, {	-- Nightfall Skyreaver's Reins (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 					}),
 					filter(TOYS, {
 						i(168012, {	-- Apexis Focusing Shard (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(168014, {	-- Banner of the Burning Blade (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
 						}),
 					}),
 					n(WEAPONS, {
 						i(119226, {	-- Blammo's Blammer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(127339, {	-- Forgotten Champion's Blade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(119396, {	-- Shadowspeaker's Shard
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(113287, {	-- Shard of Scorn
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 				},
@@ -6124,216 +6125,216 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(187580, {	-- Nar'thalas Ceremonial Legwraps
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187579, {	-- Nar'thalas Ceremonial Tunic
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187581, {	-- Nar'thalas Scrollmantle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(187583, {	-- Thorignir Breeches
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187582, {	-- Thorignir Heartguard
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187584, {	-- Thorignir Spaulders
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(187585, {	-- Leyguard Cuirass
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187586, {	-- Leyguard Greaves
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187587, {	-- Leyguard Mantle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(187588, {	-- Black Rook Elite Chestguard
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187589, {	-- Black Rook Elite Legguards
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(187590, {	-- Black Rook Elite Shoulderplates
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 					}),
 					filter(COSMETIC, {
 						i(244836, {	-- Cane of the Runic Wanderer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234954, {	-- Corrupted Knot
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(234952, {	-- Crux of Blind Faith
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_0_7, REMOVED_11_1_5 },	-- EU users have reported it absent from the vendor (?)
 						}),
 						i(234953, {	-- Edge of the First Blade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_0_7, REMOVED_11_1_5 },	-- EU users have reported it absent from the vendor (?)
 						}),
 						iensemble(234946, {	-- Ensemble: Broken Shore Battlemender's Gear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						iensemble(234947, {	-- Ensemble: Drake Hunter's Kit
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						iensemble(234948, {	-- Ensemble: Drekirjar Warrior's Battlegear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						iensemble(234945, {	-- Ensemble: Invasion Stalker's Guise
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 4000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						iensemble(188209, {	-- Ensemble: Ravencrest's Battleplate
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 						i(234958, {	-- Fenryr's Bloodstained Fang
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(234955, {	-- Hate-Sculpted Magma
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(244834, {	-- Hippogryph Lancer's Magespear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234949, {	-- Howling Echoes
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(234959, {	-- Key to the Halls
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(244830, {	-- Krokuun Tunneler's Axe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244837, {	-- Mage-Forged Dragonblade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(234957, {	-- Monstrous Gluttony
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(244828, {	-- Nightforged Spellblade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(227294, {	-- Ravencrest's Wrath
 							["modID"] = 14,
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(187562, {	-- Replica Aegis of Aggramar
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
 						}),
 						i(234956, {	-- Rod of Crystalline Energies
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(244823, {	-- Silver Dragonblade of the Resistance
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(227287, {	-- Skovald's Resolve
 							["modID"] = 14,
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 						i(244833, {	-- Stonedark Chieftain's Bartered Tool
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244824, {	-- Time-Lost Dreadbow of the Banshee
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 						i(244827, {	-- Valarjar Sparring Buckler
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_11_1_7 },
 						}),
 					}),
 					filter(MISC, {
 						i(152960, {	-- Argussian Reach Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(152957, {	-- Army of the Light Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146943, {	-- Court of Farondis Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146942, {	-- Dreamweaver Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146944, {	-- Highmountain Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146950, {	-- Legionfall Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146946, {	-- Nightfallen Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146941, {	-- Valarjar Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(146945, {	-- Wardens Insignia
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						-- Materials
 						i(187598, {	-- Broken Isles Cloth Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(187604, {	-- Broken Isles Enchantment Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(187597, {	-- Broken Isles Fish Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							["groups"] = {
 								i(138777),	-- Drowned Mana
 							},
 						}),
 						i(187605, {	-- Broken Isles Gem Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(187599, {	-- Broken Isles Herb Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(187601, {	-- Broken Isles Leather Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(187596, {	-- Broken Isles Meat Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							["groups"] = {
 								i(151653),	-- Broken Isles Recipe Scrap
 							},
 						}),
 						i(187600, {	-- Broken Isles Ore Delivery
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(141018, {	-- Sargerei Blood Vessel
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 150 } },
 							["groups"] = {
 								i(124124),	-- Blood of Sargeras
 							},
@@ -6341,40 +6342,40 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 					filter(MOUNTS, {
 						i(187595, {	-- Val'sharah Hippogryph (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(234721, {	-- Ur'zul Fleshripper Bridle (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 							["timeline"] = { ADDED_11_0_7 },
 						}),
 					}),
 					filter(TOYS, {
 						i(187591, {	-- Nightborne Guard's Vigilance (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 							["timeline"] = { ADDED_10_1_5 },
 						}),
 					}),
 					n(WEAPONS, {
 						i(187566, {	-- Arcsmasher
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(187565, {	-- Argussian Reach Longbow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(187567, {	-- Nightborne Arcsaber
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(187564, {	-- Nightborne Arcshield
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 						}),
 						i(187563, {	-- Suramar Guard's Shield
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 						}),
 						i(187578, {	-- Warpcaster's Staff
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 					}),
 				},
@@ -6845,223 +6846,223 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(243569, {	-- Bloodstained Shawl of Atal'Gurub
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(243567, {	-- Cloak of the Tideguard
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(243568, {	-- Tidecaller's Ritual Cape
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(243566, {	-- Waycrest Sentry Cloak
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(CLOTH, {
 							i(243561, {	-- Ancient Nazmani Bracelet
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(243563, {	-- Tal'aman Ambassador's Amice
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(243562, {	-- Mirestained Scout's Mantle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 							i(243560, {	-- Naval Officer's Armband
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(243565, {	-- Navigator's Flagship Mantle
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 							i(243558, {	-- Stormsong Mariner's Cuff
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(243564, {	-- Boralus Cityguard Spaulders
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 							}),
 							i(243559, {	-- Pilfered Wristguards of Aka'ali
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 					}),
 					filter(BATTLE_PETS, {
 						i(245543, {	-- Flotsam Harvester (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
 						}),
 						i(245574, {	-- Lil' Daz'ti (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
 						}),
 					}),
 					filter(COSMETIC, {
 						i(244432, {	-- 7th Legion Commander's Crest
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 						}),
 						i(244430, {	-- Blade of the Prophet
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244440, {	-- Blade of the Rezani Prelate
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244427, {	-- Blood Witch's Hex Cane
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244437, {	-- Dark Ranger's Black Bow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244441, {	-- Dazar's Ceremonial Negotiator
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244426, {	-- Dinomancer's Calming Rod
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						iensemble(244145, {	-- Ensemble: Ashvane Smuggler's Attire
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						iensemble(244224, {	-- Ensemble: Bloodsail Smuggler's Attire
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						iensemble(244306, {	-- Ensemble: Golden Fleet's Sailing Garb
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 						}),
 						iensemble(244327, {	-- Ensemble: Zocalo Merchant's Wear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
 						}),
 						i(244428, {	-- Fang of Sethraliss
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(244438, {	-- Nazmani Blood Drinker
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244436, {	-- Parrot King's Hook-Leg
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(244445, {	-- Razdunk's WR0-NC4 5300
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
 						i(244439, {	-- Stormcrook of the Faithless
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(244431, {	-- Tideguard's Blessed Gavel
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(244471, {	-- Time-Lost Tempest Caller
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(244433, {	-- Waycrest Training Buckler
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(244434, {	-- Witch-Hunter's Shortsword
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 					}),
 					filter(MISC, {
 						i(238804, {	-- Commendation of Proudmoore Admiralty
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238805, {	-- Commendation of Storm's Wake
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238816, {	-- Commendation of Talanji's Expedition
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238806, {	-- Commendation of the 7th Legion
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238821, {	-- Commendation of the Champions of Azeroth
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238819, {	-- Commendation of the Honorbound
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238803, {	-- Commendation of the Order of Embers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238826, {	-- Commendation of the Rajani
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238823, {	-- Commendation of the Rustbolt Resistance
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238822, {	-- Commendation of the Tortollan Seekers
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238827, {	-- Commendation of the Uldum Accord
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238820, {	-- Commendation of the Unshackled
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238817, {	-- Commendation of the Voldunai
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238809, {	-- Commendation of the Waveblade Ankoan
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(238818, {	-- Commendation of the Zandalari Empire
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 					filter(MOUNTS, {
 						i(245694, {	-- Reins of the Ivory Savagemane (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(245695, {	-- Reins of the Moonlit Nightsaber (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 					}),
 					filter(TOYS, {
 						i(246227, {	-- Lightning-Blessed Spire (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(245942, {	-- Sea-Blessed Shrine (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 					}),
 					n(WEAPONS, {
 						i(244151, {	-- Ashvane Ore Crusher
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(244158, {	-- Azerite-Carved Ritual Kris
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244157, {	-- Blessed Bulwark of Zanchul
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244162, {	-- Bondo's Spare Mechano-Clamps
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244156, {	-- Crackling Stormbow of the Devoted
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(244154, {	-- Freehold Boarding Halberd
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(244160, {	-- Junkyard Clobberstick
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244161, {	-- Mugambala Champion's Axe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244152, {	-- Pilfered Golden Scepter
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(244153, {	-- Reclaimed Ancestral Blade of the Deeps
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(244150, {	-- Seaglass Ritual Rod
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
 						}),
 						i(244155, {	-- Siren Slayer's Trident
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(244159, {	-- Tol'Dagor Pocket Shank
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 				},
@@ -7510,197 +7511,197 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(256359, {	-- Cowl of the Forsworn Seer
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(256351, {	-- Robe of the Forsworn Seer
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(LEATHER, {
 							i(256352, {	-- Mantle of Harmonized Spirit
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(256360, {	-- Mask of Harmonized Spirit
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(MAIL, {
 							i(256353, {	-- Elysian Pathfinder's Mail
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(256358, {	-- Elysian Pathfinder's Visor
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 						filter(PLATE, {
 							i(256355, {	-- Animaforged Sentinel's Helm
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(256350, {	-- Animaforged Sentinel's Plate
-								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 						}),
 					}),
 					filter(BATTLE_PETS, {
 						i(254876, {	-- P.O.S.T. Assistant (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
 						}),
 					}),
 					filter(COSMETIC, {
 						i(254855, {	-- Amice of the Dark Necromancer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 450 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 450 } },
 						}),
 						i(254872, {	-- Creator's Rod of Origin
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254858, {	-- Crossbow of the First Ones
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(258527, {	-- Greathammer of the Fallen Lightbringer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						i(258528, {	-- Greathammer of the Righteous Lightbringer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
 						i(254844, {	-- Hammer of the Righteous Lightbringer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254845, {	-- Hammer of the Fallen Lightbringer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254853, {	-- Lance of the Architects
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254860, {	-- Longsword of the First Ones
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(254857, {	-- Maw Executioner's Guillotine
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254851, {	-- Maw Stalker's Quiver
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
 						}),
 						i(254864, {	-- Oozeframe of the Mad Alchemist
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
 						}),
 						i(258662, {	-- Progenitor's Custodial Sentry
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 						i(254867, {	-- Progenitor's Fix-It-Up
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(254866, {	-- Progenitor's Fractured Smasher
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254854, {	-- Putrid Necromancer Mantle
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 450 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 450 } },
 						}),
 						i(254862, {	-- Runeblade of the Maldraxxus Paragon
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(254865, {	-- Shell of the Forbidden Land
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254861, {	-- Sinstone Cleaver
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254856, {	-- Soul Harvester's Scythe
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(254852, {	-- Spirit Marksman's Quiver
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 600 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
 						}),
 						i(254863, {	-- Staff of the Penitent
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(254873, {	-- Zerith Vibroblade
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 					}),
 					filter(MISC, {
 						i(254768, {	-- Commendation of Marasmius
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254774, {	-- Commendation of the Archivist's Codex
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254760, {	-- Commendation of the Ascended
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254762, {	-- Commendation of the Avowed
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254746, {	-- Commendation of the Court of Harvesters
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254763, {	-- Commendation of the Court of Night
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254771, {	-- Commendation of the Death's Advance
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254764, {	-- Commendation of the Ember Court
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254775, {	-- Commendation of the Enlightened
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254765, {	-- Commendation of the Stitchmasters
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254759, {	-- Commendation of the Undying Army
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254758, {	-- Commendation of the Wild Hunt
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254761, {	-- Commendation of Ve'nari
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 					filter(MOUNTS, {
 						i(258515, {	-- Crimson Lupine (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 						i(259463, {	-- Snowpaw Glimmerfur Prowler (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 					}),
 					filter(TOYS, {
 						i(256881, {	-- Steward's Bauble (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
 						}),
 						i(256893, {	-- Wretched Dredger's Brand (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
 						}),
 					}),
 					n(WEAPONS, {
 						i(256339, {	-- Anima Drinker's Rapier
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(256338, {	-- Dagger of Forgotten Vows
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(256341, {	-- Faithspire Redeemer
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(256348, {	-- Fallen Ascendant's Bulwark
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(256336, {	-- Kyrian Sky Splitter
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(254868, {	-- Sacred Bell of the Ascended
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(256340, {	-- Skyguard's Longbow
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(256337, {	-- The Price Adjuster
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 						}),
 						i(256349, {	-- Warglaives of Devotion
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
 				},

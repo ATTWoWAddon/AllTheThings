@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(SEASON_OBSIDIAN, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
@@ -188,11 +189,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
 					iensemble(230981, {	-- Arsenal: Obsidian Aspirant's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230951, {	-- Ensemble: Obsidian Aspirant's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
@@ -336,11 +337,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
 				["ItemAppearanceModifierID"] = 159,
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
 					iensemble(230982, {	-- Arsenal: Obsidian Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230955, {	-- Ensemble: Obsidian Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -1005,11 +1006,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
 					iensemble(230983, {	-- Arsenal: Elite Obsidian Gladiator's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(230968, {	-- Ensemble: Elite Obsidian Gladiator's Death Knight Armor
 						["classes"] = { DEATHKNIGHT },
@@ -1058,7 +1059,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(209377, {	-- Zaeka Steelbender
 				["timeline"] = { ADDED_10_2_0 },
 				["coord"] = { 44.8, 42.6, VALDRAKKEN },
-				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 3 } },
+				}, {
 			-- #endif
 					i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet (RECIPE!)
 					i(204147),	-- Design: Obsidian Combatant's Jeweled Signet (RECIPE!)
@@ -1109,7 +1112,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
+					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}, {
 					i(204169),	-- Technique: Obsidian Combatant's Emblem (RECIPE!)

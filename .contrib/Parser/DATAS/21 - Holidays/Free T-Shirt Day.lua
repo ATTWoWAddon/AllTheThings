@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 FREE_T_SHIRT_DAY_HEADER = createHeader({
 	readable = "Free T-Shirt Day",
 	constant = "FREE_T_SHIRT_DAY_HEADER",
@@ -20,6 +21,7 @@ FREE_T_SHIRT_DAY_HEADER = createHeader({
 		tw = "免費T恤日",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 	n(RARES, {
 		n(145826, {	-- Orgrimmar Entertainer

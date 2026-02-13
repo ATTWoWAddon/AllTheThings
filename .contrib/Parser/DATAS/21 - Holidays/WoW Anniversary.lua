@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 -- #if AFTER 3.0.2
 WOW_ANNIVERSARY_ROOT = createHeader({
 	readable = "WoW's Anniversary",
@@ -260,6 +261,7 @@ WOW_ANNIVERSARY_TWENTYONE = createHeader({
 		en = WOWAPI_GetAchievementName(61406),
 	},
 });
+
 local BRONZE_TOKEN = 3100;
 
 ------ Encounter Constants ------
@@ -430,9 +432,9 @@ local function RelicCofferKeyPurchase(itemID)
 		-- #IF BEFORE 11.2.5
 		-- No vendors anymore, so no costs
 		["cost"] = {
-			{"i",231510,40},	-- Timewarped Relic Coffer Key [L]
-			{"i",232365,40},	-- Timewarped Relic Coffer Key [N]
-			{"i",232366,40},	-- Timewarped Relic Coffer Key [H]
+			{ "i", 231510, 40 },	-- Timewarped Relic Coffer Key [L]
+			{ "i", 232365, 40 },	-- Timewarped Relic Coffer Key [N]
+			{ "i", 232366, 40 },	-- Timewarped Relic Coffer Key [H]
 		},
 		-- #ENDIF
 	})
@@ -674,19 +676,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(136925, {	-- Corgi Pup (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128506, {	-- Celebration Wand - Gnoll
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(128505, {	-- Celebration Wand - Murloc
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							["groups"] = {
 								ach(10335),	-- Did Someone Say...?
 							},
@@ -698,19 +700,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(136925, {	-- Corgi Pup (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128506, {	-- Celebration Wand - Gnoll
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(128505, {	-- Celebration Wand - Murloc
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							["groups"] = {
 								ach(10335),	-- Did Someone Say...?
 							},
@@ -800,16 +802,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(147883, {	-- Celebration Wand - Quillboar
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147882, {	-- Celebration Wand - Trogg
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					},
 				}),
@@ -818,16 +820,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["groups"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(147883, {	-- Celebration Wand - Quillboar
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147882, {	-- Celebration Wand - Trogg
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					},
 				}),
@@ -975,7 +977,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 					},
 				}),
@@ -984,7 +986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 					},
 				}),
@@ -1830,13 +1832,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								n(BACK, {
 									i(172100, {	-- Frostwolf Advisor's Cloak
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172098, {	-- Frostwolf Legionnaire's Cloak
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1844,13 +1846,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(CLOTH, {
 									i(172120, {	-- Frost Runed Headdress
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172105, {	-- Frostwolf Cloth Belt
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1858,19 +1860,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(FINGER_F, {
 									i(172124, {	-- Deep Rooted Ring
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172138, {	-- Don Julio's Band
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172140, {	-- Don Rodrigo's Band
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1878,13 +1880,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(LEATHER, {
 									i(172104, {	-- Frostwolf Leather Belt
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172128, {	-- Yeti Hide Bracers
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1892,13 +1894,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(MAIL, {
 									i(172103, {	-- Frostwolf Mail Belt
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172126, {	-- Winteraxe Epaulets
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1906,13 +1908,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(NECK_F, {
 									i(172111, {	-- Frostwolf Advisor's Pendant
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172110, {	-- Frostwolf Legionnaire's Pendant
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1920,13 +1922,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(PLATE, {
 									i(172102, {	-- Frostwolf Plate Belt
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172127, {	-- Frozen Steel Vambraces
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -1934,103 +1936,103 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172125, {	-- Cold Forged Blade
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172139, {	-- Cold Forged Hammer
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172118, {	-- Frostbite
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172114, {	-- Glacial Blade
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172121, {	-- Ice Barbed Spear
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172133, {	-- Lei of the Lifegiver
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172135, {	-- The Immovable Object
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172137, {	-- The Lobotomizer
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172134, {	-- Therazane's Touch
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172136, {	-- The Unstoppable Force
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172129, {	-- Tome of Arcane Domination
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172130, {	-- Tome of Shadow Force
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172132, {	-- Tome of the Fiery Arcana
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172131, {	-- Tome of the Ice Lord
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172123, {	-- Wand of Biting Cold
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172116, {	-- Whiteout Staff
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
@@ -2046,13 +2048,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								n(BACK, {
 									i(172101, {	-- Stormpike Sage's Cloak
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172099, {	-- Stormpike Soldier's Cloak
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2060,13 +2062,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(CLOTH, {
 									i(172120, {	-- Frost Runed Headdress
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172109, {	-- Stormpike Cloth Girdle
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2074,19 +2076,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(FINGER_F, {
 									i(172124, {	-- Deep Rooted Ring
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172138, {	-- Don Julio's Band
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172140, {	-- Don Rodrigo's Band
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2094,13 +2096,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(LEATHER, {
 									i(172108, {	-- Stormpike Leather Girdle
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172128, {	-- Yeti Hide Bracers
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2108,13 +2110,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(MAIL, {
 									i(172107, {	-- Stormpike Mail Girdle
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172126, {	-- Winteraxe Epaulets
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2122,13 +2124,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(PLATE, {
 									i(172127, {	-- Frozen Steel Vambraces
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172106, {	-- Stormpike Plate Girdle
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2136,13 +2138,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								filter(NECK_F, {
 									i(172113, {	-- Stormpike Sage's Pendant
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
 									i(172112, {	-- Stormpike Soldier's Pendant
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 20 },
 										},
 									}),
@@ -2150,103 +2152,103 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172125, {	-- Cold Forged Blade
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172139, {	-- Cold Forged Hammer
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172117, {	-- Crackling Staff
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172115, {	-- Electrified Dagger
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172121, {	-- Ice Barbed Spear
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172133, {	-- Lei of the Lifegiver
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172119, {	-- Stormstrike Hammer
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172135, {	-- The Immovable Object
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172137, {	-- The Lobotomizer
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
 									i(172134, {	-- Therazane's Touch
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172136, {	-- The Unstoppable Force
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 90 },
 										},
 									}),
 									i(172129, {	-- Tome of Arcane Domination
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172130, {	-- Tome of Shadow Force
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172132, {	-- Tome of the Fiery Arcana
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172131, {	-- Tome of the Ice Lord
 										["cost"] = {
-											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "i", MOH, 1 },
 											{ "c", TIMEWARPED_BADGE, 30 },
 										},
 									}),
 									i(172123, {	-- Wand of Biting Cold
 										["cost"] = {
-											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "i", MOH, 2 },
 											{ "c", TIMEWARPED_BADGE, 40 },
 										},
 									}),
@@ -2302,37 +2304,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["groups"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128506, {	-- Celebration Wand - Gnoll
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(128505, {	-- Celebration Wand - Murloc
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147883, {	-- Celebration Wand - Quillboar
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(147882, {	-- Celebration Wand - Trogg
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 						}),
 						i(136925, {	-- Corgi Pup (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 							["groups"] = {
 								ach(10335),	-- Did Someone Say...?
 							},
 						}),
 						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					},
 				}),
@@ -2379,7 +2381,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["groups"] = {
 						i(178514, {	-- Crafted Cloak of War
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 					},
 				}),
@@ -2421,7 +2423,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["groups"] = {
 						i(186556, {	-- Timeless Mechanical Dragonling (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 						}),
 					},
 				}),
@@ -2497,7 +2499,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["groups"] = {
 						i(186469, {	-- Illidari Doomhawk (MOUNT!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 						}),
 					},
 				}),
@@ -3260,7 +3262,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 										["coord"] = { 54.0, 72.8, BORALUS },
 										["groups"] = {
 											i(232363, {	-- Half-Eaten Mouse
-												["cost"] = {{ "i", 232362, 1 }},	-- Deluxe Tuna
+												["cost"] = { { "i", 232362, 1 } },	-- Deluxe Tuna
 											}),
 										},
 									}),
@@ -4122,7 +4124,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 					["groups"] = {
 						filter(MISC, sharedData({
-							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}, {
 							i(224567),	-- Commendation of the Argent Dawn
 							i(224558),	-- Commendation of the Brood of Nozdormu
@@ -4134,10 +4136,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						})),
 						filter(MISC, {
 							i(224190, {	-- Kreeg's Hardy Draught
-								["cost"] = {{"c", TIMEWARPED_BADGE, 25}}
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(225378, {	-- Mohawk Grenade
-								["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
+								["cost"] = { { "c", TIMEWARPED_BADGE, 200 } },
 							}),
 						}),
 					},
@@ -4149,22 +4151,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 						},{	-- One-Time Content
 							i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 							i(232598, {	-- Bag of Timewarped Badges
-								["cost"] = {{"c", BRONZE_TOKEN, 1}},
+								["cost"] = { { "c", BRONZE_TOKEN, 1 } },
 								["groups"] = {
 									currency(TIMEWARPED_BADGE),
 								},
 							}),
 							i(235505, {	-- Satchel of Timewarped Badges
-								["cost"] = {{"c", BRONZE_TOKEN, 5}},
+								["cost"] = { { "c", BRONZE_TOKEN, 5 } },
 								["groups"] = {
 									currency(TIMEWARPED_BADGE),
 								},
 							}),
 							i(235506, {	-- Box of Timewarped Badges
-								["cost"] = {{"c", BRONZE_TOKEN, 25}},
+								["cost"] = { { "c", BRONZE_TOKEN, 25 } },
 								["groups"] = {
 									currency(TIMEWARPED_BADGE),
 								},
@@ -4172,25 +4174,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						{	-- Recurring Content
 							i(208572, {	-- Azure Worldchiller (MOUNT!)
-								["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
+								["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
 							}),
 							i(228785, {	-- Coldflame Bulwark
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 							i(228788, {	-- Coldflame Edged Crest
-								["cost"] = {{"c", BRONZE_TOKEN, 15}}
+								["cost"] = { { "c", BRONZE_TOKEN, 15 } },
 							}),
 							i(228789, {	-- Coldflame Ring (TOY!)
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 							i(228786, {	-- Coldflame Winged Crown
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 							i(228784, {	-- Coldflame's Edge
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 							i(228781, {	-- Lil'Doomy (PET!)
-								["cost"] = {{"c", BRONZE_TOKEN, 10}}
+								["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 							}),
 						}),
 				}),
@@ -4198,91 +4200,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 63.3, 50.7, TANARIS },
 					["groups"] = {
 						i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(587),	-- Broken Isles Enthusiast <Name>
 							},
 						}),
 						i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(584),	-- Cataclsym Enthusiast <Name>
 							},
 						}),
 						i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(581),	-- Classic Enthusiast <Name>
 							},
 						}),
 						i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(586),	-- Draenor Enthusias <Name>
 							},
 						}),
 						i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(591),	-- Dragon Isles Enthusiast <Name>
 							},
 						}),
 						i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(577),	-- Grizzly Hills Hiker <Name>
 							},
 						}),
 						i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(596),	-- Karazhan Graduate <Name>
 							},
 						}),
 						i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(589),	-- Kul Tiras Enthusiast <Name>
 							},
 						}),
 						i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(595),	-- Molten Core Prospector <Name>
 							},
 						}),
 						i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(583),	-- Northrend Enthusiast <Name>
 							},
 						}),
 						i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(582),	-- Outland Enthusiast <Name>
 							},
 						}),
 						i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(585),	-- Pandaria Enthusiast <Name>
 							},
 						}),
 						i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(578),	-- Plaguelands Survivor <Name>
 							},
 						}),
 						i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(590),	-- Shadowlands Enthusiast <Name>
 							},
 						}),
 						i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(588),	-- Zuldazar Enthusiast <Name>
 							},
@@ -4293,17 +4295,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 62.9, 51.1, TANARIS },
 					["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 					["groups"] = sharedData({
-						["cost"] = {{"c", BRONZE_TOKEN, 10}},
+						["cost"] = { { "c", BRONZE_TOKEN, 10 } },
 					}, {
 						i(44819),	-- Baby Blizzard Bear (PET!)
 						i(115484, {	-- Core Hound Chain (MOUNT!)
-							["cost"] = {{"c", BRONZE_TOKEN, 20}},
+							["cost"] = { { "c", BRONZE_TOKEN, 20 } },
 						}),
 						i(118574),	-- Hatespark the Tiny (PET!)
 						i(172016),	-- Lil' Nefarian (PET!)
 						i(115301),	-- Molten Corgi (PET!)
 						i(172012, {	-- Obsidian Worldbreaker (MOUNT!)
-							["cost"] = {{"c", BRONZE_TOKEN, 20}},
+							["cost"] = { { "c", BRONZE_TOKEN, 20 } },
 						}),
 						i(49362),	-- Onyxian Whelpling (PET!)
 					}),
@@ -4312,7 +4314,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 63.1, 50.9, TANARIS },
 					["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 					["groups"] = sharedData({
-						["cost"] = {{"c", BRONZE_TOKEN, 60}},
+						["cost"] = { { "c", BRONZE_TOKEN, 60 } },
 					}, {
 						iensemble(228205, {	-- Ensemble: Pale Rider's Eternal Armor
 							["classes"] = { DEATHKNIGHT },
@@ -4563,7 +4565,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 63.3, 50.7, TANARIS },
 					["groups"] = {
 						i(249242, {	-- Bronze Celebration Titles: Khaz Algar Enthusiast (CI!)
-							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
 							["groups"] = {
 								title(645),	-- Khaz Algar Enthusiast <Name>
 							},
@@ -4574,25 +4576,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["coord"] = { 63.1, 50.9, TANARIS },
 					["groups"] = {
 						i(253154, {	-- Loyal Watchman's Gauntlets
-							["cost"] = {{"c", TIMEWARPED_BADGE, 20}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 20 } },
 						}),
 						i(253155, {	-- Loyal Watchman's Belt
-							["cost"] = {{"c", TIMEWARPED_BADGE, 20}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 20 } },
 						}),
 						i(253156, {	-- Loyal Watchman's Boots
-							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 30 } },
 						}),
 						i(253157, {	-- Loyal Watchman's Trousers
-							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 30 } },
 						}),
 						i(253158, {	-- Loyal Watchman's Cuirass
-							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 30 } },
 						}),
 						i(253159, {	-- Loyal Watchman's Spaulders
-							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(253160, {	-- Loyal Watchman's Helm
-							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					},
 				}),

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 BOUNTY = createHeader({
 	readable = "Bounty",
 	icon = 2125377,
@@ -42,6 +43,7 @@ WORLD_PVP = createHeader({
 		-- TODO: tw = "",
 	},
 });
+
 root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 	expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
@@ -166,10 +168,10 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				},
 			})),
 			ach(16615, {	-- Blood Bank
-				["cost"] = {{"c",2123,3000}},	-- 3000 Bloody Token
+				["cost"] = { { "c", 2123, 3000 } },	-- 3000x Bloody Token
 			}),
 			ach(16614, {	-- Bloodstained Bounty
-				["cost"] = {{"c",2123,750}},	-- 750 Bloody Token
+				["cost"] = { { "c", 2123, 750 } },	-- 750x Bloody Token
 			}),
 			ach(16603, {	-- Bounty Hunter
 				crit(55967, {	-- The Waking Shores
@@ -221,7 +223,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 			}),
 			ach(16616, {	-- Prosperously Bloody
-				["cost"] = {{"c",2123,1500}},	-- 1500 Bloody Token
+				["cost"] = { { "c", 2123, 1500 } },	-- 1500x Bloody Token
 			}),
 			ach(16611, {	-- Resource Scavanger
 				crit(55990, {	-- The Waking Shores

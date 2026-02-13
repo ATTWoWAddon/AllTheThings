@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local ALLIANCE_FIGHT_FOR_WSG_TIER_1 = {
 	8372,	-- Fight for Warsong Gulch
 	8399,	-- Fight for Warsong Gulch
@@ -33,6 +34,7 @@ local HORDE_BATTLE_FOR_WSG_TIER_2 = {	-- Repeatables
 	8434,	-- Battle of Warsong Gulch
 	8435,	-- Battle of Warsong Gulch
 };
+
 ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
@@ -60,6 +62,7 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 -- #endif
 	end
 end]];
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(WARSONG_GULCH, {
 		["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",

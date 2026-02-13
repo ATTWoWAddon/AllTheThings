@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
 	icon = [[_.asset("Holiday_STV_Fishing")]],
@@ -52,9 +53,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19807, 5 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 5 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 			}),
@@ -89,9 +88,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -117,9 +114,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19803, 1 },	-- Brownell's Blue Striped Racer
-				},
+				["cost"] = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -135,9 +130,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19806, 1 },	-- Dezian Angelfish
-				},
+				["cost"] = { { "i", 19806, 1 } },	-- Dezian Angelfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -153,9 +146,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = {
-					{ "i", 19805, 1 },	-- Keefer's Angelfish
-				},
+				["cost"] = { { "i", 19805, 1 } },	-- Keefer's Angelfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -173,9 +164,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {
@@ -199,9 +188,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					-- #endif
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = {
-					{ "i", 19807, 40 },	-- Speckled Tastyfish
-				},
+				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				["requireSkill"] = FISHING,
 				["repeatable"] = true,
 				["groups"] = {

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE 7.0.3.22248
 	-- Programmatically remove all references to Mark of Honor.
@@ -23,6 +24,7 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
+
 root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
 	["groups"] = {

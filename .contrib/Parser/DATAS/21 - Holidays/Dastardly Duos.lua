@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 DASTARDLY_DUOS = createHeader({
 	readable = "Dastardly Duos",
 	icon = [[~_.asset("Event_Dastardly Duos")]],
@@ -234,41 +235,41 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					},
 					["groups"] = {
 						i(239442, {	-- Black Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239503, {	-- Blue Dastardly Epaule
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239007, {	-- Dastardly Banner (TOY!)
 							["sourceQuest"] = 86503,	-- Who are the Dastardly Duos?
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(238624, {	-- Dastardly Pinchzapper
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239504, {	-- Green Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239019, {	-- Mean-Ball Bed (TOY!)
 							["sourceQuest"] = 87551,	-- Week 3: Spread the Word
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239505, {	-- Purple Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239506, {	-- Red Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239020, {	-- Tyrannotort's Treat (MOUNT!)
 							["sourceQuest"] = 87552,	-- Week 4: They've Heard of You
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239018, {	-- Winner's Podium (TOY!)
 							["sourceQuest"] = 87550,	-- Week 2: We're Really Taking Off
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239507, {	-- Yellow Dastardly Epaulet
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 					},
 				}),

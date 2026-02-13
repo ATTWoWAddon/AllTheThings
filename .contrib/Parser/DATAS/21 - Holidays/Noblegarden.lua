@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 NOBLEGARDEN_HEADER = createHeader({
 	readable = "Noblegarden",
 	constant = "NOBLEGARDEN_HEADER",
@@ -31,6 +32,7 @@ NOBLEGARDEN_HEADER = createHeader({
 		-- #endif
 	},
 });
+
 local function BrightlyColoredEgg(groups)
 	local egg
 	-- #IF ANYCLASSIC
@@ -90,6 +92,7 @@ local function BrightlyColoredEgg(groups)
 	}
 	return egg
 end
+
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
@@ -200,6 +203,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 };
+
 root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	BrightlyColoredEgg({
 		i(44791, {	-- Noblegarden Chocolate

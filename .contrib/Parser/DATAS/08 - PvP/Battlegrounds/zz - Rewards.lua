@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		filter(CONSUMABLES, {

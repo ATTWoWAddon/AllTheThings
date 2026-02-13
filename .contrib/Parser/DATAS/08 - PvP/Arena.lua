@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(ARENA, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Arena
 	n(ACHIEVEMENTS, {
 		ach(397),	-- Step Into the Arena [1]

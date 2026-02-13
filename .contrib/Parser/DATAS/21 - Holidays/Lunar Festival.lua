@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 -- https://www.wowhead.com/event=327/lunar-festival
 LUNAR_FESTIVAL_HEADER = createHeader({
 	readable = "Lunar Festival",
@@ -32,6 +33,7 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		-- #endif
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 	-- #if AFTER WRATH
 	n(ACHIEVEMENTS, {

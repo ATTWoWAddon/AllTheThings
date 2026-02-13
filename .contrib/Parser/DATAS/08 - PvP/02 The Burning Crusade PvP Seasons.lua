@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE LEGION
 	-- Programmatically remove all references to Mark of Honor.
@@ -20,6 +21,7 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
+
 -- #if BEFORE WRATH
 local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_TWO .. [[) then
@@ -50,6 +52,7 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Cata.

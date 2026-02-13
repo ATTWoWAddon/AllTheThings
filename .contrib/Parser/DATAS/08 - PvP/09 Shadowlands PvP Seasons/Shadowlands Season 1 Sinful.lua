@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_SINFUL, bubbleDownSelf({
 		["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 			ach(14685),		-- Combatant: Shadowlands Season 1
 			ach(14686),		-- Challenger: Shadowlands Season 1
@@ -47,11 +48,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201878, {	-- Arsenal: Sinful Aspirant's Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
 						["classes"] = CLOTH_CLASSES,
@@ -160,20 +161,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
 				["groups"] = sharedData({
-					["cost"] = {{"i", MOH, 12}},
+					["cost"] = { { "i", MOH, 12 } },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201881, {	-- Arsenal: Sinful Gladiator's Bastion Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201880, {	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201879, {	-- Arsenal: Sinful Gladiator's Revendreth Weapons
-						["cost"] = {{"i", MOH, 80}},
+						["cost"] = { { "i", MOH, 80 } },
 					}),
 					iensemble(201872, {	-- Ensemble: Sinful Gladiator's Cloth Armor
 						["classes"] = CLOTH_CLASSES,

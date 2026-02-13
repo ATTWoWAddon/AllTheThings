@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 ExportDB.OnTooltipDB.ForAlteracValley = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
@@ -17,7 +18,9 @@ ExportDB.OnTooltipDB.ForAlteracValley = [[~function(t, tooltipInfo)
 		end
 	end
 end]];
+
 local REMOVED_WITH_ANNIVERSARY_15 = REMOVED_8_2_5;	-- TODO: potentially all of these things added back?
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",

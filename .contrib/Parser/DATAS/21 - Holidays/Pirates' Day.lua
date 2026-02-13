@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 PIRATES_DAY_HEADER = createHeader({
 	readable = "Pirates' Day",
 	constant = "PIRATES_DAY_HEADER",
@@ -27,6 +28,7 @@ PIRATES_DAY_HEADER = createHeader({
 		tw = "海盜節",
 	},
 });
+
 root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 	["timeline"] = { ADDED_2_4_3 },
 	["groups"] = {

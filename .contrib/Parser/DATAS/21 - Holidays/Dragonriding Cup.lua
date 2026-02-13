@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 DRAGONRIDING_CUP_ROOT = createHeader({
 	readable = "Dragonriding Cup",
 	constant = "DRAGONRIDING_CUP_HEADER",
@@ -147,6 +148,7 @@ PANDARIA_CUP_HEADER = createHeader({
 		tw = "潘達利亞杯",
 	},
 });
+
 -- These actually don't require any DF content
 local dragonridingrace = function(id, data)
 	local t = dragonridingrace(id, data);
@@ -155,6 +157,7 @@ local dragonridingrace = function(id, data)
 	t.repeatable = true;
 	return t;
 end
+
 local RIDERS_OF_AZEROTH_BADGE = 2588;
 
 root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT, {

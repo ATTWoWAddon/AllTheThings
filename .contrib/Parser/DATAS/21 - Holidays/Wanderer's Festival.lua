@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 root(ROOTS.Holidays, {
 	applyevent(EVENTS.WANDERERS_FESTIVAL, n(createHeader({
 		readable = "Wanderer's Festival",
@@ -43,6 +44,7 @@ root(ROOTS.Holidays, {
 		},
 	})),
 });
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {

@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 	readable = "Midsummer Fire Festival",
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
@@ -67,6 +68,7 @@ local HORDE_BONFIRE_OBJECT_DATA = {
 		-- TODO: tw = "",
 	},
 };
+
 local ObjectDB = ObjectDB;
 function abonfire(questID, t)
 	t = q(questID, t);
@@ -1013,9 +1015,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 10.2, 15.3, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- Listen to the plan of the Twilight Cultists
@@ -1127,9 +1127,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_4_0_1 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(16, 1, 1),
 		}),
@@ -1139,9 +1137,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			-- #if AFTER CATA
 			-- NOTE: This quest was originally served to both Horde and Alliance, but with Cataclysm, a new version specifically for the Alliance was added.
 			["races"] = HORDE_ONLY,
@@ -1745,9 +1741,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { ASHENVALE },
-			["cost"] = {
-				{ "i", 35828, 1 },	-- Totemic Beacon
-			},
+			["cost"] = { { "i", 35828, 1 } },	-- Totemic Beacon
 			["lvl"] = lvlsquish(16, 1, 1),
 			["groups"] = {
 				objective(1, {	-- 0/1 Twilight Correspondence

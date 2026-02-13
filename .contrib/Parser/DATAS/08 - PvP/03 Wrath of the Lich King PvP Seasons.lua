@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE LEGION
 	-- Programmatically remove all references to Mark of Honor.

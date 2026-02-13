@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(275, {	-- Battle for Gilneas
 		["icon"] = 462671,

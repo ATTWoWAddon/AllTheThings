@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	readable = "Feast of Winter Veil",
 	constant = "FEAST_OF_WINTER_VEIL_HEADER",
@@ -27,6 +28,7 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 		tw = "冬幕節",
 	},
 });
+
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 local FROZEN_ARMS_OF_A_HERO = i(128314, {	-- Frozen Arms of a Hero
 	["timeline"] = { ADDED_6_2_0 },
@@ -259,6 +261,7 @@ local STOLEN_PRESENT_GROUPS = {
 		["timeline"] = { ADDED_11_0_7 },
 	}),
 };
+
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(1692, {	-- Merrymaker (A)
@@ -2625,34 +2628,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["groups"] = {
 				i(108635, {	-- Crashin' Thrashin' Killdozer Controller (TOY!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_0_2 },
 				}),
 				i(128665, {	-- Ball of Tangled Lights (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128668, {	-- Festive Outfits
 					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
 					["repeatable"] = true,
 				}),
 				i(128666, {	-- Imported Trees (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128667, {	-- Little Helpers (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128669, {	-- Old Box of Decorations (CI!)
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128670, {	-- Savage Gift
-					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
+					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["groups"] = {
 						-- #if BEFORE 7.3.2

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 	n(SEASON_DRACONIC_PVP, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
@@ -926,7 +927,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(221421, {	-- Eraneth <Draconic Combatant Recipes>
 				["timeline"] = { ADDED_11_0_0 },
 				["coord"] = { 43.6, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({
+					["cost"] = { { "i", MOH, 3 } },
+				}, {
 			-- #endif
 					i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
 					i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
@@ -977,7 +980,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["groups"] = sharedData({
-					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
+					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}, {
 					i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)

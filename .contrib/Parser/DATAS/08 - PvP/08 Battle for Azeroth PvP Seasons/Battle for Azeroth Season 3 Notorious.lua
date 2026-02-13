@@ -1,10 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_NOTORIOUS, bubbleDownSelf({
 		["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 			ach(13639),		-- Combatant: Battle for Azeroth Season 3
 			ach(13634),		-- Challenger: Battle for Azeroth Season 3
@@ -59,9 +60,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184676, {	-- Arsenal: Notorious Aspirant's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180194, {	-- Ensemble: Notorious Aspirant's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -146,9 +149,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184677, {	-- Arsenal: Notorious Aspirant's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(180195, {	-- Ensemble: Notorious Aspirant's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,
@@ -247,9 +252,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184674, {	-- Arsenal: Notorious Gladiator's Weapons [A]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184436, {	-- Ensemble: Notorious Gladiator's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
@@ -404,9 +411,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "i", MOH, 12 } },
+					}, {
 						iensemble(184675, {	-- Arsenal: Notorious Gladiator's Weapons [H]
-							["cost"] = {{"i", MOH, 80}},
+							["cost"] = { { "i", MOH, 80 } },
 						}),
 						iensemble(184437, {	-- Ensemble: Notorious Gladiator's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,

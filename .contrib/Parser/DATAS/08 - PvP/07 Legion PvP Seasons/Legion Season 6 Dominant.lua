@@ -1,11 +1,12 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_DOMINANT, bubbleDownSelf({
 		-- Not the Best Timelining.. /Braghe
 		["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5, ADDED_8_0_1_LAUNCH },
-	},{
+	}, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
 			ach(12137, {	-- Dominant Combatant [A]
 				["races"] = ALLIANCE_ONLY,
@@ -769,12 +770,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["groups"] = sharedData({
 						["sourceAchievements"] = { 12135 },	-- Dominant Elite
-						["cost"] = {{"i", MOH, 50}},
+						["cost"] = { { "i", MOH, 50 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(149449),	-- Dominant Gladiator's Cloak [A]
 						i(149447),	-- Dominant Gladiator's Tabard [A]
@@ -943,12 +944,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["groups"] = sharedData({
 						["sourceAchievements"] = { 12135 },	-- Dominant Elite
-						["cost"] = {{"i", MOH, 50}},
+						["cost"] = { { "i", MOH, 50 } },
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
-							["cost"] = {{"i", MOH, 12}},
+							["cost"] = { { "i", MOH, 12 } },
 						}),
 						i(149448),	-- Dominant Gladiator's Cloak [H]
 						i(149446),	-- Dominant Gladiator's Tabard [H]
