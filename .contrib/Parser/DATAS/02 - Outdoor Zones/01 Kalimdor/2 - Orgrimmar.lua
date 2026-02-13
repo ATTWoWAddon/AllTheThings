@@ -369,59 +369,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32009, {	-- Varzok
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31882, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31883, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31884, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31885, {	-- Varzok
-					["altQuests"] = {
-						-- Alliance Shared Account-Wide Pet Battle Intro Quests
-						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-					},
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31812, {	-- Zunta, The Pet Tramer

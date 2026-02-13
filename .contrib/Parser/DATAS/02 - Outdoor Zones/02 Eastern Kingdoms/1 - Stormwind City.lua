@@ -121,59 +121,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32008, {	-- Audrey Burnhep
 					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31878, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31879, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31880, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31881, {	-- Audrey Burnhep
-					["altQuests"] = {
-						-- Horde Shared Account-Wide Pet Battle Intro Quests
-						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
-					},
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = {1,"questID",32009},	-- Varzok (Will be marked completed if any Varzok quest is completed)
 					["DisablePartySync"] = true,
 				}),
 				q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
