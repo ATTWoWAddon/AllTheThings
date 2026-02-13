@@ -3,6 +3,7 @@
 --------------------------------------------
 -- CRIEVE NOTE: For MOP Classic, figure out what level you have to be below to queue for Theramore's Fall.
 -- Also determine if it gets removed prior to the expansion being over. (MOP_PHASE_LANDFALL or something?)
+
 local OnUpdateForTheramoresFall = [[function(t)
 if
 -- #if BEFORE WOD
@@ -19,6 +20,7 @@ else
 	t.u = ]] .. REMOVED_FROM_GAME .. [[;
 end
 end]];
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.MOP, { applyclassicphase(MOP_PHASE_ONE, n(THERAMORES_FALL, bubbleDownSelf({
 	-- #if BEFORE WOD
 	["OnUpdate"] = OnUpdateForTheramoresFall,

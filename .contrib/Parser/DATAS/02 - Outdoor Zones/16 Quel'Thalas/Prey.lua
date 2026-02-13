@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 PREY = createHeader({
 	readable = "Prey",
 	icon = 237274,
@@ -8,6 +9,7 @@ PREY = createHeader({
 		en = "Prey",
 	},
 });
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 	-- TODO: Move this all to Expansion Features instead?
 	n(PREY, {
@@ -452,25 +454,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
 					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
 						["cost"] = {
-							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
 						["cost"] = {
-							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie
+							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
 						["cost"] = {
-							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
 						["cost"] = {
-							{ "c", 3258, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
@@ -517,6 +519,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(PREY, {

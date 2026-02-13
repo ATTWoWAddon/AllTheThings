@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		pvp(n(PVP, {
@@ -39,7 +40,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(VENDORS, {
 				n(243225, {	-- Mirvedon <Competitor's Recipes>
 					["coord"] = { 34.0, 81.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+					["groups"] = sharedData({
+						["cost"] = { { "c", HONOR, 7500 } },
+					}, {
 						filter(RECIPES, {
 							i(256712),	-- Design: Cognitive Heliotrope (RECIPE!)
 							i(256706),	-- Design: Determined Heliotrope (RECIPE!)
@@ -112,27 +115,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						filter(MISC, {
 							i(257535, {	-- Galactic Jeweler's Setting
 								["cost"] = {
-									{"i", 253307, 3},	-- Infused Heliotrope x3
-									{"c", HONOR, 5000},
+									{ "i", 253307, 3 },	-- 3x Infused Heliotrope
+									{ "c", HONOR, 5000 },
 								},
 								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 						}),
 						filter(REAGENTS, {
 							i(256607, {	-- Galactic Aspirant's Heraldry
-								["cost"] = {{"c", HONOR, 175}},	-- TODO: fix cost when Blizzard fix it
+								["cost"] = { { "c", HONOR, 175 } },	-- TODO: fix cost when Blizzard fix it
 								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256559, {	-- Galactic Combatant's Heraldry
-								["cost"] = {{"c", HONOR, 175}},
+								["cost"] = { { "c", HONOR, 175 } },
 								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256608, {	-- Galactic Gladiator's Heraldry
-								["cost"] = {{"c", CONQUEST, 175}},	-- TODO: fix cost when Blizzard fix it
+								["cost"] = { { "c", CONQUEST, 175 } },	-- TODO: fix cost when Blizzard fix it
 								["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(253307, {	-- Infused Heliotrope
-								["cost"] = {{"c", HONOR, 2500}},
+								["cost"] = { { "c", HONOR, 2500 } },
 							}),
 						}),
 					}),
@@ -141,14 +144,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						i(258534, {	-- Illustrious Contender's Strongbox
-							["cost"] = {{"c", HONOR, 3500}},
+							["cost"] = { { "c", HONOR, 3500 } },
 							["sym"] = {
 								{"select","npcID",243225},{"pop"},	-- select Mirvedon <Competitor's Recipes>
 								{"find","filterID",RECIPES},{"pop"},	-- return recipes
 							},
 						}),
 						i(262662, {	-- Thalassian Distinguishment
-							["cost"] = {{"c", HONOR, 2000}},
+							["cost"] = { { "c", HONOR, 2000 } },
 							["groups"] = {
 								i(137642),	-- Mark of Honor
 							},

@@ -7,7 +7,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(WORLD_QUESTS, {
 		--	["sourceQuests"] = {
 		--	},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				pvp(q(92576, {	-- Undercover Hunt
 					["coord"] = { 56.0, 1.0, SLAYERS_RISE_OUTDOOR },
 				})),

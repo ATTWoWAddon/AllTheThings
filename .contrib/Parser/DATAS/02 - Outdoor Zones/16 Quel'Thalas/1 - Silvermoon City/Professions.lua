@@ -1,8 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 local STABILIZED_DERIVATE = 242651;
-local ALCHEMISTS_MOXIE = 3256;
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(PROFESSIONS, {
@@ -10,10 +11,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.0, 55.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(247499, {	-- Recipe: Haranir Preserving Agents (RECIPE!)
-						["cost"] = {{ "c", ALCHEMISTS_MOXIE, 150}},
+						["cost"] = { { "c", ARTISAN_ALCHEMISTS_MOXIE, 150 } },
 					}),
 					i(246671, {	-- Recipe: Sunsmoke Censer (RECIPE!)
-						["cost"] = {{ "c", ALCHEMISTS_MOXIE, 150}},
+						["cost"] = { { "c", ARTISAN_ALCHEMISTS_MOXIE, 150 } },
 					}),
 				},
 			}),
@@ -37,102 +38,102 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						r(1230892, {	-- Bouquet of Herbs
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
-								{"c", ALCHEMISTS_MOXIE, 25},
-								{"i", 243599, 12},	-- 12x Eversinging Dust+
-								{"i", 236776, 6},	-- 6x Argentleaf+
+								{ "i", STABILIZED_DERIVATE, 3 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
+								{ "i", 243599, 12 },	-- 12x Eversinging Dust+
+								{ "i", 236776,  6 },	-- 6x Argentleaf+
 							},
 						}),
 						r(1230860, {	-- Draught of Rampant Abandon
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
 							},
 						}),
 						r(1230872, {	-- Haranir Phial of Ingenuity
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 25},
-								{"i", 236950, 6},	-- 6x Mote of Primal Energy
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
+								{ "i", 236950, 6 },	-- 6x Mote of Primal Energy
 							},
 						}),
 						r(1230869, {	-- Light's Potential
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
 							},
 						}),
 						r(1230878, {	-- Flask of the Shattered Sun
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
-								{"i", 236780, 1},	-- 1x Nocturnal Lotus
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
+								{ "i", 236780, 1 },	-- 1x Nocturnal Lotus
 							},
 						}),
 						r(1230877, {	-- Flask of the Blood Knights
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
-								{"i", 236780, 1},	-- 1x Nocturnal Lotus
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
+								{ "i", 236780, 1 },	-- 1x Nocturnal Lotus
 							},
 						}),
 						r(1230865, {	-- Lightfused Mana Potion
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
+								{ "i", STABILIZED_DERIVATE, 3 },
 							},
 						}),
 						r(1230876, {	-- Flask of the Magisters
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
-								{"i", 236780, 1},	-- 1x Nocturnal Lotus
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
+								{ "i", 236780, 1 },	-- 1x Nocturnal Lotus
 							},
 						}),
 						r(1230862, {	-- Potion of Devoured Dreams
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 25},
-								{"i", 236778, 8},	-- 8x Mana Lily+
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
+								{ "i", 236778, 8 },	-- 8x Mana Lily+
 							},
 						}),
 						r(1230863, {	-- Potion of Zealotry
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
-								{"c", ALCHEMISTS_MOXIE, 50},
-								{"i", 236952, 8},	-- 8x Mote of Pure Void
+								{ "i", STABILIZED_DERIVATE, 5 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 50 },
+								{ "i", 236952, 8 },	-- 8x Mote of Pure Void
 							},
 						}),
 						r(1230861, {	-- Primal Philosopher's Stone
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 5},
+								{ "i", STABILIZED_DERIVATE, 5 },
 							},
 						}),
 						r(1230893, {	-- School of Gems
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
-								{"c", ALCHEMISTS_MOXIE, 25},
-								{"i", 242554, 5},	-- 5x Amani Lapis+
-								{"i", 242607, 5},	-- 5x Harandar Peridot+
-								{"i", 238375, 12},	-- 12x Fungalskin Pike
-								{"i", 238380, 8},	-- 8x Null Voidfish
+								{ "i", STABILIZED_DERIVATE, 3 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
+								{ "i", 242554,  5 },	-- 5x Amani Lapis+
+								{ "i", 242607,  5 },	-- 5x Harandar Peridot+
+								{ "i", 238375, 12 },	-- 12x Fungalskin Pike
+								{ "i", 238380,  8 },	-- 8x Null Voidfish
 							},
 						}),
 						r(1230890, {	-- Transmute: Mote of Light
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
-								{"c", ALCHEMISTS_MOXIE, 25},
+								{ "i", STABILIZED_DERIVATE, 3 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
 							},
 						}),
 						r(1230889, {	-- Transmute: Mote of Primal Energy
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
-								{"c", ALCHEMISTS_MOXIE, 25},
+								{ "i", STABILIZED_DERIVATE, 3 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
 							},
 						}),
 						r(1230888, {	-- Transmute: Mote of Pure Void
 							["cost"] = {
-								{"i", STABILIZED_DERIVATE, 3},
-								{"c", ALCHEMISTS_MOXIE, 25},
+								{ "i", STABILIZED_DERIVATE, 3 },
+								{ "c", ARTISAN_ALCHEMISTS_MOXIE, 25 },
 							},
 						}),
 					},
@@ -182,15 +183,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(227208),	-- Bismuth Rod
 						i(220789, {	-- Nascent Gilded Harbinger Crest
-							["cost"] = {{"c", GILDED_HARBINGER_CREST, 60}},
+							["cost"] = { { "c", GILDED_HARBINGER_CREST, 60 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 						i(220790, {	-- Nascent Runed Harbinger Crest
-							["cost"] = {{"c", RUNED_HARBINGER_CREST, 45}},
+							["cost"] = { { "c", RUNED_HARBINGER_CREST, 45 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 						i(220788, {	-- Nascent Weathered Harbinger Crest
-							["cost"] = {{"c", WEATHERED_HARBINGER_CREST, 30}},
+							["cost"] = { { "c", WEATHERED_HARBINGER_CREST, 30 } },
 							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						}),
 					},

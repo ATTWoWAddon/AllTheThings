@@ -10,13 +10,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 24.3, 69.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				--["questID"] = XXXX,
 				["cr"] = 257049,	-- Mischevious Chick
-				["cost"] = { {"i", 263870, 1 } },	-- 1x Rookery Cache Key
+				["cost"] = { { "i", 263870, 1 } },	-- 1x Rookery Cache Key
 				["groups"] = { i(267838) },	-- Sunwing Hatchling (PET!)
 			}),
 			n(257049, {	-- Mischevious Chick
 				-- Exo Note: 02.02.2026., Not working. Area where you're supposed to place the meat is not visible
 				["description"] = "FEEEEED MEEEEEE!!!",
-				["cost"] = { {"i", 265674, 1 } },	-- Tasty Meat
+				["cost"] = { { "i", 265674, 1 } },	-- 1x Tasty Meat
 				["groups"] = { i(263870) },	-- Rookery Cache Key
 			}),
 			--Lore

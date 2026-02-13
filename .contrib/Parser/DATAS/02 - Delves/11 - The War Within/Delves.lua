@@ -1139,7 +1139,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			}),
 		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
-			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
+			["cost"] = { { "c", RESTORED_COFFER_KEY, 1 } },
 		},FILTERFUNC_itemID,{
 			["provider"] = { "o", 413590 },	-- Bountiful Coffer
 			["groups"] = {
@@ -2362,71 +2362,71 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["groups"] = {
 				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
 					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(235696, {	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 				}),
 				header(HEADERS.Item, 229974, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {	-- Delver's Gob-Trotter
 					i(230219, {	-- Delver's Gob-Trotter Schematic: Balloon (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(230217, {	-- Delver's Gob-Trotter Schematic: Flamethrower (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(230220, {	-- Delver's Gob-Trotter Schematic: Green (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(230216, {	-- Delver's Gob-Trotter Schematic: Harpoon (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(230218, {	-- Delver's Gob-Trotter Schematic: Pipes (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 				})),
 				header(HEADERS.Item, 238051, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Delver's Mana-Skimmer
 					i(238178, {	-- Delver's Mana-Skimmer Schematic: Canister (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(238177, {	-- Delver's Mana-Skimmer Schematic: Emitter (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(238181, {	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(238179, {	-- Delver's Mana-Skimmer Schematic: Quad Glider (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(238180, {	-- Delver's Mana-Skimmer Schematic: Void Paint (MM!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 				})),
 				filter(TOYS, {
 					i(243056, {	-- Delver's Mana-Bound Ethergate (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(230850, {	-- Delve-O-Bot 7001 (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 					}),
 					i(244792, {	-- Etheric Brannmorpher (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 						["groups"] = {
 							title(641, {	-- <Name> Bronzebeard
 								["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -2435,14 +2435,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						},
 					}),
 					i(223312, {	-- Trusty Hat (TOY!)
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 						["groups"] = { i(223316) },	-- Trusty Hat
 					}),
 				}),
 				filter(MISC, {
 					i(235608, {	-- Nightfall Sanctum Campsite (CI!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 10 } },
 						["groups"] = { campsite(5) },	-- Cultists' Quay (CS!)
 					}),
 				}),
@@ -2450,137 +2450,137 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					-- #if AFTER 12.0.1
 					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 					}),
 					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 					}),
 					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 					}),
 					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 					}),
 					-- #endif
 					filter(BACK_F, {
 						i(225414, {	-- Cave Topographer's Drape
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225411, {	-- Secret-Dredger's Cloak
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225413, {	-- Treasure-Seeker's Shawl
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225412, {	-- Torchbearer's Greatcloak
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 					}),
 					filter(CLOTH, {
 						i(225393, {	-- Cave Topographer's Cord
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225390, {	-- Cave Topographer's Cowl
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225394, {	-- Cave Topographer's Cuffs
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225389, {	-- Cave Topographer's Handwraps
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225391, {	-- Cave Topographer's Leggings
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225388, {	-- Cave Topographer's Sandals
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225392, {	-- Cave Topographer's Shoulders
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225387, {	-- Cave Topographer's Vestment
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 					}),
 					filter(LEATHER, {
 						i(225402, {	-- Treasure-Seeker's Bindings
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225396, {	-- Treasure-Seeker's Boots
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225399, {	-- Treasure-Seeker's Breeches
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225400, {	-- Treasure-Seeker's Epaulets
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225397, {	-- Treasure-Seeker's Grips
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225398, {	-- Treasure-Seeker's Helm
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225401, {	-- Treasure-Seeker's Sash
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225395, {	-- Treasure-Seeker's Vest
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 					}),
 					filter(MAIL, {
 						i(225386, {	-- Torchbearer's Bracers
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225379, {	-- Torchbearer's Chainmail
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225380, {	-- Torchbearer's Cinch
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225383, {	-- Torchbearer's Coif
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225384, {	-- Torchbearer's Greaves
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225382, {	-- Torchbearer's Grips
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225385, {	-- Torchbearer's Shoulderguards
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225381, {	-- Torchbearer's Striders
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 					}),
 					filter(PLATE, {
 						i(225410, {	-- Secret-Dredger's Armplates
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225403, {	-- Secret-Dredger's Breastplate
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225405, {	-- Secret-Dredger's Gauntlets
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225409, {	-- Secret-Dredger's Girdle
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 1300 } },
 						}),
 						i(225406, {	-- Secret-Dredger's Helm
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225407, {	-- Secret-Dredger's Legguards
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 3250 } },
 						}),
 						i(225408, {	-- Secret-Dredger's Mantle
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 						i(225404, {	-- Secret-Dredger's Sabatons
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+							["cost"] = { { "c", RESONANCE_CRYSTALS, 2600 } },
 						}),
 					}),
 				}),
@@ -2588,44 +2588,44 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					-- #if AFTER 12.0.1
 					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 5000 } },
 					}),
 					-- #endif
 					i(225500, {	-- Bedrock Breaker
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225507, {	-- Brilliant Beacon
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225499, {	-- Lapidarius Gemcutter
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225505, {	-- Luminous Lampspire
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225506, {	-- Mana-Lined Slab Slicer
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225502, {	-- Mountain Shaper's Greataxe
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225501, {	-- Pathfinder's Stonecarver
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225504, {	-- Skypiercing Drillstaff
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225497, {	-- Torchlit Pickaxe
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225503, {	-- Trailblazer's Hookshoot
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225498, {	-- Umbral Artist's Chisel
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 					i(225508, {	-- Unhinged Vault-Hatch
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 3500}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 3500 } },
 					}),
 				}),
 			},
@@ -2636,144 +2636,144 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
 					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235684, {	-- Delver's Dirigible Schematic: Glider (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
-						["cost"] = {{"c", UNDERCOIN, 3000}},
+						["cost"] = { { "c", UNDERCOIN, 3000 } },
 					}),
 					i(235687, {	-- Delver's Dirigible Schematic: Spoiler (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235686, {	-- Delver's Dirigible Schematic: White Paint (MM!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
 				filter(MOUNTS, {
 					i(246237, {	-- OC91 Chariot (MOUNT!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 15000}},
+						["cost"] = { { "c", UNDERCOIN, 15000 } },
 					}),
 				}),
 				filter(BATTLE_PETS, {
 					i(222974, {	-- Sir Shady Mrrgglton Junior (PET!)
-						["cost"] = {{"c", UNDERCOIN, 10000}},
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
 					}),
 				}),
 				filter(COSMETIC, {
 					i(212166, {	-- Coral Nautic Helm
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					iensemble(234388, {	-- Arsenal: Hallowfall Weaponry
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237954, {	-- Arsenal: Undermine Weaponry
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237945, {	-- Ensemble: Blastborne Loadout
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(248788, {	-- Ensemble: Bundle of Ethereal Cloaks
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237944, {	-- Ensemble: Junkreaver's Plates
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234383, {	-- Ensemble: Myconic Shell
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					iensemble(237949, {	-- Ensemble: Nitroclad Kit
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(237953, {	-- Ensemble: Noxious Injector Apparatus
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234382, {	-- Ensemble: Unkindled Waxweave Panoply
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					i(235617, {	-- Lucky Goblin's Strapped Rockets (COSMETIC!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 4000 } },
 					}),
 					i(212169, {	-- Mint-Scented Candle Hat
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(245525, {	-- Opulent Phasebound Visor
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(212163, {	-- Soporific Shroom Cap
 						["timeline"] = { ADDED_11_0_5 },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
 				filter(MISC, {
 					i(233792, {	-- Delver's Disguise
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(226258, {	-- Delver's Pouch of Reagents
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(226259, {	-- Delver's Pouch of Resonance Crystals
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						-- Blizzard added the same note on the item.
 						-- #if BEFORE 11.1.0
 						["description"] = "Contains 250 Resonance Crystals.",
@@ -2781,277 +2781,277 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(224172, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232493, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232494, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232495, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(232496, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(232497, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(232498, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- Season 2
 					i(235531, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233555, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233186, {	-- Wave Scrambler 2000
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- Season 3
 					i(244193, {	-- L00T RAID-R Mini
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 1000}},
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(238526, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(238527, {	-- Restored Coffer Key
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(248017, {	-- Shrieking Quartz
 						["timeline"] = { ADDED_11_2_0 },
-						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
 				}),
 				filter(TOYS, {
 					i(211931, {	-- Abyss Caller Horn (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(228413, {	-- Lampyridae Lure (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(225910, {	-- Pileus Delight (TOY!)
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(235016, {	-- Redeployment Module (TOY!)
 						["timeline"] = { ADDED_11_2_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					i(230924, {	-- Spotlight Materializer 1000 (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 500}},
+						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(231064, {	-- Throwaway Gangster Disguise (TOY!)
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
 				n(ARMOR, {
 					filter(BACK_F, {
 						i(211005, {	-- Cave Topographer's Drape
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211006, {	-- Secret-Dredger's Cloak
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211007, {	-- Torchbearer's Greatcloak
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(225065, {	-- Torchbearer's Haversack
 							["timeline"] = { ADDED_11_0_5 },
-							["cost"] = {{"c", UNDERCOIN, 2500}},
+							["cost"] = { { "c", UNDERCOIN, 2500 } },
 						}),
 						i(211062, {	-- Treasure-Seeker's Shawl
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(CLOTH, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211013, {	-- Cave Topographer's Cord
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211011, {	-- Cave Topographer's Cowl
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211014, {	-- Cave Topographer's Cuffs
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211010, {	-- Cave Topographer's Handwraps
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211012, {	-- Cave Topographer's Leggings
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211009, {	-- Cave Topographer's Sandals
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211039, {	-- Cave Topographer's Shoulders
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211008, {	-- Cave Topographer's Vestment
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 					})),
 					filter(FINGER_F, {
 						i(211051, {	-- Loop of Vestigial Power
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211052, {	-- Olden Signet
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 						i(211061, {	-- Unearthed Relic Band
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(LEATHER, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211020, {	-- Treasure-Seeker's Bindings
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211015, {	-- Treasure-Seeker's Boots
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211018, {	-- Treasure-Seeker's Breeches
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211038, {	-- Treasure-Seeker's Epaulets
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211016, {	-- Treasure-Seeker's Grips
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211017, {	-- Treasure-Seeker's Helm
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211019, {	-- Treasure-Seeker's Sash
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211037, {	-- Treasure-Seeker's Vest
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 					})),
 					filter(MAIL, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211028, {	-- Torchbearer's Bracers
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211021, {	-- Torchbearer's Chainmail
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211027, {	-- Torchbearer's Cinch
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211024, {	-- Torchbearer's Coif
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211025, {	-- Torchbearer's Greaves
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211023, {	-- Torchbearer's Grips
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211026, {	-- Torchbearer's Shoulderguards
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211022, {	-- Torchbearer's Striders
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 					})),
 					filter(NECK_F, {
 						i(211063, {	-- Long-Lost Choker
-							["cost"] = {{"c", UNDERCOIN, 500}},
+							["cost"] = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
 					filter(PLATE, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 						i(211036, {	-- Secret-Dredger's Armplates
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211030, {	-- Secret-Dredger's Breastplate
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211032, {	-- Secret-Dredger's Gauntlets
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211035, {	-- Secret-Dredger's Girdle
-							["cost"] = {{"c", UNDERCOIN, 625}},
+							["cost"] = { { "c", UNDERCOIN, 625 } },
 						}),
 						i(211029, {	-- Secret-Dredger's Helm
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211033, {	-- Secret-Dredger's Legguards
-							["cost"] = {{"c", UNDERCOIN, 875}},
+							["cost"] = { { "c", UNDERCOIN, 875 } },
 						}),
 						i(211034, {	-- Secret-Dredger's Mantle
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 						i(211031, {	-- Secret-Dredger's Sabatons
-							["cost"] = {{"c", UNDERCOIN, 750}},
+							["cost"] = { { "c", UNDERCOIN, 750 } },
 						}),
 					})),
 					i(221502, {	-- Adventurer's Warbound Battlegear Drop
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					i(224814, {	-- Adventurer's Warbound Boots
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224845, {	-- Adventurer's Warbound Chestpiece
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224844, {	-- Adventurer's Warbound Gloves
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224843, {	-- Adventurer's Warbound Headpiece
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224842, {	-- Adventurer's Warbound Legs
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 875}},
+						["cost"] = { { "c", UNDERCOIN, 875 } },
 					}),
 					i(224841, {	-- Adventurer's Warbound Shoulders
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 750}},
+						["cost"] = { { "c", UNDERCOIN, 750 } },
 					}),
 					i(224840, {	-- Adventurer's Warbound Waist
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 625}},
+						["cost"] = { { "c", UNDERCOIN, 625 } },
 					}),
 					i(224839, {	-- Adventurer's Warbound Wrists
 						["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-						["cost"] = {{"c", UNDERCOIN, 625}},
+						["cost"] = { { "c", UNDERCOIN, 625 } },
 					}),
 					-- #if BEFORE 12.0.1
 					iensemble(248786, {	-- Ensemble: Void-Scarred Blade's Attire
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(248784, {	-- Ensemble: Void-Scarred Captain's Plate
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(248787, {	-- Ensemble: Void-Scarred Seer's Wrappings
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(248785, {	-- Ensemble: Void-Scarred Striker's Battlegear
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					-- #endif
 				}),
@@ -3059,44 +3059,44 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					-- #if BEFORE 12.0.1
 					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
 						["timeline"] = { ADDED_12_0_0 },
-						["cost"] = {{"c", UNDERCOIN, 5000}},
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
 					}),
 					-- #endif
 					i(219355, {	-- Bedrock Breaker
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211041, {	-- Brilliant Beacon
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211047, {	-- Lapidarius Gemcutter
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211059, {	-- Luminous Lampspire
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219351, {	-- Mana-Lined Slab Slicer
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219354, {	-- Mountain Shaper's Greataxe
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(211048, {	-- Pathfinder's Stonecarver
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(219352, {	-- Skypiercing Drillstaff
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(219356, {	-- Torchlit Pickaxe
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(219353, {	-- Trailblazer's Hookshoot
-						["cost"] = {{"c", UNDERCOIN, 2500}},
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(211046, {	-- Umbral Artist's Chisel
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 					i(211040, {	-- Unhinged Vault-Hatch
-						["cost"] = {{"c", UNDERCOIN, 1250}},
+						["cost"] = { { "c", UNDERCOIN, 1250 } },
 					}),
 				}),
 			},

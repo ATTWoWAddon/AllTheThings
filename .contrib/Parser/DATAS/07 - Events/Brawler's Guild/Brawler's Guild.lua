@@ -887,9 +887,9 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["qg"] = 70722,	-- Grant Lazarby
 					["coord"] = { 33.1, 64.3, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 					["cost"] = {
-						{ "i", 98121, 1, },		-- Amberseed Bun
-						{ "i", 98117, 1, },		-- Moneybrau
-						{ "i", 143758, 1, },	-- Free Drinks Voucher
+						{ "i", 98121, 1 },	-- Amberseed Bun
+						{ "i", 98117, 1 },	-- Moneybrau
+						{ "i", 143758, 1 },	-- Free Drinks Voucher
 					},
 				}),
 				q(55018, {	-- Simply Dying of Boredom
@@ -942,7 +942,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
 					["qg"] = 145582,	-- Sharisanda
 					["coord"] = { 48.8, 79.8, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
+					["cost"] = { { "i", 142318, 1 } },	-- High Roller's Contract
 				}),
 				q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
 					["sourceQuest"] = 53918,	-- The Financial Participation Incentive
@@ -1004,13 +1004,13 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
 					["qg"] = 145581,	-- Commander Arlu Ravenhide
 					["coord"] = { 43.4, 97.0, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
+					["cost"] = { { "i", 143759, 1 } },	-- VIP Room Rental Form
 				}),
 				q(53931, {	-- Flaunt It If You Got It
 					["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
 					["qg"] = 70716,	-- Libbiara Blightrunner
 					["coord"] = { 31.2, 54.0, BRAWLGAR_ARENA },
-					["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
+					["cost"] = { { "i", 142311, 1 } },	-- Free Drinks Voucher
 				}),
 				q(53952, {	-- Simply Dying of Boredom
 					["sourceQuest"] = 53931,	-- Flaunt It If You Got It

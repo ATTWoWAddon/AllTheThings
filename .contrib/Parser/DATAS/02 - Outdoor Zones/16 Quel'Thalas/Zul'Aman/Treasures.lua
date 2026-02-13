@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(TREASURES, {
 			o(539047, {	-- Abandoned Ritual Skull
 				["coord"] = { 44.7, 44.1, MAP.MIDNIGHT.ZULAMAN },
-				["cost"] = {{"i", 259361, 1000}},	-- 1000x Vile Essence
+				["cost"] = { { "i", 259361, 1000 } },	-- 1000x Vile Essence
 				--["questID"] = XXXX,
 			}),
 			o(539051, {	-- Mrruk's Mangy Trove

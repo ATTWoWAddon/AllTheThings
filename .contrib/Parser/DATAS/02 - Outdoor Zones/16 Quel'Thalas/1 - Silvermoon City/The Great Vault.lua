@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S           M O D U L E      --
 ---------------------------------------------------
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		o(549189, {	-- The Great Vault

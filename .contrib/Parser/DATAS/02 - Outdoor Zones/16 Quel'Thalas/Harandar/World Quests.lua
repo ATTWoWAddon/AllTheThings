@@ -7,7 +7,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(WORLD_QUESTS, {
 			--	["sourceQuests"] = {
 			--	},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				q(92086, {	-- A Taste of Accord
 					["coord"] = { 41.5, 24.3, MAP.MIDNIGHT.HARANDAR },
 					["groups"] = {

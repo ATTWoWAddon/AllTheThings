@@ -1,6 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	readable = "The Scepter of the Shifting Sands",
 	icon = 133062,
@@ -21,6 +22,7 @@ THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 		en = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 	},
 });
+
 root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
 		["maps"] = {
@@ -257,7 +259,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
+					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -269,9 +271,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["maps"] = { FERALAS },
-					["cost"] = {
-						{ "i", 21024, 20 },	-- Chimaerok Tenderloin
-					},
+					["cost"] = { { "i", 21024, 20 } },	-- Chimaerok Tenderloin
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lakmaeran's Carcass
@@ -449,7 +449,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "i", 20402 },	-- Agent of Nozdormu
 					},
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
+					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["lvl"] = 60,
 					["groups"] = {
 						i(20403),	-- Proxy of Nozdormu
@@ -468,7 +468,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "o", 180669 },	-- Swirling Maelstrom
 							},
 							["description"] = "This summons a 40 man raid boss.",
-							["cost"] = {{ "i", 21136, 1 }},	-- Arcanite Buoy
+							["cost"] = { { "i", 21136, 1 } },	-- Arcanite Buoy
 							["coord"] = { 65.0, 55.0, AZSHARA },
 							["cr"] = 15571,	-- Maws
 						}),

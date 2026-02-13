@@ -7,7 +7,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(WORLD_QUESTS, {
 		--	["sourceQuests"] = {
 		--	},
-			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({
+				["isWorldQuest"] = true,
+			},FILTERFUNC_questID,{
 				q(91811, {	-- A Scorched Mirror
 					["coord"] = { 52.0, 19.8, MAP.MIDNIGHT.ZULAMAN },
 				}),

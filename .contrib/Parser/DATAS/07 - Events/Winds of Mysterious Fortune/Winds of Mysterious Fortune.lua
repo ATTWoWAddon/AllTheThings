@@ -1,3 +1,7 @@
+--------------------------------------------
+--       E V E N T S    M O D U L E       --
+--------------------------------------------
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 	-- #if BEFORE MID
 	["maps"] = {

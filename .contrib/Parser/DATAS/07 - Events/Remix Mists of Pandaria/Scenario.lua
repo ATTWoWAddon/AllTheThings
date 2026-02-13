@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 local MAPS = {
 	447,
 	487,
@@ -18,10 +19,12 @@ local MAPS = {
 	483,
 	450,
 }
+
 local mapped = function(t)
 	t.maps = MAPS
 	return t
 end
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(SCENARIOS, {
 		n(ACHIEVEMENTS, {

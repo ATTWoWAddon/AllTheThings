@@ -1,6 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+
 ELEMENTAL_UNREST = createHeader({
 	readable = "Elemental Unrest",
 	icon = [[~_.asset("Expansion_CATA")]],
@@ -21,6 +22,7 @@ ELEMENTAL_UNREST = createHeader({
 		en = "The Elemental Unrest was a world event that heralded the Cataclysm. The event culminated in elementals attacking Stormwind, Orgrimmar, Ironforge, and Thunder Bluff. Players defeating these elementals and freeing trapped citizens within their entire city were granted access to two special boss encounters.",
 	},
 });
+
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n(ELEMENTAL_UNREST,
 	bubbleDown({
 		["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },

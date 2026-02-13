@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 local MAPS = {
 	437,	-- Gate of the Setting Sun
 	438,	-- Gate Watch Tower
@@ -29,11 +30,13 @@ local MAPS = {
 	429,	-- Temple of the Jade Serpent
 	430,	-- The Scrollkeeper's Sanctum
 }
+
 local mapped = function(id, t)
 	local o = n(id ,t)
 	o.maps = MAPS
 	return o
 end
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(DUNGEONS, {
 		mapped(ACHIEVEMENTS, {

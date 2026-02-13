@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 TIER_14_RAIDS = createHeader({
 	readable = "Tier 14 Raids",
 	constant = "TIER_14_RAIDS",
@@ -10,6 +11,7 @@ TIER_14_RAIDS = createHeader({
 		en = "Tier 14 Raids",
 	},
 });
+
 local MAPS = {
 	471,	-- Dais of Conquerors
 	472,	-- The Repository
@@ -22,6 +24,7 @@ local mapped = function(t)
 	t.maps = MAPS
 	return t
 end
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {

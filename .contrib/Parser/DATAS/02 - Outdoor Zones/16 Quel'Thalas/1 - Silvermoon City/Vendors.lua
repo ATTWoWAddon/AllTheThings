@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 44.2, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = sharedData({
 					["cost"] = { { "g", 50000000 } },	-- 5,000g
-					-- Requires completion of 12.0 patch meta achievement [PH]. TODO: Which achievement?
+					["sourceAchievement"] = 42117,	-- The War of Light and Shadow
 				}, {
 					i(253604),	-- "A Bridge Over Calm Waters" Painting (DECOR!)
 					i(253615),	-- "Autumnal Eversong" Painting (DECOR!)
@@ -300,279 +300,279 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					filter(RECIPES, {
 						i(256701, {	-- Design: Attuned Thalassian Rune-Prism (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256705, {	-- Design: Flawless Text Scrutinizers (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256713, {	-- Design: Improved Right-Handed Magnifying Glass (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256707, {	-- Design: Mage-Eye Precision Loupes (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256699, {	-- Design: Sin'dorei Enchanter's Crystal (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256709, {	-- Design: Sin'dorei Jeweler's Loupes (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256703, {	-- Design: Sin'dorei Scribe's Spectacles (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256711, {	-- Design: Thalassian Scribe's Crystalline Lens (RECIPE!)
-							["cost"] = {{ "c", 3262, 150 }},	-- x150 Artisan Jewelcrafter's Moxie
+							["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 } },
 						}),
 						i(256742, {	-- Formula: Runed Dazzling Thorium Rod (RECIPE!)
-							["cost"] = {{ "c", 3258, 150 }},	-- x150 Artisan Enchanter's Moxie
+							["cost"] = { { "c", ARTISAN_ENCHANTERS_MOXIE, 150 } },
 						}),
 						i(258133, {	-- Pattern: Chic Silvermoon Pillow (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258035, {	-- Pattern: Elegant Artisan's Alchemy Coveralls (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258036, {	-- Pattern: Elegant Artisan's Cooking Hat (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258037, {	-- Pattern: Elegant Artisan's Enchanting Hat (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258038, {	-- Pattern: Elegant Artisan's Fishing Hat (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258039, {	-- Pattern: Elegant Artisan's Herbalism Hat (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(258040, {	-- Pattern: Elegant Artisan's Tailoring Robe (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(256669, {	-- Pattern: Eversong Hunter's Headcover (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(258132, {	-- Pattern: Plush Silvermoon Bed (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(256655, {	-- Pattern: Sin'dorei Alchemist's Hat (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256660, {	-- Pattern: Sin'dorei Engineer's Gloves (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256659, {	-- Pattern: Sin'dorei Forgemaster's Cover (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256662, {	-- Pattern: Sin'dorei Herbalist's Backpack (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256670, {	-- Pattern: Sin'dorei Jeweler's Cover (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256665, {	-- Pattern: Sin'dorei Leathershaper's Smock (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256666, {	-- Pattern: Sin'dorei Hunter's Pack (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(259371, {	-- Pattern: Stitched Haranir Rug (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(259368, {	-- Pattern: Sturdy Haranir Chair (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256658, {	-- Pattern: Thalassian Alchemist's Mixcap (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(267053, {	-- Pattern: Thalassian Alchemy Coveralls (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(267055, {	-- Pattern: Thalassian Chef's Chapeau (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(267057, {	-- Pattern: Thalassian Enchanter's Bonnet (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(256667, {	-- Pattern: Thalassian Gemshaper's Grand Cover (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(267061, {	-- Pattern: Thalassian Herbalist's Cowl (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(256663, {	-- Pattern: Thalassian Herbtender's Cradle (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256668, {	-- Pattern: Thalassian Hideshaper's Regalia (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256657, {	-- Pattern: Thalassian Ironbender's Regalia (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256661, {	-- Pattern: Thalassian Scrapmaster's Gauntlets (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(267063, {	-- Pattern: Thalassian Tailor's Threads (RECIPE!)
-							["cost"] = {{ "c", 3266, 150 }},	-- x150 Artisan Tailor's Moxie
+							["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 150 } },
 						}),
 						i(256664, {	-- Pattern: Thalassian Wildseeker's Stridercap (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(256671, {	-- Pattern: Thalassian Wildseeker's Workbag (RECIPE!)
-							["cost"] = {{ "c", 3263, 150 }},	-- x150 Artisan Leatherworker's Moxie
+							["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 } },
 						}),
 						i(267281, {	-- Plans: Blood Knight's Mercy (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(267282, {	-- Plans: Blood Knight's Warblade (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(267284, {	-- Plans: Bloomforged Claw (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(267285, {	-- Plans: Magister's Cleaver (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(267286, {	-- Plans: Magister's Mana Sword (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(267287, {	-- Plans: Magister's Ritual Knife (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(258519, {	-- Plans: Magister's Valediction (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(265536, {	-- Plans: Masterwork Crafting Hammer (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259237, {	-- Plans: Sunforged Blacksmith's Hammer (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259231, {	-- Plans: Sunforged Blacksmith's Toolbox (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259318, {	-- Plans: Sunforged Leatherworker's Knife (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259233, {	-- Plans: Sunforged Leatherworker's Toolset (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259235, {	-- Plans: Sunforged Needle Set (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259319, {	-- Plans: Sunforged Pickaxe (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259317, {	-- Plans: Sunforged Sickle (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(259322, {	-- Plans: Sunforged Skinning Knife (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(260246, {	-- Plans: Thalassian Skeleton Key (RECIPE!)
-							["cost"] = {{ "c", 3257, 150 }},	-- x150 Artisan Blacksmith's Moxie
+							["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 150 } },
 						}),
 						i(247499, {	-- Recipe: Haranir Preserving Agents (RECIPE!)
-							["cost"] = {{ "c", 3256, 150 }},	-- x150 Artisan Alchemist's Moxie
+							["cost"] = { { "c", ARTISAN_ALCHEMISTS_MOXIE, 150 } },
 						}),
 						i(246671, {	-- Recipe: Sunsmoke Censer (RECIPE!)
-							["cost"] = {{ "c", 3256, 150 }},	-- x150 Artisan Alchemist's Moxie
+							["cost"] = { { "c", ARTISAN_ALCHEMISTS_MOXIE, 150 } },
 						}),
 						i(259182, {	-- Schematic: Giga-Gem Grippers (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259172, {	-- Schematic: Head-Mounted Beam Bummer (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259176, {	-- Schematic: Heavy-Duty Rock Assister (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259174, {	-- Schematic: Rock Bonkin' Hardhat (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259178, {	-- Schematic: Self-Sharpening Sin'dorei Snippers (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259180, {	-- Schematic: Sin'dorei Reeler's Rod (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259184, {	-- Schematic: Turbo-Junker's Multitool v9 (RECIPE!)
-							["cost"] = {{ "c", 3259, 150 }},	-- x150 Artisan Engineer's Moxie
+							["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 150 } },
 						}),
 						i(259206, {	-- Technique: Gilded Alchemist's Mixing Rod (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258504, {	-- Technique: Gilded Eversong Book (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(259210, {	-- Technique: Gilded Sin'dorei Quill (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(259208, {	-- Technique: Gilded Sin'dorei Rolling Pin (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(267394, {	-- Technique: Homely Sin'dorei Shelf (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258502, {	-- Technique: Lively Songwriter's Quill (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258503, {	-- Technique: Sin'dorei Opened Scroll (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258493, {	-- Technique: Thalassian Missive of Crafting Speed (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258489, {	-- Technique: Thalassian Missive of Deftness (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258492, {	-- Technique: Thalassian Missive of Finesse (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258496, {	-- Technique: Thalassian Missive of Ingenuity (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258494, {	-- Technique: Thalassian Missive of Multicraft (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258491, {	-- Technique: Thalassian Missive of Perception (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 						i(258495, {	-- Technique: Thalassian Missive of Resourcefulness (RECIPE!)
-							["cost"] = {{ "c", 3261, 150 }},	-- x150 Artisan Scribe's Moxie
+							["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 150 } },
 						}),
 					}),
 					--rng bags
 					i(260534, {	-- Master Alchemist's Surplus Reagents
-						["cost"] = {{ "c", 3256, 600 }},	-- x600 Artisan Alchemist's Moxie
+						["cost"] = { { "c", ARTISAN_ALCHEMISTS_MOXIE, 600 } },
 					}),
 					i(260536, {	-- Master Blacksmith's Surplus Reagents
-						["cost"] = {{ "c", 3257, 600 }},	-- x600 Artisan Blacksmith's Moxie
+						["cost"] = { { "c", ARTISAN_BLACKSMITHS_MOXIE, 600 } },
 					}),
 					i(260537, {	-- Master Enchanter's Surplus Reagents
-						["cost"] = {{ "c", 3258, 600 }},	-- x600 Artisan Enchanter's Moxie
+						["cost"] = { { "c", ARTISAN_ENCHANTERS_MOXIE, 600 } },
 					}),
 					i(260538, {	-- Master Engineer's Surplus Reagents
-						["cost"] = {{ "c", 3259, 600 }},	-- x600 Artisan Engineer's Moxie
+						["cost"] = { { "c", ARTISAN_ENGINEERS_MOXIE, 600 } },
 					}),
 					i(260539, {	-- Master Herbalist's Surplus Reagents
-						["cost"] = {{ "c", 3260, 600 }},	-- x600 Artisan Herbalist's Moxie
+						["cost"] = { { "c", ARTISAN_HERBALISTS_MOXIE, 600 } },
 					}),
 					i(260542, {	-- Master Leatherworker's Surplus Reagents
-						["cost"] = {{ "c", 3263, 600 }},	-- x600 Artisan Leatherworker's Moxie
+						["cost"] = { { "c", ARTISAN_LEATHERWORKERS_MOXIE, 600 } },
 					}),
 					i(260543, {	-- Master Miner's Surplus Reagents
-						["cost"] = {{ "c", 3264, 600 }},	-- x600 Artisan Miner's Moxie
+						["cost"] = { { "c", ARTISAN_MINERS_MOXIE, 600 } },
 					}),
 					i(260540, {	-- Master Scribe's Surplus Reagents
-						["cost"] = {{ "c", 3261, 600 }},	-- x600 Artisan Scribe's Moxie
+						["cost"] = { { "c", ARTISAN_SCRIBES_MOXIE, 600 } },
 					}),
 					i(260544, {	-- Master Skinner's Surplus Reagents
-						["cost"] = {{ "c", 3265, 600 }},	-- x600 Artisan Skinner's Moxie
+						["cost"] = { { "c", ARTISAN_SKINNERS_MOXIE, 600 } },
 					}),
 					i(260541, {	-- Master Jewelcrafter's Surplus Reagents
-						["cost"] = {{ "c", 3262, 600 }},	-- x600 Artisan Jewelcrafter's Moxie
+						["cost"] = { { "c", ARTISAN_JEWELCRAFTERS_MOXIE, 600 } },
 					}),
 					i(260545, {	-- Master Tailor's Surplus Reagents
-						["cost"] = {{ "c", 3266, 600 }},	-- x600 Artisan Tailor's Moxie
+						["cost"] = { { "c", ARTISAN_TAILORS_MOXIE, 600 } },
 					}),
 				},
 			}),
@@ -583,28 +583,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--- Trade DOWN
 					i(263976, {	-- Bundle of Adventurer Dawncrests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
-						["cost"] = {{"c", VETERAN_DAWNCREST, 10}},
+						["cost"] = { { "c", VETERAN_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246754, {	-- Pouch of Veteran Dawncrests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
-						["cost"] = {{"c", CHAMPION_DAWNCREST, 10}},
+						["cost"] = { { "c", CHAMPION_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246755, {	-- Satchel of Champion Dawncrests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
-						["cost"] = {{"c", HERO_DAWNCREST, 10}},
+						["cost"] = { { "c", HERO_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246756, {	-- Pack of Hero Dawncrests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
-						["cost"] = {{"c", MYTH_DAWNCREST, 10}},
+						["cost"] = { { "c", MYTH_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					}),
 					--- Trade UP
 					--i(XXXX, {	-- ???
 					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
-					--	["cost"] = {{"c", XXXX, YYY}},
+					--	["cost"] = { { "c", XXXX, YYY } },
 					--	["timeline"] = { ADDED_12_0_X_LAUNCH, REMOVED_12_1_0 },
 					--}),
 				},
