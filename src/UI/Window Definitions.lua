@@ -7,6 +7,8 @@ local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe
 	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
+local C_AddOns_GetAddOnMetadata
+	= C_AddOns.GetAddOnMetadata;
 
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
@@ -2943,6 +2945,23 @@ function app:CreateWindow(suffix, definition)
 			};
 		end
 	end
+end
+function app:CreateWindowForAddon(addonName, definition)
+	definition.Title = C_AddOns_GetAddOnMetadata(addonName, "Title");
+	definition.Notes = C_AddOns_GetAddOnMetadata(addonName, "Notes");
+	definition.IconTexture = C_AddOns_GetAddOnMetadata(addonName, "IconTexture");
+	local cmdStr = C_AddOns_GetAddOnMetadata(addonName, "X-Commands");
+	if cmdStr then
+		local commands = definition.Commands;
+		if not commands then
+			commands = {};
+			definition.Commands = commands;
+		end
+		for i,cmd in ipairs({(","):split(cmdStr)}) do
+			tinsert(commands, cmd:trim());
+		end
+	end
+	return app:CreateWindow(C_AddOns_GetAddOnMetadata(addonName, "X-Suffix") or addonName, definition);
 end
 function app:GetWindow(suffix, passive)
 	return app.Windows[suffix] or (not passive and BuildWindow(suffix))
