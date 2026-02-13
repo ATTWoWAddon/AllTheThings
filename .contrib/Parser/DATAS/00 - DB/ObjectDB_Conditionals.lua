@@ -5,10 +5,6 @@ local brightlyColoredEgg = ObjectDB[113768];
 brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
 brightlyColoredEgg.text.en = WOWAPI_GetSpellName(61820);
 
--- Research Equipment
-local researchEquipment = ObjectDB[161521];
-researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
-
 -- Spirit of the Wolf
 ObjectDB[226469].text.en = WOWAPI_GetSpellName(154259);
 
