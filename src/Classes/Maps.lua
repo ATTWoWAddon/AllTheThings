@@ -190,13 +190,25 @@ local function CalculateCurrentMapID()
 	end
 	return originalMapID;
 end
+local EmptyMapRetry = 0
 local function InternalUpdateLocation()
 	-- Acquire the new map ID.
 	local mapID = CalculateCurrentMapID() or 0
 	if mapID == 0 then
+		-- some places really have no mapID, so don't loop infinitely and retain prior values
+		if EmptyMapRetry > 10 and not app.RealMapID then
+			CurrentMapID = 0
+			EmptyMapRetry = 0
+			app.CurrentMapID = 0
+			app.CurrentMapInfo = nil
+			app.HandleEvent("OnCurrentMapIDChanged");
+			return
+		end
+		EmptyMapRetry = EmptyMapRetry + 1
 		Callback(InternalUpdateLocation)
 		return
 	end
+	EmptyMapRetry = 0
 	if CurrentMapID ~= mapID then
 		CurrentMapID = mapID;
 		app.CurrentMapID = mapID;
@@ -778,7 +790,7 @@ local function IncorporateHitsIntoDBs(hits, mapID, reportedAreasByID)
 	-- For each of these fresh hits, add it to our raw positional DB.
 	local foundArea
 	local count = 0
-	
+
 	for areaID,coords in pairs(hits) do
 		foundArea = app.SearchForObject("explorationID", areaID)
 		if not foundArea or not FilterInGame(foundArea) then
@@ -892,7 +904,7 @@ local function HarvestExploration()
 			until(not InCombatLockdown());
 		end
 	end
-	
+
 	-- Clean up areaID's with no coords
 	local emptyAreaIDs = {}
 	for areaID,coords in pairs(ExplorationAreaPositionDB) do
