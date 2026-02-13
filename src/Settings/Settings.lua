@@ -8,6 +8,12 @@ app.Settings = settings;
 settings:SetAllPoints();
 settings:Hide();
 
+-- Define some Common UI Templates
+settings.UITemplates = {
+	Checkbox = app.IsRetail and "UICheckButtonTemplate" or "UICheckButtonTemplate",
+	Slider = app.IsRetail and "MinimalSliderTemplate" or "UISliderTemplate",
+}
+
 -- Common Settings
 settings.AccountWide = setmetatable({
 	Achievements = true,
@@ -1266,7 +1272,7 @@ ATTSettingsPanelMixin = {
 		---@class ATTSettingsCheckButton: CheckButton
 		---@field Text FontString
 		---@field OnRefreshCheckedDisabled any
-		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "UICheckButtonTemplate")
+		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, settings.UITemplates.Checkbox)
 		Mixin(cb, ATTSettingsObjectMixin);
 		self:RegisterObject(cb);
 		if OnClick then cb:SetScript("OnClick", OnClick) end
@@ -1415,7 +1421,7 @@ ATTSettingsPanelMixin = {
 			name = "INVALID SLIDER"
 			setup = {}
 		end
-		local slider = CreateFrame("Slider", self:GetName() .. "-SL-" .. name, self, "UISliderTemplate")
+		local slider = CreateFrame("Slider", self:GetName() .. "-SL-" .. name, self, settings.UITemplates.Slider)
 		Mixin(slider, ATTSettingsObjectMixin)
 		slider:SetParent(self)
 		self:RegisterObject(slider)
