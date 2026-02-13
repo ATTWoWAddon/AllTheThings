@@ -19,15 +19,49 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(560325, {	-- Core Chest
 					["coord"] = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 					["questID"] = 91719,
-					["isWeekly"] = true,
+					["isWeekly"] = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
 					["groups"] = {
-						i(246951),	-- Stormarion Core
 					},
 				}),
 			}),
-			n(ZONE_REWARDS, {
-				o(618828, {	--
+			n(QUESTS, {
+				q(92365, {	-- Creating Defenses
+					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
+					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						o(571718, {	-- Selune's Stormarion Cores
+							["coord"] = { 25.8, 68.7, MAP.MIDNIGHT.VOIDSTORM },
+							["groups"] = {
+								i(250807),	-- Selune's Stormarion Core (QI!)
+							},
+						}),
+					},
+				}),
+				q(95175, {	-- Anchoring the Defense
+					["sourceQuests"] = { 92365 },	-- Creating Defenses
+					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
+					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(86810, {	-- Harvesting the Void
+					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
+					["isWeekly"] = true,
+					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(91700, {	-- Darkness Unmade
+					["provider"] = { "n", 244749 },	-- Xy'dax
+					["isWeekly"] = true,
+					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+			}),
+			n(REWARDS, {
+				i(246951),	-- Stormarion Core
+				o(618828, {	--Stormarion Fragment
 					i(264506),	-- Stormarion Fragment
+				}),
+				i(248680),	-- Unstable Focusing Crystal
+				i(260979),	-- Victorious Stormarion Cache
+				i(260940, {	-- Victorious Stormarion Pinnacle Cache
+					i(265030),	-- Kai (PET!)
 				}),
 			}),
 		}),
@@ -38,7 +72,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(STORMMARION_ASSAULT, {
 				n(QUESTS, {
-					--q(91938),	-- either prep state or wave 1 (unflagged 54781 (unknown hqt))
+					q(90962),	-- "Stormarion Assault", Right when it start
+					q(90943),	-- "Stormarion Assault", Before Wave 1 preparation?
+					q(91938),	-- Wave 1 started
 					q(91464),	-- Wave 2 preparation started
 					q(91465),	-- Wave 3 preparation started
 				}),

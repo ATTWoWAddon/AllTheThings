@@ -32,6 +32,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(92731, {	-- Artificing Aggression
 					["coord"] = { 51.6, 70.2, MAP.MIDNIGHT.VOIDSTORM },
 				}),
+				q(94425, {	-- Bleed the Spire
+					["coord"] = { 48.8, 59.8, MAP.MIDNIGHT.VOIDSTORM },
+				}),
 				q(93577, {	-- Captured Instinct
 					["coord"] = { 36.5, 49.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
@@ -40,6 +43,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(93904, {	-- Defying Gravity
 					["coord"] = { 48.0, 78.4, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(93507, {	-- Dispersing Shadows
+					["coord"] = { 31.0, 53.41, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(93507, {	-- Disrupting the Void
 					["coord"] = { 38.8, 45.1, MAP.MIDNIGHT.VOIDSTORM },
@@ -70,8 +76,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93579, {	-- Path of Purgation
 					["coord"] = { 30.8, 47.3, MAP.MIDNIGHT.VOIDSTORM },
 				}),
+				q(93244, {	-- Special Assignment: Agents of the Shield
+					["coord"] = { 40.9, 86.3, MAP.MIDNIGHT.VOIDSTORM },
+					["groups"] = {
+						i(263510),	-- Overflow Diverter (QI!)
+					},
+				}),
 				q(93438, {	-- Special Assignment: Precision Excision
 					["coord"] = { 35.8, 70.4, MAP.MIDNIGHT.VOIDSTORM },
+				}),
+				q(94581, {	-- Stand Your Ground
+					["coord"] = { 26.7, 68.3, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(92746, {	-- The Twist of the Stormfields
 					["coord"] = { 40.3, 59.4, MAP.MIDNIGHT.VOIDSTORM },
@@ -94,6 +109,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(QUESTS, {
+				hqt(94795),	-- Special Assignment: Agents of the Shield was unlocked
 				hqt(94743),	-- Special Assignment: Precision Excision was unlocked
 			}),
 		}),

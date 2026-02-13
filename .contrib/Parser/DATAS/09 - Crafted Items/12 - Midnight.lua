@@ -217,6 +217,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1225266),	-- Bloomtail Minnow
 			r(1225283),	-- Eversong Trout
 			r(1225276),	-- Fungalskin Pike
+			r(1225267),	-- Hollow Grouper
 			r(1225284),	-- Lucky Loa
 			r(1225270),	-- Lynxfish
 			r(1225268),	-- Null Voidfish
@@ -237,6 +238,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88606, 1225266),	-- Bloomtail Minnow
 			FirstCraft(88620, 1225283),	-- Eversong Trout
 			FirstCraft(88612, 1225276),	-- Fungalskin Pike
+			FirstCraft(88618, 1225267),	-- Hollow Grouper
 			FirstCraft(88613, 1225284),	-- Lucky Loa
 			FirstCraft(88603, 1225270),	-- Lynxfish
 			FirstCraft(88617, 1225268),	-- Null Voidfish
@@ -259,6 +261,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238489),	-- Definitely Not a Rock
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
+		i(238381),	-- Hollow Grouper
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
 		i(238380),	-- Null Voidfish
@@ -300,14 +303,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1224882),	-- Lightfused Argentleaf
 			r(1223146),	-- Lush Argentleaf
 			r(1224887),	-- Primal Argentleaf
-			--r(),	-- Voidbound Argentleaf
+			r(1224897),	-- Voidbound Argentleaf
 			--r(),	-- Wild Argentleaf
 			-- Section V - Mana Lily
 			r(1223139),	-- Mana Lily
 			r(1224884),	-- Lightfused Mana Lily
 			r(1223149),	-- Lush Mana Lily
 			r(1224889),	-- Primal Mana Lily
-			--r(),	-- Voidbound Mana Lily
+			r(1224899),	-- Voidbound Mana Lily
 			--r(),	-- Wild Mana Lily
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -335,19 +338,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(87749, 1224882),	-- Lightfused Argentleaf
 			FirstCraft(87748, 1223146),	-- Lush Argentleaf
 			FirstCraft(87751, 1224887),	-- Primal Argentleaf
-			--FirstCraft(XXXXX, YYYYYYY),	-- Voidbound Argentleaf
+			FirstCraft(87752, 1224897),	-- Voidbound Argentleaf
 			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Argentleaf
 			FirstCraft(87753, 1223139),	-- Mana Lily
 			FirstCraft(87755, 1224884),	-- Lightfused Mana Lily
 			FirstCraft(87754, 1223149),	-- Lush Mana Lily
 			FirstCraft(87757, 1224889),	-- Primal Mana Lily
-			--FirstCraft(XXXXX, YYYYYYY),	-- Voidbound Mana Lily
+			FirstCraft(87758, 1224899),	-- Voidbound Mana Lily
 			--FirstCraft(XXXXX, YYYYYYY),	-- Wild Mana Lily
 		})),
 		i(236776),	-- Argentleaf+
 		i(236777),	-- Argentleaf++
 		i(236774),	-- Azeroot+
 		i(236775),	-- Azeroot++
+		i(237507),	-- Cloudy Quartz
 		i(238387),	-- Magical Mulch
 		i(236778),	-- Mana Lily+
 		i(236779),	-- Mana Lily++

@@ -3,6 +3,7 @@
 -----------------------------------------------------
 local DF_HERBALISM_KNOWLEDGE = 2034;
 local TWW_HERBALISM_KNOWLEDGE = 2789;
+local MID_HERBALISM_KNOWLEDGE = 3154;
 local function LifebloodRank(rankID)
 	-- #if BEFORE CATA
 	local rankID = rankID-1
@@ -1563,6 +1564,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				i(263462),	-- Thalassian Herbalist's Notes
 			},
 		},{
+			q(93700),	-- Experience Tranquility
 			q(93702),	-- The Root of Life
 		})),
 		--[[filter(RECIPES, {
@@ -1620,6 +1622,13 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					i(238471),	-- Lightbloom Root
 				},
 			}),
+			o(525976, {	-- Peculiar Lotus
+				["coord"] = { 34.7, 57.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89156,
+				["groups"] = {
+					i(238474),	-- Peculiar Lotus
+				},
+			}),
 			o(525977, {	-- Planting Shovel
 				["coord"] = { 51.1, 55.7, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 89155,
@@ -1638,7 +1647,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,	-- TODO: Blizzard bug - it is not
 			["groups"] = {
-				--currency(MID_HERBALISM_KNOWLEDGE),
+				currency(MID_HERBALISM_KNOWLEDGE),
 			},
 		},{
 			q(81425, {	-- Midnight Weekly Herbalism Knowledgepoint #1

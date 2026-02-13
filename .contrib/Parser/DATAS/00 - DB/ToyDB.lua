@@ -1541,6 +1541,7 @@ i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone
 i(264413);	-- Dominating Victory
 i(252265);	-- Hexed Potatoad Mucus
+i(267139);	-- Hungry Black Hole
 i(264695);	-- Interdimensional Parcel Signal
 -- #if AFTER 12.0.1
 i(64457);	-- Last Relic of Argus
@@ -1568,7 +1569,6 @@ i(263975);	-- Feeling Fielder Mk. 7
 i(264517);	-- Galactic Flag of Victory
 i(259084);	-- Gift of the Cycle
 i(263871);	-- Holy Pet Leash
-i(267139);	-- Hungry Black Hole
 i(250320);	-- Lightgraft
 i(253629);	-- Personal Key to the Arcantina
 i(251903);	-- Potatoad Egg

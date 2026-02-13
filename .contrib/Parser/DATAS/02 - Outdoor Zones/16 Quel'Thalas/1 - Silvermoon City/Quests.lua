@@ -83,6 +83,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(94474, {	-- The Great Vault
 				["qg"] = 239670,	-- Vaultkeeper Elysa
 				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(265039),	-- Silvermoon Splendor (QI!)
+				},
 			}),
 			q(95245, {	-- Midnight: World Tour
 				["provider"] = { "n", 235787 },	-- Lor'themar Theron
@@ -94,6 +97,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 			}, {
+				q(93758),	-- Nexus-Point Xenas
 				q(93757),	-- Voidscar Arena
 			})),
 		}),

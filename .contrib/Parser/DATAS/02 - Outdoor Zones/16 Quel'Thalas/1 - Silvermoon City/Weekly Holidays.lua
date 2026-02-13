@@ -35,29 +35,29 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["_drop"] = { "g" },	-- Drop Mark of Honor
 				})),
 				--pvp(q(XXXX)),	-- The Arena Calls
-				--petbattle(pvp(q(XXXX, {	-- The Very Best
-				--	["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
-				--}))),
+				petbattle(pvp(q(93599, {	-- The Very Best
+					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
+				}))),
 				--q(XXXX),	-- The World Awaits
 			})),
-			--[[n(QUESTS, {
-				q(XXXX, {	-- A Call to Delves
-					["provider"] = { "n", 226919 },	-- Archivist Frithrun
-					["coord"] = { 46.5, 49.3, DORNOGAL },
+			n(QUESTS, {
+				q(93595, {	-- A Call to Delves
+					["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 48.8, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isWeekly"] = true,
-					["groups"] = { i(229129) },	-- Cache of Delver's Spoils
+					--["groups"] = { i(229129) },	-- Cache of Delver's Spoils TODO: currently - Cache of Quel'Thalas Treasures (N)
 				}),
-				q(XXXX, {	-- Emissary of War
-					["provider"] = { "n", 226919 },	-- Archivist Frithrun
-					["coord"] = { 46.5, 49.3, DORNOGAL },
-					["isWeekly"] = true,
-					["groups"] = {
-						i(250117, {	-- Cache of Quel'Thalas Treasures (H)
-							["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
-						}),
-					},
-				}),
-			}),]]--
+			--	q(XXXX, {	-- Emissary of War
+			--		["provider"] = { "n", 256212 },	-- Archmage Aethas Sunreaver
+			--		["coord"] = { 48.8, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+			--		["isWeekly"] = true,
+			--		["groups"] = {
+			--			i(250117, {	-- Cache of Quel'Thalas Treasures (H)
+			--				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
+			--			}),
+			--		},
+			--	}),
+			}),
 		}),
 	}),
 }));

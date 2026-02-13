@@ -202,11 +202,6 @@ root(ROOTS.Unsorted, {
 			i(237017),	-- Arcanoweave
 			i(237018),	-- Arcanoweave
 
-			-- Blacksmithing
-
-
-			-- Minig Knowledge
-			i(237507),	-- Cloudy Quartz
 			-- Herb
 			i(237498),	-- Glowing Resilient Seed
 			i(237499),	-- Wild Resilient Seed
@@ -261,7 +256,6 @@ root(ROOTS.Unsorted, {
 			-- Fishing
 			i(238373),	-- Ominous Octopus
 			i(238374),	-- Tender Lumifin
-			i(238381),	-- Hollow Grouper
 			i(238382),	-- Gore Guppy
 
 			-- Herb
@@ -270,14 +264,8 @@ root(ROOTS.Unsorted, {
 
 			-- Herb Knowledge
 			i(238467),	-- Thalassian Phoenix Ember
-			i(238468),	-- Bloomed Bud
 			i(238469),	-- Sweeping Harvester's Scythe
-			i(238470),	-- Simple Leaf Pruners
-			i(238471),	-- Lightbloom Root
 			i(238472),	-- A Spade
-			i(238473),	-- Harvester's Sickle
-			i(238474),	-- Peculiar Lotus
-			i(238475),	-- Planting Shovel
 
 			-- QI
 			i(238476),	-- Irritating Spores
@@ -390,14 +378,9 @@ root(ROOTS.Unsorted, {
 			i(238595),	-- Artisan's Considered Order
 
 			-- Mining knowledge
-			i(238596),	-- Miner's Guide to Voidstorm
 			i(238597),	-- Spelunker's Lucky Charm
-			i(238598),	-- Lost Voidstorm Satchel
 			i(238599),	-- Solid Ore Punchers
-			i(238600),	-- Glimmering Void Pearl
 			i(238601),	-- Amani Expert's Chisel
-			i(238602),	-- Star Metal Deposit
-			i(238603),	-- Spare Expedition Torch
 
 			-- Skinning Knowledge
 			i(238604),	-- Dornogal Carving Knife
@@ -1446,7 +1429,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(247860),	-- Bomb Spores
-			i(248680),	-- Unstable Focusing Crystal
 
 			-- Quest Armor
 			i(248038),	-- Girdle of Herbicide
@@ -1491,10 +1473,6 @@ root(ROOTS.Unsorted, {
 
 			-- Misc
 			i(248933),	-- Burden of War
-			i(248957),	-- Scroll of Resistance
-			i(248966),	-- Scroll of Fluidity
-			i(248967),	-- Scroll of Elements
-			i(248968),	-- Scroll of Might
 
 			-- Armor
 			i(249142),	-- TEMPLATE 12.0 Raid - Ranged DPS - Trinket
@@ -1731,16 +1709,12 @@ root(ROOTS.Unsorted, {
 			-- Toy
 			i(251633),	-- Bursting Bounty Bundle
 
-			-- Misc
-			i(251635),	-- Illegal Cosmic Emitter
-			i(251805),	-- Unstable Explosive Device
 			-- Tailoring
 			i(251665),	-- Silverleaf Thread
 			i(251691),	-- Embroidery Floss
 
 			-- Trinkets
 			i(251785),	-- Void-Reaper's Libram
-			i(251786),	-- Ever-Collapsing Void Fissure \\ Ever-collapsing Void Fissure
 			i(251788),	-- Gift of Light
 			i(251789),	-- Consecrated Chalice
 			i(251793),	-- Endosymbiotic Mycelium
@@ -2238,7 +2212,6 @@ root(ROOTS.Unsorted, {
 			i(257009),	-- Deep Hunter's Arc \\ [PH] WQ - Weapon - 2H Bow AGI - A
 			i(257010),	-- Flourishing Vinescythe \\ [PH] WQ - Weapon - 1H Warglaive - A
 			i(257012),	-- Rootwarden's Spellblade \\ [PH] WQ - Weapon - 1H Sword INT - A
-			i(257013),	-- Viridescent Crusher \\ [PH] WQ - Weapon - 1H Mace STR - A
 			i(257014),	-- Lumenbloom Scepter \\ [PH] WQ - Weapon - 1H Mace INT - A
 			i(257015),	-- Vinebound Shank \\ [PH] WQ - Weapon - 1H Dagger AGI - A
 			i(257018),	-- Rootspeaker's Barkclasp \\ [PH] WQ - Armor - Mail WAIST - A
@@ -2525,9 +2498,6 @@ root(ROOTS.Unsorted, {
 			i(258727),	-- Ensemble: Elaborate Ruby Mageweave
 			i(258728),	-- Ensemble: Elaborate Golden Mageweave
 
-			-- Slayers Rise
-			i(258736),	-- Scroll of Town Portal
-			i(258763),	-- Portable Void Zeal
 			-- QI
 			i(258738),	-- A Cordial Invitation
 
@@ -2545,9 +2515,6 @@ root(ROOTS.Unsorted, {
 
 			-- Toy
 			i(259084),	-- Gift of the Cycle
-
-			-- Slayer
-			i(259092),	-- Void-Tinged Free Action Potion
 
 			-- Prof
 			i(259171),	-- Head-Mounted Beam Bummer \\ Super Sin'dorei Headlamp
@@ -2579,9 +2546,6 @@ root(ROOTS.Unsorted, {
 
 			-- Pet
 			i(259337),	-- Munchy \\ Vermillion Grovecrawler
-
-			-- Slayer
-			i(259245),	-- Void Phase Potion
 
 			-- Cahce
 			i(259334),	-- Overflowing Singularity Trove
@@ -2847,8 +2811,6 @@ root(ROOTS.Unsorted, {
 			i(262395),	-- Hexed Bunny
 			i(262396),	-- Lost Star
 			-- Cache
-			i(260940),	-- Victorious Stormarion Pinnacle Cache
-			i(260979),	-- Victorious Stormarion Cache
 			i(262349),	-- Satchel of Compensation
 			-- Pet
 			i(260942),	-- Bubbly Snapling
@@ -3178,7 +3140,6 @@ root(ROOTS.Unsorted, {
 
 			-- Mount
 			i(257143),	-- Peridot Dragonhawk
-			i(257446),	-- Reins of the Insatiable Shredclaw \\ Insatiable Shredclaw
 			i(260233),	-- Emerald Hawkstrider
 			-- Quest Rewards?
 			i(257235),	-- Voidbreaker's Cleaver
@@ -3186,9 +3147,6 @@ root(ROOTS.Unsorted, {
 			i(257239),	-- Voidbreaker's Knife
 			i(257252),	-- Voidbreaker's Bardiche
 			i(257534),	-- Voidbreaker's Baton
-
-			-- QI
-			i(263510),	-- Overflow Diverter
 
 			-- Cosmetic
 			i(263520),	-- Ensemble: Sprawling's Garb
@@ -3236,9 +3194,6 @@ root(ROOTS.Unsorted, {
 			i(264286),	-- Voidbreaker's Choker
 			i(264287),	-- Voidbreaker's Circle
 			i(264288),	-- Voidbreaker's Ring
-
-			--pet
-			i(264303),	-- Willie
 
 			i(264366),	-- Razeshi C.
 			-- misc
@@ -3297,9 +3252,6 @@ root(ROOTS.Unsorted, {
 			-- Lockbox
 			i(264475),	-- Umbral Tin Lockbox
 
-			-- Stomarion
-			i(264503),	-- Cracked Core
-
 			-- Trinket
 			i(264507),	-- Crucible of Erratic Energies
 
@@ -3356,9 +3308,6 @@ root(ROOTS.Unsorted, {
 			i(264689),	-- Cuddly Sapphire Grrgle
 			i(264690),	-- Cuddly Clover Grrgle
 			i(264691),	-- Cuddly Peach Grrgle
-			-- trinet
-			i(264694),	-- Ultradon Cuirass
-			i(264701),	-- Cosmic Bell
 
 			-- Cosmetic
 			i(264847),	-- Dozing Vinepouch
@@ -3410,11 +3359,7 @@ root(ROOTS.Unsorted, {
 			i(265027),	-- Lucky Lynx Locket
 
 			-- Pet
-			i(265030),	-- Kai
 			i(265035),	-- Medusa \\ [PH] Purple Siphoid
-
-			-- QI
-			i(265039),	-- Silvermoon Splendor
 
 			-- Misc
 			i(265041),	-- Singed Ritual Parchment
@@ -3505,7 +3450,6 @@ root(ROOTS.Unsorted, {
 			i(264527),	-- Vile Hexxer's Mantle
 			i(264528),	-- Goop-Coated Leggings
 			i(264529),	-- Cover of the Furbolg Elder
-			i(264531),	-- Shadowthread Slippers
 			i(264532),	-- Robes of Flowing Truths
 			i(264533),	-- Queen's Tentacle Sash
 			i(264534),	-- Bogvine Shoulderguards
@@ -3513,13 +3457,11 @@ root(ROOTS.Unsorted, {
 			i(264536),	-- Zedling Summoning Collar
 			i(264537),	-- Winged Terror Gloves
 			i(264538),	-- Translucent Membrane Slippers
-			i(264539),	-- Robes of the Voidcaller
 			i(264542),	-- Skullcrusher's Mantle
 			i(264543),	-- Snapdragon Pantaloons
 			i(264544),	-- Grounded Death Cap
 			i(264545),	-- Harrower-Claw Grips
 			i(264548),	-- Sash of Cosmic Tranquility
-			i(264549),	-- Ever-Devouring Shoulderguards
 			i(264550),	-- Fungal Stalker's Stockings
 			i(264551),	-- Nightbrood's Jaw
 			i(264552),	-- Frogskin Grips
@@ -3527,41 +3469,31 @@ root(ROOTS.Unsorted, {
 			i(264555),	-- Splintered Hexwood Clasps
 			i(264556),	-- Voidforged Cinch
 			i(264557),	-- Borerplate Pauldrons
-			i(264558),	-- Vileblood Resistant Sabatons
 			i(264559),	-- Devourer's Visage
 			i(264561),	-- Primal Bonestompers
 			i(264562),	-- Plated Grove Vest
 			i(264563),	-- Eruundi's Wristguards
 			i(264564),	-- Crab Wrangling Harness
-			i(264565),	-- Voidscale Shoulderpads
 			i(264567),	-- Rockscale Hood
 			i(264568),	-- Serrated Scale Gauntlets
 			i(264571),	-- Ironleaf Wristguards
 			i(264572),	-- Netherplate Clasp
-			i(264574),	-- Netherterror's Legplates
 			i(264577),	-- Crystalforged Boots
 			i(264578),	-- Stumpy's Terrorplate
-			i(264579),	-- Hungering Wristplates
 			i(264580),	-- Mrrlokk's Mrgl Grrdle
 			i(264581),	-- Bloombark Spaulders
 			i(264582),	-- Diamondback-Scale Legguards
-			i(264583),	-- Barbute of the Winged Hunter
 			i(264585),	-- Snapper Steppers
 			i(264586),	-- Crustacean Carapace Chestguard
 			i(264588),	-- Shawl of Cosmic Whispers
-			i(264589),	-- Voidfused Wing Cloak
 			i(264592),	-- Ha'kalawe's Flawless Wing
 			i(264593),	-- Warcloak of the Butcher
 			i(264594),	-- Netherscale Cloak
 			i(264595),	-- Lynxhide Shawl
-			i(264596),	-- Voidthread Veil
 			i(264599),	-- Kul'Tiran Signet Ring
-			i(264600),	-- Ancient Argussian Band
-			i(264601),	-- Queen's Eye Band
 			i(264602),	-- Abyss Coral Band
 			i(264604),	-- Sludgy Verdant Signet
 			i(264605),	-- Choker of Unyielding Winds
-			i(264606),	-- Netherlocus Amulet
 			i(264607),	-- Spore-Laden Choker
 			i(264609),	-- Gar'chak's Mark of Honor
 			i(264610),	-- Escaped Specimen's ID Tag
@@ -3580,7 +3512,6 @@ root(ROOTS.Unsorted, {
 			i(264628),	-- Spear of Nothingness
 			i(264630),	-- Colossal Voidsunderer
 			i(264631),	-- Harak's Skullcutter
-			i(264632),	-- Darkblossom's Crook
 			i(264634),	-- Spire of Flowing Void
 			i(264637),	-- Cosmic Hunter's Glaive
 			i(264638),	-- Fangs of the Invader
@@ -3591,10 +3522,8 @@ root(ROOTS.Unsorted, {
 			i(264646),	-- Specimen Sinew Longbow
 			i(264647),	-- Cre'van's Punisher
 			i(264649),	-- Mindrot Claw-Hammer
-			i(264651),	-- Resonating Traumatizer
 			i(264910),	-- Shell-Cleaving Poleaxe
 			i(264911),	-- Forest Hunter's Arc
-			i(264912),	-- Void-Channeler's Spire
 			i(264913),	-- Focused Netherslicer
 
 			-- Misc
@@ -3673,13 +3602,9 @@ root(ROOTS.Unsorted, {
 			i(265835),	-- Page 3 of a Book of Sonnets
 			i(257447),	-- Prowling Shredclaw
 			i(257448),	-- Frenzied Shredclaw
-			i(262467),	-- Void Elf Round Table
 			i(264253),	-- Galactic Void-Scarred Barricade
 			i(264345),	-- Galactic Commander's Orb
-			i(264482),	-- Void Elf Torch
 			i(265791),	-- Haranir Canopy Bed \\ Luxurious Haranir Canopy Bed
-			i(266075),	-- Harpoon of Extirpation
-			i(266076),	-- Nether Siphoner
 			i(266077),	-- Basic Black Quiver
 			i(266078),	-- Basic Blue Quiver
 			i(266079),	-- Basic Bronze Quiver
@@ -3699,10 +3624,7 @@ root(ROOTS.Unsorted, {
 			i(266095),	-- Obsidian Scale Treads
 			i(266096),	-- Huntress' Moonglaive
 			i(266097),	-- Huntress' Moonblade
-			i(266098),	-- Faindel's Longbow
 			i(266099),	-- Extinguished Exaliburn
-			i(266100),	-- Barbed Riftwalker Dirk
-			i(266101),	-- Unused Initiate's Bulwark
 			i(266102),	-- Ambiguous Rock
 			i(266120),	-- Sisterhood's Crescent
 			i(266121),	-- Sisterhood's Glaive
@@ -3801,7 +3723,6 @@ root(ROOTS.Unsorted, {
 			i(267062),	-- Thalassian Tailor's Threads
 			i(267076),	-- Novice Combatant's Medallion
 			i(267077),	-- Novice Combatant's Emblem
-			i(267139),	-- Hungry Black Hole
 			i(267177),	-- Slayer's Duellum Commendation
 
 			-- Alchemy

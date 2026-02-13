@@ -1276,7 +1276,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91511, name(HEADERS.Item,264262)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'The Echoless Flame'
 				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
 				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
-				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993) / Alex: after Special Assignment: Push Back the Light
+				q(93790),	-- Triggered after completing 'Wey'nan's Ward' (88993) / TODO: Alex: after obtain Fabled Veteran's Cache
 				--
 			}),
 		}),

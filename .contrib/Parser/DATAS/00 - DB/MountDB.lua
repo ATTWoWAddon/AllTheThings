@@ -2312,6 +2312,7 @@ i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
+i(257446, 1261583);	-- Insatiable Shredclaw
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
@@ -2351,7 +2352,6 @@ i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(257448, 1261585);	-- Frenzied Shredclaw
 i(0, 1261349);	-- Giganto Manis
 i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
-i(257446, 1261583);	-- Insatiable Shredclaw
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(0, 1266703);	-- Lab-grown Stormray
 i(260895, 1267002);	-- Lavender Pseudoshell

@@ -3,6 +3,7 @@
 -----------------------------------------------------
 local DF_MINING_KNOWLEDGE = 2035;
 local TWW_MINING_KNOWLEDGE = 2793;
+local MID_MINING_KNOWLEDGE = 3158;
 root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 	-- #if AFTER 3.0.2
 	n(DISCOVERY, {
@@ -1428,6 +1429,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				i(263463),	-- Thalassian Miner's Notes
 			},
 		},{
+			q(93706),	-- Aggressive Tin-dencies
 			q(93709),	-- Stocking the Staples
 		})),
 		--[[filter(RECIPES, {
@@ -1453,6 +1455,27 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		}),--]]
 		n(TREASURES, {
+			o(525909, {	-- Glimmering Void Pearl
+				["coord"] = { 28.8, 38.5, SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89148,
+				["groups"] = {
+					i(238600),	-- Glimmering Void Pearl
+				},
+			}),
+			o(525911, {	-- Lost Voidstorm Satchel
+				["coord"] = { 54.2, 51.6, SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89146,
+				["groups"] = {
+					i(238598),	-- Lost Voidstorm Satchel
+				},
+			}),
+			o(525913, {	-- Miner's Guide to Voidstorm
+				["coord"] = { 30.5, 69.1, SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89144,
+				["groups"] = {
+					i(238596),	-- Miner's Guide to Voidstorm
+				},
+			}),
 			o(525906, {	-- Spare Expedition Torch
 				["coord"] = { 38.8, 65.9, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 89151,
@@ -1460,11 +1483,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(238603),	-- Spare Expedition Torch
 				},
 			}),
+			o(525907, {	-- Star Metal Deposit
+				["coord"] = { 41.8, 38.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89150,
+				["groups"] = {
+					i(238602),	-- Star Metal Deposit
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,	-- TODO: Blizzard bug, it is not
 			["groups"] = {
-				--currency(MID_MINING_KNOWLEDGE),
+				currency(MID_MINING_KNOWLEDGE),
 			},
 		},{
 			q(88673, {	-- Midnight Weekly Mining Knowledgepoint #1

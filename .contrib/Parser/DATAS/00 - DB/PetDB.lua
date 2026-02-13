@@ -4531,11 +4531,13 @@ i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
 i(264909, 4982);	-- Flicker
 i(250146, 4885);	-- Gloom Toad
+i(265030, 4983);	-- Kai
 i(262393, 4955);	-- Kreepah'zoyd
 i(259991, 4930);	-- Lil' Preyseeker
 i(258737, 4913);	-- Moon Darter
 i(221492, 4459);	-- Moss Skipper
 i(250137, 4876);	-- Mud Potadpole
+i(266076, 4881);	-- Nether Siphoner
 i(250145, 4884);	-- Pangolil
 i(244911, 4830);	-- Rhay'Dahr
 i(251005, 4892);	-- Riftblade Familiar
@@ -4548,6 +4550,7 @@ i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
 i(222967, 4475);	-- Webbers
+i(264303, 4972);	-- Willie
 --- UNSORTED ---
 i(255151, 4906);	-- [DNT] Baby Amani Eagle (Grey)
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
@@ -4569,7 +4572,6 @@ i(260360, 4944);	-- Gummi the Glow Wyrm
 i(244339, 4816);	-- Hawkstrider Hatchling
 i(252650, 4894);	-- Heartglow Listener
 i(262395, 4959);	-- Hexed Bunny
-i(265030, 4983);	-- Kai
 i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
 i(262396, 4957);	-- Lost Star
@@ -4585,7 +4587,6 @@ i(260730, 4948);	-- Perturbed Sporebat
 i(262763, 4964);	-- Plump Mandrake
 i(260922, 4950);	-- Preyseeker's Immature Behemoth
 i(265609, 4985);	-- Princess Bloodshed
-i(266076, 4881);	-- Nether Siphoner
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
@@ -4597,6 +4598,5 @@ i(267838, 5003);	-- Sunwing Hatchling
 i(259337, 4929);	-- Vermillion Grovecrawler
 i(264434, 4976);	-- Voldy
 i(221495, 4497);	-- Waddles
-i(264303, 4972);	-- Willie
 i(251003, 4891);	-- Wrathful Wyrm
 i(262394, 4954);	-- Ziorg'pharon
