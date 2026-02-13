@@ -311,7 +311,7 @@ local function PrintQuestInfoViaCallback(questID, new)
 end
 -- DirtyQuests became a table instead of an array like before, so it broke a lot of things... I'll make one for each version to keep it working
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
-local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
+local IsQuestFlaggedCompletedForObject;
 local CACHE = "Quests"
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -488,7 +488,7 @@ IsQuestFlaggedCompletedForObject = function(t)
 		return 2;
 	end
 end
-CollectibleAsQuest = function(t)
+local CollectibleAsQuest = function(t)
 	-- consolidated representation of whether a Thing can be collectible via QuestID
 	local questID = t.questID;
 	return
@@ -553,8 +553,7 @@ local function CollectibleAsLocked(t, locked)
 end
 local function CollectibleAsQuestOrAsLocked(t)
 	local locked = t.locked
-	return (not locked and (t.CollectibleAsQuest or CollectibleAsQuest)(t))
-		or CollectibleAsLocked(t, locked);
+	return (not locked and CollectibleAsQuest(t)) or CollectibleAsLocked(t, locked);
 end
 local function CollectibleAsReputationQuest(t)
 	if app.Settings.Collectibles.Quests then
@@ -1414,7 +1413,6 @@ app.GlobalVariants.AndLockCriteria = AndLockCriteria
 -- for now I guess this is an explicit variant which covers both
 local AndBreadcrumbWithLockCriteria = {
 	__name = "AndBreadcrumbWithLockCriteria",
-	collectible = CollectibleAsQuestOrAsLocked,
 	locked = function(t)
 		return LockedAsQuest(t) or LockedAsBreadcrumb(t)
 	end,
@@ -1559,12 +1557,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return "quest:"..t.questID
 	end,
 	RefreshCollectionOnly = true,
-	CollectibleAsQuest = function()
-		return CollectibleAsQuest;
-	end,
-	collectible = function(t)
-		return t:CollectibleAsQuest();
-	end,
+	collectible = CollectibleAsQuest,
 	collected = IsQuestFlaggedCompletedForObject,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
