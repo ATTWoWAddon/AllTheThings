@@ -567,6 +567,7 @@ app.LocationTrigger = function(forceNewMap)
 	if window:IsVisible() then
 		app.CallbackHandlers.AfterCombatOrDelayedCallback(window.RefreshLocation, 0.1, window)
 	else
+		window:GetRunner().Reset()
 		window.mapID = nil
 		window.data = nil
 	end

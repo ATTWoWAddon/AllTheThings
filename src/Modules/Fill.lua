@@ -602,6 +602,8 @@ local function AssignGroupFilledTag(group)
 	-- app.PrintDebug("wasFilled",app:SearchLink(group),group.filledReagent,group.filledCost,group.filledUpgrade)
 end
 local function HandleOnWindowFillComplete(window)
+	if not window or not window.data then return end
+
 	window.data._fillcomplete = true
 	AssignGroupFilledTag(window.data)
 	app.HandleEvent("OnWindowFillComplete", window)
