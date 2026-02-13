@@ -3226,9 +3226,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							})),
 							-- #endif
 						}, {	-- Honored
+							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_SIX, i(234278, {		-- Manual: Smelt Obsidian-Infused Thorium Bar (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
+							-- #endif
 							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
 							applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
 						}, {	-- Revered
