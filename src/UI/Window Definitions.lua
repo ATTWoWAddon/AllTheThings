@@ -623,17 +623,18 @@ local function SetPortraitIcon(self, data)
 		end
 		atlas = data["atlas-border"];
 		if atlas then
-			if self.Border.atlas ~= atlas then
+			-- could make this more complicated, but if we don't SetAtlas, then SetVertexColor won't have any effect it seems
+			-- if self.Border.atlas ~= atlas then
 				self.Border.atlas = atlas;
 				self.Border:SetAtlas(atlas);
 				self.Border:SetWidth(self:GetHeight());
 				self.Border:Show();
-			end
+			-- end
 			atlas = data["atlas-color"];
 			if self.Border.atlasColor ~= atlas then
 				self.Border.atlasColor = atlas;
 				if atlas then
-					self.Border:SetVertexColor(atlas[1] or 0, atlas[2] or 0, atlas[3] or 0, atlas[4] or 1);
+					self.Border:SetVertexColor(atlas[1] or 1, atlas[2] or 1, atlas[3] or 1, atlas[4] or 1);
 				else
 					self.Border:SetVertexColor(1, 1, 1, 1);
 				end
