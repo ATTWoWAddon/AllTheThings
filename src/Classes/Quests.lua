@@ -1283,6 +1283,9 @@ local AWQuestLockers = setmetatable({
 		-- app.PrintDebug("Locked due to AW Ach?",ach.accountWide,app:SearchLink(ach))
 		if ach and ach.accountWide then return true end
 	end,
+	questID = function(id)
+		return app.AccountWideQuestsDB[id]
+	end,
 }, { __index = function(t,key) return app.ReturnFalse end})
 local function IsGroupLocked(t)
 	local lockCriteria = t.lc;
@@ -1295,21 +1298,18 @@ local function IsGroupLocked(t)
 			if critFunc then
 				critVal = lockCriteria[i + 1]
 				if critFunc(critVal) then
+					if AWQuestLockers[critKey](critVal) then
+						AccountWideLockedQuestsCache[t.questID] = true
+					end
 					if critKey ~= "questID" then
 						nonQuestLock = true;
-						if AWQuestLockers[critKey](critVal) then
-							AccountWideLockedQuestsCache[t.questID] = true
-						end
-					elseif app.AccountWideQuestsDB[critVal] then
-						-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
-						AccountWideLockedQuestsCache[t.questID] = true
 					end
 					criteriaRequired = criteriaRequired - 1;
 					if criteriaRequired <= 0 then
 						-- app.PrintDebug("Locked:",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID),"=>",critKey,lockCriteria[i + 1])
 						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
 						if nonQuestLock then
-							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+							-- app.PrintDebug("Automatic DisablePartySync")
 							t.DisablePartySync = true;
 						end
 						return true;
@@ -1358,7 +1358,7 @@ local function LockedAsBreadcrumb(t)
 				if IsQuestFlaggedCompleted(nqID) then
 					-- app.PrintDebug("Locked Breadcrumb from",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
 					LockedBreadcrumbCache[questID] = true
-					if app.AccountWideQuestsDB[nqID] then
+					if AWQuestLockers.questID(nqID) then
 						-- app.PrintDebug("...Also locked Account-Wide")
 						-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
 						AccountWideLockedQuestsCache[questID] = true
@@ -1368,9 +1368,9 @@ local function LockedAsBreadcrumb(t)
 					-- this questID may not even be available to pick up, so try to find a Thing with this questID to determine if the object is complete
 					nq = Search("questID", nqID, "field");
 					if nq and (nq.altcollected or nq.locked) then
-						-- app.PrintDebug("Locked Breadcrumb from",nq.hash,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+						-- app.PrintDebug("Locked Breadcrumb from locked",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
 						LockedBreadcrumbCache[questID] = true
-						if app.AccountWideQuestsDB[nqID] then
+						if AWQuestLockers.questID(nqID) then
 							-- app.PrintDebug("...Also locked Account-Wide")
 							-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
 							AccountWideLockedQuestsCache[questID] = true
