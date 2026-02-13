@@ -10,7 +10,7 @@ root(ROOTS.Unsorted, {
 			i(245535),	-- Sturdy Haranir Handcart
 			i(246407),	-- Stoppered Spring Water Gourd
 			i(246415),	-- Ruddy Haranir Pigment Bowl
-			i(246693),	-- Self-Pouring Thalassian Sunwine
+
 			i(247234),	-- Rustic Harandar Planter
 
 			-- QI
@@ -76,15 +76,14 @@ root(ROOTS.Unsorted, {
 			i(259223),	-- Lynx Claw
 
 			-- Decor
-			i(262450),	-- Ensorcelled Broom
+
 
 			i(262454),	-- Shining Sin'dorei Hourglass
-			i(262455),	-- Font of Gleaming Water
 
 
-			i(262468),	-- Ren'dorei Postal Repository
+
 			i(262469),	-- Brilliant Phoenix Harp
-			i(262470),	-- Spellbound Tome of Thalassian Magics
+
 			i(262471),	-- Bejeweled Sin'dorei Lyre
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion
 			i(262592),	-- Plush Silvermoon Bed
@@ -806,12 +805,7 @@ root(ROOTS.Unsorted, {
 			i(243588),	-- Limonite Ochre
 
 			-- Enchanting
-			i(243599),	-- Eversinging Dust
-			i(243600),	-- Eversinging Dust
-			i(243602),	-- Radiant Shard
-			i(243603),	-- Radiant Shard
-			i(243605),	-- Dawn Crystal
-			i(243606),	-- Dawn Crystal
+
 
 			-- Eversong Stuff
 			i(243608),	-- Magisters Reputation
@@ -824,160 +818,22 @@ root(ROOTS.Unsorted, {
 			i(243615),	-- Shades of the Row Reputation \\ Shadow of the Spire Reputation
 
 			-- Enchanting
-			i(243733),	-- Thalassian Phoenix Oil
-			i(243734),	-- Thalassian Phoenix Oil
-			i(243735),	-- Oil of Dawn
-			i(243736),	-- Oil of Dawn
-			i(243737),	-- Smuggler's Enchanted Edge
-			i(243738),	-- Smuggler's Enchanted Edge
-			i(243773),	-- Gleeful Glamour - Blood Elf
-			i(243774),	-- Gleeful Glamour - Dark Iron Dwarf
-			i(243775),	-- Gleeful Glamour - Draenei
-			i(243776),	-- Gleeful Glamour - Dwarf
-			i(243777),	-- Gleeful Glamour - Earthen
-			i(243778),	-- Gleeful Glamour - Gnome
-			i(243779),	-- Gleeful Glamour - Goblin
-			i(243780),	-- Gleeful Glamour - Highmountain Tauren
-			i(243781),	-- Gleeful Glamour - Human
-			i(243782),	-- Gleeful Glamour - Kul Tiran
-			i(243783),	-- Gleeful Glamour - Lightforged Draenei
-			i(243784),	-- Gleeful Glamour - Mag'har Orc
-			i(243785),	-- Gleeful Glamour - Mechagnome
-			i(243786),	-- Gleeful Glamour - Night Elf
-			i(243787),	-- Gleeful Glamour - Nightborne
-			i(243788),	-- Gleeful Glamour - Orc
-			i(243789),	-- Gleeful Glamour - Pandaren
-			i(243790),	-- Gleeful Glamour - Tauren
-			i(243791),	-- Gleeful Glamour - Troll
-			i(243792),	-- Gleeful Glamour - Undead
-			i(243793),	-- Gleeful Glamour - Void Elf
-			i(243794),	-- Gleeful Glamour - Vulpera
-			i(243795),	-- Gleeful Glamour - Worgen
-			i(243796),	-- Gleeful Glamour - Zandalari Troll
-			i(243797),	-- Gleeful Glamour - Blood Elf
-			i(243798),	-- Gleeful Glamour - Dark Iron Dwarf
-			i(243799),	-- Gleeful Glamour - Draenei
-			i(243800),	-- Gleeful Glamour - Dwarf
-			i(243801),	-- Gleeful Glamour - Earthen
-			i(243802),	-- Gleeful Glamour - Gnome
-			i(243803),	-- Gleeful Glamour - Goblin
-			i(243804),	-- Gleeful Glamour - Highmountain Tauren
-			i(243805),	-- Gleeful Glamour - Human
-			i(243806),	-- Gleeful Glamour - Kul Tiran
-			i(243807),	-- Gleeful Glamour - Lightforged Draenei
-			i(243808),	-- Gleeful Glamour - Mag'har Orc
-			i(243809),	-- Gleeful Glamour - Mechagnome
-			i(243810),	-- Gleeful Glamour - Night Elf
-			i(243811),	-- Gleeful Glamour - Nightborne
-			i(243812),	-- Gleeful Glamour - Orc
-			i(243813),	-- Gleeful Glamour - Pandaren
-			i(243814),	-- Gleeful Glamour - Tauren
-			i(243815),	-- Gleeful Glamour - Troll
-			i(243816),	-- Gleeful Glamour - Undead
-			i(243817),	-- Gleeful Glamour - Void Elf
-			i(243818),	-- Gleeful Glamour - Vulpera
-			i(243819),	-- Gleeful Glamour - Worgen
-			i(243820),	-- Gleeful Glamour - Zandalari Troll
-			i(243946),	-- Enchant Chest - Mark of Nalorakk
-			i(243947),	-- Enchant Chest - Mark of Nalorakk
-			i(243948),	-- Enchant Helm - Hex of Leeching
-			i(243949),	-- Enchant Helm - Hex of Leeching
-			i(243950),	-- Enchant Helm - Empowered Hex of Leeching
-			i(243951),	-- Enchant Helm - Empowered Hex of Leeching
-			i(243952),	-- Enchant Boots - Lynx's Dexterity
-			i(243953),	-- Enchant Boots - Lynx's Dexterity
-			i(243954),	-- Enchant Ring - Amani Mastery
-			i(243955),	-- Enchant Ring - Amani Mastery
-			i(243956),	-- Enchant Ring - Eyes of the Eagle
-			i(243957),	-- Enchant Ring - Eyes of the Eagle
-			i(243958),	-- Enchant Ring - Zul'jins Mastery
-			i(243959),	-- Enchant Ring - Zul'jins Mastery
-			i(243960),	-- Enchant Shoulders - Flight of the Eagle
-			i(243961),	-- Enchant Shoulders - Flight of the Eagle
-			i(243962),	-- Enchant Shoulders - Akil'zon's Celerity
-			i(243963),	-- Enchant Shoulders - Akil'zon's Celerity
-			i(243964),	-- Enchant Tool - Amani Perception
-			i(243965),	-- Enchant Tool - Amani Perception
-			i(243966),	-- Enchant Tool - Amani Resourcefulness
-			i(243967),	-- Enchant Tool - Amani Resourcefulness
-			i(243968),	-- Enchant Weapon - Strength of Halazzi
-			i(243969),	-- Enchant Weapon - Strength of Halazzi
-			i(243970),	-- Enchant Weapon - Jan'alai's Precision
-			i(243971),	-- Enchant Weapon - Jan'alai's Precision
-			i(243972),	-- Enchant Weapon - Berserker's Rage
-			i(243973),	-- Enchant Weapon - Berserker's Rage
-			i(243974),	-- Enchant Chest - Mark of the Rootwarden
-			i(243975),	-- Enchant Chest - Mark of the Rootwarden
-			i(243976),	-- Enchant Chest - Mark of the Worldsoul
-			i(243977),	-- Enchant Chest - Mark of the Worldsoul
-			i(243978),	-- Enchant Helm - Blessing of Speed
-			i(243979),	-- Enchant Helm - Blessing of Speed
-			i(243980),	-- Enchant Helm - Empowered Blessing of Speed
-			i(243981),	-- Enchant Helm - Empowered Blessing of Speed
-			i(243982),	-- Enchant Boots - Shaladrassil's Roots
-			i(243983),	-- Enchant Boots - Shaladrassil's Roots
-			i(243984),	-- Enchant Ring - Nature's Wrath
-			i(243985),	-- Enchant Ring - Nature's Wrath
-			i(243986),	-- Enchant Ring - Nature's Fury
-			i(243987),	-- Enchant Ring - Nature's Fury
-			i(243988),	-- Enchant Shoulders - Nature's Grace
-			i(243989),	-- Enchant Shoulders - Nature's Grace
-			i(243990),	-- Enchant Shoulders - Amirdrassil's Grace
-			i(243991),	-- Enchant Shoulders - Amirdrassil's Grace
-			i(243992),	-- Enchant Tool - Haranir Finesse
-			i(243993),	-- Enchant Tool - Haranir Finesse
-			i(243994),	-- Enchant Tool - Haranir Multicrafting
-			i(243995),	-- Enchant Tool - Haranir Multicrafting
-			i(243996),	-- Enchant Weapon - Worldsoul Cradle
-			i(243997),	-- Enchant Weapon - Worldsoul Cradle
-			i(243998),	-- Enchant Weapon - Worldsoul Aegis
-			i(243999),	-- Enchant Weapon - Worldsoul Aegis
-			i(244000),	-- Enchant Weapon - Worldsoul Tenacity
-			i(244001),	-- Enchant Weapon - Worldsoul Tenacity
-			i(244002),	-- Enchant Chest - Mark of the Magister
-			i(244003),	-- Enchant Chest - Mark of the Magister
-			i(244004),	-- Enchant Helm - Rune of Avoidance
-			i(244005),	-- Enchant Helm - Rune of Avoidance
-			i(244006),	-- Enchant Helm - Empowered Rune of Avoidance
-			i(244007),	-- Enchant Helm - Empowered Rune of Avoidance
-			i(244008),	-- Enchant Boots - Farstrider's Hunt
-			i(244009),	-- Enchant Boots - Farstrider's Hunt
-			i(244010),	-- Enchant Ring - Thalassian Haste
-			i(244011),	-- Enchant Ring - Thalassian Haste
-			i(244012),	-- Enchant Ring - Thalassian Versatility
-			i(244013),	-- Enchant Ring - Thalassian Versatility
-			i(244014),	-- Enchant Ring - Silvermoon's Alacrity
-			i(244015),	-- Enchant Ring - Silvermoon's Alacrity
-			i(244016),	-- Enchant Ring - Silvermoon's Tenacity
-			i(244017),	-- Enchant Ring - Silvermoon's Tenacity
-			i(244018),	-- Enchant Shoulders - Thalassian Recovery
-			i(244019),	-- Enchant Shoulders - Thalassian Recovery
-			i(244020),	-- Enchant Shoulders - Silvermoon's Mending
-			i(244021),	-- Enchant Shoulders - Silvermoon's Mending
-			i(244022),	-- Enchant Tool - Sin'dorei Deftness
-			i(244023),	-- Enchant Tool - Sin'dorei Deftness
-			i(244024),	-- Enchant Tool - Ren'dorei Ingenuity
-			i(244025),	-- Enchant Tool - Ren'dorei Ingenuity
-			i(244026),	-- Enchant Weapon - Flames of the Sin'dorei
-			i(244027),	-- Enchant Weapon - Flames of the Sin'dorei
-			i(244028),	-- Enchant Weapon - Acuity of the Ren'dorei
-			i(244029),	-- Enchant Weapon - Acuity of the Ren'dorei
-			i(244030),	-- Enchant Weapon - Arcane Mastery
-			i(244031),	-- Enchant Weapon - Arcane Mastery
-			i(244032),	-- Illusory Adornment - Blooming Light \\ Enchant Shoulders - Blooming Light
-			i(244033),	-- Illusory Adornment - Blooming Light \\ Enchant Shoulders - Blooming Light
-			i(244034),	-- Illusory Adornment - Nature's Embrace \\ Enchant Shoulders - Nature's Embrace
-			i(244035),	-- Illusory Adornment - Nature's Embrace \\ Enchant Shoulders - Nature's Embrace
-			i(244036),	-- Illusory Adornment - Voidtouched \\ Enchant Shoulders - Voidtouched
-			i(244037),	-- Illusory Adornment - Voidtouched \\ Enchant Shoulders - Voidtouched
-			i(244056),	-- Gleeful Glamour - Haranir
-			i(244057),	-- Gleeful Glamour - Haranir
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(244174),	-- Refulgent Copper Rod
-			i(244175),	-- Runed Refulgent Copper Rod
-			i(244176),	-- Runed Brilliant Silver Rod
-			i(244177),	-- Runed Dazzling Thorium Rod
-			i(244178),	-- Thalassian Spellweaver's Wand
-			i(244179),	-- Magister's Grand Focus
+
+
 
 			-- QI
 			i(244194),	-- Torn-Out Page
@@ -1337,22 +1193,7 @@ root(ROOTS.Unsorted, {
 			i(246345),	-- Polearm
 			i(246371),	-- Ballista Bolt
 			-- Prof Know
-			i(246320),	-- Flicker of Midnight Alchemy Knowledge
-			i(246321),	-- Glimmer of Midnight Alchemy Knowledge
-			i(246322),	-- Flicker of Midnight Blacksmithing Knowledge
-			i(246323),	-- Glimmer of Midnight Blacksmithing Knowledge
-			i(246324),	-- Flicker of Midnight Enchanting Knowledge
-			i(246325),	-- Glimmer of Midnight Enchanting Knowledge
-			i(246326),	-- Flicker of Midnight Engineering Knowledge
-			i(246327),	-- Glimmer of Midnight Engineering Knowledge
-			i(246328),	-- Flicker of Midnight Inscription Knowledge
-			i(246329),	-- Glimmer of Midnight Inscription Knowledge
-			i(246330),	-- Flicker of Midnight Jewelcrafting Knowledge
-			i(246331),	-- Glimmer of Midnight Jewelcrafting Knowledge
-			i(246332),	-- Flicker of Midnight Leatherworking Knowledge
-			i(246333),	-- Glimmer of Midnight Leatherworking Knowledge
-			i(246334),	-- Flicker of Midnight Tailoring Knowledge
-			i(246335),	-- Glimmer of Midnight Tailoring Knowledge
+
 
 			-- QI
 			i(246374),	-- Juvenile Blood
@@ -2167,23 +2008,17 @@ root(ROOTS.Unsorted, {
 			i(256718),	-- Design: Stabilizing Gemstone Bandolier
 			i(256720),	-- Design: Stoic Eversong Diamond
 			i(256721),	-- Design: Voidstone Shielding Array
-			i(256737),	-- Formula: Enchant Chest - Mark of Nalorakk
-			i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching
-			i(256739),	-- Formula: Enchant Ring - Eyes of the Eagle
-			i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness
-			i(256741),	-- Formula: Enchant Weapon - Strength of Halazzi
-			i(256744),	-- Formula: Enchant Tool - Amani Perception
-			i(256746),	-- Formula: Smuggler's Enchanted Edge
-			i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots
-			i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace
-			i(256750),	-- Formula: Enchant Weapon - Worldsoul Cradle
-			i(256752),	-- Formula: Enchant Ring - Nature's Fury
-			i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance
-			i(256755),	-- Formula: Enchant Chest - Mark of the Magister
-			i(256757),	-- Formula: Enchant Weapon - Acuity of the Ren'dorei
-			i(256758),	-- Formula: Enchant Tool - Ren'dorei Ingenuity
-			i(256759),	-- Formula: Enchant Weapon - Flames of the Sin'dorei
-			i(256761),	-- Formula: Enchant Shoulders - Voidtouched
+
+
+
+
+
+
+
+
+
+
+
 
 			-- World Quest
 			i(256966),	-- Rootspeaker's Leafwraps \\ [PH] WQ - Armor - Mail WRIST - A
@@ -2562,9 +2397,9 @@ root(ROOTS.Unsorted, {
 			i(259365),	-- Pattern: Plush Haranir Leather Pillow
 			i(259366),	-- Design: Miniature Replica Haranir Mural
 			i(259369),	-- Design: Resplendent Highborne Statue
-			i(259370),	-- Formula: Rootflame Campfire
+
 			i(259372),	-- Design: Shining Sin'dorei Hourglass
-			i(259373),	-- Formula: Ren'dorei Postage Repository
+
 
 
 			-- Prey
@@ -3420,7 +3255,7 @@ root(ROOTS.Unsorted, {
 			i(263320),	-- Rope-Bound Amani Basket \\ Rope-bound Amani Basket
 
 			i(263999),	-- Midnight Cook's Shop Sign
-			i(264000),	-- Midnight Enchanter's Shop Sign
+
 			i(264001),	-- Midnight Engineer's Shop Sign
 			i(264002),	-- Midnight Fisher's Shop Sign
 			i(264003),	-- Midnight Herbalist's Shop Sign
@@ -3780,8 +3615,8 @@ root(ROOTS.Unsorted, {
 			i(258569),	-- Spring Blossom Gazebo
 			i(262449),	-- Embossed Sin'dorei Fur Rug
 
-			i(262458),	-- Animated Sin'dorei Pick
-			i(262459),	-- Animated Sin'dorei Hammer
+
+
 			i(262461),	-- Tenebrous Ren'dorei Armillary
 			i(262593),	-- Chic Silvermoon Pillow
 			i(262598),	-- Opened Sin'dorei Scroll
@@ -3903,11 +3738,11 @@ root(ROOTS.Unsorted, {
 			i(268032),	-- Conjured Illusory Adornment - Blooming Light
 			i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
 			i(268034),	-- Conjured Illusory Adornment - Voidtouched
-			i(268038),	-- Endless Codex of Blooming Light
-			i(268039),	-- Endless Codex of Nature's Grace
-			i(268041),	-- Endless Codex of the Voidtouched
-			i(268043),	-- Formula: Endless Codex of Nature's Grace
-			i(268044),	-- Formula: Endless Codex of the Voidtouched
+
+
+
+
+
 
 			-- Misc
 			i(268025),	-- Heavy Stein

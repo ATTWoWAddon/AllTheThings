@@ -4,6 +4,7 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
+		i(256739),	-- Formula: Enchant Ring - Eyes of the Eagle (RECIPE!)
 		n(TREASURES, {
 			o(539047, {	-- Abandoned Ritual Skull
 				["coord"] = { 44.7, 44.1, MAP.MIDNIGHT.ZULAMAN },

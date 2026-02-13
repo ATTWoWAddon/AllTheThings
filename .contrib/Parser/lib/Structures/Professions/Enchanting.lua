@@ -854,3 +854,77 @@ TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(445317),	-- Stormrider's Fury
 	}),
 });
+MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(471006),	-- Midnight Enchanting
+	r(1280952, {["collectible"] = false}),	-- Disenchant
+	r(1265669),	-- Artisan Enchanter's Moxie
+	r(1265677),	-- Concentration
+	r(1265703),	-- Ingenuity
+	r(1265616),	-- Knowledge
+	r(1265602),	-- Multicraft
+	r(1265653),	-- Quality
+	r(471042),	-- Recraft Equipment
+	r(1265695),	-- Resourcefulness
+	r(1265685),	-- Skill
+	r(1265661),	-- Sparks
+	n(ARMOR_ENCHANTMENTS, {
+		r(1236070),	-- Enchant Helm - Blessing of Speed
+		r(1236055),	-- Enchant Helm - Hex of Leeching
+		r(1236083),	-- Enchant Helm - Rune of Avoidance
+		r(1236058),	-- Enchant Ring - Amani Mastery
+		r(1236073),	-- Enchant Ring - Nature's Wrath
+		r(1236086),	-- Enchant Ring - Thalassian Haste
+		r(1236087),	-- Enchant Ring - Thalassian Versatility
+		r(1236061),	-- Enchant Shoulders - Flight of the Eagle
+		r(1236075),	-- Enchant Shoulders - Nature's Grace
+		r(1236090),	-- Enchant Shoulders - Thalassian Recovery
+	}),
+	n(DECOR, {
+		r(1246904),	-- Ensorcelled Broom
+		r(1246905),	-- Font of Gleaming Water
+	}),
+	filter(MISC, {
+		r(1280401),	-- Dawn Shatter
+		r(1236098),	-- Illusory Adornment - Blooming Light
+		r(1280394),	-- Radiant Shatter
+		r(1236491),	-- Thalassian Phoenix Oil
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1236486),	-- Runed Refulgent Copper Rod
+	}),
+	n(WEAPONS, {
+		r(1236489),	-- Thalassian Spellweaver's Wand
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(1236097),	-- Enchant Weapon - Arcane Mastery
+		r(1236067),	-- Enchant Weapon - Berserker's Rage
+		r(1236066),	-- Enchant Weapon - Jan'alai's Precision
+		r(1236080),	-- Enchant Weapon - Worldsoul Aegis
+	}),
+});
+MID_JENNARA_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(1236461),	-- Gleeful Glamour - Blood Elf
+	r(1236463),	-- Gleeful Glamour - Dark Iron Dwarf
+	r(1236465),	-- Gleeful Glamour - Draenei
+	r(1236466),	-- Gleeful Glamour - Dwarf
+	r(1236594),	-- Gleeful Glamour - Earthen
+	r(1236467),	-- Gleeful Glamour - Gnome
+	r(1236468),	-- Gleeful Glamour - Goblin
+	r(1236469),	-- Gleeful Glamour - Highmountain Tauren
+	r(1236470),	-- Gleeful Glamour - Human
+	r(1236471),	-- Gleeful Glamour - Kul Tiran
+	r(1236472),	-- Gleeful Glamour - Lightforged Draenei
+	r(1236473),	-- Gleeful Glamour - Mag'har Orc
+	r(1236474),	-- Gleeful Glamour - Mechagnome
+	r(1236475),	-- Gleeful Glamour - Night Elf
+	r(1236476),	-- Gleeful Glamour - Nightborne
+	r(1236477),	-- Gleeful Glamour - Orc
+	r(1236478),	-- Gleeful Glamour - Pandaren
+	r(1236479),	-- Gleeful Glamour - Tauren
+	r(1236480),	-- Gleeful Glamour - Troll
+	r(1236481),	-- Gleeful Glamour - Undead
+	r(1236482),	-- Gleeful Glamour - Void Elf
+	r(1236483),	-- Gleeful Glamour - Vulpera
+	r(1236484),	-- Gleeful Glamour - Worgen
+	r(1236485),	-- Gleeful Glamour - Zandalari Troll
+});

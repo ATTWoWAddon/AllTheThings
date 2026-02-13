@@ -998,6 +998,10 @@ is(0, 1254551);						-- Path of Dark Dereliction
 is(0, 1254555);						-- Path of Unyielding Blight
 is(0, 1254557);						-- Path of the Crowning Pinnacle
 
+ihqt(262645, 93794);				-- Beyond the Event Horizon: Alchemy
+ihqt(262644, 93795);				-- Beyond the Event Horizon: Blacksmithing
+ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
+
 ------------
 -- UNUSED --
 ------------

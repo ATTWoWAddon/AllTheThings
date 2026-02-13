@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				q(91796, {	-- Special Assignment: Ours Once More!
-					["coord"] = { 73.6, 35.6, 2536 },	-- Atal'Aman
+					["coord"] = { 73.6, 35.6, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				}),
 				q(91801, {	-- Twilight's Bane
 					["coord"] = { 38.7, 73.1, MAP.MIDNIGHT.ZULAMAN },

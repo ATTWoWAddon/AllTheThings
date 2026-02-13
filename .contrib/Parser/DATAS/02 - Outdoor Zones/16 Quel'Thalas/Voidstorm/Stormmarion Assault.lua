@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 91719,
 					["isWeekly"] = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
 					["groups"] = {
+						i(256761),	-- Formula: Enchant Shoulders - Voidtouched (RECIPE!)
 					},
 				}),
 			}),

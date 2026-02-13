@@ -3,6 +3,7 @@
 -----------------------------------------------------
 local DF_ENCHANTING_KNOWLEDGE = 2030;
 local TWW_ENCHANTING_KNOWLEDGE = 2787;
+local MID_ENCHANTING_KNOWLEDGE = 3152;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
@@ -960,120 +961,31 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42787, {	-- Enchanting at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
-				["groups"] = {
-				},
+				i(264000),	-- Midnight Enchanter's Shop Sign (DECOR!)
+			}),
+		}),
+		n(QUESTS, {
+		}),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["groups"] = sharedData({ ["cost"] = {{ "c", MID_ENCHANTING_KNOWLEDGE, 1 }} }, {
+				r(1236057),	-- Enchant Boots - Lynx's Dexterity
+				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
+				r(1236071),	-- Enchant Helm - Empowered Blessing of Speed
+				r(1236088),	-- Enchant Ring - Silvermoon's Alacrity
+				r(1236060),	-- Enchant Ring - Zul'jin's Mastery
+				r(1236091),	-- Enchant Shoulders - Silvermoon's Mending
+				r(1236064),	-- Enchant Tool - Amani Resourcefulness
+				r(1236077),	-- Enchant Tool - Haranir Finesse
+				r(1236092),	-- Enchant Tool - Sin'dorei Deftness
+				r(1236490),	-- Magister's Grand Focus
+				r(1236492),	-- Oil of Dawn
+				r(1236487),	-- Runed Brilliant Silver Rod
+				r(1235731),	-- Shatter Essence
 			}),
 		}),
 		--[[
-		n(QUESTS, sharedData({
-			["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
-			["coord"] = { 52.7, 71.1, DORNOGAL },
-			["isWeekly"] = true,
-			["groups"] = {
-				i(227667),	-- Algari Enchanter's Folio
-			},
-		},{
-			q(84086),	-- A Rare Necessity
-			q(84084),	-- Just a Pinch
-			q(84085),	-- The Power of Potential
-		})),
-		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
-				r(445378),	-- Algari Ingenuity
-				r(445403),	-- Authority of Fiery Resolve
-				r(445336),	-- Authority of Storms
-				r(445330),	-- Chant of Armored Speed
-				r(445395),	-- Concentration Concentrate
-				r(445333),	-- Crystalline Radiance
-				r(445388),	-- Cursed Haste
-				r(445396),	-- Defender's March
-				r(445367),	-- Gleeful Glamour - Blood Elf
-				r(445400),	-- Gleeful Glamour - Dark Iron Dwarf
-				r(445391),	-- Gleeful Glamour - Draenei
-				r(445402),	-- Gleeful Glamour - Dwarf
-				r(445362),	-- Gleeful Glamour - Gnome
-				r(445332),	-- Gleeful Glamour - Goblin
-				r(445377),	-- Gleeful Glamour - Highmountain Tauren
-				r(445352),	-- Gleeful Glamour - Human
-				r(445342),	-- Gleeful Glamour - Kul Tiran
-				r(445343),	-- Gleeful Glamour - Lightforged Draenei
-				r(445370),	-- Gleeful Glamour - Mag'har Orc
-				r(445357),	-- Gleeful Glamour - Mechagnome
-				r(445363),	-- Gleeful Glamour - Night Elf
-				r(445390),	-- Gleeful Glamour - Nightborne
-				r(445319),	-- Gleeful Glamour - Orc
-				r(445366),	-- Gleeful Glamour - Tauren
-				r(445326),	-- Gleeful Glamour - Troll
-				r(445350),	-- Gleeful Glamour - Undead
-				r(445356),	-- Gleeful Glamour - Void Elf
-				r(445329),	-- Gleeful Glamour - Vulpera
-				r(445397),	-- Gleeful Glamour - Worgen
-				r(445345),	-- Gleeful Glamour - Zandalari Troll
-				r(445318),	-- Oil of Beledar's Grace
-				r(445372),	-- Runed Ironclaw Rod
-				r(445355),	-- Scepter of Radiant Magics
-				r(445466),	-- Shatter Essence
-			}),
-		}),
 		n(TREASURES, {
-			o(456006, {	-- Animated Enchanting Dust
-				["coord"] = { 67.2, 65.9, THE_RINGING_DEEPS },
-				["questID"] = 83861,
-				["groups"] = {
-					i(226287),	-- Animated Enchanting Dust
-				},
-			}),
-			o(456003, {	-- Book of Dark Magic
-				["coord"] = { 61.7, 22.0, NERUBAR },
-				["questID"] = 83864,
-				["groups"] = {
-					i(226290),	-- Book of Dark Magic
-				},
-			}),
-			o(456004, {	-- Enchanted Arathi Scroll
-				["coord"] = { 48.6, 64.5, HALLOWFALL },
-				["questID"] = 83863,
-				["groups"] = {
-					i(226289),	-- Enchanted Arathi Scroll
-				},
-			}),
-			o(456005, {	-- Essence of Holy Fire
-				["coord"] = { 40.1, 70.5, HALLOWFALL },
-				["questID"] = 83862,
-				["groups"] = {
-					i(226288),	-- Essence of Holy Fire
-				},
-			}),
-			o(456009, {	-- Grinded Earthen Gem
-				["coord"] = { 57.6, 61.5, ISLE_OF_DORN },
-				["questID"] = 83856,
-				["groups"] = {
-					i(226284),	-- Grinded Earthen Gem
-				},
-			}),
-			o(456008, {	-- Silver Dornogal Rod
-				["coord"] = { 58.0, 56.9, DORNOGAL },
-				["questID"] = 83859,
-				["groups"] = {
-					i(226285),	-- Silver Dornogal Rod
-				},
-			}),
-			o(456007, {	-- Soot-Coated Orb
-				["coord"] = { 44.6, 22.1, THE_RINGING_DEEPS },
-				["questID"] = 83860,
-				["groups"] = {
-					i(226286),	-- Soot-Coated Orb
-				},
-			}),
-			o(456002, {	-- Void Shard
-				["coord"] = { 57.3, 44.0, AZJ_KAHET },
-				["questID"] = 83865,
-				["groups"] = {
-					i(226291),	-- Void Shard
-				},
-			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,

@@ -20,12 +20,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90749, {	-- Our Mutual Enemy
 						["sourceQuests"] = { 86710 },	-- The Line Must be Drawn Here
 						["provider"] = { "n", 236436 },	-- Lady Liadrin
-						["coord"] = { 60.1, 81.5, 2536 },	-- Atal'Aman
+						["coord"] = { 60.1, 81.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					}),
 					q(86868, {	-- Goodwill Tour
 						["sourceQuests"] = { 90749 },	-- Our Mutual Enemy
 						["provider"] = { "n", 236485 },	-- Lady Liadrin
-						["coord"] = { 5.5, 47.0, 2536 },	-- Atal'Aman
+						["coord"] = { 5.5, 47.0, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"]	= {
 							i(248554),	-- Twilightbreaker's Gauntlets
 							i(248552),	-- Twilightbreaker's Gloves
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86711, {	-- Amani Clarion Call
 						["sourceQuests"] = { 90749 },	-- Our Mutual Enemy
 						["provider"] = { "n", 236468 },	-- Zul'Jarra
-						["coord"] = { 5.7, 47.8, 2536 },	-- Atal'Aman
+						["coord"] = { 5.7, 47.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					}),
 					q(86717, {	-- Show Us Your Worth
 						["sourceQuests"] = {
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86868,	-- Goodwill Tour
 						},
 						["provider"] = { "n", 236559 },	-- Zul'Jarra
-						["coord"] = { 46.3, 48.8, 2536 },	-- Atal'Aman
+						["coord"] = { 46.3, 48.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					}),
 					q(86719, {	-- Important Amani
 						["sourceQuests"] = {
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86868,	-- Goodwill Tour
 						},
 						["provider"] = { "n", 236558 },	-- Zul'jan
-						["coord"] = { 46.3, 48.4, 2536 },	-- Atal'Aman
+						["coord"] = { 46.3, 48.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							o(539207, {	--
 								i(237768),	-- Hash'ey Staff (QI!)
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86717,	-- Show Us Your Worth
 						},
 						["provider"] = { "n", 236522 },	-- Zul'jan
-						["coord"] = { 16.6, 20.5, 2536 },	-- Atal'Aman
+						["coord"] = { 16.6, 20.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							i(237767),	-- Lightwood Weapon (QI!)
 							i(248555),	--
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86717,	-- Show Us Your Worth
 						},
 						["provider"] = { "n", 236522 },	-- Zul'jan
-						["coord"] = { 16.6, 20.5, 2536 },	-- Atal'Aman
+						["coord"] = { 16.6, 20.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					}),
 					q(86712, {	-- The Amani Stand Strong
 						["sourceQuests"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86717,	-- Show Us Your Worth
 						},
 						["provider"] = { "n", 236540 },	-- Zul'jan
-						["coord"] = { 22.5, 79.9, 2536 },	-- Atal'Aman
+						["coord"] = { 22.5, 79.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							i(237501),	-- Lightwood Weapon (QI!)
 						},
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86721,	-- Everything We Worked For
 						},
 						["provider"] = { "n", 236542 },	-- Lady Liadrin
-						["coord"] = { 23.1, 79.8, 2536 },	-- Atal'Aman
+						["coord"] = { 23.1, 79.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					}),
 					q(86718, {	-- Twilight Bled
 						["sourceQuests"] = {
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							86721,	-- Everything We Worked For
 						},
 						["provider"] = { "n", 236541 },	-- Zul'jarra
-						["coord"] = { 23.1, 79.8, 2536 },	-- Atal'Aman
+						["coord"] = { 23.1, 79.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							i(260470),	-- Bloodspattered Bindings
 							i(260469),	-- Bloodspattered Cuffs
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							--??,	--
 						},
 						["provider"] = { "n", 236587 },	-- Zul'jarra
-						["coord"] = { 47.6, 46.8, 2536 },	-- Atal'Aman
+						["coord"] = { 47.6, 46.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							i(248563),	-- Zulguard's Shoes
 							i(248564),	-- Zulguard's Stompers
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86722, {	-- Heart of the Amani
 						["sourceQuests"] = { 86720 },	-- Break the Blade
 						["provider"] = { "n", 236601 },	-- Zul'jarra
-						["coord"] = { 47.8, 47.8, 2536 },	-- Atal'Aman
+						["coord"] = { 47.8, 47.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							--spell(1239146),	-- Guest of Zul'Aman
 						},
@@ -1091,12 +1091,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93433, {	-- Shrine, Sealed, Delivered
 				["sourceQuests"] = { 93440 },	-- Personal History
 				["provider"] = { "n", 254827 },	-- Elder Doru
-				["coord"] = { 46.3, 47.3, 2536 },	-- Atal'Aman
+				["coord"] = { 46.3, 47.3, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 			}),
 			q(93432, {	-- Swords to Plowshares
 				["sourceQuests"] = { 93440 },	-- Personal History
 				["provider"] = { "n", 254783 },	-- Torundo the Grizzled
-				["coord"] = { 46.3, 47.3, 2536 },	-- Atal'Aman
+				["coord"] = { 46.3, 47.3, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				["groups"] = {
 					i(259204),	-- Raider Ash Remains (QI!)
 				},
@@ -1107,7 +1107,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					93432,	-- Swords to Plowshares
 				},
 				["provider"] = { "n", 254827 },	-- Elder Doru
-				["coord"] = { 45.9, 47.1, 2536 },	-- Atal'Aman
+				["coord"] = { 45.9, 47.1, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				["groups"] = {
 					i(259967),	-- Amani Hex Stave (QI!)
 				},
@@ -1118,7 +1118,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					93432,	-- Swords to Plowshares
 				},
 				["provider"] = { "n", 254783 },	-- Torundo the Grizzled
-				["coord"] = { 45.9, 47.5, 2536 },	-- Atal'Aman
+				["coord"] = { 45.9, 47.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 			}),
 			q(93437, {	-- In Their Own Blood
 				["sourceQuests"] = {
@@ -1126,7 +1126,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					93436,	-- Hex the Innocent, Disrupt the Guilty
 				},
 				["provider"] = { "n", 254783 },	-- Torundo the Grizzled
-				["coord"] = { 46.0, 47.5, 2536 },	-- Atal'Aman
+				["coord"] = { 46.0, 47.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 			}),
 		}),
 	}),

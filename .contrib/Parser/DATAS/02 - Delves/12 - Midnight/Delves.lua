@@ -120,6 +120,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)
 		}),
 		filter(RECIPES, {
+			i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
+			i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
+			i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
+			i(256752),	-- Formula: Enchant Ring - Nature's Fury (RECIPE!)
+			i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
+			i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
+			i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
 			i(247425),	-- Recipe: Riftstone (RECIPE!)
 			i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
 		}),
@@ -349,7 +356,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 						i(252265),	-- Hexed Potatoad Mucus (TOY!)
 					},
 				}),
-					
+
 			}),
 			n(REWARDS, {
 				n(DECOR, {

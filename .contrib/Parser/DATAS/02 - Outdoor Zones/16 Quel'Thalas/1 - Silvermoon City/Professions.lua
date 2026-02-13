@@ -173,30 +173,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 			}),
+			--]]
 			prof(ENCHANTING, {
-				n(219085, {	-- Nagad <Enchanting Trainer>
-					["coord"] = { 52.9, 71.3, DORNOGAL },
-					["groups"] = TWW_ENCHANTING,
+				n(254051, {	-- Jennara <Proprietress of Positively Jenchanting>
+					["coord"] = { 39.5, 51.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_JENNARA_ENCHANTING,
 				}),
-				n(219086, {	-- Llande <Enchanting Supplies>
-					["coord"] = { 52.3, 71.7, DORNOGAL },
+				n(243349, {	-- Dolothos <Enchanting Trainer>
+					["coord"] = { 48.0, 53.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_ENCHANTING,
+				}),
+				n(243350, {	-- Lyna <Enchanting Supplies>
+					["coord"] = { 47.9, 53.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(227208),	-- Bismuth Rod
-						i(220789, {	-- Nascent Gilded Harbinger Crest
-							["cost"] = { { "c", GILDED_HARBINGER_CREST, 60 } },
-							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						i(264000, {	-- Midnight Enchanter's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42787,	-- Enchanting at Midnight
 						}),
-						i(220790, {	-- Nascent Runed Harbinger Crest
-							["cost"] = { { "c", RUNED_HARBINGER_CREST, 45 } },
-							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-						}),
-						i(220788, {	-- Nascent Weathered Harbinger Crest
-							["cost"] = { { "c", WEATHERED_HARBINGER_CREST, 30 } },
-							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-						}),
+						i(244174),	-- Refulgent Copper Rod
 					},
 				}),
 			}),
+			--[[
 			prof(ENGINEERING, {
 				n(219099, {	-- Machinist Arhdas <Engineering Trainer>
 					["coord"] = { 49.2, 55.9, DORNOGAL },

@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["cost"] = { { "c", BRIMMING_ARCANA, 100 } },
 							}),
 						}, {	-- Host
-							i(259367, {	-- Formula: Enchanted Sin'dorei Pick (RECIPE!)
+							i(259367, {	-- Formula: Animated Sin'dorei Pick (RECIPE!)
 								["cost"] = {
 									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
 									{ "c", BRIMMING_ARCANA, 200 },

@@ -207,8 +207,194 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	--[[
 	prof(COOKING, {
 	}),
+	--]]
 	prof(ENCHANTING, {
+		header(HEADERS.Spell, 1280952, {	-- Disenchant
+			i(243605),	-- Dawn Crystal+
+			i(243606),	-- Dawn Crystal++
+			i(243599),	-- Eversinging Dust+
+			i(243600),	-- Eversinging Dust++
+			i(243602),	-- Radiant Shard+
+			i(243603),	-- Radiant Shard++
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(244008),	-- Enchant Boots - Farstrider's Hunt+
+			i(244009),	-- Enchant Boots - Farstrider's Hunt++
+			i(243952),	-- Enchant Boots - Lynx's Dexterity+
+			i(243953),	-- Enchant Boots - Lynx's Dexterity++
+			i(243982),	-- Enchant Boots - Shaladrassil's Roots+
+			i(243983),	-- Enchant Boots - Shaladrassil's Roots++
+			i(243946),	-- Enchant Chest - Mark of Nalorakk+
+			i(243947),	-- Enchant Chest - Mark of Nalorakk++
+			i(244002),	-- Enchant Chest - Mark of the Magister+
+			i(244003),	-- Enchant Chest - Mark of the Magister++
+			i(243974),	-- Enchant Chest - Mark of the Rootwarden+
+			i(243975),	-- Enchant Chest - Mark of the Rootwarden++
+			i(243976),	-- Enchant Chest - Mark of the Worldsoul+
+			i(243977),	-- Enchant Chest - Mark of the Worldsoul++
+			i(243978),	-- Enchant Helm - Blessing of Speed+
+			i(243979),	-- Enchant Helm - Blessing of Speed++
+			i(243980),	-- Enchant Helm - Empowered Blessing of Speed+
+			i(243981),	-- Enchant Helm - Empowered Blessing of Speed++
+			i(243950),	-- Enchant Helm - Empowered Hex of Leeching+
+			i(243951),	-- Enchant Helm - Empowered Hex of Leeching++
+			i(244006),	-- Enchant Helm - Empowered Rune of Avoidance+
+			i(244007),	-- Enchant Helm - Empowered Rune of Avoidance++
+			i(243948),	-- Enchant Helm - Hex of Leeching+
+			i(243949),	-- Enchant Helm - Hex of Leeching++
+			i(244004),	-- Enchant Helm - Rune of Avoidance+
+			i(244005),	-- Enchant Helm - Rune of Avoidance++
+			i(243954),	-- Enchant Ring - Amani Mastery+
+			i(243955),	-- Enchant Ring - Amani Mastery++
+			i(243956),	-- Enchant Ring - Eyes of the Eagle+
+			i(243957),	-- Enchant Ring - Eyes of the Eagle++
+			i(243986),	-- Enchant Ring - Nature's Fury+
+			i(243987),	-- Enchant Ring - Nature's Fury++
+			i(243984),	-- Enchant Ring - Nature's Wrath+
+			i(243985),	-- Enchant Ring - Nature's Wrath++
+			i(244014),	-- Enchant Ring - Silvermoon's Alacrity+
+			i(244015),	-- Enchant Ring - Silvermoon's Alacrity++
+			i(244016),	-- Enchant Ring - Silvermoon's Tenacity+
+			i(244017),	-- Enchant Ring - Silvermoon's Tenacity++
+			i(244010),	-- Enchant Ring - Thalassian Haste+
+			i(244011),	-- Enchant Ring - Thalassian Haste++
+			i(244012),	-- Enchant Ring - Thalassian Versatility+
+			i(244013),	-- Enchant Ring - Thalassian Versatility++
+			i(243958),	-- Enchant Ring - Zul'jin's Mastery+
+			i(243959),	-- Enchant Ring - Zul'jin's Mastery++
+			i(243962),	-- Enchant Shoulders - Akil'zon's Celerity+
+			i(243963),	-- Enchant Shoulders - Akil'zon's Celerity++
+			i(243990),	-- Enchant Shoulders - Amirdrassil's Grace+
+			i(243991),	-- Enchant Shoulders - Amirdrassil's Grace++
+			i(243960),	-- Enchant Shoulders - Flight of the Eagle+
+			i(243961),	-- Enchant Shoulders - Flight of the Eagle++
+			i(243988),	-- Enchant Shoulders - Nature's Grace+
+			i(243989),	-- Enchant Shoulders - Nature's Grace++
+			i(244020),	-- Enchant Shoulders - Silvermoon's Mending+
+			i(244021),	-- Enchant Shoulders - Silvermoon's Mending++
+			i(244018),	-- Enchant Shoulders - Thalassian Recovery+
+			i(244019),	-- Enchant Shoulders - Thalassian Recovery++
+		}),
+		n(DECOR, {
+			i(262459),	-- Animated Sin'dorei Hammer (DECOR!)
+			i(262458),	-- Animated Sin'dorei Pick (DECOR!)
+			i(268038),	-- Endless Codex of Blooming Light (DECOR!)
+			i(268039),	-- Endless Codex of Nature's Grace (DECOR!)
+			i(268041),	-- Endless Codex of the Voidtouched (DECOR!)
+			i(262450),	-- Ensorcelled Broom (DECOR!)
+			i(262455),	-- Font of Gleaming Water (DECOR!)
+			i(262468),	-- Ren'dorei Postal Repository (DECOR!)
+			i(262590),	-- Rootflame Campfire (DECOR!)
+			i(246693),	-- Self-Pouring Thalassian Sunwine (DECOR!)
+			i(262470),	-- Spellbound Tome of Thalassian Magics (DECOR!)
+		}),
+		filter(MISC, {
+			i(243773),	-- Gleeful Glamour - Blood Elf+
+			i(243797),	-- Gleeful Glamour - Blood Elf++
+			i(243774),	-- Gleeful Glamour - Dark Iron Dwarf+
+			i(243798),	-- Gleeful Glamour - Dark Iron Dwarf++
+			i(243775),	-- Gleeful Glamour - Draenei+
+			i(243799),	-- Gleeful Glamour - Draenei++
+			i(243776),	-- Gleeful Glamour - Dwarf+
+			i(243800),	-- Gleeful Glamour - Dwarf++
+			i(243777),	-- Gleeful Glamour - Earthen+
+			i(243801),	-- Gleeful Glamour - Earthen++
+			i(243778),	-- Gleeful Glamour - Gnome+
+			i(243802),	-- Gleeful Glamour - Gnome++
+			i(243779),	-- Gleeful Glamour - Goblin+
+			i(243803),	-- Gleeful Glamour - Goblin++
+			i(244056),	-- Gleeful Glamour - Haranir+
+			i(244057),	-- Gleeful Glamour - Haranir++
+			i(243780),	-- Gleeful Glamour - Highmountain Tauren+
+			i(243804),	-- Gleeful Glamour - Highmountain Tauren++
+			i(243781),	-- Gleeful Glamour - Human+
+			i(243805),	-- Gleeful Glamour - Human++
+			i(243782),	-- Gleeful Glamour - Kul Tiran+
+			i(243806),	-- Gleeful Glamour - Kul Tiran++
+			i(243783),	-- Gleeful Glamour - Lightforged Draenei+
+			i(243807),	-- Gleeful Glamour - Lightforged Draenei++
+			i(243784),	-- Gleeful Glamour - Mag'har Orc+
+			i(243808),	-- Gleeful Glamour - Mag'har Orc++
+			i(243785),	-- Gleeful Glamour - Mechagnome+
+			i(243809),	-- Gleeful Glamour - Mechagnome++
+			i(243786),	-- Gleeful Glamour - Night Elf+
+			i(243810),	-- Gleeful Glamour - Night Elf++
+			i(243787),	-- Gleeful Glamour - Nightborne+
+			i(243811),	-- Gleeful Glamour - Nightborne++
+			i(243788),	-- Gleeful Glamour - Orc+
+			i(243812),	-- Gleeful Glamour - Orc++
+			i(243789),	-- Gleeful Glamour - Pandaren+
+			i(243813),	-- Gleeful Glamour - Pandaren++
+			i(243790),	-- Gleeful Glamour - Tauren+
+			i(243814),	-- Gleeful Glamour - Tauren++
+			i(243791),	-- Gleeful Glamour - Troll+
+			i(243815),	-- Gleeful Glamour - Troll++
+			i(243792),	-- Gleeful Glamour - Undead+
+			i(243816),	-- Gleeful Glamour - Undead++
+			i(243793),	-- Gleeful Glamour - Void Elf+
+			i(243817),	-- Gleeful Glamour - Void Elf++
+			i(243794),	-- Gleeful Glamour - Vulpera+
+			i(243818),	-- Gleeful Glamour - Vulpera++
+			i(243795),	-- Gleeful Glamour - Worgen+
+			i(243819),	-- Gleeful Glamour - Worgen++
+			i(243796),	-- Gleeful Glamour - Zandalari Troll+
+			i(243820),	-- Gleeful Glamour - Zandalari Troll++
+			i(244032),	-- Illusory Adornment - Blooming Light+
+			i(244033),	-- Illusory Adornment - Blooming Light++
+			i(244034),	-- Illusory Adornment - Nature's Embrace+
+			i(244035),	-- Illusory Adornment - Nature's Embrace++
+			i(244036),	-- Illusory Adornment - Voidtouched+
+			i(244037),	-- Illusory Adornment - Voidtouched++
+			i(243735),	-- Oil of Dawn+
+			i(243736),	-- Oil of Dawn++
+			i(243737),	-- Smuggler's Enchanted Edge+
+			i(243738),	-- Smuggler's Enchanted Edge++
+			i(243733),	-- Thalassian Phoenix Oil+
+			i(243734),	-- Thalassian Phoenix Oil++
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(244176),	-- Runed Brilliant Silver Rod
+			i(244177),	-- Runed Dazzling Thorium Rod
+			i(244175),	-- Runed Refulgent Copper Rod
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			i(243964),	-- Enchant Tool - Amani Perception+
+			i(243965),	-- Enchant Tool - Amani Perception++
+			i(243966),	-- Enchant Tool - Amani Resourcefulness+
+			i(243967),	-- Enchant Tool - Amani Resourcefulness++
+			i(243992),	-- Enchant Tool - Haranir Finesse+
+			i(243993),	-- Enchant Tool - Haranir Finesse++
+			i(243994),	-- Enchant Tool - Haranir Multicrafting+
+			i(243995),	-- Enchant Tool - Haranir Multicrafting++
+			i(244024),	-- Enchant Tool - Ren'dorei Ingenuity+
+			i(244025),	-- Enchant Tool - Ren'dorei Ingenuity++
+			i(244022),	-- Enchant Tool - Sin'dorei Deftness+
+			i(244023),	-- Enchant Tool - Sin'dorei Deftness++
+			i(244028),	-- Enchant Weapon - Acuity of the Ren'dorei+
+			i(244029),	-- Enchant Weapon - Acuity of the Ren'dorei++
+			i(244030),	-- Enchant Weapon - Arcane Mastery+
+			i(244031),	-- Enchant Weapon - Arcane Mastery++
+			i(243972),	-- Enchant Weapon - Berserker's Rage+
+			i(243973),	-- Enchant Weapon - Berserker's Rage++
+			i(244026),	-- Enchant Weapon - Flames of the Sin'dorei+
+			i(244027),	-- Enchant Weapon - Flames of the Sin'dorei++
+			i(243970),	-- Enchant Weapon - Jan'alai's Precision+
+			i(243971),	-- Enchant Weapon - Jan'alai's Precision++
+			i(243968),	-- Enchant Weapon - Strength of Halazzi+
+			i(243969),	-- Enchant Weapon - Strength of Halazzi++
+			i(243998),	-- Enchant Weapon - Worldsoul Aegis+
+			i(243999),	-- Enchant Weapon - Worldsoul Aegis++
+			i(243996),	-- Enchant Weapon - Worldsoul Cradle+
+			i(243997),	-- Enchant Weapon - Worldsoul Cradle++
+			i(244000),	-- Enchant Weapon - Worldsoul Tenacity+
+			i(244001),	-- Enchant Weapon - Worldsoul Tenacity++
+		}),
+		n(WEAPONS, {
+			i(244179),	-- Magister's Grand Focus
+			i(244178),	-- Thalassian Spellweaver's Wand
+		}),
 	}),
+	--[[
 	prof(ENGINEERING, {
 	}),]]--
 	prof(FISHING, {

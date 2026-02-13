@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			fp(3128, {	-- Atal'Aman, Zul'Aman
 				--["sourceQuest"] = { xx },	-- ??
-				["coord"] = { 39.8, 40.8, 2536 },	-- Atal'Aman
+				["coord"] = { 39.8, 40.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				["cr"] = 241031,	-- Eagletender Po'vari
 			}),
 			fp(3129, {	-- Shadebasin Watch, Zul'Aman
