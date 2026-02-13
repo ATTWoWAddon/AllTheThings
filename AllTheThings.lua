@@ -1423,7 +1423,7 @@ function app:GetDataCache()
 	-- D Y N A M I C   C A T E G O R I E S --
 	-----------------------------------------
 	if app.IsClassic and app.Windows then
-		local keys,sortedList = {},{};
+		local keys = {};
 		for suffix,window in pairs(app.WindowDefinitions) do
 			if window and window.IsDynamicCategory and not window.DynamicCategoryHeader then
 				keys[suffix] = window;
@@ -1434,14 +1434,15 @@ function app:GetDataCache()
 				keys[suffix] = window;
 			end
 		end
+		local categories = {};
 		for suffix,window in pairs(keys) do
-			tinsert(sortedList, suffix);
+			tinsert(categories, app.CreateDynamicCategory(suffix, {
+				sourceIgnored = 1
+			}));
 		end
-		app.Sort(sortedList, app.SortDefaults.Strings);
-		for i,suffix in ipairs(sortedList) do
-			local dynamicCategory = app.CreateDynamicCategory(suffix);
-			dynamicCategory.sourceIgnored = 1;
-			tinsert(g, dynamicCategory);
+		app.Sort(categories, app.SortDefaults.name);
+		for i,category in ipairs(categories) do
+			tinsert(g, category);
 		end
 	end
 
