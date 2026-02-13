@@ -23,7 +23,6 @@ local IsSpellKnown = IsSpellKnown;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Pet Abilities and Pet Types
-app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];

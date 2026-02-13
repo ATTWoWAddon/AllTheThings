@@ -281,24 +281,6 @@ if C_PetJournal_GetPetStats then
 	end);
 end
 
-local C_PetBattles_GetAbilityInfoByID
-	= C_PetBattles.GetAbilityInfoByID
-if C_PetBattles_GetAbilityInfoByID then
-	app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
-		["name"] = function(t)
-			return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-		["icon"] = function(t)
-			return select(3, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-		["description"] = function(t)
-			return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-		end,
-	});
-else
-	app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-end
-
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	["name"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
