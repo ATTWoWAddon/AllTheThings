@@ -1581,18 +1581,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return t.isWorldQuest and (GetQuestTimeLeftMinutes(t.questID) or 0) * 60 or nil;
 	end,
 
-	-- Defaults (Mostly used for nesting quests under their npcs for Pet Battles)
-	qgParent = function(t)
-		local parent = t.parent
-		if not parent then return end
-
-		local qg = parent.npcID
-		if qg and qg > 0 then return qg; end
-	end,
-	coords = function(t)
-		if t.qgParent then return t.parent.coords; end
-	end,
-
 	-- These are Retail fields that aren't used in Classic... yet?
 	missingSourceQuests = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
