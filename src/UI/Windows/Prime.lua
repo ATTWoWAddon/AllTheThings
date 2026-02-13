@@ -105,10 +105,10 @@ app:CreateWindow("Prime", {
 				app:GetWindow("Sourceless"):ProcessCommand(args, params);
 				return true;
 			elseif cmd:sub(1, 4) == "mini" then
-				app:ToggleMiniListForCurrentZone();
+				app.ToggleMiniListForCurrentZone();
 				return true;
 			elseif cmd:sub(1, 6) == "mapid:" then
-				app.ToggleMiniListForCurrentZone(tonumber(cmd:sub(7)), true)
+				app.ToggleMiniListForCurrentZone(tonumber(cmd:sub(7)))
 				return true;
 			else
 				if cmd == "import" then

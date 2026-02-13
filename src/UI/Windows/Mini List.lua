@@ -530,6 +530,9 @@ app:CreateWindow("MiniList", {
 			end
 			if self:IsVisible() then
 				app.CallbackHandlers.AfterCombatOrDelayedCallback(self.RefreshLocation, 0.1, self)
+			else
+				self.mapID = nil
+				self.data = nil
 			end
 		end
 
@@ -573,6 +576,3 @@ app:CreateWindow("MiniList", {
 		self:SetMapID(app.CurrentMapID, true)
 	end,
 });
-app.ToggleMiniListForCurrentZone = function(mapID)
-	app:GetWindow("MiniList"):SetVisible(true);
-end
