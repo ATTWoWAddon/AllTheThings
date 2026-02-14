@@ -178,7 +178,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 					return false;
 				end
 			end
-			return true;
+			return not t.locked;
 		end
 		return false;
 	end,

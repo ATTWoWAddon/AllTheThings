@@ -23,7 +23,10 @@ local OnUpdateForBloodsail = [[function(t)
 		local repForAdmiral = isHuman and 220 or 200;
 -- #endif
 		if t.admiral.collected then repForAdmiral = 0; end
-		t.minReputation[2] = math.max(t.reputation, 41999) + repForDressing + repForAdmiral;
+		t.maxPossibleReputation = math.max(t.reputation, 41999) + repForDressing + repForAdmiral;
+		if t.maxPossibleReputation < 42000 then
+			t.locked = true;
+		end
 -- #endif
 	end
 end]];
@@ -72,6 +75,9 @@ local OnTooltipForBloodsail = [[function(t, tooltipInfo)
 		end
 		if not t.admiral.saved then
 			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.admiral);
+		end
+		if t.maxPossibleReputation < 42000 then
+			tinsert(tooltipInfo, { left = "You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!", r = 1, g = 0.5, b = 0.5, wrap = true });
 		end
 	end
 end]];
@@ -174,9 +180,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
 					["icon"] = 133694,
-					-- #if BEFORE WRATH
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
-					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForBloodsail,
 					["OnUpdate"] = OnUpdateForBloodsail,
