@@ -3573,8 +3573,6 @@ root(ROOTS.Unsorted, {
 			i(262598),	-- Opened Sin'dorei Scroll
 			i(262613),	-- Replica Haranir Mural
 			i(262615),	-- Sin'dorei Phoenix Quill
-			i(263052),	-- Beloved Lion Plushie
-			i(263053),	-- Beloved Wolf Plushie
 			i(263230),	-- Magister's Bookshelf
 			i(263231),	-- Silvermoon Curio Shelves
 			i(263290),	-- Spring Blossom Tree

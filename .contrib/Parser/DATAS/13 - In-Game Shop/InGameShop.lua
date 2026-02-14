@@ -617,6 +617,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 	})),
 	-- #endif
+	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		i(263052),	-- Beloved Lion Plushie (DECOR!)
+		i(263053),	-- Beloved Wolf Plushie (DECOR!)
+	})),
 	filter(MOUNTS, {	-- AVAILABLE --
 		-- #if ANYCLASSIC
 		mount(1229672, {	-- Archmage's Great Crow
