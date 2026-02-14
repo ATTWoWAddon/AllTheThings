@@ -97,7 +97,6 @@ root(ROOTS.Unsorted, {
 			i(262616),	-- Lively Songwriter's Quill
 			i(263031),	-- Twisted Rope Coil
 			i(263034),	-- Magnificent Towering Bookcase
-			i(263211),	-- Gilded Eversong Cup
 			i(264244),	-- Plush Haranir Leather Pillow
 			i(264251),	-- Depthdiver's Cooking Spit
 			i(264344),	-- Cosmic Void Orb
@@ -3519,11 +3518,6 @@ root(ROOTS.Unsorted, {
 			i(242644),	-- Mana-Wyrm Essence
 
 			-- Decor
-			i(243106),	-- Gemmed Eversong Lantern
-			i(244538),	-- Silvermoon Sundial
-			i(244783),	-- Majestic Lightwood Table
-			i(245282),	-- Silvermoon Library Bookcase
-			i(245992),	-- Ornate Silvermoon Candelabra
 			i(246460),	-- Ambient Aethercharged Crystal
 			i(248965),	-- Resplendent Highborne Statue
 			i(250797),	-- Spring Blossom Ceiling Light
@@ -3531,8 +3525,6 @@ root(ROOTS.Unsorted, {
 			i(250868),	-- Crimson Crystal Column
 			i(250869),	-- Crimson Crystal Core
 			i(250870),	-- Crimson Crystal Fragment
-			i(251911),	-- Eversong Dessert Platter
-			i(251912),	-- Goldenmist Grapes
 
 			-- Mount
 			i(257176),	-- Duskbrute Harrower
@@ -3552,8 +3544,6 @@ root(ROOTS.Unsorted, {
 
 			-- Decor
 			i(253469),	-- Ritual-Cursed Sarcophagus
-			i(253485),	-- Sin'dorei Honor Stone
-			i(253488),	-- Diamond Honor Stone
 			i(255648),	-- Zul'Aman Ancestral Fountain
 			i(256923),	-- Amani Crafter's Tool Rack
 			i(256928),	-- Banner of the Amani Tribe
@@ -3574,10 +3564,8 @@ root(ROOTS.Unsorted, {
 			i(262613),	-- Replica Haranir Mural
 			i(262615),	-- Sin'dorei Phoenix Quill
 			i(263230),	-- Magister's Bookshelf
-			i(263231),	-- Silvermoon Curio Shelves
 			i(263290),	-- Spring Blossom Tree
 			i(263291),	-- Spring Blossom Pond
-			i(264248),	-- Sin'dorei Storage Jar
 			i(264249),	-- Woodblock Stool
 			i(264252),	-- Zul'Aman Forest Hammock
 			i(264254),	-- Three-Tier Zul'Aman Shelf

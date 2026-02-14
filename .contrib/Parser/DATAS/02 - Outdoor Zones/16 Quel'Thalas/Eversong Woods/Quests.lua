@@ -11,12 +11,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
 						["provider"] = { "n", 235787 },	-- Lor'themar Theron
 						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-						["groups"] = {
-							i(248044),	-- Reluctant Diplomat's Bracers
-							i(248042),	-- Reluctant Diplomat's Cuffs
-							i(248043),	-- Reluctant Diplomat's Vambraces
-							i(248045),	-- Reluctant Diplomat's Wraps
-						},
 					}),
 					------ Stay awhile and listen ------
 					--hqt(XXXXX, {	-- Stay awhile and listen: Lady Liadrin
