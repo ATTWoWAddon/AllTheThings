@@ -315,6 +315,12 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
 
+			-- Automated Content
+			settings:Set("CC:SL_COV_KYR", false)
+			settings:Set("CC:SL_COV_NEC", false)
+			settings:Set("CC:SL_COV_NFA", false)
+			settings:Set("CC:SL_COV_VEN", false)
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -373,6 +379,12 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
 
+			-- Automated Content
+			settings:Set("CC:SL_COV_KYR", true)
+			settings:Set("CC:SL_COV_NEC", true)
+			settings:Set("CC:SL_COV_NFA", true)
+			settings:Set("CC:SL_COV_VEN", true)
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -430,6 +442,12 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Conduits", false)
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
+
+			-- Automated Content
+			settings:Set("CC:SL_COV_KYR", true)
+			settings:Set("CC:SL_COV_NEC", true)
+			settings:Set("CC:SL_COV_NFA", true)
+			settings:Set("CC:SL_COV_VEN", true)
 
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
@@ -554,6 +572,12 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("AccountWide:Followers", false)
 			settings:Set("AccountWide:AzeriteEssences", false)
 			settings:Set("AccountWide:Conduits", false)
+
+			-- Automated Content
+			settings:Set("CC:SL_COV_KYR", false)
+			settings:Set("CC:SL_COV_NEC", false)
+			settings:Set("CC:SL_COV_NFA", false)
+			settings:Set("CC:SL_COV_VEN", false)
 
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
@@ -777,7 +801,7 @@ if app.IsClassic then
 	checkboxQualityFilter:SetATTTooltip(L.ONLY_NOT_TRASH_TOOLTIP)
 	checkboxQualityFilter:AlignAfter(checkboxMainOnlyMode)
 	checkboxQualityFilter:SetScale(0.6);
-	
+
 	if app.GameBuildVersion < 40000 then	-- Transmog officially supported with Cataclysm.
 		local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
 		function(self)
