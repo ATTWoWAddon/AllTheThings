@@ -3,13 +3,14 @@ enable-nolib-creation: no
 
 externals:
 
-move-folders:
-
 ignore: # Files and directories beginning with a dot (such as .git) are automatically ignored, as is the pgkmeta file itself.
   - _config.yml
   - setup.cfg
-  - Link ATT to WoW.bat
-  - Link ATT to WoW.sh
+  - *.bat
+  - *.sh
+  - *.md
+  - *.cfg
+  - *.yml
 
 required-dependencies:
 
@@ -25,14 +26,3 @@ tools-used:
 # filename: CHANGELOG.md
 # markup-type: markdown
 
-plain-copy:
-  - assets/*
-  - db/*
-  - lib/*
-  - locales/*
-  - src/*
-  - AllTheThings.lua
-  - Bindings.xml
-  - CHANGELOG.md
-  - LICENSE.TXT
-  - Settings.lua

@@ -11,12 +11,9 @@ local function OnClickForWindowButton(self)
 	app:GetWindow(self.Suffix):Show();
 end
 local function UpdateButtonText(self, window)
-	local text = window.SettingsName;
-	local data = window.data;
-	if data then
-		local icon = data.icon;
-		if icon then text = "|T" .. icon .. ":0|t " .. text; end
-	end
+	local text = window.Title or window.SettingsName;
+	local icon = window.IconTexture or (window.data and window.data.icon)
+	if icon then text = "|T" .. icon .. ":0|t " .. text; end
 	self:SetText(text);
 end
 local function OnTooltipForWindowButton(self, tooltipInfo)
