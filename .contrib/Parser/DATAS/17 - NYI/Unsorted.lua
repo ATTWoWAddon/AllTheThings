@@ -1562,10 +1562,6 @@ root(ROOTS.Unsorted, {
 			i(251794),	-- Gris-gris of Confidence
 			i(251882),	-- Fragmented Light Shard
 			i(251886),	-- Unstable Mana-Locket
-			i(252411),	-- Radiant Sunstone
-			i(252418),	-- Solar Core Igniter
-			i(252420),	-- Solarflare Prism
-			i(252421),	-- Rotting Globule
 			-- Wep
 			i(251884),	-- Abyss Sabre \\ Umbral Sabre
 			-- QI
@@ -2180,13 +2176,6 @@ root(ROOTS.Unsorted, {
 			-- Cosmetic
 			i(258045),	-- Dawnblade's Glaives
 
-			-- Old Dungeon Revamp
-			i(258046),	-- Chakram-Breaker Greatsword
-			i(258047),	-- Spire of the Furious Construct
-			i(258048),	-- Beakbreaker Scimitar
-			i(258049),	-- Viryx's Indomitable Bulwark
-			i(258050),	-- Arcanic of the High Sage
-
 			-- Pet
 			i(258122),	-- Emerald Hatchling \\ [DNT] [PH] 12.0 Green Baby Hawkstrider
 
@@ -2200,9 +2189,6 @@ root(ROOTS.Unsorted, {
 
 			-- Pet
 			i(258189),	-- Do, child of Filo \\ Do, child of Fi'lo
-
-			-- Wep
-			i(258218),	-- Skybreaker's Blade
 
 			-- Misc
 			i(258269),	-- [DNT] Tiny Pouch of Supplies
@@ -2220,12 +2206,6 @@ root(ROOTS.Unsorted, {
 			i(258407),	-- Lil' Green Whirlwind
 			i(258408),	-- Lil' Red Whirlwind
 
-			-- Old dungeon
-			i(258412),	-- Stormshaper's Crossbow
-			i(258436),	-- Edge of the Burning Sun
-			i(258438),	-- Blazing Sunclaws
-			i(258472),	-- Rukhran's Solar Reliquary
-			i(258484),	-- Sunlance of Viryx
 			-- Misc
 			i(258480),	-- Pargoth's Pandemonic Pyxis
 
@@ -2245,40 +2225,12 @@ root(ROOTS.Unsorted, {
 
 			i(258520),	-- Plans: Farstrider's Strike
 
-
-			-- Wep
-			i(258514),	-- Umbral Spire of Zuraal
-			i(258516),	-- Wand of Saprish's Gaze
-
-			-- Wep
-			i(258523),	-- Nezhar's Netherclaw
-			i(258524),	-- Grips of the Dark Viceroy
-			i(258525),	-- Scepter of the Endless Night
-			i(258529),	-- Arcaneclaw Spear
-			i(258531),	-- Crawth's Scaleguard
-
 			-- Prey
 			i(258533),	-- Preyseeker's Polished Cloak \\ [DNT] 12.0 Prey - Accessory - CLOAK - D
 
 			-- QI
 			i(258572),	-- Crystal Essence
 			i(258573),	-- Plant Dye
-
-			-- Old Dungeon
-			i(258574),	-- Legwraps of Swirling Light
-			i(258575),	-- Rigid Scale Greatcloak
-			i(258576),	-- Sharpeye Chestguard
-			i(258577),	-- Boots of Burning Focus
-			i(258578),	-- Lightbinder Shoulderguards
-			i(258579),	-- Gutcrusher Greathelm
-			i(258580),	-- Bracers of Blazing Light
-			i(258581),	-- Bloodfeather Mantle
-			i(258582),	-- Rigid Scale Boots
-			i(258583),	-- Incarnadine Gauntlets
-			i(258584),	-- Lightbinder Treads
-			i(258585),	-- Sharpeye Gleam
-			i(258586),	-- Bloodfeather Chestguard
-			i(258587),	-- Spaulders of Scorching Ray
 
 			-- PvP
 			i(258620),	-- Field Medic's Hazard Payout
@@ -3549,7 +3501,6 @@ root(ROOTS.Unsorted, {
 			i(267000),	-- Hearty Flora Frenzy
 			i(267004),	-- Twinblade of the Devourer
 			i(267005),	-- Rakan's Totem
-			i(267007),	-- Eye of Acherus
 			i(267040),	-- Sea Caller
 			i(267052),	-- Thalassian Alchemy Coveralls
 			i(267054),	-- Thalassian Chef's Chapeau

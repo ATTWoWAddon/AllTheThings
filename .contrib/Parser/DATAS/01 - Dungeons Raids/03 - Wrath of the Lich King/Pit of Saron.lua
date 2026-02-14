@@ -163,6 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				e(610, {	-- Scourgelord Tyrannus
 					["creatureID"] = 36658,	-- Scourgelord Tyrannus
 					["groups"] = {
+						i(267007, {["timeline"] = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
 						-- #if AFTER 7.3.5
 						i(50273),	-- Engraved Gargoyle Femur (7.3.5 - Used to be only Heroic Mode)
 						i(50267),	-- Tyrannical Beheader (7.3.5 - Used to be only Heroic Mode)
@@ -268,6 +269,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(5113, {	-- Heroic: The Pit of Saron Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
+							i(267007, {["timeline"] = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
+							i(252421, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Rotting Globule
 							i(50273),	-- Engraved Gargoyle Femur
 							i(50267),	-- Tyrannical Beheader
 							i(50268),	-- Rimefang's Claw

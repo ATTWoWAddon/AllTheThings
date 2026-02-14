@@ -65,6 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(VIRYX, {
 					ach(8843),	-- Skyreach
 					un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
+					i(258744, {["timeline"] = { ADDED_12_0_0 }}),	-- Skyreach Circular Table (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
@@ -142,6 +143,91 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 					})
 				}),
+			}),
+
+			-- 12.0.0 revamp during Midnight Season 1
+			-- TODO: @ImUnicke (Runawaynow) I don't understand a single line in helpers.
+			-- Please figure out timelines/preprocessors for this file, thanks -Darkal
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				BossOnly(RANJIT, {
+					i(258046),	-- Chakram-Breaker Greatsword
+					i(258574),	-- Legwraps of Swirling Light
+					i(258575),	-- Rigid Scale Greatcloak
+					i(258218),	-- Skybreaker's Blade
+					i(258412),	-- Stormshaper's Crossbow
+				}),
+				Boss(ARAKNATH, {
+					i(258577),	-- Boots of Burning Focus
+					i(258436),	-- Edge of the Burning Sun
+					i(258579),	-- Gutcrusher Greathelm
+					i(258578),	-- Lightbinder Shoulderguards
+					i(258576),	-- Sharpeye Chestguard
+					i(252418),	-- Solar Core Igniter
+					i(258047),	-- Spire of the Furious Construct
+				}),
+				Boss(RUKHRAN, {
+					i(258048),	-- Beakbreaker Scimitar
+					i(258438),	-- Blazing Sunclaws
+					i(258581),	-- Bloodfeather Mantle
+					i(258580),	-- Bracers of Blazing Light
+					i(258583),	-- Incarnadine Gauntlets
+					i(252411),	-- Radiant Sunstone
+					i(258582),	-- Rigid Scale Boots
+					i(258472),	-- Rukhran's Solar Reliquary
+				}),
+				Boss(VIRYX, {
+					i(258050),	-- Arcanic of the High Sage
+					i(258586),	-- Bloodfeather Chestguard
+					i(258584),	-- Lightbinder Treads
+					i(258585),	-- Sharpeye Gleam
+					i(252420),	-- Solarflare Prism
+					i(258587),	-- Spaulders of Scorching Ray
+					i(258484),	-- Sunlance of Viryx
+					i(258049),	-- Viryx's Indomitable Bulwark
+				}),
+			}),
+			Difficulty(DIFFICULTY.RAID.MYTHIC, {["ItemAppearanceModifierID"] = 0}).AddGroups({
+				BossOnly(RANJIT, {
+					i(258046),	-- Chakram-Breaker Greatsword
+					i(258574),	-- Legwraps of Swirling Light
+					i(258575),	-- Rigid Scale Greatcloak
+					i(258218),	-- Skybreaker's Blade
+					i(258412),	-- Stormshaper's Crossbow
+				}),
+				Boss(ARAKNATH, {
+					i(258577),	-- Boots of Burning Focus
+					i(258436),	-- Edge of the Burning Sun
+					i(258579),	-- Gutcrusher Greathelm
+					i(258578),	-- Lightbinder Shoulderguards
+					i(258576),	-- Sharpeye Chestguard
+					i(252418),	-- Solar Core Igniter
+					i(258047),	-- Spire of the Furious Construct
+				}),
+				Boss(RUKHRAN, {
+					i(258048),	-- Beakbreaker Scimitar
+					i(258438),	-- Blazing Sunclaws
+					i(258581),	-- Bloodfeather Mantle
+					i(258580),	-- Bracers of Blazing Light
+					i(258583),	-- Incarnadine Gauntlets
+					i(252411),	-- Radiant Sunstone
+					i(258582),	-- Rigid Scale Boots
+					i(258472),	-- Rukhran's Solar Reliquary
+				}),
+				Boss(VIRYX, {
+					ach(10081),	-- Mythic: Skyreach
+					ig(127772, {	-- Gemcutter Module: Haste
+						["requireSkill"] = JEWELCRAFTING,
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+					}),
+					i(258050),	-- Arcanic of the High Sage
+					i(258586),	-- Bloodfeather Chestguard
+					i(258584),	-- Lightbinder Treads
+					i(258585),	-- Sharpeye Gleam
+					i(252420),	-- Solarflare Prism
+					i(258587),	-- Spaulders of Scorching Ray
+					i(258484),	-- Sunlance of Viryx
+					i(258049),	-- Viryx's Indomitable Bulwark
+				})
 			}),
 		},
 	}),

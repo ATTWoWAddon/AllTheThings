@@ -88,6 +88,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2509, {	-- Vexamus
+					["crs"] = {
+						189668,	-- Professor Madormu
+						195416,	-- Magic Book
+						194181,	-- Vexamus
+					},
+					["groups"] = {
+						i(258529, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Arcaneclaw Spear
+					},
+				}),
+				e(2495, {	-- Crawth
+					["crs"] = { 191736 },	-- Crawth
+					["groups"] = {
+						i(258531, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Crawth's Scaleguard
+					},
+				}),
 				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["groups"] = {
