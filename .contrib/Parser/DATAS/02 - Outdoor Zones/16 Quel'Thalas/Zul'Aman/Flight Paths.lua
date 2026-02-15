@@ -26,7 +26,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 47.3, 25.5, MAP.MIDNIGHT.ZULAMAN },
 				["cr"] = 242011,	-- Scroll of Flight
 			}),
-			fp(3129, {	-- Witherbark Bluffs, Zul'Aman
+			-- TODO: Please verify the data for the two flight masters below
+			fp(3129, {	-- Shadebasin Watch, Zul'Aman
+				--["coord"] = { , , MAP.MIDNIGHT.ZULAMAN },
+				--["cr"] = ,	--
+			}),
+			fp(3130, {	-- Witherbark Bluffs, Zul'Aman
 				["coord"] = { 38.9, 23.2, MAP.MIDNIGHT.ZULAMAN },
 				["cr"] = 251073,	-- Eagletender Do'nac
 			}),
