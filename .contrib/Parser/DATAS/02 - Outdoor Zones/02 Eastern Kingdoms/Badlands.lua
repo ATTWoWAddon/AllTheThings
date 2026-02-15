@@ -387,6 +387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = ALCHEMY,
+					["learnedAt"] = 210,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {

@@ -833,12 +833,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6623, {	-- Horde Trauma
-					["description"] =
-						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
-						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
-						-- #endif
+					-- #if AFTER BFA
+					["description"] ="This quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
+					-- #endif
 					["qgs"] = {
 						-- #if AFTER CATA
 						45540,	-- Krenk Choplimb
@@ -860,6 +857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						FIRST_AID,
 						-- #endif
+					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.5
 					-- ["DisablePartySync"] = true,
