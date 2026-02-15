@@ -3,62 +3,14 @@ ach(61516),	-- Radiant Singer
 12.0.0.63534
 ach(60888),	-- Pushing My Buttons
 ach(61091),	-- Midnight Safari
-ach(61456),	-- Die in Lordaeron or Undercity
 ach(61490),	-- Midnight Season 1: Champion of the Dawn
 12.0.0.63724
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
 ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
-ach(61521),	-- Skyriding Glyphs: The Shining Span
-ach(61522),	-- Skyriding Glyphs: Brightwing Estate \\ Skyriding Glyphs: Sunstrider Isle
-ach(61523),	-- Skyriding Glyphs: Silvermoon City
-ach(61524),	-- Skyriding Glyphs: Goldenmist Village \\ Skyriding Glyphs: Runestone Shan'dor
-ach(61525),	-- Skyriding Glyphs: Daggerspine Point
-ach(61526),	-- Skyriding Glyphs: Suncrown Tree
-ach(61527),	-- Skyriding Glyphs: Fairbreeze Village
-ach(61528),	-- Skyriding Glyphs: Tranquillien
-ach(61529),	-- Skyriding Glyphs: Dawnstar Spire
-ach(61530),	-- Skyriding Glyphs: Sunsail Anchorage
-ach(61531),	-- Skyriding Glyphs: Path of Dawn
-ach(61532),	-- Skyriding Glyphs: Shadebasin Watch
-ach(61533),	-- Skyriding Glyphs: Temple of Akil'zon
-ach(61534),	-- Skyriding Glyphs: Temple of Jan'alai
-ach(61535),	-- Skyriding Glyphs: Strait of Hexx'alor
-ach(61536),	-- Skyriding Glyphs: Witherbark Bluffs
-ach(61537),	-- Skyriding Glyphs: Nalorakk's Prowl
-ach(61538),	-- Skyriding Glyphs: Zeb'Alar Lumberyard
-ach(61539),	-- Skyriding Glyphs: Solemn Valley
-ach(61540),	-- Skyriding Glyphs: Amani Pass
-ach(61541),	-- Skyriding Glyphs: Spiritpaw Burrow
-ach(61542),	-- Skyriding Glyphs: Revantusk Sedge
-ach(61543),	-- Skyriding Glyphs: Blossoming Terrace
-ach(61544),	-- Skyriding Glyphs: The Cradle
-ach(61545),	-- Skyriding Glyphs: Roots of Teldrassil
-ach(61546),	-- Skyriding Glyphs: Roots of Amirdrassil
-ach(61547),	-- Skyriding Glyphs: Blooming Lattice
-ach(61548),	-- Skyriding Glyphs: Roots of Nordrassil
-ach(61549),	-- Skyriding Glyphs: Fungara Village
-ach(61550),	-- Skyriding Glyphs: Rift of Aln
-ach(61551),	-- Skyriding Glyphs: Roots of Shaladrassil
-ach(61552),	-- Skyriding Glyphs: The Voidspire
-ach(61555),	-- Skyriding Glyphs: The Molt
-ach(61556),	-- Skyriding Glyphs: The Ingress
-ach(61557),	-- Skyriding Glyphs: The Bladeburrows
-ach(61558),	-- Skyriding Glyphs: Gnawing Reach
-ach(61559),	-- Skyriding Glyphs: The Gorging Pit
-ach(61560),	-- Skyriding Glyphs: Shadowguard Point
-ach(61561),	-- Skyriding Glyphs: Obscurion Citadel
-ach(61562),	-- Skyriding Glyphs: Masters' Perch \\ Skyriding Glyphs: Master's Perch
-ach(61563),	-- Skyriding Glyphs: Ethereum Refinery
-ach(61564),	-- Skyriding Glyphs: Hanaar Outpost
 ach(61566),	-- Glory of the War Within Hero
 ach(61567),	-- Midnight Dungeon Hero
 ach(61568),	-- Glory of the Midnight Hero
 12.0.0.63854
-ach(61576),	-- Eversong Woods Glyph Hunter
-ach(61581),	-- Zul'Aman Glyph Hunter \\ Zul'aman Glyph Hunter
-ach(61582),	-- Harandar Glyph Hunter
-ach(61583),	-- Voidstorm Glyph Hunter
-ach(61584),	-- Midnight Glyph Hunter
 ach(61585),	-- You Conduit!
 ach(61595),	-- Mythic: Ara-Kara, City of Echoes Guild Run
 ach(61596),	-- Mythic: Cinderbew Meadery Guild Run

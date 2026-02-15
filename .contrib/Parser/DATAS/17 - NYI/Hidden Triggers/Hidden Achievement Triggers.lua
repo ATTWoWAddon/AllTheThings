@@ -4058,6 +4058,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41295),	-- The Restless Heart kills (Mythic Windrunner Spire) \\ [PH] Restless Heart kills (Mythic Windrunner Spire)
 			ach(61444),	-- Vicious Saddle (43)
 			ach(61445),	-- Vicious Saddle (43)
+			ach(61456),	-- Die in Lordaeron or Undercity
 
 			-- 12.0.0.63724
 			ach(61511),	-- Charonus kills (Normal Voidscar Arena)

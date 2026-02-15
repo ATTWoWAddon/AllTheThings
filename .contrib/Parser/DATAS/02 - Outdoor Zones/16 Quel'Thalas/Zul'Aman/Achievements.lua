@@ -16,8 +16,39 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61453),	-- Making an Amani Out of You
 			ach(62199),	-- Put a Pin in It
 			ach(61455),	-- Shadowpine Scattered
-			ach(61452),	-- Sojourner of Zul'Aman
-			ach(62202),	-- Spiritpaw Marathon
+			skyriding(ach(61540, {	-- Skyriding Glyphs: Amani Pass
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61537, {	-- Skyriding Glyphs: Nalorakk's Prowl
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61542, {	-- Skyriding Glyphs: Revantusk Sedge
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61532, {	-- Skyriding Glyphs: Shadebasin Watch
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61539, {	-- Skyriding Glyphs: Solemn Valley
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61541, {	-- Skyriding Glyphs: Spiritpaw Burrow
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61535, {	-- Skyriding Glyphs: Strait of Hexx'alor
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61533, {	-- Skyriding Glyphs: Temple of Akil'zon
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61534, {	-- Skyriding Glyphs: Temple of Jan'alai
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61536, {	-- Skyriding Glyphs: Witherbark Bluffs
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61538, {	-- Skyriding Glyphs: Zeb'Alar Lumberyard
+				--["coord"] = { X, Y, Z },
+			})),
 			ach(62122, {	-- Tallest Tree in the Forest
 				i(264335),	-- Colossal Amani Stone Visage (DECOR!)
 			}),
@@ -26,6 +57,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62125, {	-- Treasures of Zul'Aman
 				i(268717);	-- Pango Plating (TOY!)
 			}),
+			ach(61452),	-- Sojourner of Zul'Aman
+			ach(62202),	-- Spiritpaw Marathon
+			skyriding(ach(61581, {	-- Zul'Aman Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					61540,	-- Skyriding Glyphs: Amani Pass
+					61537,	-- Skyriding Glyphs: Nalorakk's Prowl
+					61542,	-- Skyriding Glyphs: Revantusk Sedge
+					61532,	-- Skyriding Glyphs: Shadebasin Watch
+					61539,	-- Skyriding Glyphs: Solemn Valley
+					61541,	-- Skyriding Glyphs: Spiritpaw Burrow
+					61535,	-- Skyriding Glyphs: Strait of Hexx'alor
+					61533,	-- Skyriding Glyphs: Temple of Akil'zon
+					61534,	-- Skyriding Glyphs: Temple of Jan'alai
+					61536,	-- Skyriding Glyphs: Witherbark Bluffs
+					61538,	-- Skyriding Glyphs: Zeb'Alar Lumberyard
+				}},
+			})),
 			ach(62289, {	-- Zul'Aman: The Highest Peaks
 				i(256925),	-- Amani Spearhunter's Spit (DECOR!)
 			}),
