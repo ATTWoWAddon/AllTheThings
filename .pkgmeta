@@ -22,7 +22,12 @@ license-output: LICENSE.txt
 
 tools-used:
 
-#manual-changelog:
-# filename: CHANGELOG.md
-# markup-type: markdown
-
+plain-copy:
+  - assets/*
+  - db/*
+  - lib/*
+  - locales/*
+  - src/*
+  - AllTheThings.lua
+  - Bindings.xml
+  - LICENSE.TXT
