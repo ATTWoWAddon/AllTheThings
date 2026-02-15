@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61913),	-- A Singular Problem
 			ach(61912),	-- Anchoring the Defense
 			ach(41806),	-- Breaching the Voidstorm
-			--ach(61857),	-- Explore Voidstorm (TRIGGERS CRITERIA WARNINGS!)
+			ach(61857),	-- Explore Voidstorm
 			ach(62105),	-- Lysikas Would Be Proud
 			ach(61922),	-- Ninety Percent is Good Enough
 			ach(61861),	-- Oh, No You Don't!

@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61052, {	-- Dust 'Em Off
 				title(754),	-- Dustlord <Name>
 			}),
-			--ach(61520),	-- Explore Harandar (TRIGGERS CRITERIA WARNINGS!)
+			ach(61520),	-- Explore Harandar
 			skyriding(ach(61582, {	-- Harandar Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62270),	-- Altar of Blessings: One for Altar
 			ach(62121),	-- Altar of Blessings: Sacred Buffet Devotee
 			ach(62120),	-- Altar of Blessings: The Penitent Troll
-			--ach(61856),	-- Explore Zul'Aman (TRIGGERS CRITERIA WARNINGS!)
+			ach(61856),	-- Explore Zul'Aman
 			ach(41803),	-- For Zul'Aman!
 			ach(62200),	-- Gnome Alone
 			ach(61453),	-- Making an Amani Out of You

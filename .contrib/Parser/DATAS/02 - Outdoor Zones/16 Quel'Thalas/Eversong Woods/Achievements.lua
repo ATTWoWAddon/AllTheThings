@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					61528,	-- Skyriding Glyphs: Tranquillien
 				}},
 			})),
-			--ach(61855),	-- Explore Eversong Woods (TRIGGERS CRITERIA WARNINGS!)
+			ach(61855),	-- Explore Eversong Woods
 			ach(62261),	-- Forever Song
 			ach(62187),	-- Grand Magister's Sommelier
 			ach(61961),	-- Runestone Rush
