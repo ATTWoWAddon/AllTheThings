@@ -1102,7 +1102,11 @@ local function RowOnClick(self, button)
 					if link then
 						if app.HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
 						local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
-						if dialog then dialog.editBox:SetText(link); return true; end
+						if dialog then
+							local editBox = dialog.editBox or dialog.EditBox or (dialog.GetEditBox and dialog:GetEditBox())
+							editBox:SetText(link);
+							return true;
+						end
 					end
 					if button == "LeftButton" then app.RefreshCollections(); end
 					return true;
