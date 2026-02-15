@@ -6,7 +6,6 @@ ach(61091),	-- Midnight Safari
 ach(61490),	-- Midnight Season 1: Champion of the Dawn
 12.0.0.63724
 ach(61519),	-- Midnight Season 1: Catalyst Unbound
-ach(61520),	-- Explore Harandar \\ Explore Harandar - Placeholder
 ach(61566),	-- Glory of the War Within Hero
 ach(61567),	-- Midnight Dungeon Hero
 ach(61568),	-- Glory of the Midnight Hero
@@ -40,9 +39,6 @@ ach(61807),	-- Midnight Delves: Tier 11 (Season 1)
 ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
 ach(61809),	-- Adventurer of the Dawn
 ach(61854),	-- The Midnight Explorer
-ach(61855),	-- Explore Eversong Woods \\ Explore Eversong Woods - Placeholder
-ach(61856),	-- Explore Zul'Aman \\ Explore Zul'Aman - Placeholder
-ach(61857),	-- Explore Voidstorm \\ Explore Voidstorm - Placeholder
 ach(61917),	-- "Hold aggro, I got this"
 12.0.0.64124
 ach(61587),	-- Keystone Victor: Magisters' Terrace (Midnight)
