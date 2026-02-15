@@ -311,12 +311,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6625, {	-- Alliance Trauma
-					["description"] =
-						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.",
-						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
-						-- #endif
 					["qg"] = 5150,	-- Nissa Firestone
 					["coord"] = { 54.8, 58.6, IRONFORGE },
 					["requireSkill"] =
@@ -325,6 +319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #else
 						FIRST_AID,
 						-- #endif
+					["learnedAt"] = 225,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 10),
