@@ -596,6 +596,14 @@ local fieldConverters = {
 		end
 	end,
 };
+setmetatable(fieldConverters, {
+	__index = function(t, key)
+		--print("Ignoring Field Cache: ", key);
+		t[key] = false;
+		return false;
+	end,
+});
+
 
 -- Item Mod ID conversion for bonus IDs
 postscripts[#postscripts + 1] = function()
@@ -679,11 +687,11 @@ end
 do
 	-- we need special handling since the data in the 'otherQuestData' needs to cache against the 'group' not the other data itself
 	local IgnoredOtherFactionFields = {
-		coords = 1,
-		coord = 1,
-		maps = 1,
-		g = 1,
-	}
+		coords = true,
+		coord = true,
+		maps = true,
+		g = true,
+	};
 	-- otherwise this leads to raw data tables being cached against costs and providers etc.
 	local function CacheOtherFactionData(group, otherFactionData)
 		-- if the other faction data was actually made into a Type, then cache it against itself
@@ -691,8 +699,8 @@ do
 			_CacheFields(otherFactionData)
 		else
 			for key,value in pairs(otherFactionData) do
-				_converter = not IgnoredOtherFactionFields[key] and fieldConverters[key]
-				if _converter then
+				_converter = fieldConverters[key]
+				if _converter and not IgnoredOtherFactionFields[key] then
 					_converter(group, value)
 				end
 			end
