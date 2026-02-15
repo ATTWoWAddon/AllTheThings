@@ -171,6 +171,7 @@ HeaderAssignments = {
 	["DF Rare Rotation"] = -399,
 	["Diablo 20th Anniversary"] = -539,
 	["Diablo Events"] = -538,
+	["Diablo II: Resurrected - Reign of Warlock"] = -722,
 	["Diablo III"] = -530,
 	["Diablo III: Reaper of Souls"] = -531,
 	["Diablo IV"] = -532,
@@ -701,4 +702,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 };
-NextHeaderID = -722;
+NextHeaderID = -723;
