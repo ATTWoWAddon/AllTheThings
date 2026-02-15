@@ -59,14 +59,14 @@ local function BuildDataFromCache()
 			if cacheID ~= 0 then ValidKeys[cacheID] = true; end
 		end
 	end
-	local CacheFields = {};
+	local cache = {};
 	for id,_ in pairs(ValidKeys) do
-		CacheFields[#CacheFields + 1] = id
+		cache[#cache + 1] = id
 	end
-	app.Sort(CacheFields, app.SortDefaults.Values);
+	app.Sort(cache, app.SortDefaults.Values);
 	ObjectTypeFuncs[DataType] = function(id)
 		-- use the cached id in the slot of the requested id instead
-		id = CacheFields[id];
+		id = cache[id];
 		return setmetatable({ visible = true }, {
 			__index = id and (app.SearchForObject(DataType, id, "key")
 							or app.SearchForObject(DataType, id, "field")
@@ -75,7 +75,7 @@ local function BuildDataFromCache()
 		});
 	end
 	MinimumID = 1;
-	MaximumID = #CacheFields;
+	MaximumID = #cache;
 end
 app:CreateWindow("List", {
 	Commands = { "attlist" },
