@@ -19,7 +19,7 @@ app:CreateWindow("Race Specific Things", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local filteredG = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+					local filteredG = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 						if group.races and #group.races == 1 then
 							return true;
 						end

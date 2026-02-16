@@ -31,7 +31,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 	GameTooltip:ClearATTReferenceTexture();
-	local reference = app:GetDataCache();
+	local reference = app:GetDatabaseRoot();
 	if reference then
 		GameTooltip:SetATTReferenceForTexture(reference);
 

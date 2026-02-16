@@ -155,7 +155,7 @@ local function GetSearchResults()
 		local method = SelectionMethods[SearchFilter];
 		if method then
 			searchResults = {}
-			method(app:GetDataCache(), searchResults, SelectionFilters[SearchFilter], TypeIDLookups[SearchFilter])
+			method(app:GetDatabaseRoot(), searchResults, SelectionFilters[SearchFilter], TypeIDLookups[SearchFilter])
 			searchCache[SearchFilter] = searchResults
 			return searchResults
 		end

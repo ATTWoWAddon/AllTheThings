@@ -24,7 +24,7 @@ app:CreateWindow("Season of Discovery", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, IsExclusiveToSod);
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, IsExclusiveToSod);
 					if #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);

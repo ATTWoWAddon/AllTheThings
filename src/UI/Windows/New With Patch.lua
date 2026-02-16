@@ -18,7 +18,7 @@ app:CreateWindow("New With Patch", {
 			OnUpdate = app.IsRetail and function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchResponse(app:GetDataCache().g, "awp", app.GameBuildVersion);
+					local results = app:BuildSearchResponse(app:GetDatabaseRoot().g, "awp", app.GameBuildVersion);
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);
@@ -43,14 +43,14 @@ app:CreateWindow("New With Patch", {
 					local results;
 					if any then
 						-- Find all the content that matches the current conditions.
-						results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+						results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 							if group.u and currentConditions[group.u] then
 								return true;
 							end
 						end);
 					else
 						-- Fallback to the default behaviour
-						results = app:BuildSearchResponse(app:GetDataCache().g, "awp", currentPatch);
+						results = app:BuildSearchResponse(app:GetDatabaseRoot().g, "awp", currentPatch);
 					end
 					if results and #results > 0 then
 						for i,result in ipairs(results) do

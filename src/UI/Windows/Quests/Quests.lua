@@ -12,7 +12,7 @@ app:CreateWindow("Quests", {
 			expanded = true,
 			back = 1,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "questID");
+				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "questID");
 				if g and #g > 0 then
 					t.g = g;
 					t.OnUpdate = nil;

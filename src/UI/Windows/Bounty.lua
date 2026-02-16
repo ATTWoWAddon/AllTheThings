@@ -19,7 +19,7 @@ app:CreateWindow("Bounty", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBounty");
+					local results = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "isBounty");
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);

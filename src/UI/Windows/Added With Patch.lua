@@ -170,7 +170,7 @@ app:CreateWindow("Added With Patch", {
 						tinsert(g, option);
 					end
 					wipe(FilteredPatches);
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, MaxPatch and AddedWithPatchFilterMinMax or AddedWithPatchFilter);
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, MaxPatch and AddedWithPatchFilterMinMax or AddedWithPatchFilter);
 					if results and #results > 0 then
 						if MaxPatch then
 							local patchList = {};

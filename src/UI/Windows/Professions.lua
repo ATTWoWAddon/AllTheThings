@@ -44,7 +44,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 					local g = data.g;
 					if #g < 1 then
 						local results = {};
-						app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, ProfessionFilter, results);
+						app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, ProfessionFilter, results);
 						if #results > 0 then
 							-- Find all associated spellIDs
 							local associatedSpellIDs = {};

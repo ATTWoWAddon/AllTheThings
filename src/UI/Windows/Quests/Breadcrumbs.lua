@@ -19,7 +19,7 @@ app:CreateWindow("Breadcrumbs", {
 			indent = 0,
 			g = { },
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "isBreadcrumb");
+				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "isBreadcrumb");
 				if g and #g > 0 then
 					t.g = g;
 					t.OnUpdate = nil;

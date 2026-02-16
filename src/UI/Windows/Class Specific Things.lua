@@ -18,7 +18,7 @@ app:CreateWindow("Class Specific Things", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local filteredG = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+					local filteredG = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 						if group.c and #group.c == 1 then
 							return true;
 						end

@@ -18,7 +18,7 @@ app:CreateWindow("Locked", {
 			back = 1,
 			indent = 0,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "locked");
+				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "locked");
 				if g and #g > 0 then
 					t.g = g;
 					t.OnUpdate = nil;

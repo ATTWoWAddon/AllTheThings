@@ -147,7 +147,7 @@ app:CreateWindow("Future Unobtainables", {
 						option.parent = data;
 						tinsert(g, option);
 					end
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, RemovedWithPatchFilter);
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, RemovedWithPatchFilter);
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							tinsert(g, result);

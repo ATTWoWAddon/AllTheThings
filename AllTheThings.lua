@@ -1161,8 +1161,8 @@ local function SimpleHeaderGroup(npcID, t)
 	return t
 end
 
-function app:GetDataCache()
-	-- app.PrintMemoryUsage("app:GetDataCache init")
+function app:GetDatabaseRoot()
+	-- app.PrintMemoryUsage("app:GetDatabaseRoot init")
 
 	-- not really worth moving this into a Class since it's literally allowed to be used once
 	local DefaultRootKeys = {
@@ -1685,7 +1685,7 @@ function app:GetDataCache()
 	
 	-- app.PrintMemoryUsage("Finished loading data cache")
 	-- app.PrintMemoryUsage()
-	app.GetDataCache = function()
+	app.GetDatabaseRoot = function()
 		-- app.PrintDebug("Cached data cache")
 		return rootData;
 	end
@@ -1888,8 +1888,8 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 	
 	-- Cache the data for the first time
-	-- TODO: Move the logic here rather than in GetDataCache itself. (this will prevent windows from killing things)
-	app:GetDataCache();
+	-- TODO: Move the logic here rather than in GetDatabaseRoot itself. (this will prevent windows from killing things)
+	app:GetDatabaseRoot();
 
 	-- OnLoad events (saved variables are now available)
 	app.HandleEvent("OnLoad")

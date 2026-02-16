@@ -21,7 +21,7 @@ app:CreateWindow("Pet Battles", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if g and #g < 1 then
-					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "pb");
+					local results = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "pb");
 					if results and #results > 0 then
 						t.g = results;
 						t.OnUpdate = nil;

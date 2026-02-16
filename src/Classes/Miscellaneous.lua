@@ -99,7 +99,7 @@ end
 local DynamicCategory_Simple = function(self)
 	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
-		local rootATT = app:GetDataCache();
+		local rootATT = app:GetDatabaseRoot();
 		local top, thing;
 		local topHeaders, dynamicValue, clearSubgroups = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups;
 		if dynamicValue then

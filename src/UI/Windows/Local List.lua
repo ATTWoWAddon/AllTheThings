@@ -31,7 +31,7 @@ local CachedLocalMapData = setmetatable({}, {
 	__index = function(cachedLocalMapData, mapID)
 		if mapID then
 			__currentMapID = mapID;
-			local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, LocalMapFilter);
+			local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, LocalMapFilter);
 			if results and #results > 0 then
 				cachedLocalMapData[mapID] = results;
 				return results;

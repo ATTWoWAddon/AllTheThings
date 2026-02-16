@@ -300,7 +300,7 @@ local lastProgressUpdateMessage;
 local function SendProgressAnnounce()
 	-- Send a message to your party members with your current Prime progress
 	local currentCharacter = app.CurrentCharacter and app.CurrentCharacter;
-	local data = currentCharacter.PrimeData or app:GetDataCache();
+	local data = currentCharacter.PrimeData or app:GetDatabaseRoot();
 	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. currentCharacter.guid;
 	if lastProgressUpdateMessage ~= msg then
 		lastProgressUpdateMessage = msg;

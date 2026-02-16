@@ -490,7 +490,7 @@ events.FilterIsEventActive = FilterIsEventActive;
 events.GetEventActive = function(eventID)
 	return ActiveEvents[eventID];
 end;
-events.GetEventCache = GetEventCache;	-- This should be executed before GetDataCache, or at the start of GetDataCache.
+events.GetEventCache = GetEventCache;	-- This should be executed before GetDatabaseRoot, or at the start of GetDatabaseRoot.
 events.GetEventName = GetEventName;
 events.GetEventInformation = function(eventID)
 	return EventInformation[eventID];

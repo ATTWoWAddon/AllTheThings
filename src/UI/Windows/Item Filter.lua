@@ -89,7 +89,7 @@ app:CreateWindow("Item Filter", {
 						tinsert(g, option);
 					end
 					if FilterID then
-						local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(t)
+						local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(t)
 							return t.f == FilterID;
 						end);
 						if results and #results > 0 then

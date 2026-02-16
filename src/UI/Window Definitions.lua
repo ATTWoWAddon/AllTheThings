@@ -3046,7 +3046,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
 	if sourcePath then
 		local hashes = { (">"):split(sourcePath) };
-		local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+		local ref = app.SearchForSourcePath(app:GetDatabaseRoot().g, hashes, 2, #hashes);
 		if ref then
 			app:CreateMiniListForGroup(ref);
 			return;
@@ -3078,7 +3078,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 
 		-- Search for the field/value pair everywhere in the DB.
 		local t = {};
-		app:BuildFlatSearchResponse(app:GetDataCache().g, key, id, t);
+		app:BuildFlatSearchResponse(app:GetDatabaseRoot().g, key, id, t);
 		if t and #t > 0 then
 			local ref = #t == 1 and t[1] or app.CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
 			if ref then
@@ -3368,7 +3368,7 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 			local g = data.g;
 			if #g < 1 then
 				local results = {};
-				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, SearchForClassTypes, results);
 				local headers, resultsByKey = {}, {};
 				for i,result in pairs(results) do
 					local id = result[key];
@@ -3434,7 +3434,7 @@ local function BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...)
 			local g = data.g;
 			if #g < 1 then
 				local results = {};
-				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, SearchForClassTypes, results);
 				local headers, resultsByKey = {}, {};
 				for i,result in pairs(results) do
 					local id = result[key];

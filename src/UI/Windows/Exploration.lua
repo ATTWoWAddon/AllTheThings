@@ -12,7 +12,7 @@ app:CreateWindow("Exploration", {
 			expanded = true,
 			back = 1,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "explorationID");
+				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "explorationID");
 				if g and #g > 0 then
 					tinsert(g, 1, app.CreateRawText("Harvest Exploration", {	-- Harvest Exploration
 						icon = 132331,

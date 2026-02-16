@@ -33,7 +33,7 @@ app:CreateWindow("Collected Sources", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 						if group.sourceID then
 							local sourceInfo = C_TransmogCollection_GetSourceInfo(group.sourceID);
 							return sourceInfo and sourceInfo.isCollected;

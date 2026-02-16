@@ -343,7 +343,7 @@ app.AddEventHandler("OnReady", function()
 						for i,sourcePath in ipairs(sourceStrings) do
 							---@diagnostic disable-next-line: undefined-field
 							local hashes = { (">"):split(sourcePath) };
-							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							local ref = app.SearchForSourcePath(app:GetDatabaseRoot().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else

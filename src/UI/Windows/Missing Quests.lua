@@ -152,7 +152,7 @@ app:CreateWindow("Missing Quests", {
 				for i,questID in ipairs(MissingQuestsFromQuestie) do
 					MissingQuestsFromQuestieDict[questID] = true;
 				end
-				local filteredData = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+				local filteredData = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 					if group.questID and MissingQuestsFromQuestieDict[group.questID] then
 						return true;
 					end
