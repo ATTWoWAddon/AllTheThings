@@ -971,7 +971,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
-					["description"] = "NOTE: ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!",
+					["description"] = "NOTE: Ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!",
 					["cost"] = {
 						{ "i", 191251, 30 },	-- 30x Key Fragment
 						{ "i", 193201, 3 },	-- 3x Key Framing
