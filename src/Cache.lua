@@ -920,6 +920,7 @@ fieldConverters.qis = function(group, value)		-- Referenced in Modules/Search
 end
 
 -- These are used to provide sourcePaths for the various types:
+-- If some day we want sourcePath to be more dynamic, we can do that in the InformationType.
 fieldConverters.decorID = function(group, value)
 	CacheField(group, "decorID", value);
 end
