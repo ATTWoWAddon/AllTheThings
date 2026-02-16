@@ -106,9 +106,11 @@ applyclassicphase(PHASE_SIX,
 							-- #if SEASON_OF_DISCOVERY
 							q(87441, {	-- Atiesh, Greatstaff of the Guardian [Priest]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { PRIEST },
 								["groups"] = {
 									i(236399),	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -116,9 +118,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(87442, {	-- Atiesh, Greatstaff of the Guardian [Mage]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { MAGE },
 								["groups"] = {
 									i(236400),	-- Atiesh, Greatstaff of the Guardian (Mage)
@@ -126,9 +130,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(87444, {	-- Atiesh, Greatstaff of the Guardian [Warlock]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { WARLOCK },
 								["groups"] = {
 									i(236398),	-- Atiesh, Greatstaff of the Guardian (Warlock)
@@ -136,9 +142,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(87443, {	-- Atiesh, Greatstaff of the Guardian [Druid]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { DRUID },
 								["groups"] = {
 									i(236401),	-- Atiesh, Greatstaff of the Guardian (Druid)
@@ -147,9 +155,11 @@ applyclassicphase(PHASE_SIX,
 							-- #else
 							q(9257, {	-- Atiesh, Greatstaff of the Guardian [Priest]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { PRIEST },
 								["groups"] = {
 									i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
@@ -157,9 +167,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(9270, {	-- Atiesh, Greatstaff of the Guardian [Mage]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { MAGE },
 								["groups"] = {
 									i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
@@ -167,9 +179,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(9271, {	-- Atiesh, Greatstaff of the Guardian [Warlock]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { WARLOCK },
 								["groups"] = {
 									i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
@@ -177,9 +191,11 @@ applyclassicphase(PHASE_SIX,
 							}),
 							q(9269, {	-- Atiesh, Greatstaff of the Guardian [Druid]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["qg"] = 15192,	-- Anachronos
+								["providers"] = {
+									{ "n", 15192 },	-- Anachronos
+									{ "i", 22737 },	-- Atiesh, Greatstaff of the Guardian
+								},
 								["maps"] = { STRATHOLME },
-								["cost"] = { { "i", 22737, 1 } },	-- Atiesh, Greatstaff of the Guardian
 								["classes"] = { DRUID },
 								["groups"] = {
 									i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
