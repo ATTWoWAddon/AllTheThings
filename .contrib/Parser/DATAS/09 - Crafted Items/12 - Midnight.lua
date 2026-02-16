@@ -564,6 +564,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(FISHING, {
+		i(267395),	-- Technique: Homely Wall Shelves (RECIPE!)
 		n(DISCOVERY, {
 			r(1225274),	-- Blood Hunter
 			r(1225266),	-- Bloomtail Minnow
@@ -717,9 +718,182 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(236767),	-- Tranquility Bloom++
 
 	}),
-	--[[prof(INSCRIPTION, {
+	prof(INSCRIPTION, {
+		n(DISCOVERY, {
+			r(1230034),	-- Thalassian Treatise on Alchemy
+			r(1230026),	-- Thalassian Treatise on Blacksmithing
+			r(1230030),	-- Thalassian Treatise on Enchanting
+			r(1230036),	-- Thalassian Treatise on Engineering
+			r(1230028),	-- Thalassian Treatise on Herbalism
+			r(1230029),	-- Thalassian Treatise on Jewelcrafting
+			r(1230031),	-- Thalassian Treatise on Leatherworking
+			r(1230027),	-- Thalassian Treatise on Mining
+			r(1230035),	-- Thalassian Treatise on Skinning
+			r(1230033),	-- Thalassian Treatise on Tailoring
+		}),
+		header(HEADERS.Spell, 1269575, {	-- Midnight Milling
+			i(245803),	-- Argentleaf Pigment+
+			i(245804),	-- Argentleaf Pigment++
+			i(245866),	-- Mana Lily Pigment+
+			i(245867),	-- Mana Lily Pigment++
+			i(245807),	-- Powder Pigment+
+			i(245808),	-- Powder Pigment++
+			i(245864),	-- Sanguithorn Pigment+
+			i(245865),	-- Sanguithorn Pigment++
+		}),
+		n(DECOR, {
+			i(262464),	-- Floating Void-Touched Tome (DECOR!)
+			i(262597),	-- Gilded Eversong Book (DECOR!)
+			i(253508),	-- Harandar Signpost (DECOR!)
+			i(262594),	-- Homely Sin'dorei Shelf (DECOR!)
+			i(262595),	-- Homely Wall Shelves (DECOR!)
+			i(262616),	-- Lively Songwriter's Quill (DECOR!)
+			i(263034),	-- Magnificent Towering Bookcase (DECOR!)
+			i(262598),	-- Opened Sin'dorei Scroll (DECOR!)
+			i(262790),	-- Restful Bronze Bench (DECOR!)
+			i(262615),	-- Sin'dorei Phoenix Quill (DECOR!)
+			i(262612),	-- Sturdy Ren'dorei Cask (DECOR!)
+			i(262601),	-- Wild Hanging Scroll (DECOR!)
+		}),
+		filter(MISC, {
+			i(245797),	-- Contract: The Amani Tribe+
+			i(245798),	-- Contract: The Amani Tribe++
+			i(245795),	-- Contract: The Hara'ti+
+			i(245796),	-- Contract: The Hara'ti++
+			i(245799),	-- Contract: The Silvermoon Court+
+			i(245800),	-- Contract: The Silvermoon Court++
+			i(245793),	-- Contract: The Singularity+
+			i(245794),	-- Contract: The Singularity++
+			i(245871),	-- Darkmoon Sigil: Blood+
+			i(245872),	-- Darkmoon Sigil: Blood++
+			i(245875),	-- Darkmoon Sigil: Hunt+
+			i(245876),	-- Darkmoon Sigil: Hunt++
+			i(245877),	-- Darkmoon Sigil: Rot+
+			i(245878),	-- Darkmoon Sigil: Rot++
+			i(245873),	-- Darkmoon Sigil: Void+
+			i(245874),	-- Darkmoon Sigil: Void++
+			i(245820),	-- Thalassian Missive of Crafting Speed+
+			i(245821),	-- Thalassian Missive of Crafting Speed++
+			i(245826),	-- Thalassian Missive of Deftness+
+			i(245827),	-- Thalassian Missive of Deftness++
+			i(245822),	-- Thalassian Missive of Finesse+
+			i(245823),	-- Thalassian Missive of Finesse++
+			i(245814),	-- Thalassian Missive of Ingenuity+
+			i(245815),	-- Thalassian Missive of Ingenuity++
+			i(245818),	-- Thalassian Missive of Multicraft+
+			i(245819),	-- Thalassian Missive of Multicraft++
+			i(245824),	-- Thalassian Missive of Perception+
+			i(245825),	-- Thalassian Missive of Perception++
+			i(245816),	-- Thalassian Missive of Resourcefulness+
+			i(245817),	-- Thalassian Missive of Resourcefulness++
+			i(245781),	-- Thalassian Missive of the Aurora+
+			i(245782),	-- Thalassian Missive of the Aurora++
+			i(245783),	-- Thalassian Missive of the Feverflare+
+			i(245784),	-- Thalassian Missive of the Feverflare++
+			i(245785),	-- Thalassian Missive of the Fireflash+
+			i(245786),	-- Thalassian Missive of the Fireflash++
+			i(245787),	-- Thalassian Missive of the Harmonious+
+			i(245788),	-- Thalassian Missive of the Harmonious++
+			i(245789),	-- Thalassian Missive of the Peerless+
+			i(245790),	-- Thalassian Missive of the Peerless++
+			i(245791),	-- Thalassian Missive of the Quickblade+
+			i(245792),	-- Thalassian Missive of the Quickblade++
+			i(245755),	-- Thalassian Treatise on Alchemy
+			i(245763),	-- Thalassian Treatise on Blacksmithing
+			i(245759),	-- Thalassian Treatise on Enchanting
+			i(245809),	-- Thalassian Treatise on Engineering
+			i(245761),	-- Thalassian Treatise on Herbalism
+			i(245757),	-- Thalassian Treatise on Inscription
+			i(245760),	-- Thalassian Treatise on Jewelcrafting
+			i(245758),	-- Thalassian Treatise on Leatherworking
+			i(245762),	-- Thalassian Treatise on Mining
+			i(245828),	-- Thalassian Treatise on Skinning
+			i(245756),	-- Thalassian Treatise on Tailoring
+			i(245879),	-- Vantus Rune: Radiant+
+			i(245880),	-- Vantus Rune: Radiant++
+			i(245856),	-- Ace of Blood
+			i(245857),	-- Two of Blood
+			i(245858),	-- Three of Blood
+			i(245859),	-- Four of Blood
+			i(245860),	-- Five of Blood
+			i(245861),	-- Six of Blood
+			i(245862),	-- Seven of Blood
+			i(245863),	-- Eight of Blood
+			i(245830),	-- Ace of Hunt
+			i(245831),	-- Two of Hunt
+			i(245832),	-- Three of Hunt
+			i(245833),	-- Four of Hunt
+			i(245834),	-- Five of Hunt
+			i(245835),	-- Six of Hunt
+			i(245836),	-- Seven of Hunt
+			i(245837),	-- Eight of Hunt
+			i(245847),	-- Ace of Rot
+			i(245848),	-- Two of Rot
+			i(245849),	-- Three of Rot
+			i(245850),	-- Four of Rot
+			i(245851),	-- Five of Rot
+			i(245852),	-- Six of Rot
+			i(245853),	-- Seven of Rot
+			i(245854),	-- Eight of Rot
+			i(245838),	-- Ace of Void
+			i(245839),	-- Two of Void
+			i(245840),	-- Three of Void
+			i(245841),	-- Four of Void
+			i(245842),	-- Five of Void
+			i(245843),	-- Six of Void
+			i(245844),	-- Seven of Void
+			i(245845),	-- Eight of Void
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(259205),	-- Gilded Alchemist's Mixing Rod
+			i(259209),	-- Gilded Sin'dorei Quill
+			i(259207),	-- Gilded Sin'dorei Rolling Pin
+			i(245777),	-- Hobbyist Alchemist's Mixing Rod
+			i(245779),	-- Hobbyist Rolling Pin
+			i(245775),	-- Hobbyist Scribe's Quill
+			i(245778),	-- Sin'dorei Alchemist's Mixing Rod
+			i(245776),	-- Sin'dorei Quill
+			i(245780),	-- Sin'dorei Rolling Pin
+		}),
+		filter(REAGENTS, {
+			i(245764),	-- Codified Azeroot+
+			i(245765),	-- Codified Azeroot++
+			i(245801),	-- Munsell Ink+
+			i(245802),	-- Munsell Ink++
+			i(245805),	-- Sienna Ink+
+			i(245806),	-- Sienna Ink++
+			i(245766),	-- Soul Cipher+
+			i(245767),	-- Soul Cipher++
+		}),
+		filter(TRINKET_F, {
+			i(245855),	-- Darkmoon Deck: Blood
+			i(245829),	-- Darkmoon Deck: Hunt
+			i(245846),	-- Darkmoon Deck: Rot
+			i(245750),	-- Darkmoon Deck: Void
+			i(246305),	-- Darkmoon Dominion: Blood
+			i(246304),	-- Darkmoon Dominion: Hunt
+			i(246306),	-- Darkmoon Dominion: Rot
+			i(246307),	-- Darkmoon Dominion: Void
+			i(245753),	-- Thalassian Competitor's Emblem
+			i(245752),	-- Thalassian Competitor's Insignia of Alacrity
+			i(245751),	-- Thalassian Competitor's Medallion
+		}),
+		n(WEAPONS, {
+			i(245770),	-- Aln'hara Cane
+			i(245769),	-- Aln'hara Lantern
+			i(245771),	-- Aln'hara Pikestaff
+			i(265337),	-- Aln'hara Sprigshot
+			i(245773),	-- Faunatender's Baton
+			i(265336),	-- Faunatender's Trust
+			i(245772),	-- Floratender's Crutch
+			i(245768),	-- Rootwarden's Lamp
+			i(245869),	-- Thalassian Competitor's Bow
+			i(245870),	-- Thalassian Competitor's Lamp
+			i(245868),	-- Thalassian Competitor's Pillar
+			i(268365),	-- Thalassian Competitor's Staff
+		}),
 	}),
-	prof(JEWELCRAFTING, {
+	--[[prof(JEWELCRAFTING, {
 	}),
 	prof(LEATHERWORKING, {
 	}),

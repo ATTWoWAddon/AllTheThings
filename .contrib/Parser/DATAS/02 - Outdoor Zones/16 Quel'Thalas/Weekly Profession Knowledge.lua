@@ -18,10 +18,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			-- Engineering
 			i(259194),	-- Dance Gear
 			i(259195),	-- Dawn Capacitor
-			--[[
 			-- Inscription
-			i(225226),	-- Striated Inkstone
-			i(225227),	-- Wax-Sealed Records
+			i(259196),	-- Brilliant Phoenix Ink
+			i(259197),	-- Loa-Blessed Rune
+			--[[
 			-- Jewelcrafting
 			i(225225),	-- Deepstone Fragment
 			i(225224),	-- Diaphanous Gem Shards

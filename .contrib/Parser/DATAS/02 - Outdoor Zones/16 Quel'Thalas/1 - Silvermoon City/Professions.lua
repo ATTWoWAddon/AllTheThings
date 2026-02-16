@@ -394,19 +394,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = TWW_HERBALISM,
 				}),
 			}),
+			--]]
 			prof(INSCRIPTION, {
-				n(219090, {	-- Brrigan <Inscription Trainer>
-					["coord"] = { 44.8, 70.9, DORNOGAL },
-					["groups"] = TWW_INSCRIPTION,
+				n(243553, {	-- Zantasia <Inscription Trainer>
+					["coord"] = { 46.9, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = MID_INSCRIPTION,
 				}),
-				n(219089, {	-- Kardu <Inscription Supplies>
-					["coord"] = { 48.6, 70.8, DORNOGAL },
+				n(243555, {	-- Lelorian <Inscription Supplies>
+					["coord"] = { 46.7, 51.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						i(226205),	-- Distilled Algari Freshwater
-						i(226204),	-- Fresh Parchment
+						i(245881),	-- Lexicologist's Vellum
+						i(264004, {	-- Midnight Scribe's Shop Sign (DECOR!)
+							["sourceAchievement"] = 42796,	-- Inscribing at Midnight
+						}),
+						i(245882),	-- Thalassian Songwater
 					},
 				}),
 			}),
+			--[[
 			prof(JEWELCRAFTING, {
 				n(219087, {	-- Makir <Jewelcrafting Trainer>
 					["coord"] = { 49.5, 70.8, DORNOGAL },

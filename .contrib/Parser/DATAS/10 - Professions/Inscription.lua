@@ -3796,8 +3796,6 @@ end
 -- Validation Code Undo change
 r = oldR;
 
-local DF_INSCRIPTION_KNOWLEDGE = 2028;
-local TWW_INSCRIPTION_KNOWLEDGE = 2790;
 -- Inscription - Skill ID  / SPELL ID
 root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, ["requireSkill"] = INSCRIPTION }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -5400,7 +5398,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }} }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
 				r(383512),	-- Bundle O' Cards: Dragon Isles
@@ -5531,7 +5529,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.INSCRIPTION),
 			},
 		},{
 			i(198607),	-- Scribe's Glyphs
@@ -5574,21 +5572,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228776),	-- Algari Scribe's Journal
-			},
-		},{
-			q(84129, {	-- Inscription  Services Requested
+		n(QUESTS, {
+			q(84129, {	-- Inscription Services Requested
+				["sourceQuests"] = { 84287 },	-- Crafting Orders: Inscription
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228776),	-- Algari Scribe's Journal
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }} }, {
 				r(447868),	-- Algari Treatise on Inscription
 				r(444192),	-- Darkmoon Sigil: Evolve
 				r(444193),	-- Darkmoon Sigil: Radiance
@@ -5665,9 +5662,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
 			},
 		},{
+			i(228776),	-- Algari Scribe's Journal
+			q(83730, {	-- TWW Inscription Order: Inscription
+				["name"] = "TWW Inscription Order: Inscription",
+				["provider"] = { "i", 222548 },	-- Algari Treatise on Inscription
+			}),
 			q(83264, {	-- TWW Weekly Inscription Knowledgepoint #1
 				["name"] = "TWW Weekly Inscription Treasure #1",
 				["provider"] = { "i", 225226 },	-- Striated Inkstone
@@ -5681,115 +5683,127 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42796, {	-- Inscribing at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264004),	-- Midnight Scribe's Shop Sign (DECOR!)
+			}),
+		}),
+		n(QUESTS, {
+			q(93693, {	-- Inscription Services Requested
+				["sourceQuests"] = { 93728 },	-- Crafting Orders: Inscription
+				["provider"] = { "n", 243553 },	-- Zantasia <Inscription Trainer>
+				["coord"] = { 46.9, 51.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
 				["groups"] = {
+					i(263457),	-- Thalassian Scribe's Journal
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228776),	-- Algari Scribe's Journal
-			},
-		},{
-			q(84129, {	-- Inscription  Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
-		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
-				r(447868),	-- Algari Treatise on Inscription
-				r(444192),	-- Darkmoon Sigil: Evolve
-				r(444193),	-- Darkmoon Sigil: Radiance
-				r(444194),	-- Darkmoon Sigil: Symbiosis
-				r(444195),	-- Darkmoon Sigil: Vivacity
-				r(444205),	-- Silver Tongue's Quill
-				r(444199),	-- Vagabond's Bounding Baton
-				r(444198),	-- Vagabond's Careful Crutch
-				r(444197),	-- Vagabond's Torch
-				r(444224),	-- Transcribe: Evolution
-				r(444227),	-- Transcribe: Radiance
-				r(444226),	-- Transcribe: Symbiosis
-				r(444225),	-- Transcribe: Vivacity
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 }} }, {
+				r(1230060),	-- Aln'hara Cane
+				r(1230061),	-- Aln'hara Lantern
+				r(1230059),	-- Aln'hara Pikestaff
+				r(1230062),	-- Aln'hara Sprigshot
+				r(1230070),	-- Darkmoon Dominion: Blood
+				r(1230072),	-- Darkmoon Dominion: Hunt
+				r(1230071),	-- Darkmoon Dominion: Rot
+				r(1230073),	-- Darkmoon Dominion: Void
+				r(1230074),	-- Darkmoon Sigil: Blood
+				r(1230076),	-- Darkmoon Sigil: Hunt
+				r(1230075),	-- Darkmoon Sigil: Rot
+				r(1230077),	-- Darkmoon Sigil: Void
+				r(1230085),	-- Inscribe: Blood
+				r(1230083),	-- Inscribe: Hunt
+				r(1230081),	-- Inscribe: Rot
+				r(1230079),	-- Inscribe: Void
+				r(1230024),	-- Sin'dorei Alchemist's Mixing Rod
+				r(1230025),	-- Sin'dorei Quill
+				r(1230023),	-- Sin'dorei Rolling Pin
+				r(1230032),	-- Thalassian Treatise on Inscription
+				r(1230084),	-- Transcribe: Blood
+				r(1230082),	-- Transcribe: Hunt
+				r(1230080),	-- Transcribe: Rot
+				r(1230078),	-- Transcribe: Void
 			}),
 		}),
 		n(TREASURES, {
-			o(455982, {	-- Blue Earthen Pigment
-				["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
-				["questID"] = 83885,
+			--o(455982, {	-- Half-Baked Techniques
+			--	["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
+			--	["questID"] = 83885,
+			--	["groups"] = {
+					i(238577),	-- Half-Baked Techniques
+			--	},
+			--}),
+			o(525934, {	-- Intrepid Explorer's Marker
+				["coord"] = { 52.4, 52.6, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89070,
 				["groups"] = {
-					i(226311),	-- Blue Earthen Pigment
+					i(238575),	-- Intrepid Explorer's Marker
 				},
 			}),
-			o(455980, {	-- Calligrapher's Chiseled Marker
-				["coord"] = { 42.8, 49.0, HALLOWFALL },
-				["questID"] = 83887,
+			o(525936, {	-- Leather-Bound Techniques
+				["coord"] = { 40.5, 49.4, MAP.MIDNIGHT.ZUL_AMAN },
+				["questID"] = 89068,
 				["groups"] = {
-					i(226313),	-- Calligrapher's Chiseled Marker
+					i(238573),	-- Leather-Bound Techniques
 				},
 			}),
-			o(455985, {	-- Dornogal Scribe's Quill
-				["coord"] = { 57.1, 46.98, DORNOGAL },
-				["questID"] = 83882,
+			o(525933, {	-- Leftover Sanguithorn Pigment
+				["coord"] = { 52.7, 50.0, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89071,
 				["groups"] = {
-					i(226308),	-- Dornogal Scribe's Quill
+					i(238576),	-- Leftover Sanguithorn Pigment
 				},
 			}),
-			o(455984, {	-- Historian's Dip Pen
-				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
-				["questID"] = 83883,
+			o(525931, {	-- Songwriter's Pen
+				["coord"] = { 47.7, 50.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89073,
 				["groups"] = {
-					i(226309),	-- Historian's Dip Pen
+					i(238578),	-- Songwriter's Pen
 				},
 			}),
-			o(455981, {	-- Informant's Fountain Pen
-				["coord"] = { 43.2, 58.9, HALLOWFALL },
-				["questID"] = 83886,
+			o(525930, {	-- Songwriter's Quill
+				["coord"] = { 40.3, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89074,
 				["groups"] = {
-					i(226312),	-- Informant's Fountain Pen
+					i(238579),	-- Songwriter's Quill
 				},
 			}),
-			o(455979, {	-- Nerubian Texts
-				["coord"] = { 55.8, 43.9, AZJ_KAHET },
-				["questID"] = 83888,
+			o(525935, {	-- Spare Ink
+				["coord"] = { 48.3, 75.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89069,
 				["groups"] = {
-					i(226314),	-- Nerubian Texts
+					i(238574),	-- Spare Ink
 				},
 			}),
-			o(455983, {	-- Runic Scroll
-				["coord"] = { 48.5, 34.3, THE_RINGING_DEEPS },
-				["questID"] = 83884,
+			o(455978, {	-- Void-Touched Quill
+				["coord"] = { 60.7, 84.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89067,
 				["groups"] = {
-					i(226310),	-- Runic Scroll
-				},
-			}),
-			o(455978, {	-- Venomancer's Ink Well
-				["coord"] = { 50.1, 30.8, NERUBAR },
-				["questID"] = 83889,
-				["groups"] = {
-					i(226315),	-- Venomancer's Ink Well
+					i(238572),	-- Void-Touched Quill
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_INSCRIPTION_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
 			},
 		},{
-			q(83264, {	-- TWW Weekly Inscription Knowledgepoint #1
-				["name"] = "TWW Weekly Inscription Treasure #1",
-				["provider"] = { "i", 225226 },	-- Striated Inkstone
+			i(263457),	-- Thalassian Scribe's Journal
+			q(95131, {	-- MID Inscription Order: Inscription
+				["name"] = "MID Inscription Order: Inscription",
+				["provider"] = { "i", 245757 },	-- Thalassian Treatise on Inscription
 			}),
-			q(83262, {	-- TWW Weekly Inscription Knowledgepoint #2
-				["name"] = "TWW Weekly Inscription Treasure #2",
-				["provider"] = { "i", 225227 },	-- Wax-Sealed Records
+			q(83264, {	-- MID Weekly Inscription Knowledgepoint #1
+				["name"] = "MID Weekly Inscription Treasure #1",
+				["provider"] = { "i", 259196 },	-- Brilliant Phoenix Ink
 			}),
-		})),--]]
+			q(83262, {	-- MID Weekly Inscription Knowledgepoint #2
+				["name"] = "MID Weekly Inscription Treasure #2",
+				["provider"] = { "i", 259197 },	-- Loa-Blessed Rune
+			}),
+		})),
 	})),
 })));
 root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION)));

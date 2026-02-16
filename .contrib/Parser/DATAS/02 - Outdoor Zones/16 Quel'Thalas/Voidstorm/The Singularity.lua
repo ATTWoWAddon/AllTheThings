@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
-								i(25800, {	-- Technique: Floating Void-Touched Tome (RECIPE!)
+								i(258500, {	-- Technique: Floating Void-Touched Tome (RECIPE!)
 									["cost"] = {
 										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
