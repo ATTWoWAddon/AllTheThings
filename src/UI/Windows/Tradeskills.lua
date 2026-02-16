@@ -115,7 +115,7 @@ app:CreateWindow("Tradeskills", {
 			end
 
 			-- Cache Learned Spells
-			local skillCache = app.SearchForFieldContainer("spellID");
+			local skillCache = app.GetFieldContainer("spellID");
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = AllTheThingsAD.Reagents;

@@ -14,8 +14,8 @@ local tostring, ipairs, pairs, tinsert
 local math_min = math.min;
 
 -- App & Module locals
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local SearchForField, GetFieldContainer
+	= app.SearchForField, app.GetFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local IsQuestFlaggedCompleted;
 local IsSpellKnown;
@@ -65,7 +65,7 @@ local function GetSpellCompleted(spellID)
 	return 0;
 end
 local function GetRelatedThingsForExaltedReputations(t, objects)
-	for factionID,g in pairs(SearchForFieldContainer("factionID")) do
+	for factionID,g in pairs(GetFieldContainer("factionID")) do
 		if not IgnoredReputationsForAchievements[factionID] then
 			for j,o in ipairs(g) do
 				if o.key == "factionID" then
@@ -81,7 +81,7 @@ local function GetRelatedThingsForOwnItem(t, objects)
 	if searchResults then tinsert(objects, searchResults[1]); end
 end
 local function GetRelatedThingsForMounts(t, objects)
-	for spellID,spells in pairs(SearchForFieldContainer("mountID")) do
+	for spellID,spells in pairs(GetFieldContainer("mountID")) do
 		for i,spell in ipairs(spells) do
 			tinsert(objects, spell);
 			break;
@@ -89,7 +89,7 @@ local function GetRelatedThingsForMounts(t, objects)
 	end
 end
 local function GetRelatedThingsForPets(t, objects)
-	for i,pets in pairs(SearchForFieldContainer("speciesID")) do
+	for i,pets in pairs(GetFieldContainer("speciesID")) do
 		tinsert(objects, pets[1]);
 	end
 end
@@ -134,7 +134,7 @@ local GetAchievementCriteriaCommandForSkillID = setmetatable({
 local AchievementCriteriaCommands = {
 	CriteriaTypeForExaltedReputations = function()
 		local count = 0;
-		for factionID,g in pairs(SearchForFieldContainer("factionID")) do
+		for factionID,g in pairs(GetFieldContainer("factionID")) do
 			if not IgnoredReputationsForAchievements[factionID] then
 				for j,o in ipairs(g) do
 					if o.key == "factionID" and o.standing == 8 then
@@ -154,7 +154,7 @@ local AchievementCriteriaCommands = {
 	end,
 	CriteriaTypeForMounts = function()
 		local count = 0;
-		for i,g in pairs(SearchForFieldContainer("mountID")) do
+		for i,g in pairs(GetFieldContainer("mountID")) do
 			for j,o in ipairs(g) do
 				if o.collected then count = count + 1; end
 				break;
@@ -165,7 +165,7 @@ local AchievementCriteriaCommands = {
 	end,
 	CriteriaTypeForPets = function()
 		local count = 0;
-		for i,g in pairs(SearchForFieldContainer("speciesID")) do
+		for i,g in pairs(GetFieldContainer("speciesID")) do
 			for j,o in ipairs(g) do
 				if o.collected then count = count + 1; end
 				break;

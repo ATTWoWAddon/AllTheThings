@@ -198,7 +198,7 @@ app:CreateWindow("Tradeskills", {
 			local Runner = self:GetRunner()
 			Runner.SetPerFrame(100);
 			local Run = Runner.Run;
-			for spellID,data in pairs(app.SearchForFieldContainer("spellID")) do
+			for spellID,data in pairs(app.GetFieldContainer("spellID")) do
 				Run(CacheRecipeSchematic, spellID);
 			end
 			Runner.OnEnd(function()

@@ -882,6 +882,7 @@ do	-- Simple Key Cache
 -- User Searches should use a SearchForFieldRecursively call instead if a key is not cached.
 -- Search using a RegEx for this:
 -- ^(?=.*SearchForField)(?=.*artifactID).*$
+-- ^(?=.*GetField)(?=.*artifactID).*$
 -- ^(?=.*GetRawField)(?=.*artifactID).*$
 -- ^(?=.*SearchForObject)(?=.*artifactID).*$
 -- ^(?=.*CreateDynamicHeader)(?=.*artifactID).*$

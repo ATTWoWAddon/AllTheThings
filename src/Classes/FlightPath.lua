@@ -55,7 +55,7 @@ if app.IsGit then
 -- use /att check-fps if you want to run this
 app.ChatCommands.Add("check-fps", function()
 	local missingByMapID, any = {}, false;
-	for flightpathID,flightPaths in pairs(app.SearchForFieldContainer("flightpathID")) do
+	for flightpathID,flightPaths in pairs(app.GetFieldContainer("flightpathID")) do
 		for i,o in ipairs(flightPaths) do
 			if not (o.crs or o.npcID or o.objectID or o.provider or o.providers) and (not o.u or o.u >= 11) then
 				local mapID = app.GetRelativeValue(o, "mapID");

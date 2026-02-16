@@ -2,8 +2,7 @@
 local _, app = ...;
 -- This window has a dependency on Questie in Classic.
 if not app.IsClassic then return; end
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local SearchForField = app.SearchForField;
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
@@ -79,7 +78,7 @@ app:CreateWindow("Missing Quests", {
 					end
 				end
 
-				for id,questData in pairs(SearchForFieldContainer("questID")) do
+				for id,questData in pairs(app.GetFieldContainer("questID")) do
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
 						for i,quest in ipairs(questData) do

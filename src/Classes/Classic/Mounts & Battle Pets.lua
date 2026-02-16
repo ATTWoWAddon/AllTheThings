@@ -70,7 +70,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end);
 app.AddEventHandler("OnRefreshCollections", function()
 	local char, none, state = {}, {}, nil
-	for id,g in pairs(app.SearchForFieldContainer(KEY)) do
+	for id,g in pairs(app.GetFieldContainer(KEY)) do
 		if IsSpellKnown(id) then
 			char[id] = true;
 		else
@@ -134,7 +134,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end);
 app.AddEventHandler("OnRefreshCollections", function()
 	local char, none, state = {}, {}, nil
-	for id,g in pairs(app.SearchForFieldContainer(KEY)) do
+	for id,g in pairs(app.GetFieldContainer(KEY)) do
 		for i,o in ipairs(g) do
 			if o.itemID and GetItemCount(o.itemID, true) > 0 then
 				state = true;

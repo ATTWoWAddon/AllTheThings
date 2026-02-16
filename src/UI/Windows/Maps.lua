@@ -35,7 +35,7 @@ app:CreateWindow("Maps", {
 				if #g < 1 then
 					-- Cache all maps by their ID number, starting with maps we reference in our DB.
 					local mapsByID = {};
-					for mapID,cachedMaps in pairs(app.SearchForFieldContainer("mapID")) do
+					for mapID,cachedMaps in pairs(app.GetFieldContainer("mapID")) do
 						if not mapsByID[mapID] then
 							local mapObject = app.CreateMap(mapID, {
 								mapInfo = C_Map_GetMapInfo(mapID),

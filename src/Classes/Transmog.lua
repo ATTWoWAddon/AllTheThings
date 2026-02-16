@@ -36,8 +36,8 @@ local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local L, contains, containsAny, SearchForField, SearchForFieldContainer
-	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer
+local L, contains, containsAny, SearchForField
+	= app.L, app.contains, app.containsAny, app.SearchForField
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
@@ -733,7 +733,7 @@ end
 local function DetermineMaxATTSourceID()
 	-- app.PrintDebug("Initial Session Refresh")
 	local maxSourceID = 0;
-	for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+	for id,_ in pairs(app.GetFieldContainer("sourceID")) do
 		-- track the max sourceID so we can evaluate sources not in ATT as well
 		if id > maxSourceID then maxSourceID = id; end
 	end

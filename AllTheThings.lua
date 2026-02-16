@@ -42,8 +42,8 @@ local print,rawget,rawset,tostring,ipairs,pairs,tonumber,wipe,select,setmetatabl
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- App & Module locals
-local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
-	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
+local CacheFields, SearchForField, SearchForObject
+	= app.CacheFields, app.SearchForField, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local TryColorizeName = app.TryColorizeName;
 local MergeProperties = app.MergeProperties
@@ -1709,7 +1709,7 @@ end
 end	-- Dynamic/Main Data
 
 local function PrePopulateAchievementSymlinks()
-	local achCache = app.SearchForFieldContainer("achievementID")
+	local achCache = app.GetRawFieldContainer("achievementID")
 	-- app.PrintDebug("FillAchSym")
 	if achCache then
 		local FillSym = app.FillAchievementCriteriaAsync

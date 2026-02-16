@@ -381,7 +381,7 @@ local function CacheExplorationForAllMaps()
 		end
 	end
 	local saved = {}
-	for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
+	for mapID,_ in pairs(app.GetFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
 			app.print("Checking Map " .. mapID .. "...");
 			coroutine.yield()
@@ -395,7 +395,7 @@ end
 local function CacheExplorationForAllKnownExploration()
 	app.print("Known Map Exploration Started...")
 	local saved = {}
-	for explorationID,explorations in pairs(app.SearchForFieldContainer("explorationID")) do
+	for explorationID,explorations in pairs(app.GetFieldContainer("explorationID")) do
 		if CheckHitsForExploration(explorations[1], saved) then
 			coroutine.yield();
 		end
@@ -826,7 +826,7 @@ local function HarvestExploration()
 		end
 	end
 	local saved = {}
-	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
+	for mapID,objects in pairs(app.GetFieldContainer("mapID")) do
 		-- only check exploration on Zone maps where we have a raw map listed in ATT
 		local mapInfo = C_Map_GetMapInfo(mapID)
 		if mapInfo and (mapInfo.mapType == 3 or mapInfo.mapType == 6) and C_Map_GetMapArtID(mapID) and app.SearchForObject("mapID",mapID,"key") then

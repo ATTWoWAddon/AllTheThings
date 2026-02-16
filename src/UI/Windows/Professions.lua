@@ -79,7 +79,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 							});
 							local events = {};
 							local recipes = {};
-							for spellID,sources in pairs(app.SearchForFieldContainer("spellID")) do
+							for spellID,sources in pairs(app.GetFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
 									local count = #sources;
 									if count > 0 then

@@ -120,7 +120,7 @@ app:CreateWindow("Achievements", {
 					end
 				end
 				cacheAchievementData(data, categories, data.g);
-				for i,matches in pairs(app.SearchForFieldContainer("achievementID")) do
+				for i,matches in pairs(app.GetFieldContainer("achievementID")) do
 					if not data.achievements[i] then
 						local mostAccessibleSource;
 						for j,o in ipairs(matches) do

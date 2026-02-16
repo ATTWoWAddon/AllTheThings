@@ -8,8 +8,8 @@ local pairs, select, rawget
 	= pairs, select, rawget
 
 -- App locals
-local IsQuestFlaggedCompleted, SearchForFieldContainer, SearchForField
-	= app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.SearchForField
+local IsQuestFlaggedCompleted, SearchForField
+	= app.IsQuestFlaggedCompleted, app.SearchForField
 
 -- WoW API Cache
 local GetSpellLink = app.WOWAPI.GetSpellLink;
@@ -93,7 +93,7 @@ end
 app.GetSpellName = GetSpellName;
 SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 	__index = function(t, key)
-		local cache = SearchForFieldContainer("spellID");
+		local cache = app.GetFieldContainer("spellID");
 		for spellID,g in pairs(cache) do
 			GetSpellName(spellID);
 		end
