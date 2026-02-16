@@ -12,7 +12,6 @@ local wipearray, ArrayAppend =
 	app.wipearray, app.ArrayAppend
 
 -- Module locals
-local AllCaches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
 local fieldMeta = {
 	__index = function(t, field)
 		if field == nil then return end
@@ -28,6 +27,7 @@ local fieldMeta = {
 	end,
 };
 local currentCache, CacheFields;
+local AllCaches, postscripts, runners = {}, {}, {}, {};
 
 -- Cache a given group into the current cache for the provided field and value
 local function CacheField(group, field, value)
@@ -1068,5 +1068,3 @@ app.SearchForSourcePath = SearchForSourcePath;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
 app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;
--- this table is deleted once used
-app.__CacheQuestTriggers = QuestTriggers;
