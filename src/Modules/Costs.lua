@@ -16,8 +16,8 @@ local PlayerHasToy
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
-local SearchForFieldContainer, GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
-	= app.SearchForFieldContainer, app.GetRawField, app.GetRelativeByFunc, app.SearchForObject, app.IsComplete
+local GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
+	= app.GetRawField, app.GetRelativeByFunc, app.SearchForObject, app.IsComplete
 local OneTimeQuests = app.EmptyTable
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
@@ -467,17 +467,17 @@ local function UpdateCosts()
 	-- app.PrintDebug("UpdateCosts",refresh)
 
 	-- Get all itemIDAsCost entries
-	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
+	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
 	end
 
 	-- Get all currencyIDAsCost entries
-	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
+	for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
 	end
 
 	-- Get all spellIDAsCost entries
-	for spellID,refs in pairs(SearchForFieldContainer("spellIDAsCost")) do
+	for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
 	end
 end
