@@ -3,8 +3,8 @@
 --------------------------------------------------------------------------------
 --            Copyright 2017-2025 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
-local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
-	= rawget, pairs, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
+local rawget, pairs, rawset, type, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
+	= rawget, pairs, rawset, type, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
 if not app.ReagentsDB then
@@ -339,23 +339,101 @@ end
 
 -- Common Metatable Functions
 do
-local __MetaTable = {
-	AutoTable = function()
-		return { __index = function(t, key)
-			if key == nil then return end
-			local k = {}
-			t[key] = k
-			return k
-		end}
-	end,
-}
+local function AutoTableMetaFunc(t, key)
+	local value = {}
+	t[key] = value
+	return value
+end
 if app.__perf then
 	-- if tracking performance, we actually want each MetaTable reference to create a unique metatable so that performance stats are not shared
 	-- between multiple tables
-	app.MetaTable = setmetatable({__noperf=true}, { __index = function(t,key) return __MetaTable[key] and __MetaTable[key]() or nil end })
+	local function AutoTableOfTablesMetaIndexFunc(t, key)
+		local value = setmetatable({}, { __index = AutoTableMetaFunc });
+		t[key] = value;
+		return value;
+	end
+	local function AutoTableOfTablesMetaNewIndexFunc(t, key, value)
+		if type(value) == "table" then
+			setmetatable(value, { __index = AutoTableMetaFunc });
+		end
+		rawset(t, key, value);
+		return value;
+	end
+	local function AutoTableOfTablesOfTablesMetaIndexFunc(t, key)
+		local value = setmetatable({}, {
+			__index = AutoTableOfTablesMetaIndexFunc,
+			__newindex = AutoTableOfTablesMetaNewIndexFunc
+		});
+		t[key] = value;
+		return value;
+	end
+	local function AutoTableOfTablesOfTablesMetaNewIndexFunc(t, key, value)
+		if type(value) == "table" then
+			setmetatable(value, {
+				__index = AutoTableOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesMetaNewIndexFunc
+			});
+		end
+		rawset(t, key, value);
+		return value;
+	end
+	local __MetaTable = {
+		AutoTable = function()
+			return { __index = AutoTableMetaFunc }
+		end,
+		AutoTableOfTables = function()
+			return {
+				__index = AutoTableOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesMetaNewIndexFunc
+			};
+		end,
+		AutoTableOfTablesOfTables = function()
+			return {
+				__index = AutoTableOfTablesOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesOfTablesMetaNewIndexFunc
+			};
+		end
+	}
+	app.MetaTable = setmetatable({__noperf=true}, {
+		__index = function(t,key)
+			return __MetaTable[key] and __MetaTable[key]() or nil
+		end
+	})
 else
-	app.MetaTable = {}
-	app.MetaTable.AutoTable = __MetaTable.AutoTable()
+	local AutoTableMeta = { __index = AutoTableMetaFunc };
+	local AutoTableOfTablesMeta = {
+		__index = function(t, key)
+			local value = setmetatable({}, AutoTableMeta);
+			t[key] = value;
+			return value;
+		end,
+		__newindex = function(t, key, value)
+			if type(value) == "table" then
+				setmetatable(value, AutoTableMeta);
+			end
+			rawset(t, key, value);
+			return value;
+		end,
+	};
+	local AutoTableOfTablesOfTablesMeta = {
+		__index = function(t, key)
+			local value = setmetatable({}, AutoTableOfTablesMeta);
+			t[key] = value;
+			return value;
+		end,
+		__newindex = function(t, key, value)
+			if type(value) == "table" then
+				setmetatable(value, AutoTableOfTablesMeta);
+			end
+			rawset(t, key, value);
+			return value;
+		end,
+	};
+	app.MetaTable = {
+		AutoTable = AutoTableMeta,
+		AutoTableOfTables = AutoTableOfTablesMeta,
+		AutoTableOfTablesOfTables = AutoTableOfTablesOfTablesMeta,
+	};
 end
 end
 

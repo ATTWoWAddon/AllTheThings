@@ -14,16 +14,7 @@ local SearchForField = app.SearchForField
 local SearchForObject = app.SearchForObject;
 local WaypointRunner = app.CreateRunner("waypoint");
 WaypointRunner.SetPerFrameDefault(5)
-local __TomTomWaypointCacheIndexX = { __index = function(t, x)
-	local o = setmetatable({}, app.MetaTable.AutoTable);
-	t[x] = o;
-	return o;
-end };
-local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
-	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
-	t[mapID] = o;
-	return o;
-end });
+local __TomTomWaypointCache = setmetatable({}, app.MetaTable.AutoTableOfTablesOfTables);
 local __TomTomWaypointCount, __PlottedGroup;
 local function PlotCachedCoords()
 	if TomTom then
