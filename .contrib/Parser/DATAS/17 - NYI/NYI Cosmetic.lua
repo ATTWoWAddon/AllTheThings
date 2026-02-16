@@ -617,14 +617,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233301),	-- Violet Clockwork Pauldrons
 				i(233305),	-- Violet Clockwork Uniform
 
-				------  Ornate Violet Lunar Festival Set ------
-				q(86421),	-- Ensemble: Ornate Violet Lunar Festival Attire
-				i(234043),	-- Ornate Violet Lunar Belt
-				i(234055),	-- Ornate Violet Lunar Crown
-				i(234047),	-- Ornate Violet Lunar Robe
-				i(234039),	-- Ornate Violet Lunar Slippers
-				i(234051),	-- Ornate Violet Lunar Spaulders
-
 				------  Ornate Teal Lunar Festival Set ------
 				i(234060),	-- Ensemble: Ornate Teal Lunar Festival Attire
 				q(86422),	-- Ensemble: Ornate Teal Lunar Festival Attire
