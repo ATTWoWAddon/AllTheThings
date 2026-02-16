@@ -1440,10 +1440,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12922, {	-- The Refiner's Fire
-						["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 						["sourceQuest"] = 13064,	-- Sibling Rivalry (guessed by last quest completed prior)
 						["provider"] = { "i", 41556 },	-- Slag Covered Metal
-						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					q(13843, {	-- The Scrapbot Construction Kit
 						["sourceQuest"] = 12889,	-- The Prototype Console
@@ -1833,6 +1831,10 @@ root(ROOTS.Zones, {
 					i(42780),	-- Relics of Ulduar
 					i(49050, {	-- Schematic: Jeeves (RECIPE!)
 						["crs"] = { 29724 },	-- Library Guardian
+					}),
+					i(41556, {	-- Slag Covered Metal
+						["description"] = "The giants that drop this spawn on and around the ice patch east of Dun Niffelem.",
+						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					i(43573, {	-- Tears of Bitter Anguish
 						["crs"] = { 29570 },	-- Nascent Val'kyr
