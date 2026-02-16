@@ -1556,6 +1556,9 @@ function app:GetDatabaseRoot()
 					icon = app.asset("Category_PetJournal")
 				}),
 
+				-- Buildings
+				app.CreateDynamicHeader("garrisonbuildingID", SimpleHeaderGroup(app.HeaderConstants.BUILDINGS)),
+
 				-- Campsites
 				app.CreateDynamicHeader("campsiteID", {
 					name = WARBAND_SCENES,
@@ -1599,10 +1602,6 @@ function app:GetDatabaseRoot()
 
 				-- Followers
 				app.CreateDynamicHeader("followerID", SimpleHeaderGroup(app.HeaderConstants.FOLLOWERS)),
-
-				-- Garrison Buildings
-				-- TODO: doesn't seem to work...
-				-- app.CreateDynamicHeader("garrisonbuildingID", SimpleHeaderGroup(app.HeaderConstants.BUILDINGS)),
 
 				-- Heirlooms
 				app.CreateDynamicHeader("heirloomID", SimpleHeaderGroup(app.HeaderConstants.HEIRLOOMS)),
