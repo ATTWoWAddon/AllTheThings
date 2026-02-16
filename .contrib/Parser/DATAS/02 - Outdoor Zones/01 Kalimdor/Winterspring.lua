@@ -2354,29 +2354,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.6, 24.0, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
-				n(14457, {	-- Princess Tempestria
-					-- TODO: Move this to an Elemental Invasion World Event file.
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coord"] = { 54.6, 42.6, WINTERSPRING },
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
-						-- #endif
-						i(18679, {	-- Frigid Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18678, {	-- Tempestria's Frozen Necklace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-						-- #endif
-					},
-				}),
 				n(50788, {	-- Quetzl
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
