@@ -959,6 +959,17 @@ local function StartMovingOrSizing(self)
 end
 
 -- Shared Panel Functions
+local function GenerateSourcePathForTSM(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 or not group.text then
+			return GenerateSourcePathForTSM(parent, l + 1);
+		else
+			return GenerateSourcePathForTSM(parent, l + 1) .. "`" .. group.text;
+		end
+	end
+	return L.TITLE
+end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -1010,7 +1021,7 @@ local function RowOnClick(self, button)
 							local dict, path, itemString, group = {}, nil, nil, nil;
 							for i=1,#missingItems do
 								group = missingItems[i]
-								path = app.GenerateSourcePathForTSM(group, 0);
+								path = GenerateSourcePathForTSM(group, 0);
 								if path then
 									itemString = dict[path];
 									if itemString then
@@ -1052,7 +1063,7 @@ local function RowOnClick(self, button)
 							for i=1,#missingItems do
 								group = missingItems[i]
 								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-								if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
+								if search then itemList[search] = GenerateSourcePathForTSM(group, 0); end
 							end
 							app:ShowPopupDialog(L.TSM_WARNING_1 .. L.TITLE .. L.TSM_WARNING_2,
 							function()
