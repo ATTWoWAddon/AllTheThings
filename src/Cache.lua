@@ -666,7 +666,7 @@ CacheFields = function(group, skipMapCaching, cacheName)
 		app.wipearray(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
 	end
-	--print(("Cache Fields: %.3f"):format((GetTimePreciseSec() - start) * 1000));
+	--print(("Cache Fields: %.3f %s"):format((GetTimePreciseSec() - start) * 1000, group.text));
 	return group;
 end
 app.CacheFields = CacheFields;
