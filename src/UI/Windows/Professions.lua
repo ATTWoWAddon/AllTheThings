@@ -66,21 +66,18 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									specializations[spellID] = specialization;
 								end
 							end
-
-							local expansions, events = {}, {};
-							for expansionID,_ in pairs(app.SearchForFieldContainer("expansionID")) do
-								expansionID = floor(expansionID);
-								if not expansions[expansionID] then
+							
+							local expansions = setmetatable({}, {
+								__index = function(t, expansionID)
 									local expansion = app.CreateExpansion(expansionID);
-									expansions[expansionID] = expansion;
+									t[expansionID] = expansion;
 									expansion.SortType = "name";
 									expansion.parent = data;
 									expansion.g = {};
-								end
-							end
-
-
-
+									return expansion;
+								end,
+							});
+							local events = {};
 							local recipes = {};
 							for spellID,sources in pairs(app.SearchForFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
