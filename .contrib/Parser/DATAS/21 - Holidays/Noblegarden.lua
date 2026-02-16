@@ -164,6 +164,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 10 } },	-- 10x Noblegarden Chocolate
 	}),
+	i(44818, {	-- Noblegarden Egg
+		["timeline"] = { ADDED_3_1_0 },
+		["cost"] = { { "i", 44791, 5 } },	-- 5x Noblegarden Chocolate
+	}),
 	i(45073, {	-- Spring Flowers
 		["timeline"] = { ADDED_3_1_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate

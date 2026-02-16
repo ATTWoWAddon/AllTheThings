@@ -74,8 +74,7 @@ local function GetRawField(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field.
 	-- NOTE: Can be nil for simplicity in use
 	local container = rawget(currentCache, field)
-	if not container then return end
-	return rawget(container, id);
+	if container then return rawget(container, id) end
 end
 app.GetRawField = GetRawField;
 app.GetRawFieldContainer = function(field)
