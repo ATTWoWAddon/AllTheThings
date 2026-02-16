@@ -818,6 +818,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		applyclassicphase(TBC_PHASE_FIVE, i(35286, {	-- Bloated Giant Sunfish
 			[MAPS_FIELD] = { ISLE_OF_QUELDANAS },
 			["timeline"] = { ADDED_2_4_0 },
+			["groups"] = {
+				i(35287),	-- Luminous Bluetail
+			},
 		})),
 		applyclassicphase(TBC_PHASE_FOUR, i(33823, {	-- Bloodfin Catfish
 			[MAPS_FIELD] = { DEADWIND_PASS },

@@ -680,6 +680,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			prof(FISHING, {
 				i(35286, {	-- Bloated Giant Sunfish
 					["timeline"] = { ADDED_2_4_0 },
+					["groups"] = {
+						i(35287),	-- Luminous Bluetail
+					},
 				}),
 				i(127141, {	-- Bloated Thresher
 					["timeline"] = { ADDED_6_2_0 },
