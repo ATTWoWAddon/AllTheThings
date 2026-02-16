@@ -1440,7 +1440,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				sharedData({	-- Rare quality (blue) gems:
 					["description"] = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
 					["providers"] = {
-						{ "i", 44946 },	-- Icy Prism
+						{ "i", 44943 },	-- Icy Prism
 						{ "i", 36912 },	-- Saronite Ore
 						{ "i", 36910 },	-- Titanium Ore
 					},
