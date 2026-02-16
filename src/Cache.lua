@@ -12,20 +12,6 @@ local wipearray, ArrayAppend =
 	app.wipearray, app.ArrayAppend
 
 -- Module locals
-local fieldMeta = {
-	__index = function(t, field)
-		if field == nil then return end
-		local container = setmetatable({}, app.MetaTable.AutoTable);
-		t[field] = container;
-		return container;
-	end,
-	__newindex = function(t, field, value)
-		if field == nil then return end
-		local container = setmetatable(value, app.MetaTable.AutoTable);
-		rawset(t, field, container);
-		return container;
-	end,
-};
 local currentCache, CacheFields;
 local AllCaches, postscripts, runners = {}, {}, {}, {};
 
@@ -51,7 +37,7 @@ local CreateDataCache = function(name, skipMapCaching)
 		CacheFields(groups, skipMapCaching);
 		currentCache = oldCache;
 	end
-	setmetatable(cache, fieldMeta);
+	setmetatable(cache, app.MetaTable.AutoTableOfTables);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
 	return cache;
 end
