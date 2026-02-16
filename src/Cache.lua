@@ -633,11 +633,11 @@ fieldConverters.sourceID = function(group, value)
 end
 
 -- Now that we have the runners and post scripts, we can declare the CacheFields method.
-local GetTimePreciseSec = GetTimePreciseSec;
+--local GetTimePreciseSec = GetTimePreciseSec;
 CacheFields = function(group, skipMapCaching, cacheName)
 	-- app.PrintDebug("CacheFields",app:SearchLink(group),skipMapCaching,cacheName)
 	allowMapCaching = not skipMapCaching
-	local start = GetTimePreciseSec();
+	--local start = GetTimePreciseSec();
 	if cacheName then
 		AllCaches[cacheName].CacheFields(group)
 	else
@@ -666,7 +666,7 @@ CacheFields = function(group, skipMapCaching, cacheName)
 		app.wipearray(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
 	end
-	print(("Cache Fields: %.3f"):format((GetTimePreciseSec() - start) * 1000));
+	--print(("Cache Fields: %.3f"):format((GetTimePreciseSec() - start) * 1000));
 	return group;
 end
 app.CacheFields = CacheFields;
