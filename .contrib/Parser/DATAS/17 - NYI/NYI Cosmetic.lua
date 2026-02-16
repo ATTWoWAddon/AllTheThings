@@ -586,7 +586,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233275),	-- Steam-Powered Violet Clock Cloak
 				i(235330),	-- Steam-Pressed Cobalt Cloak
 				i(235333),	-- Steam-Pressed Violet Cloak
-				i(233239),	-- Sunny Pack of Lunar Explosives
 				i(232910),	-- Vivid Heartfelt Shoulder Cape
 				i(232916),	-- Vivid Heartfelt Spaulders
 			}),
@@ -619,7 +618,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233305),	-- Violet Clockwork Uniform
 
 				------  Ornate Violet Lunar Festival Set ------
-				i(234059),	-- Ensemble: Ornate Violet Lunar Festival Attire
 				q(86421),	-- Ensemble: Ornate Violet Lunar Festival Attire
 				i(234043),	-- Ornate Violet Lunar Belt
 				i(234055),	-- Ornate Violet Lunar Crown
@@ -647,13 +645,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233220),	-- Lively Lunar Lantern
 				i(233269),	-- Long-Range Cobalt Clockstopper
 				i(233268),	-- Long-Range Violet Clockstopper
-				i(233224),	-- Obsidian Lunar Blade
 				i(233259),	-- Purple Clockwork Doomfist
 				i(233253),	-- Purple Clockwork Mace
 				i(233229),	-- Silver Lunar Polearm
-				i(233231),	-- Steel Lunar Polearm
-				i(233235),	-- Violet Lunar Firewhacker
-				i(233221),	-- Violet Lunar Lantern
 			}),
 		})),
 

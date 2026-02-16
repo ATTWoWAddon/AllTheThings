@@ -34,6 +34,8 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 	},
 });
 
+local COIN_OF_ANCESTRY = COIN_OF_ANCESTRY;
+
 root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 	-- #if AFTER WRATH
 	n(ACHIEVEMENTS, {
@@ -120,23 +122,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(605, {	-- A Coin of Ancestry
-			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["provider"] = { "i", COIN_OF_ANCESTRY },
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(606, {	-- 5 Coins of Ancestry
-			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["provider"] = { "i", COIN_OF_ANCESTRY },
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(607, {	-- 10 Coins of Ancestry
-			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["provider"] = { "i", COIN_OF_ANCESTRY },
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(608, {	-- 25 Coins of Ancestry
-			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["provider"] = { "i", COIN_OF_ANCESTRY },
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(609, {	-- 50 Coins of Ancestry
-			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["provider"] = { "i", COIN_OF_ANCESTRY },
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(626, {	-- Lunar Festival Finery
@@ -175,7 +177,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 55,
 			["groups"] = {
@@ -191,7 +193,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 45,
 			-- #if BEFORE 3.0.8.9464
@@ -303,7 +305,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["isYearly"] = true,
 			["lvl"] = 10,
 			-- #if BEFORE 3.0.8.9464
@@ -317,7 +319,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 1 } },
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -329,7 +331,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -344,7 +346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["isYearly"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -359,7 +361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 50,
 			["groups"] = {
@@ -378,7 +380,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 45,
 			["groups"] = {
@@ -394,7 +396,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 55,
 			-- #if BEFORE 3.0.8.9464
@@ -412,7 +414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 35,
 			-- #if BEFORE 3.0.8.9464
@@ -480,7 +482,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["timeline"] = { REMOVED_3_0_8 },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+			["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 			["repeatable"] = true,
 			["lvl"] = 25,
 			-- #if BEFORE 3.0.8.9464
@@ -1479,7 +1481,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 	}),
 	n(REWARDS, {
-		i(21100),	-- Coin of Ancestry
+		i(COIN_OF_ANCESTRY),
 	}),
 	-- #if AFTER 3.0.8.9464
 	n(VENDORS, {
@@ -1487,35 +1489,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
-					["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 40 } },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
 					["timeline"] = { ADDED_8_1_5 },
 				}),
+				iensemble(234059, {	-- Ensemble: Ornate Violet Lunar Festival Attire
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
+				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
 					["timeline"] = { ADDED_7_2_5 },
 				}),
 				i(44916, {	-- Pattern: Festival Dress (RECIPE!)
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(44917, {	-- Pattern: Festival Suit (RECIPE!)
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(21740, {	-- Small Rocket Recipes
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["groups"] = {
 						i(21724),	-- Schematic: Small Blue Rocket (RECIPE!)
 						i(21725),	-- Schematic: Small Green Rocket (RECIPE!)
@@ -1523,7 +1529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 				}),
 				i(21742, {	-- Large Rocket Recipes
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["groups"] = {
 						i(21727),	-- Schematic: Large Blue Rocket (RECIPE!)
 						i(21728),	-- Schematic: Large Green Rocket (RECIPE!)
@@ -1531,7 +1537,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 				}),
 				i(21741, {	-- Cluster Rocket Recipes
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["groups"] = {
 						i(21730),	-- Schematic: Blue Rocket Cluster (RECIPE!)
 						i(21731),	-- Schematic: Green Rocket Cluster (RECIPE!)
@@ -1539,7 +1545,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 				}),
 				i(21743, {	-- Large Cluster Rocket Recipes
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 					["groups"] = {
 						i(21733),	-- Schematic: Large Blue Rocket Cluster (RECIPE!)
 						i(21734),	-- Schematic: Large Green Rocket Cluster (RECIPE!)
@@ -1548,75 +1554,95 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				}),
 				i(44919, {	-- Schematic: Firework Launcher (RECIPE!)
 					["timeline"] = { ADDED_3_0_8 },
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(44918, {	-- Schematic: Cluster Launcher (RECIPE!)
 					["timeline"] = { ADDED_3_0_8 },
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(116146, {	-- Schematic: Snake Firework (RECIPE!)
 					["timeline"] = { ADDED_6_0_3_LAUNCH },
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(116144, {	-- Schematic: Horde Firework (RECIPE!)
 					["timeline"] = { ADDED_6_0_3_LAUNCH },
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(116142, {	-- Schematic: Alliance Firework (RECIPE!)
 					["timeline"] = { ADDED_6_0_3_LAUNCH },
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(90000, {	-- Everlasting Horde Firework (TOY!)
 					["timeline"] = { ADDED_6_0_2 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(89999, {	-- Everlasting Alliance Firework (TOY!)
 					["timeline"] = { ADDED_6_0_2 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(143827, {	-- Red Dragon Head Costume (TOY!)
 					["timeline"] = { ADDED_7_1_5 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(165674, {	-- Green Dragon Head Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(165671, {	-- Blue Dragon Head Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(143828, {	-- Red Dragon Body Costume (TOY!)
 					["timeline"] = { ADDED_7_1_5 },
-					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 10 } },
 				}),
 				i(165675, {	-- Green Dragon Body Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 10 } },
 				}),
 				i(165672, {	-- Blue Dragon Body Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 10 } },
 				}),
 				i(143829, {	-- Red Dragon Tail Costume (TOY!)
 					["timeline"] = { ADDED_7_1_5 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(165676, {	-- Green Dragon Tail Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(165673, {	-- Blue Dragon Tail Costume (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(165669, {	-- Lunar Elder's Hearthstone (TOY!)
 					["timeline"] = { ADDED_8_1_0 },
-					["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 30 } },
 				}),
 				i(232901, {	-- Lunar Launcher (MOUNT!)
 					["timeline"] = { ADDED_11_0_7 },
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
+				}),
+				i(233224, {	-- Obsidian Lunar Blade (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233231, {	-- Steel Lunar Polearm (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233239, {	-- Sunny Pack of Lunar Explosives (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233235, {	-- Violet Lunar Firewhacker (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233221, {	-- Violet Lunar Lantern (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (MM!)
 					["timeline"] = { ADDED_10_2_5 },
@@ -1643,17 +1669,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["crs"] = { 47897 },	-- Lunar Festival Vendor
 			-- #endif
 			["groups"] = {
-				i(21557),	-- Small Red Rocket
+				-- Small Rockets
 				i(21558),	-- Small Blue Rocket
 				i(21559),	-- Small Green Rocket
+				i(21557),	-- Small Red Rocket
+				-- Rocket Clusters
 				i(21571),	-- Blue Rocket Cluster
 				i(21574),	-- Green Rocket Cluster
 				i(21576),	-- Red Rocket Cluster
-				i(21721),	-- Moonglow
+				-- Misc
 				i(21747),	-- Festival Firecracker
+				i(21721),	-- Moonglow
+				-- Mounts and Cosmetics
+				iensemble(234059, {	-- Ensemble: Ornate Violet Lunar Festival Attire
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
+				}),
 				i(232901, {	-- Lunar Launcher (MOUNT!)
 					["timeline"] = { ADDED_11_0_7 },
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
+				}),
+				i(233224, {	-- Obsidian Lunar Blade (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233231, {	-- Steel Lunar Polearm (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233239, {	-- Sunny Pack of Lunar Explosives (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233235, {	-- Violet Lunar Firewhacker (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233221, {	-- Violet Lunar Lantern (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (MM!)
 					["timeline"] = { ADDED_10_2_5 },
@@ -1669,63 +1723,87 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			}},
 			-- #endif
 			["groups"] = {
+				iensemble(234059, {	-- Ensemble: Ornate Violet Lunar Festival Attire
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
+				}),
 				i(74611, {	-- Festival Lantern (PET!)
 					["timeline"] = { ADDED_4_3_0 },
-					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 50 } },
 					["races"] = HORDE_ONLY,
 				}),
 				i(74610, {	-- Lunar Lantern (PET!)
 					["timeline"] = { ADDED_4_3_0 },
-					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 50 } },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(21157, {	-- Festive Green Dress
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(21538, {	-- Festive Pink Dress
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(21539, {	-- Festive Purple Dress
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(21541, {	-- Festive Black Pant Suit
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(21544, {	-- Festive Blue Pant Suit
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(21543, {	-- Festive Teal Pant Suit
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
 				}),
 				i(151355, {	-- Crown of Courage
 					["timeline"] = { ADDED_7_3_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(151354, {	-- Crown of Prosperity
 					["timeline"] = { ADDED_7_3_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(151353, {	-- Crown of Dark Blossoms
 					["timeline"] = { ADDED_7_3_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(151352, {	-- Crown of Good Fortune
 					["timeline"] = { ADDED_7_3_0 },
-					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(21537, {	-- Festival Dumplings
-					["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 1 } },
 				}),
 				i(21640, {	-- Lunar Festival Fireworks Pack
-					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 5 } },
+				}),
+				i(233224, {	-- Obsidian Lunar Blade (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233231, {	-- Steel Lunar Polearm (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233239, {	-- Sunny Pack of Lunar Explosives (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233235, {	-- Violet Lunar Firewhacker (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
+				}),
+				i(233221, {	-- Violet Lunar Lantern (COSMETIC!)
+					["timeline"] = { ADDED_12_0_1 },
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 25 } },
 				}),
 				i(232901, {	-- Lunar Launcher (MOUNT!)
 					["timeline"] = { ADDED_11_0_7 },
-					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 75 } },
 				}),
 				i(116172, {	-- Perky Blaster
 					["timeline"] = { ADDED_6_0_2 },
-					["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
+					["cost"] = { { "i", COIN_OF_ANCESTRY, 1 } },
 				}),
 				i(21713),	-- Elune's Candle
 			},
