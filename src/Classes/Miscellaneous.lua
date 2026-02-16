@@ -9,7 +9,8 @@ local pairs, ipairs = pairs, ipairs;
 local AssignChildren, GetRelativeValue = app.AssignChildren, app.GetRelativeValue
 local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
 
-local DynamicDataCache = app.CreateDataCache("dynamic", true);
+local DynamicDataCache = app.CreateDataCache("dynamic");
+DynamicDataCache.skipMapCaching = true;
 local Runner = app.CreateRunner("dynamic");
 Runner.SetPerFrameDefault(1)
 
