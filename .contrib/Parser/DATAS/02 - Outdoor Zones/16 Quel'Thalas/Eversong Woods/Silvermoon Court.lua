@@ -135,18 +135,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 6 --
 								i(257600, {	-- Skill Issue: Enchanting (CI!)
+									["requireSkill"] = ENCHANTING,
 									["cost"] = {
 										{ "c", ARTISAN_ENCHANTERS_MOXIE, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(257599, {	-- Skill Issue: Jewelcrafting (CI!)
+									["requireSkill"] = JEWELCRAFTING,
 									["cost"] = {
 										{ "c", ARTISAN_JEWELCRAFTERS_MOXIE, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(257601, {	-- Skill Issue: Tailoring (CI!)
+									["requireSkill"] = TAILORING,
 									["cost"] = {
 										{ "c", ARTISAN_TAILORS_MOXIE, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
