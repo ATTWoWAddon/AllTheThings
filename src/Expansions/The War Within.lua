@@ -44,6 +44,7 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
+	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do

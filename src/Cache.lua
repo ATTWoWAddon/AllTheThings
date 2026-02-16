@@ -338,6 +338,11 @@ local function _CacheFields(group)
 		end
 	end
 end
+app.AddGenericFieldConverter = function(field)
+	fieldConverters[field] = function(group, value)
+		CacheField(group, field, value);
+	end
+end
 
 do	-- MapID & ExplorationID Key Cache
 -- Whether or not to ignore the mapID in a coord for a given key.
@@ -886,42 +891,17 @@ end
 
 -- These should be refactored:
 if app.IsRetail then
-fieldConverters.catalystID = function(group, value)	-- Referenced in a Symbolic Link (Modules/Catalyst)
-	CacheField(group, "catalystID", value);
-end
-
 -- Referenced in the Dynamic Header Categories for Retail's Main List in GetDatabaseRoot
 -- CRIEVE NOTE: These can easily be converted into a BuildFlatSearchResults or SearchForFieldRecursively
 -- Obviously we'd still want to cache those results, but only after a user clicks the behaviour to search for it.
-fieldConverters.artifactID = function(group, value)
-	CacheField(group, "artifactID", value);
-end
-fieldConverters.azeriteessenceID = function(group, value)
-	CacheField(group, "azeriteessenceID", value);
-end
-fieldConverters.campsiteID = function(group, value)
-	CacheField(group, "campsiteID", value);
-end
-fieldConverters.conduitID = function(group, id)
-	CacheField(group, "conduitID", id);
-end
 fieldConverters.decorID = function(group, value)
 	CacheField(group, "decorID", value);
 end
 fieldConverters.illusionID = function(group, value)
 	CacheField(group, "illusionID", value);
 end
-fieldConverters.followerID = function(group, value)
-	CacheField(group, "followerID", value);
-end
-fieldConverters.garrisonbuildingID = function(group, value)	-- Also commented out because it doesn't work? TODO: Check this.
-	CacheField(group, "garrisonbuildingID", value);
-end
 fieldConverters.professionID = function(group, value)	-- Also in Retail's Tradeskill window.
 	CacheField(group, "professionID", value);
-end
-fieldConverters.runeforgepowerID = function(group, value)
-	CacheField(group, "runeforgepowerID", value);
 end
 fieldConverters.titleID = function(group, value)
 	CacheField(group, "titleID", value);

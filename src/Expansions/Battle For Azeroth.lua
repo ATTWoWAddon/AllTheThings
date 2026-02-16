@@ -55,6 +55,7 @@ app.CreateAzeriteEssence = app.CreateClass(CLASSNAME, KEY, {
 	end,
 });
 
+app.AddGenericFieldConverter(KEY);
 app.AddEventHandler("OnRefreshCollections", function()
 	local state
 	local ranks = {[1]={},[2]={},[3]={},[4]={}}

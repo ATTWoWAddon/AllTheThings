@@ -495,6 +495,7 @@ end
 
 -- Event Handling
 app.AddEventHandler("OnLoad", function()
+	app.AddGenericFieldConverter("catalystID");
 	app.RegisterSymlinkSubroutine("catalyst_select_proper_tier_item", catalyst_select_proper_tier_item)
 
 	local Fill = app.Modules.Fill

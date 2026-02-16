@@ -62,7 +62,8 @@ do
 			return app.TypicalCharacterCollected(CACHE, t[KEY])
 		end,
 	}, (function(t) return t.itemID; end));
-
+	
+	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
@@ -193,28 +194,29 @@ do
 			-- character collected
 			if app.IsCached(CACHE, id) then return 1; end
 		end,
-
-		app.AddEventHandler("OnRefreshCollections", function()
-			local state
-			local saved = {}
-			for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-				-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
-				state = C_Garrison_IsFollowerCollected(id)
-				if state then
-					saved[id] = true
-				end
-			end
-			-- Character Cache
-			app.SetBatchCached(CACHE, saved, 1)
-			-- Account Cache (removals handled by Sync)
-			app.SetBatchAccountCached(CACHE, saved, 1)
-		end);
-		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
-			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
-		end);
-		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	});
+	
+	app.AddGenericFieldConverter(KEY);
+	app.AddEventHandler("OnRefreshCollections", function()
+		local state
+		local saved = {}
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+			-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
+			state = C_Garrison_IsFollowerCollected(id)
+			if state then
+				saved[id] = true
+			end
+		end
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+		-- Account Cache (removals handled by Sync)
+		app.SetBatchAccountCached(CACHE, saved, 1)
+	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	app.AddEventHandler("OnLoad", function()
 		app.AddDynamicCategoryHeader({ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") });
 		app.AddRandomSearchCategory("Followers", "followerID", L.FOLLOWERS, L.FOLLOWER_DESC, app.asset("Category_Followers"));

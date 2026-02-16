@@ -47,6 +47,8 @@ do
 			end,
 			lvl = function(t) return 60; end,
 		});
+		
+		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local state
 			local saved, none = {}, {}
@@ -91,6 +93,8 @@ do
 			collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) and 1 end,
 			lvl = function(t) return 60; end,
 		});
+		
+		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local check
 			local saved, none = {}, {}

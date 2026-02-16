@@ -196,6 +196,8 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 		end
 	end,
 });
+
+app.AddGenericFieldConverter(KEY);
 app.AddEventHandler("OnRefreshCollections", function()
 	local object
 	wipe(ArtifactInfoCached)
