@@ -210,12 +210,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	--]]
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 1280952, {	-- Disenchant
+			i(267655),	-- Brimming Mana Shard
 			i(243605),	-- Dawn Crystal+
 			i(243606),	-- Dawn Crystal++
 			i(243599),	-- Eversinging Dust+
 			i(243600),	-- Eversinging Dust++
 			i(243602),	-- Radiant Shard+
 			i(243603),	-- Radiant Shard++
+			i(267654),	-- Swirling Arcane Essence
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(244008),	-- Enchant Boots - Farstrider's Hunt+

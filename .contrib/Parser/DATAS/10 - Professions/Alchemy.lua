@@ -1056,6 +1056,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		n(QUESTS, {
 			q(84133, {	-- Alchemy Services Requested
+				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
 				["isWeekly"] = true,
@@ -1144,6 +1145,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}, {
 			i(228773),	-- Algari Alchemist's Notebook
+			q(83725, {	-- TWW Inscription Order: Alchemy
+				["name"] = "TWW Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
+			}),
 			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
 				["name"] = "TWW Weekly Alchemy Treasure #1",
 				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
@@ -1161,7 +1167,15 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		n(QUESTS, {
-			-- No Quest on Beta
+			q(93690, {	-- Alchemy Services Requested
+				["sourceQuests"] = { 84288 },	-- Crafting Orders: Alchemy
+				["provider"] = { "n", 243357 },	-- Camberon <Alchemy Trainer>
+				["coord"] = { 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263454),	-- Thalassian Alchemist's Notebook
+				},
+			}),
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
@@ -1177,9 +1191,64 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(1230856),	-- Wondrous Synergist
 			}),
 		}),
-		--[[
 		n(TREASURES, {
-
+			o(525962, {	-- Failed Experiment
+				["coord"] = { 32.8, 43.3, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89118,
+				["groups"] = {
+					i(238539),	-- Failed Experiment
+				},
+			}),
+			o(525965, {	-- Freshly Plucked Peacebloom
+				["coord"] = { 49.1, 75.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89115,
+				["groups"] = {
+					i(238536),	-- Freshly Plucked Peacebloom
+				},
+			}),
+			o(525964, {	-- Measured Ladle
+				["coord"] = { 49.1, 23.6, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89116,
+				["groups"] = {
+					i(238537),	-- Measured Ladle
+				},
+			}),
+			o(525963, {	-- Pristine Potion
+				["coord"] = { 47.8, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89117,
+				["groups"] = {
+					i(238538),	-- Pristine Potion
+				},
+			}),
+			-- Needs ObjectID and QuestID, Coords
+			--o(456020, {	-- Vial of Eversong Oddities
+			--	["coord"] = { 41.7, 55.8, HALLOWFALL },
+			--	["questID"] = 83845,
+			--	["groups"] = {
+					i(238532),	-- Vial of Eversong Oddities
+			--	},
+			--}),
+			o(525967, {	-- Vial of Rootlands Oddities
+				["coord"] = { 34.8, 24.7, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89113,
+				["groups"] = {
+					i(238534),	-- Vial of Rootlands Oddities
+				},
+			}),
+			o(525968, {	-- Vial of Voidstorm Oddities
+				["coord"] = { 41.9, 40.6, SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89112,
+				["groups"] = {
+					i(238533),	-- Vial of Voidstorm Oddities
+				},
+			}),
+			o(525966, {	-- Vial of Zul'Aman Oddities
+				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89114,
+				["groups"] = {
+					i(238535),	-- Vial of Zul'Aman Oddities
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
@@ -1187,16 +1256,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				currency(MID_ALCHEMY_KNOWLEDGE),
 			},
 		}, {
-			i(228773),	-- Algari Alchemist's Notebook
-			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
-				["name"] = "TWW Weekly Alchemy Treasure #1",
-				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
+			i(263454),	-- Thalassian Alchemist's Notebook
+			q(95127, {	-- MID Inscription Order: Alchemy
+				["name"] = "MID Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245755 },	-- Thalassian Treatise on Alchemy
 			}),
-			q(83255, {	-- TWW Weekly Alchemy Knowledgepoint #2
-				["name"] = "TWW Weekly Alchemy Treasure #2",
-				["provider"] = { "i", 225235} ,		-- Deepstone Crucible
+			--[[ Needs QuestID
+			q(83253, {	-- MID Weekly Alchemy Knowledgepoint #1
+				["name"] = "MID Weekly Alchemy Treasure #1",
+				["provider"] =  { "i", 259189 },	-- Aged Cruor
 			}),
+			q(83255, {	-- MID Weekly Alchemy Knowledgepoint #2
+				["name"] = "MID Weekly Alchemy Treasure #2",
+				["provider"] = { "i", 259188 } ,	-- Lightbloomed Spore Sample
+			}),
+			--]]
 		})),
-		--]]
 	})),
 })));

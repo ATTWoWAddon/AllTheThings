@@ -1154,18 +1154,17 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228774),	-- Algari Blacksmiths's Journal
-			},
-		},{
+		n(QUESTS, {
 			q(84127, {	-- Blacksmithing Services Requested
+				["sourceQuests"] = { 84274 },	-- Crafting Orders: Blacksmithing
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228774),	-- Algari Blacksmiths's Journal
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
@@ -1260,6 +1259,11 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(TWW_BLACKSMITHING_KNOWLEDGE),
 			},
 		}, {
+			q(83726, {	-- TWW Inscription Order: Blacksmith
+				["name"] = "TWW Inscription Order: Blacksmith",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
+			}),
 			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
 				["name"] = "TWW Weekly Blacksmithing Treasure #1",
 				["provider"] = { "i", 225232 },	-- Coreway Billet
@@ -1277,7 +1281,15 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(QUESTS, {
-			-- No Quests Yet
+			q(93691, {	-- Blacksmithing Services Requested
+				["sourceQuests"] = { 93726 },	-- Crafting Orders: Blacksmithing
+				["provider"] = { "n", 241450 },	-- Bemarrin <Blacksmithing Trainer>
+				["coord"] = { 43.7, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(263455),	-- Thalassian Blacksmith's Journal
+				},
+			}),
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
@@ -1306,8 +1318,63 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				r(1229600),	-- Sun-Blessed Skinning Knife
 			}),
 		}),
-		--[[
 		n(TREASURES, {
+			o(525959, {	-- Carefully Racked Spear
+				["coord"] = { 33.2, 65.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89179,
+				["groups"] = {
+					i(238542),	-- Carefully Racked Spear
+				},
+			}),
+			o(525961, {	-- Deconstructed Forge Techniques
+				["coord"] = { 26.9, 60.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89177,
+				["groups"] = {
+					i(238540),	-- Deconstructed Forge Techniques
+				},
+			}),
+			o(525958, {	-- Metalworking Cheat Sheet
+				["coord"] = { 56.8, 40.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89180,
+				["groups"] = {
+					i(238543),	-- Metalworking Cheat Sheet
+				},
+			}),
+			o(525956, {	-- Rutaani Floratender's Sword
+				["coord"] = { 66.3, 50.9, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89182,
+				["groups"] = {
+					i(238545),	-- Rutaani Floratender's Sword
+				},
+			}),
+			o(525954, {	-- Silvermoon Blacksmith's Hammer
+				["coord"] = { 48.5, 74.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89184,
+				["groups"] = {
+					i(238547),	-- Silvermoon Blacksmith's Hammer
+				},
+			}),
+			o(525960, {	-- Silvermoon Smithing Kit
+				["coord"] = { 48.3, 75.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89178,
+				["groups"] = {
+					i(238541),	-- Silvermoon Smithing Kit
+				},
+			}),
+			o(525955, {	-- Sin'dorei Master's Forgemace
+				["coord"] = { 49.2, 61.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89183,
+				["groups"] = {
+					i(238546),	-- Sin'dorei Master's Forgemace
+				},
+			}),
+			o(525857, {	-- Voidstorm Defense Spear
+				["coord"] = { 30.6, 69.0, SLAYERS_RISE },
+				["questID"] = 89181,
+				["groups"] = {
+					i(238544),	-- Voidstorm Defense Spear
+				},
+			}),
 
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
@@ -1316,16 +1383,23 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(MID_BLACKSMITHING_KNOWLEDGE),
 			},
 		}, {
-			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "TWW Weekly Blacksmithing Treasure #1",
-				["provider"] = { "i", 225232 },	-- Coreway Billet
+			i(263455),	-- Thalassian Blacksmith's Journal
+			q(95128, {	-- MID Inscription Order: Blacksmith
+				["name"] = "MID Inscription Order: Blacksmith",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245763 },	-- Thalassian Treatise on Blacksmithing
 			}),
-			q(83256, {	-- TWW Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "TWW Weekly Blacksmithing Treasure #2",
-				["provider"] = { "i", 225233 },	-- Dense Bladestone
+			--[[ Need QuestIDs
+			q(83257, {	-- MID Weekly Blacksmithing Knowledgepoint #1
+				["name"] = "MID Weekly Blacksmithing Treasure #1",
+				["provider"] = { "i", 259191 },	-- Infused Quenching Oil
 			}),
+			q(83256, {	-- MID Weekly Blacksmithing Knowledgepoint #2
+				["name"] = "MID Weekly Blacksmithing Treasure #2",
+				["provider"] = { "i", 259190 },	-- Thalassian Whestone
+			}),
+			--]]
 		})),
-		--]]
 	})),
 })));
 

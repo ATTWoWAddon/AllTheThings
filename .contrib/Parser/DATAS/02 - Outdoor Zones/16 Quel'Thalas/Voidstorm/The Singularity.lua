@@ -162,18 +162,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 9 --
 								i(262645, {	-- Beyond the Event Horizon: Alchemy (CI!)
+									["requireSkill"] = ALCHEMY,
 									["cost"] = {
 										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(262644, {	-- Beyond the Event Horizon: Blacksmithing (CI!)
+									["requireSkill"] = BLACKSMITHING,
 									["cost"] = {
 										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(262646, {	-- Beyond the Event Horizon: Engineering (CI!)
+									["requireSkill"] = ENGINEERING,
 									["cost"] = {
 										{ "c", ARTISAN_ENGINEERS_MOXIE, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },

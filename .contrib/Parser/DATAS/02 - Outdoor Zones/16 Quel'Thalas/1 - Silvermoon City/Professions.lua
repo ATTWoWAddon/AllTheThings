@@ -1,9 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 local STABILIZED_DERIVATE = 242651;
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(PROFESSIONS, {
@@ -18,6 +16,48 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 243283 },	-- Captain Flaresworn
+				["coord"] = { 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+			},{
+				q(93723, {	-- Crafters Needed
+					["groups"] = {
+						i(251324),	-- Basket of Eversong Herbs
+						i(251321),	-- Collection of Eversong Minerals
+						i(251322),	-- Thalassian Leatherworker's Duffel
+						i(251327),	-- Thalassian Tailor's Tote Bag
+						i(251326),	-- Thalassian Enchanter's Purse
+					},
+				}),
+				q(93724, {	-- Crafting Orders: Alchemy
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = ALCHEMY,
+				}),
+				q(93726, {	-- Crafting Orders: Blacksmithing
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = BLACKSMITHING,
+				}),
+				q(93727, {	-- Crafting Orders: Engineering
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = ENGINEERING,
+				}),
+				q(93728, {	-- Crafting Orders: Inscription
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = INSCRIPTION,
+				}),
+				q(93729, {	-- Crafting Orders: Jewelcrafting
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = JEWELCRAFTING,
+				}),
+				q(93731, {	-- Crafting Orders: Leatherworking
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = LEATHERWORKING,
+				}),
+				q(93730, {	-- Crafting Orders: Tailoring
+					["sourceQuests"] = { 93723 },	-- Crafters Needed
+					["requireSkill"] = TAILORING,
+				}),
+			})),
 			prof(ALCHEMY, {
 				n(243357, {	-- Camberon <Alchemy Trainer>
 					["coord"] = { 47.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
