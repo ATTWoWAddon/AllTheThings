@@ -149,20 +149,7 @@ local mapKeyUncachers = {
 -- Map Remapping
 -- This feature takes the original mapID and allows modifications on it to
 -- change the displayed name and the content of the mini list.
-local SubTableMetatable = {
-	__index = function(t, key)
-		local s = {};
-		t[key] = s;
-		return s;
-	end
-};
-local MapRemapping = setmetatable({}, {
-	__index = function(t, id)
-		local remap = setmetatable({}, SubTableMetatable);
-		t[id] = remap;
-		return remap;
-	end,
-});
+local MapRemapping = setmetatable({}, app.MetaTable.AutoTableOfTables);
 app.MapRemapping = MapRemapping;
 local nextCustomMapID = -2;
 local function assignZoneAreaIDs(originalMapID, mapID, ids)
