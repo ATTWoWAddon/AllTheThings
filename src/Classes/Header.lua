@@ -14,6 +14,7 @@ local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- App
+local GetRawFieldContainer = app.GetRawFieldContainer
 local SearchForObject = app.SearchForObject
 local CreateClassInstance = app.CreateClassInstance
 
@@ -74,7 +75,7 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = SearchForObject(typeID, id, "key") or CreateClassInstance(typeID,id)
+	local obj = (GetRawFieldContainer(typeID) and SearchForObject(typeID, id, "key")) or CreateClassInstance(typeID,id)
 	if obj then
 		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
