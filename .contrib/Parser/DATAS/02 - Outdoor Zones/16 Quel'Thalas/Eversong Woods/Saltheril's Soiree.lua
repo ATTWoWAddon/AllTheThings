@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}, {	-- Host
 							i(259367, {	-- Formula: Animated Sin'dorei Pick (RECIPE!)
 								["cost"] = {
-									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 									{ "c", BRIMMING_ARCANA, 200 },
 								},
 							}),
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}),
 							i(259364, {	-- Formula: Animated Sin'dorei Hammer (RECIPE!)
 								["cost"] = {
-									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 									{ "c", BRIMMING_ARCANA, 200 },
 								},
 							}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}, {	-- Host
 							i(259375, {	-- Formula: Self-Pouring Thalassian Sunwine (RECIPE!)
 								["cost"] = {
-									{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+									{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 									{ "c", BRIMMING_ARCANA, 200 },
 								},
 							}),
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}),
 							i(258505, {	-- Technique: Sin'dorei Phoenix Quill (RECIPE!)
 								["cost"] = {
-									{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+									{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 									{ "c", BRIMMING_ARCANA, 200 },
 								},
 							}),

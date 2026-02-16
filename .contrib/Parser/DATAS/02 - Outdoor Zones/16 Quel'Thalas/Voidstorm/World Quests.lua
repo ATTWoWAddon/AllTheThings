@@ -11,22 +11,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWorldQuest"] = true,
 			},FILTERFUNC_questID,{
 				pvp(q(92576, {	-- Undercover Hunt
-					["coord"] = { 56.0, 1.0, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 56.0, 1.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				})),
 				pvp(q(89267, {	-- Mysterious Entity
-					["coord"] = { 34.5, 51.9, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 34.5, 51.9, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				})),
 				pvp(q(89347, {	-- Overcoming the Unknown: Devouring Elite
-					["coord"] = { 55.5, 32.4, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 55.5, 32.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					["groups"] = {
 						--TODO: when I fly into area pop q(94005), -- Stellar Stash
 					},
 				})),
 				pvp(q(89377, {	-- Undercover Hunt
-					["coord"] = { 45.7, 36.6, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 45.7, 36.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				})),
 				q(92571, {	-- Armies of Darkness
-					["coord"] = { 23.4, 54.3, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 23.4, 54.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					--["races"] = HORDE_ONLY,	-- speculation due to zone
 				}),
 				q(92731, {	-- Artificing Aggression
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 64.6, 62.2, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(93578, {	-- Where Shadows Gather
-					["coord"] = { 44.0, 75.0, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 44.0, 75.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				}),
 			}),
 		}),

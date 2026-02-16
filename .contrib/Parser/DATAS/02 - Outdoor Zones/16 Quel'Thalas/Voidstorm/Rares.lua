@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(245182, {	-- Eruundi
-				["coord"] = { 41.6, 90.6, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 41.6, 90.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 91047,
 				["groups"] = {
 					i(264600),	-- Ancient Argussian Band
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					257249,	-- Neevus
 					257245,	-- Veserra
 				},
-				["coord"] = { 75.8, 79.5, SLAYERS_RISE_OUTDOOR },	-- a bit off, didn't kill it
+				["coord"] = { 75.8, 79.5, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },	-- a bit off, didn't kill it
 				--["questID"] = XXXX,	-- missing questID
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					257228,	-- Bolvin
 					257213,	-- Solaria Fusebot
 				},
-				["coord"] = { 28.7, 57.0, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 28.7, 57.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 94461,	--TODO: could be weekly (rep) questID?
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(257027, {	-- Rakshur the Bonegrinder
-				["coord"] = { 46.5, 40.8, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 46.5, 40.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 93953,
 				["groups"] = {
 					i(264694),	-- Ultradon Cuirass

@@ -1456,21 +1456,21 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		}),--]]
 		n(TREASURES, {
 			o(525909, {	-- Glimmering Void Pearl
-				["coord"] = { 28.8, 38.5, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 28.8, 38.5, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89148,
 				["groups"] = {
 					i(238600),	-- Glimmering Void Pearl
 				},
 			}),
 			o(525911, {	-- Lost Voidstorm Satchel
-				["coord"] = { 54.2, 51.6, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 54.2, 51.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89146,
 				["groups"] = {
 					i(238598),	-- Lost Voidstorm Satchel
 				},
 			}),
 			o(525913, {	-- Miner's Guide to Voidstorm
-				["coord"] = { 30.5, 69.1, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 30.5, 69.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89144,
 				["groups"] = {
 					i(238596),	-- Miner's Guide to Voidstorm

@@ -75,86 +75,86 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 5 --
 								i(256700, {	-- Design: Signet of Azerothian Blessings (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.JEWELCRAFTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256745, {	-- Formula: Enchant Chest - Mark of the Rootwarden (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256749, {	-- Formula: Enchant Tool - Haranir Multicrafting (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256751, {	-- Formula: Enchant Weapon - Worldsoul Tenacity (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256743, {	-- Formula: Gleeful Glamour - Haranir (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(259457, {	-- Pattern: Simple Haranir Table (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.LEATHERWORKING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256639, {	-- Pattern: World Tree Rootwraps (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.LEATHERWORKING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(258141, {	-- Recipe: Haranir Phial of Perception (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ALCHEMY, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(247500, {	-- Recipe: Rootbound Vat (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ALCHEMY, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(263443, {	-- Technique: Contract: The Hara'ti (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(258509, {	-- Technique: Harandar Signpost (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(258510, {	-- Technique: Magnificent Towering Bookcase (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 							}, {	-- RENOWN 6 --
 								i(258410, {	-- Traditions of the Haranir: Herbalism (CI!)
 									["cost"] = {
-										{ "c", ARTISAN_HERBALISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.HERBALISM, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(258411, {	-- Traditions of the Haranir: Inscription (CI!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),

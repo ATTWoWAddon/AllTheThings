@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ENCHANTING_KNOWLEDGE = 2030;
-local TWW_ENCHANTING_KNOWLEDGE = 2787;
-local MID_ENCHANTING_KNOWLEDGE = 3152;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
@@ -634,7 +631,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }} }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -769,7 +766,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING),
 			},
 		},{
 			i(198610),	-- Enchanter's Script
@@ -817,7 +814,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }} }, {
 				r(445378),	-- Algari Ingenuity
 				r(445403),	-- Authority of Fiery Resolve
 				r(445336),	-- Authority of Storms
@@ -915,7 +912,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING),
 			},
 		},{
 			i(227667),	-- Algari Enchanter's Folio
@@ -983,7 +980,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }} }, {
 				r(1236057),	-- Enchant Boots - Lynx's Dexterity
 				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
 				r(1236071),	-- Enchant Helm - Empowered Blessing of Speed
@@ -1060,7 +1057,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING),
 			},
 		},{
 			i(263464),	-- Thalassian Enchanter's Folio

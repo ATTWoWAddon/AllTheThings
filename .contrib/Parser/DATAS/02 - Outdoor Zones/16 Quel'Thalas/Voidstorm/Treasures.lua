@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(618536, {	-- Scout's Pack
-				["coord"] = { 49.1, 20.1, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 49.1, 20.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 94387,
 				["groups"] = {
 					i(266101),	-- Unused Initiate's Bulwark (COSMETIC!)
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			o(618016, {	-- Stellar Stash
 				["provider"] = { "n", 257141 },	-- Stellar Stash
-				["coord"] = { 53.3, 32.2, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 53.3, 32.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 93996,
 				["groups"] = {
 					i(262467),	-- Void Elf Round Table (DECOR!)

@@ -454,25 +454,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED
 					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
 					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
+							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },	-- Artisan Enchanter's Moxie (TODO: take a look if they fix it)
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),

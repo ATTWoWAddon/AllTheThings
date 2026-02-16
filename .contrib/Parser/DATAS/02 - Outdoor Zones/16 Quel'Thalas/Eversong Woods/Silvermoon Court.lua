@@ -81,55 +81,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							}, {	-- RENOWN 5 --
 								i(259363, {	-- Design: Bejeweled Sin'dorei Lyre (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_JEWELCRAFTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.JEWELCRAFTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256760, {	-- Formula: Enchant Ring - Silvermoon's Tenacity (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(268042, {	-- Formula: Endless Codex of Blooming Light (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(259374, {	-- Formula: Spellbound Tome of Thalassian Magics (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(258124, {	-- Pattern: Arcanoweave Spellthread (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_TAILORS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.TAILORING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256636, {	-- Pattern: Row Walker's Deflectors (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_LEATHERWORKERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.LEATHERWORKING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(265528, {	-- Plans: Gilded Silvermoon Anvil (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.BLACKSMITHING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(265532, {	-- Plans: Gilded Silvermoon Hanger (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.BLACKSMITHING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(263444, {	-- Technique: Contract: The Silvermoon Court (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
@@ -137,21 +137,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								i(257600, {	-- Skill Issue: Enchanting (CI!)
 									["requireSkill"] = ENCHANTING,
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 75 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(257599, {	-- Skill Issue: Jewelcrafting (CI!)
 									["requireSkill"] = JEWELCRAFTING,
 									["cost"] = {
-										{ "c", ARTISAN_JEWELCRAFTERS_MOXIE, 75 },
+										{ "c", ARTISAN_MOXIE.JEWELCRAFTING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(257601, {	-- Skill Issue: Tailoring (CI!)
 									["requireSkill"] = TAILORING,
 									["cost"] = {
-										{ "c", ARTISAN_TAILORS_MOXIE, 75 },
+										{ "c", ARTISAN_MOXIE.TAILORING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),

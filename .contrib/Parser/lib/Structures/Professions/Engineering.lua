@@ -1017,3 +1017,53 @@ TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(447379),	-- 4UT0-41M3R
 	}),
 });
+MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	r(471007),	-- Midnight Engineering
+	r(1265670),	-- Artisan Engineer's Moxie
+	r(1265678),	-- Concentration
+	r(1265704),	-- Ingenuity
+	r(1265617),	-- Knowledge
+	r(1265603),	-- Multicraft
+	r(1265654),	-- Quality
+	r(471043),	-- Recraft Equipment
+	r(1229930),	-- Recycling
+	r(1265696),	-- Resourcefulness
+	r(1265686),	-- Skill
+	r(1265662),	-- Sparks
+	n(ARMOR, {
+		r(1229867),	-- Evercore Binding
+		r(1229868),	-- Evercore Chainguards
+		r(1229869),	-- Evercore Gear Weight
+		r(1229938),	-- Evercore Greaseplates
+		r(1229864),	-- Evercore Reconissance
+		r(1229863),	-- Evercore Shade
+		r(1229936),	-- Evercore Stichwraps
+		r(1229935),	-- Evercore Swiftfeet
+		r(1229937),	-- Evercore Turbochains
+		r(1229865),	-- Evercore Vision Guard
+		r(1229866),	-- Evercore Wrist Latch
+		r(1229862),	-- Evercore Zoomshroud
+	}),
+	filter(MISC, {
+		r(1229858),	-- Consistent Cogwheel
+		r(1229859),	-- Flux Cogwheel
+		r(1229857),	-- Greased Cogwheel
+		r(1229856),	-- Perfected Cogwheel
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(1229898),	-- Farstrider Clampers
+		r(1229900),	-- Farstrider Fabric Cutters
+		r(1229904),	-- Farstrider Hardhat
+		r(1229895),	-- Farstrider Hobbyist Rod
+		r(1229899),	-- Farstrider Rock Satchel
+		r(1229901),	-- Junker's Junk Visor
+		r(1229896),	-- Junker's Multitool
+	}),
+	filter(REAGENTS, {
+		r(1229755),	-- Song Gear
+		r(1229853),	-- Soul Sprocket
+	}),
+	n(WEAPONS, {
+		r(1282455),	-- Evercore Dome Dinger
+	}),
+});

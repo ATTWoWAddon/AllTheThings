@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			fp(3123, {	-- Master's Perch, Voidstorm
 				["sourceQuests"] = { 86510 },	-- Domus Penumbra
-				["coord"] = { 37.8, 81.6, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 37.8, 81.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["cr"] = 245571,	-- Sador
 			}),
 			fp(3119, {	-- The Ingress, Voidstorm

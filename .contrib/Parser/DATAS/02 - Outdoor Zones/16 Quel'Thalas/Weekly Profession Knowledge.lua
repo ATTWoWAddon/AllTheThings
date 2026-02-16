@@ -15,10 +15,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			-- Enchanting
 			i(259193),	-- Lost Thalassian Vellum
 			i(259192),	-- Voidstorm Ashes
-			--[[
 			-- Engineering
-			i(225229),	-- Earthen Induction Coil
-			i(225228),	-- Rust-Locked Mechanism
+			i(259194),	-- Dance Gear
+			i(259195),	-- Dawn Capacitor
+			--[[
 			-- Inscription
 			i(225226),	-- Striated Inkstone
 			i(225227),	-- Wax-Sealed Records

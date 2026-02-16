@@ -1431,3 +1431,122 @@ i(256964, 1261027);	-- Frostwall Architect's Table
 --- NYI ---
 i(233203, 473408);	-- Housing Crafting Test Recipe
 i(0, 1246464);		-- [DNT] TWW Engineering Decor Template
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471007);		-- Midnight Engineering
+i(0, 1265670);		-- Artisan Engineer's Moxie
+i(0, 1265678);		-- Concentration
+i(0, 1229858);		-- Consistent Cogwheel
+i(0, 1229867);		-- Evercore Binding
+i(0, 1229868);		-- Evercore Chainguards
+i(0, 1282455);		-- Evercore Dome Dinger
+i(0, 1229869);		-- Evercore Gear Weight
+i(0, 1229938);		-- Evercore Greaseplates
+i(0, 1229864);		-- Evercore Reconissance
+i(0, 1229863);		-- Evercore Shade
+i(0, 1229936);		-- Evercore Stichwraps
+i(0, 1229935);		-- Evercore Swiftfeet
+i(0, 1229937);		-- Evercore Turbochains
+i(0, 1229865);		-- Evercore Vision Guard
+i(0, 1229866);		-- Evercore Wrist Latch
+i(0, 1229862);		-- Evercore Zoomshroud
+i(0, 1229898);		-- Farstrider Clampers
+i(0, 1229900);		-- Farstrider Fabric Cutters
+i(0, 1229904);		-- Farstrider Hardhat
+i(0, 1229895);		-- Farstrider Hobbyist Rod
+i(0, 1229899);		-- Farstrider Rock Satchel
+i(0, 1229859);		-- Flux Cogwheel
+i(0, 1229857);		-- Greased Cogwheel
+i(0, 1265704);		-- Ingenuity
+i(0, 1229901);		-- Junker's Junk Visor
+i(0, 1229896);		-- Junker's Multitool
+i(0, 1265617);		-- Knowledge
+i(0, 1265603);		-- Multicraft
+i(0, 1229856);		-- Perfected Cogwheel
+i(0, 1265654);		-- Quality
+i(0, 471043);		-- Recraft Equipment
+i(0, 1229930);		-- Recycling
+i(0, 1265696);		-- Resourcefulness
+i(0, 1265686);		-- Skill
+i(0, 1229755);		-- Song Gear
+i(0, 1229853);		-- Soul Sprocket
+i(0, 1265662);		-- Sparks
+--- ITEM ---
+i(259182, 1264528);	-- Giga-Gem Grippers
+i(259172, 1264523);	-- Head-Mounted Beam Bummer
+i(259176, 1264525);	-- Heavy-Duty Rock Assister
+i(259174, 1264524);	-- Rock Bonkin' Hardhat
+i(259178, 1264526);	-- Self-Sharpening Sin'dorei Snippers
+i(259180, 1264527);	-- Sin'dorei Reeler's Rod
+i(257410, 1229912);	-- Thalassian Competitor's Cloth Cuffs
+i(257411, 1229908);	-- Thalassian Competitor's Cloth Goggles
+i(257371, 1261490);	-- Thalassian Competitor's Cloth Tip-Toes
+i(257413, 1229913);	-- Thalassian Competitor's Leather Bands
+i(257414, 1229909);	-- Thalassian Competitor's Leather Optics
+i(257370, 1261491);	-- Thalassian Competitor's Leather Sliders
+i(257369, 1261492);	-- Thalassian Competitor's Mail Footlinks
+i(257415, 1229914);	-- Thalassian Competitor's Mail Links
+i(257416, 1229910);	-- Thalassian Competitor's Mail Visor
+i(257407, 1229915);	-- Thalassian Competitor's Plate Bindings
+i(257298, 1261493);	-- Thalassian Competitor's Plate Dunkers
+i(257408, 1229911);	-- Thalassian Competitor's Plate Guard
+i(268480, 1282457);	-- Thalassian Competitor's Rifle
+i(259184, 1264529);	-- Turbo-Junker's Multitool v9
+--- SPECIALIZATION ---
+i(0, 1229875);		-- Aetherlume Bands
+i(0, 1229876);		-- Aetherlume Bracelets
+i(0, 1229880);		-- Aetherlume Clonkers
+i(0, 1229870);		-- Aetherlume Eye Wrap
+i(0, 1229877);		-- Aetherlume Guards
+i(0, 1229871);		-- Aetherlume Optics
+i(0, 1229879);		-- Aetherlume Runners
+i(0, 1229874);		-- Aetherlume Silken Cuffs
+i(0, 1229878);		-- Aetherlume Softsteppers
+i(0, 1229881);		-- Aetherlume Stompers
+i(0, 1229873);		-- Aetherlume Sun Guard
+i(0, 1229872);		-- Aetherlume Vision Shroud
+i(0, 1229921);		-- HU5H, Nonchalant Pup
+i(0, 1229906);		-- Junker's Big Ol' Bag
+i(0, 1229924);		-- M3DDY
+i(0, 1282456);		-- P.O.W. x3
+i(0, 1229902);		-- Sin'dorei Angler's Rod
+i(0, 1229905);		-- Sin'dorei Clampers
+i(0, 1229897);		-- Sin'dorei Gilded Hardhat
+i(0, 1229894);		-- Sin'dorei Headlamp
+i(0, 1229907);		-- Sin'dorei Snippers
+i(0, 1229903);		-- Turbo-Junker's Multitool
+--- RECYCLING ---
+i(0, 1248612);		-- Ambient Aethercharged Crystal
+i(0, 1261945);		-- B0P, Curator of Booms
+i(0, 1229922);		-- B1P, Scorcher of Souls
+i(0, 1229927);		-- Curious Red Button
+i(0, 1229923);		-- Emergency Soul Link
+i(0, 1261866);		-- Farstrider's Hawkeye
+i(0, 1229919);		-- Kinetic Ankle Primers
+i(0, 1261895);		-- Laced Zoomshots
+i(0, 1229916);		-- Lucky Keychain
+i(0, 1229917);		-- M3DDY, Travel-Sized
+i(0, 1229887);		-- Quel'dorei Bands
+i(0, 1229888);		-- Quel'dorei Bracelets
+i(0, 1229892);		-- Quel'dorei Clonkers
+i(0, 1229882);		-- Quel'dorei Cloth Goggles
+i(0, 1229889);		-- Quel'dorei Guards
+i(0, 1229883);		-- Quel'dorei Leather Optics
+i(0, 1229884);		-- Quel'dorei Mail Shroud
+i(0, 1229891);		-- Quel'dorei Runners
+i(0, 1229886);		-- Quel'dorei Silken Cuffs
+i(0, 1229890);		-- Quel'dorei Softsteppers
+i(0, 1229893);		-- Quel'dorei Stompers
+i(0, 1229885);		-- Quel'dorei Visor
+i(0, 1248615);		-- Ren'dorei Crafting Framework
+i(0, 1248611);		-- Ren'dorei Lightpost
+i(0, 1248613);		-- Ren'dorei Stargazer
+i(0, 1248610);		-- Ren'dorei Void Projector
+i(0, 1248616);		-- Ren'dorei Warp Orb
+i(0, 1248614);		-- Small Telogrus Lamp
+i(0, 1261893);		-- Smuggler's Lynxeye
+i(0, 1229926);		-- W-47CH D0G
+i(0, 1229928);		-- Wormhole Generator: Quel'Thalas

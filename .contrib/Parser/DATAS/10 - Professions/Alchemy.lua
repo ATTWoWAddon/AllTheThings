@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ALCHEMY_KNOWLEDGE = 2024;
-local TWW_ALCHEMY_KNOWLEDGE = 2785;
-local MID_ALCHEMY_KNOWLEDGE = 3150;
 root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18733),	-- A Cure for All Ails IV
@@ -899,7 +896,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }} }, {
 				r(370747),	-- Advanced Phial Experimentation
 				r(370745),	-- Advanced Potion Experimentation
 				r(370730),	-- Brood Salt
@@ -1016,7 +1013,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ALCHEMY),
 			},
 		}, {
 			i(198608),	-- Alchemy Notes
@@ -1067,7 +1064,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }} }, {
 				r(432962),	-- Algari Flask Cauldron
 				r(432963),	-- Algari Potion Cauldron
 				r(433087),	-- Formulated Courage
@@ -1141,7 +1138,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY),
 			},
 		}, {
 			i(228773),	-- Algari Alchemist's Notebook
@@ -1179,7 +1176,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }} }, {
 				r(1230891),	-- Box of Rocks
 				r(1230874),	-- Cauldron of Sin'dorei Flasks
 				r(1230875),	-- Flask of Thalassian Resistance
@@ -1236,7 +1233,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			o(525968, {	-- Vial of Voidstorm Oddities
-				["coord"] = { 41.9, 40.6, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 41.9, 40.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89112,
 				["groups"] = {
 					i(238533),	-- Vial of Voidstorm Oddities
@@ -1253,7 +1250,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_ALCHEMY_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ALCHEMY),
 			},
 		}, {
 			i(263454),	-- Thalassian Alchemist's Notebook

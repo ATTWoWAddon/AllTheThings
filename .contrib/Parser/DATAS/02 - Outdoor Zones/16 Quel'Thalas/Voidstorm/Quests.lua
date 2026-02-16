@@ -461,12 +461,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(91147, {	-- Cut Her Strings
 						["sourceQuests"] = { 91145 },	-- The Conquered Heroes
 						["provider"] = { "n", 246035 },	-- Knight Anais
-						["coord"] = { 56.5, 86.4, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 56.5, 86.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(91146, {	-- Flickering Light
 						["sourceQuests"] = { 91145 },	-- The Conquered Heroes
 						["provider"] = { "n", 246035 },	-- Knight Anais (TODO: could be 252807)
-						["coord"] = { 56.5, 86.4, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 56.5, 86.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							o(551817, {	--
 								i(255158),	-- Callum's Tinder Box (QI!)
@@ -485,12 +485,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							91146,	-- Flickering Light
 						},
 						["provider"] = { "n", 252807 },	-- Knight Anais (mobileNPC)
-						--["coord"] = { 56.5, 86.4, SLAYERS_RISE_OUTDOOR },
+						--["coord"] = { 56.5, 86.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(91149, {	-- Bury Me Not
 						["sourceQuests"] = { 91148 },	-- Strung Along
 						["provider"] = { "n", 253523 },	-- Knight Anais
-						["coord"] = { 44.8, 90.1, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 44.8, 90.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							o(613324, {	--
 								i(256135),	-- Light-Infused Tinder Box (QI!)
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90873, {	-- These Violent Delights
 						["sourceQuests"] = { 90872 },	-- Drenched In It
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
-						["coord"] = { 34.1, 91.8, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 34.1, 91.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(244173),	-- Relic of Liberation (QI!)
 						},
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(90874, {	-- Their Violent Ends
 						["sourceQuests"] = { 90872 },	-- Drenched In It
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
-						["coord"] = { 34.1, 91.8, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 34.1, 91.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(244171),	-- Abductor's Mark (QI!)
 						},
@@ -543,7 +543,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							90873,	-- These Violent Delights
 						},
 						["provider"] = { "n", 241620 },	-- Tul'amar, Twice-Exiled
-						["coord"] = { 34.1, 91.8, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 34.1, 91.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(264293),	-- Exile's Tattered Shawl
 							i(244435),	-- Lodestar of the Great Dark (QI!)
@@ -683,17 +683,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(92390, {	-- Risk for Research
 						["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 						["provider"] = { "n", 250677 },	-- Lanlae Noxa
-						["coord"] = { 39.7, 86.6, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 39.7, 86.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(92155, {	-- Object Exorcism
 						["sourceQuests"] = { 92390 },	-- Risk for Research
 						["provider"] = { "n", 249935 },	-- Lanlae Noxa
-						["coord"] = { 66.9, 65.3, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 66.9, 65.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(92156, {	-- It Follows Me
 						["sourceQuests"] = { 92155 },	-- Object Exorcism
 						["provider"] = { "n", 249917 },	-- Havazza
-						["coord"] = { 69.2, 62.9, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 69.2, 62.9, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(251278),	-- Consuming Brand (QI!)
 						},
@@ -701,17 +701,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(92157, {	-- Ritual Activity
 						["sourceQuests"] = { 92156 },	-- It Follows Me
 						["provider"] = { "n", 249935 },	-- Lanlae Noxa
-						["coord"] = { 69.1, 63.0, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 69.1, 63.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(92158, {	-- Let it In
 						["sourceQuests"] = { 92157 },	-- Ritual Activity
 						["provider"] = { "n", 249935 },	-- Lanlae Noxa
-						["coord"] = { 67.1, 65.4, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 67.1, 65.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(92159, {	-- A Final Destination
 						["sourceQuests"] = { 92158 },	-- Let it In
 						["provider"] = { "n", 251277 },	-- Lanlae Noxa
-						["coord"] = { 74.4, 60.7, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 74.4, 60.7, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(264304),	-- [DNT] Cloth Chest
 							i(264305),	-- [DNT] Leather Chest
@@ -724,12 +724,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(92603, {	-- O Lonely Star
 						["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 						["provider"] = { "n", 252510 },	-- Orin Straylight
-						["coord"] = { 39.9, 86.6, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 39.9, 86.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					}),
 					q(92605, {	-- Honest as Bone
 						["sourceQuests"] = { 92603 },	-- O Lonely Star
 						["provider"] = { "n", 254012 },	-- Orin Straylight
-						["coord"] = { 39.5, 32.1, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 39.5, 32.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(256694, {	-- Bone Splinter (QI!)
 								["providers"] = {
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(92604, {	-- Speak in Blood
 						["sourceQuests"] = { 92603 },	-- O Lonely Star
 						["provider"] = { "n", 254012 },	-- Orin Straylight
-						["coord"] = { 39.5, 32.1, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 39.5, 32.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(256692),	-- Viscous Ichor (QI!)
 						},
@@ -753,7 +753,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							92605,	-- Honest as Bone
 						},
 						["provider"] = { "n", 254010 },	-- Orin Straylight
-						["coord"] = { 31.9, 30.1, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 31.9, 30.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(256549),	-- Shadow Chisel (QI!)
 						},
@@ -761,7 +761,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(92607, {	-- And Carve New Shapes
 						["sourceQuests"] = { 92606 },	-- Take Up Your Gift
 						["provider"] = { "n", 254014 },	-- Orin Straylight
-						["coord"] = { 31.8, 30.1, SLAYERS_RISE_OUTDOOR },
+						["coord"] = { 31.8, 30.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 						["groups"] = {
 							i(264308),	-- [DNT] Cloth Mask
 							i(264309),	-- [DNT] Leather Mask
@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(92641, {	-- Bloodying the Plain
 					["description"] = "Become available during 'Cut Her Strings' (91147).",
 					["sourceQuests"] = { 91145 },	-- The Conquered Heroes
-					["coord"] = { 56.5, 86.4, SLAYERS_RISE_OUTDOOR },
+					["coord"] = { 56.5, 86.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				}),
 			}),
 			--Zone buffs console tutorial (warbound?)
@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(91197, {	-- Collecting Remains
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245976 },	-- Deminos Darktrance
-				["coord"] = { 38.8, 81.5, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 38.8, 81.5, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["isDaily"] = true,
 				["groups"] = {
 					o(554772, {	--
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(89354, {	-- Preparing for Battle
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245976 },	-- Deminos Darktrance
-				["coord"] = { 38.8, 81.5, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 38.8, 81.5, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["isWeekly"] = true,
 				["groups"] = {
 					o(554772, {	--
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93865, {	-- Make Your Name
 				["sourceQuests"] = { 86549 },	-- No Fear of the Dark
 				["provider"] = { "n", 245571 },	-- Sador
-				["coord"] = { 36.0, 81.3, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 36.0, 81.3, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["isDaily"] = true,
 				["groups"] = {
 					i(262967),	-- Domanaar Dueling Flag (QI!)

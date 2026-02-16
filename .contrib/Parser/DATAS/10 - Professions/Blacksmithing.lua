@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_BLACKSMITHING_KNOWLEDGE = 2023;
-local TWW_BLACKSMITHING_KNOWLEDGE = 2786;
-local MID_BLACKSMITHING_KNOWLEDGE = 3151;
 root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18866),	-- Anvil Mastery IV
@@ -964,7 +961,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }} }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
 				r(371374),	-- Khaz'gorite Blacksmith's Toolbox
@@ -1108,7 +1105,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.BLACKSMITHING),
 			},
 		},{
 			i(198606),	-- Blacksmith's Writ
@@ -1167,7 +1164,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }} }, {
 				r(450281),	-- Artisan Blacksmith's Hammer
 				r(450282),	-- Artisan Blacksmith's Toolbox
 				r(450238),	-- Charged Claymore
@@ -1256,7 +1253,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING),
 			},
 		}, {
 			q(83726, {	-- TWW Inscription Order: Blacksmith
@@ -1293,7 +1290,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 }} }, {
 				r(1229646),	-- Farstrider's Chopper
 				r(1229659),	-- Farstrider's Mercy
 				r(1229658),	-- Spellbreaker's Blade
@@ -1369,7 +1366,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(525857, {	-- Voidstorm Defense Spear
-				["coord"] = { 30.6, 69.0, SLAYERS_RISE },
+				["coord"] = { 30.6, 69.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["questID"] = 89181,
 				["groups"] = {
 					i(238544),	-- Voidstorm Defense Spear
@@ -1380,7 +1377,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_BLACKSMITHING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.BLACKSMITHING),
 			},
 		}, {
 			i(263455),	-- Thalassian Blacksmith's Journal
