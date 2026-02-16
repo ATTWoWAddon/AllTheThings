@@ -11,7 +11,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61052, {	-- Dust 'Em Off
 				title(754),	-- Dustlord <Name>
 			}),
-			--ach(61520),	-- Explore Harandar (TRIGGERS CRITERIA WARNINGS!)
+			ach(61520),	-- Explore Harandar
+			skyriding(ach(61582, {	-- Harandar Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					61547,	-- Skyriding Glyphs: Blooming Lattice
+					61543,	-- Skyriding Glyphs: Blossoming Terrace
+					61549,	-- Skyriding Glyphs: Fungara Village
+					61550,	-- Skyriding Glyphs: Rift of Aln
+					61546,	-- Skyriding Glyphs: Roots of Amirdrassil
+					61548,	-- Skyriding Glyphs: Roots of Nordrassil
+					61551,	-- Skyriding Glyphs: Roots of Shaladrassil
+					61545,	-- Skyriding Glyphs: Roots of Teldrassil
+					61544,	-- Skyriding Glyphs: The Cradle
+				}},
+			})),
 			ach(62290, {	-- Harandar: The Highest Peaks
 				i(265792),	-- Fungarian Vine Fence (DECOR!)
 			}),
@@ -24,6 +38,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(61219),	-- No Time to Paws
 			ach(41804),	-- One Does Not Simply Walk Into Harandar
+			skyriding(ach(61547, {	-- Skyriding Glyphs: Blooming Lattice
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61543, {	-- Skyriding Glyphs: Blossoming Terrace
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61549, {	-- Skyriding Glyphs: Fungara Village
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61550, {	-- Skyriding Glyphs: Rift of Aln
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61546, {	-- Skyriding Glyphs: Roots of Amirdrassil
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61548, {	-- Skyriding Glyphs: Roots of Nordrassil
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61551, {	-- Skyriding Glyphs: Roots of Shaladrassil
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61545, {	-- Skyriding Glyphs: Roots of Teldrassil
+				--["coord"] = { X, Y, Z },
+			})),
+			skyriding(ach(61544, {	-- Skyriding Glyphs: The Cradle
+				--["coord"] = { X, Y, Z },
+			})),
 			ach(61739),	-- Sojourner of Harandar
 			ach(62260),	-- That's Aln, Folks!
 			ach(42278),	-- The Empty Cradle

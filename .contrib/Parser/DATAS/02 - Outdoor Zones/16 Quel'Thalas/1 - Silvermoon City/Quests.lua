@@ -62,17 +62,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 },
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
-			-- Profession(s)
-			q(93723, {	-- Crafters Needed
-				["qg"] = 243283,	-- Captain Flaresworn
-				["coord"] = { 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(251324),	-- Basket of Eversong Herbs (TODO: Blizzard bug - you see on accept but not in reward)
-					i(251321),	-- Collection of Eversong Minerals
-					i(251322),	-- Thalassian Leatherworker's Duffel
-					i(251327),	-- Thalassian Tailor's Tote Bag
-				},
-			}),
 			-- Sparks
 			q(93942, {	-- Spark of Radiance
 				["provider"] = { "i", 232875 },	-- Spark of Radiance

@@ -90,62 +90,62 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 								i(268044, {	-- Formula: Endless Codex of the Voidtouched (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256758, {	-- Formula: Enchant Tool - Ren'dorei Ingenuity (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(256757, {	-- Formula: Enchant Weapon - Acuity of the Ren'dorei (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ENCHANTERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(258128, {	-- Pattern: Lush Telogrus Carpet (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_TAILORS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.TAILORING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(265534, {	-- Plans: Ren'dorei Anvil (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.BLACKSMITHING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(259459, {	-- Recipe: Potion of Recklessness (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ALCHEMY, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(25800, {	-- Technique: Floating Void-Touched Tome (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(263445, {	-- Technique: Contract: The Singularity (RECIPE!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 							}, {	-- RENOWN 6 --
 								i(258410, {	-- Traditions of the Haranir: Herbalism (CI!)
 									["cost"] = {
-										{ "c", ARTISAN_HERBALISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.HERBALISM, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(258411, {	-- Traditions of the Haranir: Inscription (CI!)
 									["cost"] = {
-										{ "c", ARTISAN_SCRIBES_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
@@ -162,20 +162,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 9 --
 								i(262645, {	-- Beyond the Event Horizon: Alchemy (CI!)
+									["requireSkill"] = ALCHEMY,
 									["cost"] = {
-										{ "c", ARTISAN_ALCHEMISTS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ALCHEMY, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(262644, {	-- Beyond the Event Horizon: Blacksmithing (CI!)
+									["requireSkill"] = BLACKSMITHING,
 									["cost"] = {
-										{ "c", ARTISAN_BLACKSMITHS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.BLACKSMITHING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
 								i(262646, {	-- Beyond the Event Horizon: Engineering (CI!)
+									["requireSkill"] = ENGINEERING,
 									["cost"] = {
-										{ "c", ARTISAN_ENGINEERS_MOXIE, 150 },
+										{ "c", ARTISAN_MOXIE.ENGINEERING, 150 },
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),

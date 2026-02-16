@@ -237,6 +237,16 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 		en = "Granted to owners of Diablo IV: Lord of Hatred Standard Edition.",
 	},
 });
+DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
+	readable = "Diablo II: Resurrected - Reign of Warlock",
+	icon = 1529348,
+	text = {
+		en = "Diablo II: Resurrected - Reign of Warlock",
+	},
+	description = {
+		en = "Granted to owners of Diablo II: Resurrected - Reign of Warlock.",
+	},
+});
 OVERWATCH_ORIGINS = createHeader({
 	readable = "Overwatch: Origins",
 	icon = 1303199,
@@ -1153,6 +1163,12 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(259058, {["decorID"] = 12250}),	-- Sanctuary's Chess Board (DECOR!)
 				i(259057, {["decorID"] = 12249}),	-- Sanctuary's Chess Match (DECOR!)
 			}),
+		},
+	})),
+	n(DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
+		["description"] = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
+		["groups"] = {
+			i(256764),	-- Sanctuary's Horadric Cube (DECOR!)
 		},
 	})),
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {

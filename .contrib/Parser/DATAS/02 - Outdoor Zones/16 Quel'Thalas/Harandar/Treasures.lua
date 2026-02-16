@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 61.4, 35.0, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93481,
 					}),
-					o(579130, {	-- Words of Obayo--Part 2: The Silence
+					o(579131, {	-- Words of Obayo--Part 3: The Silence
 						["sourceQuest"] = 88996,	-- The Echoless Flame
 						["coord"] = { 62.6, 35.7, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93480,

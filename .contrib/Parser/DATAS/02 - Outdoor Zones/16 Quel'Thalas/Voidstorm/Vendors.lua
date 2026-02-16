@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(VENDORS, {
 			n(249098, {	-- Balaak the Twice-Exiled
-				["coord"] = { 53.5, 52.0, SLAYERS_RISE_OUTDOOR },
+				["coord"] = { 53.5, 52.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				["groups"] = {
 					--TODO: not worth to list cost, imo
 					--but if someone want 100x itemID 248944

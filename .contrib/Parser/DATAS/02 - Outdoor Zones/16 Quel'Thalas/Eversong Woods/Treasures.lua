@@ -5,6 +5,15 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 		n(TREASURES, {
+			header(HEADERS.Achievement, 62185, {	-- Ever Painting
+				o(621762),	-- Anar'alah Belore
+				o(621700),	-- Babble and Brook
+				o(621711),	-- Elrendar's Song
+				o(621732),	-- Light Consuming
+				o(621734),	-- Lost Lamppost
+				o(621709),	-- Memories of Ghosts
+				o(621707),	-- Sway of Red and Gold
+			}),
 			o(613242, {	-- Antique Nobleman's Signet Ring
 				["coord"] = { 52.3, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 93455,

@@ -132,9 +132,7 @@ root(ROOTS.Unsorted, {
 			i(268365),	-- Thalassian Competitor's Staff
 
 			-- Wep?
-			i(268475),	-- Evercore Dome Dinger
-			i(268477),	-- P.O.W. x3
-			i(268479),	-- Thalassian Competitor's Rifle
+
 
 			-- Midnight Preseason
 			i(268485),	-- Victorious Stormarion Pinnacle Cache
@@ -791,14 +789,7 @@ root(ROOTS.Unsorted, {
 			i(243448),	-- Illusory Adornment - Blooming Light \\ Enchant Shoulders - Blooming Light
 
 			-- Engi
-			i(243574),	-- Song Gear
-			i(243575),	-- Song Gear
-			i(243576),	-- Soul Sprocket
-			i(243577),	-- Soul Sprocket
-			i(243578),	-- Aetherlume
-			i(243579),	-- Aetherlume
-			i(243581),	-- Evercore
-			i(243582),	-- Evercore
+
 
 			--Qi
 			i(243588),	-- Limonite Ochre
@@ -946,70 +937,15 @@ root(ROOTS.Unsorted, {
 			i(244675),	-- Devouring Banding
 
 			-- Engi
-			i(244697),	-- Flux Cogwheel
-			i(244698),	-- Flux Cogwheel
-			i(244699),	-- Greased Cogwheel
-			i(244700),	-- Greased Cogwheel
-			i(244701),	-- Perfected Cogwheel
-			i(244702),	-- Perfected Cogwheel
-			i(244703),	-- Consistent Cogwheel
-			i(244704),	-- Consistent Cogwheel
+
 			i(244705),	-- Mini-Medical Team
 			i(244706),	-- Mini-Medical Team
-			i(244707),	-- Farstrider Fabric Cutters
-			i(244708),	-- Sin'dorei Snippers
-			i(244709),	-- Junker's Junk Visor
-			i(244710),	-- Sin'dorei Headlamp
-			i(244711),	-- Farstrider Hobbyist Rod
-			i(244712),	-- Sin'dorei Angler's Rod
-			i(244713),	-- Farstrider Clampers
-			i(244714),	-- Sin'dorei Clampers
-			i(244715),	-- Farstrider Hardhat
-			i(244716),	-- Sin'dorei Gilded Hardhat
-			i(244717),	-- Junker's Multitool
-			i(244718),	-- Turbo-Junker's Multitool v1 \\ Turbo-Junker's Multitool
-			i(244719),	-- Farstrider Rock Satchel
-			i(244720),	-- Junker's Big Ol' Bag
-			i(244735),	-- Thalassian Competitor's Cloth Goggles
-			i(244736),	-- Thalassian Competitor's Leather Optics
-			i(244737),	-- Thalassian Competitor's Mail Visor
-			i(244738),	-- Thalassian Competitor's Plate Guard
-			i(244739),	-- Thalassian Competitor's Cloth Cuffs
-			i(244740),	-- Thalassian Competitor's Leather Bands
-			i(244741),	-- Thalassian Competitor's Mail Links
-			i(244742),	-- Thalassian Competitor's Plate Bindings
-			i(244743),	-- Aetherlume Eye Wrap
-			i(244744),	-- Aetherlume Optics
-			i(244745),	-- Aetherlume Vision Shroud
-			i(244746),	-- Aetherlume Sun Guard
-			i(244747),	-- Aetherlume Silken Cuffs
-			i(244748),	-- Aetherlume Bands
-			i(244749),	-- Aetherlume Bracelets
-			i(244750),	-- Aetherlume Guards
-			i(244751),	-- Evercore Zoomshroud
-			i(244752),	-- Evercore Shade
-			i(244753),	-- Evercore Reconnaissance
-			i(244754),	-- Evercore Vision Guard
-			i(244755),	-- Quel'dorei Silken Cuffs
-			i(244756),	-- Quel'dorei Bands
-			i(244757),	-- Quel'dorei Bracelets
-			i(244758),	-- Quel'dorei Guards
-			i(244759),	-- Quel'dorei Cloth Goggles
-			i(244760),	-- Quel'dorei Leather Optics
-			i(244761),	-- Quel'dorei Mail Shroud
-			i(244762),	-- Quel'dorei Visor
-			i(244763),	-- Thalassian Competitor's Cloth Tip-Toes
-			i(244764),	-- Thalassian Competitor's Leather Sliders
-			i(244765),	-- Thalassian Competitor's Mail Footlinks
-			i(244766),	-- Thalassian Competitor's Plate Dunkers
-			i(244767),	-- Quel'dorei Softsteppers
-			i(244768),	-- Quel'dorei Runners
-			i(244769),	-- Quel'dorei Clonkers
-			i(244770),	-- Quel'dorei Stompers
-			i(244771),	-- Aetherlume Softsteppers
-			i(244772),	-- Aetherlume Runners
-			i(244773),	-- Aetherlume Clonkers
-			i(244774),	-- Aetherlume Stompers
+
+
+
+
+
+
 			i(244788),	-- [PH] Test Fishing Rod A
 			i(244789),	-- [PH] Test Fishing Rod B
 
@@ -1040,14 +976,7 @@ root(ROOTS.Unsorted, {
 			i(245276),	-- Zal'vithra Pigment
 
 			-- Enginerring
-			i(245337),	-- Evercore Swiftfeet
-			i(245338),	-- Evercore Stichwraps
-			i(245339),	-- Evercore Turbochains
-			i(245340),	-- Evercore Greaseplates
-			i(245341),	-- Evercore Wrist Latch
-			i(245342),	-- Evercore Binding
-			i(245343),	-- Evercore Chainguards
-			i(245344),	-- Evercore Gear Weight
+
 
 			-- Prof?
 			i(245345),	-- Fused Vitality
@@ -1265,7 +1194,7 @@ root(ROOTS.Unsorted, {
 			i(248083),	-- Dusty Quartz Amulet
 			i(248085),	-- Leafworn Amber Ring
 			i(248087),	-- Fernroot Choker
-			i(248130),	-- Lucky Keychain
+
 
 			-- Misc
 			i(247860),	-- Bomb Spores
@@ -1278,14 +1207,13 @@ root(ROOTS.Unsorted, {
 			i(248079),	-- [TEMPLATE] Summer Soother's Wand
 
 			--- Prof
-			i(248132),	-- Kinetic Ankle Primers
-			i(248133),	-- Kinetic Ankle Primers
-			i(248135),	-- B1P, Scorcher of Souls
-			i(248136),	-- M3DDY, Travel-Sized
-			i(248138),	-- Curious Red Button
-			i(248485),	-- Wormhole Generator: Quel'Thalas
-			i(248486),	-- Emergency Soul Link
-			i(248592),	-- B1P, Scorcher of Souls
+
+
+
+
+
+
+
 
 			-- QI
 			i(248208),	-- Bound Journal
@@ -1299,7 +1227,7 @@ root(ROOTS.Unsorted, {
 
 			-- wep
 			i(248280),	-- Void Analysis Baton
-			i(248409),	-- W-47CH D0G
+
 
 			-- QI
 			i(248715),	-- Bones of de Fallen
@@ -1955,8 +1883,7 @@ root(ROOTS.Unsorted, {
 			i(255688),	-- Anchor of the Abyss
 
 			-- Engi
-			i(255843),	-- HU5H, Nonchalant Pup
-			i(255844),	-- HU5H, Nonchalant Pup
+
 
 			-- Cooking
 			i(255845),	-- Silvermoon Parade
@@ -2142,20 +2069,14 @@ root(ROOTS.Unsorted, {
 			-- Engi
 			i(257733),	-- M0LL1, Atomic Anomaly
 			i(257734),	-- M0LL1, Atomic Anomaly
-			i(257735),	-- B0P, Curator of Booms
 
-			i(257741),	-- B0P, Curator of Booms
 
 			-- Toy
 			i(257736),	-- Lightcalled Hearthstone \\ [DNT] [PH] 12.0 Holy Hearthstone
 
 			-- Engi
-			i(257745),	-- Farstrider's Hawkeye
-			i(257746),	-- Farstrider's Hawkeye
-			i(257747),	-- Smuggler's Lynxeye
-			i(257748),	-- Smuggler's Lynxeye
-			i(257749),	-- Laced Zoomshots
-			i(257750),	-- Laced Zoomshots
+
+
 			i(257751),	-- Weighted Boomshots
 			i(257752),	-- Weighted Boomshots
 
@@ -2303,13 +2224,7 @@ root(ROOTS.Unsorted, {
 			i(259084),	-- Gift of the Cycle
 
 			-- Prof
-			i(259171),	-- Head-Mounted Beam Bummer \\ Super Sin'dorei Headlamp
-			i(259173),	-- Rock Bonkin' Hardhat \\ Super Sin'dorei Gilded Hardhat
-			i(259175),	-- Heavy-Duty Rock Assister \\ Super Junker's Big Ol' Bag
-			i(259177),	-- Self-Sharpening Sin'dorei Snippers \\ Super Sin'dorei Snippers
-			i(259179),	-- Sin'dorei Reeler's Rod \\ Super Sin'dorei Angler's Rod
-			i(259181),	-- Giga-Gem Grippers \\ Super Sin'dorei Clampers
-			i(259183),	-- Turbo-Junker's Multitool v9 \\ Super Turbo-Junker's Multitool
+
 			i(259188),	-- Lightbloomed Spore Sample \\ [PH] Specialization Knowledge - Alchemy - 1
 			i(259189),	-- Aged Cruor \\ [PH] Specialization Knowledge - Alchemy - 2
 			i(259190),	-- Thalassian Whestone
@@ -3207,7 +3122,7 @@ root(ROOTS.Unsorted, {
 
 			i(263999),	-- Midnight Cook's Shop Sign
 
-			i(264001),	-- Midnight Engineer's Shop Sign
+
 			i(264002),	-- Midnight Fisher's Shop Sign
 			i(264003),	-- Midnight Herbalist's Shop Sign
 			i(264004),	-- Midnight Scribe's Shop Sign

@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ENGINEERING_KNOWLEDGE = 2027;
-local TWW_ENGINEERING_KNOWLEDGE = 2788;
 root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18901, {	-- Chromatic Calibration: Holo-Gogs (automated)
@@ -1125,7 +1123,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ENGINEERING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }} }, {
 				r(382345),	-- Assorted Safety Fuses
 				r(382408),	-- Cartomancy Cannon
 				r(382368),	-- Centralized Precipitation Emitter
@@ -1266,7 +1264,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ENGINEERING),
 			},
 		},{
 			i(198611),	-- Engineering Details
@@ -1300,21 +1298,20 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228775),	-- Algari Engineer's Notepad
-			},
-		},{
+		n(QUESTS, {
 			q(84128, {	-- Engineering Services Requested
+				["sourceQuests"] = { 84285 },	-- Crafting Orders: Engineering
 				["provider"] = { "n", 228177 },	-- Kala Clayhoof
 				["coord"] = { 59.2, 55.2, DORNOGAL },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(228775),	-- Algari Engineer's Notepad
+				},
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }} }, {
 				r(447356),	-- Adjustable Cogwheel
 				r(447333),	-- Aqirite Fueled Samophlange
 				r(447374),	-- Box o' Booms
@@ -1385,9 +1382,15 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING),
 			},
 		},{
+			i(228775),	-- Algari Engineer's Notepad
+			q(83728, {	-- TWW Inscription Order: Engineering
+				["name"] = "TWW Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
+			}),
 			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
 				["name"] = "TWW Weekly Engineering Treasure #1",
 				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
@@ -1401,109 +1404,130 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42798, {	-- Engineering at Midnight
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				i(264001),	-- Midnight Engineer's Shop Sign (DECOR!)
+			}),
+		}),
+		n(QUESTS, {
+			q(93692, {	-- Engineering Services Requested
+				["sourceQuests"] = { 93727 },	-- Crafting Orders: Engineering
+				["provider"] = { "n", 241452 },	-- Danwe <Engineering Trainer>
+				["coord"] = { 43.5, 54.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["isWeekly"] = true,
 				["groups"] = {
+					i(263456),	-- Thalassian Engineer's Notepad
 				},
 			}),
 		}),
-		--[[
-		n(QUESTS, sharedData({
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["groups"] = {
-				i(228775),	-- Algari Engineer's Notepad
-			},
-		},{
-			q(84128, {	-- Engineering Services Requested
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-			}),
-		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
-				r(447356),	-- Adjustable Cogwheel
-				r(447333),	-- Aqirite Fueled Samophlange
-				r(447374),	-- Box o' Booms
-				r(447355),	-- Impeccable Cogwheel
-				r(447354),	-- Overclocked Cogwheel
-				r(447352),	-- P.0.W. x2
-				r(447353),	-- Serrated Cogwheel
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }} }, {
+				r(1229875),	-- Aetherlume Bands
+				r(1229876),	-- Aetherlume Bracelets
+				r(1229880),	-- Aetherlume Clonkers
+				r(1229870),	-- Aetherlume Eye Wrap
+				r(1229877),	-- Aetherlume Guards
+				r(1229871),	-- Aetherlume Optics
+				r(1229879),	-- Aetherlume Runners
+				r(1229874),	-- Aetherlume Silken Cuffs
+				r(1229878),	-- Aetherlume Softsteppers
+				r(1229881),	-- Aetherlume Stompers
+				r(1229873),	-- Aetherlume Sun Guard
+				r(1229872),	-- Aetherlume Vision Shroud
+				r(1229921),	-- HU5H, Nonchalant Pup
+				r(1229906),	-- Junker's Big Ol' Bag
+				r(1229924),	-- M3DDY
+				r(1282456),	-- P.O.W. x3
+				r(1229902),	-- Sin'dorei Angler's Rod
+				r(1229905),	-- Sin'dorei Clampers
+				r(1229897),	-- Sin'dorei Gilded Hardhat
+				r(1229894),	-- Sin'dorei Headlamp
+				r(1229907),	-- Sin'dorei Snippers
+				r(1229903),	-- Turbo-Junker's Multitool
 			}),
 		}),
 		n(TREASURES, {
-			o(455996, {	-- Arathi Safety Gloves
-				["coord"] = { 41.5, 48.9, HALLOWFALL },
-				["questID"] = 83871,
+			o(525941, {	-- Ethereal Stormwrench
+				["coord"] = { 54.0, 51.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89137,
 				["groups"] = {
-					i(226297),	-- Arathi Safety Gloves
+					i(238560),	-- Ethereal Stormwrench
 				},
 			}),
-			o(456000, {	-- Dornogal Spectacles
-				["coord"] = { 64.7, 52.7, DORNOGAL },
-				["questID"] = 83867,
+			o(525942, {	-- Expeditious Pylon
+				["coord"] = { 68.0, 49.8, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89136,
 				["groups"] = {
-					i(226293),	-- Dornogal Spectacles
+					i(238559),	-- Expeditious Pylon
 				},
 			}),
-			o(455998, {	-- Earthen Construct Blueprints
-				["coord"] = { 64.5, 58.8, THE_RINGING_DEEPS },
-				["questID"] = 83869,
+			o(525938, {	-- Handy Wrench
+				["coord"] = { 34.2, 87.8, MAP.MIDNIGHT.ZUL_AMAN },
+				["questID"] = 89140,
 				["groups"] = {
-					i(226295),	-- Earthen Construct Blueprints
+					i(238563),	-- Handy Wrench
 				},
 			}),
-			o(455994, {	-- Emptied Venom Canister
-				["coord"] = { 63.1, 11.1, NERUBAR },
-				["questID"] = 83873,
+			o(525943, {	-- Manual of Mistakes and Mishaps
+				["coord"] = { 39.6, 45.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89135,
 				["groups"] = {
-					i(226299),	-- Emptied Venom Canister
+					i(238558),	-- Manual of Mistakes and Mishaps
 				},
 			}),
-			o(455997, {	-- Holy Firework Dud
-				["coord"] = { 46.3, 61.3, HALLOWFALL },
-				["questID"] = 83870,
+			o(525944, {	-- Miniaturized Transport Skiff
+				["coord"] = { 28.9, 39.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 89134,
 				["groups"] = {
-					i(226296),	-- Holy Firework Dud
+					i(238557),	-- Miniaturized Transport Skiff
 				},
 			}),
-			o(455999, {	-- Inert Mining Bomb
-				["coord"] = { 42.6, 27.3, THE_RINGING_DEEPS },
-				["questID"] = 83868,
+			o(525940, {	-- Offline Helper Bot
+				["coord"] = { 65.3, 35.0, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89138,
 				["groups"] = {
-					i(226294),	-- Inert Mining Bomb
+					i(238561),	-- Offline Helper Bot
 				},
 			}),
-			o(455995, {	-- Puppeted Mechanical Spider
-				["coord"] = { 56.8, 38.6, AZJ_KAHET },
-				["questID"] = 83872,
+			o(525945, {	-- One Engineer's Junk
+				["coord"] = { 51.2, 74.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89133,
 				["groups"] = {
-					i(226298),	-- Puppeted Mechanical Spider
+					i(238556),	-- One Engineer's Junk
 				},
 			}),
-			o(456001, {	-- Rock Engineer's Wrench
-				["coord"] = { 61.3, 69.6, ISLE_OF_DORN },
-				["questID"] = 83866,
+			o(525939, {	-- What To Do When Nothing Works
+				["coord"] = { 51.3, 57.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["questID"] = 89139,
 				["groups"] = {
-					i(226292),	-- Rock Engineer's Wrench
+					i(238562),	-- What To Do When Nothing Works
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_ENGINEERING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING),
 			},
 		},{
-			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
-				["name"] = "TWW Weekly Engineering Treasure #1",
-				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
+			i(263456),	-- Thalassian Engineer's Notepad
+			--[[ Has same questID as war within
+			q(83728, {	-- MID Inscription Order: Engineering
+				["name"] = "MID Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245809 },	-- Thalassian Treatise on Engineering
 			}),
-			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
-				["name"] = "TWW Weekly Engineering Treasure #2",
-				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
+			--]]
+			--[[ Needs QuestIDs
+			q(83260, {	-- MID Weekly Engineering Knowledgepoint #1
+				["name"] = "MID Weekly Engineering Treasure #1",
+				["provider"] = { "i", 259194 },	-- Dance Gear
 			}),
-		})),--]]
+			q(83261, {	-- MID Weekly Engineering Knowledgepoint #2
+				["name"] = "MID Weekly Engineering Treasure #2",
+				["provider"] = { "i", 259195 },	-- Dawn Capacitor
+			}),
+			--]]
+		})),
 	})),
 })));
 

@@ -1290,7 +1290,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				end
 			end
 			tinsert(tooltipInfo, {
-				left = "Time Played",
+				left = TIME_PLAYED_MSG,
 				right = GetTimePlayedString(totalTimePlayed)
 			});
 		end
@@ -1354,7 +1354,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 		end
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
-			left = "Total",
+			left = TOTAL,
 			right = tostring(total),
 			r = 1, g = 0.8, b = 0.8
 		});

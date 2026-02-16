@@ -21,6 +21,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(FINERY_FUNDS),
 			}),
 			ach(61859),	-- Midnight Flight Master
+			skyriding(ach(61584, {	-- Midnight Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					61576,	-- Eversong Woods Glyph Hunter
+					61582,	-- Harandar Glyph Hunter
+					61583,	-- Voidstorm Glyph Hunter
+					61581,	-- Zul'Aman Glyph Hunter
+				}},
+				["groups"] = {
+					i(257145),	-- Crimson Dragonhawk (MOUNT)
+				}
+			})),
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839),	-- Midnight Pathfinder
 			ach(62057),	-- Midnight: The Highest Peaks

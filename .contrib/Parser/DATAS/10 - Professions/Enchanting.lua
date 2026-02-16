@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local DF_ENCHANTING_KNOWLEDGE = 2030;
-local TWW_ENCHANTING_KNOWLEDGE = 2787;
-local MID_ENCHANTING_KNOWLEDGE = 3152;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
@@ -634,7 +631,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", DF_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 }} }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -769,7 +766,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(DF_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.DF.ENCHANTING),
 			},
 		},{
 			i(198610),	-- Enchanter's Script
@@ -817,7 +814,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }} }, {
 				r(445378),	-- Algari Ingenuity
 				r(445403),	-- Authority of Fiery Resolve
 				r(445336),	-- Authority of Storms
@@ -915,9 +912,15 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(TWW_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING),
 			},
-		},{i(225230),
+		},{
+			i(227667),	-- Algari Enchanter's Folio
+			q(83727, {	-- TWW Inscription Order: Enchanting
+				["name"] = "TWW Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
+			}),
 			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1
 				["name"] = "TWW Weekly Enchanting Treasure #1",
 				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
@@ -964,11 +967,20 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				i(264000),	-- Midnight Enchanter's Shop Sign (DECOR!)
 			}),
 		}),
-		n(QUESTS, {
-		}),
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 243349 },	-- Dolothos <Enchanting Trainer>
+			["coord"] = { 48.0, 53.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["isWeekly"] = true,
+			["groups"] = {
+				i(263464),	-- Thalassian Enchanter's Folio
+			},
+		},{
+			q(93699),	-- A Ray of Sunlight
+			q(93698),	-- Splintered Radiance
+		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", MID_ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 }} }, {
 				r(1236057),	-- Enchant Boots - Lynx's Dexterity
 				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
 				r(1236071),	-- Enchant Helm - Empowered Blessing of Speed
@@ -984,54 +996,117 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				r(1235731),	-- Shatter Essence
 			}),
 		}),
-		--[[
 		n(TREASURES, {
+			o(525953, {	-- Enchanted Amani Mask
+				["coord"] = { 48.4, 22.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+				["questID"] = 89100,
+				["groups"] = {
+					i(238548),	-- Enchanted Amani Mask
+				},
+			}),
+			--o(456002, {	-- Enchanted Sunfire Silk
+			--	["coord"] = { 57.3, 44.0, AZJ_KAHET },
+			--	["questID"] = 83865,
+			--	["groups"] = {
+					i(238549),	-- Enchanted Sunfire Silk
+			--	},
+			--}),
+			o(525949, {	-- Entropic Shard
+				["coord"] = { 37.7, 65.3, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89104,
+				["groups"] = {
+					i(238552),	-- Entropic Shard
+				},
+			}),
+			o(525950, {	-- Everblazing Sunmote
+				["coord"] = { 60.8, 53.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 89103,
+				["groups"] = {
+					i(238551),	--Everblazing Sunmote
+				},
+			}),
+			o(525947, {	-- Loa-Blessed Dust
+				["coord"] = { 40.4, 51.1, MAP.MIDNIGHT.ZUL_AMAN },
+				["questID"] = 89106,
+				["groups"] = {
+					i(238554),	-- Loa-Blessed Dust
+				},
+			}),
+			o(525948, {	-- Primal Essence Orb
+				["coord"] = { 65.8, 50.2, MAP.MIDNIGHT.HARANDAR },
+				["questID"] = 89105,
+				["groups"] = {
+					i(238553),	-- Primal Essence Orb
+				},
+			}),
+			o(525951, {	-- Pure Void Crystal
+				["coord"] = { 35.5, 58.8, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 89102,
+				["groups"] = {
+					i(238550),	-- Pure Void Crystal
+				},
+			}),
+			o(525946, {	-- Sin'dorei Enchanting Rod
+				["coord"] = { 63.5, 32.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 83865,
+				["groups"] = {
+					i(238555),	-- Sin'dorei Enchanting Rod
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["groups"] = {
-				currency(MID_ENCHANTING_KNOWLEDGE),
+				currency(PROFESSION_KNOWLEDGE.MID.ENCHANTING),
 			},
-		},{i(225230),
-			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1
-				["name"] = "TWW Weekly Enchanting Treasure #1",
-				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
+		},{
+			i(263464),	-- Thalassian Enchanter's Folio
+			q(95129, {	-- MID Inscription Order: Enchanting
+				["name"] = "MID Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 245759 },	-- Thalassian Treatise on Enchanting
 			}),
-			q(83259, {	-- TWW Weekly Enchanting Knowledgepoint #2
-				["name"] = "TWW Weekly Enchanting Treasure #2",
-				["provider"] =  { "i", 225230 },	-- Crystalline Repository
+			--[[ Needs QuestID
+			q(83258, {	-- MID Weekly Enchanting Knowledgepoint #1
+				["name"] = "MID Weekly Enchanting Treasure #1",
+				["provider"] =  { "i", 259193 },	-- Lost Thalassian Vellum
 			}),
-			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #3
-				["name"] = "TWW Weekly Enchanting Disenchant #1",
+			q(83259, {	-- MID Weekly Enchanting Knowledgepoint #2
+				["name"] = "MID Weekly Enchanting Treasure #2",
+				["provider"] =  { "i", 259192 },	-- Voidstorm Ashes
+			}),
+			--]]
+			q(95048, {	-- MID Weekly Enchanting Knowledgepoint #3
+				["name"] = "MID Weekly Enchanting Disenchant #1",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84291, {	-- TWW Weekly Enchanting Knowledgepoint #4
-				["name"] = "TWW Weekly Enchanting Disenchant #2",
+			q(95049, {	-- MID Weekly Enchanting Knowledgepoint #4
+				["name"] = "MID Weekly Enchanting Disenchant #2",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84292, {	-- TWW Weekly Enchanting Knowledgepoint #5
-				["name"] = "TWW Weekly Enchanting Disenchant #3",
+			q(95050, {	-- MID Weekly Enchanting Knowledgepoint #5
+				["name"] = "MID Weekly Enchanting Disenchant #3",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84293, {	-- TWW Weekly Enchanting Knowledgepoint #6
-				["name"] = "TWW Weekly Enchanting Disenchant #4",
+			q(95051, {	-- MID Weekly Enchanting Knowledgepoint #6
+				["name"] = "MID Weekly Enchanting Disenchant #4",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84294, {	-- TWW Weekly Enchanting Knowledgepoint #7
-				["name"] = "TWW Weekly Enchanting Disenchant #5",
+			q(95052, {	-- MID Weekly Enchanting Knowledgepoint #7
+				["name"] = "MID Weekly Enchanting Disenchant #5",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
-			q(84295, {	-- TWW Weekly Enchanting Knowledgepoint #8
-				["name"] = "TWW Weekly Enchanting Disenchant #6",
+			q(95053, {	-- MID Weekly Enchanting Knowledgepoint #8
+				["name"] = "MID Weekly Enchanting Disenchant #6",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227661 },	-- Gleaming Telluric Crystal
+				["provider"] =  { "i", 267655 },	-- Brimming Mana Shard
 			}),
-		})),--]]
+		})),
 	})),
 })));
 

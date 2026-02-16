@@ -210,12 +210,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 	--]]
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 1280952, {	-- Disenchant
+			i(267655),	-- Brimming Mana Shard
 			i(243605),	-- Dawn Crystal+
 			i(243606),	-- Dawn Crystal++
 			i(243599),	-- Eversinging Dust+
 			i(243600),	-- Eversinging Dust++
 			i(243602),	-- Radiant Shard+
 			i(243603),	-- Radiant Shard++
+			i(267654),	-- Swirling Arcane Essence
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(244008),	-- Enchant Boots - Farstrider's Hunt+
@@ -394,9 +396,173 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(244178),	-- Thalassian Spellweaver's Wand
 		}),
 	}),
-	--[[
 	prof(ENGINEERING, {
-	}),]]--
+		header(HEADERS.Spell, 1229930, {	-- Recycling
+			i(243578),	-- Aetherlume+
+			i(243579),	-- Aetherlume++
+			i(243581),	-- Evercore+
+			i(243582),	-- Evercore++
+			r(1248612),	-- Ambient Aethercharged Crystal
+			r(1261945),	-- B0P, Curator of Booms
+			r(1229922),	-- B1P, Scorcher of Souls
+			r(1229927),	-- Curious Red Button
+			r(1229923),	-- Emergency Soul Link
+			r(1261866),	-- Farstrider's Hawkeye
+			r(1229919),	-- Kinetic Ankle Primers
+			r(1261895),	-- Laced Zoomshots
+			r(1229916),	-- Lucky Keychain
+			r(1229917),	-- M3DDY, Travel-Sized
+			r(1229887),	-- Quel'dorei Bands
+			r(1229888),	-- Quel'dorei Bracelets
+			r(1229892),	-- Quel'dorei Clonkers
+			r(1229882),	-- Quel'dorei Cloth Goggles
+			r(1229889),	-- Quel'dorei Guards
+			r(1229883),	-- Quel'dorei Leather Optics
+			r(1229884),	-- Quel'dorei Mail Shroud
+			r(1229891),	-- Quel'dorei Runners
+			r(1229886),	-- Quel'dorei Silken Cuffs
+			r(1229890),	-- Quel'dorei Softsteppers
+			r(1229893),	-- Quel'dorei Stompers
+			r(1229885),	-- Quel'dorei Visor
+			r(1248615),	-- Ren'dorei Crafting Framework
+			r(1248611),	-- Ren'dorei Lightpost
+			r(1248613),	-- Ren'dorei Stargazer
+			r(1248610),	-- Ren'dorei Void Projector
+			r(1248616),	-- Ren'dorei Warp Orb
+			r(1248614),	-- Small Telogrus Lamp
+			r(1261893),	-- Smuggler's Lynxeye
+			r(1229926),	-- W-47CH D0G
+			r(1229928),	-- Wormhole Generator: Quel'Thalas
+		}),
+		n(ARMOR, {
+			i(244748),	-- Aetherlume Bands
+			i(244749),	-- Aetherlume Bracelets
+			i(244773),	-- Aetherlume Clonkers
+			i(244743),	-- Aetherlume Eye Wrap
+			i(244750),	-- Aetherlume Guards
+			i(244744),	-- Aetherlume Optics
+			i(244772),	-- Aetherlume Runners
+			i(244747),	-- Aetherlume Silken Cuffs
+			i(244771),	-- Aetherlume Softsteppers
+			i(244774),	-- Aetherlume Stompers
+			i(244746),	-- Aetherlume Sun Guard
+			i(244745),	-- Aetherlume Vision Shroud
+			i(245342),	-- Evercore Binding
+			i(245343),	-- Evercore Chainguards
+			i(245344),	-- Evercore Gear Weight
+			i(245340),	-- Evercore Greaseplates
+			i(244753),	-- Evercore Reconnaissance
+			i(244752),	-- Evercore Shade
+			i(245338),	-- Evercore Stichwraps
+			i(245337),	-- Evercore Swiftfeet
+			i(245339),	-- Evercore Turbochains
+			i(244754),	-- Evercore Vision Guard
+			i(245341),	-- Evercore Wrist Latch
+			i(244751),	-- Evercore Zoomshroud
+			i(244756),	-- Quel'dorei Bands
+			i(244757),	-- Quel'dorei Bracelets
+			i(244769),	-- Quel'dorei Clonkers
+			i(244759),	-- Quel'dorei Cloth Goggles
+			i(244758),	-- Quel'dorei Guards
+			i(244760),	-- Quel'dorei Leather Optics
+			i(244761),	-- Quel'dorei Mail Shroud
+			i(244768),	-- Quel'dorei Runners
+			i(244755),	-- Quel'dorei Silken Cuffs
+			i(244767),	-- Quel'dorei Softsteppers
+			i(244770),	-- Quel'dorei Stompers
+			i(244762),	-- Quel'dorei Visor
+			i(244739),	-- Thalassian Competitor's Cloth Cuffs
+			i(244735),	-- Thalassian Competitor's Cloth Goggles
+			i(244763),	-- Thalassian Competitor's Cloth Tip-Toes
+			i(244740),	-- Thalassian Competitor's Leather Bands
+			i(244736),	-- Thalassian Competitor's Leather Optics
+			i(244764),	-- Thalassian Competitor's Leather Sliders
+			i(244765),	-- Thalassian Competitor's Mail Footlinks
+			i(244741),	-- Thalassian Competitor's Mail Links
+			i(244737),	-- Thalassian Competitor's Mail Visor
+			i(244742),	-- Thalassian Competitor's Plate Bindings
+			i(244766),	-- Thalassian Competitor's Plate Dunkers
+			i(244738),	-- Thalassian Competitor's Plate Guard
+		}),
+		n(DECOR, {
+			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
+			i(262617),	-- Ren'dorei Crafting Framework (DECOR!)
+			i(263049),	-- Ren'dorei Lightpost (DECOR!)
+			i(262465),	-- Ren'dorei Stargazer (DECOR!)
+			i(262618),	-- Ren'dorei Void Projector (DECOR!)
+			i(262602),	-- Ren'dorei Warp Orb (DECOR!)
+			i(262789),	-- Small Telogrus Lamp (DECOR!)
+		}),
+		filter(MISC, {
+			i(257735),	-- B0P, Curator of Booms+
+			i(257741),	-- B0P, Curator of Booms++
+			i(248135),	-- B1P, Scorcher of Souls+
+			i(248592),	-- B1P, Scorcher of Souls++
+			i(244703),	-- Consistent Cogwheel+
+			i(244704),	-- Consistent Cogwheel++
+			i(248138),	-- Curious Red Button
+			i(248486),	-- Emergency Soul Link
+			i(244697),	-- Flux Cogwheel+
+			i(244698),	-- Flux Cogwheel++
+			i(244699),	-- Greased Cogwheel+
+			i(244700),	-- Greased Cogwheel++
+			i(255843),	-- HU5H, Nonchalant Pup+
+			i(255844),	-- HU5H, Nonchalant Pup++
+			i(248132),	-- Kinetic Ankle Primers+
+			i(248133),	-- Kinetic Ankle Primers++
+			i(257749),	-- Laced Zoomshots+
+			i(257750),	-- Laced Zoomshots++
+			i(248130),	-- Lucky Keychain
+			i(248137),	-- M3DDY
+			i(248136),	-- M3DDY, Travel-Sized
+			i(244701),	-- Perfected Cogwheel+
+			i(244702),	-- Perfected Cogwheel++
+			i(248409),	-- W-47CH D0G
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(244713),	-- Farstrider Clampers
+			i(244707),	-- Farstrider Fabric Cutters
+			i(244715),	-- Farstrider Hardhat
+			i(244711),	-- Farstrider Hobbyist Rod
+			i(244719),	-- Farstrider Rock Satchel
+			i(259181),	-- Giga-Gem Grippers
+			i(259171),	-- Head-Mounted Beam Bummer
+			i(259175),	-- Heavy-Duty Rock Assister
+			i(244720),	-- Junker's Big Ol' Bag
+			i(244709),	-- Junker's Junk Visor
+			i(244717),	-- Junker's Multitool
+			i(259173),	-- Rock Bonkin' Hardhat
+			i(259177),	-- Self-Sharpening Sin'dorei Snippers
+			i(244712),	-- Sin'dorei Angler's Rod
+			i(244714),	-- Sin'dorei Clampers
+			i(244716),	-- Sin'dorei Gilded Hardhat
+			i(244710),	-- Sin'dorei Headlamp
+			i(259179),	-- Sin'dorei Reeler's Rod
+			i(244708),	-- Sin'dorei Snippers
+			i(244718),	-- Turbo-Junker's Multitool v1
+			i(259183),	-- Turbo-Junker's Multitool v9
+		}),
+		filter(REAGENTS, {
+			i(243574),	-- Song Gear+
+			i(243575),	-- Song Gear++
+			i(243576),	-- Soul Sprocket+
+			i(243577),	-- Soul Sprocket++
+		}),
+		filter(TOYS, {
+			i(248485),	-- Wormhole Generator: Quel'Thalas (TOY!)
+		}),
+		n(WEAPONS, {
+			i(268475),	-- Evercore Dome Dinger
+			i(268477),	-- P.O.W. x3
+			i(268479),	-- Thalassian Competitor's Rifle
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			i(257745),	-- Farstrider's Hawkeye+
+			i(257746),	-- Farstrider's Hawkeye++
+			i(257747),	-- Smuggler's Lynxeye+
+			i(257748),	-- Smuggler's Lynxeye++
+		}),
+	}),
 	prof(FISHING, {
 		n(DISCOVERY, {
 			r(1225274),	-- Blood Hunter
