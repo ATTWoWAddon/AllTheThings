@@ -46,9 +46,10 @@ app:CreateWindow("WorldQuests", {
 			app.TryPopulateQuestRewards(questObject);
 			return questObject;
 		end
+		local MapContainer = app.GetFieldContainer("mapID");
 		local function CreateMapWithStyle(id)
 			local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
-			for _,data in ipairs(app.SearchForField("mapID", id)) do
+			for _,data in ipairs(MapContainer[id]) do
 				if data.mapID and data.icon then
 					mapObject.name = data.name;
 					mapObject.icon = data.icon;
