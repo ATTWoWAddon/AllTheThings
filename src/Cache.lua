@@ -919,11 +919,7 @@ fieldConverters.qis = function(group, value)		-- Referenced in Modules/Search
 	end
 end
 
--- These should be refactored:
-if app.IsRetail then
--- Referenced in the Dynamic Header Categories for Retail's Main List in GetDatabaseRoot
--- CRIEVE NOTE: These can easily be converted into a BuildFlatSearchResults or SearchForFieldRecursively
--- Obviously we'd still want to cache those results, but only after a user clicks the behaviour to search for it.
+-- These are used to provide sourcePaths for the various types:
 fieldConverters.decorID = function(group, value)
 	CacheField(group, "decorID", value);
 end
@@ -932,7 +928,6 @@ fieldConverters.illusionID = function(group, value)
 end
 fieldConverters.titleID = function(group, value)
 	CacheField(group, "titleID", value);
-end
 end
 end
 
