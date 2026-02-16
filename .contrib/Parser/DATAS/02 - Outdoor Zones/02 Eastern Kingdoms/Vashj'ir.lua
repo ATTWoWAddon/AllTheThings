@@ -2523,10 +2523,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25540,	-- Bellies Await
 							["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
 							["races"] = ALLIANCE_ONLY,
-							["crs"] = {
-								41227,	-- Azsh'ir Infantry
-								39638,	-- Azsh'ir Patroller
-							},
 							["groups"] = {
 								i(59697),	-- Keenstone Helm
 								i(59696),	-- Gloves of Transcription
@@ -2537,10 +2533,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25958,	-- Looking Forward
 							["provider"] = { "i", 62282 },	-- Ancient Elven Etching (H)
 							["races"] = HORDE_ONLY,
-							["crs"] = {
-								41227,	-- Azsh'ir Infantry
-								39638,	-- Azsh'ir Patroller
-							},
 							["groups"] = {
 								i(59694),	-- Keenstone Helm
 								i(59693),	-- Gloves of Transcription
@@ -3140,6 +3132,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62362),	-- Signet of the Elder Council
 								},
 							}),
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(62281, {	-- Ancient Elven Etching (A)
+							["races"] = ALLIANCE_ONLY,
+							["crs"] = {
+								41227,	-- Azsh'ir Infantry
+								39638,	-- Azsh'ir Patroller
+							},
+						}),
+						i(62282, {	-- Ancient Elven Etching (H)
+							["races"] = HORDE_ONLY,
+							["crs"] = {
+								41227,	-- Azsh'ir Infantry
+								39638,	-- Azsh'ir Patroller
+							},
 						}),
 					}),
 				},
