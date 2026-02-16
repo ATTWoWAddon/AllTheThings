@@ -784,28 +784,40 @@ local providerTypeConverters = {
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
 	end,
+	["i"] = function(group, providerID, index)
+		CacheField(group, "itemIDAsCost", providerID);
+		CacheField(group, "qItemID", providerID);
+	end,
+};
+local function cacheProvider(group, provider, index)
+	providerTypeConverters[provider[1]](group, provider[2], index);
+end
+fieldConverters.provider = cacheProvider;
+fieldConverters.providers = function(group, value)
+	for i=1,#value do
+		cacheProvider(group, value[i], i);
+	end
+end
+
+-- Cost & Currency
+local type = type
+local costTypeConverters = {
+	["c"] = function(group, providerID)
+		CacheField(group, "currencyIDAsCost", providerID);
+	end,
 	["i"] = function(group, providerID)
 		CacheField(group, "itemIDAsCost", providerID);
 	end,
 	-- Do nothing, nothing to cache.
 	["g"] = app.EmptyFunction
 };
-local function cacheProviderOrCost(group, provider)
-	providerTypeConverters[provider[1]](group, provider[2]);
+local function cacheCost(group, cost)
+	costTypeConverters[cost[1]](group, cost[2]);
 end
-fieldConverters.provider = cacheProviderOrCost;
-fieldConverters.providers = function(group, value)
-	for i=1,#value do
-		cacheProviderOrCost(group, value[i]);
-	end
-end
-
--- Cost & Currency
-local type = type
 fieldConverters.cost = function(group, value)
 	if type(value) == "table" then
 		for i=1,#value do
-			cacheProviderOrCost(group, value[i]);
+			cacheCost(group, value[i]);
 		end
 	end
 end
