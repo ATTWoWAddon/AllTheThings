@@ -3283,10 +3283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_FIVE, i(20384, {	-- Silithid Carapace Fragment
-					["providers"] = {
-						{ "i", 20402 },	-- Agent of Nozdormu
-						{ "i", 20403 },	-- Proxy of Nozdormu
-					},
+					["provider"] = { "i", 20402 },	-- Agent of Nozdormu
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						13301,	-- Hive'Ashi Ambusher

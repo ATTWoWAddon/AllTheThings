@@ -444,14 +444,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8301, {	-- The Path of the Righteous
 					["sourceQuest"] = 8288,	-- Only One May Rise
-					["providers"] = {
-						{ "n", 15180 },	-- Baristolth of the Shifting Sands
-						{ "i", 20402 },	-- Agent of Nozdormu
-					},
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["cost"] = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					["lvl"] = 60,
 					["groups"] = {
+						i(20402),	-- Agent of Nozdormu
 						i(20403),	-- Proxy of Nozdormu
 					},
 				}),
@@ -512,6 +510,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["lvl"] = 60,
+				}),
+			}),
+			n(REWARDS, {
+				i(20402, {	-- Agent of Nozdormu
+					["description"] = "A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",
+					["cost"] = {{ "i", 20403, 1 }},	-- Proxy of Nozdormu
 				}),
 			}),
 		},
