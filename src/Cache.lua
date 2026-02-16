@@ -62,6 +62,14 @@ app.CreateDataCache = function(name)
 end
 
 -- Cache-Based Searching
+app.GetField = function(field, id)
+	-- Returns: A table containing all groups which contain the provided id for a given field.
+	return currentCache[field][id];
+end
+app.GetFieldContainer = function(field)
+	-- Returns: A table containing all groups which contain a given field.
+	return currentCache[field];
+end
 local function GetRawField(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field.
 	-- NOTE: Can be nil for simplicity in use
@@ -75,6 +83,9 @@ app.GetRawFieldContainer = function(field)
 	-- NOTE: Can be nil for simplicity in use
 	return rawget(currentCache, field);
 end
+
+-- NOTE: Planning on repurposing these to build the results if they're missing.
+-- For situations where you don't want that, use GetRaw or GetField
 app.SearchForField = function(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field.
 	return currentCache[field][id];
