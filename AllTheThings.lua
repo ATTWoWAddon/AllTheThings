@@ -145,6 +145,17 @@ local SourceLocationSettingsKey = setmetatable({
 local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
 local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
 local RETRIEVING_DATA = RETRIEVING_DATA
+local function GenerateSourcePath(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 then
+			return GenerateSourcePath(parent, l + 1);
+		else
+			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.sourceText or group.text or RETRIEVING_DATA);
+		end
+	end
+	return group.text or RETRIEVING_DATA;
+end
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
 	local thingCheck = app.ThingKeys[key]
@@ -188,7 +199,7 @@ local function AddContainsData(group, tooltipInfo)
 				working = true
 			end
 			left = TryColorizeName(entry, left);
-			-- app.PrintDebug("Entry#",i,app:SearchLink(entry),app.GenerateSourcePathForTooltip(entry))
+			-- app.PrintDebug("Entry#",i,app:SearchLink(entry),GenerateSourcePath(entry, 1))
 
 			-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 			if entry.c and entry.key ~= "classID" and #entry.c == 1 then
@@ -353,7 +364,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		if parent and parent.parent
 			and (showCompleted or not app.IsComplete(j))
 		then
-			text = app.GenerateSourcePathForTooltip(parent);
+			text = GenerateSourcePath(parent, 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 				-- doesn't meet current unobtainable filters from the Thing itself and its parent chain
@@ -597,7 +608,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 		-- app.PrintDebug("Cloning Roots for",paramA,paramB,"#group",group and #group);
 		local cloned = {};
 		for _,o in ipairs(group) do
-			-- app.PrintDebug("Clone:",app:SearchLink(o),GetRelativeValue(o, "sourceIgnored"),app.GetRelativeRawWithField(o, "sourceIgnored"),app.GenerateSourcePathForTooltip(o))
+			-- app.PrintDebug("Clone:",app:SearchLink(o),GetRelativeValue(o, "sourceIgnored"),app.GetRelativeRawWithField(o, "sourceIgnored"),GenerateSourcePath(o, 1))
 			if not GetRelativeValue(o, "sourceIgnored") then
 				cloned[#cloned + 1] = CreateObject(o)
 			end
