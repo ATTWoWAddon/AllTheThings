@@ -86,13 +86,31 @@ end
 
 -- NOTE: Planning on repurposing these to build the results if they're missing.
 -- For situations where you don't want that, use GetRaw or GetField
-app.SearchForField = function(field, id)
-	-- Returns: A table containing all groups which contain the provided id for a given field.
-	return currentCache[field][id];
+local function BuildFieldContainerRecursively(group, field, cache)
+	if group[field] then
+		local r = cache[group[field]];
+		r[#r + 1] = group
+	end
+	if group.g then
+		-- Go through the sub groups and determine if any of them have a response.
+		for i, subgroup in ipairs(group.g) do
+			BuildFieldContainerRecursively(subgroup, field, cache);
+		end
+	end
 end
 app.SearchForFieldContainer = function(field)
 	-- Returns: A table containing all groups which contain a given field.
-	return currentCache[field];
+	local cache = rawget(currentCache, field);
+	if not cache then
+		-- Build the cache now, this will create and store it in the current cache
+		cache = currentCache[field];
+		BuildFieldContainerRecursively(app:GetDatabaseRoot(), field, cache);
+	end
+	return cache;
+end
+app.SearchForField = function(field, id)
+	-- Returns: A table containing all groups which contain the provided id for a given field.
+	return currentCache[field][id];
 end
 
 -- Recursive Searching
@@ -911,9 +929,6 @@ fieldConverters.decorID = function(group, value)
 end
 fieldConverters.illusionID = function(group, value)
 	CacheField(group, "illusionID", value);
-end
-fieldConverters.professionID = function(group, value)	-- Also in Retail's Tradeskill window.
-	CacheField(group, "professionID", value);
 end
 fieldConverters.titleID = function(group, value)
 	CacheField(group, "titleID", value);

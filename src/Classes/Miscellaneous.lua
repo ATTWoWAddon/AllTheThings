@@ -7,7 +7,7 @@ local pairs, ipairs = pairs, ipairs;
 
 -- App locals
 local AssignChildren, GetRelativeValue = app.AssignChildren, app.GetRelativeValue
-local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
+local NestObjects, CreateObject, NestObject, SearchForObject
 
 local DynamicDataCache = app.CreateDataCache("dynamic");
 DynamicDataCache.skipMapCaching = true;
@@ -22,7 +22,6 @@ app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
 	CreateObject = app.__CreateObject
-	SearchForFieldContainer = app.SearchForFieldContainer
 	SearchForObject = app.SearchForObject;
 end)
 
@@ -191,7 +190,7 @@ local function NestDynamicValueCategories(group)
 	local cat, search
 	local field = group.dynamicValueID
 	local dynamicvalue_field = group.dynamic_valueField
-	local cache = SearchForFieldContainer(field);
+	local cache = app.SearchForFieldContainer(field);
 	-- app.PrintDebug("FDVC:",field,dynamicvalue_field)
 	for id,_ in pairs(cache) do
 		search = SearchForObject(field, id, "key", true)

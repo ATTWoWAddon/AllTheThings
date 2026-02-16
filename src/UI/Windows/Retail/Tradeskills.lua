@@ -466,7 +466,7 @@ app:CreateWindow("Tradeskills", {
 
 			-- Check to see if ATT has information about this profession.
 			local tradeSkillID = app.GetTradeSkillLine()
-			if not tradeSkillID or #app.SearchForField("professionID", tradeSkillID) < 1 then
+			if not tradeSkillID then
 				self:SetVisible(false)
 				return false
 			end

@@ -10,8 +10,7 @@ local floor, 	  type, tonumber, ipairs, pairs
 	= math.floor, type, tonumber, ipairs, pairs
 
 -- App locals
-local SearchForFieldContainer, IsRetrieving
-= app.SearchForFieldContainer, app.Modules.RetrievingData.IsRetrieving
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- Upgrade API Implementation
 -- Access via AllTheThings.Modules.Upgrade
@@ -613,7 +612,7 @@ local function UpdateUpgrades()
 
 	wipe(UpgradeSources)
 	-- Get all up entries
-	for up,refs in pairs(SearchForFieldContainer("up")) do
+	for up,refs in pairs(app.SearchForFieldContainer("up")) do
 		Runner.Run(UpdateUpgradeGroups, refs)
 	end
 
