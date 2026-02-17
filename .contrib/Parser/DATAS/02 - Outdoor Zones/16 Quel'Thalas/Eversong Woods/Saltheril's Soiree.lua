@@ -20,6 +20,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				ach(62190, {	-- Life of the Party
 					i(257144),	-- Umbral Dragonhawk (MOUNT!)
 				}),
+				ach(62186, {	-- The Party Must Go On
+					i(251909),	-- Eversong Feast Platter (DECOR!)
+				}),
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BLOOD_KNIGHTS),
@@ -281,13 +284,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		n(SALTHERILS_HAVEN, {
-			n(QUESTS, {
-				q(89431),	-- Farstrider - Epic [DNT] (spellID 1227983), Farstriders with "exeptional" tag was chosen during questID 91629 (High Esteem) // this also seems like unlock ability to see objectID 531479 (Ranger's Cache) in zone.
-				q(89290),	-- Invite Rep Script [DNT] (spellID 1228071), fired when questID 91966 (Saltheril's Soiree) pop in player ui as objective (server-side push quest?), could also be sourceQuest in future for alts/weekly?
-			}),
-		}),
-	}),
-}));
+
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+-- 	m(MAP.MIDNIGHT.QUELTHALAS, {
+-- 		n(SALTHERILS_HAVEN, {
+-- 			n(QUESTS, {
+
+-- 			}),
+-- 		}),
+-- 	}),
+-- }));
