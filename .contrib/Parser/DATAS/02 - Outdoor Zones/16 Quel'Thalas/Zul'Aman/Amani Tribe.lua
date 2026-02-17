@@ -114,18 +114,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								}),
 							}, {	-- RENOWN 6 --
 								i(250922, {	-- Whisper of the Loa: Leatherworking (CI!)
+									["requireSkill"] = LEATHERWORKING,
 									["cost"] = {
 										{ "c", ARTISAN_MOXIE.LEATHERWORKING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(250924, {	-- Whisper of the Loa: Mining (CI!)
+									["requireSkill"] = MINING,
 									["cost"] = {
 										{ "c", ARTISAN_MOXIE.MINING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },
 									},
 								}),
 								i(250923, {	-- Whisper of the Loa: Skinning (CI!)
+									["requireSkill"] = SKINNING,
 									["cost"] = {
 										{ "c", ARTISAN_MOXIE.SKINNING, 75 },
 										{ "c", VOIDLIGHT_MARL, 750 },

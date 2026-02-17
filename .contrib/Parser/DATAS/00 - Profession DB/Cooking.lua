@@ -959,7 +959,7 @@ i(0, 1226197);		-- Azeroot Tea
 i(0, 1226192);		-- Bloodthistle-Wrapped Cutlets
 i(0, 1226198);		-- Bloom Skewers
 i(0, 1226169);		-- Blooming Feast
-i(0, 1226172);		-- Braised Blood Hunter
+i(0, 1226172);		-- Braised Blood Hunter [Check Later if Trainer or Recipe]
 i(0, 1226176);		-- Buttered Root Crab
 i(0, 1226170);		-- Champion's Bento
 i(0, 1226173);		-- Crimson Calamari

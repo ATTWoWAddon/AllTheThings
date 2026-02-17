@@ -1004,6 +1004,9 @@ ihqt(262646, 93796);				-- Beyond the Event Horizon: Engineering
 ihqt(257600, 92374);				-- Skill Issue: Enchanting
 ihqt(257599, 93222);				-- Skill Issue: Jewelcrafting
 ihqt(257601, 93201);				-- Skill Issue: Tailoring
+ihqt(250922, 92371);				-- Whisper of the Loa: Leatherworking
+ihqt(250924, 92372);				-- Whisper of the Loa: Mining
+ihqt(250923, 92373);				-- Whisper of the Loa: Skinning
 
 ------------
 -- UNUSED --
