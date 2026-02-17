@@ -1,8 +1,6 @@
 12.0.0.63534
 r(471008),	-- Midnight Fishing
-r(1225267),	-- Hollow Grouper
 r(1225273),	-- Ominous Octopus
-r(1225275),	-- Gore Guppy
 r(1225281),	-- Tender Lumifin
 r(1225322),	-- Eversong Woods \\ Quel'Thalas \\ Quel'thalas
 r(1225335),	-- Zul'Aman

@@ -35559,6 +35559,7 @@ s(169562)/i(190965),	-- Bundle of Duck Feathers
 s(169602)/i(191078),	-- Gold Rolling Pin
 s(169691)/i(191647),	-- Tuskarr Fishing Pole
 s(180390)/i(191229),	-- Khaz'gorite Leatherworker's Toolset \\ Titanicium Leatherworker's Toolset
+s(180653)/i(193485),	-- Protective Gloves \\ Engineer's Protective Gloves
 s(180919)/i(194099),	-- Shikaar Hunting Horn \\ Cunning Hunter's Horn
 s(180922)/i(194108),	-- Mighty Hunter's Horn
 s(181042)/i(194676),	-- Emboldened Dracthyr's Tabard
@@ -35654,6 +35655,8 @@ s(182327)/i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 s(182328)/i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
 10.0.0.45570
 s(183122)/i(201046),	-- Dreamwarding Dripbrew \\ [NYI] PH Food - Late Night Lab
+10.0.0.45661
+s(183298)/i(198246),	-- Khaz'gorite Encased Samophlange \\ Titanicium Encased Samophlange \\ Multitool T2 [PH] \\ Multitool T2
 10.0.0.46479
 s(184043)/i(201972),	-- Crimson Gladiator's Splitter
 s(184046)/i(201992),	-- [PH] BoE Ring \\ Emissary's Flamewrought Seal
@@ -36096,938 +36099,470 @@ s(296379)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - War
 s(296380)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
 s(296381)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
 s(296382)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
-s(296386)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
-s(296387)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
-s(296388)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
-s(296389)/i(249947),	-- Night Ender's Greatmantle \\ 12.0 Raid - Class Set - Warrior - Armor - Generic - Cloak
 s(296391)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
 s(296392)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
 s(296393)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
 s(296394)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
-s(296398)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
-s(296399)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
-s(296400)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
-s(296401)/i(249948),	-- Night Ender's Warbands \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Wrist
 s(296403)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
 s(296404)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
 s(296405)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
 s(296406)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
-s(296410)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
-s(296411)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
-s(296412)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
-s(296413)/i(249949),	-- Night Ender's Girdle \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Waist
 s(296415)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
 s(296416)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
 s(296417)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
 s(296418)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
-s(296422)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
-s(296423)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
-s(296424)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
-s(296425)/i(249950),	-- Night Ender's Pauldrons \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Shoulder
 s(296427)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
 s(296428)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
 s(296429)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
 s(296430)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
-s(296434)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
-s(296435)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
-s(296436)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
-s(296437)/i(249951),	-- Night Ender's Chausses \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Legs
 s(296439)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
 s(296440)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
 s(296441)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
 s(296442)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
-s(296446)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
-s(296447)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
-s(296448)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
-s(296449)/i(249952),	-- Night Ender's Tusks \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Head
 s(296451)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
 s(296452)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
 s(296453)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
 s(296454)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
-s(296458)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
-s(296459)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
-s(296460)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
-s(296461)/i(249953),	-- Night Ender's Fists \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Hand
 s(296463)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
 s(296464)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
 s(296465)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
 s(296466)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
-s(296470)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
-s(296471)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
-s(296472)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
-s(296473)/i(249954),	-- Night Ender's Greatboots \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Feet
 s(296475)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
 s(296476)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
 s(296477)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
 s(296478)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
-s(296482)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
-s(296483)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
-s(296484)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
-s(296485)/i(249955),	-- Night Ender's Breastplate \\ 12.0 Raid - Class Set - Warrior - Armor - Plate - Chest
 s(296487)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
 s(296488)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
 s(296489)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
 s(296490)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
-s(296494)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
-s(296495)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
-s(296496)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
-s(296497)/i(249956),	-- Luminant Verdict's Greatmantle \\ 12.0 Raid - Class Set - Paladin - Armor - Generic - Cloak
 s(296499)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
 s(296500)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
 s(296501)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
 s(296502)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
-s(296506)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
-s(296507)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
-s(296508)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
-s(296509)/i(249957),	-- Luminant Verdict's Cuffs \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Wrist
 s(296511)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
 s(296512)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
 s(296513)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
 s(296514)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
-s(296518)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
-s(296519)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
-s(296520)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
-s(296521)/i(249958),	-- Luminant Verdict's Undaunted Emblem \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Waist
 s(296523)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
 s(296524)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
 s(296525)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
 s(296526)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
-s(296530)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
-s(296531)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
-s(296532)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
-s(296533)/i(249959),	-- Luminant Verdict's Providence Watch \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Shoulder
 s(296535)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
 s(296536)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
 s(296537)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
 s(296538)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
-s(296542)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
-s(296543)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
-s(296544)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
-s(296545)/i(249960),	-- Luminant Verdict's Greaves \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Legs
 s(296547)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
 s(296548)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
 s(296549)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
 s(296550)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
-s(296554)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
-s(296555)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
-s(296556)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
-s(296557)/i(249961),	-- Luminant Verdict's Unwavering Gaze \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Head
 s(296559)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
 s(296560)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
 s(296561)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
 s(296562)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
-s(296566)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
-s(296567)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
-s(296568)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
-s(296569)/i(249962),	-- Luminant Verdict's Gauntlets \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Hand
 s(296571)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
 s(296572)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
 s(296573)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
 s(296574)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
-s(296578)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
-s(296579)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
-s(296580)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
-s(296581)/i(249963),	-- Luminant Verdict's Sabatons \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Feet
 s(296583)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
 s(296584)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
 s(296585)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
 s(296586)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
-s(296590)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
-s(296591)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
-s(296592)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
-s(296593)/i(249964),	-- Luminant Verdict's Divine Warplate \\ 12.0 Raid - Class Set - Paladin - Armor - Plate - Chest
 s(296595)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
 s(296596)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
 s(296597)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
 s(296598)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
-s(296602)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
-s(296603)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
-s(296604)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
-s(296605)/i(249965),	-- Relentless Rider's Drape \\ 12.0 Raid - Class Set - Death Knight - Armor - Generic - Cloak
 s(296607)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
 s(296608)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
 s(296609)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
 s(296610)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
-s(296614)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
-s(296615)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
-s(296616)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
-s(296617)/i(249966),	-- Relentless Rider's Manacles \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Wrist
 s(296619)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
 s(296620)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
 s(296621)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
 s(296622)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
-s(296626)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
-s(296627)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
-s(296628)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
-s(296629)/i(249967),	-- Relentless Rider's Chain \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Waist
 s(296631)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
 s(296632)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
 s(296633)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
 s(296634)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
-s(296638)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
-s(296639)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
-s(296640)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
-s(296641)/i(249968),	-- Relentless Rider's Dreadthorns \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Shoulder
 s(296643)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
 s(296644)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
 s(296645)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
 s(296646)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
-s(296650)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
-s(296651)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
-s(296652)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
-s(296653)/i(249969),	-- Relentless Rider's Legguards \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Legs
 s(296655)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
 s(296656)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
 s(296657)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
 s(296658)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
-s(296662)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
-s(296663)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
-s(296664)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
-s(296665)/i(249970),	-- Relentless Rider's Crown \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Head
 s(296667)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
 s(296668)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
 s(296669)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
 s(296670)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
-s(296674)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
-s(296675)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
-s(296676)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
-s(296677)/i(249971),	-- Relentless Rider's Bonegrasps \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Hand
 s(296679)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
 s(296680)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
 s(296681)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
 s(296682)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
-s(296686)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
-s(296687)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
-s(296688)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
-s(296689)/i(249972),	-- Relentless Rider's Stompers \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Feet
 s(296691)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
 s(296692)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
 s(296693)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
 s(296694)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
-s(296698)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
-s(296699)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
-s(296700)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
-s(296701)/i(249973),	-- Relentless Rider's Cuirass \\ 12.0 Raid - Class Set - Death Knight - Armor - Plate - Chest
 s(296703)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
 s(296704)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
 s(296705)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
 s(296706)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
-s(296710)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
-s(296711)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
-s(296712)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
-s(296713)/i(249974),	-- Guardian of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Generic - Cloak
 s(296715)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
 s(296716)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
 s(296717)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
 s(296718)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
-s(296722)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
-s(296723)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
-s(296724)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
-s(296725)/i(249975),	-- Cuffs of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Wrist
 s(296727)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
 s(296728)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
 s(296729)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
 s(296730)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
-s(296734)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
-s(296735)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
-s(296736)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
-s(296737)/i(249976),	-- Ceinture of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Waist
 s(296739)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
 s(296740)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
 s(296741)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
 s(296742)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
-s(296746)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
-s(296747)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
-s(296748)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
-s(296749)/i(249977),	-- Tempests of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Shoulder
 s(296750)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
 s(296751)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
 s(296756)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
 s(296757)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
-s(296758)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
-s(296759)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
-s(296760)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
-s(296761)/i(249978),	-- Leggings of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Legs
 s(296763)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
 s(296764)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
 s(296765)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
 s(296766)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
-s(296770)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
-s(296771)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
-s(296772)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
-s(296773)/i(249979),	-- Locus of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Head
 s(296775)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
 s(296776)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
 s(296777)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
 s(296778)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
-s(296782)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
-s(296783)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
-s(296784)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
-s(296785)/i(249980),	-- Earthgrips of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Hand
 s(296787)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
 s(296788)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
 s(296789)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
 s(296790)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
-s(296794)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
-s(296795)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
-s(296796)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
-s(296797)/i(249981),	-- Sollerets of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Feet
 s(296798)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
 s(296799)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
 s(296804)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
 s(296805)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
-s(296806)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
-s(296807)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
-s(296808)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
-s(296809)/i(249982),	-- Embrace of the Primal Core \\ 12.0 Raid - Class Set - Shaman - Armor - Mail - Chest
 s(296811)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
 s(296812)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
 s(296813)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
 s(296814)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
-s(296818)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
-s(296819)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
-s(296820)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
-s(296821)/i(249983),	-- Primal Sentry's Spine \\ 12.0 Raid - Class Set - Hunter - Armor - Generic - Cloak
 s(296823)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
 s(296824)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
 s(296825)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
 s(296826)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
-s(296830)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
-s(296831)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
-s(296832)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
-s(296833)/i(249984),	-- Primal Sentry's Wound Stanchers \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Wrist
 s(296835)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
 s(296836)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
 s(296837)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
 s(296838)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
-s(296842)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
-s(296843)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
-s(296844)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
-s(296845)/i(249985),	-- Primal Sentry's Cinch \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Waist
 s(296847)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
 s(296848)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
 s(296849)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
 s(296850)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
-s(296854)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
-s(296855)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
-s(296856)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
-s(296857)/i(249986),	-- Primal Sentry's Trophies \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Shoulder
 s(296859)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
 s(296860)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
 s(296861)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
 s(296862)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
-s(296866)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
-s(296867)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
-s(296868)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
-s(296869)/i(249987),	-- Primal Sentry's Legguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Legs
 s(296871)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
 s(296872)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
 s(296873)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
 s(296874)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
-s(296878)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
-s(296879)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
-s(296880)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
-s(296881)/i(249988),	-- Primal Sentry's Maw \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Head
 s(296883)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
 s(296884)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
 s(296885)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
 s(296886)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
-s(296890)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
-s(296891)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
-s(296892)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
-s(296893)/i(249989),	-- Primal Sentry's Talonguards \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Hand
 s(296895)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
 s(296896)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
 s(296897)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
 s(296898)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
-s(296902)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
-s(296903)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
-s(296904)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
-s(296905)/i(249990),	-- Primal Sentry's Swiftsteps \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Feet
 s(296907)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
 s(296908)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
 s(296909)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
 s(296910)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
-s(296914)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
-s(296915)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
-s(296916)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
-s(296917)/i(249991),	-- Primal Sentry's Scaleplate \\ 12.0 Raid - Class Set - Hunter - Armor - Mail - Chest
 s(296919)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
 s(296920)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
 s(296921)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
 s(296922)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
-s(296926)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
-s(296927)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
-s(296928)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
-s(296929)/i(249992),	-- Shroud of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Generic - Cloak
 s(296931)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
 s(296932)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
 s(296933)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
 s(296934)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
-s(296938)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
-s(296939)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
-s(296940)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
-s(296941)/i(249993),	-- Bracers of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Wrist
 s(296943)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
 s(296944)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
 s(296945)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
 s(296946)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
-s(296950)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
-s(296951)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
-s(296952)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
-s(296953)/i(249994),	-- Girdle of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Waist
 s(296955)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
 s(296956)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
 s(296957)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
 s(296958)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
-s(296962)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
-s(296963)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
-s(296964)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
-s(296965)/i(249995),	-- Beacons of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Shoulder
 s(296967)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
 s(296968)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
 s(296969)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
 s(296970)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
-s(296974)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
-s(296975)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
-s(296976)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
-s(296977)/i(249996),	-- Greaves of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Legs
 s(296979)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
 s(296980)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
 s(296981)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
 s(296982)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
-s(296986)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
-s(296987)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
-s(296988)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
-s(296989)/i(249997),	-- Hornhelm of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Head
 s(296991)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
 s(296992)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
 s(296993)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
 s(296994)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
-s(296998)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
-s(296999)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
-s(297000)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
-s(297001)/i(249998),	-- Enforcer's Grips of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Hand
 s(297003)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
 s(297004)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
 s(297005)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
 s(297006)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
-s(297010)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
-s(297011)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
-s(297012)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
-s(297013)/i(249999),	-- Spelltreads of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Feet
 s(297015)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
 s(297016)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
 s(297017)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
 s(297018)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
-s(297022)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
-s(297023)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
-s(297024)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
-s(297025)/i(250000),	-- Frenzyward of the Black Talon \\ 12.0 Raid - Class Set - Evoker - Armor - Mail - Chest
 s(297027)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
 s(297028)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
 s(297029)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
 s(297030)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
-s(297034)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
-s(297035)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
-s(297036)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
-s(297037)/i(250001),	-- Disappearing Cloth of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Generic - Cloak
 s(297039)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
 s(297040)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
 s(297041)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
 s(297042)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
-s(297046)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
-s(297047)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
-s(297048)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
-s(297049)/i(250002),	-- Trick Bracers of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Wrist
 s(297051)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
 s(297052)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
 s(297053)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
 s(297054)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
-s(297058)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
-s(297059)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
-s(297060)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
-s(297061)/i(250003),	-- Toolbelt of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Waist
 s(297063)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
 s(297064)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
 s(297065)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
 s(297066)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
-s(297070)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
-s(297071)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
-s(297072)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
-s(297073)/i(250004),	-- Venom Casks of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Shoulder
 s(297075)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
 s(297076)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
 s(297077)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
 s(297078)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
-s(297082)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
-s(297083)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
-s(297084)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
-s(297085)/i(250005),	-- Blade Holsters of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Legs
 s(297087)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
 s(297088)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
 s(297089)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
 s(297090)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
-s(297094)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
-s(297095)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
-s(297096)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
-s(297097)/i(250006),	-- Masquerade of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Head
 s(297099)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
 s(297100)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
 s(297101)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
 s(297102)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
-s(297106)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
-s(297107)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
-s(297108)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
-s(297109)/i(250007),	-- Sleight of Hand of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Hand
 s(297111)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
 s(297112)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
 s(297113)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
 s(297114)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
-s(297118)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
-s(297119)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
-s(297120)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
-s(297121)/i(250008),	-- Balancing Boots of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Feet
 s(297123)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
 s(297124)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
 s(297125)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
 s(297126)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
-s(297130)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
-s(297131)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
-s(297132)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
-s(297133)/i(250009),	-- Fantastic Finery of the Grim Jest \\ 12.0 Raid - Class Set - Rogue - Armor - Leather - Chest
 s(297135)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
 s(297136)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
 s(297137)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
 s(297138)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
-s(297142)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
-s(297143)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
-s(297144)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
-s(297145)/i(250010),	-- Windwrap of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Generic - Cloak
 s(297147)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
 s(297148)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
 s(297149)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
 s(297150)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
-s(297154)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
-s(297155)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
-s(297156)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
-s(297157)/i(250011),	-- Strikeguards of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Wrist
 s(297159)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
 s(297160)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
 s(297161)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
 s(297162)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
-s(297166)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
-s(297167)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
-s(297168)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
-s(297169)/i(250012),	-- Stormsigil of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Waist
 s(297171)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
 s(297172)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
 s(297173)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
 s(297174)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
-s(297178)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
-s(297179)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
-s(297180)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
-s(297181)/i(250013),	-- Aurastones of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Shoulder
 s(297183)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
 s(297184)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
 s(297185)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
 s(297186)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
-s(297190)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
-s(297191)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
-s(297192)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
-s(297193)/i(250014),	-- Swiftsweepers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Legs
 s(297195)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
 s(297196)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
 s(297197)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
 s(297198)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
-s(297202)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
-s(297203)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
-s(297204)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
-s(297205)/i(250015),	-- Fearsome Visage of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Head
 s(297207)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
 s(297208)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
 s(297209)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
 s(297210)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
-s(297214)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
-s(297215)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
-s(297216)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
-s(297217)/i(250016),	-- Thunderfists of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Hand
 s(297219)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
 s(297220)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
 s(297221)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
 s(297222)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
-s(297226)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
-s(297227)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
-s(297228)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
-s(297229)/i(250017),	-- Storm Crashers of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Feet
 s(297231)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
 s(297232)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
 s(297233)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
 s(297234)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
-s(297238)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
-s(297239)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
-s(297240)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
-s(297241)/i(250018),	-- Battle Garb of Ra-den's Chosen \\ 12.0 Raid - Class Set - Monk - Armor - Leather - Chest
 s(297243)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
 s(297244)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
 s(297245)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
 s(297246)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
-s(297250)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
-s(297251)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
-s(297252)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
-s(297253)/i(250019),	-- Leafdrape of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Generic - Cloak
 s(297255)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
 s(297256)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
 s(297257)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
 s(297258)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
-s(297262)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
-s(297263)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
-s(297264)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
-s(297265)/i(250020),	-- Bindings of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Wrist
 s(297267)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
 s(297268)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
 s(297269)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
 s(297270)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
-s(297274)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
-s(297275)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
-s(297276)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
-s(297277)/i(250021),	-- Barksash of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Waist
 s(297279)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
 s(297280)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
 s(297281)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
 s(297282)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
-s(297286)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
-s(297287)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
-s(297288)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
-s(297289)/i(250022),	-- Seedpods of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Shoulder
 s(297291)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297292)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297293)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297294)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
-s(297298)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
-s(297299)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
-s(297300)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
-s(297301)/i(250023),	-- Phloemwraps of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Legs
 s(297303)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
 s(297304)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
 s(297305)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
 s(297306)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297310)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297311)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297312)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
-s(297313)/i(250024),	-- Branches of the Luminous Bloom \\ Branches  of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Head
 s(297315)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297316)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297317)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297318)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
-s(297322)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
-s(297323)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
-s(297324)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
-s(297325)/i(250025),	-- Arbortenders of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Hand
 s(297327)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
 s(297328)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
 s(297329)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
 s(297330)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
-s(297334)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
-s(297335)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
-s(297336)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
-s(297337)/i(250026),	-- Rootslippers of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Feet
 s(297339)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
 s(297340)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
 s(297341)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
 s(297342)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
-s(297346)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
-s(297347)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
-s(297348)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
-s(297349)/i(250027),	-- Trunk of the Luminous Bloom \\ 12.0 Raid - Class Set - Druid - Armor - Leather - Chest
 s(297351)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
 s(297352)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
 s(297353)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
 s(297354)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
-s(297358)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
-s(297359)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
-s(297360)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
-s(297361)/i(250028),	-- Devouring Reaver's Drape \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Generic - Cloak
 s(297363)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
 s(297364)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
 s(297365)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
 s(297366)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
-s(297370)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
-s(297371)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
-s(297372)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
-s(297373)/i(250029),	-- Devouring Reaver's Support Straps \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Wrist
 s(297375)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
 s(297376)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
 s(297377)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
 s(297378)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
-s(297382)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
-s(297383)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
-s(297384)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
-s(297385)/i(250030),	-- Devouring Reaver's Emblem \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Waist
 s(297387)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
 s(297388)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
 s(297389)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
 s(297390)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
-s(297394)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
-s(297395)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
-s(297396)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
-s(297397)/i(250031),	-- Devouring Reaver's Exhaustplates \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Shoulder
 s(297399)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
 s(297400)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
 s(297401)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
 s(297402)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
-s(297406)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
-s(297407)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
-s(297408)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
-s(297409)/i(250032),	-- Devouring Reaver's Pistons \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Legs
 s(297411)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
 s(297412)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
 s(297413)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
 s(297414)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
-s(297418)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
-s(297419)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
-s(297420)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
-s(297421)/i(250033),	-- Devouring Reaver's Intake \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Head
 s(297423)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
 s(297424)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
 s(297425)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
 s(297426)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
-s(297430)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
-s(297431)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
-s(297432)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
-s(297433)/i(250034),	-- Devouring Reaver's Essence Grips \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Hand
 s(297435)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
 s(297436)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
 s(297437)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
 s(297438)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
-s(297442)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
-s(297443)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
-s(297444)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
-s(297445)/i(250035),	-- Devouring Reaver's Soul Flatteners \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Feet
 s(297447)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
 s(297448)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
 s(297449)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
 s(297450)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
-s(297454)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
-s(297455)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
-s(297456)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
-s(297457)/i(250036),	-- Devouring Reaver's Engine \\ 12.0 Raid - Class Set - Demon Hunter - Armor - Leather - Chest
 s(297459)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
 s(297460)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
 s(297461)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
 s(297462)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
-s(297466)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
-s(297467)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
-s(297468)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
-s(297469)/i(250037),	-- Abyssal Immolator's Ritual Mantle \\ 12.0 Raid - Class Set - Warlock - Armor - Generic - Cloak
 s(297471)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
 s(297472)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
 s(297473)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
 s(297474)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
-s(297478)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
-s(297479)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
-s(297480)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
-s(297481)/i(250038),	-- Abyssal Immolator's Shackles \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Wrist
 s(297483)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
 s(297484)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
 s(297485)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
 s(297486)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
-s(297490)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
-s(297491)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
-s(297492)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
-s(297493)/i(250039),	-- Abyssal Immolator's Blazing Core \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Waist
 s(297495)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
 s(297496)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
 s(297497)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
 s(297498)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
-s(297502)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
-s(297503)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
-s(297504)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
-s(297505)/i(250040),	-- Abyssal Immolator's Fury \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Shoulder
 s(297507)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
 s(297508)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
 s(297509)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
 s(297510)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
-s(297514)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
-s(297515)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
-s(297516)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
-s(297517)/i(250041),	-- Abyssal Immolator's Pillars \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Legs
 s(297519)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
 s(297520)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
 s(297521)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
 s(297522)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
-s(297526)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
-s(297527)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
-s(297528)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
-s(297529)/i(250042),	-- Abyssal Immolator's Smoldering Flames \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Head
 s(297531)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
 s(297532)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
 s(297533)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
 s(297534)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
-s(297538)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
-s(297539)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
-s(297540)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
-s(297541)/i(250043),	-- Abyssal Immolator's Grasps \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth -  Hand
 s(297543)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
 s(297544)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
 s(297545)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
 s(297546)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
-s(297550)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
-s(297551)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
-s(297552)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
-s(297553)/i(250044),	-- Abyssal Immolator's Ashwalkers \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Feet
 s(297555)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
 s(297556)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
 s(297557)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
 s(297558)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
-s(297562)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
-s(297563)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
-s(297564)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
-s(297565)/i(250045),	-- Abyssal Immolator's Dreadrobe \\ 12.0 Raid - Class Set - Warlock - Armor - Cloth - Robe
 s(297567)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
 s(297568)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
 s(297569)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
 s(297570)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
-s(297574)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
-s(297575)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
-s(297576)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
-s(297577)/i(250046),	-- Blind Oath's Shroud \\ 12.0 Raid - Class Set - Priest - Armor - Generic - Cloak
 s(297579)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
 s(297580)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
 s(297581)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
 s(297582)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
-s(297586)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
-s(297587)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
-s(297588)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
-s(297589)/i(250047),	-- Blind Oath's Wraps \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Wrist
 s(297591)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
 s(297592)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
 s(297593)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
 s(297594)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
-s(297598)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
-s(297599)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
-s(297600)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
-s(297601)/i(250048),	-- Blind Oath's Jeweled Sash \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Waist
 s(297603)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
 s(297604)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
 s(297605)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
 s(297606)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
-s(297610)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
-s(297611)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
-s(297612)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
-s(297613)/i(250049),	-- Blind Oath's Seraphguards \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Shoulder
 s(297615)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
 s(297616)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
 s(297617)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
 s(297618)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
-s(297622)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
-s(297623)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
-s(297624)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
-s(297625)/i(250050),	-- Blind Oath's Leggings \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Legs
 s(297627)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
 s(297628)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
 s(297629)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
 s(297630)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
-s(297634)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
-s(297635)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
-s(297636)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
-s(297637)/i(250051),	-- Blind Oath's Winged Crest \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Head
 s(297639)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
 s(297640)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
 s(297641)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
 s(297642)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
-s(297646)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
-s(297647)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
-s(297648)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
-s(297649)/i(250052),	-- Blind Oath's Touch \\ 12.0 Raid - Class Set - Priest - Armor - Cloth -  Hand
 s(297651)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
 s(297652)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
 s(297653)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
 s(297654)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
-s(297658)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
-s(297659)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
-s(297660)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
-s(297661)/i(250053),	-- Blind Oath's Slippers \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Feet
 s(297663)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
 s(297664)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
 s(297665)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
 s(297666)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
-s(297670)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
-s(297671)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
-s(297672)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
-s(297673)/i(250054),	-- Blind Oath's Raiment \\ 12.0 Raid - Class Set - Priest - Armor - Cloth - Robe
 s(297675)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
 s(297676)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
 s(297677)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
 s(297678)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
-s(297682)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
-s(297683)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
-s(297684)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
-s(297685)/i(250055),	-- Voidbreaker's Encryption \\ 12.0 Raid - Class Set - Mage - Armor - Generic - Cloak
 s(297687)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
 s(297688)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
 s(297689)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
 s(297690)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
-s(297694)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
-s(297695)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
-s(297696)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
-s(297697)/i(250056),	-- Voidbreaker's Bracers \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Wrist
 s(297699)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
 s(297700)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
 s(297701)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
 s(297702)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
-s(297706)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
-s(297707)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
-s(297708)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
-s(297709)/i(250057),	-- Voidbreaker's Sage Cord \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Waist
 s(297711)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
 s(297712)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
 s(297713)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
 s(297714)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
-s(297718)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
-s(297719)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
-s(297720)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
-s(297721)/i(250058),	-- Voidbreaker's Leyline Nexi \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Shoulder
 s(297723)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
 s(297724)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
 s(297725)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
 s(297726)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
-s(297730)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
-s(297731)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
-s(297732)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
-s(297733)/i(250059),	-- Voidbreaker's Britches \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Legs
 s(297735)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
 s(297736)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
 s(297737)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
 s(297738)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
-s(297742)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
-s(297743)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
-s(297744)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
-s(297745)/i(250060),	-- Voidbreaker's Veil \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Head
 s(297747)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
 s(297748)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
 s(297749)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
 s(297750)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
-s(297754)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
-s(297755)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
-s(297756)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
-s(297757)/i(250061),	-- Voidbreaker's Gloves \\ 12.0 Raid - Class Set - Mage - Armor - Cloth -  Hand
 s(297759)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
 s(297760)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
 s(297761)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
 s(297762)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
-s(297766)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
-s(297767)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
-s(297768)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
-s(297769)/i(250062),	-- Voidbreaker's Treads \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Feet
 s(297771)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
 s(297772)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
 s(297773)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
 s(297774)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
-s(297778)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
-s(297779)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
-s(297780)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
-s(297781)/i(250063),	-- Voidbreaker's Robe \\ 12.0 Raid - Class Set - Mage - Armor - Cloth - Chest
 s(297789)/i(250103),	--
 s(297855)/i(250456),	-- Wretched Scholar's Gilded Robe
 s(297856)/i(250456),	-- Wretched Scholar's Gilded Robe
@@ -37205,8 +36740,6 @@ s(299076)/i(254444),	--
 s(299175)/i(254555),	--
 s(299202)/i(254591),	--
 s(299203)/i(254592),	--
-s(299507)/i(255269),	-- Galactic Aspirant's Chain Sabatons
-s(299526)/i(255288),	-- Galactic Aspirant's Chain Belt
 s(299584)/i(255357),	-- Galactic Gladiator's Silk Robe
 s(299585)/i(255357),	-- Galactic Gladiator's Silk Robe
 s(299587)/i(255357),	-- Galactic Gladiator's Silk Robe
@@ -37948,8 +37481,6 @@ s(300567)/i(255605),	-- Galactic Gladiator's Drape
 s(300568)/i(255606),	-- Galactic Gladiator's Shawl
 s(300569)/i(255606),	-- Galactic Gladiator's Shawl
 s(300571)/i(255606),	-- Galactic Gladiator's Shawl
-s(300594)/i(193485),	-- Protective Gloves \\ Engineer's Protective Gloves
-s(300596)/i(198246),	-- Khaz'gorite Encased Samophlange \\ Titanicium Encased Samophlange \\ Multitool T2 [PH] \\ Multitool T2
 s(300664)/i(255974),	--
 s(300665)/i(255975),	--
 s(300666)/i(255976),	--
@@ -38030,44 +37561,25 @@ s(301071)/i(257211),	--
 s(301095)/i(257253),	--
 s(301122)/i(257285),	--
 s(301347)/i(257868),	--
-s(301398)/i(258046),	-- Chakram-Breaker Greatsword
 s(301399)/i(258046),	-- Chakram-Breaker Greatsword
 s(301401)/i(258047),	-- Spire of the Furious Construct
-s(301402)/i(258047),	-- Spire of the Furious Construct
 s(301404)/i(258048),	-- Beakbreaker Scimitar
-s(301405)/i(258048),	-- Beakbreaker Scimitar
 s(301407)/i(258049),	-- Viryx's Indomitable Bulwark
-s(301408)/i(258049),	-- Viryx's Indomitable Bulwark
 s(301410)/i(258050),	-- Arcanic of the High Sage
-s(301411)/i(258050),	-- Arcanic of the High Sage
 s(301480)/i(258574),	-- Legwraps of Swirling Light
-s(301481)/i(258574),	-- Legwraps of Swirling Light
 s(301483)/i(258575),	-- Rigid Scale Greatcloak
-s(301484)/i(258575),	-- Rigid Scale Greatcloak
 s(301486)/i(258576),	-- Sharpeye Chestguard
-s(301487)/i(258576),	-- Sharpeye Chestguard
 s(301489)/i(258577),	-- Boots of Burning Focus
-s(301490)/i(258577),	-- Boots of Burning Focus
 s(301492)/i(258578),	-- Lightbinder Shoulderguards
-s(301493)/i(258578),	-- Lightbinder Shoulderguards
-s(301495)/i(258579),	-- Gutcrusher Greathelm
 s(301496)/i(258579),	-- Gutcrusher Greathelm
 s(301498)/i(258580),	-- Bracers of Blazing Light
-s(301499)/i(258580),	-- Bracers of Blazing Light
 s(301501)/i(258581),	-- Bloodfeather Mantle
-s(301502)/i(258581),	-- Bloodfeather Mantle
 s(301504)/i(258582),	-- Rigid Scale Boots
-s(301505)/i(258582),	-- Rigid Scale Boots
 s(301507)/i(258583),	-- Incarnadine Gauntlets
-s(301508)/i(258583),	-- Incarnadine Gauntlets
 s(301510)/i(258584),	-- Lightbinder Treads
-s(301511)/i(258584),	-- Lightbinder Treads
 s(301513)/i(258585),	-- Sharpeye Gleam
-s(301514)/i(258585),	-- Sharpeye Gleam
 s(301516)/i(258586),	-- Bloodfeather Chestguard
-s(301517)/i(258586),	-- Bloodfeather Chestguard
 s(301519)/i(258587),	-- Spaulders of Scorching Ray
-s(301520)/i(258587),	-- Spaulders of Scorching Ray
 s(301521)/i(258602),	--
 s(301522)/i(258604),	--
 s(301523)/i(258605),	--
@@ -38552,6 +38064,7 @@ s(303619)/i(249332),	-- Parasite Stompers \\ 12.0 Raid - Plate - Feet
 s(303620)/i(249332),	-- Parasite Stompers \\ 12.0 Raid - Plate - Feet
 s(303621)/i(249332),	-- Parasite Stompers \\ 12.0 Raid - Plate - Feet
 s(303622)/i(249332),	-- Parasite Stompers \\ 12.0 Raid - Plate - Feet
+s(303634)/i(264969),	-- Extinction Voulge
 12.0.0.64228
 s(303644)/i(265073),	--
 s(303645)/i(265102),	--
@@ -38745,19 +38258,7 @@ s(304286)/i(267612),	--
 s(304324)/i(268069),	--
 12.0.0.64975
 s(304557)/i(268361),	--
-12.0.0.65512
-s(302456)/i(262585),	-- Pristine Lunch Bag
-s(302457)/i(262587),	-- Brown Lunch Bag
-s(302458)/i(262588),	-- Sack Lunch
-s(302459)/i(262660),	-- Egg Farmer's Backpack
 12.0.1.64889
-s(304520)/i(268274),	-- Blinky's Collar
-s(304555)/i(268326),	-- Sin'dorei Citizen's Cloak
-s(304556)/i(268327),	-- Sin'dorei Citizen's Shawl
-s(304558)/i(268365),	-- Thalassian Competitor's Staff
-s(304585)/i(268475),	-- Evercore Dome Dinger
-s(304586)/i(268477),	-- P.O.W. x3
-s(304587)/i(268479),	-- Thalassian Competitor's Rifle
 s(304617)/i(268634),	--
 s(304618)/i(268635),	--
 s(304619)/i(268636),	--
@@ -38769,7 +38270,6 @@ s(304624)/i(268641),	--
 s(304625)/i(268642),	--
 s(304626)/i(268643),	--
 12.0.1.65337
-s(304732)/i(268921),	-- Staff of the Great Dark
 s(304733)/i(268960),	--
 s(304734)/i(268971),	--
 s(304735)/i(269014),	--

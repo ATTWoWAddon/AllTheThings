@@ -1,26 +1,5 @@
 12.0.0.63534
 r(471013),	-- Midnight Mining
-r(1225343),	-- Refulgent Copper
-r(1225347),	-- Umbral Tin
-r(1225348),	-- Brilliant Silver
-r(1225349),	-- Rich Refulgent Copper
-r(1225350),	-- Refulgent Copper Seam
-r(1225351),	-- Lightfused Refulgent Copper
-r(1225352),	-- Voidbound Refulgent Copper
-r(1225353),	-- Wild Refulgent Copper
-r(1225354),	-- Primal Refulgent Copper
-r(1225355),	-- Rich Brilliant Silver
-r(1225357),	-- Brilliant Silver Seam
-r(1225359),	-- Lightfused Brilliant Silver
-r(1225361),	-- Primal Brilliant Silver
-r(1225362),	-- Voidbound Brilliant Silver
-r(1225363),	-- Wild Brilliant Silver
-r(1225365),	-- Rich Umbral Tin
-r(1225366),	-- Umbral Tin Seam
-r(1225367),	-- Lightfused Umbral Tin
-r(1225368),	-- Wild Umbral Tin
-r(1225369),	-- Primal Umbral Tin
-r(1225370),	-- Voidbound Umbral Tin
 r(1225817),	-- Overload Primal Deposits
 r(1225818),	-- Overload Lightfused Deposits
 r(1225819),	-- Overload Wild Deposits

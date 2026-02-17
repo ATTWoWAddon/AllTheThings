@@ -447,6 +447,35 @@ r(131152),	-- Glyph of the Cheetah
 5.5.0.60481
 r(132167),	--
 r(135561),	--
+r(148255),	--
+r(148256),	--
+r(148257),	--
+r(148258),	--
+r(148259),	--
+r(148260),	--
+r(148261),	--
+r(148262),	--
+r(148264),	--
+r(148265),	--
+r(148267),	--
+r(148268),	--
+r(148269),	--
+r(148272),	--
+r(148273),	--
+r(148277),	--
+r(148279),	--
+r(148280),	--
+r(148283),	--
+r(148284),	--
+r(148285),	--
+r(148286),	--
+r(148287),	--
+r(148288),	--
+r(148289),	--
+r(148290),	--
+r(148291),	--
+r(148487),	--
+r(148489),	--
 6.0.1.18179
 r(158748),	-- Inscription
 7.3.0.24473
@@ -515,106 +544,8 @@ r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
 12.0.0.63534
-r(471010),	-- Midnight Inscription
-r(471044),	-- Recraft Equipment
-r(1230016),	-- Sienna Ink
-r(1230017),	-- Munsell Ink
-r(1230018),	-- Codified Azeroot
-r(1230019),	-- Soul Cipher
-r(1230020),	-- Hobbyist Rolling Pin
-r(1230021),	-- Hobbyist Alchemist's Mixing Rod
-r(1230022),	-- Hobbyist Scribe's Quill
-r(1230023),	-- Sin'dorei Rolling Pin
-r(1230024),	-- Sin'dorei Alchemist's Mixing Rod
-r(1230025),	-- Sin'dorei Quill
-r(1230026),	-- Thalassian Treatise on Blacksmithing
-r(1230027),	-- Thalassian Treatise on Mining
-r(1230028),	-- Thalassian Treatise on Herbalism
-r(1230029),	-- Thalassian Treatise on Jewelcrafting
-r(1230030),	-- Thalassian Treatise on Enchanting
-r(1230031),	-- Thalassian Treatise on Leatherworking
-r(1230032),	-- Thalassian Treatise on Inscription
-r(1230033),	-- Thalassian Treatise on Tailoring
-r(1230034),	-- Thalassian Treatise on Alchemy
-r(1230035),	-- Thalassian Treatise on Skinning
-r(1230036),	-- Thalassian Treatise on Engineering
-r(1230037),	-- Thalassian Missive of the Quickblade
-r(1230038),	-- Thalassian Missive of the Peerless
-r(1230039),	-- Thalassian Missive of the Harmonious
-r(1230040),	-- Thalassian Missive of the Fireflash
-r(1230041),	-- Thalassian Missive of the Feverflare
-r(1230042),	-- Thalassian Missive of the Aurora
-r(1230043),	-- Thalassian Missive of Deftness
-r(1230044),	-- Thalassian Missive of Perception
-r(1230045),	-- Thalassian Missive of Finesse
-r(1230046),	-- Thalassian Missive of Crafting Speed
-r(1230047),	-- Thalassian Missive of Multicraft
-r(1230048),	-- Thalassian Missive of Resourcefulness
-r(1230049),	-- Thalassian Missive of Ingenuity
-r(1230050),	-- Vantus Rune: Radiant \\ Vantus Rune
-r(1230051),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
-r(1230052),	-- Contract: The Amani Tribe \\ Contract: Amani
-r(1230053),	-- Contract: The Hara'ti \\ Contract: Haranir
-r(1230054),	-- Contract: The Singularity \\ Contract: Void
-r(1230055),	-- Faunatender's Baton
-r(1230056),	-- Floratender's Crutch
-r(1230057),	-- Rootwarden's Lamp \\ Rootwarden's Sprig
-r(1230058),	-- Faunatender's Trust \\ Farstrider's Trust
-r(1230059),	-- Aln'hara Pikestaff
-r(1230060),	-- Aln'hara Cane
-r(1230061),	-- Aln'hara Lantern \\ Aln'hara Wand
-r(1230062),	-- Aln'hara Sprigshot
 r(1230063),	-- Pigments of the Wind
-r(1230064),	-- Thalassian Competitor's Lamp
-r(1230065),	-- Thalassian Competitor's Staff
-r(1230066),	-- Thalassian Competitor's Pillar
-r(1230067),	-- Thalassian Competitor's Emblem
-r(1230068),	-- Thalassian Competitor's Insignia of Alacrity
-r(1230069),	-- Thalassian Competitor's Medallion
-r(1230070),	-- Darkmoon Dominion: Blood
-r(1230071),	-- Darkmoon Dominion: Rot
-r(1230072),	-- Darkmoon Dominion: Hunt
-r(1230073),	-- Darkmoon Dominion: Void
-r(1230074),	-- Darkmoon Sigil: Blood
-r(1230075),	-- Darkmoon Sigil: Rot
-r(1230076),	-- Darkmoon Sigil: Hunt
-r(1230077),	-- Darkmoon Sigil: Void
-r(1230078),	-- Transcribe: Void
-r(1230079),	-- Inscribe: Void
-r(1230080),	-- Transcribe: Rot
-r(1230081),	-- Inscribe: Rot
-r(1230082),	-- Transcribe: Hunt
-r(1230083),	-- Inscribe: Hunt
-r(1230084),	-- Transcribe: Blood
-r(1230085),	-- Inscribe: Blood
-r(1248619),	-- Sturdy Ren'dorei Cask \\ Ren'dorei Sturdy Cask
-r(1248620),	-- Restful Bronze Bench \\ Sturdy Bench
-r(1248621),	-- Floating Void-Touched Tome
-r(1248622),	-- Homely Sin'dorei Shelf \\ Sin'dorei Homely Shelf
-r(1248623),	-- Lively Songwriter's Quill
-r(1248624),	-- Opened Sin'dorei Scroll \\ Sin'dorei Opened Scroll
-r(1248625),	-- Gilded Eversong Book
-r(1248626),	-- Sin'dorei Phoenix Quill
-r(1248627),	-- Homely Wall Shelves
-r(1248628),	-- Wild Hanging Scroll
 r(1248629),	-- Harandar Runestone
-r(1248630),	-- Harandar Signpost
-r(1248631),	-- Magnificent Towering Bookcase
-r(1260760),	-- Thalassian Competitor's Bow
-r(1264550),	-- Gilded Alchemist's Mixing Rod \\ Super Sin'dorei Alchemist's Mixing Rod
-r(1264551),	-- Gilded Sin'dorei Rolling Pin \\ Super Sin'dorei Rolling Pin
-r(1264552),	-- Gilded Sin'dorei Quill \\ Super Sin'dorei Quill
-r(1265604),	-- Multicraft
-r(1265618),	-- Knowledge
-r(1265655),	-- Quality
-r(1265663),	-- Sparks
-r(1265673),	-- Artisan Scribe's Moxie
-r(1265679),	-- Concentration
-r(1265688),	-- Skill
-r(1265697),	-- Resourcefulness
-r(1265705),	-- Ingenuity
-12.0.0.63854
-r(1269575),	-- Midnight Milling
 
 
 
@@ -622,103 +553,5 @@ r(1269575),	-- Midnight Milling
 Missing in Inscription
 
 12.0.0.63534
-r(471010),	-- Midnight Inscription
-r(471044),	-- Recraft Equipment
-r(1230016),	-- Sienna Ink
-r(1230017),	-- Munsell Ink
-r(1230018),	-- Codified Azeroot
-r(1230019),	-- Soul Cipher
-r(1230020),	-- Hobbyist Rolling Pin
-r(1230021),	-- Hobbyist Alchemist's Mixing Rod
-r(1230022),	-- Hobbyist Scribe's Quill
-r(1230023),	-- Sin'dorei Rolling Pin
-r(1230024),	-- Sin'dorei Alchemist's Mixing Rod
-r(1230025),	-- Sin'dorei Quill
-r(1230026),	-- Thalassian Treatise on Blacksmithing
-r(1230027),	-- Thalassian Treatise on Mining
-r(1230028),	-- Thalassian Treatise on Herbalism
-r(1230029),	-- Thalassian Treatise on Jewelcrafting
-r(1230030),	-- Thalassian Treatise on Enchanting
-r(1230031),	-- Thalassian Treatise on Leatherworking
-r(1230032),	-- Thalassian Treatise on Inscription
-r(1230033),	-- Thalassian Treatise on Tailoring
-r(1230034),	-- Thalassian Treatise on Alchemy
-r(1230035),	-- Thalassian Treatise on Skinning
-r(1230036),	-- Thalassian Treatise on Engineering
-r(1230037),	-- Thalassian Missive of the Quickblade
-r(1230038),	-- Thalassian Missive of the Peerless
-r(1230039),	-- Thalassian Missive of the Harmonious
-r(1230040),	-- Thalassian Missive of the Fireflash
-r(1230041),	-- Thalassian Missive of the Feverflare
-r(1230042),	-- Thalassian Missive of the Aurora
-r(1230043),	-- Thalassian Missive of Deftness
-r(1230044),	-- Thalassian Missive of Perception
-r(1230045),	-- Thalassian Missive of Finesse
-r(1230046),	-- Thalassian Missive of Crafting Speed
-r(1230047),	-- Thalassian Missive of Multicraft
-r(1230048),	-- Thalassian Missive of Resourcefulness
-r(1230049),	-- Thalassian Missive of Ingenuity
-r(1230050),	-- Vantus Rune: Radiant \\ Vantus Rune
-r(1230051),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
-r(1230052),	-- Contract: The Amani Tribe \\ Contract: Amani
-r(1230053),	-- Contract: The Hara'ti \\ Contract: Haranir
-r(1230054),	-- Contract: The Singularity \\ Contract: Void
-r(1230055),	-- Faunatender's Baton
-r(1230056),	-- Floratender's Crutch
-r(1230057),	-- Rootwarden's Lamp \\ Rootwarden's Sprig
-r(1230058),	-- Faunatender's Trust \\ Farstrider's Trust
-r(1230059),	-- Aln'hara Pikestaff
-r(1230060),	-- Aln'hara Cane
-r(1230061),	-- Aln'hara Lantern \\ Aln'hara Wand
-r(1230062),	-- Aln'hara Sprigshot
 r(1230063),	-- Pigments of the Wind
-r(1230064),	-- Thalassian Competitor's Lamp
-r(1230065),	-- Thalassian Competitor's Staff
-r(1230066),	-- Thalassian Competitor's Pillar
-r(1230067),	-- Thalassian Competitor's Emblem
-r(1230068),	-- Thalassian Competitor's Insignia of Alacrity
-r(1230069),	-- Thalassian Competitor's Medallion
-r(1230070),	-- Darkmoon Dominion: Blood
-r(1230071),	-- Darkmoon Dominion: Rot
-r(1230072),	-- Darkmoon Dominion: Hunt
-r(1230073),	-- Darkmoon Dominion: Void
-r(1230074),	-- Darkmoon Sigil: Blood
-r(1230075),	-- Darkmoon Sigil: Rot
-r(1230076),	-- Darkmoon Sigil: Hunt
-r(1230077),	-- Darkmoon Sigil: Void
-r(1230078),	-- Transcribe: Void
-r(1230079),	-- Inscribe: Void
-r(1230080),	-- Transcribe: Rot
-r(1230081),	-- Inscribe: Rot
-r(1230082),	-- Transcribe: Hunt
-r(1230083),	-- Inscribe: Hunt
-r(1230084),	-- Transcribe: Blood
-r(1230085),	-- Inscribe: Blood
-r(1248619),	-- Sturdy Ren'dorei Cask \\ Ren'dorei Sturdy Cask
-r(1248620),	-- Restful Bronze Bench \\ Sturdy Bench
-r(1248621),	-- Floating Void-Touched Tome
-r(1248622),	-- Homely Sin'dorei Shelf \\ Sin'dorei Homely Shelf
-r(1248623),	-- Lively Songwriter's Quill
-r(1248624),	-- Opened Sin'dorei Scroll \\ Sin'dorei Opened Scroll
-r(1248625),	-- Gilded Eversong Book
-r(1248626),	-- Sin'dorei Phoenix Quill
-r(1248627),	-- Homely Wall Shelves
-r(1248628),	-- Wild Hanging Scroll
 r(1248629),	-- Harandar Runestone
-r(1248630),	-- Harandar Signpost
-r(1248631),	-- Magnificent Towering Bookcase
-r(1260760),	-- Thalassian Competitor's Bow
-r(1264550),	-- Gilded Alchemist's Mixing Rod \\ Super Sin'dorei Alchemist's Mixing Rod
-r(1264551),	-- Gilded Sin'dorei Rolling Pin \\ Super Sin'dorei Rolling Pin
-r(1264552),	-- Gilded Sin'dorei Quill \\ Super Sin'dorei Quill
-r(1265604),	-- Multicraft
-r(1265618),	-- Knowledge
-r(1265655),	-- Quality
-r(1265663),	-- Sparks
-r(1265673),	-- Artisan Scribe's Moxie
-r(1265679),	-- Concentration
-r(1265688),	-- Skill
-r(1265697),	-- Resourcefulness
-r(1265705),	-- Ingenuity
-12.0.0.63854
-r(1269575),	-- Midnight Milling

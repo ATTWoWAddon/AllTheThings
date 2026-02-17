@@ -89,6 +89,5 @@ title(748),	-- Thalassian Tailor %s
 title(750),	-- Thalassian Miner %s
 title(751),	-- Thalassian Herbalist %s
 title(752),	-- Thalassian Skinner %s
-title(753),	-- %s, the Singular
 12.0.1.64889
 title(755),	-- Preyseeker %s
