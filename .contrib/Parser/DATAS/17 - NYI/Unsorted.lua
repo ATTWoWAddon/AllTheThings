@@ -48,7 +48,7 @@ root(ROOTS.Unsorted, {
 			i(253467),	-- Rutaani Sporepod
 			i(253497),	-- Embroidered Sunfury Chair
 
-			i(253508),	-- Harandar Signpost
+
 			i(253543),	-- Clefthoof Hide Rug
 			i(254235),	-- Sin'dorei Artisan's Easel
 			i(254319),	-- Root-Woven Door
@@ -87,16 +87,16 @@ root(ROOTS.Unsorted, {
 			i(262471),	-- Bejeweled Sin'dorei Lyre
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion
 			i(262592),	-- Plush Silvermoon Bed
-			i(262594),	-- Homely Sin'dorei Shelf
-			i(262595),	-- Homely Wall Shelves
-			i(262597),	-- Gilded Eversong Book
+
+
+
 			i(262599),	-- Silvermoon Curtains
 			i(262607),	-- Void Elf Throne
 			i(262608),	-- Void Elf Stool
 			i(262609),	-- Void Elf Floating Lantern
-			i(262616),	-- Lively Songwriter's Quill
+
 			i(263031),	-- Twisted Rope Coil
-			i(263034),	-- Magnificent Towering Bookcase
+
 			i(264244),	-- Plush Haranir Leather Pillow
 			i(264251),	-- Depthdiver's Cooking Spit
 			i(264344),	-- Cosmic Void Orb
@@ -129,7 +129,7 @@ root(ROOTS.Unsorted, {
 			i(268274),	-- Blinky's Collar
 
 			-- Prof insc
-			i(268365),	-- Thalassian Competitor's Staff
+
 
 			-- Wep?
 
@@ -988,107 +988,32 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(245585),	-- Combat Engagement Launcher
 			-- Inscription
-			i(245750),	-- Darkmoon Deck: Void
-			i(245751),	-- Thalassian Competitor's Medallion
-			i(245752),	-- Thalassian Competitor's Insignia of Alacrity
-			i(245753),	-- Thalassian Competitor's Emblem
+
+
 			i(245754),	-- Milling
-			i(245755),	-- Thalassian Treatise on Alchemy
-			i(245756),	-- Thalassian Treatise on Tailoring
-			i(245757),	-- Thalassian Treatise on Inscription
-			i(245758),	-- Thalassian Treatise on Leatherworking
-			i(245759),	-- Thalassian Treatise on Enchanting
-			i(245760),	-- Thalassian Treatise on Jewelcrafting
-			i(245761),	-- Thalassian Treatise on Herbalism
-			i(245762),	-- Thalassian Treatise on Mining
-			i(245763),	-- Thalassian Treatise on Blacksmithing
-			i(245764),	-- Codified Azeroot
-			i(245765),	-- Codified Azeroot
-			i(245766),	-- Soul Cipher
-			i(245767),	-- Soul Cipher
-			i(245768),	-- Rootwarden's Lamp \\ Rootwarden's Sprig
-			i(245769),	-- Aln'hara Lantern \\ Aln'hara Wand
-			i(245770),	-- Aln'hara Cane
-			i(245771),	-- Aln'hara Pikestaff
-			i(245772),	-- Floratender's Crutch
-			i(245773),	-- Faunatender's Baton
+
+
+
 			i(245774),	-- Vantus Rune: 12.0 Raid
-			i(245775),	-- Hobbyist Scribe's Quill
-			i(245776),	-- Sin'dorei Quill
-			i(245777),	-- Hobbyist Alchemist's Mixing Rod
-			i(245778),	-- Sin'dorei Alchemist's Mixing Rod
-			i(245779),	-- Hobbyist Rolling Pin
-			i(245780),	-- Sin'dorei Rolling Pin
-			i(245781),	-- Thalassian Missive of the Aurora
-			i(245782),	-- Thalassian Missive of the Aurora
-			i(245783),	-- Thalassian Missive of the Feverflare
-			i(245784),	-- Thalassian Missive of the Feverflare
-			i(245785),	-- Thalassian Missive of the Fireflash
-			i(245786),	-- Thalassian Missive of the Fireflash
-			i(245787),	-- Thalassian Missive of the Harmonious
-			i(245788),	-- Thalassian Missive of the Harmonious
-			i(245789),	-- Thalassian Missive of the Peerless
-			i(245790),	-- Thalassian Missive of the Peerless
-			i(245791),	-- Thalassian Missive of the Quickblade
-			i(245792),	-- Thalassian Missive of the Quickblade
-			i(245793),	-- Contract: The Singularity \\ Contract: Void
-			i(245794),	-- Contract: The Singularity \\ Contract: Void
-			i(245795),	-- Contract: The Hara'ti \\ Contract: Haranir
-			i(245796),	-- Contract: The Hara'ti \\ Contract: Haranir
-			i(245797),	-- Contract: The Amani Tribe \\ Contract: Amani
-			i(245798),	-- Contract: The Amani Tribe \\ Contract: Amani
-			i(245799),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
-			i(245800),	-- Contract: The Silvermoon Court \\ Contract: Blood Elf
-			i(245801),	-- Munsell Ink
-			i(245802),	-- Munsell Ink
-			i(245803),	-- Argentleaf Pigment
-			i(245804),	-- Argentleaf Pigment
-			i(245805),	-- Sienna Ink
-			i(245806),	-- Sienna Ink
-			i(245807),	-- Powder Pigment
-			i(245808),	-- Powder Pigment
-			i(245809),	-- Thalassian Treatise on Engineering
+
+
+
+
+
+
 			i(245810),	-- Transcribe: Blood
 			i(245811),	-- Transcribe: Rot
 			i(245812),	-- Transcribe: Hunt
 			i(245813),	-- Transcribe: Void
-			i(245814),	-- Thalassian Missive of Ingenuity
-			i(245815),	-- Thalassian Missive of Ingenuity
-			i(245816),	-- Thalassian Missive of Resourcefulness
-			i(245817),	-- Thalassian Missive of Resourcefulness
-			i(245818),	-- Thalassian Missive of Multicraft
-			i(245819),	-- Thalassian Missive of Multicraft
-			i(245820),	-- Thalassian Missive of Crafting Speed
-			i(245821),	-- Thalassian Missive of Crafting Speed
-			i(245822),	-- Thalassian Missive of Finesse
-			i(245823),	-- Thalassian Missive of Finesse
-			i(245824),	-- Thalassian Missive of Perception
-			i(245825),	-- Thalassian Missive of Perception
-			i(245826),	-- Thalassian Missive of Deftness
-			i(245827),	-- Thalassian Missive of Deftness
-			i(245828),	-- Thalassian Treatise on Skinning
-			i(245829),	-- Darkmoon Deck: Hunt
-			i(245846),	-- Darkmoon Deck: Rot
-			i(245855),	-- Darkmoon Deck: Blood
-			i(245864),	-- Sanguithorn Pigment
-			i(245865),	-- Sanguithorn Pigment
-			i(245866),	-- Mana Lily Pigment
-			i(245867),	-- Mana Lily Pigment
-			i(245868),	-- Thalassian Competitor's Pillar
-			i(245869),	-- Thalassian Competitor's Bow
-			i(245870),	-- Thalassian Competitor's Lamp
-			i(245871),	-- Darkmoon Sigil: Blood
-			i(245872),	-- Darkmoon Sigil: Blood
-			i(245873),	-- Darkmoon Sigil: Void
-			i(245874),	-- Darkmoon Sigil: Void
-			i(245875),	-- Darkmoon Sigil: Hunt
-			i(245876),	-- Darkmoon Sigil: Hunt
-			i(245877),	-- Darkmoon Sigil: Rot
-			i(245878),	-- Darkmoon Sigil: Rot
-			i(245879),	-- Vantus Rune: Radiant \\ Vantus Rune: Raid
-			i(245880),	-- Vantus Rune: Radiant \\ Vantus Rune: Raid
-			i(245881),	-- Lexicologist's Vellum
-			i(245882),	-- Thalassian Songwater
+
+
+
+
+
+
+
+
+
 
 			-- Alchemy
 			i(245897),	-- Fleeting Light's Potential
@@ -1103,10 +1028,7 @@ root(ROOTS.Unsorted, {
 			i(245931),	-- Fleeting Flask of the Blood Knights
 			i(245932),	-- Fleeting Flask of the Magisters
 			i(245933),	-- Fleeting Flask of the Magisters
-			i(246304),	-- Darkmoon Dominion: Hunt
-			i(246305),	-- Darkmoon Dominion: Blood
-			i(246306),	-- Darkmoon Dominion: Rot
-			i(246307),	-- Darkmoon Dominion: Void
+
 
 			-- Ench
 			i(245934),	-- Shatter Essence
@@ -1469,7 +1391,7 @@ root(ROOTS.Unsorted, {
 			i(251519),	-- Key of Fused Darkness
 
 			-- Inscribe
-			i(251629),	-- Technique: Contract: The Amani Tribe
+
 
 			-- Cooking
 			i(251630),	-- Recipe: Braised Blood Hunter
@@ -2135,7 +2057,7 @@ root(ROOTS.Unsorted, {
 			i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
 			i(258498),	-- Technique: Ren'dorei Sturdy Cask
 			i(258499),	-- Technique: Restful Bronze Bench
-			i(258500),	-- Technique: Floating Void-Touched Tome
+
 			i(258501),	-- Technique: Sin'dorei Homely Shelf
 			i(258506),	-- Technique: Homely Wall Shelves
 			i(258507),	-- Technique: Wild Hanging Scroll
@@ -2241,9 +2163,7 @@ root(ROOTS.Unsorted, {
 			i(259201),	-- Thalassian Mana Oil
 			i(259202),	-- Embroidered Memento \\ [PH] Specialization Knowledge - Tailoring - 1
 			i(259203),	-- Finely Woven Lynx Collar \\ [PH] Specialization Knowledge - Tailoring - 2
-			i(259205),	-- Gilded Alchemist's Mixing Rod
-			i(259207),	-- Gilded Sin'dorei Rolling Pin
-			i(259209),	-- Gilded Sin'dorei Quill
+
 
 			-- Pet
 			i(259337),	-- Munchy \\ Vermillion Grovecrawler
@@ -2786,8 +2706,6 @@ root(ROOTS.Unsorted, {
 			-- Cache
 			i(263433),	-- Overflowing Silvermoon Trove
 
-			-- Inscri
-			i(263445),	-- Technique: Contract: The Singularity
 
 			-- QI
 			i(263446),	-- Spare Murloc Suit
@@ -3107,7 +3025,7 @@ root(ROOTS.Unsorted, {
 			i(260635),	-- Sanguine Harrower
 
 			-- Decor
-			i(262601),	-- Wild Hanging Scroll
+
 			i(262614),	-- Harandar Runestone
 			i(263019),	-- Haranir Pennant
 			i(263020),	-- Ward of the Shul'ka
@@ -3125,7 +3043,7 @@ root(ROOTS.Unsorted, {
 
 			i(264002),	-- Midnight Fisher's Shop Sign
 			i(264003),	-- Midnight Herbalist's Shop Sign
-			i(264004),	-- Midnight Scribe's Shop Sign
+
 			i(264005),	-- Midnight Jewelcrafter's Shop Sign
 			i(264006),	-- Midnight Leatherworker's Shop Sign
 			i(264172),	-- Midnight Miner's Shop Sign
@@ -3247,8 +3165,7 @@ root(ROOTS.Unsorted, {
 			i(265099),	-- Conjured Coffee
 
 			-- Wep
-			i(265336),	-- Faunatender's Trust \\ Farstrider's Trust
-			i(265337),	-- Aln'hara Sprigshot
+
 			-- Cosmetic
 			i(265362),	-- Arsenal: Twilight Blade
 			i(265363),	-- Twilight Shadowguard's Hatchet
@@ -3475,9 +3392,9 @@ root(ROOTS.Unsorted, {
 
 			i(262461),	-- Tenebrous Ren'dorei Armillary
 			i(262593),	-- Chic Silvermoon Pillow
-			i(262598),	-- Opened Sin'dorei Scroll
+
 			i(262613),	-- Replica Haranir Mural
-			i(262615),	-- Sin'dorei Phoenix Quill
+
 			i(263230),	-- Magister's Bookshelf
 			i(263290),	-- Spring Blossom Tree
 			i(263291),	-- Spring Blossom Pond
@@ -3518,8 +3435,8 @@ root(ROOTS.Unsorted, {
 
 			-- Prof
 			i(267393),	-- Radiant Shatter
-			i(267395),	-- Technique: Homely Wall Shelves
-			i(267396),	-- Technique: Restful Bronze Bench
+
+
 			i(267401),	-- Dawn Shatter
 
 			-- Armor

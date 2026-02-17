@@ -54,7 +54,9 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(228730, {	-- Flicker of Engineering Knowledge
 					currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING),
 				}),
-				i(228732),	-- Flicker of Inscription Knowledge
+				i(228732, {	-- Flicker of Inscription Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
+				}),
 				i(228734),	-- Flicker of Jewelcrafting Knowledge
 				i(228736),	-- Flicker of Leatherworking Knowledge
 				i(228738),	-- Flicker of Tailoring Knowledge
@@ -70,7 +72,9 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(228731, {	-- Glimmer of Engineering Knowledge
 					currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING),
 				}),
-				i(228733),	-- Glimmer of Inscription Knowledge
+				i(228733, {	-- Glimmer of Inscription Knowledge
+					currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION),
+				}),
 				i(228735),	-- Glimmer of Jewelcrafting Knowledge
 				i(228737),	-- Glimmer of Leatherworking Knowledge
 				i(228739),	-- Glimmer of Tailoring Knowledge
@@ -90,7 +94,9 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246326, {	-- Flicker of Midnight Engineering Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING),
 				}),
-				i(246328),	-- Flicker of Midnight Inscription Knowledge
+				i(246328, {	-- Flicker of Midnight Inscription Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
+				}),
 				i(246330),	-- Flicker of Midnight Jewelcrafting Knowledge
 				i(246332),	-- Flicker of Midnight Leatherworking Knowledge
 				i(246334),	-- Flicker of Midnight Tailoring Knowledge
@@ -106,7 +112,9 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(246327, {	-- Glimmer of Midnight Engineering Knowledge
 					currency(PROFESSION_KNOWLEDGE.MID.ENGINEERING),
 				}),
-				i(246329),	-- Glimmer of Midnight Inscription Knowledge
+				i(246329, {	-- Glimmer of Midnight Inscription Knowledge
+					currency(PROFESSION_KNOWLEDGE.MID.INSCRIPTION),
+				}),
 				i(246331),	-- Glimmer of Midnight Jewelcrafting Knowledge
 				i(246333),	-- Glimmer of Midnight Leatherworking Knowledge
 				i(246335),	-- Glimmer of Midnight Tailoring Knowledge

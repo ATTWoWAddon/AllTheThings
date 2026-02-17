@@ -2454,27 +2454,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(14464, {	-- Avalanchion
-					-- TODO: Move this to an Elemental Invasion World Event file.
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coords"] = {
-						{ 72.6, 20.0, AZSHARA },
-						{ 77.2, 16.6, AZSHARA },
-						{ 82.6, 21.0, AZSHARA },
-						{ 77.0, 24.2, AZSHARA },
-						{ 80.0, 24.2, AZSHARA },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(18673, {	-- Avalanchion's Stony Hide
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18674, {	-- Hardened Stone Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-					},
-				}),
 				n(6651, {	-- Gatekeeper Rageroar
 					-- #if BEFORE 4.0.3
 					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",

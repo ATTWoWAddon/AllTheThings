@@ -2658,28 +2658,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(14454, {	-- The Windreaver
-					["description"] = "This is only available during an Elemental Invasion.",
-					["coords"] = {
-						{ 17.6, 27.0, SILITHUS },
-						{ 26.6, 29.6, SILITHUS },
-						{ 31.0, 23.6, SILITHUS },
-						{ 32.2, 17.2, SILITHUS },
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["groups"] = {
-						i(18676, {	-- Sash of the Windreaver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18677, {	-- Zephyr Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
-					},
-				}),
 				n(51004, {	-- Toxx
 					["coord"] = { 42.8, 18.2, SILITHUS },
 					["timeline"] = { ADDED_5_2_0 },

@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(256741),	-- Formula: Enchant Weapon - Strength of Halazzi (RECIPE!)
 			i(256744),	-- Formula: Enchant Tool - Amani Perception (RECIPE!)
 			i(268043),	-- Formula: Endless Codex of Nature's Grace (RECIPE!)
+			i(251629),	-- Technique: Contract: The Amani Tribe (RECIPE!)
 		--}),
 	}),
 }));

@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
 _.AddEventHandler("OnGetDataCache", function(categories)
-local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 local a={{1,2,3,4,5,6,7,8,9,10,11,12},{1,2,4,5,6,7,8,9,10,11,12},{1,2,6},{1,2},{1,3,4,7,11,22,24,25,29,30,32,34,37,52,85},{1,3,4,7,11,22,25,29,30,32,34,37,52,85},{1,3,7,10},{1,5,8,9},{1},{10,11},{10},{11},{12},{1204,9000},{13},{151763},{154208},{2,5,6,8,9,10,26,27,28,31,35,36,70,84},{2,5,9},{2},{3,7,13},{3},{35},{37.7,55.3,1355},{4,10,11,12},{4,10,11},{4,6,8,11},{4},{5,8,9},{5},{50.5,66.2,1355},{52,70},{6},{7},{8,10,12,13},{8},{9}};
 categories.NeverImplemented={
 h(-12,{
@@ -8820,7 +8820,6 @@ s(230864,233272,{f=3}),
 s(230867,233275,{f=3}),
 s(266777,235330,{f=3}),
 s(266780,235333,{f=3}),
-s(230842,233239,{f=3}),
 s(230437,232910,{f=2}),
 s(230443,232916,{f=2})}),
 h(-51,{
@@ -8847,13 +8846,6 @@ s(230905,233321,{f=2}),
 s(230893,233309,{f=2}),
 s(230885,233301,{f=2}),
 s(230889,233305,{f=2}),
-i(234059,{f=55,spellID=474640}),
-q(86421),
-s(231433,234043,{f=2}),
-s(231445,234055,{f=2}),
-s(231437,234047,{f=2}),
-s(231429,234039,{f=2}),
-s(231441,234051,{f=2}),
 i(234060,{f=55,spellID=474641}),
 q(86422),
 s(231434,234044,{f=2}),
@@ -8872,13 +8864,9 @@ s(230837,233234,{f=23}),
 s(230825,233220,{f=1}),
 s(230861,233269,{f=31}),
 s(230860,233268,{f=31}),
-s(230828,233224,{f=20}),
 s(230851,233259,{f=34}),
 s(230845,233253,{f=24}),
-s(230832,233229,{f=29}),
-s(230834,233231,{f=29}),
-s(230838,233235,{f=23}),
-s(230826,233221,{f=1})})}}),
+s(230832,233229,{f=29})})}}),
 x(11.01,{awp=110100,g={
 h(-88,{
 s(229627,231559,{f=3}),
@@ -13758,7 +13746,19 @@ i(255684,{f=55}),
 i(255679,{f=55}),
 i(255687,{f=55}),
 i(255682,{f=55}),
-i(255691,{f=55})})}})}),
+i(255691,{f=55}),
+o(579180,{
+crit(109313,{achID=61344,id=16})}),
+o(579182,{
+crit(109314,{achID=61344,id=17})}),
+o(579183,{
+crit(109315,{achID=61344,id=18})}),
+o(579201,{
+crit(109316,{achID=61344,id=19})}),
+o(579202,{
+crit(109317,{achID=61344,id=20})}),
+o(579203,{
+crit(109318,{achID=61344,id=21})})})}})}),
 h(-41,{
 x(10,{
 x(10.0000001,{awp=100000,g={
@@ -45189,6 +45189,21 @@ toy(232304),
 toy(232308)}}),
 x(11.02,{awp=110200,g={
 toy(242534)}})})}),
+h(-56,{awp=120000,g={
+x(12,{
+x(12.0000001,{
+o(579180,{
+crit(109313,{achID=61344,id=16})}),
+o(579182,{
+crit(109314,{achID=61344,id=17})}),
+o(579183,{
+crit(109315,{achID=61344,id=18})}),
+o(579201,{
+crit(109316,{achID=61344,id=19})}),
+o(579202,{
+crit(109317,{achID=61344,id=20})}),
+o(579203,{
+crit(109318,{achID=61344,id=21})})})})}}),
 h(-101,{
 flt(32,{
 x(1,{

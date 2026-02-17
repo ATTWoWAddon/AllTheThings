@@ -1779,3 +1779,108 @@ i(257028, 1261066);	-- Orcish Banded Barrel
 i(262809, 1269500);	-- Orcish Fence
 i(262810, 1269501);	-- Orcish Fencepost
 i(257027, 1261045);	-- Wooden Shipping Crate
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+--- TRAINER ---
+i(0, 471010);		-- Midnight Inscription
+i(0, 1269575);		-- Midnight Milling
+i(0, 1265673);		-- Artisan Scribe's Moxie
+i(0, 1230018);		-- Codified Azeroot
+i(0, 1265679);		-- Concentration
+i(0, 1230055);		-- Faunatender's Baton
+i(0, 1230058);		-- Faunatender's Trust
+i(0, 1230056);		-- Floratender's Crutch
+i(0, 1230021);		-- Hobbyist Alchemist's Mixing Rod
+i(0, 1230020);		-- Hobbyist Rolling Pin
+i(0, 1230022);		-- Hobbyist Scribe's Quill
+i(0, 1265705);		-- Ingenuity
+i(0, 1265618);		-- Knowledge
+i(0, 1265604);		-- Multicraft
+i(0, 1230017);		-- Munsell Ink
+i(0, 1265655);		-- Quality
+i(0, 471044);		-- Recraft Equipment
+i(0, 1265697);		-- Resourcefulness
+i(0, 1230057);		-- Rootwarden's Lamp
+i(0, 1230016);		-- Sienna Ink
+i(0, 1265688);		-- Skill
+i(0, 1230019);		-- Soul Cipher
+i(0, 1265663);		-- Sparks
+i(0, 1230042);		-- Thalassian Missive of the Aurora
+i(0, 1230041);		-- Thalassian Missive of the Feverflare
+i(0, 1230040);		-- Thalassian Missive of the Fireflash
+i(0, 1230039);		-- Thalassian Missive of the Harmonious
+i(0, 1230038);		-- Thalassian Missive of the Peerless
+i(0, 1230037);		-- Thalassian Missive of the Quickblade
+i(0, 1230050);		-- Vantus Rune: Radiant
+--- ITEM ---
+i(263444, 1230051);	-- Contract: The Silvermoon Court
+i(251629, 1230052);	-- Contract: The Amani Tribe
+i(263443, 1230053);	-- Contract: The Hara'ti
+i(263445, 1230054);	-- Contract: The Singularity
+i(258489, 1230043);	-- Thalassian Missive of Deftness
+i(258491, 1230044);	-- Thalassian Missive of Perception
+i(258492, 1230045);	-- Thalassian Missive of Finesse
+i(258493, 1230046);	-- Thalassian Missive of Crafting Speed
+i(258494, 1230047);	-- Thalassian Missive of Multicraft
+i(258495, 1230048);	-- Thalassian Missive of Resourcefulness
+i(258496, 1230049);	-- Thalassian Missive of Ingenuity
+i(259206, 1264550);	-- Gilded Alchemist's Mixing Rod
+i(259208, 1264551);	-- Gilded Sin'dorei Rolling Pin
+i(259210, 1264552);	-- Gilded Sin'dorei Quill
+i(257243, 1230064);	-- Thalassian Competitor's Lamp
+i(268366, 1230065);	-- Thalassian Competitor's Staff
+i(257259, 1230066);	-- Thalassian Competitor's Pillar
+i(257260, 1230067);	-- Thalassian Competitor's Emblem
+i(257261, 1230068);	-- Thalassian Competitor's Insignia of Alacrity
+i(257262, 1230069);	-- Thalassian Competitor's Medallion
+i(257258, 1260760);	-- Thalassian Competitor's Bow
+i(258500, 1248621);	-- Floating Void-Touched Tome
+i(258504, 1248625);	-- Gilded Eversong Book
+i(258509, 1248630);	-- Harandar Signpost
+i(267394, 1248622);	-- Homely Sin'dorei Shelf
+i(267395, 1248627);	-- Homely Wall Shelves
+i(258502, 1248623);	-- Lively Songwriter's Quill
+i(258510, 1248631);	-- Magnificent Towering Bookcase
+i(258503, 1248624);	-- Opened Sin'dorei Scroll [Item is Sin'dorei Opened Scroll]
+i(267396, 1248620);	-- Restful Bronze Bench
+i(258505, 1248626);	-- Sin'dorei Phoenix Quill
+i(267399, 1248619);	-- Sturdy Ren'dorei Cask
+i(267400, 1248628);	-- Wild Hanging Scroll
+--- SPECIALIZATION ---
+i(0, 1230060);		-- Aln'hara Cane
+i(0, 1230061);		-- Aln'hara Lantern
+i(0, 1230059);		-- Aln'hara Pikestaff
+i(0, 1230062);		-- Aln'hara Sprigshot
+i(0, 1230070);		-- Darkmoon Dominion: Blood
+i(0, 1230072);		-- Darkmoon Dominion: Hunt
+i(0, 1230071);		-- Darkmoon Dominion: Rot
+i(0, 1230073);		-- Darkmoon Dominion: Void
+i(0, 1230074);		-- Darkmoon Sigil: Blood
+i(0, 1230076);		-- Darkmoon Sigil: Hunt
+i(0, 1230075);		-- Darkmoon Sigil: Rot
+i(0, 1230077);		-- Darkmoon Sigil: Void
+i(0, 1230085);		-- Inscribe: Blood
+i(0, 1230083);		-- Inscribe: Hunt
+i(0, 1230081);		-- Inscribe: Rot
+i(0, 1230079);		-- Inscribe: Void
+i(0, 1230024);		-- Sin'dorei Alchemist's Mixing Rod
+i(0, 1230025);		-- Sin'dorei Quill
+i(0, 1230023);		-- Sin'dorei Rolling Pin
+i(0, 1230032);		-- Thalassian Treatise on Inscription
+i(0, 1230084);		-- Transcribe: Blood
+i(0, 1230082);		-- Transcribe: Hunt
+i(0, 1230080);		-- Transcribe: Rot
+i(0, 1230078);		-- Transcribe: Void
+--- DISCOVERY ---
+i(0, 1230034);		-- Thalassian Treatise on Alchemy
+i(0, 1230026);		-- Thalassian Treatise on Blacksmithing
+i(0, 1230030);		-- Thalassian Treatise on Enchanting
+i(0, 1230036);		-- Thalassian Treatise on Engineering
+i(0, 1230028);		-- Thalassian Treatise on Herbalism
+i(0, 1230029);		-- Thalassian Treatise on Jewelcrafting
+i(0, 1230031);		-- Thalassian Treatise on Leatherworking
+i(0, 1230027);		-- Thalassian Treatise on Mining
+i(0, 1230035);		-- Thalassian Treatise on Skinning
+i(0, 1230033);		-- Thalassian Treatise on Tailoring

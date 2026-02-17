@@ -153,7 +153,7 @@ local function AddTomTomWaypointCache(coord, group)
 	if mapID then
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group.keyval] = group;
 		__TomTomWaypointCount = __TomTomWaypointCount + 1;
-		-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,app:SearchLink(group))
+		-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,math_floor(coord[1] * 10),math_floor(coord[2] * 10),mapID,app:SearchLink(group))
 	else
 		-- coord[3] not existing is checked by Parser and shouldn't ever happen
 		app.print("Missing mapID for", group.text, coord[1], coord[2], mapID);
@@ -190,7 +190,7 @@ local function AddNestedTomTomWaypoints(group, depth, rootOnly)
 	if group.visible or depth == 0 then
 		if group.plotting then return false; end
 		group.plotting = true;
-		-- app.PrintDebug("WP:depth",depth)
+		-- app.PrintDebug("WP:depth",depth,app:SearchLink(group))
 		-- always plot directly clicked otherwise don't plot saved or inaccessible groups
 		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 			-- app.PrintDebug("WP:Group",app:SearchLink(group))
@@ -308,7 +308,7 @@ AddTomTomProviderResults = function(group, depth)
 	-- is Cost really something that we'd plot for a waypoint? Probably not...
 end
 app.AddTomTomWaypoint = function(group)
-	-- app.PrintDebug("WP:Global",group.hash)
+	-- app.PrintDebug("WP:Global",app:SearchLink(group))
 	wipe(__TomTomWaypointCache);
 	__TomTomWaypointCount = 0;
 	__PlottedGroup = group;
