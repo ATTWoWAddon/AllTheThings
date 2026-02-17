@@ -302,8 +302,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 end));
 
 -- Exploration Class
--- TEMPORARILY DISABLED DB!!
-local ExplorationAreaPositionDB = {};--app.ExplorationAreaPositionDB or {};
+local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
 local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
 app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
