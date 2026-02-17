@@ -783,7 +783,6 @@ local providerTypeConverters = {
 local function cacheProvider(group, provider, index)
 	providerTypeConverters[provider[1]](group, provider[2], index);
 end
-fieldConverters.provider = cacheProvider;
 fieldConverters.providers = function(group, value)
 	for i=1,#value do
 		cacheProvider(group, value[i], i);

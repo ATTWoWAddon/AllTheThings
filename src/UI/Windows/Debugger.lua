@@ -168,8 +168,6 @@ local function ExportKeyValue(key, value)
 			str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN) .. "\n";
 		end
 		str = str .. "},";
-	elseif key == "provider" then
-		str = str .. "{ \"" .. value[1] .. "\", " .. value[2] .. " },\t-- " .. (app.GetNameFromProvider(value[1], value[2]) or UNKNOWN);
 	elseif key == "crs" or key == "qgs" then
 		str = str .. "{\n";
 		for i,id in ipairs(value) do
