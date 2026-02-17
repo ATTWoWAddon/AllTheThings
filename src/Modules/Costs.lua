@@ -640,10 +640,8 @@ app.AddEventHandler("OnLoad", function()
 	fillers[#fillers + 1] = getFiller("SYMLINK")
 	-- UpdateRunner.ToggleDebugFrameTime()
 end)
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
-end)
 app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 	OneTimeQuests = accountWideData.OneTimeQuests
 end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)
